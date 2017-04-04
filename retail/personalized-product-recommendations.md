@@ -41,14 +41,14 @@ Produktrekommendationer har aktiverats för följande scenarier POS. De är till
 
 [![proddetails](./media/proddetails.png)](./media/proddetails.png)
 
-1.  I den **transaktionen** sida:
+2.  I den **transaktionen** sida:
 
 -   Rekommendation motor föreslår artiklar baserat på hela listan över artiklar i varukorgen.
 -   Om butiken associera lägger till en kund i transaktionen, rekommendation motorn ger personliga rekommendationer med kundens transaktionshistorik och listan över artiklar i varukorgen.
 
 **Observera** ska visas rekommendationer i den **transaktionen** återförsäljaren behöver uppdatera skärmlayout i Dynamics 365 för operationer på sidan. Den **rekommendationer** kontroll måste tas bort i den **transaktionen** sida. [![transactionscreenmultipleproductslargemessengersbag 5](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)
 
-1.  I den **kunduppgifter** sida:
+3.  I den **kunduppgifter** sida:
     -   Rekommendation motor föreslår artiklar baserat på användar-ID och artiklar i kundens önskelista.
 
 [![customerdetailsrecommendations](./media/customerdetailsrecommendations.png)](./media/customerdetailsrecommendations.png)
