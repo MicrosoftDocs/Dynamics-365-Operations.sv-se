@@ -33,9 +33,8 @@ Du kan använda följande typer av dokument för att hantera organisationens lag
 
 ## <a name="purchase-orders"></a>Inköpsorder
 Inköpsorder skapas på huvudkontoret. Om ett lagerställe retail ingår i inköpsorderrubriken, inlevereras ordern till arkivet med Modern POS (MOPS) eller molnbaserad kassa i Microsoft Dynamics 365 för verksamhet – Retail. När de kvantiteter som tas emot i butiken har angett kan de sparas lokalt för ytterligare redigering. Alternativt kan kvantiteterna utfästas och skickas till huvudkontoret. På huvudkontoret, kvantiteter som tagits emot i butiken visas i Dynamics 365 för operationer i den **Inleverera nu** på inköpsordern.
-Överföringsorder
----------------
 
+## <a name="transfer-orders"></a>Överföringsorder
 En överföringsorder kan ange att en viss butik är en plats som artiklar kan skickas från. Överföringsordern visas då i butiken som en begäran om plockning i MOPS eller molnbaserad kassa. När de kvantiteter som begärts plockas de åtagit sig och skickas till huvudkontoret. På huvudkontoret, hur många artiklar som har plockats i butiken visas i Dynamics 365 för operationer i den **Skeppa nu** på överföringsordern. En överföringsorder kan ange att en viss butik är en plats som artiklar kan skickas från. Överföringsordern visas då i butiken som tar emot begäran i MOPS eller molnbaserad kassa. När de kvantiteter som tas emot i butiken har angett kan de sparas lokalt för ytterligare redigering. Alternativt kan kvantiteterna utfästas och skickas till huvudkontoret. På huvudkontoret, kvantiteter som tagits emot i butiken visas i Dynamics 365 för operationer i den **Inleverera nu** på överföringsordern.
 
 ## <a name="stock-counts"></a>Lagerinventeringar
