@@ -56,10 +56,6 @@ Ett jobb är en samling uppgifter och ansvarsområden som krävs av en person, s
 Du kan skapa jobbuppgifter som beskriver grundläggande uppgifter, som en anställd i en befattning för det jobbet måste utföra. Samma jobbuppgift kan läggas till flera jobb och befattningar eftersom dessa jobb ärver jobbuppgifterna. Exempel på jobbuppgifter finns i följande tabell.
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Jobb</th>

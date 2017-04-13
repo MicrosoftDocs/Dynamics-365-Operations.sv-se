@@ -48,10 +48,10 @@ Du kan använda jobbtyper för att gruppera liknande jobb i kategorier. Jobbtype
 ## <a name="job-functions"></a>Jobbfunktioner
 Jobbet vägkorsningar beskriver funktionella kategorier på hög nivå och relaterade uppgifter på hög nivå. Funktioner som inte behövs. Du kan använda jobbfunktioner med andra jobbtyper, för att filtrera kompensationsplaner på specifika jobb. Du kopplar jobbfunktioner och jobbtyper till kompensationsplaner genom att ställa in berättiganderegler i formuläret **berättiganderegler** sida. Du kan sedan koppla en uppsättning nivåer till en kompensationsplan som gäller för specifika kombination av jobbtyp och jobbfunktion som du definierat med en berättiganderegel. (Dessa funktioner gäller både fasta kompensationsplaner och variabla kompensationsplaner.) Men om du planerar att använda när du ställer in berättiganderegler för kompensationshantering jobbfunktioner bör du ställa in jobbfunktioner innan du registrerar jobb. Nedan visas några exempel på jobbfunktioner.
 
-| Jobb           | Jobbfunktion      |
-|---------------|-------------------|
-| Försäljningschef | Mellannivå Manager |
-| Redovisare    | Ansvariga     |
+| Jobb           | Jobbfunktion         |
+|---------------|----------------------|
+| Försäljningschef | Mellannivå Manager    |
+| Redovisare    | Ansvariga        |
 
 Du kan underhålla jobbfunktioner med hjälp av den **jobbfunktioner** sida. I den **jobbfunktioner** kan du ange ID-kod och en kort beskrivning av jobbfunktionen.
 
