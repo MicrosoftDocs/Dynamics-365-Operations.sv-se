@@ -1,0 +1,43 @@
+# Innehållet i kraft BI
+## [Kostnadshantering innehållet](/dynamics365/operations/dev-itpro/analytics/cost-management-content-pack?toc=/dynamics365/operations/supply-chain/toc.json)
+# Kostnaden som förbestämda
+## [Costing sheet](costing-sheets.md)
+## [Costing version](costing-versions.md)
+## [Simulera kostnadsändringen med en kostnadsversion för planerade kostnader](simulate-cost-changes-costing-version-planned-costs.md)
+# Kostnadsredovisning för lager
+## [Justera kostnadsvärdet för lagerbehållningen](adjust-hand-inventory-cost-values.md)
+## [Cost object](cost-object.md)
+## [Cost entry](cost-entries.md)
+## [Cost group](cost-groups.md)
+## [FIFO med fysiskt värde och markering](fifo-physical-value-marking.md)
+## [Include physical value](include-physical-value.md)
+## [Lagervärde för objekt](physical-quantity.md)
+## [Inventory close](inventory-close.md)
+## [LIFO-datum med fysiskt värde och markering](lifo-date-physical-value-marking.md)
+## [LIFO with physical value and marking](lifo-physical-value-marking.md)
+## [Moving average](moving-average.md)
+## [Fysiska och ekonomiska uppdateringar](physical-financial-updates.md)
+## [Running average cost price](running-average-cost-price.md)
+## [Tracking running average cost per inventory dimension](track-running-average-cost-per-inventory-dimension.md)
+## [Weighted average date](weighted-average-date.md)
+## [Viktat medeldatum med fysiskt värde och markering](weighted-average-physical-value-marking.md)
+# Produktion-kostnadsredovisning
+## [Beräkningsgrupp för Strukturlista](bom-calculation-groups.md)
+## [Vanliga källor för produktionsavvikelse](common-sources-of-production-variances.md)
+## [Kostnadskategori som används i produktionens operationsföljd](cost-categories-used-production-routings.md)
+## [Kostnadskategori som används i produktionskontroll och hantering av projektredovisning](cost-categories-used-production-control-project-management-accounting.md)
+## [Production order cost analysis](production-order-cost-analysis.md)
+## [Production order cost estimation](production-order-cost-estimation.md)
+## [Production posting](production-posting.md)
+## [Konfigurera en produkt som tillverkas eller anskaffning](manufactured-items-treated-as-purchased-items.md)
+## [Total cost allocation method](methodology-total-cost-allocation.md)
+# Standardkostnad
+## [Strukturlisteberäkningar med standardkostnader](information-used-bom-calculations-standard-costs.md)
+## [Hantera uppdateringen av standardkostnad](manage-standard-cost-updates.md)
+## [Förutsättningar för en standardkostnadskonvertering](prerequisites-standard-cost-conversion.md)
+## [Standard cost conversion overview](standard-cost-conversion-overview.md)
+## [Uppdatera standardkostnader i en tillverkningsmiljö](update-standard-costs-manufacturing-environment.md)
+## [Uppdatera standardkostnaden för en ny tillverkad artikel](update-standard-costs-new-manufactured-item.md)
+## [Uppdatera standardkostnader i en tillverkningsmiljö](update-standard-costs-non-manufacturing-environment.md)
+
+
