@@ -27,6 +27,9 @@ ms.lasthandoff: 04/12/2017
 
 # <a name="cash-and-bank-management-home-page"></a>Startsidan för kassa- och bankhantering
 
+[!include[banner](../includes/banner.md)]
+
+
 Du kan använda Kontanthantering och bankhantering för att underhålla juridiska personens bankkonton och ekonomiska verktyg som är kopplade till dessa bankkonton. 
 
 Dessa instrument inkluderar insättningskvitton, checkar, växlar och skuldsedlar. Du kan också stämma av bankutdrag och skriva ut bankinformation i standardrapporter.
@@ -69,4 +72,6 @@ Dessa instrument inkluderar insättningskvitton, checkar, växlar och skuldsedla
 -   [Scenario: Settle a partial customer payment that has discounts on credit notes](../accounts-receivable/settle-partial-customer-payment-discounts-credit-notes.md)
 -   [Scenario: Settle a partial customer payment that has multiple discount periods](../accounts-receivable/settle-partial-customer-payment-multiple-discount-periods.md)
 -   [Scenario: Använda en kundbetalning för att kvitta flera faktura som omfattar flera Rabattperioderna](../accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md)
+
+
 

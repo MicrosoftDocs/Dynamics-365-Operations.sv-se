@@ -55,3 +55,5 @@ Du kan till exempel läsa tidigare inlägg om:
 ## <a name="elearning-courses"></a>e-utbildningskurser
 Mer information om Microsoft Dynamics 365 för utbildning, se <a href="https://mbspartner.microsoft.com/AX/LearningPlans/">utbildningsportalen för Microsoft Dynamics</a>. (kräver CustomerSource-konto) 
 
+
+
