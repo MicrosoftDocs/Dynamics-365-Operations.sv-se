@@ -1,5 +1,5 @@
 ---
-title: "Huvudplanering för täckning av site, lagerställe obligatoriskt"
+title: "Huvudplanering för täckning av plats, obligatoriskt lagerställe"
 description: "Det här avsnittet innehåller en beskrivning av hur en artikel som har webbplatsen som disponeringsdimension planeras. Lagerställe är en obligatorisk dimension."
 author: YuyuScheller
 manager: AnnBe
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="master-planning-for-site-coverage-mandatory-warehouse"></a>Huvudplanering för täckning av site, lagerställe obligatoriskt
+# <a name="master-planning-for-site-coverage-mandatory-warehouse"></a>Huvudplanering för täckning av plats, obligatoriskt lagerställe
+
+[!include[banner](../includes/banner.md)]
+
 
 Det här avsnittet innehåller en beskrivning av hur en artikel som har webbplatsen som disponeringsdimension planeras. Lagerställe är en obligatorisk dimension.
 
@@ -39,9 +42,9 @@ Det här huvudplaneringsscenariot omfattar följande villkor:
 -   Lagerställedimensionen är inte aktiverad för disponeringsplanering. Därför sammanställs tillgång och efterfrågan per site, och eventuellt, andra disponeringsplanerade dimensioner.
 
 Följande figur illustrerar hur huvudplaneringen fortskrider. Parametrarna som refereras i bilden och deras siter är som följer:
--   Disponeringsplanering har definierats för artikeln. Klicka på **produktinformationshantering &gt;produkter&gt; frisläppta produkter**. Markera artikeln och klicka sedan på **planera &gt;artikeldisponering**.
--   Påfyllningsrelationer har definierats för lagret. Klicka på **lagerhantering &gt;inställningar &gt;Lagerindelning &gt;lagerställen**. Gå till fliken **Huvudplanering** och leta reda på fältgruppen **Huvudlagerställe**.
--   Standardordertypen anges som Produktion, Inköpsorder eller Kanban. Klicka på **produktinformationshantering &gt;produkter&gt; frisläppta produkter**. Markera artikeln och klicka sedan på **planera &gt;standardorderinställningar**. Se **Standardordertyp** i formuläret **Standardorderinställningar**.
+-   Disponeringsplanering har definierats för artikeln. Klicka på **Hantering av produktinformation &gt; Produkter&gt; Frisläppta produkter**. Markera artikeln och klicka sedan på **Plan &gt; Artikeldisponering**.
+-   Påfyllningsrelationer har definierats för lagret. Klick på **Lagerhantering &gt; Inställningar &gt; Lagerindelning &gt; Lagerställen**. Gå till fliken **Huvudplanering** och leta reda på fältgruppen **Huvudlagerställe**.
+-   Standardordertypen anges som Produktion, Inköpsorder eller Kanban. Klicka på **Hantering av produktinformation &gt; Produkter&gt; Frisläppta produkter**. Välj artikeln och klicka sedan på **Plan &gt; Standardorderinställningar**. Se **Standardordertyp** i formuläret **Standardorderinställningar**.
 
 ![Efterfrågenedbrytning för täckning av site, lagerställe obligatoriskt](./media/multisitedemandexplosionscenarioforsitecoveragewarehousemandatory.jpg)
 
@@ -50,14 +53,16 @@ Följande figur illustrerar hur huvudplaneringen fortskrider. Parametrarna som r
 <a name="see-also"></a>Se även
 --------
 
-[Master planning and multisite functionality](master-plan-multisite-functionality.md)
+[Huvudplanering och multiplatsfunktioner](master-plan-multisite-functionality.md)
 
 [Huvudplanering - täckning av site och lagerställe, lagerställe obligatorisk](master-plan-site-warehouse-coverage-warehouse-mandatory.md)
 
-[Huvudplanering - webbplatsen artikeldisponering. lagerställe obligatoriskt](master-plan-site-coverage-warehouse-mandatory.md)
+[Huvudplanering - platstäckning, lagerställe obligatoriskt](master-plan-site-coverage-warehouse-mandatory.md)
 
 [Huvudplanering - täckning av plats och lagerställe, lagerstället är inte obligatoriskt](master-plan-site-warehouse-coverage-warehouse-not-mandatory.md)
 
 [Huvudplanering - hur strukturlisteversionen bestäms](master-plan-bom-version-determined.md)
+
+
 
 

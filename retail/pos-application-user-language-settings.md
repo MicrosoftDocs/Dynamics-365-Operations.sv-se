@@ -1,6 +1,6 @@
 ---
 title: "POS-tillämpning och användaren språkinställningar"
-description: "Det här avsnittet beskrivs hur du ändrar språkinställningar i Retail POS (MOPS Modern) och molnbaserad kassa."
+description: "Det här avsnittet beskriver hur du ändrar språkinställningarna i Retail Modern POS (MPOS) och Cloud POS."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -10,7 +10,7 @@ ms.service: Dynamics365Operations
 ms.technology: 
 ms.search.form: HcmWorker, RetailStoreTable
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 78891
 ms.assetid: 0030940c-e0a5-4345-9511-8c3bd1f487ad
 ms.search.region: global
@@ -28,15 +28,18 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="pos-application-and-user-language-settings"></a>POS-tillämpning och användaren språkinställningar
 
-Det här avsnittet beskrivs hur du ändrar språkinställningar i Retail POS (MOPS Modern) och molnbaserad kassa.
+[!include[banner](includes/banner.md)]
+
+
+Det här avsnittet beskriver hur du ändrar språkinställningarna i Retail Modern POS (MPOS) och Cloud POS.
 
 <a name="overview"></a>Översikt
 ========
 
-Retail POS (MOPS Modern) och molnbaserad kassa stöder miljöer där språkinställningar och översättningar kan variera mellan butiks- och inställningar. Exempelvis kunde arkivet hittas inom områden där engelska är vanligast för kunderna, men vissa arbetare föredrar att använda programmet med fransk översättning.
+Retail Modern POS (MPOS) och Cloud POS stöder miljöer där språkinställningar och översättningar kan variera mellan butiks- och användarinställningar. Exempelvis kan butiken finnas i ett område där engelska är vanligast för kunderna, men vissa arbetare föredrar att använda programmet med fransk översättning.
 
 ## <a name="data-language"></a>Data språk
-Oavsett användarens inställningar används MOPS och molnbaserad kassa alltid butikens språkinställningar för att bestämma översättningar används för data. Se till att alla användare och kunder får en enhetlig upplevelse av organisationen.  Exempel på data:
+Oavsett användarens inställningar använder MPOS och Cloud POS alltid butikens språkinställningar för att bestämma vilka översättningar som används för data. På så sätt får alla användare och kunder en enhetlig upplevelse.  Exempel på data är:
 
 -   Produkter
 -   Attribut och värden
@@ -45,25 +48,27 @@ Oavsett användarens inställningar används MOPS och molnbaserad kassa alltid b
 -   Betalningssätt namn
 -   Visning av meddelanden
 
-Butikens språk används också för POS-inloggning huvudskärmen eftersom användaren inte är känd innan du loggar in. Om en översättning inte är tillgänglig för butikens språk, återgår POS till företagets språk.
+Butikens språk används också för POS-inloggningsskärmen, eftersom användaren inte är känd innan du loggar in. Om en översättning inte är tillgänglig för butikens språk, återgår POS till företagets språk.
 
 ### <a name="configuring-the-stores-language-setting"></a>Konfigurera den stores språkinställning
 
-Butikens språkinställning anges från **alla detaljhandel** på de **butik** sidan ** allmänna &gt;nationella inställningar &gt;språk. ** Använd rutan nedåt väljer språk för varje butik.
+Butikens språk är ställs in från **Alla butiker** på sidan **Butik** under **Allmänt &gt; Nationella inställningar &gt; Språk. **Använd listrutan för att välja språk för varje butik.
 
 ## <a name="user-interface-language"></a>Språk för användargränssnittet
-POS användarens språkinställning anger översättningar används i programmets användargränssnitt. Detta inkluderar alla etiketter menyer och listor som inte betraktas som data. Ett undantag är den text som visas i knappsatser POS. Knappsatser stöder inte översättningar, och de visas alltid texten som definierats via knappen. För att stödja översatta knappar måste du kopiera och underhålla separat knappsatser och tilldela användare enligt önskemål.
+Kassaanvändarens språkinställning anger vilka översättningar som används i programmets användargränssnitt. Det inkluderar alla etiketter, menyer och listor som inte betraktas som data. Ett undantag är den text som visas i på kassans knappsatser. Knappsatser stöder inte översättningar, och de visar alltid texten som definieras på knappen. För att stödja översatta knappar måste du kopiera och underhålla separata knappsatser och tilldela dem till användare enligt önskemål.
 
 ### <a name="configuring-the-users-language-setting"></a>Konfigurera användarens språk inställning
 
-POS användarens språkinställning anges från **alla arbetare** på de **arbetare** sidan **Retail &gt;språk**.  Den är inte inställd på huvudfliken profil.  Den här inställningen används inte av POS. Om användarens språk är inte inställd eller till ett språk där översättningar är inte tillgängliga, POS återgår till butiken språk.  
+Kassaanvändarens språk ställs in från **Alla arbetare** på sidan **Arbetare** under **Butik &gt; Språk**.  Den ställs inte in på huvudfliken Profil.  Inställningen används inte av kassan. Om användarens språk är inte inställd eller till ett språk där översättningar är inte tillgängliga, POS återgår till butiken språk.  
 
 |             |                            |                                                                   |
 |-------------|----------------------------|-------------------------------------------------------------------|
-| ** **       | **Användargränssnittets språk** ** **      | **Data språk (produkter, kvitto format, radvisning etc.)** |
+| ** **       | **UI-språk** ** **      | **Data språk (produkter, kvitto format, radvisning etc.)** |
 | **Företag** | Standard                    | Standard                                                           |
 | **Butik**   | Åsidosätter företaget          | Åsidosätter företaget                                                 |
-| **User**    | Åsidosätter butiken eller företaget | Aldrig                                                             |
+| **Användare**    | Åsidosätter butiken eller företaget | Aldrig                                                             |
+
+
 
 
 

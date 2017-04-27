@@ -28,6 +28,9 @@ ms.lasthandoff: 03/29/2017
 
 # <a name="advanced-formatting-options-in-financial-reporting"></a>Avancerade formateringsalternativ i ekonomiska rapporter
 
+[!include[banner](../includes/banner.md)]
+
+
 När du skapar en rapport inom ekonomisk rapportering blir ytterligare formateringsfunktioner tillgängliga, inklusive filter för dimensioner, begränsningar för kolumner och rapportenheter, icke-utskriftsrader samt IF/THEN/ELSE-utdrag i beräkningar. 
 
 I följande tabell beskrivs de avancerade formateringfunktionerna som är tillgängliga när du utformar rapporter.
@@ -54,7 +57,7 @@ Den avancerade cellplaceringen eller *framtvinga*placeringen av specifika värde
 2.  På fliken **Inställningar** under **Beräkningsprioritet**är **Utför kolumnberäkningen först och sedan rad**.
 
 ## <a name="designing-the-report"></a>Designa rapporten
-Om du utformar en rapport ska du först skapa alla detaljrader för att säkerställa att värdena dras in som förväntat. Lägg sedan till **NP** (ingen utskrift) formatåsidosätt för att dölja information som innehåller de senaste värdena. **Viktigt:** När du använder formatkoden **CAL** i raddefinitionen kan du inte gå ner till transaktiondetaljen. Formler för att tvinga, använder du följande format: &lt;målkolumn&gt;=&lt;kommer kolumnen&gt;. &lt;Radkod&gt; avgränsa eventuella ytterligare placeringar för en rad med ett kommatecken och ett blanksteg. Här finns ett exempel: D=C.190 E=C.100
+Om du utformar en rapport ska du först skapa alla detaljrader för att säkerställa att värdena dras in som förväntat. Lägg sedan till **NP** (ingen utskrift) formatåsidosätt för att dölja information som innehåller de senaste värdena. **Viktigt:** När du använder formatkoden **CAL** i raddefinitionen kan du inte gå ner till transaktiondetaljen. För framtvingande använder formler följande format: &lt;destinationskolumn&gt;=&lt;ursprunglig kolumn&gt;.&lt;radkod&gt; Separera alla ytterligare placeringar för en rad med komma och mellanslag. Här finns ett exempel: D=C.190 E=C.100
 
 ## <a name="examples-of-advanced-formatting-options"></a>Exempel på avancerade formateringsalternativ
 Följande exempel visar hur du öppnar raddefinitionen och kolumndefinition om du vill aktivera en grundläggande kassaflödesrapport (exempel 1) och en statistisk rapport (exempel 2) .
@@ -65,7 +68,7 @@ Följande tabell visar ett exempel på en raddefinition som använder grundlägg
 
 | Radkod | Beskrivning                      | Formatkod | Relaterade formler/rader/enheter | Formatåsidosätt | Normalbalans | Utskriftskontroll | Kolumnbegränsning | Radmodifierare               | Länk till ekonomiska dimensioner |
 |----------|----------------------------------|-------------|-----------------------------|-----------------|----------------|---------------|--------------------|----------------------------|------------------------------|
-| 100      | Likvida medel vid periodens början (NP) |             |                             |                 |                |               |                    | Konto modifierare = \[/BB\] | + Segment2 = \[1100\]         |
+| 100      | Likvida medel vid periodens början (NP) |             |                             |                 |                |               |                    | Kontomodifierare = \[/BB\] | +Segment 2 = \[1100\]         |
 | 130      | Likvida medel vid periodens början      | CAL         | C=C.100 F=D.100             |                 |                |               |                    |                            |                              |
 | 160      |                                  |             |                             |                 |                |               |                    |                            |                              |
 | 190      |                                  |             |                             |                 |                |               |                    |                            |                              |
@@ -95,8 +98,8 @@ Följande tabell visar ett exempel på en raddefinition som använder framtvingn
 | 100      | Personalstyrka - USA            | CAL         | 4                               | \#\#\#0.;($\#\#\#0.) |                |               |                    |              |                                            |
 | 115      | Personalstyrka - Internationell | CAL         | 11                              | \#\#\#0.;($\#\#\#0.) |                |               |                    |              |                                            |
 | 130      |                           |             |                                 |                      |                |               |                    |              |                                            |
-| 190      | USA-försäljningar                  |             |                                 |                      | C              |               |                    |              | + Segment2 = \[41\*\], Segment3 = \[00\]    |
-| 220      | Internationell försäljning       |             |                                 |                      | C              |               |                    |              | + Segment2 = \[41\*\], Segment3 = \[01:99\] |
+| 190      | USA-försäljningar                  |             |                                 |                      | C              |               |                    |              | +Segment 2 = \[41\*\], Segment 3 = \[00\]    |
+| 220      | Internationell försäljning       |             |                                 |                      | C              |               |                    |              | +Segment 2 = \[41\*\], Segment 3 = \[01:99\] |
 | 250      |                           |             |                                 |                      |                |               |                    |              |                                            |
 | 280      |                           |             |                                 |                      |                |               |                    |              |                                            |
 | 310      | USA-försäljningar                  | CAL         | D=C.190,E=C.100,F=(C.100/C.190) |                      |                |               |                    |              |                                            |
@@ -171,11 +174,11 @@ Cellen **Kolumnbegränsning** i en raddefinition har flera syften. Beroende på 
 -   Cellen kan ange kolumnen med belopp att sortera.
 
 ## <a name="using-a-calculation-formula-in-a-row-definition"></a>Använda en beräkningsformel i en raddefinition
-En beräkningsformel i en raddefinition kan innehålla den **+**, **-**, **\***, och **/**operatorer samt **IF/THEN/ELSE** utdrag. Dessutom kan gälla en beräkning omfatta enskilda celler och absoluta belopp (faktiska nummer som är inkluderade i formeln). Formeln kan innehålla upp till 1 024 tecken. Beräkningar kan inte tillämpas på de rader som innehåller celler av typen **Länk till ekonomiska dimensioner** (FD). Du kan emellertid inkludera beräkningar för varandra följande rader, undertrycka utskrift av dessa rader och sedan summera beräkningsraderna.
+En beräkningsformel i en raddefinition kan innehålla operatorerna **+**, **-**, **\*** och **/**, samt även uttrycket **IF/THEN/ELSE**. Dessutom kan gälla en beräkning omfatta enskilda celler och absoluta belopp (faktiska nummer som är inkluderade i formeln). Formeln kan innehålla upp till 1 024 tecken. Beräkningar kan inte tillämpas på de rader som innehåller celler av typen **Länk till ekonomiska dimensioner** (FD). Du kan emellertid inkludera beräkningar för varandra följande rader, undertrycka utskrift av dessa rader och sedan summera beräkningsraderna.
 
 ### <a name="operators-in-a-calculation-formula"></a>Operatorer i en beräkningsformel
 
-En beräkningsformel använder mer komplexa operatorer än en radsummaformel. Kan du använda den **\***och **/**operatorer tillsammans med ytterligare operatorer att multiplicera (\*) och dividera belopp (/). Om du vill använda ett intervall eller en summa i en beräkningsformel måste du använda ett @-tecken (@) framför alla radkoder om du inte använder en kolumn i raddefinitionen. Om du vill lägga till beloppet på rad 100 beloppet på rad 330 du exempelvis använda radsummaformeln **100 + 330** eller beräkningsformeln **@100+@330**. **Obs!** Du måste använda ett @-tecken för varje radkod som du använder i en beräkningsformel. Annars kan numret läsas som ett absolut belopp. Exempelvis formeln **@100+330** USD 330 läggs till beloppet på rad 100. När du refererar till en kolumn i en beräkningsformel krävs inget tecken (@).
+En beräkningsformel använder mer komplexa operatorer än en radsummaformel. Du kan däremot använda operatorerna **\*** och **/** tillsammans med de ytterligare operatorerna som ska multiplicera (\*) och dividera (/) belopp. Om du vill använda ett intervall eller en summa i en beräkningsformel måste du använda ett @-tecken (@) framför alla radkoder om du inte använder en kolumn i raddefinitionen. Om du till exempel vill lägga till beloppet i rad 100 till beloppet i rad 330, kan du använda radsummeformeln **100+330** eller beräkningsformeln **@100+@330**. **Obs!** Du måste använda ett @-tecken för varje radkod som du använder i en beräkningsformel. Annars kan numret läsas som ett absolut belopp. Formeln **@100+330** lägger exempelvis till 330 dollar till beloppet i rad 100. När du refererar till en kolumn i en beräkningsformel krävs inget tecken (@).
 
 ### <a name="create-a-calculation-formula"></a>Skapa en beräkningsformel
 
@@ -185,15 +188,15 @@ En beräkningsformel använder mer komplexa operatorer än en radsummaformel. Ka
 
 ### <a name="example-of-a-calculation-formula-for-specific-rows"></a>Exempel på en beräkningsformel för specifika rader
 
-I det här exemplet beräkningsformeln **@100+@330** innebär att beloppet på rad 100 läggs till beloppet på rad 330. Radsummaformeln **340 + 370** beloppet på rad 370 adderar summan i rad 340. (Beloppet på rad 370 är beloppet från beräkningsformeln.)
+I det här exemplet betyder beräkningsformeln **@100+@330** att beloppet på rad 100 läggs till beloppet på rad 330. Radsummeformeln **340 + 370** tillför beloppet på rad 370 till beloppet på rad 340. (Beloppet på rad 370 är beloppet från beräkningsformeln.)
 
 | Radkod | Beskrivning                 | Formatkod | Relaterade formler/rader/enheter | Utskriftskontroll | Radmodifierare | Länk till ekonomiska dimensioner |
 |----------|-----------------------------|-------------|----------------------------|---------------|--------------|------------------------------|
-| 340      | Likvida medel vid periodens början |             |                            | NP            | BB           | + Konto =\[1100:1110\]       |
+| 340      | Likvida medel vid periodens början |             |                            | NP            | BB           | +Konto=\[1100:1110\]       |
 | 370      | Likvida medel vid årets början   | CAL         | @100+@330                  | NP            |              |                              |
 | 400      | Likvida medel vid periodens början | TOT         | 340+370                    |               |              |                              |
 
-När definitionen för raden har en formatkod på **CAL**, och du anger en matematisk beräkning i cellen **Relaterade formler/rader/enheter** måste du även ange bokstaven för associerade kolumnen och raden i rapporten. Till exempel anger **A.120** som representerar kolumn A, rad 120. Du kan också använda ett snabel-a (@) att visa alla kolumner. Till exempel anger **@120**som representerar alla kolumner i rad 120. En matematisk beräkning som inte har en kolumnbokstaven eller ett snabel-a (@) antas är ett decimaltal. **Anmärkning:** om du använder en etikett Radkod för att referera till en rad, måste du använda en punkt (.) som avgränsare mellan kolumnbokstaven och etiketten (t.ex, **A.GROSS\_MARGIN/A.SALES**). Om du använder ett snabel-a (@), avgränsare behövs inte efter uppgraderingen (t.ex, **@GROSS\_MARGIN/@SALES**).
+När definitionen för raden har en formatkod på **CAL**, och du anger en matematisk beräkning i cellen **Relaterade formler/rader/enheter** måste du även ange bokstaven för associerade kolumnen och raden i rapporten. Ange till exempel **A.120** för att representera kolumn A, rad 120. Alternativt kan du också använda ett snabel-a (@) för att visa alla kolumner. Ange till exempel **@120** för att representera alla kolumner i rad 120. En matematisk beräkning som inte har någon kolumnbokstav eller ett snabel-a (@) antas vara ett reellt tal. **Obs!** Om du använder en etikettradkod för att referera till en rad, måste du använda en punkt (.) som avgränsare mellan kolumnbokstaven och etiketten (t.ex. **A.GROSS\_MARGIN/A.SALES**). Om du använder ett snabel-a (@) krävs ingen avgränsare (till exempel **@GROSS\_MARGIN/@SALES**).
 
 ### <a name="example-of-a-calculation-formula-for-a-specific-column"></a>Exempel på en beräkningsformel för en specifik kolumn
 
@@ -201,7 +204,7 @@ I det här exemplet innebär beräkningsformeln **E=C.340** att beräkningen cel
 
 | Radkod | Beskrivning                 | Formatkod | Relaterade formler/rader/enheter | Utskriftskontroll | Radmodifierare | Länk till ekonomiska dimensioner |
 |----------|-----------------------------|-------------|----------------------------|---------------|--------------|------------------------------|
-| 340      | Likvida medel vid periodens början |             |                            | NP            | BB           | + Konto =\[1100:1110\]       |
+| 340      | Likvida medel vid periodens början |             |                            | NP            | BB           | +Konto=\[1100:1110\]       |
 | 370      | Likvida medel vid årets början   | CAL         | E=C.340                    | NP            |              |                              |
 | 400      | Likvida medel vid periodens början | TOT         | 340+370                    |               |              |                              |
 
@@ -210,7 +213,7 @@ I det här exemplet innebär beräkningsformeln **E=C.340** att beräkningen cel
 Om du ändrar ett nummer eller en beräkning i en kolumn för en särskild rad men inte vill att andra kolumner i rapporten ska påverkas kan du ange **CAL** (beräkning) i kolumnen **Formatkod** i raddefinitionen.
 
 -   Om du vill utföra en beräkning för alla rapportkolumner (**FD**) anger du inte någon kolumntilldelning.
--   Om du vill begränsa en formel till specifika kolumner anger du kolumnbokstaven, likhetstecken (**=**), och sedan formeln.
+-   Om du vill begränsa en formel till specifika kolumner anger du kolumnbokstaven, ett likhetstecken (**=**), och därefter formeln.
 -   Du kan ange flera kolumner. När du använder ett @-tecken med en specifik kolumnplacering, är @-tecknet relaterat till raden.
 -   Du kan ange flera kolumnformler på en rad. Separera formler genom att använda kommatecken.
 
@@ -220,46 +223,48 @@ Om du ändrar ett nummer eller en beräkning i en kolumn för en särskild rad m
 |------------------------|--------------------------------------------------------------------------------------------------------------------------|
 | @130\*.75              | För varje kolumn multipliceras värdet på rad 130 med 0,75. Resultatet infogas sedan i den aktuella raden för varje kolumn. |
 | B=@130\*.75            | Samma beräkningen utförs bara på kolumn B.                                                                      |
-| A, B,C=(@100/@130)\*.75 | A=(A.100/A.130)\*B=(B.100/B.130).75\*.75 C=(C.100/C.130)\*.75                                                           |
+| A,B,C=(@100/@130)\*.75 | A=(A.100/A.130)\*.75 B=(B.100/B.130)\*.75 C=(C.100/C.130)\*.75                                                           |
 
 ### <a name="ifthenelse-statements-in-a-row-definition"></a>IF/THEN/ELSE-utdrag i en raddefinition
 
-**IF/THEN/ELSE**-utdrag kan läggas till en giltig beräkning och användas med **CAL**-formatet. Du anger beräkningsformeln **IF/THEN/ELSE** i cellen i kolumnen **Relaterade formler/rader/enheter**. **IF/THEN/ELSE** beräkning för formler används följande format: om &lt;SANT/FALSKT-uttryck&gt; sedan &lt;formeln&gt; ELSE &lt;formeln&gt; de **ELSE &lt;formeln&gt;** utdraget är valfritt.
+**IF/THEN/ELSE**-utdrag kan läggas till en giltig beräkning och användas med **CAL**-formatet. Du anger beräkningsformeln **IF/THEN/ELSE** i cellen i kolumnen **Relaterade formler/rader/enheter**. Beräkningsformler med **IF/THEN/ELSE** använder följande format: IF &lt;sant/falskt-uttryck&gt; THEN &lt;formel&gt; ELSE &lt;formel&gt; The **ELSE &lt;formel&gt;**-delen av uttrycket är valfri.
 
 #### <a name="if-statements"></a>IF-utdrag
 
 Utdraget som följer **IF**-utdraget kan utgöras av alla utdrag som kan utvärderas som sant eller falskt. Utdraget som följer **IF**-utdraget kan inkludera en enskild utvärdering eller så den kan vara ett komplext utdrag som kan innehålla flera uttryck. Nedan följer några exempel:
 
 -   **IF A.200&gt;0** (enkel utvärdering)
--   **IF A.200&gt;0 AND A.200&lt;10 000** (komplexa uttryck)
--   **IF A.200&gt;10000 eller ((A.340/B.1200)\*2 &lt;1200)** (komplexa uttryck som innehåller flera uttryck)
+-   **IF A.200&gt;0 OCH A.200&lt;10,000** (komplext uttryck)
+-   **IF A.200&gt;10000 ELLER ((A.340/B.1200)\*2 &lt;1200)** (komplext uttryck som innehåller flera olika uttryck)
 
 Begreppet **Perioder** i ett **IF**-utdrag representerar antalet perioder för rapporten. Den termen används vanligtvis för att beräkna ett medelvärde hittills i år. När du kör en rapport för perioden 7 YTD, innebär utdraget **B.150/Perioder** att värdet i rad 150 i kolumnen B delas med 7.
 
 #### <a name="then-and-else-formulas"></a>THEN- och ELSE-formler
 
-Formlerna **THEN** och **ELSE** kan vara en giltig beräkning, från mycket enkla värdetilldelningar till komplexa formler. Till exempel uttrycket **om A.200&gt;0 THEN A=B.200** innebär "om värdet i cell i kolumn A på rad 200 mer än 0 (noll), läggs värdet i cellen i kolumn B i rad 200 i cellen i kolumn A i den aktuella raden." Det tidigare utdraget **IF/THEN** sätter ett värde i en kolumn för den aktuella raden. Du kan emellertid också använda ett @-tecken i antingen sant/falskt-utvärderingar eller formeln för att representera alla kolumner. Nedan följer några andra exempel som beskrivs i följande avsnitt:
+Formlerna **THEN** och **ELSE** kan vara en giltig beräkning, från mycket enkla värdetilldelningar till komplexa formler. Uttrycket **IF A.200&gt;0 THEN A=B.200** betyder exempelvis: "Om värdet i cellen i kolumn A för rad 200 är mer än 0 (noll), ange värdet från cellen i kolumnen B för rad 200 i cellen i kolumn A för den aktuella raden". Det tidigare utdraget **IF/THEN** sätter ett värde i en kolumn för den aktuella raden. Du kan emellertid också använda ett @-tecken i antingen sant/falskt-utvärderingar eller formeln för att representera alla kolumner. Nedan följer några andra exempel som beskrivs i följande avsnitt:
 
--   **IF A.200 &gt;0 THEN B.200**: Om värdet i cell A.200 är ett positivt värde från cell B.200 övergår till alla kolumner på den aktuella raden.
--   **IF A.200 &gt;sedan 0 @200**: Om värdet i cell A.200 är ett positivt värde i varje kolumn i rad 200 placeras i motsvarande kolumn i den aktuella raden.
--   **IF @200&gt;sedan 0 @200**: Om värdet på rad 200 i den aktuella kolumnen är ett positivt värde från rad 200 placeras i samma kolumn på den aktuella raden.
+-   **IF A.200 &gt;0 THEN B.200**: Om värdet i cellen A.200 är positivt, infogas värdet från cellen B.200 i varje kolumn med den aktuella raden.
+-   **IF A.200 &gt;0 THEN @200**: Om värdet i cell A.200 är positivt, infogas värdet från varje kolumn i rad 200 i motsvarande kolumn i den aktuella raden.
+-   **IF @200 &gt;0 THEN @200**: Om värdet i rad 200 för den aktuella kolumnen är positivt, infogas värdet från rad 200 i samma kolumn i den aktuella raden.
 
 ### <a name="restricting-a-calculation-to-a-reporting-unit-in-a-row-definition"></a>Begränsa en beräkning till en rapportenhet i en raddefinition
 
-Om du vill begränsa en beräkning till en enda Rapporteringsenheten i träd, så att det resulterande beloppet inte slås samman med en överordnad enhet, som du kan använda den **@Unit**kod i den **Närliggande formler, rader eller enheter** cell i raddefinitionen. Den **@Unit**kod visas i kolumn B i trädet rapportering, **enhetsnamn**. När du använder den **@Unit**, inte upplyfta värden, men beräkningen utvärderas på varje nivå i trädet rapportering. **Obs!** Om du vill använda denna funktion, måste ett rapportträd associeras till raddefinitionen. Beräkningsraden kan referera till en beräkningsrad eller till en ekonomisk datarad. Beräkningen registreras i cellen **Relaterade formler/rader/enheter** i raddefinitionen och den ekonomiska data-typbegränsningen. Beräkningen måste använda villkorliga beräkning som börjar med en **om @Unit**konstruktion. Här följer ett exempel: om @Unit(försäljning) sedan @1000 ELSE beräkningen innehåller beloppet från rad 100 i varje kolumn i rapporten, men endast för försäljningsenheten. Om flera enheter kallas FÖRSÄLJNING kommer beloppet att visas i var och en av dessa enheter. Eventuellt kan rad 100 vara en ekonomisk datarad och kan definieras som icke utskriftsbar. I detta fall förhindras beloppet från att visas i alla enheter i trädet. Du kan även begränsa beloppet till en viss kolumn i rapporten, till exempel kolumn H, med hjälp av en kolumnbegränsning om du bara vill skriva ut värdet i den kolumnen i rapporten. Du kan inkludera **OR**-kombinationer i ett **IF**-utdrag. Här följer ett exempel: om @Unit(försäljning) eller @Unit(SALESWEST) sedan 5 ELSE @100kan du ange en enhet i en beräkningsbegränsning i något av följande sätt:
+Om du vill begränsa en beräkning för en enskild rapporteringsenhet i ett rapportträd, så att det resulterande beloppet inte ackumuleras till en högre nivåenhet, kan du använda koden **@Unit** i cellen **Relaterade formler/rader/enheter** i raddefinitionen. Koden **@Unit** anges i kolumn B i rapportträdet, **Enhetsnamn**. När du använder koden **@Unit** ackumuleras inte värdena, men beräkningen utvärderas i varje nivå i rapportträdet. **Obs!** Om du vill använda denna funktion, måste ett rapportträd associeras till raddefinitionen. Beräkningsraden kan referera till en beräkningsrad eller till en ekonomisk datarad. Beräkningen registreras i cellen **Relaterade formler/rader/enheter** i raddefinitionen och den ekonomiska data-typbegränsningen. Beräkningen måste använda en villkorsstyrd beräkning som inleds med en **IF @Unit**-konstruktion. Här följer ett exempel: IF @Unit(SALES) THEN @100 ELSE 0 Denna beräkning innehåller beloppet från rad 100 i varje kolumn av rapporten, men bara för försäljningsenheten (SALES). Om flera enheter kallas FÖRSÄLJNING kommer beloppet att visas i var och en av dessa enheter. Eventuellt kan rad 100 vara en ekonomisk datarad och kan definieras som icke utskriftsbar. I detta fall förhindras beloppet från att visas i alla enheter i trädet. Du kan även begränsa beloppet till en viss kolumn i rapporten, till exempel kolumn H, med hjälp av en kolumnbegränsning om du bara vill skriva ut värdet i den kolumnen i rapporten. Du kan inkludera **OR**-kombinationer i ett **IF**-utdrag. Här följer ett exempel: IF @Unit(SALES) OR @Unit(SALESWEST) THEN 5 ELSE @100 Du kan ange en enhet i en begränsning av beräkningstyp på något av följande sätt:
 
--   Ange ett enhetsnamn om du vill inkludera enheter som matchar. Till exempel **om @Unit(försäljning)** gör det möjligt för beräkning av alla enheter med namnet Försäljning, även om det finns flera enheter för försäljning i rapportträdet.
--   Ange företags- och enhetsnamn för att begränsa beräkningen till specifika enheter i ett visst företag. Till exempel anger **om @Unit(ACME försäljning:**) att begränsa beräkningen till försäljning enheter i företaget företag.
--   Ange fullständig hierarkikod från rapportträdet för att begränsa beräkningen till en viss enhet. Till exempel anger **om @Unit(sammanfattning ^ ABC ^ WEST COAST ^ försäljning)**. **Obs!** För att hitta den fullständiga hierarkikoden högerklickar du i rapportträddefinitionen och väljer sedan **Kopiera rapportenhetsidentifierare (H-kod)**.
+-   Ange ett enhetsnamn om du vill inkludera enheter som matchar. **IF @Unit(SALES)**  möjliggör exempelvis beräkningen för alla enheter som bär namnet SALES, även om det finns flera SALES-enheter i rapportträdet.
+-   Ange företags- och enhetsnamn för att begränsa beräkningen till specifika enheter i ett visst företag. Ange t.ex. **IF @Unit(ACME:SALES**) för att begränsa beräkningen till försäljningsenheter (SALES) i ACME-företag.
+-   Ange fullständig hierarkikod från rapportträdet för att begränsa beräkningen till en viss enhet. Ange till exempel **IF @Unit(SUMMARY^ACME^WEST COAST^SALES)**. **Obs!** För att hitta den fullständiga hierarkikoden högerklickar du i rapportträddefinitionen och väljer sedan **Kopiera rapportenhetsidentifierare (H-kod)**.
 
 #### <a name="restrict-a-calculation-to-a-reporting-unit"></a>Begränsa en beräkning i en rapportenhet
 
 1.  I Rapportdesignern, klicka på **Raddefinitioner** och öppna raddefinitionen för att ändra.
 2.  Dubbelklicka på cellen **Formatkod** och markera sedan **CAL**.
-3.  Klicka på den **Närliggande formler, rader eller enheter** cell och anger en villkorlig beräkning som börjar med en **om @Unit**konstruktion.
+3.  Klicka på cellen **Related Formulas/Rows/Units** och ange sedan en villkorsstyrd beräkning som inleds med en **IF @Unit**-konstruktion.
 
 ### <a name="ifthenelse-statements-in-a-column-definition"></a>IF/THEN/ELSE-utdrag i en kolumndefinition
 
-Ett **IF/THEN/ELSE**-utdrag gör att en beräkning är beroende av resultaten från en annan kolumn. Du kan referera till andra kolumner, men du kan inte referera till en rapportcell i **IF**-utdraget. Alla beräkningar måste tillämpas för hela kolumnen. Till exempel uttrycket **IF B&gt;100 och annan B C\*1,25** innebär "om beloppet i kolumn B är mer än 100, skriver du värdet från kolumn B i den **BERÄKNA** kolumn. Om beloppet i kolumn B inte är mer än 100, multiplicerar du värdet i kolumn C med 1,25 och infogar resultatet i kolumn **CALC**." Följ alltid **IF**-utdraget med ett logiskt utdrag som kan utvärderas som sant eller falskt. Formlerna som du använder för både **THEN**-utdraget och **ELSE**-utdraget kan innehålla referenser till ett valfritt antal kolumner och dessa formler kan vara så komplexa som du vill. **Obs!** Du kan inte infoga resultaten av en beräkning till någon annan kolumn. Resultaten måste vara i kolumnen som innehåller formeln.
+Ett **IF/THEN/ELSE**-utdrag gör att en beräkning är beroende av resultaten från en annan kolumn. Du kan referera till andra kolumner, men du kan inte referera till en rapportcell i **IF**-utdraget. Alla beräkningar måste tillämpas för hela kolumnen. Uttrycket **IF B&gt;100 THEN B ELSE C\*1.25** betyder exempelvis "Om beloppet i kolumn B är mer än 100, infoga värdet från kolumn B till kolumn **CALC**. Om beloppet i kolumn B inte är mer än 100, multiplicerar du värdet i kolumn C med 1,25 och infogar resultatet i kolumn **CALC**." Följ alltid **IF**-utdraget med ett logiskt utdrag som kan utvärderas som sant eller falskt. Formlerna som du använder för både **THEN**-utdraget och **ELSE**-utdraget kan innehålla referenser till ett valfritt antal kolumner och dessa formler kan vara så komplexa som du vill. **Obs!** Du kan inte infoga resultaten av en beräkning till någon annan kolumn. Resultaten måste vara i kolumnen som innehåller formeln.
+
+
 
 

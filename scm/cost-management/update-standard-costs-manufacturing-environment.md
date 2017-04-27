@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="update-standard-costs-in-a-manufacturing-environment"></a>Uppdatera standardkostnader i en tillverkningsmiljö
 
+[!include[banner](../includes/banner.md)]
+
+
 Det här avsnittet ger vägledning om hur du uppdaterar standardkostnader i en tillverkningsmiljö. 
 
 Uppdateringar kan återspegla nya artiklar, kostnadskategorier eller beräkningsformler för indirekta kostnader. De kan också återspegla korrigeringar och kostnadsförändringar. Typen av uppdatering påverkar vilka steg som måste slutföras för att uppdatera standardkostnader, vilket visas i exemplen nedan.
@@ -43,5 +46,7 @@ Uppdateringar kan återspegla nya artiklar, kostnadskategorier eller beräknings
 -   Beräkna kostnader för en ny tillverkad artikel baserat på dess definierade, godkända och aktiva strukturlista och flödesinformation.
 
 I varje fall bör du noggrant överväga hur du ska uppdatera standardkostnader.
+
+
 
 

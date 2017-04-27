@@ -1,5 +1,5 @@
 ---
-title: "Anbudsförfrågningar (anbudsförfrågningar)"
+title: "Anbudsförfrågningar (RFQ:er)"
 description: "Den här artikeln ger en översikt över anbudsförfrågningar (RFQ:er) som organisationer utfärdar när de måste köpa artiklar eller tjänster och vill erhålla konkurrenskraftiga erbjudanden från flera leverantörer. I en anbudsförfrågan ber du leverantörer att ge priser och leveranstiderna för de kvantiteter av artiklar du anger. Du kan också be leverantörerna att ange om det finns några tillfälliga avgifter, till exempel fraktkostnader, eller om leverantören erbjuder rabatter för stora order eller tidig betalning av leverantörsfakturan."
 author: YuyuScheller
 manager: AnnBe
@@ -25,7 +25,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="request-for-quotations-rfqs"></a>Anbudsförfrågningar (anbudsförfrågningar)
+# <a name="request-for-quotations-rfqs"></a>Anbudsförfrågningar (RFQ:er)
+
+[!include[banner](../includes/banner.md)]
+
 
 Den här artikeln ger en översikt över anbudsförfrågningar (RFQ:er) som organisationer utfärdar när de måste köpa artiklar eller tjänster och vill erhålla konkurrenskraftiga erbjudanden från flera leverantörer. I en anbudsförfrågan ber du leverantörer att ge priser och leveranstiderna för de kvantiteter av artiklar du anger. Du kan också be leverantörerna att ange om det finns några tillfälliga avgifter, till exempel fraktkostnader, eller om leverantören erbjuder rabatter för stora order eller tidig betalning av leverantörsfakturan.
 
@@ -37,9 +40,9 @@ Anbudsförfråganprocessen (RFQ) omfattar följande uppgifter:
 
 Följande bild ger en översikt över ändringarna i anbudsförfrågansprocessen.  
 
-[![För offertprocessen](./media/rfq-process-458x1024.jpg)](./media/rfq-process.jpg)  
+[![Process för anbudsförfrågan](./media/rfq-process-458x1024.jpg)](./media/rfq-process.jpg)  
 
-Du kan skapa en anbudsförfrågan från planerade order, från en inköpsrekvisition eller från en manuell post. Anbudsförfrågan som du skapar kallas ett anbudsförfrågansärende och detta är basdokumentet som du använder för att skicka en anbudsförfrågan till varje leverantör. När du förbereder fallet Anbudsförfrågan och lägga till leverantörer klickar du på **skicka** journalen i fallet Anbudsförfrågan och en Anbudsförfrågan skapas för varje leverantör som du har skickat Anbudsförfrågan till. Du kan konfigurera inställningar för åtgärden Skicka om du vill skriva ut en rapport för varje leverantör i ett arkiv eller skicka en rapport till e-postadressen för varje leverantör. Dessutom kan anbudsförfråganjournalen för varje leverantör användas till att generera en rapport som du kan skicka eller skicka om till en leverantör senare. Du kan även konfigurera åtgärden Skicka till att skapa ett svarsblad som leverantören kan fylla i.  
+Du kan skapa en anbudsförfrågan från planerade order, från en inköpsrekvisition eller från en manuell post. Anbudsförfrågan som du skapar kallas ett anbudsförfrågansärende och detta är basdokumentet som du använder för att skicka en anbudsförfrågan till varje leverantör. När du förbereder anbudsförfrågansärendet och lägger till leverantörer klickar du på **Skicka** i anbudsförfrågansärendet, så skapas en journal för anbudsförfrågan för varje leverantör som du har skickat anbudsförfrågan till. Du kan konfigurera utskriftsinställningarna för Skicka-åtgärden om du vill skriva ut en rapport för varje leverantör till ett arkiv, eller skicka en rapport varje leverantörs e-postadress. Dessutom kan anbudsförfråganjournalen för varje leverantör användas till att generera en rapport som du kan skicka eller skicka om till en leverantör senare. Du kan även konfigurera åtgärden Skicka till att skapa ett svarsblad som leverantören kan fylla i.  
 
 Om du måste ändra en anbudsförfrågan efter att du har skickat den, kan du skicka om anbudsförfrågan till leverantörer när du är klar.  
 
@@ -49,18 +52,18 @@ Om en andra iteration av ett svar krävs för en viss leverantör, klicka på **
 
 Om du har lagt till poängkriterier i ditt anbudsförfrågansärende kommer svaret på anbudsförfrågan ha en poängpanel där du kan ange poängen. De totala poängen visas när du jämför svaren på sidan **Jämför svar **där du också kan jämföra annan svarsinformation som t.ex. radpris, leveransdatum och totalpris.  
 
-När du har bestämt dig för ett bud eller delbud kan du godkänna dem och avvisa resten. Acceptansjournaler, avvisningsjournaler och motsvarande rapporter genereras. De skrivs ut, arkiveras och skickas enligt inställningarna för utskriftshantering. När du accepterar ett erbjudande eller vissa rader i ett erbjudande, antingen ett inköpsavtal inköpsorder eller en inköpsrekvisition uppdateras, beroende på Anbudsförfrågan inköpstyp. Du kan skapa ett handelsavtal som du kan använda senare för någon av svaren, oavsett om du accepterade eller avvisade dem.  
+När du har bestämt dig för ett bud eller delbud kan du godkänna dem och avvisa resten. Acceptansjournaler, avvisningsjournaler och motsvarande rapporter genereras. De skrivs ut, arkiveras och skickas enligt inställningarna för utskriftshantering. När du accepterar ett bud eller specifika rader i ett bud, skapas antingen ett inköpsavtal eller en inköpsorder, eller så uppdateras en inköpsrekvisition beroende på inköpstypen för anbudsförfrågan. Du kan skapa ett handelsavtal som du kan använda senare för någon av svaren, oavsett om du accepterade eller avvisade dem.  
 
 Status för en anbudsförfrågan visas i anbudsförfråganhuvudet och beror på status för anbudsförfrågansraderna. Statusen indikerar i vilken utsträckning du har bearbetat anbudsförfrågan. Varje anbudsförfrågan har två värden för status: lägsta och högsta. Lägsta status är den minst avancerade fasen för vilken rad som helst i en anbudsförfrågan, och den högsta statusen är den mest avancerade fasen för vilken rad som helst i anbudsförfrågan. Om till exempel den minst avancerade fasen i en anbudsförfrågan är för en rad som har skapats, är den lägsta statusen för anbudsförfrågan **Skapad**. Om den mest avancerade fasen i en anbudsförfrågan är för en rad som har skickats till leverantörer är den högsta statusen för anbudsförfrågan **Skickad**. Statusvärdet uppdateras automatiskt under bearbetningen av en anbudsförfrågan.  
 
 Du kan visa lägsta och högsta statusvärde för ett anbudsförfråganhuvud på sidan **Alla anbudsförfrågningar**. Du kan visa lägsta och högsta statusvärde för ett anbudsförfrågansrad på fliken **Rader** på sidan **Anbudsförfrågningar**.  
 
-Här följer ordningen på status för bearbetning av anbudsförfrågningar:
+Sekvensen för status vid bearbetning av anbudsförfrågningar är följande:
 
-1.  **Created**
-2.  **Sent**
-3.  **Received**
-4.  **Accepterat**/**annullerade**/**avvisades**
+1.  **Skapad**
+2.  **Skickad**
+3.  **Inlevererad**
+4.  **Godkänd**/**Annullerad**/**Avvisad**
 
 Statusvärdet kommer att beskrivas mer utförligt i senare avsnitt i denna artikel.
 
@@ -72,7 +75,7 @@ Innan du kan skapa ett anbudsförfrågansärende måste du ställa in informatio
 -   Leveransinformation och betalningsvillkor.
 -   Fält som ska vara inkluderade i svaret för anbudsförfrågan
 
-Du kan åsidosätta dessa värden för ett visst anbudsförfråganärende. Du bör också konfigurera ändringsprocessen. Som en del av den här konfigurationen kan du aktivera låsning av fält. När låsning av fält aktiveras, måste en prokurist som vill ändra en anbudsförfrågan, först klicka på **Skapa** i avsnittet **Rättelse** på fältet **Offert**. När Anbudsförfrågan har uppdaterats med ändringar, anskaffning professional måste slutföras genom att klicka på **Slutför**. ** ** The slutföra åtgärden skapar ett e-postmeddelande att meddela leverantörer om ändrade Anbudsförfrågan. Du väljer mallen för e-postmeddelandet som skickas till leverantörer på sidan **Anskaffnings- och källparametrar** . När en mall skapas, kan den innehålla följande utbytestoken:
+Du kan åsidosätta dessa värden för ett visst anbudsförfråganärende. Du bör också konfigurera ändringsprocessen. Som en del av den här konfigurationen kan du aktivera låsning av fält. När låsning av fält aktiveras, måste en prokurist som vill ändra en anbudsförfrågan, först klicka på **Skapa** i avsnittet **Rättelse** på fältet **Offert**. När anbudsförfrågan har uppdaterats med rättelsen, måste anskaffningspersonen slutföra processen genom att klicka på **Slutför**.** **Slutför-åtgärden genererar ett e-postmeddelande som meddelar leverantörerna om den ändrade anbudsförfrågan. Du väljer mallen för e-postmeddelandet som skickas till leverantörer på sidan **Anskaffnings- och källparametrar** . När en mall skapas, kan den innehålla följande utbytestoken:
 
 -   %Orsak till att buden returneras%
 -   %Orsak till ändring%
@@ -124,7 +127,7 @@ Följande tabell visar statusändringar för anbudsförfrågan när du skapar en
 
 |                                    |                              |                                                 |                            |                             |
 |------------------------------------|------------------------------|-------------------------------------------------|----------------------------|-----------------------------|
-| **Action**                         | **Lowest RFQ header status** | **Highest RFQ header status**                   | **Lowest RFQ line status** | **Highest RFQ line status** |
+| **Åtgärd**                         | **Lägsta status för anbudsförfråganhuvud** | **Högsta status för anbudsförfråganhuvud**                   | **Lägsta status för anbudsförfrågansrad** | **Högsta status för anbudsförfrågansrad** |
 | Skapa sidhuvud och rad för anbudsförfrågan.    | Skapad                      | Skapad                                         | Skapad                    | Skapad                     |
 | Skicka anbudsförfrågan till en viss leverantör. | Skickat                         | Skickat                                            | Skickat                       | Skickat                        |
 | Lägg till en leverantör.                | Skapad                      | Skickat (anbudsförfrågan har endast skickats till en leverantör). | Skapad                    | Skickat                        |
@@ -146,7 +149,7 @@ Om en enkät är kopplad till anbudsförfrågansärendet måste du föra in svar
 
 Om du måste ange alternativrader och anbudsförfrågansärendet tillåter detta, kan du på snabbfliken **Inköpsrekvisitionsrader** klicka på **Lägg till rad**. Ange sedan information om produkten, till exempel artikelnummer eller anskaffningkategori, kvantitet, pris och rabatt.  
 
-Om du har angett ett svar men kräver ett nytt erbjudande från leverantören kan du skicka Anbudsförfrågan. Detta genererar en ny journal och rapporten som du kan använda för att begära ändringar från leverantören.  
+Om du har angett ett svar men kräver ett nytt erbjudande från leverantören kan du skicka anbudsförfrågan igen. Det genererar en ny journal och rapport som du kan använda för att begära ändringar från leverantören.  
 
 Du kan se en översikt över alla anbudsförfrågan och deras svarsstatus på sidan **Anbudsförfråganuppföljning**.  
 
@@ -154,7 +157,7 @@ Följande tabell visar hur anbudsförfråganstatus ändras allt eftersom du tar 
 
 |                                                |                       |                        |                              |                               |                            |                             |
 |------------------------------------------------|-----------------------|------------------------|------------------------------|-------------------------------|----------------------------|-----------------------------|
-| **Action**                                     | **Lowest bid status** | **Highest bid status** | **Lowest RFQ header status** | **Highest RFQ header status** | **Lowest RFQ line status** | **Highest RFQ line status** |
+| **Åtgärd**                                     | **Lägsta budstatus** | **Högsta budstatus** | **Lägsta status för anbudsförfråganhuvud** | **Högsta status för anbudsförfråganhuvud** | **Lägsta status för anbudsförfrågansrad** | **Högsta status för anbudsförfrågansrad** |
 | Registrera en leverantörs bud och spara det.        | Skickat                  | Mottagen               | Skickat                         | Mottagen                      | Skickat                       | Mottagen                    |
 | Registrera den andra leverantörens bud och spara det. | Mottagen              | Mottagen               | Mottagen                     | Mottagen                      | Mottagen                   | Mottagen                    |
 
@@ -183,9 +186,11 @@ Följande tabell visar hur anbudsförfråganstatus ändras allt eftersom du godt
 
 |                         |                       |                        |                              |                               |                            |                             |
 |-------------------------|-----------------------|------------------------|------------------------------|-------------------------------|----------------------------|-----------------------------|
-| **Action**              | **Lowest bid status** | **Highest bid status** | **Lowest RFQ header status** | **Highest RFQ header status** | **Lowest RFQ line status** | **Highest RFQ line status** |
+| **Åtgärd**              | **Lägsta budstatus** | **Högsta budstatus** | **Lägsta status för anbudsförfråganhuvud** | **Högsta status för anbudsförfråganhuvud** | **Lägsta status för anbudsförfrågansrad** | **Högsta status för anbudsförfrågansrad** |
 | Acceptera ett av buden. | Mottagen              | Godkänt               | Mottagen                     | Godkänt                      | Mottagen                   | Godkänt                    |
 | Avvisa de andra buden.  | Avvisad              | Godkänt               | Avvisad                     | Godkänt                      | Avvisad                   | Godkänt                    |
+
+
 
 
 

@@ -28,9 +28,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="correct-a-free-text-invoice"></a>Korrigera en fritextfaktura
 
+[!include[banner](../includes/banner.md)]
+
+
 Det här avsnittet innehåller information om hur du korrigerar en fritextfaktura som har bokförts och hur du återutfärdar den som en korrigerad faktura.
 
-Öppna bokförd fritextfaktura åtgärda en fritextfaktura som redan har bokförts. I den **fakturan** anger **Avbryt**, och välj sedan **fel faktura**. Välj en orsakskod, lägg till kommentarer och välj datum för ny korrigerad faktura. Du kan ändra den korrigerade fakturan och bokföra den. 
+Öppna bokförd fritextfaktura för att åtgärda en fritextfaktura som redan har bokförts. På sidan **Faktura**, välj **Avbryt** och sedan **Korrigera faktura**. Välj en orsakskod, lägg till kommentarer och välj datum för ny korrigerad faktura. Du kan ändra den korrigerade fakturan och bokföra den. 
 
 När du bokför den korrigerade fakturan skapas en annulleringsfaktura för ett kreditbelopp som är lika med det ursprungliga fakturabeloppet. Därför är det kombinerade saldot för den ursprungliga fakturan och annulleringsfakturan 0 (noll). Annulleringsfakturan kvittas mot den ursprungliga fakturan. 
 
@@ -43,9 +46,11 @@ När du har bokfört den korrigerade fakturan har du tre fakturor:
 Du kan identifiera annullerings- och korrigeringsfakturor på två sätt:
 
 -   Sidan **Alla fritextfakturor** innehåller kolumnen **Korrigering** där du ser vilka fakturor som är annulleringsfakturor och korrigerade fakturor.
--   Huvudet på fritextfakturan visas statusen **Cancelling fakturan '\[fakturanummer\]'** eller **korrigerade fakturan '\[fakturanummer\]'**.
+-   Sidhuvudet på fritextfakturan anger statusen **Annullerar faktura "\[fakturanummer\]"'** eller **Korrigerad faktura "\[fakturanummer\]"**.
 
 > [!NOTE]
-> Den här funktionen finns bara om den **ledig fakturan Textkorrigering** konfigurationsnyckeln har valts.
+> Den här funktionen är bara tillgänglig om konfigurationsnyckeln **Korrigering av fritextfaktura** markeras.
+
+
 
 

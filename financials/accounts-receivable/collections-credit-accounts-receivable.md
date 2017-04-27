@@ -1,6 +1,6 @@
 ---
 title: Kredit och inkasso i Kundreskontra
-description: "Information om konton Kundreskontra samlingar hanteras i en central vy med hjälp av Microsoft Dynamics 365 för operationer samlingar. Kredit- och inkassoansvariga kan använda denna centrala vy för att hantera inkasseringar. Inkassohandläggare kan börja inkassoprocessen från kundlistor som genereras med hjälp av fördefinierade inkassokriterier eller från sidan Kunder."
+description: "Information om kundreskontrasamlingar hanteras i en central vy med hjälp av Microsoft Dynamics 365 for Operations-samlingssidan. Kredit- och inkassoansvariga kan använda denna centrala vy för att hantera inkasseringar. Inkassohandläggare kan börja inkassoprocessen från kundlistor som genereras med hjälp av fördefinierade inkassokriterier eller från sidan Kunder."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -28,7 +28,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="credit-and-collections-in-accounts-receivable"></a>Kredit och inkasso i Kundreskontra
 
-Information om konton Kundreskontra samlingar hanteras i en central vy med hjälp av Microsoft Dynamics 365 för operationer samlingar. Kredit- och inkassoansvariga kan använda denna centrala vy för att hantera inkasseringar. Inkassohandläggare kan börja inkassoprocessen från kundlistor som genereras med hjälp av fördefinierade inkassokriterier eller från sidan Kunder.
+[!include[banner](../includes/banner.md)]
+
+
+Information om kundreskontrasamlingar hanteras i en central vy med hjälp av Microsoft Dynamics 365 for Operations-samlingssidan. Kredit- och inkassoansvariga kan använda denna centrala vy för att hantera inkasseringar. Inkassohandläggare kan börja inkassoprocessen från kundlistor som genereras med hjälp av fördefinierade inkassokriterier eller från sidan Kunder.
 
 Innan du börjar ställa in eller arbeta med kassaavstämningar, ska du förstå följande begrepp:
 -   Ögonblicksbilder av åldersfördelningen för kunder innehåller information om åldersfördelade saldon vid en tidpunkt
@@ -55,9 +58,9 @@ För varje åldersfördelningsperiod i åldersfördelningsperioddefinitionen ska
 Kundpooler är frågor som definierar en grupp med kundposter som kan visas och hanteras för samlingar eller åldersfördelningsprocesser. Använd kundpooler för att filtrera information på listsidorna Åldersfördelade saldon, Inkassoaktiviteter och Inkassoärenden. Du kan även använda kundpooler för att filtrera de kundkonton som är inkluderade när ögonblicksbilder av åldersfördelning skapas.
 
 ## <a name="collections-agents"></a>Inkassohandläggare
-Som standard kan Microsoft Dynamics 365 för operationer användare visa all kundinformation på listsidor samlingar. Du kan använda inkassohandläggareposter för att bestämma kundpoolerna som är tillgängliga för att filtrera information om listsidorna för Inkasso och sidan Inkasso. 
+Som standard kan Microsoft Dynamics 365 for Operations-användare visa all kundinformation på listsidorna för inkasso. Du kan använda inkassohandläggareposter för att bestämma kundpoolerna som är tillgängliga för att filtrera information om listsidorna för Inkasso och sidan Inkasso. 
 
-En inkassohandläggare är en person som arbetar med kunder för att säkerställa att betalningarna samlas in i tid. I Microsoft Dynamics 365 för operationer är inkassohandläggare arbetstagare som har tilldelats användare på sidan Inställningar.
+En inkassohandläggare är en person som arbetar med kunder för att säkerställa att betalningarna samlas in i tid. I Microsoft Dynamics 365 for Operations är inkassohandläggare medarbetare som tilldelas till användare på sidan Användarinställningar.
 
 ## <a name="collections-list-pages"></a> Listsidor för Inkasso 
 Följande listsidor hjälper dig att ordna information om inkasso.
@@ -67,7 +70,7 @@ Följande listsidor hjälper dig att ordna information om inkasso.
 
 > [!NOTE]
 > En ögonblicksbild av åldersfördelning måste skapas innan du kan visa information om listsidan Inkasso. Informationen visas bara för kunder när en ögonblicksbild av åldersfördelning har skapats. Posterna som visas på listsidan kan dessutom filtreras, enligt följande:
-<li>En Microsoft Dynamics 365 för åtgärder som användaren har som standard åtkomst till alla kunder som har ett åldrande ögonblicksbild.</li>
+<li>Som standard har en Microsoft Dynamics 365 for Operations-användare åtkomst till alla kunder som har en ögonblicksbild av åldersfördelning.</li>
 <li>Om kundpooler finns, måste en användare anges som en inkassohandläggare för att använda poolerna till att filtrera information om listsidorna för inkasso. Informationen begränsas till de kunder som ingår i den valda kundpoolen.</li>
 <li>Om en användare har ställts in som en inkassohandläggare, är endast poolerna som har valts för den inkassohandläggaren tillgängliga på listsidan. Om Tillåt handläggare att visa alla kundpooler har valts på sidan Inkassohandläggare för inkassohandläggaren, är alla pooler tillgängliga för den handläggaren.</li>
 
@@ -75,7 +78,7 @@ Följande listsidor hjälper dig att ordna information om inkasso.
 ## <a name="collections-page"></a> Sidan Inkasso
 Använd sidan Inkasso för att visa, hantera och vidta åtgärder om inkassoinformation, aktiviteter och ärenden för kunder. 
 
-Det övre fönstret visas ärenden för den valda kunden. Den mittersta panelen visar transaktioner för kunden. Det nedre fönstret visar alla aktiviteter för kunden. Du kan skapa inkassoärenden för att spåra inkassoinformation för en eller flera transaktioner och aktiviteter. Informationen i det övre fönstret och lägre fönstret kan filtreras efter fallet. 
+Det övre fönstret visar ärenden för den valda kunden. Det mellersta fönstret visar transaktioner för kunden. Det nedre fönstret visar alla aktiviteter för kunden. Du kan skapa inkassoärenden för att spåra inkassoinformation för en eller flera transaktioner och aktiviteter. Informationen i det övre fönstret och lägre fönstret kan filtreras efter fallet. 
 
 Faktaboxar innehåller åldriga saldon och information om kreditgräns för valda kunden. Den här informationen lagras i en ögonblicksbild över åldersfördelningen. Om det behövs kan du uppdatera ögonblicksbilden av åldersfördelning med aktuell information. 
 
@@ -86,7 +89,7 @@ Du kan efterskänka, återinföra eller återföra hela räntefakturor eller avg
 
 Dessa justeringar påverkar endast räntefakturor, och ränta och avgifter som de innehåller. Använd stegen i ”Skapa avskrivningstransaktioner i ett steg" för att skriva av alla avgifter som en kund är skyldig.
 
-## <a name="create-writeoff-transactions"></a>Skapa transaktioner för writeoff
+## <a name="create-writeoff-transactions"></a>Skapa avskrivningstransaktioner
 Du kan skriva av dåliga skulder genom att klicka på Skriv av i formuläret Inkasso och på listsidorna Åldriga saldon, Kunder och Öppna kundfakturor. 
 
 När du skriver av transaktioner för en kund, markeras alla transaktioner för kunden automatiskt för kvittning. Ett belopp, som skrivs av, beror på nettobeloppet för markerade transaktioner. Avskrivningstransaktionen skapas i en allmän journal och får innehålla maximalt tre typer av journalrader.
@@ -100,6 +103,8 @@ Bearbeta otillräckliga medel (NSF-betalning)
 --------------------------------------------
 
 Du kan bearbeta NSF-betalningar, genom att klicka på NSF-betalning på sidan Inkasso. När du klickar på den här knappen, annulleras betalningen. Om en NSF-avgift tillämpas för kunden, skapas en avgiftstransaktion i en betalningsjournal. Avgiftsbeloppet baseras på inställningarna för de automatiska avgifterna. De automatiska avgifterna som gäller för NSF-betalningar anges av avgiftsgruppen som valts på sidan Bankkonton för det berörda bankkontot.
+
+
 
 
 

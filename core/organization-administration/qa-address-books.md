@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="address-books"></a>Adressböcker
 
+[!include[banner](../includes/banner.md)]
+
+
 
 
 <a name="how-do-i-check-for-duplicate-records"></a>Hur leta efter dubletter av poster?
@@ -53,7 +56,7 @@ Du kan uppdatera namnet på en partpost och adresserna som är kopplade till pos
 ## <a name="can-i-merge-two-or-more-party-records-into-one-record"></a>Kan jag sammanfoga två eller flera partposter till en post?
 Ibland vill du kanske sammanfoga två eller flera partposter till en enskild post. Detta kan inträffa om du skapar en eller flera dubbelpartposter, antingen på avsiktligt eller oavsiktligt. När du sammanfogar partposter väljer du en post att behålla. Informationen från övriga poster sammanfogas sedan till den här posten. Du upptäcker till exempel att information om Fabrikam lagras i tre partposter: A, B och C. Du vill behålla partpost A. Detta innebär att informationen som lagras i partposterna B och C sammanfogas till partposten A. Det finns fall där inte du kan sammanfoga partposter:
 
--   Du kan inte sammanfoga partposter som är associerade med samma partroll, till exempel kund eller leverantör i samma juridiska person. Part A som är kopplad till en kund i den juridiska personen 123 exempelvis och part B i den juridiska personen 123 är kopplad till en annan kund. Dessa partposterna kan inte kopplas eftersom om de har kopplat den kopplade partposten associeras med flera kunder i samma juridiska person och det är inte tillåtet. Dock kan posterna sammanfogas om part B är kopplad till en leverantör hos juridisk person 123 eller med en kund i en annan juridisk person.
+-   Du kan inte sammanfoga partposter som är associerade med samma partroll, till exempel kund eller leverantör i samma juridiska person. Exempelvis part A som är kopplad till en kund i den juridiska personen 123, och part B som är kopplad till en annan kund i den juridiska personen 123. Dessa partposter kan inte sammanfogas eftersom om de sammanfogas skulle den sammanfogade partposten associeras med flera kunder i samma juridiska person, och det är inte tillåtet. Dock kan posterna sammanfogas om part B är kopplad till en leverantör hos juridisk person 123 eller med en kund i en annan juridisk person.
 -   Du kan inte sammanfoga interna partorganisationsposter hos samma juridiska personen, team eller driftenhet.
 
 ## <a name="should-i-create-a-party-record-in-the-global-address-book-or-in-another-place-such-as-the-customer-or-vendor-page"></a>Ska jag skapa en partpost i den globala adressboken eller på en annan plats, som till exempel sidan Kund eller Leverantör?
@@ -64,5 +67,7 @@ Du kan ange partposter antingen i den globala adressboken eller på lämplig enh
 
 ## <a name="can-i-translate-address-information-for-party-records"></a>Kan jag översätta adressinformation för partposter?
 Du kan ställa in översättningar av adressinformation så att informationen visas på ditt användarspråk (systemspråk) i Microsoft Dynamics 365 for Operations, men på ett annat språk för dokument såsom försäljningsorder. Du kan ange översättningar för land/regionnamn, i adressyften och namnsekvenser. Ditt systemspråk är till exempel danska och du skapar en försäljningsorder för en kund i Frankrike. I detta fall kan du visa kundposten på danska i programmet, men visa adressinformation på franska på den utskrivna försäljningsordern. När du ställer in översättningar måste du ange en översättning för varje artikel på listan. Alla artiklar som du inte anger någon översättning för visas på systemspråket. Ditt systemspråk är till exempel danska och du skickar ett dokument till en kund i Spanien. Om du inte har angett spanska (ESP) översättningar för adressinformationen, visas den informationen på danska både i programmet och på det utskrivna dokumentet.
+
+
 
 

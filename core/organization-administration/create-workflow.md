@@ -26,15 +26,18 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="create-a-workflow"></a>Skapa ett arbetsflöde
 
+[!include[banner](../includes/banner.md)]
+
+
 Det här avsnittet innehåller information om hur du skapar ett arbetsflöde.
 
 <a name="open-the-workflow-editor"></a>Öppna arbetsflödesredigeraren
 ------------------------
 
-För åtgärder som modulen som du arbetar i Microsoft Dynamics 365 avgör vilka typer av arbetsflödet som du skapar. Gör på följande sätt för att välja vilken typ av arbetsflöden du vill skapa, och öppna arbetsflödesredigeraren.
+Den Microsoft Dynamics 365 for Operations-modul som du arbetar i bestämmer vilka typer av arbetsflöden som du kan skapa. Gör på följande sätt för att välja vilken typ av arbetsflöden du vill skapa, och öppna arbetsflödesredigeraren.
 
 1.  Öppna den modul som du vill skapa ett nytt arbetsflöde för. Om du till exempel vill skapa ett arbetsflöde för inköpsrekvisitioner, klicka då på **Procurement and sourcing**.
-2.  Klicka på **inställningar**&gt;**\[Modulnamn\] arbetsflöden**.
+2.  Klicka på **Inställningar** &gt; **\[Modulnamn\] arbetsflöden**.
 3.  Klicka på **New** i åtgärdsfönstret på den listsida som visas.
 4.  På sidan **Create workflow** väljer du den typ av arbetsflöde som du vill skapa, och klickar sedan på **Create workflow**. Arbetsflödesredigeraren visas. Du kan nu använda följande procedurer när du skapar arbetsflödet.
 
@@ -75,6 +78,8 @@ Följ dessa steg när du är redo att spara och aktivera arbetsflödet.
 3.  Om alla fel och varningar har lösts, visas sidan **Activate workflow**. Välj ett av följande alternativ:
     -   Klicka på **Activate the new version** för att aktivera denna version av arbetsflödet. När ett arbetsflöde är aktivt kan användare skicka dokument till det för bearbetning.
     -   Klicka på **Do not activate the new version** om du inte vill aktivera denna version. Du kan aktivera arbetsflödet senare.
+
+
 
 
 

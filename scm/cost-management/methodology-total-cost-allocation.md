@@ -32,7 +32,7 @@ Den här artikeln ger riktlinjer för att använda total kostnadsallokering (TCA
 
 Total kostnadsallokering (TCA) är en metod för att beräkna kostnaden mellan den huvudsakliga receptartikeln för en batchorder och samprodukterna som definieras för receptet. Den här metoden är dynamisk. Den beräknar kostnaden som ett viktat medelvärde mellan kvantiteterna som rapporteras som avslutade för receptartikel och samprodukterna. När TCA används behöver du inte granska kostnadsallokeringarna för varje batchorder. Om TCA inte används använder receptberäkningen befintliga funktioner.
 
-## <a name="using-tca-for-coproducts"></a>Med hjälp av TCA för biprodukter
+## <a name="using-tca-for-coproducts"></a>Använda TCA för samprodukter
 Nedan följer några av riktlinjerna för att använda TCA för samprodukter:
 
 -   Om du ställer in skjutreglaget för **Total kostnadsallokering** till **Ja** för en receptversion, samprodukter måste ha en självkostnad som är större än 0 (noll). Värdet kan hämtas från den aktiva kostnadsversionen för samma plats eller för den första platsen för en formel som inte är platsspecifik. Det här villkoret valideras när formeln är godkänd.
@@ -46,7 +46,7 @@ Nedan följer några av riktlinjerna för att använda TCA för samprodukter:
 -   När en batchorder skapas manuellt, eller en planerad batchorder som har bekräftats, kopieras värdet för skjutreglaget **Total kostnadsallokering** för receptversionen till batchordern. Du kan dock ändra den här inställningen på batchordern. Om **Total kostnadsallokering** skjutreglaget anges till **Nej** för receptversionen och sedan ändras till **Ja** för batchordern ändras metoden för kostnadsallokeringen för varje rad som angavs till **Manuell** till **TCA**. En kostnadsallokering av **Ingen** är oförändrad. Om **Total kostnadsallokering** skjutreglaget anges till **Ja** för receptversionen och sedan ändras till **Nej** för batchordern ändras metoden för kostnadsallokeringen för varje samprodukt för typen **Produktion** till **Manuell**. Alla uppskattade procentandelar av kostnadsallokeringen är oförändrade.
 -   Sidan **Kostnadsallokering för samprodukt** visar den beräknade kostnadsallokeringsprocenten. Du kan öppna den här sidan från sidan **Batchorder**. Denna information är användbar när produkterna och kvantiteterna som rapporteras skiljer sig från de schemalagda eller startade kvantiteterna för batchordern. När kostnaden är färdig, visas de nya procentsatsallokeringarna från TCA på **Kostnadsallokering för samprodukt** sidan.
 
-## <a name="calculating-the-burden-for-byproducts"></a>Beräkning av arbetet för biprodukter
+## <a name="calculating-the-burden-for-byproducts"></a>Beräkna bördan för biprodukter
 Fältet **Kostnadsallokering för biprodukt** på sidan **Samprodukter** är ett uppräknarfält som används endast för biprodukter. För samprodukter är värdet för detta fält alltid **Ingen**. För biproduktrader det här fältet avgör hur kostnadsbeloppet för biproduktraden läggs till den totala kostnaden för produktionen. Följande alternativ är tillgängliga:
 
 -   **Ingen** – Inget belopp anges till den totala kostnaden för produktionen för den här biproduktraden.

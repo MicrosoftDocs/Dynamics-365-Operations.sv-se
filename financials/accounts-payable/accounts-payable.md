@@ -1,6 +1,6 @@
 ---
 title: "Startsida för Leverantörsreskontra"
-description: "Det här avsnittet ger en översikt av Leverantörsreskontra."
+description: "Det här ämnet innehåller en översikt över leverantörsreskontra."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,8 +27,13 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="accounts-payable-home-page"></a>Startsida för Leverantörsreskontra
 
-Det här avsnittet ger en översikt av Leverantörsreskontra.
+[!include[banner](../includes/banner.md)]
 
-Du kan registrera leverantörsfakturor manuellt eller ta emot dem elektroniskt via en datatabell. När fakturorna anges eller tas emot kan du granska och godkänna fakturorna med en Fakturagodkännandejournal eller **leverantörsfakturan** sida. Du kan använda fakturamatchning, leverantörsfakturapolicyer och arbetsflöde för att automatisera granskningen, så att fakturor som uppfyller vissa kriterier godkännas automatiskt, och de återstående fakturorna flaggas för granskning av en behörig användare.
+
+Det här ämnet innehåller en översikt över leverantörsreskontra. 
+
+Du kan registrera leverantörsfakturor manuellt eller ta emot dem elektroniskt via en datatabell. När fakturorna har angetts eller tagits emot kan du granska och godkänna fakturorna med en fakturagodkännandejournal eller sidan **Leverantörsfaktura**. Du kan använda fakturamatchning, leverantörsfakturapolicyer och arbetsflöde för att automatisera granskningen, så att fakturor som uppfyller vissa kriterier godkännas automatiskt, och de återstående fakturorna flaggas för granskning av en behörig användare.
+
+
 
 

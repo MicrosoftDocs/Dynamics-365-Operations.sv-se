@@ -1,6 +1,6 @@
 ---
-title: "Godkännande av faktura-pilar"
-description: "Mobila funktioner i Microsoft Dynamics 365 för operationer kan en affärsanvändare skapa mobila funktioner. Om avancerade scenarier plattformen också utvecklare utökar serverns användningsområden som de önskar. Det mest effektiva sättet att lära sig några nya koncept i mobile ska gå igenom processen med att skapa några scenarier. Det här avsnittet är avsett att ge en praktisk metod för att skapa mobila scenarier genom att leverantören fakturagodkännanden för mobila enheter som ett användningsfall. Det här avsnittet hjälper dig att skapa varianter på scenarier och kan även tillämpas på andra situationer som inte är relaterade till leverantörsfakturor."
+title: "Mobila fakturagodkännanden"
+description: "Med mobila funktioner i Microsoft Dynamics 365 for Operations kan en affärsanvändare skapa mobila upplevelser. För avancerade scenarier gör plattformen också att utvecklare kan utöka användningsområdena som de önskar. Det mest effektiva sättet att lära sig nya koncept på mobilen är att gå igenom processen att skapa några scenarier. Det här avsnittet är avsett att ge en praktisk metod för att skapa mobila scenarier genom att ta leverantörsfakturagodkännanden för mobila enheter som ett användningsfall. Det här avsnittet hjälper dig att skapa varianter på scenarier och kan även tillämpas på andra scenarier som inte är relaterade till leverantörsfakturor."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,44 +24,47 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="mobile-invoice-approvals"></a>Godkännande av faktura-pilar
+# <a name="mobile-invoice-approvals"></a>Mobila fakturagodkännanden
 
-Mobila funktioner i Microsoft Dynamics 365 för operationer kan en affärsanvändare skapa mobila funktioner. Om avancerade scenarier plattformen också utvecklare utökar serverns användningsområden som de önskar. Det mest effektiva sättet att lära sig några nya koncept i mobile ska gå igenom processen med att skapa några scenarier. Det här avsnittet är avsett att ge en praktisk metod för att skapa mobila scenarier genom att leverantören fakturagodkännanden för mobila enheter som ett användningsfall. Det här avsnittet hjälper dig att skapa varianter på scenarier och kan även tillämpas på andra situationer som inte är relaterade till leverantörsfakturor.
+[!include[banner](../includes/banner.md)]
+
+
+Med mobila funktioner i Microsoft Dynamics 365 for Operations kan en affärsanvändare skapa mobila upplevelser. För avancerade scenarier gör plattformen också att utvecklare kan utöka användningsområdena som de önskar. Det mest effektiva sättet att lära sig nya koncept på mobilen är att gå igenom processen att skapa några scenarier. Det här avsnittet är avsett att ge en praktisk metod för att skapa mobila scenarier genom att ta leverantörsfakturagodkännanden för mobila enheter som ett användningsfall. Det här avsnittet hjälper dig att skapa varianter på scenarier och kan även tillämpas på andra scenarier som inte är relaterade till leverantörsfakturor.
 
 <a name="prerequisites"></a>Förutsättningar
 -------------
 
 | Förutsättning                                                                                            | beskrivning                                                                                                                                                          |
 |---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Mobila före läsa handboken                                                                                |(/ dynamics365/operationer/dev-itpro/mobile-program / mobile-platform.md)                                                                                                  |
-| Dynamics 365 för operationer                                                                             | En miljö med Microsoft Dynamics 365 för operationer version 1611 och Microsoft Dynamics-datorer operationer uppdatering 3 (2016 November)                   |
-| Installera snabbkorrigering KB 3204341.                                                                              | Uppgiftsinspelning felaktigt spela in två Stäng kommandon för listrutan dialogrutor detta ingår i Dynamics 365 för operationen plattformsuppdatering 3 (uppdatering 2016 November) |
-| Installera snabbkorrigering KB 3207800.                                                                              | Denna snabbkorrigering gör att bifogade filer som ska visas på mobila klienten detta ingår i Dynamics 365 för operationen plattformsuppdatering 3 (November 2016 uppdatering).           |
-| Installera snabbkorrigering KB 3208224.                                                                              | Programkoden för mobila leverantör fakturan godkännande programmet detta ingår i Microsoft Dynamics AX application 7.0.1 (maj 2016).                          |
-| En Android eller iOS eller en Windows-enhet med mobiltelefonprogrammet för Dynamics 365 för operationer | Sök efter appen i butiken lämpligt program.                                                                                                                     |
+| Mobil handbok - före läsning                                                                                |(/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform.md)                                                                                                  |
+| Dynamics 365 for Operations                                                                             | En miljö med Microsoft Dynamics 365 for Operations version 1611 och plattformsuppdatering 3 för Microsoft Dynamics for Operations (november 2016)                   |
+| Installera snabbkorrigering KB 3204341.                                                                              | Uppgiftsinspelaren kan felaktigt spela in två Stäng-kommandon för listrutans dialogrutor. Detta ingår i Dynamics 365 for Operation-plattformsuppdatering 3 (uppdatering november 2016) |
+| Installera snabbkorrigering KB 3207800.                                                                              | Denna snabbkorrigering gör att bifogade filer kan visas på mobila klienten. Detta ingår i Dynamics 365 for Operation-plattformsuppdatering 3 (uppdatering november 2016).           |
+| Installera snabbkorrigering KB 3208224.                                                                              | Programkoden för godkännandeprogrammet för mobila leverantörsfakturan. Detta ingår i Microsoft Dynamics AX-programmet 7.0.1 (maj 2016).                          |
+| En Android- eller iOS- eller en Windows-enhet med mobiltelefonappen installerad för Dynamics 365 for Operations | Sök efter appen i lämplig appbutik.                                                                                                                     |
 
 ## <a name="introduction"></a>Introduktion
-Mobila godkännanden för leverantörsfakturor kräver tre snabbkorrigeringar som nämns i avsnittet "Förutsättningar". De här snabbkorrigeringarna innehåller inte en arbetsyta för fakturan godkännande. Om du vill ta reda på vad läses en arbetsyta i samband med mobil, mobila handbok som nämns i avsnittet "Förutsättningar". Arbetsytan fakturan godkännanden skall utformas. 
+Mobila godkännanden för leverantörsfakturor kräver tre snabbkorrigeringar som nämns i avsnittet "Förutsättningar". De här snabbkorrigeringarna innehåller inte en arbetsyta för fakturagodkännande. Om du vill ta reda på vad en arbetsyta är i samband med mobil, läs mobila handbok som nämns i avsnittet "Förutsättningar". Arbetsytan för fakturagodkännanden måste utformas. 
 
-Alla organisationer orchestrates och definierar sin affärsprocess för leverantörsfakturor på olika sätt. Innan du börjar utforma en mobila upplevelse för godkännande av leverantörens faktura bör du överväga följande aspekter i affärsprocessen. Tanken är att använda dessa datapunkter som möjligt att optimera användarupplevelsen på enheten.
+Alla organisationer orkestrerar och definierar sin affärsprocess för leverantörsfakturor på olika sätt. Innan du börjar utforma en mobil upplevelse för godkännande av leverantörsfakturor bör du överväga följande aspekter i affärsprocessen. Tanken är att använda dessa datapunkter så mycket som möjligt för att optimera användarupplevelsen på enheten.
 
--   Vilka fält från fakturahuvudet användaren vill ha i mobila erfarenheten, och i vilken ordning?
--   Vilka fält från fakturaraderna användaren vill ha i mobila erfarenheten, och i vilken ordning?
--   Hur många rader som finns i en faktura? Regeln 80 20 här och optimera för 80 procent.
--   Användarna vill ha redovisningsfördelningar (faktura kodning) på den mobila enheten under granskning? Om svaret på frågan är Ja kan beakta följande:
-    -   Hur många redovisningsfördelningar (utökat pris, moms, tillägg, delningar, och så vidare) som finns för en fakturarad? Återigen, Använd 80 20-regeln.
-    -   Fakturorna också har redovisningsfördelningar i fakturahuvudet? Om så är fallet ska dessa redovisningsfördelningar finnas på enheten?
+-   Vilka fält från fakturahuvudet vill användaren ha i mobilupplevelsen, och i vilken ordning?
+-   Vilka fält från fakturaraderna vill användaren ha i mobilupplevelsen, och i vilken ordning?
+-   Hur många rader finns det i en faktura? Använd 80-20-regeln här och optimera för 80 procent.
+-   Vill användarna ha redovisningsfördelningar (fakturakodning) på den mobila enheten vid granskningar? Om svaret på frågan är Ja, beakta följande:
+    -   Hur många redovisningsfördelningar (slutligt pris, moms, avgifter, delningar, och så vidare) finns det för en fakturarad? Återigen, använd 80-20-regeln.
+    -   Har fakturorna också redovisningsfördelningar i fakturahuvudet? Om så är fallet ska dessa redovisningsfördelningar finnas på enheten?
 
 > [!NOTE]
-> Det här avsnittet förklaras inte hur du redigera redovisningsfördelningar, eftersom den här funktionen inte stöds för närvarande mobila scenarier.
+> Det här avsnittet förklarar inte hur du redigerar redovisningsfördelningar, eftersom den här funktionen inte stöds för närvarande för mobila scenarier.
 
--   Användarna vill ha bilagor för fakturan på enheten?
+-   Vill användarna se bilagor för fakturan på enheten?
 
-Utformningen av mobila upplevelsen för godkännande av faktura varierar beroende på svaren på dessa frågor. Målet är att optimera användarupplevelsen för Affärsprocess i mobile i organisationen. I resten av det här avsnittet beskrivs två varianter av scenario som baseras på olika föregående frågor och svar. 
+Utformningen av den mobila upplevelsen för fakturagodkännanden varierar beroende på svaren på dessa frågor. Målet är att optimera användarupplevelsen för affärsprocessen på mobil i organisationen. I resten av det här avsnittet beskrivs två varianter av scenario som baseras på olika svar på föregående frågor. 
 
-Som en allmän vägledning när du arbetar med mobila designer, måste du publicera ändringarna förlorat uppdateringarna.
+Som en allmän vägledning, när du arbetar med mobildesignern, se till att du "publicerar" ändringarna för att inte förlora uppdateringarna.
 
-## <a name="designing-a-simple-invoice-approval-scenario-for-contoso"></a>Utforma ett scenario för godkännande av enkel faktura för Contoso
+## <a name="designing-a-simple-invoice-approval-scenario-for-contoso"></a>Utforma ett enkelt scenario för fakturagodkännande för Contoso
 <table>
 <colgroup>
 <col width="50%" />
@@ -75,7 +78,7 @@ Som en allmän vägledning när du arbetar med mobila designer, måste du public
 </thead>
 <tbody>
 <tr class="odd">
-<td>Vilka fält från fakturahuvudet användaren vill ha i mobila erfarenheten, och i vilken ordning?</td>
+<td>Vilka fält från fakturahuvudet vill användaren ha i mobilupplevelsen, och i vilken ordning?</td>
 <td><ol>
 <li>Leverantörsnamn</li>
 <li>Fakturatotal</li>
@@ -88,7 +91,7 @@ Som en allmän vägledning när du arbetar med mobila designer, måste du public
 </ol></td>
 </tr>
 <tr class="even">
-<td>Vilka fält från fakturaraderna användaren vill ha i mobila erfarenheten, och i vilken ordning?</td>
+<td>Vilka fält från fakturaraderna vill användaren ha i mobilupplevelsen, och i vilken ordning?</td>
 <td><ol>
 <li>Anskaffningskategori</li>
 <li>Kvantitet</li>
@@ -98,23 +101,23 @@ Som en allmän vägledning när du arbetar med mobila designer, måste du public
 </ol></td>
 </tr>
 <tr class="odd">
-<td>Hur många rader som finns i en faktura? Regeln 80 20 här och optimera för 80 procent.</td>
+<td>Hur många rader finns det i en faktura? Använd 80-20-regeln här och optimera för 80 procent.</td>
 <td>1</td>
 </tr>
 <tr class="even">
-<td>Användarna vill ha redovisningsfördelningar (faktura kodning) på den mobila enheten under granskning?</td>
+<td>Vill användarna ha redovisningsfördelningar (fakturakodning) på den mobila enheten vid granskningar?</td>
 <td>Ja</td>
 </tr>
 <tr class="odd">
-<td>Hur många redovisningsfördelningar (utökat pris, moms, tillägg och så vidare) som finns för en fakturarad? Återigen, Använd 80 20-regeln.</td>
-<td>Utökat pris: 2 moms: 0-tillägg: 0</td>
+<td>Hur många redovisningsfördelningar (slutligt pris, moms, avgifter, och så vidare) finns det för en fakturarad? Återigen, använd 80-20-regeln.</td>
+<td>Slutligt pris: 2 Moms: 0 Avgifter: 0</td>
 </tr>
 <tr class="even">
-<td>Fakturorna också har redovisningsfördelningar i fakturahuvudet? Om så är fallet ska dessa redovisningsfördelningar finnas på enheten?</td>
+<td>Har fakturorna också redovisningsfördelningar i fakturahuvudet? Om så är fallet ska dessa redovisningsfördelningar finnas på enheten?</td>
 <td>Används inte</td>
 </tr>
 <tr class="odd">
-<td>Användarna vill ha bilagor för fakturan på enheten?</td>
+<td>Vill användarna se bilagor för fakturan på enheten?</td>
 <td>Ja</td>
 </tr>
 </tbody>
@@ -122,61 +125,61 @@ Som en allmän vägledning när du arbetar med mobila designer, måste du public
 
 ### <a name="create-the-workspace"></a>Skapa arbetsytan
 
-1.  Öppna Dynamics 365 för operationer och logga in i en webbläsare.
-2.  När du har loggat in kan du lägga till **& mode = mobila** till URL som visas i följande exempel och uppdatera sidan: https://&lt;yoururl&gt;/? cmp = usmf & mi = DefaultDashboard**& läge = mobil**
-3.  Klicka på den **inställningar** (växel)-knappen i det övre högra hörnet på sidan och klicka sedan på **mobiltelefonprogrammet**. Designern mobiltelefonprogrammet måste visas precis som uppgiften inspelning ska visas.
-4.  Klicka på **Lägg** om du vill skapa en ny arbetsyta. Namn på arbetsytan för det här exemplet **Mina godkännanden**.
+1.  Öppna Dynamics 365 for Operations och logga in i en webbläsare.
+2.  När du har loggat in kan du lägga till **&mode=mobile** till URL:en som visas i följande exempel, och uppdatera sidan: https://&lt;yoururl&gt;/?cmp=usmf&mi=DefaultDashboard**&mode=mobile**
+3.  Klicka på knappen **Inställningar** (kugghjul) i det övre högra hörnet på sidan och klicka sedan på **Mobilapp**. Mobilapps-designern måste visas precis som Uppgiftsinspelare visas.
+4.  Klicka på **Lägg till** för att skapa en ny arbetsyta. Namnet på arbetsytan för det här exemplet anger du som **Mina godkännanden**.
 5.  Ange en beskrivning.
-6.  Välj en färg för arbetsytan. Arbetsytans färg ska användas för övergripande formatmallen för mobila upplevelsen för den här arbetsytan.
+6.  Välj en färg på arbetsytan. Arbetsytans färg ska användas för övergripande stilen för den mobila upplevelsen för den här arbetsytan.
 7.  Välj en ikon för arbetsytan.
-8.  Klicka på **har gjort**
-9.  Klicka på **publicera arbetsytan** att spara ändringarna
+8.  Klicka på **Klart**
+9.  Klicka på **Publicera arbetsytan** för att spara ändringarna.
 
 ### <a name="vendor-invoices-assigned-to-me"></a>Leverantörsfakturor som har tilldelats mig
 
-Första sidan mobile som du bör utforma är en lista med fakturor som har tilldelats användare för granskning. När du designar sidan mobil, Använd den **VendMobileInvoiceAssignedToMeListPage** sida i Dynamics 365 för operationer. Innan du slutför den här proceduren kan du kontrollera att minst en leverantörsfaktura som är tilldelad till dig för granskning, och att fakturaraden har två fördelningar. Den här inställningen uppfyller kraven i det här scenariot.
+Den första mobilsidan som du bör utforma är en lista med fakturor som har tilldelats till användaren för granskning. När du designar den här mobilsidan, använd sidan **VendMobileInvoiceAssignedToMeListPage** i Dynamics 365 for Operations. Innan du slutför den här proceduren, kontrollera att minst en leverantörsfaktura har tilldelats till dig för granskning, och att fakturaraden har två fördelningar. Den här inställningen uppfyller kraven i det här scenariot.
 
-1.  Ersätt modulens namn med menyalternativet i Dynamics 365 för operationer URL, **VendMobileInvoiceAssignedToMeListPage** öppna mobil version av den **pågående leverantörsfakturor som tilldelats mig** listsidan i den **Leverantörsreskontra** modulen. Beroende på hur många fakturor som du har på datorn tilldelas du visas den här sidan de fakturorna. Du kan använda filtret till vänster om du vill hitta en viss faktura. Men kräver vi inte en viss faktura i det här exemplet. Vi behöver bara vissa fakturan som tilldelats dig som kommer att utforma sidan mobile. Nya sidor som är tillgängliga har utformats specifikt för utveckling av mobila scenarier för leverantörsfakturan. Därför måste du använda sidorna. URL bör likna följande URL och när du har angett måste den sida som visas i illustrationen visas: https://&lt;yourURL&gt;/? cmp = usmf & mi =**VendMobileInvoiceAssignedToMeListPage**& mode = mobila [![sidan väntande leverantörsfakturor som har tilldelats mig](./media/mobile-invoice-approvals01-1024x281.png)](./media/mobile-invoice-approvals01.png)
-2.  Klicka på den **inställningar** (växel) knappen i det övre högra hörnet på sidan och klicka sedan på **mobiltelefonprogrammet**
-3.  Markera arbetsytan och på **redigera**
-4.  Klicka på **sidan Lägg till** du skapar du första sidan mobil.
-5.  Ange ett namn, till exempel **fakturor från leverantörer**, och en beskrivning, t.ex **leverantörsfakturor som tilldelats mig för granskning**.
-6.  Click **Done**.
-7.  I mobila designern klickar du på den **fält** klickar du på **Välj fält**. Kolumnerna på listsidan måste likna illustrationen. [![Kolumnerna på pågående leverantörsfakturor som har tilldelats till mig sida](./media/mobile-invoice-approvals02-1024x117.png)](./media/mobile-invoice-approvals02.png)
-8.  Lägg till kolumnerna som krävs från sidan som visas för användare på sidan mobile. Den ordning som du lägger till är den ordning i vilken fälten visas för användaren. Det enda sättet att ändra ordningen på fälten blir genom att välja alla fält igen. Utifrån kraven i det här scenariot krävs följande åtta fält. Men överväga vissa användare åtta fält för mycket information på en mobil enhet. Därför visas bara de viktigaste fälten i vyn i listan. De återstående fälten visas i Detaljvyn vi utformar senare. Nu ska vi lägga till följande fält. Klicka på plustecknet (**+**) i dessa kolumner om du vill skicka till mobil sida.
+1.  Ersätt menyalternativets namn i URL:en till Dynamics 365 for Operations med **VendMobileInvoiceAssignedToMeListPage** för att öppna mobilversionen av listsidan **Pågående leverantörsfakturor tilldelade mig** i modulen **Leverantörsreskontra**. Beroende på hur många fakturor som du har i systemet tilldelade till dig, visas dessa fakturor på den här sidan. Om du vill hitta en specifik faktura kan du använda filtret till vänster. Men i det här exemplet kräver vi inte en viss faktura. Vi behöver bara en faktura som tilldelats dig som gör att du kan utforma mobilsidan. De nya sidor som är tillgängliga har utformats specifikt för utveckling av mobila scenarier för leverantörsfakturan. Därför måste du använda dessa sidor. URL:en bör likna följande URL och när du har angett den måste sidan som visas i illustrationen visas: https://&lt;yourURL&gt;/?cmp=usmf&mi=**VendMobileInvoiceAssignedToMeListPage**&mode=mobile [![Väntande leverantörsfakturor som har tilldelats mig](./media/mobile-invoice-approvals01-1024x281.png)](./media/mobile-invoice-approvals01.png)
+2.  Klicka på knappen **Inställningar** (kugghjul) i det övre högra hörnet på sidan och klicka sedan på **Mobilapp**
+3.  Välj din arbetsyta och klicka på **Redigera**
+4.  Klicka på **Lägg till sida** för att skapa den första mobilsidan.
+5.  Ange ett namn, till exempel **Mina leverantörsfakturor**, och en beskrivning, till exempel **Leverantörsfakturor som tilldelats mig för granskning**.
+6.  Klicka på **Klart**.
+7.  I mobila designern, på fliken **Fält** klickar du på **Välj fält**. Kolumnerna på listsidan måste likna följande illustration. [![Kolumner på sidan Väntande leverantörsfakturor som har tilldelats mig](./media/mobile-invoice-approvals02-1024x117.png)](./media/mobile-invoice-approvals02.png)
+8.  Lägg till de kolumner som krävs från listsidan som måste visas för användare på mobilsidan. Den ordning som du lägger till i är den ordning i vilken fälten visas för slutanvändaren. Det enda sättet att ändra ordningen på fälten blir genom att välja alla fält igen. Utifrån kraven i det här scenariot krävs följande åtta fält. Men vissa användare kanske anser att åtta fält är för mycket information på en mobil enhet. Därför visar vi bara de viktigaste fälten i vyn med mobillistan. De återstående fälten visas i detaljvyn som vi utformar senare. Nu lägger vi till följande fält. Klicka på plustecknet (**+**) i dessa kolumner för att lägga till på mobilsidan.
     1.  Leverantörsnamn
     2.  Fakturatotal
     3.  Fakturakonto
     4.  Fakturanummer
     5.  Fakturadatum
 
-    När fält läggs måste sidan mobile likna illustrationen. [![När fält läggs](./media/mobile-invoice-approvals03.png)](./media/mobile-invoice-approvals03.png)
-9.  Du måste även lägga till följande kolumner nu så att vi kan aktivera arbetsflödesåtgärder senare.
-    1.  Visa slutförd aktivitet
-    2.  Visa Delegera aktivitet
-    3.  Visa återkalla uppgift
-    4.  Visa avvisa ändringar
-    5.  Visa slutförandeuppgiften för begäran
-    6.  Visa skicka uppgift
+    När fält läggs till måste mobilsidan likna följande illustration. [![Sidan när fält har lagts till](./media/mobile-invoice-approvals03.png)](./media/mobile-invoice-approvals03.png)
+9.  Du måste även lägga till följande kolumner nu, så att vi kan aktivera arbetsflödesåtgärder senare.
+    1.  Visa Slutför uppgift
+    2.  Visa Delegera uppgift
+    3.  Visa Återkalla uppgift
+    4.  Visa Avvisa uppgift
+    5.  Visa Begär slutförandeuppgift
+    6.  Visa Skicka uppgift igen
 
-10. Klicka på **har gjort** att Avsluta redigeringsläge.
-11. Klicka på **tillbaka** och **har gjort** avsluta arbetsytan
-12. Klicka på **publicera arbetsytan** att spara arbetet.
-13. Aktivera **visa fakturatotalen på pågående fakturor lista** i parameterformuläret för leverantörsreskontra under **fakturan**. Observera att endast genom att aktivera den här parametern fakturasummor beräknas som ska visas på listsidan för leverantörer pågående fakturor. Detta är en ny funktion som en del av bestämda snabbkorrigering 3208224.
+10. Klicka på **Klart** för att avsluta redigeringsläge.
+11. Klicka på **Tillbaka** och sedan på **Klart** för att lämna arbetsytan
+12. Klicka på **Publicera arbetsytan** för att spara ditt arbete.
+13. Aktivera **Visa fakturasumma i listan med pågående leverantörsfakturor** i parameterformuläret för leverantörsreskontra under **Faktura**. Observera att endast genom att aktivera den här parametern beräknas fakturasummor som ska visas på listsidan för pågående leverantörsfakturor. Detta är en ny funktion som en del av förutsättningen snabbkorrigering 3208224.
 
-### <a name="vendor-invoice-details"></a>Leverantör-Fakturadetaljer
+### <a name="vendor-invoice-details"></a>Detaljer om leverantörsfaktura
 
-När du designar sidan faktura för mobile, Använd den **VendMobileInvoiceHeaderDetails** sida i Dynamics 365 för operationer. Observera att den här sidan visas de äldsta fakturan (faktura som först skapades) beroende på hur många fakturor som du har på datorn. Du kan använda filtret till vänster om du vill hitta en viss faktura. Men kräver vi inte en viss faktura i det här exemplet. Vi behöver bara vissa fakturadata så att vi kan utforma sidan mobil. [![Arbetsflödessidan](./media/mobile-invoice-approvals04-1024x425.png)](./media/mobile-invoice-approvals04.png)
+När du designar sidan med fakturadetaljer för mobil, använd sidan **VendMobileInvoiceHeaderDetails** i Dynamics 365 for Operations. Observera att beroende på antalet fakturor som du har i systemet visar den här sidan den äldsta fakturan (faktura som först skapades). Om du vill hitta en specifik faktura kan du använda filtret till vänster. Men i det här exemplet kräver vi inte en viss faktura. Vi behöver bara vissa fakturadata så att vi kan utforma mobilsidan. [![Sida för arbetsflöde](./media/mobile-invoice-approvals04-1024x425.png)](./media/mobile-invoice-approvals04.png)
 
-1.  Ersätt modulens namn med menyalternativet i Dynamics 365 för operationer URL, **VendMobileInvoiceHeaderDetails** så att formuläret öppnas
-2.  Öppna designern mobila från den **inställningar** (växel) knappen.
-3.  Klicka på den **redigera** du vill starta redigeringsläget i arbetsytan.
-4.  Välj den ** fakturor från leverantörer ** du skapade tidigare och sedan på **redigera**.
-5.  I den **fält** klickar du på den **rutnät** kolumnrubriken.
-6.  Klicka på **egenskaper**&gt;**sidan Lägg till**. **Anmärkning:** när du klickar på de **rutnät** rubrik och lägga till en sida i relation till sida får du automatiskt information.
-7.  Ange en sidrubrik som **fakturainformation**, och en beskrivning, t.ex **visa fakturahuvudet och raddetaljer**.
-8.  Klicka på **Välj fält**. Lägg märke till att den ordning som du lägger till ordern där fälten visas för användaren. Det enda sättet att ändra ordningen på fälten blir genom att välja alla fält igen.
-9.  Från sidhuvudet i baserat på kraven i det här scenariot lägger du till följande fält:
+1.  I URL:en för Dynamics 365 for Operations, ersätt namnet på menyalternativet med **VendMobileInvoiceHeaderDetails** för att öppna formuläret
+2.  Öppna mobildesignern med knappen **Inställningar** (kugghjul).
+3.  Klicka på knappen **Redigera** för att starta redigeringsläget i arbetsytan.
+4.  Välj sidan **Mina leverantörsfakturor** som du skapade tidigare och klicka sedan på **Redigera**.
+5.  På fliken **Fält** klickar du på kolumnrubriken **Rutnät**.
+6.  Klicka på **Egenskaper** &gt; **Lägg till sida**. **Anmärkning:** När du klickar på rubriken **Rutnät** och lägger till en sida, etableras relationen med detaljsidan automatiskt.
+7.  Ange en sidrubrik, till exempel **Fakturadetaljer**, och en beskrivning, till exempel **Visa fakturahuvud och raddetaljer**.
+8.  Klicka på **Välj fält**. Observera att den ordning som du lägger till i är den ordning i vilken fälten visas för slutanvändaren. Det enda sättet att ändra ordningen på fälten blir genom att välja alla fält igen.
+9.  Lägg till följande fält från huvudet, baserat på förutsättningarna för det här scenariot:
     1.  Leverantörsnamn
     2.  Fakturatotal
     3.  Fakturakonto
@@ -186,41 +189,41 @@ När du designar sidan faktura för mobile, Använd den **VendMobileInvoiceHeade
     7.  Förfallodatum
     8.  Fakturavaluta
 
-10. Lägg till följande fält i rutnätet rader på sidan:
+10. Lägg till följande fält från radrutnätet på sidan:
     1.  Anskaffningskategori
     2.  Kvantitet
     3.  Pris per enhet
     4.  Nettobelopp för rad
     5.  1099-belopp
 
-11. När alla fält från de två föregående stegen har lagts till, klickar du på **har gjort**. Sidan måste likna illustrationen. [![När fält läggs](./media/mobile-invoice-approvals05.png)](./media/mobile-invoice-approvals05.png)
-12. Klicka på **har gjort** att Avsluta redigeringsläge.
-13. Klicka på **tillbaka** och **har gjort** avsluta arbetsytan
-14. Klicka på **publicera arbetsytan** att spara arbetet
+11. När alla fält från de två föregående stegen har lagts till, klickar du på **Klart**. Sidan måste likna följande illustration. [![Sidan när fält har lagts till](./media/mobile-invoice-approvals05.png)](./media/mobile-invoice-approvals05.png)
+12. Klicka på **Klart** för att avsluta redigeringsläge.
+13. Klicka på **Tillbaka** och sedan på **Klart** för att lämna arbetsytan
+14. Klicka på **Publicera arbetsytan** för att spara ditt arbete
 
 ### <a name="workflow-actions"></a>Arbetsflödesåtgärder
 
-Om du vill lägga till arbetsflödesåtgärder, Använd den **VendMobileInvoiceHeaderDetails** sida i Dynamics 365 för operationer. Ersätt namnet på menyalternativet i URL-Adressen, precis som tidigare om du vill öppna sidan. Öppna designern mobila från den **inställningar** (växel) knappen. Så här lägger du till arbetsflödesåtgärder på sidan.
+Om du vill lägga till arbetsflödesåtgärder, använd sidan **VendMobileInvoiceHeaderDetails** i Dynamics 365 for Operations. Ersätt namnet på menyalternativet i URL-adressen precis som tidigare om du vill öppna sidan. Öppna sedan mobildesignern med knappen **Inställningar** (kugghjul). Så här lägger du till arbetsflödesåtgärder på sidan med detaljer.
 
-1.  Klicka på den **redigera** du vill starta redigeringsläget i arbetsytan.
-2.  Välj den **fakturainformation** du skapade tidigare och sedan på **redigera**.
-3.  I den **åtgärder** klickar du på **lägga till**.
-4.  Ange en rubrik för åtgärden, till exempel **Godkänn**, och en beskrivning, t.ex **Godkänn fakturan**. Observera att rubriken åtgärd som du anger här blir namnet på åtgärden som visas för användaren i mobila programmet.
-5.  Click **Done**.
+1.  Klicka på knappen **Redigera** för att starta redigeringsläget i arbetsytan.
+2.  Välj sidan **Fakturadetaljer** som du skapade tidigare och klicka sedan på **Redigera**.
+3.  Klicka på **Lägg till åtgärd** på fliken **Åtgärder**.
+4.  Ange en rubrik för åtgärden, till exempel **Godkänn**, och en beskrivning, till exempel **Godkänn fakturan**. Observera att rubriken för åtgärden som du anger här blir namnet på åtgärden som visas för användaren i mobilappen.
+5.  Klicka på **Klart**.
 6.  Klicka på **Välj fält**.
-7.  Gå igenom arbetsflödesprocessen den **VendMobileInvoiceHeaderDetails** sidan och utför åtgärden som du vill registrera. Kontrollera att du skriver kommentarer för arbetsflöde under den här processen så att ett kommentarsfält ingår också i mobila upplevelsen.
-8.  När arbetsflödesåtgärden körs, klickar du på **har gjort** ska ha slutfört uppgiften väljer fält.
-9.  Klicka på **har gjort** att Avsluta redigeringsläge.
-10. Klicka på **tillbaka** och **har gjort** avsluta arbetsytan
-11. Klicka på **publicera arbetsytan** att spara arbetet
-12. Upprepa steg 3 till 11 för att registrera de obligatoriska arbetsflödesåtgärder. Observera att det är ett krav har tilldelats dig fakturor som är i ett tillstånd att tillhandahålla de arbetsflödesåtgärder som du tänker skapa för.
+7.  Gå igenom arbetsflödesprocessen på sidan **VendMobileInvoiceHeaderDetails** sidan och slutför åtgärden som du vill registrera. Kontrollera att du skriver kommentarer för arbetsflöde under den här processen så att ett kommentarsfält ingår också i mobila upplevelsen.
+8.  När arbetsflödesåtgärden körs, klickar du på **Klart** för att slutföra uppgiften Välj fält.
+9.  Klicka på **Klart** för att avsluta redigeringsläge.
+10. Klicka på **Tillbaka** och sedan på **Klart** för att lämna arbetsytan
+11. Klicka på **Publicera arbetsytan** för att spara ditt arbete
+12. Upprepa steg 3 till 11 för att registrera de obligatoriska arbetsflödesåtgärderna. Observera att det är ett krav att ha fakturor som tilldelats till dig som är i ett tillstånd för att göra arbetsflödesåtgärderna tillgängliga för dig som du tänker utforma för.
 13. Öppna Anteckningar eller Microsoft Visual Studio och klistra in följande kod. Spara filen som en JS-fil. Den här koden gör två saker:
-    1.  Extra arbetsflöde relaterade kolumnerna som vi har lagt till tidigare på listsidan för mobila döljs. Vi har lagt till kolumnerna så att programmet har informationen i sammanhanget göra nästa steg.
-    2.  Utifrån arbetsflödessteg som visas gäller logik för att visa bara de åtgärderna.
+    1.  Den döljer de extra arbetsflödesrelaterade kolumner som vi har lade till tidigare på mobillistsidan. Vi har lagt till kolumnerna så att appen har informationen i sammanhang och kan utföra nästa steg.
+    2.  Utifrån vilket arbetsflödessteg som är aktivt, använder den logik för att visa enbart de åtgärderna.
 
-Observera att namnet på sidorna och andra kontroller i JS koden måste överensstämma med arbetsytan.
+Observera att namnet på sidorna och andra kontroller i JS-koden måste överensstämma med arbetsytan.
 
-1.  Funktion huvudsakliga (metadataService, dataService, cacheService, $q) {returnera {appInit: funktion (appMetadata) {/ / Dölj kontroller som måste vara finns men är inte synliga metadataService.configureControl (' min--leverantörsfakturor, 'ShowAccept' {dolda: true}), metadataService.configureControl (' min--leverantörsfakturor, 'ShowApprove' {dolda: true}), metadataService.configureControl (' min--leverantörsfakturor, 'ShowReject' {dolda: true}), metadataService.configureControl (' min--leverantörsfakturor, 'ShowDelegate' {dolda: SANT}), metadataService.configureControl (' min--leverantörsfakturor, 'ShowRequestChange' {dolda: SANT}), metadataService.configureControl (' min--leverantörsfakturor, 'ShowRecall' {dolda: SANT}), metadataService.configureControl (' min--leverantörsfakturor, 'ShowComplete' {dolda: SANT}), metadataService.configureControl (' min--leverantörsfakturor, 'ShowResubmit' { dolda: true}); }, pageInit: funktion (pageMetadata, parametrar) {om (pageMetadata.Name == 'Fakturadetaljer') {/ / Visa/Dölj arbetsflödesåtgärder utifrån arbetsflöde steg metadataService.configureAction (acceptera godkänns {visas: true}), metadataService.configureAction (Godkänn, {visas: true}), metadataService.configureAction (ignorera, {visas: true}), metadataService.configureAction (delegera, {visas: SANT}), metadataService.configureAction (' begär ändring ', {visas: true}), metadataService.configureAction (återkallande, {visas: SANT}), metadataService.configureAction (avslutad, {visas: SANT}), metadataService.configureAction ("Skicka" {visas: SANT}),
+1.  function main(metadataService, dataService, cacheService, $q) {        return {            appInit: function (appMetadata) {                // Dölj kontroller som måste finnas, men inte vara synliga               metadataService.configureControl('My-vendor-invoices', 'ShowAccept', { hidden: true });                metadataService.configureControl('My-vendor-invoices', 'ShowApprove', { hidden: true });                metadataService.configureControl('My-vendor-invoices', 'ShowReject', { hidden: true });                metadataService.configureControl('My-vendor-invoices', 'ShowDelegate', { hidden: true });                metadataService.configureControl('My-vendor-invoices', 'ShowRequestChange', { hidden: true });              metadataService.configureControl('My-vendor-invoices', 'ShowRecall', { hidden: true });                metadataService.configureControl('My-vendor-invoices', 'ShowComplete', { hidden: true });            metadataService.configureControl('My-vendor-invoices', 'ShowResubmit', { hidden: true });            },            pageInit: function (pageMetadata, params) {     if (pageMetadata.Name == 'Invoice-details') {                    // Visa/dölj arbetsflödesåtgärder baserat på arbetsflödessteg                    metadataService.configureAction('Accept', { visible: true });                    metadataService.configureAction('Approve', { visible: true });                    metadataService.configureAction('Reject', { visible: true });                    metadataService.configureAction('Delegate', { visible: true });                    metadataService.configureAction('Request-change', { visible: true });                    metadataService.configureAction('Recall', { visible: true });                    metadataService.configureAction('Complete', { visible: true });                    metadataService.configureAction('Resubmit', { visible: true });
 
                        var entityContextParts = params.pageContext.split(':');
                        var data = dataService.getEntityData(entityContextParts[0], entityContextParts[1]);
@@ -256,56 +259,56 @@ Observera att namnet på sidorna och andra kontroller i JS koden måste överens
            };
         }
 
-2.  Överför kodfilen till arbetsytan genom att välja den **Logic** fliken
-3.  Klicka på **har gjort** att Avsluta redigeringsläge.
-4.  Klicka på **tillbaka** och **har gjort** avsluta arbetsytan
-5.  Klicka på **publicera arbetsytan** att spara arbetet
+2.  Ladda upp kodfilen till arbetsytan genom att välja fliken **Logik**
+3.  Klicka på **Klart** för att avsluta redigeringsläge.
+4.  Klicka på **Tillbaka** och sedan på **Klart** för att lämna arbetsytan
+5.  Klicka på **Publicera arbetsytan** för att spara ditt arbete
 
-### <a name="vendor-invoice-attachments"></a>Leverantör, faktura bifogade filer
+### <a name="vendor-invoice-attachments"></a>Leverantörsfakturabilagor
 
-1.  Klicka på den **inställningar** (växel) knappen i det övre högra hörnet på sidan och klicka sedan på **mobiltelefonprogrammet**
-2.  Klicka på den **redigera** du vill starta redigeringsläget i arbetsytan.
-3.  Välj den ** fakturainformation ** du skapade tidigare och sedan på **redigera**.
-4.  Ange den **dokumenthantering** att **Ja** enligt nedan. **Anmärkning:** om det finns inga krav för att visa bifogade filer på den mobila enheten kan du lämna detta alternativ inställt på **nr**, vilket är standardinställningen.
+1.  Klicka på knappen **Inställningar** (kugghjul) i det övre högra hörnet på sidan och klicka sedan på **Mobilapp**
+2.  Klicka på knappen **Redigera** för att starta redigeringsläget i arbetsytan.
+3.  Välj sidan **Fakturadetaljer** som du skapade tidigare och klicka sedan på **Redigera**.
+4.  Ange alternativet **Dokumenthantering** till **Ja** enligt nedan. **Anmärkning:** Om det inte finns några inga krav på att visa bifogade filer på den mobila enheten kan du lämna detta alternativ inställt på **Nej**, vilket är standardinställningen.
 5.  [![docmanagement](./media/docmanagement-216x300.png)](./media/docmanagement.png)
-6.  Klicka på **har gjort** att Avsluta redigeringsläge.
-7.  Klicka på **tillbaka** och **har gjort** avsluta arbetsytan
-8.  Klicka på **publicera arbetsytan** att spara arbetet
+6.  Klicka på **Klart** för att avsluta redigeringsläge.
+7.  Klicka på **Tillbaka** och sedan på **Klart** för att lämna arbetsytan
+8.  Klicka på **Publicera arbetsytan** för att spara ditt arbete
 
-### <a name="vendor-invoice-line-distributions"></a>Leverantörsfakturafördelningar rad
+### <a name="vendor-invoice-line-distributions"></a>Fördelningar av leverantörsfakturarader
 
-Kraven i det här scenariot bekräfta att endast-radnivå fördelningar och en faktura kommer alltid att bara en rad. Eftersom detta scenario är enkelt, måste användargränssnitt på den mobila enheten vara så enkelt att användaren inte behöver gå ned flera nivåer som ska visa fördelningarna. Leverantörsfakturor i Dynamics 365 för operationer finns alternativet att visa alla fördelningar från fakturahuvudet. Denna erfarenhet är det vi behöver mobila scenariot. Därför använder vi i **VendMobileInvoiceAllDistributionTree** vill designa den här delen av mobila scenariot. 
+Kraven i det här scenariot bekräftar att endast det endast ska finnas fördelningar på radnivå, och att en faktura alltid bara har en rad. Eftersom detta scenario är enkelt, måste användargränssnitt på den mobila enheten vara så enkelt att användaren inte behöver gå ned flera nivåer för att visa fördelningarna. Leverantörsfakturor i Dynamics 365 for Operations innehåller alternativet att visa alla fördelningar från fakturahuvudet. Denna upplevelse är det vi behöver för det mobila scenariot. Därför använder vi sidan **VendMobileInvoiceAllDistributionTree** för att utforma den här delen av det mobila scenariot. 
 
 > [!NOTE] 
-> Behovet av att veta hjälper oss att avgöra vilken sida ska användas och hur exakt att optimera mobila upplevelse för användaren när vi utformar scenariot. I det andra fallet utnyttjas en annan sida för att visa fördelningar, eftersom olika krav för scenariot.
+> Att känna till kraven hjälper oss att avgöra vilken sida som ska användas och hur exakt mobila upplevelsen ska optimeras för användaren när vi utformar scenariot. I det andra scenariot utnyttjas en annan sida för att visa fördelningar, eftersom kraven är olika krav för det scenariot.
 
-1.  Ersätt namnet på menyalternativet som du gjorde första gången i URL. Sidan visas bör likna illustrationen. [![Alla fördelningar sida](./media/mobile-invoice-approvals06.png)](./media/mobile-invoice-approvals06.png)
-2.  Öppna designern mobila från den **inställningar** (växel) knappen.
-3.  Klicka på den **redigera** du vill starta redigeringsläget i arbetsytan. **Anmärkning:** visas två nya sidor har skapats automatiskt. Dessa sidor skapas i systemet eftersom du aktiverade dokumenthantering i föregående avsnitt. Du kan ignorera dessa nya sidor.
-4.  Klicka på **sidan Lägg till**.
-5.  Ange en sidrubrik som **visa redovisning**, och en beskrivning, t.ex **visa redovisning av fakturan**.
-6.  Click **Done**.
-7.  På den **fält** klickar du på **Välj fält**Välj följande fält från sidan fördelningar och klicka sedan på **har gjort**:
+1.  Ersätt namnet på menyalternativet i URL-adressen precis som du gjorde tidigare. Sidan som visas bör likna illustrationen. [![Sida med alla distributioner](./media/mobile-invoice-approvals06.png)](./media/mobile-invoice-approvals06.png)
+2.  Öppna mobildesignern med knappen **Inställningar** (kugghjul).
+3.  Klicka på knappen **Redigera** för att starta redigeringsläget i arbetsytan. **Anmärkning:** Du ser att två nya sidor har skapats automatiskt. Dessa sidor skapas i systemet eftersom du aktiverade dokumenthantering i föregående avsnitt. Du kan ignorera dessa nya sidor.
+4.  Klicka på **Lägg till sida**.
+5.  Ange en sidrubrik som **Visa redovisning**, och en beskrivning, t.ex **Visa redovisning för fakturan**.
+6.  Klicka på **Klart**.
+7.  På fliken **Fält** klickar du på **Välj fält**. Välj följande fält från fördelningssidan och klicka sedan på **Klart**:
     1.  Belopp
     2.  Valuta
     3.  Huvudbokskonto
 
 > [!NOTE] 
-> Vi inte väljer den **beskrivning** kolumn från rutnätet fördelningar eftersom kraven i det här scenariot bekräftat att det utökade priset är endast beloppet som finns för fördelningar. Därför behöver inte användaren någon ett annat fält för att avgöra vilken beloppstyp som avser fördelningen. I nästa scenariot har vi **kan** använder den här informationen eftersom anger krav för scenariot som andra belopptyper har fördelningar (till exempel försäljnings skatteskäl).
-8.  Klicka på **har gjort** att Avsluta redigeringsläge.
-9.  Klicka på **tillbaka** och **har gjort** avsluta arbetsytan
-10. Klicka på **publicera arbetsytan** att spara arbetet
+> Vi valde inte kolumnen **Beskrivning** i rutnätet för fördelningar, eftersom kraven i det här scenariot har bekräftat att det utökade priset är de enda belopp som det finns fördelningar för. Därför behöver användaren inte något ytterligare fält för att fastställa beloppstypen som fördelningen gäller. Men i nästa scenario **ska** vi använda den här informationen, kraven för det scenariot anger att andra beloppstyper har fördelningar (till exempel moms).
+8.  Klicka på **Klart** för att avsluta redigeringsläge.
+9.  Klicka på **Tillbaka** och sedan på **Klart** för att lämna arbetsytan
+10. Klicka på **Publicera arbetsytan** för att spara ditt arbete
 
-**Anmärkning:** de **visa redovisning** mobilsida är inte kopplad till någon av mobila sidorna som vi har skapat hittills. Eftersom användaren ska kunna navigera till den **visa redovisning** sidan från den **fakturainformation** sida på den mobila enheten måste gärna navigering från den **fakturainformation** sidan till den **visa redovisning** sida. Vi fastställa navigering med hjälp av ytterligare logik via JavaScript.
+**Obs!** Mobilsidan **Visa redovisning** är för tillfället inte kopplad till någon av de mobilsidor som vi har utformat hittills. Eftersom användaren ska kunna navigera till sidan **Visa redovisning** sidan från sidan **Fakturadetaljer** på den mobila enheten måste vi tillhandahålla navigering från sidan **Fakturadetaljer** till sidan **Visa redovisning**. Vi fastställer den här navigeringen med hjälp av ytterligare logik via JavaScript.
 
-1.  Öppna JS-fil som du skapade tidigare och lägga till rader som markerats i koden nedan. Den här koden gör två saker:
-    1.  Det hjälper till att garantera att användaren inte kan bläddra direkt från arbetsytan till den **visa redovisning** sida.
-    2.  Den konstaterar att en navigeringskontroll från den **fakturainformation** sidan till den **visa redovisning** sida.
+1.  Öppna den JS-fil som du skapade tidigare och lägg till de rader som markerats i koden nedan. Den här koden gör två saker:
+    1.  Det hjälper till att garantera att användaren inte kan bläddra direkt från arbetsytan till sidan **Visa redovisning**.
+    2.  Den etablerar en navigeringskontroll från sidan **Fakturadetaljer** till sidan **Visa redovisning**.
 
 > [!NOTE] 
-> Namnet på sidorna och andra kontroller i JS-koden måste vara densamma från arbetsytan.
+> Namnet på sidorna och andra kontroller i JS-koden måste överensstämma med arbetsytan.
 
-1.  Funktion huvudsakliga (metadataService, dataService, cacheService, $q) {returnera {appInit: funktion (appMetadata) {/ / Dölj kontroller som måste vara finns men är inte synliga metadataService.configureControl (' min--leverantörsfakturor, 'ShowAccept' {dolda: true}), metadataService.configureControl (' min--leverantörsfakturor, 'ShowApprove' {dolda: true}), metadataService.configureControl (' min--leverantörsfakturor, 'ShowReject' {dolda: true}), metadataService.configureControl (' min--leverantörsfakturor, 'ShowDelegate' {dolda: SANT}), metadataService.configureControl (' min--leverantörsfakturor, 'ShowRequestChange' {dolda: SANT}), metadataService.configureControl (' min--leverantörsfakturor, 'ShowRecall' {dolda: SANT}), metadataService.configureControl (' min--leverantörsfakturor, 'ShowComplete' {dolda: SANT}), metadataService.configureControl (' min--leverantörsfakturor, 'ShowResubmit' { dolda: true}); Dölja sidor är inte tillgängligt för roten navigering metadataService.hideNavigation('View-accounting'); Länk metadataService.addLink redovisning ('-Fakturadetaljer, ' Visa redovisning ', '-redovisning-nav-kontroll ', "Visa redovisning", SANT); }, pageInit: funktion (pageMetadata, parametrar) {om (pageMetadata.Name == 'Fakturadetaljer') {/ / Visa/Dölj arbetsflödesåtgärder utifrån arbetsflöde steg metadataService.configureAction (acceptera godkänns {visas: true}), metadataService.configureAction (Godkänn, {visas: true}), metadataService.configureAction (ignorera, {visas: true}), metadataService.configureAction (delegera, {visas: SANT}), metadataService.configureAction (' begär ändring ', {visas: true}), metadataService.configureAction (återkallande, {visas: SANT}), metadataService.configureAction (avslutad, {visas: SANT}), metadataService.configureAction ("Skicka" {visas: SANT}),
+1.  function main(metadataService, dataService, cacheService, $q) {        return {            appInit: function (appMetadata) {                // Hide controls that need to be present, but not visible                metadataService.configureControl('My-vendor-invoices', 'ShowAccept', { hidden: true });                metadataService.configureControl('My-vendor-invoices', 'ShowApprove', { hidden: true });                metadataService.configureControl('My-vendor-invoices', 'ShowReject', { hidden: true });                metadataService.configureControl('My-vendor-invoices', 'ShowDelegate', { hidden: true });                metadataService.configureControl('My-vendor-invoices', 'ShowRequestChange', { hidden: true });              metadataService.configureControl('My-vendor-invoices', 'ShowRecall', { hidden: true });                metadataService.configureControl('My-vendor-invoices', 'ShowComplete', { hidden: true });            metadataService.configureControl('My-vendor-invoices', 'ShowResubmit', { hidden: true });                // Dölj sidor som inte gäller för rotnavigering                metadataService.hideNavigation('View-accounting');                //Länk till Visa redovisning                metadataService.addLink('Invoice-details', 'View-accounting', 'View-accounting-nav-control', 'View accounting', true);            },            pageInit: function (pageMetadata, params) {     if (pageMetadata.Name == 'Invoice-details') {                    // Visa/dölj arbetsflödesåtgärder baserat på arbetsflödets steg                    metadataService.configureAction('Accept', { visible: true });                    metadataService.configureAction('Approve', { visible: true });                    metadataService.configureAction('Reject', { visible: true });                    metadataService.configureAction('Delegate', { visible: true });                    metadataService.configureAction('Request-change', { visible: true });                    metadataService.configureAction('Recall', { visible: true });                    metadataService.configureAction('Complete', { visible: true });                    metadataService.configureAction('Resubmit', { visible: true });
 
                        var entityContextParts = params.pageContext.split(':');
                        var data = dataService.getEntityData(entityContextParts[0], entityContextParts[1]);
@@ -341,24 +344,24 @@ Kraven i det här scenariot bekräfta att endast-radnivå fördelningar och en f
            };
         }
 
-2.  Överför kodfilen till arbetsytan genom att välja den **logik** att ersätta föregående kod
-3.  Klicka på **har gjort** att Avsluta redigeringsläge.
-4.  Klicka på **tillbaka** och **har gjort** avsluta arbetsytan
-5.  Klicka på **publicera arbetsytan** att spara arbetet
+2.  Ladda upp kodfilen till arbetsytan genom att välja fliken **Logik** för att skriva över föregående kod
+3.  Klicka på **Klart** för att avsluta redigeringsläge.
+4.  Klicka på **Tillbaka** och sedan på **Klart** för att lämna arbetsytan
+5.  Klicka på **Publicera arbetsytan** för att spara ditt arbete
 
 ### <a name="validation"></a>Validering
 
-Öppna appen från den mobila enheten och Anslut till Dynamics 365 för operationer instans. Kontrollera att du loggar in till företaget där leverantörsfakturor som har tilldelats dig för granskning. Du ska kunna utföra följande åtgärder:
+Öppna appen från den mobila enheten och anslut till din Dynamics 365 for Operations-instans. Kontrollera att du loggar in till företaget där leverantörsfakturor har tilldelats dig för granskning. Du ska kunna utföra följande åtgärder:
 
--   Finns det **Mina godkännanden** arbetsytan.
--   Gå till den **Mina godkännanden** arbetsytan och se den **fakturor från leverantörer** sida.
--   Gå till den **fakturor från leverantörer** och se en lista med fakturor som har tilldelats dig.
--   Gå till en fakturor och visa Fakturadetaljer rubrik- och raddetaljer.
--   På informationssidan visas en länk till bilagor och Använd den här länken för att navigera till listan med bifogade filer och visa de bifogade filerna.
--   På informationssidan visas en länk till den **visa redovisning** sidan och Använd den här länken för att gå till sidan fördelningar och visa fördelningarna.
--   På detaljsidan i **åtgärder** menyn längst ned och utföra arbetsflödesåtgärder som gäller för arbetsflödessteget.
+-   Se arbetsytan **Mina godkännanden**.
+-   Gå nedåt i arbetsytan **Mina godkännanden** och se sidan **Mina leverantörsfakturor**.
+-   Gå nedåt i sidan **Mina leverantörsfakturor** och se en lista med fakturor som har tilldelats dig.
+-   Gå till en av fakturorna och visa huvud- och raddetaljer för fakturan.
+-   På informationssidan visas en länk till bilagor. Använd den här länken för att navigera till listan med bifogade filer och visa de bifogade filerna.
+-   På informationssidan visas en länk till sidan **Visa redovisning**. Använd den här länken för att navigera till fördelningssidan och visa fördelningarna.
+-   På detaljsidan, klicka på menyn **Åtgärder** längst ned och utför arbetsflödesåtgärder som gäller för arbetsflödessteget.
 
-## <a name="designing-a-complex-invoice-approval-scenario-for-fabrikam"></a>Utforma ett godkännande scenario komplicerad faktura för Fabrikam
+## <a name="designing-a-complex-invoice-approval-scenario-for-fabrikam"></a>Utforma ett komplext scenario för fakturagodkännande för Fabrikam
 <table>
 <colgroup>
 <col width="50%" />
@@ -372,7 +375,7 @@ Kraven i det här scenariot bekräfta att endast-radnivå fördelningar och en f
 </thead>
 <tbody>
 <tr class="odd">
-<td>Vilka fält från fakturahuvudet användaren vill ha i mobila erfarenheten, och i vilken ordning?</td>
+<td>Vilka fält från fakturahuvudet vill användaren ha i mobilupplevelsen, och i vilken ordning?</td>
 <td><ol>
 <li>Leverantörsnamn</li>
 <li>Fakturabelopp</li>
@@ -385,7 +388,7 @@ Kraven i det här scenariot bekräfta att endast-radnivå fördelningar och en f
 </ol></td>
 </tr>
 <tr class="even">
-<td>Vilka fält från fakturaraderna användaren vill ha i mobila erfarenheten, och i vilken ordning?</td>
+<td>Vilka fält från fakturaraderna vill användaren ha i mobilupplevelsen, och i vilken ordning?</td>
 <td><ol>
 <li>Anskaffningskategori</li>
 <li>Kvantitet</li>
@@ -395,23 +398,23 @@ Kraven i det här scenariot bekräfta att endast-radnivå fördelningar och en f
 </ol></td>
 </tr>
 <tr class="odd">
-<td>Hur många rader som finns i en faktura? Regeln 80 20 här och optimera för 80 procent.</td>
+<td>Hur många rader finns det i en faktura? Använd 80-20-regeln här och optimera för 80 procent.</td>
 <td>5</td>
 </tr>
 <tr class="even">
-<td>Användarna vill ha redovisningsfördelningar (faktura kodning) på den mobila enheten under granskning?</td>
+<td>Vill användarna ha redovisningsfördelningar (fakturakodning) på den mobila enheten vid granskningar?</td>
 <td>Ja</td>
 </tr>
 <tr class="odd">
-<td>Hur många redovisningsfördelningar (utökat pris, moms, tillägg och så vidare) som finns för en fakturarad? Återigen, Använd 80 20-regeln.</td>
-<td>Utökat pris: 2 moms: tillägg 2: 2</td>
+<td>Hur många redovisningsfördelningar (slutligt pris, moms, avgifter, och så vidare) finns det för en fakturarad? Återigen, använd 80-20-regeln.</td>
+<td>Slutligt pris: 2 Moms: 2 Avgifter: 2</td>
 </tr>
 <tr class="even">
-<td>Fakturorna också har redovisningsfördelningar i fakturahuvudet? Om så är fallet ska dessa redovisningsfördelningar finnas på enheten?</td>
+<td>Har fakturorna också redovisningsfördelningar i fakturahuvudet? Om så är fallet ska dessa redovisningsfördelningar finnas på enheten?</td>
 <td>Används inte</td>
 </tr>
 <tr class="odd">
-<td>Användarna vill ha bilagor för fakturan på enheten?</td>
+<td>Vill användarna se bilagor för fakturan på enheten?</td>
 <td>Ja</td>
 </tr>
 </tbody>
@@ -419,16 +422,18 @@ Kraven i det här scenariot bekräfta att endast-radnivå fördelningar och en f
 
 ### <a name="exercise"></a>Övning
 
-Följande ändringar kan göras för scenario 1, baserat på kraven för scenario 2. Använd det här avsnittet som Övning som du kan utföra om syften.
+Följande ändringar kan göras för scenario 1, baserat på kraven för scenario 2. Använd det här avsnittet som en övning som du kan utföra i utbildningssyfte.
 
-1.  Eftersom flera fakturarader förväntas i scenario 2, hjälper optimera användarupplevelsen på den mobila enheten design följande ändringar:
-    1.  Istället för att visa fakturarader på sidan med information (som i scenario 1) kan användare välja att visa rader på en mobil sida.
-    2.  Eftersom flera fakturaraden förväntas i det här fallet om den **VendMobileInvoiceAllDistributionTree** sidan används för att utforma sidan fördelningar för mobile (liksom i scenario 1), det kan vara förvirrande för användaren att jämföra fördelningar raderna. Använd därför den **VendMobileInvoiceLineDistributionTree** sidan om du vill designa sidan fördelningar.
-    3.  Vi rekommenderar ska fördelningarna visas i samband med en fakturarad i det här scenariot. Kontrollera därför att användaren kan söka i en rad för att visa sidan fördelningar. Använd sidan länken möjligheten för att upprätta detaljerad, precis som du gjorde för sidorna i scenario 1 rubrik och information.
+1.  Eftersom flera fakturarader förväntas i scenario 2, hjälper följande ändringar i designen till att optimera användarupplevelsen på den mobila enheten:
+    1.  I stället för att visa fakturarader på detaljsidan (som i scenario 1) kan användare välja att visa rader på en separat mobilsida.
+    2.  Eftersom flera fakturarader förväntas i det här scenariot, och om sidan **VendMobileInvoiceAllDistributionTree** används för att utforma fördelningssidan för mobil (liksom i scenario 1), kan det vara förvirrande för användaren att korrelera rader till fördelningar. Använd därför sidan **VendMobileInvoiceLineDistributionTree** sidan för att utforma fördelningssidan.
+    3.  Vi rekommenderar att fördelningarna visas i samband med en fakturarad i det här scenariot. Kontrollera därför att användaren kan gå nedåt i en rad för att visa fördelningssidan. Använd sidans länkfunktion för att upprätta detaljgranskningen, precis som du gjorde för huvud- och detaljsidorna i scenario 1.
 
-2.  Eftersom flera beloppstyp förväntas vid utdelning i scenario 2 (moms, tillägg och så vidare), kan det vara praktiskt att visa beskrivningen av beloppstyp. (Vi bort informationen i scenario 1.)
+2.  Eftersom flera beloppstyper förväntas för fördelningar i scenario 2 (moms, tillägg och så vidare), kan det vara praktiskt att visa beskrivningen av beloppstypen. (Vi uteslöt den här informationen i scenario 1.)
 
 ## <a name="conclusion"></a>Slutsats
-Mobil plattform och programmet funktionerna möjliggör mobil scenarier som är optimerade för användarbas i organisationen. Utifrån exemplen i det här avsnittet finns du prova andra varianter och skapa olika erfarenheter som uppfyller specifika behov.
+Den mobila plattformen och programfunktionerna gör att du kan utforma mobilscenarier som är optimerade för en användarbas i en organisation. Utifrån exemplen i det här avsnittet kan du pröva andra varianter och skapa olika upplevelser som uppfyller specifika behov.
+
+
 
 

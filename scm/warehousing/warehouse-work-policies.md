@@ -28,9 +28,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="warehouse-work-policies"></a>Policyer för lagerarbete
 
+[!include[banner](../includes/banner.md)]
+
+
 En ny arbetspolicy för lagerställe introduceras i Microsoft Dynamics AX 7.0.1 (uppdatering i maj 2016). Denna arbetspolicy styr huruvida arbetsuppgifter på lagerstället skapas för lagerställeprocesser inom tillverkningen.
 
-Denna arbetspolicy styr huruvida arbetsuppgifter på lagerstället skapas för lagerställeprocesser inom tillverkningen. Du kan ställa in arbetspolicyn genom att använda en kombination av **arbetsordertyper**, en **lagerplats** samt en **produkt** Exempelvis färdiga produkt L0101 rapporteras som dit utdata 001. Den färdiga varan förbrukas senare i en annan produktionsorder på plats 001. Då kan du ställa in en princip arbete att förhindra som skapas när du rapporterar L0101 som färdig dit utdata 001 produkt arbete för färdiga varor föras in. Arbetspolicyn är en enskild enhet som kan beskrivas genom följande information:
+Denna arbetspolicy styr huruvida arbetsuppgifter på lagerstället skapas för lagerställeprocesser inom tillverkningen. Du kan ställa in arbetspolicyn genom att använda en kombination av **arbetsordertyper**, en **lagerplats** samt en **produkt** Exempelvis rapporteras produkt L0101 som färdig till utleveransplats 001. Den färdiga varan förbrukas senare i en annan produktionsorder på utleveransplats 001. I det här fallet kan du ställa in en arbetspolicy för att förhindra arbete för inlagring av färdiga varor skapas när du rapporterar produkt L0101 som färdig till utleveransplats 001. Arbetspolicyn är en enskild enhet som kan beskrivas genom följande information:
 
 -   **Arbetspolicynamn **(den unika identifieraren för arbetspolicyn)
 -   **Arbetsordertyper **och** Metod för skapande av arbetsuppgift**
@@ -55,7 +58,7 @@ Du kan välja en produkt som arbetspolicyn gäller för. Du kan använda arbetsp
 ## <a name="example"></a>Exempel
 I följande exempel finns det två produktionsorder, PRD-001 och PRD-00*2*. Produktionsorder PRD-001 har en åtgärd med namnet **Assembly**, där produkten SC1 rapporterats som färdig till plats O1. Produktionsorder PRD-002 har en åtgärd med namnet **Painting** och förbrukar produkten SC1 från platsen O1. Produktionsorder PRD-002 förbrukar även råmaterial RM1 från platsen O1. RM1 lagras på lagerställeplats och BULK-001 och plockas till platsen O1 av lagerställets arbetsuppgift för plockning av råmaterial. Plockningsarbetet skapas när produktion PRD-002 frisläpps. 
 
-[![Warehouse work policies](./media/warehouse-work-policies.png)](./media/warehouse-work-policies.png) 
+[![Policyer för lagerarbete](./media/warehouse-work-policies.png)](./media/warehouse-work-policies.png) 
 
 När du planerar att konfigurera en arbetspolicy för detta scenario på lagerstället, bör du beakta följande information:
 
@@ -66,12 +69,12 @@ Här följer ett exempel på en arbetspolicy som du kan ställa in, baserat på 
 
 |                                         |                                                       |
 |-----------------------------------------|-------------------------------------------------------|
-|**Work policy name**<br>                 |**Work order types**<br>                               |
-| Artikelinförsel 01' No                    |– Den färdiga varan har förts in<br>                           |
-|                                         |**Locations**<br>                                      |
-|                                         |-O1   |                                               |
-|                                         |**Products** <br>                                      |
-|                                         |-SC1                                                  |
+|**Namn på arbetspolicy**<br>                 |**Typer av arbetsorder**<br>                               |
+| Lagringsfri 01                    |- Lagring av färdig vara<br>                           |
+|                                         |**Platser**<br>                                      |
+|                                         |- O1   |                                               |
+|                                         |**Produkter** <br>                                      |
+|                                         |- SC1                                                  |
 
 Följande procedurer innehåller steg-för-steg-instruktioner om hur du ställer in arbetspolicyn för lagerstället för detta scenario. En exempelinställning som visar hur du rapporterar en produktionsorder som slutförd till en plats som inte kontrolleras via registreringsskylt beskrivs också.
 
@@ -244,5 +247,7 @@ STEG (25)
 </tr>
 </tbody>
 </table>
+
+
 
 

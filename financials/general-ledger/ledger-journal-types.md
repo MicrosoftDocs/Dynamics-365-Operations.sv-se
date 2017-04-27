@@ -1,6 +1,6 @@
 ---
 title: Redovisning journaltyper
-description: "Det här avsnittet ger en beskrivning av de journaltyper du kan ställa in för ekonomiska journaler. Använd sidan namn om du vill ställa in journaler som du kan använda i hela Microsoft Dynamics 365 för operationer."
+description: "Det här avsnittet ger en beskrivning av de journaltyper du kan ställa in för ekonomiska journaler. Använd sidan Journalnamn för att ställa in journaler som du kan använda i hela Microsoft Dynamics 365 for Operations."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="ledger-journal-types"></a>Redovisning journaltyper
 
-Det här avsnittet ger en beskrivning av de journaltyper du kan ställa in för ekonomiska journaler. Använd sidan namn om du vill ställa in journaler som du kan använda i hela Microsoft Dynamics 365 för operationer.
+[!include[banner](../includes/banner.md)]
+
+
+Det här avsnittet ger en beskrivning av de journaltyper du kan ställa in för ekonomiska journaler. Använd sidan Journalnamn för att ställa in journaler som du kan använda i hela Microsoft Dynamics 365 for Operations.
 
 | Journaltyp                      | Syfte                                                                                                                                                                                                                                                                                                                                                     | Registrera transaktioner på denna sida                                |
 |-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|
@@ -55,11 +58,13 @@ Det här avsnittet ger en beskrivning av de journaltyper du kan ställa in för 
 | Leverantörsbankremissa            | Skapa en remissafil för en skuldsedel som kan skickas till din organisations bank.                                                                                                                                                                                                                                                                      | Remissajournal                                             |
 | Leverantörsutbetalning               | Skapa leverantörsutbetalningstransaktioner.                                                                                                                                                                                                                                                                                                                    | Betalningsjournal                                                |
 | Leverantör ställer ut skuldsedel       | Dra leverantörsskuldsedlar som en betalningsmetod. För att använda denna typ av journal, **Skapa och kontera rita journalen automatiskt när man konterar fakturor** på **betalningssätt – säljare** sida.                                                                                                                                          | Journal för utställda skuldsedlar                                   |
-| Fakturapool utan leverantör bokföra | Skapa leverantör faktura transaktioner som ännu inte har bokförts till en tillfällig ankomst.                                                                                                                                                                                                                                                             | Leverantörsfakturapool utan bokföringsdetaljer                  |
+| Leverantörsfakturapool exkl. bokföra | Skapa leverantör faktura transaktioner som ännu inte har bokförts till en tillfällig ankomst.                                                                                                                                                                                                                                                             | Leverantörsfakturapool utan bokföringsdetaljer                  |
 | Leverantörsfakturapool               | Skapa transaktioner för leverantörsfakturapool.                                                                                                                                                                                                                                                                                                                    |                                                                |
 | Registrering av leverantörsfaktura          | Bokföra leverantörsfakturor som är i en journal.                                                                                                                                                                                                                                                                                                                 | Fakturajournal                                                |
 | Leverantör ställer ut ny skuldsedel     | Återutställa en skuldsedel som tidigare har inlösts av din organisations bank.                                                                                                                                                                                                                                                                      | Journal för återutställda skuldsedlar                                 |
 | Leverantör likviderar skuldsedel     | Skapa transaktioner för leverantörslikvid av skuldsedel.                                                                                                                                                                                                                                                                                                          | Journal för likviderade skuldsedlar                                 |
+
+
 
 
 

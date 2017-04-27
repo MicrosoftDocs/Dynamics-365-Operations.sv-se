@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="invoice-matching-and-intercompany-purchase-orders"></a>Fakturamatchning och koncerninterna inköpsorder
 
+[!include[banner](../includes/banner.md)]
+
+
 Den juridiska personen för inköp som ingår i en koncernintern handelstransaktion kan ställas in för att använda fakturamatchning i leverantörsreskontra. I det här fallet måste bokföringskraven för både koncernintern handel och fakturamatchning i leverantörsreskontra uppfyllas innan koncerninterna leverantörsfakturor kan bokföras.
 
 I exemplen i det här avsnittet används följande inställningar för koncernintern handel:
@@ -35,8 +38,8 @@ I exemplen i det här avsnittet används följande inställningar för koncernin
 -   Fabrikam Sales är det juridiska personen som säljer.
 -   Kund 4020 finns i Fabrikam Sales.
 -   Leverantör 3024 finns i Fabrikam Purchase.
--   Koncernintern information anges i Fabrikam Purchase för leverantör 3024. Fabrikam Sales anges som kunden och kund 4020 anges som det kundkonto som motsvarar den juridiska personen i Fabrikam Purchase.
--   Koncernintern information har angetts för kund 4020 i Fabrikam Sales. Fabrikam Purchase anges för leverantörsföretaget och leverantör 3024 anges som det leverantörskonto som motsvarar den juridiska personen i Fabrikam Sales.
+-   Koncernintern information anges i Fabrikam Purchase för leverantör 3024. Fabrikam Sales anges som kundföretag, och kund 4020 anges som det kundkonto som motsvarar den juridiska personen för Fabrikam Purchase.
+-   Koncernintern information anges i Fabrikam Purchase för kund 4020. Fabrikam Purchase anges som leverantörsföretag, och leverantör 3024 anges som det leverantörskonto som motsvarar den juridiska personen för Fabrikam Sales.
 
 I dessa exempel används följande inställningar för fakturamatchning i leverantörsreskontra för Fabrikam Purchase:
 -   Alternativet Aktivera fakturamatchningsvalidering är valt på sidan Parametrar för leverantörsreskontra.
@@ -45,7 +48,7 @@ I dessa exempel används följande inställningar för fakturamatchning i levera
 
 ## <a name="example-price-matching-and-intercompany-trade"></a> Exempel: Prismatchning och koncernintern handel
 Nettobeloppen för den koncerninterna leverantörsfakturan och den koncerninterna kundfakturan måste vara samma. Detta krav åsidosätter eventuella fakturamatchningsgodkännanden och pristoleransprocent. Exempelvis följer du dessa steg.
-1.  Skapa försäljningsorder FO888 för kund 4020 i Fabrikam Purchase. Den koncerninterna inköpsordern KIIO222 skapas automatiskt för i Fabrikam Purchase leverantör 3024 och försäljningsorder KIFO888 skapas automatiskt i Fabrikam Sales.
+1.  Skapa försäljningsorder SO888 för kund 4020 i Fabrikam Purchase. Den koncerninterna inköpsordern ICPO222 skapas automatiskt i Fabrikam Purchase för leverantör 3024, och försäljningsorder ICSO888 skapas automatiskt i Fabrikam Sales.
 2.  Registrera att artiklar har inlevererats och bokför en följesedel i Fabrikam Sales. Statusvärdet för KIFO888 ändras till Levererat. Statusvärdet för KIIO222 ändras till Inlevererat.
 3.  Utför en fakturauppdatering för KIFO888 i Fabrikam Sales. Enhetspriset är 0,45 och 100 artiklar uppdateras.
 4.  Skapa en faktura för KIIO222 i Fabrikam Purchase. Du råkade ändra nettopriset från 45,00 till 54,00. En ikon visas som anger att priset överskrider den tillåtna pristoleransen på 2 procent.
@@ -60,10 +63,12 @@ I det här exemplet används följande ytterligare inställningar för fakturama
 -   Lagerbehållningen för artikel B-R14 är 0 (noll).
 
 Exempelvis följer du dessa steg.
-1.  Skapa försäljningsorder FO999 för kund 4020 i Fabrikam Purchase. Ordern innehåller en radartikel: 100 batterier (artikel B-R14) till enhetspriset 1,00 styck. Den koncerninterna inköpsordern KIIO333 skapas automatiskt för leverantör 3024 i Fabrikam Purchase och försäljningsorder KIFO999 skapas automatiskt i Fabrikam Sales.
+1.  Skapa försäljningsorder FO999 för kund 4020 i Fabrikam Purchase. Ordern innehåller en radartikel: 100 batterier (artikel B-R14) till enhetspriset 1,00 per styck. Den koncerninterna inköpsordern KIIO333 skapas automatiskt för leverantör 3024 i Fabrikam Purchase och försäljningsorder KIFO999 skapas automatiskt i Fabrikam Sales.
 2.  Utför en fakturauppdatering för KIFO999 i Fabrikam Sales. Bokföringen misslyckad eftersom artikeln inte finns i lager och ännu inte har inlevererats. Därför kan den ekonomiska informationen inte uppdateras.
 3.  Registrera att artiklar har inlevererats och bokför en följesedel för KIFO999 i Fabrikam Sales. En produktinleverans för KIIO333 bokförs automatiskt i Fabrikam Purchase. Den mottagna kvantiteten för artikel B-R14 ändras till 100 i Fabrikam Purchase.
 4.  Utför en fakturauppdatering för KIFO999 i Fabrikam Sales. Bokföringen lyckas i båda juridiska personer. Den inköpta kvantiteten för artikel B-R14 ändras till 100 i Fabrikam Purchase. 
+
+
 
 
 

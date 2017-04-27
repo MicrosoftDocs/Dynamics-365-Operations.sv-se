@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="eu-sales-list-reporting"></a>EU-säljlistrapportering
 
+[!include[banner](../includes/banner.md)]
+
+
 Det här avsnittet innehåller information om rapportering av försäljningslista för Europeiska unionen (EU).
 
 <a name="eu-sales-list-reporting"></a>Rapportering av EU-säljlista
@@ -64,11 +67,11 @@ Följande tabell visar förutsättningarna som krävs och måste finnas på plat
 <tbody>
 <tr class="odd">
 <td><strong>Inställning:</strong> Juridisk person</td>
-<td>Den primära adressen för den juridiska personen måste ligga i ett EU-land. På den <strong>juridiska personer</strong> sidan (klicka på <strong>Organisationsadministration</strong>&gt;<strong>organisationer</strong>&gt;<strong>juridiska personer</strong>), Välj en juridisk person. På <strong>Adresser</strong> snabbfliken, skapa en adress, välj land/region och andra adress komponenter, och markera denna adress som <strong>primär</strong>. På <strong>Momsregistrering</strong> snabbfliken i <strong>Momsregistreringsnummer</strong> fältet, ange momsregistreringsnummer för ditt företag.</td>
+<td>Den primära adressen för den juridiska personen måste ligga i ett EU-land. På sidan <strong>Juridiska personer</strong> (klicka på <strong>Organisationsadministration</strong> &gt; <strong>Organisationer</strong> &gt; <strong>Juridiska personer</strong>) väljer du din juridiska person. På <strong>Adresser</strong> snabbfliken, skapa en adress, välj land/region och andra adress komponenter, och markera denna adress som <strong>primär</strong>. På <strong>Momsregistrering</strong> snabbfliken i <strong>Momsregistreringsnummer</strong> fältet, ange momsregistreringsnummer för ditt företag.</td>
 </tr>
 <tr class="even">
 <td><strong>Inställning:</strong> Momsbefrielseidentifieringsparametrar</td>
-<td>Ställ in Momsparametrar undantagna identifiering på de <strong>parametrar för land/region</strong> sida (klickar du på <strong>moms</strong>&gt;<strong>inställningar</strong>&gt;<strong>moms</strong>&gt;<strong>parametrar för land/region</strong>). För varje land/region där du har motparter, skapa en post på sidan och ange följande information:
+<td>Ställ in parametrar för momsbefrielse på sidan <strong>Parametrar för land/region</strong> (klicka på <strong>Moms</strong> &gt; <strong>Inställningar</strong> &gt; <strong>Moms</strong> &gt; <strong>Parametrar för land/region</strong>). För varje land/region där du har motparter, skapa en post på sidan och ange följande information:
 <ul>
 <li><strong>Land/region</strong> – Välj land/region för att associera till en momsbefriad identifiering.</li>
 <li><strong>Moms</strong> – ange momsbefrielseinformation identifieringsnummer (dvs. momsregistreringsnummer prefix) för valt land/region.</li>
@@ -77,7 +80,7 @@ Följande tabell visar förutsättningarna som krävs och måste finnas på plat
 </tr>
 <tr class="odd">
 <td><strong>Inställning: </strong>Momsbefrielsenummer</td>
-<td>Skapa momsregistreringsnummer för ditt motparter på den <strong>momsregistreringsnummer</strong> sida (klickar du på <strong>skattemässiga</strong>&gt;<strong>inställningar</strong>&gt;<strong>moms</strong>&gt;<strong>momsregistreringsnummer</strong>). För varje momsregistreringsnummer, skapa en post på sidan och ange följande information:
+<td>Skapa momsbefrielsenummer för dina motparter på sidan <strong>Momsbefrielsenummer</strong> (klicka på <strong>Moms</strong> &gt; <strong>Inställningar</strong> &gt; <strong>Moms</strong> &gt; <strong>Momsbefrielsenummer</strong>). För varje momsregistreringsnummer, skapa en post på sidan och ange följande information:
 <ul>
 <li><strong>Land/region – </strong>Välj land/region för skatt registrering av motparten.</li>
 <li><strong>Momsregistreringsnummer</strong> – Ange momsregistreringsnummer av motparten.</li>
@@ -86,11 +89,11 @@ Följande tabell visar förutsättningarna som krävs och måste finnas på plat
 </tr>
 <tr class="even">
 <td><strong>Inställning: </strong>Momsregistrering av motparter</td>
-<td>Registrera skatteinformation för din motparter antingen konfigurera den <strong>alla kunder</strong> sida (klickar du på <strong>försäljnings- och</strong>&gt;<strong>kunder</strong>&gt;<strong>alla kunder</strong>, välja en kundpost och klicka sedan på <strong>alternativ</strong>&gt;<strong>ändra vyn</strong>&gt;<strong>detaljvy</strong>) eller <strong>leverantörer</strong> sida (klickar du på <strong>anskaffning och källa</strong>&gt;<strong>leverantörer</strong>&gt;<strong>leverantörer</strong>, markerar en leverantörspost och klickar <strong>alternativ</strong>&gt;<strong>ändra</strong>&gt;<strong>detaljvy</strong>). På <strong>Faktura och leverans</strong> snabbfliken, i <strong>momsregistreringsnummer</strong> fältet, välj momsregistreringsnummer.</td>
+<td>Ställa in momsregistreringsinformation för dina motparter på antingen sidan <strong>Alla kunder</strong> (klicka på <strong>Försäljning och marknadsföring</strong> &gt; <strong>Kunder</strong> &gt; <strong>Alla kunder</strong>, välj en kundpost och klicka sedan på <strong>Alternativ</strong> &gt; <strong>Ändra vy</strong> &gt; <strong>Detaljer</strong>) eller sidan <strong>Leverantörer</strong> (klicka på <strong>Inköp och anskaffning</strong> &gt; <strong>Leverantörer</strong> &gt; <strong>Leverantörer</strong>, välj en leverantörspost och klicka sedan på <strong>Alternativ</strong> &gt; <strong>Ändra vy</strong> &gt; <strong>Detaljer</strong>). På <strong>Faktura och leverans</strong> snabbfliken, i <strong>momsregistreringsnummer</strong> fältet, välj momsregistreringsnummer.</td>
 </tr>
 <tr class="odd">
 <td><strong>Inställning: </strong>Moms</td>
-<td>Ställa in momskoder som ska inkluderas i den <strong>listan över försäljning inom EU</strong> rapport om den <strong>momskoder</strong> sida (klickar du på <strong>moms</strong>&gt;<strong>indirekta skatter</strong>&gt;<strong>moms</strong>&gt;<strong>momskoder</strong>). På <strong>Rapportinställningar</strong> snabbfliken, för varje momskod som ska inkluderas i rapporten, avmarkera <strong>Exkluderad </strong>rutan. Ställ in Momsparametrar för artiklar på den <strong>artikel momsgrupper</strong> sida (klickar du på <strong>moms</strong>&gt;<strong>indirekta skatter</strong>&gt;<strong>moms</strong>&gt;<strong>artikel momsgrupper</strong>). För varje artikelmomsgrupp välj ett värde i <strong>Rapporteringstyp</strong> fältet. Det värde som du väljer bestämmer ESL beloppskolumnen som beloppet kommer att ingå i.
+<td>Ställ in de momskoder som ska ingå i rapporten <strong>EU:s försäljningslista</strong> på sidan <strong>Momsskattekoder</strong> (klicka på <strong>Moms</strong> &gt; <strong>Indirekta skatter</strong> &gt; <strong>Moms</strong> &gt; <strong>Momskoder</strong>). På <strong>Rapportinställningar</strong> snabbfliken, för varje momskod som ska inkluderas i rapporten, avmarkera <strong>Exkluderad </strong>rutan. Skapa momsparametrar för artiklar på sidan <strong>Artikelmomsgrupper</strong> (klicka på <strong>Moms</strong> &gt; <strong>Indirekta skatter</strong> &gt; <strong>Moms</strong> &gt; <strong>Artikelmomsgrupper</strong>). För varje artikelmomsgrupp välj ett värde i <strong>Rapporteringstyp</strong> fältet. Det värde som du väljer bestämmer ESL beloppskolumnen som beloppet kommer att ingå i.
 <ul>
 <li><strong>Tom</strong> – Radbelopp ingår i <strong>Ej tilldelat värde</strong> kolumnen.</li>
 <li><strong>Objekt</strong> – Radbelopp ingår i <strong>Artikelvärde</strong> kolumnen.</li>
@@ -104,7 +107,7 @@ Följande tabell visar förutsättningarna som krävs och måste finnas på plat
 </tr>
 <tr class="odd">
 <td><strong>Inställning: </strong>Allmänna parametrar</td>
-<td>Ställ in ESL rapporteras parametrar i den <strong>Utländska handelsparametrar</strong> sida (klickar du på <strong>moms</strong>&gt;<strong>inställningar</strong>&gt;<strong>Utlandshandel</strong>&gt;<strong>Utländska handelsparametrar</strong>). Ange följande parametrar:
+<td>Skapa parametrar för ESL-rapporter på sidan <strong>Utländska handelsparametrar</strong> (klicka på <strong>Moms</strong> &gt; <strong>Inställningar</strong> &gt; <strong>Utrikeshandel</strong> &gt; <strong>Parametrar för utrikeshandel</strong>). Ange följande parametrar:
 <ul>
 <li><strong>Lista över försäljning inom EU</strong> flik:
 <ul>
@@ -147,7 +150,7 @@ Transaktioner av följande typer kan anses handeln transaktioner:
 -   Projektfakturor
 -   Leverantörsfakturor
 
-En transaktion anses en gemenskapsintern handel transaktion om leveransadressen för transaktionen är i en medlemsstat i EU. För dessa länder/regioner, en post ska finnas på **land/region fliken Parametrar** i **utrikeshandeln parametrar sidan**och **land/region typ**värdet sättas till**EU**. Handeln inom gemenskapen transaktioner markeras i **listan** . Med det här fältet kan du även separat gemenskapsintern handel från triangelhandel transaktioner. Kan du samla information om handel gemenskapsinterna transaktioner på den **listan över försäljning inom EU** sida (klickar du på **moms**&gt;**deklarationer**&gt;**Utlandshandel**&gt;**listan över försäljning inom EU**) med hjälp av den **överför** funktion. Denna funktion låter dig inkludera transaktioner som har mängder av olika typer av rapportering (dvs. objekt eller tjänster), enligt punkt moms grupper som är angivna på transaktionsraderna. Du kan även tillämpa andra filter för att definiera transaktioner som ska inkluderas. **Överföringsfunktionen** skapar en post på **lista över försäljning inom EU** sida för varje handeln inom gemenskapen transaktion som ingår och anger en motpart kontonummer, land/region, ett momsregistreringsnummer, ett fakturanummer, datum, och den totala summan av rader per typ av rapportering. Dessutom kopierar **listan kodvärdet** från transaktionen. Du kan manuellt ändra listan for en transaktion på **lista över försäljning inom EU** . **Överföringsfunktionen** skapar poster där **rapportering status** värdet **ingår**. Du kan verifiera den information som samlas in på **EU-lista över försäljning på **sidan genom att använda **funktionen godkänn** .
+En transaktion anses en gemenskapsintern handel transaktion om leveransadressen för transaktionen är i en medlemsstat i EU. För dessa länder/regioner, en post ska finnas på **land/region fliken Parametrar** i **utrikeshandeln parametrar sidan**och **land/region typ**värdet sättas till**EU**. Handeln inom gemenskapen transaktioner markeras i **listan** . Med det här fältet kan du även separat gemenskapsintern handel från triangelhandel transaktioner. Du kan samla information om inomeuropeiska handeltransaktioner på sidan **Lista över försäljning inom EU** (klicka på **Moms** &gt; **Deklarationer** &gt; **Utrikeshandel** &gt; **Lista över försäljning inom EU**) via funktionen **Överför**. Denna funktion låter dig inkludera transaktioner som har mängder av olika typer av rapportering (dvs. objekt eller tjänster), enligt punkt moms grupper som är angivna på transaktionsraderna. Du kan även tillämpa andra filter för att definiera transaktioner som ska inkluderas. **Överföringsfunktionen** skapar en post på **lista över försäljning inom EU** sida för varje handeln inom gemenskapen transaktion som ingår och anger en motpart kontonummer, land/region, ett momsregistreringsnummer, ett fakturanummer, datum, och den totala summan av rader per typ av rapportering. Dessutom kopierar **listan kodvärdet** från transaktionen. Du kan manuellt ändra listan for en transaktion på **lista över försäljning inom EU** . **Överföringsfunktionen** skapar poster där **rapportering status** värdet **ingår**. Du kan verifiera den information som samlas in på **EU-lista över försäljning på **sidan genom att använda **funktionen godkänn** .
 
 ### <a name="generating-the-eu-sales-list-report"></a>Generera försäljning i EU listan rapport
 
@@ -156,5 +159,7 @@ Du kan generera en **lista över försäljning inom EU** rapport genom att anvä
 ### <a name="closing-the-eu-sales-list-reporting-period"></a>Stängning av försäljningslista för EU rapporteringsperioden
 
 När du har slutfört rapporteringen för en specifik period (exempelvis när skattemyndigheten har godtagit **EU-försäljningslista** rapporten), kan du markera ESL poster som ingår i rapporten för perioden genom inställning av **rapporteringsstatusvärdet** som **stängd**. För att ställa denna status, använd **markera som avslutad **funktion på **EU-lista över försäljning **sida. Om du återställer periodslutet kan du markera ESL poster genom att ställa in **rapporteringsstatus**till **Inkluderad**. Dessa poster kan sedan ingå i en **lista över försäljning inom EU** rapport igen. För att ställa denna status, använd **markera som** **ingår **i **EU:s lista över försäljning** sida.
+
+
 
 

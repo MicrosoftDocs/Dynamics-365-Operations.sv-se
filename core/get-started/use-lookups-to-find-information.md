@@ -1,6 +1,6 @@
 ---
 title: "Använda sökningar för att söka efter information"
-description: "I Microsoft Dynamics 365 för operationer har många fält sökningar som hjälper dig att enkelt hitta rätt eller önskat värde. Flera förbättringar har lagts till sökningar kontrollerna mer användbara och gör användarna mer produktiva. I det här avsnittet lär dig om funktionerna uppslag och får några användbara tips för att få optimal användning av sökningar i systemet."
+description: "I Microsoft Dynamics 365 for Operations har många fält sökningar som hjälper dig att enkelt hitta rätt eller önskat värde. Flera förbättringar har lagts till sökningar för att göra dessa kontroller mer användbara och göra användarna mer produktiva. I det här avsnittet lär du dig om dessa nya sökningsfunktionerna och du får några användbara tips för att få optimal användning av sökningar i systemet."
 author: jasongre
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,57 +26,62 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="use-lookups-to-find-information"></a>Använda sökningar för att söka efter information
 
-I Microsoft Dynamics 365 för operationer har många fält sökningar som hjälper dig att enkelt hitta rätt eller önskat värde. Flera förbättringar har lagts till sökningar kontrollerna mer användbara och gör användarna mer produktiva. I det här avsnittet lär dig om funktionerna uppslag och får några användbara tips för att få optimal användning av sökningar i systemet.  
+[!include[banner](../includes/banner.md)]
 
-<a name="responsive-lookups"></a>Effektiv sökning
+
+I Microsoft Dynamics 365 for Operations har många fält sökningar som hjälper dig att enkelt hitta rätt eller önskat värde. Flera förbättringar har lagts till sökningar för att göra dessa kontroller mer användbara och göra användarna mer produktiva. I det här avsnittet lär du dig om dessa nya sökningsfunktionerna och du får några användbara tips för att få optimal användning av sökningar i systemet.  
+
+<a name="responsive-lookups"></a>Responsiv sökning
 ------------------
 
-I tidigare versioner av Dynamics 365 för operationer när du kommunicerar med en sökkontroll skulle användarna behöver göra något explicit för att öppna den nedrullningsbara menyn. Kan ha uppstått genom att skriva en asterisk (\*) att klicka på listrutan i kontrollen att filtrera sökningen baseras på det aktuella värdet för kontrollen eller genom att den **Alt**+**NEDPIL** kortkommando. Sökning efter kontroller har ändrats så att bättre överensstämma med gällande praxis för webbplatsen:
+I tidigare versioner av Dynamics 365 for Operations när du kommunicerar med en sökkontroll skulle användarna behöva göra en explicit åtgärd för att öppna den nedrullningsbara menyn. Detta kan ha uppstått genom att skriva en asterisk (\*) i kontrollen för att filtrera sökningen baserat på det aktuella värdet för kontrollen eller genom att använda kortkommandot **Alt**+**nedpil**. Sökningskontroller har ändrats så att de bättre överensstämmer med gällande praxis för webbplatsen:
 
--   Sökning efter menyerna ska nu öppnas automatiskt efter en liten paus i att skriva med nedrullningsbara menyinnehåll filtrerad efter sökning kontrollens värde.
-    -   Observera att den gamla funktionen hos den nedrullningsbara listan automatiskt öppnas när du har skrivit en asterisk (\*) har ersatts.
--   När listrutan sökning har öppnat sker följande:
-    -   Markören kvar i sökkontroll (i stället för att fokus flyttas till den nedrullningsbara menyn) så att du kan fortsätta att göra ändringar i kontrollens värde. Användaren kan dock fortfarande använda den **UPPIL** och **NEDPIL** ändra raderna i den nedrullningsbara menyn och ange om du vill markera hela raden på menyn.
-    -   När ändringar görs i sökfältet kontrollvärde justeras innehållet i den nedrullningsbara menyn.
+-   De nedrullningsbara menyerna för sökning ska nu öppnas automatiskt efter en liten paus i skrivandet med det nedrullningsbara menyinnehållet filtrerat efter sökningkontrollens värde.
+    -   Observera att den gamla funktionen hos den nedrullningsbara listan som automatiskt öppnas när du har skrivit en asterisk (\*) har ersatts.
+-   När den nedrullningsbara menyn för sökning har öppnat sker följande:
+    -   Markören sitter kvar i sökningskontrollen (i stället för att fokus flyttas till den nedrullningsbara menyn) så att du kan fortsätta att göra ändringar i kontrollens värde. Användaren kan dock fortfarande använda **UPPIL** och **NEDPIL** för att ändra raderna i den nedrullningsbara menyn och för att ange om du vill markera hela raden på den nedrullningsbara menyn.
+    -   Innehållet i den nedrullningsbara menyn justeras efter att ändringar görs i sökningkontrollens värde.
 
-Tänk dig ett uppslagsfält som kallas **ort**. 
+Tänk dig exempelvis ett sökfält som kallas **Ort**. 
 
-Om fokus är i den **ort** fält du kan börja leta efter orten genom att skriva ett par bokstäver som "kolumn".  Efter du slutat skriva öppnas sökningen automatiskt, filtrerat så att de orter som börjar med "kolumn". 
+Om fokus är i fältet **Ort** kan du börja leta efter orten genom att skriva ett par bokstäver som "kol".  Efter du slutat skriva öppnas sökningen automatiskt, filtrerad på de orter som börjar med "kol". 
 
 [![typeaheadLookupExample](./media/typeaheadlookupexample.png)](./media/typeaheadlookupexample.png) 
 
-Nu är markören kvar i sökfältet. Om du fortsätter att skriva värdet är "kolumner" justeras sökning efter innehållet automatiskt så att den avspeglar det senaste värdet i kontrollen. 
+Nu är markören kvar i sökfältet. Om du fortsätter att skriva så att värdet är "kolumn" justeras sökinnehållet automatiskt så att det avspeglar det senaste värdet i kontrollen. 
 
 ![updateFilterLookupExample](./media/updatefilterlookupexample.png) 
 
-Även om fokus i sökfältet kontrollen, kan du också använda de **UPPIL** eller **NEDPIL** för att markera den rad som du vill markera. Om du trycker på **ange** väljs den markerade raden från sökningen och kontrollens värde uppdateras. 
+Även om fokus fortfarande är i sökningskontrollen, kan du också använda knapparna **UPPIL** eller **NEDPIL** för att markera den rad som du vill välja. Om du trycker på **Enter** väljs den markerade raden från sökningen och kontrollens värde uppdateras. 
 
 ![changingSelectionLookup](./media/changingselectionlookup.png)
 
 ## <a name="typing-in-more-than-ids"></a>Skriva i mer än ett ID-nummer
-När du anger data är naturligt för en användare försöker identifiera en enhet, till exempel en kund eller leverantör med avseende på namnet i stället för en identifierare som representerar enheten. I den aktuella versionen av Dynamics 365 för inmatning många (men inte alla) sökningarna nu sammanhangsberoende. Kraftfulla funktionen kan användaren ange ID: T eller motsvarande namn i sökfältet kontrollen. 
+När du anger data är det naturligt för en användare att försöka identifiera en enhet, till exempel en kund eller leverantör med avseende på namnet i stället för en identifierare som representerar enheten. I den aktuella versionen av Dynamics 365 for Operations, är många (men inte alla) sökningar nu sammanhangsberoende. Denna kraftfulla funktion låter användaren ange ID-numret eller det motsvarande namnet i sökningskontrollen. 
 
-Anta de **kundkonto** när du skapar en försäljningsorder. Det här fältet visas den **konto-ID** för kunden, men en användare normalt skulle föredra att träda in en **kontonamnet** i stället för en **konto-ID** för det här fältet när du skapar en försäljningsorder, till exempel "Skogen Wholesales" istället för "US-003".
+Beakta till exempel fältet **Kundkonto** när du skapar en försäljningsorder. Det här fältet visar den **Konto-ID** för kunden, men en användare skulle normalt föredra att ange **kontonamn** i stället för ett **konto-ID** för det här fältet när de skapar en försäljningsorder, som till exempel " Forest Wholesales" istället för "US-003".
 
-Om användaren har börjat att ange en **konto-ID** i kontrollen sökning på undermenyn är automatiskt enligt beskrivningen i föregående avsnitt så att användaren ser sökningen enligt nedan.
+Om användaren har börjat att ange ett **konto-ID** i sökningskontrollen kommer den nedrullningsbara menyn att öppnas automatiskt enligt beskrivningen i föregående avsnitt så att användaren ser sökningen enligt nedan.
 
 [![Sammanhangsbaserad sökning när ett kundkonto-ID har angetts](./media/howtocontextuallookups-1.png)](./media/howtocontextuallookups-1.png)
 
-Användaren kan emellertid också ange början på en **kontonamnet** också. Om detta inträffar visas följande sökfunktionen användaren. Meddelande hur **namn** kolumnen flyttas till den första kolumnen i sökningen och hur sökningen sorteras och filtreras utifrån de **namn** kolumn.
+Användaren kan emellertid också ange början på ett **kontonamn**. Om detta inträffar kommer användaren att se följande sökning. Observera hur kolumnen **Namn** flyttas till den första kolumnen i sökningen och hur sökningen sorteras och filtreras utifrån kolumnen **Namn**.
 
-[![Sammanhangsberoende sökning när en kunds namn anges.](./media/howtocontextuallookups-2.png)](./media/howtocontextuallookups-2.png)
+[![Sammanhangsbaserad sökning när ett kundnamn har angetts](./media/howtocontextuallookups-2.png)](./media/howtocontextuallookups-2.png)
 
-## <a name="using-grid-column-headers-for-more-advanced-filtering-and-sorting"></a>Med hjälp av rutnätet kolumnrubriker för mer avancerad filtrering och sortering
-Sökning efter förbättringarna beskrivs i de föregående punkterna avsevärt förbättra användarnas möjlighet att navigera raderna i en sökning baserat på en "börjar med" sökning i den **ID** eller **namn** i sökningen. Det finns dock situationer då mer avancerad filtrering (eller sortering) behövs för att hitta rätt rad. I sådana fall måste måste användaren du använder alternativen för filtrering och sortering i rutnätet kolumnrubriker i sökningen. Anta exempelvis att en medarbetare registrerar en försäljningsorderrad som behöver hitta rätt "kabel" som produkten. Skriv "kabel" i den **artikelnummer** kontroll inte är användbart eftersom det inte finns några produktnamn som börjar med "kabel." 
+## <a name="using-grid-column-headers-for-more-advanced-filtering-and-sorting"></a>Med hjälp av rutnätets kolumnrubriker för mer avancerad filtrering och sortering
+Sökningsförbättringarna som beskrivs i de föregående punkterna förbättrar avsevärt användarnas möjlighet att navigera raderna i en sökning baserat på en "börjar med"-sökning i fältet **ID** eller **Namn**. Det finns dock situationer då mer avancerad filtrering (eller sortering) behövs för att hitta rätt rad. I sådana fall måste användaren använda alternativen för filtrering och sortering i rutnätets kolumnrubriker i sökningen. Anta exempelvis att en medarbetare registrerar en försäljningsorderrad som behöver hitta rätt "kabel" som produkt. Att skriva "kabel" i kontrollen **artikelnummer** hjälper inte eftersom det inte finns några produktnamn som börjar med "kabel". 
 
 ![emptyitemlookup](./media/emptyitemlookup.png) 
 
-Användaren måste istället Radera värdet i kontrollen sökning, öppna listrutan Sök och filtrera på undermenyn med hjälp av kolumnrubriken rutnät som visas nedan. En mus (eller pekskärm) användare kan bara klicka (eller tryck) alla kolumnrubriker för att komma åt de filtrerings- och sorteringsalternativ för kolumnen. För en grupp användare användaren behöver bara trycka på **Alt**+**ned****pil** en gång för att flytta fokus till listrutan då användaren kan Tabba till kolumnen korrekt och tryck **Ctrl**+**G** att öppna rutnätet nedrullningsbara kolumnrubrikmenyn. 
+Användaren måste istället radera värdet i sökningskontrollen, öppna den nedrullningsbara sökmenyn och filtrera den nedrullningsbara menyn med hjälp av rutnätets kolumnrubrik som visas nedan. En musanvändare (eller pekskärm) kan bara klicka (eller trycka) på någon kolumnrubrik för att komma åt kolumnens filtrerings- och sorteringsalternativ. För en tangentbordsanvändare behöver användaren bara trycka på **Alt**+**Ned** **pil** en gång för att flytta fokus till listrutan då användaren kan använda flikknappen till korrekt kolumn och trycka på **Ctrl**+**G** för att öppna rutnätets nedrullningsbara kolumnrubrikmeny. 
 
 [![gridfilteritemlookup](./media/gridfilteritemlookup.png)](./media/gridfilteritemlookup.png) 
 
-När filtret har använts (se bilden nedan) är användaren hitta och markera raden som vanligt. 
+När filtret har använts (se bilden nedan) kan användaren hitta och markera raden som vanligt. 
 
 ![filtereditemlookup](./media/filtereditemlookup.png)
+
+
 
 

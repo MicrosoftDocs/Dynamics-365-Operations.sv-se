@@ -27,11 +27,14 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="letters-of-credit"></a>Remburser
 
+[!include[banner](../includes/banner.md)]
+
+
 Remburser är bankdokument som vanligtvis används för inköp och försäljning av varor över internationella gränser. 
 
 Remburser används i internationella transaktioner för att se till att betalningarna utförs. En remburs är ett avtal som har utfärdats av en bank, i vilket banken går med på att säkerställa betalningen på uppdrag av köparen om villkoren i avtalet mellan köparen och säljaren uppfylls. En remburs kallas letter of credit eller documentary credit (DC) på engelska. 
 
-För en importremburs är den juridiska personen köparen eller sökande av rembursen. För en exportremburs är den juridiska personen säljaren eller mottagaren av rembursen. Med en rembursen ingår följande parter: 
+För en importremburs är den juridiska personen köparen eller sökande av rembursen. För en exportremburs är den juridiska personen säljaren eller mottagaren av rembursen. Följande parter är inblandade vid en remburs: 
 
  - En sökande (köparen) som ska betala för varorna. 
  - Mottagaren (säljaren) som ska få betalningen.
@@ -41,5 +44,7 @@ För en importremburs är den juridiska personen köparen eller sökande av remb
 Rembursen innehåller en beskrivning av varorna, eventuella obligatoriska dokument, leveransdatumet och ett utgångsdatum för betalningen, dvs. betalningen görs inte efter detta datum. Den utfärdande banken får en avgift för rembursen. 
 
 En remburs kan vara återkallelig eller oåterkallelig. En remburs kan vara transferabel, ej transferabel eller revolverande. Vanligtvis är en remburs ett oåterkalleligt avtal om att betalning ska göras till en viss mottagare vid uppvisande av fullständiga och korrekta leveransdokument.
+
+
 
 

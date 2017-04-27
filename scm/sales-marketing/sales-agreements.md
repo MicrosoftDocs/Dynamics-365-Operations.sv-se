@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="sales-agreements"></a>Försäljningsavtal
 
+[!include[banner](../includes/banner.md)]
+
+
 Denna artikel innehåller information om försäljningsavtal. Ett försäljningsavtal är ett kontrakt där kunden förbinder sig att köpa produkter i en viss mängd eller för ett visst ett belopp över tid, i utbyte mot specialpriser och rabatter.
 
 En försäljningsavtal är ett kontrakt som binder kunden till att köpa produkter i en viss kvantitet eller för ett specifikt belopp över tid, i utbytet mot speciella särskilda priser, rabatter, och andra särskilda villkor, till exempel betalnings- och leveransvillkor. Priserna och rabatterna i inköpsavtalet åsidosätter eventuella priser och rabatter som anges i andra handelsavtal som kan finnas.  
@@ -36,7 +39,7 @@ Giltighetsperioden för försäljningsavtalsraden anges med fälten **Giltighets
 
 Du kan skapa en försäljningsorder direkt från ett försäljningsavtal, med hjälp av åtgärden **Frisläpp order**. Alternativt kan du välja ett effektivt försäljningsavtal när du tar order (mer information finns i avsnittet ”Använda försäljningsavtal i beställningsprocessen" i denna artikel).  
 
-**Anmärkning:** i tidigare versioner försäljningsavtal har kallat avropsorder.
+**Obs!** I tidigare versioner kallades försäljningsavtal för ramförsäljningsordrar.
 
 ## <a name="commitment-types"></a>Utfästelsetyper
 Varje rad i ett försäljningsavtal är en utfästelse att sälja något. I allmänhet finns det två kategorier av utfästelser:
@@ -93,21 +96,23 @@ Om du har skapat (frisläppt) en försäljningsorder mot ett försäljningsavtal
 | Fält                                                             | Beskrivning                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 |-------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Begärt transportdatum                                               | Om du ändrar begärt transportdatum till ett datum som infaller tidigare än värdet **Gäller från** på försäljningsavtalsraden, måste du ta bort länken till försäljningsavtalsraden innan du kan spara det ändrade transportdatumet. Om du ändrar begärt transportdatum till ett datum som infaller senare än värdet **Utgångsdatum** på försäljningsavtalsraden, måste du ta bort länken till försäljningsavtalsraden innan du kan spara det ändrade transportdatumet. |
-| CurrencyDiscount, percentDiscountUnit, pricePrice, unitNet amount | Om du ändrar värdet i något av dessa fält, och om kryssrutan **Pris och rabatt är fasta** markeras på en associerad försäljningsavtalsrad, kommer en meddelanderuta att uppmana dig till att spara ändringen. Klicka på **Ja** ta bort länken till försäljningsavtalsraden och beräkna om priset. Klicka på **nr** ta bort länken till försäljningsavtalsraden utan att Omberäkna pris.                                                                   |
-| Nettobelopp                                                        | Om du anger ett belopp som överskrider beloppet som anges på en försäljningsavtalsrad, där kryssrutan **Max framtvingas** kommer en meddelanderuta att uppmana dig att spara det ändrade beloppet. Klicka på **Ja** ta bort länken till försäljningsavtalsraden och beräkna om priset. Klicka på **nr** ta bort länken till försäljningsavtalsraden utan att Omberäkna pris.                                                                 |
-| Kvantitet                                                          | Om du anger en kvantitet som överskrider kvantiteten som anges på en försäljningsavtalsrad, där kryssrutan **Max framtvingas** kommer en meddelanderuta att uppmana dig att spara det ändrade beloppet. Klicka på **Ja** ta bort länken till försäljningsavtalsraden och beräkna om priset. Klicka på **nr** ta bort länken till försäljningsavtalsraden utan att Omberäkna pris.                                                            |
+| CurrencyDiscount, percentDiscountUnit, pricePrice, unitNet amount | Om du ändrar värdet i något av dessa fält, och om kryssrutan **Pris och rabatt är fasta** markeras på en associerad försäljningsavtalsrad, kommer en meddelanderuta att uppmana dig till att spara ändringen. Klicka på **Ja** om du vill ta bort länken till försäljningsavtalsraden och om du vill räkna om priset. Klicka på **Nej** om du vill ta bort länken till försäljningsavtalsraden och om du inte vill räkna om priset.                                                                   |
+| Nettobelopp                                                        | Om du anger ett belopp som överskrider beloppet som anges på en försäljningsavtalsrad, där kryssrutan **Max framtvingas** kommer en meddelanderuta att uppmana dig att spara det ändrade beloppet. Klicka på **Ja** om du vill ta bort länken till försäljningsavtalsraden och om du vill räkna om priset. Klicka på **Nej** om du vill ta bort länken till försäljningsavtalsraden och om du inte vill räkna om priset.                                                                 |
+| Kvantitet                                                          | Om du anger en kvantitet som överskrider kvantiteten som anges på en försäljningsavtalsrad, där kryssrutan **Max framtvingas** kommer en meddelanderuta att uppmana dig att spara det ändrade beloppet. Klicka på **Ja** om du vill ta bort länken till försäljningsavtalsraden och om du vill räkna om priset. Klicka på **Nej** om du vill ta bort länken till försäljningsavtalsraden och om du inte vill räkna om priset.                                                            |
 
 ## <a name="returning-an-item-that-was-ordered-from-a-sales-agreement"></a>Returnera en artikel som har beställts från ett försäljningsavtal
-När en kund lämnar tillbaka en produkt som har beställts från ett försäljningsavtal, hittar Microsoft Dynamics 365 för operationer och uppdatera automatiskt relaterade försäljningsavtal åtagandet i kvantitets- eller beloppsfälten ändras. Genom att skapa en returorder som baseras på den ursprungliga försäljningsordern som är kopplad till en försäljningsavtal, upprättar du en relation mellan försäljningsavtalutfästelsen, försäljningsorderraden och returnera orderfakturan.  
+När en kund returnerar en produkt som har beställts från en försäljningsavtal, kan Microsoft Dynamics 365 for Operations söka efter och automatiskt uppdatera den relaterade försäljningsavtalutfästelsen för att återspeglar ändringen i kvantitet eller ett belopp. Genom att skapa en returorder som baseras på den ursprungliga försäljningsordern som är kopplad till en försäljningsavtal, upprättar du en relation mellan försäljningsavtalutfästelsen, försäljningsorderraden och returnera orderfakturan.  
 
 Om du inte vill dra av en returnerad artikelkvantiteten från försäljningsavtalutfästelsen, kan du använda kontrollen **Ta bort länk** på sidan **Returorder** för att ta bort länken mellan returordern och försäljningsavtalutfästelsen. Om du behöver återställa länken senare, klicka på **Skapa länk**.  
 
 **Obs!** En returorder kan bara länkas till en försäljningsavtal. Om din kund returnerar mer än en produkt som har beställts från mer än ett försäljningsavtal, måste du skapa en ny returorder för varje produkt och skapa en länk till motsvarande försäljningsavtalet.
 
 ## <a name="automatic-search-for-sales-agreements"></a>Automatisk sökning efter försäljningsavtal
-I vissa situationer där försäljningsorder skapas indirekt t ex när du skapar en kreditfaktura eller koncerninterna försäljningsorder kan du kontrollera om Microsoft Dynamics 365 för operationer söker automatiskt efter tillämpliga försäljningsavtal.
+I vissa fall där försäljningsorder skapas indirekt, som till exempel när du skapar en kreditfaktura eller koncerninterna försäljningsorder, kan du kontrollera att Microsoft Dynamics 365 for Operations söker automatiskt efter tillämpliga försäljningsavtal.
 
 ## <a name="financial-dimensions-on-sales-agreements"></a>Ekonomiska dimensioner i försäljningsavtal
 Du kan kopiera ekonomiska dimensioner till dokumenthuvuden eller till enskilda rader i ett försäljningsavtal. Du kan ändra dimensionerna i ett avtalshuvud eller avtalsrad när som helst. I det här fallet kopieras dimensionerna automatiskt till leveranshuvudet eller leveransraden på leveransordern.
+
+
 
 

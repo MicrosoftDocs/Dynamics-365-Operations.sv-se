@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="operations-resources"></a>Operations-resurser
 
+[!include[banner](../includes/banner.md)]
+
+
 Verksamhetsresurser utför aktiviteter för ett projekt eller en produktionsprocess. De kan vara av olika typer och kan ha olika förmågor. 
 
 <a name="operations-resources"></a>Operations-resurser
@@ -36,7 +39,7 @@ Verksamhetsresurser utför aktiviteter för ett projekt eller en produktionsproc
 Verksamhetsresurser är de datorer, verktygen, arbetarna, lättheterna, fysiska områdena eller leverantörer som utför aktiviteter för ett projekt eller en produktionsprocess. De kan vara av andra typer och kan ha olika förmågor.
 
 -   **Leverantör** – En extern resurs som utför projektaktiviteter eller en produktionsprocess. Ett exempel är en underleverantör. Genom att länka leverantörresurser till ett leverantörskonto, kan du generera inköp för underleverantörer som baseras på strukturlisterader eller produktionsrader.
--   **Personal** Ett projekt eller en produktionsarbetare som genomför en aktivitet, antingen ensam eller som en operator för ett verktyg eller en maskin. Om du använder funktionen personal kan koppla du personal till en arbetare. Planeringsmotorn kan sedan fördela resurserna som baseras på kompetenserna som definieras för motsvarande arbetare.
+-   **Personal** Ett projekt eller en produktionsarbetare som genomför en aktivitet, antingen ensam eller som en operator för ett verktyg eller en maskin. Om du använder funktionen Personalresurser kan du länka personal till en arbetare. Planeringsmotorn kan sedan fördela resurserna som baseras på kompetenserna som definieras för motsvarande arbetare.
 -   **Maskin** – En maskin eller annan produktionsutrustning som krävs i produktionen.
 -   **Verktyg** Ett instrument eller en enhet som normalt används tillsammans med en annan resurs för att utföra en aktivitet i ett projekt eller i produktion.
 -   **Plats** – En fysisk plats av en viss storlek som krävs för att utföra en aktivitet. Ett exempel är ett monteringsområde.
@@ -80,5 +83,7 @@ När en arbetsgrupp används som en lean-arbetsgrupp, anges kapaciteten för arb
 
 ## <a name="costing-resources"></a>Kostnadsredovisningsresurser
 När du definierar en aktivitet som till exempel en flödesoperation eller en timprognos för projekt, kan du ange behovet av en viss verksamhetsresurs eller resursgrupp. Du kan emellertid också ange behovet av en verksamhetsresurs av en viss typ eller en verksamhetsresurs som har en specifik kapacitet eller kompetens. Av denna anledning görs den verkliga resurstilldelningen inte förrän aktiviteten tidsplaneras och kapaciteten reserveras. Därför kan du på en flödesoperation ange att uppskattningen och strukturlisteberäkningen måste baseras på en viss verksamhetsresurs. Den här verksamhetsresurs kallas för kostnadsredovisningresursen. Du kan också överföra kostnadskategorier och arbetstider från kostnadsredovisningresursen till aktiviteten. När operationen tidsplaneras görs uppskattnings- och strukturlisteberäkningen genom att använda operationsresursen som faktiskt har tidsplanerats.
+
+
 
 

@@ -1,6 +1,6 @@
 ---
 title: "Massuppdatering av anläggningstillgång"
-description: "Om du använder avskrivningsregler kan ändra du avskrivningspraxis för tillgångsgrupper som ingår i samma avskrivningsregel."
+description: "Om du använder böcker kan du ändra avskrivningspraxis för grupper av tillgångar som tillhör samma bok."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="fixed-asset-mass-update"></a>Massuppdatering av anläggningstillgång
 
-Om du använder avskrivningsregler kan ändra du avskrivningspraxis för tillgångsgrupper som ingår i samma avskrivningsregel.
+[!include[banner](../includes/banner.md)]
+
+
+Om du använder böcker kan du ändra avskrivningspraxis för grupper av tillgångar som tillhör samma bok.
 
 Om t.ex. du är i USA och mer än 40 procent av dina tillgångar togs i bruk under det fjärde kvartalet under ett år måste du använda avskrivningspraxis för mitt i kvartalet. Du kan använda processen för en massuppdatering för att ändra alla tillgångar som kräver den nya avskrivningspraxis. 
 
@@ -36,6 +39,8 @@ När du uppdaterar avskrivningspraxis för tillgångar, tar du bort alla avskriv
 Om du vill uppdatera avskrivningspraxis för tillgångar som redan har avyttrats måste du först ta bort befintliga avyttringstransaktioner. Du måste även ta bort alla transaktioner som skapades på grund av avyttringsprocessen. 
 
 När du har uppdaterat avskrivningspraxis för tillgångar kan du bearbeta avskrivningar och Belopp för extraordinära avskrivningar för varje tillgång. Du kan också göra manuella justeringar om eventuella justeringar krävs.
+
+
 
 
 

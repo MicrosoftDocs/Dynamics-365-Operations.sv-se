@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="configure-a-manual-task-in-a-workflow"></a>Konfigurera en manuell uppgift i ett arbetsflöde
 
+[!include[banner](../includes/banner.md)]
+
+
 I det här avsnittet beskrivs hur du konfigurerar olika egenskaper för en manuell uppgift.
 
 Högerklicka uppgiften och klicka sedan på **Egenskaper** för att öppna sidan **Egenskaper** om du vill konfigurera en manuell uppgift i arbetsflödesredigeraren. Använd sedan följande procedurer när du vill konfigurera egenskaperna för den manuella uppgiften.
@@ -124,10 +127,10 @@ Följ dessa steg för att ange vem som ska tilldelas den manuella uppgiften.
     </tr>
     <tr class="even">
     <td>Användare</td>
-    <td>Specifika Microsoft Dynamics 365 för användare av operationer</td>
+    <td>Specifika Microsoft Dynamics 365 for Operations-användare</td>
     <td><ol>
     <li>Klicka på fliken <strong>Användare</strong> när du har valt <strong>Användare</strong>.</li>
-    <li>Den <strong>tillgängliga användare</strong> listan innehåller alla Dynamics 365 för användare av operationer. Markera de användare som ska tilldelas uppgiften och flytta sedan dessa till listan <strong>Markerade användare</strong>.</li>
+    <li>Listan <strong>Tillgängliga användare</strong> innehåller alla Dynamics 365 for Operations-användare. Markera de användare som ska tilldelas uppgiften och flytta sedan dessa till listan <strong>Markerade användare</strong>.</li>
     </ol></td>
     </tr>
     <tr class="odd">
@@ -145,8 +148,8 @@ Följ dessa steg för att ange vem som ska tilldelas den manuella uppgiften.
     <li>I listan <strong>Kötyp</strong> väljer du <strong>Villkorsbelagda arbetsuppgiftsköer</strong>.</li>
     <li>I listan <strong>Könamn</strong> väljer du <strong>Villkorsbaserad kö</strong>.</li>
     </ol></li>
-    </ol><ph id="t1">
-    </ph><strong>Anmärkning:</strong> detta alternativ används för bara några arbetsflöden till exempel fallhantering.</td>
+    </ol>
+    <strong>Obs!</strong> Detta alternativ används bara för vissa arbetsflöden, till exempel ärendehantering.</td>
     </tr>
     </tbody>
     </table>
@@ -214,10 +217,10 @@ Om en användare inte slutför den manuella uppgiften inom den tilldelade tiden,
     </tr>
     <tr class="odd">
     <td>Användare</td>
-    <td>Specifika Dynamics 365 för användare av operationer</td>
+    <td>Specifika Dynamics 365 for Operations-användare</td>
     <td><ol>
     <li>Klicka på fliken <strong>Användare</strong> när du har valt <strong>Användare</strong>.</li>
-    <li>Den <strong>tillgängliga användare</strong> listan innehåller alla Dynamics 365 för användare av operationer. Markera de användare som uppgiften ska eskaleras till, och flytta sedan dessa till listan <strong>Markerade användare</strong>.</li>
+    <li>Listan <strong>Tillgängliga användare</strong> innehåller alla Dynamics 365 for Operations-användare. Markera de användare som uppgiften ska eskaleras till, och flytta sedan dessa till listan <strong>Markerade användare</strong>.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -234,7 +237,7 @@ Om en användare inte slutför den manuella uppgiften inom den tilldelade tiden,
 6.  Om användarna i eskaleringsvägen inte slutför uppgiften inom den tillåtna tidsperioden, utförs uppgiften automatiskt i systemet. Om du vill ange den åtgärd som systemet ska vidta, välj då raden **Åtgärd** och sedan en åtgärd i fliken **Slutåtgärd**.
 
 ## <a name="specify-when-the-system-automatically-acts-on-the-task"></a>Ange när systemet ska agera automatiskt på uppgiften
-Du kan konfigurera systemet så att detta automatiskt utför en manuell uppgift när särskilda villkor uppfylls. Till exempel kräver en uppgift att en medlem av utgiftsrapportavdelningen granskar de kvitton som skickas in tillsammans med en utgiftsrapport. Enligt företagets policy, måste uppgiften utföras om det totala beloppet för utgiftsrapporten är större än USD 100. I så fall kan du konfigurera systemet för att automatiskt markera uppgiften som **komplett** om totalbeloppet är mindre än 100. Följ dessa steg för att ange när systemet vidtar en åtgärd för den manuella uppgiften.
+Du kan konfigurera systemet så att detta automatiskt utför en manuell uppgift när särskilda villkor uppfylls. Till exempel kräver en uppgift att en medlem av utgiftsrapportavdelningen granskar de kvitton som skickas in tillsammans med en utgiftsrapport. Enligt företagets policy måste denna uppgift utföras om det totala beloppet för utgiftsrapporten är större än 100 USD. I så fall kan du konfigurera systemet för att automatiskt markera uppgiften som **Slutförd** om totalbeloppet är mindre än 100. Följ dessa steg för att ange när systemet vidtar en åtgärd för den manuella uppgiften.
 
 1.  Klicka på **Automatiska åtgärder** i det vänstra fönstret.
 2.  Markera kryssrutan **Aktivera automatiska åtgärder**.
@@ -308,10 +311,10 @@ Du kan skicka meddelanden till andra när en manuell uppgift har delegerats, esk
     </tr>
     <tr class="odd">
     <td>Användare</td>
-    <td>Specifika Dynamics 365 för användare av operationer</td>
+    <td>Specifika Dynamics 365 for Operations-användare</td>
     <td><ol>
     <li>Klicka på fliken <strong>Användare</strong> när du har valt <strong>Användare</strong>.</li>
-    <li>Den <strong>tillgängliga användare</strong> listan innehåller alla Dynamics 365 för användare av operationer. Markera de användare som du vill skicka meddelanden till, och flytta sedan dessa användare till listan <strong>Markerade användare</strong>.</li>
+    <li>Listan <strong>Tillgängliga användare</strong> innehåller alla Dynamics 365 for Operations-användare. Markera de användare som du vill skicka meddelanden till, och flytta sedan dessa användare till listan <strong>Markerade användare</strong>.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -325,8 +328,8 @@ Följ dessa steg om den manuella uppgiften måste slutföras inom en viss tid. *
 1.  Klicka på **Avancerade inställningar** i det vänstra fönstret.
 2.  Markera kryssrutan **Ange en tidsgräns för arbetsflödeselement**.
 3.  Ange när uppgiften måste vara slutförd i fältet **Tidslängd**. Välj ett av följande alternativ:
-    -   **Timmar** – ange antalet timmar som aktiviteten måste fyllas i. Välj sedan den kalender som används inom din organisation, och ange information om organisationens arbetsvecka.
-    -   **Dagar** – ange antalet dagar som uppgiften måste fyllas i. Välj sedan den kalender som används inom din organisation, och ange information om organisationens arbetsvecka.
+    -   **Timmar** – Ange det antal timmar inom vilket uppgiften måste slutföras. Välj sedan den kalender som används inom din organisation, och ange information om organisationens arbetsvecka.
+    -   **Dagar** – Ange det antal dagar inom vilket uppgiften måste slutföras. Välj sedan den kalender som används inom din organisation, och ange information om organisationens arbetsvecka.
     -   **Veckor** – Ange det antal veckor inom vilket uppgiften måste slutföras.
     -   **Månader –** – Välj dag och vecka då uppgiften senast måste vara slutförd. Du kanske till exempel vill att uppgiften ska ha slutförts senast på fredagen i den tredje veckan i månaden.
     -   **År –** – Välj dag, vecka och månad då uppgiften senast måste vara slutförd. Du kanske till exempel vill att uppgiften ska ha slutförts senast på fredagen i den tredje veckan i december.
@@ -343,6 +346,8 @@ När den manuella uppgiften tilldelas en användare, måste användaren vidta å
 5.  Markera kryssrutan **Delegera** om du vill att användaren ska kunna tilldela uppgiften till en annan användare.
 6.  Markera kryssrutan **Överlåt** om du vill att användaren ska kunna överlåta uppgiften till en annan användare i arbetsuppgiftskön.
 7.  Markera kryssrutan **Frisläpp** om du vill att användaren ska kunna överlåta uppgiften till arbetsuppgiftskön. En annan användare kan sedan slutföra uppgiften.
+
+
 
 
 

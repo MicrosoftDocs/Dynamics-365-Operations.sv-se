@@ -1,5 +1,5 @@
 ---
-title: "Beräkna om ersättningskostnader och försäkrade värden för anläggningstillgångar"
+title: "Räkna om ersättningskostnader och försäkrade värden för anläggningstillgångsgrupper"
 description: "Den här artikeln beskriver processen för att uppdatera ersättningskostnaden och de försäkrade värdena för anläggningstillgångar."
 author: twheeloc
 manager: AnnBe
@@ -25,7 +25,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="recalculate-replacement-costs-and-insured-values-for-fixed-asset-groups"></a>Beräkna om ersättningskostnader och försäkrade värden för anläggningstillgångar
+# <a name="recalculate-replacement-costs-and-insured-values-for-fixed-asset-groups"></a>Räkna om ersättningskostnader och försäkrade värden för anläggningstillgångsgrupper
+
+[!include[banner](../includes/banner.md)]
+
 
 Den här artikeln beskriver processen för att uppdatera ersättningskostnaden och de försäkrade värdena för anläggningstillgångar.
 
@@ -38,18 +41,18 @@ Om du vill beräkna om ersättningskostnaden och det försäkrade värdet för a
 
 När du använder formuläret Uppdatera ersättningskostnader och försäkrade värden för att beräkna om ersättningskostnaden och det försäkrade värdet för tillgången används följande formler:
 
--   \[(Tillgångsgruppens ersättningskostnadsfaktor / 100) + 1\]\* tillgångens befintliga ersättningskostnad
--   \[(Tillgångsgruppens faktor för försäkrat värde / 100) + 1\]\* tillgångens befintliga försäkrade värde
+-   \[(Tillgångsgruppens ersättningskostnadsfaktor / 100) + 1\] \* Tillgångens befintliga ersättningskostnad
+-   \[(Tillgångsgruppens faktor för försäkrat värde / 100) + 1\] \* Tillgångens befintliga försäkrade värde
 
 > [!NOTE] 
 > När du använder Uppdatera ersättningskostnader och försäkrade värde uppdateras både ersättningskostnaden och det försäkrade värdet för valda tillgångar, men du kan inte ange att bara ett värde ska uppdateras. Om du vill att det ena ska behålla sitt värde och bara uppdatera det andra, anger du 0 (noll) som faktor i formuläret Anläggningstillgångsgrupper. En faktor som är noll eller tom gör att beräkningen hoppas över i uppdateringen. Det bokförda värdet och det bokförda nettovärdet för anläggningstillgångar påverkas inte av den periodiska uppdateringen. 
 
 ## <a name="how-to-use-a-date-to-select-which-items-to-update"></a> Välj vilka artiklar som ska uppdateras med hjälp av ett datum
-Som standard uppdaterar uppdateringsprocessen de valda tillgångar som inte har uppdaterats vid aktuellt datum, men som kan ha uppdaterats tidigare. Till exempel &lt;aktuellt datum innebär "före idag." Du kan ändra datumet i Uppdatera ersättningskostnader och försäkrade värden formuläret genom att klicka på knappen Välj. Datumvillkoret som du anger jämförs med datumet för den senaste periodiska uppdateringen för tillgången (fältet Senaste periodiska värde/kostnadsuppdatering i formuläret Anläggningstillgångar). Varje gång som du uppdaterar ersättningskostnaden eller det försäkrade värdet för en anläggningstillgång, uppdateras fältet Senaste periodiska värde/kostnadsuppdatering automatiskt med aktuellt datum. 
+Som standard uppdaterar uppdateringsprocessen de valda tillgångar som inte har uppdaterats vid aktuellt datum, men som kan ha uppdaterats tidigare. Till exempel, &lt; aktuellt datum innebär "före idag". Du kan ändra datumet i formuläret Uppdatera ersättningskostnader och försäkrade värden genom att klicka på knappen Välj. Datumvillkoret som du anger jämförs med datumet för den senaste periodiska uppdateringen för tillgången (fältet Senaste periodiska värde/kostnadsuppdatering i formuläret Anläggningstillgångar). Varje gång som du uppdaterar ersättningskostnaden eller det försäkrade värdet för en anläggningstillgång, uppdateras fältet Senaste periodiska värde/kostnadsuppdatering automatiskt med aktuellt datum. 
 
 Exempel 
 
-Du uppdaterade ersättningskostnaden för fordon, Kontorsmöbler och byggnader med 5 procent i går, och du anser nu att dessa tillgångar är tillräckligt uppdaterade. Om du vill utesluta dessa tillgångar när du uppdaterar alla andra tillgångar i dag, ange ett datum under senaste periodiska värde/update kostnadsfält som infaller före i går (&lt; gårdagens datum), eftersom den senaste uppdateringen för grupperna fordon, Kontorsmöbler och byggnader gjordes utanför de datumkriterier som du angett.
+Du uppdaterade ersättningskostnaden för grupperna Fordon, Kontorsmöbler och Byggnader med 5 procent i går, och du anser nu att dessa tillgångar är tillräckligt uppdaterade. Om du vill utesluta dessa tillgångar när du uppdaterar alla andra tillgångar i dag, anger du ett datum i fältet som infaller före i går (&lt; gårdagens datum), eftersom den senaste periodiska uppdateringen av fordon, kontorsmöbler och byggnadsgrupper gjordes utanför det datumintervall som du anger.
 
 ## <a name="cumulative-effect-of-each-update"></a> Ackumulerad effekt av varje uppdatering
 Varje uppdatering har ackumulerad effekt. Därför bör du planera dina uppdateringar noggrant. Om du till exempel ökar alla tillgångar med 3 procent på torsdag och sedan ökar kontorsmöbler med 4 procent på fredag, kommer kontorsmöbler att öka med sammanlagt 7,12 procent.
@@ -72,6 +75,8 @@ Nästa dag informerar chefen om att datorerna har minskat 8 procent i stället f
 
 > [!NOTE]  
 > Du kan inte ångra faktorn -10 genom att registrera det positiva talet 10 (eller faktorn 2, skillnaden mellan -10 och -8), eftersom beloppen inte beräknas som du har tänkt dig. 
+
+
 
 
 

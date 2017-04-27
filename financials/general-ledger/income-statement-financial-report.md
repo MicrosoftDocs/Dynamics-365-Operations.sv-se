@@ -1,6 +1,6 @@
 ---
 title: "Resultaträkning"
-description: "Den här artikeln beskrivs standardrapporten för resultaträkningar. Här beskrivs också byggstenar som associeras med den här rapporten."
+description: "Den här artikeln beskriver standardrapporten för inkomstredovisning. Här beskrivs också de byggstenar som associeras med den här rapporten."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="income-statement-financial-report"></a>Resultaträkning
 
-Den här artikeln beskrivs standardrapporten för resultaträkningar. Här beskrivs också byggstenar som associeras med den här rapporten. 
+[!include[banner](../includes/banner.md)]
+
+
+Den här artikeln beskriver standardrapporten för inkomstredovisning. Här beskrivs också de byggstenar som associeras med den här rapporten. 
 
 <a name="default-income-statement-report"></a>Standardresultaträkning
 -------------------------------
@@ -61,10 +64,12 @@ Dessa kolumndefinitioner innehåller olika typer av kolumner för att tillhandah
 <a name="see-also"></a>Se även
 --------
 
-[Financial reporting](financial-reporting-getting-started.md)
+[Ekonomisk rapportering](financial-reporting-getting-started.md)
 
-[View financial reports](view-financial-reports.md)
+[Visa ekonomiska rapporter](view-financial-reports.md)
 
-[Blogg för Dynamics ekonomisk rapportering](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+[Dynamics-ekonomirapporteringsblogg](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+
+
 
 

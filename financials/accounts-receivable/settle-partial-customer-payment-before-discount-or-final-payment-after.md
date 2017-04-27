@@ -1,5 +1,5 @@
 ---
-title: "Kvitta en delvis kundbetalning före rabattdatumet med en slutlig betalning efter rabattdatumet"
+title: "Kvitta en kunddelbetalning före rabattdatumet med en slutbetalning efter rabattdatumet"
 description: "Den här artikeln diskuterar effekten av kvittning av betalningar till fakturor för kunder. Scenariot fokuserar på effekterna i reskontran, inte i redovisningen."
 author: twheeloc
 manager: AnnBe
@@ -26,14 +26,17 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="settle-a-partial-customer-payment-before-the-discount-date-with-a-final-payment-after-the-discount-date"></a>Kvitta en delvis kundbetalning före rabattdatumet med en slutlig betalning efter rabattdatumet
+# <a name="settle-a-partial-customer-payment-before-the-discount-date-with-a-final-payment-after-the-discount-date"></a>Kvitta en kunddelbetalning före rabattdatumet med en slutbetalning efter rabattdatumet
+
+[!include[banner](../includes/banner.md)]
+
 
 Den här artikeln diskuterar effekten av kvittning av betalningar till fakturor för kunder. Scenariot fokuserar på effekterna i reskontran, inte i redovisningen.
 
-Fabrikam säljer varor till kunden 4027. Fabrikam erbjuder en kassarabatt på 1 procent om fakturan är betald 14 dagar. Fakturor måste betalas inom 30 dagar. Fabrikam erbjuder även kassarabatter på delbetalningar. Kvittning parametrar finns i den **parametrar för kundreskontra** sida.
+Fabrikam säljer varor till kunden 4027. Fabrikam erbjuder en kassarabatt på 1 procent om fakturan betalas inom 14 dagar. Fakturor måste betalas inom 30 dagar. Fabrikam erbjuder även kassarabatter på delbetalningar. Kvittningsparametrar finns på sidan **Parametrar för kundreskontra**.
 
 ## <a name="invoice"></a>Faktura
-Den 25 juni Arnie registrerar och bokför en faktura för 1 000,00 för kund 4027. Arnie kan visa fakturan med de **transaktioner** knappen i den **kunder** sida.
+Den 25 juni registrerar och bokför Arnie en faktura på 1 000,00 för kund 4027. Arnie kan visa denna faktura genom att använda knappen **Transaktioner** på sidan **Kunder**.
 
 | Verifikation   | transaktionstyp | Datum      | Faktura | Debetbelopp i transaktionsvaluta | Kreditbelopp i transaktionsvaluta | Saldo  | Valuta |
 |-----------|------------------|-----------|---------|--------------------------------------|---------------------------------------|----------|----------|
@@ -46,7 +49,7 @@ Den 2 juli betalar kund 4027 en delbetalning på 297,00 för fakturan. Betalning
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------------|----------|------------------|
 | Markerad | Normal            | FTI-10020 | 4027    | 2015/06/25 | 2015/07/25 | 10020   | 1 000,00                             | USD      | 297,00           |
 
-Information om rabatten visas längst ned på sidan **Kvitta öppna transaktioner**. Om du inte ändrar värdet för **Kvitta transaktioner** till **297,00**, kommer värdet för Kassarabattbelopp att skilja sig. Dock 3,00 anses kassarabatten när betalningen bokförs eftersom kvittning justeras automatiskt den ** kvittningsbeloppet ** värde åt dig.
+Information om rabatten visas längst ned på sidan **Kvitta öppna transaktioner**. Om du inte ändrar värdet för **Kvitta transaktioner** till **297,00**, kommer värdet för Kassarabattbelopp att skilja sig. Men 3,00 kommer att utnyttjas som kassarabatt när betalningen bokförs, eftersom kvittningen justerar automatiskt värdet **Belopp att kvitta**.
 
 |                              |           |
 |------------------------------|-----------|
@@ -105,6 +108,8 @@ Arnie ändrar värdet i fältet **Använd kassarabatt** tillbaka till **Normal**
 | ARP-10020  |                  | 2015/07/01  |         |                                      | 297,00                                | 0,00    | USD      |
 | RAB-10020 |                  | 2015/07/01  |         |                                      | 3,00                                  | 0,00    | USD      |
 | ARP-10021  |                  | 2015/07/11 |         |                                      | 700,00                                | 0,00    | USD      |
+
+
 
 
 

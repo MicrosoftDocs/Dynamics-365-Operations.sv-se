@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="reporting-tree-definitions-in-financial-reports"></a>Rapportträddefinitioner i ekonomiska rapporter
 
+[!include[banner](../includes/banner.md)]
+
+
 Den här artikeln innehåller information om rapportdefinitioner. En rapportträdsdefinition är en rapportkomponent eller ett byggblock som bidrar till att definiera strukturen och hierarkin i din organisation.
 
 Ekonomisk rapportering stöder flexibel rapportering så att du enkelt kan göra ändringar allt eftersom din verksamhetsstruktur ändras. Rapporter är uppbyggda av olika komponenter eller byggblock. Ett av de här byggblocken är en rapportträddefinition. En rapportträddefinition hjälper till att definiera din organisations struktur och hierarki. Det är en korsdimensionell hierarkisk struktur som baseras på de dimensionella relationerna i ekonomiska data. Den innehåller information på rapporteringsenhetsnivå och sammanfattningsnivå för alla enheter i trädet. Rapportträddefinitioner kan kombineras med kolumndefinitioner och rapportdefinitioner om du vill skapa en byggblocksgrupp som kan användas för flera företag. En rapportenhet används för varje ruta i ett organisationsschema. En rapportenhet kan vara en enskild avdelning från ekonomiska data, eller så kan det vara en summeringsenhet på hög nivå som kombinerar information från andra rapportenheter. För en rapportdefinition som innehåller ett rapportträd genereras en rapport för varje rapportenhet och för sammanfattningsnivån. Alla dessa rapporter använder rad- och kolumndefinitionerna som anges i rapportdefinitionen såvida inte rapportdefinitionen anger att rapportträdet från raddefinitionen ska användas. Rad- och kolumndefinitioner är viktiga komponenter i designen och funktioner för ekonomiska rapporter. Rapportträd ökar kraften och stöder komponenterna för flexibel rapportering allt eftersom verksamhetsstrukturen ändras. Ekonomiska rapporter som inte baseras på ett rapportträd använder bara några av de funktioner som finns för ekonomisk rapportering. Du kan använda flera rapportträddefinitioner tillsammans med samma rad- och kolumndefinitioner för att visa dina företagsuppgifter på olika sätt.
@@ -49,7 +52,7 @@ En rapportträddefinition innehåller de kolumner som beskrivs i följande tabel
 
 | Rapportträdkolumn | beskrivning|
 |---|---|
-| Företag               | Företagsnamn för rapportenheten. Den **@ANY**värde som tilldelas vanligen endast sammanfattning-nivå, kan rapportträdet som ska användas för alla företag. Alla underordnade förgreningar har ett företag som tilldelats dem.|
+| Företag               | Företagsnamn för rapportenheten. Värdet **@ANY**, som normalt bara tilldelas sammanfattningsnivån aktiverar rapportträdet som ska användas för alla företag. Alla underordnade förgreningar har ett företag som tilldelats dem.|
 | Enhetsnamn             | Den kod som identifierar den här rapportenheten i det grafiska rapportträdet. Se till att upprätta ett unikt kodsystem som är konsekvent och som är enkelt för användarna att förstå. |
 | Enhetsbeskrivning      | Rapportenhetsrubriken visas i rapportens sidhuvudet eller sidfoten om du anger **UnitDesc** som kod i fliken **Sidhuvud och Sidfot** på rapportdefinitionen. Rubriken visas i rapportradbeskrivningen om du anger **UnitDesc** i cellen **Beskrivning** på raddefinitionen .|
 | Dimensioner            | En rapportenhet om du vill ställa ut information direkt från ekonomiska data. Den definierar den logiska placeringen och längderna för kontot och de relaterade segmenten. Varje rapportenhetsrad måste ha en dimension i den här kolumnen. Du kan också placera en dimension på en rad för en summeringsenhet (till exempel för utgifter som är direkt kopplade till enheten). Om du anger en dimension på en rad för en summeringsenhet ska konton som används i överordnade enheter inte användas i underordnade. I annat fall kan belopp dubbleras.|
@@ -58,15 +61,15 @@ En rapportträddefinition innehåller de kolumner som beskrivs i följande tabel
 | Extern länk         | Radlänken som ska användas för denna rapportenheten. Radlänkar definieras för att raddefinitionen ska kunna identifiera den rapport du vill länka till.|
 | Extern fil         | Sökvägen till kalkylbladet för den ekonomiska rapporten som data hämtas från.|
 | Sidalternativ          | Den här kolumnen styr om detaljer för rapportenheten ska ignoreras när rapporten visas eller skrivs ut.|
-| Samlad uppdatering för %              | Den procentandel av rapportenheten som ska tilldelas till den överordnade enheten. Den procentandel som du anger i den här kolumnen gäller för varje rad i raddefinitionen innan värdet i raden läggs till den överordnade rapporten. Om till exempel en underordnad enhet ska fördelas jämnt mellan två avdelningar multipliceras beloppet på varje rad med 50 procent innan det läggs till i avdelningsrapporten. En rapportenhet kan inte ha två överordnade enheter. om du vill fördela beloppen från en rapportenhet till två överordnade enheter ska du skapa en annan rapportenhet med samma dimension för att samla de ytterligare 50 procenten. Ange hela procenttalet utan decimaltecken. **25** exempelvis representerar 25 procent allokering till den överordnade enheten. Om du inkluderar ett decimaltecken (**,25**) allokeras 0,25 procent till den överordnade enheten. Om du vill använda ett procentvärde som är mindre än 1 % på **Tillåt sammanslagning &lt;%1** alternativ i rapportdefinitionen. Detta alternativ är på fliken **Ytterligare alternativ** i dialogrutan **Rapportinställningar**. Du kommer åt den här dialogrutan från knappen **Övrigt** på fliken **Inställningar** i rapportdefinitionen. |
+| Samlad uppdatering för %              | Den procentandel av rapportenheten som ska tilldelas till den överordnade enheten. Den procentandel som du anger i den här kolumnen gäller för varje rad i raddefinitionen innan värdet i raden läggs till den överordnade rapporten. Om till exempel en underordnad enhet ska fördelas jämnt mellan två avdelningar multipliceras beloppet på varje rad med 50 procent innan det läggs till i avdelningsrapporten. En rapportenhet kan inte ha två överordnade enheter. om du vill fördela beloppen från en rapportenhet till två överordnade enheter ska du skapa en annan rapportenhet med samma dimension för att samla de ytterligare 50 procenten. Ange hela procenttalet utan decimaltecken. **25** exempelvis representerar 25 procent allokering till den överordnade enheten. Om du inkluderar ett decimaltecken (**,25**) allokeras 0,25 procent till den överordnade enheten. Om du vill använda en procentsats som är mindre än 1 procent ska du använda alternativet **Tillåt samlad uppdatering &lt;1%** i rapportdefinitionen. Detta alternativ är på fliken **Ytterligare alternativ** i dialogrutan **Rapportinställningar**. Du kommer åt den här dialogrutan från knappen **Övrigt** på fliken **Inställningar** i rapportdefinitionen. |
 | Enhetssäkerhet         | Begränsningar för hur användare och grupper kan komma åt informationen för rapportenheten.|
 | Ytterligare text       | Text som inkluderas i rapporten.|
 
 Om du vill skapa en rapportträddefinition, följ dessa steg:
 
 1.  Öppna Report Designer.
-2.  Klicka på **filen**&gt;**nya**&gt;**Rapportträdsdefinition**.
-3.  Klicka på **redigera**&gt;**Infoga rapportenheter från dimensioner**.
+2.  Klicka på **Fil** &gt; **Ny** &gt; **Rapportträddefinition**.
+3.  Klicka på **Redigera** &gt; **Infoga rapportenheter från dimensioner**.
 4.  I dialogrutan **Infoga Rapportenheter från Dimensioner** väljer du kryssrutan för varje dimension som ska inkluderas i rapportträdet. Dialogrutan **Infoga rapportenheter från dimensioner** innehåller följande avsnitt.
 
     | Avdelning                          | Beskrivning                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
@@ -85,7 +88,7 @@ Om du vill skapa en rapportträddefinition, följ dessa steg:
 
 9.  Upprepa steg 7 till 8 för varje dimension i området **Segmentera hierarki och intervall**.
 10. Klicka på **OK** när du har definierat hur dina rapportenheter ska flyttas till det nya rapportträdet.
-11. Klicka på **filen**&gt;**spara** att spara rapportträdet. Ange ett unikt namn och en beskrivning för rapportträdet och klicka sedan på **OK**.
+11. Klicka på **Fil** &gt; **Spara** för att spara rapporteringsträdet. Ange ett unikt namn och en beskrivning för rapportträdet och klicka sedan på **OK**.
 
 ### <a name="open-an-existing-reporting-tree-definition"></a>Öppna en befintlig rapportträddefinition
 
@@ -121,7 +124,7 @@ Du kan ändra ordning på organisationsstrukturen för en rapportträddefinition
 1.  Öppna rapportträddefinitionen i Report Designer för att ändra den.
 2.  Välj en rapportenhet i den grafiska vyn av rapportträddefinitionen.
 3.  Dra enheten till en ny position. Alternativt kan du högerklicka på enheten och sedan välja **Höj upp rapportenhet** eller **Sänk ned rapportenhet.**
-4.  Klicka på **filen**&gt;**spara** om du vill spara ändringarna.
+4.  Klicka på **Fil** &gt; **Spara** för att spara dina ändringar.
 
 ### <a name="add-text-about-a-reporting-unit"></a> Lägg till en text om en rapportenhet
 
@@ -189,7 +192,7 @@ Följande diagram visar ett rapportträd för en organisationsstruktur som är u
 
 ### <a name="example-of-the-insert-reporting-units-from-dimensions-dialog-box"></a>Exempel på dialogrutan Infoga Rapportenheter från Dimensioner
 
-Det här illustrationen visar ett exempel på dialogrutan **Infoga Rapportenheter från Dimensioner**. I det här exemplet returnerar resultaten en kombination av affärsenheter, kostnadsställen och avdelningar. [![InsertReportingUnits](./media/insertreportingunits.png)](./media/insertreportingunits.png) resulterande rapportträdsdefinitionen sorteras efter affärsenhet, och sedan per kostnadsställe och sedan efter avdelning. Dimensionen för femte Rapporteringsenheten **affärsenhet = \[001\], kostnadsställe =\[\], avdelning = \[022\]**, och en Rapporteringsenheten för konton som är specifika för business unit 001 och avdelning 022 identifierar. [![ReportingTree](./media/reportingtree-1024x646.png)](./media/reportingtree.png)
+Det här illustrationen visar ett exempel på dialogrutan **Infoga Rapportenheter från Dimensioner**. I det här exemplet returnerar resultaten en kombination av affärsenheter, kostnadsställen och avdelningar. [![InsertReportingUnits](./media/insertreportingunits.png)](./media/insertreportingunits.png) Den resulterande rapportträdsdefinitionen sorteras efter affärsenheter, därefter efter kostnadsställe och sedan efter avdelning. Dimensionen för den femte rapportenheten är **Affärsenhet = \[001\], Kostnadsställe =\[\], Avdelning = \[022\]** och identifierar en rapportenhet för konton som är specifika för affärsenheten 001 och avdelningen 022. [![Rapporteringsträd](./media/reportingtree-1024x646.png)](./media/reportingtree.png)
 
 ### <a name="examples-of-data-roll-up"></a>Exempel på rulla upp data
 
@@ -205,6 +208,8 @@ Följande exempel visar möjlig information som används i en rapportträddefini
 
 # <a name="see-also"></a>Se även
 
-[Financial reporting](financial-reporting-intro.md)
+[Ekonomisk rapportering](financial-reporting-intro.md)
+
+
 
 

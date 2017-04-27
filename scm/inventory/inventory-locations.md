@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="inventory-locations"></a>Lagerplatser
 
+[!include[banner](../includes/banner.md)]
+
+
 Lagerplatser används med grundläggande lagerstyrning (Lagerstyrningssystem I) för att bestämma var artiklar lagras och var artiklar plockas i ett Lagerstyrningssystem I-lagerställe.
 
 Det här ämnet gäller funktioner i modulen Lagerhantering. Den gäller inte funktioner i modulen Lagerstyrning.
@@ -64,6 +67,8 @@ Det går att kopiera platser från ett lagerställe till ett annat och skapa pla
 <a name="see-also"></a>Se även
 --------
 
-[Skapa en ny layout för lagerställe (aktivitet guide)](https://ax.help.dynamics.com/en/wiki/create-a-new-warehouse-layout/)
+[Skapa en ny layout för lagerställe (uppgiftsguide)](https://ax.help.dynamics.com/en/wiki/create-a-new-warehouse-layout/)
+
+
 
 

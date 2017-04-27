@@ -26,21 +26,24 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="organizations-and-organizational-hierarchies"></a>Organisationer och organisationshierarkier
 
+[!include[banner](../includes/banner.md)]
+
+
 En organisation är en grupp personer som arbetar tillsammans för att utföra ett arbete eller uppnå ett mål. Organisationshierarkier representerar relationerna mellan de organisationer som finns i företaget.
 
 <a name="organizations"></a>Organisationer
 -------------
 
-I Microsoft Dynamics 365 för åtgärder som du kan definiera följande typer av interna organisationer: rättssubjekt aktiva enheter och grupper.
+I Microsoft Dynamics 365 for Operations kan du definiera följande typer av interna organisationer: juridiska personer, driftenheter och team.
 
 Alla interna organisationer är typer av enheten **Part**. Därför använder dessa organisationer adressboken för att lagra adress - och kontaktinformation. En part, som kan vara antingen en person eller en organisation, kan tillhöra en eller flera adressböcker.
 ### <a name="legal-entities"></a>Juridiska personer
 
-En juridisk person är en organisation som har en registrerad eller lagstiftad juridisk struktur. Juridiska personer kan ingå juridiska kontrakt och måste förbereda utdrag som rapporterar deras resultat. Ett företag är en sorts juridisk person. I den här versionen av Microsoft Dynamics 365 för företag är den typ av endast juridiska personen som du kan skapa och varje juridisk person som är kopplad till ett företag-ID. Denna koppling finns eftersom vissa funktionella områden i programmet använder ett företags-ID eller DataAreaId, i deras datamodeller. I dessa funktionella områden används företag som en gräns för datasäkerhet. Användarna kan endast komma åt data för de företag som de är inloggade på.
+En juridisk person är en organisation som har en registrerad eller lagstiftad juridisk struktur. Juridiska personer kan ingå juridiska kontrakt och måste förbereda utdrag som rapporterar deras resultat. Ett företag är en sorts juridisk person. I denna version av Microsoft Dynamics 365 for Operations är företag den enda typ av juridisk person som du kan skapa, och varje juridisk person associeras med ett företags-ID. Denna koppling finns eftersom vissa funktionella områden i programmet använder ett företags-ID eller DataAreaId, i deras datamodeller. I dessa funktionella områden används företag som en gräns för datasäkerhet. Användarna kan endast komma åt data för de företag som de är inloggade på.
 
 ### <a name="operating-units"></a>Driftenheter
 
-En driftenhet är en organisation som används för skilja kontrollen av ekonomiska resurser och processer kunskap i ett företag. Personer i en driftenhet har en skyldighet att maximera användningen av knappa resurser, att förbättra processer och att redovisa deras resultat. I Microsoft Dynamics 365 för operationer finns driftenheter kostnadsställen affärsenheter, värdeströmmar, avdelningar och återförsäljare. I följande tabell finns mer information om varje typ av driftenhet.
+En driftenhet är en organisation som används för skilja kontrollen av ekonomiska resurser och processer kunskap i ett företag. Personer i en driftenhet har en skyldighet att maximera användningen av knappa resurser, att förbättra processer och att redovisa deras resultat. Följande driftenheter ingår i Microsoft Dynamics 365 for Operations: kostnadsställen, affärsenheter, värdeströmmar, avdelningar och butikskanaler. I följande tabell finns mer information om varje typ av driftenhet.
 | Typ av driftenhet | Beskrivning                                                                                                                                    | Syfte                                                                                                                                 |
 |---------------------|------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------|
 | Kostnadsställe         | En driftenhet där chefer är ansvariga för budgeterade och faktiska omkostnader.                                                      | Används för hantering och driftskontrollen av affärsprocesser som sträcker sig över juridiska personer.                                         |
@@ -55,7 +58,9 @@ Ett team är en organisation i vilken medlemmarna delar ett gemensamt ansvarsomr
 Organisationshierarkier
 --------------------------
 
-Ställa in organisatoriska hierarkier för att visa och rapportera utifrån olika perspektiv av verksamheten. Du kan till exempel skapa en hierarki av juridiska personer för momsrapportering, juridisk rapportering eller lagstadgad rapportering. Ställa in en hierarki som baseras på driftenheter för att rapportera ekonomisk information som inte krävs enligt lag, men som används för intern kontroll. Du kan till exempel skapa en inköpshierarki för att kontrollera inköpspolicyer, regler och arbetsprocesser. Varje hierarki har tilldelats ett syfte i Microsoft Dynamics 365 för operationer. Syftet med en hierarki bestämmer vilka typer av organisationer som kan inkluderas i hierarkin. Syftet avgör också de programscenarier som en hierarki kan användas i. Organisationer i en hierarki kan dela parametrar, policyer och transaktioner. En organisation kan ärva eller åsidosätta parametrarna för dess överordnade organisation. Delade huvuddata, till exempel produkter och adressböcker, gäller däremot för hela organisationen och kan inte åsidosättas för enskilda organisationer. När du skapar organisationer och hierarkier krävs det noga planering. Mer information om hierarkidesignern finns i [Planera organisationshierarkin](plan-organizational-hierarchy.md).
+Ställa in organisatoriska hierarkier för att visa och rapportera utifrån olika perspektiv av verksamheten. Du kan till exempel skapa en hierarki av juridiska personer för momsrapportering, juridisk rapportering eller lagstadgad rapportering. Ställa in en hierarki som baseras på driftenheter för att rapportera ekonomisk information som inte krävs enligt lag, men som används för intern kontroll. Du kan till exempel skapa en inköpshierarki för att kontrollera inköpspolicyer, regler och arbetsprocesser. Varje hierarki tilldelas ett syfte i Microsoft Dynamics 365 for Operations. Syftet med en hierarki bestämmer vilka typer av organisationer som kan inkluderas i hierarkin. Syftet avgör också de programscenarier som en hierarki kan användas i. Organisationer i en hierarki kan dela parametrar, policyer och transaktioner. En organisation kan ärva eller åsidosätta parametrarna för dess överordnade organisation. Delade huvuddata, till exempel produkter och adressböcker, gäller däremot för hela organisationen och kan inte åsidosättas för enskilda organisationer. När du skapar organisationer och hierarkier krävs det noga planering. Mer information om hierarkidesignern finns i [Planera organisationshierarkin](plan-organizational-hierarchy.md).
+
+
 
 
 

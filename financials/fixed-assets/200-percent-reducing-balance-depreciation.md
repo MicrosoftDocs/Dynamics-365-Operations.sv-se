@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="200-percent-reducing-balance-depreciation"></a>200 procent degressiv avskrivning
 
+[!include[banner](../includes/banner.md)]
+
+
 Den här artikeln ger en översikt över 200-procentsmetoden för degressiv avskrivning.
 
 När du ställer in en avskrivningsprofil för anläggningstillgångar och väljer **200 % degressiv avskrivning** i fältet **Metod** på sidan **Avskrivningsprofiler** skrivs tillgångarna som tilldelas den här avskrivningsprofilen av med samma procentsats under varje avskrivningsperiod. Denna procentsats beräknas baserat på tillgångens tjänstelivstid. Om till exempel en tillgång har en tjänstelivstid på fem år, beräknas procentsatsen som 40 procent (200% ÷ 5). 
@@ -44,7 +47,7 @@ Valet avgör vilka alternativ som är tillgängliga i fältet **Periodfrekvens**
 
 Du kan välja att behålla standardvärdet i fältet **Avskrivningsår**, **Kalender**. 
 
-Alternativet **Kalender** uppdaterar avskrivningsbasen den 1 januari varje år. Avskrivningen är vanligtvis bokfört nettovärde minus kassationsvärdet. I exemplen senare i det här ämnet utgör avskrivningsbasen täljaren i det första uttrycket i beräkningskolumnen. 
+Alternativet **Kalender** uppdaterar avskrivningsbasen den 1 januari varje år. Generellt är avskrivningen bokfört nettovärde minus kassationsvärdet. I exemplen senare i det här ämnet utgör avskrivningsbasen täljaren i det första uttrycket i beräkningskolumnen. 
 
 Om du väljer **Kalender** som avskrivningsår finns följande alternativ i fältet **Periodfrekvens**.
 
@@ -58,7 +61,7 @@ Om du väljer **Kalender** som avskrivningsår finns följande alternativ i fäl
 
 Om du väljer **Fiscal** i fältet **Depreciation** year, beräknas 200 % degressiv avskrivning baserat på räkenskapsåret för räkenskapskalendern som angetts för boken, eller för den räkenskapskalender som har valts på sidan **Ledger**. Räkenskapskalendrar ställs in på sidan **Räkenskapskalendrar**. 
 
-För räkenskapsåret 1 juli till och med 30 juni påbörjas avskrivningsberäkningen exempelvis 1 juli. Räkenskapsåret kan vara längre eller kortare än 12 månader. Avskrivningen justeras för varje period. Längden på nästa räkenskapsår bestäms av inställningen för perioder på sidan **Räkenskapskalendrar**. 
+För räkenskapsåret 1 juli - 30 juni startar alltså avskrivningsberäkningen den 1 juli. Räkenskapsåret kan vara längre eller kortare än 12 månader. Avskrivningen justeras för varje period. Längden på nästa räkenskapsår bestäms av inställningen för perioder på sidan **Räkenskapskalendrar**. 
 
 Om du väljer **Skatt** som avskrivningsår finns följande alternativ i fältet **Periodfrekvens**:
 
@@ -83,6 +86,8 @@ Den degressiva avskrivningsmetoden på 200 % delar 200 procent med tjänstelivst
 | År 3 | 3 600 × 40 % = 1 440                           | 4 600 – 1 440 = 3 160  | 3 600 – 1 440 = 2 160                 |
 
 > [!NOTE] 
-> Vanligtvis när beloppet beräknas med hjälp av degressiva avskrivning på 200 % blir mindre än det belopp som beräknas med den linjära metoden sker en konvertering till linjär metod för resterande tjänstelivstid.
+> Om beloppet som beräknas med den degressiva avskrivningsmetoden 200 % blir lägre än beloppet som beräknas med den linjära metoden, sker vanligtvis en konvertering till den linjära metoden för resterande tjänstelivstid.
+
+
 
 

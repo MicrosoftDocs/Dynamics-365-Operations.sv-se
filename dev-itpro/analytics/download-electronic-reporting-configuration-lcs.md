@@ -1,6 +1,6 @@
 ---
 title: "Hämta elektroniska rapporteringskonfigurationer från Lifecycle Services"
-description: "I det här avsnittet beskrivs hur du hämtar e-rapportering (ER) konfigurationer från Microsoft Dynamics Lifecycle Services (LCS)."
+description: "Detta avsnitt innehåller information om hur du hämtar elektroniska rapportkonfigurationer (ER) från Microsoft Dynamics Lifecycle Services (LCS)."
 author: kfend
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,7 +27,7 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="download-electronic-reporting-configurations-from-lifecycle-services"></a>Hämta elektroniska rapporteringskonfigurationer från Lifecycle Services
 
-I det här avsnittet beskrivs hur du hämtar e-rapportering (ER) konfigurationer från Microsoft Dynamics Lifecycle Services (LCS).
+Detta avsnitt innehåller information om hur du hämtar elektroniska rapportkonfigurationer (ER) från Microsoft Dynamics Lifecycle Services (LCS).
 
 Denna guide vägleder dig genom processen att hämta den senaste versionen av elektroniska rapportkonfigurationer (ER) från Microsoft Dynamics Lifecycle Services (LCS).
 
@@ -36,9 +36,9 @@ Denna guide vägleder dig genom processen att hämta den senaste versionen av el
     -   Konsult för funktionen för elektronisk rapportering
     -   Systemadministratör
 
-2.  Gå till **Organisationsadministration**&gt;**elektronisk rapportering**.
+2.  Navigera tilll **Organisationsadministrering** &gt; **Elektronisk rapportering**.
 3.  I avsnittet **Konfigurationsleverantörer** väljer du panelen **Microsoft**.
-4.  I panelen **Microsoft** väljer du **Databaser**. [![Update-er-from-LCS-for-MS-Open-MS-repositories-List](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)
+4.  I panelen **Microsoft** väljer du **Databaser**. [![uppdatera-er-från-lcs-för-ms-öppna-lista-över-ms-databaser](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)](./media/update-er-from-lcs-for-ms-open-ms-repositories-list.png)
 5.  På sidan **Konfigurationsdatabaser** väljer du i rutnätet den befintliga databasen för **LCS**-typen. Om denna databas inte visas i rutnätet, följ då nedanstående steg:
     1.  Klicka på Click **Lägg till** för att lägga till en ny databas.
     2.  Välj **LCS** som databastyp.
@@ -47,12 +47,12 @@ Denna guide vägleder dig genom processen att hämta den senaste versionen av el
     5.  Klicka på **OK** för att bekräfta den nya databasposten.
     6.  I rutnätet väljer du den nya databasen för **LCS**-typen.
 
-6.  Klicka på **Öppna** om du vill visa listan över ER-konfigurationer för den valda databasen. [![Update-er-from-LCS-for-MS-make-LCS-Repository](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)
+6.  Klicka på **Öppna** om du vill visa listan över ER-konfigurationer för den valda databasen. [![uppdatera-er-från-lcs-för-ms-skapa-lcs-databas](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)](./media/update-er-from-lcs-for-ms-make-lcs-repository.png)
 7.  I konfigurationsträdet i det vänstra fönstret väljer du erforderlig ER-konfiguration.
 8.  I snabbfliken **Versioner** väljer du erforderlig version för vald ER-konfiguration.
-9.  Klicka på **Import** för att hämta den valda versionen från LCS till den aktuella Dynamics 365 for Operations-instansen. **Obs!** Knappen **Import** är inte tillgänglig för ER-konfigurationsversioner som redan finns i den aktuella Dynamics 365 for Operations-instansen. [![Update-er-from-LCS-for-MS-Download-Configuration](./media/update-er-from-lcs-for-ms-download-configuration.png)](./media/update-er-from-lcs-for-ms-download-configuration.png)
+9.  Klicka på **Import** för att hämta den valda versionen från LCS till den aktuella Dynamics 365 for Operations-instansen. **Obs!** Knappen **Import** är inte tillgänglig för ER-konfigurationsversioner som redan finns i den aktuella Dynamics 365 for Operations-instansen. [![uppdatera-er-från-lcs-för-ms-hämta-konfiguration](./media/update-er-from-lcs-for-ms-download-configuration.png)](./media/update-er-from-lcs-for-ms-download-configuration.png)
 
-**Obs!** Beroende på ER-inställningarna valideras konfigurationerna när de har importerats. Du kan komma att meddelas om eventuella inkonsekvensproblem som upptäcks. Du måste lösa dessa problem innan du kan använda den importerade konfigurationsversionen. Mer information finns i listan över relaterade artiklar för det här avsnittet.
+**Obs!** Beroende på ER-inställningarna valideras konfigurationerna när de har importerats. Du kan komma att meddelas om eventuella inkonsekvensproblem som upptäcks. Du måste lösa dessa problem innan du kan använda den importerade konfigurationsversionen. Mer information finns i listan över relaterade artiklar för detta avsnitt.
 
 <a name="see-also"></a>Se även
 --------

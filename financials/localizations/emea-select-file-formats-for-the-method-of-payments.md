@@ -1,6 +1,6 @@
 ---
 title: "Filformat för betalningsmetod"
-description: "Det här avsnittet beskrivs två metoder för att hämta de filformat som du kan använda för betalningsmetoder."
+description: "Det här avsnittet beskriver två metoder för att hämta de filformat som du kan använda för betalningsmetoder."
 author: ShylaThompson
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,29 +27,34 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="file-formats-for-methods-of-payment"></a>Filformat för betalningsmetod
 
-Det här avsnittet beskrivs två metoder för att hämta de filformat som du kan använda för betalningsmetoder.
+[!include[banner](../includes/banner.md)]
 
-Det finns två sätt att få filformat användas med betalningsmetoder, elektronisk rapportering (ER) format eller X ++-filformat. När du ställer in en betalningsmetod för en kund eller leverantör, anger du vilka filformat och standarder som ska användas för betalningar och hur betalningar ska bearbetas. Du kan välja mellan följande typer av format:
+
+Det här avsnittet beskriver två metoder för att hämta de filformat som du kan använda för betalningsmetoder.
+
+Det finns två sätt att få filformat som du kan använda med betalningsmetoder, filformat för elektronisk rapportering (ER) eller X++ -filformat. När du anger en betalningsmetod för en kund eller leverantör anger du vilka filformat och standarder som ska användas för betalningar och hur betalningar ska bearbetas. Du kan välja mellan följande format:
 
 -   Exportera
 -   Importera
 -   Retur
 -   Remittering
 
-### <a name="method-1-electronic-reporting-file-formats"></a>Metod 1: Elektronisk rapportering filformat
+### <a name="method-1-electronic-reporting-file-formats"></a>Metod 1: Filformat för elektronisk rapportering
 
-För filformat som baseras på ER konfigurationer måste du importera konfigurationer från Lifecycle Services (LCS). Mer information finns i [hämta elektronisk rapportering konfigurationer från Lifecycle Services](/dynamics365/operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs). När du har importerat rapporterande konfigurationer för de filformat importerade format går att välja på den **betalningsmetoder** sida. Hur du importerar och välja filformat för Europa liknar proceduren för Japan. <!---For more details, see [Enable the JBA payment file format](https://ax.help.dynamics.com/en/wiki/enable-the-jba-payment-file-format/).-->
+För filformat som baseras på ER-konfigurationer måste du importera konfigurationer från Lifecycle Services (LCS). Mer information finns i [Hämta elektroniska rapporteringskonfigurationer från Lifecycle Services](/dynamics365/operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs). När du importerar rapporteringskonfigurationer för dess filformat, blir importerade format tillgängliga för val på sidan **Betalningsmetoder**. Hur du importerar och väljer filformat för Europa liknar proceduren för Japan. <!---For more details, see [Enable the JBA payment file format](https://ax.help.dynamics.com/en/wiki/enable-the-jba-payment-file-format/).-->
 
-### <a name="method-2-x-file-formats"></a>Metod 2: X ++-filformat
+### <a name="method-2-x-file-formats"></a>Metod 2: X++ -filformat
 
-Gör följande om du vill välja filformat som baseras på X ++-kod.
+Gör följande om du vill välja filformat som baseras på X++ -kod.
 
-1.  Gå till den **betalningsmetoder** sida.
-2.  I den **filformat** på snabbfliken klickar du på **inställningar**.
-3.  Välj fliken format för filtypen.
-4.  Välj ett filformat från den **tillgängliga** listan och flytta den till den **markerade** lista med pilen kontrollen.
-5.  Stäng den **filformat för betalningsmetoder** sida.
-6.  I den **filformat** på snabbfliken Välj filformatet som ska användas för betalningsmetoden i formatfältet lämplig fil. Allmänna elektroniska rapportalternativen tilldelas **nr** X ++-filformat.
+1.  Gå till sidan **Betalningsmetoder**.
+2.  På snabbfliken **Filformat** klickar du på **Inställningar**.
+3.  Välj den flik som motsvarar filformatet.
+4.  Välj ett filformat i listan **Tillgänglig** listan och flytta det till listan **Markerat** med pilkontrollen.
+5.  Stäng sidan **Filformat för betalningsmetoder**.
+6.  På snabbfliken **Filformat** väljer du det filformat som ska användas för betalningsmetoden i motsvarande filformatsfält. De allmänna alternativen för elektronisk rapportering bör anges som **Nej** for X++ -filformat.
+
+
 
 
 

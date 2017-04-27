@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="sales-tax-calculation-methods-in-the-origin-field"></a>Beräkningsmetod för moms i fältet Ursprung
 
+[!include[banner](../includes/banner.md)]
+
+
 Den här artikeln beskriver alternativen i fältet Ursprung på momskodsidan och hur moms beräknas utifrån det markerade alternativet för en momskod.
 
 För varje momskod som du skapar på sidan Momoskoder väljer du den beräkningsmetod som ska tillämpas på basbeloppet för skatten i fältet Ursprung.
@@ -124,5 +127,7 @@ Dokumentet/journalen ställs in på Moms ingår i beloppen = Nej, Transaktionens
 [Bestämning av momssatser baserat på fälten Marginal base och Calculation method](marginal-base-field.md)
 
 [Alternativ för hela belopp och intervallberäkning för momskoder](whole-amount-interval-options-sales-tax-codes.md)
+
+
 
 

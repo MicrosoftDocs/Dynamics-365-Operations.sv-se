@@ -40,7 +40,7 @@ Registerbegränsningar anger de kombinationer av värden som tillåts för attri
 
 ### <a name="example-of-a-table-constraint"></a>Exempel på registerbegränsning.
 
-I det här exemplet visas hur du kan begränsa konfigurationen för en högtalare till specifika kabinettfinish och framdelar. Den första tabellen visar storlekar och typer av kabinettfinish och framdelar som är allmänt tillgängliga för konfiguration. Värdena som är definierade för den ** skåp Slutför ** och **fram galler** attribut typer.
+I det här exemplet visas hur du kan begränsa konfigurationen för en högtalare till specifika kabinettfinish och framdelar. Den första tabellen visar storlekar och typer av kabinettfinish och framdelar som är allmänt tillgängliga för konfiguration. Du definierar värdena för attributtyperna **Kabinettfinish ** och **Frontgaller**.
 
 | Attributtyp | Värden                      |
 |----------------|-----------------------------|
@@ -60,8 +60,8 @@ Nästa tabell visar kombinationerna som definieras av registerbegränsningen i *
 
 Du kan skapa systemdefinierade och användardefinierade registerbegränsningar. Mer information finns i [Systemdefinierade och användardefinierade registerbegränsningar](system-defined-user-defined-table-constraints.md).
 
-## <a name="what-syntax-should-be-used-to-write-constraints"></a>Vilken syntax ska användas för att skriva villkor?
-Du måste använda OML-syntaxen (Optimization Modeling Language) när du skriver begränsningar. Microsoft Solver Foundation begränsning Problemlösaren används för att lösa dessa begränsningar.
+## <a name="what-syntax-should-be-used-to-write-constraints"></a>Vilken syntax bör användas för att skriva begränsningar i ?
+Du måste använda OML-syntaxen (Optimization Modeling Language) när du skriver begränsningar. Systemet använder Microsoft Solver Foundation-begränsning för att lösa begränsningarna.
 
 ## <a name="should-i-use-table-constraints-or-expression-constraints"></a>Ska jag använda registerbegränsningar eller uttrycksbegränsningar?
 Du kan använda antingen uttrycksbegränsningar eller registerbegränsningar, beroende på hur du föredrar att skapa begränsningar. Du uppbyggnad en begränsning register som en vektor, medan en begränsning uttryck är ett enskilt utdrag. När du konfigurerar en produkt spelar det ingen roll vilken typ av begränsning som används. I följande exempel visas hur de två metoderna skiljer sig.  
@@ -110,32 +110,32 @@ I följande tabeller visas operatorerna och infixnotationerna som du kan använd
 <td>Detta gäller om det första villkoret är falskt, det andra villkoret är sant eller båda.</td>
 <td>Medför[a, b], infix: a -: b</td>
 <td><ul>
-<li><strong>Operatör:</strong> innebär [x! = 0, y &gt;= 0]</li>
-<li><strong>Infix notation:</strong> x! = 0-: y &gt;= 0</li>
+<li><strong>Operator:</strong> Implies[x != 0, y &gt;= 0]</li>
+<li><strong>Infix notation:</strong> x != 0 -: y &gt;= 0</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td>Och</td>
 <td>Detta gäller endast om alla villkor är sanna. Om antalet villkor är 0 (noll), ger det <strong>Sant</strong>.</td>
-<td>Och [argument] infix: en &amp;b &amp; ... &amp;z</td>
+<td>And[args], infix: a &amp; b &amp; ... &amp; z</td>
 <td><ul>
-<li><strong>Operatör:</strong> och [x == 2, y &lt;= 2]</li>
-<li><strong>Infix notation:</strong> x 2 == &amp;y &lt;= 2</li>
+<li><strong>Operator:</strong> And[x == 2, y &lt;= 2]</li>
+<li><strong>Infix notation:</strong> x == 2 &amp; y &lt;= 2</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>Eller</td>
 <td>Detta gäller om något villkor är sant. Om antalet villkor är 0 (noll), ger det <strong>Falskt</strong>.</td>
-<td>Eller [argument] infix: en |}] b |}] ... | z</td>
+<td>Or[args], infix: a | b | ... | z</td>
 <td><ul>
-<li><strong>Operatör:</strong> eller [x == 2, y &lt;= 2]</li>
-<li><strong>Infix notation:</strong> x 2 == |}] y &lt;= 2</li>
+<li><strong>Operator:</strong> Or[x == 2, y &lt;= 2]</li>
+<li><strong>Infix notation:</strong> x == 2 | y &lt;= 2</li>
 </ul></td>
 </tr>
 <tr class="even">
 <td>Plustecken</td>
 <td>Detta summerar dess villkor. Om antalet villkor är 0 (noll), ger det <strong>0</strong>.</td>
-<td>Infix plus [argument]: en + b +... + z</td>
+<td>Plus[args], infix: a + b + ... + z</td>
 <td><ul>
 <li><strong>Operatör:</strong> Plus[x, y, 2] == z</li>
 <li><strong>Infixnotation:</strong> x + y + 2 == z</li>
@@ -159,7 +159,7 @@ I följande tabeller visas operatorerna och infixnotationerna som du kan använd
 <tr class="odd">
 <td>Tider</td>
 <td>Detta tar produkten av dess villkor. Om antalet villkor är 0 (noll), ger det <strong>1</strong>.</td>
-<td>Infix tider [argument]: en * b *... * z</td>
+<td>Times[args], infix: a * b * ... * z</td>
 <td><ul>
 <li><strong>Operatör:</strong> Times[x, y, 2] == z</li>
 <li><strong>Infixnotation:</strong> x * y * 2 == z</li>
@@ -167,8 +167,8 @@ I följande tabeller visas operatorerna och infixnotationerna som du kan använd
 </tr>
 <tr class="even">
 <td>Effekt</td>
-<td>Detta tar en exponential. Detta gäller exponentiering från höger till vänster. (D.v.s. det är höger-associativa.) Därför <strong>Power [a, b c]</strong> motsvarar <strong>Power [, strömavbrott [b c]]</strong>. <strong>Effekt</strong> kan bara användas med en positiv konstant som exponent.</td>
-<td>Starta [argument], infix: en ^ b ^... ^ z</td>
+<td>Detta tar en exponential. Detta gäller exponentiering från höger till vänster. (Med andra ord är det rättighetsförenande.) Och därför är <strong>Power[a, b, c]</strong> det samma som <strong>Power[a, Power[b, c]].</strong> <strong>Effekt</strong> kan bara användas med en positiv konstant som exponent.</td>
+<td>Power[args], infix: a ^ b ^ ... ^ z</td>
 <td><ul>
 <li><strong>Operatör:</strong> Power[x, 2] == y</li>
 <li><strong>Infixnotation:</strong> x ^ 2 == y</li>
@@ -191,7 +191,7 @@ I följande tabeller visas operatorerna och infixnotationerna som du kan använd
 <td>Detta producerar den logiska motsatsen av dess villkor. Detta måste ha exakt ett villkor.</td>
 <td>Not[expr], infix: !expr</td>
 <td><ul>
-<li><strong>Operatör:</strong> inte [x] &amp;inte [y == 3]</li>
+<li><strong>Operator:</strong> Not[x] &amp; Not[y == 3]</li>
 <li><strong>Infixnotation:</strong> !x!(y == 3)</li>
 </ul></td>
 </tr>
@@ -203,7 +203,7 @@ Exemplen i följande tabell visar hur du skriver en infixnotation.
 | Infixnotation    | beskrivning                                                                                   |
 |-------------------|-----------------------------------------------------------------------------------------------|
 | x + y + z         | Tillägg                                                                                      |
-| X \*y \*z       | Multiplikation                                                                                |
+| x \* y \* z       | Multiplikation                                                                                |
 | x - y             | Binär subtraktion översätts liksom binär addition med negerad andra term. |
 | x ^ y ^ z         | Högerassociativ exponentiering                                                   |
 | !x                | Booleskt inte                                                                                   |
@@ -212,14 +212,14 @@ Exemplen i följande tabell visar hur du skriver en infixnotation.
 | x & y & z         | Booleskt och                                                                                   |
 | x == y == z       | Likhet                                                                                      |
 | x != y != z       | Distinkt                                                                                      |
-| X &lt;y &lt;z   | Mindre än                                                                                     |
-| X &gt;y &gt;z   | Större än                                                                                  |
-| X &lt;= y &lt;= z | Mindre än eller lika med                                                                         |
-| X &gt;= y &gt;= z | Större än eller lika med                                                                      |
+| x &lt; y &lt; z   | Mindre än                                                                                     |
+| x &gt; y &gt; z   | Större än                                                                                  |
+| x &lt;= y &lt;= z | Mindre än eller lika med                                                                         |
+| x &gt;= y &gt;= z | Större än eller lika med                                                                      |
 | (x)               | Standardprioritet för åsidosättande av parenteser.                                                      |
 
 ## <a name="why-arent-my-expression-constraints-validated-correctly"></a>Varför kan inte mina uttryckbegränsningar verifieras korrekt?
-Du kan inte använda reserverade nyckelord som solvernamn för attribut, komponenter eller delkomponenter i produktkonfigurationsmodell. Här följer en lista över reserverade nyckelord som du inte kan använda:
+Du kan inte använda reserverade nyckelord som solvernamn för attribut, komponenter eller delkomponenter i produktkonfigurationsmodell. Följande lista innehåller de reserverade nyckelord som du inte kan använda:
 
 -   Tak
 -   Element
@@ -245,8 +245,8 @@ Du kan inte använda reserverade nyckelord som solvernamn för attribut, kompone
 <a name="see-also"></a>Se även
 --------
 
-[Skapa en uttrycksbegränsning (aktivitet guide)](http://ax.help.dynamics.com/en/wiki/create-an-expression-constraint/)
+[Skapa en uttrycksbegränsning (Uppgiftsguide)](http://ax.help.dynamics.com/en/wiki/create-an-expression-constraint/)
 
-[Lägga till en beräkning i en modell för produktkonfiguration (aktivitet guide)](http://ax.help.dynamics.com/en/wiki/add-a-calculation-to-a-product-configuration-model/)
+[Lägga till en beräkning i en produktkonfigurationsmodell (uppgiftsguide)](http://ax.help.dynamics.com/en/wiki/add-a-calculation-to-a-product-configuration-model/)
 
 

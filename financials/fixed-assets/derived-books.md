@@ -27,9 +27,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="derived-books"></a>Härledda räkenskapsböcker
 
+[!include[banner](../includes/banner.md)]
+
+
 Den här artikeln ger en översikt över funktionerna för härledda böcker.
 
-Syftet med härledda avskrivningsregler är att förenkla bokföringen av transaktioner för anläggningstillgångar som planeras med jämna mellanrum.  Du kan välja en bok som primära bok. Denna är vanligtvis boken som används för redovisningsavskrivning. Du kopplar sedan andra böcker till den som har ställts in för bokföring av transaktioner med samma intervaller som den primära boken. Böcker för momsavskrivning anges ofta som härledda böcker. 
+Ändamålet med härledda böcker att att förenkla bokföringen av transaktioner för anläggningstillgångar som planeras med jämna mellanrum.  Du kan välja en bok som primär bok. Denna är vanligtvis boken som används för redovisningsavskrivning. Du kopplar sedan andra böcker till den som har ställts in för bokföring av transaktioner med samma intervaller som den primära boken. Böcker för momsavskrivning anges ofta som härledda böcker. 
 
 De vanligaste transaktionerna att ställas in för redovisning i härledda böcker är anskaffningar, anskaffningsjusteringar och avyttringar. 
 
@@ -42,6 +45,8 @@ Vid bokföringen av transaktionen genereras en anskaffningstransaktion som bokf�
 > [!NOTE]                                                                                                                               
 > Böcker som ställs in för att bokföra transaktioner med andra intervall än de primära bokintervallen måste kopplas till anläggningstillgången som separata böcker och inte som härledda böcker.  
 
-Mer information finns i [bokföring med härledda avskrivningsregler](post-derived-value-models.md).
+Mer information finns i [Bokföring med härledda böcker](post-derived-value-models.md).
+
+
 
 

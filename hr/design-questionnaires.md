@@ -1,6 +1,6 @@
 ---
 title: "Utforma en enkät"
-description: "Det här avsnittet beskrivs hur du skapar en enkät. Det första steget är att utforma enkäten. Om du utformar en enkät skapar du inte bara frågorna och svaren, utan även strukturen som gör det möjligt att registrera och ordna svar i tabeller."
+description: "Det här avsnittet beskriver processen för att skapa en enkät. Det första steget är att utforma enkäten. Om du utformar en enkät skapar du inte bara frågorna och svaren, utan även strukturen som gör det möjligt att registrera och ordna svar i tabeller."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -28,7 +28,7 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="design-a-questionnaire"></a>Utforma en enkät
 
-Det här avsnittet beskrivs hur du skapar en enkät. Det första steget är att utforma enkäten. Om du utformar en enkät skapar du inte bara frågorna och svaren, utan även strukturen som gör det möjligt att registrera och ordna svar i tabeller. 
+Det här avsnittet beskriver processen för att skapa en enkät. Det första steget är att utforma enkäten. Om du utformar en enkät skapar du inte bara frågorna och svaren, utan även strukturen som gör det möjligt att registrera och ordna svar i tabeller. 
 
 En noggrant utformad enkät ökar kvaliteten på informationen som du samlar in. Med noggrann utformning är det lättare att du välja lämpliga alternativ vid en lämplig tidpunkt för en enkät. Följande punkter kan hjälpa dig att planera en effektiv enkät:
 
@@ -87,12 +87,12 @@ Enkätparametrar är valfria. Du kanske inte använder dem, beroende på företa
 
 Enkätparametrar definierar anonymitet, nummerseriekoder och referenstyperna för en enkät. När en organisation distribuerar en enkät kan alternativet att låta svarande förbli anonyma vara viktigt. 
 
-Nummerseriekoderna används för att ordna frågor och svar. Utifrån dessa nummerseriekoder tilldelas värden automatiskt artiklar. 
+Nummerseriekoderna används för att ordna frågor och svar. Baserat på nummerserierkoderna tilldelas värden automatiskt till objekt. 
 
 Du bör definiera alla parametrar innan du börjar skapa dina data. Du kan ändra enkätparameterinställningarna när som helst.
 
 ## <a name="questionnaire-components"></a>Enkätkomponenter
-Frågeformulär består av tre huvuddelar: svarsgrupper som innehåller svaren på en flervalsfråga frågor och frågor i enkäten. Du kan även gruppera frågorna i en enkät i resultatgrupper. Resultatgrupper kategoriserar frågor och tillhandahåller ytterligare analys i enkäten. 
+Frågeformulär består av tre huvuddelar: svarsgrupper som innehåller svaren på en flervalsfråga frågor, frågor i enkäten samt själva enkäten. Du kan även gruppera frågorna i en enkät i resultatgrupper. Resultatgrupper kategoriserar frågor och tillhandahåller ytterligare analys i enkäten. 
 
 [![QuestionnaireComponents](./media/questionnairecomponents-1024x615.png)](./media/questionnairecomponents.png)
 
@@ -235,6 +235,6 @@ Alternativt kan du skapa en enkät så att om den svarande väljer Svar A på fr
 
 [Distribuera och slutföra enkäter](distribute-questionnaires.md)
 
-[Visa och utvärdera resultaten för enkäter](evaluate-questionnaire-results.md)
+[Visa och utvärdera resultaten av en enkät](evaluate-questionnaire-results.md)
 
 

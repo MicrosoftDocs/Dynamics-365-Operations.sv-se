@@ -1,6 +1,6 @@
 ---
 title: "Ekonomiska råbalansrapporter"
-description: "Den här artikeln beskrivs standardrapporter för Råbalanser. Här beskrivs också byggstenar som är associerade med dessa rapporter och hur du kan ändra rapporterna så att den passar ditt företags behov."
+description: "Den här artikeln beskriver standardrapporter för råbalanser. Det beskriver även de byggstenar som är associerade med dessa rapporter och hur du kan ändra rapporterna så att de passar ditt företags behov."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="trial-balance-financial-reports"></a>Ekonomiska råbalansrapporter
 
-Den här artikeln beskrivs standardrapporter för Råbalanser. Här beskrivs också byggstenar som är associerade med dessa rapporter och hur du kan ändra rapporterna så att den passar ditt företags behov. 
+[!include[banner](../includes/banner.md)]
+
+
+Den här artikeln beskriver standardrapporter för råbalanser. Det beskriver även de byggstenar som är associerade med dessa rapporter och hur du kan ändra rapporterna så att de passar ditt företags behov. 
 
 <a name="default-trial-balance-reports"></a>Standardrapporter för råbalans
 -----------------------------
@@ -51,7 +54,7 @@ Råbalansrapporterna använder följande byggstenar.
 
 ### <a name="row-definition"></a>Raddefinition
 
-Raddefinitionen råbalans – standard innehåller en rad som tar emot alla huvudkonton. Därför kan alla generera rapporten, utan att behöva göra några ändringar. När du visar rapporten borrar du till enskild rad om du vill se information om varje konto. Du kan ändra raddefinitionen så att den innehåller mer information. Om du vill ändra Råbalans – standardinställning så att den innehåller rader för alla konton, följer du stegen nedan.
+Raddefinitionen Råbalans – standard innehåller en rad som tar emot alla huvudkonton. Därför kan alla generera rapporten, utan att behöva göra några ändringar. När du visar rapporten borrar du till enskild rad om du vill se information om varje konto. Du kan ändra raddefinitionen så att den innehåller mer information. Om du vill ändra Råbalans – standardinställning så att den innehåller rader för alla konton, följer du stegen nedan.
 
 1.  Klicka på **Redigera**och sedan på **Infoga rader från dimensioner**. Kommandot **Infoga rader från dimensioner** gör att du kan välja dimensionerna du vill ha i raddefinitionen. För den här raddefinitionen ska du använda **Huvudkonto**.
 2.  Se till att **Huvudkonto** bara innehåller et-tecken och välj sedan **OK**.
@@ -100,10 +103,12 @@ Alla råbalansrapporter använder olika kolumndefinitioner. Dessa kolumndefiniti
 <a name="see-also"></a>Se även
 --------
 
-[Financial reporting](financial-reporting-getting-started.md)
+[Ekonomisk rapportering](financial-reporting-getting-started.md)
 
-[View financial reports](view-financial-reports.md)
+[Visa ekonomiska rapporter](view-financial-reports.md)
 
-[Blogg för Dynamics ekonomisk rapportering](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+[Dynamics-ekonomirapporteringsblogg](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+
+
 
 

@@ -1,6 +1,6 @@
 ---
 title: Bearbeta allokeringar
-description: "Artikeln innehåller information om fördelning alternativen för att bearbeta dem i Microsoft Dynamics 365 för operationer och hur de kan användas vid budgetplanering av. Allokeringar används för att fördela belopp mellan flera redovisningskontokombinationer. De hjälper till att garantera att utgifter eller intäkter debiteras för rätt objekt i redovisningen."
+description: "Det här avsnittet innehåller information om allokeringar, alternativen för att bearbeta dem i Microsoft Dynamics 365 for Operations och hur de kan användas vid budgetplanering. Allokeringar används för att fördela belopp mellan flera redovisningskontokombinationer. De hjälper till att garantera att utgifter eller intäkter debiteras för rätt objekt i redovisningen."
 author: twheeloc
 manager: AnnBe
 ms.date: 2017-04-04
@@ -28,11 +28,11 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="process-allocations"></a>Bearbeta allokeringar
 
-Artikeln innehåller information om fördelning alternativen för att bearbeta dem i Microsoft Dynamics 365 för operationer och hur de kan användas vid budgetplanering av. Allokeringar används för att fördela belopp mellan flera redovisningskontokombinationer. De hjälper till att garantera att utgifter eller intäkter debiteras för rätt objekt i redovisningen.
+Det här avsnittet innehåller information om allokeringar, alternativen för att bearbeta dem i Microsoft Dynamics 365 for Operations och hur de kan användas vid budgetplanering. Allokeringar används för att fördela belopp mellan flera redovisningskontokombinationer. De hjälper till att garantera att utgifter eller intäkter debiteras för rätt objekt i redovisningen.
 
-Microsoft Dynamics 365 för operationer ger följande fördelar för detta:
+I Microsoft Dynamics 365 for Operations finns följande funktioner för den här processen:
 
--   Manuellt allokera transaktionsbeloppen med åtgärden uppdelade i redovisningsfördelningarna eller genom att använda standardmallar för ekonomisk dimension till ett dokument. Mer information finns i [redovisningsfördelningar.](\accounts-payable\accounting-distributions.md)
+-   Fördela transaktionsbelopp manuellt genom att använda uppdelningsåtgärden i redovisningsfördelningarna eller genom att använda standardmallarna för ekonomiska dimensioner. Mer information finns i [Redovisningsfördelningar](\accounts-payable\accounting-distributions.md).
 -   Fördela transaktionsbelopp automatiskt baserat på allokeringsvillkor som definieras för individuella huvudkonton. Allokeringskontoposter skapas för varje journal som baseras på procentsats och målhuvudbokskontot, när en redovisningspost uppfyller kriterierna som definieras som källhuvudbokskontot.
 -   Fördela redovisningssaldon eller fasta belopp automatiskt baserat på redovisningsallokeringsregler. Redovisningsallokeringsreglerna bearbetas periodvis med hjälp av allokeringsjournaler. 
 

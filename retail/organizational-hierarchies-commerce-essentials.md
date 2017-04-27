@@ -1,6 +1,6 @@
 ---
 title: "Organisationer och organisationshierarkier (grundläggande om handel)"
-description: "Grundläggande om handel har tre olika typer av interna organisationer som du kan definiera en organisation utför en affärsprocess eller uppnå ett mål."
+description: "Grundläggande om handel har tre olika typer av interna organisationer som du kan definiera för att hjälpa en organisation att utföra en affärsprocess eller uppnå ett mål."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 21251
 ms.assetid: 2bfc6bfe-784b-42e8-8bf0-116e9f0a558e
 ms.search.region: global
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="organizations-and-organizational-hierarchies-commerce-essentials"></a>Organisationer och organisationshierarkier (grundläggande om handel)
 
-Grundläggande om handel har tre olika typer av interna organisationer som du kan definiera en organisation utför en affärsprocess eller uppnå ett mål. 
+[!include[banner](includes/banner.md)]
+
+
+Grundläggande om handel har tre olika typer av interna organisationer som du kan definiera för att hjälpa en organisation att utföra en affärsprocess eller uppnå ett mål. 
 
 En organisation är en grupp personer som arbetar tillsammans för att utföra ett arbete eller uppnå ett mål. En organisationshierarki representerar relationerna mellan de affärsenheter som finns i organisationen.
 
@@ -47,7 +50,7 @@ En driftenhet är en organisation som används för skilja kontrollen av ekonomi
 | Butikskanal          | En driftenhet som representerar en fysisk butik.                             | Används för att hantera och kontrollera en eller flera butiker inom eller mellan juridiska personer.                                                               |
 
 ## <a name="organizational-hierarchies"></a>Organisationshierarkier
-I Grundläggande om handel tilldelas varje hierarki tilldelas ett syfte. Syftet med en hierarki bestämmer vilka typer av organisationer som kan inkluderas i hierarkin. Syftet avgör också de programscenarier som en hierarki kan användas i. En Butikshierarki kan exempelvis användas för att köpa och sälja produkter i en detaljhandelsaffär. Organisationer i en hierarki kan dela parametrar, policyer och transaktioner. En organisation kan ärva eller åsidosätta parametrarna för dess överordnade organisation. Delade huvuddata, till exempel produkter och adressböcker, gäller däremot för hela organisationen och kan inte åsidosättas för enskilda organisationer.
+I Grundläggande om handel tilldelas varje hierarki tilldelas ett syfte. Syftet med en hierarki bestämmer vilka typer av organisationer som kan inkluderas i hierarkin. Syftet avgör också de programscenarier som en hierarki kan användas i. En butikshierarki kan exempelvis användas för att köpa och sälja produkter i en butik. Organisationer i en hierarki kan dela parametrar, policyer och transaktioner. En organisation kan ärva eller åsidosätta parametrarna för dess överordnade organisation. Delade huvuddata, till exempel produkter och adressböcker, gäller däremot för hela organisationen och kan inte åsidosättas för enskilda organisationer.
 ### <a name="best-practices-for-setting-up-an-organization-in-a-hierarchy"></a>Regelverk för att ställa in en organisation i en hierarki
 
 Tänk på följande när du implementerar en organisationshierarki:
@@ -68,6 +71,8 @@ I tabellen nedan beskrivs de Grundläggande om handel-scenarier där organisatio
 | Hantera butikspåfyllnad                                                    | Gruppera butiker för att fylla på lagret baserat på påfyllnadsregler.                                                                                                                                                                                                                                          | Butikspåfyllnad |
 | Rapportdata för butiker                                                         | Gruppera butiker för rapportering.                                                                                                                                                                                                                                                                                | Butiksrapportering     |
 | Bokföra lager, beräkna utdrag eller bokföra utdrag för en grupp av butiker | Skapa en grupp av butiker som kan tilldelas till ett batchjobb. När du definierar ett batchjobb för att bokföra lager, beräkna utdrag eller bokföra utdrag, kan du ange hierarkin som gäller för jobbet. När butiker läggs till eller raderas från hierarkin, behöver du inte ändra batchjobbet. | Bokföring för Retail POS   |
+
+
 
 
 

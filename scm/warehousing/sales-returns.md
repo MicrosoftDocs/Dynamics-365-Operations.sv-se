@@ -1,6 +1,6 @@
 ---
 title: "Försäljningsreturer"
-description: "Det här avsnittet innehåller information om processen för returorder. Den innehåller information om returer från kunder och deras effekt på lagerkvantiteter kostnadsredovisning och lagerbehållning."
+description: "Det här avsnittet innehåller information om processen för returorder. Det innehåller information om kundreturer och deras effekt på kostnadsredovisning och lagerbehållningskvantiteter."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,95 +26,98 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="sales-returns"></a>Försäljningsreturer
 
-Det här avsnittet innehåller information om processen för returorder. Den innehåller information om returer från kunder och deras effekt på lagerkvantiteter kostnadsredovisning och lagerbehållning.
+[!include[banner](../includes/banner.md)]
 
-Kunder kan returnera artiklar av olika skäl. Till exempel en artikel kan vara fel eller det uppfyller inte kundens förväntningar. Processen startar när en kund begär ska returnera en artikel. En returorder skapas i Microsoft Dynamics 365 för åtgärder när kundens begäran mottas.
 
-## <a name="return-order-process"></a>Returordern
-Bilden nedan ger en översikt över processen för returordern.  
+Det här avsnittet innehåller information om processen för returorder. Det innehåller information om kundreturer och deras effekt på kostnadsredovisning och lagerbehållningskvantiteter.
 
-[![salesreturns01](./media/salesreturns01.jpg)](./media/salesreturns01.jpg)  
+Kunder kan returnera artiklar av olika skäl. Till exempel kan en artikel ha fel eller den uppfyller inte kundens förväntningar. Processen startar när en kund utfärdar en begäran att returnera en artikel. När en kunds begäran har tagits emot skapas en returorder i Microsoft Dynamics 365 for Operations.
 
-Det finns två typer av returordern: fysisk tillbaka och endast kredit.
+## <a name="return-order-process"></a>Returorderprocess
+Följande bild ger en översikt över returorderprocessen.  
 
--   **RETUR fysiska** – returordern auktoriserar fysiska RETUR av produkterna.
--   **Kreditera endast** – returordern auktoriserar en kundkredit men inte kräver att kunden ska returnera produkterna fysiskt.
+[![försäljningsreturer01](./media/salesreturns01.jpg)](./media/salesreturns01.jpg)  
 
-### <a name="physical-return-order-process"></a>Fysiska returordern.
+Det finns två typer av returorder: fysisk retur och endast kreditering.
 
-1.  **Skapa en returorder.** Formellt dokument tillståndet för kunden ska returnera några oönskade eller felaktiga produkter. Returordern kräver inte att företaget Godkänn returnerade produkter eller en kredit för kunden. Om återlämnande har godtagits auktoriserar du en ersättningsartikel skickas före defekta artiklar som har returnerats.
-2.  **Anländer till lagret för inspektion.** Slutföra en inledande kontroll och verifiering mot returordern. Returordern stöder också karantän för de returnerade artiklarna för ytterligare inspektion och kvalitetskontroll.
-3.  **Bestäm hur.** Avsluta processen inspektion och bestämma vad som ska göras med de returnerade produkterna. Bestäm om du ska kreditera kunden Produktretur, avvisa eller acceptera produkt returnera, kassera produkten och skicka till kunden en ersättningsprodukt tillsammans med det här steget.
-4.  **Skapa en följesedel.** Skapa en följesedel och genomför beslut dispositionskoder som du angav i steg 3. Slutför logistik processer.
-5.  **Generera en faktura.** Stäng returordern.
+-   **Fysisk retur** – returordern auktoriserar fysiska returer av produkterna.
+-   **Endast kreditering** – returordern auktoriserar en kundkredit men kräver inte att kunden ska returnera produkterna fysiskt.
 
-### <a name="credit-only-process"></a>Bearbeta endast kredit
+### <a name="physical-return-order-process"></a>Orderprocess för fysisk retur
 
-1.  **Skapa en returorder.** Formellt dokument tillståndet för kunden som ska få en kredit utan att returnera oönskade eller felaktiga produkter. Den **kreditera endast** dispositionskod tillåter beslutet att kreditera kunden utan fysisk RETUR.
-2.  **Generera en faktura.** Generera kreditfakturan och stäng sedan returordern.
+1.  **Skapa en returorder.** Dokumentera formellt auktoriseringen för kunden att returnera alla felaktiga eller oönskade produkter. Returordern kräver inte att företaget godkänner returnerade produkter eller ger kunden en kredit. Om returen har godkänts auktoriserar du att en ersättningsartikel skickas innan den felaktiga artikeln har returnerats.
+2.  **Anländer till lagret för inspektion.** Slutför en inledande inspektion och verifiering mot returorderdokumentet. Returordern stöder också karantän för de returnerade artiklarna för ytterligare inspektion och kvalitetskontroll.
+3.  **Bestäm disposition.** Avsluta inspektionsprocessen och bestäm vad som ska göras med de returnerade produkterna. Som en del av detta steg bestämmer du om du vill kreditera kunden, avvisa produktreturen eller godkänna produktreturen, kassera produkten och sedan skicka en ersättningsprodukt till kunden.
+4.  **Skapa följesedel.** Skapa en följesedel och genomför det dispositionsbeslut som du angav i steg 3. Slutför de logistika processerna.
+5.  **Skapa en faktura.** Stäng returordern.
 
-## <a name="return-material-authorization"></a>Return material authorization
-Returnera Material returnummer (RMA) bearbetning bygger på funktionerna för försäljningsordern. En RMA registreras som en returorder som har skapats som en försäljningsorder och ha en annan försäljningsorder som är kopplad till den kallas en ersättningsorder. Både försäljningsorder länka till ursprungligt RMA-numret.
+### <a name="credit-only-process"></a>Process för Endast kreditering
 
--   **Returorder** – om du vill registrera en RMA du skapar returordern, som är en försäljningsorder som har tilldelade typen **returneras ordern.** De ändringar som du gör i informationen RMA uppdateras automatiskt i försäljningsordern. Tills returordern har statusen **öppna**, visas inte i listan med försäljningsorder. Du använder RMA införsel och inleverans av returnerade artiklar ska hanteras, samt ge dispositionsåtgärden endast kredit (se avsnitt **dispositionskoder och hur åtgärder**). Uppföljning processer hanteras i försäljningsordern.
--   **Ersättningsorder** – när en ersättningsorder måste levereras till kunden, RMA kan innehålla andra berörda försäljningsordern. Du kan manuellt skapa en ersättningsorder för RMA för omedelbar leverans. Du kan också kan ersättningsordern skapas automatiskt när införsel, inspektion och inleveransen utförs för RMA radartikeln med en dispositionskod som visar byte. Ersättningsordern fungerar på samma sätt som är kopplad till en försäljningsorder. Du kan exempelvis använda den att konfigurera en anpassad produkt som ersättningsartikeln, skapa en produktionsorder för att reparera en returnerad artikel, skapa en inköpsorder för direktleveranser skicka ersättning från en leverantör eller stöd för andra ändamål.
+1.  **Skapa en returorder.** Dokumentera formellt auktoriseringen för kunden att få en kredit utan att returnera de felaktiga eller oönskade produkterna. Dispositionskoden **Endast kreditering** godkänner beslutet att kreditera kunden utan fysisk retur.
+2.  **Skapa en faktura.** Skapa kreditfakturan och stäng sedan returordern.
+
+## <a name="return-material-authorization"></a>RMA-nummer (Return Materials Authorization)
+Bearbetning av RMA-nummer (Return Materials Authorization) bygger på funktioner för försäljningsorder. En RMA registreras som en returorder som skaps som en försäljningsorder och kan ha en annan försäljningsorder kopplad till den som kallas en ersättningsorder. Båda försäljningsorder länkar till det ursprungliga RMA-numret.
+
+-   **Returorder** – om du vill registrera en RMA skapar du en returorder som är en försäljningsorder som har den tilldelade typen **Returorder.** De ändringar som du gör i RMA-informationen uppdateras automatiskt i försäljningsordern. Tills returordern har statusen **Öppen** visas den inte i listan över försäljningsorder. Du använder RMA för att hantera införsel och inleverans av returnerade artiklar, samt att godkänna en dispositionsåtgärden för Eendast kreditering (se avsnitt **Ddispositionskoder och dispositionsåtgärder**). Alla andra uppföljningsprocesser måste hanteras i försäljningsordern.
+-   **Ersättningsorder** – när en ersättningsorder måste levereras till kunden kan RMA innehålla en andra kopplad försäljningsorder. Du kan manuellt skapa en ersättningsorder för RMA för stöd för omedelbar leverans. Alternativt kan ersättningsordern skapas automatiskt efter att införsel, inspektion och inleverans slutförs för RMA radartikeln med en dispositionskod som indikerar ersättning. Ersättningsordern fungerar på samma sätt som när den är kopplad till en försäljningsorder. Du kan exempelvis använda den till att konfigurera en anpassad produkt som ersättningsartikeln, skapa en produktionsorder för att reparera en returnerad artikel, skapa en inköpsorder för direktleveranser för att skicka ersättningen från en leverantör eller ge stöd till andra ändamål.
 
 ## <a name="create-a-return-order"></a>Skapa en returorder
-Returorderprocessen startar när en kund kontaktar organisationen returnerar en defekt eller oönskade produkt och/eller som ska krediteras. När organisationen har accepterat returen kan dokumenteras returen av en returorder. Returordern blir fokuspunkt interna bearbetningen av den returnerade produkten. Följande illustration visar proceduren för att skapa en returorder.  
+Returorderprocessen startar när en kund kontaktar organisationen för att returnera en felaktig eller oönskad produkt och/eller som ska krediteras. När organisationen har accepterat returen kan returen dokumenteras av en returorder. Returordern blir fokuspunkt för den interna bearbetningen av den returnerade produkten. Följande bild visar proceduren för att skapa en returorder.  
 
 [![Proceduren för att skapa en returorder](./media/salesreturn02.png)](./media/salesreturn02.png)
 
-### <a name="create-a-return-order-header"></a>Skapa en returorderhuvudet
+### <a name="create-a-return-order-header"></a>Skapa en ny returorderrubrik.
 
 Informationen i tabellen nedan måste inkluderas när du skapar en returorder.
 
 | Fält              | beskrivning                                              | Kommentarer                                                                                                                                                                                                                                                                                                                                        |
 |--------------------|----------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Kund-ID   | En referens till tabellen Kunder                       | Du måste ange ett befintligt kundkonto.                                                                                                                                                                                                                                                                                                  |
-| Leveransadress   | Adressen som artikeln returnerades till                 | Organisationens adress används som standard. Om ett specifikt lagerställe valts i huvudet, ändras leveransadress till leveransadressen för lagerstället. Du kan ändra den här adressen i den **returorderdetaljer** sida.                                                                                                  |
-| Site, lagerställe     | Platsen eller lagerstället som tar emot den returnerade produkten | Leveransadressen för returordern bestäms utifrån leveransadressen på webbplatsen eller lagerställe.                                                                                                                                                                                                                                 |
-| RMA-nummer         | ID som tilldelas till returordern              | RMA-numret används som en alternativ nyckel under hela detta förlopp returordern. RMA-numret som tilldelas utifrån RMA nummerserien som är inställd på den **parametrar för kundreskontra** sida.                                                                                                                              |
-| Deadline           | Det senaste datum då en artikel kan returneras.               | Standardvärdet beräknas från dagens datum plus giltighetsperioden. Om en RETUR är giltigt endast 90 dagar från det datum då returordern skapas och returordern skapades den 1 maj värdet i fältet är exempelvis **30 juli**. Giltighetsperioden är inställd på den **parametrar för kundreskontra** sida. |
-| Returorsakskod | Kundens orsaken returnerar produkten          | Orsakskoden markeras i listan med användardefinierade orsakskoder. Du kan använda detta fält när som helst.                                                                                                                                                                                                                                    |
+| Kund-ID   | En referens till kundens tabell                       | Du måste ange ett befintligt kundkonto.                                                                                                                                                                                                                                                                                                  |
+| Leveransadress   | Adressen som artikeln returneras till                 | Organisationens adress används som standard. Om ett specifikt lagerställe har valts i rubriken, ändras leveransadress till lagerställets leveransadress. Du kan ändra den här adressen på sidan **Returorderdetaljer**.                                                                                                  |
+| Plats/lagerställe     | Platsen eller lagerstället som tar emot den returnerade produkten | Leveransadressen för returordern bestäms utifrån leveransadressen för platsen eller lagerstället.                                                                                                                                                                                                                                 |
+| RMA-nummer         | Det ID som har tilldelats returorden              | RMA-numret används som en alternativ nyckel under hela returorderprocessen. RMA-numret som tilldelas baseras på den RMA-nummersekvens som ställdes in på sidan **Parametrar för kundreskontra**.                                                                                                                              |
+| Deadline           | Det senaste datumet då en artikel kan returneras.               | Standardvärdet beräknas från dagens datum plus giltighetsperioden. Om en retur är giltigt i endast 90 dagar från det datum då returordern skapas och returordern skapades den 1 maj är värdet i fältet exempelvis **30 juli**. Giltighetsperioden är inställd på sidan **Parametrar för kundreskontra**. |
+| Returorsakskod | Kundorsaken för retur av produkten          | Orsakskoden markeras i listan med användardefinierade orsakskoder. Du kan uppdatera det här fältet när som helst.                                                                                                                                                                                                                                    |
 
-### <a name="create-return-order-lines"></a>Skapa returorderrader
+### <a name="create-return-order-lines"></a>Skapa returorder
 
-När du har slutfört returnerade rubriken Skapa du returrader med någon av följande metoder:
+När du har slutfört returrubriken kan du skapa returrader med någon av följande metoder:
 
--   Ange information om artikeln, kvantitet och annan information för varje returraden manuellt.
--   Skapa en returrad med hjälp av den **söka efter försäljningsorder** funktion. Vi rekommenderar att du använder den här funktionen när du skapar en returorder. Den **söka efter försäljningsorder** funktion upprättar en referens från returraden till fakturerade försäljningsorderraden och hämtar rad t.ex artikelnummer, kvantitet, pris, rabatt och kostnadsvärden från försäljningsraden. Referensen kan garantera att när produkten returneras till företaget, det har värderas till samma styckkostnad som den såldes vid. Referensen kontrollerar att returnerar order inte skapas för en kvantitet som överstiger den kvantitet som har sålts på fakturan.
+-   Ange manuellt artikelinformation, kvantitet och annan information för varje returraden.
+-   Skapa en returrad med hjälp av funktionen **Sök efter försäljningsorder**. Vi rekommenderar att du använder den här funktionen när du skapar en returorder. Funktionen **Söka efter försäljningsorder** upprättar en referens från returraden till den fakturerade försäljningsorderraden och hämtar radinformation som t.ex artikelnummer, kvantitet, pris, rabatt och kostnadsvärden från försäljningsraden. Referensen hjälper till att garantera att produkten när den returneras till företaget har samma styckkostnad som den såldes till. Referensen kontrollerar även att returorder inte skapas för en kvantitet som överstiger den kvantitet som har såldes på fakturan.
 
-**Anmärkning:** returrader som har en referens till en försäljningsorder ska hanteras som korrigeringar eller återföringar av försäljningen. Mer information finns i avsnittet "Post i redovisningen" senare i det här avsnittet.
+**Obs!** Returrader som har en referens till en försäljningsorder hanteras som korrigeringar till eller återföringar av försäljningen. Mer information finns i avsnittet ”Bokför i redovisningen" senare i det här avsnittet.
 
 ### <a name="charges"></a>Debiteringar
 
-Avgifter kan läggas till returordern genom ett eller flera av följande metoder:
+Avgifter kan läggas till returordern genom en eller flera av följande metoder:
 
--   Du kan manuellt lägga till tillägg returorderhuvudet, returorderraden eller båda.
--   Tillägg kan vara läggs automatiskt till returorderhuvudet som en funktion av returorsakskoden.
--   Tillägg kan läggas till returorderraden, baserat på dispositionskoden för raden automatiskt.
+-   Du kan manuellt lägga till avgifter till returorderrubriken, returorderraden eller båda.
+-   Avgifterkan läggas till automatiskt till returorderrubriken som en funktion av returorsakskoden.
+-   Avgifter kan läggas till automatiskt till returorderraden baserat på radens dispositionskod.
 
-Tillägg läggs till automatiskt efter en returorsakskod eller dispositionskod är kopplade till raden. Om orsakskoden ändras senare, den befintliga posten med tillägget tas inte bort och bifoga ett nytt automatiskt, baserat på den nya orsakskoden. När du lägger till tillägg på orderraderna returnera bli avgifter som beräknas som en procentandel av värdet för raden eller order negativt om linjen eller raden ordern är negativ, såvida inte procentandelen är också ett negativt tal. En avgift som har ett negativt värde motsvarar en kredit till kunden.
+Avgifter läggs till automatiskt efter att en returorsakskod eller dispositionskod kopplas till raden. Om orsakskoden ändras senare kommer den befintliga avgiftsposten inte att tas bort, utan en ny avgift läggs automatiskt till, baserat på den nya orsakskoden. När du lägger till avgifter till returorderraderna blir avgifterna som beräknas som en procentandel av raden eller ordervärdet negativt om raden eller radordern är negativ, såvida inte procentandelen också är ett negativt tal. En avgift som har ett negativt värde motsvarar en kredit till kunden.
 
 ### <a name="return-reason-codes"></a>Returorsakskoder
 
-Genom att använda orsakskoder för returer, kan du göra det lättare att analysera returnera mönster. Orsakskoder innehåller information om varför en kund vill returnera artiklar. Vissa organisationer har flera orsakskoder. Dessa företag kan gruppera orsakskoderna till grupper med orsakskoder för att få en bättre översikt och för ackumulerat rapportering.
+Genom att använda orsakskoder för returer, kan du göra det lättare att analysera returmönster. Orsakskoder innehåller information om varför en kund vill returnera artiklar. Vissa organisationer har flera orsakskoder. Dessa organisationer kan gruppera orsakskoderna till orsakskodgrupper för att få en bättre översikt och för ackumulerad rapportering.
 
-### <a name="disposition-codes-and-disposition-actions"></a>Dispositionskoder och hur åtgärder
+### <a name="disposition-codes-and-disposition-actions"></a>Dispositionskoder och dispositionsåtgärder
 
-Ett viktigt steg i processen returordern är att tilldela en dispositionskod till returorderraden under registrering anländer. Dispositionskoden anger följande information:
+Ett viktigt steg i returorderprocessen är att tilldela en dispositionskod till returorderraden som en del av införselregistreringen. Dispositionskoden anger följande information:
 
--   **De finansiella konsekvenserna** – kunden redovisas för de returnerade artiklarna och eventuella avgifter tillföras returorderraden?
--   **Dispositionskoder för den returnerade artikeln** – artikeln kan ska lägga till lager bör det kasseras eller den returneras till kunden?
--   **Överföringen av den returnerade artikeln** – en ersättningsartikel utfärdas till kunden?
+-   **De finansiella konsekvenserna** – ska kunden krediteras de returnerade artiklarna och ska eventuella avgifter läggas till på returorderraden?
+-   **Dispositionskoder för den returnerade artikeln** – ska artikeln läggas tillbaka på lagret, ska den kasseras eller ska den returneras till kunden?
+-   **Överföringen av den returnerade artikeln** – ska en ersättningsartikel utfärdas till kunden?
 
-Förutom avgöra hur returvarorna avyttras kan dispositionskoder medföra avgifter ska kopplas till returraden. De kan också användas för att gruppera returer för statistisk analys. Dispositionskoder definieras som en del av inställningarna för returorder. Men måste varje dispositionskod referera till en av de inbyggda dispositionskoder åtgärderna. Tabellen nedan innehåller inbyggda dispositionskoder och deras funktioner. **Viktigt:** om inte en artikel ska returneras, men redovisas fortfarande kunden, tilldela den **kreditera endast** dispositionskod till returraden.
+Förutom att avgöra hur returvarorna avyttras kan dispositionskoder medföra att avgifter ska tillämpas på returraden. De kan också användas för att gruppera returer för statistisk analys. Dispositionskoder definieras som en del av inställningarna för returorder. Men varje dispositionskod måste referera till en av de inbyggda dispositionsåtgärderna. I följande register finns de inbyggda dispositionskoderna och deras åtgärder. **Viktigt:** om en artikel inte ska returneras, men kunden ska fortfarande krediteras tilldelar du dispositionskoden **Endast kreditering** till returraden.
 
 <table>
 <thead>
 <tr class="header">
 <th>Dispositionskod</th>
-<th>Ekonomiska konsekvenser</th>
+<th>Finansiella konsekvenser</th>
 <th>Konsekvenser för logistik</th>
 </tr>
 </thead>
@@ -123,13 +126,13 @@ Förutom avgöra hur returvarorna avyttras kan dispositionskoder medföra avgift
 <td>Endast kreditering</td>
 <td><ul>
 <li>Kunden krediteras försäljningspriset minus eventuella avgifter eller kostnader.</li>
-<li>Förlust från kassera artikeln bokförs i redovisningen.</li>
+<li>Förlust från kassering av artikeln bokförs i redovisningen.</li>
 </ul></td>
 <td>Artikeln ska inte returneras. Den här dispositionsåtgärden används i följande fall:
 <ul>
-<li>Det finns tillräckliga förtroende mellan parterna.</li>
-<li>Kostnaden för att skicka tillbaka den defekta artiklar är mycket hög.</li>
-<li>Objekten får inte tillbaka till lagret. På grund av andra villkor en fysisk RETUR behövs inte efter uppgraderingen.</li>
+<li>Det finns tillräckligt med förtroende mellan parterna.</li>
+<li>Kostnaden för att returnera den felaktiga artikeln är mycket hög.</li>
+<li>Artiklarna kan inte gå tillbaka till lagret. På grund av andra villkor krävs inte en fysisk retur.</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -138,7 +141,7 @@ Förutom avgöra hur returvarorna avyttras kan dispositionskoder medföra avgift
 <li>Kunden krediteras försäljningspriset minus eventuella avgifter eller kostnader.</li>
 <li>Lagervärdet ökas med kostnaden för den returnerade artikeln.</li>
 </ul></td>
-<td>Artikeln returneras och läggs till lagret.</td>
+<td>Artikeln returneras och läggs tillbaka i lagret.</td>
 </tr>
 <tr class="odd">
 <td>Ersätt och kreditera</td>
@@ -147,165 +150,167 @@ Förutom avgöra hur returvarorna avyttras kan dispositionskoder medföra avgift
 <li>Lagervärdet ökas med kostnaden för den returnerade artikeln.</li>
 <li>En särskild försäljningsorder för en ersättning skapas och hanteras separat.</li>
 </ul></td>
-<td>Artikeln returneras och läggs till lagret.</td>
+<td>Artikeln returneras och läggs tillbaka i lagret.</td>
 </tr>
 <tr class="even">
 <td>Ersätt och kassera</td>
 <td><ul>
 <li>Kunden krediteras försäljningspriset minus eventuella avgifter eller kostnader.</li>
-<li>Förlust från kassera artikeln bokförs i redovisningen.</li>
+<li>Förlust från kassering av artikeln bokförs i redovisningen.</li>
 <li>En särskild försäljningsorder för en ersättning skapas och hanteras separat.</li>
 </ul></td>
-<td>Artikeln har returnerats och kasseras.</td>
+<td>Artikeln returneras och kasseras.</td>
 </tr>
 <tr class="odd">
 <td>Returnera till kund</td>
 <td>Ingen, förutom eventuella avgifter eller kostnader.</td>
-<td>Artikeln returneras men skickas tillbaka till kunden efter slakt. Den här dispositionsåtgärden kan användas om artikeln har skadats avsiktligt eller om garantin har annullerats.</td>
+<td>Artikeln returneras men skickas tillbaka till kunden efter inspektion. Den här dispositionsåtgärden kan användas om artikeln har skadats avsiktligt eller om garantin har annullerats.</td>
 </tr>
 <tr class="even">
 <td>Kassation</td>
 <td><ul>
 <li>Kunden krediteras försäljningspriset minus eventuella avgifter eller kostnader.</li>
-<li>Förlust från kassera artikeln bokförs i redovisningen.</li>
+<li>Förlust från kassering av artikeln bokförs i redovisningen.</li>
 </ul></td>
 <td>Artikeln returneras eller kasseras.</td>
 </tr>
 </tbody>
 </table>
 
-## <a name="arrival-at-the-warehouse-for-inspection"></a>Ankomst till lagerstället för inspektion
-Innan du kan ta emot returnerade artiklar fysiskt i lagret genom att bokföra en följesedel, måste artiklarna genomgå införselregistrering och valfria inspektion. Bilden nedan ger en översikt över införselprocessen. I avsnitten som följer beskriver varje steg som visas i bilden.  
+## <a name="arrival-at-the-warehouse-for-inspection"></a>Införsel till lagret för inspektion
+Innan du fysiskt kan ta emot returnerade artiklar i lagret genom att bokföra en följesedel, måste artiklarna genomgå införselregistrering och en valfri inspektion. Följande bild ger en översikt över införselprocessen. Avsnitten som följer beskriver varje steg som visas i bilden.  
 
-[![Inleveransprocess](./media/salesreturn03.png)](./media/salesreturn03.png)  
+[![Införselprocess](./media/salesreturn03.png)](./media/salesreturn03.png)  
 
-Processen har flera variationer som inte tas upp i det här avsnittet. Här följer några av dessa ändringar:
+Processen har flera variationer som inte tas upp i det här avsnittet. Här följer några exempel på sådana variationer.
 
--   Använd inte den **Införselöversikt** listan om du vill skapa en införseljournal. I stället manuellt skapa införseljournalen. Order ska ha **försäljningsorder** som referens.
--   Om du använder lagerstyrning kan generera lastpallstransporter. Returraden måste ha statusvärdet för **infört** under lastpallstransport.
--   Registrera inleverans av returnerade artikeln direkt från en returorderrad kan med hjälp av den **registrering** funktion.
+-   Använd inte listan **Införselöversikt** om du vill skapa en införseljournal. Skapa i stället införseljournalen manuellt. Returorder kommer att ha **Försäljningsorder** som referens.
+-   Om du använder lagerstyrning genererar du lastpallstransporter. Returraden måste ha statusvärdet **Infört** under lastpallstransport.
+-   Registrera införsel av den returnerade artikeln direkt från en returorderrad med hjälp av funktion **Registrering**.
 
-Returnerar under införsel är integrerade i den allmänna processen för införsel av lagerställe. Inleveransprocess också tillåter karantänorder för returnerade artiklar som måste genomgå en särskild undersökning.
+Under införselprocessen integreras returer i den allmänna processen för lagerställeinförsel. Inleveransprocessen ger också stöd för karantänorder för returnerade artiklar som måste genomgå en särskild kontroll.
 
-### <a name="identify-products-in-the-arrival-overview-list"></a>Identifiera produkter i listan för införsel – översikt
+### <a name="identify-products-in-the-arrival-overview-list"></a>Identifiera produkter i listan Införselöversikt
 
-Den **Införselöversikt** sidan visas planerade inkommande införsel. **Anmärkning:** införsel från returorder behandlas separat från andra typer av transaktioner för införsel. När du har identifierat ett inkommande paket på den **Införselöversikt** sidan (t.ex, med hjälp av följedokumentet RMA) i åtgärdsfönstret genom att klicka på **starta införsel** att skapa och initiera en införseljournal som matchar skiftet.
+Sidan **Införselöversikt** visar alla planerade inkommande införslar. **Obs!** Införsel från returorder måste behandlas separat från andra typer av införseltransaktioner. När du har identifierat ett inkommande paket på sidan **Införselöversikt** (t.ex. med hjälp av det medföljande RMA-dokumentet) klickar du på **Starta införsel** i åtgärdsfönstret för att skapa och initiera en införseljournal som matchar införseln.
 
 ### <a name="edit-the-arrival-journal"></a>Redigera införseljournalen
 
-Genom att ange den **karantän management** att **Ja**, kan du skapa en karantänorder för returraden. Om en rad har skickats i karantän för inspektion, kan du inte ange en dispositionskod. **Obs!** om du anger den **karantän management** att **Ja** i artikelns lagermodellgrupp, den **karantän management** alternativet på den **journalrader** markeras för införseljournalraden och kan inte ändras. Om raden skickas i karantän, måste du ange lämpliga karantänlagerstället. Om införselraden har inte skickats för granskning, lagerställe införsel clerk anger dispositionskoden direkt på införseljournalraden och bokföra införseljournalen. Om samma dispositionskod inte ska tilldelas till hela kvantiteten av returraden eller om hela antalet på raden har inlevererats, måste du dela upp raden. När du delar en införseljournalraden också delas returraden (**SalesLine**) och skapa ett nytt parti-ID. Du kan dela upp raden genom att minska antalet införseljournalraden. När journalen är bokförd skapas en ny returrad med statusen **förväntade** för resten av antalet. Du kan också dela upp raden genom att klicka på **funktion**&gt;**dela**.
+Genom att ange alternativet **Karantänhantering** till **Ja** kan du skapa en karantänorder för returraden. Om en rad har skickats i karantän för inspektion, kan du inte ange en dispositionskod. **Obs!** om du anger alternativet **Karantänhantering** till **Ja** i artikelns lagermodellgrupp kommer alternativet **Karantänhantering** på sidan **Journalrader** att markeras för införseljournalraden och kan inte ändras. Om raden skickas i karantän, måste du ange lämpligt karantänlagerställe. Om införselraden inte har skickats till inspektion måste införselansvarige på lagerstället ange dispositionskoden direkt på införseljournalraden och därefter bokföra införseljournalen. Om samma dispositionskod inte ska tilldelas till hela kvantiteten av returraden eller om hela kvantitetn på raden inte har inlevererats, måste du dela upp raden. När du delar upp en införseljournalrad delar du även upp returraden (**SalesLine**) och skapar ett nytt parti-ID. Du kan dela upp raden genom att minska kvantiteten av införseljournalraden. När journalen är bokförd skapas en ny returrad med statusen **Förväntade** för resterande kvantitet. Du kan också dela upp raden genom att klicka på **Funktioner** &gt; **Dela upp**.
 
 ### <a name="process-the-quarantine-order"></a>Bearbeta karantänordern
 
-Om de returnerade produkterna skickas på inspektion på karantänlagerstället, hanteras några andra processer i en karantänorder. En karantänorder skapas för varje införselraden skickas i karantän. Dispositionskoden anger resultatet av processen inspektion. Du kan dela upp en karantänorder på samma sätt som du kan dela införseljournalen. Om du delar upp karantänordern orsaka en motsvarande delning av returraden. Slutför karantänordern genom att skriva efter dispositionskoden anges den **slut** funktion eller **rapportera som färdig** funktion. Om du väljer **rapportera som färdig**, skapas en ny införsel i det bestämda lagret. Sedan kan du bearbeta denna införsel med hjälp av den **Införselöversikt** sida. Om ankomst som härstammar från en karantänorder, kan du inte ändra dispositionskoden som tilldelas under kontroll. Om du slutför karantänordern med hjälp av den **slut** funktion, partiet registreras automatiskt. Ibland kan en artikel skickas tillbaka från karantänen till skeppning och inleverans avdelning. Exempelvis kanske karantäninspektören inte vet var du ska placera artikeln i lagret. I detta fall måste motsvarande följesedel uppdateras på rätt sätt och hanteringen av dispositionskoden anges på grund av karantänen. Bekräftelsebrev kan skickas till kunden när returraden registreras. Den **returbekräftelse** rapporten liknar returordern. Den **returbekräftelse** rapporten inte är journalförda eller på annat sätt registrerade i systemet och det är inte ett obligatoriskt steg i processen för returordern.
+Om de returnerade produkterna skickas till inspektion på karantänlagerstället, slutförs eventuella ytterligare bearbetning i en karantänorder. En karantänorder skapas för varje införselraden som skickas till karantän. Dispositionskoden anger resultatet av inspektionsprocessen. Du kan dela upp en karantänorder på samma sätt som du kan dela upp införseljournalen. Om du delar upp karantänordern orsakar du en motsvarande delning av returraden. När dispositionskoden har angetts slutför du karantänordern genom att använda antingen funktionen **Slut** eller funktionen **Rapportera som färdig**. Om du väljer **Rapportera som färdig** skapas en ny införsel i det angivna lagerstället. Sedan kan du bearbeta denna införsel med hjälp av sidan **Införselöversikt**. Om införseln härstammar från en karantänorder kan du inte ändra dispositionskoden som tilldelas under inspektion. Om du slutför karantänordern med hjälp av funktionen **Slut** kommer partiet att registreras automatiskt. Ibland kan en artikel skickas tillbaka från karantän till avdelningen för Leverans och inleverans. Exempelvis kanske karantäninspektören inte vet var du ska placera artikeln i lagret. I detta fall måste motsvarande följesedel uppdateras på rätt sätt och hanteras med dispositionskoden som anges på grund av karantänen. Bekräftelsebrev kan skickas till kunden när returraden registreras. Rapporten **Returbekräftelse** liknar returorderdokumentet. Rapporten **Returbekräftelse** är inte journalförd eller på annat sätt registrerad i systemet och det är inte ett obligatoriskt steg i returorderprocessen.
 
 ## <a name="replace-a-product"></a>Ersätta en produkt
-Det finns två metoder för hantering av Produktutbyte:
+Det finns två metoder för hantering av produktersättning:
 
--   **Direkt ersättning** – Ersätt en produkt innan den returnerade produkten tas emot från kunden.
--   **Ersättning av dispositionskoden** – automatiskt skapa en ny orderrad byte.
+-   **Direkt ersättning** – Ersätta en produkt innan den returnerade produkten tas emot av kunden.
+-   **Ersättning av dispositionskoden** – skapa automatiskt en ny ersättningsorderrad.
 
 ### <a name="up-front-replacement"></a>Direkt ersättning
 
-I direkt ersättning ska ersättningsartikeln levereras till kunden innan artikeln returneras. Den här metoden är användbar om artikeln är till exempel en maskindel inte kan tas bort om det finns en reservdel som ersätter eller om du bara vill att kunden ska ha ersättningsprodukten så snart som möjligt. Direkt ersättning är en oberoende försäljningsorder. Informationen i huvudet initieras från kunden och radinformationen initieras från returordern. Du kan bearbeta, redigera och ta bort ersättningsordern oberoende av returordern. När du raderar en ersättningsorder får meddelande du ett som ordern skapades som en ersättningsorder. Följande bild visar hur direkt ersättning.  
+I direkt ersättning ska ersättningsartikeln levereras till kunden innan artikeln returneras. Den här metoden är användbar om artikeln till exempel är en maskindel som inte kan tas bort om det inte finns en reservdel som ersätter den eller om du bara vill att kunden ska ha ersättningsprodukten så snart som möjligt. Direkt ersättning är en oberoende försäljningsorder. Rubrikinformationen initieras från kunden och radinformationen initieras från returordern. Du kan bearbeta, redigera och ta bort ersättningsordern oberoende av returordern. När du raderar en ersättningsorder får du ett meddelande att ordern skapades som en ersättningsorder. Följande bild visar processen för direkt ersättning.  
 
-[![Direkt ersättning process](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn04.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn04.png)  
+[![Process för direkt ersättning](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn04.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn04.png)  
 
-Returordern innehåller en referens till ersättningsorder. Om en order direkt ersättning har skapats för en returorder innan den defekta artiklar returneras kan välja du inte dispositionskoder för ersättning efter defekta artiklar som har returnerats.
+Returordern innehåller en referens till ersättningsordern. Om en direkt ersättningsorder har skapats för en returorder innan den felaktiga artikeln returneras kan inte välja dispositionskoder för ersättning efter att felaktiga artiklar har returnerats.
 
-### <a name="replacement-by-disposition-code"></a>Dispositionskod tillämpning
+### <a name="replacement-by-disposition-code"></a>Ersättning genom dispositionskod
 
-Om du levererar en ersättningsartikel till kunden och använder det **Ersätt och kassera** eller **Ersätt och kreditera** dispositionsåtgärden på returordern, använda som visas i följande bild.  
+Om du levererar en ersättningsartikel till kunden och använder dispositionsåtgärden **Ersätt och kassera** eller **Ersätt och kreditera** på returordern, använder du processen som visas i följande bild.  
 
-[![Byte-processen när en dispositionskod används](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn05.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn05.png)  
+[![Ersättningsprocess när en dispositionskod används](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn05.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn05.png)  
 
-Ersättningsartikeln levereras med hjälp av en oberoende försäljningsorder försäljningsorder för ersättningsartiklar. Den här försäljningsordern skapas när packsedeln för returordern skapas. Orderrubriken använder information från kunden som refereras i returorderhuvudet. Radinformationen hämtas från informationen som registreras på den **ersättningsartikeln** sida. Den **ersättningsartikeln** sida måste fyllas i för rader som har dispositionskoder åtgärder som börjar med ordet "Ersätt". Dock varken kvantiteten identiteten för ersättningsartikeln valideras eller begränsad. Problemet gör det möjligt för fall där kunden vill ha samma objekt, men i en annan konfiguration eller storlek samt fall där kunderna vill ha ett helt annat objekt. Som standard anges en identisk artikel på de **ersättningsartikeln** sida. Men kan du välja ett annat objekt, förutsatt att funktionen har ställts in. **Anmärkning:** du kan redigera och ta bort försäljning ersättningsorder skapas.
+Ersättningsartikeln levereras med hjälp av en oberoende försäljningsorder, ersättningsförsäljningsordern. Den här försäljningsordern skapas när packsedeln för returordern skapas. Orderrubriken använder information från kunden som refereras till i returorderrubriken. Radinformationen hämtas från informationen som registreras på sidan **Ersättningsartikel**. Sidan **Ersättningsartikel** måste fyllas i för rader som har dispositionsåtgärder som börjar med ordet "Ersätt". Emellertid valideras eller begrämsas varken kvantiteten eller ersättningsartikelns identitet. Det här beteendet gör det möjligt för ärenden där kunden vill ha samma artikel, men i en annan konfiguration eller storlek samt ärenden där kunderna vill ha en helt annan artikel. Som standard anges en identisk artikel på sidan **Ersättningsartikel**. Men du kan välja en annan artikel förutsatt att funktionen har ställts in. **Obs!** Du kan redigera och ta bort ersättningsförsäljningsordern när den har skapats.
 
 ## <a name="generate-a-packing-slip"></a>Skapa en följesedel
-Innan returnerade artiklar kan föras in i lagret, måste du uppdatera följesedeln för den ordning som objekten tillhör. Liksom fakturauppdateringsprocessen är en uppdatering för den slutliga transaktionen, följesedeln den fysiska uppdateringen av lagerposten är. Med andra ord genomför proceduren ändras lagret. Steg som har kopplats till dispositionsåtgärden vid returer implementeras under följesedeln uppdateringen av följesedeln. När du genererar följesedeln inträffar följande händelser:
+Innan returnerade artiklar kan föras in i lagret, måste du uppdatera följesedeln för den order som artiklarna tillhör. Liksom fakturauppdateringsprocessen är uppdateringen av den ekonomiska transaktionen, uppdateringen av följesedeln den fysiska uppdateringen av lagerposten. Med andra ord genomför den här processen ändringar i lagret. Vid returer implementeras stegen som tilldelas dispositionsåtgärden under uppdateringen av följesedeln. När du genererar följesedeln inträffar följande händelser:
 
--   Standardprocessen för att utföra fysiska inleverans i distributionslagret. Redovisningsbokföringar genereras om lagret modell grupp (**Bokför fysiskt lager**) och parametrar för Kundreskontra (**Bokför följesedel i redovisningen**) anges korrekt.
--   Kasserade artiklar som har märkts med dispositionsåtgärden som innehåller ordet "kassation" och lagerbrist bokförs i redovisningen.
--   Artiklar som har märkts med den **returnera till kund** dispositionsåtgärden tas emot och levereras till kunden. Dessa artiklar påverkar inte net lager.
--   En ny försäljningsorder skapas. Denna försäljningsorder baseras på informationen i den **ersättningsartikeln** sida.
+-   På lagerstället används standardprocessen för att utföra en fysisk inleverans. Redovisningsbokföring genereras om lagermodellgruppen (**Bokför fysiskt lager**) och parametrar för kundreskontra (**Bokför följesedel i redovisningen**) anges korrekt.
+-   Artiklar som har markerats med en dispositionsåtgärd som innehåller ordet "kassation" och lagerbrist bokförs i redovisningen.
+-   Artiklar som har markerats med dispositionsåtgärden **Returnera till kund** inlevereras och levereras till kunden. Dessa artiklar har ingen nettoeffekt på lagret.
+-   En ersättningsförsäljningsorder skapas. Denna försäljningsorder baseras på informationen på sidan **Ersättningsartikel**.
 
-Du kan generera följesedeln bara för rader som har returnerade statusen **registrerade**, och endast för hela kvantiteten på returraden. Om flera rader på en returorder har den **registrerade** kan du generera följesedeln för en delmängd av rader genom att radera raderna från den **Bokför följesedel** sida. Partiell returnerar definieras i termer av returorderrader, inte när det gäller leveranser för returordern. Om du tar emot den fullständiga kvantiteten som anges på en returorderrad men du får inget från de andra raderna på returordern anses kan därför inte en delleverans leveransen. Om en returorderrad kräver att 10 enheter av en artikel ska returneras, men du får bara fyra enheter, dock leveransen en delleverans. Om du inte förväntade returnerade artiklar som har anlänt, kan du lägga leveransen åt sidan och vänta in resten av den returnerade kvantiteten. Alternativt kan du registrera och bokföra delkvantiteten. Du kan associera referensnumret från kundens leveransdokumenten med orderraderna som del av processen för bokföring av följesedlar. Denna koppling är valfria och används bara som referens. Det skapar inte några transaktionsuppdateringar. Generellt sett kan du hoppa över följesedelns följesedeln processen och gå direkt till fakturering. I så fall utförs på sätt som du skulle ha utfört under generering av följesedeln vid fakturering.
+Du kan endast generera följesedeln för rader som har returstatusen **Registrerade** och endast för hela kvantiteten på returraden. Om flera rader på returordern har statusen **Registrerad** kan du generera följesedeln för en delmängd av rader genom att ta bort de andra raderna från sidan **Bokför följesedel**. Delvisa returer definieras i termer av returorderrader, inte i termer av returorderleveranser. Om du därför inlevererar hela kvantiteten som anges på en returorderrad men du får inte får något inlevererat från de andra raderna på returordern anses leveransen inte vara en delleverans. Om en returorderrad kräver att 10 enheter av en artikel ska returneras, men du du bara får fyra inlevererade enheter är leveransen en delleverans. Om inte alla förväntade returnerade artiklar har införts, kan du lägga leveransen åt sidan och vänta in resten av den returnerade kvantiteten. Alternativt kan du registrera och bokföra delkvantiteten. Som en del av processen för att bokföra följesedlar kan du koppla följesedelns referensnummer från kundens leveransdokument till orderraderna. Denna koppling är valfri och är endast för referens. Den skapar inga transaktionsuppdateringar. Generellt sett kan du hoppa över följesedelprocessen och gå direkt till fakturering. I så fall slutförs stegen som du skulle ha utfört under genereringen av följesedeln vid fakturering.
 
 ## <a name="generate-an-invoice"></a>Generera en faktura
-Även om den **returorder** sidan som innehåller den information och de åtgärder som krävs för att kunna hantera de logistiska viktigt returordern, måste du använda de **försäljningsorder** Slutför faktureringsprocessen. Organisationen kan sedan fakturera returorder och försäljningsorder samtidigt och samma person som kan genomföra faktureringsprocessen efter behov. Så här visar du returordern från den **försäljningsorder** klickar du på länken för försäljningsordernummer att öppna den kopplade försäljningsordern. Returordern kan också finns på den **alla försäljningsorder** sida. Returnera order är order som har en ordertyp för **returneras order**.
+Även om sidan **Returorder** innehåller den information och de åtgärder som krävs för att kunna hantera returorderns speciella logistiska spekter måste du använda sidab **Försäljningsorder** för att slutföra faktureringsprocessen. Organisationen kan sedan fakturera returorder och försäljningsorder samtidigt och samma person som kan genomföra faktureringsprocessen efter behov. Om du vill visa returordern från sidan **Försäljningsorder** klickar du på länken för försäljningsordernumret för att öppna den kopplade försäljningsordern. Returordern finns också på sidan **Alla försäljningsorder**. Returorder är försäljningsorder som har ordertypen **Returnerad order**.
 
 ### <a name="credit-correction"></a>Kreditkorrigering
 
-Kontrollera att alla tillägg är korrekta med faktureringsprocessen. Så att redovisningsbokföringar blir korrigeringar (Storno) bör du använda de **kreditera korrigering** alternativet på den **andra** på fliken i den **bokföring av faktura** när du bokför fakturan/kreditfakturan. **Obs!** som standard den **korrigering kreditera** alternativet aktiveras om den **kreditfaktura som korrigering** alternativet på den **parametrar för kundreskontra** sida har aktiverats. Vi rekommenderar dock att du inte bokföra returnerar med Storno.
+Kontrollera att alla övriga avgifter är korrekta som en del av faktureringsprocessen. För att redovisningsbokföringar ska bli korrigeringar (Storno) bör du använda alternativet **Kreditera korrigering** på fliken **Övriga** på sidan **Bokföring av faktura** när du bokför fakturan/kreditfakturan. **Obs!** Som standard aktiveras alternativet **Kreditkorrigering** om alternativet **Kreditfaktura som korrigering** på sidan **Parametrar för kundreskontra** har aktiverats. Vi rekommenderar dock att du inte bokför returer med Storno.
 
 ## <a name="create-intercompany-return-orders"></a>Skapa koncerninterna returorder
-Returorder kan utföras mellan två företag inom din organisation. Följande scenarier stöds:
+Returorder kan slutföras mellan två företag inom din organisation. Följande scenarier stöds:
 
--   Enkel koncerninterna returer mellan två företag som deltar i en koncernintern relation
--   En koncernintern kedja som upprättas när en kund returorder skapas i det säljande företaget
--   En koncernintern kedja som upprättas när en leverantör returorder skapas i det inköpande företaget
--   Direktleverans försändelsen returnerar mellan två företag som deltar i en koncernintern relation och en extern kund
+-   Enkla koncerninterna returer mellan två företag som deltar i en koncernintern relation
+-   En koncernintern kedja som upprättas när en kundreturorder skapas i det säljande företaget
+-   En koncernintern kedja som upprättas när en leverantörsreturorder skapas i det inköpande företaget
+-   Direktleverans returnerar mellan en extern kund och två företag som deltar i en koncernintern relation
 
 ### <a name="setup"></a>Inställningar
 
-Inställningen för minsta nedan som krävs för två företag att delta i en koncernintern relation och dra nytta av koncernintern handel.  
+Följande bild visar de basinställningar som krävs för två företag att delta i en koncernintern relation och dra nytta av koncernintern handel.  
 
-[![Minimum setup](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn06.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn06.png)  
+[![Basinställningar](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn06.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn06.png)  
 
-I följande scenario CompBuy är det inköpande företaget och CompSell är det säljande företaget. Vanligtvis levererar det säljande företaget varor till det inköpande företaget eller, vid direktleverans leveransen direkt till slutkunden. I CompBuy leverantörens Koncerninterna\_CompSell är definierad som en koncernintern slutpunkt som är associerade med CompSell. Samtidigt i CompSell kundens Koncerninterna\_CompBuy är definierad som en koncernintern slutpunkt som är associerade med CompBuy. Lämpliga åtgärder principinformationen och värdemappningarna måste definieras i båda företagen. I scenariot leverans en direktleverans skapas en koncernintern returorder som också är en koncernintern försäljningsorder skapas, i det säljande företaget. RMA-numret för den koncerninterna returordern kan plockas från nummerserien RMA i CompSell men den kan kopieras från RMA-numret som har tilldelats till den ursprungliga returordern i CompBuy. RMA nummer inställningarna på de **inköpsrekvisition** i CompBuy åtgärdspolicyn avgöra dessa åtgärder. Om synkroniseras RMA-numret, bör du planera minska risken för en konflikt nummer om de två företagen använder samma nummerserie.
+I följande scenario är CompBuy det inköpande företaget och CompSell är det säljande företaget. Vanligtvis levererar det säljande företaget varor till det inköpande företaget eller, vid direktleveransscenarier direkt till slutkunden. I CompBuy definieras leverantören IC\_CompSell som en koncernintern slutpunkt som är associerad med företaget CompSell. Samtidigt definieras kunden i CompSell, IC\_CompSell som en koncernintern slutpunkt som är associerad med företaget CompBuy. Lämplig åtgärdspolicyinformation och värdemappningar måste definieras i båda företagen. I scenariot direktleverans skapas en koncernintern returorder som också är en koncernintern försäljningsorder i det säljande företaget. RMA-numret för den koncerninterna returordern kan plockas från RMA-nummerserien i CompSell eller så kan den kopieras från RMA-numret som har tilldelats till den ursprungliga returordern i CompBuy. RMA-nummerinställningarna i åtgärdspolicyn **Inköpsrekvisition** avgör dessa åtgärder. Om RMA-numret synkroniseras bör du planera att minska risken för en konflikt av nummersammanstötningar om de två företagen använder samma nummerserie.
 
-### <a name="simple-intercompany-returns"></a>Enkel koncerninterna returer
+### <a name="simple-intercompany-returns"></a>Enkla koncerninterna returer
 
 Scenariot innebär två företag i samma organisation, vilket visas i följande illustration.  
 
-[![Enkel koncernintern RETUR](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn07.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn07.png)  
+[![Enkel koncernintern retur](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn07.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn07.png)  
 
-Orderkedjan kan upprättas när en leverantör returorder skapas i det inköpande företaget eller en kund returorder skapas i det säljande företaget. Dynamics 365 för åtgärder som säkerställer att sidhuvud och radinformation för leverantören returnerar order motsvarar inställningarna på kunden returorder skapas motsvarande order i det andra företaget. Returordern har upprättats kan inkludera eller utesluta referensen (**söka efter försäljningsorder**) till en befintlig kundfaktura. Följesedlar och fakturor två order kan behandlas separat. Du behöver inte skapa en följesedel för returordern leverantör innan du genererar för returordern kundens följesedeln.
+Orderkedjan kan upprättas när en leverantörs returorder skapas i det inköpande företaget eller en kundreturorder skapas i det säljande företaget. Dynamics 365 for Operations skapar motsvarande order i det andra företaget och ser till att rubrik- och radinformationen på leverantörsreturordern reflekterar inställningarna för kundens returorder. Returordern som har upprättats kan inkludera eller utesluta referensen (**Sök efter försäljningsorder**) till en befintlig kundfaktura. Följesedlar och fakturor för de två order kan behandlas separat. Du behöver inte skapa en följesedel för returordern för leverantören innan du genererar följesedeln för returordern.
 
-### <a name="direct-delivery-shipment-returns-among-three-parties"></a>Direktleverans försändelsen returnerar mellan tre parter
+### <a name="direct-delivery-shipment-returns-among-three-parties"></a>Direktleverans returnerar mellan tre parter
 
-Det här scenariot kan fastställas om föregående försäljning av den **direktleverans** typ har slutförts och om en faktura mot kunden finns i företaget som samverkar med kunden. I följande bild, har företaget CompBuy tidigare sålts och fakturerats produkter till Pågående externt. Produkterna har levererats direkt från företagets CompSell med en koncernintern orderkedja.  
+Det här scenariot kan fastställas om föregående försäljning av typen **Direktleverans** har slutförts och om en faktura mot kunden finns i företaget som samverkar med kunden. I följande bild har företaget CompBuy tidigare sålt och fakturerat produkter till kunden externt. Produkterna har levererats direkt från företagets CompSell via en koncernintern orderkedja.  
 
-[![Direktleverans försändelsen returnerar mellan tre parter](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn08.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn08.png)  
+[![Direktleverans returnerar mellan tre parter](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn08.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn08.png)  
 
-Om Extern kunden vill returnera produkterna, skapas en returorder (RMA02) för kunden i företagets CompBuy. Om du vill skapa den koncerninterna kedjan returordern markeras för direktleverans. När du använder den **söka efter försäljningsorder** funktion att plocka kundfakturan ska returneras upprättas en koncernintern orderkedja består av följande dokument:
+Om kunden Extern vill returnera produkterna, skapas en returorder (RMA02) för kunden i företaget CompBuy. Om du vill skapa den koncerninterna kedjan måste returordern markeras för direktleverans. När du använder funktionen **Sök efter försäljningsorder** för att plocka kundfakturan till retur kommer en koncernintern orderkedja som består av följande dokument att upprättas:
 
--   **Ursprunglig returorder:** RMA02 (CompBuy företag)
--   **Inköpsorder:** PO02 (CompBuy företag)
--   **Koncernintern returorder:** RMA\_00032 (företagets CompSell)
+-   **Ursprunglig returorder:** RMA02 (företaget CompBuy)
+-   **Inköpsorder:** PO02 (företag CompBuy)
+-   **Koncernintern returorder:** RMA\_00032 (företaget CompSell)
 
-När du har skapat den koncerninterna kedjan direktleverans alla fysisk hantering och bearbetning av inge måste infalla i sammanhanget för den koncerninterna returordern RMA\_00032 i CompSell för företaget. Produkter som inte kan tas emot i företagets CompBuy. När en dispositionskod har skickats till koncerninterna returorder kan synkroniseras med den ursprungliga returordern att rätt faktureringen av den ursprungliga ordern.
+När du har skapat den koncerninterna kedjan för direktleverans måste all fysisk hantering och bearbetning a returer infalla i sammanhanget för den koncerninterna returordern RMA\_00032 i företaget CompSell. Produkterna kan inte tas emot i företaget CompBuy. När en dispositionskod har tilldelats den koncerninterna returordern kan den synkroniseras med den ursprungliga returordern för att tillåta rätt fakturering av den ursprungliga ordern.
 
 ## <a name="post-to-the-ledger"></a>Bokför i redovisningen
 Redovisningsbokföringar som genereras när returordern faktureras påverkas av några viktiga inställningar och parametrar:
 
--   **Retursjälvkostnad** – för lagret modeller bortsett från **standardkostnad**, **Retursjälvkostnad** parametern avgör kostnaden för artikeln när det har godtagits tillbaka till lagret eller kasseras. Om du vill beräkna en korrekt värdering av lagret är det viktigt att du anger den **Retursjälvkostnad** parameter på rätt sätt. Om du använder den **söka efter försäljningsorder** du skapar en returorderrad som har en referens till en kundfaktura den **Retursjälvkostnad** värde är lika med självkostnaden för artikeln som säljs. Annars självkostnad värdet hämtas från inställningarna för artikeln eller anges manuellt.
--   **Kreditera korrigering Storno/** – den **korrigering kreditera** parameter på den **bokföring av faktura** sidan avgör om transaktionerna ska vara registrerade som positiva transaktioner (DR/k) eller korrigera, negativa poster.
+-   **Retursjälvkostnad** – för andra lagermodeller än **Standardkostnad**, avgör parametern **Retursjälvkostnad** kostnaden för artikeln när den har godtagits tillbaka till lagret eller kasserats. Om du vill beräkna en korrekt värdering av lagret är det viktigt att du anger parametern **Retursjälvkostnad** på rätt sätt. Om du använder funktionen **Sök efter försäljningsorder** för att skapa en returorderrad som har en referens till en kundfaktura, är värdet **Retursjälvkostnad** lika med självkostnaden för artikeln som säljs. Annars hämtas värdet självkostnad från artikelinställningen eller anges manuellt.
+-   **Kreditkorrigering/Storno** – Parametern **Kreditkorrigering** på sidan **Bokföring av faktura** avgör om transaktionerna ska vara registrerade som positiva poster (DR/k) eller som korrigerande negativa poster.
 
-I exemplen nedan retursjälvkostnaden representeras av **fakturarabatt självkostnad**.
+I exemplen nedan representeras retursjälvkostnaden av **Lagerkostnadspris**.
 
-### <a name="example-1-the-return-order-doesnt-reference-a-customer-invoice"></a>Exempel 1: Returordern inte referera en kundfaktura
+### <a name="example-1-the-return-order-doesnt-reference-a-customer-invoice"></a>Exempel 1: Returordern refererar inte till en kundfaktura
 
-En kundfaktura referera inte till returordern. Den returnerade artikeln krediteras. Den **korrigering kreditera** parameter inte är markerad när returorder, faktura eller kreditfaktura genereras.  
+Returordern refererar inte till en kundfaktura. Den returnerade artikeln krediteras. Parametern **Kreditkorrigering** markeras inte när returorderfakturan eller kreditfakturan genereras.  
 
-[![Returorder refererar inte till ett kund-invoic](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn09.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn09.png)  
+[![Returordern refererar inte till en kundfaktura](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn09.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn09.png)  
 
-**Anmärkning:** master artikelpriset används som standardvärde för den **Retursjälvkostnad** parameter. Standard pris skiljer sig från självkostnaden vid tidpunkten för lagerutleveransen. Därför är även en förlust 3 har uppkommit. Dessutom innehåller inte returordern rabatten som gavs till kunden på försäljningsordern. Därför uppstår en alltför stor kredit.
+**Obs!** Artikelns huvudpris används som standardvärde för parametern **Retursjälvkostnad**. Standardpriset skiljer sig från självkostnaden vid tidpunkten för lagerutleveransen. Därför är implikationen att en förlust på 3 har uppkommit. Dessutom innehåller inte returordern rabatten som gavs till kunden på försäljningsordern. Därför uppstår en alltför stor kredit.
 
-### <a name="example-2-credit-correction-is-selected-for-the-return-order"></a>Exempel 2: Kreditkorrigering markeras för returorder
+### <a name="example-2-credit-correction-is-selected-for-the-return-order"></a>Exempel 2: Kreditkorrigering markeras för returordern
 
-Exempel 2 är likadant som exempel 1, men **korrigering kreditera** parametern väljs när returorder fakturan genereras.  
+Exempel 2 är samma som exempel 1, men parametern **Kreditkorrigering** parametern väljs när returorderfakturan genereras.  
 
-[![Där kreditkorrigering väljs returorder](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn10.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn10.png)  
+[![Returordern där kreditkorrigering markeras ](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn10.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn10.png)  
 
-**Anmärkning:** ut redovisningsbokföringarna anges som negativ korrigeringar.
+**Obs!** Redovisningsbokföringar anges som negativa korrigeringar.
 
 ### <a name="example-3-the-return-order-line-is-created-by-using-the-find-sales-order-function"></a>Exempel 3: Returorderraden skapas med hjälp av funktionen Sök efter försäljningsorder
 
-I det här exemplet returorderraden skapas med hjälp av den **söka efter försäljningsorder** funktion. Den **korrigering kreditera** parameter inte är markerad när fakturan skapas.  
+I det här exemplet skapas returorderraden med hjälp av funktionen **Sök efter försäljningsorder**. Parametern **Kreditkorrigering** inte är markerad när fakturan skapas.  
 
-[![Returorderrad skapas med hjälp av Sök efter försäljningsorder](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn11.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn11.png)  
+[![Returorderraden skapas med hjälp av funktionen Sök efter försäljningsorder ](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn11.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn11.png)  
 
-**Anmärkning:****rabatt** och **Retursjälvkostnad** är korrekt inställda. Därför uppstår en exakt återföring av den valda kundfakturan.
+**Obs!** **Rabatt** och **Retursjälvkostnad** är korrekt inställda. Därför uppstår en exakt återföring av kundfakturan.
+
+
 
 

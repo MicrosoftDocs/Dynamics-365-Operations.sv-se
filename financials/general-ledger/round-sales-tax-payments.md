@@ -28,9 +28,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="sales-tax-payments-and-rounding-rules"></a>Momsbetalningar och avrundningregler
 
+[!include[banner](../includes/banner.md)]
+
+
 Den här artikeln beskriver hur avrundningsregelinställningar på skattemyndigheter fungerar och avrundning av momssaldot under jobbet Kvitta och bokför moms.
 
-Moms måste regelbundet rapporteras och betalas till skattemyndigheten. Detta gör du genom att köra inlösta och efterbearbetning moms på moms sidan. Moms för en period som kvittas mot momskonton och saldot moms ska bokföras på avräkningskontot för moms. Momssaldot som bokförs på momskvittningskontot, kan avrundas enligt som krävs av skattemyndigheten genom att ställa in en avrundningsregel på sidan Moms. 
+Moms måste regelbundet rapporteras och betalas till skattemyndigheten. Detta gör du genom att köra kvittnings- och bokföringsmomsprocess på sidan Moms. Moms för en period kommer att kvittas mot momskontona och momssaldot kommer att bokföras på momskvittningskontot. Momssaldot som bokförs på momskvittningskontot, kan avrundas enligt som krävs av skattemyndigheten genom att ställa in en avrundningsregel på sidan Moms. 
 
 Avrundningsdifferensen bokförs på Momsavrundningkontot som valts i fältet Konton för automatisk transaktion i huvudboken.
 
@@ -42,10 +45,10 @@ Det totala momsen för en period visar ett kreditsaldo på -98 765,43. Den jurid
 
 Den juridiska personen vill använda en avrundningsmetod som rundar av saldot till närmaste hela 1,00. Användaren som ansvarar för momsredovisningen måste då göra följande steg.
 
-1.  Klicka på moms &gt;indirekta skatter &gt;moms &gt;moms
+1.  Klicka på Skatt &gt; Indirekt moms &gt; Moms &gt; Skattemyndigheter
 2.  I snabbfliken Standard, välj Normal i fältet Avrundningssätt.
 3.  I fältet Avrundning anger du 1,00.
-4.  När det är dags att betala moms till skattemyndigheten öppnar du Kvitta och bokför moms. (Klicka på moms &gt;deklarationer &gt;moms &gt;kvitta och bokföra moms.)
+4.  När det är dags att betala moms till skattemyndigheten öppnar du Kvitta och bokför moms. (Klicka på Skatt &gt; Deklarationer &gt; Moms &gt; Kvitta och bokför moms.)
 5.  På momskvittningkontot avrundas skatteskuldbeloppet på 98 765,43 till 98 765.
 
 Följande tabell visar hur ett belopp på 98 765,43 avrundas med hjälp av varje avrundningsmetod som är tillgänglig i fältet Avrundningsätt på sidan Skattemyndigheten.
@@ -61,6 +64,8 @@ Följande tabell visar hur ett belopp på 98 765,43 avrundas med hjälp av varje
 > [!NOTE]                                                                                  
 > Om du väljer Egen fördel är alltid avrundningen till fördelen för den juridiska personen. 
 
-Mer information finns i [översikt moms](indirect-taxes-overview.md). 
+Mer information finns i [Momsöversikt](indirect-taxes-overview.md). 
+
+
 
 

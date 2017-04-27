@@ -1,6 +1,6 @@
 ---
 title: Analysera butikernas resultat
-description: "I den här artikeln förklaras hur du kan använda i minnet och realtid analys för att komma åt, utforska och få insikt om butiken prestanda, baserat på dina Microsoft Dynamics 365 för operationer."
+description: "Den här artikeln beskriver hur du kan använda det inbyggda minnet och realtidanalys för att komma åt, utforska och få insikt om butikernas resultat baserat på dina Microsoft Dynamics 365 for Operations-data."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 57811
 ms.assetid: 495a66f0-491a-4688-842d-51c33c37676f
 ms.search.region: global
@@ -27,13 +27,16 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="analyze-store-performance"></a>Analysera butikernas resultat
 
-I den här artikeln förklaras hur du kan använda i minnet och realtid analys för att komma åt, utforska och få insikt om butiken prestanda, baserat på dina Microsoft Dynamics 365 för operationer. 
+[!include[banner](includes/banner.md)]
 
-Som en del av Dynamics 365 för operationer, användarna kan undersöka butiken prestanda i realtid över olika nivåer för organisationshierarkin under en vald period genom att öppna out-of-box **kanal sammanfattning** rapport från någon av följande platser:
 
--   **Retail store management** Dynamics 365 arbetsytan för operationer &gt;**butik och handel**&gt;**kanaler**&gt;**Retail store management**&gt;**rapporter**&gt;**kanaler sammanfattningsrapport**
--   **Retail store ekonomi** Dynamics 365 arbetsytan för operationer &gt;**butik och handel**&gt;**kanaler**&gt;**Retail store ekonomi**&gt;**rapporter**&gt;**kanaler sammanfattningsrapport**
--   **Förfrågningar och rapporter** Dynamics 365 för avsnittet &gt;**butik och handel**&gt;**förfrågningar och rapporter**&gt;**försäljningsrapporter**&gt;**kanaler sammanfattningsrapport**
+Den här artikeln beskriver hur du kan använda det inbyggda minnet och realtidanalys för att komma åt, utforska och få insikt om butikernas resultat baserat på dina Microsoft Dynamics 365 for Operations-data. 
+
+Som en del av Microsoft Dynamics 365 for Operations, användare kan studera store prestanda i realtid på olika nivåer i organisationshierarkin under en vald period genom att öppna- **kanal sammanfattande** rapport från någon av följande platser:
+
+-   **Butikshantering** arbetsyta Dynamics 365 for Operations &gt; **Butik och handel** &gt; **Kanaler** &gt; **Butikshantering** &gt; **Rapporter** &gt; **Kanalsammanfattningsrapport**
+-   **Butiksekonomi** arbetsyta Dynamics 365 for Operations &gt; **Butik och handel** &gt; **Kanaler** &gt; **Butiksekonomi** &gt; **Rapporter** &gt; **Kanalsammanfattningsrapport**
+-   **Förfrågan och rapporter** avsnitt Dynamics 365 for Operations &gt; **Butik och handel** &gt; **Förfrågningar och rapporter** &gt; **Försäljningsrapporter** &gt; **Kanalsammanfattningsrapport**
 
 Denna rapport ger en ögonblicksbild av följande sammanfattningar som en del av affären prestanda:
 
@@ -42,4 +45,6 @@ Denna rapport ger en ögonblicksbild av följande sammanfattningar som en del av
 -   Momssammanfattning
 -   Priset åsidosätter sammanfattning
 -   Rabatter sammanfattning
+
+
 

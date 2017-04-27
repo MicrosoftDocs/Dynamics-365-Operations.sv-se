@@ -36,9 +36,9 @@ Inte alla sidor har fältbeskrivningar. Vi tillhandahåller enbart beskrivningar
 Om du har tillgång till Microsoft Dynamics 365 for Operations-utvecklingsmiljön kan du lägga till egna fältbeskrivningar och anpassa befintliga beskrivningar. Du kan till exempel lägga till företagsspecifik information i en fältbeskrivning. Mer information hittar du i [Hjälp för Anpassa fält](/dynamics365/operations/dev-itpro/user-interface/customize-field-help).
 
 ## <a name="see-field-descriptions-in-the-user-interface"></a>Se fältbeskrivningarna i användargränssnittet.
-Du kan visa fältbeskrivningar genom att hovra över ett fält. Om det inte finns någon beskrivning ser du fältnamnet när du för muspekaren över fältet. (Anteckning: I version 7.0.0 fältbeskrivningarna kan visas bara på den **fältet Beskrivning** sida.) I följande illustration visas i beskrivningen som visas när du för muspekaren över den **Lås artiklar under inventeringen** fält. 
+Du kan visa fältbeskrivningar genom att hovra över ett fält. Om det inte finns någon beskrivning ser du fältnamnet när du för muspekaren över fältet. (Obs! I version 7.0.0 kan fältbeskrivningarna endast visas på sidan **Fältbeskrivningar**. Följande illustration visar den fältbeskrivning som visas när du för muspekaren över fältet **Lås artiklar under inventeringen**. 
 
-[![Exempel på en Fältbeskrivning](./media/field-description.png)](./media/field-description.png)
+[![Exempel på en fältbeskrivning](./media/field-description.png)](./media/field-description.png)
 
 ## <a name="use-the-field-descriptions-page-to-view-and-export-field-help"></a>Använd sidan Fältbeskrivningar för att visa och exportera hjälp för fält.
 På sidan **Fältbeskrivningar** kan du visa och exportera fältbeskrivningar. Du kan se de beskrivningar som är tillgängliga en sida i taget.
@@ -73,7 +73,7 @@ Det finns flera sätt att söka efter en sida i fältet **Välj en sida**. I må
     -   Om det finns fler än en exakt matchning visas inga beskrivningar. Du måste öppna listrutan och välja sida.
     -   Om namnet du angav är en del av namnet på en annan sida ser du beskrivningarna av sidan. Om du öppnar listrutan kan du se ytterligare sidor som innehåller det aktuella namnet.
 
-Inga beskrivningar visas till exempel när du skriver **inventering** i den *** Markera sidan *** fält. Om du öppnar listrutan och ser du att det finns två sidor med namnet **Inventering** och flera sidor som innehåller ordet "Inventering". Om du väljer sidan med AOT-namnet **InventJournalCount** visas fältbeskrivningarna för den sidan. Om du öppnar listrutan igen ser du att listan nu innehåller alla sidor som har "InventJournalCount" som en del i AOT-sidans namn.
+Inga beskrivningar visas om du exempelvis skriver **Inventering** i fältet ****Välj en sida****. Om du öppnar listrutan och ser du att det finns två sidor med namnet **Inventering** och flera sidor som innehåller ordet "Inventering". Om du väljer sidan med AOT-namnet **InventJournalCount** visas fältbeskrivningarna för den sidan. Om du öppnar listrutan igen ser du att listan nu innehåller alla sidor som har "InventJournalCount" som en del i AOT-sidans namn.
 
 ## <a name="troubleshooting"></a>Felsökning
 Det här avsnittet innehåller information som hjälper dig att felsöka problem som kan uppstå när du använder fältbeskrivningar.

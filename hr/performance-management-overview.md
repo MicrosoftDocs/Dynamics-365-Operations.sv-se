@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="performance-management-overview"></a>Översikt över prestationshantering
 
+[!include[banner](includes/banner.md)]
+
+
 Genom prestationshanteringsprocessen kan medarbetare dokumentera och diskutera sin prestation med chefen. Chefer kan i sin tur ge återkoppling och vägledning till medarbetarna.  
 
 Som så visas i följande diagram finns det tre sidor som hjälper dig att hantera processen:
@@ -34,12 +37,12 @@ Som så visas i följande diagram finns det tre sidor som hjälper dig att hante
 -   Mål
 -   Prestandagranskning
 
-I följande diagram visas hur huvudkomponenterna i prestationshantering är relaterade till varandra. [![Processöversikt prestanda](./media/hcm_performanceoverviewdiagram-300x189.png)](./media/hcm_performanceoverviewdiagram.png)    
+I följande diagram visas hur huvudkomponenterna i prestationshantering är relaterade till varandra. [![Översikt över prestationsprocessen](./media/hcm_performanceoverviewdiagram-300x189.png)](./media/hcm_performanceoverviewdiagram.png)    
 
 ## <a name="performance-journal"></a>Prestationsjournal
 Innan du slutför granskningen samlar du som medarbetare ofta in information om aktiviteter eller händelser som bidragit till framgångarna under granskningsperioden. I prestationsjournalen dokumenterar du dessa aktiviteter och händelser. Du kan dessutom skapa framtida aktiviteter som du måste utföra för att kunna uppnå ett mål, uppfylla kraven i en utvecklingsplan eller uppfylla ett prestationsåtagande. Prestationsjournaler behövs inte för att skapa mål eller prestationsgranskningar. 
 
-Det finns två versioner av prestationsjournalen: medarbetarversion som är tillgänglig via arbetsytan **Självbetjäning för medarbetare** och chefsversionen som är tillgänglig via arbetsytan **Självbetjäning för chef**. Medarbetare kan skapa journaler åt sig själva och välja att dela dem med sin chef. Chefer kan skapa journaler åt sitt team och välja att dela dem med sina medarbetare. 
+Det finns två versioner av prestationsjournalen: medarbetarversion som är tillgänglig via arbetsytan **Självbetjäning för medarbetare** (**ESS**) och chefsversionen som är tillgänglig via arbetsytan **Självbetjäning för chef** (**MSS**). Medarbetare kan skapa journaler åt sig själva och välja att dela dem med sin chef. Chefer kan skapa journaler åt sitt team och välja att dela dem med sina medarbetare. 
 
 När prestationsjournalen öppnas från arbetsytan **Självbetjäning för medarbetare** kan du på sidan **prestationsjournal** samla in följande information:
 
@@ -132,7 +135,7 @@ Med arbetsflödet Arbetargranskning kan du styra godkännandet av en granskning.
 Arbetsflödet Arbetargranskning omfattar två element:
 
 1.  Godkänn granskning. Lägg till det här elementet om du vill kontrollera statusändringen från **Pågår** till **Klar för granskning**. Ändra tilldelningen om du vill använda ledarskapshierarkin där chefsnivån för Employee.line = 1.
-2.  Slutlig granskning. Lägg till det här elementet om du vill kontrollera status ändras från **klar för granskning** till **slutlig granskning**. Ändra tilldelningen för ledarskap hierarkin där nivån manager Employee.line = 1 om du vill att chef ska godkänna slutlig granskning. Ändra tilldelningen till Arbetsflödesanvändare om du vill att medarbetaren ska godkänna den. Om du vill att både chefen och medarbetaren ska godkänna granskningen lägger du till två steg i arbetsflödet och utför passande tilldelningar för varje steg i den ordning du vill att godkännandena ska ske.
+2.  Slutlig granskning. Lägg till det här elementet om du vill kontrollera statusändringen från **Klar för granskning** till **Slutlig granskning**. Ändra tilldelningen för att använda ledarskapshierarkin där ledarnivån Employee.line = 1 om du vill att chefen ska godkänna slutlig granskning. Ändra tilldelningen till Arbetsflödesanvändare om du vill att medarbetaren ska godkänna den. Om du vill att både chefen och medarbetaren ska godkänna granskningen lägger du till två steg i arbetsflödet och utför passande tilldelningar för varje steg i den ordning du vill att godkännandena ska ske.
 
 ## <a name="setup"></a>Inställningar
 Det finns tre sidor där du får hjälp med att ange informationen som krävs för att slutföra prestationsprocessen: sidan **mått**, sidan **prestationsjournalens källtyper** och sidan **Granskningstyper**.
@@ -148,5 +151,7 @@ Prestationsjournalens källtyper beskriver var prestationsjournalerna kommer ifr
 ### <a name="review-types"></a>Granskningstyper
 
 Med prestationsgranskningstyperna kan du styra granskningens beteende. Du kan aktivera eller inaktivera arbetsflöde för en granskning. Om arbetsflöde inte används för granskningen, kan du definiera den standardstatus som ska användas när granskningen skapas. Du kan också bestämma om medarbetaren, chef eller båda måste godkänna granskningen.
+
+
 
 

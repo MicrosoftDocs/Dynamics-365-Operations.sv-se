@@ -28,11 +28,14 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="remove-outliers-from-historical-transaction-data-when-calculating-a-demand-forecast"></a>Ta bort avskilda från historiska transaktionsdata när du beräknar en efterfrågeprognos
 
+[!include[banner](../includes/banner.md)]
+
+
 Den här artikeln beskriver hur du utesluter avskilda från historiska data som används för att beräkna en efterfrågeprognos. Genom att exkludera avskilda kan du förbättra prognosexaktheten.
 
-Du kan utesluta avvikare förbättra precisionen prognos. Den här uppgiften är valfri. Här finns en översikt av processen:
+Du kan exkludera avvikare för att förbättra prognosexaktheten. Den här uppgiften är valfri. Här finns en översikt av processen:
 
-1.  Klickar du på **huvudplanering**&gt;**inställningar**&gt;**efterfrågeprognosticering**&gt;**avvikare borttagning** så att den **avvikare borttagning** sida där du kan använda en fråga för att välja vilka transaktioner som ska undantas.
+1.  Klicka på **Huvudplanering** &gt; **Inställningar** &gt; **Efterfrågeprognosticering** &gt; **Borttagning av avskild** för att öppna sidan **Borttagning av avskild** där du kan använda en fråga för att välja transaktionerna som ska undantas.
 2.  Välj vilket företag som frågan gäller och ange sedan ett namn och en beskrivning. Fältet **Frågedatum** ställs automatiskt in på aktuellt datum.
 3.  Markera kryssrutan **Aktiv** om du vill exkludera transaktionerna som hittas av frågan från historiska data. Den här inställningen ska börja gälla när du skapar en baslinjeprognos.
 4.  På sidan **Fråga för borttagning av avskild** kan du lägga till, ta bort och välja kriterier som definierar vilka transaktioner som ska utelämnas när baslinjeprognosen beräknas. Välj till exempel en viss artikel eller ordertransaktion som du vill utesluta.
@@ -43,8 +46,10 @@ Du kan utesluta avvikare förbättra precisionen prognos. Den här uppgiften är
 <a name="see-also"></a>Se även
 --------
 
-[Introduction to demand forecasting](introduction-demand-forecasting.md)
+[Introduktion till efterfrågeprognosticering](introduction-demand-forecasting.md)
 
-[Monitoring forecast accuracy](monitor-forecast-accuracy.md)
+[Övervaka prognosprecision](monitor-forecast-accuracy.md)
+
+
 
 

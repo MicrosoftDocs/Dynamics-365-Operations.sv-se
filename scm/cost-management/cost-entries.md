@@ -40,7 +40,7 @@ En överföringsjournalhändelse registreras. Händelsen överför en del av art
 
 ### <a name="example-2-cost-entries-are-created"></a>Exempel 2: Kostnadsposter skapas
 
-En överföringsjournalhändelse registreras. Händelsen Överför från plats 1 en exemplaret av artikel A till plats 2. Sitens lagerdimension betraktas som en del av kostnadsbäraren. Därför skapar händelsen två lagertransaktioner och två kostnadsposter.
+En överföringsjournalhändelse registreras. Händelsen överför 1 st av artikel A från plats 1 till plats 2. Platsens lagerdimension betraktas som en del av kostnadsobjektet. Därför skapar händelsen två lagertransaktioner och två kostnadsposter.
 
 ### <a name="example-3-one-cost-entry-is-created"></a>Exempel 3: En kostnadspost skapas
 
@@ -59,11 +59,11 @@ Den nya sidan **Kostnadsposter** visar och kontrollerar registreringar för kost
 | 00002   | 20-01-2015 | Inköpsorder | 100001 | 0000101 |               |               |          | 100,00  |
 | 00003   | 31-01-2015 | Justering     | 100001 | 0000101 |               |               |          | 15,00   |
 
-Sidan **Kostnadsposter** aktiverar filtrering efter dokument-ID och dokumentdatum. **Anmärkning:** kostnadstransaktioner visas bara i [kostnadsbärare](cost-object.md) eller frisläppta produkter.
+Sidan **Kostnadsposter** aktiverar filtrering efter dokument-ID och dokumentdatum. **Obs!** Kostnadsposter är endast tillgängliga för [kostnadsobjekt](cost-object.md) eller frisläppta produkter.
 
 <a name="see-also"></a>Se även
 --------
 
-[Cost objects](cost-object.md)
+[Kostnadsobjekt](cost-object.md)
 
 

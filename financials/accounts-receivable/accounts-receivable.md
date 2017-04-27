@@ -27,9 +27,14 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="accounts-receivable-home-page"></a>Startsida för Kundreskontra
 
-Använd Kundreskontra när du vill spåra kundfakturor och inkommande betalningar.
+[!include[banner](../includes/banner.md)]
+
+
+Använd Kundreskontra när du vill spåra kundfakturor och inkommande betalningar. 
 
 Du kan skapa kundfakturor utifrån försäljningsordrar eller följesedlar. Du kan också ange fritextfakturor som inte är relaterade till försäljningsorder. Du kan ta emot betalningar, med flera olika betalningstyper. Dessa inkluderar växlar, kontanter, checkar, kreditkort och elektroniska betalningar. Om din organisation innehåller flera juridiska personer, kan du använda centraliserade betalningar för att registrera betalningar i en enda juridisk person å andra juridiska personers vägnar.
+
+
 
 
 

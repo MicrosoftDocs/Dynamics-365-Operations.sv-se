@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="waive-reinstate-or-reverse-interest-fees"></a>Avstå, återinföra eller återföra ränta
 
+[!include[banner](../includes/banner.md)]
+
+
 Det här avsnittet innehåller information om hur du efterskänker, återinför och omvänder kostnader för ränta och avgifter.
 
 Du kan använda knapparna på **Samla in** fliken på **alla kunder** att avstå, återföra eller återinföra avgifter:
@@ -43,7 +46,7 @@ Alla dessa åtgärder som ändrar en räntefaktura. En räntefaktura är en hand
 | Återför hela räntefakturor. -eller- Återför valda räntetransaktioner som utgör en del av en räntefaktura. **Obs!** Du kan inte återföra en avgift. Du kan dock vända hela räntefaktura som omfattar en avgift. | Avgifterna är inte längre förfallna från kunden. Dock kan hända att avgifterna förfaller igen om du räknar om ränta. | Processen är den samma som för avstående av räntefakturor eller valda räntetransaktioner. En kreditfaktura eller justeringsfaktura skapas för kunden. Denna kredit anmärkning används för att automatiskt lösa räntefaktura. Du kan använda en separat process för att beräkna om ränta och skapa en ny räntefaktura.                                                                                                                                                                                                                                                                                                                                                                                              |
 
 > [!NOTE] 
-> Du kan också använda samma sak som för att skriva av osäkra fordringar. Denna process markerar alla kundtransaktioner för lösning istället för avstående endast avgifter som är en del av räntefakturor.
+> Du kan också använda en separat process att avskriva skulder. Denna process markerar alla kundtransaktioner för lösning istället för avstående endast avgifter som är en del av räntefakturor.
 
 ## <a name="adjust-interest-for-invoices"></a>Justera ränta för fakturor
 Förutom att justera räntefakturor kan du ta bort räntekostnader på fakturor med hjälp av en av följande processer. Båda processerna även göra justeringar av tillhörande räntor anteckningar.
@@ -89,5 +92,7 @@ Du kan återföra räntetransaktioner genom **transaktionsränta** knappen på *
 Du kan visa den detaljerade historiken för justeringar, som har gjorts för räntefakturor, till exempel den användare som har skapat justeringen, typ av justering, belopp, och då justeringen angavs. Du kanske till exempel vill visa de tidigare justeringarna som har angetts för en räntefaktura, innan du skapar en ny räntefaktura. 
 
 Du kan återföra räntetransaktioner via **Historik** knappen på **Samla in** fliken på **Kund** sidan.
+
+
 
 

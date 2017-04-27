@@ -1,5 +1,5 @@
 ---
-title: "Kontrollen lagerställe arbete genom att använda mallar för arbete och direktiv plats"
+title: Kontrollera lagerarbetet genom arbetsmallar och platsdirektiv
 description: "Denna artikel beskriver hur man använder mallar och placering direktiven för att bestämma hur och var arbetet utförs i lagret."
 author: YuyuScheller
 manager: AnnBe
@@ -25,7 +25,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="control-warehouse-work-by-using-work-templates-and-location-directives"></a>Kontrollen lagerställe arbete genom att använda mallar för arbete och direktiv plats
+# <a name="control-warehouse-work-by-using-work-templates-and-location-directives"></a>Kontrollera lagerarbetet genom arbetsmallar och platsdirektiv
+
+[!include[banner](../includes/banner.md)]
+
 
 Denna artikel beskriver hur man använder mallar och placering direktiven för att bestämma hur och var arbetet utförs i lagret.
 
@@ -40,7 +43,7 @@ Inställningarna i arbetet skärbordets definition kan användas för att avgör
 
 Arbetet linjerna representerar det fysiska uppgifter som krävs för att bearbeta. För exempelvis ett utgående lager, det kan vara ett arbete för att plocka upp föremål i lagerstället och en annan linje för dessa poster till en mellanlagringsplats. Det kan alltså vara en extra rad för plockning från mellanlagring och en annan linje för att objekten i en lastbil som en del av laddningen. Du kan ställa in ett *direktiv kod *på arbetsmall linjer. Ett direktiv som är kopplad till en plats och därför hjälper till att säkra att lagerarbetet bearbetas på rätt plats i lagret. 
 
-Du kan ställa in en fråga för att kontrollera när en särskild mall används. Du kan till exempel ställa in en begränsning så att en viss mall kan användas för arbete i ett särskilt lager. Alternativt kan du ha flera mallar som används för att skapa arbete för utgående orderhantering, beroende på försäljningen ursprung. Systemet använder den **löpnummer** används för att bestämma den ordning som mallarna tillgängligt arbete värderas i. Därför, om du har en specifik fråga för en viss resurs mall ange låga ordningsnummer. Frågan kommer sedan att utvärderas innan andra, mer allmänna frågor. 
+Du kan ställa in en fråga för att kontrollera när en särskild mall används. Du kan till exempel ställa in en begränsning så att en viss mall kan användas för arbete i ett särskilt lager. Alternativt kan du ha flera mallar som används för att skapa arbete för utgående orderhantering, beroende på försäljningen ursprung. Systemet använder fältet **Sekvensnummer** för att avgöra den ordning som de tillgängliga arbetsmallarna värderas i. Därför bör du, om du har en specifik fråga för en specifik arbetsmall, tilldela den ett lågt ordningsnummer. Frågan kommer sedan att utvärderas innan andra, mer allmänna frågor. 
 
 För att stoppa eller pausa en arbetsprocess kan du använda **stopp** på arbetet. I detta fall arbetstagare som utför arbetet inte bli ombedd att utföra nästa rad steg. Gå vidare till nästa steg, att arbetstagaren eller annan arbetstagare måste välja igen. Du kan även ta uppdrag inom ett arbete med en annan *klass-ID *för arbetsmallen.
 
@@ -53,12 +56,14 @@ För arbete mallar, du kan sätter upp en fråga att avgöra när en viss plats 
 
 Platsdirektivraderna anger ytterligare begränsningar för tillämpningen av reglerna för platssökning. Du kan ange en minsta kvantitet och en maximal kvantitet att direktivet bör gälla, och du kan ange att direktivet bör vara en viss lagerenhet. Till exempel, om enheten är pallar, poster i pallar kan placeras i en specifik placering. Du kan också ange om kvantiteten kan delas upp över flera platser. Precis som platsdirektivrubriken har varje platsdirektivrad ett serienummer som bestämmer den ordning som raderna värderas i. 
 
-Platsdirektiv har en ytterligare detaljnivå: *platsdirektivåtgärder*. Du kan definiera flera plats direktiv åtgärder för varje linje. Ordningsnumret används återigen att anger i vilken ordning åtgärderna bedöms i. På den här nivån kan du ställa in en fråga att definiera hur du hittar den bästa platsen i lagerstället. Du kan också använda fördefinierade **inställningar för strategi för **att finna en optimal placering.
+Platsdirektiv har en ytterligare detaljnivå: *platsdirektivåtgärder*. Du kan definiera flera plats direktiv åtgärder för varje linje. Återigen används ett ordningsnummer för att avgöra i vilken ordning åtgärderna bedöms. På den här nivån kan du skapa en fråga för att definiera hur du hittar den bästa platsen i lagerstället. Du kan också använda fördefinierade **inställningar för strategi för **att finna en optimal placering.
 
 ### <a name="example-of-the-use-of-location-directives"></a>Exempel på användning av platsen direktiven
 
 I det här exemplet kommer vi att överväga en inköpsorder där placering direktiv måste hitta ledig kapacitet inom ett lager för inventarier som just registrerats vid mottagningsplatsen. Först vill vi försöka hitta ledig kapacitet inom lagret genom att konsolidera med befintliga lagersaldot. Om konsolideringen är inte möjligt, då vill vi att hitta en tom plats. 
 
 För detta scenario, måste vi definiera två plats direktiv åtgärder. Den första åtgärden i sekvensen måste **konsolidera** strategi, och den andra ska använda den **tomma platsen med några inkommande arbete** strategi. Om vi definierar en tredje handlingsplan för att hantera ett överskott scenario två utfall är möjliga när det inte finns något mer kapacitet i lagret: arbete kan skapas även om inga lagerplatser definieras eller arbete processen kan misslyckas. Resultatet bestäms av inställningar på **plats direktiv fel** sida, där du kan bestämma om du vill välja **stopp på plats direktiv fel** alternativ för varje arbetsorder.
+
+
 
 

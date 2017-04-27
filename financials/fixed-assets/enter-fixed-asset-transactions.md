@@ -1,5 +1,5 @@
 ---
-title: "Anläggningstillgång transaktionsalternativ"
+title: "Alternativ för transaktioner för anläggningstillgång"
 description: "Det här avsnittet innehåller en beskrivning av andra tillgängliga metoder för att skapa transaktioner för anläggningstillgångar."
 author: twheeloc
 manager: AnnBe
@@ -26,7 +26,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="fixed-asset-transaction-options"></a>Anläggningstillgång transaktionsalternativ
+# <a name="fixed-asset-transaction-options"></a>Alternativ för transaktioner för anläggningstillgång
+
+[!include[banner](../includes/banner.md)]
+
 
 Det här avsnittet innehåller en beskrivning av andra tillgängliga metoder för att skapa transaktioner för anläggningstillgångar.
 
@@ -36,7 +39,7 @@ Du kan ställa in Anläggningstillgångar för integrering med Leverantörsresko
 Du kan ange transaktioner för anläggningstillgångar på sidan Bokföringsorder. Denna sida kan öppnas från sidan Invoice journal. Du kan också öppna sidan Bokföringsorder på sidan Fakturagodkännandejournal. Välj Anläggningstillgångar i fältet Motkontotyp. Välj sedan ett anläggningstillgångsnummer i fältet Motkonto. På fliken Fixed assets anger du värden i fälten Transaction type och Book.
 
 ## <a name="accounts-receivable"></a>Kundreskontra
-Du kan ange transaktioner för anläggningstillgångar i sidan fritext faktura.  Välj en radartikel på sidan fritext fakturan i rutnätet fakturan rader. Klicka på snabbfältet Radinformation. Ange anläggningstillgångsnumret och boken för avyttringstransaktionen. För fritextfakturor är transaktionstypen för anläggningstillgångar alltid Avyttrande försäljning.
+Du kan ange transaktioner för anläggningstillgångar på sidan Fritextfaktura.  Välj en radartikel i rutnätet Fakturarader på sidan Fritextfaktura. Klicka på snabbfältet Radinformation. Ange anläggningstillgångsnumret och boken för avyttringstransaktionen. För fritextfakturor är transaktionstypen för anläggningstillgångar alltid Avyttrande försäljning.
 
 ## <a name="procurement-and-sourcing"></a>Anskaffning och källa
 Du kan ange transaktioner för anläggningstillgångar på sidan Inköpsorder. Ange nödvändig information för att skapa en inköpsorder och klicka sedan på OK. Klicka på snabbfliken Radinformation på sidan Inköpsorder. Ange sedan information om anläggningstillgången på fliken Anläggningstillgångar. 
@@ -65,6 +68,8 @@ Alla transaktionstyper för anläggningstillgångar kan bokföras på sidan Allm
 
 
 
-Mer information finns i [fasta tillgångar integration](fixed-asset-integration.md).
+Mer information finns i [Integrering av anläggningstillgångar](fixed-asset-integration.md).
+
+
 
 

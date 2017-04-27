@@ -3,7 +3,7 @@ title: "Ställa in anläggningstillgångar"
 description: "Det här avsnittet ger en översikt över Inställning av modul för anläggningstillgångar."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 04/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="set-up-fixed-assets"></a>Ställa in anläggningstillgångar
 
+[!include[banner](../includes/banner.md)]
+
+
 Det här avsnittet ger en översikt över Inställning av modul för anläggningstillgångar.
 
 <a name="overview"></a>Översikt
@@ -43,9 +46,9 @@ Anläggningstillgångar tilldelas en grupp när de skapas. Som standard kommer d
 Du bör skapa avskrivningsprofiler först. I avskrivningsprofilen konfigurerar du hur en tillgångs värde skrivs av över tid. Du måste definiera avskrivningsmetod, avskrivningsår (kalenderår eller räkenskapsår) och frekvensen för avskrivningen.
 
 ## <a name="books"></a>Böcker
-När du har ställt in avskrivningsprofiler måste du skapa de nödvändiga böckerna för dina tillgångar. Varje bok följer en viss ekonomisk livscykel för en tillgång. Böcker kan konfigureras för att bokföra associerade transaktioner i redovisningen. Denna konfiguration är standardinställningen, eftersom används vanligtvis för företagets redovisning. Regler som inte bokför i redovisningen bara bokföra anläggningstillgång redovisningsjournal och används för momsrapportering.
+När du har ställt in avskrivningsprofiler måste du skapa de nödvändiga böckerna för dina tillgångar. Varje bok följer en viss ekonomisk livscykel för en tillgång. Böcker kan konfigureras för att bokföra associerade transaktioner i redovisningen. Denna konfiguration utgör standardinställningen eftersom den normalt används för ekonomisk företagsrapportering. Böcker som inte bokför i redovisningen bokför endast i redovisningsjournaler för anläggningstillgångar och används som regel i momsrapporteringssyfte.
 
-En primär avskrivningsprofil tilldelas varje bok. Böcker har också en alternativ eller profil för avskrivningsomställning, om denna profiltyp kan användas. För att automatiskt inkludera förteckningar över anläggningstillgångar i avskrivningskörningar måste du aktivera alternativet Calculate depreciation . Om det här alternativet inte har markerats för en tillgång avskrivningsförslaget hoppar över tillgången.
+En primär avskrivningsprofil tilldelas varje bok. Böcker har också en alternativ eller profil för avskrivningsomställning, om denna profiltyp kan användas. För att automatiskt inkludera förteckningar över anläggningstillgångar i avskrivningskörningar måste du aktivera alternativet Calculate depreciation . Om detta alternativ inte markeras för en tillgång, hoppar avskrivningsförslaget över tillgången.
 
 Du kan också ställa in härledda böcker. De angivna härledda transaktionerna bokförs som en exakt kopia av den primära transaktionen mot de härledda böckerna. Därför ställs härledda transaktioner vanligtvis in för anskaffningar och avyttringar, inte för avskrivningstransaktioner.
 
@@ -62,14 +65,16 @@ Du kan också definiera särskilda avskrivningar, eller bonusavskrivning, för e
 ## <a name="fixed-asset-parameters"></a>Parametrar för anläggningstillgångar
 Det sista steget är att uppdatera parametrarna för anläggningstillgångar.
 
-Fältet Capitalization threshold bestämmer de tillgångar som skrivs av. Om en inköpsrad väljs som en anläggningstillgång, men den inte uppfyller en angiven kapitaliseringströskel, en anläggningstillgång ändå skapas eller uppdateras, men alternativet Beräkna avskrivning har värdet Nej. Därför skrivas inte tillgången automatiskt som en del av avskrivningsförslag.
+Fältet Capitalization threshold bestämmer de tillgångar som skrivs av. Om en inköpsrad markeras som en anläggningstillgång men inte uppfyller den angivna kapitaliseringströskeln, kommer en anläggningstillgång ändå att skapas eller uppdateras, men alternativet Calculate depreciation anges som No. Därför kommer tillgången inte automatiskt att skrivas av som en del av avskrivningsförslagen.
 
 Ett viktigt alternativ är Automatically create depreciation adjustment amounts with disposal. När du ställer in detta alternativ som Yes kommer tillgångsavskrivningen att justeras automatiskt, baserat på avskrivningsinställningarna vid tidpunkten då anläggningstillgången avyttras. Ett annat alternativ låter dig dra av kassarabatter från ditt anskaffningsbelopp när du införskaffar anläggningstillgångar genom en leverantörsfaktura.
 
-I snabbfliken Purchase orders kan du konfigurera hur dina tillgångar ska skapas som en del av inköpsprocessen. Det första alternativet är Allow asset acquisition from Purchasing. Om du ställer in detta alternativ som Yes, sker anskaffning när fakturan bokförs. Om du ställer in detta alternativ till Nej kan du ändå placera en anläggningstillgång på en inköpsorder (PO) och en faktura, men förvärvet inte kan bokföras. Bokföring måste utföras som ett separat steg från journalen för anläggningstillgångar. Skapa tillgången vid produktinleverans eller fakturera kan du skapa en ny tillgång "i farten" vid bokföring så att den inte behöver konfigureras som en anläggningstillgång innan transaktionen. Det sista alternativet, Check for fixed assets creation during line entry gäller endast för inköpsrekvisitioner.
+I snabbfliken Purchase orders kan du konfigurera hur dina tillgångar ska skapas som en del av inköpsprocessen. Det första alternativet är Allow asset acquisition from Purchasing. Om du ställer in detta alternativ som Yes, sker anskaffning när fakturan bokförs. Om du ställer in detta alternativ som No, kan du fortfarande infoga en anläggningstillgång på en inköpsorder (PO) och faktura, men anskaffningen bokförs inte. Bokföring måste utföras som ett separat steg från journalen för anläggningstillgångar. Alternativet Create asset during product receipt or invoice posting låter dig skapa en ny tillgång "i farten" i samband med bokföring, så att den inte måste skapas som en anläggningstillgång före transaktionen. Det sista alternativet, Check for fixed assets creation during line entry gäller endast för inköpsrekvisitioner.
 
 Du kan konfigurera orsakskoder så att dessa krävs för ändringar av en anläggningstillgång eller för specifika transaktioner för anläggningstillgångar.
 
 Slutligen, på fliken Number sequences, anger du nummerserier för anläggningstillgångar. Anläggningstillgångens nummerserie kan åsidosättas av anläggningstillgångsgruppens nummerserie, om denna har angetts.
+
+
 
 

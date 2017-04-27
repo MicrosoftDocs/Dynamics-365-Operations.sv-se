@@ -1,5 +1,5 @@
 ---
-title: "Använda spårning för nedbrytning"
+title: "Använd spårning för nedbrytning"
 description: "Det här avsnittet beskriver hur du kan använda spårning för att undersöka orsakerna till resultatet av en ordernedbrytning."
 author: YuyuScheller
 manager: AnnBe
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="use-tracing-for-explosion"></a>Använda spårning för nedbrytning
+# <a name="use-tracing-for-explosion"></a>Använd spårning för nedbrytning
+
+[!include[banner](../includes/banner.md)]
+
 
 Det här avsnittet beskriver hur du kan använda spårning för att undersöka orsakerna till resultatet av en ordernedbrytning.
 
@@ -43,6 +46,8 @@ Du kan visa information om leveransplaner och åtgärder för en vald order. På
 <a name="see-also"></a>Se även
 --------
 
-[Master plans](master-plans.md)
+[Huvudplaner](master-plans.md)
+
+
 
 

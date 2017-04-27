@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="bonus-depreciation"></a>Bonusavskrivning
 
+[!include[banner](../includes/banner.md)]
+
+
 Det här avsnittet innehåller en översikt över funktionen för bonusavskrivning.
 
 För bonusavskrivning kan du ta extra- eller bonusavskrivningsbelopp under det första året som tillgången tas i drift och skrivs av. Bonusavskrivning måste göras före andra avskrivningsberäkningar. Därför är det bäst att använda bonusavskrivning med böcker där funktionen Post to general ledger har inaktiverats. Du kan använda alternativet **Delete transactions not posted to general ledger** för att radera historiska transaktioner för böcker som inte bokförs i redovisningen. Du kan sedan tillgodose bonusavskrivningen senare i tillgångens livscykel genom att ta bort avskrivningstransaktioner som tidigare bokförts. 
@@ -61,5 +64,7 @@ När bonusavskrivning beräknas med förslagsprocessen skapas en transaktion fö
 Du kan skapa ett obegränsat antal bonusavskrivningsposter. När du har tilldelat dessa poster till en räkenskapsbok, appliceras de på tillgångsförteckningen. 
 
 Bonusavskrivning anges i procent eller som ett fast belopp. När du bokför avskrivningsförslag, bokförs transaktioner för bonusavskrivning till boken som transaktioner som är skilda från avskrivningstransaktionerna.
+
+
 
 

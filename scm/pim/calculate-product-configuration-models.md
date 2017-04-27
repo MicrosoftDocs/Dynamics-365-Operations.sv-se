@@ -1,6 +1,6 @@
 ---
-title: "Beräkningar för produktkonfigurationsmodeller FAQ"
-description: "Den här artikeln beskrivs hur du använder beräkningar tillsammans med begränsningar beskrivs beräkningar för produktkonfigurationsmodeller."
+title: "Frågor och Svar - Beräkningar för produktkonfigurationsmodeller"
+description: "Det här avsnittet beskriver beräkningar för produktkonfigurationsmodeller och förklarar hur du använder beräkningar tillsammans med begränsningar."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,9 +27,12 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="calculations-for-product-configuration-models-faq"></a>Beräkningar för produktkonfigurationsmodeller FAQ
+# <a name="calculations-for-product-configuration-models-faq"></a>Frågor och Svar - Beräkningar för produktkonfigurationsmodeller
 
-Den här artikeln beskrivs hur du använder beräkningar tillsammans med begränsningar beskrivs beräkningar för produktkonfigurationsmodeller.
+[!include[banner](../includes/banner.md)]
+
+
+Det här avsnittet beskriver beräkningar för produktkonfigurationsmodeller och förklarar hur du använder beräkningar tillsammans med begränsningar.
 
 Beräkningar kan användas för aritmetiska eller logiska operationer. De kompletterar uttryckbegränsningar i produktkonfigurationsmodeller. Du kan definiera beräkningar på sidan **Detaljer för begränsningsbaserad produktkonfigurationsmodell** och sedan skapa uttryck för beräkningar i uttrycksredigeraren. Mer information finns i Skapa beräkningar.
 
@@ -45,9 +48,9 @@ Ett målattribut är ett attribut som tar emot beräkningens resultat i ett uttr
 
 I följande uttryck är målattributet ett bordsdukmått:  
 
-**Uttryck:** om\[decimalAttribute1 &lt;decimalAttribute2, = SANT, FALSKT\]  
+**Uttryck:** Om\[decimalAttribute1 &lt;= decimalAttribute2, True, False\]  
 
-**DecimalAttribute1** lång tabell och **decimalAttribute2** är längden på duken. Detta uttryck returnerar värdet **Sant** till målattributet om **decimalAttribute2** är större än eller lika med **decimalAttribute1**. Annars returnerar uttrycket värdet **Falskt**. Så bordduksmåttet är godtagbart om borddukslängden är lika med eller överstiger längden på bordet.
+**DecimalAttribute1** är registerlängden, och **decimalAttribute2** är tablecloth-längden. Detta uttryck returnerar värdet **Sant** till målattributet om **decimalAttribute2** är större än eller lika med **decimalAttribute1**. Annars returnerar uttrycket värdet **Falskt**. Så bordduksmåttet är godtagbart om borddukslängden är lika med eller överstiger längden på bordet.
 
 ## <a name="what-attribute-types-can-be-set-to-target-attributes"></a>Vilka attributtyper kan ställas in som målattribut?
 Alla attributtyper som stöds för produktkonfigureraren kan anges som målattribut med undantag för text utan en fast lista.
@@ -57,11 +60,11 @@ Nej, ett värde för målattributet kan inte begränsa värdena för indataattri
 
 ### <a name="example"></a>Exempel
 
-Målet för beräkningen är längden på en nätsladd och det uppmätta värdet är en färg i följande uttryck:  
+I följande uttryck är målet för beräkningen längden på en elsladd, och indatavärdet är en färg:  
 
-**Uttryck:**\[om färg == "Grön" 1,5, 1.0\]  
+**Uttryck:** \[If Color == "Green", 1.5, 1.0\]  
 
-När du konfigurerar artikeln lång nätsladd sätts till **1,5** om du anger **gröna** som värde för attribut. Om du anger en annan färg, är längden **1,0**. Eftersom beräkningar är enkelriktade ställer beräkningen inte in värdet för färgattributet till **Grön** när du anger en längd på **1,5**.
+När du konfigurerar artikeln, anges elsladdens längd som **1,5** om du anger **Green** som värdet för färgattributet. Om du anger en annan färg, är längden **1,0**. Eftersom beräkningar är enkelriktade ställer beräkningen inte in värdet för färgattributet till **Grön** när du anger en längd på **1,5**.
 
 ## <a name="what-happens-if-a-calculation-has-a-target-attribute-of-the-integer-type-but-a-calculation-generates-a-decimal-number"></a>Vad händer om en beräkning har ett målattribut av heltalstypen men en beräkning skapar ett decimaltal?
 Om ett målattribut är av heltalstypen, men en beräkning skapar ett decimaltal, returneras bara heltalsdelen på det beräknade resultatet. Decimalerdelen tas bort och resultatet avrundas inte. Ett resultat på 12,70 visas till exempel som 12.
@@ -72,16 +75,16 @@ Beräkningar sker när ett värde har angetts för alla indataattribut.
 ## <a name="can-i-overwrite-the-value-that-is-calculated-for-the-target-attribute"></a>Kan jag skriva över värdet som beräknas för målattributet?
 Du kan åsidosätta värdet som beräknas för målattributet, om inte målattributet är inställt som dolt eller skrivskyddat.
 
-## <a name="how-do-i-set-a-target-attribute-as-hidden-or-readonly"></a>Hur ställer jag in ett målattribut som dold eller skrivskyddad?
+## <a name="how-do-i-set-a-target-attribute-as-hidden-or-readonly"></a>Hur kan jag ange ett målattribut som dolt eller skrivskyddat?
 Om du vill ange ett attribut som dolt eller skrivskyddat, följ dessa steg:
 
-1.  Klicka på **produktinformationshantering**&gt;**gemensamma**&gt;**produktkonfigurationsmodeller**.
+1.  Klicka på **Produktinformationshantering** &gt; **Allmänt** &gt; **Produktkonfigurationsmodeller**.
 2.  Välj en modell för produkt, konfiguration och klicka sedan på **Redigera** i åtgärdsfönstret.
 3.  På sidan **Detaljer för begränsningsbaserad produktkonfigurationsmodell** väljer du det attribut som du vill använda som målattribut.
 4.  På snabbfliken **Attribut** väljer du **Dolt** eller **Skrivskyddat**.
 
 ## <a name="can-a-calculation-overwrite-the-values-that-i-set"></a>Kan en beräkning skriva över de värden som jag har angett?
-Nr. De värden som du anger när du konfigurerar en produkt är de värden som används. Beräkningen som infaller när indatavärdena i beräkningen ändras kan inte skriva över värdena som du anger för ett visst attribut.
+Nr. De värden du anger när du konfigurerar en produkt är de värden som används. Beräkningen som infaller när indatavärdena i beräkningen ändras kan inte skriva över värdena som du anger för ett visst attribut.
 
 ## <a name="what-happens-if-i-remove-an-input-value-in-a-calculation"></a>Vad händer om jag tar bort ett invärde i en beräkning?
 Om du tar bort ett invärde i en beräkning, tas värdet för målattributet också bort.
@@ -98,8 +101,10 @@ Detta meddelande visas när en beräkning innehåller ett fel eller om en motsä
 ## <a name="why-do-i-receive-an-error-message-even-though-i-successfully-validated-my-product-model"></a>Varför får jag ett felmeddelande även om jag validerade min produktmodell?
 Beräkningar inkluderas inte i valideringen. Du måste testa produktkonfigurationsmodellen för att hitta fel i beräkningar. Följande steg beskriver hur man testar en produktkonfigurationsmodell.
 
-1.  Klicka på **produktinformationshantering**&gt;**gemensamma**&gt;**produktkonfigurationsmodeller**.
+1.  Klicka på **Produktinformationshantering** &gt; **Allmänt** &gt; **Produktkonfigurationsmodeller**.
 2.  Välj en produktkonfigurationsmodell i åtgärdsfönstret och klicka sedan på gruppen **Kör**, klicka på **Test**.
+
+
 
 
 

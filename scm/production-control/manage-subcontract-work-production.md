@@ -1,6 +1,6 @@
 ---
-title: Hantera legotillverkning arbete i produktion
-description: "Det här avsnittet beskrivs hur operationerna hanteras i Microsoft Dynamics 365 för operationer. Med andra ord förklarar hur produktionsåtgärder som tilldelats en resurs som hanteras av en leverantör."
+title: Hantera legotillverkningsarbete i produktionen
+description: "Det här avsnittet beskriver hur verksamhet på entreprenad (legotillverkning) hanteras i Microsoft Dynamics 365 for Operations. Med andra ord förklaras hur produktionsåtgärder som tilldelats en resurs hanteras av en leverantör."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,77 +26,82 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="manage-subcontracting-work-in-production"></a>Hantera legotillverkning arbete i produktion
+# <a name="manage-subcontracting-work-in-production"></a>Hantera legotillverkningsarbete i produktionen
 
-Det här avsnittet beskrivs hur operationerna hanteras i Microsoft Dynamics 365 för operationer. Med andra ord förklarar hur produktionsåtgärder som tilldelats en resurs som hanteras av en leverantör.
+[!include[banner](../includes/banner.md)]
 
-I [produktionsprocesser](production-process-overview.md), arbetet kan bli gjort av resurser, som ägs eller förvaltas av leverantörer. Resurser för leverantören används vanligtvis på periodiska överflödiga efterfrågan som är fastställd i den tillgängliga kapaciteten hos ett företag egna resurser. Leverantören kan också kunna erbjuda särskilda [resurskunskaper](resource-capabilities.md)eller resurser till ett lägre pris.  
 
-Beroende på leverantören resurserna som används i produktionsprocessen, en [väg](routes-operations.md) ofta har behov av ytterligare logistiska eftersom material och halvfabrikat först måste transporteras till leverantörens webbplats. Sedan transporteras resultatet i legotillverkningsoperationen till platsen som allokeras till nästa operation eller ett lager av färdiga varor.  
+Det här avsnittet beskriver hur verksamhet på entreprenad (legotillverkning) hanteras i Microsoft Dynamics 365 for Operations. Med andra ord förklaras hur produktionsåtgärder som tilldelats en resurs hanteras av en leverantör.
 
-När den legotillverkning åtgärder eller aktiviteter används påverkar de alla faser av transaktioner, från definitionen av de åtgärder som krävs för produktion, kostnadsredovisning, prognoser, planering och schemaläggning i hanteringen av logistik för material, halvfabrikat och färdiga varor. Dessutom kräver dessa resurser egna processer för redovisning och kostnadskontroll.  
+I [produktionsprocesser](production-process-overview.md) kan arbetet utföras av resurser som ägs eller förvaltas av leverantörer. Leverantörsresurser används vanligtvis för att jämna ut periodiskt överdriven efterfrågan som överskrider den tillgängliga kapaciteten hos ett företags egna resurser. Leverantören kan eventuellt också erbjuda särskilda [resurskunskaper](resource-capabilities.md)eller resurser till ett lägre pris.  
 
-För interna resurser tilldelas fasta kostnadstariffen normalt för en period. Däremot kan utifrån den legotillverkning resurskostnader inköpspriset för tjänsterna. Tjänsten definieras som en annan produkt och används för att skapa upphandling och köpa processer för en viss legotillverkningsoperationen.  
+Beroende på de leverantörsresurser som används i produktionsprocessen har en viss [väg](routes-operations.md) ofta ytterligare logistiska behov, detta eftersom material och halvfabrikat först måste transporteras till leverantörens plats. Sedan måste resultatet för legotillverkningsverksamheten transporteras antingen till platsen som allokeras till nästa verksamhet eller ett lager för färdiga varor.  
 
-Det finns för närvarande inga uttryckliga begreppet halvfabrikat i Microsoft Dynamics 365 för operationer. Den färdiga varan bokförs för en produktionsorder som kräver mer än en åtgärd för att omvandla råmaterial till färdig artikel till lagret bara i den sista operationen. Halvfärdiga produkter som tidigare åtgärder ge redovisas i arbete (PIA) men inte bokföras eller spårats i lagret. Även om du kan dela flöden och strukturlistor strukturlistorna i flera mindre enheter, ökar antalet varor, strukturlistor och flöden som måste hanteras den här metoden.  
+När legotillverkningsverksamhet eller -åtgärder används, påverkar de alla verksamhetsfaser: från definitionen av de åtgärder som krävs för produktionen till kostnadsredovisning, prognoser, planering och schemaläggning och hanteringen av logistik för material, halvfabrikat och färdiga varor. Dessutom kräver dessa resurser egna processer för redovisning och kostnadskontroll.  
 
-Det finns två metoder för modellering legotillverkning av produktionsoperationerna. Dessa metoder skiljer sig åt på det sättet att den legotillverkning processen kan utformas, halvfabrikat representeras i processen och hur kostnadsstyrning hanteras.
+För interna resurser tilldelas som regel en fast kostnadstariff för en period. Däremot baseras kostnaden för resurser på entreprenad på inköpspriset för den tillhörande tjänsten. Tjänsten definieras som en annan produkt, och används för att underlätta anskaffnings- och inköpsprocesser för en viss legotillverkningsoperation.  
+
+Det finns för närvarande inga uttryckliga begrepp för halvfabrikat i Microsoft Dynamics 365 for Operations. För produktionsorder som kräver mer än en åtgärd för att omvandla råmaterial till färdig vara, bokförs den färdiga varan åter i lager först i samband med den sista åtgärden. Halvfärdiga produkter som tidigare åtgärder framställer redovisas som pågående arbete (PIA), men varken bokförs eller spåras i lagret. Även om du kan dela flöden och strukturlistor i flera mindre enheter, ökar denna metod antalet varor, strukturlistor och flöden som måste hanteras.  
+
+Det finns två metoder för att modellera legotillverkning för produktionsverksamheten. Dessa metoder skiljer sig åt genom hur legotillverkningsprocessen kan utformas, hur halvfabrikat representeras under processen, samt hur kostnadsstyrningen hanteras.
 
 -   Legotillverkning av flödesoperationer i produktionsorder eller batchorder
-    -   Tjänsten produkten måste vara produkt i lager och det måste vara en del av Strukturlistan.
-    -   Den här metoden stöder först in, först ut (FIFO) eller standardkostnad.
-    -   Halvfabrikat representeras av tjänstprodukter i processen.
-    -   Kostnadskontroll fördelar kostnader som är kopplade till den legotillverkning till materiella kostnader.
--   Legotillverkning av produktionsflödesaktiviteter i lean-produktionsflöde
-    -   Tjänsten är en icke-lagerförd tjänstprodukter och det är inte en del av Strukturlistan.
-    -   Den här metoden används inköpsavtal serviceavtal.
-    -   Den här metoden används bakåtavräkning.
-    -   På så vis kan aggregerade och asynkrona upphandling. (Materialflödet är oberoende av inköpsprocessen.)
-    -   Kostnadskontroll allokerar legotillverkning i sin egen analys kostnad-block.
+    -   Tjänsteprodukten måste vara en produkt i lager och måste ingå i strukturlistan.
+    -   Den här metoden stöder först in - först ut (FIFO) eller standardkostnad.
+    -   Halvfabrikat representeras av tjänsteprodukten i samband med processen.
+    -   Kostnadskontroll fördelar de kostnader som är kopplade till legotillverkningen till materiella kostnader.
+-   Legotillverkning av produktionsflödesaktiviteter i ett resurssnålt produktionsflöde
+    -   Tjänsten är en icke-lagerförd tjänsteprodukt, och ingår inte i strukturlistan.
+    -   Den här metoden använder inköpsavtal som serviceavtal.
+    -   Den här metoden använder kostnadskalkylering med automatisk lageravräkning.
+    -   Metoden möjliggör sammanlagd och asynkron anskaffning. (Materialflödet är oberoende av inköpsprocessen.)
+    -   Kostnadskontrollen fördelar legotillverkning i sitt eget kostnadsuppdelningsblock.
 
-## <a name="subcontracting-of-route-operations"></a>Legotillverkning av flödesoperationer
-Om du vill använda legotillverkning av flödesoperationer för produktions- eller batchorder tjänstprodukter som används för anskaffning av tjänsten måste definieras som en produkt av den **Service** typ. Dessutom kan det finnas en artikelmodellgrupp som har den **produkt i lager** alternativet **lagrets principen** in på **Ja**. Det här alternativet anger om en produkt börjar tillämpas, redovisas som lager på produktinleverans (**produkt i lager** = **Ja**), eller om produkten resultaträkningen för ett konto för vinst och förlust (**produkt i lager** = **nr**). Trots detta kanske verkar vara motsatt är baserad på att produkter som har den här principen skapar lagertransaktioner som kan användas i kostnadskontroll för att beräkna planerade kostnader och fastställa de faktiska kostnaderna när en tillverkningsorder är färdig.  
+## <a name="subcontracting-of-route-operations"></a>Legotillverkning av flödesåtgärder.
+Om du vill använda legotillverkning av flödesoperationer för produktions- eller batchorder, måste den tjänsteprodukt som används för anskaffning av tjänsten definieras som en produkt av typen **Tjänst**. Dessutom måste den ha en artikelmodellgrupp som har alternativet **Produkt i lager** under **Lagerpolicy** inställt på **Ja**. Det här alternativet anger om en produkt redovisas som lager på produktinleverans (**Produkt i lager** = **Ja**), eller om produkten kostnadsförs i en resultaträkning (**Produkt i lager** = **Nr**). Trots att detta kanske verkar vara motsatser, så baseras det hela på det faktum att endast produkter med denna policy skapar lagertransaktioner som kan användas inom kostnadskontroll för att beräkna planerade kostnader och fastställa de faktiska kostnaderna när en tillverkningsorder är färdig.  
 
-Tjänsten måste läggas till Strukturlistan ska anses vara i beräkningen av planering och kostnad. Strukturlisteraden måste vara av den **leverantör** typ och tilldelas flödesoperationen som tilldelats tjänsten. Denna flödesoperation måste ha ett kostnadsredovisningsresurs och resursbehov som pekar på en resurs av den **leverantör** som ansluter operationen och tjänsterna till motsvarande leverantörskontot.  
+Tjänsten måste läggas till i strukturlistan för att beaktas i samband med beräkning av planering och kostnader. Strukturlisteraden måste vara av typen **Leverantör** och tilldelas till den flödesverksamhet som tilldelats tjänsten. Denna flödesoperation måste ha en kostnadsredovisningsresurs och ett resursbehov som pekar på en resurs av typen **Leverantör** som kopplar verksamheten och relaterad tjänst till motsvarande leverantörskonto.  
 
-När den här konfigurationen används skapas en inköpsorder för den relaterade tjänst, utifrån uppskattningen av en produktionsorder. Inköpsorder för tjänsten används som ankare för de legotillverkning.. Legotillverkning kan hanteras via den **arbete legotillverkning** listsida i tillverkningskontrollen. Legotillverkning för råmaterial och slutligen halvfärdig produkt att skickas till leverantören som förberedelse för operationen. Den används också ta emot produkten i legotillverkningsoperationen i artikelinförsel, där produkten service används för att identifiera anländer halvfärdig produkt. När du har fått inköpsorderraden uppdateras produktionsoperationen som slutförd.  
+När den här konfigurationen används, skapas en inköpsorder för den relaterade tjänsten baserat på uppskattningen av en produktionsorder. Inköpsordern för tjänsten används som ankare för legotillverkningen. Legotillverkning kan hanteras via listsidan **Legotillverkning** i tillverkningskontrollen. Legotillverkningen används för att leverera råmaterial och, i slutändan, ett halvfabrikat att skickas till leverantören som förberedelse för verksamheten. Den används också för att ta emot den resulterande produkten av legotillverkningsverksamheten i artikelinförsel, där tjänsteprodukten används för att identifiera när halvfabrikatet anländer. När inköpsorderraden tas emot, uppdateras produktionsverksamheten som slutförd.  
 
-En produktionsorder kan ha många åtgärder och varje operation kan tilldelas en annan leverantör. Därför kan kan en slutpunkt till slutpunkt tillverkningsorder utlösa flera inköpsorder.
+En produktionsorder kan ha många åtgärder, och varje åtgärd kan tilldelas en annan leverantör. Därför kan komplett tillverkningsorder utlösa flera olika inköpsorder.
 
 ## <a name="subcontracting-of-production-flow-activities"></a>Legotillverkning av produktionsflödesaktiviteter
-Den [lean manufacturing](lean-manufacturing-overview.md)lösning modeller legotillverkning arbetet som en tjänst som hör till en aktivitet med en [produktionsflöde](http://ax.help.dynamics.com/en/wiki/create-a-production-flow-version/) (avsnittet guide). Därför den här typen av den legotillverkning kallas också för [verksamhetsbaserade legotillverkning.](activity-based-subcontracting.md) En speciell kostnadstyp grupp, **direktutkontraktering**, har införts och de legotillverkning tjänsterna inte ingår i Strukturen på de färdiga varorna. När du använder lean manufacturing definieras all verksamhet som av kanban som kan vara relaterad till en eller flera produktionsflödesaktiviteter. Denna förklaring låter hittills, precis som en förklaring av tillverkningsorder. Medan produktionsorder måste avslutas alltid med en färdig produkt, kan du skapa kanbans till leveransorder halvfärdig produkt. Du behöver en ny produkt och strukturlistenivå.  
+Lösningsmodellen [lean manufacturing](lean-manufacturing-overview.md)modellerar legotillverkning som en tjänst relaterad till ett [produktionsflöde](http://ax.help.dynamics.com/en/wiki/create-a-production-flow-version/) (avsnitt i uppgiftsguide). Därför kallas den här typen av legotillverkning också för [verksamhetsbaserad legotillverkning.](activity-based-subcontracting.md) En särskild kostnadsgruppstyp kallad **Direktutkontraktering** har införts, och legotillverkningstjänsterna är inte längre en del av strukturlistan (BOM) för de färdiga produkterna. När du använder lean manufacturing definieras all verksamhet av kanbans som kan vara relaterade till en eller flera produktionsflödesaktiviteter. Denna förklaring låter hittills precis som en förklaring för tillverkningsorder. Medan produktionsorder alltid måste avslutas med en färdig produkt, kan du emellertid skapa kanbans för att förse en halvfärdig produkt. Du behöver inte introducera en ny produkt eller strukturlistenivå.  
 
-Eftersom kanban-regler kan vara mycket dynamisk kan utforma du olika varianter för samma produkt på ett produktionsflöde. När du använder resurssnål åtskilda legotillverkning, material flödet och ekonomiska flöde strikt. Alla materialflödet representeras av kanban-aktiviteter. Inköpsorder för tjänstprodukter och bokföringarna mottagandet av dessa tjänster kan utföras automatiskt, baserat på status för kanban-jobb i produktionsflödet. Kanban-jobb kan påbörjas och avslutas innan inköpsorderna som skapas. Legotillverkningsdokument (inköpsorder och inleveransen av tjänsten) kan aggregeras och period. Därför kan antal inköpsdokument och rader hållas liten, även i mycket repetitiva åtgärder där leverantörer ger legotillverkningstjänster i ett enstaka stycke flöde.
+Eftersom kanban-regler kan vara mycket dynamiska, kan du utforma du olika leveransvarianter för samma produkt i ett produktionsflöde. När du använder resurssnål legotillverkning sker en strikt uppdelning av materialflödet och det ekonomiska flödet. Hela materialflödet representeras av kanban-aktiviteter. Inköpsorder för de tjänsteprodukterna och leveransbokföringarna av dessa tjänster kan utföras automatiskt, baserat på statusen för kanban-jobb i produktionsflödet. Kanban-jobb kan påbörjas och slutföras innan inköpsorderna skapas. Legotillverkningsdokument (inköpsorder och inköpsleveransen av tjänsten) kan aggregeras efter period och tjänst. Därför kan antalet inköpsdokument och rader hållas nere, till och med i mycket repetitiva åtgärder där leverantörer ger legotillverkningstjänster i ett enstycksflöde.
 
-### <a name="modeling-subcontracting-in-a-production-flow"></a>Modellering legotillverkning i ett produktionsflöde
+### <a name="modeling-subcontracting-in-a-production-flow"></a>Modellera legotillverkning i ett produktionsflöde
 
-I en [lean-produktionsflöde](lean-manufacturing-modeling-lean-organization.md), en processaktivitet definieras som den legotillverkning när tilldelas en arbetsgrupp (resursgrupp) med en enda leverantör resursen. När en arbetsgrupp gäller legotillverkning måste relaterade processaktiviteter kopplas till en aktiv inköpsavtalsraden som innehåller serviceartikeln och priset för tjänsten. Serviceavtalet för aktiviteten även definierar förhållandet mellan produktkvantitet för kanban-jobbet och resulterande tjänstekvantiteten beräkningen. Du kan välja om tjänstekvantiteten beräknas baserat på antalet jobb, god produktkvantitet som rapporteras på jobben eller den totala produktkvantitet (totala antalet innehåller kasserade produkter).  
+I ett [resurssnålt produktionsflöde](lean-manufacturing-modeling-lean-organization.md) kan en processaktivitet definieras som legotillverkning när den tilldelas en arbetsgrupp (resursgrupp) med en enda leverantörsresurs. När en arbetsgrupp tilldelas legotillverkning måste relaterade processaktiviteter kopplas till en aktiv inköpsavtalsrad som innehåller serviceartikeln och priset för tjänsten. Serviceavtalet för aktiviteten definierar också beräkningsförhållandet mellan produktkvantiteten för kanban-jobbet och resulterande tjänstekvantiteten. Du kan välja om tjänstekvantiteten ska beräknas baserat på antalet jobb, god produktkvantitet som rapporteras på jobben eller den totala produktkvantiteten (denna totala kvantitet innehåller kasserade produkter).  
 
-Överföringsaktiviteter kan också definieras som den legotillverkning. Denna definition sker implicit när du väljer den ansvariga parten för leverans i fältet för överföring. När du väljer **speditören** eller **mottagaren**, om motsvarande källan eller målet lagerstället är ett lagerställe som hanteras av leverantören anses aktiviteten legotillverkning. När du väljer **transportföretagets**, aktiviteten alltid legotillverkning. Legotillverkning processaktiviteter som en legotillverkning överföringsaktivitet måste kopplas till ett serviceavtal innan det går att aktivera produktionsflödet.
+Överföringsaktiviteter kan också definieras som legotillverkning. Denna definition sker implicit när du väljer den ansvariga parten för leverans i fältet för överföringsaktivitet. När du väljer **Speditör** eller **Mottagare** betraktas aktiviteten som legotillverkning om motsvarande käll- eller mållagerställe är ett lagerställe som hanteras av leverantören. När du väljer **Transportföretag** blir aktiviteten alltid legotillverkning. Precis som processaktiviteter med legotillverkning måste en överföringsaktivitet med legotillverkning kopplas till ett serviceavtal innan produktionsflödet kan aktiveras.
 
 ### <a name="backflush-costing"></a>Kostnadskalkylering med automatisk lageravräkning
 
-Kostnadsredovisning av legotillverkning integreras fullständigt kostnadsredovisning för lean manufacturing lösningen (bakåtavräkning). När du bokför ordern inleveransen av tjänsten eller faktureras tilldelas anskaffningskostnaden för tjänsten produktionsflödet. För bakåtavräkning beräknas avvikelsen för legotillverkningstjänster genom avräkning av det legotillverkning textblocket standardkostnaden för mottagna varorna mot de faktiska servicen inlevererad och fakturerad.
+Kostnadsredovisningen för legotillverkning är helt integrerad i kostnadsredovisningen för lean manufacturing-lösningen (kostnadskalkylering med automatisk lageravräkning). När du bokför inköpsorderkvittot för tjänsten, eller i samband med fakturering, tilldelas kostnaden för tjänsten till produktionsflödet. För kostnadskalkylering med automatisk lageravräkning beräknas avvikelsen för legotillverkningstjänster genom avräkning av legotillverkningsblocket av standardkostnaden för mottagna varor mot de faktiskt mottagna och fakturerade tjänstekvantiteterna.
 
-## <a name="material-supply-for-subcontracted-operations"></a>Materialleverans för den legotillverkning.
-Halvfabrikat och andra relaterade material måste överföras till den plats där arbetet ska utföras fysiskt. När du använder operationerna och aktiviteter relaterade överföringen ofta för ytterligare transporter till en webbplats som drivs av leverantörer. Genom att tilldela material i Strukturlistan ska legotillverkningsoperationen kan du ange att materialet måste mellanlagras i resursgruppen för den fördelade resursen inleveransplats. Huvudplanering eller sedan resurssnål påfyllnad bestämmelser material till önskad plats.  
+## <a name="material-supply-for-subcontracted-operations"></a>Materialleverans för legotillverkningen
+Halvfabrikat och andra relaterade material måste överföras till den plats där arbetet ska utföras fysiskt. När du använder legotillverkningsåtgärder och -verksamheter är denna överföring ofta relaterad till ytterligare transporter till leverantörsdrivna platser. Genom att tilldela material i strukturlistan till legotillverkningen deklarerar du att materialet måste mellanlagras på resursgruppens inleveransplats för den tilldelade resursen. Huvudplanering eller lean-lagerpåfyllnaden tillhandahåller sedan materialet till den platsen.  
 
-För att modellera lagret som finns hos en leverantör är det bäst i branschen att definiera ett lagerställe som hanteras av leverantören. Du kan definiera ett lagerställe som leverantören hanteras enkelt genom att skapa ett nytt lagerställe och tilldela leverantörskontot. Om du vill dokumentera materialet ska överföras till leverantören innan en åtgärd kan utföras, ska du dela ut inleveranslagret för resursgruppen som innehåller resursen leverantör hanteras lagret.  
+För att modellera lagret som finns hos en leverantör är branschens bästa praxis att definiera ett lagerställe som hanteras av leverantören. Du kan enkelt definiera ett lagerställe som leverantören hanterar genom att skapa ett nytt lagerställe och tilldela leverantörskontot. Om du vill dokumentera att material måste överföras till leverantören innan en åtgärd kan utföras, ska du tilldela det leverantörshanterade lagret till lagret hos den resursgrupp som innehar resursen.  
 
 Du kan använda flera strategier för att fylla på material på det här lagerstället:
 
 -   Överföringsorder
 -   Överför journaler
--   Uttag kanbans
--   Inköp till leverantör
+-   Uttags-kanbans
+-   Direktinköp till leverantörens plats
 
-Halvfärdiga produkter är undantag till regeln. Om du vill överföra halvfärdiga produkter är begränsat till följande alternativ:
+Halvfabrikat utgör undantagen till regeln. Om du vill överföra halvfabrikat begränsas du till följande alternativ:
 
--   För produktions- och batchorder halvfärdiga produkter kan bara överföras logiskt med hjälp av plocklistejournalen från den **arbete legotillverkning** listsida. Den här journalen skapas en följesedel dokument som kan användas för att överföra halvfärdiga och råmaterial till leverantören.
--   Överföringen av halvfabrikat dokumenteras genom mottagande av uttag eller produktion kanbans där leverantören för den legotillverkning i produktionsflöden. Du kan avsluta en produktions-kanban med en ytterligare överföringsaktivitet för att modellera ett explicit överföringsaktivitet.
+-   För produktions- och batchorder kan halvfärdiga produkter bara överföras logiskt med hjälp av plocklistejournalen från listsidan **Legotillverkning**. Den här journalen skapar ett följesedelsdokument som kan användas för att överföra halvfärdiga material och råmaterial till leverantören.
+-   För legotillverkning i produktionsflöden dokumenteras överföringen av halvfärdiga produkter genom mottagande av uttags- eller produktionskanbans på leverantörsplatsen. Du kan avsluta en produktions-kanban med en ytterligare överföringsaktivitet för att modellera en explicit överföringsaktivitet.
 
-**Anmärkning:** ett produktionsflöde för en enskild produktionsorder kan inte korsa flera siter. Denna regel gäller även legotillverkning. Därför lagerställena som representerar leverantören hanteras materialet platser måste definieras på samma plats som de interna resurser som används i flödet. Även om produktionsflöden kan passera platser, kan inte de transport halvfabrikat från en plats till en annan, eftersom åtgärden innebär en förändring av kostnaden kontext.  
+**Obs!** Ett produktionsflöde för en enskild produktionsorder kan inte korsa flera platser. Denna regel gäller även legotillverkningen. Därför måste de lagerställen som representerar leverantörshanterade materialplatser definieras på samma plats som de interna resurser som används i flödet. Även om produktionsflöden kan passera flera platser, kan de inte transportera halvfärdiga produkter från en plats till en annan, detta eftersom åtgärden innebär en förändring av kostnadskontexten.  
 
-Vanligtvis tilldelas Utleveranslagerställe och platsen för den legotillverkning resursgrupp direkt lagret och plats för operationen i flödet flödes- eller nästa steg. Den här inställningen bidrar till att minska mängden jobbet rapportering som uppstår eller antal ytterligare överföringarna som måste utformas.
+Vanligtvis tilldelas utleveranslagerställe och platsen för en resursgrupp inom legotillverkning direkt till lagret och platsen för nästa verksamhetssteg i produktionsflödet/annat flöde. Den här inställningen hjälper till att minska mängden jobbrapportering som uppstår, eller antalet ytterligare överföringar som måste utformas.
+
+
 
 

@@ -1,5 +1,5 @@
 ---
-title: "Ställa in inloggning för molnbaserad kassa och MOPS"
+title: "Konfigurera utökad inloggning för Cloud POS och MPOS"
 description: "Denna wiki täcker dina alternativ för att ställa in utökad inloggning för molnbaserad kassa och Retail Modern POS (MPOS)."
 author: josaw1
 manager: AnnBe
@@ -25,14 +25,14 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="set-up-extended-logon-functionality-for-cloud-pos-and-mpos"></a>Ställa in inloggning för molnbaserad kassa och MOPS
+# <a name="set-up-extended-logon-functionality-for-cloud-pos-and-mpos"></a>Konfigurera utökad inloggning för Cloud POS och MPOS
 
 Denna wiki täcker dina alternativ för att ställa in utökad inloggning för molnbaserad kassa och Retail Modern POS (MPOS).
 
 <a name="setting-up-extended-logon"></a>Ställa in utökade inloggning
 =========================
 
-Du inställningarna för streckkodsmasker vid **butik och handel**&gt;**kanal**&gt;**POS inställningar**&gt;**profiler för kassa**&gt;**Funktionsprofiler**. **Funktionerna** snabbfliken innehåller följande alternativ som är relaterade till utökad inloggning.
+Du hittar inställningarna för streckkodsmasker på **Butik och handel** &gt; **Kanalinställning** &gt; **Kassainställning** &gt; **Kassaprofiler** &gt; **Funktionsprofiler**. **Funktionerna** snabbfliken innehåller följande alternativ som är relaterade till utökad inloggning.
 
 ### <a name="staff-bar-code-logon"></a>Streckkodsinloggning för personal
 
@@ -53,7 +53,7 @@ När **personalen kort inloggning kräver lösenord** alternativ är aktiverat p
 <a name="assigning-an-extended-logon"></a>Tilldela en utökad inloggning
 ===========================
 
-Som standard är endast chefer kan tilldela utökade inloggning till arbetstagarna. Tilldela inloggning genom att gå till **utökade inloggning** i KASSAN. Söka efter en anställd genom att ange hans eller hennes operatörs-ID i sökfältet. Välj anställd och klicka sedan på **Tilldela**. På nästa sida, nallar eller skanna utökade inloggning tilldelas arbetaren. Om nallar eller skanna finnas framgångsrikt lydde, **OK- **knappen blir tillgänglig. Klicka på **OK för** att spara det utökade inloggning för arbetstagaren.
+Som standard är endast chefer kan tilldela utökade inloggning till arbetstagarna. Tilldela utökad inloggning genom att navigera till **Utökad inloggning** i kassan. Sök sedan efter en anställd genom att ange hans eller hennes operatörs-ID i sökfältet. Välj anställd och klicka sedan på **Tilldela**. På nästa sida, nallar eller skanna utökade inloggning tilldelas arbetaren. Om nallar eller skanna finnas framgångsrikt lydde, **OK- **knappen blir tillgänglig. Klicka på **OK för** att spara det utökade inloggning för arbetstagaren.
 
 <a name="deleting-an-extended-logon"></a>Ta bort en utökad inloggning
 ==========================

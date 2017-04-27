@@ -1,5 +1,5 @@
 ---
-title: "Frisläpp tillverkningsorder"
+title: "Frisläpp produktionsorder"
 description: "En frisläppt produktionsorder är en order som har auktoriserats för tillverkning. Termen frisläppt används för att beskriva ett tillstånd i produktionsorderlivscykeln, där produktionsordern är tillgänglig för körning i produktionsarbete och för lagerställeprocesser."
 author: YuyuScheller
 manager: AnnBe
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="release-production-orders"></a>Frisläpp tillverkningsorder
+# <a name="release-production-orders"></a>Frisläpp produktionsorder
+
+[!include[banner](../includes/banner.md)]
+
 
 En frisläppt produktionsorder är en order som har auktoriserats för tillverkning. Termen frisläppt används för att beskriva ett tillstånd i produktionsorderlivscykeln, där produktionsordern är tillgänglig för körning i produktionsarbete och för lagerställeprocesser. 
 
@@ -42,7 +45,7 @@ En frisläppt produktionsorder är en order som har auktoriserats för tillverkn
 -   För material som reserverats fysiskt genereras lagerställearbete för att plocka material för produktionsordern.
 
 ## <a name="releasing-jobs-to-the-shop-floor"></a>Frisläppning av jobb för fabriken
-När en produktionsorder har frisläppts visas produktionsjobb som hör till ordern och är redo att registreras. Operatorerna kan göra jobbregistreringar, t ex Start och stopp skall antingen den **jobbet kortet terminal** sida eller **card-kortenheter jobbet** sida. Registrerad tid och kvantitet överförs automatiskt från registreringssidorna till produktionsjournaler för att hålla reda på förbrukad tid och kvantitet.
+När en produktionsorder har frisläppts visas produktionsjobb som hör till ordern och är redo att registreras. Operatörerna kan göra jobbregistreringar, t ex Start, Stopp och Slutförande, på antingen sidan **Jobbkortterminal** eller sidan **Jobbkortenhet**. Registrerad tid och kvantitet överförs automatiskt från registreringssidorna till produktionsjournaler för att hålla reda på förbrukad tid och kvantitet.
 
 ## <a name="route-cards"></a>Flödeskort
 Ett flödeskort omfattar en översikt över informationen som kommer från flödet och operationsinställningarna samt från operations- och finplaneringsmetoderna.
@@ -54,11 +57,13 @@ Ett flödesjobb anger alla jobb i en operation i detalj och omfattar inställnin
 Ett jobbkort anger de enskilda jobbnumren för en viss operation. Ett jobb visas på varje sida. De jobb som finns på ett jobbkort, och deras uppskattade tider, kommer från flödet och operationens inställningsinformation. Från ett jobbkort kan du öppna sidan **Produktionsjournalrader**, **jobbkort **. De som driver operationsresurser kan återrapportera om produktionsprocessen. Det finns fält där du kan ange förbrukningsstatistik och information som felkvantitet.
 
 ## <a name="warehouse-work-for-raw-material-picking"></a>Lagerställearbete för plockning av råmaterial.
-Produkter för råvaraplockning genereras under leverans. Arbete genereras endast för mängden av material som fysiskt reserverats för tillverkningsordern innan ordern släpptes. Följande inställningar krävs för att generera arbete lagerstället för plockning råmaterial:
+Produkter för råvaraplockning genereras under leverans. Arbete genereras endast för mängden av material som fysiskt reserverats för tillverkningsordern innan ordern frisläpptes. Följande inställningar krävs för att generera lagerarbete för plockning av råmaterial:
 
 -   Ett platsdirektiv för plockning för råmaterial som bestämmer vilket lagerställen som materialet ska plockas i
 -   En vågmall för råmaterial, där policyer för utförande av lagerställearbete konfigureras
 -   En produktionsinleverans som bestämmer var materialet ska placeras
+
+
 
 
 

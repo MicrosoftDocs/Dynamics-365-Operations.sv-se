@@ -1,6 +1,6 @@
 ---
 title: "Enkäter"
-description: "Det här avsnittet innehåller allmän information om enkäter och länkar till mer detaljerad information. En enkät är en uppsättning frågor som används för att samla in information för olika ändamål. Det går att utforma, skapa, distribuera och fylla i enkäter och sedan analysera resultaten."
+description: "Det här ämnet innehåller allmän information om enkäter och länkar till mer detaljerad information. En enkät är en uppsättning frågor som används för att samla in information för olika ändamål. Det går att utforma, skapa, distribuera och fylla i enkäter och sedan analysera resultaten."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -28,9 +28,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="questionnaires"></a>Enkäter
 
-Det här avsnittet innehåller allmän information om enkäter och länkar till mer detaljerad information. En enkät är en uppsättning frågor som används för att samla in information för olika ändamål. Det går att utforma, skapa, distribuera och fylla i enkäter och sedan analysera resultaten. 
+[!include[banner](includes/banner.md)]
 
-Du kan anpassa en enkät så att den passar dina specifika behov genom att använda olika funktioner som är tillgängliga i Microsoft Dynamics 365 för operationer. Nedan följer några exempel på hur enkäter kan användas:
+
+Det här ämnet innehåller allmän information om enkäter och länkar till mer detaljerad information. En enkät är en uppsättning frågor som används för att samla in information för olika ändamål. Det går att utforma, skapa, distribuera och fylla i enkäter och sedan analysera resultaten. 
+
+Du kan anpassa en enkät så att den passar dina specifika krav genom att använda olika funktioner som är tillgängliga i Microsoft Dynamics 365 for Operations. Nedan följer några exempel på hur enkäter kan användas:
 
 -   Testa medarbetares och sökandes professionella färdigheter.
 -   Utvärdera om kursdeltagare lärde sig kursmaterialet.
@@ -42,9 +45,9 @@ I följande tabell finns länkar till mer information om viktiga enkätuppgifter
 
 | Avsnitt| beskrivning|
 |------|------------|
-| [Design a questionnaire](design-questionnaires.md)  | Den här artikeln ger information om hur du utformar en enkät. Utformningen omfattar att ställa in förutsättningar, frågor och svar och sedan att kombinera dem till en enkät. |
-| [Distribute and complete a questionnaire](distribute-questionnaires.md)  | Den här artikeln innehåller information om hur du distribuerar en enkät till svarande och hur du fyller i enkäter.                                                                       |
-| [View and evaluate the results of a questionnaire](evaluate-questionnaire-results.md) | Den här artikeln innehåller information om hur du visar och utvärderar resultaten från ifyllda enkäter.                                                                                        |
+| [Utforma en enkät](design-questionnaires.md)  | Den här artikeln ger information om hur du utformar en enkät. Utformningen omfattar att ställa in förutsättningar, frågor och svar och sedan att kombinera dem till en enkät. |
+| [Distribuera och slutföra en enkät](distribute-questionnaires.md)  | Den här artikeln innehåller information om hur du distribuerar en enkät till svarande och hur du fyller i enkäter.                                                                       |
+| [Visa och utvärdera resultaten för en enkät](evaluate-questionnaire-results.md) | Den här artikeln innehåller information om hur du visar och utvärderar resultaten från ifyllda enkäter.                                                                                        |
 
 
 
@@ -55,6 +58,8 @@ I följande tabell finns länkar till mer information om viktiga enkätuppgifter
 
 [Distribuera och slutföra enkäter](distribute-questionnaires.md)
 
-[Visa och utvärdera resultaten för enkäter](evaluate-questionnaire-results.md)
+[Visa och utvärdera resultaten av en enkät](evaluate-questionnaire-results.md)
+
+
 
 

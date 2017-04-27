@@ -1,5 +1,5 @@
 ---
-title: Uppdatera journal bank sammansatta enheten
+title: "Uppdatera den sammansatta enheten för bankjournal"
 description: "Följande steg behövs för att lägga till det ytterligare BankTransactionType-fältet till den sammansatta enheten för bankjournal (BankJournalEntity)."
 author: twheeloc
 manager: AnnBe
@@ -24,20 +24,23 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="update-the-bank-journal-composite-entity"></a>Uppdatera journal bank sammansatta enheten
+# <a name="update-the-bank-journal-composite-entity"></a>Uppdatera den sammansatta enheten för bankjournal
+
+[!include[banner](../includes/banner.md)]
+
 
 Följande steg behövs för att lägga till det ytterligare BankTransactionType-fältet till den sammansatta enheten för bankjournal (BankJournalEntity).
 
 Gör på följande sätt när du vill lägga till det ytterligare BankTransactionType-fältet till den sammansatta enheten för bankjournal (BankJournalEntity).
 
 1.  Kompilera och synkronisera följande sammansatta enheter, enheter och mellanlagringsregister:
-    -   Sammansatt entitet\\BankJournalEntity
-    -   Entiteten\\BankJournalHeaderEntity
-    -   Entiteten\\BankJournalLineEntity
-    -   Registret\\BankJournalHeaderStaging
-    -   Registret\\BankJournalLineStaging
+    -   Sammansatt enhet\\BankJournalEntity
+    -   Enhet\\BankJournalHeaderEntity
+    -   Enhet\\BankJournalLineEntity
+    -   Tabell\\BankJournalHeaderStaging
+    -   Tabell\\BankJournalLineStaging
 
-2.  Hantering av\\data projekt
+2.  Datahantering\\dataprojekt
     -   Exponera typen **Bank Transaction **i layouten **Source Data **.
         -   Källdataformat = XML-Element
         -   Enhetsnamn = Bank Journal
@@ -49,6 +52,8 @@ Gör på följande sätt när du vill lägga till det ytterligare BankTransactio
             -   Kontrollera att banktransaktionstypen mappas från källa (Source) till mellanlagring (Staging).
 
 3.  Importera det nya utdraget.
+
+
 
 
 

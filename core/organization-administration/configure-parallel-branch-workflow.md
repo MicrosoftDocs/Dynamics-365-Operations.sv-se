@@ -26,13 +26,16 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="configure-a-parallel-branch-in-a-workflow"></a>Konfigurera en parallell gren i ett arbetsflöde
 
+[!include[banner](../includes/banner.md)]
+
+
 Slutför följande procedurer i arbetsflödesredigeraren om du vill konfigurera en parallell gren.
 
 En parallellt gren är i grunden i ett arbetsflöde som körs i samband med ett överordnat arbetsflöde.
 
 ## <a name="name-a-branch"></a>Namnge en gren
 Följ dessa steg när du vill ange ett namn för en parallell gren.
-1.  Högerklicka på den parallella grenen och välj **egenskaper**. Den **egenskaper** visas.
+1.  Högerklicka på den parallella grenen och klicka sedan på **Egenskaper**. Formuläret **Egenskaper** visas.
 2.  Klicka på **Grundinställningar** i det vänstra fönstret.
 3.  Ange ett unikt namn för parallellnamnet i fältet **Namn**.
 4.  Klicka på **Stäng**.
@@ -48,5 +51,7 @@ Gör på följande sätt när du vill designa och konfigurera elementen för en 
 --------
 
 [Skapa ett arbetsflöde](create-workflow.md)
+
+
 
 

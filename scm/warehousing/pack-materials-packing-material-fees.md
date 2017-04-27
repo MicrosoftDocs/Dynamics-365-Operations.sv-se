@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="packing-materials-and-fees"></a>Förpackningsmaterial och avgifter
 
+[!include[banner](../includes/banner.md)]
+
+
 Avgifter för förpackningsmaterial betalas i vissa intervaller till ett återvinningsföretag. Ett belopp per viktenhet måste betalas för varje material som en förpackningsenhet består av. Avgifter för förpackningsmaterial beräknas och rapporteras, men inga redovisningstransaktioner bokförs eftersom avgifterna inte räknas som skatter som måste betalas till en myndighet.
 
 Vikt och avgifter för förpackningsmaterial beräknas för försäljnings- och inköpsorderrader.
@@ -52,7 +55,7 @@ När du skapar en försäljningsorderrad görs en kontroll av huruvida förpackn
 ## <a name="packing-units-on-purchase-order-lines"></a>Förpackningsenheter på inköpsorderrader
 Förpackningsmaterialstransaktioner för en inköpsorderrad skapas inte av systemet. Du kan skapa transaktioner för fakturerade inköpsorderrader manuellt på sidan **Förpackningsmaterialtransaktioner**.
 
-## <a name="set-up-customer-packagingmaterialfee-license-numbers"></a>Ställ in kundens licensnummer för packagingmaterialfee
+## <a name="set-up-customer-packagingmaterialfee-license-numbers"></a>Ställ in kundens licensnummer för förpackningsmaterialavgift
 Om kunden ska betala förpackningsmaterialavgifterna anger du kundens licensnummer för förpackningsmaterialavgifter på sidan **Kunder**. När kunden har tilldelats ett licensnummer beräknas förpackningsmaterialavgifterna automatiskt när försäljningsorder faktureras. Efter faktureringen avmarkeras kryssrutan **Beräkna avgift** på sidan **Förpackningsmaterialtransaktioner** eftersom du inte behöver beräkna och skriva ut en rapport. Du kan skriva ut vikter för förpackningsmaterial på fakturan och informera kunderna om att de ska betala avgifterna. 
 
 Om ditt företag ska betala förpackningsmaterialavgifterna ska du inte fylla i kundens licensnummer. Efter faktureringen markeras kryssrutan **Beräkna avgift** på sidan **Förpackningsmaterialtransaktioner**. Detta innebär att avgifterna beräknas när en rapport skapas. Du kan skriva ut vikterna på fakturan och informera kunderna om att ditt företag betalar avgifterna.
@@ -60,6 +63,8 @@ Om ditt företag ska betala förpackningsmaterialavgifterna ska du inte fylla i 
 ## <a name="print-packaging-material-weights-on-invoices"></a>Skriv ut vikter på förpackningsmaterial på fakturor
 Du kan skriva ut vikter för förpackningsmaterial på fakturan och ange vem som betalar förpackningsmaterialavgifterna. Vikterna sammanställs efter förpackningsmaterialkod.
  
+
+
 
 
 

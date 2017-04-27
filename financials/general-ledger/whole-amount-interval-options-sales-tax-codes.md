@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="whole-amount-and-interval-calculation-options-for-sales-tax-codes"></a>Alternativ för hela belopp och intervallberäkning för momskoder
 
+[!include[banner](../includes/banner.md)]
+
+
 Den här artikeln beskriver alternativen för fältet Beräkningsmetod för momskoder och hur moms beräknas för intervall och hela belopp.
 
 Du kan ställa in en momskod som ska beräknas baserat på ett helt belopp eller ett intervallbelopp. På sidan Momskoder använder du fältet Beräkningsmetod på snabbfliken Beräkning för att välja hur du beräknar en momskod.
@@ -56,10 +59,10 @@ Momsen beräknas till hela momspliktiga beloppet.
 
 | Momspliktigt belopp (pris) | Beräkning    | Moms |
 |------------------------|----------------|-----------|
-| 35,00                  | 35.00 \* 0.30  | 10,50     |
-| 50,00                  | 50.00 \* 0.30  | 15,00     |
-| 85,00                  | 85.00 \* 0.20  | 17,00     |
-| 305,00                 | 305.00 \* 0.10 | 30,50     |
+| 35,00                  | 35,00 \* 0,30  | 10,50     |
+| 50,00                  | 50,00 \* 0,30  | 15,00     |
+| 85,00                  | 85,00 \* 0,20  | 17,00     |
+| 305,00                 | 305,00 \* 0,10 | 30,50     |
 
 ## <a name="example-interval-method-of-calculation"></a> Exempel: Beräkningsmetoden Intervall
 PÅ sidan Värden ställs momssatserna in med följande intervall:
@@ -75,14 +78,16 @@ Momsen är summan av de momsbelopp som beräknas för varje beloppsintervall.
 
 | Momspliktigt belopp (pris) | Beräkning                                                               | Moms |
 |------------------------|---------------------------------------------------------------------------|-----------|
-| 35,00                  | 35.00 \* 0.30                                                             | 10,50     |
-| 50,00                  | 50.00 \* 0.30                                                             | 15,00     |
-| 85,00                  | (50.00 \* 0.30 = 15.00) + (35.00 \* 0.20 = 7.00)                          | 22,00     |
-| 305,00                 | (50.00 \* 0.30 = 15.00) + (50.00 \* 0.20 = 10.00) + (205 \* 0.10 = 20.50) | 45,50     |
+| 35,00                  | 35,00 \* 0,30                                                             | 10,50     |
+| 50,00                  | 50,00 \* 0,30                                                             | 15,00     |
+| 85,00                  | (50,00 \* 0,30 = 15,00) + (35,00 \* 0,20 = 7,00)                          | 22,00     |
+| 305,00                 | (50,00 \* 0,30 = 15,00) + (50,00 \* 0,20 = 10,00) + (205 \* 0,10 = 20,50) | 45,50     |
 
  
 
-Mer information finns i [fastställa skattesatser försäljning utifrån bidragsunderlaget och beräkningen metoden fält](marginal-base-field.md).
+Mer information finns i [Bestämning av momssatser baserat på fälten Marginal base och Calculation method](marginal-base-field.md)
+
+
 
 
 

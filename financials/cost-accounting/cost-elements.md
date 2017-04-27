@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="cost-element-dimensions"></a>Dimensioner för kostnadselement
 
+[!include[banner](../includes/banner.md)]
+
+
 Som en av kärnapelarna i kostnadsredovisning, används kostnadselementen för att kategorisera och spåra var kostnaderna flödar till. 
 
 Ett kostnadselement motsvarar en kostnadsrelevant artikel i kontoplanen. I princip kan det vara valfri typ av element på den lägsta nivån i en verksamhet som kostnader kan flöda till. Kostnadselement som ett begrepp sträcker sig från redovisningskonton till alla kostnadsrelevanta resurser. För närvarande stöder kostnadsredovisning huvudbokskonton.
@@ -64,12 +67,14 @@ Det finns två typer av kostnadselement: primära kostnadselement och sekundära
 ## <a name="cost-element-dimensions-and-cost-element-dimension-members"></a>Kostnadselement och+ dimensionsmedlemmar för kostnadselement.
 Kostnadselement kallas *kostnadselementdimensioner*. De enskilda dimensionsvärdena kallas *dimensionsmedlemmar för kostnadselement*. Du kan till exempel ha en amerikansk kontoplanstruktur (COA) som utgör grunden för din lagstadgade rapportering. Detta COA används som kostnadselementdimension. Kontona som är primära kostnadselement, representeras som dimensionsmedlemmar för kostnadselement i kostnadsredovisning. Följande exempel visar en skärmdump av huvudkonton som kostnadselementdimensionen med dess faktiska huvudkonton som dimensionsmedlem för kostnadselement. 
 
-[![kostnad-element-dimensioner](./media/cost-element-dimensions.png)](./media/cost-element-dimensions.png)
+[![dimensioner-för-kostnadselement](./media/cost-element-dimensions.png)](./media/cost-element-dimensions.png)
 
 ## <a name="import-cost-element-dimension-members-through-data-connectors"></a>Importera dimensionsmedlemmar för kostnadselement via datakopplingar
 För att underlätta inställningarna av dimensionsmedlemmar för kostnadselement i kostnadsredovisning kan du använda datakopplingar, som antingen är föruppbyggda eller personligt anpassade för att hämta de primära kostnadselementen från ett eller flera källsystem.
 
 ## <a name="implementation-considerations"></a>Implementeringöverväganden
 Eftersom kostnadselement representerar den lägsta nivån i kostnadsdetaljer, ska du se till att alla kostnadselement som är nödvändiga för att göra chefs rapporteringen inkluderas när du implementerar kostnadselementstrukturen. Det kan vara en utmaning att hitta ett lämpligt antal kostnadselement för kostnadskontroll. Att ha tusentals kostnadselement kan göra det svårt att kontrollera varje kostnadselement. Alternativt kan du gruppera kostnadselement och hantera kostnadskontroll på en samlad nivå.
+
+
 
 

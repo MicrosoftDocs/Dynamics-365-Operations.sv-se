@@ -29,9 +29,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="production-setup-requirements"></a>Inställningskrav för produktion
 
+[!include[banner](../includes/banner.md)]
+
+
 Det här avsnittet innehåller information om inställningar som måste göras innan du kan arbeta med produktionsstyrningen. 
 
-Produktionskontroll ingår funktioner i andra moduler. Detta gör att du kan ändra tillverkningsorder och se till att de uppdateras automatiskt i alla andra relaterade processer och beräkningar i systemet. Konfigurationsprocedurerna i det här avsnittet visas i den ordning som du ska utföra dem.
+Produktionskontroll integreras med funktioner i andra moduler. Detta gör att du kan ändra tillverkningsorder och se till att de uppdateras automatiskt i alla andra relaterade processer och beräkningar i systemet. Konfigurationsprocedurerna i det här avsnittet visas i den ordning som du ska utföra dem.
 
 ## <a name="required-baseline-setup-in-other-modules"></a>Baslinjeinställningar som krävs i andra moduler
 En del information måste ställas in i andra moduler för att du ska kunna arbeta med produktionsmodulen. Den här konfigurationen omfattar följande uppgifter:
@@ -52,7 +55,7 @@ Innan du använder Produktionskontroll öppnar du Organisationsadministration oc
 4.  **Resurser** – Ställ in verksamhetsresurser för att definiera de resurser som används för att genomföra produktionsprocessen och planera för kapacitet.
 
 ## <a name="required-production-parameters-setup"></a>Inställningar av produktionsparametrar som krävs
-**Produktionskontrollparametrar** – Ställ in grundläggande produktionsparametrar för att definiera hur systemet hanterar och bearbetar produktionsorder. Definiera hur produktionsorder skapas, uppskattas, planeras och förbrukas. Du kan också ange vilken typ av återrapportering du vill använda och hur kostnadsredovisning ska utföras.
+**Produktionskontrollparametrar** – Ställ in grundläggande produktionsparametrar för att definiera hur systemet hanterar och bearbetar tillverkningsorder. Definiera hur produktionsorder skapas, uppskattas, planeras och förbrukas. Du kan också ange vilken typ av återrapportering du vill använda och hur kostnadsredovisning ska utföras.
 
 ## <a name="required-journal-name-identification"></a>Journalnamns-ID krävs
 **Produktionsjournalnamn** – Ange de produktionsjournalnamn som används för att registrera och bokföra transaktioner.
@@ -76,6 +79,8 @@ Om du arbetar med flöden måste operationerna definieras för varje produktions
 1.  **Produktionsgrupper** – Ställ in produktionsgrupper för att skapa relationer mellan tillverkningsordern och redovisningskonton. Redovisningskontona används för att bokföra eller gruppera order för rapportering.
 2.  **Produktionspooler** – Skapa produktionspooler för att gruppera produktionsorder så att du kan bearbeta brådskande produktionsorder, eller för att ta bort eller bokföra grupper med order.
 3.  **Egenskaper** – Definiera egenskaper för att skapa särskilda attribut som du kan tilldela till resurser för att styra ordningen för produktioner. De här attributen är kopplade till arbetstidsmallen.
+
+
 
 
 

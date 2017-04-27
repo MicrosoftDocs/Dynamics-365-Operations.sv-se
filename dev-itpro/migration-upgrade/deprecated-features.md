@@ -118,7 +118,7 @@ eGiro baseras på den internationella UN EDIFACT CREMUL-standarden (Multiple Cre
 |                              |                                                                                           |
 |------------------------------|-------------------------------------------------------------------------------------------|
 | Orsak till avskrivning       | Betalningformatet används inte längre.                                                     |
-| Ersatt av en annan funktion? | Nr. Formatet ersätts med ISO 20022 uttryck Importformat i framtida versioner. |
+| Ersatt av en annan funktion? | Nr. Formatet ska ersättas med ISO 20022-utdragsimportformat i kommande versioner. |
 | Påverkade moduler             | Kundreskontra                                                                       |
 
 ### <a name="external-inventory-for-poland"></a>Externt lager för Polen
@@ -138,7 +138,7 @@ Ett verktyg för att ställa in datainsamling för redovisning och momsrapporter
 |                              |                                                                                          |
 |------------------------------|------------------------------------------------------------------------------------------|
 | Orsak till avskrivning       | Begränsad användning                                                                            |
-| Ersatt av en annan funktion? | Nr. Verktyget ersätts med elektronisk rapportering i framtida utgåvor konfigurationer. |
+| Ersatt av en annan funktion? | Nr. Verktyget ska ersättas av elektroniska rapporteringskonfigurationer i kommande versioner. |
 | Påverkade moduler             | Redovisning                                                                           |
 
 ### <a name="import-of-customer-payment-transactions-for-finland"></a>Import av kundbetalningstransaktioner för Finland
@@ -148,7 +148,7 @@ Du kan välja ett importformat för finska betalningar som importerar kundbetaln
 |                              |                                                                                           |
 |------------------------------|-------------------------------------------------------------------------------------------|
 | Orsak till avskrivning       | Betalningformatet används inte längre.                                                     |
-| Ersatt av en annan funktion? | Nr. Formatet ersätts med ISO 20022 uttryck Importformat i framtida versioner. |
+| Ersatt av en annan funktion? | Nr. Formatet ska ersättas med ISO 20022-utdragsimportformat i kommande versioner. |
 | Påverkade moduler             | Kundreskontra                                                                       |
 
 ### <a name="import-of-payment-transactions-into-a-general-ledger-journal-for-finland"></a>Import av betalningstransaktioner till en redovisningsjournal för Finland
@@ -158,7 +158,7 @@ Ett format som är specifik för Finland används för att importera redovisning
 |                              |                                                                                           |
 |------------------------------|-------------------------------------------------------------------------------------------|
 | Orsak till avskrivning       | Betalningformatet används inte längre.                                                     |
-| Ersatt av en annan funktion? | Nr. Formatet ersätts med ISO 20022 uttryck Importformat i framtida versioner. |
+| Ersatt av en annan funktion? | Nr. Formatet ska ersättas med ISO 20022-utdragsimportformat i kommande versioner. |
 | Påverkade moduler             | Kundreskontra                                                                       |
 
 ### <a name="integration-with-isabel-synchronized-cis-for-belgium"></a>Integration med Isabel-synkroniserad (CIS) för Belgien
@@ -168,7 +168,7 @@ Isabel är ramverket för elektronisk bankverksamhet i Europa och en de facto-st
 |                              |                                                                                                                      |
 |------------------------------|----------------------------------------------------------------------------------------------------------------------|
 | Orsak till avskrivning       | Integration med Isabel-klienten har annullerats.                                                                |
-| Ersatt av en annan funktion? | Nr. Betalningsformat som inte längre används byts ISO20022 kredit överföringen betalningsformat för Belgien. |
+| Ersatt av en annan funktion? | Nr. Betalningsformaten som inte längre används ersätts av ISO20022-betalningsformat för kreditöverföring för Belgien. |
 | Påverkade moduler             | Leverantörsreskontra                                                                                                     |
 
 ### <a name="modifications-in-the-chart-of-accounts-and-accounting-rules-for-spain"></a>Ändringar i kontoplanen och redovisningsreglerna för Spanien
@@ -218,7 +218,7 @@ Formaten Telehansa och TeleTeenu används för bankbetalningsimport.
 |                              |                                                                                            |
 |------------------------------|--------------------------------------------------------------------------------------------|
 | Orsak till avskrivning       | Betalningformaten används inte längre.                                                    |
-| Ersatt av en annan funktion? | Nr. Formaten ersätts med ISO 20022 uttryck Importformat i framtida versioner. |
+| Ersatt av en annan funktion? | Nr. Formaten ska ersättas med ISO 20022-utdragsimportformat i kommande versioner. |
 | Påverkade moduler             | Kundreskontra                                                                        |
 
 ### <a name="performance-management-goal-workflow"></a>Arbetsflöde för prestationshanteringmål
@@ -228,7 +228,7 @@ Prestationshantering inkluderar målhantering och integration med prestationsgra
 |                              |                                                                                                                          |
 |------------------------------|--------------------------------------------------------------------------------------------------------------------------|
 | Orsak till avskrivning       | Prestationshantering formades om, och antalet målsidor förminskades för att förenkla processen.                 |
-| Ersatt av en annan funktion? | Nr. Mål kan är synliga för projektledare Manager Self Service-portalen och ändras och visas av projektledaren. |
+| Ersatt av en annan funktion? | Nr. Mål kan visas för chefer via portalen Självbetjäning för chef, och kan ändras och visas av chefen. |
 | Påverkade moduler             | Administration av humankapital                                                                                                 |
 
 ### <a name="postgirot-and-postgirot-utland-payment-formats-for-sweden"></a>Postgirot och Postgirot Utland betalningsformat för Sverige
@@ -241,19 +241,19 @@ Postgirot och Postgirot Utland betalningsformat för Sverige.
 | Ersatt av en annan funktion? | Ja, ISO20022 betalningsformat för kreditöverföring för Sverige |
 | Påverkade moduler             | Leverantörsreskontra                                        |
 
-### <a name="radio-frequency-identifier"></a>Radiofrekvens-ID
+### <a name="radio-frequency-identifier"></a>Radiofrekvensidentifiering
 
-Radiofrekvensidentifiering (RFID) är en teknik för insamling av uppgifter som använder elektroniska taggar för att lagra identifieringsdata och en läsare nr rad av utan krav att samla in data för identifiering.
+Radiofrekvensidentifiering (RFID) är en datainsamlingsteknik som använder elektroniska taggar för att lagra identifieringsdata och en läsare utan krav på fri sikt som fångar upp identifieringsdatan.
 
 |                              |                                               |
 |------------------------------|-----------------------------------------------|
-| Orsak till avskrivning       | Låg Kundförbrukning och en begränsad funktion. |
+| Orsak till avskrivning       | Låg kundanvändning och en begränsad uppsättning funktioner. |
 | Ersatt av en annan funktion? | Ingen                                            |
 | Påverkade moduler             | Lagerhantering                          |
 
 ### <a name="report-about-state-invoices-numbering-for-latvia"></a>Rapport om numrering av statliga fakturor för Lettland
 
-Lettisk lagstiftning innehåller särskilda regler om hur försäljningsfakturor ska numreras. Det gör att du kan tilldela specifika försäljningsfakturor, baserat på användare eller användargrupp. Du kan sedan skapa en rapport eller en XML-fil. Du kan även skriva ut en rapport om fakturanummer som används.
+Lettisk lagstiftning innehåller särskilda regler om hur försäljningsfakturor ska numreras. Funktionen låter dig tilldela specifika nummer till försäljningsfakturor som baseras på användaren eller användargruppen. Du kan sedan skapa en rapport eller en XML-fil. Du kan även skriva ut en rapport om fakturanummer som används.
 
 |                              |                                                                                                                          |
 |------------------------------|--------------------------------------------------------------------------------------------------------------------------|
@@ -312,7 +312,7 @@ Ett arbetsflöde för hantering av genereringen av medarbetare är en av flera a
 
 ### <a name="aif-axd-and-axbc-integrations"></a>AIF-, AxD- och AxBC-integrationer
 
-I AIF (Application Integration Framework) kan data utbytas med externa system genom affärslogik som exponeras som tjänster. Microsoft Dynamics AX omfattar tjänster som baseras på dokument och .NET Business Connector (AxBC). Ett dokument skapas genom att använda XML. XML inkluderar rubrikinformation som läggs till för att skapa ett *meddelande* som kan överföras till eller från Microsoft Dynamics AX. Exempel på dokument innehåller försäljningsorder och inköpsorder. Dock kan nästan alla enheter, till exempel en kund, representeras av ett dokument. Tjänster som är baserade på dokument används den **Axd &lt;*dokument*&gt;** klasser.
+I AIF (Application Integration Framework) kan data utbytas med externa system genom affärslogik som exponeras som tjänster. Microsoft Dynamics AX omfattar tjänster som baseras på dokument och .NET Business Connector (AxBC). Ett dokument skapas genom att använda XML. XML inkluderar rubrikinformation som läggs till för att skapa ett *meddelande* som kan överföras till eller från Microsoft Dynamics AX. Exempel på dokument innehåller försäljningsorder och inköpsorder. Dock kan nästan alla enheter, till exempel en kund, representeras av ett dokument. Tjänster som baseras på dokument använder klasserna **Axd &lt;*Dokument*&gt;**.
 
 |                              |                                                                                                                                                                                                          |
 |------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -347,7 +347,7 @@ Federala skatteutdrag för ICMS-moms
 |                              |                                                                                                                       |
 |------------------------------|-----------------------------------------------------------------------------------------------------------------------|
 | Orsak till avskrivning       | Detta utdrag används inte längre i vissa brasilianska stater.                                                     |
-| Ersatt av en annan funktion? | Nr. Användare kan använda allmänna elektroniska Rapporteringsverktyg konfigurera utdraget om det krävs under vissa förhållanden. |
+| Ersatt av en annan funktion? | Nr. Användare kan använda den allmänna funktionen för elektronisk rapportering för att konfigurera utdraget, om det krävs och i vissa fall. |
 | Påverkade moduler             | Skatteböcker                                                                                                          |
 
 ### <a name="brazilian-scan-contingency-mode-for-nf-e"></a>Brasiliansk SCAN eventualitetläge för NF-e
@@ -631,7 +631,7 @@ Löneinformation i HR
 |                              |                                                                                                                                                                                                                                                                                                                              |
 |------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Orsak till avskrivning       | Den här funktionen har ersatts av huvudsidorna Lön och Personal.                                                                                                                                                                                                                                              |
-| Ersatt av en annan funktion? | **Förmåner**, **Inkomster** och andra relaterade sidor, som tidigare fanns i USA-lönelistan, har konfigurerats om och är nu en del av den grundläggande konfigurationen Personal för att ge stöd för extern lönebearbetning. Den här funktionen är att komma åt den **personal 1**&gt;**lön** konfigurationsnyckel. |
+| Ersatt av en annan funktion? | **Förmåner**, **Inkomster** och andra relaterade sidor, som tidigare fanns i USA-lönelistan, har konfigurerats om och är nu en del av den grundläggande konfigurationen Personal för att ge stöd för extern lönebearbetning. Den här funktionen kan nås med hjälp av konfigurationsnyckeln **Personal 1** &gt; **Lönelista**. |
 | Påverkade moduler             | Personal, Lön                                                                                                                                                                                                                                                                                                     |
 
 ### <a name="private-blocking-of-inventory-and-warehouse-management-journals"></a>Privat blockering av inventerings- och lagerhanteringsjournaler
@@ -698,12 +698,12 @@ Med hjälp av webbplatstjänster kan du utöka dina affärsprocesser till Intern
 | Ersatt av en annan funktion? | Nej                                                                                                                                       |
 | Påverkade moduler             | Personalrekrytering, Fallhantering, Anbudsförfrågningar, Leverantörsregistrering                                                                  |
 
-### <a name="ssas-demand-forecasting-strategy"></a>SSAS efterfrågan prognostisering strategi
+### <a name="ssas-demand-forecasting-strategy"></a>SSAS-tjänster för efterfrågeprognosticering
 
 |                              |                                                                              |
 |------------------------------|------------------------------------------------------------------------------|
 | Orsak till avskrivning       | Utformningen av den här funktionen stöds inte i den nya arkitekturen i molnet. |
-| Ersatt av en annan funktion? | Azure maskin inlärning efterfrågan prognostisering strategi                           |
+| Ersatt av en annan funktion? | Efterfrågeprognosticeringsstrategi för Azure-maskininlärning                           |
 | Påverkade moduler             | Planering                                                                     |
 
 ### <a name="travel-requisitions"></a>Reserekvisitioner

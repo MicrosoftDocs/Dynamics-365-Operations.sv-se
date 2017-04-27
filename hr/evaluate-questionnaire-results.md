@@ -1,6 +1,6 @@
 ---
 title: "Visa och utvärdera resultaten för en enkät"
-description: "Det här avsnittet beskrivs hur du kan visa och utvärdera resultaten för enkäter som svarande besvarar."
+description: "Detta hjälpavsnitt förklarar hur visar och utvärderar resultaten för enkäter som svarande slutför."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -28,7 +28,7 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="view-and-evaluate-the-results-of-a-questionnaire"></a>Visa och utvärdera resultaten för en enkät
 
-Det här avsnittet beskrivs hur du kan visa och utvärdera resultaten för enkäter som svarande besvarar. 
+Detta hjälpavsnitt förklarar hur visar och utvärderar resultaten för enkäter som svarande slutför. 
 
 Efter att svaranden har slutfört en enkät går det att visa och utvärdera enkätresultaten på följande sätt:
 

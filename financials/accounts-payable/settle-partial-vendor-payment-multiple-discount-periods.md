@@ -1,5 +1,5 @@
 ---
-title: "Kvitta en partiell leverantörsbetalning med flera Rabattperioderna"
+title: "Kvitta en delleverantörsbetalning som har flera rabattperioder"
 description: "Den här artikeln går igenom ett scenario där flera delbetalningar görs till en leverantör som erbjuder flera kassarabatter."
 author: twheeloc
 manager: AnnBe
@@ -26,14 +26,17 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="settle-a-partial-vendor-payment-that-has-multiple-discount-periods"></a>Kvitta en partiell leverantörsbetalning med flera Rabattperioderna
+# <a name="settle-a-partial-vendor-payment-that-has-multiple-discount-periods"></a>Kvitta en delleverantörsbetalning som har flera rabattperioder
+
+[!include[banner](../includes/banner.md)]
+
 
 Den här artikeln går igenom ett scenario där flera delbetalningar görs till en leverantör som erbjuder flera kassarabatter. 
 
 Leverantör 3054 erbjuder Fabrikam en kassarabatt på 2 procent, om en faktura betalas inom fem dagar och en kassarabatt på 1 procent, om fakturan betalas inom 14 dagar.
 
 ## <a name="invoice"></a>Faktura
-28 juni skapa en faktura på 1 000,00 för leverantör av 3054 April. April kan visa den här transaktionen på sidan **Leverantörstransaktioner**.
+Den 28 juni skapar April en faktura för 1 000,00 för leverantör 3054. April kan visa den här transaktionen på sidan **Leverantörstransaktioner**.
 
 | Verifikation   | Datum      | Faktura | Debetbelopp i transaktionsvaluta | Kreditbelopp i transaktionsvaluta | Saldo   | Valuta |
 |-----------|-----------|---------|--------------------------------------|---------------------------------------|-----------|----------|
@@ -48,7 +51,7 @@ Följande kassarabattdatum och belopp är tillgängliga för denna faktura.
 | 2015/07/25          | 0,00                 | 1 000,00                       |
 
 ## <a name="payment-on-july-2"></a>Betalning den 2 juli
-Den 2 juli vill April betala 300.00 mot fakturan. Hon skapar en betalning direkt med hjälp av den **betalningsjournal** sida i Leverantörsreskontra. Hon lägger till en rad för leverantör 3054 och anger ett betalningsbelopp på **300,00**. April öppnar sedan sidan **Kvitta transaktioner** så att hon kan välja den faktura som ska kvittas. Hon uppdaterar värdet i fältet **Belopp att kvitta** till **300,00** och noterar att värdet i fältet **Kassarabattbelopp att utnyttja** ändras till **6,12**. Eftersom den här betalningen görs i den första rabattperioden, utnyttjas en rabatt på 2 procent.
+Den 2 juli vill April betala 300,00 mot den här fakturan. Hon skapar en enstaka betalning genom att använda sidan **Betalningsjournal** i Leverantörsreskontra. Hon lägger till en rad för leverantör 3054 och anger ett betalningsbelopp på **300,00**. April öppnar sedan sidan **Kvitta transaktioner** så att hon kan välja den faktura som ska kvittas. Hon uppdaterar värdet i fältet **Belopp att kvitta** till **300,00** och noterar att värdet i fältet **Kassarabattbelopp att utnyttja** ändras till **6,12**. Eftersom den här betalningen görs i den första rabattperioden, utnyttjas en rabatt på 2 procent.
 
 | Markera | Använd kassarabatt | Verifikation   | Konto | Datum      | Förfallodatum  | Faktura | Belopp i transaktionsvalutan | Valuta | Belopp att kvitta |
 |------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
@@ -134,6 +137,8 @@ Den 20 juli skapar April en slutbetalning på 200,00. Ingen rabatt utnyttjas, ef
 | APP-10061  | 2015/07/12 |         | 495,00                               |                                       | 0,00    | USD      |
 | RAB-10061 | 2015/07/12 |         | 5,00                                 |                                       | 0,00    | USD      |
 | APP-10062  | 2015/07/20 |         | 200,00                               |                                       | 0,00    | USD      |
+
+
 
 
 

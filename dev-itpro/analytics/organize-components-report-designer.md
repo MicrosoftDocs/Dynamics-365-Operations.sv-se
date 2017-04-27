@@ -49,18 +49,18 @@ Du kan gruppera rapportdefinitioner för att generera flera rapporter samtidigt.
 ### <a name="create-a-report-group"></a>Skapa en rapportgrupp
 
 1.  Öppna Report Designer och klicka på **Rapportgrupper** i navigeringsfönstret.
-2.  På den **filen** -menyn klickar du på **New**&gt;**grupp rapportdefinitionen** så öppnas en ny rapportgrupp i visningsfönstret. Klicka på den **rapportgrupp** knappen ![rapportgrupp](https://i-technet.sec.s-msft.com/dynimg/IC679515.gif "rapportgrupp") i verktygsfältet.
+2.  På menyn **Arkiv** klickar du på **Ny** &gt; **Rapportgruppsdefinition** för att öppna en ny rapportgrupp i visningsfönstret. Du kan även klicka på knappen **Rapportgrupp** ![Rapportgrupp](https://i-technet.sec.s-msft.com/dynimg/IC679515.gif "Rapportgrupp") i verktygsfältet.
 3.  Klicka på **Rapportgrupp** fliken. Om du vill åsidosätta informationen om enskilda rapportdefinitioner för generering av rapporten väljer du **Åsidosätt företaget, detaljer och datuminställningar från enskilda rapportdefinitioner** kryssrutan. Företagets namn, detaljnivå, preliminär inställning och datuminformation fylls i automatiskt, men du kan fortfarande göra uppdateringar.
 4.  Välj kryssrutan **Inkludera alla rapporteringsvalutor** om du vill skapa fler rapporter som visar vilken valuta som används i rapporten. Du kan komma åt flera vyer genom att klicka på knappen **Valuta** i Web Viewer när du visar rapporten.
 5.  I fältet **Rapporter i grupp** klickar du på **Lägg till** för att välja rapporter som ska ingå i rapportgruppen. Om du vill välja flera rapporter i dialogrutan **Lägg till** kan du hålla ned Ctrl-tangenten samtidigt som du markerar rapporter. När du är klar med att välja rapporter klickar du på **OK**.
-6.  Klicka på **filen**&gt;**spara** spara nya rapportgruppen.
+6.  Klicka på **Arkiv** &gt; **Spara** för att spara den nya rapportgruppen.
 
 ### <a name="modify-a-report-group"></a>Ändra en rapportgrupp
 
 1.  Öppna Report Designer och klicka på **Rapportgrupper** i navigeringsfönstret.
 2.  Dubbelklicka på rapportgruppen att modifiera.
 3.  Klicka på fliken **Rapportgrupp** och utför valfria ändringar.
-4.  På den **filen** -menyn klickar du på **spara** om du vill spara den ändrade rapportgruppen klickar du på den **spara** knappen ![spara](https://i-technet.sec.s-msft.com/dynimg/IC679516.gif "spara") i verktygsfältet.
+4.  På menyn **Arkiv** klickar du på **Spara** för att spara den ändrade rapportgruppen. Du kan också klicka på knappen **Spara** ![Spara](https://i-technet.sec.s-msft.com/dynimg/IC679516.gif "Spara") i verktygsfältet.
 
 **Obs!** Om du har schemalagda rapporter som genereras vid inställda intervall kan du åsidosätta dessa inställningar och generera en rapport direkt.
 
@@ -68,7 +68,7 @@ Du kan gruppera rapportdefinitioner för att generera flera rapporter samtidigt.
 
 1.  Öppna Report Designer och klicka på **Rapportgrupper** i navigeringsfönstret.
 2.  Öppna rapportgruppen att generera.
-3.  Klicka på den **skapa rapport** knappen ![generera rapporten](https://i-technet.sec.s-msft.com/dynimg/IC679517.gif "skapa rapport") att generera rapporter.
+3.  Klicka på knappen **Skapa rapport** ![Skapa rapport](https://i-technet.sec.s-msft.com/dynimg/IC679517.gif "Skapa rapport") för att skapa rapporter.
 
 ### <a name="delete-a-report-group"></a>Ta bort en rapportgrupp
 
@@ -104,8 +104,8 @@ I följande tabell hittar du beskrivningar av kontrollerna på fliken **Rapportg
 <td>Ange vilken detaljnivå rapporten ska innehålla.
 <ul>
 <li><strong>Finansiella</strong> – en hög nivå sammanfattande rapport. Du kan inte detaljgranska till konton och dimensioner, förutom i dem som det finns konton och dimensioner tillagda för i rapportträdet.</li>
-<li><strong>Ekonomiska &amp;konto</strong> – en rapport som innehåller en summering och kontoinformation.</li>
-<li><strong>Finans, konto, &amp;transaktionen</strong> – en rapport som innehåller en summering och transaktionsdetaljer.</li>
+<li><strong>Ekonomisk &amp; Konto</strong> − En rapport som innehåller en sammanfattning på hög nivå och kontodetaljer.</li>
+<li><strong>Ekonomisk, Konto &amp; Transaktion</strong> − En rapport som innehåller en sammanfattning på hög nivå och transaktionsdetaljer.</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -154,6 +154,6 @@ Endast standardbasperiodinställningar sparas tillsammans med rapportdefinitione
 <a name="see-also"></a>Se även
 --------
 
-[Ekonomisk rapportering för Microsoft Dynamics 365 för operationer](financial-reporting-intro.md)
+[Ekonomisk rapportering för Dynamics 365 for Operations](financial-reporting-intro.md)
 
 

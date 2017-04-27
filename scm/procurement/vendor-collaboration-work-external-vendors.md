@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="vendor-collaboration-with-external-vendors"></a>Leverantörssamarbete med externa leverantörer
 
+[!include[banner](../includes/banner.md)]
+
+
 I det här avsnittet beskrivs hur inköpare kan samarbeta med externa leverantörer för att byta ut information om inköpsorder och försändelselager.
 
 Modulen för **Leverantörssamarbete** vänder sig till leverantörer som inte har elektronisk dataväxling (EDI) med Microsoft Dynamics 365 for Operations. Med den kan leverantörer arbeta med inköpsorder, faktura och information om försändelselager. I det här avsnittet beskrivs hur du kan samarbeta med externa leverantörer som använder gränssnittet för leverantörssamarbete när de arbetar med inköpsorder och försändelselagret. Det beskriver även hur du låter en viss leverantör använda leverantörssamarbeten, samt hur du definierar den information som alla leverantörer ska få se när de svarar på en inköpsorder. För mer information om vad externa leverantörer kan göra i gränssnittet för leverantörssamarbeten, se [Vendor collaboration with customers](vendor-collaboration-work-customers-dynamics-365-operations.md).  
@@ -64,11 +67,11 @@ Om du vill dela information om exempelvis enhetspris, rabatter och avgifter via 
 ## <a name="work-with-pos-when-using-vendor-collaboration"></a>Arbeta med inköpsorder när du använder leverantörssamarbeten
 ### <a name="sending-a-po-to-the-vendor"></a>Skicka en inköpsorder till leverantören
 
-Inköpsorder skapas i Dynamics 365 for Operations. När Inköpsordern har statusen **godkänd**, du skickar den till en leverantör via den ** skicka bekräftelse ** åtgärd på de **inköpsorder** sida. Statusen för inköpsordern ändras till i **In External Review**. När inköpsordern har skickats, kan leverantören se den på sidan **Purchase orders for review** i gränssnittet för leverantörssamarbete, där de kan godkänna, avvisa eller föreslå ändringar i ordern. Leverantören kan också lägga till kommentarer för att kommunicera information som ändringar i IO:n. Om du vill dra säljarens uppmärksamhet till en ny inköpsorder kan du även använda utskriftshanteringssystemet för att skicka IO:n via e-post.
+Inköpsorder skapas i Dynamics 365 for Operations. När inköpsordern har statusen **Godkänd** skickar du den till leverantören med åtgärden **Skicka för bekräftelse** på sidan **Inköpsorder**. Statusen för inköpsordern ändras till i **In External Review**. När inköpsordern har skickats, kan leverantören se den på sidan **Purchase orders for review** i gränssnittet för leverantörssamarbete, där de kan godkänna, avvisa eller föreslå ändringar i ordern. Leverantören kan också lägga till kommentarer för att kommunicera information som ändringar i IO:n. Om du vill dra säljarens uppmärksamhet till en ny inköpsorder kan du även använda utskriftshanteringssystemet för att skicka IO:n via e-post.
 
 ### <a name="confirmation-and-acceptance-of-the-po-by-the-vendor"></a>Bekräftelse och godkännande av inköpsordern av leverantören
 
-När en leverantör har godkänt en inköpsorder kan den bekräftas automatiskt, eller också kan den komma att behöva bekräftas manuellt. Detta beror på om den ** leverantör aktivering ** har tilldelats **aktiva (IO är automatisk bekräftats)** för leverantören eller till **aktiva (Inköpsordern är inte bekräftad automatiskt)**.  
+När en leverantör har godkänt en inköpsorder kan den bekräftas automatiskt, eller också kan den komma att behöva bekräftas manuellt. Detta beror på om fältet **Leverantörsaktivering** är inställt på **Aktiv (IO bekräftas automatiskt)** för leverantören, eller på **Aktiv (IO bekräftas inte automatiskt)**.  
 
 Följande tabell visar det typiska informationsutbytet, beroende på hur leverantören svarar när du skickar en inköpsorder för bekräftelse.
 
@@ -95,19 +98,19 @@ Följande tabell visar det typiska informationsutbytet, beroende på hur leveran
 <td>Säljarens svar registreras som <strong>Avvisad</strong> och statusen för IO:n förblir <strong>I extern granskning</strong>. Kasseringen tas emot tillsammans med leverantöranmärkningen.</td>
 </tr>
 <tr class="odd">
-<td>Leverantören <strong>accepterar sorteringsordningen med ändringar</strong>. Ändringar som föreslås på radnivå. Det går att godkänna eller avvisa att enskilda rader. Andra föreslagna ändringar inkluderar:
+<td>Leverantören <strong>accepterar ordern med ändringar</strong>. Ändringar föreslås på radnivån. Det går att godkänna eller avvisa att enskilda rader. Andra föreslagna ändringar inkluderar:
 <ul>
 <li>Ändra datum eller kvantiteter.</li>
 <li>Dela rader för andra leveransdatum eller kvantiteter.</li>
 <li>Byta ut en artikel.</li>
 </ul>
 Prisinformation och avgifter kan inte ändras av leverantören. Förslag till ändringar på dessa kan göras med hjälp av anteckningar.</td>
-<td>Leverantören svaret registreras som <strong>accepteras med ändringar</strong>, <strong></strong>och statusen för Inköpsordern förblir <strong>i extern granskning</strong>.</td>
+<td>Säljarens svar registreras som <strong>Godkänd med ändringar</strong>, <strong></strong> och inköpsorderns status förblir <strong>I extern granskning</strong>.</td>
 </tr>
 </tbody>
 </table>
 
-Du kan använda den **inköpsorder****av** att övervaka vilka POs leverantören har svarat på arbetsytan. Den här arbetsytan innehåller två listor med inköpsorder med statusvärdet **i extern granskning**:
+Du kan använda arbetsytan **Förberedelse** **av inköpsorder** för att övervaka vilka inköpsorder som leverantören har svarat på. Den här arbetsytan innehåller två listor med inköpsorder med statusen **I extern granskning**:
 
 -   "In external review" kräver åtgärd.
 -   "In external review" inväntar leverantörssvar.
@@ -125,7 +128,7 @@ När du avbryter in inköpsorder ändras statusen till **Approved**. Du måste s
 Du kan lägga till bilagor som till exempel filer, bilder och anteckningar till inköpsordern genom att använda dokumenthanteringssystemet. Bilagorna som läggs till med en begränsning av typen **External** kommer att vara synliga för leverantören när du skickar inköpsordern till dem.
 
 ## <a name="purchase-order-statuses-and-versions"></a>Status och versioner för inköpsorder
-I det här avsnittet beskrivs olika statusvärden som en inköpsorder kan ha upp till den tidpunkt då den bekräftas, och vid denna tidpunkt kommer nya versioner av inköpsordern att göras tillgängliga för leverantören. Det finns skillnader i, beroende på om du använder ändringshantering för inköpsorder. 
+I det här avsnittet beskrivs olika statusvärden som en inköpsorder kan ha upp till den tidpunkt då den bekräftas, och vid denna tidpunkt kommer nya versioner av inköpsordern att göras tillgängliga för leverantören. Det finns skillnader i detta, beroende på om du använder ändringshantering för inköpsorder. 
 
 ### <a name="versions-and-statuses-if-you-dont-use-change-management"></a>Versioner och status om du inte använder ändringshantering
 
@@ -168,6 +171,8 @@ Om du använder försändelselager, kan leverantörerna använda gränssnittet f
 -   **Purchase orders consuming consignment inventory** - Inköpsorder för försändelselager skapas när ägarskapet för lagret ändras från leverantören till ditt företag. En produktinleverans bokförs samtidigt. Dessa försändelseinköpsorder visas bara på sidan **Purchase orders consuming consignment inventory**. De inkluderas inte på sidan **All confirmed purchase orders** i modulen **Vendor collaboration**.
 -   **Products received from consignment inventory** - Den här sidan visar alla transaktioner där ägarskapet för produkter har överförts från leverantören till ditt företag. Leverantörer kan använda den här informationen för att fakturera kunden.
 -   **On-hand consignment inventory** - Den här sidan visar det leverantörsägda, tillgängliga försändelselagret som har inlevererats på ditt lagerställe.
+
+
 
 
 

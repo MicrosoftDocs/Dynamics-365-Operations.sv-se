@@ -1,6 +1,6 @@
 ---
 title: "Sammanfogning av värdemodell för anläggningstillgångar och avskrivningsregler"
-description: "I tidigare versioner har två värdering begrepp för anläggningstillgångar - värdemodeller och avskrivningsregler. I Microsoft Dynamics 365 för operationer 1611 slagits värdemodell funktioner och funktionen för avskrivningar för avskrivningsregel samman till ett enda begrepp som kallas en bok."
+description: "I tidigare versioner fanns två värderingsbegrepp för anläggningstillgångar: värdemodeller och avskrivningsregler. I Microsoft Dynamics 365 for Operations, version 1611, har värdemodellfunktionen och funktionen för avskrivningsregel slagits ihop till ett enda begrepp som kallas för &quot;bok&quot;."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,9 +26,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="fixed-asset-value-model-and-depreciation-book-merge"></a>Sammanfogning av värdemodell för anläggningstillgångar och avskrivningsregler
 
-I tidigare versioner har två värdering begrepp för anläggningstillgångar - värdemodeller och avskrivningsregler. I Microsoft Dynamics 365 för operationer 1611 slagits värdemodell funktioner och funktionen för avskrivningar för avskrivningsregel samman till ett enda begrepp som kallas en bok.
+[!include[banner](../includes/banner.md)]
 
-Den nya funktionen för avskrivningsregel baseras på tidigare värdemodellfunktion men innehåller även alla funktioner som endast angetts tidigare i avskrivningsregler. [![Adressboken som en sammanslagning av värdet värdemodellen och adressbokens funktionalitet](./media/fixed-assets.png)](./media/fixed-assets.png) på grund av den här kopplingen nu kan du använda en enda uppsättning sidor, rapporter och frågor för alla anläggningstillgångar processer. Tabellerna i det här avsnittet beskriver de tidigare funktionerna för den avskrivningsregler och värdemodeller, tillsammans med de nya funktionerna för böcker.
+
+I tidigare versioner fanns två värderingsbegrepp för anläggningstillgångar: värdemodeller och avskrivningsregler. I Microsoft Dynamics 365 for Operations, version 1611, har värdemodellfunktionen och funktionen för avskrivningsregel slagits ihop till ett enda begrepp som kallas för "bok".
+
+Den nya funktionen för avskrivningsregel baseras på tidigare värdemodellfunktion men innehåller även alla funktioner som endast angetts tidigare i avskrivningsregler. [![Boka som en sammanslagning av värdemodell och funktionen för avskrivningsbok](./media/fixed-assets.png)](./media/fixed-assets.png) På grund av denna sammanslagning kan du nu använda en enda uppsättning sidor, rapporter och frågor för alla anläggningstillgångsprocesser. Tabellerna i det här avsnittet beskriver de tidigare funktionerna för den avskrivningsregler och värdemodeller, tillsammans med de nya funktionerna för böcker.
 
 ## <a name="setup"></a>Inställningar
 Som standard bokförs böcker i både huvudboken (GL) och i anläggningstillgångar. Böcker har ett nytt alternativ **Bokför i redovisningen** som låter dig inaktivera bokföring till huvudboken och bara bokföra till anläggningstillgångar. Denna funktion liknar det tidigare bokföringbeteendet för avskrivningsregler. Inställningen av journalnamn har ett nytt bokföringsskikt som kallas Inga. Detta bokföringsskikt lades specifikt till för anläggningstillgångar. Om du vill bokföra transaktioner för böcker som inte bokförs till huvudboken måste du använda ett journalnamn som har bokföringsskiktet inställt på **Ingen**.
@@ -66,5 +69,7 @@ Förfrågningar och rapporter stöder alla böcker. Rapporter som inte ingår i 
 
 ## <a name="upgrade"></a>Uppgradera
 Uppgraderingsprocessen flyttar din befintliga inställning och alla befintliga transaktioner till den nya bokstrukturen. Värdemodeller kommer att kvarstå som de är, som en bok som bokförs till huvudboken. Emellertid flyttas avskrivningsregler till en bok som har alternativet **Bokför i huvudboken** inställt på **Nej**. Journalnamn för avskrivningsregel ska flyttas till ett journalnamn för huvudbok som har bokföringsskiktet inställt på **Ingen**.
+
+
 
 

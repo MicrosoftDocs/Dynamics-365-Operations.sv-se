@@ -1,5 +1,5 @@
 ---
-title: "Ställ in försändelse"
+title: "Ställa in försändelse"
 description: "Det här avsnittet beskriver hur du konfigurerar inkommande försändelselageroperationer."
 author: YuyuScheller
 manager: AnnBe
@@ -25,7 +25,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="set-up-consignment"></a>Ställ in försändelse
+# <a name="set-up-consignment"></a>Ställa in försändelse
+
+[!include[banner](../includes/banner.md)]
+
 
 Det här avsnittet beskriver hur du konfigurerar inkommande försändelselageroperationer. 
 
@@ -34,19 +37,21 @@ Försändelselagret är lager som ägs av en leverantör, men som lagras på din
 ## <a name="inventory-owners"></a>Lagerägare
 Om du vill registrera det fysiska inkommande försändelselagret måste du definiera en leverantörsägare. Detta görs på sidan **Lagerägare**. När du väljer ett **Leverantörskonto** genererar detta förvalda värden för fälten **Namn** och **Ägare**. Värdet i fältet **Ägare** visas för leverantören, så du kanske vill ändra det om ditt leverantörkontonamn inte är svårt för externa kontakter att känna igen. Det är möjligt att redigera fältet **Ägare**, men bara fram till den punkt när du sparar posten **Lagerägare**. Fältet **Namn** fylls i med namnet på den part som leverantörskontot är kopplat till och detta kan inte ändras. 
 
-[![lager-ägare](./media/inventory-owners.png)](./media/inventory-owners.png)
+[![lagerägare](./media/inventory-owners.png)](./media/inventory-owners.png)
 
 ## <a name="tracking-dimension-group"></a>Spårningsdimensionsgrupp
 Artiklar som ska användas i försändelseprocesser, måste associeras med en **Spårningsdimensionsgrupp** där dimensionen **Ägare** är inställd på **Aktiv**. Dimensionen Ägare har alltid alternativen **Fysiskt lager** och **Ekonomiskt lager** markerade. **Disponera per dimension** markeras aldrig. 
 
-[![spåra dimensionsgrupp](./media/tracking-dimension-group.png)](./media/tracking-dimension-group.png)
+[![spårningsdimensionsgrupp](./media/tracking-dimension-group.png)](./media/tracking-dimension-group.png)
 
 ## <a name="inventory-ownership-change-journal"></a>Journal för lagerägarskapsändring
 Journalen **Lagerägarskapsändring **används till att bokföra överföringen av ägandeskap av försändelselager från leverantören till den nuvarande juridisk person som förbrukar den. Till skillnad från lagerjournal måste den identifieras med ett Lagerjournalnamn. Dessa namn skapas på sidan **Lagerjournalnamn** och **Journaltyp** måste ställas in på **Ägarskapsändring**. 
 
-[![ägande-ändra-lagerjournal](./media/inventory-ownership-change-journal.png)](./media/inventory-ownership-change-journal.png)
+[![journal-för-lagerägarskapsändring](./media/inventory-ownership-change-journal.png)](./media/inventory-ownership-change-journal.png)
 
 ## <a name="vendor-collaboration-in-consignment-processes"></a>Leverantörssamarbete i försändelseprocesser
 Om dina leverantörer använder leverantörsamarbetesgränssnittet, kan du använda det för att övervaka förbrukningen av lager på din site. Mer information finns i [Konfigurering av säkerhet för leverantörssamarbetesanvändare](../procurement/configure-security-vendor-portal-users.md).
+
+
 
 

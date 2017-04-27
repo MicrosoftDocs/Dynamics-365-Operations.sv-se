@@ -1,6 +1,6 @@
 ---
 title: Hantering av redovisningsjournaler
-description: "I den här artikeln beskrivs funktionerna i Microsoft Dynamics 365 för operationer som hjälper dig att skapa allmänna bearbetning enklare och som hjälper också garantera att korrekta data har tagits emot och intern kontroll inte äventyras."
+description: "Det här avsnittet innehåller en beskrivning av de funktioner i Microsoft Dynamics 365 for Operations som kan underlätta processen för allmänna journaler, och som även kan göra det enklare att garantera att rätt data hämtas in samt att interna kontroller inte påverkas."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -28,32 +28,35 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="general-journal-processing"></a>Hantering av redovisningsjournaler
 
+[!include[banner](../includes/banner.md)]
+
+
 Det här avsnittet innehåller en beskrivning av de funktioner i Microsoft Dynamics AX som kan underlätta processen för allmänna journaler och som även kan göra det enklare att garantera att rätt data hämtas in samt att interna kontroller inte påverkas.  
 
 Journalnamn
 
-Ett av de viktigaste områdena som konfigurerar är journalnamn. Det är en god idé att definiera specifika journalnamn för respektive ändamål såsom koncerninterna påförs justering och felkorrigering. Du kan skräddarsy varje journalnamn för att datainmatning för varje ändamål lätt och är säkert. 
+Ett av de viktigaste områdena att konfigurera är journalnamn. Det är en god idé att definiera specifika journalnamn för respektive ändamål, till exempel koncerninterna, periodiseringsjustering och felkorrigering. Du kan skräddarsy varje journalnamn för att göra datainmatningen för varje ändamål lätt och säker. 
 
 På **Journalnamn** sidan kan du ställa in följande element:
 
--   **Arbetsflödesgodkännande** – För att öka den interna kontrollen, definiera journalarbetsflöden som upprättar gränser för granskning och godkännande av åtgärder, på grundval av kriterier såsom totala debetbeloppet. Du ställer in arbetsflöden för redovisningsjournaler på den ** redovisningen arbetsflöden ** sida.
+-   **Arbetsflödesgodkännande** – För att öka den interna kontrollen, definiera journalarbetsflöden som upprättar gränser för granskning och godkännande av åtgärder, på grundval av kriterier såsom totala debetbeloppet. Du ställer in arbetsflöden för allmänna journaler på sidan ** Arbetsflöden för redovisning**.
 -   **Standardvärden** – Välj standardvärdena för kvittning, valuta och finansiella mått.
 -   **Journalkontroll** – Du kan ställa in begränsningar för företaget och kontotyp och även segmentvärden. 
 
 **Exempel**
 
-Journalnamn kan endast användas för justeringar. I det här fallet kan du ange att endast **huvudbokskonton** är giltiga för alla företag. [![Journalen Kontrollera kontotyper](./media/journal-control-account-types1.png)](./media/journal-control-account-types1.png)
+Journalnamn kan endast användas för justeringar. I det här fallet kan du ange att endast **huvudbokskonton** är giltiga för alla företag. [![Kontotyper för journalkontroll](./media/journal-control-account-types1.png)](./media/journal-control-account-types1.png)
 
-Journalnamn kan användas endast för en viss sektor eller ett datumintervall för huvudbokskonton. [![Journalen kontrollen segment](./media/journal-control-segment1.png)](./media/journal-control-segment1.png)
+Journalnamn kan användas endast för en viss sektor eller ett datumintervall för huvudbokskonton. [![Journalkontrollsegment](./media/journal-control-segment1.png)](./media/journal-control-segment1.png)
 
 **Automatisk återföring** alternativet finns tillgängligt i allmänna journaler. Du kan till exempel ha en periodiserad justering där det aktuella dokumentet har inte bearbetats, som visas i följande illustration.
-[![Återföring av redovisningsjournal](./media/general-journal-reversing1.png)](./media/general-journal-reversing1.png) 
+[![Allmän journalåterföring](./media/general-journal-reversing1.png)](./media/general-journal-reversing1.png) 
 
-Microsoft Excel-tillägg för journalpost ger ytterligare automatisering och underlättar datainmatningen. **Öppna rader i Excel **åtgärden är tillgänglig i **Allmän journal** och **Journalverifikat** sidor. 
+Microsoft Excel-tillägget för poster i redovisningsjournal ger en extra nivå av automatisering och gör dataregistreringen lättare. **Öppna rader i Excel **åtgärden är tillgänglig i **Allmän journal** och **Journalverifikat** sidor. 
 
 På **Periodiska journaler** sidan kan du ställa in återkommande journaler till automatisk journalbearbetning. 
 
-Du kan använda verifikationsmallar när som helst. På den **redovisningsjournaler** sidan det **spara** och **Välj verifikationsmall** åtgärder finns på den **Bokföringsorder** sidan under **funktion** för verifikationsraderna.
+Du kan använda verifikationsmallar när som helst. På sidan **Allmänna journaler** finns åtgärderna **Spara** och **Välj verifikationsmall** på sidan **Journalverifikation**, under **Funktioner** för verifikationsraderna.
 
 ## <a name="related-setup"></a>Relaterade inställningar
 Följande inställningar är inte specifika för allmänna journaler, men kommer att garantera korrekt dataregistrering, enkelt.
@@ -78,6 +81,7 @@ Huvudkontoinställningen ger flera alternativ för allmän journal bearbetning:
 
 Redovisningsstrukturer och avancerade regler strukturer är oerhört viktiga för att garantera att de data som krävs för ekonomisk rapportering och uppföljning av prestationer är fångade under allmän journal bearbetning och all dokumentation. Redovisningsstrukturer och avancerade regler strukturer kan du skräddarsy data entry-upplevelse. Du kan registrera data endast för finansiella mått som är relevanta i varje situation, och kan också genomdriva kravet på att obligatorisk och korrekt data alltid finnas fångat.
 
-Mer information finns i [planering: kontoplanen](plan-chart-of-accounts.md). 
+Mer information finns i [Planering: kontoplan](plan-chart-of-accounts.md). 
+
 
 

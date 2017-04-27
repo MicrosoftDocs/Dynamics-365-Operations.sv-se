@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="resolve-discrepancies-during-invoice-totals-matching"></a>Åtgärda avvikelser under fakturasummor matchning
 
+[!include[banner](../includes/banner.md)]
+
+
 
 
 En typ av fakturakontroll validering är fakturasummor matchning. Ange att systemet ska utföra fakturasummor matchning på **leverantörsskulder parametrar sidan** , på **fakturan fliken validering** , **matchar fakturasummor** alternativet **Ja**. 
@@ -39,6 +42,8 @@ När du identifierar en avvikelse, kan du behöva kontakta säljaren om du tycke
 -   Acceptera prisskillnaden och Bokför faktura som har matchande avvikelser. Ditt system kan vara konfigurerat att kräva godkännande innan den kan posta om det finns motsvarande skillnader. I detta fall måste du godkänna matchningen avvikelse och kan även ange ett godkännande kommentar. Du kan sedan välja att kontera faktura.
 -   Ändra fakturans belopp till det förväntade värdet och Bokför faktura.
 -   Begära ett fullständigt erkännande och en ny korrigerad faktura från leverantören.
+
+
 
 
 

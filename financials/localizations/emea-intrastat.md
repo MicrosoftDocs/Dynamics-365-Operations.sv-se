@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="intrastat"></a>Intrastat
 
+[!include[banner](../includes/banner.md)]
+
+
 Det här avsnittet ger information om Intrastat-rapportering för handel av varor och, i vissa fall, tjänster mellan länder/regioner i den Europeiska unionen (EU). Det ger en översikt över rapporteringsprocessen och beskriver nödvändiga inställningar och förutsättningar.
 
 Intrastat är systemet för att samla information och generera statistik över handeln med varor mellan länder/regioner i den Europeiska unionen (EU). Intrastat-rapportering krävs när en produkt korsar gränsen till ett annat EU-land eller en annan EU-region. I flera länder/regioner gäller Intrastat-rapportering även för tjänster. Obligatoriska och valfria element kan samlas in i Intrastat-rapportering. Följande element är obligatoriska: momsnumret för parten som ansvarar för att ge information, referensperioden, flödet (införsel eller utförsel), den åttasiffriga artikelkoden, partnerns medlemsstat (medlemsstaten för försändelsen vid införsel och medlemsstaten för destinationen vid utförsel), värdet på varorna, varornas kvantitet (nettomassa och fyllnadsenhet) och transaktionens natur. Länder/regioner kan också samla in valfria element under olika omständigheter. Exempel på valfria element är ursprungsland/ursprungsregion, leveransvillkor, transportsätt, en mer detaljerad artikelkod än CN8, ursprungsregionen vid utförsel och måldestinationen vid införsel, den statistiska proceduren, det statistiska värdet, en beskrivning av varorna och hamn/flygplats för lastning/avlastning.
@@ -34,24 +37,24 @@ Intrastat är systemet för att samla information och generera statistik över h
 ## <a name="overview-of-the-intrastat-reporting-process"></a>Översikt över processen vid Intrastat-rapportering
 Följande avsnitt beskriver det generella flödet av information som används för Intrastat-rapportering.
 
-### <a name="1-enter-a-transaction-that-crosses-the-border-of-another-eu-countryregion"></a>1. Ange en transaktion som passerar gränsen i ett annat EU-land /-region
+### <a name="1-enter-a-transaction-that-crosses-the-border-of-another-eu-countryregion"></a>1. Ange en transaktion som korsar gränsen till ett annat EU-land eller en annan EU-region
 
-En kundfaktura, fritextfaktura, inköpsfaktura, projektfaktura, kundföljesedel, produktinleverans för leverantör eller överföringsorder överförs bara till Intrastat-journalen om landet/regionen för destinationen (vid utförsel) eller försändelsen (vid införsel) är **EU**. Funktionen för Microsoft Dynamics 365 utökades för operationer version 1611 och låter dig ange fraktsedel adresser för en transaktion inom gemenskapen. Om en fraktsedel adress skiljer sig med en leverantör business adress (eller kunder arbetsadress för returorder) fungerar Intrastat-rapportering med den här informationen. När du skapar en försäljningsorder, fritextfaktura, inköpsorder, leverantörsfaktura, projektfaktura eller överföringsorder har vissa fält som är relaterade till utländsk handel standardvärden i dokumenthuvudet eller på raden. Standardtransaktionskoden hämtas från motsvarande fält på sidan **Utländska handelsparametrar**. Standardartikelkoden, ursprungsland/ursprungsregion och ursprungsstat/ursprungsprovins hämtas från artikeln. Du kan ändra standardvärdena och du kan även fylla i annan utländsk handelsrelaterad information: statistikprocedur, transportmetod och hamn.
+En kundfaktura, fritextfaktura, inköpsfaktura, projektfaktura, kundföljesedel, produktinleverans för leverantör eller överföringsorder överförs bara till Intrastat-journalen om landet/regionen för destinationen (vid utförsel) eller försändelsen (vid införsel) är **EU**. Denna funktion har utökats för Microsoft Dynamics 365 for Operations version 1611 och låter dig ange fraktadresser för en transaktion inom gemenskapen. Om en fraktadress skiljer sig åt från en leverantörsföretagsadress (eller en kunderföretagsadress för returorder), fungerar Intrastat-rapporteringen med den här informationen. När du skapar en försäljningsorder, fritextfaktura, inköpsorder, leverantörsfaktura, projektfaktura eller överföringsorder har vissa fält som är relaterade till utländsk handel standardvärden i dokumenthuvudet eller på raden. Standardtransaktionskoden hämtas från motsvarande fält på sidan **Utländska handelsparametrar**. Standardartikelkoden, ursprungsland/ursprungsregion och ursprungsstat/ursprungsprovins hämtas från artikeln. Du kan ändra standardvärdena och du kan även fylla i annan utländsk handelsrelaterad information: statistikprocedur, transportmetod och hamn.
 
-### <a name="2-use-the-intrastat-journal-to-generate-information-about-trade-among-eu-countriesregions"></a>2. Använd intrastatjournalen för att generera information om handel mellan länder/regioner inom EU
+### <a name="2-use-the-intrastat-journal-to-generate-information-about-trade-among-eu-countriesregions"></a>2. Använd Intrastat-journalen för att generera information om handel mellan EU-länder/EU-regioner
 
 För statistiska ändamål genererar du information om handeln mellan EU-länder/EU-regioner varje månad. Du kan överföra transaktioner från en fritextfaktura, kundfaktura, kundföljesedel, leverantörsfaktura, leverantörföljesedel, projektfaktura eller överföringsorder enligt överföringsvillkoren som har ställts in på sidan **Utländska handelsparametrar**. Alternativt kan du ange transaktioner manuellt. Du kan uppdatera överförda transaktioner manuellt i Intrastat-journalen om uppdateringar krävs. Under vissa förhållanden som ställs in på sidan **Komprimering av Intrastat** kan du komprimera transaktionerna i Intrastat-journalen. Vissa länder/regioner låter dig tillämpa en liten transaktionströskel. Du kan då rapportera transaktioner som är under det tröskelvärdet under den angivna artikelkoden. Du kan uppdatera artikelkoden på motsvarande Intrastat-journalrader baserat på inställningen **Minimigräns** på sidan **Utländska handelsparametrar**. Du kan också komprimera dessa transaktioner baserat på inställningen **Komprimering av Intrastat**. Du kan validera fullständigheten för transaktionerna i Intrastat-journalen baserat på inställningen **Checkinställningar** på sidan **Utländska handelsparametrar**. Data i motsvarande fält kan valideras för fullständighet: land/region, delstat eller provins, vikt, artikelkod, transaktionskod, fyllnadsenhet, hamn, ursprung, leveransvillkor, transportmetod och momsregistreringsnummer. Transaktioner som inte är kompletta markeras som inte giltiga.
 
-### <a name="3-use-the-intrastat-journal-to-report-information-about-trade-among-eu-countriesregions"></a>3. Använd intrastatjournalen vill rapportera information om handel mellan länder/regioner inom EU
+### <a name="3-use-the-intrastat-journal-to-report-information-about-trade-among-eu-countriesregions"></a>3. Använd Intrastat-journalen för att rapportera information om handel mellan EU-länder/EU-regioner
 
-För statistiska ändamål rapporterar du information om handeln mellan EU-länder/EU-regioner varje månad. Du kan skriva ut Intrastat-rapporten baserat på inställningarna för **Mappning av rapportformat** på sidan **Utländska handelsparametrar**. Du kan även generera en elektronisk fil baserat på inställningarna för **Mappning av filformat** på sidan **Utländska handelsparametrar**. Mer information om Intrastat-rapportering, inklusive komponenterna, se intrastatrapportering uppgiften inspelningar:
+För statistiska ändamål rapporterar du information om handeln mellan EU-länder/EU-regioner varje månad. Du kan skriva ut Intrastat-rapporten baserat på inställningarna för **Mappning av rapportformat** på sidan **Utländska handelsparametrar**. Du kan även generera en elektronisk fil baserat på inställningarna för **Mappning av filformat** på sidan **Utländska handelsparametrar**. Se uppgiftsinspelningar för Intrastat-rapportering om du vill ha mer information om Intrastat-rapportering:
 
--   Generera en EU Intrastat-deklaration
--   Över till Intrastat,
--   Ange adress fraktsedel för en transaktion inom gemenskapen.
+-   Generera en EU Intrastat-deklaration,
+-   Överföra transaktioner till Intrastat,
+-   Ange fraktadressen för en inomeuropeisk transaktion.
 
 ## <a name="prerequisites"></a>Förutsättningar
-Tabellen nedan innehåller förutsättningar för Intrastat-rapportering.
+Följande tabell anger förutsättningarna för Intrastat-rapportering.
 
 <table>
 <colgroup>
@@ -235,5 +238,7 @@ Använd sidan **Utländska handelsparametrar** för att ställa in parametrarna 
 </table>
 
  
+
+
 
 

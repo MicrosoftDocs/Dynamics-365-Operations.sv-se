@@ -1,6 +1,6 @@
 ---
-title: Antal nomenklaturen
-description: "Här beskrivs hur du ställer in en nummerserie nomenklaturen ersätta det fasta formatet är [Product master - konfiguration - storlek - färg - format], med ett riktade format som omfattar master produktnummer, aktiva produktdimensioner och texten avgränsarna för valet. Du kan också skapa en nomenklatur för att identifiera konfigurationer som skapas av den begränsningsbaserade konfiguratorn. Dessa nomenklaturer kan innehålla valfria attribut."
+title: "Nomenklatur för produktnummer"
+description: "I det här avsnittet beskrivs hur du kan skapa en produktnummernomenklatur för att ersätta det fasta formatet, [Produktmallsnummer - Konfiguration - Storlek - Färg - Formatmall], med ett riktat format som innehåller de produktmallsnummer, aktiva produktdimensioner och textavgränsare du själv önskar. Du kan också skapa en nomenklatur för att identifiera konfigurationer som skapas av den begränsningsbaserade konfiguratorn. Dessa nomenklaturer kan innehålla valfria attribut."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,9 +26,12 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="product-number-nomenclature"></a>Antal nomenklaturen
+# <a name="product-number-nomenclature"></a>Nomenklatur för produktnummer
 
-Här beskrivs hur du ställer in en nummerserie nomenklaturen ersätta det fasta formatet är [Product master - konfiguration - storlek - färg - format], med ett riktade format som omfattar master produktnummer, aktiva produktdimensioner och texten avgränsarna för valet. Du kan också skapa en nomenklatur för att identifiera konfigurationer som skapas av den begränsningsbaserade konfiguratorn. Dessa nomenklaturer kan innehålla valfria attribut.
+[!include[banner](../includes/banner.md)]
+
+
+I det här avsnittet beskrivs hur du kan skapa en produktnummernomenklatur för att ersätta det fasta formatet, [Produktmallsnummer - Konfiguration - Storlek - Färg - Formatmall], med ett riktat format som innehåller de produktmallsnummer, aktiva produktdimensioner och textavgränsare du själv önskar. Du kan också skapa en nomenklatur för att identifiera konfigurationer som skapas av den begränsningsbaserade konfiguratorn. Dessa nomenklaturer kan innehålla valfria attribut.
 
 Den nya varianten för produktnummernomenklatur gör att du kan inkludera segment i dina produktvariantidentifierare. Dessa segment kan innehålla produktmallsnummer, produktdimensioner, nummerserier, textkonstanter och attribut. Med denna funktion kan du snabbt hitta en specifik produktvariant när du skapar en försäljningsorder eller inköpsorder.
 
@@ -66,8 +69,8 @@ En T-tröja (TS1234) produceras i tre olika storlekar (S, M, L), i fyra olika f�
 
 Produktvariantnumret för en röd polotröja i storlek S blir då: TS1234-Red-Small-Polo.
 
-## <a name="nomenclature-of-constraintbased-configurations"></a>EG: s nomenklatur constraintbased konfigurationer
-En särskild terminologi kan byggas för produkten konfigurationsdimensionen för begränsningsbaserade konfigurationer. Du kan välja följande segment på sidan **Product nomenclature**.
+## <a name="nomenclature-of-constraintbased-configurations"></a>Nomenklatur för begränsningsbaserade konfigurationer
+För begränsningsbaserade konfigurationer kan en särskild terminologi byggas för konfigurationsproduktdimensionen. Du kan välja följande segment på sidan **Product nomenclature**.
 
 -   Nummersekvensvärde
 -   Textkonstant
@@ -90,8 +93,8 @@ En konfigurationsnomenklatur definieras med hjälp av följande segment:
 
 Konfigurations-ID för trämaterial med längden 78 får följande konfigurations-ID: WoodAAA78.
 
-## <a name="nomenclature-of-dimensionbased-configurations"></a>EG: s nomenklatur dimensionbased konfigurationer
-En särskild terminologi kan byggas för produkten konfigurationsdimensionen för dimensionsbaserade konfigurationer. Du kan välja följande segment på sidan **Product nomenclature**.
+## <a name="nomenclature-of-dimensionbased-configurations"></a>Nomenklatur för dimensionsbaserade konfigurationer
+För dimensionsbaserade konfigurationer kan en särskild terminologi byggas för konfigurationsproduktdimensionen. Du kan välja följande segment på sidan **Product nomenclature**.
 
 -   Nummersekvensvärde
 -   Textkonstant
@@ -132,7 +135,7 @@ När du använder antingen begränsningsbaserad eller dimensionsbaserad konfigur
 I det här exemplet kan du använda en nummernomenklatur för produktvariant som består av följande segment:
 
 1.  Produktmallsnummer
-2.  Textkonstant '\_'
+2.  Textkonstant \_
 3.  Inställningar
 
 Konfigurationsnomenklaturen kan bestå av följande segment:
@@ -147,7 +150,7 @@ Du kan ange följande värden för segment:
 -   Material = Plast
 -   Längd = 12
 
-Variant produktnumret blir: M0099\_PlasticAAA12.
+Produktvariantnumret blir: M0099\_PlasticAAA12.
 
 ### <a name="example-for-dimension-based-configurations"></a>Exempel på dimensionsbaserade konfigurationer
 
@@ -180,7 +183,7 @@ Ett fel uppstår om du manuellt eller automatiskt försöker generera produktvar
 
 ### <a name="constraint-based-configurations"></a>Begränsningsbaserade konfigurationer
 
-Beroende på nomenklaturen kan systemet komma att försöka tilldela ett icke-unikt produktvariantnummer till en konfiguration. Då används systemet nummerserien för konfigurationsdimensionen som variant produktnumret i stället. Om detta händer visas ett varningsmeddelande. För att undvika detta bör du inkludera tillräckligt med attribut i nomenklaturen för att säkerställa unika nummer, samt se till att alternativet **Reuse** aktiveras för komponenten.
+Beroende på nomenklaturen kan systemet komma att försöka tilldela ett icke-unikt produktvariantnummer till en konfiguration. I så fall kommer systemet att använda nummerserien för konfigurationsdimensionen som produktvariantnummer istället. Om detta händer får du ett varningsmeddelande. För att undvika detta bör du inkludera tillräckligt med attribut i nomenklaturen för att säkerställa unika nummer, samt se till att alternativet **Reuse** aktiveras för komponenten.
 
 ### <a name="dimension-based-configurations"></a>Dimensionsbaserade konfigurationer
 
@@ -191,8 +194,10 @@ Konfigurationprocessen inkluderar ett steg där systemet föreslår ett konfigur
 <a name="see-also"></a>Se även
 --------
 
-[Skapa en nummerserie nomenklaturen för fördefinierade produktvarianter (aktivitet guide)](http://ax.help.dynamics.com/en/wiki/create-a-product-number-nomenclature-for-predefined-product-variants/)
+[Skapa en produktnummernomenklatur för fördefinierade produktvarianter (Uppgiftsguide)](http://ax.help.dynamics.com/en/wiki/create-a-product-number-nomenclature-for-predefined-product-variants/)
 
-[Skapa en nummerserie nomenklaturen för konfigurerade produktvarianter (aktivitet guide)](http://ax.help.dynamics.com/en/wiki/create-a-product-number-nomenclature-for-configured-product-variants/)
+[Skapa en produktnummernomenklatur för konfigurerade produktvarianter (Uppgiftsguide)](http://ax.help.dynamics.com/en/wiki/create-a-product-number-nomenclature-for-configured-product-variants/)
+
+
 
 

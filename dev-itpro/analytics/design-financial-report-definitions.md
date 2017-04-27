@@ -30,7 +30,7 @@ ms.lasthandoff: 03/29/2017
 
 Den här artikeln innehåller information om rapportdefinitioner. En rapportdefinition är en rapportkomponent (eller byggblock) som använder en raddefinition, en kolumndefinition och valfri rapportträddefinition för att skapa en rapport. En rapportdefinition innehåller också alternativ och inställningar för att anpassa en rapport. 
 
-En rapportdefinition är en rapportkomponent (eller byggblock) som använder en raddefinition, en kolumndefinition och valfri rapportträddefinition för att skapa en rapport. En rapportdefinition innehåller också alternativ och inställningar för att anpassa en rapport. När du har definierat raddefinitioner och kolumndefinitioner, måste du kombinera dem i en rapportdefinition. I det här läget definierar du också andra aspekter av definitioner, till exempel detaljnivå och rapportdatum. Du kan sedan spara och skapa en rapport. Ekonomist rapportering omfattar följande detaljnivåer:
+En rapportdefinition är en rapportkomponent (eller byggblock) som använder en raddefinition, en kolumndefinition och valfri rapportträddefinition för att skapa en rapport. En rapportdefinition ger också ytterligare alternativ och inställningar som du kan använda för att anpassa en rapport. När du har definierat raddefinitioner och kolumndefinitioner, måste du kombinera dem i en rapportdefinition. I det här läget definierar du också andra aspekter av definitioner, till exempel detaljnivå och rapportdatum. Du kan sedan spara och skapa en rapport. Ekonomist rapportering omfattar följande detaljnivåer:
 
 -   Ekonomi
 -   Ekonomisk och Konto
@@ -89,6 +89,6 @@ I följande register finns beskrivningar av flikarna i en rapportdefinition och 
 <a name="see-also"></a>Se även
 --------
 
-[Ekonomisk rapportering för Microsoft Dynamics 365 för operationer](financial-reporting-intro.md)
+[Ekonomisk rapportering för Dynamics 365 for Operations](financial-reporting-intro.md)
 
 

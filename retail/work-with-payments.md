@@ -1,5 +1,5 @@
 ---
-title: Betalningsmetoder i ett Callcenter
+title: Betalningsmetoder i ett kundcenter
 description: "Det här avsnittet ger en beskrivning av olika betalningsmetoder du kan använda i en kundtjänst i Butik och handel."
 author: josaw1
 manager: AnnBe
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 92163
 ms.assetid: 8e738907-870b-466c-ab0c-07f4a4aa47f3
 ms.search.region: global
@@ -25,7 +25,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="payment-methods-in-a-call-center"></a>Betalningsmetoder i ett Callcenter
+# <a name="payment-methods-in-a-call-center"></a>Betalningsmetoder i ett kundcenter
+
+[!include[banner](includes/banner.md)]
+
 
 Det här avsnittet ger en beskrivning av olika betalningsmetoder du kan använda i en kundtjänst i Butik och handel.
 
@@ -43,6 +46,8 @@ Om du skickar in en kreditkortsbetalning från sidan **Försäljningsorder** och
 
 -   Checkspärrar gör att ekonomipersonal kan bearbeta order som har spärrats på grund av att en check användes som betalningsmetod och att tröskelvärdet för checkspärren överskreds. Spärren kan upphävas manuellt eller upphöra automatiskt i slutet av den konfigurerade perioden.
 -   Du kan ställa in trösklar över vilka återbetalningar som utfärdas via checkar och kreditkort måste godkännas manuellt. Alla återbetalningar som överskrider tröskelbeloppet läggs till i godkännandekön. När du har godkänt återbetalningen kan returförsäljningsordern faktureras.
+
+
 
 
 

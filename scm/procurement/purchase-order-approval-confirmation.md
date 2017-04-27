@@ -1,5 +1,5 @@
 ---
-title: "Godkänn och bekräfta inköpsorder"
+title: "Godkänna och bekräfta inköpsorder"
 description: "Den här artikeln innehåller en beskrivning av de statusar en inköpsorder (IO) genomgår efter att de har skapats och effekterna av att aktivera ändringshantering för inköpsorder."
 author: YuyuScheller
 manager: AnnBe
@@ -25,7 +25,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="approve-and-confirm-purchase-orders"></a>Godkänn och bekräfta inköpsorder
+# <a name="approve-and-confirm-purchase-orders"></a>Godkänna och bekräfta inköpsorder
+
+[!include[banner](../includes/banner.md)]
+
 
 Den här artikeln innehåller en beskrivning av de statusar en inköpsorder (IO) genomgår efter att de har skapats och effekterna av att aktivera ändringshantering för inköpsorder.
 
@@ -73,12 +76,14 @@ När en order har bekräftats kan du inte längre ta bort den. Du kan dock ändr
 <a name="see-also"></a>Se även
 --------
 
-[Purchase order overview](purchase-order-overview.md)
+[Översikt över inköpsorder](purchase-order-overview.md)
 
-[Purchase order creation](purchase-order-creation.md)
+[Skapande av inköpsorder](purchase-order-creation.md)
 
 [Produktinleverans mot inköpsorder](product-receipt-against-purchase-orders.md)
 
 [Översikt över leverantörsfakturor](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview)
+
+
 
 

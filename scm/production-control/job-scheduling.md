@@ -29,6 +29,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="job-scheduling"></a>Finplanering
 
+[!include[banner](../includes/banner.md)]
+
+
 Det här avsnittet innehåller information om Jobbplanering, som är ett mer detaljerat formulär för att schemaläggning än Grovplanering. Du kan använda finplaneringen för att planera individuella jobb eller arbetsorder och för att styra din tillverkningsmiljö.
 
 Du kan använda finplaneringen för att planera individuella jobb eller arbetsorder och för att styra din tillverkningsmiljö. Finplanering delar upp varje operation i enskilda uppgifter eller jobb. Dessa jobb fördelas sedan till verksamhetsresurserna som ska utföra dem. Finplanering låter dig också synkronisera alla jobb som refereras av det valda jobbet. Du kan specificera start- och slutdatum samt start- och sluttid för jobbet och sedan köra planering. Tiden som du anger är kan vara start- eller sluttiden beroende på valet av planeringsriktning. Den här funktionen är användbar när till exempel ett jobb endast kan köras på en maskin åt gången, eller när du vill optimera det jobb som körs för varje resurs.
@@ -39,7 +42,7 @@ Finplaneringsprocessen inkluderar följande uppgifter:
 -   Dela upp operationer i jobb.
 -   Tidsplanera jobb baserat på datum och tider för resurserna som anges för de relaterade operationerna.
 -   Beräkna start- och sluttid för varje jobb. Du kan använda ändlig kapacitet för att säkerställa att det inte finns några överlappande tider.
--   Bestäm vilka resurser i resursgruppen att köra jobbet. Den här uppgiften krävs att en resursgrupp anges för en operation. Finplanering väljer resurser eller resursgrupperar baserat på den kortaste produktionstiden och tar också hänsyn till eventuella tidigare reservationer för resurserna.
+-   Bestäm vilka resurser i resursgruppen som jobbet ska köras på. Den här uppgiften kräver att en resursgrupp anges för en åtgärd. Finplanering väljer resurser eller resursgrupperar baserat på den kortaste produktionstiden och tar också hänsyn till eventuella tidigare reservationer för resurserna.
 -   Bryt ned operationer till jobb, när du kör finplanering. Jobben planeras efter datum och tid i den ordning som anges av produktionsflödet. Inställning av operationen avgör de jobb som ska utföras under planeringsprocessen. Flödesgruppen som är tilldelas operationkontrollerna om jobb genereras. Ett jobb genereras endast om det har en specifik varaktighet. Till exempel genereras ett transporttidsjobb om en transporttid har angivits för de valda operationerna.
 
 ## <a name="scheduling-direction"></a>Planeringsriktning
@@ -73,5 +76,7 @@ Resurser tilldelas jobb genom finplanering. Du kan fastställa maximikapaciteter
 
 ## <a name="resource-efficiency"></a>Resurseffektivitet
 Vid finplaneringen används även de effektivitetsprocent som angetts för resurserna. Effektivitetsprocent minskar eller ökar den tid som reserverats för resursen. Det innebär att produktionstiden ökar eller minskar. Denna formel används för beräkningen: Planeringstid = Tid × 100 ÷ Effektivitet i procent i denna formel, *Tid* innefattar både körtiden och ställtider.
+
+
 
 

@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="accounts-payable-invoice-matching"></a>Fakturamatchning för leverantörsreskontra
 
+[!include[banner](../includes/banner.md)]
+
+
 Fakturamatchning i leverantörsreskontra är den process där information om leverantörsfaktura, inköpsorder och produktinleverans matchas.
 
 När du matchar dokument kallas skillnader mellan dessa dokument för matchningsavvikelser. Matchningsavvikelser jämförs med toleranserna som ställts in. Om en matchningsavvikelse överskrider toleransprocenten eller toleransmängden visas matchningsavvikelseikoner på sidan Leverantörsfaktura och på sidan Fakturahistorik och matchningsuppgifter. 
@@ -48,9 +51,9 @@ Du kan använda följande typer av fakturamatchning för leverantörsreskontra:
 
 Tvåvägsmatchning och trevägsmatchning matchar alltid prisinformation baserat på enhetspriset. Du kan även konfigurera dessa matchningspolicyer för att matcha prisinformation baserat på prissumman.
 -   Matchning av nettopris per enhet – Matcha prisinformation för tvåvägsmatchning eller trevägsmatchning genom att jämföra nettopriset per enhet för varje rad på fakturan med motsvarande nettopris per enhet på inköpsordern. Nettopriset per enhet beräknas med följande formel: nettobeloppet på raden dividerat med kvantiteten för raden.
--   Matchning av prissumma – Matcha prisinformation för tvåvägsmatchning eller trevägsmatchning genom att jämföra nettobelopp (prissumma) för varje rad på fakturan med motsvarande nettobelopp på inköpsordern. Nettobeloppet bestäms av följande formel: (enhetspris \*kvantitet för rad) + radavgifter - radrabatter
+-   Matchning av prissumma – Matcha prisinformation för tvåvägsmatchning eller trevägsmatchning genom att jämföra nettobelopp (prissumma) för varje rad på fakturan med motsvarande nettobelopp på inköpsordern. Nettobeloppet beräknas med följande formel: (Enhetspris \* Radkvantitet) + Radavgifter - Radrabatter
 
-Vanligtvis utförs fakturamatchningsberäkningar när du redigerar leverantörsfakturor på sidan Leverantörsfaktura. Alternativt kan fakturamatchning utföras vid behov om det behövs. Fakturamatchning vid behov kontrolleras för den juridiska personen som den rubrik fakturastatusen till årsbokslutet sidan parametrar för leverantörsreskontra på fliken faktura validering uppdateras automatiskt. Fakturamatchning kan du också utföra som en del av en granskningsprocess för fakturan. Du kan visa resultaten från fakturamatchningen på sidan Leverantörsfaktura och relaterade fakturamatchningssidor.
+Vanligtvis utförs fakturamatchningsberäkningar när du redigerar leverantörsfakturor på sidan Leverantörsfaktura. Alternativt kan fakturamatchning utföras vid behov om det behövs. Fakturamatchning vid behov kontrolleras för den juridiska personen av statusen Uppdatera fakturahuvudets status automatiskt Till på sidan Parametrar för Leverantörsreskontra, fliken Fakturavalidering. Fakturamatchning kan också utföras som en del av en granskningsprocess för fakturan. Du kan visa resultaten från fakturamatchningen på sidan Leverantörsfaktura och relaterade fakturamatchningssidor.
 
 ## <a name="invoice-totals-matching"></a> Matchning av fakturasummor
 Du kan använda matchning av fakturasummor för att se till att totala fakturabelopp inte avviker från förväntade belopp med mer än en godtagbar avvikelse. Sex summor jämförs på sidan Fakturasummamatchningsdetaljer, som du ser i följande tabell. Om den tillåtna toleransen för matchning av fakturasummor är 20 %, betraktas avvikelseprocenten 100 % för det totala rabattbeloppet som en matchningsavvikelse.
@@ -165,7 +168,7 @@ Samma radbelopp jämförs på sidan Fakturamatchningsdetaljer som för tvåvägs
 Trevägsmatchning kontrolleras för den juridiska personen av fältet Radmatchningspolicy på sidan Parametrar för leverantörsreskontra. Beroende på valet i fältet Tillåt åsidosättning av matchningspolicy kan du välja trevägsmatchning för en viss leverantör, artikel eller artikel- och leverantörkombination på sidan Matchningspolicy och för en viss inköpsorder på sidan Inköpsorder.
 
 ## <a name="charges-matching"></a> Avgiftsmatchning
-Du kan använda avgiftsmatchning för att se till att avgiftsbelopp inte avviker från förväntade belopp med mer än en godtagbar avvikelseprocent. Totalbelopp för varje kod som är kopplad till fakturan och inköpsordern jämförs i jämför Avgiftsvärden - faktura: sidan som visas i följande tabell. Om den tillåtna toleransen för debiteringskoden är 25 %, betraktas avvikelseprocenten 99 999 999 999,99 % för licensavgiftskoden som en matchningsavvikelse.
+Du kan använda avgiftsmatchning för att se till att avgiftsbelopp inte avviker från förväntade belopp med mer än en godtagbar avvikelseprocent. De totala beloppen för varje avgiftskod som gäller för fakturan och inköpsordern jämförs på sidan Jämför avgiftsvärden – Faktura, enligt följande tabell. Om den tillåtna toleransen för debiteringskoden är 25 %, betraktas avvikelseprocenten 99 999 999 999,99 % för licensavgiftskoden som en matchningsavvikelse.
 
 > [!NOTE] 
 > En avvikelseprocent på 99 999 999 999,99 % innebär att det förväntade beloppet som baseras på inköpsordern är noll och det riktiga beloppet på fakturan är ett positivt värde. 
@@ -181,14 +184,16 @@ Avgiftsmatchning kontrolleras för den juridiska personen av växlingsknappen Ma
 > [!NOTE]
 > Avgiftsmatchning utförs bara på avgiftskoder för vilka växlingsknappen Jämför inköpsorder och fakturavärden är vald på sidan Avgiftskoder.
 
-## <a name="related-functionality"></a> Relaterade funktioner
+## <a name="related-functionality"></a>Relaterade funktioner
 Leverantörsfakturor baseras ofta på produktinleveranser som representerar faktiska leveranser snarare än på inköpsorder. Ibland matchar de fakturerade beloppen inte inköpsorderbeloppen och ibland matchar de levererade kvantiteterna inte de fakturerade kvantiteterna. Du kan göra det enklare att hantera denna information på följande sätt:
 -   Skapa en leverantörsfaktura som baseras på produktinleveranser. Produktinleveranser föreslås automatiskt för fakturor, och du kan välja vilka produktinleveranser som ska användas. Du kan också välja specifika produktinleveransradartiklar från flera inköpsorder om du måste.
 -   Visa och godkänn kvantitetsskillnader mellan den fakturerade kvantiteten på fakturan och den inlevererade kvantiteten på produktinleveransen. Om det finns en skillnad kan du spara fakturan och senare matcha den med en annan produktinleverans eller ändra den fakturerade kvantiteten så att den matchar den inlevererade kvantiteten.
 -   Ange fakturabelopp som inte inkluderades i den ursprungliga inköpsordern så att fakturainformationen matchar den faktura du tagit emot från leverantören. Du kan jämföra avgifterna för inköpsorder med avgifterna för fakturor. Vid behov kan du lägga till avgifter till fakturor och tilldela dem till fakturarader.
 -   Visa och godkänn prismatchningsavvikelser mellan fakturans nettoenhetspris och inköpsorderns nettoenhetspris. Du kan ange procentsatser för pristoleranser för juridiska personer, artiklar och leverantörer. Om leverantörens fakturaradpris inte ligger inom den acceptabla pristoleransen, kan du spara fakturan tills den godkänts för bokföring eller tills du får en korrigering från leverantören.
 
-Mer information finns i [trevägs matchande principer](three-way-matching-policies.md).
+Mer information finns i [Trevägs-matchningsprinciper](three-way-matching-policies.md).
+
+
 
 
 

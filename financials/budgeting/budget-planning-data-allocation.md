@@ -1,6 +1,6 @@
 ---
 title: "Dataallokering för budgetplanering"
-description: "Den här artikeln beskrivs de olika allokeringsmetoder finns i Microsoft Dynamics 365 för operationer och hur de kan användas."
+description: "Det här avsnittet beskriver de olika allokeringsmetoder som är tillgängliga i Microsoft Dynamics 365 for Operations och hur de kan användas."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -28,14 +28,18 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="budget-planning-data-allocation"></a>Dataallokering för budgetplanering
 
-Den här artikeln beskrivs de olika allokeringsmetoder finns i Microsoft Dynamics 365 för operationer och hur de kan användas.  
+[!include[banner](../includes/banner.md)]
+
+
+Det här avsnittet beskriver de olika allokeringsmetoder som är tillgängliga i Microsoft Dynamics 365 for Operations och hur de kan användas.  
 
 Du kan fördela data i en budgetplan på många sätt för att exakt att beskriva de projekterade beloppen.
 
 ## <a name="allocation-methods"></a>Allokeringsmetoder
 Tre allokeringsmetoder (Allokera över perioder, Allokera över dimensioner Använd allokeringsregler för redovisning kan skapa budgetplanrader som baseras på rader i samma budgetplan. Tre andra metoder (Aggregera, Distribuera och Kopiera från budgetplan) kan skapa budgetplanrader i andra budgetplaner. För alla sex allokeringmetoder anger du målscenariot. Målscenariot kan antingen vara samma som källscenariot eller skilja sig från källscenariot. Dessutom kan du ange om nya rader bifogas till budgetplanen eller om de aktuella raderna i budgetplanen ska ersättas.
 
-[![AllocateAcrossPeriods](./media/allocateacrossperiods-300x259.png)](./media/allocateacrossperiods.png)<ph id="t1"></ph>**över perioder allokerade** – en periodallokeringsnyckel kategori som används för att fördela budgetplansraderna från Källbudgetplansscenariot över perioder i destinationsscenario. Källbeloppet tilldelas flera rader i målscenariot baserat på den procentsats och det datum som har anges i kategorin för periodallokering.         
+[![AllocateAcrossPeriods](./media/allocateacrossperiods-300x259.png)](./media/allocateacrossperiods.png)
+**Allokera över flera perioder** – En kategori för periodallokering används för att allokera budgetplanraderna från källbudgetplanscenariot över perioder i målscenariot. Källbeloppet tilldelas flera rader i målscenariot baserat på den procentsats och det datum som har anges i kategorin för periodallokering.         
 
 [![AllocateToDimensions](./media/allocatetodimensions.jpg)](./media/allocatetodimensions.jpg)
 **Allokera över dimensioner** – budgetplanraderna allokeras från källbudgetplaneringsscenariot till en eller flera rader i målscenariot baserat på de procentsatser och ekonomiska dimensioner som har definierats i ett valt budgetallokeringsvillkor.           
@@ -57,7 +61,7 @@ För att utföra allokeringar på sidan Budgetplan, välj raderna som ska alloke
 
 [![AllocateBudgetButton](./media/allocatebudgetbutton-300x84.png)](./media/allocatebudgetbutton.png) 
 
-Sedan väljer du en metod för fördelningen. De återstående fälten ställs sedan in, baserat på den metod som du har valt. Fälten inkluderar källa och mål för budgetplanen och ett alternativ som låter dig multiplicera källan för en angiven faktor när målbeloppen skapas, om du vill förenkla bulkjustering. Du kan även ange alternativet **Bifoga till plan**. Välj **Nej** om du vill ersätta befintliga budgetplanrader eller välj **Ja** för att behålla de befintliga budgetplanraderna och för att lägga till nya rader för de allokerade beloppen.
+Sedan väljer du en allokeringsmetod. De återstående fälten ställs sedan in, baserat på den metod som du har valt. Fälten inkluderar källa och mål för budgetplanen och ett alternativ som låter dig multiplicera källan för en angiven faktor när målbeloppen skapas, om du vill förenkla bulkjustering. Du kan även ange alternativet **Bifoga till plan**. Välj **Nej** om du vill ersätta befintliga budgetplanrader eller välj **Ja** för att behålla de befintliga budgetplanraderna och för att lägga till nya rader för de allokerade beloppen.
 
 ## <a name="automating-allocations-during-a-workflow"></a>Automatisera allokering under ett arbetsflöde
 En kraftfull funktion låter allokeringar utföras automatiskt som en del av en budgetplaneringsarbetsflöde. Som en budgetplan flyttas genom sin arbetsflödet, kan automatiska uppgifter aktivera en allokering vid en specifik budgetplaneringsfas. 
@@ -69,5 +73,7 @@ Därefter skapar du en fasallokering på sidan **Budgetplaneringskonfiguration**
 Lägg slutligen till en automatisk uppgift för allokeringsfas för budgetplanering på önskad arbetsflödefas. I följande exempel har två fasallokeringar för budgetplanering (anges i rött) infogats i arbetsflödet.
 
 [![BudgetPlanningStageAllocations](./media/budgetplanningstageallocations-300x300.png)](./media/budgetplanningstageallocations.png)
+
+
 
 

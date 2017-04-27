@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="credit-card-setup-authorization-and-capture"></a>Kreditkortinställning, auktorisering och registrering
 
+[!include[banner](../includes/banner.md)]
+
+
 Den här artikeln ger en översikt över kreditkortskontroll i Microsoft Dynamics AX. Här finns information om hur du ställer in en betalningstjänst, lägger till ett kreditkort till en försäljningsorder och annullerar en auktorisering.
 
 <a name="setting-up-the-credit-card-payment-service"></a>Ställa in kreditkortbetalningtjänsten
@@ -55,7 +58,7 @@ Du kan kräva cvv-kod, som ibland refereras till som kortets säkerhetkod. För 
 
 ### <a name="address-verification"></a>Adressverifiering
 
-Information om adressverifieringen skickas alltid till betalningsleverantören. Du kan bestämma hur mycket information som krävs för en transaktion som ska godkännas. Kom ihåg att kontrollera med leverantören att bestämma om tar emot informationen. Här följer alternativen för adressverifiering:
+Information om adressverifieringen skickas alltid till betalningsleverantören. Du kan bestämma hur mycket information som krävs för att en transaktion ska godkännas. Se till att kontrollera med din leverantör för att avgöra om denne godkänner denna information. Här följer alternativen för adressverifiering:
 -   **Acceptera alltid transaktionen** - Acceptera transaktionen oavsett adressverifieringresultat.
 -   **Kontohållare** – Jämför kortinnehavarens namn från transaktionen med kreditkortsföretagets information.
 -   **Faktureringsadress** – Jämför kortinnehavarens namn och faktureringsadress från transaktionen med kreditkortsföretagets information.
@@ -68,10 +71,12 @@ För respektive kreditkortstyp som stöds kan du ange datasupportnivån. Denna n
 -   **Nivå 3** – Överför nivå 2-information, plus information om orderrad.
 
 ## <a name="partial-payments"></a>Delbetalningar
-Om du levererar en order med beloppet för den del av ordern fångas och auktoriseringsförfrågningar, vilket var för hela ordern stängs. Ett nytt tillstånd skickas sedan för det återstående beloppet på den order som inte har levererats.
+Om du levererar en delorder kommer beloppet för denna del av ordern att regitreras; tillståndet, som gällde beloppet för hela ordern, stängs. Ett nytt tillstånd skickas sedan för det återstående beloppet för den order som inte har levererats.
 
 ## <a name="voiding-an-authorization"></a>Annullera en auktorisering 
 Om du vill annullera en kreditkortskontroll kan du ändra betalningsmetoden till en annan metod som inte har någon typ av kreditkort.
+
+
 
 
 

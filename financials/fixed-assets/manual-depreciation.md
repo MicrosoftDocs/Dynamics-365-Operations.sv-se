@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="manual-depreciation"></a>Manuell avskrivning
 
+[!include[banner](../includes/banner.md)]
+
+
 Det här avsnittet innehåller en översikt över den manuella avskrivningsmetoden.
 
 När du ställer in en avskrivningsprofil för anläggningstillgångar och väljer **Manuellt** i fältet **Metod** på sidan **Avskrivningsprofiler** avgörs avskrivningen av anläggningstillgångar som är tilldelade till den här avskrivningsprofilen av procenten som du anger för varje intervall under kalenderåret. Intervallen som du ställer in procenttal för bokförs enligt det värde du valt i fältet **Periodfrekvens** på snabbfliken **Allmänt** på sidan **Avskrivningsprofiler**. Du kan välja följande värden:
@@ -63,13 +66,15 @@ Om du väljer **Varje månad** i fältet ** Periodfrekvens** ställer du in 12 m
 | Januari  | (11 000–1 000) × 10 % = 1 000 |
 | Februari | (11 000–1 000) × 50 % = 5 000 |
 
-Om du väljer **Halvårsvis** i den *** perioden frekvens ** fältet ** du ställa in två intervall för manuella tidsplaner. Följande tabell visar avskrivningsbeloppen för de två intervallen.
+Om du väljer **Halvårsvis** i fältet ****Periodfrekvens** ställer du in två manuella schemaintervall. Följande tabell visar avskrivningsbeloppen för de två intervallen.
 
 | Intervall    | Avskrivningsbelopp            |
 |-------------|--------------------------------|
 | 30 juni     | (11 000–1 000) × 10 % = 1 000 |
 | 31 december | (11 000–1 000) × 50 % = 5 000 |
 
-Sammanlagt procentsatsen för alla intervall måste inte vara 100. Emellertid ett felmeddelande om värdet i den **ackumulerad procent** på de **fast avskrivning av anläggningstillgångar tidsplaner** sidan inte är **100**.
+Den sammanlagda procentsatsen för alla intervall behöver inte vara 100. Du kommer emellertid att erhålla ett meddelande om värdet i fältet **Ackumulerad procent** på sidan **Avskrivningsprofilscheman för anläggningstillgångar** inte är **100**.
+
+
 
 

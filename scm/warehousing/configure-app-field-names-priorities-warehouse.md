@@ -1,6 +1,6 @@
 ---
-title: "Konfigurera app fältnamn i Warehousing app"
-description: "Det här avsnittet beskrivs hur du definierar och konfigurerar lagerstället app fältnamn och prioriteringarna i Dynamics 365 för operationer."
+title: "Konfigurera programfältnamn i lagerstyrningsprogrammet"
+description: "Det här avsnittet beskriver hur du definierar och konfigurerar fältnamnen i lagerställets program samt prioriteringar i Dynamics 365 for Operations."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,16 +26,19 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="configure-app-field-names-in-warehousing-app"></a>Konfigurera app fältnamn i Warehousing app
+# <a name="configure-app-field-names-in-warehousing-app"></a>Konfigurera programfältnamn i lagerstyrningsprogrammet
 
-Det här avsnittet beskrivs hur du definierar och konfigurerar lagerstället app fältnamn och prioriteringarna i Dynamics 365 för operationer. 
+[!include[banner](../includes/banner.md)]
 
-**Anmärkning:** detta avsnitt gäller funktioner i Lagerstyrning. Det gäller inte för funktioner i Lagerhantering. Dynamics 365 - för lagring är ett program som du kan använda för att utföra uppgifter på lagerstället. Du kan definiera och konfigurera de fältnamn som används i programmet, samt konfigurera prioriteten fältnamnen ska tilldelas. Det här avsnittet beskrivs hur du definierar och konfigurerar dessa lagerställe app fältnamn och prioriteringar och hur de används i Dynamics 365 för - lagring. Detaljerad information om hur du konfigurerar anslutningen till Dynamics 365 för - lagring, finns i kursen [installera och konfigurera Dynamics 365 för - lagring](install-configure-warehousing-app.md).
 
-<a name="configure-warehouse-app-field-names"></a>Konfigurera lagerställe app fältnamn
+Det här avsnittet beskriver hur du definierar och konfigurerar fältnamnen i lagerställets program samt prioriteringar i Dynamics 365 for Operations. 
+
+**Obs!** Denna artikel gäller funktioner i lagerstyrningshanteringen. Den gäller inte funktioner i lagerhanteringshanteringen. Dynamics 365 for Operations - Lagerstyrning är ett program som du kan använda för att utföra uppgifter på lagerstället. Du kan definiera och konfigurera de fältnamn som används i programmet, samt konfigurera prioriteringen bland de fältnamn som ska tilldelas. Det här avsnittet förklarar hur du definierar och konfigurerar fältnamn och prioriteringar i lagerställets program, samt hur dessa används i Dynamics 365 for Operations - Lagerstyrning. Detaljerad information om hur du konfigurerar anslutningen till Dynamics 365 för Operations - Lagerstyrning, finns i kursen [Installera och konfigurera Dynamics 365 for Operations - Lagerstyrning](install-configure-warehousing-app.md).
+
+<a name="configure-warehouse-app-field-names"></a>Konfigurera fältnamn i lagerställets program
 ===================================
 
-När du använder Dynamics 365 för verksamhet – lagring på din mobila enhet kan du konfigurera hur metadata ska visas på enheten på den **lager app fältnamn** sida. Välj i ett nytt företag i Dynamics 365 för operationer **skapa standardinställningen** att generera alla fältnamn som används i lagerställe mobiltelefon arbetsflöden och därefter tilldela en prioriterad indataläge och inmatningstyp dem. När du har genererat alla fältnamn väljer du in följande alternativ.
+När du använder Dynamics 365 for Operations – Lagerstyrning på din mobila enhet kan du konfigurera hur metadata ska visas på enheten på sidan **Fältnamn i lagerställeprogram**. Välj **Skapa standardinställning** i ett nytt företag i Dynamics 365 for Operations för att skapa alla fältnamn som ska användas i lagerställets arbetsflöden för mobila enheter, och tilldela dem sedan ett föredraget inmatningsläge och en föredragen inmatningstyp. När du har genererat alla fältnamn väljer du in följande inmatningsalternativ.
 
 <table>
 <colgroup>
@@ -51,25 +54,25 @@ När du använder Dynamics 365 för verksamhet – lagring på din mobila enhet 
 <tbody>
 <tr class="odd">
 <td>Prioriterat indataläge</td>
-<td>Det här alternativet anger om skanning fält eller en manuell inmatning inmatningsfält som ska visas för valda fältets namn. Detta är användbart för att skilja fälten beroende på om du använder streckkoder för fältet. <strong>Anmärkning:</strong> för fältnamn med önskade Inmatningsläge värdet <strong>skanning</strong>, ange information manuellt om streckkoden är skadad eller oläsbar.</td>
+<td>Det här alternativet anger om ett skanningsfält eller ett fält för manuell inmatning bör visas för det valda fältnamnet. Detta är användbart för att skilja fälten åt, beroende på om du använder streckkoder för fältet. <strong>Obs!</strong> För fältnamn med önskat inmatningsläge angivet som <strong>Skanning</strong> kan du ange information manuellt om streckkoden är skadad eller oläsbar.</td>
 </tr>
 <tr class="even">
 <td>Inmatningstyp</td>
-<td>Det här alternativet definierar vilken Indatatyp som ska användas för valda fältets namn. Det finns fyra alternativ:
+<td>Det här alternativet definierar vilken inmatningstyp som ska användas för det valda fältnamnet. Det finns fyra alternativ:
 <ul>
-<li><strong>Val av</strong> - innehåller en lista över alternativ att välja mellan. Fältnamn med det här alternativet kan inte redigeras.</li>
-<li><strong>Datum</strong> - fältnamn anges enligt datum visas ett datumformat med etiketten. På så vis lagerarbetare se i vilket format du bör ange datum. Fältnamn med det här alternativet kan inte redigeras.</li>
-<li><strong>Alpha</strong> - Överför enhet tangentbordet ska användas när information anges manuellt i programmet. Erfarenheten tangentbord kan ändras beroende på vilken enhet som används.</li>
-<li><strong>Numeriska</strong> - för att använda numeriska endast indata fältnamnen du väljer det här alternativet för att visa en anpassad numerisk knappsats med inmatningsfält i stället för tangentbordet för enheten.</li>
+<li><strong>Val</strong> - Innehåller en lista över alternativ att välja mellan. Fältnamn med det här alternativet kan inte redigeras.</li>
+<li><strong>Datum</strong> - Fältnamn som angetts som datum visar ett datumformat med etiketten. Detta hjälper lagerarbetare att se i vilket format datumet ska anges. Fältnamn med det här alternativet kan inte redigeras.</li>
+<li><strong>Alpha</strong> - Om denna inställning används, används tangentbordet när information ska anges manuellt i programmet. Tangentbordsupplevelsen kan ändras beroende på vilken enhet som används.</li>
+<li><strong>Numeriskt</strong> - För fältnamn som endast använder numerisk inmatning kan du använda detta alternativ för att visa en anpassad numerisk knappsats på inmatningsfältet istället för enhetens tangentbord.</li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
-<a name="configure-warehouse-app-field-priority"></a>Konfigurera lagerställe app fältet prioritet
+<a name="configure-warehouse-app-field-priority"></a>Konfigurera prioriteringsordningen för lagerställets programfält
 ======================================
 
-I den **lager app fältet Prioritet** sidan inför fältnamn i olika prioriterade grupper. Detta gör det möjligt att bestämma vilken information som ska visas på sidan Huvuduppgiften när lagerarbetare utför åtgärder med programmet. Om du klickar på **skapa standardinställningen**, skapas en standarduppsättning prioriterade grupper. Det går att skapa så många prioritet som krävs, men endast tre grupper av prioritet visas på aktivitetssidan. När Dynamics 365 för operationer skickar metadata till programmet, kommer det att tilldela varje fält beroende på dess prioritet som en relativ prioritet och appen visas de första tre huvudmål grupper i metadata på sidan serviceuppgift. Resten av överskridande metadata visas på en informationssida med sekundär. Nedan visas ett exempel på en prioritet grupper.
+På sidan **Fältprioritet för lagerställeprogram** kan du ange fältnamn i olika prioriteringsgrupper. Detta gör det möjligt att bestämma vilken information som ska visas på huvuduppgiftssidan när lagerarbetare utför åtgärder med programmet. Om du klickar på **Skapa standardinställning** skapas en standarduppsättning prioriterade grupper. Det går att skapa så många prioriteringsgrupper som krävs, men endast tre prioriteringsgrupper visas på uppgiftssidan. När Dynamics 365 for Operations skickar metadata till programmet, kommer det att tilldela varje fält en relativ prioritet beroende på dess prioriteringsgrupp, och programmet kommer att visa de första tre prioriteringsgrupperna i metadatan på uppgiftssidan. Överflödig metadata visas på en ytterligare informationssida. Tabellen nedan visar ett exempel på fem prioriteringsgrupper.
 
 <table>
 <colgroup>
@@ -78,13 +81,13 @@ I den **lager app fältet Prioritet** sidan inför fältnamn i olika prioriterad
 </colgroup>
 <thead>
 <tr class="header">
-<th>Gruppen prioritet</th>
+<th>Prioriteringsgrupp</th>
 <th>Tilldelade fält</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td> Prioriteten 10</td>
+<td> Prioritet 10</td>
 <td><ul>
 <li>Artikel</li>
 <li>Kvantitet</li>
@@ -92,7 +95,7 @@ I den **lager app fältet Prioritet** sidan inför fältnamn i olika prioriterad
 </ul></td>
 </tr>
 <tr class="even">
-<td> Prioriteten 20</td>
+<td> Prioritet 20</td>
 <td><ul>
 <li>Klusterposition</li>
 <li>Kluster</li>
@@ -123,7 +126,7 @@ I den **lager app fältet Prioritet** sidan inför fältnamn i olika prioriterad
 </tbody>
 </table>
 
-Exempelvis när lagerarbetare utför en aktivitet på en mobil enhet om metadata som ska visas i appen består av följande fält:
+När en lagerarbetare exempelvis utför en aktivitet på en mobil enhet och metadatan som ska visas i programmet består av följande fält:
 
 -   Artikel
 -   Kvantitet
@@ -131,17 +134,19 @@ Exempelvis när lagerarbetare utför en aktivitet på en mobil enhet om metadata
 -   Artikelbeskrivning
 -   Storlek och plats
 
-Baserat på lagerstället app fältet Prioritet ställts in i tabellen ovan, ska följande 3 rader med information visas på sidan uppgifter:
+Baserat på fältprioriteringen i lagerställets program som anges i tabellen ovan, kommer följande 3 rader med information att visas på uppgiftssidan:
 
--   Rad 1: Artikel, kvantitet, enhet
--   Rad 2: Beskrivning av
--   Rad 3: storlek
+-   Rad 1: Artikel, Kvantitet, Måttenhet
+-   Rad 2: Artikelbeskrivning
+-   Rad 3: Storlek
 
-Återstående metadata, till exempel plats, visas inte på sidan uppgifter men visas på en informationssida. Om du vill veta mer och visa exempel på användargränssnittet finns i blogginlägget [om Dynamics 365 för - lagring](https://blogs.msdn.microsoft.com/dynamicsaxscm/2017/01/20/announcing-dynamics-365-for-operations-warehousing/).
+Återstående metadata, till exempel plats, visas inte på uppgiftssidan men däremot på en informationssida. Om du vill veta mer och visa exempel på användargränssnittet, se blogginlägget [Vi presenterar Dynamics 365 for Operations - Lagerstyrning](https://blogs.msdn.microsoft.com/dynamicsaxscm/2017/01/20/announcing-dynamics-365-for-operations-warehousing/).
 
 <a name="see-also"></a>Se även
 --------
 
-[Installera och konfigurera Microsoft Dynamics 365 för operationer – lagring](install-configure-warehousing-app.md)
+[Installera och konfigurera Microsoft Dynamics 365 for Operations – Lagerstyrning](install-configure-warehousing-app.md)
+
+
 
 

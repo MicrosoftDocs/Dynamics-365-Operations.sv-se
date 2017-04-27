@@ -28,9 +28,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="create-a-department-and-associate-it-with-the-department-hierarchy"></a>Skapa en avdelning och associera den med avdelningens hierarki
 
+[!include[banner](includes/banner.md)]
+
+
 En avdelning är en driftenhet som representerar en kategori eller verksamhetsområde inom en organisation. En avdelning är ansvarig för en viss del av organisationen, såsom försäljning, bokföring eller mänskliga resurser. Du kan använda avdelningar att rapportera om funktionella områden. Avdelningar kan ha vinst och förlust.
 
-En avdelning kan omfatta en grupp kostnadsställen. Positionerna kan tilldelas avdelningar. Klicka för att skapa en avdelning **personal**&gt;**avdelningar**&gt;**avdelning**. I följande tabell beskrivs de fält som är tillgängliga.
+En avdelning kan omfatta en grupp kostnadsställen. Positionerna kan tilldelas avdelningar. Klicka på **Personal** &gt; **Avdelningar** &gt; **Avdelning**. Följande register beskriver de fält som är tillgängliga.
 
 | Fält               | Beskrivning                                                                                                                                                                                                       |
 |---------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -46,12 +49,14 @@ En avdelning kan omfatta en grupp kostnadsställen. Positionerna kan tilldelas a
 
 Om du vill lägga till en avdelning till avdelning hierarki, följ dessa steg.
 
-1.  Klicka på **personal**&gt;**avdelningar**&gt;**avdelningshierarki**.
+1.  Klicka **Personal** &gt; **Avdelningar** &gt; **Avdelningshierarki**.
 2.  Klicka på **Redigera**och välj sedan organisationen att avdelningen ska vara.
 3.  Klicka på **Infoga**och välj den **avdelning** i listan.
 4.  I listan över enheter som visas, välj den avdelning som du vill lägga till i hierarkin.
 5.  Spara ändringarna. Du får ett meddelande om att ett utkast av hierarkin har skapats.
-6.  När du är klar klickar du på **publicera** i hierarkidesigner. Du kan ange ett giltighetsdatum som anger om hierarkin ska publiceras. Om du exempelvis vill lägga till en ny avdelning i början av nästa kalenderår, ställ in datumet 1 januari på det nya kalenderåret. Ändringarna i hierarkin kommer att träda i kraft den dagen.
+6.  När du är klar klickar du på **Publicera** i hierarkidesignern. Du kan ange ett giltighetsdatum som anger när hierarkin ska publiceras. Om du exempelvis vill lägga till en ny avdelning i början av nästa kalenderår, ställ in datumet 1 januari på det nya kalenderåret. Ändringarna i hierarkin kommer att träda i kraft den dagen.
+
+
 
 
 

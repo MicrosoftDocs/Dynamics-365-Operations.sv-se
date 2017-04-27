@@ -32,7 +32,7 @@ En parallellt aktivitet består av arbetsflödesförgreningar som körs samtidig
 
 ## <a name="name-a-parallel-activity"></a>Namnge en parallell aktivitet
 Följ dessa steg när du vill ange ett namn för en parallell aktivitet.
-1.  Högerklicka på den parallella aktiviteten och välj **egenskaper** att öppna den **egenskaper** formuläret.
+1.  Högerklicka den parallella aktiviteten och klicka sedan på **Egenskaper** för att öppna formuläret **Egenskaper**.
 2.  Klicka på **Grundinställningar** i det vänstra fönstret.
 3.  Ange ett unikt namn för den parallella aktiviteten i fältet **Name**.
 4.  Klicka på **Stäng**.

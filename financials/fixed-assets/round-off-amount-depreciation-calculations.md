@@ -27,9 +27,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="round-off-amount-for-depreciation-calculations"></a>Avrundningsbelopp för avskrivningsberäkningar.
 
+[!include[banner](../includes/banner.md)]
+
+
 Den här artikeln diskuterar fältet Avrundning av avskrivning som finns på inställningssidorna för räkenskapsbok.
 
-Avrunda avskrivningsbeloppen anges för varje regel. Avrunda avskrivningsbeloppen används i anläggningstillgångens avskrivningsprofil som visar framtida avskrivning och värde för anläggningstillgången samt även i avskrivningsförslag. Ange lägsta tillåtna avskrivningsbelopp för räkenskapsboken. 
+Avrundningsbeloppet för avskrivning anges för varje bok. Avrundningsbeloppet för avskrivning används i avskrivningsprofilen för anläggningstillgångar som visar den framtida avskrivningen, värdet på anläggningstillgången och även i avskrivningsförslag. Ange lägsta tillåtna avskrivningsbelopp för räkenskapsboken. 
 
 Oavsett avrundningen som har ställts in avrundas inte avskrivningsbeloppet i den sista avskrivningsperioden. I slutet av den sista avskrivningsperioden måste värdet på anläggningstillgången måste vara 0 (noll) eller kassationsvärdet, om kassationsvärde används.
 
@@ -43,6 +46,8 @@ Avskrivning utan avrundning beräknas som 2 444,44. Som följande tabell visar v
 | Avrundning 1,00   | 2 444,00            |
 | Avrundning 10,00  | 2 440,00            |
 | Avrundning 100,00 | 2 400,00            |
+
+
 
 
 

@@ -1,6 +1,6 @@
 ---
-title: "Enstaka verifikations- och valutaomvärdering uppgradera till Microsoft Dynamics 365 för operationer version 1611"
-description: "Vissa organisationer ange journaler som innehåller en enda verifikation som har mer än en kund eller leverantör och de också köra Kundreskontra eller konton Leverantörsreskontra utländsk valuta omvärdering processen. Det här avsnittet beskrivs de steg som dessa organisationer bör följa när de uppgraderar till Microsoft Dynamics 365 för operationer version 1611."
+title: "Uppgradering av enstaka verifikation- och valutaomvärdering till Microsoft Dynamics 365 for Operations version 1611"
+description: "Vissa organisationer anger journaler som innehåller en enda verifikation som har mer än en kund eller leverantör och de kör också processen Omräkning i utländsk valuta för Kundreskontra eller Leverantörsreskontra. Det här avsnittet beskriver de steg som dessa organisationer bör följa när de uppgraderar till Microsoft Dynamics 365 for Operations version 1611."
 author: twheeloc
 manager: AnnBe
 ms.date: 2016-12-28 16 - 04 - 17
@@ -24,15 +24,15 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="single-voucher-and-currency-revaluation-upgrade-for-microsoft-dynamics-365-for-operations-version-1611"></a>Enstaka verifikations- och valutaomvärdering uppgradera till Microsoft Dynamics 365 för operationer version 1611
+# <a name="single-voucher-and-currency-revaluation-upgrade-for-microsoft-dynamics-365-for-operations-version-1611"></a>Uppgradering av enstaka verifikation- och valutaomvärdering till Microsoft Dynamics 365 for Operations version 1611
 
-Vissa organisationer ange journaler som innehåller en enda verifikation som har mer än en kund eller leverantör och de också köra Kundreskontra eller konton Leverantörsreskontra utländsk valuta omvärdering processen. Det här avsnittet beskrivs de steg som dessa organisationer bör följa när de uppgraderar till Microsoft Dynamics 365 för operationer version 1611.
+Vissa organisationer anger journaler som innehåller en enda verifikation som har mer än en kund eller leverantör och de kör också processen Omräkning i utländsk valuta för Kundreskontra eller Leverantörsreskontra. Det här avsnittet beskriver de steg som dessa organisationer bör följa när de uppgraderar till Microsoft Dynamics 365 for Operations version 1611.
 
-Följ dessa steg när du uppgraderar till Microsoft Dynamics 365 för operationer version 1611.
+Följ dessa steg när du uppgraderar till Microsoft Dynamics 365 for Operations version 1611.
 
-1.  Innan du uppgraderar till Dynamics 365 för operationer kör processer omvärdering i utländsk valuta för kundreskontra och Leverantörsreskontra. Ange den **metod** till **fakturadatum**. En omvärderingstransaktion skapas Ångrar senaste omvärdering i utländsk valuta. Därför kan värderas de öppna transaktionerna till sina ursprungliga redovisningsvalutan.
-2.  Uppgradera till Dynamics 365 för operationer version 1611.
-3.  Kör Kundreskontra och konton Leverantörsreskontra utländsk valuta omvärdering processer igen. Ändra den **metod** till **Standard**. En ny omvärderingstransaktion skapas som baseras på de aktuella valutakurserna. Den här transaktionen registreras Orealiserad vinst/förlust och den korrekta Summeringskonto i redovisningen.
+1.  Innan du uppgraderar till Dynamics 365 for Operations kör du processerna för omvärdering i utländsk valuta för Kundreskontra och Leverantörsreskontra. Ange fältet **Metod** till **Fakturadatum**. En omvärderingstransaktion skapas som återför den senaste omvärderingen i utländsk valuta. Därför värderas de öppna transaktionerna till sin ursprungliga redovisningsvaluta.
+2.  Uppgradera till Dynamics 365 for Operations version 1611.
+3.  Kör processerna för omräkning i utländsk valuta för Leverantörsreskontra och Kundreskontra Denna gång ändrar du fältet **Metod** till **Standard**. En ny omvärderingstransaktion skapas som baseras på de aktuella valutakurserna. Den här transaktionen registrerar orealiserad vinst/förlust och korrekt summeringskonto i redovisningen.
 
 
 

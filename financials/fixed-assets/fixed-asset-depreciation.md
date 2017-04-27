@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="fixed-asset-depreciation"></a>Avskrivning av anläggningstillgång
 
+[!include[banner](../includes/banner.md)]
+
+
 Den här artikeln ger en översikt över avskrivning för anläggningstillgångar.
 
 Avskrivning är en periodisk transaktion som normalt minskar anläggningstillgångens värde i balansräkningen och debiteras som en utgift på ett resultatkonto. Därför används vanligtvis ett huvudkonto för att kreditera den periodiska avskrivningen i balansräkningen. Ett motkonto är ett konto i kontoplanens resultatdel.
@@ -51,6 +54,8 @@ Varje bok har en kalender som används när du skriver av anläggningstillgånga
 
 Du kan skapa delade kalendrar genom att använda sidan **Fiscal calendars** i redovisningen.
 
-Mer information finns i [avskrivningsmetoder och avskrivningspraxis](depreciation-methods-conventions.md).
+Mer information finns i [Avskrivningsmetoder och avskrivningspraxis](depreciation-methods-conventions.md).
+
+
 
 

@@ -54,9 +54,9 @@ Om du väljer **Kalender** som avskrivningsår finns följande alternativ i fäl
 
 ### <a name="fiscal"></a>Skatt
 
-Om du väljer **Fiscal** i fältet **Depreciation year**, beräknas 175 % degressiv avskrivning baserat på räkenskapsåret för räkenskapskalendern som angetts för boken, eller för den räkenskapskalender som har valts på sidan **Ledger**. Räkenskapskalendrar ställs in på sidan **Räkenskapskalendrar**. Mer information finns i [räkenskapskalendrar år och perioder.](\financials\budgeting\fiscal-calendars-fiscal-years-periods.md).
+Om du väljer **Fiscal** i fältet **Depreciation year**, beräknas 175 % degressiv avskrivning baserat på räkenskapsåret för räkenskapskalendern som angetts för boken, eller för den räkenskapskalender som har valts på sidan **Ledger**. Räkenskapskalendrar ställs in på sidan **Räkenskapskalendrar**. Mer information finns i [Räkenskapskalendrar, räkenskapsår och perioder.](\financials\budgeting\fiscal-calendars-fiscal-years-periods.md)
 
-För räkenskapsåret 1 juli till och med 30 juni påbörjas avskrivningsberäkningen exempelvis 1 juli. Räkenskapsåret kan vara längre eller kortare än 12 månader. Avskrivningen justeras automatiskt för varje period och längden på nästa räkenskapsår bestäms av perioderna som ställs in på sidan **Räkenskapskalendrar**. 
+För räkenskapsåret 1 juli - 30 juni startar alltså avskrivningsberäkningen den 1 juli. Räkenskapsåret kan vara längre eller kortare än 12 månader. Avskrivningen justeras automatiskt för varje period och längden på nästa räkenskapsår bestäms av perioderna som ställs in på sidan **Räkenskapskalendrar**. 
 
 Om du väljer **Räkenskapsår** som avskrivningsår finns följande alternativ i fältet **Periodfrekvens**:
 
@@ -81,6 +81,6 @@ Den degressiva avskrivningsmetoden på 175 % delar 175 procent med tjänstelivst
 | År 3 | 4 225 × 35 % = 1 478,75                        | 5 225 - 1 478,75 = 3 746,25 | 4,225 - 1 478,75 = 2 746,25           |
 
 > [!NOTE] 
-> Vanligtvis när beloppet beräknas med hjälp av en degressiv avskrivning på 175 % blir mindre än det belopp som beräknas med den linjära metoden sker en konvertering till linjär metod för resterande tjänstelivstid.
+> Om beloppet som beräknas med den degressiva avskrivningsmetoden 175 % blir lägre än beloppet som beräknas med den linjära metoden, sker vanligtvis en konvertering till den linjära metoden för resterande tjänstelivstid.
 
 

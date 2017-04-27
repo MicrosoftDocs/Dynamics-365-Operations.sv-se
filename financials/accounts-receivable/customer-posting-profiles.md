@@ -28,12 +28,15 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="customer-posting-profiles"></a>Kundbokföringsprofiler
 
+[!include[banner](../includes/banner.md)]
+
+
 Bokföringsprofiler för kund styr bokföringen av kundtransaktionerna i redovisningen.kundpool
 
 <a name="customer-posting-profiles"></a>Kundbokföringsprofiler
 -------------------------
 
-Kundbokföringsprofiler gör det möjligt att tilldela redovisningskonton och dokumentinställningar för alla kunder, en grupp av kunder eller en enskild kund. Inställningarna används när du skapar försäljningsorder, fritextfakturor, kontantbetalningar, kravbrev och räntefakturor. För en del transaktioner kan du markera en bokföringsprofil som skiljer sig från och har företräde framför de bokföringsprofiler som har ställts in för transaktioner på den här sidan. 
+Kundbokföringsprofiler gör det möjligt att tilldela redovisningskonton och dokumentinställningar för alla kunder, en grupp av kunder eller en enskild kund. Dessa inställningar kommer att användas när du skapar försäljningsorder, fritextfakturor, kontantbetalningar, kravbrev samt räntefakturor. För en del transaktioner kan du markera en bokföringsprofil som skiljer sig från och har företräde framför de bokföringsprofiler som har ställts in för transaktioner på den här sidan. 
 
 Standardbokföringsprofilen definieras på snabbfliken Redovisning och moms på parametersidan Kundreskontra. Standardbokföringsprofilen inkluderas sedan automatiskt i rubriken för nya dokument som du kan ändra den till en annan bokföringsprofil, om det behövs.
 
@@ -126,7 +129,7 @@ Om du vill att alla kundtransaktioner ska ha samma bokföringsprofil skapar du b
 
 ### 
 
-### <a name="table-restrictions"></a>**Table restrictions**
+### <a name="table-restrictions"></a>**Registerbegränsningar**
 
 Ange om transaktioner kvittas automatiskt, ränta beräknas och kravbrev levereras för transaktioner som har den valda bokföringsprofilen. Det går även att välja det konto som används när transaktioner med den valda bokföringsprofilen stängs.
 
@@ -138,6 +141,8 @@ Ange följande värden om du vill ställa in din bokföringsprofil:
 | **Intresse**          | Markera den här växlingsknappen om ränta ska beräknas på utestående saldon för kundkonton som använder den här profilen. Om växlingsknappen är avmarkerad beräknas ingen ränta för dessa kunder.                                           |
 | **Kravbrev** | Markera den här växlingsknappen om kravbrev ska skapas för kundkonton som använder den här profilen. Om växlingsknappen är avmarkerad skapas inga kravbrev för dessa kunder.                                                 |
 | **Stäng**             | Markera en bokföringsprofiler att ändra till när transaktionerna med denna bokföringsprofil stängs. En transaktion betraktas som stängd när den har kvittats helt.                                                                           |
+
+
 
 
 

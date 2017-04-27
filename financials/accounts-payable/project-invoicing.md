@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="project-invoicing"></a>Projektfakturering
 
+[!include[banner](../includes/banner.md)]
+
+
 Det här avsnittet ger en översikt över projektfakturering för Tids - och materialprojekt samt Fastprisprojekt. Här finns information om fakturaförslag (preliminära fakturor), fakturakontroll, à conto-fakturering, leverantörfakturering och kreditfakturor.
 
 Projekttypen bestämmer vilken faktureringsprocedur som ska användas. Endast de två externa projekttyperna, Tid och material och Fastpris, går att fakturera. Tids- och materialprojekt och fastprisprojekt är alltid kopplade till ett projektkontrakt.
@@ -103,7 +106,7 @@ Du kan till exempel ställa in följande faktureringstidsplan:
 När milstolpsbetalningarna är klara att faktureras använder du proceduren för att fakturera à conto-belopp.
 
 ## <a name="vendor-invoicing"></a>Fakturering av leverantör
-När du har beställt en artikel från en leverantör och tilldelar artikeln till ett projekt, bestämmer radegenskapen som du väljer för inköpsorderraden för den artikeln, om den inköpta artikeln ska faktureras till en kund. Om du ställer in standardegenskaperna för rader som de visas för artikeln på inköpsorderraden (rad uppgifter &gt;projekt &gt;radegenskap). Det finns två sätt att ändra radegenskapen:
+När du har beställt en artikel från en leverantör och tilldelar artikeln till ett projekt, bestämmer radegenskapen som du väljer för inköpsorderraden för den artikeln, om den inköpta artikeln ska faktureras till en kund. Om du ställer in standardegenskaperna visas de för artikeln på inköpsorderraden (Radinformation &gt; Projekt &gt; Radegenskap). Det finns två sätt att ändra radegenskapen:
 
 -   Fakturera projektets kund för artikeln: Ange radegenskapen för artikeln till ett debiterbart värde på inköpsordern och fakturera sedan kunden genom att använda rätt projektfaktureringsmetod.
 -   Fakturera inte projektets kund för artikeln: Välj inte radegenskapen **Debiterbar** på inköpsorderraden för artikeln. Det går sedan att fakturera inköpsordern och inga vidare åtgärder krävs.
@@ -118,5 +121,7 @@ Samma dokument kan inkludera transaktioner som markerat för kreditering, kredit
 För att kreditera ett fakturerat belopp måste du först välja det fakturerade beloppet att kreditera och sedan skapa en kreditfaktura. Skapa en kreditfaktura genom att följa samma procedur som du använder för att skapa en vanlig kundfaktura. 
 
 Du kan skapa en faktura med negativt belopp, vilken klassificeras som en kreditfaktura. För att skapa och skriva ut kreditfakturan måste du välja transaktionerna som tidigare bokfördes för en kundfaktura och sedan ändra transaktionerna. Med undantag för juridiska personer vars primära adress är Tyskland, är titeln på fakturan Korrigeringsfaktura.
+
+
 
 

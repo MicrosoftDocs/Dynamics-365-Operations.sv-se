@@ -27,14 +27,17 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="vendor-collaboration-with-customers"></a>Leverantörssamarbete med kunder
 
+[!include[banner](../includes/banner.md)]
+
+
 I det här avsnittet beskrivs hur du kan använda leverantörssamarbeten för att arbeta med inköpsorder och övervaka försändelselager i Microsoft Dynamics 365 for Operations.
 
-I det här avsnittet beskrivs hur du kan använda leverantörssamarbete när du arbetar med kunder i Microsoft Dynamics 365 for Operations. Den innehåller information om hur du övervakar och svara på inköpsorder och hur du övervakar försändelse lager. Det går också att använda leverantör samarbete för att arbeta med fakturor. Mer information finns i [leverantör samarbete fakturering arbetsytan](/dynamics365/operations/financials/accounts-payable/vendor-portal-invoicing-workspace).
+I det här avsnittet beskrivs hur du kan använda leverantörssamarbete när du arbetar med kunder i Microsoft Dynamics 365 for Operations. Det innehåller information om hur du övervakar och svarar på inköpsorder och hur du övervakar försändelselager. Det går också att använda leverantörsamarbete för att arbeta med fakturor. Mer information finns i [Arbetsyta för leverantörssamarbetesfakturering](/dynamics365/operations/financials/accounts-payable/vendor-portal-invoicing-workspace).
 
 ## <a name="working-with-purchase-orders"></a>Arbeta med inköpsorder
 Arbetsyten **Inköpsorderbekräftelse** låter dig besvara de insköpsorder som har skickats till dig för granskning. Den låter dig också visa information om inköpsorder som inväntar åtgärd från kunden, samt inköpsorder som har bekräftats men som fortfarande är öppna.. Det finns tre listor i arbetsytan **Inköpsorderbekräftelse**:
 
--   **Inköpsorder för granskning** -visar listan POs som har skickats till dig och väntar på ett svar från dig. När du har svarat Inköpsordern tas bort från listan. Om kunden skickar dig en ny version av inköpsordern innan du har svarat på föregående, visas bara den senaste versionen.
+-   **Inköpsorder för granskning** - Denna lista visas inköpsorder som har skickats till dig och som inväntar ett svar från dig. När du har svarat tas inköpsordern bort från listan. Om kunden skickar dig en ny version av inköpsordern innan du har svarat på föregående, visas bara den senaste versionen.
 -   **Inväntar kundåtgärd -** - Den här listan låter dig se inköpsorder som du har svarat på, men som ännu inte har bekräftats av kunden. Om du godkände inköpsordern kan du övervaka den i den här listan, tills dess att statusen ändras till **Confirmed**. Om du avvisade inköpsordern eller godkände den med ändringar, kan du övervaka inköpsordern här tills kunden skickar en ny version.
 -   **Open confirmed purchase orders** - Denna innehåller alla inköpsorder för kontot som har statusen **Confirmed**. När produkter eller tjänster har inlevererats helt mot inköpsordern, försvinner inköpsordern från listan.
 
@@ -47,7 +50,7 @@ Följande lista visar de fyra sidor som du kan använda när du arbetar med ink�
 
 ### <a name="responding-to-purchase-orders"></a>Besvara inköpsorder.
 
-Inköpsorder som kunden har skickat dig att granska syns i den **inköpsorderbekräftelsen** arbetsytan och på den **inköpsorder för granskning** sida. När du har öppnat en inköpsorder kan du godkänna, avvisa eller accepterar ändringarna. Det kan finnas bilagor inköpsorderhuvudet eller på enskilda rader. Du kan även bifoga information för ditt svar på inköpsorderhuvudet eller på enskilda rader. Du kan till exempel föreslå en reservartikel för en av raderna. Du kan granska och skriva ut inköpsordern som en PDF-fil genom att använda alternativet **Preview/Print**. Du kan dölja eller visa följande dimensionskolumner med hjälp av åtgärden **Display dimensions**: Site, Warehouse, Color, Size, Style, Configuration. Om du använder den **acceptera ändringar** alternativ, Godkänn eller avvisa för enskilda rader. Du kan också göra följande ändringar i rader:
+Inköpsordern som kunden har skickat dig att granska visas på arbetsytan **Inköpsorderbekräftelse** och på sidan **Inköpsorder för granskning**. När du har öppnat en inköpsorder kan du godkänna, avvisa eller acceptera ändringarna. Det kan finnas bilagor inköpsorderhuvudet eller på enskilda rader. Du kan även bifoga information för ditt svar på inköpsorderhuvudet eller på enskilda rader. Du kan till exempel föreslå en reservartikel för en av raderna. Du kan granska och skriva ut inköpsordern som en PDF-fil genom att använda alternativet **Preview/Print**. Du kan dölja eller visa följande dimensionskolumner med hjälp av åtgärden **Display dimensions**: Site, Warehouse, Color, Size, Style, Configuration. Om du använder alternativet **Acceptera ändringar** kan du godkänna eller avvisa enskilda rader. Du kan även göra följande ändringar på rader:
 
 -   Ändra datum eller kvantiteter. Om du vill uppdatera det bekräftade leveransdatumet på alla rader, använd alternativet **Update delivery date** i inköpsorderhuvudet.
 -   Dela rader för andra leveransdatum eller kvantiteter
@@ -58,7 +61,7 @@ Du kan inte ändra prissättningsinformation eller avgifter, men du kan göra ä
 ## <a name="monitoring-consignment-inventory"></a>Övervaka försändelselager
 Om du använder försändelselager kan du använda gränssnittet för leverantörssamarbete för att visa information på följande sidor:
 
--   **Inköpsorder som förbrukar försändelse lagret** -inköpsorder för försändelse lager skapas när kunden ägarskapet till lagret. Dessa försändelseinköpsorder visas bara på sidan **Purchase orders consuming consignment inventory**. Alla inkluderas in på sidan **All confirmed purchase orders**.
+-   **Inköpsorder som förbrukar försändelselager** - Inköpsorder för försändelselager skapas när kunden tar över ägarskapet för lagret. Dessa försändelseinköpsorder visas bara på sidan **Purchase orders consuming consignment inventory**. Alla inkluderas in på sidan **All confirmed purchase orders**.
 -   **Products received from consignment inventory** - Den här sidan visar alla transaktioner där ägarskapet för produkter har överförts till det företag som har förbrukat lagret. Du kan använda den här informationen för att fakturera kunden.
 -   **On-hand consignment inventory** - Den här sidan visar det tillgängliga försändelselager som ägs av ditt företag och som är tillgängligt i kundens lager.
 
@@ -67,5 +70,7 @@ Om du använder försändelselager kan du använda gränssnittet för leverantö
 --------
 
 [Hantera leverantörssamarbetesanvändare](manage-vendor-collaboration-users.md)
+
+
 
 

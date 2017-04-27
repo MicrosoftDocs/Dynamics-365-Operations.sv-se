@@ -1,5 +1,5 @@
 ---
-title: "Placera budgetering felsökning"
+title: "Felsöka befattningsbudgetering"
 description: "Den här artikeln innehåller svar på frågor som du kan ha när du konfigurerar befattningsbudgetering. Det handlar om vanliga frågor och svar om hur du skapar budgetkostnadselement, kompensationsgrupper och kompensationsrutnät."
 author: twheeloc
 manager: AnnBe
@@ -25,7 +25,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="position-budgeting-troubleshooting"></a>Placera budgetering felsökning
+# <a name="position-budgeting-troubleshooting"></a>Felsöka befattningsbudgetering
+
+[!include[banner](../includes/banner.md)]
+
 
 Den här artikeln innehåller svar på frågor som du kan ha när du konfigurerar befattningsbudgetering. Det handlar om vanliga frågor och svar om hur du skapar budgetkostnadselement, kompensationsgrupper och kompensationsrutnät. 
 
@@ -58,6 +61,8 @@ Datumen på prognospositionens kostnadselementrad måste vara inom följande int
 -   Aktiverings- och avyttringsdatum för befattningen.
 -   Aktiverings- och utgångsdatum för budgetkostnadselementet.
 -   Start- och slutdatumen för den budgetcykel som associeras med budgetplaneringsprocessen för prognosbefattningen.
+
+
 
 
 

@@ -59,5 +59,5 @@ Följande restriktioner gäller när du skapar länkar i bokföringsdefinitioner
 -   Du kan koppla en bokföringsdefinition till en valfri transaktionstyp, men transaktionstypen måste finnas i samma modul som bokföringsdefinitionen. Använd sidan **Bokföringsdefinitioner för transaktioner** för att se vilken modul en transaktionstyp finns i.
 
 
-Mer information finns i [definitioner Bokföringsexempel](/general-ledger/example-posting-definitions.md). 
+Mer information finns i [Exempel på bokföringsdefinitioner](/general-ledger/example-posting-definitions.md). 
 

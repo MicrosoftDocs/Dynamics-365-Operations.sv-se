@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="standard-cost-conversion-overview"></a>Standardkostnadskonvertering – översikt
 
+[!include[banner](../includes/banner.md)]
+
+
 Den här artikeln ger en översikt över processen för att ställa in och köra en standardkostnadskonvertering. Den angivna stegen är avsett att utföras efter att du slutfört förberedelserna för en standardkostnadskonvertering. 
 
 Använd formuläret **Konverteringar av standardkostnad** när du vill konvertera lagermodellen för en batch med valda artiklar från en faktisk kostnadsredovisning till en standardkostnadsredovisning. Konverteringsprocessen omfattar en obligatorisk lagerstängning, flera steg under en övergångsperiod, som definieras av ett övergångsstartdatum och ett planerat konverteringsdatum, samt själva konverteringen med tillhörande lagerstängning.
@@ -38,10 +41,10 @@ Använd formuläret **Konverteringar av standardkostnad** när du vill konverter
 
 När konverteringsprocessen har slutförts baseras lagermodellen för varje artiklar på standardkostnaden och artikelns standardkostnader aktiveras. Efterföljande lagertransaktioner värderas till artikelns standardkostnad. Dessutom konverterar systemet artikelns fysiska lagertransaktioner för in- och utleveranser till standardkostnader baserade på konverteringsdatumet. Systemet konverterar också artikelns ekonomiska lagerbehållning till standardkostnad och bokför differensen i värde som en lageromvärdering. Transaktioner som uppstår efter att konverteringen har värderats till artikelns standardkostnad. Du kan inte ange bakåtdaterade transaktioner före konverteringsdatumet eftersom en lagerstängning måste genomföras en dag före konverteringsdatumet. En konvertering kan endast utföras om en lagerstängning har genomförts en dag tidigare. Den här lagerstängningen kan inte annulleras.
 
-## <a name="1-define-a-standard-cost-conversion-record-and-the-associated-costing-version"></a>1. Ange en konverteringspost för standardkostnad och den associerade kostnadsversionen
+## <a name="1-define-a-standard-cost-conversion-record-and-the-associated-costing-version"></a>1. Definiera en konverteringspost för standardkostnad och den associerade kostnadsredovisningsversionen
 Använd **Konverteringar av standardkostnad**-sidan för att skapa en konverteringspost. Du kan bara skapa en ny konverteringspost om du har slutfört befintliga konverteringsposter. Tidslängden för den planerade övergångsperioden definieras av övergångsstartdatumet och det planerade konverteringsdatumet. En planerad övergångsperiod kan vara så kort som en enda dag. En planerad övergångsperiod garanterar att konverteringsprocessen har tillräcklig tid att slutföra dess samtliga steg. En lagerstängning måste genomföras på ett datum som är en dag före övergångsstartdatumet, för att se till att alla kvittningar slutförs innan konverteringsprocessen startas. För att se till att övergångsstartdatumet och lagerstängningsdatumen är korrekta kan du antingen ändra övergångsstartdatumet till en dag efter en befintlig lagerstängning, eller genomföra en lagerstängning. När du anger en konverteringspost anger du också ett användardefinierat ID för en ny kostnadsredovisningsversion som ska innehålla standardkostnaderna för konverterade artiklar. När du sparar konverteringsposten skapas kostnadsredovisningsversionen automatiskt.
 
-## <a name="2-review-and-change-the-new-costing-version-for-the-conversion-record"></a>2. Granska och ändra en ny kostnadsversion för konverteringsposten
+## <a name="2-review-and-change-the-new-costing-version-for-the-conversion-record"></a>2. Granska och ändra den nya kostnadsredovisningsversion som skapats för konverteringsposten.
 Den nya kostnadsredovisningsversionen dedikeras till konverteringsposten, vilket visas med kostnadsredovisningsversionen **Konvertering**. Den dedikerade kostnadsredovisningsversionen liknar en kostnadsredovisningsversion för standardkostnader och innehåller artikelkostnadsposter för artiklar som är associerade med konverteringsposten. Den dedikerade kostnadsredovisningsversionen för en konverteringspost har följande inställningar, som bör granskas och redigeras på de olika flikarna efter behov:
 
 -   **Kostnadsredovisningstyp:** Detta fält ska anges för **Standardkostnad**.
@@ -57,25 +60,25 @@ Den nya kostnadsredovisningsversionen dedikeras till konverteringsposten, vilket
 
 Artikelkostnadsinformation i den dedikerade kostnadsredovisningsversionen kan bara underhållas från sidan **Konverteringar av standardkostnad**. Du kan inte använda **Inställningar för kostnadsredovisningsversion**-sidan eller **Underhåll av kostnadsredovisningsversion**-sidan för att beräkna kostnader för kostnadsredovisningsversionen under konverteringen. De här formulären kan dock användas för att underhålla den dedikerade kostnadsredovisningsversionen efter att konverteringen har genomförts.
 
-## <a name="3-identify-the-items-to-convert-to-standard-cost"></a>3. identifiera artiklarna som du vill konvertera till standardkostnad
+## <a name="3-identify-the-items-to-convert-to-standard-cost"></a>3. Identifiera de artiklar som ska konverteras till standardkostnad.
 Använd **Konverteringar av standardkostnad**-sidan för att identifiera de enskilda artiklar som ska konverteras till standardkostnad. Du kan lägga till flera objekt genom att använda sidan **Lägg till artiklar för standardkostnadskonvertering**. En allmän riktlinje är att du bör inkludera alla tillverkade artiklar i en enda konverteringspost för att se till att kostnaderna beräknas korrekt.
 
 ## <a name="4-enter-or-calculate-the-pending-standard-cost-for-each-item-that-is-being-converted"></a>4. Ange eller beräkna pågående standardkostnad för varje artikel som konverteras
 Använd sidan **Artikelpris** för att ange pågående standardkostnader i den dedikerade kostnadsredovisningsversionen för inköpta artiklar och överföringsartiklar. Kostnadsposter är sitespecifika och de pågående kostnaderna för en artikel måste anges för varje site. Använd sidan **Artikelpris** för att beräkna pågående standardkostnader för tillverkade artiklar. Pågående kostnader för en tillverkad artikel ska beräknas för varje tillverkningsplats förutom när platsen motsvarar en överföringsplats. I detta fall bör de väntande kostnaderna anges manuellt. Vissa artiklar kan ha artikeldimensioner för färg, storlek eller konfiguration. På **Konverteringar av standardkostnad**-sidan, kryssrutan **Använd självkostnad per variant** visar standardkostnaden för varje kombination av produktdimensioner. Om den här kryssrutan är avmarkerad behöver du bara ange en pågående kostnad för artikeln.
 
-## <a name="5-check-and-resolve-any-issues-for-the-items-that-are-being-converted"></a>5. Kontrollera och korrigera alla eventuella problem för de artiklar som konverteras
+## <a name="5-check-and-resolve-any-issues-for-the-items-that-are-being-converted"></a>5. Sök efter och korrigera alla eventuella problem för de artiklar som konverteras
 Använd **Kontroller för standardkostnadskonvertering**-rapporten när du vill identifiera problem för de artiklar som konverteras. Om det inte finns några problem med en artikel ändras dess statusvärde i konverteringsposten till **Kontrollerad**. Om det finns problem med en artikel måste du korrigera problemen och sedan köra rapporten igen tills artikelns statusvärde ändras till **Kontrollerad**. Om det inte går att lösa ett artikelproblem inom rimlig tid kan du välja att ta bort artikeln från konverteringsposten och konvertera artikeln senare.
 
-## <a name="6-change-the-status-of-the-conversion-record-to-ready"></a>6. Ändra statusvärdet för konverteringsposten till klar
+## <a name="6-change-the-status-of-the-conversion-record-to-ready"></a>6. Ändra statusvärdet för konverteringsposten till Klar.
 När statusvärdet för konverteringsposten ändras till **Klar** utförs en slutgiltig kontroll innan en standardkostnadskonvertering körs. Statusen ändras till **Klar** endast om följande villkor har uppfyllts:
 
 -   Alla artiklar i konverteringsposten har statusvärdet **Kontrollerad**.
 -   En lagerstängning genomfördes på ett datum en dag före övergångsstartdatumet. För att se till att övergångsstartdatumet och lagerstängningsdatumen är korrekta kan du antingen ändra övergångsstartdatumet till en dag efter en befintlig lagerstängning, eller genomföra en lagerstängning.
 
-## <a name="7-back-up-the-database-before-conversion"></a>7. säkerhetskopiera databasen innan du konverterar
+## <a name="7-back-up-the-database-before-conversion"></a>7. Säkerhetskopiera databasen före konverteringen
 Om du har skapat en säkerhetskopia av databasen kan du återställa den om fel uppstår under konverteringsprocessen.
 
-## <a name="8-perform-the-conversion-when-the-conversion-record-has-a-ready-status"></a>8. genomför du konverteringen när konverteringspostens status klar
+## <a name="8-perform-the-conversion-when-the-conversion-record-has-a-ready-status"></a>8. Genomför konverteringsprocessen när konverteringspostens statusvärde är Klar.
 För att konverteringsprocessen ska kunna genomföras måste en lagerstängning ha genomförts på ett datum en dag före det planerade konverteringsdatumet. Det här kravet ser till att bakåtdaterade transaktioner inte ska kunna anges inom övergångsperioden. Om ingen lagerstängning har genomförts får du en fråga om du vill genomföra en lagerstängning som en del av konverteringsprocessen. Konverteringsprocessen hanterar en artikel åt gången. Den börjar med de lägsta artiklarna i en produktstruktur baserat på artikelns lågnivåkod. När en artikel har konverterats korrekt, ändras dess status till **Konverterad**i konverteringsposten. Om konverteringsprocessen avbryts används statusvärdet **Kontrollerad** för artiklar som inte har konverterats korrekt. En konverteringsprocess som genomförs utan problem har följande effekter:
 
 -   Statusvärdet för konverteringsposten ändras från **Klar** till **Slutförd** och statusvärdet för alla valda artiklar ändras från **Kontrollerad** till **Konverterad**.
@@ -83,7 +86,7 @@ För att konverteringsprocessen ska kunna genomföras måste en lagerstängning 
 -   Standardkostnaderna för de konverterade artiklarna har aktiverats i den dedikerade kostnadsredovisningsversionen.
 -   Kostnadstypen för kostnadsredovisningsversionen ändras från **Konvertering** till **Standardkostnad** och kostnadsredovisningsversionen fungerar nu som alla andra kostnadsredovisningsversioner för standardkostnader.
 
-## <a name="9-validate-and-reconcile-the-inventory-values-for-the-converted-items"></a>9. Kontrollera och stämma av lagervärden för de konverterade artiklarna
+## <a name="9-validate-and-reconcile-the-inventory-values-for-the-converted-items"></a>9. Validera och stäm av lagervärdena för de konverterade artiklarna
 Rapporten **Utdrag för avvikelseanalys** kan analysera omvärderingsavvikelse och rapporten **Lagervärde** kan visa lagervärde på ett visst datum.
 
 -   Analysera alla eventuella omvärderingsavvikelser. Använd rapporten **Utdrag för avvikelseanalys** för att visa avvikelser för lageromvärdering för de konverterade artiklarna. Du kan också använda sidan **Standardkostnadstransaktioner** för att visa transaktionerna för lageromvärdering för de konverterade artiklarna som har lager.
@@ -96,6 +99,8 @@ Rapporten **Utdrag för avvikelseanalys** kan analysera omvärderingsavvikelse o
 <a name="see-also"></a>Se även
 --------
 
-[Prerequisites for a standard cost conversion](prerequisites-standard-cost-conversion.md)
+[Förutsättningar för en standardkostnadskonvertering](prerequisites-standard-cost-conversion.md)
+
+
 
 

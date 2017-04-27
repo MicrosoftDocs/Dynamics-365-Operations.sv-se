@@ -28,18 +28,21 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="sales-tax-overview"></a>Momsöversikt
 
+[!include[banner](../includes/banner.md)]
+
+
 Det här avsnittet innehåller en översikt över momssystemet. Det ger en beskrivning av komponenterna för inställning av moms och hur de arbetar tillsammans.
 
 <a name="overview"></a>Översikt
 --------
 
-Moms framework stöder många typer av indirekta skatter, till exempel moms, moms (VAT), skatt på varor och tjänster (GST), enhetsbaserade avgifter och källskatt. Dessa skatter beräknas och dokumenterade transaktioner för inköp och försäljning. Med jämna mellanrum måste de rapporteras och betalas till skattemyndigheten. 
+Ramverket för moms stöder många typer av indirekta skatter, till exempel moms/mervärdesskatt, skatt på varor och tjänster (GST), enhetsbaserade avgifter och källskatt. Dessa skatter beräknas och dokumenteras i samband med inköps- och försäljningstransaktioner. Dessa måste regelbundet rapporteras och betalas till skattemyndigheten. 
 
 Följande diagram visar de enheterna för skatteinställning och hur de hör ihop.
 
 [![TaxOverview](./media/taxoverview1-300x209.jpg)](./media/taxoverview1.jpg) 
 
-En momskod måste definieras för varje skatt som ett företag måste redovisa. En momskod lagrar skattesatserna och beräkningsregler för moms. 
+För varje momstyp som ett företag redovisar redovisa måste en momskod anges. En momskod lagrar skattesatserna och beräkningsregler för moms. 
 
 Varje momskod måste vara länkad till en momskvittningsperiod. Momskvittningsperiodens definierar intervallerna med vilka moms rapporteras och betalas till skattemyndigheten. Varje momskvittningsperiod måste vara länkad till en skattemyndighet. En skattemyndighet representerar enheten som moms rapporteras och betalas till. Den definierar också utseendet på momsrapporten. Momsmyndigheter kan relateras till leverantörskonton. 
 
@@ -69,26 +72,28 @@ På varje transaktion (försäljnings-/inköpsdokumentrader, journaler och så v
 På varje transaktion kan du slå upp den beräknade momsen genom att öppna sidan **Momstransaktion**. Du kan slå upp momsen för en dokumentrad eller för hela dokumentet. För vissa dokument (exempelvis,leverantörsfaktura och allmänna journaler) kan du justera den beräknade momsen om originaldokumentet visar avvikande belopp.
 
 ## <a name="sales-tax-settlement-and-reporting"></a>Momskvittning och rapportering
-Moms måste rapporteras och betalas till skattemyndigheten med regelbundna intervall (månad, kvartal och så vidare). Microsoft Dynamics 365 för operationer innehåller funktioner som kan du kvitta skattebelopp för intervallet och saldon till avräkningskontot skatt enligt redovisningsbokföringsgrupper motbokas. Du kan använda den här funktionen på det **kvitta och bokföra moms** sida. Du måste ange en momskvittningsperiod som moms som ska betalas för. 
+Moms måste rapporteras och betalas till skattemyndigheten med regelbundna intervall (månad, kvartal och så vidare). Microsoft Dynamics 365 for Operations innehåller de funktioner som gör att du kan kvitta momskonton för intervallet, och förskjuta saldon till momskvittningskontot, enligt uppgifterna i redovisningsbokföringsgrupperna. Du kan använda den här funktionen på sidan **Kvitta och bokföra moms**. Du måste ange en momskvittningsperiod för vilken moms ska kvittas. 
 
 När momsen har betalats, ska saldot för momskvittningskontot balanseras mot bankkontot. Om skattemyndigheten som anges i momskvittningsperioden hör till ett annat leverantörskonto, bokförs momssaldot som en öppen leverantörsfaktura och inkluderas i det vanliga betalningsförslaget.
 
 ## <a name="conditional-sales-tax"></a>Villkorsmoms
-Villkorsmoms är moms som ska betalas proportionellt mot det faktiska beloppet som betalas på en faktura. Däremot beräknas standardmoms vid faktureringstillfället. Villkorsmoms måste betalas till skattemyndigheten när betalningen bokförs, inte när fakturan bokförs. När fakturan bokförs rapporteras transaktionen i boken momsrapporten. Transaktionen måste vara undantagen från betalning av momsrapporten. 
+Villkorsmoms är moms som ska betalas proportionellt mot det faktiska beloppet som betalas på en faktura. Däremot beräknas standardmoms vid faktureringstillfället. Villkorsmoms måste betalas till skattemyndigheten när betalningen bokförs, inte när fakturan bokförs. När fakturan bokförs måste transaktionen rapporteras momsboksrapporten. Transaktionen måste emellertid vara undantagen ur momsbetalningsrapporten. 
 
-Om du markerar kryssrutan villkorsmoms i formuläret Allmänna redovisningsparametrar kan ingen moms dras tills du har betalt fakturan. Detta är ett juridiskt krav i vissa länder/regioner.
+Om du markerar kryssrutan Villkorsmoms i formuläret Allmänna redovisningsparametrar, kan ingen moms dras förrän du har betalt fakturan. Detta är ett juridiskt krav i vissa länder/regioner.
 
 > [!NOTE]
-> När du markerar kryssrutan villkorsmoms måste du ställa in momskoder och momsgrupper och även skapa redovisningsbokföringsgrupper för att stödja formulärets funktionalitet. |
+> När du väljer kryssrutan för villkorsmoms måste du ställa in momskoder, och momsgrupper, samt även skapa redovisningsbokföringsgrupper för att kunna använda funktionen. |
 
 ###  <a name="example"></a>Exempel
 
-Du betalar in moms varje månad. Den 15 juni skapar en kundfaktura på 10 000 plus moms.
--   Momsen är 25 procent eller 2 500.
--   Fakturans förfaller den 30 juli.
+Du kvittar momsen varje månad. Den 15 juni skapar du en kundfaktura på 10 000 plus moms.
+-   Momsen är 25 procent, eller 2 500.
+-   Fakturabetalningen förfaller den 30 juli.
 
 Du skulle normalt behöva betala in 2 500 till skattemyndigheten när fakturan bokförs i juni, även om du inte har fått betalningen från kunden. 
 
-Men om du använder en villkorsmoms kvitta du med skattemyndigheten när du får betalningen från kunden den 30 juli.
+Om du emellertid använder villkorsmoms kvittar du med skattemyndigheten när du får betalningen från kunden den 30 juli.
+
+
 
 

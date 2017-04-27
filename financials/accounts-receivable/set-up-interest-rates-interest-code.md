@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="set-up-interest-rates-for-an-interest-code"></a>Ställa in räntesatser för en räntekod
 
+[!include[banner](../includes/banner.md)]
+
+
 Räntekoder innehåller inställningar som bestämmer när ränta debiteras och hur den beräknas på förfallna konton.
 
 Du kan ställa in en enskild räntekod och använda den till flera bokföringsprofiler för kunder och faktureringskoder eller för specifika fakturarader. När räntekoddetaljerna ändras kommer alla funktioner som använder koden att införa ändringarna automatiskt i nya transaktioner. För varje räntekod kan du ställa in två typer av satser:
@@ -44,17 +47,17 @@ Du kan ställa in räntesatser för att beräkna en viss procent.
 
 -   Räntebeloppet gäller för alla valutor.
 -   Valfria räntebeloppsgränser kan anges.
--   **Procent** har markerats ** ** i den **beräkna ränta baserat på** på den **Ställ in räntekoder** sida.
+-   **Procent** väljs** **i fältet **Beräkna ränta baserat på** på sidan **Ställ in räntekoder**.
 
-Exempelvis ställa in en räntekod som utvärderar 5 procents ränta för varannan månad att transaktionen överskrider för fakturans förfallodatum, skriver du 2 i den **beräkna ränta var** och välj **månad**.
+Om du till exempel vill ställa in en räntekod som värderas med 5 procent ränta för varje tvåmånadersperiod som överskrider fakturans förfallodatum för transaktionen, ska du ange 2 i fältet **Beräkna ränta var** och välja **Månad**.
 
 ## <a name="interest-rates-based-on-amounts"></a>Räntesatser baserade på belopp
 Du kan ställa in räntesatser för att beräkna ett angivet belopp per valuta.
 -   Ett räntebelopp anges för varje valuta i räntekoden.
 -   Valfria räntebeloppsgränser kan anges.
--   ** Belopp ** väljs i den **beräkna ränta baserat på** på de **Ställ in räntekoder** sida.
+-   **Belopp **väljs i fältet **Beräkna ränta baserat på** på sidan **Ställ in räntekoder**.
 
-Exempelvis ställa in en räntekod som utvärderar 25,00 intresse för varje 20 dagar att transaktionen överskrider för fakturans förfallodatum, skriver du 20 i den **beräkna ränta var** och välj **dag**.
+Om du till exempel vill ställa in en räntekod som värderas med 25,00 ränta för varje 20-dagarsperiod som överskrider fakturans förfallodatum för transaktionen, ska du ange 20 i fältet **Beräkna ränta var** och välj **Dag**.
 
 ## <a name="interest-rates-based-on-ranges"></a>Räntesatser baserade på perioder
 Du kan ställa in räntesatser som varierar beroende på det förfallna beloppet, antalet dagar som beloppet är försenat eller antalet månader som beloppet är försenat.
@@ -73,7 +76,7 @@ Du kan ställa in en räntekod som beräknar ränta en gång var tredje månad s
 
 Du ställer in information om intervall så här.
 
-| **From value** | **Interest value** |
+| **Från-värde** | **Räntevärde** |
 |----------------|--------------------|
 | 0              | 1                  |
 | 1,001          | 2                  |
@@ -94,7 +97,7 @@ Du kan ställa in en räntekod som beräknar ränta en gång för varje 15 dagar
 
 Du ställer in information om intervall så här.
 
-| **From value** | **Interest value** |
+| **Från-värde** | **Räntevärde** |
 |----------------|--------------------|
 | 0              | 10                 |
 | 61             | 15                 |
@@ -115,7 +118,7 @@ Du kan ställa in en räntekod som beräknar ränta en gång för varje månad s
 
 Du ställer in information om intervall så här.
 
-| **From value** | **Interest value** |
+| **Från-värde** | **Räntevärde** |
 |----------------|--------------------|
 | 0              | 1.5                |
 | 4              | 2                  |
@@ -125,5 +128,7 @@ Du ställer in information om intervall så här.
 Räntekoder har giltighetsdatum. Om du vill ändra räntesatsen kan du skapa en **ny version** som gäller för ett framtida datum.
 
 Om du vill visa andra versioner kan du använda menyvalet **Från och med (datum)** för att välja slutdatumet. Du kan också markera **Visa alla poster** för att visa alla räntekoder på sidan.
+
+
 
 

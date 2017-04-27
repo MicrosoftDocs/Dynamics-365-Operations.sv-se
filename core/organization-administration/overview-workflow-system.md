@@ -1,6 +1,6 @@
 ---
-title: "Arbetsflöde: översikt"
-description: "Den här artikeln beskrivs arbetsflödessystemet i Microsoft Dynamics 365 för operationer."
+title: "Översikt över arbetsflödets system"
+description: "Den här artikeln beskriver arbetsflödessystemet i Microsoft Dynamics 365 for Operations."
 author: sericks007
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,9 +24,12 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="workflow-system-overview"></a>Arbetsflöde: översikt
+# <a name="workflow-system-overview"></a>Översikt över arbetsflödets system
 
-Den här artikeln beskrivs arbetsflödessystemet i Microsoft Dynamics 365 för operationer.
+[!include[banner](../includes/banner.md)]
+
+
+Den här artikeln beskriver arbetsflödessystemet i Microsoft Dynamics 365 for Operations.
 
 <a name="what-is-workflow"></a>Vad är ett arbetsflöde?
 -----------------
@@ -34,7 +37,7 @@ Den här artikeln beskrivs arbetsflödessystemet i Microsoft Dynamics 365 för o
 Begreppet *arbetsflöde* kan definieras på två sätt: som ett system och som en affärsprocess.
 ### <a name="workflow-is-a-system"></a>Arbetsflödet som ett system
 
-Arbetsflöde är ett system som installeras med Dynamics 365 för operationer och som körs på den programobjektserver (AOS). Arbetsflödessystemet innehåller funktioner som du kan använda när du vill skapa individuella arbetsflöden eller affärsprocesser.
+Arbetsflöde är ett system som är installerat i Dynamics 365 for Operations och som körs på Application Object Server (AOS). Arbetsflödessystemet innehåller funktioner som du kan använda när du vill skapa individuella arbetsflöden eller affärsprocesser.
 
 ### <a name="workflow-is-a-business-process"></a>Arbetsflödet som en affärsprocess
 
@@ -46,6 +49,7 @@ Det finns flera fördelar med att använda arbetsflödessystemet i organisatione
 -   **Konsekventa processer** – Du kan definiera hur godkännandeprocessen för specifika dokument, till exempel inköpsrekvisitioner och utgiftsrapporter behandlas. Genom att använda arbetsflödessystemet ser du till att dokumenten bearbetas och godkänns på ett enhetligt och effektivt sätt.
 -   **Processerna blir synliga** – Du kan spåra status, historik och prestandamått för arbetsflödesinstanser. Det blir då enklare att ta reda på om du bör göra ändringar för att höja effektiviteten.
 -   **Centraliserad arbetslista** – Användarna kan ta fram en central arbetslista där de kan granska vilka uppgifter de har tilldelats i arbetsflödet.
+
 
 
 

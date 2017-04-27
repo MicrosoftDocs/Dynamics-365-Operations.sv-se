@@ -1,5 +1,5 @@
 ---
-title: POS-kringutrustning
+title: "Kringutrustning för kassa"
 description: "Retail Modern point of sale (POS) och Cloud POS kan använda en mängd olika kassakringutrustning, med flera olika gränssnitt och tillämpningsalternativ för att uppfylla en återförsäljares olika verksamhetsscenarier."
 author: josaw1
 manager: AnnBe
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 215234
 ms.assetid: 1893d4b3-e1b7-4b66-be58-0102addd5b36
 ms.search.region: global
@@ -25,7 +25,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="pos-hardware-peripherals"></a>POS-kringutrustning
+# <a name="pos-hardware-peripherals"></a>Kringutrustning för kassa
+
+[!include[banner](includes/banner.md)]
+
 
 Retail Modern point of sale (POS) och Cloud POS kan använda en mängd olika kassakringutrustning, med flera olika gränssnitt och tillämpningsalternativ för att uppfylla en återförsäljares olika verksamhetsscenarier. 
 
@@ -63,6 +66,8 @@ Följande lista innehåller enhetsmodeller, i varje klass, som har testats inter
 
 -   Streckkod – Honeywell 1900, HP LS2208
 -   MSR – Magtek PN - 21073075
+
+
 
 
 

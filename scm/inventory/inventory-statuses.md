@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="inventory-statuses"></a>Lagerstatus
 
+[!include[banner](../includes/banner.md)]
+
+
 Det här avsnittet innehåller en beskrivning av hur du kan använda lagerstatusar för att kategorisera och spåra lagret.
 
 Du kan använda lagerstatusar för att kategorisera lagret. Du kan sedan initiera rätt åtgärder, till exempel påfyllnad eller platsarbete. 
@@ -47,5 +50,7 @@ För utgående arbete, använd artiklar med tillgänglig lagerstatus. Om det fin
 När du har ställt in lagerstatusarna kan du ange standardlagerstatus för en plats, en artikel och ett lagerställe. Du kan även ange en standardstatus för försäljningsorder, överföring och inköpsorder. Standardstatusen för försäljningsorder och utgående överföringsorder kan inte ha alternativet **Lagerspärr** med värdet **Ja**. Lagerstatusen, som ärvs från standardinställningarna för en plats, ett lagerställe, en artikel, en inköpsorder, överföringsorder eller försäljningsorder, kan ändras genom att använda den mobila enheten eller på försäljningsorderraden, inköpsorderraden eller överföringsorderraden. 
 
 Planera täckning för artiklar med lagerstatusen tillgänglig genom att välja alternativet **Disponera per dimension** för en lagringsdimension på sidan **Lagringsdimensionsgrupper**. När du öppnar guiden **Artikeldisponering** visas artiklar som har en tillgänglig status på sidan **Status**. Välj lagerstatus ID för de tillgängliga lagerstatus för att skapa disponeringsinställningar för artiklarna. Baserat på disponeringsinställningarna kan du beräkna artikelbehov och prognostisera tillgång och efterfrågan på tillgängliga artiklar under huvudplaneringen. Du kan inte skapa inställningar för artikeldisponering med en blockerad lagerstatus. Alternativt kan du använda sidan **Artikeldisponering** om du vill skapa eller ändra artikeldisponeringsparametrarna.
+
+
 
 

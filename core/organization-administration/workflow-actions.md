@@ -26,9 +26,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="workflow-actions"></a>Arbetsflödesåtgärder
 
+[!include[banner](../includes/banner.md)]
+
+
 Det här avsnittet innehåller en beskrivning av åtgärder som alla deltagare i en arbetsflödesgodkännandeprocess kan utföra.
 
-Ett arbetsflöde kan omfatta flera grupper med personer: upphovsmannen, de som tilldelats uppgifter, beslutsfattare och godkännare. I följande arbetsflöde för utgiftsrapporter är Sam upphovsmannen, medlemmarna i kön har tilldelats uppgifter, John är beslutsfattare och Frank, Sue och Ann är godkännare.   [![Arbetsflöde\_WithManualDecision](./media/workflow_withmanualdecision.gif)](./media/workflow_withmanualdecision.gif) nedan förklaras vilka arbetsflödesåtgärder som kan utföra varje grupp.
+Ett arbetsflöde kan omfatta flera grupper med personer: upphovsmannen, de som tilldelats uppgifter, beslutsfattare och godkännare. I följande arbetsflöde för utgiftsrapporter är Sam upphovsmannen, medlemmarna i kön har tilldelats uppgifter, John är beslutsfattare och Frank, Sue och Ann är godkännare.   [![Workflow\_WithManualDecision](./media/workflow_withmanualdecision.gif)](./media/workflow_withmanualdecision.gif) öljande avsnitt innehåller information om arbetsflödesåtgärderna som varje grupp kan utföra.
 
 ## <a name="actions-that-an-originator-can-perform"></a>Åtgärder som en upphovsman kan utföra
 Upphovsmannen startar en arbetsflödesinstans genom att skicka ett dokument för bearbetning. Till exempel måste Sam klicka på **Skicka** på sidan **Utgiftsrapport** för att skicka in sin utgiftsrapport.
@@ -63,7 +66,7 @@ Ibland kan en medlem av en arbetsuppgiftskö acceptera en uppgift, men sedan bes
 ## <a name="actions-that-a-decision-maker-can-perform"></a>Åtgärder som en beslutsfattare kan utföra
 Vanligtvis tilldelas ett dokument till en beslutsfattare eftersom det finns en fråga som beslutsfattaren måste besvara. Svaret på frågan är oftast **Ja** eller **Nej** eller **Sant** eller **Falskt**. Om beslutsfattaren inte väljer något av dessa alternativ kan han eller hon delegera beslutet.
 
-### <a name="choice-1-or-choice-2"></a>\[Alternativ 1\] eller \[val 2\]
+### <a name="choice-1-or-choice-2"></a>\[Alternativ 1\] eller \[Alternativ 2\]
 
 En beslutsfattare måste besvara en fråga som är relaterad till dokumentet. Svaret på frågan är oftast **Ja** eller **Nej** eller **Sant** eller **Falskt**. Svaret som beslutsfattaren väljer avgör arbetsflödesförgreningen som används för att bearbeta dokumentet. Till exempel tilldelas Sams utgiftsrapport till John. John måste bestämma om informationen i dokumentet kräver ett samtal till Sams chef. Om John beslutar att ett samtal krävs tilldelas utgiftsrapporten till Aretha, som sedan måste ringa Sams chef. Om John anser att ett samtal inte krävs tilldelas utgiftsrapporten till Frank för godkännande.
 
@@ -89,5 +92,7 @@ När en godkännare delegerar ett dokument, tilldelas dokumentet en annan använ
 ### <a name="request-change"></a>Begär ändring
 
 När en godkännare begär en ändring av ett dokument, skickas det tillbaka till upphovsmannen. Till exempel har Sam skickat en utgiftsrapport på 12 000 USD och detta dokument har tilldelats till Sue. Om Sue begär ändringar skickas utgiftsrapporten tillbaka till Sam. Sam kan skicka utgiftsrapporten på nytt. Han kan göra nödvändiga ändringar först eller skicka om den ursprungliga versionen av utgiftsrapporten. Om Sam skickar om utgiftsrapporten skickas den till Frank för godkännande eftersom Frank är den första godkännaren i godkännandeprocessen.
+
+
 
 

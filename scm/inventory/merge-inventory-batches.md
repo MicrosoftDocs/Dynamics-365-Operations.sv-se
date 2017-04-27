@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="merge-inventory-batches"></a>Sammanfoga lagerbatchar
 
+[!include[banner](../includes/banner.md)]
+
+
 Den här artikeln innehåller information om hur du konsoliderar två eller flera lagerbatchar till en sammanfogad batch. 
 
 När du sammanslår batchar kan beräkningar hjälpa dig att optimera egenskaperna och batchattribut för den sammanslagna batchen. När källbatcharna har valts kan den sammanfogade batchen granskas och ändras innan den bokförs. (Du kan även överföra batchsammanfogningen till en lagerjournal för godkännande. Lagret kan sedan reserveras eller bokföras direkt från den aktuella lagerjournalen. När du bokför en sammanslagen batch, justeras lager för källbatcharna och den sammanslagna batchen.
@@ -48,7 +51,7 @@ Ja finns ingen saker som du måste ställa in, innan du kan använda sammanfogni
 <tbody>
 <tr class="odd">
 <td>Journalnamn, Lager</td>
-<td>Du måste skapa det journalnamn som ska användas som standard när du bokför batchsammanfogningar i lagerjournaler. Valfritt, men rekommenderas: Du kan ange att reservationer ska göras automatiskt när batchsammanfogningen överförs till lagerjournalen. Annars finns det en risk att en ändring görs i lagerbehållningen efter att batchsammanfogningsdetaljerna har ställts in och journalen har bokförts. Välj för att aktivera automatiska reservationer för journalnamnet <strong>automatisk</strong> i den <strong><strong>Reservation</strong></strong> fält.</td>
+<td>Du måste skapa det journalnamn som ska användas som standard när du bokför batchsammanfogningar i lagerjournaler. Valfritt, men rekommenderas: Du kan ange att reservationer ska göras automatiskt när batchsammanfogningen överförs till lagerjournalen. Annars finns det en risk att en ändring görs i lagerbehållningen efter att batchsammanfogningsdetaljerna har ställts in och journalen har bokförts. Om du vill aktivera automatiska reservationer för journalnamnet väljer du <strong>Automatisk</strong> i fältet <strong><strong>Reservation</strong></strong>.</td>
 </tr>
 <tr class="even">
 <td>Parametrar för hantering av lager och lagerstyrning</td>
@@ -134,9 +137,11 @@ Bokföring fungerar på två sätt beroende på om du använder en godkännandep
 -   **Överför till journal** – Överför batchsammanfogningsinformationen till en ny lagerjournal. Om du har ställt in automatiska reservationer, reserveras kvantiteterna i källbatcherna. Information om batchsammanfogningen kan inte ändras. Om du vill ändra batchsammanfogningen måste du ta bort journalen. Journalen kan användas som en uppgift som en annan medarbetare måste utföra senare. En reservering av batchkvantiteten säkras till journalraden. Denna allokering låter en kvalitetsplanerare eller en lagerställechef skapa uppgifter för sina medarbetare.
 -   **Bokför batchsammanfogningen** – Bokför batchsammanfogningen direkt. Den här åtgärden kan utföras efter att den fysiska sammanfogningen har inträffat.
 
-Du kan godkänna lagerjournalen för batchsammanfogningen från listsidan **Alla batchsammanfogningar**. Klicka på **journalen**&gt;**efter**. När en journal är bokförd kan du inte ändra informationen i den sammanfogade batchen. När du har överfört en batchsammanfogning till en lagerjournal kan du bara ändra informationen om journalen har tagits bort.
+Du kan godkänna lagerjournalen för batchsammanfogningen från listsidan **Alla batchsammanfogningar**. Klicka på **Journal** &gt; **Bokför**. När en journal är bokförd kan du inte ändra informationen i den sammanfogade batchen. När du har överfört en batchsammanfogning till en lagerjournal kan du bara ändra informationen om journalen har tagits bort.
 
-## <a name="after-i-merged-a-catchweight-item-why-cant-i-see-the-catchweight-information-in-the-inventory-journal"></a>När jag har infogat ett catchweight-objekt Varför visas inte informationen i lagerjournalen catchweight?
+## <a name="after-i-merged-a-catchweight-item-why-cant-i-see-the-catchweight-information-in-the-inventory-journal"></a>Varför visas inte faktisk/nominell vikt i lagerjournalen efter att jag slagit ihop en fångstviktartikel?
 Du kan sammanslå batchar med fångstviktartiklar precis som alla andra artiklar. Dock visas information om faktisk/nominell vikt inte i lagerjournalen. Vi rekommenderar att du kontrollerar information om faktisk/nominell vikt innan du överför batchsammanfogningen till lagerjournalen.
+
+
 
 

@@ -32,19 +32,19 @@ Du kan använda enklicksdesignern för att designa alternativa layouter för Ret
 
 Det grafiska designgränssnittet för MPOS eller Cloud POS styrs av kassalådelayouten. En layout styr positionen för olika objekt. Du kan till exempel välja den totala layouten, layouten för artikelrutnät, kundlayout, betalningslayout samt layouten för olika menyknappar. Layouter innehåller det övergripande utseendet på det försäljningsgränssnitt som visas för arbetare.
 
-## <a name="install-the-oneclick-designer"></a>Installera oneclick designer
-1.  Microsoft Dynamics 365 för operationer Använd menyn längst upp till vänster och gå till **Retail****och handel**&gt;**kanal**&gt;**POS inställningar**&gt;**POS**&gt;**skärm layouter**.
+## <a name="install-the-oneclick-designer"></a>Installera enklicksdesignern
+1.  I Microsoft Dynamics 365 for Operations använder du menyn i det övre vänstra hörnet för att navigera till **Butik** **och handel** &gt; **Kanalinställningar** &gt; **Kassainställningar** &gt; **POS** &gt; **Skärmlayout**.
 2.  Välj en layout med ansökningstypen **Modern POS for Windows** eller **Cloud POS**, och klicka sedan på **Layout designer**.
 3.  I meddelandefältet som visas längst ner i Internet Explorer-fönstret klickar du på **Open** att installera enklicksdesignern. (aviseringsfältet kan visas på en annan plats i andra webbläsare).
 4.  I meddelanderutan **Application Run - Security Warning** som visas klickar du på **Run **för att installera värden för Retail designer. An förloppsindikator visar installationsförloppet.
 5.  När installationen har slutförts klickar du på sidan **Sign in**, anger ditt användarnamn och lösenord för Microsoft Dynamics 365 for Operations, och klickar sedan på **Sign in** för att starta designverktyget.
-6.  När dina inloggningsuppgifter har validerats och designverktyget startar, kan du utforma din egen layout eller ändra den befintliga. [![Layouten i ett musklick designer](./media/screenlayoutdesign_mposdownload-1024x664.png)](./media/screenlayoutdesign_mposdownload.png)
+6.  När dina inloggningsuppgifter har validerats och designverktyget startar, kan du utforma din egen layout eller ändra den befintliga. [![Layout i enklicksdesignern](./media/screenlayoutdesign_mposdownload-1024x664.png)](./media/screenlayoutdesign_mposdownload.png)
 
 ## <a name="troubleshoot-the-installation-of-the-layout-designer"></a>Felsöka installationen av layoutdesignern
 -   När du klickar på **Designer**visas inte prompten att hämta (eller köra) installationsprogrammet, också tillåter inte dina aktuella säkerhetsinställningar att du hämtar filen. **Lösningar:**
-    -   Kontrollera att blockering av popup-fönster avaktiveras för webbplatsen i Internet Explorer. Klicka på **inställningar**&gt;**alternativ**&gt;**sekretess**&gt;**hitta av popup-fönster**, och ändra inställningen, om detta blir nödvändigt.
-    -   Lägg till webbadressen (URL) för Dynamics 365 for Operations URL till dina betrodda webbplatser i Internet Explorer. Klicka på **inställningar**&gt;**alternativ**&gt;**Security**&gt;**tillförlitliga platser**&gt;**platser**&gt;**Lägg till**.
--   Programmet startar inte, och du uppmanas att kontakta leverantören. **Lösning:** Lägg till webbadressen (URL) för Dynamics 365 for Operations till dina betrodda webbplatser i Internet Explorer. Klicka på **inställningen**&gt;**alternativ**&gt;**Security**&gt;**tillförlitliga platser**&gt;**platser**&gt;**Lägg till**.
+    -   Kontrollera att blockering av popup-fönster avaktiveras för webbplatsen i Internet Explorer. Klicka på **Inställningar** &gt; **Alternativ** &gt; **Sekretess** &gt; **Hitta blockerare för popup-meddelanden** och ändra inställningen vid behov.
+    -   Lägg till webbadressen (URL) för Dynamics 365 for Operations URL till dina betrodda webbplatser i Internet Explorer. Klicka på **Inställningar** &gt; **Alternativ** &gt; **Säkerhet** &gt; **Säkra platser** &gt; **Platser** &gt; **Lägg till**.
+-   Programmet startar inte, och du uppmanas att kontakta leverantören. **Lösning:** Lägg till webbadressen (URL) för Dynamics 365 for Operations till dina betrodda webbplatser i Internet Explorer. Klick på **Inställning** &gt; **Alternativ** &gt; **Säkerhet** &gt; **Säkra platser** &gt; **Platser** &gt; **Lägg till**.
 
 **Känt problem:** Designverktyget fungerar inte korrekt i webbläsarna Google Chrome och Mozilla Firefox. Vi arbetar på att åtgärda detta problem.
 

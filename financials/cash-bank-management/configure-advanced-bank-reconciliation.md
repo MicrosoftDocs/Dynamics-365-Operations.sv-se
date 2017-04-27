@@ -1,6 +1,6 @@
 ---
 title: "Översikt över avancerad bankavstämning"
-description: "Avancerad bankavstämning kan du importera elektroniska bankutdrag och synkronisera med banktransaktioner i Microsoft Dynamics 365 för operationer.  Den här artikeln innehåller en beskrivning av hur du ställer in processer för avstämning."
+description: "Med hjälp av en avancerad bankavstämning kan du importera elektroniska bankutdrag och utföra en automatiskt avstämning mot banktransaktioner i Microsoft Dynamics 365 for Operations.  Den här artikeln innehåller en beskrivning av hur du ställer in processer för avstämning."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,34 +26,39 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="advanced-bank-reconciliation-overview"></a>Översikt över avancerad bankavstämning
 
-Avancerad bankavstämning kan du importera elektroniska bankutdrag och synkronisera med banktransaktioner i Microsoft Dynamics 365 för operationer.  Den här artikeln innehåller en beskrivning av hur du ställer in processer för avstämning.  
+[!include[banner](../includes/banner.md)]
 
-Det finns ett antal delar som måste ställas in innan du använder funktionen avancerad avstämning. Mer information om hur du ställer in bank satsen import finns [ställa in importen bank utdraget](set-up-advanced-bank-reconciliation-import-process.md).  Krav för konfigurering avstämningsprocessen beskrivs nedan.
+
+Med hjälp av en avancerad bankavstämning kan du importera elektroniska bankutdrag och utföra en automatiskt avstämning mot banktransaktioner i Microsoft Dynamics 365 for Operations.  Den här artikeln innehåller en beskrivning av hur du ställer in processer för avstämning.  
+
+Det finns ett antal delar som måste ställas in innan du använder funktionen för avancerad bankavstämning. Mer information om hur du ställer in import av bankutdrag finns i [Ställa in importprocessen för bankutdrag](set-up-advanced-bank-reconciliation-import-process.md).  Kraven för konfigurering av avstämningsprocessen beskrivs nedan.
 
 ## <a name="transaction-codes"></a>Transaktionskoder
-Transaktionskoder kan användas som en del av avstämningen matchningsregler.  Transaktionskoder hjälper till att matcha endast de samma transaktionstyperna mellan Dynamics 365 för operationer och bankutdraget.  För att kunna utföra den här typen av matchning måste du först definiera transaktionstyper används för banktransaktioner från Dynamics 365 för operationer och sedan dessa typer motsvarar transaktionskoder används av banken.  Transaktionstyper för Dynamics 365 för banktransaktioner operationer definieras i den **banktransaktionstyp** sida.  Dessutom är det här du definierar huvudkontot som ska användas för bokföring som associeras med transaktionen. 
+Transaktionskoder kan användas som en del av matchningsreglerna för bankavstämning.  Transaktionskoder hjälper till att matcha endast samma transaktionstyper mellan Dynamics 365 for Operations och bankutdraget.  För att kunna utföra den här typen av matchning, måste du först definiera de transaktionstyper som används för banktransaktioner från Dynamics 365 for Operations för operationer och sedan mappa dessa typer med de transaktionskoder som används av banken.  Transaktionstyper för Dynamics 365 for Operations-banktransaktioner definieras på sidan **Banktransaktionstyp**.  Det är också här som du definierar det huvudkonto som ska användas för bokföringar associerade med transaktionstypen. 
 
-När Dynamics 365 om transaktionskoder operationer bank har definierats kan mappa du sedan dessa till transaktionskoder som används i din elektroniska bankutdrag.  Proceduren mappningen sker med hjälp av den **Transaktionskodsmappning** sida.  Mappning av transaktion slutförs separat för varje bankkonto.
+När dina banktransaktionskoder för Dynamics 365 for Operations har definierats, kan du mappa dessa till de transaktionskoder som används på dina elektroniska bankutdrag.  Denna mappningsprocess sker med hjälp av sidan **Mappning av transaktionskoder**.  Mappning av transaktionskoder slutförs separat för varje bankkonto.
 
 ## <a name="matching-rules-and-matching-rule-sets"></a>Matchningsregler och matchningsregeluppsättningar
-Matchande regler kan du definiera kriterier för automatisk avstämning mellan Dynamics 365 för operationer banktransaktioner och bankkontotransaktioner.  Av matchande regler görs på **avstämning matchningsregler** sida.  Mer information finns i [skapa matchningsregler bankavstämning](set-up-bank-reconciliation-matching-rules.md). 
+Med matchande regler kan du definiera kriterier för automatisk avstämning mellan banktransaktioner i Dynamics 365 for Operations och bankutdragstransaktioner.  Du skapar matchande regler på sidan **Matchningsregler för avstämning**.  Mer information finns i [Ställa in matchningsregler för bankavstämning](set-up-bank-reconciliation-matching-rules.md). 
 
-Matchande regeluppsättningar för att definiera en grupp med matchande regler som körs i ordning under bankkontoavstämningsprocessen.  Matchande regeluppsättningar har konfigurerats på den **avstämning matchningsregeluppsättningar** sida.
+En matchningsregeluppsättning används för att definiera en uppsättning matchningsregler som körs i sekvens under bankutdragsavstämningsprocessen.  Matchande regeluppsättningar konfigureras på sidan **Avstämning av matchande regeluppsättningar**.
 
 ## <a name="cash-and-bank-management-parameters"></a>Parametrar för kassa- och bankhantering
-Ett antal parametrar är specifika för avancerad avstämningsprocessen i den **kontant- och bankhanteringsparametrar** sida.  Den **Visa radbeloppet i debet/kredit** ändras visningen av beloppen i den **bankutdraget** sida.  Om det här alternativet är markerat visas transaktionsbeloppen bank utdrag i separata debet och kredit kolumner.  Överför inte visas transaktionsbeloppen bank utdrag i en kolumn för enstaka belopp med rätt tecken. 
+Det finns ett antal parametrar som är specifika för avancerad bankavstämningsprocess på sidan **Hanteringsparametrar för kassa och bank**.  **Visa belopp för utdragsrad i debet/kredit** ändrar visningen av belopp på sidan **Bankutdrag**.  Om det här alternativet är markerat visas transaktionsbeloppen för bankutdrag i separata debet- och kreditkolumner.  Om det inte har markerats kommer transaktionsbeloppen för bankutdrag att visas i en enda beloppskolumn med lämpligt förtecken. 
 
-Verifieringsalternativ på sidan parametrar åsidosätta val på matchningsregler.  Exempelvis kan du inte manuellt eller matcha automatiskt dokument utanför datumskillnaden på sidan parametrar.  Även om kan **Validera mappning av transaktionstyp för** är markerad transaktionstyperna måste mappas mellan Dynamics 365 för banktransaktionen operationer och bankkontoutdragstransaktion för att transaktionerna ska manuellt eller automatiskt matchas. 
+De verifieringsalternativ som angetts på parametersidan åsidosätter valen för matchningsregler.  Exempelvis kan du inte manuellt eller automatiskt matcha dokument utanför den datumskillnad som angetts på parametersidan.  Om alternativet **Validera mappning av transaktionstyp** har markerats måste transaktionstyperna dessutom mappas mellan Dynamics 365 for Operations-banktransaktionen och bankutdragstransaktionen för att transaktionerna ska kunna matchas manuellt eller automatiskt. 
 
-Du måste också konfigurera nödvändiga nummerserier på de **kontant- och bankhanteringsparametrar** sida.  I den **nummerserier** fliken ange nummerseriekoder hämtningen **ID, utdrags-ID, Stäm av ID och Bank-avstämning** referenser.
+Du måste också konfigurera nödvändiga nummerserier på sidan **Parametrar för kassa- och bankhantering**.  På fliken **Nummerserier** anger du nummerseriekoder för hämtningens **ID, utdrags-ID, avstämnings-ID och bankavstämningens** referenser.
 
 ## <a name="bank-account-reconciliation-options"></a>Alternativ för bankkontoavstämning
-Du måste först aktivera avancerad bankavstämning för bankkontot.  Ytterligare alternativ är tillgängliga i den **bankkonto** sidan när funktionen avancerad avstämning ska aktiveras. 
+Du måste först aktivera avancerad bankavstämning för bankkontot.  Ett antal ytterligare alternativ är tillgängliga på sidan **Bankkonto** när funktionen för avancerad bankavstämning har aktiverats. 
 
-**Använd bankutdrag som en bekräftelse på elektronisk betalning** funktionen integreras funktionerna bank avstämning med statusen elektronisk betalning.  När detta aktiveras ett bankdokument att skapas automatiskt för elektronisk betalningsstatus har värdet **skickad**.  Dessutom uppdateras statusen för en elektronisk betalning från **skickad** till **mottagna** när betalningen matchas avstämd och bokförts. 
+Funktionen **Använd bankutdrag som en bekräftelse på elektronisk betalning** integrerar funktionen för bankavstämning med statusen för elektronisk betalning.  När detta aktiveras skapas ett bankdokument automatiskt för elektronisk betalningsstatus med värdet **Skickad**.  Dessutom uppdateras statusen för en elektronisk betalning från **Skickad** till **Mottagen** när betalningen matchas, stäms av och bokförs. 
 
-Den **bankkonto namn i rapporter** är det namn som används för bankkontot på din elektroniska bankutdrag.  Det här namnet används när det fastställs vilka transaktioner ska importeras för ett bankkonto från ett uttryck som kan innehålla information för flera bankkonton. 
+Fältet **Bankkontots namn i rapporter** är det namn som används för bankkontot på dina elektroniska bankutdrag.  Detta namn används när det ska fastställas vilka transaktioner som ska importeras för ett bankkonto från ett utdrag som kan innehålla information om flera olika bankkonton. 
 
-Alternativet för **avstämning efter importen** kommer automatiskt Validera bankkonto bankutdraget, skapa en ny bankkontoavstämning och kalkylblad och kör matchningsregeluppsättning standard.  Den här funktionen automatiserar processen tills transaktionerna måste matchas manuellt.  Om bankkontot kommer standardvärdet när du importerar.
+Alternativet för **Avstämning efter import** kommer automatiskt att validera bankutdraget, skapa en ny bankavstämning och ett nytt kalkylblad, samt köra standarduppsättningen matchningsregler.  Den här funktionen automatiserar processen fram till de transaktioner som måste stämmas av manuellt.  Inställningen för bankkontot återgår till standardvärdet när du importerar.
+
+
 
 

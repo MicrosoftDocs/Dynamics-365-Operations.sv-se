@@ -28,11 +28,14 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="centralized-payments-for-accounts-receivable"></a>Centraliserade betalningar för kundreskontra
 
+[!include[banner](../includes/banner.md)]
+
+
 Organisationer som omfattar flera juridiska personer kan skapa och hantera betalningar genom att använda en enda juridisk person som hanterar alla betalningar. Därför måste samma transaktion inte finns med i flera juridiska personer. Den här artikeln ger exempel som visar hur bokföringen av centraliserade betalningar hanteras i olika scenarier.
 
 Organisationer som omfattar flera juridiska personer kan skapa och hantera betalningar genom att använda en enda juridisk person som hanterar alla betalningar. Därför måste samma transaktion inte finns med i flera juridiska personer. Dessutom sparar organisationen tid eftersom de processer för betalningsförslag, kvittningar och redigering av öppna och stängda transaktioner för centraliserade betalningar effektiviseras. 
 
-Det finns flera juridiska personer för åtgärder i en centraliserad organisation och varje juridisk person betalningsorganisation hanterar sin egen fakturafordraninformation. Betalningar för löpande juridiska personer tas emot av en juridisk person, som kallas för den juridiska personen för betalningen. Under kvittningsprocessen genereras de förfaller till- och förfaller från-transaktioner som behövs. Du kan ange vilken juridisk person i organisationen som får de realiserade vinst- eller förlusttransaktionerna, och hur kassarabattransaktioner som hör till en centraliserad betalning hanteras. 
+I en organisation med centraliserade betalningar finns många juridiska personer för verksamheter, och varje verksam juridisk person hanterar sina egna leverantörsfakturor. Betalningar för alla verksamma juridiska personer tas emot av en enda juridisk person, som kallas betalningens juridiska person. Under kvittningsprocessen genereras de förfaller till- och förfaller från-transaktioner som behövs. Du kan ange vilken juridisk person i organisationen som får de realiserade vinst- eller förlusttransaktionerna, och hur kassarabattransaktioner som hör till en centraliserad betalning hanteras. 
 
 I följande exempel visas hur bokföringen hanteras i olika scenarier. Följande konfiguration används i alla tre exempel:
 
@@ -66,14 +69,14 @@ Fabrikam tar emot en betalning på 600,00 för Fabrikam-kundkonto 4000, Northwin
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Fabrikam-betalning kvittas mot Fabrikam East-faktura
 
-**Fabrikam posting**
+**Fabrikam-bokföring**
 
 | Konto                         | Debetbelopp | Kreditbelopp |
 |---------------------------------|--------------|---------------|
 | Kundreskontra (Fabrikam)  | 600,00       |               |
 | Förfaller till Fabrikam East (Fabrikam) |              | 600,00        |
 
-**Fabrikam East posting**
+**Fabrikam East-bokföring**
 
 | Konto                             | Debetbelopp | Kreditbelopp |
 |-------------------------------------|--------------|---------------|
@@ -81,7 +84,7 @@ Fabrikam tar emot en betalning på 600,00 för Fabrikam-kundkonto 4000, Northwin
 | Kundreskontra (Fabrikam East) |              | 600,00        |
 
 ## <a name="example-2-customer-payment-of-invoice-from-another-legal-entity-with-cash-discount"></a>Exempel 2: Kundbetalning för faktura från en annan juridisk person med kassarabatt
-Fabrikam tar emot en betalning på 580,00 för Fabrikam-kundkonto 4000, Northwind Traders. Fabrikam East har en öppen faktura för kundkonto 4000. Fakturan har en kassarabatt på 20,00. Betalningen kvittas mot de öppna Fabrikam East-fakturorna. Kassarabatten bokförs till den juridiska personen för fakturan, Fabrikam East.
+Fabrikam tar emot en betalning på 580,00 för Fabrikam-kundkonto 4000, Northwind Traders. Fabrikam East har en öppen faktura för leverantör 4000. Fakturan har en kassarabatt på 20,00. Betalningen kvittas mot de öppna Fabrikam East-fakturorna. Kassarabatten bokförs till den juridiska personen för fakturan, Fabrikam East.
 
 ### <a name="invoice-is-posted-in-fabrikam-east-for-fabrikam-east-customer-4000"></a>Faktura bokförs i Fabrikam East för Fabrikam East-kund 4000
 
@@ -99,14 +102,14 @@ Fabrikam tar emot en betalning på 580,00 för Fabrikam-kundkonto 4000, Northwin
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Fabrikam-betalning kvittas mot Fabrikam East-faktura
 
-**Fabrikam posting**
+**Fabrikam-bokföring**
 
 | Konto                         | Debetbelopp | Kreditbelopp |
 |---------------------------------|--------------|---------------|
 | Kundreskontra (Fabrikam)  | 580,00       |               |
 | Förfaller till Fabrikam East (Fabrikam) |              | 580,00        |
 
-**Fabrikam East posting**
+**Fabrikam East-bokföring**
 
 | Konto                             | Debetbelopp | Kreditbelopp |
 |-------------------------------------|--------------|---------------|
@@ -137,7 +140,7 @@ Fabrikam tar emot en betalning på 600,00 euro (EUR) för Fabrikam-kundkonto 400
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Fabrikam-betalning kvittas mot Fabrikam East-faktura
 
-**Fabrikam posting**
+**Fabrikam-bokföring**
 
 | Konto                         | Debetbelopp            | Kreditbelopp           |
 |---------------------------------|-------------------------|-------------------------|
@@ -146,7 +149,7 @@ Fabrikam tar emot en betalning på 600,00 euro (EUR) för Fabrikam-kundkonto 400
 | Förfaller till Fabrikam East (Fabrikam) | 0,00 EUR / 12,90 USD    |                         |
 | Realiserad vinst (Fabrikam)        |                         | 0,00 EUR / 12,90 USD    |
 
-**Fabrikam East posting**
+**Fabrikam East-bokföring**
 
 | Konto                             | Debetbelopp            | Kreditbelopp           |
 |-------------------------------------|-------------------------|-------------------------|
@@ -178,7 +181,7 @@ Fabrikam bokför en betalning för Fabrikam-kund 4000, Northwind Traders, för e
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Fabrikam-betalning kvittas mot Fabrikam East-faktura
 
-**Fabrikam posting**
+**Fabrikam-bokföring**
 
 | Konto                         | Debetbelopp            | Kreditbelopp           |
 |---------------------------------|-------------------------|-------------------------|
@@ -187,7 +190,7 @@ Fabrikam bokför en betalning för Fabrikam-kund 4000, Northwind Traders, för e
 | Förfaller till Fabrikam East (Fabrikam) | 0,00 EUR / 13,46 USD    |                         |
 | Realiserad vinst (Fabrikam)        |                         | 0,00 EUR / 13,46 USD    |
 
-**Fabrikam East posting**
+**Fabrikam East-bokföring**
 
 | Konto                             | Debetbelopp            | Kreditbelopp           |
 |-------------------------------------|-------------------------|-------------------------|
@@ -199,7 +202,7 @@ Fabrikam bokför en betalning för Fabrikam-kund 4000, Northwind Traders, för e
 | Kundreskontra (Fabrikam East) |                         | 12,00 EUR / 14,47 USD   |
 
 ## <a name="example-5-customer-credit-note-with-primary-payment"></a>Exempel 5: Kundkreditfaktura med primär betalning
-Fabrikam tar emot en betalning på 75,00 från kund 4000, Northwind Traders. Betalningen kvittas mot en öppen faktura för Fabrikam West-kund 10000 och en öppen kreditfaktura för Fabrikam East-kund 4000. Betalningen väljs som primär betalning i den **kvitta transaktioner** sida.
+Fabrikam tar emot en betalning på 75,00 från kund 4000, Northwind Traders. Betalningen kvittas mot en öppen faktura för Fabrikam West-kund 10000 och en öppen kreditfaktura för Fabrikam East-kund 4000. Betalningen väljs som primär betalning på sidan **Kvitta transaktioner**.
 
 ### <a name="invoice-is-posted-to-fabrikam-west-for-customer-10000"></a>Faktura bokförs på Fabrikam West för kund 10000
 
@@ -224,7 +227,7 @@ Fabrikam tar emot en betalning på 75,00 från kund 4000, Northwind Traders. Bet
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-west-invoice-and-fabrikam-east-credit-note"></a>Fabrikam-betalning kvittas mot Fabrikam West-faktura och Fabrikam East-kreditfaktura
 
-**Fabrikam posting**
+**Fabrikam-bokföring**
 
 | Konto                           | Debetbelopp | Kreditbelopp |
 |-----------------------------------|--------------|---------------|
@@ -233,14 +236,14 @@ Fabrikam tar emot en betalning på 75,00 från kund 4000, Northwind Traders. Bet
 | Kundreskontra (Fabrikam)    | 100,00       |               |
 | Förfaller till Fabrikam West (Fabrikam)   |              | 100,00        |
 
-**Fabrikam East posting**
+**Fabrikam East-bokföring**
 
 | Konto                             | Debetbelopp | Kreditbelopp |
 |-------------------------------------|--------------|---------------|
 | Kundreskontra (Fabrikam East) | 25,00        |               |
 | Förfaller till Fabrikam (Fabrikam East)     |              | 25,00         |
 
-**Fabrikam West posting**
+**Fabrikam West-bokföring**
 
 | Konto                             | Debetbelopp | Kreditbelopp |
 |-------------------------------------|--------------|---------------|
@@ -248,7 +251,7 @@ Fabrikam tar emot en betalning på 75,00 från kund 4000, Northwind Traders. Bet
 | Kundreskontra (Fabrikam West) |              | 100,00        |
 
 ## <a name="example-6-customer-credit-note-without-primary-payment"></a>Exempel 6: Kundkreditfaktura utan primär betalning
-Fabrikam tar emot en betalning på 75,00 från kund 4000, Northwind Traders. Betalningen kvittas mot en öppen faktura för Fabrikam West-kund 10000 och en öppen kreditfaktura för Fabrikam East-kund 4000. Betalningen inte är markerat som primär betalning på de **kvitta transaktioner** sida.
+Fabrikam tar emot en betalning på 75,00 från kund 4000, Northwind Traders. Betalningen kvittas mot en öppen faktura för Fabrikam West-kund 10000 och en öppen kreditfaktura för Fabrikam East-kund 4000. Betalningen väljs inte som primär betalning på sidan **Kvitta transaktioner**.
 
 ### <a name="invoice-is-posted-to-fabrikam-west-for-customer-10000"></a>Faktura bokförs på Fabrikam West för kund 10000
 
@@ -273,21 +276,21 @@ Fabrikam tar emot en betalning på 75,00 från kund 4000, Northwind Traders. Bet
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-west-invoice-and-fabrikam-east-credit-note"></a>Fabrikam-betalning kvittas mot Fabrikam West-faktura och Fabrikam East-kreditfaktura
 
-**Fabrikam posting**
+**Fabrikam-bokföring**
 
 | Konto                         | Debetbelopp | Kreditbelopp |
 |---------------------------------|--------------|---------------|
 | Kundreskontra (Fabrikam)  | 75,00        |               |
 | Förfaller till Fabrikam West (Fabrikam) |              | 75,00         |
 
-**Fabrikam East posting**
+**Fabrikam East-bokföring**
 
 | Konto                              | Debetbelopp | Kreditbelopp |
 |--------------------------------------|--------------|---------------|
 | Kundreskontra (Fabrikam East)  | 25,00        |               |
 | Förfaller till Fabrikam West (Fabrikam East) |              | 25,00         |
 
-**Fabrikam West posting**
+**Fabrikam West-bokföring**
 
 | Konto                                | Debetbelopp | Kreditbelopp |
 |----------------------------------------|--------------|---------------|
@@ -295,6 +298,8 @@ Fabrikam tar emot en betalning på 75,00 från kund 4000, Northwind Traders. Bet
 | Kundreskontra (Fabrikam West)    |              | 75,00         |
 | Förfaller från Fabrikam East (Fabrikam West) | 25,00        |               |
 | Kundreskontra (Fabrikam West)    |              | 25,00         |
+
+
 
 
 

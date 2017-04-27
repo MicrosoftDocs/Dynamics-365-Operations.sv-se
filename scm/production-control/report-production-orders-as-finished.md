@@ -1,6 +1,6 @@
 ---
-title: "Rapportera tillverkningsorder som färdiga"
-description: "Rapportera som färdigt är en produktionsfas. I detta skede färdiga produkten rapporteras och flyttas från produktionsordern till lagret."
+title: "Rapportera produktionsorder som färdiga"
+description: "Rapportera som färdig är en produktionsfas. I detta skede rapporteras färdiga produkter och flyttas från produktionsordern till lagret."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,9 +27,12 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="report-production-orders-as-finished"></a>Rapportera tillverkningsorder som färdiga
+# <a name="report-production-orders-as-finished"></a>Rapportera produktionsorder som färdiga
 
-Rapportera som färdigt är en produktionsfas. I detta skede färdiga produkten rapporteras och flyttas från produktionsordern till lagret.
+[!include[banner](../includes/banner.md)]
+
+
+Rapportera som färdig är en produktionsfas. I detta skede rapporteras färdiga produkter och flyttas från produktionsordern till lagret.
 
 När kvantiteten på de slutförda varorna rapporteras som färdig på en produktionsorder, uppdateras den som lagerbehållning. Delvisa kvantiteter av den ursprungligen planerade orderkvantiteten kan rapporteras som färdiga. Det går också att rapportera felkvantiteter med ett associerat fel när du rapporterar kvantiteter som färdiga. När produktionsordern når fasen Rapporterad som färdig innebär det att ingen mer kvantitet på tillverkningsordern ska rapporteras.
 Följande egenskaper associeras också med processen **Rapportera som färdig**:
@@ -44,5 +47,7 @@ Kvantiteten rapporteras till utleveransplatsen. Lagerställearbete genereras sed
 
 ## <a name="set-a-production-order-to-reporting-as-finished"></a>Ställ in en produktionsorder till Rapportering som färdig
 Du kan ställa in en produktionsorder som **Rapportera som färdig** genom uppdateringsfunktionen för produktionsorder eller via journalen **Rapportera som färdig**. Du kan även uppdatera fasen till **Rapportera som färdig** via sidorna för jobbkortterminal och jobbkortenhet när du rapporterar på det sista jobbet för produktionsordern. Slutligen kan du aktivera alternativet **Rapportera som färdig** som en process för lösningen för den handhållna lagerställeenheten.  
+
+
 
 

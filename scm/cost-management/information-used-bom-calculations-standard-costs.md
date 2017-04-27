@@ -29,6 +29,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="bom-calculations-with-standard-costs"></a>Strukturlisteberäkningar med standardkostnader
 
+[!include[banner](../includes/banner.md)]
+
+
 
 
 Bland annat kan följande information om inköpta artiklar användas i standardkostnadens strukturlisteberäkning:
@@ -78,6 +81,8 @@ Bland annat används följande kostnadsversionsinformation i standardkostnadens 
 -   Innehållet i kostnadsversionen måste omfatta kostnader – Innehållet måste omfatta kostnader. Det kan dessutom valfritt omfatta försäljningspriser så att föreslagna försäljningspriser kan beräknas för tillverkade artiklar.
 
 När du initierar en strukturlisteberäkning kan du ange flera informationskällor. Det kan till exempel vara siten, beräkningsdatumet och kostnadsversionen.
+
+
 
 
 

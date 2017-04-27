@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="factor-depreciation"></a>Faktoravskrivning
 
+[!include[banner](../includes/banner.md)]
+
+
 Den här artikeln ger en översikt över faktoravskrivningsmetoden.
 
 Faktorer är de procentsatser som används till att skriva av tillgångar. När du ställer in en avskrivningsprofil för anläggningstillgångar och väljer värdet **Faktor** i fältet **Metod** på sidan för **Avskrivningsprofiler** kan du ställa in progressiv, digressiv eller linjär avskrivning:
@@ -39,14 +42,14 @@ Faktorer är de procentsatser som används till att skriva av tillgångar. När 
 Reglerna och exemplen nedan anger hur du kan ställa in faktorer för varje avskrivningstyp. 
 
 > [!NOTE] 
-> När du väljer **faktor** i den **metod** fältet den **faktor** fält och **intervallet** visas.
+> När du väljer **Faktor** i fältet **Metod** kommer fälten **Faktor** och **Intervall** att visas.
 
 ## <a name="progressive-depreciation"></a>Progressiv avskrivning
 Värdet i fältet **Faktor** är mer än **50**.
 
 ### <a name="example"></a>Exempel
 
-Anskaffningspris är 100 000, faktorn är 70, livslängden är 10 år och avskrivningen börjar den 1 januari. Avskrivningsbeloppen och bokfört nettovärde belopp visas endast för de första sex året av livslängden.
+Anskaffningspriset är 100 000, faktorn är 70, livslängden är 10 år och avskrivningen börjar den 1 januari. Avskrivningsbeloppen och bokförda nettovärdesbelopp visas endast för de första sex åren av livslängden.
 
 | År | Period      | Avskrivningsbelopp | Bokfört nettovärdebelopp |
 |------|-------------|---------------------|-----------------------|
@@ -62,7 +65,7 @@ Värdet i fältet **Faktor** är mindre än **50**.
 
 ### <a name="example"></a>Exempel
 
-Anskaffningspris är 100 000, faktorn är 20, livslängden är 10 år och avskrivningen börjar den 1 januari. Avskrivningsbeloppen och bokfört nettovärde belopp visas endast för de första sex året av livslängden.
+Anskaffningspriset är 100 000, faktorn är 20, livslängden är 10 år och avskrivningen börjar den 1 januari. Avskrivningsbeloppen och bokförda nettovärdesbelopp visas endast för de första sex åren av livslängden.
 
 | År | Period      | Avskrivningsbelopp | Bokfört nettovärdebelopp |
 |------|-------------|---------------------|-----------------------|
@@ -75,5 +78,7 @@ Anskaffningspris är 100 000, faktorn är 20, livslängden är 10 år och avskr
 
 ## <a name="straight-line-depreciation"></a>Linjär avskrivning
 Värdet i fältet **Faktor** är lika med **50**. I detta fall är avskrivningen densamma för varje period och du bör beakta följderna av värdena som du har angett i andra fält, enligt beskrivningen i [Linjär avskrivning av tjänstelivstid](straight-line-service-life-depreciation.md).
+
+
 
 

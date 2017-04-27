@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="replenishment"></a>Lagerpåfyllnad
 
+[!include[banner](../includes/banner.md)]
+
+
 Den här artikeln innehåller en beskrivning av strategier för lagerpåfyllnad som är tillgängliga för lagerställen som använder funktioner i Lagerstyrning.
 
 Den här artikeln innehåller en beskrivning av strategier för lagerpåfyllnad som är tillgängliga för lagerställen som använder funktioner i Lagerstyrning. Informationen gäller inte för den lagerställelösning som är tillgänglig i Lagerhantering. Det finns tre lagerpåfyllnadsstrategier:
@@ -67,6 +70,8 @@ Lagerpåfyllnad för lastefterfrågan summerar behovet av flera laster och skapa
 | Platsprofiler       | Platsprofiler krävs för att skapa platser.                                                                                                                                                                                       |
 | Platsdirektiv     | Platsdirektiven krävs för att leda arbetet till de platser där påfyllnad krävs och till de platser som lager hämtas ifrån.                                                                                     |
 | Arbetsmallar          | Arbetsmallar av typen **Lagerpåfyllnad** krävs för att skapa lagerpåfyllnadsarbete så att lagret kan flyttas till valfria platser.                                                                                           |
+
+
 
 
 

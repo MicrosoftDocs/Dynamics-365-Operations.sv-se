@@ -1,5 +1,5 @@
 ---
-title: "Balanserat journaler för Enhetsintern redovisning"
+title: "Balanserade journaler för internredovisning"
 description: "Den här artikeln visar hur en journal automatiskt balanseras när en balanserande ekonomisk dimension har valts på sidan Redovisning."
 author: twheeloc
 manager: AnnBe
@@ -26,7 +26,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="balanced-journals-for-interunit-accounting"></a>Balanserat journaler för Enhetsintern redovisning
+# <a name="balanced-journals-for-interunit-accounting"></a>Balanserade journaler för internredovisning
+
+[!include[banner](../includes/banner.md)]
+
 
 Den här artikeln visar hur en journal automatiskt balanseras när en balanserande ekonomisk dimension har valts på sidan Redovisning. 
 
@@ -34,9 +37,9 @@ Om redovisningposterna inte balanserar på nivån av värdena för den ekonomisk
 
 |                      |           |
 |----------------------|-----------|
-| – 6100 Organisationsenhet MSP-\_256 | 100.00 DR |
+| 6100 – MSP – OU\_256 | 100.00 DR |
 | 6100 – NY – OU\_249  | 100.00 DR |
-| – 2100 Organisationsenhet MSP-\_256 | 200.00 CR |
+| 2100 – MSP – OU\_256 | 200.00 CR |
 
 I detta fall bestäms följande saldon:
 
@@ -47,8 +50,10 @@ Därför skapas följande redovisningsposter automatiskt för att balansera jour
 
 |                                   |           |
 |-----------------------------------|-----------|
-| (Debetbelopp Enhetsintern) – MSP-OU\_256 | 100.00 DR |
+| (Enhetsintern debit) – MSP – OU\_256 | 100.00 DR |
 | (Enhetsintern kredit) – NY – OU\_249 | 100.00 CR |
+
+
 
 
 

@@ -1,6 +1,6 @@
 ---
 title: "Systemdefinierade och användardefinierade registerbegränsningar"
-description: "Den här artikeln beskrivs de två typerna av komponenter i en modell för produktkonfiguration - användardefinierade och systemdefinierade registerbegränsningar. Registerbegränsningar representerar matriser för de tillåtna attributkombinationerna, där varje rad anger en uppsättning möjliga attributvärden."
+description: "Denna artikel förklarar de två typerna av registerbegränsningar för komponenter i en produktkonfigurationsmodell - användardefinierade och systemdefinierade. Registerbegränsningar representerar matriser för de tillåtna attributkombinationerna, där varje rad anger en uppsättning möjliga attributvärden."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -29,7 +29,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="system-defined-and-user-defined-table-constraints"></a>Systemdefinierade och användardefinierade registerbegränsningar
 
-Den här artikeln beskrivs de två typerna av komponenter i en modell för produktkonfiguration - användardefinierade och systemdefinierade registerbegränsningar. Registerbegränsningar representerar matriser för de tillåtna attributkombinationerna, där varje rad anger en uppsättning möjliga attributvärden.
+[!include[banner](../includes/banner.md)]
+
+
+Denna artikel förklarar de två typerna av registerbegränsningar för komponenter i en produktkonfigurationsmodell - användardefinierade och systemdefinierade. Registerbegränsningar representerar matriser för de tillåtna attributkombinationerna, där varje rad anger en uppsättning möjliga attributvärden.
 
 Registerbegränsningar representerar matriser av kombinationer av attribut som tillåts för komponenter i en produktkonfigurationsmodell. Varje rad i registeren definierar en uppsättning möjliga attributvärden. Du kan ange två typer av begränsningar i en produktkonfigurationsmodell:
 
@@ -57,11 +60,13 @@ En systemdefinierad registerbegränsning skapar en dynamisk mappning mellan en a
 
 När du skapar en systemdefinierad registerbegränsning, väljer du ett register, definierar valfritt frågan som ska användas, och sedan associerar du attributtyper i fälten i det valda registret. Dessa fälttyper måste matcha attributtyperna.  
 
-Innan ett register kan tillämpas på en modell för produktkonfiguration, tas registerbegränsningen med i en begränsning av en av modellens komponenter. Proceduren är att skapa en ny begränsning markerar du typen av begränsning och välj definitionen av registerbegränsning ska användas. Så småningom måste alla fält i registerbegränsningen mappas till attribut i produktkonfigurationsmodellen.
+Innan ett register kan tillämpas på en modell för produktkonfiguration måste registerbegränsningen inkluderas i en begränsning av en av modellens komponenter. Proceduren är att skapa en ny begränsning, markera typen av begränsning och välj den definition av registerbegränsning som ska användas. Så småningom måste alla fält i registerbegränsningen mappas till attribut i produktkonfigurationsmodellen.
 
 <a name="see-also"></a>Se även
 --------
 
 [Nyckelbegrepp i produktkonfigurationsmodeller](product-configuration-models.md)
+
+
 
 

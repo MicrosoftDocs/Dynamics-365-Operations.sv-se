@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="configure-the-properties-of-a-workflow"></a>Konfigurera egenskaper för ett arbetsflöde
 
+[!include[banner](../includes/banner.md)]
+
+
 I det här avsnittet beskrivs hur du konfigurerar olika egenskaper för ett arbetsflöde.
 
 Öppna arbetsflödet i arbetsflödesredigeraren för att konfigurera ett egenskaperna för ett arbetsflöde. Klicka på arbetsytan i arbetsflödesredigeraren och klicka sedan på **Egenskaper** för att öppna sidan **Egenskaper**. Du kan sedan använda följande procedurer när du vill konfigurera olika egenskaper för arbetsflödet.
@@ -147,10 +150,10 @@ När ett dokument skickas in för bearbetning skapas en arbetsflödesinstans. Du
     </tr>
     <tr class="odd">
     <td>Användare</td>
-    <td>Specifika Dynamics 365 för användare av operationer</td>
+    <td>Specifika Dynamics 365 for Operations-användare</td>
     <td><ol>
     <li>Klicka på <strong>Användare</strong> i fliken <strong>Mottagare</strong>.</li>
-    <li>På den <strong>användare</strong> och den <strong>tillgängliga användare</strong> listan innehåller alla Dynamics 365 för användare av operationer. Markera de användare som du vill skicka meddelanden till, och flytta sedan dessa till listan <strong>Markerade användare</strong>.</li>
+    <li>Listan <strong>Tillgängliga användare</strong> i fliken <strong>Användare</strong> innehåller alla Dynamics 365 for Operations-användare. Markera de användare som du vill skicka meddelanden till, och flytta sedan dessa till listan <strong>Markerade användare</strong>.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -165,6 +168,8 @@ Gör på följande sätt om du vill kommentera de ändringar som du har utfört 
 2.  Skriv dina kommentarer i fältet **Ange kommentarer om arbetsflödet**.
 3.  Granska dina kommentarer. När du har lagt till kommentarer kan du inte ändra dem.
 4.  Klicka på **Lägg till** för att lägga till dina kommentarer i området **Kommentarshistorik**.
+
+
 
 
 

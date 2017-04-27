@@ -28,11 +28,14 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="reverse-a-vendor-payment"></a>Återföra en leverantörsbetalning
 
+[!include[banner](../includes/banner.md)]
+
+
 Den här artikeln beskriver skillnaderna mellan att återföra, ta bort, annullera och avvisa en betalning. Den beskriver dessutom de två metoderna för att återföra en leverantörscheck. 
 
-Ibland efter att en leverantörsbetalning har bokförts, måste betalningen återföras. Återföringen skiljer sig från att vill ta bort, annullera eller avvisa en betalning. Du kan bara ta bort en betalning, om dess status är **Skapad**. Denna status anger att betalningen har skapats men ännu inte har skapats. Denna begränsning alltid gäller oavsett betalningsmetoden. Du kan annullera ej bokförda checkar när har skapats men ännu inte har bokförts. Om genereras betalningen görs som en fond för elektronisk överföring kan avvisa du betalning innan den bokförs. Avvisa en betalning genom att ändra den **betalningsstatus** värde. En betalning som annullerade eller avvisade genereras efter den **betalningsstatus** värdet ändras tillbaka till **ingen**. 
+Ibland efter att en leverantörsbetalning har bokförts, måste betalningen återföras. Återföringen skiljer sig från att vill ta bort, annullera eller avvisa en betalning. Du kan bara ta bort en betalning, om dess status är **Skapad**. Denna status anger att betalningen har skapats men ännu inte har genererats. Denna begränsning gäller alltid oavsett betalningsmetod. Du kan annullera ej bokförda checkar när har skapats men ännu inte har bokförts. Om den genererade betalningen görs som en elektronisk betalning (EFT) kan avvisa du betalningen innan den bokförs. Avvisa en betalning genom att ändra värdet **Betalningsstatus**. En betalning som har annullerats eller avvisats kan genereras om efter att värdet **betalningsstatus** ändras tillbaka till **Ingen**. 
 
-När en betalning bokförs används återföringar. Betalningar som görs elektroniskt kan inte ångras när de har bokförts. I stället måste du skapa en ny transaktion för betalning till skulden få tillbaka på leverantörens konto. Det finns två metoder för återföring av bokförda checkar. I en metod bokförs återföringar direkt när du klickar på **Betalningsåterföring** på sidan **Check**. I den metoden skickas återföringen när du klickar på **Betalningsåterföring** på sidan **Check** först till checkåterföringsjournalen i Kassa och bankhantering, där en granskare kan bokföra eller avvisa återföringen. 
+När en betalning har bokförts används återföringar. Betalningar som görs elektroniskt kan inte ångras när de har bokförts. Istället måste en ny transaktion skapas för betalningsbeloppet för att få tillbaka skulder på leverantörens konto. Det finns två sätt att återföra bokförda checkar. I en metod bokförs återföringar direkt när du klickar på **Betalningsåterföring** på sidan **Check**. I den metoden skickas återföringen när du klickar på **Betalningsåterföring** på sidan **Check** först till checkåterföringsjournalen i Kassa och bankhantering, där en granskare kan bokföra eller avvisa återföringen. 
 
 Om du vill veta vilken metod som din organisation använder, se sidan **Parametrar för kassa- och bankhantering** . Om alternativet **Använd granskningsprocess för betalningsåterföringar** anges till **Ja**, skickas återföringarna till checkåterföringsjournalen för granskning. I följande tabell finns beskrivningar av hur checkåterföringsmetoderna skiljer sig åt.
 
@@ -57,7 +60,7 @@ Om du är en användare som måste granska återföringar, kan du antingen godk�
 -   Om du vill avslå en återföring tar du bort checkåterföringsjournalen.
 
 > [!NOTE]
-> Om du tar bort journalen kan återföringen bort från systemet, men den ursprungliga checken finns kvar i den **Kontrollera** sida. Checken har då inte längre **Väntar på annullering**.
+> Om du tar bort journalen tas återföringen bort från systemet, men den ursprungliga checken finns kvar på sidan **Check**. Checken har då inte längre **Väntar på annullering**.
 
 ## <a name="results-of-posting-a-reversal"></a>Resultat av bokföring av en återföring
 När du bokför en checkåterföring händer följande:
@@ -78,6 +81,8 @@ Om checken som återfördes utfärdades för en kundåterbetalning inträffar ä
 
 -   En transaktion bokförs mot kundkontot för betalningsåterföringen och kvittningen mellan den ursprungliga betalningen och dokumentet som betalningen ursprungligen kvittades mot återförs (en negativ betalning skapas).
 -   En betalningsåterföring tillämpas på den ursprungliga betalningen. Fältet **Senaste kvittningsverifikation** på sidan **Kundtransaktioner** för den ursprungliga kundutbetalningen uppdateras för att avspegla verifikationsnumret för den återförda transaktionen.
+
+
 
 
 

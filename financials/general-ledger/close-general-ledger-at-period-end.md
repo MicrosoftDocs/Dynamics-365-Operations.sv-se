@@ -1,6 +1,6 @@
 ---
 title: "Stäng redovisningen vid periodslutet"
-description: "Det här avsnittet beskrivs de uppgifter som normalt utförs vid en periodstängning för redovisningen."
+description: "Det här avsnittet beskriver de uppgifter som normalt slutförs vid en periodstängning av redovisningen."
 author: RobinARH
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,9 +26,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="close-the-general-ledger-at-period-end"></a>Stäng redovisningen vid periodslutet
 
-Det här avsnittet beskrivs de uppgifter som normalt utförs vid en periodstängning för redovisningen. 
+[!include[banner](../includes/banner.md)]
 
-I redovisningen kan du slutföra stängningsprocedurerna för en period eller ett år. Stängningsprocesser förbereder systemet för en ny period. Du måste köra Stäng årsslutsprocess för att förbereda systemet för ett nytt år. Varje organisation har olika processer och steg som utförs för en utgång. Här är några valfria åtgärder för avslutas:
+
+Det här avsnittet beskriver de uppgifter som normalt slutförs vid en periodstängning av redovisningen. 
+
+I redovisningen kan du slutföra stängningsprocedurerna för en period eller ett år. Stängningsprocesser förbereder systemet för en ny period. För att förbereda systemet för ett nytt år måste du köra processen för årsslutet. Varje organisation har olika processer och steg som utförs i samband med ett periodslut. Här följer några valfria steg för periodslut:
 
 -   Slutför alla uppgifter i alla andra moduler, som Kundreskontra, Leverantörsreskontra och Lager.
 -   Kontrollera att alla journaler har bokförts.
@@ -39,9 +42,11 @@ I redovisningen kan du slutföra stängningsprocedurerna för en period eller et
 -   Journalför transaktioner och granska rapporten **Redovisningsjournal**.
 -   Utför en konsolidering genom att använda ett konsolideringsföretag eller en ekonomisk rapportering.
 -   Generera bokslut för periodslutet genom att använda ekonomisk rapportering.
--   Ställ in redovisningsperioder på **Spärrad** så att ingen ytterligare bokföring sker. Du kan även begränsa en period till en viss användargrupp medan periodslutsaktiviteter sker för bättre kontroll. Det är inte bra att ange perioder som **permanent stängda**, eftersom du inte kan öppna en period som har stängts.
+-   Ställ in redovisningsperioder på **Spärrad** så att ingen ytterligare bokföring sker. Du kan även begränsa en period till en viss användargrupp medan periodslutsaktiviteter sker för bättre kontroll. Det är ingen god idé att ange en period som **Permanent stängd**, detta eftersom du inte på nytt kan öppna en period som har stängts.
 
-Finansiell period nära arbetsytan kan användas för att ordna och spåra aktiviteter som krävs för olika periodslut processer. Avser det [ekonomiska period nära arbetsytan](financial-period-close-workspace.md) och [årsslut nära](Year-end-close.md) avsnitt för mer information. 
+Arbetsytan för ett finansiellt periodslut kan användas för att organisera och spåra de aktiviteter som krävs för olika periodslutsprocesser. Se avsnitten [Arbetsyta för ekonomiskt periodslut](financial-period-close-workspace.md) och [Årsbokslut](Year-end-close.md) för mer information. 
+
+
 
 
 

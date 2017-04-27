@@ -28,11 +28,14 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="order-entry-deadlines"></a>Deadlines för orderregistrering
 
+[!include[banner](../includes/banner.md)]
+
+
 Den här artikeln innehåller information om deadlines för orderregistrering. En deadline för orderregistrering är en sluttid som bestämmer om en kundorder behandlas (och genomförs) som om det togs emot den aktuella dagen eller nästa dag.
 
 I många företag kommer bara försäljningsorder som inkommer före en viss tid att behandlas som om de kom in samma dag. Alla order som har inlevererats efter den tiden ska behandlas som om de inlevereras nästa vardag. Den här sluttiden för order kallas deadline för orderregistrering.  
 
-Deadlines för orderregistrering används som inmatning av orderlöfte. Därför hjälper de dig att hantera kundens förväntningar om orderleveranser. Kunder kan till exempel se om de gör någon beställning med dig innan en viss tidpunkt, att du kommer att leverera varor på samma dag. Om de missa deadline som kan de vänta leveransen på nästa arbetsdag. Du kan ange deadlines för orderregistrering utifrån funktionerna lagerställe och leverans scheman för transportföretaget.  
+Deadlines för orderregistrering används som inmatning av orderlöfte. Därför hjälper de dig att hantera kundens förväntningar om orderleveranser. Kunder kan till exempel se om de gör någon beställning med dig innan en viss tidpunkt, att du kommer att leverera varor på samma dag. Men om de missar denna deadline kan de förvänta leveransen först på nästa arbetsdag. Du kan ange deadlines för orderregistrering utifrån dina lagerställefunktioner och transportföretagets tidsscheman.  
 
 På sidan **Deadlines för orderregistrering** anger du tider för orderregistrering för alla veckodagar. Om alla order inlevererad efter den angivna tiden ska de behandlas som om de inlevereras nästa dag. Som standard är tiden 23:59, det vill säga en minut före midnatt den aktuella dagen. Du kan ändra standardtiderna så att de stämmer med faktisk deadline för ut- eller inleverans.  
 
@@ -43,7 +46,7 @@ Om verksamheten inom ditt företag är utspridd på flera siter kan du skapa en 
 På sidan **Aktivera kombinationer för deadline för orderregistrering** definierar du de kombinationer av siter och deadlinegrupper för orderregistrering som tillåts.
 
 ## <a name="example-order-entry-deadline"></a>Exempel: Deadline för orderregistrering
-Deadline för orderregistrering på tisdagar har ställts in på 16:00. På en särskild tisdag klockan 17:00 försöker du att ange det aktuella datumet som transportdatum. (Observera att det inte finns några produktionstid i det här exemplet). Om den **Leveransdatumkontroll** är markerad visas en varning om att datumet är ogiltigt. Denna varning visas på sidan **Tillgängligt transport- och inleveransdatum** där du kan sedan välja andra datum.
+Deadline för orderregistrering på tisdagar har ställts in på 16:00. På en särskild tisdag klockan 17:00 försöker du att ange det aktuella datumet som transportdatum. (Observera att det inte finns någon produktionstid för det här exemplet.) Om kryssrutan **Leveransdatumkontroll** är markerad får du en varning med information om att datumet inte är giltigt. Denna varning visas på sidan **Tillgängligt transport- och inleveransdatum** där du kan sedan välja andra datum.
 
 ## <a name="example-different-order-entry-deadlines-per-site"></a>Exempel: Olika deadline för orderregistreringar per site
 Ditt företag bedriver sin verksamhet på två siter. Siterna finns i andra tidszoner, som visas i följande tabell.
@@ -55,7 +58,7 @@ Ditt företag bedriver sin verksamhet på två siter. Siterna finns i andra tids
 
 Site A och B har definierat följande deadlines för orderregistrering.
 
-| Dagen i veckan             | A: Beställ deadlines för orderregistrering (PST) | B: beställa deadlines för orderregistrering (EST) |
+| Dagen i veckan             | A: Deadlines för orderregistrering (PST) | B: Deadlines för order (EST) |
 |-----------------------------|--------------------------------|--------------------------------|
 | Måndag                      | 13:00:00                          | 14:00:00                          |
 | Tisdag                     | 13:00:00                          | 14:00:00                          |
@@ -67,7 +70,7 @@ Du behandlar order och du befinner dig i Utah där tidzonen är MST (Mountain St
 
 Följande tabeller visar deadline för order för site A och B konverterat till MST-tid.
 
-| Site A: PST         | Site MST A:        | Site B: EST           | Site MST B:        |
+| Plats A: PST         | Plats A: MST        | Plats B: EST           | Plats B: MST        |
 |---------------------|--------------------|-----------------------|--------------------|
 | 13:00:00               | 14:00:00              | 14:00:00                 | 12:00:00              |
 
@@ -95,7 +98,7 @@ Du behandlar order och du befinner dig i Utah där tidzonen är MST. Det innebä
 
 Följande tabeller visar deadline för order för site A och B konverterat till MST-tid.
 
-| Site A: PST         | Site MST A:        | Site B: EST           | Site MST B:        |
+| Plats A: PST         | Plats A: MST        | Plats B: EST           | Plats B: MST        |
 |---------------------|--------------------|-----------------------|--------------------|
 | 13:00:00               | 14:00:00              | 13:00:00                 | 11:00:00              |
 
@@ -104,6 +107,8 @@ Följande tabeller visar deadline för order för site A och B konverterat till 
 <a name="see-also"></a>Se även
 --------
 
-[Delivery schedules](delivery-schedules.md)
+[Leveransplaner](delivery-schedules.md)
+
+
 
 

@@ -1,5 +1,5 @@
 ---
-title: "Kvalitetshantering – översikt"
+title: "Översikt över kvalitetshantering"
 description: "Det här avsnittet beskriver hur du kan använda kvalitetshantering i Microsoft Dynamics 365 for Operations för att förbättra produktens kvalitet inom din leveranskedja."
 author: YuyuScheller
 manager: AnnBe
@@ -26,7 +26,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="quality-management-overview"></a>Kvalitetshantering – översikt
+# <a name="quality-management-overview"></a>Översikt över kvalitetshantering
+
+[!include[banner](../includes/banner.md)]
+
 
 Det här avsnittet beskriver hur du kan använda kvalitetshantering i Microsoft Dynamics 365 for Operations för att förbättra produktens kvalitet inom din leveranskedja.
 
@@ -344,7 +347,7 @@ Du måste definiera en kvalitetsassociation för varje variant i en affärsproce
 </tr>
 <tr class="even">
 <td>Resultat från testvariabel</td>
-<td>Använd den här sidan när du vill ställa in, redigera och visa möjliga testresultat för en testvariabel som hör till ett kvalitativt test. För varje resultat tilldelar du statusen <strong>godkänt</strong> eller <strong>underkänt</strong>. Du måste definiera en variabel och dess resultat för varje kvalitativt test som definieras på sidan <strong>Tester</strong>. (För ett kvalitativt test testtypen anges till <strong>alternativet</strong> på de <strong>tester</strong> sida.) Använd den <strong>testgrupper</strong> sidan tilldelas en testvariabeln och standardresultatet ett enskilt kvalitativt test.</td>
+<td>Använd den här sidan när du vill ställa in, redigera och visa möjliga testresultat för en testvariabel som hör till ett kvalitativt test. För varje resultat tilldelar du statusen <strong>godkänt</strong> eller <strong>underkänt</strong>. Du måste definiera en variabel och dess resultat för varje kvalitativt test som definieras på sidan <strong>Tester</strong>. (För kvalitativa tester anges testtypen som <strong>Alternativ</strong> på sidan <strong>Tester</strong>.) Använd sidan <strong>Testgrupper</strong> för att tilldela en testvariabel och standardresultatet till ett enskilt kvalitativt test.</td>
 <td>Ett tillverkningsföretag som tillverkar kakor använder ett inspektionstest för den färdiga produkten. Det här inspektionstestet har flera variabler. En variabel är smak, och de möjliga resultaten för denna variabel är bra och dålig. En andra variabel är färg, och de möjliga resultaten är för mörk, för ljus och rätt. Statusen <strong>godkänt</strong> eller <strong>underkänt</strong> tilldelas till varje resultat. Under inspektionstestet av respektive variabel rapporterar inspektören testresultatet genom att välja något av resultaten.</td>
 </tr>
 </tbody>
@@ -355,8 +358,10 @@ Du måste definiera en kvalitetsassociation för varje variant i en affärsproce
 <a name="see-also"></a>Se även
 --------
 
-[Quality management processes](quality-management-processes.md)
+[Kvalitetshanteringsprocesser](quality-management-processes.md)
 
 [Aktivera avvikelsehantering](enable-nonconformance-management.md)
+
+
 
 

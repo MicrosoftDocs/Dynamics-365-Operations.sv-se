@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="budget-planning-integration-with-other-modules"></a>Budgetplanering integration med andra moduler
 
+[!include[banner](../includes/banner.md)]
+
+
 
 
 <a name="periodic-processes-for-generating-budget-plans"></a>Periodiska processer för att generera budget planer
@@ -49,13 +52,13 @@ De grundläggande elementen i den återkommande process är samma för alla proc
 
 För varje generation, tre åtgärder är tillgängliga:
 
--   **Skapa en ny budgetplan** skapar en ny plan som har de attribut som har markerats i formuläret ** mål ** avsnittet. Dessa attribut måste inte vara unikt. Därför två planer kan ha samma namn och andra värden.
+-   **Skapa en ny budgetplan** skapar en ny plan som besitter de attribut som valdes i avsnittet **Mål **. Dessa attribut måste inte vara unikt. Därför två planer kan ha samma namn och andra värden.
 -   **Byt ut den befintliga budgeten scenario** raderar alla data i målet budget i den valda budget plan scenario och skapar nya rader som använder den valda källdata.
 -   **Uppdatera den befintliga budgeten scenario, och fästa nya data** uppdaterar befintliga rader i målplan som matchar källa rader och lägger till nya rader för nya uppgifter. Matchningen baseras på reskontra, datum, budget klass och diverse andra områden. Till exempel, när du genererar budget planer från prognos positioner, antalet är ett viktigt område. Alla rader som har en position som stämmer överens med källan positionsnummer ersätts med nya rader från källan.
 
 ### <a name="source"></a>Källa
 
-För alla processer i **källa** på fliken kan du filtrera data med hjälp av den **Filter** knappen. Som standard läggs specifika fält i filtret för varje process. Till exempel, för att **generera budget plan från huvudboken** , **reskontra** och **viktigaste konto** kategorier finns tillgängliga och visas på sidan. Några fält som du lägger till filter är också läggas till sidan, tillsammans med några kriterier som du lägger till.
+Fliken **Källa** låter dig filtrera data i alla processer genom att använda knappen **Filter**. Som standard läggs specifika fält i filtret för varje process. Till exempel, för att **generera budget plan från huvudboken** , **reskontra** och **viktigaste konto** kategorier finns tillgängliga och visas på sidan. Några fält som du lägger till filter är också läggas till sidan, tillsammans med några kriterier som du lägger till.
 
 ### <a name="target"></a>Mål
 
@@ -63,7 +66,7 @@ Det **historiska** alternativet på **fliken Mål** låter dig använda datum fr
 
 Den **sammanlagda genom** fältet överst på sidan bestämmer också datum som används. Det här fältet summa belopp och eventuellt sätter datumet till den första dagen i räkenskapsåret eller fiskal period. 
 
-Många av fälten på **fliken mål** blir redigerbart eller skrivskyddat, beroende på vilken åtgärd du väljer. När du ändrar från att skapa en ny budget planerar att uppdatera en befintlig plan, **Budget plan namn** blir otillgänglig och de fält som är relaterade till att välja en befintlig plan blir tillgängliga. Båda **mål** fliken och ** källa ** och den **redovisning** fält alltid är inte tillgängligt eftersom värdet bestäms av den valda budgetplaneringsprocessen. 
+Många av fälten på **fliken mål** blir redigerbart eller skrivskyddat, beroende på vilken åtgärd du väljer. När du ändrar från att skapa en ny budget planerar att uppdatera en befintlig plan, **Budget plan namn** blir otillgänglig och de fält som är relaterade till att välja en befintlig plan blir tillgängliga. På såväl fliken **Mål** som fliken **Källa ** är fältet **Redovisning** aldrig tillgängligt, detta eftersom värdet avgörs av vald budgetplaneringsprocess. 
 
 **Budgeten klass** låter dig ställa in budget plan rader som antingen utgiftstransaktioner inkomster eller transaktioner. Vanligen intäkt transaktioner är krediter till ett reskontrakonto och därför lagras som negativa belopp. Vanligen används dessa transaktioner visas även som negativa belopp i budgeten. Men genom att lägga budgeten klass som ett fält i planen layout kan du aktivera intäkt visas som positiva belopp.
 
@@ -73,7 +76,7 @@ Tre fält ger ytterligare funktioner: **Faktor**, **Minimum** och **Avrundning**
 
 Värdet i **fältet Faktor** multipliceras med källa till beloppet i budgeten. Du kan sedan göra justeringar när du skapar budgeten linjer. Du kan till exempel ange **1.03** för en 3 procents ökning. Faktorn måste vara ett positivt tal. 
 
-Den **minsta** fältet kan du ange gränsbeloppet för att skapa en budget. Om källan är mindre än detta antal, budgeten är inte skapas. Värdet **0,00** innebär att alla belopp men inte begränsa rader som positiva belopp. (Inget värde begränsar rader som positiva belopp. Negativa belopp är alltid inkluderade och avser oftast kredittransaktioner.)
+Den **minsta** fältet kan du ange gränsbeloppet för att skapa en budget. Om källan är mindre än detta antal, budgeten är inte skapas. Värdet **0,00** tillåter alla belopp, men begränsar inte rader till positiva belopp. (Inget värde begränsar raderna till positiva belopp. Negativa belopp är alltid inkluderade och avser oftast kredittransaktioner.)
 
 **Avrundning regel** fältet kan du ange den precision i budgeten rader som skapas. Du kan avrunda beloppen till närmaste 1,00 10,00 100.00, och så vidare, valuta.
 
@@ -86,13 +89,13 @@ I mål, **Budget klass** är satt till antingen **kostnad** eller **intäkt**. D
 
 ### <a name="generate-budget-plan-from-fixed-assets"></a>Generera budgetplaner från anläggningstillgångar
 
-**Skapa budget plan från anläggningsredovisning**har inget alternativ för sammanläggning av perioder eller dag. Det finns inga alternativ för konfigurering av planen som tidigare. Du kan använda proceduren periodiska transaktioner ska inkluderas planerade fasta tillgångar i budgeten planeringsprocessen.
+**Skapa budget plan från anläggningsredovisning**har inget alternativ för sammanläggning av perioder eller dag. Det finns inga alternativ för att ange planen som historisk. Du kan använda denna periodiska procedur för att inkludera förväntade transaktioner för fasta tillgångar i din budgetplanering.
 
 ### <a name="generate-budget-plan-from-forecast-positions"></a>Generera budgetplansrader från prognosbefattningar
 
 **Skapa budget plan från prognos positioner** process tilldelar källa prognos position i budgeten. Du kan visa genom att lägga till den prognos som en rad i budgeten layout eller via **budgeten linjer** undersökning. Om du inte vill att prognosen att tilldelas budget plan linjer,**inkluderar position i budget alternativet linje** till **Nej**.
 
-Rader i budgetplanen sammanställs efter redovisningskonto och befattning. Du kan dock exkludera positionsnumret, så att raderna som sammanställs per redovisningskonto bara. På **fliken mål** , **inkluderar position i budget** alternativ till **Nej**.
+Rader i budgetplanen sammanställs efter redovisningskonto och befattning. Du kan emellertid exkludera positionsnumret, så att raderna endast sammanställs efter redovisningskonto. På **fliken mål** , **inkluderar position i budget** alternativ till **Nej**.
 
 I **budgeten FTE scenario** kan du välja ett scenario ska inkludera antalet heltidstjänster (heltidsekvivalenter) i budgeten. Det här fältet är begränsat till kvantitet och typ scenarier som ingår i utformningen av mål budget plan. Om du väljer en FTE scenario, måste du även välja en FTE huvud konto. Detta konto används för att skapa den kvantitet budget plan linjer. 
 
@@ -140,5 +143,7 @@ Markera en rad och klicka på **budgeten linjer** knappen för att köra **Budge
 Använd den **prognos över utbudet** och **efterfrågan** knappar kör dessa frågor. I båda fallen fråga söker prognosrader som kunde ha skapat budgeten linjer. 
 
 Ytterligare rapporter som finns tillgängliga inkluderar **prognosen positioner genom budgeten** . Detta betänkande är särskilt användbar när du vill bestämma huruvida en ställning har rätt att anslagen planer.
+
+
 
 

@@ -1,6 +1,6 @@
 ---
 title: "Övervaka resultat för försäljning och marginaler"
-description: "Du kan övervaka försäljnings- och marginal prestanda i realtid med hjälp av Microsoft Dynamics 365 för operationer."
+description: "Du kan övervaka försäljning och marginalprestanda i realtid med hjälp av Microsoft Dynamics 365 for Operations."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 85123
 ms.assetid: ddd15820-c3e6-4607-819e-8cef744ce9c9
 ms.search.region: global
@@ -27,9 +27,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="monitor-sales-and-margin-performance"></a>Övervaka resultat för försäljning och marginaler
 
-Du kan övervaka försäljnings- och marginal prestanda i realtid med hjälp av Microsoft Dynamics 365 för operationer.
+[!include[banner](includes/banner.md)]
 
-Som en del av Dynamics 365 för operationer kan kan användarna övervaka försäljnings- och marginaldata prestanda i realtid över olika nivåer för organisationshierarkin för följande dimensioner:
+
+Du kan övervaka försäljning och marginalprestanda i realtid med hjälp av Microsoft Dynamics 365 for Operations.
+
+Som en del av Dynamics 365 for Operations kan användare övervaka prestanda för försäljning och marginaler i realtid på andra nivåer i organisationshierarkin för följande dimensioner:
 
 -   Produkter
 -   Kategorier
@@ -42,8 +45,10 @@ Som en del av Dynamics 365 för operationer kan kan användarna övervaka förs�
 
 Dessutom kan två unika rapporter, som används för strukturering av det hierarkiska rutnätet låta användare övervaka försäljning och marginalprestanda genom att detaljgranska från toppkategorinoden till enskilda lövnoder för kategorin i produktkategorihierarkin för butiken. Användarna kan också gå ned från den översta driftenheten till en enskild kanal i organisationshierarkin som har definierats som standardorganisationshierarki för hierarkiändamål för butiksrapportering. Du kan öppna rapporterna från någon av följande platser:
 
--   **Retail store management** Dynamics 365 arbetsytan för operationer &gt;**butik och handel**&gt;**kanaler**&gt;**Retail store management**&gt;**rapporter**
--   **Kategori- och management** Dynamics 365 arbetsytan för operationer &gt;**butik och handel**&gt;**produkter och kategorier**&gt;**Retail store management**&gt;**rapporter**
--   **Prissättning och rabatt management** Dynamics 365 arbetsytan för operationer &gt;**butik och handel**&gt;**prissättning och rabatter**&gt;**Retail store management**&gt;**rapporter**
--   **Förfrågningar och rapporter** Dynamics 365 för avsnittet &gt;**butik och handel**&gt;**förfrågningar och rapporter**&gt;**försäljningsrapporter**
+-   **Butikshantering** arbetsyta Dynamics 365 for Operations &gt; **Butik och handel** &gt; **Kanaler** &gt; **Butikshantering** &gt; **Rapporter**
+-   **Kategori- och produkthantering** arbetsyta Dynamics 365 for Operations &gt; **Butik och handel** &gt; **Produkt och kategorier** &gt; **Butikshantering** &gt; **Rapporter**
+-   **Pris- och rabatthantering ** arbetsyta Dynamics 365 for Operations &gt; **Butik och handel** &gt; **Prissättning och rabatter** &gt; **Butikshantering** &gt; **Rapporter**
+-   **Förfrågningar och rapporter** avsnitt Dynamics 365 for Operations &gt; **Butik och handel** &gt; **Förfrågningar och rapporter** &gt; **Försäljningsrapporter**
+
+
 

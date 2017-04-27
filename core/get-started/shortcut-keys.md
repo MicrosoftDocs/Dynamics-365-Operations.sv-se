@@ -1,6 +1,6 @@
 ---
 title: Kortkommandon
-description: "Följande kortkommandon gäller i hela Microsoft Dynamics 365 för operationer."
+description: "Följande kortkommandon gäller i hela Microsoft Dynamics 365 for Operations."
 author: jasongre
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,7 +26,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="keyboard-shortcuts"></a>Kortkommandon
 
-Följande kortkommandon gäller i hela Microsoft Dynamics 365 för operationer. 
+[!include[banner](../includes/banner.md)]
+
+
+Följande kortkommandon gäller i hela Microsoft Dynamics 365 for Operations. 
 
 **Obs!** Tangentbordsgenvägarna som beskrivs här hänvisar till en amerikansk tangentbordslayout. Knappar på andra tangentbordslayouter kan kanske inte exakt motsvarar tangenterna på ett tangentbord i USA.
 
@@ -40,7 +43,7 @@ Följande kortkommandon gäller i hela Microsoft Dynamics 365 för operationer.
 | Flytta till nästa/föregående alternativ i en meny            | Nedpil/uppil            |
 | Stäng en flik i åtgärdsfönstret eller en meny          | Esc                              |
 | Simulera en högerklickning                            | Skift+F10                        |
-| Öppna Dynamics 365 för operationer snabbmenyn | Ctrl+F10                         |
+| Öppna snabbmenyn i Dynamics 365 for Operations. | Ctrl+F10                         |
 | Köra standardknappen i ett formulär/dialog       | Alt+Enter                        |
 | Klicka på en knapp eller en panel                            | Retur eller Blanksteg                   |
 | Visa uppdatering av information för en beräkningspanel         | Alt+uppil                     |
@@ -64,7 +67,7 @@ Följande kortkommandon gäller i hela Microsoft Dynamics 365 för operationer.
 | Öppna faktaboxfönstret (eller flytta fokus till faktaboxfönstre om det redan är öppet,) | Ctrl+F2                                   |
 | Stäng faktaboxfönstret (med fokus i faktaboxfönstret)                         | Esc                                       |
 | Flytta till nästa/tidigare faktabox (med fokus i faktaboxfönstret)              | Alt+Skift+nedpil/Alt+Skift+uppil |
-| Flytta till den &lt;n&gt;st faktaboxen (med fokus i faktaboxrutan)                | Alt+&lt;n&gt; (&lt;n&gt; = 1-9)           |
+| Flytta till &lt;n&gt;th FactBox (med fokus i faktaboxfönstret)                | Alt+&lt;n&gt; (&lt;n&gt; = 1-9)           |
 | Expandera en faktabox (med fokus på faktaboxhuvudet)                             | Blanksteg eller Retur                            |
 | Komprimera den aktuella faktaboxen                                                    | Alt+0                                     |
 
@@ -111,8 +114,8 @@ Följande kortkommandon gäller i hela Microsoft Dynamics 365 för operationer.
 | Flytta till nästa/föregående fältgrupp.                     | Tab/Skift+Tab                              |
 | Flytta till nästa/föregående flik                       | Alt+Skift+höger pil/Alt+Skift+vänster pil |
 | Flytta till nästa/föregående snabbflik                   | Alt+Skift+nedpil/Alt+Skift+uppil    |
-| Flytta till den &lt;n&gt;st snabbfliken                     | Alt+&lt;n&gt; (&lt;n&gt; = 1-9)              |
-| Flytta till den &lt;n&gt;fliken st                         | ALT + SKIFT +&lt;n&gt; (&lt;n&gt; = 1-9)        |
+| Flytta till snabbfliken &lt;n&gt;th FastTab                     | Alt+&lt;n&gt; (&lt;n&gt; = 1-9)              |
+| Flytta till fliken &lt;n&gt;th                         | Alt+Skift+&lt;n&gt; (&lt;n&gt; = 1-9)        |
 | Expandera en snabbflik (med fokus på snabbflikhuvudet) | Blanksteg eller Retur                               |
 | Komprimera den aktuella snabbfliken                        | Alt+0                                        |
 | Byt till rutnätsvy                                 | Ctrl+Skift+G                                 |
@@ -152,7 +155,7 @@ Följande kortkommandon gäller i hela Microsoft Dynamics 365 för operationer.
 | Öppna uppslagning, kombinationsruta, datumväljaren, dialogrutan           | Alt+nedpil                |
 | Stäng uppslagning, kombinationsruta, datumväljaren, dialogrutan          | Esc                           |
 | Flytta fokus till en uppslagning (när uppslagningen redan är öppen,) | Alt+nedpil                |
-| Öppna kontrollens utökad förhandsgranskning                        | Alt+uppil                  |
+| Öppna kontrollens utökade förhandsgranskning                        | Alt+uppil                  |
 | Välj text i det aktuella fältet.                           | Ctrl+A                        |
 | Ange/lämna textområdet i en HTML-redigeringskontroll        | Alt+Uppil/Alt+nedpil |
 
@@ -174,18 +177,18 @@ Följande kortkommandon gäller i hela Microsoft Dynamics 365 för operationer.
 | Gå till instrumentpanelen                                                       | Alt+Skift+Start  |
 | Gå till navigeringsfältet                                                  | Alt+Skift+F1    |
 | Gå till navigeringsfönstret                                                 | Alt+F1          |
-| Favoriten/un-favorite (med fokus på ett formulär i navigeringsfönstret) formulär | Skift + F         |
+| Gör ett formulär till favorit/ta bort favorit (med fokus på ett formulär i navigeringsfönstret) | Skift+F         |
 | Gå till företagsväljaren                                                  | Ctrl+Skift+O    |
 | Gå till navigeringssökningen                                                   | Ctrl+/ eller Alt+G |
-| Öppna hjälpfönstret                                                        | CTRL +?          |
-| Öppna trace parser                                                     | ALT + SKIFT + T     |
+| Öppna Hjälp-fönstret                                                        | Ctrl+?          |
+| Öppen Trace Parser                                                     | Alt+Skift+T     |
 
  
 
 ## <a name="segmented-entry-shortcuts"></a>Segmenterade postgenvägar
 |                                                                                                                         |                                  |
 |-------------------------------------------------------------------------------------------------------------------------|----------------------------------|
-| **To do this**                                                                                                          | **Press**                        |
+| **Om du vill göra detta**                                                                                                          | **Tryck**                        |
 | Öppna listrutan (när listrutan är stängd)                                                             | Alt+nedpil                   |
 | Flytta fokus till indatafältet för det aktuella segmentet i listrutan (när listrutan redan är öppen) | Alt+nedpil                   |
 | Stäng listrutan.                                                                                                | Alt+uppil                     |
@@ -199,5 +202,7 @@ Följande kortkommandon gäller i hela Microsoft Dynamics 365 för operationer.
 | Flytta till längst upp/längst ned i uppslagningen                                                                                    | Startsida/slut                       |
 
  
+
+
 
 

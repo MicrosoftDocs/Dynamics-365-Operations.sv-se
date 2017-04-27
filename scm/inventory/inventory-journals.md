@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="inventory-journals"></a>Lagerjournaler.
 
+[!include[banner](../includes/banner.md)]
+
+
 Det här avsnittet ger en beskrivning av hur du kan använda lagerjournaler för att bokföra olika typer av fysiska lagertransaktioner. 
 
 Lagerjournalerna i Microsoft Dynamics 365 for Operations används för att bokföra fysiska lagertransaktioner av olika typer, till exempel bokföringen av problem och kvitton, lagerrörelser, genereringen av strukturlistor (BOM) och avstämningen av fysiskt lager. Alla dessa lagerjournaler används på liknande sätt, men de delas in i olika typer.
@@ -72,7 +75,7 @@ Produktionsinförseljournaler fungerar som artikelinförseljournalerna men anvä
 
 ### <a name="counting"></a>Inventering
 
-Med inventeringsjournaler kan du justera den aktuella lagerbehållningen som är registrerad för artiklar eller grupper av artiklar och sedan bokföra det verkliga fysiska antalet så att du kan göra justeringar som krävs för att stämma av skillnaderna. Du kan koppla inventeringspolicyer med inventeringsgrupper som hjälper dig att gruppera artiklar som har olika egenskaper, så att artiklarna kan inkluderas i en inventeringsjournal. Du kan till exempel ställa in inventeringsgrupper för att räkna artiklar som har en specifik frekvens, eller för att räkna artiklar när lagret faller till en viss nivå. Information om hur du definierar räkning grupper finns i [definiera lagerräkning processer (aktivitet guide)](http://ax.help.dynamics.com/en/wiki/define-inventory-counting-processes/).
+Med inventeringsjournaler kan du justera den aktuella lagerbehållningen som är registrerad för artiklar eller grupper av artiklar och sedan bokföra det verkliga fysiska antalet så att du kan göra justeringar som krävs för att stämma av skillnaderna. Du kan koppla inventeringspolicyer med inventeringsgrupper som hjälper dig att gruppera artiklar som har olika egenskaper, så att artiklarna kan inkluderas i en inventeringsjournal. Du kan till exempel ställa in inventeringsgrupper för att räkna artiklar som har en specifik frekvens, eller för att räkna artiklar när lagret faller till en viss nivå. För mer information om hur du definierar inventeringsgrupper, se [Definiera inventeringsprocesser (uppgiftsguide)](http://ax.help.dynamics.com/en/wiki/define-inventory-counting-processes/).
 
 ### <a name="tag-counting"></a>Märkesinventering
 
@@ -89,5 +92,7 @@ En journal kan endast öppnas av en användare åt gången. Om flera användare 
 
 ## <a name="posting-journal-lines"></a>Bokföringsjournalrader
 Du kan bokföra journalraderna som du skapar när som helst, tills du har låst en artikel från ytterligare transaktioner. Data som du anger i en journal finns kvar i journalen även om du stänger den utan att bokföra raderna.
+
+
 
 

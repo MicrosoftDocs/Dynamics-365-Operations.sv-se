@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="consumption-depreciation"></a>Förbrukningsavskrivning
 
+[!include[banner](../includes/banner.md)]
+
+
 Den här avsnittet innehåller en översikt över förbrukningsmetoden för avskrivning.
 
 Om du ställer in en avskrivningsprofil för anläggningstillgångar och väljer **Förbrukning** i fältet **Metod** på sidan **Avskrivningsprofiler** tilldelas anläggningstillgångar till avskrivningsprofilen utifrån deras användning. Det är inte nödvändigt att ställa in procenttal och intervaller på sidan **Avskrivningsprofiler**. När du har skapat en avskrivningsprofil som använder förbrukningsmetoden kan du ställa in metoden på olika sätt.
@@ -64,5 +67,7 @@ Följande faktor för förbrukningsavskrivning är inställd för 31 januari:
 -   Den uppskattade kvantiteten för anläggningstillgången är 2 000.
 
 Avskrivningsförslaget den 31 januari är som följer: Beräknad kvantitet × Procent × Enhetsavskrivning 2 000 × 0,10 × 1,5 = 300
+
+
 
 

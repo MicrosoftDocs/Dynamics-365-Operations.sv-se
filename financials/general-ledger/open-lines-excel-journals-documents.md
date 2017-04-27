@@ -1,6 +1,6 @@
 ---
 title: "Publicera journalrader och dokument från Microsoft Excel"
-description: "Det här avsnittet beskrivs hur du anger och publicera rader för allmänna journaler från Microsoft Excel. Den innehåller information om de olika mallar som du kan använda beroende på vilken typ av transaktioner som du har angett."
+description: "I det här avsnittet beskrivs hur du anger och publicerar rader för allmänna journaler från Microsoft Excel. Det innehåller information om de olika mallar som du kan använda beroende på vilken typ av transaktioner som du har angett."
 author: twheeloc
 manager: AnnBe
 ms.date: 2017-04-04
@@ -27,26 +27,26 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="publish-journal-lines-and-documents-from-excel"></a>Publicera journalrader och dokument från Microsoft Excel
 
-Det här avsnittet beskrivs hur du anger och publicera rader för allmänna journaler från Microsoft Excel. Den innehåller information om de olika mallar som du kan använda beroende på vilken typ av transaktioner som du har angett.
+I det här avsnittet beskrivs hur du anger och publicerar rader för allmänna journaler från Microsoft Excel. Det innehåller information om de olika mallar som du kan använda beroende på vilken typ av transaktioner som du har angett.
 
-Användarna kan ange och publicera rader för redovisningsjournaler från Microsoft Excel. När en användare skapar en journal i **öppna rader i Excel** visas knappen mallar som är tillgängliga. Mallar är utformade för att stödja speciella scenarier stöds dock inte alla kombinationer av kontotypen i journalen. Följande tabell visar de mallar som finns tillgängliga och kontotyper som de stöder.
+Användarna kan ange och publicera rader för redovisningsjournaler från Microsoft Excel. När en användare skapar en journal visar knappen **Öppna rader i Excel** de mallar som är tillgängliga. Mallar är utformade för att stödja speciella scenarier, men alla kombinationer av kontotypen i journalen stöds dock inte. Följande tabell visar de mallar som finns tillgängliga och kontotyper som de stöder.
 |                          |                                                                                                                         |                                                                                         |
 |--------------------------|-------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
-| **Template**             | **Kontotyper som stöds**                                                                                             | **Så här öppnar du mallen**                                                          |
-| Redovisningsjournalrader     | Konto: Redovisning, kund, leverantör, Bank motbokas konto: redovisning, kund, leverantör, Bank koncerninterna stöds.       | Allmän journal                                                                         |
-| Fakturaregister         | Konto: Leverantör motkonto: stöds inte för koncernintern redovisning.                                                    | AP fakturaregister                                                                     |
-| Fakturajournal          | Konton: Leverantör motkonto: koncernintern redovisning som stöds.                                                      | Fakturajournal för LR                                                                      |
+| **Mall**             | **Kontotyper som stöds**                                                                                             | **Så här öppnar du mallen**                                                          |
+| Redovisningsjournalrader     | Konto: Redovisning, kund, leverantör, bankmotkonto: redovisning, kund, leverantör, Bank koncernintern stöds.       | Allmän journal                                                                         |
+| Fakturaregister         | Konto: Leverantör motkonto: koncernintern redovisning stöds inte.                                                    | LR-fakturaregister                                                                     |
+| Fakturajournal          | Konton: Leverantörsmotkonto: koncernintern redovisning stöds.                                                      | Fakturajournal för LR                                                                      |
 | Leverantörsfaktura           |                                                                                                                         | Leverantörsfaktura                                                                          |
-| Kundfakturajournal | Konto: Kund motkonto: koncernintern redovisning som stöds.                                                     | Allmän journal                                                                         |
-| Fritextfaktura        |                                                                                                                         | I den **fritextfaktura** klickar du på **öppna i Excel** (ikonen Microsoft Office). |
-| Journal för anläggningstillgångar     | Tillgång till redovisnings-, bank, kund eller leverantör. Koncerninterna stöds inte.                                               | Journal för anläggningstillgångar                                                                     |
-| Leverantörsbetalningsjournal   | Konto: Leverantör motkonto: redovisning, Bank koncerninterna stöds.                                                 | Leverantörsbetalningsjournal                                                                  |
-| Kundbetalningsjournal | Konto: Kund motkonto: redovisning, Bank koncerninterna stöds.                                               | Kundbetalningsjournal                                                                |
-| Projektutgiftsjournal  | Konto: Projekt, redovisning, kund, leverantör motbokas konto: projekt, redovisning, kund, leverantörens koncerninterna stöds. | Redovisningsjournal utgift (under projekthantering och redovisning)                       |
+| Kundfakturajournal | Konto: Kundmotkonto: koncernintern redovisning stöds.                                                     | Allmän journal                                                                         |
+| Fritextfaktura        |                                                                                                                         | På sidan **Fritextfaktura**, klicka på **Öppna i Excel** (Microsoft Office-ikonen). |
+| Journal för anläggningstillgångar     | Tillgång till redovisning, bank, kund eller leverantör. Koncernintern stöds inte.                                               | Journal för anläggningstillgångar                                                                     |
+| Leverantörsbetalningsjournal   | Konto: Leverantörsmotkonto: redovisning, bank koncernintern stöds.                                                 | Leverantörsbetalningsjournal                                                                  |
+| Kundbetalningsjournal | Konto: Kundmotkonto: redovisning, bank koncernintern stöds.                                               | Kundbetalningsjournal                                                                |
+| Projektutgiftsjournal  | Konto: Projekt, Redovisning, kund, leverantörsmotkonto: projekt, redovisning, kund, leverantör koncernintern stöds. | Redovisningsjournal utgift (under Projekthantering och redovisning)                       |
 
-När rader har publicerats valideras för att kontrollera att de uppfyller de regler som anges i de ekonomiska journalerna. När rader publiceras användare redigera eller bokföra verifikationerna från Microsoft Dynamics 365 för operationer. 
+När rader har publicerats valideras de för att kontrollera att de uppfyller de regler som anges i de ekonomiska journalerna. När rader publiceras kan användare redigera eller bokföra verifikationerna från Microsoft Dynamics 365 for Operations. 
 
-Ytterligare ändringar krävs om du vill lägga till ekonomiska dimensioner i en mall. Mer information finns i [lägga till dimensioner i Microsoft Excel-mallen](\dev-itpro\financial-dimensions\add-dimensions-excel-templates). När dimensionerna läggs till entiteten är tillgängliga i Excel designer och kan läggas till i mallen.
+Ytterligare ändringar krävs om du vill lägga till ekonomiska dimensioner i en mall. Mer information finns i [Lägga till dimensioner i Microsoft Excel-mallen](\dev-itpro\financial-dimensions\add-dimensions-excel-templates). När dimensionerna har lagts till i enheten är de tillgängliga i Excel-designern och kan läggas till i mallen.
 
 
 

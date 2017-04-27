@@ -1,6 +1,6 @@
 ---
 title: "Utvärdera lönsamhet för kunder och produkter"
-description: "I den här artikeln förklaras hur du kan använda i minnet och realtid analys för att komma åt, utforska och få insikt om kunder och produkten lönsamhet från Microsoft Dynamics 365 för operationer."
+description: "Den här artikeln beskriver hur du kan använda det inbyggda minnet och realtidanalys för att komma åt, utforska och få insikt om kunder och produktlönsamhet från dina Microsoft Dynamics 365 for Operations-data."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 52902
 ms.assetid: 1a77d04b-2985-4bee-9138-c216fe0483de
 ms.search.region: global
@@ -27,9 +27,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="assess-customer-and-product-profitability"></a>Utvärdera lönsamhet för kunder och produkter
 
-I den här artikeln förklaras hur du kan använda i minnet och realtid analys för att komma åt, utforska och få insikt om kunder och produkten lönsamhet från Microsoft Dynamics 365 för operationer. 
+[!include[banner](includes/banner.md)]
 
-Som en del av Dynamics 365 för operationer kan undersöka användare lönsamhet för främsta kunderna (10 till 100) mellan olika nivåer för organisationshierarkin baserat på något av följande kriterier:
+
+Den här artikeln beskriver hur du kan använda det inbyggda minnet och realtidanalys för att komma åt, utforska och få insikt om kunder och produktlönsamhet från dina Microsoft Dynamics 365 for Operations-data. 
+
+Som en del av Dynamics 365 for Operations kan användare studera lönsamheten för de främsta kunderna (10-100) mellan olika nivåer i organisationshierarkin, baserat på ett av följande kriterier:
 
 -   Försäljningsbelopp
 -   Kvantitet
@@ -38,8 +41,8 @@ Som en del av Dynamics 365 för operationer kan undersöka användare lönsamhet
 
 För denna bedömning kan du använda färdiga **översta kunder** , som du kan öppna från någon av följande platser:
 
--   **Retail store management** Dynamics 365 arbetsytan för operationer &gt;**butik och handel**&gt;**kanaler**&gt;**Retail store management**&gt;**rapporter**&gt;**främsta kunder rapport**
--   **Förfrågningar och rapporter** Dynamics 365 för avsnittet &gt;**butik och handel**&gt;**förfrågningar och rapporter**&gt;**försäljningsrapporter**&gt;**topp-lista över kunder rapport**
+-   **Butikshantering** arbetsyta Dynamics 365 for Operations &gt; **Butik och handel** &gt; **Kanaler** &gt; **Butikshantering** &gt; **Rapporter** &gt; **Främsta kunder - rapport**
+-   **Förfrågan och rapporter** avsnitt Dynamics 365 for Operations &gt; **Butik och handel** &gt; **Förfrågningar och rapporter** &gt; **Försäljningsrapporter** &gt; **Främsta kunder - rapport**
 
 Likaså användare kan studera lönsamheten för produkter (10 till 100) mellan olika nivåer i organisationshierarkin, baserat på ett av följande kriterier:
 
@@ -50,8 +53,10 @@ Likaså användare kan studera lönsamheten för produkter (10 till 100) mellan 
 
 För denna bedömning kan du använda färdiga **topprodukter **betänkande, som du kan öppna från någon av följande platser:
 
--   **Retail store management** Dynamics 365 arbetsytan för operationer &gt;**butik och handel**&gt;**kanaler**&gt;**Retail store management**&gt;**rapporter**&gt;**vanliga rapporten produkter**
--   **Kategori- och hantering** Dynamics 365 arbetsytan för operationer &gt;**butik och handel**&gt;**produkter och kategorier**&gt;**Retail store management**&gt;**rapporter**&gt;**vanliga rapporten produkter**
--   **Förfrågningar och rapporter** Dynamics 365 för avsnittet &gt;**butik och handel**&gt;**förfrågningar och rapporter**&gt;**försäljningsrapporter**&gt;**vanliga rapporten produkter**
+-   **Butikshantering** arbetsyta Dynamics 365 for Operations &gt; **Butik och handel** &gt; **Kanaler** &gt; **Butikshantering** &gt; **Rapporter** &gt; **Främsta produkter - rapport**
+-   **Kategori- och produkthantering** arbetsyta Dynamics 365 for Operations &gt; **Butik och handel** &gt; **Produkter och kategorier** &gt; **Butikshantering** &gt; **Rapporter** &gt; **Främsta produkter - rapport**
+-   **Förfrågan och rapporter** avsnitt Dynamics 365 for Operations &gt; **Butik och handel** &gt; **Förfrågningar och rapporter** &gt; **Försäljningsrapporter** &gt; **Främsta produkter - rapport**
+
+
 
 

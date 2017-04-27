@@ -1,6 +1,6 @@
 ---
-title: "Bankens kontoutdrag filen Felsöka importer"
-description: "Det är viktigt att bankutdragsfilen från banken matchar layouten som stöder Microsoft Dynamics 365 för operationer. På grund av de strikta standarder som gäller för bankutdrag kommer de flesta integreringar att fungera korrekt. Ibland kan emellertid utdragsfilen inte importeras, eller också har den felaktiga resultat. Vanligtvis orsakas dessa problem av små skillnader i bankutdragsfilen. Denna artikel förklarar hur du korrigerar dessa skillnader och löser problemen."
+title: "Felsökning av fel på bankutdragsfilen"
+description: "Det är viktigt att bankutdragsfilen från banken matchar den layout som Microsoft Dynamics 365 for Operations stöder. På grund av de strikta standarder som gäller för bankutdrag kommer de flesta integreringar att fungera korrekt. Ibland kan emellertid utdragsfilen inte importeras, eller också har den felaktiga resultat. Vanligtvis orsakas dessa problem av små skillnader i bankutdragsfilen. Denna artikel förklarar hur du korrigerar dessa skillnader och löser problemen."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,9 +24,12 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="bank-statement-file-import-troubleshooting"></a>Bankens kontoutdrag filen Felsöka importer
+# <a name="bank-statement-file-import-troubleshooting"></a>Felsökning av fel på bankutdragsfilen
 
-Det är viktigt att bankutdragsfilen från banken matchar layouten som stöder Microsoft Dynamics 365 för operationer. På grund av de strikta standarder som gäller för bankutdrag kommer de flesta integreringar att fungera korrekt. Ibland kan emellertid utdragsfilen inte importeras, eller också har den felaktiga resultat. Vanligtvis orsakas dessa problem av små skillnader i bankutdragsfilen. Denna artikel förklarar hur du korrigerar dessa skillnader och löser problemen.
+[!include[banner](../includes/banner.md)]
+
+
+Det är viktigt att bankutdragsfilen från banken matchar den layout som Microsoft Dynamics 365 for Operations stöder. På grund av de strikta standarder som gäller för bankutdrag kommer de flesta integreringar att fungera korrekt. Ibland kan emellertid utdragsfilen inte importeras, eller också har den felaktiga resultat. Vanligtvis orsakas dessa problem av små skillnader i bankutdragsfilen. Denna artikel förklarar hur du korrigerar dessa skillnader och löser problemen.
 
 <a name="what-is-the-error"></a>Vad består felet av?
 ------------------
@@ -34,7 +37,7 @@ Det är viktigt att bankutdragsfilen från banken matchar layouten som stöder M
 Gå till jobbhistoriken för datahantering och dess utförandedetaljer för att hitta felet när du försöker importera en bankutdragsfil. Felet kan hjälpa dig genom att peka på utdraget, saldot eller utdragsraden. Det ger dig emellertid troligtvis inte tillräckligt med information för att hjälpa dig att identifiera det fält eller element som orsakat problemet.
 
 ## <a name="what-are-the-differences"></a>Vilka skillnader finns det?
-Jämför Layoutdefinitionen bank-fil till Microsoft Dynamics 365 operationer importen definition och anteckna skillnaderna i fält och element. Jämför bankutdragsfilen relaterade exemplet Dynamics 365 för operationer. Skillnader i ISO20022-filerna ska vara lätt att se.
+Jämför definitionen av bankfilens layout med Microsoft Dynamics 365 for Operations-importdefinitionen, och notera eventuella skillnader i fält och element. Jämför bankutdragsfilen med relaterad Microsoft Dynamics 365 for Operations-exempelfil. Skillnader i ISO20022-filerna bör vara lätta att se.
 
 ## <a name="transformations"></a>Transformeringar
 Normalt måste ändringen utföras i en av de tre transformeringarna. Varje transformering skrivs för en viss standard.
@@ -42,7 +45,7 @@ Normalt måste ändringen utföras i en av de tre transformeringarna. Varje tran
 | Resursnamn                                         | Filnamn                          |
 |-------------------------------------------------------|------------------------------------|
 | BankStmtImport\_BAI2CSV\_till\_BAI2XML\_xslt            | BAI2CSV-to-BAI2XML.xslt            |
-| BankStmtImport\_ISO20022XML\_till\_avstämning\_xslt | ISO20022XML-to-Reconciliation.xslt |
+| BankStmtImport\_ISO20022XML\_till\_Reconciliation\_xslt | ISO20022XML-to-Reconciliation.xslt |
 | BankStmtImport\_MT940TXT\_till\_MT940XML\_xslt          | MT940TXT-to-MT940XML.xslt          |
 
 ## <a name="debugging-transformations"></a>Felsökningtransformeringar
@@ -68,7 +71,7 @@ Mer information finns på <https://msdn.microsoft.com/en-us/library/ms255605.asp
 5.  Ange inmatningen på platsen för bankutdragsfilen.
 6.  Definiera en plats och ett filnamn för utdatan.
 7.  Ange erforderliga brytpunkter.
-8.  Klicka på på-menyn **XML**&gt;**Starta felsökning XSLT-**.
+8.  I menyn klickar du på **XML** &gt; **Starta XSLT-felsökning**.
 
 ### <a name="format-the-xslt-output"></a>Formatera XSLT-utdata
 
@@ -76,7 +79,7 @@ När transformeringen körs skapas en utdatafil som du kan visa i Visual Studio.
 
 ### <a name="adjust-the-transformation"></a>Justera transformeringen
 
-Justera transformeringen för att få lämpligt fält eller element i bankutdragsfilen. Mappa fältet eller elementet till lämplig Dynamics 365 för operationer element.
+Justera transformeringen för att få lämpligt fält eller element i bankutdragsfilen. Mappa sedan detta fält eller element med lämpligt Microsoft Dynamics 365 for Operations-element.
 
 ### <a name="debitcredit-indicator"></a>Debet-/kreditindikator
 
@@ -87,7 +90,7 @@ Ibland kan debet importeras som kredit, och kredit kan importeras som debet. Fö
 -   MT940XML-to-Reconcilation.xslt GetCreditDebitIndicator-mall
 
 ## <a name="examples-of-bank-statement-formats-and-technical-layouts"></a>Exempel på bankutdragsformat och tekniska layouter
-Följande tabell anger exempel på tekniska layoutdefinitioner för importfiler för avancerade bankavstämningar, samt tre relaterade bankutdragsexempelfiler. Du kan hämta till exempel filer och tekniska layouter här: https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/exofbankstfotechlayouts  
+Följande tabell anger exempel på tekniska layoutdefinitioner för importfiler för avancerade bankavstämningar, samt tre relaterade bankutdragsexempelfiler. Du kan hämta exempelfiler och tekniska layouter här: https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/exofbankstfotechlayouts  
 
 
 | Teknisk layoutdefinition                             | Bankutdragsexempelfil          |
@@ -95,6 +98,8 @@ Följande tabell anger exempel på tekniska layoutdefinitioner för importfiler 
 | DynamicsAXMT940Layout                                   | MT940StatementExample                |
 | DynamicsAXISO20022Layout                                | ISO20022StatementExample             |
 | DynamicsAXBAI2Layout                                    | BAI2StatementExample                 |
+
+
 
 
 

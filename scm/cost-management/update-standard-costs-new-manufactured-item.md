@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="update-standard-costs-for-a-new-manufactured-item"></a>Uppdatera standardkostnader för en ny tillverkad artikel
 
+[!include[banner](../includes/banner.md)]
+
+
 Det här avsnittet ger vägledning om hur du uppdaterar standardkostnader för en ny tillverkad artikel. 
 
 I följande riktlinjer förutsätts det att du bara använder tvåversionssättet när du vill uppdatera standardkostnader. I den här metoden, en kostnadsredovisningsversion innehåller standardkostnader som ursprungligen angetts för den frysta perioden, och den andra kostnadsredovisningsversion innehåller de inkrementella uppdateringarna som hör till de nya tillverkade artiklarna. De stegvisa uppdateringarna registreras som kostnadsposter i den andra kostnadsversionen, och aktiveras sedan slutligen. Tvåversionssättet innebär att du definierar en andra kostnadsredovisningsversion. Här följer riktlinjerna om hur du definierar denna kostnadsredovisningsversion:
@@ -47,6 +50,8 @@ Följ dessa steg för att lägga till tillverkade artiklar under den låsta peri
 5.  Använd **Inställningar för kostnadsredovisningsversion**-sidan för att ändra spärrflaggan för att tillåta aktivering av de väntande kostnadsposterna i den andra kostnadsredovisningsversionen.
 6.  Använd **Aktivera priser**-sidan (som du öppnar från sidan **Underhåll av kostnadsredovisningsversion**) för att aktivera alla väntande kostnadsposter i den andra kostnadsredovisningsversionen. Du kan även aktivera de väntande kostnadsposterna för enskilda artiklar genom att klicka på knappen **Aktivera** på sidan **Artikelpris**.
 7.  För att förhindra ytterligare dataunderhåll, använd **Inställningar för kostnadsredovisningsversion**-sidan för att ändra spärrflaggorna i den andra kostnadsredovisningsversionen. Spärrprinciperna förhindrar registrering av nya pågående kostnader samt aktivering av pågående kostnader.
+
+
 
 
 

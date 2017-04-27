@@ -1,5 +1,5 @@
 ---
-title: "Översikt för Lean manufacturing"
+title: "Lean manufacturing-översikt"
 description: "Denna artikel ger en översikt och beskrivning av lean manufacturing-funktioner i Microsoft Dynamics AX."
 author: YuyuScheller
 manager: AnnBe
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="lean-manufacturing-overview"></a>Översikt för Lean manufacturing
+# <a name="lean-manufacturing-overview"></a>Lean manufacturing-översikt
+
+[!include[banner](../includes/banner.md)]
+
 
 Denna artikel ger en översikt och beskrivning av lean manufacturing-funktioner i Microsoft Dynamics AX.
 
@@ -49,7 +52,7 @@ Du skapar en lean manufacturing-grund genom att modellera tillverknings- och log
 
 ## <a name="using-kanbans-to-signal-demand-requirements"></a> Använda kanban för att signalera efterfrågebehov
 Ett hämtningssystem producerar bara varor när varorna behövs. Denna metod minskar ledtiderna för leveranser och överflödigt lager. Du kan använda kanban att planera, följa och bearbeta krav som baseras på produktionsflöden. Om du vill skapa ett kanban-ramverk skapar du kanban-regler som definierar när kanban skapas och hur behoven uppfylls. Du kan skapa två typer av kanban-regler. Tillverkningsregler skapar kanban-jobb för processer och kanban-regler för tillbakadragande skapar kanban-jobb för överföringar. Du kan ställa in betalningstyper på lagerpåfyllnadsstrategier:
--   Kanban-regler av typen **Fast kvantitet** är relaterade till ett fast antal hanteringsenheter, vilket innebär att antalet aktiva kanban är konstant. När alla produkter från en Kanban förbrukas och hantera enheter manuellt är tomma, skapas en ny kanban av samma typ.. Du kan beräkna optimal kanban-kvantiteter och produktkvantiteter som används när du skapar fast antal kanban-regler. Beräkningen tar hänsyn till kontoprognosen, faktisk efterfrågan från öppna order, ledtid för att fylla på artiklar och historisk efterfrågan.
+-   Kanban-regler av typen **Fast kvantitet** är relaterade till ett fast antal hanteringsenheter, vilket innebär att antalet aktiva kanban är konstant. När alla produkter från en kanban förbrukas och hanteringsenheter töms manuellt, skapas en ny kanban av samma typ. När du skapar fasta kanban-regler för kvantitet kan du beräkna de optimala kanban- och produktkvantiteter som används. Beräkningen tar hänsyn till kontoprognosen, faktisk efterfrågan från öppna order, ledtid för att fylla på artiklar och historisk efterfrågan.
 -   Kanban-regler av typen **Schemalagda** fyller på behov som beräknas från huvudplaneringen. Huvudplaneringen genererar planerade kanban som kan kopplas till kanban.
 -   Kanban-regler av typen **Händelse** fyller på behov som kommer från försäljningsorderrader, rader i produktionsstrukturlista, kanban-rader och minimilagerinställningar. När händelse-kanban skapas kopplas de till källbehoven.
 
@@ -76,6 +79,8 @@ Kanban-jobb är helt integrerade med aktuella processer för lagertransaktioner 
 Dessutom stöder lean manufacturing inköps- och faktureringsprocesser för tjänster som är relaterade till aktiviteter som utförs av underleverantörer.
 -   Du kan tilldela inköpsavtalsrader och tjänster för aktiviteter som utförs av underleverantörer.
 -   Du kan skapa periodiska inköpsorder och mottagningsavier för att stödja inköp och fakturering av tjänsterna.
+
+
 
 
 

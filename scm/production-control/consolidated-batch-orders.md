@@ -29,6 +29,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="consolidated-batch-orders"></a>Konsoliderade batchorder
 
+[!include[banner](../includes/banner.md)]
+
+
 Det här avsnittet beskriver begreppet konsoliderade batchorder.
 
 En bulkartikel som produceras anses vara en överordnad artikel, och en packad artikel anses vara en underordnad artikel. Relationen mellan bulkartikeln och den bokförda artikeln uttrycks i en bulkartikelkonvertering. Den här bulkartikelkonverteringen definieras på själva bulkartikeln.  
@@ -41,6 +44,8 @@ En konsoliderad batchorder kan innehålla en kombination av följande order:
 -   Flera bulkorder och flera packade order
 -   Flera bulkorder och en enskild packad order
 -   Enbart packade order
+
+
 
 
 

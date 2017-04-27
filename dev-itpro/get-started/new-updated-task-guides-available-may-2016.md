@@ -1,6 +1,6 @@
 ---
-title: "Nya eller uppdaterade aktiviteter stödlinjerna (maj 2016)"
-description: "Artikeln innehåller nya eller uppdaterade uppgiften riktlinjer som släppts för Microsoft (kan 2016 - företagsprofiler) APQC enhetliga bibliotek för Microsoft Dynamics AX. Inge nytt Komma igång-biblioteket gavs ut."
+title: Nya eller uppdaterade uppgiftsguider (maj 2016)
+description: "Den har artikeln anger nya eller uppdaterade uppgiftsguider som släpptes för Microsoft APQC Unified Library för Microsoft Dynamics AX (maj 2016 - alla språk). Inge nytt Komma igång-biblioteket gavs ut."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,14 +24,17 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="new-or-updated-task-guides-may-2016"></a>Nya eller uppdaterade aktiviteter stödlinjerna (maj 2016)
+# <a name="new-or-updated-task-guides-may-2016"></a>Nya eller uppdaterade uppgiftsguider (maj 2016)
 
-Artikeln innehåller nya eller uppdaterade uppgiften riktlinjer som släppts för Microsoft (kan 2016 - företagsprofiler) APQC enhetliga bibliotek för Microsoft Dynamics AX. Inge nytt Komma igång-biblioteket gavs ut. 
+[!include[banner](../includes/banner.md)]
 
-<a name="task-guides-in-the-may-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>[]()Uppgiften får i den (maj 2016 - företagsprofiler) APQC enhetliga bibliotek för Microsoft Dynamics AX
+
+Den har artikeln anger nya eller uppdaterade uppgiftsguider som släpptes för Microsoft APQC Unified Library för Microsoft Dynamics AX (maj 2016 - alla språk). Inge nytt Komma igång-biblioteket gavs ut. 
+
+<a name="task-guides-in-the-may-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>[]()Uppgiftsguider i (maj 2016 - alla språk) APQC Unified Library för Microsoft Dynamics AX
 ------------------------------------------------------------------------------------------------
 
-(Maj 2016) APQC enhetliga bibliotek innehåller instruktioner som är avsedda att användas i hjälpen om Microsoft Dynamics AX maj 2016 uppgiften och i Microsoft Dynamics AX februari 2016. Lokaliserade versioner av uppgiften som släpptes (februari 2016) APQC Unified-biblioteket finns i biblioteket. Mer information om hur du ansluter hjälpsystemet till ett bibliotek av aktivitet guide finns [Kom igång med](help-overview.md). **Anmärkning:** asterisker (**\***) bredvid rubriken för en process Affärsmodelleraren (BPM) raden anger handbok för den affärsprocessen uppgiften skapades för Dynamics AX maj 2016 och stöds inte i tidigare versioner av Microsoft Dynamics AX.
+(Maj 2016) APQC Unified Library innehåller uppgiftsguider som är avsedda att användas för Hjälp med Microsoft Dynamics AX (maj 2016) – uppdatering och Microsoft Dynamics AX (utgåva februari 2016). Lokaliserade versioner av uppgiftsguider som frisläpptes i (februari 2016) APQC Unified Library är tillgängliga i det här biblioteket. Mer information om hur du ansluter Hjälp-systemet till ett uppgiftsguidebibliotek hittar du i [Komma igång med Hjälp](help-overview.md). **Obs!** En asterisk (**\***) bredvid rubriken för en affärsprocessmodellerare (BPM)-rad visar att uppgiftsguiden för den affärsprocessen skapades för Dynamics AX maj 2016-uppdateringen och inte stöds i tidigare versioner av Microsoft Dynamics AX.
 
 ### <a name="countryregion-functionality"></a>Funktionsland/-region
 
@@ -65,7 +68,7 @@ Artikeln innehåller nya eller uppdaterade uppgiften riktlinjer som släppts fö
 | ER utformar en konfiguration för rapportgenerering i OPENXML-format         | Globalt         |
 | ER generera elektroniska handlingar för betalningar med en formatkonfiguration | Globalt         |
 | ER importera en konfiguration från Lifecycle Services                          | Globalt         |
-| **\***ER Select service provider                                           | Globalt         |
+| **\***ER Välja tjänsteleverantör                                           | Globalt         |
 | ER uppgraderar ditt format genom att anta den nya basversionen för det formatet      | Globalt         |
 | ER överför en konfiguration till Lifecycle Services                          | Globalt         |
 
@@ -126,7 +129,7 @@ Artikeln innehåller nya eller uppdaterade uppgiften riktlinjer som släppts fö
 | BPM-rad                                                 | Land/region |
 |----------------------------------------------------------|----------------|
 | Skapa en ny produkt                                     | Globalt         |
-| Skapa... \financial-dimensions\dimension-based-konfigurationer                    | Globalt         |
+| Skapa ..\financial-dimensions\dimension-baserade konfigurationer                    | Globalt         |
 | Skapa fördefinierade produktvarianter                       | Globalt         |
 | Skapa urvalskriterier för försäljningspris                    | Globalt         |
 | Ange order för konfigurerbara produkter                   | Globalt         |
@@ -176,22 +179,24 @@ Artikeln innehåller nya eller uppdaterade uppgiften riktlinjer som släppts fö
 | BPM-rad                                                            | Land/region |
 |---------------------------------------------------------------------|----------------|
 | Konfigurera påfyllnadsbearbetning                                           | Globalt         |
-| **\***Rapportera som färdigt till en icke registreringsskylt kontrollerad plats | Globalt         |
+| **\***Rapportera som färdig till en ej registreringsskyltstyrd plats | Globalt         |
 | Ställa in en min-max process för lagerpåfyllnad                              | Globalt         |
 | Ställa in skapande av behållare                                             | Globalt         |
 | Ställa in manuell förpackning                                               | Globalt         |
 | Ställa in transportbegränsningar för en artikel                       | Globalt         |
-| **\***Set up warehouse work policies                                | Globalt         |
+| **\***Konfigurera policyer för lagerarbete                                | Globalt         |
 
 
 
 <a name="see-also"></a>Se även
 --------
 
-[Ny uppgift får (februari 2016)](new-task-guides-available-february-2016.md)
+[Nya uppgiftguider tillgängliga (februari 2016)](new-task-guides-available-february-2016.md)
 
-[Ny eller uppdaterad uppgift får (augusti 2016)](new-updated-task-guides-available-august-2016.md)
+[Nya eller uppdaterade uppgiftsguider (augusti 2016)](new-updated-task-guides-available-august-2016.md)
 
-[Ny eller uppdaterad uppgift får (2016 November)](new-task-guides-november-2016.md)
+[Nya eller uppdaterade uppgiftsguider (november 2016)](new-task-guides-november-2016.md)
+
+
 
 

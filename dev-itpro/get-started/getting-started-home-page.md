@@ -1,6 +1,6 @@
 ---
-title: "Var ska jag börja"
-description: "Börja här inbyggda snabbt och lär dig Microsoft Dynamics 365 för operationer användargränssnitt."
+title: "Här börjar du"
+description: "Börja här för att integrera snabbt och lära dig användargränssnittet för Microsoft Dynamics 365 for Operations UI."
 eauthor: sericks007
 manager: AnnBe
 ms.date: 2015-12-11 15 - 19 - 40
@@ -26,44 +26,44 @@ ms.lasthandoff: 03/30/2017
 
 ---
 
-# <a name="where-to-start"></a>Var ska jag börja
+# <a name="where-to-start"></a>Här börjar du
 
-Börja här inbyggda snabbt och lär dig Microsoft Dynamics 365 för operationer användargränssnitt.
+Börja här för att integrera snabbt och lära dig användargränssnittet för Microsoft Dynamics 365 for Operations UI.
 
-## <a name="onboarding"></a>Inledande
-Följande resurser innehåller en översikt över hur du arbetar med din partner för att få onboarded till Dynamics 365 för operationer och hur du använder Dynamics 365 för operationer Lifecycle Services. 
+## <a name="onboarding"></a>Integration
+Följande resurser innehåller en översikt över hur du arbetar med din partner för att integrera Dynamics 365 for Operations och hur du använder Lifestyle Services för Dynamics 365 for Operations. 
 
-- [Microsoft FastTrack Dynamics 365-översikt](/dynamics365/operations/get-started/fasttrack-dynamics-365-overview) 
-- [Sign up for a subscription](../dev-tools/sign-up-preview-subscription.md) 
-- [Lifecycle Services (LCS) för Microsoft Dynamics 365 för operationer kunder](../lifecycle-services/lcs-works-lcs.md) 
-- [Hur kunder som har köpt Microsoft Dynamics 365 för operationer med en molnbaserad får den lokala versionen av Dynamics 365 för operationer 2012](../deployment/csp-download-customersource.md)
+- [Microsoft FastTrack for Dynamics 365-översikt](/dynamics365/operations/get-started/fasttrack-dynamics-365-overview) 
+- [Registrera ett abonnemang](../dev-tools/sign-up-preview-subscription.md) 
+- [Lifecycle Services (LCS) för Microsoft Dynamics 365 for Operations-kunder](../lifecycle-services/lcs-works-lcs.md) 
+- [Hur kunder som har köpt Microsoft Dynamics 365 for Operations via en molntjänstleverantör kan få den lokala versionen av Dynamics 365 for Operations 2012](../deployment/csp-download-customersource.md)
 
 ## <a name="user-interface"></a>Användargränssnitt
-Följande resurser innehåller information om Dynamics 365 operationer användarupplevelse. 
--   [Vilka finns Nyheter i Dynamics 365 operationer användarupplevelse (Office Mix)](https://mix.office.com/watch/1ohsrrpsd02e1)
+Följande resurser ger information om den användarupplevelsen av Dynamics 365 for Operations. 
+-   [Nyheter i Dynamics 365 for Operations-användarupplevelsen (Office Mix)](https://mix.office.com/watch/1ohsrrpsd02e1)
 -   [Anpassa användarmöjligheter](/dynamics365/operations/get-started/personalize-user-experience)
 -   [Konfigurera och filtrera arbetsytor](/dynamics365/operations/get-started/configure-filter-workspaces)
--   [Navigation search](/dynamics365/operations/get-started/navigation-search)
+-   [Navigeringsökning](/dynamics365/operations/get-started/navigation-search)
 -   [Åtgärdssökning](/dynamics365/operations/get-started/action-search)
--   [Keyboard shortcuts](/dynamics365/operations/get-started/shortcut-keys)
--   [Display pages side-by-side using the Open in New Window icon](/dynamics365/operations/get-started/display-pages-side-by-side)
--   [Advanced filtering and query options](/dynamics365/operations/get-started/advanced-filtering-query-options)
--   [Dynamics 365 operationer klient FAQ](/dynamics365/operations/get-started/client-faq)
--   [Change the banner or logo (Task guide)](http://ax.help.dynamics.com/en/wiki/change-the-banner-or-logo/)
+-   [Kortkommandon](/dynamics365/operations/get-started/shortcut-keys)
+-   [Visa sidor sida vid sida med ikonen Öppna i nytt fönster](/dynamics365/operations/get-started/display-pages-side-by-side)
+-   [Avancerade filtrerings- och frågealternativ](/dynamics365/operations/get-started/advanced-filtering-query-options)
+-   [Frågor och svar för Dynamics 365 for Operations-klienten](/dynamics365/operations/get-started/client-faq)
+-   [Ändra webbannonsen eller logotypen (uppgiftsguide)](http://ax.help.dynamics.com/en/wiki/change-the-banner-or-logo/)
 
 ## <a name="help-system"></a>Hjälpsystem
 I följande resurser finns en översikt över hjälpsystemet och anvisningar om hur du visar fältbeskrivningar.
 
--   [Getting started with Help](help-overview.md)
--   [Connect the Help system](help-connect.md)
+-   [Komma igång med Hjälpavsnittet](help-overview.md)
+-   [Ansluta hjälpsystemet](help-connect.md)
 -   [Information om hur du visar eller exporterar fältbeskrivningar](/dynamics365/operations/get-started/view-export-field-descriptions)
--   [Hjälpen för Dynamics 365 för operationer (Detta blad)](https://mbs.microsoft.com/customersource/Global/AX/learning/fact-sheets/msdaxhelpsystemfactsheet)
+-   [Hjälpsystem för Dynamics 365 for Operations (faktablad)](https://mbs.microsoft.com/customersource/Global/AX/learning/fact-sheets/msdaxhelpsystemfactsheet)
 
-### <a name="task-recordings-and-task-guides"></a>Inspelningar för aktiviteten och aktivitet stödlinjer
+### <a name="task-recordings-and-task-guides"></a>Uppgiftsinspelningar och uppgiftshandböcker
 
-Uppgiftsinspelning är en Dynamics 365 för åtgärder som du kan använda för att registrera de åtgärder du kan vidta i användargränssnittet (UI). När du skapar en *uppgiftsregistrering* registreras alla händelser som utförs mot servern när du utför dem i användargränssnittet. Dessa händelser omfattar tillägg av värden, ändring av inställningar och borttagning av data. *Uppgiftsguiden* är en kontrollerad, guidad, interaktiv upplevelse som leder dig genom stegen för en uppgiftregistrering. Du kan öppna (eller *spela upp*) en uppgiftsguide från hjälpsystemet.
+Uppgiftsinspelaren är ett verktyg i Dynamics for Operations som du använder för att registrera de åtgärder som du utför i användargränssnittet (UI). När du skapar en *uppgiftsregistrering* registreras alla händelser som utförs mot servern när du utför dem i användargränssnittet. Dessa händelser omfattar tillägg av värden, ändring av inställningar och borttagning av data. *Uppgiftsguiden* är en kontrollerad, guidad, interaktiv upplevelse som leder dig genom stegen för en uppgiftregistrering. Du kan öppna (eller *spela upp*) en uppgiftsguide från hjälpsystemet.
 -   [Ansluta hjälpsystemet](help-connect.md)
--   [Uppgiftsinspelning i Dynamics 365 för operationer](../user-interface/task-recorder.md)
+-   [Uppgiftsregistrerare i Dynamics 365 for Operations](../user-interface/task-recorder.md)
 -   [Skapa dokumentation eller utbildning med uppgiftsregistreringar](../user-interface/task-recorder.md)
 -   [Nya uppgiftguider tillgängliga (februari 2016)](new-task-guides-available-february-2016.md)
 
@@ -71,12 +71,12 @@ Uppgiftsinspelning är en Dynamics 365 för åtgärder som du kan använda för 
 <a name="see-also"></a>Se även
 --------
 
-[Skapa nya bibliotek utbildning för Dynamics 365 för operationer inom Lifecycle Services med Uppgiftsregistering (extern länk)](https://docs.com/mufife/163372c6-f366-4c5a-94fa-93e2c25f878a/creating-new-training-libraries-for-dynamics-ax)
+[Skapa nya utbildningsbibliotek för Dynamics 365 for Operations inom Lifestyle Services med hjälp av uppgiftsinspelaren (extern länk)](https://docs.com/mufife/163372c6-f366-4c5a-94fa-93e2c25f878a/creating-new-training-libraries-for-dynamics-ax)
 
-[Ny uppgift får (februari 2016)](new-task-guides-available-february-2016.md)
+[Nya uppgiftguider tillgängliga (februari 2016)](new-task-guides-available-february-2016.md)
 
-[Ny eller uppdaterad uppgift får (maj 2016)](new-updated-task-guides-available-may-2016.md)
+[Nya eller uppdaterade uppgiftsguider (maj 2016)](new-updated-task-guides-available-may-2016.md)
 
-[Ny eller uppdaterad uppgift får (2016 November)](new-task-guides-november-2016.md)
+[Nya eller uppdaterade uppgiftsguider (november 2016)](new-task-guides-november-2016.md)
 
 

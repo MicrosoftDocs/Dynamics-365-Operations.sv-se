@@ -28,18 +28,18 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="connect-the-help-system"></a>Ansluta hjälpsystemet
 
-Det här avsnittet beskrivs komponenterna i hjälpsystemet för Microsoft Dynamics 365 för operationer. En översikt över hur du skapar anpassade hjälpen och den ger en översikt över hur du ansluter komponenterna. 
+Det här avsnittet innehåller komponenten för hjälpsystemet för Microsoft Dynamics 365 for Operations. Det ger en översikt över hur du skapar ansluter dessa komponenter en sammanfattning av hur du skapar anpassad hjälp. 
 
 <a name="help-architecture"></a>Hjälparkitektur
 -----------------
 
-Följande illustration visar delarna i Dynamics 365 för operationer i hjälpen för. Hjälpsystemet i produkten hämtar artiklarna från Dynamics 365 för operationer på https://docs.microsoft.com samt uppgift guider lagras i Affärsmodelleraren processen Lifecycle Services (LCS). 
-**Anmärkning:** funktionerna visas i bilden med en asterisk (\*) är planerade men ännu inte är tillgängliga. [![Help architecture](./media/help-architecture.png)](./media/help-architecture.png)
+Följande bild visar delarna i hjälpsystemet för Dynamics 365 for Operations. Produktens interna hjälpsystem hämtar artiklar från hjälpwikin för Dynamics 365 for Operations på https://docs.microsoft.com, samt uppgiftsguider som lagras i Affärsprocessmodelleraren i Microsoft Dynamics Lifecycle Services (LCS). 
+**Obs!** Funktionerna som anges med en asterisk i diagrammet (\*) planeras, men ännu är inte tillgängliga. [![Hjälparkitektur](./media/help-architecture.png)](./media/help-architecture.png)
 
-## <a name="connecting-the-help-system"></a>Ansluta hjälpsystemet
-Med hjälp av den **systemparametrar** kan administratörer ansluta de olika delarna i hjälpsystemet för en implementering. [![Systemparameterformuläret med hjälp inställningar](./media/system-parameters_ops-1024x437.png)](./media/system-parameters_ops.png) på de **systemparametrar** sidan, gör du följande:
+## <a name="connecting-the-help-system"></a>Ansluta hjälpsystemet
+Med hjälp av sidan **Systemparametrar** ansluter systemadministratörer delar av hjälpsystemet för en implementering [![Formulär för systemparametrar med hjälpinställningar](./media/system-parameters_ops-1024x437.png)](./media/system-parameters_ops.png) Gå till sidan **Systemparametrar** och följ dessa steg:
 
-1.  **Viktigt:** första gången du öppnar den **hjälp** fliken måste du ansluta till Lifecycle Services. Du klickar du på länken mitt i formuläret vänta tills anslutningen, Stäng dialogrutan och klicka sedan på **OK** till den **systemparametrar** sida. [![Når LCS](./media/connect-to-lcs-crop-1024x365.png "når LCS")](./media/connect-to-lcs-crop.png)
+1.  **Viktigt:** Första gången du öppnar fliken **Hjälp** måste du ansluta till Lifecycle Services. Se till att klicka på länken i mitten av formuläret, vänta på anslutningen, stäng dialogrutan och klicka sedan på **OK** för att nå sidan **Systemparametrar**.[![Anslut till LCS](./media/connect-to-lcs-crop-1024x365.png "Anslut till LCS")](./media/connect-to-lcs-crop.png)
 2.  Välj Lifecycle Services-projektet att ansluta till.
 3.  Välj BPM-biblioteken (inom det valda projektet) att hämta uppgiftsregistreringar från.
 4.  Välj BPM-bibliotekens visningsordning. Detta bestämmer i vilken ordning som uppgiftsregistreringar från biblioteken visas i fönstret **Hjälp**.
@@ -48,23 +48,23 @@ När du har slutfört de här stegen kan du öppna fönstret **Hjälp** och klic
 
 ### <a name="showing-translated-task-guides"></a>Visa översatta uppgiftsguider
 
-Översatta aktiviteter stödlinjerna levererades först i maj 2016 APQC enhetliga bibliotek och komma igång-biblioteket. Om du vill se hjälpen för den lokaliserade uppgiftsguiden i Dynamics 365 for Operations ska du se till att är ansluten till maj-biblioteket. Det språk som utgångspunkt för aktiviteten visas i kontrolleras för varje användare av språkinställningar under **alternativ**&gt;**inställningar**. **Obs!** Även om många uppgiftsguider har översatts, visas inte namnen på de översatta uppgiftsguiderna i Dynamics 365 for Operations-klienten för närvarande. Dessutom finns bara som gavs ut i februari 2016 guiderna uppgiften i översättning i maj biblioteket. Vi kommer att släppa ett uppdaterat bibliotek med fler översättningar.
+Översätta uppgiftsguider medföljde i för första gången i APQC Unified Library i maj 2016, samt i Komma igång-biblioteket. Om du vill se hjälpen för den lokaliserade uppgiftsguiden i Dynamics 365 for Operations ska du se till att är ansluten till maj-biblioteket. Språket i uppgiftsguiden styrs av varje användare via språkinställningarna under **Alternativ** &gt; **Inställningar**. **Obs!** Även om många uppgiftsguider har översatts, visas inte namnen på de översatta uppgiftsguiderna i Dynamics 365 for Operations-klienten för närvarande. Dessutom är enbart de uppgiftsguider som släpptes i februari 2016 tillgängliga i översättningen i maj-biblioteket. Vi kommer att släppa ett uppdaterat bibliotek med fler översättningar.
 
 -   Om en uppgiftsguide har översatts visas all text i guiden på det valda språket när du öppnar den.
 -   Om en uppgiftsguide ännu inte har översatts visas enbart en del text i guiden (text på reglage) på det valda språket när du öppnar den.
 
 ## <a name="creating-custom-help"></a>Skapa anpassad hjälp
-Du kan skapa anpassad hjälp för din Dynamics 365 for Operations-implementering genom att skapa uppgiftsinspelningar som speglar din implementering och spara dem i ett bibliotek för LCS-arbetsprocesser. För partners, om du främjar ett bibliotek som ett företagsbibliotek och inkluderar det i en lösning blir det tillgängligt även för dina kunder. Du kan också göra en kopia av det globala biblioteket APQC Unified och sedan öppna din kopia, öppna uppgiftsinspelningar från den, ändra dem och spara inspelningarna med dina ändringar. Mer information finns i [hur du skapar en uppgift inspelning ska användas som dokumentation och utbildning](../user-interface/task-recorder.md).
+Du kan skapa anpassad hjälp för din Dynamics 365 for Operations-implementering genom att skapa uppgiftsinspelningar som speglar din implementering och spara dem i ett bibliotek för LCS-arbetsprocesser. För partners, om du främjar ett bibliotek som ett företagsbibliotek och inkluderar det i en lösning blir det tillgängligt även för dina kunder. Du kan också göra en kopia av det globala biblioteket APQC Unified och sedan öppna din kopia, öppna uppgiftsinspelningar från den, ändra dem och spara inspelningarna med dina ändringar. Mer information finns i avsnittet [Skapa en uppgiftsregistrering att använda som dokumentation eller utbildning](../user-interface/task-recorder.md).
 
 <a name="see-also"></a>Se även
 --------
 
-[Help overview](help-overview.md)
+[Hjälpöversikt](help-overview.md)
 
-[Översikt över registrerade uppgifter](../user-interface/task-recorder.md)
+[Uppgiftsregistreringsöversikt](../user-interface/task-recorder.md)
 
 [Skapa en uppgiftsinspelning som ska användas som dokumentation eller utbildning](../user-interface/task-recorder-training-docs.md)
 
-[Skapa nya bibliotek utbildning för Dynamics 365 för operationer inom Lifecycle Services med Uppgiftsregistering (extern länk)](https://docs.com/mufife/163372c6-f366-4c5a-94fa-93e2c25f878a/creating-new-training-libraries-for-dynamics-ax)
+[Skapa nya utbildningsbibliotek för Dynamics 365 for Operations inom Lifestyle Services med hjälp av uppgiftsinspelaren (extern länk)](https://docs.com/mufife/163372c6-f366-4c5a-94fa-93e2c25f878a/creating-new-training-libraries-for-dynamics-ax)
 
 

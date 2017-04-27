@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="audit-policy-rules"></a>Regler för granskningspolicy
 
+[!include[banner](../includes/banner.md)]
+
+
 Du kan använda granskningsprinciper för att utvärdera utgiftsrapporter, leverantörsfakturor och inköpsorder för att säkerställa att de överensstämmer med policyregler som du skapar. Alla regler som är associerade med en granskningspolicy körs i batchläge enligt en tidsplan som du anger.  Varje policyregel är en instans av en policyregeltyp. Endast en policyregel i taget kan gälla för en policyregeltyp. 
 
 <a name="queries-and-query-types"></a>Frågor och frågetyper
@@ -97,5 +100,7 @@ Alla policyregler för en viss granskningspolicy delar samma batchparametrar och
 --------
 
 [Överträdelser av granskningspolicyn](audit-policy-violations-cases.md)
+
+
 
 

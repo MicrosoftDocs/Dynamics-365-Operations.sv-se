@@ -1,6 +1,6 @@
 ---
-title: "Ställa in ett bonusprogram kund"
-description: "I det här avsnittet beskrivs hur du ställer in ett bonusprogram. Bonusprogram kan öka kundlojaliteten genom att kunderna belönas för att köpa produkter i dina butiker. I Microsoft Dynamics 365 för åtgärder som kan du ställa in enkla eller komplexa bonusprogram som gäller hela din återförsäljare juridiska personer."
+title: "Ställa in ett kundbonusprogram"
+description: "I det här avsnittet beskrivs hur du ställer in ett bonusprogram. Bonusprogram kan öka kundlojaliteten genom att kunderna belönas för att köpa produkter i dina butiker. I Microsoft Dynamics 365 for Operations, kan du ställa in enkla eller komplexa bonusprogram som gäller för dina juridiska personer i en butikskanal."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 16201
 ms.assetid: f79559d2-bc2d-4f0b-a938-e7a61524ed80
 ms.search.region: global
@@ -25,9 +25,12 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="set-up-a-customer-loyalty-program"></a>Ställa in ett bonusprogram kund
+# <a name="set-up-a-customer-loyalty-program"></a>Ställa in ett kundbonusprogram
 
-I det här avsnittet beskrivs hur du ställer in ett bonusprogram. Bonusprogram kan öka kundlojaliteten genom att kunderna belönas för att köpa produkter i dina butiker. I Microsoft Dynamics 365 för åtgärder som kan du ställa in enkla eller komplexa bonusprogram som gäller hela din återförsäljare juridiska personer.
+[!include[banner](includes/banner.md)]
+
+
+I det här avsnittet beskrivs hur du ställer in ett bonusprogram. Bonusprogram kan öka kundlojaliteten genom att kunderna belönas för att köpa produkter i dina butiker. I Microsoft Dynamics 365 for Operations, kan du ställa in enkla eller komplexa bonusprogram som gäller för dina juridiska personer i en butikskanal.
 
 <a name="loyalty-features"></a>Bonusfunktioner
 ----------------
@@ -37,11 +40,11 @@ Du kan ställa in bonusprogram, så att de omfattar följande alternativ:
 -   Ställ in flera typer av belöningar som du erbjuder i dina bonusprogram och spåra deltagandet i dina bonusprogram.
 -   Ställa in bonusprogram för att identifiera de olika bonusersättningar som du erbjuder. Du kan inkludera bonusprogramnivåer om du vill erbjuda vara större och belöningar för kunder som butik vanligare eller håller mer pengar i din butik.
 -   Definiera intäktsregler för att identifiera aktiviteter som en kund måste utföra för att få bonus. Du kan också definiera befrielseregler att identifiera när och hur en kund kan lösa in belöningar.
--   Utfärda förmånskort från återförsäljare som deltar i programmen förmånskort och länka förmånskort till en eller flera bonusprogram som kunden kan ingå i. Du kan även koppla en kundpost för förmånskortet, så att kunden kan Fakturapool förmånspoäng från flera sidor och lösa in dem.
+-   Utfärda förmånskort från återförsäljare som deltar i dina bonusprogram och länka bonuskort till ett eller flera bonusprogram som kunden kan delta i. Du kan även länka en kundpost till bonuskortet så att kunden kan slå samman bonuspoäng från flera kort och lösa in dem.
 -   Justera förmånskort eller överför bonussaldon manuellt från ett kort till ett annat för att kunna lagra eller belöna en kund.
 
-## <a name="setting-up-loyalty-programs"></a>Ställa in ett bonusprogram
-Du måste skapa flera komponenter aktiverar förmånskort i Dynamics 365 för verksamhet – Retail. I bilden nedan visas lojalitetskomponenterna och hur de är relaterade till varandra. ![Processflöde för bonus](./media/loyaltyprocess.gif)
+## <a name="setting-up-loyalty-programs"></a>Ställa in bonusprogram
+Du måste ställa in flera komponenter om du vill aktivera bonusfunktionen i Dynamics 365 for Operations - Retail. I bilden nedan visas lojalitetskomponenterna och hur de är relaterade till varandra. ![Processflöde för bonus](./media/loyaltyprocess.gif)
 
 ## <a name="loyalty-components"></a>Bonuskomponenter
 I tabellen nedan beskrivs varje komponent och var den används i lojalitetinställningarna.
@@ -64,10 +67,12 @@ I tabellen nedan beskrivs de processer som måste köras för att skicka bonusko
 
 | Processnamn                         | Beskrivning                                                                                                                                                                                                                                                                                                                                                                                                    | Sidnamn                            |
 |--------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------|
-| 1050 (information om förmåner)           | Köra processen när du skickar lojalitet data från Dynamics 365 för operationer på de lista över butikerna. Det är en bra idé att tidsplanera den här processen om du vill köra den ofta, så att bonusdata överförs till alla butiker.                                                                                                                                                                                               | Distributionsschema                |
+| 1050 (information om förmåner)           | Kör den här processen för att skicka förmånskonfigurationsdata från Dynamics 365 for Operations till butikerna. Det är en bra idé att tidsplanera den här processen om du vill köra den ofta, så att bonusdata överförs till alla butiker.                                                                                                                                                                                               | Distributionsschema                |
 | Bearbeta förmånsscheman              | Kör den här processen för att associera förmånsscheman med de butikskanaler som förmånsschemat är tilldelat till. Den här processen kan schemaläggas för att köras som en batchprocess. Du måste köra den här processen, om du ändrar bonuskonfigurationsdata, till exempel bonusscheman, bonusprogram, eller bonusbelöningspoäng.                                                                                               | Bearbeta förmånsscheman              |
-| Bearbeta förmånstransaktioner offline | Kör den här processen om du vill uppdatera förmånskort för att inkludera transaktioner som har bearbetats offline. Proceduren gäller bara om den **offline tjäna** är markerad på det ** gemensamma parametrar ** sidan så att du kan vinna belöningarna offline.                                                                                                                                               | Bearbeta förmånstransaktioner offline |
+| Bearbeta förmånstransaktioner offline | Kör den här processen om du vill uppdatera förmånskort för att inkludera transaktioner som har bearbetats offline. Den här processen gäller bara om kryssrutan **Tjäna offline** är markerad på sidan **Gemensamma butiksparametrar** så att belöningar kan tjänas offline.                                                                                                                                               | Bearbeta förmånstransaktioner offline |
 | Uppdatera skikt för förmånskort            | Kör den här processen för att utvärdera kundens inkomstaktivitet mot nivåreglerna för ett bonusprogram och uppdatera kundens nivåstatus. Den här processen behövs bara om du ändrar nivåreglerna i bonusprogrammen och du vill tillämpa de uppdaterade reglerna retroaktivt för förmånskort som redan har utfärdats. Den här processen kan köras som en batchprocess eller för enskilda kort. | Uppdatera skikt för förmånskort            |
+
+
 
 
 

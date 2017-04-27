@@ -1,6 +1,6 @@
 ---
-title: "Rapporten strukturlista som färdig"
-description: "Den här artikeln innehåller information om rapportera en strukturlista som färdig."
+title: Rapportera strukturlistor som avslutade
+description: "Den här artikeln innehåller information om att rapportera strukturlistor som avslutade."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,16 +26,19 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="report-boms-as-finished"></a>Rapporten strukturlista som färdig
+# <a name="report-boms-as-finished"></a>Rapportera strukturlistor som avslutade
 
-Den här artikeln innehåller information om rapportera en strukturlista som färdig.
+[!include[banner](../includes/banner.md)]
 
-Sidorna **Rapportera som färdig** och **Max. antal rapporterat som färdigt** används för att rapportera strukturlistor (BOM) som färdiga. Rent konceptuellt är processen för rapportering av en strukturlista som färdig samma som processen för rapportering av en produktionsorder som färdig. Den här processen kan till exempel användas i processer för enkel montering och paketering där mer avancerade funktioner för tillverkningsorder inte krävs. Sidan **Rapportera som färdig** låter dig rapportera flera strukturlistor som färdiga samtidigt. Den **Max. Rapportera som färdig** på sidan kan du rapportera bara en Strukturlista som färdig i taget. Den **rapportera som färdig** sida tillgänglig från ett menyalternativ i Lagerhantering och båda sidorna är tillgängliga menyalternativen på de **frisläppta produkter** sida.
+
+Den här artikeln innehåller information om att rapportera strukturlistor som avslutade.
+
+Sidorna **Rapportera som färdig** och **Max. antal rapporterat som färdigt** används för att rapportera strukturlistor (BOM) som färdiga. Rent konceptuellt är processen för rapportering av en strukturlista som färdig samma som processen för rapportering av en produktionsorder som färdig. Den här processen kan till exempel användas i processer för enkel montering och paketering där mer avancerade funktioner för tillverkningsorder inte krävs. Sidan **Rapportera som färdig** låter dig rapportera flera strukturlistor som färdiga samtidigt. På sidan **Max. antal rapporterat som färdigt** kan du rapportera endast strukturlista i taget som färdig. Sidan **Rapportera som färdig** är tillgänglig från ett menyalternativ i Lagerhantering, och båda sidorna är tillgängliga som menyalternativ på sidan **Frisläppta produkter**.
 
 ## <a name="report-as-finished-page"></a>Sidan Rapportera som färdig
 Om du öppnar sidan **Rapportera som färdig** från en frisläppt produkt föreslår sidan att du rapporterar standardkvantiteten för standardlagret som färdig. Som standard visas den aktiva strukturlisteversionen, men du kan ändra strukturlisteversionen om det finns andra godkända versioner. På sidan kan du också ta bort poster och skapa nya poster för frisläppt produkter som ska rapporteras som färdiga. Klicka på menykommandot **Välj** för att använda en fråga för att välja produkter. Du kan manuellt bekräfta rapportering som färdig för de valda produkterna genom att klicka på **OK**. Alternativt kan du ställa in processen att köra i en batch. När processen för Rapportera som färdig har bekräftats genererar systemet en strukturlistejournal där bokföringen till lagret bearbetas. Den här journalen består av en radartikel för den färdiga produkten och en radartikel för varje strukturlisterad. Du kan kontrollera om journalen bokförs automatiskt eller om den lämnas öppen för ytterligare justeringar.
 
-## <a name="max-report-as-finished-page"></a>Max. Rapportera som färdig sida
+## <a name="max-report-as-finished-page"></a>Sidan Max. antal rapporterat som färdigt
 På sidan **Max. antal rapporterat som färdigt** anger varje strukturlisterad antalet enheter av produkten som kan rapporteras som färdig. Den här beräkningen baseras på den tillgängliga fysiska lagerbehållningen för varje materialrad. I följande exempel förbrukar en del av artikelnumret FG två delar av råmaterial RM10 och en del av råmaterial RM20. Eftersom det bara finns tio delar av RM10 i lager är den största kvantiteten av FG som kan rapporteras som färdig fem enheter. Det här värdet visas i fältet **Max. antal rapporterat som färdigt**.
 
 | Nivå | Artikelnummer | Kvantitet | Behållning | Max. Rapportera som färdig |
@@ -68,7 +71,7 @@ Följande tabell visar hur inställningen i fältet **Nedbrytning** påverkar hu
 | 0     | FG          | 3        |
 | 1     | COMP        | -3       |
 
-Som tabellen ovan visar bara artikelnumret dator betraktas som dras av i journalen. Artikelnumret RM som tillhör dator ned inte till journalraden och två tillgängliga enheter av dator beaktas inte. **Nedbrytning: Alltid**
+Som tabellen ovan visar betraktas bara artikelnumret COMP som avdraget i journalen. Artikelnumret RM, som ingår i COMP, är inte uppdelat till journalraden, och de två tillgängliga enheter av COMP beaktas inte. **Nedbrytning: Alltid**
 
 | Nivå | Artikelnummer | Kvantitet |
 |-------|-------------|----------|
@@ -84,5 +87,7 @@ I det här fallet bryts artikelnummer COMP ned till dess råmaterial, artikelnum
 | 1     | RM          | -1       |
 
 I det här fallet beaktas de två tillgängliga delarna av artikelnummer COMP. Men, eftersom tre delar av artikelnumret FG krävs, krävs också en del av artikelnummer RM för att tillverka den ytterligare enheten av COMP.
+
+
 
 

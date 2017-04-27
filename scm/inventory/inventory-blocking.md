@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="inventory-blocking"></a>Lagerspärr
 
+[!include[banner](../includes/banner.md)]
+
+
 Den här artikeln ger en översikt över lagerspärren, som är en del av kvalitetsinspektionsprocessen i Microsoft Dynamics AX. Du kan använda lagerspärr för att förhindra att artiklar bearbetas eller förbrukas.
 
 Du kan spärra lagerartiklar på fäljande sätt:
@@ -53,17 +56,19 @@ I följande exempel skapas en kvalitetsorder när en följesedel för inköpsord
 | En kvalitetsassociation anger att en kvalitetsorder måste genereras vid bokföringen av en följesedel för inköpsorder. Artikelsamplingsinställningar för kvalitetsordern anger att 10 % av inköpsorderradkvantiteten måste kontrolleras. Eftersom alternativet **Fullständig spärr** är markerad i artikelsamplingsinställningarna måste hela kvantiteten för inköpsorderraden vara spärrad vid inspektion oavsett kvantiteten som skickas för inspektion. | Följesedeln bokförs. | En kvalitetsorder genereras. 10 % av inköpsorderkvantiteten för artikeln skickas för inspektion. Den fullständiga kvantiteten på inköpsorderraden är spärrad. |
 
 ## <a name="blocking-items-by-using-inventory-status-blocking"></a>Spärra artiklar med lagerstatusspärr
-Du kan ange vilken status lagret blockerar status med hjälp av den **lagerspärr** parameter på den **lagrets status** sida.  Du kan inte använda lagerstatus som spärrstatus för tillverkningsorder, försäljningsorder, överföringsorder, utgående transaktioner eller projektintegrationer. För utgående arbete, använd artiklar med tillgänglig lagerstatus. Om det finns artiklar med statusen **bruten** och huvudplaneringen körs på dessa artiklar, betraktas artiklarna saknade, och lagret fylls automatiskt på.
+Du kan ange vilka sorters lagerstatus som är spärrar genom att använda parametern **Lagerspärr** på sidan **Lagerstatus**.  Du kan inte använda lagerstatus som spärrstatus för tillverkningsorder, försäljningsorder, överföringsorder, utgående transaktioner eller projektintegrationer. För utgående arbete, använd artiklar med tillgänglig lagerstatus. Om det finns artiklar med statusen **bruten** och huvudplaneringen körs på dessa artiklar, betraktas artiklarna saknade, och lagret fylls automatiskt på.
 
 
 
 <a name="see-also"></a>Se även
 --------
 
-[Skapa och underhåll inventeringen spärr (aktivitet guide)](https://ax.help.dynamics.com/en/wiki/create-and-maintain-an-inventory-blocking/)
+[Skapa och underhålla en lagerspärr (uppgiftsguide)](https://ax.help.dynamics.com/en/wiki/create-and-maintain-an-inventory-blocking/)
 
-[Quality management processes](quality-management-processes.md)
+[Processer för kvalitetshantering](quality-management-processes.md)
 
-[Kontrollera kvaliteten hos varor (aktivitet guide)](https://ax.help.dynamics.com/en/wiki/inspect-the-quality-of-goods/)
+[Kontrollera kvaliteten på varor (uppgiftsguide)](https://ax.help.dynamics.com/en/wiki/inspect-the-quality-of-goods/)
+
+
 
 

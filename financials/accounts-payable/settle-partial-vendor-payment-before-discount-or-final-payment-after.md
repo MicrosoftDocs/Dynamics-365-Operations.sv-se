@@ -1,5 +1,5 @@
 ---
-title: "Kvitta en partiell leverantörsbetalning före rabattdatumet med en slutlig betalning efter rabattdatumet"
+title: "Kvitta en leverantörsdelbetalning före rabattdatumet med en slutbetalning efter rabattdatumet"
 description: "Det här avsnittet innehåller en genomgång av ett scenario där flera delbetalningar görs. Vissa av dem inom kassarabattperioden och andra utanför den."
 author: twheeloc
 manager: AnnBe
@@ -26,21 +26,24 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="settle-a-partial-vendor-payment-before-the-discount-date-with-a-final-payment-after-the-discount-date"></a>Kvitta en partiell leverantörsbetalning före rabattdatumet med en slutlig betalning efter rabattdatumet
+# <a name="settle-a-partial-vendor-payment-before-the-discount-date-with-a-final-payment-after-the-discount-date"></a>Kvitta en leverantörsdelbetalning före rabattdatumet med en slutbetalning efter rabattdatumet
+
+[!include[banner](../includes/banner.md)]
+
 
 Det här avsnittet innehåller en genomgång av ett scenario där flera delbetalningar görs. Vissa av dem inom kassarabattperioden och andra utanför den.
 
-Fabrikam köper varor från leverantör 3057. Fabrikam tar emot en kassarabatt på 1 procent om fakturan är betald 14 dagar. Fakturor måste betalas inom 30 dagar. Leverantören ger också Fabrikam kassarabatter på delbetalningar. Kvittning parametrar finns i den **parametrar för leverantörsreskontra** sida.
+Fabrikam köper varor från leverantör 3057. Fabrikam får en kassarabatt på 1 procent om fakturan betalas inom 14 dagar. Fakturor måste betalas inom 30 dagar. Leverantören ger också Fabrikam kassarabatter på delbetalningar. Kvittningsparametrar finns på sidan **Parametrar för leverantörsreskontra**.
 
 ## <a name="invoice-on-june-25"></a>Faktura den 25 juni
-Den 25 juni April registrerar och bokför en faktura för 1 000,00 för 3057 för leverantören. April kan visa den här transaktionen på sidan **Leverantörstransaktioner**.
+Den 25 juni registrerar och bokför April en faktura på 1 000,00 för leverantör 3057. April kan visa den här transaktionen på sidan **Leverantörstransaktioner**.
 
 | Verifikation   | transaktionstyp | Datum      | Faktura | Debetbelopp i transaktionsvaluta | Kreditbelopp i transaktionsvaluta | Saldo   | Valuta |
 |-----------|------------------|-----------|---------|--------------------------------------|---------------------------------------|-----------|----------|
 | Fakt 10020 | Faktura          | 6/25/2015 | 10020   |                                      | 1 000,00                              | -1 000,00 | USD      |
 
 ## <a name="partial-payment-on-july-2"></a>Delbetalning den 2 juli
-Den 2 juli vill April kvitta 300,00 av den här fakturan. Betalningen är berättigad till en rabatt, eftersom Fabrikam får rabatt på delbetalningar. Därför betalar April 297,00 och får en rabatt på 3,00. Handläggaren skapar en betalningsjournal och anger en rad för 3057 för leverantören. Hon öppnar den **kvitta transaktioner** sidan så att hon kan markera fakturan för kvittning.
+Den 2 juli vill April kvitta 300,00 av den här fakturan. Betalningen är berättigad till en rabatt, eftersom Fabrikam får rabatt på delbetalningar. Därför betalar April 297,00 och får en rabatt på 3,00. Hon skapar en betalningsjournal och anger en rad för leverantören 3057. Hon öppnar sedan sidan **Kvitta transaktioner** så att hon kan välja den faktura som ska kvittas.
 
 | Markera     | Använd kassarabatt | Verifikation   | Konto | Datum      | Förfallodatum  | Faktura | Belopp i transaktionsvalutan | Valuta | Belopp att kvitta |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
@@ -91,7 +94,7 @@ April bokför sedan betalningen. När hon öppnar sidan **Leverantörstransaktio
 | APP-10021  | Betalning          | 7/15/2015 |         | 700,00                               |                                       | 0,00    | USD      |
 
 ## <a name="remaining-payment-on-july-15-use-cash-discount--always"></a>Resterande betalning den 15 juli, Använd kassarabatt = Alltid
-Om leverantören kan ta en rabatt, trots att hon betalar efter rabattdatumet April, kan hon ändra värdet i den **Använd kassarabatt** till **alltid**. Den **beräkna kassarabatter för delbetalningar** åsidosätts inställningen och rabatten hämtas. Betalningsbeloppet är 693,00 och rabatten är de återstående 7,00.
+Om leverantören låter April göra en rabatt trots att hon betalar efter rabattdatumet kan hon ändra värdet i fältet **Använd kassarabatt** till **Alltid**. Inställningen **Beräkna kassarabatter för delbetalningar** åsidosätts och rabatten används. Betalningsbeloppet är 693,00 och rabatten är de återstående 7,00.
 
 | Markera     | Använd kassarabatt | Verifikation   | Konto | Datum      | Förfallodatum  | Faktura | Debetbelopp i transaktionsvaluta | Kreditbelopp i transaktionsvaluta | Valuta | Belopp att kvitta |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------------|---------------------------------------|----------|------------------|
@@ -116,6 +119,8 @@ April bokför sedan betalningen. När hon öppnar sidan **Leverantörstransaktio
 | RAB-10020 | Kassarabatt    | 7/1/2015  |         | 3,00                                 |                                       | 0,00    | USD      |
 | APP-10021  | Betalning          | 7/15/2015 |         | 693,00                               |                                       | 0,00    | USD      |
 | RAB-10021 | Kassarabatt    | 7/15/2015 |         | 07:00                                 |                                       | 0,00    | USD      |
+
+
 
 
 

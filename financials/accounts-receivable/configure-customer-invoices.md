@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="create-a-customer-invoice"></a>Skapa en kundfaktura
 
+[!include[banner](../includes/banner.md)]
+
+
 
 
 En **kundfaktura för en försäljningsorder** är en faktura som är relaterad till en försäljning och som en organisation skickar till en kund. Den här typen av kundfaktura skapas baserad på en försäljningsorder, vilken inkluderar orderrader och artikelnummer. Artikelnummer specificeras och bokförs i redovisningen. Poster i redovisningsjournalen är inte tillgängliga för en kundfaktura för en försäljningsorder. 
@@ -55,7 +58,7 @@ Visa status för försäljningsorder på listsidan **Alla försäljningsorder**.
 ## <a name="consolidate-sales-orders-or-packing-slips-for-posting"></a>Konsolidera försäljningsorder och följesedlar för bokföring
 Använd den här processen när en eller flera försäljningsorder är klara att fakturera och du vill konsolidera dem till en enda faktura. 
 
-Du kan markera flera fakturor på listsidan **Försäljningsorder** och sedan använda **Skapa fakturor** för att konsolidera dem. På den **faktura** kan du ändra den **samlingsordern** inställningen ska summeras per ordernummer (om det finns flera följesedlar för en enstaka försäljningsorder) eller efter fakturakonto (om det finns flera order för en enda fakturakonto). Använd den **ordna** knappen konsolidera order till en enskild fakturor som baseras på den **samlingsordern** inställningar.
+Du kan markera flera fakturor på listsidan **Försäljningsorder** och sedan använda **Skapa fakturor** för att konsolidera dem. På sidan **Bokföring av faktura** kan du ändra inställningen **Samlingsorder** att sammanställa efter ordernummer (där flera olika följesedlar finns för en enda försäljningsorder) eller per fakturakonto (där det finns flera olika försäljningsorder för ett enda fakturakonto). Använd knappen **Ordna** för att konsolidera försäljningsorder till enskilda fakturor som baseras på inställningarna för **Samlingsorder**.
 
 ## <a name="additional-settings-that-change-the-posting-behavior"></a>Ytterligare inställningar som ändrar bokföringsbeteendet
 Följande fält ändrar beteendet för bokföringsprocessen.
@@ -123,8 +126,8 @@ Följande fält ändrar beteendet för bokföringsprocessen.
 <td>Kontrollera kreditgräns</td>
 <td>Välj informationen som ska analyseras när en kreditgränskontroll utförs.
 <ul>
-<li><strong>None</strong> – There is no requirement for the credit limit check.</li>
-<li><strong>Balance</strong> – The credit limit is checked against the customer balance.</li>
+<li><strong>Ingen</strong> – Det finns inga krav för kreditgränskontrollen.</li>
+<li><strong>Saldo</strong> – Kreditgränsen kontrolleras mot kundsaldot.</li>
 <li><strong>Saldo+följesedel eller produktinleverans</strong> – Kreditgränsen kontrolleras mot kundsaldot och leveranserna.</li>
 <li><strong>Saldo+Alla</strong> – Kreditgränsen kontrolleras mot kundsaldot, leveranser och öppna order.</li>
 </ul></td>
@@ -150,6 +153,8 @@ Följande fält ändrar beteendet för bokföringsprocessen.
 </tr>
 </tbody>
 </table>
+
+
 
 
 

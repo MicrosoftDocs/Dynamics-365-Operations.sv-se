@@ -28,18 +28,21 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="create-fixed-compensation-plans"></a>Skapa planer för fast kompensation
 
-Fast kompensation refererar till en medarbetares vanliga bruttolön eller löner. Det här avsnittet beskrivs de komponenter som måste ställas in innan du kan skapa en fast kompensationsplan och anmäla medarbetare.
+[!include[banner](includes/banner.md)]
 
-Belopp för fast kompensation kan beräknas för dina medarbetare, baserat på faktorer som till exempel prestanda, region och budget. Microsoft Dynamics 365 för operationer stöder steg, grad och kompensationstyper band.
+
+Fast kompensation refererar till en medarbetares vanliga bruttolön eller löner. Det här avsnittet beskriver de komponenter som måste ställas in innan du kan skapa en fast kompensationsplan och anmäla medarbetare.
+
+Belopp för fast kompensation kan beräknas för dina medarbetare, baserat på faktorer som till exempel prestanda, region och budget. Microsoft Dynamics 365 for Operations stöder kompensationstyperna steg, grad och band.
 
 ## <a name="fixed-compensation-components"></a>Komponenter i fast kompensation
 ### <a name="compensation-levels"></a>Kompensationsnivåer
 
-Du kan använda **kompensationsnivåer** som ersättning för olika jobb, för att garantera att de medarbetare som innehar jobb betalas ganska. I den **kompensationsnivåer** kan du skapa kompensationsnivåer som krävs för varje steg, grad och band planen. Använd **uppknappen** och **nedknappen** för att placera nivåerna i rätt ordning enligt deras typ. Genom att ange ersättningsnivåer för ett jobb, kan du att garantera att alla medarbetare som har en befattning för det jobbet betalas på samma nivå.
+Du kan använda **kompensationsnivåer** för att ange kompensation för olika jobb, detta för att garantera att de medarbetare som innehar dessa jobb betalas rättvist. På sidan **Kompensationsnivåer** kan du skapa kompensationsnivåer som krävs för varje steg-, grad- och bandplan. Använd **uppknappen** och **nedknappen** för att placera nivåerna i rätt ordning enligt deras typ. Genom att ange ersättningsnivåer för ett jobb, kan du att garantera att alla medarbetare som har en befattning för det jobbet betalas på samma nivå.
 
 ### <a name="reference-points"></a>Referenspunkter
 
-**Referenspunkter** är kolumnerna som definierar kompensationsintervallen för varje nivå. Kompensationsnivån är raden i tabellen. Typiska referenspunkter för en plan av typen grad är minst en mittpunkt och Max. Du kan skapa referenspunkter i den **referenspunktsinställningar** sida.
+**Referenspunkter** är kolumnerna som definierar kompensationsintervallen för varje nivå. Kompensationsnivån är raden i tabellen. Typiska referenspunkter för en plan av typen grad är ett minimum, en mittpunkt och ett maximum. Du skapar referenspunkter på sidan **Inställningar för referenspunkter**.
 
 ### <a name="compensation-grids"></a>Kompensationsrutnät
 
@@ -56,11 +59,11 @@ Du kan utforma planen för fast kompensations för att kombinera alla komponente
 
 Inställningen **Tolerans utanför intervallet** gör att du kan ange hur sträng du ska vara när du ser till att kompensationsbeloppen ligger mellan maximi- och minimibeloppen. **Hård** tolerans kräver en kompensationen ska vara inom intervallet som har definierats för en viss nivå. **Mjuk** tolerans varnar dig om kompensationsbeloppet hamnar utanför intervallet, men tillåter dig att fortsätta. Om du ställer in toleransen på **Ingen**, kan du ange vilket kompensationsbelopp som helst, utan att få några varningar eller felmeddelanden. 
 
-Den **anställningsregeln** inställning kan du ange om alla medarbetare ska få samma ökning, oavsett vilket datum de anställdes (**anställningsregeln** = **ingen**), eller om medarbetare får en procentandel av belöning, grundat på hur länge de var anställda under cykeln (**anställningsregeln** = **%**). 
+Inställningen **Anställningsregel** gör att du kan ange om alla medarbetare ska få samma ökning, oavsett det datum då de anställdes (**Anställningsregel** = **Ingen**), eller om medarbetare ska få en procentandel av ökningen, baserat på hur länge han eller hon har varit anställd (**Anställningsregel** = **Procent**). 
 
 En **matris för utnyttjandeintervall** är användbar om du vill antingen minska den tid som krävs för att medarbetare att nå mittpunkten i intervallet eller öka tiden för medarbetare att nå till maximireferenspunkten i intervallet. Du kanske till exempel vill ge medarbetare som ligger i den nedre kvartilen av sitt intervall 110 procent, medan medarbetare i den övre kvartilen bara ska få 80 procent för att hindra att de når maximum för snabbt. 
 
-När du har definierat grunderna av planen för fast kompensation, kan du ställa in en kompensationsstruktur för planen. Klicka på **Ställ in kompensation**. Skjutreglaget för en dialogruta öppnas där du tre alternativ:
+När du har definierat grunderna av planen för fast kompensation, kan du ställa in en kompensationsstruktur för planen. Klicka på **Ställ in kompensation**. Skjutreglaget för en dialogruta som ger dig tre alternativ öppnas:
 
 -   Skapa ett nytt kompensationsrutnät genom att välja en referenspunktsinställning och att ge rutnätet ett namn.
 -   Skapa ett nytt kompensationsrutnät genom att kopiera ett befintligt rutnät som du kan använda som utgångspunkt.
@@ -71,7 +74,7 @@ När du har valt ett alternativ öppnas sidan **Kompensationsstruktur** och du k
 ## <a name="fixed-compensation-enrollment"></a>Anmälan till fast kompensation
 ### <a name="determine-who-is-eligible-for-the-plan"></a>Bestäm vem som är berättigad till planen
 
-Första steget i att ta med medarbetare till en plan för fast kompensation är att bestämma vem som är berättigad till kompensation som definieras i planen. Innan du har bestämt vem som får, kan du inte koppla planen till någon medarbetare. Ställ in kvalifikationer genom att öppna den **berättiganderegler** sida. Här skapar du en ny kvalifikationer regel för kompensation och definiera de kriterier som en medarbetare måste uppfylla för att få en plan. Du kan begränsa berättigandet baserat på avdelning, fackförening, kompensationsregion (plats), jobb, jobbfunktion eller kompensationsnivå. Medarbetare kan bara tas med i en kompensationsplan om de uppfyller alla kriterier som angetts i berättiganderegeln. 
+Första steget i att ta med medarbetare till en plan för fast kompensation är att bestämma vem som är berättigad till kompensation som definieras i planen. Innan du har bestämt vem som får, kan du inte koppla planen till någon medarbetare. Öppna sidan **Kvalifikationsregler** för att ställa in tillgängligheten. Här skapar du en ny kvalifikationsregel för din kompensationsplan och definierar de kriterier som en medarbetare måste uppfylla för att kvalificera sig för en plan. Du kan begränsa berättigandet baserat på avdelning, fackförening, kompensationsregion (plats), jobb, jobbfunktion eller kompensationsnivå. Medarbetare kan bara tas med i en kompensationsplan om de uppfyller alla kriterier som angetts i berättiganderegeln. 
 
 **Obs!** Berättiganderegler används till planer för både fast och variabel kompensation. 
 
@@ -83,7 +86,7 @@ Berättiganderegeln tar hänsyn till värdet på specifika fält i jobbet, befat
     -   På fliken **Kompensation**, fältet **Nivå**.
 -   På sidan **Befattningar**, använder berättiganderegeln värdena i fälten **Avdelning** och **Kompensationsregion**.
 
-Berättiganderegeln tar också hänsyn till fackföreningar som hör till medarbetaren (på den **medarbetare** på sidan i **arbetare** klickar du på **personuppgifter**&gt;**fackföreningar**).
+Berättiganderegeln tar också hänsyn till fackföreningar som kopplas till medarbetaren (på sidan **Medarbetare**, på fliken **Arbetare**, klicka på **Personlig information** &gt; **Fackföreningar**).
 
 ### <a name="define-fixed-compensation-actions"></a>Definiera åtgärder för fast kompensation
 
@@ -93,7 +96,7 @@ När till exempel fast kompensation har ställts in för en medarbetare, kan enb
 
 ### <a name="enroll-the-employee"></a>Ta med anställd
 
-Nu kan du koppla en medarbetare till en plan för fast kompensation. Öppna sidan **Medarbetare** och välj den medarbetare som du vill lägga till i kompensationsplanen. I åtgärdsfönstret klickar du på **kompensation**&gt;**fast plan**. Du kan nu skapa en ny åtgärd för fast kompensation för denna medarbetare. 
+Nu kan du koppla en medarbetare till en plan för fast kompensation. Öppna sidan **Medarbetare** och välj den medarbetare som du vill lägga till i kompensationsplanen. Klicka på **Kompensation** &gt; **Fast plan** i åtgärdsfönstret. Du kan nu skapa en ny åtgärd för fast kompensation för denna medarbetare. 
 
 **Obs!** Kompensationsplanfältet visar bara planerna som en medarbetare är berättigad till enligt berättigandereglerna för varje plan. Om ingen berättiganderegel har ställts in för en plan, har ingen anställd rätt till planen. 
 
@@ -103,5 +106,7 @@ Systemet kontrollerar att kompensationsbeloppet som anges för en kompensationsp
 --------
 
 [Kompensationsplaner](compensation-plans.md)
+
+
 
 

@@ -1,5 +1,5 @@
 ---
-title: "Dynamics 365 för operationer ordlista"
+title: Microsoft Dynamics 365 for Operations-ordlista
 description: The Microsoft Dynamics 365 for Operations-ordlistan definierar viktiga begrepp och termer i Dynamics 365 for Operations-produkten.
 author: tonyafehr
 manager: AnnBe
@@ -25,7 +25,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="dynamics-365-for-operations-glossary"></a>Dynamics 365 för operationer ordlista
+# <a name="dynamics-365-for-operations-glossary"></a>Microsoft Dynamics 365 for Operations-ordlista
+
+[!include[banner](../includes/banner.md)]
+
 
 The Microsoft Dynamics 365 for Operations-ordlistan definierar viktiga begrepp och termer i Dynamics 365 for Operations-produkten. 
 
@@ -249,7 +252,7 @@ Bilen används för driftsättning på användarens acceptanstest (UAT) och prod
 
 En Visual Studio verktyg som du använder för att skapa, uppdatera och kontrollera din modell.
 
-###### <a name="financial-dimensionsdimension-based-configuration"></a>**.. konfiguration av \financial-dimensions\dimension-based**
+###### <a name="financial-dimensionsdimension-based-configuration"></a>**..\ekonomiska-dimensioner\dimensionsbaserad konfiguration**
 
 En konfigurationsteknik som används för att skapa produktvarianter genom att välja värden för produktdimensioner.
 
@@ -499,7 +502,7 @@ En del av en produkt.
 
 ###### <a name="product-dimension"></a>**produktdimension**
 
-Storlek, färg eller konfiguration produkt attributen som används för... \financial-dimensions\dimension-based konfiguration.
+De produktattribut för storlek, färg eller konfiguration som används för ..\ekonomiska-dimensioner\dimensionsbaserad konfiguration.
 
 ###### <a name="product-family"></a>**produktfamilj**
 
@@ -697,7 +700,7 @@ En driftenhet som kontrollerar ett eller flera produktionsflöden.
 
 En metod för modellering av produktmallar och sökning efter produktvariantkonfigurationer.
 
-###### <a name="vat-value-added-tax"></a>**Mervärdesskatt (moms)**
+###### <a name="vat-value-added-tax"></a>**Moms (mervärdesskatt)**
 
 Moms på produkter i varje fas i produktionen baserat på värdet som anges under den fasen.
 
@@ -722,5 +725,7 @@ En person som är en medarbetare eller en leverantör och som betalas i utbyte m
 ###### <a name="workspace"></a>**Arbetsyta**
 
 En sida som ger en överblick av en av de aktiviteter som användaren utför. Sidan använder paneler, listor och diagram för att visa pågående arbete och relaterade data från flera källor och sidan ytor frekvent arbetsuppgifter som relateras till uppgifterna. Panelerna som visas i avsnittet sammanfattning av arbetsytan visas också i relaterade avsnitt i panelen.
+
+
 
 

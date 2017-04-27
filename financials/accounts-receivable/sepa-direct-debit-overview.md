@@ -28,12 +28,15 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="sepa-direct-debit-overview"></a>Översikt över SEPA-autogiro
 
+[!include[banner](../includes/banner.md)]
+
+
 SEPA (Single Euro Payments Area) skapas av den europeiska kommissionen och anger att alla elektroniska betalningar ska betraktas som inhemska oavsett i vilket land/region personen, företaget eller organisationen och banken finns. Det finns inte någon skillnad mellan nationella och gränsöverskridande betalningar. SEPA inkluderar de 28 medlemsstaterna i Europeiska unionen samt Island, Liechtenstein, Norge, Schweiz, Monaco och San Marino. SEPA hjälper till att skapa en gemensam marknad för betalningstransaktioner inom Europeiska ekonomiska samarbetsområdet (EES). Slutligen förväntas SEPA minska antalet betalningsformat, som banker, företag och individer måste arbeta med.   
 
-<a name="what-is-the-goal-of-sepa-direct-debits"></a>Vad är syftet med SEPA autogiro?
+<a name="what-is-the-goal-of-sepa-direct-debits"></a>Vad är målet för SEPA-autogiron?
 ---------------------------------------
 
-En SEPA direktdebitering kan en fordringshavare att samla in medel från en kunds bankkonto, förutsatt att signerade uppdrag har beviljats av kunden långivaren. Kunden signerar en fullmakt som auktoriserar fordringsägaren till att inkassera en betalning och instruerar kundens bank att betala inkasseringen. 
+Ett SEPA-autogiro låter en fordringshavare ta ut medel från en kunds bankkonto, förutsatt att kunden har bett fordringshavaren en signerad fullmakt. Kunden signerar en fullmakt som auktoriserar fordringsägaren till att inkassera en betalning och instruerar kundens bank att betala inkasseringen. 
 
 SEPA-autogiro skapar för första gången ett betalningsinstrument som kan användas för både nationella och gränsöverskridande autogirobetalningar i euro i alla 32 SEPA-länder/regioner. 
 
@@ -60,7 +63,7 @@ SEPA B2B Direct Debit Scheme gäller för B2B-transaktioner och bygger på SEPA 
 Ja. Du kan använda COR1-schemat för SEPA-autogiromedgivanden i Österrike, Belgien, Tyskland, Frankrike, Italien, Spanien och Nederländerna. Upplägget ger en kortare pre-meddelande period för indrivning av direkt debet för fordringsägaren.
 
 ## <a name="what-are-international-bank-account-numbers-iban-and-bank-identifier-codes-bic"></a>Vad är internationella bankkontonummer (IBAN), och BIC-koder?
-International Bank Account Number (IBAN) och Bank Identifier Code (BIC) används för att identifiera alla konton i de 32 SEPA-länderna/regionerna. Ange BIC SWIFT-koden och IBAN i fältet IBAN. Båda fälten finns på snabbfliken Ytterligare identifiering på fliken Bankkonto på sidan Bankkonton. Detta gäller för både fordringsägarens bankkonto och kundens bankkonto.
+International Bank Account Number (IBAN) och Bank Identifier Code (BIC) används för att identifiera alla konton i de 32 SEPA-länderna/regionerna. Ange BIC i SWIFT-kodfältet och IBAN i IBAN-fältet. Båda fälten finns på snabbfliken Ytterligare identifiering på fliken Bankkonto på sidan Bankkonton. Detta gäller för både fordringsägarens bankkonto och kundens bankkonto.
 
 ## <a name="where-do-i-enter-creditor-identifiers-direct-debit-ids"></a>Var ställer jag betalningsmottagarens identifieringsreferens (direktdebiterings-ID)?
 I SEPA identifieras varje fordringshavare med ett unikt ID. Denna identifiering låter kunden och kundens bank filtrera varje autogiro och sedan dokumentera eller avvisa autogirot enligt kundinstruktioner. Fordringsägare måste begära denna identifierare från sin bank. Ange denna identifierare i fältet ID för direktdebitering för bankkontot för den juridiska personen.
@@ -69,7 +72,7 @@ I SEPA identifieras varje fordringshavare med ett unikt ID. Denna identifiering 
 Kunden signerar en fullmakt som auktoriserar fordringsägaren till att inkassera en betalning och instruerar kundens bank att betala inkasseringen. Kunden kan utfärda fullmakten i pappersform eller elektroniskt. Som standard upphör medgivandet 36 månader efter att autogirot senast initierades.
 
 ## <a name="where-do-i-specify-the-sepa-direct-debit-file-format-iso-20022"></a>Var ställer jag filformatet för SEPA-autogiron (ISO 20022)?
-SEPA-dataformaten baseras på ISO 20022-meddelandestandarderna. Du kommer kryssrutan allmän elektronisk rapportering och väljer debet direkt SEPA formatet som en export formatkonfigurationen när du konfigurerar konton Kundreskontra betalningsmetoder. Du använder den betalningsmetod när du skapar en betalningsfil i en kundbetalningsjournal.
+SEPA-dataformaten baseras på ISO 20022-meddelandestandarderna. Markera kryssrutan Generisk elektronisk rapportering och välj formatet för SEPA-direktdebiteringen som en exportformatkonfiguration när du konfigurerar betalningsmetoder för kundreskontra. Du använder den betalningsmetod när du skapar en betalningsfil i en kundbetalningsjournal.
 
 ## <a name="in-what-file-formats-can-i-generate-sepa-direct-debit-payment-files"></a>I vilka filformat kan jag skapa SEPA-filer för direktdebitering?
 Du kan skapa elektroniska betalningsfiler för SEPA-autogiron i följande format:
@@ -78,6 +81,8 @@ Du kan skapa elektroniska betalningsfiler för SEPA-autogiron i följande format
 
 ## <a name="how-do-refunds-and-returns-work-with-sepa-direct-debits"></a>Hur fungerar återbetalningar och returer med SEPA-autogiro?
 Under båda scheman för SEPA-autogiro, har kunder vissa rättigheter till återbetalningar. Kunden får återkalla alla auktoriserade transaktioner under en åtta veckor lång period efter förfallodatumet utan att behöva ange en orsak. Om det handlar om obehöriga transaktioner utökas perioden till 13 månader efter förfallodatumet. Återföringar av eventuella betalningar som har gjorts manuellt med knappen Annullera betalning på sidan Kundtransaktioner.
+
+
 
 
 

@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="positive-pay-overview"></a>Betalningskontrollöversikt
 
+[!include[banner](../includes/banner.md)]
+
+
 Den här artikeln innehåller information om betalningskontroll, som används för att generera en elektronisk lista med checkar som kan skickas till en bank. 
 
 Du kan använda betalningskontroll för att generera en elektronisk lista med checkar som kan skickas till en bank. Betalningskontrollfiler kan hjälpa bankerna att förhindra checkbedrägerier. Du ställer in betalningskontroll för att generera en elektronisk lista med checkar varje gång checkarna skrivs ut. När en check sedan visas för banken, jämför banken checken med listan med checkar som tidigare har skickats in. Om checken matchar en check i listan behandlar banken checken. Om checken inte matchar en check in listan kvarhåller banken checken för granskning.
@@ -38,10 +41,12 @@ Betalningskontrollfiler skapas genom att använda dataentiteter. Innan du skapar
 
 För varje bankkonto som du vill skapa information om betalningskontroll för måste du tilldela betalningskontrollformatet. När du har genererat betalningarna kan du generera en betalningskontrollfil för en enda juridisk person och ett enskilt bankkonto. Du kan även generera betalningskontrollfiler för flera juridiska personer och bankkonton samtidigt. 
 
-När checkarna som anges i en betalningskontrollfil har betalats får du ett bekräftelsenummer från banken. Du kan kontrollera den positiva lönefil Microsoft Dynamics 365 för operationer. 
+När checkarna som anges i en betalningskontrollfil har betalats får du ett bekräftelsenummer från banken. Du kan sedan bekräfta betalningskontrollfilen i Microsoft Dynamics 365 for Operations. 
 
 Om du måste ändra en betalningskontrollfil kan du sedan återkalla den. Sedan, för varje check i betalningskontrollfilen återställs fältet som anger om denna check har inkluderats i en betalningskontrollfil.
 
-Mer information finns i [ställts in och generera positiva lön filer](set-up-generate-positive-pay-files.md).
+Mer information finns i [Ställa in och generera betalningskontrollfiler](set-up-generate-positive-pay-files.md).
+
+
 
 

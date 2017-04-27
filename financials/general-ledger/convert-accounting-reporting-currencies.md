@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="convert-accounting-or-reporting-currencies"></a>Konvertera redovisning eller rapporteringsvalutor
 
+[!include[banner](../includes/banner.md)]
+
+
 
 
 Ett företag som måste ändra sin redovisningsvaluta eller rapportvaluta har två alternativ. Det första alternativet är för att skapa ett nytt företag och starta på nytt. Det andra alternativet är att köra konverteringsprocessen för redovisnings- och rapporteringsvaluta. Detta är mycket en avancerad process som ändrar varje transaktion i systemet. En del inställningar krävs också innan du kan köra processen.
@@ -72,6 +75,8 @@ Alla avstämningsrapporter måste köras igen efter konverteringen för att kont
 -   Om omvandlingen av redovisningredovisningsvalutan orsakar avrundningsdifferenser, bokförs inte dessa genom att använda verifikationen där avrundningsdifferensen uppstod. I stället bokförs avvikelserna genom att använda verifikationen som har angetts för konverteringsbokföringen. Efter konverteringen inkluderar alla rapporterna som kontrollerar efter verifikation och datum dessa avrundningsdifferenser. Detta beteende stämmer och kan ignoreras.
 -   Om kundens och leverantörens avstämningsrapporter visar ett differensbelopp på raden med summan och inget differensbelopp förekom före konverteringen måste differensbeloppet bokföras. Kontot är samlingskontot för kunder och leverantörer. Motkontot är redovisningskontot för konverteringsförlust eller konverteringsvinst.
 
-När alla journaler för redovisningstransaktioner har raderats kan du journalföra redovisningstransaktionerna. Klicka på **redovisning**&gt;**Periodisk**&gt;**journaler**&gt;**Journalför**. Du kan omvärdera belopp i utländsk valuta efter valutakonverteringen om omvärdering krävs. Du omvärderar belopp i utländsk valuta, genom att välja **Standard** i fältet **Metod** för omvärdering.
+När alla journaler för redovisningstransaktioner har raderats kan du journalföra redovisningstransaktionerna. Klicka på **Redovisning** &gt; **Journalföring av** &gt; **Periodiska** &gt; **Journaler**. Du kan omvärdera belopp i utländsk valuta efter valutakonverteringen om omvärdering krävs. Du omvärderar belopp i utländsk valuta, genom att välja **Standard** i fältet **Metod** för omvärdering.
+
+
 
 

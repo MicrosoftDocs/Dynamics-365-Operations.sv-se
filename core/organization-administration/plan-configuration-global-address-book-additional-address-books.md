@@ -1,6 +1,6 @@
 ---
 title: "Konfigurera globala adressböcker"
-description: "Den här artikeln beskrivs de villkor och beslut som du måste göra under planeringsprocessen bör innan du ställer och konfigurerar den globala adressboken och eventuella ytterligare adressböcker i Microsoft Dynamics 365 för operationer. Vissa av besluten kräver att du bekräftar besluten som har fattats för andra produktområden såsom organisationshierarkin."
+description: "Det här avsnittet innehåller en beskrivning av övervägandena och besluten som måste fattas under planeringsprocessen innan du konfigurerar den globala adressboken och alla ytterligare adressböcker i Microsoft Dynamics 365 for Operations. Vissa av besluten kräver att du bekräftar besluten som har fattats för andra produktområden såsom organisationshierarkin."
 author: kfend
 manager: AnnBe
 ms.date: 04/04/2017
@@ -28,7 +28,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="configure-global-address-books"></a>Konfigurera globala adressböcker
 
-Den här artikeln beskrivs de villkor och beslut som du måste göra under planeringsprocessen bör innan du ställer och konfigurerar den globala adressboken och eventuella ytterligare adressböcker i Microsoft Dynamics 365 för operationer. Vissa av besluten kräver att du bekräftar besluten som har fattats för andra produktområden såsom organisationshierarkin.
+[!include[banner](../includes/banner.md)]
+
+
+Det här avsnittet innehåller en beskrivning av övervägandena och besluten som måste fattas under planeringsprocessen innan du konfigurerar den globala adressboken och alla ytterligare adressböcker i Microsoft Dynamics 365 for Operations. Vissa av besluten kräver att du bekräftar besluten som har fattats för andra produktområden såsom organisationshierarkin.
 
 <a name="global-address-book"></a>Global adressbok
 -------------------
@@ -61,6 +64,8 @@ När du har skapat den globala adressboken, kan du skapa ytterligare adressböck
 Du kan skapa adressböcker när som helst och du kan även ange säkerhetsparametrar för adressböckerna när som helst. Du måste inte att ange säkerhetsprivilegier för en adressbok, men om du inte gör det kan alla anställda i organisationen den visa alla partposter i den adressboken. Du kan ange säkerhetsprivilegier för partposter med adressböcker. Säkerhetsprivilegier baseras på team. Det här garanterar att endast anställda som tilldelas till en grupp har åtkomst till en adressbok kan visa partposterna i den adressboken. Du måste du välja team som har åtkomst till varje adressbok. För varje adressbok kan du ange säkerhetsprivilegier som tillåter eller förhindrar åtkomst för specifika team. Om du beviljar ett team åtkomst till en adressbok kan alla medlemmarna i teamet visa posterna i den adressboken. Om du inte beviljar ett team åtkomst till en adressbok kan inga medlemmar i teamet visa posterna eller innehållet i den adressboken. **Beslut:**
 
 -   Vilka team ska ha åtkomst till varje ny adressbok som du skapar?
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-title: "Huvudplanering för täckning av site och lagerställe, lagerställe ej obligatoriskt"
+title: "Huvudplanering för täckning av site och lagerställe, lagerställe inte obligatorisk"
 description: "Det här avsnittet beskriver hur en artikel som har plats och lagerställe som disponeringsdimensioner planeras. Lagerdimensionen är inte obligatorisk."
 author: YuyuScheller
 manager: AnnBe
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="master-planning-for-site-and-warehouse-coverage-warehouse-not-mandatory"></a>Huvudplanering för täckning av site och lagerställe, lagerställe ej obligatoriskt
+# <a name="master-planning-for-site-and-warehouse-coverage-warehouse-not-mandatory"></a>Huvudplanering för täckning av site och lagerställe, lagerställe inte obligatorisk
+
+[!include[banner](../includes/banner.md)]
+
 
 Det här avsnittet beskriver hur en artikel som har plats och lagerställe som disponeringsdimensioner planeras. Lagerdimensionen är inte obligatorisk.
 
@@ -38,10 +41,10 @@ Det här huvudplaneringsscenariot omfattar följande villkor:
 -   Site- och lagerdimensionerna är inställda på disponeringsplanering. Andra dimensioner kan också ha valts för disponeringsplanering. De påverkas emellertid inte av multisitefunktionen.
 
 Följande figur illustrerar hur huvudplaneringen fortskrider. Parametrarna som refereras i bilden och deras siter är som följer:
--   Lagret har inställningen Manuellt. Klicka på **lagerhantering &gt;inställningar &gt;Lagerindelning &gt;lagerställen**. Se fältet **Manuell** på snabbfliken **Huvudplanering**.
--   Disponeringsplanering har definierats för artikeln. Klicka på **produktinformationshantering &gt;produkter&gt; frisläppta produkter**. Markera objekt och sedan på åtgärdsfönstret på den **planera** klickar du på **artikeldisponering**.
--   Påfyllningsrelationer har definierats för lagret. Klicka på **lagerhantering &gt;inställningar &gt;Lagerindelning &gt;lagerställen**. Gå till snabbfliken **Huvudplanering** och leta reda på fältgruppen **Huvudlagerställe**.
--   Standardordertypen anges som Produktion, Inköpsorder eller Kanban. Klicka på **produktinformationshantering &gt;produkter&gt; frisläppta produkter**. Markera objekt och sedan på åtgärdsfönstret på den **planera** klickar du på **standardorderinställningar**. Se **Standardordertyp** i formuläret **Standardorderinställningar**.
+-   Lagret har inställningen Manuellt. Klick på **Lagerhantering &gt; Inställningar &gt; Lagerindelning &gt; Lagerställen**. Se fältet **Manuell** på snabbfliken **Huvudplanering**.
+-   Disponeringsplanering har definierats för artikeln. Klicka på **Hantering av produktinformation &gt; Produkter&gt; Frisläppta produkter**. Markera artikeln och sedan, i åtgärdsfönstret, på fliken **Plan**, klickar du på **Artikeldisponering**.
+-   Påfyllningsrelationer har definierats för lagret. Klick på **Lagerhantering &gt; Inställningar &gt; Lagerindelning &gt; Lagerställen**. Gå till snabbfliken **Huvudplanering** och leta reda på fältgruppen **Huvudlagerställe**.
+-   Standardordertypen anges som Produktion, Inköpsorder eller Kanban. Klicka på **Hantering av produktinformation &gt; Produkter&gt; Frisläppta produkter**. Markera artikeln och sedan, i åtgärdsfönstret, på fliken **Plan**, klickar du på **Standardorderinställningar**. Se **Standardordertyp** i formuläret **Standardorderinställningar**.
 
 ![Efterfrågenedbrytning för site och lagerställe, lagerställe ej obligatoriskt](./media/multisitedemandexplosionscenarioforsiteandwarehousecoveragewarehousenotmandatory.jpg)
 
@@ -53,7 +56,7 @@ Följande figur illustrerar hur huvudplaneringen fortskrider. Parametrarna som r
 <a name="see-also"></a>Se även
 --------
 
-[Master planning and multisite functionality](master-plan-multisite-functionality.md)
+[Huvudplanering och multiplatsfunktioner](master-plan-multisite-functionality.md)
 
 [Huvudplanering - täckning av site och lagerställe, lagerställe obligatorisk](master-plan-site-warehouse-coverage-warehouse-mandatory.md)
 
@@ -62,5 +65,7 @@ Följande figur illustrerar hur huvudplaneringen fortskrider. Parametrarna som r
 [Huvudplanering - täckning av site, lagerställe ej obligatoriskt](master-plan-site-coverage-warehouse-not-mandatory.md)
 
 [Huvudplanering - hur strukturlisteversionen bestäms](master-plan-bom-version-determined.md)
+
+
 
 

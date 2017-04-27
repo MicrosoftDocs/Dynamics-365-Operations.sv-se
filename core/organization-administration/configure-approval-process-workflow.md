@@ -28,7 +28,7 @@ ms.lasthandoff: 03/31/2017
 
 Använd följande procedur när du vill konfigurera egenskaperna för godkännandeprocessen.
 
-Om du vill konfigurera en godkännandeprocess i arbetsflödesredigeraren högerklickar du på elementet för godkännande och klicka sedan på **egenskaper** så att den **egenskaper** formuläret.
+Högerklicka godkännandesteget i arbetsflödesredigeraren och klicka sedan på **Egenskaper** för att öppna formuläret **Egenskaper** om du vill godkänna en godkännandeprocess.
 Namnge godkännandeprocessen
 -------------------------
 
@@ -40,14 +40,14 @@ Följ dessa steg om du vill ange ett namn för godkännandeprocessen.
 Du kan konfigurera systemet att vidta automatiska åtgärder för dokumentet om vissa villkor uppfylls. Systemet kan till exempel godkänna utgiftsrapporter med totala belopp som understiger 1 000 kronor. Följ dessa steg för att ange när systemet vidtar en åtgärd för dokumentet.
 1.  Klicka på **Automatiska åtgärder** i det vänstra fönstret.
 2.  Markera kryssrutan **Aktivera automatiska åtgärder**.
-3.  Click **Add condition**.
+3.  Klicka på **Lägg till villkor**.
 4.  Ange ett villkor.
 5.  Ange vid behov ytterligare villkor.
 6.  Slutför följande steg för att bekräfta att de villkor som du har angett har ställts in korrekt:
     1.  Klicka på **Test** för att öppna formuläret **Test workflow condition**.
     2.  Markera en post i området **Validera villkor** i formuläret.
     3.  Klicka på **Ja**. Systemet utvärderar posten i syfte att avgöra om den uppfyller villkoren som du angett.
-    4.  Klicka på **OK** eller **Avbryt** och går tillbaka till den **egenskaper** formuläret.
+    4.  Klicka på **OK** eller **Avbryt** för att återgå till formuläret **Egenskaper**.
 
 7.  I listan **Auto complete action** väljer du den åtgärd som systemet ska vidta för dokumentet.
 
@@ -55,11 +55,11 @@ Du kan konfigurera systemet att vidta automatiska åtgärder för dokumentet om 
 Du kan skicka meddelanden till andra när ett dokument har godkänts, avvisats, delegerats eller eskalerats, eller när en ändring har begärts. Följ dessa steg för att ange när meddelanden skickas och vem de skickas till.
 1.  Klicka på **Meddelanden** i det vänstra fönstret.
 2.  Markera kryssrutan bredvid händelserna för att skicka meddelanden för:
-    -   **Delegera** – när ett dokument har tilldelats till en annan användare för godkännande.
-    -   **Eskalera** – när den tilldelade användaren inte har agerat på ett dokument inom den tilldelade tiden.
-    -   **Godkänn** – när ett dokument har godkänts.
-    -   **Avslå** – när ett dokument har avvisats.
-    -   **Begär ändring** – när den tilldelade användaren har begärt en ändring av ett dokument som har skickats.
+    -   **Delegera** – När ett dokument har tilldelats till en annan användare för godkännande.
+    -   **Eskalera** – När den tilldelade användaren inte har agerat på ett dokument vid angiven tidpunkt.
+    -   **Godkänn** – När ett dokument har godkänts.
+    -   **Avvisa** – När ett dokument har avvisats.
+    -   **Begär ändring** – När den tilldelade användaren har begärt en ändring av ett dokument som skickats in.
 
 3.  Välj raden för en händelse som du valde i steg 2.
 4.  Klicka på fliken **Notification text**.
@@ -70,8 +70,8 @@ Du kan skicka meddelanden till andra när ett dokument har godkänts, avvisats, 
     3.  Välj önskad platshållare i listan som visas.
     4.  Klicka på **Infoga**.
 
-7.  Översättningar av anmälan Klicka **översättningar**. Följ dessa steg i formuläret som visas:
-    1.  Click **Add**.
+7.  Klicka på **Översättningar** för att lägga till översättningar av meddelandet. Följ dessa steg i formuläret som visas:
+    1.  Klicka på **Lägg till**.
     2.  I listan som visas väljer du det språk som du skriver texten i.
     3.  I textrutan **Translated text** anger du texten.
     4.  Om du vill anpassa texten kan du infoga platshållare.
@@ -112,11 +112,11 @@ Du kan skicka meddelanden till andra när ett dokument har godkänts, avvisats, 
     </ol></td>
     </tr>
     <tr class="odd">
-    <td><strong>User</strong></td>
-    <td>Specifika Microsoft Dynamics 365 för användare av operationer</td>
+    <td><strong>Användare</strong></td>
+    <td>Specifika Microsoft Dynamics 365 for Operations-användare</td>
     <td><ol>
     <li>Klicka på fliken <strong>Användare</strong> när du har valt <strong>Användare</strong>.</li>
-    <li>Den <strong>tillgängliga användare</strong>: listan innehåller alla Microsoft Dynamics 365 för användare av operationer. Markera de användare som du vill skicka meddelanden till, och flytta sedan dessa användare till listan <strong>Selected users</strong>:.</li>
+    <li>Listan <strong>Tillgängliga användare</strong> innehåller alla Microsoft Dynamics 365 for Operations-användare. Markera de användare som du vill skicka meddelanden till, och flytta sedan dessa användare till listan <strong>Selected users</strong>:.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -150,10 +150,10 @@ Följ dessa steg om den manuella processen måste slutföras inom en viss tid.
 ## <a name="specify-which-actions-are-available-to-the-user"></a>Ange vilka åtgärder som är tillgängliga för användaren
 När ett dokument tilldelas en användare för godkännande, måste användaren vidta åtgärder för dokumentet. Följ dessa steg för att ange vilka åtgärder som användaren kan vidta för det inskickade dokumentet.
 1.  Klicka på **Avancerade inställningar** i det vänstra fönstret.
-2.  Välj den **Godkänn** kryssrutan om användaren använder för att godkänna dokumentet.
-3.  Välj den **avslå** kryssrutan användaren kan avvisa dokumentet.
-4.  Välj den **begär ändring** kryssrutan användaren kan begära ändringar av dokumentet.
-5.  Välj den **delegera** om användaren kan tilldela dokumentet till en annan användare för godkännande.
+2.  Markera kryssrutan **Godkänn** om du vill att användaren ska kunna godkänna dokumentet.
+3.  Markera kryssrutan **Avvisa** om du vill att användaren ska kunna avvisa dokumentet.
+4.  Markerakrysstura **Begär ändring** om du vill att användaren ska kunna begära ändringar i dokumentet.
+5.  Markera kryssrutan **Delegera** om du vill att användaren ska kunna tilldela dokument till andra användare för godkännande.
 
 **Obs!**: Kryssrutan **Enable actions from the work list in Enterprise Portal ** stöds inte längre.
 

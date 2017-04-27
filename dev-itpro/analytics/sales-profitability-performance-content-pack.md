@@ -1,6 +1,6 @@
 ---
-title: "Försäljning och lönsamhet prestanda Power BI-innehåll"
-description: "Det här avsnittet beskriver vad som ingår i Dynamics 365 för verksamhet – försäljnings- och lönsamhet prestanda innehållet för Microsoft Power BI. Det förklaras hur du öppnar rapporter i content pack och ger information om datamodellen och enheter som används för att skapa innehåll pack."
+title: "Innehållspaket för försäljnings- och lönsamhetsprestanda för Power BI"
+description: "Det här avsnittet beskriver vad som ingår i Dynamics 365 or Operations – Innehållspaket för försäljnings- och lönsamhetsprestanda för Microsoft Power BI. Det förklarar åtkomst rapporterna som är inkluderade i innehållspaketet, samt ger dig information om den datamodell och de enheter som användes för att skapa innehållspaketet."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,84 +24,84 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="sales-and-profitability-performance-power-bi-content"></a>Försäljning och lönsamhet prestanda Power BI-innehåll
+# <a name="sales-and-profitability-performance-power-bi-content"></a>Innehållspaket för försäljnings- och lönsamhetsprestanda för Power BI
 
-Det här avsnittet beskriver vad som ingår i Dynamics 365 för verksamhet – försäljnings- och lönsamhet prestanda innehållet för Microsoft Power BI. Det förklaras hur du öppnar rapporter i content pack och ger information om datamodellen och enheter som används för att skapa innehåll pack.
+Det här avsnittet beskriver vad som ingår i Dynamics 365 or Operations – Innehållspaket för försäljnings- och lönsamhetsprestanda för Microsoft Power BI. Det förklarar åtkomst rapporterna som är inkluderade i innehållspaketet, samt ger dig information om den datamodell och de enheter som användes för att skapa innehållspaketet.
 
 <a name="overview"></a>Översikt
 --------
 
-Det här innehållet skapades för försäljningschef vill övervaka viktiga försäljning mått omsättning, bruttovinst och vinstmarginaler. Den använder transaktionell försäljningsdata från Dynamics 365 för operationer och innehåller både en aggregerad vy över företagets försäljningssiffror och en uppdelning av försäljningsresultat för kunder och produkter. Genom att markera ändringar i intäkter och vinst ökade med tiden kan rapporter användas för att Avisera chefer om positiva och negativa trender för enskilda kunder och produkter. Kategori och regionala chefer ska vara praktiskt att ha jämförs intäkt och lönsamhet olika produktkategorier och kundgrupper till varandra kan sortera ut Eftersläntrare och företag. En omfattande rapport som visar viss kunds intäkten jämfört med Kontoansvariga vinstmarginal som ger en grund för säkerhetskopierade data att attune sina insatser för försäljning och marknadsföring i respektive profil för varje kund. Försäljnings- och lönsamhet innehåll pack kan försäljningsansvariga Försäljningsresultat per Analysera prestanda:
+Det här innehållet skapades för försäljningschef vill övervaka viktiga försäljningsmått av omsättning, bruttovinst och vinstmarginaler. Den använder försäljningstransaktionsdata från Dynamics 365 for Operations och ger både en sammanfattning av de företagsomspännande försäljningsuppgifterna och en fördelning av försäljningsprestanda för kunder och produkter. Genom att markera ändringar i intäkter och vinstökning med tiden kan rapporter användas för att avisera chefer om positiva och negativa trender för enskilda kunder och produkter. Kategori och regionala chefer kommer att tycka att det är praktiskt att ha diagram som jämför intäkt och lönsamhet för olika produktkategorier och kundgrupper till varandra för att kan sortera ut eftersläntrare och ledare. En omfattande rapport som visar individuella kunders intäkt jämfört med kontoansvarigas vinstmarginal som ger en grund för säkerhetskopierade data att anpassa deras marknadsföringsansträngningar i respektive profil för varje kund. Innehållspaketet för försäljnings- och lönsamhetsresultat låter försäljningsansvariga analysera försäljningsresultat per:
 
--   Intäkt för innevarande år (genom kundgrupp enskilda kunder, försäljning kategorier och enskilda produkter och områden)
--   Ändring av intäkter, år över år (per kund regioner och försäljning-kategori)
+-   Intäkt, för innevarande år (efter kundgrupp och enskilda kunder, försäljningskategorier och enskilda produkter och områden)
+-   Ändring av intäkter, årsbasis (efter kundregion och försäljningskategori)
 
 Lönsamhet kan analyseras med:
 
--   Bruttovinst och vinstmarginal (efter kundgrupper och försäljning av produktkategorier)
--   Bruttovinst ändring år över år
--   Kundlönsamhet (genom att skillnaden mellan bruttomarginal)
+-   Bruttovinst och vinstmarginal (efter kundgrupper och produktförsäljningskategorier)
+-   Bruttovinständring, årsbasis
+-   Kundlönsamhet (efter intäkt jämfört med bruttomarginal)
 
-## <a name="accessing-the-content-pack"></a>Åtkomst till content pack
-Försäljnings- och lönsamhet prestanda Power BI innehåll pack har publicerats som en tillgång implementering Lifecycle Services (LCS) och kan nås från Dynamics 365 för operationer. Mer information om hur du öppnar och starta Power BI-rapporter finns i [Power BI innehåll från Microsoft och partner LCS](power-bi-content-microsoft-partners.md).
+## <a name="accessing-the-content-pack"></a>Åtkomst till innehållspaketet
+Innehållspaket för försäljnings- och lönsamhetsprestanda för Microsoft Power BI. har publicerats som en implementeringstillgång i Lifecycle Services (LCS) och kan nås från Dynamics 365 for Operations. Mer information om hur du öppnar och startar Power BI-rapporter finns i [Power BI-innehåll i LCS från Microsoft och din partner](power-bi-content-microsoft-partners.md).
 
-## <a name="metrics-included-in-the-content-pack"></a>Mått i content pack
-Content pack innehåller en rapport som består av en uppsättning visualized som diagram, tabeller och rutor mått. Nedan visas en översikt över visualisations i content pack.
+## <a name="metrics-included-in-the-content-pack"></a>Mått inkluderade i innehållspaketet
+Innehållspaketet innehåller en rapport som består av en uppsättning mått som visas som diagram, paneler och register. Nedanstående register ger en översikt över de visualiseringar som används i innehållspaketet.
 
 |                        |                                            |                                                         |
 |------------------------|--------------------------------------------|---------------------------------------------------------|
-| **Rapportsida**        | **Charts**                                 | **Sida vid sida**                                               |
-| Intäkt per kund    | 10 främsta kunder efter intäkter                | Total intäkt                                           |
-|                        | Total intäkt per kund            | Vinstökning under YOY                                      |
-|                        | Kunden genomsnittliga omsättning efter kundgrupp | Bruttomarginal                                            |
-|                        | Intäkter och bruttomarginal per kund   |                                                         |
-| Intäkt per produkt     | Intäkter och bruttomarginal per försäljningskategori   | Totala \#av produkter                                    |
-|                        | Topp 10-produkter efter intäkter                 | Totalt antal aktiva produkter och procentuell andel |
-|                        | Total intäkt per försäljningskategori            | Antal produkter redovisning av intäkter 80 %           |
-| Intäkt per period\*    | Intäkt per månad                           | Vinstökning under YOY                                      |
-|                        | Efterföljande YOY intäkter avvikelse             | YOY intäkt growth %                                    |
-|                        | Total avvikelse av försäljning per region för kund    |                                                         |
-| Intäkt per lagerställe    | Försäljningsintäkter efter ort                      |                                                         |
-|                        | YOY intäkt growth %                       |                                                         |
-|                        | Försäljningsintäkter efter region                    |                                                         |
-| Kundlönsamhet | Bruttomarginal jämfört med intäkter per kund   | Bruttovinst, bruttomarginal Vinstökning under YOY          |
+| **Rapportsida**        | **Diagram**                                 | **Paneler**                                               |
+| Intäkter per kund    | Bästa 10 kunderna per intäkt                | Total intäkt                                           |
+|                        | Total intäkt per kund            | YOY vinstökning                                      |
+|                        | Genomsnittlig kundintäkt per kundgrupp | Bruttomarginal                                            |
+|                        | Intäkt- och bruttomarginal per kundgrupp   |                                                         |
+| Intäkt per produkt     | Intäkt- och bruttomarginal per försäljningskategori   | Totalt \# produkter                                    |
+|                        | Bästa 10 produkterna per intäkt                 | Totalt antal aktiva produkter och procentuell andel av total |
+|                        | Total intäkt per försäljningskategori            | Antal produkter som redovisas för 80 % av intäkter           |
+| Intäkter per period\*    | Intäkter per månad                           | YOY vinstökning                                      |
+|                        | Ränteinkomstvariation, YOY             | YOY vinstökning %                                    |
+|                        | Total försäljningsavvikelse per kundregion    |                                                         |
+| Intäkt per plats    | Försäljningsintäkter per ort                      |                                                         |
+|                        | YOY vinstökning %                       |                                                         |
+|                        | Försäljningsintäkter per region                    |                                                         |
+| Kundlönsamhet | Kundlönsamhet jämfört med intäkt, per kund   | Bruttovinst, bruttomarginal, YOY vinstökning          |
 | Lönsamhetsanalys | Intäkter och bruttomarginal per månad          |                                                         |
-|                        | Högsta 15 kunder efter bruttomarginal           |                                                         |
+|                        | Bästa 15 kunderna per bruttomarginal           |                                                         |
 |                        | Bruttomarginal per månad, YOY                 |                                                         |
 
 \*Intäkter detta och förra året och tillväxt per försäljningskategori.
 
 ## <a name="understanding-the-data-model-and-entities"></a>Förstå datamodellen och enheterna
-Dynamics 365 för operationer används för att fylla i rapporten i försäljnings- och lönsamhet prestanda innehållet. Detta visas som sammansatta mått som mellanlagras i arkivet entitet som är en Microsoft SQL-databas för analys. Läs mer om i bloggen [Power BI integration med Store enhet i Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/). Sammansatta måtten i det här innehållet är del av de sammanlagda mått som fanns i kuben Sales i Dynamics AX 2012 och AX 2012 R3. För att förbereda kubens aggregerade mått i butiken enheten måste du göra dem kan. Mer information finns i proceduren om hur mellanlagra aggregerade mått till butiken i bloggen entiteten [Power BI integration med Store enhet i Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/). Följande viktiga aggregerade mätningar för fakturaentiteten rader används som bas för innehållet.
+Dynamics 365 for Operations-data används för att fylla i rapportsidorna i Innehållspaketet för försäljnings- och lönsamhetsresultat. Detta visas som sammansatta mått som mellanlagras i enhetsarkivet, som är en Microsoft SQL-databas som är optimerad för analys. Läs mer om detta i bloggen [Power BI-integration med enhetsbutik i Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/). De sammanlagda måtten i det här innehållspaketet är del av de sammanlagda mått som fanns i Sales Cube i Dynamics AX 2012 och AX 2012 R3. För att förbereda kubens sammanlagda mått i enhetsbutiken måste du göra dem driftfärdiga. Mer information finns i proceduren om hur du mellanlagrar sammanlagda mått i enhetsbutiken i bloggen [Power BI-integration med enhetsbutik i Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/). Följande sammanlagda huvudmått av fakturaradenheten används till grund för innehållspaketet:
 
 |               |                                              |                                                 |                                              |                                          |
 |---------------|----------------------------------------------|-------------------------------------------------|----------------------------------------------|------------------------------------------|
-| **Entity**    | **Sammansatta centrala nyckeltal**               | **Datakälla för Dynamics 365 för operationer** | **Field**                                    | **Description**                          |
+| **Enhet**    | **Sammanlagda huvudmått**               | **Datakälla för Dynamics 365 for Operations** | **Fält**                                    | **Beskrivning**                          |
 | Fakturarader | Intäkt                                      | CustInvoiceTrans                                | SUM(LineAmountMST)                           | Belopp i redovisningsvaluta            |
 |               | Kostnader för sålda varor                           | InventTrans                                     | Summa (CostAmountPosted + CostAmountAdjustment) | Kostnadsbelopp + justering                 |
-|               | Kommissionen Radbelopp – redovisningsvaluta | CustInvoiceTrans                                | SUM(CommissAmountMST)                        | Provisionsbelopp i redovisningsvalutan |
+|               | Provisionsradbelopp - redovisningsvaluta | CustInvoiceTrans                                | SUM(CommissAmountMST)                        | Provisionsradbelopp i redovisningsvaluta |
 
-Följande tabell visar viktiga aggregerade mätningar av fakturaentiteten rader som används för att skapa flera beräknade mått i en datauppsättning på innehållet.
+Följande tabell visar hur viktiga sammanlagda mått av fakturaradenheten som används för att skapa flera beräknade mått i innehållspaketets datauppsättning.
 
 |                   |                                                                                                  |
 |-------------------|--------------------------------------------------------------------------------------------------|
-| **Measure**       | **Beräknat som**                                                                                |
-| Bruttovinst      | Summa (intäkt – kostnad för sålda varor – provisionen – moms (som ingår i Radbelopp på kundfaktura))          |
-| Bruttomarginal      | Summa (bruttovinst / (intäkt - moms (som ingår i Radbelopp på kundfaktura)))             |
-| Intäkt ifjol | Intäkt ifjol = BERÄKNA (SUMMA ('Fakturarader'\[intäkter\]), SAMEPERIODLASTYEAR (datum\[datum\]) |
+| **Mått**       | **Beräknat som**                                                                                |
+| Bruttovinst      | SUM(Intäkt - COGS - Provision - Moms (som ingår i radbelopp på kundfaktura)           |
+| Bruttomarginal      | SUM(Bruttovinst - COGS - Provision - Moms (som ingår i radbelopp på kundfaktura)              |
+| Intäkt ifjol | Intäkt ifjol = BERÄKNA(SUM('Fakturarader'\[intäkter\]), SAMMAPERIODSOMFÖRRAÅRET(datum\[datum\]) |
 
-Ange följande dimensioner i den **försäljningskuben** används som filter för att dela upp sammansatta måtten för att uppnå förbättrad säkerhetsadministration och analytiska djupare kunskaper.
+Följande huvuddimensioner används som filter i **Försäljningskuben** för att dela upp de sammanlagda måtten i syfte att uppnå en förbättrad nivå och ge djupare analysinsikter.
 
 |                  |                                                      |
 |------------------|------------------------------------------------------|
-| **Entity**       | **Exempel på attribut**                           |
-| Kunder        | Kundgrupper, regioner kund, adress, bransch |
-| Produkter         | Produktnummer, produktnamn, grupper-objektnamn       |
+| **Enhet**       | **Exempel på attribut**                           |
+| Kunder        | Kundgrupper, kundregioner, adress, bransch |
+| Produkter         | Produktnummer, produktnamn, artikelgruppsnamn       |
 | Försäljningskategorier | Namn på försäljningskategori                                 |
 | Juridiska personer   | Namn på juridisk person                                   |
 | Datum            | Datum                                                |
 
-Normalt innehåll pack visar data för det aktuella kalenderåret, men du kan öppna rapportavsnittet filter och ändra datumfiltret. Du kan också ändra filtret för företaget.
+Normalt visar innehållspaket data för det aktuella kalenderåret, men du kan öppna avsnittet rapportfilter och ändra datumfiltret. Du kan också ändra filtret för företaget.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 Nedan följer några användbara länkar som är relaterade till enheter och till att skapa innehåll för Power BI:

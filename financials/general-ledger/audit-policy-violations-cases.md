@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="audit-policy-violations-and-cases"></a>Överträdelser av granskningspolicyn
 
+[!include[banner](../includes/banner.md)]
+
+
 Det här avsnittet innehåller en beskrivning av hur revisionsfall genereras från regelbrott för granskningspolicyregler. Här finns även information om hur olika granskningspolicyer använder datumintervallet för dokumenturval.
 
 <a name="how-audit-cases-are-generated"></a>Hur revisionsärenden genereras
@@ -39,10 +42,10 @@ Granskningspolicyn körs i batchläget. När du kör en granskningspolicy, körs
 
 Varje policyregel bedömer en uppsättning dokument. Policyregeln väljer dokument som finns i datumperioden och som matchar kriteriet som ställts in. Exempelvis kan en policyregel välja utgiftsrapporter med måltider som överstiger 500,00. En annan policyregel kan välja leverantörsfakturor som ska betalas till en viss leverantör. För varje dokument som väljs i uppsättningen, genereras en överträdelse. Överträdelsen är en post där ett visst dokument, som faktura 12345, inte följer policyregeln. 
 
-Flera granskningsöverträdelseposter grupperas tillsammans och kopplas till revisionsfall. Som standard grupperas fall för varje granskningspolicy efter granskningsregel. Om du vill kan du välja andra grupperingsvillkor på sidan **Villkor för ärendegruppering**. Exempelvis kan du gruppera utgift sidhuvud-ID och leverantörskonto projektfakturor med leverantörskonto. I det här fallet grupperas alla utgifter rubriken brott som har samma projekt-ID på samma ärende och alla fakturor från leverantörer som har samma leverantörskonto grupperas på samma ärende. 
+Flera granskningsöverträdelseposter grupperas tillsammans och kopplas till revisionsfall. Som standard grupperas fall för varje granskningspolicy efter granskningsregel. Om du vill kan du välja andra grupperingsvillkor på sidan **Villkor för ärendegruppering**. Exempelvis kan du gruppera sidhuvud för utgifter efter projekt-ID och leverantörsfakturor efter leverantörskonto. I detta fall kommer alla överträdelser av utgiftsrubriker med samma projekt-ID att grupperas i samma ärende, och samtliga leverantörsfakturor som har samma leverantörskonto grupperas i samma ärende. 
 
 > [!NOTE]
-> För granskningspolicyregler som baseras på en **duplicera** frågetyp, brott inte grupperat efter policyregeln eller efter de kriterier som anges i den **grupperingsvillkor ärende** sida. I stället grupperas de efter de kriterier som är inbyggda i granskningsregeln. Om till exempel en policyregel utvärderar utgiftsrapporter för dubblettutgifter med samma belopp, handlar-id och datum, blir alla utgifter som har samma värden i dessa fält ett enda ärende. Alla utgifter som har andra värden, kommer att bli separata fall.
+> För granskningsregler som baseras på frågetypen **Duplicera** grupperas inte överträdelser efter policyregel eller efter villkor som har angetts på sidan **Villkor för ärendegruppering**. I stället grupperas de efter de kriterier som är inbyggda i granskningsregeln. Om till exempel en policyregel utvärderar utgiftsrapporter för dubblettutgifter med samma belopp, handlar-id och datum, blir alla utgifter som har samma värden i dessa fält ett enda ärende. Alla utgifter som har andra värden, kommer att bli separata fall.
 
 När revisionsfallen har skapats, hanteras de genom att använda de typiska processerna för ärendehantering.
 
@@ -56,6 +59,8 @@ Nedan följer några andra sätt som en granskningspolicy använder datuminterva
 -   För policyregler som är baserade på frågetypen **Listsökning** utvärderar policyn dokument för övervakade enheter som gäller den sista dagen i dokumentdatumintervallet.
 
 
-Mer information finns i [granskning av policyregler](audit-policy-rules.md)
+Mer information finns i [Regler för granskningspolicy](audit-policy-rules.md)
+
+
 
 

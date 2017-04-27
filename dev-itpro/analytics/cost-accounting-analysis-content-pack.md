@@ -1,6 +1,6 @@
 ---
-title: "Kostnadsredovisningsanalys Power BI-innehåll"
-description: "Det här avsnittet beskrivs vad som ska ingå i analysen kostnadsredovisning Power BI-innehåll. Det förklaras hur du öppnar Power BI-rapporter och ger information om personer som användes för att skapa innehåll och datamodellen."
+title: "Kostnadsredovisningsanalys för Power BI-innehåll"
+description: "Det här avsnittet beskriver vad som ingår i Power BI-innehållet för kostnadsredovisning. Det förklarar hur du öppnar Power BI-rapporter, och ger information om den datamodell och de enheter som användes för att skapa innehållet."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 2017-04-04
@@ -24,90 +24,90 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="cost-accounting-analysis-power-bi-content"></a>Kostnadsredovisningsanalys Power BI-innehåll
+# <a name="cost-accounting-analysis-power-bi-content"></a>Kostnadsredovisningsanalys för Power BI-innehåll
 
-Det här avsnittet beskrivs vad som ska ingå i analysen kostnadsredovisning Power BI-innehåll. Det förklaras hur du öppnar Power BI-rapporter och ger information om personer som användes för att skapa innehåll och datamodellen.
+Det här avsnittet beskriver vad som ingår i Power BI-innehållet för kostnadsredovisning. Det förklarar hur du öppnar Power BI-rapporter, och ger information om den datamodell och de enheter som användes för att skapa innehållet.
 
 <a name="overview"></a>Översikt
 --------
 
-Den **Kostnadsredovisningsanalys** Microsoft Power BI innehållet riktar sig till domänkontrollanter kostnad eller någon som är ansvarig för att utföra kostnadskontroll inom en organisation. Den innehåller viktiga mätvärden som kostnad, omfattningen och kostnadstariff genom verklig kostnad och budgeterad kstn kostnaden för flexibel budget. Den använder transaktionsdata från kostnadsredovisningen operationer i Microsoft Dynamics 365 och visar totala kostnader för hela organisationen i en rapporteringsvaluta. Chefer kan filtrera data genom att kostnadsbärare för kostnadskontroll av organisationsenheter, även om organisationen kan ha flera juridiska personer. Eftersom de **Kostnadsredovisningsanalys** Power BI innehållet markeras avvikelser mellan de faktiska och budgeterade kostnader chefer kan meddelas om positiva och negativa trender för deras operativa enheter. Chefer kan gå ner kostnaden elementet hierarkier eller enskilda kostnadselement att få detaljerad information om hur kostnadsavvikelser har inträffat och vidta effektiva åtgärder. Den **Kostnadsredovisningsanalys** Power BI innehåll ska analysera kostnad revisorer hur kostnadsflödet går via en kostnadsbärare för hela organisationen. Mer information om kostnadsredovisning finns [hemsida kostnadsredovisning](/dynamics365/operations/financials/cost-accounting/cost-accounting-home-page.md). Genom att definiera åtkomst på resursnivå i kostnadsredovisningen, och att man kombinerar den med säkerhet på radnivå i Power BI, beviljar du alla objektägare kostnad åtkomst till den **Kostnadsredovisningsanalys** Power BI-innehåll. Alla data i de visuella effekterna sedan filtreras baserat på åtkomstnivån som kontrolleras i kostnadsredovisning. Mer information om säkerhet åtkomst och säkerhet på användarnivå Se [ange säkerhetsinställningar för kostnadsredovisning innehåll för Power BI](setup-security-cost-accounting-content-pack.md).
+Microsoft Power BI-innehållet **Kostnadsredovisningsanalys** är avsett för kostnadskontrollanter eller annan som med ansvar för att utföra kostnadskontroll inom en organisation. Det innehåller viktiga mätvärden såsom kostnad, omfattning och kostnadstariff efter verklig kostnad, budgeterad kostnad och kostnad för flexibel budget. Det använder transaktionsdata från kostnadsredovisningen i Microsoft Dynamics 365 for Operations och visar totala kostnader för hela organisationen i en rapporteringsvaluta. Chefer kan filtrera data efter kostnadsobjekt för kostnadskontroll av organisationsenheter, även om organisationen kan ha flera juridiska personer. Eftersom Power BI-innehållet **Kostnadsredovisningsanalys** markerar avvikelser mellan faktiska och budgeterade kostnader, kan chefer meddelas om positiva och negativa trender för deras operativa enheter. Chefer kan gräva ner till hierarkier för kostnadselement eller enskilda kostnadselement för att få detaljerad information om hur kostnadsavvikelser har inträffat, och sedan vidta effektiva åtgärder. Power BI-innehållet **Kostnadsredovisningsanalys** låter kostnadsredovisare analysera kostnadsflödet genom kostnadsobjekt inom hela organisationen. Mer information om kostnadsredovisning finns [Startsida för kostnadsredovisning](/dynamics365/operations/financials/cost-accounting/cost-accounting-home-page.md). Genom att definiera säkerhetsnivån för åtkomst inom kostnadsredovisningen och kombinera den med säkerheten på radnivå i Power BI, beviljar du alla ägare av kostnadsobjekt åtkomst till Power BI-innehållet **Kostnadsredovisningsanalys**. Alla data i de visuella effekterna filtreras sedan baserat på den åtkomstnivå som kontrolleras i kostnadsredovisningen. Mer information om säkerhetsnivån för åtkomst och säkerhet på radnivå, se [Ange säkerhetsinställningar för kostnadsredovisningsinnehåll för Power BI](setup-security-cost-accounting-content-pack.md).
 
-## <a name="accessing-the-power-bi-content"></a>Power BI-innehåll
-Du kan hitta den **Kostnadsredovisningsanalys** Power BI innehållet i biblioteket delade resurser i Microsoft Dynamics Lifecycle Services (LCS). Mer information om hur du hämtar innehållet och anslutas för operationer i Dynamics 365 finns [Power BI innehåll från Microsoft och partner LCS](power-bi-content-microsoft-partners.md). **Anmärkning:** KB4011327 ** ** är en förutsättning för den **Kostnadsredovisningsanalys** Power BI-innehåll.  När du loggar in till Lifecycle Services kan komma åt den här KB: <https://fix.lcs.dynamics.com/issue/results/?q=kb4011327>.
+## <a name="accessing-the-power-bi-content"></a>Åtkomst till Power BI-innehåll
+Du kan hitta Power BI-innehållet **Kostnadsredovisningsanalys** i biblioteket för gemensamma tillgångar i Microsoft Dynamics Lifecycle Services (LCS). Mer information om hur du hämtar innehållet och kopplar det till dina Microsoft Dynamics 365 for Operations-data, se [Power BI-innehåll i LCS från Microsoft och dina partner](power-bi-content-microsoft-partners.md). **Obs!** KB4011327 ** **är en förutsättning för Power BI-innehållet **Kostnadsredovisningsanalys**.  När du loggar in till Lifecycle Services får du åtkomst till KB här: <https://fix.lcs.dynamics.com/issue/results/?q=kb4011327>.
 
-## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mått som ingår i Power BI-innehåll
-Innehållet omfattar en uppsättning rapportsidor. Sidorna består av en uppsättning mått som visualized som, brickor, t.ex. Följande tabell ger en översikt över de visuella effekterna i den **Kostnadsredovisningsanalys** Power BI-innehåll.
+## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mått som ingår i Power BI-innehållet
+Innehållet omfattar en uppsättning rapportsidor. Sidorna består av en uppsättning mått som visualiseras som diagram, brickor och tabeller. Följande register ger en översikt över de visuella effekterna i Power BI-innehållet **Kostnadsredovisningsanalys**.
 
 | Rapportsida                      | Diagram                                                                                                                         | Panel                                          |
 |----------------------------------|-------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------|
-| Kostnadskontroll efter räkenskapsperiod    | Den verkliga kostnaden och budgeterad kostnad av kostnaden elementet hierarkinivå                                                                   | Faktisk kostnad kontra budgeterad kostnad                    |
-|                                  | Avvikelse från budget enligt hierarkinivå kostnad element                                                                               | Kontra faktisk kostnad tariff kostnadstabell för Budget          |
-|                                  | 10 högsta avvikelse från Budget i procent av kostnaden element                                                                          | Omfattningen av faktiska storlek jämfört med Budget          |
-| Kostnadskontroll per år till datum     | Den verkliga kostnaden och budgeterad kostnad per kalenderår Period                                                                           | Faktisk kostnad kontra budgeterad kostnad                    |
-|                                  | Avvikelse från budget per kalenderår Period                                                                                       | Kontra faktisk kostnad tariff kostnadstabell för Budget          |
-|                                  | 10 högsta avvikelse från Budget i procent av kostnaden element                                                                          | Omfattningen av faktiska storlek jämfört med Budget          |
-| Kostnadstariff efter räkenskapsår         | Faktisk kostnadstariff genom kostnad-funktion                                                                                             | Kontra faktisk kostnad tariff kostnadstabell för Budget          |
-|                                  | Faktisk kostnadstariff, Budget Kostnadsavvikelse hastighet, procent och Budget kostnadstariff som kostnaden elementet hierarkinivå-budgeterad kostnad | Omfattningen av faktiska storlek jämfört med Budget          |
-|                                  | Avvikelse från budget enligt hierarkinivå kostnad element                                                                               |                                               |
-|                                  | 10 högsta avvikelse från Budget i procent av kostnaden element                                                                          |                                               |
-| Flexibel budget per räkenskapsperiod | Faktisk kostnad, budgeterad kostnad och flexibel Budgetkostnad som kostnad elementet hierarkinivå                                             | Omfattningen av faktiska storlek jämfört med Budget          |
-|                                  | Avvikelse från budget och flexibel budget varians efter kostnad elementet hierarkinivå                                                  | Faktisk kostnad kontra flexibla budgeterad kstn           |
-|                                  | Faktisk kostnad, budgeterad kostnad och flexibla kostnader för kostnad beteende och elementet hierarkinivå                                  | Faktisk hastighet jämfört med flexibel budget kostnad kostnadstariff |
-| Kostnadsredovisning per räkenskapsperiod  | Faktisk kostnad efter kostnad hierarkinivå elementet och dimensionsmedlemsnamn objekt                                             |                                               |
-|                                  | Faktisk kostnad efter kostnad objektet dimensionsmedlemsnamn och kostnaden elementet dimensionsmedlemsnamn                                       |                                               |
+| Kostnadskontroll efter räkenskapsperiod    | Faktisk kostnad och budgeterad kostnad efter hierarkinivå för kostnadselement                                                                   | Faktisk kostnad jämförd med budgeterad kostnad                    |
+|                                  | Budgetavvikelse efter hierarkinivå för kostnadselement                                                                               | Faktisk kostnadstariff jämförd med budgettariff          |
+|                                  | De 10 största budgetavvikelserna i procent efter kostnadselement                                                                          | Faktiskt storlek jämfört med budgetstorlek          |
+| Kostnadskontroll per år fram tills nu     | Faktisk kostnad och budgeterad kostnad efter kalenderårsperiod                                                                           | Faktisk kostnad jämförd med budgeterad kostnad                    |
+|                                  | Budgetavvikelse efter kalenderårsperiod                                                                                       | Faktisk kostnadstariff jämförd med budgettariff          |
+|                                  | De 10 största budgetavvikelserna i procent efter kostnadselement                                                                          | Faktiskt storlek jämfört med budgetstorlek          |
+| Kostnadstariff efter räkenskapsår         | Faktisk kostnadstariff efter kostnadsbeteende                                                                                             | Faktisk kostnadstariff jämförd med budgettariff          |
+|                                  | Faktisk kostnadstariff, tariffavvikelse för budgetkostnad, tariffprocent för budgetkostnad samt budgetkostnadstariff efter hierarkinivå | Faktiskt storlek jämfört med budgetstorlek          |
+|                                  | Budgetavvikelse efter hierarkinivå för kostnadselement                                                                               |                                               |
+|                                  | De 10 största budgetavvikelserna i procent efter kostnadselement                                                                          |                                               |
+| Flexibel budget efter räkenskapsperiod | Faktisk kostnad, budgeterad kostnad och flexibel budgetkostnad efter hierarkinivå för kostnadselement                                             | Faktiskt storlek jämfört med budgetstorlek          |
+|                                  | Budgetavvikelse och flexibel budgetavvikelse efter hierarkinivå för kostnadselement                                                  | Faktisk kostnad jämförd med flexible budgetkostnad           |
+|                                  | Faktisk kostnad, budgeterad kostnad och flexibel budgetkostnad efter kostnadsbeteende och hierarkinivå för kostnadselement                                  | Faktiskt kostnadstariff jämförd med tariff för flexibel budgetkostnad |
+| Kostnadsutdrag efter räkenskapsperiod  | Faktisk kostnad efter hierarkinivå för kostnadselement samt medlemsnamn för kostnadsobjektdimension                                             |                                               |
+|                                  | Faktisk kostnad efter medlemsnamn för kostnadsobjektdimension samt medlemsnamn för kostnadselemetdimension                                       |                                               |
 
 ## <a name="understanding-the-data-model-and-entities"></a>Förstå datamodellen och enheterna
-Dynamics 365 för operationer som används för att fylla rapportsidorna i den **Kostnadsredovisningsanalys** Power BI-innehåll. Informationen visas som sammansatta mått som mellanlagras i arkivet entitet som är en Microsoft SQL-databas som är optimerad för analys. Mer information finns i [översikt Power BI integration med entiteten arkivet](power-bi-integration-entity-store.md). Följande viktiga aggregerade mätningar används som bas för innehållet.
+Dynamics 365 for Operations-data används för att fylla i rapportsidorna Power-Bi-innehållet **Kostnadsredovisningsanalys**. Informationen visas som sammansatta mått som mellanlagras i enhetsarkivet, som är en Microsoft SQL-databas som är optimerad för analys. Mer information finns i [Översikt för Power BI-integrering med enhetsarkiv](power-bi-integration-entity-store.md). Följande sammanlagda huvudmått används till grund för innehållet:
 
-| Enhet                  | Nyckelmätpunkt aggregerade | Datakälla för Dynamics 365 för operationer | Fält     | beskrivning                                   |
+| Enhet                  | Sammanlagda huvudmått | Datakälla för Dynamics 365 for Operations | Fält     | beskrivning                                   |
 |-------------------------|---------------------------|---------------------------------------------|-----------|-----------------------------------------------|
-| Transaktioner för kostnadsredovisning | SUM(Amount)               | CAMDATAAggregatedCostEntry                  | Belopp    | Beloppet i valutan redovisningen kostnadsredovisning |
-| Statistikposter     | SUM(MAGNITUDE)            | CAMDATAAggregatedStatisctialEntry           | Storlek |                                               |
+| Poster för kostnadsredovisning | SUMMA(Belopp)               | CAMDATAAggregatedCostEntry                  | Belopp    | Belopp i redovisningsvalutan för kostnadsredovisning |
+| Statistikposter     | SUMMA(storlek)            | CAMDATAAggregatedStatisctialEntry           | Storlek |                                               |
 
-Följande tabell visar hur viktiga aggregerade mått som används för att skapa flera beräknade mått i innehållets datauppsättning.
+Följande tabell visar hur viktiga sammanlagda mått används för att skapa flera beräknade mått i innehållets datauppsättning.
 
-| Mått                                       | Hur åtgärden ska beräknas.                                                                                          |
+| Mått                                       | Hur åtgärden beräknas                                                                                          |
 |-----------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
-| Faktisk kostnad                                   | BERÄKNA ('transaktioner för kostnadsredovisning'\[åtgärd\], "Transaktionen versioner"\[ISSOURCEVERSIONBUDGET\_värdet\] = 0)            |
-| Budgeterad kostnad                                   | BERÄKNA ('transaktioner för kostnadsredovisning'\[åtgärd\], "Transaktionen versioner"\[ISSOURCEVERSIONBUDGET\_värdet\] = 1)            |
-| Avvikelse från budget-kostnad                          | \[Budgeterad kostnad\] - \[verklig kostnad\]                                                                                      |
-| Avvikelseprocent budget                    | IF (\[budgeterad kstn\] = 0, blank(), \[data\] / \[budgeterad kstn\])                                                |
-| Verklig storlek                              | BERÄKNA ('Statistiska transaktioner'\[FullMagnitude\], "Transaktionen versioner"\[ISSOURCEVERSIONBUDGET\_värdet\] = 0)          |
-| Omfattningen av budget                              | BERÄKNA (\[FullMagnitude\], "Transaktionen versioner"\[ISSOURCEVERSIONBUDGET\_värdet\] = 1)                               |
-| Statistiska data                   | \[Omfattningen av budgeten\] - \[faktiska storlek\]                                                                            |
-| Avvikelseprocent statistiska budget        | Om (\[Budget storleken\] = 0, blank(), \[statistiska data\] / \[Budget storleken\])                          |
-| Faktisk kostnadstariff                              | IF (\[faktiska storlek\] = 0, BLANK(), \[verklig kostnad\] / \[faktiska storlek\])                                          |
-| Budgetkostnadstariff                              | IF (\[Budget storleken\] = 0, BLANK(), \[budgeterad kstn\] / \[Budget storleken\])                                          |
-| Budgeterad tariff avvikelse                     | \[Kostnad för budget\] - \[Faktisk kostnadstariff\]                                                                            |
-| Budgeterad avvikelse i procent          | IF (\[budgeterad kstn\] = 0 returneras blank(), \[Budget Kostnadsavvikelse hastighet\] / \[Budget kostnadstariffen\])                                 |
-| Budgeterad fast kostnad                             | BERÄKNA (\[budgeterad kstn\]"Kostnadsredovisning poster",\[COSTBEHAVIOR\] = 1)                                              |
-| Variabel budgeterad kstn                          | BERÄKNA (\[budgeterad kstn\]"Kostnadsredovisning poster",\[COSTBEHAVIOR\] = 2)                                              |
-| Flexibel budget för fast kostnad                    | \[Budgeterad fast kostnad\]                                                                                                  |
-| Flexibel budget variabel kostnad                 | IF (\[Budget storleken\] = 0, BLANK(), (\[variabel budgeterad kstn\] / \[Budget storleken\]) \*\[verklig storlek\])       |
-| Kostnaden för flexibel budget                          | \[Fast kostnad för flexibel budget\] + \[variabel flexibla budgeterad kstn\]                                                     |
-| Avvikelse för flexibel budget                      | \[Flexibla budgeterad kstn\] - \[verklig kostnad\]                                                                             |
-| Avvikelseprocent flexibel budget           | IF (\[flexibla budgeterad kstn\] = 0, BLANK(), \[avvikelse flexibel budget\] / \[flexibla budgeterad kstn\])                     |
-| Flexibla budgetkostnader tariff                     | IF (\[verklig storlek\] = 0, BLANK(), \[flexibla budgeterad kstn\] / \[faktiska storlek\])                                 |
-| Flexibla budgetkostnader tariff avvikelse            | \[Flexibel budget kostnadstariffen\] - \[Faktisk kostnadstariff\]                                                                   |
-| Flexibel budget kostnad avvikelse i procent | IF (\[kostnadstariffen för flexibel budget\] = 0, BLANK(), \[flexibel budget Kostnadsavvikelse kurs\] / \[kostnadstariffen för flexibel budget\]) |
+| Faktisk kostnad                                   | BERÄKNA("Poster för kostnadsredovisning"\[Åtgärd\], "Transaktionsversioner"\[ISSOURCEVERSIONBUDGET\_VÄRDE\] = 0)            |
+| Budgeterad kostnad                                   | BERÄKNA("Poster för kostnadsredovisning"\[Åtgärd\], "Transaktionsversioner"\[ISSOURCEVERSIONBUDGET\_VÄRDE\] = 1)            |
+| Avvikelse i budgetkostnad                          | \[Budgeterad kostnad\] - \[Faktisk kostnad\]                                                                                      |
+| Budgetavvikelseprocent                    | OM(\[Budgeterad kostnad\] = 0, blank(), \[Budgetavvikelse\] / \[Budgeterad kostnad\])                                                |
+| Verklig storlek                              | BERÄKNA("Statistiska poster"\[FullMagnitude\], "Transaktionsversioner"\[ISSOURCEVERSIONBUDGET\_VÄRDE\] = 0)          |
+| Budgetomfattning                              | BERÄKNA\[FullMagnitude\], "Transaktionsversioner"\[ISSOURCEVERSIONBUDGET\_VÄRDE\] = 1)                               |
+| Statistisk budgetavvikelse                   | \[Budgetstorlek\] - \[Faktisk storlek\]                                                                            |
+| Statistisk budgetavvikelseprocent        | OM(\[Budgetstorlek\] = 0, blank(), \[Statistisk budgetavvikelse\] / \[Budgetstorlek\])                          |
+| Faktisk kostnadstariff                              | OM(\[Faktisk storlek\] = 0, BLANK(), \[Faktisk kostnad\] / \[Faktisk storlek\])                                          |
+| Budgetkostnadstariff                              | OM(\[Budgetstorlek\] = 0, BLANK(), \[Budgetkostnad\] / \[Budgetstorlek\])                                          |
+| Avvikelse för budgetkostnadstariff                     | \[Budgetkostnadstariff\] - \[Faktisk kostnadstariff\]                                                                            |
+| Avvikelseprocentsats för budgetkostnadstariff          | OM(\[Budgetkostnad\] = 0, blank(), \[Tariffavvikelse för budgetkostnad\] / \[Budgetkostnadstariff\])                                 |
+| Fast budgetkostnad                             | BERÄKNA(\[Budgetkostnad\]"Kostnadsredovisningsposter",\[COSTBEHAVIOR\] = 1)                                              |
+| Rörlig budgetkostnad                          | BERÄKNA(\[Budgetkostnad\]"Kostnadsredovisningsposter",\[COSTBEHAVIOR\] = 2)                                              |
+| Fast, flexibel budgetkostnad                    | \[Fast budgetkostnad\]                                                                                                  |
+| Rörlig, flexibel budgetkostnad                 | OM(\[Budgetstorlek\] = 0, BLANK(), (\[Variabel budgeterad kostnad\] / \[Budgetstorlek\]) \* \[Faktisk storlek\])       |
+| Flexibel budgetkostnad                          | \[Fast kostnad för flexibel budget\] + \[Variabel flexibel budgetkostnad\]                                                     |
+| Flexibel budgetavvikelse                      | \[Flexibel budgetkostnad\] - \[Faktisk kostnad\]                                                                             |
+| Flexibel budgetavvikelseprocent           | OM(\[Flexibel budgetkostnad\] = 0, BLANK(), \[Flexibel budgetavvikelse\] / \[Flexibel budgetkostnad\])                     |
+| Flexibel budgetkostnadstariff                     | OM(\[Faktisk storlek\] = 0, BLANK(), \[Flexibel budgetkostnad\] / \[Faktisk storlek\])                                 |
+| Flexibel tariffavvikelse för budgetkostnad            | \[Flexibel budgetkostnadstariff\] - \[Faktisk kostnadstariff\]                                                                   |
+| Flexibel avvikelseprocent för budgetkostnadstariff | OM(\[Flexibel budgetkostnadstariff\] = 0, BLANK(), \[Flexibel tariffavvikelse för budgetkostnad\] / \[Flexibel tariff för budgetkostnad\]) |
 
-Skära totala måtten för att uppnå förbättrad säkerhetsadministration och ger en bättre förståelse för analytiska används följande viktiga dimensionerna som filter.
+Följande huvuddimensioner används som filter för att dela upp de sammanlagda måtten i syfte att uppnå en förbättrad nivå och ge djupare analysinsikter.
 
 | Enhet                             | Exempel på attribut                                                                                               |
 |------------------------------------|----------------------------------------------------------------------------------------------------------------------|
 | Huvudböcker för kostnadsredovisning            | Huvudbok för kostnadsredovisning                                                                                               |
 | Kostnadsstyrenheter                 | Namn på kostnadsstyrenhet                                                                                               |
-| Dimensioner för kostnadselement            | Kostnad element dimension namn, kostnad elementet dimensionsmedlemsnamn, kostnad elementbeskrivning dimension medlem          |
-| Kostnadsobjektdimensioner             | Dimensionsnamnet kostnadsbärare, kostnad objektet dimensionsmedlemsnamn kostnad objektbeskrivning dimension medlem              |
-| Statistikdimensioner             | Statistiska dimensionsnamnet statistiska dimensionsmedlemsnamn, beskrivning av statistiska dimension medlem              |
-| Dimensionshierarkier kostnadsbärare  | Kostnad objektnamn dimension hierarki, kostnadskontroll dimension hierarki objektnivån kostnad objektet dimensionshierarkiträdet    |
-| Dimensionshierarkier kostnad element | Kostnad elementnamn dimension hierarki, kostnadskontroll elementet dimension hierarkinivån, kostnad elementet dimensionshierarkiträdet |
-| Statistiska dimensionshierarkier  | Statistiska hierarki dimensionsnamnet, statistiska dimension hierarkinivå hierarkiträdet statistiska dimension    |
+| Dimensioner för kostnadselement            | Måttnamn för kostnadselement, Medlemsnamn för kostnadselementdimension, Medlemsbeskrivning för kostnadselementdimension          |
+| Kostnadsobjektdimensioner             | Måttnamn för kostnadsobjekt, Medlemsnamn för kostnadsobjektsdimension, Medlemsbeskrivning för kostnadsobjektdimension              |
+| Statistikdimensioner             | Statistiskt dimensionsnamn, Namn för statistisk dimensionsmedlem, Beskrivning av statistisk dimensionsmedlem              |
+| Dimensionshierarkier för kostnadsobjekt  | Hierarkinamn för kostnadsobjektdimension, Hierarkinivå för kostnadsobjektdimension, Hierarkiträd för kostnadsobjektdimension    |
+| Dimensionshierarkier för kostnadselement | Hierarkinamn för kostnadselementdimension, Hierarkinivå för kostnadselementdimension, Hierarkiträd för kostnadselementdimension |
+| Statistiska dimensionshierarkier  | Hierarkinamn för statistisk dimension, Hierarkinivå för statistisk dimension, Hierarkiträd för statistisk dimension    |
 | Transaktionsversioner               | Versionsnamn                                                                                                         |
-| Räkenskapskalendrar                   | Kalender, kalender, beskrivning                                                                                       |
+| Räkenskapskalendrar                   | Kalender, kalenderbeskrivning                                                                                       |
 | Räkenskapsår                       | Kalenderår                                                                                                        |
-| Räkenskapsperioder                     | Kalenderår för perioden                                                                                                 |
+| Räkenskapsperioder                     | Kalenderårsperioder                                                                                                 |
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 Nedan följer några användbara länkar som är relaterade till enheter och till att skapa innehåll för Power BI:
@@ -116,6 +116,6 @@ Nedan följer några användbara länkar som är relaterade till enheter och til
 -   [Skapa innehållspaket för organisationer](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
 -   [Datamodeller med hjälp av Power BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
 -   [Lägga till Power BI-rutor till arbetsytor](configure-power-bi-integration.md)
--   [Ställa in säkerhet för kostnadsredovisning innehåll för Power BI](setup-security-cost-accounting-content-pack.md)
+-   [Ställa in säkerhet för kostnadsredovisningsinnehåll för Power BI](setup-security-cost-accounting-content-pack.md)
 
 

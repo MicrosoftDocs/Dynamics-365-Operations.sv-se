@@ -1,6 +1,6 @@
 ---
-title: "Inventera lagerbehållning mobil arbetsytan för Microsoft Dynamics 365 för operationer app"
-description: "Lager i behållning mobil arbetsytan hjälper dig att få mobila insyn i lager reserveras och tillgängliga när som helst och var som helst."
+title: "Mobil arbetsyta för tillgängligt lager för programmet Microsoft Dynamics 365 for Operations"
+description: "Den mobila arbetsytan för tillgängligt lager ger dig mobil insyn i reserverat och tillgängligt lager, när som helst och var som helst."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,72 +25,72 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="inventory-on-hand-mobile-workspace-for-microsoft-dynamics-365-for-operations-app"></a>Inventera lagerbehållning mobil arbetsytan för Microsoft Dynamics 365 för operationer app
+# <a name="inventory-on-hand-mobile-workspace-for-microsoft-dynamics-365-for-operations-app"></a>Mobil arbetsyta för tillgängligt lager för programmet Microsoft Dynamics 365 for Operations
 
-Lager i behållning mobil arbetsytan hjälper dig att få mobila insyn i lager reserveras och tillgängliga när som helst och var som helst. 
+Den mobila arbetsytan för tillgängligt lager ger dig mobil insyn i reserverat och tillgängligt lager, när som helst och var som helst. 
 
 <a name="prerequisites"></a>Förutsättningar
 -------------
 
 | Förutsättning                                                         | beskrivning                                                                                                                                        |
 |----------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------|
-| Läs mer om Microsoft Dynamics 365 för operationer | [Dynamics 365 för operationer](/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform)                                   |
-| Dynamics 365 för operationer                                          | En miljö med Microsoft Dynamics 365 för operationer version 1611 och Microsoft Dynamics-datorer operationer uppdatering 3 (2016 November) |
-| Snabbkorrigering KB 3215650                                                    | Installera snabbkorrigering om du vill aktivera arbetsytor som finns i din Microsoft Dynamics 365 för operationer.                                       |
-| Mobil enhet med Dynamics 365 för operationer program installerat | Hämta mobiltelefonprogrammet lagringsplatsen Dynamics 365 för operationer app.                                                                           |
+| Läs mer om den mobila plattformen Microsoft Dynamics 365 for Operations | [Den mobila plattformen Dynamics 365 for Operations](/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform)                                   |
+| Dynamics 365 for Operations                                          | En miljö med Microsoft Dynamics 365 for Operations version 1611 och plattformsuppdatering 3 för Microsoft Dynamics for Operations (november 2016) |
+| Snabbkorrigering KB 3215650                                                    | Installera snabbkorrigeringen om du vill aktivera de arbetsytor som finns i ditt Microsoft Dynamics 365 for Operations.                                       |
+| Mobil enhet med programmet Dynamics 365 for Operations installerat | Hämta programmet Dynamics 365 for Operations från din mobilappsbutik.                                                                           |
 
 ## <a name="introduction"></a>Introduktion
-Normalt har företag flera in- och flera utleveranser av lager varje dag. Transporterna ändra ständigt status lagerbehållning. Lager i behållning mobil arbetsytan kan du se statusen korsföretags lagerbehållning så att du kan få de senaste insyn i lagerdata på den mobila enheten du väljer. Oavsett om du arbetar i lagerställe, inköp, försäljning, tillverkning eller hantering eller har andra roller kan använda du lagerbehållning data när som helst och var som helst. Mobil arbetsytan kan du Visa lagerbehållning i lokaler och aktuella reservationerna material oreserverade lagerbehållning och ger en översikt över lagerbehållning status över lokaler. Du kan också ange artikelnummer till frågan lagerbehållning och filtrerade söka efter produkter i lager eller varianter. Närmare bestämt innehåller mobil arbetsytan dessa funktioner:
+Normalt har företag flera in- och flera utleveranser av lager varje dag. Dessa transporter ändrar konstant tillgänglig lagerstatus. Den mobila arbetsytan för tillgängligt lager låter dig se tillgänglig lagerstatus för hela företaget, vilket ger dig senaste information om lagerdata på valfri mobil enhet. Oavsett om du arbetar i på lagerstället, inom inköp, försäljning, tillverkning, administration eller har andra roller, kan du använda datan för tillgängligt lager när som helst och var som helst. Den mobila arbetsytan ger omedelbar insikt i tillgänglig lagerstatus över flera anläggningar, och låter dig se tillgängligt lager, aktuella materialreservationer samt icke-reserverat, tillgängligt lager. Du kan också ange artikelnummer till en förfrågan om lagerbehållning och söka filtrerat efter produkter i lager eller varianter. Närmare bestämt erbjuder den mobila arbetsytan följande funktioner:
 
--   Du kan söka efter produktnummer och produktnamn hitta produkter att visa status för lagerbehållningen.
--   Du kan visa följande information för de valda produkterna:
-    -   Lagerbehållningen per site
-    -   Lagerbehållning per lagerställe
-    -   Lagerbehållning per lagerställe
-    -   Lagerbehållningen per parti (för batch-styrd produkter)
-    -   Lagerbehållningen per lagerstatus
+-   Du kan söka efter produktnummer och produktnamn för att hitta produkter att visa lagerbehållningsstatusen för.
+-   Du kan visa följande information för valda produkter:
+    -   Lagerbehållning efter plats
+    -   Lagerbehållning efter lagerställe
+    -   Lagerbehållning efter plats
+    -   Lagerbehållningen per batch (för batchstyrda produkter)
+    -   Lagerbehållning efter lagerstatus
 
 <!-- -->
 
--   Produkt i lager visas på följande sätt:
-    -   Med fysiskt lager (vyn representerar det totala beloppet.)
-    -   Med fysiskt reserverat (vyn motsvarar beloppet som reserverats.)
-    -   Med fysiskt disponibelt (den här vyn representerar Disponibelt belopp som har inga reservationer.)
+-   Lagerbehållning för produkt visas på följande sätt:
+    -   Genom fysiskt lager (denna vy representerar den totala mängden.)
+    -   Genom fysiskt reserverat (denna vy representerar den reserverade mängden.)
+    -   Genom fysiskt disponibelt (den här vyn representerar tillgänglig mängd utan reservationer.)
 
 ## <a name="get-started"></a>Kom igång
 Komma igång med din mobila enhet:
 
-1.  Hämta och installera Microsoft Dynamics 365 for app operationer från lagringsplatsen för mobiltelefonprogrammet.
-2.  Starta programmet för enheten.
-3.  Ange en Webbadress för Dynamics 365.
-4.  Ange att logga in på företaget. Till exempel anger **USMF**.
-5.  Första gången du loggar in, uppmanas du ange användarnamn och lösenord för ditt Microsoft Dynamics 365 för operationer. Ange dina autentiseringsuppgifter. När du loggar in visas tillgängliga arbetsytor för ditt företag.
+1.  Hämta och installera appen Microsoft Dynamics 365 for Operations från din mobilappsbutik.
+2.  Starta appen på din enhet.
+3.  Ange din webbadress för Dynamics 365.
+4.  Ange ett företag att logga in på. Ange till exempel **USMF**.
+5.  Första gången du loggar in uppmanas du ange användarnamn och lösenord för ditt Microsoft Dynamics 365 for Operations-konto. Ange dina autentiseringsuppgifter. När du loggar in visas tillgängliga arbetsytor för ditt företag.
 
-Om du vill visa arbetsytor på din mobiltelefonprogrammet måste du publicera önskade arbetsytor till Dynamics 365 for app operationer.
+Om du vill visa arbetsytor i din mobilapp måste du först publicera önskade arbetsytor i appen Dynamics 365 for Operations app.
 
-1.  Starta Dynamics 365 för operationer.
-2.  Gå till **systemadministration**&gt;**inställningar**&gt;**systemparametrar**.
-3.  Välj **hantera mobiltelefonprogrammet**.
-4.  Markera arbetsytan för att publicera på en mobil plattform.
-5.  Välj **publicera arbetsytan**.
+1.  Starta Dynamics 365 for Operations.
+2.  Navigera till **Systemadministration** &gt; **Inställningar** &gt; **systemparametrar**.
+3.  Välj **Hantera mobilapp**.
+4.  Markera arbetsytan att publicera i den mobila plattformen.
+5.  Välj **Publicera arbetsyta**.
 6.  Uppdatera enheten om du vill se de publicerade arbetsytorna.
 
-## <a name="view-the-onhand-inventory-for-a-product"></a>Visa behållningen lager för en produkt
-1.  På din mobila enhet väljer du den **lagerbehållning** arbetsytan.
-2.  Välj **Kontrollera lagerbehållning för en artikel**. Du kan se en lista över produkter som laddas i ditt program för användning offline. 50 objekten läses som standard, men du kan ändra detta värde. Mer information finns i förväg läsa handboken.
-3.  Om objektet inte finns i listan, väljer du **söka mer** behöver en online letar i Dynamics 365 operationer. Sök efter produktnummer eller växla till en sökning efter produktnamn.
+## <a name="view-the-onhand-inventory-for-a-product"></a>Visa lagerbehållningen för en produkt
+1.  På din mobila enhet väljer du arbetsytan **Lagerbehållning**.
+2.  Välj **Kontrollera lagerbehållning för en artikel**. Du kan se en lista över de produkter som laddas i ditt program för användning offline. 50 objekt laddas som standard, men du kan ändra detta antal. Mer information finns i förstudiehandboken.
+3.  Om objektet inte finns i listan väljer du **Sök fler** för att utföra en onlinesökning i Dynamics 365 for Operations. Sök efter produktnummer eller växla till en sökning efter produktnamn.
 4.  Välj en produkt. Om artikeln har en bild, visas bilden.
-5.  Välj ett av följande alternativ för att visa lagerbehållningen status:
-    -   Visa behållning per site
+5.  Välj ett av följande alternativ för att visa lagerbehållningens status:
+    -   Visa lagerbehållning per plats
     -   Visa lagerbehållning per lagerställe
-    -   Visa lagerbehållning per lagerställe
-    -   Visa behållning per parti (för batch-styrd produkter)
-    -   Visa behållning per lagerstatus
+    -   Visa lagerbehållning efter plats
+    -   Visa lagerbehållning per batch (för batchstyrda produkter)
+    -   Visa lagerbehållning per lagerstatus
 
-    Produkt i lager visas på följande sätt:
-    -   Med fysiskt lager (vyn representerar det totala beloppet.)
-    -   Med fysiskt reserverat (vyn motsvarar beloppet som reserverats.)
-    -   Med fysiskt disponibelt (vyn representerar det tillgängliga beloppet som har inga reservationer.)
+    Lagerbehållning för produkt visas på följande sätt:
+    -   Genom fysiskt lager (denna vy representerar den totala mängden.)
+    -   Genom fysiskt reserverat (denna vy representerar den reserverade mängden.)
+    -   Genom fysiskt disponibelt (den här vyn representerar tillgänglig mängd utan reservationer.)
 
 
 

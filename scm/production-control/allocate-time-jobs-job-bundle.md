@@ -1,5 +1,5 @@
 ---
-title: "Fördela tid till jobb i en bunt av jobb"
+title: "Fördela tid till jobb i en jobbunt"
 description: "I tillverkningskörning kan du bunta jobb. Du kan sedan starta fler jobb på en gång på jobblistsidan."
 author: YuyuScheller
 manager: AnnBe
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="allocate-time-to-jobs-in-a-job-bundle"></a>Fördela tid till jobb i en bunt av jobb
+# <a name="allocate-time-to-jobs-in-a-job-bundle"></a>Fördela tid till jobb i en jobbunt
+
+[!include[banner](../includes/banner.md)]
+
 
 I tillverkningskörning kan du bunta jobb. Du kan sedan starta fler jobb på en gång på jobblistsidan.
 
@@ -107,5 +110,7 @@ Tänk dig att de tre jobben utförs av en anställd, som har en timlön på 120,
 | Jobb 3 | (3,33 ÷ 5) × 12,00 USD                 | 8,00 USD                | 5 timmar        | 40,00 USD         |
 
 Den korrigerade kostnaden per timme samt jobbtiden bokförs i produktionsjournalen. **Obs!** Om du väljer alternativet **Kostnadskategori** på fliken **Allmän** på sidan **Standarder för produktionsorder**, överförs den verkliga tiden för varje jobb till en produktionsjournal, där kostnaden används för det specifika jobbets kostnadskategori.
+
+
 
 

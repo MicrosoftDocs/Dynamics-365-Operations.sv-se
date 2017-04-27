@@ -26,8 +26,13 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="expense-management"></a>Utläggshantering
 
+[!include[banner](../includes/banner.md)]
+
+
 
 
 [Planera utgiftshantering](plan-expense-management.md) Mer information läggs till senare, kom snart tillbaka.
+
+
 
 

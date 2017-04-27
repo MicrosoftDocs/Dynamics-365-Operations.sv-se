@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="centralized-payments-for-accounts-payable"></a>Centraliserade betalningar för leverantörsreskontra
 
+[!include[banner](../includes/banner.md)]
+
+
 Organisationer som omfattar flera juridiska personer kan skapa och hantera betalningar genom att använda en enda juridisk person som hanterar alla betalningar. Därför måste inte samma betalningar anges i flera juridiska personer. Den här artikeln ger exempel som visar hur bokföringen av centraliserade betalningar hanteras i olika scenarier.
 
 Organisationer som omfattar flera juridiska personer kan skapa och hantera betalningar genom att använda en enda juridisk person som hanterar alla betalningar. Därför måste inte samma betalningar anges i flera juridiska personer. Dessutom sparar organisationen tid eftersom betalningsprocessen rationaliseras.
@@ -66,14 +69,14 @@ Fabrikam East har en öppen faktura för leverantörskontot 100, Fourth Coffee. 
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Fabrikam-betalning kvittas mot Fabrikam East-faktura
 
-**Fabrikam posting**
+**Fabrikam-bokföring**
 
 | Konto                           | Debetbelopp | Kreditbelopp |
 |-----------------------------------|--------------|---------------|
 | Förfaller från Fabrikam East (Fabrikam) | 600,00       |               |
 | Leverantörsreskontra (Fabrikam)       |              | 600,00        |
 
-**Fabrikam East posting**
+**Fabrikam East-bokföring**
 
 | Konto                          | Debetbelopp | Kreditbelopp |
 |----------------------------------|--------------|---------------|
@@ -99,14 +102,14 @@ Fabrikam East har en öppen faktura för leverantör 100, Fourth Coffee. Faktura
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Fabrikam-betalning kvittas mot Fabrikam East-faktura
 
-**Fabrikam posting**
+**Fabrikam-bokföring**
 
 | Konto                           | Debetbelopp | Kreditbelopp |
 |-----------------------------------|--------------|---------------|
 | Förfaller från Fabrikam East (Fabrikam) | 580,00       |               |
 | Leverantörsreskontra (Fabrikam)       |              | 580,00        |
 
-**Fabrikam East posting**
+**Fabrikam East-bokföring**
 
 | Konto                          | Debetbelopp | Kreditbelopp |
 |----------------------------------|--------------|---------------|
@@ -137,7 +140,7 @@ Fabrikam East har en öppen faktura för leverantör 100, Fourth Coffee. Fabrika
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Fabrikam-betalning kvittas mot Fabrikam East-faktura
 
-**Fabrikam posting**
+**Fabrikam-bokföring**
 
 | Konto                           | Debetbelopp            | Kreditbelopp           |
 |-----------------------------------|-------------------------|-------------------------|
@@ -146,7 +149,7 @@ Fabrikam East har en öppen faktura för leverantör 100, Fourth Coffee. Fabrika
 | Realiserad förlust (Fabrikam)          | 0,00 EUR / 12,90 USD    |                         |
 | Förfaller från Fabrikam East (Fabrikam) |                         | 0,00 EUR / 12,90 USD    |
 
-**Fabrikam East posting**
+**Fabrikam East-bokföring**
 
 | Konto                          | Debetbelopp            | Kreditbelopp           |
 |----------------------------------|-------------------------|-------------------------|
@@ -178,7 +181,7 @@ Fabrikam East har en öppen faktura för leverantör 100, Fourth Coffee. Faktura
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-east-invoice"></a>Fabrikam-betalning kvittas mot Fabrikam East-faktura
 
-**Fabrikam posting**
+**Fabrikam-bokföring**
 
 | Konto                           | Debetbelopp            | Kreditbelopp           |
 |-----------------------------------|-------------------------|-------------------------|
@@ -187,7 +190,7 @@ Fabrikam East har en öppen faktura för leverantör 100, Fourth Coffee. Faktura
 | Realiserad förlust (Fabrikam)          | 0,00 EUR / 12,66 USD    |                         |
 | Förfaller från Fabrikam East (Fabrikam) |                         | 0,00 EUR / 12,66 USD    |
 
-**Fabrikam East posting**
+**Fabrikam East-bokföring**
 
 | Konto                          | Debetbelopp            | Kreditbelopp           |
 |----------------------------------|-------------------------|-------------------------|
@@ -199,7 +202,7 @@ Fabrikam East har en öppen faktura för leverantör 100, Fourth Coffee. Faktura
 | Kassarabatt (Fabrikam East)    |                         | 11,28 EUR / 13,61 USD   |
 
 ## <a name="example-5-vendor-credit-note-with-primary-payment"></a>Exempel 5: Leverantörskreditfaktura med primär betalning
-Fabrikam skapar en betalning på 75,00 för leverantör 3004, Fourth Coffee. Betalningen kvittas mot en öppen faktura för Fabrikam West-leverantör 3004 och en öppen kreditfaktura för Fabrikam East-leverantör 100. Betalningen väljs som primär betalning i den **kvitta transaktioner** sida.
+Fabrikam skapar en betalning på 75,00 för leverantör 3004, Fourth Coffee. Betalningen kvittas mot en öppen faktura för Fabrikam West-leverantör 3004 och en öppen kreditfaktura för Fabrikam East-leverantör 100. Betalningen väljs som primär betalning på sidan **Kvitta transaktioner**.
 
 ### <a name="invoice-is-posted-to-fabrikam-west-for-vendor-3004"></a>Faktura bokförs på Fabrikam West för leverantör 3004
 
@@ -224,7 +227,7 @@ Fabrikam skapar en betalning på 75,00 för leverantör 3004, Fourth Coffee. Bet
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-west-invoice-and-fabrikam-east-credit-note"></a>Fabrikam-betalning kvittas mot Fabrikam West-faktura och Fabrikam East-kreditfaktura
 
-**Fabrikam posting**
+**Fabrikam-bokföring**
 
 | Konto                           | Debetbelopp | Kreditbelopp |
 |-----------------------------------|--------------|---------------|
@@ -233,14 +236,14 @@ Fabrikam skapar en betalning på 75,00 för leverantör 3004, Fourth Coffee. Bet
 | Förfaller från Fabrikam West (Fabrikam) | 100,00       |               |
 | Leverantörsreskontra (Fabrikam)       |              | 100,00        |
 
-**Fabrikam East posting**
+**Fabrikam East-bokföring**
 
 | Konto                           | Debetbelopp | Kreditbelopp |
 |-----------------------------------|--------------|---------------|
 | Förfaller från Fabrikam (Fabrikam East) | 25,00        |               |
 | Leverantörsreskontra (Fabrikam East)  |              | 25,00         |
 
-**Fabrikam West posting**
+**Fabrikam West-bokföring**
 
 | Konto                          | Debetbelopp | Kreditbelopp |
 |----------------------------------|--------------|---------------|
@@ -248,7 +251,7 @@ Fabrikam skapar en betalning på 75,00 för leverantör 3004, Fourth Coffee. Bet
 | Förfaller till Fabrikam (Fabrikam West)  |              | 100,00        |
 
 ## <a name="example-6-vendor-credit-note-without-primary-payment"></a>Exempel 6: Leverantörskreditfaktura utan primär betalning
-Fabrikam skapar en betalning på 75,00 för leverantör 3004, Fourth Coffee. Betalningen kvittas mot en öppen faktura för Fabrikam West-leverantör 3004 och en öppen kreditfaktura för Fabrikam East-leverantör 100. Betalningen inte är markerat som primär betalning på de **kvitta transaktioner** sida.
+Fabrikam skapar en betalning på 75,00 för leverantör 3004, Fourth Coffee. Betalningen kvittas mot en öppen faktura för Fabrikam West-leverantör 3004 och en öppen kreditfaktura för Fabrikam East-leverantör 100. Betalningen väljs inte som primär betalning på sidan **Kvitta transaktioner**.
 
 ### <a name="invoice-is-posted-to-fabrikam-west-for-vendor-3004"></a>Faktura bokförs på Fabrikam West för leverantör 3004
 
@@ -273,21 +276,21 @@ Fabrikam skapar en betalning på 75,00 för leverantör 3004, Fourth Coffee. Bet
 
 ### <a name="fabrikam-payment-is-settled-with-fabrikam-west-invoice-and-fabrikam-east-credit-note"></a>Fabrikam-betalning kvittas mot Fabrikam West-faktura och Fabrikam East-kreditfaktura
 
-**Fabrikam posting**
+**Fabrikam-bokföring**
 
 | Konto                           | Debetbelopp | Kreditbelopp |
 |-----------------------------------|--------------|---------------|
 | Förfaller från Fabrikam West (Fabrikam) | 75,00        |               |
 | Leverantörsreskontra (Fabrikam)       |              | 75,00         |
 
-**Fabrikam East posting**
+**Fabrikam East-bokföring**
 
 | Konto                                | Debetbelopp | Kreditbelopp |
 |----------------------------------------|--------------|---------------|
 | Förfaller från Fabrikam West (Fabrikam East) | 25,00        |               |
 | Leverantörsreskontra (Fabrikam East)       |              | 25,00         |
 
-**Fabrikam West posting**
+**Fabrikam West-bokföring**
 
 | Konto                              | Debetbelopp | Kreditbelopp |
 |--------------------------------------|--------------|---------------|
@@ -295,6 +298,8 @@ Fabrikam skapar en betalning på 75,00 för leverantör 3004, Fourth Coffee. Bet
 | Förfaller till Fabrikam (Fabrikam West)      |              | 75,00         |
 | Leverantörsreskontra (Fabrikam West)     | 25,00        |               |
 | Förfaller till Fabrikam East (Fabrikam West) |              | 25,00         |
+
+
 
 
 

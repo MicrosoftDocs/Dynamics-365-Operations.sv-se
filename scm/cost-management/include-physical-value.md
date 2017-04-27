@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="include-physical-value"></a>Inkludera fysiskt värde
 
+[!include[banner](../includes/banner.md)]
+
+
 Du använder kryssrutan Inkludera fysiskt värde på snabbfliken Lagermodell på sidan Artikelmodellgrupper för att ange om fysiskt uppdaterade transaktioner ska beaktas vid beräkningen av den löpande genomsnittliga självkostnaden för en artikel.
 
 Kryssrutan **Inkludera fysiskt värde** har följande värden.
@@ -49,5 +52,7 @@ Kryssrutan har något olika effekter, beroende på vilken lagermodell som du anv
 -   En inköpsorder för kvantiteten 2 och en självkostnad på 120,00 kronor som har fakturauppdaterats
 
 I det här fallet blir den genomsnittliga självkostnaden 112,00 kronor eftersom både fysiskt och ekonomiskt uppdaterade transaktioner används för att beräkna självkostnaden. **Exempel 2** Du har inte markerat **Inkludera fysiskt värde**-kryssrutan och självkostnaden för artikelns inställningar är 100,00 kronor. Du tar emot en inköpsorder för kvantiteten 20 och en självkostnad på 120,00 kronor som har följesedelsuppdaterats. När en försäljningsorder bokförs, bokförs beloppet 100,00 kronor eftersom den genomsnittliga självkostnaden inte inkluderar fysiskt bokförda transaktioner. **Obs!** Jämfört med, om du markerar **Inkludera fysiskt värde**-kryssrutan för den här artikeln, när en försäljningsorder bokförs, det bokförda kostnadsbeloppet är 120,00 kronor.
+
+
 
 

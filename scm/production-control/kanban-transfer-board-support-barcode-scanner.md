@@ -1,5 +1,5 @@
 ---
-title: "Kanban-Överföringstavla stöd för skannrar streckkod"
+title: "Stöd för kanban-överföringstavla för streckkodsskanner"
 description: "Kanban-överföringstavlan stöder skannerindata från en widgetstreckkodsskanner för att välja, starta, slutföra och tömma ett kanban-jobb."
 author: YuyuScheller
 manager: AnnBe
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="kanban-transfer-board-support-for-barcode-scanners"></a>Kanban-Överföringstavla stöd för skannrar streckkod
+# <a name="kanban-transfer-board-support-for-barcode-scanners"></a>Stöd för kanban-överföringstavla för streckkodsskanner
+
+[!include[banner](../includes/banner.md)]
+
 
 Kanban-överföringstavlan stöder skannerindata från en widgetstreckkodsskanner för att välja, starta, slutföra och tömma ett kanban-jobb.
 
@@ -46,13 +49,13 @@ På snabbfliken **Skannerregistrering** kan du välja det registreringsläge som
 <a name="registration-mode-select"></a>Registreringsläge Välj
 ------------------------
 
-När du använder en streckkodsläsare för att välja ett jobb för kanban-skiva ändras läget. I det här läget gäller följande villkor:
+När du använder en streckkodsläsare för att välja ett jobb, ändras visningsläget på kanban-tavlan. I detta läge gäller följande villkor:
 
 -   Endast skannade kanban-jobb visas.
 -   Information om det utvalda jobbet visas på snabbfliken **Detaljer**.
 -   Snabbfliken **Meddelanden** visas bara för det valda jobbet.
 -   Du kan ändra status för jobbet genom att använda funktionerna som är tillgängliga på Åtgärdsfönster. Kanban-överföringstavla fortsätter att endast visa ett enskilt jobb under denna tid.
--   Du kan uppdatera information i listan över jobb manuellt genom att klicka på **uppdatera** (SKIFT + F5) i åtgärdsfönstret. När du har uppdaterat informationen visas de fullständiga resultaten för jobbfiltret igen.
+-   Du kan uppdatera informationen i listan över jobb manuellt genom att klicka på **Uppdatera** (Shift+F5) på åtgärdsfliken. När du har uppdaterat informationen visas de fullständiga resultaten för jobbfiltret igen.
 
 ## <a name="job-status-and-possible-actions"></a>Jobbstatus och möjliga åtgärder
 Status för valda jobb och status för alla fixerade jobb för händelsekanban avgör om du kan ytterligare bearbeta jobbet. Följande tabell visar information om dessa status och uppgifter:
@@ -185,6 +188,8 @@ Status för valda jobb och status för alla fixerade jobb för händelsekanban a
 </tr>
 </tbody>
 </table>
+
+
 
 
 

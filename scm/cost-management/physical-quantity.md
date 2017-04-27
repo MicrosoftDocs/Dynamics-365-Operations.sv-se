@@ -1,5 +1,5 @@
 ---
-title: "Objektvärden lager"
+title: "Värden för lagerobjekt"
 description: "Det här avsnittet innehåller information om hur värdena för ett lagerobjekt beräknas."
 author: YuyuScheller
 manager: AnnBe
@@ -27,14 +27,14 @@ ms.lasthandoff: 03/29/2017
 
 ---
 
-# <a name="inventory-object-values"></a>Objektvärden lager
+# <a name="inventory-object-values"></a>Värden för lagerobjekt
 
 Det här avsnittet innehåller information om hur värdena för ett lagerobjekt beräknas. 
 
-En ny funktion som kallas ** fysisk kvantitet ** kan du visa värdena i ett visst lager objekt. Ett kostnadsobjekt representerar enhetsnivån där lagerredovisning utförs. Mer information om kostnadsobjekt finns i [Kostnadsobjekt](cost-object.md). Klicka för att visa värdena i ett visst lager objekt **fysisk kvantitet** på de **kostnadsbäraren** sida. Det finns också hur värdet på objektets lager beräknas: objekt på lager. Värde = kostnadsbäraren. Genomsnittlig enhetskostnad × lager objekt. Kvantitet i följande exempel visar hur värdena för ett objekt i lagret och en kostnadsbärare beräknas. Två produktinleveranshändelser registreras på artikel A:
+En ny funktion med namnet **fysisk kvantitet** visar värdena för ett visst lagerobjekt. Ett kostnadsobjekt representerar enhetsnivån där lagerredovisning utförs. Mer information om kostnadsobjekt finns i [Kostnadsobjekt](cost-object.md). För att visa värdena för ett visst lagerobjekt, klicka på **Fysisk kvantitet** på sidan **Kostnadsobjekt**. Så här beräknas värdet på lagerobjektet: Inventory object.Value = Cost object.Average unit cost × Inventory object.Quantity Följande exempel visar hur värdena för ett lagerobjekt och ett kostnadsobjekt beräknas. Två produktinleveranshändelser registreras på artikel A:
 
--   Produktinleverans 1: kvantitet = 100 Stk., belopp = $1,000.00 Site = 1, lagerställe = 11 Batch No. = B1
--   Produktinleverans 2: kvantitet = 50 Stk., belopp = $800.00 Site = 1, lagerställe = 11 Batch No. = B2
+-   Produktinleverans 1: Kvantitet = 100 st., Belopp = 1 000,00 USD, Plats = 1, Lagerställe =11, Buntnr. = B1
+-   Produktinleverans 2: Kvantitet = 50 st., Belopp = 800,00 USD, Plats = 1, Lagerställe =11, Buntnr. = B2
 
 Följande tabell visar beräkningsresultatet för ett kostnadsobjekt. Du kan visa resultaten på sidan **Kostnadsobjekt**.
 
@@ -130,10 +130,10 @@ Följande tabell visar beräkningsresultatet för ett lagerobjekt. Du kan visa r
 <a name="see-also"></a>Se även
 --------
 
-[Cost objects](cost-object.md)
+[Kostnadsobjekt](cost-object.md)
 
-[Cost entries](cost-entries.md)
+[Kostnadsposter](cost-entries.md)
 
-[Vad är nya och ändrade i Microsoft Dynamics AX](/dynamics365/operations/dev-itpro/get-started/whats-new-changed)
+[Nyheter och ändringar i Microsoft Dynamics AX](/dynamics365/operations/dev-itpro/get-started/whats-new-changed)
 
 

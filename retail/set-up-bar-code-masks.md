@@ -1,6 +1,6 @@
 ---
 title: "Ställ in streckkodsmasker"
-description: "Det här avsnittet beskrivs hur du ställer in streckkodsmasktecken, masker för streckkoder och maskerar tilldela streckkod till streckkoder."
+description: "Det här avsnittet beskriver hur du ställer in streckkodsmasktecken, streckkodsmasker och hur du tilldelar streckkodsmasker till streckkoder."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User, Developer, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 265994
 ms.assetid: 5831c74d-d2a1-4fa5-9a9a-a5aba8848381
 ms.search.region: global
@@ -27,57 +27,62 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="set-up-bar-code-masks"></a>Ställ in streckkodsmasker
 
-Det här avsnittet beskrivs hur du ställer in streckkodsmasktecken, masker för streckkoder och maskerar tilldela streckkod till streckkoder.
+[!include[banner](includes/banner.md)]
+
+
+Det här avsnittet beskriver hur du ställer in streckkodsmasktecken, streckkodsmasker och hur du tilldelar streckkodsmasker till streckkoder.
 
 <a name="set-up-bar-code-mask-characters"></a>Ställ in streckkodsmasktecken
 -------------------------------
 
-Streckkodsmasker används för att skapa streckkoder och snabbt identifiera streckkoder som skannas till försäljningsstället (PO). Masker består av tecken som fungerar som platshållare som anger formatet för streckkoder som ska skapas. Om du vill konfigurera en streckkodsmask måste du ställa in streckkodsmasktecken. Gå till **butik och handel**&gt;**lagerhantering**&gt;**streckkoder och etiketter**&gt;**tecken Mask**. Klicka på **New** att skapa streckkodsmasktecken. Masktecken kan skapas för att ange följande data i streckkoden.
+Streckkodsmasker används för att skapa streckkoder och snabbt identifiera streckkoder som skannas till betalningsplatsen (POS). Masker består av tecken som fungerar som platshållare som anger formatet för streckkoder som ska skapas. Om du vill konfigurera en streckkodsmask måste du ställa in streckkodsmasktecken. Gå till **Butik och handel** &gt; **Lagerhantering** &gt; **Streckkoder och etiketter** &gt; **Streckodsinställningar**. Klicka på **Ny** om du vill skapa ett nytt streckkodsmasktecken. Masktecken kan skapas för att ange följande data i streckkoden.
 
 |                      |                                                                                                                 |
 |----------------------|-----------------------------------------------------------------------------------------------------------------|
-| **Field**            | **Description**                                                                                                 |
-| **Product**          | Platshållare för produkt-ID.                                                                                     |
-| **Any number**       | Används för att ange ett tal som är hårddiskar kodats i streckkoder.                                                  |
-| **Check digit**      | Anger att streckkodsformat i en streckkodsmask används en kontrollsiffra för att bekräfta giltigheten hos en streckkod. |
-| **Size digit**       | Anger storleken i en streckkod för produktvarianten som innehåller storlek.                                 |
-| **Color digit**      | Anger färgen på en streckkod för produktvarianten som innehåller färg.                               |
-| **Style digit**      | Anger formatet på en streckkod för produktvarianten som innehåller en formatmall.                             |
-| **EAN license code** | Platshållare för EAN-licens utfärdad för EAN licenskoder.                                                       |
-| **Pris**            | Visar pris pris inbäddade streckkoder.                                                                   |
-| **Quantity**         | Anger kvantiteten i antal slumpmässigt vikt inbäddad streckkoder.                                                |
-| **Employee**         | Anger streckkod segmentet anställningsnummer för streckkod POS-inloggning.                                  |
-| **Customer**         | Anger ID kundsegment.                                                                                  |
-| **Inmatning av data**       | *Har inte implementerats ännu.*                                                                                          |
-| **Discount code**    | Anger en rabattkod för en streckkod som används för att lägga till en rabatt i en mittpunkt försäljningstransaktionen             |
-| **Presentkort**        | Anger presentkortsnummer när de utfärdar eller betala med presentkort.                                               |
-| **Loyalty card**     | Lägger till en förmånskund har använt i transaktionen och kan användas vid betalning av förmåner.                             |
+| **Fält**            | **Beskrivning**                                                                                                 |
+| **Produkt**          | Platshållare för produkt-ID.                                                                                     |
+| **Valfritt nummer**       | Används för att ange ett tal som kommer att bli hårdkodade i streckkoder.                                                  |
+| **Kontrollsiffra**      | Anger att streckkodsformatet i en streckkodsmask använder en kontrollsiffra för att bekräfta giltigheten hos en streckkod. |
+| **Sifferstorlek**       | Anger storleken i en streckkod för produktvarianten som innehåller storlek.                                 |
+| **Sifferfärg**      | Anger färg i en streckkod för produktvarianten som innehåller färg.                               |
+| **Sifferformat**      | Anger formatet i en streckkod för produktvarianten som innehåller ett format.                             |
+| **EAN-licenskod** | Platshållare för EAN-licens utfärdad för EAN-licenskoder.                                                       |
+| **Pris**            | Anger pris för prisinbäddade streckkoder.                                                                   |
+| **Kvantitet**         | Anger kvantiteten i kvantitet/slumpmässigt viktinbäddade streckkoder.                                                |
+| **Medarbetare**         | Anger streckkodssegment för anställningsnummer som ska användas för kassainloggning med streckkod.                                  |
+| **Kund**         | Anger kund-ID-segment.                                                                                  |
+| **Datapost**       | *Ej implementerad.*                                                                                          |
+| **Rabattkod**    | Anger en rabattkod för en streckkod som används för att lägga till en rabatt i en kassatransaktion             |
+| **Presentkort**        | Anger ett presentkortsnummer när de utfärdar eller betalar med presentkort.                                               |
+| **Förmånskort**     | Lägger till en förmånskund till transaktionen och kan användas vid betalning av förmåner.                             |
 
 ## <a name="define-bar-code-masks"></a>Definiera streckkodsmasker
-När du anger streckkodsmasktecken för nödvändiga streckkodsmasker, går du till **butik och handel**&gt;**lagerhantering**&gt;**streckkoder och etiketter**&gt;**Streckkodsinställningar mask**. På den här sidan kan du definiera streckkodsmasker med tidigare angivna tecken. Dessa streckkod masker ska användas vid generering av streckkoder och även bidra till att identifiera streckkoder skannas i KASSAN.
+När du anger streckkodsmasktecken för nödvändiga streckkodsmasker, går du till **butik och handel** &gt;**lagerhantering** &gt;**streckkoder och etiketter** &gt;**streckkodsinställningsmask**. På den här sidan kan du definiera streckkodsmasker med tidigare angivna tecken. Dessa streckkodsmasker ska användas vid generering av streckkoder och även bidra till att identifiera streckkoder som skannas i kassan.
 
-1.  Klicka på **New** du skapar en ny streckkodsmasken.
-2.  Ange värden i den **Mask-ID för** och **beskrivning** fält och välj en streckkodsmask den **typ** fältet.
-3.  I den **allmänna** och välj ett värde i den **Streckkodsstandard** fält och sedan ange prefixet streckkod om en sådan krävs.
-4.  I den **Streckkodsmasksegment** avsnitt, lägga till streckkod segment som ska användas i streckkoden ska skapas.
+1.  Klicka på **Ny** om du vill skapa en ny streckkodsmask.
+2.  Ange värden i fälten **Mask-ID** och **beskrivning** och välj en streckkodsmask fältet **typ** .
+3.  I avsnittet **allmän** väljer du ett värde i fältet **Streckkodsstandard** och anger sedan streckkodsprefixet om ett sådant krävs.
+4.  I avsnittet **Streckkodsmasksegment** lägger ni till streckkodssegment som ska användas i streckkoden som ska skapas.
 
-Exempelvis om du vill skapa en streckkodsmask mask-ID för produkt, gör du följande:
+Exempelvis om du vill skapa en streckkodsmask med mask-ID för produkt, gör du följande:
 
 1.  Skapa en ny streckkodsmask och välj "Produkt".
-2.  Välj en streckkod standard, till exempel kod 39' '.
-3.  Ange ett prefix som ska användas för att enkelt identifiera streckkoden. Exempelvis "22".
-4.  Lägg till ett segment i masken. Segmentet "Product" masken markeras.
-5.  Ange längden för produkten segment, till exempel "10". Längden ska matcha längden på ett produkt-ID som ofta används i butiken. Masken ska visas som en förhandsgranskning i den **allmänna** enligt avsnitt **Mask**.
+2.  Välj en streckkodsstandard, t.ex. "Kod 39".
+3.  Ange ett prefix som ska användas för att enkelt identifiera streckkoden. Till exempel "22".
+4.  Lägg till ett masksegment. Masksegmentet "Produkt" markeras.
+5.  Ange längden för produktsegment, till exempel "10". Längden ska matcha längden på ett produkt-ID som används ofta i butiken. Masken ska visas som en förhandsgranskning i avsnittet **allmän** under **Mask**.
 
-## <a name="assign-bar-code-masks-to-bar-codes"></a>Tilldela streckkoder streckkodsmasker
-Streckkodsmasker måste tilldelas streckkoder innan de kan användas. Fortsätter med exemplet ovan streckkodsmasken tilldelas en streckkod, gör du så här:
+## <a name="assign-bar-code-masks-to-bar-codes"></a>Tilldela streckkodsmasker till streckkoder
+Streckkodsmasker måste tilldelas till streckkoder innan de kan användas. Gör följande för att tilldela streckkodsmasken till en streckkod:
 
-1.  Gå till **Organisationsadministration**&gt;**inställningar**&gt;**streckkoder**. Klicka på **New** du skapar en ny streckkod.
-2.  Ange värden i de **streckkod****inställningar** och ** inställningar ** fält.
-3.  I den **allmänna** avsnitt i den **streckkodstyp** väljer "Kod 39". I den **Mask****ID** väljer du skapade masken "Produkt".
-4.  Under **storlek**, ange "12".
-5.  Click **Save**.
+1.  Gå till **Organisationsadministration** &gt; **Inställningar** &gt; **Streckkoder**. Klicka på **Ny** för att skapa en ny streckkod.
+2.  Ange värden i fälten **Streckkod** **inställning** och **Inställning **.
+3.  I avsnittet **allmänt** i fältet **streckkodstyp** väljer du "Kod 39". I fältet **Mask****ID** väljer du masken "Produkt" som skapats tidigare.
+4.  Under **storlek**, anger du "12".
+5.  Klicka på **Spara**.
 
-Streckkodsmasken kan nu användas för att skapa streckkoder för produkter. De visar också skapa streckkodsmasker för någon av andra stöds Streckkodstyper stegen ovan är exempel på hur du kan skapa streckkodsmasker för produkter. Streckkodsmasker, typer och längd skall justeras för användning i din miljö.
+Streckkodsmasken kan nu användas för att skapa streckkoder för produkter. Stegen ovan är exempel på hur du skapar streckkodsmasker för produkter, men de visar också hur du kan skapa streckkodsmasker för alla andra streckkodstyper som stöds. Streckkodsmasker, typer och längd ska justeras för användning i din specifika miljö.
+
+
 
 

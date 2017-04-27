@@ -1,6 +1,6 @@
 ---
-title: "Blandat läge planering - kombinera diskreta bearbeta och lean-inköp"
-description: "Det här avsnittet innehåller information om läget för blandad planering. I läget för blandad planering kan du utforma din leveranskedja baserat på materialflödet. Microsoft Dynamics 365 för åtgärder som säkerställer att materialflödet följer modeller, oavsett principen leverans är markerad (kanbans, tillverkningsorder, inköpsorder, batchorder eller överföringsorder)."
+title: "Blandad planering - Kombinera diskret, process- och lean-försörjning"
+description: "Det här avsnittet innehåller information om läget för blandad planering. I läget för blandad planering kan du utforma din leveranskedja baserat på materialflödet. Microsoft Dynamics 365 for Operations ser till att materialflödet följer dina modeller, oavsett den valda leveranspolicyn (kanban, produktionsorder, inköpsorder, batchorder eller överföringsorder)."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,9 +26,12 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="mixed-mode-planning---combine-discrete-process-and-lean-sourcing"></a>Blandat läge planering - kombinera diskreta bearbeta och lean-inköp
+# <a name="mixed-mode-planning---combine-discrete-process-and-lean-sourcing"></a>Blandad planering - Kombinera diskret, process- och lean-försörjning
 
-Det här avsnittet innehåller information om läget för blandad planering. I läget för blandad planering kan du utforma din leveranskedja baserat på materialflödet. Microsoft Dynamics 365 för åtgärder som säkerställer att materialflödet följer modeller, oavsett principen leverans är markerad (kanbans, tillverkningsorder, inköpsorder, batchorder eller överföringsorder). 
+[!include[banner](../includes/banner.md)]
+
+
+Det här avsnittet innehåller information om läget för blandad planering. I läget för blandad planering kan du utforma din leveranskedja baserat på materialflödet. Microsoft Dynamics 365 for Operations ser till att materialflödet följer dina modeller, oavsett den valda leveranspolicyn (kanban, produktionsorder, inköpsorder, batchorder eller överföringsorder). 
 
 Du kan välja din övergripande strategi för att leverera en produkt, oavsett produktstrukturen.  
 
@@ -37,7 +40,7 @@ Du kan till exempel ha kanban i församlingen, där material köps för monterin
 Granulariteten av utbudspolicy som används i huvudplanering beror på lagring dimensioner som är aktiverade som täckning måtten. Om du vill aktivera huvudplanering för återfyllning och utbudet av olika typer av platser (t.ex. genom att separera fabriksgolvet för olika produktionsenheter, eller genom att separera olika typer av material och färdiga varor lagerlokaler), rekommenderar vi att du aktiverar ort och lager som täckning måtten. Alternativt kan lagret kan uteslutas som en täckning dimension. I så fall, när du använder avancerad lagerhantering, alla rörelser inuti ett lager styrs av lagerarbetet, medan alla rörelser över lager kan styras genom tillbakadragande kanban.
 
 ## <a name="supply-policies"></a>Utbudspolicyn
-Dynamics 365 för blandat läge operationsplaneringen styr hur en produkt har lämnats och, utifrån leverans, hur härledda behov (förbrukning av artiklar från en strukturlista som \[Strukturen\]) utfärdas. Baserat på vilken typ av order automatiskt källor material som matchar kraven.  
+Blandad planering i Dynamics 365 for Operations styr hur produkten levereras samt (baserat på tillgång) hur härledda krav (förbrukning av artiklar från en strukturlista \[BOM\]) utfärdas. Baserat på vilken typ av order automatiskt källor material som matchar kraven.  
 
 Utbudspolicyn kan definieras på produktnivå eller vid någon finkornighet som stöder dina krav. Du definierar granulariteten i utbudspolicyer på **Standard för inställningar ** sidan.  
 
@@ -45,9 +48,9 @@ Utbudspolicyn kan styras av produkten, dimensioner (konfiguration, färg och sto
 
 Den standardinställda ordertypen styr i vilken ordning huvudplanering genererar.  
 
-Oavsett hur leveranskedjan modelleras stöder Dynamics 365 för operationer i blandade strategier för försörjningstryggheten. Du kan ha en order som hämtas från kanban. Alternativt kan du ha en kull order som kräver en produkt som levereras genom överföringar eller kanban.  
+Oavsett hur leveranskedjan hr modellerats stöder Dynamics 365 for Operations stöder din blandade leveranspolicy. Du kan ha en order som hämtas från kanban. Alternativt kan du ha en kull order som kräver en produkt som levereras genom överföringar eller kanban.  
 
-Dynamics 365 för åtgärder som säkerställer att materialflödet följer modellen.  
+Dynamics 365 for Operations ser till att materialflödet följer modellen.  
 
 Lagret för att plocka material tilldelas dynamiskt vid tiden efter policyn har definierats.  
 
@@ -55,14 +58,16 @@ Typiskt, kanban är inte skapt för framtida datum, eftersom en kanban har en ko
 
 Samma logik föreligger för alla andra typer av policy. Därför långsiktiga material planering baseras på samma logik som du förväntar dig att köra med verkliga order efter produktion och leverans är godkända.
 
-## <a name="materials-allocation-crosssupply-policy--resource-consumption-on-boms"></a>Material crosssupply allokeringsprincip – resursförbrukning i strukturlistor
+## <a name="materials-allocation-crosssupply-policy--resource-consumption-on-boms"></a>Tvärleveranspolicy för materialfördelning – Resursförbrukning i strukturlistor
 Resursförbrukning är en viktig funktion. Resursförbrukning gör ett lager för att plocka material väljas dynamiskt baserat på policyn (typ), och också gör underhållet av bas data enklare.  
 
 Resursförbrukning kräver att lagret att material plockas från tilldelas baserat på det sätt som produkten levereras. Med andra ord, kör helst systemet hittar de resurser som ska användas för tillverkning. Baserat på dessa resurser, därefter finner plockar lager.  
 
-För arbete som är oberoende av policyn, behöver du inte ändra informationen på BOM om matningen har ändrats. För ad hoc-ändringar säkerställer Dynamics 365 för åtgärder som att materialet är källor från rätt lagerställe.
+För arbete som är oberoende av policyn, behöver du inte ändra informationen på BOM om matningen har ändrats. För ad hoc-förändringar ser Dynamics 365 for Operations till att material köps in från rätt lager.
 
 ## <a name="process-manufacturing--the-production-type"></a>Process manufacturing – produktion typ
-Fullständig flexibilitet i blandat läge rekommenderar vi att du använder strukturlistor produktionstypen för alla produkter. Du kan sedan använda inköpsorder, överföringsorder, kanbans eller produktionsorder för att tillhandahålla en produkt. Process manufacturing, måste du använda en typ av **formel**, **Co-produkt**, **biprodukt**eller **planering**. Kanban och produktionsorder kan inte användas för dessa typer av produktion.
+För fullständig flexibilitet i blandat läge rekommenderar vi att du använder strukturlistor av produktionstyp för alla produkter. Du kan sedan använda produktionsorder, överföringsorder, kanbans eller inköpsorder för att tillhandahålla en produkt. Process manufacturing, måste du använda en typ av **formel**, **Co-produkt**, **biprodukt**eller **planering**. Kanban och produktionsorder kan inte användas för dessa typer av produktion.
+
+
 
 

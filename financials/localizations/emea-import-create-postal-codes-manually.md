@@ -1,6 +1,6 @@
 ---
-title: Importera eller manuellt skapa postnummer
-description: "Den här artikeln beskrivs hur du importerar och manuellt skapa postnummer i rätt format. Det här avsnittet innehåller information om funktioner som har lagts till för Microsoft Dynamics 365 för operationer."
+title: Importera eller skapa postnummer manuellt
+description: "Den här artikeln beskriver hur du importerar och manuellt skapar postnummer i rätt format. Det här avsnittet innehåller information om funktioner som har lagts till för Microsoft Dynamics 365 for Operations."
 author: ShylaThompson
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,23 +25,28 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="import-or-manually-create-postal-codes"></a>Importera eller manuellt skapa postnummer
+# <a name="import-or-manually-create-postal-codes"></a>Importera eller skapa postnummer manuellt
 
-Den här artikeln beskrivs hur du importerar och manuellt skapa postnummer i rätt format. Det här avsnittet innehåller information om funktioner som har lagts till för Microsoft Dynamics 365 för operationer. 
+[!include[banner](../includes/banner.md)]
 
-Importen kan du uppdatera postnummer för ett visst land/region. Du kan skapa postnummer manuellt.
+
+Den här artikeln beskriver hur du importerar och manuellt skapar postnummer i rätt format. Det här avsnittet innehåller information om funktioner som har lagts till för Microsoft Dynamics 365 for Operations. 
+
+Genom importen kan du uppdatera postnummer för ett visst land/en viss region. Du kan också skapa postnummer manuellt.
 
 ## <a name="import-zippostal-codes"></a>Importera postnr
-Du kan använda den **importera postnummer** sidan Importera nya postnummer till Microsoft Dynamics 365 för operationer. När du importerar koderna befintliga postnummer och postkoder ersätts med det nya formatet och läggs alla nya koder.
+Du kan använda sidan **Importera postnummer** för att importera nya postnummer till Microsoft Dynamics 365 for Operations. När du importerar koderna ersätts befintliga postnummer och postkoder med det nya formatet, och alla nya nummer/koder läggs till.
 
-I vissa länder, måste du använda Data management framework importera koderna, medan andra länder krävs bara den överförda filen. Belgien, Nederländerna och Sverige måste filen som ska överföras.
+I vissa länder måste du använda ramverket för datahantering för att importera koder, medan för andra länder bara den överförda filen krävs. Belgien, Nederländerna och Sverige kräver en fil att överföra.
 
 > [!NOTE]
-> -   Belgien ger en officiell förteckning av postcodes och motsvarande ortsnamnet officiella webbsida från belgiska inlägget. Importen stöder html-format.
-> -   Nederländerna är en tredje parts den fil som innehåller postnummer. När importen har slutförts visas alla postnummer i formatet (NNNN AA).
-> -   Postnummerservice.se för Sverige, innehåller två typer av filer: svenska postnummer och svenska adresser. Importen stöder textformat för båda typerna.
+> -   För Belgien tillhandahåller det belgiska postverkets hemsida en officiell lista över postnumren och motsvarande ortsnamn. Importen stöder html-filformat.
+> -   För Nederländerna tillhandahåller en tredjepartsorganisation den fil som innehåller postnummer. När importen har slutförts visas alla postnummer i formatet (NNNN AA).
+> -   För Sverige finns Postnummerservice.se, som tillhandahåller två typer av filer: svenska postnummer och svenska adresser. Importen stöder textfilsformat för båda typer.
 
 
-## <a name="create-zippostal-codes-manually"></a>Skapa postnummer manuellt
-I stället för import av koder som du kan använda den **adressinställning** sida manuellt lägga till nya postnummer.
+## <a name="create-zippostal-codes-manually"></a>Skapa postnummer/postkoder manuellt
+I stället för att importera koder kan du använda sidan **Adressinställningar** för att manuellt lägga till nya postnummer.
+
+
 

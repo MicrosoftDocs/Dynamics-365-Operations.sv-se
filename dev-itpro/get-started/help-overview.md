@@ -1,5 +1,5 @@
 ---
-title: "Hjälp, översikt"
+title: "Hjälpöversikt"
 description: "Den här artikeln innehåller en översikt över komponenterna i hjälpsystemet för Microsoft Dynamics 365 for Operations. Det innehåller beskrivningar av hur du kan skapa anpassad dokumentation och utbildning för din organisation."
 author: margoc
 manager: AnnBe
@@ -25,34 +25,34 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="help-overview"></a>Hjälp, översikt
+# <a name="help-overview"></a>Hjälpöversikt
 
 Den här artikeln innehåller en översikt över komponenterna i hjälpsystemet för Microsoft Dynamics 365 for Operations. Det innehåller beskrivningar av hur du kan skapa anpassad dokumentation och utbildning för din organisation. 
 
 Dynamics 365 for Operations inkluderar ett hjälpsystem baserat på två huvudkomponenter:
 
--   En webbplats med dokumentation
+-   En dokumentationsplats
 -   Uppgiftsguider
 
-Du hittar både artiklar och aktiviteter stödlinjerna från hjälpfönstret i Dynamics 365 för åtgärder enligt följande skärmbild. [![Hjälpfönstret](./media/help-pane-ops-task-guides-1024x741.png)](./media/help-pane-ops-task-guides.png) i den här artikeln beskrivs hjälpsystemet och förklarar hur du skapar anpassade dokumentation och resurser för din organisation.
+Du har tillgång till både artiklar och uppgiftsguider via Hjälp-fönstret i Dynamics 365 for Operations enligt följande skärmdump. [![Help pane](./media/help-pane-ops-task-guides-1024x741.png)](./media/help-pane-ops-task-guides.png) Den här artikeln innehåller en beskrivning av hjälpsystemet och förklarar hur du kan skapa anpassad dokumentation och anpassade utbildningsresurser för din organisation.
 
 ## <a name="help-on-docsmicrosoftcom"></a>Hjälp om docs.microsoft.com
-Webbplatsen för docs.microsoft.com ([docs.microsoft.com/dynamics365/operations](https://docs.microsoft.com/en-us/dynamics365/#pivot=solutions&panel=solutions_operations) är den primära källan med Produktinformation om Dynamics 365 för operationer. Webbplatsen innehåller följande funktioner:
+Webbplatsen docs.microsoft.com ([docs.microsoft.com/dynamics365/operations](https://docs.microsoft.com/en-us/dynamics365/#pivot=solutions&panel=solutions_operations) är den primära källan för produktinformation om Dynamics 365 for Operations. Webbplatsen erbjuder följande funktioner:
 
--   **Tillgång till det senaste innehållet** – webbplatsen ger oss ett snabbare och mer flexibelt sätt att skapa, distribuera och uppdatera produktdokumentation. Därför garanterar den att du har tillgång till den senaste tekniska informationen.
--    **Innehåll som skrivits av experter** – webbplatsen tillhandahåller en större uppsättning produktdokumentationen som medlemmar både i och utanför Microsoft kan förbättras.
--   ** Tillgång till olika slags innehåll **-webbplatsen kan du snabbt åtkomst olika typer av information om Dynamics 365 för operationer, till exempel Microsoft Office Mix presentationer aktiviteter stödlinjerna, videoklipp och wiki-artiklar.
--    **Innehåll som stöder affärsprocesserna** – webbplatsen innehåller business process – fokuserar innehåll som drar fördel av den Modellerare BPM (Business Process) i Microsoft Dynamics Lifecycle Services (LCS).
+-   **Åtkomst till det senaste innehållet**– Webbplatsen ger oss ett snabbare och mer flexibelt sätt att skapa, leverera och uppdatera produktdokumentation. Därför garanterar den att du har tillgång till den senaste tekniska informationen.
+-    **Innehåll skrivet av experter**– Webbplatsen ger en större mängd produktdokumentation som kan förbättras av community-medlemmar både inom och utanför Microsoft.
+-   ** Åtkomst till andra typer av innehåll** – Webbplatsen ger dig snabb åtkomst till olika typer av innehåll om Dynamics 365 for Operations, till exempel Microsoft Office Mix-presentationer, uppgiftsguider, videor och wikiartiklar.
+-    **Innehåll som stöder dina affärsprocesser**– Webbplatsen innehåller affärsprocessfokuserat innehåll som använder affärsprocessmodelleraren (Business Process Modeler, BPM) i Microsoft Dynamics Lifecycle Services (LCS).
 
-Vi har flyttats från vår föregående hjälp-wiki allt innehåll till dokument. Vi är mycket nöjda med vår nya webbplats och hoppas som du för.
+Vi har flyttat allt innehåll från vår föregående hjälp-wiki till dokument. Vi är mycket stolta över vår nya webbplats och hoppas att även du gillar den.
 
 ### <a name="when-can-we-use-it"></a>När använder vi den?
 
-Du kan läsa innehållet på dokument just nu – är offentlig och fullständigt sökbart utan att behöva logga in. Du kan använda alla dina favoritsökmotorer för att söka efter innehåll. Du kan kommentera artiklar på webbplatsen om du väljer genom att logga in med ett konto för GitHub.
+Du kan läsa innehåll i dokument nu direkt -- det är helt offentligt och sökbart utan att kräva inloggning. Du kan använda alla dina favoritsökmotorer för att söka efter innehåll. Om du vill kan du kommentera artiklar på webbplatsen genom att logga in med ett GitHub-konto.
 
 
 ## <a name="task-guides"></a>Uppgiftsguider
-En aktivitet guide är en kontrollerad, interaktiv, interaktiv upplevelse som leder dig genom stegen för en aktivitet eller affärsprocess. Du kan öppna en uppgift (play) guide från hjälpfönstret. När du klickar på en aktivitet guide visas visas hjälpfönstret stegvisa instruktioner för uppgiften. Lokaliserade uppgiften guiderna är nu tillgängliga. [![Guide för uppgiften visar](./media/task-guide-ops-1024x742.png)](./media/task-guide-ops.png) starta interaktiv, interaktiv upplevelse, klicka på **Starta aktivitet guide** längst ner i hjälpfönstret. En svart pekare öppnas och visar åtgärden som du måste utföra. Följ beskrivningarna som anges i gränssnittet och ange data som anvisat. [![Uppgift för steg instruktioner](./media/task-guide-step-1-ops.png)](./media/task-guide-step-1-ops.png)**viktigt:** data som du anger när du spelar upp en aktivitet guide är riktiga. Om du arbetar i en produktionsmiljö anges data i företaget som du för närvarande använder.
+En uppgiftsguide är en kontrollerad, guidad, interaktiv upplevelse som leder dig genom stegen för en uppgift eller en affärsprocess. Du kan öppna (spela upp) en uppgiftsguide via fönstret Hjälp. När du först klickar på en uppgiftsguide visar fönstret Hjälp steg för steg-instruktionerna för uppgiften. Nu finns det lokaliserade uppgiftsguider. [![Läsvy för uppgiftsguide](./media/task-guide-ops-1024x742.png)](./media/task-guide-ops.png) Starta den guidade, interaktiva upplevelsen genom att klicka på **Starta uppgiftsguide** längst ned i fönstret Hjälp. En svart pekare öppnas och visar åtgärden som du måste utföra. Följ beskrivningarna som anges i gränssnittet och ange data som anvisat. [![Steginstruktion för uppgiftsguide](./media/task-guide-step-1-ops.png)](./media/task-guide-step-1-ops.png) **Viktigt:** De data som du matar in när du spelar upp en uppgiftsguide är verkliga. Om du arbetar i en produktionsmiljö anges data i företaget som du för närvarande använder.
 
 ### <a name="it-all-begins-with-task-recorder"></a>Allt börjar med uppgiftsregistreraren
 
@@ -61,53 +61,53 @@ Uppgiftsguider skapas genom med uppgiftsregistreraren. När du använder uppgift
 -   **Spara uppgiftsregistrering i BPM** – Du kan spara en uppgiftsregistrering på en rad i en hierarki i ett BPM-bibliotek i LCS. När du sparar en uppgiftsregistrering i BPM, genereras och visas ett flödesschema tillsammans med stegen för inspelningen. **Obs!** Om du vill visa en uppgiftsregistrering i hjälpfönstret för Dynamics 365 for Operations och spela upp den som en uppgiftsguide, måste du spara registreringen i ett BPM-bibliotek.
 -   **Spara uppgiftsregistrering som Word-dokument** – Genom att spara en uppgiftsregistrering som ett Microsoft Word-dokument kan du enkelt producera utskrivbara utbildningsguider för din organisation.
 
-Mer information om Uppgiftsinspelning finns [Uppgiftsinspelning i Dynamics 365 för](../user-interface/task-recorder.md).
+För mer information om uppgiftsinspelaren, se [Uppgiftsinspelaren i Dynamics 365 for Operations](../user-interface/task-recorder.md).
 
 ### <a name="creating-customized-task-recordings"></a>Skapa anpassade uppgiftsregistreringar
 
-Du kan skapa egna uppgiftsregistreringar eller så hämta och anpassa uppgiftsregistreringen som Microsoft tillhandahåller. Därför kan du skapa anpassad hjälp för din organisation som återspeglar din specifika implementering av Dynamics 365 for Operations. Visar en uppgift i Dynamics 365 för operationer hjälpfönstret och spelas upp som en aktivitet måste du spara inspelningen i ett bibliotek LCS BPM. Om du är en partner samt främja ett bibliotek till ett företag och inkludera den i en lösning kan vara det tillgänglig för dina kunder. Utförliga instruktioner finns i [skapa dokumentation eller teknisk utbildning med uppgiften inspelningar](../user-interface/task-recorder.md).
+Du kan skapa egna uppgiftsregistreringar eller så hämta och anpassa uppgiftsregistreringen som Microsoft tillhandahåller. Därför kan du skapa anpassad hjälp för din organisation som återspeglar din specifika implementering av Dynamics 365 for Operations. Om du vill visa en uppgiftsregistrering i hjälpfönstret för Dynamics 365 for Operations och spela upp den som en uppgiftsguide, måste du spara registreringen i ett BPM-bibliotek i LCS. Om du är partner och befordrar ett bibliotek till ett företagsbibliotek och inkluderar det i en lösning, blir det tillgängligt även för dina kunder. Fullständiga instruktioner finns i [Använda uppgiftsregistreringar för att skapa dokumentation eller utbildning](../user-interface/task-recorder.md).
 
 ## <a name="in-product-help"></a>Produkthjälp
-Hjälpinnehållet i Dynamics 365 för operationer antingen klicka på den **hjälp** (**?**) ikonen och välj hjälp eller trycker på Ctrl + Skift +. I båda fall öppnas fönstret Hjälp. Du hittar i Hjälp-fönstret artiklar eller aktiviteter stödlinjerna. [![](./media/help-pane-wiki-1024x684.png)](./media/help-pane-wiki.png)
+För att nå hjälpavsnittet i Dynamics 365 for Operations , klicka antingen på ikonen **Hjälp** (**?**) och välj sedan Hjälp, eller trycks på Ctrl+Shift+?. I båda fall öppnas fönstret Hjälp. I fönstret Hjälp kan du öppna artiklar eller uppgiftsguider. [![](./media/help-pane-wiki-1024x684.png)](./media/help-pane-wiki.png)
 
-### <a name="accessing-articles-from-the-help-pane"></a>Komma åt artiklar på hjälpfönstret
+### <a name="accessing-articles-from-the-help-pane"></a>Öppna artiklar via hjälpfönstret
 
-Du kommer åt artiklar som gäller Dynamics 365 operationer klient från Hjälp-fönstret. När du först öppnar hjälpfönstret och klicka på den **Wiki** fliken visas artiklarna som gäller för den sida som du använder på Dynamics 365 för operationer. Om inga artiklar finns kan du ange nyckelord om du vill begränsa sökningen. När du klickar på en artikel i hjälpfönstret en ny flik öppnas i webbläsaren och visar artikeln. 
+Via fönstret Hjälp kan du öppna artiklar som gäller för Dynamics 365 for Operations-klienten. När du först öppnar hjälpfönstret och klickar på fliken **Wiki** ser du de artiklar som gäller för den sida du för närvarande använder i Dynamics 365 for Operations. Om inga artiklar hittas kan du ange nyckelord för att begränsa sökningen. När du klickar på en artikel i fönstret Hjälp öppnas en ny flik i webbläsaren som visar artikeln. 
 
-### <a name="accessing-task-guides-from-the-help-pane"></a>Komma åt aktiviteter stödlinjerna på hjälpfönstret
+### <a name="accessing-task-guides-from-the-help-pane"></a>Öppna uppgiftsguider via hjälpfönstret
 
-Innan du når guiderna uppgift från hjälpfönstret systemadministratör måste den **systemparametrar** sidan i Dynamics 365 för operationer och konfigurera vissa inställningar. **Anteckningar:**
+Innan du kan få åtkomst till uppgiftsguiderna via hjälpfönstret måste en systemadministratör öppna sidan **Systemparametrar** i Dynamics 365 for Operations och konfigurera vissa inställningar. **Anteckningar:**
 
 -   Du måste vara inloggad på ett konto med samma innehavare som den där Dynamics 365 for Operations används, om du vill konfigurera hjälpavsnittet.
 -   Det går inte att ansluta till ett LCS-bibliotek från en instans av Dynamics 365 for Operations som körs på en virtuell hårddisk (VHD).
 
-[![Systemparameterformuläret med hjälp inställningar](./media/system-parameters_ops-1024x437.png)](./media/system-parameters_ops.png) på de **systemparametrar** sidan, gör du följande:
+[![Formulär för systemparametrar med hjälpinställningar](./media/system-parameters_ops-1024x437.png)](./media/system-parameters_ops.png) Gå till sidan **Systemparametrar** och följ dessa steg:
 
-1.  **Viktigt: **Första gången du öppnar hjälpfliken måste du ansluta till Lifecycle Services. Kom ihåg att klicka på länken mitt i formuläret vänta tills anslutningen, stänga dialogrutan och klicka på OK för att komma åt formuläret Parametrar. [![Når LCS](./media/connect-to-lcs-crop-1024x365.png)](./media/connect-to-lcs-crop.png)
+1.  **Viktigt: **Första gången du öppnar hjälpfliken måste du ansluta till Lifecycle Services. Se till att klicka på länken i mitten av formuläret, vänta på anslutningen, stänga dialogrutan och klicka sedan på OK för att nå parameterformuläret.[![Anslut till LCS](./media/connect-to-lcs-crop-1024x365.png)](./media/connect-to-lcs-crop.png)
 2.  Välj Lifecycle Services-projektet att ansluta till.
 3.  Välj BPM-biblioteken (inom det valda projektet) att hämta uppgiftsregistreringar från.
 4.  Välj BPM-bibliotekens visningsordning. Detta bestämmer i vilken ordning som uppgiftsregistreringar från biblioteken visas i fönstret Hjälp.
 
-När en systemadministratör har slutfört de här stegen kan du öppna Hjälp-fönstret och klicka på fliken **Uppgiftsguider**. Nu visas aktiviteter stödlinjerna som gäller för den sida som du använder på Dynamics 365 för operationer. Om det finns inga stödlinjer uppgift ange du nyckelord om du vill begränsa sökningen. Hjälpfönstret visar stegvisa instruktioner och guiden uppgiften kan spelas upp när du klickar på en aktivitet guide i hjälpfönstret. [![Uppgift för läsläge](./media/task-guide-ops-1024x742.png)](./media/task-guide-ops.png)
+När en systemadministratör har slutfört de här stegen kan du öppna Hjälp-fönstret och klicka på fliken **Uppgiftsguider**. Du ser nu uppgiftsguiderna som gäller för den sida du för närvarande befinner dig på i Dynamics 365 for Operations. Om inga uppgiftsguider hittas kan du ange nyckelord för att begränsa sökningen. Efter att du har klickat på en uppgiftsguide i Hjälp-fönstret visas steg-för-steg-instruktioner och du kan spela upp uppgiftsguiden. [![Läsningsvy för uppgiftsguide](./media/task-guide-ops-1024x742.png)](./media/task-guide-ops.png)
 
-### <a name="where-are-the-translated-task-guides"></a>Var är översatta aktiviteter stödlinjerna?
+### <a name="where-are-the-translated-task-guides"></a>Var finns de översatta uppgiftsguiderna?
 
-Översätta uppgiften guiderna övergår i bibliotek "Alla språk" i titeln. I Dynamics 365 för åtgärder om du vill se lokaliserad aktivitet guide hjälper Kontrollera att du är ansluten till ett bibliotek med apppropriate. Det språk som utgångspunkt för aktiviteten visas i kontrolleras för varje användare av språkinställningar under **alternativ**&gt;**inställningar**. 
--   Om en aktivitet guide har översatts när du öppnar uppgiften konfigurationsguiden visas all text i aktivitet guide på det valda språket.
--   Om en aktivitet guide inte har har översatts, när du öppnar det, visas bara en del av texten (text kontroller) på det valda språket.
+Översatta uppgiftsguider publiceras i bibliotek med "Alla språk" i rubriken. Om du vill se hjälpen för den lokaliserade uppgiftsguiden i Dynamics 365 for Operations, se till att du då är ansluten till ett lämpligt bibliotek. Språket i uppgiftsguiden styrs av varje användare via Språkinställningar under **Alternativ** &gt; **Inställningar**. 
+-   Om en uppgiftsguide har översatts visas all text i guiden på det valda språket när du öppnar den.
+-   Om en uppgiftsguide ännu inte har översatts, visas enbart en del text i guiden (text för kontroller) på det valda språket när du öppnar den.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
-Följande tabell anger webbplatser med Microsoft Dynamics 365 for Operations-innehåll. Våra innehållswebbplatser är ordnade för att stödja kundlivscykeln. Varje fas stöds av en annan uppsättning webbplatser. Platser med en asterisk (\*) kräver att du loggar in med ett konto som är kopplat till en serviceplan bredvid namnet.
+Följande tabell anger webbplatser med Microsoft Dynamics 365 for Operations-innehåll. Våra innehållswebbplatser är ordnade för att stödja kundlivscykeln. Varje fas stöds av en annan uppsättning webbplatser. Webbplatser som har en asterisk (\*) bredvid namnet kräver att du loggar in med ett konto som är kopplat till ett tjänsteavtal.
 
 | Plats                                                                     | beskrivning                                                                                                                                                                                                                                |
 |--------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Docs.microsoft.com](https://docs.microsoft.com/en-us/dynamics365/#pivot=solutions&panel=solutions_operations) | Värdar eller länkar till all produktdokumentation för Dynamics 365 for Operations.                                                                                                                                                               |
 | [Lifecycle Services](http://lcs.dynamics.com/en/)\*                      | Tillhandahåller en molnbaserad samarbetsyta som kunder och partners kan använda för att hantera Dynamics 365 for Operations-projekt från förförsäljning till implementering och åtgärder. Den här webbplatsen är användbar för alla implementeringsfaser. |
 | [CustomerSource](http://www.customersource.com/)\*                       | Är värd för omfattande utbildningsresurser och är den primära supportwebbplatsen för Dynamics 365 for Operations. Inloggning kan krävas för åtkomst till specifika resurser på webbplatsen.                                                                      |
-| [Stöd för blogg](http://aka.ms/AXSupportBlog)                              | Ger tips som har lagts in av Dynamics 365 for Operations-supportteamet.                                                                                                                                                  |
+| [Supportblogg](http://aka.ms/AXSupportBlog)                              | Ger tips som har lagts in av Dynamics 365 for Operations-supportteamet.                                                                                                                                                  |
 | [MSDN](http://aka.ms/AXMSDN)                                             | Värd för innehåll från tidigare publiceringar skrivna för utvecklare.                                                                                                                                                                       |
 | [TechNet](http://aka.ms/TechNet)                                         | Värd för tidigare publiceringar skrivna för IT-ansvariga och programanvändare.                                                                                                                                           |
-| [Dynamics-webbgruppen](http://community.dynamics.com/en/)                  | Värd för bloggar, forum och videor.                                                                                                                                                                                                           |
+| [Dynamics Community](http://community.dynamics.com/en/)                  | Värd för bloggar, forum och videor.                                                                                                                                                                                                           |
 | [Microsoft.com/Dynamics/](http://www.microsoft.com/dynamics/)                 | Information om utvärdering och försäljning.                                                                                                                                                                                                 |
 
 
@@ -115,13 +115,16 @@ Följande tabell anger webbplatser med Microsoft Dynamics 365 for Operations-inn
 <a name="see-also"></a>Se även
 --------
 
-[Hjälpen för Dynamics 365 för operationer (nedladdningsbara faktum ark)](https://mbs.microsoft.com/files/public/CS/AX2012R3/DynamicsAXHelpSystemFactSheet.pdf)
+[Hjälpsystem för Dynamics 365 for Operations (hämtningsbart faktablad)](https://mbs.microsoft.com/files/public/CS/AX2012R3/DynamicsAXHelpSystemFactSheet.pdf)
 
-[Uppgiftsinspelning för operationer i Microsoft Dynamics 365](../user-interface/task-recorder.md)
+[Uppgiftsregistrerare i Microsoft Dynamics 365 for Operations](../user-interface/task-recorder.md)
 
 [Skapa dokumentation eller utbildning med uppgiftsregistreringar](../user-interface/task-recorder.md)
 
-[Ny eller uppdaterad uppgift får (November 2016)](new-task-guides-november-2016.md)<ph id="t1"></ph>[ny eller uppdaterad uppgift får (augusti 2016)](new-updated-task-guides-available-august-2016.md)<ph id="t2"></ph>[ny eller uppdaterad uppgift får (maj 2016)](new-updated-task-guides-available-may-2016.md)<ph id="t3"></ph>[får ny uppgift (februari 2016)](new-task-guides-available-february-2016.md)
+[Nya eller uppdaterade uppgiftsguider (november 2016)](new-task-guides-november-2016.md)
+[Nya eller uppdaterade uppgiftsguider (augusti 2016)](new-updated-task-guides-available-august-2016.md)
+[Nya eller uppdaterade uppgiftsguider (maj 2016)](new-updated-task-guides-available-may-2016.md)
+[Nya uppgiftsguider (februari 2016)](new-task-guides-available-february-2016.md)
 
 
 

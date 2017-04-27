@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="single-voucher-with-multiple-customer-or-vendor-records"></a>En verifikation med flera kund- eller leverantörsposter
 
+[!include[banner](../includes/banner.md)]
+
+
 Det här avsnittet innehåller en översikt över vad som händer när du bokför en enskild verifikation med flera kund- eller leverantörsposter. Den här funktionen ska annulleras i kommande versioner av Microsoft Dynamics 365 for Operations och därför rekommenderar vi att inte använda denna metod för bokföring på grund av redovisningens inverkan på kvittningsbehandling. 
 
 Några vanliga exempel där en verifikation används för flera kunder eller leverantörer inkluderar saldoöverföringar mellan kunder och netting av saldon mellan kunder och leverantörer i samma organisation. 
@@ -91,10 +94,10 @@ Om användaren missnöjd med kassarabatten som fördelas mellan alla kostnadsfö
 
 |             |                  |              |                 |           |            |                 |                    |
 |-------------|------------------|--------------|-----------------|-----------|------------|-----------------|--------------------|
-| **Verifikation** | **Kontotyp** | **Konto**  | **Beskrivning** | **Debet** | **Kredit** | **Offset type** | **Offset account** |
-| GNJL001     | Leverantör           | 1001         | INV1            |           | 100,00     | Redovisning          | &lt;tomt&gt;      |
-| GNJL001     | Redovisning           | 606300-001-- | INV1            |   50,00   |            | Redovisning          | &lt;tomt&gt;      |
-| GNJL001     | Redovisning           | 606300-002-- | INV1            |   50,00   |            | Redovisning          | &lt;tomt&gt;      |
+| **Verifikation** | **Kontotyp** | **Konto**  | **Beskrivning** | **Debet** | **Kredit** | **Avräkningstyp** | **Motkonto** |
+| GNJL001     | Leverantör           | 1001         | INV1            |           | 100,00     | Redovisning          | &lt;tom&gt;      |
+| GNJL001     | Redovisning           | 606300-001-- | INV1            |   50,00   |            | Redovisning          | &lt;tom&gt;      |
+| GNJL001     | Redovisning           | 606300-002-- | INV1            |   50,00   |            | Redovisning          | &lt;tom&gt;      |
 | GNJL002     | Leverantör           | 1001         | INV2            |           | 200,00     | Redovisning          | 606300-003--       |
 | GNJL003     | Leverantör           | 1001         | INV3            |           | 300,00     | Redovisning          | 606300-004--       |
 
@@ -248,5 +251,7 @@ För att undvika oönskade problem med framtida kvittningar för denna transakti
 | 002         | Leverantör           | 1001        |                 |  75,00    |            | Redovisning          | 999999---          |
 
  
+
+
 
 

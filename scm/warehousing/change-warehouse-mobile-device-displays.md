@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="warehouse-mobile-device-display-settings"></a>Visningsinställningar för mobil lagerställeenhet
 
+[!include[banner](../includes/banner.md)]
+
+
 I det här avsnittet beskrivs hur du ställer in utseendet på skärmen på en mobil enhet och hur du mappar kortkommandon till kontroller såsom knappar. 
 
 Denna artikel gäller för "avancerad lagerhantering" funktioner i lagerhantering. Mobila enheter kan användas för många av de uppgifter som lagerarbetare.
@@ -39,13 +42,13 @@ Som en del av den mobila enhetens konfiguration kan du ange olika layouter för 
 
 CSS och ASPX filer måste vara placerad i en särskild katalog, så att Internet Information Services (IIS) ansökan kan ladda dem. Det kan vara lämpligt att definiera olika CSS-filer om du använder den mobila enhetens funktionalitet i olika browsers eller på olika typer av hårdvara som kräver olika layout. Enkla inställningar, t.ex. bakgrundsfärg, teckensnitt och teckenstorlek för text, och bredden, och uppförandet av knappar, kan enkelt styras genom användning av CSS-filer. Det ASPX fil används för att visa den mobila anläggningen på server-sidan Asp.net-ansökan. Filen styr hur den övergripande strukturen för HTML är fastställda. Det är en bra idé att anpassa denna funktion endast om du har allvarliga strukturella problem med HTML och JavaScript, och måste ändra koden för din specifika enheter. För att mappa HTML-kontroller på den mobila enheten sidan tangentbordgenvägar, på den **mobila enheten visa inställningssidan** i **kortkommandot** fält, tilldela den numeriska koder för nycklar. Du kan använda **visa koderna för kortkommandon** menyn på den mobila enheten att hitta numeriska teckenkoder. Observera att kartläggningar kan variera beroende på maskinvara som används. Du måste använda följande syntax för att skapa mappningen:
 
-&lt;namnet&gt;(&lt;namn&gt;) =&lt;skriva koden&gt;;
+&lt;kontrollnamn&gt;(&lt;tangentnamn&gt;)=&lt;tangentkodkod&gt;;
 
 Här följer en förklaring av de delar av syntaxen:
 
--   **&lt;namnet&gt;** – namnet på en kontroll (t.ex, en knapp) återges i HTML-format.
--   **(&lt;namn&gt;) ** – Namnet på den tangent som du skapar för genvägen.
--   **&lt;Ange koden&gt;** – numeriska teckenkoden för nyckeln som ska användas som snabbtangent.
+-   **&lt;kontrollnamn&gt;** – Namnet på kontrollen, till exempel en knapp, som renderas i HTML-format.
+-   **(&lt;tangentnamn&gt;)** – Namnet på den tangent på tangentbordet som du skapar en genväg för.
+-   **&lt;Tangentkod&gt;** – Den numeriska teckenkoden för den tangent som ska användas som genväg.
 
 Här är ett exempel:
 
@@ -57,17 +60,17 @@ På alla sidor som innehåller en **Avbryt-** knapp kommer denna text:
 
 Tryck på Esc-tangenten på tangentbordet för att aktivera **knappen Avbryt** . Att tillämpa stil och kortkommandon inställningar till en specifik enhet, måste du skapa en mappning i **kriterierna** . Du måste använda en .NET regelbundet uttryck för att skapa kartor och uttrycket skall bestå av tre delar som åtskiljs av ett vertikalt streck (|), så här:
 
-Request.UserHostAddress=&lt;Användaradress&gt;| Värdnamn =&lt;användaren värdnamn&gt;| Request.UserAgent=&lt;användaragent&gt;
+Request.UserHostAddress=&lt;användarens värdadress&gt;|HostName=&lt;användarens värdnamn&gt;|Request.UserAgent=&lt;användarens agent&gt;
 
 Här följer en förklaring av de olika delarna i uttryck:
 
--   **&lt;Användaradress&gt;** – A .NET reguljära uttryck som matchar IP-adressen frågeställaren.
--   **&lt;användaren värdnamn&gt;** – A .NET reguljära uttryck som matchar begärande nätverksnamn.
--   **&lt;användaragent&gt;** – A .NET reguljära uttryck som matchar identifieraren för med begärande webbläsaren.
+-   **&lt;användarens värdadress&gt;** – Ett .NET-uttryck av standardtyp som matchar den begärandes IP-adress.
+-   **&lt;användarens värdnamn&gt;** – Ett .NET-uttryck av standardtyp som matchar den begärandes nätverksnamn.
+-   **&lt;användaragent&gt;** – Ett .NET-uttryck av standardtyp som matchar identifieraren för den begärandes webbläsare.
 
 Följande exempel gör Internet Explorer 8 att användas:
 
-Request.UserHostAddress=. \*| Värdnamn =. \*| Request.UserAgent=MSIE\\s8\\.0
+Request.UserHostAddress=.\*|HostName=.\*|Request.UserAgent=MSIE\\s8\\.0
 
 Du kan använda **Visa serverkonfiguration för visningsinställningar** menyn på mobila enheten för att hitta information om installationen.
 
@@ -84,19 +87,21 @@ Du kan använda **mobila enheten textfärger** sida att styra olika färger som 
 För att välja färg, **välj färg** , klicka i paletten eller typ en hexadecimal färgkod.
 
 ## <a name="define-the-date-format-to-use-on-mobile-devices"></a>Definiera det datumformat som ska användas i mobila enheter
-Du kan även utöka listan över godkända datumformat för varje installationen. Denna funktion kan vara användbar om du t.ex. vill ge ett format som gör det lättare för en arbetstagare att ange datum på en mobil enhet. Standardformat bestäms av användarens språk, som anges i fältet **språk** på sidan **Användaralternativ**. (Samma sida används också för att koppla en medarbetare till ett specifikt lagerställe arbete användaren.) **Notering:** The lagerställe mobila enheter Portal används inte inställningen i den **datum tids- och talformat** på de **inställningar för språk och region** sida. Om du vill ändra datumformat, du måste vara bekant med regelbundna uttryck i den Microsoft .NET ramen. För mer information, se [.NET Framework regelbundna uttryck](http://go.microsoft.com/fwlink/?LinkId=391260). Ange datumformat genom att redigera filen Dates.ini med innehåll\\inställningar\\Dates.ini på lagerstället mobila enheter Portal-servern. Denna fil använder .NET reguljära uttryck för att ange datumformat. Den regelbundna uttryck måste innehålla deluttryck att skapa namngivna grupper för dag, månad och år (ddmmåå), vilket visas i följande exempel:
+Du kan även utöka listan över godkända datumformat för varje installationen. Denna funktion kan vara användbar om du t.ex. vill ge ett format som gör det lättare för en arbetstagare att ange datum på en mobil enhet. Standardformat bestäms av användarens språk, som anges i fältet **språk** på sidan **Användaralternativ**. (Samma sida används också för att koppla en medarbetare till en specifik lagerarbetare.) **Obs!** Lagerställets portal för mobila enheter använder inte inställningen för fältet **Format för datum/tid och nummer** på sidan **Inställningar för språk och region**. Om du vill ändra datumformat, du måste vara bekant med regelbundna uttryck i den Microsoft .NET ramen. För mer information, se [.NET Framework regelbundna uttryck](http://go.microsoft.com/fwlink/?LinkId=391260). För att definiera datumformat, redigera filen datum.ini som finns på Innehåll\\Inställningar\\Dates.ini på portalservern för lagerställets mobila enheter. Denna fil använder .NET reguljära uttryck för att ange datumformat. Den regelbundna uttryck måste innehålla deluttryck att skapa namngivna grupper för dag, månad och år (ddmmåå), vilket visas i följande exempel:
 
-^(? &lt;day&gt;\\d{2})(?&lt; month&gt;\\d{2})(?&lt; år&gt;\\d {2}) $
+^(?&lt;dag&gt;\\d{2})(?&lt;månad&gt;\\d{2})(?&lt;år&gt;\\d{2})$
 
 Varje deluttrycket kräver en till två siffror för månad och dag, och en till fyra siffror för året. I följande exempel deluttrycket definierar en namngiven grupp under ett år, och kräver ett minimum av två siffror eller högst fyra siffror:
 
-(? &lt;year&gt;\\d{2,4})
+(?&lt;år&gt;\\d{2,4})
 
 Du kan ange mer än ett uttryck i samma fil. Varje uttryck måste vara på en separat rad. Det första uttrycket som matchas används för att parsa datum.
 
 <a name="see-also"></a>Se även
 --------
 
-[Configuration of mobile devices for warehouse work](configure-mobile-devices-warehouse.md)
+[Konfiguration av mobila enheter för lagerarbete](configure-mobile-devices-warehouse.md)
+
+
 
 

@@ -1,6 +1,6 @@
 ---
 title: "Balansräkning"
-description: "Den här artikeln beskrivs standardrapporter för balansräkningar. Här beskrivs också byggstenar som är associerade med dessa rapporter."
+description: "Den här artikeln beskriver standardrapporter för balansräkningar. Den beskrivs också de byggstenar som associeras med dessa rapporter."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="balance-sheet-financial-reports"></a>Balansräkning
 
-Den här artikeln beskrivs standardrapporter för balansräkningar. Här beskrivs också byggstenar som är associerade med dessa rapporter. 
+[!include[banner](../includes/banner.md)]
+
+
+Den här artikeln beskriver standardrapporter för balansräkningar. Den beskrivs också de byggstenar som associeras med dessa rapporter. 
 
 <a name="default-balance-sheet-reports"></a>Standardbalansräkning
 -----------------------------
@@ -72,10 +75,12 @@ Dessa kolumndefinitioner innehåller olika typer av kolumner för att tillhandah
 <a name="see-also"></a>Se även
 --------
 
-[Financial reporting](financial-reporting-getting-started.md)
+[Ekonomisk rapportering](financial-reporting-getting-started.md)
 
-[View financial reports](view-financial-reports.md)
+[Visa ekonomiska rapporter](view-financial-reports.md)
 
-[Blogg för Dynamics ekonomisk rapportering](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+[Dynamics-ekonomirapporteringsblogg](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+
+
 
 

@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="purchase-requisition-overview"></a>Översikt över inköpsrekvisition
 
+[!include[banner](../includes/banner.md)]
+
+
 Den här artikeln beskriver arbetsflödet för inköpsrekvisition och de olika statusar en inköpsrekvisition kan ha.
 
 Beroende på hur din organisation är inställd kan du skapa inköpsrekvisitioner för produkter som används i organisationen. En inköpsrekvisition är ett internt dokument som ger inköpsavdelningen behörighet att köpa dessa artiklar eller tjänster.  
@@ -48,7 +51,7 @@ Du kan konfigurera arbetsflödesprocessen för inköpsrekvisitionen att flöda e
 
 Följande diagram visar status som har tilldelats en inköpsrekvisition och en inköpsrekvisitionsrad allt eftersom de går igenom arbetsflödesprocessen.  
 
-[![Inköpsrekvisitionens huvud och status för raden](./media/purchasereq_headerline_statuses.jpg)](./media/purchasereq_headerline_statuses.jpg)
+[![Status för rubrik och rad för inköpsrekvisition](./media/purchasereq_headerline_statuses.jpg)](./media/purchasereq_headerline_statuses.jpg)
 
 ### <a name="purchase-requisition-header-and-line-status-relationships"></a>Statusrelation för rubrik och rad för inköpsrekvisition
 
@@ -77,7 +80,7 @@ Den övergripande statusen på inköpsrekvisitionen bestäms av statusen på ink
 <td>Om arbetsflödet har konfigurerats för att skicka inköpsrekvisitionsrader till enskilda granskare, kan varje rad ha statusvärdet <strong>Under granskning</strong> eller <strong>Avvisad</strong> Inköpsrekvisitionsstatus uppdateras när granskningsprocessen har slutförts för alla inköpsrekvisitionsrader och inga granskningssteg är kvar för inköpsrekvisitionen.
 <ul>
 <li><strong>Under granskning</strong> – Inköpsrekvisitionsraderna har skickats in för granskning. När arbetsflödesprocessen har avslutats för en inköpsrekvisitionsrad, förblir status för den raden <strong>Under granskning</strong> tills alla återstående inköpsrekvisitionsrader har granskats.</li>
-<li><strong>Avvisade</strong> – en inköpsrekvisitionsrad har avvisats. Inköpsrekvisitionsrader avvisas, som kan skickas tillbaka.</li>
+<li><strong>Avvisad</strong> – En inköpsrekvisitionsrad har avvisats. Inköpsrekvisitionsrader som har avvisats kan ändras och skickas in igen.</li>
 </ul>
 Om du skickar tillbaka en inköpsrekvisitionsrad som har avvisats, startar granskningen om för alla rader i inköpsrekvisitionen som fortfarande är under granskning. <strong>Obs!</strong> Du kan sedan återkalla en inköpsrekvisition som redan har skickats in. När du återkallar en inköpsrekvisition, återkallas alla andra inköpsrekvisitionsrader också. Inköpsrekvisitionrader, som har återkallats, kan tas bort.</td>
 </tr>
@@ -133,7 +136,7 @@ Om du skickar tillbaka en inköpsrekvisitionsrad som har avvisats, startar grans
 Du kan fördela kostnaderna i en produkt som är inkluderade i en inköpsrekvisition till flera affärsredovisningskonton. Om din organisation använder dimensioner, till exempel kostnadsställen och avdelningar, kan du fördela kostnaden för en produkt till dimensioner för affärsredovisningskonton.
 
 ## <a name="requisition-purposes"></a>Rekvisitionssyften
-Rekvisitionsyften gör att processen att uppfylla rekvisitionsbegäran blir mer flexibel. När du skapar en rekvisition kan du tilldela ett av två syften till den: förbrukning eller påfyllnad. Inköpsrekvisition begärd kan uppfyllas av en inköpsorder, överföringsorder, produktionsorder eller kanban beroende på rekvisitionssyftet och inställningarna för din organisation.  
+Rekvisitionsyften gör att processen att uppfylla rekvisitionsbegäran blir mer flexibel. När du skapar en rekvisition kan du tilldela ett av två syften till den: förbrukning eller påfyllnad. Beroende på rekvisitionssyftet och hur din organisation är konfigurerad kan rekvisitionsbegäran fyllas på av en inköpsorder, överföringsorder, tillverkningsorder eller kanban.  
 
 I anskaffningspolicyerna kan du kontrollera rekvisitionssyftena som är tillgängliga, när en rekvisition skapas för din organisation.
 
@@ -152,7 +155,7 @@ Om du vill använda inköpsrekvisitioner som har ett syfte med lagerpåfyllnad m
 ## <a name="purchase-requisitions-and-requests-for-quotation"></a>Inköpsrekvisitioner: och anbudsförfrågan
 I vissa fall måste du starta en anbudsförfrågan (RFQ)-process för att identifiera leverantören och priset för produkter som begärs i en inköpsrekvisition. En anbudsförfrågan kan skapas när inköpsrekvisitionen är under granskning. När du accepterar ett bud, överförs information om leverantör, pris, och så vidare till inköpsrekvisitionen.  
 
-Inför en inköpsrekvisition fram genom att välja den **fram** kryssrutan på den **information om inköpsrekvisition** sida. Kan fortsätta bearbetningen av inköpsrekvisitionen förrän du tar bort spärren genom att avmarkera kryssrutan.  
+Du kan spärra en inköpsrekvisition genom att välja kryssrutan **Spärrad** på sidan **Information om inköpsrekvisition**. Bearbetningen av inköpsrekvisitionen kan fortsätta först när du har tagit bort spärren genom att avmarkera kryssrutan.  
 
 **Obs!** I eProcurement kan anbudsförfrågan för din inköpsrekvisition tillåta leverantörer lägga till alternativrader. I detta fall kommer din inköpsrekvisition att återspegla godkända alternativ.
 
@@ -192,8 +195,10 @@ Om du vill konsolidera godkända inköpsrekvisitionsrader, följ dessa steg:
 <a name="see-also"></a>Se även
 --------
 
-[Skapa en inköpsrekvisition för förbrukning (aktivitet guide)](https://ax.help.dynamics.com/en/wiki/create-a-requisition-for-consumption/)
+[Skapa en rekvisition för förbrukning (uppgiftsguide)](https://ax.help.dynamics.com/en/wiki/create-a-requisition-for-consumption/)
 
-[Purchase requisition workflow](purchase-requisitions-workflow.md)
+[Arbetsflöde för inköpsrekvisitioner](purchase-requisitions-workflow.md)
+
+
 
 

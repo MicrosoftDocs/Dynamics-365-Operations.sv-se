@@ -1,6 +1,6 @@
 ---
 title: "Bokföringsdefinitioner"
-description: "Denna artikel innehåller ett exempel som visar hur du använder bokföringsdefinitioner för inköpsorderinteckningar och budgetanslagen."
+description: "Denna artikel innehåller exempel som visar hur du använder bokföringsdefinitioner för inköpsorderinteckningar och budgetanslag."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,9 +26,12 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="posting-definition-examples"></a>Bokföringsexempel definition
+# <a name="posting-definition-examples"></a>Exempel: bokföringsdefinitioner
 
-Denna artikel innehåller ett exempel som visar hur du använder bokföringsdefinitioner för inköpsorderinteckningar och budgetanslagen.
+[!include[banner](../includes/banner.md)]
+
+
+Denna artikel innehåller exempel som visar hur du använder bokföringsdefinitioner för inköpsorderinteckningar och budgetanslag.
 
 Innan du läser det här avsnittet, ska du känna till bokföringsdefinitioner och bokföringsdefinitioner för transaktioner. Mer information finns i [Bokföringsdefinitioner](posting-definitions.md). Följande exempel kan ställas in på sidan **Bokföringsdefinitioner**. Varje exempel innehåller följande ämnen:
 
@@ -39,7 +42,7 @@ Innan du läser det här avsnittet, ska du känna till bokföringsdefinitioner o
 
 När en matchaning uppstår mellan kontona och dimensionsvärdena i fönstret **Matchvillkor** för bokföringsdefinitionen och konton och dimensionsvärden på transaktionen, redovisningsposter genereras baserat på fönstret **Genererade poster** för bokföringsdefinitionen. 
 > [!NOTE]
-> Om du vill koppla en bokföringsdefinition till en specifik transaktionstyp, Använd den **bokföringsdefinitioner för transaktioner** sida. När du kopplar en bokföringsdefinition till en transaktionstyp och välj **använder bokföringsdefinitioner** på de **allmänna redovisningsparametrar** alla transaktioner för den valda transaktionstypen måste sidan, följa bokföringsdefinitioner.
+> Använd sidan **Bokföringsdefinitioner för transaktioner** för att koppla en bokföringsdefinition till en specifik transaktionstyp. När du associerar en bokföringsdefinition med en transaktionstyp och väljer **Använd bokföringsdefinitioner** på sidan **Redovisningsparametrar**, måste samtliga transaktioner av vald transaktionstyp använda bokföringsdefinitioner.
 
 ## <a name="example-purchase-order-encumbrances"></a>Exempel: Inköpsorderinteckningar
 När du aktiverar inteckningsbearbetning genom att välja **Aktivera inteckningsprocess** på sidan **Allmänna redovisningsparametrar**, måste bokföringsdefinitioner användas för att registrera inteckningar i redovisningen för alla konton som ska reserveras. I de flesta fall reserveras alla utgiftskonton i balansräkningen. 
@@ -69,7 +72,7 @@ Kontona och dimensionsvärden kommer antingen från redovisningsfördelningarna,
 
 | Konto + dimensioner           | Debet  | Kredit | Kommentar |
 |--------------------------------|--------|--------|---------|
-| 606400-OU\_1 OU\_3566 utbildning | 250.00 |        |         |
+| 606400-OU\_1-OU\_3566-Training | 250.00 |        |         |
 
 ### <a name="ledger-entries-generated-from-the-posting-definition"></a>Redovisningposter som genereras med bokföringsdefinitionen
 
@@ -77,10 +80,10 @@ Genererade redovisningsposter skapas för att registrera inteckningarna.
 
 | Konto + dimensioner           | Debet  | Kredit | Kommentar |
 |--------------------------------|--------|--------|---------|
-| 300143-OU\_1 OU\_3566 utbildning | 250.00 |        |         |
-| 300144-OU\_1 OU\_3566 utbildning |        | 250.00 |         |
+| 300143-OU\_1-OU\_3566-utbildning | 250.00 |        |         |
+| 300144-OU\_1-OU\_3566-Training |        | 250.00 |         |
 
-I det här exemplet matchar alla konton, som är en del av kontostrukturen - Resultat matchar bokföringsdefinitionvillkoren. Därför när 606500-OU\_1 OU\_utvärderas 3566 utbildning, genererade poster skapas för de konton som definieras i den **skapade** ruta för bokföringsdefinitionen.
+I det här exemplet matchar alla konton, som är en del av kontostrukturen - Resultat matchar bokföringsdefinitionvillkoren. När 606500-OU\_1-OU\_3566-utbildning ska utvärderas, genereras därför poster för de konton som anges i fönstret **Genererade poster** för bokföringsdefinitionen.
 
 ## <a name="example-budget-appropriations"></a>Exempel: Budgetanslag
 När du aktiverar budgettransaktioner genom att välja **Aktivera budgetanslag** på sidan **Allmänna redovisningsparametrar**, måste bokföringsdefinitioner användas för att bokföra budgetregisterposter i redovisningen. När en budgetkontrollkonfiguration är aktiv och aktiveras, kan bokföringsdefinitioner och transaktionbokföringsdefinitioner användas som stöd för registreringen av poster för anslag, ändringar, överföringar, projekt, anläggningstillgångar och leverans- och efterfrågeprognoser i redovisningen. 
@@ -110,7 +113,7 @@ Du anger konton, dimensionsvärden och belopp för budgetkontoposten på sidan *
 
 | Konto + dimensioner           | Debet | Kredit | Kommentar |
 |--------------------------------|-------|--------|---------|
-| 606400-OU\_1 OU\_3566 utbildning |       | 250.00 |         |
+| 606400-OU\_1-OU\_3566-Training |       | 250.00 |         |
 
 ### <a name="ledger-entries-generated-from-the-posting-definition"></a>Redovisningposter som genereras med bokföringsdefinitionen
 
@@ -118,10 +121,12 @@ Genererade redovisningsposter skapas för att registrera den ursprungliga budget
 
 | Konto + dimensioner           | Debet  | Kredit | Kommentar |
 |--------------------------------|--------|--------|---------|
-| 300145-OU\_1 OU\_3566 utbildning |        | 250.00 |         |
-| 300146-OU\_1 OU\_3566 utbildning | 250.00 |        |         |
+| 300145-OU\_1-OU\_3566-Training |        | 250.00 |         |
+| 300146-OU\_1-OU\_3566-Training | 250.00 |        |         |
 
-I det här exemplet matchar alla konton, som är en del av kontostrukturen - Resultat matchar bokföringsdefinitionvillkoren. Därför när 606400-OU\_1 OU\_utvärderas 3566 utbildning, genererade transaktioner skapas.
+I det här exemplet matchar alla konton, som är en del av kontostrukturen - Resultat matchar bokföringsdefinitionvillkoren. När 606400-OU\_1-OU\_3566-utbildning utvärderas, skapas därför genererade bokföringsposter.
+
+
 
 
 

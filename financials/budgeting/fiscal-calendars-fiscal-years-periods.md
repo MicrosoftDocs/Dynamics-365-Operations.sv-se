@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="fiscal-calendars-fiscal-years-and-periods"></a>Räkenskapskalendrar, räkenskapsår och perioder
 
+[!include[banner](../includes/banner.md)]
+
+
 Det här avsnittet behandlar räkenskapskalendrar, räkenskapsår och perioder och hur du använder dem för juridiska personer, anläggningstillgångar och budgetering.
 
 Räkenskapskalendrar ger ett ramverk för den ekonomiska aktiviteten i en organisation. Varje räkenskapskalender innehåller ett eller flera räkenskapsår och varje räkenskapsår innehåller flera perioder. Räkenskapskalendrar kan baseras på kalenderår från 1 januari till 31 december eller på datum som du väljer. En del organisationer väljer till exempel en räkenskapskalender som börjar den 1 juli ett år och slutar den 30 juni följande år. 
@@ -39,7 +42,7 @@ Du kan skapa och ta bort räkenskapskalendrar, räkenskapsår och perioder på s
 
 En bokslutsperiod används för att separera redovisningstransaktioner som genereras när ett räkenskapsår stängs. När det finns UB-transaktioner i en räkenskapsperiod är det enklare att skapa bokslut inklusive eller utan olika typer av bokslutsposter. Om ett räkenskapsår delas upp i 12 räkenskapsperioder är bokslutsperioden vanligtvis den 13:e perioden. Men en bokslutsperiod kan skapas från en period som har statusen Öppen. 
 
-När du skapar en bokslutsperiod väljer du en period som har statusvärdet Öppen och har de datum som du vill använda. Den nya bokslutsperioden ska kopiera start- och slutdatum från den befintliga perioden. Den ursprungliga perioden fortsätter finnas kvar. Exempelvis kan du välja perioden 12, som är den sista perioden under räkenskapsåret och som har datum 1 augusti till och med den 31 augusti. Du kan ange namnet på den UB-perioden t ex Stäng. När du har skapat den nya bokslutsperioden har du nu den ursprungliga perioden och bokslutsperioden. Båda har datum som börjar med 1 augusti och slutar på 31 augusti.
+När du skapar en bokslutsperiod väljer du en period som har statusvärdet Öppen och har de datum som du vill använda. Den nya bokslutsperioden ska kopiera start- och slutdatum från den befintliga perioden. Den ursprungliga perioden fortsätter finnas kvar. Du väljer till exempel Period 12, som är den sista perioden under räkenskapsåret och har datumen 1 augusti till och med 31 augusti. Du anger ett namn för bokslutsperioden, till exempel Stäng. När du har skapat den nya bokslutsperioden har du nu den ursprungliga perioden och bokslutsperioden. Båda har datum som börjar med 1 augusti och slutar på 31 augusti.
 
 ## <a name="select-fiscal-calendars-for-ledgers-fixed-assets-and-budget-cycles"></a>Välj räkenskapskalendrar för redovisningar, anläggningstillgångar och budgetcykler
 Räkenskapskalendrar används vid avskrivning av anläggningstillgångar, ekonomiska transaktioner och budgetcykler. När du skapar en räkenskapskalender kan du använda den för flera syften. Du kan välja en rapporteringsgrupp kalender för att en värdemodell eller avskrivningsregel kommer att göra det en kalender för anläggningstillgångar. Du kan välja en räkenskapskalender för en redovisning och göra den till redovisningskalender. Och du kan välja en räkenskapskalender för en budgetcykel för att skapa en budgetkalender. Du kan använda samma räkenskapskalender för alla dessa.
@@ -58,6 +61,8 @@ Budgetcykler är den tidsperiod som en budget används. Budgetcykler kan vara en
 
 ## <a name="maintain-periods-for-your-organization"></a>Underhåll perioder för din organisation
 Du kan använda sidan Redovisningskalender om du vill visa information om räkenskapskalendern, räkenskapsår och perioder som används i din organisation. Du kan även ändra status för perioderna och markera vilka användare kan bokföra redovisningstransaktioner till perioder. Till exempel i början av en ny period kan du ange att en grupp användare som du vill ska slutföras att bokföra ekonomiska transaktioner i föregående period, medan övriga grupper endast arbetar i den nya perioden.
+
+
 
 
 

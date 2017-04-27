@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="product-receipt-against-purchase-orders"></a>Produktinleverans mot inköpsorder
 
+[!include[banner](../includes/banner.md)]
+
+
 Den här artikeln innehåller en beskrivning av olika alternativ för att registrera produkter som mottagna.
 
 Produktinleverans är en process som används för att registrera att de produkter som har beställts har tagits emot så att inköpsorderrader (IO) sedan kan bearbetas för fakturering. I vissa fall genomgår produkterna en förregistrering där extra information från leverantören registreras innan produkterna tas emot. När en produkt tas emot får den först statusen **Registrerad**. Produkten kan sedan genomgå ytterligare processer, till exempel kvalitetshantering, innan den slutligen får statusen **Mottagen**.
@@ -52,19 +55,21 @@ Du kan välja flera order och bearbeta inleverans på alla order tillsammans. De
 
 Inköpsorder kan skapas från en försäljningsorder om alternativet **Direktleverans** har valts. När du använder direktleverans tas produkterna inte emot på lagerstället utan skickas direkt från leverantören till kunden. I detta fall registreras vanligtvis inleveransen direkt på inköpsordern. Inleveransen kan utföras automatiskt, till exempel genom elektroniskt datautbyte (EDI) med leverantören. Om inköpsordern är en koncernintern inköpsorder är det även möjligt att låta Microsoft Dynamics 365 for Operations att automatisera inleveransen av den koncerninterna försäljningsordern vid leverans. När du använder direktleverans redovisas produkterna fortfarande som en lagertillgång, även om de inte anländer fysiskt till lagerstället. När produktinleveransen registreras på inköpsordern uppdateras därför försäljningsordern automatiskt med en följesedel så att den totala förändringen i lagret är lika med 0 (noll). Vid direktleveranser bör du inte kräva förregistrering. Om du använder lagerställen som är aktiverade för lagerstyrning kan du kringgå kravet på registrering av ID-numret genom att ange ett virtuellt lagerställe. Du specificerar det här lagerstället i fältet **Lagerställe för direktleverans** på produkten. 
 
-När produktinleveransen har bearbetats på Inköpsordern, IO-status anges som **mottagna** att visa att fakturan kan behandlas för ordern. Du kan granska uppgifter om produkter som redan har tagits emot med hjälp av sidan **Produktinleveransjournaler**.  
+När produktinleveransen har bearbetats på inköpsordern ändras inköpsorderns status till **Mottagen** för att visa att fakturan för ordern kan bearbetas. Du kan granska uppgifter om produkter som redan har tagits emot med hjälp av sidan **Produktinleveransjournaler**.  
 
 Du kan komma åt den här sidan från åtgärdsgruppen **Inleverans** på sidan **Inköpsorder**. Informationen i journalerna omfattar uppgifter om kvantiteter, datum och dimensioner.
 
 <a name="see-also"></a>Se även
 --------
 
-[Purchase order overview](purchase-order-overview.md)
+[Översikt över inköpsorder](purchase-order-overview.md)
 
-[Purchase order creation](purchase-order-creation.md)
+[Skapande av inköpsorder](purchase-order-creation.md)
 
 [Godkänna och bekräfta inköpsorder](purchase-order-approval-confirmation.md)
 
 [Översikt över leverantörsfakturor](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview)
+
+
 
 

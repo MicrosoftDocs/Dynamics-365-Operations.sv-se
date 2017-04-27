@@ -1,5 +1,5 @@
 ---
-title: "Ställa in utbildningar"
+title: "Ställa in utbildningskurser"
 description: "Personalresursadministratörer och chefer kan använda kursfunktionerna för att underhålla information om utbildningen som ges till arbetare."
 author: twheeloc
 manager: AnnBe
@@ -26,7 +26,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="set-up-training-courses"></a>Ställa in utbildningar
+# <a name="set-up-training-courses"></a>Ställa in utbildningskurser
+
+[!include[banner](includes/banner.md)]
+
 
 Personalresursadministratörer och chefer kan använda kursfunktionerna för att underhålla information om utbildningen som ges till arbetare.
 
@@ -85,7 +88,7 @@ Du kan utföra följande uppgifter för varje kurs.
 -   Rekommendera hotell för kursdeltagare
 -   Skapa en kursbeskrivning som du sedan kan annonsera på Självbetjäning för medarbetare
 
-  >**Observera** du kan bara ta bort en kurs ingen skickas den. 
+  >**Obs!** Du kan bara ta bort en kurs om ingen har registrerat sig för den. 
     
 ## <a name="course-statuses"></a>Kursstatus
 Följande tabell listar möjliga kursstatusvärden och de åtgärder som du kan utföra när kursen har en viss status.
@@ -132,7 +135,9 @@ Kursdeltagare är arbetare, sökanden eller kontaktpersoner som deltar i en utbi
 <a name="workflow"></a>Arbetsflöde
 --------
 
-Medarbetare som registrerar sig för en kurs via det **medarbetare självbetjäningsportalen** sida kan ha registreringen skickas via arbetsflödet för godkännande.  Ett arbetsflöde kan tilldelas till en kurs i det **allmänna** snabbfliken i den **kurser** sida.
+Medarbetare som registrerar sig för en kurs via sidan **Självbetjäning för medarbetare** kan få sin registrering skickad via arbetsflödet för godkännande.  Ett arbetsflöde kan tilldelas till en kurs i snabbfliken **Allmänt** på sidan **Kurser**.
+
+
 
 
 

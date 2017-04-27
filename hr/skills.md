@@ -39,18 +39,18 @@ Exempel på färdigheter som du kan följa inkluderar följande:
 Innan du kan tilldela en färdighet till en person eller ett jobb, skapa en färdighetsmappningssökning eller skapa en kompetensprofil, måste du ange information om färdigheterna på sidan **Färdigheter**. För varje kompetens kan du välja en kompetenstyp och en värderingsmodell.
 
 ## <a name="rating-models"></a>Bedömningsmodeller
-Bedömningsmodeller gör det enklare att utvärdera en persons faktiska färdighetsnivå, den nivå de ska arbeta för att uppnå eller den färdighetsnivå som krävs för ett jobb. Du kan ange upp till 10 nivåer för en värderingsmodell.  Varje nivå i en värderingsmodell tilldelas en faktor.  Som Faktorvärdet kommer att användas normalisera poängen med färdigheter som använder olika värderingsmodeller.  Faktorn måste vara ett tal mellan 0-9 och varje nivå måste ha en unik faktor.  Nivåer med högre faktorvärden innehåller mer vikt i en värderingsmodell.
+Bedömningsmodeller gör det enklare att utvärdera en persons faktiska färdighetsnivå, den nivå de ska arbeta för att uppnå eller den färdighetsnivå som krävs för ett jobb. Du kan ange upp till 10 nivåer för en värderingsmodell.  Varje nivå i en värderingsmodell tilldelas en faktor.  Faktorvärdet ska användas för att normaliserar förfrågningar om partier av färdighetsluckor som använder olika värderingsmodeller.  Faktorn måste vara ett nummer mellan 0-9, och varje nivå måste ha en unik faktor.  Nivåer med högre faktorvärden innehåller mer vikt i en värderingsmodell.
 
 ## <a name="specify-job-skills"></a>Ange jobbfärdigheter
-När du anger information om ett projekt kan ange du de färdigheter som ska ha en person att utföra arbete som krävs för att jobbet.  Dessutom kan du ange önskad nivå för varje färdighet samt hur viktig färdigheten. Olika jobb kan kräva olika nivåer av betydelse för samma färdighet.
+När du anger information om ett jobb, kan du ange de färdigheter som en person måste ha för att arbeta med jobbet.  Dessutom kan du ange önskad nivå för varje färdighet samt hur viktig färdigheten är. Olika jobb kan kräva olika nivåer av betydelse för samma färdighet.
 
 ## <a name="enter-skills-for-workers-applicants-or-contacts"></a>Ange kompetenser för arbetstagare, sökande eller kontakter
 Du kan ange eller målfärdigheter verkliga färdigheter för anställd, sökande eller kontakter. En målfärdighet är en färdighet som en person planerar att uppnå. En faktisk färdighet är en färdighet som en person redan har.
 
 ## <a name="skill-mapping-and-skill-mapping-profiles"></a> Färdighetsmappning och Profiler för färdighetsmappning
-Du kan skapa en Färdighetsmappning för att hitta en anställd, sökande eller kontaktperson som är kvalificerad för en viss typ av uppgift. Färdighetsmappning söker utseende över färdigheter, utbildning, certifikat, förtroende eller projekt ställning uppstår och returnerar ett resultat som matchar de villkor som angetts.  Exempelvis kan det vara bra att veta vilka arbetare i organisationen har fått sina CPA.
+Du kan skapa en färdighetsmappning för att hitta en anställd, sökande eller kontaktperson som är kvalificerad för en viss typ av uppgift. Färdighetsmappning letar genom färdigheter, utbildning, certifikat, förtroendeuppdrag eller projekterfarenhet och returnerar ett resultat som matchar de villkor som angetts.  Exempelvis kan det vara bra att veta vilka arbetare i organisationen som har fått sina CPA.
 
-Färdighetsmappning-profiler kan du hitta nuvarande anställda eller personer med kvalifikationer som direkt motsvarar verksamhetens behov.  Exempelvis kan du skapa en kompetensmappning profil för en öppen befattning i företaget. Genom att skapa en profil för ett visst jobb och kopiera färdigheter, intyg och utbildning från det jobbet till profilen, kan du snabbt söka anställda, sökande och kontaktpersoner som matchar en eller flera av de kriterier som har angetts i profilen och visa en lista över de kandidater som har färdigheter som bäst matchar de färdigheter som krävs för jobbet.
+Färdighetsmappningsprofiler låter dig hitta nuvarande anställda eller kandidater med kvalifikationer som direkt motsvarar verksamhetens behov.  Exempelvis kan du skapa en kompetensmappningsprofil för en öppen befattning i företaget. Genom att skapa en profil för ett visst jobb och kopiera färdigheter, intyg och utbildning från det jobbet till profilen, kan du snabbt söka anställda, sökande och kontaktpersoner som matchar en eller flera av de kriterier som har angetts i profilen och visa en lista över de kandidater som har färdigheter som bäst matchar de färdigheter som krävs för jobbet.
 
 <table>
 <thead>
@@ -79,6 +79,6 @@ Du kan skapa en analys till färdighetsmappning profil som du vill visa en lista
 <a name="see-also"></a>Se även
 --------
 
-[Human resources](index.md)
+[Personal](index.md)
 
 

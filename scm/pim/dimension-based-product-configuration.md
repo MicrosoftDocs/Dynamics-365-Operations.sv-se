@@ -29,9 +29,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="dimension-based-product-configuration"></a>Dimensionsbaserad produktkonfiguration
 
+[!include[banner](../includes/banner.md)]
+
+
 Dimensionsbaserad produktkonfigurering motsvarar en enda lösning för att skapa många produktvarianter från en enda produktmall och dess strukturlista.
 
-Dimensionsbaserade produktkonfigurationen är något av de tre inbyggda produkt konfiguration. De två andra teknikerna är fördefinierade varianter och begränsningsbaserad konfiguration. Alla tre teknikerna använder en produktmall som startpunkt och gör att användaren kan skapa många produktvarianter av en produktmall.
+Dimensionsbaserad produktkonfiguration är en av de tre inbyggda teknikerna för produktkonfigurationer. De två andra teknikerna är fördefinierade varianter och begränsningsbaserad konfiguration. Alla tre teknikerna använder en produktmall som startpunkt och gör att användaren kan skapa många produktvarianter av en produktmall.
 
 ## <a name="key-concepts"></a>Viktiga begrepp
 Dimensionsbaserad produktkonfiguration baseras på följande viktiga begrepp:
@@ -68,10 +71,12 @@ Konfigurationsflödet bestämmer ordningen på konfigurationsgrupperna som de vi
 Konfigurationsreglerna representerar en mekanism för säkerställande av att en produkt som ingår i en konfigurationsgrupp i en strukturlista använder antingen ett inkludering eller ett uteslutande en produkt i en annan konfigurationsgrupp i samma strukturlista.
 
 ## <a name="product-modeling-process"></a>Produktmodellering
-Den naturliga sekvensen för uppbyggnad av en produktmodell för en dimensionsbaserad produkt börjar med att definiera de relevanta konfigurationsgrupperna. Det är viktigt att se till att alla produkter som ska användas i strukturlistan har släppts till det företag som produktmodellen skapas för. Med de här byggblocken på plats användaren skapa Strukturen och tilldela alla relevanta strukturlisterader konfigurationsgrupper. Ett konfigurationsflöde kan definieras för beställning konfigurationsgrupperna i rätt ordning när Strukturlistan är klar. \[Rubrik-id = "bilaga\_282671" justera = "alignnone" width = "1187"\][![dimensionsbaserade produktmodellering processen](./media/dimension-based-product-modeling-process-v1.png)](./media/dimension-based-product-modeling-process-v1.png) dimensionsbaserade produktmodellering processen\[/beskrivning\] du kan skapa konfigurationsregler som genomför dessa produktrelationer om vissa produkter från olika konfigurationsgrupper som måste eller får inte användas tillsammans. När strukturlistan har bundits tillsammans med en dimensionsbaserad produktmall via en strukturlisteversion, och båda har godkänts och aktiverats, kan du skapa produktkonfigurationer och ett namn för varje konfiguration. Konfigurationerna kan definieras innan några transaktioner skapas, eller utföras när behovet av en viss konfiguration uppstår.
+Den naturliga sekvensen för uppbyggnad av en produktmodell för en dimensionsbaserad produkt börjar med att definiera de relevanta konfigurationsgrupperna. Det är viktigt att se till att alla produkter som ska användas i strukturlistan har släppts till det företag som produktmodellen skapas för. Med de här byggblocken på plats kan användaren skapa strukturen och tilldela konfigurationsgrupper till alla relevanta strukturlisterader. Ett konfigurationsflöde kan definieras för att beställa konfigurationsgrupperna i rätt ordning när strukturlistan är klar. \[caption id="attachment\_282671" align="alignnone" width="1187"\][![Dimensionsbaserad process för produktmodellering](./media/dimension-based-product-modeling-process-v1.png)](./media/dimension-based-product-modeling-process-v1.png) Dimensionsbaserad process för produktmodellering\[/caption\] Om det finns vissa produkter från olika konfigurationsgrupper som antingen måste eller inte får användas tillsammans, så kan du skapa konfigureringsregler som framtvingar dessa produktförhållanden. När strukturlistan har bundits tillsammans med en dimensionsbaserad produktmall via en strukturlisteversion, och båda har godkänts och aktiverats, kan du skapa produktkonfigurationer och ett namn för varje konfiguration. Konfigurationerna kan definieras innan några transaktioner skapas, eller utföras när behovet av en viss konfiguration uppstår.
 
 ### <a name="suggested-use"></a>Möjliga användningsområden
 
 Dimensionsbaserad konfigurationsteknik används främst till produkter med begränsade varianter och där kombinationer av produktdimensionerna storlek, färg, utförande och konfiguration inte passar till att identifiera en viss produktvariant. Ett exempel kan vara en cykel med ramhöjd, hjulstorlek, bromstyper och olika växlar.
+
+
 
 

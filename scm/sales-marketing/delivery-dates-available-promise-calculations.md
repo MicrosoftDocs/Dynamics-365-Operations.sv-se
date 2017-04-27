@@ -28,23 +28,26 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="order-promising"></a>Orderlöfte
 
+[!include[banner](../includes/banner.md)]
+
+
 Denna artikel innehåller information om orderlöften. Orderlöften hjälper dig att ge dina kunder pålitliga löften om leveransdatum, och ger dig flexibilitet att hålla dessa datum.
 
 Orderlöfte beräknar de tidigaste transport- och inleveransdatumen och baseras på metoden för kontroll av leveransdatum och transportdagar. Du kan välja mellan fyra metoder för kontroll av leveransdatum:
 
--   **Produktionstid för försäljning** – försäljning produktionstiden är tiden mellan försäljningsorder skapas och leverans av artiklarna. Beräkning för leveransdatum utifrån en standardantalet dagar och anser inte lagertillgänglighet kända efterfrågan eller planerade leveransen.
--   **Tillgängligt att LOVA (tillgängligt att lova)** – tillgängligt att LOVA är antal artiklar som är tillgängliga och kan utlovas till en kund vid ett visst datum. ATP-beräkning inkluderar det obekräftade lagret, ledtider, planerade inleveranser och utleveranser.
+-   **Produktionstid för försäljning** – Produktionstiden för försäljning är tiden mellan det att försäljningsordern skapas och artiklarna levereras. Beräknat för leveransdatum baseras på ett standardantal dagar och beaktar inte lagertillgänglighet, känd efterfrågan eller planerad tillgång.
+-   **ATP (available-to-promise; "tillgänglig att utlova")** – ATP är den kvantitet av en artikel som finns tillgänglig och därför kan utlovas en kund vid ett specifikt datum. ATP-beräkning inkluderar det obekräftade lagret, ledtider, planerade inleveranser och utleveranser.
 -   **ATP + utleveransmarginal **– Leveransdatum är lika med ATP-datumet plus utleveransmarginal för artikeln. Utleveransmarginalen är den tid som krävs för att förbereda artiklar som ska levereras.
 -   **CTP (CTP) **– Tillgänglighet beräknas genom nedbrytning.
 
 ## <a name="atp-calculations"></a>ATP-beräkningar
-Kvantiteten tillgängligt att LOVA beräknas med hjälp av metoden "Ackumulerat tillgängligt att LOVA med framförhållning". Den största fördelen med DAL-beräkningsmetoden är att den kan hantera fall där summan av utleveranser mellan inleveranser är större än den senaste inleveransen (t.ex, när en kvantitet från en tidigare inleverans måste användas för att uppfylla ett krav). Metoden "Ackumulerat tillgängligt att LOVA med framförhållning" beräkningen omfattar alla utleveranser tills den ackumulerade kvantiteten att inleverera är större än den ackumulerade kvantiteten att utleverera. Därför utvärderar den här ATP-beräkningsmetoden om en del av kvantiteten från en tidigare period kan användas i en senare period.  
+ATP-kvantiteten beräknas med metoden "ackumulerad ATP med framförhållning". Den största fördelen med ATP-beräkningsmetoden är att den förmår hantera fall där summan av utleveranser bland inleveranser överstiger den senaste inleveransen (till exempel när en kvantitet från en tidigare inleverans måste användas för att kunna uppfylla ett behov). Beräkningsmetoden "ackumulerad ATP med framförhållning" omfattar alla utleveranser tills den ackumulerade kvantiteten att inleverera är större än den ackumulerade kvantiteten att utleverera. Därför utvärderar den här ATP-beräkningsmetoden om en del av kvantiteten från en tidigare period kan användas i en senare period.  
 
 ATP-kvantiteten är det obekräftade lagersaldot under den första perioden. Vanligtvis beräknas den för varje period som en inleverans schemaläggs. Programmet beräknar ATP-perioden i dagar och beräknar det aktuella datumet som det första datumet för ATP-kvantiteten. Under den första perioden omfattar ATP lagerbehållningen minus kundorder som har förfallit.  
 
 ATP beräknas med följande formel:  
 
-Tillgängligt att LOVA = tillgängligt att LOVA för föregående period + inleveranser för aktuell period – utleveranser för den aktuella perioden-nettosaldot för varje framtida period tills den period då summan av inleveranser för alla framtida perioder fram till och med den framtida perioden överstiger summan av utleveranser upp till och med den framtida perioden.  
+ATP = ATP för föregående period + inleveranser för aktuell period – utleveranser för aktuell period – nettosaldo för varje framtida period till och med den period då summan av inleveranser för alla framtida perioder (inklusive den framtida perioden) överskrider summan av inleveranserna (inklusive den framtida perioden).  
 
 När det inte finns några fler utleveranser eller inleveranser att ta hänsyn till är kvantiteten tillgängligt att lova för de följande datumen densamma som den senast beräknade kvantiteten tillgängligt att lova.  
 
@@ -66,8 +69,10 @@ En kund ringer och vill beställa 150 enheter av samma produkt. När du kontroll
 
 Du skapar en försäljningsorderrad för produkten och anger kvantitetens **150**.  
 
-Eftersom metoden för kontroll av leveransdatum är ATP, beräknas ATP-data för att hitta tidigast möjliga transportdatum. Utifrån inställningarna vara försenade inköpsorder och försäljningsorder och resulterande kvantiteten tillgängligt att LOVA för det aktuella datumet är 0. Imorgon om försenade inköpsorder ska tas emot kvantiteten tillgängligt att LOVA beräknas som överstiger 0 (då det beräknas som 125). 10 dagar från och med nu när ytterligare inköpsorder för 100 enheter förväntas ta emot blir kvantiteten tillgängligt att LOVA emellertid mer än 150.  
+Eftersom metoden för kontroll av leveransdatum är ATP, beräknas ATP-data för att hitta tidigast möjliga transportdatum. Försenade inköpsorder och försäljningsorder beaktas baserat på inställningarna, och resulterande ATP-kvantitet för det aktuella datumet är 0. Imorgon, då den försenade inköpsordern förväntas inlevereras, beräknas ATP-kvantiteten som mer än 0 (i detta fal beräknas den som 125). 10 dagar från och med nu, när ytterligare inköpsorder för 100 enheter förväntas inlevereras, kommer ATP-kvantiteten däremot att överstiga 150.  
 
-Därför transportdatum är inställt på 10 dagar från nu, baserat på beräkningen av ATP. Därför talar du om för kunden att den begärda kvantiteten kan levereras 10 dagar från och med nu.
+Därför anges transportdatum som 10 dagar från nu, baserat på beräkningen av ATP. Därför talar du om för kunden att den begärda kvantiteten kan levereras 10 dagar från och med nu.
+
+
 
 

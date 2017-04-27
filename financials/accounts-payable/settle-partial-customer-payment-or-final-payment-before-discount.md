@@ -1,5 +1,5 @@
 ---
-title: "Kvitta delvis kundbetalning och slutbetalningen fullständigt före rabattdatumet"
+title: "Kvitta en kunddelbetalning och hela slutbetalningen före rabattdatumet"
 description: "Den här artikeln tillhandahåller scenarier som visar hur du registrerar delbetalningar för en kund och tar kassarabatter inom kassarabattperioden."
 author: twheeloc
 manager: AnnBe
@@ -26,14 +26,17 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="settle-a-partial-customer-payment-and-the-final-payment-in-full-before-the-discount-date"></a>Kvitta delvis kundbetalning och slutbetalningen fullständigt före rabattdatumet
+# <a name="settle-a-partial-customer-payment-and-the-final-payment-in-full-before-the-discount-date"></a>Kvitta en kunddelbetalning och hela slutbetalningen före rabattdatumet
+
+[!include[banner](../includes/banner.md)]
+
 
 Den här artikeln tillhandahåller scenarier som visar hur du registrerar delbetalningar för en kund och tar kassarabatter inom kassarabattperioden.
 
-Fabrikam säljer varor till kunden 4028. Fabrikam erbjuder en kassarabatt på 1 procent om fakturan är betald 14 dagar. Fakturor måste betalas inom 30 dagar. Fabrikam erbjuder även kassarabatter på delbetalningar. Kvittning parametrar finns i den **parametrar för kundreskontra** sida.
+Fabrikam säljer varor till kunden 4028. Fabrikam erbjuder en kassarabatt på 1 procent om fakturan betalas inom 14 dagar. Fakturor måste betalas inom 30 dagar. Fabrikam erbjuder även kassarabatter på delbetalningar. Kvittningsparametrar finns på sidan **Parametrar för kundreskontra**.
 
 ## <a name="customer-invoice"></a>Kundfaktura
-Den 25 juni Arnie registrerar och bokför en faktura för 1 000,00 för kund 4028. Arnie kan visa den här transaktionen på sidan** Kundtransaktioner**.
+Den 25 juni registrerar och bokför Arnie en faktura på 1 000,00 för kund 4028. Arnie kan visa den här transaktionen på sidan** Kundtransaktioner**.
 
 | Verifikation   | transaktionstyp | Datum      | Faktura | Debetbelopp i transaktionsvaluta | Kreditbelopp i transaktionsvaluta | Saldo  | Valuta |
 |-----------|------------------|-----------|---------|--------------------------------------|---------------------------------------|----------|----------|
@@ -63,7 +66,7 @@ Arnie klickar på fliken **Kassarabatt** för att visa rabattbelopp.
 | 2015/07/25          | 0,00                 | 1 000,00                       |
 
 ## <a name="partial-payment-by-using-the-enter-customer-payments-page"></a>Delbetalning genom att använda sidan Ange kundbetalningar
-Kund 4028 skickar en betalning för 500,00 den 1 juli. Om du vill ange den här betalningen Arnie inte klickar du på **rader**. I stället registrerar han betalningen genom att skapa en ny betalningsjournal och öppnar sedan sidan **Ange kundbetalningar**. Han anger betalningsinformationen och markerar fakturan som han har angett. När Arnie anger **500,00** som belopp anger han även **500,00** i fältet **Belopp att betala** i rutnätet. Eftersom Fabrikam tillåter en kassarabatt på delbetalningar ser han att en delkassarabatt på 5,05 också ska utnyttjas. Beräkningen av den här rabatten är 500,00 ÷ 0,99 × 0,01 = 5,05. (I den här beräkningen delas 500,00 med 0,99 eftersom det är 1 procents rabatt. Därför betalar kunden 99 procent av fakturan. Resultatet multipliceras sedan med rabattprocenten som är 1 procent, eller 0,01. Om kunden äger hela rabatten på 10,00, belopp som ska redovisas inte 990.00.) Rabattinformation visas i rutnätet längst ned i den **ange kundbetalningar** sida.
+Kund 4028 skickar en betalning på 500,00 den 1 juli. För att ange den här betalningen klickar inte Arnie på **Rader**. I stället registrerar han betalningen genom att skapa en ny betalningsjournal och öppnar sedan sidan **Ange kundbetalningar**. Han anger betalningsinformationen och markerar fakturan som han har angett. När Arnie anger **500,00** som belopp anger han även **500,00** i fältet **Belopp att betala** i rutnätet. Eftersom Fabrikam tillåter en kassarabatt på delbetalningar ser han att en delkassarabatt på 5,05 också ska utnyttjas. Beräkningen av den här rabatten är 500,00 ÷ 0,99 × 0,01 = 5,05. (I den här beräkningen delas 500,00 med 0,99 eftersom det är 1 procents rabatt. Därför betalar kunden 99 procent av fakturan. Resultatet multipliceras sedan med rabattprocenten som är 1 procent, eller 0,01. Om kunden utnyttjar hela rabatten på 10,00 kommer beloppet som ska kvittas att vara 990,00.) Rabattinformation visas i rutnätet längst ned på sidan **Ange kundbetalningar**.
 
 | Kassarabattbelopp att utnyttja | Utnyttjad kassarabatt | Belopp att betala |
 |------------------------------|---------------------|---------------|
@@ -143,6 +146,8 @@ Arnie bokför journalen och granskar kundtransaktioner på sidan **Kundtransakti
 | RAB-10010 | Kassarabatt    | 2015/07/01  |         |                                      | 5,00                                  | 0,00    | USD      |
 | ARP-10011  | Betalning          | 2015/07/08  |         |                                      | 495,00                                | 0,00    | USD      |
 | RAB-10011 | Kassarabatt    | 2015/07/08  |         |                                      | 5,00                                  | 0,00    | USD      |
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-title: Hantering av avvikelse
+title: Avvikelsehantering
 description: "Det här avsnittet ger en beskrivning av grundläggande inställningar som krävs för att använda avvikelser. Ytterligare inställningar krävs om du vill använda kvalitetsorder."
 author: YuyuScheller
 manager: AnnBe
@@ -25,7 +25,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="nonconformance-management"></a>Hantering av avvikelse
+# <a name="nonconformance-management"></a>Avvikelsehantering
+
+[!include[banner](../includes/banner.md)]
+
 
 Det här avsnittet ger en beskrivning av grundläggande inställningar som krävs för att använda avvikelser. Ytterligare inställningar krävs om du vill använda kvalitetsorder. 
 
@@ -34,7 +37,7 @@ Gör så här om du vill aktivera avvikelsehantering:
 1.  Definiera parametrarna för hantering av lager och lagerstyrning som används till avvikelser:
     -   Välj alternativet **Ja** för **Använd kvalitetshantering**.
     -   Ange timlön i den lokala valutan i fältet **Timtariff**. Timpriset används för beräkning av kostnader för operationer som hör till en avvikelse. Timtariffen och de beräknade kostnaderna utgör referensinformation för en avvikelse. De påverkar inte andra funktioner.
-    -   Använd den **kvalitetshantering** på fliken i **rapportinställningar** sidan för att definiera typ av dokument som ska skrivas ut. Du kan skriva ut en avvikelserapport, en korrigeringsrapport eller ett avvikelsemärke. Du kan definiera mer än en post för utskrift av olika dokumenttyper på en rapport, eller för utskrift av interna eller externa noteringar. Det kan vara praktiskt att använda sidan **Dokumenttyp** för att definiera en unik dokumenttyp för avvikelser och en unik dokumenttyp för korrigeringar. Du kan till exempel ange anteckningar om avvikelser genom att använda den unika dokumenttypen för avvikelser. I det här fallet identifierar du den unika dokumenttypen i rapportalternativen.
+    -   Använd fliken **Kvalitetshantering** på sidan **Rapportinställningar** för att definiera den dokumenttyp som ska skrivas ut. Du kan skriva ut en avvikelserapport, en avvikelseetikett eller en korrigeringsrapport. Du kan definiera mer än en post för utskrift av olika dokumenttyper på en rapport, eller för utskrift av interna eller externa noteringar. Det kan vara praktiskt att använda sidan **Dokumenttyp** för att definiera en unik dokumenttyp för avvikelser och en unik dokumenttyp för korrigeringar. Du kan till exempel ange anteckningar om avvikelser genom att använda den unika dokumenttypen för avvikelser. I det här fallet identifierar du den unika dokumenttypen i rapportalternativen.
     -   Aktivera nummerserier för referenser för avvikelser och korrigeringar.
 
 2.  Gör det möjligt för användare att godkänna avvikelser. Använd fältet **Namn** på sidan **Användare** för att tilldela en medarbetare till varje användare som måste godkänna en avvikelse. Systemet använder medarbetarna som ändrar status för en avvikelse för att följa avvikelsehistoriken. Användarna kan inte godkänna en avvikelse, om de inte har tilldelats en medarbetaridentifierare.
@@ -47,10 +50,12 @@ Gör så här om du vill aktivera avvikelsehantering:
 <a name="see-also"></a>Se även
 --------
 
-[Skapa och bearbeta en avvikelse (aktivitet guide)](https://ax.help.dynamics.com/en/wiki/create-and-process-a-nonconformance/)
+[Skapa och bearbeta en avvikelse (uppgiftsguide)](https://ax.help.dynamics.com/en/wiki/create-and-process-a-nonconformance/)
 
-[Quality management processes](quality-management-processes.md)
+[Kvalitetshanteringsprocesser](quality-management-processes.md)
 
-[Ställ in förutsättningar för avvikelse management (aktivitet guide)](https://ax.help.dynamics.com/en/wiki/set-up-prequisites-for-nonconformance-management/)
+[Ställ in förutsättningar för avvikelsehantering (uppgiftsguide)](https://ax.help.dynamics.com/en/wiki/set-up-prequisites-for-nonconformance-management/)
+
+
 
 

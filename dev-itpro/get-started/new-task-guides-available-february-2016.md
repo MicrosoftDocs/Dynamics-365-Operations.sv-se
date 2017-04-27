@@ -1,6 +1,6 @@
 ---
-title: "Nya aktiviteter stödlinjerna (februari 2016)"
-description: "Wikin visar aktivitet guiderna som publicerades till Microsoft BPM-bibliotek från och med februari 2016.  Inkludera bibliotek som publicerats (februari 2016) APQC enhetliga bibliotek för Microsoft Dynamics 365 för operationer och (februari 2016) komma igång."
+title: Nya uppgiftguider (februari 2016)
+description: "Wikin visar uppgiftsguiderna som publicerades till Microsoft BPM-bibliotek från och med februari 2016.  De publicerade biblioteken innehåller (februari 2016) APQC Unified Library for Microsoft Dynamics 365 for Operations samt (februari 2016) Komma igång."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,14 +24,14 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="new-task-guides-february-2016"></a>Nya aktiviteter stödlinjerna (februari 2016)
+# <a name="new-task-guides-february-2016"></a>Nya uppgiftguider (februari 2016)
 
-Wikin visar aktivitet guiderna som publicerades till Microsoft BPM-bibliotek från och med februari 2016.  Inkludera bibliotek som publicerats (februari 2016) APQC enhetliga bibliotek för Microsoft Dynamics 365 för operationer och (februari 2016) komma igång.
+Wikin visar uppgiftsguiderna som publicerades till Microsoft BPM-bibliotek från och med februari 2016.  De publicerade biblioteken innehåller (februari 2016) APQC Unified Library for Microsoft Dynamics 365 for Operations samt (februari 2016) Komma igång.
 
-<a name="task-guides-in-the-february-2016-apqc-unified-library-for-microsoft-dynamics-365-for-operations"></a>Aktiviteter stödlinjerna i (februari 2016) APQC enhetliga bibliotek för Microsoft Dynamics 365 för operationer
+<a name="task-guides-in-the-february-2016-apqc-unified-library-for-microsoft-dynamics-365-for-operations"></a>Uppgiftsguider i (februari 2016) APQC Unified Library för Microsoft Dynamics 365 for Operations
 ---------------------------------------------------------------------------------
 
-(Februari 2016) APQC Unified biblioteket innehåller guiderna för uppgiften som ska användas om du behöver hjälp med Dynamics 365 för 7.0.0 operationer frisläppa. Om översatta versioner av guiderna uppgiften måste de finns i (maj 2016) APQC enhetliga bibliotek för Microsoft Dynamics 365 för operationer. Mer information om hur du ansluter hjälpsystemet till ett bibliotek av aktivitet guide finns [Kom igång med](help-overview.md).
+(Februari 2016) APQC Unified Library innehåller uppgiftsguider som är avsedda att användas för Hjälp med Dynamics 365 for Operations 7.0.0-version. Om du behöver lokaliserade versioner av uppgiftsguiderna är de tillgängliga i (maj 2016) APQC Unified Library för Microsoft Dynamics 365 for Operations. Mer information om hur du ansluter Hjälp-systemet till ett uppgiftsguidebibliotek hittar du i [Komma igång med Hjälp](help-overview.md).
 
 ### <a name="accounts-payable"></a>Leverantörsreskontra
 
@@ -531,7 +531,7 @@ Wikin visar aktivitet guiderna som publicerades till Microsoft BPM-bibliotek fr�
 | Lägga till en beräkning i en produktkonfigurationsmodell    | Globalt             |
 | Godkänna en modellversion för produktkonfiguration                 | Globalt             |
 | Slutföra grundläggande inställningar för en frisläppt produktmall | Globalt             |
-| Skapa en... \financial-dimensions\dimension-based för produktmallen               | Globalt             |
+| Skapa en... \financial-dimensions\dimension-baserad produktmall               | Globalt             |
 | Skapa en produktklassificeringshierarki          | Globalt             |
 | Skapa en ny produktkonfigurationsmodell                  | Globalt             |
 | Skapa en produktmall.                               | Globalt             |
@@ -544,7 +544,7 @@ Wikin visar aktivitet guiderna som publicerades till Microsoft BPM-bibliotek fr�
 | Underhålla strukturlista för produktkonfigurationsmodellen        | Globalt             |
 | Underhåll flöde för produktkonfigurationsmodellen                    | Globalt             |
 | Hantera frisläppta produkter                              | Globalt             |
-| Frisläpp en... \financial-dimensions\dimension-based för produktmallen              | Globalt             |
+| Frisläpp en... \financial-dimensions\dimension-baserad produktmall              | Globalt             |
 | Överför data för produktmodeller                      | Globalt             |
 
  
@@ -718,10 +718,10 @@ Wikin visar aktivitet guiderna som publicerades till Microsoft BPM-bibliotek fr�
 <a name="see-also"></a>Se även
 --------
 
-[Ny eller uppdaterad uppgift får (maj 2016)](new-updated-task-guides-available-may-2016.md)
+[Nya eller uppdaterade uppgiftsguider (maj 2016)](new-updated-task-guides-available-may-2016.md)
 
-[Ny eller uppdaterad uppgift får (augusti 2016)](new-updated-task-guides-available-august-2016.md)
+[Nya eller uppdaterade uppgiftsguider (augusti 2016)](new-updated-task-guides-available-august-2016.md)
 
-[Ny eller uppdaterad uppgift får (2016 November)](new-task-guides-november-2016.md)
+[Nya eller uppdaterade uppgiftsguider (november 2016)](new-task-guides-november-2016.md)
 
 

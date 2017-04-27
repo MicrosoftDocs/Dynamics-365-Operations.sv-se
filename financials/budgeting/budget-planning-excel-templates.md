@@ -1,6 +1,6 @@
 ---
-title: "Budgetplaneringsmallarna för Excel"
-description: "Det här avsnittet beskrivs hur du skapar en Microsoft Excel-mallar som kan användas med budgetplaner."
+title: "Budgetplaneringsmallar för Excel"
+description: "Det här avsnittet beskriver hur du skapar Microsoft Excel-mallar som kan användas med budgetplaner."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,102 +24,107 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="budget-planning-templates-for-excel"></a>Budgetplaneringsmallarna för Excel
+# <a name="budget-planning-templates-for-excel"></a>Budgetplaneringsmallar för Excel
 
-Det här avsnittet beskrivs hur du skapar en Microsoft Excel-mallar som kan användas med budgetplaner.
+[!include[banner](../includes/banner.md)]
 
-Det här avsnittet beskrivs hur du skapar Excel-mallar som ska användas med standard demo datauppsättningen och användarinloggning Admin budgetplaner. Mer information om budgetplanering finns [översikt för budgetplaneringsprocessen.](budget-planning-overview-configuration.md) Du kan även följa de [budgetplanering 101](budget-plan.md) självstudier för att lära sig basmodulen konfigurations- och principer.
 
-## <a name="generate-a-worksheet-using-budget-plan-document-layout"></a>Skapa ett formulär med hjälp av budgeten planen dokumentlayout
-Budgetplandokument kan visas och redigeras med hjälp av en eller flera av layouter. Varje layout kan ha en associerad dokumentet budgetplansmall att visa och redigera planen budgetdata i ett Excel-kalkylblad. I det här avsnittet genereras dokumentet en budgetplansmall använder en befintlig konfiguration av layout. Öppna den **Budget planer lista** (**budget**&gt;**budgetplaner**). Klicka på **New** du skapar en ny budgetplandokument. [![bpt1](./media/bpt11-1024x552.png)](./media/bpt11.png) 
+Det här avsnittet beskriver hur du skapar Microsoft Excel-mallar som kan användas med budgetplaner.
 
-Använd den **Lägg** rad alternativet att lägga till rader. Klicka på **layout** visa budgeten planen dokumentkonfigurationen layout. 
+Det här avsnittet beskriver hur du skapar Excel-mallar som ska användas med budgetplaner som använder vanlig demodatauppsättning och administratörsinloggning. Mer information om budgetplanering finns [Översikt för budgetplanering.](budget-planning-overview-configuration.md) Du kan även följa guiden [Budgetplanering 101](budget-plan.md) för att lära dig grundläggande modulkonfiguration och användning.
+
+## <a name="generate-a-worksheet-using-budget-plan-document-layout"></a>Skapa ett kalkylblad med en dokumentlayout för budgetplan
+Budgetplandokument kan visas och redigeras med hjälp av en eller flera av layouter. Varje layout kan ha en associerad budgetplansmall som låter dig visa och redigera budgetplandata i ett Excel-kalkylblad. I det här avsnittet genereras en budgetplansmall med hjälp av en befintlig layoutkonfiguration. Öppna **Budgetplanlista** (**Budgetering**&gt; **Budgetplaner**). Klicka på **Ny** om du vill skapa en ny budgetplan. [![bpt1](./media/bpt11-1024x552.png)](./media/bpt11.png) 
+
+Använd radalternativet **Lägg till** för att lägga till rader. Klicka på **Layout** för att visa dokumentlayoutens konfiguration för budgetplanen. 
 [![bpt2](./media/bpt2-1024x274.png)](./media/bpt2.png) 
 
-Du kan granska konfigurationen layout och justera den efter behov. Gå till **mall**&gt;**generera** skapa en Excel-fil för den här layouten. När mallen skapas, går du till **mall**&gt;**visa** om du vill öppna och granska dokument budgetplansmall. Du kan spara filen på hårddisken. [![bpt3](./media/bpt3-1024x545.png)](./media/bpt3.png) 
+Du kan granska layoutkonfigurationen och justera den efter behov. Navigera till **Mall** &gt; **Generera** för att skapa en Excel-fil för den här layouten. När mallen har skapats går du till **Mall** &gt; **Visa** om du vill öppna och granska mallen för budgetplan. Du kan spara Excel-filen på hårddisken. [![bpt3](./media/bpt3-1024x545.png)](./media/bpt3.png) 
 
 > [!NOTE] 
-> Budget planen dokumentets layout kan inte redigeras när en Excel-mall som är associerad med den. Ändra layouten, ta bort associerade Excel-mallfil och återskapa den. Det krävs att fälten i layouten och kalkylbladet synkroniseras. 
+> Budgetplanens dokumentlayout kan inte redigeras sedan en Excel-mall har associerats med den. För att ändra layouten, ta bort associerad Excel-mallfil och återskapa den. Detta krävs för att hålla fälten i layouten och kalkylbladet synkroniserade. 
 
-Excel-mallen innehåller alla element från budgeten planen dokumentets layout där de **tillgängliga i kalkylbladet** kolumn har angetts till True. Överlappande element tillåts inte i Excel-mall. Om layouten innehåller begäran K1, k2 begäran, begäran Q3 och Q4 begäran kolumner och totala begäran den här kolumnen motsvarar summan av alla kolumner för 4 kvartal, är den kvartalsvisa kolumner eller totalt exempelvis tillgängliga att användas i Excel-mall. Filen kan inte uppdatera överlappande kolumner under uppdateringen eftersom informationen i tabellen kan bli för gammal eller felaktig.
+Excel-mallen innehåller alla element från budgetplanens dokumentlayout, där kolumnen **Tillgängliga i kalkylbladet** har angetts som True. Överlappande element tillåts inte i Excel-mallen. Om layouten exempelvis innehåller kolumner för Begäran K1, Begäran K2, Begäran K3 och Begäran K4 och en kolumn för total begäran som motsvarar summan för alla 4 kvartalkolumner, är endast den kvartalsvisa kolumnen (totalkolumnen) tillgänglig att användas i Excel-mallen. Excel-filen kan inte uppdatera överlappande kolumner under uppdateringen, detta eftersom informationen i tabellen kan bli för gammal eller felaktig.
 
 [![bpt4](./media/bpt4-1024x615.png)](./media/bpt4.png)
 
 > [!NOTE] 
-> Om du vill undvika problem med att visa och redigera planen budgetdata med Excel vara samma användare inloggad på båda Dynamics 365 för operationer och tillägget Microsoft Dynamics Office-dataanslutning.
+> Om du vill undvika problem med att visa och redigera budgetplandata med Excel, bör samma användare vara inloggad på både Dynamics 365 for Operations och Office-tillägget för datakoppling till Microsoft Dynamics.
 
-## <a name="add-a-header-to-budget-plan-document-template"></a>Lägga till en rubrik i budgetplansmallen dokument
-Lägga till rubrikinformation, markera den översta raden i filen och infoga tomma rader. Klicka på **Design** i den **dataanslutning** att lägga till huvudfält Excel-filen.
+## <a name="add-a-header-to-budget-plan-document-template"></a>Lägg till en sidrubrik i en dokumentmall för budgetplan
+För att lägga till sidrubriksinformation, markera den översta raden i Excel-filen och infoga tomma rader. Klicka på **Design** i **Datakoppling** för att lägga till sidhuvudfält i Excel-filen.
 
 [![bpt5](./media/bpt5-1024x615.png)](./media/bpt5.png) 
 
-I den **Design** fliken ** ** klickar du på **Lägg till** fält och markera **BudgetPlanHeader** som datakälla för enheten.
+I fliken **Design**, ** ** klicka på fälten **Lägg till** och markera sedan **BudgetPlanHeader** som datakälla för enheten.
 
 [![bpt6](./media/bpt6-1024x615.png)](./media/bpt6.png)
 
-Peka markören på önskad plats i filen. Klicka på **Lägg till etiketten** till fältetiketten till den angivna platsen. Välj **lägga till värdet** att lägga till värdefältet till vald plats. Klicka på **har gjort** att stänga designverktyget.
+Peka markören på önskad plats i Excel-filen. Klicka på knappen **Lägg till etikett** för att lägga till fältetiketten på vald plats. Välj **Lägg till värde** för att lägga till värdefältet på vald plats. Klicka på **Klart** för att stänga designverktyget.
 
 ## <a name="bpt7mediabpt7pngmediabpt7png"></a>[![bpt7](./media/bpt7.png)](./media/bpt7.png)
 
-<a name="add-a-calculated-column-to-budget-plan-document-template-table"></a>Lägga till en beräknad kolumn i budgeten planen dokumentregister mall
+<a name="add-a-calculated-column-to-budget-plan-document-template-table"></a>Lägg till beräknad kolumn i ett dokumentmallsregister för budgetplan
 --------------------------------------------------------------
 
-Nästa steg är beräknade kolumner läggs till dokument skapade budgetregisterposten planmall. A **totala begäran** kolumner som sammanfattar begäran K1: begäran kvartal 4 kolumner och en **justering** kolumnen beräknas den **totala begäran** kolumn med fördefinierade faktorn.
+Därefter kommer beräknade kolumner att läggas till i dokumentmall för budgetplan. En kolumn vid namn **Total begäran**, som sammanfattar kolumnerna Begäran K1: Begäran K4, samt en **Justering**-kolumn, som beräknar kolumnen **Total begäran** genom en fördefinierad faktor.
 
-Klicka på **Design** i den **dataanslutning** att lägga till kolumner i tabellen. Klicka på **redigera** vid **BudgetPlanWorksheet** datakälla om du vill börja lägga till kolumner.
+Klicka på **Design** i **Datakoppling** för att lägga till kolumner i registret. Klicka på **Redigera** bredvid datakällan **BudgetPlanWorksheet** om du vill börja lägga till kolumner.
 
 [![bpt8](./media/bpt8-1024x301.png)](./media/bpt8.png) 
 
-Valda fältgruppen visar de kolumner som finns i mallen. Klicka på **formeln** att lägga till en ny kolumn. Namnge den nya kolumnen och sedan klistra in formeln i den **formeln** fält. Klicka på **uppdatering** om du vill infoga kolumnen.
+Den valda fältgruppen visar de kolumner som finns i mallen. Klicka på **Formel** för att lägga till en ny kolumn. Namnge den nya kolumnen och klistra sedan in formeln i fältet **Formel**. Klicka på **Uppdatera** för att klistra in kolumnen.
 
 [![bpt12](./media/bpt12-1024x565.png)](./media/bpt12.png)
 
 > [!NOTE] 
-> Ange formeln skapar formeln i kalkylbladet och kopiera det till den **Design** fönster. En Dynamics 365 för operationer bundna register namnges vanligtvis "AXTable1". Exempelvis summera begära K1: begära kvartal 4 kolumner i kalkylbladet formeln = AxTable1\[K1 begära\]+ AxTable1\[begära K2\]+ AxTable1\[begära Q3\]+ AxTable1\[begära Q4\].
+> Ange formeln genom att skapa den i kalkylbladet och kopiera den sedan till fönstret **Design**. Ett register avsett för Dynamics 365 for Operations namnges vanligtvis "AXTable1". För att till exempel summera Begäran K1 : Begäran K4-kolumner i kalkylbladet blir formeln = AxRegister1\[Begäran K1\]+ AxRegister1\[Begäran K2\]+ AxRegister1\[Begäran K3\]+ AxRegister1\[Begäran K4\].
 
-Upprepa stegen för att infoga den **justering** kolumn. Använd formeln = AxTable1\[totala begäran\]\*$I$ 1 för den här kolumnen. Detta kommer ta värdet i cell I1 och multiplicera värden i den **totala begäran** kolumn för att beräkna justeringssummorna.
+Upprepa dessa steg för att infoga kolumnen **Justering**. Använd formeln = AxRegister1\[Total begäran\]\*$I$ 1 för den här kolumnen. Detta kommer ta värdet i cell I1 och multiplicera värdena i kolumnen **Total begäran** för att beräkna justeringsbeloppen.
 
-Spara och stäng filen. Återgå till Dynamics 365 för operationer och i **layout**, klickar du på **mall &gt;överför** att överföra den sparade mallen i Excel som ska användas för budgetplanen. 
+Spara och stäng Excel-filen. Återgå till Dynamics 365 for Operations. I **Layout** klickar du på **Mall &gt; Överför** för att överföra den sparade Excel-mallen som ska användas för budgetplanen. 
 
 [![bpt10](./media/bpt10-1024x352.png)](./media/bpt10.png) 
 
-Stäng den **layout** skjutreglaget. I **budgetplanen** dokument, klickar du på **kalkylblad** visa och redigera dokument i Excel. Observera att den justerade Excel-mallen som användes för att skapa den här Budgetplanskalkylbladet och beräknade kolumner uppdateras med hjälp av formlerna som definierats i föregående steg. 
+Stäng skjutreglaget **Layout**. I dokumentet **Budgetplan** klickar du på **Kalkylblad** för att visa och redigera dokumentet i Excel. Observera att den justerade Excel-mallen användes för att skapa det här budgetplanskalkylbladet, och beräknade kolumner uppdateras med hjälp av de formler som definierades i föregående steg. 
 
 [![bpt11](./media/bpt111-1024x431.png)](./media/bpt111.png)
 
-## <a name="tips--tricks-for-creating-budget-plan-templates"></a>Tips och trick för att skapa Budgetplansmallar
-### <a name="can-i-add-and-use-additional-data-sources-to-a-budget-plan-template"></a>Kan jag lägga till och använda andra datakällor till en budgetplansmall?
+## <a name="tips--tricks-for-creating-budget-plan-templates"></a>Tips och trick för att skapa budgetplansmallar
+### <a name="can-i-add-and-use-additional-data-sources-to-a-budget-plan-template"></a>Kan jag lägga till och använda ytterligare datakällor i en budgetplansmall?
 
-Ja, du kan använda den **Design** menyn om du vill lägga till ytterligare enheter i samma eller andra formatmallar i mallen i Excel. Du kan till exempel lägga till den **BudgetPlanProposedProject** datakälla om du vill skapa och underhålla en lista över föreslagna projekt samtidigt när planerar arbeta med budgeten i Excel. Observera att bland annat omfattande datakällor kan påverka prestanda i Excel-arbetsboken. 
+Ja, du kan använda menyn **Design** för att lägga till ytterligare enheter i samma eller andra ark i Excel-mallen. Du kan till exempel lägga till datakällan **BudgetPlanProposedProject** om du vill skapa och underhålla en lista över föreslagna projekt samtidigt som du arbetar med budgetplandata i Excel. Observera att bland annat omfattande datakällor kan påverka prestandan i Excel-arbetsboken. 
 
-Du kan använda den **Filter** alternativet i den **dataanslutning** att lägga till ytterligare datakällor önskat filter.
+Du kan använda alternativet **Filter** **Datakoppling** för att lägga till önskade filter bland ytterligare datakällor.
 
-### <a name="can-i-hide-the-design-option-in-the-data-connector-for-other-users"></a>Kan jag dölja alternativet Design i dataanslutning för andra användare?
+### <a name="can-i-hide-the-design-option-in-the-data-connector-for-other-users"></a>Kan jag dölja alternativet Design i datakopplingen för andra användare?
 
-Ja, öppna det **dataanslutning** alternativ som döljer den **Design** alternativet från andra användare.
+Ja, öppna alternativet **Datakoppling** för att dölja alternativet **Design** från andra användare.
 
 [![bpt13](./media/bpt13-1024x565.png)](./media/bpt13.png)
 
-Expandera **Data connector alternativ** och tar bort den **aktiverar design** kryssrutan. Döljs de **Design** alternativet från den **dataanslutning**.
+Expandera **Alternativ för datakoppling** och rensa kryssrutan **Aktivera design**. Detta döljer alternativet **Design** från **Datakoppling**.
 
 [![bpt14](./media/bpt14-1024x592.png)](./media/bpt14.png)
 
-### <a name="can-i-prevent-users-from-accidently-closing-the-data-connector-while-working-with-data"></a>Kan jag förhindra användare misstag stänger kopplingen Data när du arbetar med data?
+### <a name="can-i-prevent-users-from-accidently-closing-the-data-connector-while-working-with-data"></a>Kan jag förhindra att användare av misstag stänger datakopplingen när de arbetar med data?
 
-Vi rekommenderar att låsa mallen om du vill hindra användare från att stänga den. Om du vill aktivera låset klickar du på **dataanslutning**, en pil visas längst upp i det högra hörnet. 
+Vi rekommenderar att låsa mallen om du vill hindra användare från att stänga den. Om du vill aktivera låset klickar du på **Datakoppling**; en pil visas längst upp i det högra hörnet. 
 
 [![bpt15](./media/bpt15-1024x285.png)](./media/bpt15.png) 
 
-Klicka på pilen för en ytterligare meny. Välj **Lås**.
+Klicka på pilen för att visa en ytterligare meny. Välj **Lås**.
 
 ### <a name="bpt16mediabpt16-1024x614pngmediabpt16png"></a>[![bpt16](./media/bpt16-1024x614.png)](./media/bpt16.png)
 
-### <a name="can-i-use-other-excel-features-like-cell-formatting-colors-conditional-formatting-and-charts-with-my-budget-plan-templates"></a>Kan jag använda andra Excel-funktioner som cellformatering, färger, villkorsstyrd formatering och diagram med Mina Budgetplansmallar
+### <a name="can-i-use-other-excel-features-like-cell-formatting-colors-conditional-formatting-and-charts-with-my-budget-plan-templates"></a>Kan jag använda andra Excel-funktioner som cellformatering, färger, villkorsstyrd formatering och diagram med mina budgetplansmallar?
 
-Ja, kommer de flesta vanliga Excel-funktionerna fungera i Budgetplansmallar. Vi rekommenderar färgkodningen för användare för att skilja mellan kolumnerna och redigeras. Villkorsstyrd formatering kan användas för att framhäva vissa problematiska delar av budgeten. Totalsummor för kolumner kan enkelt visas med vanlig Excel-formler ovanför tabellen.
+Ja, de flesta vanliga Excel-funktioner fungerar i budgetplansmallar. Vi rekommenderar att använda färgkodning så att användare kan skilja mellan skrivskyddade och redigerbara kolumner. Villkorsstyrd formatering kan användas för att framhäva vissa problematiska delar av budgeten. Totalsummor för kolumner kan enkelt visas med vanliga Excel-formler ovanför tabellen.
 
-Du kan också skapa och använda pivottabeller och diagram för ytterligare grupper och visualisering av budgetdata. På den **Data** fliken den **anslutningar** grupp genom att klicka på **uppdatera alla**, och klicka sedan på **egenskaper**. Klicka på den **användning** fliken. Under **uppdatera**markerar den **uppdatera data när du öppnar filen** kryssrutan. 
+Du kan också skapa och använda pivottabeller och diagram för ytterligare grupper och visualiseringar av budgetdata. På fliken **Data**, i gruppen **Anslutningar**, klickar du på **Uppdatera alla** och sedan på **Anslutningsegenskaper**. Klicka på fliken **Användning**. Under **Uppdatera**markerar du kryssrutan **Uppdatera data när filen öppnas**. 
 
 [![bpt17](./media/bpt17-1024x614.png)](./media/bpt17.png)
+
+
 
 

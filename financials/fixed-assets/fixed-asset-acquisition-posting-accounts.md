@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="fixed-asset-acquisition-posting-accounts"></a>Bokföringskonton för anskaffning av anläggningstillgångar
 
+[!include[banner](../includes/banner.md)]
+
+
 Det här avsnittet innehåller information om hur du ställer in redovisningsbokföringskonton för anskaffade tillgångar.
 
 Konton som används för bokföring av anskaffning kan variera beroende på metoden som används för anskaffning av tillgången. På sidan Bokföringsprofiler för anläggningstillgångar, på fliken Redovisningskonto, välj Anskaffnings och anskaffningsjustering för att ställa in anläggningstillgångskontona som bokförs i redovisningen. 
@@ -40,6 +43,8 @@ När Fakturajournal eller Inköpsorder i Leverantörsreskontra används för ans
 
 För anskaffningar som bokförs med journalen Lager till anläggningstillgångar i Huvudbok köps inte anläggningstillgången från externa källor, utan överförs från företagets eget lager. Därför är motkontot ett lagerutleveranskonto för lagerartikeln i lagerhanteringen.
 
-Mer information finns i [förvärv av tillgångar genom upphandling](acquire-assets-procurement.md).
+Mer information finns i [Förvärv av tillgångar genom upphandling](acquire-assets-procurement.md).
+
+
 
 

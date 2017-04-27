@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="invoice-issue-deadline"></a>Tidsgräns för fakturautfärdande
 
+[!include[banner](../includes/banner.md)]
+
+
 Den här artikeln innehåller information om hur du ställer in parametrar för att beräkna förfallodatum för utfärdande av kundfakturor och leverantörsfakturor i EU.
 
 Europeiska unionens direktiv 45/2010 och andra direktiv kräver att försändelser inom EU måste faktureras på eller före den femtonde dagen i månaden efter leverans. Samtidigt kan olika EU-länder ha olika fakturaregler för inhemska leveranser. Funktionen för fakturautfärdande gör att du kan anpassa datumen till landet eller regionen. Sedan beräknas förfallodatumet för fakturautfärdandet för alla leveranser till och från ett land/en region av en viss typ med hjälp av regler som gäller för det angivna datumintervallet. Dessutom kan du få alla följesedlar som har ett specifikt förfallodatum för fakturautfärdande, filtrera efter fakturautleveransförfallodatumet under periodisk försäljningsfakturering och kontrollera försäljningsfakturautleveransdatumet under fakturabokföring. Du kan ställa in en datumintervallkod och sedan ställa in en beräkningsregel för förfallodatum för fakturautfärdande genom att tilldela en datumintervallkod till en lands- eller regiontyp. Beräkningsregeln används för att beräkna förfallodatumet för utfärdande av fakturor för följande transaktioner:
@@ -42,7 +45,7 @@ Följande tabell visar förutsättningarna som krävs innan du kan använda denn
 | Kategori            | Förutsättning                                                                                                                                                                                                                                                                                                                                                                             |
 |---------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Land/region      | Den primära adressen för den juridiska personen måste ligga i ett EU-land.                                                                                                                                                                                                                                                                                                                    |
-| Relaterade inställningsuppgifter | På sidan **Datumintervall** ställer du in ett datumintervall som används för att beräkna fakturautleveransförfallodatumet. (Klicka på **redovisning**&gt;**Redovisningsinställningar**&gt;**datumintervall**.) I den **Utländska handelsparametrar** sida, ställa in egenskaper för utländsk handel för olika länder/regioner. (Klicka på **skattemässiga**&gt;**inställningar**&gt;**Utlandshandel**&gt;**Utländska handelsparametrar**.) |
+| Relaterade inställningsuppgifter | På sidan **Datumintervall** ställer du in ett datumintervall som används för att beräkna fakturautleveransförfallodatumet. (Klicka på **Redovisning** &gt; **Redovisningsinställningar** &gt; **Datumintervall**.) På sidan **Utländska handelsparametrar** ställer du in egenskaper för utländsk handel för olika länder/regioner. (Klicka **Moms** &gt; **Inställningar** &gt; **Utländsk handel** &gt; **Utländska handelsparametrar**.) |
 
 ## <a name="invoice-issue-due-date-calculation-rule"></a>Regel för beräkning av förfallodatum för fakturautfärdande
 Använd sidan **Ställ in beräkning för förfallodatum för fakturautfärdande** när du ställer in en beräkningsregel för förfallodatumet för fakturautfärdandet. Koppla en datumintervallskod till en lands- eller regiontyp.
@@ -51,7 +54,7 @@ Använd sidan **Ställ in beräkning för förfallodatum för fakturautfärdande
 Du kan ställa in kontrollparametrar som används för att se till att kundfakturor och kreditnotor för kundtransaktioner genereras inom den angivna tidsperioden efter att leveransen har gjorts. Du kan hitta dessa parametrar i området **Datumkontroll för faktura** på sidan **Parametrar för kundreskontra**.
 
 ## <a name="example"></a>Exempel
-Du ställer in Microsoft Dynamics 365 att beräkna fakturan problemet förfallodatum för leveranser inom EU den femtonde dagen i månaden när tillgången levereras, skapa en datum intervallet kod- och regel som har följande inställningar.
+Skapa en datumintervallkod och en beräkningsregel med följande inställningar för att ställa in Microsoft Dynamics 365 for Operations för att beräkna förfallodatum för fakturautfärdande på inomeuropeiska (EU) leveranser planerade på den 15:e dagen i månaden efter det att artiklarna har levererats.
 
 ### <a name="date-interval-code"></a>Datumintervallkod
 
@@ -75,8 +78,8 @@ Du ställer in Microsoft Dynamics 365 att beräkna fakturan problemet förfallod
 ## <a name="next-steps"></a>Nästa steg
 När du har avslutat inställningen av parametrarna för att beräkna förfallodatum för fakturautfärdande kan du skapa och bokföra följande transaktioner för att automatiskt beräkna och uppdatera förfallodatum för att utfärda fakturor:
 
--   **Försäljningsorder** – När du skapar en försäljningsorder och bokför en följesedel beräknas och uppdateras förfallodatumet för utfärdande av fakturan på följesedeln. Förfallodatumet beräknas utifrån det datumintervall som associeras med det land/den region som anges i leveransadressen för försäljningsordern. Du kan kontrollera fakturan utleverans när du bokför följesedeln förfallodatumet i den **fakturerar du utleveransen förfallodatum** på de **Följesedelsjournal** sida. (Klicka på **försäljnings- och**&gt;**försäljningsorder**&gt;**Order leverans**&gt;**följesedeln**.) Du kan visa alla följesedlar som inte har fakturerats och utfärdandet av fakturan förfallodatum, i den **följesedlar som inte har fakturerats** sida. (Klicka på **försäljnings- och**&gt;**försäljningsorder**&gt;**beställa leverans**&gt;**inte fakturerats följesedlar**.)
--   **Inköpsorder** – När du skapar en inköpsorder och bokför en produktinleverans beräknas och uppdateras förfallodatumet för utfärdande av fakturan på produktinleveransen. Förfallodatumet beräknas baserat på det datumintervall som associeras med det land/den region som anges i den primära adressen för leverantören. När du har bokfört produktinleveransen, kan du kontrollera fakturautleveransförfallodatumet i fältet **Förfallodatum för fakturautfärdande** på sidan **Produktinleveransjournal**. (Klicka på **anskaffning och källa**&gt;**inköpsorder**&gt;**ta emot produkter**&gt;**produktinleverans**.) Du kan visa alla produktinleveranser som inte har fakturerats och utfärdandet av fakturan förfallodatum, på den **produktinleveranser inte fakturerats** sida. (Klicka på **anskaffning och källa**&gt;**inköpsorder**&gt;**ta emot produkter**&gt;**produktinleveranser inte fakturerats**.)
+-   **Försäljningsorder** – När du skapar en försäljningsorder och bokför en följesedel beräknas och uppdateras förfallodatumet för utfärdande av fakturan på följesedeln. Förfallodatumet beräknas baserat på det datumintervall som associeras med det land/den region som anges i leveransadressen för försäljningsordern. När du har bokfört följesedeln kan du bekräfta fakturautleveransförfallodatumet i fältet **Förfallodatum för fakturautfärdande** på sidan **Följesedelsjournal**. (Klicka på **Försäljning och marknadsföring** &gt; **Försäljningsorder** &gt; **Orderleverans** &gt; **Följesedel**.) Du kan visa alla följesedlar som inte har fakturerats samt förfallodatum för fakturautfärdande på sidan **Icke-fakturerade följesedlar**. (Klicka på **Försäljning och marknadsföring** &gt; **Försäljningsorder** &gt; **Orderleverans** &gt; **Icke-fakturerade följesedlar**.)
+-   **Inköpsorder** – När du skapar en inköpsorder och bokför en produktinleverans beräknas och uppdateras förfallodatumet för utfärdande av fakturan på produktinleveransen. Förfallodatumet beräknas baserat på det datumintervall som associeras med det land/den region som anges i den primära adressen för leverantören. När du har bokfört produktinleveransen, kan du kontrollera fakturautleveransförfallodatumet i fältet **Förfallodatum för fakturautfärdande** på sidan **Produktinleveransjournal**. (Klicka på **Anskaffning och källa** &gt; **Inköpsorder** &gt; **Ta emot produkter** &gt; **Produktinleverans**.) Du kan visa alla produktinleveranser som inte har fakturerats samt förfallodatum för fakturautfärdande på sidan **Icke-fakturerade produktinleveranser**. (Klicka på **Anskaffning och källa** &gt; **Inköpsorder** &gt; **Ta emot produkter** &gt; **Icke-fakturerade produktinleveranser**.)
 
 ## <a name="technical-information-for-system-administrators"></a>Teknisk information för systemadministratörer
 Om du inte har åtkomst till de sidor som används för att slutföra uppgifter som nämns i den här artikeln, kontakta systemadministratören och ange information som visas i följande tabell.
@@ -95,7 +98,7 @@ Om du inte har åtkomst till de sidor som används för att slutföra uppgifter 
 <tbody>
 <tr class="odd">
 <td>Konfigurationsnycklar</td>
-<td>Klickar du på <strong>systemadministration</strong>&gt;<strong>inställningar</strong>&gt;<strong>licensiering</strong>&gt;<strong>Licenskonfiguration</strong>. Klicka på konfigurationsnyckeln <strong>Redovisning</strong>.</td>
+<td>Klicka på <strong>Systemadministration</strong> &gt; <strong>Inställningar</strong> &gt; <strong>Licensiering</strong> &gt; <strong>Licenskonfiguration</strong>. Klicka på konfigurationsnyckeln <strong>Redovisning</strong>.</td>
 </tr>
 <tr class="even">
 <td>Säkerhetsroller och behörigheter</td>
@@ -116,6 +119,8 @@ Om du inte har åtkomst till de sidor som används för att slutföra uppgifter 
 </tr>
 </tbody>
 </table>
+
+
 
 
 

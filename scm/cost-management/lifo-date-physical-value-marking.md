@@ -55,16 +55,16 @@ Det nya löpande medelvärdet för självkostnaden återspeglar medelvärdet fö
 -   Lagertransaktioner visas som lodräta pilar.
 -   Inleveranser till lagret visas som lodräta pilar ovanför tidslinjen.
 -   Utleveranser från lagret visas som lodräta pilar under tidslinjen.
--   Ovanför (eller under) respektive lodrät pil värdet på lagertransaktionen anges i formatetQuantity@Unitprice.
+-   Ovanför (eller under) respektive lodrät pil anges värdet på lagertransaktionen i formatet Quantity@Unitprice.
 -   Ett lagertransaktionsvärde inom parentes anger att lagertransaktionen har bokförts fysiskt i lagret.
 -   Ett lagertransaktionsvärde som inte är inom parentes anger att lagertransaktionen har bokförts finansiellt i lagret.
 -   Varje ny inleverans- eller utleveranstransaktion betecknas av en ny etikett.
--   Each vertical arrow is labeled with a sequential identifier, such as *1a*. Dessa ID:n anger ordningen på lagertransaktionsbokningarna utmed tidslinjen.
+-   Varje lodrät pil har en etikett med ett ordnings-ID, till exempel *1a*. Dessa ID:n anger ordningen på lagertransaktionsbokningarna utmed tidslinjen.
 -   Lagerstängningar visas som en röd lodrät streckad linje och etiketten *Lagerstängning*.
 -   Kvittningar som utförs av en lagerstängning visas som prickade röda pilar som löper diagonalt från en inleverans till en utleverans.
 
 ## <a name="lifo-date-with-the-include-physical-value-option"></a>LIFO-datum med alternativet Inkludera fysiskt värde
-Du kan markera kryssrutan **Inkludera fysiskt värde** för en artikel på sidan **Artikelmodellgrupper**. I det här fallet används både fysiska och ekonomiska inleveranstransaktioner vid beräkning av den löpande genomsnittliga självkostnaden. Där det går görs också justeringar av den fysiskt uppdaterade inleveranstransaktionen. Om kryssrutan **Inkludera fysiskt värde** avmarkeras skapar lagerstängningen med lagermodellen LIFO-datum kvittningar enbart för transaktioner som är ekonomiskt uppdaterade. I det här exemplet markeras artikelmodellgruppen till att inkludera fysiskt värde. Illustrationen som följer visar dessa transaktioner:
+Du kan markera kryssrutan **Inkludera fysiskt värde** för en artikel på sidan **Artikelmodellgrupper**. I detta fall använder systemet både fysiska och ekonomiska inleveranstransaktioner vid beräkning av löpande genomsnittlig självkostnad. Där det går görs också justeringar av den fysiskt uppdaterade inleveranstransaktionen. Om kryssrutan **Inkludera fysiskt värde** avmarkeras skapar lagerstängningen med lagermodellen LIFO-datum kvittningar enbart för transaktioner som är ekonomiskt uppdaterade. I det här exemplet markeras artikelmodellgruppen till att inkludera fysiskt värde. Illustrationen som följer visar dessa transaktioner:
 
 -   1a. Lagrets fysiska inleverans för kvantiteten 1 med en kostnad på 100,00 kronor vardera.
 -   1b. Lagrets ekonomiska inleverans för kvantiteten 1 med en kostnad på 100,00 kronor vardera.
@@ -82,16 +82,16 @@ Det nya löpande medelvärdet för självkostnaden återspeglar medelvärdet fö
 -   Lagertransaktioner visas som lodräta pilar.
 -   Inleveranser till lagret visas som lodräta pilar ovanför tidslinjen.
 -   Utleveranser från lagret visas som lodräta pilar under tidslinjen.
--   Ovanför (eller under) respektive lodrät pil värdet på lagertransaktionen anges i formatetQuantity@Unitprice.
+-   Ovanför (eller under) respektive lodrät pil anges värdet på lagertransaktionen i formatet Quantity@Unitprice.
 -   Ett lagertransaktionsvärde inom parentes anger att lagertransaktionen har bokförts fysiskt i lagret.
 -   Ett lagertransaktionsvärde som inte är inom parentes anger att lagertransaktionen har bokförts finansiellt i lagret.
 -   Varje ny inleverans- eller utleveranstransaktion betecknas av en ny etikett.
--   Each vertical arrow is labeled with a sequential identifier, such as *1a*. Dessa ID:n anger ordningen på lagertransaktionsbokningarna utmed tidslinjen.
+-   Varje lodrät pil har en etikett med ett ordnings-ID, till exempel *1a*. Dessa ID:n anger ordningen på lagertransaktionsbokningarna utmed tidslinjen.
 -   Lagerstängningar visas som en röd lodrät streckad linje och etiketten *Lagerstängning*.
 -   Kvittningar som utförs av en lagerstängning visas som prickade röda pilar som löper diagonalt från en inleverans till en utleverans.
 
 ## <a name="lifo-date-with-marking"></a>LIFO-datum med länkning
-Markering är en process som gör det möjligt att länka, eller markera en utleveranstransaktion till en inleveranstransaktion. Länkning kan göras antingen före eller efter att en transaktion bokförs. Du kan använda länkning när du vill vara säker på den exakta kostnaden för lagret när transaktionen bokförs eller när lagerstängningen utförs. Din kundtjänstavdelning har till exempel accepterat en snabborder från en viktig kund. Eftersom det är en snabborder måste du betala mer för den här artikeln för att kunna tillgodose kundens krav. Du måste vara säker på att kostnaden för den här lagerartikeln återspeglas i marginalen, eller kostnaderna för sålda varor (KSV), för den här försäljningsorderfakturan. När inköpsordern bokförs inlevereras lagret till en kostnad på 1200,000 kronor. Om detta försäljningsorderdokument länkas till inköpsordern innan följesedeln eller fakturan bokförs, blir kostnaden för sålda varor 1200,00 kronor i stället för den aktuella löpande genomsnittliga kostnaden för artikeln. Om försäljningsorderns följesedel eller fakturan bokförs innan markeringen görs, bokförs kostnaden för sålda varor till den löpande genomsnittliga självkostnaden. Innan lagerstängningen utförs kan dessa två transaktioner fortfarande länkas till varandra. Om du till exempel har en inleveranstransaktion för en utleveranstransaktionen. I så fall metod för lagervärdering som definierats i artikelns artikelmodellgrupp ignoreras och systemet kvittar dessa transaktioner mot varandra. Du kan markera ett problem transaktion till en inleverans innan en transaktion bokförs. Du kan göra detta från en försäljningsorderrad på sidan **Försäljningsorderdetaljer**. Du kan visa de öppna inleveranstransaktionerna på sidan **Markering**. Du kan också markera ett problem transaktion till en inleverans efter en transaktion bokförs. Du kan matcha eller markera en utleveranstransaktion för en öppen inleveranstransaktion för en inventerad artikel från en bokförd lagerjusteringsjournal. Illustrationen som följer visar dessa transaktioner:
+Märkning är en process som gör det möjligt att länka, eller markera, en utleveranstransaktion till en inleveranstransaktion. Länkning kan göras antingen före eller efter att en transaktion bokförs. Du kan använda länkning när du vill vara säker på den exakta kostnaden för lagret när transaktionen bokförs eller när lagerstängningen utförs. Din kundtjänstavdelning har till exempel accepterat en snabborder från en viktig kund. Eftersom det är en snabborder måste du betala mer för den här artikeln för att kunna tillgodose kundens krav. Du måste vara säker på att kostnaden för den här lagerartikeln återspeglas i marginalen, eller kostnaderna för sålda varor (KSV), för den här försäljningsorderfakturan. När inköpsordern bokförs inlevereras lagret till en kostnad på 1200,000 kronor. Om detta försäljningsorderdokument länkas till inköpsordern innan följesedeln eller fakturan bokförs, blir kostnaden för sålda varor 1200,00 kronor i stället för den aktuella löpande genomsnittliga kostnaden för artikeln. Om försäljningsorderns följesedel eller fakturan bokförs innan markeringen görs, bokförs kostnaden för sålda varor till den löpande genomsnittliga självkostnaden. Innan lagerstängningen utförs kan dessa två transaktioner fortfarande länkas till varandra. Om du till exempel har en inleveranstransaktion för en utleveranstransaktionen. I detta fall ignoreras den definierade värderingsmetoden för artikelns artikelmodellgrupp, systemet kvittar dessa transaktioner mot varandra. Du kan markera ett problem transaktion till en inleverans innan en transaktion bokförs. Du kan göra detta från en försäljningsorderrad på sidan **Försäljningsorderdetaljer**. Du kan visa de öppna inleveranstransaktionerna på sidan **Markering**. Du kan också markera ett problem transaktion till en inleverans efter en transaktion bokförs. Du kan matcha eller markera en utleveranstransaktion för en öppen inleveranstransaktion för en inventerad artikel från en bokförd lagerjusteringsjournal. Illustrationen som följer visar dessa transaktioner:
 
 -   1a. Lagrets fysiska inleverans för kvantiteten 1 med en kostnad på 100,00 kronor vardera.
 -   1b. Lagrets ekonomiska inleverans för kvantiteten 1 med en kostnad på 100,00 kronor vardera.
@@ -110,11 +110,11 @@ Den nya löpande genomsnittliga självkostnaden återspeglar genomsnittet av eko
 -   Lagertransaktioner visas som lodräta pilar.
 -   Inleveranser till lagret visas som lodräta pilar ovanför tidslinjen.
 -   Utleveranser från lagret visas som lodräta pilar under tidslinjen.
--   Ovanför (eller under) respektive lodrät pil värdet på lagertransaktionen anges i formatetQuantity@Unitprice.
+-   Ovanför (eller under) respektive lodrät pil anges värdet på lagertransaktionen i formatet Quantity@Unitprice.
 -   Ett lagertransaktionsvärde inom parentes anger att lagertransaktionen har bokförts fysiskt i lagret.
 -   Ett lagertransaktionsvärde som inte är inom parentes anger att lagertransaktionen har bokförts finansiellt i lagret.
 -   Varje ny inleverans- eller utleveranstransaktion betecknas av en ny etikett.
--   Each vertical arrow is labeled with a sequential identifier, such as *1a*. Dessa ID:n anger ordningen på lagertransaktionsbokningarna utmed tidslinjen.
+-   Varje lodrät pil har en etikett med ett ordnings-ID, till exempel *1a*. Dessa ID:n anger ordningen på lagertransaktionsbokningarna utmed tidslinjen.
 -   Lagerstängningar visas som en röd lodrät streckad linje och etiketten *Lagerstängning*.
 -   Kvittningar som utförs av en lagerstängning visas som prickade röda pilar som löper diagonalt från en inleverans till en utleverans.
 

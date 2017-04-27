@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="accruals-overview"></a>Översikt över periodiseringar
 
+[!include[banner](../includes/banner.md)]
+
+
 Det här avsnittet innehåller en beskrivning av periodiseringar och information om hur du ställer in dem och skapar transaktioner.
 
 Periodiseringar används i periodiserad redovisning för att följa intäkt som redovisas i den period då den har tjänats in, inte när betalningen mottas, och följa utgifter (kostnader) som redovisas när de uppträder, inte när betalning görs.
@@ -41,6 +44,8 @@ Periodiseringsscheman används för att ställa in den uppskjutna intäkter och 
 När du har definierat vilka konton som ska användas, kan du ange hur verifikationsnummer skapas när periodiseringstransaktioner skapas. Du kan även ange hur ofta transaktionerna ska göras, hur många gånger transaktionerna skapas och när transaktionerna bokförs. När det periodiseringsschemat har skapats, kan du använda det i någon av journalerna genom att använda redovisningsperiodiseringsfunktionen.
 
 ## <a name="ledger-accruals"></a>Periodiseringar
-När du anger en journal, kan du klicka på **Periodiseringar** på menyn **Funktioner**. Därefter, när du väljer periodiseringsschema, kan du se basbeloppet från journalen som ska fördelas på perioden, vilket bestäms av periodiseringsschemat. Till exempel om du betalar en medarbetares försäkring för hela året, i januari och beloppet är 12 000, måste du tolka utgiften varje månad. Du kan välja ett startdatum. Du kan även ange om beloppet som periodiseras baseras på kontot eller motkontot. När du har gjort dina val klickar du på **transaktioner** att visa alla transaktioner som har skapats utifrån periodiseringsschemat. Till exempel om du sidor 12 000 i försäkring utgifter under året visas 1 000 för varje månad. När du bokför journalen, kan du visa transaktionerna med den **Verifikationstransaktioner** sidan förfrågan. Om ett periodiseringsschema inte kan användas (t.ex, när en försäljningsorderfaktura eller en inköpsorderfaktura inblandade), du krediterar förutbetalt belopp och debiterar utgiftsbeloppet. Du kan sedan välja **Motboka** när du använder periodiseringsschemat.
+När du anger en journal, kan du klicka på **Periodiseringar** på menyn **Funktioner**. Därefter, när du väljer periodiseringsschema, kan du se basbeloppet från journalen som ska fördelas på perioden, vilket bestäms av periodiseringsschemat. Om du till exempel betalar en medarbetares försäkring för hela året i januari och beloppet är 12 000, måste du redovisa utgiften varje månad. Du kan välja startdatum. Du kan även ange om beloppet som periodiseras baseras på kontot eller motkontot. När du har gjort dina val klickar du på **Transaktioner** att visa alla transaktioner som har skapats baserat på periodiseringsschemat. Om du till exempel sprider ut de 12 000 i försäkringsutgifter över året, visas 1 000 för varje månad. När du bokför journalen kan du visa transaktionerna via förfrågningssidan **Verifikationstransaktioner**. Om ett periodiseringsschema inte kan användas (t.ex. när en försäljningsorderfaktura eller en inköpsorderfaktura är inblandad), kan du kreditera det förskottsbetalda beloppet och debitera utgiftsbeloppet. Du kan sedan välja **Motboka** när du använder periodiseringsschemat.
+
+
 
 

@@ -1,5 +1,5 @@
 ---
-title: "Skapa en modell för produktkonfiguration"
+title: "Ställ in en produktkonfigurationsmodell"
 description: "Den här artikeln beskriver hur du ställer in och skapar en modell för produktkonfiguration."
 author: YuyuScheller
 manager: AnnBe
@@ -27,13 +27,16 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="set-up-a-product-configuration-model"></a>Skapa en modell för produktkonfiguration
+# <a name="set-up-a-product-configuration-model"></a>Ställ in en produktkonfigurationsmodell
+
+[!include[banner](../includes/banner.md)]
+
 
 Den här artikeln beskriver hur du ställer in och skapar en modell för produktkonfiguration.
 
 | Uppgift                                                        | beskrivning                                                                                                                                                                                                                                                                                                                                                                                        |
 |-------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Skapa en produktmall.                                    | Skapa en produktmall från listan **Produktmall**. Frisläpp produktmallen för alla berörda företag. För en produktmall som används som en version för produktkonfigurationsmodellen eller som en delkomponent **Begränsningsbaserad konfiguration** måste väljas när Konfigurationstekniken och konfigurationsdimensionen måste väljas endast för denna dimension. |
+| Skapa en produktmall.                                    | Skapa en produktmall från listan **Produktmall**. Frisläpp produktmallen till alla berörda företag. För en produktmall som används som en version för en produktkonfigurationsmodell eller som en delkomponent. **Begränsningsbaserad konfiguration** måste markeras som konfigurationteknologi och konfigurationsdimensionen måste bara väljas för produktdimensiongruppen. |
 | Skapa komponenter.                                          | Skapa komponenter på sidan **Komponenter**. Komponenterna är byggblocken av en produktkonfigurationsmodell och kan återanvändas i flera produktkonfigurationsmodeller.                                                                                                                                                                                                                      |
 | Skapa attributstyper.                                     | Skapa attributtyper på sidan **Attributtyper**. Attributtyper anger de uppsättning datatyper för attribut som används i en modell för produktkonfigurationsmodeller. Attribut av **Booleskt**, **Text** med en fast lista och **Heltal** med en intervalltyplista är uppsättning värden som är tillgängliga när du konfigurerar en produktvariant som baseras på en produktkonfigurationsmodell.       |
 | Skapa en ny produktkonfigurationsmodell.                       | Skapa en produktkonfigurationsmodell på sidan **Ny produktkonfigurationsmodell**.                                                                                                                                                                                                                                                                                                              |
@@ -47,6 +50,8 @@ Den här artikeln beskriver hur du ställer in och skapar en modell för produkt
 | Testa en produktkonfigurationsmodell.                         | Testa produktkonfigurationsmodell antingen från sidan **Detaljer för begränsningsbaserad produktkonfigurationsmodell** eller sidan **Lista över produktkonfigurationsmodeller**. Test av produktkonfigurationsmodellerna simulerar produktmodellkonfigurationprocessen som inträffar under orderhantering.                                                                                                |
 | Skapa mallar för produktkonfigurationsmodeller                | Skapa en mall för produktkonfigurationsmodell på sidan **Konfigurationsmallar**. En konfigurationsmall innehåller värden för attribut i produktkonfigurationsmodellen. Välj attributvärdena på sidan **Konfigurera rad**. Du kan välja om du vill läsa in en konfigurationsmall för produktmodell under produktmodellkonfigurationen.                                                   |
 | Konfigurera en artikel.                                          | Produktkonfigurationsmodeller kan konfigureras från en försäljningsorder, försäljningsoffert, inköpsorder eller produktionsorder.                                                                                                                                                                                                                                                                           |
+
+
 
 
 

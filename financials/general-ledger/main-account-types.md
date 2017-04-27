@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="main-account-types"></a>Huvudkontotyper
 
+[!include[banner](../includes/banner.md)]
+
+
 Huvudkontotyperna bestämmer hur ett huvudkonto används i kontoplanen.
 
 Du måste välja en huvudkontotyp när du skapar ett huvudkonto på sidan Huvudkonton - kontoplan.
@@ -35,6 +38,8 @@ Du måste välja en huvudkontotyp när du skapar ett huvudkonto på sidan Huvudk
 -   Balansräkning, Tillgångar, Skulder och Eget kapital – dessa huvudkonton används som transaktionskonton för att registrera beloppen som en juridisk persons tillgångar respektive skulder.
 -   Summa – Dessa huvudkonton används för att lägga till kontointervall. Konfigurera Totalhuvudkontotyp genom att använda sidan Kontointervall, som visar summan av gruppsaldona för alla kontointervall. Du får åtkomst till sidan Kontointervall genom att klicka på Summor på fliken Allmänt när du väljer Totalkontotyp.
 -   Rapportera – Dessa rubrikkonton används endast för bokslutrapportering för Brasilien.
+
+
 
 
 

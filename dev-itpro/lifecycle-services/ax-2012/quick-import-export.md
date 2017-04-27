@@ -1,5 +1,5 @@
 ---
-title: "Använd snabbt importera/exportera"
+title: "Använd Snabb import/export"
 description: "Syftet med funktionen Snabb import/export är att du ska kunna importera och exportera med färre steg."
 author: margoc
 manager: AnnBe
@@ -24,7 +24,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="run-the-test-data-transfer-tool-beta-for-dynamics-ax-ax-2012"></a>Kör testet Data överföra verktyget (beta) för Dynamics AX (AX 2012)
+# <a name="run-the-test-data-transfer-tool-beta-for-dynamics-ax-ax-2012"></a>Kör Test Data Transfer Tool (beta) för Dynamics AX (AX 2012)
+
+[!include[banner](../../includes/banner.md)]
+
 
 Syftet med funktionen Snabb import/export är att du ska kunna importera och exportera med färre steg.
 
@@ -36,5 +39,7 @@ Vi har lagt till funktionen Snabb import/export så att användarna kan importer
 -   Du behöver inte skapa en bearbetningsgrupp för att använda funktionen Snabb import/export. Det skapas en automatiskt av systemet när du kör import- eller exportjobbet. Du kan också välja spara historiken över de data som importerats med hjälp av funktionen Snabb import/export.
 
   Observera att funktionen Snabb import/export förutsätter att du känner till DIXF-begrepp.
+
+
 
 

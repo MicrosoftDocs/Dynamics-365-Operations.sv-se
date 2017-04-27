@@ -1,9 +1,9 @@
 ---
-title: Minska avskrivning
+title: Degressiv avskrivning
 description: "Den här avsnittet ger en översikt över metoden för degressiv avskrivning."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 04/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -26,7 +26,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="reduce-balance-depreciation"></a>Minska avskrivning
+# <a name="reduce-balance-depreciation"></a>Degressiv avskrivning
+
+[!include[banner](../includes/banner.md)]
+
 
 Den här avsnittet ger en översikt över metoden för degressiv avskrivning.
 
@@ -57,7 +60,7 @@ Om du till exempel väljer Årligen, bokförs årets avskrivning alltså bara en
 
 ### <a name="fiscal"></a>Skatt
 
-Om du väljer Räkenskapsår i fältet Avskrivning används den linjära avskrivningsmetoden. Det beräknas utifrån räkenskapsåret, som ställs in på sidan Räkenskapskalendrar som väljs på sidan Redovisning. För räkenskapsåret 1 juli till och med den 30 juni påbörjas avskrivningsberäkningen exempelvis 1 juli. Räkenskapsåret kan vara längre eller kortare än 12 månader. Avskrivningen justeras för varje räkenskapsperiod. Längden på nästa räkenskapsår baseras på de räkenskapsperioder som du ställer in när du skapar ett nytt räkenskapsår på sidan Räkenskapskalendrar.
+Om du väljer Räkenskapsår i fältet Avskrivning används den linjära avskrivningsmetoden. Det beräknas utifrån räkenskapsåret, som ställs in på sidan Räkenskapskalendrar som väljs på sidan Redovisning. Exempelvis för räkenskapsåret 1 juli - 30 juni startar alltså avskrivningsberäkningen den 1 juli. Räkenskapsåret kan vara längre eller kortare än 12 månader. Avskrivningen justeras för varje räkenskapsperiod. Längden på nästa räkenskapsår baseras på de räkenskapsperioder som du ställer in när du skapar ett nytt räkenskapsår på sidan Räkenskapskalendrar.
 
 
 Om du väljer Räkenskapsår har du följande alternativ i fältet Räkenskapsår.
@@ -73,12 +76,14 @@ Med metoden för degressiv avskrivning beräknas 30 procent av avskrivningsbasen
 
 | Period | Beräkning av årligt avskrivningsbelopp | Bokfört nettovärde i slutet av året |
 |--------|-------------------------------------------|---------------------------------------|
-| År 1 | (11,000 - 1,000) \* 30% = 3,000           | (11 000 - 1 000) - 3 000 = 7 000      |
-| År 2 | (7,000 - 1,000) \* 30% = 1,800            | (7 000 -1 800) = 5 200                |
-| År 3 | (5,200 - 1,000) \* 30% = 1,260            | (5 200 - 1 260) = 3 940               |
+| År 1 | (11 000 - 1 000) \* 30% = 3 000           | (11 000 - 1 000) - 3 000 = 7 000      |
+| År 2 | (7 000 - 1 000) \* 30% = 1 800            | (7 000 -1 800) = 5 200                |
+| År 3 | (5 200 - 1 000) \* 30% = 1 260            | (5 200 - 1 260) = 3 940               |
 
  
 -
+
+
 
 
 

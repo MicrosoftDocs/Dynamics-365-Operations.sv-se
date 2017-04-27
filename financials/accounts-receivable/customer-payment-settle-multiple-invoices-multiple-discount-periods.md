@@ -1,5 +1,5 @@
 ---
-title: "Använd en kundbetalning för att kvitta flera fakturor som sträcker sig över flera Rabattperioderna"
+title: "Använd en kundbetalning för att kvitta flera fakturor som omfattar flera rabattperioder"
 description: "Den här artikeln visar hur flera fakturor betalas när varje faktura är kvalificerad för en kassarabatt. Scenarierna i den här artikeln visar hur de utnyttjade kassarabatterna varierar beroende på när betalningen görs."
 author: twheeloc
 manager: AnnBe
@@ -26,18 +26,21 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="use-a-customer-payment-to-settle-multiple-invoices-that-span-multiple-discount-periods"></a>Använd en kundbetalning för att kvitta flera fakturor som sträcker sig över flera Rabattperioderna
+# <a name="use-a-customer-payment-to-settle-multiple-invoices-that-span-multiple-discount-periods"></a>Använd en kundbetalning för att kvitta flera fakturor som omfattar flera rabattperioder
+
+[!include[banner](../includes/banner.md)]
+
 
 Den här artikeln visar hur flera fakturor betalas när varje faktura är kvalificerad för en kassarabatt. Scenarierna i den här artikeln visar hur de utnyttjade kassarabatterna varierar beroende på när betalningen görs.
 
-Fabrikam säljer varor till kunden 4032. Fabrikam erbjuder en kassarabatt på 1 procent om fakturan är betald 14 dagar. Fabrikam erbjuder även kassarabatter på delbetalningar. Parametrarna settement finns i den **parametrar för kundreskontra** sida.
+Fabrikam säljer varor till kunden 4032. Fabrikam erbjuder en kassarabatt på 1 procent om fakturan betalas inom 14 dagar. Fabrikam erbjuder även kassarabatter på delbetalningar. Kvittningsparametrar finns på sidan **Parametrar för kundreskontra**.
 
 ## <a name="invoices"></a>Fakturor
 Kund 4032 har tre fakturor som summerar 3 000,00:
 
--   Fakturera FTI-10040 för 1 000,00, har angetts för den 15 maj. Fakturan har mot en kassarabatt på 1 procent om betalningen sker i 14 dagar.
--   Fakturera FTI-10041 för 1 000,00, har registrerats den 25 juni. Fakturan har mot en kassarabatt på 1 procent om betalningen sker i 14 dagar.
--   Fakturera FTI-10042 för 1 000,00, har registrerats den 25 juni. Fakturan har mot en kassarabatt på 2 % om betalningen sker i fem dagar och 1 procent rabatt om betalningen sker i 14 dagar.
+-   Faktura FTI-10040, för 1 000,00, har angetts för den 15 maj. Denna faktura är berättigad till en kassarabatt på 1 procent om fakturan betalas inom 14 dagar.
+-   Faktura FTI-10041, för 1 000,00, har angetts för den 25 juni. Denna faktura är berättigad till en kassarabatt på 1 procent om fakturan betalas inom 14 dagar.
+-   Faktura FTI-10042, för 1 000,00, har angetts för den 25 juni. Denna faktura är berättigad till en kassarabatt på 2 % om betalningen sker i fem dagar och 1 procent rabatt om betalningen sker i 14 dagar.
 
 ## <a name="settle-all-invoices-on-june-29"></a>Kvitta alla fakturor den 29 juni
 Om Arnie skapar en betalningsjournal helt för att kvitta dessa fakturor den 29 juni är betalningen 2 970,00. Summan av alla rabattbelopp är 30,00. Arnie skapar en betalning för kund 4032 och öppnar sedan sidan **Kvitta transaktioner**. På sidan **Kvitta transaktioner** väljer Arnie alla tre fakturaraderna för kvittning:
@@ -76,7 +79,7 @@ Kund 4032 kan betala ett delbelopp som till exempel halva av varje faktura. Arni
 | Markerad                 | Normal            | FTI-10041 | 4032    | 2015/06/15 | 2015/07/25 | 10041   | 1 000,00                             |                                       | USD      | 495,00           |
 | Vald och markerad | Normal            | FTI-10042 | 4032    | 2015/06/25 | 2015/07/25 | 10042   | 1 000,00                             |                                       | USD      | 490,00           |
 
-Arnie kan även manuellt ange betalningsbeloppet för 1,485.00 innan han öppnar den **kvitta transaktioner** sida. Om Arnie registrerar betalningsbeloppet manuellt och markerar alla tre transaktioner, men han inte justera värdet i den **kvittningsbeloppet** fält för varje transaktion han visas följande meddelande när han stänger sidan:
+Arnie kan även manuellt ange betalningsbeloppet för 1,485.00 innan han öppnar **kvitta transaktioner** sidan. Om Arnie registrerar betalningsbeloppet manuellt och markerar alla tre transaktioner, men han justerar inte värdet i fältet **kvittningsbeloppet** för varje transaktion, får han följande meddelande när han stänger sidan:
 
 > Det total beloppet av markerade transaktioner skiljer sig från journalbeloppet. Vill du ändra journalbeloppet?
 
@@ -95,6 +98,8 @@ Arnie kan visa den här informationen på sidan **Kundtransaktioner**.
 | FTI-10042  | Faktura          | 2015/06/25 | 10042   | 1 000,00                             |                                       | 505.10   | USD      |
 | ARP-10040  | Betalning          | 2015/06/29 |         |                                      | 1 485,00                              | 0,00     | USD      |
 | RAB-10040 | Kassarabatt    | 2015/06/29 |         |                                      | 9,90                                  | 0,00     | USD      |
+
+
 
 
 

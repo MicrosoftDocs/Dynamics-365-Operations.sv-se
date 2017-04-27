@@ -42,8 +42,8 @@ För att uppgradera till den senaste versionen, se [Process för uppgradering ti
 <tr class="header">
 <th><strong>Frisläpp</strong></th>
 <th><strong><strong>Version</strong></strong></th>
-<th><strong><strong>Build number</strong></strong></th>
-<th><strong><strong>Availability</strong></strong></th>
+<th><strong><strong>Byggnummer</strong></strong></th>
+<th><strong><strong>Tillgänglighet</strong></strong></th>
 <th><strong><strong>Mer information</strong></strong></th>
 </tr>
 </thead>
@@ -52,12 +52,12 @@ För att uppgradera till den senaste versionen, se [Process för uppgradering ti
 <td>Microsoft Dynamics 365 for Operations-plattform</td>
 <td>Plattformsuppdatering 4</td>
 <td>7.0.4425.16160</td>
-<td>Februari 2017</td>
+<td>2017 februari</td>
 <td><ol>
-<li>Gå till den <a href="https://roadmap.dynamics.com/">Dynamics 365 översikt</a>.</li>
-<li>Välj den <strong>nyheter</strong> fliken.</li>
-<li>I den <strong>program</strong> Välj <strong>Dynamics 365 för</strong>.</li>
-<li>I den <strong>områden</strong> Välj <strong>plattform molnbaserad</strong>.</li>
+<li>Gå till <a href="https://roadmap.dynamics.com/">Dynamics 365 översikt</a>.</li>
+<li>Välj fliken <strong>Nyheter</strong>.</li>
+<li>I avsnittet <strong>Program</strong> väljer du <strong>Dynamics 365 for Operations</strong>.</li>
+<li>I avsnittet <strong>Områden</strong> väljer du <strong>Molnplattform</strong>.</li>
 </ol></td>
 </tr>
 <tr class="even">

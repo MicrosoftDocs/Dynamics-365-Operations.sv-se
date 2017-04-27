@@ -26,12 +26,15 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="set-up-and-generate-positive-pay-files"></a>Ställa in och generera betalningskontrollfiler
 
+[!include[banner](../includes/banner.md)]
+
+
 Den här artikeln innehåller information om hur du ställer och genererar betalningskontrollfiler. 
 
 Ställa in betalningskontroll för att generera en elektrisk lista med checkar som ges till banken. När checken sedan visas för banken, jämför banken checken med listan med checkar. Om checken matchar en check i listan behandlar banken checken. Om checken inte matchar en check in listan kvarhåller banken checken för granskning.
 
 ## <a name="security-for-positive-pay-files"></a>Säkerhet för betalningskontrollfiler
-Betalningskontrollfiler kan innehålla känslig information om betalningsmottagare och checkbelopp. Se därför till att du använder lämpliga säkerhetsåtgärder från det att filerna skapas tills det att de tas emot av banken. Betalningskontrollfiler hämtas till den plats som anges av din webbläsare. Eftersom positiva lön-filer kan innehålla känslig information, är det viktigt att endast behöriga användare har tillgång till generera och visa informationen i Microsoft Dynamics 365 för operationer. Använd följande tabell som hjälper dig att bestämma behörigheterna som krävs.
+Betalningskontrollfiler kan innehålla känslig information om betalningsmottagare och checkbelopp. Se därför till att du använder lämpliga säkerhetsåtgärder från det att filerna skapas tills det att de tas emot av banken. Betalningskontrollfiler hämtas till den plats som anges av din webbläsare. Eftersom betalningskontrollfiler kan innehålla känslig information är det viktigt att endast auktoriserade användare har åtkomst för att generera eller visa den här informationen i Microsoft Dynamics 365 for Operations. Använd följande tabell som hjälper dig att bestämma behörigheterna som krävs.
 
 <table>
 <colgroup>
@@ -156,5 +159,7 @@ När checkarna som anges i en betalningskontrollfil har betalats får du ett bek
 
 ## <a name="recall-a-positive-pay-file"></a>Återkalla en betalningskontrollfil
 Om du måste ändra en betalningskontrollfil kan du sedan återkalla den. På sidan **Sammanfattning om betalningskontrollfil**, välj en betalningskontrollfil som har statusen **Skapat** och välj sedan åtgärden **Återkalla**. För varje check i betalningskontrollfilen återställs fältet som anger om denna check har inkluderats i en betalningskontrollfil. Sedan kan du skapa en ny betalningskontrollfil som innehåller den check som återkallades.
+
+
 
 

@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="price-simulation"></a>Prissimulering
 
+[!include[banner](../includes/banner.md)]
+
+
 Det här avsnittet innehåller information om prissimulering för offerter. Prissimulering hjälper dig att utvärdera effekten av avdrag på det framtida försäljningspriset under offertprocessen innan du på fastställer ett specifikt pris.
 
 En prissimulering för en offert visar ett nytt totalbelopp baserat på ett föreslaget nytt pris. En prissimulering kan också visa ett nytt belopp för en specifik rad som skapas i en befintlig offert. Du kan ange en prissimulering och använda den senare. Du kan också använda den ursprungliga offerten utan en prissimulering och göra fler ändringar när du går igenom försäljningsprocessen med din kund.  
@@ -50,7 +53,7 @@ Var försiktig när du kör prissimuleringar på offerter som har rabatter så a
 
 ### <a name="types-of-discounts-in-trade-agreements"></a>Typer av rabatter i handelsavtal
 
-Handelsavtalen i Microsoft Dynamics 365 för operationer kan ha fyra typer av prisrabatter. Rabatterna kan anges för olika artiklar, kunder eller prisgrupper och de kan begränsas efter datum. För att undvika felberäkningar måste du ta hänsyn till handelsavtal när du kör prissimuleringar. Här är de fyra rabattyperna i handelsavtal:
+Handelsavtal i Microsoft Dynamics 365 for Operations kan ha fyra typer av prisrabatter. Rabatterna kan anges för olika artiklar, kunder eller prisgrupper och de kan begränsas efter datum. För att undvika felberäkningar måste du ta hänsyn till handelsavtal när du kör prissimuleringar. Här är de fyra rabattyperna i handelsavtal:
 
 -   **Försäljningspris** – Olika försäljningspriser kan anges för artiklar. När offertrader skapas söker programmet efter rätt försäljningspris för en artikel och överför det till offertraderna. Därför påverkar ett handelsavtal som har den här typen av rabatt inte prissimuleringen. Försäljningspriset som används på offertraden återspeglar handelsavtalet.
 -   **Radrabatt** – Särskilda rabatter anges för artiklar, beroende på den beställda kvantiteten. Radbelopp reduceras normalt med radrabatten innan en prissimulering körs. Därför påverkar ett handelsavtal som har den här typen av rabatt prissimuleringen.
@@ -141,5 +144,7 @@ Du kör en prissimulering och tillämpar en 10 procent totalrabatt till enheter 
 | Ny total täckningsgrad                      | \[(302.88 – 184.96) ÷ 302.88\] × 100    | 38,93 %   |
 
 Prissimuleringen påverkar enbart raden som den tillämpas på och minskar summan för den raden.
+
+
 
 

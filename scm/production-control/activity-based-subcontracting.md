@@ -1,6 +1,6 @@
 ---
-title: Verksamhetsbaserade legotillverkning
-description: "Det här avsnittet beskrivs i detalj, använda legotillverkningsaktiviteter i ett produktionsflöde för lean manufacturing."
+title: Aktivitetsbaserad legotillverkning
+description: "Det här avsnittet beskriver i detalj hur du använder legotillverkningsaktiviteter i ett produktionsflöde för lean manufacturing."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,80 +26,85 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="activity-based-subcontracting"></a>Verksamhetsbaserade legotillverkning
+# <a name="activity-based-subcontracting"></a>Aktivitetsbaserad legotillverkning
 
-Det här avsnittet beskrivs i detalj, använda legotillverkningsaktiviteter i ett produktionsflöde för lean manufacturing.
+[!include[banner](../includes/banner.md)]
 
-Det finns två sätt för legotillverkning i Microsoft Dynamics 365 för operationer: tillverkningsorder och lean manufacturing. I metoden lean manufacturing modelleras det legotillverkning arbetet som en tjänst som hör till en aktivitet för ett produktionsflöde. En speciell typ av kostnadsgruppstyp som heter **direktutkontraktering** har införts, och de legotillverkning tjänsterna inte längre en del av en strukturlista (BOM). Kostnadsredovisning av legotillverkning är helt integrerat i kostnadsredovisning för lean manufacturing lösningen.
+
+Det här avsnittet beskriver i detalj hur du använder legotillverkningsaktiviteter i ett produktionsflöde för lean manufacturing.
+
+Det finns två sätt för legotillverkning i Microsoft Dynamics 365 for Operations: tillverkningsorder och lean manufacturing. I metoden lean manufacturing modelleras legotillverkningsarbetet som en tjänst som hör till en aktivitet för ett produktionsflöde. En speciell typ av kostnadsgruppstyp som heter **Direktutkontraktering** har införts, och legotillverkningstjänsterna är inte längre en del av en strukturlista (BOM). Kostnadsredovisning av legotillverkning är helt integrerat i kostnadsredovisningen för lean manufacturing.
 
 ## <a name="production-flows-that-involve-subcontractors"></a>Produktionsflöden som rör underleverantörer
-Den grundläggande principen av ett produktionsflöde ändras inte när aktiviteter är uppdelat på underleverantörer. Materialet fortfarande flödar mellan platser, konvertera processaktiviteter material till produkter och överföringsaktiviteter flytta material eller produkter från en plats till en annan. Du kan utforma platser och arbetsgrupper som leverantören hanteras genom att tilldela leverantörskontot till ett lager eller en resurs i en resursgrupp  
+Den grundläggande principen för ett produktionsflöde ändras inte när aktiviteter är uppdelade på underleverantörer. Materialet flödar fortfarande mellan olika platser, processaktiviteter omvandlar material till produkter och överföringsaktiviteter flyttar material eller produkter från en plats till en annan. Du kan utforma platser och arbetsgrupper som leverantörhanterade genom att tilldela leverantörskontot till ett lager eller en resurs i en resursgrupp.  
 
-Utifrån dessa funktioner kräver lean manufacturing inte några specifika funktioner för att stödja flödet av material och produkter. Alla tänkbara scenarier som innehåller leverantörer som tillhandahåller av produktions- eller tjänster kan utformas utifrån arkitekturen i produktionsflödet och aktiviteter.  
+Utifrån dessa funktioner kräver lean manufacturing inte några specifika funktioner för att stödja flödet av material och produkter. Alla tänkbara scenarier som berör leverantörer av produktions- eller transporttjänster kan utformas utifrån arkitekturen i produktionsflöde och aktiviteter.  
 
-Till exempel fungerar en underleverantör från ett storlager med underleverantören. När materialhanteringsenheter vid underleverantören är tomma återgår kanban-kort till cellen sammansättningen tillsammans med nästa leverans. Sedan fylls storlager vid underleverantören. Överföringar till och från underleverantören kan utformas som explicit överföringen verksamhet för att stödja en plockning och processen för försändelsereservation. Om en explicit registrering inte krävs för att stödja fysisk transport, kan överföringsaktiviteter uteslutas.  
+Till exempel bedriver en underleverantör sin verksamhet från ett storlager hos underleverantören. När materialhanteringsenheter töms hos underleverantören, återgår kanban-korten till monteringscellen tillsammans med nästa leverans. Sedan fylls storlagret hos underleverantören på igen. Överföringar till och från underleverantören kan utformas som explicita överföringsaktiviteter för att stödja en plocknings- och leveransprocess. Om en explicit registrering inte krävs för att stödja fysisk transport, kan överföringsaktiviteter utelämnas.  
 
-Du kan använda en underleverantör att belastningsutjämna totala kapacitet för produktionsflödet. Till exempel är ett produktionsflöde utformat med planerade kanban-regler. Planeraren använder planering styrelse att schemalägga och Belastningsnivå kanban både arbetsgrupper efterfrågan. Planeraren övervakar även schemat för storlager konsoliderade leverans på de **schema leverans** sida. Flera underleverantörer kan utformas i en eller flera produktionsflöden och det kan finnas flera kanban-regler som kan användas för att tillhandahålla samma produkt på samma plats via olika aktiviteter. Planeraren kan konvertera kanbans till en alternativ kanban-regel som ska schemaläggas om ett kanban som har skapats för inhemsk produktion till en alternativ process. I själva verket påverkar den legotillverkning slags arbetsgruppen inte produktionsflödet. Arbeta samma sak gäller för två parallella interna arbetsgrupper eller underleverantörer två celler.   
+Du kan använda en underleverantör att belastningsutjämna den totala kapaciteten för produktionsflödet. Till exempel är ett produktionsflöde utformat med planerade kanban-regler. Planeraren använder planeringstavlan för kanban för att schemalägga och utjämna båda arbetsgrupper vid behov. Planeraren övervakar även schemat för konsoliderad leverans för storlager på sidan **Leveransschema**. Flera underleverantörer kan utformas i ett eller flera produktionsflöden, och det kan finnas flera kanban-regler som kan användas för att tillhandahålla samma produkt på samma plats via olika aktiviteter. Planeraren kan konvertera kanbans till en alternativ kanban-regel för att schemalägga ett kanban som har skapats för inhemsk produktion till en alternativ process. I själva verket påverkar arbetsgruppens legotillverkning inte produktionsflödet. Samma arbetsprincip gäller för två parallella interna arbetsgrupper eller två underleverantörsceller.   
 
-Precis som all annan verksamhet i ett produktionsflöde legotillverkningsaktiviteter kan förbruka och ange inventerade, inventerade (pågående arbete \[PIA\]), och halvfabrikat material och produkter. Alltid är processer för planering och köra legotillverkningsaktiviteter desamma. Dessutom kan bearbeta dessa lika processer för intern resurs.
+Precis som alla andra aktiviteter i ett produktionsflöde kan legotillverkningsaktiviteter kan förbruka och förse inventerade, icke-inventerade (pågående arbete \[PIA\]), och halvfabrikatsmaterial och -produkter. I samtliga fall är processerna för planering och utförande av legotillverkningsaktiviteter desamma. Dessutom är dessa processer desamma som processerna för internt arbete.
 
-## <a name="purchase-process-for-subcontracted-activities-services"></a>Inköpsprocessen för legotillverkningsaktiviteter (tjänster)
-Inköpsprocessen för legotillverkningsaktiviteter baseras på den fysiska materialflödet registreras av jobbet för kanban-förlopp, till exempel, starta eller Slutför. Ekonomiska flödet, till exempel kostnader för den legotillverkning är Sekundärflöde efter fysiska flödet. Samtidigt är en oberoende process som tillåter manuell justering av inköpsdokument hela vägen inköpsprocessen. Här följer inköpsprocessen för legotillverkningsaktiviteter:
+## <a name="purchase-process-for-subcontracted-activities-services"></a>Inköpsprocess för legotillverkningsaktiviteter (tjänster)
+Inköpsprocessen för legotillverkningsaktiviteter baseras på det fysiska materialflöde som registreras av kanban-jobbförloppet, till exempel Starta eller Slutför. Det ekonomiska flödet, till exempel kostnader för legotillverkning, är ett sekundärt som följer det fysiska flödet. Samtidigt är inköpsprocessen en oberoende process som tillåter manuell justering av inköpsdokument i alla steg. Här följer inköpsprocessen för legotillverkningsaktiviteter:
 
-1.  Skapa ett inköpsavtal. Inköpsavtalet för tjänsten och ansluten till aktiviteten för produktionsflödet.
-2.  Skapa en inköpsorder En frisläppningsorder för inköp kan skapas för tjänsten baserat på planerad kanban-jobb. Jobb för samma tjänst kan grupperas till inköpsorderrader per dag, vecka eller månad. Inköpsorderrader kan skapas när som helst när kanban-jobben har skapats. Inköpsorderrader kan även skapas i efterhand. Detta alternativ väljs vanligen om en underleverantör tillhandahåller tjänster utan vidare meddelanden baserat på kanban- eller kanban där underleverantören. I det här fallet kan avvikelserna mellan inköpsordern och fakturan minimeras.
-3.  Skapa kanban-kort, material och en plocklista som ska skickas till underleverantören iordningställande för bearbetning. Utifrån detaljerad modellträdstrukturen för produktionsflödet görs framställning på kanban-tavla för processaktiviteter via plocklistan och Förbered funktion. Alternativt kan utförs förbereda på kanban-tavla för överföringsjobb med i plocklistan och start- eller. Båda processerna kan stödjas av WMS plockning och processen för försändelsereservation för inventerade material. Du kan skapa en fraktsedel vid behov.
-4.  Skapa kanban materialhanteringsenheter och kanban-kort. Bearbetade som kort returneras för underleverantören. Kort innehåller normalt en följesedel som anger det fysiska material som har levererats. En referens till de angivna tjänsterna behövs inte efter uppgraderingen. Införsel av materialet eller produkten hos kunden registreras på kanban-tavla, beroende på kanban-kort. (Eller kanban-tavla för processaktiviteter kanban-tavlan för överföringsjobb används beroende på modellerade aktiviteter.).
-5.  Skapa en inleverans rådgivande. Rådgivande inleverans kan användas för att ersätta en följesedel följesedeln dokument för mottagna tjänsterna. Rekommendationerna för inleverans kan skapas baserat på slutförd kanban-jobb för den legotillverkning aktiviteten för en vald period. För varje jobb inleverans skapas rekommendationerna för den relaterade inköpsorderraden. Rådgivande inleveransen kan skrivas ut och skickas till underleverantören som bekräfta mottagandet.
-6.  Generera en faktura.
+1.  Skapa ett inköpsavtal: Inköpsavtalet skapas för tjänsten och är ansluten till produktionsflödesaktiviteten.
+2.  Skapa en inköpsorder En frisläppningsorder för inköp kan skapas för tjänsten baserat på planerade kanban-jobb. Jobb för samma tjänst kan grupperas till inköpsorderrader per dag, vecka eller månad. Inköpsorderrader kan skapas när som helst när kanban-jobben har skapats. Inköpsorderrader kan även skapas i efterhand. Detta alternativ väljs vanligen om en underleverantör tillhandahåller tjänster utan vidare meddelanden, baserat på kanban eller kanbankort som underleverantören får. I det här fallet kan avvikelserna mellan inköpsordern och fakturan minimeras.
+3.  Skapa kanban-kort, material och en plocklista som ska skickas till underleverantören för bearbetning. Utifrån den detaljerade produktionsflödesmodellen sker förberedelserna på kanban-tavlan för processaktiviteter via plocklistan och förberedelsefunktionen. Alternativt utförs förberedelserna på kanban-tavlan för överföringsjobb med plocklistan samt start eller slutförande. Båda processer kan stödjas av WMS-plockning och en leveransprocess för inventerade material. Du kan skapa en fraktsedel vid behov.
+4.  Skapa kanban-materialhanteringsenheter och kanban-kort. Bearbetade som kort returneras från underleverantören. Kort innehåller normalt en följesedel som anger det fysiska material som har levererats. En referens till de angivna tjänsterna behövs inte. Införsel av materialet eller produkten hos kunden registreras på kanban-tavlan, beroende på kanban-kort. (antingen kanban-tavlan för processaktiviteter eller kanban-tavlan för överföringsjobb används, beroende på modellerade aktiviteter.).
+5.  Skapa rekommendationer för inleverans. Rekommendationerna för inleverans kan användas för att ersätta ett följesedelsdokument för de mottagna tjänsterna. Rekommendationerna för inleverans kan skapas baserat på slutförda kanban-jobb för legotillverkningsaktiviteten för en vald period. För varje inlevererat jobb skapas rekommendationer för den relaterade inköpsorderraden. Rekommendationerna för inleverans kan skrivas ut och skickas till underleverantören som en mottagningsbekräftelse.
+6.  Skapa en faktura.
 
-Processen avslutas när underleverantören faktureras för en period. Faktura-matchning sker mot rekommendationerna inleveransen som skapas. Eftersom inleveransen rekommendationerna representerar exakt fysisk inleverans av material, förenklas den trevägsmatchning.
+Processen avslutas när underleverantören faktureras för en period. Fakturamatchning sker mot de rekommendationer för inleverans som skapas. Eftersom rekommendationerna för inleverans representerar den exakta fysiska inleveransen av material, förenklas trevägsmatchningen.
 
 ## <a name="configuring-activities-for-subcontracting"></a>Konfigurera aktiviteter för legotillverkning
-I följande avsnitt beskrivs hur du konfigurerar aktiviteter för den legotillverkning.
+I följande avsnitt beskrivs hur du konfigurerar aktiviteter för legotillverkning.
 
 ### <a name="subcontracted-services"></a>Legotillverkningstjänster
 
-Artikeln som används i verksamhetsbaserade legotillverkning betalning måste vara en produkt som har följande egenskaper:
+Den betalningsartikel som används i verksamhetsbaserad legotillverkning måste vara en produkt med följande egenskaper:
 
--   **Produkttyp:** Service
--   **Lagermodellgruppen:** inte finns i lager
+-   **Produktty:** Tjänst
+-   **Lagermodellsgrupp:** Ej i lager
 
-Detta framtvingar användning av först in, först ut (FIFO) lagermodell. **Anmärkning:** kostnadsberäkningen produkternas kräver att definieras standardkostnaden för tjänsten. Det krävs ett inköpsavtal med leverantören. Annars kommer kan inte tjänsten användas för verksamhetsbaserade legotillverkning.
+Detta krav framtvingar användning av lagermodellen först in, först ut (FIFO). **Obs!** Kostnadsberäkningen för produkterna kräver att tjänstens standardkostnad definieras. Ett inköpsavtal med leverantören krävs. Annars kan inte tjänsten användas för aktivitetsbaserad legotillverkning.
 
-### <a name="subcontracted-process-activities"></a>Legotillverkning processaktiviteter
+### <a name="subcontracted-process-activities"></a>Legokontrakterade processaktiviteter
 
-Följ dessa steg om du vill konfigurera en processaktivitet som en legotillverkning verksamhet.
+Följ dessa steg om du vill konfigurera en processaktivitet som en legotillverkningsaktivitet.
 
-1.  Konfigurera en cell med underleverantörsarbete. Om du vill konfigurera en arbetsgrupp som den legotillverkning, måste du skapa en resurs av den **leverantör** ange och associera den med en arbetsgrupp (resursgrupp). En kostnadskategori för körning av den **direktutkontraktering** kostnadsgruppstyp ska tilldelas till arbetsgruppen. Kostnadskategorier för inställning och kvantitet är inte obligatoriska.
-2.  När en processaktivitet skapas och hör till en arbetsgrupp legotillverkning produktionsflödesversionen kan aktiveras om du konfigurerar en tjänst för aktiviteten. Du har slutfört denna åtgärd på de **aktiviteten****information** sida. För aktiviteter som är kopplade till den legotillverkning arbetsgrupp i **Service villkor** på snabbfliken visas. Lägg till en standardtjänst som gäller för alla Utleveransartiklar på den här snabbfliken. Om utdata objekt kräver olika tjänster eller annan beräkning Serviceparametrar (exempelvis en annan Tjänstförhållande) kan du lägga till andra tjänster till aktiviteten.
+1.  Konfigurera en arbetsgrupp för legotillverkning. Om du vill konfigurera en arbetsgrupp som en arbetsgrupp för legotillverkning, måste du skapa en resurs av typen **Leverantör** och associera den med arbetsgruppen (resursgrupp). En kostnadskategori för körning av kostnadsgrupptypen **Direktutkontraktering** ska tilldelas till arbetsgruppen. Kostnadskategorier för inställning och kvantitet är inte obligatoriska.
+2.  När en processaktivitet skapas och hör till en arbetsgrupp för legotillverkning, måste du konfigurera en tjänst för aktiviteten innan produktionsflödesversionen kan aktiveras. Du slutför detta steg på sidan **Aktivitets**-**information**. För aktiviteter som är kopplade till en arbetsgrupp för legotillverkning, visas snabbfliken **Servicevillkor**. Lägg till en standardtjänst som gäller för alla utleveransartiklar på den här snabbfliken. Om specifika utdataobjekt kräver olika tjänster eller andra tjänsterberäkningsparametrar (exempelvis ett annat tjänsteförhållande), kan du lägga till andra tjänster till aktiviteten.
 
-## <a name="subcontracted-transfer-activities"></a>Legotillverkning överföringsaktiviteter
-En överföringsaktivitet konfigureras som en legotillverkning aktivitet, beroende på de **Fraktad av** Ange aktivitetens överföringen. Följande alternativ är tillgängliga:
+## <a name="subcontracted-transfer-activities"></a>Legokontrakterade överföringsaktiviteter
+En överföringsaktivitet konfigureras som en legotillverkningsaktivitet, beroende på inställningen **Fraktad av** för överföringsaktiviteten. Följande alternativ är tillgängliga:
 
--   **Speditörens** – aktiviteten gäller legotillverkning om överföring från lagerstället hanteras av en leverantör (som definieras av en egenskap för lagerstället). Alla valda inköpsavtal för tjänster måste ha samma leverantör-ID som lagerstället.
--   **Mottagaren** – aktiviteten gäller legotillverkning om överföring till lagerstället hanteras av en leverantör (som definieras av en egenskap för lagerstället). Alla valda inköpsavtal för tjänster måste ha samma leverantör-ID som lagerstället.
--   **Transportföretagets** – aktiviteten legotillverkning till alla leverantörer som tillhandahåller tjänsten. Transportföretag måste skapas för lagerstyrning för att vara giltig och måste ha en tilldelad leverantörskonto.
+-   **Speditör** – Aktiviteten läggs ut på entreprenad (legotillverkning) om överföringen från lagerstället hanteras av en leverantör (som definieras av en egenskap för lagerstället). Alla valda inköpsavtal för tjänster måste ha samma leverantörs-ID som lagerstället.
+-   **Mottagare** – Aktiviteten läggs ut på entreprenad (legotillverkning) om överföringen till lagerstället hanteras av en leverantör (som definieras av en egenskap för lagerstället). Alla valda inköpsavtal för tjänster måste ha samma leverantörs-ID som lagerstället.
+-   **Transportföretag** – Aktiviteten läggs ut på entreprenad (legotillverkning) till alla leverantörer som tillhandahåller tjänsten. Transportföretag måste skapas för lagerstyrning och måste ha ett tilldelat leverantörskonto för att vara giltiga.
 
-För processaktiviteter, måste du konfigurera en standardtjänst för legotillverkning överföringsaktiviteter på de **Service villkor** snabbfliken i den **aktiviteten****information** sida.
+Precis som för processaktiviteter måste du konfigurera en standardtjänst för överföringsaktiviteter för legotillverkning på snabbfliken **Servicevillkor** på sidan **Aktivitets**-**information**.
 
 ## <a name="service-quantity-calculation"></a>Beräkning av tjänstkvantitet
-Hela inköpsprocessen baseras på en artikelreferens för en tjänst. Referensen till det här objektet mäts i en enhet för en tjänst. Tjänster mäts normalt i antalet tjänster (enheter) eller i tid. Du kan använda följande metoder för att beräkna tjänstekvantiteten baserat på registrerad slutförandet av kanban-jobb:
+Hela inköpsprocessen baseras på en artikelreferens för en tjänst. Artikelreferensen mäts i en måttenhet för en tjänst. Tjänster mäts normalt i antalet tjänster (enheter) eller i tid. Du kan använda följande metoder för att beräkna tjänstekvantiteten baserat på registrerat slutförande av kanban-jobb:
 
--   **Beräkning baserat på antalet jobb** – ett kanban-jobb är lika med *n* tjänsteenheter, oavsett den produktkvantitet som anges. Ett jobb motsvarar en materialhanteringsenhet i lean manufacturing. Den här beräkningsmetoden gäller för alla tjänster som har ett fast pris per hanteringsenhet. Denna metod gäller därför vanligtvis för att överföra aktiviteter. Men kan det också gälla processaktiviteter som bearbetar hela materialhanteringsenheter.
--   **Beräkning baserat på produktkvantiteten** – tjänstekvantiteten är i förhållande till den produktkvantitet som har tidsplanerats/tillhandahålls. När den angivna produktkvantiteten beräknas kan felaktiga kvantiteter vara antingen inkluderas eller exkluderas. Den här beräkningsmetoden gäller för alla fall där tjänsten priset per enhet för den bearbetade produkten har överenskommits.
--   **Beräkning baserat på aktivitetstiden** – teoretiska aktivitetstider beräknas baserat på bearbetningstiden för aktiviteten, behandlas totalen kvantitet och Genomflödestakten för den bearbetade produkten. Den här beräkningsmetoden gäller för tjänster som betalas per timme och har en avvikelse i tid per produkt.
+-   **Beräkning baserad på antalet jobb** – ett kanban-jobb är lika med *n* tjänsteenheter, oavsett den produktkvantitet som anges. Ett jobb motsvarar en materialhanteringsenhet i lean manufacturing. Den här beräkningsmetoden gäller för alla tjänster som har ett fast pris per materialhanteringsenhet. Denna metod gäller därför vanligtvis för överföringsaktiviteter. Den kan emellertid också gälla processaktiviteter som bearbetar hela materialhanteringsenheter.
+-   **Beräkning baserad på produktkvantiteten** – Tjänstekvantiteten är relativ i förhållande till den produktkvantitet som har tidsplanerats/tillhandahålls. När den angivna produktkvantiteten beräknas kan felaktiga kvantiteter antingen inkluderas eller exkluderas. Den här beräkningsmetoden gäller för alla fall där tjänstepriset per enhet för den bearbetade produkten har överenskommits.
+-   **Beräkning baserad på aktivitetstiden** – Teoretiska aktivitetstider beräknas baserat på bearbetningstiden för aktiviteten, den totala bearbetade kvantiteten samt genomflödestakten för den bearbetade produkten. Den här beräkningsmetoden gäller för tjänster som betalas per timme och har en avvikelse i tid per bearbetad produkt.
 
 ## <a name="cost-accounting-of-subcontracted-services"></a>Kostnadsredovisning för legotillverkningstjänster
-När inleveransen rådgivande eller en följesedel för en inköpsorder har skapats för ett produktionsflöde (d.v.s. den inköpsorder som skapades utifrån kanban-jobb för legotillverkningsaktiviteter) leverantör bokförs, redovisas värdet på inleveransen i PIA-konton för produktionsflödet. Avvikelser av fakturor redovisas även för produktionsflödet. En kostnadskategori för den legotillverkning har införts. Denna kostnadskategori kan genomskinliga spåra värdet för underleverantörsarbete som konsumeras per period och fördelas till Pågående arbete.  
+När inleveransrekommendationer eller en leverantörsföljesedel på en inköpsorder som har skapats för ett produktionsflöde (d.v.s. den inköpsorder som skapades utifrån kanban-jobb för legotillverkningsaktiviteter) bokförs, redovisas värdet för inleveransen i produktionsflödets PIA-konton. Avvikelser på fakturor redovisas även för produktionsflödet. En kostnadskategori för legotillverkningsarbete har införts. Denna kostnadskategori möjliggör en transparent värdespårning för det underleverantörsarbete som tilldelas PIA och som förbrukas per period.  
 
-Bakåtavräkning för lean manufacturing i slutet av en kostnadsredovisning period beräknar faktiska avvikelser för produkter som har framställts under kostnadsredovisningen av produktionsflödet.
+Den kostnadskalkylering med automatisk lageravräkning för lean manufacturing som sker mot slutet av en kostnadsredovisningsperiod beräknar faktiska avvikelser för produkter som har framställts i produktionsflödet under kostnadsperioden.
 
-## <a name="modeling-transfers-as-subcontracted-activities"></a>Modellering överföringar som legotillverkningsaktiviteter
-Personer du ofta transport icke produktivt och Tänk läggs inget värde. Jämfört med kostnaden för den legotillverkning är interna produktionskostnaden, beaktas kostnaden för ytterligare transporter. Ett produktionsflöde som sträcker sig över flera platser och kräver transporttjänster bör utforma transportkostnader som del av kostnaden för att leverera varor till kunden. 
+## <a name="modeling-transfers-as-subcontracted-activities"></a>Modellera överföringar som legotillverkningsaktiviteter
+Många betraktar transport som ickeproduktivt och menar att det inte tillför något värde. När kostnaden för legotillverkning jämförs med kostnaden för intern produktion måste emellertid kostnaden för ytterligare transportaktiviteter beaktas. Ett produktionsflöde som sträcker sig över flera platser och kräver transporttjänster bör utforma transportkostnader som del av kostnaden för att leverera varorna till kunden. 
 
-Verksamhetsbaserade legotillverkning i lean manufacturing kan du integrera transportföretag och transportera leverantörer som flyttar material och produkter mellan platser för ett produktionsflöde. Du kan tilldela smittbärare eller leverantören av modellvariabler en överföringsaktivitet. Aktiviteter/överföringsjobbet utifrån ett avtal för tjänster och inköp och du kan skapa inköpsorder och rekommendationerna för inleverans, baserat på de faktiska överföringsjobb. Denna funktion är densamma som funktionerna för den legotillverkning processaktiviteter.  
+Verksamhetsbaserad legotillverkning inom lean manufacturing gör att du kan integrera speditörer och transporteleverantörer som flyttar material och produkter mellan platser för ett produktionsflöde. Du kan tilldela smittbärare eller leverantören av modellvariabler en överföringsaktivitet. Aktiviteter/överföringsjobbet baseras på ett avtal för tjänster och inköp, och du kan skapa inköpsorder och rekommendationer för inleverans, baserat på de faktiska överföringsjobben. Denna funktion är densamma som funktionerna för processaktiviteter för legotillverkning.  
 
-Därför servicekostnader nu stöder strukturlisteberäkning som innehåller transporttjänster skapandet av relaterade inköpsorder, integrerad inleverans registrering och integrationen transportmedel för Dynamics 365 i flödet produktionskostnad.
+Därför stöder Dynamics 365 for Operations numera strukturlisteberäkning som innehåller transporttjänster, skapandet av relaterade inköpsorder, integrerad inleveransregistrering samt integrering av transporttjänstkostnader i kostnaderna för produktionsflödet.
+
+
 
 

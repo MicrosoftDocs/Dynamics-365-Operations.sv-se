@@ -1,6 +1,6 @@
 ---
-title: "Försäljningsorder mobil arbetsytan för Microsoft Dynamics 365 för operationer app"
-description: "Med mobil arbetsytan försäljningsorder du hålla dig uppdaterad på försäljningsorder var som helst och när som helst."
+title: "Mobil arbetsyta för försäljningsorder för programmet Microsoft Dynamics 365 for Operations"
+description: "Med den mobila arbetsytan för försäljningsorder kan du hålla dig uppdaterad om dina försäljningsorder var som helst och när som helst."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,93 +25,93 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="sales-orders-mobile-workspace-for-microsoft-dynamics-365-for-operations-app"></a>Försäljningsorder mobil arbetsytan för Microsoft Dynamics 365 för operationer app
+# <a name="sales-orders-mobile-workspace-for-microsoft-dynamics-365-for-operations-app"></a>Mobil arbetsyta för försäljningsorder för programmet Microsoft Dynamics 365 for Operations
 
-Med mobil arbetsytan försäljningsorder du hålla dig uppdaterad på försäljningsorder var som helst och när som helst. 
+Med den mobila arbetsytan för försäljningsorder kan du hålla dig uppdaterad om dina försäljningsorder var som helst och när som helst. 
 
 <a name="prerequisites"></a>Förutsättningar
 -------------
 
 | Förutsättning                                                         | beskrivning                                                                                                                                                                   |
 |----------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Läs mer om Microsoft Dynamics 365 för operationer | [Dynamics 365 för operationer](/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform)                                                              |
-| Dynamics 365 för operationer                                          | Försäkra dig om att du använder en miljö med Microsoft Dynamics 365 för operationer version 1611 och uppdatera Microsoft Dynamics för operationer 3 (November 2016). |
-| Snabbkorrigering KB 3215650                                                    | Installera snabbkorrigering om du vill aktivera arbetsytor som finns i Microsoft Dynamics 365 för operationer.                                                                       |
-| Mobil enhet med Dynamics 365 för operationer program installerat | Hämta mobiltelefonprogrammet lagringsplatsen Dynamics 365 för operationer app.                                                                                                      |
+| Läs mer om den mobila plattformen Microsoft Dynamics 365 for Operations | [Den mobila plattformen Dynamics 365 for Operations](/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform)                                                              |
+| Dynamics 365 for Operations                                          | Se till att använda en miljö med Microsoft Dynamics 365 for Operations version 1611 och plattformen Microsoft Dynamics for Operations med uppdatering 3 (november 2016). |
+| Snabbkorrigering KB 3215650                                                    | Installera snabbkorrigeringen om du vill aktivera de arbetsytor som finns i Microsoft Dynamics 365 for Operations.                                                                       |
+| Mobil enhet med programmet Dynamics 365 for Operations installerat | Hämta programmet Dynamics 365 for Operations från din mobilappsbutik.                                                                                                      |
 
 ## <a name="overview"></a>Översikt
-Mobil arbetsytan till Dynamics 365 för operationer programmet och du kan visa detaljerad information om varje order som orderstatus, information om kunder och order hos Prometric kontaktinformation. Mobil arbetsytan ger en översikt över försäljningsorder. Du kan visa försäljningsorder per kund, eller visa alla försäljningsorder eller visa information om en specifik försäljningsorder. Mobil arbetsytan innehåller två vyer som hjälper dig att analysera försäljningsorder på djupet.
+Denna mobila arbetsyta får åtkomst till programmet Dynamics 365 for Operations och låter dig visa detaljerad information om varje order som t.ex. orderstatus, kontaktinformation för kund och kontaktinformation för ordermottagaren. Den mobila arbetsytan ger en direkt översikt över försäljningsorder. Du kan visa försäljningsorder per kund, eller visa alla försäljningsorder eller visa information om en specifik försäljningsorder. Den mobila arbetsytan innehåller två vyer som hjälper dig att analysera försäljningsorder på djupet.
 
 ### <a name="view-all-sales-orders"></a>Visa alla försäljningsorder
 
 Den här vyn visar en lista över alla försäljningsorder.
 
--   Använd någon av följande filter för att välja de försäljningsorder som du vill visa.
+-   Använd ett av följande filter för att välja de försäljningsorder som du vill visa.
     -   Sök efter försäljningsorder
-    -   Sök efter kund-ID
-    -   Söka efter kundnamn
-    -   Söka efter status
-    -   Söka efter status för frisläppning
-    -   Söka efter datum och tid
+    -   Sök efter kundkonto
+    -   Sök efter kundnamn
+    -   Sök efter status
+    -   Sök efter frisläppningsstatus
+    -   Sök efter skapat datum och klockslag
 
 <!-- -->
 
 -   När du valt en försäljningsorder kan visa du uppgifter om särskilda order. Du kan dessutom visa
-    -   Namn och adress kundinformation
-    -   Annan försäljningsorder datum, t ex Begärt speditionsdatum och bekräftat speditionsdatum
-    -   Kontaktinformation för order hos Prometric
-    -   Kundkontaktinformation
+    -   Information om kundens namn och adress
+    -   Andra försäljningsorderdatum, som t.ex. t ex begärt transportdatum och bekräftat transportdatum
+    -   Ordermottagarens kontaktinformation
+    -   Kundens kontaktinformation
     -   Orderrader
-    -   Försändelser som visar hur och när en försäljningsorder som har levererats
+    -   Leveranser som visar hur och när en försäljningsorder har levererats
 
-### <a name="view-orders-for-a-customer-"></a>Visa order för kunden ** **
+### <a name="view-orders-for-a-customer-"></a>Visa order för en kund** **
 
-Den här vyn visar en lista över försäljningsorder per kund.
+Denna vy listar försäljningsorder per kund.
 
--   Använd någon av följande filter för att visa order för en kund.
+-   Använd något av följande filter för att visa order för en kund.
     -   Sök efter namn
-    -   Söka efter konto
+    -   Sök efter konto
 
 <!-- -->
 
--   När du har valt en kund kan visa du:
-    -   Kundnamn och grupp
-    -   Kundkontaktinformation
+-   När du har valt en kund kan du visa:
+    -   Kundens namn och grupp
+    -   Kundens kontaktinformation
     -   Försäljningsorder för kunden och information om försäljningsorder:
-        -   Namn och adress kundinformation
+        -   Information om kundens namn och adress
         -   Datum för olika försäljningsorder.
-        -   Kontaktinformation för order hos Prometric
-        -   Kundkontaktinformation
+        -   Ordermottagarens kontaktinformation
+        -   Kundens kontaktinformation
         -   Orderrader
-        -   Försändelser som visar hur och när en order har levererats.
+        -   Leveranser som visar hur och när en försäljningsorder har levererats
 
 ## <a name="get-started"></a>Kom igång
-Gör så här för att komma igång med mobil arbetsytan försäljningsorder på en mobil enhet.
+Följ dessa steg för att komma igång med den mobila arbetsytan för försäljningsorder på din mobila enhet.
 
-1.  Hämta och installera Microsoft Dynamics 365 for app operationer på din mobiltelefonprogrammet butik.
-2.  Starta programmet för enheten.
-3.  Ange en Webbadress för Dynamics 365.
-4.  Ange att logga in på företaget. Till exempel anger **USMF**.
-5.  Första gången du loggar in, uppmanas du ange användarnamn och lösenord för ditt Microsoft Dynamics 365 för operationer. Ange dina autentiseringsuppgifter. När du loggar in visas tillgängliga arbetsytor för ditt företag.
+1.  Hämta och installera appen Microsoft Dynamics 365 for Operations från din mobilappsbutik.
+2.  Starta appen på din enhet.
+3.  Ange din webbadress för Dynamics 365.
+4.  Ange ett företag att logga in på. Ange till exempel **USMF**.
+5.  Första gången du loggar in uppmanas du ange användarnamn och lösenord för ditt Microsoft Dynamics 365 for Operations-konto. Ange dina autentiseringsuppgifter. När du loggar in visas tillgängliga arbetsytor för ditt företag.
 
-Om du vill visa arbetsytor på din mobiltelefonprogrammet måste du publicera önskade arbetsytor till Dynamics 365 for app operationer.
+Om du vill visa arbetsytor i din mobilapp måste du först publicera önskade arbetsytor i appen Dynamics 365 for Operations app.
 
-1.  Starta Dynamics 365 för operationer.
-2.  Gå till **systemadministration**&gt;**inställningar**&gt;**systemparametrar**.
-3.  Välj **hantera mobiltelefonprogrammet**.
-4.  Markera arbetsytan för att publicera på en mobil plattform.
-5.  Välj **publicera arbetsytan**.
+1.  Starta Dynamics 365 for Operations.
+2.  Navigera till **Systemadministration** &gt; **Inställningar** &gt; **systemparametrar**.
+3.  Välj **Hantera mobilapp**.
+4.  Markera arbetsytan att publicera i den mobila plattformen.
+5.  Välj **Publicera arbetsyta**.
 6.  Uppdatera enheten om du vill se de publicerade arbetsytorna.
 
-## <a name="view-information-about-sales-orders-for-a-customer"></a>Visa information om försäljningsorder för en kund
-1.  På din mobila enhet väljer du den **försäljningsorder** arbetsytan.
-2.  Välj **visa order för en kund**.
-3.  Använd ** konto ** eller ** kundnamn ** information för att hitta önskad kund.
+## <a name="view-information-about-sales-orders-for-a-customer"></a>Visa information om försäljningsorder för en kund.
+1.  På din mobila enhet väljer du arbetsytan **Försäljningsorder**.
+2.  Välj **Visa order för en kund**.
+3.  Använd informationen **Konto** eller **Kundnamn** för att hitta önskad kund.
 4.  Välj kunden.
-5.  Välj **kontaktinformation** eller **försäljningsorder**.
-6.  Om **försäljningsorder** är visas en lista över försäljningsorder för kunden visas.
-7.  Välj **försäljningsorder**.
-8.  Här kan du visa information om försäljningsorderrader, försändelser, information om kunder och order hos Prometric kontaktinformation.
+5.  Välj **Kontaktinformation** eller **Försäljningsorder**.
+6.  Om **Försäljningsorder** markeras visas en lista över försäljningsorder för kunden.
+7.  Välj **Försäljningsorder**.
+8.  Här kan du visa information om försäljningsorderrader, leveranser, kundkontaktinformation och ordermottagarinformation.
 
 
 

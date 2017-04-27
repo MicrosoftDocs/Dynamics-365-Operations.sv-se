@@ -28,7 +28,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="benefit-eligibility-policies"></a>Policyer för förmånsberättigande
 
-Det här avsnittet innehåller information om förmånen policyer för förmånsberättigande som du definierar bidrar som berättigar till särskilda förmåner.
+[!include[banner](includes/banner.md)]
+
+
+Det här avsnittet innehåller information om policyer för förmånsberättigande som underlättar vid definition av vem som är berättigad till specifika förmåner.
 
 När du skapar förmåner, väljer du vilka förmåner ska vara tillgängliga för vilka medarbetare. Följande tabell visar exempel på förmåner som du kan göra tillgängliga för specifika medarbetare.
 
@@ -38,7 +41,7 @@ När du skapar förmåner, väljer du vilka förmåner ska vara tillgängliga f�
 | Mobiltelefon     | Försäljningspersonal, chefer         |
 | Parkeringskort   | Chefer                      |
 
-Följande komponenter i används för att skapa policyer för förmånsberättigande:
+Följande komponenter används för att skapa valbarhetpolicyer:
 
 -   Policyregeltyper
 -   Policyer för förmånsberättigande
@@ -51,5 +54,7 @@ Du definierar regelns omfång inom policyn. Om du till exempel skapar en policyr
 --------
 
 [Definiera och hantera ett förmånsprogram](manage-benefit-program.md)
+
+
 
 

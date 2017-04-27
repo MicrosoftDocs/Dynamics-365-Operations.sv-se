@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="configure-an-automated-task-in-a-workflow"></a>Konfigurera en automatisk uppgift i ett arbetsflöde
 
+[!include[banner](../includes/banner.md)]
+
+
 I det här avsnittet beskrivs hur du konfigurerar egenskaperna för en automatisk uppgift.
 
 Högerklicka på uppgiften och klicka sedan på **Egenskaper** för att öppna sidan **Egenskaper** om du vill konfigurera en automatisk uppgift i arbetsflödesredigeraren. Använd sedan följande procedurer när du vill konfigurera egenskaperna för den automatiska uppgiften.
@@ -92,16 +95,18 @@ Du kan skicka meddelanden till andra personer när en automatisk uppgift har kö
     </tr>
     <tr class="odd">
     <td>Användare</td>
-    <td>Specifika Microsoft Dynamics 365 för användare av operationer</td>
+    <td>Specifika Microsoft Dynamics 365 for Operations-användare</td>
     <td><ol>
     <li>Klicka på fliken <strong>Användare</strong> när du har valt <strong>Användare</strong>.</li>
-    <li>Den <strong>tillgängliga användare</strong> listan innehåller alla Dynamics 365 för användare av operationer. Markera de användare som du vill skicka meddelanden till, och flytta sedan dessa användare till listan <strong>Markerade användare</strong>.</li>
+    <li>Listan <strong>Tillgängliga användare</strong> innehåller alla Dynamics 365 for Operations-användare. Markera de användare som du vill skicka meddelanden till, och flytta sedan dessa användare till listan <strong>Markerade användare</strong>.</li>
     </ol></td>
     </tr>
     </tbody>
     </table>
 
 8.  Upprepa stegen 3 till och med 7 för varje enskild händelse du valde i steg 2.
+
+
 
 
 

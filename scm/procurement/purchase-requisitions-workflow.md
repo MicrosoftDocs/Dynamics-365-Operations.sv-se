@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="purchase-requisition-workflow"></a>Arbetsflöde för inköpsrekvisitioner
 
+[!include[banner](../includes/banner.md)]
+
+
 Arbetsflödesprocessen flyttar inköpsrekvisitionerna genom granskningsprocessen, från en ursprunglig status för Utkast till statusen Godkänd. När en inköpsrekvisition skickas in för granskning, startas arbetsflödesprocessen. När en inköpsrekvisition har godkänts, kan en inköpsorder skapas för inköpsrekvisitionsraderna och skickas till leverantören för uppfyllelse av ordern.
 
 Innan en inköpsrekvisition kan skickas för granskning måste arbetsflödet konfigureras. Arbetsflödesprocessen kan innehålla en eller flera granskningssteg i valfri ordning. Arbetsflödesprocessen kan också konfigureras om du vill hoppa över granskningsuppgifterna och om du automatiskt vill godkänna inköpsrekvisitionen. Du kan konfigurera arbetsflödet för att skicka inköpsrekvisitionen som ett enda dokument, eller så kan du skicka enskilda inköpsrekvisitionsrader till lämpliga granskare. Du kan också skapa ett scenario där inköpsrekvisitionen skickas som ett enda dokument till några granskare, och markerade inköpsrekvisitionsrader skickats till andra granskare.  
@@ -106,12 +109,14 @@ Om du vill använda en av omkostnadgranskarna, som ställs in i ett arbetsflöde
 <a name="see-also"></a>Se även
 --------
 
-[Skapa en inköpsrekvisition för förbrukning (aktivitet guide)](https://ax.help.dynamics.com/en/wiki/create-a-requisition-for-consumption/)
+[Skapa en rekvisition för förbrukning (uppgiftsguide)](https://ax.help.dynamics.com/en/wiki/create-a-requisition-for-consumption/)
 
 [Definiera affärsprocessarbetsflöden för inköpsrekvisitioner](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions)
 
-[Procurement and sourcing workflows](procurement-sourcing-workflows.md)
+[Anskaffnings- och källarbetsflöden](procurement-sourcing-workflows.md)
 
-[Purchase requisition overview](purchase-requisitions-overview.md)
+[Översikt över inköpsrekvisition](purchase-requisitions-overview.md)
+
+
 
 

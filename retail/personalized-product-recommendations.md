@@ -1,6 +1,6 @@
 ---
-title: "Personliga rekommendationer Produktöversikt"
-description: "I Dynamics 365 för operationer visas produktrekommendationer på enheten (PO) för försäljning. Rekommendationerna är artiklar som kunden kan vara intressanta baserat på deras tidigare inköp, artiklar i deras önskelista och artiklar som andra kunder köpt online och på bankkontor och andra butiker. För återförsäljare med stora kataloger hjälp rekommendationer med av kunden identifiering av produkten. Presenterar produkterna till en kunds intresse och inköp vanor produktrekommendationer återförsäljare kan hjälpa till med skapar merförsäljning och mellan kund och kan förbättra innehållet belopp från kund. I Dynamics 365 för operationer, är produktrekommendationer utrustade med kognitiva tjänster och Microsoft Azure maskin utbildning."
+title: "Översikt över anpassade produktrekommendationer"
+description: "I Dynamics 365 for Operations visas produktrekommendationer på kassaenheten. Rekommendationerna är artiklar som kunden kan vara intresserad av baserat på sina tidigare inköp, artiklar i önskelistor samt artiklar som andra kunder köpt online och i fysiska butiker. För återförsäljare med stora kataloger hjälper rekommendationer kunden att identifiera produkter. Genom att visa upp produkter riktade till en kunds intresse och inköpsvanor kan produktrekommendationer hjälpa återförsäljare med merförsäljning och korsförsäljning, och förbättrad kundvård. I Dynamics 365 for Operations är produktrekommendationer utrustade med kognitiva tjänster och Microsoft Azure maskininlärning."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,59 +25,64 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="personalized-product-recommendations-overview"></a>Personliga rekommendationer Produktöversikt
+# <a name="personalized-product-recommendations-overview"></a>Översikt över anpassade produktrekommendationer
 
-I Dynamics 365 för operationer visas produktrekommendationer på enheten (PO) för försäljning. Rekommendationerna är artiklar som kunden kan vara intressanta baserat på deras tidigare inköp, artiklar i deras önskelista och artiklar som andra kunder köpt online och på bankkontor och andra butiker. För återförsäljare med stora kataloger hjälp rekommendationer med av kunden identifiering av produkten. Presenterar produkterna till en kunds intresse och inköp vanor produktrekommendationer återförsäljare kan hjälpa till med skapar merförsäljning och mellan kund och kan förbättra innehållet belopp från kund. I Dynamics 365 för operationer, är produktrekommendationer utrustade med kognitiva tjänster och Microsoft Azure maskin utbildning.
+[!include[banner](includes/banner.md)]
+
+
+I Dynamics 365 for Operations visas produktrekommendationer på kassaenheten. Rekommendationerna är artiklar som kunden kan vara intresserad av baserat på sina tidigare inköp, artiklar i önskelistor samt artiklar som andra kunder köpt online och i fysiska butiker. För återförsäljare med stora kataloger hjälper rekommendationer kunden att identifiera produkter. Genom att visa upp produkter riktade till en kunds intresse och inköpsvanor kan produktrekommendationer hjälpa återförsäljare med merförsäljning och korsförsäljning, och förbättrad kundvård. I Dynamics 365 for Operations är produktrekommendationer utrustade med kognitiva tjänster och Microsoft Azure maskininlärning.
 
 <a name="scenarios"></a>Scenarier
 ---------
 
-Produktrekommendationer har aktiverats för följande scenarier POS. De är tillgängliga i molnbaserad kassa eller Modern POS (MOPS).
+Produktrekommendationer har aktiverats för följande kassascenarier. De är tillgängliga i Cloud POS och Modern POS (MPOS).
 
-1.  I den **produktinformation** sida:
+1.  På sidan **Produktdetaljer**:
 
--   Om du kopplar en butik Besök en **produktinformation** när du tittar på tidigare transaktioner via olika kanaler rekommendation motor föreslår ytterligare artiklar som kan köpas tillsammans.
--   Om butiken associerar lägger till en kund i transaktionen och besök sedan en **produktinformation**, rekommendation motorn ger personliga rekommendationer som gjorts på kundens transaktionshistorik.
+-   Om en butiksmedarbetare besöker en sida **Produktdetaljer** när han eller hon tittar på föregående transaktioner via olika kanaler, föreslår rekommendationsmotorn ytterligare artiklar som kan köpas tillsammans.
+-   Om butiksmedarbetaren lägger till en kund i transaktionen och sedan besöker en **Produktdetaljer**-sida ger rekommendationsmotorn personliga rekommendationer som gjorts på kundens transaktionshistorik.
 
 [![proddetails](./media/proddetails.png)](./media/proddetails.png)
 
-2.  I den **transaktionen** sida:
+2.  På sidan **Transaktion**:
 
--   Rekommendation motor föreslår artiklar baserat på hela listan över artiklar i varukorgen.
--   Om butiken associera lägger till en kund i transaktionen, rekommendation motorn ger personliga rekommendationer med kundens transaktionshistorik och listan över artiklar i varukorgen.
+-   Rekommendationsmotorn föreslår artiklar baserat på hela listan över artiklar i varukorgen.
+-   Om butiksmedarbetaren lägger till en kund i transaktionen, ger rekommendationsmotorn personliga rekommendationer som gjorts på kundens transaktionshistorik och listan med artiklar i varukorgen.
 
-**Observera** ska visas rekommendationer i den **transaktionen** återförsäljaren behöver uppdatera skärmlayout i Dynamics 365 för operationer på sidan. Den **rekommendationer** kontroll måste tas bort i den **transaktionen** sida. [![transactionscreenmultipleproductslargemessengersbag 5](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)
+**Obs!** För att visa rekommendationer på sidan **Transaktion** måste återförsäljaren uppdatera skärmlayouten i Dynamics 365 for Operations. Kontrollen **Rekommendationer** måste tas bort på sidan **Transaktion**. [![transactionscreenmultipleproductslargemessengersbag-5](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)](./media/transactionscreenmultipleproductslargemessengersbag-5.jpg)
 
-3.  I den **kunduppgifter** sida:
-    -   Rekommendation motor föreslår artiklar baserat på användar-ID och artiklar i kundens önskelista.
+3.  På sidan **Kundinformation**:
+    -   Rekommendationsmotorn föreslår artiklar baserat på användar-ID och artiklar i kundens önskelista.
 
 [![customerdetailsrecommendations](./media/customerdetailsrecommendations.png)](./media/customerdetailsrecommendations.png)
 
-## <a name="configure-dynamics-365-for-operations-to-enable-pos-recommendations"></a>Konfigurera Dynamics 365 att aktivera rekommendationer i kassa
-Om du vill ställa in produktrekommendationer måste du göra följande.
+## <a name="configure-dynamics-365-for-operations-to-enable-pos-recommendations"></a>Konfigurera Dynamics 365 for Operations att aktivera kassarekommendationer
+För att ställa in produktrekommendationer måste du göra följande.
 
-1.  Kontrollera att du har valt rätt **juridisk person**.
-2.  Gå till **enhet butiken**markerar **Retail försäljning**, och klicka sedan på **uppdatera**. ** ** tas använder demodata (eller data) från databasen fungerar och flyttas det till arkivet för enheten.
-3.  Valfritt: Rekommendationer på skärmen transaktionen visas går du till ** skärmlayout, **väljer du ditt skärmlayout, starta den **Layoutdesigner för skärm**,** ** och släpper den ** rekommendationer kontrollen ** vid behov.
-4.  Gå till **RETUR**Välj **maskin-utbildning**väljer ** Ja ** under **POS aktivera rekommendationer**.
-5.  Kör jobbet för global konfiguration om du vill se rekommendationer för kassa **1110**. Kör kanal konfiguration jobbet så att det avspeglar ändringar i kassa Layoutdesigner för skärm **1070**.
+1.  Kontrollera att du har valt rätt **Juridisk person**.
+2.  Gå till **Enhetslagring**, välj **Butiksförsäljning** och klicka sedan på **Uppdatera**. ** ** Då används demodata (eller dina data) från din driftsdatabas fungerar och flyttas till enhetslagring.
+3.  Valfritt: Om du vill visa rekommendationer på transaktionsskärmen går du till **Skärmlayout, **väljer din skärmlayout, startar **Layoutdesigner för skärm**,** **och släpper **rekommendationskontrollen** där den behövs.
+4.  Gå till **Butiksparametrar**, välj **Maskininlärning**,välj **Ja **under **Aktivera kassarekommendationer**.
+5.  Kör jobbet **1110** för global konfiguration om du vill se rekommendationer på kassan. Kör kanalkonfigurationsjobbet **1070** för att avspeglar ändringar i kassaskärmens layoutdesigner.
 
 ## <a name="how-does-it-work"></a>[]()Hur fungerar det?
-När du uppdaterar den **enhet butiken** entitet följande åtgärder utföras.
+När du uppdaterar **Enhetslagring**-enheten utförs följande åtgärder.
 
--   Data i det format som krävs av kognitiva framställd Dynamics 365 för operationer fungerande databas och skickas till butiken entitet.
--   Informationen används av Azure Data Factory (ADF) för att rengöra data med hjälp av skript i strukturen som en del av ADM-aktiviteter. Rengörs data lagras i blob-lagring.
--   Data från blob-lagring används av kognitiva services API för att utbilda en rekommendation modell.
+-   Data i det format som krävs av kognitiva tjänster extraheras från Dynamics 365 for Operations driftsdatabas och skickas till enhetslagringen.
+-   Informationen används av Azure Data Factory (ADF) för att rensa data med hjälp av Hive-skript som en del av ADM-aktiviteter. Rensade data lagras i blobb-lagring.
+-   Data från blobb-lagring används av API för kognitiva tjänster för att utbilda en rekommendationsmodell.
 
-När du har aktiverat **aktivera rekommendationer för** och kör jobb konfiguration, följande åtgärder utföras.
+När du har aktiverat **Aktivera rekommendationer** och kör konfigurationsjobb, utförs följande åtgärder.
 
--   Förlaga autentiseringsuppgifter och -ID hämtas från API och lagras i Dynamics 365 för operationer fungerande databas i web.config för AOS och även i retail-servern.
--   Förlaga autentiseringsuppgifter och ID görs tillgängliga för CRT så att samtal för produktrekommendationer molnbaserad kassa och MOPS i onlineläge kan värderas.
+-   Modellautentiseringsuppgifter och -ID hämtas från API och lagras i Dynamics 365 for Operations driftdatabas, i web.config för AOS, och även i butiksservern.
+-   Modellautentiseringsuppgifter och -ID görs tillgängliga för CRT så att anrop för produktrekommendationer från Cloud POS och MOPS i onlineläge kan utföras.
 
 
 <a name="see-also"></a>Se även
 --------
 
-[Lägga till en kontroll med rekommendationer på sidan transaktionen på en POS-enhet](add-recommendations-control-pos-screen.md)
+[Lägg till en rekommendationskontroll på transaktionssidan på en kassaenhet](add-recommendations-control-pos-screen.md)
+
+
 
 

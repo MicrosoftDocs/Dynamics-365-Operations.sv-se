@@ -102,7 +102,7 @@ Det finns två sätt att schemalägga återkommande skapande av arbete för rull
 
 ### <a name="create-cycle-counting-work-based-on-threshold-parameters-for-items"></a>Skapa arbetsuppgift för rullande inventering baserat på tröskelparametrar för artiklar
 
-En arbetsuppgift för rullande inventering kan skapas när antalet artiklar är under ett specifikt tröskelvärde för en plats. Det finns till exempel 60 objekt på en plats som har en cyklisk tröskelvärde 40. Under en försäljningsordertransaktion 25 artiklar plockas från platsen och placera på en fristående plats. Eftersom det nya artikelantalet är 35, d.v.s. mindre än tröskelkvantiteten, skapas arbete för rullande inventering automatiskt för platsen.
+En arbetsuppgift för rullande inventering kan skapas när antalet artiklar är under ett specifikt tröskelvärde för en plats. Det finns till exempel 60 artiklar på en plats som har en tröskel för rullande inventering på 40. Under en försäljningsordertransaktion plockas 25 artiklar från platsen och placeras på en mellanlagringsplats. Eftersom det nya artikelantalet är 35, d.v.s. mindre än tröskelkvantiteten, skapas arbete för rullande inventering automatiskt för platsen.
 
 ### <a name="schedule-cycle-counting-work"></a>Tidsplanera arbete för rullande inventering
 
@@ -129,7 +129,7 @@ Följande procedur visar hur du kan utföra rullande inventering av typen spot g
 ## <a name="resolve-cycle-counting-differences"></a>Lösa avvikelser för rullande inventering
 En avvikelse för rullande inventering inträffar i följande scenarier om alternativet **Är ansvarig för rullande inventering** är inställd till **Nej** för ett arbetaranvändar-ID:
 
--   Värdet från den rullande inventeringen är inte inom de avvikelsegränser som anges i fälten **Gräns för högsta procentandel** eller **Gräns för högsta kvantitet** på sidan **Arbetsanvändare**. Till exempel antalet lager i en plats är 50 och avvikelse gränsen för arbete användaren är 10. Om arbete användaren anger ett värde som inte är mellan 40 och 60, en skillnad har påträffats.
+-   Värdet från den rullande inventeringen är inte inom de avvikelsegränser som anges i fälten **Gräns för högsta procentandel** eller **Gräns för högsta kvantitet** på sidan **Arbetsanvändare**. Till exempel är tillgänglig lagerkvantitet på en plats 50, och avvikelsegränsen för arbetsanvändaren är 10. Om arbetsanvändaren anger ett värde som inte är mellan 40 och 60, uppstår en skillnad.
 -   Värdet från den rullande inventeringen skiljer sig från lagerbehållningskvantiteten och det finns inga angivna avvikelsegränser.
 
 Du kan justera avvikelser i det beräknade värdet och sedan acceptera det beräknade värdet på sidan **Granskning av väntande rullande inventering**. Du kan verifiera det modifierade antalet för artikelkvantiteten på sidan **Behållning efter plats**. Värdet från den rullande inventeringen åsidosätts om skillnaden inte kan godkännas.

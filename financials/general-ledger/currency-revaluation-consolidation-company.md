@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="currency-revaluation-in-a-consolidation-company"></a>Valutaomvärdering i en konsolideringsföretag
 
+[!include[banner](../includes/banner.md)]
+
+
 
 
 När du konsolidera data från en redovisningsvaluta till en annan måste du fortfarande köra valutaomvärdering om det sker en förändring i valutakurser, så att ditt konto saldo är korrekt omvärderas. När du ursprungligen konsolidera data, använd **valutakursdifferens** flik för att välja den första växelkurser för översättning under konsolideringsprocessen. Efter en ny valutakurs registreras (t.ex. i nästa månad), du måste omvärdera den kontosaldon. Den orealiserade vinster eller förluster som sedan uppdateras baserat på den nya växelkursen och datum. Följande exempel illustrerar bokföringsposter som skapas under processen.
@@ -33,7 +36,7 @@ När du konsolidera data från en redovisningsvaluta till en annan måste du for
 ## <a name="company-setup"></a>Företagsinställningar
 -   **Källa/driftbolaget (USMF)** – US dollar (USD) används som redovisning och rapportering valuta.
 -   **Koncernens bolag (CON)** – EURO (EUR) används som redovisning och rapportering valuta.
-    -   ** Realiserad vinst ** – redovisningskonto 801500
+    -   **Realiserad vinst ** – Redovisningskonto 801500
     -   **Förlusten** – reskontra 801600
     -   **Orealiserad vinst** – reskontra 801600
     -   **Orealiserad förlust** – reskontra 801400
@@ -82,6 +85,8 @@ Du kommer att se ytterligare transaktioner för rapportering valuta.
 | 130100         | Euro      | -500,00 | Ursprungligt belopp -500 × 1                          |
 | 801400         | Euro      | 250     | 500 – 333,33 = 166,67 166,67 83,33 + = 250           |
 | 801600         | Euro      | -250    | -500 – (-333,33) = -166,67 -166,67 + (-83,33) = -250 |
+
+
 
 
 

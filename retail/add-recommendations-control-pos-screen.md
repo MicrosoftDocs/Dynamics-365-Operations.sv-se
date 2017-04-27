@@ -1,6 +1,6 @@
 ---
-title: "Lägga till en kontroll med rekommendationer på sidan transaktionen på en POS-enhet"
-description: "Det här avsnittet beskrivs hur du lägger till en kontroll med rekommendationer skärmen på en försäljning (PO) enheten med Layoutdesigner för skärm i Microsoft Dynamics 365 för transaktionen."
+title: "Lägg till en rekommendationskontroll på transaktionssidan på en kassaenhet"
+description: "Det här avsnittet beskriver hur du lägger till en rekommendationskontroll på transaktionsskärmen på en kassaenhet med hjälp av layoutdesignern för skärm i Microsoft Dynamics 365 for Operations."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,55 +25,60 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="add-a-recommendations-control-to-the-transaction-page-on-a-pos-device"></a>Lägga till en kontroll med rekommendationer på sidan transaktionen på en POS-enhet
+# <a name="add-a-recommendations-control-to-the-transaction-page-on-a-pos-device"></a>Lägg till en rekommendationskontroll på transaktionssidan på en kassaenhet
 
-Det här avsnittet beskrivs hur du lägger till en kontroll med rekommendationer skärmen på en försäljning (PO) enheten med Layoutdesigner för skärm i Microsoft Dynamics 365 för transaktionen.
+[!include[banner](includes/banner.md)]
 
-Du kan visa produktrekommendationer på POS enheten när du använder Microsoft Dynamics 365 för operationer. *Rekommendationer för* som kunderna kan vara intresserade av baserat på deras tidigare inköp och objekt i sina önskelista artiklar som andra kunder köpt online och bankkontor och andra objekt. Om du vill visa produktrekommendationer måste du lägga till en kontroll på transaktionen skärmen med Layoutdesigner för skärm.
 
-## <a name="open-layout-designer"></a>Öppna Layoutdesignern för formulär
-1.  Gå till **butik och handel**&gt;**kanal**&gt;**POS inställningar**&gt;**POS**&gt;**skärm layouter**.
-2.  Med filtret snabbt hitta skärmen som du vill lägga till kontrollen. Till exempel filtrera efter den **skärm layout-ID** med hjälp av värdet 'F2CP16:9M'.
-3.  Hitta och markera önskad post i listan. Markera exempelvis "namn: F2CP16:9M skärmlayout-ID: F2CP16:9M'.
-4.  Klicka på **Layoutdesigner för**.
-5.  Följ instruktionerna för att starta Layoutdesignern för formulär. Autentiseringsuppgifter Skriv samma autentiseringsuppgifter som användes när layoutdesignern startades från **skärm layouter** sida.
-6.  När du loggar in visas en sida som liknar den nedan. Layouten är olika beroende på anpassningar som har gjorts för din butik.
+Det här avsnittet beskriver hur du lägger till en rekommendationskontroll på transaktionsskärmen på en kassaenhet med hjälp av layoutdesignern för skärm i Microsoft Dynamics 365 for Operations.
 
-[![screenlayout-pic-1](./media/screenlayout-pic-1.png)](./media/screenlayout-pic-1.png) väljer du ett visningsalternativ
+Du kan visa produktrekommendationer på din kassaenhet när du använder Microsoft Dynamics 365 for Operations. *Rekommendationer* är artiklar som dina kunder kan vara intresserade av baserat på sina tidigare inköp, artiklar i sina önskelistor samt artiklar som andra kunder köpt online och i fysiska butiker. Om du vill visa produktrekommendationer måste du lägga till en kontroll på transaktionsskärmen med skärmlayoutdesignern.
+
+## <a name="open-layout-designer"></a>Öppna layoutdesignern
+1.  Navigera till **Butik och handel** &gt; **Kanalinställningar** &gt; **Kassainställningar** &gt; **Kassa** &gt; **Skärmlayout**.
+2.  Med snabbfiltret kan du snabbt hitta den skärm som du vill lägga till kontrollen i. Filtrera till exempel fältet **ID för skärmlayout** med hjälp av värdet "F2CP16:9M".
+3.  Hitta och markera önskad post i listan. Markera exempelvis "Namn: F2CP16:9M Skärmlayout-ID: F2CP16:9M".
+4.  Klicka på **Layoutdesigner**.
+5.  Följ instruktionerna för att starta layoutdesignern. När du uppmanas ange dina autentiseringsuppgifter, ange då samma autentiseringsuppgifter som användes när layoutdesignern startades från sidan **Skärmlayouter**.
+6.  När du loggar in visas en sida som liknar den nedanstående. Layouten är olika beroende på de anpassningar som gjorts för din butik.
+
+[![skärmlayout-bild-1](./media/screenlayout-pic-1.png)](./media/screenlayout-pic-1.png) Välj ett visningsalternativ
 -----------------------
 
-Det finns två alternativ för konfigurationer. Välj det alternativ som passar bäst för din butik och följ resten av anvisningarna tills kontrollen. Det finns två alternativ:
+Det finns två konfigurationsalternativ tillgängliga. Välj det alternativ som passar bäst för din butik, och följ sedan resten av anvisningarna för att avsluta kontrollinställningarna. De två alternativen är:
 -   Rekommendationer visas alltid.
--   A **rekommendationer** flik i rutnätet till höger på skärmen.
+-   Fliken **Rekommendationer** visas i rutnätet till höger på skärmen.
 
-#### <a name="to-make-recommendations-always-visible"></a>Att utfärda rekommendationer alltid ska visas
+#### <a name="to-make-recommendations-always-visible"></a>För att alltid visa rekommendationer
 
-1.  Minska höjden på detaljområdet transaktionen rader så att den är samma höjd som kunden panelen till vänster. [](./media/pic-2.png)[![screenlayout-pic-2](./media/screenlayout-pic-2.png)](./media/screenlayout-pic-2.png)
-2.  Dra och släpp rekommendationer kontrollen mellan detaljområdet transaktionen rad och knappsatsen i mitten längst ned skärmbilden transaktionen på menyn till vänster. Ändra storlek på kontrollen så att den passar på det resterande utrymmet. [](./media/pic-3.png)[![screenlayout-pic-3](./media/screenlayout-pic-3.png)](./media/screenlayout-pic-3.png)
-3.  Klicka på den **X** att spara och stänga Layoutdesignern för formulär.
-4.  I Dynamics 365 för operationer, gå till **butik och handel**&gt;**Retail IT**&gt;**fördelning scheman**.
-5.  I listan väljer du **1090 registrerar**.
-6.  Klicka på **kör nu**.
+1.  Minska höjden på detaljområdet för transaktionsrader så att denna är samma höjd som hos kundpanelen till vänster.[](./media/pic-2.png)[![skärmlayout-bild-2](./media/screenlayout-pic-2.png)](./media/screenlayout-pic-2.png)
+2.  Från menyn till vänster, dra och släpp rekommendationskontrollen mellan detaljområdet för transaktionsrad och knappsatsen längst ned i mitten längst på transaktionsskärmen. Ändra storlek på kontrollen så att den passar in i utrymmet.[](./media/pic-3.png)[![bildlayout-bild-3](./media/screenlayout-pic-3.png)](./media/screenlayout-pic-3.png)
+3.  Klick på **X** för att spara och stänga layoutdesignern.
+4.  I Dynamics 365 for Operations, navigera till **Butik och handel** &gt; **Butiks-IT** &gt; **Fördelningsscheman**.
+5.  I listan väljer du **1090 Registers**.
+6.  Klicka på **Kör nu**.
 
-#### <a name="to-add-a-recommendations-tab-to-the-button-grid-on-the-right-side-of-the-screen"></a>Lägga till en flik rekommendationer till knappsatsen på höger sida av skärmen
+#### <a name="to-add-a-recommendations-tab-to-the-button-grid-on-the-right-side-of-the-screen"></a>För att lägga till en rekommendationsflik i knappsatsen till höger på skärmen
 
-1.  Högerklicka i det tomma utrymmet nedanför sista på knappsats finns till höger på sidan.
-2.  Klicka på **anpassa**. [![pic-5](./media/pic-5.png)](./media/pic-5.png)
-3.  Klicka på **ny flik**.
+1.  Högerklicka i det tomma utrymmet under den sista fliken på knappsatsen till höger på sidan.
+2.  Klicka på **Anpassa**.[![bild-5](./media/pic-5.png)](./media/pic-5.png)
+3.  Klicka på **Ny flik**.
 4.  Hitta den nya fliken som du just skapade. Du kan behöva rulla nedåt.
-5.  I den **innehåll** listrutan, väljer **produkter bör**. [![PIC-6](./media/pic-6.png)](./media/pic-6.png)
-6.  I den **etiketten** skriver du ett namn för fliken rekommendationer. Skriv till exempel "Rekommenderas produkter".
-7.  I den **bild**, markera bilden ska visas på fliken.
-8.  Click **OK**. Den nya fliken visas i knappsatsen.
-9.  Klicka på den **X** att spara och stänga Layoutdesignern för formulär.
-10. I Dynamics 365 för operationer, gå till **butik och handel**&gt;**Retail IT**&gt;**fördelning scheman**.
-11. I listan väljer du **1090 registrerar**.
-12. Klicka på **kör nu**.
+5.  I listrutan **Innehåll** väljer du **Rekommenderade produkter**. [![bild-6](./media/pic-6.png)](./media/pic-6.png)
+6.  I fältet **Etikett** skriver du ett namn för rekommendationsfliken. Skriv till exempel "Rekommenderade produkter".
+7.  I fältet **Bild** väljer du den bild du vill visa i fliken.
+8.  Klicka på **OK**. Den nya fliken visas i knappsatsen.
+9.  Klick på **X** för att spara och stänga layoutdesignern.
+10. I Dynamics 365 for Operations, navigera till **Butik och handel** &gt; **Butiks-IT** &gt; **Fördelningsscheman**.
+11. I listan väljer du **1090 Registers**.
+12. Klicka på **Kör nu**.
 
 
 <a name="see-also"></a>Se även
 --------
 
-[Personliga rekommendationer Produktöversikt](personalized-product-recommendations.md)
+[Översikt över anpassade produktrekommendationer](personalized-product-recommendations.md)
+
+
 
 

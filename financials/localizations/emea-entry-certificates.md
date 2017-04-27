@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="eu-entry-certificates"></a>Mottagningskvitton för EU
 
+[!include[banner](../includes/banner.md)]
+
+
 Det här avsnittet innehåller information om mottagningskvitton för Europeiska unionen (EU).
 
 Du kan utföra följande uppgifter för ett EU-mottagningskvitto:
@@ -76,7 +79,7 @@ Följande tabell visar förutsättningarna som krävs och måste finnas på plat
 </table>
 
 ## <a name="creating-registering-and-uploading-an-eu-entry-certificate"></a>Skapa och registrera och överföra ett EU-mottagningskvitto
-Du kan skapa ett EU-postcertifikat automatiskt eller manuellt. Ett certifikat för EU-transaktionen skapas och skrivs ut automatiskt när du bokför en följesedel eller en faktura för en kund med hjälp av den **bokför följesedeln** sida eller **bokföra fakturan** sida. Manuellt skapa eller skriva ut ett certifikat med EU transaktionen för en kundfaktura genom att använda de **Fakturajournal** sida. Du kan även ange information om ett EU-mottagningskvitto som utfärdats av en tredje part på sidan **Mottagningskvittojournal**.
+Du kan skapa ett EU-postcertifikat automatiskt eller manuellt. Ett EU-mottagningskvitto skapas och skrivs ut automatiskt när du bokför en följesedel eller en faktura för en kund via sidan **Bokför med följesedel** eller sidan **Bokför med faktura**. Skapa ett EU-mottagningskvitto manuellt eller skriv ut det på nytt för en kundfaktura via sidan **Fakturajournal**. Du kan även ange information om ett EU-mottagningskvitto som utfärdats av en tredje part på sidan **Mottagningskvittojournal**.
 
 ### <a name="creating-an-eu-entry-certificate-automatically-or-manually"></a>Skapa ett EU-mottagningskvitto automatiskt eller manuellt.
 
@@ -121,6 +124,8 @@ Om du inte har åtkomst till de sidor som används för att slutföra den här u
 </tr>
 </tbody>
 </table>
+
+
 
 
 

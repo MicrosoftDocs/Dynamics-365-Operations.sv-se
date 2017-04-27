@@ -1,5 +1,5 @@
 ---
-title: Organisera personalen med avdelningar, jobb och befattningar
+title: "Organisera dina medarbetare med hjälp av avdelningar, jobb och befattningar"
 description: "Avdelningar, jobb och befattningar är organisationselement som underhålls i Personal. Det här avsnittet beskriver begreppsmässig information om dessa element."
 author: rschloma
 manager: AnnBe
@@ -26,22 +26,25 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="organize-your-workforce-using-departments-jobs-and-positions"></a>Organisera personalen med avdelningar, jobb och befattningar
+# <a name="organize-your-workforce-using-departments-jobs-and-positions"></a>Organisera dina medarbetare med hjälp av avdelningar, jobb och befattningar
+
+[!include[banner](includes/banner.md)]
+
 
 Avdelningar, jobb och befattningar är organisationselement som underhålls i Personal. Det här avsnittet beskriver begreppsmässig information om dessa element. 
 
 Följande exempel används för att illustrera koncepten som beskrivs i det här avsnittet.
 
-|**Avdelning**|**Position**|**Job**|
+|**Avdelning**|**Befattning**|**Jobb**|
 |---|---|---|
 |**Försäljning**|Försäljningschef (öst)|Försäljningschef|
 |**Försäljning**|Försäljningschef (väst)|Försäljningschef|
 |**Försäljning**|Försäljningschef (central)|Försäljningschef|
-|**Accounting**|Redovisningsansvarig|Redovisningschef|
-|**Accounting**|Redovisning-A|Redovisare|
-|**Human resources**|Personalchef (öst)|Personalchef|
-|**Human resources**|Personalchef (väst)|Personalchef|
-|**Human resources**|Personalchef (central)|Personalchef|
+|**Redovisning**|Redovisningsansvarig|Redovisningschef|
+|**Redovisning**|Redovisning-A|Redovisare|
+|**Personal**|Personalchef (öst)|Personalchef|
+|**Personal**|Personalchef (väst)|Personalchef|
+|**Personal**|Personalchef (central)|Personalchef|
 
  
  <a name="departments"></a>Avdelningar
@@ -79,7 +82,7 @@ Du kan skapa jobbuppgifter som beskriver grundläggande uppgifter, som en anstä
 
 ### <a name="job-functions"></a>Jobbfunktioner
 
-Jobbfunktioner används på jobbuppgifter. En jobbfunktion beskriver en eller flera uppgifter eller ansvarsområden som tilldelats ett jobb. Jobbfunktioner kan tilldelas till jobb och för att konfigurera och implementera berättiganderegler för kompensationsplan. I tabellen nedan visas exempel på jobbfunktioner.
+Jobbfunktioner används på jobbuppgifter. En jobbfunktion beskriver en eller flera uppgifter eller ansvarsområden som tilldelats ett jobb. Jobbfunktioner kan tilldelas jobb och användas för att ställa in och implementera berättiganderegler för kompensationsplaner. Exempel på jobbfunktioner finns i följande tabell.
 
 | Jobb           | Jobbfunktion                                                |
 |---------------|-------------------------------------------------------------|
@@ -101,7 +104,7 @@ Använd ansvarsområden för att indikera arbetets roller, processer och produkt
 <a name="positions"></a>Befattningar
 ----------
 
-Befattningar är ett viktigt element i den lägre nivån i en organisationshierarki. En befattning är ett exempel på ett enskilt jobb. Befattningen "Chef försäljning (öst)" är exempelvis bara en av platserna som associeras med jobbet "Försäljningsansvarig." Befattningar som finns på en avdelning och tilldelas arbetare.
+Befattningar är ett viktigt element i den lägre nivån i en organisationshierarki. En befattning är ett exempel på ett enskilt jobb. Befattningen "Försäljningschef (öst)" är exempelvis bara en de befattningar som associeras med jobbet "Försäljningschef." Befattningar som finns på en avdelning och tilldelas arbetare.
 ### <a name="position-creation-and-maintenance"></a>Befattningskapelse och underhåll
 
 -   Du kan visa en historik över befattningsrelaterade systemändringar på en lättillgänglig listsida.
@@ -161,6 +164,8 @@ För alla poster kan du ange framtida ändringar i posten. Följande information
 </table>
 
 Du kan ändra informationen som nämns i tabellen ovan för en befattning eller ett jobb och ange ett datum, när ändringarna till befattningen eller jobbet ska genomföras. Till exempel kan en befattning endast tilldelas till en anställd, men Sanjay Patel, som är tilldelad befattningen Revisor-A lämnar den om två veckor. Joe Healy ska ersätta Sanjay Patel, när han lämnar. Även om Sanjay fortfarande tilldelas hans befattning, kan du tilldela Joe Healy till samma befattning så att tilldelningen är bara gäller efter Sanjays sista dag.
+
+
 
 
 

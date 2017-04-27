@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="update-standard-costs-in-a-non-manufacturing-environment"></a>Uppdatering av standardkostnader i en icke-tillverkningsmiljö
 
+[!include[banner](../includes/banner.md)]
+
+
 Det här avsnittet ger vägledning om hur du uppdaterar standardkostnader i en icke-tillverkningsmiljö.
 
 I följande riktlinjer förutsätts det att du bara använder tvåversionssättet när du vill uppdatera standardkostnad. I den här metoden, en kostnadsredovisningsversion innehåller standardkostnader som ursprungligen angetts för den frysta perioden, och den andra kostnadsredovisningsversion innehåller de inkrementella uppdateringarna. Varje uppdatering anges som en kostnadspost som bifogas i den andra kostnadsredovisningsversionen och slutligen har aktiverats. Ett alternativ, enversionssättet, använder standardkostnadsuppsättningen som ursprungligen angetts. Tvåversionssättet innebär att du definierar en andra kostnadsredovisningsversion. Här följer riktlinjerna om hur du definierar denna kostnadsredovisningsversion:
@@ -46,6 +49,8 @@ Utför följande steg om du vill korrigera, justera eller uppdatera standardkost
 4.  Använd **Underhåll av kostnadsredovisningsversion**-sidan för att ändra spärrflaggan för att tillåta aktivering av de väntande kostnadsposter som bifogas i den andra kostnadsredovisningsversionen.
 5.  Använd **Aktivera priser**-sidan (som du öppnar från sidan **Underhåll av kostnadsredovisningsversion**) för att aktivera alla väntande artikelkostnadsposter som bifogas i den andra kostnadsredovisningsversionen. Du kan även aktivera de väntande kostnadsposterna för enskilda artiklar genom att klicka på knappen **Aktivera väntande pris** på sidan **Artikelpris**.
 6.  För att förhindra ytterligare dataunderhåll, använd **Inställningar för kostnadsredovisningsversion**-sidan för att ändra spärrflaggorna som bifogas i den andra kostnadsredovisningsversionen. Spärrprinciperna förhindrar registrering av nya pågående kostnader samt aktivering av pågående kostnader.
+
+
 
 
 

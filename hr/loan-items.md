@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="manage-items-lent-to-workers"></a>Hantera artiklar som lånas till arbetare
 
+[!include[banner](includes/banner.md)]
+
+
 Låneartiklar är poster som gör det enklare för chefer att spåra fysiska artiklar som företaget lånar ut till arbetare. 
 
 Följande exempel anger exempel på artiklar som ett företag kan låna till anställda:
@@ -39,7 +42,7 @@ Varje fysisk artikel måste ha en motsvarande låneartikel. Varje låneartikelpo
 
 När en artikel lånas registrerar du datumet då artikeln lånades samt planerat återlämningsdatum. När artikeln lämnas tillbaka anger du det faktiska återlämningsdatumet.
 
-Medarbetare kan visa poster över de artiklar som har blivit lånat funktionen för medarbetarens självbetjäning arbetsytan. De kan också redigera befintliga poster eller ange nya låneartiklar, om de har fått ytterligare fysiska artiklar.  Arbetsflödet kan ställas in att vägändringar till nya eller befintliga låneartiklar igenom någon godkännandeprocess. 
+Medarbetare kan se posterna för de artiklar som har lånats ut till dem via arbetsytan Självbetjäning för medarbetare. De kan också redigera befintliga poster eller ange nya låneartiklar, om de har fått ytterligare fysiska artiklar.  Arbetsflödet kan ställas in att dirigera vägändringar till nya eller befintliga låneartiklar via en godkännandeprocess. 
 
 Chefer kan visa lånade artiklar för deras underställda. De kan också beviljas behörighet att lägga till nya låneartiklar åt deras medarbetare.
 
@@ -52,6 +55,8 @@ Om en artikel skadas eller tappas bort anger du ett fiktivt återlämnande. Seda
 <a name="see-also"></a>Se även
 --------
 
-[Human resources](index.md)
+[Personal](index.md)
+
+
 
 

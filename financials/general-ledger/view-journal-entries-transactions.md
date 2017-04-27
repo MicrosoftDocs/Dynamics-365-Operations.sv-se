@@ -46,12 +46,12 @@ Förutom ekonomiska rapporter kan du använda följande redovisningsrapporter om
 
 -   **Dimensionsutdrag** – Den här rapporten visar transaktioner per dag och konto, och det finns också alternativ för att kunna visa transaktioner per dimension och period.
 -   **Redovisningstransaktionslista** – Den här rapporten visar transaktioner i transaktionsvalutan, redovisningsvalutan och rapporteringsvalutan på ett konto.
--   **Skriv ut journalen** – den här rapporten visas resultatet av en bokförd journal. Du kan köra rapporten efter Journalbatchnummer eller journaltyp eller lägga till ytterligare fält.
+-   **Skriv ut journalen** – den här rapporten visar resultatet av en bokförd journal. Du kan köra rapporten efter journalbatchnummer eller journaltyp eller lägga till ytterligare fält.
 -   **Bokförda transaktioner per journal** – I rapporten visas transaktionerna som har bokförts i en journal grupperade efter verifikation.
 -   **Transaktionslista efter datum** – Den här rapporten visar alla transaktioner per datum, tillsammans med journalnummer, verifikation och redovisningskonto. Den visar också transaktionerna i transaktionsvalutan, kontovalutan och rapporteringsvalutan.
 -   **Transaktionsursprung** – Den här transaktionsrapporten visar konto efter journal och efter transaktionsvalutan, kontovalutan och rapporteringsvalutan. Den visar också varje rad i journalen som användes som avräkning.
 
 
-Mer information finns [redovisningskontosaldon](general-ledger-account-balances.md), [redovisning Utforskaren för datakällor](\financials\accounts-payable\accounting-source-explorer) och [ekonomisk rapportering](financial-reporting-getting-started.md)
+Mer information finns i [Kontosaldon i redovisningen](general-ledger-account-balances.md) [Utforskare för redovisningskälla](\financials\accounts-payable\accounting-source-explorer) och [Ekonomisk rapportering](financial-reporting-getting-started.md)
 
 

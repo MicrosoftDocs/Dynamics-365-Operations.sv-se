@@ -1,6 +1,6 @@
 ---
 title: Systemkrav
-description: "Det här avsnittet beskrivs systemkraven för den aktuella versionen av Microsoft Dynamics 365 för operationer."
+description: "Det här ämnet innehåller en lista med systemkrav för den aktuella versionen av Microsoft Dynamics 365 for Operations."
 author: sericks007
 manager: AnnBe
 ms.date: 2017-04-04
@@ -26,67 +26,67 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="system-requirements"></a>Systemkrav
 
-Det här avsnittet beskrivs systemkraven för den aktuella versionen av Microsoft Dynamics 365 för operationer.
+Det här ämnet innehåller en lista med systemkrav för den aktuella versionen av Microsoft Dynamics 365 for Operations.
 
 <a name="supported-web-browsers"></a>Webbläsare som stöds
 ----------------------
 
-Microsoft Dynamics 365 för webbprogrammet operationer kan köras i något av följande webbläsare som körs på de angivna operativsystem:
+Microsoft Dynamics 365 for Operations webbprogram går att köra i följande webbläsare som körs på de angivna operativsystemen:
 
--   Microsoft Edge (senaste tillgängliga versionen) på Windows 10
+-   Microsoft Edge (den senaste tillgängliga versionen) på Windows 10
 -   Internet Explorer 11 på Windows 10, Windows 8.1 eller Windows 7
--   Google Chrome (senaste tillgängliga versionen) på Windows 10, 8.1 för Windows, Windows 7, Windows 8 eller 10 Google Nexus Tablet PC
--   Apple Safari (senaste tillgängliga versionen) i Mac OS X 10.10 (Yosemite), 10.11 (El Capitan) eller 10.12 (Sierra) eller Apple iPad
+-   Google Chrome (senaste tillgängliga versionen) på Windows 10, Windows 8.1, Windows 8, Windows 7 eller Google Nexus 10 surfplatta
+-   Apple Safari (senaste tillgängliga versionen) på Mac OS X 10.10 (Yosemite), 10.11 (El Capitan) eller 10.12 (Sierra), eller Apple iPad
 
 Gå till programtillverkarens startsida för att hitta den senaste versionen för varje webbläsare. **Anteckningar:**
 
--   Om du vill hämta bilder som har genererats från Uppgiftsinspelning och inkludera dem i Microsoft Word-dokument måste du ha installerat tillägget krom. <!---For instructions about how to install the extension, see [Screenshot Extension setup](/dynamics365/operations/dev-itpro/user-interface/task-recorder).-->
--   Arbetsflödesredigeraren startas som en ClickOnce-program. Endast Microsoft Edge och Internet Explorer (på en version som stöds av Microsoft Windows) stöder ClickOnce-program. Arbetsflödesredigeraren ClickOnce-programmet kräver 64-bitars kompatibelt operativsystem.
--   Report Designer för ekonomisk rapportering startar som ClickOnce-programmet. Kräver 64-bitars kompatibelt operativsystem. Om du använder krom, måste du installera tillägget ClickOnce för att hämta report designer-klienten. Du använder krom incognito läge, ifall ClickOnce-tillägget aktiveras även för incognito.
+-   Om du vill hämta bilder som har genererats från uppgiftsregistrering och inkludera dem i Microsoft Word-dokument måste du ha installerat ett Chrome-tillägg. <!---For instructions about how to install the extension, see [Screenshot Extension setup](/dynamics365/operations/dev-itpro/user-interface/task-recorder).-->
+-   Arbetsflödesredigeraren startas som ett ClickOnce-program. Endast Microsoft Edge och Internet Explorer (på en version som stöds av Microsoft Windows) stöder ClickOnce-program. Arbetsflödesredigeraren ClickOnce-programmet kräver 64-bitars kompatibelt operativsystem.
+-   Rapportdesignern för ekonomisk rapportering startar som ClickOnce-programmet. Kräver 64-bitars kompatibelt operativsystem. Om du använder Chrome måste du installera tillägget ClickOnce för att hämta rapportdesignerklienten. Om du använder Chrome med osynligt läge, se då till att tillägget ClickOnce har aktiverats för osynligt läge.
 
 ### <a name="supported-web-browsers-for-retail-cloud-pos"></a>Webbläsare som stöds för molnbaserad kassa för butik
 
-Molnet Retail POS till Dynamics 365 för operationer kan köras i något av följande webbläsare som körs på de angivna operativsystem:
+Retail Cloud POS för Dynamics 365 for Operations går att köra i följande webbläsare som körs på de angivna operativsystemen:
 
--   Microsoft Edge (senaste tillgängliga versionen) på Windows 10
+-   Microsoft Edge (den senaste tillgängliga versionen) på Windows 10
 -   Internet Explorer 11 på Windows 10, Windows 8.1 eller Windows 7
--   Krom (senaste tillgängliga versionen) i Windows 7, 8.1 för Windows eller Windows 10
+-   Chrome (senaste tillgängliga versionen) i Windows 7, 8.1 för Windows eller Windows 10
 
 ## <a name="network-requirements"></a>Nätverkskrav
--   Dynamics 365 för åtgärder som har utformats för nätverk med svarstid på mindre än 150 millisekunder. Detta är svarstiden från en webbläsare klient till datacentret Azure Microsoft Dynamics 365 för operationer där. Vi rekommenderar att du testar nätverksfördröjning vid <http://www.azurespeed.com>.
--   Bandbreddskrav för Dynamics 365 för operationer är beroende av en viss situation. Mest typiska scenarier kräver en bandbredd på mer än 50 kB per sekund (KBps). Scenarier som har hög nyttolast krav, till exempel arbetsytor eller omfattande anpassning kanske du behöver rekommenderas större bandbredd dock.
+-   Dynamics 365 for Operations har utformats för nätverk med svarstid på mindre än 150 millisekunder. Detta är svarstiden från en webbläsarklient till datacentret Azure som är värd för Dynamics 365 for Operations. Vi rekommenderar att du testar nätverksfördröjning vid <http://www.azurespeed.com>.
+-   Bandbreddskrav för Dynamics 365 for Operations är beroende av en viss situation. Mest typiska scenarier kräver en bandbredd på mer än 50 kB per sekund (KBps). Scenarier som har höga nyttolastkrav, till exempel arbetsytor eller scenarier som involverar omfattande anpassning, rekommenderas större bandbredd.
 
-I allmänhet är Dynamics 365 för operationer optimerad för Internet. Hela nyttolast komprimeras antalet kontakter från en webbläsare klient Azure Datacenter är mycket liten. **Varning:** inte beräkna bandbreddskrav från en klient plats genom att multiplicera antalet användare med den minsta bandbredd som krävs. Det är mycket svårt att beräkna samtidiga användningen av en viss plats. Använda en förhandsversion av Dynamics 365 för kunder som inte vill bandbreddskraven för operationer.
+I allmänhet är Dynamics 365 for Operations optimerad för Internet. Antalet returresor från en webbläsarklient till Azure datacenter är mycket liten och hela nyttolasten komprimeras. **Varning:** Beräkna inte bandbreddskrav från en klientplats genom att multiplicera antalet användare med den minsta bandbredd som krävs. Det är mycket svårt att beräkna samtidiga användningen av en viss plats. Använd en förhandsversion av Dynamics 365 for Operations för kunder som är bekymrade över bandbreddskraven.
 
-## <a name="net-framework-requirements"></a>.NET framework-krav
-Dynamics 365 för åtgärder som kräver .NET Framework version 4.6.2 för klickar du på alla-en gång programmen, t ex routing agenten dokument. Installationsinstruktioner finns i [installationen av .NET Framework](https://msdn.microsoft.com/en-us/library/5a4x27ek(v=vs.110).aspx).
+## <a name="net-framework-requirements"></a>Krav på .NET Framework
+Dynamics 365 for Operations kräver .NET Framework version 4.6.2 för alla enklicksprogram, t.ex. dokumentflödesagent. Installationsinstruktioner finns i [installation av .NET Framework](https://msdn.microsoft.com/en-us/library/5a4x27ek(v=vs.110).aspx).
 
 ## <a name="supported-microsoft-office-applications"></a>Microsoft Office-program som stöds
--   Om du vill köra Microsoft Excel och Word-tillägg, måste du ha Microsoft Office 2016 för Windows eller Macintosh installerat. Mer information om kraven på version finns [felsökning av Office-integrering](/dynamics365/operations/dev-itpro/office-integration/office-integration-troubleshooting).
--   Om du vill visa dokument som har genererats vid Export till Excel eller Export till Word-funktioner måste Microsoft Office 2007 eller senare.
+-   För att kunna köra Microsoft Excel och Word-tillägg måste du ha Microsoft Office 2016 för Windows eller Mac installerat. Mer information om kraven på version finns i [felsökning av Office-integrering](/dynamics365/operations/dev-itpro/office-integration/office-integration-troubleshooting).
+-   Om du vill visa dokument som har genererats av Export till Excel eller Export till Word-funktioner måste Microsoft Office 2007 eller senare installeras.
 
-## <a name="retail-modern-pos-requirements"></a>Retail POS Modern krav
+## <a name="retail-modern-pos-requirements"></a>Krav på Retail Modern POS
 ### <a name="supported-operating-systems"></a>Operativsystem som stöds
 
--   Modern Retail POS är ett 32-bitars program, men körs på både x86 och x64-arkitektur.
--   Modern Retail POS stöds bara på Windows 10 Pro, Enterprise och Enterprise lång sikt Underhåll grenen (LTSB).
+-   Retail Modern POS är ett 32-bitars program, men körs på både x86 och x64-arkitektur.
+-   Retail Modern POS stöds bara på Windows 10 Pro, Enterprise och Enterprise Long Term Servicing Branch (LTSB).
 
 ### <a name="minimum-system-requirements"></a>Minsta systemkrav
 
--   Den lägsta upplösningen stöds är 1280 × 1024.
--   Modern Retail POS körs på datorn måste uppfylla följande villkor:
+-   Den lägsta upplösningen som stöds är 1280 × 1024.
+-   Den dator som Retail Modern POS körs på måste uppfylla följande villkor:
     -   Den måste har minst en processor med dubbla kärnor som kör med minst 2 GHz (gigahertz).
-    -   Måste, minst 3 GB (Gigabyte) RAM.
+    -   Den måste ha minst 3 GB (Gigabyte) RAM.
     -   Den måste ha tillgång till Internet.
 
-## <a name="retail-hardware-station-requirements"></a>Krav för Retail station
+## <a name="retail-hardware-station-requirements"></a>Krav på Retail hardware station
 ### <a name="supported-operating-systems"></a>Operativsystem som stöds
 
--   Retail maskinvara station är ett 32-bitars program, men körs på både x86 och x64-arkitektur.
--   Station för Retail-maskinvara stöds i följande operativsystem:
-    -   Versioner av Windows 7 Professional, Enterprise och Ultimate **Obs!:** Windows 7 stöds endast om Internet Explorer 11 manuellt är installerat på datorn.
-    -   Windows 8.1 uppdatering 1 Professional, Enterprise och inbäddad
-    -   Windows 10 Pro, Enterprise och LTSB för Enterprise-versioner
+-   Retail hardware station är ett 32-bitars program, men körs på både x86 och x64-arkitektur.
+-   Retail hardware station stöds i följande operativsystem:
+    -   Windows 7 Professional, Enterprise, och Ultimate editions **Obs!:** Windows 7 stöds endast om Internet Explorer 11 är manuellt installerad i systemet.
+    -   Windows 8.1 uppdatering 1 Professional, Enterprise och Embedded
+    -   Windows 10 Pro, Enterprise och Enterprise LTSB-versioner
 
 ### <a name="minimum-system-requirements"></a>Minsta systemkrav
 
@@ -95,26 +95,26 @@ Datorn måste uppfylla alla systemkrav för installation och användning av föl
 -   Internet Information Services (IIS)
 -   Maskinvara från tredje part
 
-## <a name="retail-store-scale-unit-requirements"></a>Krav för Retail Store skala enhet
+## <a name="retail-store-scale-unit-requirements"></a>Krav på Retail Store Scale Unit.
 ### <a name="supported-operating-systems"></a>Operativsystem som stöds
 
--   Butik skala är ett 32-bitars program, men körs på både x86 och x64-arkitektur.
--   Butik skala enhet har stöd för följande operativsystem:
-    -   Windows 7 Professional, Enterprise- och Ultimate-utgåvor
-    -   Windows 8.1 uppdatering 1 Professional, Enterprise och inbäddad
-    -   Windows 10 Pro, Enterprise och LTSB för Enterprise-versioner
+-   Retail Store Scale Unit är ett 32-bitars program, men körs på både x86 och x64-arkitektur.
+-   Retail Store Scale Unit stöds i följande operativsystem:
+    -   Windows 7 Professional, Enterprise, och Ultimate-versioner
+    -   Windows 8.1 uppdatering 1 Professional, Enterprise och Embedded
+    -   Windows 10 Pro, Enterprise och Enterprise LTSB-versioner
 
 ### <a name="minimum-system-requirements"></a>Minsta systemkrav
 
 -   4 GB RAM
--   1,6 GHz högsta CPU-hastighet per kärna (två kärnor är minst.)
--   Minst 10 GB ledigt utrymme (kanal databasen kan kräva stora mängder diskutrymme.)
+-   1,6 GHz högsta CPU-hastighet per kärna (två kärnor är minimum.)
+-   Minst 10 GB ledigt utrymme (kanaldatabasen kan kräva stora mängder diskutrymme.)
 
 ### <a name="recommended-system-requirements"></a>Rekommenderade systemkrav
 
 -   6 GB RAM
 -   2,4 GHz i7 (eller motsvarande) högsta CPU-hastighet per kärna (fyra kärnor rekommenderas).
--   Minst 10 GB ledigt utrymme (kanal databasen kan kräva stora mängder diskutrymme.)
+-   Minst 10 GB ledigt utrymme (kanaldatabasen kan kräva stora mängder diskutrymme.)
 
 ## <a name="requirements-for-development-on-local-vms"></a>Krav för utveckling av lokala virtuella maskiner
 Information om kraven för utveckling av enskilda virtuella datorerna (VMs) finns i [VM körs lokalt](/dynamics365/operations/dev-itpro/dev-tools/access-instances#vm-that-is-running-in-premises).
@@ -122,6 +122,6 @@ Information om kraven för utveckling av enskilda virtuella datorerna (VMs) finn
 <a name="see-also"></a>Se även
 --------
 
-[Hämta en utvärderingsversion av Dynamics 365 för operationer](/dynamics365/operations/dev-itpro/dev-tools/get-evaluation-copy)
+[Hämta en utvärderingsversion av Dynamics 365 for Operations](/dynamics365/operations/dev-itpro/dev-tools/get-evaluation-copy)
 
 

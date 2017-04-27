@@ -1,5 +1,5 @@
 ---
-title: Kvitta en delvis kundbetalning med flera Rabattperioderna
+title: Kvitta en delkundsbetalning som har flera rabattperioder
 description: "Det inlägg visar hur delvisa kundbetalningar kvittas om det finns flera rabattperioder."
 author: twheeloc
 manager: AnnBe
@@ -26,14 +26,17 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="settle-a-partial-customer-payment-that-has-multiple-discount-periods"></a>Kvitta en delvis kundbetalning med flera Rabattperioderna
+# <a name="settle-a-partial-customer-payment-that-has-multiple-discount-periods"></a>Kvitta en delkundsbetalning som har flera rabattperioder
+
+[!include[banner](../includes/banner.md)]
+
 
 Det inlägg visar hur delvisa kundbetalningar kvittas om det finns flera rabattperioder.
 
-Fabrikam erbjuder kunden 4031 två kassarabattperioder. Kunden får en kassarabatt på 2 procent, om en faktura betalas inom fem dagar och en kassarabatt på 1 procent, om fakturan betalas inom 14 dagar. Fabrikam erbjuder även kassarabatter på delbetalningar. Kvittning parametrar finns i den **parametrar för kundreskontra** sida.
+Fabrikam erbjuder kunden 4031 två kassarabattperioder. Kunden får en kassarabatt på 2 procent, om en faktura betalas inom fem dagar och en kassarabatt på 1 procent, om fakturan betalas inom 14 dagar. Fabrikam erbjuder även kassarabatter på delbetalningar. Kvittningsparametrar finns på sidan **Parametrar för kundreskontra**.
 
 ## <a name="invoice"></a>Faktura
-Den 25 juni Arnie registrerar och bokför en faktura för 1 000,00 för kund 4031. När han granskar kassarabatter för den här fakturan ser Arnie 4031 som kunden ska få 20,00 rabatt om fakturan betalas senast den 30 juni. Om fakturan betalas av den 9 juli får kunden rabatt 10,00.
+Den 25:e juni registrerar och bokför Arnie en faktura på 1 000,00 för kund 4031. När han granskar kassarabatter för den här fakturan ser Arnie att kund 4031 ska få 20,00 rabatt om fakturan betalas senast den 30 juni. Om fakturan betalas den 9 juli får kunden 10,00 rabatt.
 
 | Kassarabattdatum | Kassarabattbelopp | Belopp i transaktionsvalutan |
 |--------------------|----------------------|--------------------------------|
@@ -92,6 +95,8 @@ Fakturasaldot är nu 0,00. Arnie kan visa den här informationen på sidan **Kun
 | RAB-10030 |  Kassarabatt   | 2015/06/28 |         |                                      | 6,00                                  | 0,00    | USD      |
 | ARP-10031  |  Betalning         | 2015/07/08  |         |                                      | 693,00                                | 0,00    | USD      |
 | RAB-1031  |  Kassarabatt   | 2015/07/08  |         |                                      | 07:00                                  | 0,00    | USD      |
+
+
 
 
 

@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="purchasing-policies"></a>Inköpspolicyer
 
+[!include[banner](../includes/banner.md)]
+
+
 Det här avsnittet innehåller information om inköpspolicyer. En inköpspolicy är en grupp regler som styr processen för inköpsrekvisition. Administratörer som är hjälper till med inköpspolicyer för anskaffning implementerar sin anskaffningsstrategi genom att skapa en policystruktur som stämmer överens med organisationens strategiska inköpskrav.
 
 En inköpspolicy består av en uppsättning med policyregler. När du definierar en policyregel, väljer du först en regeltyp. Du skapar sedan en regel för regeltypen, genom att definiera inställningar, startdatum och slutdatum för regeln.  
@@ -41,13 +44,13 @@ Beroende på hur du konfigurerar dina inköpspolicyer, kan flera regler påverka
 
 ### <a name="example-1-simple-purchasing-policy-configuration"></a>Exempel 1: Enkel konfiguration av inköpspolicy
 
-Organisationer som är mindre och mindre komplicerat kan ställa in inköpspolicyer per juridisk person och kan använda endast företag organisationshierarkin.  
+Organisationer som är mindre och mindre komplicerade kan ställa in inköpspolicyer efter juridisk person, och kan bara använda organisationshierarkin Företag.  
 
 För Fabrikam, ett mindre företag, varierar inköpskraven lite i organisationen. Inköpsregler varierar bara mellan organisationens juridiska personer. Till exempel medarbetare i Fabrikam Kanada och medarbetare i Fabrikam USA köper varor och tjänster från olika kataloger och olika leverantörer. Därför konfigurerar Fabrikam dess inköpspolicyer på juridisk personnivå.  
 
-Fabrikam skapar två inköpspolicyer. Princip A avser juridisk personen amerikanska 1111. B principen till dess kanadensiska juridisk person 2222. När en medarbetare i juridisk person-1111 skapar en inköpsrekvisition är härleds policyreglerna från principen A. Exempelvis anges produktkatalogen som medarbetaren ser i katalogpolicyregel för principen A.  
+Fabrikam skapar två inköpspolicyer. Policy A avser dess amerikanska juridiska person, 1111. Policy B avser dess kanadensiska juridiska person, 2222. När en medarbetare i juridisk person 1111 skapar en inköpsrekvisition härleds policyreglerna från policy A. Exempelvis anges produktkatalogen som medarbetaren ser i katalogpolicyregel för policy A.  
 
-När en medarbetare i den juridiska personen 2222 skapar en inköpsrekvisition är härleds policyreglerna från principen B.  
+När en medarbetare i den juridiska personen 2222 skapar en inköpsrekvisition härleds policyreglerna från policy B.  
 
 **Obs!** Om en medarbetare för juridisk person 1111 köper en artikel på uppdrag av en medarbetare för juridisk person 2222, används policyreglerna för juridisk person 2222 (dvs. policyreglerna från policy B).
 
@@ -117,7 +120,7 @@ Kontrollregeln för återanskaffning är en valfri regel som definierar de fält
 
 ### <a name="purchase-order-creation-and-demand-consolidation-rule"></a>Skapande av inköpsorder och konsolideringsregel för efterfrågan
 
-Inköp order skapas och efterfrågan konsolideringsregeln definierar policyreglerna ska användas när en inköpsorder har skapats från en godkänd inköpsrekvisition. När du skapar regler av den här typen, kan du ange alternativ på olika flikar:
+Inköpsorderskapande och efterfrågekonsolideringsregeln definierar policyreglerna som ska användas när en inköpsorder skapas från en godkänd inköpsrekvisition. När du skapar regler av den här typen, kan du ange alternativ på olika flikar:
 
 -   På fliken **Uppdelning av inköpsorder** kan du definiera kriterier för uppdelning av inköpsrekvisitionsrader till separata inköpsorder.
 -   På fliken **Pris-/rabattöverföring** kan du definiera när du vill omberäkna prisavtalet när en inköpsorder skapas:
@@ -126,7 +129,7 @@ Inköp order skapas och efterfrågan konsolideringsregeln definierar policyregle
 
     Du kan även tillåta beställaren att ändra metoden för pris- och rabattöverföringen för enskilda inköpsrekvisitionsrader, oavsett vilken pris/rabattöverföringsregel som definieras. Välj alternativet **Tillåt manuell åsidosättning per inköpsrekvisitionsrad**, om du vill aktivera den här funktionen.
 -   På fliken **Överföring av artikelbeskrivning** kan du överföra artikelbeskrivningen från inköpsrekvisitionen, när den har hämtats från en anbudsförfrågan.
--   På fliken **Pristolerans** kan du definiera pristoleransreglerna som används för att dirigera tillbaka de godkända inköpsrekvisitionerna genom granskningsprocessen, när priset på en artikel i en intern katalog ökar. Ange maxbeloppet som nettobeloppet i en radartikel i en inköpsrekvisition kan öka, mellan den tidpunkt då inköpsrekvisitionen godkänns och tid när inköpsordern skapas. Nettobeloppet beräknas med följande formel: (\[kvantitet × (pris – radrabatt) / prisenhet\] + Inköpstillägg) × (100-rabatt %) / 100 inköpsrekvisitionsrader som överstiger pristoleransen som du anger lagras för manuell behandling. Reglerna som du konfigurerar på fliken **Bearbetningsfel** bestämmer hur inköpsrekvisitionsraderna bearbetas.
+-   På fliken **Pristolerans** kan du definiera pristoleransreglerna som används för att dirigera tillbaka de godkända inköpsrekvisitionerna genom granskningsprocessen, när priset på en artikel i en intern katalog ökar. Ange maxbeloppet som nettobeloppet i en radartikel i en inköpsrekvisition kan öka, mellan den tidpunkt då inköpsrekvisitionen godkänns och tid när inköpsordern skapas. Nettobeloppet beräknas genom att använda följande formel: (\[Kvantitet × (enhetspris – rabatt) ÷ prisenhet\] + inköpstillägg) × (100 – rabatt i procent) ÷ 100 Inköpsrekvisitionsrader som överstiger pristoleransen som du anger hålls för manuell hantering. Reglerna som du konfigurerar på fliken **Bearbetningsfel** bestämmer hur inköpsrekvisitionsraderna bearbetas.
 -   På fliken **Bearbetningsfel** kan du konfigurera den bearbetningsregeln som tillämpas på en inköpsrekvisition, om den inte klarar validering under skapandet av inköpsordern, på grund av ett leverantörfel eller ett pristoleransfel. Välj ett av följande alternativ:
     -   **Ingen åtgärd** – Inköpsrekvisitionraderna återstår på sidan **Bokför godkända inköpsrekvisitioner för leverans**. Inköpsrekvisitionsradernas status är fortsatt **Godkänd**. Du måste lösas fel innan en inköpsorder kan skapas för rader i inköpsrekvisitionen.
     -   **Annullera inköpsrekvisitionsraden** – Inköpsrekvisitionsraderna annulleras. Beställaren kan skapa en ny inköpsrekvisition för annullerade raderna, om han/hon ändå vill begära radartiklarna.
@@ -141,6 +144,8 @@ Inköp order skapas och efterfrågan konsolideringsregeln definierar policyregle
     -   **Tillåt inte efterfråganskonsolidering** – Inga godkända inköpsrekvisitionsrader är valbara för efterfråganskonsolidering. Det här alternativet är markerat som standard och gäller endast för inköpsrekvisitionsrader som måste bearbetas manuellt för inköpsorderskapelse.
     -   **Tillåt alltid efterfråganskonsolidering** – Alla godkända inköpsrekvisitionsrader är valbara för efterfråganskonsolidering. **Obs!** Om du väljer alternativet **Tillåt alltid efterfråganskonsolidering** på fliken **Efterfråganskonsolidering** men du väljer alternativet **Automatiskt skapande av inköpsorder** på fliken **Manuellt skapande av inköpsorder** kommer alla inköpsrekvisitioner att hållas för manuell bearbetning.
     -   **Tillåt efterfråganskonsolidering under dessa villkor** – Definiera kriterierna som avgör om godkända inköpsrekvisitionsrader är valbara för efterfråganskonsolidering. För varje typ av inköpsrekvisitionsraden kan du ange kriterierna efter anskaffningkategori och leverantör. Om du väljer **Tillåt efterfråganskonsolidering under dessa villkor** kan du ange kriterierna efter anskaffningskategori och leverantör, För varje typ av inköpsrekvisitionsrad. När du väljer en anskaffningkategori markeras även alla underkategorier för anskaffningkategorin. Om du väljer alternativet **Alla** för en viss radtyp, är alla inköpsrekvisitionsrader för den radtyp valbara för begärankonsolidering.
+
+
 
 
 

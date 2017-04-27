@@ -1,6 +1,6 @@
 ---
-title: "Samarbeta med leverantörer genom att använda leverantörsportal"
-description: "Denna artikel beskriver hur inköpsagenter kan använda leverantörsportalen för samarbete med externa leverantörer under bekräftelseprocessen för inköpsorder. Denna information gäller bara för februari 2016 &amp;maj 2016 versioner av Dynamics AX."
+title: "Samarbeta med leverantörer med hjälp av leverantörsportalen"
+description: "Denna artikel beskriver hur inköpsagenter kan använda leverantörsportalen för samarbete med externa leverantörer under bekräftelseprocessen för inköpsorder. Denna information gäller endast Dynamics AX-versionerna från februari 2016 &amp; maj 2016."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,11 +25,14 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="collaborate-with-vendors-by-using-the-vendor-portal"></a>Samarbeta med leverantörer genom att använda leverantörsportal
+# <a name="collaborate-with-vendors-by-using-the-vendor-portal"></a>Samarbeta med leverantörer med hjälp av leverantörsportalen
 
-Denna artikel beskriver hur inköpsagenter kan använda leverantörsportalen för samarbete med externa leverantörer under bekräftelseprocessen för inköpsorder. Denna information gäller bara för februari 2016 &amp;maj 2016 versioner av Dynamics AX.
+[!include[banner](../includes/banner.md)]
 
-Informationen i det här avsnittet gäller bara Dynamics AX-versionerna från februari 2016 och maj 2016. Funktionen leverantör portal har ersatts med utökade leverantör samarbetsfunktioner i Dynamics 365 för operationer version 1611. Mer information om den nya leverantören samarbetsfunktioner finns i [med hjälp av samarbete med leverantören för att arbeta med externa leverantörer](vendor-collaboration-work-external-vendors.md).  
+
+Denna artikel beskriver hur inköpsagenter kan använda leverantörsportalen för samarbete med externa leverantörer under bekräftelseprocessen för inköpsorder. Denna information gäller endast Dynamics AX-versionerna från februari 2016 &amp; maj 2016.
+
+Informationen i det här avsnittet gäller bara Dynamics AX-versionerna från februari 2016 och maj 2016. Funktionen för leverantörsportal har ersatts med utökade funktioner för leverantörsamarbeten i Dynamics 365 for Operations, version 1611. För mer information om det nya leverantörssamarbetet, se [Använda leverantörssamarbeten för att arbeta med externa leverantörer](vendor-collaboration-work-external-vendors.md).  
 
 Leverantörsportalen vänder sig till leverantörer som inte har elektroniskt datautbyte (EDI) med Microsoft Dynamics AX för utbyte av inköpsorderinformation (IO). Portalen gör att inköpsagenter kan skicka en inköpsorder till leverantören och sedan få ett bekräftat eller avvisat svar direkt i Dynamics AX.  
 
@@ -66,9 +69,9 @@ Tabellen nedan visar ett exempel på förändringar i status och version som en 
 | Du skickar den nya versionen av IO:n till leverantörsportalen. | En version registreras på leverantörsportalen och statusen ändras till **I extern granskning**. |
 | Leverantören godkänner den nya versionen av IO:n.           | Tillståndet ändras till **Bekräftad**.                                                                |
 
-Klicka för att visa versioner av Inköpsordern som har skickats till leverantören och i leverantörens svar **journaler**&gt;**begäranden bekräftelse** från Inköpsordern.  
+För att se de versioner av IO som har skickats till leverantören (och leverantörens svar), klicka på **Journaler** &gt; **Bekräftelsebegäran** i IO.  
 
-Order som skickats till leverantören för en reaktion och har statusen **I extern granskning** visas i antingen listan **Inköpsorder har skickats till leverantörsportalen, väntar på svar** eller listan **Inköpsorder som har skickats till leverantörsportalen, åtgärd krävs för svaret**. När du ändrar en order som skickats till leverantören så att statusen ändras tillbaka till **Godkänd** visas ordern inte längre i dessa listor. Klicka för att se om det tidigare har ett svar till ordern från leverantören **journaler**&gt;**begäranden bekräftelse**.  
+Order som skickats till leverantören för en reaktion och har statusen **I extern granskning** visas i antingen listan **Inköpsorder har skickats till leverantörsportalen, väntar på svar** eller listan **Inköpsorder som har skickats till leverantörsportalen, åtgärd krävs för svaret**. När du ändrar en order som skickats till leverantören så att statusen ändras tillbaka till **Godkänd** visas ordern inte längre i dessa listor. Om du vill se om det finns tidigare svar från leverantören angående ordern, klicka på **Journaler** &gt; **Bekräftelsebegäran**.  
 
 Leverantörerna måste inte bekräfta IO:n på leverantörsportalen. De kan också skicka ett e-postmeddelande eller kommunicera deras acceptans av en IO via andra kanaler. Du kan sedan bekräfta ordern manuellt i Dynamics AX. I det här fallet får du en varning om att ordern bekräftas, även om det inte finns något svar från leverantören. IO:n visas sedan i bekräftelsehistoriken i leverantörsportalen som en öppen bekräftad order som inte har några svar. Leverantören har sedan inte längre möjlighet att bekräfta eller avvisa inköpsordern.  
 
@@ -97,5 +100,7 @@ Tabellen nedan visar ett exempel på förändringar i statusen och versionen som
 [Konfigurering av säkerhet för leverantörssamarbetesanvändare](configure-security-vendor-portal-users.md)
 
 [Faktureringsarbetsyta för leverantörssamarbeten](/dynamics365/operations/financials/accounts-payable/vendor-portal-invoicing-workspace)
+
+
 
 

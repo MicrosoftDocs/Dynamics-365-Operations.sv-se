@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="three-way-matching-policies"></a>Trevägsmatchningspolicyer
 
+[!include[banner](../includes/banner.md)]
+
+
 Den här artikeln innehåller exempel på trevägsmatchning.
 
 <a name="example-three-way-matching-for-items"></a>Exempel: trevägsmatchning för artiklar
@@ -62,7 +65,7 @@ Fakturamatchningpolicyerna i det här exemplet hjälper människor i följande r
 1.  Sammy, en anställd på inleveransavdelninen på Fabrikam, tar emot den totala kvantiteten av datorer som levereras från Contoso. Han anger en kvantitet på 5 på en produktinleverans. Eftersom inköpsordern har inlevererats helt, ändras statusen för inköpsordern till Inlevererad.
 2.  April, leverantörsreskontrakoordinatorn på Fabrikam, matar in och verifierar fakturan som skickas in av Contoso. Hon verifierar följande information:
     -   För artiklar, som kräver trevägsmatchning, matchar kvantiteten på fakturaraden den kvantitet som har tagits emot. Den mottagna kvantiteten anges på produktinleveransen som är matchad till fakturan.
-    -   För artiklar som kräver matchning dubbelriktat eller trevägs är priserna på fakturaraden toleranserna som definieras i Microsoft Dynamics 365 för Operations.This innehåller följande typer av pris:
+    -   För artiklar som kräver tvåvägs- eller trevägsmatchning ligger priserna på fakturaraden inom toleranserna som definieras i Microsoft Dynamics 365 for Operations. Detta omfattar följande typer av prismatchning:
         -   Matchning av nettopris – Nettopriset per enhet på fakturaraden matchar nettopriset per enhet på inköpsorderraden, inom toleransprocenten. I det här exemplet är nettoenhetspristoleransen +8 %.
         -   Matchning av prissummor – Nettobelopp per enhet på fakturaraden matchar nettobelopp per enhet på inköpsorderraden, inom toleransprocenten, belopp eller procentsats och belopp.  I det här exemplet är toleransen för matchning av prissummor +15 %.
 
@@ -75,7 +78,7 @@ Pappersfakturan från Contoso innehåller följande information.
 | Skatt                         |          |            | 0,00       |
 | Totalt                       |          |            | 44 500,00  |
 
-I Microsoft Dynamics 365 för innehåller fakturaraden följande information.
+I Microsoft Dynamics 365 for Operations omfattar fakturaraden följande information.
 
 | Artikelnummer                 | Kvantitet | Enhetspris | Nettobelopp för rad | Matchningspolicy    | Matchning av kvantitet för produktinleverans | Prismatchning | Prissummematchning |
 |-----------------------------|----------|------------|-----------------|--------------------|--------------------------------|-------------|-------------------|
@@ -111,7 +114,7 @@ Fakturamatchningpolicyerna i det här exemplet hjälper människor i följande r
 1.  Artiklarna har levererats. Sammy, en anställd på inleveransavdelningen på Fabrikans malysiska avdelning, blir störd och bokför inte produktinleveransen på en gång.
 2.  April, leverantörsreskontrakoordinatorn på Fabrikam, matar in och verifierar fakturan som skickas in av Contoso. Hon verifierar följande information:
     -   För artiklar, som kräver trevägsmatchning, matchar kvantiteten på fakturaraden den kvantitet som har tagits emot. Den mottagna kvantiteten anges på produktinleveransen som är matchad till fakturan.
-    -   För artiklar som kräver matchning dubbelriktat eller trevägs är priserna på fakturaraden toleranserna som definieras i Microsoft Dynamics 365 för operationer. Följande typer av priset omfattar
+    -   För artiklar som kräver tvåvägs- eller trevägsmatchning ligger priserna på fakturaraden inom toleranserna som definieras i Microsoft Dynamics 365 for Operations. Detta omfattar följande typer av prismatchning:
         -   Matchning av nettopris – Nettopriset per enhet på fakturaraden matchar nettopriset per enhet på inköpsorderraden, inom toleransprocenten. I det här exemplet är nettoenhetspristoleransen +2 %.
         -   Matchning av prissummor – Nettobelopp per enhet på fakturaraden matchar nettobelopp per enhet på inköpsorderraden, inom toleransprocenten, belopp eller procentsats och belopp.  I det här exemplet är toleransen för matchning av prissummor +10 %.
 
@@ -124,7 +127,7 @@ Pappersfakturan från Contoso innehåller följande information.
 | USB-enhet             | 200      | 10,05      | 2 010,00   |
 | Total faktura         |          |            | 7 092,00   |
 
-I Microsoft Dynamics 365 för innehåller fakturaraden följande information.
+I Microsoft Dynamics 365 for Operations omfattar fakturaraden följande information.
 
 | Artikelnummer           | Kvantitet | Enhetspris | Nettobelopp för rad | Matchningspolicy    | Matchning av kvantitet för produktinleverans | Prismatchning | Prissummematchning |
 |-----------------------|----------|------------|-----------------|--------------------|--------------------------------|-------------|-------------------|
@@ -140,6 +143,8 @@ Observera följande artiklar:
 Om godkännande krävs för att fakturorna ska bokföras med fakturamatchningsavvikelser, måste Godkänn bokföring med växling av matchningsdiskrepans på sidan Fakturamatchningsdetaljer väljas innan fakturan kan bokföras med prismatchningsfel och kvantitetmatchningsfel. Om godkännande inte krävs kan fakturabearbetning fortsätta om det inte finns några andra bokföringsfel.
 
 
-Mer information finns i [konton för fakturamatchning i leverantörsreskontra](accounts-payable-invoice-matching.md).
+Mer information finns i [Fakturamatchning för leverantörsreskontra](accounts-payable-invoice-matching.md).
+
+
 
 

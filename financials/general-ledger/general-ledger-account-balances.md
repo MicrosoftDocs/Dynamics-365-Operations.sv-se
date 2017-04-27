@@ -1,6 +1,6 @@
 ---
 title: Kontosaldon i redovisningen
-description: "Den här artikeln beskrivs två sätt att visa konto redovisningssaldon - listsidan för råbalans och ekonomisk rapportering. Avsnittet beskriver även upp hur du uppdaterar dimensionsuppsättningsaldon."
+description: "Det här avsnittet beskriver två sätt att visa redovisningkontosaldon - sidan Råbalanslista och ekonomiska rapporter. Avsnittet beskriver även upp hur du uppdaterar dimensionsuppsättningsaldon."
 author: RobinARH
 manager: AnnBe
 ms.date: 04/04/2017
@@ -28,7 +28,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="general-ledger-account-balances"></a>Kontosaldon i redovisningen
 
-Den här artikeln beskrivs två sätt att visa konto redovisningssaldon - listsidan för råbalans och ekonomisk rapportering. Avsnittet beskriver även upp hur du uppdaterar dimensionsuppsättningsaldon.
+[!include[banner](../includes/banner.md)]
+
+
+Det här avsnittet beskriver två sätt att visa redovisningkontosaldon - sidan Råbalanslista och ekonomiska rapporter. Avsnittet beskriver även upp hur du uppdaterar dimensionsuppsättningsaldon.
 
 Det finns en mängd olika sätt som användarna kan visa saldon på i redovisningen. Några av de vanligaste metoderna är:
 
@@ -46,6 +49,8 @@ När användarna ändrar parametrarna uppdateras saldona. Användaren kan också
 
 Användare kan söka djupare i saldona för att visa transaktionerna som utgör saldot.    
 
-Mer information finns i [visa ekonomirapporter](view-financial-reports.md).
+Mer information finns i [Visa ekonomiska rapporter](view-financial-reports.md).
+
+
 
 

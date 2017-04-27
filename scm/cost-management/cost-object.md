@@ -29,6 +29,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="cost-objects"></a>Kostnadsobjekt
 
+[!include[banner](../includes/banner.md)]
+
+
 Det här avsnittet innehåller information om kostnadsobjekt och en beskrivning av hur kostnader och kvantiteter ackumuleras. Ett kostnadsredovisning är ett objekt som kostnader och kvantiteter ackumuleras för. En kostnadsobjektenhet kan vara antingen en produkt eller produktvarianter såsom varianter för stil och färg.  
 
 <a name="cost-objects"></a>Kostnadsobjekt
@@ -65,19 +68,21 @@ Följande tabell visar vad som är ett kostnadsobjekt och vad som är ett lagero
     -   Bokförd kvantitet
 -   Fältet **Genomsnittlig enhetskostnad** är ett beräknat fält. Värdet beräknas genom att dela värdet **Värde** genom värdet **Kvantitet**.
 
-**Anmärkning:** de ** inkludera fysiskt värde ** parametern påverkar inte föregående beräkningarna.
+**Obs!** Parametern **Inkludera fysiskt värde **påverkar inte de tidigare beräkningarna.
 
 <a name="see-also"></a>Se även
 --------
 
-[Product dimension group](https://technet.microsoft.com/en-us/library/aa499382.aspx)
+[Produktdimensionsgrupp](https://technet.microsoft.com/en-us/library/aa499382.aspx)
 
-[Storage dimension group](https://technet.microsoft.com/en-us/library/hh209317.aspx)
+[Lagringsdimensionsgrupp](https://technet.microsoft.com/en-us/library/hh209317.aspx)
 
-[Tracking dimension group](https://technet.microsoft.com/en-us/library/hh209465.aspx)
+[Spårningsdimensionsgrupp](https://technet.microsoft.com/en-us/library/hh209465.aspx)
 
-[Vad är nytt eller har ändrats i Microsoft Dynamics AX](/dynamics365/operations/dev-itpro/get-started/whats-new-changed)
+[Nyheter och ändringar i Microsoft Dynamics AX](/dynamics365/operations/dev-itpro/get-started/whats-new-changed)
 
-[Cost entries](cost-entries.md)
+[Kostnadsposter](cost-entries.md)
+
+
 
 

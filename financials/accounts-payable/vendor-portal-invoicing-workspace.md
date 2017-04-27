@@ -43,11 +43,11 @@ Faktureringsarbetsyta för leverantörssamarbeten
 Om du klickar på en ruta öppnas en filtrerad vy av listsidan**Fakturor**.
 ### <a name="tabular-lists"></a>Tabellistor
 
-I avsnittet **Tabellistor **är status för faktureringen uppdelad på liknande sätt som sammanfattningsrutorna: Utkast och Skickad, ej godkända listor. En faktura kan skickas till arbetsflödet eller tas bort när den befinner sig läget Utkast. Tabellformat sista listan är ett alternativ för att söka efter fakturor. Du kan filtrera när du söker så att snabbare sökningar.
+I avsnittet **Tabellistor **är status för faktureringen uppdelad på liknande sätt som sammanfattningsrutorna: Utkast och Skickad, ej godkända listor. En faktura kan skickas till arbetsflödet eller tas bort när den befinner sig läget Utkast. Den sista tabellistan är ett alternativ för att hitta fakturor. Du kan filtrera medan du söker för att tillåta snabbare sökningar.
 Alla listsidor med leverantörsfakturor
 -----------------------------
 
-Du kan visa alla bokförda och ej bokförda leverantörsfakturor i den **samarbete leverantörsfakturor** listsida. Du kan använda den här listsidan för att visa betalningsstatus för fakturor. Betalningsstatus omfattar Ej bokförd, Obetald, Delvis betald och Helt betald.
+Du kan visa alla bokförda och ej bokförda leverantörsfakturor på listsidan **Leverantörssamarbetesfakturor**. Du kan använda den här listsidan för att visa betalningsstatus för fakturor. Betalningsstatus omfattar Ej bokförd, Obetald, Delvis betald och Helt betald.
 Skapa en ny leverantörsfaktura från en inköpsorder
 --------------------------------------------
 
@@ -55,6 +55,6 @@ Du kan skapa en ny leverantörsfaktura, genom att välja åtgärden **Ny** på *
 
 
 
-Mer information finns i [samarbeta med leverantörer genom att använda leverantörsportal](/dynamics365/operations/scm/procurement/collaborate-vendors-vendor-portal)
+Mer information finns i [samarbeta med leverantörer genom att använda leverantörsportalen](/dynamics365/operations/scm/procurement/collaborate-vendors-vendor-portal)
 
 

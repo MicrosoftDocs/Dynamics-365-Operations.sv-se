@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="common-sources-of-production-variances"></a>Gemensamma källor till produktionsavvikelser
 
+[!include[banner](../includes/banner.md)]
+
+
 Det här avsnittet beskriver olika typiska källor till varje typ av produktionsavvikelse. 
 
 Nedan följer några typiska källor till en avvikelse i **partistorlek**:
@@ -57,6 +60,8 @@ Nedan följer några typiska källor till en avvikelse i **produktionsersättnin
 -   Manuellt tillägg av en åtgärd i produktionsflödet och rapportering av den åtgärden som förbrukad.
 -   Vid skapandet av en produktionsorder väljer du en strukturlisteversionen som avviker från den som används i standardkostnadsberäkningen.
 -   Vid skapandet av produktionsordern väljer du en flödesversionen som avviker från den flödesversion som används i standardkostnadsberäkningen.
+
+
 
 
 

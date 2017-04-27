@@ -28,12 +28,15 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="configure-accounts-receivables-and-credit-and-collections"></a>Konfigurera Kundreskontra och Kredit och inkasso
 
+[!include[banner](../includes/banner.md)]
+
+
 Konfigurera Kundreskontra och Kredit och inkasso för att följa fakturor och inkommande betalningar från kunder.
 
 Du kan ställa in kundgrupper, kunder, bokföringsprofiler, olika betalningsalternativ, räntefakturor, kravbrev, provisioner, parametrar angående kunder, avgifter, leveranser och destinationer, växlar och andra typer av kundreskontra- och kredit och inkassoinformation.
 Följande tabell visar sidorna som har stöd för konfiguration och underhåll av kundreskontra och kredit och inkasso. Tabellposterna är ordnade efter uppgift och sedan i bokstavsordning efter sidnamn.
 
-| ![Observera](https://i-technet.sec.s-msft.com/areas/global/content/clear.gif "notering")**Obs!**          |
+| ![Obs!](https://i-technet.sec.s-msft.com/areas/global/content/clear.gif "Obs!")**Obs!**          |
 |--------------------------------------------------------------------------------------------------|
 | Vissa sidor i den följande tabellen kräver information eller parameterinställningar för att hitta dem. |
 
@@ -98,14 +101,16 @@ Följande tabell visar sidorna som har stöd för konfiguration och underhåll a
 |                                                      | Kundkontakter och e-postinställningar | Ställ in kontakter för kunder med deras e-postadresser. Dessa adresser visas på sidan Inkasso och används för att skapa e-postmeddelanden till kunder. Ställ in också in en standardkontakt för Inkasso för varje kund som visas först på sidan Inkasso. |
 |                                                      | Kundpooler                       | Ställa in kundpooler, som är frågor som definierar en grupp med kundkonton som kan visas och hanteras för samlingar eller åldersfördelningsprocesser.                                                                                                                           |
 |                                                      | Bokföringsprofil för kund             | Ställ in profiler som styr bokföringen av kundtransaktionerna i redovisningen.                                                                                                                                                                                      |
-|                                                      | Kundorsakskoder                | Ställ in orsakskoder för kunden.                                                                                                                                                                                                                                                    |
-|                                                      | Bortskrivning kundorsakskoder      | Ställa in kund bortskrivning orsakskoder som ska användas för avskrivningstransaktioner.                                                                                                                                                                                             |
+|                                                      | Kundorsakskoder                | Skapa orsakskoder för kund.                                                                                                                                                                                                                                                    |
+|                                                      | Orsakskoder för kundavskrivning      | Ställ in kundavskrivningskoder som ska användas för avskrivningstransaktioner.                                                                                                                                                                                             |
 |                                                      | Formulärinställningar                           | Definiera formulärnoteringsparametrar för offerter, bekräftelser, plocklistor, följesedlar, kundfakturor, fritextfakturor och räntefakturor.                                                                                                                               |
 |                                                      | Intresse                             | Ställ in och hantera räntekoder.                                                                                                                                                                                                                                                 |
-|                                                      | NSF-information.                     | Ställ in information om NSF för bankkontot som ska användas när en betalning markeras som en NSF-transaktion på sidan Inkasso.                                                                                                                                              |
+|                                                      | Information om NSF.                     | Ställ in information om NSF för bankkontot som ska användas när en betalning markeras som en NSF-transaktion på sidan Inkasso.                                                                                                                                              |
 |                                                      | Information om säljare              | Ställ in e-postadress för säljare. Dessa adresser visas på sidan Inkasso och används för att skicka e-post till en säljare från den sidan.                                                                                                                |
 
  
-Mer information finns i [kredit och inkasso i kundreskontra](collections-credit-accounts-receivable.md).
+Mer information finns i [Kredit och inkasso i kundreskontra](collections-credit-accounts-receivable.md).
+
+
 
 

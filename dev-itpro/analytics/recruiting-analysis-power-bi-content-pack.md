@@ -1,6 +1,6 @@
 ---
-title: "Rekrytering Power BI-innehåll"
-description: "Det här avsnittet beskrivs Dynamics 365 för verksamhet – rekrytering Power BI-innehåll. Det förklaras hur du öppnar rapporter som ingår i paketet innehåll och ger information om personer som användes för att skapa innehåll pack och datamodellen."
+title: "Power BI-innehåll för rekrytering"
+description: "Det här avsnittet beskriver Dynamics 365 for Operations - Power BI-innehåll för rekrytering Det förklarar hur du kommer åt rapporterna som är inkluderade i innehållspaketet, samt ger dig information om den datamodell och de enheter som användes för att skapa innehållspaketet."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,49 +24,52 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="recruiting-power-bi-content"></a>Rekrytering Power BI-innehåll
+# <a name="recruiting-power-bi-content"></a>Power BI-innehåll för rekrytering
 
-Det här avsnittet beskrivs Dynamics 365 för verksamhet – rekrytering Power BI-innehåll. Det förklaras hur du öppnar rapporter som ingår i paketet innehåll och ger information om personer som användes för att skapa innehåll pack och datamodellen.
+[!include[banner](../includes/banner.md)]
 
-<a name="accessing-the-content-pack"></a>Åtkomst till content pack
+
+Det här avsnittet beskriver Dynamics 365 for Operations - Power BI-innehåll för rekrytering Det förklarar hur du kommer åt rapporterna som är inkluderade i innehållspaketet, samt ger dig information om den datamodell och de enheter som användes för att skapa innehållspaketet.
+
+<a name="accessing-the-content-pack"></a>Åtkomst till innehållspaketet
 --------------------------
 
-Du hittar rekrytering innehållet i biblioteket delade resurser i Microsoft Dynamics Lifecycle Services (LCS). Mer information om hur du hämtar innehåll pack och ansluta den till din Microsoft Dynamics 365 för operationer finns [Power BI innehåll från Microsoft och partner LCS](power-bi-content-microsoft-partners.md).
+Du kan hitta innehållspaketet för rekrytering i biblioteket för gemensamma tillgångar i Microsoft Dynamics Lifecycle Services (LCS). Mer information om hur du hämtar innehållspaketet och kopplar det till dina Microsoft Dynamics 365 for Operations-data, se [Power BI-innehåll i LCS från Microsoft och dina partner](power-bi-content-microsoft-partners.md).
 
-## <a name="reports-that-are-included-in-the-content-pack"></a>Rapporter som ingår i paketet innehåll
-När du anslutit innehåll pack för operationer i Dynamics 365, visa rapporterna organisationens data. Om du aldrig har använt Microsoft Power BI innan du mer information om det i den [Power BI interaktiv utbildning sidan](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData). Rapporter som ingår i paketet innehåll har både diagram och tabeller med ytterligare information. Följande register beskriver rapporterna.
+## <a name="reports-that-are-included-in-the-content-pack"></a>Rapporter som ingår i innehållspaketet
+När du har anslutit innehållspaketet till dina Dynamics 365 for Operations-data kommer rapporterna att visa din organisations data. Om du aldrig har använt Microsoft Power BI tidigare kan du lära dig mer om det på sidan [Guidad utbildning för Power BI](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData). Rapporter som ingår i innehållspaketet har både diagram och tabeller med ytterligare information. Följande register beskriver rapporterna.
 
 | Rapport                       | Innehåll                                                                                               |
 |------------------------------|--------------------------------------------------------------------------------------------------------|
-| Analys av sökande           | Sökande efter jobb, sökande källor, sökande efter lagerställe och antalet sökande           |
-| Sökandestatus             | Sökande efter typ och status och Sökandestatus                                                    |
-| Sökande befolkning       | Sökande efter ålder- och könsvärden och sökande efter utbildningsnivå och status                             |
-| Rekrytering-analys          | NET hyra kvoten, genomsnittligt antal dagar för att anställa andelen dålig hires och kostnader för rekrytering                    |
-| Analys av projekt för rekrytering | Antal rekryteringsprojekt inledningsfraser per rekryteringsprojekt och sökande per rekryteringsprojekt |
+| Analys av sökande           | Sökande efter jobb, sökandekällor, sökande efter plats och antal sökande           |
+| Sökandestatus             | Sökande efter typ och status och sökandestatus                                                    |
+| Demografi för sökande       | Sökande efter ålder och kön, samt sökande efter utbildningsnivå och status                             |
+| Rekryteringsanalys          | Nettoanställningskvot, genomsnittligt antal dagar för att anställa, andelen dåliga anställningar och kostnader för rekrytering                    |
+| Rekryteringsprojekt – analys | Antal rekryteringsprojekt, lediga jobb per rekryteringsprojekt och sökande per rekryteringsprojekt |
 
-Du kan filtrera de diagram och en sammanfattning av dessa rapporter och Fäst diagram och rubriker på instrumentpanelen. Mer information om hur du filtret och PIN-kod i Power BI finns [skapa och konfigurera en instrumentpanel](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
+Diagrammen och rutorna i samtliga dessa rapporter kan filtreras och fästas på instrumentpanelen. Mer information om hur du filtrerar och fäster i Power BI finns i [Skapa och konfigurera en intrumentpanel](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## <a name="understanding-the-data-model-and-entities"></a>Förstå datamodellen och enheterna
-Dynamics 365 för operationer används för att fylla i rapporterna i rekrytering innehållet. Följande tabell visar enheterna att innehåll pack baserades på.
+Dynamics 365 for Operations-data används för att fylla i rapporter i innehållspaketet för rekrytering. Följande tabell visar enheterna som innehållspaketet baserades på.
 
 | Enhet                          | Innehåll                                                         | Relationer med andra entiteter                                                                                                                                                                                                                 |
 |---------------------------------|------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Rekrytering\_sökande           | Sökande, anställda sökande, net hyra kvoten och kostnader          | Rekrytering\_ApplicantName rekrytering\_Company rekrytering\_CalendarOffset Recuriting\_datum rekrytering\_GeographicLocation rekrytering\_befolkning rekrytering\_jobbet rekrytering\_Media rekrytering\_RecruitmentProject                                |
-| Rekrytering\_ApplicantName       | Sökande förnamn, efternamn och fullständigt namn                   | Rekrytering\_sökande rekrytering\_rekrytering av EmployedApplicant\_TerminatedApplicant                                                                                                                                                               |
-| Rekrytering\_CalendarOffset      | Förskjuter kalender till BITS-rapporter                                | Rekrytering\_sökande rekrytering\_rekrytering av EmployedApplicant\_TerminatedApplicant                                                                                                                                                               |
-| Rekrytering\_företag             | Filtrera rapporter efter företag                                   | Rekrytering\_sökande rekrytering\_rekrytering av EmployedApplicant\_TerminatedApplicant                                                                                                                                                               |
-| Rekrytering\_dag                | Dagar, veckor, månader och år                                   | Rekrytering\_sökande rekrytering\_rekrytering av EmployedApplicant\_TerminatedApplicant                                                                                                                                                               |
-| Rekrytering\_befolkning        | Datum för civilstånd, etniskt ursprung, kön och födelsedatum         | Rekrytering\_sökande rekrytering\_rekrytering av EmployedApplicant\_TerminatedApplicant                                                                                                                                                               |
-| Rekrytering\_EmployedApplicant   | Sökande, prestanda, startdatum och typ av sökande           | Rekrytering\_Company rekrytering\_CalendarOffset rekrytering\_datum rekrytering\_GeographicLocation rekrytering\_ApplicantName rekrytering\_anställning rekrytering\_prestanda rekrytering\_jobbet rekrytering\_Media rekrytering\_RecruitmentProject          |
-| Rekrytering\_anställning          | Startdatum, slutdatum och övergångsdatum                        | Rekrytering\_sökande rekrytering\_rekrytering av EmployedApplicant\_TerminatedApplicant                                                                                                                                                               |
-| Rekrytering\_GeographicLocation  | Stad, region, postnummer kod och region                 | Rekrytering\_sökande rekrytering\_rekrytering av EmployedApplicant\_TerminatedApplicant                                                                                                                                                               |
-| Rekrytering\_jobb                 | Funktionen, typ och rubrik                                        | Rekrytering\_sökande rekrytering\_rekrytering av EmployedApplicant\_TerminatedApplicant                                                                                                                                                               |
-| Rekrytering\_Media               | Källa för sökande                                             | Rekrytering\_sökande rekrytering\_rekrytering av EmployedApplicant\_TerminatedApplicant                                                                                                                                                               |
-| Rekrytering\_prestanda         | Klassificering, beskrivning och bedömningsmodellen                            | Rekrytering\_sökande rekrytering\_rekrytering av EmployedApplicant\_TerminatedApplicant                                                                                                                                                               |
-| Rekrytering\_RecruitmentProject  | Projektbeskrivning, projektstatus och öppningar                | Rekrytering\_sökande rekrytering\_rekrytering av EmployedApplicant\_TerminatedApplicant                                                                                                                                                               |
-| Rekrytering\_TerminatedApplicant | Avslutade sökande, orsak, prestanda och uppsägningsdatum | Rekrytering\_Company rekrytering\_CalendarOffset rekrytering\_datum rekrytering\_GeographicLocation rekrytering\_prestanda rekrytering\_befolkning rekrytering\_anställning rekrytering\_Media rekrytering\_rekrytering RecruitmentProject\_ApplicantName |
+| Rekrytering\_Sökande           | Sökande, anställda sökande, nettoanställningskvot och kostnader          | Recruiting\_ApplicantName Recruiting\_Company Recruiting\_CalendarOffset Recuriting\_Date Recruiting\_GeographicLocation Recruiting\_Demographics Recruiting\_Job Recruiting\_Media Recruiting\_RecruitmentProject                                |
+| Recruiting\_ApplicantName       | Sökandes förnamn, efternamn och fullständiga namn                   | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
+| Recruiting\_CalendarOffset      | Kalenderförskjutningar till uppdela rapporter                                | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
+| Recruiting\_Company             | Företag att filtrera rapporter efter                                   | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
+| Recruiting\_Date                | Dagar, veckor, månader och år.                                   | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
+| Recruiting\_Demographics        | Födelsedatum, kön, etniskt ursprung och civilstånd         | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
+| Recruiting\_EmployedApplicant   | Sökande, prestanda, startdatum och typ av sökande           | Recruiting\_Company Recruiting\_CalendarOffset Recruiting\_Date Recruiting\_GeographicLocation Recruiting\_ApplicantName Recruiting\_Employment Recruiting\_Performance Recruiting\_Job Recruiting\_Media Recruiting\_RecruitmentProject          |
+| Recruiting\_Employment          | Startdatum, slutdatum och övergångsdatum                        | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
+| Recruiting\_GeographicLocation  | Stad, region, postnummer och delstat eller region                 | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
+| Recruiting\_Job                 | Funktion, typ och rubrik                                        | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
+| Recruiting\_Media               | Sökandes källa                                             | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
+| Recruiting\_Performance         | Värdering, beskrivning och bedömningsmodellen                            | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
+| Recruiting\_RecruitmentProject  | Projektbeskrivning, projektstatus och lediga jobb                | Recruiting\_Applicant Recruiting\_EmployedApplicant Recruiting\_TerminatedApplicant                                                                                                                                                               |
+| Recruiting\_TerminatedApplicant | Uppsagda sökande, orsak, prestanda och uppsägningsdatum | Recruiting\_Company Recruiting\_CalendarOffset Recruiting\_Date Recruiting\_GeographicLocation Recruiting\_Performance Recruiting\_Demographics Recruiting\_Employment Recruiting\_Media Recruiting\_RecruitmentProject Recruiting\_ApplicantName |
 
-Dessa poster används för att skapa beräknade mått. Dessa beräknas sedan används för att beräkna prestationsindikatorer (KPI: er) och rapporter som används i det aktuella innehållet. Du kan hämta och ändra filen Recruiting.pbix från LCS om du vill inkludera ytterligare beräkningar på instrumentpanelen och rapporter. Detta är standard datamodellen som användes för att skapa innehåll pack. Du kan skapa en organisations innehållet och instrumentpanel som innehåller den information som du har lagt till när du har gjort ändringar.
+Dessa enheter används för att skapa beräknade mått. Beräknade åtgärder används sedan för att beräkna huvudindikatorerna för prestanda (KPI) samt de rapporter som används i innehållspaketet. Om du vill inkludera ytterligare beräkningar i rapporterna och instrumentpanelerna kan du ladda ned och ändra filen Recruiting.pbix från LCS. Filen är den standarddatamodell som använts för att skapa innehållspaketet. När du är klar med ändringarna kan du skapa ett innehållspaket för organisationen samt en instrumentpanel som innehåller den information som du har lagt till.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 Nedan följer några användbara länkar som är relaterade till enheter och till att skapa innehåll för Power BI:
@@ -75,6 +78,8 @@ Nedan följer några användbara länkar som är relaterade till enheter och til
 -   [Skapa innehållspaket för organisationer](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
 -   [Datamodeller med hjälp av Power BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
 -   [Lägga till Power BI-rutor till arbetsytor](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/07/06/pinning-power-bi-reports-to-dynamics-ax-client/)
+
+
 
 
 

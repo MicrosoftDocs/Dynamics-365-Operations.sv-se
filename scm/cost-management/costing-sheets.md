@@ -28,6 +28,9 @@ ms.lasthandoff: 03/29/2017
 
 # <a name="costing-sheets"></a>Kostnadsredovisningar
 
+[!include[banner](../includes/banner.md)]
+
+
 När du ställer in kostnadsredovisning har du två mål. För det första ska du definiera visningsformatet för information om kostnader för sålda varor för en tillverkad artikel eller tillverkningsorder. Den formaterade visningen kallas för kostnadsredovisning. För det andra ska du definiera grunden för hur indirekta kostnader beräknas. Inställningarna för kostnadsredovisningen bygger på kostnadsgruppsfunktionen för visningsinformation och på beräkningsformler för indirekta kostnader. De två målen med inställningarna för kostnadsredovisning beskrivs i den här artikeln. 
 
 En kostnadsredovisning är en formaterad visning av information om kostnaden för varor som är sålda för en tillverkad artikel eller tillverkningsorder. När du ställer in en kostnadsredovisning definierar du formatet för informationen och även basen för beräkning av indirekta kostnader. Inställningarna för kostnadsredovisningen bygger på kostnadsgruppsfunktionerna för visningsinformation och de formler som används för att beräkna indirekta kostnader. Här följer mer information om de två målen för inställningar för kostnadsredovisning:
@@ -43,6 +46,8 @@ Två spärrprinciper för en kostnadsversion bestämmer om väntande kostnader k
 När du har definierat kostnadsredovisningsformatet och beräkningar för indirekta kostnader måste du utföra ett separat steg för att validera och spara informationen. Kostnadsredovisningen innebär att informationen om kostnader för sålda varor visas på ett enhetligt sätt i hela företaget. 
 
 Kostnadsredovisningen visas på sidan **Beräkna artikelkostnad**. Kostnadsredovisningen kan visas för en tillverkad artikels beräknade kostnadspost på sidan **artikelpris** eller för en orderspecifik beräkningspost på sidan **Resultat från strukturlisteberäkningar**. Den kan också visas som en del av sidan **Prisberäkningen** för en produktionsorder.
+
+
 
 
 

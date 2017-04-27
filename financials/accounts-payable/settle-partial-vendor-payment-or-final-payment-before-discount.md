@@ -1,5 +1,5 @@
 ---
-title: "Kvitta en partiell leverantörsbetalning och slutbetalningen fullständigt före rabattdatumet"
+title: "Kvitta en leverantörsbetalning och hela slutbetalningen före rabattdatumet"
 description: "Det här avsnittet innehåller en genomgång av ett scenario där flera delbetalningar görs för en leverantörsfaktura i vilken en kassarabatt har utnyttjats."
 author: twheeloc
 manager: AnnBe
@@ -26,14 +26,17 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="settle-a-partial-vendor-payment-and-the-final-payment-in-full-before-the-discount-date"></a>Kvitta en partiell leverantörsbetalning och slutbetalningen fullständigt före rabattdatumet
+# <a name="settle-a-partial-vendor-payment-and-the-final-payment-in-full-before-the-discount-date"></a>Kvitta en leverantörsbetalning och hela slutbetalningen före rabattdatumet
+
+[!include[banner](../includes/banner.md)]
+
 
 Det här avsnittet innehåller en genomgång av ett scenario där flera delbetalningar görs för en leverantörsfaktura i vilken en kassarabatt har utnyttjats.
 
-Fabrikam köper varor från leverantör 3064. Leverantören kan Fabrikam en kassarabatt på 1 procent om fakturan är betald 14 dagar. Fakturor måste betalas inom 30 dagar. Leverantören ger också Fabrikam kassarabatter på delbetalningar. Kvittning parametrar finns i den **parametrar för leverantörsreskontra** sida. Den 25 juni registrerar April en faktura på 1 000,00 för leverantör 3064.
+Fabrikam köper varor från leverantör 3064. Leverantören ger Fabrikam en kassarabatt på 1 procent fakturan betalas inom 14 dagar. Fakturor måste betalas inom 30 dagar. Leverantören ger också Fabrikam kassarabatter på delbetalningar. Kvittningsparametrar finns på sidan **Parametrar för leverantörsreskontra**. Den 25 juni registrerar April en faktura på 1 000,00 för leverantör 3064.
 
 ## <a name="vendor-invoice-on-june-25"></a>Leverantörsfaktura den 25 juni
-Den 25 juni April registrerar och bokför en faktura för 1 000,00 för 3064 för leverantören. April kan visa den här transaktionen på sidan **Leverantörstransaktioner**.
+Den 25 juni registrerar och bokför April en faktura på 1 000,00 för leverantör 3064. April kan visa den här transaktionen på sidan **Leverantörstransaktioner**.
 
 | Verifikation   | Datum      | Faktura | Debetbelopp i transaktionsvaluta | Kreditbelopp i transaktionsvaluta | Saldo   | Valuta |
 |-----------|-----------|---------|--------------------------------------|---------------------------------------|-----------|----------|
@@ -63,7 +66,7 @@ April klickar på fliken **Kassarabatt** för att visa rabattbelopp.
 | 2015/07/25          | 0,00                 | 1 000,00                       |
 
 ## <a name="partial-payment-on-july-1-by-using-the-settle-transactions-page"></a>Delbetalning den 1 juli genom att använda sidan Kvitta transaktioner
-April kan skapa en betalningsjournal för den här betalningen, genom att öppna sidan **Betalningsjournal** i Leverantörsreskontra. Hon skapar en ny journal och anger en rad för leverantörens 3064. Hon öppnar den **kvitta transaktioner** sidan så att hon kan markera fakturan för kvittning. April markerar fakturan och ändrar värdet i fältet **Belopp att kvitta** till **-500,00**. Hon ser igen att värdet i fältet **Kassarabattbelopp** är **-10,00** för hela fakturan, och värdet i **Kassarabattbelopp att utnyttja** är **-5,05**. Därför kvittar April -505,05 av den här fakturan.
+April kan skapa en betalningsjournal för den här betalningen, genom att öppna sidan **Betalningsjournal** i Leverantörsreskontra. Hon skapar en ny journal och anger en rad för leverantören 3064. Hon öppnar sedan sidan **Kvitta transaktioner** så att hon kan välja den faktura som ska kvittas. April markerar fakturan och ändrar värdet i fältet **Belopp att kvitta** till **-500,00**. Hon ser igen att värdet i fältet **Kassarabattbelopp** är **-10,00** för hela fakturan, och värdet i **Kassarabattbelopp att utnyttja** är **-5,05**. Därför kvittar April -505,05 av den här fakturan.
 
 | Markera     | Använd kassarabatt | Verifikation   | Konto | Datum      | Förfallodatum  | Faktura | Belopp i transaktionsvalutan | Valuta | Belopp att kvitta |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
@@ -95,7 +98,7 @@ Information om rabatten visas längst ned på sidan **Kvitta öppna transaktione
 | Utnyttjad kassarabatt          | 0,00      |
 | Kassarabattbelopp att utnyttja | -5,00     |
 
-April stänger sidan **Kvitta transaktioner**. En betalningsrad för 495,00 skapas i journalen och sedan bokför April journalen. April kan granska leverantörstransaktionerna på de **leverantörstransaktioner** sida. Hon ser att fakturan har en balans mellan-500.00. Hon ser också en betalning på 495,00 och en kassarabatt på 5,00.
+April stänger sidan **Kvitta transaktioner**. En betalningsrad för 495,00 skapas i journalen och sedan bokför April journalen. April kan granska leverantörstransaktionerna på sidan **Leverantörstransaktioner**. Hon ser att fakturan har saldot -500,00. Hon ser också en betalning på 495,00 och en kassarabatt på 5,00.
 
 | Verifikation    | transaktionstyp | Datum      | Faktura | Debetbelopp i transaktionsvaluta | Kreditbelopp i transaktionsvaluta | Saldo | Valuta |
 |------------|------------------|-----------|---------|--------------------------------------|---------------------------------------|---------|----------|
@@ -136,6 +139,8 @@ April bokför betalningsjournalen och granskar leverantörstransaktioner på sid
 | RAB-10010 | Kassarabatt    | 2015/07/01  |         | 5,00                                 |                                       | 0,00    | USD      |
 | APP-10011  | Betalning          | 2015/07/08  |         | 495,00                               |                                       | 0,00    | USD      |
 | RAB-10011 | Kassarabatt    | 2015/07/08  |         | 5,00                                 |                                       | 0,00    | USD      |
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-title: "Registrera serienummer i försäljningsprocessen"
+title: "Registrera serienummer i en försäljningsprocess"
 description: "Den här artikeln beskriver hur du kan registrera serienummer på följesedlar eller fakturor under försäljningsprocessen. Den här funktionen är användbar om ett företag vill hämta in serienummer för service- och garantiändamål men inte måste underhålla serienummer i lager från inleverans till utleverans."
 author: YuyuScheller
 manager: AnnBe
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="register-serial-numbers-in-the-sales-process"></a>Registrera serienummer i försäljningsprocessen
+# <a name="register-serial-numbers-in-the-sales-process"></a>Registrera serienummer i en försäljningsprocess
+
+[!include[banner](../includes/banner.md)]
+
 
 Den här artikeln beskriver hur du kan registrera serienummer på följesedlar eller fakturor under försäljningsprocessen. Den här funktionen är användbar om ett företag vill hämta in serienummer för service- och garantiändamål men inte måste underhålla serienummer i lager från inleverans till utleverans.
 
@@ -65,7 +68,7 @@ Ja kan du köra en fråga på följesedeljournalraden, eller fakturajournalraden
 ## <a name="can-i-view-the-serialized-items-that-i-have-on-hand"></a>Kan jag visa de seriekopplade artiklar som jag har i lager?
 Nej, du kan inte visa de serialiserade artiklarna som du har i lager, eftersom serienummer inte registrerats för artiklar förrän artiklarna säljs.
 
-## <a name="can-i-register-serial-numbers-for-catchweight-items"></a>Kan jag registrera serienummer för artiklar i catchweight?
+## <a name="can-i-register-serial-numbers-for-catchweight-items"></a>Kan jag registrera serienummer för fångstviktartiklar?
 Nej, under en försäljningsprocess kan du inte registrera serienummer för fångstviktartiklar. Dessutom, om en produkt har ställts in som en fångstviktartikel, kan du inte tilldela produkten till en spårningsdimensionsgrupp som är inställd på att endast använda serienummer under försäljningsprocessen.
 Kan jag registrera serienummer i Kassa?
 ------------------------------------------------
@@ -76,6 +79,8 @@ Ja, kassan kommer att uppmana användaren att ange ett serienummer, där använd
 Den här funktionen är tillgänglig för alla roller som kan underhålla försäljningsföljesedlar och försäljningsfakturor. Följande behörigheter gör det möjligt för anställda att korrigera serienummer och registrera blanka poster för serienummer som inte kan läsas eller skannas:
 -   Underhåll korrigering av serienummer
 -   Underhåll registrering av oläsliga serienummer
+
+
 
 
 

@@ -1,5 +1,5 @@
 ---
-title: "Ta en kassarabatt utanför serviceavtalets period kassarabatt"
+title: "Ta en kassarabatt utanför kassarabattperioden"
 description: "Den här artikeln tillhandahåller två scenarier som visar hur en kassarabatt kan utnyttjas även om betalningen görs utanför kassarabattperioden."
 author: twheeloc
 manager: AnnBe
@@ -26,16 +26,19 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="take-a-cash-discount-outside-the-cash-discount-period"></a>Ta en kassarabatt utanför serviceavtalets period kassarabatt
+# <a name="take-a-cash-discount-outside-the-cash-discount-period"></a>Ta en kassarabatt utanför kassarabattperioden
+
+[!include[banner](../includes/banner.md)]
+
 
 Den här artikeln tillhandahåller två scenarier som visar hur en kassarabatt kan utnyttjas även om betalningen görs utanför kassarabattperioden.
 
-28 juni skapar April en faktura för 2,000.00 för 3052 för leverantören. Fakturan har en kassarabatt på 1 procent om fakturan är betald 14 dagar.
+Den 28 juni skapar April en faktura för 1 000,00 för leverantör 3052. Fakturan har en kassarabatt på 1 procent om fakturan är betald inom 14 dagar.
 
 ## <a name="use-cash-discount-option--always"></a>Alternativet Utnyttja kassarabatt = Alltid
 April skapar en betalning den 1 juli, vilket är efter rabattdatumet. April öppnar sidan **Kvitta transaktioner** för att visa transaktionerna som kan kvittas. 
 
-April markerar fakturan för betalning. Ingen kassarabatt utnyttjas, eftersom betalningen görs efter båda rabattperioder. Leverantören fått godkännande April ändå ta kassarabatten. Därför April ändras värdet i den **Använd kassarabatt** till **alltid**.
+April markerar fakturan för betalning. Ingen kassarabatt utnyttjas, eftersom betalningen görs efter båda rabattperioder. Leverantören har emellertid gett April godkännande att utnyttja kassarabatt ändå. Därför ändrar April värdet i fältet **Använd kassarabatt** till **Alltid**.
 
 | Markera     | Använd kassarabatt | Verifikation   | Konto | Kassarabattdatum | Förfallodatum  | Faktura | Belopp i transaktionsvalutan | Valuta | Belopp att kvitta |
 |----------|-------------------|-----------|---------|--------------------|-----------|---------|--------------------------------|----------|------------------|
@@ -85,6 +88,8 @@ Information om rabatten visas längst ned på sidan **Kvitta öppna transaktione
 | Använd kassarabatt            | Normal    |
 | Utnyttjad kassarabatt          | 0,00      |
 | Kassarabattbelopp att utnyttja | -5,05     |
+
+
 
 
 

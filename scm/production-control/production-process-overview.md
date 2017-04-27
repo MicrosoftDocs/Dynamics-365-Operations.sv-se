@@ -1,6 +1,6 @@
 ---
-title: "Produktionsöversikt process"
-description: "Den här artikeln innehåller en översikt över produktionsprocesserna. Den beskriver de olika stegen i tillverkningsorder och batchorder order tar utgående den finansiella perioden från kanban."
+title: "Översikt över produktionsprocessen"
+description: "Det här avsnittet innehåller en översikt över produktionsprocesserna. Den beskriver de olika stegen i produktionsorder, batchorder och kanbans, från orderns skapande till stängningen av den ekonomiska perioden."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,20 +27,23 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="production-process-overview"></a>Produktionsöversikt process
+# <a name="production-process-overview"></a>Översikt över produktionsprocessen
 
-Den här artikeln innehåller en översikt över produktionsprocesserna. Den beskriver de olika stegen i tillverkningsorder och batchorder order tar utgående den finansiella perioden från kanban. 
+[!include[banner](../includes/banner.md)]
+
+
+Det här avsnittet innehåller en översikt över produktionsprocesserna. Den beskriver de olika stegen i produktionsorder, batchorder och kanbans, från orderns skapande till stängningen av den ekonomiska perioden. 
 
 Produktionen av produkter, en process som ibland också kallas produktionslivscykeln, följer specifika steg som behövs för att slutföra tillverkningen av en artikel. Livscykeln börjar med genereringen av en produktionsorder, batchorder, eller kanban. Den avslutas med en slutförd, tillverkad artikel som antingen är klar för kunden eller för en annan fas i produktionen. Varje steg i livscykeln kräver olika typer av information för att processen ska kunna slutföras. När varje steg har slutförts visar produktionsordern, batchordern eller kanban en ändring i produktionsstatus. Andra typer av produkter kräver olika tillverkningsprocesser.  
 
-Den **produktionskontroll** modulen är kopplad till andra moduler, t ex **produktinformationshantering**, **lagerhantering**, **redovisning**, **lagerstyrning**, **projektredovisning**, och **Organisationsadministration**. Denna integration stödjer informationsflödet som krävs för att en artikel ska kunna färdigställas.  
+Modulen **Produktionskontroll** är kopplad till andra moduler, som t.ex. **Produktinformationshantering**, **Lagerhantering**, **Redovisning**, **Lagerstyrning**, **Projektredovisning**, och **Organisationsadministration**. Denna integration stödjer informationsflödet som krävs för att en artikel ska kunna färdigställas.  
 
-Produktionsprocessen påverkas vanligtvis av kostnadsredovisning och lagervärderingmetoderna som väljs för en viss produktionsprocessen. Dynamics 365 för operationer som stöder både den verkliga kostnaden (först in, först ut \[FIFO\], sist in, först ut \[LIFO\], glidande medelvärde, och periodiska viktat medelvärde) och metoderna för standardkostnad. Lean manufacturing implementeras baserat på kostnadskalkylering med automatisk lageravräkningprincip.  
+Produktionsprocessen påverkas vanligtvis av kostnadsredovisning och lagervärderingmetoderna som väljs för en viss produktionsprocessen. Dynamics 365 for Operations stöder både faktisk kostnad (först-in-först-ut \[FIFO\]; sist in, först ut \[LIFO\]; rörligt genomsnitt; periodisk och viktat medelvärde) och standardkostnadsmetoder. Lean manufacturing implementeras baserat på kostnadskalkylering med automatisk lageravräkningprincip.  
 
 Valet av de kostnadsmätningsmetoder anger även kraven för att rapportera om material- och resursförbrukning under produktionsprocessen. Normalt kräver faktiska kostnadsredovisningsmetoder exakt rapportering på jobbnivå, medan periodiska kostnadsredovisningmetoder tillåter mindre finmaskig rapportering av material- och resursförbrukning.
 
 ## <a name="mixed-mode-manufacturing"></a>Tillverkning med blandat läge
-Olika produkter och produktionstopologier kräver tillämpning av olika ordertyper. Dynamics 365 för operationer kan du använda olika ordertyperna i blandat läge. Med andra ord kan alla ordertyper ske under slutpunktsprocessen för produktionen av en färdig produkt.
+Olika produkter och produktionstopologier kräver tillämpning av olika ordertyper. Dynamics 365 for Operations kan använda olika ordertyper i ett blandat läge. Med andra ord kan alla ordertyper ske under slutpunktsprocessen för produktionen av en färdig produkt.
 
 -   **Produktionsorder** – Detta är den klassiska ordertypen som producerar en specifik produkt eller produktvariant i en given kvantitet på ett visst datum. Produktionsorder baseras på strukturlistor och flöden.
 -   **Batchorder** - Denna ordertyp används för processbranscher och diskreta processer där tillverkningskonverteringen baseras på en formel, eller där samprodukter och biprodukter kan vara slutprodukter, antingen utöver eller i stället för huvudprodukten. Batchordeer använder strukturlistor och flöden av typen **Formel**.
@@ -59,14 +62,14 @@ Om du vill välja den tillverkningsprincip som stämmer bäst för en viss produ
 Följande steg i tillverkningslivscykeln kan genereras för alla ordertyper av tillverkning som görs i blandat läge. Alla av dem representeras dock inte av en uttrycklig orderstatus.
 
 1.  **Skapad** – Du kan skapa en produktionsorder, batch order eller en kanban manuellt, eller så kan du konfigurera systemet för att generera dem baserat på olika efterfrågansignaler. Huvudplanering skapar produktionsorder, batchorder eller kanban, genom att bekräfta planerade order. Andra efterfrågansignaler är försäljningsorder eller peggad leveranssignaler från andra produktionsorder eller kanban. För kanbana med fasta kvantiteter skapas efterfrågansignaler när kanban registreras som tomma.
-2.  **Uppskattad** – Du kan göra uppskattningar för material- och resursförbrukning. Uppskattningen genererar lagertransaktioner för råmaterial som har statusvärdet **Har beställts**. Inleveranser för huvudsakliga produkter, samprodukter och biprodukter har genereras när produktionsorder eller batchorder uppskattas. Om Strukturlistan innehåller rader med den **Peggad leverans** typ, inköpsorder för material eller legotillverkningsoperationen services skapas och knuten till en produktionsorder eller batchorder. Artiklar eller order reserveras enligt produktionsorderns reservationstrategin och priset på de färdiga varorna beräknas baserat på parameterinställningarna.
+2.  **Uppskattad** – Du kan göra uppskattningar för material- och resursförbrukning. Uppskattningen genererar lagertransaktioner för råmaterial som har statusvärdet **Har beställts**. Inleveranser för huvudprodukter, samprodukter och biprodukter genereras när produktionsorder eller batchorder beräknas. Om strukturlistan innehåller rader av typen **Peggad leverans** genereras inköpsorder för material eller legotillverkningsoperationen och knyts till en produktionsorder eller batchorder. Artiklar eller order reserveras enligt produktionsorderns reservationstrategin och priset på de färdiga varorna beräknas baserat på parameterinställningarna.
 3.  **Tidsplan** - Du kan schemalägga produktion baserat på operationer, enskilda jobb eller båda.
     -   **Grovplanering** – Denna planeringsmetod ger en grov, långsiktig plan. Genom att använda den här metoden kan du tilldela start- och slutdatum till produktionsorder. Om produktionsorder kopplas till flödesoperationer kan du tilldela dem till grupper för kostnadsställen.
     -   **Finplanering** – Denna planeringsmetod ger en detaljerad plan. Varje operation delas upp i enskilda jobb med specifika datum, tider och tilldelade verksamhetsresurser. Om begränsad kapacitet används tilldelas jobb till verksamhetsresurser baserat på tillgänglighet. Du kan visa och ändra planen i ett Gantt-diagram.
     -   **Kanban-tidsplan** – Kanban-jobb planeras på det kanban-schematavla eller planeras automatiskt baserat på den automatiska planläggningskonfigurationen av kanban-reglerna.
 
 4.  **Frisläppt** – Du kan frisläppa produktionsordern eller batchordern, när tidsplanen är avslutad, och materialet är tillgängligt att plockas eller förberedas. Kontrollera materialtillgänglighet hjälper produktionslagerarbetsledaren att bedöma materialtillgänglighet för produktionsordern eller batchordern. Du kan även skriva ut produktionsorderdokument som plocklistor, jobbkort, flödeskort och flödesjobb. När produktionsordern frisläpps ändras statusen för ordern för att indikera att produktionen kan börja. När lagerstyrning används, frisläpper produktionsordern eller batchordern produktionsstrukturlistaraderna till lagerstyrning. Påfyllnad av lagerstället och lagerställearbete genereras enligt inställningarna för lagerstället.
-5.  **Beredda**/**plockad** – när alla material och resurser mellanlagras på produktionsstrukturraderna platsen produktion eller kanban-rader uppdateras till statusen **plockad**. Peggade leveransordrar och relaterat lagerställearbete är vanligtvis på den här fasen. De Kanban-kort eller jobbkort som krävs för att rapportera produktionsförloppet, ska tilldelas och skrivas ut.
+5.  **Förberedd**/**Plockad** – När alla material och resurser har mellanlagrats på produktionsplatsen, uppdateras produktionsstrukturlisteraderna eller kanbanraderna till statusen **Plockad**. Peggade leveransordrar och relaterat lagerställearbete är vanligtvis på den här fasen. De Kanban-kort eller jobbkort som krävs för att rapportera produktionsförloppet, ska tilldelas och skrivas ut.
 6.  **Startad** – När en produktionsorder, en batchorder eller en kanban har startats, kan du rapportera material- och resursförbrukning mot ordern. Systemet kan konfigureras för att automatiskt bokföra förbrukning av material och resurser som tilldelas ordern när den startas. Denna allokering kallas för föravräkning, framavräkning eller autoförbrukning. Du kan manuellt allokera material till produktionesorder eller batchorder genom att skapa ytterligare plocklistejournaler. Du kan också manuellt allokera arbete och andra flödekostnader till ordern. Om du använder grovplanering kan du allokera dessa kostnader genom att skapa en flödeskortjournal. Om du använder finplanering kan du allokera dessa kostnader genom att skapa en jobbkortsjournal. Produktionsorder eller batchorder kan startas i batchar av den senaste begärda slutkvantiteten. Inom en produktionsorder, en batchorder eller kanban kan jobben som skapas startas och rapporteras separat genom journaler, den tillverkade utförandeterminalen (MES-terminal) eller kanban-tavlor.
 7.  Rapportförlopp**Slutför** jobb - Använd MES-terminal, produktionsjournaler, kanban-tavlor eller mobil skanning för att rapportera produktionsförloppet per jobb eller resurs. Kostnader för material- och resursförbrukning bokförs, och statusvärdet för de relaterade kanbans, produktionsorder och batchorder kan uppdateras till **Inlevererat** eller **Rapporterat som färdigt**. Inlagrat arbete för lagerstället kan skapas, beroende på lagerställekonfigurationen.
 8.  **Rapporterad som avslutad** (produktinleveransen) – När en produktionsorder eller batchorder rapporters som färdig, uppdateras kvantiteten av de slutförda varorna som har avslutats i Lager. Den här kvantiteten inkluderar kvantiteten för relevanta samprodukter och biprodukter. Om du använder PIA-redovisning skapas en redovisningsjournal för att minska PIA-kontona och öka lagret av färdiga varor. När kostnaden för en produktionsorder beräknas, bokförs den faktiska kostnaden för produktionen. Om de material- och arbetskostnader som är associerade med en produktion inte redan har tilldelats i en journal eller via föravräkning, kan de tilldelas automatiskt via bakåtavräkning. Allokeringen via bakåtavräkning gäller avdrag av lagertransaktionsprocesser. Om produktionsordern har slutförts ska du markera kryssrutan **Avsluta jobb** för att ändra återstående status till **Avslutad**. Annars lämnas fältet tomt om du vill tillåta rapporteringen för alla ytterligare kvantiteter som tillverkas.
@@ -79,10 +82,12 @@ Följande steg i tillverkningslivscykeln kan genereras för alla ordertyper av t
 <a name="see-also"></a>Se även
 --------
 
-[Production feedback](production-feedback.md)
+[Produktionsåterrapportering](production-feedback.md)
 
-[Product configuration models](../pim/product-configuration-models.md)
+[Modeller för produktkonfiguration](../pim/product-configuration-models.md)
 
 [Lean manufacturing](lean-manufacturing-overview.md)
+
+
 
 

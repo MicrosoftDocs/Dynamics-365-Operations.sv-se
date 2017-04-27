@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="configure-expense-management"></a>Konfigurera utgiftshantering
 
+[!include[banner](../includes/banner.md)]
+
+
 Det här avsnittet ger en beskrivning av övervägandena och besluten som måste fattas under planeringsprocessen innan du konfigurerar Utgiftshantering i Microsoft Dynamics AX. I området Utgiftshantering kan du bland annat spara information om betalningsmetoder, reserekvisitioner, utgiftsrapporter och policyer. 
 
 Eftersom flera av besluten som du gör när du planerar konfigurationen för Utgiftshantering baseras på organisationens hierarki och ekonomiska struktur, måste du hänvisa till planläggningsdokumenten för dessa områden.
@@ -133,6 +136,8 @@ Du kan skapa utgiftsrapportpolicyer så att din organisation kan spara tid och p
 -   När upphör policyn?
 -   Vilken är policyregeln?
 -   Vilket är resultatet av policyregeln?
+
+
 
 
 

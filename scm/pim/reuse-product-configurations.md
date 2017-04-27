@@ -1,5 +1,5 @@
 ---
-title: "Återanvänd produktkonfigurationer"
+title: "Återanvända produktkonfigurationer"
 description: "Du kan ange att du automatiskt vill återanvända en befintlig konfiguration för en produkt. När en användare sedan har slutfört en konfigurationssession, kontrollerar systemet om en konfiguration som matchar användarens val redan finns. Om en matchande konfiguration hittas, kommer konfigurationens ID, motsvarande strukturlista och flöde att återanvändas."
 author: YuyuScheller
 manager: AnnBe
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="reuse-product-configurations"></a>Återanvänd produktkonfigurationer
+# <a name="reuse-product-configurations"></a>Återanvända produktkonfigurationer
+
+[!include[banner](../includes/banner.md)]
+
 
 Du kan ange att du automatiskt vill återanvända en befintlig konfiguration för en produkt. När en användare sedan har slutfört en konfigurationssession, kontrollerar systemet om en konfiguration som matchar användarens val redan finns. Om en matchande konfiguration hittas, kommer konfigurationens ID, motsvarande strukturlista och flöde att återanvändas.
 
@@ -41,5 +44,7 @@ Om du vill aktivera konfigurationer som ska återanvändas, måste du ange följ
 
 ## <a name="resetting-configuration-reuse"></a>Återställa konfigurationsåteranvändning
 Tidigare skapade konfigurationer beaktas inte längre när du återställer återanvändningen av konfigurationen. Du kanske vill återställa återanvändningen av konfigurationen om strukturlistan eller flödet har ändrats, men inga relaterade attribut ändrades. Du återställer konfigurationen för komponenten på snabbfliken **General**.
+
+
 
 

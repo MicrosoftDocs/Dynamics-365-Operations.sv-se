@@ -1,6 +1,6 @@
 ---
-title: "Säkerhetsnyckel för leverantör portalanvändare"
-description: "Den här artikeln innehåller information om hur du konfigurerar säkerhet för externa leverantörer som använder leverantörsportalen. Denna information gäller bara för februari 2016 &amp;maj 2016 versioner av Dynamics AX."
+title: "Användarsäkerhet för leverantörportal"
+description: "Den här artikeln innehåller information om hur du konfigurerar säkerhet för externa leverantörer som använder leverantörsportalen. Denna information gäller endast Dynamics AX-versionerna från februari 2016 &amp; maj 2016."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,11 +25,14 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="vendor-portal-user-security"></a>Säkerhetsnyckel för leverantör portalanvändare
+# <a name="vendor-portal-user-security"></a>Användarsäkerhet för leverantörportal
 
-Den här artikeln innehåller information om hur du konfigurerar säkerhet för externa leverantörer som använder leverantörsportalen. Denna information gäller bara för februari 2016 &amp;maj 2016 versioner av Dynamics AX.
+[!include[banner](../includes/banner.md)]
 
-Funktionen leverantör portal har ersatts med utökade leverantör samarbetsfunktioner i Dynamics 365 för operationer version 1611. Finns mer information om hur du konfigurerar säkerhet för samarbete om leverantören [ställa in och underhålla leverantör samarbete](set-up-maintain-vendor-collaboration.md). Säljaren portal utsätter en begränsad uppsättning information om inköpsorder (POs) till externa leverantörer. Det är viktigt att du korrekt konfigurera användarbehörigheter för säljaren portal i Microsoft Dynamics AX, så att leverantörerna inte har oavsiktlig åtkomst till ytterligare information i ditt Dynamics AX installation. **Viktigt!** Till skillnad från andra användare, externa leverantörer bör inte ha **SystemUser** roll. Det **SystemUser** roll ger tillgång till en uppsättning rättigheter som inte är lämpliga för externa användare.
+
+Den här artikeln innehåller information om hur du konfigurerar säkerhet för externa leverantörer som använder leverantörsportalen. Denna information gäller endast Dynamics AX-versionerna från februari 2016 &amp; maj 2016.
+
+Funktionen för leverantörsportal har ersatts med utökade funktioner för leverantörsamarbeten i Dynamics 365 for Operations, version 1611. Mer information om hur du konfigurerar säkerheten för leverantörssamarbeten finns i [Skapa och underhålla leverantörssamarbete](set-up-maintain-vendor-collaboration.md). Säljaren portal utsätter en begränsad uppsättning information om inköpsorder (POs) till externa leverantörer. Det är viktigt att du korrekt konfigurera användarbehörigheter för säljaren portal i Microsoft Dynamics AX, så att leverantörerna inte har oavsiktlig åtkomst till ytterligare information i ditt Dynamics AX installation. **Viktigt!** Till skillnad från andra användare, externa leverantörer bör inte ha **SystemUser** roll. Det **SystemUser** roll ger tillgång till en uppsättning rättigheter som inte är lämpliga för externa användare.
 
 ## <a name="setting-up-a-vendor-portal-user"></a>Ställa in en leverantör portal-användare
 Innan du skapar ett användarkonto för någon som använder säljaren portalen måste du ställa upp säljaren att säljaren portal samarbete. Använd **inköpsorder samarbete** på **fliken Allmänt** på **leverantörer** . Externa leverantörer som använder säljaren portal måste ha följande inställningar:
@@ -44,6 +47,8 @@ Om samma person kräver tillgång till säljaren portal för flera leverantörer
 <a name="see-also"></a>Se även
 --------
 
-[Vendor collaboration](collaborate-vendors-vendor-portal.md)
+[Leverantörssamarbete](collaborate-vendors-vendor-portal.md)
+
+
 
 

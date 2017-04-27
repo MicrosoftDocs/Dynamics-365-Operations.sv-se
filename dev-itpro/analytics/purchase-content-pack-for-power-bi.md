@@ -1,6 +1,6 @@
 ---
-title: "Inköp Utgiftsanalyser Power BI-innehåll"
-description: "Det här avsnittet beskriver vad som ingår i inköpet spendera analys innehållet för Microsoft Power BI. Det förklaras hur du öppnar rapporter som ingår i paketet innehåll och ger information om datamodellen och enheter som används för att skapa innehåll pack."
+title: "Analys av inköpsutgift – Power BI-innehåll"
+description: "Det här avsnittet beskriver vad som ingår i innehållspaketet Analys av inköpsutgift för Microsoft Power BI. Det förklarar hur du kommer åt rapporterna som är inkluderade i innehållspaketet, samt ger dig information om den datamodell och de enheter som användes för att skapa innehållspaketet."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 2016-12-30 09 - 40 - 51
@@ -24,23 +24,23 @@ ms.lasthandoff: 03/29/2017
 
 ---
 
-# <a name="purchase-spend-analysis-power-bi-content"></a>Inköp Utgiftsanalyser Power BI-innehåll
+# <a name="purchase-spend-analysis-power-bi-content"></a>Analys av inköpsutgift – Power BI-innehåll
 
-Det här avsnittet beskriver vad som ingår i inköpet spendera analys innehållet för Microsoft Power BI. Det förklaras hur du öppnar rapporter som ingår i paketet innehåll och ger information om datamodellen och enheter som används för att skapa innehåll pack.
+Det här avsnittet beskriver vad som ingår i innehållspaketet Analys av inköpsutgift för Microsoft Power BI. Det förklarar hur du kommer åt rapporterna som är inkluderade i innehållspaketet, samt ger dig information om den datamodell och de enheter som användes för att skapa innehållspaketet.
 
 <a name="overview"></a>Översikt
 --------
 
-Köp tillbringar analys innehåll pack för Microsoft Power BI skapades när du köper ansvariga och chefer, som ansvarar för budgetar. Utformad för att hjälpa dem hålla ett öga på utgifter för inköp. Den använder transaktionsdata för inköp från Microsoft Dynamics 365 för operationer och innehåller både en aggregerad vy över hela företaget inköpsbelopp och en uppdelning av inköp utgifter per leverantör och produkt. Rapporter visa ändringar i purchase utgifter över tiden. De kan därför användas för chefer notifieringar om positiva och negativa utgifterna trender för enskilda leverantörer och produkter. Diagram visar inköp utgifter för olika anskaffningskategorier och leverantörsgrupper. Kategori och regionala chefer kan vara praktiskt att använda diagrammen för att identifiera ändringar i utgifter beteende. Content pack vi inköpshanterare och chefer, som ansvarar för budgetar analysera inköp utgifter på följande sätt:
+Innehållspaketet Analys av inköpsutgifter för Microsoft Power BI skapades för inköpsansvariga och chefer som ansvarar för budgetar. Det är utformat för att hjälpa dem hålla ett öga på utgifter för inköp. Det använder inköpstransaktionsdata från Microsoft Dynamics 365 for Operations och ger både en sammanfattning av de företagsomspännande inköpsuppgifterna och en fördelning av inköpsutgifter efter leverantör och produkt. Rapporter visar ändringar i inköpsutgifter över tiden. De kan därför användas för att notifiera chefer om positiva och negativa utgiftstrender för enskilda leverantörer och produkter. Diagram visar inköpsutgifter för olika anskaffningskategorier och leverantörsgrupper. Kategori och regionala chefer kan finna det praktiskt att använda diagrammen för att identifiera ändringar i utgiftsbeteende. Innehållspaketet låter inköpsansvarig och inköpschefer som ansvarar för budgetar analysera inköpsutgifter på följande sätt:
 
--   Till dags dato köpa (leverantörsgrupp och enskilda leverantörer anskaffningskategori och enskilda produkter och leverantör)
--   År över år inköp byte (grupp och upphandling leverantörskategori)
+-   Ackumulerat inköp för i år (efter leverantörsgrupp och enskilda leverantörer, anskaffningskategori och enskilda produkter samt leverantörens plats)
+-   Inköpsförändring på årsbasis (efter leverantörsgrupp och upphandlingskategori)
 
-## <a name="accessing-the-content-pack"></a>Åtkomst till content pack
-Köp tillbringar innehåll pack har publicerats som en tillgång i Microsoft Dynamics Lifecycle Services (LCS) för genomförandet och kan nås från Microsoft Dynamics 365 för analys. Mer information om hur du ska öppna Power BI-rapporter finns i [Power BI innehåll från Microsoft och partner LCS](power-bi-content-microsoft-partners.md).
+## <a name="accessing-the-content-pack"></a>Åtkomst till innehållspaketet
+Innehållspaket för analys av inköpsutgift publiceras som en implementeringstillgång i Microsoft Dynamics Lifecycle Services (LCS) och kan nås från Microsoft Dynamics 365 for Operations. Mer information om hur du når och öppnar Power BI-rapporter finns i [Power BI-innehåll i LCS från Microsoft och din partner](power-bi-content-microsoft-partners.md).
 
-## <a name="metrics-that-are-included-in-the-content-pack"></a>Mått som ingår i paketet innehåll
-Köp tillbringar analys innehållet inkluderar en rapport som består av en uppsättning mått. De här måtten är visualized som, brickor, t.ex. Nedan visas en översikt över de visuella effekterna i innehållet.
+## <a name="metrics-that-are-included-in-the-content-pack"></a>Mått som ingår i innehållspaketet
+Innehållspaketet för analys av inköpsutgift innehåller en rapport som består av en uppsättning mått. De här måtten visas som diagram, paneler och tabeller. Nedanstående tabell ger en översikt över de visualiseringar som används i innehållspaketet.
 
 <table>
 <colgroup>
@@ -52,108 +52,108 @@ Köp tillbringar analys innehållet inkluderar en rapport som består av en upps
 <tr class="header">
 <th>Rapportsida</th>
 <th>Diagram</th>
-<th>Sida vid sida</th>
+<th>Paneler</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Inköp per leverantör</td>
+<td>Inköp efter leverantör</td>
 <td><ul>
 <li>De 10 främsta leverantörerna per inköp (stapeldiagram)</li>
-<li>Totalt inköp enligt leverantör gruppen / land / namn (cirkeldiagram)</li>
-<li>Inköp per leverantör gruppen / land / namn (stapeldiagram)</li>
-<li>Genomsnittlig inköp enligt leverantör gruppen / land / namn (stapeldiagram)</li>
+<li>Totalt inköp per leverantörsgrupp / land / namn (cirkeldiagram)</li>
+<li>Inköp per leverantörsgrupp / land / namn (stapeldiagram)</li>
+<li>Genomsnittligt inköp per leverantörsgrupp / land / namn (stapeldiagram)</li>
 </ul></td>
 <td><ul>
 <li>Totalt inköp</li>
-<li>YOY inköp tillväxt</li>
+<li>YOY inköpstillväxt</li>
 <li>Totalt antal leverantörer</li>
 <li>Totalt antal aktiva leverantörer</li>
 </ul></td>
 </tr>
 <tr class="even">
-<td>Inköp per produkt</td>
+<td>Inköp efter produkt</td>
 <td><ul>
-<li>Inköp per anskaffningskategori / product name (stapeldiagram)</li>
-<li>Totalt inköp per anskaffningskategori / product name (cirkeldiagram)</li>
-<li>Topp 10-produkter per inköp (stapeldiagram)</li>
+<li>Inköp per anskaffningskategori / produktnamn (stapeldiagram)</li>
+<li>Totalt inköp per anskaffningskategori / produktnamn (cirkeldiagram)</li>
+<li>De 10 främsta produkterna efter inköp (stapeldiagram)</li>
 </ul></td>
 <td><ul>
 <li>Totalt antal produkter</li>
-<li>Procentandel av totalt antal aktiva produkter av totalt antal produkter</li>
-<li>Antal produkter redovisa inköp 80 %</li>
+<li>Totalt antal aktiva produkters procentuella andel av totalt antal produkter</li>
+<li>Antal produkter som står för 80 % av inköp</li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td>Inköp av perioden *</td>
+<td>Inköp efter period*</td>
 <td><ul>
 <li>Inköp per månad / dag (stapeldiagram)</li>
-<li>Ackumulerade YOY Inköpsvarians (vattenfallet diagram)</li>
-<li>Totala inköp YOY tillväxt (stapeldiagram)</li>
-<li>Inköp-uttryck (matris)</li>
+<li>Ackumulerad YOY inköpsavvikelse (vattenfallsdiagram)</li>
+<li>Totala YOY inköpstillväxt (stapeldiagram)</li>
+<li>Anskaffningsutdrag (matris)</li>
 </ul></td>
 <td><ul>
-<li>YOY inköp tillväxt</li>
-<li>YOY inköp growth %</li>
+<li>YOY inköpstillväxt</li>
+<li>YOY inköpstillväxt %</li>
 </ul></td>
 </tr>
 <tr class="even">
-<td>Inköp efter leverantör</td>
+<td>Inköp per leverantörsplats</td>
 <td><ul>
-<li>Inköp sorterat efter ort</li>
-<li>Inköp YOY growth %</li>
+<li>Inköp per ort</li>
+<li>Inköp YOY tillväxt %</li>
 <li>Inköp per land</li>
 </ul></td>
 <td></td>
 </tr>
 <tr class="odd">
-<td>Inköp utgifter analys per tid</td>
+<td>Analys av inköpsutgift per tid</td>
 <td><ul>
-<li>Inköp innevarande månad / dag (linjediagram)</li>
-<li>Köpa innevarande året och föregående år (rad- och diagram)</li>
+<li>Inköp innevarande år per månad / dag (linjediagram)</li>
+<li>Inköp innevarande år och föregående år (linje- och stapeldiagram)</li>
 </ul></td>
 <td></td>
 </tr>
 <tr class="even">
-<td>Utgiftsanalyser inköp per leverantör</td>
+<td>Analys av inköpsutgift per leverantör</td>
 <td><ul>
-<li>Topp 10 leverantör inköp % av inköp (tratten)</li>
-<li>De 10 främsta leverantörerna med ökad YOY utgiftsgräns</li>
-<li>De 10 främsta leverantörerna med minskad YOY utgiftsgräns</li>
+<li>Topp 10 leverantörers inköp % av inköp (tratt)</li>
+<li>Topp 10 leverantörer med ökad utgifts YOY</li>
+<li>Topp 10 leverantörer med minskad utgifts YOY</li>
 </ul></td>
 <td></td>
 </tr>
 </tbody>
 </table>
 
-\*Inköp i år och förra året och tillväxt per anskaffningskategori
+\* Inköp detta och förra året och tillväxt per anskaffningskategori.
 
 ## <a name="data-model-and-entities"></a>Datamodell och enheter
-Dynamics 365 för data som används för inköp av rapporten tillbringar innehållet för analys. Informationen visas som sammansatta mått som mellanlagras i arkivet entitet som är en Microsoft SQL-databas som är optimerad för analys. Mer information om enheten arkivet finns på [Power BI integration med Store enhet i Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/) blogginlägg. Sammansatta måtten i det här innehållet är del av sammansatta mått som var tillgängliga i kuben i Microsoft Dynamics AX 2012 och Microsoft Dynamics 365 för operationer 2012 R3 inköp. För att förbereda kubens aggregerade mått i butiken enheten måste du göra dem kan. Mer information finns i proceduren för mellanlagring av sammansatta mått i enheten butiken i den [Power BI integration med Store enhet i Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/) blogginlägg. Följande viktiga aggregerade mätningar är tillgängliga direkt från raderna fakturaentiteten och används som bas för innehållet.
+Dynamics 365 for Operations-data används för rapporten i innehållspaketet för analys av inköpsutgift. Informationen visas som sammansatta mått som mellanlagras i enhetsarkivet, som är en Microsoft SQL-databas som är optimerad för analys. Mer information om enhetsbutiken finns i blogginlägget [Power BI-integration med enhetslagring i Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/). De sammanlagda måtten i det här innehållspaketet är del av de sammanlagda mått som fanns i Purchase Cube i Microsoft Dynamics AX 2012 och Microsoft Dynamics 365 for Operations 2012 R3. För att förbereda kubens sammanlagda mått i enhetslagringen måste du göra dem driftfärdiga. Mer information finns i proceduren för mellanlagring av sammanlagda mått i enhetsbutiken i blogginlägget [Power BI-integration med enhetsbutik i Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/). Följande sammanlagda huvudmått är tillgängliga direkt från fakturaradenheten och används som grund för innehållspaketet.
 
-| Enhet        | Sammansatta centrala nyckeltal | Datakälla för Dynamics 365 för operationer | Fält              | beskrivning                           |
+| Enhet        | Sammanlagda huvudmått | Datakälla för Dynamics 365 for Operations | Fält              | beskrivning                           |
 |---------------|----------------------------|---------------------------------------------|--------------------|---------------------------------------|
 | Fakturarader | Inköp                   | VendInvoiceTrans                            | SUM(LineAmountMST) | Belopp i redovisningsvaluta |
 
-Följande tabell visar viktiga mått som beräknas i innehållet från fakturaentiteten rader.
+Följande tabell visar viktiga mått som beräknas i innehållspaketet från fakturaradenheten.
 
 | Mått               | Beräkning                                                                                         |
 |-----------------------|-----------------------------------------------------------------------------------------------------|
-| Inköp-innevarande år | Inköp innevarande år = SUMMA ('Fakturarader'\[inköp\])                                            |
-| Köpa förra året    | Inköpsorder = förra året BERÄKNA (SUMMA ('Fakturarader'\[inköp\]), SAMEPERIODLASTYEAR (datum\[datum\])) |
-| YOY inköp tillväxt   | Köpa YOY tillväxt = \[innevarande år köpa\] – \[köper förra året\]                            |
+| Inköp innevarande år | Inköp innevarande år = SUM('Fakturarader'\[Inköp\])                                            |
+| Inköp i fjol    | Inköp i fjol = CALCULATE(SUM('Fakturarader'\[Inköp\]), SAMEPERIODLASTYEAR(Datum\[Datum\])) |
+| YOY inköpstillväxt   | YOY inköpstillväxt = \[Inköp innevarande år\] – \[Inköp i fjol\]                            |
 
-Följande används nycklar i content pack dimensionerna som filter för att dela upp sammansatta mått, så att du kan uppnå mer granularitet och analytiska djupare kunskaper.
+Följande huvuddimensioner i innehållspaketet används som filter för att dela upp de sammanlagda måtten så att du kan uppnå fler nivåer och djupare analysinsikter.
 
 | Enhet                 | Exempel på attribut                                |
 |------------------------|-------------------------------------------------------|
-| Leverantörer                | Leverantörsgrupper, leverantörer land eller regioner Leverantörsnamn |
-| Produkter               | Produktnummer, produktnamn, grupper-objektnamn        |
-| Anskaffningskategorier | Anskaffningskategorin anskaffning kategorinamn      |
+| Leverantörer                | Leverantörsgrupper, leverantörers land eller regioner, leverantörsnamn |
+| Produkter               | Produktnummer, produktnamn, artikelgruppsnamn        |
+| Anskaffningskategorier | Anskaffningskategori, anskaffningskategorinamn      |
 | Juridiska personer         | Namn på juridisk person                                     |
-| Datum                  | Datum år motbokning                                    |
+| Datum                  | Datum, Förskjutning för år                                    |
 
-Som standard visar innehållet data för det aktuella kalenderåret. Du kan dock ändra filtret i avsnittet filter för rapporten. Du kan också ändra filtret för företaget.
+Som standard visar innehållspaketet data för det aktuella kalenderåret. Du kan dock ändra filtret i datumavsnittet i rapportfilteravsnittet. Du kan också ändra filtret för företaget.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 Nedan följer några användbara länkar som är relaterade till enheter och till att skapa innehåll för Power BI:

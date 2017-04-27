@@ -1,6 +1,6 @@
 ---
 title: "Startsidan Anläggningstillgångar"
-description: "Anläggningstillgångar är artiklar av värde, exempelvis byggnader, fordon, mark eller utrustning, som ägs av en person eller organisation."
+description: "Anläggningstillgångar är artiklar av värde, t.ex. fastigheter, fordon, mark eller utrustning, som ägs av en privatperson eller en organisation."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,9 +27,14 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="fixed-assets-home-page"></a>Startsidan Anläggningstillgångar
 
-Anläggningstillgångar är artiklar av värde, exempelvis byggnader, fordon, mark eller utrustning, som ägs av en person eller organisation.
+[!include[banner](../includes/banner.md)]
+
+
+Anläggningstillgångar är artiklar av värde, t.ex. fastigheter, fordon, mark eller utrustning, som ägs av en privatperson eller en organisation. 
 
 Du kan ställa in och ange anskaffningsinformation för anläggningstillgångsposter och sedan hantera dem genom att skriva av dem och ställa in en kapitaliseringströskel för att fastställa avskrivningen. Du kan beräkna justeringar för anläggningstillgångarna och även avyttra dem. När du använder Redovisning tillsammans med Anläggningstillgångar kan du visa det aktuella värdet för alla anläggningstillgångar. Sättet som anläggningstillgångar hanteras på måste motsvara både internationella redovisningsstandarder och redovisningslagar i varje land/region. Kraven kan omfatta regler för att registrera anskaffnings- och avyttringstransaktioner, avskrivningar, livstid samt uppskrivningar och nedskrivningar av anläggningstillgångar. Funktionen för anläggningstillgångar införlivar flera av dessa standarder och regler.
+
+
 
 
 

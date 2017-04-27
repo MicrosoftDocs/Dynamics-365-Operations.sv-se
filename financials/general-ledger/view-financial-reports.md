@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="view-financial-reports"></a>Visa ekonomiska rapporter
 
+[!include[banner](../includes/banner.md)]
+
+
 Den här artikeln innehåller en beskrivning av hur du visar och utforskar ekonomiska rapporter i Microsoft Dynamics AX. Den innehåller information om de olika alternativ du kan tillämpa på ekonomiska rapporter för att ändra deras utseende och de data de innehåller.
 
 <a name="financial-reporting-overview"></a>Översikt över ekonomisk rapportering
@@ -48,7 +51,7 @@ Du kan ändra rapportdatumet, lägga till attribut och dimensionsfilter samt än
 
 -   Ändra basperioden och basåret i en rapport genom att välja en basperiod och ett basår och klicka på **OK**.
 -   Välj attributfilter till en rapport genom att markera **Lägg till ett attributfilter**. Välj attributet, skriv attributvärdet och klicka sedan på **OK**. Om du t.ex. väljer attributet **Kontokategori** anger du **FÖRSÄLJNING** som attributvärde. Ta bort ett attributfilter genom att klicka på **Ta bort**.
--   Välj om du vill använda dimensionsfilter i en rapport **lägger till ett dimensionsfilter**. Välj dimension, och Skriv dimensions-ID eller Välj dimensionen i listan. Ta bort ett dimensionsfilter genom att klicka på **Ta bort**.
+-   Välj dimensionsfilter till en rapport genom att markera **Lägg till ett dimensionsfilter**. Välj dimension och skriv sedan dimensions-ID eller välj dimensionen i listan. Ta bort ett dimensionsfilter genom att klicka på **Ta bort**.
 -   Ändra scenariot i rapporten **Utfall kontra budget** genom att väja ett nytt scenario och sedan klicka på **OK**. Om det valda scenariot gäller ett annat år, uppdaterar du basåret. Om t.ex. det aktuella scenariot gäller FY2015, och du markerar ett nytt scenario som gäller FY2016, ska du ändra basåret till **2016**.
 
 När du klickar på **OK** sparas alla alternativ du har valt i rapporten. Om du inte vill använda de valda alternativen klickar du på **Avbryt**.
@@ -66,7 +69,7 @@ En ekonomisk rapport kan visas i vilken valuta som helst när som helst. Visa en
 En ekonomisk rapport kan innehålla detaljrader och sammanfattningsrader. Detaljrader är rader som innehåller huvudkonton eller dimensioner. Sammanfattningsrader innehåller beskrivningar, summor och beräkningar. Visa bara sammanfattningsraderna genom att klicka på **Visa** och sedan på **Endast sammanfattningsrader**. Rapporten komprimeras och visar bara sammanfattningsraderna. Om du vill visa detaljraderna tillsammans med sammanfattningsraderna klickar du på **Visa** och sedan på **Endast sammanfattningsrader** igen.
 
 ## <a name="open-a-financial-report-from-a-previous-month"></a>Öppna en ekonomisk rapport från en tidigare månad
-Du kan visa rapporter för den aktuella månaden eller föregående månader utan att generera rapporten igen. Klicka för att öppna rapporten för föregående månad **visa**, och klicka sedan på **tidigare rapporter**. De senaste månaderna rapporten har genererats för visas. Expandera månaden som du vill visa i rapporten, välj datumet och klicka sedan på **OK**. Rapporten för föregående månad visas. Gå tillbaka till den aktuella månadens rapport genom att klicka på **Avbryt**.
+Du kan visa rapporter för den aktuella månaden eller föregående månader utan att generera rapporten igen. Klicka för att öppna rapporten för föregående månad, klicka på **Visa** och klicka sedan på **Tidigare rapporter**. De senaste månaderna som rapporten har genererats för visas. Expandera månaden som du vill visa i rapporten, välj datumet och klicka sedan på **OK**. Rapporten för föregående månad visas. Gå tillbaka till den aktuella månadens rapport genom att klicka på **Avbryt**.
 
 ## <a name="print-a-financial-report"></a>Skriva ut en ekonomisk rapport
 Skriv ut en ekonomisk rapport genom att klicka på **Skriv ut** i åtgärdsfönstret och sedan ställa in utskriftsalternativen genom att följa ett eller flera av stegen nedan:
@@ -85,5 +88,7 @@ Exportera en ekonomisk rapport genom att klicka på **Exportera** i åtgärdsfö
 --------
 
 [Ekonomisk rapportering för Microsoft Dynamics AX](/dynamics365/operations/dev-itpro/analytics/financial-reporting-intro)
+
+
 
 

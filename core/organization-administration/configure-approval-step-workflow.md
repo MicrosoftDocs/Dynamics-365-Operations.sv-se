@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="configure-an-approval-step-in-a-workflow"></a>Konfigurera ett godkännandesteg i ett arbetsflöde
 
+[!include[banner](../includes/banner.md)]
+
+
 I det här avsnittet beskrivs hur du konfigurerar egenskaperna för ett godkännandesteg.
 
 Högerklicka på godkännandesteget och klicka sedan på **Egenskaper** för att öppna sidan **Egenskaper**, om du vill konfigurera ett godkännandesteg i arbetsflödesredigeraren. Använd sedan följande procedurer när du vill konfigurera egenskaperna för godkännandesteget.
@@ -124,10 +127,10 @@ Gör på följande sätt när du vill ange vem som ska tilldelas godkännandeste
     </tr>
     <tr class="even">
     <td>Användare</td>
-    <td>Specifika Microsoft Dynamics 365 för användare av operationer</td>
+    <td>Specifika Microsoft Dynamics 365 for Operations-användare</td>
     <td><ol>
     <li>Klicka på fliken <strong>Användare</strong> när du har valt <strong>Användare</strong>.</li>
-    <li>Den <strong>tillgängliga användare</strong> listan innehåller alla Dynamics 365 för användare av operationer. Markera de användare som ska tilldelas steget och flytta sedan dessa till listan <strong>Markerade användare</strong>.</li>
+    <li>Listan <strong>Tillgängliga användare</strong> innehåller alla Dynamics 365 for Operations-användare. Markera de användare som ska tilldelas steget och flytta sedan dessa till listan <strong>Markerade användare</strong>.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -229,10 +232,10 @@ Om en användare inte vidtar åtgärder för ett dokument inom den tilldelade ti
     </tr>
     <tr class="odd">
     <td>Användare</td>
-    <td>Specifika Dynamics 365 för användare av operationer</td>
+    <td>Specifika Dynamics 365 for Operations-användare</td>
     <td><ol>
     <li>Klicka på fliken <strong>Användare</strong> när du har valt <strong>Användare</strong>.</li>
-    <li>Den <strong>tillgängliga användare</strong> listan innehåller alla Dynamics 365 för användare av operationer. Markera de användare som dokumentet ska eskaleras till, och flytta sedan dessa till listan <strong>Markerade användare</strong>.</li>
+    <li>Listan <strong>Tillgängliga användare</strong> innehåller alla Dynamics 365 for Operations-användare. Markera de användare som dokumentet ska eskaleras till, och flytta sedan dessa till listan <strong>Markerade användare</strong>.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -247,6 +250,8 @@ Om en användare inte vidtar åtgärder för ett dokument inom den tilldelade ti
 
 5.  Upprepa steg 3 och 4 för varje användare som ska läggas till i eskaleringsvägen. Du kan ändra alla användarnas ordningsföljd.
 6.  Om användarna i eskaleringsvägen inte svarar inom den tillåtna tidsperioden, kommer automatiska åtgärder att vidtas för dokumentet. Om du vill ange den åtgärd som systemet ska vidta, välj då raden **Åtgärd** och sedan en åtgärd i fliken **Slutåtgärd**.
+
+
 
 
 

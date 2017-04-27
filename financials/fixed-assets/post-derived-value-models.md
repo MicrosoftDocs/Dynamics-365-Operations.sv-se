@@ -1,5 +1,5 @@
 ---
-title: "Bokför med härledda avskrivningsregler"
+title: "Bokför med härledda böcker"
 description: "Det här avsnittet beskriver hur du använder härledda böcker."
 author: twheeloc
 manager: AnnBe
@@ -26,7 +26,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="post-with-derived-books"></a>Bokför med härledda avskrivningsregler
+# <a name="post-with-derived-books"></a>Bokför med härledda böcker
+
+[!include[banner](../includes/banner.md)]
+
 
 Det här avsnittet beskriver hur du använder härledda böcker.
 
@@ -49,11 +52,13 @@ Följande information beskriver hur du skapar anskaffningstransaktioner med funk
 
 Böckerna kan sedan kopplas till specifika anläggningstillgångar. 
 
-När en anskaffning bokförs för en anläggningstillgång med avskrivningsregel VM 1 bokförs anskaffningen inte bara på VM 1 utan även på härledd avskrivningsregel VM 2. Statusen för båda förteckning över anläggningstillgångar uppdateras till öppen.
+När en anskaffning bokförs för en anläggningstillgång med bok VM 1 bokförs anskaffningen inte bara på VM 1 utan även på den härledda boken VM 2. Statusen för båda böckerna för anläggningstillgång uppdateras till Öppen.
 
 > [!NOTE]                                                                                                         
 > Om härledda böcker inte används måste du bokföra anskaffningen av anläggningstillgången för både boken VM 1 och boken VM 2.
 
-Mer information finns i [härledda avskrivningsregler](derived-books.md)
+Mer information finns i [Härledda böcker](derived-books.md).
+
+
 
 

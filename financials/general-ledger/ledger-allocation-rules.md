@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="ledger-allocation-rules"></a>Allokeringsregler för redovisning
 
+[!include[banner](../includes/banner.md)]
+
+
 Den här artikeln innehåller information om allokeringsregler för redovisning. Den beskriver de olika komponenterna för dessa allokeringsregler och allokeringsmetoderna som kan användas för dem.
 
 Redovisningallokeringsregler används för att beräkna och automatiskt generera allokeringsjournaler och kontoposter för allokering av redovisningssaldon eller fasta belopp. Allokeringmetoder kan vara variabla eller fasta. Följande allokeringsmetoder kan användas för redovisningallokeringsregler:
@@ -42,10 +45,12 @@ Om Bas används som allokeringsmetod för en allokeringsregel är lika med , må
 En allokeringsregel har fyra huvudsakliga komponenter – allmän, källa, destination och motbokning. En ytterligare komponent, allokeringsbasregler för redovisning, krävs om Bas används som allokeringsmetod. Varje komponent omfattar viktig information som krävs för att bearbeta processallokeringarna.
 
 -   **Allmän** – Den allmänna komponenten är där användaren anger alternativ, bland annat allokeringsmetod, inställningar för koncernintern regel och om regeln är aktiv eller inte.
--   **Källa** – Denna komponent är där användaren anger källadatan för allokeringen. Fördelningen kan göras utifrån redovisningssaldon (**datakälla** = **redovisning**) eller fasta belopp (**datakälla** = **fasta värden**). När **Datakälla** ställs in på **Redovisning** måste källafiltervillkoret definieras för redovisningallokeringsregeln (exempelvis för annonseringsutgifterna).
+-   **Källa** – Denna komponent är där användaren anger källadatan för allokeringen. Allokeringen kan baseras på redovisningssaldo (**Datakälla** = **Redovisning**) eller fasta belopp (**Datakälla** = **Fast värde**). När **Datakälla** ställs in på **Redovisning** måste källafiltervillkoret definieras för redovisningallokeringsregeln (exempelvis för annonseringsutgifterna).
 -   **Destination** – Denna komponent anger hur resultatet från allokeringsberäkningen ska fördelas och bokföras. Till exempel kan det finnas en destinationsrad för varje avdelning.
 -   **Motboka** Denna komponent definierar hur huvudkonton och dimensioner ska bestämmas för motbokningsposter som överensstämmer med posterna. användardefinierade alternativ används vanligtvis i stället för de konton och dimensioner som baseras på källan. När **Datakälla** är inställd på **Fast värde**, kan inte **Källa** användas som ett alternativ.
 -   **Basallokeringsregler för redovisning** – Dessa regler använder sin egen källafiltervillkor som avgör vilka redovisningssaldon som ska användas för allokering (exempelvis intäkt per avdelning.) Varje allokeringsbasregel kan användas för många allokeringsregler.
+
+
 
 
 

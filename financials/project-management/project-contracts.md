@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="project-contracts"></a>Projektkontrakt
 
+[!include[banner](../includes/banner.md)]
+
+
 Denna artikel beskriver och ger exempel på de projektavtal som du kan skapa för olika typer av projekt och finansieringskällor, samt hur du kan hantera avtal och fakturaprojektkunder i Microsoft Dynamics 365 for Operations.
 
 Typen av projektet som du skapar för ett projektavtal bestämmer vilken metod som används för att faktura projektkunderna. Du kan ändra ett projektavtal och det relaterade projektet, men du kan inte ändra projekttypen. 
@@ -192,7 +195,7 @@ Följande tabell undersöker det här scenariot noggrannare.
 <tbody>
 <tr class="odd">
 <td><strong>Fokus </strong></td>
-<td><strong>Details</strong></td>
+<td><strong>Detaljer</strong></td>
 </tr>
 <tr class="even">
 <td>Finansieringsregler</td>
@@ -220,17 +223,17 @@ Följande tabell undersöker det här scenariot noggrannare.
 </tr>
 <tr class="odd">
 <td>Transaktion 2</td>
-<td><strong>Transaktionsbelopp:</strong> 5,000.00<strong>Funding:</strong> transaktionen betalas enligt reglerna för alla tre. <strong>Regel 1</strong><ph id="t1">
-</ph><ul>
+<td><strong>Transaktionsbelopp:</strong> 5 000,00<strong>Finansiering:</strong> Transaktionen finansieras enligt alla tre reglerna.<strong>Regel 1</strong>
+<ul>
 <li>Finansieringskälla 2: 450,00</li>
 <li>Finansieringskälla 3: 450,00</li>
-</ul><bpt id="t2">
-< strong ></bpt> Regel 2</strong><ph id="t3">
-</ph><ul>
+</ul>
+<strong>Regel 2</strong>
+<ul>
 <li>Finansieringskälla 3: 250,00 (= 750,00 - 50,00 - 450,00)</li>
-</ul><bpt id="t4">
-< strong ></bpt> Regel 3</strong><ph id="t5">
-</ph><ul>
+</ul>
+<strong>Regel 3</strong>
+<ul>
 <li>Finansieringskälla 1: 3 850,00 (= 5 000,00 - 450,00 - 450,00 - 250,00)</li>
 </ul></td>
 </tr>
@@ -339,5 +342,7 @@ När du ställer in projektkontraktet går du med på att fakturera kunden varje
 -   Du skapar en kundfaktura i slutet av varje månad under projektet.
 
 Under den första månaden registrerades totalt 800 timmar av konsulterna i projektet. Kostnaden för kontorsmaterial som debiteras projektet är 2 000. I slutet av månaden skapar du en faktura på 122 000 (800 timmar för 150 per timme plus 2 000 för kontorsmaterial).
+
+
 
 

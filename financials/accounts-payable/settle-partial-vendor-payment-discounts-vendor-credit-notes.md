@@ -1,5 +1,5 @@
 ---
-title: "Kvitta en partiell leverantörsbetalning med rabatter på kreditfakturor för leverantör"
+title: "Kvitta en delleverantörsbetalning som har rabatter på leverantörkreditfakturor."
 description: "Det här avsnittet innehåller genomgång av ett scenario där en kreditnota kvittas mot en faktura."
 author: twheeloc
 manager: AnnBe
@@ -26,14 +26,17 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="settle-a-partial-vendor-payment-that-has-discounts-on-vendor-credit-notes"></a>Kvitta en partiell leverantörsbetalning med rabatter på kreditfakturor för leverantör
+# <a name="settle-a-partial-vendor-payment-that-has-discounts-on-vendor-credit-notes"></a>Kvitta en delleverantörsbetalning som har rabatter på leverantörkreditfakturor.
+
+[!include[banner](../includes/banner.md)]
+
 
 Det här avsnittet innehåller genomgång av ett scenario där en kreditnota kvittas mot en faktura.
 
 Fabrikams leverantörer ger kassarabatter på kreditnotor. Leverantör 3050 ger Fabrikam en kassarabatt på en procent, om en faktura betalas inom 14 dagar.
 
 ## <a name="invoice-and-credit-memo"></a>Faktura och kreditnota
-På den 29 juni skapar en faktura för 1 000,00 för leverantör 3050 April. Hon skapar en kreditfaktura för 200,00 2 juli. Från sidan **Leverantörer** öppnar Anna sidan **Kvitta transaktioner**. Hon kan använda sidan **Kvitta transaktioner** när hon markera både kreditnotan och fakturan för kvittning. En rabatt på 2,00 beräknas på kreditnotan. Därför reduceras det totala värdet på kreditnotan till 198,00.
+Den 29 juni skapar April en faktura för 1 000,00 för leverantör 3050. Den 2 juli skapar hon en kreditfaktura för 200,00. Från sidan **Leverantörer** öppnar Anna sidan **Kvitta transaktioner**. Hon kan använda sidan **Kvitta transaktioner** när hon markera både kreditnotan och fakturan för kvittning. En rabatt på 2,00 beräknas på kreditnotan. Därför reduceras det totala värdet på kreditnotan till 198,00.
 
 | Markera                     | Använd kassarabatt | Verifikation   | Konto | Datum      | Förfallodatum  | Faktura | Belopp i transaktionsvalutan | Valuta | Belopp att kvitta |
 |--------------------------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|
@@ -65,6 +68,8 @@ Anna kan granska leverantörstransaktionerna på sidan **Leverantörstransaktion
 | Fakt 10071  |                  | 2/7/2015  | CR10071 | 200,00                               |                                       | 0,00    | USD      |
 | RAB-10071 |  Kassarabatt   | 2/7/2015  |         | 2,00                                 |                                       | 0,00    | USD      |
 | RAB-10071 |  Kassarabatt   | 2/7/2015  |         |                                      | 2,00                                  | 0,00    | USD      |
+
+
 
 
 

@@ -28,11 +28,14 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="compensation-plans"></a>Kompensationsplaner
 
+[!include[banner](includes/banner.md)]
+
+
 Kompensations- och förmånschefer kan använda kompensationshantering för att underhålla och bearbeta fasta och variabla kompensationsplaner för organisationens medarbetare.
 
 ### <a name="introduction"></a>Introduktion
 
-Kompensationshantering för kontroll av leverans av grundlön och belöningar. En medarbetares fasta grundlön och meritökningar kontrolleras genom fasta kompensationsplaner. Betalningen av incitament, till exempel bonusar, resultatbelöningar, aktieoptioner och anslag och även engångsbelöningar kontrolleras genom variabla kompensationsplaner. 
+Kompensationshantering används för att styra du utbetalningen av grundlön och belöningar. En medarbetares fasta grundlön och merithöjningar kontrolleras genom fasta kompensationsplaner. Betalningen av incitament, till exempel bonusar, resultatbelöningar, aktieoptioner och anslag och även engångsbelöningar kontrolleras genom variabla kompensationsplaner. 
 
 Medarbetare kan registreras i en eller flera planer av båda typerna. En medarbetare måste uppfylla följande krav för att kunna registreras i en kompensationsplan:
 -   Medarbetaren måste ha en aktiv befattningstilldelning.
@@ -54,7 +57,7 @@ Följande register visar komponenter i kompensationsprocessen som kan vara väse
 <td>Fasta kompensationsåtgärder åstadkommer två syften:
 <ul>
 <li>Åtgärder kan ange den typ av information som måste registreras när en medarbetares kompensation ändras. Du kan till exempel kräva att orsaken till en ändring, till exempel en kampanj eller en degradering registreras.</li>
-<li>Åtgärder se till att en beräkning används när fasta kompensationsplaner bearbetas.  Åtgärder av typen kapital ska jämföra lönen för anställda till minsta referenspunkten för nivån på medarbetarens och säkerställa medarbetaren får betalas minst minst.</li>
+<li>Åtgärder kan se till att en beräkning används när fasta kompensationsplaner bearbetas.  Exempelvis jämför åtgärder av typen Eget kapital medarbetarens lön med den minsta referenspunkten för medarbetarens nivå och ser till att medarbetaren får minst minimibeloppet betalt.</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -83,7 +86,7 @@ Följande register visar komponenter i kompensationsprocessen som kan vara väse
 </tr>
 <tr class="even">
 <td>Lönefrekvenser</td>
-<td>Lönefrekvenser används för att definiera hur lång tid som kompensationen som anges.  Till exempel lönesats lön frekvensen får du en översikt om kompensation beloppet anges som en årslön jämfört med en timlön. Lönefrekvenser kan också användas för att ställa in konverteringsfaktorer kompensation beloppen konverteras från månadsvis, veckovis, var fjortonde dag och timlön lönefrekvenser en årlig lönefrekvens.</td>
+<td>Lönefrekvenser används för att definiera den tidsperiod för vilken kompensationen anges.  Till exempel hjälper lönefrekvensen dig att förstå huruvida kompensationsbeloppet anges som en årslön kontra en timlön. Lönefrekvenser används också för att ställa in konverteringsfaktorer om du vill konvertera kompensationsbelopp från månadslön, veckolön, varannanveckaslön och timlön till en årlig lönefrekvens.</td>
 </tr>
 <tr class="odd">
 <td>Kompensationsregioner</td>
@@ -107,7 +110,7 @@ Följande register visar komponenter i kompensationsprocessen som kan vara väse
 </tr>
 <tr class="even">
 <td>Kompensationsrutnät</td>
-<td>Kompensationsrutnät innehålla kompensationsstrukturen.  Kompensationsrutnät kan användas av en eller flera kompensationsplaner.</td>
+<td>Kompensationsrutnät innehåller kompensationsstrukturen.  Kompensationsrutnät kan användas av en eller flera kompensationsplaner.</td>
 </tr>
 <tr class="odd">
 <td>Resultatplaner</td>
@@ -126,9 +129,11 @@ En processhändelse beräknar kompensationsinformation för en angiven period f�
 <a name="compensation-events"></a>Kompensationshändelser
 -------------------
 
-Varje gång en processhändelse körs skapas en kompensationshändelse.  Händelser för medarbetarkompensation innehålla resultaten av ersättning för varje anställd i den som processhändelsen.  När beräkningarna är korrekta, kan du ladda om du vill uppdatera kompensationsposterna för medarbetarna som påverkas av processhändelsen kompensationshändelse.
+Varje gång en processhändelse körs skapas en kompensationshändelse.  Händelser för medarbetarkompensation innehåller resultaten av kompensationsprocessen för varje anställd som omfattas av den processhändelsen.  När beräkningarna är korrekta kan du ladda kompensationshändelsen för att uppdatera kompensationsposterna för de medarbetare som påverkas av processhändelsen.
 
 ## <a name="recommendations"></a> Rekommendationer
 När du har kört en processhändelse kan du rekommendera justeringar av en medarbetares meritökning eller belöningsbelopp baserat på de beräknade riktlinjerna för processhändelsen. Om du vill göra rekommendationer för medarbetare måste du aktivera rekommendationer när du ställer in kompensationsplaner eller när du ställer in processhändelsen.
+
+
 
 

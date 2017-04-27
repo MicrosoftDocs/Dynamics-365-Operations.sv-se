@@ -28,6 +28,9 @@ ms.lasthandoff: 03/29/2017
 
 # <a name="cost-categories-used-in-production-routing"></a>Kostnadskategorier som används i produktionsflöden
 
+[!include[banner](../includes/banner.md)]
+
+
 Den här artikeln innehåller information om kostnadskategorier som används i de tillverkningsmiljöer som använder flöden.
 
 Kostnadskategorier används i de tillverkningsmiljöer där flöden används. De tilldelas verksamhetsresurser och flödesoperationer för definiering av timkostnader och segmenteringskostnadsbidrag i en tillverkad artikels beräknade kostnader. De kostnadsgrupper som tilldelas kostnadskategorier klassificerar tillverkningskostnadsbidrag baserat på verksamhetsresurserna och typ av aktivitet, till exempel ställ- och körtid. Nivån av kostnadsgruppstilldelningar utgör grunden för beräkning av tillverkningsomkostnader som baseras på flödesinformation. 
@@ -51,5 +54,7 @@ Kostnadsposten för en kostnadskategori kan vara platsspecifik eller gälla för
 En flödesoperation ärver generellt sett kostnadskategorierna som tilldelas verksamhetsresursen eller huvudoperationen. När du skapar en tillverkningsorder återspeglar flödesoperationerna i produktionsflödet den valda flödesversionen. Du kan åsidosätta kostnadskategorierna som tilldelas operationerna i produktionsflödet. 
 
 Vissa typer av produktionsarbete kan gälla för projekttidsuppskattningar och rapportering. I det här fallet krävs en kostnadskategori för produktions- och projektandamål. Du måste definiera ytterligare projektrelaterad information när en kostnadskategori flaggas för användning i projekt.
+
+
 
 

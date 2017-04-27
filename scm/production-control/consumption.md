@@ -1,5 +1,5 @@
 ---
-title: "Beräkna materialförbrukningen"
+title: "Beräkna materialförbrukning"
 description: "Den här artikeln innehåller information om olika alternativ som är relaterade till beräkningen av materialförbrukning."
 author: YuyuScheller
 manager: AnnBe
@@ -27,22 +27,25 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="calculate-material-consumption"></a>Beräkna materialförbrukningen
+# <a name="calculate-material-consumption"></a>Beräkna materialförbrukning
+
+[!include[banner](../includes/banner.md)]
+
 
 Den här artikeln innehåller information om olika alternativ som är relaterade till beräkningen av materialförbrukning. 
 
 Följande alternativ, som är relaterade till beräkningen av materialförbrukning, är tillgängliga på flikarna **Inställningar** och **Stegförbrukning** på snabbfliken **Radinformation** på sidan **Strukturlista**.
 
 ## <a name="variable-and-constant-consumption"></a>Variabel och konstant förbrukning
-I den **förbrukningen är** fältet kan du välja om förbrukning ska beräknas som en konstant kvantitet eller variabel kvantitet. Välj **konstant** om en fast kvantitet eller volym krävs för tillverkning, oavsett kvantiteten som tillverkas. Välj **Variabel** som är standardinställningen om det obligatoriska beloppet för material i de färdiga varorna är proportionellt mot antalet färdiga varor som tillverkas.
+I fältet **Förbrukningen är** kan du välja om förbrukningen ska beräknas som en konstant kvantitet eller en variabel kvantitet. Välj **Konstant** om en fast kvantitet eller volym krävs för tillverkningen, oavsett den kvantitet som tillverkas. Välj **Variabel** som är standardinställningen om det obligatoriska beloppet för material i de färdiga varorna är proportionellt mot antalet färdiga varor som tillverkas.
 
 ## <a name="calculating-consumption-from-a-formula"></a>Beräkna förbrukning från en formel
 I fältet **Formel** kan du ställa in olika formler för beräkning av materialförbrukning. Om du använder standardvärde **Standard**, beräknas förbrukningen inte från en formel. Följande formler fungerar tillsammans med fälten **Höjd**,  **Bredd****Djup****Densitet**, och **Konstant**:
 
--   Höjd \*konstant
--   Höjd \*bredden \*konstant
--   Höjd \*bredden \*djup \*konstant
--   (Höjd \*bredden \*djup / densitet) \*Konstant
+-   Höjd \* Konstant
+-   Höjd \* Bredd \* Konstant
+-   Höjd \* Bredd \* Djup \* Konstant
+-   (Höjd \* Bredd \* Djup / Densitet) \* Konstant
 
 ## <a name="rounding-up-and-multiples"></a>Avrundning och multipler.
 Tillsammans låter fälten **Avrundning** och **Multipler** avrunda värdet för materialförbrukning. Du kan till exempel avrunda värdet enligt hanteringsenheten där råmaterial plockas för produktion. Följande alternativ är tillgängliga i fältet **Avrundning**: **Kvantitet****Mått**, och **Förbrukning**.
@@ -53,7 +56,7 @@ Om du väljer **Kvantitet** som avrundningsmekanism måste kvantiteten vara en m
 
 ### <a name="measurement"></a>Mått
 
-Vanligtvis väljer du **Mått** som avrundningsmekanism när råmaterial levereras i bestämda dimensioner. Till exempel krävs en del av metallröret på 2 meter för färdig vara och metallröret lagras i längder på 4,5 meter. I detta fall kan avrundningsmekanismen **Mått** användas för att beräkna hur många metallrör som krävs för att skapa ett visst antal enheter av den färdiga varan. I det här exemplet på **formeln** har tilldelats **höjd \*konstant**. Den **höjd** har tilldelats **2** att ange längden på röret som krävs för den färdiga varan. Fältet **Multipel** är inställt på **4,5** för att ange att röret plockas i längder på 4,5 meter. Beräkningen är:
+Vanligtvis väljer du **Mått** som avrundningsmekanism när råmaterial levereras i bestämda dimensioner. Till exempel krävs en del av metallröret på 2 meter för färdig vara och metallröret lagras i längder på 4,5 meter. I detta fall kan avrundningsmekanismen **Mått** användas för att beräkna hur många metallrör som krävs för att skapa ett visst antal enheter av den färdiga varan. I det här exemplet anges fältet **Formel** som **höjd \* Konstant**. Fältet **Höjd** anges som **2** för att ange längden på röret som krävs för den färdiga varan. Fältet **Multipel** är inställt på **4,5** för att ange att röret plockas i längder på 4,5 meter. Beräkningen är:
 
 1.  Antal multiplar som krävs för 10 delar av den färdiga varan: 10 ÷ 2 = 5 enheter
 2.  Total förbrukning: 4,5 × 5 = 22,5 meter av metallrör
@@ -78,5 +81,7 @@ Stegförbrukning används för att beräkna konstant förbrukning i kvantitetint
 | 200,00      | 40,0000  |
 
 Kvantiteten för strukturlista (BOM) är 1, och produktionskvantiteten är 110. Formeln för förbrukningen är From series (kvantitet) = förbrukning. Eftersom produktionskvantiteten är 110, är den i "Från 100-serien". Därför är kvantiteten 20.
+
+
 
 

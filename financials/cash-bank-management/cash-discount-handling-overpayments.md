@@ -1,5 +1,5 @@
 ---
-title: "Hantering av kassarabatter för överbetalningar"
+title: "Hantera kassarabatter för överbetalningar"
 description: "Det här avsnittet tillhandahåller scenarier om hur en betalning hanteras när kunden får en kassarabatt, men även betalar för mycket."
 author: twheeloc
 manager: AnnBe
@@ -26,7 +26,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="handling-cash-discounts-for-overpayments"></a>Hantering av kassarabatter för överbetalningar
+# <a name="handling-cash-discounts-for-overpayments"></a>Hantera kassarabatter för överbetalningar
+
+[!include[banner](../includes/banner.md)]
+
 
 Det här avsnittet tillhandahåller scenarier om hur en betalning hanteras när kunden får en kassarabatt, men även betalar för mycket. 
 
@@ -133,6 +136,8 @@ Kassarabattbeloppet reduceras från 10,50 till 10,00. Betalningen och fakturan a
 |--------------------------------------------------------------------------------------------------|--------------|---------------|
 | Kassarabatt (**fältet Huvudkonto för kundrabatter** på sidan **Kassarabatter**) | 10,50        |               |
 | Kundreskontra                                                                              |              | 10,50         |
+
+
 
 
 

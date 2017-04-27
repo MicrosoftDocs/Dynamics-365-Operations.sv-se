@@ -27,11 +27,14 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="quarantine-orders"></a>Karantänorder
 
+[!include[banner](../includes/banner.md)]
+
+
 Den här artikeln beskriver hur karantänorder används för att blockera lagret. 
 
-Karantänorder kan användas för att blockera lagret. Du kanske vill karantän på grund av kvalitetskontroll artiklar. Lager som har varit i karantän överförs till ett karantänlagerställe. **Obs!** Om du använder avancerade lagerstyrningsprocesser (i Lagerstyrning) används bearbetning i karantänorder endast för returförsäljningsorder.
+Karantänorder kan användas för att blockera lagret. Du kanske vill sätta artiklar i karantän på grund av kvalitetskontroll. Lager som har varit i karantän överförs till ett karantänlagerställe. **Obs!** Om du använder avancerade lagerstyrningsprocesser (i Lagerstyrning) används bearbetning i karantänorder endast för returförsäljningsorder.
 
-## <a name="quarantine-onhand-inventory-items"></a>Karantän behållningen lagerartiklar
+## <a name="quarantine-onhand-inventory-items"></a>Sätta lagerbehållningsartiklar i karantän
 När du sätter objekt i karantän kan du antingen skapa karantänorder manuellt eller ställa in systemet för att skapa karantänorder automatiskt under inkommande bearbetning. Skapa karantänorder automatiskt genom att välja alternativet **Karantänhantering** på fliken **Lagerpolicyer** på sidan **Artikelmodellgrupper**. Du måste även ange ett standardkarantänlagerställe i **Karantänlagerställe**-fältet för mottagande lagerställen. När det fysiska, tillgängliga lagret registreras i en inköpsorder eller produktionsorder, flyttas objekt i karantän automatisk till ett karantänlagerställe i Microsoft Dynamics 365 for Operations. Dessa förflyttningar inträffar eftersom karantänorderns status ändras till **Startat**. När du skapar karantänorder manuellt, artikeln måste inte vara inställd för karantänhantering i den associerade artikelmodellgruppen. För den här processen måste du ange lagerbehållning som ska finns i karantän och karantänlagerstället som ska användas. Du kan använda karantänorderstatusen för att planera processen.
 
 ## <a name="quarantine-order-statuses"></a>Karantänorder status
@@ -64,6 +67,8 @@ Som en del av karantänorderprocessen du kan kassera lagerartiklar. När du bear
 <a name="see-also"></a>Se även
 --------
 
-[Inventory blocking](inventory-blocking.md)
+[Lagerspärr](inventory-blocking.md)
+
+
 
 

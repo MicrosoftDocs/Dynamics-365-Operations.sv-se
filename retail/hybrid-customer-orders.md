@@ -1,6 +1,6 @@
 ---
-title: Kombinerade kundorder
-description: "Kombinerade kundorder är en enstaka order som innehåller produkter som kan köras på lager av kunden, liksom produkter som plockas eller levereras senare."
+title: Hybridkundorder
+description: "Hybridkundorder är en enstaka order som innehåller produkter som kan bäras ut från butiken av kunden själv, samt produkter som hämtas eller levereras senare."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,20 +25,25 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="hybrid-customer-orders"></a>Kombinerade kundorder
+# <a name="hybrid-customer-orders"></a>Hybridkundorder
 
-Kombinerade kundorder är en enstaka order som innehåller produkter som kan köras på lager av kunden, liksom produkter som plockas eller levereras senare.
+[!include[banner](includes/banner.md)]
 
-I Microsoft Dynamics 365 - för återförsäljning, kan du välja antingen utföra alla produkter eller utföra de valda produkterna för kundorder. Produkten rader som är markerade som utför automatiskt faktureras när ordern skapas, på samma sätt det är samma för en order ska vara plockas upp när ordern skapas. Det förfallna beloppet på kombinerade order bestäms genom att lägga till procentsatsen insättning på Plocka och leverera produktlinjer hur antalet rader. För kombinerade växlar systemet mellan kundens order och Hämtköp läge enligt följande:
 
--   Om alla produkter i vagnen är **utföra leverans**, ordern ska hanteras som en transaktion i Hämtköp.
--   Om alla rader i vagnen är inställd på antingen **Välj** eller **levererar leveransen**, ordern ska hanteras som en kundtransaktion för ordern.
+Hybridkundorder är en enstaka order som innehåller produkter som kan bäras ut från butiken av kunden själv, samt produkter som hämtas eller levereras senare.
 
-Överför en vagnrad och **vald plockning**, **transport som valts**, eller **utföra valda** är markerad ställs särskilda vagn raden med den leveransmetod. I så fall fortsätter underordnat flöde av operationen som vanligt. Men om **vald plockning**, **båt markerad**, eller **utföra valda** utan en vagnrad markeras, en ny sida öppnas med en lista över alla rader i vagnen. Du kan välja flera rader på en gång för att levereras på den här skärmen. När du använder denna metod för att välja rader åsidosätts tidigare leveransmetod som har tilldelats raden.
+I Microsoft Dynamics 365 for Operations - Butik kan du välja att antingen leverera alla produkter eller att leverera valda produkter för en kundorder. De produktrader som markerats att utföras faktureras automatiskt när ordern skapas; detsamma gäller för en order som ska hämtas upp när ordern skapas. Det förfallna beloppet i hybridorder bestäms genom att addera depositionsprocentsatsen för produktrader av typen plocka-och-leverera med hela beloppet för de rader som ska utföras. För hybridorder växlar systemet mellan läget för kundorder och läget för cash and carry enligt följande:
+
+-   Om alla produkter i vagnen bär statusen **Utför leverans**, kommer ordern att behandlas som en cash and carry-transaktion.
+-   Om någon rad eller alla rader i vagnen bär statusen **Plocka** eller **Skeppa leverans** kommer ordern att hanteras som en kundordertransaktion.
+
+Om en vagnrad har valts och **Plocka valda**, **Skeppa valda** eller **Leverera valda** har markerats, kommer endast den specifika vagnraden att erhålla den leveransmetoden . I så fall fortsätter det underordnade åtgärdsflödet som vanligt. Om emellertid **Plocka valda**, **Skeppa valda** eller **Leverera valda** har valts utan att någon vagnrad har markerats, öppnas en ny sida med en lista över alla vagnrader. På denna skärm kan du välja flera olika rader samtidigt för inställning av leveransmetoden. När du använder denna metod för att välja rader, åsidosätts tidigare leveransmetod som har tilldelats raden.
 
 <a name="see-also"></a>Se även
 --------
 
-[Order – översikt](customer-orders-overview.md)
+[Kundorderöversikt](customer-orders-overview.md)
+
+
 
 

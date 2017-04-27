@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="accounting-distributions-and-subledger-journal-entries-for-free-text-invoices"></a>Redovisningsfördelningar och redovisningsjournalposter för fritextfakturor
 
+[!include[banner](../includes/banner.md)]
+
+
 Redovisningsfördelningar används för att definiera hur ett belopp ska redovisas. Exempelvis hur intäkten, momsen eller avgifterna ska redovisas på en fritextfaktura. Varje belopp som måste redovisas när leverantörsfakturan journalförs ska ha en eller flera redovisningsfördelningar.
 
 <a name="accounting-distributions"></a>Redovisningsfördelningar
@@ -35,7 +38,7 @@ Redovisningsfördelningar används för att definiera hur ett belopp ska redovis
 
 Du kan använda följande knappar på sidan Fritextfaktura om du vill visa, och möjligen ändra, redovisningsfördelningarna för varje belopp på fritextfakturan.
 
--   **Fördelningsbelopp**, granska och ändra redovisningsfördelningarna för en rad och alla underordnade rader, t ex skatter eller avgifter. Du kan också visa och ändra redovisningsfördelningarna för den underordnade raden direkt från sidan Momstransaktioner eller sidan Transaktioner för avgifter.
+-   **Fördela belopp**—Visa och ändra redovisningsfördelningarna för en enskild rad och eventuella underordnade rader, till exempel moms eller avgifter. Du kan också visa och ändra redovisningsfördelningarna för den underordnade raden direkt från sidan Momstransaktioner eller sidan Transaktioner för avgifter.
     -   Ändra huvudbeloppen på fritextfakturan, till exempel avgifter eller valutaavrundningsbelopp.
     -   Ändra radbeloppen för en fritextfaktura
 -   **Visa fördelningar** – Visa redovisningsfördelningarna för alla rader i dokumentet. Du kan inte ändra redovisningsfördelningarna från den här vyn.
@@ -132,5 +135,7 @@ Redovisningsfördelning för skatter går inte att skapa förrän skatter har be
 
 ## <a name="subledger-journals-for-free-text-invoices"></a> Redovisningsjournaler för fritextfakturor
 Innan du bokför en fritextfaktura kan du visa hela redovisningsposten för fakturan, som inkluderar debiteringar och krediteringar, för att kontrollera att fakturan bokförs till rätt konton. Denna vy av hela redovisningsposten kallas en redovisningsjournal. Om posten i reskontrajournalen är fel när du granskar den innan du journalför fritextfakturan kan du inte ändra posten i reskontrajournalen. I stället måste du ändra redovisningsfördelningarna eller bokföringsprofilen. Redovisningsfördelningarna används för att definiera ena sidan i redovisningposten, debet eller kredit. Den förskjutande kontoposten i reskontrajournalen skapas från bokföringsprofilerna, till exempel från kundkontot eller moms.
+
+
 
 

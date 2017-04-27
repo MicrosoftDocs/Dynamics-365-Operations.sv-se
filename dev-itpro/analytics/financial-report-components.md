@@ -101,7 +101,7 @@ Du kan spara en befintlig byggblocksgrupp med ett nytt namn. Därefter kan du ä
 
 ### <a name="export-a-building-block-group"></a> Exportera en byggblockgrupp
 
-Du kan exportera en grupp eller specifika byggblock i en grupp. Du kan använda den exporterade gruppen som en säkerhetskopia. Du kan också kopiera exporterade data mellan företag eller Dynamics 365 för operationer installationer. Rapportdesign sparar de refererade teckensnittsformaten och dimensionsgrupperna tillsammans med gruppen byggblock.
+Du kan exportera en byggblockgrupp eller specifika rapportbyggblock i en byggblockgrupp. Du kan använda den exporterade byggblockgruppen som en säkerhet. Du kan också kopiera exporterade data mellan byggblocksgrupper eller Dynamics 365 for Operations-installationer. Rapportdesignern inkluderar de refererade teckenstilarna och dimensionsuppsättningarna tillsammans med byggblockgruppen.
 1.  I Report Designer, på menyn **Företag** klicka på **Byggblockgrupper**.
 2.  I dialogrutan **Byggblockgrupper** väljer du den byggblockgrupp som du vill exportera och klickar sedan på **Exportera**.
 3.  I dialogrutan **Exportera** väljer du de rapportdefinitioner som du vill exportera:

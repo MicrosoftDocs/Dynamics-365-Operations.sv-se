@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="set-up-credit-and-collections"></a>Konfigurera kredit och inkasso
 
+[!include[banner](../includes/banner.md)]
+
+
 Denna artikel förklarar hur du ställer in samlingsfunktionen.
 
 <a name="set-up-aging-period-definitions"></a>Ställ in definitioner för åldersfördelningsperioder
@@ -46,7 +49,7 @@ Om flera personer i din organisation gör samlingsarbete kan du ställa in en sa
 ## <a name="set-up-a-collections-case-category"></a>Ställa in en samlingsfallkategori
 Om du vill ordna inkassoarbetet genom att använda fall kan du ställa in en fallkategori med kategoritypen för **Inkasso**. Den här inställningen krävs endast om du vill använda inkassofunktionen på sidan **Inkasso**.
 
-## <a name="set-up-journal-names-settlement-writeoff-and-nsf"></a>Ställ in journalnamn (kvittningen writeoff och NSF)
+## <a name="set-up-journal-names-settlement-writeoff-and-nsf"></a>Ställa in journalnamn (kvittning, avskrivning och NSF)
 Ställ in journalnamnen som används när transaktionerna bearbetas på sidan **Inkasso**. Detta omfattar att kvitta en transaktion, att skriva av en transaktion och att bearbeta en betalning med otillräckliga medel (NSF).
 
 | Beskrivning | Journaltyp     |
@@ -55,7 +58,7 @@ Ställ in journalnamnen som används när transaktionerna bearbetas på sidan **
 | Bortskrivning   | Dagligen            |
 | NSF         | Kundbetalning |
 
-## <a name="set-up-a-reason-code-for-writeoff-transactions"></a>Ställ in en orsakskod för transaktioner för writeoff
+## <a name="set-up-a-reason-code-for-writeoff-transactions"></a>Ställa in en orsakskod för avskrivningstransaktioner
 Ställ in standardanledningskoden som används när transaktioner skrivs av på sidan **Inkasso**. Du kan ändra koden under avskrivningsprocessen.
 
 ## <a name="set-up-a-folder-for-email-attachments-and-create-email-templates"></a>Ställa in en mapp för e-postbilagor och skapa e-postmallar
@@ -67,7 +70,7 @@ Ställ in parametrar för kundreskontra som visas på fliken **Inkasso**.
 ## <a name="optional-set-up-collections-agents"></a>Valfritt: Ställ in inkassohandläggare
 Om flera personer i din organisation gör samlingsarbete kan du ställa in samlingsagenter. En inkassohandläggare är en arbetare som har ställts in som en användare på sidan **Användarrelationer**. Du kan tilldela kundpooler (kundfrågor) till inkassohandläggare för att hjälpa dem att ordna sitt arbete. Inkassohandläggarna läggs till i teamet som väljs på sidan **Parametrar för kundreskontra**. Om ett team inte har valts på sidan skapas ett nytt team med namnet **Inkasso** automatiskt och inkassohandläggarna läggs till i det teamet.
 
-## <a name="set-up-a-writeoff-account"></a>Skapa ett konto för writeoff
+## <a name="set-up-a-writeoff-account"></a>Ställ in ett avskrivningkonto
 Ställ in avskrivningskontot som används för redovisningsavskrivningsposten när en transaktion skrivs av. Det här kontot lagras i kundbokföringsprofilen.
 
 ## <a name="set-up-nsf-information-for-bank-accounts"></a>Ange NSF-information för bankkonton
@@ -82,11 +85,13 @@ Ställ in e-postadresser för kundkontakter om du vill skicka e-postmeddelanden 
 På snabbfliken **Kredit och inkasso** för en kund, i fältet **Kontaktperson vid krav**, väljer du den person i kundorganisationen som arbetar med inkassohandläggaren. Den här personen används som standardkontakt på sidan **Inkasso** och e-postmeddelande skickas till honom eller henne. 
 
 > [!NOTE] 
-> Om en kontakt samlingar saknas för en kund, används den primära kontakten för kunden. Om en primär kontakt inte anges skickas e-postmeddelanden till den första adressen som är angiven på sidan **Kontakter**.
+> Om en inkassokontakt inte angetts för en kund används den primära kontakten för kunden. Om en primär kontakt inte anges skickas e-postmeddelanden till den första adressen som är angiven på sidan **Kontakter**.
 
 ## <a name="set-up-email-settings-for-salespeople"></a>Ställ in e-postinställningar för försäljare
 Ställ in e-postadresser för försäljare om du vill skicka e-postmeddelanden till försäljare från sidan **Inkasso**. Ställ in en e-postadress för var försäljare i varje provisionssäljgrupp. Försäljaren som har alternativet **Kontakt** valt är standardsäljaren som e-postmeddelanden skickas till. 
 
 Om en säljare inte har angetts används den primära säljaren för kundorganisationen. Om en primär försäljare inte anges skickas e-postmeddelanden till den första försäljaren på sidan.
+
+
 
 

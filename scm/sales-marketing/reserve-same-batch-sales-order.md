@@ -1,5 +1,5 @@
 ---
-title: "Reservera samma parti för en försäljningsorder"
+title: "Reservera samma batch för en försäljningsorder"
 description: "Det här avsnittet innehåller en beskrivning av hur du ställer in en produkt om du vill tillåta lagerreservation mot en enda lagerbatch."
 author: YuyuScheller
 manager: AnnBe
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="reserve-the-same-batch-for-a-sales-order"></a>Reservera samma parti för en försäljningsorder
+# <a name="reserve-the-same-batch-for-a-sales-order"></a>Reservera samma batch för en försäljningsorder
+
+[!include[banner](../includes/banner.md)]
+
 
 Det här avsnittet innehåller en beskrivning av hur du ställer in en produkt om du vill tillåta lagerreservation mot en enda lagerbatch.
 
@@ -42,6 +45,8 @@ När du reserverar lager för en produkt på en försäljningsorderrad som har s
 -   Batchdispositionskoden har **Blockera reservation** för försäljningar som flaggas som **Spärrad**
 -   Batchen har förfallit, baserat på utgångsdatumet och eventuella gällande försäljningsdagar för kunden. Artikeln kan fortfarande användas för reservationer om artikelmodellgruppen för artikeln är FEFO – först utgått, först ut (First Expiry First Out) – och datumkontrollerat, och om bäst före-datumet har valts som plockvillkor.
 -   Batchen inte har tillräcklig hållbarhetstid kvar, baserat på utgångsdatum och bäst före-datum, plus eventuella försäljningsdagar för kund.
+
+
 
 
 

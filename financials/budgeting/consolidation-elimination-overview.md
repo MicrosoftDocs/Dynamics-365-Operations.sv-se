@@ -86,5 +86,5 @@ Alternativet **Ekonomisk rapportering** är lösningen. Organisationshierarkier 
 Genom att använda alternativet **Exportera företagsbalanser** för att exportera från en instans och sedan använda **Konsolidera med import** på den andra instansen kan du konsolidera data.
 
 
-Mer information finns i [revalution valuta i ett konsolideringsföretag](\finanicials\general-ledger\currency-revaluation-consolidation-company).
+Mer information finns i [Valutaomräkning i ett konsolideringsföretag](\finanicials\general-ledger\currency-revaluation-consolidation-company).
 

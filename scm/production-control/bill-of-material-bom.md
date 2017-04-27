@@ -1,6 +1,6 @@
 ---
 title: Strukturlistor och formler
-description: "Denna artikel innehåller information om strukturlistor strukturlistorna och formler, som är en central del av definitionen av produkterna och produktvarianterna. Ange nödvändiga materialet eller komponenter för en viss produkt strukturlistor och formler. Formler kan också ange samprodukter och biprodukter som tas emot i en bestämd produktions-kontext."
+description: "Denna artikel innehåller information om strukturlistor och formler, som är en central del av definitionen av produkterna och produktvarianterna. Strukturlistor och formler anger nödvändiga material eller komponenter för en viss produkt. Formler kan också ange samprodukter och biprodukter som tas emot i en bestämd produktionskontext."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -29,7 +29,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="bills-of-materials-and-formulas"></a>Strukturlistor och formler
 
-Denna artikel innehåller information om strukturlistor strukturlistorna och formler, som är en central del av definitionen av produkterna och produktvarianterna. Ange nödvändiga materialet eller komponenter för en viss produkt strukturlistor och formler. Formler kan också ange samprodukter och biprodukter som tas emot i en bestämd produktions-kontext. 
+[!include[banner](../includes/banner.md)]
+
+
+Denna artikel innehåller information om strukturlistor och formler, som är en central del av definitionen av produkterna och produktvarianterna. Strukturlistor och formler anger nödvändiga material eller komponenter för en viss produkt. Formler kan också ange samprodukter och biprodukter som tas emot i en bestämd produktionskontext. 
 
 <a name="bills-of-materials"></a>Strukturlistor
 ------------------
@@ -38,7 +41,7 @@ En strukturlista definierar de komponenter som behövs för att tillverka en pro
 
 När strukturlistan kombineras med ett produktionsflöde som beskriver operationer och resurser som krävs för att bygga en produkt, utgör strukturlistan grunden för beräkning av uppskattad kostnad för produkten.  
 
-En struktur är en enskild enhet som beskrivs i följande information:
+En strukturlista är en enskild enhet som beskrivs i följande information:
 
 -   Strukturliste-id
 -   Strukturlistenamn
@@ -49,7 +52,7 @@ En enskild strukturlista beskriver en nivå som kan identifieras med ett unikt i
 
 ### <a name="formulas-co-products-and-by-products"></a>Formler, samprodukter och biprodukter
 
-En formel är en undertyp av strukturlista som normalt används för processtillverkning. Förutom komponenter och ingredienser beskriver en formel samprodukter och biprodukter. Definitionen av samprodukter och biprodukter för formeln kräver receptversionen i den aktuella versionen. En formel definieras vanligtvis för en specifik slutprodukten (metod eller artikel planering) som definieras i formelversionen.
+En formel är en undertyp av strukturlista som normalt används för processtillverkning. Förutom komponenter och ingredienser beskriver en formel samprodukter och biprodukter. Definitionen av samprodukter och biprodukter för formeln kräver formelversionen i den aktuella versionen. En formel definieras vanligtvis för en specifik slutprodukt (en formel eller planeringsartikel) som definieras i formelversionen.
 
 ### <a name="boms-in-the-product-lifecycle"></a>Strukturlistor i produktens livscykel
 
@@ -61,7 +64,7 @@ Under produktens livscykel kan många typer av strukturlistor skapas av olika or
 -   **Produktionsstrukturlista** – detta är den egentliga strukturlistan som används för en viss produktion. En produktionsstrukturlista måste ta hänsyn till de verkliga resurserna som används för att producera produkten. När en produktionsorder, batchorder eller kanban skapas, komprimeras de olika nivåerna i strukturlistorna som representeras av fiktiva listor till en nivå och fördelas över operationerna för ordern.
 -   **Kostnadsredovisningsstrukturlista** – den här strukturlistan används för att kunna beräkna den uppskattade kostnaden för en produkt. Du kan t.ex. använda en kostnadsredovisningsstrukturlista när standardkostnad används eller den beräknade planerade kostnaden för en viss produkt beräknas. Kostnadsredovisningstrukturlistor kan referera till en viss blandning av material och resurser som förväntas användas. Därför kan du använda kostnadsredovisningsstrukturlistan om du vill skapa en representativ uppskattad kostnad för en period och för att undvika avvikelser över tid.
 
-De Strukturlista som faktiskt förbrukas vid en implementering beror om genomförandet och för situationer i verksamheten och krav. I enkla implementeringar kan en planeringsstrukturlista, produktionsstrukturlista och en kostnadsredovisningsstrukturlista slås samman till en strukturlista. I tillverkningsmiljöer där det ofta förekommer teknikändringar och flera alternativa flöden krävs det troligen fler strukturlistetyper.
+Vilka typer av strukturlistor som de facto används i en implementering beror på implementeringen, samt även på affärsscenarier och behov. I enkla implementeringar kan en planeringsstrukturlista, produktionsstrukturlista och en kostnadsredovisningsstrukturlista slås samman till en strukturlista. I tillverkningsmiljöer där det ofta förekommer teknikändringar och flera alternativa flöden krävs det troligen fler strukturlistetyper.
 
 ### <a name="approval-of-boms-and-formulas"></a>Godkännande av strukturlistor och formler
 
@@ -78,7 +81,7 @@ Innan en strukturlisteversion kan användas i planeringen eller tillverkningspro
 
 ### <a name="activation-of-the-default-bom-or-formula-version"></a>Aktivering av standardstrukturlisteversionen eller formelversionen
 
-Om du vill ställa in en specifik strukturlista eller formel som standardversion som ska användas i huvudplaneringen eller för att skapa tillverkningsorder måste du aktivera versionen. När en version har aktiverats verifieras unik version för angivna villkor (till exempel period, webbplats eller antal). Du får ett felmeddelande om versionen som du försöker aktivera står i konflikt med en version som redan är aktiv. Du måste sedan antingen inaktivera den motstridiga versionen eller ändra versionsbegränsningarna (vanligtvis perioden) för att förhindra en oklar aktivering.
+Om du vill ställa in en specifik strukturlista eller formel som standardversion som ska användas i huvudplaneringen eller för att skapa tillverkningsorder måste du aktivera versionen. När en version har aktiverats, verifieras versionens unikhet för angivna villkor (till exempel period, plats eller antal). Du får ett felmeddelande om versionen som du försöker aktivera står i konflikt med en version som redan är aktiv. Du måste sedan antingen inaktivera den motstridiga versionen eller ändra versionsbegränsningarna (vanligtvis perioden) för att förhindra en oklar aktivering.
 
 ### <a name="product-change-with-case-management"></a>Produktändring med ärendehantering
 
@@ -114,5 +117,7 @@ Välj radtypen **Peggad leverans** när du vill skapa en delproduktion, en händ
 Välj radtypen **Leverantör** om produktionsprocessen använder en underleverantör och du vill att en delproduktion eller inköpsorder ska skapas automatiskt för underleverantören.  
 
 **Observera om underleverantörsoperationer i en strukturlista:** Tjänsten eller arbetet som utförs av underleverantören måste skapas som en serviceartikel som kan spåras i lagret. Du måste koppla serviceartikeln till den överordnade artikeln som en strukturlisterad. Flödet måste innehålla en operation som är tilldelad underleverantörens verksamhetsresurs.
+
+
 
 

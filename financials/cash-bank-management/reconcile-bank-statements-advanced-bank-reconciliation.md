@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="reconcile-bank-statements-by-using-advanced-bank-reconciliation"></a>Stämma av bankutdrag med hjälp av avancerad bankavstämning
 
+[!include[banner](../includes/banner.md)]
+
+
 Med hjälp av funktionen Avancerad bankavstämning kan du importera elektroniska bankutdrag och stämma av dem automatiskt mot transaktioner i Microsoft Dynamics 365 for Operations. Det här ämnet innehåller en beskrivning av avstämningsprocessen.  
 
 <a name="import-an-electronic-bank-statement"></a>Importera ett elektronisk bankutdrag
@@ -74,7 +77,7 @@ Det finns tre metoder för att matcha eller stämma av bankutdragstransaktioner:
 -   Matcha transaktioner med en bankutdragstransaktion för återföring.
 -   Markera transaktionen som **Ny**, så att den kan bokföras senare som en banktransaktion i Dynamics 365 for Operations.
 
-Att manuellt matcha transaktioner, markera transaktionerna i den **bankkontoutdragstransaktioner** rutnät väljer du motsvarande transaktioner i den **operationer banktransaktioner** rutnät och klicka sedan på **matchar**. De valda transaktionerna flyttas från det övre rutnäten för omatchade transaktioner till de nedre rutnäten för matchade transaktioner. Dessutom uppdateras de matchade och omatchade totalbeloppen. Du kan ha ett-till-ett-, många-till-en- och många-till-många-transaktionsmatchningar. Matchningar måste följa reglerna för tillåtna datumskillnader och transaktionstypsmappning. Dessa regler ställs in på sidan **Parametrar för kassa- och bankhantering**.
+Om du vill matcha transaktioner manuellt, väljer du transaktionerna i rutnätet **Bankutdragstransaktioner**, markerar motsvarande transaktioner i rutnätet **Operations-banktransaktioner** och klickar sedan på **Matcha**. De valda transaktionerna flyttas från det övre rutnäten för omatchade transaktioner till de nedre rutnäten för matchade transaktioner. Dessutom uppdateras de matchade och omatchade totalbeloppen. Du kan ha ett-till-ett-, många-till-en- och många-till-många-transaktionsmatchningar. Matchningar måste följa reglerna för tillåtna datumskillnader och transaktionstypsmappning. Dessa regler ställs in på sidan **Parametrar för kassa- och bankhantering**.
 
 Öresdifferenser kan uppstå i din avstämning. Du kan matcha en enskild bankutdragstransaktion och en enstaka Dynamics Operations-banktransaktion som har öresdifferenser om öresdifferenserna ligger inom det toleransbelopp som definieras på sidan **Tillåten öresdifferens** på bankkontot. Beloppet visas i fältet **Korrigeringsbelopp** på den matchande Operations-banktransaktionen. När bankavstämningen markeras som avstämt, bokförs korrigeringar automatiskt genom att använda huvudkontot som definieras på den associerade banktransaktionstypen. Korrigeringar stöds inte för dokumenttyperna **Check** och **Insättning**. 
 
@@ -90,5 +93,7 @@ När alla utdragsrader har bearbetats bör du markera kalkylbladet för bankavst
 
 ## <a name="post-new-transactions-that-are-associated-with-the-reconciliation"></a>Bokföra nya transaktioner som är kopplade till avstämningen
 En bankutdragstransaktion som har markerats som **Ny** på kalkylbladet för avstämning bokförs på sidan**Bankutdrag**. På sidan **Bankutdrag**, markera utdrags-ID för att visa detaljer om utdraget. I menyn **Redovisning** kan du använda alternativen **Visa fördelningar** och **Visa redovisning** för att visa detaljerna för de nya transaktionerna och tillhörande redovisningsposter. Välj alternativet **Bokför** för att bokföra en bankutdragsrad som är markerad som **Ny** i redovisningen. Observera att bokföringen enbart kan slutföras en gång per bankutdrag.
+
+
 
 

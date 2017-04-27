@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="time-and-attendance-registration"></a>Tid- och närvaroregistrering
 
+[!include[banner](../includes/banner.md)]
+
+
 Tidsregistreringsarbetare kan ange olika typer av tidregistreringar, till exempel stämpla in, stämpla ut, registrera indirekta aktiviteter och frånvaroregistrering. Den här artikeln beskriver registreringar, deras beräkning, godkännande och användning av arbetsflöde för att lägga till strukturen och godkännande automatiskt till processen för godkännande av tidrapporter. 
 
 <a name="registrations"></a>Registreringar
@@ -62,7 +65,7 @@ När inställningar är klara kan arbetarna ange andra typer av registreringar.
 -   Indirekta aktiviteter, som är ej produktiva aktiviteter som en anställd kan engagera sig i under en arbetsdag. Exempel på dessa aktiviteter omfattar möten eller att städa deras arbetsyta.
 -   Övertid, som kan registreras antingen som ytterligare timmar, flextid eller övertid.
 
-## <a name="adding-clockout-registrations"></a>Lägga till registreringar för clockout
+## <a name="adding-clockout-registrations"></a>Lägg till utstämplingsregistreringar
 Om en anställd glömmer utstämpling vid slutet av arbetsdagen, kan den saknade registreringen läggas till, genom att köra ett batchjobb. Systemet jämför instämplingstid och utstämplingstid enligt den kopplade profilen för arbetaren och infogar automatiskt den saknade utstämplingen som matchar profilens sluttid. Både in- och utstämplingsregistreringar är flera viktiga för den efterföljande beräkningen och godkännandet av tidregistreringar, innan de kan överföras till lönesystemet.
 
 ## <a name="calculating-registrations"></a>Beräkna registreringar
@@ -113,6 +116,8 @@ Arbetare med jobbuppgifter som inte kräver direkt feedback, vilket är fallet v
 -   Tidsförbrukning
 -   Projektavgifter
 -   Projektartiklar
+
+
 
 
 

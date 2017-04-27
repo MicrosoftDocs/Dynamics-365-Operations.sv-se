@@ -34,14 +34,14 @@ ms.lasthandoff: 03/31/2017
 <a name="channel-specific-discounts"></a>Kanalspecifika rabatter
 --------------------------
 
-Återförsäljare ger ofta olika rabatter i olika kanaler. Detta är göras till adressen lokala marknadsvillkor eller hantera konkurrerande återförsäljare.
+Återförsäljare erbjuder ofta olika rabatter i olika kanaler. Detta kan bero på att man vill adressera lokala marknadsvillkor eller hantera konkurrerande återförsäljare.
 
-Butik och handel i Microsoft Dynamics 365 för operationer för prisgrupper definierar kanalspecifika. Prisgrupper kan tilldelas till en eller flera av följande enheter: kanaler, kataloger, anknytningar och bonusprogram. Den här artikeln diskuterar kanaler, men samma koncept gäller för katalograbatter, anknytningsrabatter och lojalitetsrabatter.
+Butik och handel i Microsoft Dynamics 365 for Operations använder prisgrupper för att definiera kanalspecifika rabatter. Prisgrupper kan tilldelas till en eller flera av följande enheter: kanaler, kataloger, anknytningar och bonusprogram. Den här artikeln diskuterar kanaler, men samma koncept gäller för katalograbatter, anknytningsrabatter och lojalitetsrabatter.
 
 ## <a name="price-groups"></a>Prisgrupper
-\[Rubrik-id = "bilaga\_256084" justera = "alignnone" width = "640"\][![uppdatering grupper](./media/price-groups-1024x608.png)](./media/price-groups.png) pris gruppera länkar för Retail\[/beskrivning\]
+\[caption id="attachment\_256084" align="alignnone" width="640"\][![Prisgrupper](./media/price-groups-1024x608.png)](./media/price-groups.png) Prisgruppslänkar för Butik\[/caption\]
 
-Diagrammet ovan visar relationen mellan entiteter som kan göras på en transaktion (kanal, katalog, anknytning, kund, förmånskort) och olika rabattyper som kan konfigureras. Alla transaktioner som uppstår i en kanal så att kanalen garanterat finns i en transaktion. De återstående enheterna är valfria. På varje huvuddatasida finns en länk till en relaterad prisgruppssida där du kan visa och lägga till prisgrupper efter behov. En prisgrupp för handelsavtal, prisjusteringar och rabatter rör fyra typer av enheter. Vi rekommenderar att du planerar en strategi för hur du namnger en prisgrupper för att hålla ordning på dem. Ett alternativ är att använda ett brev eller prefix eller suffix för att skilja mellan de olika typerna. Exempelvis 1-xxxxx prisgrupper och 2-xxxxx för katalogen prisgrupper. Det finns fyra förfrågningssidor som fokuserar på var och en av återförsäljarenheterna som kan ha associerade rabatter.
+Diagrammet ovan visar relationen mellan enheter som kan göras för en transaktion (kanal, katalog, anknytning, kund, bonuskort) och de olika rabattyper som kan konfigureras. Alla transaktioner uppstår i en kanal, varför kanalen garanterat finns med i en transaktion. De återstående enheterna är valfria. På varje huvuddatasida finns en länk till en relaterad prisgruppssida där du kan visa och lägga till prisgrupper efter behov. En prisgrupp används för koppling av fyra olika typer av enheter till rabatter, prisjusteringar och handelsavtal. Vi rekommenderar att du planerar en strategi för hur du ska namnge dina prisgrupper för att hålla ordning på dem. Ett alternativ är att använda ett bokstavs- eller sifferprefix/-suffix för att skilja mellan de olika typerna. Exempelvis 1-xxxxx för kanal prisgrupper och 2-xxxxx för katalogprisgrupper. Det finns fyra förfrågningssidor som fokuserar på var och en av återförsäljarenheterna som kan ha associerade rabatter.
 
 -   **Prisgrupper för butikskanal **– På den här sidan visas en lista med kanaler och rabatter som är länkade för varje prisgrupp.
 -   **Katalogprisgrupper **– På den här sidan visas en lista med kataloger och rabatter som är länkade för varje prisgrupp.
@@ -62,6 +62,6 @@ Följande exempel illustrerar uppgifterna som ingår i konfigurationen av en kan
 <a name="see-also"></a>Se även
 --------
 
-[Price adjustments and discounts](price-adjustments-discounts.md)
+[Prisjusteringar och rabatter](price-adjustments-discounts.md)
 
 

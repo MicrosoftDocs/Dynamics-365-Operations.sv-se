@@ -1,6 +1,6 @@
 ---
-title: Nyligen tillagt redigeringsfunktioner i Uppgiftsinspelaren
-description: "Om du använder Uppgiftsinspelning skapa stödlinjer uppgift redigerar du filerna mer effektivt med hjälp av den funktion som beskrivs i wikin."
+title: Nyligen tillagda redigeringsfunktioner i Uppgiftsinspelare
+description: "Om du använder Uppgiftsinspelare för att skapa uppgiftsguider kan du redigera filerna mer effektivt med hjälp av den funktion som beskrivs i wikin."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,58 +25,58 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="recently-added-editing-features-in-task-recorder"></a>Nyligen tillagt redigeringsfunktioner i Uppgiftsinspelaren
+# <a name="recently-added-editing-features-in-task-recorder"></a>Nyligen tillagda redigeringsfunktioner i Uppgiftsinspelare
 
-Om du använder Uppgiftsinspelning skapa stödlinjer uppgift redigerar du filerna mer effektivt med hjälp av den funktion som beskrivs i wikin.
+Om du använder Uppgiftsinspelare för att skapa uppgiftsguider kan du redigera filerna mer effektivt med hjälp av den funktion som beskrivs i wikin.
 
-Dessa funktioner är tillgängliga i den **inställningar &gt;Uppgiftsinspelning &gt;redigera inspelningen** meny.
+Dessa funktioner är tillgängliga på menyn **Inställningar &gt; Uppgiftsinspelare &gt; Redigera inspelning**.
 
--   Infoga steg utan att hela filen inspelningen.
--   Flytta steg under en underaktivitet utan att hela filen inspelningen.
--   Dölj registrera namn och beskrivning.
+-   Infoga steg utan att hela filen spelas in igen.
+-   Flytta steg under en underuppgift utan att spela in hela filen igen.
+-   Komprimera fälten Inspelningens namn och beskrivning.
 
-## <a name="insert-steps-without-rerecording-the-entire-file"></a>Infoga steg utan att hela filen rerecording
-Du kan nu lägga till ett steg var som helst i en guide för aktiviteten utan att spela upp inspelningen hela filen.
+## <a name="insert-steps-without-rerecording-the-entire-file"></a>Infoga steg utan att spela in hela filen igen.
+Du kan nu lägga till ett steg var som helst i en uppgiftsguide utan att spela in hela filen igen.
 
-1.  Välj det steg som du vill att nytt steg som ska läggas till. Kontrollera steget har markerats.
+1.  Välj det steg som du vill att det nya steget ska läggas till efter. Kontrollera att steget har markerats.
 
-Du måste ha rätt sida öppnas efter Uppgiftsinspelning om du vill infoga ett steg. Rätt sida är den sida som nytt steg inträffar. Uppgiftsinspelning har en mekanism som avgör vad som den aktiva sidan och inaktiverar funktionen om inte rätt sida är öppen. 
+Du måste ha rätt sida öppen för att uppgiftsinspelaren ska infoga ett steg. Rätt sida är den sida på vilken det nya steget inträffar. Uppgiftsinspelaren har en mekanism som avgör vad som är den aktiva sidan och inaktiverar funktionen om inte rätt sida är öppen. 
 
 [![tg1](./media/tg1.png)](./media/tg1.png) 
 
 
-När du är ansluten till rätt sida **Infoga steg** blir tillgänglig.
+När du är på rätt sida blir **Infoga steg** tillgängligt.
 
 [![tg2](./media/tg2-231x300.png)](./media/tg2.png)
 
 2. Klicka på **Infoga steg**.
 
-När du klickar på **Infoga steg**, Uppgiftsinspelning växlar till läget för posten. Alla åtgärder som anges i Användargränssnittet spelas nu och sammanräknad steg på plats.
+När du klickar på **Infoga steg** växlar Uppgiftsinspelare till inspelningsläge. Alla åtgärder som vidtas i användargränssnittet spelas nu in och läggs på plats som steg.
 
-3. Klicka på **stoppa**.
+3. Klicka på **Stoppa**.
 
-Du kan upprepa processen att lägga till så många steg eller flytta så många underordnade aktiviteter (se nedan om underaktiviteter).
+Du kan upprepa processen och lägga till så många steg eller flytta så många underuppgifter som behövs (se nedan om underuppgifter).
 
-4. När du är klar redigeringen aktivitet guide du **har gjort redigeringen**, och sedan väljer något av alternativen för att spara eller publicera aktivitet guide.
+4. När du är klar med redigeringen av uppgiftsguiden klickar du på **Redigeringen är slutförd**, och väljer sedan något av alternativen för att spara eller publicera uppgiftsguide.
 
-## <a name="move-steps-under-a-subtask-without-rerecording-the-entire-file"></a>Flytta steg under en underaktivitet utan att hela filen rerecording
-Du kan flytta steg under en underaktivitet utan att spela upp inspelningen hela filen. Du kan också flytta underaktivitet steg eller slutet underaktivitet steg om du vill gruppera ett befintligt block med steg.
+## <a name="move-steps-under-a-subtask-without-rerecording-the-entire-file"></a>Flytta steg under en underuppgift utan att spela in hela filen igen
+Du kan flytta steg under en underuppgift utan att spela upp eller spela in hela filen igen. Du kan också flytta underuppgiftens steg eller det avslutande steget för underuppgiften om du vill gruppera ett befintligt block med steg.
 
-1.  Välj det steg eller de steg underaktivitet som du vill flytta. Kontrollera att steget har markerats.
-2.  Ellips klickar du **flytta steg efter**.
+1.  Välj steget eller underuppgiftssteget som du vill flytta. Kontrollera att steget har markerats.
+2.  Klicka på ellipsen och klick på **Flytta steg till efter**.
 
 [![tg3](./media/tg3.png)](./media/tg3.png)
 
-3. Välj det steg eller de steg underaktivitet som du vill flytta det steg eller underaktivitet efter. Uppgiftsinspelning flyttas ett steg.
+3. Välj det steg eller underuppgiftssteg till vilket du vill flytta steget eller underuppgiftssteget efter. Uppgiftsinspelaren flyttar steget.
 
-4. Avsluta underaktivitet steg, markerar du den, klickar du på ellips, klickar **flytta steg efter**, och välj sedan det steget då du vill att slutet underaktivitet steg ska.
+4. För att flytta underuppgiftssteget, markerar det, klicka på ellipsen, klickar på **Flytta steg till efter**, och välj sedan steget efter vilket du vill att underuppgiftssteget ska placeras.
 
-Om du vill att det första steget i guiden uppgift som ligger inom en underaktivitet en underaktivitet steget i det andra steget Skapa och flytta sedan det första steget i den. Du kan lägga till eller flytta så många steg eller underordnade aktiviteter efter behov.
+Om du vill att det första steget i uppgiftsguiden ska vara inom en underuppgift, skapa ett underuppgiftssteg som det andra steget, och flytta sedan in det första steget i det. Du kan lägga till eller flytta så många steg eller underuppgifter som behövs.
 
-5. När du är klar redigeringen aktivitet guide du **har gjort redigeringen**, och sedan väljer något av alternativen för att spara eller publicera aktivitet guide.
+5. När du är klar med redigeringen av uppgiftsguiden klickar du på **Redigeringen är slutförd**, och väljer sedan något av alternativen för att spara eller publicera uppgiftsguide.
 
-## <a name="collapse-recording-name-and-description"></a>Dölj inspelningen namn och beskrivning
-Du kan expandera och komprimera den **registrera namn** och **registrerar beskrivning** fält. Fler steg kommer att visas i fönstret Redigera Uppgiftsinspelning när dessa fält är dolda. 
+## <a name="collapse-recording-name-and-description"></a>Komprimera Inspelningens namn och beskrivning
+Du kan expandera och komprimera fälten **Inspelningens namn** och **Inspelningens beskrivning**. När dessa fält är komprimerade visas fler steg i Uppgiftsinspelarens redigeringsfönster. 
 
 [![tg4](./media/tg4-300x252.png)](./media/tg4.png)  
 
@@ -85,6 +85,6 @@ Du kan expandera och komprimera den **registrera namn** och **registrerar beskri
 
 [Skapa dokumentation eller utbildning med uppgiftsregistreringar](/dynamics365/operations/dev-itpro/user-interface/task-recorder)
 
-[Snabbreferens för uppgiften inspelning](/dynamics365/operations/dev-itpro/user-interface/task-recorder-quick-reference)
+[Snabbreferens för Uppgiftsinspelare](/dynamics365/operations/dev-itpro/user-interface/task-recorder-quick-reference)
 
 

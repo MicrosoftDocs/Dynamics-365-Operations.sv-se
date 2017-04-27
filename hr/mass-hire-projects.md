@@ -46,7 +46,7 @@ Välj sidan **Massanställningsprojekt** och välj projektet "SummerInterns” o
 
 När du har valt studenter att anställa till praktikbefattningarna, ska du ange varje students information i **Befattningsinformation** för befattningen som du anställer dem för. När du har angett alla befattningdetaljer väljer du befattning på sidan Massanställningsprojekt och klickar sedan på **Anställ**. En befattningspost skapas för varje befattning och en arbetarpost skapas och tilldelas korrekt befattning för varje person som du anställer.
 
-## <a name="masshire-project-statuses"></a>Status för Masshire-projekt
+## <a name="masshire-project-statuses"></a>Status för massanställningsprojekt
 Ett massanställningsprojekt kan ha nedanstående statusvärden.
 -   Skapad
 -   Öppen

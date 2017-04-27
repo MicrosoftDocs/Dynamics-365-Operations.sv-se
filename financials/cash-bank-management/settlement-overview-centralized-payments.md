@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="settlement-overview-for-centralized-payments"></a>Kvittningsöversikt för centraliserade betalningar
 
+[!include[banner](../includes/banner.md)]
+
+
 Organisationer som omfattar flera juridiska personer kan skapa och hantera betalningar genom att använda en enda juridisk person som hanterar alla betalningar. Detta undanröjer behovet av att registrera samma transaktion i flera juridiska personer, och man sparar tid genom att betalningsförslagsprocessen, kvittningsprocessen, redigeringen av öppna och stängda transaktioner för centraliserade betalningar förenklas. 
 
 När en kund- eller leverantörsbetalning registreras för en juridisk person och kvittas mot en faktura som registrerats för en annan juridisk person, kommer relevant kvittning, förfaller till- och förfaller från-transaktioner att genereras automatiskt för respektive juridisk person. En kvittningspost skapas för respektive kombination av faktura och betalning i transaktionen. Varje kvittningspost tilldelas ett nytt verifikationsnummer, baserat på den verifikationsnummersekvens för betalning som angetts på sidan **Accounts receivable parameters** för kunder och på sidan **Accounts payable parameters** för leverantörer. 
@@ -108,6 +111,8 @@ För leverantörsbetalningar använder förfaller till- och förfaller från-tra
 
 ## <a name="withholding-tax"></a>Källskatt
 Leverantörskontot som är associerat till fakturan används för att avgöra om källskatt ska beräknas. Om källskatt gäller beräknas denna i den juridiska person som är associerad med fakturan. Om de juridiska personer använder olika valutor, används valutakursen från den juridiska person som är kopplad till fakturan.
+
+
 
 
 

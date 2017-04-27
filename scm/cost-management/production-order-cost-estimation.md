@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="production-order-cost-estimation"></a>Kostnadsuppskattning av produktionsorder
 
+[!include[banner](../includes/banner.md)]
+
+
 Det här avsnittet innehåller information om produktionskostnadsuppskattning. Produktionskostnadsuppskattning ger dig information om material- och kapacitetsförbrukningskostnader vid produktion av en artikel i den kvantitet som anges på den planerade produktionsordern. 
 
 När du har skapat en produktionsorder måste du beräkna produktionskostnader. Syftet är att uppskatta artikel- och flödesförbrukningen under produktionsprocessen eftersom dessa uppskattningar används för de efterföljande planerings- och produktionsprocesserna.
@@ -59,6 +62,8 @@ En kostnadsuppskattning ger även följande information:
 -   Jämförelser av kostnadsinformation från tidigare produktioner
 -   Budget- och prognosinformation
 -   Uppskattning av vilken produktionsstorlek som krävs för att upprätthålla en viss kostnad
+
+
 
 
 

@@ -1,6 +1,6 @@
 ---
 title: Butik tidrapportering
-description: "Det här avsnittet beskrivs scenarier som stöds i Microsoft Dynamics 365 för verksamhet – Retail för tid och närvaro."
+description: "Det här avsnittet beskriver scenarierna som stöds för tids- och närvarohantering i Microsoft Dynamics 365 for Operations - Retail."
 author: MargoC
 manager: AnnBe
 ms.date: 04/04/2017
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 62813
 ms.assetid: 821994a6-cd29-45a3-a526-ce204064f080
 ms.search.region: global
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="retail-time-and-attendance"></a>Butik tidrapportering
 
-Det här avsnittet beskrivs scenarier som stöds i Microsoft Dynamics 365 för verksamhet – Retail för tid och närvaro. 
+[!include[banner](includes/banner.md)]
+
+
+Det här avsnittet beskriver scenarierna som stöds för tids- och närvarohantering i Microsoft Dynamics 365 for Operations - Retail. 
 
 <a name="manage-worker-setup-and-scheduling"></a>Hantera inställningar för arbetare och schemaläggning
 ----------------------------------
@@ -45,8 +48,8 @@ För information om konfigurering, se <Https://technet.microsoft.com/en-us/libra
 
 ### <a name="retail-specific-configuration"></a>Retail-specifik konfiguration
 
--   Aktivera en funktion profil för klocka, för arbetstagare som du vill aktivera tidsregistreringar. Klicka på **POS Funktionsprofiler**&gt;**funktion**&gt;**POS när registreringar**&gt;**aktivera tidsregistreringar**.
--   Konfigurera point of sale (POS) behörigheter grupper att visa timeclock poster tillstånd. Detta tillstånd kan en användare visa tid klocka registreringar av andra arbetstagare i affären (och från alla andra som användaren är kopplad till, via adressboken). Du kanske vill aktivera detta tillstånd för en chef roll men inte för en kassör roll. Klicka på **Kassabehörighetsgrupper**&gt;**visa stämpelklocksregistreringar**.
+-   Aktivera en funktion profil för klocka, för arbetstagare som du vill aktivera tidsregistreringar. Klicka på **Kassafunktionsprofiler** &gt; **Funktioner** &gt; **Tidsregistreringar vid kassa** &gt; **Aktivera tidsregistreringar**.
+-   Konfigurera point of sale (POS) behörigheter grupper att visa timeclock poster tillstånd. Detta tillstånd kan en användare visa tid klocka registreringar av andra arbetstagare i affären (och från alla andra som användaren är kopplad till, via adressboken). Du kanske vill aktivera detta tillstånd för en chef roll men inte för en kassör roll. Klicka på **Kassabehörighetsgrupper** &gt; **Visa stämpelklocksregistreringar**.
 
 ## <a name="register-time"></a>Kassatid
 ### <a name="cashier-and-non-cashier-time-registrations"></a>Kassa och icke-kassa tidsregistreringar
@@ -106,9 +109,9 @@ För information om konfigurering, se <Https://technet.microsoft.com/en-us/libra
 <!-- -->
 
 -   Olika tidszoner:
-    -   Om du från en annan plats (för kassören loggbok, eller genom att använda **Visa timeclock poster** för en chef scenario) och platsen är i en annan tidszon, tid som du ser, finnas görat om till din lokala tidzon. Till exempel är en chef för två butiker, i Arizona och den andra Nevada. En kassör registrerar en Stämpla in klockan 09:00 I Arizona. I det ögonblicket i Nevada är 08.00. Därför, om du är i Nevada lagra och titta på gång inskrivningurkunder, projekttid är markerade som 08.00
+    -   Om du från en annan plats (för kassören loggbok, eller genom att använda **Visa timeclock poster** för en chef scenario) och platsen är i en annan tidszon, tid som du ser, finnas görat om till din lokala tidzon. Du är till exempel chef för två butiker, en i Arizona och den andra i Nevada. En kassör registrerar en instämpling klockan 09:00 i Arizona. I det ögonblicket i Nevada är 08.00. Därför, om du är i Nevada lagra och titta på gång inskrivningurkunder, projekttid är markerade som 08.00
 
-## <a name="view-worker-time-registrations"></a>Visa tidsregistreringar för arbetare
+## <a name="view-worker-time-registrations"></a>Visa arbetstidsregistrering
 ### <a name="view-worker-time-registrations-and-filter-by-store-or-activity-type"></a>Visa arbetstagaren tidsregistreringar och filtrera genom butik eller aktivitetstyp
 
 På POS:
@@ -118,7 +121,7 @@ På POS:
 -   Du kan använda aktivitetstyp och lagra filter för att filtrera på tidsregistreringar.
 
 ## <a name="process-and-manage-time-registrations"></a>Bearbeta och hantera tidsregistreringar
-En Dynamics 365 för verksamhet – Retail användare följer arbetsflödet om du vill beräkna, godkänna och överföra tidsregistreringar till lönesystemet.
+En användare av Dynamics 365 for Operations - Retail följer arbetsgången för att beräkna, godkänna och överföra tidsregistreringar till lönesystemet.
 
 ### <a name="primary-operations"></a>Primära verksamheter
 
@@ -132,5 +135,7 @@ En Dynamics 365 för verksamhet – Retail användare följer arbetsflödet om d
 -   Registrera frånvaro
 
 För mer information om hur tid och uppslutning registreringar, se <Https://technet.microsoft.com/en-us/library/aa573180.aspx>.
+
+
 
 

@@ -1,5 +1,5 @@
 ---
-title: "Ställ in leverantörskonton"
+title: "Skapa leverantörskonton"
 description: "I det här avsnittet beskrivs de informationstyper som du måste ange när du skapar ett nytt leverantörskonto."
 author: YuyuScheller
 manager: AnnBe
@@ -25,7 +25,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="set-up-vendor-accounts"></a>Ställ in leverantörskonton
+# <a name="set-up-vendor-accounts"></a>Skapa leverantörskonton
+
+[!include[banner](../includes/banner.md)]
+
 
 I det här avsnittet beskrivs de informationstyper som du måste ange när du skapar ett nytt leverantörskonto.
 
@@ -40,7 +43,7 @@ När du skapar ett leverantörskonto anger du information om leverantören. Den 
 -   Ställ in moms, leverans-, faktura - och betalningsinformation för leverantören. Som standard dessa inställningar kopieras till nya dokument som du skapar för leverantören.
 -   Ställ in standardekonomiska dimensioner som används för att automatiskt bokföra transaktioner med leverantör till affärsredovisningskonton.
 
-För att påskynda processen med att skapa leverantörskonton kan du skapa mallar. Du skapar en mall på den **leverantör** sida i åtgärdsfönstret, klicka på **alternativ**&gt;**Postinfo**. Klicka sedan på **Kontomall för företag**. Kontomallar för företag delas med andra användare.  
+För att påskynda processen med att skapa leverantörskonton kan du skapa mallar. Om du vill skapa en mall klickar du på sidan **Leverantör** och på åtgärdsfönstret klickar du på **Alternativ** &gt; **Registrera uppgifter**. Klicka sedan på **Kontomall för företag**. Kontomallar för företag delas med andra användare.  
 
 Du kan också skapa en användarmall för ditt eget bruk. Du kan inte ta bort en leverantör som är associerad med andra poster, till exempel kontakter eller produkter.
 
@@ -56,7 +59,7 @@ För varje leverantör kan du definiera flera adresser, som var och en används 
 ## <a name="vendor-contacts"></a>Leverantörskontakt
 Du kan lagra kontakter för en leverantör. Dessa kontakter kan sedan användas för dokument som exempelvis inköpsordrar eller anbudsförfrågan (RFQ).  
 
-Lägga till kontakter efter en leverantör på den **alla leverantörer** på sidan i **leverantör** fliken den **ställer in** grupp genom att klicka på **kontakter**&gt;**Lägg till kontakter**.  
+Om du vill lägga till leverantörer klickar du på sidan **Alla leverantörer** på fliken **Leverantör** i gruppen **Inställningar** och klickar på **Kontakter** &gt; **Lägg till kontakter**.  
 
 Du kan skapa leverantörskontakter från noll. Alternativt kan du också kopiera information från en annan person som redan är registrerad i Microsoft Dynamics 365 for Operations och redigera den information som du behöver.  
 
@@ -64,7 +67,7 @@ Du kan skapa leverantörskontakter från noll. Alternativt kan du också kopiera
 
 Du kan inte ta bort en post för kontaktperson om ett dokument refererar till kontakten. I stället kan du avaktivera kontakten.  
 
-Du kan lägga till leverantörskontakter dina personliga kontakter i Microsoft Office 365. Du måste först ställa in synkronisering mellan Dynamics 365 för operationer och Office 365 både synkronisering med Microsoft Exchange Server och guiden Microsoft Outlook.
+Du kan lägga till leverantörskontakter till dina personliga kontakter i Microsoft Office 365. Du måste dock först ställa in synkronisering mellan Dynamics 365 for Operations och Office 365 i både Microsoft Exchange Server-synkroniseringen och Microsoft Outlook-installationsguiden.
 
 ## <a name="vendors-in-different-legal-entities"></a>Leverantörer i olika juridiska personer
 Om en leverantör registreras för endast en juridisk person inom din organisation, och andra juridiska personer måste registrera samma leverantör, kan du använda sidan **Lägg till leverantör till en annan juridisk person** för att konfigurera leverantören i syfte att göra affärer med en annan juridisk person. Du måste välja en leverantörsgrupp, en valuta och en undantagsstatus för leverantören i den valda juridiska personen.  
@@ -101,5 +104,7 @@ Om du måste göra betalningar till ett leverantörsbankkonto kan du ange inform
 Du kan ange de standardkonton som automatiskt visas i leverantörsfakturajournalerna för den angivna leverantören. Denna funktion kan vara praktisk om du vanligtvis betalar för samma typer av artiklar eller tjänster från samma leverantörer över tid. När du anger ett standardkonto kan du snabbt och effektivt ange journalposter i fakturajournalen. Standardkontona som du anger används inte för inköpsordrar eller för leverantörsfakturor som anges på sidan **Leverantörsfaktura**.  
 
 Du väljer standardkonton på sidan **Standardkontoinställning**, som du öppnar via fliken **Faktura** på leverantörsposten. De konton som du väljer här visas i den filtrerade listan över konton för leverantörskontot när du anger en journalpost. Du kan ange ett av kontona som ett standardkonto.
+
+
 
 

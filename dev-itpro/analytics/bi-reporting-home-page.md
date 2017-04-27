@@ -1,6 +1,6 @@
 ---
-title: BI &amp;startsidan rapportering
-description: "Det här avsnittet beskrivs BI &amp;resurser som är tillgängliga i Microsoft Dynamics 365 för rapportering."
+title: "Startsida för BI &amp; rapportering"
+description: "Detta avsnitt innehåller en lista över resurser för BI &amp; rapportering som finns i Microsoft Dynamics 365 for Operations."
 author: sericks007
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,26 +24,29 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="bi-amp-reporting-home-page"></a>BI &amp;startsidan rapportering
+# <a name="bi-amp-reporting-home-page"></a>Startsida för BI &amp; rapportering
 
-Det här avsnittet beskrivs BI &amp;resurser som är tillgängliga i Microsoft Dynamics 365 för rapportering.
+[!include[banner](../includes/banner.md)]
+
+
+Detta avsnitt innehåller en lista över resurser för BI &amp; rapportering som finns i Microsoft Dynamics 365 for Operations. 
 
 <a name="working-with-aggregate-data"></a>Arbeta med aggregerade data
 ---------------------------
 
--   [Analytics](analytics.md)
+-   [Analyser](analytics.md)
 -   [Aggregerade modeller i realtid, i minnet ersätter SSAS-kuber](..\migration-upgrade\in-memory-real-time-aggregate-models.md)
--   [Modellvariabler och samla in Data med](model-aggregate-data.md)
--   [Migrera en uppgraderad Dynamics AX 2012 R3 försäljningskub till arkivet för entitet](..\migration-upgrade\migrate-upgraded-cube-entity-store.md)
+-   [Modellera och använda aggregerade data](model-aggregate-data.md)
+-   [Migrera en uppgraderad Dynamics AX 2012 R3-försäljningskub till enhetsbutiken](..\migration-upgrade\migrate-upgraded-cube-entity-store.md)
 
-## <a name="self-service-reporting"></a>Självservice rapportering
--   [Power BI integration](power-bi-integration.md)
+## <a name="self-service-reporting"></a>Självbetjäningsrapportering
+-   [Power BI-integrering](power-bi-integration.md)
 -   [Konfigurera Power BI-integrering för arbetsytor](configure-power-bi-integration.md)
 -   [Skapa en Power BI-rapport genom att använda Microsoft Dynamics 365 for Operations-data](create-powerbi-report-data.md)
--   [Skapa en rapport för Power BI och instrumentpanelen](create-powerbi-report-dashboard.md)
--   [Retail kanal prestanda Power BI-innehåll](retail-channel-performance-dashboard-power-bi-data.md)
--   [Finansiella prestanda Power BI-innehåll](financial-performance-power-bi-content-pack.md)
--   [Sales and profitability performance Power BI content](sales-profitability-performance-content-pack.md)
+-   [Skapa en Power BI-rapport och instrumentpanel](create-powerbi-report-dashboard.md)
+-   [Innehållspaket för butikskanalprestanda för Power BI](retail-channel-performance-dashboard-power-bi-data.md)
+-   [Innehållspaket för ekonomiska resultat för Power BI](financial-performance-power-bi-content-pack.md)
+-   [Innehållspaket för försäljnings- och lönsamhetsprestanda för Power BI](sales-profitability-performance-content-pack.md)
 -   [Använd en elektronisk rapporteringskonfiguration för att tillhandahålla Power BI med data från med Dynamics 365 for Operations](general-electronic-reporting-report-configuration-get-data-powerbi.md)
 
 ## <a name="building-embedded-analytical-experiences-in-the-dynamics-365-for-operations-client"></a>Bygga inbäddade analytiska erfarenheter i den Dynamics 365 for Operations-klienten
@@ -95,6 +98,8 @@ Det här avsnittet beskrivs BI &amp;resurser som är tillgängliga i Microsoft D
 -   [ER Använd dokumenthanteringsfiler i formatutmatningar (Del 5: Ändra och kör format)](http://ax.help.dynamics.com/en/wiki/er-use-document-management-files-in-format-outputs-part-5-modify-and-run-format/) (uppgiftsguide)
 -   [ER Generera elektroniska dokument för betalningar med en formatkonfiguration](http://ax.help.dynamics.com/en/wiki/generate-electronic-documents-for-payments-using-a-format-configuration/) (uppgiftsguide)
 -   [ER Uppgradera ditt format genom att implementera en ny basversionen för det formatet](http://ax.help.dynamics.com/en/wiki/upgrade-your-format-by-adopting-a-new-base-version-of-that-format/) (uppgiftsguide)
+
+
 
 
 

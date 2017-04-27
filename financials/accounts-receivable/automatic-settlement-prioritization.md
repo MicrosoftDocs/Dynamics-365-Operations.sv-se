@@ -28,9 +28,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="automatic-settlement-and-prioritization"></a>Automatisk kvittning och prioritering
 
+[!include[banner](../includes/banner.md)]
+
+
 Den här artikeln beskriver hur transaktioner kvittas om du väljer Automatisk kvittning på sidan Kundreskontraparametrar. Den beskriver även hur automatisk kvittning kan användas i kombination med betalningsprioriteten.
 
-Du har två alternativ när du kvittar fakturor och betalningar mot andra transaktioner. Du kan manuellt välja vilka transaktioner som ska kvittas eller Microsoft Dynamics 365 för operationer kan välja transaktionerna automatiskt med funktionen Automatisk kvittning. Du kan också anpassa hur automatiska kvittningar bearbetas genom att använda alternativet **Prioritera kvittning**. De här alternativen ingår i kvittningen parametrarna som definieras i den **parametrar för kundreskontra** sida. Det sätt på vilket transaktioner automatiskt kvittas kan vara olika, beroende på vilken metod som du använder för automatisk kvittning. Följande metoder finns:
+Du har två alternativ när du kvittar fakturor och betalningar mot andra transaktioner. Du kan manuellt välja de transaktioner som du vill kvitta, eller också kan Microsoft Dynamics 365 for Operations markera transaktionerna automatiskt genom att använda automatisk kvittningsfunktionen. Du kan också anpassa hur automatiska kvittningar bearbetas genom att använda alternativet **Prioritera kvittning**. Alla dessa alternativ ingår i de kvittringsparametrar som definieras på sidan **Parametrar för kundreskontra**. Det sätt på vilket transaktioner automatiskt kvittas kan vara olika, beroende på vilken metod som du använder för automatisk kvittning. Följande metoder finns:
 
 -   Användardefinierad kvittningsprioritet
 -   Standardvald automatisk kvittning
@@ -45,9 +48,9 @@ Exemplen på kvittningar senare i den här artikeln baseras på följande transa
 | Faktura 1     | 15 augusti   | 100,00 | 2%14, Netto 30        | 29 augusti          |                                                                                                                                                                                               |
 | Faktura 2     | 1 september | 250.00 | 2%14, Netto 30        | 15 september       |                                                                                                                                                                                               |
 | Faktura 3     | 15 oktober  | 500.00 | 2% 14/Netto 30        | 29 oktober         |                                                                                                                                                                                               |
-| Räntefaktura | 15 oktober  | 07:00   |                     |                    | Den här räntefakturan gäller fakturan 1 och 2 för fakturan. Beloppet beräknas som 2 % ränta på belopp som är mer eller 30 dagar efter förfallodatum. T.ex. 0,02 × (100,00 + 250,00) = 7,00. |
+| Räntefaktura | 15 oktober  | 07:00   |                     |                    | Den här räntefakturan gäller faktura 1 och 2. Beloppet beräknas som 2 % ränta på belopp som är mer eller 30 dagar efter förfallodatum. T.ex. 0,02 × (100,00 + 250,00) = 7,00. |
 
-## <a name="userdefined-settlement-priority"></a>Användardefinierade betalningsprioritet
+## <a name="userdefined-settlement-priority"></a>Användardefinierad kvittningsprioritet
 Om du ställer in **Använd prioritet för automatiska betalningar** till **Ja** på sidan **Parametrar för kundreskontra** används den betalningsprioritet som du definierar på sidan **Kvittningprioritet** när transaktioner markeras för automatisk kvittning. För det här exemplet har följande kvittningprioritet definierats:
 
 1.  transaktionstyp
@@ -77,6 +80,8 @@ Om det inte finns någon användardefinierad kvittningsprioritet, markeras autom
 | Faktura 2     | 2015/09/01   | 10002   | 250.00                         | 250.00           | 0,00    | USD      |
 | Faktura 3     | 2015/10/15 |         | 500.00                         | 350,00           | 150,00  | USD      |
 | Räntefaktura | 2015/10/15 |         | 7,00                           | 0,00             | 0,00    | USD      |
+
+
 
 
 

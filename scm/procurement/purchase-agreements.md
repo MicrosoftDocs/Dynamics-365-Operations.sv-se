@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="purchase-agreements"></a>Inköpsavtal
 
+[!include[banner](../includes/banner.md)]
+
+
 Det här avsnittet innehåller information om inköpsavtal. Ett inköpsavtal är ett kontrakt som ålägger en organisation att köpa en angiven kvantitet eller ett visst belopp via flera framtida inköpsorder. I utbyte mot detta åtagande får köparen särskilda priser och rabatter. 
 
 Inköpsavtal kan gälla för en viss kvantitet av en produkt, ett specifikt valutabelopp av en produkt eller ett specifikt valutabelopp av produkter i en anskaffningskategori. Priserna och rabatterna av inköpsavtalet åsidosätter priser och rabatter som anges i andra handelsavtal.  
@@ -70,7 +73,7 @@ I området **Avtal** visar den totala kvantiteten eller det totala beloppet som 
 Du kan nå inköpsorderraderna och fakturaraderna som bidrar till uppfyllelseberäkningen genom att välja åtgärden **Relaterad information** på raderna eller i huvudet för ett inköpsavtal.
 
 ## <a name="confirmations-and-version-history-for-purchase-agreements"></a>Bekräftelser och versionshistorik för inköpsavtal
-När ett inköpsavtal bekräftas lagras den aktuella versionen av inköpsavtalet i ett historikregister. Om du ändrar inköpsavtalet, kan du bekräfta det igen för att lagra en annan version av inköpsavtalet i historiken. Om du inte bekräftar ett inköpsavtal kan du använda den för att skapa POs. Dock lagras Historikinformation för inköpsavtalet inte. Du kan granska eller skriva ut alla versioner av avtalet. Därefter kan du dela ändringarna med leverantören för att erhålla godkännande.
+När ett inköpsavtal bekräftas lagras den aktuella versionen av inköpsavtalet i ett historikregister. Om du ändrar inköpsavtalet, kan du bekräfta det igen för att lagra en annan version av inköpsavtalet i historiken. Om du inte bekräftar ett inköpsavtal, kan du fortfarande använda det för att skapa inköpsorder. Den historiska information för inköpsavtalet lagras emellertid inte. Du kan granska eller skriva ut alla versioner av avtalet. Därefter kan du dela ändringarna med leverantören för att erhålla godkännande.
 
 ## <a name="applying-purchase-agreements-in-the-ordering-process"></a>Tillämpa inköpsavtal i beställningsprocessen
 När du skapar en inköpsorder kan du tillämpa ett inköpsavtal på den. Information från villkoren för avtalet, till exempel betalningsvillkoren, leveransvillkor och leveransadress, kopieras då till sidhuvudet i inköpsordern. Om inköpsordern innehåller en eller flera rader för produkter eller kategorier som omfattas av inköpsavtalet används priser och rabatter från inköpsavtalet för dessa rader. Beloppet eller kvantiteten på orderraden bidrar till uppfyllandet av utfästelsen i inköpsavtalet. Samma inköpsorder kan inkludera både rader som inte hör till ett inköpsavtal och rader som har en utfästelse för ett inköpsavtal.  
@@ -91,8 +94,10 @@ Du kan kopiera ekonomiska dimensioner till dokumenthuvuden eller till enskilda r
 <a name="see-also"></a>Se även
 --------
 
-[Skapa inköpsavtal (aktivitet guide)](https://ax.help.dynamics.com/en/wiki/create-a-purchase-agreement/)
+[Skapa ett inköpsavtal (uppgiftsguide)](https://ax.help.dynamics.com/en/wiki/create-a-purchase-agreement/)
 
-[Skapa en inköpsfrisläppningsorder från inköpsavtal (aktivitet guide)](https://ax.help.dynamics.com/en/wiki/create-a-purchase-release-order-from-a-purchase-agreement/)
+[Skapa en inköpsfrisläppningsorder från ett inköpsavtal (uppgiftsguide)](https://ax.help.dynamics.com/en/wiki/create-a-purchase-release-order-from-a-purchase-agreement/)
+
+
 
 

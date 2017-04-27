@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="fixed-asset-disposal-posting-accounts"></a>Bokföringskonton för avyttrande av anläggningstillgångar
 
+[!include[banner](../includes/banner.md)]
+
+
 Det här avsnittet innehåller information om hur du ställer in redovisningsbokföringskonton för avyttring av tillgångar.
 
 På sidan Bokföringsprofiler för anläggningstillgångar, på snabbfliken Redovisningskonto, välj Avyttrande - försäljning och Avyttrande - kassation om du vill ställa in bokföringar till redovisningen.
@@ -37,6 +40,8 @@ För båda transaktionstyperna krediteras huvudbokskontot för anläggningstillg
 Klicka på Avyttrande och klicka sedan på Kassation och skapa sedan detaljerade konton för att återföra anläggningstillgångens bokförda nettovärde. Du kan även ange information i fälten för Bokför värde och Försäljningsvärdetyp i sidan Parametrar för avyttrande. 
 
 Avyttrandetransaktionen för en tillgång i en lågvärdespool minskar det bokförda nettovärdet för lågvärdespoolen med enbart avyttringsbeloppet. När försäljningen av en tillgång är större än det bokförda nettovärdet av lågvärdespoolen, minskar emellertid det bokförda nettovärdet till noll.
+
+
 
 
 

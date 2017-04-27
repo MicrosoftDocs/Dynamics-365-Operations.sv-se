@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="vendor-posting-profiles"></a>Bokföringsprofiler för leverantörer
 
+[!include[banner](../includes/banner.md)]
+
+
 Leverantörsbokföringsprofiler styr bokföringen av leverantörstransaktioner i redovisningen.
 
 <a name="vendor-posting-profiles"></a>Bokföringsprofiler för leverantörer
@@ -146,6 +149,8 @@ Ange följande värden om du vill ställa in din bokföringsprofil:
 | **Kvittning** | Välj det här alternativet för att aktivera automatisk kvittning av transaktioner som har denna bokföringsprofil. Om det här alternativet avmarkeras måste du kvitta transaktioner manuellt genom att använda sidan Kvitta öppna transaktioner. |
 | **Avbryt**     | Välj det här alternativet för möjlighet att avbryta transaktioner som har denna bokföringsprofil.                                                                                                               |
 | **Stäng**      | Markera en bokföringsprofiler att ändra till när transaktionerna med denna bokföringsprofil stängs. En transaktion betraktas som stängd när den har kvittats helt.                                       |
+
+
 
 
 

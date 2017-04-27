@@ -1,6 +1,6 @@
 ---
 title: Produktdimensioner
-description: "Det finns fyra produktdimensioner - färg, konfiguration, storlek och format. Du kombinerar produktdimensioner i dimensionsgrupper och tilldelar dimensionsgrupper till produktmallar. Kombinationerna av produktdimensioner bestämmer hur produktvarianter definieras."
+description: "Det finns fyra produktdimensioner: färg, konfiguration, storlek och utförande. Du kombinerar produktdimensioner i dimensionsgrupper och tilldelar dimensionsgrupper till produktmallar. Kombinationerna av produktdimensioner bestämmer hur produktvarianter definieras."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -29,21 +29,24 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="product-dimensions"></a>Produktdimensioner
 
-Det finns fyra produktdimensioner - färg, konfiguration, storlek och format. Du kombinerar produktdimensioner i dimensionsgrupper och tilldelar dimensionsgrupper till produktmallar. Kombinationerna av produktdimensioner bestämmer hur produktvarianter definieras.
+[!include[banner](../includes/banner.md)]
+
+
+Det finns fyra produktdimensioner: färg, konfiguration, storlek och utförande. Du kombinerar produktdimensioner i dimensionsgrupper och tilldelar dimensionsgrupper till produktmallar. Kombinationerna av produktdimensioner bestämmer hur produktvarianter definieras.
 
 Produktdimensioner är egenskaper som används för att identifiera en produktvariant. Du kan använda kombinationer av produktdimensioner för att definiera produktvarianter. Du måste definiera minst en produktdimension för en produktmall om du vill skapa en produktvariant.
 Produktvarianter
 ----------------
 
-Produktvarianter kallas också för artiklar. En artikel är en materiell produkt, vilket inte är detsamma som en tjänst. Det är också möjligt att definiera en produktmall tjänsttypen. Med typen Tjänst kan du ange produktvarianter som innehåller tjänster. Du kan till exempel ange en produktmall för konsultarbete och produktvarianter för arbete som utförs av seniorkonsulter och juniorkonsulter.
+Produktvarianter kallas också för artiklar. En artikel är en materiell produkt, vilket inte är detsamma som en tjänst. Det är också möjligt att definiera en produktmall med typen Tjänst. Med typen Tjänst kan du ange produktvarianter som innehåller tjänster. Du kan till exempel ange en produktmall för konsultarbete och produktvarianter för arbete som utförs av seniorkonsulter och juniorkonsulter.
 
 ## <a name="product-dimensions"></a>Produktdimensioner
-Följande produktdimensioner finns: konfiguration, färg, storlek och format. En produktvariant genereras utifrån produkt dimensionsvärden.
+Följande produktdimensioner finns: konfiguration, färg, storlek och utförande. En produktvariant kan genereras baserat på produktdimensionsvärdena.
 
-Produkten dimensioner värdena exempelvis storlek, färg och utförande kan skapas på den **storlek**, **färg** och **utförande** sidor som kan nås från följande platser: **produktinformationshantering**&gt;**inställningar**&gt;**Dimension och variant grupper**&gt;**storlek-färger-format**. Produktdimensionsvärden för konfigurationsdimensionen skapas vanligtvis med hjälp av antingen produktkonfigureraren eller med den dimensionsbaserade konfigureraren. Produktdimensioner kan också skapas och underhållas på sidan **Produktdimensioner** som du öppnar från följande platser:
--   Klicka på **produktinformationshantering**&gt;**produkter**&gt;**produktmallar**. I den **åtgärdsfönstret**, klickar du på **produktdimensioner**.
--   Klicka på **produktinformationshantering**&gt;**produkter**&gt;**alla produkter och produktmallar**. Välj en produktmall. I den **åtgärdsfönstret**, klickar du på **produktdimensioner**.
--   Klicka på **produktinformationshantering**&gt;**frisläppta produkter**. Välj en produktmall. I den **åtgärdsfönstret**, klickar du på **produkt**. I gruppen **Produktmall**, klicka på **Produktdimensioner**.
+Produktdimensionvärden som till exempel Storlek, Färg och Utförande kan skapas på sidorna **Storlek**, **Färg** och **Utförande** som du öppnar från följande platser: **Produktinformationshantering** &gt; **Inställningar** &gt; **Dimensions- och variantgrupper** &gt; **Storlekar/Färger/Utföranden**. Produktdimensionsvärden för konfigurationsdimensionen skapas vanligtvis med hjälp av antingen produktkonfigureraren eller med den dimensionsbaserade konfigureraren. Produktdimensioner kan också skapas och underhållas på sidan **Produktdimensioner** som du öppnar från följande platser:
+-   Klicka på **Produktinformationshantering** &gt; **Produkter** &gt; **Produktmallar**. I **Åtgärdsfönstret**, klicka på **Produktdimensioner**.
+-   Klicka på **Produktinformationshantering** &gt; **Produkter** &gt; **Alla produkter och produktmallar**. Välj en produktmall. I **Åtgärdsfönstret**, klicka på **Produktdimensioner**.
+-   Klicka på **Produktinformationshantering** &gt; **Frisläppta produkter**. Välj en produktmall. I **Åtgärdsfönstret**, klicka på **Produkt**. I gruppen **Produktmall**, klicka på **Produktdimensioner**.
 
 Antalet varianter som du kan skapa för en artikel begränsas av antalet möjliga produktdimensionskombinationer.
 | **Tips! **                                                                                                                                              |
@@ -64,6 +67,8 @@ Ett företag säljer jeans. Artikeln jeans använder produktdimensionerna för f
 | Brun | S    |
 | Brun | XL   |
 | Brun | XXL  |
+
+
 
 
 

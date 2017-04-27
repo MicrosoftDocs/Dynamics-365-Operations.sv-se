@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="straight-line-life-remaining-depreciation"></a>Linjär avskrivning kvarstående livstid
 
+[!include[banner](../includes/banner.md)]
+
+
 Det här avsnittet ger en översikt över metoden för linjär återstående livstid för avskrivning.
 
 När du ställer in en avskrivningsprofil för anläggningstillgångar och väljer **Linjär återstående livstid** i fältet **Metod** i formuläret **Avskrivningsprofiler** baseras avskrivningen av anläggningstillgångar som är tilldelade till den här avskrivningsprofilen på tillgångens återstående tjänstelivstid. Avskrivningsbeloppet är vanligtvis samma i varje avskrivningsperiod. Om du vill ställa in linjär avskrivning kvarstående livstid måste du också markera alternativ i fältet **Avskrivningsår** och fältet **Periodfrekvens** på sidan **Avskrivningsprofiler**. De tillgängliga alternativen i fältet **Periodfrekvens** varierar beroende på vilket värde som valts i fältet **Avskrivningsår**.
@@ -36,7 +39,7 @@ Du kan välja **Kalender** eller **Räkenskapsår** i fältet **Avskrivningsår*
 
 ### <a name="calendar"></a>Kalender
 
-Om du väljer **kalender** i den ***avskrivningsår*** fältet kalenderåret 1 januari till 31 December antas, även om du har definierat räkenskapskalendern på olika sätt. Alternativet **Kalender** uppdaterar avskrivningsbasen den 1 januari varje år. Generellt är avskrivningsbasen bokfört nettovärde minus skrotvärdet. I exemplen senare i det här ämnet utgör avskrivningsbasen täljaren i det första uttrycket i beräkningskolumnen. Om du väljer **Kalender** som avskrivningsår finns följande alternativ i fältet **Periodfrekvens**.
+Om du väljer **Kalender** i fältet ***Avskrivningsår*** kommer ett år från 1 januari till 31 december att antas, även om du har definierat räkenskapskalendern annorlunda. Alternativet **Kalender** uppdaterar avskrivningsbasen den 1 januari varje år. Generellt är avskrivningsbasen bokfört nettovärde minus skrotvärdet. I exemplen senare i det här ämnet utgör avskrivningsbasen täljaren i det första uttrycket i beräkningskolumnen. Om du väljer **Kalender** som avskrivningsår finns följande alternativ i fältet **Periodfrekvens**.
 
 -   **Årlig** bokför ett belopp den 31 december.
 -   **Månatlig** bokför ett månatligt belopp i slutet av varje kalendermånad.
@@ -48,7 +51,7 @@ Om du till exempel **Årligen** bokförs årets avskrivning alltså bara en gån
 
 ### <a name="fiscal"></a>Skatt
 
-Om du väljer **Räkenskapsår** i fältet **Avskrivningsår** används linjär avskrivning kvarstående livstid. Avskrivningen beräknas utifrån vad som är kvar av räkenskapsåret. För räkenskapsåret 1 juli 2015 till och med den 30 juni 2016 påbörjas avskrivningsberäkningen exempelvis 1 juli. Räkenskapsåret kan vara längre eller kortare än 12 månader. Avskrivningen justeras för varje räkenskapsperiod. Längden på nästa räkenskapsår bestäms av de räkenskapsperioder som är inställda på sidan **Räkenskapskalendrar**. Om du väljer **Räkenskapsår** som avskrivningsår finns följande alternativ i fältet **Periodfrekvens**:
+Om du väljer **Räkenskapsår** i fältet **Avskrivningsår** används linjär avskrivning kvarstående livstid. Avskrivningen beräknas utifrån vad som är kvar av räkenskapsåret. För räkenskapsåret 1 juli 2015 - 30 juni 2016 startar alltså avskrivningsberäkningen alltså den 1 juli. Räkenskapsåret kan vara längre eller kortare än 12 månader. Avskrivningen justeras för varje räkenskapsperiod. Längden på nästa räkenskapsår bestäms av de räkenskapsperioder som är inställda på sidan **Räkenskapskalendrar**. Om du väljer **Räkenskapsår** som avskrivningsår finns följande alternativ i fältet **Periodfrekvens**:
 
 -   **Årligen** bokför det totala avskrivningsbeloppet som beräknas för räkenskapsåret som ett belopp på räkenskapsårets sista dag.
 -   **Räkenskapsperiod** beräknar det totala avskrivningsbeloppet för räkenskapsåret. Detta belopp periodiseras sedan till de räkenskapsperioder som har definierats på sidan **Fiscal calendars** för den räkenskapskalender som angetts för boken.
@@ -73,6 +76,8 @@ Avskrivningsbeloppet är samma varje år: Innan ÷tjänstelivstid (om anskaffnin
 | År 3 | (7 000 – 1 000) ÷ 3 = 2 000                   | 5 000                                 |
 | År 4 | (5 000 – 1 000) ÷ 2 = 2 000                   | 3 000                                 |
 | År 5 | (3 000 – 1 000) ÷ 1 = 2 000                   | 1 000                                 |
+
+
 
 
 

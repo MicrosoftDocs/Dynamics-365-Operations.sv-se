@@ -1,6 +1,6 @@
 ---
 title: "Använda arbetsflöden för att hantera medarbetarinformation"
-description: "Det här avsnittet beskrivs hur du kan använda arbetsflödet möjligheten för personal kan du hantera medarbetarinformation. Exempelvis kan du koppla ett arbetsflöde till en befattning konfigurera ett arbetsflöde startas när en medarbetare har ändrat deras posten"
+description: "Det här avsnittet beskriver hur du kan använda arbetsflödeskapacitet för personal får att hantera medarbetarinformation. Exempelvis kan du koppla ett arbetsflöde till en befattning och konfigurera ett godkännandearbetsflöde som startas när en medarbetare har ändrat deras post."
 author: rschloma
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,9 +26,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="use-workflows-to-manage-employee-information"></a>Använda arbetsflöden för att hantera medarbetarinformation
 
-Det här avsnittet beskrivs hur du kan använda arbetsflödet möjligheten för personal kan du hantera medarbetarinformation. Exempelvis kan du koppla ett arbetsflöde till en befattning konfigurera ett arbetsflöde startas när en medarbetare har ändrat deras posten
+[!include[banner](includes/banner.md)]
 
-Arbetsflödet möjligheten för personal innehåller flera arbetsflöden för hantering av Personalaktiviteter. Dessutom finns många alternativ så att du kan ändra särskilda arbetsflöden och koppla dem till företagets hierarki. Arbetsflöden är tillgängliga för att hantera ändringar i flera olika typer av medarbetarinformation som standard. Du kan koppla ett arbetsflöde till en befattning. Sedan om medarbetare ändrar deras medarbetarposten, har ett arbetsflöde startats som måste godkännas innan den nya informationen sparas. Arbetsflöden är fördefinierade för följande typer av information som kan hjälpa dig att effektivt hantera ändringar och behålla de anställdas data korrekt:
+
+Det här avsnittet beskriver hur du kan använda arbetsflödeskapacitet för personal får att hantera medarbetarinformation. Exempelvis kan du koppla ett arbetsflöde till en befattning och konfigurera ett godkännandearbetsflöde som startas när en medarbetare har ändrat deras post.
+
+Arbetsflödeskapaciteten för personal innehåller flera arbetsflöden för hantering av personalaktiviteter. Dessutom finns många alternativ så att du kan ändra särskilda arbetsflöden och koppla dem till en rapporthierarki. Arbetsflöden är tillgängliga för att hantera ändringar i flera olika standardtyper av medarbetarinformation. Du kan associera ett arbetsflöde med en befattning. Om sedan medarbetare ändrar sin medarbetarpost startas ett arbetsflöde som måste godkännas innan den nya informationen sparas. Arbetsflöden är fördefinierade för följande typer av information som kan hjälpa dig att effektivt hantera ändringar och behålla medarbetarnas data korrekt:
 
 -   Identifieringsnummer
 -   Kurser
@@ -39,33 +42,35 @@ Arbetsflödet möjligheten för personal innehåller flera arbetsflöden för ha
 -   Projekterfarenhet
 -   Kompetenser
 -   Förtroendeuppdrag
--   Åtgärder för personal
+-   Personalåtgärder
 -   Kursregistrering
 
-När medarbetare anställs, överförs eller upphävs, kan arbetsflödet innehålla en granskningsprocess. Ett dokument kan ändras på det här sättet eller villkoren för en åtgärd kan definieras som en del av arbetsflödet. När granskningen är klar, dokumentet eller åtgärden slutförs och arbetsflödet fortsätter till steg ett slutligt godkännande.
+När medarbetare anställs, överförs eller sägs upp kan arbetsflödet innehålla en granskningsprocess. På så sätt kan ett dokument ändras eller villkoren för en åtgärd kan definieras som en del av arbetsflödet. När granskningen är klar slutförs dokumentet eller åtgärden och arbetsflödet fortsätter till ett slutligt godkännandesteg.
 
-## <a name="associate-a-workflow-with-a-position-hierarchy"></a>Koppla ett arbetsflöde till en Befattningshierarki
-Du kan koppla ett arbetsflöde till vilken hierarki som helst som du konfigurerar. Om en befattning som är kopplad till matris företagets hierarki, kan du konfigurera ett arbetsflöde som vidarebefordrar utgifter för ett visst projekt till project lead i stället för chef för medarbetare som är kopplad till befattningen. Om du vill skapa ett nytt arbetsflöde eller ändra ett befintligt arbetsflöde på den **personal arbetsflöde** klickar du på **New**. Markera ett arbetsflöde i listan Starta Workflow designer. Du kan använda designer för att skapa ett nytt arbetsflöde eller ändra stegen i ett befintligt arbetsflöde. När du ändrar ett befintligt arbetsflöde, spara ändringarna som en ny version. Därför kan kan du alltid gå tillbaka till en tidigare version om du behöver.
+## <a name="associate-a-workflow-with-a-position-hierarchy"></a>Associera ett arbetsflöde med en befattningshierarki
+Du kan associera ett arbetsflöde till vilken hierarki som helst som du konfigurerar. Om en befattning som är kopplad till en matrisrapporteringshierarki kan du konfigurera ett arbetsflöde som vidarebefordrar utgifter för ett specifikt projekt till projektledning i stället för chefen för den medarbetare som är kopplad till den befattningen. Om du vill skapa ett nytt arbetsflöde eller ändra ett befintligt arbetsflöde på sidan **Personalarbetsflöde** klickar du på **Ny**. Markera ett arbetsflöde i listan för att starta arbetsflödesdesignern. Du kan använda designern för att skapa ett nytt arbetsflöde eller för att ändra stegen i ett befintligt arbetsflöde. När du ändrar ett befintligt arbetsflöde, sparas dina ändringar som en ny version. Därför kan kan du alltid gå tillbaka till en tidigare version om du behöver.
 
-## <a name="configure-a-human-resources-workflow"></a>Konfigurera ett arbetsflöde för personal
-Så här konfigurerar du en grundläggande arbetsflöde startas när anställda gör ändringar i sin personliga kod.
+## <a name="configure-a-human-resources-workflow"></a>Konfigurera personalåtgärdsarbetsflöden
+Om du vill konfigurera ett grundläggande arbetsflöde som startas när anställda begär ändringar i sin personliga kod följer du dessa steg.
 
-1.  I den **Personalarbetsflöden** klickar du på **New**.
-2.  Välj i listan över tillgängliga arbetsflöden **ID-nummer**.
-3.  Klicka på **kör** starta Workflow designer och ange ditt användarnamn och lösenord när du uppmanas.
-4.  Dra den **godkänna identifieringsnummer** element i listan med de arbetsflödeselement som designer arbetsytan.
-5.  Godkännandeelement att ansluta **starta** och **Slutför**.
-6.  Dubbelklicka på **Godkänn elementet**, och sedan högerklicka och välj **egenskaper**.
-7.  Så här lägger du till artikel arbetsinstruktionerna:
-    1.  Välj **tilldelning av**, och välj sedan **hierarki** under Tilldelningstypen.
-    2.  Under den **hierarki** val väljer **hierarki konfigurerbara**.
-    3.  Lägg till ett stoppvillkor och Stäng sidan.
+1.  Klicka på **Ny** på sidan **Personalarbetsflöden**.
+2.  I listan över tillgängliga arbetsflöden väljer du **ID-nummer**.
+3.  Klicka på **Kör** för att starta arbetsflödesdesignern och ange ditt användarnamn och lösenord när du uppmanas.
+4.  Dra elementet **Godkänna identifieringsnummer** från listan med arbetsflödeselement till designerarbetsytan.
+5.  Anslut godkännandeelement för **Starta** och **Slutföra**.
+6.  Dubbelklicka på **Godkänn elementt** och högerklicka sedan och välj **Egenskaper**.
+7.  Så här lägger du till arbetsuppgiftsinstruktioner:
+    1.  Välj **Tilldelning** och välj sedan **Hierarki** under tilldelningstypen.
+    2.  Under **Hierarki** väljer du **Konfigurerbar hierarki**.
+    3.  Lägg till ett stoppvillkor och stäng sidan.
 
-8.  Slutför eventuella ytterligare instruktioner (inga fler varningar inte bör finnas).
-9.  Klicka på **Spara och stäng**. Aktivera det nya arbetsflödet när dialogrutan öppnas och välj **aktivera**.
-10. Gå till **personal**&gt;**positioner**&gt;**placerar hierarkiska typer**.
-11. Välj **matris**.
-12. Lägg till de **arbetare identifieringsnummer** arbetsflöde i listan.
+8.  Slutför eventuella ytterligare instruktioner (inga fler varningar bör finnas).
+9.  Klicka på **Spara och stäng**. Aktivera det nya arbetsflödet när dialogrutan öppnas och välj **Aktivera**.
+10. Gå till **Personal** &gt; **Befattningar** &gt; **Befattningshierarkityper**.
+11. Välj **Matris**.
+12. Lägg till arbetsflödet **Medarbetares ID-nummer** i listan.
+
+
 
 
 

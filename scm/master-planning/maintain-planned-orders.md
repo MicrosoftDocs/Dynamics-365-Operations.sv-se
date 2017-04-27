@@ -29,6 +29,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="maintain-planned-orders"></a>Underhåll planerade order
 
+[!include[banner](../includes/banner.md)]
+
+
 Den här artikeln innehåller information om hur du hanterar planerade order. Det beskriver hur du kan uppdatera statusen för planerade order, bekräfta dem och filtrera för planerade order som har samma status som en vald planerad order.
 
 Du kan hantera planerade order från arbetsytan **Huvudplanering**, listan **Planerad order** eller listorna **Planerade produktionsorder**, **Planerade inköpsorder**och **Planerad överföring**. Du kan använda fältet **Status** för att följa dina framsteg. Följande värden används:
@@ -48,6 +51,8 @@ När en planerad order är bekräftad flyttas den till den relevanta modulens or
 <a name="see-also"></a>Se även
 --------
 
-[Master plans](master-plans.md)
+[Huvudplaner](master-plans.md)
+
+
 
 

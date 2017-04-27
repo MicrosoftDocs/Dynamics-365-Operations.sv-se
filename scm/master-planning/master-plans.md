@@ -1,6 +1,6 @@
 ---
 title: Huvudplaner
-description: "Använda olika huvudplaner för att hantera ditt företags dagliga verksamhet, simulera olika planeringsstrategier som du vill övervaka och implementera en företagspolicy, t ex en princip om tillfredsställande för intern prestanda eller kund."
+description: "Använd olika huvudplaner för att hantera ditt företags dagliga verksamhet, simulera olika planeringsstrategier som du vill övervaka, och implementera en företagspolicy, till exempel en policy för intern prestanda eller kundvård."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -29,7 +29,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="master-plans"></a>Huvudplaner
 
-Använda olika huvudplaner för att hantera ditt företags dagliga verksamhet, simulera olika planeringsstrategier som du vill övervaka och implementera en företagspolicy, t ex en princip om tillfredsställande för intern prestanda eller kund. 
+[!include[banner](../includes/banner.md)]
+
+
+Använd olika huvudplaner för att hantera ditt företags dagliga verksamhet, simulera olika planeringsstrategier som du vill övervaka, och implementera en företagspolicy, till exempel en policy för intern prestanda eller kundvård. 
 
 Du kan konfigurera huvudplaner på sidan **Huvudplaner**.
 
@@ -50,8 +53,10 @@ Du kan också ställa in den dynamiska planen så att den uppdateras med den nya
 
 [Disponeringsinställningar](coverage-settings.md)
 
-[Separera taktisk och avgörande planering för huvudplanering](http://blogs.msdn.com/b/axmfg/archive/2012/10/12/separating-tactical-and-operative-planning-for-master-scheduling.aspx)
+[Separera taktisk och operativ planering för huvudplanering](http://blogs.msdn.com/b/axmfg/archive/2012/10/12/separating-tactical-and-operative-planning-for-master-scheduling.aspx)
 
-[Master Planning: En statisk och dynamisk huvudplan eller använda en plan?](https://community.dynamics.com/ax/b/msdynaxlessonslearned/archive/2014/01/16/master-planning-use-a-static-and-dynamic-master-plan-or-use-one-plan)
+[Huvudplanering: Använda en statisk och dynamisk huvudplan eller en enda plan?](https://community.dynamics.com/ax/b/msdynaxlessonslearned/archive/2014/01/16/master-planning-use-a-static-and-dynamic-master-plan-or-use-one-plan)
+
+
 
 

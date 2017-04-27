@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="procurement-catalogs"></a>Anskaffningskataloger
 
+[!include[banner](../includes/banner.md)]
+
+
 Den här artikeln beskriver, på en hög nivå, hur professionella inköpare kan ställa in och underhålla anskaffningskataloger. Anskaffningskataloger definierar de artiklar och tjänster som anställda i företaget kan beställa för intern användning.
 
 Inköpsproffs kan skapa och underhålla kataloger av de artiklar och tjänster som kan köpas i för intern användning i en organisation. När kataloger ställs in kan företagets anställda skapa inköpsrekvisitioner för att beställa från dem. Katalogerna kan användas för att framtvinga inköpspolicyer så att medarbetare kan beställa enbart de artiklar och tjänster som tillåts för deras köpande juridiska person. När du skapar en anskaffningskatalog bör du beakta följande uppgifter:
@@ -52,7 +55,7 @@ I tabellen nedan beskrivs vilka uppgifter som måste utföras innan en inköpare
 ## <a name="setting-up-a-catalog"></a>Ställa in en katalog
 När förutsättningarna uppfylls kan du ställa in kataloger. Du kan skapa antingen en katalog som hela din organisation använder, eller kataloger som de olika avdelningarna i din organisation använder. Om du skapar en katalog för hela organisationen, kontrolleras åtkomsten till katalogen av dina inköpspolicyregler.  
 
-Katalogen definierar vilka produkter som är tillgängliga när inköpsrekvisitioner skapas, men du kan använda en kategoripolicyregel för åtkomst för att tillämpa ytterligare begränsningar. Eftersom noderna i en katalog är anskaffningkategorier, kan de undertryckas av en kategoripolicyregeln för åtkomst. Då är produkterna i kategorin inte tillgängliga för medarbetare som ska användas för inköpsrekvisitioner. Du definierar policyreglerna för kategoriåtkomst på de **inköpspolicyer** sida. I tabellen nedan beskrivs vilka uppgifter som måste utföras för att ställa in en katalog.
+Katalogen definierar vilka produkter som är tillgängliga när inköpsrekvisitioner skapas, men du kan använda en kategoripolicyregel för åtkomst för att tillämpa ytterligare begränsningar. Eftersom noderna i en katalog är anskaffningkategorier, kan de undertryckas av en kategoripolicyregeln för åtkomst. Då är produkterna i kategorin inte tillgängliga för medarbetare för användning i inköpsrekvisitioner. Du definierar policyreglerna för kategoriåtkomst på sidan **Inköpspolicyer**. I tabellen nedan beskrivs vilka uppgifter som måste utföras för att ställa in en katalog.
 
 | Uppgift                                                   | Roll             | Beskrivning                                                                                                                                                                                                                                                                                                                  |
 |--------------------------------------------------------|------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -70,6 +73,8 @@ Uppdateringar publiceras automatiskt eller fylls i manuellt, beroende på det al
 <a name="see-also"></a>Se även
 --------
 
-[Ställ in anskaffningskategorihierarki (aktivitet guide)](http://ax.help.dynamics.com/en/wiki/set-up-a-procurement-category-hierarchy/)
+[Ställa in en kategorihierarki för anskaffning (uppgiftsguide)](http://ax.help.dynamics.com/en/wiki/set-up-a-procurement-category-hierarchy/)
+
+
 
 

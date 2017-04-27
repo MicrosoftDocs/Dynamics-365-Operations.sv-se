@@ -26,9 +26,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="purchase-orders-for-a-project"></a>Inköpsorder för ett projekt
 
+[!include[banner](../includes/banner.md)]
+
+
 Den här artikeln beskriver de olika metoder du kan använda för att skapa inköpsorder för ett projekt. Metoden som du använder, beror på syftet med inköpsordern och när inköpta artiklarna förbrukas och debiteras ett projekt.
 
-Du kan använda flera metoder för att skapa inköpsorder för ett projekt i Microsoft Dynamics 365 för operationer. Metoden som du använder, beror på syftet med inköpsordern, när de inköpta artiklarna förbrukas, och när inköpta artiklarna debiteras ett projekt.
+I Microsoft Dynamics 365 for Operations kan du använda flera olika sätt för att skapa inköpsorder för ett projekt. Metoden som du använder, beror på syftet med inköpsordern, när de inköpta artiklarna förbrukas, och när inköpta artiklarna debiteras ett projekt.
 
 ### <a name="methods-for-creating-a-purchase-order"></a>Metoder för att skapa en inköpsorder
 
@@ -72,5 +75,7 @@ Du kan använda en av följande metoder för att skapa en inköpsorder i Projekt
 
 > [!NOTE] 
 > När du uppdaterar leverantörsfakturan eller följesedeln uppmanas du att uppdatera följesedeln på artikelbehovet.
+
+
 
 

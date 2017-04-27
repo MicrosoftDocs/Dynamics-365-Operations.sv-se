@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="straight-line-service-life-depreciation"></a>Linjär avskrivning av tjänstelivstid
 
+[!include[banner](../includes/banner.md)]
+
+
 Det här avsnittet ger en översikt över metoden för linjär tjänstelivstid för avskrivning.
 
 När du ställer in en avskrivningsprofil för anläggningstillgångar och väljer Linjär återstående tjänstelivstid i fältet Metod på sidan Avskrivningsprofiler baseras avskrivningen av anläggningstillgångar som är tilldelade till den här avskrivningsprofilen på tillgångens totala tjänstelivstid. Det är vanligtvis samma avskrivningsbelopp i varje avskrivningsperiod. 
@@ -57,7 +60,7 @@ Om du till exempel väljer Årligen, bokförs årets avskrivning alltså bara en
 
 Om du väljer Räkenskapsår i fältet Avskrivningsår används linjär avskrivning av tjänstelivstid. Den beräknas utifrån räkenskapsåret, som definieras av den räkenskapskalender som anges för boken, eller utifrån räkenskapskalendern som valts på sidan Redovisning. Räkenskapskalendrar ställs in på sidan Räkenskapskalendrar.
 
-För räkenskapsåret 1 juli till och med den 30 juni påbörjas avskrivningsberäkningen exempelvis 1 juli. Räkenskapsåret kan vara längre eller kortare än 12 månader. Avskrivningen justeras automatiskt för varje räkenskapsperiod. Längden på nästa räkenskapsår baseras på de räkenskapsperioder som du ställer in när du skapar ett nytt räkenskapsår i formuläret Räkenskapskalendrar. 
+Exempelvis för räkenskapsåret 1 juli - 30 juni startar alltså avskrivningsberäkningen den 1 juli. Räkenskapsåret kan vara längre eller kortare än 12 månader. Avskrivningen justeras automatiskt för varje räkenskapsperiod. Längden på nästa räkenskapsår baseras på de räkenskapsperioder som du ställer in när du skapar ett nytt räkenskapsår i formuläret Räkenskapskalendrar. 
 
 Om du väljer Räkenskapsår har du följande alternativ i fältet Räkenskapsår.
 -   Årligen bokför det totala avskrivningsbeloppet som beräknas för räkenskapsåret som ett belopp på räkenskapsårets sista dag.
@@ -98,9 +101,11 @@ Anskaffningsjusteringens tjänstelivstid är samma som anläggningstillgångens 
 | År 3 | 14 000 / 5 = 2 800                        | 10 200 - 2 800 = 7 400                |
 | År 4 | 14 000 / 5 = 2 800                        | 7 400 - 2 800 = 4 600                 |
 | År 5 | 14 000 / 5 = 2 800                        | 4 600 - 2 800 = 1 800                 |
-| År 6 | Återstående 800\*                           | 1 800 – 800 = 1 000                   |
+| År 6 | Resterande 800\*                           | 1 800 – 800 = 1 000                   |
 
-\*Eftersom det resterande beloppet är mindre än avskrivningsbeloppet hämtas endast det resterande beloppet minus restvärdet.
+\*Eftersom det resterande beloppet är mindre än avskrivningsbeloppet hämtas endast det resterande beloppet minus skrotvärdet.
+
+
 
 
 

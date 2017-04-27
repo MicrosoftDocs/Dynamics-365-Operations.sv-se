@@ -28,6 +28,9 @@ ms.lasthandoff: 03/29/2017
 
 # <a name="costing-versions"></a>Kostnadsredovisningsversioner
 
+[!include[banner](../includes/banner.md)]
+
+
 Det här avsnittet innehåller information om kostnadsversioner, hur du underhåller dem och datatyperna som du kan inkludera i dem. Det primära syftet med en kostnadsredovisningsversion är att den innehåller kostnadsposter om artiklar, kostnadskategorier och beräkningsformler för indirekta kostnader.
 
 En kostnadsredovisningsversion kan fylla ett eller flera syften beroende på data som finns i kostnadsredovisningsversionen. Det primära syftet med en kostnadsredovisningsversion är att den innehåller kostnadsposter om artiklar, kostnadskategorier och beräkningsformler för indirekta kostnader. En kostnadsversion kan innehålla en uppsättning standardkostnadsposter eller en uppsättning planerade kostnadsposter som baseras på kostnadstypen som tilldelas kostnadsversionen.
@@ -63,5 +66,7 @@ Huvudsyftet med att aktivera inköpsprisdata är att definiera inköpsprisposter
 Om du vill aktivera inköpsprisinnehåll definierar du först en strukturlisteberäkningsgrupp som innehåller en självkostnadsmodell för artikelns inköpspris och tilldelar strukturlisteberäkningsgruppen till inköpta artiklar. Du använder sedan en självkostnadsmodell för strukturlisteberäkningsgruppen när du utför strukturlisteberäkningar med planerade kostnader för att beräkna försäljningpriset för tillverkade artiklar. 
 
 Inköpsprisposterna för artiklar används även som referensinformation. Genom att ändra status för en artikels inköpsprispost från **Väntande** till **Aktiv** går det att uppdatera artikelns basinköpspris. Basinköpspriset är dock inte platsspecifikt och går att åsidosätta manuellt. Artikelns basinköpspris används som standardinköpspris på inköpsorder.
+
+
 
 

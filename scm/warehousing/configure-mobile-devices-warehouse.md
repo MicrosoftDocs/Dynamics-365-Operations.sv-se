@@ -1,5 +1,5 @@
 ---
-title: "Konfigurera mobila enheter för lagerställe"
+title: "Konfigurera mobila enheter för lagerarbete"
 description: "Den här artikeln beskriver hur du konfigurerar menyalternativ som lagerarbetare använder för att utföra arbete på en mobil enhet."
 author: YuyuScheller
 manager: AnnBe
@@ -25,7 +25,7 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="set-up-mobile-devices-for-warehouse-work"></a>Konfigurera mobila enheter för lagerställe
+# <a name="set-up-mobile-devices-for-warehouse-work"></a>Konfigurera mobila enheter för lagerarbete
 
 Den här artikeln beskriver hur du konfigurerar menyalternativ som lagerarbetare använder för att utföra arbete på en mobil enhet.
 
@@ -35,7 +35,7 @@ Den här artikeln beskriver hur du konfigurerar menyalternativ som lagerarbetare
 -   Skapa arbete som ska utföras genom en annan process. Mottagning av en artikel för en inköpsorder kan till exempel skapa inlagrat arbete för en annan arbetstagare.
 -   Utför arbete som har skapats av en annan process (befintligt arbete), som till exempel inlagrat arbete som har skapats när en artikel inlevererades för en inköpsorder.
 
-Så här skapar du ett menyalternativ för en aktivitet eller en förfrågan i **läge** till **indirekt**. En lista över **Aktivitetskod** alternativ och sedan blir tillgänglig, så att du kan välja typ av fråga eller aktivitet som avser menyalternativet. Så här skapar du ett menyalternativ om du vill generera lagerarbete de **läge** till **arbetar**. En lista över **arbetar skapas** alternativ och sedan blir tillgänglig. För att skapa ett menyalternativ för att bearbeta befintliga lagerarbete konfigurerar du fältet **Metod** till **Arbete** och sedan anger du alternativet **Använd befintligt arbete** som **Ja**. **Anmärkning:** kan finnas ytterligare fält för menyalternativ, beroende på läget som du väljer på menyn objekt och om menyalternativet för att utföra befintliga. Information om ytterligare fältvalen avsnittet "ytterligare artikel menyalternativ" nedan.
+För att skapa ett menyalternativ för en aktivitet eller en förfrågan, ange fältet **Läge** som **Indirekt**. En lista alternativen för **Aktivitetskod** blir sedan tillgänglig, så att du kan välja typ av fråga eller aktivitet som menyalternativet avser. För att skapa ett menyalternativ för att generera lagerarbete, ange fältet **Läge** som **Arbete**. En lista över alternativen för **Skapandeprocess för arbete** blir sedan tillgänglig. För att skapa ett menyalternativ för att bearbeta befintliga lagerarbete konfigurerar du fältet **Metod** till **Arbete** och sedan anger du alternativet **Använd befintligt arbete** som **Ja**. **Obs!** Beroende på det läge som du väljer för menyalternativet och om menyalternativet används för att utföra befintligt arbete, kan det finnas ytterligare fält tillgängliga för menyalternativet. Se avsnittet ”Ytterligare menyalternativ" senare i det här avsnittet för information om ytterligare fältval.
 
 ## <a name="configure-menu-items-for-activities-and-inquiries"></a>Konfigurera menyalternativ för aktiviteter och förfrågningar
 Om fältet **Metod** för ett menyalternativ anges som **Indirekt**, kan du skapa ett menyalternativ för att utföra en allmän aktivitet eller förfrågning som inte skapar arbete. Till exempel nyutskrift av registreringsskyltar och en förfrågan om artiklar på en plats. I följande tabell finns de alternativ som är tillgängliga.
@@ -190,7 +190,7 @@ Du kan ställa in en menykommando som skapar arbete för en annan anställd, eft
 </table>
 
 ## <a name="configure-menu-items-to-process-existing-work"></a>Ställa in menyalternativ för att bearbeta befintligt arbete
-Förutom inställningar av menyalternativ som skapar lagerställearbete, kan du ställa in menyalternativ till processarbete som redan har skapats. Ställ in fältet **Metod** till **Arbete** och välj alternativet **Använd befintligt arbete**. Ytterligare alternativ blir tillgängliga på de **allmänna** fliken. Du kan styra åtkomsten till menyalternativet genom att tilldela en eller flera klasser för arbete på de **fungerar klassen** på snabbfliken. Arbetsklasserna definierar det arbete som menyalternativet kan bearbeta. Arbetsklassen kan också användas för att bevilja åtkomst till specifika användarroller eller för separat bearbetning för andra typer av operationer. I följande tabell beskriver de alternativ som är tillgängliga.
+Förutom inställningar av menyalternativ som skapar lagerställearbete, kan du ställa in menyalternativ till processarbete som redan har skapats. Ställ in fältet **Metod** till **Arbete** och välj alternativet **Använd befintligt arbete**. Vissa ytterligare alternativ blir sedan tillgängliga på fliken **Allmänt**. Du kan styra åtkomsten till menyalternativet genom att tilldela en eller flera klasser för arbete på snabbfliken **Arbetsklass**. Arbetsklasserna definierar det arbete som menyalternativet kan bearbeta. Arbetsklassen kan också användas för att bevilja åtkomst till specifika användarroller eller för separat bearbetning för andra typer av operationer. I följande tabell beskriver de alternativ som är tillgängliga.
 
 <table>
 
@@ -210,7 +210,7 @@ Förutom inställningar av menyalternativ som skapar lagerställearbete, kan du 
 </tr>
 <tr class="even">
 <td>Systemstyrd</td>
-<td>Microsoft Dynamics 365 för operationer kontrollerar vilken typ av arbete som har tilldelats en arbetare och i vilken ordning som personen utför i arbetet. När du väljer det här alternativet om du klickar på <strong>arbete styrda System</strong> i åtgärdsfönstret för att öppna den <strong>System styrda sorteringsordning</strong> sida där du kan ställa in sorteringskriterier för resurs. Sorteringskriteriet styra ordningen som personen utför i arbetet. Du kan lägga till så många kriterier som du behöver.</td>
+<td>Microsoft Dynamics 365 for Operations kontrollerar den typ av arbete som har tilldelats en arbetare och i vilken ordning som personen utför arbetet. När du väljer det här alternativet kan du klicka på <strong>Systemstyrt arbete</strong> i åtgärdsfönstret för att öppna sidan <strong>Systemstyrd sorteringsordning</strong>, där du kan ställa in sorteringskriterier för resursen. Sorteringskriteriet kontrollerar den följd i vilken arbetaren utför arbetet. Du kan lägga till så många kriterier som du behöver.</td>
 </tr>
 <tr class="odd">
 <td>Användarstyrd</td>
@@ -230,7 +230,7 @@ Förutom inställningar av menyalternativ som skapar lagerställearbete, kan du 
 </tr>
 <tr class="even">
 <td>Styrs av validerad användare</td>
-<td>Arbetaren väljer det arbete som ska utföras när jobbet är kopplat till en större enhet, till exempel en last eller en försändelse. Arbetaren är avgörande som artiklarna har plockats i. Om du väljer det här alternativet krävs följande fält:
+<td>Arbetaren väljer det arbete som ska utföras när jobbet är kopplat till en större enhet, till exempel en last eller en försändelse. Arbetaren bestämmer den ordningsföljd som artiklarna plockas i. Om du väljer det här alternativet krävs följande fält:
 <ul>
 <li><strong>Fält för validerad användarstyrning</strong> – Välj det fält som arbetaren ska skanna för att gruppera arbetet.</li>
 <li><strong>Etikett för validerad användarstyrning</strong> – Ange text som instruerar arbetaren om vad som skannas när plockarbetet grupperas av systemet.</li>
@@ -271,7 +271,7 @@ I följande register beskrivs dessa alternativ.
 </tr>
 <tr class="even">
 <td>Förankring</td>
-<td>Markera det här alternativet om du låta arbetare ange en plats som åsidosätter den föreslagna platsen för mellanlagring eller lastning. Allt resterande inlagrat arbete dirigeras till den nya platsen. Detta alternativ är praktiskt när t.ex. en arbetstagare som måste inlagra artiklar för order 1 på en mellanlagringsplats efter docka 1, inte kan göra detta eftersom en tidigare last inte har rensats från platsen. I stället för plats 1 mellanlagring plats blir tillgängligt, kan arbetaren välja att använda den tillfälliga platsen för plats 2. I det här fallet åsidosätter den föreslagna platsen för tillfälliga arbetaren. Läggplatsen för alla återstående artiklar för arbetsordern uppdateras då till mellanlagringsplatsen Docka 2. Om du väljer det här alternativet måste du ställa in fältet <strong>Förankra efter</strong>.</td>
+<td>Markera det här alternativet om du låta arbetare ange en plats som åsidosätter den föreslagna platsen för mellanlagring eller lastning. Allt resterande inlagrat arbete dirigeras till den nya platsen. Detta alternativ är praktiskt när t.ex. en arbetstagare som måste inlagra artiklar för order 1 på en mellanlagringsplats efter docka 1, inte kan göra detta eftersom en tidigare last inte har rensats från platsen. I stället för att vänta på att mellanlagringplatsen Dock 1 blir tillgänglig, kan arbetaren välja att använda mellanlagringsplatsen för Dock 2. I det här fallet åsidosätter arbetaren den föreslagna mellanlagringsplatsen. Läggplatsen för alla återstående artiklar för arbetsordern uppdateras då till mellanlagringsplatsen Docka 2. Om du väljer det här alternativet måste du ställa in fältet <strong>Förankra efter</strong>.</td>
 </tr>
 <tr class="odd">
 <td>Förankra efter</td>
@@ -380,7 +380,7 @@ I följande register beskrivs dessa alternativ.
 </tr>
 <tr class="odd">
 <td>Kod för arbetsmall</td>
-<td>Välj den arbetsmall som ska användas för att skapa arbetet för en process. Exempelvis om du får en artikel för en inköpsorder, genereras artikelinförsel arbetet utifrån mallen arbete. Om du inte väljer en mall för arbetet, tilldelar Microsoft Dynamics 365 för en mall baserad på frågevillkor. Mer information om arbetsmallar finns i <a href="control-warehouse-location-directives.md">Kontrollera lagerarbete med arbetsmallar och platsdirektiv</a>.</td>
+<td>Välj den arbetsmall som ska användas för att skapa arbetet för en process. Om du till exempel tar emot en artikel för en inköpsorder, genereras det inlagrade arbetet baserat på arbetsmallen. Om du inte väljer en mall för arbetet, tilldelar Microsoft Dynamics 365 for Operations en mall, baserat på frågevillkor. Mer information om arbetsmallar finns i <a href="control-warehouse-location-directives.md">Kontrollera lagerarbete med arbetsmallar och platsdirektiv</a>.</td>
 </tr>
 </tbody>
 </table>
@@ -409,8 +409,8 @@ I tabellen nedan beskrivs de olika arbetstyperna som du kan använda arbetsbekr�
 
 [Visningsinställningar för mobil lagerställeenhet](change-warehouse-mobile-device-displays.md)
 
-[Ställ in ett menyalternativ för mobil enhet för att slutföra arbetet med typen inköpsorder (aktivitet guide)](https://ax.help.dynamics.com/en/wiki/set-up-a-mobile-device-menu-item-for-completing-work-of-type-purchase-order/)
+[Ställ in ett menyalternativ för mobila enheter för att utföra arbete av typen Inköpsorder (uppgiftsguide)](https://ax.help.dynamics.com/en/wiki/set-up-a-mobile-device-menu-item-for-completing-work-of-type-purchase-order/)
 
-[Ställa in en mobiltelefon menyalternativet registrera inlevererade artiklar (aktivitet guide)](https://ax.help.dynamics.com/en/wiki/set-up-a-mobile-device-menu-item-to-register-received-items/)
+[Ställ in ett menyalternativ för mobila enheter för att registrera mottagna artiklar (uppgiftsguide)](https://ax.help.dynamics.com/en/wiki/set-up-a-mobile-device-menu-item-to-register-received-items/)
 
 

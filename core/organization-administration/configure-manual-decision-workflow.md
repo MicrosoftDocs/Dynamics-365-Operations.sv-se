@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="configure-a-manual-decision-in-a-workflow"></a>Konfigurera ett manuellt beslut i ett arbetsflöde
 
+[!include[banner](../includes/banner.md)]
+
+
 I det här avsnittet beskrivs hur du konfigurerar olika egenskaper för ett manuellt beslut.
 
 Högerklicka det manuella beslutet och klicka sedan på **Egenskaper** för att öppna sidan **Egenskaper** om du vill konfigurera ett manuellt beslut i arbetsflödesredigeraren. Använd sedan följande procedurer när du vill konfigurera egenskaperna för det manuella beslutet.
@@ -95,8 +98,8 @@ Du kan skicka meddelanden till andra när ett beslut har fattats, delegerats ell
 
 1.  Klicka på **Meddelanden** i det vänstra fönstret.
 2.  Markera kryssrutan bredvid händelserna som meddelandena ska skickas för:
-    -   **\[Alternativ 1\]** – den tilldelade användaren har valt **\[val 1\]**.
-    -   **\[Val 2\]** – den tilldelade användaren har valt **\[val 2\]**.
+    -   **\[Val 1\]** – Den tilldelade användaren har valt **\[Val 1\]**.
+    -   **\[Val 2\]** – Den tilldelade användaren har valt **\[Val 2\]**.
     -   **Delegera** – Den tilldelade användaren har delegerat beslutet till en annan användare.
     -   **Eskalera** – Den tilldelade användaren har inte fattat beslutet inom angiven tid.
 
@@ -148,10 +151,10 @@ Du kan skicka meddelanden till andra när ett beslut har fattats, delegerats ell
     </tr>
     <tr class="odd">
     <td>Användare</td>
-    <td>Specifika Microsoft Dynamics 365 för användare av operationer</td>
+    <td>Specifika Microsoft Dynamics 365 for Operations-användare</td>
     <td><ol>
     <li>Klicka på fliken <strong>Användare</strong> när du har valt <strong>Användare</strong>.</li>
-    <li>Den <strong>tillgängliga användare</strong> listan innehåller alla Dynamics 365 för användare av operationer. Markera de användare som du vill skicka meddelanden till, och flytta sedan dessa användare till listan <strong>Markerade användare</strong>.</li>
+    <li>Listan <strong>Tillgängliga användare</strong> innehåller alla Dynamics 365 for Operations-användare. Markera de användare som du vill skicka meddelanden till, och flytta sedan dessa användare till listan <strong>Markerade användare</strong>.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -213,10 +216,10 @@ Följ dessa steg för att ange vem som ska tilldelas ett manuellt beslut.
     </tr>
     <tr class="even">
     <td>Användare</td>
-    <td>Specifika Dynamics 365 för användare av operationer</td>
+    <td>Specifika Dynamics 365 for Operations-användare</td>
     <td><ol>
     <li>Klicka på fliken <strong>Användare</strong> när du har valt <strong>Användare</strong>.</li>
-    <li>Den <strong>tillgängliga användare</strong> listan innehåller alla Dynamics 365 för användare av operationer. Markera de användare som ska tilldelas beslutet och flytta sedan dessa till listan <strong>Markerade användare</strong>.</li>
+    <li>Listan <strong>Tillgängliga användare</strong> innehåller alla Dynamics 365 for Operations-användare. Markera de användare som ska tilldelas beslutet och flytta sedan dessa till listan <strong>Markerade användare</strong>.</li>
     </ol></td>
     </tr>
     <tr class="odd">
@@ -234,8 +237,8 @@ Följ dessa steg för att ange vem som ska tilldelas ett manuellt beslut.
     <li>I listan <strong>Kötyp</strong> väljer du <strong>Villkorsbelagda arbetsuppgiftsköer</strong>.</li>
     <li>I listan <strong>Könamn</strong> väljer du <strong>Villkorsbaserad kö</strong>.</li>
     </ol></li>
-    </ol><ph id="t1">
-    </ph><strong>Anmärkning:</strong> detta alternativ används för bara några arbetsflöden till exempel fallhantering.</td>
+    </ol>
+    <strong>Obs!</strong> Detta alternativ används bara för vissa arbetsflöden, till exempel ärendehantering.</td>
     </tr>
     </tbody>
     </table>
@@ -258,9 +261,9 @@ Om en användare inte fattar beslutet inom den tilldelade tiden, är beslutet f�
     |----------|----------------------------|
     | 1        | Tilldela till: Donna           |
     | 2        | Tilldela till: Erin            |
-    | 3        | Sista åtgärd: \[val 1\] |
+    | 3        | Slutgiltig åtgärd; \[Val 1\] |
 
-    I detta scenario tilldelar systemet det försenade beslutet till Donna. Om Donna inte fattar beslutet inom angiven tidsperiod, tilldelar systemet beslutet till Erin. Om Erin inte har bestämt på utsatt tid väljer systemet **\[val 1\]** som beslutet.
+    I detta scenario tilldelar systemet det försenade beslutet till Donna. Om Donna inte fattar beslutet inom angiven tidsperiod, tilldelar systemet beslutet till Erin. Om Erin inte fattar beslutet inom angiven tidsperiod, väljer systemet **\[Val 1\]** som beslut.
 3.  Klicka på **Lägg till eskalering** för att lägga till en användare i eskaleringsvägen. I följande register väljer du ett av alternativen och följer sedan de ytterligare stegen för detta alternativ innan du går vidare till steg 4.
     <table>
     <colgroup>
@@ -303,10 +306,10 @@ Om en användare inte fattar beslutet inom den tilldelade tiden, är beslutet f�
     </tr>
     <tr class="odd">
     <td>Användare</td>
-    <td>Specifika Dynamics 365 för användare av operationer</td>
+    <td>Specifika Dynamics 365 for Operations-användare</td>
     <td><ol>
     <li>Klicka på fliken <strong>Användare</strong> när du har valt <strong>Användare</strong>.</li>
-    <li>Den <strong>tillgängliga användare</strong> listan innehåller alla Dynamics 365 för användare av operationer. Markera de användare som beslutet ska eskaleras till, och flytta sedan dessa till listan <strong>Markerade användare</strong>.</li>
+    <li>Listan <strong>Tillgängliga användare</strong> innehåller alla Dynamics 365 for Operations-användare. Markera de användare som beslutet ska eskaleras till, och flytta sedan dessa till listan <strong>Markerade användare</strong>.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -335,6 +338,8 @@ Följ dessa steg om beslutet måste fattas inom en viss tid. **Obs!** De alterna
     -   **År –** – Välj dag, vecka och månad då beslutet senast måste vara fattat. Du kanske till exempel vill att beslutet ska vara fattat senast på fredagen i den tredje veckan i december.
 
 4.  Om tidsgränsen överskrids kommer systemet att fatta beslutet. I listan **Åtgärd** väljer du det alternativ som systemet ska vidta.
+
+
 
 
 

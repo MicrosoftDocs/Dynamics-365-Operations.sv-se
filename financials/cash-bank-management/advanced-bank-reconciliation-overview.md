@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="advanced-bank-reconciliation-overview"></a>Översikt över avancerad bankavstämning
 
+[!include[banner](../includes/banner.md)]
+
+
 Det här avsnittet beskriver flödet för den avancerade bankavstämningsprocessen. Med hjälp av den avancerade bankavstämningsfunktionen kan du importera bankutdrag som kan vara automatiskt avstämda inom banktransaktioner.
 
 Den avancerade bankavstämningsfunktionen gör att du kan importera bankutdrag. Det importerade bankutdraget kan sedan automatiskt stämmas av från banktransaktioner. Här följer stegen i flödet för avancerad bankavstämning.
@@ -38,13 +41,15 @@ Den avancerade bankavstämningsfunktionen gör att du kan importera bankutdrag. 
     -   Funktionen kan utökas till alla format.
 
 2.  Ställ in en nummerserie som ska användas för avancerad bankavstämning och definiera matchningsregler för bankavstämning.
-    -   Matchningsregel för bankavstämning är en uppsättning villkor som används för att filtrera bankutdragsrader och Microsoft Dynamics 365 för operationer bank transaktionsrader under avstämningsprocessen. Du kan ställa in fler än en matchande regel att automatisera och optimera din avstämningsprocessen beroende på din affärsverksamhet.
+    -   En regel för avstämningsmatchning är en uppsättning villkor som används för att filtrera bankutdragsrader och transaktionsrader för Microsoft Dynamics 365 for Operations under avstämningsprocessen. Du kan ställa in mer än en matchningsregel att automatisera och optimera din avstämningsprocess beroende på din affärsverksamhet.
 
-3.  Stämma av bankutdrag med Dynamics 365 för operationer banktransaktioner.
+3.  Stäm av bankutdragen med banktransaktioner för Dynamics 365 for Operation.
     -   Utför automatisk matchning och genereringen av avstämningsjournaler.
-    -   Visa bankkontoutdrag och Dynamics 365 för operationer banktransaktioner sida vid sida.
-    -   Bokför Dynamics 365 för operationer banktransaktioner automatiskt om de visas på kontoutdraget från banken inte men i Dynamics 365 för operationer.
+    -   Visa bankutdrag och Microsoft 365 for Operations-banktransaktioner sida vid sida.
+    -   Bokför Microsoft Dynamics 365 for Operations-banktransaktioner automatiskt om de visas på ett bankutdrag men inte i Microsoft 365 for Operations.
     -   Generera ett avstämningsutdrag.
+
+
 
 
 

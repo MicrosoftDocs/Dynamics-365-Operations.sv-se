@@ -1,6 +1,6 @@
 ---
 title: "Översikt över nummerserier"
-description: "Nummerserier i Microsoft Dynamics 365 för operationer används för att generera läsliga unika identifierare för huvuddataposter och transaktionsposter som kräver identifierare. En huvuddatapost eller en transaktionspost som kräver en identifierare kallas för en <em>referens</em>."
+description: "Nummerserier i Microsoft Dynamics 365 for Operations används för att generera läsliga unika identifierare för huvuddataposter och transaktionsposter som kräver identifierare. En huvuddatapost eller en transaktionspost som kräver en identifierare kallas för en <em>referens</em>."
 author: MargoC
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,9 +26,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="number-sequence-overview"></a>Översikt över nummerserier
 
-Nummerserier i Microsoft Dynamics 365 för operationer används för att generera läsliga unika identifierare för huvuddataposter och transaktionsposter som kräver identifierare. En huvuddatapost eller en transaktionspost som kräver en identifierare kallas för en <em>referens</em>.
+[!include[banner](../includes/banner.md)]
 
-Innan du kan skapa nya poster för en referens i Microsoft Dynamics 365 för operationer, måste du ställa in en nummerserie och associera den med referensen. Vi rekommenderar att du använder sidorna i **Organisationsadministration** för att ställa in nummerserier. Om modulspecifika inställningar krävs kan du använda parametersidan i en modul för att ange nummerserier för referenserna i den modulen. I **Kundreskontra** och **Leverantörsreskontra** kan du till exempel ställa in nummerseriegrupper för att allokera specifika nummerserier till vissa kunder eller leverantörer. När du anger en nummerserie, måste du ange omfång, som definierar vilken organisation som använder nummerserien. Omfånget kan vara **Delat**, **Företag**, **Juridisk person** eller **Driftenhet**. Omfattningarna **Juridisk person** och **Företag** kan kombineras med **Räkenskapskalenderperiod** för att skapa ännu mer specifika nummerserier. Nummerserieformat består av segment. Nummerserier som har ett annat omfång än **Delat** kan innehålla segment som motsvarar omfånget. Till exempel kan en nummerserie med omfånget **Juridisk person** innehålla ett segment med en juridisk person. Genom att inkludera ett omfångsegment i nummerserieformatet kan du identifiera omfånget för en viss post med hjälp av numret. Förutom segment som motsvarar omfång kan nummerserieformat innehålla **konstanta** och **alfanumeriska segment**. Ett **konstant** segment innehåller en uppsättning bokstäver, siffror eller symboler som inte ändras. Ett **alfanumeriskt** segment innehåller en uppsättning bokstäver eller siffror som ökar varje gång ett nummer används. Använd ett nummertecken (\#) ökande nummer och ett et-tecken (&) för att representera latinska tecken ökande. Exempel: format \#\#\#\#\#\_2017 skapar sekvensen 00001\_2017, 00002\_2017 och så vidare.
+
+Nummerserier i Microsoft Dynamics 365 for Operations används för att generera läsliga unika identifierare för huvuddataposter och transaktionsposter som kräver identifierare. En huvuddatapost eller en transaktionspost som kräver en identifierare kallas för en <em>referens</em>.
+
+Innan du kan skapa nya poster för en referens i Microsoft Dynamics 365 for Operations måste du ställa in en nummerserie och koppla den till referensen. Vi rekommenderar att du använder sidorna i **Organisationsadministration** för att ställa in nummerserier. Om modulspecifika inställningar krävs kan du använda parametersidan i en modul för att ange nummerserier för referenserna i den modulen. I **Kundreskontra** och **Leverantörsreskontra** kan du till exempel ställa in nummerseriegrupper för att allokera specifika nummerserier till vissa kunder eller leverantörer. När du anger en nummerserie, måste du ange omfång, som definierar vilken organisation som använder nummerserien. Omfånget kan vara **Delat**, **Företag**, **Juridisk person** eller **Driftenhet**. Omfattningarna **Juridisk person** och **Företag** kan kombineras med **Räkenskapskalenderperiod** för att skapa ännu mer specifika nummerserier. Nummerserieformat består av segment. Nummerserier som har ett annat omfång än **Delat** kan innehålla segment som motsvarar omfånget. Till exempel kan en nummerserie med omfånget **Juridisk person** innehålla ett segment med en juridisk person. Genom att inkludera ett omfångsegment i nummerserieformatet kan du identifiera omfånget för en viss post med hjälp av numret. Förutom segment som motsvarar omfång kan nummerserieformat innehålla **konstanta** och **alfanumeriska segment**. Ett **konstant** segment innehåller en uppsättning bokstäver, siffror eller symboler som inte ändras. Ett **alfanumeriskt** segment innehåller en uppsättning bokstäver eller siffror som ökar varje gång ett nummer används. Använd ett nummertecken (\#) om du vill ange ökande nummer och ett et-tecken (&) om du vill ange att ökande bokstäver. Med formatet \#\#\#\#\#\_2017 skapas till exempel serien 00001\_2017, 00002\_2017, och så vidare.
 Exempel på nummerserier
 ------------------------
 
@@ -73,6 +76,8 @@ Nummerserier kan vara kontinuerliga eller icke-kontinuerliga. En kontinuerlig nu
 ### <a name="automatic-cleanup-of-number-sequences"></a>Automatisk rensning av nummerserier
 
 I händelse av strömavbrott, programfel eller annat oväntat fel kan inte systemet återanvända nummer automatiskt för kontinuerliga nummerserier. Du kan köra rensningen manuellt eller automatiskt återställa de förlorade numren. Tänk noggrant igenom serveranvändningen när du planerar rensningen. Vi rekommenderar att du utför rensningen som ett batchjobb under tider då arbetsbelastningen är låg.
+
+
 
 
 

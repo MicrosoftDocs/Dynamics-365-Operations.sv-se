@@ -29,6 +29,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="delays"></a>Fördröjningar
 
+[!include[banner](../includes/banner.md)]
+
+
 Det här avsnittet innehåller information om fördröjda data i huvudplaneringen. Ett fördröjt datum är ett realistiskt förfallodatum som en transaktion får om det tidigaste uppfyllelsedatumet som huvudplaneringen beräknar infaller efter begärt datum.
 
 Huvudplaneringen kan beräkna det tidigaste uppfyllelsedatumet för en transaktion baserat på produktionstiderna, materialtillgänglighet, kapacitettillgänglighet och olika planläggningsparametrar. 
@@ -41,11 +44,13 @@ Du kan konfigurera hur förseningar beräknas för en disponeringsgrupp. Du kan 
 
 På sidan **Huvudplaneringsparametrar** kan du ange starttiden för beräkningen av förseningar. Om en order expedieras efter den här tiden läggs en försening på en dag till i orderns förseningsdatum. 
 
-**Obs!** i tidigare versioner beräknade förseningar kallas *leveransplansmeddelanden*, försenade datumet kallades den *leveransplansdatum*, och en fördröjd transaktion som kallas *en transaktion som framtida uppsättning*.
+**Obs!** I tidigare versioner kallades beräknade förseningar *leveransplansmeddelanden*, förseningsdatumet kallades *leveransplansdatum* och en försenad transaktion kallades *en transaktion som är inställd på ett datum i framtiden*.
 
 <a name="see-also"></a>Se även
 --------
 
 [Disponeringsinställningar](coverage-settings.md)
+
+
 
 

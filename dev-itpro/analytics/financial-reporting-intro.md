@@ -85,6 +85,6 @@ Mer information finns i avsnittet "Interaktiva komponenter och navigeringfunktio
 
 #<a name="see-also"></a>Se även
 
-[Generera en ekonomisk rapport] ((dynamics365\operations\financials\general-ledger\generate-ekonomiska-rapport)
+[Generera en ekonomisk rapport]((dynamics365\operations\financials\general-ledger\generera-ekonomisk-rapport)
 
 

@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="procurement-and-sourcing-overview"></a>Upphandling och inköp – översikt
 
+[!include[banner](../includes/banner.md)]
+
+
 Det här avsnittet ger en översikt över de funktioner som är tillgängliga i modulen Anskaffning och källa.
 
 Upphandling och inköp omfattar alla steg från att identifiera ett behov av produkter och tjänster genom att anskaffa produkten, kvitto, fakturering och bearbetning av betalning med säljare. Upphandlingar kan konfigureras mot specifika verksamhetsbehov genom att definiera inköpspolicy och arbetsflöden.
@@ -37,14 +40,14 @@ Behovet av produkter eller tjänster som kan uppstå från *anmodan*, till exemp
   
 Upphandling avdelningen identifierar leverantörer för varor och tjänster, och detta kan innebära en*offertförfrågan *som skickas ut till flera potentiella leverantörer. Det är möjligt att dela specifikationer för produkten som begärts och potentiella leverantörer kan visa dessa för att se om de kan leverera en produkt som uppfyller dem. Säljare tillbaka sina anbud som sedan granskas av inköpsavdelning innan de väljer den leverantör som de vill anskaffa från.  
 
-Inköpsorder har ett alternativ för att skicka en *inköpsorder *till leverantören som ett alternativ till en mer omfattande offertförfrågan. Köp undersökning kan användas för att bidra till att skapa villkor som priser, rabatter och leveransdatum. Om leverantörer har ställts in att använda det **leverantör** portal * * inköp förfrågan funktionen är inaktiverad. I stället delas på** säljaren** portal, och när en*begäran om bekräftelse* skickas säljaren kan direkt bekräfta ordern.  
+Inköpsorder har ett alternativ för att skicka en *inköpsorder *till leverantören som ett alternativ till en mer omfattande offertförfrågan. Köp undersökning kan användas för att bidra till att skapa villkor som priser, rabatter och leveransdatum. Om leverantörer är inställda för användning av **Leverantör**-portalenl,* * kommer funktionen för inköpsförfrågan att inaktiveras. I stället delas på** säljaren** portal, och när en*begäran om bekräftelse* skickas säljaren kan direkt bekräfta ordern.  
 
 *Säljaren kataloger *kan användas för att samla in information om produktsortiment som leverantörer kan leverera. Säljare kan publicera sin egen katalog, så det är enklare att hålla katalogen aktuell. Det är möjligt att bifoga en*lista över godkända leverantörer* till en produkt, och detta kan vägleda säljaren val när nya inköpsorder är öppnade och förhindra användning av oavsiktliga leverantörer.
 
 ## <a name="procurement"></a>Anskaffning
 *Inköpsorder *kan skapas på ett antal olika sätt, inklusive:
 
--   Som resultat av huvudplanering som har identifierat en efterfrågan kräver som ett inköp. Den här processen genererar planerade inköpsorder och när dessa publiceras inköpsorder skapas.
+-   Som resultat av huvudplanering som har identifierat en efterfrågan kräver som ett inköp. Den här processen genererar planerade inköpsorder och när dessa frisläpps skapas inköpsorder.
 -   Genom bearbetning av inköpsanmodan som resulterar i en upphandling.
 -   Genom bearbetning av inköpsavtal, där inköpsorder skapas som frisläppta order från avtalen. Detta används vanligen när inköpsavtal används för att representera avtalsorder.
 -   Manuellt när inköpsordern som skapas är inte baserat på något annat dokument.
@@ -53,7 +56,7 @@ Inköpsorder som är konfigurerad med *köpet arbetsflöden för godkännande* g
 
 Inköpsorder *bekräftas* att representera ett avtal har upprättats med säljaren. Inköpsordern kommer därefter gradvis utveckling genom olika medlemsstater tills slutligen ska faktureras eller makulerad.  
 
-När du skapar en inköpsorder är många av fälten i förväg med värden som standard från informationen om leverantören i den **leverantörer** sida. Detta innebär att det finns ett begränsat antal fält som du behöver fylla i på inköpsordern, men du kan välja att åsidosätta standardvärdena.
+När du skapar en inköpsorder fylls många av fälten i med förvalda värden från den information som finns lagrad om leverantören på sidan **Leverantörer**. Detta innebär att det finns ett begränsat antal fält som du behöver fylla i på inköpsordern, men du kan välja att åsidosätta standardvärdena.
 
 ### <a name="prices-and-discounts"></a>Priser och rabatter
 
@@ -86,5 +89,7 @@ Fakturerade inköpsorder registrera ansvar till säljaren inom payable konton, d
 
 ## <a name="vendor-performance"></a>Leverantörsprestanda
 Prestanda och översyn av inköp stöds genom *upphandling och leverantörsskulder rapporter* som inkluderar tillbringa analys och säljaren prestanda-analys.
+
+
 
 

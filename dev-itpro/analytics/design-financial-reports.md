@@ -1,6 +1,6 @@
 ---
-title: Vyn och design ekonomirapporter
-description: "Artikeln innehåller övningar som förklarar att du kan visa och skapa ekonomiska rapporter för Microsoft Dynamics 365 för operationer. Ekonomisk rapportering består av en tittarupplevelse i Dynamics 365 för operationer och klicka-en gång rapportdesign där du kan skapa och redigera ekonomiska rapporter."
+title: Visa och utforma ekonomiska rapporter
+description: "Denna artikel innehåller övningar som förklarar hur du visar och skapar ekonomiska rapporter för Microsoft Dynamics 365 for Operations. Ekonomisk rapportering består av en visningsupplevelse i Dynamics 365 for Operations och en enklicks-rapportdesigner där du kan skapa och redigera ekonomiska rapporter."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,9 +25,12 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="view-and-design-financial-reports"></a>Vyn och design ekonomirapporter
+# <a name="view-and-design-financial-reports"></a>Visa och utforma ekonomiska rapporter
 
-Artikeln innehåller övningar som förklarar att du kan visa och skapa ekonomiska rapporter för Microsoft Dynamics 365 för operationer. Ekonomisk rapportering består av en tittarupplevelse i Dynamics 365 för operationer och klicka-en gång rapportdesign där du kan skapa och redigera ekonomiska rapporter.  
+[!include[banner](../includes/banner.md)]
+
+
+Denna artikel innehåller övningar som förklarar hur du visar och skapar ekonomiska rapporter för Microsoft Dynamics 365 for Operations. Ekonomisk rapportering består av en visningsupplevelse i Dynamics 365 for Operations och en enklicks-rapportdesigner där du kan skapa och redigera ekonomiska rapporter.  
 
 <a name="exercise-1-generate-and-explore-a-default-financial-report"></a>Övning 1: Generera och undersök en ekonomisk standardrapport
 -----------------------------------------------------------
@@ -45,7 +48,7 @@ För den här övning ska du generera och undersöka en befintlig standardrappor
 3.  Spara dimensionskonfigurationen. Sedan ska du generera en rapport och utforska uppgifterna i rapporten.
 4.  Gå till **Ekonomiska rapporter** under **Förfrågningar och rapporter** i redovisningen.
 5.  Markera raden för rapporten som heter **Huvudbokdetalj – standardinställning**.
-6.  Välj **Redigera**. Obs: Du uppmanas att klicka på Hämta-en gång rapportdesign och logga in. Använd din inloggningsinformation för att logga in.
+6.  Välj **Redigera**. Obs! Du uppmanas att hämta enklicks-rapportdesignern och att logga in. Använd dina autentiseringsuppgifter när du loggar in.
 7.  Ändra basåret till 2012 och välj **Generera**. När en rapport genereras från rapportdesignern, öppnas den i en ny webbläsarflik. Du kan antingen utforska rapporten på den nya webbläsarfliken, eller att gå till den ursprungliga webbläsarfliken och öppna rapporten därifrån genom att välja **Ekonomiska rapporter** i listan.
 8.  Välj ett av beloppen i den öppna rapporten för att gå nedåt till kontodetaljeran i rapporten.
 9.  Välj ett konto med data i kontodetaljerna och **gå nedåt till rapporttransaktionsnivån**. På rapporttransaktionsnivån kan du se egenskaperna (attribut )som togs med i designen i den här rapporten. Beroende på transaktionen och kontot, visas några eller alla attribut.
@@ -55,7 +58,7 @@ För den här övning ska du generera och undersöka en befintlig standardrappor
 13. Välj **Rapportalternativ**.
 14. Markera **Lägg till ett dimensionsfilter** och sedan **Affärsenhet**.
 15. Skriv 001 till fältet och välj **OK**. Rapporten visar nu bara data för affärsenheten 001. Detta är en anpassad vy av rapporten och den är inte tillgänglig för andra.
-16. Stäng den filtrerade rapporten. Ekonomiska rapporter kan visas i vilken valuta som helst som har lagts till Dynamics 365 för operationer.
+16. Stäng den filtrerade rapporten. Ekonomiska rapporter kan visas i vilken valuta som helst som har lagts till i Dynamics 365 for Operations.
 17. Välj **Valuta** och sedan **EUR**. Rapporten visas nu i euro. Valutakoder eller valutasymboler som ingår i rapportdesignen visas nu i den använda valutan. Om ingen valutasymbol har definierats för en valuta, visas ingen valutasymbol.
 18. Stäng rapporten **Huvudbokdetalj**.
 19. Stäng **rapportdesignern**.
@@ -66,7 +69,7 @@ I den här övningen ska du ändra en befintlig standardrapport. Du kommer att u
 1.  Gå till **Ekonomiska rapporter** under Förfrågningar och rapporter i redovisningen.
 2.  Markera raden för rapporten som heter **Råbalanssammanfattning - standardinställning**.
 3.  Välj **Redigera**. **Råbalanssammanfattning - standardinställning** öppnas i rapportdesignern.
-4.  Välj **Arkiv**, sedan **Spara som** och namnge rapporten Detaljerad råbalans med attribut. Obs: Helst skapas en ny rapport i report designer ekonomirapporter listan uppdateras i Dynamics 365 för operationer.
+4.  Välj **Arkiv**, sedan **Spara som** och namnge rapporten Detaljerad råbalans med attribut. Obs! När en ny rapport har skapats i rapportdesignern uppdateras listan med ekonomisk rapporter i Dynamics 365 for Operations.
 5.  Välj rapportdefinitionen, markera raddefinitionsikonen för att öppna i **Råbalans – detaljerad raddefinition**.
 6.  Spara raddefinitionen som **Detaljerad råbalans med attribut**
 7.  Med markören på rad 50, markera **Redigera** och sedan **Infoga rader från dimensioner**. Infoga rader från dimensioner gör att du kan välja vilka dimensioner du vill ha i din raddefinition. I den här övning ska du skapa raddefinitionen med hjälp av huvudkontot.
@@ -96,7 +99,7 @@ I den här övningen ska du ändra en befintlig standardrapport. Du kommer att u
 25. Stäng rapporten **Detaljerad råbalans med attribut**.
 26. Stäng **rapportdesignern**.
 
-## <a name="exercise-3-create-a-multidimensional-report-using-a-reporting-tree"></a>Övning 3: Skapa en flerdimensionell rapport med träd
+## <a name="exercise-3-create-a-multidimensional-report-using-a-reporting-tree"></a>Övning 3: Skapa en flerdimensionell rapport med ett rapportträd
 I den här övningen ska du ändra en befintlig standardrapport. Du ska skapa ett rapportträd och lägga till en rapportdefinition för att producera en resultaträkning för kostnadsställe/avdelning. När uppdateringen är klar, skapar du resultaträkningen för kostnadsstället/avdelningen och utforskar rapporten med hjälp av rapportträdet. Vi börjar med listan över ekonomiska rapporter.
 
 1.  Gå till **Ekonomiska rapporter** under Förfrågningar och rapporter i redovisningen.
@@ -138,7 +141,7 @@ I den här övningen ska du ändra en befintlig standardrapport. Du kan lägga t
 1.  Gå till **Ekonomiska rapporter** under Förfrågningar och rapporter i redovisningen.
 2.  Markera raden för rapporten **Balansräkning och resultaträkning sida vid sida – standardinställning**
 3.  Välj **Redigera**. **Balansräkning och resultaträkning sida vid sida – standardinställning** öppnas i rapportdesignern.
-4.  Välj **filen**&gt;**filformat** och namnge rapporten **konsoliderade balansräkningen och resultaträkningen bredvid**.
+4.  Välj **Fil** &gt; **Spara som** och namnge rapporten **Konsoliderad balansräkning och resultaträkning sida vid sida**.
 5.  Ändra basåret till 2012.
 6.  Klicka på trädlistrutan och välj **Organisationshierarkier**.
 7.  Klicka på trädlistpilen och välj **Contoso Holdings**.
@@ -151,7 +154,7 @@ I den här övningen ska du ändra en befintlig standardrapport. Du kan lägga t
 14. Stäng **Konsoliderad balansräkning och resultaträkning sida vid sida**.
 15. Stäng **rapportdesignern**.
 
-## <a name="exercise-5-create-a-sidebyside-departmental-report"></a>Övning 5: Skapa en sidebyside rapport rapport
+## <a name="exercise-5-create-a-sidebyside-departmental-report"></a>Övning 5: Skapa en rapport för parallella avdelningar
 I den här övning ska du skapa en ny rapport. Rapporten är en resultaträkning för parallella avdelningar. Du använder en befintlig raddefinition, men skapar en ny rapportdefinition och en ny kolumndefinition som använder dimensionsfilter. Vi börjar med listan över ekonomiska rapporter.
 
 1.  Gå till **Ekonomiska rapporter** under Förfrågningar och rapporter i redovisningen.
@@ -179,6 +182,10 @@ I den här övning ska du skapa en ny rapport. Rapporten är en resultaträkning
 18. **Spara** ändringarna och **generera**. När rapporten har genererats och öppnats kan du granska den.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
-[Ekonomisk rapportering](\financials\general-ledger\financial-reporting-getting-started.md)<ph id="t1"></ph>[visa ekonomirapporter](\financials\general-ledger\view-financial-reports.md)<ph id="t2"></ph>[Dynamics ekonomisk rapportering blogg](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+[Ekonomisk rapportering](\financials\general-ledger\financial-reporting-getting-started.md) 
+[Visa ekonomiska rapporter](\financials\general-ledger\view-financial-reports.md) 
+[Dynamics blogg för ekonomisk rapportering](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+
+
 
 

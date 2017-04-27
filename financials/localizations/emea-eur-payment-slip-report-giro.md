@@ -1,6 +1,6 @@
 ---
-title: "Slip-betalningsrapport för Europa"
-description: "Det här avsnittet innehåller information om följesedeln betalning rapporter för Europa."
+title: "Betalningsblankettrapport för Europa"
+description: "Det här avsnittet innehåller information om betalningsblankettrapporter för Europa."
 author: ShylaThompson
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,39 +24,44 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="payment-slip-report-for-europe"></a>Slip-betalningsrapport för Europa
+# <a name="payment-slip-report-for-europe"></a>Betalningsblankettrapport för Europa
 
-Det här avsnittet innehåller information om följesedeln betalning rapporter för Europa.
+[!include[banner](../includes/banner.md)]
 
-Funktionen betalning för insättningskvitto är tillgänglig för juridiska personer vars primära adressen i Danmark, Belgien, Schweiz, Norge eller Finland. Företag koppla ofta utskrivna betalningsdokument till fakturor en betalningsreferens för att bokföring och kvittningen. Betalningsblanketten kan användas för projekt - eller tjänstfakturor, kravbrev, räntefakturor och kontoutdrag, utöver försäljningsfakturor och fritextfakturor.
 
-## <a name="set-up-a-creditor-id-number-denmark-only"></a>Ställ in en fordringshavare ID-nummer (Danmark)
-Följ anvisningarna, verifikationsnummer företagets kreditgivare identifiering (ID). Din finansinstitut innehåller detta nummer. Den används som referens när kundbetalningar som tas emot via finansinstitut.
+Det här avsnittet innehåller information om betalningsblankettrapporter för Europa.
 
-1.  Klicka på **Organisationsadministration**&gt;**inställningar**&gt;**organisationen**&gt;**juridiska personer som**.
-2.  I den **bankkontoinformation** snabbfliken i den **ID för FI-kreditgivare** anger du ditt unika åttasiffriga fordringshavare ID-nummer.
+Funktionen för betalningsblankettrapporter finns tillgänglig för juridiska personer vars primära adressen finns i Danmark, Belgien, Norge, Schweiz eller Finland. Företag bifogar ofta utskrivna betalningsblanketter till fakturor för att tillhandahålla en betalningsreferens för bokföring och kvittning. Betalningsblanketten kan användas för projekt - eller tjänstfakturor, kravbrev, räntefakturor och kontoutdrag, utöver försäljningsfakturor och fritextfakturor.
+
+## <a name="set-up-a-creditor-id-number-denmark-only"></a>Ange ett fordringshavar-ID (endast Danmark)
+Följ dessa steg för att ange ID för fordringshavare för ditt företag. Detta nummer tillhandahålls av ditt finansinstitut. Det används som referens när kundbetalningar tas emot via finansinstitut.
+
+1.  Klicka på **Organisationsadministration** &gt; **Inställningar** &gt; **Organisation** &gt; **Juridiska personer**.
+2.  På snabbfliken **Bankkontoinformation**, i fältet **ID för FI-fordringshavare** anger du ditt unika åttasiffriga ID-nummer för fordringshavare.
 3.  Stäng formuläret så att ändringarna sparas.
 
-## <a name="set-up-a-payment-slip-attachment-format-for-invoices-interest-notes-collection-letters-and-account-statements"></a>Ställa in en följesedel bilagan betalningsformat för fakturor, räntefakturor, kravbrev och kontoutdrag
-Följ dessa steg för att ställa in ett format för betalningen följesedeln bifogade filer som bifogas försäljningsfakturor, fritextfakturor, räntefakturor, kravbrev och kontoutdrag.
+## <a name="set-up-a-payment-slip-attachment-format-for-invoices-interest-notes-collection-letters-and-account-statements"></a>Skapa ett betalningsblankettformat för bilagor för fakturor, anteckningar, kravbrev och kontoutdrag
+Följ dessa steg för att skapa ett format för en betalningsblankettbilagor som ska medfölja försäljningsfakturor, fritextfakturor, räntefakturor, kravbrev och kontoutdrag.
 
-1.  Klicka på **kundreskontra**&gt;**inställningar**&gt;**formulär**&gt;**inställningar**.
-2.  På den **fakturan** fliken den **Associerad betalningsbilaga för kundfaktura**, markera betalningsformat följesedeln bilagan.
-3.  I den **fritextfaktura**, **räntefakturan**, **kravbrevet**, och **konto utdraget** flikar, markera en följesedel bilagan betalningsformat för varje dokumenttyp.
+1.  Klicka på **Kundreskontra** &gt; **Inställningar** &gt; **Formulär** &gt; **Formulärinställningar**.
+2.  På fliken **Faktura**, i fältet **Associerad betalningsbilaga för kundfaktura**, markera bilageformatet för betalningsblankett.
+3.  På flikarna **Fritextfaktura**, **Räntefaktura**, **Kravbrev** och **Kontoutdrag** markerar du ett bilageformat för betalningskvitto före respektive dokumenttyp.
 4.  Stäng formuläret så att ändringarna sparas.
 
-Följ dessa steg för att ställa in ett format för betalningen följesedeln bifogade filer som bifogas projektfakturor.
+Följ dessa steg för att ställa in ett format för en betalningsblankettbilagor som medföljer projektfakturor.
 
-1.  Klicka på **projekthantering och redovisning**&gt;**inställningar**&gt;**formulär**&gt;**inställningar**.
-2.  I den **Associerad betalningsbilaga**, markera betalningsformat följesedeln bilagan.
+1.  Klicka på **Projekthantering och redovisning** &gt; **Inställningar** &gt; **Blanketter** &gt; **Blankettinställningar**.
+2.  I fältet **Associerad betalningsbilaga** markerar du bilageformatet för betalningskvitto.
 
-## <a name="assign-a-payment-slip-attachment-format-to-a-customer-account"></a>Tilldela en betalningsformat följesedeln bilagan till ett kundkonto
-När du har ställt in betalningsformat för följesedeln bilagan för försäljningsfakturor, fritextfakturor, räntefakturor, kravbrev, kontoutdrag och projektfakturor kan tilldela du särskilda format för en vald kund.
+## <a name="assign-a-payment-slip-attachment-format-to-a-customer-account"></a>Tilldela ett bilageformat för betalningsblankett till ett kundkonto
+När du har ställt in betalningsformatet för betalningsblanketter för försäljningsfakturor, fritextfakturor, räntefakturor, kravbrev, kontoutdrag och projektfakturor kan tilldela du särskilda format för en vald kund.
 
-1.  Klicka på **kundreskontra**&gt;**gemensamma**&gt;**kunder**&gt;**alla kunder**.
-2.  Skapa en ny kund eller välj en befintlig kund.
-3.  I den **faktura- och** på snabbfliken i den **på en kundfaktura**, **på en fritextfaktura**, **på en räntefaktura**, **på ett kravbrev**, **på en projektfaktura**, och **på ett kontoutdrag** väljer du format för betalningen följesedeln bifogade filer som kommer att medfölja varje dokument som skickas till den valda kunden.
+1.  Klicka på **Kundreskontra** &gt; **Allmänt** &gt; **Kunder** &gt; **Alla kunder**.
+2.  Skapa en ny kund eller välj en befintlig.
+3.  På snabbfliken **Faktura och leverans**, i fälten **På en kundfaktura**, **På en fritextfaktura**, **På en räntefaktura**, **På ett kravbrev**, **På en projektfaktura** och **På ett kontoutdrag** väljer du format för bilagor för betalningsblanketter som medföljer företagsdokument av respektive typ som skickas till den valda kunden.
 4.  Stäng formuläret så att ändringarna sparas.
+
+
 
 
 

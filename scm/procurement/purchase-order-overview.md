@@ -27,15 +27,18 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="purchase-order-overview"></a>Översikt över inköpsorder
 
+[!include[banner](../includes/banner.md)]
+
+
 Den här artikeln innehåller allmän information om inköpsorder (PO) och länkar till fler artiklar som är relaterade till de olika stegen som en inköpsorder geomgår.
 
 En inköpsorder (IO) är ett dokument som representerar ett avtal med en leverantör om att köpa varor eller tjänster. Dokumentet kan också hålla reda på produktinleveranser som gjorts mot ordern och senare redovisning av leverantörsfakturor som leverantören debiterar mot ordern.  
 
-Sidan **Inköpsorder** innehåller en översikt över tillgängliga order och du kan ändra dessa order. När du öppnar en inköpsorder kan du välja vyn **Rubrik** som innehåller information som endast anges en gång för varje inköpsorder, till exempel information om leverantören. Alternativt kan du välja vyn **Rader** där du kan ändra orderrader. Vanligtvis ska du växla mellan dessa två vyer när du ändrar POs. Tillägg inte visas direkt i den **inköpsorder** sidan, men nås via menyerna i orderrubriken och på raderna.  
+Sidan **Inköpsorder** innehåller en översikt över tillgängliga order och du kan ändra dessa order. När du öppnar en inköpsorder kan du välja vyn **Rubrik** som innehåller information som endast anges en gång för varje inköpsorder, till exempel information om leverantören. Alternativt kan du välja vyn **Rader** där du kan ändra orderrader. Vanligtvis ska du växla mellan dessa två vyer när du ändrar inköpsorder. Avgifter visas inte direkt på sidan **Inköpsorder**, men nås via menyerna i orderhuvudet och på orderraderna.  
 
 Det finns många rapporter där du kan visa information om inköpsorder, produktinleveranser och leverantörsfakturor. Rapporter finns i modulerna **Anskaffning och källa** och **Leverantörsreskontra**.  
 
-På arbetsytorna **Inköpsorderförberedelse** och **Inleverans av inköpsorder och uppföljning** kan du visa listor över inköpsorder i olika statusar som de har nått. De ger också en sammanfattning av de åtgärder som ska vidtas. Arbetsytan **Inköpsorderförberedelse**fokuserar på skapandet av inköpsorder och granskning, bearbetning av order via godkännande och bekräftelse från leverantören. Den **inleverans och uppföljning av** arbetsytan fokuserar på att bearbeta inleverans av varor eller tjänster mot POs. Den innehåller listor som kan ger insikt om inleveranser försenade uppgifter eller som kommer snart betalas ut för leverans av leverantören. Arbetsytorna används inte för att utföra de relaterade inleveransaktiviteterna som utförs på lagerstället. Dessa aktiviteter utförs med hjälp av sidorna i modulerna **Lagerhantering** och **Lagerstyrning**. Bearbetning av leverantörsfakturor ska utföras med hjälp av arbetsytan **Leverantörsfakturaregistrering** och betalningar ska utföras med hjälp av arbetsytan **Leverantörsbetalningar**.  
+På arbetsytorna **Inköpsorderförberedelse** och **Inleverans av inköpsorder och uppföljning** kan du visa listor över inköpsorder i olika statusar som de har nått. De ger också en sammanfattning av de åtgärder som ska vidtas. Arbetsytan **Inköpsorderförberedelse**fokuserar på skapandet av inköpsorder och granskning, bearbetning av order via godkännande och bekräftelse från leverantören. Arbetsytan **Inleverans av inköpsorder och uppföljning** fokuserar på att bearbeta inleverans av varor eller tjänster mot inköpsorder. Den innehåller listor som ger insikt om inleveranser som är försenade, eller som snart ska levereras av leverantören. Arbetsytorna används inte för att utföra de relaterade inleveransaktiviteterna som utförs på lagerstället. Dessa aktiviteter utförs med hjälp av sidorna i modulerna **Lagerhantering** och **Lagerstyrning**. Bearbetning av leverantörsfakturor ska utföras med hjälp av arbetsytan **Leverantörsfakturaregistrering** och betalningar ska utföras med hjälp av arbetsytan **Leverantörsbetalningar**.  
 
 Följande artiklar innehåller en översikt över de olika stegen som en inköpsorder genomgår:
 
@@ -45,7 +48,7 @@ Följande artiklar innehåller en översikt över de olika stegen som en inköps
 -   [Översikt över leverantörsfakturor](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview)
 
 ## <a name="types-of-purchase-orders"></a>Typer av inköpsorder
-Det finns tre typer av POs. Du måste ange typ när du skapar en inköpsorder. Du kan ställa in en standardordertyp för nya order på sidan **Anskaffnings- och källparametrar**.
+Det finns tre typer av inköpsorder. Du måste ange typ när du skapar en inköpsorder. Du kan ställa in en standardordertyp för nya order på sidan **Anskaffnings- och källparametrar**.
 
 | Inköpsordertyp        | Beskrivning                                                                                                                                                                                                                                                                           |
 |----------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -80,12 +83,14 @@ Fältet **Godkännandestatus** används när en inköpsorder genomgår en gransk
 <a name="see-also"></a>Se även
 --------
 
-[Purchase order creation](purchase-order-creation.md)
+[Skapande av inköpsorder](purchase-order-creation.md)
 
 [Godkänna och bekräfta inköpsorder](purchase-order-approval-confirmation.md)
 
 [Produktinleverans mot inköpsorder](product-receipt-against-purchase-orders.md)
 
 [Översikt över leverantörsfakturor](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview)
+
+
 
 

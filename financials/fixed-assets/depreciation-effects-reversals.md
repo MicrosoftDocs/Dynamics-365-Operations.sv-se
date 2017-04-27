@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="depreciation-effects-with-reversals"></a>Avskrivningseffekter med återföringar
 
+[!include[banner](../includes/banner.md)]
+
+
 Det här avsnittet behandlar potentiella konsekvenser vid återföring av en anläggningstillgångstransaktion. 
 
 Du kan återföra transaktioner för anläggningstillgångar och transaktionerna som är kopplade till en anläggningstillgång. Du kan även återkalla en återförd transaktion. 
@@ -90,6 +93,8 @@ Avskrivningens värde är 16,95 för lågt (983,62 – 966,67).
 <a name="see-also"></a>Se även
 --------
 
-[Fixed asset depreciation](fixed-asset-depreciation.md)
+[Avskrivning av anläggningstillgång](fixed-asset-depreciation.md)
+
+
 
 

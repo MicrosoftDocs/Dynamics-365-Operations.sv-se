@@ -28,13 +28,16 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="plan-your-chart-of-accounts"></a>Planera din kontoplan
 
+[!include[banner](../includes/banner.md)]
+
+
 Det här avsnittet innehåller information som hjälper dig att planera kontoplanen för din organisation.
 
 Följ och underhålla ekonomisk information i en organisation genom att lägga upp en kontoplan. En kontoplan är en samling av konton som definierar ett ekonomisk ramverk. För att följa transaktionerna i dessa konton kan du lägga till segment, som kallas ekonomiska dimensioner. Ett utgiftskonto kan till exempel inkludera ekonomiska dimensioner som kallas avdelning, kostnadsställe och syfte. Användardefinierade regler, som kallas kontostrukturer och avancerade regler, anger sambandet mellan dessa ekonomiska dimensioner och huvudkontona och andra ekonomiska dimensioner, och även hur transaktioner kan registreras. 
 
 Kontoplanen är en strukturerad lista över en juridisk persons huvudbokskonton. Listan används för att förbereda ekonomiska rapporter för myndigheter och ägare. Kontona grupperas i kontotyper och sedan i större kategorier. På den allmännaste nivån grupperas kontona som kostnader och intäkter (rörelsekonton) samt tillgångar och skulder (balanskonton). 
 
-En kontoplan kan delas och användas av alla juridiska personer i organisationen. Kontoplanen som används av en juridisk person definieras i den **redovisning** sida. 
+En kontoplan kan delas och användas av alla juridiska personer i organisationen. Kontoplanen som används av en juridisk person definieras på sidan **Redovisning**. 
 
 Här är några av faktorerna du måste ta hänsyn till när du lägger upp kontoplanen för organisationen:
 
@@ -48,10 +51,12 @@ Det är en bra idé att länka huvudkontona till huvudkontokategorier, så att d
 
 Använd sidan **Konfigurera kontostrukturer** för att konfigurera kontostrukturer. Kontostrukturer definierar giltiga kombinationer. Kombinationerna, tillsammans med huvudkontona, bildar en kontoplan. 
 
-**Legal entity overrides** 
+**Juridisk person åsidosätter** 
 
-Alla huvudkonton som gäller för alla juridiska personer och vissa kanske bara relevanta för en viss tidsperiod. I det här scenariot kan åsidosättandet av juridisk person användas för att identifiera vilka företag huvudkontot ska uppskjutas för, vem ägaren är och tidsperioden dimensionen är aktiv i. Åsidosättandet på den delade nivån kan inte vara restriktivare än åsidosättandet på nivån för juridisk person.
+Alla huvudkonton är inte giltiga för alla juridiska personer, och några kanske bara är relevanta under en viss tidsperiod. I det här scenariot kan åsidosättandet av juridisk person användas för att identifiera vilka företag huvudkontot ska uppskjutas för, vem ägaren är och tidsperioden dimensionen är aktiv i. Åsidosättandet på den delade nivån kan inte vara restriktivare än åsidosättandet på nivån för juridisk person.
 
-Mer information finns i [ekonomiska dimensioner](financial-dimensions.md).
+Mer information finns i [Ekonomiska dimensioner](financial-dimensions.md).
+
+
 
 

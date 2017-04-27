@@ -1,5 +1,5 @@
 ---
-title: "Kvitta en delvis kundbetalning med rabatter på kreditfakturor"
+title: "Kvitta en delkundbetalning som har rabatter på kreditfakturor."
 description: "Den här artikeln går igenom ett scenario där en kassarabatt utnyttjas för en kreditfaktura när den ursprungliga fakturan också hade en kassarabatt."
 author: twheeloc
 manager: AnnBe
@@ -26,11 +26,14 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="settle-a-partial-customer-payment-that-has-discounts-on-credit-notes"></a>Kvitta en delvis kundbetalning med rabatter på kreditfakturor
+# <a name="settle-a-partial-customer-payment-that-has-discounts-on-credit-notes"></a>Kvitta en delkundbetalning som har rabatter på kreditfakturor.
+
+[!include[banner](../includes/banner.md)]
+
 
 Den här artikeln går igenom ett scenario där en kassarabatt utnyttjas för en kreditfaktura när den ursprungliga fakturan också hade en kassarabatt. 
 
-Fabrikam låter kunderna få kassarabatter på delbetalningar och även på kreditfakturor (kreditnotor). En kassarabatt kan utnyttjas för en kreditfaktura, när kreditfakturan ställs ut för en faktura som kunden har en kassarabatt på. Istället för att ange en kredit för hela beloppet kan du kreditera kundens saldo för ett belopp exklusive kassarabattprocenten som kunden har. Kvittning parametrar finns i den **parametrar för kundreskontra** sida.
+Fabrikam låter kunderna få kassarabatter på delbetalningar och även på kreditfakturor (kreditnotor). En kassarabatt kan utnyttjas för en kreditfaktura, när kreditfakturan ställs ut för en faktura som kunden har en kassarabatt på. Istället för att ange en kredit för hela beloppet kan du kreditera kundens saldo för ett belopp exklusive kassarabattprocenten som kunden har. Kvittningsparametrar finns på sidan **Parametrar för kundreskontra**.
 
 ## <a name="invoice-and-credit-note"></a>Faktura och kreditfaktura
 Kund 4035 har en faktura på 1 000,00 och en kreditfaktura på 100,00. Alla dokument har 1 procents rabatt om de betalas inom 14 dagar. Arnie kan visa den här informationen på sidan **Kundtransaktioner**.
@@ -59,5 +62,7 @@ Information om rabatten visas längst ned på sidan **Kvitta transaktioner**.
 | Kassarabattbelopp att utnyttja | -1,00     |
 
 Kvittningen blir 100,00 och ska inkludera en betalning på 99,00 och en rabatt på 1,00.
+
+
 
 

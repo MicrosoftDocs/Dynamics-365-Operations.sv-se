@@ -26,12 +26,15 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="sales-and-marketing"></a>Försäljning och marknadsföring
 
+[!include[banner](../includes/banner.md)]
+
+
 Du kan använda Försäljning och marknadsföring för att hämta, spara och använda olika typer av data i försäljningsflödet. Informationen inkluderar den ursprungliga försäljningsinsatsen, framtida uppföljningsåtgärder och ytterligare försäljning.
 
 <a name="marketing"></a>Marknadsföring
 ---------
 
-Du använder marknadskampanjer och aktiviteter för att hitta och bygga relationer med potentiella kunder, så att de första interaktionerna kan utvecklas till försäljningsrelationer. Följande processflöde visar affärsprocessen för marknadsföring. [![Affärsprocessen för marknadsföring](./media/marketing01.jpg)](./media/marketing01.jpg)
+Du använder marknadskampanjer och aktiviteter för att hitta och bygga relationer med potentiella kunder, så att de första interaktionerna kan utvecklas till försäljningsrelationer. Följande processflöde visar affärsprocessen för marknadsföring. [![Affärsprocess för marknadsföring](./media/marketing01.jpg)](./media/marketing01.jpg)
 
 ### <a name="relationships"></a>Relationer
 
@@ -39,10 +42,10 @@ Inom försäljning och marknadsföring kan de första interaktionerna som du har
 
 ### <a name="campaigns"></a>Kampanjer
 
-En kampanj riktar sig till kontakter för prospekt, leads, affärstillfällen och kunder som har valt att delta i kampanjen. Du kan skapa flera typer av kampanjer, till exempel telemarketing, utskick och e-kampanjer för maximal potentiella kunder i Microsoft Dynamics 365 för operationer. När kampanjen pågår och du får positiva svar kan du inleda försäljningsprocessen med de mottagare som har svarat positivt på kampanjen.
+En kampanj riktar sig till kontakter för prospekt, leads, affärstillfällen och kunder som har valt att delta i kampanjen. I Microsoft Dynamics 365 for Operations kan du skapa flera olika typer av kampanjer såsom telemarketing, e-postutskick och e-postkampanjer för att maximera din kundpotential. När kampanjen pågår och du får positiva svar kan du inleda försäljningsprocessen med de mottagare som har svarat positivt på kampanjen.
 
 ## <a name="sales"></a>Försäljning
-Du kan använda försäljningsfunktionen för att skapa offerter, mer- och korsförsäljning till nya och befintliga kunder, försäljningsorder och kundfakturor. Följande processflöde visar affärsprocessen för försäljning. [![Affärsprocessen för försäljning](./media/sales01.jpg)](./media/sales01.jpg)
+Du kan använda försäljningsfunktionen för att skapa offerter, mer- och korsförsäljning till nya och befintliga kunder, försäljningsorder och kundfakturor. Följande processflöde visar affärsprocessen för försäljning. [![Affärsprocess för försäljning](./media/sales01.jpg)](./media/sales01.jpg)
 
 ### <a name="sales-quotations"></a>Försäljningsofferter
 
@@ -50,7 +53,7 @@ Du kan skapa försäljningsofferter för att ge kunder ett erbjudande om varor e
 
 ### <a name="up-sellcross-sell"></a>Merförsäljning/korsförsäljning
 
-Merförsäljning och korsförsäljning är tekniker för att sälja produkter när en order har matats in för en kund. Merförsäljning går ut på att föreslå en annan produkt i stället för den aktuella produkten. Korsförsäljning går ut på att föreslå en annan produkt utöver den aktuella produkten. Du kan skapa specifika regler för att ange när en produkt ska föreslås en produkt över merförsäljning eller skapar merförsäljning när du ställer in produktlistor.
+Merförsäljning och korsförsäljning är tekniker för att sälja produkter när en order har matats in för en kund. Merförsäljning går ut på att föreslå en annan produkt i stället för den aktuella produkten. Korsförsäljning går ut på att föreslå en annan produkt utöver den aktuella produkten. Du kan skapa specifika regler för att visa när en produkt bör föreslås som en korsförsäljnings- eller merförsäljningsprodukt i samband med att du ställer in produktlistor.
 
 ### <a name="sales-orders"></a>Försäljningsorder
 
@@ -117,5 +120,7 @@ En fritextfaktura är en faktura som inte är kopplad till en försäljningsorde
 #### <a name="pro-forma-invoice"></a>Proformafaktura
 
 En proformafaktura är en faktura som förbereds som en uppskattning av det faktiska fakturabeloppet innan fakturan bokförs. Du kan skriva ut en proformafaktura för antingen en kundfaktura eller en fritextfaktura.
+
+
 
 

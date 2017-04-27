@@ -1,5 +1,5 @@
 ---
-title: "Planera transporter frakt flöden med flera stopp"
+title: "Planera frakttransportvägar med flera stopp"
 description: "Den här artikeln ger en beskrivning av de olika elementen som du använder för att planera transportrutter i Microsoft Dynamics AX."
 author: YuyuScheller
 manager: AnnBe
@@ -25,7 +25,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="plan-freight-transportation-routes-with-multiple-stops"></a>Planera transporter frakt flöden med flera stopp
+# <a name="plan-freight-transportation-routes-with-multiple-stops"></a>Planera frakttransportvägar med flera stopp
+
+[!include[banner](../includes/banner.md)]
+
 
 Den här artikeln ger en beskrivning av de olika elementen som du använder för att planera transportrutter i Microsoft Dynamics AX.
 
@@ -48,5 +51,7 @@ En tidsplanerad rutt är en fördefinierad färdplan som har en tidsplan för le
 
 ## <a name="load-building-workbench"></a>Workbench för lastuppbyggnad
 Sidan Workbench för lastuppbyggnad använder kundadresser och leveransdatum från försäljningsorder och tidsplanerade rutter som är tillgängliga för att föreslå en last. Som standard anges värdena från rutten i workbenchen. Du kan dock välja ett "från"-datum som är tidigare än "från"-datumet för rutten. När en last föreslås kontrolleras leveransadressen och leveransdatumet för alla öppna försäljningsorder. Om postnumret till leveransadressen matchar postnumret för en hubb i färdplanen och om leveransdatumet infaller inom det intervall som valts i kriterierna, föreslås försäljningsordern för lasten. Kapaciteten för lastmallen beaktas också. Endast en last föreslås åt gången. Om du har en försäljningsorder som inte ingår kan du behöva använda en annan lastmall (till exempel en lastmall för en större lastbil eller container) eller planera en extra leverans.
+
+
 
 

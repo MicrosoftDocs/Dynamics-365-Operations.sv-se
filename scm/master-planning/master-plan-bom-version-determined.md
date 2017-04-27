@@ -1,6 +1,6 @@
 ---
-title: "Fastställa vilken strukturlisteversion"
-description: "Under ett Efterfrågenedbrytning om en artikel har en Standardordertypen för produktion, efter planeringsmotorn en giltig strukturlisteversion baserat på siten."
+title: "Avgöra strukturlisteversionen"
+description: "Om en artikel har Tillverkning som förvald ordertyp söker planeringsmotorn under en efterfrågenedbrytning efter en giltig strukturlisteversion baserat på siten."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -27,9 +27,12 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="determine-the-bom-version"></a>Fastställa vilken strukturlisteversion
+# <a name="determine-the-bom-version"></a>Avgöra strukturlisteversionen
 
-Under ett Efterfrågenedbrytning om en artikel har en Standardordertypen för produktion, efter planeringsmotorn en giltig strukturlisteversion baserat på siten. 
+[!include[banner](../includes/banner.md)]
+
+
+Om en artikel har Tillverkning som förvald ordertyp söker planeringsmotorn under en efterfrågenedbrytning efter en giltig strukturlisteversion baserat på siten. 
 
 Sitedimensionen är alltid känd och anges på efterfrågetransaktionen. Följande process fastställer vilken strukturlisteversion att använda:
 
@@ -38,6 +41,8 @@ Sitedimensionen är alltid känd och anges på efterfrågetransaktionen. Följan
 -   Om det inte finns någon allmän strukturlisteversion som kan användas, stannar efterfrågenedbrytningen här.
 
 En giltig strukturlisteversion, oavsett om den är sitespecifik eller allmän, måste uppfylla kriterierna för datum och kvantitet.
+
+
 
 
 

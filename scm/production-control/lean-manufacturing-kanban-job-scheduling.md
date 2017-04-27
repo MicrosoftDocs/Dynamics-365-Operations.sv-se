@@ -1,5 +1,5 @@
 ---
-title: "Kanban-jobbet tidsplanering för lean manufacturing"
+title: "Lean manufacturing – Kanban-jobbplanering"
 description: "Det här avsnittet innehåller information om visuell kontroll över kanban-jobbplanering och olika sätt för att schemalägga kanban-jobb."
 author: YuyuScheller
 manager: AnnBe
@@ -26,14 +26,14 @@ ms.lasthandoff: 03/29/2017
 
 ---
 
-# <a name="kanban-job-scheduling-for-lean-manufacturing"></a>Kanban-jobbet tidsplanering för lean manufacturing
+# <a name="kanban-job-scheduling-for-lean-manufacturing"></a>Lean manufacturing – Kanban-jobbplanering
 
 Det här avsnittet innehåller information om visuell kontroll över kanban-jobbplanering och olika sätt för att schemalägga kanban-jobb.  
 
 **Kanban-jobbplanering** sidan ger en visuell kontroll över scheman för lean manufacturing arbete celler. Den ger en översikt över alla Kanbankort jobb och skaffar flera filtrering kapaciteter. Från den här sidan kan du flytta till alla andra sidor som är relaterade till kanban konfiguration och utförande.
 
 ## <a name="automatic-scheduling-of-kanban-jobs"></a>Automatisk schemaläggning av kanban jobb
-Tidsplanering kan aktiveras automatiskt om du anger det **automatisk planering kvantitet** parameter på kanban-regeln. Om du ställer in **automatisk planering kvantitet** till **1**, varje kanban-jobbet planeras omedelbart när den skapas. Resultatet är en serie först ut, först till kvarn. Om du ställer in**automatisk planering kvantitet** till ett värde som är större än 1, kanban jobb grupperas innan de är planerade. Detta koncept gör kanban storlekar att reduceras under de faktiska ekonomiska standardstorlekar. Exempelvis är 30 ekonomiska batchstorleken för en viss artikel (eller artikelfamiljen). Istället för att skapa kanbans som använder produktkvantitet 30, konfigureras kanban-regeln så att den har en produktkvantitet 10 och en ** automatisk planering kvantitet ** värdet för **3**. Trots att automatisk planering av scheman kanban jobb för flödesgrupp bara när tre oplanerade jobb finns, det är helt transparent för planerare och verkstadsgolvet arbetsledare som två oplanerade jobb kanske väntar på avrättning. Den planerare eller shop floor manager kan sedan ta dessa två jobb i produktionen genom att manuellt planera dem eller skapa ytterligare kanban.
+Tidsplanering kan aktiveras automatiskt om du anger parametern **Automatisk planeringskvantitet** på kanban-regeln. Om du anger **Automatisk planeringskvantitet** som **1**, planeras varje kanban-job omedelbart när det skapas. Resultatet är en serie först ut, först till kvarn. Om du ställer in**automatisk planering kvantitet** till ett värde som är större än 1, kanban jobb grupperas innan de är planerade. Detta koncept gör kanban storlekar att reduceras under de faktiska ekonomiska standardstorlekar. Exempelvis är 30 den ekonomiska batchstorleken för en viss artikel (eller artikelfamilj). Istället för att skapa kanbans som använder produktkvantitet 30 kan du konfigurera kanban-regeln så att den har en produktkvantitet på 10 och ett värde för **Automatisk planeringskvantitet ** på **3**. Trots att automatisk planering av scheman kanban jobb för flödesgrupp bara när tre oplanerade jobb finns, det är helt transparent för planerare och verkstadsgolvet arbetsledare som två oplanerade jobb kanske väntar på avrättning. Den planerare eller shop floor manager kan sedan ta dessa två jobb i produktionen genom att manuellt planera dem eller skapa ytterligare kanban.
 
 ## <a name="manual-scheduling"></a>Manuell planering
 För manuell planering, Microsoft Dynamics AX 2012 introducerade kanban scheduling brädan. Manuell planering kan kombineras med automatisk scheduling. Kanban planering styrelsen låter dig planera och avplanera jobb, flyttat dem i sekvens, eller flytta dem från period till period. Jobb som är baserat på en kanban-regel om **automatisk planering** värdet är mer än **0** kan vara manuellt oplanerade. Dessa arbeten kommer att omplaneras när nästa automatiska planering händelse inträffar (som när en ny kanban skapas). Följande alternativ är tillgängliga för manuell planering:
@@ -44,10 +44,10 @@ För manuell planering, Microsoft Dynamics AX 2012 introducerade kanban scheduli
 -   **Framåt** flyttar den valda schemalagda jobb framåt i sekvensen med period.
 -   **Föregående period** flyttar den valda schemalagda jobb till början eller slutet av föregående period.
 -   **Nästa period** flyttar den valda schemalagda jobb till början eller slutet av nästa period.
--   **Planera**&gt;**Återställ jobbstatus** kan du unschedule ett schemalagt jobb.
+-   **Plan** &gt; **Återställ jobbstatus** låter dig avplanera ett planerat jobb.
 
 ## <a name="lean-scheduling-groups"></a>Lean planering grupperna
-Varje färg representerar en lean-planeringsgrupp. Lean planering grupperna kan definieras fritt som generiska grupper eller grupper som tillhör en enda flödesgrupp. Objekt och dimensioner kan användas fritt till cbs-grupper. Exempelvis i en målning cell, ett schema grupp kan representera en färg av produkten. I arbetet som drivs av särskilda verktyg, Poster kan grupperas efter verktygets krav och en förpackning flödesgrupp kan gruppera artiklar efter förpackningsmall. Användning av färger för lean planering grupperna är valfri men rekommenderas. Det ger bättre insyn i status för planen. Exempelvis är det lätt att se vilka färger som produceras på vilken dag och du kan direkt se hur detta fungerar kan optimeras.
+Varje färg representerar en lean-planeringsgrupp. Lean planering grupperna kan definieras fritt som generiska grupper eller grupper som tillhör en enda flödesgrupp. Objekt och dimensioner kan användas fritt till cbs-grupper. Exempelvis i en målning cell, ett schema grupp kan representera en färg av produkten. I arbetet som drivs av särskilda verktyg, Poster kan grupperas efter verktygets krav och en förpackning flödesgrupp kan gruppera artiklar efter förpackningsmall. Användning av färger för lean planering grupperna är valfri men rekommenderas. Det ger bättre insyn i statusen för planen. Det är exempelvis väldigt lätt att se vilka färger som framställs vilken dag, och du kan omedelbart se hur detta arbete kan optimeras.
 
 ## <a name="work-cell-capacity-and-period-capacity"></a>Flödesgrupp kapacitet och tid kapacitet
 Kapaciteten för en lean arbete cell är alltid samtidiga kapacitet. Med andra ord, flera jobb kan vara aktiv i en cell på samma gång. Kapaciteten kan spåras i två lägen: genomströmning och timmar.

@@ -26,9 +26,12 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="enter-account-and-dimension-combinations-segmented-entry-control"></a>Ange konto- och dimensionskombinationer (segmenterad postkontroll)
 
+[!include[banner](../includes/banner.md)]
+
+
 Det här avsnittet innehåller en beskrivning av hur du anger konto och dimensionskombinationer eller redovisningskonton. Posterfarenheten kallas ofta för segmenterad postkontroll.
 
-Användarna ange på olika sidor, t ex redovisningsjournaler, sidor och dimensionskombinationer budgetering och bokföringsdefinitioner. De giltiga konto- och dimensionskombinationerna beror på kontostrukturerna som tilldelas redovisningen och de avancerade regler som är tilldelade kontostrukturerna. När användaren anger en kombination, kan de manuellt ange värden eller dra nytta av en omfattande, sökfältet erfarenhet. När du anger det här fältet kan du ange och söker värdet och beskrivningen. Om du skriver 180 att programmet söka alla värden som börjar med den kombinationen. Du kan skriva in kontant och söker alla värden som har en beskrivning som börjar med likvida medel. Du kan också använda jokertecken, t ex \*kontanter eller \*180 att söka om värdet eller beskrivningen innehåller sökvillkoren. 
+Användare anger konto- och dimensionskombinationer på olika sidor, till exempel sidor för allmänna journaler, budgetar och bokföring av defintions. De giltiga konto- och dimensionskombinationerna beror på kontostrukturerna som tilldelas redovisningen och de avancerade regler som är tilldelade kontostrukturerna. När användarna anger en kombination, kan de antingen skriva värdena manuellt eller använda en avancerad sökfunktion. När du anger det här fältet kan du börja skirve och det söker värdet och beskrivningen. Om du till exempel skriver 180, sökar programmet alla värden som börjar med den nummerkombinationen. Du kan skriva in Kontant och programmet söker alla värden som har en beskrivning som börjar med Kontant. Du kan också använda jokertecken, t ex \*Kontant eller \*180 vid sökning om värdet eller beskrivningen innehåller sökvillkoren. 
 
 I följande tabell beskrivnings av kortkommandona som kan användas när sökningen stängs.
 
@@ -108,5 +111,7 @@ I följande tabell beskrivnings av kortkommandona som kan användas när söknin
 </table>
 
  
+
+
 
 

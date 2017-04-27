@@ -1,5 +1,5 @@
 ---
-title: "Konfigurera ett villkorligt beslut i ett arbetsflöde"
+title: "Konfigurera ett villkorsbeslut i ett arbetsflöde"
 description: "Använd följande procedur om du vill konfigurera egenskaperna för ett villkorsbeslut."
 author: sericks007
 manager: AnnBe
@@ -24,7 +24,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="configure-a-conditional-decision-in-a-workflow"></a>Konfigurera ett villkorligt beslut i ett arbetsflöde
+# <a name="configure-a-conditional-decision-in-a-workflow"></a>Konfigurera ett villkorsbeslut i ett arbetsflöde
+
+[!include[banner](../includes/banner.md)]
+
 
 Använd följande procedur om du vill konfigurera egenskaperna för ett villkorsbeslut.
 
@@ -38,14 +41,16 @@ Följ dessa steg när du vill ange ett namn för ett villkorsbeslut.
 ## <a name="set-conditions"></a> Ange villkor
 Systemet avgör vilken gren som ska användas genom att utvärdera det skickade dokumentet för att bestämma om det uppfyller specifika villkor.
 1.  Klicka på **Grundinställningar** i det vänstra fönstret.
-2.  Click **Add condition**.
+2.  Klicka på **Lägg till villkor**.
 3.  Ange ett villkor.
 4.  Ange ytterligare villkor vid behov.
 5.  Slutför följande steg för att bekräfta att de villkor som du har angett har ställts in korrekt:
     1.  Klicka på **Test** för att öppna formuläret **Test workflow condition**.
     2.  Markera en post i området **Validera villkor** i formuläret.
     3.  Klicka på **Ja**. Systemet utvärderar posten i syfte att avgöra om den uppfyller villkoren som du angett.
-    4.  Klicka på **OK** eller **Avbryt** och går tillbaka till den **egenskaper** formuläret.
+    4.  Klicka på **OK** eller **Avbryt** för att återgå till formuläret **Egenskaper**.
+
+
 
 
 

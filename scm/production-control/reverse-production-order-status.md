@@ -1,5 +1,5 @@
 ---
-title: "Återför statusen för en produktionsorder"
+title: "Återför produktionsorderstatus"
 description: "I det här avsnittet beskrivs hur du återför produktionsorderstatus."
 author: YuyuScheller
 manager: AnnBe
@@ -27,7 +27,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="reverse-the-production-order-status"></a>Återför statusen för en produktionsorder
+# <a name="reverse-the-production-order-status"></a>Återför produktionsorderstatus
+
+[!include[banner](../includes/banner.md)]
+
 
 I det här avsnittet beskrivs hur du återför produktionsorderstatus. 
 
@@ -49,5 +52,7 @@ När du återför statusen för en produktionsorder från **Frisläppt** till **
 
 ## <a name="from-started-to-released"></a>Från startad till frisläppt
 När du återför statusen för en produktionsorder från **Startad** till **Frisläpp**, återställs alla artiklar som rapporterats som färdiga. Om material har plockats eller inkommande och utgående leveranser har gått till produktion återställs även dessa inställningar. Fältet **Reststatus** på produktionsorderns strukturlisterader ändras från **Avslutad** till **Materialförbrukning**. Om tid har registrerats, eller om kvantiteter har rapporterats som färdiga för operationer i produktionsflödet, återförs dessa inställningar. Fältet **Reststatus** på produktionsorderns strukturlisterader ändras från **Avslutad** till **Flädesförbrukning** i produktionsflödet. Inställningarna för alla artiklar som bokförs som pågående eller som pågående arbete återförs. På sidan **Produktionsorderdetaljer** återställs de fält som visar en kvantitet som startades, eller rapporterades som avslutad. Data för dessa transaktioner återställs också.
+
+
 
 

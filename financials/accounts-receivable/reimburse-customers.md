@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="reimburse-customers"></a>Återbetala kunder
 
+[!include[banner](../includes/banner.md)]
+
+
 Det här avsnittet innehåller en beskrivning av hur du skapar återbetalningstransaktioner för en kundgrupp. Om en kund har ett kreditsaldo, kan du återbetala kunden för beloppet för saldot. 
 
 Följande tabell visar förutsättningarna som krävs och måste finnas på plats innan du startar
@@ -47,6 +50,8 @@ När du skapar återbetalningstransaktioner, skapas en leverantörsfaktura för 
     Kreditbeloppen överförs till kundernas leverantörskonton och bearbetas som normala betalningar. Om en kund inte har ett leverantörskonto skapas ett engångsleverantörskonto automatiskt för den kunden.
 3.  Om du vill visa de återbetalningstransaktioner som skapades använder du sidan **Återbetalning**.
 4.  Skapa en betalning för leverantörsfakturor som har skapats i återbetalningsprocessen i leverantörsreskontra.
+
+
 
 
 

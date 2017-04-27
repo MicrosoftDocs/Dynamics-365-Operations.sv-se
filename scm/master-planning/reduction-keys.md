@@ -29,6 +29,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="reduction-keys"></a>Reduceringsnycklar
 
+[!include[banner](../includes/banner.md)]
+
+
 Den här artikeln ger exempel som visar hur du ställer in en reduceringsnyckel. Den innehåller information om de olika reduceringsnyckelinställningarna och resultaten av varje nyckel. Du kan använda en reduceringsnyckel om du vill ange hur du ska minska prognosbehoven.
 
 <a name="example-1-percent---reduction-key-forecast-reduction-principle"></a>Exempel 1: Procent - reduceringsnyckel för prognosreduceringsprincip
@@ -58,7 +61,7 @@ Om du kör prognosplanering den 1 januari förbrukas kraven på efterfrågeprogn
 | april                | 750                       |
 | Maj - december | 1 000                     |
 
-## <a name="example-2-transactions--reduction-key-forecast-reduction-principle"></a>Exempel 2: Transaktioner-reduceringsnyckel prognos Reduceringsprincip
+## <a name="example-2-transactions--reduction-key-forecast-reduction-principle"></a>Exempel 2: Transaktioner - reduceringsnyckel för prognosreduceringsprincip
 Detta exempel visar hur aktuella order som inträffar under de perioder som definieras av reduceringsnyckeln reducerar behoven av efterfrågeprognos.
 
 -   På sidan **Huvudplaner** i fältet **Reduceringsprincip** väljer du **Transaktioner - reduceringsnyckel**.
@@ -82,7 +85,7 @@ Med samma försäljningsprognos på 1 000 enheter per månad överförs följand
 | april                | 881                       |
 | Maj - december | 1 000                     |
 
-## <a name="example-3-transactions--dynamic-period-forecast-reduction-principle"></a>Exempel 3: Dynamisk period transaktionerna prognos Reduceringsprincip
+## <a name="example-3-transactions--dynamic-period-forecast-reduction-principle"></a>Exempel 3: Transaktioner - dynamisk period för prognosreduceringsprincip
 I de flesta fall ställs systemen in så att transaktioner minskar efterfrågeprognosen inom specifika detaljprognosperioder: veckor, månader och så vidare. Dessa perioder definieras i reduceringsnyckeln. Men tiden mellan två efterfrågeprognosrader kan också* antyda* en period.
 
 1.  Skapa en efterfrågeprognos för följande datum och kvantiteter.
@@ -129,6 +132,8 @@ Här följer en sammanfattning av **Transaktioner - dynamisk period** för reduc
 <a name="see-also"></a>Se även
 --------
 
-[Master plans](master-plans.md)
+[Huvudplaner](master-plans.md)
+
+
 
 

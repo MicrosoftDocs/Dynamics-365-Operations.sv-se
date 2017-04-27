@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="create-a-bill-of-lading"></a>Skapa en fraktsedel
 
+[!include[banner](../includes/banner.md)]
+
+
 I det här avsnittet beskrivs hur du skapar en fraktsedel när du använder lagerstyrningsprocesser.  
 
 En fraktsedel är ett juridiskt dokument mellan företaget som skeppar artiklarna och transportföretaget. Dokumentet medföljer de levererade artiklarna och fungerar som ett leveranskvitto när artiklarna levereras till målet. Om du använder lagerstyrning finns det två sätt att skapa en fraktsedel:
@@ -34,9 +37,11 @@ En fraktsedel är ett juridiskt dokument mellan företaget som skeppar artiklarn
   -   Skapa rapporten manuellt med hjälp av sidan **Fraktsedel**.
   -   Generera rapporten från **Workbench för lastplanering**.
 
-Om du genererar fraktsedeln från **Workbench för lastplanering** måste beläggningsstatusen vara **Levererad.** Om det finns mer än en leverans i belastningen, skapas en fraktsedel för varje leverans. När en fraktsedel skapats du kan göra ändringar i det på de **fraktsedel** sida.
+Om du genererar fraktsedeln från **Workbench för lastplanering** måste beläggningsstatusen vara **Levererad.** Om det finns mer än en leverans i beläggningen, skapas en fraktsedel för varje leverans. När en fraktsedel skapats kan du ändra den på sidan **Ffraktsedel**.
 
 ## <a name="master-bill-of-lading"></a>Huvudfraktsedel
-Om det finns mer än en leverans i en last kan du skapa en huvudfraktsedel. Denna har samma layout och information som en fraktsedel, men innehåller det sammanfattade innehållet för alla leveranser. Om alternativet **Skapa en huvudfraktsedel när det finns mer än en leverans på en beläggning** anges som **Ja** på sidan **Transportledningsparametrar**, genereras en huvudfraktsedel automatiskt om du skapar en fraktsedel från **Workbench för lastplanering** och det finns mer än en leverans. Du kan också få en lista över konossement genom att klicka på **relaterad information**&gt;**fraktsedel**. Om du skapar fraktsedlar manuellt kan du skapa en huvudfraktsedel på sidan **Fraktsedel**.
+Om det finns mer än en leverans i en last kan du skapa en huvudfraktsedel. Denna har samma layout och information som en fraktsedel, men innehåller det sammanfattade innehållet för alla leveranser. Om alternativet **Skapa en huvudfraktsedel när det finns mer än en leverans på en beläggning** anges som **Ja** på sidan **Transportledningsparametrar**, genereras en huvudfraktsedel automatiskt om du skapar en fraktsedel från **Workbench för lastplanering** och det finns mer än en leverans. Du kan också få en lista över fraktsedlarna genom att klicka på **Relaterad information** &gt; **Fraktsedel**. Om du skapar fraktsedlar manuellt kan du skapa en huvudfraktsedel på sidan **Fraktsedel**.
+
+
 
 

@@ -1,5 +1,5 @@
 ---
-title: "Standardvärdet produktion i Tillverkningskörning"
+title: "Standarder för produktionsorder inom tillverkningskörning"
 description: 
 author: YuyuScheller
 manager: AnnBe
@@ -27,11 +27,14 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="production-order-defaults-in-manufacturing-execution"></a>Standardvärdet produktion i Tillverkningskörning
+# <a name="production-order-defaults-in-manufacturing-execution"></a>Standarder för produktionsorder inom tillverkningskörning
+
+[!include[banner](../includes/banner.md)]
 
 
 
-Överväga noga alla inställningar på de **standardvärden produktion** sidan innan arbetare börjar registreringarna ska göras av produktionsjobb. Om ditt företag använder multisitefunktionen, kanske du vill ställa in olika standarder för produktionsorder som ska utföras för varje plats. Orderstandard för integration med produktionsstyrning ställs in på följande flikar på sidan **Standarder för produktionsorder**:
+
+Överväg noga alla inställningar på sidan **Standarder för produktionsorder** innan arbetare börjar göra registreringar på produktionsjobb. Om ditt företag använder multisitefunktionen, kanske du vill ställa in olika standarder för produktionsorder för varje plats. Orderstandard för integration med produktionsstyrning ställs in på följande flikar på sidan **Standarder för produktionsorder**:
 
 -   **Allmänt** - Allmän orderstandard för produktionsjobb i tillverkningskörning.
 -   **Start** – Orderstandard som används när produktionsjobb eller operationer startar.
@@ -68,6 +71,8 @@ Materialförbrukning under processen Rapportera som färdigt för en produktions
 -   **Avräkningsprincip** – När en produktionsorder rapporteras som avslutad, kommer kvantiteter av material att förbrukas enligt avräkningsprincipen som anges på produktionsstrukturlisteraderna. Endast materialrader där avräkningsprincipen är inställd på **Avsluta** kommer att konsumeras.
 -   **Alltid** – Kvantiteter av materia som är proportionell mot den kvantiteten som rapporteras som avslutad ska alltid förbrukas.
 -   **Aldrig** – Kvantiteter av material ska aldrig förbrukas.
+
+
 
 
 

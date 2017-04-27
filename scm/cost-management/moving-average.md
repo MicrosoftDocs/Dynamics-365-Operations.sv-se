@@ -68,14 +68,14 @@ Med rörligt genomsnitt bestäms produktens kostnad av inköpinleveransen. När 
 3.  Skapa en försäljningsorder för en kvantitet på 1 och ett enhetspris på 10,00.
 4.  Skapa en inköpsfaktura för en kvantitet på 2 och ett enhetspris på 12,00.
 
-Skillnaden i enhetspris på 2,00 bokförs till kontot för Prisavvikelse för rörligt genomsnitt när inköpsfakturan bokförs. Anledningen är att två produkter köps in till en kostnad på 20,00. En av produkter såldes för ett enhetspris på 10,00. Inköpsfakturan har bokförts på 12,00 med kvantiteten 2 a-priset. Priset per enhet av produkten kan inte bokföras när 14,00.
+Skillnaden i enhetspris på 2,00 bokförs till kontot för Prisavvikelse för rörligt genomsnitt när inköpsfakturan bokförs. Anledningen är att två produkter köps in till en kostnad på 20,00. En av produkter såldes för ett enhetspris på 10,00. Inköpsfakturan bokfördes med enhetspriset på 12,00 med kvantiteten 2. Enhetspriset för produkten kan inte bokföras som 14,00.
 
 ## <a name="moving-average-product-and-inventory-adjustment"></a>Produkt med rörligt genomsnitt och lagerjustering
 Om du behöver justera en produkts rörliga genomsnittskostnad tillåts lagerjusteringar per dagens datum. Du kan inte bakåtdatera en lagerjustering för att korrigera produktens rörliga genomsnittskostnad. Du kan inte ha det kostnadskalkylerade flödet genom efterföljande transaktioner. I det här exemplet justeras den rörliga genomsnittskostnaden för en produkt.
 1.  Välj produkten som du vill justera den rörliga genomsnittskostnaden för.
-    | **Note**                                                                                    |
+    | **Obs!**                                                                                    |
     |---------------------------------------------------------------------------------------------|
-    | Den ** omvärdering för rörligt genomsnitt ** sida undersöker lagersaldot för en produkt. |
+    | Sidan **Omvärdering för rörligt genomsnitt** undersöker tillgängligt lager för en produkt. |
 
     Den markerade produkten har en bokförd kvantitet på 1, ett bokfört värde på 12,00, en bokförd enhetskostnad på 12,00 och en enhetskostnad på 12,00.
 2.  Uppdatera fältet **Enhetskostnad** till 16,00. Systemet beräknar de kvarvarande fälten.
@@ -88,7 +88,7 @@ Om du behöver justera en produkts rörliga genomsnittskostnad tillåts lagerjus
 På sidan **Kvittningar för verifikationen** kan du se en justering på 4,00 som bokförs på kontot för rörligt genomsnitt.
 
 ## <a name="moving-average-with-production"></a>Rörligt genomsnitt med produktion
-Rörligt genomsnitt stöder tillverkade artiklar. Om du tänker använda glidande medelvärde i en produktionsmiljö i **Använd uppskattad självkostnad** skjutreglaget i det ** Produktionskontrollparametrar ** sidan ska vara selcted. Det innebär att självkostnaden som beräknas vid uppskattningen används i stället för den verkliga självkostnaden för strukturlisteberäkning.
+Rörligt genomsnitt stöder tillverkade artiklar. Om du tänker använda rörligt genomsnitt i en produktionsmiljö, ska skjutreglaget **Använd uppskattad självkostnad** på sidan **Produktionkontrollparametrar** väljas. Det innebär att självkostnaden som beräknas vid uppskattningen används i stället för den verkliga självkostnaden för strukturlisteberäkning.
 
 ## <a name="moving-average-with-a-backdated-transaction"></a>Rörligt genomsnitt med en bakåtdaterad etransaktion
 Bakåtdaterade transaktioner tilldelas den aktuella rörliga genomsnittskostnaden och produktens fysiska kvantitet uppdateras, men produktens rörliga genomsnittskostnad påverkas inte. I den här rörliga genomsnittskostnaden bokförs en bakåtdaterad transaktion för en rörlig genomsnittskostnad.

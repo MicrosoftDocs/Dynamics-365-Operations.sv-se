@@ -33,7 +33,7 @@ När du skapar en inköpsorder (IO) anges allmän information om hela ordern i i
 
 Du kan också skapa inköpsorder genom att kopiera rader från ett annat inköpsorderdokument eller från en försäljningsorder. I det här fallet kan du byta tecken på lagret på samma sätt som du skulle byta tecken på en faktura för att indikera kredit.  
 
-Även om du kan skapa inköpsorder manuellt genereras de vanligtvis från andra processer. Order kan skapas automatiskt utifrån andra dokument såsom inköpsrekvisitioner. De kan också skapas som en del av en process och planerade POs huvudplanering. Om du använder inköpsavtal POs kan skapas av den **Release order** åtgärd. Det finns även mer avancerade metoder för att skapa en inköpsorder automatiskt. Order kan exempelvis skapas när du använder direktleverans eller koncerninterna orderkedjor.
+Även om du kan skapa inköpsorder manuellt genereras de vanligtvis från andra processer. Order kan skapas automatiskt utifrån andra dokument såsom inköpsrekvisitioner. De kan också skapas som en del av huvudplaneringsprocessen via planerade inköpsorder. Om du använder inköpsavtal kan inköpsorder skapas av åtgärden **Frisläpp order**. Det finns även mer avancerade metoder för att skapa en inköpsorder automatiskt. Order kan exempelvis skapas när du använder direktleverans eller koncerninterna orderkedjor.
 
 ## <a name="creating-a-purchase-order-header"></a>Skapa ett inköpsorderhuvud
 När du skapar en ny inköpsorder visas en dialogruta där du kan ange den vanligaste informationen för inköpsorderhuvudet. När du klickar på **OK** för att stänga dialogrutan skapas ordern och du kan därefter lägga till ytterligare information i huvudet.  
@@ -84,7 +84,7 @@ Du kan behöva skjuta upp slutförandet av en inköpsorder. Du kan till exempel 
 <a name="see-also"></a>Se även
 --------
 
-[Purchase order overview](purchase-order-overview.md)
+[Översikt över inköpsorder](purchase-order-overview.md)
 
 [Godkänna och bekräfta inköpsorder](purchase-order-approval-confirmation.md)
 

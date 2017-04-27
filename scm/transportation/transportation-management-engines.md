@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="transportation-management-engines"></a>Transporthanteringsmotorer
 
+[!include[banner](../includes/banner.md)]
+
+
 Transporthanteringsmotorer definierar logiken som används för att generera och bearbeta transporttariffer i Transporthantering. 
 
 En transporthanteringsmotor beräknar uppgifter, till exempel transportföretagets tariff. Motorsystemet låter dig ändra beräkningsstrategier vid körning baserat på data i Microsoft Dynamics 365 for Operations. En transporthanteringsmotor liknar ett plugin-program som hör till ett visst transportkontrakt.
@@ -58,7 +61,7 @@ En transporthanteringsmotor kräver att du ställer in initieringsdata för att 
 I de flesta fall kan du klicka på knappen **Parametrar** i transporthanteringsmotorns inställningsformulär för att konfigurera initieringsdatan. **Exempel på konfigurationen för en tariffmotor som refererar till en milkostnadsmotor** Följande exempel visar de inställningar som krävs för en tariffmotor som baseras på .NET-motortypen Microsoft.Dynamics.Ax.Tms.Bll.MileageRateEngine och som refererar till en milkostnadsmotor.
 | Parameter             | Beskrivning                                                                                                                                                                                                                                                                                                                                                                      |
 |-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| *RateBaseAssigner*    | Den .NET-typ som tolkar tariffbastilldelningsdata för ett visst schema. Syntaxen för parametervärdet består av två segment avgränsas med en lodrät stapel ()|). Det första segmentet innehåller det sammansättningsnamn som definierar assignertypen. Det andra segmentet definierar det kvalificerade namnet på assignertypen. Detta inkluderar namnområdet för typen. |
+| *RateBaseAssigner*    | Den .NET-typ som tolkar tariffbastilldelningsdata för ett visst schema. Syntaxen av parametervärdet består av två segment avgränsade med ett vertikalstreck (|). Det första segmentet innehåller det sammansättningsnamn som definierar assignertypen. Det andra segmentet definierar det kvalificerade namnet på assignertypen. Detta inkluderar namnområdet för typen. |
 | *MileageEngineCode*   | Kod för milkostnadsmotor som identifierar milkostnadsmotorposten i Microsoft Dynamics 365 for Operations-databasen.                                                                                                                                                                                                                                                             |
 | *ApportionmentEngine* | Kod för allmän motor som identifierar fördelningsmotorn i Microsoft Dynamics 365 for Operations-databasen.                                                                                                                                                                                                                                                              |
 
@@ -87,7 +90,7 @@ Metadata för transporthanteringsmotorer konfigureras olika för olika typer av 
 | **Transporttidsmotor** och **Milkostnadmotor** | Hämtar metadata direkt från milkostnadsmotorns konfigurationsinställningsformulär.                                                                                                                                                                                                                                                                                                                                                                                  |
 
   **Exempel på metadata för en tariffmotor** Transportledningsmotorn kräver identifiering av ursprungsadressen, destinationens stat och land/region samt start- och slutpunkt för försändelsen. Genom att använda dessa krav ser metadata ut som i följande tabell. Registret innehåller också information om vilken typ av ingångsdata som krävs.
--   Definiera informationen i **Transporthantering**&gt;**inställningar** på den **klassificera bastyp** sida.
+-   Definiera den här informationen i **Transporthantering** &gt; **Inställningar** på sidan **Tariffbastyp**.
 
 | Sekvens | Namn                          | Fälttyp | Datatyp | Uppslagstyp    | Obligatoriskt |
 |----------|-------------------------------|------------|-----------|----------------|-----------|
@@ -96,6 +99,8 @@ Metadata för transporthanteringsmotorer konfigureras olika för olika typer av 
 | 3        | Destination – från postnummer | Uppdrag | Sträng    | Postnummer    | Markerad  |
 | 4        | Destination – till postnummer   | Uppdrag | Sträng    | Postnummer    | Markerad  |
 | 5        | Destinationsland           | Uppdrag | Sträng    | Land/region |           |
+
+
 
 
 

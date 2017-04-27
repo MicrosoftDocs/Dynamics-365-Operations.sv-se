@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="electronic-signature-overview"></a>Översikt över elektroniska signaturer
 
+[!include[banner](../includes/banner.md)]
+
+
 Den här artikeln innehåller en översikt över elektroniska signaturer samt en beskrivning av hur de kan användas i Microsoft Dynamics 365 for Operations.
 
 <a name="what-is-an-electronic-signature"></a>Vad är en elektronisk signatur?
@@ -35,7 +38,7 @@ Den här artikeln innehåller en översikt över elektroniska signaturer samt en
 En elektronisk signatur bekräftar identiteten hos en person som ska påbörja eller godkänna en dataprocess. I vissa branscher är en elektronisk signatur lika juridiskt bindande som en handskriven signatur. Elektroniska signaturer är ett juridiskt krav för flera reglerade branscher som läkemedelsbranschen, livsmedelsbranschen, samt rymd- och försvarsbranschen. De krävs även för att överensstämma med reglerna i 21 CFR del 11 som utfärdades av Food and Drug Administration (FDA) i USA. **Obs!** En elektronisk signatur är i sig inte detsamma som en digital signatur. En elektronisk signatur ersätter helt enkelt en handskriven signatur, medan en digital signatur innehåller ytterligare säkerhetsfunktioner. Med en digital signatur kan det vara möjligt att identifiera om en annan användare eller process har manipulerat data. En digital signatur kan även verifieras och denna verifiering kan inte tillbakavisas av ägaren av certifikatet som användes för att signera data. Som beskrivs nedan har elektroniska signaturer i Microsoft Dynamics 365 for Operations en inbyggd funktion för digital signatur.
 
 ## <a name="electronic-signatures-in-dynamics-365-for-operations"></a>Elektroniska signaturer i Dynamics 365 for Operations
-I Dynamics 365 for Operations kan du använda elektroniska signaturer för kritiska affärsprocesser. Vissa processer har inbyggda funktioner för elektronisk signatur. Du kan även skapa anpassade signaturkrav för alla databastabeller och fält. Elektroniska signaturer har en inbyggd funktion för digital signatur. Alla användare som signerar dokument måste få ett giltigt kryptografiskt certifikat. När ett dokument signeras verifieras den privata nyckeln som är associerad med certifikatet. Dynamics 365 for Operations registrerar information om elektroniska signaturer i en logg för att tillhandahålla ett redovisningsspår. Om du vill ställa in elektroniska signaturer finns i [Ställ in elektroniska signaturer (aktivitet guide)](http://ax.help.dynamics.com/en/wiki/set-up-electronic-signatures/).
+I Dynamics 365 for Operations kan du använda elektroniska signaturer för kritiska affärsprocesser. Vissa processer har inbyggda funktioner för elektronisk signatur. Du kan även skapa anpassade signaturkrav för alla databastabeller och fält. Elektroniska signaturer har en inbyggd funktion för digital signatur. Alla användare som signerar dokument måste få ett giltigt kryptografiskt certifikat. När ett dokument signeras verifieras den privata nyckeln som är associerad med certifikatet. Dynamics 365 for Operations registrerar information om elektroniska signaturer i en logg för att tillhandahålla ett redovisningsspår. För att ställa in elektroniska signaturer, se [Ställ in elektroniska signaturer (uppgiftsguide)](http://ax.help.dynamics.com/en/wiki/set-up-electronic-signatures/).
 
 ## <a name="users-who-require-access-to-electronic-signatures"></a>Användare som behöver åtkomst till elektroniska signaturer
 Tre typer av användare kräver normalt säkerhetsåtkomst till elektroniska signaturer: elektronisk signaturadministratörer, undertecknare och elektronisk signaturrevisorer.
@@ -78,6 +81,8 @@ Ibland kanske du vill att en användare ska signera en annan användares ändrin
 1.  Gå till sidan **Alternativ** och sedan till fliken **Konton** och klicka på **Utse godkännare**.
 2.  Välj ID för den användare som ska signera för andra användarens ändringar i fältet **Godkänn användar-ID**.
 3.  Välj ID för den användare vars ändringar måste signeras i fältet **Signera för användar-ID**.
+
+
 
 
 

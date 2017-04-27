@@ -1,5 +1,5 @@
 ---
-title: "Strukturlista beräkningar grupper"
+title: "Beräkningsgrupper för strukturlista"
 description: "Den här artikeln innehåller information om beräkningsgrupper för strukturlistor och hur du ställer in dem. Om du vill köra en strukturlisteberäkning måste du antingen ställa in beräkningsgrupper och tilldela dem till enskilda artiklar eller ställa en standardberäkningsgrupp. Beräkningsinställningarna från beräkningsgruppen används sedan som standardvärden på sidan Strukturlisteberäkning när strukturlistan beräknas."
 author: YuyuScheller
 manager: AnnBe
@@ -26,11 +26,14 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="bom-calculations-groups"></a>Strukturlista beräkningar grupper
+# <a name="bom-calculations-groups"></a>Beräkningsgrupper för strukturlista
+
+[!include[banner](../includes/banner.md)]
+
 
 Den här artikeln innehåller information om beräkningsgrupper för strukturlistor och hur du ställer in dem. Om du vill köra en strukturlisteberäkning måste du antingen ställa in beräkningsgrupper och tilldela dem till enskilda artiklar eller ställa en standardberäkningsgrupp. Beräkningsinställningarna från beräkningsgruppen används sedan som standardvärden på sidan Strukturlisteberäkning när strukturlistan beräknas. 
 
-Det krävs en standardberäkningsgrupp på sidan **Parametrar för hantering av lager och lagerstyrning** eller en produktspecifik beräkningsgrupp på sidan **Information om frisläppt produkt**. Först sker efter grupp beräkningsinställningar de **ut produktinformation** sida. Om det inte finns en beräkningsgrupp som det visas på den **parametrar för lager och lagerstyrning** sida. Om systemet inte hittar en grupp, får användaren ett felmeddelande under beräkning. En beräkningsgrupp innehåller policyer för självkostnadsmodellen, försäljningsprismodellen och varningschecklistan. Beräkningsinställningar från beräkningsgruppen används som standardvärden på sidan **Strukturlisteberäkning** när strukturlistan beräknas.
+Det krävs en standardberäkningsgrupp på sidan **Parametrar för hantering av lager och lagerstyrning** eller en produktspecifik beräkningsgrupp på sidan **Information om frisläppt produkt**. Systemet söker först efter inställningarna för beräkningsgrupper på sidan **Information om frisläppt produkt**. Om det inte finns någon beräkningsgrupp där, söker systemet sidan **Parametrar för hantering av lager och lagerstyrning**. Om systemet inte kan hitta en beräkningsgrupp får användaren ett felmeddelande under beräkningen. En beräkningsgrupp innehåller policyer för självkostnadsmodellen, försäljningsprismodellen och varningschecklistan. Beräkningsinställningar från beräkningsgruppen används som standardvärden på sidan **Strukturlisteberäkning** när strukturlistan beräknas.
 
 ## <a name="purposes-of-bom-calculation-groups"></a>Syftet med beräkningsgrupper för strukturlistor
 Du kan tilldela en beräkningsgrupp för strukturlistor till artiklar av flera anledningar:
@@ -72,7 +75,7 @@ På snabbfliken **Varningar** väljer du alternativ för eventuella varningsmedd
 Standardinställningar för Parametrar för hantering av lager och lagerstyrning
 --------------------------------------------------------------
 
-Eftersom beräkningsgrupper krävs för att göra beräkningar måste du ställa in en standardberäkningsgrupp i Parametrar för lagerhantering. Den här inställningen gör att företag kan ha en standardkostnadsgrupp och vinstinställning för alla artiklar. Om en viss artikel sedan har särskilda beräkningskrav kan användaren tilldela en annan beräkningsgrupp för den artikeln. Normalt sett anger du beräkningsgrupper för strukturlistekomponentartiklar i stället för strukturlisteartiklar. När varningsmeddelanden visas tillämpas dock beräkningsgrupper. En beräkningsgrupp som tilldelas artiklarna åsidosätter det standardvärde som har ställts in i Parametrar för lagerhantering. Du kan ställa in standardparametern vid **kostnad management**&gt;**lager redovisningsinställningarna principer**&gt;**parametrar**&gt;**LAGERREDOVISNING**&gt;**beräkningsgrupp**. Genom att ställa in en standardkonfigurationsgrupp kan du även konfigurera varningsvillkor som användarna får under beräkningsprocessen för strukturlistan om de markerade komponenterna kan orsaka beräkningsfel.
+Eftersom beräkningsgrupper krävs för att göra beräkningar måste du ställa in en standardberäkningsgrupp i Parametrar för lagerhantering. Den här inställningen gör att företag kan ha en standardkostnadsgrupp och vinstinställning för alla artiklar. Om en viss artikel sedan har särskilda beräkningskrav kan användaren tilldela en annan beräkningsgrupp för den artikeln. Normalt sett anger du beräkningsgrupper för strukturlistekomponentartiklar i stället för strukturlisteartiklar. När varningsmeddelanden visas tillämpas dock beräkningsgrupper. En beräkningsgrupp som tilldelas artiklarna åsidosätter det standardvärde som har ställts in i Parametrar för lagerhantering. Du kan ställa in förvald parameter på **Kostnadshantering** &gt; **Policyinställningar för lagerredovisning** &gt; **Parametrar** &gt; **Lagerredovisning** &gt; **Beräkningsgrupp**. Genom att ställa in en standardkonfigurationsgrupp kan du även konfigurera varningsvillkor som användarna får under beräkningsprocessen för strukturlistan om de markerade komponenterna kan orsaka beräkningsfel.
 Visa varningsmeddelanden på sidan Slutförd
 ------------------------------------------
 
@@ -85,5 +88,7 @@ En strukturlisteberäkning genererar varningsmeddelanden. Du kan visa varningar 
 -   Identifiera när artikeln på en strukturlisterad har en lägre vinstmarginal än du önskar.
 
 Du kan definiera flera beräkningsgrupper för strukturlistor, beroende på dina krav för variationer i varningsmeddelanden. Det kan till exempel räcka med en beräkningsgrupp för strukturlistor som visar ett varningsmeddelande om en aktiv strukturlista eller om en komponentkvantitet som är lika med 0 (noll). När du startar beräkningen av en strukturlista kan du åsidosätta varningsvillkoren som är kopplade till beräkningsgruppen för strukturlistor. Du kan också lägga till eller ta bort varningsvillkor. Om den aktuella situationen inte berör flödesdata kan du exempelvis ta bort varningsvillkoret för ett aktivt flöde. **Obs!** Sidan **Beräkningsgrupper** inkluderas i Tid och närvaro, men har ingen koppling till beräkningsgrupper för strukturlistor. I Tid och närvaro kan arbetstagare tilldelas till beräkningsgrupper som återspeglar grupperingen av arbetstagare som är associerade med samma arbetsledare eller chef. Beräkning av arbetstagarregistreringar kan utföras automatiskt eller manuellt av en arbetsledare eller chef.
+
+
 
 

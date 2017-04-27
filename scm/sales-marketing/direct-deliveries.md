@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="direct-deliveries"></a>Direktleveranser
 
+[!include[banner](../includes/banner.md)]
+
+
 Den här artikeln innehåller information om direktleveranser. Direktleveranser är leveranser som skickas direkt till din kund från leverantören.
 
 Direktleveranser minskar leveranstiden och lagerhållningskostnaderna, eftersom inga produkter behöver förvaras i lagret innan de skickas till kunden.  
@@ -49,5 +52,7 @@ Om du vill ta bort en försäljningsorderrad med leveranstypen **Direktleverans*
 
 ## <a name="warehouse"></a>Lagerställe
 När du skapar en direktleverans kommer artiklarna som du säljer aldrig fysiskt anlända till lagerstället. Du måste dock fortfarande ange ett lagerställe på försäljningsorderraden. På samma sätt kan plockkrav anges på artikelmodellgruppen för artikeln. Men eftersom artiklarna aldrig anländer fysiskt till ditt lagerställe ignoreras dessa krav om försäljningsordern är en direktleverans.
+
+
 
 

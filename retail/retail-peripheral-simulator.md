@@ -1,6 +1,6 @@
 ---
-title: Retail-kringutrustning simulator
-description: "Det här avsnittet beskrivs verktyget simulator kringutrustning som medföljer Microsoft Dynamics 365 för verksamhet – Retail."
+title: "Kringutrustningssimulator för butik"
+description: "Det här avsnittet beskrivs verktyget kringutrustningssimulator som medföljer Microsoft Dynamics 365 for Operations – Retail."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 266544
 ms.assetid: 16f31e70-15fc-441e-9727-e6a31c3a48f5
 ms.search.region: global
@@ -25,50 +25,53 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="retail-peripheral-simulator"></a>Retail-kringutrustning simulator
+# <a name="retail-peripheral-simulator"></a>Kringutrustningssimulator för butik
 
-Det här avsnittet beskrivs verktyget simulator kringutrustning som medföljer Microsoft Dynamics 365 för verksamhet – Retail.
+[!include[banner](includes/banner.md)]
+
+
+Det här avsnittet beskrivs verktyget kringutrustningssimulator som medföljer Microsoft Dynamics 365 for Operations – Retail.
 
 <a name="overview"></a>Översikt
 --------
 
-Microsoft Dynamics 365 för verksamhet – Retail kringutrustning simulator är ett verktyg som hjälper dig att skapa, testa och felsöka kringutrustning som används i retail-miljöer. Du kan använda kringutrustning simulatorn testning av retail kringutrustning och hitta problem som orsakas av felaktig inställning eller felaktiga drivrutiner. Desktop programmet som innehåller virtuella versioner av enheter som Dynamics 365 för operationer som ingår i yttre simulatorn - stöd för Retail. Ett avsnitt för varje virtuell enhet visar interaktionen mellan enheten och den butik inköpstillfället (PO). Du kan också använda det för att ge feedback som gäller för olika scenarier för kassa. Yttre simulatorn stöder KASSAN tillsammans med följande virtuella enheter:
+Microsoft Dynamics 365 for Operations – kringutrustningssimulator för butik är ett verktyg som hjälper dig att skapa, testa och felsöka kringutrustning som används i butiksmiljöer. Du kan använda kringutrustningssimulatorn för att effektivisera testning av butikskringutrustning och hitta problem som orsakas av felaktig inställning eller felaktiga drivrutiner. Kringutrustningssimulatorn innehåller ett skrivbordsprogram med virtuella versioner av enheter som stöds av Dynamics 365 for Operations - Retail. Ett avsnitt för varje virtuell enhet visar interaktionen mellan enheten och butikens kassa (POS). Du kan också använda den för att ge feedback som gäller för olika kassascenarier. Kringutrustningssimulatorn stöder interaktion mellan kassan och följande virtuella enheter:
 
--   **Skrivaren** – kringutrustning simulatorn kan visa inleveranser som har konfigurerats för en POS-skrivare.
--   **Visa rad** – du kan konfigurera ett virtuellt radskärmen så att aktiviteten på en fysisk radskärmen.
--   **Kortläsare (MSR)** – du kan skicka simulerade Magnetremsan händelser till KASSAN från yttre simulatorn.
--   **Låda** – du kan simulera en fysisk kassalådan.
--   **Låda 2** – du kan simulera kanske du behöver en enda kassaregister med två aktiva SKIFT genom att skapa en andra kassalådan i yttre simulatorn.
--   **Skannern** – de virtuella streckkodsskanner som stöder kringutrustning simulatorn kan utfärda streckkod skannerhändelser.
--   **Anpassa** – en virtuell skala kan du simulera interaktionen vägd artiklar med KASSAN.
--   **Personlig kod (PIN) numeriska** – du kan simulera operationer PIN-knappsatsen. **Anmärkning:** måste du implementera stöd för ett fysiskt PIN-knappsats genom betalningskopplingen.
--   **Signatur** – kringutrustning simulatorn inkluderar en enhet för digital signatur virtuella som du kan ställa in att signaturer som krävs för vissa anbud, till exempel konto för kundbetalningar.
+-   **Skrivaren** – kringutrustningssimulatorn kan visa kvitton som har konfigurerats för en kassaskrivare.
+-   **Radvisning** – du kan konfigurera en virtuell radbildskärm för att visa aktiviteten på en fysisk radbildskärm.
+-   **Kortläsare (MSR)** – du kan skicka simulerade kortläsarhändelser till kassan från kringutrustningssimulatorn.
+-   **Kassalåda** – du kan simulera en fysisk kassalåda.
+-   **Kassalåda 2** – du kan simulera en enda kassaapparat med två aktiva skift genom att skapa en andra kassalådan i kringutrustningssimulatorn.
+-   **Skanner** – den virtuella streckkodsskanner som kringutrustningssimulatorn stöder kan utfärda skannerhändelser för streckkod.
+-   **Våg** – med en virtuell våg kan du simulera interaktionen mellan vägda artiklar och kassan.
+-   **Personlig PIN-knappsats** – du kan simulera åtgärder med PIN-knappsatsen. **Anmärkning:** måste du implementera stöd för en fysisk PIN-knappsats via betalningskopplingen.
+-   **Digital signatur** – kringutrustningssimulatorn inkluderar en virtuell enhet för digital signatur som du kan ställa in för att begära signaturer som krävs för vissa betalningsmedel, till exempel kundkontobetalningar.
 
-Du kan också använda kringutrustning simulatorn simulera wedge tangentbordshändelser som härstammar från en streckkodsskanner och MSR. Virtuella kringutrustning simulatorn stöd särskilt för objektlänkning och inbäddning för Retail POS (OPOS) enheter.
+Du kan också använda kringutrustningssimulatorn för att simulera händelser för tangentbords-wedge som härstammar från en streckkodsskanner och MSR. Den virtuella kringutrustningssimulatorn stöder särskilt objektlänkning och inbäddning för Retail POS-enheter (OPOS).
 
-## <a name="key-scenarios"></a>Vanliga scenarier
+## <a name="key-scenarios"></a>Viktiga scenarier
 ### <a name="troubleshooting"></a>Felsökning
 
-Du kan använda kringutrustning simulatorn du felsöker Enhetsinställningar. Om du inte har simulatorn kringutrustning eller andra enheter av samma slag, kan det vara svårt att avgöra om problem kommer från. Men när måste du simulatorn kringutrustning kan du ställa in virtuella enheter och köra samma kodsökvägar och affärslogik som används för fysiska enheter. Från yttre simulatorn synpunkt är den huvudsakliga skillnaden mellan virtuella enheter och fysiska enheter serviceobjekt eller drivrutin. Serviceobjektet tillhandahålls av enhetens tillverkare för fysiska enheter. Yttre simulatorn finns däremot serviceobjekt som en del av simulatorn kringutrustning. När du simulatorn kringutrustning fungerar korrekt, om en enhet inte fungerar korrekt när enhetsnamnet i maskinvaruprofilen ändras till namnet på den faktiska enheten antar du att det finns ett problem med serviceobjektet från tillverkaren.
+Du kan använda kringutrustningssimulatorn när du felsöker enhetsinställningar. Om du inte har kringutrustningssimulatorn eller en andra enhet av samma slag, kan det vara svårt att avgöra var problem kommer från. Men när du har kringutrustningssimulatorn kan du ställa in virtuella enheter och köra samma kodsökvägar och affärslogik som används för fysiska enheter. Från kringutrustningssimulatorns synvinkel är serviceobjektet eller enhetsdrivrutinen den huvudsakliga skillnaden mellan virtuella enheter och fysiska enheter. För fysiska enheter tillhandahålls serviceobjektet av enhetens tillverkare. För kringutrustningssimulatorn finns däremot serviceobjekten som en del av kringutrustningssimulatorn. När du kringutrustningssimulatorn fungerar korrekt, om en enhet inte fungerar korrekt när enhetsnamnet i maskinvaruprofilen ändras till namnet på den faktiska enheten, kan du anta att det finns ett problem med serviceobjektet från tillverkaren.
 
 ### <a name="training"></a>Kurs
 
-Du kan använda kringutrustning simulatorn att lägga till ett lager och realistiska kassören utbildning när en fysisk maskinvara inställning inte är tillgänglig. När yttre simulatorn ingår i utbildningen scenarier kan interagera kassören effektivare med POS genom att ange indata till exempel product code sökningar och presentkort kort swipes och genom att iaktta vilka inleveranser som ska skrivas ut för en viss transaktion.
+Du kan använda kringutrustningssimulatorn för att lägga till ett realistiskt lager vid kassörsutbildningen när ingen fysisk maskinvaruinställning är tillgänglig. När kringutrustningssimulatorn ingår i utbildningsscenarier kan kassören interagera effektivare med kassan genom att ange indata som till exempel att streckkodsskanna produkter och dra presentkort, och genom att iaktta vilka kvitton som skrivs ut för en viss transaktion.
 
 ### <a name="testing"></a>Testa
 
-Du kan använda kringutrustning simulatorn testa produkten streckkoder, kvittoformat och så vidare, utan att använda en fysisk maskinvara i en virtuell miljö. Fysisk maskinvara behövs inte efter uppgraderingen och du behöver inte distribuera en POS-klient på en station maskinvara eller en fysisk dator, kan du testa ändringar som görs i back office snabbare.
+Du kan använda kringutrustningssimulatorn för att testa produktstreckkoder, kvittoformat och så vidare, utan att använda en fysisk maskinvara i en virtuell miljö. Eftersom fysisk maskinvara behövs inte och du inte behöver distribuera en kassaklient på en maskinvarustation eller en fysisk dator, kan du snabbare testa ändringar som görs i back office.
 
-## <a name="set-up-the-peripheral-simulator"></a>Konfigurera kringutrustning simulatorn
-### <a name="set-up-a-hardware-profile"></a>Ställ in en maskinvaruprofil
+## <a name="set-up-the-peripheral-simulator"></a>Ställa in kringutrustningssimulatorn
+### <a name="set-up-a-hardware-profile"></a>Ställa in en maskinvaruprofil
 
-1.  Konfigurera kringutrustning simulatorn genom att gå till **butik och handel**&gt;**kanal**&gt;**POS inställningar**&gt;**profiler för kassa**&gt;**maskinvaruprofiler**.
-2.  Om du vill skapa en ny profil klickar du på **New**.
-3.  Ange värden i de **Profilnummer** och **beskrivning** fält.
-4.  Använd följande tabell när du vill ställa in virtuella enheter som ska testas. Här följer en förklaring av kolumner i tabellen:
-    -   **Enheten** -den här kolumnen visas namnet på snabbfliken utvidgas konfigurera enheten.
-    -   **Typ av** -den här kolumnen innehåller värdet som du väljer i fältet som är märkt med namnet på enheten.
-    -   **Enhetsnamn** -den här kolumnen visas det exakta värdet som du anger för enhetsnamn. **Viktigt:** enhetsnamn som anges här krävs eftersom stationen maskinvara använder dessa specifika namn för enheterna. Enheten kommer inte att användas om du inte använder dessa specifika namn.
+1.  För att ställa in kringutrustningssimulatorn, gå till **Butik och handel** &gt; **Kanalinställningar** &gt; **Kassainställning** &gt; **Kassaprofiler** &gt; **Maskinvaruprofiler**.
+2.  Klicka på **Ny** för att skapa en ny profil.
+3.  Ange värden i fälten **Profilnummer** och **Beskrivning**.
+4.  Använd följande tabell när du vill ställa in virtuella enheter som ska testas. Här följer en förklaring av kolumnerna i tabellen:
+    -   **Enhet** – i den här kolumnen visas namnet på snabbfliken som du utvidgar för att ställa in enheten.
+    -   **Enhetstyp** – den här kolumnen innehåller värdet som du väljer i fältet som är märkt med namnet på enheten.
+    -   **Enhetsnamn** – i den här kolumnen visas det exakta värdet som du anger för enhetsnamn. **Viktigt!** Enhetsnamn som anges här är obligatoriska eftersom maskinvarustationen använder dessa specifika namn för att adressera enheterna. Enheten kan inte att användas om du inte använder dessa specifika namn.
 
     | Enhet            | Enhetstyp | Enhetsnamn              |
     |-------------------|-------------|--------------------------|
@@ -76,127 +79,129 @@ Du kan använda kringutrustning simulatorn testa produkten streckkoder, kvittofo
     | Radvisning      | OPOS        | MockOPOSLineDisplay      |
     | MSR               | OPOS        | MockOPOSMSR              |
     | Utställare            | OPOS        | MockOPOSDrawer1          |
-    | Drawer2           | OPOS        | MockOPOSDrawers          |
+    | Kassalåda2           | OPOS        | MockOPOSDrawers          |
     | Skanner           | OPOS        | MockOPOSScanner          |
     | Skala             | OPOS        | MockOPOSScale            |
     | PIN-knappsats           | OPOS        | MockOPOSPinPad           |
     | Digital signatur | OPOS        | MockOPOSSignatureCapture |
 
-**Anmärkning:** inga särskilda inställningar i maskinvaruprofilen som krävs för att simulera wedge tangentbordshändelser från streckkodsskanner och MSR.
+**Anmärkning:** inga särskilda inställningar i maskinvaruprofilen krävs för att simulera händelser för tangentbords-wedge från streckkodsskanner och MSR.
 
-### <a name="assign-the-hardware-profile-to-a-register"></a>Tilldela en kassa maskinvaruprofilen
+### <a name="assign-the-hardware-profile-to-a-register"></a>Tilldela maskinvaruprofilen till ett register
 
-1.  När du har skapat maskinvaruprofilen gå till **butik och handel**&gt;**kanal**&gt;**POS inställningar**&gt;**registrerar**.
-2.  I den **kassor** klickar du på länken i den **registreringsnummer** för registret som ska använda kringutrustning simulatorn.
+1.  När du har skapat maskinvaruprofilen, gå till **Butik och handel** &gt; **Kanalinställningar** &gt; **Kassainställning** &gt; **Kassor**.
+2.  I listan **Kassor** klickar du på länken i fältet **Kassanummer** för den kassan som ska använda kringutrustningssimulatorn.
 3.  Klicka på **Redigera**.
-4.  I den **profiler** avsnitt i den **maskinvaruprofil**, markera den maskinvaruprofil som du skapat för virtuella kringutrustning.
-5.  Click **Save**.
+4.  I sektionen **Profiler** i fältet **Maskinvaruprofil**, välj den maskinvaruprofil som du har skapat för virtuell kringutrustning.
+5.  Klicka på **Spara**.
 
-### <a name="synchronize-changes-to-the-channel-database"></a>Synkronisera ändringar till databasen kanal
+### <a name="synchronize-changes-to-the-channel-database"></a>Synkronisera ändringar i kanaldatabasen
 
-1.  Gå till **butik och handel**&gt;**Retail IT**&gt;**distributionsschema**.
-2.  Välj den **1090** distributionsschema.
-3.  Klicka på **kör nu** att synkronisera ändringar i KASSAN.
+1.  Gå till **Butik och handel** &gt; **Butikens IT** &gt; **Distributionsschema**.
+2.  Välj distributionsschemat **1090**.
+3.  Klicka på **Kör nu** för att synkronisera ändringar i kassan.
 
-När data synkroniseras finns den nya maskinvaruprofilen och ändringar i registret i databasen kanal.
+När data har synkroniserats finns den nya maskinvaruprofilen och ändringar i kassan i kanaldatabasen.
 
-## <a name="install-the-peripheral-simulator"></a>Installerar du simulatorn kringutrustning
-1.  Gå till **butik och handel**&gt;**kanal**&gt;**POS inställningar**&gt;**profiler för kassa**&gt;**maskinvaruprofiler**.
-2.  Klicka på **hämtar**, och klicka sedan på **PeripheralSimulator**. **Anmärkning:** måste du inaktivera popup-blockerare innan du kan hämta kringutrustning simulatorn.
-3.  När hämtningen är klar öppnar du den **hämtar** mapp och dubbelklickar på **VirtualPeripherals.msi** starta installationsprogrammet.
-4.  Installera simulatorn kringutrustning med standardinställningarna.
+## <a name="install-the-peripheral-simulator"></a>Installera kringutrustningssimulatorn
+1.  Gå till **Butik och handel** &gt; **Kanalinställningar** &gt; **Kassainställning** &gt; **Kassaprofiler** &gt; **Maskinvaruprofiler**.
+2.  Klicka på **Hämta**, och klicka sedan på **PeripheralSimulator**. **Anmärkning:** Du måste inaktivera popup-blockerare innan du kan hämta kringutrustningssimulatorn.
+3.  När hämtningen är klar öppnar du mappen **Hämtningar** och dubbelklickar på **VirtualPeripherals.msi** för att starta installationsprogrammet.
+4.  Installera kringutrustningssimulatorn med standardinställningarna.
 
-Förutom kringutrustning simulatorn, måste du installera common control-objekt från Monroe konsulttjänster. I annat fall fungerar kringutrustning simulatorn inte korrekt. Hämta common control-objekt genom att gå till <http://monroecs.com/oposccos_current.htm>.
+Förutom kringutrustningssimulatorn måste du installera Common Control-objekt från Monroe Consulting Services. I annat fall fungerar kringutrustningssimulatorn inte korrekt. Hämta Common Control-objekten genom att gå till <http://monroecs.com/oposccos_current.htm>.
 
-## <a name="using-the-peripheral-simulator"></a>Med hjälp av simulatorn kringutrustning
-Yttre simulatorn, klicka på **starta** på din dator, skriver du **yttre Retail simulator**, och välj sedan programmet när det visas i sökresultaten. Klicka på ett enhetsnamn för att visa enheterna som stöds när du har startat kringutrustning simulatorn. Enheterna visas som flikar till vänster i fönstret. Klicka på fliken för enheten om du vill visa en viss enhet.
+## <a name="using-the-peripheral-simulator"></a>Använda kringutrustningssimulatorn
+För att starta kringutrustningssimulatorn, klicka på **Starta** på din dator, skriv **Kringutrustningssimulator för butik**, och välj sedan appen när den visas i sökresultaten. Klicka på ett enhetsnamn för att visa enheterna som stöds när du har startat kringutrustningssimulatorn. Enheterna visas som flikar till vänster i fönstret. Klicka på fliken för enheten om du vill visa en viss enhet.
 
-### <a name="line-display-capabilities"></a>Raden visningsmöjligheter
+### <a name="line-display-capabilities"></a>Funktioner för radvisning
 
-Radskärmen är den första enheten som anges i yttre simulatorn. Konfigurerades virtuella radskärmen visar poster som söks igenom i POS-transaktionen. Förutom radposter visas den summa som förfaller när ett anbud har valts i KASSAN. Visas saldot som förfaller om ett anbud har angetts men balans fortfarande förfallodatumet för transaktionen. När KASSAN inte används, visas ett meddelande om du vill ange att fältet till är stängd. Måste du konfigurera meddelandet på den **rad visas** på snabbfliken i maskinvaruprofilen.
+Radvisningen är den första enheten som anges i kringutrustningssimulatorn. När den virtuella radvisningen har konfigurerats visar den radartiklar när de skannas i kassatransaktionen. Förutom radartiklar visas den summa som ska betalas när ett betalningsmedel väljs i kassan. Den visar även saldot som ska betalas om ett betalningsmedel har angetts men saldot fortfarande ska betalas för transaktionen. När kassan inte används kan ett meddelande visas som ange att kassalådan är stängd. Du måste konfigurera meddelandet på snabbfliken **Radvisning** i maskinvaruprofilen.
 
-### <a name="cash-drawer-capabilities"></a>Kontant kassalådan funktioner
+### <a name="cash-drawer-capabilities"></a>Funktioner för kassalådan
 
-Kassalådan är den andra enheten som anges i yttre simulatorn. När maskinvaruprofilen har konfigurerats för att använda virtuella kassalådor POS öppnar kassalådan för aktiva skillnaden som svar på operationer låda som kassaavstämning, och så att kassören kan ändra eller sätta in kontant standard cash-and-carry transaktioner. Virtuella kassalådor har etiketterna **huvud kassalådan** och **sekundära kassalådan**. Dessa etiketter representerar kassalådan kassalådan 2 i maskinvaruprofilen, respektive. När en låda stängs visas en bild av en stängd kassalådan och heter knappen i kassalådan stängda **Öppna kassalådan**. Om du klickar på den här knappen ersätts bilden med en bild av en Öppna kassalådan för att indikera att kassalådan är öppen. Öppna kassalådan på knappen heter **Stäng kassalådan**. Flera operationer i KASSAN kan orsaka att öppna kassalådan. De flesta åtgärder kan inte fortsätta medan kassalådan är öppen. Undantagen är vissa procedurer i slutet av dagen. Om POS-användare får ett felmeddelande som säger att en operation inte kan utföras när kassalådan är öppen, måste användaren stänga virtuella eller fysiska kassalådan när du vill fortsätta. Om en kassalådan markeras som **delade** systemet inte i maskinvaruprofilen, kontrollera att lådan är stängda innan en åtgärd. Operationen fortsätter som vanligt även om kassalådan är öppen. Detta stöd för scenarier där kassalådor delas affärskontakter och en associera använder en kassalådan när associera en annan utför relaterade uppgifter på sitt eget POS-enhet. Ändringar som görs i kassalådan inte tydligt förrän det aktuella arbetspasset stängs och öppnas ett nytt SKIFT.
+Kassalådan är den andra enheten som anges i kringutrustningssimulatorn. När maskinvaruprofilen har konfigurerats för att använda virtuella kassalådor öppnar kassan kassalådan för det aktiva skiftet som svar på kasslådsåtgärder som kassaavstämning, och så att kassören kan ge växel eller sätta in kontanter vid hämtköpstransaktioner (cash-and-carry) av standardtyp. De v kassalådorna har etiketterna **Huvudkassa** och **Sekundär kassa**. Dessa etiketter representerar Kassalåda och Kassalåda 2 i maskinvaruprofilen. När en låda stängs visas en bild av en stängd kassalåda och knappen på den stängda kassalådan har etiketten **Öppna kassalåda**. Om du klickar på den här knappen ersätts bilden med en bild av en öppen kassalåda för att ange att kassalådan är öppen nu. Knappen på den öppna kassalådan på har etiketten **Stäng kassalådan**. Flera åtgärder i kassan kan orsaka att öppna kassalådan. De flesta åtgärder kan inte fortsätta medan kassalådan är öppen. Undantagen är vissa procedurer vid dagsavslut. Om kassaanvändare får ett felmeddelande som säger att en åtgärd inte kan utföras när kassalådan är öppen, måste användaren stänga den virtuella eller fysiska kassalådan för att fortsätta. Om en kassalåda markeras som **Delad** i maskinvaruprofilen verifierar systemet inte att lådan är stängd innan en åtgärd. Åtgärden fortsätter som vanligt även om kassalådan är öppen. Detta beteende stöder scenarier där kassalådor delas av säljassistenter och en assistent använder en kassalåda när en annan assistent utför relaterade uppgifter på sin egen kassaenhet. Ändringar som görs i kassalådan blir inte uppenbara förrän det aktuella arbetsskiftet stängs och ett nytt skift öppnas.
 
 ### <a name="msr-capabilities"></a>MSR-funktioner
 
-Yttre simulatorn stöder robust virtuell MSR operationer genom att arbeta i antingen OPOS eller tangentbordet wedge läge. OPOS-läget kräver att MSR konfigureras att fungera som en OPOS-enhet i maskinvaruprofilen. Bara skickar wedge tangentbordsläge tangentbordshändelser wedge data till Microsoft Windows. Förutom skillnaderna i inställningarna för OPOS- och tangentbordet wedge lägen skiljer sig på följande sätt:
+Kringutrustningssimulatorn ger robust stöd för virtuella MSR-åtgärder genom att arbeta i antingen OPOS- eller tangentbords-wedge-läge. OPOS-läget kräver att MSR konfigureras för att fungera som en OPOS-enhet i maskinvaruprofilen. Tangentbords-wedge-läget skickar bara tangentbords-wedge-datahändelser till Microsoft Windows. Förutom skillnaderna i inställningarna skiljer sig OPOS- och tangentbords-wedge-lägena åt på följande sätt:
 
--   POS-klienten kan OPOS MSR enheter för specifika scenarier, t ex scenarier som tillåter Magnetremsan data för förmånskort eller post presentkort.
--   I tangentbordsläge wedge, kringutrustning simulatorn tangentbord wedge informationen skickas till det fält som är aktiv när data skickas. Detta påminner om vad som händer om du anger data genom att använda ett tangentbord. Om du vill använda MSR som ett tangentbord wedge måste användaren byta till Retail Modern POS (MOPS) och kontrollera att data tas emot i rätt fält. Därför kan du konfigurera en stund så att användaren får tid att säkerställa att data skickas till rätt fält.
+-   Kassaklienten aktiverar OPOS MSR-enheter för specifika scenarier, t ex scenarier som tillåter magnetremsadata för att ange förmånskort eller presentkort.
+-   I tangentbords-wedge-läge skickar kringutrustningssimulatorn tangentbords-wedge-data till det fält som är aktivt när dessa data skickas. Det påminner om vad som händer om du anger data genom att använda ett tangentbord. För att använda MSR som en tangentbord-wedge måste användaren byta till Retail Modern POS (MOPS) för att se till att data tas emot i rätt fält. Därför kan du konfigurera en fördröjning så att användaren får tid att säkerställa att data skickas till rätt fält.
 
-#### <a name="testing-gift-and-payment-card-swipes"></a>Testa swipes presentkort och betalning kort
+#### <a name="testing-gift-and-payment-card-swipes"></a>Testa dragning av presentkort och betalkort
 
-Virtuella MSR som yttre simulatorn ger också kan du konfigurera specifika MSR data om du vill testa scenarier för swipes presentkort och betalning kortet. Klicka på plustecknet för att skapa ett kort (**+**) och välj vilken typ av kort. Ange kortnumret sedan eller spåra data som ska skickas till KASSAN tillsammans med den sista månaden och året för det kort som du definierar. Värdet som du väljer i den **korttyp** är bara en etikett som kan mappas till ett kort. Etiketten gör det enklare att identifiera korten när de är draget via kringutrustning simulatorn. Du kan välja kort som har konfigurerats i simulatorn kringutrustning med vänsterpilen (**&lt;**) och högerpilen (**&gt;**) ovanför bilden av kortet. Du kan redigera och ta bort kort med den **redigera** och **bort** knappar bredvid plustecknet (**+**) knappen.
+Den virtuella MSR som kringutrustningssimulatorn tillhandhåller låter dig också konfigurera specifika MSR-data för att testa scenarier för att dra presentkort och betalkort. Klicka på plustecknet (**+**) för att skapa ett kort och välj typen av kort. Ange sedan kortnumret eller spåra data som ska skickas till kassan, tillsammans med utgångsmånaden och utgångsåret för det kort som du definierar. Värdet som du väljer i fältet **Typ av kort** är bara en etikett som kan mappas till ett kort. Etiketten gör det enklare att identifiera korten när de dras genom kringutrustningssimulatorn. Du kan välja kort som har konfigurerats i kringutrustningssimulatorn med vänsterpilen (**&lt;**) och högerpilen (**&gt;**) ovanför bilden av kortet. Du kan redigera och ta bort kort med knapparna **Redigera** och **Ta bort** bredvid plustecknet knappen med (**+**).
 
 ### <a name="pin-pad"></a>PIN-knappsats
 
-Du kan konfigurera tangentbordet simulatorn PIN-kod för att simulera en OPOS PIN-knappsatsen. När en elektronisk överföringstransaktion utförs i KASSAN och kräver att PIN-koden, anropar stationen maskinvara PIN enheten frågar om PIN-post. Genom kräver PIN-knappsats i yttre simulatorn stöd för EFT betalning connector.
+Du kan konfigurera PIN-knappsatssimulatorn för att simulera en OPOS PIN-knappsats. När en elektronisk betalning (EFT) utförs i kassan och kräver PIN-koden, anropar maskinvarustationen PIN-enheten för att fråga om PIN-koden. För att fungera kräver PIN-knappsatsen i kringutrustningssimulatorn stöd för EFT-betalningskoppling.
 
 ### <a name="printer"></a>Skrivare
 
-Virtuell kringutrustning skrivare visar inleveranser när de skrivs ut från KASSAN. Om en publikation åtgärd leder till flera inleveranser, rullar du inleveranser.
+Den virtuella skrivaren skrivare visar kvitton när de skrivs ut från kassan. Om en utskriftsåtgärd leder till flera kvitton kan du bläddra genom kvittona.
 
-#### <a name="configure-receipt-printing"></a>Konfigurera Kvittoutskrift
+#### <a name="configure-receipt-printing"></a>Konfigurera kvittoutskrift
 
-1.  Gå till **butik och handel**&gt;**kanal**&gt;**POS inställningar**&gt;**profiler för kassa**&gt;**maskinvaruprofiler**.
-2.  Välj den maskinvaruprofil som du skapat för virtuella kringutrustning.
-3.  I den **skrivare** på snabbfliken klickar du på **redigera**.
-4.  I den **Kvittoprofil-ID** väljer du en kvittoprofil.
-5.  Click **Save**.
+1.  Gå till **Butik och handel** &gt; **Kanalinställningar** &gt; **Kassainställning** &gt; **Kassaprofiler** &gt; **Maskinvaruprofiler**.
+2.  Välj den maskinvaruprofil som du skapat för virtuell kringutrustning.
+3.  På snabbfliken **Skrivare** klickar du på **Redigera**.
+4.  I fältet **Kvittoprofil-ID** väljer du en kvittoprofil.
+5.  Klicka på **Spara**.
 
 ### <a name="scale"></a>Skala
 
-När en vägningsprodukt läggs till POS-transaktionen och en skala är konfigurerad, hämtar POS vikten på skalan. För både virtuella och fysiska omfattning, bör produkt eller vikt anges innan produkten har lagts till i transaktionen. Innan du lägger till produkten skala transaktionen gå till skala i simulatorn kringutrustning och använda plustecknet (**+**) eller minustecken (**–**) för att justera vikt bör rapportera omfattningen. Du kan även ange önskade vikten direkt i den **aktuella värdet** fält. Du kan justera vikt för skalning enheter med plustecknet (**+**), **redigera**, och **bort** knappar. På så sätt kan anges enheter utifrån de produkter som vägs eller språk där skalan används.
+När en vägningsprodukt läggs till i kassatransaktionen och en våg är konfigurerad, hämtar kassan vikten från vågen. För både den virtuella och den fysiska vågen bör produkten eller vikten anges innan produkten läggs till i transaktionen. Innan du lägger till vågprodukten till transaktionen, gå till vägen i kringutrustningssimulatorn och använd plustecknet (**+**) eller minustecknet (**–**) för att justera vikten som vågen ska rapportera. Du kan även ange den önskade vikten direkt i fältet **Aktuellt värde**. Du kan justera viktenheterna för vågen med plustecknet (**+**), **Redigera** och **Ta bort**. På så sätt kan enheter anges utifrån de produkter som vägs eller det språk där vågen används.
 
 #### <a name="configure-a-scale-product"></a>Konfigurera en vägningsprodukt
 
-1.  Gå till **(butik) och****commerce**&gt;**produkter och kategorier**&gt;**frisläppta produkter efter kategori**.
-2.  Öppna den produkt.
-3.  Välj produkt att väga.
-4.  I den **Retail** på snabbfliken ställa den **vägningsprodukt** alternativet från **nr** till **Ja**.
+1.  Gå till **Butik och** **handel** &gt; **Produkter och kategorier** &gt; **Frisläppta produkter efter kategori**.
+2.  Öppna produktposten.
+3.  Välj produkten som ska vägas.
+4.  På snabbfliken **Butik**, ange alternativet **Vägningsprodukt** från **Nej** till **Ja**.
 
-#### <a name="synchronize-changes-to-the-channel-database"></a>Synkronisera ändringar till databasen kanal
+#### <a name="synchronize-changes-to-the-channel-database"></a>Synkronisera ändringar i kanaldatabasen
 
-1.  Gå till **butik och handel**&gt;**Retail IT**&gt;**distributionsschema**.
-2.  Välj den **1040** distributionsschema.
-3.  Klicka på **kör nu** att synkronisera ändringar i KASSAN.
+1.  Gå till **Butik och handel** &gt; **Butikens IT** &gt; **Distributionsschema**.
+2.  Välj distributionsschemat **1040**.
+3.  Klicka på **Kör nu** för att synkronisera ändringar i kassan.
 
-När data synkroniseras när en vägningsprodukt läggs till POS-transaktionen, kontrollerar POS vikten skala.
+När data har synkroniserats, när en vägningsprodukt läggs till i kassatransaktionen, kontrollerar kassan vikten från vågen.
 
 ### <a name="signature-capture"></a>Digital signatur
 
-Enheten för virtuella digital signatur uppmanar användaren att ange en signatur i virtuella signatur signaturer vanligt när anbud som kräver en signatur. Användaren kan acceptera signatur om du vill visa den i KASSAN. Kassören kan sedan acceptera signaturen. Signaturen sparas tillsammans med anbud och synkroniseras till back office tillsammans med andra transaktionsdata.
+Den virtuella enheten för digital signatur uppmanar användaren att ange en signatur på den virtuella knappsatsen för signatur när det betalningsmedel som används kräver en signatur. Användaren kan godkänna signaturen för att visa den i kassan. Kassören kan sedan godkänna signaturen. Signaturen sparas tillsammans med betalningsmedlet och synkroniseras till back office tillsammans med andra transaktionsdata.
 
-#### <a name="set-up-a-tender-to-require-a-signature"></a>Ställ in ett anbud signatur krävs
+#### <a name="set-up-a-tender-to-require-a-signature"></a>Ställa in ett betalningsmedel så att signatur krävs
 
-1.  Gå till **butik och handel**&gt;**kanaler**&gt;**detaljhandel**&gt;**alla detaljhandel**.
-2.  Välj butiken.
+1.  Gå till **Butik och handel** &gt; **Kanaler** &gt; **Butiker** &gt; **Alla butiker**.
+2.  Välj butik.
 3.  Klicka på **Redigera**.
-4.  Klicka på **ställer in**, och sedan, i den **ställa in** klickar du på **betalningsmetoder**.
+4.  Klicka på **Ställ in**, och sedan, i sektionen **Ställ in** klickar du på **Betalningsmetoder**.
 5.  Klicka på **Redigera**.
 6.  Välj den betalningsmetod som kräver en signatur.
-7.  I den **allmänna** under avsnittet **signatur fånga**, ange den **Använd enhet för digital signatur** att **Ja**.
-8.  I den **minimibelopp för digital signatur** ange minimibeloppet som ska utlösa en signatur.
+7.  I avsnittet **Allmänt** under **Digital signatur**, anger du alternativet **Använd enhet för digital signatur** till **Ja**.
+8.  I fältet **Minimibelopp för digital signatur**, ange minimibeloppet som ska utlösa en signatur.
 
-#### <a name="synchronize-changes-to-the-channel-database"></a>Synkronisera ändringar till databasen kanal
+#### <a name="synchronize-changes-to-the-channel-database"></a>Synkronisera ändringar i kanaldatabasen
 
-1.  Gå till **butik och handel**&gt;**Retail IT**&gt;**distributionsschema**.
-2.  Välj den **1070** distributionsschema.
-3.  Klicka på **kör nu** att synkronisera ändringar i KASSAN.
+1.  Gå till **Butik och handel** &gt; **Butikens IT** &gt; **Distributionsschema**.
+2.  Välj distributionsschemat **1070**.
+3.  Klicka på **Kör nu** för att synkronisera ändringar i kassan.
 
-När data synkroniseras när anbud används som kräver en signatur och beloppet överstiger tröskeln signatur, uppmanas för en signatur på enheten för virtuella digital signatur.
+När data har synkroniserats och ett betalningsmedel används som kräver en signatur, och beloppet uppnår signaturtröskeln, kräver kassan en signatur på den virtuella enheten för digital signatur.
 
 ## <a name="additional-configuration"></a>Ytterligare konfiguration
-Du kan redigera konfigurationsfilen kringutrustning simulatorn passande löser scenarier som du testar. Du kan hitta konfigurationsfilen på C:\\programfiler (x86)\\Microsoft Dynamics 365\\70\\VirtualPeripherals\\Microsoft.Dynamics.Commerce.VirtualPeripherals.Client.exe.config. Konfigurationsfilen definierar de enheter som finns tillgängliga för test på skalan Korttyper för testning och Streckkodstyper. Genom att ändra textvärden i konfigurationsfilen kan du exempelvis lägga till en ny korttyp eller enhet som kan väljas vid körning. De nya värdena visas när programmet startas.
+Du kan redigera konfigurationsfilen för kringutrustningssimulatorn för att på ett bättre sätt passa de scenarier som du testar. Konfigurationsfilen finns på C:\\Program Files (x86)\\Microsoft Dynamics 365\\70\\VirtualPeripherals\\Microsoft.Dynamics.Commerce.VirtualPeripherals.Client.exe.config. Konfigurationsfilen definierar de enheter som finns tillgängliga för test på vågen, de korttyper som är tillgängliga för testning samt streckkodstyper. Genom att ändra textvärdena i konfigurationsfilen kan du exempelvis lägga till en ny korttyp eller måttenhet som kan väljas vid körning. De nya värdena visas när programmet startas om.
 
 ## <a name="troubleshooting"></a>Felsökning
-Aktiviteter för kringutrustning simulatorn loggas i yttre simulatorn. Du hittar loggen på C:\\programfiler (x86)\\Microsoft Dynamics 365\\70\\VirtualPeripherals\\Microsoft.Dynamics.Commerce.VirtualPeripherals.Client.exe.config. Kringutrustning simulatorn informerar också fel till händelseloggen i Windows som du kan nå när **program- och tjänstloggar**&gt;**Microsoft**&gt;**DynamicsAX**. Kontrollera om ändringar som du gjort i maskinvaruprofilen eller andra områden inte är klart när du använder MOPS eller kringutrustning simulatorn, schemaläggare de fördelning som du vill synkronisera data till databasen kanal. Om ändringarna har synkroniserats, men fortfarande inte är uppenbart i KASSAN, avsluta POS-klienten. Ändringar i konfigurerade kassalådor inte gälla tills skapas ett nytt SKIFT. Om du ändrar kassalådor Se därför alltid stänga befintligt Skift om du vill testa de nya inställningarna i kontanter kassalådan. Ibland kan kan en tillverkare installeras efter common control-objekt från Monroe konsulttjänster, drivrutinen orsaka common control-objekt slutade fungera korrekt. I så fall bör du installera common control-objekt.
+Aktiviteter för kringutrustningssimulatorn loggas i kringutrustningssimulatorn. Loggen finns på C:\\Program Files (x86)\\Microsoft Dynamics 365\\70\\VirtualPeripherals\\Microsoft.Dynamics.Commerce.VirtualPeripherals.Client.exe.config. Kringutrustningssimulatorn rapporterar också fel till händelseloggen i Windows som du kan nå på **Program- och tjänstloggar** &gt; **Microsoft** &gt; **DynamicsAX**. Om ändringar som du gjort i maskinvaruprofilen eller andra områden inte är uppenbara när du använder MPOS eller kringutrustningssimulatorn, kontrollera de distributionsschemaläggarjobb som du använde för att synkronisera data till kanaldatabasen. Om ändringarna har synkroniserats, men fortfarande inte är uppenbara i kassan, startar du om kassaklienten. Ändringar i konfigurerade kassalådor gäller inte förrän ett nytt skift skapas. Om du ändrar i kassalådor, se därför alltid till att stänga befintligt skift om du vill testa de nya inställningarna för kassalådan. Ibland, om en tillverkares drivrutin installeras efter Common Control-objekt från Monroe Consulting Services, kan drivrutinen göra att Common Control-objekt slutar fungera korrekt. I så fall bör du installera om Common Control-objekten.
 
 <a name="see-also"></a>Se även
 --------
 
-[Retail peripherals overview](retail-peripherals-overview.md)
+[Översikt över kringutrustning i butik](retail-peripherals-overview.md)
+
+
 
 

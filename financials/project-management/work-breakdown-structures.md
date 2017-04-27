@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="work-breakdown-structures"></a>Uppdelade arbetsstrukturer
 
+[!include[banner](../includes/banner.md)]
+
+
 
 
 Uppdelade arbetsstrukturer En uppdelad arbetsstruktur (WBS) är en beskrivning av det arbetet utförs för ett projekt. Det är en hierarki med uppgifter som representerar projektteamets kännedom om sammansättningen av arbete och storleken, kostnaden och tidslängden för varje komponent eller uppgift. En WBS har tre viktiga syften:
@@ -39,17 +42,17 @@ Graden av information i en WBS beror på noggrannhetsnivån som krävs i uppskat
 
 I motsats till branscher som till exempel media och reklam, programvara och en IT-infrastruktur, tenderar projekt att vara unika och produktivitet är relativt erfarenheten och kompetensen hos individen som utför uppgiften. Därför använder sådana branscher WBS för att få en approximering av storleken på ett projekt, inte för att följa förloppet projektet i detalj. 
 
-Att skapa en WBS är en intensiv process som vanligen utförs över en lång period och som kräver samarbete med och information från många olika personer. Det här avsnittet beskrivs hur du använder struktur förbättringar i Microsoft Dynamics 365 för operationer efter behov för uppskattningar och spårning.
+Att skapa en WBS är en intensiv process som vanligen utförs över en lång period och som kräver samarbete med och information från många olika personer. Det här avsnittet beskriver hur du använder WBS-förbättringar i Microsoft Dynamics 365 for Operations för att uppfylla företagets krav på uppskattningar och spårning.
 
 ## <a name="prerequisites-for-creating-a-wbs"></a>Förutsättningar för att skapa en WBS
 Om du vill skapa en WBS måste du kunna skapa ett arbetsschema och uppskatta arbetskostnaden.
 
 ### <a name="prerequisites-for-creating-a-work-schedule"></a>Förutsättningar för att skapa ett arbetsschema
 
-Utför följande inställningar för att använda schemaläggning utökar funktionerna struktur:
+Slutför följande konfiguration för att använda den fullständiga resursplaneringen i WBS-funktioner:
 
 1.  Ställ in en standardinställningskalender och en projektkalender:
-    1.  Klicka på **projekthantering och redovisning**&gt;**inställningar**&gt;**tidsplanering**. Ange en standardkalender i fältet **Standardarbetskalender**. Den blir standardarbetskalender för alla nya projekt som skapas.
+    1.  Klicka på **Projektledning och redovisning** &gt; **Inställningar** &gt; **Tidsplanering**. Ange en standardkalender i fältet **Standardarbetskalender**. Den blir standardarbetskalender för alla nya projekt som skapas.
     2.  Det går att ändra standardkalendern för ett visst projekt. Klicka på projektets detaljsida och sedan på snabbfliken **Projektteam och schemaläggning**, uppdatera fältet **Tidsplaneringskalender** genom att välja en annan kalender.
 
 2.  Ställ in arbetsdagarna och arbetstiden. Kalendern som du ställer in som arbetskalender för ditt projekt används i WBS för att bestämma följande information:
@@ -57,13 +60,13 @@ Utför följande inställningar för att använda schemaläggning utökar funkti
 -   Arbetsdagar och helgdagar
 -   Antal arbetstimmar per dag
 
-Ange arbetsdagar och arbetstimmar för en kalender eller skapa en ny kalender klickar du på **Organisationsadministration**&gt;**gemensamma**&gt;**kalendrar**.
+Om du vill ställa in arbetsdagar och arbetstimmar för en kalender eller skapa en ny kalender, klicka på **Organisationadministration** &gt; **Allmänt** &gt; **Kalendrar**.
 
 ### <a name="prerequisites-for-estimating-the-cost-of-work"></a>Förutsättningar för beräkning av arbetskostnader
 
 Använd fullständig kostnadsredovisning i WBS genom att ställa in kostnaderna och försäljningspriserna för anställda, arbetskategorier, utgifter och avgifter och artiklar.
 
--   Ställ in självkostnads- och försäljningspris för arbete, utgifts- och avgiftskategorier genom att klicka på **projekthantering och redovisning**&gt;**inställningar**&gt;**priser**.
+-   Ställ in kostnaden och försäljningspriset på arbete, utgifts - och avgiftskategorier, genom att klicka på **Projektledning och redovisning** &gt; **Inställningar** &gt; **Priser**.
 -   Ställa in kostnad och försäljningspris för artiklar på sidan **Handelsavtal** för varje artikel på listsidan **Frisläppta produkter** i Produktinformationshantering.
 
 ## <a name="creating-a-wbs"></a>Skapa en WBS
@@ -73,11 +76,11 @@ När du skapar en WBS ingår tre aktiviteter:
 2.  **Arbetsschema** – Beräkna tiden som krävs för att utföra en uppgift, ställ in uppgiftsberoenden och välj start - och slutdatum för uppgifter.
 3.  **Kostnadsuppskattning** – Uppskatta kostnader för varje uppgift.
 
-I avsnitten nedan beskrivs funktionerna struktur hur med var och en av aktiviteterna.
+Följande avsnitt beskriver hur WBS-funktionerna kan hjälpa dig med alla dessa aktiviteter.
 
 ### <a name="work-decomposition"></a>Arbetsuppdelning
 
-Om du vill skapa en arbetsuppdelning är vanligtvis det första steget i processen i att skapa en WBS. Struktur-funktion stöder följande grundläggande konstruktioner för fördelning av resurser eller nedbrytning. 
+Om du vill skapa en arbetsuppdelning är vanligtvis det första steget i processen i att skapa en WBS. WBS-funktionen i stöder följande grundbegrepp för arbetsuppdelning. 
 
 **Projektrotuppgift** Projektrotuppgiften är sammanfattningen på högsta nivå för ett projekt. Alla andra projektuppgifter skapas under den. Namnet på rotuppgiften anges alltid i projektets namn. Insatsen, data och tidslängd för rotnoden sammanfattar värdena för uppgifterna under rotuppgiften. Du kan inte ändra egenskaperna för rotnoden eller radera den.
 
@@ -94,7 +97,7 @@ För närvarande kan du inte anpassa numrering för WBS.
 **Dra in uppgift** När du drar in en uppgift blir den underordnad föregående uppgift. WBS-numret för den nya underordnade uppgiften omräknas automatiskt baserat på WBS-numret för dess nya överordnade. Den överordnade uppgiften är nu en sammanfattnings- eller behållaruppgift och blir därför en summering av dess deluppgifter. 
 
 > [!NOTE] 
-> När du drar in aktiviteter under en uppgift som har en lövnod innan operationen indrag förlorar nyskapade sammanfattningsaktivitet sin egen datum, kraft och antal resurser. Den använder nu en sammanfattning av värdena för dess nya deluppgifter. 
+> När du drar in uppgifter under en uppgift som var lövnod före indragsoperationen, förlorar den nyskapade sammanfattningsuppgiften dess egna data, insats och resursnummer. Den använder nu en sammanfattning av värdena för dess nya deluppgifter. 
 
 **Dra ut uppgift** När du drar ut en uppgift är den inte längre det överordnade objektets deluppgift. WBS-numret för den här uppgiften beräknas om automatiskt efter uppgiftens nya nivå i hierarkin. Insats, kostnad och data för uppgiftens tidigare överordnade uppgift beräknas om för att exkludera den uppgiften. 
 
@@ -102,10 +105,10 @@ För närvarande kan du inte anpassa numrering för WBS.
 
 ### <a name="schedule-estimation"></a>Tidsplanuppskattning
 
-Tidsplanuppskattning är vanligtvis det andra steget i att skapa en WBS. Som bästa praxis bör du slutföra tidsplanuppskattning efter att du skapar uppgifterna. Den **struktur** sidan i Microsoft Dynamics 365 för operationen har två delar. Det övre fönstret är avsett för tidsplanuppskattning och det nedre fönstret innehåller fliken **Uppskattade kostnader och intäkter** som du kan använda för kostnadsuppskattning. 
+Tidsplanuppskattning är vanligtvis det andra steget i att skapa en WBS. Som bästa praxis bör du slutföra tidsplanuppskattning efter att du skapar uppgifterna. Sidan **Uppdelad arbetsstruktur** i Microsoft Dynamics 365 for Operations har två avsnitt. Det övre fönstret är avsett för tidsplanuppskattning och det nedre fönstret innehåller fliken **Uppskattade kostnader och intäkter** som du kan använda för kostnadsuppskattning. 
 **Uppgiftsberoenden** I en WBS kan du skapa en företrädarrelation mellan uppgifter. När du tilldelar företrädaruppgifter till en uppgift, kan den uppgiften endast starta när alla dess företrädaruppgifter har slutförts. Planerat startdatum för uppgiften ställs automatiskt in på det senaste datumet för alla dess företrädare. 
 
-**Aktiviteter för schemaläggning i Microsoft Dynamics 365 för operationer** följande faktorer avgör schemaläggningen av lägsta noden uppgifter:
+**Uppgiftsplanering i Microsoft Dynamics 365 for Operations** Följande faktorer bestämmer planering av lövnoduppgifter:
 
 -   Företrädare
 -   Insats
@@ -114,27 +117,27 @@ Tidsplanuppskattning är vanligtvis det andra steget i att skapa en WBS. Som bä
 
 Startdatumet för en lövnoduppgift som inte har företrädare ställs automatiskt in på projektets startdatum. Tidslängden för en lövnoduppgift beräknas alltid som antalet arbetsdagar mellan dess start - och slutdatum. 
 
-Schemaläggning av *** regler när automatisk tidsplanering-stöd är aktiverat gäller följande regler för schemaläggningen för lägsta noden uppgifter:
+****Tidsplaneringsregler**** När automatisk hjälp för tidsplanering aktiveras gäller följande regler för uppgiftsplanering för lövnoduppgifter:
 
 -   Start- och slutdatum för en uppgift måste vara arbetsdagar enligt projektets planeringskalender.
 -   Startdatum för uppgiften ställs automatiskt in på det senaste slutdatumet för dess företrädare.
 -   Insatsen för en uppgift beräknas automatiskt enligt följande:
 
-Antal personer × varaktighet × antal timmar under en normal arbetsdag i projektkalendern. 
+Antal personer x Varaktighet x Antal timmar under en normal arbetsdag i projektkalendern. 
 
-I vissa fall kanske du vill avvika från dessa regler. Du kan inaktivera automatisk tidsplanering om du vill förhindra Microsoft Dynamics 365 för åtgärder på automatiskt ange eller korrigera någon egenskap för lägsta noden uppgifter. När du anger information om en uppgift som bryter mot planeringsregler, visas en ikon för planeringsfel för uppgiften. Om du inte vill visa planeringsfel, klicka på **Planeringsfel visas** för att stänga av funktionen. 
+I vissa fall kanske du vill avvika från dessa regler. Du kan stänga av automatisk tidsplanering för att hindra att Microsoft Dynamics 365 for Operations automatiskt anger eller korrigerar egenskaper för lövnoduppgifter. När du anger information om en uppgift som bryter mot planeringsregler, visas en ikon för planeringsfel för uppgiften. Om du inte vill visa planeringsfel, klicka på **Planeringsfel visas** för att stänga av funktionen. 
 
 > [!NOTE] 
-> Värdena för en sammanfattning eller containern aktivitet även fortsättningsvis beräknas som summan av värdet av ingående uppgifter, oavsett om automatisk schemaläggning hjälp aktiveras eller inaktiveras. 
+> Värdena för en sammanfattnings- eller behållaruppgift fortsätter att beräknas som summan av deluppgifternas värden, oavsett om automatisk hjälp för tidsplanering är av eller på. 
 
 **Korrigera planeringsfel** När automatisk hjälp för tidsplanering är aktiverad är det osannolikt att planeringsfel inträffar. Om du vill stänga av automatisk hjälp för tidsplanering och sedan aktivera den på nytt, kan ikoner för tidsplaneringsfel visas i WBS. 
 
 **Korrigera tidsplaneringsfel efter uppgift** När du dubbelklickar på ikonen för tidsplaneringsfel för en viss uppgift, visas en dialogruta med alla tidsplaneringsfel för den uppgiften. Du kan bestämma vilka tidsplaneringsfel som korrigeras för uppgiften. 
 
-**Korrigera alla tidsplaneringsfel** Microsoft Dynamics 365 för operationer som att korrigera alla tidsplaneringsfel i Strukturen, i åtgärdsfönstret, klicka på **löser alla avvikelser schemaläggning**. 
+**Korrigera alla tidsplaneringsfel** Om du vill att Microsoft Dynamics 365 for Operations korrigerar alla tidsplaneringsfel i WBS, klicka på **Korrigera alla schemaavvikelser** i åtgärdsfönstret. 
 
 > [!NOTE] 
-> Den här funktionen kan orsaka betydande ändringar i Strukturen. Fel korrigeras i följande ordning:
+> Den här funktionen kan orsaka viktiga ändringar i WBS. Fel korrigeras i följande ordning:
 
 1.  Den beräknade insatsen för alla uppgifter ändras så att den är lika med kapaciteten som definieras i projektkalendern.
 2.  Startdatumet för varje uppgift ändras så att uppgiften startar när alla föregående uppgifter har slutförts.
@@ -145,7 +148,7 @@ I vissa fall kanske du vill avvika från dessa regler. Du kan inaktivera automat
 Som nämndes tidigare i det här dokumentet, anger du den kostnadsuppskattningen för varje lövnoduppgift genom att använda fliken **Uppskattade kostnader och intäkter** i det nedre fönstret på sidan **Uppdelad arbetsstruktur**. 
 
 > [!NOTE] 
-> Du kan inte ändra kostnadsberäkningen för en sammanfattning eller containern aktivitet. Kostnadsuppskattningen för en sammanfattningsuppgift är lika med summan av kostnadsuppskattningen av dess lövnoduppgifter. Den beräknade totala kostnaden för varje uppgift beräknas som summan av uppskattat kostnadsbelopp för följande transaktionstyper:
+> Du kan inte ändra kostnadsuppskattningen för en sammanfattnings- eller behållaruppgift. Kostnadsuppskattningen för en sammanfattningsuppgift är lika med summan av kostnadsuppskattningen av dess lövnoduppgifter. Den beräknade totala kostnaden för varje uppgift beräknas som summan av uppskattat kostnadsbelopp för följande transaktionstyper:
 
 -   Arbete
 -   Artikel eller material
@@ -161,12 +164,12 @@ När du beräknar kostnader för material, arbete och utgifter för varje uppgif
 
 **Uppskattning av kostnader och materialkostnader** På fliken **Uppskattade kostnader och intäkter** kan du också beräkna utgifter och materialkostnader för en uppgift om du kräver uppskattningar. 
 
-Självkostnads- och försäljningspris för varje arbete eller kostnad uppskatta raden baseras på inställningarna som har definierats för varje kategori i tabellerna prissättning vid **projekthantering och redovisning**&gt;**inställningar**&gt;**prissättning**. Kostnad och försäljningspris för artiklar läggs till som standard från artikel- eller handelsavtal på listsidan **Frisläppta produkter** i Produktinformationshantering.
+Kostnaden och försäljningspriset för varje arbets- eller utgiftsuppskattning baseras på inställningarna som definieras för varje kategori i pristabellerna i **Projekthantering och redovisning** &gt; **Inställning** &gt; **Prissättning**. Kostnad och försäljningspris för artiklar läggs till som standard från artikel- eller handelsavtal på listsidan **Frisläppta produkter** i Produktinformationshantering.
 
 ## <a name="tracking-progress-on-the-wbs"></a>Spårning av förlopp på WBS
 Vissa branscher följer förloppet för ett projekt mot en WBS på en mycket grundläggande nivå, medan andra följer förloppet på en högre nivå i WBS. Det här avsnittet beskriver hur du kan använda WBS-spårning för dina projektkrav. 
 
-Microsoft Dynamics 365 för operationer har tre vyer för Strukturen för ett projekt: den planering vyerna, insats spårning och visa Kostnadsuppföljning.
+Microsoft Dynamics 365 for Operations har tre vyer för WBS för ett projekt: planeringsvy, insatsspårningsvy och kostnadsspårningsvy.
 
 ### <a name="planning-view"></a>Planeringsvy
 
@@ -177,7 +180,7 @@ Planeringsvy visar planerad eller baslinjeuppskattningen för tidsplan och kostn
 Insatsspårningsvy visar spårning av uppgiftsförloppet i WBS. Den jämför ackumulerade verkliga insatstimmar för en uppgift med planerade insatstimmar. Följande formler tillhandahåller värdena i insatsspårningsvyn:
 
 -   Förlopp i procent = verklig insats till datum ÷ planerad insats för uppgiften
--   Återstående arbete (så kallade uppskattning-till-komplett \[ETC\]) = planerat arbete-Verkligt arbete hittills
+-   Resterande insats (kallad uppskattning till slutförd \[ETC\]) = planerad insats – verklig insats till datum
 -   Uppskattning vid slutförande (EAC) = återstående insats + faktisk insats till datum
 -   Planerad insatsavvikelse = planerad insats – EAC
 
@@ -188,7 +191,7 @@ Insatsspårningsvyn visar en beräkning av insatsavvikelsen för uppgiften, base
 
 **Projektledarens omberäkning av insats** Ibland ändrar projektledaren eller någon annan person som följer förloppet för ett projekt de ursprungliga uppskattningar för en uppgift. Uppgiften går av olika orsaker kanske snabbare eller långsammare än som ursprungligen förutsågs. Till exempel har omfånget minskats eller anställda har mindre erfarenhet än ursprungligen planerat. Beräkningar är projektledarens uppfattningar om uppskattningar baserade på aktuell status för ett projekt. Vanligtvis bör du inte ändra baslinjenumren, eftersom en projektbaslinje är ett välpublicerat dokument för uppskattning av projekts tidsplan och kostnad som alla projekts intressenter har godkänt. 
 
-Det finns två sätt att projektledare kan ändra arbetsinsatsen för uppgifter:
+Det finns två sätt för projektledare att ändra insatsen för uppgifter:
 
 -   Ändra den återstående insatsen som är inställd på automatiskt uppdatering av verkliga återstående insats för uppgiften.
 -   Ändra förloppet i procent som är inställd på automatisk uppdatering av uppgiftens verkliga förlopp.
@@ -222,7 +225,7 @@ Kostnadsspårningsvyn visar en beräkning av kostnadsavvikelsen för uppgiften, 
 **Projektledarens omberäkning av insats** Projektledare måste använda CTC för att ändra ursprunglig kostnadsuppskattning för en uppgift. Projektledaren kan ändra CTC-värdet till kostnaden som krävs för att slutföra uppgiften. Om du ändrar CTC-värdet beräknas uppgiftens CTC, EAC och procentandel av förbrukad kostnad och planerad kostnadsavvikelse för en uppgift om. EAC, ETC och procentandel av förbrukad kostnad på sammanfattningsuppgifterna beräknas också om och deras planerade kostnadsavvikelse uppdateras. 
 
 > [!NOTE] 
-> När du ändrar arbete för en aktivitet struktur i kraft spårning visas aktivitetens CTC, UK, förbrukas av procent av kostnaden och planerade kostnadsavvikelsen beräknas i Kostnadsuppföljning vy. Kostnadsändringar påverkar emellertid inte värdena i insatsspårningsvyn, eftersom kostnaden per transaktionstyp (arbete, material eller utgift) eller projektkategori inte ändras. 
+> När du ändrar insats för en WBS-uppgift i insatsspårningsvyn, beräknas uppgiftens CTC, EAC, procentandel av förbrukad kostnad och planerad kostnadsavvikelse i kostnadsspårningsvyn på nytt. Kostnadsändringar påverkar emellertid inte värdena i insatsspårningsvyn, eftersom kostnaden per transaktionstyp (arbete, material eller utgift) eller projektkategori inte ändras. 
 
 **Projektionsrevidering för kostnader i sammanfattningsuppgifter** Du kan ändra kostnader för sammanfattningsuppgifter och beräkningarna sker automatiskt i följande ordning:
 
@@ -236,24 +239,24 @@ Klicka på **Utöka till nivå** i kostnadsspårningsvyn för att ange nivån f�
 
 ### <a name="earned-value-management"></a>Hantering av intjänat värde
 
-Du kan använda metod för upparbetat värde (EVM) för att spåra förloppet för ett projekt. Du kan visa värden för upparbetat värde i projektledarens rollcenter. Diagramkomponenten för upparbetat värde visar tidfasade värdena för planerat värde och faktisk kostnad. Upparbetat värde för aktuellt datum visas som en punkt. Tidfasade data för upparbetat värde är för närvarande är inte tillgängliga. 
+Du kan använda metoden för upparbetat värde (EVM) för att följa förloppet för ett projekt. Du kan visa värden för upparbetat värde i projektledarens rollcenter. Diagramkomponenten för upparbetat värde visar tidfasade värdena för planerat värde och faktisk kostnad. Upparbetat värde för aktuellt datum visas som en punkt. Tidfasade data för upparbetat värde är för närvarande är inte tillgängliga. 
 
 Tidfasen på diagrammet för upparbetat värde visas per vecka eller per månad. Det här avsnittet beskriver de tre pelarna i EVM: planerat värde, tjänat värde och faktisk kostnad. 
 
 **Planerat värde** EVM-teorin anger att det planerade värdets rityta representerar takten med vilken projektteamet planerade att upparbeta värde i projektet. 
 
-Microsoft Dynamics 365 för operationer används 0:100 med regeln när som ritar planerade värdet. Med den här regeln bokförs artiklarnas värde i uppgiften till uppgiften vid slutdatumet. Inget värde bokförs förrän uppgiften är avslutad till 100 procent. 
+Microsoft Dynamics 365 for Operations använder 0:100 som intäktsregel när den ritar planerat värde. Med den här regeln bokförs artiklarnas värde i uppgiften till uppgiften vid slutdatumet. Inget värde bokförs förrän uppgiften är avslutad till 100 procent. 
 
 I Projekthantering och redovisning anger du lövnodernas slutdatum och den planerade kostnaden för det. När diagrammet för planerat värde visas per vecka, sammanfattas planerat värde per vecka för alla lövnoduppgifter för projektets varaktighet. 
 
 **Upparbetat värde** EVM-teorin anger att det upparbetade värdets rityta representerar takten med vilken projektteamet verkligen upparbetar värde i projektet. 
 
-Microsoft Dynamics 365 för operationer används 0:100 med regeln när dess områden upparbetat värde. Med den här regeln bokförs artiklarnas värde i uppgiften till uppgiften vid slutdatumet. Inget värde bokförs förrän uppgiften är avslutad till 100 procent. 
+Microsoft Dynamics 365 for Operations använder 0:100 som intäktsregel när den ritar upparbetat värde. Med den här regeln bokförs artiklarnas värde i uppgiften till uppgiften vid slutdatumet. Inget värde bokförs förrän uppgiften är avslutad till 100 procent. 
 
 När upparbetat värde beräknas inkluderas förloppets procentsatsen för varje uppgift. Med 0:100-regeln inkluderas endast uppgifter som utförs under en given period för beräkning av upparbetat värde vid slutet av perioden. Upparbetat värde i projektet beräknas för alla uppgifter som är klara när diagrammet skapas. 
 
 > [!NOTE] 
-> Ett system för spårning av struktur inte för närvarande datastrukturer för att lagra historiska utvecklingen procentsatser för varje aktivitet. Därför kan upparbetat värde endast rapporteras vid tidpunkten när kuben bearbetas. Bearbeta kuben regelbundet för att uppdatera data för upparbetat värde som visas i rollcenter. 
+> För närvarande har systemet för WBS-spårning inga datastrukturer som lagrar historiska förloppsprocentsatser för varje uppgift. Därför kan upparbetat värde endast rapporteras vid tidpunkten när kuben bearbetas. Bearbeta kuben regelbundet för att uppdatera data för upparbetat värde som visas i rollcenter. 
 
 **Faktisk kostnad** EVM-teorin anger att den faktiska kostnaden representerar takten med vilken pengar spenderas i projektet. 
 
@@ -274,7 +277,7 @@ Om den faktiska kostnaden som använts för en period är större än det upparb
 Om den faktiska kostnaden som används för en period är mindre än det upparbetade värdet, har mer pengar tjänats än spenderats. Därför ligger projektet under budget.
 
 ## <a name="wbs-templates"></a>WBS-mallar
-Du kan använda funktionen struktur mallar för att skapa standardmallar för projekt. Om projekt som ditt företag erbjuder gäller mycket upprepat arbete bör du överväga att skapa en WBS-mall. 
+Du kan använda funktionen för WBS-mallar för att skapa standardmallar för projekt. Om projekt som ditt företag erbjuder gäller mycket upprepat arbete bör du överväga att skapa en WBS-mall. 
 
 Du kan skapa en WBS-mall från WBS för ett befintligt projekt så att kunskaper och bästa praxis som samlades under planeringen av projektet kan återanvändas på liknande projekt i framtiden. Ibland är det ingen mening att spara hela WBS som en mall. Därför kan du även skapa mallar från delar av en WBS för ett projekt.
 
@@ -313,5 +316,7 @@ Insats = Antal resurser * Varaktighet * Antalet timmar under en vanlig arbetsdag
 Du kan korrigera alla tidsplanerings samtidigt genom att klicka på **Fix all scheduling errors**. 
 
 Du kan också korrigera tidsplaneringsfel enskilt genom att klicka på varningsikonen för varje uppgift.
+
+
 
 

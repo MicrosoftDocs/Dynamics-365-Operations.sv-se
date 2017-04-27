@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="fixed-assets-integration"></a>Integrering av anläggningstillgångar
 
+[!include[banner](../includes/banner.md)]
+
+
 Anläggningstillgångar kan integreras med Redovisning, Lagerhantering, Kundreskontra och Leverantörsreskontra. Du kan också ställa in anläggningstillgångar så att detta integreras med inköpsorder.
 
 <a name="general-ledger"></a>Huvudbok
@@ -82,7 +85,7 @@ Integreringen för respektive orderrad på fliken **Fixed assets** på snabbflik
 ## <a name="project-management-and-accounting"></a>Projekthantering och redovisning
 Du kan associera ett projekt med en tillgång som påverkas av projektet. Du kan också associera respektive fas, uppgift eller delprojekt till en annan tillgång. En tillgång kan kopplas till varje projektpost. Du skapar associationen när du registrerar ett anläggningstillgångsnummer i nummerfältet **Fixed asset** på sidan **Projects**. Projekttypen måste vara antingen **Internal** eller **Cost project**. 
 
-Du kan också använda sidan **Projects** när du vill visa detaljer om tillgångarna som associeras med projekt. Om du vill visa anläggningstillgångsposten: På snabbfliken **Setup** klickar du på länken för att öppna sidan **Fixed assets**. Klicka på **projekt**&gt;**alla projekt** om du vill visa projekten som associeras med anläggningstillgången. 
+Du kan också använda sidan **Projects** när du vill visa detaljer om tillgångarna som associeras med projekt. Om du vill visa anläggningstillgångsposten: På snabbfliken **Setup** klickar du på länken för att öppna sidan **Fixed assets**. Klicka sedan på **Projekt** &gt; **Alla projekt** för att visa de projekt som är associerade med anläggningstillgången. 
 
 Vanligtvis associerar du anläggningstillgångar med projekt när projekten berör arbete, underhåll eller förbättringar av tillgången. När projektet är klart skapas ingen uppskrivningsjustering av tillgången automatiskt. Därför måste du manuellt skapa uppskrivningen, om en justering krävs. 
 
@@ -90,6 +93,8 @@ Du tar bort kopplingen mellan ett projekt och en tillgång genom att avmarkera f
 
 Du kan också beteckna en anläggningstillgång som du skapar eller tillverkar inom ett uppskattningsprojekt. I slutet av uppskattningsprojektet kan du automatiskt bokföra en anskaffningstransaktion för tillgången.
 
-Mer information finns i [förvärv av tillgångar genom inköp](acquire-assets-procurement.md)
+Mer information finns i [Förvärv av tillgångar genom upphandling](acquire-assets-procurement.md).
+
+
 
 

@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="150-percent-reducing-balance-depreciation"></a>150 procent degressiv avskrivning
 
+[!include[banner](../includes/banner.md)]
+
+
 Det här avsnittet ger en översikt över 150-procentsmetoden för degressiv avskrivning.
 
 När du ställer in en avskrivningsprofil för anläggningstillgångar och väljer **150 % degressiv avskrivning** i fältet **Metod** på sidan **Avskrivningsprofiler** skrivs tillgångarna som tilldelas den här avskrivningsprofilen av med samma procentsats under varje avskrivningsperiod. Denna procentsats beräknas baserat på tillgångens tjänstelivstid. Om till exempel en tillgång har en tjänstelivstid på fem år, beräknas procentsatsen som 30 procent (150 % ÷ 5). 
@@ -56,7 +59,7 @@ Om du väljer **Kalender** som avskrivningsår finns följande alternativ i fäl
 
 Om du väljer **Fiscal** i fältet **Depreciation year**, beräknas 150 % degressiv avskrivning baserat på räkenskapsåret för räkenskapskalendern som angetts för boken, eller för den räkenskapskalender som har valts på sidan **Ledger**. Räkenskapskalendrar ställs in på sidan **Räkenskapskalendrar**. 
 
-För räkenskapsåret 1 juli till och med 30 juni påbörjas avskrivningsberäkningen exempelvis 1 juli. Räkenskapsåret kan vara längre eller kortare än 12 månader. Avskrivningen justeras för varje period. Längden på nästa räkenskapsår bestäms av inställningen för perioder på sidan **Räkenskapskalendrar**. 
+För räkenskapsåret 1 juli - 30 juni startar alltså avskrivningsberäkningen den 1 juli. Räkenskapsåret kan vara längre eller kortare än 12 månader. Avskrivningen justeras för varje period. Längden på nästa räkenskapsår bestäms av inställningen för perioder på sidan **Räkenskapskalendrar**. 
 
 Om du väljer **Räkenskapsår** som avskrivningsår finns följande alternativ i fältet **Periodfrekvens**:
 
@@ -81,6 +84,8 @@ Den degressiva avskrivningsmetoden på 150 % delar 150 procent med tjänstelivst
 | År 3 | 4 900 × 30 % = 1 470                           | 5 900 - 1 470 = 4 430  | 4 900 - 1 470 = 3 430                 |
 
 > [!NOTE]
-> När det belopp som beräknas med hjälp av 150 % degressiv avskrivning normalt blir mindre än det belopp som beräknas med den linjära metoden sker en konvertering till linjär metod för resterande tjänstelivstid.
+> Om beloppet som beräknas med den degressiva avskrivningsmetoden 150 % blir lägre än beloppet som beräknas med den linjära metoden, sker vanligtvis en konvertering till den linjära metoden för resterande tjänstelivstid.
+
+
 
 

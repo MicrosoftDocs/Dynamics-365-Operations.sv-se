@@ -26,11 +26,14 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="configure-a-line-item-workflow"></a>Konfigurera ett arbetsflöde för radartiklar
 
+[!include[banner](../includes/banner.md)]
+
+
 I det här avsnittet beskrivs hur du konfigurerar ett arbetsflödeselement för radartiklar.
 
 Höger klicka på elementet i arbetsflödesredigeraren och klicka sedan på **Properties** för att öppna sidan **Properties**, om du vill konfigurera ett arbetsflöde för radartiklar. Du kan sedan använda följande procedurer för att konfigurera olika egenskaper för arbetsflödet för radartikel.
 
-## <a name="name-the-lineitem-workflow-element"></a>Namnge lineitem arbetsflödeselementet
+## <a name="name-the-lineitem-workflow-element"></a>Namnge arbetsflödet för radartikel
 Följ dessa steg när du vill ange ett namn för arbetsflödet för radartikel.
 
 1.  Klicka på **Grundinställningar** i det vänstra fönstret.
@@ -50,6 +53,8 @@ Gör på följande sätt när du vill ange om samma arbetsflöde används för a
     6.  Klicka på **Test** för att bekräfta att den uppsättning villkor som du har angett också har ställts in korrekt. På sidan **Test workflow condition**, i området **Validate condition**, väljer du en post innan du klickar på **Test**. Systemet utvärderar posten i syfte att avgöra om den uppfyller villkoren som du angett. När du vill återgå till sidan **Egenskaper** klickar du på **OK** eller på **Avbryt**.
 
     I fliken **Workflow** markerar du det arbetsflöde du vill använda för att processa radartiklar som uppfyller den uppsättning villkor som du har angett.
+
+
 
 
 

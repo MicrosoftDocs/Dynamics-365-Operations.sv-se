@@ -1,5 +1,5 @@
 ---
-title: "Avancerade filtrerings- och frågealternativ syntax"
+title: "Avancerade filtrerings- och frågesyntax"
 description: "Denna artikel beskriver filterings- och frågealternativ som är tillgängliga, när du använder operatorn ”matchar&quot; i den avancerade filtrerings-/sorteringsdialogen."
 author: jasongre
 manager: AnnBe
@@ -25,7 +25,10 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="advanced-filtering-and-query-syntax"></a>Avancerade filtrerings- och frågealternativ syntax
+# <a name="advanced-filtering-and-query-syntax"></a>Avancerade filtrerings- och frågesyntax
+
+[!include[banner](../includes/banner.md)]
+
 
 Denna artikel beskriver filterings- och frågealternativ som är tillgängliga, när du använder operatorn ”matchar" i den avancerade filtrerings-/sorteringsdialogen.
 
@@ -52,79 +55,79 @@ Denna artikel beskriver filterings- och frågealternativ som är tillgängliga, 
 <td><em>värde</em></td>
 <td>Motsvarar värdet som angavs</td>
 <td>Skriv in värdet som du vill hitta.</td>
-<td><strong>Smith</strong> hittas &quot;Smith&quot;.</td>
+<td><strong>Smith</strong> hittar &quot;Smith&quot;.</td>
 </tr>
 <tr class="even">
-<td>! <em>värdet</em> (utropstecken)</td>
+<td>!<em>-värde</em> (utropstecken)</td>
 <td>Motsvarar inte värdet som angavs</td>
 <td>Skriv in ett utropstecken och sedan värdet som du vill utesluta.</td>
-<td><strong>! Smith</strong> hittar alla värden förutom &quot;Smith&quot;.</td>
+<td><strong>!Smith</strong> hittar alla värden utom &quot;Smith&quot;.</td>
 </tr>
 <tr class="odd">
 <td><em>värdet Från</em>.<em>värdet Till</em> (dubbla punkter)</td>
 <td>Mellan de två värdena som angavs åtskilda med dubbla punkter</td>
 <td>Skriv in värdet Från, sedan två punkter och sist värdet Till.</td>
-<td><strong>1..10</strong> hittar alla värden från 1 till 10. I ett strängfält <strong>A.. C</strong> hittar alla värden som börjar med &quot;A&quot; och &quot;B&quot;, och värden som exakt motsvarar &quot;C&quot;. Till exempel hittar inte den här frågan &quot;Ca&quot;. Du hittar alla värden från &quot;A*&quot; till &quot;C*&quot;, typen <strong>A.. D</strong>.</td>
+<td><strong>1..10</strong> hittar alla värden från 1 till 10. I ett strängfält hittar emellertid <strong>A..C</strong> alla värden som börjar med &quot;A&quot; och &quot;B&quot;, och värden som är exakt lika med &quot;C&quot;. Denna fråga hittar exempelvis inte &quot;Ca&quot;. Om du vill hitta alla värden från &quot;A*&quot; till &quot;C*&quot;, skriv då <strong>A..D</strong>.</td>
 </tr>
 <tr class="even">
 <td>..<em>värde</em> (dubbla punkter)</td>
 <td>Mindre än eller lika med värdet som angavs.</td>
 <td>Skriv in de två punkterna och sedan värdet.</td>
-<td><strong>.. 1000</strong> hittar alla tal som är mindre än eller lika med 1 000, t.ex &quot;100&quot;, &quot;999.95&quot;, och &quot;1 000&quot;.</td>
+<td><strong>..1000</strong> hittar alla tal som är mindre än eller lika med 1 000, t.ex. &quot;100&quot;, &quot;999,95&quot; och &quot;1 000&quot;.</td>
 </tr>
 <tr class="odd">
 <td><em>värde</em>.. (dubbla punkter)</td>
 <td>Större än eller lika med värdet som angavs.</td>
 <td>Skriv in värdet och sen två punkter.</td>
-<td><strong>1000..</strong> Hittar alla tal som är större än eller lika med 1 000, t.ex &quot;1 000&quot;, &quot;1,000.01&quot;, och &quot;1 000 000&quot;.</td>
+<td><strong>1000..</strong> hittar alla tal som är större än eller lika med 1 000, t.ex. &quot;1 000&quot;, &quot;1 000,01&quot; och &quot;1 000 000&quot;.</td>
 </tr>
 <tr class="even">
-<td>&gt;<em>värdet</em> (större än-tecken)</td>
+<td>&gt;<em>värde</em> (tecknet för "större än")</td>
 <td>Större än värdet som angavs.</td>
-<td>Skriver du ett större än-tecken (<strong>&gt;</strong>) och sedan värdet.</td>
-<td><strong>&gt;1000</strong> hittar alla tal som är större än 1 000, t.ex &quot;1 000,01&quot;, &quot;20 000&quot;, och &quot;1 000 000&quot;.</td>
+<td>Ange tecknet för "större än" (<strong>&gt;</strong>) och därefter värdet.</td>
+<td><strong>&gt;1 000</strong> hittar alla tal som är större än 1 000, t.ex.s &quot;1000,01&quot;, &quot;20 000&quot; och &quot;1 000 000&quot;.</td>
 </tr>
 <tr class="odd">
-<td>&lt;<em>värdet</em> (mindre än-tecken)</td>
+<td>&lt;<em>värde</em> (tecknet för "mindre än")</td>
 <td>Mindere än värdet som angavs.</td>
-<td>Skriv tecknet mindre än (<strong>&lt;</strong>) och sedan värdet.</td>
-<td><strong>&lt;1000</strong> hittar alla tal som är mindre än 1 000, t.ex &quot;999,99&quot;, &quot;1&quot;, och &quot;-200&quot;.</td>
+<td>Skriv in tecknet för "mindre än" (<strong>&lt;</strong>) och därefter värdet.</td>
+<td><strong>&lt;1 000</strong> hittar alla tal, som är mindre än 1 000, t.ex. &quot;999,99&quot;, &quot;1&quot; och &quot;-200&quot;.</td>
 </tr>
 <tr class="even">
-<td><em>värdet</em>* (asterisk)</td>
+<td><em>värde</em>* (asterisk)</td>
 <td>Startar från värdet som angavs</td>
 <td>Skriv in startvärdet och sedan en asterisk (<strong>*</strong>).</td>
-<td><strong>S *</strong> hittar någon sträng som börjar med &quot;er&quot;, t ex &quot;Stockholm&quot;, &quot;Sydney&quot;, och &quot;San Francisco&quot;.</td>
+<td><strong>S*</strong> hittar alla strängar som börjar med &quot;S&quot;, t.ex. &quot;Stockholm&quot;, &quot;Sydney&quot; eller &quot;San Francisco&quot;.</td>
 </tr>
 <tr class="odd">
-<td>*<em>value</em> (asterisk)</td>
+<td>*<em>värde</em> (asterisk)</td>
 <td>Slutar med värdet som angavs.</td>
 <td>Skriv in en asterisk och sedan slutvärdet.</td>
-<td><strong>* Öst</strong> hittar någon sträng som avslutas med &quot;east&quot;, t ex &quot;nordöst&quot; och &quot;sydöst&quot;.</td>
+<td><strong>*öst</strong> hittar alla strängar som slutar med &quot;öst&quot;, t.ex. &quot;Nordöst&quot; och &quot;Sydöst&quot;.</td>
 </tr>
 <tr class="even">
-<td>*<em>värdet</em>* (asterisk)</td>
+<td>*<em>värde</em>* (asterisk)</td>
 <td>Innehåller värdet som angavs.</td>
 <td>Skriv in en asterisk, sedan ett värde och slutligen en till asterisk.</td>
-<td><strong>*St*</strong> innehåller någon sträng som identifierar &quot;to&quot;, såsom &quot;nordöst&quot; och &quot;sydöst&quot;.</td>
+<td><strong>*st*</strong> hittar alla strängar som innehåller &quot;st&quot;, t.ex. &quot;Nordöst&quot; och &quot;Sydöst&quot;.</td>
 </tr>
 <tr class="odd">
 <td>? (frågetecken)</td>
 <td>Har ett eller flera okända tecken</td>
 <td>Skriv in ett frågetecken vid det okända tecknets placering i värdet.</td>
-<td><strong>Sm? th</strong> hittas &quot;Smith&quot; och &quot;Smyth&quot;.</td>
+<td><strong>Sm?th</strong> hittar &quot;Smith&quot; och &quot;Smyth&quot;.</td>
 </tr>
 <tr class="even">
 <td><em>värde</em>,<em>värde</em> (kommatecken)</td>
 <td>Matchar värdena som angavs åtskilda med kommatecken.</td>
 <td>Skriv in alla kriterier och skilj dem åt med kommatecken.</td>
-<td><strong>A, D, F, G</strong> finds exactly &quot;A&quot;, &quot;D&quot;, &quot;F&quot;, and &quot;G&quot;. <strong>10, 20, 30, 100</strong> hittar exakt &quot;10, 20, 30, 100&quot;.</td>
+<td><strong>A, D, F, G</strong> hittar exakt &quot;A&quot;, &quot;D&quot;, &quot;F&quot; och &quot;G&quot;. <strong>10, 20, 30, 100</strong> hittar exakt &quot;10, 20, 30, 100&quot;.</td>
 </tr>
 <tr class="odd">
 <td>(<span class="code">SQL-sats</span>) (SQL-sats inom parentes)</td>
 <td>Matchar en definierad fråga</td>
 <td>Skriv in en fråga som en SQL-sats inom parentes.</td>
-<td><strong><span class="code">(datakälla. Fältnamn! = &quot;A&quot;)</span></strong></td>
+<td><strong><span class="code">(data source.Fieldname != &quot;A&quot;)</span></strong></td>
 </tr>
 <tr class="even">
 <td>T</td>
@@ -137,7 +140,7 @@ Denna artikel beskriver filterings- och frågealternativ som är tillgängliga, 
 <td>Matcha värdet eller intervallet av värden som anges av parametrar för metoden <strong>SysQueryRangeUtil</strong></td>
 <td>Skriv en <strong>SysQueryRangeUtil</strong>-metod med parametrar som specificerar värdet eller intervallet av värden.</td>
 <td><ol>
-<li>Klicka på <strong>kundreskontra</strong>&gt;<strong>fakturor</strong>&gt;<strong>öppna kundfakturor</strong>.</li>
+<li>Klicka på <strong>Kundreskontra</strong> &gt; <strong>Fakturor</strong> &gt; <strong>Öppna kundfakturor</strong>.</li>
 <li>Tryck på Ctrl+Shift+F3 om du vill öppna sidan <strong>Förfrågan</strong>.</li>
 <li>På fliken <strong>Intervall</strong> klickar du på <strong>Anslutning</strong>.</li>
 <li>I fältet <strong>Tabell</strong> väljer du <strong>Öppna kundtransaktioner</strong>.</li>
@@ -228,6 +231,8 @@ Se tabellen i nästa avsnittet för ytterligare information om <strong>SysQueryR
 </tr>
 </tbody>
 </table>
+
+
 
 
 

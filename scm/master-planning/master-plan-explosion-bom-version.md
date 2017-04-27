@@ -1,6 +1,6 @@
 ---
 title: Nedbrytning av en strukturlisteversion
-description: "Den här artikeln scenario som omfattar nedbrytning av en strukturlistan (BOM) för huvudplanering."
+description: "Den här artikeln förklarar ett övergripande planeringsscenario som omfattar nedbrytning av en strukturlista (BOM)."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -29,7 +29,10 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="explosion-of-a-bom-version"></a>Nedbrytning av en strukturlisteversion
 
-Den här artikeln scenario som omfattar nedbrytning av en strukturlistan (BOM) för huvudplanering.
+[!include[banner](../includes/banner.md)]
+
+
+Den här artikeln förklarar ett övergripande planeringsscenario som omfattar nedbrytning av en strukturlista (BOM).
 
 En efterfrågenedbrytning av en strukturlisteversion skapar en efterfrågan för varje artikelrad i strukturlistan på en viss site och kanske ett särskilt lager. I en sitespecifik strukturlista kan ett visst lager definieras för varje strukturlisterad. Dessutom bestämmer artikeldimensionens inställningar huruvida lagret krävs för varje strukturlisterad. Den resulterande efterfrågan för varje strukturlisterad blir i sin tur utgångspunkten för en vidare efterfrågenedbrytning. Det här huvudplaneringsscenariot omfattar följande villkor:
 
@@ -41,8 +44,10 @@ Följande bild visar hur processen för efterfrågenedbrytningen i huvudplanerin
 <a name="see-also"></a>Se även
 --------
 
-[Huvudplanering - hur strukturlisteversionen avgörs](master-plan-bom-version-determined.md)
+[Huvudplanering - hur strukturlisteversionen bestäms](master-plan-bom-version-determined.md)
 
-[Master planning and multisite functionality](master-plan-multisite-functionality.md)
+[Huvudplanering och multiplatsfunktioner](master-plan-multisite-functionality.md)
+
+
 
 

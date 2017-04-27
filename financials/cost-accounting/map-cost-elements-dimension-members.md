@@ -1,5 +1,5 @@
 ---
-title: "Mappa olika element dimensionsmedlemmar till en gemensam uppsättning dimensionsmedlemmar"
+title: "Mappa olika dimensionsmedlemmar för kostnadselement till en gemensam uppsättning med dimensionsmedlemmar"
 description: "Genom att mappa olika dimensionsmedlemmar för kostnadselement till en gemensam uppsättning dimensionsmedlemmar för kostnadselement slår du samman data till ett gemensamt format för analysändamål."
 author: YuyuScheller
 manager: AnnBe
@@ -25,7 +25,7 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="map-different-cost-element-dimension-members-to-a-common-set-of-dimension-members"></a>Mappa olika element dimensionsmedlemmar till en gemensam uppsättning dimensionsmedlemmar
+# <a name="map-different-cost-element-dimension-members-to-a-common-set-of-dimension-members"></a>Mappa olika dimensionsmedlemmar för kostnadselement till en gemensam uppsättning med dimensionsmedlemmar
 
 Genom att mappa olika dimensionsmedlemmar för kostnadselement till en gemensam uppsättning dimensionsmedlemmar för kostnadselement slår du samman data till ett gemensamt format för analysändamål.
 
@@ -38,10 +38,10 @@ Följande exempel visar hur du som en kostnadscontroller kan skapa en ny dimensi
 |-----------------------------------------------------------------------|---------------------------------------------------------------------------|-------------------------------------------------------------------------|
 | Importerade dimensionsmedlemmar för kostnadselement från den amerikanska kontoplanen | Importerade dimensionsmedlemmar för kostnadselement från den franska kontoplanen | Mappning av franska och amerikanska dimensionsmedlemmar för kostnadselement till en gemensam uppsättning |
 | 5001: Försäljning                                                           | 5001: Försäljning och reklam                                               | 5000: Försäljning och reklam                                             |
-| 5030: Reklam                                                     | 6390: inköp lagra\*                                                    | 7000: Rengöringskostnader                                                 |
+| 5030: Reklam                                                     | 6390: Lagerinköp\*                                                    | 7000: Rengöringskostnader                                                 |
 | 7001: Rengöringskostnader                                               | 7001: Reseutgifter                                                      | 7001: Reseutgifter                                                   |
 
-\*Dimensionsmedlemmen lager inköp franska kostnad element mappas inte.
+\*Lagerinköp för franska dimensionsmedlemmar för kostnadselement är inte mappade.
 
 ## <a name="currency-conversion"></a>Valutakonvertering
 De olika kontoplanerna som du använder, kan kanske ställas in för att använda olika valutor. Kontrollera att du anger en valutakonvertering så att kostnadsdata bearbetas, genom att använda korrekt valuta, enligt definitionen i kostnadsredovisningen där dimensionsmedlemmar för kostnadselement används. I föregående exempel om amerikanska dollar (USD) används i kostnadsredovisningen, måste du skapa en valutakonvertering från USD till euro (EUR) för att bearbeta transaktioner för de mappade dimensionsmedlemmarna för kostnadselement.

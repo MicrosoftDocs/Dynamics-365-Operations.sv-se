@@ -27,6 +27,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="acquire-assets-through-procurement"></a>Anskaffa tillgångar genom anskaffning
 
+[!include[banner](../includes/banner.md)]
+
+
 Den här artikeln beskriver hur du ställer in integrationen mellan Anläggningstillgångar och Leverantörsreskontra om du automatiskt vill skapa anläggningstillgångar från inköpsorder eller leverantörsfakturor, eller automatiskt bokföra anskaffningar och anskaffningsjusteringar för anläggningstillgångar.
 
  Följande metoder används för integration av anläggningstillgångar och leverantörsreskontra och du måste använda samma metod för alla anläggningstillgångar:
@@ -103,6 +106,8 @@ Följande varianter finns för scenariot:
 -   Om enbart en delkvantitet inlevereras, skapas ingen tillgångsanskaffning för den första leverantörsfakturan på grund av användargruppsrestriktioner. Det enda sättet som en anskaffning kan bokföras på för den andra leverantörsfakturan som avslutar den beställda kvantiteten, är om en anskaffningstransaktion redan har registrerats för den första leverantörsfakturan, och du tillhör en användargrupp som tillåts bokföra anskaffningar.
 
 
-Mer information finns i [fasta tillgångar integration](fixed-asset-integration.md).
+Mer information finns i [Integrering av anläggningstillgångar](fixed-asset-integration.md).
+
+
 
 

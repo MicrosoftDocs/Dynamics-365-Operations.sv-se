@@ -26,6 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="workflow-elements"></a>Arbetsflödeselement
 
+[!include[banner](../includes/banner.md)]
+
+
 Den här artikeln beskriver de olika elementen som utgör ett arbetsflöde.
 
 Ett arbetsflöde består av olika element, t.ex. De olika avsnitten som följer beskriver varje typ av element.
@@ -55,14 +58,14 @@ En *godkännandeprocess* är en process som består av separata steg. I varje go
 -   Begära en ändring av dokumentet.
 -   Tilldela en annan användare dokumentet för godkännande.
 
-## <a name="lineitem-workflow-elements"></a>Lineitem för arbetsflödeselement
-Ett arbetsflöde kan skapas för att bearbeta antingen dokument eller radartiklarna på ett dokument. Om du till exempel har skapat ett arbetsflöde för godkännande för tidrapporter. (Att arbetsflödet som den *arbetsflödet för dokument*.) Du kan lägga till en *radartikel* element som det arbetsflödet för dokument. När elementet för radartikeln körs, skickas varje radartikel på dokumentet in för bearbetning. Du kan vilja att alla radartiklar bearbetas av samma radartikelarbetsflöde, eller du kanske vill att varje radartikel kan bearbetas i ett annat arbetsflöde för radartikel. Tänk dig att en medarbetare har skickat in en tidrapport som liknar följande bild. ![Arbetsflöde med radartiklar](./media/workflow_lineitemworkflow.gif) I detta scenario kanske du vill skapa följande rarbetsflöden för radartiklar:
+## <a name="lineitem-workflow-elements"></a>Arbetsflödeselement för radartikel
+Ett arbetsflöde kan skapas för att bearbeta antingen dokument eller radartiklarna på ett dokument. Om du till exempel har skapat ett arbetsflöde för godkännande för tidrapporter. (Du refererar till arbetsflödet som *dokumentarbetsflöde*.) Du kan lägga till ett element för *arbetsflöde för radartikel* till det dokumentarbetsflödet. När elementet för radartikeln körs, skickas varje radartikel på dokumentet in för bearbetning. Du kan vilja att alla radartiklar bearbetas av samma radartikelarbetsflöde, eller du kanske vill att varje radartikel kan bearbetas i ett annat arbetsflöde för radartikel. Tänk dig att en medarbetare har skickat in en tidrapport som liknar följande bild. ![Arbetsflöde med radartiklar](./media/workflow_lineitemworkflow.gif) I detta scenario kanske du vill skapa följande rarbetsflöden för radartiklar:
 
 -   **Arbetsflöde för radartikel 1** – Det här arbetsflödet används för att bearbeta artiklar där projekt-ID är 1111.
 -   **Arbetsflöde för radartikel 2** – Det här arbetsflödet används för att bearbeta artiklar där projekt-ID är 2222.
 -   **Arbetsflöde för radartikel 3** – Det här arbetsflödet används för att bearbeta artiklar där projekt-ID är 3333.
 
-## <a name="flowcontrol-elements"></a>Flowcontrol element
+## <a name="flowcontrol-elements"></a>Flödeskontrollelement
 Följande element låter dig designa arbetsflöden som har alternativa förgreningar eller förgreningar som körs samtidigt.
 
 ### <a name="manual-decision"></a>Manuellt beslut
@@ -80,5 +83,7 @@ En *parallell aktivitet* är ett arbetsflödeselement som inkluderar två eller 
 ### <a name="subworkflow"></a>Delarbetsflöde
 
 Ett *delarbetsflöde* är ett arbetsflöde som körs i ett annat arbetsflödes sammanhang.
+
+
 
 

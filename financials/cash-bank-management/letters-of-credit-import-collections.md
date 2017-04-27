@@ -28,12 +28,15 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="letters-of-credit-and-import-collections"></a>Remburs och importinkasso
 
+[!include[banner](../includes/banner.md)]
+
+
 Det här avsnittet innehåller allmän information om remburser och importsamlingar. Båda typerna av bankdokument används ofta för inköp och försäljning av varor över internationella gränser.
 
 <a name="letters-of-credit"></a>Remburser
 -----------------
 
-Remburser används för internationella transaktioner och ger betalningar kommer att göras. En rembursen är ett avtal som utfärdas av en bank, där banken förbinder sig att garantera betalning för en köpare, under förutsättning att villkoren i avtalet mellan köparen och säljaren är uppfyllda. En rembursen kallas också en dokumentkredit (batteri).
+Remburser används i internationella transaktioner och hjälper till att säkerställa att betalningarna utförs. En remburs är ett avtal som utfärdas av en bank, i vilken banken går med på att garantera betalning på uppdrag av en köpare, förutsatt att villkoren i avtalet mellan köpare och säljare uppfylls. En remburs kallas "letter of credit" eller "documentary credit" (DC) på engelska.
 
 För en importremburs är den juridiska personen köparen eller sökande av rembursen. För en exportremburs är den juridiska personen säljaren eller mottagaren av rembursen. Följande parter är inblandade i en remburs:
 
@@ -50,5 +53,7 @@ En remburs kan vara **återkallelig** eller **oåterkallelig**. En remburs kan v
 En importinkasso är ett avtal mellan banken och exportörn (säljaren), där banken förbinder sig att leverera leveransdokumentationen till den internationella importören (köparen). Banken förväntas att skicka leveransdokumentationen när betalningen för de levererade varorna tas emot, eller när en växel tas emot för betalningen. 
 
 En importinkasso garanterar att säljaren får betalt när köparen får leveransdokumentationen för de importerade varorna.
+
+
 
 

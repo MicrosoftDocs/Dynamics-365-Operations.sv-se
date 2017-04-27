@@ -1,6 +1,6 @@
 ---
-title: "Översikt för modeller"
-description: "Den här artikeln definieras termer och begrepp som avser produktkonfigurationsmodeller. Modeller för produktkonfiguration kan du bygga en allmän produktstruktur som kan användas för att konfigurera många produktvarianter för en och samma produkt."
+title: "Översikt över produktkonfigurationsmodeller"
+description: "I den här artikeln definieras termer och begrepp som avser produktkonfigurationsmodeller. Med produktkonfigurationsmodeller kan du bygga en allmän produktstruktur som kan användas för att konfigurera många produktvarianter för en och samma produkt."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 04/04/2017
@@ -26,9 +26,9 @@ ms.lasthandoff: 03/31/2017
 
 ---
 
-# <a name="product-configuration-models-overview"></a>Översikt för modeller
+# <a name="product-configuration-models-overview"></a>Översikt över produktkonfigurationsmodeller
 
-Den här artikeln definieras termer och begrepp som avser produktkonfigurationsmodeller. Modeller för produktkonfiguration kan du bygga en allmän produktstruktur som kan användas för att konfigurera många produktvarianter för en och samma produkt.
+I den här artikeln definieras termer och begrepp som avser produktkonfigurationsmodeller. Med produktkonfigurationsmodeller kan du bygga en allmän produktstruktur som kan användas för att konfigurera många produktvarianter för en och samma produkt.
 
 Modeller för produktkonfiguration skapas för att representera en struktur för den allmänna produkt. När du har ställt in en modell för produktkonfiguration kan du konfigurera en viss produktvariant som har en unik strukturlista (BOM) och ett unikt flöde. Modeller för produktkonfiguration använder både deklarativa begränsningar och absolut nödvändiga beräkningar för att hantera relationerna och begränsningarna mellan olika produktvarianter. Du kan konfigurera artiklar på försäljningsorder, försäljningsofferter, inköpsorder och tillverkningsorder. I tabellen nedan beskrivs de registerbegränsningsbaserade villkoren och koncepten.
 <table>
@@ -69,16 +69,16 @@ Du kan även ange ett villkor för attribut. Om villkoret uppfylls, måste ett v
 <li><strong>Text</strong> med eller utan en fast lista</li>
 <li><strong>Boolesk</strong></li>
 </ul>
-Om attributtypen är <strong>Booleskt</strong>, <strong>Heltal</strong> med ett intervall, eller <strong>Text</strong> med en fast lista är uppsättning värden tillgänglig när en modell för produktkonfiguration ställs in. <strong>Obs:</strong> produkt konfiguration Problemlösaren identifieras endast följande attributtyper: <strong>boolesk</strong>, <strong>Text</strong> med en fast lista och <strong>heltal</strong> med olika. Därför kan endast dessa attributtyper användas i uttryckbegränsningar och villkor.</td>
+Om attributtypen är <strong>Booleskt</strong>, <strong>Heltal</strong> med ett intervall, eller <strong>Text</strong> med en fast lista är uppsättning värden tillgänglig när en modell för produktkonfiguration ställs in. <strong>Obs!</strong> Produktkonfigurationslösaren känner bara igen följande attributtyper: <strong>Booelskt</strong>, <strong>Text</strong> med en fast lista och <strong>Heltal</strong> med ett intervall. Därför kan endast dessa attributtyper användas i uttryckbegränsningar och villkor.</td>
 </tr>
 <tr class="even">
 <td>Begränsningar</td>
 <td>Begränsningar beskriver begränsningarna i produktmodellkonfigurationen. Begränsningar används för att garantera att endast giltiga värden väljs när en produkt konfigureras. Det kan antingen vara uttryckbegränsningar eller registret begränsningar:
 <ul>
 <li>Uttryckbegränsningar kan bara användas för komponenten att de är kopplat till. Uttryckbegränsningarna för en komponent kan referera till attribut i komponentens delkomponenter. Produktkonfigurationslösaren används för att lösa begränsningar, och du måste använda lösarens syntax när du skriver begränsningarna. Mer information finns på wiki-länken om uttrycksbegränsningar och registerbegränsningar.</li>
-<li>Registerbegränsningar måste definieras innan de kan användas på en komponent i en modell för produktkonfiguration. Registerbegränsningar kan antingen vara användardefinierad eller systemdefinierad. En användardefinierad registerbegränsning är en sorts matris som kan användas för att beskriva uppsättningen kombinationer vilka definieras av attributtyper. Om till exempel högtalare tillverkas kan matrisen för en användardefinierad registerbegränsning ha kolumner för högtalarens finish och högtalargallret.</li>
+<li>Registerbegränsningar måste definieras innan de kan användas på en komponent i en produktkonfigurationsmodell. Registerbegränsningar kan vara antingen användardefinierade eller systemdefinierade. En användardefinierad registerbegränsning är en sorts matris som kan användas för att beskriva uppsättningen kombinationer vilka definieras av attributtyper. Om till exempel högtalare tillverkas kan matrisen för en användardefinierad registerbegränsning ha kolumner för högtalarens finish och högtalargallret.</li>
 </ul>
-<strong>Exempel</strong> Högtalarna är tillgängliga i fyra varianter: Svart, Ek, och Rosenträ och Vitt. Högtalarna kan ha ett av tre främre galler: svart, metall eller vitt. Svart finish är tillgänglig för alla galler och andra ytbehandlingsmedel begränsas till vissa galler. Följande tabell visar ett exempel på informationen som visas på fliken <strong>Tillåtna kombinationer</strong> på sidan <strong>Redigera registerbegränsning</strong>.
+<strong>Exempel</strong> Högtalarna är tillgängliga i fyra varianter: Svart, Ek, och Rosenträ och Vitt. Högtalarna kan ha ett av tre främre galler: svart, metall eller vitt. Svart finish är tillgänglig för alla galler och andra ytbehandlingar begränsas till vissa galler. Följande tabell visar ett exempel på informationen som visas på fliken <strong>Tillåtna kombinationer</strong> på sidan <strong>Redigera registerbegränsning</strong>.
 <table>
 <thead>
 <tr class="header">
@@ -117,11 +117,11 @@ Om attributtypen är <strong>Booleskt</strong>, <strong>Heltal</strong> med ett 
 </tr>
 </tbody>
 </table>
-Ett systemdefinierade register kan representerar en mappning mellan en attributtyp och ett fält i ett Dynamics 365 för operationer. Ett systemdefinierade register kan länkar dynamiskt attributtypen i fältet. Länken kan attribut i en modell för produktkonfiguration som återger data i fältet i Dynamics 365 för operationer.</td>
+En systemdefinierad registerbegränsning representerar en mappning mellan en attributtyp och ett fält i ett Dynamics 365 for Operations-register. Systemdefinierade registerbegränsningar kopplar dynamiskt attributtypen till fältet. Länken gör att attributet i en produktkonfigurationsmodell återspeglar data i fältet i Dynamics 365 for Operations-registret.</td>
 </tr>
 <tr class="odd">
 <td>Beräkningar</td>
-<td>Beräkningarna motsvarar ett tillägg till villkor. Du kan använda en beräkning för att utföra räkneoperationer attribut som den <strong>Decimal</strong> och <strong>heltal</strong> typer eller logiska åtgärder som innefattar attributen för den <strong>Text</strong> med en fast lista och <strong>boolesk</strong> typer. En beräkning har ett målattribut som ska innehålla resultatet av beräkningsuttrycket. Du bygger beräkningsuttrycket med hjälp av uttrycksredigeraren.</td>
+<td>Beräkningar representerar ett tillägg till begränsningar. Du kan använda en beräkning för att utföra aritmetiska operationer på attribut av typen <strong>Decimal</strong> och <strong>Heltal</strong>, eller logiska operationer som gäller attribut av typen <strong>Text</strong> med en fast lista eller <strong>Booleskt</strong>. En beräkning har ett målattribut som ska innehålla resultatet av beräkningsuttrycket. Du bygger beräkningsuttrycket med hjälp av uttrycksredigeraren.</td>
 </tr>
 <tr class="even">
 <td>Delkomponenter</td>

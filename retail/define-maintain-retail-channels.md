@@ -1,6 +1,6 @@
 ---
 title: "Definiera och underhåll butikskanaler"
-description: "Den här artikeln innehåller en översikt över processen när du ställer in bankkontor och andra butiker som benämns butiker i Microsoft Dynamics 365 för operationer. Här finns information om de uppgifter du måste utföra båda före och efter att du ställer in en butik."
+description: "Det här avsnittet innehåller en översikt över processen för att ställa in fysiska butiker, som kallas för &quot;detaljhandelsbutiker&quot; i Microsoft Dynamics 365 for Operations. Här finns information om de uppgifter du måste utföra båda före och efter att du ställer in en butik."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -10,7 +10,7 @@ ms.service: Dynamics365Operations
 ms.technology: 
 ms.search.form: RetailStoreTable, RetailStoreTableListPagePreviewPane
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 16481
 ms.assetid: 14496d96-1c72-43ce-a2e7-8467bab4ae46
 ms.search.region: Global
@@ -28,12 +28,15 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="define-and-maintain-retail-channels"></a>Definiera och underhåll butikskanaler
 
-Den här artikeln innehåller en översikt över processen när du ställer in bankkontor och andra butiker som benämns butiker i Microsoft Dynamics 365 för operationer. Här finns information om de uppgifter du måste utföra båda före och efter att du ställer in en butik.
+[!include[banner](includes/banner.md)]
 
-Butik och handel i Dynamics 365 för operationer stöder flera återförsäljare, till exempel onlinebutiker, kundtjänst och bankkontor och andra butiker. I Butik och handel kallas en fysisk butik för butik. Varje butik kan ha egna betalningsmetoder, prisgrupper, kassaregister (POS), intäkts- och utgiftskonton och personal. Du måste ställa in alla dessa element för en butik innan du skapar den. När du har skapat en butik tilldelar du produkter som du vill ha i butiken. Du tilldelar också medarbetare, register och kunder till butiken. Slutligen lägger du till den nya butiken i en organisationshierarki.
+
+Det här avsnittet innehåller en översikt över processen för att ställa in fysiska butiker, som kallas för "detaljhandelsbutiker" i Microsoft Dynamics 365 for Operations. Här finns information om de uppgifter du måste utföra båda före och efter att du ställer in en butik.
+
+Butik och handel i Dynamics 365 for Operations stöder flera butikskanaler, till exempel nätbutiker, kundtjänst och fysiska butiker. I Butik och handel kallas en fysisk butik för butik. Varje butik kan ha egna betalningsmetoder, prisgrupper, kassaregister (POS), intäkts- och utgiftskonton och personal. Du måste ställa in alla dessa element för en butik innan du skapar den. När du har skapat en butik tilldelar du produkter som du vill ha i butiken. Du tilldelar också medarbetare, register och kunder till butiken. Slutligen lägger du till den nya butiken i en organisationshierarki.
 
 ## <a name="setting-up-retail-stores"></a>Ställa in butiker
-Innan du kan skapa en butik i Dynamics 365 för åtgärder måste du utföra vissa nödvändiga uppgifter. Du kan sedan skapa butiken och lägga till information.
+Innan du kan ställa in en butik i Dynamics 365 for Operations måste du utföra vissa obligatoriska uppgifter. Du kan sedan skapa butiken och lägga till information.
 
 ### <a name="prerequisites"></a>Krav
 
@@ -49,7 +52,7 @@ Du måste slutföra följande uppgifter innan du kan ställa in en butik:
 8.  Ställ in butiksprodukter. Som en del av den här uppgiften ställer du även in butiksprodukthierarkier, produktvarianter och produktsortiment.
 9.  Ställa in produktprisgrupper.
 10. Ställa in butiksproduktprissättning. Som en del av den här uppgiften ställer du också in prisjusteringar, rabatter och rabattperioder.
-11. Ställa in anställda. **Anmärkning:** måste du också tilldela behörighet arbetstagare, så att de kan logga in och utföra åtgärder med hjälp av Dynamics 365 för operationer i Retail POS-system.
+11. Ställa in anställda. **Obs!** Du måste också tilldela lämpliga behörigheter till arbetarna så att de kan logga in och utföra uppgifter genom att använda Dynamics 365 for Operations för butikssystem.
 12. Konfigurera Retail POS-profilerna som ska tilldelas till butiken. Den här uppgiften innefattar många uppgifter, till exempel ställa in kassor, offlineprofiler, kvittoformat och kvittoprofiler.
 
 Granska alla uppgifter som ingår i förutsättningarna och slutför alla uppgifter som gäller för dig.
@@ -77,5 +80,7 @@ När du har angett information för butiken slutför du dessa uppgifter för att
 
 ## <a name="organization-hierarchies"></a>Organisationshierarkier
 Retail använder organisationshierarkier i Microsoft Dynamics AX för att strukturera butikskanaler. Organisationshierarkier representerar relationerna mellan organisationer som utgör ett företag. När du ställer in butiker kan du lägga till dem till en organisationshierarki. Butikerna delar sedan data som används för sortiment, lagerpåfyllnad och rapportering.
+
+
 
 

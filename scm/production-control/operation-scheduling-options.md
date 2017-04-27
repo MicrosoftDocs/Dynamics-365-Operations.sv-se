@@ -28,6 +28,9 @@ ms.lasthandoff: 03/31/2017
 
 # <a name="operations-scheduling-options"></a>Tidsplansalternativ för åtgärder
 
+[!include[banner](../includes/banner.md)]
+
+
 I det här avsnittet beskrivs alternativen för grovplanering. Du kan använda grovplaneringen för att ange en allmän uppskattning av produktionsprocessen över en viss tid.
 
 Åtgärdstidsplaneringen beräknar följande information för en produktionsorder:
@@ -128,6 +131,8 @@ Du kan spara aktuella värden som förvalda värden. Det finns två alternativ:
 <a name="see-also"></a>Se även
 --------
 
-[Operations scheduling](operations-scheduling.md)
+[Grovplanering](operations-scheduling.md)
+
+
 
 
