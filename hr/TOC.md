@@ -1,62 +1,62 @@
-# [Human resources home page](index.md)
+# [Startsida för Personalresurser](index.md)
 # Utveckla personalstrategi
-## [Organisera personalen med avdelningar, jobb och befattningar](departments-jobs-positions.md)
-## [Ställ in jobb-komponenter](create-job.md)
-## [Create a department and associate it with the department hierarchy](create-department-add-department-hierarchy.md)
-## [Ställa in företagsspecifika HR parametrar](set-up-company-specific-hr-parameters.md)
-## [Ställa in HR parametrar över juridiska personer](set-up-hr-parameters-across-legal-entities.md)
+## [Organisera arbetsstyrkan med avdelningar, jobb och befattningar](departments-jobs-positions.md)
+## [Ställ in jobbkomponenter](create-job.md)
+## [Skapa en avdelning och associera den med avdelningshierarkin](create-department-add-department-hierarchy.md)
+## [Ställa in företagsspecifika personalparametrar](set-up-company-specific-hr-parameters.md)
+## [Ställa in personalparametrar bland juridiska personer](set-up-hr-parameters-across-legal-entities.md)
 ## [Använd arbetsflöde för att hantera medarbetarinformation](workflow-manage-employee-information.md)
 # Rekrytera, anställa och motivera medarbetare
-## [Manage a recruiting process](manage-recruiting-process.md)
-## [Mass hire projects](mass-hire-projects.md)
+## [Hantera en rekryteringsprocess](manage-recruiting-process.md)
+## [Massanställningsprojekt](mass-hire-projects.md)
 ## [Kompensationsplaner](compensation-plans.md)
 ## [Skapa planer för fast kompensation](create-fixed-compensation-plans.md)
 ## [Skapa planer för variabel kompensation](create-variable-compensation-plans.md)
 # Utveckla och utbilda medarbetare
-## [Performance management overview](performance-management-overview.md)
-## [Align workforce skills with business needs](skills.md)
-## [Ställa in utbildningar](courses.md)
+## [Översikt över prestationshantering](performance-management-overview.md)
+## [Justera personalens kompetenser med affärsbehov](skills.md)
+## [Ställ in utbildningar](courses.md)
 # Skapa och underhålla förmåner
-## [Hantera ett program för förmåner](manage-benefit-program.md)
-## [Benefit eligibility policies](benefit-eligibility-policies.md)
-## [Manage items lent to workers](loan-items.md)
-# Samla information med hjälp av enkäter
-## [Questionnaires](questionnaires.md)
-## [Design a questionnaire](design-questionnaires.md)
-## [Distribute and complete a questionnaire](distribute-questionnaires.md)
-## [Utvärdera resultaten för en enkät](evaluate-questionnaire-results.md)
-# Funktioner för USA
-## Arbetsytan säkerhet och efterlevnad
-### [Kontroll av form I-9 anställning](localizations/noam-usa-form-i-9-verification.md)
-### [Uppfyller ADA](localizations/noam-usa-comply-ada.md)
-## [Payroll](localizations/noam-usa-payroll.md)
-### Lön-inställningar
-#### [Ställ in lön för arbetare](localizations/noam-usa-worker-position-payroll-tasks.md)
-#### [Skapa cykler för arbete och arbeta perioder](localizations/noam-usa-work-cycle-work-period-tasks.md)
-#### [Ställ in pensionsstiftelser periodisering](localizations/noam-usa-benefit-accrual-plan-tasks.md)
-#### [Set up benefits](localizations/noam-usa-benefit-set-up-tasks.md)
-### Frekvenser och cyklar
-### [Betala cykeln och betala period uppgifter](localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md)
-### [Löneuppgifter beräkningen och frekvens](localizations/noam-usa-payroll-calculation-frequencies-tasks.md)
-### [Arbetsschema och lämna uppgifter](localizations/noam-usa-work-schedule-leave-tasks.md)
+## [Hantera ett förmånsprogram](manage-benefit-program.md)
+## [Policyer för förmånsberättigande](benefit-eligibility-policies.md)
+## [Hantera artiklar utlånade till arbetare](loan-items.md)
+# Samla information med enkäter
+## [Enkäter](questionnaires.md)
+## [Utforma en enkät](design-questionnaires.md)
+## [Distribuera och slutföra en enkät](distribute-questionnaires.md)
+## [Utvärdera resultaten av en enkät](evaluate-questionnaire-results.md)
+# Funktioner i USA
+## Arbetsplatssäkerhet och efterlevnad
+### [Verifiering av I–9-anställningsformulär](localizations/noam-usa-form-i-9-verification.md)
+### [Uppfylla ADA](localizations/noam-usa-comply-ada.md)
+## [Lön](localizations/noam-usa-payroll.md)
+### Löneinställningar
+#### [Ställ in löner för arbetstagare](localizations/noam-usa-worker-position-payroll-tasks.md)
+#### [Skapa arbetsuppgiftscykler och arbetsuppgiftsperioder](localizations/noam-usa-work-cycle-work-period-tasks.md)
+#### [Ställ in förmånsperiodiseringsplaner](localizations/noam-usa-benefit-accrual-plan-tasks.md)
+#### [Ställ in förmåner](localizations/noam-usa-benefit-set-up-tasks.md)
+### Frekvenser och cykler
+### [Lönecykler och löneperiodsuppgifter](localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md)
+### [Löneberäknings- och frekvensuppgifter](localizations/noam-usa-payroll-calculation-frequencies-tasks.md)
+### [Arbetsschema och tjänstledighetsuppgifter](localizations/noam-usa-work-schedule-leave-tasks.md)
 ### Koder och skatter
-#### [Skaffa kod och tjäna kod gruppera aktiviteter](localizations/noam-usa-earning-code-group-tasks.md)
-#### [Skatt information uppgifter](localizations/noam-usa-tax-information-tasks.md)
-### Garnishments, moms, avgifter och bidrag betalas
-#### [Ställ in garnishments och en del avgifter](localizations/noam-usa-garnishment-tax-levy-set-up-tasks.md)
-#### [Anmäl arbetare till avgifter kvarstad och moms](localizations/noam-usa-garnishment-tax-levy-enrollment-tasks.md)
-#### [Ställ in bonus intäkter](localizations/noam-usa-premium-earning-setup-tasks.md)
-#### [Garnishments, moms, avgifter och avgifter administrativ FAQ](localizations/noam-usa-garnishment-tax-levy-administrative-fees.md)
-### Löneuppgifter bearbetning
-#### [Generate earnings](localizations/noam-usa-earnings-generation-process.md)
-#### [Problemet betalningar för arbetare](localizations/noam-usa-issue-worker-payments.md)
-#### [Bokför lön och generera fakturor från leverantörer](localizations/noam-usa-post-payroll-generate-vendor-invoices.md)
-#### [Betala utdrag och generera betalningar FAQ](localizations/noam-usa-pay-statements-payment-generation-process.md)
-### Slutföra köpet
+#### [Uppgifter för inkomstkod och inkomstkodgrupp](localizations/noam-usa-earning-code-group-tasks.md)
+#### [Skatteinformationsuppgifter](localizations/noam-usa-tax-information-tasks.md)
+### Utmätningar, momsuttaxeringar och lönebonus
+#### [Ställ in utmätningar och momsuttaxeringar](localizations/noam-usa-garnishment-tax-levy-set-up-tasks.md)
+#### [Anmäl arbetare i utmätningar och momsuttaxeringar](localizations/noam-usa-garnishment-tax-levy-enrollment-tasks.md)
+#### [Ställ in bonusinkomster](localizations/noam-usa-premium-earning-setup-tasks.md)
+#### [Vanliga frågor om utmätningar, momsuttaxeringar och administrativa avgifter](localizations/noam-usa-garnishment-tax-levy-administrative-fees.md)
+### Lönebearbetningsuppgifter
+#### [Generera inkomster](localizations/noam-usa-earnings-generation-process.md)
+#### [Utfärda betalningar till arbetstagare](localizations/noam-usa-issue-worker-payments.md)
+#### [Bokför lön och generera leverantörsfakturor](localizations/noam-usa-post-payroll-generate-vendor-invoices.md)
+#### [Vanliga frågor om löneutdrag och betalningsgenerering](localizations/noam-usa-pay-statements-payment-generation-process.md)
+### Slutför betalningsprocessen
 #### [Bearbeta befintliga löneutbetalningar](localizations/noam-usa-existing-payroll-payments.md)
 #### [Bearbeta befintliga intäkter](localizations/noam-usa-existing-earnings.md)
-#### [Processen lön-rapporter](localizations/noam-usa-pay-statements.md)
+#### [Bearbeta löneutdrag](localizations/noam-usa-pay-statements.md)
 ### Underhåll och rapportering
-#### [Uppdaterar lönedata FAQ](localizations/noam-usa-payroll-data-updates.md)
-#### [Generera lön-rapporter](localizations/noam-usa-generate-payroll-reports.md)
+#### [Vanliga frågor om uppdatering av lönedata](localizations/noam-usa-payroll-data-updates.md)
+#### [Generera lönerapporter](localizations/noam-usa-generate-payroll-reports.md)
 

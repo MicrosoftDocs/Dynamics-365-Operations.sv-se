@@ -1,6 +1,6 @@
 ---
 title: Personal
-description: "Personal förenklar många vanliga arkiveringsaktiviteter och automatiserar ett antal processer relaterade till personal i din organisation. Den innehåller också ett ramverk för personal för att hantera tillsynsområden. Dessa områden inkluderar rekrytering och personalvård, förmånsadministration, utbildning, prestationsgranskning och ändringshantering."
+description: "Personal förenklar många vanliga arkiveringsaktiviteter och automatiserar ett antal processer relaterade till personalen i organisationen. Den innehåller också ett ramverk för personal för hantering av tillsynsområden. Dessa områden inkluderar rekrytering och personalvård, förmånsadministration, utbildning, prestationsgranskning och ändringshantering."
 author: rschloma
 manager: AnnBe
 ms.date: 04/04/2017
@@ -29,37 +29,37 @@ ms.lasthandoff: 04/12/2017
 
 [!include[banner](includes/banner.md)]
 
-Personal förenklar många vanliga arkiveringsaktiviteter och automatiserar ett antal processer relaterade till personal i din organisation. Den innehåller också ett ramverk för personal för att hantera tillsynsområden. Dessa områden inkluderar rekrytering och personalvård, förmånsadministration, utbildning, prestationsgranskning och ändringshantering.
+Personal förenklar många vanliga arkiveringsaktiviteter och automatiserar ett antal processer relaterade till personalen i organisationen. Den innehåller också ett ramverk för personal för hantering av tillsynsområden. Dessa områden inkluderar rekrytering och personalvård, förmånsadministration, utbildning, prestationsgranskning och ändringshantering.
 
-Du kan använda Personal när du slutför dessa uppgifter:
+Personal går att använda till att slutföra följande uppgifter:
 
 > + Administrera organisationsstrukturer.
-> + Underhålla uttömmande information om arbetstagare från anställningsdag till pension.
-> + Definiera och administrera förmånsplaner, anmäla arbetstagare till dem, tilldela medförsäkringsskydd och ange förmånsmottagare.
+> + Underhålla omfattande information om arbetare från anställningsdag till pension.
+> + Definiera och administrera förmånsplaner, anmäla arbetare, tilldela medförsäkringsskydd och ange förmånsmottagare.
 > + Upprätta och övervaka frånvaropolicyer.
-> + Genomföra och spåra profilbaserad tidshantering och generera information om lön för export till ett lönesystem.
-> + Hantera arbetstagarnas kompetenser.
-> + Granska prestanda och implementera mål för arbetstagare.
+> + Genomföra och spåra profilbaserad tidshantering och generera lömeinformation för export till ett lönesystem.
+> + Hantera arbetarnas kompetenser.
+> + Granska prestanda och implementera mål för arbetare.
 > + Ställa in, leverera och analysera kurser som innehåller agendor, sessioner och spårningar.
-> + Rekrytera arbetstagare och spåra sökanden.
+> + Rekrytera arbetare och spåra sökande.
 
-<a name="develop-a-human-resources-strategy"></a>Utveckla en strategi för personal
+<a name="develop-a-human-resources-strategy"></a>Utveckla en personalstrategi
 ---------------------------------------------------------
 
-När du arbetar med personal ska du bestämma hur du ska struktureras för organisationen, med hjälp av element, till exempel avdelningar, jobb och befattningar. Dessa är de grundläggande elementen som ska konfigureras under personal, t.ex. Enskilda medarbetare som innehar befattningar som är kopplade till jobb.
+När du arbetar med personal bestämmer du hur organisationen struktureras med hjälp av element, till exempel avdelningar, jobb och befattningar. De är de grundläggande elementen som konfigureras under Personal. Enskilda medarbetare tilldelas till befattningar som är associerade med jobb.
 
--   [Organisera personalen med avdelningar, jobb och befattningar](departments-jobs-positions.md)
--   [Ställa in företagsspecifika HR parametrar](set-up-company-specific-hr-parameters.md)
--   [Ställa in HR parametrar över juridiska personer](set-up-hr-parameters-across-legal-entities.md) 
+-   [Organisera arbetsstyrkan med avdelningar, jobb och befattningar](departments-jobs-positions.md)
+-   [Ställa in företagsspecifika personalparametrar](set-up-company-specific-hr-parameters.md)
+-   [Ställa in personalparametrar bland juridiska personer](set-up-hr-parameters-across-legal-entities.md) 
 
 ## <a name="recruit-hire-and-motivate-employees"></a>Rekrytera, anställa och motivera medarbetare
 
-Rekryteringsprojekt hanterar innehåll som används i annonser om lediga befattningar och kan hjälpa dig att hantera jobbansökningar. Du kan använda dem för att följa upp svar på jobbannonser för ett visst rekryteringsprojekt eller specifika sökande och uppdatera statusen på lediga befattningar. Du kan också anställa en sökande eller hantera "massanställningsprojekt" som gör det lättare att anställa flera arbetstagare för att täcka olika säsongsbetonade behov.
+Rekryteringsprojekt hanterar innehåll som används i annonser om lediga befattningar och hjälper dig att hantera jobbansökningar. Det går att använda till att följa upp svar på jobbannonser för ett visst rekryteringsprojekt eller specifika sökande och uppdatera status för lediga befattningar. Det år även att anställa enstaka sökande eller hantera "massanställningsprojekt" som gör det lättare att anställa flera arbetare för att täcka säsongsbetonade behov.
 
--   [Manage a recruiting process](manage-recruiting-process.md)
--   [Mass hire projects](mass-hire-projects.md) 
+-   [Hantera en rekryteringsprocess](manage-recruiting-process.md)
+-   [Massanställningsprojekt](mass-hire-projects.md) 
 
-När du har anställt personal kan du sätta upp planer för att effektivt och rättvist hantera såväl kompensation som att hantera objekt såsom datorer eller telefoner som organisationen förser personalen med. Du kan skapa fasta och variabla kompensationsplaner samt definiera regler som gäller den kompensationsplan som uppfyller kriterierna för planen.
+När du har anställt personal kan du skapa planer som effektivt och rättvist hanterar såväl kompensation som objekt, såsom datorer eller telefoner som organisationen förser personalen med. Det går att skapa fasta och variabla kompensationsplaner samt definiera regler som använder kompensationsplanen som uppfyller villkoren för planen.
 
 -   [Kompensationsplaner](compensation-plans.md)
 -   [Skapa planer för fast kompensation](create-fixed-compensation-plans.md)
@@ -67,35 +67,35 @@ När du har anställt personal kan du sätta upp planer för att effektivt och r
 
 ## <a name="develop-and-train-employees"></a>Utveckla och utbilda medarbetare
 
-För att nå målen karriär medan måste du leverera affärskritiska anställda kan ställa in mål, skapa prestationsgranskningar och spåra kommentarer till hjälper anställda att utveckla nödvändiga färdigheter, kan du även ställa in lärare kurstyper, kurser, kursbeskrivningar, agendor, spårningar och sessioner innan du vill tilldela en instruktör till en kurs eller registrera någon för en kurs. Instruktörer måste redan finnas som anställda, sökande eller kontakter.
+För att hjälpa anställda att nå karriärmålen och samtidigt uppfylla viktiga affärsbehov går det att sätta upp mål, skapa prestationsgranskningar och spåra kommentarer. För att hjälpa anställda att skaffa nödvändiga kompetenser, går det även att ställa in lärare, kurstyper, kurser, kursbeskrivningar, agendor, spårningar och sessioner innan du tilldelar en lärare till en kurs eller registrerar någon på en kurs. Lärare måste redan finnas som anställda, sökande eller kontakter.
 
 -   [Prestandahantering](performance-management-overview.md)
--   [Justera Personal-kompetenser och affärsbehov](skills.md)
--   [Administer training through courses](courses.md)
+-   [Justera personalens kompetenser och affärsbehov](skills.md)
+-   [Administrera utbildning genom kurser](courses.md)
 
 ## <a name="create-and-maintain-benefits"></a>Skapa och underhålla förmåner
 
-Utöver att kompensera din personal i form av löner och bonusar kan du utforma ett förmånsprogram där exempelvis sjuk- eller pensionsförsäkring ingår. Du kan också hantera förmåner såsom låneprogram, där företaget lånar ut objekt såsom datorer eller telefoner till sina anställda.
+Utöver att kompensera din personal i form av löner och bonusar går det att utforma ett förmånsprogram där exempelvis sjuk- eller pensionsförsäkring ingår. Det går även att hantera förmåner såsom låneprogram, där företaget lånar ut objekt såsom datorer eller telefoner till sina anställda.
 
--   [Hantera ett program för förmånen](manage-benefit-program.md)
--   [Benefit eligibility policies](benefit-eligibility-policies.md)
--   [Manage items lent to workers](loan-items.md)
+-   [Hantera ett förmånsprogram](manage-benefit-program.md)
+-   [Policyer för förmånsberättigande](benefit-eligibility-policies.md)
+-   [Hantera artiklar utlånade till arbetare](loan-items.md)
 
 ## <a name="maintain-workplace-safety-and-compliance"></a>Underhålla arbetsplatssäkerhet och efterlevnad
 
-Med hjälp av Microsoft Dynamics AX kan du upprätthålla en säker arbetsmiljö överensstämmer med tillämpliga lagar, inklusive exempelvis Americans with Disabilities Act eller INS-lagstiftning. Du kan till exempelhantera de fysiska krav för specifika jobb samt förfrågningar för anpassningar som kan hjälpa organisationen att optimera arbetsstyrkans kompetenser.
+Med Microsoft Dynamics AX går det att upprätthålla en säker arbetsmiljö som överensstämmer med gällande lagar, inklusive Americans with Disabilities Act eller INS-lagstiftning. Det går till exempel att hantera de fysiska kraven för specifika jobb samt spåra förfrågningar för anpassningar som hjälper organisationen att optimera arbetsstyrkans kompetenser.
 
--   [Kontroll av form I-9 anställning](localizations/noam-usa-form-i-9-verification.md)
+-   [Verifiering av I–9-anställningsformulär](localizations/noam-usa-form-i-9-verification.md)
 -   [Efterleva Americans with Disabilities Act](localizations/noam-usa-comply-ada.md)
 
-## <a name="gather-information-using-questionnaires"></a>Samla information med hjälp av enkäter
+## <a name="gather-information-using-questionnaires"></a>Samla information med enkäter
 
-Du kan utforma och dela ut enkäter för att samla information som kan användas för olika ändamål. Med hjälp av funktionen Enkät kan du utforma och skapa enkäter. När en enkät är klar kan du distribuera den brett eller till en viss svarsgrupp. När de svarande lämnar in sina svar kan du granska och analysera resultaten.
+Det går att utforma och dela ut enkäter för att samla in information används för olika ändamål. Funktionen Enkät gör det möjligt att utforma och skapa enkäter. När en enkät är klar går den att distribuera till alla eller till en viss svarsgrupp. När de svarande lämnar in svaren går resultaten att granska och analysera.
 
--   [Questionnaires](questionnaires.md)
--   [Design a questionnaire](design-questionnaires.md)
--   [Distribute and complete a questionnaire](distribute-questionnaires.md)
--   [View and evaluate the results of a questionnaire](evaluate-questionnaire-results.md)
+-   [Enkäter](questionnaires.md)
+-   [Utforma en enkät](design-questionnaires.md)
+-   [Distribuera och slutföra en enkät](distribute-questionnaires.md)
+-   [Visa och utvärdera resultaten av en enkät](evaluate-questionnaire-results.md)
 
 
 

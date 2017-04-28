@@ -1,6 +1,6 @@
 ---
-title: Startsida
-description: "Startsida för Dynamics 365 för operationer – Retail"
+title: Startsidan Butik
+description: "Startsida för Dynamics 365 for Operations – Retail"
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -25,71 +25,71 @@ ms.lasthandoff: 04/12/2017
 
 ---
 
-# <a name="retail-home-page"></a>Startsida
+# <a name="retail-home-page"></a>Startsidan Butik
 
 [!include[banner](includes/banner.md)]
 
-Dynamics 365 för operationer – Retail ger en fullständig handlar erfarenhet av en sömlös och skilja omni kanal lösning som är modern mobila och globala. Slutpunkt till slutpunkt funktioner, från modern mittpunkt programvarulösningar (PO) för försäljning, butiken operationer, säljfrämjande åtgärder, e-handel, ett Callcenter, marknadsföring och kundservice, supply chain ekonomi och m kan distribueras på samma sätt som passar bäst för din verksamhet.
+Dynamics 365 for Operations – Retail ger en fullständig shoppingupplevelse med en sömlös och särskiljande flerkanalalösning som är modern, mobil och global. Slutpunkt till slutpunkt-funktioner, från moderna kassaprogramlösningar, butiksdrift, e-handel, kundtjänst, marknadsföring och kundservice till leveranskedja, finans med mera, som går att distribuera på ett sätt som passar bäst för din verksamhet.
 
-Den här sidan hänvisar till resurser som hjälper dig att använda Microsoft Dynamics 365 för operationer - butik effektivare. Välj ett funktionsområde som du vill veta mer om den vänstra fönsterrutan. 
+Den här sidan hänvisar till resurser som hjälper dig att använda Microsoft Dynamics 365 for Operations - Retail mer effektivt. Välj ett funktionsområde som du vill veta mer om i det vänstra fönstret. 
 
-## <a name="set-up-retail-channels"></a>Ställ in återförsäljare
-När du lägger upp din erfarenhet av Retail ska du bestämma så här definierar och konfigurerar du lagringsplatsen bankkontor och andra (kallas *butik* i Dynamics 365 för operationer) och onlinebutik operationer. 
+## <a name="set-up-retail-channels"></a>Ställ in butikskanaler
+När du ställer in butiken bestämmer du hur du definierar och konfigurerar den fysiska butiken (kallad *butik* i Dynamics 365 for Operations) och onlinebutiken. 
 
-Varje butik kan ha en egen betalningsmetoder, prisgrupper, POS lösningar, intäktskonton, utgiftskonton och personal. När du har skapat din återförsäljare kan du tilldela önskad butiken för produkterna. Du tilldelar också medarbetare, register och kunder till butiken. Slutligen lägger du till den nya butiken i en organisationshierarki.
+Varje butik kan ha egna betalningsmetoder, prisgrupper, kassalösningar, intäktskonton, utgiftskonton och egen personal. När du har skapat butiken tilldelar du produkterna som du vill ha i sortimentet. Du tilldelar också medarbetare, kassor och kunder till butiken. Slutligen lägger du till den nya butiken i en organisationshierarki.
 
-När du skapar online-butik måste du ställa in komponenter som leveransmetoder, betalningsmetoder, attribut och sortiment. Du kan också definiera priser, rabatter, erbjudanden och leverans termer som är specifika för onlinebutiken.
+När du skapar onlinebutiken måste du ställa in komponenter såsom leveransmetoder, betalningsmetoder, attribut och sortiment. Det går även att definiera priser, rabatter, erbjudanden och leveransvillkor som är specifika för onlinebutiken.
 
--   [Definiera återförsäljare](define-maintain-retail-channels.md)
--   [Online store overview](online-stores.md)
+-   [Definiera butikskanaler](define-maintain-retail-channels.md)
+-   [Översikt över onlinebutik](online-stores.md)
 
-## <a name="set-up-a-call-center"></a>Ställa in en kundtjänst
-Du kan ställa in ett Callcenter som en typ av kanal (butik). I en kundtjänst tar anställda emot order från kunder per telefon och skapar försäljningsorder. Du kan ställa in en försäljningsorder innehåller, hur priser kommer att kontrolleras och vilken information om kunder, produkter och priser kan användas som hjälper dina medarbetare att ta emot order och hantera kundtjänst under uppfyllandet av orderprocessen. För kontoren, kan du också skapa användarna betalningsmetoder, prisgrupper, ekonomiska dimensioner och leveranssätt.
+## <a name="set-up-a-call-center"></a>Ställa in kundtjänst
+Det går att ställa in kundtjänst som en typ av butikskanal. I kundtjänsten tar anställda emot beställningar från kunder per telefon och skapar försäljningsorder. Det går att ställa in vad en försäljningsorder innehåller, hur priser kontrolleras och vilken information om kunder, produkter och priser som finns tillgänglig för att hjälpa medarbetare att ta emot beställningar och hantera kundtjänst under orderuppfyllandet. För varje kundtjänst går det även att skapa användare, betalningsmetoder, prisgrupper, ekonomiska dimensioner och leveranssätt.
 
--   [Call center functionality](call-center-functionality.md)
--   [Create call center catalogs](create-call-center-catalogs.md)
+-   [Call center-funktioner](call-center-functionality.md)
+-   [Skapa kundtjänstkataloger](create-call-center-catalogs.md)
 
-## <a name="define-your-pos-and-mpos-solutions"></a>Definiera dina POS och MOPS lösningar
-Retail POS (MOPS Modern) är en kassan app för datorer, telefoner och Tablet-datorer. Försäljningspersonal kan bearbeta försäljningstransaktioner väljs kunden beställer dagliga operationer och lagerhantering med mobila enheter var som helst i butiken och PC-baserade register. Molnet POS är ett webbläsarbaserat POS. 
+## <a name="define-your-pos-and-mpos-solutions"></a>Definiera kassa- och MPOS-lösningar
+Retail Modern POS (MPOS) är en kassaapp för datorer, telefoner och surfplattor. Försäljningspersonal kan bearbeta försäljningstransaktioner, kundorder och utföra dagliga rutiner och lagerhantering med mobila enheter var som helst i butiken såväl som datorbaserade kassor. Molnbaserad kassa är en webbläsarbaserad kassa. 
 
-Flera komponenter som du kan ställa in för att definiera relationer mellan en butik, kassor eller kanaler i butiken, och använda retail kringutrustningen som de register eller kanaler att bearbeta transaktioner. Du kan också definiera egenskaperna för en viss instans av KASSAN, inklusive inställningar för retail-kringutrustning som ska användas vid kassan och butiken som kassan har mappats till den visuella upplevelsen för användare som loggar in som registrerar eller maskinvaruprofil.
+Det finns flera komponenter att ställa in för att definiera relationer mellan en butik, kassaregistren eller kanalerna i butiken och butikskringutrustningen som kassorna eller kanalerna använder till att bearbeta transaktioner. Det går även att definiera egenskaperna för en viss kassainstans, inklusive inställningar för butikskringutrustning som användas vid kassan, butiken som kassan är mappad till och den visuella upplevelsen för användaren som loggar in på den kassan.
 
--   [Definiera och underhålla kanal klienter, register och stationer för maskinvara](define-maintain-channel-clients-registers-hw-stations.md)
+-   [Definiera och underhålla kanalklienter, kassor och maskinvarustationer](define-maintain-channel-clients-registers-hw-stations.md)
 -   [Konfigurera och installera MOPS](retail-modern-pos-device-activation.md)
--   [Offline funktionsprofil för kassa](pos-offline-functionality.md)
+-   [Offlinefunktioner för kassa](pos-offline-functionality.md)
 
-## <a name="set-up-a-customer-loyalty-program"></a>Ställa in ett bonusprogram kund
-Du kan ställa in företagets partnerprogram så att kunder poäng baserat på särskilda kriterier och poäng kan beräknas på olika sätt. Företagets partnerprogram kan vara enkla eller komplexa och gäller i hela din återförsäljare juridiska personer.
--   [Ställa in ett bonusprogram kund](set-up-customer-loyalty-program.md)
+## <a name="set-up-a-customer-loyalty-program"></a>Ställa in ett kundbonusprogram
+Det går att ställa in företagets bonusprogram så att kunder tjänar poäng baserat på särskilda villkor och poängen går att beräkna på olika sätt. Bonusprogrammet kan vara enkelt eller komplicerat och gälla alla juridiska personer i alla butikskanaler.
+-   [Ställa in ett kundbonusprogram](set-up-customer-loyalty-program.md)
 
-## <a name="set-up-discounts-and-price-adjustments"></a>Ställ in rabatter och prisjusteringar
-Du kan justera priset för produkter och kan också ställa in rabatter som används på en artikel eller en transaktion i kassa, i ett call center försäljningsorder eller order online. 
--   [Price adjustments and discounts](price-adjustments-discounts.md)
--   [Define channel-specific discounts](define-channel-specific-discounts.md)
+## <a name="set-up-discounts-and-price-adjustments"></a>Ställa in rabatter och prisjusteringar
+Det går att justera priset på produkter och även ställa in rabatter som används på en radartikel eller en transaktion i kassan, en försäljningsorder i kundtjänst eller på en beställning online. 
+-   [Prisjusteringar och rabatter](price-adjustments-discounts.md)
+-   [Definiera kanalspecifika rabatter](define-channel-specific-discounts.md)
 -   [Avgöra optimal kombination av överlappande rabatter](optimal-combination-overlapping-discounts.md)
 
 ## <a name="set-up-retail-products"></a>Ställ in butiksprodukter
-Innan du kan du erbjuda produkter som säljs i din återförsäljare måste skapa och konfigurera produkter i Dynamics 365 för operationer. Du kan skapa produkterna, definiera produktegenskaperna och attributen och tilldela produkterna till butikskategorihierarkier. Gör att produkterna tillgängliga för retail-kanalerna och lägga till dem i ett aktivt sortiment ska du släpper produkter för juridiska personer som de är tillgängliga.
--   [Set up retail products](set-up-retail-products.md)
+Innan det går att erbjuda produkter att sälja i butikskanalerna måste du skapa och konfigurera produkterna i Dynamics 365 for Operations. Det går att skapa produkterna, definiera produktegenskaperna och attributen och tilldela produkterna till butikskategorihierarkier. Gör produkterna tillgängliga i butikskanalerna och lägg till dem i ett aktivt sortiment och släpp sedan produkterna till juridiska personer där de finns tillgängliga.
+-   [Ställ in butiksprodukter](set-up-retail-products.md)
 
 ## <a name="monitor-and-analyze-performance"></a>Övervaka och analysera prestanda
-Med Dynamics 365 för operationer kan analysera du butiken prestanda, kund- och lönsamhet, försäljningstrender med mera.
--   [Assess customer and product profitability](assess-customer-product-profitability.md)
--   [Analyze store performance](store-performance-information.md)
+Med Dynamics 365 for Operations går det att analysera butiksresultat, kund- och produktlönsamhet, försäljningstrender med mera.
+-   [Utvärdera lönsamhet för kunder och produkter](assess-customer-product-profitability.md)
+-   [Analysera butiksresultat](store-performance-information.md)
 
-## <a name="customize-and-administer-retail-environments"></a>Anpassa och administrera Retail-miljöer
-Om du har blivit ombedd att anpassa din miljö, eller om du är har behörighet att distribuera och underhålla systemet, kolla utvecklaren och systemet administratör innehåll avser Retail samt allmännare innehållet för Microsoft Dynamics 365 för operationer. 
--   [Dynamics 365 - för Retail för IT-proffs och utvecklare](dev-itpro/dev-retail-home-page.md)
--   [Microsoft Dynamics 365 för operationer för utvecklare och IT-proffs](/dynamics365/operations/dev-itpro/dev-tools/developer-home-page)
+## <a name="customize-and-administer-retail-environments"></a>Anpassa och administrera butiksmiljöer
+Om du har blivit ombedd att anpassa din miljö eller om du har uppgiften att distribuera och underhålla systemet, läs det specifika innehållet för utvecklare och systemadministratörer för butik, samt det allmänna innehållet för Microsoft Dynamics 365 for Operations. 
+-   [Dynamics 365 for Operations - Retail för IT-personal och utvecklare](dev-itpro/dev-retail-home-page.md)
+-   [Microsoft Dynamics 365 for Operations för IT-personal och utvecklare](/dynamics365/operations/dev-itpro/dev-tools/developer-home-page)
 
 ## <a name="additional-resources"></a>Ytterligare resurser
-### <a name="whats-new-and-in-development"></a>Vad är nytt och utveckling
-Gå till den <a href="https://roadmap.dynamics.com/">Dynamics 365 översikt</a> att se vilka nya funktioner publiceras och nya funktioner är under utveckling. 
+### <a name="whats-new-and-in-development"></a>Vad är nytt och under utveckling
+Öppna <a href="https://roadmap.dynamics.com/">översikten till Dynamics 365</a> för att visa vilka nya funktioner som lanseras och nya funktioner under utveckling. 
 
 ### <a name="blogs"></a>Bloggar
-Du hittar yttranden, nyheter och annan information om Microsoft Dynamics 365 för - butik och andra lösningar på de <a href="https://community.dynamics.com/b/msftdynamicsblog">blogg Microsoft Dynamics 365</a>.
+Det finns åsikter, nyheter och annan information om Microsoft Dynamics 365 for Operations - Retail och andra lösningar i <a href="https://community.dynamics.com/b/msftdynamicsblog">bloggen Microsoft Dynamics 365</a>.
 
-Det finns många avsnitt om Retail på den <a href="https://blogs.msdn.microsoft.com/dax/">Teamblogg för Microsoft Dynamics AX-produkt</a>. Vissa av dessa poster har skapats för den tidigare versionen av Dynamics 365 för operationer, men samma koncept gäller fortfarande liknar procedurerna i den här versionen.
+Det finns många ämnen om Butik i <a href="https://blogs.msdn.microsoft.com/dax/">Microsoft Dynamics AX produktteamblogg</a>. En del av inläggen skrevs för den föregående versionen av Dynamics 365 for Operations, men samma begrepp gäller fortfarande och procedurerna är liknande i den aktuella versionen.
 
-Den <a href="https://community.dynamics.com/partner/b/operationspartnercommunityblog">blogg för Microsoft Dynamics operationer Partner gemenskapen</a> ger Microsoft Dynamics-partner med hänvisningar till mer information om vad som är nytt och trending i MB operationer.
+<a href="https://community.dynamics.com/partner/b/operationspartnercommunityblog">bloggen Microsoft Dynamics Operations Partner Community</a> ger Microsoft Dynamics Partners en resurs med mer information om vad som är nytt och trendar i MBS Operations.
 

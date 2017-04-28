@@ -1,6 +1,6 @@
 ---
-title: "Startsida för ekonomisk hantering"
-description: "Det här avsnittet innehåller en lista över hjälpavsnitt och andra resurser för de ekonomiska hanteringsfunktionerna i Microsoft Dynamics 365 for Operations."
+title: Startsidan Ekonomisk styrning
+description: "Det här ämnet innehåller en lista med hjälpavsnitt och andra resurser för de ekonomiska styrningsfunktionerna i Microsoft Dynamics 365 for Operations."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -24,22 +24,22 @@ ms.lasthandoff: 04/12/2017
 
 ---
 
-# <a name="financial-management-home-page"></a>Startsida för ekonomisk hantering
+# <a name="financial-management-home-page"></a>Startsidan Ekonomisk styrning
 
 [!include[banner](includes/banner.md)]
 
-Det här avsnittet innehåller en lista över hjälpavsnitt och andra resurser för de ekonomiska hanteringsfunktionerna i Microsoft Dynamics 365 for Operations. 
+Det här ämnet innehåller en lista med hjälpavsnitt och andra resurser för de ekonomiska styrningsfunktionerna i Microsoft Dynamics 365 for Operations. 
 
-Välj ett funktionsområde för att få veta mer om det.
-- [Accounts payable](accounts-payable\accounts-payable.md) 
-- [Accounts receivable](accounts-receivable\accounts-receivable.md) 
-- [Cash and bank management](cash-bank-management\cash-bank-management.md)
-- [Cost accounting](cost-accounting\cost-accounting-home-page.md)
-- [Fixed assets](fixed-assets\fixed-assets.md)
-- [General ledger](general-ledger\general-ledger.md) 
-- [Project management](project-management\overview-project-management-accounting.md)
-- [Public sector](public-sector\public-sector-functionality.md) 
-- [Budgeting](budgeting\budgeting-overview.md) 
+Välj ett funktionsområde för att läsa mer om det.
+- [Leverantörsreskontra](accounts-payable\accounts-payable.md) 
+- [Kundreskontra](accounts-receivable\accounts-receivable.md) 
+- [Kassa- och bankhantering](cash-bank-management\cash-bank-management.md)
+- [Kostnadsredovisning](cost-accounting\cost-accounting-home-page.md)
+- [Anläggningstillgångar](fixed-assets\fixed-assets.md)
+- [Huvudbok](general-ledger\general-ledger.md) 
+- [Projekthantering](project-management\overview-project-management-accounting.md)
+- [Offentlig sektor](public-sector\public-sector-functionality.md) 
+- [Budgetering](budgeting\budgeting-overview.md) 
 
 
 
