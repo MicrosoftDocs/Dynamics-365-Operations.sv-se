@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 00f022da597b1de2454e93123de31731c6a65962
-ms.openlocfilehash: 03d08f2cf75a8307bc465464917d86efc69be46f
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: dd17842365e357ecb5cb6034ed8878fcd60be5fc
+ms.openlocfilehash: 1afa291099362c31a7a2c972cc45b19bfc3897bf
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/26/2017
 
 
 ---
@@ -32,7 +33,7 @@ ms.lasthandoff: 03/31/2017
 
 Använd Kundreskontra när du vill spåra kundfakturor och inkommande betalningar. 
 
-Du kan skapa kundfakturor utifrån försäljningsordrar eller följesedlar. Du kan också ange fritextfakturor som inte är relaterade till försäljningsorder. Du kan ta emot betalningar, med flera olika betalningstyper. Dessa inkluderar växlar, kontanter, checkar, kreditkort och elektroniska betalningar. Om din organisation innehåller flera juridiska personer, kan du använda centraliserade betalningar för att registrera betalningar i en enda juridisk person å andra juridiska personers vägnar.
+Det går att skapa kundfakturor baserade på försäljningsorder eller följesedlar. Det går även att ange fritextfakturor som inte är relaterade till försäljningsorder. Det går att ta emot betalningar med flera olika betalningstyper. Dessa inkluderar växlar, kontanter, checkar, kreditkort och elektroniska betalningar. Om organisationen består av flera juridiska personer går det att använda centraliserade betalningar för att registrera betalningar för en juridisk person å andra juridiska personers vägnar.
 
 
 

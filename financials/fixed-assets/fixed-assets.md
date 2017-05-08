@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 00f022da597b1de2454e93123de31731c6a65962
-ms.openlocfilehash: cdcf247f33a35ebae4af4ff22c10083642e9f97a
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: dd17842365e357ecb5cb6034ed8878fcd60be5fc
+ms.openlocfilehash: 9d2c591b4a3f30ac9a3a842161ee7aa0e6c1db35
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/26/2017
 
 
 ---
@@ -32,7 +33,7 @@ ms.lasthandoff: 03/31/2017
 
 Anläggningstillgångar är artiklar av värde, t.ex. fastigheter, fordon, mark eller utrustning, som ägs av en privatperson eller en organisation. 
 
-Du kan ställa in och ange anskaffningsinformation för anläggningstillgångsposter och sedan hantera dem genom att skriva av dem och ställa in en kapitaliseringströskel för att fastställa avskrivningen. Du kan beräkna justeringar för anläggningstillgångarna och även avyttra dem. När du använder Redovisning tillsammans med Anläggningstillgångar kan du visa det aktuella värdet för alla anläggningstillgångar. Sättet som anläggningstillgångar hanteras på måste motsvara både internationella redovisningsstandarder och redovisningslagar i varje land/region. Kraven kan omfatta regler för att registrera anskaffnings- och avyttringstransaktioner, avskrivningar, livstid samt uppskrivningar och nedskrivningar av anläggningstillgångar. Funktionen för anläggningstillgångar införlivar flera av dessa standarder och regler.
+Det går att ställa in och ange anskaffningsinformation för anläggningstillgångar och sedan hantera dem genom att skriva av dem och ställa in en kapitaliseringströskel för att bestämma avskrivningen. Det går att beräkna justeringar för anläggningstillgångarna och även avyttra dem. När du använder Redovisning tillsammans med Anläggningstillgångar går det att visa anläggningstillgångarnas aktuella värde. Sättet på vilket anläggningstillgångar hanteras måste motsvara både internationella redovisningsstandarder och redovisningslagarna i varje land/region. Kraven kan omfatta regler för att registrera anskaffnings- och avyttringstransaktioner, avskrivningar, livstid samt uppskrivningar och nedskrivningar av anläggningstillgångar. Funktionen Anläggningstillgångar införlivar flera av dessa standarder och regler.
 
 
 

@@ -42,6 +42,7 @@
 ## [Redigera faktura-ID för försäljningsorder](emea-edit-invoice-id-sales-orders.md)
 ## [Mottagningskvitton för EU](emea-entry-certificates.md)
 ## [EU-säljlistrapportering](emea-eu-sales-list.md)
+## [Valutakursjusteringar](emea-exchange-rate-adjustments.md)
 ## [Filformat för betalningsmetoder](emea-select-file-formats-for-the-method-of-payments.md)
 ## [Avyttring av anläggningstillgångar för Estland och Litauen](emea-credit-note-reverse-fixed-asset-sale.md)
 ## [Intrastat](emea-intrastat.md)
@@ -56,18 +57,19 @@
 ## [Översikt över SEPA-kreditöverföring](../accounts-payable/sepa-credit-transfer.md)
 ## [Översikt över SEPA-autogiro](../accounts-receivable/sepa-direct-debit-overview.md)
 ## [Ställ in undertecknare för utskriftsformulär](emea-set-up-signers-for-printing-forms.md)
-## [Dela perioder i periodiska journaler](emea-create-post-periodic-journals.md)
-## [Uppdatera hur belopp visas i rapporter och dokument](emea-amount-printing-forms.md)
-## [VAT-rapportering](emea-vat-reporting.md)
+## [Momsvalutakurser](emea-vat-exchange-rate.md)
 ## [Visa transaktioner på kvittning](emea-transactions-settlement-form.md)
 ## Österrike
+### [Halvårsavskrivning](emea-aut-half-year-depreciation.md)
 ### [Avgifter för förpackningsmaterial](emea-aut-packing-material-fee-calculation.md)
 ### [Momsutdrag](emea-aut-vat-statement-details.md)
 ## Belgien
 ### [CODA-bankutdrag](emea-bel-coda-bank-statement-import.md)
+### [Intervat momsdeklaration](emea-bel-intervat-tax-declaration.md)
 ### [Inställning av PRODCOM-rapport](emea-bel-prodcom-report.md)
 
 ## Tjeckien
+### [Kassarabatt på kreditfaktura](emea-cze-credit-note-cash-discount.md)
 ### [Avrundning av avskrivning](emea-cze-depreciation-rounding.md)
 ### [Avskrivningsuppskjutning](emea-cze-depreciation-suspension-holidays.md)
 ### [Avskrivning av anläggningstillgångar](emea-cze-fixed-assets-depreciation.md)
@@ -94,7 +96,9 @@
 ### [Journallisterapport](emea-deu-journal-list-report.md)
 ### [Skriv ut en separat etikett för kreditnotor från försäljning](emea-deu-print-separate-label-credit-memo-originating-sales.md)
 ## Ungern
+### [Avskrivningsmetoder för anläggningstillgångar](emea-hun-fixed-assets-depreciation-methods.md)    
 ### [Fasta lågkostnadstillgångar](emea-hun-low-cost-fixed-assets.md)
+### [Flytta en anläggningstillgång till lager](emea-hun-fixed-asset-to-inventory.md)
 ## Italien
 ### [Momsutdragsinformation](emea-ita-vat-statements-details.md)
 ### [Rapport med svarta listan](emea-ita-black-list-report.md)
@@ -103,6 +107,7 @@
 ### [Verifieringsdatum för följesedel för fakturor](emea-ita-packing-slip-date-verification-on-invoice.md)
 ### [Momsböcker](emea-ita-fiscal-books.md)
 ### [Delbetalning av fakturor utfärdade till offentlig administration](emea-ita-split-payment-invoices-issued-public-administration.md)
+### [Källskatt](emea-ita-withholding tax.md)
 ## Lettland
 ### [Bokföring av anläggningstillgångar](emea-lva-fixed-assets-accounting.md)
 ### [Ändringsspårning av plats för anläggningstillgångar](emea-lva-fixed-assets-location-fields-change.md)
@@ -119,12 +124,17 @@
 ### [Numrering av försäljningsfakturadubbletter](emea-pol-sales-invoice-duplicates-numbering.md)
 ### [Avskrivning av anläggningstillgång](emea-pol-fixed-assets-depreciation.md)
 ### [Funktionstillägget Avyttrande av anläggningstillgång](emea-pol-fixed-asset-disposal-functionality-extension.md)
+### [Returförpackningar](emea-pol-returnable-packages.md)
+### [Momsrapporter](emea-pol-sales-tax-reports.md)
+### [Standardverifieringsfil (SAF-T)](emea-pol-standard-audit-file-saf.md)
 ### [Omsättnings- och saldoutdrag](emea-pol-turnover-balances-statement.md)
 ## Spanien
-### [Alternativ för växel](emea-esp-bill-of-exchange-options.md)
 ### [Tillämpa kassarabatt på fakturan](emea-esp-cash-discount-applied-invoice.md)
+### [Alternativ för växel](emea-esp-bill-of-exchange-options.md)
+### [Villkorsmoms](emea-esp-conditional-sales-tax.md)
 ### [Räkenskapsdata från fakturakontot](emea-esp-fiscal-data-invoice-account.md)
 ### [Omvärderingsgrupp för anläggningstillgångar](emea-esp-fixed-asset-group-revaluation.md)
+### [Inomeuropeisk moms](emea-esp-intra-community-vat.md)
 ### [Engångskunder](emea-esp-no-one-time-customer-for-project-contracts.md)
 ### [Alternativ för skuldsedel](emea-esp-promissory-note-options.md)
 ### [Inköps- och försäljningscykler](emea-esp-sales-purchase-cycle.md)
@@ -163,3 +173,4 @@
 
 # Nordamerika
 ## [1099-rapport vid årsslut för USA](noam-usa-year-end-1099-reporting.md)
+

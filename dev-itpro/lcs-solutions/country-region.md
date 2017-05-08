@@ -17,29 +17,40 @@ ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 03f54d7cf25b928d51d7d382ec490295dcbbbefe
-ms.openlocfilehash: b77b61089c359127a7404437c29ef63a01416779
-ms.lasthandoff: 04/12/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 4a3ecb4cb643d63333666f8d5d49760caacc4e58
+ms.openlocfilehash: e14d0836ee16db4fba9ef49df9a49564aa4c0402
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/27/2017
 
 
 ---
 
 # <a name="localization-and-regulatory-features"></a>Lokaliserings- och regelfunktioner
 
-Microsoft Dynamics-365 for Operations innehåller funktioner för vissa lands-/regionspecifika regler och processer. Den här funktionen aktiveras grundad på den aktiva juridiska personens primära adress. Det här ämnet innehåller listor med resurser som lär dig mer om lands- och regionspecifika funktioner. 
+[!include[banner](../includes/banner.md)]
 
-## <a name="developer-and-isv-information"></a>Utvecklar- och ISV-information
-Följande resurser innehåller information som hjälper utvecklare och programvaruleverantörer som skapar lands-/regionspecifika anpassningar.
+
+Microsoft Dynamics 365 for Operations innehåller funktioner för länder/regioner dokumenterade i [produkttillgänglighetsguiden](http://download.microsoft.com/documents/en-us/dynamics/Microsoft%20Dynamics%20AX%20Product%20Availability%20Guide.pdf). Den här funktionen aktiveras grundad på den aktiva juridiska personens primära adress. 
+
+Det här ämnet innehåller listor med resurser som lär dig mer om lands- och regionspecifika funktioner. 
+
+## <a name="developing-localized-solutions"></a>Utveckla lokaliserade lösningar
+Följande resurser innehåller anvisningar och information som hjälper utvecklare och programvaruleverantörer som skapar lands-/regionspecifika anpassningar eller skapar en lösning för ett land Microsoft inte stöder.
 -   [Separata lokaliseringsmodeller](separate-localization-models.md)
 -   [Använd sammanhang för land/region](apply-country-context.md)
 -   [Regelcertifieringar](regulatory-certifications.md)
 -   [Klassificera lokaliseringsfunktioner](classify-localization-features.md)
 -   [Landskoder - ISO 3166](https://www.iso.org/iso-3166-country-codes.html)
 
-## <a name="localization-updates"></a>Lokaliseringsuppdateringar
+## <a name="localization-updates-and-communication"></a>Uppdateringar av lokalisering och kommunikation
 Följande resurser innehåller information om planerade och nya lokaliseringsfunktioner. 
--   [Lokaliseringsportal](https://mbs.microsoft.com/customersource/northamerica/ax/support/support-news/GFMLocalizationPortalMC)
+
+### <a name="localization-updates"></a>Lokaliseringsuppdateringar
+-   [Lokaliseringsportal](https://mbs.microsoft.com/customersource/northamerica/ax/support/support-news/GFMLocalizationPortalMC) (uppdateras en gång i veckan)
+-   [LCS-problemsökning](../lifecycle-services/issue-search-lcs.md) (uppdateras dagligen)
+
+### <a name="communication-and-alerts"></a>Kommunikation och aviseringar
 -   [Regelbevakning och meddelanden om regeluppdatering](regulatory-watch-communication.md)
 -   [Informera Microsoft om regelaviseringar för land/region och spåra status för regelfunktioner](submit-localization-alerts.md)
 
@@ -51,9 +62,17 @@ Verktyget Elektronisk rapportering (ER) gör det möjligt att konfigurera elektr
 -   [Utöka listan med funktioner för elektronisk rapportering](../analytics/general-electronic-reporting-formulas-list-extension.md)
 -   [Destinationer för elektronisk rapportering](../analytics/electronic-reporting-destinations.md)
 -   [Hämta konfigurationer för elektronisk rapportering från Lifecycle Services](../analytics/download-electronic-reporting-configuration-lcs.md)
--   [Ställ in elektronisk rapportering med Power BI](../analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md)
+-   [Konfigurera elektronisk rapportering för att hämta data till Power BI](../analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md)
 
-## <a name="countryregion-specific-help-topics"></a>Land/region-specifika hjälpavsnitt
+## <a name="task-guides"></a>Uppgiftsguider
+Uppgiftsguider finns i produktens hjälpfönster och ger en guidad genomgång av viktiga affärsprocesser. Det går att öppna en uppgiftsguide och läsa stegen i en affärsprocess eller spela upp en uppgiftsguide för att gå igenom en affärsprocess och ange data.
+
+Hitta uppgiftsguiderna genom att öppna i Microsoft Dynamics 365 for Operations och klicka på Hjälp. Uppgiftsguider som använder sidan visas i hjälpfönstret. Det går även att använda hjälpfönstret till att söka efter uppgiftsguider efter rubrik.
+
+Mer information finns i [Uppgiftsguider](/dynamics365/operations/dev-itpro/get-started/help-overview#task-guides).
+
+
+## <a name="countryregion-specific-help-topics"></a>Land-/regionspecifika hjälpavsnitt
 Följande avsnitt visar resurser efter land/region.
 
 ### <a name="australia"></a>Australien
@@ -62,17 +81,17 @@ Följande avsnitt visar resurser efter land/region.
 -   [Affärsaktivitetsrapport](/dynamics365/operations/financials/localizations/apac-aus-business-activity-statement)
 -   [Avskrivning för lågvärdespool](/dynamics365/operations/financials/localizations/apac-aus-low-value-pool-depreciation)
 
-
 ### <a name="austria"></a>Österrike
 
+-   [Halvårsavskrivning](/dynamics365/operations/financials/localizations/emea-aut-half-year-depreciation)
 -   [Avgifter för förpackningsmaterial](/dynamics365/operations/financials/localizations/emea-aut-packing-material-fee-calculation)
 -   [Momsutdrag](/dynamics365/operations/financials/localizations/emea-aut-vat-statement-details)
 
 ### <a name="belgium"></a>Belgien
 
 -   [CODA-bankutdrag](/dynamics365/operations/financials/localizations/emea-bel-coda-bank-statement-import)
+-   [Intervat momsdeklaration](/dynamics365/operations/financials/localizations/emea-bel-intervat-tax-declaration)
 -   [Inställning av PRODCOM-rapport](/dynamics365/operations/financials/localizations/emea-bel-prodcom-report)
-
 
 ### <a name="brazil"></a>Brasilien
 
@@ -93,7 +112,6 @@ Följande avsnitt visar resurser efter land/region.
 -   [Momsbetalningar](/dynamics365/operations/financials/localizations/latam-bra-tax-payments)
 -   [Skatter](/dynamics365/operations/financials/localizations/latam-bra-calculate-taxes)
 
-
 ### <a name="china"></a>Kina
 -   [Jämförelse av strukturlista](/dynamics365/operations/financials/localizations/apac-chn-bom-comparison)
 -   [Kinesiska verifikationer](/dynamics365/operations/financials/localizations/apac-chn-vouchers)
@@ -105,12 +123,14 @@ Följande avsnitt visar resurser efter land/region.
 -   [Bokför lagerhuvudkonton efter plats](/dynamics365/operations/financials/localizations/apac-chn-post-inventory-main-accounts-by-site)
 -   [Visa debet- och kreditbelopp för redovisning](/dynamics365/operations/financials/localizations/apac-chn-negative-debits-credits)
 
-
 ### <a name="the-czech-republic"></a>Tjeckien
+
+-   [Kassarabatt på kreditfaktura](/dynamics365/operations/financials/localizations/emea-cze-credit-note-cash-discount)
 -   [Avrundning av avskrivning](/dynamics365/operations/financials/localizations/emea-cze-depreciation-rounding)
--       [Halvårs avskrivning för avyttrande av anläggningstillgångar i Tjeckien](/dynamics365/operations/financials/localizations/emea-cze-half-depreciation-fixed-asset-disposal)
-    -   [Avskrivningsuppskjutning (helgdagar)](/dynamics365/operations/financials/localizations/emea-cze-depreciation-suspension-holidays)
-    -   [Avskrivningsmetoder för anläggningstillgångar i Tjeckien](/dynamics365/operations/financials/localizations/emea-cze-fixed-assets-depreciation)
+-   [Halvårs avskrivning för avyttrande av anläggningstillgångar i Tjeckien](/dynamics365/operations/financials/localizations/emea-cze-half-depreciation-fixed-asset-disposal)
+-   [Avskrivningsuppskjutning (helgdagar)](/dynamics365/operations/financials/localizations/emea-cze-depreciation-suspension-holidays)
+-   [Avskrivningsmetoder för anläggningstillgångar i Tjeckien](/dynamics365/operations/financials/localizations/emea-cze-fixed-assets-depreciation)
+
 -   [Bokför anläggningstillgången före anskaffning](/dynamics365/operations/financials/localizations/emea-pre-acquisition-acquisition-fixed-asset)
 -   [Momsutdrag för Tjeckien](/dynamics365/operations/financials/localizations/emea-cze-vat-statement-details)
 -   [Dela perioder i periodiska journaler](/dynamics365/operations/financials/localizations/emea-create-post-periodic-journals)
@@ -127,6 +147,7 @@ Följande avsnitt visar resurser efter land/region.
 -   [Redigera faktura-ID för försäljningsorder](/dynamics365/operations/financials/localizations/emea-edit-invoice-id-sales-orders)
 -   [Mottagningskvitton för EU](/dynamics365/operations/financials/localizations/emea-entry-certificates)
 -   [EU-säljlistrapportering](/dynamics365/operations/financials/localizations/emea-eu-sales-list)
+-   [Valutakursjusteringar](/dynamics365/operations/financials/localizations/emea-exchange-rate-adjustments)
 -   [Filformat för betalningsmetoder](/dynamics365/operations/financials/localizations/emea-select-file-formats-for-the-method-of-payments)
 -   [Avyttring av anläggningstillgångar för Estland och Litauen](/dynamics365/operations/financials/localizations/emea-credit-note-reverse-fixed-asset-sale)
 -   [Intrastat](/dynamics365/operations/financials/localizations/emea-intrastat)
@@ -143,11 +164,9 @@ Följande avsnitt visar resurser efter land/region.
 -   [Ställ in undertecknare för utskriftsformulär](/dynamics365/operations/financials/localizations/emea-set-up-signers-for-printing-forms)
 -   [Dela perioder i periodiska journaler](/dynamics365/operations/financials/localizations/emea-create-post-periodic-journals)
 -   [Uppdatera hur belopp visas i rapporter och dokument](/dynamics365/operations/financials/localizations/emea-amount-printing-forms)
-
+-   [Momsvalutakurser](/dynamics365/operations/financials/localizations/emea-vat-exchange-rate)
 -   [Momsrapportering för Europa](/dynamics365/operations/financials/localizations/emea-vat-reporting)
-
 -   [Visa transaktioner på kvittning](/dynamics365/operations/financials/localizations/emea-transactions-settlement-form)
-
 
 ### <a name="france"></a>Frankrike
 -   [Kronologiska faktura- och verifikationsnummer](/dynamics365/operations/financials/localizations/emea-fra-chronological-invoices-vouchers)
@@ -164,15 +183,16 @@ Följande avsnitt visar resurser efter land/region.
    -   [Titres de recette](/dynamics365/operations/financials/localizations/emea-fra-titres-de-recette-public-sector)
    -   [Betalningsreservationer för leverantörsfakturor](/dynamics365/operations/financials/localizations/emea-fra-vendor-invoice-payment-holds-public-sector)
 
-
 ### <a name="germany"></a>Tyskland
 -   [Ytterligare förvärvsavskrivning](/dynamics365/operations/financials/localizations/emea-deu-additional-acquisition-depreciation)
 -   [Tysk verifieringsfil (GDPdU/GoBD](/dynamics365/operations/financials/localizations/emea-deu-gdpdu-audit-data-export)
 -   [Tysk journallisterapport](/dynamics365/operations/financials/localizations/emea-deu-journal-list-report)
--   [Skriv ut en separat etikett för kreditnotor från försäljning (Uppgiftsguide)](/dynamics365/operations/financials/localizations/emea-deu-print-separate-label-credit-memo-originating-sales)
+-   [Skriv ut en separat etikett för kreditnotor från försäljning](/dynamics365/operations/financials/localizations/emea-deu-print-separate-label-credit-memo-originating-sales)
 
 ### <a name="hungary"></a>Ungern
 
+-   [Avskrivningsmetoder för anläggningstillgångar](/dynamics365/operations/financials/localizations/emea-hun-fixed-assets-depreciation-methods)    
+-   [Flytta en anläggningstillgång till lager](/dynamics365/operations/financials/localizations/emea-hun-fixed-asset-to-inventory)
 -   [Fasta lågkostnadstillgångar](/dynamics365/operations/financials/localizations/emea-hun-low-cost-fixed-assets)
 
 ### <a name="italy"></a>Italien
@@ -184,6 +204,7 @@ Följande avsnitt visar resurser efter land/region.
 -   [Verifieringsdatum för följesedel för fakturor i Italien](/dynamics365/operations/financials/localizations/emea-ita-packing-slip-date-verification-on-invoice)
 -   [Italienska momsböcker](/dynamics365/operations/financials/localizations/emea-ita-fiscal-books)
 -   [Delbetalning av fakturor utfärdade till offentlig administration](/dynamics365/operations/financials/localizations/emea-ita-split-payment-invoices-issued-public-administration)
+-   [Källskatt](/dynamics365/operations/financials/localizations/emea-ita-withholding tax)
 
 ### <a name="japan"></a>Japan
 
@@ -240,6 +261,9 @@ Följande avsnitt visar resurser efter land/region.
 -   [Numrering av försäljningsfakturadubbletter](/dynamics365/operations/financials/localizations/emea-pol-sales-invoice-duplicates-numbering)
 -   [Avskrivning av anläggningstillgångar](/dynamics365/operations/financials/localizations/emea-pol-fixed-assets-depreciation)
 -   [Avyttrande av anläggningstillgångar](/dynamics365/operations/financials/localizations/emea-pol-fixed-asset-disposal-functionality-extension)
+-   [Returförpackningar](/dynamics365/operations/financials/localizations/emea-pol-returnable-packages)
+-   [Momsrapporter](/dynamics365/operations/financials/localizations/emea-pol-sales-tax-reports)
+-   [Standardverifieringsfil (SAF-T)](/dynamics365/operations/financials/localizations/emea-pol-standard-audit-file-saf)
 -   [Omsättnings- och saldoutdrag](/dynamics365/operations/financials/localizations/emea-pol-turnover-balances-statement)
 
 ### <a name="saudi-arabia"></a>Saudiarabien
@@ -252,15 +276,16 @@ Följande avsnitt visar resurser efter land/region.
 
 ### <a name="spain"></a>Spanien
 
-
--   [Alternativ för spansk växel](/dynamics365/operations/financials/localizations/emea-esp-spanish-bill-of-exchange-options)
+-   [Alternativ för spansk växel](/dynamics365/operations/financials/localizations/emea-esp-bill-of-exchange-options)
 -   [Parametern kassarabatt tillämpas på fakturan](/dynamics365/operations/financials/localizations/emea-esp-cash-discount-applied-invoice)
--   [Använd räkenskapsdata från fakturakontot](/dynamics365/operations/financials/localizations/emea-esp-fiscal-data-invoice-account)
+-   [Villkorsmoms](/dynamics365/operations/financials/localizations/emea-esp-conditional-sales-tax)
 -   [Omvärderingsgrupper för anläggningstillgångar](/dynamics365/operations/financials/localizations/emea-esp-fixed-asset-group-revaluation)
+-   [Inomeuropeisk moms](/dynamics365/operations/financials/localizations/emea-esp-intra-community-vat)
 -   [Engångskunder](/dynamics365/operations/financials/localizations/emea-esp-no-one-time-customer-for-project-contracts)
 -   [Alternativ för spansk skuldsedel](/dynamics365/operations/financials/localizations/emea-esp-promissory-note-options)
 -   [Inköps- och försäljningscykler](/dynamics365/operations/financials/localizations/emea-esp-sales-purchase-cycle)
 -   [Särskilda poster och ingående ark](/dynamics365/operations/financials/localizations/emea-esp-opening-sheets-spain)
+-   [Använd räkenskapsdata från fakturakontot](/dynamics365/operations/financials/localizations/emea-esp-fiscal-data-invoice-account)
 
 ### <a name="sweden"></a>Sverige
 
@@ -286,4 +311,7 @@ Följande avsnitt visar resurser efter land/region.
 -   [1099-rapportering vid årsslut](/dynamics365/operations/financials/localizations/noam-usa-year-end-1099-reporting)
 -   [Lön](/dynamics365/operations/human-resources/localizations/noam-usa-payroll)
 -   [Offentlig sektor](/dynamics365/operations/financials/public-sector/public-sector-functionality)
+
+
+
 

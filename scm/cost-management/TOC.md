@@ -22,11 +22,15 @@
 ## [Datum för viktat medelvärde](weighted-average-date.md)
 ## [Viktat genomsnitt med fysiskt värde och markering](weighted-average-physical-value-marking.md)
 # Tillverkningskostnadsredovisning
+## [Periodisera konstanta kostnader för en tillverkad artikel](amortize-constant-costs-manufactured-item.md)
+## [Kostnadskalkylering med automatisk lageravräkning](backflush-costing.md)
+## [Strukturlisteberäkningar](bom-calculations.md)
 ## [Strukturlisteberäkningsgrupp](bom-calculation-groups.md)
-## [Analyserar gemensamma källor till produktionsavvikelse](common-sources-of-production-variances.md)
+## [Gemensamma källor till produktionsavvikelse](common-sources-of-production-variances.md)
 ## [Kostnadskategori som används i produktionsflöde](cost-categories-used-production-routings.md)
 ## [Kostnadskategori som används i produktionskontroll och projekthanteringsredovisning](cost-categories-used-production-control-project-management-accounting.md)
-## [Analys av kostnad för produktionsorder](production-order-cost-analysis.md)
+## [Visa avgifter för en tillverkad artikel](charges-manufactured-item.md)
+## [Kostnadsanalys av produktionsorder](production-order-cost-analysis.md)
 ## [Kostnadsuppskattning av produktionsorder](production-order-cost-estimation.md)
 ## [Produktionsbokföring](production-posting.md)
 ## [Ställ in en produkt som tillverkas eller anskaffas](manufactured-items-treated-as-purchased-items.md)
@@ -39,5 +43,6 @@
 ## [Uppdatera standardkostnad i en tillverkningsmiljö](update-standard-costs-manufacturing-environment.md)
 ## [Uppdatera standardkostnad för en ny tillverkad artikel](update-standard-costs-new-manufactured-item.md)
 ## [Uppdatera standardkostnad i en icke-tillverkningsmiljö](update-standard-costs-non-manufacturing-environment.md)
+
 
 

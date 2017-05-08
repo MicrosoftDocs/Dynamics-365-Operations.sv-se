@@ -56,6 +56,7 @@
 ### [Strukturlista och formel](production-control/bill-of-material-bom.md)
 ### [Funktionen Strukturlistedesigner](production-control/bom-designer-functionality.md)
 ### [Produktdimension](pim/product-dimensions.md)
+### [Standardorderinställningar för dimensioner och produktvarianter](production-control/default-order-settings.md)
 ### [Nomenklatur för produktnummer](pim/product-variant-identification-nomenclature.md)
 ### [Vanliga frågor om produktrelaterad översättning](pim/translations-product-related-information.md)
 ### [Registrera serienummer i försäljningsprocessen](sales-marketing/register-serial-numbers-sales-process.md)
@@ -70,49 +71,77 @@
 ### [Ställ in en konfigurationsmodell](pim/set-up-maintain-product-configuration-model.md)
 ### [Systemdefinierad och användardefinierad registerbegränsning](pim/system-defined-user-defined-table-constraints.md)
 # Produktionskontroll
-## Produktionsprocess    
-### [Aktivitetsbaserad legotillverkning](production-control/activity-based-subcontracting.md)
-### [Batchattribut](production-control/batch-attributes.md)
-### [Strukturlistor och formler](production-control/bill-of-material-bom.md)
-### [Funktionen Strukturlistedesigner](production-control/bom-designer-functionality.md)
-### [Konsoliderade batchorder](production-control/consolidated-batch-orders.md)
-### [Hantera legotillverkningsarbetsuppgift i produktion](production-control/manage-subcontract-work-production.md)
-### [Blandad planering: Kombinera diskret-, process- och lean-anskaffning](production-control/mixed-mode-plan.md)
-### [Produktionsprocess](production-control/production-process-overview.md)
-### [Inställningskrav för produktion](production-control/production-set-up-requirements.md)
-### [Flöden och operationer](production-control/routes-operations.md)
-## Produktionsorder
-### [Skapa produktionsorder](production-control/create-production-orders.md)
-### [Standardorderinställningar för dimensioner och produktvarianter](production-control/default-order-settings.md)
-### [Frisläpp produktionsorder](production-control/release-production-orders.md)
-### [Återför produktionsstatus](production-control/reverse-production-order-status.md)
-### [Rapportera strukturlistor som slutförda](production-control/report-boms-as-finished.md)
-### [Rapportera produktionsorder som slutförd](production-control/report-production-orders-as-finished.md)
-## Lean-produktion 
-### [Stöd för kanban-överföringstavla för streckkodsskannrar](production-control/kanban-transfer-board-support-barcode-scanner.md) 
-### [Kanban-jobbplanering för lean manufacturing](production-control/lean-manufacturing-kanban-job-scheduling.md)
+## [Översikt över produktionsprocess](production-control/production-process-overview.md)
+## [Blandad planering: Kombinera diskret-, process- och lean-anskaffning](production-control/mixed-mode-plan.md)
+## [Hantera legotillverkningsarbetsuppgift i produktion](production-control/manage-subcontract-work-production.md)
+## Diskret tillverkning
+### Underhåll produktionshuvuddata
+#### [Inställningskrav för produktion](production-control/production-set-up-requirements.md)
+#### [Strukturlistor och formler](production-control/bill-of-material-bom.md)
+#### [Funktionen Strukturlistedesigner](production-control/bom-designer-functionality.md)
+#### [Strukturlisteberäkningar](cost-management/bom-calculations.md)
+#### [Operations-resurser](production-control/operations-resources.md)
+#### [Resurskunskaper](production-control/resource-capabilities.md)
+#### [Flöden och operationer](production-control/routes-operations.md)
+#### [Standarder för produktionsorder i tillverkningskörning](production-control/production-order-defaults-manufacturing-execution.md)
+#### [Policyer för lagerarbete](warehousing/warehouse-work-policies.md)
+### Schemalägg produktionsoperationer
+#### [Grovplanering](production-control/operations-scheduling.md)
+#### [Finplanering](production-control/job-scheduling.md)
+#### [Alternativ för grovplanering](production-control/operation-scheduling-options.md)
+### Köra produktionsjobb 
+#### [Skapa produktionsorder](production-control/create-production-orders.md)
+#### [Frisläpp produktionsorder](production-control/release-production-orders.md)
+#### [Återför produktionsorderstatus](production-control/reverse-production-order-status.md)
+#### [Rapportera produktionsorder som slutförd](production-control/report-production-orders-as-finished.md)
+#### [Rapportera strukturlistor som slutförda](production-control/report-boms-as-finished.md)
+#### [Materialersättning i tillverkning](production-control/substitute-items-bom-lines.md)
+#### [Registrering för tillverkningskörning](production-control/registration-manufacturing-execution.md)
+#### [Produktionsåterrapportering](production-control/production-feedback.md)
+#### [Tid- och närvaroregistrering](production-control/time-attendance-registrations.md)
+### Hantera ekonomi i produktionen
+#### [Fördela tid till jobb i en jobbunt](production-control/allocate-time-jobs-job-bundle.md)
+#### [Beräkna materialförbrukning](production-control/consumption.md)
+#### [Produktionsbokföring](cost-management/production-posting.md)
+## Lean manufacturing 
 ### [Lean manufacturing – översikt](production-control/lean-manufacturing-overview.md)
-### [Skapa en lean-organisation](production-control/lean-manufacturing-modeling-lean-organization.md)
-## Tidsplanera operationer och jobb
-### [Fördela tid till jobb i en jobbunt](production-control/allocate-time-jobs-job-bundle.md)
-### [Finplanering](production-control/job-scheduling.md)
-### [Alternativ för grovplanering](production-control/operation-scheduling-options.md)
-### [Grovplanering](production-control/operations-scheduling.md)
-## Resurser
-### [Operations-resurser](production-control/operations-resources.md)
-### [Resurskunskaper](production-control/resource-capabilities.md)
-### [Tid- och närvaroregistrering](production-control/time-attendance-registrations.md)
-## Tillverkningskörning
-### [Materialersättning i tillverkning](production-control/substitute-items-bom-lines.md)
-### [Beräkna materialförbrukning](production-control/consumption.md)
-### [Produktionsåterrapportering](production-control/production-feedback.md)
-### [Standarder för produktionsorder i tillverkningskörning](production-control/production-order-defaults-manufacturing-execution.md)
-### [Produktionsbokföring](cost-management/production-posting.md)
-### [Registrering för tillverkningskörning](production-control/registration-manufacturing-execution.md)
+### [Aktivitetsbaserad legotillverkning](production-control/activity-based-subcontracting.md)
+### Underhåll produktionshuvuddata
+#### [Skapa en lean-organisation](production-control/lean-manufacturing-modeling-lean-organization.md)
+#### [Operations-resurser](production-control/operations-resources.md)
+### Schemalägg kanban-jobb
+#### [Kanban-jobbplanering för lean manufacturing](production-control/lean-manufacturing-kanban-job-scheduling.md)
+#### [Finplanering](production-control/job-scheduling.md)
+### Kör kanban-jobb
+#### [Stöd för kanban-överföringstavla för streckkodsskannrar](production-control/kanban-transfer-board-support-barcode-scanner.md)
+#### [Produktionsåterrapportering](production-control/production-feedback.md)
+## Processtillverkning
+### Underhåll produktionshuvuddata
+#### [Strukturlistor och formler](production-control/bill-of-material-bom.md)
+#### [Operations-resurser](production-control/operations-resources.md)
+#### [Resurskunskaper](production-control/resource-capabilities.md)
+#### [Batchattribut](production-control/batch-attributes.md)
+#### [Standarder för produktionsorder i tillverkningskörning](production-control/production-order-defaults-manufacturing-execution.md)
+#### [Inställningskrav för produktion](production-control/production-set-up-requirements.md)
+### Schemalägg produktionsoperationer
+#### [Grovplanering](production-control/operations-scheduling.md)
+#### [Alternativ för grovplanering](production-control/operation-scheduling-options.md)
+#### [Finplanering](production-control/job-scheduling.md)
+### Köra produktionsjobb 
+#### [Konsoliderade batchorder](production-control/consolidated-batch-orders.md)
+#### [Materialersättning i tillverkning](production-control/substitute-items-bom-lines.md)
+#### [Registrering för tillverkningskörning](production-control/registration-manufacturing-execution.md)
+#### [Produktionsåterrapportering](production-control/production-feedback.md)
+#### [Tid- och närvaroregistrering](production-control/time-attendance-registrations.md) 
+### Hantera ekonomi i produktionen
+#### [Fördela tid till jobb i en jobbunt](production-control/allocate-time-jobs-job-bundle.md)
+#### [Beräkna materialförbrukning](production-control/consumption.md)
+#### [Produktionsbokföring](cost-management/production-posting.md)
 # Försäljning och marknadsföring
 ## [Marknadsföring](sales-marketing/overview-sales-marketing.md)
 ## Försäljningsorder
 ### [Orderlöfte](sales-marketing/delivery-dates-available-promise-calculations.md)
+### [Leveransalternativ](sales-marketing/delivery-alternatives.md)
 ### [Deadlines för orderregistrering](sales-marketing/order-entry-deadlines.md)
 ### [Direktleveranser](sales-marketing/direct-deliveries.md)
 ### [Leveransplaner](sales-marketing/delivery-schedules.md)
@@ -138,6 +167,7 @@
 ### [Ställ in layout](warehousing/warehouse-configuration.md)
 ### [Policyer för lagerarbete](warehousing/warehouse-work-policies.md)
 ### [Måttenhet och lagerpolicyer](warehousing/unit-measure-stocking-policies.md)
+### [Power BI innehållspaket för lagerställe](/dynamics365/operations/dev-itpro/analytics/warehouse-power-bi-content?toc=/dynamics365/operations/scm/toc.json)
 ## Plockning och packning
 ### [Förpackningsmaterial och avgifter](warehousing/pack-materials-packing-material-fees.md)
 ## Lagerinventering
@@ -148,10 +178,24 @@
 ### [Lagerstatus](inventory/inventory-statuses.md)
 ### [Lagermärkesinventering](inventory/inventory-tag-counting.md)
 ## Skapande av fraktbehållare 
-## Återanskaffning
+## Lagerpåfyllnad
 ### [Lagerpåfyllnad](warehousing/replenishment.md)
 ## Mobila enheter
+### [Installera och konfigurera lagerstryningsappen](warehousing/install-configure-warehousing-app.md)
 ### [Konfigurera fältnamn i lagerstyrningsapp](warehousing/configure-app-field-names-priorities-warehouse.md)
 ### [Ställ in mobila enheter för lagerarbete](warehousing/configure-mobile-devices-warehouse.md)
 ### [Warehouse Mobile Devices Portal (WMDP)](warehousing/warehouse-mobile-devices-portal.md)
 ### [Visningsinställningar för mobil enhet på lagerställe](warehousing/change-warehouse-mobile-device-displays.md)
+
+# [Ekonomi](/dynamics365/operations/financials/index)
+
+# [Personal](/dynamics365/operations/human-resources/index)
+
+# [Butik](/dynamics365/operations/retail/index)
+
+# [Utvecklare och administratör](/dynamics365/operations/dev-itpro/index)
+
+# Andra resurser
+## [Ordlista för Dynamics 365 for Operations](/dynamics365/operations/get-started/glossary?toc=/dynamics365/operations/supply-chain/toc.json)
+## [Nyheter eller ändringar](/dynamics365/operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/operations/supply-chain/toc.json)
+

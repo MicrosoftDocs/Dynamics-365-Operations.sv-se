@@ -17,10 +17,11 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: 03f54d7cf25b928d51d7d382ec490295dcbbbefe
-ms.openlocfilehash: 0d00f33ce8059acd877d1c177e3def0b5f0b73b1
-ms.lasthandoff: 04/12/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: a8385e7103b74be33fd79c1143e481ad8edca31c
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -34,11 +35,9 @@ Dynamics 365 for Operations – Retail ger en fullständig shoppingupplevelse me
 Den här sidan hänvisar till resurser som hjälper dig att använda Microsoft Dynamics 365 for Operations - Retail mer effektivt. Välj ett funktionsområde som du vill veta mer om i det vänstra fönstret. 
 
 ## <a name="set-up-retail-channels"></a>Ställ in butikskanaler
-När du ställer in butiken bestämmer du hur du definierar och konfigurerar den fysiska butiken (kallad *butik* i Dynamics 365 for Operations) och onlinebutiken. 
+När du ställer in butiken bestämmer du hur du definierar och konfigurerar fysiska butiker, onlinebutiken och kundtjänsten. 
 
-Varje butik kan ha egna betalningsmetoder, prisgrupper, kassalösningar, intäktskonton, utgiftskonton och egen personal. När du har skapat butiken tilldelar du produkterna som du vill ha i sortimentet. Du tilldelar också medarbetare, kassor och kunder till butiken. Slutligen lägger du till den nya butiken i en organisationshierarki.
-
-När du skapar onlinebutiken måste du ställa in komponenter såsom leveransmetoder, betalningsmetoder, attribut och sortiment. Det går även att definiera priser, rabatter, erbjudanden och leveransvillkor som är specifika för onlinebutiken.
+Varje butik kan ha egna betalningsmetoder, leveransmetoder, prisgrupper, kassor, intäktskonton/utgiftskonton och egen personal. När du har skapat butiken skapar du ett sortiment produkter som du vill att butiken ska föra. Det går även att definiera butiksspecifika priser och rabatter som gäller för produkter som finns i butiken.
 
 -   [Definiera butikskanaler](define-maintain-retail-channels.md)
 -   [Översikt över onlinebutik](online-stores.md)
@@ -46,13 +45,13 @@ När du skapar onlinebutiken måste du ställa in komponenter såsom leveransmet
 ## <a name="set-up-a-call-center"></a>Ställa in kundtjänst
 Det går att ställa in kundtjänst som en typ av butikskanal. I kundtjänsten tar anställda emot beställningar från kunder per telefon och skapar försäljningsorder. Det går att ställa in vad en försäljningsorder innehåller, hur priser kontrolleras och vilken information om kunder, produkter och priser som finns tillgänglig för att hjälpa medarbetare att ta emot beställningar och hantera kundtjänst under orderuppfyllandet. För varje kundtjänst går det även att skapa användare, betalningsmetoder, prisgrupper, ekonomiska dimensioner och leveranssätt.
 
--   [Call center-funktioner](call-center-functionality.md)
+-   [Kundtjänstfunktioner](call-center-functionality.md)
 -   [Skapa kundtjänstkataloger](create-call-center-catalogs.md)
 
-## <a name="define-your-pos-and-mpos-solutions"></a>Definiera kassa- och MPOS-lösningar
-Retail Modern POS (MPOS) är en kassaapp för datorer, telefoner och surfplattor. Försäljningspersonal kan bearbeta försäljningstransaktioner, kundorder och utföra dagliga rutiner och lagerhantering med mobila enheter var som helst i butiken såväl som datorbaserade kassor. Molnbaserad kassa är en webbläsarbaserad kassa. 
+## <a name="define-your-pos-solutions"></a>Definiera kassalösningar
+Retail Modern POS (MPOS) är en kassaapp för datorer, telefoner och surfplattor. Försäljningspersonal kan bearbeta försäljningstransaktioner och kundorder, utföra klienteling, dagliga rutiner och lagerhantering med mobila enheter var som helst i butiken såväl som i datorbaserade kassor. Molnbaserad kassa är en webbläsarbaserad kassa som går att starta i vanliga webbläsare. 
 
-Det finns flera komponenter att ställa in för att definiera relationer mellan en butik, kassaregistren eller kanalerna i butiken och butikskringutrustningen som kassorna eller kanalerna använder till att bearbeta transaktioner. Det går även att definiera egenskaperna för en viss kassainstans, inklusive inställningar för butikskringutrustning som användas vid kassan, butiken som kassan är mappad till och den visuella upplevelsen för användaren som loggar in på den kassan.
+Det finns flera komponenter att ställa in för att definiera relationer mellan en butik, kassaregistren i butiken och butikskringutrustningen som kassorna använder till att bearbeta transaktioner. Det går även att definiera egenskaperna för en viss kassainstans, inklusive inställningar för butikskringutrustning som användas vid kassan, butiken som kassan är mappad till och den visuella upplevelsen för användaren som loggar in på den kassan och funktionerna som är aktiverade i kassan. Det går även att definiera om kassan kan användas offline eller frånkopplad.
 
 -   [Definiera och underhålla kanalklienter, kassor och maskinvarustationer](define-maintain-channel-clients-registers-hw-stations.md)
 -   [Konfigurera och installera MOPS](retail-modern-pos-device-activation.md)
@@ -92,4 +91,6 @@ Det finns åsikter, nyheter och annan information om Microsoft Dynamics 365 for 
 Det finns många ämnen om Butik i <a href="https://blogs.msdn.microsoft.com/dax/">Microsoft Dynamics AX produktteamblogg</a>. En del av inläggen skrevs för den föregående versionen av Dynamics 365 for Operations, men samma begrepp gäller fortfarande och procedurerna är liknande i den aktuella versionen.
 
 <a href="https://community.dynamics.com/partner/b/operationspartnercommunityblog">bloggen Microsoft Dynamics Operations Partner Community</a> ger Microsoft Dynamics Partners en resurs med mer information om vad som är nytt och trendar i MBS Operations.
+
+
 

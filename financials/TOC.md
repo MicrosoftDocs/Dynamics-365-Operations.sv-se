@@ -163,13 +163,14 @@
 ## [Ekonomisk rapport för inkomstutdrag](general-ledger/income-statement-financial-report.md)
 ## [Ekonomisk rapport för råbalans](general-ledger/trial-balance-financial-reports.md)
 ## [Visa ekonomiska rapporter](general-ledger/view-financial-reports.md)
-## [Report Designer](/dynamics365/operations/dev-itpro/analytics/report-designer-interface?toc=/dynamics365/operations/financials/toc.json)
+## [Rapportdesigner](/dynamics365/operations/dev-itpro/analytics/report-designer-interface?toc=/dynamics365/operations/financials/toc.json)
 # [Kostnadsredovisning](cost-accounting/cost-accounting-home-page.md)
 ## [Villkor](cost-accounting/terms-cost-accounting.md)
 ## [Praktiska övningar (dokumentation)](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc)
 ## [Dimensioner för kostnadselement](cost-accounting/cost-elements.md)
 ## [Kostnadsobjektdimensioner](cost-accounting/cost-objects.md)
 ## [Mappa dimensionsmedlemmar för kostnadselement till en gemensam uppsättning dimensionsmedlemmar](cost-accounting/map-cost-elements-dimension-members.md)
+## [Beräkning av indirekta kostnader](cost-accounting/overhead-calculation.md)
 ## [Mobil arbetsyta för kostnadskontroll](cost-accounting/cost-controlling-mobile-workspace.md)
 ## [Kostnadsredovisningsanalys Power BI-innehåll](/dynamics365/operations/dev-itpro/analytics/cost-accounting-analysis-content-pack?toc=/dynamics365/operations/financials/toc.json)
 ## [Ställ in säkerhets för Kostnadsredovisningsanalys Power BI-innehåll](/dynamics365/operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack?toc=/dynamics365/operations/financials/toc.json)
@@ -206,4 +207,18 @@
 ## [Projektofferter](project-management/project-quotations.md)
 ## [Projektresurshantering](project-management/project-resourcing.md)
 ## [Uppdelade arbetsstrukturer](project-management/work-breakdown-structures.md)
+## [Mobil arbetsyta för projekttidangivelse](project-management/project-time-entry-mobile-workspace.md)
 # [Lokaliseringar](localizations/TOC.md)
+
+# [Personal](/dynamics365/operations/human-resources/index)
+
+# [Butik](/dynamics365/operations/retail/index)
+
+# [Hantering av underleverantörer](/dynamics365/operations/supply-chain/index)
+
+# [Utvecklare och administratör](/dynamics365/operations/dev-itpro/index)
+
+# Andra resurser
+## [Ordlista för Dynamics 365 for Operations](/dynamics365/operations/get-started/glossary?toc=/dynamics365/operations/financials/toc.json)
+## [Nyheter eller ändringar](/dynamics365/operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/operations/financials/toc.json)
+
