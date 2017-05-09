@@ -1,0 +1,52 @@
+---
+title: "Övervaka prognosprecision"
+description: "Denna artikel beskriver de typer av prognosprecision som Microsoft Dynamics 365 for Operations beräknar, och förklarar hur du kan visa precisionsvärdena."
+author: YuyuScheller
+manager: AnnBe
+ms.date: 04/04/2017
+ms.topic: article
+ms.prod: 
+ms.service: Dynamics365Operations
+ms.technology: 
+audience: Application User
+ms.search.scope: AX 7.0.0, Operations, Core
+ms.custom: 72863
+ms.assetid: 810a0d63-f4c6-4167-b2b3-a178b74ead89
+ms.search.region: global
+ms.search.industry: Manufacturing
+ms.author: roxanad
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+translationtype: Human Translation
+ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
+ms.openlocfilehash: d3f88a4fa54217cea909c54955de05e2175db0cd
+ms.lasthandoff: 03/29/2017
+
+
+---
+
+# <a name="monitor-forecast-accuracy"></a>Övervaka prognosprecision
+
+[!include[banner](../includes/banner.md)]
+
+
+Denna artikel beskriver de typer av prognosprecision som Microsoft Dynamics 365 for Operations beräknar, och förklarar hur du kan visa precisionsvärdena.
+
+Dynamics 365 for Operations beräknar följande typer av prognosprecision:
+
+-   Historisk prognos exakthet, genom att jämföra den historiska prognosen att Huvudplanering använder med historisk efterfrågan. Om du vill visa värden (både i absoluta och procentuella värden) för Historisk prognos noggrannhet, klicka på **Visa noggrannheten** på **Demand forecast sidan detaljer** .
+-   Den uppskattade noggrannheten hos den prognosmodell som används för att generera prediktioner. Du kan visa noggrannheten procentsats enligt **modellen detaljer – MAPE** på **Demand forecast sidan detaljer** . 
+
+**Obs!** Om du använder Dynamics 365 for Operations efterfrågeprognos Microsoft Azure Machine Learning-tjänsten baseras beräkningen av intern modellnoggrannhet på testdata. För att ange storleken på testdatauppsättningen, ställ in parametern **TEST\_SET\_SIZE\_PERCENT** på sidan **Parametrar för efterfrågeprognosticering**. Till exempel, om du anger värdet till **20**, de sista 20 procent av historiska data används för att beräkna intern modell noggrannhet.
+
+
+<a name="see-also"></a>Se även
+--------
+
+[Auktorisering av den justerade prognosen](authorize-adjusted-forecast.md)
+
+[Ta bort avskilda från historiska transaktionsdata vid beräkning av en efterfrågeprognos](remove-historical-outliers-calculating-demand-forecast.md)
+
+
+
+
