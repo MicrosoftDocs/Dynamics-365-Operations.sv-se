@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ef99caf4570969d2b920cec8b53669ce2094965
-ms.openlocfilehash: 5d6d13fe44eef7766b4dcaf274c3522bce3da816
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 54c57254bbd7c7b3402fc0d6bd4755110dd6fd27
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -42,23 +43,23 @@ När du kör omvärderingsprocessen kommer saldot i varje huvudkonto som bokför
 ## <a name="prepare-to-run-foreign-currency-revaluation"></a>Förbereda en körning av omvärdering i utländsk valuta
 Innan du kan köra omvärderingsprocessen måste följande inställningar göras.
 
--   På sidan **Main account**:
--   Om huvudkontot ska omvärderas i redovisningen, välj då **Foreign currency revaluation**. Om huvudkontot inte ska omvärderas (till exempel för kundreskontra och leverantörsreskontra, om dessa omvärderats i redovisningsjournalerna), rensa då detta alternativ.
--   Om huvudkontot valts för omvärdering, ange då **valutakurstyp**. Denna valutakurstyp kommer att användas för omvärdering av huvudkontot. Ett separat fält, **Financial reporting exchange rate type**, finns tillgängligt för ekonomirapporteringen. De två fälten hålls inte synkroniserade, vilket gör att olika valutakurstyper kan användas för omvärdering och ekonomisk rapportering.
+-   På sidan **Huvudkonto**:
+-   Om huvudkontot ska omvärderas i redovisningen, välj då **Omräkning i utländsk valuta**. Om huvudkontot inte ska omvärderas (till exempel för kundreskontra och leverantörsreskontra, om dessa omvärderats i redovisningsjournalerna), rensa då detta alternativ.
+-   Om huvudkontot valts för omvärdering, ange då **valutakurstyp**. Denna valutakurstyp kommer att användas för omvärdering av huvudkontot. Ett separat fält, **Valutakurstyp för ekonomisk rapportering**, finns tillgängligt för ekonomirapporteringen. De två fälten hålls inte synkroniserade, vilket gör att olika valutakurstyper kan användas för omvärdering och ekonomisk rapportering.
 
--   På sidan **Ledger**:
+-   På sidan **Huvudbok**:
 -   Ange **valutakurstyp**. Om valutakurstypen inte definieras på huvudkontot, kommer denna valutakurstyp att användas i samband med omräkning i utländsk valuta.
 -   Ange konton för realiserad vinst, realiserad förlust, orealiserad vinst och orealiserad förlust för valutaomvärdering. Kontona för realiserad vinst och realiserad förlust används för kvittade kundreskontra- och leverantörsreskontratransaktioner, och kontona för orealiserad vinst och orealiserad förlust används för öppna transaktioner samt huvudkonton för redovisning.
 
--   På sidan **Currency revaluation accounts**:
+-   På sidan **Valutaomvärderingskonton**:
 -   Välj olika konton för omvärdering valuta för respektive valuta och företag. Om inga konton har definierats används kontona från sidan **Redovisning**.
 
 ## <a name="process-foreign-currency-revaluation"></a>Bearbeta en omvärdering i utländsk valuta
-Efter slutförda inställningar, använd sidan **Foreign currency revaluation** för att utvärdera beloppen i huvudsidorna. Du kan köra processen i realtid eller schemalägga den för att köra med en batch. 
+Efter slutförda inställningar, använd sidan **Omräkning i utländsk valuta** för att utvärdera beloppen i huvudsidorna. Du kan köra processen i realtid eller schemalägga den för att köra med en batch. 
 
-Sidan **Foreign currency revaluation** visar historiken för respektive omvärderingsprocess, inklusive när processen kördes, vilka kriterier som angavs, en länk till den verifikation som skapades för omvärderingen, samt en post om en tidigare omvärdering har återförts. Välj knappen **Foreign currency revaluation** om du vill köra omvärderingsprocessen. 
+Sidan **Omräkning i utländsk valuta** visar historiken för respektive omvärderingsprocess, inklusive när processen kördes, vilka kriterier som angavs, en länk till den verifikation som skapades för omvärderingen, samt en post om en tidigare omvärdering har återförts. Välj knappen **Omräkning i utländsk valuta** om du vill köra omvärderingsprocessen. 
 
-Värdena **From date** och **To date** anger datumintervallet för beräkningen av den utländska valutabalans som ska omvärderas. När du omvärderar vinst- och förlustkonton, omvärderas summan av alla transaktioner som förekommer inom datumintervallet. När du omvärderar balansräkningskonton, ignoreras från-datum. Istället bestäms saldot som ska omvärderas genom att gå från början av räkenskapsåret fram till slutdatum. 
+Värdena **Från datum** och **Till datum** anger datumintervallet för beräkningen av den utländska valutabalans som ska omvärderas. När du omvärderar vinst- och förlustkonton, omvärderas summan av alla transaktioner som förekommer inom datumintervallet. När du omvärderar balansräkningskonton, ignoreras från-datum. Istället bestäms saldot som ska omvärderas genom att gå från början av räkenskapsåret fram till slutdatum. 
 
 Det **Kursdatum** som kan användas för att definiera det datum då valutakursen ska återställas till standardvärdet. Exempelvis kan du omvärdera saldona mellan datumintervallet 1 januari till 31 januari men använda valutakursen som definierats för den 1 februari. 
 
@@ -68,7 +69,7 @@ Omvärderingsprocessen kan köras för en eller flera juridiska personer. Sökni
 
 Omvärderingen kan köras för en eller flera utländska valutor. Sökningen omfattar alla valutor som har bokförts inom det angivna datumintervallet för typen av huvudkonto (balansräkning eller resultaträkning) för de juridiska personer som du har valt att omvärdera. Redovisningsvalutan tas med i listan, men inget omvärderas om redovisningsvalutan har valts. 
 
-Ange **Förhandsgranska före bokföring** till **Ja** om du vill granska resultatet av omvärderingen av redovisningen. Förhandsgranskningen av redovisningen skiljer sig från simuleringen av omräkningen i utländsk valuta för kund- och leverantörsreskontra. Kund- och leverantörsreskontrasimuleringen är en rapport, men redovisning har en förhandsgranskning som kan bokföras utan att omvärderingsprocessen behöver köras på nytt. Resultatet av förhandsgranskningen kan exporteras till Microsoft Excel, om du vill behålla historiken för hur beloppen beräknades. Du kan inte använda batchbearbetning om du vill granska resultatet av omvärderingen. Från förhandsgranskningen har användaren möjlighet att bokföra resultaten för juridiska personerna via knappen **Post**. Om det finns ett problem med resultaten för en juridisk person, har användaren också möjlighet att bokföra en deluppsättning av de juridiska personerna med hjälp av knappen **Select legal entities to post**. 
+Ange **Förhandsgranska före bokföring** till **Ja** om du vill granska resultatet av omvärderingen av redovisningen. Förhandsgranskningen av redovisningen skiljer sig från simuleringen av omräkningen i utländsk valuta för kund- och leverantörsreskontra. Kund- och leverantörsreskontrasimuleringen är en rapport, men redovisning har en förhandsgranskning som kan bokföras utan att omvärderingsprocessen behöver köras på nytt. Resultatet av förhandsgranskningen kan exporteras till Microsoft Excel, om du vill behålla historiken för hur beloppen beräknades. Du kan inte använda batchbearbetning om du vill granska resultatet av omvärderingen. Från förhandsgranskningen har användaren möjlighet att bokföra resultaten för juridiska personerna via knappen **Post**. Om det finns ett problem med resultaten för en juridisk person, har användaren också möjlighet att bokföra en deluppsättning av de juridiska personerna med hjälp av knappen **Välj valda juridiska personer att bokföra**. 
 
 När processen för omräkning i utländsk valuta är klar skapas en post där du kan spåra historiken för respektive körning.  En separat post skapas för varje juridisk person och bokföringsskikt.
 
@@ -113,7 +114,7 @@ Följande redovisningspost skapas.
 | 28 februari | 801600 (Orealiserad vinst) |           | 416.67     |
 
 ## <a name="reverse-foreign-currency-revaluation"></a>Återför omräkning i utländsk valuta
-Om du måste återföra omvärderingtransaktionen, välj knappen **Reverse transaction** på sidan **Foreign currency revaluation**. En historisk ny post om omräkning i utländsk valuta skapas för att bibehålla den historiska redovisningsspårningen för när omvärdering genomfördes eller återfördes. 
+Om du måste återföra omvärderingtransaktionen, välj knappen **Återför transaktion** på sidan **Omräkning i utländsk valuta**. En historisk ny post om omräkning i utländsk valuta skapas för att bibehålla den historiska redovisningsspårningen för när omvärdering genomfördes eller återfördes. 
 
 Du kan ångra resultatet för omvärderingen av datumordning, men du kanske även måste återföra en nyare omvärdering för att säkerställa korrekta saldon för varje omvärderade huvudkonto. Återföringarna kan ske oberoende av datumordning, detta eftersom det inte går att kontrollera vilka huvudkonton som omvärderas och frekvensen för när de omvärderas. En organisation kan exempelvis välja att omvärdera sina huvudsakliga kassakonton kvartalsvis, men alla andra huvudkonton månadsvis.
 

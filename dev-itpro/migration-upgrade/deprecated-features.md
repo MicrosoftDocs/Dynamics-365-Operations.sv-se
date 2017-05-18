@@ -3,7 +3,7 @@ title: "Äldre funktioner"
 description: "I det här avsnittet beskrivs funktioner som har tagits bort, eller har planerats för borttagning från Dynamics 365 for Operations. Det visar också funktioner som föråldrats i Dynamics AX 7.0-versioner."
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 04/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -15,16 +15,20 @@ ms.assetid: 31019808-4cbf-47d7-b1ba-d791db4281ae
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
-ms.dyn365.ops.version: Platform update 2
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: e9ba7239b9ff8b9b97c9dabc06fb2c68760d19d4
-ms.lasthandoff: 03/31/2017
+ms.dyn365.ops.version: Platform update 6
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 8fbfc8c91c836eb9922f2bf1165ec887d8a0bc8e
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="deprecated-features"></a>Äldre funktioner
+
+[!include[banner](../includes/banner.md)]
+
 
 I det här avsnittet beskrivs funktioner som har tagits bort, eller har planerats för borttagning från Dynamics 365 for Operations. Det visar också funktioner som föråldrats i Dynamics AX 7.0-versioner.
 
@@ -472,7 +476,17 @@ Datapartitioner tillhandahåller en logisk separering av data i Microsoft Dynami
 |------------------------------|----------------------------------------------------------------------------------------------------------------------------------------|
 | Orsak till avskrivning       | Dynamics AX-klientupplevelsen har formats om för att förbättra användbarheten över flera plattformar och enheter.                      |
 | Ersatt av en annan funktion? | Den nya webbklienten baseras på skrivbordsformulärmetadata och programmeringsmodellen som har ändrats för att ge en heltäckande webbplattform. |
-| Påverkade moduler             | Alla                                                                                                                                    |
+| Påverkade moduler             | Allt                                                                                                                                    |
+
+### <a name="direct-database-connection"></a>Direkt databasanslutning
+
+I Dynamics AX 2012 R3 kunde inte Retail Modern POS ansluta direkt till Channel DB på liknande sätt som till Enterprise POS. Detta var förutom standardkommunikationsmetoden för Retail Modern POS som kommunicerar via Retail Server.  
+
+|                              |                                                                                         |
+|------------------------------|-----------------------------------------------------------------------------------------|
+| Orsak till avskrivning       | Direkt databasanslutning krävde lägre säkerhetsprotokoll och användes främst för att uppnå högsta möjliga prestanda. På grund av prestanda- och säkerhetsförbättringar som har uppstått i Dynamics 365 for Operations orsakar nu den här funktionen fler problem än den löser. |
+| Ersatt av en annan funktion? | Nr. Endast standardkommunikation för Retail Server stöds nu.    |
+| Påverkade moduler             | Channel DB/Retail Modern POS                                    |
 
 ### <a name="dutch-swift-mt940"></a>Holländsk SWIFT MT940
 
@@ -661,8 +675,18 @@ Den här funktionen låter dig ändra namnet på en av de tre standardproduktdim
 |                              |                                                                               |
 |------------------------------|-------------------------------------------------------------------------------|
 | Orsak till avskrivning       | Den aktuella versionen av Dynamics AX stöder inte etikettändringar under körning. |
-| Ersatt av en annan funktion? | Nej                                                                            |
+| Ersatt av en annan funktion? | Ingen                                                                            |
 | Påverkade moduler             | Produktinformationshantering                                                |
+
+### <a name="retail-server-connectivity-using-http"></a>Retail Server-anslutning använder HTTP
+
+I Dynamics AX 2012 R3 kan Retail Server med hjälp av HTTP-kommunikation (icke-säker). Detta var förutom standardkommunikationen med HTTPS.
+
+|                              |                                                                               |
+|------------------------------|-------------------------------------------------------------------------------|
+| Orsak till avskrivning       | På grund av nya säkerhetskrav stöds endast säker kommunikation med TLS 1.2 (eller högre om tillgängligt) nu. Installationsprogrammet för självbetjäning konfigurerar automatiskt datorn för den här kommunikationen. |
+| Ersatt av en annan funktion? | Nr. Endast standardkommunikation för HTTPS stöds nu.                                                                           |
+| Påverkade moduler             | Butiksserver                                                |
 
 ### <a name="role-center-pages"></a>Rollcentersidor
 
@@ -784,6 +808,8 @@ Löneinformation i HR
 | Orsak till avskrivning       | Funktionen har ersatts med en annan funktion.                                    |
 | Ersatt av en annan funktion? | Management Reporter (med etiketten **Ekonomisk rapportering** i den aktuella versionen av Dynamics AX) |
 | Påverkade moduler             | Huvudbok                                                                              |
+
+
 
 
 

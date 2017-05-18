@@ -3,7 +3,7 @@ title: Rullande inventering
 description: "Den här artikeln beskriver hur du kan använda rullande inventering tillsammans med den lagerställelösning som är tillgänglig i Lagerstyrning. Den här artikeln gäller inte för den lagerställelösning som är tillgänglig i Lagerhantering."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-02-18 11 - 46 - 20
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -17,29 +17,32 @@ ms.search.region: Global
 ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 3d02a15387231160f5b8a237aa11008b91ef1223
-ms.openlocfilehash: ffc1523d53732616d77511f39b72efc8f97744eb
-ms.lasthandoff: 03/30/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 387d114936567fc471cdcafcb2e93c1704db7ead
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="cycle-counting"></a>Rullande inventering
 
+[!include[banner](../includes/banner.md)]
+
+
 Den här artikeln beskriver hur du kan använda rullande inventering tillsammans med den lagerställelösning som är tillgänglig i Lagerstyrning. Den här artikeln gäller inte för den lagerställelösning som är tillgänglig i Lagerhantering.
 
 Rullande inventering är en lagerställesprocess som du kan använda för att kontrollera lagerbehållningsartiklar. Processen för rullande inventering kan beskrivas i tre steg:
 
 1.  **Skapa arbetsuppgift för rullande inventering** – arbetsuppgift för rullande inventering kan skapas automatiskt baserat på tröskelparametrar för artiklar eller genom att använda en plan för rullande inventering. Du kan också skapa rullande inventering manuellt, med hjälp av artikeln eller lagerställeparametrar på sidan **Rullande inventeringsarbete efter artikel** efter på sidan **Rullande inventeringsarbete efter plats**.
-2.  **Process the cycle count** – Efter att du har skapat det rullande inventeringsarbetet utför du det rullande inventeringsarbetet genom att räkna artiklar på en lagerplats och sedan ange resultatet i Microsoft Dynamics 365 for Operations. Alternativt kan du inventera artiklar i ett lagerställe utan att skapa rullande inventeringsarbete. Den här processen kallas för *rullande inventering av typen spot*.
+2.  **Bearbeta rullande inventering** – Efter att du har skapat det rullande inventeringsarbetet utför du det rullande inventeringsarbetet genom att räkna artiklar på en lagerplats och sedan ange resultatet i Microsoft Dynamics 365 for Operations. Alternativt kan du inventera artiklar i ett lagerställe utan att skapa rullande inventeringsarbete. Den här processen kallas för *rullande inventering av typen spot*.
 3.  **Lösa avvikelser i det räknade värdet** – Efter en rullande inventering har alla artiklar som har avvikelser i det inventerade värdet en arbetsstatus som är **Pågående granskning** på sidan **Allt arbete**. Du kan lösa dessa skillnader på sidan **Granskning av väntande rullande inventeringsarbete**.
 
 I bilden nedan visas processen för rullande inventering. ![Bearbeta flöde rullande inventering](./media/performcyclecountinginawarehouselocation.jpg)
 
 ## <a name="cycle-counting-prerequisites"></a>Förutsättningar för rullande inventering
 Följande tabell visar förutsättningarna som krävs och måste finnas på plats innan du kan använda rullande inventering.
-
 <table>
 <colgroup>
 <col width="50%" />
@@ -82,7 +85,7 @@ Följande tabell visar förutsättningarna som krävs och måste finnas på plat
 <li>Rullande inventeringsgruppering</li>
 <li>Rullande inventering av typen Spot</li>
 </ul>
-Mer information finns i <a href="configure-mobile-devices-warehouse">Konfigurera mobila enheter för lagerställearbete</a>.</li>
+</li>
 <li>Ställa in en meny för den mobila enheten.</li>
 <li>Skapa ett arbetsuppgiftsanvändarkonto och tilldela en mobilenhetsmeny till arbetsuppgiftsanvändar-ID:t.</li>
 </ul></td>
@@ -133,6 +136,9 @@ En avvikelse för rullande inventering inträffar i följande scenarier om alter
 -   Värdet från den rullande inventeringen skiljer sig från lagerbehållningskvantiteten och det finns inga angivna avvikelsegränser.
 
 Du kan justera avvikelser i det beräknade värdet och sedan acceptera det beräknade värdet på sidan **Granskning av väntande rullande inventering**. Du kan verifiera det modifierade antalet för artikelkvantiteten på sidan **Behållning efter plats**. Värdet från den rullande inventeringen åsidosätts om skillnaden inte kan godkännas.
+
+# <a name="see-also"></a>Se även
+[Konfigurera mobila enheter för lagerarbete](configure-mobile-devices-warehouse.md)
 
 
 

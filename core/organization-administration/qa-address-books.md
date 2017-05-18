@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: 444ffcc8a14650085e24d0ea0d7f725e9d324d69
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: f3d34f9ee0c9db97e79b8577d006b198f9a5cb29
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -41,8 +42,8 @@ Du kan söka efter dublettposter direkt på listsidan **Global adressbok** . Kli
 ## <a name="can-i-bulk-add-or-delete-party-records-from-an-address-book"></a>Kan jag lägga till i bulk eller ta bort partposter från en adressbok?
 Ja, kan du lägga till flera partposter till en adressbok och även ta bort flera partposter.
 
--   Om du vill lägga till flera partposter till en adressbok genom att välja parterna på listsidan **Global adressbok **. Klicka på **Tilldela parter** i fönstret Åtgärd på fliken **Part** i gruppen **Underhåll**. Välj adressböckerna som du vill lägga till de valda partposterna till och klicka sedan på **OK**. Alla markerade partposter läggs till i de valda adressböckerna.
--   Ta bort flera partposter från en adressbok genom att välja parterna på listsidan **Global adressbok **. Klicka på **Ta bort parter** i fönstret Åtgärd på fliken **Part** i gruppen **Underhåll**. Välj adressböckerna från vilka du vill ta bort parterna och klicka sedan på **OK**. Alla markerade partposter tas bort från de valda adressböckerna.
+-   Om du vill lägga till flera partposter till en adressbok genom att välja parterna på listsidan **Global adressbok**. Klicka på **Tilldela parter** i fönstret Åtgärd på fliken **Part** i gruppen **Underhåll**. Välj adressböckerna som du vill lägga till de valda partposterna till och klicka sedan på **OK**. Alla markerade partposter läggs till i de valda adressböckerna.
+-   Ta bort flera partposter från en adressbok genom att välja parterna på listsidan **Global adressbok**. Klicka på **Ta bort parter** i fönstret Åtgärd på fliken **Part** i gruppen **Underhåll**. Välj adressböckerna från vilka du vill ta bort parterna och klicka sedan på **OK**. Alla markerade partposter tas bort från de valda adressböckerna.
 
 ## <a name="can-i-change-the-party-type-of-a-record-or-do-i-have-to-delete-the-old-record-and-create-a-new-one"></a>Kan ändra jag parttypen för en post eller jag måste ta bort den gamla posten och skapa en ny?
 Då och då måste du kanske ändra parttypen för en post från person till organisation eller från organisation till person. Till exempel Nancy är medlem i säljteamet för Fabrikam i Storbritannien På en mässa i London träffar hon sex potentiella kunder. Nancy skapar en potentiell kundpartpost för varje potentiell kund. När Nancy sparar posterna skapas också varje post i den globala adressboken. Fabrikam har angett standardparttypen till organisation, men två av de potentiella kunderna ska ha posttypen person. När Nancy återvänder från mässan måste hon därför ändra parttypen för två av de potentiella kundposterna. Om du vill ändra en partpost till en annan parttyp måste du först skapa en ny partpost av den rätta typen in den globala adressboken. Du kopplar sedan den gamla partposten till den nya posten. Ta bort den ursprungliga partposten som har felaktig posttyp när du har gjort den nya partassociationen.

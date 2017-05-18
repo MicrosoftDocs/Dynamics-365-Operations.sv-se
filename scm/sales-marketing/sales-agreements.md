@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 4dd1eae27ae33837fbab16f764083168578d0a29
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 69535f07cadda4f17bb5d846132ffe614495553e
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -44,13 +45,13 @@ Du kan skapa en försäljningsorder direkt från ett försäljningsavtal, med hj
 ## <a name="commitment-types"></a>Utfästelsetyper
 Varje rad i ett försäljningsavtal är en utfästelse att sälja något. I allmänhet finns det två kategorier av utfästelser:
 
--   **Värdeutfästelse **– Kunden förbinder sig att köpa produkter för ett specifikt belopp.
--   **Kvantitetsutfästelse **– Kunden förbinder sig att köpa produkter i en specifik kvantitet.
+-   **Värdeutfästelse**– Kunden förbinder sig att köpa produkter för ett specifikt belopp.
+-   **Kvantitetsutfästelse**– Kunden förbinder sig att köpa produkter i en specifik kvantitet.
 
 Dessutom kan ett avtal låta kunden åta sig att köpa en specifik produkt eller produkter i en produktkategori. Genom att kombinera dessa två faktorer (värde jämfört med kvantitet och specifika produkter jämfört med produktkategorier), får du fyra typer av åtagande:
 
--   **Produktkvantitetsutfästelse **– Kunden förbinder sig att köpa produkter i en specifik kvantitet. Rader som använder den här utfästelsetypen definieras av ett artikelnummer och av kvantiteten och enheten som har beslutades. Fältet **Belopp** är inte tillgängligt.
--   **Produktvärdeutfästelse **– Kunden förbinder sig att köpa specifika produkter för ett specifikt belopp. Rader som använder den här utfästelsetypen definieras av ett artikelnummer och av beloppet som har beslutats. Fälten **Kvantitet** och **Enhet** är inte tillgängliga.
+-   **Produktkvantitetsutfästelse**– Kunden förbinder sig att köpa produkter i en specifik kvantitet. Rader som använder den här utfästelsetypen definieras av ett artikelnummer och av kvantiteten och enheten som har beslutades. Fältet **Belopp** är inte tillgängligt.
+-   **Produktvärdeutfästelse**– Kunden förbinder sig att köpa specifika produkter för ett specifikt belopp. Rader som använder den här utfästelsetypen definieras av ett artikelnummer och av beloppet som har beslutats. Fälten **Kvantitet** och **Enhet** är inte tillgängliga.
 -   **Produktkategoriutfästelse** – Kunden förbinder sig att köpa produkter från en specifik försäljningskategori för ett specifikt belopp. Rader som använder den här utfästelsetypen definieras av en försäljningkategori i hierarkin med försäljningkategorier och ett belopp. Fälten **Kvantitet** och **Enhet** är inte tillgängliga.
 -   **Värdeutfästelse** – Kunden förbinder sig att köpa någon produkt eller produkter i någon anskaffningskategori för ett specifikt belopp. Fälten **Kvantitet** och **Enhet** är inte tillgängliga.
 

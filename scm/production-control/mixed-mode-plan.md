@@ -18,10 +18,11 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: d635421112f6d1e79a47090de3ffc4178b36b132
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: e63dd046587f29947c45b12a878ce7108bb1621e
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -42,9 +43,9 @@ Granulariteten av utbudspolicy som används i huvudplanering beror på lagring d
 ## <a name="supply-policies"></a>Utbudspolicyn
 Blandad planering i Dynamics 365 for Operations styr hur produkten levereras samt (baserat på tillgång) hur härledda krav (förbrukning av artiklar från en strukturlista \[BOM\]) utfärdas. Baserat på vilken typ av order automatiskt källor material som matchar kraven.  
 
-Utbudspolicyn kan definieras på produktnivå eller vid någon finkornighet som stöder dina krav. Du definierar granulariteten i utbudspolicyer på **Standard för inställningar ** sidan.  
+Utbudspolicyn kan definieras på produktnivå eller vid någon finkornighet som stöder dina krav. Du definierar granulariteten i utbudspolicyer på **Standard för inställningar** sidan.  
 
-Utbudspolicyn kan styras av produkten, dimensioner (konfiguration, färg och storlek), ort och lager. Denna inställning görs på **posten täckning **sida.  
+Utbudspolicyn kan styras av produkten, dimensioner (konfiguration, färg och storlek), ort och lager. Denna inställning görs på **posten täckning**sida.  
 
 Den standardinställda ordertypen styr i vilken ordning huvudplanering genererar.  
 

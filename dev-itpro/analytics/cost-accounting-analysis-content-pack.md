@@ -3,7 +3,7 @@ title: "Kostnadsredovisningsanalys för Power BI-innehåll"
 description: "Det här avsnittet beskriver vad som ingår i Power BI-innehållet för kostnadsredovisning. Det förklarar hur du öppnar Power BI-rapporter, och ger information om den datamodell och de enheter som användes för att skapa innehållet."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -16,25 +16,31 @@ ms.search.region: Global
 ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: 388b6398488e6f316c1ec07a00182e81c1dc8d08
-ms.openlocfilehash: 50e7bd92ee693f59fd013226aee22bd1a54c81e2
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: be4165f58b17bed0b0984b760fd8eea09267a251
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="cost-accounting-analysis-power-bi-content"></a>Kostnadsredovisningsanalys för Power BI-innehåll
 
+[!include[banner](../includes/banner.md)]
+
+
 Det här avsnittet beskriver vad som ingår i Power BI-innehållet för kostnadsredovisning. Det förklarar hur du öppnar Power BI-rapporter, och ger information om den datamodell och de enheter som användes för att skapa innehållet.
 
 <a name="overview"></a>Översikt
 --------
 
-Microsoft Power BI-innehållet **Kostnadsredovisningsanalys** är avsett för kostnadskontrollanter eller annan som med ansvar för att utföra kostnadskontroll inom en organisation. Det innehåller viktiga mätvärden såsom kostnad, omfattning och kostnadstariff efter verklig kostnad, budgeterad kostnad och kostnad för flexibel budget. Det använder transaktionsdata från kostnadsredovisningen i Microsoft Dynamics 365 for Operations och visar totala kostnader för hela organisationen i en rapporteringsvaluta. Chefer kan filtrera data efter kostnadsobjekt för kostnadskontroll av organisationsenheter, även om organisationen kan ha flera juridiska personer. Eftersom Power BI-innehållet **Kostnadsredovisningsanalys** markerar avvikelser mellan faktiska och budgeterade kostnader, kan chefer meddelas om positiva och negativa trender för deras operativa enheter. Chefer kan gräva ner till hierarkier för kostnadselement eller enskilda kostnadselement för att få detaljerad information om hur kostnadsavvikelser har inträffat, och sedan vidta effektiva åtgärder. Power BI-innehållet **Kostnadsredovisningsanalys** låter kostnadsredovisare analysera kostnadsflödet genom kostnadsobjekt inom hela organisationen. Mer information om kostnadsredovisning finns [Startsida för kostnadsredovisning](/dynamics365/operations/financials/cost-accounting/cost-accounting-home-page.md). Genom att definiera säkerhetsnivån för åtkomst inom kostnadsredovisningen och kombinera den med säkerheten på radnivå i Power BI, beviljar du alla ägare av kostnadsobjekt åtkomst till Power BI-innehållet **Kostnadsredovisningsanalys**. Alla data i de visuella effekterna filtreras sedan baserat på den åtkomstnivå som kontrolleras i kostnadsredovisningen. Mer information om säkerhetsnivån för åtkomst och säkerhet på radnivå, se [Ange säkerhetsinställningar för kostnadsredovisningsinnehåll för Power BI](setup-security-cost-accounting-content-pack.md).
+Microsoft Power BI-innehållet **Kostnadsredovisningsanalys** är avsett för kostnadskontrollanter eller annan som med ansvar för att utföra kostnadskontroll inom en organisation. Det innehåller viktiga mätvärden såsom kostnad, omfattning och kostnadstariff efter verklig kostnad, budgeterad kostnad och kostnad för flexibel budget. Det använder transaktionsdata från kostnadsredovisningen i Microsoft Dynamics 365 for Operations och visar totala kostnader för hela organisationen i en rapporteringsvaluta. Chefer kan filtrera data efter kostnadsobjekt för kostnadskontroll av organisationsenheter, även om organisationen kan ha flera juridiska personer. Eftersom Power BI-innehållet **Kostnadsredovisningsanalys** markerar avvikelser mellan faktiska och budgeterade kostnader, kan chefer meddelas om positiva och negativa trender för deras operativa enheter. Chefer kan gräva ner till hierarkier för kostnadselement eller enskilda kostnadselement för att få detaljerad information om hur kostnadsavvikelser har inträffat, och sedan vidta effektiva åtgärder. Power BI-innehållet **Kostnadsredovisningsanalys** låter kostnadsredovisare analysera kostnadsflödet genom kostnadsobjekt inom hela organisationen. Mer information om kostnadsredovisning finns [Startsida för kostnadsredovisning](/dynamics365/operations/financials/cost-accounting/cost-accounting-home-page). Genom att definiera säkerhetsnivån för åtkomst inom kostnadsredovisningen och kombinera den med säkerheten på radnivå i Power BI, beviljar du alla ägare av kostnadsobjekt åtkomst till Power BI-innehållet **Kostnadsredovisningsanalys**. Alla data i de visuella effekterna filtreras sedan baserat på den åtkomstnivå som kontrolleras i kostnadsredovisningen. Mer information om säkerhetsnivån för åtkomst och säkerhet på radnivå, se [Ange säkerhetsinställningar för kostnadsredovisningsinnehåll för Power BI](setup-security-cost-accounting-content-pack.md).
 
 ## <a name="accessing-the-power-bi-content"></a>Åtkomst till Power BI-innehåll
-Du kan hitta Power BI-innehållet **Kostnadsredovisningsanalys** i biblioteket för gemensamma tillgångar i Microsoft Dynamics Lifecycle Services (LCS). Mer information om hur du hämtar innehållet och kopplar det till dina Microsoft Dynamics 365 for Operations-data, se [Power BI-innehåll i LCS från Microsoft och dina partner](power-bi-content-microsoft-partners.md). **Obs!** KB4011327 ** **är en förutsättning för Power BI-innehållet **Kostnadsredovisningsanalys**.  När du loggar in till Lifecycle Services får du åtkomst till KB här: <https://fix.lcs.dynamics.com/issue/results/?q=kb4011327>.
+Du kan hitta Power BI-innehållet **Kostnadsredovisningsanalys** i biblioteket för gemensamma tillgångar i Microsoft Dynamics Lifecycle Services (LCS). Mer information om hur du hämtar innehållet och kopplar det till dina Microsoft Dynamics 365 for Operations-data, se [Power BI-innehåll i LCS från Microsoft och dina partner](power-bi-content-microsoft-partners.md). 
+
+> OBS - **KB4011327** är ett krav för detta Power BI-innehåll. När du loggar in till Lifecycle Services får du åtkomst till KB här: <https://fix.lcs.dynamics.com/issue/results/?q=kb4011327>.
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mått som ingår i Power BI-innehållet
 Innehållet omfattar en uppsättning rapportsidor. Sidorna består av en uppsättning mått som visualiseras som diagram, brickor och tabeller. Följande register ger en översikt över de visuella effekterna i Power BI-innehållet **Kostnadsredovisningsanalys**.
@@ -117,5 +123,7 @@ Nedan följer några användbara länkar som är relaterade till enheter och til
 -   [Datamodeller med hjälp av Power BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
 -   [Lägga till Power BI-rutor till arbetsytor](configure-power-bi-integration.md)
 -   [Ställa in säkerhet för kostnadsredovisningsinnehåll för Power BI](setup-security-cost-accounting-content-pack.md)
+
+
 
 

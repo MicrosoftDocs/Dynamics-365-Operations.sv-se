@@ -16,10 +16,11 @@ ms.search.region: global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: a639e509cf6a3d2f1b850f27481d7b95546522b8
-ms.openlocfilehash: b62e14f7c91692ae97bb332b38b0deeb328cc1bd
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 0e3484ee731423798e686b9a70f4f09b5c3c45b4
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -39,9 +40,9 @@ Den godkända budgeten för ett rättssubjekt är kvar i ett dokument som kallas
 Det finns flera metoder för att skapa budgetregisterposter i Dynamics 365 for Operations:
 
 -   Ange information om **budgeten registrera poster** sida.
--   Använd Microsoft Excel mallen som du kan öppna genom att klicka på**Öppna i Excel-** knappen på **budgeten registrera poster** sida.
--   Använd**Budgetkonto poster** data i Data Management (Datahantering) för att importera poster i registret. Du bör överväga att använda denna metod och att aktivera parameterns **Uppsättningsbaserad** **bearbetningsparameter** när du måste importera budgetkontoposter i systemet.
--   Om företaget använder Budget planeringsfunktionen för att förbereda budgeten data, kan du använda funktionen**Generera budget registret** regelbundet återkommande process.
+-   Använd Microsoft Excel mallen som du kan öppna genom att klicka på **Öppna i Excel-**knappen på **budgeten registrera poster** sida.
+-   Använd **Budgetkonto poster** data i Data Management (Datahantering) för att importera poster i registret. Du bör överväga att använda denna metod och att aktivera parameterns **Uppsättningsbaserad** **bearbetningsparameter** när du måste importera budgetkontoposter i systemet.
+-   Om företaget använder Budget planeringsfunktionen för att förbereda budgeten data, kan du använda funktionen **Generera budget registret** regelbundet återkommande process.
 
 Budgetregisterposten anses slutförd när budgetsaldona har uppdaterats. På sidan **Budgetregisterposter** klickar du på **Uppdatera budgetsaldon** för en vald budgetregisterpost eller flera poster. När du uppdaterar budgetsaldon, budgetens status registret ändras till **Avslutad**. Klar budget registret kan inte öppnas för redigering. Därför, om budget data måste justeras, måste du skapa en ny budget registret i stället för att korrigera data i den färdiga budgeten registret.
 
@@ -57,7 +58,7 @@ Definiera en *budgetmodell* som motsvarar hela eller en del av budgeten. Du kan 
 > [!NOTE] 
 > Om budgetkontroll används kan du bara associera en enda budgetmodell med en specifik tidsrymd för budgetcykel. 
 
-Skapa *budget koder *som identifierar typ av budgettransaktioner till urkunden och tillhörande arbetsflöde. Budget koder kan stödja följande budgetposter:
+Skapa *budget koder* som identifierar typ av budgettransaktioner till urkunden och tillhörande arbetsflöde. Budget koder kan stödja följande budgetposter:
 
 -   Ursprunglig budget
 -   Överför
@@ -74,11 +75,11 @@ Du kan också ställa in *Budgetöverföringsregler* (valfritt). Om du vill anv�
 Den budgetansvarige kan granska det aktuella tillståndet för en budget i **huvudboken budgetar och prognoser som** arbetsyta. **Kostnader över budget** och **intäkterna under budget** flikar ger en snabb överblick över den ekonomiska dimensionen kombinationer där budgetmål inte uppfylls eller närmar sig gränsen. Du kan anpassa budgeten tröskelprocentsats och finansiella mått som används på dessa flikar genom att klicka på **Konfigurera min arbetsyta**. Du kan klicka på **enheten chefer** att se de anställda som är ansvariga för specifik ekonomisk dimension kombinationer som är vald på dessa flikar. Om du till exempel ser att budget för den operativa avdelningen går över budget tröskelvärde kan du enkelt hitta och kontakta avdelningen för att diskutera frågan. 
 
 > [!NOTE] 
-> Fältet **Avdelningschef** på sidan **Organisationsenheter** bestämmer vilka chefer som hanterar specifika ekonomiska dimensionskombinationer. Klicka på **Se mer** längst ner på fliken för att öppna**Budget vs actuals** undersökning sidan för mer information om budget kontra faktiska belopp. 
+> Fältet **Avdelningschef** på sidan **Organisationsenheter** bestämmer vilka chefer som hanterar specifika ekonomiska dimensionskombinationer. Klicka på **Se mer** längst ner på fliken för att öppna **Budget kontra utfall** undersökning sidan för mer information om budget kontra faktiska belopp. 
 
-Den **faktiska vs budget** undersökning sidan kan du borra i detaljerna i budgeten kontra faktiska belopp. Markera en rad på förfrågan och klicka sedan **periodsaldon** att se budget och faktiska belopp fördelade över verksamhetsåret perioder. **Budgetkontot poster**sida ger djupare genom att detaljerna i budgeten beloppet i budgeten registrera poster. **Allmänna journalposter** sidan öppnar reskontratransaktioner som ingår i beräknade **faktiska** belopp. 
+Den **faktiska vs budget** undersökning sidan kan du borra i detaljerna i budgeten kontra faktiska belopp. Markera en rad på förfrågan och klicka sedan **periodsaldon** att se budget och faktiska belopp fördelade över verksamhetsåret perioder. **Budgetkontot poster** sida ger djupare genom att detaljerna i budgeten beloppet i budgeten registrera poster. **Allmänna journalposter** sidan öppnar reskontratransaktioner som ingår i beräknade **faktiska** belopp. 
 
-Ett företag som använder Budget planeringsfunktionen kan skapa och använda *budget prognoser *i **huvudboken budgetar och prognoser som** arbetsyta.
+Ett företag som använder Budget planeringsfunktionen kan skapa och använda *budget prognoser* i **huvudboken budgetar och prognoser som** arbetsyta.
 
 
 

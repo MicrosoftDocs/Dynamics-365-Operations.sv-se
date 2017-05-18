@@ -18,10 +18,11 @@ ms.search.industry: Manufacturing
 ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 1a8cbe01bb774ac7fc4aac721dca00674852197f
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 3592f3c076681c5b755b62383212bbe6d158f62d
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -50,7 +51,7 @@ Kostnadsgruppssegmentering kan också tillämpas på varianter av en standardkos
 En kostnadsgrupp kan tilldelas en kostnadsgruppstyp och ett beteende för extra segmenteringssyften.
 
 -   **Typ av kostnadsgrupp** − Varje kostnadsgrupp måste tilldelas en kostnadsgruppstyp, som bestämmer kostnadsgruppen som hänför sig till direkt material, direkt tillverkning, eller direkt outsourcing eller utse den som indirekt eller odefinierad. En kostnadsgrupp som är utsedd som direkt material kan tilldelas artiklar. En kostnadsgrupp för direkttillverkning kan tilldelas kostnadskategorier. En direktkontrakterad kostnadsgrupp kan tilldelas till en serviceprodukttyp som gör att du kan klassificera kostnader som är associerade med tjänstinköpet till legotillverkningsaktiviteter. En indirekt kostnadsgrupp kan tilldelas indirekta kostnader för tillägg eller tariffer. En kostnadsgrupp som är odefinierad kan tilldelas artiklar, kostnadskategorier eller indirekta kostnader. Tilldelningen av en kostnadsgrupptyp fyller flera syften. Först begränsar det kapaciteten att tilldela en kostnadsgrupp och visa en lista över tillämpliga kostnadsgrupper. För det andra innehåller det ytterligare segmentering för rapporteringsändamål. För det tredje kan den användas för att tilldela redovisningskonton för avvikelser.
--   **Beteende** − Varje kostnadsgrupp kan också tilldelas ett beteende för att ange att kostnadsgruppen ska gälla fasta kostnader eller variabla kostnader. En kostnadsgrupp som har ett null-värde för beteende behandlas som en variabel kostnad. Tilldelningen av beteende har bara ett rapporteringssyfte. Kostnader kan till exempel visas med segmentering av fasta och variabla kostnader i kostnadsredovisningen, och på sidan** Kostnader samlade efter kostnadsgrupp**. Om du tilldelar ett avkastningsmål i form av en procentsats till varje kostnadsgrupp ger strukturlisteberäkningen ett föreslaget försäljningspris utifrån en kostnad plus pålägg-metod.
+-   **Beteende** − Varje kostnadsgrupp kan också tilldelas ett beteende för att ange att kostnadsgruppen ska gälla fasta kostnader eller variabla kostnader. En kostnadsgrupp som har ett null-värde för beteende behandlas som en variabel kostnad. Tilldelningen av beteende har bara ett rapporteringssyfte. Kostnader kan till exempel visas med segmentering av fasta och variabla kostnader i kostnadsredovisningen, och på sidan**Kostnader samlade efter kostnadsgrupp**. Om du tilldelar ett avkastningsmål i form av en procentsats till varje kostnadsgrupp ger strukturlisteberäkningen ett föreslaget försäljningspris utifrån en kostnad plus pålägg-metod.
 
 
 

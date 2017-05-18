@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: eab840b2974f4e9e8cf542c146482ba8e4239079
-ms.openlocfilehash: acf7bacf6e95725024ff0a542a059349593d01a0
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 51f45ce0953f31e0573833ba41d9e0b5ac43bfbb
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -64,7 +65,7 @@ Först måste du definiera bankutdragets formatbearbetningsgrupp för ISO20022-b
 1.  Gå till **Arbetsytor** &gt; **Datahantering**.
 2.  Klicka på **Importera**.
 3.  Ange ett namn på formatet såsom **ISO20022**.
-4.  Ställ in fältet **Källdataformat ** på **XML-element**.
+4.  Ställ in fältet **Källdataformat** på **XML-element**.
 5.  Ställ in fältet **Enhetsnamn** på **Bankutdrag**.
 6.  Om du vill hämta importfilerna klickar du på **Överför** och bläddrar till filen **SampleBankCompositeEntity.xml** som du sparade tidigare och markerar den.
 7.  När bankutdragsenheten överförs och mappningen är slutförd ska du klicka på åtgärden **Visa mappning** för enheten.
@@ -97,7 +98,7 @@ Först måste du definiera bankutdragets formatbearbetningsgrupp för MT940-bank
 1.  Gå till **Arbetsytor** &gt; **Datahantering**.
 2.  Klicka på **Importera**.
 3.  Ange ett namn på formatet såsom **MT940**.
-4.  Ställ in fältet **Källdataformat ** på **XML-element**.
+4.  Ställ in fältet **Källdataformat** på **XML-element**.
 5.  Ställ in fältet **Enhetsnamn** på **Bankutdrag**.
 6.  Om du vill hämta importfilerna klickar du på **Överför** och bläddrar sedan till filen **SampleBankCompositeEntity.xml** som du sparade tidigare och markerar den.
 7.  När bankutdragsenheten överförs och mappningen är slutförd ska du klicka på åtgärden **Visa mappning** för enheten.
@@ -133,7 +134,7 @@ Först måste du definiera bankutdragets formatbearbetningsgrupp för BAI2-banku
 1.  Gå till **Arbetsytor** &gt; **Datahantering**.
 2.  Klicka på **Importera**.
 3.  Ange ett namn på formatet såsom **BAI2**.
-4.  Ställ in fältet **Källdataformat ** på **XML-element**.
+4.  Ställ in fältet **Källdataformat** på **XML-element**.
 5.  Ställ in fältet **Enhetsnamn** på **Bankutdrag**.
 6.  Om du vill hämta importfilerna klickar du på **Överför** och bläddrar sedan till filen **SampleBankCompositeEntity.xml** som du sparade tidigare och markerar den.
 7.  När bankutdragsenheten överförs och mappningen är slutförd ska du klicka på åtgärden **Visa mappning** för enheten.

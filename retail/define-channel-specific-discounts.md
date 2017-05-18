@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: RetailAffiliationPriceGroup, RetailCatalogPriceGroup, RetailChannelPriceGroup, RetailDiscountPriceGroup, RetailDiscountPricingWorkspace, RetailPeriodicDiscount, RetailStoreItemPriceList, RetailStoreTable
 audience: Application User
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 16401
 ms.assetid: d807fd51-86aa-47a0-8e00-6c5ddd21ff6b
 ms.search.region: global
@@ -19,15 +19,19 @@ ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: b21fd97426b331726c12ea29f89817a46dd445c3
-ms.openlocfilehash: b2f59db59ea49925c3bb5e1d75beee95191220d0
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 6b1f91f863c8da35362ebb3036e76aa10d95ba65
+ms.openlocfilehash: 6e52ba4bdb8e879959ff886010092914332e6e12
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/26/2017
 
 
 ---
 
 # <a name="define-channel-specific-discounts"></a>Definiera kanalspecifika rabatter
+
+[!include[banner](includes/banner.md)]
+
 
 Återförsäljare ställer ofta in olika rabatter i olika kanaler. Det här avsnittet behandlar de koncept du behöver känna till för att skapa en rabatt för en viss kanal. 
 
@@ -39,14 +43,15 @@ ms.lasthandoff: 03/31/2017
 Butik och handel i Microsoft Dynamics 365 for Operations använder prisgrupper för att definiera kanalspecifika rabatter. Prisgrupper kan tilldelas till en eller flera av följande enheter: kanaler, kataloger, anknytningar och bonusprogram. Den här artikeln diskuterar kanaler, men samma koncept gäller för katalograbatter, anknytningsrabatter och lojalitetsrabatter.
 
 ## <a name="price-groups"></a>Prisgrupper
-\[caption id="attachment\_256084" align="alignnone" width="640"\][![Prisgrupper](./media/price-groups-1024x608.png)](./media/price-groups.png) Prisgruppslänkar för Butik\[/caption\]
+
+[![Prisgrupper](./media/price-groups-1024x608.png)](./media/price-groups.png)
 
 Diagrammet ovan visar relationen mellan enheter som kan göras för en transaktion (kanal, katalog, anknytning, kund, bonuskort) och de olika rabattyper som kan konfigureras. Alla transaktioner uppstår i en kanal, varför kanalen garanterat finns med i en transaktion. De återstående enheterna är valfria. På varje huvuddatasida finns en länk till en relaterad prisgruppssida där du kan visa och lägga till prisgrupper efter behov. En prisgrupp används för koppling av fyra olika typer av enheter till rabatter, prisjusteringar och handelsavtal. Vi rekommenderar att du planerar en strategi för hur du ska namnge dina prisgrupper för att hålla ordning på dem. Ett alternativ är att använda ett bokstavs- eller sifferprefix/-suffix för att skilja mellan de olika typerna. Exempelvis 1-xxxxx för kanal prisgrupper och 2-xxxxx för katalogprisgrupper. Det finns fyra förfrågningssidor som fokuserar på var och en av återförsäljarenheterna som kan ha associerade rabatter.
 
--   **Prisgrupper för butikskanal **– På den här sidan visas en lista med kanaler och rabatter som är länkade för varje prisgrupp.
--   **Katalogprisgrupper **– På den här sidan visas en lista med kataloger och rabatter som är länkade för varje prisgrupp.
--   **Bonusprisgrupper **– På den här sidan visas en lista med bonusprogram och rabatter som är länkade för varje prisgrupp.
--   **Anknytningsprisgrupper **– På den här sidan visas en lista med anknytningar och rabatter som är länkade för varje prisgrupp.
+-   **Prisgrupper för butikskanal**– På den här sidan visas en lista med kanaler och rabatter som är länkade för varje prisgrupp.
+-   **Katalogprisgrupper**– På den här sidan visas en lista med kataloger och rabatter som är länkade för varje prisgrupp.
+-   **Bonusprisgrupper**– På den här sidan visas en lista med bonusprogram och rabatter som är länkade för varje prisgrupp.
+-   **Anknytningsprisgrupper**– På den här sidan visas en lista med anknytningar och rabatter som är länkade för varje prisgrupp.
 
 ## <a name="example-channel-discount-set-up"></a>Inställningar för exempelkanalrabatt
 Följande exempel illustrerar uppgifterna som ingår i konfigurationen av en kanalrabatt.
@@ -63,5 +68,7 @@ Följande exempel illustrerar uppgifterna som ingår i konfigurationen av en kan
 --------
 
 [Prisjusteringar och rabatter](price-adjustments-discounts.md)
+
+
 
 

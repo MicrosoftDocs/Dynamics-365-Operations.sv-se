@@ -3,7 +3,7 @@ title: "Konfiguration av lagerställe"
 description: "Det här avsnittet innehåller information om hur du konfigurerar ett lagerställe. Det inkluderar information om att aktivera ett lagerställes layout och lagerställeprocesser."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-10-30 12 - 52 - 43
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -17,19 +17,23 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: afa59439e06aad9d669eb352a9837a013f447249
-ms.openlocfilehash: 437f2348603db432df6d7589e4043d8145c52a1e
-ms.lasthandoff: 03/30/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: e312f953d6a29d26b98794ed213d6ec70f6aa4b7
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="warehouse-configuration"></a>Konfiguration av lagerställe
 
+[!include[banner](../includes/banner.md)]
+
+
 Det här avsnittet innehåller information om hur du konfigurerar ett lagerställe. Det inkluderar information om att aktivera ett lagerställes layout och lagerställeprocesser.
 
-**Anm.:** Den här artikeln gäller funktioner i modulen** Lagerstyrning** (avancerad lagerstyrning). Den gäller inte lagerställefunktioner i modulen** Lagerhantering**.
+**Anm.:** Den här artikeln gäller funktioner i modulen**Lagerstyrning** (avancerad lagerstyrning). Den gäller inte lagerställefunktioner i modulen**Lagerhantering**.
 
 ## <a name="warehouse-layout"></a>Layout för lagerställe
 Lagerhanteringssystemet i Microsoft Dynamics 365 for Operations ger flexibla sätt att definiera lagerställets layout för att uppfylla föränderliga behov, så att du kan uppnå en optimal lagereffektivitet.
@@ -75,7 +79,12 @@ Som en del av konfigurationen för lagerstället är det viktigt att du aktivera
 
 Vågmallar gör det enklare att aktivera den utgående processen Släpp till lagerställe. Så snart orderrader släpps (antingen direkt från källdokument, med buntjobbprocesser eller med laster som redan har skapats) används vågmallfunktionen. 
 
-Du kan skapa tre typer av påfyllnadsmallar: **Leverans**, **Produktionsorder**, och **Kanban**. Parametrarna används för att definiera hur långt systemet ska gå automatiskt i bearbetning av utgående arbete. En vågmall är väljs utifrån vågmallsekvensen och kriterier som anges i mallen. Om en mall anges överst i sekvensen kontrolleras villkoren i mallen först. Om villkoren uppfylls bearbetas vågmallen. Annars kontrolleras villkoren i nästa mall osv. Därför är det en bra idé att placera mallen med det mest specifika villkoret längst upp i listan med vågmallsekvensen så att den bearbetas först. Du vill kanske bearbeta allt arbete för ett specifikt transportföretag idag och tillfälligt försena bearbetning av arbetet för andra transportföretag. I det här fallet ska vågmallen som väljer arbete för transportföretaget anges högre i sekvensen än annan mallar. Annars kan arbetet för andra transportföretag bearbetas innan arbetet för det transportföretaget har slutförts. 
+Du kan skapa tre typer av påfyllnadsmallar: 
+-   **Leverans**
+-   **Produktionsorder**
+-   **Kanban** 
+
+Parametrarna används för att definiera hur långt systemet ska gå automatiskt i bearbetning av utgående arbete. En vågmall är väljs utifrån vågmallsekvensen och kriterier som anges i mallen. Om en mall anges överst i sekvensen kontrolleras villkoren i mallen först. Om villkoren uppfylls bearbetas vågmallen. Annars kontrolleras villkoren i nästa mall osv. Därför är det en bra idé att placera mallen med det mest specifika villkoret längst upp i listan med vågmallsekvensen så att den bearbetas först. Du vill kanske bearbeta allt arbete för ett specifikt transportföretag idag och tillfälligt försena bearbetning av arbetet för andra transportföretag. I det här fallet ska vågmallen som väljer arbete för transportföretaget anges högre i sekvensen än annan mallar. Annars kan arbetet för andra transportföretag bearbetas innan arbetet för det transportföretaget har slutförts. 
 
 Du måste ange vågprocessmetoderna i varje vågmall. Metoderna som är tillgängliga varierar beroende på vågmalltypen.
 
@@ -107,6 +116,8 @@ Gör det enklare och snabbare att definiera åtgärder som är knutna till varje
 <a name="see-also"></a>Se även
 --------
 
-[Konfigurera platser på ett WMS-aktiverat lagerställe (uppgiftsguiden)](https://ax.help.dynamics.com/en/wiki/configure-locations-in-a-wms-enabled-warehousing/)
+[Konfigurera platser på ett WMS-aktiverat lagerställe (uppgiftsguiden)](https://ax.help.dynamics.com/en/wiki/configure-locations-in-a-wms-enabled-warehouse/)
+
+
 
 

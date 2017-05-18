@@ -18,10 +18,11 @@ ms.search.region: global
 ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 388b6398488e6f316c1ec07a00182e81c1dc8d08
-ms.openlocfilehash: b3e8174d07c9b9fd4210486c369c640fe07c49eb
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: abe9212372fb7429d68c1fb6b32ec1d15c20a6d7
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -47,7 +48,7 @@ ER-motorn har följande funktioner:
 ## <a name="concepts"></a>Begrepp
 ### <a name="components"></a>Komponenter
 
-ER stöder två typer av komponenter: **Datamodell **och **Format **.
+ER stöder två typer av komponenter: **Datamodell**och **Format**.
 
 #### <a name="data-model-components"></a>Datamodellkomponenter
 
@@ -67,7 +68,7 @@ Observera att affärsenheter (såsom företags- och betalningstransaktioner) ska
 -   Den har stöd för användardefinierade indataparametrar som kan definieras som datakällor för datamodeller när vissa data måste specificeras vid körning.
 -   Den stöder omvandlingen av Dynamics 365 for Operations-data till erforderliga grupper, filtrerar, sorterar och sammanställer data, och tillför även logiskt beräknade fält som skapas med Microsoft Excel-liknande formler (för mer information, se [Formeldesigner i elektronisk rapportering](general-electronic-reporting-formula-designer.md)).
 
-[![Excel-like formula editor](./media/pic-formula-1024x615.png)](./media/pic-formula.png) En datamodellkomponent skapas för varje affärsdomän som ska användas som en förenad datakälla för rapportering och som isolerar rapporteringen från den fysiska implementeringen av Dynamics 365 for Operations-datakällor. Den representerar dessutom domänspecifika affärskoncept och funktioner i ett format som gör rapporteringsformatets ursprungliga design och ytterligare underhåll mer effektivt.
+[![Excel-liknande formelredigerare](./media/pic-formula-1024x615.png)](./media/pic-formula.png) En datamodellkomponent skapas för varje affärsdomän som ska användas som en förenad datakälla för rapportering och som isolerar rapporteringen från den fysiska implementeringen av Dynamics 365 for Operations-datakällor. Den representerar dessutom domänspecifika affärskoncept och funktioner i ett format som gör rapporteringsformatets ursprungliga design och ytterligare underhåll mer effektivt.
 
 #### <a name="format-components"></a>Formatkomponenter
 
@@ -173,7 +174,7 @@ Spela upp ER-uppgiftsguiden **Använda format för att generera elektroniska dok
 
 ### <a name="importing-an-er-component-from-lcs-to-use-it-internally"></a>Importera en ER-komponent från LCS och använda den internt
 
-Med hjälp av ER kan du importera ER-komponenter från LCS till den aktuella Dynamics 365 for Operations-instansen. Det krävs en databas av typen **LCS-projekt ** för detta. När en ER-komponent har importerats från LCS till den aktuella Dynamics 365 for Operation-instansen blir ägaren av instansen en konsument av den tjänst som tillhandahålls av ägaren (skaparen) till den importerad komponenten. Om formatkomponenten exempelvis har utformats för att generera specifika elektroniska dokument från Dynamics 365 for Operation i ett lands- eller regionsspecifikt format (lokaliseringsscenario), förmodas tjänstkonsumenten hämta alla uppdateringar som görs i det formatet så att det uppfyller alla rättsliga krav. Spela upp ER-uppgiftsguiden för **Importera en konfiguration från Lifecycle Services** (del av affärsprocessen **7.5.4.3 Anskaffa/utveckla komponenter för IT-tjänster eller -lösningar (10677)**) för att bekanta dig med detaljerna i det här scenariot.
+Med hjälp av ER kan du importera ER-komponenter från LCS till den aktuella Dynamics 365 for Operations-instansen. Det krävs en databas av typen **LCS-projekt** för detta. När en ER-komponent har importerats från LCS till den aktuella Dynamics 365 for Operation-instansen blir ägaren av instansen en konsument av den tjänst som tillhandahålls av ägaren (skaparen) till den importerad komponenten. Om formatkomponenten exempelvis har utformats för att generera specifika elektroniska dokument från Dynamics 365 for Operation i ett lands- eller regionsspecifikt format (lokaliseringsscenario), förmodas tjänstkonsumenten hämta alla uppdateringar som görs i det formatet så att det uppfyller alla rättsliga krav. Spela upp ER-uppgiftsguiden för **Importera en konfiguration från Lifecycle Services** (del av affärsprocessen **7.5.4.3 Anskaffa/utveckla komponenter för IT-tjänster eller -lösningar (10677)**) för att bekanta dig med detaljerna i det här scenariot.
 
 ### <a name="building-a-format-selecting-another-format-as-a-base-customization"></a>Att bygga ett format att välja ett annat format som bas (anpassning)
 

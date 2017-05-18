@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 9db73514d71239d75dc63fcf6e9f45923b1272f4
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: c65f7e44459478cac7663575abe588ad057f18e0
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -76,7 +77,7 @@ De data som du använder när du beräknar tariffer i Microsoft Dynamics 365 for
 
 ## <a name="do-all-engine-configurations-require-metadata"></a>Kräver alla motorkonfigurationer metadata?
 Nej, transporthanteringsmotorer som används för att hämta data som krävs för tariffberäkningen från externa system behöver inte metadata. Tariffdata för dessa motorer kan hämtas från externa transportföretags system, vanligen via en webbtjänst. Du kan till exempel använda en milkostnadsmotor som kan hämta data direkt från Bing-kartor, så att du inte behöver metadata för denna motor.
-| **Obs! **                                                                                                                                                                                                                                                                                                                                                                     |
+| **Obs!**                                                                                                                                                                                                                                                                                                                                                                     |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | De transporthanteringsmotorer som levereras med Microsoft Dynamics 365 for Operations är beroende av data som hämtas från programmet. Motorer som ansluter till externa system inkluderas inte i Operations. Med den motorbaserade utvidgningsmodellen kan du dock bygga tillägg med hjälp av Microsoft Dynamics 365 for Operations Visual Studio Tools. |
 

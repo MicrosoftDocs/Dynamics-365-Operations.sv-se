@@ -17,10 +17,11 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: 79a43c35691f16d773b88faad63c4ab79cb93f1f
-ms.openlocfilehash: c6fb3922ba2c4b15f1043d0bcbac40ff2da9a469
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 82891b44a3ba3da23f3ce7a9b86be5e8f88d2afd
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -553,7 +554,7 @@ Enligt aktuella säkerhetskrav ska följande inställningar användas i en produ
 -   Endast Transport Layer Security (TLS) version 1.2 (eller den aktuella versionen av högsta) ska aktiveras och användas. **Anmärkning:** SSL och alla version TLS utom 1,2 TLS är inaktiverat som standard. Gör så här om du vill redigera eller aktivera dessa värden:
     1.  Tryck på Windows-tangenten + R för att öppna ett **kör**-fönster.
     2.  I **öppna** ange **Regedit**, och klicka sedan på **OK**.
-    3.  Om meddelanderutan **User Account Control** visas klickar du på **Ja**.
+    3.  Om meddelanderutan **Kontroll av användarkonto** visas klickar du på **Ja**.
     4.  I den **Registereditorn** fönstret, gå till **HKEY\_lokala\_MACHINESystemCurrentControlSetSecurityProvidersSCHANNELProtocols**. Följande tangenter infogas automatiskt så att du bara kan ange TLS 1.2:
         -   TLS 1.2Server:Enabled=1
         -   TLS 1.2Server:DisabledByDefault=0

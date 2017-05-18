@@ -19,10 +19,11 @@ ms.search.industry: Manufacturing
 ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 3d02a15387231160f5b8a237aa11008b91ef1223
-ms.openlocfilehash: 3a82fdb8532c79e33c167c43554a3de7d3061fcb
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 34bebe1f7a324f2d77668d0eb3d6b2303f2544a4
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -64,7 +65,7 @@ I följande uttryck är målet för beräkningen längden på en elsladd, och in
 
 **Uttryck:** \[If Color == "Green", 1.5, 1.0\]  
 
-När du konfigurerar artikeln, anges elsladdens längd som **1,5** om du anger **Green** som värdet för färgattributet. Om du anger en annan färg, är längden **1,0**. Eftersom beräkningar är enkelriktade ställer beräkningen inte in värdet för färgattributet till **Grön** när du anger en längd på **1,5**.
+När du konfigurerar artikeln, anges elsladdens längd som **1,5** om du anger **Grön** som värdet för färgattributet. Om du anger en annan färg, är längden **1,0**. Eftersom beräkningar är enkelriktade ställer beräkningen inte in värdet för färgattributet till **Grön** när du anger en längd på **1,5**.
 
 ## <a name="what-happens-if-a-calculation-has-a-target-attribute-of-the-integer-type-but-a-calculation-generates-a-decimal-number"></a>Vad händer om en beräkning har ett målattribut av heltalstypen men en beräkning skapar ett decimaltal?
 Om ett målattribut är av heltalstypen, men en beräkning skapar ett decimaltal, returneras bara heltalsdelen på det beräknade resultatet. Decimalerdelen tas bort och resultatet avrundas inte. Ett resultat på 12,70 visas till exempel som 12.

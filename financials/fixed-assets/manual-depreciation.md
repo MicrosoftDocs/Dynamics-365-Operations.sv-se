@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: 96d0ae3be15c792b04eae901577b160d1532801c
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: e0648d7f89b3e3a1f8fee6501ceb7443be16aa1a
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -40,7 +41,7 @@ När du ställer in en avskrivningsprofil för anläggningstillgångar och välj
 -   Halvårsvis
 -   Dagligen
 
-När du har valt periodfrekvens klickar du på **Manuella tidsplaner**och ställer in procenttal frö varje bokföringsintervall. Tillsammans definierar de manuella tidsplanerna och bokföringsintervallen avskrivningsbeloppet, enligt exemplen senare i den här artikeln. Manuell avskrivning beräknas alltid i procent av anskaffningspriset. För manuell avskrivning behöver de avskrivningsintervall du anger inte utgöra 100 procent. Manuell avskrivning är en flexibel avskrivningsmetod som ofta används för att definiera en extraordinär avskrivningsprofil på sidan **Books**, till exempel en icke-periodisk avskrivning av speciella skäl (kanske skatteskäl).
+När du har valt periodfrekvens klickar du på **Manuella tidsplaner**och ställer in procenttal frö varje bokföringsintervall. Tillsammans definierar de manuella tidsplanerna och bokföringsintervallen avskrivningsbeloppet, enligt exemplen senare i den här artikeln. Manuell avskrivning beräknas alltid i procent av anskaffningspriset. För manuell avskrivning behöver de avskrivningsintervall du anger inte utgöra 100 procent. Manuell avskrivning är en flexibel avskrivningsmetod som ofta används för att definiera en extraordinär avskrivningsprofil på sidan **Böcker**, till exempel en icke-periodisk avskrivning av speciella skäl (kanske skatteskäl).
 
 ## <a name="examples"></a>Exempel
 Anskaffningspris: 11 000,00 Förväntat skrotvärde: 1 000,00 Följande tabell visar de intervall och procentsatser som du ställer in på sidan **Tidsplaner för anläggningstillgångens avskrivningsprofil**.
@@ -59,7 +60,7 @@ Följande tabell visar hur avskrivningen för varje intervall beräknas.
 | 2                | (11 000–1 000) × 50 % = 5 000                | 5 000 (10 000–5 000)                    |
 | 3                | (11 000–1 000) × 8 % = 800                   | 4 200 (5 000–800)                       |
 
-Om du väljer **Varje månad** i fältet ** Periodfrekvens** ställer du in 12 manuella schemaintervall. Följande tabell visar avskrivningsbeloppen för de två första intervallen.
+Om du väljer **Varje månad** i fältet **Periodfrekvens** ställer du in 12 manuella schemaintervall. Följande tabell visar avskrivningsbeloppen för de två första intervallen.
 
 | Intervall | Avskrivningsbelopp            |
 |----------|--------------------------------|

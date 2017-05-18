@@ -18,10 +18,11 @@ ms.search.industry: Manufacturing
 ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 9d3f356b62d272fef7d0f131c9e29605f1be5c6b
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 0188d3e7e856b2881cdafe0ef33d791eb1e789f9
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -37,7 +38,7 @@ En kostnadsredovisning är en formaterad visning av information om kostnaden fö
 -   **Definiera formatet för kostnadsredovisningen.** Det användardefinierade formatet för en kostnadsredovisning identifierar segmenteringen av kostnaderna som innehåller en tillverkad artikels kostnad för sålda varor. T.ex. informationen om kostnader för sålda varor kan segmenteras till material, arbete och omkostnader som baseras på kostnadsgrupper. Dessa kostnadsgrupper har tilldelats artiklar, kostnadskategorier för flödesoperationer och formler för indirekt kostnadsberäkning. Formatet för kostnadsredovisningen kräver normalt mellanliggande summor när flera kostnadsgrupper har definierats. Du kan till exempel lägga till flera kostnadsgrupper som är relaterade till material. Definitionen av en kostnadsredovisning är valfri, men kostnadsredovisningsformatet måste definieras om indirekta kostnader ska beräknas.
 -   **Definiera grunden för beräkning av indirekta kostnader.** Indirekta kostnader återspeglar tillverkningsomkostnader som associeras med produktionen av en tillverkad artikel. En beräkningsformel för indirekta kostnader kan uttryckas som ett tillägg eller en tariff. Ett tillägg representerar ett procentvärde, medan en tariff representerar ett belopp per timme för en flödesoperation. En kostnadsgrupp definierar grunden för beräkningsformeln, till exempel 100 procents tillägg för en arbetskostnadsgrupp eller 500 kronors timtaxa för en maskinkostnadsgrupp. Om du vill definiera en beräkningsformel och dess kostnadsgruppsgrunder, kräver inställningarna för kostnadsredovisningen att du identifierar kostnadsgruppen som representerar omkostnaden och att du väljer att använda tillägg eller tariff.
 
-Varje beräkningsformel måste anges som en kostnadspost. Kostnadsposten består av en angiven kostnadsredovisningsversion, en tilläggsprocent eller ett tariffbelopp, kostnadsgruppsgrunden, ett statusvärde och ett giltighetsdatum. När en artikelkostnadspost först registreras har den status **Väntande** och ett giltighetsdatum. När kostnadsposten aktiveras uppdateras status så att posten är den aktuella aktiva posten och giltighetsdatumet uppdateras till aktiveringsdatumet. Kostnadsposten kan även ange en site för en sitespecifik beräkningsformel. Alternativt kan du lämna fältet **Site** tomt om du vill ange att beräkningsformeln är en företagsomfattande formel. Kostnadsposten kan också bestå av en angiven artikel eller en artikelgrupp när beräkningsformeln har markerats som en formel per artikel. 
+Varje beräkningsformel måste anges som en kostnadspost. Kostnadsposten består av en angiven kostnadsredovisningsversion, en tilläggsprocent eller ett tariffbelopp, kostnadsgruppsgrunden, ett statusvärde och ett giltighetsdatum. När en artikelkostnadspost först registreras har den status **Väntande** och ett giltighetsdatum. När kostnadsposten aktiveras uppdateras status så att posten är den aktuella aktiva posten och giltighetsdatumet uppdateras till aktiveringsdatumet. Kostnadsposten kan även ange en site för en sitespecifik beräkningsformel. Alternativt kan du lämna fältet **Plats** tomt om du vill ange att beräkningsformeln är en företagsomfattande formel. Kostnadsposten kan också bestå av en angiven artikel eller en artikelgrupp när beräkningsformeln har markerats som en formel per artikel. 
 
 De aktuella aktiva kostnadsposterna för beräkningsformler för indirekta kostnader används för uppskattning av produktionsorderkostnader. De används också för beräkning av faktiska kostnader som hör till verklig förbrukningen av tid och material. De pågående kostnadsposterna används i strukturlisteberäkningar för ett framtida datum. 
 

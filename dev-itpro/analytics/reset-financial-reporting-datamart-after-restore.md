@@ -1,9 +1,9 @@
 ---
 title: "Återställa datamart med ekonomisk rapportering när du återställer en databas"
 description: "Det här avsnittet beskrivs hur du återställer datamart med ekonomisk rapportering när du har återställt en Microsoft Dynamics 365 for Operations-databas."
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-12-08 16 - 20 - 13
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -16,15 +16,19 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: 4d6cf88788dcc5e982e509137aa444a020137a5e
-ms.openlocfilehash: 3967cbb869fbb23d5d7716f619e4c22b4a273921
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: d4ce390c62cbfb1f693410b004aa296c0ed75eb2
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="reset-the-financial-reporting-data-mart-after-restoring-a-database"></a>Återställa datamart med ekonomisk rapportering när du återställer en databas
+
+[!include[banner](../includes/banner.md)]
+
 
 Det här avsnittet beskrivs hur du återställer datamart med ekonomisk rapportering när du har återställt en Microsoft Dynamics 365 for Operations-databas. 
 
@@ -43,7 +47,11 @@ Först exporterar du de rapportdesigner som finns i rapportdesignern på följan
 5.  Ange ett filnamn och välj en säker plats där du vill spara de exporterade rapportdefinitionerna.
 6.  Klicka på **Spara**.
 
-Filen kan kopieras eller laddas upp till en säker plats, vilket gör det möjligt att importera den till en annan miljö vid ett senare tillfälle. Information om hur du använder ett Microsoft Azure-lagringskonto finns i [Överföra data med verktyget kommandoradsverktyget AzCopy](https://docs.microsoft.com/en-gb/azure/storage/storage-use-azcopy). **Anmärkning:** Microsoft tillhandahåller inget lagringskonto som en del av ditt Dynamics 365 for Operations-avtal. Du måste antingen köpa ett konto för lagring eller använda ett lagringskonto från en separat Azure-prenumeration. **Viktigt:** Var medveten om hur enheten D fungerar på virtuella Azure-datorer. Förvara inte de exporterade byggblocksgrupperna här permanent. Mer information om tillfälliga enheter finns i [Förstå den tillfälliga enheten på virtuella Windows Azure-datorer](https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/).
+Filen kan kopieras eller laddas upp till en säker plats, vilket gör det möjligt att importera den till en annan miljö vid ett senare tillfälle. Information om hur du använder ett Microsoft Azure-lagringskonto finns i [Överföra data med verktyget kommandoradsverktyget AzCopy](https://docs.microsoft.com/en-gb/azure/storage/storage-use-azcopy). 
+> [!NOTE]
+> Microsoft tillhandahåller inget lagringskonto som en del av ditt Dynamics 365 for Operations-avtal. Du måste antingen köpa ett konto för lagring eller använda ett lagringskonto från en separat Azure-prenumeration. 
+> [!WARNING]
+> Var medveten om hur enheten D fungerar på virtuella Azure-datorer. Förvara inte de exporterade byggblocksgrupperna här permanent. Mer information om tillfälliga enheter finns i [Förstå den tillfälliga enheten på virtuella Windows Azure-datorer](https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/).
 
 ## <a name="stop-services"></a>Stoppa tjänster
 Använda fjärrskrivbordet för att ansluta till alla datorer i miljön och stoppa följande tjänster för Windows via services.msc:
@@ -75,7 +83,7 @@ Kör följande kommando direkt på AOS-datorn för att återställa integratione
 1.  Öppna Windows PowerShell som administratör.
 2.  Kör: F:
 3.  Kör: cd F:\\MRApplicationService\\MRInstallDirectory
-4.  Kör: Import-Module .\\Server\\MRDeploy\\MRDeploy.psd1
+4.  Kör: Importera-Modul .\\Server\\MRDeploy\\MRDeploy.psd1
 5.  Kör: Reset-DatamartIntegration -Reason OTHER -ReasonDetail “&lt;min orsak till att återställa&gt;”
     -   Du uppmanas att ange "Y" för att bekräfta.
 
@@ -96,7 +104,9 @@ Använd services.msc för att starta om tjänsterna som du tidigare har stoppat:
 Importera dina rapportdesigner från Report Designer med den fil som skapades vid exporten:
 
 1.  I Report Designer, gå till **Företag** &gt; **Grupper för byggblock**.
-2.  Välj den grupp med byggblock som du vill exportera och klicka på **Exportera**. **Anmärkning:** För Dynamics 365 for Operations stöds bara en byggblocksgrupp, **Standard**.
+2.  Välj den grupp med byggblock som du vill exportera och klicka på **Exportera**. 
+    > [!NOTE]
+    > För Dynamics 365 for Operations stöds bara en byggblocksgrupp **Standard**.
 3.  Välj byggblocket **Standard** och klicka på **Importera**.
 4.  Välj filen som innehåller de exporterade rapportdefinitionerna och klicka på **Öppna**.
 5.  I dialogrutan Importera väljer du de rapportdefinitioner som du vill importera:
@@ -104,6 +114,8 @@ Importera dina rapportdesigner från Report Designer med den fil som skapades vi
     -   Om du vill importera specifika rapporter väljer du de rader, kolumner, träd eller dimensionsuppsättningar som ska importeras.
 
 6.  Klicka på **Importera**.
+
+
 
 
 

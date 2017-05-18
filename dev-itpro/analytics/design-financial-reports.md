@@ -1,7 +1,7 @@
 ---
 title: Visa och utforma ekonomiska rapporter
-description: "Denna artikel innehåller övningar som förklarar hur du visar och skapar ekonomiska rapporter för Microsoft Dynamics 365 for Operations. Ekonomisk rapportering består av en visningsupplevelse i Dynamics 365 for Operations och en enklicks-rapportdesigner där du kan skapa och redigera ekonomiska rapporter."
-author: twheeloc
+description: "Denna artikel innehåller övningar som förklarar hur du visar och skapar ekonomiska rapporter för Microsoft Dynamics 365 for Operations."
+author: jcart1106
 manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
-ms.reviewer: annbe
+ms.reviewer: shylaw
 ms.search.scope: AX 7.0.0, Operations, Core
 ms.custom: 10814
 ms.assetid: cd5f6483-c09b-4c2d-9336-d22eb6ab6e4f
@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 4d6cf88788dcc5e982e509137aa444a020137a5e
-ms.openlocfilehash: 3319fa0a919ca5e2737319f5cdc4190cf32d59b6
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 6f785ac8b9a8be503bf9122f21716f745b17115b
+ms.openlocfilehash: 635e9e90c63330b3d8b0cc46f16a36fa44ef915d
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/27/2017
 
 
 ---
@@ -182,8 +183,8 @@ I den här övning ska du skapa en ny rapport. Rapporten är en resultaträkning
 18. **Spara** ändringarna och **generera**. När rapporten har genererats och öppnats kan du granska den.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
-[Ekonomisk rapportering](\financials\general-ledger\financial-reporting-getting-started.md) 
-[Visa ekonomiska rapporter](\financials\general-ledger\view-financial-reports.md) 
+[Ekonomisk rapportering](/dynamics365/operations/financials/general-ledger/financial-reporting-getting-started) 
+[Visa ekonomiska rapporter](/dynamics365/operations/financials/general-ledger/view-financial-reports) 
 [Dynamics blogg för ekonomisk rapportering](http://blogs.msdn.com/b/dynamics_financial_reporting/)
 
 

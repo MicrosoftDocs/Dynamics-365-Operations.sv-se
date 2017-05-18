@@ -1,6 +1,6 @@
 ---
 title: Nya uppgiftguider (februari 2016)
-description: "Wikin visar uppgiftsguiderna som publicerades till Microsoft BPM-bibliotek från och med februari 2016.  De publicerade biblioteken innehåller (februari 2016) APQC Unified Library for Microsoft Dynamics 365 for Operations samt (februari 2016) Komma igång."
+description: "Detta avsnitt visar uppgiftsguiderna som publicerades till Microsoft BPM-bibliotek från och med februari 2016.  De publicerade biblioteken innehåller (februari 2016) APQC Unified Library for Microsoft Dynamics 365 for Operations samt (februari 2016) Komma igång."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -16,17 +16,21 @@ ms.search.region: global
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 4d6cf88788dcc5e982e509137aa444a020137a5e
-ms.openlocfilehash: 6462951cba3c289368887a037d4b71187f4523df
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: d9e6620c1f4c808646e6f5c3b9f5b607c64c51df
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="new-task-guides-february-2016"></a>Nya uppgiftguider (februari 2016)
 
-Wikin visar uppgiftsguiderna som publicerades till Microsoft BPM-bibliotek från och med februari 2016.  De publicerade biblioteken innehåller (februari 2016) APQC Unified Library for Microsoft Dynamics 365 for Operations samt (februari 2016) Komma igång.
+[!include[banner](../includes/banner.md)]
+
+
+Detta avsnitt visar uppgiftsguiderna som publicerades till Microsoft BPM-bibliotek från och med februari 2016.  De publicerade biblioteken innehåller (februari 2016) APQC Unified Library for Microsoft Dynamics 365 for Operations samt (februari 2016) Komma igång.
 
 <a name="task-guides-in-the-february-2016-apqc-unified-library-for-microsoft-dynamics-365-for-operations"></a>Uppgiftsguider i (februari 2016) APQC Unified Library för Microsoft Dynamics 365 for Operations
 ---------------------------------------------------------------------------------
@@ -199,7 +203,7 @@ Wikin visar uppgiftsguiderna som publicerades till Microsoft BPM-bibliotek från
 | Fråga om relaterade transaktioner till utrangering av tillgångar                                      | Japan                           |
 | Fråga om avdragsgilla utgifter                                                                         | Japan                           |
 | JP-00005 Inleveransjournal i T-kontoformulär (Japan)                                                       | Japan                           |
-| Underhålla anläggningstillgångshuvuddatafiler för avdragsgilla utgifter                                         | Japan                           |
+| Underhålla Anläggningstillgångshuvuddatafiler för avdragsgilla utgifter                                         | Japan                           |
 | Underhålla försämringsindikatorer för enskilda tillgångar                                                    | Japan                           |
 | Betala en leverantörstransaktion genom att skriva på en kundväxel                                      | Japan                           |
 | Periodisk kvittning av över- eller underavskrivning                                                     | Japan                           |
@@ -311,7 +315,7 @@ Wikin visar uppgiftsguiderna som publicerades till Microsoft BPM-bibliotek från
 | Ställ in och skapa avskrivningsprofiler                   | Globalt             |
 | Ställ in bonusavskrivning                                 | Globalt             |
 | Ställ in avskrivningsregler                                 | Globalt             |
-| Ställ in anläggningstillgångsgrupper                                 | Globalt             |
+| Ställ in Anläggningstillgångsgrupper                                 | Globalt             |
 | Ställ in bokföringsprofiler för anläggningstillgångar                       | Globalt             |
 | Ställ in värdemodeller                                       | Globalt             |
 | Dela en anläggningstillgång                                       | Globalt             |
@@ -723,5 +727,7 @@ Wikin visar uppgiftsguiderna som publicerades till Microsoft BPM-bibliotek från
 [Nya eller uppdaterade uppgiftsguider (augusti 2016)](new-updated-task-guides-available-august-2016.md)
 
 [Nya eller uppdaterade uppgiftsguider (november 2016)](new-task-guides-november-2016.md)
+
+
 
 

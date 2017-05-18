@@ -1,6 +1,6 @@
 ---
 title: "Avskrivningseffekter med återföringar"
-description: "Det här avsnittet behandlar potentiella konsekvenser vid återföring av en anläggningstillgångstransaktion."
+description: "Det här avsnittet behandlar potentiella konsekvenser vid återföring av en Anläggningstillgångstransaktion."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/04/2017
@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: b41901d573e977a89fcd1a7c1ebf7185e162c654
-ms.openlocfilehash: 292186b17406851e40917225cf0c1b8c8e98c654
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 6ffd6ebbc5b36514324c76822c51b7a89ff99f6c
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -30,7 +31,7 @@ ms.lasthandoff: 03/31/2017
 [!include[banner](../includes/banner.md)]
 
 
-Det här avsnittet behandlar potentiella konsekvenser vid återföring av en anläggningstillgångstransaktion. 
+Det här avsnittet behandlar potentiella konsekvenser vid återföring av en Anläggningstillgångstransaktion. 
 
 Du kan återföra transaktioner för anläggningstillgångar och transaktionerna som är kopplade till en anläggningstillgång. Du kan även återkalla en återförd transaktion. 
 

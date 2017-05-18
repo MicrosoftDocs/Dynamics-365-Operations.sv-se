@@ -18,15 +18,19 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 6f4429202efd0506378d681188035c5cc69f56a1
-ms.openlocfilehash: d330f73ee9cbdd6bdcc197c3783a9230b26e04d8
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 5ba5816b65bcaa3a71ab3367cfbe6a115e52062a
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="mass-hire-projects"></a>Massanställningsprojekt
+
+[!include[banner](includes/banner.md)]
+
 
 Massanställningsprojekt låter personalresursspecialister skapa flera befattningar och anställa ett antal arbetare till dessa befattningar på ett effektivt sätt.
 
@@ -46,7 +50,7 @@ Välj sidan **Massanställningsprojekt** och välj projektet "SummerInterns” o
 
 När du har valt studenter att anställa till praktikbefattningarna, ska du ange varje students information i **Befattningsinformation** för befattningen som du anställer dem för. När du har angett alla befattningdetaljer väljer du befattning på sidan Massanställningsprojekt och klickar sedan på **Anställ**. En befattningspost skapas för varje befattning och en arbetarpost skapas och tilldelas korrekt befattning för varje person som du anställer.
 
-## <a name="masshire-project-statuses"></a>Status för massanställningsprojekt
+## <a name="mass-hire-project-statuses"></a>Status för massanställningsprojekt
 Ett massanställningsprojekt kan ha nedanstående statusvärden.
 -   Skapad
 -   Öppen
@@ -92,6 +96,8 @@ Klicka på sidan **Massanställningsprojekt**, klicka på **Öppna projekt** ell
 </table>
 
  
+
+
 
 
 

@@ -17,10 +17,11 @@ ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9f82bf6373e8076fb6786fe9ef184f47f3cf7b84
-ms.openlocfilehash: 5b8104b570c7679dff7157696d08355627312f71
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 6b1f91f863c8da35362ebb3036e76aa10d95ba65
+ms.openlocfilehash: fb8f31a88b63d8c046d28478cc29175ed8c39cb6
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/26/2017
 
 
 ---
@@ -47,7 +48,7 @@ Dessutom kan två unika rapporter, som används för strukturering av det hierar
 
 -   **Butikshantering** arbetsyta Dynamics 365 for Operations &gt; **Butik och handel** &gt; **Kanaler** &gt; **Butikshantering** &gt; **Rapporter**
 -   **Kategori- och produkthantering** arbetsyta Dynamics 365 for Operations &gt; **Butik och handel** &gt; **Produkt och kategorier** &gt; **Butikshantering** &gt; **Rapporter**
--   **Pris- och rabatthantering ** arbetsyta Dynamics 365 for Operations &gt; **Butik och handel** &gt; **Prissättning och rabatter** &gt; **Butikshantering** &gt; **Rapporter**
+-   **Pris- och rabatthantering** arbetsyta Dynamics 365 for Operations &gt; **Butik och handel** &gt; **Prissättning och rabatter** &gt; **Butikshantering** &gt; **Rapporter**
 -   **Förfrågningar och rapporter** avsnitt Dynamics 365 for Operations &gt; **Butik och handel** &gt; **Förfrågningar och rapporter** &gt; **Försäljningsrapporter**
 
 

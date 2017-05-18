@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: b41901d573e977a89fcd1a7c1ebf7185e162c654
-ms.openlocfilehash: 9b690b80f148e7ccecba19850bd78c81216d8658
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 3b424d34a1469ac37e96927dea5627f5f2fed8ee
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -54,7 +55,7 @@ Om du till exempel **Årligen** bokförs årets avskrivning alltså bara en gån
 Om du väljer **Räkenskapsår** i fältet **Avskrivningsår** används linjär avskrivning kvarstående livstid. Avskrivningen beräknas utifrån vad som är kvar av räkenskapsåret. För räkenskapsåret 1 juli 2015 - 30 juni 2016 startar alltså avskrivningsberäkningen alltså den 1 juli. Räkenskapsåret kan vara längre eller kortare än 12 månader. Avskrivningen justeras för varje räkenskapsperiod. Längden på nästa räkenskapsår bestäms av de räkenskapsperioder som är inställda på sidan **Räkenskapskalendrar**. Om du väljer **Räkenskapsår** som avskrivningsår finns följande alternativ i fältet **Periodfrekvens**:
 
 -   **Årligen** bokför det totala avskrivningsbeloppet som beräknas för räkenskapsåret som ett belopp på räkenskapsårets sista dag.
--   **Räkenskapsperiod** beräknar det totala avskrivningsbeloppet för räkenskapsåret. Detta belopp periodiseras sedan till de räkenskapsperioder som har definierats på sidan **Fiscal calendars** för den räkenskapskalender som angetts för boken.
+-   **Räkenskapsperiod** beräknar det totala avskrivningsbeloppet för räkenskapsåret. Detta belopp periodiseras sedan till de räkenskapsperioder som har definierats på sidan **Räkenskapskalendrar** för den räkenskapskalender som angetts för boken.
 
 ## <a name="example-of-straight-line-depreciation-of-an-unchanged-fixed-asset"></a>Exempel på linjär avskrivning av en oförändrad anläggningstillgång
 En anläggningstillgång har följande egenskaper.

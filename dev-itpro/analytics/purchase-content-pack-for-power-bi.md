@@ -3,7 +3,7 @@ title: "Analys av inköpsutgift – Power BI-innehåll"
 description: "Det här avsnittet beskriver vad som ingår i innehållspaketet Analys av inköpsutgift för Microsoft Power BI. Det förklarar hur du kommer åt rapporterna som är inkluderade i innehållspaketet, samt ger dig information om den datamodell och de enheter som användes för att skapa innehållspaketet."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-12-30 09 - 40 - 51
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -16,15 +16,19 @@ ms.search.region: global
 ms.author: fdahl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: 4d6cf88788dcc5e982e509137aa444a020137a5e
-ms.openlocfilehash: 8cb928cbf1316e63a8c7de833587168cd36a455c
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: d392b88942f4b7d7365b000df1cd69809060b910
+ms.openlocfilehash: e39b1677038037cd91cfad8d104d0130bc20fb9b
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/26/2017
 
 
 ---
 
 # <a name="purchase-spend-analysis-power-bi-content"></a>Analys av inköpsutgift – Power BI-innehåll
+
+[!include[banner](../includes/banner.md)]
+
 
 Det här avsnittet beskriver vad som ingår i innehållspaketet Analys av inköpsutgift för Microsoft Power BI. Det förklarar hur du kommer åt rapporterna som är inkluderade i innehållspaketet, samt ger dig information om den datamodell och de enheter som användes för att skapa innehållspaketet.
 
@@ -38,6 +42,7 @@ Innehållspaketet Analys av inköpsutgifter för Microsoft Power BI skapades fö
 
 ## <a name="accessing-the-content-pack"></a>Åtkomst till innehållspaketet
 Innehållspaket för analys av inköpsutgift publiceras som en implementeringstillgång i Microsoft Dynamics Lifecycle Services (LCS) och kan nås från Microsoft Dynamics 365 for Operations. Mer information om hur du når och öppnar Power BI-rapporter finns i [Power BI-innehåll i LCS från Microsoft och din partner](power-bi-content-microsoft-partners.md).
+Anmärkning: KB 4011327 är ett krav för hans Power BI-innehåll. När du loggar in till Lifecycle Services får du åtkomst till KB här: https://fix.lcs.dynamics.com/issue/results/?q=kb4011327.
 
 ## <a name="metrics-that-are-included-in-the-content-pack"></a>Mått som ingår i innehållspaketet
 Innehållspaketet för analys av inköpsutgift innehåller en rapport som består av en uppsättning mått. De här måtten visas som diagram, paneler och tabeller. Nedanstående tabell ger en översikt över de visualiseringar som används i innehållspaketet.
@@ -129,7 +134,7 @@ Innehållspaketet för analys av inköpsutgift innehåller en rapport som bestå
 \* Inköp detta och förra året och tillväxt per anskaffningskategori.
 
 ## <a name="data-model-and-entities"></a>Datamodell och enheter
-Dynamics 365 for Operations-data används för rapporten i innehållspaketet för analys av inköpsutgift. Informationen visas som sammansatta mått som mellanlagras i enhetsarkivet, som är en Microsoft SQL-databas som är optimerad för analys. Mer information om enhetsbutiken finns i blogginlägget [Power BI-integration med enhetslagring i Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/). De sammanlagda måtten i det här innehållspaketet är del av de sammanlagda mått som fanns i Purchase Cube i Microsoft Dynamics AX 2012 och Microsoft Dynamics 365 for Operations 2012 R3. För att förbereda kubens sammanlagda mått i enhetslagringen måste du göra dem driftfärdiga. Mer information finns i proceduren för mellanlagring av sammanlagda mått i enhetsbutiken i blogginlägget [Power BI-integration med enhetsbutik i Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/). Följande sammanlagda huvudmått är tillgängliga direkt från fakturaradenheten och används som grund för innehållspaketet.
+Dynamics 365 for Operations-data används för rapporten i innehållspaketet för analys av inköpsutgift. Informationen visas som sammansatta mått som mellanlagras i enhetsarkivet, som är en Microsoft SQL-databas som är optimerad för analys. Mer information om enhetsbutiken finns i blogginlägget [Power BI-integration med enhetslagring i Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/). De sammanlagda måtten i det här innehållspaketet är del av de sammanlagda mått som fanns i Purchase Cube i Microsoft Dynamics AX 2012 och Microsoft Dynamics AX 2012 R3. För att förbereda kubens sammanlagda mått i enhetslagringen måste du göra dem driftfärdiga. Mer information finns i proceduren för mellanlagring av sammanlagda mått i enhetsbutiken i blogginlägget [Power BI-integration med enhetsbutik i Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/). Följande sammanlagda huvudmått är tillgängliga direkt från fakturaradenheten och används som grund för innehållspaketet.
 
 | Enhet        | Sammanlagda huvudmått | Datakälla för Dynamics 365 for Operations | Fält              | beskrivning                           |
 |---------------|----------------------------|---------------------------------------------|--------------------|---------------------------------------|
@@ -162,6 +167,8 @@ Nedan följer några användbara länkar som är relaterade till enheter och til
 -   [Skapa innehållspaket för organisationer](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
 -   [Datamodeller med hjälp av Power BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
 -   [Lägga till Power BI-rutor till arbetsytor](configure-power-bi-integration.md)
+
+
 
 
 

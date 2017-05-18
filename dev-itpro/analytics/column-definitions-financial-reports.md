@@ -1,16 +1,16 @@
 ---
 title: Kolumndefinitioner i ekonomiska rapporter
 description: "Den här artikeln innehåller information om kolumndefinitioner. En kolumndefinition är en rapportkomponent eller ett byggblock som definierar innehållet i kolumner i en rapport. Precis som raddefinitioner kan grundläggande kolumndefinitioner användas för flera rapporter."
-author: RobinARH
+author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-08-09 21 - 27 - 36
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
 ms.technology: 
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: RobinARH
+ms.reviewer: ShylaThompson
 ms.search.scope: Management Reporter, Core
 ms.custom: 106601
 ms.assetid: 66e72a48-edab-4e9d-815f-596a1623c258
@@ -18,15 +18,19 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
-translationtype: Human Translation
-ms.sourcegitcommit: f707d45290682e79ee439ba0d504852429defa90
-ms.openlocfilehash: af336db81f659d80248aa4ab1fbba96ed1ff48c2
-ms.lasthandoff: 03/30/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: bf42b287e2e9235fd50f78a6fadc3f9efbd1fbe5
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="column-definitions-in-financial-reports"></a>Kolumndefinitioner i ekonomiska rapporter
+
+[!include[banner](../includes/banner.md)]
+
 
 Den här artikeln innehåller information om kolumndefinitioner. En kolumndefinition är en rapportkomponent eller ett byggblock som definierar innehållet i kolumner i en rapport. Precis som raddefinitioner kan grundläggande kolumndefinitioner användas för flera rapporter.
 
@@ -150,7 +154,7 @@ Du kan använda dialogrutan **Kolumnrubrik** för att lägga till, ändra och ta
 
 1.  Öppna kolumndefinitionen för att ändra den i Report Designer.
 2.  Välj en cell i rubrikraden.
-3.  I menyn **Redigera**, klicka på **Infoga rad**. Den nya raden läggs till efter den rad som du valde i steg 2. **Obs! **Om du har fyra eller fler rader för rapportrubriker i en rapport, kommer rubrikerna att överlappa varandra när rapporten exporteras till ett Excel-kalkylblad. Öka den översta marginalen i rapportdefinitionen om du vill visa alla rubriker i rapporten.
+3.  I menyn **Redigera**, klicka på **Infoga rad**. Den nya raden läggs till efter den rad som du valde i steg 2. **Obs!**Om du har fyra eller fler rader för rapportrubriker i en rapport, kommer rubrikerna att överlappa varandra när rapporten exporteras till ett Excel-kalkylblad. Öka den översta marginalen i rapportdefinitionen om du vill visa alla rubriker i rapporten.
 
 ### <a name="delete-a-column-header-row"></a>Ta bort en kolumnrubrikrad
 
@@ -320,9 +324,9 @@ Cellen **Utskriftskontroll** kan innehålla koder som justerar visningen eller u
 4.  Välj ett alternativ i fältet **Villkorsstyrda utskriftsalternativ**. **(ingen)** är markerad som standard. Du kan bara välja en villkorsstyrd utskriftskod åt gången
 5.  Klicka på **OK**.
 
-**Tips:** Du kan också skriva utskriftskontrollkoder direkt i cellen **Utskriftskontroll**. Separera flera utskriftskontrollkoder med kommatecken.
+> [!TIP]
+> Du kan också skriva utskriftskontrollkoder direkt i cellen **Utskriftskontroll**. Separera flera utskriftskontrollkoder med kommatecken.
 
-### 
 
 ## <a name="column-types"></a>Kolumntyper
 Typen av information som varje kolumn i en rapport innehåller, anges av värdet i raden **Kolumntyp** i kolumndefinitionen. Varje kolumndefinition måste innehålla minst en beskrivningskolumn (**DESC**) och en beloppskolumn (,**FD**, **WKS**eller **CALC**. **Obs!** Kolumntypkoderna gäller inte för alla redovisningssystem. Om du väljer en typ som är inte giltig för ditt redovisningssystem, är den kolumnen tom i rapporten.
@@ -507,7 +511,8 @@ En rapport med flera valutor kan visa belopp i den naturliga valutan (lokal valu
 -   **Valutavisning** – Ange valuta (naturlig, funktionell eller rapportering) som visas i transaktionerna. Den här funktionen kallas ibland för valutaomräkning. Valutaomräkning är förmågan att rapportera redovisningsbelopp i en valuta som inte kanske är företagets funktionella valuta eller den valuta som transaktionen angavs i.
 -   **Valutafilter** – Ange ett valutafilter. Endast transaktioner som anges i den valda valutan visas i rapporten.
 
-**Obs!** Om du vill skapa rapporter som använder flera valutor måste du markera kryssrutan **Inkludera alla rapporteringsvalutor** på fliken **Rapport** i rapportdefinitionen. Följ stegen nedan om du vill avgöra ett företags funktionella valuta.
+> [!NOTE]
+> Om du vill skapa rapporter som använder flera valutor måste du markera kryssrutan **Inkludera alla rapporteringsvalutor** på fliken **Rapport** i rapportdefinitionen. Följ stegen nedan om du vill avgöra ett företags funktionella valuta.
 
 1.  I Report Designer, på menyn **Företag** klickar du på **Företag**.
 2.  I dialogrutan **Företag** väljer du ett företag och klickar sedan på **Visa**.
@@ -519,7 +524,8 @@ En rapport med flera valutor kan visa belopp i den naturliga valutan (lokal valu
 2.  Dubbelklicka på cellen **Valutabildskärm** i rätt **FD**-kolumn och välj sedan alternativet för att visa valutainformation: **Naturlig/ursprunglig valuta**, **Funktionell valuta från företagsinformation**eller rapporteringsvalutan.
 3.  Dubbelklicka på cellen **Valutafilter** i rätt **FD**-kolumn och välj rätt valutakod i listan. Endast transaktioner som anges i denna valutan visas i rapporten.
 
-**Obs!** Alternativen som beskrivs här kan komma att skilja sig beroende på ERP-systemet. Mer information finns i [systemdokumentationen för Microsoft ERP](https://www.microsoft.com/en-us/download/details.aspx?id=5916).
+> [!NOTE]
+> Alternativen som beskrivs här kan komma att skilja sig beroende på ERP-systemet. Mer information finns i [systemdokumentationen för Microsoft ERP](https://www.microsoft.com/en-us/download/details.aspx?id=5916).
 
 ### <a name="example-for-currency-display-and-currency-filter-cells"></a>Exempel på celler för Valutavisning och Valutafilter
 
@@ -572,7 +578,7 @@ Du kan referera till en viss rapportcell, genom att ange en kolumnbokstav och en
 
 #### <a name="multiply-or-divide-a-column-by-a-base-row"></a>Multiplicera eller dela upp en kolumn med basrad
 
-Du kan skapa en kolumn som visar alla värden i en viss kolumn som en procentandel av ett basnummer. Därför kan du visa relationer mellan rader som till exempel en procentandel av en försäljningrad eller en procentandel av en rad för totala utgifter. Om du vill multiplicera eller dela upp varje rad i en viss kolumn med en basrad, ange en kolumn som ska användas i beräkningen och ange sedan **\*BASEROW** eller **/BASEROW**. Ange till exempel **C\*BASEROW** or **C/BASEROW**. ** Obs!** Kontrollera att varje raddefinition som används med denna kolumndefinition när du använder en basradberäkning i en kolumndefinition, innehåller minst en basrad för beräkningar.
+Du kan skapa en kolumn som visar alla värden i en viss kolumn som en procentandel av ett basnummer. Därför kan du visa relationer mellan rader som till exempel en procentandel av en försäljningrad eller en procentandel av en rad för totala utgifter. Om du vill multiplicera eller dela upp varje rad i en viss kolumn med en basrad, ange en kolumn som ska användas i beräkningen och ange sedan **\*BASEROW** eller **/BASEROW**. Ange till exempel **C\*BASEROW** or **C/BASEROW**. **Obs!** Kontrollera att varje raddefinition som används med denna kolumndefinition när du använder en basradberäkning i en kolumndefinition, innehåller minst en basrad för beräkningar.
 
 #### <a name="divide-the-amount-in-a-column-by-the-number-of-periods"></a>Dela beloppet i en kolumn med antalet perioder
 
@@ -584,5 +590,7 @@ Du kan dela beloppet i en kolumn med ett specifik antalet perioder. Till exempel
 [Rapportdefinitioner i ekonomiska rapporter](row-definitions-financial-reporting.md)
 
 [Avancerade formateringsalternativ i ekonomiska rapporter](advanced-formatting-options-financial-reporting.md)
+
+
 
 

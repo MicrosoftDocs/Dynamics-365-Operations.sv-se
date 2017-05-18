@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: b21fd97426b331726c12ea29f89817a46dd445c3
-ms.openlocfilehash: 0a716310a3b813e08d46ac609e8ac6ce9a2db3e6
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 5f3d0e2016a3ffe5500ecae9508d44a115c56880
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -51,7 +52,7 @@ Skattemyndigheten har lagt särskilda avgifter på en artikel. Avgiftsbeloppen l
 -   MOMS = 25 % med beräkningsmetoden Procent av bruttobelopp.
 
 Om nettobeloppet är 10,00, är AVGIFT 1 1,00 (10,00 x 10 %) och AVGIFT 2 = 2,00 (10,00 x 20 %). Beloppen blir som följer: Bruttobelopp: Nettobelopp + AVGIFT 1 belopp + 2 AVGIFT belopp (10,00 + 1,00 + 2,00) = 13,00 MOMS = 13,00 × 25 % = 3,25 totala AVGIFTER och MOMS: 1,00 + 2,00 + 3,25 = 6,25 totalbelopp: 10,00 + 6,25 = 16,25
-| **Obs! **                                                                                                                                                                                                                 |
+| **Obs!**                                                                                                                                                                                                                 |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Endast en momskod med Ursprung = procentandel av bruttobeloppet kan användas för en transaktion. Om mer än en sådan momskod bestäms av en transaktion, visas ett fel att moms inte kan beräknas. |
 
@@ -68,7 +69,7 @@ Givet följande momskoder:
 -   MOMS = 25 % med metoden Procent av bruttobelopp.
 
 Nettobelopp: 10,00 AVGIFT 1: 10,00 x 10 % = 1,00 AVGIFT 2: 1,00 x 20 % = 0,20 Bruttobelopp: 10,00 + 1,00 + 0,20 = 11,20 MOMS: 11,20 x 25 % = 2,80 Totala AVGIFTER och MOMS: 1,00 + 0,20 + 2,80 = 4,00 Totalt belopp: 10,00 + 4,00 = 14,00
-| **Obs! **                                                                                                                                                                                                                    |
+| **Obs!**                                                                                                                                                                                                                    |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Moms på flera nivåer är inte möjlig. Moms kan inte beräknas baserat på moms som redan har beräknats på en annan moms. Moms på flera nivåer på momskoder kan beräknas för en transaktion. |
 
@@ -77,7 +78,7 @@ När du väljer belopp per enhet i fältet Ursprung, beräknas momsen som ett fa
 ### <a name="example"></a>Exempel
 
 Momskoden är inställt som: 1,20 Kronor per enhet = rutan på en försäljningsfakturarad 25 rutor av en artikel är såld Moms beräknas som 25 x 1,20 = 30,00
-| **Obs! **                                                                                                                                                                                                 |
+| **Obs!**                                                                                                                                                                                                 |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Om transaktionen anges i en annan enhet än de enheter som anges på momskoden, konverteras den automatiskt baserat på enhetskonverteringarna som ställs in i enhetskonverteringsidan. |
 

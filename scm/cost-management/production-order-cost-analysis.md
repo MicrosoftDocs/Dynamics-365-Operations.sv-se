@@ -3,7 +3,7 @@ title: "Analys av kostnad för produktionsorder"
 description: "Den här artikeln innehåller information om den kostnadsanalys som du kan göra för slutförda och aktuella tillverkningsorder. Du kan analysera de uppskattade och faktiska kostnaderna med hjälp av prisberäkningssidan eller rapporten Kostnadsuppskattningar och kostnadsredovisningar. Information om uppskattade och faktiska kostnader (och kvantitet) visas för varje komponentartikel, flödesoperationen och den indirekta kostnaden."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-04-11 13 - 25 - 42
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -18,15 +18,19 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: f931432f6dc919d448ed690a1deae3d64bebe455
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: acb8e49ed86d3e22ba8e343280f77c0644f057c6
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="production-order-cost-analysis"></a>Analys av kostnad för produktionsorder
+
+[!include[banner](../includes/banner.md)]
+
 
 Den här artikeln innehåller information om den kostnadsanalys som du kan göra för slutförda och aktuella tillverkningsorder. Du kan analysera de uppskattade och faktiska kostnaderna med hjälp av prisberäkningssidan eller rapporten Kostnadsuppskattningar och kostnadsredovisningar. Information om uppskattade och faktiska kostnader (och kvantitet) visas för varje komponentartikel, flödesoperationen och den indirekta kostnaden.
 
@@ -40,7 +44,11 @@ Avvikelserna återspeglar en jämförelse mellan de rapporterade produktionsakti
 -   Produktionsprisavvikelse
 -   Produktionsersättningsavvikelse
 
-I bilden nedan visas de fyra avvikelserna som står för skillnaden mellan en tillverkningsorders faktiska kostnader och de beräknade kostnaderna i artikelns kostnadspost när tillverkningsordern avslutas. ![Avvikelser som står för skillnader i en slutförd produktionsorder](./media/control.jpg) Du kan analysera produktionsavvikelser med hjälp av sidan **Avvikelse** eller rapporten **Produktionsavvikelse**. Använd visningsalternativen om du vill visa detaljerade avvikelser per artikel och verksamhetsresurs eller per kostnadsgrupp. Principen för kostnadsuppdelning i lagerparametrarna bestämmer om avvikelser spåras efter kostnadsgrupp. Du kan också använda visningsalternativen **enstaka**, **flera** och **summa** för att visa sammanfattande avvikelser. Den detaljerade avvikelseinformationen ger dig en bättre förståelse för källan till respektive avvikelse. Om du vill kunna förutse avvikelserna innan tillverkningsordern avslutas, kan du analysera den detaljerade informationen som finns i rapporten **Kostnadsuppskattningar och kostnadsredovisningar**.
+I bilden nedan visas de fyra avvikelserna som står för skillnaden mellan en tillverkningsorders faktiska kostnader och de beräknade kostnaderna i artikelns kostnadspost när tillverkningsordern avslutas. 
+
+![Avvikelser som hanterar skillnaderna i en avslutad tillverkningsorder](./media/control.jpg) 
+
+Du kan analysera produktionsavvikelser genom att använda sidan **avvikelse** rapporten **produktionsavvikelse**. Använd visningsalternativen om du vill visa detaljerade avvikelser per artikel och verksamhetsresurs eller per kostnadsgrupp. Principen för kostnadsuppdelning i lagerparametrarna bestämmer om avvikelser spåras efter kostnadsgrupp. Du kan också använda visningsalternativen **enstaka**, **flera** och **summa** för att visa sammanfattande avvikelser. Den detaljerade avvikelseinformationen ger dig en bättre förståelse för källan till respektive avvikelse. Om du vill kunna förutse avvikelserna innan tillverkningsordern avslutas, kan du analysera den detaljerade informationen som finns i rapporten **Kostnadsuppskattningar och kostnadsredovisningar**.
 
 ## <a name="cost-analysis-for-current-production-orders"></a>Kostnadsanalys för aktuella produktionsorder
 Olika rapporter innehåller information om respektive transaktion. Använd dessa rapporter när du vill analysera kostnader för rapporterade produktionsaktiviteter. Information visas bara för aktuella tillverkningsorder med statusvärdet **Startat** eller **Rapporterat som färdigt**.
@@ -56,5 +64,7 @@ Olika rapporter innehåller information om respektive transaktion. Använd dessa
 --------
 
 [Gemensamma källor till produktionsavvikelser](common-sources-of-production-variances.md)
+
+
 
 

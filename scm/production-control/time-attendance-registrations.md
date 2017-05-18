@@ -18,10 +18,11 @@ ms.search.industry: Manufacturing
 ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: f82033798dbe603c0f2e2c92f91d28985c12b3b4
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 144a1adbff74aef468dd4b2c9f69bf479a5ec671
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -40,7 +41,7 @@ I företag som använder Tid- och närvaroregistrering, måste arbetare registre
 -   Arbetare som måste registrera tid och närvaro regelbundet, till exempel varje dag, varje vecka eller varannan vecka.
 -   Handledare, chefer och lönehandläggare som beräknar, godkänner och överför arbetareregistreringar för vidare behandling.
 
-| **Obs! **                                                                                                                                                                                                                                                    |
+| **Obs!**                                                                                                                                                                                                                                                    |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Om du kör Tid och närvaro tillsammans med Tillverkningskörning, kommer alla registreringar på projekt, projektaktiviteter, indirekta aktiviteter samt frånvarokoder, övertid, flextid att registreras och användas för att beräkna lön i båda moduler. |
 
@@ -53,7 +54,7 @@ När inställningar är klara kan arbetarna ange andra typer av registreringar.
 -   Tids- och artikelförbrukning i produktionsjobb.
 -   Den tid som används på en maskin på arbetet om maskinen har definierats som en resurs.
 
-| **Obs! **                                                                                                                                                                                                                      |
+| **Obs!**                                                                                                                                                                                                                      |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | En anställd kan automatiskt tilldelas tidsregistreringar som gjorts på en specifik maskin på arbetsplatsen, om arbetaren väljer att arbeta som assistent på maskinen, när han eller hon startar produktionsjobbet. |
 
@@ -82,7 +83,7 @@ På samma sätt som du tilldelar en beräkningsgrupp till en tidsregistreringsar
 -   Lägga till manuella bonusar.
 -   Ange ytterligare information om frånvaroregistreringar.
 
-| **Obs! **                                                                                                                                                                             |
+| **Obs!**                                                                                                                                                                             |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Om övertid har beräknats för en viss medarbetare kan övertiden tilldelas specifika jobb under dagen. Detta är relevant om jobbkostnaderna baseras på medarbetarens lön. |
 
@@ -102,7 +103,7 @@ Efter godkännande av registreringarna kan du överföra dem till ett periodiskt
 ## <a name="reversing-transferred-registrations"></a>Återföra en överförd registrering
 Uppgiften att återföra transaktioner – rulla tillbaka dem – kan göras tills tiden när lönelisteperiodens löneöverföring körs. Det innebär att lönedata har överförts till en extern fil. Vid återföring dras alla registreringar tillbaka och alla transaktioner som bokförts på produktionsorder eller projekt utjämnas och blir neutrala.
 
-| **Obs! **                                                 |
+| **Obs!**                                                 |
 |----------------------------------------------------------|
 | Den externa filen kan importeras till ett lönesystem. |
 

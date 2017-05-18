@@ -16,10 +16,11 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: 3bba3d849d02cd84c2c0e0c5c15f7b649b3e125c
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: d3efb6106df7d66ebe9b1a061f9976b8978704b1
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -36,7 +37,7 @@ Ett villkorligt beslut är en punkt vid vilken ett arbetsflöde delas i två gre
 ## <a name="name-a-decision"></a>Namnge ett beslut
 Följ dessa steg när du vill ange ett namn för ett villkorsbeslut.
 1.  Klicka på **Grundinställningar** i det vänstra fönstret.
-2.  I fältet **Name** anger du ett unikt namn för villkorsbeslutet.
+2.  I fältet **Namn** anger du ett unikt namn för villkorsbeslutet.
 
 ## <a name="set-conditions"></a> Ange villkor
 Systemet avgör vilken gren som ska användas genom att utvärdera det skickade dokumentet för att bestämma om det uppfyller specifika villkor.
@@ -45,7 +46,7 @@ Systemet avgör vilken gren som ska användas genom att utvärdera det skickade 
 3.  Ange ett villkor.
 4.  Ange ytterligare villkor vid behov.
 5.  Slutför följande steg för att bekräfta att de villkor som du har angett har ställts in korrekt:
-    1.  Klicka på **Test** för att öppna formuläret **Test workflow condition**.
+    1.  Klicka på **Testa** för att öppna formuläret **Testa arbetsflödesvillkor**.
     2.  Markera en post i området **Validera villkor** i formuläret.
     3.  Klicka på **Ja**. Systemet utvärderar posten i syfte att avgöra om den uppfyller villkoren som du angett.
     4.  Klicka på **OK** eller **Avbryt** för att återgå till formuläret **Egenskaper**.

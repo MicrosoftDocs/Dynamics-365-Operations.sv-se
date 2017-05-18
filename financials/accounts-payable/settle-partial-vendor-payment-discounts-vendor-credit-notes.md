@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: 849cffa64eaf777f9f4c9243dab41b00fa59ad79
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 33bba0e037a8ccc09b3d47268ca2b350d1d25b5f
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -60,7 +61,7 @@ Anna klickar på **Bokför**. Sedan granskar hon den slutförda kvittningen. Ann
 | Vald och markerad | Normal            | Fakt 10070 | 3050    | 29/6/2015 | 29/7/2015 | 10070    | -1 000,00                      | USD      | -200,00          |
 | Markerad                 | Normal            | CR-10070  | 3050    | 2/7/2015  | 29/7/2015 | CR-10070 | 200,00                         | USD      | 198,00           |
 
-Anna kan granska leverantörstransaktionerna på sidan **Leverantörstransaktioner** genom att markera en leverantör på sidan **Alla leverantörer ** och sedan klicka på **Transaktioner** i åtgärdsfönstret. På den här sidan ser Anna att fakturan har saldot -800,00. Hon ser också en kreditfaktura för 198,00 och en rabatt på 2,00.
+Anna kan granska leverantörstransaktionerna på sidan **Leverantörstransaktioner** genom att markera en leverantör på sidan **Alla leverantörer** och sedan klicka på **Transaktioner** i åtgärdsfönstret. På den här sidan ser Anna att fakturan har saldot -800,00. Hon ser också en kreditfaktura för 198,00 och en rabatt på 2,00.
 
 | Verifikation    | transaktionstyp | Datum      | Faktura | Debetbelopp i transaktionsvaluta | Kreditbelopp i transaktionsvaluta | Saldo | Valuta |
 |------------|------------------|-----------|---------|--------------------------------------|---------------------------------------|---------|----------|

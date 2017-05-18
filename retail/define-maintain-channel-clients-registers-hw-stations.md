@@ -1,6 +1,6 @@
 ---
-title: "Definiera och underhåll kanalklienter, kassaapparater och maskinvarustationer"
-description: "Denna wiki innehåller information om hur du ansluter kringutrustning till Retail POS."
+title: "Definiera och underhålla kanalklienter, kassor och maskinvarustationer"
+description: "Detta avsnitt innehåller information om hur du ansluter kringutrustning till Retail POS."
 author: josaw1
 manager: AnnBe
 ms.date: 04/04/2017
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 92383
 ms.assetid: 83f31ea6-f0a2-4501-9d4d-a37b6eec2599
 ms.search.region: global
@@ -17,17 +17,21 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: dee5745670ad86000795f2913f99f49c0f123a00
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 6b1f91f863c8da35362ebb3036e76aa10d95ba65
+ms.openlocfilehash: db8b059309ecf4da9728394fc3acb091d60baf4d
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/26/2017
 
 
 ---
 
-# <a name="define-and-maintain-channel-clients-registers-and-hardware-stations"></a>Definiera och underhåll kanalklienter, kassaapparater och maskinvarustationer
+# <a name="define-and-maintain-channel-clients-registers-and-hardware-stations"></a>Definiera och underhålla kanalklienter, kassor och maskinvarustationer
 
-Denna wiki innehåller information om hur du ansluter kringutrustning till Retail POS.
+[!include[banner](includes/banner.md)]
+
+
+Detta avsnitt innehåller information om hur du ansluter kringutrustning till Retail POS.
 
 **Obs!** Särskilda installationsanvisningar hittar du i [Konfiguration och installation av Retail Hardware Station](retail-hardware-station-configuration-installation.md) och [Självservice hämtning/installation av Retail Modern POS och enhetsaktivering av Modern POS och Cloud POS](retail-modern-pos-device-activation.md).
 
@@ -65,11 +69,14 @@ Navigering: Klicka på **Handel** &gt; **Kanalinställningar** &gt; **Kassainst�
 ## <a name="scenarios"></a>Scenarier
 ### <a name="mpos-with-connected-peripheral-devices"></a>MPOS med ansluten kringutrustning
 
-[![Traditionell, fast kassa](./media/traditional-300x279.png)](./media/traditional.png) För att ansluta MPOS till kassatillbehör i ett traditionellt, fast kassascenario, navigera först till själva kassaapparaten, och tilldela en maskinvaruprofil till den. Du hittar butikskassaapparater på **Butik och handel** &gt; **Kanalinställningar** &gt; **Kassainställningar** &gt; **Kassaapparater**. När du har tilldelat maskinvaruprofilen ska du synkronisera ändringar i kanaldatabasen med hjälp av distributionsschemat "Kassor". Du hittar distributionsscheman på **Butik och handel** &gt; **Butiks-IT** &gt; **Distributionsschema**. Ställ därefter in en "lokal" maskinvarustation på kanalen. Klicka på **Butik och handel** &gt; **Kanaler** &gt; **Butiker** &gt; **Alla butiker** och välj en butik. Välj sedan snabbfliken **Maskinvarustationer** och klicka på **Lägg till** för att lägga till en maskinvarustation. Ange en beskrivning, ange **localhost** som värdnamn och synkronisera sedan ändringarna till kanalen med hjälp av distributionsschemat "Kanalkonfiguration". Du hittar distributionsscheman på **Butik och handel** &gt; **Butiks-IT** &gt; **Distributionsschema**. Gå sedan till MPOS och använd åtgärden **Välj maskinvarustation** och markera maskinvarustationen **localhost**. Ställ in maskinvarustation till **Aktiv**. Den maskinvaruprofil som används i det här fallet bör komma från själva kassaregistret. En maskinvarustationsprofil är inte obligatorisk för det här scenariot. **Obs!** Vissa ändringar av maskinvaruprofilen såsom ändringar av kassalådor kräver att ett nytt skift öppnas efter att ändringarna har synkroniserats till kanalen. **Obs!** Cloud POS måste använda den fristående maskinvarustationen för kommunikation med kringutrustningen i butiken.
+[![Traditionell, fast kassa](./media/traditional-300x279.png)](./media/traditional.png) 
+
+Anslut MPOS till kassans kringutrustning i ett traditionellt, fast kassascenario genom att först navigera till själva kassan och tilldela en maskinvaruprofil. Du hittar butikskassaapparater på **Butik och handel** &gt; **Kanalinställningar** &gt; **Kassainställningar** &gt; **Kassaapparater**. När du har tilldelat maskinvaruprofilen ska du synkronisera ändringar i kanaldatabasen med hjälp av distributionsschemat "Kassor". Du hittar distributionsscheman på **Butik och handel** &gt; **Butiks-IT** &gt; **Distributionsschema**. Ställ därefter in en "lokal" maskinvarustation på kanalen. Klicka på **Butik och handel** &gt; **Kanaler** &gt; **Butiker** &gt; **Alla butiker** och välj en butik. Välj sedan snabbfliken **Maskinvarustationer** och klicka på **Lägg till** för att lägga till en maskinvarustation. Ange en beskrivning, ange **localhost** som värdnamn och synkronisera sedan ändringarna till kanalen med hjälp av distributionsschemat "Kanalkonfiguration". Du hittar distributionsscheman på **Butik och handel** &gt; **Butiks-IT** &gt; **Distributionsschema**. Gå sedan till MPOS och använd åtgärden **Välj maskinvarustation** och markera maskinvarustationen **localhost**. Ställ in maskinvarustation till **Aktiv**. Den maskinvaruprofil som används i det här fallet bör komma från själva kassaregistret. En maskinvarustationsprofil är inte obligatorisk för det här scenariot. **Obs!** Vissa ändringar av maskinvaruprofilen såsom ändringar av kassalådor kräver att ett nytt skift öppnas efter att ändringarna har synkroniserats till kanalen. **Obs!** Cloud POS måste använda den fristående maskinvarustationen för kommunikation med kringutrustningen i butiken.
 
 ### <a name="mpos-or-cloud-pos-with-a-stand-alone-hardware-station"></a>MPOS eller Cloud POS med en fristående maskinvarustation
+[![Delad kringutrustning](./media/shared-300x254.png)](./media/shared.png)
 
-\[caption id="attachment\_340041" align="alignleft" width="300"\][![Delad kringutrustning](./media/shared-300x254.png)](./media/shared.png) Delad kringutrustning\[/caption\] I det här scenariot delas en fristående maskinvarustation mellan MPOS- och molnkassaklienter. Det här scenariot kräver att du skapar en maskinvarustationsprofil för att du ska kunna specificera vilket hämtningsbart paket, vilken port och vilken maskinvaruprofil maskinvarustationen använder. Du hittar maskinvarustationsprofilen på **Butik och handel** &gt; **Kanalinställningar** &gt; **Kassainställningar** &gt; **Kassaprofiler** &gt; **Profiler för maskinvarustation**. När du har skapat maskinvarustationsprofilen, navigera till den specifika butikskanalen (**Butik och handel** &gt; **Kanaler** &gt; **Butiker** &gt; **Alla butiker**) och lägg till en ny maskinvarustation. Mappa den nya maskinvarustationen till maskinvarustationsprofilen som skapades tidigare. Tillhandahåll sedan en beskrivning som hjälper kassören att identifiera maskinvarustationen. I fältet **Värdnamn** anger du värdmaskinens URL i följande format: **https://&lt;MachineName:Port&gt;/HardwareStation**. (Ersätt **&lt;MachineName:Port&gt;** med det faktiska datornamnet på maskinvarustationen och den port som anges i maskinvarustationens profil.) För en fristående maskinvarustation måste du också ange terminal-ID för elektronisk betalning (EFT). Det här värdet identifierar den EFT-terminal som är ansluten till maskinvarustationen när betalningskopplingen kommunicerar med betalningsförmedlaren. Navigera sedan från den faktiska maskinvarustationen till kanalen och välj maskinvarustation. Klicka på **Hämta** och installera maskinvarustationen. Använd därefter MPOS eller Clod POS för att utföra åtgärden **Välj maskinvarustation** för att välja den maskinvarustation som tidigare installerades. Välj **Koppla** för att upprätta en säker förbindelse mellan kassan och maskinvarustationen. Det här steget måste slutföras en gång för varje kombination av en kassa och en maskinvarustation. När maskinvarustationen är kopplad används samma operation för att aktivera maskinvarustationen medan den används. I det här scenariot ska maskinvaruprofilen tilldelas maskinvarustationens profil snarare än själva kassaapparaten. Om en maskinvarustation av någon anledning inte har tilldelats någon maskinvaruprofil direkt, kommer den maskinvaruprofil som tilldelats kassaapparaten att användas
+I det här scenariot delas en fristående maskinvarustation mellan MPOS- och Cloud POS-klienter. Det här scenariot kräver att du skapar en maskinvarustationsprofil för att du ska kunna specificera vilket hämtningsbart paket, vilken port och vilken maskinvaruprofil maskinvarustationen använder. Du hittar maskinvarustationsprofilen på **Butik och handel** &gt; **Kanalinställningar** &gt; **Kassainställningar** &gt; **Kassaprofiler** &gt; **Profiler för maskinvarustation**. När du har skapat maskinvarustationsprofilen, navigera till den specifika butikskanalen (**Butik och handel** &gt; **Kanaler** &gt; **Butiker** &gt; **Alla butiker**) och lägg till en ny maskinvarustation. Mappa den nya maskinvarustationen till maskinvarustationsprofilen som skapades tidigare. Tillhandahåll sedan en beskrivning som hjälper kassören att identifiera maskinvarustationen. I fältet **Värdnamn** anger du värdmaskinens URL i följande format: **https://&lt;MachineName:Port&gt;/HardwareStation**. (Ersätt **&lt;MachineName:Port&gt;** med det faktiska datornamnet på maskinvarustationen och den port som anges i maskinvarustationens profil.) För en fristående maskinvarustation måste du också ange terminal-ID för elektronisk betalning (EFT). Det här värdet identifierar den EFT-terminal som är ansluten till maskinvarustationen när betalningskopplingen kommunicerar med betalningsförmedlaren. Navigera sedan från den faktiska maskinvarustationen till kanalen och välj maskinvarustation. Klicka på **Hämta** och installera maskinvarustationen. Använd därefter MPOS eller Clod POS för att utföra åtgärden **Välj maskinvarustation** för att välja den maskinvarustation som tidigare installerades. Välj **Koppla** för att upprätta en säker förbindelse mellan kassan och maskinvarustationen. Det här steget måste slutföras en gång för varje kombination av en kassa och en maskinvarustation. När maskinvarustationen är kopplad används samma operation för att aktivera maskinvarustationen medan den används. I det här scenariot ska maskinvaruprofilen tilldelas maskinvarustationens profil snarare än själva kassaapparaten. Om en maskinvarustation av någon anledning inte har tilldelats någon maskinvaruprofil direkt, kommer den maskinvaruprofil som tilldelats kassaapparaten att användas
 
 ## <a name="client-maintenance"></a>Underhåll av klient
 ### <a name="registers"></a>Kassor
@@ -152,5 +159,7 @@ Ytterligare aktiveringsrelaterad information omfattar arbetstagare som har ändr
 ### <a name="client-data-synchronization"></a>Klientdatasynkronisering
 
 Alla ändringar av en kassaklient, förutom ändringar av enhetens aktiveringsstatus, måste synkroniseras till kanaldatabasen för att börja gälla. Om du vill synkronisera ändringar i kanaldatabasen, gå till **Butik och handel** &gt; **Butiks-IT** &gt; **Distributionsschema** och kör erforderligt distributionsschema. För klientändringar bör du köra distributionsschemat "Kassor" och även distributionsschemat "Kanalkonfiguration".
+
+
 
 

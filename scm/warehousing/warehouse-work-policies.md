@@ -18,10 +18,11 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-translationtype: Human Translation
-ms.sourcegitcommit: f77012e7b64b7f153103e9bbe91e8ded202b509a
-ms.openlocfilehash: 5660e5c8e3329564fc4262b5ad4f2547347bbb1a
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 32b401a6faa381c77845347db6aa5e89db5e38c3
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -35,8 +36,8 @@ En ny arbetspolicy för lagerställe introduceras i Microsoft Dynamics AX 7.0.1 
 
 Denna arbetspolicy styr huruvida arbetsuppgifter på lagerstället skapas för lagerställeprocesser inom tillverkningen. Du kan ställa in arbetspolicyn genom att använda en kombination av **arbetsordertyper**, en **lagerplats** samt en **produkt** Exempelvis rapporteras produkt L0101 som färdig till utleveransplats 001. Den färdiga varan förbrukas senare i en annan produktionsorder på utleveransplats 001. I det här fallet kan du ställa in en arbetspolicy för att förhindra arbete för inlagring av färdiga varor skapas när du rapporterar produkt L0101 som färdig till utleveransplats 001. Arbetspolicyn är en enskild enhet som kan beskrivas genom följande information:
 
--   **Arbetspolicynamn **(den unika identifieraren för arbetspolicyn)
--   **Arbetsordertyper **och** Metod för skapande av arbetsuppgift**
+-   **Arbetspolicynamn**(den unika identifieraren för arbetspolicyn)
+-   **Arbetsordertyper**och**Metod för skapande av arbetsuppgift**
 -   **Lagerplatser**
 -   **Produkter**
 
@@ -47,7 +48,7 @@ Du kan välja bland följande arbetsuppgifter:
 -   Plats för samprodukt och biprodukt
 -   Råmaterialhämtning
 
-Fältet **Work creation method** har värdet **Never**. Det här värdet anger att arbetspolicyn förhindrar att arbetsuppgifter på lagerstället skapas för vald arbetsordertyp.
+Fältet **Metod för att skapa arbete** har värdet **Aldrig**. Det här värdet anger att arbetspolicyn förhindrar att arbetsuppgifter på lagerstället skapas för vald arbetsordertyp.
 
 ## <a name="inventory-locations"></a>Lagerplatser
 Du kan välja en plats som arbetspolicyn gäller för. Om ingen plats finns associerad med en arbetspolicy, gäller inte arbetspolicyn för några processer. På sidan **Locations** kan du också välja eller avbryta valet av arbetspolicy för en viss plats.
@@ -56,7 +57,7 @@ Du kan välja en plats som arbetspolicyn gäller för. Om ingen plats finns asso
 Du kan välja en produkt som arbetspolicyn gäller för. Du kan använda arbetspolicyn antingen på alla produkter eller på utvalda produkter.
 
 ## <a name="example"></a>Exempel
-I följande exempel finns det två produktionsorder, PRD-001 och PRD-00*2*. Produktionsorder PRD-001 har en åtgärd med namnet **Assembly**, där produkten SC1 rapporterats som färdig till plats O1. Produktionsorder PRD-002 har en åtgärd med namnet **Painting** och förbrukar produkten SC1 från platsen O1. Produktionsorder PRD-002 förbrukar även råmaterial RM1 från platsen O1. RM1 lagras på lagerställeplats och BULK-001 och plockas till platsen O1 av lagerställets arbetsuppgift för plockning av råmaterial. Plockningsarbetet skapas när produktion PRD-002 frisläpps. 
+I följande exempel finns det två produktionsorder, PRD-001 och PRD-00*2*. Produktionsorder PRD-001 har en åtgärd med namnet **Sammansättning**, där produkten SC1 rapporterats som färdig till plats O1. Produktionsorder PRD-002 har en åtgärd med namnet **Painting** och förbrukar produkten SC1 från platsen O1. Produktionsorder PRD-002 förbrukar även råmaterial RM1 från platsen O1. RM1 lagras på lagerställeplats och BULK-001 och plockas till platsen O1 av lagerställets arbetsuppgift för plockning av råmaterial. Plockningsarbetet skapas när produktion PRD-002 frisläpps. 
 
 [![Policyer för lagerarbete](./media/warehouse-work-policies.png)](./media/warehouse-work-policies.png) 
 

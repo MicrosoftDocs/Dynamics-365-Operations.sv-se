@@ -1,16 +1,16 @@
 ---
 title: "Rapportdefinitioner i designer för ekonomiska rapporter"
 description: "En raddefinition är en rapportkomponent eller byggblock som anger innehållet på varje rad i en ekonomisk rapport. En raddefinition kan kombineras med kolumndefinitioner, rapportträddefinitioner och rapportdefinitioner för att skapa en byggblocksgrupp som kan användas av flera företag."
-author: RobinARH
+author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-03-18 15 - 42 - 39
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
 ms.technology: 
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: RobinARH
+ms.reviewer: ShylaThompson
 ms.search.scope: Management Reporter, Core
 ms.custom: 68873
 ms.assetid: 2fd7b5da-700f-48cb-9003-90c0d82f818f
@@ -18,15 +18,19 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
-translationtype: Human Translation
-ms.sourcegitcommit: 4d6cf88788dcc5e982e509137aa444a020137a5e
-ms.openlocfilehash: a2f92effd1cfdc1d5da2c5ec895c0487a6fc82a4
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: aa9fcc4d0c122d2355362b75ca210af4c2ef4338
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="row-definitions-in-financial-report-designer"></a>Rapportdefinitioner i designer för ekonomiska rapporter
+
+[!include[banner](../includes/banner.md)]
+
 
 En raddefinition är en rapportkomponent eller byggblock som anger innehållet på varje rad i en ekonomisk rapport. En raddefinition kan kombineras med kolumndefinitioner, rapportträddefinitioner och rapportdefinitioner för att skapa en byggblocksgrupp som kan användas av flera företag.
 
@@ -73,7 +77,7 @@ Gör på följande sätt för att lägga till dimensioner i en raddefinition:
 1.  Öppna Rapport Designer, klicka på **Raddefinitioner** och öppna sedan den raddefinition som ska modifieras.
 2.  Klicka på menyn **Redigera** och klicka på **Infoga rapportenheter från dimensioner**.
 3.  I dialogrutan **Infoga rader från Dimensioner**, på raden **Dimensioner**, väljer du cellen för dimensionen som ska överföras till raddefinitionen och klickar sedan på **Alla &&&**.
-4.  Om du vill begränsa raddimensionen till ett specifikt intervall av dimensionsvärdena anger du startdimensionsvärdet i cellen ** Dimensionsintervallstart** och skriv sedan in det avslutande dimensionsvärdet i cellen **Dimensionsintervallslut**. Om du vill inkludera alla värden för den valda dimensionen lämnar du dessa celler tomma. **Obs!** Jokertecken (\* eller ?) i dimensionsområden kan inte returnera alla resultat som du vill ha på grund av hur ERP-databasen sorterar data.
+4.  Om du vill begränsa raddimensionen till ett specifikt intervall av dimensionsvärdena anger du startdimensionsvärdet i cellen **Dimensionsintervallstart** och skriv sedan in det avslutande dimensionsvärdet i cellen **Dimensionsintervallslut**. Om du vill inkludera alla värden för den valda dimensionen lämnar du dessa celler tomma. **Obs!** Jokertecken (\* eller ?) i dimensionsområden kan inte returnera alla resultat som du vill ha på grund av hur ERP-databasen sorterar data.
 5.  Välj radkod för det första dimensionsvärdet i fältet **Startradskod** för att lägga till raddefinitionen.
 6.  Ange avståndet mellan efterföljande radkoder i fältet **Öka varje rad med**. Om den första radkoden är 100 och stegvärdet är 30 har de nya raderna koderna 100, 130, 160, 190 och 220. Använd ett stegvärde som ger tillräckligt med utrymme för att infoga nya rader för format och formel.
 7.  Klicka på **OK**. En rad per valt dimensionsvärde läggs till i raddefinitionen.
@@ -97,9 +101,9 @@ Gör på följande sätt för att justera avrundningen i en balansräkning.
     -   **Totala skulder och eget kapital** – Radkoden för raden i balansräkningen som innehåller totala skulder och eget kapital.
     -   **Justeringsbeloppsgräns** – Den gräns som uttrycks som ett positivt heltal och som anger gränsen för automatiska justeringar. Detta belopp jämförs med absolutvärdet för den verkliga avrundningsdifferensen.
 
-    **Obs! **Dessa radkoder måste vara länkade till dina ekonomiska data. Med andra ord måste raden ha ett dimensionsvärde i cellen **Länk till ekonomiska dimensioner**. Referera **inte** en beskrivning (**DESC**) beräknad (**CALC**), eller summerad rad (**TOT**).
+    **Obs!**Dessa radkoder måste vara länkade till dina ekonomiska data. Med andra ord måste raden ha ett dimensionsvärde i cellen **Länk till ekonomiska dimensioner**. Referera **inte** en beskrivning (**DESC**) beräknad (**CALC**), eller summerad rad (**TOT**).
 
-Beloppen i din balansräkning balanseras nu jämt när avrundning är aktiverad. **Obs! **Justeringsgränsen används utifrån det alternativ för **Avrundningsnoggrannhet** som anges för rapportdefinitionen. Om du till exempel väljer att avrunda rapporten till tusental och anger **2** i rutan **Justeringsbeloppsgräns** visas ett varningsmeddelande när värdet som identifieras i **Avrundningsjusteringsrad** ökar eller minskar med mer än 2 000.
+Beloppen i din balansräkning balanseras nu jämt när avrundning är aktiverad. **Obs!**Justeringsgränsen används utifrån det alternativ för **Avrundningsnoggrannhet** som anges för rapportdefinitionen. Om du till exempel väljer att avrunda rapporten till tusental och anger **2** i rutan **Justeringsbeloppsgräns** visas ett varningsmeddelande när värdet som identifieras i **Avrundningsjusteringsrad** ökar eller minskar med mer än 2 000.
 
 ## <a name="format-row-and-column-text"></a>Formatrad och kolumntext
 Du kan anpassa utseendet på dina rapporter genom att ändra teckensnitt och formatera texten. Följande avsnitt innehåller information om hur du formaterar utseendet på rader och kolumner i rapporter.
@@ -117,7 +121,7 @@ Du kan skapa och ändra teckensnitt för din rapport. Du kan sedan tillämpa des
 <tr class="odd">
 <td>Skapa ett teckensnitt</td>
 <td><ol>
-<li>I Report Designer i menyn <strong>Format </strong>klickar du på <strong>Utföranden och formatering</strong>.</li>
+<li>I Report Designer i menyn <strong>Format</strong>klickar du på <strong>Utföranden och formatering</strong>.</li>
 <li>Klicka på <strong>Ny</strong> i dialogrutan <strong>Teckensnitt och formatering</strong> och ange sedan ett unikt namn för det nya teckensnittet.</li>
 <li>Gör dina teckensnittsval och klicka på <strong>OK</strong>.</li>
 </ol></td>
@@ -125,7 +129,7 @@ Du kan skapa och ändra teckensnitt för din rapport. Du kan sedan tillämpa des
 <tr class="even">
 <td>Ändra en teckenstil</td>
 <td><ol>
-<li>I Report Designer i menyn <strong>Format </strong>klickar du på <strong>Utföranden och formatering</strong>.</li>
+<li>I Report Designer i menyn <strong>Format</strong>klickar du på <strong>Utföranden och formatering</strong>.</li>
 <li>Välj ett teckensnitt som ska ändras i dialogrutan <strong>Teckensnitt och formatering</strong> och klicka sedan på <strong>Modifiera</strong>.</li>
 <li>Gör dina teckensnittsval och klicka på <strong>OK</strong>.</li>
 </ol></td>
@@ -173,6 +177,8 @@ För att göra det enklare att se kolumnerna som du arbetar med i raddefinitione
 <a name="see-also"></a>Se även
 --------
 
-[Ekonomisk rapportering för Dynamics 365 for Operations](financial-reporting-intro.md)
+[Ekonomisk rapportering](financial-reporting-intro.md)
+
+
 
 

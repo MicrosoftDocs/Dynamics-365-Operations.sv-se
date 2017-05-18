@@ -19,10 +19,11 @@ ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: c4ebedab6d7de62479d3bc80583afadbe780aac4
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 8a12f79c9b2b02198c268a293b357ef805e2f4b9
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -54,7 +55,7 @@ Ett flödeskort omfattar en översikt över informationen som kommer från flöd
 Ett flödesjobb anger alla jobb i en operation i detalj och omfattar inställnings-, process-, kö- och transporttider. En operation som att måla kan till exempel kräva olika jobb som inställningstid, körtid för målningsprocessen och kötid för torkning.
 
 ## <a name="job-cards"></a>Jobbkort
-Ett jobbkort anger de enskilda jobbnumren för en viss operation. Ett jobb visas på varje sida. De jobb som finns på ett jobbkort, och deras uppskattade tider, kommer från flödet och operationens inställningsinformation. Från ett jobbkort kan du öppna sidan **Produktionsjournalrader**, **jobbkort **. De som driver operationsresurser kan återrapportera om produktionsprocessen. Det finns fält där du kan ange förbrukningsstatistik och information som felkvantitet.
+Ett jobbkort anger de enskilda jobbnumren för en viss operation. Ett jobb visas på varje sida. De jobb som finns på ett jobbkort, och deras uppskattade tider, kommer från flödet och operationens inställningsinformation. Från ett jobbkort kan du öppna sidan **Produktionsjournalrader**, **jobbkort**. De som driver operationsresurser kan återrapportera om produktionsprocessen. Det finns fält där du kan ange förbrukningsstatistik och information som felkvantitet.
 
 ## <a name="warehouse-work-for-raw-material-picking"></a>Lagerställearbete för plockning av råmaterial.
 Produkter för råvaraplockning genereras under leverans. Arbete genereras endast för mängden av material som fysiskt reserverats för tillverkningsordern innan ordern frisläpptes. Följande inställningar krävs för att generera lagerarbete för plockning av råmaterial:

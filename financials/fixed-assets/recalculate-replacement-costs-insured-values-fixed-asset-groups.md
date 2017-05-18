@@ -1,5 +1,5 @@
 ---
-title: "Räkna om ersättningskostnader och försäkrade värden för anläggningstillgångsgrupper"
+title: "Räkna om ersättningskostnader och försäkrade värden för Anläggningstillgångsgrupper"
 description: "Den här artikeln beskriver processen för att uppdatera ersättningskostnaden och de försäkrade värdena för anläggningstillgångar."
 author: twheeloc
 manager: AnnBe
@@ -17,15 +17,16 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 3b16ef53f9fb57a6663db0be1f7e0a57471db2fb
-ms.openlocfilehash: 38f779274da370d436509e021cabf5b90ab08475
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 5ddaaaf166224a74999f3ab0cfa325f7e2e07221
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
-# <a name="recalculate-replacement-costs-and-insured-values-for-fixed-asset-groups"></a>Räkna om ersättningskostnader och försäkrade värden för anläggningstillgångsgrupper
+# <a name="recalculate-replacement-costs-and-insured-values-for-fixed-asset-groups"></a>Räkna om ersättningskostnader och försäkrade värden för Anläggningstillgångsgrupper
 
 [!include[banner](../includes/banner.md)]
 
@@ -37,7 +38,7 @@ Då och då kanske du får information om att kostnaden för att ersätta eller 
 Du kan redigera ersättningskostnaden och det försäkrade värdet för enskilda anläggningstillgångar i formuläret Anläggningstillgångar, men du kan använda formuläret Uppdatera ersättningskostnader och försäkrade värden om du vill uppdatera dessa värden för en grupp med anläggningstillgångar samtidigt. Den här informationen beskriver hur du uppdaterar värden för anläggningstillgångar eller för specifika tillgångar i grupperna.
 
 ## <a name="how-values-are-updated"></a> Hur värden uppdateras
-Om du vill beräkna om ersättningskostnaden och det försäkrade värdet för anläggningstillgångsgruppen, måste du först ange den procent som den befintliga ersättningskostnaden och det försäkrade värdet ska ändras med, och sedan utföra den periodiska uppdateringen för att beräkna om värdena. Du anger procent i fälten Faktor för ersättningskostnad och Faktor för försäkrat värde i formuläret Anläggningstillgångsgrupper. Även om du anger dessa faktorer för hela gruppen med anläggningstillgångar, kan du när du använder formuläret Uppdatera ersättningskostnader och försäkrade värden välja att beräkna om ersättningskostnaden och det försäkrade värdet för enbart vissa anläggningstillgångar inom en grupp. 
+Om du vill beräkna om ersättningskostnaden och det försäkrade värdet för Anläggningstillgångsgruppen, måste du först ange den procent som den befintliga ersättningskostnaden och det försäkrade värdet ska ändras med, och sedan utföra den periodiska uppdateringen för att beräkna om värdena. Du anger procent i fälten Faktor för ersättningskostnad och Faktor för försäkrat värde i formuläret Anläggningstillgångsgrupper. Även om du anger dessa faktorer för hela gruppen med anläggningstillgångar, kan du när du använder formuläret Uppdatera ersättningskostnader och försäkrade värden välja att beräkna om ersättningskostnaden och det försäkrade värdet för enbart vissa anläggningstillgångar inom en grupp. 
 
 När du använder formuläret Uppdatera ersättningskostnader och försäkrade värden för att beräkna om ersättningskostnaden och det försäkrade värdet för tillgången används följande formler:
 
@@ -64,7 +65,7 @@ Din chef meddelar dig om följande ändringar av anläggningstillgångarna:
 -   Minska ersättningskostnaden och det försäkrade värdet på alla datorer med 10 procent.
 
 Du gör följande ändringar:
-1.  I formuläret Anläggningstillgångsgrupper skriver du för alla anläggningstillgångsgrupper förutom gruppen kontorsmöbler och datorer skriver du 3,25 i fältet Faktor för ersättningskostnad 0 i fältet Faktor för försäkrat värde.
+1.  I formuläret Anläggningstillgångsgrupper skriver du för alla Anläggningstillgångsgrupper förutom gruppen kontorsmöbler och datorer skriver du 3,25 i fältet Faktor för ersättningskostnad 0 i fältet Faktor för försäkrat värde.
 2.  För gruppen Kontorsmöbler skriver du 4,25 i fältet Faktor för ersättningskostnad och0 i Faktor för försäkrat värde..
 3.  För gruppen Datorer skriver du -10 i fältet Faktor för ersättningskostnad och-10 i Faktor för försäkrat värde..
 4.  I formuläret Uppdatera ersättningskostnaderna och det försäkrade värdet, klickar du på OK för att omberäkna alla anläggningstillgångar.

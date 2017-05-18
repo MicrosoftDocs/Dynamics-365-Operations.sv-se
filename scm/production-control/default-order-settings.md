@@ -18,10 +18,11 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 60abaa69debd891b2fe2dd98184c0dab50b0bf9f
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 26ad7fb0e9371b8e1d45d61f2348241c6aca16b9
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -33,7 +34,7 @@ ms.lasthandoff: 03/29/2017
 
 Standardorderinställningar definierar site och lagerställe som artiklar kommer att anskaffas från eller lagras, och de minimum-, maximum-, multipla- och standardkvantiteter som ska användas för handel eller lagerhantering, ledtider, stoppflagga och orderlöftesmetod. Standardorderinställningar används när du skapar inköpsorder, försäljningsorder, överföringsorder, lagerjournaler och genom huvudplanering att skapa planerade order. Standardorderinställningar kan vara artikelspecifika, sitespecifika, produktvariantspecifika eller produktdimensionspecifika.
 
-Du definierar standardorderinställningar på sidan **Standardorderinställningar **. För att öppna denna sida, gå till **Hantering av produktinformation** &gt; **Produkter** &gt; **Släppta produkter** &gt; välj en släppt produkt &gt; i åtgärdsfönstret **Planera** eller ****Hantera lager**** &gt; **Orderinställningar** &gt; **Standardorderinställningar**.
+Du definierar standardorderinställningar på sidan **Standardorderinställningar**. För att öppna denna sida, gå till **Hantering av produktinformation** &gt; **Produkter** &gt; **Släppta produkter** &gt; välj en släppt produkt &gt; i åtgärdsfönstret **Planera** eller ****Hantera lager**** &gt; **Orderinställningar** &gt; **Standardorderinställningar**.
 
 ## <a name="default-order-settings"></a>Standardorderinställningar
 Det finns tre typer av standardorderinställningar för inköp, försäljning och lager. Standardorderinställningarna för inköp används när det skapas:
@@ -90,11 +91,11 @@ Reglerna för standardorderinställningar har rangordningar. Ju högre rangordni
 
 ### <a name="default-order-settings-for-released-products"></a>Standardorderinställningar för frisläppta produkter
 
-För specifika frisläppta produkter kan du definiera allmänna orderinställningar eller sitespecifika orderinställningar. De allmäna orderinställningarna kommer alltid att ha rangordning noll. Om du ställer in nya försäljningar, inköp och lagerorderinställningar tillsammans samtidigt, rekommenderar vi att du använder **Informationsvy** på sidan **Standardorderinställningar **. För att växla till informationsvyn, gå till **Alternativ** Åtgärdsfönster &gt; **Sidalternativ** &gt; **Ändra vy** &gt; **Detaljvy**.
+För specifika frisläppta produkter kan du definiera allmänna orderinställningar eller sitespecifika orderinställningar. De allmäna orderinställningarna kommer alltid att ha rangordning noll. Om du ställer in nya försäljningar, inköp och lagerorderinställningar tillsammans samtidigt, rekommenderar vi att du använder **Informationsvy** på sidan **Standardorderinställningar**. För att växla till informationsvyn, gå till **Alternativ** Åtgärdsfönster &gt; **Sidalternativ** &gt; **Ändra vy** &gt; **Detaljvy**.
 
 ### <a name="site-specific-order-settings"></a>Platsspecifika orderinställningar
 
-För att skapa sitespecifika orderinställningar klickar du på **Nytt**. I **Detaljvyn**, ange platsen i fältet **Giltiga inställningar för** &gt; **Plats**. I **Diagramvy** fyller du i kolumnen **Site**. Den nya regeln kommer automatiskt att få ett nytt rangordningsvärde, högre än noll. Du kan skapa så många sitespecifika regler som behövs och du kan tilldela alla sitespecifika detaljregler samma rangordning för att visa att de är lika viktiga. 
+För att skapa sitespecifika orderinställningar klickar du på **Nytt**. I **Detaljvyn**, ange platsen i fältet **Giltiga inställningar för** &gt; **Plats**. I **Diagramvy** fyller du i kolumnen **Plats**. Den nya regeln kommer automatiskt att få ett nytt rangordningsvärde, högre än noll. Du kan skapa så många sitespecifika regler som behövs och du kan tilldela alla sitespecifika detaljregler samma rangordning för att visa att de är lika viktiga. 
 
 Om du är i **Detaljvy**, kan du inte få en överblick över reglerna som skapats för artikeln. Växla knappen **Visa/dölj lista** om du vill visa översiktsinformation. När en orderrad av något slag skapas och inte har någon angiven plats, söker Dynamics 365 for Operations efter en regel utan angiven site. Detta kan hjälpa till att bestämma en standardplats på orderraden. Den här siten används sedan till att söka efter en specifik regel där ett standardlagerställe kan ha ställts in. Detta lagerställe används för orderraden.
 
@@ -149,9 +150,9 @@ Som en allmän vägledning kommer specifika regler och regler för dimensioner s
 
 Regeln med rangordning noll fungerar som ett skyddsnät. Om inga andra regler hittas, kommer standardorderinställningarna från regel noll att användas. 
 
-Eftersom rangordningsnumret är så viktigt, finns det på åtgärdsfönstret **Standardorderinställningar ** funktioner som flyttar en regel upp eller ned så att de alltid är i steg om 10. 
+Eftersom rangordningsnumret är så viktigt, finns det på åtgärdsfönstret **Standardorderinställningar** funktioner som flyttar en regel upp eller ned så att de alltid är i steg om 10. 
 
-Antalet regler som har skapats för en frisläppt produkt kan vara många. För att få en bättre känsla för vad varje regel åsidosätter och varför den behövs, rekommenderar vi att använda **Rutnätsvy** på sidan** Standardorderinställningar**. Du kan aktivera rutnätsvy genom att gå till åtgärdsfönstret **Alternativ** Åtgärdsfönster &gt; **Sidalternativ** &gt; **Ändra vy** &gt; **Rutnätsvy**. Antalet kolumner som visas i rutnätet kan vara ganska betydande, särskilt för försäljnings- och lagerflikarna. Om du vill begränsa antalet kolumner som visas i rutnätet, kan du dölja eller visa grupper av kolumner genom att använda knapparna i menyn **Standardorderinställningar** &gt; **Visa kolumn**.
+Antalet regler som har skapats för en frisläppt produkt kan vara många. För att få en bättre känsla för vad varje regel åsidosätter och varför den behövs, rekommenderar vi att använda **Rutnätsvy** på sidan**Standardorderinställningar**. Du kan aktivera rutnätsvy genom att gå till åtgärdsfönstret **Alternativ** Åtgärdsfönster &gt; **Sidalternativ** &gt; **Ändra vy** &gt; **Rutnätsvy**. Antalet kolumner som visas i rutnätet kan vara ganska betydande, särskilt för försäljnings- och lagerflikarna. Om du vill begränsa antalet kolumner som visas i rutnätet, kan du dölja eller visa grupper av kolumner genom att använda knapparna i menyn **Standardorderinställningar** &gt; **Visa kolumn**.
 
 ### <a name="specific-order-settings-for-released-product-variant"></a>Specifika orderinställningar för frisläppta produktvarianter
 

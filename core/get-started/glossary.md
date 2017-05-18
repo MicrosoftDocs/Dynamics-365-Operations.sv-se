@@ -253,7 +253,7 @@ Metoden som används för distribution till acceptanstestet för användare (UAT
 
 Ett Visual Studio-verktyg som du använder för att skapa, uppdatera och kontrollera dina modellelement.
 
-###### <a name="financial-dimensionsdimension-based-configuration"></a>**..\ekonomiska-dimensioner\dimensionsbaserad konfiguration**
+###### <a name="financial-dimensionsdimension-based-configuration"></a>**dimensionsbaserad produktionskonfiguration**
 
 En konfigurationsteknik som används för att skapa produktvarianter genom att välja värden för produktdimensioner.
 
@@ -503,7 +503,7 @@ En del av en produkt.
 
 ###### <a name="product-dimension"></a>**produktdimension**
 
-De produktattribut för storlek, färg eller konfiguration som används för ..\ekonomiska-dimensioner\dimensionsbaserad konfiguration.
+De produktattribut för storlek, färg eller konfiguration som används för dimensionsbaserad produktionskonfiguration.
 
 ###### <a name="product-family"></a>**produktfamilj**
 

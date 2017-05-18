@@ -3,7 +3,7 @@ title: "Visa och exportera fältbeskrivningar"
 description: "Den här artikeln innehåller en beskrivning av hur du visar fältbeskrivningar och hur du använder sidan Fältbeskrivningar vid export av beskrivningar."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -17,15 +17,19 @@ ms.search.region: Global
 ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: c8c96dc9705688308dd4a5c720700ddc17657d75
-ms.openlocfilehash: d4fc9cdee0e2160e363f9defcf6bdbc57ed4db74
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 3029cb441d124e6e5aa427f7fcd95540700254c6
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="view-and-export-field-descriptions"></a>Visa och exportera fältbeskrivningar
+
+[!include[banner](../includes/banner.md)]
+
 
 Den här artikeln innehåller en beskrivning av hur du visar fältbeskrivningar och hur du använder sidan Fältbeskrivningar vid export av beskrivningar.
 
@@ -80,11 +84,11 @@ Det här avsnittet innehåller information som hjälper dig att felsöka problem
 
 ### <a name="i-cant-find-a-field-description"></a>Jag kan inte hitta en fältbeskrivning
 
-Vi håller på att lägga till beskrivningar av de mer komplexa fälten. Om du behöver hjälp med ett visst fält kan du kontakta oss genom att lägga till en kommentar i den här wiki-artikeln.
+Vi håller på att lägga till beskrivningar av de mer komplexa fälten. Om du behöver hjälp med ett visst fält kan du kontakta oss genom att lägga till en kommentar i det här avsnittet.
 
 ### <a name="the-field-description-isnt-helpful"></a>Fältbeskrivningen är inte till någon hjälp
 
-Kontakta oss genom att lägga till en kommentar i den här wiki-artikeln. Beskriv gärna vilken ytterligare information du behöver.
+Kontakta oss genom att lägga till en kommentar i det här avsnittet. Beskriv gärna vilken ytterligare information du behöver.
 
 ### <a name="i-cant-find-a-field-on-the-field-descriptions-page"></a>Jag kan inte hitta ett fält på sidan Fältbeskrivningar.
 
@@ -97,6 +101,9 @@ Information om olika sätt att hitta sidor hittar du i avsnittet "Söka efter si
 <a name="see-also"></a>Se även
 --------
 
-[Hjälp för Anpassa fält](https:/docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/user-interface/customize-field-help.md)
+[Hjälp för Anpassa fält](/dynamics365/operations/dev-itpro/user-interface/customize-field-help)
+
+
+
 
 

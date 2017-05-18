@@ -3,7 +3,7 @@ title: "Navigeringsökning"
 description: "Det här avsnittet innehåller en beskrivning av hur du använder sökfunktionen för att navigera till olika sidor i Microsoft Dynamics 365 for Operations."
 author: aneesmsft
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 04/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -16,10 +16,11 @@ ms.search.region: Global
 ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 4bb647cfd3f012efbffa93a81462c538a24ac850
-ms.openlocfilehash: 87fed576f8cf358520d94f5cd5b326ff9801913a
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 650c8b60ba8204e8990cf607c1c9901b8f0bb762
+ms.openlocfilehash: 9f2cbafa3e21006f458067baf99ea5abaef8bb86
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/28/2017
 
 
 ---
@@ -31,25 +32,32 @@ ms.lasthandoff: 03/31/2017
 
 Det här avsnittet innehåller en beskrivning av hur du använder sökfunktionen för att navigera till olika sidor i Microsoft Dynamics 365 for Operations.
 
-Dynamics 365 for Operations innehåller funktioner för många olika av branscher. Programmet innehåller ett antal områden och sidor som hjälper dig att utföra olika uppgifter. För att snabbt hitta de sidor de behöver för att slutföra dina uppgifter kan du använda funktionen för navigeringssökning. Använd funktionen genom att klicka på ikonen **Sök** för att öppna rutan **Sök**. Du kan då skriva en eller flera ord i rutan. Systemet söker ögonblickligen efter relevanta sidor i programmet som matchar orden som du har angett. Du kan till exempel skriva "leverantörsfaktura" och sedan visar systemet resultat som matchar detta. **Notering:** Rutan **Sök** hjälper dig att hitta och navigera till sidor. Den hjälper dig inte att hitta specifika data eller åtgärder. 
+Dynamics 365 for Operations innehåller funktioner för många olika av branscher. Programmet innehåller ett antal områden och sidor som hjälper dig att utföra olika uppgifter. För att snabbt hitta de sidor de behöver för att slutföra dina uppgifter kan du använda funktionen för navigeringssökning. 
 
-[![search-box](./media/search-box.png)](./media/search-box.png) Navigeringsökningen fungerar även som ett bra sätt att snabbt navigera till en viss sida. Till exempel om du är en leverantörsreskontraansvarig som ofta använder sidan **Betalningsjournal** kan du ange "betalningsjournal" i sökrutan. Eftersom indata är en exakt matchning för sidrubriken visas sidan högst upp i sökresultaten, och du kan snabbt navigera dit. 
+Använd funktionen genom att klicka på ikonen **Sök** för att öppna rutan **Sök**. Du kan då skriva en eller flera ord i rutan. Systemet söker ögonblickligen efter relevanta sidor i programmet som matchar orden som du har angett. Du kan till exempel skriva "leverantörsfaktura" och sedan visar systemet resultat som matchar detta. 
 
-[![searching-for-payment-journal](./media/searching-for-payment-journal.png)](./media/searching-for-payment-journal.png) 
+**Notering:** Rutan **Sök** hjälper dig att hitta och navigera till sidor. Den hjälper dig inte att hitta specifika data eller åtgärder. 
 
-Sökresultatlistan visar sidrubriken samt navigeringssökvägen. På så sätt blir du medveten om platsen för sidan i programmet. Det hjälper dig även att skilja mellan två eller flera liknande sidor i resultaten. När du söker efter en sida matchas dina uppgifter mot sidrubriken samt dess navigeringssökväg. Om du till exempel anger "reskontra" i ** **sökrutan, visas resultaten för sidorna som är tillgängliga för dig i området Kundreskontra, även om sidrubrikerna inte inkluderar ordet "reskontra". 
+[![sökrutan](media/navigation-search.png "sökrutan") 
 
-[![search-for-the-word-receivable](./media/search-for-the-word-receivable.png)](./media/search-for-the-word-receivable.png) 
+## <a name="quickly-navigate-to-a-particular-page"></a>Navigera snabbt till en viss sida
+Navigeringsökningen fungerar även som ett bra sätt att snabbt navigera till en viss sida. Till exempel om du är en leverantörsreskontraansvarig som ofta använder sidan **betalningsjournal** kan du ange "betalningsjournal" i **sökrutan**. Eftersom indata är en exakt matchning för sidrubriken visas sidan högst upp i sökresultaten, och du kan snabbt navigera dit. 
 
-Från ett administrations- och säkerhetsperspektiv visar navigeringsökningen bara:
+Sökresultatlistan visar sidrubriken samt navigeringssökvägen. Här visas platsen för sidan i programmet. Det hjälper dig även att skilja mellan två eller flera liknande sidor i resultaten. 
+
+När du söker efter en sida matchas dina uppgifter mot sidrubriken samt dess navigeringssökväg. Om du till exempel anger "fordran" i **sökrutan** visas resultaten för sidorna som är tillgängliga för dig i området kundreskontra även om sidrubrikerna inte inkluderar ordet "fordran". 
+
+## <a name="quickly-navigate-to-a-page-based-on-the-technical-form-name"></a>Navigera snabbt till en sida baserat på tekniska formulärnamn
+Navigeringssökfunktionen innehåller även en begärd funktion för avancerade användare: förmågan att snabbt navigera till en sida som baseras på det tekniska formulärnamnet. Många användare är bekanta med systemet så att de vet vilka exakta formulärnamn de arbetar med. Om du är en av dessa användare, kan du ange **formulär:** följt av namnet på det formulär du söker efter. Om du till exempel anger **formulär: levfaktura**, kommer sökresultaten att visa alla sidor där formulärnamnet börjar med. **levfaktura** 
+
+## <a name="administration-and-security"></a>Administration och säkerhet
+Från ett administrations- och säkerhetsperspektiv visar navigeringsökningen bara två typer av resultat:
 
 -   Sidor som aktiverats i den aktuella konfigurationen (med konfigurationsnycklar).
--   Sidor som användaren har åtkomst till baserat på användarens roll
+-   Sidor som användaren har åtkomst till baserat på användarens roll.
 
-Listan med sökresultat begränsas till tio objekt. Om du inte hittar vad du söker efter i resultaten, försök att begränsa eller uppdatera indata. Från ett utvecklingsperspektiv är navigeringssökfunktionen mycket lätt att utnyttja, eftersom det inte finns någon faktiskt fördröjning mellan distributionen av menyalternativ och deras förmåga att visas i sökresultat. Så länge som menyalternativen länkas till från antingen navigeringsfönstret eller instrumentpanelen kommer dessa automatiskt att bli sökbara. Navigeringssökfunktionen innehåller även en begärd funktion för avancerade användare: förmågan att snabbt navigera till en sida som baseras på det tekniska formulärnamnet. Många användare är bekanta med systemet så att de vet vilka exakta formulärnamn de arbetar med. Om du är en av dessa användare, kan du ange **formulär:** följt av namnet på det formulär du söker efter. Om du till exempel anger **formulär: levfaktura**, kommer sökresultaten att visa alla sidor där formulärnamnet börjar med. **levfaktura** 
+Listan med sökresultat begränsas till tio objekt. Om du inte hittar vad du söker efter i resultaten, försök att begränsa eller uppdatera indata. 
 
-[![search-for-form-vendinvoice](./media/search-for-form-vendinvoice.png)](./media/search-for-form-vendinvoice.png)
-
-
-
+## <a name="development"></a>Utveckling 
+Från ett utvecklingsperspektiv är navigeringssökfunktionen mycket lätt att utnyttja, eftersom det inte finns någon faktiskt fördröjning mellan distributionen av menyalternativ och deras förmåga att visas i sökresultat. Så länge som menyalternativen länkas till från antingen navigeringsfönstret eller instrumentpanelen kommer dessa automatiskt att bli sökbara. 
 

@@ -18,10 +18,11 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: c0c918b94fe96d123bb6c25c42fe168a026cd8a9
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 36b307870f2427cc43a189e92cbd8c30f6ddb0c1
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -39,14 +40,14 @@ För att generera en efterfrågeprognosticering, gå till **Huvudplanering &gt; 
 
 Prognosen skopan kan väljas vid prognos generation tid. Tillgängliga värden är: Dag, vecka och månad. 
 
-Antalet perioder för att skapa en prognos för ligger i** prognoshorisonten** . 
+Antalet perioder för att skapa en prognos för ligger i**prognoshorisonten** . 
 
 När prognosen är inställd på att **kopiera över historiska behov**, slutet av den historiska horisonten ignoreras. Systemet kopierar det antal grupper som anges i fältet **Prognoshorisont** till fältet för prognostiserad efterfrågan, med början på det datum som anges i fältet **Startdatum** under **Historisk horisont**. Genom att kopiera historisk efterfrågan från ett visst datum framåt, Produktionsplanerare kan göra planen för nästa kvartal på två sätt:
 
 -   Genom att kopiera efterfrågan från samma kvartal förra året.
 -   Genom att kopiera behovet från föregående kvartal.
 
-För att undvika förvirring i produktionsplaner, ett visst antal prognos kostnadsslag kan frysas. Numret anges i **frys tidsgräns** . Om det **justerade behovet prognos **sida, celler för fryst skopor är avaktiverad, för att ge en visuell indikation på att dessa värden bör inte ändras. 
+För att undvika förvirring i produktionsplaner, ett visst antal prognos kostnadsslag kan frysas. Numret anges i **frys tidsgräns** . Om det **justerade behovet prognos**sida, celler för fryst skopor är avaktiverad, för att ge en visuell indikation på att dessa värden bör inte ändras. 
 
 Startdatum för baslinjen efterfrågan behöver inte vara dagens datum eller ett datum i framtiden. Om du vill ställa in ett annat startdatum, använd den **ursprungliga prognosen startdatum – från fältet datum** . Till exempel, i juni, användare kan generera en prognos för nästa år. Eftersom prognosen hinkar mellan slutet av historisk efterfrågan och start av baslinjen saknas förutsägelser kanske inte exakt. Om du använder tjänsten för efterfrågeprognosticering i Microsoft Dynamics 365 for Operations finns det fyra sätt för dig att fylla i de luckor som saknas. Du kan välja den metod som du vill använda genom att ange parametern MISSING\_VALUE\_SUBSTITUTION på sidan **Parametrar för efterfrågeprognosticering**. 
 

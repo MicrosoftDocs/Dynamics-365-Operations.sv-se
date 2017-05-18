@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 3b16ef53f9fb57a6663db0be1f7e0a57471db2fb
-ms.openlocfilehash: 8f3fb9889a0870021a9799b8a3c78237b9bc9731
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 4d4a8a1bf9de16827ca143e63455525a0c6b8dad
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -38,14 +39,14 @@ Den här artikeln beskriver hur du ställer in integrationen mellan Anläggnings
 -   En ny anläggningstillgång skapas automatiskt när du bokför en produktinleverans eller leverantörsfakturan där kryssrutan Skapa en ny anläggningstillgång är markerad. En anskaffningstransaktion bokförs automatiskt för tillgången när du bokför leverantörsfakturan.
 -   En ny anläggningstillgång skapas automatiskt när du bokför en produktinleverans eller leverantörsfakturan där kryssrutan Skapa en ny anläggningstillgång är markerad. Ingen anskaffningstransaktion bokförs för tillgången när du bokför leverantörsfakturan.
 
-Välj någon av de två första metoderna om du föredrar att skapa anläggningstillgångar manuellt, och sedan tilldela anläggningstillgångsnumret till inköpsordern eller leverantörsfakturan. Välj någon av de två sista metoderna om du föredrar ett mer flexibelt sätt: ibland kanske du vill skapa anläggningstillgångar manuellt, och ibland automatiskt skapa en ny anläggningstillgång som baseras på anläggningstillgångsinformationen i radartikeldetaljerna. 
+Välj någon av de två första metoderna om du föredrar att skapa anläggningstillgångar manuellt, och sedan tilldela Anläggningstillgångsnumret till inköpsordern eller leverantörsfakturan. Välj någon av de två sista metoderna om du föredrar ett mer flexibelt sätt: ibland kanske du vill skapa anläggningstillgångar manuellt, och ibland automatiskt skapa en ny anläggningstillgång som baseras på Anläggningstillgångsinformationen i radartikeldetaljerna. 
 
 Oavsett om du skapar anläggningstillgångar manuellt eller använder det flexibla sättet, gäller det andra beslutet huruvida en anskaffningstransaktion bara kan bokföras i Anläggningstillgångar, eller om den kan bokföras när du bokför en leverantörsfaktura. Vissa organisationer föredrar att användarna manuellt skapar anskaffningar och anskaffningstransaktioner i Anläggningstillgångar genom manuell journalregistrering eller genom förslag. 
 
 I det här avsnittet beskrivs respektive metod mer ingående.
 
 ## <a name="methods-for-manually-creating-fixed-assets"></a> Metoder för att manuellt skapa anläggningstillgångar
-När du bokför en faktura som har ett anläggningstillgångsnummer registrerat på raderna, och sidan Tillåt förvärv av tillgångar från inköp på sidan Parametrar för anläggningstillgångar bokförs förvärvet automatiskt och tillgångens status ändras till Öppen. 
+När du bokför en faktura som har ett Anläggningstillgångsnummer registrerat på raderna, och sidan Tillåt förvärv av tillgångar från inköp på sidan Parametrar för anläggningstillgångar bokförs förvärvet automatiskt och tillgångens status ändras till Öppen. 
 
 Om ett förvärv inte kan bokföras kan du antingen registrera en anskaffningstransaktion manuellt i Anläggningstillgångar, eller använda ett anskaffningsförslag i Journal för anläggningstillgångar för att skapa flera anskaffningstransaktioner samtidigt.
 
@@ -75,7 +76,7 @@ I det här scenariot används följande inställningar:
 -   Kapitaliseringströskel för gruppen Datorer (COMP) är 15 000.
 -   Din uppgift är att registrera en inköpsorder för en ny bärbar dator som en medarbetare ska använda, bokföra inköpsordern, verifiera att den leveransansvariga bokför en produktinleverans och sedan bokför fakturan och verifiera att revisorn uppdaterar tillgången till statusvärdet Öppen.
 
-Till att börja med ska du använda sidan Inköpsorder för att registrera uppgifter om den bärbara datorn, som kostar 16 000 kronor. Markera alternativet Ny anläggningstillgång? på snabbfliken Anläggningstillgångar på inköpsorderraden, välj COMP som anläggningstillgångsgrupp och spara inköpsordern. 
+Till att börja med ska du använda sidan Inköpsorder för att registrera uppgifter om den bärbara datorn, som kostar 16 000 kronor. Markera alternativet Ny anläggningstillgång? på snabbfliken Anläggningstillgångar på inköpsorderraden, välj COMP som Anläggningstillgångsgrupp och spara inköpsordern. 
 
 När den bärbara datorn inlevereras, registrerar och bokför den leveransansvarige en produktinleverans vilket registrerar inleveransen av den bärbara datorn. Tillgången bärbar dator skapas och har statusen Ännu inte anskaffad. Beloppet överskrider kapitaliseringströskeln. Därför väljs alternativet Deprecation (Avskrivning) i böckerna för tillgången bärbar dator. Följande transaktioner görs.
 
@@ -84,7 +85,7 @@ När den bärbara datorn inlevereras, registrerar och bokför den leveransansvar
 | Inköp, produktinleverans för inköp        | Ofakturerade inleveranser | 16 000,00 |          |
 | Inköp, produktinleverans, inköpsmotkonto | Periodiserade inköp   |          | 16 000,00 |
 
-Sedan bokför du leverantörsfakturan för datorn. Statusen Bärbar dator ändras inte, eftersom Anläggningstillgångar ställs in för att förhindra att en anläggningstillgångstransaktion bokförs, när en leverantörsfaktura bokförs. Alternativet Skapa en ny anläggningstillgång markerades när leverantörsfakturan bokfördes. Därför användes kontot Inleverans av anläggningstillgång. Kontot Utleverans av anläggningstillgång för anläggningstillgången användes inte, eftersom inget förvärv bokfördes; det kommer att användas senare när organisationens revisor bokför en anskaffningstransaktion i Anläggningstillgångar med förvärvsförslag. 
+Sedan bokför du leverantörsfakturan för datorn. Statusen Bärbar dator ändras inte, eftersom Anläggningstillgångar ställs in för att förhindra att en Anläggningstillgångstransaktion bokförs, när en leverantörsfaktura bokförs. Alternativet Skapa en ny anläggningstillgång markerades när leverantörsfakturan bokfördes. Därför användes kontot Inleverans av anläggningstillgång. Kontot Utleverans av anläggningstillgång för anläggningstillgången användes inte, eftersom inget förvärv bokfördes; det kommer att användas senare när organisationens revisor bokför en anskaffningstransaktion i Anläggningstillgångar med förvärvsförslag. 
 
 Följande transaktioner görs.
 

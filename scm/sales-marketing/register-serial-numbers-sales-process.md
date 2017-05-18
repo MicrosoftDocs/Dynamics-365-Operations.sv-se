@@ -19,10 +19,11 @@ ms.search.industry: Distribution
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: ec2907129e68f39e6e5f56f0617b7599598312d2
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: de1d8bc2fa1080e549cb8c33657ad0f373644d38
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -46,7 +47,7 @@ Du måste aktivera serienummer för försäljningsprocessen med alternativet**Ak
 Du kan registrera serienummer på följesedeln för en försäljningsorder på fakturan. När du förbereder en faktura för en seriekopplad artikel som har skickats med en följesedel, kan du välja vilket serienummer på följesedeln som ska faktureras. Antalet registrerade serienummer får inte överstiga den levererade artikelkvantiteten. Om du skapar en delvis faktura kan du välja färre seriekopplade artiklar än vad som registrerades på följesedeln. När du skriver ut en följesedel eller en faktura, inkluderas serienumren som har registrerats.
 
 ## <a name="can-i-enter-serial-numbers-by-scanning-them-or-do-i-have-to-type-them"></a>Kan jag ange serienummer genom att skanna dem, eller måste jag skriva in dem?
-Du kan antingen skanna eller ange serienummer. Om du använder skanner, avgör skanningsläget om du vill lägga till eller ta bort serienummer i listan över serienummer på fakturan eller följesedeln. Om du vill skanna efter serienummer, till exempel genom att använda en handhållen streckkodsskanner, konfigurera skannern för att skicka ett Enter- eller TABB-kommando efter serienumret. Detta kommando indikerar slutet av dataströmmen. Annars måste du trycka på Enter eller TABB på tangentbordet efter att du har skannat varje serienummer.
+Du kan antingen skanna eller ange serienummer. Om du använder skanner, avgör skanningsläget om du vill lägga till eller ta bort serienummer i listan över serienummer på fakturan eller följesedeln. Om du vill skanna efter serienummer, till exempel genom att använda en handhållen streckkodsskanner, konfigurera skannern för att skicka ett Enter- eller TABB-kommando efter serienumret. Detta kommando indikerar slutet av dataströmmen. Annars måste du trycka på Retur eller TABB på tangentbordet efter att du har skannat varje serienummer.
 
 ## <a name="if-i-enable-serial-numbers-for-the-sales-process-do-i-have-to-register-all-serial-numbers-for-all-items"></a>Om jag aktiverar serienummer för försäljningsprocessen, behöver jag registrera alla serienummer för alla artiklar?
 Inställningarna för den spårningsdimensionsgrupp som har tilldelats produkten bestämmer om serienummer måste registreras för alla artiklar på en följesedel eller en faktura. När du aktiverar serienummer för en försäljningsprocess, markeras alternativet **Serienummerkontroll** automatiskt. Det innebär att du måste registrera ett serienummer, eller en blankregistrering, för ett oläsligt nummer för varje artikel på följesedeln eller fakturan. Om du inte vill kräva ett serienummer för varje artikel, markerar du alternativet **Tom utleverans tillåten** på den spårningsdimensiongrupp som är tilldelad artikeln. Du kan sedan registrera färre serienummer än den kvantitet av artiklarna som har skickats. Om du registrerar fler serienummer än den kvantitet artiklar som skickas, kan du inte bokföra följesedeln eller fakturan.
@@ -55,7 +56,7 @@ Inställningarna för den spårningsdimensionsgrupp som har tilldelats produkten
 Du kan skapa delvisa fakturor och följesedlar för försäljningsorder och register endast serienumren för de artiklar som dessa fakturor och följesedlar innehåller. Om du vill skapa en delfaktura, och du har mer än en följesedel för försäljningsordern, kan du inkludera serienummer från mer än en följesedel. Det kan dock bara finnas en följesedel där alla serienummer inte är inkluderade. Om du till exempel har tre följesedlar och varje innehåller två seriekopplade artiklar, kan du inte skapa en delfaktura för en artikel från varje följesedel.
 
 ## <a name="what-do-i-do-when-a-serial-number-isnt-readable"></a>Vad gör jag när ett serienummer inte är läsligt?
-Om ett serienummer inte kan läsas eller skannas kan du skapa en tom rad för artikeln genom att klicka på **Det går inte att läsa **på sidan **Serienummer **. Om serienumret blir tillgängligt senare kan du uppdatera fakturan eller följesedeln. Mer information finns i nästa avsnittet ”Kan jag korrigera eller ändra serienummer som jag har registrerat för en försäljningsorder?”.
+Om ett serienummer inte kan läsas eller skannas kan du skapa en tom rad för artikeln genom att klicka på **Det går inte att läsa**på sidan **Serienummer**. Om serienumret blir tillgängligt senare kan du uppdatera fakturan eller följesedeln. Mer information finns i nästa avsnittet ”Kan jag korrigera eller ändra serienummer som jag har registrerat för en försäljningsorder?”.
 
 ## <a name="can-i-correct-or-change-the-serial-numbers-that-i-have-registered-for-a-sales-order"></a>Kan jag korrigera eller ändra serienummer som jag har registrerat för en försäljningsorder?
 Ja du kan korrigera serienummer, när följande villkor uppfylls:

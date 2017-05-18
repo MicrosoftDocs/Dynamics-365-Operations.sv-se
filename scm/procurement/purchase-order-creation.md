@@ -3,7 +3,7 @@ title: "Skapa inköpsorder"
 description: "Den här artikeln innehåller en beskrivning av processen och alternativen för att skapa en inköpsorder manuellt."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -17,15 +17,19 @@ ms.search.region: Global
 ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: f707d45290682e79ee439ba0d504852429defa90
-ms.openlocfilehash: de8fa93bfc0119d6f9433fb4215c326abdda2899
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: b87e4be4541ce5a33b3f6ed0ffe3b08f6447d293
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="create-purchase-orders"></a>Skapa inköpsorder
+
+[!include[banner](../includes/banner.md)]
+
 
 Den här artikeln innehåller en beskrivning av processen och alternativen för att skapa en inköpsorder manuellt.
 
@@ -66,7 +70,7 @@ Ibland kanske du vill dela upp kvantiteten du har beställt så att olika delar 
 Avgifter kan läggas till på inköpsorderrader automatiskt om automatiska avgifter har ställts in för leverantören eller avgiftsgruppen för leverantören och för artikeln eller avgiftsgruppen för artikeln. Kostnader läggs dock oftast till manuellt på orderradnivå. Om du vill lägga till en avgift kan du öppna sidan **Underhåll avgifter** med hjälp av åtgärden **Underhåll avgifter** i menyn **Ekonomi** i vyn **Rader**. Fördelen med att lägga till avgifter direkt på orderradnivå är att avgiften kan allokeras som en lagerkostnad. Använd debetalternativet **Artikel** för att ställa in avgiftskoder för kontoproduktkostnader. Dessa typer av avgifter ska allokeras från inköpsorderhuvudet till raderna innan ordern kan bekräftas. Du kanske vill allokera tillägg baserat på kvantiteten på varje rad. Avgiftskategorin påverkar även hur avgifter redovisas. Fasta avgifter till exempel anger ett fast belopp och avgifter i procent beräknas som en procentsats av nettobeloppet för orderraden. Inköpsorder kan tilldelas till en last och lasten kan innehålla en uppskattning av den förväntade utgiften för transportkostnader. Du kan allokera den här kostnaden från lasten tillbaka till inköpsorderraderna.
 
 ## <a name="purchase-order-actions"></a>Inköpsorderåtgärder
-När du har lagt till huvudet och raderna i inköpsordern måste du ofta utföra ytterligare steg innan ordern är klar att bekräftas. Eftersom det finns så många alternativ kan det vara praktiskt att använda [Åtgärdssökning](/dynamics365/operations/action-search) för att hitta relevant menyalternativ.  
+När du har lagt till huvudet och raderna i inköpsordern måste du ofta utföra ytterligare steg innan ordern är klar att bekräftas. Eftersom det finns så många alternativ kan det vara praktiskt att använda [Åtgärdssökning](/dynamics365/operations/get-started/action-search) för att hitta relevant menyalternativ.  
 
 Du kan konfigurera produkter på ordern så att de har tilläggsartiklar. Tilläggsartiklar är produkter som måste eller kan köpas tillsammans med andra produkter. Tilläggsprodukter kan läggas till kostnadsfritt som medföljande produkter. Du kan även själv bestämma om du vill lägga till dem i ordern eller inte. Du kan granska tilläggsartiklarna efter att varje orderrad har lagts till. Du kommer dock troligtvis att tycka att det är enklare att granska och lägga till relevanta tilläggsartiklar för alla orderrader med hjälp av sidan **Tilläggsartiklar** som du kan öppna från åtgärdsfönstret.  
 
@@ -91,5 +95,7 @@ Du kan behöva skjuta upp slutförandet av en inköpsorder. Du kan till exempel 
 [Produktinleverans mot inköpsorder](product-receipt-against-purchase-orders.md)
 
 [Översikt över leverantörsfakturor](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview)
+
+
 
 

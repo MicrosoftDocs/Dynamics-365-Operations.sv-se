@@ -3,7 +3,7 @@ title: "Momsrapporter för Europa"
 description: "Det här avsnittet innehåller allmän information om inställning och skapande av mervärdesskattutdrag (moms) för vissa europeiska länder."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -17,15 +17,19 @@ ms.search.region: Austria, Belgium, Czech Republic, Estonia, Finland, Germany, L
 ms.author: v-elgolu
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: f707d45290682e79ee439ba0d504852429defa90
-ms.openlocfilehash: 84a639b25c64821e00ca4397f42f69298953e599
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 190977af579a025b6f46646dfab153b1879d3e76
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="vat-reporting-for-europe"></a>Momsrapporter för Europa
+
+[!include[banner](../includes/banner.md)]
+
 
 Det här avsnittet innehåller allmän information om inställning och skapande av mervärdesskattutdrag (moms) för vissa europeiska länder.
 
@@ -43,7 +47,7 @@ Det här avsnittet innehåller en allmän metod för inställning och skapande a
 -   Sverige
 
 ## <a name="vat-statement-overview"></a>Översikt över momsrapport
-Moms-utdraget baseras på beloppen i momstransaktionerna. Att generera ett momsrapport ingår i betalningsprocessen för moms, som implementeras med funktionen Kvitta och bokföra moms. Den här funktionen beräknar momsen som ska betalas för en given period. Kvittningsberäkningen innehåller bokförd moms för den valda kvittningsperioden för momstransaktionen. Processen för att beräkna data för en momsrapport baseras på förhållandet mellan momskoder och momsrapporteringskoder, där momsrapporteringskoderna matchar rutorna för momsrapporter (eller taggar i XML). För varje momskod bör momsrapporteringskoder ställas in för varje transaktionstyp, till exempel skattepliktig försäljning, skattepliktiga inköp och skattepliktig import. Följande typ av transaktioner beskrivs i avsnittet [Momskoder för momsrapportering](#Sales tax codes for VAT reporting) längre fram i det här avsnittet.
+Moms-utdraget baseras på beloppen i momstransaktionerna. Att generera ett momsrapport ingår i betalningsprocessen för moms, som implementeras med funktionen Kvitta och bokföra moms. Den här funktionen beräknar momsen som ska betalas för en given period. Kvittningsberäkningen innehåller bokförd moms för den valda kvittningsperioden för momstransaktionen. Processen för att beräkna data för en momsrapport baseras på förhållandet mellan momskoder och momsrapporteringskoder, där momsrapporteringskoderna matchar rutorna för momsrapporter (eller taggar i XML). För varje momskod bör momsrapporteringskoder ställas in för varje transaktionstyp, till exempel skattepliktig försäljning, skattepliktiga inköp och skattepliktig import. Följande typ av transaktioner beskrivs i avsnittet Momskoder för momsrapportering längre fram i det här avsnittet.
 
 En specifik rapportlayout för varje momsrapporteringskod bör fastställas. Momskoder är samtidigt länkade till en viss momsmyndighet via momskvittningsperioder. En specifik rapportlayout för varje momsmyndighet bör fastställas. Därför kan endast momsrapporteringskoder med samma rapportlayout som har ställts in för en momsmyndighet i momskvittningsperioder för momskoden markeras i rapportinställningarna för momskoden. En momstransaktion skapas vid bokföring av en order eller en journal, innehåller en momskod, momskälla, momsriktning och transaktionsbelopp (momsbasbelopp och momsbelopp i redovisningsvaluta, momsvaluta och transaktionsvaluta). Baserat på kombinationen av momstransaktionsattribut utgör transaktionsbeloppen totalbelopp för momsrapporteringskoder som angetts för momskoder. Illustrationen som följer visar datarelationen.
 
@@ -249,7 +253,7 @@ d<li>Transaktionens <strong>Momsbasbelopp</strong> eller <strong>Momsbelopp</str
 
 Du kan använda elektronisk rapportering (ER) för att konfigurera utdrag och rapporter, samt för att exportera datavarierande elektroniska format utan att ändra X++ -koden. För mer information:
 
--   [Översikt över elektronisk rapportering](/dynamics365/operations/dev-itpro/dev-itpro/analytics/general-electronic-reporting)
+-   [Översikt över elektronisk rapportering](/dynamics365/operations/dev-itpro/analytics/general-electronic-reporting)
 -   [Hämta elektroniska rapporteringskonfigurationer från Lifecycle Services](/dynamics365/operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs)
 -   [Lokaliseringskrav – Skapa en GER-konfiguration](/dynamics365/operations/dev-itpro/analytics/electronic-reporting-configuration)
 
@@ -270,6 +274,8 @@ Momsrapporten för varje land måste uppfylla kraven i landets lagstiftning. Det
 | Litauen      | [Detaljerad momsinformation för Litauen](emea-ltu-vat-statement-details.md)         |
 | Nederländerna    |                                                                                 |
 | Sverige         |                                                                                 |
+
+
 
 
 

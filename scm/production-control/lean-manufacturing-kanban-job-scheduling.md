@@ -3,7 +3,7 @@ title: "Lean manufacturing – Kanban-jobbplanering"
 description: "Det här avsnittet innehåller information om visuell kontroll över kanban-jobbplanering och olika sätt för att schemalägga kanban-jobb."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-02-24 15 - 02 - 36
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -18,22 +18,28 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 062cbbc8a4fd3b4dc738f24ee0606a3741736377
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 019974b96985748c82641b73e40a3131d5b27232
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="kanban-job-scheduling-for-lean-manufacturing"></a>Lean manufacturing – Kanban-jobbplanering
 
+[!include[banner](../includes/banner.md)]
+
+
 Det här avsnittet innehåller information om visuell kontroll över kanban-jobbplanering och olika sätt för att schemalägga kanban-jobb.  
 
 **Kanban-jobbplanering** sidan ger en visuell kontroll över scheman för lean manufacturing arbete celler. Den ger en översikt över alla Kanbankort jobb och skaffar flera filtrering kapaciteter. Från den här sidan kan du flytta till alla andra sidor som är relaterade till kanban konfiguration och utförande.
 
 ## <a name="automatic-scheduling-of-kanban-jobs"></a>Automatisk schemaläggning av kanban jobb
-Tidsplanering kan aktiveras automatiskt om du anger parametern **Automatisk planeringskvantitet** på kanban-regeln. Om du anger **Automatisk planeringskvantitet** som **1**, planeras varje kanban-job omedelbart när det skapas. Resultatet är en serie först ut, först till kvarn. Om du ställer in**automatisk planering kvantitet** till ett värde som är större än 1, kanban jobb grupperas innan de är planerade. Detta koncept gör kanban storlekar att reduceras under de faktiska ekonomiska standardstorlekar. Exempelvis är 30 den ekonomiska batchstorleken för en viss artikel (eller artikelfamilj). Istället för att skapa kanbans som använder produktkvantitet 30 kan du konfigurera kanban-regeln så att den har en produktkvantitet på 10 och ett värde för **Automatisk planeringskvantitet ** på **3**. Trots att automatisk planering av scheman kanban jobb för flödesgrupp bara när tre oplanerade jobb finns, det är helt transparent för planerare och verkstadsgolvet arbetsledare som två oplanerade jobb kanske väntar på avrättning. Den planerare eller shop floor manager kan sedan ta dessa två jobb i produktionen genom att manuellt planera dem eller skapa ytterligare kanban.
+Tidsplanering kan aktiveras automatiskt om du anger parametern **Automatisk planeringskvantitet** på kanban-regeln. Om du anger **Automatisk planeringskvantitet** som **1**, planeras varje kanban-job omedelbart när det skapas. Resultatet är en serie först ut, först till kvarn. Om du ställer in**automatisk planering kvantitet** till ett värde som är större än 1, kanban jobb grupperas innan de är planerade. 
+
+Detta koncept gör kanban storlekar att reduceras under de faktiska ekonomiska standardstorlekar. Exempelvis är 30 den ekonomiska batchstorleken för en viss artikel (eller artikelfamilj). Istället för att skapa kanbans som använder produktkvantitet 30 kan du konfigurera kanban-regeln så att den har en produktkvantitet på 10 och ett värde för **Automatisk planeringskvantitet** på **3**. Trots att automatisk planering av scheman kanban jobb för flödesgrupp bara när tre oplanerade jobb finns, det är helt transparent för planerare och verkstadsgolvet arbetsledare som två oplanerade jobb kanske väntar på avrättning. Den planerare eller shop floor manager kan sedan ta dessa två jobb i produktionen genom att manuellt planera dem eller skapa ytterligare kanban.
 
 ## <a name="manual-scheduling"></a>Manuell planering
 För manuell planering, Microsoft Dynamics AX 2012 introducerade kanban scheduling brädan. Manuell planering kan kombineras med automatisk scheduling. Kanban planering styrelsen låter dig planera och avplanera jobb, flyttat dem i sekvens, eller flytta dem från period till period. Jobb som är baserat på en kanban-regel om **automatisk planering** värdet är mer än **0** kan vara manuellt oplanerade. Dessa arbeten kommer att omplaneras när nästa automatiska planering händelse inträffar (som när en ny kanban skapas). Följande alternativ är tillgängliga för manuell planering:
@@ -66,5 +72,7 @@ Den tillgängliga kapaciteten per dag eller vecka definieras av den kalender som
 
 <a name="see-also"></a>Se även
 --------
+
+
 
 

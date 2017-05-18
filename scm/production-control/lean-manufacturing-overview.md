@@ -19,10 +19,11 @@ ms.search.industry: Manufacturing
 ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 3c608f13c93446329702f07ef7e8bb08a29d87b9
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 8cb9428ff6be93f9a395ec3085ef1fda05847a8a
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -40,7 +41,7 @@ Lean manufacturing erbjuder verktyg som du kan använda för att modellera resur
 -   Övervaka och underhåll kanban-jobb.
 
 Lean manufacturing-arkitekturen i Microsoft Dynamics AX 7 består av produktionsflöden, aktiviteter och kanban-regler. Dessa strukturer är helt integrerade med Microsoft Dynamics AX 7-processer. Du kan använda lean manufacturing i en tillverkningsmiljö för blandat läge som kombinerar olika leverans-, produktion- och sourcing-strategier. Dessa strategier inkluderar tillverkningsorder, batchorder för processbranscher, inköpsorder och överföringsorder.
-| **Viktigt! **                                                                                                                                                                                                                                                                |
+| **Viktigt!**                                                                                                                                                                                                                                                                |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Du kan använda Microsoft Dynamics AX 7 för att stödja implementeringen av lean manufacturing med kanban. En lyckad implementering av resurssnåla principer beror dock på vilka interna affärsprocesser du använder, och på själva produktionsvillkoren och produktionsmiljön. |
 

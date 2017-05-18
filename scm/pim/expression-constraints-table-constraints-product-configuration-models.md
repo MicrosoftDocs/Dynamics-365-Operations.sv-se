@@ -3,7 +3,7 @@ title: "Uttryckbegränsningar och tabellbegränsningar i produktkonfigurationsmo
 description: "I det här avsnittet beskrivs hur du använder uttrycksbegränsningar och registerbegränsningar. Med begränsningar kontrolleras vilka attributvärden som du kan välja när du konfigurerar produkter för en försäljningsorder, försäljningsoffert, inköpsorder eller produktionsorder. Du kan använda uttrycksbegränsningar eller registerbegränsningar, beroende på hur du föredrar att skapa begränsningar."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-02-24 15 - 08 - 06
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -18,15 +18,19 @@ ms.search.industry: Manufacturing
 ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: f707d45290682e79ee439ba0d504852429defa90
-ms.openlocfilehash: 1fe8a0d90a3f707fa7b0fea0310c819ce5040a42
-ms.lasthandoff: 03/30/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 1a08f537d87178973b3ce90bcb60b891bef1141e
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="expression-constraints-and-table-constraints-in-product-configuration-models"></a>Uttryckbegränsningar och tabellbegränsningar i produktkonfigurationsmodeller.
+
+[!include[banner](../includes/banner.md)]
+
 
 I det här avsnittet beskrivs hur du använder uttrycksbegränsningar och registerbegränsningar. Med begränsningar kontrolleras vilka attributvärden som du kan välja när du konfigurerar produkter för en försäljningsorder, försäljningsoffert, inköpsorder eller produktionsorder. Du kan använda uttrycksbegränsningar eller registerbegränsningar, beroende på hur du föredrar att skapa begränsningar. 
 
@@ -40,7 +44,7 @@ Registerbegränsningar anger de kombinationer av värden som tillåts för attri
 
 ### <a name="example-of-a-table-constraint"></a>Exempel på registerbegränsning.
 
-I det här exemplet visas hur du kan begränsa konfigurationen för en högtalare till specifika kabinettfinish och framdelar. Den första tabellen visar storlekar och typer av kabinettfinish och framdelar som är allmänt tillgängliga för konfiguration. Du definierar värdena för attributtyperna **Kabinettfinish ** och **Frontgaller**.
+I det här exemplet visas hur du kan begränsa konfigurationen för en högtalare till specifika kabinettfinish och framdelar. Den första tabellen visar storlekar och typer av kabinettfinish och framdelar som är allmänt tillgängliga för konfiguration. Du definierar värdena för attributtyperna **Kabinettfinish**och **Frontgaller**.
 
 | Attributtyp | Värden                      |
 |----------------|-----------------------------|
@@ -84,7 +88,7 @@ När du konfigurerar en produkt, genom att använda följande begränsninginstä
 (Färg == "Svart" & (storlek == "30" | storlek == "50")) | (färg == "Rör" & storlek = "20")
 
 ## <a name="should-i-use-operators-or-infix-notation-when-i-write-expression-constraints"></a>Ska jag använda operatorer eller infixnotation när jag skriver uttrycksbegränsningar?
-Du kan ange ett begränsningsuttryck, antingen genom att använda de tillgängliga prefixoperatorerna eller genom att använda infixnotation. För operatorerna **Min**, **Max**, och **Abs **kan du inte använda en infixnotation. Dessa operatorer inkluderas som standard i de flesta programspråk.
+Du kan ange ett begränsningsuttryck, antingen genom att använda de tillgängliga prefixoperatorerna eller genom att använda infixnotation. För operatorerna **Min**, **Max**, och **Abs**kan du inte använda en infixnotation. Dessa operatorer inkluderas som standard i de flesta programspråk.
 
 ## <a name="what-operators-and-infix-notation-can-i-use-when-i-write-expression-constraints"></a>Vilka operatorer eller infixnotationer kan jag använda när jag skriver uttrycksbegränsningar?
 I följande tabeller visas operatorerna och infixnotationerna som du kan använda när du skriver en uttrycksbegränsning för en komponent i en produktkonfigurationsmodell. I exemplen i den första tabellen ser du hur du kan skriva ett uttryck genom att använda infixnotation eller operatorer.
@@ -110,8 +114,8 @@ I följande tabeller visas operatorerna och infixnotationerna som du kan använd
 <td>Detta gäller om det första villkoret är falskt, det andra villkoret är sant eller båda.</td>
 <td>Medför[a, b], infix: a -: b</td>
 <td><ul>
-<li><strong>Operator:</strong> Implies[x != 0, y &gt;= 0]</li>
-<li><strong>Infix notation:</strong> x != 0 -: y &gt;= 0</li>
+<li><strong>Operatör:</strong> Implies[x != 0, y &gt;= 0]</li>
+<li><strong>Infixnotation:</strong> x != 0 -: y &gt;= 0</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -119,8 +123,8 @@ I följande tabeller visas operatorerna och infixnotationerna som du kan använd
 <td>Detta gäller endast om alla villkor är sanna. Om antalet villkor är 0 (noll), ger det <strong>Sant</strong>.</td>
 <td>And[args], infix: a &amp; b &amp; ... &amp; z</td>
 <td><ul>
-<li><strong>Operator:</strong> And[x == 2, y &lt;= 2]</li>
-<li><strong>Infix notation:</strong> x == 2 &amp; y &lt;= 2</li>
+<li><strong>Operatör:</strong> And[x == 2, y &lt;= 2]</li>
+<li><strong>Infixnotation:</strong> x == 2 &amp; y &lt;= 2</li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -128,8 +132,8 @@ I följande tabeller visas operatorerna och infixnotationerna som du kan använd
 <td>Detta gäller om något villkor är sant. Om antalet villkor är 0 (noll), ger det <strong>Falskt</strong>.</td>
 <td>Or[args], infix: a | b | ... | z</td>
 <td><ul>
-<li><strong>Operator:</strong> Or[x == 2, y &lt;= 2]</li>
-<li><strong>Infix notation:</strong> x == 2 | y &lt;= 2</li>
+<li><strong>Operatör:</strong> Or[x == 2, y &lt;= 2]</li>
+<li><strong>Infixnotation:</strong> x == 2 | y &lt;= 2</li>
 </ul></td>
 </tr>
 <tr class="even">
@@ -191,7 +195,7 @@ I följande tabeller visas operatorerna och infixnotationerna som du kan använd
 <td>Detta producerar den logiska motsatsen av dess villkor. Detta måste ha exakt ett villkor.</td>
 <td>Not[expr], infix: !expr</td>
 <td><ul>
-<li><strong>Operator:</strong> Not[x] &amp; Not[y == 3]</li>
+<li><strong>Operatör:</strong> Not[x] &amp; Not[y == 3]</li>
 <li><strong>Infixnotation:</strong> !x!(y == 3)</li>
 </ul></td>
 </tr>
@@ -248,5 +252,7 @@ Du kan inte använda reserverade nyckelord som solvernamn för attribut, kompone
 [Skapa en uttrycksbegränsning (Uppgiftsguide)](http://ax.help.dynamics.com/en/wiki/create-an-expression-constraint/)
 
 [Lägga till en beräkning i en produktkonfigurationsmodell (uppgiftsguide)](http://ax.help.dynamics.com/en/wiki/add-a-calculation-to-a-product-configuration-model/)
+
+
 
 

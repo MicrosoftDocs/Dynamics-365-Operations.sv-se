@@ -18,10 +18,11 @@ ms.search.industry: Manufacturing
 ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: f77fe37933854d66c35a4a14e6dfb6db398eb034
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 53700246fb072c4d9afb2e475ae27892700a078a
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -58,7 +59,7 @@ En resurs grupp är en uppsättning verksamhetsresurser som representerar nivån
 En produktionsenhet är en administrativ enhet som är en samling av resursgrupper. En produktionsenhet kan innehålla flera resursgrupper, men en resursgrupp kan bara tilldelas en produktionsenhet. En produktionsenhet avspeglar den fysiska utformningen av produktionsresurser och har inte någon effekt på transaktioner eller hur de bearbetas. Du måste associera en produktionsenhet med en site. Du kan tilldela ett lagerställe för plockning och ett lagerställe för lagring till en produktionsenhet. Du kan använda en produktionsenhet om du vill konsolidera och filtrera produktionsrelaterade data. Till exempel kan en arbetsstyrningsansvarig visa en översikt över utestående arbetsbördan, och den tillgängliga kapaciteten för en viss produktionsenhet. Du kan ändra produktionsenheten som är tilldelad till en resursgrupp. Du kan även ta bort en produktionsenhet. Dessa förändringar av produktionsenheten gäller dock enbart för nya order som skapas efter att huvudplaneringen körs. Om du vill tillämpa ändringen av produktionsenheten på befintliga order, måste du göra det manuellt.
 
 ## <a name="resource-scheduling"></a>Resursplanering
-Verksamhetsresurser tilldelas till aktiviteter, när ett projekt eller en produktion inplaneras. Två tidsplaneringsmetoder finns: grovplanering och finplanering. När du använder grovplanering, tidsplaneras varje operation- eller projektaktivitet på resursgruppen som innehåller verksamhetsresurser som matchar de resurskrav som angetts för operationen. Om en specifik verksamhetsresurs krävs för operationen och finplanering endast reserverar kapacitet på en viss verksamhetsresurs i gruppen. Finplanering är ett mer detaljerad form av tidsplanering än grovplanering. Den delar upp varje operation i enskilda uppgifter eller jobb. Dessa jobb fördelas sedan till verksamhetsresurserna som ska utföra dem. Tidsplanering reserverar kapacitet för resursgrupperna baserat på operationtiderna som anges i produktionsflödet eller projektaktiviteter. Om du arbetar med begränsad kapacitet, är tidsplanen beroende av resurstillgängligheten för verksamhetsresurserna som krävs för att utföra aktiviteten. För grovplanering är kapaciteten för resursgruppen summan av den tillgängliga kapaciteten för verksamhetsresurserna som ingår i gruppen. Kapacitetsreservationer som redan finns för verksamhetsresurserna beaktas som otillgänglig kapacitet. Om det inte finns tillräcklig kapacitet för produktion, kan produktionsorder senareläggas eller stoppas. På sidan **Resurser **kan du definiera flera egenskaper som styr hur kapacitetsreservationer görs:
+Verksamhetsresurser tilldelas till aktiviteter, när ett projekt eller en produktion inplaneras. Två tidsplaneringsmetoder finns: grovplanering och finplanering. När du använder grovplanering, tidsplaneras varje operation- eller projektaktivitet på resursgruppen som innehåller verksamhetsresurser som matchar de resurskrav som angetts för operationen. Om en specifik verksamhetsresurs krävs för operationen och finplanering endast reserverar kapacitet på en viss verksamhetsresurs i gruppen. Finplanering är ett mer detaljerad form av tidsplanering än grovplanering. Den delar upp varje operation i enskilda uppgifter eller jobb. Dessa jobb fördelas sedan till verksamhetsresurserna som ska utföra dem. Tidsplanering reserverar kapacitet för resursgrupperna baserat på operationtiderna som anges i produktionsflödet eller projektaktiviteter. Om du arbetar med begränsad kapacitet, är tidsplanen beroende av resurstillgängligheten för verksamhetsresurserna som krävs för att utföra aktiviteten. För grovplanering är kapaciteten för resursgruppen summan av den tillgängliga kapaciteten för verksamhetsresurserna som ingår i gruppen. Kapacitetsreservationer som redan finns för verksamhetsresurserna beaktas som otillgänglig kapacitet. Om det inte finns tillräcklig kapacitet för produktion, kan produktionsorder senareläggas eller stoppas. På sidan **Resurser**kan du definiera flera egenskaper som styr hur kapacitetsreservationer görs:
 
 -   **Kapacitet** – Ange verksamhetsresursens kapacitet per timme när det gäller kapacitetmåttenheten.
 -   **Gruppera kapacitet** – Ange det maximala antalet enheter som verksamhetsresursen kan bearbeta per körning.

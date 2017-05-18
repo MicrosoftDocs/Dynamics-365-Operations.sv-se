@@ -18,10 +18,11 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: bf93b1f91679cdb520ead2a12a5e52108a83fbb2
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 6b1f91f863c8da35362ebb3036e76aa10d95ba65
+ms.openlocfilehash: b93f406b818655399195bfd5a8c12e939c9a9c77
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/26/2017
 
 
 ---
@@ -38,7 +39,7 @@ butik och handel i Microsoft Dynamics AX stöder call centers som en typ av buti
 -   **Orderns färdigdatum** – Denna grupp omfattar funktioner som är relaterade till betalningar och beställningen slutförs på **försäljningen** .
 -   **Riktad försäljning** – Denna grupp omfattar funktioner som är relaterade till källkoder, manuskript, och katalog.
 
-När du aktiverar funktionerna i call center-inställningarna, de finns på **Sales order** till användare som är associerade med call center. De flesta av dessa funktioner kräver ytterligare inställningar innan de kan användas. Innan användare kan skapa call center-order måste du lägga till användarna till call center som call center-användare. Det här steget gör att call center kanal-specifika konfigurationer och funktionalitet. Här är några exempel på funktioner som blir tillgängliga:
+När du aktiverar funktionerna i call center-inställningarna, de finns på **Försäljningsorder** till användare som är associerade med call center. De flesta av dessa funktioner kräver ytterligare inställningar innan de kan användas. Innan användare kan skapa call center-order måste du lägga till användarna till call center som call center-användare. Det här steget gör att call center kanal-specifika konfigurationer och funktionalitet. Här är några exempel på funktioner som blir tillgängliga:
 
 -   Guidad försäljning tillhandahåller konfigurationsalternativ för telefonförsäljning manuskript och bilder för att hjälpa och vägleda försäljning clerks medan de tar order.
 -   Beställningar kan inte slutföras förrän försäljningen i butiken har fångat minst ett betalningssätt.

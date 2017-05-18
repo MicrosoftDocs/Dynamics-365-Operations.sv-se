@@ -3,33 +3,37 @@ title: "Nytt eller ändrat"
 description: "Den här sidan hänvisar dig till teman som kan hjälpa dig att få kunskap om de nya funktionerna i de senaste versionerna av Microsoft Dynamics 365 for Operations."
 author: sericks007
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
 ms.technology: 
 ms.search.form: DefaultDashboard
 audience: Application User, Developer, IT Pro
-ms.search.scope: Core
+ms.search.scope: Operations, Core
 ms.custom: 27141
 ms.assetid: b86934d4-d9dd-4a07-bfd1-4adb948a5139
 ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-translationtype: Human Translation
-ms.sourcegitcommit: 0d954043c461975a70f9e0ab867f30cadd9800b5
-ms.openlocfilehash: 2896a11f79d5cbb00137a439e0a2c8caaee705a0
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: c9f1e32986238739fc7eee519fd1d17a6ce6731e
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="whats-new-or-changed"></a>Nytt eller ändrat
 
+[!include[banner](../includes/banner.md)]
+
+
 Den här sidan hänvisar dig till teman som kan hjälpa dig att få kunskap om de nya funktionerna i de senaste versionerna av Microsoft Dynamics 365 for Operations.
 
-För att uppgradera till den senaste versionen, se [Process för uppgradering till den senaste Dynamics 365 for Operations-versionen](/migration-upgrade/upgrade-latest-update.md).
+För att uppgradera till den senaste versionen, se [Process för uppgradering till den senaste Dynamics 365 for Operations-versionen](../migration-upgrade/upgrade-latest-update.md).
 <table>
 <colgroup>
 <col width="20%" />
@@ -50,15 +54,24 @@ För att uppgradera till den senaste versionen, se [Process för uppgradering ti
 <tbody>
 <tr class="odd">
 <td>Microsoft Dynamics 365 for Operations-plattform</td>
+<td>Plattformsuppdatering 6</td>
+<td> 7.0.4509.16180</td>
+<td>2017 april</td>
+<td><a href="whats-new-platform-update-6.md">Nyheter och ändringar i Dynamics 365 for Operations-plattformsuppdatering 6 (april 2017)</a></td>
+</tr>
+<tr class="odd">
+<td>Microsoft Dynamics 365 for Operations-plattform</td>
+<td>Plattformsuppdatering 5</td>
+<td> 7.0.4475.16165</td>
+<td>2017 mars</td>
+<td><a href="whats-new-platform-update-5.md">Nyheter och ändringar i Dynamics 365 for Operations-plattformsuppdatering 5 (mars 2017)</a></td>
+</tr>
+<tr class="odd">
+<td>Microsoft Dynamics 365 for Operations-plattform</td>
 <td>Plattformsuppdatering 4</td>
-<td>7.0.4425.16160</td>
+<td> 7.0.4425.16161</td>
 <td>2017 februari</td>
-<td><ol>
-<li>Gå till <a href="https://roadmap.dynamics.com/">Dynamics 365 översikt</a>.</li>
-<li>Välj fliken <strong>Nyheter</strong>.</li>
-<li>I avsnittet <strong>Program</strong> väljer du <strong>Dynamics 365 for Operations</strong>.</li>
-<li>I avsnittet <strong>Områden</strong> väljer du <strong>Molnplattform</strong>.</li>
-</ol></td>
+<td><a href="whats-new-platform-update-4.md">Nyheter och ändringar i Dynamics 365 for Operations-plattformsuppdatering 4 (februari 2017)</a></td>
 </tr>
 <tr class="even">
 <td>Microsoft Dynamics 365 for Operations</td>
@@ -111,6 +124,8 @@ För att uppgradera till den senaste versionen, se [Process för uppgradering ti
 </tr>
 </tbody>
 </table>
+
+
 
 
 

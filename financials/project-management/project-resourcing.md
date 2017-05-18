@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: cmercado
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: eb32cf1b96dfef75131b8c7541e20a93615a87f7
-ms.openlocfilehash: c29c95fc6abd13e668c44d3ccf437bb0e879e46b
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 11755e4ab4b3c1f55da80e57ff96e0b13c84c697
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -197,7 +198,7 @@ Projektledaren kan välja en roll på sidan och sedan, om det finns en tillgäng
 
 [![Projektteam som innehåller både roller och faktiska resurser](./media/projectresourcing03-1024x368.jpg)](./media/projectresourcing03.jpg) 
 
-Projektchefen har olika alternativ för att boka resurser för ett projekt, till exempel **Remaining capacity**, **Full capacity**, **Capacity percentage** och **Specify hours**. Dessa bokningsalternativ kan annulleras när som helst om resurstilldelningen ändras. Två typer av bokningar stöds:
+Projektchefen har olika alternativ för att boka resurser för ett projekt, till exempel **Resterande kapacitet**, **Total kapacitet**, **Kapacitet i procent** och **Ange timmar**. Dessa bokningsalternativ kan annulleras när som helst om resurstilldelningen ändras. Två typer av bokningar stöds:
 
 -   **Fast bokning** – Resursreservationen godkändes och bekräftades för att arbeta på engagemanget under den angivna varaktigheten.
 -   **Preliminär bokning** – Resursreservationerna godkändes preliminärt för att arbeta på engagemanget för den angivna varaktigheten.
@@ -209,7 +210,7 @@ Följande procedur förklarar hur du skapar ett projektteam.
 1.  På listsidan **Alla projekt**, välj ett projekt och klicka sedan på **Redigera**.
 2.  På fliken **Projektteam och tidsplanering**, i fältet **Schemalagt slutdatum**, ange schemastartdatumet plus en månad. Om till exempel schemastartdatumet är 24 juni 2017 (24/06/2017), ange **24/07/2017**.
 3.  Klicka på **Lägg till**.
-4.  I **Lägg till roller i projektet**-fönstret, i **Roll **-fältet, välj **Senior projektledare**.
+4.  I **Lägg till roller i projektet**-fönstret, i **Roll**-fältet, välj **Senior projektledare**.
 5.  Klicka på **Kompetenser som krävs**.
 6.  På **Välj egenskaper**-sidan markeras de egenskaper som du tidigare angett för rollen senior projektledare som standard. Klicka på **OK**.
 7.  På **Lägg till roller i projektet**-sidan i **Antal resurser**-fältet, ange **1**.
