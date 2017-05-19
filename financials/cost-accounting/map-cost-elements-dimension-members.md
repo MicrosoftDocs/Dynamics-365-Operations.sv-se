@@ -1,9 +1,9 @@
 ---
-title: "Mappa olika dimensionsmedlemmar för kostnadselement till en gemensam uppsättning med dimensionsmedlemmar"
+title: "Mappa dimensionsmedlemmar för kostnadselement till en gemensam uppsättning dimensionsmedlemmar"
 description: "Genom att mappa olika dimensionsmedlemmar för kostnadselement till en gemensam uppsättning dimensionsmedlemmar för kostnadselement slår du samman data till ett gemensamt format för analysändamål."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-11-01 13 - 45 - 07
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -17,15 +17,19 @@ ms.search.region: global
 ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: a1e9817b6ee596ad516531d7597a2a39e115749c
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 24794f371e1914f8466cd9a7407fd263e94b00aa
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
-# <a name="map-different-cost-element-dimension-members-to-a-common-set-of-dimension-members"></a>Mappa olika dimensionsmedlemmar för kostnadselement till en gemensam uppsättning med dimensionsmedlemmar
+# <a name="map-cost-element-dimension-members-to-a-common-set-of-dimension-members"></a>Mappa dimensionsmedlemmar för kostnadselement till en gemensam uppsättning dimensionsmedlemmar
+
+[!include[banner](../includes/banner.md)]
+
 
 Genom att mappa olika dimensionsmedlemmar för kostnadselement till en gemensam uppsättning dimensionsmedlemmar för kostnadselement slår du samman data till ett gemensamt format för analysändamål.
 
@@ -48,5 +52,7 @@ De olika kontoplanerna som du använder, kan kanske ställas in för att använd
 
 ## <a name="update-mappings-at-any-time"></a>Uppdatera mappningar när som helst
 Du kan uppdatera mappningdefinitioner för en dimension för kostnadselement när som helst. Eftersom mappningar inte har giltighetsdatum, tillämpas ändringar nästa gång du bearbetar kostnadstransaktioner eller kör kostnadsberäkningar.
+
+
 
 

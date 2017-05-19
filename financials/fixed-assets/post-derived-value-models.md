@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 3b16ef53f9fb57a6663db0be1f7e0a57471db2fb
-ms.openlocfilehash: ca077727910059878fb16a3f78c5b9133c6c741f
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 9f20fbc908e6e12a60c0126836eea4e92314cfcd
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -44,11 +45,11 @@ När transaktioner bokförs för en bok som innehåller härledda böcker, bokf�
 ## <a name="example"></a>Exempel 
 Följande information beskriver hur du skapar anskaffningstransaktioner med funktionerna för den härledda boken.
 
-1.  Skapa böckerna på boksidan (Books).
+1.  Skapa böckerna på boksidan (Böcker).
     -   Bok för redovisning: VM 1, aktuellt bokföringsskikt
     -   Bok för skattesyften: VM 2, momsbokföringsskikt
 
-2.  Klicka på fliken Derived books i VM 1. Välj VM 2 i fältet Books och Acquisition fältet Transaction type.
+2.  Klicka på fliken Härledda räkenskapsböcker i VM 1. Välj VM 2 i fältet Böcker och Anskaffning fältet Transaktion type.
 
 Böckerna kan sedan kopplas till specifika anläggningstillgångar. 
 

@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 8aa0a58b03ee18e42ca7770ea3e22311c1ddba67
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 9aba61178d050f4881c96b7a7fa62937b98b2beb
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -37,8 +38,8 @@ Orderlöfte beräknar de tidigaste transport- och inleveransdatumen och baseras 
 
 -   **Produktionstid för försäljning** – Produktionstiden för försäljning är tiden mellan det att försäljningsordern skapas och artiklarna levereras. Beräknat för leveransdatum baseras på ett standardantal dagar och beaktar inte lagertillgänglighet, känd efterfrågan eller planerad tillgång.
 -   **ATP (available-to-promise; "tillgänglig att utlova")** – ATP är den kvantitet av en artikel som finns tillgänglig och därför kan utlovas en kund vid ett specifikt datum. ATP-beräkning inkluderar det obekräftade lagret, ledtider, planerade inleveranser och utleveranser.
--   **ATP + utleveransmarginal **– Leveransdatum är lika med ATP-datumet plus utleveransmarginal för artikeln. Utleveransmarginalen är den tid som krävs för att förbereda artiklar som ska levereras.
--   **CTP (CTP) **– Tillgänglighet beräknas genom nedbrytning.
+-   **ATP + utleveransmarginal**– Leveransdatum är lika med ATP-datumet plus utleveransmarginal för artikeln. Utleveransmarginalen är den tid som krävs för att förbereda artiklar som ska levereras.
+-   **CTP (CTP)**– Tillgänglighet beräknas genom nedbrytning.
 
 ## <a name="atp-calculations"></a>ATP-beräkningar
 ATP-kvantiteten beräknas med metoden "ackumulerad ATP med framförhållning". Den största fördelen med ATP-beräkningsmetoden är att den förmår hantera fall där summan av utleveranser bland inleveranser överstiger den senaste inleveransen (till exempel när en kvantitet från en tidigare inleverans måste användas för att kunna uppfylla ett behov). Beräkningsmetoden "ackumulerad ATP med framförhållning" omfattar alla utleveranser tills den ackumulerade kvantiteten att inleverera är större än den ackumulerade kvantiteten att utleverera. Därför utvärderar den här ATP-beräkningsmetoden om en del av kvantiteten från en tidigare period kan användas i en senare period.  

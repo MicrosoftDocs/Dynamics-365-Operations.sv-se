@@ -1,16 +1,16 @@
 ---
 title: "Ändra raddefinitionceller"
 description: "Den här artikeln innehåller en beskrivning av den information som krävs för varje cell i en raddefinition för en ekonomisk rapport och av hur du anger den informationen."
-author: RobinARH
+author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-03-07 16 - 09 - 06
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
 ms.technology: 
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: RobinARH
+ms.reviewer: ShylaThompson
 ms.search.scope: Management Reporter, Core
 ms.custom: 58881
 ms.assetid: 0af492df-a84e-450c-8045-78ef1211abaf
@@ -18,15 +18,19 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
-translationtype: Human Translation
-ms.sourcegitcommit: 4d6cf88788dcc5e982e509137aa444a020137a5e
-ms.openlocfilehash: b61364c9055e5c5a63592c7f05551d0c145924b9
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 82a0b8c52a816a7fc608e90866bd564392f9c8d4
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="modify-row-definition-cells"></a>Ändra raddefinitionceller
+
+[!include[banner](../includes/banner.md)]
+
 
 Den här artikeln innehåller en beskrivning av den information som krävs för varje cell i en raddefinition för en ekonomisk rapport och av hur du anger den informationen. 
 
@@ -38,7 +42,9 @@ I raddefinitioner identifierar de nummer eller etiketter som finns i cellen **Ra
 
 En radkod krävs för alla rader. Du kan blanda numeriska, alfanumeriska och upphävda (tomma) radkoder i en raddefinition. Radkoden kan vara ett positivt heltal (under 100 000 000) eller en beskrivande etikett som identifierar den raden. En beskrivande etikett måste följa dessa regler:
 
--   Etiketten måste börja med ett alfabetiskt tecken (a till ö eller Ö till A) och kan vara en kombination av nummer och bokstäver upp till 16 tecken. **Obs!** En etikett kan inkludera understreck (\_), men inga andra specialtecken tillåts.
+-   Etiketten måste börja med ett alfabetiskt tecken (a till ö eller Ö till A) och kan vara en kombination av nummer och bokstäver upp till 16 tecken. 
+    > [!NOTE]
+    > En etikett kan inkludera understreck (\_), men inga andra specialtecken tillåts.
 -   Delen kan inte använda något av följande: word reserverade AND, OR, IF, THEN, ELSE, PERIODS, TO, BASEROW, UNIT, NULL, CPO, eller RPO.
 
 Följande exempel är giltiga radkoder:
@@ -56,10 +62,14 @@ Följande exempel är giltiga radkoder:
 
 1.  I Rapportdesignern, klicka på **Raddefinitioner** och öppna raddefinitionen för att ändra.
 2.  I menyn **Redigera**, klicka på **Numrera om rader**.
-3.  I dialektgeog **Numrera om rader**, ange nya värden för den startande radkoden och radkodökningen. Du kan återställa de numeriska radkoderna till jämnt fördelade värden. Rapportdesignern numrerar endast om radkoder som börjar med siffror (exempelvis 130 eller 246). Den numrerar inte om radkoder som börjar med bokstäver (exempelvis INCOME\_93 eller TP0693). **Obs!** När du numrerar om radkoder uppdaterar rapportdesignern automatiskt referenserna **TOT** och **CAL**. Om raden **TOT** refererar till ett intervall som startar med radkod 100, och du numrerar om rader som börjar med 90, kommer startreferensen **TOT** att ändras från 100 till 90.
+3.  I dialektgeog **Numrera om rader**, ange nya värden för den startande radkoden och radkodökningen. Du kan återställa de numeriska radkoderna till jämnt fördelade värden. Rapportdesignern numrerar endast om radkoder som börjar med siffror (exempelvis 130 eller 246). Den numrerar inte om radkoder som börjar med bokstäver (exempelvis INCOME\_93 eller TP0693). 
+> [!NOTE]
+> När du numrerar om radkoder uppdaterar rapportdesignern automatiskt referenserna **TOT** och **CAL**. Om raden **TOT** refererar till ett intervall som startar med radkod 100, och du numrerar om rader som börjar med 90, kommer startreferensen **TOT** att ändras från 100 till 90.
 
 ## <a name="add-a-description"></a>Lägg till en beskrivning.
-Beskrivningscellen innehåller beskrivningen av de ekonomiska data som finns i raden för rapporten, till exempel "Intäkt” eller "Nettoinkomst". Texten i cellen **Beskrivning** visas i rapporten exakt, som du anger den i raddefinitionen. **Obs!** Bredden av kolumnen Beskrivning i rapporten anges i kolumndefinitionen. Om texten i kolumnen **Beskrivning** i raddefinitionen är lång, kontrollera bredden på kolumnen **DESC**. När du använder dialogrutan **Infoga rader från**, är värdena i kolumnen **Beskrivning** segmentvärdena eller dimensionsvärdena från den ekonomiska datan. Du kan infoga rader om du vill lägga till en beskrivande text, till exempel en avsnittsrubrik eller en avsnittssumma och för att lägga till formatering, till exempel en rad innan en summarad. Om rapporten omfattar ett rapporteringsträd, kan du inkludera den ytterligare texten som har definierats för rapportenheterna i rapporteringsträdet. Du kan även begränsa den ytterligare texten till en viss rapporteringsenhet.
+Beskrivningscellen innehåller beskrivningen av de ekonomiska data som finns i raden för rapporten, till exempel "Intäkt” eller "Nettoinkomst". Texten i cellen **Beskrivning** visas i rapporten exakt, som du anger den i raddefinitionen. 
+> [!NOTE]
+> Bredden av kolumnen Beskrivning i rapporten anges i kolumndefinitionen. Om texten i kolumnen **Beskrivning** i raddefinitionen är lång, kontrollera bredden på kolumnen **DESC**. När du använder dialogrutan **Infoga rader från**, är värdena i kolumnen **Beskrivning** segmentvärdena eller dimensionsvärdena från den ekonomiska datan. Du kan infoga rader om du vill lägga till en beskrivande text, till exempel en avsnittsrubrik eller en avsnittssumma och för att lägga till formatering, till exempel en rad innan en summarad. Om rapporten omfattar ett rapporteringsträd, kan du inkludera den ytterligare texten som har definierats för rapportenheterna i rapporteringsträdet. Du kan även begränsa den ytterligare texten till en viss rapporteringsenhet.
 
 ### <a name="add-the-description-for-a-line-on-a-report"></a>Lägg till beskrivningen för en rad i en rapport
 
@@ -81,7 +91,9 @@ Beskrivningscellen innehåller beskrivningen av de ekonomiska data som finns i r
 4.  I fältet **Välj rapportenhet för begränsning** visa eller dölj rapporteringsträdet och välj sedan en rapportenhet.
 
 ## <a name="add-a-format-code"></a>Lägg till en formatkod
-Cellen **Formatkod** ger ett urval av förformaterade val för innehållet i den raden. Om cellen **Formatkod** är tom, tolkas raden som en ekonomisk datadetaljrad. **Obs!** Om en rapport innehåller formateringsrader utan belopp som är relaterade till beloppsrader som har ignorerats (t.ex. på grund av nollsaldon), kan du använda kolumnen **Relaterade formler/rader/enheter** för att förhindra att rubriks- och formatrader skrivs ut.
+Cellen **Formatkod** ger ett urval av förformaterade val för innehållet i den raden. Om cellen **Formatkod** är tom, tolkas raden som en ekonomisk datadetaljrad. 
+> [!NOTE]
+> Om en rapport innehåller formateringsrader utan belopp som är relaterade till beloppsrader som har ignorerats (t.ex. på grund av nollsaldon), kan du använda kolumnen **Relaterade formler/rader/enheter** för att förhindra att rubriks- och formatrader skrivs ut.
 
 ### <a name="add-a-format-code-to-a-report-row"></a>Lägg till en formatkod till en rapportrad
 
@@ -140,7 +152,9 @@ När du skapar en radsummaformel måste du använda radkoder för att ange vilka
 
 ### <a name="relate-a-format-row-to-an-amount-row"></a>Relatera en formatrad till en beloppsrad
 
-I kolumnen **Formatkod** i en raddefinition använder formatkoderna **DES**, **LFT**, **RGT**, **CEN**, **---** och **===** formateringsrader utan belopp. För att undvika denna formatering från att skrivas ut när den relaterade beloppsraden ignoreras (t.ex. för att belopsraderna innehåller nollvärden eller ingen periodaktivitet) måste du relatera formatraderna till motsvarande beloppsrader. Den här funktionen är användbar när du vill förhindra att rubriker eller formatering som är relaterad till delsummor skrivs ut när det inte finns information att skrivas ut för perioden. **Obs!** Du kan också förhindra att de detaljerade beloppsraderna skrivs ut, genom att avmarkera alternativet för att visa rader utan belopp. Det här alternativet finns på fliken **Inställningar** i rapportdefinitionen. Som standard ignoreras transaktionsdetaljkonton som har ett nollsaldo eller ingen periodaktivitet i rapporter. För att visa dessa transaktiondetaljkonton, markera kryssrutan **Visa rader utan ett belopp** på fliken **Inställningar** i rapportdefinitionen.
+I kolumnen **Formatkod** i en raddefinition använder formatkoderna **DES**, **LFT**, **RGT**, **CEN**, **---** och **===** formateringsrader utan belopp. För att undvika denna formatering från att skrivas ut när den relaterade beloppsraden ignoreras (t.ex. för att belopsraderna innehåller nollvärden eller ingen periodaktivitet) måste du relatera formatraderna till motsvarande beloppsrader. Den här funktionen är användbar när du vill förhindra att rubriker eller formatering som är relaterad till delsummor skrivs ut när det inte finns information att skrivas ut för perioden. 
+    > [!NOTE]
+    >  You can also prevent the detailed amount rows from being printed by clearing the option to display rows without amounts. This option is located on the **Settings** tab of the report definition. By default, transaction detail accounts that have a zero balance or no period activity are suppressed in reports. To show these transaction detail accounts, select the **Display rows without an amounts** check box on the **Settings** tab of the report definition.
 
 ### <a name="relate-a-format-row-to-an-amount-row"></a>Relatera en formatrad till en beloppsrad
 
@@ -164,7 +178,7 @@ En eller flera basrader definieras i raddefinitionen och sedan bestämmer kolumn
 -   **CBR**-rader skrivs inte ut på den slutförda rapporten.
 -   **CBR**-formatkoden och dess tillhörande radkod placeras ovanför raden eller avsnittet som visar relaterade beräkningar.
 
-I en kolumndefinition visar **CALC**-kolumntypen en kolumn som anger en formel i raden **Formel**. Denna formel arbetar med data för den här kolumnen i rapporten och använder nyckelordet Baserow i formatkoderna i raden **CBR**. I raddefinitionen definierar **CBR**-formatkoden basraden för kolumner som beräknar en procentandel av eller multiplicerar med basraden för varje rad i rapporten. Du kan ha flera **CBR**-formatkoder i ett radformat som t.ex. ett för nettoomsättning, ett för bruttoförsäljning och en för totala utgifter. Vanligtvis används **CBR**-formatkoden för att skapa en procentsats för konton som jämförs med en total rad. En basrad används för alla beräkningar tills en annan basrad definieras. Du måste definiera en startande **CBR**-formatkod och en avslutande **CBR **-formatkod. Om du till exempel vill bestämma utgifter som en procentandel av nettoomsättning kan du dela värdet i varje utgiftsrad med värdet i raden för nettoomsättning. I detta fall är raden för nettoomsättning basraden. Du kan definiera en kolumndefinition som rapporterar aktuellt och hittills i år-resultat, tillsammans med basprocentandelen av varje resultat, som visas i följande exempel. Startar med en ingående balans.
+I en kolumndefinition visar **CALC**-kolumntypen en kolumn som anger en formel i raden **Formel**. Denna formel arbetar med data för den här kolumnen i rapporten och använder nyckelordet Baserow i formatkoderna i raden **CBR**. I raddefinitionen definierar **CBR**-formatkoden basraden för kolumner som beräknar en procentandel av eller multiplicerar med basraden för varje rad i rapporten. Du kan ha flera **CBR**-formatkoder i ett radformat som t.ex. ett för nettoomsättning, ett för bruttoförsäljning och en för totala utgifter. Vanligtvis används **CBR**-formatkoden för att skapa en procentsats för konton som jämförs med en total rad. En basrad används för alla beräkningar tills en annan basrad definieras. Du måste definiera en startande **CBR**-formatkod och en avslutande **CBR**-formatkod. Om du till exempel vill bestämma utgifter som en procentandel av nettoomsättning kan du dela värdet i varje utgiftsrad med värdet i raden för nettoomsättning. I detta fall är raden för nettoomsättning basraden. Du kan definiera en kolumndefinition som rapporterar aktuellt och hittills i år-resultat, tillsammans med basprocentandelen av varje resultat, som visas i följande exempel. Startar med en ingående balans.
 
 ### <a name="select-the-base-row-in-a-row-definition-for-a-column-calculation"></a>Välj basraden i raddefinitionen för en kolumnberäkning
 
@@ -196,7 +210,9 @@ Sorteringskoder, sorteringkonton eller värden sorterar en aktuell eller budgeta
 1.  I Rapportdesignern, klicka på **Raddefinitioner** och öppna raddefinitionen för att ändra.
 2.  Dubbelklicka på cellen **Formatkod** och välj sedan en sorteringskod.
 3.  I cellen **Relaterade formler/rader/enheter** anger du intervallet för radkoderna som ska sorteras. Ange den första radkoden, ett kolon (:) och sedan den senaste radenkod om du vill ange ett intervall. Ange t.ex. **160:490** om vill ange att intervallet är rad 160 genom rad 490.
-4.  Ange cellen **Kolumnbegränsning**, ange bokstaven på rapportkolumnen som ska användas för sorteringen. **Obs!** Inkludera endast beloppsrader i sorteringsberäkningen.
+4.  Ange cellen **Kolumnbegränsning**, ange bokstaven på rapportkolumnen som ska användas för sorteringen. 
+    > [!NOTE]
+    > Inkludera endast beloppsrader i sorteringsberäkningen.
 
 ### <a name="examples-of-ascending-and-descending-column-values"></a>Exempel på stigande och fallande kolumnvärden
 
@@ -220,255 +236,24 @@ I följande exempel sorteras värdena i rapportkolumnen D i stigande ordning på
 
 Här är ett exempel på rapporten som genereras.
 
-**Avvikelseanalys (sorterad efter avvikelse)**
+|||||||||
+|---|---|---|---|---|---|---|
+|**Avvikelseanalys (sorterad efter avvikelse)**|||||||
 
-**Peking och Atlanta-regioner**
+|**Peking och Atlanta-regioner**|||||||
 
-**För de sju månader som slutar 31 juli 31, 2013**
+|**För de sju månader som slutar 31 juli 2013**|||||||
 
-**Juli**
+||**juli**|**YTD**|||||
 
-**YTD**
+||**Faktisk**|**Budget**|**Varians**|**Faktisk**|**Budget**|**Varians**|
 
-**Faktiskt**
+|**Sorterat efter månatlig avvikelse i stigande ordning**|||||||
 
-**Budget**
+|COGS|873 872|236 144|(637 728)|4 864 274|1 590 315|(3 273 959)|
 
-**Avvikelse**
-
-**Faktiskt**
-
-**Budget**
-
-**Avvikelse**
-
-**Sorterat efter månatlig avvikelse i stigande ordning**
-
-KSV
-
-873 872
-
-236 144
-
-(637 728)
-
-4 864 274
-
-1 590 315
-
-(3 273 959)
-
-Löner
-
-97 624
-
-65 573
-
-(32 051)
-
-653 884
-
-441 664
-
-(212 220)
-
-Försäljningsrabatt
-
-36 383
-
-24 152
-
-(12 231)
-
-241 562
-
-162 670
-
-(78 892)
-
-Försäljningsreturer
-
-10 917
-
-7 246
-
-(3 671)
-
-62 809
-
-48 803
-
-(14 006)
-
-Hyreskostnad
-
-12 052
-
-9 019
-
-(3 033)
-
-80 444
-
-60 748
-
-(19 696)
-
-Kontorsutgift
-
-5 023
-
-3 291
-
-(1 732)
-
-33 420
-
-22 098
-
-(11 322)
-
-Reseutgifter
-
-7 656
-
-7 641
-
-(15)
-
-51 062
-
-51 469
-
-407
-
-Försäljning
-
-1 240 119
-
-410 389
-
-829 730
-
-7 139 288
-
-2 764 549
-
-4 374 739
-
-**Sorterat efter YTD absolut avvikelse i fallande ordning**
-
-Försäljning
-
-1 240 119
-
-410 389
-
-829 730
-
-7 139 288
-
-2 764 549
-
-4 374 739
-
-Reseutgifter
-
-7 656
-
-7 641
-
-(15)
-
-51 062
-
-51 469
-
-407
-
-Kontorsutgift
-
-5 023
-
-3 291
-
-(1 732)
-
-33 420
-
-22 098
-
-(11 322)
-
-Försäljningsreturer
-
-10 917
-
-7 246
-
-(3 671)
-
-62 809
-
-48 803
-
-(14 006)
-
-Hyreskostnad
-
-12 052
-
-9 019
-
-(3 033)
-
-80 444
-
-60 748
-
-(19 696)
-
-Försäljningsrabatt
-
-36 383
-
-24 152
-
-(12 231)
-
-241 562
-
-162 670
-
-(78 892)
-
-Löner
-
-97 624
-
-65 573
-
-(32 051)
-
-653 884
-
-441 664
-
-(212 220)
-
-KSV
-
-873 872
-
-236 144
-
-(637 728)
-
-4 864 274
-
-1 590 315
-
-(3 273 959)
+|Löner|97 624|65 573|(32 051)|653 884|441 664|(212 220)| |Försäljningsrabatter|36 383|24 152|(12 231)|241 562|162 670|(78 892)| |Försäljningsreturer|10 917|7 246|(3 671)|62 809|48 803|(14 006)| |Hyreskostnad|12 052|9 019|(3 033)|80 444|60 748|(19 696)| |Kontorskostnad|5 023|3 291|(1 732)|33 420|22 098|(11 322)| |Resekostnad|7 656|7 641|(15)|51 062|51 469|407| |Försäljning|1 240 119|410 389|829 730|7 139 288|2 764 549|4 374 739| |**Sorterat efter YTD absolut avvikelse i fallande ordning**|||||||
+|Försäljning|1,240,119|410,389|829,730|7,139,288|2,764,549|4,374,739| |Resekostnad|7,656|7,641|(15)|51,062|51,469|407| |Kontorskostnad|5,023|3,291|(1,732)|33,420|22,098|(11,322)| |Försäljningsretur|10 917|7 246|(3 671)|62 809|48 803|(14 006)| |Hyresutgift|12 052|9 019|(3 033)|80 444|60 748|(19 696)| |Försäljningsrabatt|36 383|24 152|(12 231)|241 562|162 670|(78 892)| |Löner|97 624|65 573|(32 051)|653 884|441 664|(212 220)| |COGS|873 872|236 144|(637 728)|4 864 274|1 590 315|(3 273 959)|
 
 ## <a name="specify-a-format-override-cell"></a>Ange en cell för Formatåsidosätt
 Cellen **Formatåsidosätt** anger formateringen som används för raden när rapporten skrivs ut. Denna formatering åsidosätter den formatering som anges i kolumndefinitionen och rapportdefinitionen. Som standard är formateringen som anges i dessa definitioner valuta. När en rad i rapporten anger antalet tillgångar, till exempel antalet fastigheter och en annan rad anger dessa tillgångars penningvärde kan du åsidosätta valutaformateringen och ange numerisk formatering för raden som anger antalet fastigheter. Du anger denna information i dialogrutan **Formatåsidosätt**. De tillgängliga alternativet beror på formatkategorin som du väljer. Området **Exempel** på dialogrutan visar exempelformat. Följande exportformatkategorier är tillgängliga:
@@ -492,7 +277,9 @@ Valutaformatering gäller för ett räkenskapsbelopp och inkluderar valutasymbol
 -   **Valutasymbol** – Valutasymbolen för rapporten. Det här värdet åsidosätter inställningen **Nationella alternatv** för företagsinformationen.
 -   **Negativa nummer** - Negativa nummer kan ha ett minustecken (-), de kan visas inom parentes, eller de kan ha en triangel (∆).
 -   **Antal decimaler** – Antal siffror som ska visas efter decimaltecknet.
--   **Nollvärdeåsidosätttext** – Texten som ska inkluderas i rapporten när beloppet är 0 (noll). Texten visas som sista raden i området **Bildpunkt**. **Obs!** Om utskrift ignoreras av nollvärden eller ingen periodaktivitet, ignoreras denna text.
+-   **Nollvärdeåsidosätttext** – Texten som ska inkluderas i rapporten när beloppet är 0 (noll). Texten visas som sista raden i området **Bildpunkt**. 
+    > [!NOTE]
+    >  Om utskrift ignoreras av nollvärden eller ingen periodaktivitet, ignoreras denna text.
 
 ### <a name="numeric-formatting"></a>Numeriskt formatering
 
@@ -500,7 +287,9 @@ Numerisk formatering gäller för alla belopp och inkluderar inte en valutasymbo
 
 -   **Negativa nummer** - Negativa nummer kan ha ett minustecken (-), de kan visas inom parentes, eller de kan ha en triangel (∆).
 -   **Antal decimaler** – Antal siffror som ska visas efter decimaltecknet.
--   **Nollvärdeåsidosätttext** – Texten som ska inkluderas i rapporten när beloppet är 0 (noll). Texten visas som sista raden i området **Bildpunkt**. **Obs!** Om utskrift ignoreras av nollvärden eller ingen periodaktivitet, ignoreras denna text.
+-   **Nollvärdeåsidosätttext** – Texten som ska inkluderas i rapporten när beloppet är 0 (noll). Texten visas som sista raden i området **Bildpunkt**. 
+    > [!NOTE]
+    >  Om utskrift ignoreras av nollvärden eller ingen periodaktivitet, ignoreras denna text.
 
 ### <a name="percentage-formatting"></a>Procentsatsformatering
 
@@ -508,14 +297,18 @@ Procentsatsformatering inkluderar procenttecknet (%). Följande alternativ är t
 
 -   **Negativa nummer** - Negativa nummer kan ha ett minustecken (-), de kan visas inom parentes, eller de kan ha en triangel (∆).
 -   **Antal decimaler** – Antal siffror som ska visas efter decimaltecknet.
--   **Nollvärdeåsidosätttext** – Texten som ska inkluderas i rapporten när beloppet är 0 (noll). Texten visas som sista raden i området **Bildpunkt**. **Obs!** Om utskrift ignoreras av nollvärden eller ingen periodaktivitet, ignoreras denna text.
+-   **Nollvärdeåsidosätttext** – Texten som ska inkluderas i rapporten när beloppet är 0 (noll). Texten visas som sista raden i området **Bildpunkt**. 
+    > [!NOTE]
+    >  Om utskrift ignoreras av nollvärden eller ingen periodaktivitet, ignoreras denna text.
 
 ### <a name="custom-formatting"></a>Anpassad formatering
 
 Använd anpassad formateringkategori om du vill skapa en anpassad formatåsidosättning. Följande alternativ är tillgängliga:
 
 -   **Typ** – Det anpassade formatet.
--   **Nollvärdeåsidosätttext** – Texten som ska inkluderas i rapporten när beloppet är 0 (noll). Texten visas som sista raden i området **Bildpunkt**. **Obs!** Om utskrift ignoreras av nollvärden eller ingen periodaktivitet, ignoreras denna text.
+-   **Nollvärdeåsidosätttext** – Texten som ska inkluderas i rapporten när beloppet är 0 (noll). Texten visas som sista raden i området **Bildpunkt**. 
+    > [!NOTE]
+    >  Om utskrift ignoreras av nollvärden eller ingen periodaktivitet, ignoreras denna text.
 
 Typen ska representera det positiva värdet och sedan det negativa värdet. Vanligtvis anger du ett liknande format som särskiljer positiva och negativa värden. Om du t.ex. vill ange att både positiva och negativa värden har två decimaler, men negativa värden visas inom parentes anger du **0.00;(0.00)**. Följande tabell visar anpassade format som du kan använda för att kontrollera formatet för dina värden. Alla exempel startar från värdet 1234.56.
 
@@ -570,14 +363,18 @@ När du väljer ett visst konto kombinerar rapportdesignern vanligtvis kontot oc
 
 ### <a name="book-code-modifiers"></a>Bokkodsmodifierare
 
-Du kan begränsa en rad i en befintlig bokkod. Kolumndefinitionen måste innefatta minst en kolumn **FD** som har en bokkod. **Obs!** Bokkodbegränsningen för en rad åsidosätter bokkodbegränsningarna i kolumndefinitionen för den raden.
+Du kan begränsa en rad i en befintlig bokkod. Kolumndefinitionen måste innefatta minst en kolumn **FD** som har en bokkod. 
+> [!NOTE]
+> Bokkodbegränsningen för en rad åsidosätter bokkodbegränsningarna i kolumndefinitionen för den raden.
 
 ### <a name="account-and-transaction-attributes"></a>Konto och transaktionsattribut
 
 Vissa redovisningssystem stöder kontoattribut och transaktionattribut i ekonomiska data. Dessa attribut fungerar som virtuella kontosegment och kan ha mer information om kontot eller transaktionen. Denna ytterligare information kan vara konto-ID, batch-ID, postnummer eller andra attribut. Om dina attribut och redovisningssystem stöder kan du använda kontoattribut eller transaktionattribut som radmodifikatorer i raddefinitionen. Mer information om hur du åsidosätter radnformation, se avsnittet "Åsidosätt en kolumndefinition" tidigare i den här artikeln.
 
 ## <a name="specify-a-link-to-financial-dimensions-cell"></a>Ange en länk till den ekonomiska dimensioncellen
-Cellen **Länka till ekonomiska dimensioner** innehåller länkar till de ekonomiska data som ska inkluderas i varje rad i en rapport. Denna cell innehåller dimensionsvärden, men du kan ange celler i ett Microsoft Excel-kalkylblad i stället för, eller utäver segmentvärden eller dimensionsvärden. Dubbelklicka på cellen **Dimensioner** för att öppna dialogrutan **Länk till ekonomiska dimensioner** . **Obs!** Report Designer kan inte välja konton, dimensioner eller fält från Microsoft Dynamics ERP-systemet som innehåller någon av följande reserverade tecken: &, \*, \[, \], {, or }. Om du vill lägga till informationen för en rad som redan är i raddefinitionen lägger du till informationen i cellen **Länk till ekonomiska dimensioner** . För att skapa nya rader som länkar till ekonomiska data, använd dialogrutan **Infoga rader från** för att skapa nya rader i rapportdefinitionen som länkar till de ekonomiska data. Kolumnrubriken ändras, beroende på hur kolumnen konfigureras enligt vad som visas i följande tabell.
+Cellen **Länka till ekonomiska dimensioner** innehåller länkar till de ekonomiska data som ska inkluderas i varje rad i en rapport. Denna cell innehåller dimensionsvärden, men du kan ange celler i ett Microsoft Excel-kalkylblad i stället för, eller utäver segmentvärden eller dimensionsvärden. Dubbelklicka på cellen **Dimensioner** för att öppna dialogrutan **Länk till ekonomiska dimensioner** . 
+> [!NOTE]
+> Report Designer kan inte välja konton, dimensioner eller fält från Microsoft Dynamics ERP-systemet som innehåller något av följande reserverade tecken: &, \*, \[, \], {, or }. Om du vill lägga till informationen för en rad som redan är i raddefinitionen lägger du till informationen i cellen **Länk till ekonomiska dimensioner** . För att skapa nya rader som länkar till ekonomiska data, använd dialogrutan **Infoga rader från** för att skapa nya rader i rapportdefinitionen som länkar till de ekonomiska data. Kolumnrubriken ändras, beroende på hur kolumnen konfigureras enligt vad som visas i följande tabell.
 
 | Länktyp som är vald       | Beskrivningen av länken ändras till den här |
 |----------------------------------|----------------------------------------------------|
@@ -606,21 +403,27 @@ Som standard skriver rapportdesignern inte ut en rad som inte har något motsvar
 3.  Klicka på **Spara** på menyn **Arkiv** om du vill spara dina ändringar.
 
 ## <a name="use-wildcard-characters-and-ranges-in-a-row-definition"></a>Använd jokertecken och intervall i en raddefinition
-När du anger ett typsegmentvärde i dialogrutan **Dimensioner** kan du placera ett jokertecken (? eller \*) i vilken position som helst i ett segment. Report designer hämtar alla värden för de definierade positioner utan att beakta jokertecknen. Om raddefinitionen t.ex. bara innehåller typsegmentvärden, och typsegment har fyra tecken. Genom att ange **6???** på en rad instruerar du rapportdesignern att inkludera alla konton som ett naturligt segmentvärde som börjar med 6. Om du anger **6\***, returneras samma resultat, men resultatet inkluderar också variabelbreddvärden som **60** och **600000**. Rapportdesignern ersätter varje jokertecken (?) med hela intervallet av möjliga värden, inklusive bokstäver och specialtecken. T.ex. i intervallet från **PKCS? 0** till **PKCS? 4** ersätter jokertecknet i **PKCS? 0** det lägsta värdet på teckenuppsättningen, och jokertecknet i **PKCS? 4** ersätter det högsta värdet i teckenuppsättningen. **Obs!** Du bör undvika att använda jokertecken för start- och slutkonton i intervallet. Om du använder jokertecken i antingen startkontot eller slutkontot kan du få oväntade resultat.
+När du anger ett typsegmentvärde i dialogrutan **Dimensioner** kan du placera ett jokertecken (? eller \*) i vilken position som helst i ett segment. Report designer hämtar alla värden för de definierade positioner utan att beakta jokertecknen. Om raddefinitionen t.ex. bara innehåller typsegmentvärden, och typsegment har fyra tecken. Genom att ange **6???** på en rad instruerar du rapportdesignern att inkludera alla konton som ett naturligt segmentvärde som börjar med 6. Om du anger **6\***, returneras samma resultat, men resultatet inkluderar också variabelbreddvärden som **60** och **600000**. Rapportdesignern ersätter varje jokertecken (?) med hela intervallet av möjliga värden, inklusive bokstäver och specialtecken. T.ex. i intervallet från **PKCS? 0** till **PKCS? 4** ersätter jokertecknet i **PKCS? 0** det lägsta värdet på teckenuppsättningen, och jokertecknet i **PKCS? 4** ersätter det högsta värdet i teckenuppsättningen. 
+> [!NOTE]
+> Du bör undvika att använda jokertecken för start- och slutkonton i intervallet. Om du använder jokertecken i antingen startkontot eller slutkontot kan du få oväntade resultat.
 
 ### <a name="single-segment-or-single-dimension-ranges"></a>Intervall för enkelt segment eller enkel dimension
 
-Du kan ange ett intervall med segmentvärden eller dimensionsvärden. Fördelen med att ange ett intervall är att du inte måste uppdatera raddefinitionen varje gång som en ny segmentvärde eller dimensionsvärde läggs till i ekonomiska data. Till exempel hämtar intervallet **+Konto=\[6100:6900\]** värdena från kontona 6100 till 6900 till radbeloppet. När ett intervall inkluderar ett jokertecken (?) utvärderar rapportdesignern inte intervallet baserat på tecken för tecken. I stället bestäms de lägsta och högsta värdena i intervallet och sedan inkluderas slutvärdena och alla värden mellan dem. **Obs!** Report Designer kan inte välja konton, dimensioner eller fält från Microsoft Dynamics ERP-systemet som innehåller någon av följande reserverade tecken: &, \*, \[, \], {, or }. Du kan bara lägga till ett och-tecken (&) när du automatiskt skapar definitioner med dialogrutan **Infoga rader från dimensioner**.
+Du kan ange ett intervall med segmentvärden eller dimensionsvärden. Fördelen med att ange ett intervall är att du inte måste uppdatera raddefinitionen varje gång som en ny segmentvärde eller dimensionsvärde läggs till i ekonomiska data. Till exempel hämtar intervallet **+Konto=\[6100:6900\]** värdena från kontona 6100 till 6900 till radbeloppet. När ett intervall inkluderar ett jokertecken (?) utvärderar rapportdesignern inte intervallet baserat på tecken för tecken. I stället bestäms de lägsta och högsta värdena i intervallet och sedan inkluderas slutvärdena och alla värden mellan dem. 
+> [!NOTE]
+> Report Designer kan inte välja konton, dimensioner eller fält från Microsoft Dynamics ERP-systemet som innehåller något av följande reserverade tecken: &, \*, \[, \], {, or }. Du kan bara lägga till ett och-tecken (&) när du automatiskt skapar definitioner med dialogrutan **Infoga rader från dimensioner**.
 
 ### <a name="multiple-segment-or-multiple-dimension-ranges"></a>Intervaller med flera segment eller flera dimensioner
 
-När du anger ett intervall genom att använda kombinationer av flera dimensionsvärden, utförs intervalljämförelsen baserat på ..\financial-dimensions\dimension-by-dimension. Intervalljämförelsen kan inte göras varken baserat på tecken för tecken eller delsegment. Intervallet **+Konto=\[5000:6000\], Avdelning=\[1000:2000\], Kostnadsställe=\[00\]** innehåller bara de konton som matchar varje segment. I det här fallet måste den första dimensionen vara mellan 5000 till 6000, den andra dimensionen måste vara mellan 1000 till 2000 och den sista dimensionen måste vara 00. Till exempel **+Konto=\[5100\], Avdelning=\[1100\], Kostnadsställe=\[01\]** ingår inte i rapporten eftersom det sista segmentet ligger utanför det angivna intervallet. Om ett segmentvärde innehåller mellanslag ska det värdet omslutas med hakparentes (\[ \]). Följande värden är giltiga för ett segment med fyra tecken: **\[ 234\], \[123 \], \[1 34\]**. Dimensionsvärden ska omges av hakparenteser (\[ \]) och rapportdesignern lägger till dessa hakparenteser åt dig. Om ett intervall med flera segment eller dimensioner innehåller jokertecken (? eller \*) bestäms de lägsta och högsta värdena i hela intervallet med flera segment eller dimensioner, och sedan inkluderas slutvärdena och alla värden mellan dem. Om du har ett stort intervall, till exempel hela intervallet med konton från 40000 till 99999, ska du ange ett giltigt startkonto och slutkonto när detta är möjligt. **Obs!** Report Designer kan inte välja konton, dimensioner eller fält från Microsoft Dynamics ERP-systemet som innehåller någon av följande reserverade tecken: &, \*, \[, \], {, or }. Du kan bara lägga till ett och-tecken (&) när du automatiskt skapar definitioner med dialogrutan **Infoga rader från dimensioner**.
+När du anger ett intervall genom att använda kombinationer av flera dimensionsvärden, utförs intervalljämförelsen baserat på ..\financial-dimensions\dimension-by-dimension. Intervalljämförelsen kan inte göras varken baserat på tecken för tecken eller delsegment. Intervallet **+Konto=\[5000:6000\], Avdelning=\[1000:2000\], Kostnadsställe=\[00\]** innehåller bara de konton som matchar varje segment. I det här fallet måste den första dimensionen vara mellan 5000 till 6000, den andra dimensionen måste vara mellan 1000 till 2000 och den sista dimensionen måste vara 00. Till exempel **+Konto=\[5100\], Avdelning=\[1100\], Kostnadsställe=\[01\]** ingår inte i rapporten eftersom det sista segmentet ligger utanför det angivna intervallet. Om ett segmentvärde innehåller mellanslag ska det värdet omslutas med hakparentes (\[ \]). Följande värden är giltiga för ett segment med fyra tecken: **\[ 234\], \[123 \], \[1 34\]**. Dimensionsvärden ska omges av hakparenteser (\[ \]) och rapportdesignern lägger till dessa hakparenteser åt dig. Om ett intervall med flera segment eller dimensioner innehåller jokertecken (? eller \*) bestäms de lägsta och högsta värdena i hela intervallet med flera segment eller dimensioner, och sedan inkluderas slutvärdena och alla värden mellan dem. Om du har ett stort intervall, till exempel hela intervallet med konton från 40000 till 99999, ska du ange ett giltigt startkonto och slutkonto när detta är möjligt. 
+> [!NOTE]
+> Report Designer kan inte välja konton, dimensioner eller fält från Microsoft Dynamics ERP-systemet som innehåller något av följande reserverade tecken: &, \*, \[, \], {, or }. Du kan bara lägga till ett och-tecken (&) när du automatiskt skapar definitioner med dialogrutan **Infoga rader från dimensioner**.
 
 ## <a name="add-or-subtract-from-other-accounts-in-a-row-definition"></a>Lägga till eller dra ifrån från andra konton i en raddefinition
 Om du vill lägga till penningbelopp i ett konto från penningbeloppen i annat konto kan du använda plusteckenet (+) och minustecknet (-) i cellen **Länka till ekonomiska dimensioner**. Följande tabell visar de godtagbara format för att lägga till och Subtrahera länkar till ekonomiska data.
 
-| Operation                                                                               | Använd det här formatet                                                                                              |
-|-----------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
+| Operation  | Använd det här formatet  |
+|------------|-----------------|
 | Addera fullständigt kvalificerade konton.                                                       | +Division=\[000\], Konto=\[1205\], Avdelning=\[00\]+Division=\[100\], Konto=\[1205\], Avdelning=\[00\] |
 | Addera två segmentvärden.                                                                 | +Konto=\[1205\]+Konto=\[1210\]                                                                           |
 | Addera segmentvärden som innehåller jokertecken.                                    | +Konto=\[120?+Konto=\[11??\]                                                                             |
@@ -634,7 +437,9 @@ Om du vill lägga till penningbelopp i ett konto från penningbeloppen i annat k
 | Subtrahera ett intervall med segmentvärden.                                                     | -Konto=\[1200:1205\]                                                                                       |
 | Subtrahera ett intervall med segmentvärden som innehåller jokertecken.                    | -Konto=\[120?:130?\]                                                                                       |
 
-Även om du kan ändra kontona direkt, kan du även använda dialogrutan **Dimensioner** för att använda korrekt formatering till dina ekonomiska datalänkar. Alla värden kan innehålla jokertecken (? eller \*). Emellertid kan Report Designer inte välja konton, dimensioner eller fält från Microsoft Dynamics ERP-systemet som innehåller något av följande reserverade tecken: &, \*, \[, \], {, or }. **Obs!** Om du vill Subtrahera värden måste du omge dessa värden med parenteser. Om du till exempel anger **450?-(4509)** visas det som **+Konto=\[4509\]-Konto=\[450?\]** och du ger instruktioner till rapportdesignern att subtrahera beloppet för kontosegment 4509 från beloppet för alla kontosegment som börjar med 450.
+Även om du kan ändra kontona direkt, kan du även använda dialogrutan **Dimensioner** för att använda korrekt formatering till dina ekonomiska datalänkar. Alla värden kan innehålla jokertecken (? eller \*). Emellertid kan Report Designer inte välja konton, dimensioner eller fält från Microsoft Dynamics ERP-systemet som innehåller något av följande reserverade tecken: &, \*, \[, \], {, or }. 
+> [!NOTE]
+> Om du vill subtrahera värden måste du omge dessa värden med parenteser. Om du till exempel anger **450?-(4509)** visas det som **+Konto=\[4509\]-Konto=\[450?\]** och du ger instruktioner till rapportdesignern att subtrahera beloppet för kontosegment 4509 från beloppet för alla kontosegment som börjar med 450.
 
 ### <a name="add-or-subtract-accounts-from-other-accounts"></a>Addera eller subtrahera konton från andra konton
 
@@ -642,13 +447,14 @@ Om du vill lägga till penningbelopp i ett konto från penningbeloppen i annat k
 2.  I lämplig rad dubbelklickar u på en cell i kolumnen **Länk till ekonomiska dimensioner**.
 3.  Följ dessa steg i den första raden i dialogrutan **Dimensioner**:
     1.  Markera alla dimensioner (standardinställning) eller klicka om du vill öppna dialogrutan **Hantera dimensionsuppsättningar** där du kan skapa, ändra, kopiera eller ta bort en uppsättning.
-    2.  Dubbelklicka på cellen **Operator +/-** och välj plus- (**+**) eller minusoperatorn (**-**) som gäller för en eller flera dimensionsvärden eller uppsättningar i raden.
+    2.  Dubbelklicka på cellen **Operatör +/-** och välj plus- (**+**) eller minusoperatorn (**-**) som gäller för en eller flera dimensionsvärden eller uppsättningar i raden.
     3.  I lämplig dimensionsvärdekolumn dubbelklickar du på cellen för att öppna dialogrutan **Dimensioner** och väljer om detta dimensionsvärde gäller för en en enskild eller ett intervall, en dimensionsvärdeuppsättning eller summeringskonton. Se avsnittet "Beskrivning av dialogrutan för dimensioner" för beskrivning av fälten i dialogrutan **Dimensioner**.
     4.  Ange segmentvärden i kolumnen **Från** och kolumnen **Till** .
 
 4.  Upprepa steg 2 till och med 3 om du vill lägga till fler operationer.
 
-**Obs!** Operatören gäller för alla dimensioner på raden.
+> [!NOTE]
+> Operatören gäller för alla dimensioner på raden.
 
 ## <a name="description-of-the-dimensions-dialog-box"></a>Beskrivning av dialogrutan Dimensioner.
 I tabellen nedan beskrivs fälten i dialogrutan **Dimensioner**.
@@ -680,7 +486,9 @@ En dimensionsvärdeuppsättning är en namngiven grupp av dimensionsvärden. En 
 2.  På menyn **Redigera** klickar du opå **Hantera dimensionsvärdeuppsättningar**.
 3.  Välj diaglogrutan **Hantera dimensionsvärdeuppsättningar** och välj dimensionstyp i fältet **Dimension**.
 4.  I listan väljer du den dimensionsvärdeuppsättning som ska uppdateras och klickar sedan på **Ändra**.
-5.  I dialogrutan **Ändra** ändrar du formelvärdena som du vill inkludera i uppsättningen. **Obs!** Om du lägger till nya konton eller dimensioner, se till att du ändrar befintliga dimensionsvärdeuppsättningar om du vill föra in ändringarna.
+5.  I dialogrutan **Ändra** ändrar du formelvärdena som du vill inkludera i uppsättningen. 
+    > [!NOTE]
+    >  Om du lägger till nya konton eller dimensioner, se till att du ändrar befintliga dimensionsvärdeuppsättningar om du vill föra in ändringarna.
 6.  Dubbelklicka på cellen och välj lämplig operatör **Från**-konto och **Till**-konto.
 7.  Klicka på **OK** för att stänga dialogrutan **Ändra** och spara ändringarna.
 
@@ -703,6 +511,8 @@ En dimensionsvärdeuppsättning är en namngiven grupp av dimensionsvärden. En 
 <a name="see-also"></a>Se även
 --------
 
-[Ekonomisk rapportering för Dynamics 365 for Operations](financial-reporting-intro.md)
+[Ekonomisk rapportering](financial-reporting-intro.md)
+
+
 
 

@@ -3,7 +3,7 @@ title: Kostnadsposter
 description: "Det här avsnittet innehåller information om kostnadsposter och när de skapas. En kostnadspost är en post för registrering av kvantiteten och kostnaden för en viss händelse."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -19,15 +19,19 @@ ms.search.industry: Manufacturing
 ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 55f5ee731c40acc40e8fe20c24d4ed707fe2c81a
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 341251119304456a89b02c7a8d4af941ea21196d
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="cost-entries"></a>Kostnadsposter
+
+[!include[banner](../includes/banner.md)]
+
 
 Det här avsnittet innehåller information om kostnadsposter och när de skapas. En kostnadspost är en post för registrering av kvantiteten och kostnaden för en viss händelse.
 
@@ -53,17 +57,22 @@ Den nya sidan **Kostnadsposter** visar och kontrollerar registreringar för kost
 -   Några dagar efter att fakturahändelsen har registrerats ökar kostnaden till 11,00 USD. Därför är totalbeloppet är 1 100 USD. En andra verifikation skapas för att redovisa skillnaden 100 USD.
 -   Några dagar senare registreras ett tillägg på 15,00 USD på inköpsordern som täcker transportkostnaden.
 
-| Verifikation | Datum       | Referens      | Nummer | Parti-ID  | Referensparti | Returparti-ID | Kvantitet | Belopp  |
-|---------|------------|----------------|--------|---------|---------------|---------------|----------|---------|
-| 00001   | 01-01-2015 | Inköpsorder | 100001 | 0000101 |               |               | 100,00   | 1000,00 |
-| 00002   | 20-01-2015 | Inköpsorder | 100001 | 0000101 |               |               |          | 100,00  |
-| 00003   | 31-01-2015 | Justering     | 100001 | 0000101 |               |               |          | 15,00   |
+| Verifikation | Datum       | Referens      | Nummer | Parti-ID  | Kvantitet | Belopp  |
+|---------|------------|----------------|--------|---------|---------------|----|
+| 00001   | 01-01-2015 | Inköpsorder | 100001 | 0000101 | 100,00   | 1000,00 |
+| 00002   | 20-01-2015 | Inköpsorder | 100001 | 0000101 |          | 100,00  |
+| 00003   | 31-01-2015 | Justering     | 100001 | 0000101 |          | 15,00   |
 
-Sidan **Kostnadsposter** aktiverar filtrering efter dokument-ID och dokumentdatum. **Obs!** Kostnadsposter är endast tillgängliga för [kostnadsobjekt](cost-object.md) eller frisläppta produkter.
+Sidan **Kostnadsposter** aktiverar filtrering efter dokument-ID och dokumentdatum. 
+
+> [!NOTE]
+> Obs! Kostnadsposter är endast tillgängliga för [kostnadsobjekt](cost-object.md) eller frisläppta produkter.
 
 <a name="see-also"></a>Se även
 --------
 
 [Kostnadsobjekt](cost-object.md)
+
+
 
 

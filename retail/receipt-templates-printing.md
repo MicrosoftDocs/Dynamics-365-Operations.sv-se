@@ -17,10 +17,11 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: fabaacbc7187b38a1745c2139a9eb7760f2be987
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 6b1f91f863c8da35362ebb3036e76aa10d95ba65
+ms.openlocfilehash: a0a105ade7e47d7c554d62ee112ed03437bb7521
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/26/2017
 
 
 ---
@@ -54,10 +55,10 @@ Använd den grafiska layoutdesignern för att grafiskt skapa layouten för formu
 5.  När installationen är klar, skriv ditt användarnamn och lösenord för Microsoft Dynamics 365 for Operations och klicka sedan på **Logga in** för att starta designer.
 6.  Efter dina inloggningsuppgifter är validerade och designern börjar, du kan börja utforma mottagandet format eller ändra ett befintligt format.
 7.  För att skapa delar av formuläret, välj **sidhuvud**, **linjerna**, eller **sidfotssektion** och sedan dra ett element från den delen av arbetsytan. De flesta element innehåller variabler som fylls automatiskt med data från databasen. Andra element, till exempel **Text**, kan du skriva ut egen text på kvittot. **Obs!** Du kan ange hur många rader varje sektion täcker genom att justera siffran i det nedre högra hörnet i det avsnittet. För att göra det enklare att modifiera ett avsnitt, öka dess höjd genom att dra den dimensionering bar längst ner. Höjden på sektion på arbetsytan inte påverkar antalet rader på det faktiska mottagandet.
-8.  När du drar ett element till arbetsytan, ange egenskaper för artikeln i fönstret **Objektinformation **längst ner på sidan. Ange ett eller fler av följande inställningar:
+8.  När du drar ett element till arbetsytan, ange egenskaper för artikeln i fönstret **Objektinformation**längst ner på sidan. Ange ett eller fler av följande inställningar:
     -   **Anpassa** – ställ in justeringen för fältet till **Vänster** eller **Höger**.
     -   **Fyll char** – Ange det vita utrymmet karaktär. Som standard används ett tomt utrymme, men du kan ange vilket tecken som helst.
-    -   **Prefix** – Ange det värde som visas i början av fältet. Den här inställningen gäller endast de **rader **i layouten.
+    -   **Prefix** – Ange det värde som visas i början av fältet. Den här inställningen gäller endast de **rader**i layouten.
     -   **Tecken** – Ange det maximala antalet tecken som kan innehålla om elementet innehåller en variabel. Om texten i fältet är längre än antalet tecken som du anger, trunkeras texten för att passa fältet.
     -   **Variabel** – Den här kryssrutan markeras automatiskt om elementet innehåller en variabel och kan inte anpassas.
     -   **Typsnittet maskinskriver** – Ange teckensnitt till antingen **Normal** eller **fet**. Fetstil använd två gånger så mycket utrymme som vanligt brev. Därför kan vissa tecken kan vara trunkerad.
@@ -67,7 +68,7 @@ Använd den grafiska layoutdesignern för att grafiskt skapa layouten för formu
 Mottagandet profiler tilldelas direkt till skrivare via hårdvara profil.
 
 1.  Öppna maskinvaruprofilen genom att klicka på **Butik och handel** &gt; **Kanalinställningar** &gt; **Kassainställning** &gt; **Kassaprofiler** &gt; **Maskinvaruprofil**.
-2.  Välj skrivaren och sedan, i **mottagandet profil **fält, tilldela mottagandet profil för användning i registret.
+2.  Välj skrivaren och sedan, i **mottagandet profil**fält, tilldela mottagandet profil för användning i registret.
 
 **Obs!** Om två skrivare används en skrivare kan användas för att skriva ut 40-kolumnen termiska kvitton. Den andra skrivare används vanligen för att skriva ut sida typerna som kräver mer information. Dessa inleveranstyperna inkludera kundens inköpsorder och kundfakturor.
 

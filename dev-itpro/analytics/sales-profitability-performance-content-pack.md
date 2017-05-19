@@ -16,15 +16,19 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: 388b6398488e6f316c1ec07a00182e81c1dc8d08
-ms.openlocfilehash: 3e6b48768bb8e69d46f1555d9300f3b878b01ff1
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 35d34f9a356f8a041f2abf0aa8d6c3a6d9ca4a46
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="sales-and-profitability-performance-power-bi-content"></a>Innehållspaket för försäljnings- och lönsamhetsprestanda för Power BI
+
+[!include[banner](../includes/banner.md)]
+
 
 Det här avsnittet beskriver vad som ingår i Dynamics 365 or Operations – Innehållspaket för försäljnings- och lönsamhetsprestanda för Microsoft Power BI. Det förklarar åtkomst rapporterna som är inkluderade i innehållspaketet, samt ger dig information om den datamodell och de enheter som användes för att skapa innehållspaketet.
 
@@ -44,6 +48,7 @@ Lönsamhet kan analyseras med:
 
 ## <a name="accessing-the-content-pack"></a>Åtkomst till innehållspaketet
 Innehållspaket för försäljnings- och lönsamhetsprestanda för Microsoft Power BI. har publicerats som en implementeringstillgång i Lifecycle Services (LCS) och kan nås från Dynamics 365 for Operations. Mer information om hur du öppnar och startar Power BI-rapporter finns i [Power BI-innehåll i LCS från Microsoft och din partner](power-bi-content-microsoft-partners.md).
+**Obs!** KB 4011327 är ett krav för hans Power BI-innehåll. När du loggar in till Lifecycle Services får du åtkomst till KB här: <a href="https://fix.lcs.dynamics.com/issue/results/?q=kb4011327">https://fix.lcs.dynamics.com/issue/results/?q=kb4011327</a>.
 
 ## <a name="metrics-included-in-the-content-pack"></a>Mått inkluderade i innehållspaketet
 Innehållspaketet innehåller en rapport som består av en uppsättning mått som visas som diagram, paneler och register. Nedanstående register ger en översikt över de visualiseringar som används i innehållspaketet.
@@ -110,6 +115,8 @@ Nedan följer några användbara länkar som är relaterade till enheter och til
 -   [Skapa innehållspaket för organisationer](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
 -   [Datamodeller med hjälp av Power BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
 -   [Lägga till Power BI-rutor till arbetsytor](configure-power-bi-integration.md)
+
+
 
 
 

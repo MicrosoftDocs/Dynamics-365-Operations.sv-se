@@ -3,7 +3,7 @@ title: "Översikt över SEPA-kreditöverföring"
 description: "Artikeln innehåller allmän information om ISO 20022 kreditöverföringar, som inkluderar SEPA-kreditöverföringar ( Single Euro Payments Area) och andra elektroniska betalningar för leverantörer. En SEPA-kreditöverföring är specifik typ av betalning i euro från ett företag eller en person till ett annat företag eller annan person. Ämnet beskriver även hur du ställer in och överför en fil för betalning med kreditöverföring."
 author: twheeloc
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -17,15 +17,19 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 4d6cf88788dcc5e982e509137aa444a020137a5e
-ms.openlocfilehash: 848df5e3898f37284d7746c59bff8b38d35ac883
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: f7adaf2f3a14d2c0e094314f0b36b5d4bdb0a65c
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="sepa-credit-transfer-overview"></a>Översikt över SEPA-kreditöverföring
+
+[!include[banner](../includes/banner.md)]
+
 
 Artikeln innehåller allmän information om ISO 20022 kreditöverföringar, som inkluderar SEPA-kreditöverföringar ( Single Euro Payments Area) och andra elektroniska betalningar för leverantörer. En SEPA-kreditöverföring är specifik typ av betalning i euro från ett företag eller en person till ett annat företag eller annan person. Ämnet beskriver även hur du ställer in och överför en fil för betalning med kreditöverföring.
 
@@ -55,7 +59,7 @@ Betalningsformatet för kreditöverföring för europeiska länder implementeras
 Du bör alltid gå till det delade resursbiblioteket i Microsoft Dynamics Lifecycle Services (LCS) och visa en lista över tillgängliga filer som har tillgångstypen **GER-konfiguration**. Nästa avsnitt "Vad måste jag ställa in?" innehåller en länk till ett hjälpavsnitt som beskriver hur du skapar en LCS-databas för att granska tillgängliga konfigurationer och importera valda konfigurationer.
 
 ## <a name="what-do-i-have-to-set-up"></a>Vad måste jag ställa in?
--   Innan du skapar kreditöverföringsfiler måste minst en aktiv konfiguration för kreditöverföring importeras till dina ER-konfigurationer. Instruktioner finns i [Hämta elektroniska rapporteringskonfigurationer från Lifecycle Services](https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs)
+-   Innan du skapar kreditöverföringsfiler måste minst en aktiv konfiguration för kreditöverföring importeras till dina ER-konfigurationer. Instruktioner finns i [Hämta elektroniska rapporteringskonfigurationer från Lifecycle Services](/dynamics365/operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs)
 -   När du konfigurerar betalningsmetoder för leverantörsreskontra markerar du kryssrutan **Generisk elektronisk rapportering** och väljer lämpligt format för kreditöverföring (t.ex.) **ISO 20022 kreditöverföring (AT)**) som en exportformatkonfiguration.
 -   Du måste även ange information om den juridiska personen och om bankkontot i Dynamics 365 for Operations.
 -   Bankkontonummer, IBAN och ibland SWIFT-koder (BIC) eller andra ID krävs för att skapa giltiga kreditöverföringsbetalningar. Därför måste du ställa in dem för leverantörsbankkonto och bankkontot för organisationen som begär överföringen.
@@ -121,5 +125,7 @@ International Bank Account Number (IBAN) och Bank Identifier Code (BIC) används
 
 ## <a name="how-do-i-transmit-a-payment-file-to-the-bank"></a>Hur överför jag en betalningsfil till banken?
 När du genererar betalningar genereras betalningsfilen och du ombeds att spara den i webbläsaren till en tillgänglig plats. Nästa steg är att skicka XML-filen till banken. Den här processen varierar från bank till bank. Följ instruktionerna från banken om att skicka in filerna till banken för bearbetning.
+
+
 
 

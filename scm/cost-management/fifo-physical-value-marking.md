@@ -3,7 +3,7 @@ title: "FIFO med fysiskt värde och markering"
 description: "Först in, först ut (FIFO) är en lagermodell där de första (äldsta) inleveranserna utlevereras först. Ekonomiskt uppdaterade utleveranser från lagret kvittas mot de första ekonomiskt uppdaterade inleveranserna i lagret baserat på lagertransaktionens ekonomiska datum."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2016-02-24 18 - 57 - 00
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -18,15 +18,19 @@ ms.search.industry: Retail
 ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 8e3d189fc4dbc5c747a3473d3a221c739c323050
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: b0be852bde33e8dfc82ceb42dd98be10537f318d
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="fifo-with-physical-value-and-marking"></a>FIFO med fysiskt värde och markering
+
+[!include[banner](../includes/banner.md)]
+
 
 Först in, först ut (FIFO) är en lagermodell där de första (äldsta) inleveranserna utlevereras först. Ekonomiskt uppdaterade utleveranser från lagret kvittas mot de första ekonomiskt uppdaterade inleveranserna i lagret baserat på lagertransaktionens ekonomiska datum. 
 
@@ -50,7 +54,9 @@ I det här exemplet markeras inte artikelmodellgruppen till att inkludera fysisk
 -   5b. Lagrets ekonomiska utleverans för kvantiteten 1 till en självkostnad på 200,00 kronor vardera (löpande medelvärde eller ekonomiskt uppdaterade transaktioner).
 -   6. 7. Lagerstängningen utförs. Baserat på FIFO-metoden kvittas den första ekonomiskt uppdaterade utleveransen mot den första ekonomiskt uppdaterade inleveransen. En justering på 100,00 kronor görs av utleveranstransaktionen.
 
-Det nya löpande medelvärdet för självkostnaden återspeglar medelvärdet för de ekonomiskt uppdaterade transaktionerna. I illustrationen visas effekten av den FIFO-lagermodellen på serien med transaktioner, när alternativet **Inkludera fysiskt värde** inte används. ![FIFO utan Inkludera fysiskt värde](./media/fifowithoutincludephysicalvalue.gif) **Nyckel till diagramet**
+Det nya löpande medelvärdet för självkostnaden återspeglar medelvärdet för de ekonomiskt uppdaterade transaktionerna. I illustrationen visas effekten av den FIFO-lagermodellen på serien med transaktioner, när alternativet **Inkludera fysiskt värde** inte används. ![FIFO utan Inkludera fysiskt värde](./media/fifowithoutincludephysicalvalue.gif) 
+
+**Förklaringar till bilden**
 
 -   Lagertransaktioner visas som lodräta pilar.
 -   Inleveranser till lagret visas som lodräta pilar ovanför tidslinjen.
@@ -78,7 +84,9 @@ Om kryssrutan **Inkludera fysiskt värde** markeras för en artikel på sidan **
 -   6a. Lagrets fysiska utleverans för kvantiteten 1 till självkostnaden 212,50 kronor vardera.
 -   7. 7. Lagerstängningen utförs. Baserat på FIFO-metoden kommer den första ekonomiska utleveranstransaktionen att justeras eller kvittas mot den första uppdaterade inleveransen, antingen ekonomisk eller fysisk.
 
-Transaktion 5b kvittas mot inleveranstransaktion 1b. En negativ justering på 112,50 kronor görs på den här utleveranstransaktionen. Den nya löpande genomsnittliga självkostnaden återspeglar genomsnittet av ekonomiskt och fysiskt uppdaterade transaktioner på 27,50 USD. I illustrationen visas effekten av den FIFO-lagermodellen på serien med transaktioner, när alternativet **Inkludera fysiskt värde** används. ![FIFO med Inkludera fysiskt värde](./media/fifowithincludephysicalvalue.gif) **Nyckel till diagramet**
+Transaktion 5b kvittas mot inleveranstransaktion 1b. En negativ justering på 112,50 kronor görs på den här utleveranstransaktionen. Den nya löpande genomsnittliga självkostnaden återspeglar genomsnittet av ekonomiskt och fysiskt uppdaterade transaktioner på 27,50 USD. I illustrationen visas effekten av den FIFO-lagermodellen på serien med transaktioner, när alternativet **Inkludera fysiskt värde** används. ![FIFO med Inkludera fysiskt värde](./media/fifowithincludephysicalvalue.gif) 
+
+**Förklaringar till bilden**
 
 -   Lagertransaktioner visas som lodräta pilar.
 -   Inleveranser till lagret visas som lodräta pilar ovanför tidslinjen.
@@ -106,7 +114,9 @@ Märkning är en process som gör det möjligt att länka, eller markera, en utl
 -   6a. Lagrets fysiska utleverans för kvantiteten 1 till självkostnaden 212,50 kronor vardera.
 -   7. 7. Lagerstängningen utförs. Eftersom de ekonomiskt uppdaterade FIFO-transaktionerna länkas till en befintlig inleverans kvittas dessa transaktioner mot varandra och ingen justerings görs.
 
-Den nya löpande genomsnittliga självkostnaden återspeglar genomsnittet av ekonomiskt och fysiskt uppdaterade transaktioner på 27,50 USD. I illustrationen nedan visas hur den här serien med transaktioner påverkas av FIFO-lagermodellen när länkning mellan utleverans och inleverans används. ![ FIFO med Länkning](./media/fifowithmarking.gif)**Nyckel till diagrammet**
+Den nya löpande genomsnittliga självkostnaden återspeglar genomsnittet av ekonomiskt och fysiskt uppdaterade transaktioner på 27,50 USD. I illustrationen nedan visas hur den här serien med transaktioner påverkas av FIFO-lagermodellen när länkning mellan utleverans och inleverans används. ![FIFO med Markering](./media/fifowithmarking.gif) 
+
+**Förklaringar till bilden**
 
 -   Lagertransaktioner visas som lodräta pilar.
 -   Inleveranser till lagret visas som lodräta pilar ovanför tidslinjen.
@@ -118,6 +128,8 @@ Den nya löpande genomsnittliga självkostnaden återspeglar genomsnittet av eko
 -   Varje lodrät pil har en etikett med ett ordnings-ID, till exempel *1a*. Dessa ID:n anger ordningen på lagertransaktionsbokningarna utmed tidslinjen.
 -   Lagerstängningar visas som en röd lodrät streckad linje och etiketten *Lagerstängning*.
 -   Kvittningar som utförs av en lagerstängning visas som prickade röda pilar som löper diagonalt från en inleverans till en utleverans.
+
+
 
 
 

@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: d865260679dac6196a69f3182f937df7f9fd8200
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 2b08caae8b11bfbb51023fec505c54816732bbfc
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -51,12 +52,12 @@ Deadline för orderregistrering på tisdagar har ställts in på 16:00. På en s
 ## <a name="example-different-order-entry-deadlines-per-site"></a>Exempel: Olika deadline för orderregistreringar per site
 Ditt företag bedriver sin verksamhet på två siter. Siterna finns i andra tidszoner, som visas i följande tabell.
 
-| Webbplats A                      | Site B                       |
+| Webbplats A                      | Plats B                       |
 |-----------------------------|-----------------------------|
 | Kalifornien                  | Florida                     |
 | Pacific, normaltid | Eastern, normaltid |
 
-Site A och B har definierat följande deadlines för orderregistrering.
+Plats A och B har definierat följande deadlines för orderregistrering.
 
 | Dagen i veckan             | A: Deadlines för orderregistrering (PST) | B: Deadlines för order (EST) |
 |-----------------------------|--------------------------------|--------------------------------|
@@ -79,12 +80,12 @@ Följande tabeller visar deadline för order för site A och B konverterat till 
 ## <a name="example-same-order-entry-deadline-per-site"></a>Exempel: Samma deadline för order per site
 Ditt företag bedriver sin verksamhet på två siter. Siterna finns i andra tidszoner, som visas i följande tabell.
 
-| Webbplats A                      | Site B                       |
+| Webbplats A                      | Plats B                       |
 |-----------------------------|-----------------------------|
 | Kalifornien                  | Florida                     |
 | Pacific, normaltid | Eastern, normaltid |
 
-Site A och B har definierat följande deadlines för orderregistrering.
+Plats A och B har definierat följande deadlines för orderregistrering.
 
 | Dagen i veckan | PST och EST |
 |-----------------|-------------|

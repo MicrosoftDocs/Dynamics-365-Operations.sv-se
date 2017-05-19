@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 8e89a57dda8f2d392483ed13c686ea97b74926b0
-ms.openlocfilehash: ca22ae7ba0f30085ad453e7b2c16418dba4dbbe9
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 0fe9b45ea3e98c517ff686afdaec56e7f020c341
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -33,7 +34,7 @@ ms.lasthandoff: 03/31/2017
 
 Det här avsnittet innehåller en översikt över funktionen för bonusavskrivning.
 
-För bonusavskrivning kan du ta extra- eller bonusavskrivningsbelopp under det första året som tillgången tas i drift och skrivs av. Bonusavskrivning måste göras före andra avskrivningsberäkningar. Därför är det bäst att använda bonusavskrivning med böcker där funktionen Post to general ledger har inaktiverats. Du kan använda alternativet **Delete transactions not posted to general ledger** för att radera historiska transaktioner för böcker som inte bokförs i redovisningen. Du kan sedan tillgodose bonusavskrivningen senare i tillgångens livscykel genom att ta bort avskrivningstransaktioner som tidigare bokförts. 
+För bonusavskrivning kan du ta extra- eller bonusavskrivningsbelopp under det första året som tillgången tas i drift och skrivs av. Bonusavskrivning måste göras före andra avskrivningsberäkningar. Därför är det bäst att använda bonusavskrivning med böcker där funktionen Bokför i huvudboken har inaktiverats. Du kan använda alternativet **Radera transaktioner som inte har bokförts i redovisning** för att radera historiska transaktioner för böcker som inte bokförs i redovisningen. Du kan sedan tillgodose bonusavskrivningen senare i tillgångens livscykel genom att ta bort avskrivningstransaktioner som tidigare bokförts. 
 
 Du kan beräkna bonusavskrivning med förslagsprocessen eller skapa manuella transaktioner för bonusavskrivningar. Du kan inte skapa transaktioner för bonusavskrivning om det finns transaktioner för avskrivning eller avskrivningsjustering för den tillgångsförteckningen.
 
@@ -47,7 +48,7 @@ I USA räknas för närvarande viss egendom som paragraf 179-egendom. Genom att 
 Följande bonusavskrivningar är associerade med en tillgångsförteckning:
 
 -   **Paragraf 179:** 1 000,00, Prioritet 1
--   **Liberty Zone:** 30 procent, Prioritet 2
+-   **Frihetszon:** 30 procent, Prioritet 2
 
 Anskaffningskostnaden för tillgången är 5 000,00 $. När bonusavskrivningen beräknas blir det första bonusavskrivningsbeloppet 1 000,00 $ för paragraf 179-avskrivningen. 
 

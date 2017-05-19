@@ -3,7 +3,7 @@ title: Kvalitetshanteringsprocesser
 description: "Det här avsnittet innehåller information om kvalitetshanteringprocessen för avvikande produkter. Det beskriver användning av kvalitetskontrollfunktionen, om att definiera och underhålla avvikelser och hantering av korrigeringar."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-10-30 12 - 53 - 17
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -17,15 +17,19 @@ ms.search.region: Global
 ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: f77012e7b64b7f153103e9bbe91e8ded202b509a
-ms.openlocfilehash: 2deec6d262e87daf4704ce21ce64546f9c9d638b
-ms.lasthandoff: 03/30/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 3523a89768bc3aee2aab250ee134128fcc3eeeef
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="quality-management-processes"></a>Kvalitetshanteringsprocesser
+
+[!include[banner](../includes/banner.md)]
+
 
 Det här avsnittet innehåller information om kvalitetshanteringprocessen för avvikande produkter. Det beskriver användning av kvalitetskontrollfunktionen, om att definiera och underhålla avvikelser och hantering av korrigeringar.
 
@@ -52,7 +56,9 @@ Produkttestning kallas ofta för kvalitetskontroll och innefattar användning av
 -   Registrera testresultaten för en kvalitetsorder, validera testresultatet mot de godtagbara kvalitetsnivåerna och skriv ut ett analyscertifikat med testresultaten.
 
 ## <a name="nonconformance"></a>Avvikelse
-En avvikelse beskriver en artikel med kvalitetsproblem.** **Avvikelseprocessen kan skapa en avvikelseorder som beskriver en kvantitet med avvikande material, problemkällan, problemtypen samt förklarande anteckningar. Du kan definiera en klassificering av problemtyper för att underlätta analysen av avvikande material. Du kan även skriva ut ett avvikelsemärke och en avvikelserapport för att ange hur det avvikande materialet ska användas. Märket och rapporten kan till exempel ange ett villkor för **Oanvändbar** eller **Begränsad användning**. Följande tabell visar de sex standardavvikelsetyperna och beskriver den information som måste registreras för varje typ.
+En avvikelse beskriver en artikel med kvalitetsproblem. Avvikelseprocessen låter dig skapa en avvikelseorder som beskriver en kvantitet med avvikande material, problemkällan, problemtypen samt förklarande noteringar. Du kan definiera en klassificering av problemtyper för att underlätta analysen av avvikande material. Du kan även skriva ut ett avvikelsemärke och en avvikelserapport för att ange hur det avvikande materialet ska användas. Märket och rapporten kan till exempel ange ett villkor för **Oanvändbar** eller **Begränsad användning**. 
+
+Följande tabell visar de sex standardavvikelsetyperna och beskriver den information som måste registreras för varje typ.
 
 | Avvikelsetyp   | Källinformation                                                                                                                                                                                                                          |
 |-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -72,10 +78,16 @@ Du kan ange kommentarer för en avvikelse genom att bifoga ett dokument. Det är
 Avvikelserapporten visar avvikelsenummer, artikel och problemtyp. Beroende på din rapportinställningspolicy kan rapporten också visa relaterade anteckningar om avvikelsen. Avvikelsemärket visar liknande information och innehåller även karantänzonen och typen (till exempel **Begränsad användning** eller **Oanvändbart**) som du tilldelade avvikelsen för att leda dispositionen av det defekta materialet.
 
 ## <a name="approved-nonconformance"></a>Godkänd avvikelse
-Om du vill kan du även definiera en eller flera relaterade åtgärder för en godkänd avvikelse. En relaterad åtgärd beskriver det arbete som ska utföras, och innehåller en lista med de kvalitetsåtgärder som du har definierat, och en beskrivning av anledningen till arbetet. När du definierar en operation kan du om du vill även definiera de tillägg, artiklar och tidrapporttimmar som krävs för att utföra arbetet. De beräknade kostnaderna visas för den relaterade åtgärden och den totala beräknade kostnaden visas för avvikelsen. Den beräknade kostnaden och den bakomliggande informationen (om artiklar, arbetstimmar och tillägg) är referensinformation och den används bara inom kvalitetshanteringsfunktionen. Du kan även skapa en kvalitetsorder från avvikelsen genom att först utföra en förfrågan om kvalitetsorder och sedan skapa den nya kvalitetsordern. Exempelvis kan en kvalitetsorder identifiera behovet att testa (eller testa om) det defekta materialet. Den nyligen skapade kvalitetsordern visar länken till den ursprungliga avvikelsen. Om du vill kan du koppla en avvikelse till en annan och skapa en ny avvikelse från en befintlig. Kopplingen kan exempelvis återspegla sambandet mellan kvalitetsproblem.
+Om du vill kan du även definiera en eller flera relaterade åtgärder för en godkänd avvikelse. En relaterad åtgärd beskriver det arbete som ska utföras, och innehåller en lista med de kvalitetsåtgärder som du har definierat, och en beskrivning av anledningen till arbetet. När du definierar en operation kan du om du vill även definiera de tillägg, artiklar och tidrapporttimmar som krävs för att utföra arbetet. De beräknade kostnaderna visas för den relaterade åtgärden och den totala beräknade kostnaden visas för avvikelsen. Den beräknade kostnaden och den bakomliggande informationen (om artiklar, arbetstimmar och tillägg) är referensinformation och den används bara inom kvalitetshanteringsfunktionen. 
+
+Du kan även skapa en kvalitetsorder från avvikelsen genom att först utföra en förfrågan om kvalitetsorder och sedan skapa den nya kvalitetsordern. Exempelvis kan en kvalitetsorder identifiera behovet att testa (eller testa om) det defekta materialet. Den nyligen skapade kvalitetsordern visar länken till den ursprungliga avvikelsen. 
+
+Om du vill kan du koppla en avvikelse till en annan och skapa en ny avvikelse från en befintlig. Kopplingen kan exempelvis återspegla sambandet mellan kvalitetsproblem.
 
 ## <a name="correction-handling"></a>Korrigeringshantering
-Sidan **Korrigeringar** gör det möjligt att skapa en lista över avvikelser som måste korrigeras. Varje korrigeringspost associeras med diagnostypen som orsakade problemet som upptäcktes. Sidan **Korrigeringar** innehåller också information om vem som måste utföra korrigeringsåtgärder, och när. Du kan beskriva detaljer om problemet och den korrigerande åtgärden som krävs genom att bifoga ett dokument till korrigeringen. När avvikelsen har åtgärdats eller har korrigerats kan du "stänga" korrigeringsposten genom att välja alternativet **Slutförd**. Du kan också ange att lösningen var en kortsiktig lösning. Det är en bra idé att definiera en unik dokumenttyp för avvikelser på sidan **Dokumenttyp**. Du kan sedan använda sidan **Rapportinställningar** för att definiera om kommentarer för denna dokumenttyp skrivs ut på korrigeringsrapporten. En utskriven korrigeringsrapport innehåller information om avvikelsen och tillhörande avvikelseanteckningar. Rapporten innehåller också information om korrigering, till exempel diagnostypen och relaterade korrigeringsanteckningar.
+Sidan **Korrigeringar** gör det möjligt att skapa en lista över avvikelser som måste korrigeras. Varje korrigeringspost associeras med diagnostypen som orsakade problemet som upptäcktes. Sidan **Korrigeringar** innehåller också information om vem som måste utföra korrigeringsåtgärder, och när. Du kan beskriva detaljer om problemet och den korrigerande åtgärden som krävs genom att bifoga ett dokument till korrigeringen. När avvikelsen har åtgärdats eller har korrigerats kan du "stänga" korrigeringsposten genom att välja alternativet **Slutförd**. Du kan också ange att lösningen var en kortsiktig lösning. 
+
+Det är en bra idé att definiera en unik dokumenttyp för avvikelser på sidan **Dokumenttyp**. Du kan sedan använda sidan **Rapportinställningar** för att definiera om kommentarer för denna dokumenttyp skrivs ut på korrigeringsrapporten. En utskriven korrigeringsrapport innehåller information om avvikelsen och tillhörande avvikelseanteckningar. Rapporten innehåller också information om korrigering, till exempel diagnostypen och relaterade korrigeringsanteckningar.
 
 <a name="see-also"></a>Se även
 --------
@@ -91,5 +103,7 @@ Sidan **Korrigeringar** gör det möjligt att skapa en lista över avvikelser so
 [Ställa in kvalitetsorder (uppgiftsguide)](http://ax.help.dynamics.com/en/wiki/set-up-quality-orders/)
 
 [Kontrollera kvaliteten på varor (uppgiftsguide)](https://ax.help.dynamics.com/en/wiki/inspect-the-quality-of-goods/)
+
+
 
 

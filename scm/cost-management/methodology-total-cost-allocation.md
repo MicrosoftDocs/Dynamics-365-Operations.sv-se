@@ -3,7 +3,7 @@ title: "Metod för total kostnadsallokering"
 description: "Den här artikeln ger riktlinjer för att använda total kostnadsallokering (TCA). TCA är en metod för att beräkna kostnaden mellan den huvudsakliga receptartikeln för en batchorder och samprodukterna som definieras för receptet."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 04/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -18,15 +18,19 @@ ms.search.industry: Manufacturing
 ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: c26dcc5a8caa461bce90f931bb5c584f1816526b
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: a5c5788a3145dd6cabeed097d25a03a243577b8f
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="total-cost-allocation-method"></a>Metod för total kostnadsallokering
+
+[!include[banner](../includes/banner.md)]
+
 
 Den här artikeln ger riktlinjer för att använda total kostnadsallokering (TCA). TCA är en metod för att beräkna kostnaden mellan den huvudsakliga receptartikeln för en batchorder och samprodukterna som definieras för receptet.
 
@@ -36,6 +40,11 @@ Total kostnadsallokering (TCA) är en metod för att beräkna kostnaden mellan d
 Nedan följer några av riktlinjerna för att använda TCA för samprodukter:
 
 -   Om du ställer in skjutreglaget för **Total kostnadsallokering** till **Ja** för en receptversion, samprodukter måste ha en självkostnad som är större än 0 (noll). Värdet kan hämtas från den aktiva kostnadsversionen för samma plats eller för den första platsen för en formel som inte är platsspecifik. Det här villkoret valideras när formeln är godkänd.
+
+    -   Du behöver inte manuellt ange kostnadsallokering i procent för samprodukter I stället skapas automatiskt kostnadsallokering i procent som medelvärdet av aktiva självkostnader för samprodukter. 
+    -   Du behöver inte ange en standardkostnad för icke-standardkostnadsartiklar som är samprodukter Det finns två typer av kostnadsversioner i systemet: standardkostnad och planerad kostnad 
+    -   Om en artikel inte värderas med värderingsmetoden för standardkostnad, rekommenderar vi att du använder ett aktivt självkostnadspris i den planerade kostnadsredovisningsversionen. Priset används för kostnadsuppskattning, strukturlisteberäkning, t.ex. uppskattning av produktionskostnader och reservpris i lagervärderingsprocessen. 
+
 -   Om du ställer in skjutreglaget för **Total kostnadsallokering** till **Ja** för receptversionen och följande villkor stämmer är metoden för kostnadsallokering **TCA** och procentsatsen för kostnadsallokering oförändrad:
     -   Du lade till samprodukter.
     -   Du använde en annan metod för kostnadsallokering för samprodukterna.
@@ -53,6 +62,8 @@ Fältet **Kostnadsallokering för biprodukt** på sidan **Samprodukter** är ett
 -   **Procent** – Kostnadsbeloppet beräknas som en procentandel av den totala kostnaden för råmaterial som förbrukas i produktionen. Procentvärdet som används för beräkningen anges i fältet.
 -   **Per serie** – Kostnadsbeloppet beräknas som ett belopp per standardbatchstorlek för tillverkningsordern. Detta belopp är oberoende av den rapporterade kvantiteten i produktionen. Beloppet som används för beräkningen anges i fältet.
 -   **Per kvantitet** – Kostnadsbeloppet beräknas som ett belopp per kvantitet för den rapporterade receptartikeln i produktionen. Beloppet som används för beräkningen anges i fältet.
+
+
 
 
 

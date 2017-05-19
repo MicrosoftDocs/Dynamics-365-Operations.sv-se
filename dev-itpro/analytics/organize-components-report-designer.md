@@ -1,16 +1,16 @@
 ---
 title: Organisera rapportdelar i rapportdesignern
 description: "När du har utformat byggblock och skapat rapporter är det praktiskt att ordna objekten så att de blir lättare att hitta för användarna. Den här artikeln innehåller en beskrivning av hur du organiserar befintliga rapporter, byggblock och objekt i rapportdesignern."
-author: RobinARH
+author: ShylaThompson
 manager: AnnBe
-ms.date: 2016-03-07 19 - 06 - 25
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
 ms.technology: 
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: RobinARH
+ms.reviewer: ShylaThompson
 ms.search.scope: Management Reporter, Core
 ms.custom: 59161
 ms.assetid: 32e728c5-3b06-4049-8070-ade01e951d49
@@ -18,15 +18,19 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
-translationtype: Human Translation
-ms.sourcegitcommit: 4d6cf88788dcc5e982e509137aa444a020137a5e
-ms.openlocfilehash: c8efd57805cd89eb8cdfabe81a60704bb4390194
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: ca6d02d41be67447719819e27fbcf3f615eced63
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="organize-report-components-in-report-designer"></a>Organisera rapportdelar i rapportdesignern
+
+[!include[banner](../includes/banner.md)]
+
 
 När du har utformat byggblock och skapat rapporter är det praktiskt att ordna objekten så att de blir lättare att hitta för användarna. Den här artikeln innehåller en beskrivning av hur du organiserar befintliga rapporter, byggblock och objekt i rapportdesignern.
 
@@ -39,7 +43,7 @@ I Report Designer kan du ändra namn på mappar, rapportdefinitioner, raddefinit
 
 1.  I Report Designer, använd navigeringsrutan för att hitta mappen eller objektet du vill byta namn på.
 2.  Högerklicka på mappen eller objekt och klicka sedan på **Ändra namn**. Fältet **Namn** i navigeringsfönstret blir tillgängligt.
-3.  Skriv in ett nytt namn och tryck sedan på Enter.
+3.  Skriv in ett nytt namn och tryck sedan på Retur.
 4.  Om byggblocket är en raddefinition, kolumndefinition eller rapportträdsdefinition måste du uppdatera andra byggblock som är kopplade till objektet. Högerklicka på byggblocket du bytte namn i steg 3, välj **Associationer** och välj sedan ett alternativ i listan om du vill uppdatera det.
 5.  Upprepa steg 4 tills alla tillhörande artiklar uppdateras.
 
@@ -154,6 +158,8 @@ Endast standardbasperiodinställningar sparas tillsammans med rapportdefinitione
 <a name="see-also"></a>Se även
 --------
 
-[Ekonomisk rapportering för Dynamics 365 for Operations](financial-reporting-intro.md)
+[Ekonomisk rapportering](financial-reporting-intro.md)
+
+
 
 

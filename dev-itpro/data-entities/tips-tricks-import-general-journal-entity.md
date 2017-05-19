@@ -16,10 +16,11 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 4d6cf88788dcc5e982e509137aa444a020137a5e
-ms.openlocfilehash: 81a52acd1d9baa12fcfe9d848441901894fa5682
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 3f13e07a1adf74982a8b220296ae72d71075e0e3
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -37,7 +38,7 @@ Du kan använda enheten Allmän journal för att importera verifikationer som ha
 Innan du genomför en import med hjälp av enheten Allmän journal ska du verifiera följande inställningar:
 
 -   **Nummerserieinställningarna för journalbatchnumren** – När du genomför en import med hjälp av enheten Allmän journal använder journalbatchnumret den nummerserie som definierats i Allmänna huvudboksparametrar som standard. Om du har ställt in nummerserien för journalbatchnumret till **Manuell** tillämpas inget standardnummer. Den här inställningen stöds inte.
--   **Konfigurationen för den ekonomiska dimensionen ** – Varje organisation måste definiera ordningen för ekonomiska dimensioner när enheter används för att importera transaktioner. Ordern har definierats för formatet **Integrering av redovisningsdimensioner** i **Redovisning** &gt; **Kontoplaner** &gt; **Dimensioner** &gt; **Konfiguration av ekonomiska dimensioner för integrering av programvaror** &gt; **Välj dataenheter**. Segmenten i det redovisningskonto som importeras måste ha samma ordning. I annat fall visas ett felmeddelande under importen.
+-   **Konfigurationen för den ekonomiska dimensionen** – Varje organisation måste definiera ordningen för ekonomiska dimensioner när enheter används för att importera transaktioner. Ordern har definierats för formatet **Integrering av redovisningsdimensioner** i **Redovisning** &gt; **Kontoplaner** &gt; **Dimensioner** &gt; **Konfiguration av ekonomiska dimensioner för integrering av programvaror** &gt; **Välj dataenheter**. Segmenten i det redovisningskonto som importeras måste ha samma ordning. I annat fall visas ett felmeddelande under importen.
 
 ## <a name="general-journal-entity-setup"></a>Ställa in allmän journal
 Två inställningar i datahantering påverkar hur standardjournalens batchnummer eller verifikationsnummer används:

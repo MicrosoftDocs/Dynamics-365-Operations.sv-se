@@ -16,15 +16,19 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: afa59439e06aad9d669eb352a9837a013f447249
-ms.openlocfilehash: 2928b86a9dbf001451933f9d17287400cafaf089
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 36d4aec3936ef99b880f3affc75df1b952cb3133
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="whats-new-or-changed-in-dynamics-ax-70-february-2016"></a>Nyheter och ändringar i Microsoft Dynamics AX 7.0 (februari 2016)
+
+[!include[banner](../includes/banner.md)]
+
 
 Den här artikeln innehåller en beskrivning av nya eller ändrade funktioner i Microsoft Dynamics AX 7.0. Den här versionen innehåller både plattform och programfunktioner och gavs ut i februari 2016.
 
@@ -331,8 +335,8 @@ Den här funktionen fungerar oberoende av kostnadsredovisningsmetoder som tillde
 <tr class="even">
 <td>Komma åt guidad procedurbaserad hjälp (uppgiftsguider) och begreppsbaserade avsnitt genom att klicka på **Hjälp**.</td>
 <td>AX 2012-hjälpsystemet pekar på HTML-avsnitt som lagras på en lokal webbserver. Kunder och partner kan skapa sin egen hjälp.</td>
-<td>Hjälpsystemet i den aktuella versionen av Dynamics AX visar uppgiftsguider som lagras i BPM för Microsoft Dynamics Lifecycle Services (LCS). Hjälpsystemet visar också avsnitt från Microsoft-wikin. Mer information finns i [hjälpen för Dynamics AX - komma igång](help-overview.md) och [Ny uppgiftsguide tillgänglig (februari 2016)](new-task-guides-available-february-2016.md).</td>
-<td>Uppgiftsguider tillhandahåller en guidad, interaktiv upplevelse som leder dig genom stegen för en uppgifts- eller affärsprocess. Du kan hämta och anpassa uppgiftsguider som Microsoft tillhandahåller. Med hjälp av wikin kan du skapa, distribuera och uppdatera produktinformation på ett snabbare och mer flexibelt sätt. Därför garanterar den att du har tillgång till den senaste tekniska informationen.</td>
+<td>Hjälpsystemet i den aktuella versionen av Dynamics AX visar uppgiftsguider som lagras i BPM för Microsoft Dynamics Lifecycle Services (LCS). Hjälpsystemet visar också avsnitt från webbsidan för Microsoft-dokument. Mer information finns i [hjälpen för Dynamics AX - komma igång](help-overview.md) och [Ny uppgiftsguide tillgänglig (februari 2016)](new-task-guides-available-february-2016.md).</td>
+<td>Uppgiftsguider tillhandahåller en guidad, interaktiv upplevelse som leder dig genom stegen för en uppgifts- eller affärsprocess. Du kan hämta och anpassa uppgiftsguider som Microsoft tillhandahåller. Det här avsnittet låter dig skapa, distribuera och uppdatera produktinformation på ett snabbare och mer flexibelt sätt. Därför garanterar den att du har tillgång till den senaste tekniska informationen.</td>
 </tr>
 </tbody>
 </table>
@@ -1076,5 +1080,7 @@ Inga nya funktioner har lagts till.
 [Vad är nya eller ändrade](whats-new-changed.md)
 
 [Nya uppgiftguider tillgängliga (februari 2016)](new-task-guides-available-february-2016.md)
+
+
 
 

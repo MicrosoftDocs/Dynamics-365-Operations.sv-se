@@ -18,10 +18,11 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 2cb439e871d57f74c296697cfc42705fb0121bb7
-ms.openlocfilehash: 9da48c7861f48ec2a154ac12616149d1208346cf
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 31c3354590935b40ecadd3a2fb380f4f103eb2b7
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -44,14 +45,14 @@ Den 25:e juni registrerar och bokför Arnie en faktura på 1 000,00 för kund 4
 | 2015/07/09           | 10,00                | 990,00                         |
 | 2015/07/25          | 0,00                 | 1 000,00                       |
 
-Arnie kan visa den här transaktionen på sidan** Kundtransaktioner**.
+Arnie kan visa den här transaktionen på sidan**Kundtransaktioner**.
 
 | Verifikation   | transaktionstyp | Datum      | Faktura | Debetbelopp i transaktionsvaluta | Kreditbelopp i transaktionsvaluta | Saldo  | Valuta |
 |-----------|------------------|-----------|---------|--------------------------------------|---------------------------------------|----------|----------|
 | FTI-10030 | Faktura          | 2015/06/25 | 10030   | 1 000,00                             |                                       | 1 000,00 | USD      |
 
 ## <a name="partial-payment-before-the-cash-discount-date"></a>Delbetalning före kassarabattdatumet
-Den 28 juni gör kund 4031 en delbetalning på 294,00. Eftersom 28 juni infaller inom den första kassarabattperioden, får kunden en rabatt på 6,00. På sidan **Kvitta transaktioner** är värdet för ** Kassarabattbelopp** 20,00 och värdet för **Kassarabattbelopp att utnyttja** 6,00.
+Den 28 juni gör kund 4031 en delbetalning på 294,00. Eftersom 28 juni infaller inom den första kassarabattperioden, får kunden en rabatt på 6,00. På sidan **Kvitta transaktioner** är värdet för **Kassarabattbelopp** 20,00 och värdet för **Kassarabattbelopp att utnyttja** 6,00.
 
 | Markera     | Använd kassarabatt | Verifikation   | Konto | Datum      | Förfallodatum  | Faktura | Belopp i transaktionsvalutan | Valuta | Belopp att kvitta |
 |----------|-------------------|-----------|---------|-----------|-----------|---------|--------------------------------|----------|------------------|

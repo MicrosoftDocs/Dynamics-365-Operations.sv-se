@@ -19,10 +19,11 @@ ms.search.industry: Retail
 ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 8854ab94a71cc363bcd073d2df47bc01a243b6cd
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 43cb4ed2ca77592fc23100fd74cb2bfa23c17f47
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -49,7 +50,7 @@ Produktdimensionvärden som till exempel Storlek, Färg och Utförande kan ska
 -   Klicka på **Produktinformationshantering** &gt; **Frisläppta produkter**. Välj en produktmall. I **Åtgärdsfönstret**, klicka på **Produkt**. I gruppen **Produktmall**, klicka på **Produktdimensioner**.
 
 Antalet varianter som du kan skapa för en artikel begränsas av antalet möjliga produktdimensionskombinationer.
-| **Tips! **                                                                                                                                              |
+| **Tips!**                                                                                                                                              |
 |------------------------------------------------------------------------------------------------------------------------------------------------------|
 | När du använder en produkt på till exempel en orderrad väljer du produktdimensioner för att identifiera produktvarianten du vill arbeta med. |
 

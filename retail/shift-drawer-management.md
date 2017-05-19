@@ -17,10 +17,11 @@ ms.search.industry: Retail
 ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: 09c7fce1fa83d6a8d6391db667b7260d2a199390
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 6b1f91f863c8da35362ebb3036e76aa10d95ba65
+ms.openlocfilehash: bca8431e88ea73060c75774ae55611f95016e9a1
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/26/2017
 
 
 ---
@@ -88,7 +89,7 @@ Delade skift används i en miljö där flera kassörer delar en kassalåda eller
 4.  Välj **Skapa ett nytt skift**.
 5.  Välj **Ange startbelopp**.
 6.  Ange startbeloppet för alla kassalådor i butiken som ingår i det delade skiftet och klicka sedan på **Spara**.
-    -   Om du vill lägga till startbeloppet till varje efterföljande kassalåda, använd åtgätden **Välj maskinvarustation ** för att aktivera maskinvarustationen.
+    -   Om du vill lägga till startbeloppet till varje efterföljande kassalåda, använd åtgätden **Välj maskinvarustation** för att aktivera maskinvarustationen.
     -   Om du vill lägga till en kassalåda till en speciell kassalåda, använd åtgärden **Öppna kassalådan**.
     -   Fortsätt tills alla kassalådor i det delade skiftet innehåller sin del av startbeloppet.
 

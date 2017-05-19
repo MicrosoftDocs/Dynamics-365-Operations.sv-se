@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: pjacobse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: f77012e7b64b7f153103e9bbe91e8ded202b509a
-ms.openlocfilehash: 3c7c189b1ed9ca8a69ddd710b7b1345e9b41a680
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: b6c7158a4d0f941bf564c107bfb2560de6a09570
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -125,7 +126,7 @@ När du har kört spårningen kan du använda följande alternativ på knappen *
 -   **Bakåt** eller **Framåt** – Starta en ny spårning för den valda noden och skriv över information om den aktuella spårningen.
 -   **Ny bakåt** eller **Ny framåt** – Starta en ny spårning i ett nytt fönster och spara information om den aktuella spårningen.
 
-Om du vill använda alternativen **New backward** eller **New forward** måste du använda funktionen **Open in a new window** för att ett nytt spår ska visas i ett nytt fönster.
+Om du vill använda alternativen **Ny bakåt** eller **Ny framåt** måste du använda funktionen **Öppnar i ett nytt fönster** för att ett nytt spår ska visas i ett nytt fönster.
 
 ## <a name="can-i-save-the-trace-details"></a>Kan jag spara spårningsdetaljerna?
 Du kan spara informationen på fliken **Detaljer** som en XML-fil genom att klicka på **Exportera** under åtgärden ****Spårning**** i åtgärdsfönstret. Förutom spårningsdetaljerna, XML-filen innehåller även spårningskriterier, överordnad nod och lagerbehållning. Möjligheten att spara information om en spårning är användbar, till exempel om du vill bekräfta informationen till en kvalitetsorder eller annan efterlevnadsdokumentation. Du kan ange där filen sparas. Markera alternativet **Visa dokument** om du vill visa filen direkt. **Obs!** Filen sparas alltid, även om du endast vill visa den. Som standard öppnas XML-filen i ett webbläsarfönster. Du kan dock högerklicka på filen, välja **Öppna med** och sedan välja programmet som ska användas för att visa innehållet.

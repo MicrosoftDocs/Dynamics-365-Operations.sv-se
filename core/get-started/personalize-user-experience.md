@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 4bb647cfd3f012efbffa93a81462c538a24ac850
-ms.openlocfilehash: 8965c193839002776b3c61036b23b54625c974a4
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 734bf8a5cd71d218942e1a57fbb6af8fef4dc998
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -39,10 +40,10 @@ Alla anpassningsalternativ, av något slag, som en användare gör i Dynamics 36
 ## <a name="systemwide-options-for-the-current-user"></a>Systemtäckande alternativ för aktuell användare
 I navigeringsfältet hittar du en växel bilden som heter **Inställningar**knappen meny. Öppna **menyn Inställningar** visas ett antal val. Val av **Alternativ** öppnar användarens **Alternativ** sida. Här finns det fyra alternativflikar: **Visuell**, **Inställningar**, **Konto**, och **Arbetsflöde**.
 
--   **Visuellt: **Används för att välja ett färgtema och standardstorleken för element på dina sidor.
+-   **Visuellt:**Används för att välja ett färgtema och standardstorleken för element på dina sidor.
 -   **Inställningar:** Här kan du välja standardinställningar för varje gång du öppnar Dynamics 365 for Operations, inklusive företag, första sidan, och standardläge för visa/redigera (som avgör om en sida är låst för visning eller öppnas för redigering varje gång du öppnar den). Du skar finner dessutom språk, tidszon och datum, tid och antal formatalternativ. Slutligen den här sidan innehåller ett antal diverse inställningar som varierar från version till version.
--   **Konto: **Används för att ange ditt användar-ID och andra kontorelaterade inställningar.
--   **Arbetsflöde: **här kan du välja arbetsflödesrelaterade alternativ.
+-   **Konto:**Används för att ange ditt användar-ID och andra kontorelaterade inställningar.
+-   **Arbetsflöde:**här kan du välja arbetsflödesrelaterade alternativ.
 
 ## <a name="implicit-personalizations"></a>Uttryckliga anpassningsalternativ
 Uttryckliga anpassningsalternativ är de anpassningsalternativ som du utför enkelt genom att interagera med vissa kontroller som kommer ihåg deras aktuella synliga. 
@@ -106,7 +107,7 @@ Vissa arbetsytor innehåller räknepaneler (paneler med siffror på) som också 
 Instrumentpanelen är ofta den första sidan du ser när du öppnar Dynamics 365 for Operations. Du kan anpassa instrumentpanelen för att döpa din arbetsyta navigation paneler, för att endast visa panelerna som du skulle vilja se, byta panel, eller arrangerar panelerna i den ordning du föredrar att se dem. För att anpassa instrumentpanelen, välj någon panel och högerklicka för att öppna en snabbmeny. På snabbmenyn, välj **Anpassa**. Om den valda panelen är samma som du vill dölja eller ändra namn på eller hoppa över, du kan göra ändringar direkt i fönstret med egenskaper som har visats. Om du vill ordna paneler, välj sedan **anpassa denna form** i fastigheten för att öppna verktygsfältet anpassning. Sedan kan du använda verktyget Flytta till arrangerar panelerna.
 
 ## <a name="administration-of-personalization"></a>Administration av anpassning
-Det är möjligt att anpassa en sida och dela det med andra användare genom att helt enkelt exportera personliga sida och ber andra användare till navigerar till personliga sida och importera anpassningen fil som du har skapat. Om en användare har administratörsbehörighet, de kan även hantera anpassningsalternativ för andra användare i fönstret **Anpassning inställningssida** . Navigera till b-sidan. I fönstret **Anpassning** sida, du hittar två flikar, en märkt **System** och en märkt** användare**. 
+Det är möjligt att anpassa en sida och dela det med andra användare genom att helt enkelt exportera personliga sida och ber andra användare till navigerar till personliga sida och importera anpassningen fil som du har skapat. Om en användare har administratörsbehörighet, de kan även hantera anpassningsalternativ för andra användare i fönstret **Anpassning inställningssida** . Navigera till b-sidan. I fönstret **Anpassning** sida, du hittar två flikar, en märkt **System** och en märkt**användare**. 
 
 **System:** Det är där du kan inaktivera tillfälligt eller "stänga av" alla anpassningsalternativ i systemet. Detta tar inte bort anpassningsalternativ, instead den återställer alla blanketter till sina standardvärden. Senare kan du återaktivera anpassning så att alla anpassningsalternativ återappliceras för varje användarformulär. Du kan även ta bort alla anpassningsalternativ för alla användare. Observera att när du tar bort anpassningsalternativ, det finns inget sätt att automatiskt återaktivera anpassningsalternativ från systemet. Se till att du har exporterat anpassningsalternativ som du kanske vill senare importera innan detta steg. 
 

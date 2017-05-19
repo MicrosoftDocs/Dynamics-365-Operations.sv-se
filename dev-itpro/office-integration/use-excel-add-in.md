@@ -16,15 +16,19 @@ ms.search.region: Global
 ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: af7e7288f741b3c519227e2778c4c4311c3a2012
-ms.openlocfilehash: 8af663b47117759ed3b2e2ed8eee85ae4df100d1
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: f80d5d49cae3107390a605e9605d8af65bf2342d
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="use-the-excel-add-in"></a>Använd Excel-tillägget
+
+[!include[banner](../includes/banner.md)]
+
 
 Det här avsnittet beskriver hur du öppnar enhetsdata i Microsoft Excel och sedan visar, uppdaterar och redigerar data med Microsoft Dynamics Office-tillägget för Excel. För att öppna enhetsdata startar du med Excel- eller Microsoft Dynamics 365 for Operations.
 
@@ -44,13 +48,14 @@ Excel-tillägget läser automatiskt data för enheten som du har valt. Lägg mä
 2.  I Office Store.söker du efter nyckelordet "Dynamics" och klickar på **Lägg till** bredvid **Microsoft Dynamics Office-tillägget** (Excel-tillägget).
 3.  Om du använder Excel-tillägg för första gången klickar du på **Lita på det här tillägget** för att tillåta att Excel-tillägget körs. Excel-tillägget körs i ett fönster till höger i Excel-fönstret.
 4.  Klicka på **lägga till information om server** för att öppna fönstret **alternativ**.
-5.  Kopiera webbadressen från Dynamics 365 for Operations-instansen, klistra in det i fältet **Server-URL** och ta bort allt efter värdnamnet (ta t.ex. bort **/?cmp=usmf&mi=CustTableListPage**). Den resulterande URL:en ska ha bara värdnamnet (t.ex. **https://xxx.dynamics.com**).
+5.  Kopiera webbadressen från Dynamics 365 for Operations-instansen, klistra in det i fältet **Server-URL** och ta bort allt efter värdnamnet. Den resulterande URL:en ska ha bara värdnamnet.
+Exempelvis är URL:en https://xxx.dynamics.com/?cmp=usmf&amp;mi=CustTableListPage, delete everything except **https://xxx.dynamics.com**.
 6.  Klicka på **OK**, och sedan på **Ja** för att bekräfta ändringarna. Excel-tillägget startar om och hämtar metadata. Knappen **Design** är nu tillgänglig. Om Excel-tillägget har knappen **Läs in appletar** är du troligen inte korrekt inloggad som användare. Mer information finns i "Knappen läs in appletar visas" i avsnittet "Felsökning" i det här avsnittet.
 7.  Klicka på **Design**. Excel-tillägget hämtar enhetsmetadata.
 8.  Klicka på **Lägg till register**. En lista över enheter visas. Enheterna anges i formatet "Namn – etikett".
 9.  Välj en enhet i listan, till exempel **kund - kunder**, och klicka sedan på **nästa**.
 10. Lägg till ett fält från listan **tillgängliga fält** till listan **markerade fält**, klicka på fältet och sedan på **Lägg till**. Du kan också dubbelklicka på fältet.
-11. När du har lagt till önskade fält till listan **markerade fält**, kontrollera att markören är på rätt plats i kalkylbladet (till exempel cell A1) och klicka sedan på **Klar**. Klicka på **Klart** för att stänga designverktyget.
+11. När du är klar med att lägga till fält till listan **markerade fält**, kontrollera att markören är på rätt plats i kalkylbladet (till exempel cell A1) och klicka sedan på **Klar**. Klicka på **Klart** för att stänga designverktyget.
 12. Klicka på **uppdatera** för att dra in en uppsättning data.
 
 ## <a name="view-and-update-entity-data-in-excel"></a>Visa och uppdatera enhetsdata i Excel
@@ -59,14 +64,17 @@ När Excel-tillägget har läst in enhetsdata i arbetsboken, kan du uppdatera in
 ## <a name="edit-entity-data-in-excel"></a>Redigera enhetsdata i Excel
 Du kan ändra enhetsdata som du vill och sedan publicera den igen genom att klicka på **publicera** i Excel-tillägget. Markera en cell i kalkylbladet om du vill redigera en post och ändra värdet i cellen. Om du vill lägga till en ny post, gör du något av följande:
 
--   Klicka var som helst i kalkylbladet och klicka sedan på **Ny** i Excel-tillägg.
--   Klicka i den sista raden i kalkylbladet och tryck på TAB tills markören flyttas från den sista kolumnen på samma rad och en ny rad skapas.
--   Klicka i raden direkt under kalkylbladet och börja ange data i en cell. När du flyttar fokus från cellen utökas kalkylbladet till att inkludera den nya raden.
+-   Klicka var som helst i registret för datakällor och klicka sedan på **Ny** i Excel-tillägg.
+-   Klicka i den sista raden i registret för datakällor och tryck på TAB tills markören flyttas från den sista kolumnen på samma rad och en ny rad skapas.
+-   Klicka i raden direkt under registret för datakällor och börja ange data i en cell. När du flyttar fokus från cellen utökas registret till att inkludera den nya raden.
+-   Klicka på någon av rubrikposternas fältbindningar, klicka på ett av fälten och klicka sedan på **Ny** i Excel-tillägget.
 
+Observera att en ny post endast skapas om alla huvud- och obligatoriska fält är bundna i kalkylbladet eller om standardvärden fylldes i med filtervillkoret.
 Om du vill ta bort en ny post, gör du något av följande:
 
 -   Högerklicka på radnummer bredvid kalkylbladsraden om du vill ta bort och klicka sedan på **Ta bort**.
 -   Högerklicka på radnummer bredvid kalkylbladsraden om du vill ta bort och klicka sedan på **Ta bort** &gt; **registerrader**.
+Om datakällor har lagts till som relaterade publiceras inte rubriken före raderna. Om det finns beroenden mellan andra datakällor kan du behöva ändra standardpubliceringsordningen. Om du vill publicera klickar du på knappen **alternativ** (växelsymbol) i Excel-tillägget. Klicka sedan på snabbfliken **dataanslutning** och sedan på **konfigurera publiceringsordning**.
 
 ## <a name="add-or-remove-columns"></a>Lägg till eller ta bort kolumner
 Du kan använda designern för att justera att kolumnerna läggs till automatiskt i kalkylbladet.
@@ -79,7 +87,8 @@ Du kan använda designern för att justera att kolumnerna läggs till automatisk
     -   Om du vill ta bort ett fält från listan **Valda fält** klickar du på fältet och sedan på **Ta bort**. Du kan också dubbelklicka på fältet.
     -   Om du vill ändra ordningen på fälten klickar du på fältet i listan **markerade fält** och klickar sedan på **upp** eller **ned**.
 
-5.  Gör ändringarna till datakällan genom att klicka på **uppdatering**. Klicka på **Klart** för att stänga designverktyget. Om du har lagt till ett fält (kolumn) klickar du på **uppdatera** för att ta emot en uppdaterad uppsättning data.
+5. Gör ändringarna till datakällan genom att klicka på **uppdatering**. Klicka på **Klart** för att stänga designverktyget. 
+6. Om du har lagt till ett fält (kolumn) klickar du på **uppdatera** för att ta emot en uppdaterad uppsättning data.
 
 ## <a name="httpspowerappsmicrosoftcomenustutorialsdataplatforminteractiveexceltroubleshootingtroubleshooting"></a>[](https://powerapps.microsoft.com/enus/tutorials/dataplatforminteractiveexcel/#troubleshooting)Felsökning
 Det finns några problem som kan lösas genom några enkla steg.
@@ -87,6 +96,8 @@ Det finns några problem som kan lösas genom några enkla steg.
 -   **Knappen Läs in appletar visas.** Om Excel-tillägget har knappen **Läs in appletar** efter inloggning är du troligen inte korrekt inloggad som användare. Kontrollera att rätt användarnamn visas i det övre högra hörnet av Excel-tillägget för att lösa problemet. Om ett felaktigt användarnamn visas, klickar du på den, loggar ut och loggar sedan in igen.
 -   **Felmeddelandet "Förbjudet" visas.** Om felmeddelandet "Förbjudet" visas medan Excel-tillägget läser in metadata, har det konto som är inloggat i Excel-tillägget inte behörighet att använda den riktade tjänsten, instansen eller databasen. Kontrollera att rätt användarnamn visas i det övre högra hörnet av Excel-tillägget för att lösa problemet. Om ett felaktigt användarnamn visas, klickar du på den, loggar ut och loggar sedan in igen.
 -   **En tom webbsida visas över Excel.** Om en tom webbsida visas när du loggar in på kontot kräver AD FS, men versionen av Excel som kör tillägget är inte tillräckligt nytt för att läsa in dialogrutan för inloggning Uppdatera versionen av Excel som du använder för att lösa problemet. Uppdatera Excel-versionen när du arbetar i ett företag på den uppskjutna kanalen med [Office distributionsverktyg](https://technet.microsoft.com/library/jj219422.aspx) för att [flytta från uppskjuten kanal till den aktuella kanalen](https://technet.microsoft.com/library/mt455210.aspx).
+
+
 
 
 

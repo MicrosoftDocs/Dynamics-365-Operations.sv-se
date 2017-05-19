@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 926ee087a0e0c4743f29315b1d82c7d37e95be28
-ms.openlocfilehash: 22233cfa1df79076c8ea42f75ea309bac990d574
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 7913a0be0eb6e109d0c2ccdebd0ac19d94435df5
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -39,7 +40,7 @@ Vid årsbokslutsprocessen skapas två typer av möjliga transaktioner. En IB-tra
 ## <a name="prepare-to-run-the-year-end-close"></a>Förbered körning av årsbokslut
 Innan du kör årsslutsprocessen verifierar du inställningarna för följande: 
 
-På sidan **Main account**:
+På sidan **Huvudkonto**:
 
 -   Validera att **huvudkontotyp** anges korrekt för varje huvudkonto. Huvudkontotypen används för att avgöra om saldot för huvudkontot flyttas framåt som ett ingående saldo eller avslutas till balanserade vinstmedel i IB-transaktionen.
 -   Fältet **IB-konto** kan användas för att föra över saldot för huvudkontot till ett nytt huvudkonto vid årsbokslutet. Det nya huvudkontot som har angetts i fältet **IB- kontot**. Vanligtvis används detta för balansräkningens huvudkonton när huvudkontot är inaktiverat och ett nytt huvudkonto används för det nya räkenskapsåret.

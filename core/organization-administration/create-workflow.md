@@ -16,10 +16,11 @@ ms.search.region: Global
 ms.author: donaldc
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-translationtype: Human Translation
-ms.sourcegitcommit: f707d45290682e79ee439ba0d504852429defa90
-ms.openlocfilehash: 1255cf90498f1968568dd2fa5a1377d989f40182
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: b4d4f14753f1755c251e1ae12dd9addec31d2fdd
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -36,13 +37,13 @@ Det här avsnittet innehåller information om hur du skapar ett arbetsflöde.
 
 Den Microsoft Dynamics 365 for Operations-modul som du arbetar i bestämmer vilka typer av arbetsflöden som du kan skapa. Gör på följande sätt för att välja vilken typ av arbetsflöden du vill skapa, och öppna arbetsflödesredigeraren.
 
-1.  Öppna den modul som du vill skapa ett nytt arbetsflöde för. Om du till exempel vill skapa ett arbetsflöde för inköpsrekvisitioner, klicka då på **Procurement and sourcing**.
+1.  Öppna den modul som du vill skapa ett nytt arbetsflöde för. Om du till exempel vill skapa ett arbetsflöde för inköpsrekvisitioner, klicka då på **Anskaffning och källa**.
 2.  Klicka på **Inställningar** &gt; **\[Modulnamn\] arbetsflöden**.
-3.  Klicka på **New** i åtgärdsfönstret på den listsida som visas.
-4.  På sidan **Create workflow** väljer du den typ av arbetsflöde som du vill skapa, och klickar sedan på **Create workflow**. Arbetsflödesredigeraren visas. Du kan nu använda följande procedurer när du skapar arbetsflödet.
+3.  Klicka på **Nytt** i åtgärdsfönstret på den listsida som visas.
+4.  På sidan **Skapa arbetsflöde** väljer du den typ av arbetsflöde som du vill skapa, och klickar sedan på **Skapa arbetsflöde**. Arbetsflödesredigeraren visas. Du kan nu använda följande procedurer när du skapar arbetsflödet.
 
 ## <a name="drag-workflow-elements-onto-the-canvas"></a>Dra arbetsflödeselementen till arbetsytan
-Området **Workflow elements** i arbetsflödesredigeraren innehåller de element som du kan lägga till i ditt arbetsflöde. Dra element till arbetsflödet om du vill lägga till dem i arbetsflödet.
+Området **Arbetsflödeselement** i arbetsflödesredigeraren innehåller de element som du kan lägga till i ditt arbetsflöde. Dra element till arbetsflödet om du vill lägga till dem i arbetsflödet.
 
 ## <a name="connect-the-elements"></a>Anslut elementen
 Om du vill koppla ett arbetsflödeselement till ett annat håller du pekaren över elementet tills kopplingspekaren visas. Klicka på en kopplingspunkt och dra den till det andra elementet. Kontrollera att du ansluter alla element.
@@ -52,7 +53,7 @@ Använd följande steg när du vill konfigurera egenskaperna för arbetsflödet.
 
 1.  Klicka på arbetsytan för att försäkra dig om att inget arbetsflödeselement är markerat.
 2.  Klicka på **Properties** för att öppna sidan **Properties** för arbetsflödet.
-3.  Följ procedurerna i ämnet [Configure the properties of a workflow](configure-workflow-properties.md).
+3.  Följ procedurerna i ämnet [Konfigurera egenskaper för ett arbetsflöde](configure-workflow-properties.md).
 
 ## <a name="configure-the-elements-of-the-workflow"></a>Konfigurera elementen i arbetsflödet
 Konfigurera varje element som du har dragit till arbetsytan. För information om hur du konfigurerar respektive arbetsflödeselement, se följande ämnen:
@@ -73,11 +74,11 @@ Fönstret **Errors and warning** i nedre delen av arbetsflödesredigeraren visar
 ## <a name="save-and-activate-the-workflow"></a>Spara och aktivera arbetsflödet
 Följ dessa steg när du är redo att spara och aktivera arbetsflödet.
 
-1.  Klicka på **Save and close** för att stänga redigeraren för arbetsflöde och öppna sidan **Save workflow**.
+1.  Klicka på **Spara och stäng** för att stänga redigeraren för arbetsflöde och öppna sidan **Spara arbetsflöde**.
 2.  Ange kommentarer om de ändringar som du har genomfört på arbetsflödet, och klicka sedan på **OK**.
-3.  Om alla fel och varningar har lösts, visas sidan **Activate workflow**. Välj ett av följande alternativ:
-    -   Klicka på **Activate the new version** för att aktivera denna version av arbetsflödet. När ett arbetsflöde är aktivt kan användare skicka dokument till det för bearbetning.
-    -   Klicka på **Do not activate the new version** om du inte vill aktivera denna version. Du kan aktivera arbetsflödet senare.
+3.  Om alla fel och varningar har lösts, visas sidan **Aktivera arbetsflöde**. Välj ett av följande alternativ:
+    -   Klicka på **Aktivera den nya versionen** för att aktivera denna version av arbetsflödet. När ett arbetsflöde är aktivt kan användare skicka dokument till det för bearbetning.
+    -   Klicka på **Aktivera inte den nya versionen** om du inte vill aktivera denna version. Du kan aktivera arbetsflödet senare.
 
 
 

@@ -18,15 +18,19 @@ ms.search.region: Global
 ms.author: yuyus
 ms.dyn365.intro: Feb-16
 ms.dyn365.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 15af90d007d77a490db7cb540ef96b4104dbba7e
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 35c3d59abe8c2cb4d2db9fa1cf581f022dbc8c39
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="product-configuration-models-overview"></a>Översikt över produktkonfigurationsmodeller
+
+[!include[banner](../includes/banner.md)]
+
 
 I den här artikeln definieras termer och begrepp som avser produktkonfigurationsmodeller. Med produktkonfigurationsmodeller kan du bygga en allmän produktstruktur som kan användas för att konfigurera många produktvarianter för en och samma produkt.
 
@@ -75,7 +79,7 @@ Om attributtypen är <strong>Booleskt</strong>, <strong>Heltal</strong> med ett 
 <td>Begränsningar</td>
 <td>Begränsningar beskriver begränsningarna i produktmodellkonfigurationen. Begränsningar används för att garantera att endast giltiga värden väljs när en produkt konfigureras. Det kan antingen vara uttryckbegränsningar eller registret begränsningar:
 <ul>
-<li>Uttryckbegränsningar kan bara användas för komponenten att de är kopplat till. Uttryckbegränsningarna för en komponent kan referera till attribut i komponentens delkomponenter. Produktkonfigurationslösaren används för att lösa begränsningar, och du måste använda lösarens syntax när du skriver begränsningarna. Mer information finns på wiki-länken om uttrycksbegränsningar och registerbegränsningar.</li>
+<li>Uttryckbegränsningar kan bara användas för komponenten att de är kopplat till. Uttryckbegränsningarna för en komponent kan referera till attribut i komponentens delkomponenter. Produktkonfigurationslösaren används för att lösa begränsningar, och du måste använda lösarens syntax när du skriver begränsningarna. Mer information finns på avsnittslänken om uttrycksbegränsningar och registerbegränsningar.</li>
 <li>Registerbegränsningar måste definieras innan de kan användas på en komponent i en produktkonfigurationsmodell. Registerbegränsningar kan vara antingen användardefinierade eller systemdefinierade. En användardefinierad registerbegränsning är en sorts matris som kan användas för att beskriva uppsättningen kombinationer vilka definieras av attributtyper. Om till exempel högtalare tillverkas kan matrisen för en användardefinierad registerbegränsning ha kolumner för högtalarens finish och högtalargallret.</li>
 </ul>
 <strong>Exempel</strong> Högtalarna är tillgängliga i fyra varianter: Svart, Ek, och Rosenträ och Vitt. Högtalarna kan ha ett av tre främre galler: svart, metall eller vitt. Svart finish är tillgänglig för alla galler och andra ytbehandlingar begränsas till vissa galler. Följande tabell visar ett exempel på informationen som visas på fliken <strong>Tillåtna kombinationer</strong> på sidan <strong>Redigera registerbegränsning</strong>.
@@ -147,6 +151,8 @@ Du kan visa om en frisläppt produkt kan användas som en komponent eller delkom
 </tr>
 </tbody>
 </table>
+
+
 
 
 

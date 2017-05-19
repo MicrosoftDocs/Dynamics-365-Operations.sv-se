@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: af7e7288f741b3c519227e2778c4c4311c3a2012
-ms.openlocfilehash: 88cdf531b6da615034f9982d3503b9add0100479
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 447ba56a279a29392b00119730c3594fa4ea80f6
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -42,7 +43,7 @@ Utgiftshantering är väl integrerad med ekonomisk hanteringen i din organisatio
 
 ### <a name="per-diems"></a>Dagtraktamenten
 
-Du måste definiera medarbetarens dagtraktamente som din organisation ger. Eftersom dagtraktamente vanligtvis används för utgifter som till exempel logi, måltider och andra tillfälliga utgifter, kan du skapa regler för dagtraktamenteavdragen som din organisation ger. Traktamentstariffer kan anges utifrån tid på året, resmål eller båda. När du skapar en traktamentsregel kan du ange att hålla inne en procentandel av traktamentstariffen om medarbetaren bjuds på måltider eller tjänster. Du kan också definiera traktamentsreglernas skikt för att ange lägsta och högsta antal timmar som dagtraktamentetariffen kan tillämpas på en arbetares resor. **Beslut: **
+Du måste definiera medarbetarens dagtraktamente som din organisation ger. Eftersom dagtraktamente vanligtvis används för utgifter som till exempel logi, måltider och andra tillfälliga utgifter, kan du skapa regler för dagtraktamenteavdragen som din organisation ger. Traktamentstariffer kan anges utifrån tid på året, resmål eller båda. När du skapar en traktamentsregel kan du ange att hålla inne en procentandel av traktamentstariffen om medarbetaren bjuds på måltider eller tjänster. Du kan också definiera traktamentsreglernas skikt för att ange lägsta och högsta antal timmar som dagtraktamentetariffen kan tillämpas på en arbetares resor. **Beslut:**
 
 -   Standardregler för traktamente för de första och sista dagarna:
     -   Vad är minsta antal timmar som en medarbetare kan fordra för en dag och får fortfarande en dagtraktamente?
@@ -127,7 +128,7 @@ För utgiftsrelaterade skatter måste du bestämma vad som inkluderas eller akti
 Observera att om du under din planering av redovisningen bestämmer dig för att tillämpa moms för USA och använda skatteregler, vilket görs genom att växla fältet **Använd momsbeskattningsregler** till Ja, kan du inte aktivera momsåterbetalning på utgifter.
 
 ## <a name="policies"></a>Policyer
-Du kan skapa utgiftsrapportpolicyer så att din organisation kan spara tid och pengar när medarbetarna gör utlägg å dess vägnar. Policyer garanterar att medarbetare håller budgeten, ger all information som krävs och spenderar pengar endast efter behov. Du måste ta följande beslut för varje utgiftsrapportpolicy och policy för utgiftsrapportgodkännande som du skapar. **Beslut: **
+Du kan skapa utgiftsrapportpolicyer så att din organisation kan spara tid och pengar när medarbetarna gör utlägg å dess vägnar. Policyer garanterar att medarbetare håller budgeten, ger all information som krävs och spenderar pengar endast efter behov. Du måste ta följande beslut för varje utgiftsrapportpolicy och policy för utgiftsrapportgodkännande som du skapar. **Beslut:**
 
 -   Vilket är namnet på policyn?
 -   Vad gäller utgiftspolicyn för?

@@ -18,10 +18,11 @@ ms.search.industry: Manufacturing
 ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: f707d45290682e79ee439ba0d504852429defa90
-ms.openlocfilehash: 58afcd62e7ef317e624fd26d198c2606bf53e6a5
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: deda2b7986333e0d865aa87e6b34b6acdc8f6a6d
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -42,7 +43,7 @@ Produktvarianter genereras för produktmallar enligt en av tre konfigurationstek
 -   Begränsningsbaserad
 -   Dimensionsbaserad
 
-Varje produktvariant har ett nummer, och med identifieringsnomenklaturen för produktvariant kan du välja de segment som ska inkluderas i respektive produktvariantnummer. Du kan välja följande segment på sidan **Product nomenclature**.
+Varje produktvariant har ett nummer, och med identifieringsnomenklaturen för produktvariant kan du välja de segment som ska inkluderas i respektive produktvariantnummer. Du kan välja följande segment på sidan **Produktnomenklatur**.
 
 -   Produktmallsnummer
 -   Nummersekvensvärde
@@ -70,7 +71,7 @@ En T-tröja (TS1234) produceras i tre olika storlekar (S, M, L), i fyra olika f�
 Produktvariantnumret för en röd polotröja i storlek S blir då: TS1234-Red-Small-Polo.
 
 ## <a name="nomenclature-of-constraintbased-configurations"></a>Nomenklatur för begränsningsbaserade konfigurationer
-För begränsningsbaserade konfigurationer kan en särskild terminologi byggas för konfigurationsproduktdimensionen. Du kan välja följande segment på sidan **Product nomenclature**.
+För begränsningsbaserade konfigurationer kan en särskild terminologi byggas för konfigurationsproduktdimensionen. Du kan välja följande segment på sidan **Produktnomenklatur**.
 
 -   Nummersekvensvärde
 -   Textkonstant
@@ -94,7 +95,7 @@ En konfigurationsnomenklatur definieras med hjälp av följande segment:
 Konfigurations-ID för trämaterial med längden 78 får följande konfigurations-ID: WoodAAA78.
 
 ## <a name="nomenclature-of-dimensionbased-configurations"></a>Nomenklatur för dimensionsbaserade konfigurationer
-För dimensionsbaserade konfigurationer kan en särskild terminologi byggas för konfigurationsproduktdimensionen. Du kan välja följande segment på sidan **Product nomenclature**.
+För dimensionsbaserade konfigurationer kan en särskild terminologi byggas för konfigurationsproduktdimensionen. Du kan välja följande segment på sidan **Produktnomenklatur**.
 
 -   Nummersekvensvärde
 -   Textkonstant
@@ -183,7 +184,7 @@ Ett fel uppstår om du manuellt eller automatiskt försöker generera produktvar
 
 ### <a name="constraint-based-configurations"></a>Begränsningsbaserade konfigurationer
 
-Beroende på nomenklaturen kan systemet komma att försöka tilldela ett icke-unikt produktvariantnummer till en konfiguration. I så fall kommer systemet att använda nummerserien för konfigurationsdimensionen som produktvariantnummer istället. Om detta händer får du ett varningsmeddelande. För att undvika detta bör du inkludera tillräckligt med attribut i nomenklaturen för att säkerställa unika nummer, samt se till att alternativet **Reuse** aktiveras för komponenten.
+Beroende på nomenklaturen kan systemet komma att försöka tilldela ett icke-unikt produktvariantnummer till en konfiguration. I så fall kommer systemet att använda nummerserien för konfigurationsdimensionen som produktvariantnummer istället. Om detta händer får du ett varningsmeddelande. För att undvika detta bör du inkludera tillräckligt med attribut i nomenklaturen för att säkerställa unika nummer, samt se till att alternativet **Återanvänd** aktiveras för komponenten.
 
 ### <a name="dimension-based-configurations"></a>Dimensionsbaserade konfigurationer
 

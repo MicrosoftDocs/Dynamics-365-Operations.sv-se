@@ -3,7 +3,7 @@ title: Funktionen strukturlistedesigner
 description: "Det här avsnittet ger en beskrivning av hur du kan använda sidan för strukturlistan för att designa och arbeta med trädstrukturer för strukturlistor (BOMs). Du kan klicka på Inställningar för att välja olika konfigureringar och ange vilken information som ska visas på raderna i trädstrukturen."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2015-12-08 21 - 09 - 22
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -19,15 +19,19 @@ ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 9ccbe5815ebb54e00265e130be9c82491aebabce
-ms.openlocfilehash: 2c98039c9fa8179408394f9f66b9fca0f8cad3fe
-ms.lasthandoff: 03/29/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: ff482c183276a99a3c9a632d41d9121bf77befbf
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="bom-designer-functionality"></a>Funktionen strukturlistedesigner
+
+[!include[banner](../includes/banner.md)]
+
 
 Det här avsnittet ger en beskrivning av hur du kan använda sidan för strukturlistan för att designa och arbeta med trädstrukturer för strukturlistor (BOMs). Du kan klicka på Inställningar för att välja olika konfigureringar och ange vilken information som ska visas på raderna i trädstrukturen.
 
@@ -95,7 +99,7 @@ Filtret som används för strukturlistan och flödet, visas i strukturlistedesig
 När du använder strukturlistedesignern för att granska eller redigera strukturlistor som består av en eller flera nivåer av fiktiva element, omfattar flödet som är kopplat till den översta artikeln, vanligtvis den färdiga strukturlistans hierarki. För att förenkla översikten kan du låsa flödet på högsta nivån på skärmen genom att klicka på **Visa** &gt; **Lås flöde**. Om du vill låsa upp flödet, klicka på **Visa** &gt; **Lås upp flöde**.
 
 ## <a name="adding-and-editing-boms-and-bom-lines"></a>Lägga till och redigera strukturlistor och strukturlisterader
-Använd funktionerna **Strukturlisterader **eller **Strukturlista** för att ändra strukturlisteraderna eller strukturlistan. När du väljer en nod i trädet, bestämmer typen av nod vilka funktioner som är tillgängliga.
+Använd funktionerna **Strukturlisterader**eller **Strukturlista** för att ändra strukturlisteraderna eller strukturlistan. När du väljer en nod i trädet, bestämmer typen av nod vilka funktioner som är tillgängliga.
 
 | Funktion                            | beskrivning                                                                                               | Nodtyp och -villkor                                                                                                                                                                                                                                                                       |
 |-------------------------------------|-----------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -115,6 +119,8 @@ Klicka på **Inställningar** om du vill anpassa informationen som visas i träd
 |-------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Strukturlista         | Använd kryssrutorna för att välja de kriterier som visas i trädstrukturen. I designverktyget visas det valda villkoret längst ned på båda flikarna. |
 | Rutt       | Använd kryssrutorna för att välja de kriterier som visas för flödena.                                                                                    |
+
+
 
 
 

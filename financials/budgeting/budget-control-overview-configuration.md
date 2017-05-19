@@ -16,10 +16,11 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 8e89a57dda8f2d392483ed13c686ea97b74926b0
-ms.openlocfilehash: 04e0c066511c1fedf33784944441326201fc2df8
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 4caef8eb4d11ad5d2ba1ce0e23d869c0b26b5466
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -99,7 +100,7 @@ På fliken **Tilldela budgetmodeller** tilldelar du budgetmodeller till tidsrymd
 På fliken **Definiera budgetkontrollregler** måste du skapa särskilda regler som baseras på de ekonomiska dimensioner som är aktiverade för budgetkontroll. Om det till exempel finns ett fokus baserat på en avdelnings omkostnad eller omkostnadsintervall kan du använda inställningarna för den här fliken för att definiera och utvärdera de omkostnaderna. Du kan definiera olika trösklar för varje budgetkontrollregel. 
 
 > [!Important]
-> Budgetkontroll kommer att aktiveras för alla huvudkonton av typen **Vinst och förlust**, **Utgift**, **Intäkt, Balansräkning, Skulder, Eget kapital** eller **Tillgång**. Om denna flik innehåller en regel som har tomma kriterier kommer budgetkontroll att aktiveras för **alla **ekonomiska dimensionskombinationer som innehåller huvudkonton av de typerna. Därför är det viktigt att skapa budgetkontrollregler som enbart definierar intervallen för kombinationer av ekonomiska dimensioner som är viktiga att aktivera budgetkontroll för.  
+> Budgetkontroll kommer att aktiveras för alla huvudkonton av typen **Vinst och förlust**, **Utgift**, **Intäkt, Balansräkning, Skulder, Eget kapital** eller **Tillgång**. Om denna flik innehåller en regel som har tomma kriterier kommer budgetkontroll att aktiveras för **alla**ekonomiska dimensionskombinationer som innehåller huvudkonton av de typerna. Därför är det viktigt att skapa budgetkontrollregler som enbart definierar intervallen för kombinationer av ekonomiska dimensioner som är viktiga att aktivera budgetkontroll för.  
 
 ### <a name="select-main-accounts"></a>Välj huvudkonton
 
@@ -124,7 +125,7 @@ Notera dessutom att transaktioner, inklusive budgetregisterposter, som har bokf�
 ## <a name="using-budget-control"></a>Använda budgetkontroll
 När budgetkontroll aktiveras kommer användarna att få varnings- och felmeddelanden för budgetkontroll i dokument och journaler som har konfigurerats för budgetkontroll. Kom ihåg du kan konfigurera budgetkontroll så att användare varnas när de överskrider budgetmedlen, men att de kan tillåtas fortsätta bekräfta eller bokföra transaktionen. Användarna kan visa information om misslyckade budgetkontroller på sidan **Budgetkontrollfel och varningar**.   
 
-Från den här sidan kan användare titta på sidan **Budgetkontrollstatistik efter period** för att se information om tillgänglig budget och reservationer för en vald kombination av budgetkontrolldimensioner. Användarna kan även titta på sidan **Budgetkontrollstatistik **för att se tillgänglig budget för alla kombinationer av ekonomisk dimension som används i budgetkontroll. 
+Från den här sidan kan användare titta på sidan **Budgetkontrollstatistik efter period** för att se information om tillgänglig budget och reservationer för en vald kombination av budgetkontrolldimensioner. Användarna kan även titta på sidan **Budgetkontrollstatistik**för att se tillgänglig budget för alla kombinationer av ekonomisk dimension som används i budgetkontroll. 
 
 Om budgetkontroll aktiveras för inköpsorder kan budgetchefen använda arbetsområdet **Redovisningsbudgetar och prognoser** för att granska kön för alla obekräftade inköpsorder som har varningar och fel för budgetkontroll. Om budgetchefen har behörigheter för överskriden budget kan han eller hon bekräfta inköpsorder direkt i arbetsområdet.    
 

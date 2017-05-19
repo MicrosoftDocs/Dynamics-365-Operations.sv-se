@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-translationtype: Human Translation
-ms.sourcegitcommit: 4d6cf88788dcc5e982e509137aa444a020137a5e
-ms.openlocfilehash: d38d05fe445bf0326d408038dff84ccf8c0ff64c
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: b6b0edfbbcebed323be63d5bc892dba1170b9c67
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -60,7 +61,7 @@ Det finns stöd för olika destinationstyper. Du kan inaktivera eller aktivera a
 
 ### <a name="email-destination"></a>E-postdestination
 
-Ställ in **Aktiverad **till **Ja** för att skicka en utdatafil via e-post. När det här alternativet är aktiverat kan du ange e-postmottagare samt redigera e-postmeddelandets ämne och brödtext. Du kan skapa konstanta texter mailets rubrik och brödtext, eller använda ER-formler för att skapa e-posttexter dynamiskt. Du kan konfigurera e-postadresser för ER på två sätt. Konfigurationen kan slutföras på samma sätt som funktionen för utskriftshantering i Dynamics 365 for Operations slutför den. Du kan också lösa en e-postadress genom att använda en direktreferens till ER-konfigurationen via en formel.
+Ställ in **Aktiverad**till **Ja** för att skicka en utdatafil via e-post. När det här alternativet är aktiverat kan du ange e-postmottagare samt redigera e-postmeddelandets ämne och brödtext. Du kan skapa konstanta texter mailets rubrik och brödtext, eller använda ER-formler för att skapa e-posttexter dynamiskt. Du kan konfigurera e-postadresser för ER på två sätt. Konfigurationen kan slutföras på samma sätt som funktionen för utskriftshantering i Dynamics 365 for Operations slutför den. Du kan också lösa en e-postadress genom att använda en direktreferens till ER-konfigurationen via en formel.
 
 ### <a name="email-address-types"></a>E-postadresstyper
 
@@ -92,7 +93,7 @@ Använd den här typen av e-post om den konfiguration som du använder har en no
 
 ### <a name="archive-destination"></a>Arkivdestination
 
-Du kan använda detta alternativ för att skicka utdata till en Microsoft SharePoint-mapp eller till Microsoft Azure Storage. Ställ in **Aktiverad** till **Ja ** för att skicka utdata till en destination som definierats av den valda dokumenttypen. Endast dokumenttyper där gruppen är inställd på **Fil** kan väljas. Du kan ange dokumenttyper via **Organisationsadministration** &gt; **Dokumenthantering** &gt; **Dokumenttyper**. Konfigurationen för ER-destinationer är samma som konfigurationen för dokumenthanteringssystemet.
+Du kan använda detta alternativ för att skicka utdata till en Microsoft SharePoint-mapp eller till Microsoft Azure Storage. Ställ in **Aktiverad** till **Ja** för att skicka utdata till en destination som definierats av den valda dokumenttypen. Endast dokumenttyper där gruppen är inställd på **Fil** kan väljas. Du kan ange dokumenttyper via **Organisationsadministration** &gt; **Dokumenthantering** &gt; **Dokumenttyper**. Konfigurationen för ER-destinationer är samma som konfigurationen för dokumenthanteringssystemet.
 
 [![Sida för dokumenttyper](./media/ger_documenttypefile-1024x542.jpg)](./media/ger_documenttypefile.jpg) 
 

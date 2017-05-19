@@ -10,7 +10,7 @@ ms.service: Dynamics365Operations
 ms.technology: 
 audience: Application User
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: AX 7.0.0, Operations, Core, Retail
 ms.custom: 16461
 ms.assetid: 2b85491c-f830-4e79-a2cb-681b7ced6988
 ms.search.region: global
@@ -18,15 +18,19 @@ ms.search.industry: Retail
 ms.author: prabhup
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 0c6a7bdc4ba82dd57ab3e395e6dfb0ae4de31fc4
-ms.openlocfilehash: 26c628e10aaa5f47bc87d7510ca8f41ab3630204
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 6b1f91f863c8da35362ebb3036e76aa10d95ba65
+ms.openlocfilehash: a5c45bb0b9ed10c989a3222a751df3f454b14a0b
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/26/2017
 
 
 ---
 
 # <a name="create-and-manage-attributes"></a>Skapa och hantera attribut
+
+[!include[banner](includes/banner.md)]
+
 
 Det här avsnittet ger en beskrivning av attributen i Microsoft Dynamics 365 for Operations. Med attribut kan du beskriva en produkt och dess egenskaper genom eget fält.
 
@@ -34,117 +38,35 @@ Med attribut kan du beskriva en produkt och dess egenskaper genom eget fält. Du
 
 #### <a name="examples"></a>Exempel
 
-Kategori
+| Kategori   | Attribut                | Tillåtna värden          | Standardvärde |
+|------------|--------------------------|-----------------------------|---------------|
+| TV & Video | Märke                    | Några giltiga varumärkesvärden       | Inga          |
+| TV         | Skärmstorlek              | 20″–80″                     | Inga          |
+| TV         | Vertikal lösning      | 480i, 720p, 1080i, eller 1080p | 1080p         |
+| TV         | Skärmuppdateringsfrekvens      | 60hz, 120hz, eller 240hz       | 60hz          |
+| TV         | HDMI-ingångar              | 0–10                        | 3             |
+| TV         | DVI-ingångar               | 0–10                        | 1             |
+| TV         | Kompositingångar         | 0–10                        | 2             |
+| TV         | Komponentingångar         | 0–10                        | 1             |
+| LCD        | 3D Ready                 | Ja eller Nej                   | Ja           |
+| LCD        | 3D aktiverat               | Ja eller Nej                   | Ingen            |
+| Plasma     | Drifttemperatur från      | 32–110 grader              | 32            |
+| Plasma     | Drifttemperatur till        | 32–110 grader              | 100           |
+| Projektion | Projektionrörgaranti | 6, 12, eller 18 månader         | 12            |
+| Projektion | #  av antalet projektionsrör    | 1–5                         | 3             |
 
-Attribut
-
-Tillåtna värden
-
-Standardvärde
-
-TV & Video
-
-Märke
-
-Några giltiga **varumärkesvärden**
-
-Ingen
-
-TV
-
-Skärmstorlek
-
-**20"**–**80"**
-
-Ingen
-
-Vertikal lösning
-
-**480i**, **720p**, **1080i**, eller **1080p**
-
-**1080p**
-
-Skärmuppdateringsfrekvens
-
-**60hz**, **120hz**, eller **240hz**
-
-**60hz**
-
-HDMI-ingångar
-
-**0**–**10**
-
-**3**
-
-DVI-ingångar
-
-**0**–**10**
-
-**1**
-
-Kompositingångar
-
-**0**–**10**
-
-**2**
-
-Komponentingångar
-
-**0**–**10**
-
-**1**
-
-LCD
-
-3D Ready
-
-**Ja** eller **Nej**
-
-**Ja**
-
-3D aktiverat
-
-**Ja** eller **Nej**
-
-**Nej**
-
-Plasma
-
-Drifttemperatur från
-
-**32**–**110** grader
-
-**32**
-
-Drifttemperatur till
-
-**32**–**110** grader
-
-**100**
-
-Projektion
-
-Projektionrörgaranti
-
-**6**, **12**, eller **18** månader
-
-**12**
-
-\# av antalet projektionsrör
-
-**1**–**5**
-
-**3**
 
 ## <a name="attribute-type"></a>Attributtyp
-  [![attributes-fixed-copy](./media/attributes-fixed-copy.png)](./media/attributes-fixed-copy.png) Attributen baseras på attributtyper. Attributtyper identifiera vilken typ av data som kan anges för ett visst attribut. För närvarande stöder Microsoft Dynamics 365 for Operations följande attributtyper:
+  [![attributes-fixed-copy](./media/attributes-fixed-copy.png)](./media/attributes-fixed-copy.png) 
+  
+Attribut baseras på attributtyper. Attributtyper identifiera vilken typ av data som kan anges för ett visst attribut. För närvarande stöder Microsoft Dynamics 365 for Operations följande attributtyper:
 
 -   **Valuta** – Denna attributtyp stöder valutavärden. Detta kan avgränsas (som kan stödja ett värde värde), eller det kan lämnas öppet.
 -   **DatumTid** -– Denna attributtyp stödjer datum- och tidsinställningarna. Detta kan avgränsas (som kan stödja ett värde värde), eller det kan lämnas öppet.
 -   **Decimal** – Denna attributtyp stöder numeriska värden som inkluderar decimaler. Den stöder dessutom måttenheter. Detta kan avgränsas (som kan stödja ett värde värde), eller det kan lämnas öppet.
 -   **Heltal** – Denna attributtyp stöder siffervärden. Den stöder dessutom måttenheter. Detta kan avgränsas (som kan stödja ett värde värde), eller det kan lämnas öppet.
 -   **Text** – Denna attributtyp stöder textvärden. Den stöder dessutom en fördefinierad uppsättning av möjliga värden (uppräkning).
--   **Boolesk** – Denna attributtyp stöder binära värden (**true**/**false**).
+-   **Boolesk** – Denna attributtyp stöder binära värden (**sant**/**falskt**).
 -   **Referens**.
 
 ## <a name="attribute"></a>Attribut
@@ -174,5 +96,7 @@ Projektionrörgaranti
 ### <a name="at-the-retail-channel-level"></a>På butiksnivå
 
   [![createandmanageattribute-1](./media/createandmanageattribute-1.jpg)](./media/createandmanageattribute-1.jpg) Standardvärden för attribut kan åsidosättas för enskilda produkter i särskilda kataloger som är riktade till specifika butikskanaler.
+
+
 
 

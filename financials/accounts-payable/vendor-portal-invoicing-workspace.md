@@ -16,15 +16,19 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: afa59439e06aad9d669eb352a9837a013f447249
-ms.openlocfilehash: 822e621f22f8af63b2a827dcc50a6b0ac68d3e21
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 7aebcdf0578d931d326420b42e2b220407049bc6
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="vendor-collaboration-invoicing-workspace"></a>Faktureringsarbetsyta för leverantörssamarbeten
+
+[!include[banner](../includes/banner.md)]
+
 
 Det här avsnittet beskriver hur du kan visa leverantörsfakturor och skicka fakturor från arbetsytan för leverantörssamarbetesfakturering.
 
@@ -43,7 +47,7 @@ Faktureringsarbetsyta för leverantörssamarbeten
 Om du klickar på en ruta öppnas en filtrerad vy av listsidan**Fakturor**.
 ### <a name="tabular-lists"></a>Tabellistor
 
-I avsnittet **Tabellistor **är status för faktureringen uppdelad på liknande sätt som sammanfattningsrutorna: Utkast och Skickad, ej godkända listor. En faktura kan skickas till arbetsflödet eller tas bort när den befinner sig läget Utkast. Den sista tabellistan är ett alternativ för att hitta fakturor. Du kan filtrera medan du söker för att tillåta snabbare sökningar.
+I avsnittet **Tabellistor**är status för faktureringen uppdelad på liknande sätt som sammanfattningsrutorna: Utkast och Skickad, ej godkända listor. En faktura kan skickas till arbetsflödet eller tas bort när den befinner sig läget Utkast. Den sista tabellistan är ett alternativ för att hitta fakturor. Du kan filtrera medan du söker för att tillåta snabbare sökningar.
 Alla listsidor med leverantörsfakturor
 -----------------------------
 
@@ -55,6 +59,8 @@ Du kan skapa en ny leverantörsfaktura, genom att välja åtgärden **Ny** på *
 
 
 
-Mer information finns i [samarbeta med leverantörer genom att använda leverantörsportalen](/dynamics365/operations/scm/procurement/collaborate-vendors-vendor-portal)
+Mer information finns i [samarbeta med leverantörer genom att använda leverantörsportalen](/dynamics365/operations/supply-chain/procurement/collaborate-vendors-vendor-portal)
+
+
 
 

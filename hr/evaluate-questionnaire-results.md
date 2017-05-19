@@ -18,15 +18,19 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: a76ec0cd86bcc810b42ae3cd8efd8a584e6c4da3
-ms.openlocfilehash: bcf59ea8862280675c9fb711d2aab1e8dff18806
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 0285103ef30ebf8322f2bf60941b07c7496e9c70
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="view-and-evaluate-the-results-of-a-questionnaire"></a>Visa och utvärdera resultaten för en enkät
+
+[!include[banner](includes/banner.md)]
+
 
 Detta hjälpavsnitt förklarar hur visar och utvärderar resultaten för enkäter som svarande slutför. 
 
@@ -56,7 +60,8 @@ På sidan **Svar** kan du visa information om svar, poäng, den svarandes svar i
 -   **Svarsrapport** – Rapporten visar de svaren som svarande valde för varje fråga i enkäten.
 -   **Felaktiga svar** – Den här rapporten visar information om felaktiga svar som den svarade markerade.
 
-**Notering:** Rapporten **Resultat** är endast tillgänglig om du använder resultatgrupper i enkäten och om du har valt **Resultatsida** på sidan **Enkäter**. Rapporten **Svar** och rapporten **Felaktiga svar** är tillgängliga om du markerade **Svarsrapport** på sidan **Enkäter**.
+> **Obs!**
+>   Sidan **Resultat** är endast tillgänglig om du använder resultatgrupper i enkäten och om du har valt **Resultatsida** på sidan **Enkäter**. Rapporten **Svar** och rapporten **Felaktiga svar** är tillgängliga om du markerade **Svarsrapport** på sidan **Enkäter**.
 
 ## <a name="questionnaire-statistics"></a>Enkätstatistik
 Du kan använda enkätstatistik om du vill analysera resultaten i en ifylld enkät baserat på beräkningar som du definierar. Om du vill definiera beräkningar måste du utföra följande uppgifter:
@@ -79,5 +84,7 @@ Inställningar som du definierar sparas så att du kan använda den för att reg
 [Använda enkäter](questionnaires.md)
 
 [Distribuera och slutföra enkäter](distribute-questionnaires.md)
+
+
 
 

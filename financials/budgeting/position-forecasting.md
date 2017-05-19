@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 8e89a57dda8f2d392483ed13c686ea97b74926b0
-ms.openlocfilehash: 1bc458d58834be1e2e9b602619f76424b3bb449b
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 62dcc8a9b17ad044ac63080a94593a5f6ae2f182
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -98,7 +99,7 @@ Det kostnader för elementet förtjänsten, som valts på kompensationsgruppen, 
 
 För den här exaktaste planeringen kan du skapa prognosbefattningar, med hjälp av information från befintliga befattningar i Microsoft Dynamics 365 for Operations, oavsett om befattningen för närvarande är fylld eller ofylld. 
 
-**Lägga till befintliga befattningar** Funktionen visas alla befattningar för en organisation. Genom att** Fr o m** ange datum, kan du ändra listan med befattningar, så att den innehåller befattningarna som hittats vid ett datum i det förflutna, eller mer allmän, i framtiden (till exempel, början på nästa budgettransaktioner cykeln). Välj en budgetrapport planeringsprocess och budgetering planscenariot, valda befattningar i listan och klicka på om **OK** du vill skapa prognosbefattningar för de valda befattningar. Observera att du kan bara skapa en förväntad befattning för varje befintlig position i en budgetrapport och planeringsprocess situationer. Du kan dock skapa ytterligare versioner, genom att tilldela olika budgettransaktioner planscenarion. 
+**Lägga till befintliga befattningar** Funktionen visas alla befattningar för en organisation. Genom att**Fr o m** ange datum, kan du ändra listan med befattningar, så att den innehåller befattningarna som hittats vid ett datum i det förflutna, eller mer allmän, i framtiden (till exempel, början på nästa budgettransaktioner cykeln). Välj en budgetrapport planeringsprocess och budgetering planscenariot, valda befattningar i listan och klicka på om **OK** du vill skapa prognosbefattningar för de valda befattningar. Observera att du kan bara skapa en förväntad befattning för varje befintlig position i en budgetrapport och planeringsprocess situationer. Du kan dock skapa ytterligare versioner, genom att tilldela olika budgettransaktioner planscenarion. 
 
 Om kostnader för budget har tilldelats till befattningen i Personal, tilldelas använder de här kostnadsredovisning element även för prognosbefattningen och standardinställningbeloppen. **Tilldelad arbetare** Fältet på prognosbefattningen anges till namnet på arbetare som hör till befattningen, om en anställd tilldelas. Det här fältet är ett enskilt textfält. Ingen direkt länk skapas. 
 

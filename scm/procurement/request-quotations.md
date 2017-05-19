@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: f707d45290682e79ee439ba0d504852429defa90
-ms.openlocfilehash: d70b4ae0a6b177508021ee72481333cf6f265069
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 20ad50ab5c2dddf4fe07ebb5bb940954c0408f8d
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -48,9 +49,9 @@ Om du måste ändra en anbudsförfrågan efter att du har skickat den, kan du sk
 
 När du tar emot bud, måste du registrera dem på sidan **Svar på anbudsförfrågan**. Om du väljer alternativet **Kopiera data till svar** kommer data som till exempel kvantitet och data från anbudsförfrågansärende kopieras till svaret. Du kan ändra dessa data så att den avspeglar leverantörens bud.  
 
-Om en andra iteration av ett svar krävs för en viss leverantör, klicka på **Retur **på sidan** Svar på anbudsförfrågan**. Returågärden skapar en ny journal och en rapport som ska skrivas ut, arkiveras och skickas enligt dina inställningar för utskriftshantering.  
+Om en andra iteration av ett svar krävs för en viss leverantör, klicka på **Retur**på sidan**Svar på anbudsförfrågan**. Returågärden skapar en ny journal och en rapport som ska skrivas ut, arkiveras och skickas enligt dina inställningar för utskriftshantering.  
 
-Om du har lagt till poängkriterier i ditt anbudsförfrågansärende kommer svaret på anbudsförfrågan ha en poängpanel där du kan ange poängen. De totala poängen visas när du jämför svaren på sidan **Jämför svar **där du också kan jämföra annan svarsinformation som t.ex. radpris, leveransdatum och totalpris.  
+Om du har lagt till poängkriterier i ditt anbudsförfrågansärende kommer svaret på anbudsförfrågan ha en poängpanel där du kan ange poängen. De totala poängen visas när du jämför svaren på sidan **Jämför svar**där du också kan jämföra annan svarsinformation som t.ex. radpris, leveransdatum och totalpris.  
 
 När du har bestämt dig för ett bud eller delbud kan du godkänna dem och avvisa resten. Acceptansjournaler, avvisningsjournaler och motsvarande rapporter genereras. De skrivs ut, arkiveras och skickas enligt inställningarna för utskriftshantering. När du accepterar ett bud eller specifika rader i ett bud, skapas antingen ett inköpsavtal eller en inköpsorder, eller så uppdateras en inköpsrekvisition beroende på inköpstypen för anbudsförfrågan. Du kan skapa ett handelsavtal som du kan använda senare för någon av svaren, oavsett om du accepterade eller avvisade dem.  
 
@@ -107,7 +108,7 @@ Om anbudsförfrågan är av typen **Inköpsavtal**:
 -   Anbudsförfrågan används för att köpa en visst kvantitet eller värde av produkten över tid. Du måste välja det datumintervall som gäller för inköpsavtalet och namnet på personen, som hanterar inköpsavtalet.
 -   När du accepterar ett bud, skapas ett inköpsavtal.
 
-Du kan endast skapa en anbudsförfrågan från en inköpsrekvisition om statusen på inköpsrekvisitionen är **Under granskning **och du har tilldelats att göra nästa arbetsflödesuppgift. Raderna uppdateras automatiskt i inköpsrekvisitionen allt eftersom du accepterar rader i anbudsförfrågansvar (bud) som du får från leverantörer. Du kan inte slutföra, avvisa, godkänna eller utföra några andra åtgärder på inköpsrekvisitionen medan anbudsförfrågningen pågår.  
+Du kan endast skapa en anbudsförfrågan från en inköpsrekvisition om statusen på inköpsrekvisitionen är **Under granskning**och du har tilldelats att göra nästa arbetsflödesuppgift. Raderna uppdateras automatiskt i inköpsrekvisitionen allt eftersom du accepterar rader i anbudsförfrågansvar (bud) som du får från leverantörer. Du kan inte slutföra, avvisa, godkänna eller utföra några andra åtgärder på inköpsrekvisitionen medan anbudsförfrågningen pågår.  
 
 När du skapar en anbudsförfrågan, kan du välja en specifik typ av begäran. Typ av begäran bestämmer uppsättning med poängkriterier som används för att poängsätta svar på anbudsförfrågan.  
 

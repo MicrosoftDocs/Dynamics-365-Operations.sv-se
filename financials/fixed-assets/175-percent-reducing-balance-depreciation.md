@@ -3,7 +3,7 @@ title: 175 procent degressiv avskrivning
 description: "Det här avsnittet ger en översikt över 175-procentsmetoden för degressiv avskrivning."
 author: twheeloc
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -17,15 +17,19 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 8e89a57dda8f2d392483ed13c686ea97b74926b0
-ms.openlocfilehash: 812fbb3cc3159783e9908e537c366ffc7f934092
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: cf428d61f89ea70a83e440c656fbc84d7dbded8d
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="175-percent-reducing-balance-depreciation"></a>175 procent degressiv avskrivning
+
+[!include[banner](../includes/banner.md)]
+
 
 Det här avsnittet ger en översikt över 175-procentsmetoden för degressiv avskrivning.
 
@@ -54,7 +58,7 @@ Om du väljer **Kalender** som avskrivningsår finns följande alternativ i fäl
 
 ### <a name="fiscal"></a>Skatt
 
-Om du väljer **Fiscal** i fältet **Depreciation year**, beräknas 175 % degressiv avskrivning baserat på räkenskapsåret för räkenskapskalendern som angetts för boken, eller för den räkenskapskalender som har valts på sidan **Ledger**. Räkenskapskalendrar ställs in på sidan **Räkenskapskalendrar**. Mer information finns i [Räkenskapskalendrar, räkenskapsår och perioder.](\financials\budgeting\fiscal-calendars-fiscal-years-periods.md)
+Om du väljer **Räkenskapsår** i fältet **Avskrivningsår**, beräknas 175 % degressiv avskrivning baserat på räkenskapsåret för räkenskapskalendern som angetts för boken, eller för den räkenskapskalender som har valts på sidan **Huvudbok**. Räkenskapskalendrar ställs in på sidan **Räkenskapskalendrar**. Mer information finns i [Räkenskapskalendrar, räkenskapsår och perioder.](..\budgeting\fiscal-calendars-fiscal-years-periods.md)
 
 För räkenskapsåret 1 juli - 30 juni startar alltså avskrivningsberäkningen den 1 juli. Räkenskapsåret kan vara längre eller kortare än 12 månader. Avskrivningen justeras automatiskt för varje period och längden på nästa räkenskapsår bestäms av perioderna som ställs in på sidan **Räkenskapskalendrar**. 
 
@@ -82,5 +86,7 @@ Den degressiva avskrivningsmetoden på 175 % delar 175 procent med tjänstelivst
 
 > [!NOTE] 
 > Om beloppet som beräknas med den degressiva avskrivningsmetoden 175 % blir lägre än beloppet som beräknas med den linjära metoden, sker vanligtvis en konvertering till den linjära metoden för resterande tjänstelivstid.
+
+
 
 

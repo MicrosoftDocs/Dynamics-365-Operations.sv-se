@@ -17,10 +17,11 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: 3b16ef53f9fb57a6663db0be1f7e0a57471db2fb
-ms.openlocfilehash: 7025072cd29aac4ceb13b5594c3e321350777cf1
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 11fa0f0afa7ab400c87d6e7558292385ae80c8b2
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -51,7 +52,7 @@ Om du till exempel erbjuder 2 procent kassarabatt om fakturan betalas inom 10 da
 ## <a name="credit-notes-with-discounts"></a>Kreditfakturor med rabatter
 Om kunder returnerar vissa av artiklarna i en faktura kanske du utfärdar en kreditfaktura. Om en kassarabatt utfördes på den ursprungliga fakturan, ska kreditnotan till kunden vara netto av kassarabatten som utnyttjades av kunden. Om alternativet **Beräkna kassarabatter för kreditfakturor** anges på sidan **Ja** på sidan **Parametrar för kundreskontra** beräknas rabatten automatiskt för kreditfakturan. 
 
-Om du till exempel erbjuder betalningsvillor som anger 2 procent kassarabatt om fakturan betalas inom 10 dagar, efter att den har utfärdats. En faktura på 100,00 har bokförts, och kunden har utnyttjat kassarabatten. Om kunden returnerar varor, och du utfärdar en kreditfaktura, kan du registrera kreditfakturan för -100,00. När du visar kreditfakturan på sidan **Kvitta öppna transaktioner**, visas ** 98,00** i fältet **Belopp att kvitta** och **-2,00** visas i fältet **Kassarabattbelopp**. Rabattbeloppet bokförs på ett kassarabattkonto.
+Om du till exempel erbjuder betalningsvillor som anger 2 procent kassarabatt om fakturan betalas inom 10 dagar, efter att den har utfärdats. En faktura på 100,00 har bokförts, och kunden har utnyttjat kassarabatten. Om kunden returnerar varor, och du utfärdar en kreditfaktura, kan du registrera kreditfakturan för -100,00. När du visar kreditfakturan på sidan **Kvitta öppna transaktioner**, visas **98,00** i fältet **Belopp att kvitta** och **-2,00** visas i fältet **Kassarabattbelopp**. Rabattbeloppet bokförs på ett kassarabattkonto.
 
 ## <a name="overpaymentunderpayment-amounts"></a>Över- och underbetalningsbelopp
 När kunder gör en betalning kan det finnas ett mycket litet belopp som fortfarande måste kvittas. Till exempel fakturerar du kunden 1 000,00 och kunden betalar 999,90. Om det resterande beloppet är mindre än det belopp som angetts för över- eller underbetalningar på sidan **Parametrar för kundreskontra** bokförs skillnaden automatiskt till ett överbetalning-/underbetalningredovisningskonto.

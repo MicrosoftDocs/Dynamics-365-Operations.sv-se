@@ -3,7 +3,7 @@ title: "Här börjar du"
 description: "Börja här för att integrera snabbt och lära dig användargränssnittet för Microsoft Dynamics 365 for Operations UI."
 eauthor: sericks007
 manager: AnnBe
-ms.date: 2015-12-11 15 - 19 - 40
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -18,15 +18,19 @@ o# ms.search.industry:
 ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: f707d45290682e79ee439ba0d504852429defa90
-ms.openlocfilehash: 8f75131c6be6ce0f23cce456405d5e211912f19a
-ms.lasthandoff: 03/30/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 69995d2f8a463e82e7a26b673737889b4ea17402
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="where-to-start"></a>Här börjar du
+
+[!include[banner](../includes/banner.md)]
+
 
 Börja här för att integrera snabbt och lära dig användargränssnittet för Microsoft Dynamics 365 for Operations UI.
 
@@ -36,7 +40,7 @@ Följande resurser innehåller en översikt över hur du arbetar med din partner
 - [Microsoft FastTrack for Dynamics 365-översikt](/dynamics365/operations/get-started/fasttrack-dynamics-365-overview) 
 - [Registrera ett abonnemang](../dev-tools/sign-up-preview-subscription.md) 
 - [Lifecycle Services (LCS) för Microsoft Dynamics 365 for Operations-kunder](../lifecycle-services/lcs-works-lcs.md) 
-- [Hur kunder som har köpt Microsoft Dynamics 365 for Operations via en molntjänstleverantör kan få den lokala versionen av Dynamics 365 for Operations 2012](../deployment/csp-download-customersource.md)
+- [Hur kunder som har köpt Microsoft Dynamics 365 for Operations via en molntjänstleverantör kan få den lokala versionen av of Dynamics AX 2012](../deployment/csp-download-customersource.md)
 
 ## <a name="user-interface"></a>Användargränssnitt
 Följande resurser ger information om den användarupplevelsen av Dynamics 365 for Operations. 
@@ -71,12 +75,12 @@ Uppgiftsinspelaren är ett verktyg i Dynamics for Operations som du använder f�
 <a name="see-also"></a>Se även
 --------
 
-[Skapa nya utbildningsbibliotek för Dynamics 365 for Operations inom Lifestyle Services med hjälp av uppgiftsinspelaren (extern länk)](https://docs.com/mufife/163372c6-f366-4c5a-94fa-93e2c25f878a/creating-new-training-libraries-for-dynamics-ax)
-
 [Nya uppgiftguider tillgängliga (februari 2016)](new-task-guides-available-february-2016.md)
 
 [Nya eller uppdaterade uppgiftsguider (maj 2016)](new-updated-task-guides-available-may-2016.md)
 
 [Nya eller uppdaterade uppgiftsguider (november 2016)](new-task-guides-november-2016.md)
+
+
 
 

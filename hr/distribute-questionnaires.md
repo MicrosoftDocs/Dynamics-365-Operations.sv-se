@@ -18,15 +18,19 @@ ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-translationtype: Human Translation
-ms.sourcegitcommit: a76ec0cd86bcc810b42ae3cd8efd8a584e6c4da3
-ms.openlocfilehash: 8e09c6b042d557e3b2d608fb5e278169fc3c1d88
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: 4a5e6164f8aea2d4a6a063966c10f33a5e1f0cdd
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="distribute-and-complete-a-questionnaire"></a>Distribuera och slutföra en enkät
+
+[!include[banner](includes/banner.md)]
+
 
 Den här artikeln beskriver hur du fördelar de enkäter som du utformar så att de blir tillgängliga för den person eller grupp som ska fylla i dem. 
 
@@ -45,7 +49,7 @@ Du kan ställa in enkätgrupper och sedan inkludera de svarande som ett frågefo
 
 Du kan skapa enkätgrupper på följande sidor:
 
--   **Enkätgrupper **– Endast personer i en enkätgrupp kan avsluta en vald enkät. Till exempel om din målgrupp är leverantörer, då skapar du en enkätgrupp som är specifik för dessa svarande.
+-   **Enkätgrupper**– Endast personer i en enkätgrupp kan avsluta en vald enkät. Till exempel om din målgrupp är leverantörer, då skapar du en enkätgrupp som är specifik för dessa svarande.
 -   **Enkätgruppsmedlemmar** – Du kan lägga till kontakter till enkätgrupperna.
 
 På sidan **Enkäter** klickar du på **Användarrättigheter** för att tilldela en enkätgrupp till en enkät. Medlemmarna i enkätgruppen kan fylla i enkäten när enkäten har sparats som aktiv. Denna funktion är användbar om du vill testa en enkät i en utvald grupp användare innan du skickar ut den till en större grupp, eller om du vill rikta enkäten till en mycket specifik målgrupp.
@@ -53,7 +57,8 @@ På sidan **Enkäter** klickar du på **Användarrättigheter** för att tilldel
 ## <a name="planned-answer-sessions-in-a-questionnaire"></a>Planerade svarsomgångar i en enkät
 Planerade svarsomgångar är enkäter som du har utformat för och valt svarande till. 
 
-**Anm.:** Innan du kan ställa in planerade svarsomgångar måste du utforma en enkät. 
+> **Anm.:**
+>   Innan du kan ställa in planerade svarsomgångar måste du utforma en enkät. 
 
 På sidan **Planerad svarsomgång** kan du skapa en planerad svarsomgång för en enskild medarbetare. Listan på sidan visar alla planerade enkäter. 
 
@@ -99,7 +104,8 @@ Klicka på **Funktioner** &gt; **Start** för att göra enkäten tillgänglig f�
 ## <a name="notifying-respondents-about-questionnaires-that-are-available-to-them"></a>Meddela svarande om enkäter som är tillgängliga för dem
 När du distribuerar en enkät måste du meddela svarande att enkäter finns tillgängliga för dem. 
 
-**Obs!** De svarande måste vara användare i Microsoft Dynamics 365 for Operations för att fylla i en enkät.
+> **Anm.:**
+>   De svarande måste vara användare i Microsoft Dynamics 365 for Operations för att fylla i en enkät.
 
 ### <a name="notifying-respondents-about-a-planned-answer-session"></a>Meddela svarande om en planerad svarsomgång
 
@@ -109,12 +115,14 @@ Om du använder en planerad svarsomgång måste du meddela personen direkt, till
 
 Använd sidan **Tidsplaner för enkäter** för att förbereda och skicka ett e-postmeddelande till alla svarande som är kopplade till enkäten. Skriv in e-postmeddelandets text på fliken **E-post för medarbetarsjälvbetjäning**. När du har startat schemat klickar du på **Funktioner** &gt; **Skicka e-post** för att generera och skicka e-postmeddelandet till de svarande. De svarande kan sedan logga in på webbplatsen och fylla i enkäten. 
 
-**Anm.:** Innan du kan använda e-postfunktionen måste din IT-administratör ange e-postinställningarna på sidan **E-postparametrar**.
+> **Anm.:**
+>   Innan du kan använda e-postfunktionen måste din IT-administratör ange e-postinställningarna på sidan **E-postparametrar**.
 
 ## <a name="ending-a-scheduled-questionnaire"></a>Avsluta en tidsplanerad enkät
 Du kan avsluta en tidsplanerad enkät när alla svaranden har avslutat sina tilldelade svarsomgångar. När planerad enkät slutförs kan du inte kopiera inställningarna till en ny tidsplan. 
 
-**Anm.:** Om en eller flera svarande inte har fyllt i enkäten och du fortfarande vill avsluta tidsplanen måste du först radera dessa svarande från listan på sidan **Planerad svarsomgång**. Sedan kan du avsluta tidsplanen.
+> **Anm.:**
+>   Om en eller flera svarande inte har fyllt i enkäten och du fortfarande vill avsluta tidsplanen måste du först radera dessa svarande från listan på sidan **Planerad svarsomgång**. Sedan kan du avsluta tidsplanen.
 
 ## <a name="completing-questionnaires"></a>Fylla i enkäter
 När du har utformat och har fördelat en enkät kan den besvaras av valda svarande. Du kan fylla i de tillgängliga frågeformulären från två platser:
@@ -132,5 +140,7 @@ Enkäter kan göras tillgängliga för vissa användare eller grupper av använd
 [Använda enkäter](questionnaires.md)
 
 [Visa och utvärdera resultaten av en enkät](evaluate-questionnaire-results.md)
+
+
 
 

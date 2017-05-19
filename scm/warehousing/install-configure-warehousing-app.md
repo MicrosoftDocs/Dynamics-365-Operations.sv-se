@@ -3,7 +3,7 @@ title: 'Installera och konfigurera Microsoft Dynamics 365 for Operations & #8211
 description: "Det här avsnittet beskriver hur du installerar och konfigurerar Microsoft Dynamics 365 for Operations - Lagerstyrning."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 2017-04-04
+ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
 ms.service: Dynamics365Operations
@@ -18,15 +18,19 @@ ms.search.industry: Manufacturing
 ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-translationtype: Human Translation
-ms.sourcegitcommit: f77012e7b64b7f153103e9bbe91e8ded202b509a
-ms.openlocfilehash: 231c087ddc976aa552fc9cd6c89188f82a0247d1
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
+ms.openlocfilehash: bbf6df8d43889e7a62bfe28921997c45c8b4c632
+ms.contentlocale: sv-se
+ms.lasthandoff: 04/25/2017
 
 
 ---
 
 # <a name="install-and-configure-microsoft-dynamics-365-for-operations-8211-warehousing"></a>Installera och konfigurera Microsoft Dynamics 365 for Operations & #8211; Lagerstyrning
+
+[!include[banner](../includes/banner.md)]
+
 
 Det här avsnittet beskriver hur du installerar och konfigurerar Microsoft Dynamics 365 for Operations - Lagerstyrning.
 
@@ -57,9 +61,9 @@ Om du vill att programmet ska samverka med en viss Dynamics 365 for Operations-s
 7.  Ange ett namn för programmet och markera **Webbprogram och/eller webb-API**. [![wh-03-active-directory-lägg-till-program](./media/wh-03-active-directory-add-application.png)](./media/wh-03-active-directory-add-application.png)
 8.  Ange webbadressen (URL) för inloggning, som är programmets URL i din innehavare, URL för rotåtgärder. Webbadressen (URL) för inloggning används för tillfället inte aktivt för att verifiera programmet, men är ändå ett obligatoriskt fält. Ange samma URL i programmets ID URI-fält. [![wh-04-ad-lägg-till-egenskaper](./media/wh-04-ad-add-properties.png)](./media/wh-04-ad-add-properties.png)
 9.  Navigera till fliken **Konfigurera**. [![wh-05-ad-konfigurera-program](./media/wh-05-ad-configure-app.png)](./media/wh-05-ad-configure-app.png)
-10. Bläddra nedåt tills du ser avsnittet **Behörigheter till andra program**. Klicka på **Lägg till program**. [![wh-06-ad-program-lägg-till-behörighet](./media/wh-06-ad-app-add-permissions.png)](./media/wh-06-ad-app-add-permissions.png)
+10. Bläddra nedåt tills du ser avsnittet **Behörigheter till andra program**. Klicka på **Lägg till program**. [![wh-06-ad-program-lägg-till-behörigheter](./media/wh-06-ad-app-add-permissions.png)](./media/wh-06-ad-app-add-permissions.png)
 11. Välj **Microsoft Dynamics ERP** i listan. Klicka på knappen **Fullständig kontroll** i sidans nedre högra hörn. [![wh-07-ad-välj-behörigheter](./media/wh-07-ad-select-permissions.png)](./media/wh-07-ad-select-permissions.png)
-12. I listan **Delegera behörighet** markerar du alla kryssrutor. Klicka på **Spara**. [![wh-08-ad-delegera-behörighet](./media/wh-08-ad-delegate-permissions.png)](./media/wh-08-ad-delegate-permissions.png)
+12. I listan **Delegera behörighet** markerar du alla kryssrutor. Klicka på **Spara**. [![wh-08-ad-delegera-behörigheter](./media/wh-08-ad-delegate-permissions.png)](./media/wh-08-ad-delegate-permissions.png)
 13. Anteckna följande uppgifter:
     -   **Klient-ID** - När du rullar uppför sidan visas **Klient-ID**.
     -   **Nyckel** - I avsnittet **Nycklar** skapar du en nyckel genom att välja varaktighet och kopiera nyckeln. Den här nyckeln kommer senare att betecknas som **Klienthemlighet**.
@@ -67,7 +71,7 @@ Om du vill att programmet ska samverka med en viss Dynamics 365 for Operations-s
 ## <a name="create-and-configure-a-user-account-in-dynamics-365-for-operations"></a>Skapa och konfigurera ett användarkonto i Dynamics 365 for Operations
 Om du vill aktivera Dynamics 365 for Operations för ditt Azure AD-program, måste du slutföra följande konfigurationssteg:
 
-1.  Skapa ett nytt användarkonto i Azure Active Directory för Dynamics 365 for Operations-innehavaren. Detta användarkonto syftar till att få åtkomst till den specifika kundtjänsten för lagerstyrningsprogrammet som Dynamics 365 for Operations-servern visar. När du har slutfört det här steget får du WMDP-autentiseringsuppgifter, som består av en WMDP-e-postadress och ett WMDP-lösenord. Mer information om de grundläggande stegen för att lägga till användare i Azure AD och Dynamics 365 for Operations finns i kursen: [Registrera dig för ett Microsoft Dynamics 365 for Operations-abonnemang](/dynamics365/operations/dev-itpro/sign-up-preview-subscription).
+1.  Skapa ett nytt användarkonto i Azure Active Directory för Dynamics 365 for Operations-innehavaren. Detta användarkonto syftar till att få åtkomst till den specifika kundtjänsten för lagerstyrningsprogrammet som Dynamics 365 for Operations-servern visar. När du har slutfört det här steget får du WMDP-autentiseringsuppgifter, som består av en WMDP-e-postadress och ett WMDP-lösenord. Mer information om de grundläggande stegen för att lägga till användare i Azure AD och Dynamics 365 for Operations finns i kursen: [Registrera dig för ett Microsoft Dynamics 365 for Operations-abonnemang](/dynamics365/operations/dev-itpro/dev-tools/sign-up-preview-subscription).
 2.  Skapa en Dynamics 365 for Operations-användare som motsvarar autentiseringsuppgifterna för lagerstyrningsprogrammet.
     1.  I Dynamics 365 for Operations, navigera till **Systemadministration** &gt; **Allmänt** &gt; **Användare**.
     2.  Skapa en ny användare.
@@ -98,6 +102,8 @@ Vid en förlorad eller komprometterad enhet måste du ta bort åtkomsten till Dy
 6.  Klicka på fliken **Konfigurera**, rulla nedåt och se till att programmet **Klient-ID** är detsamma som i steg 2 i det här avsnittet.
 7.  Klicka på knappen **Radera** i kommandofältet.
 8.  Klicka på **Ja** i bekräftelsemeddelandet.
+
+
 
 
 
