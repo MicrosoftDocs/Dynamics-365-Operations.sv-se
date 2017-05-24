@@ -1,23 +1,23 @@
-- name: "Dynamics 365"
+- name: Dynamics 365
   tocHref: /dynamics365/
   topicHref: /dynamics365
   items:
-  - name: "Operations"
+  - name: Operations
     tocHref: /dynamics365/operations/
     topicHref: /dynamics365/operations/index
     items:
-    - name: "Utvecklare och administratör"
+    - name: Utvecklare och administratör
       tocHref: /dynamics365/operations/dev-itpro/
       topicHref: /dynamics365/operations/dev-itpro/index
-    - name: "Ekonomi"
+    - name: Ekonomi
       tocHref: /dynamics365/operations/financials/
       topicHref: /dynamics365/operations/financials/index
-    - name: "Personal"
+    - name: Personal
       tocHref: /dynamics365/operations/human-resources/
       topicHref: /dynamics365/operations/human-resources/index
-    - name: "Butik"
+    - name: Butik
       tocHref: /dynamics365/operations/retail/
       topicHref: /dynamics365/operations/retail/index
-    - name: "Logistik"
+    - name: Logistik 
       tocHref: /dynamics365/operations/supply-chain/
       topicHref: /dynamics365/operations/supply-chain/index
