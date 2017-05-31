@@ -3,10 +3,10 @@ title: "Mobil arbetsyta för försäljningsorder"
 description: "Det här avsnittet innehåller information om den mobila arbetsytan för försäljningsorder som är tillgänglig för mobilappen Microsoft Dynamics 365 for Operations. Arbetsytan hjälper dig att hålla dig uppdaterad om dina försäljningsorder var som helst och när som helst."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/21/2017
+ms.date: 05/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: annbe
@@ -19,10 +19,10 @@ ms.author: mirzaab
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: 119b80e5d8067ffbf75d8b067f4803558c2c94b0
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 11898146a13756a6bb22a769e37e8773484e0d04
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -37,7 +37,9 @@ Det här avsnittet innehåller information om den mobila arbetsytan för försä
 <a name="overview-of-the-sales-orders-mobile-workspace"></a>Översikt över Mobil arbetsyta för försäljningsorder
 ---------------------------------------------
 
-Den **Mobila arbetsytan** för försäljningsorder ger åtkomst till Microsoft Dynamics 365 for Operations och du kan visa detaljerad information om varje försäljningsorder. Informationen innehåller status för den ordern, kontaktinformation för kunden och kontaktinformation för ordermottagaren. Den mobila arbetsytan för **försäljnigsorder** ger en direkt översikt över försäljningsorder. Du kan visa alla försäljningsorder, visa försäljningsorder per kund, eller visa information om en specifik försäljningsorder. Den mobila arbetsytan innehåller två vyer som hjälper dig att analysera försäljningsorder på djupet.
+Den **Mobila arbetsytan** för försäljningsorder ger åtkomst till Microsoft Dynamics 365 for Operations och du kan visa detaljerad information om varje försäljningsorder. Informationen innehåller status för den ordern, kontaktinformation för kunden och kontaktinformation för ordermottagaren. Den mobila arbetsytan för **försäljnigsorder** ger en direkt översikt över försäljningsorder. Du kan visa alla försäljningsorder, visa försäljningsorder per kund, eller visa information om en specifik försäljningsorder. 
+
+Den mobila arbetsytan innehåller två vyer som hjälper dig att analysera försäljningsorder på djupet.
 
 ### <a name="view-all-sales-orders"></a>Visa alla försäljningsorder
 
@@ -50,6 +52,7 @@ Den här vyn visar en lista över alla försäljningsorder.
     -   Sök efter status
     -   Sök efter frisläppningsstatus
     -   Sök efter skapat datum och klockslag
+    
 -   När du valt en försäljningsorder kan visa du uppgifter om särskilda order. Du kann särskilt visa följande information:
     -   Information om kundens namn och adress
     -   Olika datum för försäljningsordern, till exempel det begärda leveransdatumet och det bekräftade leveransdatumet
@@ -65,6 +68,7 @@ Denna vy listar försäljningsorder per kund.
 -   Använd något av följande filter för att visa order för en kund:
     -   Sök efter namn
     -   Sök efter konto
+
 -   När du har valt en kund kan du visa följande information:
     -   Kundens namn och grupp
     -   Kundens kontaktinformation
@@ -96,7 +100,7 @@ Innan du kan använda mobil arbetsyta för **Försäljningsorder** ska du se til
 <tr class="odd">
 <td>Dynamics 365 for Operations version 1611 med plattformsuppdatering 3 eller senare måste genomföras.</td>
 <td>Systemadministratör</td>
-<td>Om du inte redan använder Dynamics 365 for Operations i din organisation kan systemadministratören se <a href="http://ax.help.dynamics.com/en/wiki/deploy-an-ax7-demo-environment/">Distribuera en demomiljö för Microsoft Dynamics 365 for Operations</a>.</td>
+<td>Om du inte redan använder Dynamics 365 for Operations i din organisation kan systemadministratören se <a href="/dynamics365/operations/dev-itpro/deployment/deploy-demo-environment/">Distribuera en demomiljö för Microsoft Dynamics 365 for Operations</a>.</td>
 </tr>
 <tr class="even">
 <td>KB 4013633 måste genomföras.</td>
@@ -104,9 +108,9 @@ Innan du kan använda mobil arbetsyta för **Försäljningsorder** ska du se til
 <td>KB 4013633 (X++ uppdatering eller snabbkorrigering av metadata) innehåller fyra mobila arbetsytor för hantering av leveranskedjan. Om du vill implementera KB 4013633 måste systemadministratören göra följande:
 <ol>
 <li>Hämta KB 4013633 från Microsoft Dynamics Lifecycle Services (LCS).</li>
-<li><a href="https://ax.help.dynamics.com/en/wiki/configuring-and-installing-a-metadata-hotfix-package/">Snabbkorrigering av metadata</a>.</li>
-<li><a href="https://ax.help.dynamics.com/en/wiki/create-and-apply-a-deployable-package/">Skapa ett driftfärdigt paket </a> som innehåller modellerna <strong>SCMMobile</strong> och modellen och överför sedan det driftfärdiga paketet till LCS. </li>
-<li><a href="https://ax.help.dynamics.com/en/wiki/apply-a-deployable-package-on-a-dynamics-ax-system/">Koppla det driftfärdiga paketet</a> till Dynamics 365 for Operations-systemet.</li>
+<li><a href="/dynamics365/operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Snabbkorrigering av metadata</a>.</li>
+<li><a href="/dynamics365/operations/dev-itpro/deployment/create-apply-deployable-package">Skapa ett driftfärdigt paket </a> som innehåller modellerna <strong>SCMMobile</strong> och modellen och överför sedan det driftfärdiga paketet till LCS. </li>
+<li><a href="/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system">Koppla det driftfärdiga paketet</a> till Dynamics 365 for Operations-systemet.</li>
 </ol></td>
 </tr>
 <tr class="odd">

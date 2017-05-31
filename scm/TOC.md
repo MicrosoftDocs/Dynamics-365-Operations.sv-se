@@ -4,6 +4,7 @@
 ## Skapa efterfrågeprognos
 ### [Efterfrågeprognos – översikt](master-planning/introduction-demand-forecasting.md)
 ### [Ställ in en efterfrågeprognos](master-planning/demand-forecasting-setup.md)
+### [Importera historiska data för efterfrågeprognoser](master-planning/import-historical-data.md)
 ### [Generera en statistisk baslinjeprognos](master-planning/generate-statistical-baseline-forecast.md)
 ### [Utför manuell justering i baslinjeprognosen](master-planning/manual-adjustments-baseline-forecast.md)
 ### [Auktorisera en justerad efterfrågeprognos](master-planning/authorize-adjusted-forecast.md)

@@ -67,6 +67,7 @@
 ### [CODA-bankutdrag](emea-bel-coda-bank-statement-import.md)
 ### [Intervat momsdeklaration](emea-bel-intervat-tax-declaration.md)
 ### [Inställning av PRODCOM-rapport](emea-bel-prodcom-report.md)
+### [Avstämningsrapporter](emea-bel-reconciliation-reports.md)
 
 ## Tjeckien
 ### [Kassarabatt på kreditfaktura](emea-cze-credit-note-cash-discount.md)
@@ -74,6 +75,7 @@
 ### [Avskrivningsuppskjutning](emea-cze-depreciation-suspension-holidays.md)
 ### [Avskrivning av anläggningstillgångar](emea-cze-fixed-assets-depreciation.md)
 ### [Halvårsavskrivning](emea-cze-half-depreciation-fixed-asset-disposal.md)
+### [Momsrapportering ](emea-cze-intra-community-vat-transactions.md)
 ### [Momsutdrag](emea-cze-vat-statement-details.md)
 ## Estland
 ### [Momsutdrag](emea-est-vat-statement-details.md)

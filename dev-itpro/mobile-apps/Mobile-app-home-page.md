@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/10/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, Developer, IT Pro
 ms.reviewer: annbe
@@ -18,17 +18,15 @@ ms.author: sericks
 ms.dyn365.ops.intro: Platform update 4
 ms.search.validFrom: 2017-02-28
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: e1a9e0eeb45f011ccb2aa091e68aff92782e1ae7
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 5962fa36b061382e7f0ad55c08c81ac2cebc047d
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
 
 # <a name="dynamics-365-for-operations-mobile-app-home-page"></a>Startsida för mobillappen Dynamics 365 for Operations
-
-[!include[banner](../includes/banner.md)]
 
 [!include[banner](../includes/banner.md)]
 
@@ -61,7 +59,7 @@ Navigera i mobilappen består av fyra enkla begrepp: instrumentpanelen, arbetsyt
 ## <a name="implementation-process"></a>Implementeringsprocess
 Följande bild visar hur för implementering av mobilappen Dynamics 365 for Operations inom din organisation. 
 
-[![](./media/mobile-implementation-process_4.png)](./media/mobile-implementation-process_4.png) 
+![Implementeringsprocess för mobila program](./media/mobile-implementation-process_4.png)
 
 Följande tabell inkluderar länkar till resurser som kan hjälpa dig att inkludera mobilappen Dynamics 365 for Operations i din organisation. Siffrorna i den första kolumnen visar de numrerade stegen i illustrationen.
 
@@ -85,7 +83,7 @@ Följande tabell inkluderar länkar till resurser som kan hjälpa dig att inklud
 <td>1</td>
 <td>Systemadministratör</td>
 <td>Implementera Dynamics 365 for Operations i organisationen.</td>
-<td>Om du inte redan använder Dynamics 365 for Operations i din organisation, se <a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/deployment/deploy-demo-environment">Distribuera en demomiljö för Microsoft Dynamics 365 for Operations</a>.</td>
+<td>Om du inte redan använder Dynamics 365 for Operations i din organisation, se <a href="../deployment/deploy-demo-environment.md">Distribuera en demomiljö för Microsoft Dynamics 365 for Operations</a>.</td>
 </tr>
 <tr class="even">
 <td>2</td>
@@ -93,32 +91,27 @@ Följande tabell inkluderar länkar till resurser som kan hjälpa dig att inklud
 <td>Hämta och installera KBs som gör det möjligt för mobila arbetsytor som tillhandahålls av Microsoft.</td>
 <td>Se delen om &quot;förutsättningar&quot; i avsnittet om den mobila arbetsyta som din organisation vill använda:
 <ul>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/financials/cost-accounting/cost-controlling-mobile-workspace">Mobil arbetsyta för kostnadskontroll</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/supply-chain/production-control/inventory-on-hand-mobile-workspace">Mobil arbetsyta för inventering av lagerbehållning</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/supply-chain/production-control/sales-orders-mobile-workspace">Mobil arbetsyta för arbetsplatser</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/supply-chain/procurement/vendor-collaboration-mobile-workspace">Mobil arbetsyta för leverantörssamarbete</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/financials/project-management/project-time-entry-mobile-workspace">Mobil arbetsyta för projekttidangivelse</a></li>
+<li><a href="/dynamics365/operations/financials/cost-accounting/cost-controlling-mobile-workspace">Mobil arbetsyta för kostnadskontroll</a></li>
+<li><a href="/dynamics365/operations/supply-chain/inventory/inventory-on-hand-mobile-workspace">Mobil arbetsyta för inventering av lagerbehållning</a></li>
+<li><a href="/dynamics365/operations/supply-chain/sales-marketing/sales-orders-mobile-workspace">Mobil arbetsyta för arbetsplatser</a></li>
+<li><a href="/dynamics365/operations/supply-chain/procurement/vendor-collaboration-mobile-workspace">Mobil arbetsyta för leverantörssamarbete</a></li>
+<li><a href="/dynamics365/operations/financials/project-management/project-time-entry-mobile-workspace">Mobil arbetsyta för projekttidangivelse</a></li>
+<li><a href="/dynamics365/operations/financials/expense-management/expense-management-mobile-workspace">Mobil arbetsyta för utgiftshantering</a></li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>3</td>
 <td>Systemadministratör</td>
 <td>Publicera mobila arbetsytor som tillhandahålls av Microsoft.</td>
-<td>Se delen om &quot;förutsättningar&quot; i avsnittet om den mobila arbetsyta som din organisation vill använda:
-<ul>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/financials/cost-accounting/cost-controlling-mobile-workspace">Mobil arbetsyta för kostnadskontroll</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/supply-chain/production-control/inventory-on-hand-mobile-workspace">Mobil arbetsyta för inventering av lagerbehållning</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/supply-chain/production-control/sales-orders-mobile-workspace">Mobil arbetsyta för arbetsplatser</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/supply-chain/procurement/vendor-collaboration-mobile-workspace">Mobil arbetsyta för leverantörssamarbete</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/financials/project-management/project-time-entry-mobile-workspace">Mobil arbetsyta för projekttidangivelse</a></li>
-</ul></td>
+<td><a href="publish-mobile-workspace.md">Publicera mobil arbetsyta</a>
+</td>
 </tr>
 <tr class="even">
 <td>4</td>
 <td>Utvecklare eller oberoende programvaruleverantör (ISV)</td>
 <td>Använd Dynamics 365 for Operations mobila ramverk om du vill skapa egna mobila arbetsytor.</td>
 <td><ul>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform">Det mobila ramverket för Dynamics 365 for Operations</a></li>
+<li><a href="mobile-platform.md">Det mobila ramverket för Dynamics 365 for Operations</a></li>
 <li><a href="http://ax.help.dynamics.com/en/wiki/operations-mobile-workspace-x-apis/">Arbetsyta för Dynamics 365 for Operation X++ API:er</a></li>
 </ul></td>
 </tr>
@@ -126,19 +119,19 @@ Följande tabell inkluderar länkar till resurser som kan hjälpa dig att inklud
 <td>5</td>
 <td>ISV</td>
 <td>Skapa driftfärdiga paket som innehåller anpassade mobila arbetsytor och överför paketet till Microsoft Dynamics Lifecycle Services (LCS).</td>
-<td><a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/deployment/create-apply-deployable-package">Generera ett driftfärdigt paket för</a></td>
+<td><a href="../deployment/create-apply-deployable-package.md">Skapa ett driftfärdigt paket</a></td>
 </tr>
 <tr class="even">
 <td>6</td>
 <td>Systemadministratör</td>
 <td>Tillämpa det driftfärdiga paketet som innehåller egna arbetsytor som tillhandahålls av ISV.</td>
-<td><a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system">Koppla det driftfärdiga paketet till ett Microsoft Dynamics 365 for Operations-system</a></td>
+<td><a href="../deployment/apply-deployable-package-system.md">Koppla det driftfärdiga paketet till ett Microsoft Dynamics 365 for Operations-system</a></td>
 </tr>
 <tr class="odd">
 <td>7</td>
 <td>Systemadministratör</td>
 <td>Publicera anpassade mobila arbetsytor som tillhandahålls av ISV.</td>
-<td><a href="https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/mobile-apps/publish-mobile-workspace">Publicera mobil arbetsyta</a></td>
+<td><a href="publish-mobile-workspace.md">Publicera mobil arbetsyta</a></td>
 </tr>
 <tr class="even">
 <td>8</td>
@@ -153,24 +146,12 @@ Följande tabell inkluderar länkar till resurser som kan hjälpa dig att inklud
 <td>9</td>
 <td>Användare</td>
 <td>Logga in på mobilappen Dynamics 365 for Operations Appen inkluderar mobila arbetsytor som har publicerats.</td>
-<td>Microsoft tillhandahåller följande mobila arbetsytor:
-<ul>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/financials/cost-accounting/cost-controlling-mobile-workspace">Mobil arbetsyta för kostnadskontroll</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/supply-chain/production-control/inventory-on-hand-mobile-workspace">Mobil arbetsyta för inventering av lagerbehållning</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/supply-chain/production-control/sales-orders-mobile-workspace">Mobil arbetsyta för arbetsplatser</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/supply-chain/procurement/vendor-collaboration-mobile-workspace">Mobil arbetsyta för leverantörssamarbete</a></li>
-<li><a href="https://docs.microsoft.com/en-us/dynamics365/operations/financials/project-management/project-time-entry-mobile-workspace">Mobil arbetsyta för projekttidangivelse</a></li>
-</ul></td>
+<td>Om du vill se en lista över mobila arbetsytor som tillhandahålls av Microsoft, se då <a href="mobile-workspaces-released.md">nyligen lanserade mobila arbetsytor för mobilappen Dynamics 365 for Operations</a>
+</td>
 </tr>
 </tbody>
 </table>
 
-
-
-<a name="see-also"></a>Se även
---------
-
-[Mobila arbetsytor som nyligen publicerat för mobilappen Dynamics 365 for Operations](mobile-workspaces-released.md)
 
 
 

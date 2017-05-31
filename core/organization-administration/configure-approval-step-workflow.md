@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
 ms.search.scope: AX 7.0.0, Operations, Core
@@ -17,10 +17,10 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: 052cec3010c0d5ecbb9ed341fb23d0ec64682467
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 1924562f866ecdbb6fa6d3d0a9dc7627387f2d6a
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -106,13 +106,11 @@ Gör på följande sätt när du vill ange vem som ska tilldelas godkännandeste
     <td>Användare i en specifik organisationshierarki</td>
     <td><ol>
     <li>Välj <strong>Hierarki</strong> innan du går vidare och väljer fliken <strong>Hierarkival</strong> i listan <strong>Hierarkityp</strong> och väljer den hierarkityp som du vill tilldela steget.</li>
-    <li>Systemet måste hämta ett intervall med användarnamn i hierarkin. Dessa namn representerar användare som kan tilldelas steget. Följ dessa steg för att ange start- och slutpunkt för det intervall användarnamn som systemet hämtar:
-    <ol>
+    <li>Systemet måste hämta ett intervall med användarnamn i hierarkin. Dessa namn representerar användare som kan tilldelas steget. Följ dessa steg för att ange start- och slutpunkt för det intervall användarnamn som systemet hämtar: <ol>
     <li>Markera en person i listan <strong>Starta från</strong> för att ange startpunkten.</li>
     <li>Klicka på <strong>Lägg till villkor</strong> för att ange slutpunkten. Ange därefter ett villkor som avgör var någonstans i hierarkin som systemet slutar att hämta namn.</li>
     </ol></li>
-    <li>I fliken <strong>Hierarkialternativ</strong> väljer du de användare i intervallet som ska tilldelas steget:
-    <ul>
+    <li>I fliken <strong>Hierarkialternativ</strong> väljer du de användare i intervallet som ska tilldelas steget: <ul>
     <li><strong>Tilldela samtliga hämtade användare</strong> – Steget tilldelas alla användare i intervallet.</li>
     <li><strong>Tilldela endast till senast hämtade användare</strong> – Steget tilldelas endast den senaste användaren i intervallet.</li>
     <li><strong>Exkludera användare med följande villkor</strong> – Steget har inte tilldelats till någon användare i intervallet som uppfyller ett visst villkor. Klicka på <strong>Lägg till villkor</strong> för att ange villkoret.</li>
@@ -211,13 +209,11 @@ Om en användare inte vidtar åtgärder för ett dokument inom den tilldelade ti
     <td>Användare i en specifik organisationshierarki</td>
     <td><ol>
     <li>Välj <strong>Hierarki</strong> innan du går vidare och väljer fliken <strong>Hierarkival</strong> i listan <strong>Hierarkityp</strong> och därefter den hierarkityp som du vill eskalera dokumentet till.</li>
-    <li>Systemet måste hämta ett intervall med användarnamn i hierarkin. Dessa namn representerar användare som dokumentet kan eskaleras till. Följ dessa steg för att ange start- och slutpunkt för det intervall användarnamn som systemet hämtar:
-    <ol>
+    <li>Systemet måste hämta ett intervall med användarnamn i hierarkin. Dessa namn representerar användare som dokumentet kan eskaleras till. Följ dessa steg för att ange start- och slutpunkt för det intervall användarnamn som systemet hämtar: <ol>
     <li>Markera en person i listan <strong>Starta från</strong> för att ange startpunkten.</li>
     <li>Klicka på <strong>Lägg till villkor</strong> för att ange slutpunkten. Ange därefter ett villkor som avgör var någonstans i hierarkin som systemet slutar att hämta namn.</li>
     </ol></li>
-    <li>I fliken <strong>Hierarkialternativ</strong> väljer du de användare i intervallet som dokumentet ska eskaleras till:
-    <ul>
+    <li>I fliken <strong>Hierarkialternativ</strong> väljer du de användare i intervallet som dokumentet ska eskaleras till: <ul>
     <li><strong>Tilldela till samtliga hämtade användare</strong> – Dokumentet eskaleras till alla användare i intervallet.</li>
     <li><strong>Tilldela endast till senast hämtade användare</strong> – Dokumentet eskaleras endast till den senaste användaren i intervallet.</li>
     <li><strong>Exkludera användare med följande villkor</strong> – Dokumentet har inte eskalerats till någon användare i intervallet som uppfyller ett visst villkor. Klicka på <strong>Lägg till villkor</strong> för att ange villkoret.</li>

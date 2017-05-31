@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: FinancialReports
 audience: Application User
@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 
 ms.dyn365.ops.version: 
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: bf42b287e2e9235fd50f78a6fadc3f9efbd1fbe5
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: ca82d24f591aaeb0d675716857cf94a4696785ad
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -350,8 +350,7 @@ Typen av information som varje kolumn i en rapport innehåller, anges av värdet
     <tbody>
     <tr class="odd">
     <td>FD</td>
-    <td>Visa ekonomiska data eller data från ett Excel-kalkylblad när du använder kolumnen <strong>Länk till ekonomiska dimensioner</strong> eler kolumnen <strong>Länk till kalkylblad</strong> i raddefinitionen. När du väljer kolumntypen <strong>FD</strong> anges standardinställningen automatiskt för följande rader:
-    <ul>
+    <td>Visa ekonomiska data eller data från ett Excel-kalkylblad när du använder kolumnen <strong>Länk till ekonomiska dimensioner</strong> eler kolumnen <strong>Länk till kalkylblad</strong> i raddefinitionen. När du väljer kolumntypen <strong>FD</strong> anges standardinställningen automatiskt för följande rader: <ul>
     <li><strong>Bokkod/attributkategori:</strong> ACTUAL</li>
     <li><strong>Bokkod/attributkategori:</strong> ACTUAL</li>
     <li><strong>Räkenskapsår:</strong> BASE</li>
@@ -359,7 +358,7 @@ Typen av information som varje kolumn i en rapport innehåller, anges av värdet
     <li><strong>Täckta perioder:</strong> PERIODIC</li>
     <li><strong>Kolumnbredd:</strong> 14</li>
     </ul>
-    Du kan ändra dessa standardinställningar.</td>
+Du kan ändra dessa standardinställningar.</td>
     </tr>
     <tr class="even">
     <td>CALC</td>
@@ -379,7 +378,7 @@ Typen av information som varje kolumn i en rapport innehåller, anges av värdet
     </tr>
     <tr class="even">
     <td>FILL</td>
-    <td>Fyll cellen med ett tecken som du omger med enkla citationstecken. Om du inte anger ett tecken, är kolumnen tom. För att uppfylla en kolumn med en ellips (...) anger du <strong>FILL</strong> <strong>'.'</strong>.</td>
+    <td>Fyll cellen med ett tecken som du omger med enkla citationstecken. Om du inte anger ett tecken, är kolumnen tom. För att fylla en kolumn med en ellips (...) anger du till exempel <strong>FILL</strong> <strong>"."</strong>.</td>
     </tr>
     <tr class="odd">
     <td>SIDA</td>
@@ -387,12 +386,11 @@ Typen av information som varje kolumn i en rapport innehåller, anges av värdet
     </tr>
     <tr class="even">
     <td>WKS</td>
-    <td>Visa data som hämtas från ett Excel-kalkylblad. När du väljer kolumntypen <strong>WKS</strong> anges standardinställningen automatiskt för följande rader:
-    <ul>
+    <td>Visa data som hämtas från ett Excel-kalkylblad. När du väljer kolumntypen <strong>WKS</strong> anges standardinställningen automatiskt för följande rader: <ul>
     <li><strong>Räkenskapsår:</strong> PERIODIC</li>
     <li><strong>Period:</strong> BASE</li>
     </ul>
-    Du kan ändra dessa standardinställningar.</td>
+Du kan ändra dessa standardinställningar.</td>
     </tr>
     <tr class="odd">
     <td>ATTR</td>

@@ -3,10 +3,10 @@ title: "Ställa in centraliserade betalningar"
 description: 
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 05/09/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: LedgerInterCompany
 audience: Application User
@@ -18,10 +18,10 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: 474453e7f33526bc7bebc60ef68f560d489a1841
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 60cc59911cf2d10d73206885eb97b346ec3e3e87
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -41,7 +41,7 @@ Följ dessa steg för att bearbeta betalningar för en juridisk person på uppdr
 -   Ställ in koncernintern redovisning.
 
 ## <a name="set-up-an-organizational-hierarchy-for-centralized-payments"></a>Ställ in en organisationshierarki för centraliserade betalningar
-Du måste ställa in en organisationshierarki för centraliserade betalningar. Samma organisationshierarki används för att bearbeta centraliserade leverantörsbetalningar och centraliserade kundbetalningar. **Obs!** Strukturen i hierarkin innebär spelar ingen roll för centraliserade betalningar. Alla juridiska personer i hierarkin ska kunna bearbeta betalningar på uppdrag av en annan juridisk person i hierarkin. På sidan **Organisationshierarkier** kan du skapa en ny organisationshierarki.
+Du måste ställa in en organisationshierarki för centraliserade betalningar. Samma organisationshierarki används för att bearbeta centraliserade leverantörsbetalningar och centraliserade kundbetalningar. **Obs!** Strukturen i hierarkin innebär spelar ingen roll för centraliserade betalningar. Alla juridiska personer i hierarkin ska kunna bearbeta betalningar på uppdrag av en annan juridisk person i hierarkin. På sidan **Organisationshierarkier** kan du skapa en ny organisationshierarki. I fältet **Syfte** måste du välja **Centraliserade betalningar**. 
 
 ## <a name="set-up-an-intercompany-account-for-centralized-payments"></a>Ställ in koncernintern redovisning för centraliserade betalningar
 När betalningstransaktioner för den aktuella juridiska personen kvittas mot fakturor i andra juridiska personer skapas transaktioner med lämpliga giltighetsdatum för varje juridisk person. Du måste ange den juridiska personen där eventuella tillämpliga kassarabatter och eventuella realiserade skulder eller förluster bokförs. Innan du börjar måste du fastställa vilken juridisk person du ska använda för betarbetning av kund- och leverantörsbetalningar. Om en juridisk person bearbetar leverantörsbetalningar, men en annan juridisk person bearbetar kundbetalningar måste du växla mellan dem. På sidan **Koncernintern redovisning** kan du välja en koncernintern relationspost för en juridisk person som du ska bearbeta betalningar för. På fliken **Centraliserade betalningar** och välj om kassarabatter ska bokföras i den juridiska personen för betalningen (eller någon annan transaktion som minskar saldot på leverantörskontot) eller i den juridiska personen för fakturan (eller någon annan transaktion som ökar saldot på leverantörskontot). Det här valet fungerar tillsammans fältet**Administration av kassarabatt** på sidorna **Parametrar för leverantörsreskontra** och **Parametrar för kundreskontra**. För överbetalnings- och öresdifferenstoleranser används inställningen i den juridiska personen för betalningen. För underbetalnings- och öresdifferenstoleranser används inställningen i den juridiska personen för fakturan.
