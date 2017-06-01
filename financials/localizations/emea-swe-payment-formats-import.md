@@ -10,9 +10,9 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: CustPaymMode, CustVendPaymReconciliation, LedgerJournalTransCustPaym, VendPaymMode
 audience: Application User
+ms.reviewer: shylaw
 ms.search.scope: Operations, Core
 ms.custom: 262684
-ms.assetid: 7632f01a-28b6-408f-8734-b03416c6fb81
 ms.search.region: Sweden
 ms.author: v-lenest
 ms.search.validFrom: 2016-11-30
