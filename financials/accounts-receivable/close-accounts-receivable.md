@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.search.scope: AX 7.0.0, Operations, Core
@@ -17,10 +17,10 @@ ms.author: mfalkner
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: 1ab51f90be918ee60e99fe11e5425383beefb26e
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 6e8e87df88aace213f50db617229383eba4d86ec
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -47,13 +47,11 @@ Stäng perioder i redovisningen
 |Bekräfta försäljningsorder                   | Uppdatera försäljningsorder                                                                       |
 |Omvärdering i utländsk valuta          | Generera transaktioner som uppdaterar värdet av öppna kundtransaktioner i utländska valutor.                                                                                                                         |
 | Journal                              | Bokför fakturor, betalningar och skuldsedlar.                                             |
-| Bokföringsorder                      | -   **Betalningsjournal** – Generera, behandla och bokför betalningar.
-                                         -   **Draw bill of exchange journal** – Post bills of exchange.
-                                         -   **Protest bill of exchange journal** – Post protested bills of exchange.
-                                         -   **Redraw bill of exchange journal** – Post redrawn bills of exchange.
-                                         -   **Remittance journal** – Post remittances.
-                                         -   **Settle bill of exchange journal** – Post settled bills of exchange                   |
-| Bokföring av följesedel	      |	Uppdatera följesedlar för försäljningsorder.                                                     | | Bokföring av fritextfaktura	| Bokför fritextfakturor.                                                                   | | Bokföring av faktura	     | Bokför fakturor för försäljningsorder.                                                            | | Bokföring av plocklista	      |Uppdatera plocklistor för försäljningsorder.                                                      |
+| Bokföringsorder                      |<ul><li>**Betalningsjournal** – Generera, behandla och bokför betalningar.</li><li>**Journal för utställda växlar** – Bokför växlar.</li><li>**Journal för växelprotester** – Bokför växlar med protester.</li><li>**Journal för återutställda växlar** – Bokför återutställda växlar.</li><li>**Remissajournal** – Bokför remissor.</li><li>**Kvitta växeljournal** – Bokför inlösta växlar</li></ul>                   |
+| Följesedelsbokföring                 | Uppdatera följesedlar för försäljningsorder.                                                     |
+| Bokför fritextfaktura               | Bokför fritextfakturor.                                                                   |
+| Bokföring av faktura                      | Bokför fakturor för försäljningsorder.                                                            |
+| Bokföring av plocklista                 |Uppdatera plocklistor för försäljningsorder.                                                      |
 
 **Uppgift i affärsprocesskomponenten**   
 

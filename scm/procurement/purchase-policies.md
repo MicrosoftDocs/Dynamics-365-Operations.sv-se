@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PurchReqSourcingPolicyRule, SysPolicy, SysPolicyListPage
 audience: Application User
@@ -18,10 +18,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: 3df3144b08c54441699d9c0b48fe507857877586
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 5208dc64d86345de4e53c5e293fbc861351a63ef
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -59,6 +59,7 @@ När en medarbetare i den juridiska personen 2222 skapar en inköpsrekvisition h
 
 I föregående exempel definieras alla inköpsregler i en enkel organisationshierarki, organisationshierarkin Företag. Det kan dock hända att en komplex organisation definierar policyer för flera organisationshierarkier.  
 
+
 Contoso är ett stort företag som kräver komplexa inköpsregler för att kontrollera rekvisitionprocessen. Contoso har definierat regler för två olika organisationshierarkier: Avdelning och Global inköpskontroll.  
 
 Policy 123 definieras för organisationshierarkinAvdelning för Försäljning Storbritannien - försäljningavdelning. I policy 123 anger inköpsrekvisitionkontrollregeln de begränsningar som måste framtvingas för minsta orderkvantiteter. I denna regel markeras alternativet **Framtvinga restriktioner för minsta orderkvantitet**.  
@@ -93,6 +94,9 @@ Kategoripolicyregeln definierar hur användarna kan välja leverantörer för va
 ### <a name="re-approval-rule-for-purchase-orders"></a>Regel för omgodkännande av inköpsorder
 
 Den omgodkännande regeln är en valfri regel som definierar villkoren för omgodkännande när en inköpsorder ändras. De valda fälten utvärderas i arbetsflödet för inköpsordern när villkoret "Kräver omgodkännande av inköpsorder" anges i arbetsflödet.
+
+> [!NOTE]
+> Redovisningsfördelningen kommer alltid att återställas när en godkänd inköpsorder med aktiverad ändringshantering ändras. Du bör därför vara uppmärksam om att om du vill undvika att en inköpsorder godkänns på nytt när vissa fält ändras; fältet Accounting distribution.changed bör INTE inkluderas som ett markerat fält för återgodkännande. 
 
 ### <a name="purchase-requisition-rfq-rule"></a>Anbudsförfrågningsregel för inköpsrekvisition
 

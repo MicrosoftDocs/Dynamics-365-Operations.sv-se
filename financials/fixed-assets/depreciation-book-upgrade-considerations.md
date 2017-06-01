@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, Developer
 ms.search.scope: Operations, Core
@@ -17,10 +17,10 @@ ms.author: saraschi
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: 2543032fe479e56586772f345f5aacb0bb8ca1d1
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 15e671a0ef746c150024f3b7ddf6872d07703961
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -56,7 +56,7 @@ Alternativ 2: **Befintlig användardefinierad nummerserie** - Detta alternativ l
 -   **Nummerseriekod** – Nummerseriens kod.
     -   Konstantnamn: **NumberSequenceExistingCode **
     -   Förvalt värde: Ingen standardinställning, detta måste uppdateras till nummerseriekoden.
--   **Shared number sequence** – Ett booleskt värde som identifierar omfånget på nummerserien. Använd ”sant” för delade nummerserier för alla företag,” och ”falskt" för ett företagsspecifikt omfång. När du använder "falskt" måste nummerserien med det angivna namnet finnas i samtliga företag som innehåller transaktioner för avskrivningsregler. Delade nummerserier finns i alla partitioner som innehåller transaktioner för avskrivningsregler.
+-   **Delade nummerserier** – Ett booleskt värde som identifierar omfånget på nummerserien. Använd ”sant” för delade nummerserier för alla företag,” och ”falskt" för ett företagsspecifikt omfång. När du använder "falskt" måste nummerserien med det angivna namnet finnas i samtliga företag som innehåller transaktioner för avskrivningsregler. Delade nummerserier finns i alla partitioner som innehåller transaktioner för avskrivningsregler.
     -   Konstantnamn: **NumberSequenceExistingIsShared **
     -   Standardvärde: sant
 

@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: KanbanJobSchedulingListPage, LeanRuleReassignmentWizard, PlanActivity, ReqSupplyDemandSchedule
 audience: Application User
@@ -19,10 +19,10 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: 4d8ebe2c0a8b4fe08fa7f63ba310c1d9203c1150
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 4cf93c861345ad11b995ac2fe50c9a94dddcbd56
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -90,7 +90,7 @@ Precis som för processaktiviteter måste du konfigurera en standardtjänst för
 ## <a name="service-quantity-calculation"></a>Beräkning av tjänstkvantitet
 Hela inköpsprocessen baseras på en artikelreferens för en tjänst. Artikelreferensen mäts i en måttenhet för en tjänst. Tjänster mäts normalt i antalet tjänster (enheter) eller i tid. Du kan använda följande metoder för att beräkna tjänstekvantiteten baserat på registrerat slutförande av kanban-jobb:
 
--   **Beräkning baserad på antalet jobb** – ett kanban-jobb är lika med *n* tjänsteenheter, oavsett den produktkvantitet som anges. Ett jobb motsvarar en materialhanteringsenhet i lean manufacturing. Den här beräkningsmetoden gäller för alla tjänster som har ett fast pris per materialhanteringsenhet. Denna metod gäller därför vanligtvis för överföringsaktiviteter. Den kan emellertid också gälla processaktiviteter som bearbetar hela materialhanteringsenheter.
+-   **Beräkningen som är baserad på antalet jobb** – Ett kanban-jobb är lika med *n* tjänsteenheter, oavsett den produktkvantitet som anges. Ett jobb motsvarar en materialhanteringsenhet i lean manufacturing. Den här beräkningsmetoden gäller för alla tjänster som har ett fast pris per materialhanteringsenhet. Denna metod gäller därför vanligtvis för överföringsaktiviteter. Den kan emellertid också gälla processaktiviteter som bearbetar hela materialhanteringsenheter.
 -   **Beräkning baserad på produktkvantiteten** – Tjänstekvantiteten är relativ i förhållande till den produktkvantitet som har tidsplanerats/tillhandahålls. När den angivna produktkvantiteten beräknas kan felaktiga kvantiteter antingen inkluderas eller exkluderas. Den här beräkningsmetoden gäller för alla fall där tjänstepriset per enhet för den bearbetade produkten har överenskommits.
 -   **Beräkning baserad på aktivitetstiden** – Teoretiska aktivitetstider beräknas baserat på bearbetningstiden för aktiviteten, den totala bearbetade kvantiteten samt genomflödestakten för den bearbetade produkten. Den här beräkningsmetoden gäller för tjänster som betalas per timme och har en avvikelse i tid per bearbetad produkt.
 

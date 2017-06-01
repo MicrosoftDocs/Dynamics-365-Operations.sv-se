@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.search.scope: AX 7.0.0, Operations, Core
@@ -17,10 +17,10 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: ef434747c075a32887035fa1d3c0e6fecd4e0a0d
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 7d146f3dfe1d71e8d3031a851f47fac35d0f1a58
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -68,7 +68,7 @@ Följande kortkommandon gäller i hela Microsoft Dynamics 365 for Operations.
 | Öppna faktaboxfönstret (eller flytta fokus till faktaboxfönstre om det redan är öppet,) | Ctrl+F2                                   |
 | Stäng faktaboxfönstret (med fokus i faktaboxfönstret)                         | Esc                                       |
 | Flytta till nästa/tidigare faktabox (med fokus i faktaboxfönstret)              | Alt+Skift+nedpil/Alt+Skift+uppil |
-| Flytta till &lt;n&gt;th FactBox (med fokus i faktaboxfönstret)                | Alt+&lt;n&gt; (&lt;n&gt; = 1-9)           |
+| Flytta till faktabox &lt;n&gt; (med fokus på faktaboxfönstret)                | Alt+&lt;n&gt; (&lt;n&gt; = 1-9)           |
 | Expandera en faktabox (med fokus på faktaboxhuvudet)                             | Blanksteg eller Retur                            |
 | Komprimera den aktuella faktaboxen                                                    | Alt+0                                     |
 
@@ -115,8 +115,8 @@ Följande kortkommandon gäller i hela Microsoft Dynamics 365 for Operations.
 | Flytta till nästa/föregående fältgrupp.                     | Tab/Skift+Tab                              |
 | Flytta till nästa/föregående flik                       | Alt+Skift+höger pil/Alt+Skift+vänster pil |
 | Flytta till nästa/föregående snabbflik                   | Alt+Skift+nedpil/Alt+Skift+uppil    |
-| Flytta till snabbfliken &lt;n&gt;th FastTab                     | Alt+&lt;n&gt; (&lt;n&gt; = 1-9)              |
-| Flytta till fliken &lt;n&gt;th                         | Alt+Skift+&lt;n&gt; (&lt;n&gt; = 1-9)        |
+| Flytta till snabbflik &lt;n&gt;                     | Alt+&lt;n&gt; (&lt;n&gt; = 1-9)              |
+| Flytta till flik &lt;n&gt;                         | Alt+Shift+&lt;n&gt; (&lt;n&gt; = 1-9)        |
 | Expandera en snabbflik (med fokus på snabbflikhuvudet) | Blanksteg eller Retur                               |
 | Komprimera den aktuella snabbfliken                        | Alt+0                                        |
 | Byt till rutnätsvy                                 | Ctrl+Skift+G                                 |

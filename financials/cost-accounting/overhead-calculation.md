@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: CAMActualVersion, CAMBudgetVersion, CAMOverheadCalculation
 audience: Application User
@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: bb02e0756d675726f6c3b9f456b980a7ed695463
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: a24c24f842e4f1b1c7806c2fb2ccbd1329fe4851
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -53,7 +53,8 @@ Beräkning av indirekta kostnader kör kostnadsredovisningspolicyerna i korrekt 
 -   Räkenskapsår
 -   Räkenskapsperiod
 
-Beräkningen av indirekta kostnader körs oberoende av versionen. Du kan därför beräkna budgetversionen innan den faktiska versionen. Beräkningen av indirekta kostnader består av fyra steg som visas i följande bild. I varje steg skapas en journalrubrik med journalposter. Den här journalrubriken behåller indata för varje beräkningssteg. Policyer och regler tillämpas på varje journalrad och kostnadstransaktioner skapas som utleverans. Därför måste du alltid ha fullständig spårning. [![Beräkning av indirekta kostnader](./media/period-cost-calculation.png)](./media/period-cost-calculation.png)
+Beräkningen av indirekta kostnader körs oberoende av versionen. Du kan därför beräkna budgetversionen innan den faktiska versionen. Beräkningen av indirekta kostnader består av fyra steg som visas i följande bild. I varje steg skapas en journalrubrik med journalposter. Den här journalrubriken behåller indata för varje beräkningssteg. Policyer och regler tillämpas på varje journalrad och kostnadstransaktioner skapas som utleverans. Därför måste du alltid ha fullständig spårning. 
+[![Beräkning av indirekta kostnader](./media/period-cost-calculation.png)](./media/period-cost-calculation.png)
 
 ## <a name="calculate-and-allocate-the-electricity-overhead-cost"></a>Beräkna och fördela den indirekta elkostnaden
 I affärsredovisning är vissa kostnader som till exempel el, registrerade som en klumpsumma. Därför ges inte detaljerad ledarskapsinblick för kostnadsredovisning. I kostnadsredovisning måste kostnader flöda genom organisationsenheterna för att ge rätt ledarskapsinsikt för alla organisationsenheter och nivåer. Detta flöde måste baseras på en korrekt bild av förbrukningen eller en rimlig bedömning. I redovisning kan en elkostnad bokföras enligt tabellen nedan.
@@ -622,7 +623,7 @@ Detaljerad information om policy för indirekt kostnad finns i Policy för indir
 
 ### <a name="step-4-process-the-cost-allocation-calculation"></a>Steg 4: Bearbeta beräkning av kostnadsallokering
 
-Allokering används för att allkokera saldot på ett kostnadsobjekt till andra kostnadsobjekt genom att använda ett allokeringsunderlag. Microsoft Dynamics 365 for Operations stöder den inbördes allokeringsmetoden. I den inbördes allokeringsmetoden identifieras de ömsesidiga tjänsterna som de extra kostnadobjekten utbyter fullständigt. Systemet avgör automatiskt den korrekta ordnigen för att utföra allokeringar i. Saldot på ett kostnadsobjekt allkoeras genom ett enda allokeringsunderlag. Allokeringar över kostnadsobjektdimensioner och deras respektive medlemmar stöds. Allokeringsordern styrs av kostnadskontrollenheten. [![](./media/reciprocal-method.png)](./media/reciprocal-method.png)
+Allokering används för att allkokera saldot på ett kostnadsobjekt till andra kostnadsobjekt genom att använda ett allokeringsunderlag. Microsoft Dynamics 365 for Operations stöder den inbördes allokeringsmetoden. I den inbördes allokeringsmetoden identifieras de ömsesidiga tjänsterna som de extra kostnadobjekten utbyter fullständigt. Systemet avgör automatiskt den korrekta ordnigen för att utföra allokeringar i. Saldot på ett kostnadsobjekt allkoeras genom ett enda allokeringsunderlag. Allokeringar över kostnadsobjektdimensioner och deras respektive medlemmar stöds. Allokeringsordern styrs av kostnadskontrollenheten. [![Ömsesidig metod](./media/reciprocal-method.png)]
 
 #### <a name="define-the-cost-allocation"></a>Definiera kostnadsallokering
 

@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: DefaultDashboard
 audience: Application User, Developer, IT Pro
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: c9f1e32986238739fc7eee519fd1d17a6ce6731e
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: 55a3252aa2d84ac5af68a1a6eebeaa909d95b33b
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -34,6 +34,9 @@ ms.lasthandoff: 04/25/2017
 Den här sidan hänvisar dig till teman som kan hjälpa dig att få kunskap om de nya funktionerna i de senaste versionerna av Microsoft Dynamics 365 for Operations.
 
 För att uppgradera till den senaste versionen, se [Process för uppgradering till den senaste Dynamics 365 for Operations-versionen](../migration-upgrade/upgrade-latest-update.md).
+
+För mer information om mobila arbetsytor och Power BI-innehåll som nyligen lanserats, se [Nyligen lanserade mobila arbetsytor för mobilappen Dynamics 365 for Operations](../mobile-apps/mobile-workspaces-released.md) och [Nyligen lanserat Power BI-innehåll för Dynamics 365 for Operations](../analytics/power-bi-content-released.md)
+
 <table>
 <colgroup>
 <col width="20%" />
@@ -44,15 +47,21 @@ För att uppgradera till den senaste versionen, se [Process för uppgradering ti
 </colgroup>
 <thead>
 <tr class="header">
-<th><strong>Frisläpp</strong></th>
+<th><strong>Version</strong></th>
 <th><strong><strong>Version</strong></strong></th>
-<th><strong><strong>Byggnummer</strong></strong></th>
+<th><strong><strong>Versionsnummer</strong></strong></th>
 <th><strong><strong>Tillgänglighet</strong></strong></th>
 <th><strong><strong>Mer information</strong></strong></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
+<td>Microsoft Dynamics 365 for Operations-plattform</td>
+<td>Plattformsuppdatering 7</td>
+<td> 7.0.4542.16189</td>
+<td>2017 maj</td>
+<td><a href="whats-new-platform-update-7.md">Nyheter och ändringar i Dynamics 365 for Operations-plattformsuppdatering 7 (maj 2017)</a></td>
+</tr><tr class="odd">
 <td>Microsoft Dynamics 365 for Operations-plattform</td>
 <td>Plattformsuppdatering 6</td>
 <td> 7.0.4509.16180</td>

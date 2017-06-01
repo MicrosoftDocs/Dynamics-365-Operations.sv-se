@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
 ms.search.scope: AX 7.0.0, Operations, Core
@@ -17,10 +17,10 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: ac4f520d17c721e249737b4ae95c10685f914497
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: ac86ffa794b5fd92ca9aba24537fbc05057fe824
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -195,13 +195,11 @@ Följ dessa steg för att ange vem som ska tilldelas ett manuellt beslut.
     <td>Användare i en specifik organisationshierarki</td>
     <td><ol>
     <li>Välj <strong>Hierarki</strong> innan du går vidare och väljer fliken <strong>Hierarkival</strong> i listan <strong>Hierarkityp</strong>, och sedan väljer den hierarkityp som du vill tilldela beslutet.</li>
-    <li>Systemet måste hämta ett intervall med användarnamn i hierarkin. Dessa namn representerar användare som kan tilldelas beslutet. Följ dessa steg för att ange start- och slutpunkt för det intervall användarnamn som systemet hämtar:
-    <ol>
+    <li>Systemet måste hämta ett intervall med användarnamn i hierarkin. Dessa namn representerar användare som kan tilldelas beslutet. Följ dessa steg för att ange start- och slutpunkt för det intervall användarnamn som systemet hämtar: <ol>
     <li>Markera en person i listan <strong>Starta från</strong> för att ange startpunkten.</li>
     <li>Klicka på <strong>Lägg till villkor</strong> för att ange slutpunkten. Ange därefter ett villkor som avgör var någonstans i hierarkin som systemet slutar att hämta namn.</li>
     </ol></li>
-    <li>I fliken <strong>Hierarkialternativ</strong> väljer du de användare i intervallet som ska tilldelas steget:
-    <ul>
+    <li>I fliken <strong>Hierarkialternativ</strong> väljer du de användare i intervallet som ska tilldelas steget: <ul>
     <li><strong>Tilldela samtliga hämtade användare</strong> – Beslutet tilldelas alla användare i spannet.</li>
     <li><strong>Tilldela endast till senast hämtade användare</strong> – Beslutet tilldelas endast den senaste användaren i intervallet.</li>
     <li><strong>Exkludera användare med följande villkor</strong> – Beslutet har inte tilldelats någon användare i spannet som uppfyller ett visst villkor. Klicka på <strong>Lägg till villkor</strong> för att ange villkoret.</li>
@@ -228,13 +226,11 @@ Följ dessa steg för att ange vem som ska tilldelas ett manuellt beslut.
     <td>En arbetsuppgiftskö</td>
     <td><ol>
     <li>Klicka på fliken <strong>Köbaserad</strong>när du har markerat <strong>Kö</strong>.</li>
-    <li>Följ dessa steg om du vill tilldela beslutet till en viss kö:
-    <ol>
+    <li>Följ dessa steg om du vill tilldela beslutet till en viss kö: <ol>
     <li>I listan <strong>Kötyp</strong> väljer du <strong>Arbetsuppgiftskö</strong>.</li>
     <li>Välj kön i listan <strong>Könamn</strong>.</li>
     </ol></li>
-    <li>Om ett visst villkor ska bestämma vilken kö beslutet har tilldelats, följer du dessa steg:
-    <ol>
+    <li>Om ett visst villkor ska bestämma vilken kö beslutet har tilldelats, följer du dessa steg: <ol>
     <li>I listan <strong>Kötyp</strong> väljer du <strong>Villkorsbelagda arbetsuppgiftsköer</strong>.</li>
     <li>I listan <strong>Könamn</strong> väljer du <strong>Villkorsbaserad kö</strong>.</li>
     </ol></li>
@@ -285,13 +281,11 @@ Om en användare inte fattar beslutet inom den tilldelade tiden, är beslutet f�
     <td>Användare i en specifik organisationshierarki</td>
     <td><ol>
     <li>Välj <strong>Hierarki</strong> innan du går vidare och väljer fliken <strong>Hierarkival</strong> och, i listan <strong>Hierarkityp</strong>, den hierarkityp som du vill eskalera beslutet till.</li>
-    <li>Systemet måste hämta ett intervall med användarnamn i hierarkin. Dessa namn representerar användare som beslutet kan eskaleras till. Följ dessa steg för att ange start- och slutpunkt för det intervall användarnamn som systemet hämtar:
-    <ol>
+    <li>Systemet måste hämta ett intervall med användarnamn i hierarkin. Dessa namn representerar användare som beslutet kan eskaleras till. Följ dessa steg för att ange start- och slutpunkt för det intervall användarnamn som systemet hämtar: <ol>
     <li>Markera en person i listan <strong>Starta från</strong> för att ange startpunkten.</li>
     <li>Klicka på <strong>Lägg till villkor</strong> för att ange slutpunkten. Ange därefter ett villkor som avgör var någonstans i hierarkin som systemet slutar att hämta namn.</li>
     </ol></li>
-    <li>I fliken <strong>Hierarkialternativ</strong> väljer du de användare i intervallet som ska tilldelas beslutet:
-    <ul>
+    <li>I fliken <strong>Hierarkialternativ</strong> väljer du de användare i intervallet som ska tilldelas beslutet: <ul>
     <li><strong>Tilldela till samtliga hämtade användare</strong> – Beslutet eskaleras till alla användare i intervallet.</li>
     <li><strong>Tilldela endast till senast hämtade användare</strong> – Beslutet eskaleras endast till den senaste användaren i intervallet.</li>
     <li><strong>Exkludera användare med följande villkor:</strong> – Beslutet eskaleras inte till någon användare i intervallet som uppfyller ett visst villkor. Klicka på <strong>Lägg till villkor</strong> för att ange villkoret.</li>

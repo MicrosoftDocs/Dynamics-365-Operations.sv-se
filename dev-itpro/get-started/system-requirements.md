@@ -6,7 +6,7 @@ manager: AnnBe
 ms.date: 04/04/2017
 ms.topic: article
 ms.prod: 
-ms.service: Dynamics365Operations
+ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, Developer, IT Pro
 ms.search.scope: Core
@@ -17,10 +17,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 ms.translationtype: Human Translation
-ms.sourcegitcommit: fd3392eba3a394bd4b92112093c1f1f9b894426d
-ms.openlocfilehash: 86053196a3aad6b7b5d7830860e1af347dd969d8
+ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
+ms.openlocfilehash: de2f71a21c5aac953349559c84283d0f76082d42
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/25/2017
+ms.lasthandoff: 05/25/2017
 
 
 ---
@@ -42,7 +42,9 @@ Microsoft Dynamics 365 for Operations webbprogram går att köra i följande web
 -   Google Chrome (senaste tillgängliga versionen) på Windows 10, Windows 8.1, Windows 8, Windows 7 eller Google Nexus 10 surfplatta
 -   Apple Safari (senaste tillgängliga versionen) på Mac OS X 10.10 (Yosemite), 10.11 (El Capitan) eller 10.12 (Sierra), eller Apple iPad
 
-Gå till programtillverkarens startsida för att hitta den senaste versionen för varje webbläsare. **Anteckningar:**
+Gå till programtillverkarens startsida för att hitta den senaste versionen för varje webbläsare. 
+
+**Anteckningar:**
 
 -   Om du vill hämta bilder som har genererats från uppgiftsregistrering och inkludera dem i Microsoft Word-dokument måste du ha installerat ett Chrome-tillägg. <!---For instructions about how to install the extension, see [Screenshot Extension setup](/dynamics365/operations/dev-itpro/user-interface/task-recorder).-->
 -   Arbetsflödesredigeraren startas som ett ClickOnce-program. Endast Microsoft Edge och Internet Explorer (på en version som stöds av Microsoft Windows) stöder ClickOnce-program. Arbetsflödesredigeraren ClickOnce-programmet kräver 64-bitars kompatibelt operativsystem.
@@ -59,10 +61,12 @@ Retail Cloud POS för Dynamics 365 for Operations går att köra i följande web
 -   Chrome (senaste tillgängliga versionen) i Windows 7, 8.1 för Windows eller Windows 10
 
 ## <a name="network-requirements"></a>Nätverkskrav
--   Dynamics 365 for Operations har utformats för nätverk med svarstid på mindre än 150 millisekunder. Detta är svarstiden från en webbläsarklient till datacentret Azure som är värd för Dynamics 365 for Operations. Vi rekommenderar att du testar nätverksfördröjning vid <http://www.azurespeed.com>.
+-   Dynamics 365 for Operations har utformats för nätverk med svarstider på maximalt 250-300 millisekunder. Detta är svarstiden från en webbläsarklient till datacentret Azure som är värd för Dynamics 365 for Operations. Vi rekommenderar att du testar nätverksfördröjning vid <http://www.azurespeed.com>.
 -   Bandbreddskrav för Dynamics 365 for Operations är beroende av en viss situation. Mest typiska scenarier kräver en bandbredd på mer än 50 kB per sekund (KBps). Scenarier som har höga nyttolastkrav, till exempel arbetsytor eller scenarier som involverar omfattande anpassning, rekommenderas större bandbredd.
 
-I allmänhet är Dynamics 365 for Operations optimerad för Internet. Antalet returresor från en webbläsarklient till Azure datacenter är mycket liten och hela nyttolasten komprimeras. **Varning:** Beräkna inte bandbreddskrav från en klientplats genom att multiplicera antalet användare med den minsta bandbredd som krävs. Det är mycket svårt att beräkna samtidiga användningen av en viss plats. Använd en förhandsversion av Dynamics 365 for Operations för kunder som är bekymrade över bandbreddskraven.
+I allmänhet är Dynamics 365 for Operations optimerad för Internet. Antalet returresor från en webbläsarklient till Azure datacenter är mycket liten och hela nyttolasten komprimeras. 
+
+**Varning:** Beräkna inte bandbreddskrav från en klientplats genom att multiplicera antalet användare med den minsta bandbredd som krävs. Det är mycket svårt att beräkna samtidiga användningen av en viss plats. Använd en förhandsversion av Dynamics 365 for Operations för kunder som är bekymrade över bandbreddskraven.
 
 ## <a name="net-framework-requirements"></a>Krav på .NET Framework
 Dynamics 365 for Operations kräver .NET Framework version 4.6.2 för alla enklicksprogram, t.ex. dokumentflödesagent. Installationsinstruktioner finns i [installation av .NET Framework](https://msdn.microsoft.com/en-us/library/5a4x27ek(v=vs.110).aspx).
