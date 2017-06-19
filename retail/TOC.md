@@ -15,8 +15,9 @@
 ## [Konfigurera och installera en maskinvarustation för Butik](retail-hardware-station-configuration-installation.md)
 ## [Tidrapportering för butik](retail-time-attendance.md)
 # Modern kassa (MPOS) och molnbaserad kassa
-## Kringutrustning
+## Maskinvara och kringutrustning
 ### [Översikt över butikskringutrustning](retail-peripherals-overview.md)
+### [Kringutrustningssimulator för butik](retail-peripheral-simulator.md)
 ### [Microsoft-testad kassakringutrustning](microsoft-tested-pos-hardware-peripherals.md)
 ### [Definiera och underhålla kanalklienter, kassor och maskinvarustationer](define-maintain-channel-clients-registers-hw-stations.md)
 ## Skärmlayout
@@ -39,9 +40,10 @@
 ### [Konfigurera och installera MOPS](retail-modern-pos-device-activation.md)
 ### [Ställa in utökad inloggning för molnbaserad kassa och MPOS](extended-logon.md)
 ### [Hantera butikskonton och enheter från huvudkontoret](set-up-activation-accounts-validate-devices-hq.md)
-## Kvitton
+## Inleveranser
 ### [Ställ in kvittomallar](receipt-templates-printing.md) 
 ### [Skicka e-postkvitton från MPOS](email-receipts.md)
+## [Uppgiftsinspelare och hjälp för kassa](task-recorder-retail-pos.md)
 # Övervakning och analys
 ## [Övervaka försäljningsresultat och marginaler](monitor-sales-margin-performance.md)
 ## [Analysera försäljningstrender och försäljningsmönster](analyze-sales-trends-patterns.md)
@@ -53,15 +55,17 @@
 ## [Prisjusteringar och rabatter](price-adjustments-discounts.md)
 ## [Avgöra optimal kombination av överlappande rabatter](optimal-combination-overlapping-discounts.md)
 ## [Definiera kanalspecifika rabatter](define-channel-specific-discounts.md)
+## [Skapa kuponger för butiksförsäljning](retail-coupons.md)
 # Produkter och marknadsföring
 ## [Butikshierarkier](retail-hierarchies.md)
 ## [Skapa och hantera attribut](create-manage-attributes.md)
 ## [Ställ in butiksprodukter](set-up-retail-products.md)
 ## [Ställ in streckkoder](set-up-bar-codes.md)
 ## [Ställ in streckkodsmasker](set-up-bar-code-masks.md)
-## [Lägga upp sortiment](set-up-assortments.md)
+## [Lägg upp sortiment](set-up-assortments.md)
+## [Sälja och returnera produkter utanför ett sortiment](sell-return-outside-assortments.md)
 # Lojalitet
-## [Ställa in ett kundbonusprogram](set-up-customer-loyalty-program.md)
+## [Ställ in ett kundbonusprogram](set-up-customer-loyalty-program.md)
 # Lager
 ## [Hantera butikslager](work-with-store-inventory.md)
 # Grundläggande om handel
@@ -69,15 +73,15 @@
 ## [Organisationer och organisationshierarkier (grundläggande om handel)](organizational-hierarchies-commerce-essentials.md)
 # [Innehåll för IT-personal och utvecklare](dev-itpro/TOC.md)
 
-# [Ekonomi](/dynamics365/operations/financials/index)
+# [Ekonomi](/dynamics365/unified-operations/financials/index)
 
-# [Personal](/dynamics365/operations/human-resources/index)
+# [Personal](/dynamics365/unified-operations/talent/index)
 
-# [Hantering av underleverantörer](/dynamics365/operations/supply-chain/index)
+# [Hantering av underleverantörer](/dynamics365/unified-operations/supply-chain/index)
 
-# [Utvecklare och administratör](/dynamics365/operations/dev-itpro/index)
+# [Utvecklare och administratör](/dynamics365/unified-operations/dev-itpro/index)
 
 # Andra resurser
-## [Ordlista för Dynamics 365 for Operations](/dynamics365/operations/get-started/glossary?toc=/dynamics365/operations/retail/toc.json)
-## [Nyheter eller ändringar](/dynamics365/operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/operations/retail/toc.json)
+## [Ordlista för Dynamics 365 för Retail](/dynamics365/unified-operations/get-started/glossary?toc=/dynamics365/unified-operations/retail/toc.json)
+## [Nyheter eller ändringar](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/unified-operations/retail/toc.json)
 

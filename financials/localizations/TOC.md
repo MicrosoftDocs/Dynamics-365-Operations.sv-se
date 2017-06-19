@@ -1,4 +1,4 @@
-# [Lokalisering – översikt](/dynamics365/operations/dev-itpro/lcs-solutions/country-region?toc=/dynamics365/operations/financials/toc.json)
+# [Lokalisering – översikt](/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region?toc=/dynamics365/unified-operations/financials/toc.json)
 # Asien-Stillahavsområdet
 ## Australien
 ### [Bankfilformat](apac-aus-method-of-payment-pay-vendors-banks.md)
@@ -54,6 +54,7 @@
 ## [Bokför anläggningstillgången före anskaffning](emea-pre-acquisition-acquisition-fixed-asset.md)
 ## [Postnummer](emea-import-create-postal-codes-manually.md)
 ## [Registrerings-ID](emea-registration-ids.md)
+## [Omvänd moms](emea-reverse-charge.md)
 ## [Översikt över SEPA-kreditöverföring](../accounts-payable/sepa-credit-transfer.md)
 ## [Översikt över SEPA-autogiro](../accounts-receivable/sepa-direct-debit-overview.md)
 ## [Ställ in undertecknare för utskriftsformulär](emea-set-up-signers-for-printing-forms.md)
@@ -98,7 +99,7 @@
 ### [Journallisterapport](emea-deu-journal-list-report.md)
 ### [Skriv ut en separat etikett för kreditnotor från försäljning](emea-deu-print-separate-label-credit-memo-originating-sales.md)
 ## Ungern
-### [Avskrivningsmetoder för anläggningstillgångar](emea-hun-fixed-assets-depreciation-methods.md)    
+### [Avskrivningsmetoder för anläggningstillgångar](emea-hun-fixed-assets-depreciation-methods.md)   
 ### [Fasta lågkostnadstillgångar](emea-hun-low-cost-fixed-assets.md)
 ### [Flytta en anläggningstillgång till lager](emea-hun-fixed-asset-to-inventory.md)
 ## Italien
@@ -138,6 +139,7 @@
 ### [Omvärderingsgrupp för anläggningstillgångar](emea-esp-fixed-asset-group-revaluation.md)
 ### [Inomeuropeisk moms](emea-esp-intra-community-vat.md)
 ### [Engångskunder](emea-esp-no-one-time-customer-for-project-contracts.md)
+### [Skriv ut checkar med spansk layout](emea-esp-print-checks-with-spanish-layout.md)
 ### [Alternativ för skuldsedel](emea-esp-promissory-note-options.md)
 ### [Inköps- och försäljningscykler](emea-esp-sales-purchase-cycle.md)
 ### [Särskilda poster och ingående ark](emea-esp-opening-sheets-spain.md)
@@ -153,7 +155,9 @@
 ### [Skatteböcker](latam-bra-fiscal-books.md)
 #### [ICMS-skattedokument](latam-bra-icms-tax-fiscal-documents.md)
 #### [Importera skattedokument](latam-bra-import-fiscal-documents.md)
+#### [Exportera och importera transaktioner för juridisk person från redovisningskonsolidering](latam-bra-general-ledger-consolidation-transactions.md)
 #### [Importera och verifiera NF-e XML-dokument och DANFE-filer](latam-bra-import-verify-nf-e-xml-documents-danfe-emails.md)
+#### [Bearbeta elektroniska betalningsremissor](latam-bra-process-electronic-payment-remittances.md)
 #### [Skattedokument](latam-bra-fiscal-documents-fiscal-document-framework.md)
 #### [Platshållare för text i skattedokument](latam-bra-fiscal-document-text-placeholders.md)
 #### [Kompletterande skattedokumentet för inköp](latam-bra-purchase-complementary-fiscal-documents.md)
@@ -163,6 +167,8 @@
 ### [Journaler skapade under den elektroniska betalningsreturen](latam-bra-examples-journals-generated-electronic-payment-return-process.md)
 ### [NF-e-process](latam-bra-nf-e-process.md)
 ### [Parametrar för juridiska personer](latam-bra-legal-entity-parameters.md)
+### [Förvärva en CIAP-anläggningstillgång](latam-bra-ciap-fixed-asset.md)
+### [Avyttra en CIAP-anläggningstillgång](latam-bra-ciap-fixed-asset.md)
 ### [Moms](latam-bra-calculate-taxes.md)
 #### [Momsattribut](latam-bra-tax-attributes.md)
 #### [Momsbetalningar](latam-bra-tax-payments.md)

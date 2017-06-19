@@ -1,5 +1,5 @@
 # Power BI innehållspaket
-## [Innehållspaket Kostnadshantering](/dynamics365/operations/dev-itpro/analytics/cost-management-content-pack?toc=/dynamics365/operations/supply-chain/toc.json)
+## [Innehållspaket Kostnadshantering](/dynamics365/unified-operations/dev-itpro/analytics/cost-management-content-pack?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 # Fördefinierad kostnad
 ## [Kostnadsredovisning](costing-sheets.md)
 ## [Kostnadsversion](costing-versions.md)

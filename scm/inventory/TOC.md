@@ -21,4 +21,5 @@
 # Spåra artikel och batch
 ## [Sammanfoga lagerbatch](merge-inventory-batches.md)
 ## [Spåra artikel och råmaterial](trace-items-raw-materials-inventory-production-sales.md)
+## [Registrera serienummer i försäljningsprocessen](../sales-marketing/register-serial-numbers-sales-process.md)
 

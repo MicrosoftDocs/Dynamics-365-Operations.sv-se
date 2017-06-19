@@ -1,34 +1,34 @@
 # [Inledning](index.md)
 
-# [Integrera med Dynamics 365 for Operations](get-started/onboarding-home.md)
-## Introduktion till Dynamics 365 for Operations
+# [Kom igång med Finance and Operations](get-started/onboarding-home.md)
+## Introduktion till Finance and Operations
 ### [Kom igång med Microsoft FastTrack for Dynamics 365](get-started/fasttrack-dynamics-365-overview.md)
-### [Registrera ett abonnemang](/dynamics365/operations/dev-itpro/dev-tools/sign-up-preview-subscription?toc=/dynamics365/operations/toc.json)
-### [Skaffa den lokala versionen av Dynamics AX 2012 så här](/dynamics365/operations/dev-itpro/deployment/csp-download-customersource?toc=/dynamics365/operations/toc.json)
-## [Distribuera en demomiljö](/dynamics365/operations/dev-itpro/deployment/deploy-demo-environment?toc=/dynamics365/operations/toc.json)
+### [Registrera ett abonnemang](/dynamics365/unified-operations/dev-itpro/dev-tools/sign-up-preview-subscription?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Skaffa den lokala versionen av Dynamics AX 2012 så här](/dynamics365/unified-operations/dev-itpro/deployment/csp-download-customersource?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+## [Distribuera en demomiljö](/dynamics365/unified-operations/dev-itpro/deployment/deploy-demo-environment?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ## Utforska användargränssnittet
 ### [Åtgärdssökning](get-started/action-search.md)
 ### [Avancerad filtrerings- och frågesyntax](get-started/advanced-filtering-query-options.md)
-### [Vanliga frågor om Dynamics 365 for Operations klient](get-started/client-faq.md)
+### [Vanliga frågor och svar om Finance and Operations-klienten](get-started/client-faq.md)
 ### [Konfigurera och filtrera arbetsytor](get-started/configure-filter-workspaces.md)
 ### [Visa sidor sida vid sida med ikonen Öppna i nytt fönster](get-started/display-pages-side-by-side.md)
 ### [Navigeringsökning](get-started/navigation-search.md)
 ### [Anpassa användarupplevelsen](get-started/personalize-user-experience.md)
 ### [Kortkommandon](get-started/shortcut-keys.md)
 ### [Hantera hur sidorna visas](get-started/window-management.md)
-### [Förstå Lifecycle Services](/dynamics365/operations/dev-itpro/lifecycle-services/lcs-works-lcs?toc=/dynamics365/operations/toc.json)
+### [Förstå Lifecycle Services](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-works-lcs?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
 ## Få hjälp och support
-### [Hjälp – översikt](/dynamics365/operations/dev-itpro/get-started/help-overview?toc=/dynamics365/operations/toc.json)
-### [Anslut hjälp](/dynamics365/operations/dev-itpro/get-started/help-connect?toc=/dynamics365/operations/toc.json)
+### [Hjälp – översikt](/dynamics365/unified-operations/dev-itpro/get-started/help-overview?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+### [Anslut hjälp](/dynamics365/unified-operations/dev-itpro/get-started/help-connect?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 ### [Visa och exportera fältbeskrivningar](get-started/view-export-field-descriptions.md)
 
 ### Uppgiftsguider och uppgiftsinspelare
-#### [Uppgiftsinspelare](/dynamics365/operations/dev-itpro/user-interface/task-recorder?toc=/dynamics365/operations/toc.json)
-#### [Skapa dokumentation eller utbildning](/dynamics365/operations/dev-itpro/user-interface/task-recorder?toc=/dynamics365/operations/toc.json)
+#### [Uppgiftsinspelare](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
+#### [Skapa dokumentation eller utbildning](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
-## [Land/regionspecifikt hjälpinnehåll](/dynamics365/operations/dev-itpro/lcs-solutions/country-region?toc=/dynamics365/operations/toc.json)
+## [Land/regionspecifikt hjälpinnehåll](/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
 # [Konfigurera organisationen](organization-administration/organization-administration-home-page.md)
 ## [Organisationer och organisationshierarkier](organization-administration/organizations-organizational-hierarchies.md)
@@ -63,17 +63,17 @@
 ## [Konfigurera batchjobbet för bearbetning av meddelandet](organization-administration/workflow-batch-job-critical.md)
 ## [Rapporten Arbetsflödestyper](organization-administration/workflow-types-report.md)
 
-# [Ekonomi](/dynamics365/operations/financials/index)
+# [Ekonomi](/dynamics365/unified-operations/financials/index)
 
-# [Personal](/dynamics365/operations/human-resources/index)
+# [Personal](/dynamics365/unified-operations/talent/index)
 
-# [Butik](/dynamics365/operations/retail/index)
+# [Butik](/dynamics365/unified-operations/retail/index)
 
-# [Hantering av underleverantörer](/dynamics365/operations/supply-chain/index)
+# [Hantering av underleverantörer](/dynamics365/unified-operations/supply-chain/index)
 
-# [Utvecklare och administratör](/dynamics365/operations/dev-itpro/index)
+# [Utvecklare och administratör](/dynamics365/unified-operations/dev-itpro/index)
 
 # Andra resurser
-## [Ordlista för Dynamics 365 for Operations](get-started/glossary.md)
-## [Nyheter eller ändringar](/dynamics365/operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/operations/toc.json)
+## [Ordlista för Finance and Operations](get-started/glossary.md)
+## [Nyheter eller ändringar](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
 
