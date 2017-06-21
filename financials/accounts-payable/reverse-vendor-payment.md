@@ -3,7 +3,7 @@ title: "Återföra en leverantörsbetalning"
 description: "Den här artikeln beskriver skillnaderna mellan att återföra, ta bort, annullera och avvisa en betalning. Den beskriver dessutom de två metoderna för att återföra en leverantörscheck."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: Kontosaldon i redovisningen
 description: "Det här avsnittet beskriver två sätt att visa redovisningkontosaldon - sidan Råbalanslista och ekonomiska rapporter. Avsnittet beskriver även upp hur du uppdaterar dimensionsuppsättningsaldon."
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

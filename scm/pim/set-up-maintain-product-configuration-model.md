@@ -3,7 +3,7 @@ title: "Ställ in en produktkonfigurationsmodell"
 description: "Den här artikeln beskriver hur du ställer in och skapar en modell för produktkonfiguration."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

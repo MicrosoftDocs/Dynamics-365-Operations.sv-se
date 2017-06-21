@@ -3,7 +3,7 @@ title: Remburs och importinkasso
 description: "Det här avsnittet innehåller allmän information om remburser och importsamlingar. Båda typerna av bankdokument används ofta för inköp och försäljning av varor över internationella gränser."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

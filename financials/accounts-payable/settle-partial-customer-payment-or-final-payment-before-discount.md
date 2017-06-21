@@ -3,7 +3,7 @@ title: "Kvitta en kunddelbetalning och hela slutbetalningen före rabattdatumet"
 description: "Den här artikeln tillhandahåller scenarier som visar hur du registrerar delbetalningar för en kund och tar kassarabatter inom kassarabattperioden."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

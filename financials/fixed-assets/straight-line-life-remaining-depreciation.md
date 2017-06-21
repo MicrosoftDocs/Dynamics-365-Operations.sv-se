@@ -3,7 +3,7 @@ title: "Linjär avskrivning kvarstående livstid"
 description: "Det här avsnittet ger en översikt över metoden för linjär återstående livstid för avskrivning."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

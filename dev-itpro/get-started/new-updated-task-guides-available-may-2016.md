@@ -3,7 +3,7 @@ title: Nya eller uppdaterade uppgiftsguider (maj 2016)
 description: "Den har artikeln anger nya eller uppdaterade uppgiftsguider som släpptes för Microsoft APQC Unified Library för Microsoft Dynamics AX (maj 2016 - alla språk). Inge nytt Komma igång-biblioteket gavs ut."
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

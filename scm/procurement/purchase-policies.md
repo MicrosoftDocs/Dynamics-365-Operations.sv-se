@@ -3,7 +3,7 @@ title: "Inköpspolicyer"
 description: "Det här avsnittet innehåller information om inköpspolicyer. En inköpspolicy är en grupp regler som styr processen för inköpsrekvisition. Administratörer som är hjälper till med inköpspolicyer för anskaffning implementerar sin anskaffningsstrategi genom att skapa en policystruktur som stämmer överens med organisationens strategiska inköpskrav."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

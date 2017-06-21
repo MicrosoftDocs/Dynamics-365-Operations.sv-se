@@ -3,7 +3,7 @@ title: "Registrering för tillverkningskörning"
 description: "I det här avsnittet beskrivs viktiga begrepp och termer som du behöver känna till när du konfigurerar och använder tillverkningskörning."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

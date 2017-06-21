@@ -3,7 +3,7 @@ title: "Förskottsfakturor kontra förskottsbetalningar"
 description: "Den här artikeln beskriver och kontrasterar de två metoderna som organisationer kan använda för förskottsbetalningar. I den ena metoden måste du skapa en förskottsfaktura som är kopplad till en inköpsorder. I den andra metoden skapar du verifikationer för förskottsbetalningsjournal genom att skapa journalposter och välja dem som verifikationer för förskottsbetalningsjournal."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

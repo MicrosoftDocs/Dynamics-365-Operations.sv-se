@@ -3,7 +3,7 @@ title: "Kvitta en delkundbetalning som har rabatter på kreditfakturor."
 description: "Den här artikeln går igenom ett scenario där en kassarabatt utnyttjas för en kreditfaktura när den ursprungliga fakturan också hade en kassarabatt."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

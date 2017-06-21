@@ -3,7 +3,7 @@ title: Operations-resurser
 description: "Verksamhetsresurser utför aktiviteter för ett projekt eller en produktionsprocess. De kan vara av olika typer och kan ha olika förmågor."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

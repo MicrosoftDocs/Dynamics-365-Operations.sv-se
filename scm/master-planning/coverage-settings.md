@@ -3,7 +3,7 @@ title: "Disponeringsinställningar"
 description: "Under huvudplanering används disponeringsinställningar för att beräkna artikelbehov."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

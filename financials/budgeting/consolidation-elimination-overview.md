@@ -3,7 +3,7 @@ title: "Översikt över konsolidering och eliminering"
 description: "Det här avsnittet innehåller allmän information om konsoliderings- och kvittningsprocessen. Avsnittet innehåller alla svar på vanliga frågor och svar."
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

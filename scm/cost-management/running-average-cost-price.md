@@ -3,7 +3,7 @@ title: "Löpande genomsnittlig självkostnad"
 description: "Lagerstängningsprocessen kvittar utleveranstransaktioner mot inleveranstransaktioner baserat på den lagervärderingsmetod som har valts i artikelns artikelmodellgrupp. Innan en lagerstängning körs beräknar systemet en löpande genomsnittlig självkostnad som i de flesta fall används för bokföring av utleveranstransaktioner."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

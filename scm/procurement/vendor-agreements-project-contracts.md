@@ -3,7 +3,7 @@ title: "Leverantörsavtal betala vid betalning"
 description: "Det här avsnittet innehåller villkor för betalning-vid-betalad för leverantörsavtal. Med villkor för betalning-vid-betalad kan du helt eller delvis hålla inne betalning till en leverantör, tills kunden betalar för projektet till dig. Det här avsnittet innehåller även ett verkligt exempel för att visa hur du kan använda villkor för betalning-vid-betalad för ett projekt."
 author: kfend
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

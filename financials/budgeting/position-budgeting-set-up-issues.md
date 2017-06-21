@@ -3,7 +3,7 @@ title: "Felsöka befattningsbudgetering"
 description: "Den här artikeln innehåller svar på frågor som du kan ha när du konfigurerar befattningsbudgetering. Det handlar om vanliga frågor och svar om hur du skapar budgetkostnadselement, kompensationsgrupper och kompensationsrutnät."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Konfigurera ett arbetsflöde för radartiklar"
 description: "I det här avsnittet beskrivs hur du konfigurerar ett arbetsflödeselement för radartiklar."
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,10 +3,10 @@ title: "Översikt över prestationshantering"
 description: "Genom prestationshanteringsprocessen kan medarbetare dokumentera och diskutera sin prestation med chefen. Chefer kan i sin tur ge återkoppling och vägledning till medarbetarna."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-talent
 ms.technology: 
 audience: Application User
 ms.reviewer: rschloma

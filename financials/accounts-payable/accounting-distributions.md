@@ -3,7 +3,7 @@ title: "Redovisningsfördelningar"
 description: "Det här avsnittet innehåller information om redovisningsfördelningar och beskriver de alternativ som är tillgängliga för att bearbeta dem. Redovisningsfördelningar används för att fördela penningbelopp för ett källdokument till specifika redovisningskonton."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

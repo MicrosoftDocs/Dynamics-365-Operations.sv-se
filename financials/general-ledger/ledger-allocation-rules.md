@@ -3,7 +3,7 @@ title: "Allokeringsregler för redovisning"
 description: "Den här artikeln innehåller information om allokeringsregler för redovisning. Den beskriver de olika komponenterna för dessa allokeringsregler och allokeringsmetoderna som kan användas för dem."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Fakturamatchning och koncerninterna inköpsorder"
 description: "Den juridiska personen för inköp som ingår i en koncernintern handelstransaktion kan ställas in för att använda fakturamatchning i leverantörsreskontra. I det här fallet måste bokföringskraven för både koncernintern handel och fakturamatchning i leverantörsreskontra uppfyllas innan koncerninterna leverantörsfakturor kan bokföras."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Skapa leverantörsbetalningar med ett betalningsförslag"
 description: "Detta avsnitt ger en översikt över alternativen för betalningsförslag och inkluderar några exempel som visar hur betalningsförslag fungerar. Betalningsförslag används ofta för att skapa leverantörsbetalningar eftersom frågan kan användas för att snabbt välja leverantörsfakturor för betalning, baserat på kriterier som förfallodatum och kassarabatt."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Uppdatering av standardkostnader i en icke-tillverkningsmiljö"
 description: "Det här avsnittet ger vägledning om hur du uppdaterar standardkostnader i en icke-tillverkningsmiljö."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

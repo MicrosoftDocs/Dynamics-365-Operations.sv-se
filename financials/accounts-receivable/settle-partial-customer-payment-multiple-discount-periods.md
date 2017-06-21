@@ -3,7 +3,7 @@ title: Kvitta en delkundsbetalning som har flera rabattperioder
 description: "Det inlägg visar hur delvisa kundbetalningar kvittas om det finns flera rabattperioder."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

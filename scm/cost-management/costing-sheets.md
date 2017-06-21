@@ -3,7 +3,7 @@ title: Kostnadsredovisningar
 description: "När du ställer in kostnadsredovisning har du två mål. För det första ska du definiera visningsformatet för information om kostnader för sålda varor för en tillverkad artikel eller tillverkningsorder. Den formaterade visningen kallas för kostnadsredovisning. För det andra ska du definiera grunden för hur indirekta kostnader beräknas. Inställningarna för kostnadsredovisningen bygger på kostnadsgruppsfunktionen för visningsinformation och på beräkningsformler för indirekta kostnader. De två målen med inställningarna för kostnadsredovisning beskrivs i den här artikeln."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

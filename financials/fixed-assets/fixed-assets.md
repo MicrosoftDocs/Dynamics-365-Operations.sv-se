@@ -3,7 +3,7 @@ title: "Startsidan Anläggningstillgångar"
 description: "Anläggningstillgångar är artiklar av värde, t.ex. fastigheter, fordon, mark eller utrustning, som ägs av en privatperson eller en organisation."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications

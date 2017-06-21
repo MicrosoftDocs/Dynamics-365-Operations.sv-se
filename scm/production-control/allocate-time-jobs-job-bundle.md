@@ -3,7 +3,7 @@ title: "Fördela tid till jobb i en jobbunt"
 description: "I tillverkningskörning kan du bunta jobb. Du kan sedan starta fler jobb på en gång på jobblistsidan."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Använd en kundbetalning för att kvitta flera fakturor som omfattar fle
 description: "Den här artikeln visar hur flera fakturor betalas när varje faktura är kvalificerad för en kassarabatt. Scenarierna i den här artikeln visar hur de utnyttjade kassarabatterna varierar beroende på när betalningen görs."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Avancerad MT940-import för bankavstämning - uppgradering för sammansa
 description: "Ett sekvensnummer måste läggas till bankutdragimportenheten för att stödja MT940-formatet."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

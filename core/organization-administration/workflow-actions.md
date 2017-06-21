@@ -3,7 +3,7 @@ title: "Arbetsflödesåtgärder"
 description: "Det här avsnittet innehåller en beskrivning av åtgärder som alla deltagare i en arbetsflödesgodkännandeprocess kan utföra."
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

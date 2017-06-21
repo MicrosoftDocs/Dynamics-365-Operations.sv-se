@@ -3,7 +3,7 @@ title: "Kostnadskategorier som används i produktionsflöden"
 description: "Den här artikeln innehåller information om kostnadskategorier som används i de tillverkningsmiljöer som använder flöden."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

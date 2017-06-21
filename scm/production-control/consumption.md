@@ -3,7 +3,7 @@ title: "Beräkna materialförbrukning"
 description: "Den här artikeln innehåller information om olika alternativ som är relaterade till beräkningen av materialförbrukning."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

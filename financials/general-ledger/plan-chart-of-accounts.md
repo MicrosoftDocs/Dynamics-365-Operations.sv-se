@@ -3,7 +3,7 @@ title: Planera din kontoplan
 description: "Det här avsnittet innehåller information som hjälper dig att planera kontoplanen för din organisation."
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

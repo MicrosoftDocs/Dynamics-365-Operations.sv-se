@@ -3,7 +3,7 @@ title: Kvalitetshanteringsprocesser
 description: "Det här avsnittet innehåller information om kvalitetshanteringprocessen för avvikande produkter. Det beskriver användning av kvalitetskontrollfunktionen, om att definiera och underhålla avvikelser och hantering av korrigeringar."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

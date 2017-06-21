@@ -3,7 +3,7 @@ title: "Kvitta en leverantörsbetalning och hela slutbetalningen före rabattdat
 description: "Det här avsnittet innehåller en genomgång av ett scenario där flera delbetalningar görs för en leverantörsfaktura i vilken en kassarabatt har utnyttjats."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

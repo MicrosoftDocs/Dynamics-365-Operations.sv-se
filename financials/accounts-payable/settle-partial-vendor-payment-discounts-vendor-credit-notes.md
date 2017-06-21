@@ -3,7 +3,7 @@ title: "Kvitta en delleverantörsbetalning som har rabatter på leverantörkredi
 description: "Det här avsnittet innehåller genomgång av ett scenario där en kreditnota kvittas mot en faktura."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

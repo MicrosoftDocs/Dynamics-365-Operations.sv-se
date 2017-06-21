@@ -3,7 +3,7 @@ title: "Stäng redovisningen vid periodslutet"
 description: "Det här avsnittet beskriver de uppgifter som normalt slutförs vid en periodstängning av redovisningen."
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

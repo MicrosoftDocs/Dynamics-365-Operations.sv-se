@@ -3,7 +3,7 @@ title: Reservera lagerkvantiteter
 description: "I det här avsnittet beskrivs de olika alternativ som är tillgängliga för att reservera lager."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

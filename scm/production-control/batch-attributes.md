@@ -3,7 +3,7 @@ title: Batchattribut
 description: "Den här artikeln innehåller information om batchattribut. Batchattribut är egenskaper för råmaterial och färdiga produkter som utgör lagerbatchar. Artikeln innehåller även information om hur du tilldelar batchattribut och hur du kan söka i dem när du reserverar batchar."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

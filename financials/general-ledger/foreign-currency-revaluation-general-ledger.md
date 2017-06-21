@@ -3,7 +3,7 @@ title: "Omvärdering i utländsk valuta för huvudbok"
 description: "Den här artikeln innehåller en översikt över följande för redovisningsomräkningsprocessen i utländsk valuta: ställa in, köra processen, beräkningen för processen, samt hur du återför omvärderingtransaktionerna vid behov."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

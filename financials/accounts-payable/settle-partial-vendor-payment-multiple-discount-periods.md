@@ -3,7 +3,7 @@ title: "Kvitta en delleverantörsbetalning som har flera rabattperioder"
 description: "Den här artikeln går igenom ett scenario där flera delbetalningar görs till en leverantör som erbjuder flera kassarabatter."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

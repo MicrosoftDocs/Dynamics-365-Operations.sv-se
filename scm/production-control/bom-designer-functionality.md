@@ -3,7 +3,7 @@ title: Funktionen strukturlistedesigner
 description: "Det här avsnittet ger en beskrivning av hur du kan använda sidan för strukturlistan för att designa och arbeta med trädstrukturer för strukturlistor (BOMs). Du kan klicka på Inställningar för att välja olika konfigureringar och ange vilken information som ska visas på raderna i trädstrukturen."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

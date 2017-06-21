@@ -3,7 +3,7 @@ title: Konfigurera Kundreskontra och Kredit och inkasso
 description: "Konfigurera Kundreskontra och Kredit och inkasso för att följa fakturor och inkommande betalningar från kunder."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

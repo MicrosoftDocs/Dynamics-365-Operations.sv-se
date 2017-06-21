@@ -3,7 +3,7 @@ title: "Orderlöfte"
 description: "Denna artikel innehåller information om orderlöften. Orderlöften hjälper dig att ge dina kunder pålitliga löften om leveransdatum, och ger dig flexibilitet att hålla dessa datum."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

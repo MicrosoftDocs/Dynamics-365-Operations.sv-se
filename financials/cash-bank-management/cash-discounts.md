@@ -3,7 +3,7 @@ title: Kassarabatter
 description: "Kassarabatter ställs in och delas för Leverantörsreskontra och Kundreskontra.  Den tillgängliga kassarabatten kan definieras på kundfakturan eller leverantörsfakturan och dras av om fakturan betalas innan kassarabattsdatumet har förfallit."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

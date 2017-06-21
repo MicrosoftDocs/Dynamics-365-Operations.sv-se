@@ -3,7 +3,7 @@ title: "Bokföringskonton för anskaffning av anläggningstillgångar"
 description: "Det här avsnittet innehåller information om hur du ställer in redovisningsbokföringskonton för anskaffade tillgångar."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

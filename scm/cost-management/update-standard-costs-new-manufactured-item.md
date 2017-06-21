@@ -3,7 +3,7 @@ title: "Uppdatera standardkostnader för en ny tillverkad artikel"
 description: "Det här avsnittet ger vägledning om hur du uppdaterar standardkostnader för en ny tillverkad artikel."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

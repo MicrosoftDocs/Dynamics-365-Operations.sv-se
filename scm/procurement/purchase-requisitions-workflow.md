@@ -3,7 +3,7 @@ title: "Arbetsflöde för inköpsrekvisitioner"
 description: "Arbetsflödesprocessen flyttar inköpsrekvisitionerna genom granskningsprocessen, från en ursprunglig status för Utkast till statusen Godkänd. När en inköpsrekvisition skickas in för granskning, startas arbetsflödesprocessen. När en inköpsrekvisition har godkänts, kan en inköpsorder skapas för inköpsrekvisitionsraderna och skickas till leverantören för uppfyllelse av ordern."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

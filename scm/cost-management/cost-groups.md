@@ -3,7 +3,7 @@ title: Kostnadsgrupper
 description: "Kostnadsgrupper utgör grunden för segmentering och analysering av kostnadsbidraget i en tillverkad artikels beräknade kostnad, till exempel kostnadsbidragen för material, arbete och omkostnader. Kostnadsgruppssegmentering har flera synonymer inom tillverkningen, till exempel kostnadsuppdelning eller kostnadsklassificering."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

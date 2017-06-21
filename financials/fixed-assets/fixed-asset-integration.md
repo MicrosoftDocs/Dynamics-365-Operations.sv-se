@@ -3,7 +3,7 @@ title: "Integrering av anläggningstillgångar"
 description: "Anläggningstillgångar kan integreras med Redovisning, Lagerhantering, Kundreskontra och Leverantörsreskontra. Du kan också ställa in anläggningstillgångar så att detta integreras med inköpsorder."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

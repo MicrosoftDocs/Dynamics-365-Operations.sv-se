@@ -3,7 +3,7 @@ title: "Planera laster med hjälp av navkonsolidering"
 description: "Den här artikeln beskriver funktionen för att konsolidera försändelser i ett nav när du levererar varor från olika lagerställen till samma kund eller när du tar emot varor från flera leverantörer på samma lagerställe."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

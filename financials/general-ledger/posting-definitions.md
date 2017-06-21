@@ -3,7 +3,7 @@ title: "Bokföringsdefinitioner"
 description: "Det här avsnittet innehåller information om bokföringsdefinitioner och hur du definierar och länkar dem. För bokföringstyper och dokument som stöds kan du använda bokföringsdefinitioner i stället för bokföringsprofiler för att klassificera huvudkontona och ekonomiska dimensioner på redovisningsposter."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

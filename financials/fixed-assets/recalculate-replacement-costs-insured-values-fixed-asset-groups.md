@@ -3,7 +3,7 @@ title: "Räkna om ersättningskostnader och försäkrade värden för Anläggnin
 description: "Den här artikeln beskriver processen för att uppdatera ersättningskostnaden och de försäkrade värdena för anläggningstillgångar."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

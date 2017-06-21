@@ -3,7 +3,7 @@ title: Anskaffningskataloger
 description: "Den här artikeln beskriver, på en hög nivå, hur professionella inköpare kan ställa in och underhålla anskaffningskataloger. Anskaffningskataloger definierar de artiklar och tjänster som anställda i företaget kan beställa för intern användning."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

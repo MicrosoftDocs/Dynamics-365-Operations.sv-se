@@ -3,7 +3,7 @@ title: Visa journalposter och transaktioner
 description: "Det här avsnittet innehåller information om de olika sätten att visa journalposter och transaktioner."
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

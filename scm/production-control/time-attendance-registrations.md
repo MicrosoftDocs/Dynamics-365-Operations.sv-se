@@ -3,7 +3,7 @@ title: "Tid- och närvaroregistrering"
 description: "Tidsregistreringsarbetare kan ange olika typer av tidregistreringar, till exempel stämpla in, stämpla ut, registrera indirekta aktiviteter och frånvaroregistrering. Den här artikeln beskriver registreringar, deras beräkning, godkännande och användning av arbetsflöde för att lägga till strukturen och godkännande automatiskt till processen för godkännande av tidrapporter."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

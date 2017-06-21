@@ -3,7 +3,7 @@ title: "Inställningar för koncernintern redovisning"
 description: "Det här avsnittet beskriver hur du ställer in koncernintern redovisning så att du kan använda koncerninterna journaler för redovisningsallokeringar och redovisningsjournaler, till exempel dagboksjournaler, leverantörsfakturajournaler och betalningsjournaler."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: Hantera standardkostnadsuppdateringar
 description: "Uppdateringar för standardkostnadsdata kan hanteras genom att använda två olika sätt: med en version eller två versioner."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
