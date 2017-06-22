@@ -1,237 +1,1648 @@
-# [Kostnadshantering](cost-management/TOC.md)
-# [Lagerhantering](inventory/TOC.md)
-# Huvudplanering
-## Skapa efterfrågeprognos
-### [Efterfrågeprognos – översikt](master-planning/introduction-demand-forecasting.md)
-### [Ställ in en efterfrågeprognos](master-planning/demand-forecasting-setup.md)
-### [Importera historiska data för efterfrågeprognoser](master-planning/import-historical-data.md)
-### [Generera en statistisk baslinjeprognos](master-planning/generate-statistical-baseline-forecast.md)
-### [Utför manuell justering i baslinjeprognosen](master-planning/manual-adjustments-baseline-forecast.md)
-### [Auktorisera en justerad efterfrågeprognos](master-planning/authorize-adjusted-forecast.md)
-### [Övervaka prognosens exakthet](master-planning/monitor-forecast-accuracy.md)
-### [Ta bort avskilda från historiska transaktionsdata](master-planning/remove-historical-outliers-calculating-demand-forecast.md)
-### [Reduceringsnycklar](master-planning/reduction-keys.md)
-## Huvudplan
-### [Åtgärdsmeddelanden](master-planning/action-messages.md)
-### [Disponeringsinställningar](master-planning/coverage-settings.md)
-### [Fördröjningar](master-planning/delays.md)
-### [Huvudplaner](master-planning/master-plans.md)
-### [Huvudplaner och funktioner för flera webbplatser](master-planning/master-plan-multisite-functionality.md)
-#### [Plan för täckning av webbplats, obligatoriskt lagerställe](master-planning/master-plan-site-coverage-warehouse-mandatory.md)
-#### [Plan för täckning av webbplats, ej obligatoriskt lagerställe](master-planning/master-plan-site-coverage-warehouse-not-mandatory.md)
-#### [Plan för täckning av webbplats och lagerplats, obligatoriskt lagerställe](master-planning/master-plan-site-warehouse-coverage-warehouse-mandatory.md)
-#### [Plan för täckning av webbplats och lagerplats, ej obligatoriskt lagerställe](master-planning/master-plan-site-warehouse-coverage-warehouse-not-mandatory.md)
-#### [Avgör strukturlisteversion](master-planning/master-plan-bom-version-determined.md)
-### [Nedbrytning av strukturlisteversion](master-planning/master-plan-explosion-bom-version.md)
-### [Underhåll planerade order](master-planning/maintain-planned-orders.md)
-### [Spåra en nedbrytning](master-planning/trace-explosion.md)
-# Anskaffning och källa
-## [Upphandling och inköp – översikt](procurement/procurement-sourcing-overview.md)
-## [Anskaffnings- och källarbetsflöden](procurement/procurement-sourcing-workflows.md)
-## [Inköpspolicyer](procurement/purchase-policies.md)
-## [Anskaffningskataloger](procurement/procurement-catalogs.md)
-## [Inköpsrekvisitioner](procurement/purchase-requisitions-overview.md)
-### [Arbetsflöde för inköpsrekvisitioner](procurement/purchase-requisitions-workflow.md) 
-## [Anbudsförfrågningar (RFQ)](procurement/request-quotations.md)
-## Inköpsorder
-### [Översikt över inköpsorder](procurement/purchase-order-overview.md)
-### [Skapa inköpsorder](procurement/purchase-order-creation.md)
-### [Godkänn och bekräfta inköpsorder](procurement/purchase-order-approval-confirmation.md)
-## Leverantörshantering och samarbete
-### [Skapa och underhåll leverantörssamarbete](procurement/set-up-maintain-vendor-collaboration.md)
-### [Hantera användare av leverantörssamarbete](procurement/manage-vendor-collaboration-users.md)
-### [Ställ in leverantörskonton](procurement/set-up-vendor-accounts.md)
-### [Leverantörssamarbete med externa leverantörer](procurement/vendor-collaboration-work-external-vendors.md)
-### [Leverantörssamarbete med kunder](procurement/vendor-collaboration-work-customers-dynamics-365-operations.md)
-### [Använd externa kataloger för PunchOut eProcurement](procurement/use-external-catalogs-for-punchout.md)
-### [Ställ in en extern katalog för PunchOut eProcurement](procurement/set-up-external-catalog-for-punchout.md)
-### [Samarbeta med leverantörer genom leverantörsportalen](procurement/collaborate-vendors-vendor-portal.md)
-### [Mobil arbetsyta för leverantörssamarbete](procurement/vendor-collaboration-mobile-workspace.md)
-### [Användarsäkerhet på leverantörsportalen](procurement/configure-security-vendor-portal-users.md)
-## Priser och rabatter
-### [Inköpsavtal](procurement/purchase-agreements.md)
-## Produktinleveranser och fakturering
-### [Produktinleverans mot inköpsorder](procurement/product-receipt-against-purchase-orders.md)
-### [Översikt över leverantörsfakturor](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
-### [Bokföringsprofiler för leverantörer](/dynamics365/unified-operations/financials/accounts-payable/vendor-posting-profiles?toc=/dynamics365/unified-operations/supply-chain/toc.json)
-# Produktinformationshantering
-## [Översikt över produktinformation](pim/product-information.md)
-## Underhåll produktkategorier
-## Underhåll produktinformation
-### Underhåll produktdefinition
-#### [Nomenklatur för produktnummer](pim/product-variant-identification-nomenclature.md)
-#### Produktmallar
-#### [Produktdimension](pim/product-dimensions.md)
-#### Produktattribut
-#### Produktbilder och bifogade filer
-#### Produktidentifierare
-#### [Vanliga frågor och svar om översättning av produktinformation](pim/translations-product-related-information.md)
-### Frisläpp produkter till juridiska personer
-### Sök efter produkter
-#### [Sök efter produkt under orderregistreringen](pim/search-products-product-variants.md)
-### Förbereda produkt för planering
-#### [Standardorderinställningar för dimensioner och produktvarianter](production-control/default-order-settings.md)
-#### Prognosmodeller och artikelallokeringsnycklar
-### Förbereda produkt för produktion
-#### Strukturlista och formel
-##### [Strukturlistor och formler](production-control/bill-of-material-bom.md)
-##### [Använda strukturlistedesignern](production-control/bom-designer-functionality.md)
-##### [Använda formeldesignern](production-control/formula-designer.md)
-#### Flöden
-#### Lean manufacturing
-### Förbereda produkter för lagerställe och logistik
-### Uppskatta kostnad för produkter
-#### [Strukturlisteberäkningar](cost-management/bom-calculations.md)
-## Underhåll produktkonfigurationsmodeller
-### [Skapa en produktkonfigurationsmodell](pim/build-product-configuration-model.md)
-### [Vanliga frågor om beräkning för produktkonfigurationsmodell](pim/calculate-product-configuration-models.md)
-### [Konfigurationsregel](pim/configuration-rules.md)
-### [Dimensionsbaserad konfiguration](pim/dimension-based-product-configuration.md)
-### [Ettrycksbegränsning och tabellbegränsning](pim/expression-constraints-table-constraints-product-configuration-models.md)
-### [Återanvänd produktkonfiguration](pim/reuse-product-configurations.md)
-### [Ställ in en konfigurationsmodell](pim/set-up-maintain-product-configuration-model.md)
-### [Systemdefinierad och användardefinierad registerbegränsning](pim/system-defined-user-defined-table-constraints.md)
-## Importera produktinformationsdata
-## Exportera produktinformationsdata
-# Produktionskontroll
-## [Översikt över produktionsprocess](production-control/production-process-overview.md)
-## [Blandad planering: Kombinera diskret-, process- och lean-anskaffning](production-control/mixed-mode-plan.md)
-## [Hantera legotillverkningsarbetsuppgift i produktion](production-control/manage-subcontract-work-production.md)
-## Diskret tillverkning
-### Underhåll produktionshuvuddata
-#### [Inställningskrav för produktion](production-control/production-set-up-requirements.md)
-#### [Strukturlistor och formler](production-control/bill-of-material-bom.md)
-#### [Funktionen Strukturlistedesigner](production-control/bom-designer-functionality.md)
-#### [Strukturlisteberäkningar](cost-management/bom-calculations.md)
-#### [Verksamhetsresurser](production-control/operations-resources.md)
-#### [Resurskunskaper](production-control/resource-capabilities.md)
-#### [Flöden och operationer](production-control/routes-operations.md)
-#### [Standarder för produktionsorder i tillverkningskörning](production-control/production-order-defaults-manufacturing-execution.md)
-#### [Policyer för lagerarbete](warehousing/warehouse-work-policies.md)
-### Schemalägg produktionsoperationer
-#### [Grovplanering](production-control/operations-scheduling.md)
-#### [Finplanering](production-control/job-scheduling.md)
-#### [Alternativ för grovplanering](production-control/operation-scheduling-options.md)
-### Köra produktionsjobb 
-#### [Skapa produktionsorder](production-control/create-production-orders.md)
-#### [Frisläpp produktionsorder](production-control/release-production-orders.md)
-#### [Återför produktionsorderstatus](production-control/reverse-production-order-status.md)
-#### [Rapportera produktionsorder som slutförda](production-control/report-production-orders-as-finished.md)
-#### [Rapportera strukturlistor som slutförda](production-control/report-boms-as-finished.md)
-#### [Direktleverans från produktionsorder till utlastningsplatser](production-control/cross-docking-opportunities.md)
-#### [Registrera materialförbrukning med en mobil enhet](production-control/register-material-consumption-hand-held-device.md)
-#### [Materialersättning i tillverkning](production-control/substitute-items-bom-lines.md)
-#### [Registrering för tillverkningskörning](production-control/registration-manufacturing-execution.md)
-#### [Produktionsåterrapportering](production-control/production-feedback.md)
-#### [Tid- och närvaroregistrering](production-control/time-attendance-registrations.md)
-### Hantera ekonomi i produktionen
-#### [Fördela tid till jobb i en jobbunt](production-control/allocate-time-jobs-job-bundle.md)
-#### [Beräkna materialförbrukning](production-control/consumption.md)
-#### [Produktionsbokföring](cost-management/production-posting.md)
-## Lean manufacturing 
-### [Lean manufacturing – översikt](production-control/lean-manufacturing-overview.md)
-### [Aktivitetsbaserad legotillverkning](production-control/activity-based-subcontracting.md)
-### Underhåll produktionshuvuddata
-#### [Skapa en lean-organisation](production-control/lean-manufacturing-modeling-lean-organization.md)
-#### [Verksamhetsresurser](production-control/operations-resources.md)
-### Tidsplanera kanban-jobb
-#### [Visuell tidsplanering för lean manufacturing](production-control/visual-scheduling-lean-manufacturing.md)
-#### [Kanban-jobbplanering för lean manufacturing](production-control/lean-manufacturing-kanban-job-scheduling.md)
-#### [Finplanering](production-control/job-scheduling.md)
-### Kör kanban-jobb
-#### [Stöd för kanban-överföringstavla för streckkodsskannrar](production-control/kanban-transfer-board-support-barcode-scanner.md)
-#### [Produktionsåterrapportering](production-control/production-feedback.md)
-## Processtillverkning
-### Underhåll produktionshuvuddata
-#### [Strukturlistor och formler](production-control/bill-of-material-bom.md)
-#### [Verksamhetsresurser](production-control/operations-resources.md)
-#### [Resurskunskaper](production-control/resource-capabilities.md)
-#### [Batchattribut](production-control/batch-attributes.md)
-#### [Standarder för produktionsorder i tillverkningskörning](production-control/production-order-defaults-manufacturing-execution.md)
-#### [Inställningskrav för produktion](production-control/production-set-up-requirements.md)
-### Schemalägg produktionsoperationer
-#### [Grovplanering](production-control/operations-scheduling.md)
-#### [Alternativ för grovplanering](production-control/operation-scheduling-options.md)
-#### [Finplanering](production-control/job-scheduling.md)
-#### [Gantt-diagram för jobbplanering](production-control/visual-scheduling-production.md)
-### Köra produktionsjobb
-#### [Konsoliderade batchorder](production-control/consolidated-batch-orders.md)
-#### [Materialersättning i tillverkning](production-control/substitute-items-bom-lines.md)
-#### [Registrering för tillverkningskörning](production-control/registration-manufacturing-execution.md)
-#### [Produktionsåterrapportering](production-control/production-feedback.md)
-#### [Tid- och närvaroregistrering](production-control/time-attendance-registrations.md) 
-### Hantera ekonomi i produktionen
-#### [Fördela tid till jobb i en jobbunt](production-control/allocate-time-jobs-job-bundle.md)
-#### [Beräkna materialförbrukning](production-control/consumption.md)
-#### [Produktionsbokföring](cost-management/production-posting.md)
-# Försäljning och marknadsföring
-## [Marknadsföring](sales-marketing/overview-sales-marketing.md)
-## Försäljningsorder
-### [Orderlöfte](sales-marketing/delivery-dates-available-promise-calculations.md)
-### [Leveransalternativ](sales-marketing/delivery-alternatives.md)
-### [Deadlines för orderregistrering](sales-marketing/order-entry-deadlines.md)
-### [Direktleveranser](sales-marketing/direct-deliveries.md)
-### [Leveransplaner](sales-marketing/delivery-schedules.md)
-### [Serienummer i försäljningsprocessen](sales-marketing/register-serial-numbers-sales-process.md)
-### [Reservation från samma batch](sales-marketing/reserve-same-batch-sales-order.md)
-## [Försäljningsavtal](sales-marketing/sales-agreements.md)
-## Försäljningsofferter
-### [Prissimulering](sales-marketing/price-simulation.md)
-## Returer
-### [Försäljningsreturer](warehousing/sales-returns.md)
-# Transporthantering
-## [En ny transportmotor](transportation/create-new-transportation-management-engine.md)
-## [Skapa en fraktsedel](transportation/create-bill-of-lading.md)
-## [Planera frakttransportrutter](transportation/plan-freight-transportation-routes-multiple-stops.md)
-## [Planera laster med hjälp av navkonsolidering](transportation/plan-loads-hub-consolidation.md)
-## [Stäm av frakt](transportation/reconcile-freight-transportation-management.md)
-## [Transporthantering](transportation/transportation-management-overview.md)
-## [Transportmotor](transportation/transportation-management-engines.md)
-# Lagerstyrning
-## Avancerad lagerstyrning
-### [Migrera från AX 2012 till Finance and Operations](warehousing/upgrade-migration-warehouse-management-processes.md)
-## Inställningar 
-### [Styr arbetsuppgifter genom att använda arbetsmallar och platsdirektiv](warehousing/control-warehouse-location-directives.md)
-### [Hantera lagerställearbetare](warehousing/manage-warehouse-workers.md)
-### [Ställ in layout](warehousing/warehouse-configuration.md)
-### [Policyer för lagerarbete](warehousing/warehouse-work-policies.md)
-### [Måttenhet och lagerpolicyer](warehousing/unit-measure-stocking-policies.md)
-### [Power BI-innehållspaket för lagerställe](/dynamics365/unified-operations/dev-itpro/analytics/warehouse-power-bi-content?toc=/dynamics365/unified-operations/scm/toc.json)
-### [Bekräftelse av batch och ID-nummer](warehousing/batch-and-license-plate-confirmation.md)
-### [Lagerrörelse med associerad arbetsuppgift](warehousing/move-inventory-associated-work.md)
-### [Systemgruppering i en öppen arbetslista](warehousing/system-group-on-open-work-list.md)
-### [Produktbekräftelse för klusterplockning](warehousing/cluster-picking-item-confirmation.md)
-## Plockning och packning
-### [Förpackningsmaterial och avgifter](warehousing/pack-materials-packing-material-fees.md)
-### [Enhetsplockningsbekräftelse](warehousing/piece-picking-confirmation.md)
-## Lagerinventering
-### [Spärra lager](inventory/inventory-blocking.md)
-### [Rullande inventering](warehousing/cycle-counting.md)
-### [Rullande inventering av del av platser](warehousing/partial-location-cycle-counting.md)
-### [Lagerjournal](inventory/inventory-journals.md)
-### [Lagerplats](inventory/inventory-locations.md)
-### [Lagerstatus](inventory/inventory-statuses.md)
-### [Lagermärkesinventering](inventory/inventory-tag-counting.md)
-## Skapande av fraktbehållare 
-## Lagerpåfyllnad
-### [Lagerpåfyllnad](warehousing/replenishment.md)
-### [Lagerpåfyllnad med uttags-kanbans](warehousing/material-replenishment-withdrawal-kanban.md)
-## Mobila enheter
-### [Installera och konfigurera lagerstyrningsappen ](warehousing/install-configure-warehousing-app.md)
-### [Konfigurera fältnamn i lagerstyrningsapp](warehousing/configure-app-field-names-priorities-warehouse.md)
-### [Ställ in mobila enheter för lagerarbete](warehousing/configure-mobile-devices-warehouse.md)
-### [Warehouse Mobile Devices Portal (WMDP)](warehousing/warehouse-mobile-devices-portal.md)
-### [Visningsinställningar för mobil enhet på lagerställe](warehousing/change-warehouse-mobile-device-displays.md)
+# [Dynamics 365 för ekonomi och åtgärder, Enterprise edition](/dynamics365/unified-operations/fin-and-ops/index?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 
-# [Ekonomi](/dynamics365/unified-operations/financials/index)
+## [Komma igång](/dynamics365/unified-operations/fin-and-ops/get-started/onboarding-home?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Microsoft FastTrack Dynamics 365](/dynamics365/unified-operations/fin-and-ops/get-started/fasttrack-dynamics-365-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Registrera dig för ett abonnemang](/dynamics365/unified-operations/dev-itpro/dev-tools/sign-up-preview-subscription?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Så här skaffar du den lokala versionen av Dynamics AX 2012](/dynamics365/unified-operations/dev-itpro/deployment/csp-download-customersource?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Distribuera en demomiljö](/dynamics365/unified-operations/dev-itpro/deployment/deploy-demo-environment?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Vad är ny eller ändrad](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Undertryckta funktioner](/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [AX 2012 ännu inte implementerade funktioner](/dynamics365/unified-operations//dev-itpro/get-started/ax-2012-features-not-implemented-but-not-deprecated?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Funktioner har inte implementerats i lokal distribution](/dynamics365/unified-operations/dev-itpro/get-started/features-not-implemented-on-prem?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 
-# [Personal](/dynamics365/unified-operations/talent/index)
+### Utforska användargränssnittet
+#### [Åtgärden Sök](/dynamics365/unified-operations/fin-and-ops/get-started/action-search?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Avancerade filtrerings- och frågealternativ syntax](/dynamics365/unified-operations/fin-and-ops/get-started/advanced-filtering-query-options?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Dynamics 365 för ekonomi och Enterprise edition klienten vanliga operationer](/dynamics365/unified-operations/fin-and-ops/get-started/client-faq?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Konfigurera och filtrera arbetsytor](/dynamics365/unified-operations/fin-and-ops/get-started/configure-filter-workspaces?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Visa sidor sida vid sida med öppna i nytt fönster ikon](/dynamics365/unified-operations/fin-and-ops/get-started/display-pages-side-by-side?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Sök i navigering](/dynamics365/unified-operations/fin-and-ops/get-started/navigation-search?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Anpassa användargränssnittet](/dynamics365/unified-operations/fin-and-ops/get-started/personalize-user-experience?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kortkommandon](/dynamics365/unified-operations/fin-and-ops/get-started/shortcut-keys?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Hantera hur sidorna visas](/dynamics365/unified-operations/fin-and-ops/get-started/window-management?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Förstå tjänster under livscykeln](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-works-lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 
-# [Butik](/dynamics365/unified-operations/retail/index)
+### Hjälp och support
+#### [Hjälp, översikt](/dynamics365/unified-operations/dev-itpro/get-started/help-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Ansluta hjälp](/dynamics365/unified-operations/dev-itpro/get-started/help-connect?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Visa och exportera fältbeskrivningar](/dynamics365/unified-operations/fin-and-ops/get-started/view-export-field-descriptions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Uppgiften guider och uppgiftsregistrering
+##### [Uppgiftsinspelning](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Skapa dokumentation och utbildning](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Lands-/ regionspecifika hjälpinnehåll](/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Ordlista](/dynamics365/unified-operations/fin-and-ops/get-started/glossary?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 
-# [Utvecklare och administratör](/dynamics365/unified-operations/dev-itpro/index)
+## Efterföljande
+### [Regler för granskningspolicy](/dynamics365/unified-operations/financials/general-ledger/audit-policy-rules?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Granska policyöverträdelser och ärenden](/dynamics365/unified-operations/financials/general-ledger/audit-policy-violations-cases?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 
-# Andra resurser
-## [Ordlista för Finance and Operations](/dynamics365/unified-operations/get-started/glossary?toc=/dynamics365/unified-operations/supply-chain/toc.json)
-## [Nyheter eller ändringar](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+## Kostnadshantering
+### Innehållet i kraft BI
+#### [Kostnadshantering innehållet](/dynamics365/unified-operations/dev-itpro/analytics/cost-management-content-pack?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### Kostnaden som förbestämda
+#### [Kostnadsredovisning](/dynamics365/unified-operations/supply-chain/costing-sheets?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kostnadsversionen](/dynamics365/unified-operations/supply-chain/costing-versions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Simulera kostnadsändringen med en kostnadsversion för planerade kostnader](/dynamics365/unified-operations/supply-chain/simulate-cost-changes-costing-version-planned-costs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### Lager och kostnadskalkylering
+#### [Justera kostnadsvärdet för lagerbehållningen](/dynamics365/unified-operations/supply-chain/inventory/adjust-hand-inventory-cost-values?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kostnadsbärare](/dynamics365/unified-operations/supply-chain/inventory/cost-object?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kostnadstransaktion](/dynamics365/unified-operations/supply-chain/inventory/cost-entries?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kostnadsgrupp](/dynamics365/unified-operations/supply-chain/inventory/cost-groups?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [FIFO med fysiskt värde och märkning](/dynamics365/unified-operations/supply-chain/inventory/fifo-physical-value-marking?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Inkludera fysiskt värde](/dynamics365/unified-operations/supply-chain/inventory/include-physical-value?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Lagervärde för objekt](/dynamics365/unified-operations/supply-chain/inventory/physical-quantity?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Lagerstängning](/dynamics365/unified-operations/supply-chain/inventory/inventory-close?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [LIFO-datum med fysiskt värde och märkning](/dynamics365/unified-operations/supply-chain/inventory/lifo-date-physical-value-marking?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [LIFO med fysiskt värde och märkning](/dynamics365/unified-operations/supply-chain/inventory/lifo-physical-value-marking?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Glidande medelvärde](/dynamics365/unified-operations/supply-chain/inventory/moving-average?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Fysiska och ekonomiska uppdateringar](/dynamics365/unified-operations/supply-chain/inventory/physical-financial-updates?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Löpande genomsnittlig självkostnad](/dynamics365/unified-operations/supply-chain/inventory/running-average-cost-price?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Spåra löpande genomsnittlig kostnad per lagerdimension](/dynamics365/unified-operations/supply-chain/inventory/track-running-average-cost-per-inventory-dimension?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Viktat genomsnittligt datum](/dynamics365/unified-operations/supply-chain/inventory/weighted-average-date?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Viktat medelvärde med fysiskt värde och märkning](/dynamics365/unified-operations/supply-chain/inventory/weighted-average-physical-value-marking?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### Produktion-kostnadsredovisning
+#### [Amortera konstanta kostnader för en tillverkad artikel](/dynamics365/unified-operations/supply-chain/amortize-constant-costs-manufactured-item?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kostnadsredovisning med bakåtavräkning](/dynamics365/unified-operations/supply-chain/backflush-costing?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Strukturlisteberäkningar](/dynamics365/unified-operations/supply-chain/bom-calculations?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Beräkningsgrupp för Strukturlista](/dynamics365/unified-operations/supply-chain/bom-calculation-groups?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Vanliga källor för produktionsavvikelse](/dynamics365/unified-operations/supply-chain/common-sources-of-production-variances?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kostnadskategori som används i produktionens operationsföljd](/dynamics365/unified-operations/supply-chain/cost-categories-used-production-routings?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kostnadskategori som används i produktionskontroll och hantering av projektredovisning](/dynamics365/unified-operations/supply-chain/cost-categories-used-production-control-project-management-accounting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Visa tillägg för en tillverkad artikel](/dynamics365/unified-operations/supply-chain/charges-manufactured-item?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Analys av produktionsorder](/dynamics365/unified-operations/supply-chain/production-order-cost-analysis?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Tillverkningsordern kostnad uppskattning](/dynamics365/unified-operations/supply-chain/production-order-cost-estimation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Produktionsbokföring](/dynamics365/unified-operations/supply-chain/production-posting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Konfigurera en produkt som tillverkas eller anskaffning](/dynamics365/unified-operations/supply-chain/manufactured-items-treated-as-purchased-items?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Metoden för total kostnadsallokering](/dynamics365/unified-operations/supply-chain/methodology-total-cost-allocation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### Standardkostnad
+#### [Strukturlisteberäkningar med standardkostnader](/dynamics365/unified-operations/supply-chain/information-used-bom-calculations-standard-costs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Hantera uppdateringen av standardkostnad](/dynamics365/unified-operations/supply-chain/manage-standard-cost-updates?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Förutsättningar för en standardkostnadskonvertering](/dynamics365/unified-operations/supply-chain/prerequisites-standard-cost-conversion?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Standard standardkostnadskonvertering – översikt](/dynamics365/unified-operations/supply-chain/standard-cost-conversion-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Uppdatera standardkostnader i en tillverkningsmiljö](/dynamics365/unified-operations/supply-chain/update-standard-costs-manufacturing-environment?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Uppdatera standardkostnaden för en ny tillverkad artikel](/dynamics365/unified-operations/supply-chain/update-standard-costs-new-manufactured-item?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Uppdatera standardkostnader i en tillverkningsmiljö](/dynamics365/unified-operations/supply-chain/update-standard-costs-non-manufacturing-environment?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 
+## [Ekonomisk förvaltning](/dynamics365/unified-operations/financials/TOC)
+
+### [Redovisning](/dynamics365/unified-operations/financials/general-ledger/general-ledger?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Konton
+##### [Periodiseringar – översikt](/dynamics365/unified-operations/financials/general-ledger/accruals-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Elimineringsregler](/dynamics365/unified-operations/financials/general-ledger/elimination-rules?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Kombinationer av konto och dimension](/dynamics365/unified-operations/financials/general-ledger/enter-account-dimension-combinations-segmented-entry-control?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Balanserat journaler för Enhetsintern redovisning](/dynamics365/unified-operations/financials/general-ledger/example-balanced-journals-interunit-accounting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Bokföringsdefinitioner](/dynamics365/unified-operations/financials/general-ledger/posting-definitions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Bokföringsexempel definition](/dynamics365/unified-operations/financials/general-ledger/example-posting-definitions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Redovisningskontosaldon](/dynamics365/unified-operations/financials/general-ledger/general-ledger-account-balances?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Typer för huvudkontot](/dynamics365/unified-operations/financials/general-ledger/main-account-types?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Planera din kontoplan](/dynamics365/unified-operations/financials/general-ledger/plan-chart-of-accounts?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Utforskaren för datakällor för redovisning](/dynamics365/unified-operations/financials/accounts-payable/accounting-source-explorer?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Redovisningsfördelningar](/dynamics365/unified-operations/financials/accounts-payable/accounting-distributions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Behandling av allokeringar](/dynamics365/unified-operations/financials/general-ledger/process-allocations?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Ekonomiska dimensioner](/dynamics365/unified-operations/financials/general-ledger/financial-dimensions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Konvertera redovisning och rapportering](/dynamics365/unified-operations/financials/general-ledger/convert-accounting-reporting-currencies?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Konsolideringskontogrupper och konton](/dynamics365/unified-operations/financials/budgeting/consolidation-account-groups-consolidation-accounts?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Konsoliderings- och översikt](/dynamics365/unified-operations/financials/budgeting/consolidation-elimination-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Räkenskapskalendrar år och perioder](/dynamics365/unified-operations/financials/budgeting/fiscal-calendars-fiscal-years-periods?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Journaler och redovisning
+##### [Bearbetning av redovisningsjournal](/dynamics365/unified-operations/financials/general-ledger/general-journal-processing?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Koncerninterna redovisningsinställningarna](/dynamics365/unified-operations/financials/general-ledger/intercompany-accounting-setup?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Allokeringsregler för redovisning](/dynamics365/unified-operations/financials/general-ledger/ledger-allocation-rules?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Journaltyper i redovisning](/dynamics365/unified-operations/financials/general-ledger/ledger-journal-types?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Publicera journalrader och dokument från Microsoft Excel](/dynamics365/unified-operations/financials/general-ledger/open-lines-excel-journals-documents?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Visa journalposter och transaktioner](/dynamics365/unified-operations/financials/general-ledger/view-journal-entries-transactions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [I ett konsolideringsföretag valutaomvärdering](/dynamics365/unified-operations/financials/general-ledger/currency-revaluation-consolidation-company?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Omvärdering i utländsk valuta för redovisningen](/dynamics365/unified-operations/financials/general-ledger/foreign-currency-revaluation-general-ledger?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Importera valutakurser](/dynamics365/unified-operations/financials/general-ledger/import-currency-exchange-rates?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Stäng periodslut
+##### [Stäng den allmänna redovisningen vid periodens slut](/dynamics365/unified-operations/financials/general-ledger/close-general-ledger-at-period-end?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Finansiell period nära arbetsytan](/dynamics365/unified-operations/financials/general-ledger/financial-period-close-workspace?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Årsslutsstängning](/dynamics365/unified-operations/financials/general-ledger/year-end-close?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Moms
+##### [Moms, översikt](/dynamics365/unified-operations/financials/general-ledger/indirect-taxes-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Momssatser utifrån bidragsunderlaget och beräkningen metoder](/dynamics365/unified-operations/financials/general-ledger/marginal-base-field?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Momsbetalningar och avrundningsregler](/dynamics365/unified-operations/financials/general-ledger/round-sales-tax-payments?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Metoder för beräkning av moms i fältet ursprung](/dynamics365/unified-operations/financials/general-ledger/sales-tax-calculation-methods-origin-field?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Hela beloppet och intervallet beräkningsalternativ för momskoder](/dynamics365/unified-operations/financials/general-ledger/whole-amount-interval-options-sales-tax-codes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### [Leverantörsreskontra](/dynamics365/unified-operations/financials/accounts-payable/accounts-payable?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Översikt av leverantörens fakturor](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Konfigurera Leverantörsreskontra](/dynamics365/unified-operations/financials/accounts-payable/accounts-payable-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Trevägs matchande principer](/dynamics365/unified-operations/financials/accounts-payable/three-way-matching-policies?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Fakturamatchning för Leverantörsreskontra](/dynamics365/unified-operations/financials/accounts-payable/accounts-payable-invoice-matching?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Redovisningsfördelningar och poster i redovisningsjournal för leverantörsfakturor](/dynamics365/unified-operations/financials/accounts-payable/accounting-distributions-subledger-journal-entries-vendor-invoices?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Fakturera matchande och koncerninterna inköpsorder](/dynamics365/unified-operations/financials/accounts-payable/invoice-matching-intercompany-purchase-orders?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Positiv lön – översikt](/dynamics365/unified-operations/financials/accounts-payable/positive-pay-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Ställa in och generera positiva lön filer](/dynamics365/unified-operations/financials/accounts-payable/set-up-generate-positive-pay-files?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Standardmotkonton för leverantörsfakturajournaler och fakturera godkännandejournaler](/dynamics365/unified-operations/financials/accounts-payable/default-offset-accounts-vendor-invoice-journals?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Lösa avvikelser vid matchning av fakturasummor](/dynamics365/unified-operations/financials/accounts-payable/resolve-invoice-totals-invoice-matching-discrepancies?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Bokföringsprofiler för leverantörer](/dynamics365/unified-operations/financials/accounts-payable/vendor-posting-profiles?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Omvärdering i utländsk valuta för Leverantörsreskontra och Kundreskontra](/dynamics365/unified-operations/financials/cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Godkännande av faktura-pilar](/dynamics365/unified-operations/financials/accounts-payable/mobile-invoice-approvals?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Leverantören fakturering samarbetsyta](/dynamics365/unified-operations/financials/accounts-payable/vendor-portal-invoicing-workspace?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Automatisering av faktura för leverantören](/dynamics365/unified-operations/financials/vendor-invoice-automation?toc=/dynamics365/unified-operations/supply-chain/toc.json) 
+#### Betalningar och kvittningar
+##### [Centraliserade betalningar för Leverantörsreskontra](/dynamics365/unified-operations/financials/accounts-payable/centralized-payments-accounts-payable?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Konfigurera kvittning](/dynamics365/unified-operations/financials/cash-bank-management/configure-settlement?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Leverantör-betalning arbetsytan](/dynamics365/unified-operations/financials/vendor-payments-workspace?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Skapa leverantörsbetalningar med hjälp av ett betalningsförslag](/dynamics365/unified-operations/financials/accounts-payable/create-vendor-payments-payment-proposal?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Återföra en leverantörsbetalning](/dynamics365/unified-operations/financials/accounts-payable/reverse-vendor-payment?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Elektronisk rapportering för leverantörscheckar](/dynamics365/unified-operations/financials/electronic-reporting-sample-vendor-checks?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Översikt över förskottsbetalningar och förskottsfakturor](/dynamics365/unified-operations/financials/accounts-payable/prepayments-invoices-vs-prepayments?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Kvitta en partiell leverantörsbetalning före rabattdatumet](/dynamics365/unified-operations/financials/accounts-payable/settle-partial-vendor-payment-before-discount-or-final-payment-after?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Kvitta en partiell leverantörsbetalning med rabatter på kreditfakturor för leverantör](/dynamics365/unified-operations/financials/accounts-payable/settle-partial-vendor-payment-discounts-vendor-credit-notes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Kvitta en partiell leverantörsbetalning med flera Rabattperioderna](/dynamics365/unified-operations/financials/accounts-payable/settle-partial-vendor-payment-multiple-discount-periods?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Kvitta en partiell leverantörsbetalning eller slutbetalningen före rabatt](/dynamics365/unified-operations/financials/accounts-payable/settle-partial-vendor-payment-or-final-payment-before-discount?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Samma verifikation med flera poster för kund eller leverantör](/dynamics365/unified-operations/financials/accounts-payable/single-voucher-multiple-customer-vendor-records?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Ta en kassarabatt utanför serviceavtalets period kassarabatt](/dynamics365/unified-operations/financials/accounts-payable/take-cash-discount-outside-cash-discount-timeframe?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Ta en rabatt som överstiger den beräknade rabatten för en leverantörsbetalning](/dynamics365/unified-operations/financials/accounts-payable/take-discount-more-calculated-discount-vendor-payment?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Under en delvis leverantörsbetalningar](/dynamics365/unified-operations/financials/accounts-payable/vendor-payments-partial-amount?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### [Kundreskontra](/dynamics365/unified-operations/financials/accounts-receivable/accounts-receivable?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kredit och inkasso i Kundreskontra](/dynamics365/unified-operations/financials/accounts-receivable/collections-credit-accounts-receivable?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Konfigurera Kundreskontra och kredit och inkasso](/dynamics365/unified-operations/financials/accounts-receivable/accounts-receivables-set-up-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Ställ in kredit- och inkassoansvarig](/dynamics365/unified-operations/financials/accounts-receivable/set-up-collections?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Ställer in och bearbetar återkommande fakturor](/dynamics365/unified-operations/financials/accounts-receivable/set-up-process-recurring-invoices?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Redovisningsfördelningar och poster i redovisningsjournal för fritextfakturor](/dynamics365/unified-operations/financials/accounts-receivable/accounting-distributions-subledger-journal-entries-free-text-invoices?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kundbokföringsprofiler](/dynamics365/unified-operations/financials/accounts-receivable/customer-posting-profiles?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [SEPA direktdebitering översikt](/dynamics365/unified-operations/financials/accounts-receivable/sepa-direct-debit-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Inställningar för kreditkort, auktorisering och hämtning](/dynamics365/unified-operations/financials/accounts-receivable/credit-card-authorizations?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Korrigera en fritextfaktura](/dynamics365/unified-operations/financials/accounts-receivable/correct-free-text-invoice?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Ställa in räntesatser för en räntekod](/dynamics365/unified-operations/financials/accounts-receivable/set-up-interest-rates-interest-code?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Efterskänk, Återställ eller återför ränteavgifter](/dynamics365/unified-operations/financials/accounts-receivable/waive-reinstate-reverse-interest-fees?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Skapa en kundfaktura](/dynamics365/unified-operations/financials/accounts-receivable/configure-customer-invoices?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Ställ in växlar](/dynamics365/unified-operations/financials/accounts-receivable/set-up-bills-exchange?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Stäng kundreskontra](/dynamics365/unified-operations/financials/accounts-receivable/close-accounts-receivable?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+#### Betalningar och kvittningar
+##### [Använd en kundbetalning för att kvitta flera fakturor som sträcker sig över flera Rabattperioderna](/dynamics365/unified-operations/financials/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Centraliserade betalningar för Kundreskontra](/dynamics365/unified-operations/financials/accounts-receivable/centralized-payments-accounts-receivable?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Kvitta delvis kundbetalning eller slutbetalningen before_discount](/dynamics365/unified-operations/financials/accounts-receivable/settle-partial-customer-payment-before-discount-or-final-payment-after?toc=/dynamics365/unified-operations/supply-chain/toc.json) 
+##### [Kvitta en delvis kundbetalning före rabattdatumet med en slutlig betalning efter rabattdatumet](/dynamics365/unified-operations/financials/accounts-receivable/settle-partial-customer-payment-before-discount-or-final-payment-after?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Kvitta en delvis kundbetalning med rabatter på kreditfakturor](/dynamics365/unified-operations/financials/accounts-receivable/settle-partial-customer-payment-discounts-credit-notes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Kvitta en delvis kundbetalning med flera Rabattperioderna](/dynamics365/unified-operations/financials/accounts-receivable/settle-partial-customer-payment-multiple-discount-periods?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Återbetala kunder](/dynamics365/unified-operations/financials/accounts-receivable/reimburse-customers?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Under en delvis kundbetalningar](/dynamics365/unified-operations/financials/accounts-receivable/customer-payments-partial-amount?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### [Kontanthantering och bankhantering](/dynamics365/unified-operations/financials/cash-bank-management/cash-bank-management?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kassaflödesprognoser](/dynamics365/unified-operations/financials/cash-bank-management/cash-flow-forecasting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Bank management arbetsytan](/dynamics365/unified-operations/financials/cash-bank-management/bank-management-workspace?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kassarabatter](/dynamics365/unified-operations/financials/cash-bank-management/cash-discount-handling-overpayments?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kvittning – översikt](/dynamics365/unified-operations/financials/cash-bank-management/settlement-overview-centralized-payments?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Översikt över kvittning för centraliserade betalningar](/dynamics365/unified-operations/financials/cash-bank-management/settlement-overview-centralized-payments?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Remburser](/dynamics365/unified-operations/financials/cash-bank-management/letters-of-credit?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Remburser och importera samlingar](/dynamics365/unified-operations/financials/cash-bank-management/letters-of-credit-import-collections?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Garantier](/dynamics365/unified-operations/financials/cash-bank-management/letters-of-guarantee?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Efterdaterade checkar](/dynamics365/unified-operations/financials/cash-bank-management/postdated-checks?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Förskottsfakturor kontra förskottsbetalningar](/dynamics365/unified-operations/financials/accounts-payable/prepayments-invoices-vs-prepayments?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Hantering av kassarabatter för överbetalningar](/dynamics365/unified-operations/financials/cash-bank-management/cash-discount-handling-overpayments?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Ställ in centraliserade betalningar](/dynamics365/unified-operations/financials/cash-bank-management/set-up-centralized-payments?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Automatisk kvittning och prioritering](/dynamics365/unified-operations/financials/accounts-receivable/automatic-settlement-prioritization?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+#### Avancerad bankavstämning
+##### [Avancerad avstämning översikt](/dynamics365/unified-operations/financials/cash-bank-management/configure-advanced-bank-reconciliation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Ställa in avancerad avstämning importprocessen](/dynamics365/unified-operations/financials/cash-bank-management/set-up-advanced-bank-reconciliation-import-process?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Ställ in regler matchningsregel för bankavstämning](/dynamics365/unified-operations/financials/cash-bank-management/set-up-bank-reconciliation-matching-rules?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Stämma av bankutdrag med avancerad bankavstämning](/dynamics365/unified-operations/financials/cash-bank-management/reconcile-bank-statements-advanced-bank-reconciliation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Avancerad bankavstämning MT940 Import-uppgradering av data sammansatt enhet](/dynamics365/unified-operations/financials/cash-bank-management/advanced-bank-reconciliation-mt940-data-entity-upgrade-steps?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Avancerad avstämning översikt](/dynamics365/unified-operations/financials/cash-bank-management/advanced-bank-reconciliation-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Bankens kontoutdrag filen Felsöka importer](/dynamics365/unified-operations/financials/cash-bank-management/import-bank-statement-file-failed-incorrect-results?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Uppdatera journal bank sammansatta enheten](/dynamics365/unified-operations/financials/cash-bank-management/upgrade-bank-journal-composite-entity?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### [Anläggningstillgångar](/dynamics365/unified-operations/financials/fixed-assets/fixed-assets?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Arbetsytan för anläggningstillgångar](/dynamics365/unified-operations/financials/fixed-assets/fixed-asset-workspace?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Avskrivning förteckning över uppgradering: översikt](/dynamics365/unified-operations/financials/fixed-assets/depreciation-book-upgrade-considerations?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Härledda avskrivningsregler](/dynamics365/unified-operations/financials/fixed-assets/derived-books?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Boka kopplade anläggningstillgångens värdemodell och avskrivningsregel](/dynamics365/unified-operations/financials/fixed-assets/fixed-asset-value-model-depreciation-book-merge?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Bokför med härledda avskrivningsregler](/dynamics365/unified-operations/financials/fixed-assets/post-derived-value-models?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Bokföra transaktioner för anläggningstillgång i bokföringsskikt](/dynamics365/unified-operations/financials/fixed-assets/post-fixed-asset-transactions-posting-layers?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Anläggningstillgång transaktionsalternativ](/dynamics365/unified-operations/financials/fixed-assets/enter-fixed-asset-transactions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Beräkna om ersättningskostnader och försäkrade värden för anläggningstillgångar](/dynamics365/unified-operations/financials/fixed-assets/recalculate-replacement-costs-insured-values-fixed-asset-groups?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Avyttrande av anläggningstillgångar bokföringskonton](/dynamics365/unified-operations/financials/fixed-assets/fixed-asset-disposal-posting-accounts?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Massuppdatering av anläggningstillgång](/dynamics365/unified-operations/financials/fixed-assets/fixed-asset-mass-update?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Förvärv av tillgångar genom inköp](/dynamics365/unified-operations/financials/fixed-assets/acquire-assets-procurement?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Ställa in och integrering
+##### [Ställa in anläggningstillgångar](/dynamics365/unified-operations/financials/fixed-assets/set-up-fixed-assets?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Integrering av anläggningstillgångar](/dynamics365/unified-operations/financials/fixed-assets/fixed-asset-integration?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Avskrivningsmetoder
+##### [125 % degressiv avskrivning](/dynamics365/unified-operations/financials/fixed-assets/125-percent-reducing-balance-depreciation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [150 % degressiv avskrivning](/dynamics365/unified-operations/financials/fixed-assets/150-percent-reducing-balance-depreciation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [175 % degressiv avskrivning](/dynamics365/unified-operations/financials/fixed-assets/175-percent-reducing-balance-depreciation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [200 % degressiv avskrivning](/dynamics365/unified-operations/financials/fixed-assets/200-percent-reducing-balance-depreciation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Bonusavskrivning](/dynamics365/unified-operations/financials/fixed-assets/bonus-depreciation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Förbrukningsavskrivning](/dynamics365/unified-operations/financials/fixed-assets/consumption-depreciation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Avskrivningseffekter med återföringar](/dynamics365/unified-operations/financials/fixed-assets/depreciation-effects-reversals?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Avskrivningsmetoder och praxis](/dynamics365/unified-operations/financials/fixed-assets/depreciation-methods-conventions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Faktoravskrivning](/dynamics365/unified-operations/financials/fixed-assets/factor-depreciation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Fast tillgångsförvärvet bokföringskonton](/dynamics365/unified-operations/financials/fixed-assets/fixed-asset-acquisition-posting-accounts?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Avskrivning av anläggningstillgångar](/dynamics365/unified-operations/financials/fixed-assets/fixed-asset-depreciation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Manuell avskrivning](/dynamics365/unified-operations/financials/fixed-assets/manual-depreciation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Minska avskrivning](/dynamics365/unified-operations/financials/fixed-assets/reduce-balance-depreciation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Avrundningsbeloppet för avskrivningsberäkningar](/dynamics365/unified-operations/financials/fixed-assets/round-off-amount-depreciation-calculations?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Linjär avskrivning för kvarstående livstid](/dynamics365/unified-operations/financials/fixed-assets/straight-line-life-remaining-depreciation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Linjär avskrivning av tjänstelivstid](/dynamics365/unified-operations/financials/fixed-assets/straight-line-service-life-depreciation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### [Budgetering](/dynamics365/unified-operations/financials/budgeting/budgeting-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Budgetöversikt för planering](/dynamics365/unified-operations/financials/budgeting/budget-planning-overview-configuration?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Budgetöversikt kontroll](/dynamics365/unified-operations/financials/budgeting/budget-control-overview-configuration?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Budgetering: översikt](/dynamics365/unified-operations/financials/budgeting/basic-budgeting-overview-configuration?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Prognoser för befattningen](/dynamics365/unified-operations/financials/budgeting/position-forecasting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Budget planering handlingar](/dynamics365/unified-operations/financials/budgeting/budget-planning-justification-docs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Skapa en budget från transaktionskonton och saldokonton](/dynamics365/unified-operations/financials/budgeting/create-budget-transaction-accounts-total-accounts?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Budgetplaneringsmallarna för Excel](/dynamics365/unified-operations/financials/budgeting/budget-planning-excel-templates?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Placera budgetering felsökning](/dynamics365/unified-operations/financials/budgeting/position-budgeting-set-up-issues?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Budgetplanering](/dynamics365/unified-operations/financials/budgeting/budget-plan?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Budget planering data allokering](/dynamics365/unified-operations/financials/budgeting/budget-planning-data-allocation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Integrationen med andra moduler för budgetplanering](/dynamics365/unified-operations/financials/budgeting/budget-planning-integration-other-modules?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Rapportering](/dynamics365/unified-operations/financials/general-ledger/financial-reporting-getting-started?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Ekonomiska rapporter i balansräkningen](/dynamics365/unified-operations/financials/general-ledger/balance-sheet-financial-reports?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Generera en ekonomisk rapport](/dynamics365/unified-operations/financials//dynamics365/unified-operations/dev-itpro/analytics/generate-financial-report?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Ekonomiskt i rapporten resultaträkning](/dynamics365/unified-operations/financials/general-ledger/income-statement-financial-report?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Ekonomiska rapporter för råbalans](/dynamics365/unified-operations/financials/general-ledger/trial-balance-financial-reports?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Visa ekonomiska rapporter](/dynamics365/unified-operations/financials/general-ledger/view-financial-reports?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Rapportdesign](/dynamics365/unified-operations/financials//dynamics365/unified-operations/dev-itpro/analytics/report-designer-interface?toc=/dynamics365/unified-operations/financials/toc.json)
+
+### [Kostnadsredovisning](/dynamics365/unified-operations/financials/cost-accounting/cost-accounting-home-page?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Termer](/dynamics365/unified-operations/financials/cost-accounting/terms-cost-accounting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Praktiska övningar (/ dynamics365/unified-operationer/ekonomi/vitt papper)](/dynamics365/unified-operations/financials/https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc)
+#### [Kostnad elementet dimensioner](/dynamics365/unified-operations/financials/cost-accounting/cost-elements?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kostnadsbärare](/dynamics365/unified-operations/financials/cost-accounting/cost-objects?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Mappa kostnad elementet dimensionsmedlemmar till en gemensam uppsättning dimensionsmedlemmar](/dynamics365/unified-operations/financials/cost-accounting/map-cost-elements-dimension-members?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Statistiska dimensionsmedlemmar och statistiska måttet provider mallar](/dynamics365/unified-operations/financials/cost-accounting/statistical-measure-provider-template?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Dimensionshierarkin](/dynamics365/unified-operations/financials/cost-accounting/dimension-hierarchy?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Fördelningsbasen](/dynamics365/unified-operations/financials/cost-accounting/allocation-bases?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Beräkningsformlerna](/dynamics365/unified-operations/financials/cost-accounting/overhead-calculation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kostnader samlade policyn och beräkningsformlerna](/dynamics365/unified-operations/financials/cost-accounting/cost-rollup?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Behörigheter på en kostnad objekt](/dynamics365/unified-operations/financials/cost-accounting/access-rights-cost-object-controller?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Arbetsytan kostnadskontroll](/dynamics365/unified-operations/financials/cost-accounting/cost-control-workspace?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kostnadskontroll mobil arbetsytan](/dynamics365/unified-operations/financials/cost-accounting/cost-controlling-mobile-workspace?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kostnadsredovisningsanalys Power BI-innehåll](/dynamics365/unified-operations/financials//dynamics365/unified-operations/dev-itpro/analytics/cost-accounting-analysis-content-pack?toc=/dynamics365/unified-operations/financials/toc.json)
+#### [Ställa in säkerhet för Kostnadsredovisningsanalys Power BI-innehåll](/dynamics365/unified-operations/financials//dynamics365/unified-operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack?toc=/dynamics365/unified-operations/financials/toc.json)
+
+### [Offentlig sektor](/dynamics365/unified-operations/financials/public-sector/public-sector-functionality?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Planen för funktionen offentlig sektor](/dynamics365/unified-operations/financials/public-sector/plan-public-sector-functionality?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Leverantörsreskontra i den offentliga sektorn](/dynamics365/unified-operations/financials/public-sector/accounts-payable-public-sector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Inköp order som finns i den offentliga sektorn](/dynamics365/unified-operations/financials/public-sector/purchase-order-codes-public-sector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Bokföringsdefinitioner i den offentliga sektorn](/dynamics365/unified-operations/financials/public-sector/posting-definitions-public-sector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Planera för engångsleverantörer i den offentliga sektorn](/dynamics365/unified-operations/financials/public-sector/plan-one-time-vendors-public-sector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Engångsleverantörer i den offentliga sektorn](/dynamics365/unified-operations/financials/public-sector/one-time-vendors-public-sector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kundreskontra i den offentliga sektorn](/dynamics365/unified-operations/financials/public-sector/accounts-receivable-public-sector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Faktureringsklassificeringar och faktureringskoder i den offentliga sektorn](/dynamics365/unified-operations/financials/public-sector/billing-classifications-billing-codes-public-sector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [I den offentliga sektorn betalningsprioritet](/dynamics365/unified-operations/financials/public-sector/settlement-priority-public-sector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Fritextfakturor i den offentliga sektorn](/dynamics365/unified-operations/financials/public-sector/free-text-invoices-public-sector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Återbetalningar i den offentliga sektorn](/dynamics365/unified-operations/financials/public-sector/reimbursements-public-sector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Budgetering i den offentliga sektorn](/dynamics365/unified-operations/financials/public-sector/budgeting-public-sector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Budgetanalys i den offentliga sektorn](/dynamics365/unified-operations/financials/public-sector/budget-analysis-public-sector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Preliminär budget och fördelningar i den offentliga sektorn](/dynamics365/unified-operations/financials/public-sector/preliminary-budgets-apportionments-public-sector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Fasta tillgångar i den offentliga sektorn](/dynamics365/unified-operations/financials/public-sector/fixed-asset-public-sector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Redovisningen i den offentliga sektorn](/dynamics365/unified-operations/financials/public-sector/general-ledger-public-sector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Avancerade transaktioner i den offentliga sektorn](/dynamics365/unified-operations/financials/public-sector/advanced-ledger-entries-public-sector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Bearbetningen i den offentliga sektorn vid årets slut](/dynamics365/unified-operations/financials/public-sector/year-end-processing-public-sector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Härledda ekonomiska hierarkier i den offentliga sektorn](/dynamics365/unified-operations/financials/public-sector/derived-financial-hierarchies-public-sector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Anskaffning och källa i den offentliga sektorn](/dynamics365/unified-operations/financials/public-sector/procurement-sourcing-public-sector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Säkerhetsroller i den offentliga sektorn](/dynamics365/unified-operations/financials/public-sector/security-roles-public-sector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Medel i den offentliga sektorn](/dynamics365/unified-operations/financials/public-sector/funds-public-sector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+## [Ekonomisk rapportering](/dynamics365/unified-operations/dev-itpro/analytics/financial-reporting-intro?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Generera en ekonomisk rapport](/dynamics365/unified-operations/dev-itpro/analytics/generate-financial-report?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Ekonomirapporten komponenter](/dynamics365/unified-operations/dev-itpro/analytics/financial-report-components?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Rapportdesign](/dynamics365/unified-operations/dev-itpro/analytics/report-designer-interface?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Användarinställningar](/dynamics365/unified-operations/dev-itpro/analytics/user-preferences-financial-report-designer?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Avancerade formateringsalternativ](/dynamics365/unified-operations/dev-itpro/analytics/advanced-formatting-options-financial-reporting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Strukturera Rapportkomponenter](/dynamics365/unified-operations/dev-itpro/analytics/organize-components-report-designer?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Rapportdefinitioner](/dynamics365/unified-operations/dev-itpro/analytics/design-financial-report-definitions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Raddefinitioner](/dynamics365/unified-operations/dev-itpro/analytics/row-definitions-financial-reporting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Kolumndefinitioner](/dynamics365/unified-operations/dev-itpro/analytics/column-definitions-financial-reports?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Ändra raddefinitionsceller](/dynamics365/unified-operations/dev-itpro/analytics/modify-row-definition-cells-financial-reporting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Återställa ekonomisk rapportering dataarkivet när du återställer en databas](/dynamics365/unified-operations/dev-itpro/analytics/reset-financial-reporting-datamart-after-restore?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### [Lokalisering – översikt](/dynamics365/unified-operations/financials/localizations//dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region?toc=/dynamics365/unified-operations/financials/localizations/toc.json)
+### Asien-Stillahavsområdet
+#### Australien
+##### [Filformat för bank](/dynamics365/unified-operations/financials/localizations/apac-aus-method-of-payment-pay-vendors-banks?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Affärsaktivitetsrapport](/dynamics365/unified-operations/financials/localizations/apac-aus-business-activity-statement?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Avskrivning för lågvärdespool](/dynamics365/unified-operations/financials/localizations/apac-aus-low-value-pool-depreciation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+#### Kina
+##### [Jämförelse av material strukturlista](/dynamics365/unified-operations/financials/localizations/apac-chn-bom-comparison?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Kinesiska verifikationer](/dynamics365/unified-operations/financials/localizations/apac-chn-vouchers?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Konfigurera integration med moms](/dynamics365/unified-operations/financials/localizations/apac-chn-tax-integration?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Vanliga frågor om kundfakturor som moms](/dynamics365/unified-operations/financials/localizations/apac-chn-tax-integration-vat-customer-invoices?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Avskrivningsmetoder för anläggningstillgångar](/dynamics365/unified-operations/financials/localizations/apac-chn-depreciation-methods-fixed-assets?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Importera data enheten kinesiska gyllene skatt](/dynamics365/unified-operations/financials/localizations/apac-chn-import-golden-tax-data-entity?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Månatliga, genomsnittliga anskaffningsvärde](/dynamics365/unified-operations/financials/localizations/apac-chn-monthly-average-cost-model?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Bokför lager huvudkonton per site](/dynamics365/unified-operations/financials/localizations/apac-chn-post-inventory-main-accounts-by-site?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Ställ in en negativ debet kredit](/dynamics365/unified-operations/financials/localizations/apac-chn-negative-debits-credits?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Japan
+##### [Bank betalningsavgifter som omfattas av leverantörer](/dynamics365/unified-operations/financials/localizations/apac-jpn-bank-payment-fees-vendors?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Konsoliderade fakturor](/dynamics365/unified-operations/financials/localizations/apac-jpn-consolidate-invoices?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### Anläggningstillgångar
+###### [Fördelningsregler](/dynamics365/unified-operations/financials/localizations/apac-jpn-allocation-rules-fixed-assets?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Vanliga frågor om avskrivning](/dynamics365/unified-operations/financials/localizations/apac-jpn-fixed-asset-depreciation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+####### [Jämnt fördelat avskrivningsmetod](/dynamics365/unified-operations/financials/localizations/apac-jpn-equally-divided-depreciation-method?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Redovisning av nedskrivningar](/dynamics365/unified-operations/financials/localizations/apac-jpn-impairment-accounting-fixed-assets?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+####### [Redovisning av nedskrivningar på CGU](/dynamics365/unified-operations/financials/localizations/apac-jpn-impairment-accounting-cash-generating-unit?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Ställ in ARO](/dynamics365/unified-operations/financials/localizations/apac-jpn-asset-retirement-obligation-fixed-assets?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Ställ in poster för minskning](/dynamics365/unified-operations/financials/localizations/apac-jpn-reduction-entry-fixed-assets?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Om du betala en leverantör genom att skriva under en växel](/dynamics365/unified-operations/financials/localizations/apac-jpn-endorse-bill-of-exchange?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Beräkning av källskatt progressiv](/dynamics365/unified-operations/financials/localizations/apac-jpn-progressive-withholding-tax-calculation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Malaysia
+##### [Varor och tjänster skatt](/dynamics365/unified-operations/financials/localizations/apac-mys-gst?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Singapore
+##### [Generera rapporten GST-05](/dynamics365/unified-operations/financials/localizations/apac-sgp-generate-gst-05-report?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Thailand
+##### [Lager-kort rapporter](/dynamics365/unified-operations/financials/localizations/apac-tha-stock-card-reports?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Orealiserad moms](/dynamics365/unified-operations/financials/localizations/apac-tha-unrealized-vat?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Källskatt](/dynamics365/unified-operations/financials/localizations/apac-tha-withholding-tax?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### Europa
+#### [Förskott](/dynamics365/unified-operations/financials/localizations/emea-advance-holders?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Redigera faktura-ID för försäljningsorder](/dynamics365/unified-operations/financials/localizations/emea-edit-invoice-id-sales-orders?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Mottagningskvitton för EU](/dynamics365/unified-operations/financials/localizations/emea-entry-certificates?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Rapportering av EU-försäljningslistan](/dynamics365/unified-operations/financials/localizations/emea-eu-sales-list?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Justeringar av valutakurs](/dynamics365/unified-operations/financials/localizations/emea-exchange-rate-adjustments?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Filformat för betalningsmetoder](/dynamics365/unified-operations/financials/localizations/emea-select-file-formats-for-the-method-of-payments?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Avyttring av anläggningstillgångar för Estland och Litauen](/dynamics365/unified-operations/financials/localizations/emea-credit-note-reverse-fixed-asset-sale?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Intrastat](/dynamics365/unified-operations/financials/localizations/emea-intrastat?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Faktura och följesedel numrering för Lettland och Litauen](/dynamics365/unified-operations/financials/localizations/emea-invoices-packing-slips-numbering?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Problemet deadlines för fakturan](/dynamics365/unified-operations/financials/localizations/emea-invoice-issue-deadline?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Standarder för OIOUBL](/dynamics365/unified-operations/financials/localizations/emea-oioubl-standards-electronic-invoicing?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Slip-betalningsrapport](/dynamics365/unified-operations/financials/localizations/emea-eur-payment-slip-report-giro?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Handkassa](/dynamics365/unified-operations/financials/localizations/emea-petty-cash?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Före anskaffningen av anläggningstillgångar](/dynamics365/unified-operations/financials/localizations/emea-pre-acquisition-acquisition-fixed-asset?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Postnummer](/dynamics365/unified-operations/financials/localizations/emea-import-create-postal-codes-manually?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Registrering-ID](/dynamics365/unified-operations/financials/localizations/emea-registration-ids?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [SEPA-kredit Överföringsöversikt](/dynamics365/unified-operations/financials/accounts-payable/sepa-credit-transfer?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [SEPA direkt debet-översikt](/dynamics365/unified-operations/financials/accounts-receivable/sepa-direct-debit-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Ställ in undertecknarna för utskriftsformulär](/dynamics365/unified-operations/financials/localizations/emea-set-up-signers-for-printing-forms?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [MOMS valutakurser](/dynamics365/unified-operations/financials/localizations/emea-vat-exchange-rate?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Visa transaktioner för kvittning](/dynamics365/unified-operations/financials/localizations/emea-transactions-settlement-form?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Österrike
+##### [Halvår avskrivning](/dynamics365/unified-operations/financials/localizations/emea-aut-half-year-depreciation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Avgifter för förpackningsmaterial](/dynamics365/unified-operations/financials/localizations/emea-aut-packing-material-fee-calculation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Momsrapport](/dynamics365/unified-operations/financials/localizations/emea-aut-vat-statement-details?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Belgien
+##### [CODA-bankutdrag](/dynamics365/unified-operations/financials/localizations/emea-bel-coda-bank-statement-import?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [INTERVAT-deklaration](/dynamics365/unified-operations/financials/localizations/emea-bel-intervat-tax-declaration?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Inställning av PRODCOM-rapport](/dynamics365/unified-operations/financials/localizations/emea-bel-prodcom-report?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Avstämningsrapporter](/dynamics365/unified-operations/financials/localizations/emea-bel-reconciliation-reports?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+#### Tjeckien
+##### [Kassarabatt på kreditnota](/dynamics365/unified-operations/financials/localizations/emea-cze-credit-note-cash-discount?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Avrundning av avskrivning](/dynamics365/unified-operations/financials/localizations/emea-cze-depreciation-rounding?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Fördröjning av avskrivning](/dynamics365/unified-operations/financials/localizations/emea-cze-depreciation-suspension-holidays?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Avskrivning av anläggningstillgångar](/dynamics365/unified-operations/financials/localizations/emea-cze-fixed-assets-depreciation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Halvårsavskrivning](/dynamics365/unified-operations/financials/localizations/emea-cze-half-depreciation-fixed-asset-disposal?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Momsrapportering](/dynamics365/unified-operations/financials/localizations/emea-cze-intra-community-vat-transactions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Momsrapport](/dynamics365/unified-operations/financials/localizations/emea-cze-vat-statement-details?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Estland
+##### [Momsrapport](/dynamics365/unified-operations/financials/localizations/emea-est-vat-statement-details?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Frankrike
+##### Offentlig sektor
+###### [Redovisning av offentlig sektor](/dynamics365/unified-operations/financials/localizations/emea-fra-public-sector-accounting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Åtaganden](/dynamics365/unified-operations/financials/localizations/emea-fra-commitments-public-sector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Mandats de paiement](/dynamics365/unified-operations/financials/localizations/emea-fra-mandats-de-paiement?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Titer de recette](/dynamics365/unified-operations/financials/localizations/emea-fra-titres-de-recette-public-sector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Innehåller leverantörsbetalning för faktura](/dynamics365/unified-operations/financials/localizations/emea-fra-vendor-invoice-payment-holds-public-sector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Kronologisk fakturor, verifikationer](/dynamics365/unified-operations/financials/localizations/emea-fra-chronological-invoices-vouchers?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Nedsättningsavskrivning](/dynamics365/unified-operations/financials/localizations/emea-fra-derogatory-depreciation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [NAF-koder och siret-nummer](/dynamics365/unified-operations/financials/localizations/emea-fra-naf-codes-siret-numbers?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Avgifter för förfallna kundbetalningar](/dynamics365/unified-operations/financials/localizations/emea-fra-apply-penalty-customer-payment-past-due?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Skriva ut klumpsumma återställning på en kundfaktura](/dynamics365/unified-operations/financials/localizations/emea-fra-print-lump-sum-recovery-text?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [RB/SL-avskrivningen](/dynamics365/unified-operations/financials/localizations/emea-fra-rbsl-depreciation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Tyskland
+##### [Ytterligare anskaffning, avskrivning](/dynamics365/unified-operations/financials/localizations/emea-deu-additional-acquisition-depreciation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Verifieringsfil](/dynamics365/unified-operations/financials/localizations/emea-deu-gdpdu-audit-data-export?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Rapport med journallista](/dynamics365/unified-operations/financials/localizations/emea-deu-journal-list-report?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Skriva ut en separat etikett för kreditnotor som kommer från försäljning](/dynamics365/unified-operations/financials/localizations/emea-deu-print-separate-label-credit-memo-originating-sales?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Ungern
+##### [Avskrivningsmetoder för anläggningstillgångar](/dynamics365/unified-operations/financials/localizations/emea-hun-fixed-assets-depreciation-methods?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Låg ingångskostnad för anläggningstillgångar](/dynamics365/unified-operations/financials/localizations/emea-hun-low-cost-fixed-assets?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Flytta en anläggningstillgång till lager](/dynamics365/unified-operations/financials/localizations/emea-hun-fixed-asset-to-inventory?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Italien
+##### [Momsinformation för utdrag](/dynamics365/unified-operations/financials/localizations/emea-ita-vat-statements-details?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Rapport över svarta listan](/dynamics365/unified-operations/financials/localizations/emea-ita-black-list-report?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Bokföringsdatum](/dynamics365/unified-operations/financials/localizations/emea-ita-competence-date?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Avskrivning av anläggningstillgångar](/dynamics365/unified-operations/financials/localizations/emea-ita-depreciation-of-fixed-assets?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Följesedeln datum verifiering för förpackningsmaterial på fakturor](/dynamics365/unified-operations/financials/localizations/emea-ita-packing-slip-date-verification-on-invoice?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Momsböcker](/dynamics365/unified-operations/financials/localizations/emea-ita-fiscal-books?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Dela upp en betalning för fakturor utfärdas till offentlig förvaltning](/dynamics365/unified-operations/financials/localizations/emea-ita-split-payment-invoices-issued-public-administration?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Källskatt](/dynamics365/unified-operations/financials/localizations/emea-ita-withholding tax?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Lettland
+##### [Bokföring av anläggningstillgångar](/dynamics365/unified-operations/financials/localizations/emea-lva-fixed-assets-accounting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Spårning av placering för anläggningstillgångar](/dynamics365/unified-operations/financials/localizations/emea-lva-fixed-assets-location-fields-change?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Skatt på naturresurser rapport](/dynamics365/unified-operations/financials/localizations/emea-lva-tax-natural-resources?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [MOMS Kontoutdragsdetaljer](/dynamics365/unified-operations/financials/localizations/emea-lva-vat-statement-details?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Litauen
+##### [Reparera anläggningstillgångsutdraget](/dynamics365/unified-operations/financials/localizations/emea-ltu-fixed-asset-repair-statement?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [MOMS Kontoutdragsdetaljer](/dynamics365/unified-operations/financials/localizations/emea-ltu-vat-statement-details?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Norge
+##### [Importformat för nät](/dynamics365/unified-operations/financials/localizations/emea-nor-nets-import-format?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Polen
+##### [Beräkna radrabatter från a-priset](/dynamics365/unified-operations/financials/localizations/emea-pol-line-discount-calculation-from-unit-price?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Korrigeringsanteckningar](/dynamics365/unified-operations/financials/localizations/emea-pol-correction-notes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Duplicera försäljningsfaktura numrering](/dynamics365/unified-operations/financials/localizations/emea-pol-sales-invoice-duplicates-numbering?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Avskrivning av anläggningstillgångar](/dynamics365/unified-operations/financials/localizations/emea-pol-fixed-assets-depreciation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Anläggningstillgång avyttrande funktionen tillägg](/dynamics365/unified-operations/financials/localizations/emea-pol-fixed-asset-disposal-functionality-extension?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Förpackningar som kan returneras](/dynamics365/unified-operations/financials/localizations/emea-pol-returnable-packages?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Momsrapporter](/dynamics365/unified-operations/financials/localizations/emea-pol-sales-tax-reports?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Standard verifieringsfil (/ dynamics365/unified-operationer/ekonomi/lokalisering/SAF)](/dynamics365/unified-operations/financials/localizations/emea-pol-standard-audit-file-saf?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Omsättning saldon utdrag](/dynamics365/unified-operations/financials/localizations/emea-pol-turnover-balances-statement?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Spanien
+##### [Använd kassarabatt på fakturan](/dynamics365/unified-operations/financials/localizations/emea-esp-cash-discount-applied-invoice?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Växeln alternativ](/dynamics365/unified-operations/financials/localizations/emea-esp-bill-of-exchange-options?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Villkorsmoms](/dynamics365/unified-operations/financials/localizations/emea-esp-conditional-sales-tax?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Räkenskapsdata fakturakonto](/dynamics365/unified-operations/financials/localizations/emea-esp-fiscal-data-invoice-account?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Omvärdering av anläggningstillgångar grupp](/dynamics365/unified-operations/financials/localizations/emea-esp-fixed-asset-group-revaluation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Inomeuropeisk moms](/dynamics365/unified-operations/financials/localizations/emea-esp-intra-community-vat?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Engångskunder](/dynamics365/unified-operations/financials/localizations/emea-esp-no-one-time-customer-for-project-contracts?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Skriv ut checkar med spansk layout](/dynamics365/unified-operations/financials/localizations/emea-esp-print-checks-with-spanish-layout?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Alternativ för skuldsedlar](/dynamics365/unified-operations/financials/localizations/emea-esp-promissory-note-options?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Försäljning och inköpscykel](/dynamics365/unified-operations/financials/localizations/emea-esp-sales-purchase-cycle?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Särskilda uppgifter och ingående ark](/dynamics365/unified-operations/financials/localizations/emea-esp-opening-sheets-spain?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Sverige
+##### [Importera betalningsformat](/dynamics365/unified-operations/financials/localizations/emea-swe-payment-formats-import?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Schweiz
+##### [Importera kundbetalningar i ESR](/dynamics365/unified-operations/financials/localizations/emea-che-esr-customer-payments-import?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Storbritannien
+##### [Konstruktion bransch schemat](/dynamics365/unified-operations/financials/localizations/emea-gbr-cis-construction-industry-scheme?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### Latinamerika
+#### Brasilien
+##### [Skatteböcker](/dynamics365/unified-operations/financials/localizations/latam-bra-fiscal-books?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Räkenskapsårets ICMS skattedokument](/dynamics365/unified-operations/financials/localizations/latam-bra-icms-tax-fiscal-documents?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Importera fiscal-dokument](/dynamics365/unified-operations/financials/localizations/latam-bra-import-fiscal-documents?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Exportera och importera juridisk person transaktioner från redovisning-konsolidering](/dynamics365/unified-operations/financials/localizations/latam-bra-general-ledger-consolidation-transactions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Importera och kontrollera NF e XML-dokument och DANFE filer](/dynamics365/unified-operations/financials/localizations/latam-bra-import-verify-nf-e-xml-documents-danfe-emails?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Bearbeta elektronisk betalning remitteringar](/dynamics365/unified-operations/financials/localizations/latam-bra-process-electronic-payment-remittances?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Skattedokument](/dynamics365/unified-operations/financials/localizations/latam-bra-fiscal-documents-fiscal-document-framework?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Skattedokument platshållare](/dynamics365/unified-operations/financials/localizations/latam-bra-fiscal-document-text-placeholders?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Kompletterande räkenskapsårets inköpsdokument](/dynamics365/unified-operations/financials/localizations/latam-bra-purchase-complementary-fiscal-documents?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Refererade fiscal-dokument](/dynamics365/unified-operations/financials/localizations/latam-bra-referenced-fiscal-documents?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Kompletterande räkenskapsårets försäljningsdokument](/dynamics365/unified-operations/financials/localizations/latam-bra-sales-complementary-fiscal-documents?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Tjänsten elektroniskt skattedokument](/dynamics365/unified-operations/financials/localizations/latam-bra-service-electronic-fiscal-document?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Journaler skapas under processen elektronisk betalning](/dynamics365/unified-operations/financials/localizations/latam-bra-examples-journals-generated-electronic-payment-return-process?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [NF e-process](/dynamics365/unified-operations/financials/localizations/latam-bra-nf-e-process?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Parametrar för juridiska personer](/dynamics365/unified-operations/financials/localizations/latam-bra-legal-entity-parameters?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Skaffa ett CIAP för anläggningstillgångar](/dynamics365/unified-operations/financials/localizations/latam-bra-ciap-fixed-asset?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Ta bort en anläggningstillgång CIAP](/dynamics365/unified-operations/financials/localizations/latam-bra-ciap-fixed-asset?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Moms](/dynamics365/unified-operations/financials/localizations/latam-bra-calculate-taxes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Skatt-attribut](/dynamics365/unified-operations/financials/localizations/latam-bra-tax-attributes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Momsbetalningar](/dynamics365/unified-operations/financials/localizations/latam-bra-tax-payments?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Mexico
+##### [Justering av inflationen deklarationsrapport](/dynamics365/unified-operations/financials/localizations/latam-mex-adjustment-inflation-declaration-report?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Utdrag för DIOT-deklaration](/dynamics365/unified-operations/financials/localizations/latam-mex-diot-declaration-statement?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Elektroniska fakturor](/dynamics365/unified-operations/financials/localizations/latam-mex-CFDI-electronic-invoices?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Elektronisk redovisning rapporter för redovisning](/dynamics365/unified-operations/financials/localizations/latam-mex-electronic-ledger-accounting-statements?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [ISR-deklarationsrapport](/dynamics365/unified-operations/financials/localizations/latam-mex-isr-declaration-report-supporting-processes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### Nordamerika
+#### [1099-vid årsslut för USA](/dynamics365/unified-operations/financials/localizations/noam-usa-year-end-1099-reporting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+## Personal
+
+### Rekrytering
+#### [Hantera en rekrytering](/dynamics365/unified-operations/fin-and-ops/hr/manage-recruiting-process?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Massanställningsprojekt](/dynamics365/unified-operations/fin-and-ops/hr/mass-hire-projects?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Löner, USA](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-payroll?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Lön-inställningar
+##### [Ställ in lön för arbetare](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-worker-position-payroll-tasks?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Skapa cykler för arbete och arbeta perioder](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-work-cycle-work-period-tasks?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Ställ in pensionsstiftelser periodisering](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-benefit-accrual-plan-tasks?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Ställ in förmåner](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-benefit-set-up-tasks?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Frekvenser och cyklar
+#### [Betala cykeln och betala period uppgifter](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Löneuppgifter beräkningen och frekvens](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-payroll-calculation-frequencies-tasks?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Arbetsschema och lämna uppgifter](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-work-schedule-leave-tasks?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Koder och skatter
+##### [Skaffa kod och tjäna kod gruppera aktiviteter](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-earning-code-group-tasks?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Skatt information uppgifter](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-tax-information-tasks?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Garnishments, moms, avgifter och bidrag betalas
+##### [Ställ in garnishments och en del avgifter](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-garnishment-tax-levy-set-up-tasks?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Anmäl arbetare till avgifter kvarstad och moms](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-garnishment-tax-levy-enrollment-tasks?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Ställ in bonus intäkter](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-premium-earning-setup-tasks?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Garnishments, moms, avgifter och avgifter administrativ FAQ](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-garnishment-tax-levy-administrative-fees?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Löneuppgifter bearbetning
+##### [Generera intäkter](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-earnings-generation-process?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Problemet betalningar för arbetare](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-issue-worker-payments?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Bokför lön och generera fakturor från leverantörer](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-post-payroll-generate-vendor-invoices?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Betala utdrag och generera betalningar FAQ](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-pay-statements-payment-generation-process?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Slutföra köpet
+##### [Bearbeta befintliga löneutbetalningar](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-existing-payroll-payments?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Bearbeta befintliga intäkter](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-existing-earnings?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Betalningsutdrag process](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-pay-statements?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Underhåll och rapportering
+##### [Uppdaterar lönedata FAQ](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-payroll-data-updates?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Generera lön-rapporter](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-generate-payroll-reports?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+## [Intelligence](/dynamics365/unified-operations/dev-itpro/analytics/information-access-reporting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Access Power BI-innehåll](/dynamics365/unified-operations/dev-itpro/analytics/power-bi-content-microsoft-partners?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### [Power BI innehåll publicerat](/dynamics365/unified-operations/dev-itpro/analytics/power-bi-home-page?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Förmåner](/dynamics365/unified-operations/dev-itpro/analytics/benefits-power-bi?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kontanter-översikt](/dynamics365/unified-operations/financials/cash-bank-management/Cash-Overview-Power-BI-content)
+#### [Översikt för Ekonomichef](/dynamics365/unified-operations/dev-itpro/analytics/CFO-power-bi?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kompensation](/dynamics365/unified-operations/dev-itpro/analytics/compensation-power-bi?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kompensationer och förmåner](/dynamics365/unified-operations/dev-itpro/analytics/compensation-and-benefits-analysis-power-bi-content-pack?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kostnadsredovisningsanalys](/dynamics365/unified-operations/dev-itpro/analytics/cost-accounting-analysis-content-pack?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Säkerhetsnyckel för kostnadsredovisning](/dynamics365/unified-operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kostnadshantering](/dynamics365/unified-operations/dev-itpro/analytics/cost-management-content-pack?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kredit och inkasso](/dynamics365/unified-operations/financials/accounts-receivable/credit-collections-power-bi)
+#### [Medarbetarens kompetenser och utveckling](/dynamics365/unified-operations/dev-itpro/analytics/employee-competencies-and-development-analysis-power-bi-content-pack?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Utveckling av medarbetare](/dynamics365/unified-operations/dev-itpro/analytics/employee-development-PBI?toc=/dynamics365/unified-operations/supply-chain/toc.json) 
+#### [Finansiella resultat](/dynamics365/unified-operations/dev-itpro/analytics/financial-performance-power-bi-content-pack?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Hantering av anläggningstillgångar](/dynamics365/unified-operations/dev-itpro/analytics//dynamics365/unified-operations/financials/fixed-assets/Fixed-asset-management-workspace)
+#### [Utbildning](/dynamics365/unified-operations/dev-itpro/analytics/learning-power-bi?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Organisationens utbildning](/dynamics365/unified-operations/dev-itpro/analytics/organizational-training-analysis-power-bi-content-pack?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Processansvarig](/dynamics365/unified-operations/dev-itpro/analytics/practice-manager-power-bi?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Produktionsprestanda](/dynamics365/unified-operations/dev-itpro/analytics/production-performance-power-bi?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Inköp spendera analys](/dynamics365/unified-operations/dev-itpro/analytics/purchase-content-pack-for-power-bi?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Rekrytering](/dynamics365/unified-operations/dev-itpro/analytics/recruiting-analysis-power-bi-content-pack?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kanaler (butik)](/dynamics365/unified-operations/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Försäljning och lönsamhet prestanda](/dynamics365/unified-operations/dev-itpro/analytics/sales-profitability-performance-content-pack?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Leverantörsbetalningar](/dynamics365/unified-operations/dev-itpro/analytics//dynamics365/unified-operations/financials/accounts-payable/Vendor-payments-workspace)
+#### [Prestanda för lagerställe](/dynamics365/unified-operations/dev-itpro/analytics/warehouse-power-bi-content?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Personalen mått](/dynamics365/unified-operations/dev-itpro/analytics/workforce-analysis-power-bi-content-pack?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### Rapportering och skriva ut dokument
+#### [Översikt över Reporting Services dokument](/dynamics365/unified-operations/dev-itpro/analytics/document-reporting-services?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Utskrift](/dynamics365/unified-operations/dev-itpro/analytics/print-documents?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Aktivera skrivare i nätverket](/dynamics365/unified-operations/dev-itpro/analytics/install-document-routing-agent?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Kör Dokumentflödesagenten som en Windows-tjänst](/dynamics365/unified-operations/dev-itpro/analytics/run-document-routing-agent-as-windows-service?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Förhindra att tidskrävande rapporter avbryts](/dynamics365/unified-operations/dev-itpro/analytics/prevent-long-running-reports-timing-out?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Lista över SQL Server Reporting Services-rapporter](/dynamics365/unified-operations/dev-itpro/analytics/SSRS-report?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Skapa lösningar för rapportering](/dynamics365/unified-operations/dev-itpro/analytics/create-nextgen-reporting-solutions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Installera rapporten formgivningsmallar](/dynamics365/unified-operations/dev-itpro/analytics/install-modern-report-design-templates?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Utöka rapporten menyalternativ](/dynamics365/unified-operations/dev-itpro/analytics/extend-report-menu-items?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Anpassad Utforming business dokument](/dynamics365/unified-operations/dev-itpro/analytics/custom-designs-business-docs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### Elektronisk rapportering
+#### [Översikt](/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Hantera konfiguration livscykel](/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting-manage-configuration-lifecycle?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Skapa en konfiguration](/dynamics365/unified-operations/dev-itpro/analytics/electronic-reporting-configuration?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Konfigurera ramverket för elektronisk rapportering](/dynamics365/unified-operations/dev-itpro/analytics/electronic-reporting-er-configure-parameters?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Hämta konfigurationer](/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Importera elektronisk rapportering konfigurationer](/dynamics365/unified-operations/dev-itpro/analytics/electronic-reporting-import-ger-configurations?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Lägga till en funktion](/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting-formulas-list-extension?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Formeldesigner](/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting-formula-designer?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Bädda in bilder och former i affärsdokument som genereras med hjälp av verktyget elektronisk rapportering](/dynamics365/unified-operations/dev-itpro/analytics/electronic-reporting-embed-images-shapes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Ändra rapporter elektroniskt genom att använda en mall i Microsoft Excel](/dynamics365/unified-operations/dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Mål](/dynamics365/unified-operations/dev-itpro/analytics/electronic-reporting-destinations?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Ställa in elektronisk rapportering med Power BI](/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Skapa elektroniska dokument och och uppdatera programdata med hjälp av verktyget elektronisk rapportering](/dynamics365/unified-operations/dev-itpro/analytics/generate-electronic-documents-update-application-data?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### Analysverktyg och visuella effekter
+#### [Analys, aggregerade mått och KPI-modellering](/dynamics365/unified-operations/dev-itpro/analytics/analytics?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Modellering och aggregerade uppgifter](/dynamics365/unified-operations/dev-itpro/analytics/model-aggregate-data?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Lägga till sammanhangsberoende BI i formulär](/dynamics365/unified-operations/dev-itpro/analytics/add-contextual-bi-forms?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Rapport med aggregerade mått](/dynamics365/unified-operations/dev-itpro/analytics/aggregate-measurements-report?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Rapport om sammansatta enheter](/dynamics365/unified-operations/dev-itpro/analytics/aggregate-data-entities-report?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Indikator (KPI) rapport](/dynamics365/unified-operations/dev-itpro/analytics/key-performance-indicators-report?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Power BI-integration](/dynamics365/unified-operations/dev-itpro/analytics/power-bi-integration?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Power inbäddade BI-integration](/dynamics365/unified-operations/dev-itpro/analytics/power-bi-embedded-integration?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Inbäddade Power BI i arbetsytor](/dynamics365/unified-operations/dev-itpro/analytics/embed-power-bi-workspaces?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Lägga till Power BI arbetsytor](/dynamics365/unified-operations/dev-itpro/analytics/add-bi-workspaces?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [PIN Power BI rapporterar till arbetsytor](/dynamics365/unified-operations/dev-itpro/analytics/pin-power-bi-reports?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Power BI-integration med entiteten butik](/dynamics365/unified-operations/dev-itpro/analytics/power-bi-integration-entity-store?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Skapa och distribuera Power BI rapporter med entiteten butik](/dynamics365/unified-operations/dev-itpro/analytics/author-distribute-power-bi-reports?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+
+## Lagerhantering
+### Skapa layout för lagerställe
+### Bearbeta inkommande
+#### [Införselöversikt](/dynamics365/unified-operations/supply-chain/inventory/arrival-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### Utgående processen
+### Ställ in Lageruppföljning
+#### [Lagerjournaler](/dynamics365/unified-operations/supply-chain/inventory/inventory-journals?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Lagerplatser](/dynamics365/unified-operations/supply-chain/inventory/inventory-locations?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Status för lager](/dynamics365/unified-operations/supply-chain/inventory/inventory-statuses?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Reservera lagerkvantitet](/dynamics365/unified-operations/supply-chain/inventory/reserve-inventory-quantities?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Reservera samma parti för en försäljningsorder](/dynamics365/unified-operations/supply-chain/sales-marketing/reserve-same-batch-sales-order?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### Försändelse-lager
+#### [Försändelse](/dynamics365/unified-operations/supply-chain/inventory/consignment?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Ställ in försändelse](/dynamics365/unified-operations/supply-chain/inventory/set-up-consignment?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### Kvalitetshantering
+#### [Inventera lagerbehållning mobil arbetsytan](/dynamics365/unified-operations/supply-chain/inventory/inventory-on-hand-mobile-workspace?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Aktivera kvalitetshantering](/dynamics365/unified-operations/supply-chain/inventory/enable-quality-management?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Lagerspärr](/dynamics365/unified-operations/supply-chain/inventory/inventory-blocking?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Hantering av avvikelse](/dynamics365/unified-operations/supply-chain/inventory/enable-nonconformance-management?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Karantänorder](/dynamics365/unified-operations/supply-chain/inventory/quarantine-orders?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kvalitetshanteringprocessen](/dynamics365/unified-operations/supply-chain/inventory/quality-management-processes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### Spåra artikel och batch
+#### [Koppla lagerbatchen](/dynamics365/unified-operations/supply-chain/inventory/merge-inventory-batches?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Spåra artikeln och råmaterial](/dynamics365/unified-operations/supply-chain/inventory/trace-items-raw-materials-inventory-production-sales?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Registrera serienumret i försäljningsprocessen](/dynamics365/unified-operations/supply-chain/sales-marketing/register-serial-numbers-sales-process)
+
+## Logistik
+### Transporthantering
+#### [En motor för transport](/dynamics365/unified-operations/supply-chain/transportation/create-new-transportation-management-engine?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Skapa en fraktsedel](/dynamics365/unified-operations/supply-chain/transportation/create-bill-of-lading?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Planera transporter flöden för frakt](/dynamics365/unified-operations/supply-chain/transportation/plan-freight-transportation-routes-multiple-stops?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Planera läses in med hjälp av NAV konsolidering](/dynamics365/unified-operations/supply-chain/transportation/plan-loads-hub-consolidation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Stäm av frakt](/dynamics365/unified-operations/supply-chain/transportation/reconcile-freight-transportation-management?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Transporthantering](/dynamics365/unified-operations/supply-chain/transportation/transportation-management-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Transport-motor](/dynamics365/unified-operations/supply-chain/transportation/transportation-management-engines?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### Lagerstyrning
+#### Inställningar 
+##### [Kontrollen arbete genom att använda mallar för arbete och direktiv plats](/dynamics365/unified-operations/supply-chain/warehousing/control-warehouse-location-directives?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Hantera lagerarbetare](/dynamics365/unified-operations/supply-chain/warehousing/manage-warehouse-workers?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Ställa in layout](/dynamics365/unified-operations/supply-chain/warehousing/warehouse-configuration?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Lagerprinciper arbete](/dynamics365/unified-operations/supply-chain/warehousing/warehouse-work-policies?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Måttenheten och lagring av principer](/dynamics365/unified-operations/supply-chain/warehousing/unit-measure-stocking-policies?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Lagerställe Power BI-innehåll](/dynamics365/unified-operations/dev-itpro/analytics/warehouse-power-bi-content?toc=/dynamics365/unified-operations/scm/toc.json)
+##### [Parti- och registreringsskylt bekräftelse](/dynamics365/unified-operations/supply-chain/warehousing/batch-and-license-plate-confirmation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Produkt-bekräftelse för plockning för kluster](/dynamics365/unified-operations/supply-chain/warehousing/cluster-picking-item-confirmation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Blandade registreringsskylt mottagning](/dynamics365/unified-operations/supply-chain/warehousing/mixed-license-plate-receiving?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Transporter med associerade resurser i Lagerstyrning](/dynamics365/unified-operations/supply-chain/warehousing/move-inventory-associated-work?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Gruppera efter en lista med öppna system](/dynamics365/unified-operations/supply-chain/warehousing/system-group-on-open-work-list?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Plocka och packa
+##### [Välj batch äldsta på en mobil enhet](/dynamics365/unified-operations/supply-chain/warehousing/pick-oldest-batch?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Del plockning bekräftelse](/dynamics365/unified-operations/supply-chain/warehousing/piece-picking-confirmation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Förpackningsmaterial och avgifter](/dynamics365/unified-operations/supply-chain/warehousing/pack-materials-packing-material-fees?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Lagerinventering
+##### [Block, lager](/dynamics365/unified-operations/supply-chain/inventory/inventory-blocking?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Cyklisk inventering](/dynamics365/unified-operations/supply-chain/warehousing/cycle-counting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Partiell plats cyklisk inventering](/dynamics365/unified-operations/supply-chain/warehousing/partial-location-cycle-counting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Lagerjournal](/dynamics365/unified-operations/supply-chain/inventory/inventory-journals?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Lagerplats](/dynamics365/unified-operations/supply-chain/inventory/inventory-locations?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Lagerstatus](/dynamics365/unified-operations/supply-chain/inventory/inventory-statuses?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Taggen lagerinventering](/dynamics365/unified-operations/supply-chain/inventory/inventory-tag-counting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Containerization 
+#### Påfyllnad
+##### [Påfyllnad](/dynamics365/unified-operations/supply-chain/warehousing/replenishment?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Påfyllnad med uttag kanban](/dynamics365/unified-operations/supply-chain/warehousing/material-replenishment-withdrawal-kanban?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Mobila enheter
+##### [Installera och konfigurera appen datalagring](/dynamics365/unified-operations/supply-chain/warehousing/install-configure-warehousing-app?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Konfigurera fältnamn i Lagerstyrning app](/dynamics365/unified-operations/supply-chain/warehousing/configure-app-field-names-priorities-warehouse?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Konfigurera mobila enheter för lagerställe](/dynamics365/unified-operations/supply-chain/warehousing/configure-mobile-devices-warehouse?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Lagerställe mobila enheter Portal (WMDP)](/dynamics365/unified-operations/supply-chain/warehousing/warehouse-mobile-devices-portal?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Mobiltelefon visningsinställningar för lagerställe](/dynamics365/unified-operations/supply-chain/warehousing/change-warehouse-mobile-device-displays?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+
+## Huvudplanering
+### Skapa efterfrågeprognos
+#### [Prognostiserad efterfrågan: översikt](/dynamics365/unified-operations/supply-chain/master-planning/introduction-demand-forecasting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Ställ in en efterfrågeprognos](/dynamics365/unified-operations/supply-chain/master-planning/demand-forecasting-setup?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Importera historiska data för efterfrågeprognoser](/dynamics365/unified-operations/supply-chain/master-planning/import-historical-data?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Generera utgångspunkt statistiska prognos](/dynamics365/unified-operations/supply-chain/master-planning/generate-statistical-baseline-forecast?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Att manuell justering av baslinjen prognos](/dynamics365/unified-operations/supply-chain/master-planning/manual-adjustments-baseline-forecast?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Auktorisera en justerade prognos](/dynamics365/unified-operations/supply-chain/master-planning/authorize-adjusted-forecast?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Övervaka prognos noggrannhet](/dynamics365/unified-operations/supply-chain/master-planning/monitor-forecast-accuracy?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Avvikande mätvärden ur historiska transaktionsdata](/dynamics365/unified-operations/supply-chain/master-planning/remove-historical-outliers-calculating-demand-forecast?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Reduceringsnycklar](/dynamics365/unified-operations/supply-chain/master-planning/reduction-keys?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### Huvudplan
+#### [Åtgärdsmeddelanden](/dynamics365/unified-operations/supply-chain/master-planning/action-messages?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Inställningar för artikeldisponering](/dynamics365/unified-operations/supply-chain/master-planning/coverage-settings?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Fördröjningar](/dynamics365/unified-operations/supply-chain/master-planning/delays?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Huvudplaner](/dynamics365/unified-operations/supply-chain/master-planning/master-plans?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Huvudplaner och multisitefunktionen](/dynamics365/unified-operations/supply-chain/master-planning/master-plan-multisite-functionality?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Planera för täckning av site, lagerställe obligatoriskt](/dynamics365/unified-operations/supply-chain/master-planning/master-plan-site-coverage-warehouse-mandatory?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Planera för täckning av site, lagerställe ej obligatoriskt](/dynamics365/unified-operations/supply-chain/master-planning/master-plan-site-coverage-warehouse-not-mandatory?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Planera för täckning av site och lagerställe, lagerställe obligatoriskt](/dynamics365/unified-operations/supply-chain/master-planning/master-plan-site-warehouse-coverage-warehouse-mandatory?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Planera för täckning av site och lagerställe, lagerställe ej obligatoriskt](/dynamics365/unified-operations/supply-chain/master-planning/master-plan-site-warehouse-coverage-warehouse-not-mandatory?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Fastställa vilken strukturlisteversion](/dynamics365/unified-operations/supply-chain/master-planning/master-plan-bom-version-determined?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Nedbrytning av en strukturlisteversion](/dynamics365/unified-operations/supply-chain/master-planning/master-plan-explosion-bom-version?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Underhåll planerade order](/dynamics365/unified-operations/supply-chain/master-planning/maintain-planned-orders?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Spåra ett Efterfrågenedbrytning](/dynamics365/unified-operations/supply-chain/master-planning/trace-explosion?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+## Orderhantering
+### Anskaffning och källa
+#### [Översikt för anskaffning och källa](/dynamics365/unified-operations/supply-chain/procurement/procurement-sourcing-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Arbetsflöde för anskaffning och källa](/dynamics365/unified-operations/supply-chain/procurement/procurement-sourcing-workflows?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Inköpspolicyer](/dynamics365/unified-operations/supply-chain/procurement/purchase-policies?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Anskaffningskataloger](/dynamics365/unified-operations/supply-chain/procurement/procurement-catalogs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Inköpsrekvisitioner](/dynamics365/unified-operations/supply-chain/procurement/purchase-requisitions-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Arbetsflödet för inköpsrekvisitioner](/dynamics365/unified-operations/supply-chain/procurement/purchase-requisitions-workflow?toc=/dynamics365/unified-operations/supply-chain/toc.json) 
+#### [Anbudsförfrågningar (anbudsförfrågningar)](/dynamics365/unified-operations/supply-chain/procurement/request-quotations?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Inköpsorder
+##### [Översikt över inköp](/dynamics365/unified-operations/supply-chain/procurement/purchase-order-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Skapa inköpsorder](/dynamics365/unified-operations/supply-chain/procurement/purchase-order-creation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Godkänn och bekräfta inköpsorder](/dynamics365/unified-operations/supply-chain/procurement/purchase-order-approval-confirmation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Priser och rabatter
+##### [Inköpsavtal](/dynamics365/unified-operations/supply-chain/procurement/purchase-agreements?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Produktinleveranser och fakturering
+##### [Produktinleverans för inköpsorder](/dynamics365/unified-operations/supply-chain/procurement/product-receipt-against-purchase-orders?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Översikt över leverantörsfakturor](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Bokföringsprofiler för leverantörer](/dynamics365/unified-operations/financials/accounts-payable/vendor-posting-profiles?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Hantering av leverantörer och samarbete
+##### [Ställa in och underhålla samarbete för leverantör](/dynamics365/unified-operations/supply-chain/procurement/set-up-maintain-vendor-collaboration?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Hantera användare av leverantören samarbete](/dynamics365/unified-operations/supply-chain/procurement/manage-vendor-collaboration-users?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Ställ in leverantörskonton](/dynamics365/unified-operations/supply-chain/procurement/set-up-vendor-accounts?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Leverantör-samarbete med externa leverantörer](/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-external-vendors?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Leverantör-samarbete med sina kunder](/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Ställ in en extern katalog för eProcurement för PunchOut](/dynamics365/unified-operations/supply-chain/procurement/set-up-external-catalog-for-punchout?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Använd externa kataloger för PunchOut eProcurement](/dynamics365/unified-operations/supply-chain/procurement/use-external-catalogs-for-punchout?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Samarbeta med leverantörer genom att använda leverantörsportal](/dynamics365/unified-operations/supply-chain/procurement/collaborate-vendors-vendor-portal?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Leverantören mobila samarbetsyta](/dynamics365/unified-operations/supply-chain/procurement/vendor-collaboration-mobile-workspace?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Säkerhetsnyckel för leverantör portalanvändare](/dynamics365/unified-operations/supply-chain/procurement/configure-security-vendor-portal-users?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### Försäljning och marknadsföring
+#### [Marknadsföring](/dynamics365/unified-operations/supply-chain/sales-marketing/overview-sales-marketing?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Försäljningsorder
+##### [Orderlöfte](/dynamics365/unified-operations/supply-chain/sales-marketing/delivery-dates-available-promise-calculations?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Alternativ leverans](/dynamics365/unified-operations/supply-chain/sales-marketing/delivery-alternatives?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Deadlines för orderregistrering](/dynamics365/unified-operations/supply-chain/sales-marketing/order-entry-deadlines?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Direktleveranser](/dynamics365/unified-operations/supply-chain/sales-marketing/direct-deliveries?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Leveransplaner](/dynamics365/unified-operations/supply-chain/sales-marketing/delivery-schedules?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Serienummer i försäljningsprocessen](/dynamics365/unified-operations/supply-chain/sales-marketing/register-serial-numbers-sales-process?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Reservation från samma batch](/dynamics365/unified-operations/supply-chain/sales-marketing/reserve-same-batch-sales-order?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Mobil arbetsytan för försäljningsorder](/dynamics365/unified-operations/supply-chain/sales-marketing/sales-orders-mobile-workspace?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Försäljningsavtal](/dynamics365/unified-operations/supply-chain/sales-marketing/sales-agreements?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Försäljningsofferter
+##### [Prissimulering](/dynamics365/unified-operations/supply-chain/sales-marketing/price-simulation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Returer
+##### [Försäljningsreturer](/dynamics365/unified-operations/supply-chain/warehousing/sales-returns?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+## [Organisationsadministration](/dynamics365/unified-operations/fin-and-ops/organization-administration/organization-administration-home-page?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Organisationer och organisationshierarkier](/dynamics365/unified-operations/fin-and-ops/organization-administration/organizations-organizational-hierarchies?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Konfigurera organisationshierarki](/dynamics365/unified-operations/fin-and-ops/organization-administration/plan-organizational-hierarchy?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Adressböcker](/dynamics365/unified-operations/fin-and-ops/organization-administration/qa-address-books?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Global adressbok](/dynamics365/unified-operations/fin-and-ops/organization-administration/overview-global-address-book?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Konfigurera globala adressböcker](/dynamics365/unified-operations/fin-and-ops/organization-administration/plan-configuration-global-address-book-additional-address-books?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Antal sekvens – översikt](/dynamics365/unified-operations/fin-and-ops/organization-administration/number-sequence-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Översikt över elektroniska signaturer](/dynamics365/unified-operations/fin-and-ops/organization-administration/electronic-signature-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Hantera ärenden: översikt](/dynamics365/unified-operations/fin-and-ops/organization-administration/cases?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Konfigurera case säkerhet, processer och kategorier](/dynamics365/unified-operations/fin-and-ops/organization-administration/plan-case-management?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Skapa postmallar](/dynamics365/unified-operations/fin-and-ops/organization-administration/record-templates?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Konfigurera och skicka e-post](/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-email?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Datum/tidsdata och tidszoner](/dynamics365/unified-operations/fin-and-ops/organization-administration/date-time-zones?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### Design, arbetsflöden
+#### [Arbetsflöde: översikt](/dynamics365/unified-operations/fin-and-ops/organization-administration/overview-workflow-system?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Arkitektur](/dynamics365/unified-operations/fin-and-ops/organization-administration/workflow-system-architecture?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Åtgärder](/dynamics365/unified-operations/fin-and-ops/organization-administration/workflow-actions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Element](/dynamics365/unified-operations/fin-and-ops/organization-administration/workflow-elements?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Skapa ett arbetsflöde](/dynamics365/unified-operations/fin-and-ops/organization-administration/create-workflow?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Konfigurera en godkännandeprocess](/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-approval-process-workflow?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Konfigurera ett godkännandesteg](/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-approval-step-workflow?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Konfigurera en automatisk uppgift](/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-automated-task-workflow?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Konfigurera ett villkorligt beslut](/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-conditional-decision-workflow?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Konfigurera ett arbetsflöde för radartikel](/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-line-item-workflow?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Konfigurera ett manuellt beslut](/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-manual-decision-workflow?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Konfigurera en manuell aktivitet](/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-manual-task-workflow?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Konfigurera en parallell aktivitet](/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-parallel-activity-workflow?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Konfigurera en parallell gren](/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-parallel-branch-workflow?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Konfigurera egenskaperna för arbetsflödet](/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-workflow-properties?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Konfigurera batchjobbet för bearbetning meddelandet](/dynamics365/unified-operations/fin-and-ops/organization-administration/workflow-batch-job-critical?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Rapporten arbetsflödestyper](/dynamics365/unified-operations/fin-and-ops/organization-administration/workflow-types-report?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+## Produktion
+### [Produktionsöversikt process](/dynamics365/unified-operations/supply-chain/production-control/production-process-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Blandat läge planering: kombinera diskreta bearbeta och lean-inköp](/dynamics365/unified-operations/supply-chain/production-control/mixed-mode-plan?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Hantera legotillverkning arbete i produktion](/dynamics365/unified-operations/supply-chain/production-control/manage-subcontract-work-production?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### Diskret tillverkning
+#### Underhåll huvuddata för produktion
+##### [Inställningskrav för produktion](/dynamics365/unified-operations/supply-chain/production-control/production-set-up-requirements?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Strukturlistor och formler](/dynamics365/unified-operations/supply-chain/production-control/bill-of-material-bom?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Strukturlistedesigner](/dynamics365/unified-operations/supply-chain/production-control/bom-designer-functionality?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Strukturlisteberäkningar](/dynamics365/unified-operations/supply-chain/cost-management/bom-calculations?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Produktionsparametrar vid körning i tillverkning](/dynamics365/unified-operations/supply-chain/production-control/production-parameters-manufacturing-execution?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Operationsresurser](/dynamics365/unified-operations/supply-chain/production-control/operations-resources?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Resurskunskaper](/dynamics365/unified-operations/supply-chain/production-control/resource-capabilities?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Flöden och operationer](/dynamics365/unified-operations/supply-chain/production-control/routes-operations?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Lagerprinciper arbete](/dynamics365/unified-operations/supply-chain/warehousing/warehouse-work-policies?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Schemalägg produktionsoperationerna
+##### [Grovplanering](/dynamics365/unified-operations/supply-chain/production-control/operations-scheduling?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Finplanering](/dynamics365/unified-operations/supply-chain/production-control/job-scheduling?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Gantt-diagram för jobbplanering](/dynamics365/unified-operations/supply-chain/production-control/visual-scheduling-production?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Alternativ för operationsplanering](/dynamics365/unified-operations/supply-chain/production-control/operation-scheduling-options?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Använda produktionsjobb
+##### [Skapa produktionsorder](/dynamics365/unified-operations/supply-chain/production-control/create-production-orders?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Frisläpp tillverkningsorder](/dynamics365/unified-operations/supply-chain/production-control/release-production-orders?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Återför statusen för en produktionsorder](/dynamics365/unified-operations/supply-chain/production-control/reverse-production-order-status?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Rapportera tillverkningsorder som färdiga](/dynamics365/unified-operations/supply-chain/production-control/report-production-orders-as-finished?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Rapporten strukturlista som färdig](/dynamics365/unified-operations/supply-chain/production-control/report-boms-as-finished?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Material ersättning vid tillverkningen](/dynamics365/unified-operations/supply-chain/production-control/substitute-items-bom-lines?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Registrering för Tillverkningskörning](/dynamics365/unified-operations/supply-chain/production-control/registration-manufacturing-execution?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Återrapportering för produkter](/dynamics365/unified-operations/supply-chain/production-control/production-feedback?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Registrering av tid och närvaro](/dynamics365/unified-operations/supply-chain/production-control/time-attendance-registrations?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Hantera ekonomi i produktion
+##### [Fördela tid till jobb i en bunt av jobb](/dynamics365/unified-operations/supply-chain/production-control/allocate-time-jobs-job-bundle?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Beräkna materialförbrukningen](/dynamics365/unified-operations/supply-chain/production-control/consumption?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Produktionsbokföring](/dynamics365/unified-operations/supply-chain/cost-management/production-posting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Hantera råmaterial
+##### [Direktutleverans från tillverkningsorder till utlastningsplatser](/dynamics365/unified-operations/supply-chain/production-control/cross-docking-opportunities?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Registrera materialförbrukning med en mobil enhet](/dynamics365/unified-operations/supply-chain/production-control/register-material-consumption-hand-held-device?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### Lean manufacturing 
+#### [Översikt för Lean manufacturing](/dynamics365/unified-operations/supply-chain/production-control/lean-manufacturing-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Verksamhetsbaserade legotillverkning](/dynamics365/unified-operations/supply-chain/production-control/activity-based-subcontracting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Underhåll huvuddata för produktion
+##### [Utforma en resurssnål organisation](/dynamics365/unified-operations/supply-chain/production-control/lean-manufacturing-modeling-lean-organization?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Operationsresurser](/dynamics365/unified-operations/supply-chain/production-control/operations-resources?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Planera kanban-jobb
+##### [Visuell tidsplanering för lean manufacturing](/dynamics365/unified-operations/supply-chain/production-control/visual-scheduling-lean-manufacturing?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Kanban-jobbet tidsplanering för lean manufacturing](/dynamics365/unified-operations/supply-chain/production-control/lean-manufacturing-kanban-job-scheduling?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Finplanering](/dynamics365/unified-operations/supply-chain/production-control/job-scheduling?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Använda kanban-jobb
+##### [Kanban-Överföringstavla stöd för skannrar streckkod](/dynamics365/unified-operations/supply-chain/production-control/kanban-transfer-board-support-barcode-scanner?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Återrapportering för produkter](/dynamics365/unified-operations/supply-chain/production-control/production-feedback?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### Processtillverkning
+#### Underhåll huvuddata för produktion
+##### [Strukturlistor och formler](/dynamics365/unified-operations/supply-chain/production-control/bill-of-material-bom?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Operationsresurser](/dynamics365/unified-operations/supply-chain/production-control/operations-resources?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Resurskunskaper](/dynamics365/unified-operations/supply-chain/production-control/resource-capabilities?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Batchattribut](/dynamics365/unified-operations/supply-chain/production-control/batch-attributes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Produktionsparametrar vid körning i tillverkning](/dynamics365/unified-operations/supply-chain/production-control/production-parameters-manufacturing-execution?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Inställningskrav för produktion](/dynamics365/unified-operations/supply-chain/production-control/production-set-up-requirements?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Schemalägg produktionsoperationerna
+##### [Grovplanering](/dynamics365/unified-operations/supply-chain/production-control/operations-scheduling?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Alternativ för operationsplanering](/dynamics365/unified-operations/supply-chain/production-control/operation-scheduling-options?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Finplanering](/dynamics365/unified-operations/supply-chain/production-control/job-scheduling?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Använda produktionsjobb
+##### [Konsoliderade batchorder](/dynamics365/unified-operations/supply-chain/production-control/consolidated-batch-orders?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Material ersättning vid tillverkningen](/dynamics365/unified-operations/supply-chain/production-control/substitute-items-bom-lines?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Registrering för Tillverkningskörning](/dynamics365/unified-operations/supply-chain/production-control/registration-manufacturing-execution?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Återrapportering för produkter](/dynamics365/unified-operations/supply-chain/production-control/production-feedback?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Registrering av tid och närvaro](/dynamics365/unified-operations/supply-chain/production-control/time-attendance-registrations?toc=/dynamics365/unified-operations/supply-chain/toc.json) 
+#### Hantera ekonomi i produktion
+##### [Fördela tid till jobb i en bunt av jobb](/dynamics365/unified-operations/supply-chain/production-control/allocate-time-jobs-job-bundle?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Beräkna materialförbrukningen](/dynamics365/unified-operations/supply-chain/production-control/consumption?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Produktionsbokföring](/dynamics365/unified-operations/supply-chain/cost-management/production-posting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+## Produktinformationshantering
+### [Produktöversikt information](/dynamics365/unified-operations/supply-chain/pim/product-information?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### Underhåll produktkategorier för
+### Hantera produktinformation
+#### Underhåll produktdefinition
+##### [Antal nomenklaturen](/dynamics365/unified-operations/supply-chain/pim/product-variant-identification-nomenclature?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### Produktmallar
+##### [Produktdimension](/dynamics365/unified-operations/supply-chain/pim/product-dimensions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### Produktattribut
+##### Produkten bilder och bifogade filer
+##### Produkt-ID: n
+##### [Översättning av produktinformation FAQ](/dynamics365/unified-operations/supply-chain/pim/translations-product-related-information?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Frisläpp produkter till juridiska personer
+#### Sök efter produkter
+##### [Söka efter produkt under orderregistreringen](/dynamics365/unified-operations/supply-chain/pim/search-products-product-variants?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Förbereda produkt för planering
+##### [Standardorderinställningar för dimensioner och produktvarianter](/dynamics365/unified-operations/supply-chain/production-control/default-order-settings?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### Prognosmodeller och artikelallokeringsnycklar
+#### Förbereda produkt för produktion
+##### Strukturlista och formel
+###### [Strukturlistor och formler](/dynamics365/unified-operations/supply-chain/production-control/bill-of-material-bom?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Använda strukturlistedesignern](/dynamics365/unified-operations/supply-chain/production-control/bom-designer-functionality?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Använd formeldesignern](/dynamics365/unified-operations/supply-chain/production-control/formula-designer?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### Flöden
+##### Lean manufacturing
+#### Förbereda produkter för lager och logistik
+#### Uppskatta kostnad för produkter
+##### [Strukturlisteberäkningar](/dynamics365/unified-operations/supply-chain/cost-management/bom-calculations?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### Underhåll produktkonfigurationsmodeller
+#### [Skapa en modell för produktkonfiguration](/dynamics365/unified-operations/supply-chain/pim/build-product-configuration-model?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Beräkningen för produkten konfiguration modell FAQ](/dynamics365/unified-operations/supply-chain/pim/calculate-product-configuration-models?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Konfigurationsregel](/dynamics365/unified-operations/supply-chain/pim/configuration-rules?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Dimensionsbaserad konfiguration](/dynamics365/unified-operations/supply-chain/pim/dimension-based-product-configuration?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Begränsningen uttryck och tabell](/dynamics365/unified-operations/supply-chain/pim/expression-constraints-table-constraints-product-configuration-models?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Återanvända produktkonfiguration](/dynamics365/unified-operations/supply-chain/pim/reuse-product-configurations?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Konfigurera modell för produktkonfiguration](/dynamics365/unified-operations/supply-chain/pim/set-up-maintain-product-configuration-model?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Systemdefinierad och användardefinierad registerbegränsning](/dynamics365/unified-operations/supply-chain/pim/system-defined-user-defined-table-constraints?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### Importera produktdata information
+### Exportera information produktdata
+
+## [Projekthantering och redovisning](/dynamics365/unified-operations/financials/project-management/overview-project-management-accounting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Koncernintern fakturering](/dynamics365/unified-operations/financials/project-management/intercompany-invoicing?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Projektets kostnader påförs inleveranser](/dynamics365/unified-operations/financials/accounts-payable/project-cost-accrual-purchase-receipts?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Fakturera projekt](/dynamics365/unified-operations/financials/accounts-payable/project-invoicing?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Projektkontrakt](/dynamics365/unified-operations/financials/project-management/project-contracts?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Prognoser och budget](/dynamics365/unified-operations/financials/project-management/project-forecasts-budgets?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Inköpsorder för ett projekt](/dynamics365/unified-operations/financials/project-management/project-purchase-orders?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Projektofferter](/dynamics365/unified-operations/financials/project-management/project-quotations?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Projekt-resourcing](/dynamics365/unified-operations/financials/project-management/project-resourcing?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Arbetsfördelning](/dynamics365/unified-operations/financials/project-management/work-breakdown-structures?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Tid transaktionen mobila Projektarbetsyta](/dynamics365/unified-operations/financials/project-management/project-time-entry-mobile-workspace?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+## [Utveckling och administration med enhetlig operationer plattform](/dynamics365/unified-operations/dev-itpro/index)
+
+### [Översikt över utvecklingen och administration](/dynamics365/unified-operations/dev-itpro/get-started/getting-started-home-page?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Systemkrav](/dynamics365/unified-operations/dev-itpro/get-started/system-requirements?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Demo data – översikt](/dynamics365/unified-operations/dev-itpro/get-started/demo-data?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Hjälpsystemet
+##### [Hjälpsystem, översikt](/dynamics365/unified-operations/dev-itpro/get-started/help-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Ansluta hjälpsystemet](/dynamics365/unified-operations/dev-itpro/get-started/help-connect?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Vad är ny eller ändrad](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Operationer plattformsuppdatering 7 (maj 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-7?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Operationer plattformsuppdatering 6 (April 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-6?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Operationer plattformsuppdatering 5 (mars 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-5?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Operationer plattformsuppdatering 4 (februari 2017)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-4?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Operationer version 1611 (2016 November)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-dynamics-365-operations-1611?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Operationer plattformsuppdatering 3 (2016 November)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-3?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Uppdatering för Dynamics AX plattform 2 (augusti 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-platform-update-2?toc=/dynamics365/unified-operations/supply-chain/toc.json) 
+##### [Dynamics AX application version 7.0.1 (maj 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed-application-version-7-0-1-may-2016?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Dynamics AX plattformsuppdatering 1 (kan 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed-platform-version-7-1-may-2016?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Dynamics AX 7.0 (februari 2016)](/dynamics365/unified-operations/dev-itpro/get-started/whats-new-changed-7-0-february-2016?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### Uppgift uppdaterad guider
+###### [November 2016 aktiviteter stödlinjerna](/dynamics365/unified-operations/dev-itpro/get-started/new-task-guides-november-2016?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Augusti 2016 aktiviteter stödlinjerna](/dynamics365/unified-operations/dev-itpro/get-started/new-updated-task-guides-available-august-2016?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Maj 2016 aktiviteter stödlinjerna](/dynamics365/unified-operations/dev-itpro/get-started/new-updated-task-guides-available-may-2016?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Februari 2016 aktiviteter stödlinjerna](/dynamics365/unified-operations/dev-itpro/get-started/new-task-guides-available-february-2016?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+
+### [Utveckla och anpassa med hjälp av Visual Studio](/dynamics365/unified-operations/dev-itpro/dev-tools/developer-home-page?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Programmet stack och server-arkitektur](/dynamics365/unified-operations/dev-itpro/dev-tools/application-stack-server-architecture?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Hämta en utvärderingsversion](/dynamics365/unified-operations/dev-itpro/dev-tools/get-evaluation-copy?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Registrera dig för ett abonnemang](/dynamics365/unified-operations/dev-itpro/dev-tools/sign-up-preview-subscription?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Komma åt Dynamics 365 för ekonomi och operationer Enterprise edition instanser](/dynamics365/unified-operations/dev-itpro/dev-tools/dev-tools/access-instances?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Systemkrav för utveckling](/dynamics365/unified-operations/dev-itpro/dev-tools/development-system-requirements?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Exempelprogrammet för hantering av flottan
+##### [Exempelprogrammet för hantering av flottan](/dynamics365/unified-operations/dev-itpro/dev-tools/fleet-management-sample?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Flottan prov program – Översikt](/dynamics365/unified-operations/dev-itpro/dev-tools/introduction-fleet-management-sample?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Visual Studio tools
+##### [Översikt över verktyg för utveckling](/dynamics365/unified-operations/dev-itpro/dev-tools/development-tools-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Utveckling av verktyg självstudier](/dynamics365/unified-operations/dev-itpro/dev-tools/introduction-visual-studio?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Programutforskaren](/dynamics365/unified-operations/dev-itpro/dev-tools/application-explorer?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Skapa och felsöka ett projekt](/dynamics365/unified-operations/dev-itpro/dev-tools/build-debug-project?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Skapa åtgärder](/dynamics365/unified-operations/dev-itpro/dev-tools/build-operations?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Kodredigeraren](/dynamics365/unified-operations/dev-itpro/dev-tools/code-editor?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Skapa en modell- och modellelement](/dynamics365/unified-operations/dev-itpro/dev-tools/create-data-model-elements?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Skapa en ny användare på en dator för utveckling](/dynamics365/unified-operations/dev-itpro/dev-tools/enable-development-machine?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Anpassa rapport](/dynamics365/unified-operations/dev-itpro/dev-tools/customization-analysis-report?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Utvecklingsverktyg](/dynamics365/unified-operations/dev-itpro/dev-tools/development-tools?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Elementet designers](/dynamics365/unified-operations/dev-itpro/dev-tools/element-designers?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Användning av element](/dynamics365/unified-operations/dev-itpro/dev-tools/element-usage?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Exportera och importera en modell](/dynamics365/unified-operations/dev-itpro/dev-tools/models-export-import?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Sök metadata i Visual Studio](/dynamics365/unified-operations/dev-itpro/dev-tools/metadata-search-visual-studio?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Modeller](/dynamics365/unified-operations/dev-itpro/dev-tools/models?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Projekt i Dynamics 365 för ekonomi och åtgärder, Enterprise edition](/dynamics365/unified-operations/dev-itpro/dev-tools/projects?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Verktyg tillägg för Visual Studio](/dynamics365/unified-operations/dev-itpro/dev-tools/developer-tools-add-ins?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Inaktivera anpassning av modellen och Skriv funktioner](/dynamics365/unified-operations/dev-itpro/dev-tools/lock-models?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Uppdatera Visual Studio utvecklingsverktyg](/dynamics365/unified-operations/dev-itpro/dev-tools/update-development-tools?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### X ++-programmeringsspråk
+##### [Funktioner för X ++ och felsökning](/dynamics365/unified-operations/dev-itpro/dev-tools/new-x-debugger-features?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Felsökning av X ++ mot en kopia av en produktionsdatabas](/dynamics365/unified-operations/dev-itpro/dev-tools/debug-x-issue-against-copy-of-production?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Felsökning av X ++-kod](/dynamics365/unified-operations/dev-itpro/dev-tools/debug-xpp?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Klasser för EventHandlerResult i fråga eller ett svar scenarier](/dynamics365/unified-operations/dev-itpro/dev-tools/event-handler-result-class?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Skriv affärslogik med ### C och X ++ källkod](/dynamics365/unified-operations/dev-itpro/dev-tools/write-business-logic?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Stöd för programmeringsspråk](/dynamics365/unified-operations/dev-itpro/dev-tools/programming-language-support?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [LINQ provider för C#](/dynamics365/unified-operations/dev-itpro/dev-tools/linq-provider-c?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Metodtips för redigering](/dynamics365/unified-operations/dev-itpro/dev-tools/author-best-practice-rules?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Egenskaper för Programutforskaren](/dynamics365/unified-operations/dev-itpro/dev-ref/application-explorer-aot-properties?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### X ++-Språkreferens
+###### [X ++-Språkreferens](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-language-reference?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [X ++ variabler och datatyper](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-variables-data-types?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [X ++-uttryck, loopar och undantagshantering](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-statements-loops?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [X ++-operatorer](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-operators?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [X ++-operatorer](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-operator-precedence?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [X ++-klasser och -metoder](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-classes-methods?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [X ++-brytpunkten och hantering](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-data-query?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [X ++-makron](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-macros?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Attributklasser X ++](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-attribute-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Jämförelse av X ++ och C ###](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-cs-comparison?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [X ++-uttryck](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-syntax?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Kompileringsfunktioner
+##### [X ++-kompileringen funktioner](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-compile-time-functions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Funktioner
+##### [X ++-Runtime affärsfunktioner](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-business-run-time-functions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [X ++-behållare funktioner](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-container-run-time-functions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [X ++-Runtime konverteringsfunktionerna](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-conversion-run-time-functions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [X ++-Runtime datumfunktioner](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-date-run-time-functions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [X ++ matematiska funktioner](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-math-run-time-functions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [X ++ reflektion funktioner](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-reflection-run-time-functions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [X ++ funktioner](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-run-time-functions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [X ++-session funktioner](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-session-run-time-functions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [X ++-Runtime strängfunktioner](/dynamics365/unified-operations/dev-itpro/dev-ref/xpp-string-run-time-functions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Systemtabeller
+##### [Systemtabeller](/dynamics365/unified-operations/dev-itpro/dev-ref/system-tables?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Systemklasser
+##### [API-klassen och tabellreferens](/dynamics365/unified-operations/dev-itpro/dev-ref/api-reference?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [En klasser](/dynamics365/unified-operations/dev-itpro/dev-ref/a-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [B-klasser](/dynamics365/unified-operations/dev-itpro/dev-ref/b-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [C-klasser](/dynamics365/unified-operations/dev-itpro/dev-ref/c-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [D-klasser](/dynamics365/unified-operations/dev-itpro/dev-ref/d-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [E-klasser](/dynamics365/unified-operations/dev-itpro/dev-ref/e-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [F klasser: FieldBinding till FormBuildAnimateControl](/dynamics365/unified-operations/dev-itpro/dev-ref/fieldbinding-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [F klasser: FormBuildButtonControl till FormBuildFastTabSummarySeparator](/dynamics365/unified-operations/dev-itpro/dev-ref/formbuildbuttoncontrol-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [F klasser: FormBuildFilterPaneControl till FormBuildRealControl](/dynamics365/unified-operations/dev-itpro/dev-ref/formbuildfilterpanecontrol-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [F klasser: FormBuildReferenceControl till FormButtonSeparatorControl](/dynamics365/unified-operations/dev-itpro/dev-ref/formbuildreferencecontrol-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [F klasser: FormChangeTracker till FormControlEventArgs](/dynamics365/unified-operations/dev-itpro/dev-ref/formchangetracker-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [F klasser: FormDataObject till FormFastTabHeaderControl](/dynamics365/unified-operations/dev-itpro/dev-ref/formdataobject-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [F klasser: FormFastTabSummarySeparator till FormGridControl](/dynamics365/unified-operations/dev-itpro/dev-ref/formfasttabsummaryseparator-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [F klasser: FormGroupControl till FormIntControl](/dynamics365/unified-operations/dev-itpro/dev-ref/formgroupcontrol-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [F klasser: FormListBoxControl till FormNotifyEventArgs](/dynamics365/unified-operations/dev-itpro/dev-ref/formlistboxcontrol-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [F klasser: FormObject till FormRealControl](/dynamics365/unified-operations/dev-itpro/dev-ref/formobject-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [F klasser: FormReferenceControl till FormStringControl](/dynamics365/unified-operations/dev-itpro/dev-ref/formreferencecontrol-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [F klasser: FormTabControl till FormWindowControl](/dynamics365/unified-operations/dev-itpro/dev-ref/formtabcontrol-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [G-klasser](/dynamics365/unified-operations/dev-itpro/dev-ref/g-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [H-klasser](/dynamics365/unified-operations/dev-itpro/dev-ref/h-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Jag klasser](/dynamics365/unified-operations/dev-itpro/dev-ref/i-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [J-klasser](/dynamics365/unified-operations/dev-itpro/dev-ref/j-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [K-klasser](/dynamics365/unified-operations/dev-itpro/dev-ref/k-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [L-klasser](/dynamics365/unified-operations/dev-itpro/dev-ref/l-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [M-klasser](/dynamics365/unified-operations/dev-itpro/dev-ref/m-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [N-klasser](/dynamics365/unified-operations/dev-itpro/dev-ref/n-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [O-klasser](/dynamics365/unified-operations/dev-itpro/dev-ref/o-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [P-klasser](/dynamics365/unified-operations/dev-itpro/dev-ref/p-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Q-klasser](/dynamics365/unified-operations/dev-itpro/dev-ref/q-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [R-klasser](/dynamics365/unified-operations/dev-itpro/dev-ref/r-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [S-klasser](/dynamics365/unified-operations/dev-itpro/dev-ref/s-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [T-klasser](/dynamics365/unified-operations/dev-itpro/dev-ref/t-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [U-klasser](/dynamics365/unified-operations/dev-itpro/dev-ref/u-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [V-klasser](/dynamics365/unified-operations/dev-itpro/dev-ref/v-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [W-klasser](/dynamics365/unified-operations/dev-itpro/dev-ref/w-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [X-klasser](/dynamics365/unified-operations/dev-itpro/dev-ref/x-classes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Anpassa med tillägg och overlayering
+##### Tillägg
+##### [Anpassa modellelement med tillägg](/dynamics365/unified-operations/dev-itpro/extensibility/customize-model-elements-extensions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Anpassa med tillägg och overlayering](/dynamics365/unified-operations/dev-itpro/extensibility/customization-overlayering-extensions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Klassen tillägg](/dynamics365/unified-operations/dev-itpro/extensibility/class-extensions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Utöka klassen RunBase](/dynamics365/unified-operations/dev-itpro/extensibility/extend-runbase-class?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Utöka området sekvens](/dynamics365/unified-operations/dev-itpro/extensibility/extend-number-sequence-scope?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### Databassynkronisering
+#### Flytta paket mellan miljöer
+##### Skapa och använda en distribuerbara paketet
+##### [Kontinuerlig leverans](/dynamics365/unified-operations/dev-itpro/continuous-delivery-home-page?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+
+#### Startsida för prestanda
+##### [Ta med Trace parser spårning](/dynamics365/unified-operations/dev-itpro/perf-test/trace-trace-tutorial?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [PerfSDK och fleranvändartester med Visual Studio Team Services](/dynamics365/unified-operations/dev-itpro/perf-test/perfsdk-tutorial?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Diagnoser och analysera prestandaproblem med Trace parser](/dynamics365/unified-operations/dev-itpro/perf-test/trace-parser?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Timer för prestanda](/dynamics365/unified-operations/dev-itpro/perf-test/performance-timer?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Testa stöd i Visual Studio
+##### [Testa och valideringar](/dynamics365/unified-operations/dev-itpro/perf-test/testing-validation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Testa projekt i Visual Studio](/dynamics365/unified-operations/dev-itpro/perf-test/testing-support?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Distributionen med kontinuerlig bygget och automatisering av testet](/dynamics365/unified-operations/dev-itpro/perf-test/continuous-build-test-automation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Datum
+##### [Datum effektivitet](/dynamics365/unified-operations/dev-itpro/dev-tools/date-effectivity?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Licensiering
+##### [ISV-licensiering](/dynamics365/unified-operations/dev-itpro/dev-tools/isv-licensing?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### [User interface utveckling](/dynamics365/unified-operations/dev-itpro/user-interface/user-interface-development-home-page?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Självstudier
+##### [Generera formulär hyra tilläggstyp](/dynamics365/unified-operations/dev-itpro/user-interface/build-rental-charge-type-form?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Skapa kundformuläret](/dynamics365/unified-operations/dev-itpro/user-interface/build-customer-form?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Skapa navigering](/dynamics365/unified-operations/dev-itpro/user-interface/build-navigation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Skapa en arbetsyta](/dynamics365/unified-operations/dev-itpro/user-interface/build-workspace?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Formulär
+##### [Navigering i Dynamics 365 för ekonomi och åtgärder, Enterprise edition](/dynamics365/unified-operations/dev-itpro/user-interface/page-navigation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Layout i Dynamics 365 för ekonomi och åtgärder, Enterprise edition](/dynamics365/unified-operations/dev-itpro/user-interface/page-layout?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Symbolteckensnittet](/dynamics365/unified-operations/dev-itpro/user-interface/symbol-font?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Testa formulär med egna mönster](/dynamics365/unified-operations/dev-itpro/user-interface/testing-forms-custom-patterns?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Skapa och använda länkar djup](/dynamics365/unified-operations/dev-itpro/user-interface/create-deep-links?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Hjälpmedel i formulär, produkter och kontroller](/dynamics365/unified-operations/dev-itpro/user-interface/enable-accessibility?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Anpassa fältet hjälp](/dynamics365/unified-operations/dev-itpro/user-interface/customize-field-help?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Kontroller
+##### [Kontrollerar om åtgärden](/dynamics365/unified-operations/dev-itpro/user-interface/action-controls?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Indata och kolumnernas storlek för rutnät](/dynamics365/unified-operations/dev-itpro/user-interface/sizing-input-controls-grid-columns?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Kryssrutan stöd i trädkontroller](/dynamics365/unified-operations/dev-itpro/user-interface/check-box-tree-controls?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Filter](/dynamics365/unified-operations/dev-itpro/user-interface/filtering?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Kontroll över värddator PowerApps](/dynamics365/unified-operations/dev-itpro/user-interface/powerapps-host-control?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Fönsterhantering
+##### [Migrera koden kontext](/dynamics365/unified-operations/dev-itpro/user-interface/migration-upgrade/code-migration-context-menus?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Kod för dubbelklickning, mus migrering](/dynamics365/unified-operations/dev-itpro/user-interface/migration-upgrade/code-migration-double-click?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Sammanhangsberoende datainmatning för sökningar](/dynamics365/unified-operations/dev-itpro/user-interface/contextual-data-entry-lookups?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [HierarchyViewer kontroll](/dynamics365/unified-operations/dev-itpro/user-interface/hierarchy-viewer-control?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Sökning efter kontroller](/dynamics365/unified-operations/dev-itpro/user-interface/lookups-controls?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Kontrollerar filen överföring](/dynamics365/unified-operations/dev-itpro/user-interface/file-upload-control?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Systemdefinierade knappar](/dynamics365/unified-operations/dev-itpro/user-interface/system-defined-buttons?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Bilder](/dynamics365/unified-operations/dev-itpro/user-interface/images-form-grid?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Färger för tecken och bakgrundsfärger kontrollerna indata, tabell och rutnät](/dynamics365/unified-operations/dev-itpro/user-interface/specify-color-font-background-controls?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Höger till vänster-support och dubbelriktade språk](/dynamics365/unified-operations/dev-itpro/user-interface/bidirectional-support?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Skapa ikoner för arbetsytan Sammanfattning](/dynamics365/unified-operations/dev-itpro/user-interface/create-icons-workspace-tiles?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Extensible kontrollerar - offentlig JavaScript APIs](/dynamics365/unified-operations/dev-itpro/user-interface/public-javascript-apis?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Checklista för kontroll](/dynamics365/unified-operations/dev-itpro/user-interface/control-checklist?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Meddelanden
+##### [Skjutreglaget och MessageBox](/dynamics365/unified-operations/dev-itpro/user-interface/slider-messagebox?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Meddelandecenter, meddelandefältet och information om API](/dynamics365/unified-operations/dev-itpro/user-interface/messaging-api-center-bar-details?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Meddelandecenter, meddelandefältet och information om vanliga frågor och svar](/dynamics365/unified-operations/dev-itpro/user-interface/messaging-user?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Riktlinjer för primära formuläret mönster
+##### [Välj ett mönster i formuläret](/dynamics365/unified-operations/dev-itpro/user-interface/select-form-pattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Formuläret format och mönster](/dynamics365/unified-operations/dev-itpro/user-interface/form-styles-patterns?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Formuläret mönster
+##### [Riktlinjer för allmänna formulär](/dynamics365/unified-operations/dev-itpro/user-interface/general-form-guidelines?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Information om huvud utgör mönster](/dynamics365/unified-operations/dev-itpro/user-interface/details-master-form-pattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Information om transaktionen formuläret mönster](/dynamics365/unified-operations/dev-itpro/user-interface/details-transaction-form-pattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Formulär lista över avsnitt formuläret mönster](/dynamics365/unified-operations/dev-itpro/user-interface/section-list-form-pattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Visa sidan formuläret mönster](/dynamics365/unified-operations/dev-itpro/user-interface/list-page-form-pattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Mönster för enkla uppgifter formulär](/dynamics365/unified-operations/dev-itpro/user-interface/simple-details-form-pattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Enkel lista och detaljer formuläret mönster](/dynamics365/unified-operations/dev-itpro/user-interface/simple-list-details-form-pattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Enkel lista formuläret mönster](/dynamics365/unified-operations/dev-itpro/user-interface/simple-list-form-pattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Tabell över innehållet formuläret mönster](/dynamics365/unified-operations/dev-itpro/user-interface/table-of-contents-form-pattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Uppgiften dubbel formuläret mönster](/dynamics365/unified-operations/dev-itpro/user-interface/task-double-form-pattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Mönstret för uppgiften en i taget](/dynamics365/unified-operations/dev-itpro/user-interface/task-single-form-pattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Guiden formuläret mönster](/dynamics365/unified-operations/dev-itpro/user-interface/wizard-form-pattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Arbetsytan formulär mönster](/dynamics365/unified-operations/dev-itpro/user-interface/workspace-form-pattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Sekundära formuläret mönster
+##### [Val av avancerade formulär mönster](/dynamics365/unified-operations/dev-itpro/user-interface/advanced-selection-form-pattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Dialogrutan formulär mönster](/dynamics365/unified-operations/dev-itpro/user-interface/dialog-form-pattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Ta bort mönster dialogrutan formulär](/dynamics365/unified-operations/dev-itpro/user-interface/drop-dialog-form-pattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Sökning efter formuläret mönster](/dynamics365/unified-operations/dev-itpro/user-interface/lookup-form-pattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Faktabox formuläret mönster](/dynamics365/unified-operations/dev-itpro/user-interface/factbox-form-patterns?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Under mönster
+##### [Anpassad grupp Filter delmönster](/dynamics365/unified-operations/dev-itpro/user-interface/custom-filter-group-subpattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Dimension transaktionen kontrollen delmönster](/dynamics365/unified-operations/dev-itpro/user-interface/financial/dimension-entry-control-subpattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Dimension Uttrycksverktyget delmönster](/dynamics365/unified-operations/dev-itpro/user-interface/financial/dimension-expression-builder-subpattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Fält och fältgrupper delmönster](/dynamics365/unified-operations/dev-itpro/user-interface/fields-field-groups-subpattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Filter och delmönster i verktygsfältet](/dynamics365/unified-operations/dev-itpro/user-interface/filters-toolbar-subpattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Fyll texten delmönster](/dynamics365/unified-operations/dev-itpro/user-interface/fill-text-subpattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Vågrätt fält och knappar grupp delmönster](/dynamics365/unified-operations/dev-itpro/user-interface/horizontal-fields-buttons-group-subpattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Delmönster för förhandsgranskning av bild](/dynamics365/unified-operations/dev-itpro/user-interface/image-preview-subpattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Visa panelen delmönster](/dynamics365/unified-operations/dev-itpro/user-interface/list-panel-subpattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Kapslade delmönster enkel lista och detaljer](/dynamics365/unified-operations/dev-itpro/user-interface/nested-simple-list-details-subpattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Avsnittet mönster för diagrammet formulär](/dynamics365/unified-operations/dev-itpro/user-interface/section-chart-form-pattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Avsnittet Power BI delmönster](/dynamics365/unified-operations/dev-itpro/user-interface/section-powerbi-subpattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Delmönster avsnittet relaterade länkar](/dynamics365/unified-operations/dev-itpro/user-interface/section-related-links-subpattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Avsnittet staplade diagram delmönster](/dynamics365/unified-operations/dev-itpro/user-interface/section-stacked-chart-subpattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Avsnittet listan flikar delmönster](/dynamics365/unified-operations/dev-itpro/user-interface/section-tabbed-list-subpattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Avsnittet brickor delmönster](/dynamics365/unified-operations/dev-itpro/user-interface/section-tiles-subpattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Tabellform delmönster i fält](/dynamics365/unified-operations/dev-itpro/user-interface/tabular-fields-subpattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Verktygsfältet och delmönster fält](/dynamics365/unified-operations/dev-itpro/user-interface/toolbar-fields-subpattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Verktygsfältet och delmönster i listan](/dynamics365/unified-operations/dev-itpro/user-interface/toolbar-list-subpattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Filter för arbetsytan sidplacering delmönster](/dynamics365/unified-operations/dev-itpro/user-interface/workspace-filter-group-subpattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Kontrollen utökningsbarhet
+##### [Skapa en extensible kontroll](/dynamics365/unified-operations/dev-itpro/user-interface/build-extensible-control?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Kortkommandon för extensible kontroller](/dynamics365/unified-operations/dev-itpro/user-interface/keyboard-shortcuts-controls?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Extensible programming kontrollreferens](/dynamics365/unified-operations/dev-itpro/user-interface/extensible-control-programming-reference?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Kontrollen utökningsbarhet](/dynamics365/unified-operations/dev-itpro/user-interface/control-extensibility?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Skapa lokaliserbara etiketter](/dynamics365/unified-operations/dev-itpro/user-interface/create-localizable-labels-client?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Riktlinjer för Extensible kontrollen layout](/dynamics365/unified-operations/dev-itpro/user-interface/extensible-controls-layout?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Styr vilken text som genererar Uppgiftsinspelning för en kontroll](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder-control-text?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Skapa arbetsytor
+##### [Skapa kunskap arbetsytor](/dynamics365/unified-operations/dev-itpro/user-interface/build-workspaces?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Sida vid sida och listan cachelagring för arbetsytor](/dynamics365/unified-operations/dev-itpro/user-interface/tile-list-caching-workspaces?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Uppgiftsinspelning
+##### [Uppgiftsinspelning i Dynamics 365 för ekonomi och åtgärder, Enterprise edition](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Snabbreferens för uppgiften inspelning](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder-quick-reference?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### Släpp lösningar med hjälp av tjänster under livscykeln
+#### [Utveckla och släpp](/dynamics365/unified-operations/dev-itpro/lcs-solutions/lcs-solutions-app-source)
+#### [Steget och publicera](/dynamics365/unified-operations/dev-itpro/lcs-solutions/marketing-content-lcs-solutions)
+#### [Lägga till en metod](/dynamics365/unified-operations/dev-itpro/lcs-solutions/methodologies-lcs-solutions)
+#### [Ställa in Business process Modellerare bibliotek](/dynamics365/unified-operations/dev-itpro/lcs-solutions/business-process-modeler-libraries-lcs-solutions)
+#### [Flytta kod](/dynamics365/unified-operations/dev-itpro/lcs-solutions/code-migration-lcs-solutions)
+#### [Validera ett program](/dynamics365/unified-operations/dev-itpro/lcs-solutions/app-validation-lcs-solutions)
+#### [Bearbeta och förbruka datapaket](/dynamics365/unified-operations/dev-itpro/lcs-solutions/process-data-packages-lcs-solutions)
+#### [Säkerhetskopiera en databas lösning](/dynamics365/unified-operations/dev-itpro/lcs-solutions/database-backup-lcs-solutions)
+
+#### [Lokalisering](/dynamics365/unified-operations/dev-itpro/lcs-solutions/country-region)
+##### [Klassificera lokalisering funktioner](/dynamics365/unified-operations/dev-itpro/lcs-solutions/classify-localization-features)
+##### [Kontexten för land/region](/dynamics365/unified-operations/dev-itpro/lcs-solutions/apply-country-context)
+##### [Andra certifikat](/dynamics365/unified-operations/dev-itpro/lcs-solutions/regulatory-certifications)
+##### [Andra uppdateringar](/dynamics365/unified-operations/dev-itpro/lcs-solutions/regulatory-watch-communication)
+##### [Lokalisering av olika modeller](/dynamics365/unified-operations/dev-itpro/lcs-solutions/separate-localization-models)
+##### [Skicka en andra avisering](/dynamics365/unified-operations/dev-itpro/lcs-solutions/submit-localization-alerts)
+
+
+### [Datatabeller](/dynamics365/unified-operations/dev-itpro/data-entities?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Standard datatabeller
+##### [Rapport om enheter](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-report?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Datatabeller: Leverantörsreskontra och skatter](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-accounts-payable-taxes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Datatabeller: Kundreskontra](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-accounts-receivable?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Datatabeller: Bank](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-bank?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Datatabeller: ingående saldon](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-beginning-balances?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Datatabeller: budgetplanering](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-budget-plan?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Datatabeller: budgetering](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-budgeting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Datatabeller: kostnadsredovisning](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-costing?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Datatabeller: utgifter management](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-expense-management?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Datatabeller: anläggningstillgångar](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-fixed-assets?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Datatabeller: redovisning](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-general-ledger?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Datatabeller: Global adressbok](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-global-address-book?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Datatabeller: personal](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-human-resources?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Datatabeller: lagerhantering](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-inventory-management?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Datatabeller: huvudplanering](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-master-plan?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Datatabeller: anskaffning och källa](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-procurement-sourcing?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Datatabeller: produktinformationshantering](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-product-information-management?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Datatabeller: produktionskontroll](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-production-control?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Datatabeller: projektredovisning](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-project-accounting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Datatabeller: offentlig sektor](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-public-sector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Datatabeller: Retail](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-retail?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Datatabeller: försäljning och marknadsföring genomförande](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-sales-marketing?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Datatabeller: före försäljning för försäljning och marknadsföring](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-sales-marketing-pre-sales?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Datatabeller: systemadministration](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-system-administration?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Datatabeller: arbetsflöde](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-workflow?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+#### Migrering av entiteter
+##### [Konfigurera data projekt](/dynamics365/unified-operations/dev-itpro/data-entities/configuration-data-projects?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Konfigurera datamallar](/dynamics365/unified-operations/dev-itpro/data-entities/configuration-data-templates?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Kopiera konfigurationsdata mellan företag](/dynamics365/unified-operations/dev-itpro/data-entities/copy-configuration?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Tips för att importera verifikationer med entiteten redovisningsjournal](/dynamics365/unified-operations/dev-itpro/data-entities/tips-tricks-import-general-journal-entity?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+#### Datatabeller skapa
+##### [Data framework enheter och paket](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Skapa och använda](/dynamics365/unified-operations/dev-itpro/data-entities/build-consuming-data-entities?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Beteendemässiga egenskaper](/dynamics365/unified-operations/dev-itpro/data-entities/behavioral-properties-data-entities?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Beräkna kolumner och virtuella fält](/dynamics365/unified-operations/dev-itpro/data-entities/data-entity-computed-columns-virtual-fields?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Korsföretags beteende](/dynamics365/unified-operations/dev-itpro/data-entities/cross-company-behavior?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Koder för land/region och konfigurationsnycklar](/dynamics365/unified-operations/dev-itpro/data-entities/countryregion-codes-configuration-keys?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Arv mönster](/dynamics365/unified-operations/dev-itpro/data-entities/support-super-type-sub-type?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Regelguiden](/dynamics365/unified-operations/dev-itpro/data-entities/data-entity-wizard-rules?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Metadataegenskaper](/dynamics365/unified-operations/dev-itpro/data-entities/metadata-properties?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Valideringar, standarder och omappade fält](/dynamics365/unified-operations/dev-itpro/data-entities/validations-defaults-unmapped-fields?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+#### [Datahantering och integrering med datatabeller](/dynamics365/unified-operations/dev-itpro/data-entities/data-management-integration-data-entity?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Skapa en enhet för migrering av data](/dynamics365/unified-operations/dev-itpro/data-entities/develop-entity-for-data-migration?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Utveckla sammansatta datatabeller](/dynamics365/unified-operations/dev-itpro/data-entities/develop-composite-data-entities?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+#### [OData](/dynamics365/unified-operations/dev-itpro/data-entities/odata?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Återkommande integrationer](/dynamics365/unified-operations/dev-itpro/data-entities/recurring-integrations?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+#### [Säkerhets- och enheter](/dynamics365/unified-operations/dev-itpro/data-entities/security-data-entities?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Felsökning av autentisering för leverantörer](/dynamics365/unified-operations/dev-itpro/data-entities/troubleshoot-service-authentication?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Slutpunkter](/dynamics365/unified-operations/dev-itpro/data-entities/services-home-page?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### Mobilappar
+#### [Mobiltelefonprogrammet startsida](/dynamics365/unified-operations/dev-itpro/mobile-apps/Mobile-app-home-page?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Mobila nyligen släppt arbetsytor](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-workspaces-released?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Publicera en mobil arbetsytan](/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Mobil plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Mobil arbetsytan APIs X ++](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-workspace-xpp-apis?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### Office-integrering
+#### [Office-integrering](/dynamics365/unified-operations/dev-itpro/office-integration/office-integration?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Guiden Office-integrering](/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-tutorial?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Använd Excel-tillägg](/dynamics365/unified-operations/dev-itpro/office-integration/office-integration/use-excel-add-in?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Skapa öppen i Excel erfarenheter](/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-edit-excel?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Lägga till mallar för öppna rader i Excels](/dynamics365/unified-operations/dev-itpro/user-interface/add-templates-open-lines-excel-menu?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Anpassa öppna Microsoft Office-menyn](/dynamics365/unified-operations/dev-itpro/office-integration/customize-open-office-menu?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Konfigurera och skicka e-post](/dynamics365/unified-operations/fin-and-ops/organization-administration/configure-email?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Felsökning](/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-troubleshooting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### Utvecklingen av ekonomin
+#### [Dimensioner](/dynamics365/unified-operations/dev-itpro/financial/dimensions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Lägg till dimensioner i en Excel-mall](/dynamics365/unified-operations/dev-itpro/financial/dimensions-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Dimension stöd för post](/dynamics365/unified-operations/dev-itpro/financial/dimension-entry-control-dialog-support?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Dimension transaktionen kontrollen migrering](/dynamics365/unified-operations/dev-itpro/financial/dimension-entry-control-migration?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Dimension transaktionen kontrollen upptaget](/dynamics365/unified-operations/dev-itpro/financial/dimension-entry-control-uptake?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Dimension Uttrycksverktyget delmönster](/dynamics365/unified-operations/dev-itpro/financial/dimension-expression-builder-subpattern?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Ekonomiska dimensioner-konfiguration för att integrera program](/dynamics365/unified-operations/dev-itpro/financial/financial-dimension-configuration-integration?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Aktivera ekonomiska dimensioner](/dynamics365/unified-operations/dev-itpro/financial/activate-financial-dimensions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Ekonomiska dimensioner och huvudkonton i ett höger till vänster-språk](/dynamics365/unified-operations/dev-itpro/financial/financial-dimensions-main-accounts-right-left-language?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Skapa en bakomliggande tabell att konsumeras som en ekonomisk dimension](/dynamics365/unified-operations/dev-itpro/financial/dimensionable-entities?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Transaktionen indelad kontrollen migrering](/dynamics365/unified-operations/dev-itpro/financial/segmented-entry-control-conversion?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Dialogrutan stöd indelad inmatning](/dynamics365/unified-operations/dev-itpro/financial/segmented-entry-control-dialog-support?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Indelad postens metadata kontroll](/dynamics365/unified-operations/dev-itpro/financial/segmented-entry-control-metadata-specification?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Riktlinjer för transaktionen indelad kontrollen migrering](/dynamics365/unified-operations/dev-itpro/financial/segmented-entry-control-migration-guidance?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Metoder för kontroll av parm indelad inmatning](/dynamics365/unified-operations/dev-itpro/financial/segmented-entry-control-parm-method-specification?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Lägga till möjligheten att slå upp värden för ekonomiska dimensioner i Microsoft Excel-mallar](/dynamics365/unified-operations/dev-itpro/financial/add-dimensions-excel-templates?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Skapa valutakursleverantörer](/dynamics365/unified-operations/dev-itpro/financial/create-exchange-rate-providers?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### Supply chain utveckling
+#### [Utvecklingshandboken för Gantt-](/dynamics365/unified-operations/dev-itpro/user-interface/gantt-development-guide?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Skapa en ny transport management engine](/dynamics365/unified-operations/supply-chain/transportation/create-new-transportation-management-engine?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### [Bibliotek för Retail-utveckling](/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### Distribution
+#### [Distribuera en Microsoft Dynamics 365 för ekonomi och operationer företagsmiljö utgåvan demo](/dynamics365/unified-operations/dev-itpro/deploy-demo-environment?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Inledande Azure Resource Manager](/dynamics365/unified-operations/dev-itpro/arm-onboarding?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Azure ExpressRoute och Dynamics 365 för ekonomi och åtgärder, Enterprise edition](/dynamics365/unified-operations/dev-itpro/expressroute?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+#### Distribuera anpassad kod
+##### [Skapa ett paket kan](/dynamics365/unified-operations/dev-itpro/create-apply-deployable-package?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Ett paket kan använda](/dynamics365/unified-operations/dev-itpro/apply-deployable-package-system?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Installera ett paket kan](/dynamics365/unified-operations/dev-itpro/install-deployable-package?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+#### [Cloud-leverantör hämtning och Dynamics AX 2012](/dynamics365/unified-operations/dev-itpro/csp-download-customersource?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### [Uppgradering och migrering](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-home-page?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Uppgradera från AX 2012 till Dynamics 365 för finans- och](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-overview-2012?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Analysera - verktyget uppgradering analyzer för att planera uppgraderingen](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-analyzer-tool?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Analysera – Använd uppgradera tjänsten kod för att uppskatta försöka uppgradera kod](/dynamics365/unified-operations/dev-itpro/migration-upgrade/analyze-code-upgrade?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Analysera - distribuera begränsat läge](/dynamics365/unified-operations/dev-itpro/migration-upgrade/analysis-sandbox?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Uppgradering - datauppgradering i en utvecklingsmiljö](/dynamics365/unified-operations/dev-itpro/migration-upgrade/prepare-data-upgrade?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Uppgradering - AX 2012 uppgifter för datauppgradering](/dynamics365/unified-operations/dev-itpro/migration-upgrade/data-upgrade-2012?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Uppgradering - datauppgradering i begränsat läge](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-data-sandbox?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Validera - Cutover-test](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-cutover-testing?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Validera App valideringsprocessen](/dynamics365/unified-operations/dev-itpro/migration-upgrade/app-validation-process?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Validera funktionella testning](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-functional-validation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Validera - förberedde go live](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-go-live-prep?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+
+##### Ändringar som påverkar uppgradering från AX 2012
+###### [Enstaka verifikations- och omvärdering valutauppgraderingen](/dynamics365/unified-operations/dev-itpro/migration-upgrade/single-voucher-and-currency-revaluation-upgrade?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Resurs schemaläggning data projektmodellen](/dynamics365/unified-operations/dev-itpro/migration-upgrade/data-model-changes-resource-management?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Ändringar av arbetsflödet undersystem](/dynamics365/unified-operations/dev-itpro/migration-upgrade/workflow-subsystem?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Varför vi flyttas från kuber till aggregerade modeller](/dynamics365/unified-operations/dev-itpro/migration-upgrade/in-memory-real-time-aggregate-models?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Migrera en uppgraderad försäljningskub till arkivet för entitet](/dynamics365/unified-operations/dev-itpro/migration-upgrade/migrate-upgraded-cube-entity-store?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+#### Koden migrering och uppgradering
+##### [Förbereda för att migrera koden](/dynamics365/unified-operations/dev-itpro/migration-upgrade/prepare-migration?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Konfigurera mappning av Visual Studio Team Services under migreringen kod](/dynamics365/unified-operations/dev-itpro/migration-upgrade/configure-vso-solution?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Delade modeller](/dynamics365/unified-operations/dev-itpro/dev-tools/model-split?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Använda ombud för att lösa beroendet mellan modeller](/dynamics365/unified-operations/dev-itpro/migration-upgrade/delegates-migration?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+#### Uppgradera till en tidigare uppdatering
+##### [Förbereda flytt till den senaste uppdateringen](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-latest-update?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Versioner och uppdateringspolicy](/dynamics365/unified-operations/dev-itpro/migration-upgrade/versions-update-policy?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Uppgradera till den senaste plattformsuppdateringen av](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-latest-platform-update?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Uppgradera Dynamics plattform augusti 2016 övergång](/dynamics365/unified-operations/dev-itpro/migration-upgrade/update-platform-each-release?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Uppgradera begränsat läge](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-sandbox-environment?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Uppgradera uppgifter i utveckling eller demonstration miljöer](/dynamics365/unified-operations/dev-itpro/migration-upgrade/upgrade-data-to-latest-update?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Uppdatera utvecklingsverktyg](/dynamics365/unified-operations/dev-itpro/dev-tools/update-development-tools?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+#### Snabbkorrigeringar och Service
+##### [Hämta snabbkorrigeringar från Lifecycle Services](/dynamics365/unified-operations/dev-itpro/migration-upgrade/download-hotfix-lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Installera en snabbkorrigering för metadata](/dynamics365/unified-operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Installera en ekonomisk rapportering binär snabbkorrigering](/dynamics365/unified-operations/dev-itpro/migration-upgrade/install-financial-reporting-binary-hotfix?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Uppdatering Reporting Services i en miljö med en ruta](/dynamics365/unified-operations/dev-itpro/migration-upgrade/patch-reporting-service-environment?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+#### Deprecations
+##### [Gamla API: er](/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-apis?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Undertryckta funktioner](/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+
+
+### Systemadministration
+#### [Månadsuppdateringar plattform FAQ](/dynamics365/unified-operations/dev-itpro/faq-platform-monthly-updates?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Lägga till länkar till organisationens juridiska villkoren och sekretesspolicyn](/dynamics365/unified-operations/dev-itpro/legal-terms-privacy-statement?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Licenskoder och konfigurationsrapport nycklar](/dynamics365/unified-operations/dev-itpro/license-codes-configuration-keys-report?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Datadelning mellan företag](/dynamics365/unified-operations/dev-itpro/cross-company-data-sharing?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Underhållsläge](/dynamics365/unified-operations/dev-itpro/maintenance-mode?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Säkerhet
+##### [Rollbaserad säkerhet](/dynamics365/unified-operations/dev-itpro/role-based-security?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Säkerhetsarkitektur](/dynamics365/unified-operations/dev-itpro/security-architecture?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Batchbearbetning
+##### [Översikt över batch-bearbetning](/dynamics365/unified-operations/dev-itpro/batch-processing-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Översikt över batch](/dynamics365/unified-operations/dev-itpro/batch-server-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### Tjänster under livscykeln
+#### [Översikt över tjänster under livscykeln](/dynamics365/unified-operations/dev-itpro/lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [LCS för kunder](/dynamics365/unified-operations/dev-itpro/lcs-works-lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [LCS för partner](/dynamics365/unified-operations/dev-itpro/getting-started-lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Vad är det senaste](/dynamics365/unified-operations/dev-itpro/whats-new-lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Kända problem](/dynamics365/unified-operations/dev-itpro/known-issues?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Användarhandbok för Dynamics Lifecycle Services](/dynamics365/unified-operations/dev-itpro/lcs-user-guide?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Konfigurera säkerhet](/dynamics365/unified-operations/dev-itpro/configure-lcs-security?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Sök ärende](/dynamics365/unified-operations/dev-itpro/issue-search-lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Konfigurationshanteraren](/dynamics365/unified-operations/dev-itpro/configuration-manager-lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Ställ in Konfigurationshanteraren](/dynamics365/unified-operations/dev-itpro/set-up-configuration-manager-lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Konfigurera tjänsten kod uppgradering](/dynamics365/unified-operations/dev-itpro/configure-execute-code-upgrade?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Skapa en metod](/dynamics365/unified-operations/dev-itpro/create-methodology?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Affärsmodelleraren process](/dynamics365/unified-operations/dev-itpro/business-process-modeler-lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Business process bibliotek i Affärsmodelleraren process](/dynamics365/unified-operations/dev-itpro/business-process-libraries-business-process-modeler?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Business modeler flödesscheman för dataprocesser](/dynamics365/unified-operations/dev-itpro/flowcharts-business-process-modeler?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Skicka egna affärsprocesser](/dynamics365/unified-operations/dev-itpro/upload-business-processes-bpm-task-recorder?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Övervaknings- och diagnostikverktyg](/dynamics365/unified-operations/dev-itpro/monitoring-diagnostics?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+#### Dynamics AX 2012 Lifecycle Services-funktioner
+##### Distribution
+###### [Värd molnbaserad miljöer](/dynamics365/unified-operations/dev-itpro/ax-2012/cloud-hosted-environments-lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Kopiera en konfiguration](/dynamics365/unified-operations/dev-itpro/copy-configuration-lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Planera driftsättning av Dynamics AX 2012 R3 på Azure](/dynamics365/unified-operations/dev-itpro/ax-2012/plan-2012-r3-deployment-azure?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Distribuera Dynamics AX 2012 R3 på Azure](/dynamics365/unified-operations/dev-itpro/ax-2012/deploy-2012-r3-azure-lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Distribuera en miljö för Dynamics AX 2012 R3-demo](/dynamics365/unified-operations/dev-itpro/ax-2012/deploy-ax-2012-r3-ax-2012-r3-cu8-demo-environment-azure?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Distribuera en utvecklingsmiljö på Azure](/dynamics365/unified-operations/dev-itpro/ax-2012/deploy-development-environment-azure?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Distribuera en miljö med hög tillgänglighet på Azure](/dynamics365/unified-operations/dev-itpro/ax-2012/deploy-high-availability-environment-azure?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Distribuera en testmiljö på Azure](/dynamics365/unified-operations/dev-itpro/ax-2012/deploy-test-environment-azure?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Hantera distributionen Dynamics AX 2012 R3 på Azure](/dynamics365/unified-operations/dev-itpro/ax-2012/manage-2012-r3-deployment-azure?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Anslut Enterprise Portal-servrar till en enda servergrupp](/dynamics365/unified-operations/dev-itpro/ax-2012/join-enterprise-portal-servers-single-server-farm?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Posten startpunkter i Dynamics AX Enterprise Portal](/dynamics365/unified-operations/dev-itpro/ax-2012/record-entry-points-enterprise-portal?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Distribuera en Retail näthandel dev/testmiljö på Azure](/dynamics365/unified-operations/dev-itpro/ax-2012/deploy-retail-ecommerce-devtest-environment-azure?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Distribuera Retail essentials demomiljö på Azure](/dynamics365/unified-operations/dev-itpro/ax-2012/deploy-retail-essentials-demo-environment-azure?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Distribuera en Retail essentials dev/testmiljö på Azure](/dynamics365/unified-operations/dev-itpro/ax-2012/deploy-retail-essentials-devtest-environment-azure?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Distribuera en Retail rörlighet dev/testmiljö på Azure](/dynamics365/unified-operations/dev-itpro/ax-2012/deploy-retail-mobility-devtest-environment-azure?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Felsöka distributionen Dynamics AX 2012 R3 på Azure](/dynamics365/unified-operations/dev-itpro/ax-2012/troubleshoot-2012-r3-deployment-azure?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Uppdateringar för Dynamics AX 2012 R3](/dynamics365/unified-operations/dev-itpro/ax-2012/update-2012-r3-lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Import/export av data framework Användarhandbok](/dynamics365/unified-operations/dev-itpro/ax-2012/user-guide-dixf?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Installera](/dynamics365/unified-operations/dev-itpro/ax-2012/install-dixf?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+####### [Installera för AX 2012 R3](/dynamics365/unified-operations/dev-itpro/ax-2012/install-ax-2012-r3?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+####### [Installation av CU7 för Dynamics AX 2012 R2-versionen för SQL Server-2014](/dynamics365/unified-operations/dev-itpro/ax-2012/install-dixf-ax-2012-r2-cu7-ss-2014?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Migrera data](/dynamics365/unified-operations/dev-itpro/ax-2012/migrate-data-dixf?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Konfigurera version av SSI-filer](/dynamics365/unified-operations/dev-itpro/ax-2012/configure-sql-server-integration-services-multiple-versions-dixf?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Kopiera och jämföra entitetsdata mellan företag](/dynamics365/unified-operations/dev-itpro/ax-2012/copy-compare-entity-data-between-companies-dixf?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Kopiera data mellan Dynamics AX-företag](/dynamics365/unified-operations/dev-itpro/ax-2012/copy-data-between-companies-dixf?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Kopiera räknardata mellan olika instanser av Dynamics AX](/dynamics365/unified-operations/dev-itpro/ax-2012/copy-data-between-instances-dixf?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Skapa en anpassad målentiteten](/dynamics365/unified-operations/dev-itpro/ax-2012/create-custom-target-entity-dixf?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Datatabeller importera och exportera framework](/dynamics365/unified-operations/dev-itpro/ax-2012/entities-dixf?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Importera data från en CSV-datakälla](/dynamics365/unified-operations/dev-itpro/ax-2012/import-data-csv-data-source-dixf?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Importera data från en ODBC-datakälla](/dynamics365/unified-operations/dev-itpro/ax-2012/import-data-odbc-data-source-dixf?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Demofiler](/dynamics365/unified-operations/dev-itpro/ax-2012/demo-files-dixf?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Snabb Import-export](/dynamics365/unified-operations/dev-itpro/ax-2012/quick-import-export?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### Register 
+###### [Skapa tabeller](/dynamics365/unified-operations/dev-itpro/ax-2012/create-tables?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Registeregenskaper](/dynamics365/unified-operations/dev-itpro/ax-2012/table-properties?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### Verktygen för Dynamics AX 2012 LCS
+###### [Projekt](/dynamics365/unified-operations/dev-itpro/ax-2012/projects-lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Metoder](/dynamics365/unified-operations/dev-itpro/ax-2012/methodologies-lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Analys av anpassning](/dynamics365/unified-operations/dev-itpro/ax-2012/customization-analysis-lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Infrastruktur för exteriörbedömning](/dynamics365/unified-operations/dev-itpro/ax-2012/infrastructure-estimator-lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Licens storlek exteriörbedömning](/dynamics365/unified-operations/dev-itpro/ax-2012/license-sizing-estimator-lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [För förslaget (/ dynamics365/unified-operationer/dev-itpro/RFP) Begär svar](/dynamics365/unified-operations/dev-itpro/ax-2012/rfp-responses-lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Systemdiagnostik](/dynamics365/unified-operations/dev-itpro/ax-2012/system-diagnostics-lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Installera och Kör systemdiagnosverktyg](/dynamics365/unified-operations/dev-itpro/ax-2012/install-run-system-diagnostics-lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Uppgradera analys](/dynamics365/unified-operations/dev-itpro/ax-2012/upgrade-analysis-lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Användning av profiler](/dynamics365/unified-operations/dev-itpro/ax-2012/usage-profiler-lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### Nedladdningsbara-verktygen för Dynamics AX 2012
+###### [Kod för användaren uppgraderingshandboken (inaktuell)](/dynamics365/unified-operations/dev-itpro/ax-2012/code-upgrade-tool-user-guide?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Nedladdningsbara Lifecycle Services-verktyg](/dynamics365/unified-operations/dev-itpro/ax-2012/lcs-downloadable-tools-formerly-informationsource?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Testa överföra Dataverktyg (beta)](/dynamics365/unified-operations/dev-itpro/ax-2012/test-data-transfer-tool-beta-2012?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+####### [Installera](/dynamics365/unified-operations/dev-itpro/ax-2012/install-test-data-transfer-tool-beta?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+####### [Kör](/dynamics365/unified-operations/dev-itpro/ax-2012/run-test-data-transfer-tool-beta?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+####### [Importera demodata för AX 2012 R3](/dynamics365/unified-operations/dev-itpro/ax-2012/import-demo-data-ax-2012-r3-test-data-transfer-tool?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Utvecklingsverktyg för säkerhet](/dynamics365/unified-operations/dev-itpro/ax-2012/overview-security-development-tool-user-interface?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+####### [Installera](/dynamics365/unified-operations/dev-itpro/ax-2012/install-security-development-tool?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+####### [Användarhandbok](/dynamics365/unified-operations/dev-itpro/ax-2012/security-development-tool-user-guide?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+####### [Definiera eller redigera behörigheter till transaktionen](/dynamics365/unified-operations/dev-itpro/ax-2012/define-edit-entry-point-permissions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Prestanda Benchmark Software Development Toolkit](/dynamics365/unified-operations/dev-itpro/ax-2012/performance-benchmark-software-development-toolkit-sdk-2012?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Upgrade Advisor säkerhetsverktyg](/dynamics365/unified-operations/dev-itpro/ax-2012/security-upgrade-advisor-tool-user-guide?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Intelligent Data Management Framework (IDMF)](/dynamics365/unified-operations/dev-itpro/ax-2012/microsoft-idmf?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+####### [Översikt](/dynamics365/unified-operations/dev-itpro/ax-2012/overview-idmf?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+####### [Installationsguiden för](/dynamics365/unified-operations/dev-itpro/ax-2012/installation-guide-idmf?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+####### [Konfiguration](/dynamics365/unified-operations/dev-itpro/ax-2012/configuration-functionality-idmf-workspace?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+####### [Analys](/dynamics365/unified-operations/dev-itpro/ax-2012/analysis-functionality-idmf-workspace?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+####### [Rensa och arkivera objekt](/dynamics365/unified-operations/dev-itpro/ax-2012/work-with-purge-objects-archive-objects?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+####### [Skapa Arkivera objekt](/dynamics365/unified-operations/dev-itpro/ax-2012/create-archive-objects?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+####### [Skapa objekt Rensa](/dynamics365/unified-operations/dev-itpro/ax-2012/create-purge-objects?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+####### [Schemalägga aktiviteter rensa och analys](/dynamics365/unified-operations/dev-itpro/ax-2012/schedule-purge-analysis-tasks?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+####### [Rensa eller Arkivera projekt](/dynamics365/unified-operations/dev-itpro/ax-2012/view-status-purge-archive-jobs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+####### [Underhåll](/dynamics365/unified-operations/dev-itpro/ax-2012/maintain-idmf?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+####### [Felsökning:](/dynamics365/unified-operations/dev-itpro/ax-2012/troubleshoot-idmf?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### Databashantering
+#### [Kopiera en databas från SQL Azure-databas till en SQL Server-miljö](/dynamics365/unified-operations/dev-itpro/copy-database-from-azure-sql-to-sql-server?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kopiera en databas från SQL Server till en produktionsmiljö SQL Azure-databas](/dynamics365/unified-operations/dev-itpro/copy-database-from-sql-server-to-azure-sql?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Återställa en databas i en produktionsmiljö](/dynamics365/unified-operations/dev-itpro/request-point-in-time-restore?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Exportera en kopia av en databas som ska återställas senare](/dynamics365/unified-operations/dev-itpro/copy-operations-database?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### Support
+#### [Få support för ekonomi och åtgärder, Enterprise och Lifecycle Services för Dynamics 365](/dynamics365/unified-operations/dev-itpro/lifecycle-services/lcs-support)
+#### [Logga in på premier support biljett](/dynamics365/unified-operations/dev-itpro/lifecycle-services/premier-support)
+#### [Skicka en begäran till teknikerteamet för Dynamics Service](/dynamics365/unified-operations/dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team)
+#### [Ställ in supportavdelning för Dynamics 365 ekonomi och operationer, Enterprise edition](/dynamics365/unified-operations/dev-itpro/lifecycle-services/support-experience) 
+#### [Planerat underhåll fönstret FAQ](/dynamics365/unified-operations/dev-itpro/lifecycle-services/planned-maintenance-window-faq) 
+#### [Cloud-operationer och underhåll](/dynamics365/unified-operations/dev-itpro/lifecycle-services/cloud-operations-servicing?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Hantera ekonomi och stöd för operationer](/dynamics365/unified-operations/dev-itpro/lifecycle-services/cloud-powered-support-lcs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+<!-- Retail section -->
+# [365 Dynamics for Retail](/dynamics365/unified-operations/retail/index?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+## Betalningar
+### [Betalningsmetoder](/dynamics365/unified-operations/retail/payment-methods?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+## Kundtjänst
+### [Call center, översikt](/dynamics365/unified-operations/retail/call-center-functionality?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Call center kataloger](/dynamics365/unified-operations/retail/call-center-catalogs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Skapa en katalog för call center](/dynamics365/unified-operations/retail/create-call-center-catalogs?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Ställa in notifieringar för bedrägeri](/dynamics365/unified-operations/retail/set-up-fraud-alerts?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Ställa in bearbetningsalternativ ordning](/dynamics365/unified-operations/retail/set-up-order-processing-options?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Skapa program för ett Callcenter kontinuiteten](/dynamics365/unified-operations/retail/set-up-continuity-program?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Undantag för order](/dynamics365/unified-operations/retail/work-with-order-holds?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Betalningsalternativ](/dynamics365/unified-operations/retail/work-with-payments?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+## Kanal och hantering
+### [Initiera startdata i en butik](/dynamics365/unified-operations/retail/enable-configure-retail-functionality?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Definiera återförsäljare](/dynamics365/unified-operations/retail/define-maintain-retail-channels?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Onlinebutik-översikt](/dynamics365/unified-operations/retail/online-stores?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Konfigurera och installera en station för Retail-maskinvara](/dynamics365/unified-operations/retail/retail-hardware-station-configuration-installation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Retail-tid och närvaro](/dynamics365/unified-operations/retail/retail-time-attendance?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+## Modern försäljningen (MOPS) och molnbaserad kassa
+### Kringutrustning
+#### [Översikt över Retail-kringutrustning](/dynamics365/unified-operations/retail/retail-peripherals-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Microsoft har kontrollerat POS kringutrustning](/dynamics365/unified-operations/retail/microsoft-tested-pos-hardware-peripherals?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Definiera och underhålla kanal klienter, register och stationer för maskinvara](/dynamics365/unified-operations/retail/define-maintain-channel-clients-registers-hw-stations?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### Skärmlayout
+#### [Konfigurera skärmar för kassa](/dynamics365/unified-operations/retail/pos-screen-layouts?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Installera Layoutdesigner för Retail POS](/dynamics365/unified-operations/retail/install-pos-layout-designer?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [POS-program- och språkinställningar](/dynamics365/unified-operations/retail/pos-application-user-language-settings?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Skapa bilder för MOPS](/dynamics365/unified-operations/retail/set-up-manage-images-retail-mpos?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Info-koder: översikt](/dynamics365/unified-operations/retail/info-codes-retail?toc=/dynamics365/unified-operations/supply-chain/toc.json) 
+### Produktrekommendationer
+#### [Personliga rekommendationer Produktöversikt](/dynamics365/unified-operations/retail/personalized-product-recommendations?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Lägga till en kontroll rekommendationer i en POS-enhet](/dynamics365/unified-operations/retail/add-recommendations-control-pos-screen?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Offline funktionsprofil för kassa](/dynamics365/unified-operations/retail/pos-offline-functionality?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [SKIFT och kassa management kassalåda](/dynamics365/unified-operations/retail/shift-drawer-management?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### Kundorder
+#### [Order – översikt](/dynamics365/unified-operations/retail/customer-orders-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kombinerade kundorder](/dynamics365/unified-operations/retail/hybrid-customer-orders?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### Affärskontakter
+#### [Följa upp i KASSAN med försäljningsgrupper provisioner](/dynamics365/unified-operations/retail/pos-sales-groups-track-commissions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### Aktivering av enhet
+#### [Konfigurera och installera MOPS](/dynamics365/unified-operations/retail/retail-modern-pos-device-activation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Konfigurera inloggning för molnbaserad kassa och MOPS](/dynamics365/unified-operations/retail/extended-logon?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Hantera Retail konton och enheter från headquarters](/dynamics365/unified-operations/retail/set-up-activation-accounts-validate-devices-hq?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### Inleveranser
+#### [Ställa in mallar för inleverans](/dynamics365/unified-operations/retail/receipt-templates-printing?toc=/dynamics365/unified-operations/supply-chain/toc.json) 
+#### [Skicka e-postkvitton från MOPS](/dynamics365/unified-operations/retail/email-receipts?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Uppgiftsinspelning och hjälpen för kassa](/dynamics365/unified-operations/retail/task-recorder-retail-pos?toc=/dynamics365/unified-operations/retail/toc.json)
+## Övervakning och analys
+### [Övervaka försäljnings- och marginaldata prestanda](/dynamics365/unified-operations/retail/monitor-sales-margin-performance?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Analysera försäljningstrender och mönster](/dynamics365/unified-operations/retail/analyze-sales-trends-patterns?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Utvärdera Försäljningsresultat per produkt](/dynamics365/unified-operations/retail/sales-performance-products?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Utvärdera lönsamhet i kund- och produktinformation](/dynamics365/unified-operations/retail/assess-customer-product-profitability?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Analysera prestanda för butik](/dynamics365/unified-operations/retail/store-performance-information?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Ställa in RFM-analys](/dynamics365/unified-operations/retail/set-up-rfm-analysis?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+## Rabatter och prisjusteringar
+### [Prisjusteringar och rabatter](/dynamics365/unified-operations/retail/price-adjustments-discounts?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Avgöra optimal kombination av överlappande rabatter](/dynamics365/unified-operations/retail/optimal-combination-overlapping-discounts?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Definiera kanalspecifika rabatter](/dynamics365/unified-operations/retail/define-channel-specific-discounts?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Skapa kuponger för butiksförsäljning](/dynamics365/unified-operations/retail/retail-coupons?toc=/dynamics365/unified-operations/retail/toc.json)
+## Produkter och försäljning
+### [Butikshierarkier](/dynamics365/unified-operations/retail/retail-hierarchies?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Skapa och hantera attribut](/dynamics365/unified-operations/retail/create-manage-attributes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Ställ in butiksprodukter](/dynamics365/unified-operations/retail/set-up-retail-products?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Ställa in streckkoder](/dynamics365/unified-operations/retail/set-up-bar-codes?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Ställ in streckkodsmasker](/dynamics365/unified-operations/retail/set-up-bar-code-masks?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Ställa in sortiment](/dynamics365/unified-operations/retail/set-up-assortments?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Sälja och returnera produkter utanför ett sortiment](/dynamics365/unified-operations/retail/sell-return-outside-assortments?toc=/dynamics365/unified-operations/retail/toc.json)
+## Förmånskort
+### [Ställa in ett bonusprogram kund](/dynamics365/unified-operations/retail/set-up-customer-loyalty-program?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+## Lager
+### [Hantera Butiksinventering](/dynamics365/unified-operations/retail/work-with-store-inventory?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+## Grundläggande om handel
+### [Commerce essentials: översikt](/dynamics365/unified-operations/retail/commerce-essentials?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Organisationer och organisationshierarkier i grundläggande om handel](/dynamics365/unified-operations/retail/organizational-hierarchies-commerce-essentials?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+## [Retail-utveckling och administration](/dynamics365/unified-operations/retail/dev-itpro/dev-retail-home-page?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### Arkitektur
+#### [Komponenterna i Microsoft Dynamics 365 för ekonomi och operationer företagsutgåva - Retail](/dynamics365/unified-operations/retail/retail-components?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Arkitektur för rapporteringsserver (butik)](/dynamics365/unified-operations/retail/dev-itpro/retail-server-architecture?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Kommunikation via Retail kanaler](/dynamics365/unified-operations/retail/dev-itpro/define-retail-channel-communications-cdx?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [MOPS arkitektur](/dynamics365/unified-operations/retail/dev-itpro/retail-modern-pos-architecture?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Onlinebutik publishing-arkitektur](/dynamics365/unified-operations/retail/dev-itpro/retail-online-store-publishing-architecture?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Retail kanal prestanda Power BI-innehåll](/dynamics365/unified-operations/retail/dev-itpro//dynamics365/unified-operations/dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data)
+
+### Distribution och snabbkorrigeringar
+#### [Retail Store skala enhet konfiguration och installation](/dynamics365/unified-operations/retail/dev-itpro/retail-store-scale-unit-configuration-installation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Retail store systemet innan du börjar](/dynamics365/unified-operations/retail/dev-itpro/retail-store-system-begin?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Retail POS Modern konfiguration och installation](/dynamics365/unified-operations/retail//retail-modern-pos-device-activation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Hantera Retail konton och enheter från headquarters](/dynamics365/unified-operations/retail//set-up-activation-accounts-validate-devices-hq?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Retail POS enhet aktivering](/dynamics365/unified-operations/retail/dev-itpro/retail-device-activation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Säkra retail POS moln](/dynamics365/unified-operations/retail/dev-itpro/secure-retail-cloud-pos?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Retail maskinvara konfiguration och installation](/dynamics365/unified-operations/retail//retail-hardware-station-configuration-installation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Retail-komponent händelser för diagnostik och felsökning](/dynamics365/unified-operations/retail/dev-itpro/retail-component-events-diagnostics-troubleshooting?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Ett paket kan använda](/dynamics365/unified-operations/dev-itpro/deployment/apply-deployable-package-system?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### Stöd för uppgradering av N-1
+#### [Översikt över uppgraderingen och N-1](/dynamics365/unified-operations/retail/dev-itpro/overview-upgrade-n-minus1?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Installera komponenter för N-1](/dynamics365/unified-operations/retail/dev-itpro/n-1-installation-configuration?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### Tillägg
+#### Försäljningsstället
+##### [Retail POS-Skärmlayouter](/dynamics365/unified-operations/retail//pos-screen-layouts?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+###### [Installera Layoutdesigner för kassa](/dynamics365/unified-operations/retail//install-pos-layout-designer?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Konfigurera MOPS för offline-läge](/dynamics365/unified-operations/retail/dev-itpro/retail-modern-pos-offline?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Initiera utvidgningar MOPS och molnbaserad kassa](/dynamics365/unified-operations/retail/dev-itpro/modern-pos-trigger-extensibility?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Skapa en Retail erfarenhet app](/dynamics365/unified-operations/retail/dev-itpro/create-retail-experience-app?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Maskinvaruöversikt Station och tillägg](/dynamics365/unified-operations/retail/dev-itpro/hardware-station-extensibility?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Retail-Server
+##### [Utöka Retail Server OData-styrenhet](/dynamics365/unified-operations/retail/dev-itpro/extend-retail-server-odata-controller?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [OData-och Internet-API](/dynamics365/unified-operations/retail/dev-itpro/odata-controllers-api?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Retail-Server kund och konsument API: er](/dynamics365/unified-operations/retail/dev-itpro/retail-server-customer-consumer-api?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Utöka metadata](/dynamics365/unified-operations/retail/dev-itpro/extend-metadata?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Utöka commerce-körtid för offlineläge POS](/dynamics365/unified-operations/retail/dev-itpro/call-crt-service-offline?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Commerce-körtid
+##### [Översikt av Commerce-körtid](/dynamics365/unified-operations/retail/dev-itpro/commerce-runtime-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Commerce-körtid och tillägg för Retail-Server](/dynamics365/unified-operations/retail/dev-itpro/commerce-runtime-extensibility?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Lägg till inställningen kunddata till en kanaldatabas](/dynamics365/unified-operations/retail/dev-itpro/add-customer-preference-channel?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Lägga till egenskaper till en försäljningsorder](/dynamics365/unified-operations/retail/dev-itpro/add-properties-sales-order?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Utvidgningar av Commerce-körtid och utlösare](/dynamics365/unified-operations/retail/dev-itpro/commerce-runtime-extensibility-trigger?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Exempel på utlösare: spärra transaktionen](/dynamics365/unified-operations/retail/dev-itpro/trigger-example-blocking-transaction?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Exempel på utlösare: returnera princip](/dynamics365/unified-operations/retail/dev-itpro/trigger-example-return-policy?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### e-handel
+##### [Konfigurera en onlinebutik](/dynamics365/unified-operations/retail/dev-itpro/configure-online-store?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Konfigurera autentiseringsproviders](/dynamics365/unified-operations/retail/dev-itpro/configure-authentication-providers?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [plattform för e-handel](/dynamics365/unified-operations/retail/dev-itpro/ecommerce-platform?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [näthandel plattforms-SDK](/dynamics365/unified-operations/retail/dev-itpro/ecommerce-platform-sdk?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### Betalningsanslutning
+##### [Genomföra en betalningsanslutning och betalning enhet (white paper)](/dynamics365/unified-operations/retail/dev-itpro/http://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx)
+##### [Distribuera en betalningsanslutning](/dynamics365/unified-operations/retail/dev-itpro/deploy-payment-connector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+##### [Skapa en för en betalningsanslutning](/dynamics365/unified-operations/retail/dev-itpro/create-windows-installer-payment-connector?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### Butiks-SDK
+#### [Retail-SDK: översikt](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/retail-sdk-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Programmeringsgränssnittet Retail integreras med kontinuerlig build-system](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Retail SDK tillägg – exempel](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/retail-sdk-extensibility-samples?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Förpackningsmaterial för Retail-SDK](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/retail-sdk-packaging?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+#### [Retail SDK exempel](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/retail-sdk-samples?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+### Commerce-körtid
+#### [Tillägget förmånskort](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/loyalty-extension-sample?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+# [Dynamics 365 för användare](/dynamics365/unified-operations/talent/index)
+
+## Utveckla en strategi för personal
+### [Organisera personalen med avdelningar, jobb och befattningar](/dynamics365/unified-operations/talent/departments-jobs-positions?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Ställ in jobb-komponenter](/dynamics365/unified-operations/talent/create-job?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Skapa en avdelning och associera den med avdelningshierarki](/dynamics365/unified-operations/talent/create-department-add-department-hierarchy?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Ställ in parametrar för personal i juridiska personer](/dynamics365/unified-operations/talent/set-up-hr-parameters-across-legal-entities?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Ställ in parametrar för företagsspecifika personal](/dynamics365/unified-operations/talent/set-up-company-specific-hr-parameters?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Vanliga frågor om befattningsåtgärder](/dynamics365/unified-operations/talent/personnel-actions-faq?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Använd arbetsflöde för att hantera medarbetarinformation](/dynamics365/unified-operations/talent/workflow-manage-employee-information?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+## Motivera medarbetare
+### [Kompensationsplaner](/dynamics365/unified-operations/talent/compensation-plans?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Skapa fasta kompensationsplaner](/dynamics365/unified-operations/talent/create-fixed-compensation-plans?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Skapa planer för variabel kompensation](/dynamics365/unified-operations/talent/create-variable-compensation-plans?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Processen kompensation](/dynamics365/unified-operations/talent/process-compensation?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+## Utveckla och Utbilda anställda
+### [Översikt över prestanda](/dynamics365/unified-operations/talent/performance-management-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Justera Personal-kompetenser med företagets behov](/dynamics365/unified-operations/talent/skills?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Ställa in utbildningar](/dynamics365/unified-operations/talent/courses?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+## Skapa och hantera förmåner
+### [Hantera ett program för förmåner](/dynamics365/unified-operations/talent/manage-benefit-program?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Policyer för förmånsberättigande](/dynamics365/unified-operations/talent/benefit-eligibility-policies?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Hantera artiklar som lånas ut till arbetare](/dynamics365/unified-operations/talent/loan-items?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+## Samla in information med hjälp av enkäter
+### [Enkäter](/dynamics365/unified-operations/talent/questionnaires?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Utforma en enkät](/dynamics365/unified-operations/talent/design-questionnaires?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Distribuera och fylla i en enkät](/dynamics365/unified-operations/talent/distribute-questionnaires?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Utvärdera resultaten för en enkät](/dynamics365/unified-operations/talent/evaluate-questionnaire-results?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+
+## Arbetsytan säkerhet och efterlevnad (USA)
+### [Kontroll av form I-9 anställning](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-form-i-9-verification?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+### [Uppfyller ADA](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-comply-ada?toc=/dynamics365/unified-operations/supply-chain/toc.json)
