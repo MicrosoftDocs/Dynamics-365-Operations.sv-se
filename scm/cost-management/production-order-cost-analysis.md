@@ -3,7 +3,7 @@ title: "Analys av kostnad för produktionsorder"
 description: "Den här artikeln innehåller information om den kostnadsanalys som du kan göra för slutförda och aktuella tillverkningsorder. Du kan analysera de uppskattade och faktiska kostnaderna med hjälp av prisberäkningssidan eller rapporten Kostnadsuppskattningar och kostnadsredovisningar. Information om uppskattade och faktiska kostnader (och kvantitet) visas för varje komponentartikel, flödesoperationen och den indirekta kostnaden."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

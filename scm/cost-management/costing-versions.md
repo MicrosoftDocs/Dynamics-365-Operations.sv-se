@@ -3,7 +3,7 @@ title: Kostnadsredovisningsversioner
 description: "Det här avsnittet innehåller information om kostnadsversioner, hur du underhåller dem och datatyperna som du kan inkludera i dem. Det primära syftet med en kostnadsredovisningsversion är att den innehåller kostnadsposter om artiklar, kostnadskategorier och beräkningsformler för indirekta kostnader."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

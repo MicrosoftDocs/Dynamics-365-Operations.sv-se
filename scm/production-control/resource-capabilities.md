@@ -3,7 +3,7 @@ title: Resurskunskaper
 description: "Det här avsnittet innehåller information om resurskapaciteter. En kapacitet är möjligheten hos en verksamhetsresurs att utföra en viss aktivitet. Det här avsnittet ger en beskrivning av hur kapaciteter och relaterade koncept såsom kompetensnivå och prioritet kan används för att välja lämpliga resurser för en aktivitet."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

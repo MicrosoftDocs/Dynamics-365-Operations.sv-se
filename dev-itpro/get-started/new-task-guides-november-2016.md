@@ -3,7 +3,7 @@ title: Nya eller uppdaterade uppgiftsguider (november 2016)
 description: "Detta avsnitt anger nya eller uppdaterade uppgiftsguider som släpptes för Microsoft (november 2016 - alla språk) APQC Unified Library för Microsoft Dynamics 365 for Operations. Inge nytt Komma igång-biblioteket gavs ut."
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

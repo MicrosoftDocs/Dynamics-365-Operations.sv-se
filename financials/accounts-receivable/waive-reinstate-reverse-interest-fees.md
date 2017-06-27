@@ -3,7 +3,7 @@ title: "Avstå, återinföra eller återföra ränta"
 description: "Det här avsnittet innehåller information om hur du efterskänker, återinför och omvänder kostnader för ränta och avgifter."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

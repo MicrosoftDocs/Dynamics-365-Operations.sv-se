@@ -3,7 +3,7 @@ title: "Frågor och Svar - Beräkningar för produktkonfigurationsmodeller"
 description: "Det här avsnittet beskriver beräkningar för produktkonfigurationsmodeller och förklarar hur du använder beräkningar tillsammans med begränsningar."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

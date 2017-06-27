@@ -3,7 +3,7 @@ title: "Förpackningsmaterial och avgifter"
 description: "Avgifter för förpackningsmaterial betalas i vissa intervaller till ett återvinningsföretag. Ett belopp per viktenhet måste betalas för varje material som en förpackningsenhet består av. Avgifter för förpackningsmaterial beräknas och rapporteras, men inga redovisningstransaktioner bokförs eftersom avgifterna inte räknas som skatter som måste betalas till en myndighet."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

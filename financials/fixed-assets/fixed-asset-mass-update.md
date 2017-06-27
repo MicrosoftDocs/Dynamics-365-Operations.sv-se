@@ -3,7 +3,7 @@ title: "Massuppdatering av anläggningstillgång"
 description: "Om du använder böcker kan du ändra avskrivningspraxis för grupper av tillgångar som tillhör samma bok."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

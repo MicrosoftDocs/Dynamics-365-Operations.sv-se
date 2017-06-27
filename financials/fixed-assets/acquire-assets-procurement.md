@@ -3,7 +3,7 @@ title: "Anskaffa tillgångar genom anskaffning"
 description: "Den här artikeln beskriver hur du ställer in integrationen mellan Anläggningstillgångar och Leverantörsreskontra om du automatiskt vill skapa anläggningstillgångar från inköpsorder eller leverantörsfakturor, eller automatiskt bokföra anskaffningar och anskaffningsjusteringar för anläggningstillgångar."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

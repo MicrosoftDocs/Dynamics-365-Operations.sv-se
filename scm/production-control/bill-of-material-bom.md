@@ -3,7 +3,7 @@ title: Strukturlistor och formler
 description: "Denna artikel innehåller information om strukturlistor och formler, som är en central del av definitionen av produkterna och produktvarianterna. Strukturlistor och formler anger nödvändiga material eller komponenter för en viss produkt. Formler kan också ange samprodukter och biprodukter som tas emot i en bestämd produktionskontext."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

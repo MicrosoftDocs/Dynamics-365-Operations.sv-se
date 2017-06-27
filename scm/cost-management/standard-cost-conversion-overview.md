@@ -3,7 +3,7 @@ title: "Standardkostnadskonvertering – översikt"
 description: "Den här artikeln ger en översikt över processen för att ställa in och köra en standardkostnadskonvertering. Den angivna stegen är avsett att utföras efter att du slutfört förberedelserna för en standardkostnadskonvertering."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

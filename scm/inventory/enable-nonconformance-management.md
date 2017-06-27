@@ -3,7 +3,7 @@ title: Avvikelsehantering
 description: "Det här avsnittet ger en beskrivning av grundläggande inställningar som krävs för att använda avvikelser. Ytterligare inställningar krävs om du vill använda kvalitetsorder."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

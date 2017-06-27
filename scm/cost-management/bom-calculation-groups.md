@@ -3,7 +3,7 @@ title: "Beräkningsgrupper för strukturlista"
 description: "Den här artikeln innehåller information om beräkningsgrupper för strukturlistor och hur du ställer in dem. Om du vill köra en strukturlisteberäkning måste du antingen ställa in beräkningsgrupper och tilldela dem till enskilda artiklar eller ställa en standardberäkningsgrupp. Beräkningsinställningarna från beräkningsgruppen används sedan som standardvärden på sidan Strukturlisteberäkning när strukturlistan beräknas."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

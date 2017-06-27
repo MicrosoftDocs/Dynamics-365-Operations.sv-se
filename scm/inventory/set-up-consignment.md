@@ -3,7 +3,7 @@ title: "Ställa in försändelse"
 description: "Det här avsnittet beskriver hur du konfigurerar inkommande försändelselageroperationer."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

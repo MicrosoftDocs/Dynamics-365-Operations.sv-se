@@ -3,7 +3,7 @@ title: "Simulera kostnadsändringar med hjälp av en kostnadsversion för planer
 description: "Det här avsnittet innehåller en beskrivning av hur du kan simulera effekterna av kostnadsändringar för en tillverkad artikels beräknade kostnader med hjälp av en separat kostnadsversion för planerade kostnader."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

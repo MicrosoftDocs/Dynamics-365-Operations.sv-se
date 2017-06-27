@@ -3,7 +3,7 @@ title: "Användarinställningar i designer för ekonomiska rapporter"
 description: "Den här artikeln ger en beskrivning av hur du gör användarinställningar för att anpassa användarinteraktioner i en ekonomisk rapportdesigner och kontrollerar den inledande inloggningen. Du kan även styra hur enskilda rapporter, rapportbiblioteket och standardplatser för filer visas."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

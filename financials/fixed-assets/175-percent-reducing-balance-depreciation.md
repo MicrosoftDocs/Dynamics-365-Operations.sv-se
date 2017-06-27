@@ -3,7 +3,7 @@ title: 175 procent degressiv avskrivning
 description: "Det här avsnittet ger en översikt över 175-procentsmetoden för degressiv avskrivning."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

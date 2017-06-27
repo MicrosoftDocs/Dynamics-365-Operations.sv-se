@@ -3,7 +3,7 @@ title: "Anbudsförfrågningar (RFQ:er)"
 description: "Den här artikeln ger en översikt över anbudsförfrågningar (RFQ:er) som organisationer utfärdar när de måste köpa artiklar eller tjänster och vill erhålla konkurrenskraftiga erbjudanden från flera leverantörer. I en anbudsförfrågan ber du leverantörer att ge priser och leveranstiderna för de kvantiteter av artiklar du anger. Du kan också be leverantörerna att ange om det finns några tillfälliga avgifter, till exempel fraktkostnader, eller om leverantören erbjuder rabatter för stora order eller tidig betalning av leverantörsfakturan."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

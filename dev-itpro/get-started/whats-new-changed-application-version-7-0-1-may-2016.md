@@ -3,7 +3,7 @@ title: "Nyheter och ändringar i Microsoft Dynamics AX, programvaruversion 7.0.1
 description: "Den här artikeln innehåller en beskrivning av nya eller ändrade funktioner i Microsoft Dynamics AX, programvaruversion 7.0.1. Den här versionen släpptes i maj 2016 och har en versionsnummer 7.0.1265.23014."
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform

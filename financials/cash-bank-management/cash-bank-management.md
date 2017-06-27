@@ -3,7 +3,7 @@ title: "Startsidan för kassa- och bankhantering"
 description: "Använd Kassa- och bankhantering till att underhålla den juridiska personens bankkonton och de finansiella instrument som är associerade med dessa bankkonton."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications

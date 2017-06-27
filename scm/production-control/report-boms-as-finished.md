@@ -3,7 +3,7 @@ title: Rapportera strukturlistor som avslutade
 description: "Den här artikeln innehåller information om att rapportera strukturlistor som avslutade."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

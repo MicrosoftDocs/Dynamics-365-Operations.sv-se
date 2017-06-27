@@ -3,7 +3,7 @@ title: "Konfigurera ett villkorsbeslut i ett arbetsflöde"
 description: "Använd följande procedur om du vill konfigurera egenskaperna för ett villkorsbeslut."
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

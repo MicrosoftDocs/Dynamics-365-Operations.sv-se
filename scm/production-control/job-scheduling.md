@@ -3,7 +3,7 @@ title: Finplanering
 description: "Det här avsnittet innehåller information om Jobbplanering, som är ett mer detaljerat formulär för att schemaläggning än Grovplanering. Du kan använda finplaneringen för att planera individuella jobb eller arbetsorder och för att styra din tillverkningsmiljö."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
