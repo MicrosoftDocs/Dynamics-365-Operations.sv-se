@@ -1,12 +1,12 @@
 ---
-title: Personal
-description: "Personal förenklar många vanliga arkiveringsaktiviteter och automatiserar ett antal processer relaterade till personalen i organisationen. Den innehåller också ett ramverk för personal för hantering av tillsynsområden. Dessa områden inkluderar rekrytering och personalvård, förmånsadministration, utbildning, prestationsgranskning och ändringshantering."
+title: Microsoft Dynamics 365 for Talent
+description: "Talent förenklar många vanliga arkiveringsuppgifter och automatiserar ett antal processer relaterade till personalen i organisationen. Dessa processer inkluderar personalvård, förmånsadministration, utbildning, prestationsgranskning och ändringshantering."
 author: rschloma
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/19/2017
 ms.topic: index-page
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-talent
 ms.technology: 
 audience: Application User
 ms.reviewer: rschloma
@@ -16,23 +16,25 @@ ms.assetid: b48b1cb2-6e66-467e-9c0e-09b6a4aeb9fe
 ms.search.region: Global
 ms.author: rschloma
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 213d1dc69ac0f6dc10138e185625a142e107f073
+ms.sourcegitcommit: 6e2feeadd7cef8273d94810a13df6c5dfe6f1d4a
+ms.openlocfilehash: e0f41445c621a317fcdccef6cb08766dd6fac279
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/21/2017
 
 
 ---
 
-# <a name="welcome-to-human-resources"></a>Välkommen till personal
+# <a name="welcome-to-microsoft-dynamics-365-for-talent"></a>Välkommen till Microsoft Dynamics 365 for Talent
 
 [!include[banner](includes/banner.md)]
 
-Personal förenklar många vanliga arkiveringsaktiviteter och automatiserar ett antal processer relaterade till personalen i organisationen. Den innehåller också ett ramverk för personal för hantering av tillsynsområden. Dessa områden inkluderar rekrytering och personalvård, förmånsadministration, utbildning, prestationsgranskning och ändringshantering.
+Microsoft Dynamics 365 for Talent förenklar många rutinartade arkiveringsuppgifter och automatiserar ett antal processer som berör personal i din organisation. Dessa processer rör bland annat personalvård, förmånsadministration, utbildning, prestationsgranskningar och ändringshantering. Den innehåller också ett ramverk för personal för hantering av tillsynsområden.
 
-Personal går att använda till att slutföra följande uppgifter:
+Dynamics 365 for Talent är nära besläktat med Human Resources i Dynamics 365 for Finance and Operations, Enterprise Edition. Samma funktioner kan visas i båda produkterna. I de avsnitt som i första hand berör Human Resources används produktnamnet Dynamics 365 for Finance and Operations, Enterprise Edition och i de avsnitt som i första hand berör Talent används produktnamnet Dynamics 365 for Talent. Avsnitt som skrivs för en produkt kan även gälla för samma funktioner i en relaterad produkt.
+
+Talent går att använda till att slutföra följande uppgifter:
 
 > + Administrera organisationsstrukturer.
 > + Underhålla omfattande information om arbetare från anställningsdag till pension.
@@ -42,25 +44,19 @@ Personal går att använda till att slutföra följande uppgifter:
 > + Hantera arbetarnas kompetenser.
 > + Granska prestanda och implementera mål för arbetare.
 > + Ställa in, leverera och analysera kurser som innehåller agendor, sessioner och spårningar.
-> + Rekrytera arbetare och spåra sökande.
 
-<a name="develop-a-human-resources-strategy"></a>Utveckla en personalstrategi
+<a name="develop-a-strategy-for-managing-your-human-resources"></a>Utveckla en strategi för personalhantering
 ---------------------------------------------------------
 
-När du arbetar med personal bestämmer du hur organisationen struktureras med hjälp av element, till exempel avdelningar, jobb och befattningar. De är de grundläggande elementen som konfigureras under Personal. Enskilda medarbetare tilldelas till befattningar som är associerade med jobb.
+När du arbetar med Talent bestämmer du hur organisationen struktureras med hjälp av element, till exempel avdelningar, jobb och befattningar. De är de grundläggande elementen som konfigureras. Enskilda medarbetare tilldelas till befattningar som är associerade med jobb.
 
 -   [Organisera arbetsstyrkan med avdelningar, jobb och befattningar](departments-jobs-positions.md)
 -   [Ställa in företagsspecifika personalparametrar](set-up-company-specific-hr-parameters.md)
 -   [Ställa in personalparametrar bland juridiska personer](set-up-hr-parameters-across-legal-entities.md) 
 
-## <a name="recruit-hire-and-motivate-employees"></a>Rekrytera, anställa och motivera medarbetare
+## <a name="retain-and-motivate-employees"></a>Behålla och motivera medarbetare
 
-Rekryteringsprojekt hanterar innehåll som används i annonser om lediga befattningar och hjälper dig att hantera jobbansökningar. Det går att använda till att följa upp svar på jobbannonser för ett visst rekryteringsprojekt eller specifika sökande och uppdatera status för lediga befattningar. Det år även att anställa enstaka sökande eller hantera "massanställningsprojekt" som gör det lättare att anställa flera arbetare för att täcka säsongsbetonade behov.
-
--   [Hantera en rekryteringsprocess](manage-recruiting-process.md)
--   [Massanställningsprojekt](mass-hire-projects.md) 
-
-När du har anställt personal kan du skapa planer som effektivt och rättvist hanterar såväl kompensation som objekt, såsom datorer eller telefoner som organisationen förser personalen med. Det går att skapa fasta och variabla kompensationsplaner samt definiera regler som använder kompensationsplanen som uppfyller villkoren för planen.
+Du kan skapa planer som effektivt och rättvist hanterar såväl kompensation som objekt, såsom datorer eller telefoner som organisationen förser personalen med. Det går att skapa fasta och variabla kompensationsplaner samt definiera regler som använder kompensationsplanen som uppfyller villkoren för planen.
 
 -   [Kompensationsplaner](compensation-plans.md)
 -   [Skapa planer för fast kompensation](create-fixed-compensation-plans.md)
@@ -84,10 +80,10 @@ Utöver att kompensera din personal i form av löner och bonusar går det att ut
 
 ## <a name="maintain-workplace-safety-and-compliance"></a>Underhålla arbetsplatssäkerhet och efterlevnad
 
-Med Microsoft Dynamics AX går det att upprätthålla en säker arbetsmiljö som överensstämmer med gällande lagar, inklusive Americans with Disabilities Act eller INS-lagstiftning. Det går till exempel att hantera de fysiska kraven för specifika jobb samt spåra förfrågningar för anpassningar som hjälper organisationen att optimera arbetsstyrkans kompetenser.
+Med Talent går det att upprätthålla en säker arbetsmiljö som överensstämmer med gällande lagar, inklusive Americans with Disabilities Act eller INS-lagstiftning. Det går till exempel att hantera de fysiska kraven för specifika jobb samt spåra förfrågningar för anpassningar som hjälper organisationen att optimera arbetsstyrkans kompetenser.
 
--   [Verifiering av I–9-anställningsformulär](localizations/noam-usa-form-i-9-verification.md)
--   [Efterleva Americans with Disabilities Act](localizations/noam-usa-comply-ada.md)
+-   [Verifiering av I–9-anställningsformulär](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-form-i-9-verification)
+-   [Efterleva Americans with Disabilities Act](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-comply-ada)
 
 ## <a name="gather-information-using-questionnaires"></a>Samla information med enkäter
 
@@ -97,7 +93,4 @@ Det går att utforma och dela ut enkäter för att samla in information används
 -   [Utforma en enkät](design-questionnaires.md)
 -   [Distribuera och slutföra en enkät](distribute-questionnaires.md)
 -   [Visa och utvärdera resultaten av en enkät](evaluate-questionnaire-results.md)
-
-
-
 
