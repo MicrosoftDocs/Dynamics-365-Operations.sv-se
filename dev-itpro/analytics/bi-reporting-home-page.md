@@ -1,15 +1,15 @@
 ---
 title: "Startsida för BI och rapporter"
-description: "Det här ämnet innehåller en lista med resurser för BI och rapporter i Microsoft Dynamics 365 for Operations."
+description: "Det här ämnet innehåller en lista med resurser för BI och rapporter i Microsoft Dynamics 365 for Finance and Operations."
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 27681
 ms.assetid: c4624bc8-3661-49e6-9cb4-87778acdc302
 ms.search.region: Global
@@ -17,10 +17,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 3e97fda52acf6b61bf47eb30d53ce6597b4929d3
+ms.sourcegitcommit: c8684bf17946edff8230f0b6d324d355e61dc89b
+ms.openlocfilehash: 448517531112636d553dc895b17c5644c9c1f0bc
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/21/2017
 
 
 ---
@@ -30,7 +30,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-Det här ämnet innehåller en lista med resurser för BI och rapporter i Microsoft Dynamics 365 for Operations. 
+Det här ämnet innehåller en lista med resurser för BI och rapporter i Microsoft Dynamics 365 for Finance and Operations. 
 
 <a name="working-with-aggregate-data"></a>Arbeta med aggregerade data
 ---------------------------
@@ -43,14 +43,14 @@ Det här ämnet innehåller en lista med resurser för BI och rapporter i Micros
 ## <a name="self-service-reporting"></a>Självbetjäningsrapportering
 -   [Power BI-integration](power-bi-integration.md)
 -   [Konfigurera Power BI-integrering för arbetsytor](configure-power-bi-integration.md)
--   [Skapa en Power BI-rapport med Microsoft Dynamics 365 for Operations-data](create-powerbi-report-data.md)
+-   [Skapa en Power BI-rapport med Microsoft Dynamics 365 for Finance and Operations-data](create-powerbi-report-data.md)
 -   [Skapa en Power BI-rapport och instrumentpanel](create-powerbi-report-dashboard.md)
 -   [Innehållspaket för butikskanalprestanda för Power BI](retail-channel-performance-dashboard-power-bi-data.md)
 -   [Innehållspaket för ekonomiska resultat för Power BI](financial-performance-power-bi-content-pack.md)
 -   [Innehållspaket för försäljnings- och lönsamhetsprestanda för Power BI](sales-profitability-performance-content-pack.md)
--   [Använd en elektronisk rapporteringskonfiguration för att tillhandahålla Power BI med data från med Dynamics 365 for Operations](general-electronic-reporting-report-configuration-get-data-powerbi.md)
+-   [Använd en elektronisk rapporteringskonfiguration för att tillhandahålla Power BI med data från Finance and Operations](general-electronic-reporting-report-configuration-get-data-powerbi.md)
 
-## <a name="building-embedded-analytical-experiences-in-the-dynamics-365-for-operations-client"></a>Bygga inbäddade analytiska erfarenheter i Dynamics 365 for Operations-klienten
+## <a name="building-embedded-analytical-experiences-in-the-finance-and-operations-client"></a>Bygga inbäddade analytiska erfarenheter i Finance and Operations-klienten
 -   [Inbäddad Business Intelligence](analytics.md#embedded-business-intelligence)
 -   [KPI-modellering och anpassning](analytics.md#kpi-modeling-and-customization)
 -   [Lägga till BI i arbetsytor](add-bi-workspaces.md)
@@ -58,7 +58,7 @@ Det här ämnet innehåller en lista med resurser för BI och rapporter i Micros
 
 ## <a name="document-reporting-and-printing"></a>Rapportera och skriva ut dokument
 -   [Översikt över dokumentrapporteringstjänster](document-reporting-services.md)
--   [Skriva ut i Dynamics 365 for Operations-program](print-documents.md)
+-   [Skriva ut i Finance and Operations-program](print-documents.md)
 -   [Installera dokumentflödesagenten för att aktivera nätverksskrivarenheter](install-document-routing-agent.md)
 -   [Kör dokumentflödesagenten som en Windows-tjänst](run-document-routing-agent-as-windows-service.md)
 -   [Skapa nästa generations rapporteringslösningar](create-nextgen-reporting-solutions.md)
@@ -72,7 +72,7 @@ Det här ämnet innehåller en lista med resurser för BI och rapporter i Micros
 -   [Formeldesigner i elektronisk rapportering](general-electronic-reporting-formula-designer.md)
 -   [Destinationer för elektronisk rapportering](electronic-reporting-destinations.md)
 -   [Hämta konfigurationer för elektronisk rapportering från Lifecycle Services](download-electronic-reporting-configuration-lcs.md)
--   [Använd en elektronisk rapporteringskonfiguration för att tillhandahålla Power BI med data från med Dynamics 365 for Operations](general-electronic-reporting-report-configuration-get-data-powerbi.md)
+-   [Använd en elektronisk rapporteringskonfiguration för att tillhandahålla Power BI med data från Finance and Operations](general-electronic-reporting-report-configuration-get-data-powerbi.md)
 -   [ER Skapa en konfigurationsleverantör och markera den som aktiv](http://ax.help.dynamics.com/en/wiki/er-select-service-provider/) (uppgiftsguide)
 -   [ER Utforma domänspecifik datamodell](http://ax.help.dynamics.com/en/wiki/er-design-domain-specific-data-model/) (uppgiftsguide)
 -   [ER Definiera modellmappning och välj datakällor](http://ax.help.dynamics.com/en/wiki/er-define-model-mapping-and-select-data-sources/) (uppgiftsguide)
