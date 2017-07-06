@@ -31,6 +31,7 @@ ms.lasthandoff: 05/25/2017
 
 [!include[banner](../includes/banner.md)]
 
+[!include[Retail name](../includes/retail-name.md)]
 
 Använd fältet <strong>Artikelnummer </strong>om du vill söka efter produkter och produktvarianter när du manuellt skapar en försäljningsorderrad eller en inköpsorderrad.  På så sätt kan du snabbt hitta produktvarianter, när du har endast har konfigurationsträngen eller en av produktdimensionerna tillgänglig.
 
