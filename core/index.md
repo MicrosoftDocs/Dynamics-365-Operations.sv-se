@@ -17,10 +17,10 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: c8684bf17946edff8230f0b6d324d355e61dc89b
-ms.openlocfilehash: 8703b3bc5642e6dbe9dd399ced5af6da25f9b226
+ms.sourcegitcommit: bb0700ad317fa8faf5dc83ea523dd151f0f4a811
+ms.openlocfilehash: 713178e79000e4358104038295452db0ba025195
 ms.contentlocale: sv-se
-ms.lasthandoff: 06/21/2017
+ms.lasthandoff: 06/28/2017
 
 
 ---
@@ -41,21 +41,21 @@ Den här dokumentationen hjälper dig att anpassa Dynamics 365 for Finance and O
 <tbody>
 <tr class="odd">
 <td><h3>Financials</h3>
-<p>Regelefterlevnad</p>
+<p><a href="../financials/general-ledger/audit-policy-rules">Regelefterlevnad</a></p>
 <p>Ekonomisk styrning</p>
-<ul><li><a href="../financials/accounts-payable/accounts-payable">Leverantörsreskontra</a></li>
+<ul style="list-style-type:none">
+<li><a href="../financials/accounts-payable/accounts-payable">Leverantörsreskontra</a></li>
 <li><a href="../financials/accounts-receivable/accounts-receivable">Kundreskontra</a></li>
 <li><a href="../financials/budgeting/budgeting-overview">Budgetering</a></li>
 <li><a href="../financials/cash-bank-management/cash-bank-management">Kassa- och bankhantering</a></li>
 <li><a href="../financials/cost-accounting/cost-accounting-home-page">Kostnadsredovisning</a></li>
 <li><a href="../financials/fixed-assets/fixed-assets">Anläggningstillgångar</a></li>
 <li><a href="../financials/general-ledger/general-ledger">Redovisning</a></li>
-
 <li><a href="../financials/public-sector/public-sector-functionality">Offentlig sektor</a></li>
 <li><a href="../dev-itpro/lcs-solutions/country-region">Funktioner för nationella föreskrifter</a></li></ul>
 <p><a href="../financials/project-management/overview-project-management-accounting">Projekthantering</a></p>
 <H3>Personal</h3>
-  <ul>
+  <ul style="list-style-type:none">
 <li><a href="hr/manage-recruiting-process">Rekrytering</a></li>
 <li><a href="hr/localizations/noam-usa-payroll">Lön, USA</a></li>
 </ul>
@@ -63,19 +63,19 @@ Den här dokumentationen hjälper dig att anpassa Dynamics 365 for Finance and O
 <p><a href="../supply-chain/cost-management/costing-sheets">Kostnadshantering</a></p>
 <p><a href="../supply-chain/inventory/inventory-locations">Lagerhantering</a></p>
 <p>Logistik</p>
-<ul><li><a href="../supply-chain/transportation/transportation-management-overview">Transporthantering</a></li>
-<li><a href="../supply-chain/warehousing/warehouse-configuration">Lagerstyrning</a></li></ul></li>
+<ul style="list-style-type:none"><li><a href="../supply-chain/transportation/transportation-management-overview">Transporthantering</a></li>
+<li><a href="../supply-chain/warehousing/warehouse-configuration">Lagerstyrning</a></li></ul>
 <p><a href="../supply-chain/master-planning/master-plans">Planering</a></p>
   <p><a href="../supply-chain/pim/set-up-maintain-product-configuration-model">Produktinformationshantering</a></p>
   <p><a href="../supply-chain/production-control/create-production-orders">Produktionskontroll</a></p>
 <p>Orderhantering</p>
-  <ul><li><a href="../supply-chain/procurement/procurement-sourcing-overview">Anskaffning och källa</a></li>
+  <ul style="list-style-type:none"><li><a href="../supply-chain/procurement/procurement-sourcing-overview">Anskaffning och källa</a></li>
   <li><a href="../supply-chain/sales-marketing/overview-sales-marketing">Försäljning och marknadsföring</a></li></ul>
 </td>
 <td>
 <h3>Enhetlig Operations-plattform</h3>
 <p>Intelligence</p>
-<ul><li><a href="../dev-itpro/analytics/analytics">Analyser</a></li>
+<ul style="list-style-type:none"><li><a href="../dev-itpro/analytics/analytics">Analyser</a></li>
  <li><a href="../dev-itpro/analytics/document-reporting-services">Affärsdokument</a></li>
 <li><a href="../dev-itpro/analytics/financial-reporting-intro">Ekonomisk rapportering</a></li>
 <li><a href="../dev-itpro/analytics/general-electronic-reporting">Lagstadgad rapportering</a></li></ul>
@@ -83,33 +83,34 @@ Den här dokumentationen hjälper dig att anpassa Dynamics 365 for Finance and O
 <p><a href="../dev-itpro/mobile-apps/mobile-platform">Mobilplattform</a></p>
 
  <p>Funktioner för utvecklare</p>
-<ul>
-<li><a href="../dev-itpro/continuous-delivery-home-page">Kontinuerlig leverans</a></li>
+<ul style="list-style-type:none">
+<li><a href="../dev-itpro/dev-tools/continuous-delivery-home-page">Kontinuerlig leverans</a></li>
 <li><a href="../dev-itpro/get-started/demo-data">Demodata</a></li>
 <li><a href="../dev-itpro/dev-tools/developer-home-page">Utvecklarverktyg</a></li>
 <li><a href="../dev-itpro/extensibility/customize-model-elements-extensions">Utbyggbarhet</a></li>
 <li><p>Integration</p>
-<ul><li><a href="../dev-itpro/data-entities/data-entities">Datatabeller</a></li>
+<ul style="list-style-type:none"><li><a href="../dev-itpro/data-entities/data-entities">Datatabeller</a></li>
 <li><a href="../dev-itpro/office-integration/office-integration">Integrering med Office</a></li></ul></li></ul>
 
 <p>Administratörsfunktioner<p>
-<ul>
-<li><a href="../get-started/onboarding-home">Integrera organisationen</a></li>
-<li><a href="../dev-itpro/deploy-demo-environment">Distribution och stöd</a></li>
+<ul style="list-style-type:none">
+<li><a href="../fin-and-ops/get-started/onboarding-home">Integrera organisationen</a></li>
+<li><a href="../dev-itpro/deployment/deploy-demo-environment">Distribution och stöd</a></li>
 <li><a href="../dev-itpro/migration-upgrade/upgrade-home-page">Uppgradera</a></li>
 <li><a href="../dev-itpro/data-entities/data-management-integration-data-entity">Datahantering</a></li>
 <li><a href="../dev-itpro/lifecycle-services/lcs">Lifecycle Services</a></li>
 <li><a href="../fin-and-ops/organization-administration/organization-administration-home-page">Organisationsadministration</a></li>
 <li><a href="../dev-itpro/sysadmin/system-administration-home-page">Systemadministration</a></li>
-<ul>
+</ul>
 </td>
 <td>
-<h3>Dynamics 365 for Talent</h3>
+<h3>Relaterade produkter</h3>
+<h4>Dynamics 365 for Talent</h4>
 <p><a href="../talent/manage-benefit-program">Förmåner</a></p>
 <p><a href="../talent/performance-management-overview">Medarbetares utveckling och utbildning</a></p>
 <p><a href="../talent/questionnaires">Enkät</a></p>
 
-<h3>Dynamics 365 for Retail</h3>
+<h4>Dynamics 365 for Retail</h4>
 <p><a href="../retail/call-center-functionality">Kundtjänst</p>
 <p><a href="../retail/define-maintain-retail-channels">Inställning och hantering av kanaler</p>
 <p><a href="../retail/retail-peripherals-overview">MPOS och Cloud POS</p>
