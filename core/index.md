@@ -114,7 +114,7 @@ Den här dokumentationen hjälper dig att anpassa Dynamics 365 for Finance and O
 <p><a href="../retail/call-center-functionality">Kundtjänst</p>
 <p><a href="../retail/define-maintain-retail-channels">Inställning och hantering av kanaler</p>
 <p><a href="../retail/retail-peripherals-overview">MPOS och Cloud POS</p>
-<p><a href="../retail/dev-itpro/dev-retail-home-page">Utveckling och administration av butik</p>
+<p><a href="../retail/dev-itpro/dev-retail-home-page">Utveckling och administration av Retail</p>
 
 </td>
 </tr>

@@ -80,7 +80,7 @@ Med Retail kan butikschefer skapa och publicera skift och scheman för dem som a
 
 Försäljaren få insyn i skift och tilldelade scheman, tillsammans med instruktioner för skiften samt insyn i vilka medarbetare som är tilldelade skift. De kan också skicka in ledighetsansökningar, begära att få byta skift med arbetskamrater och begära erbjudanden om fler skift.
 
-## <a name="customize-and-administer-retail-environments"></a>Anpassa och administrera butiksmiljöer
+## <a name="customize-and-administer-retail-environments"></a>Anpassa och administrera Retail-miljöer
 Om du har blivit ombedd att anpassa din miljö eller om du ansvarar för att distribuera och underhålla systemet, måste du läsa det specifika innehållet för utvecklare och systemadministratörer som gäller särskilt för Retail, förutom det mer allmänna innehållet.
 
 - [Dynamics 365 for Retail för IT-personal och utvecklare](dev-itpro/dev-retail-home-page.md)
