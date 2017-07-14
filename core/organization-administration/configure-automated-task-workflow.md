@@ -3,13 +3,13 @@ title: "Konfigurera en automatisk uppgift i ett arbetsflöde"
 description: "I det här avsnittet beskrivs hur du konfigurerar egenskaperna för en automatisk uppgift."
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 192061
 ms.assetid: c0aceb57-b5e6-4ef3-91e7-89a21c9f048a
 ms.search.region: Global
@@ -17,15 +17,16 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 358065dd127703191ba441d0603307a3b7e5df60
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 66f1b8e03cc0da5d21fea9b3c795d8f4097c8cfc
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="configure-an-automated-task-in-a-workflow"></a>Konfigurera en automatisk uppgift i ett arbetsflöde
+# Konfigurera en automatisk uppgift i ett arbetsflöde
+<a id="configure-an-automated-task-in-a-workflow" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
@@ -34,13 +35,15 @@ I det här avsnittet beskrivs hur du konfigurerar egenskaperna för en automatis
 
 Högerklicka på uppgiften och klicka sedan på **Egenskaper** för att öppna sidan **Egenskaper** om du vill konfigurera en automatisk uppgift i arbetsflödesredigeraren. Använd sedan följande procedurer när du vill konfigurera egenskaperna för den automatiska uppgiften.
 
-## <a name="name-the-task"></a>Ange ett namn på uppgiften
+## Ange ett namn på uppgiften
+<a id="name-the-task" class="xliff"></a>
 Följ dessa steg när du vill ange ett namn för den automatiska uppgiften.
 
 1.  Klicka på **Grundinställningar** i det vänstra fönstret.
 2.  I fältet **Namn** anger du ett unikt namn för uppgiften.
 
-## <a name="specify-when-notifications-are-sent"></a>Ange när meddelanden ska skickas
+## Ange när meddelanden ska skickas
+<a id="specify-when-notifications-are-sent" class="xliff"></a>
 Du kan skicka meddelanden till andra personer när en automatisk uppgift har körts eller annullerats. Följ dessa steg för att ange när meddelanden skickas och vem de skickas till.
 
 1.  Klicka på **Meddelanden** i det vänstra fönstret.
@@ -96,10 +99,10 @@ Du kan skicka meddelanden till andra personer när en automatisk uppgift har kö
     </tr>
     <tr class="odd">
     <td>Användare</td>
-    <td>Specifika Microsoft Dynamics 365 for Operations-användare</td>
+    <td>Specifika användare av Microsoft Dynamics 365 for Finance and Operations</td>
     <td><ol>
     <li>Klicka på fliken <strong>Användare</strong> när du har valt <strong>Användare</strong>.</li>
-    <li>Listan <strong>Tillgängliga användare</strong> innehåller alla Dynamics 365 for Operations-användare. Markera de användare som du vill skicka meddelanden till, och flytta sedan dessa användare till listan <strong>Markerade användare</strong>.</li>
+    <li>Listan <strong>Tillgängliga användare</strong> innehåller alla Finance and Operations-användare. Markera de användare som du vill skicka meddelanden till, och flytta sedan dessa användare till listan <strong>Markerade användare</strong>.</li>
     </ol></td>
     </tr>
     </tbody>

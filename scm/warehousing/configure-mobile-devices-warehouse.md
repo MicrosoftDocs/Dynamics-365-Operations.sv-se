@@ -3,14 +3,14 @@ title: "Konfigurera mobila enheter för lagerarbete"
 description: "Den här artikeln beskriver hur du konfigurerar menyalternativ som lagerarbetare använder för att utföra arbete på en mobil enhet."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: WHSRFMenuItem
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 29941
 ms.assetid: 6dff6313-dc6e-4f06-9c0c-dab24eefe4da
 ms.search.region: Global
@@ -18,15 +18,16 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 6a7658c56e2d0712c6aa27a4bb8ffc02bbd01d6c
+ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
+ms.openlocfilehash: dfb738e41f4b3f7d475a551dca0aba7a071dd989
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="set-up-mobile-devices-for-warehouse-work"></a>Konfigurera mobila enheter för lagerarbete
+# Konfigurera mobila enheter för lagerarbete
+<a id="set-up-mobile-devices-for-warehouse-work" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
@@ -41,7 +42,8 @@ Den här artikeln beskriver hur du konfigurerar menyalternativ som lagerarbetare
 
 För att skapa ett menyalternativ för en aktivitet eller en förfrågan, ange fältet **Läge** som **Indirekt**. En lista alternativen för **Aktivitetskod** blir sedan tillgänglig, så att du kan välja typ av fråga eller aktivitet som menyalternativet avser. För att skapa ett menyalternativ för att generera lagerarbete, ange fältet **Läge** som **Arbete**. En lista över alternativen för **Skapandeprocess för arbete** blir sedan tillgänglig. För att skapa ett menyalternativ för att bearbeta befintliga lagerarbete konfigurerar du fältet **Metod** till **Arbete** och sedan anger du alternativet **Använd befintligt arbete** som **Ja**. **Obs!** Beroende på det läge som du väljer för menyalternativet och om menyalternativet används för att utföra befintligt arbete, kan det finnas ytterligare fält tillgängliga för menyalternativet. Se avsnittet ”Ytterligare menyalternativ" senare i det här avsnittet för information om ytterligare fältval.
 
-## <a name="configure-menu-items-for-activities-and-inquiries"></a>Konfigurera menyalternativ för aktiviteter och förfrågningar
+## Konfigurera menyalternativ för aktiviteter och förfrågningar
+<a id="configure-menu-items-for-activities-and-inquiries" class="xliff"></a>
 Om fältet **Metod** för ett menyalternativ anges som **Indirekt**, kan du skapa ett menyalternativ för att utföra en allmän aktivitet eller förfrågning som inte skapar arbete. Till exempel nyutskrift av registreringsskyltar och en förfrågan om artiklar på en plats. I följande tabell finns de alternativ som är tillgängliga.
 
 | Alternativ                      | Beskrivning                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
@@ -53,7 +55,7 @@ Om fältet **Metod** för ett menyalternativ anges som **Indirekt**, kan du skap
 | Registreringsskyltsförfrågan       | Visa kvantiteten av artiklar på en registreringsskylt och platsen för registreringsskylten.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | Starta produktionsorder      | Starta en produktionsorder.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | Produktionskassation            | Ange kvantiteten av kassation som har skapats under produktionen för varje strukturlisterad.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| Sista produktionspall      | Ange att den sista lastpallen har producerats för en tillverkningsorder, och att statusen för produktionsordern måste uppdateras till **Rapporterat som färdigt**-klienten. Status för råmaterial som inte förbrukats under produktionen ändras tillbaka från **Plockat** till **Har beställts**och artiklarna kan returneras till lagret.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| Sista produktionspall      | Ange att den sista lastpallen har producerats för en tillverkningsorder, och att statusen för produktionsordern måste uppdateras till **Rapporterat som färdigt**-klienten. Status för råmaterial som inte förbrukats under produktionen ändras tillbaka från **Plockat** till **Har beställts** och artiklarna kan returneras till lagret.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | Artikelfråga                | Skanna en artikel för att avgöra var den finns i lagerstället. Frågan returnerar alla platser och kvantiteter för den skannade artikeln.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | Skriv ut etikett på nytt               | Skriva ut en ID-nummeretikett igen.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
 | Skapa registreringsskylt         | Skapa en överordnad registreringsskylt genom att kombinera flera registreringsskyltar på samma plats. Detta alternativ är användbart om du flyttar flera registreringsskyltar samtidigt. När den överordnade registreringsskylten har tagits bort måste du utföra ett registreringsskyltsavbrott innan du kan plocka artiklar från varje registreringsskylt. **Tips:** Om du vill flytta en överordnad registreringsskylt måste du använda en mobil enhet som har konfigurerats för att skapa arbete för förflyttningar.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
@@ -64,7 +66,8 @@ Om fältet **Metod** för ett menyalternativ anges som **Indirekt**, kan du skap
 | Ändra batchdisposition    | Tillåt att en anställd anger en batchdispositionskod för en artikel och en batch. Detta val uppdaterar den dispositionskod som anges för batchen.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | Visa lista över öppet arbete      | Visa en lista över tillgängligt arbete till en viss användare. Användaren kan sedan välja arbetet som ska utföras och styrs mot det. Den här listan är avsedd att visas på pekplattor med skärmstorlekar på 7 tum eller mer. När du väljer det här alternativet kommer menyalternativen **Redigera fråga** och **Fältlista** blir tillgängliga. Sidan **Redigera fråga** låter dig ställa in kriterier för det arbete som visas i listan. Sidan **Fältlista** låter dig välja vilka fält som visas i arbetslistan. Du kan till exempel minska antalet fält som visas så att användaren snabbare kan välja den lämpligaste arbetsuppgiften. På snabbfliken **Allmän** i fältet **Poster per sida** kan du också välja hur många arbetsposter per sida som ska visas. Om alternativet **Tillåt användare att filtrera arbete efter transaktionstyp** är markerat, kommer arbetslistan att inkludera en **Filtrera arbete**-kontroll i arbetsuppgiftslistan, som låter användaren filtrera per transaktionstyp. I arbetslistan kommer användaren endast att se arbete som de har behörighet till. Du måste kontrollera att användarna har behörighet för en eller flera användarriktade menykommandon som stöder de specifika arbetsklasstyperna som de ska ha åtkomst till. Behörigheter kontrolleras när en användare försöker utföra arbete i listan. |
 
-## <a name="configure-menu-items-to-create-work-for-another-worker-or-process"></a>Ställ in menyalternativ för att skapa arbete för en annan arbetare eller process
+## Ställ in menyalternativ för att skapa arbete för en annan arbetare eller process
+<a id="configure-menu-items-to-create-work-for-another-worker-or-process" class="xliff"></a>
 Du kan ställa in en menykommando som skapar arbete för en annan anställd, efter en ursprunglig åtgärden har utförts på mobila enheten. När till exempel en arbetstagare använder en mobil enhet för att ta emotå en artikel, skapas inlagrat arbete för en annan arbetstagare. Om du vill ställa in ett menyalternativ som skapar arbete, välj sidan **Menyalternativ på mobil enhet** i fältet **Metod** och sedan **Arbete**. I följande register arrangeras alternativen i fältet **Process för att skapa arbete** efter arbetsordertyp.
 
 <table>
@@ -165,7 +168,7 @@ Du kan ställa in en menykommando som skapar arbete för en annan anställd, eft
 </tr>
 <tr>
 <td>Förflyttning efter registreringsskylt</td>
-<td>Flytta artiklar från en plats till en annan på ett halvautomatiskt sätt. Arbetaren väljer den plats artiklarna ska flyttas från, och Microsoft Dynamics 365 for Operations använder platsdirektivet för att avgöra vilken plats som artiklarna ska flyttas till.</td>
+<td>Flytta artiklar från en plats till en annan på ett halvautomatiskt sätt. Arbetaren väljer den plats artiklarna ska flyttas från, och Finance and Operations använder platsdirektivet för att avgöra vilken plats som artiklarna ska flyttas till.</td>
 </tr>
 <tr>
 <td>Överföring lagerställe</td>
@@ -193,7 +196,8 @@ Du kan ställa in en menykommando som skapar arbete för en annan anställd, eft
 </tbody>
 </table>
 
-## <a name="configure-menu-items-to-process-existing-work"></a>Ställa in menyalternativ för att bearbeta befintligt arbete
+## Ställa in menyalternativ för att bearbeta befintligt arbete
+<a id="configure-menu-items-to-process-existing-work" class="xliff"></a>
 Förutom inställningar av menyalternativ som skapar lagerställearbete, kan du ställa in menyalternativ till processarbete som redan har skapats. Ställ in fältet **Metod** till **Arbete** och välj alternativet **Använd befintligt arbete**. Vissa ytterligare alternativ blir sedan tillgängliga på fliken **Allmänt**. Du kan styra åtkomsten till menyalternativet genom att tilldela en eller flera klasser för arbete på snabbfliken **Arbetsklass**. Arbetsklasserna definierar det arbete som menyalternativet kan bearbeta. Arbetsklassen kan också användas för att bevilja åtkomst till specifika användarroller eller för separat bearbetning för andra typer av operationer. I följande tabell beskriver de alternativ som är tillgängliga.
 
 <table>
@@ -214,7 +218,7 @@ Förutom inställningar av menyalternativ som skapar lagerställearbete, kan du 
 </tr>
 <tr class="even">
 <td>Systemstyrd</td>
-<td>Microsoft Dynamics 365 for Operations kontrollerar den typ av arbete som har tilldelats en arbetare och i vilken ordning som personen utför arbetet. När du väljer det här alternativet kan du klicka på <strong>Systemstyrt arbete</strong> i åtgärdsfönstret för att öppna sidan <strong>Systemstyrd sorteringsordning</strong>, där du kan ställa in sorteringskriterier för resursen. Sorteringskriteriet kontrollerar den följd i vilken arbetaren utför arbetet. Du kan lägga till så många kriterier som du behöver.</td>
+<td>Microsoft Dynamics 365 for Finance and Operations kontrollerar den typ av arbete som har tilldelats en arbetare och i vilken ordning som personen utför arbetet. När du väljer det här alternativet kan du klicka på <strong>Systemstyrt arbete</strong> i åtgärdsfönstret för att öppna sidan <strong>Systemstyrd sorteringsordning</strong>, där du kan ställa in sorteringskriterier för resursen. Sorteringskriteriet kontrollerar den följd i vilken arbetaren utför arbetet. Du kan lägga till så många kriterier som du behöver.</td>
 </tr>
 <tr class="odd">
 <td>Användarstyrd</td>
@@ -226,7 +230,7 @@ Förutom inställningar av menyalternativ som skapar lagerställearbete, kan du 
 </tr>
 <tr class="odd">
 <td>Systemgruppering</td>
-<td>Microsoft Dynamics 365 for Operations grupperar arbete för arbetaren baserat på ett angivet fält. Till exempel plockningsarbete som grupperas när en arbetstagare skannar ett leverans-ID, last-ID eller något värde som kan kopplas till varje arbetsenhet. Om du väljer det här alternativet krävs följande fält:
+<td>Microsoft Dynamics 365 for Finance and Operations grupperar arbete för arbetaren baserat på ett angivet fält. Till exempel plockningsarbete som grupperas när en arbetstagare skannar ett leverans-ID, last-ID eller något värde som kan kopplas till varje arbetsenhet. Om du väljer det här alternativet krävs följande fält:
 <ul>
 <li><strong>Fält för systemgruppering</strong> – Välj det fält som arbetaren ska skanna för att gruppera arbetet.</li>
 <li><strong>Etikett för systemgruppering</strong> – Ange text för att instruera arbetaren om vad du ska skanna för att gruppera arbetet.</li>
@@ -247,12 +251,13 @@ Det här alternativet är praktiskt när t.ex. flera lastpallar mellanlagras fö
 </tr>
 <tr class="even">
 <td>Rullande inventeringsgruppering</td>
-<td>Arbetaren väljer en zon, en arbetspool eller en plats, och Microsoft Dynamics 365 for Operations tilldelar arbete som bygger på dessa val. Om du markerar det här alternativet, kan du även klicka på <strong>Rullande inventering</strong> på åtgärdsfönstret för att ange ytterligare information och du kan också ange hur många gånger som arbetare måste upprepa inventeringen, om en skillnad finnas.</td>
+<td>Arbetaren väljer en zon, en arbetspool eller en plats, och Microsoft Dynamics 365 for Finance and Operations tilldelar arbete som bygger på dessa val. Om du markerar det här alternativet, kan du även klicka på <strong>Rullande inventering</strong> på åtgärdsfönstret för att ange ytterligare information och du kan också ange hur många gånger som arbetare måste upprepa inventeringen, om en skillnad finnas.</td>
 </tr>
 </tbody>
 </table>
 
-## <a name="additional-menu-item-options"></a>Ytterligare menyalternativ
+## Ytterligare menyalternativ
+<a id="additional-menu-item-options" class="xliff"></a>
 Det finns ytterligare menyalternativ tillgängliga på sidan **Menyalternativ på mobil enhet** . Alternativen varierar beroende på processen som du konfigurerar menyalternativen för. 
 
 I följande register beskrivs dessa alternativ.
@@ -331,7 +336,7 @@ I följande register beskrivs dessa alternativ.
 </tr>
 <tr class="odd">
 <td>Grupplats</td>
-<td>Markera det här alternativet om du vill gruppera inlagrat arbete. Det här alternativet är tillgängligt när arbetet grupperats av antingen arbetaren eller Microsoft Dynamics 365 for Operations. När arbetaren har slutfört allt plockningsarbete i gruppen skapas inlagrat arbete för samma grupp.</td>
+<td>Markera det här alternativet om du vill gruppera inlagrat arbete. Det här alternativet är tillgängligt när arbetet grupperats av antingen arbetaren eller Microsoft Dynamics 365 for Finance and Operations. När arbetaren har slutfört allt plockningsarbete i gruppen skapas inlagrat arbete för samma grupp.</td>
 </tr>
 <tr class="even">
 <td>Lagerjusteringstyper</td>
@@ -364,11 +369,11 @@ I följande register beskrivs dessa alternativ.
 </tr>
 <tr class="even">
 <td>Fält för systemgruppering</td>
-<td>Välj det fält som bestämmer hur Microsoft Dynamics 365 for Operations ska gruppera plockningsarbete för arbetare. Om du till exempel väljer fältet <strong>ShipmentId</strong> kommer arbetstagare att skanna leverans-ID:t för att gruppera plockningsarbetet. Allt arbete för leveransen tilldelas sedan till arbetaren. Detta fält kräver att du skapar ett menyalternativ som ska använda befintligt arbete som grupperas av systemet. Du måste också ange text i fältet <strong>Systemgrupperingsetikett</strong> för att instruera arbetaren om vad den ska skanna..</td>
+<td>Välj det fält som bestämmer hur Microsoft Dynamics 365 for Finance and Operations ska gruppera plockningsarbete för arbetare. Om du till exempel väljer fältet <strong>ShipmentId</strong> kommer arbetstagare att skanna leverans-ID:t för att gruppera plockningsarbetet. Allt arbete för leveransen tilldelas sedan till arbetaren. Detta fält kräver att du skapar ett menyalternativ som ska använda befintligt arbete som grupperas av systemet. Du måste också ange text i fältet <strong>Systemgrupperingsetikett</strong> för att instruera arbetaren om vad den ska skanna..</td>
 </tr>
 <tr class="odd">
 <td>Etikett för systemgruppering</td>
-<td>Ange den text som ska instruera arbetaren om vad som ska skannas när plockarbetet grupperas av Microsoft Dynamics 365 for Operations. Om du till exempel använder fältet <strong>ShipmentId</strong> för att gruppera plockningarbete efter leveransen kan du ange <strong>Leverans-ID</strong> i fältet. Detta fält kräver att du skapar ett menyalternativ som ska använda befintligt arbete som grupperas av systemet. Du måste också välja fältet som du vill gruppera efter i fältet <strong>Systemgruppering</strong>.</td>
+<td>Ange den text som ska instruera arbetaren om vad som ska skannas när plockarbetet grupperas av Microsoft Dynamics 365 for Finance and Operations. Om du till exempel använder fältet <strong>ShipmentId</strong> för att gruppera plockningarbete efter leveransen kan du ange <strong>Leverans-ID</strong> i fältet. Detta fält kräver att du skapar ett menyalternativ som ska använda befintligt arbete som grupperas av systemet. Du måste också välja fältet som du vill gruppera efter i fältet <strong>Systemgruppering</strong>.</td>
 </tr>
 <tr class="even">
 <td>Använd standarddata</td>
@@ -384,13 +389,14 @@ I följande register beskrivs dessa alternativ.
 </tr>
 <tr class="odd">
 <td>Kod för arbetsmall</td>
-<td>Välj den arbetsmall som ska användas för att skapa arbetet för en process. Om du till exempel tar emot en artikel för en inköpsorder, genereras det inlagrade arbetet baserat på arbetsmallen. Om du inte väljer en mall för arbetet, tilldelar Microsoft Dynamics 365 for Operations en mall, baserat på frågevillkor. Mer information om arbetsmallar finns i <a href="control-warehouse-location-directives.md">Kontrollera lagerarbete med arbetsmallar och platsdirektiv</a>.</td>
+<td>Välj den arbetsmall som ska användas för att skapa arbetet för en process. Om du till exempel tar emot en artikel för en inköpsorder, genereras det inlagrade arbetet baserat på arbetsmallen. Om du inte väljer en mall för arbetet, tilldelar Microsoft Dynamics 365 for Finance and Operations en mall, baserat på frågevillkor. Mer information om arbetsmallar finns i <a href="control-warehouse-location-directives.md">Kontrollera lagerarbete med arbetsmallar och platsdirektiv</a>.</td>
 </tr>
 </tbody>
 </table>
 
-## <a name="require-workers-to-confirm-the-product-location-or-quantity-when-they-pick-items"></a>Begär att arbetare ska bekräfta produkten, platsen eller kvantiteten när de plockar artiklar
-Du kan ställa in arbetsbekräftelser som kräver en arbetare att använda en mobil enhet för att registrera platsen eller kvantitet, när han eller hon utför arbete på lagerstället. Arbetsbekräftelser hjälper till att garantera att arbetaren är på rätt plats eller hanterar rätt kvantitet av artiklar. Du kan också aktivera Microsoft Dynamics 365 for Operations om du automatiskt vill bekräfta arbetarens registrering. Om du aktiverar automatisk bekräftelse, kan du inte också kräva bekräftelser för plats och kvantitet. Arbetsbekräftelser innehåller också produkter och produktvarianter. Du kan registrera bekräftelser genom att skanna en streckkod. Om du bekräfta produkter och produktvarianter måste du ange ett ID för produkten eller produktvarianten. Detta ID kan vara ett produkt-ID, ett produktsöknings-ID, ett externt ID, en GTIN eller en streckkod. När du har angett ID eller skannat streckkoden visas dimensionerna för produktvarianten i den mobila enheten. 
+## Begär att arbetare ska bekräfta produkten, platsen eller kvantiteten när de plockar artiklar
+<a id="require-workers-to-confirm-the-product-location-or-quantity-when-they-pick-items" class="xliff"></a>
+Du kan ställa in arbetsbekräftelser som kräver en arbetare att använda en mobil enhet för att registrera platsen eller kvantitet, när han eller hon utför arbete på lagerstället. Arbetsbekräftelser hjälper till att garantera att arbetaren är på rätt plats eller hanterar rätt kvantitet av artiklar. Du kan också aktivera Microsoft Dynamics 365 for Finance and Operations om du automatiskt vill bekräfta arbetarens registrering. Om du aktiverar automatisk bekräftelse, kan du inte också kräva bekräftelser för plats och kvantitet. Arbetsbekräftelser innehåller också produkter och produktvarianter. Du kan registrera bekräftelser genom att skanna en streckkod. Om du bekräfta produkter och produktvarianter måste du ange ett ID för produkten eller produktvarianten. Detta ID kan vara ett produkt-ID, ett produktsöknings-ID, ett externt ID, en GTIN eller en streckkod. När du har angett ID eller skannat streckkoden visas dimensionerna för produktvarianten i den mobila enheten. 
 
 I tabellen nedan beskrivs de olika arbetstyperna som du kan använda arbetsbekräftelser med.
 
@@ -408,7 +414,8 @@ I tabellen nedan beskrivs de olika arbetstyperna som du kan använda arbetsbekr�
 
 **Obs!** Det går bara att begäran produktbekräftelse för plock- och placeringsarbetstyper.
 
-<a name="see-also"></a>Se även
+Se även
+<a id="see-also" class="xliff"></a>
 --------
 
 [Visningsinställningar för mobil lagerställeenhet](change-warehouse-mobile-device-displays.md)

@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 50651
 ms.assetid: 17f06036-cac2-4c28-8dc6-1dff6b81a7cc
 ms.search.region: Global
@@ -17,15 +17,16 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 3a95ce92fe40f7e1c52bba554b82bd73d627c6b4
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: cf6d4756ae706316a342590ab76b4a5cbdd7e4f9
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="procurement-and-sourcing-home-page"></a>Startsidan för Anskaffning och källa
+# Startsidan för Anskaffning och källa
+<a id="procurement-and-sourcing-home-page" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
@@ -34,20 +35,23 @@ Det här ämnet innehåller en lista med hjälpavsnitt och andra resurser som ä
 
 Anskaffning och källa omfattar alla steg från att identifiera ett behov av produkter och tjänster ,genom anskaffning av produkten, mottagning, fakturering och bearbetning av betalning till leverantörer. Upphandlingar kan konfigureras mot specifika verksamhetsbehov genom att definiera inköpspolicy och arbetsflöden. För mer information, se [Anskaffning och källa](procurement-sourcing-overview.md). Ytterligare resurser beskrivs nedan.
 
-## <a name="purchase-requisitions"></a>Inköpsrekvisitioner
+## Inköpsrekvisitioner
+<a id="purchase-requisitions" class="xliff"></a>
 -   [Översikt över inköpsrekvisition](purchase-requisitions-overview.md)
 -   [Skapa en rekvisition för förbrukning](http://ax.help.dynamics.com/en/wiki/create-a-requisition-for-consumption/)
 -   [Skapa en rekvisition som använder en anbudsförfrågan](http://ax.help.dynamics.com/en/wiki/create-a-requisition-that-uses-an-rfq/)
 -   [Ställ in behörigheter att beställa produkter för någon annans räkning](http://ax.help.dynamics.com/en/wiki/set-up-permissions-for-ordering-products-on-behalf-of-someone-else/)
 
-## <a name="requests-for-quotation"></a>Anbudsförfrågningar
+## Anbudsförfrågningar
+<a id="requests-for-quotation" class="xliff"></a>
 -   [Anbudsförfrågningar](request-quotations.md)
 -   [Skapa en anbudsförfrågan](http://ax.help.dynamics.com/en/wiki/create-a-request-for-quotation/)
 -   [Ange och jämför anbudsförfråganbud och tilldela kontrakt](http://ax.help.dynamics.com/en/wiki/enter-and-compare-rfq-bids-and-award-contracts/)
 -   [Skapa en poängmetod för anbudsförfrågan](http://ax.help.dynamics.com/en/wiki/create-a-scoring-method-for-rfqs/)
 -   [Skapa begäranstyper och göra poängvillkor för anbudsförfrågan](http://ax.help.dynamics.com/en/wiki/create-solicitation-types-and-scoring-criteria-for-rfqs/)
 
-## <a name="vendor-management-and-collaboration"></a>Leverantörshantering och samarbete
+## Leverantörshantering och samarbete
+<a id="vendor-management-and-collaboration" class="xliff"></a>
 -   [Konfigurera leverantörskonton](set-up-vendor-accounts.md)
 -   [Skapa ett leverantörskonto](http://ax.help.dynamics.com/en/wiki/create-a-vendor-account/)
 -   [Skapa ett nytt leverantörsbankkonto](http://ax.help.dynamics.com/en/wiki/create-a-vendor-bank-account/)
@@ -57,13 +61,14 @@ Anskaffning och källa omfattar alla steg från att identifiera ett behov av pro
 -   [Leverantörssamarbete med kunder](vendor-collaboration-work-customers-dynamics-365-operations.md)
 -   [Hantera leverantörssamarbetesanvändare](manage-vendor-collaboration-users.md)
 -   [Skapa och underhåll leverantörssamarbeten](set-up-maintain-vendor-collaboration.md)
--   () infogas[Inkommande demonstrationsskript för försändelselager för Microsoft Dynamics 365 for Operations](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/InboundConsignmentInventoryDemoScriptDynamics365Operations)
+-   [Inkommande demonstrationsskript för försändelselager för Microsoft Dynamics 365 for Finance and Operations](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/InboundConsignmentInventoryDemoScriptDynamics365Operations)(dokument)
 -   [Övervaka försändelselagret med hjälp av leverantörssamarbete](http://ax.help.dynamics.com/en/wiki/monitor-consignment-inventory-using-vendor-collaboration/)
--   [Samarbeta med leverantörer genom att använda leverantörportalen](collaborate-vendors-vendor-portal.md)  (endast Dynamics 365 for Operations-versioner från februari 2016 och maj 2016)
--   [Säkerhetskonfiguration för användare av leverantörportalen](configure-security-vendor-portal-users.md) (endast Dynamics 365 for Operations-versioner från februari 2016 och maj 2016)
--   [Mobil arbetsyta för leverantörssamarbete för programmet Microsoft Dynamics 365 for Operations](vendor-collaboration-mobile-workspace.md)
+-   [Samarbeta med leverantörer genom att använda leverantörsportalen](collaborate-vendors-vendor-portal.md) (endast Dynamics AX-versioner från februari 2016 och maj 2016)
+-   [Säkerhetskonfiguration för användare av leverantörsportalen](configure-security-vendor-portal-users.md) (endast Finance and Operations-versioner från februari 2016 och maj 2016)
+-   [Mobil arbetsyta för leverantörssamarbete för Microsoft Dynamics 365 for Finance and Operations](vendor-collaboration-mobile-workspace.md)
 
-## <a name="procurement-product-management"></a>Hantering av anskaffningsprodukt
+## Hantering av anskaffningsprodukt
+<a id="procurement-product-management" class="xliff"></a>
 -   [Anskaffningskataloger](procurement-catalogs.md)
 -   [Skapa en anskaffningskatalog](http://ax.help.dynamics.com/en/wiki/create-a-procurement-catalog/)
 -   [Importera leverantörskataloger](https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/05/25/vendor-catalogs-in-dynamics-ax/) (blogginlägg)
@@ -71,7 +76,8 @@ Anskaffning och källa omfattar alla steg från att identifiera ett behov av pro
 -   [Ställ in policyer för hierarkier för anskaffningskategorier](http://ax.help.dynamics.com/en/wiki/set-up-policies-for-procurement-category-hierarchies/)
 -   [Godkänn leverantörer för specifika anskaffningkategorier](http://ax.help.dynamics.com/en/wiki/approve-vendors-for-specific-procurement-categories/)
 
-## <a name="procurement"></a>Anskaffning
+## Anskaffning
+<a id="procurement" class="xliff"></a>
 -   [Översikt över inköpsorder](purchase-order-overview.md)
 -   [Skapande av inköpsorder](purchase-order-creation.md)
 -   [Godkänna och bekräfta inköpsorder](purchase-order-approval-confirmation.md)
@@ -85,17 +91,20 @@ Anskaffning och källa omfattar alla steg från att identifiera ett behov av pro
 -   [Skapa en inköpsfrisläppningsorder när inköpsordern skapas](http://ax.help.dynamics.com/en/wiki/create-a-purchase-release-order-when-creating-the-purchase-order/)
 -   [Skapa en order för lagerpåfyllnad för försändelse](http://ax.help.dynamics.com/en/wiki/create-a-consignment-replenishment-order/)
 
-## <a name="prices-and-discounts"></a>Priser och rabatter
+## Priser och rabatter
+<a id="prices-and-discounts" class="xliff"></a>
 -   [Inköpsavtal](purchase-agreements.md)
 -   [Skapa ett inköpsavtal](http://ax.help.dynamics.com/en/wiki/create-a-purchase-agreement/)
 -   [Leverantörens rabatter](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/Vendor_rebates) (vitbok)
 
-## <a name="product-receipt-and-invoicing"></a>Produkt inleverans och fakturering
+## Produkt inleverans och fakturering
+<a id="product-receipt-and-invoicing" class="xliff"></a>
 -   [Produktinleverans mot inköpsorder](product-receipt-against-purchase-orders.md)
--   [Översikt över leverantörsfakturor](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview?toc=/dynamics365/operations/supply-chain/toc.json)
--   [Bokföringsprofiler för leverantörer](/dynamics365/operations/financials/accounts-payable/vendor-posting-profiles?toc=/dynamics365/operations/supply-chain/toc.json)
+-   [Översikt över leverantörsfakturor](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview?toc=/dynamics365/unified-operations/supply-chain/toc.json)
+-   [Bokföringsprofiler för leverantörer](/dynamics365/unified-operations/financials/accounts-payable/vendor-posting-profiles?toc=/dynamics365/unified-operations/supply-chain/toc.json)
 
-## <a name="procurement-and-sourcing-workflows"></a>Anskaffnings- och källarbetsflöden
+## Anskaffnings- och källarbetsflöden
+<a id="procurement-and-sourcing-workflows" class="xliff"></a>
 -   [Upphandling och inköp – översikt](procurement-sourcing-overview.md)
 -   [Anskaffnings- och källarbetsflöden](procurement-sourcing-workflows.md)
 -   [Registrera inleverans av varor på en inköpsorder](http://ax.help.dynamics.com/en/wiki/record-receipt-of-goods-on-a-purchase-order/)

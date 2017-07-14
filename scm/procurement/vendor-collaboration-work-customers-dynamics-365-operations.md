@@ -1,16 +1,16 @@
 ---
 title: "Leverantörssamarbete med kunder"
-description: "I det här avsnittet beskrivs hur du kan använda leverantörssamarbeten för att arbeta med inköpsorder och övervaka försändelselager i Microsoft Dynamics 365 for Operations."
+description: "I det här avsnittet beskrivs hur du kan använda leverantörssamarbete i Finance and Operations för att arbeta med inköpsorder och övervaka försändelselager."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: ConsignmentProductReceiptLines, ConsignmentVendorPortalOnHand, PurchVendorPortalConfirmedOrders, PurchVendorPortalOriginalOrder, PurchVendorPortalResponsesHistoryList, PurchVendorPortalResponsesPart
 audience: Application User
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 221234
 ms.assetid: 6e69fb8b-6d3a-46ef-88cf-6d01212aa7c3
 ms.search.region: Global
@@ -18,24 +18,26 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 1649014855d8d5e0f1225a661c9b6bae6490f597
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 41436dab710a5fee0fe0800dff1ebefefa841afc
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="vendor-collaboration-with-customers"></a>Leverantörssamarbete med kunder
+# Leverantörssamarbete med kunder
+<a id="vendor-collaboration-with-customers" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-I det här avsnittet beskrivs hur du kan använda leverantörssamarbeten för att arbeta med inköpsorder och övervaka försändelselager i Microsoft Dynamics 365 for Operations.
+I det här avsnittet beskrivs hur du kan använda leverantörssamarbete i Finance and Operations för att arbeta med inköpsorder och övervaka försändelselager.
 
-I det här avsnittet beskrivs hur du kan använda leverantörssamarbete när du arbetar med kunder i Microsoft Dynamics 365 for Operations. Det innehåller information om hur du övervakar och svarar på inköpsorder och hur du övervakar försändelselager. Det går också att använda leverantörsamarbete för att arbeta med fakturor. Mer information finns i [Arbetsyta för leverantörssamarbetesfakturering](/dynamics365/operations/financials/accounts-payable/vendor-portal-invoicing-workspace).
+I det här avsnittet beskrivs hur du kan använda leverantörssamarbete när du arbetar med kunder i Microsoft Finance and Operations. Det innehåller information om hur du övervakar och svarar på inköpsorder och hur du övervakar försändelselager. Det går också att använda leverantörsamarbete för att arbeta med fakturor. Mer information finns i [Arbetsyta för leverantörssamarbetesfakturering](/dynamics365/unified-operations/financials/accounts-payable/vendor-portal-invoicing-workspace).
 
-## <a name="working-with-purchase-orders"></a>Arbeta med inköpsorder
+## Arbeta med inköpsorder
+<a id="working-with-purchase-orders" class="xliff"></a>
 Arbetsyten **Inköpsorderbekräftelse** låter dig besvara de insköpsorder som har skickats till dig för granskning. Den låter dig också visa information om inköpsorder som inväntar åtgärd från kunden, samt inköpsorder som har bekräftats men som fortfarande är öppna.. Det finns tre listor i arbetsytan **Inköpsorderbekräftelse**:
 
 -   **Inköpsorder för granskning** - Denna lista visas inköpsorder som har skickats till dig och som inväntar ett svar från dig. När du har svarat tas inköpsordern bort från listan. Om kunden skickar dig en ny version av inköpsordern innan du har svarat på föregående, visas bara den senaste versionen.
@@ -49,7 +51,8 @@ Följande lista visar de fyra sidor som du kan använda när du arbetar med ink�
 -   **Öppna bekräftade inköpsorder** (se ovan)
 -   **Alla bekräftade inköpsorder** - Denna sida innehåller alla inköpsorder som har bekräftats, inklusive de där produkter eller tjänster har mottagits. Via denna lista kan du övervaka inköpsorder som du kan skicka fakturor för.
 
-### <a name="responding-to-purchase-orders"></a>Besvara inköpsorder.
+### Besvara inköpsorder.
+<a id="responding-to-purchase-orders" class="xliff"></a>
 
 Inköpsordern som kunden har skickat dig att granska visas på arbetsytan **Inköpsorderbekräftelse** och på sidan **Inköpsorder för granskning**. När du har öppnat en inköpsorder kan du godkänna, avvisa eller acceptera ändringarna. Det kan finnas bilagor inköpsorderhuvudet eller på enskilda rader. Du kan även bifoga information för ditt svar på inköpsorderhuvudet eller på enskilda rader. Du kan till exempel föreslå en reservartikel för en av raderna. Du kan granska och skriva ut inköpsordern som en PDF-fil genom att använda alternativet **Förhandsgranska/Skriv ut**. Du kan dölja eller visa följande dimensionskolumner med hjälp av åtgärden **Visa dimensioner**: Plats, Lagerställe, Färg, Storlek, Stil, Konfiguration. Om du använder alternativet **Acceptera ändringar** kan du godkänna eller avvisa enskilda rader. Du kan även göra följande ändringar på rader:
 
@@ -59,7 +62,8 @@ Inköpsordern som kunden har skickat dig att granska visas på arbetsytan **Ink�
 
 Du kan inte ändra prissättningsinformation eller avgifter, men du kan göra ändringar i förslag för dessa genom anteckningar. Om din kund skickar dig en ny version av en inköpsorder, kommer denna att bära ett versionstillägg som visar att den är en modifierad version av en inköpsorder som tidigare meddelats. Sidan **Bekräftelsehistorik för inköpsorderleverantör** låter dig spåra historiken för respektive order.
 
-## <a name="monitoring-consignment-inventory"></a>Övervaka försändelselager
+## Övervaka försändelselager
+<a id="monitoring-consignment-inventory" class="xliff"></a>
 Om du använder försändelselager kan du använda gränssnittet för leverantörssamarbete för att visa information på följande sidor:
 
 -   **Inköpsorder som förbrukar försändelselager** - Inköpsorder för försändelselager skapas när kunden tar över ägarskapet för lagret. Dessa försändelseinköpsorder visas bara på sidan **Inköpsorder som förbrukar försändelselager**. Alla inkluderas in på sidan **Alla bekräftade inköpsorder**.
@@ -67,7 +71,8 @@ Om du använder försändelselager kan du använda gränssnittet för leverantö
 -   **Behållning i försändelselager** - Den här sidan visar det tillgängliga försändelselager som ägs av ditt företag och som är tillgängligt i kundens lager.
 
 
-<a name="see-also"></a>Se även
+Se även
+<a id="see-also" class="xliff"></a>
 --------
 
 [Hantera leverantörssamarbetesanvändare](manage-vendor-collaboration-users.md)

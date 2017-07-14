@@ -3,14 +3,14 @@ title: Sammanfoga lagerbatchar
 description: "Den här artikeln innehåller information om hur du konsoliderar två eller flera lagerbatchar till en sammanfogad batch."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventBatchJournalListPage, InventBatchJournalMerge
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 39782
 ms.assetid: 07c5e98b-10fd-4f5c-b471-41d2150f47b0
 ms.search.region: Global
@@ -18,15 +18,16 @@ ms.author: pjacobse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: e97257955f4f8fa86c8bf957a182aa71d4fbc8ef
+ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
+ms.openlocfilehash: aec97976ef6a2b4c66118289f7f76b14351456f8
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="merge-inventory-batches"></a>Sammanfoga lagerbatchar
+# Sammanfoga lagerbatchar
+<a id="merge-inventory-batches" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
@@ -35,7 +36,8 @@ Den här artikeln innehåller information om hur du konsoliderar två eller fler
 
 När du sammanslår batchar kan beräkningar hjälpa dig att optimera egenskaperna och batchattribut för den sammanslagna batchen. När källbatcharna har valts kan den sammanfogade batchen granskas och ändras innan den bokförs. (Du kan även överföra batchsammanfogningen till en lagerjournal för godkännande. Lagret kan sedan reserveras eller bokföras direkt från den aktuella lagerjournalen. När du bokför en sammanslagen batch, justeras lager för källbatcharna och den sammanslagna batchen.
 
-## <a name="are-there-any-prerequisites"></a>Finns det några förutsättningar?
+## Finns det några förutsättningar?
+<a id="are-there-any-prerequisites" class="xliff"></a>
 Ja finns ingen saker som du måste ställa in, innan du kan använda sammanfogningbatchverktygen. I följande tabell beskrivs förutsättningarna.
 
 <table>
@@ -78,20 +80,24 @@ Ja finns ingen saker som du måste ställa in, innan du kan använda sammanfogni
 </tbody>
 </table>
 
-## <a name="when-might-i-want-to-merge-batches-of-inventory"></a>När kan jag vilja sammanslå batchar med lagret?
+## När kan jag vilja sammanslå batchar med lagret?
+<a id="when-might-i-want-to-merge-batches-of-inventory" class="xliff"></a>
 Här är några exempel på scenarier när det är praktiskt att sammanslå batchar:
 
 -   Sammy går omkring på sitt lagerställe och upptäcker att det finns flera batchar med samma artikel som har låga kvantiteter. Han räknar med att få flera nya leveranser, och han inser att han kan frigöra lite golvutrymme genom att sammanslå de udda kvantiteterna till en ny batch.
 -   Sammy tar emot lager och vill kombinera den nya batchen med en som han redan har tagit emot för att förbättra batchattributvärdet för den befintliga batchen.
 
-## <a name="can-i-merge-batches-across-sites-and-legal-entities"></a>Kan jag sammanslå batchar mellan webbplatser och juridiska personer?
+## Kan jag sammanslå batchar mellan webbplatser och juridiska personer?
+<a id="can-i-merge-batches-across-sites-and-legal-entities" class="xliff"></a>
 Nej, du kan bara sammanslå batchar som har samma plats och lagerdimensioner för en juridisk person. Du kan dock ange en annan plats och lastpalls-ID för den sammanslagna batchen.
 
-## <a name="can-i-merge-partial-quantities"></a>Kan jag sammanslå delvisa kvantiteter?
+## Kan jag sammanslå delvisa kvantiteter?
+<a id="can-i-merge-partial-quantities" class="xliff"></a>
 Nej, du kan endast sammanslå den fullständiga kvantiteten för batchar. Batchsammanfogningsfunktionen är avsedd som en lagerfunktion, inte en produktionsfunktion.
 
-## <a name="what-if-the-batches-have-different-batch-attribute-values"></a>Vad händer om batcharna har olika batchattributvärden?
-När du väljer källbatcharna som du vill kombinera i den sammanslagna batchen, kommer Microsoft Dynamics 365 for Operations att verifiera om egenskaper eller attributvärden är desamma för alla batchar. När ett attributvärde är detsamma, föreslås ett värde för den sammanslagna batchen. Du kan ändra detta värde. Attributvärden som inte är desamma lämnas tomma för den sammanslagna batchen och du kan ange dessa värden manuellt. Om batchattributtypen för attributvärdet är ett heltal eller en del, och värdena inte är identiska för alla källbatcher, kommer värdet att beräknas med hjälp av en beräkning av viktat medelvärde. Det beräknade värdet avrundas uppåt eller nedåt till närmaste steg. Om värdet är tomt för en källbatch, är batchen och dess kvantitet inte med i beräkningen. **Exempel** I följande exempel visas en viktad genomsnittsberäkning för en sammanslagen batch. Två av källbatcherna har ett tomt värde för ett batchattributtyp som är ett heltal. Följande attribut tilldelas källbatcherna.
+## Vad händer om batcharna har olika batchattributvärden?
+<a id="what-if-the-batches-have-different-batch-attribute-values" class="xliff"></a>
+När du väljer källbatcharna som du vill kombinera i den sammanslagna batchen kommer Finance and Operations att verifiera om egenskaper eller attributvärden är samma för alla batchar. När ett attributvärde är detsamma, föreslås ett värde för den sammanslagna batchen. Du kan ändra detta värde. Attributvärden som inte är desamma lämnas tomma för den sammanslagna batchen och du kan ange dessa värden manuellt. Om batchattributtypen för attributvärdet är ett heltal eller en del, och värdena inte är identiska för alla källbatcher, kommer värdet att beräknas med hjälp av en beräkning av viktat medelvärde. Det beräknade värdet avrundas uppåt eller nedåt till närmaste steg. Om värdet är tomt för en källbatch, är batchen och dess kvantitet inte med i beräkningen. **Exempel** I följande exempel visas en viktad genomsnittsberäkning för en sammanslagen batch. Två av källbatcherna har ett tomt värde för ett batchattributtyp som är ett heltal. Följande attribut tilldelas källbatcherna.
 
 | Attribut | Minimum | Stegvis | Maximal |
 |-----------|---------|-----------|---------|
@@ -122,17 +128,20 @@ Värdena och kvantiteterna för batcharna B1 och B4 tas inte med i beräkningen 
 | 25    | 30                                             | 0.461538462     | 11.53846154                                                           |
 |       | **Summa:** 65, vilket är summan av vikterna |                 | **Summa:** 21,5384615, vilket avrundas till 21 (den närmaste ökningen). |
 
-## <a name="what-if-the-batches-have-different-batch-dates"></a>Vad händer om batcharna har olika batchdatum?
+## Vad händer om batcharna har olika batchdatum?
+<a id="what-if-the-batches-have-different-batch-dates" class="xliff"></a>
 Om batcharna har olika batchdatum är några av datumen beräknade baserat på värdena i gruppen på **Batchdatum** på snabbfliken **Sammanfogad batch** på sidan **Batchsammanfogning**. Systemet beräknar värdena för fälten i gruppen **Batchdatum**. Dessa värden inkluderar tillverkningsdatum, utgångsdatum, datummärkning och bäst före-datum. Datumen beräknas utifrån inställningarna för artikeln i fältgruppen **Artikeldata** på sidan **Information om frisläppt produkt**. Du kan ändra värdena eller ange dem manuellt. För alla andra datum görs ingen beräkning. Samma princip används för batchattributvärden. Om ett datum är identiskt för alla källbatchar kommer detta datum föreslås för den sammanslagna batchen. Om datumet inte är identiskt för alla källbatchar är datumet tomt för den sammanslagna batchen och du kan ange det manuellt.
 
-## <a name="what-if-the-dimensions-are-different-on-the-batches-that-i-want-to-merge"></a>Vad händer om dimensionerna är olika på batchar som jag vill sammanslå?
+## Vad händer om dimensionerna är olika på batchar som jag vill sammanslå?
+<a id="what-if-the-dimensions-are-different-on-the-batches-that-i-want-to-merge" class="xliff"></a>
 Produktdimensioner, spårningsdimensioner och lagringsdimensioner hanteras på följande sätt:
 
 -   **Produktdimensioner** – Alla produktdimensioner för den valda artikeln måste vara samma. Du kan inte sammanslå batchar över produktdimensioner.
 -   **Spåra dimensioner** – Ett nytt batchnummer skapas automatiskt om en batchnummergrupp anges för artikeln. Om en batchnummergrupp inte tilldelas till en artikel kan du välja en befintlig batch eller ange numret manuellt. Serienummer överförs från källbatchen till lagerjournalraderna för den sammanslagna batchen.
 -   **Lagringsdimensioner** - Dimensioner för plats och lager måste vara desamma för alla källbatchar och den sammanslagna batchen. Du kan dock ange ny plats och lastpalls-ID för den sammanslagna batchen.
 
-## <a name="how-does-posting-work"></a>Hur fungerar bokföring?
+## Hur fungerar bokföring?
+<a id="how-does-posting-work" class="xliff"></a>
 Bokföring fungerar på två sätt beroende på om du använder en godkännandeprocess för journaler. Du kan använda åtgärderna **Överför till journal** och **Bokför batchsammanfogningen** om du vill överföra batchsammanfogningen till en journal där den kan bekräftas och bokföras, eller så kan du bokföra batchsammanfogningen direkt. Huvudskillnaden mellan de två åtgärderna är att överföring till en journal inte bokför batchsammanfogningen. Båda åtgärderna gör att en ny batch skapas (om en befintlig batch inte är markerad), alla batchdetaljer och attributvärden uppdateras och att en lagerjournal skapas.
 
 -   **Överför till journal** – Överför batchsammanfogningsinformationen till en ny lagerjournal. Om du har ställt in automatiska reservationer, reserveras kvantiteterna i källbatcherna. Information om batchsammanfogningen kan inte ändras. Om du vill ändra batchsammanfogningen måste du ta bort journalen. Journalen kan användas som en uppgift som en annan medarbetare måste utföra senare. En reservering av batchkvantiteten säkras till journalraden. Denna allokering låter en kvalitetsplanerare eller en lagerställechef skapa uppgifter för sina medarbetare.
@@ -140,7 +149,8 @@ Bokföring fungerar på två sätt beroende på om du använder en godkännandep
 
 Du kan godkänna lagerjournalen för batchsammanfogningen från listsidan **Alla batchsammanfogningar**. Klicka på **Journal** &gt; **Bokför**. När en journal är bokförd kan du inte ändra informationen i den sammanfogade batchen. När du har överfört en batchsammanfogning till en lagerjournal kan du bara ändra informationen om journalen har tagits bort.
 
-## <a name="after-i-merged-a-catchweight-item-why-cant-i-see-the-catchweight-information-in-the-inventory-journal"></a>Varför visas inte faktisk/nominell vikt i lagerjournalen efter att jag slagit ihop en fångstviktartikel?
+## Varför visas inte faktisk/nominell vikt i lagerjournalen efter att jag slagit ihop en fångstviktartikel?
+<a id="after-i-merged-a-catchweight-item-why-cant-i-see-the-catchweight-information-in-the-inventory-journal" class="xliff"></a>
 Du kan sammanslå batchar med fångstviktartiklar precis som alla andra artiklar. Dock visas information om faktisk/nominell vikt inte i lagerjournalen. Vi rekommenderar att du kontrollerar information om faktisk/nominell vikt innan du överför batchsammanfogningen till lagerjournalen.
 
 

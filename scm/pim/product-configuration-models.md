@@ -3,7 +3,7 @@ title: "Översikt över produktkonfigurationsmodeller"
 description: "I den här artikeln definieras termer och begrepp som avser produktkonfigurationsmodeller. Med produktkonfigurationsmodeller kan du bygga en allmän produktstruktur som kan användas för att konfigurera många produktvarianter för en och samma produkt."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: PCProductConfigurationModelDetails, PCProductConfigurationModelListPage
 audience: Application User
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 4031
 ms.assetid: 70b968e8-e550-4731-823d-d713b8910f7b
 ms.search.region: Global
@@ -19,15 +19,16 @@ ms.author: yuyus
 ms.dyn365.intro: Feb-16
 ms.dyn365.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 30580b059a4c240ad540a9c347b0551df0ab5c02
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 1270c35bc7dbe4c85a1aa991a0387b33e1cb6990
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="product-configuration-models-overview"></a>Översikt över produktkonfigurationsmodeller
+# Översikt över produktkonfigurationsmodeller
+<a id="product-configuration-models-overview" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
@@ -121,7 +122,7 @@ Om attributtypen är <strong>Booleskt</strong>, <strong>Heltal</strong> med ett 
 </tr>
 </tbody>
 </table>
-En systemdefinierad registerbegränsning representerar en mappning mellan en attributtyp och ett fält i ett Dynamics 365 for Operations-register. Systemdefinierade registerbegränsningar kopplar dynamiskt attributtypen till fältet. Länken gör att attributet i en produktkonfigurationsmodell återspeglar data i fältet i Dynamics 365 for Operations-registret.</td>
+En systemdefinierad registerbegränsning representerar en koppling mellan en attributtyp och ett fält i ett Finance and Operations-register. Systemdefinierade registerbegränsningar kopplar dynamiskt attributtypen till fältet. Länken gör att attributet i en produktkonfigurationsmodell återspeglar data i fältet i Finance and Operations-registret.</td>
 </tr>
 <tr class="odd">
 <td>Beräkningar</td>

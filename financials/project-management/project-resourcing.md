@@ -3,14 +3,14 @@ title: "Resurshantering för projekt"
 description: "Det här avsnittet innehåller information om resurshantering för projekt."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 82022
 ms.assetid: bd2fb375-84c6-428a-8e54-f0f719045898
 ms.search.region: Global
@@ -18,22 +18,23 @@ ms.author: cmercado
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 5c00c63e3c55e818934c36b818c90025002092d4
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: a7275e9ad8d655d0d2ee5ba90a792775dec0cf05
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="project-resourcing"></a>Resurshantering för projekt
+# Resurshantering för projekt
+<a id="project-resourcing" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
 Det här avsnittet innehåller information om resurshantering för projekt.
 
-En utmaning för projektledare och resurschefer under projektplanläggningsfasen är resursallokeringen, där de måste bestämma och reservera rätt resurser för arbetet i ett projekt. I Microsoft Dynamics 365 for Operations resurshanteringsfunktioner för projekt kan du definiera roller som behandlas som tillfälliga resurser, som kan reserveras för ett visst engagemang eller delar av ett engagemang. Den här typen av resurshantering låter projektledare och resurschefer slutföra följande uppgifter:
+En utmaning för projektledare och resurschefer under projektplanläggningsfasen är resursallokeringen, där de måste bestämma och reservera rätt resurser för arbetet i ett projekt. I Microsoft Dynamics 365 for Finance and Operations, Enterprise editions resurshanteringsfunktioner för projekt kan du definiera roller som behandlas som tillfälliga resurser och som kan reserveras för ett visst engagemang eller delar av ett engagemang. Den här typen av resurshantering låter projektledare och resurschefer slutföra följande uppgifter:
 
 -   Definiera en roll som har begärt kompetenserna som gör det enklare att matcha resurser.
 -   Använd roller för att definiera en ursprunglig engagemangstidsplan som baseras på reserverade resurser.
@@ -46,12 +47,14 @@ En utmaning för projektledare och resurschefer under projektplanläggningsfasen
 
 I takt med att projektplanläggningen fortsätter, kan planerade resurser ersättas med bemannade resurser. Projektledaren kan också gå tillbaka och uppdatera resursreservationerna under alla projektfaserna.
 
-## <a name="set-up-project-resources"></a>Ställ in projektresurser
+## Ställ in projektresurser
+<a id="set-up-project-resources" class="xliff"></a>
 Du måste ställa in en kalender och associera den till en medarbetare eller en arbetare. Kalendern används för att kunna tidsplanera projektet och arbetstiden för de resurser som har reserverats för projektet. Under kalenderinställningarna, projektledare kan utföra resursutjämning som en del av resursoptimering. Baserat på kalendertidsplanen kan begränsningar placeras på resurser. Du kan ställa in en kalender på sidan **Kalendrar**. 
 
 När du ställer in en arbetare som en projektresurs du kan välja bland arbetare som arbetar i företaget som du ställer in resurser för, eller välja arbetare från andra företag inom din organisation. Dessa är koncerninterna resurser. Följande procedurer förklarar hur du ställer in en arbetare som projektresurs inom ditt företag och hur du ställer in en koncernintern projektresurs.
 
-### <a name="set-up-a-worker-as-a-project-resource"></a>Ställ in en arbetare som en projektresurs
+### Ställ in en arbetare som en projektresurs
+<a id="set-up-a-worker-as-a-project-resource" class="xliff"></a>
 
 1.  På sidan **Arbetare**, i listan **Arbetare**, välj den arbetare som du lägger till som en projektresurs och öppna arbetarens post.
 2.  I åtgärdsfönstret klickar du på **Projekt** &gt; **Inställningar** &gt; **Projektinställning**.
@@ -59,13 +62,14 @@ När du ställer in en arbetare som en projektresurs du kan välja bland arbetar
 
 Du kan även ange standardprojekt för en resurs som en typ av förtilldelning. Förtilldelningar kan användas när resurschefen eller projektledaren vet vilka projekt att resursen ska arbeta med i förväg. Förtilldelningar kan också baseras på en begäran av en projektsponsor eller kund. Du förtilldelar ett projekt genom att välja lämpligt projekt på sidan **Tilldela projekt**, på **Projekt** fliken, i listan **Resterande projekt**.
 
-### <a name="set-up-an-intercompany-resource"></a>Ställa in en koncernintern resurs
+### Ställa in en koncernintern resurs
+<a id="set-up-an-intercompany-resource" class="xliff"></a>
 
 När du ställer in en arbetare som en koncernintern resurs måste du slutföra inställningarna i det långivande företaget och det lånande företaget. 
 
 **I det långivande företaget:**
 
-1.  I Dynamics 365 for Operations, kontrollera att det långivande företaget har valts och slutför sedan proceduren ovan, "Ställ in en arbetare som en projektresurs".
+1.  I Finance and Operations, kontrollera att det långivande företaget har valts och slutför sedan proceduren ovan, "Ställ in en arbetare som en projektresurs".
 2.  Gå till **Redovisning **&gt; **Inställningar för bokföring **&gt; **Koncernintern redovisning**. Klicka på **Ny**.
 3.  I fältet **ID för juridisk person **, välj det långivande företaget. Fyll i återstående fält efter behov och klicka sedan på **Spara**.
 4.  Gå till **Projekthantering och redovisning **&gt; **Inställningar **&gt; **Priser ** &gt; **Internpris**.** **
@@ -78,14 +82,16 @@ När du ställer in en arbetare som en koncernintern resurs måste du slutföra 
 1.  Gå till **Projekthantering och redovisning** &gt; **Projektresurser** &gt; **Resurslista**.
 2.  I sökfiltret anger du namnet på resursen som du skapade i föregående procedur för det långivande företaget, för att kontrollera att namnet finns i resurslistan för det lånande företaget.
 
-## <a name="manage-resource-competencies"></a>Hantera resurskompetenser
+## Hantera resurskompetenser
+<a id="manage-resource-competencies" class="xliff"></a>
 Resurskompetenser är en viktig del av resurshantering. Kompetenser kan användas som en jämföra för att bestämma resurser som har rätt balans av utbildning, färdigheter, certifiering och projekterfarenhet. Du bör ställa in informationen för varje resurs och uppdatera den regelbundet. På så sätt kan du maximera förmågor när specifika resurskompetenser matchas under projektresurstilldelning. [![Exempel på färdigheter, certifieringar, utbildning och projekterfarenhet](./media/projectresourcing06-1024x383.jpg)](./media/projectresourcing06.jpg) 
 
 Följande procedurer innehåller information om hur du ställer in vissa kompetenser för en resurs. 
 
 Om du vill ställa in kompetenser för en arbetare kan du använda antingen **Arbetare** listsidan i Personal eller **Resurser** listsidan i Projekthantering och redovisning. För följande procedurer används listsidan **Arbetare** i Personal.
 
-### <a name="set-up-competencies-certificates"></a>Ställa in kompetenser: Certifikat
+### Ställa in kompetenser: Certifikat
+<a id="set-up-competencies-certificates" class="xliff"></a>
 
 1.  På listsidan **Arbetare**, välj raden för arbetaren som du lägger till certifikatinformation för.
 2.  I Åtgärdsfönster, på fliken **Arbetare**, i gruppen **Kompetenser** klickar du på **Certifikat**.
@@ -94,7 +100,8 @@ Om du vill ställa in kompetenser för en arbetare kan du använda antingen **Ar
 5.  I fältet **Startdatum**, välj **10/1/2015**.
 6.  Klicka på **Spara** och stäng sedan sidan.
 
-### <a name="set-up-competencies-skills"></a>Ställ in kompetenser: Kompetenser
+### Ställ in kompetenser: Kompetenser
+<a id="set-up-competencies-skills" class="xliff"></a>
 
 1.  Kontrollera på listsidan **Arbetare** att arbetaren som du använde i den föregående proceduren markeras fortfarande. Sedan i Åtgärdsfönster, på fliken **Arbetare**, i gruppen **Kompetenser** klickar du på **Kompetenser**.
 2.  Klicka på **Ny**.
@@ -104,7 +111,8 @@ Om du vill ställa in kompetenser för en arbetare kan du använda antingen **Ar
 6.  Ange i **Erfarenhetsår** fältet, **10**.
 7.  Klicka på **Spara** och stäng sedan sidan.
 
-## <a name="create-a-new-project"></a>Skapa ett nytt projekt
+## Skapa ett nytt projekt
+<a id="create-a-new-project" class="xliff"></a>
 1.  Klicka på **Projekthantering och redovisning** &gt; **Arbetsytor** &gt; **Projekthantering**.
 2.  Klicka på **Nytt projekt** och ange sedan följande värden:
     -   **Projekttyp** – tid och material
@@ -113,7 +121,8 @@ Om du vill ställa in kompetenser för en arbetare kan du använda antingen **Ar
     -   **Projektkontrakt-ID:** – 00000002
 3.  Klicka på **Skapa projekt**.
 
-### <a name="assign-a-resource-to-a-project"></a>Tilldela en resurs till ett projekt
+### Tilldela en resurs till ett projekt
+<a id="assign-a-resource-to-a-project" class="xliff"></a>
 
 1.  Klicka på **Personal** &gt; **Arbetare** &gt; **Arbetare**.
 2.  I listan **Arbetare**, markera posten för den arbetare som kompetenser ställts in för tidigare och öppna arbetarposten.
@@ -123,9 +132,10 @@ Om du vill ställa in kompetenser för en arbetare kan du använda antingen **Ar
 6.  I fönstret **Resterande projekt**, välj ett projekt och klicka sedan på pilen för att lägga till det i fönstret **Valda projekt**.
 7.  Stäng sidan.
 
-Om det behövs kan du också tilldela kategorier för en resurs. Kategoritypen är antingen Kostnad eller Intäkt. Detta avgörs av din organisation. Om det inte finns några tilldelade kategorier för resursen, slår Dynamics 365 for Operations upp standardkategorin på timpriser för kostnader och intäkter.
+Om det behövs kan du också tilldela kategorier för en resurs. Kategoritypen är antingen Kostnad eller Intäkt. Detta avgörs av din organisation. Om det inte finns några tilldelade kategorier för resursen, slår Finance and Operations upp standardkategorin på timpriser för kostnader och intäkter.
 
-### <a name="set-up-project-resource-and-role-characteristics"></a>Ställ in projektresurs och rollegenskaper
+### Ställ in projektresurs och rollegenskaper
+<a id="set-up-project-resource-and-role-characteristics" class="xliff"></a>
 
 En projektledare kan använda projektresurshanteringsfunktionen för att skapa roller som krävs för projektet. Roller kan användas när bekräftade resurser fortfarande är okända när resurser reserveras. Roller kan tillfälligt reserveras som planerade resurser, så att du kan fortsätta projektplanläggningsfaserna. 
 
@@ -147,7 +157,8 @@ Följande steg visar hur resursansvarig kan ställa in rollen Seniorprojektled
 8.  I fältet **Tillgängliga egenskaper**, ange den certifikattyp som du söker efter.
 9.  Klicka på **OK** och stäng sidan.
 
-### <a name="assign-a-project-resource-to-a-project"></a>Tilldela en projektresurs till ett projekt
+### Tilldela en projektresurs till ett projekt
+<a id="assign-a-project-resource-to-a-project" class="xliff"></a>
 
 1.  Klicka på **Projekthantering och redovisning** &gt; **Allmänt** &gt; **Projekt** &gt; **Alla projekt** och öppna projektet **XYZ uppgraderingsfas 2**.
 2.  På fliken **Projektteam och tidsplanering**, klicka på **Lägg till**.
@@ -162,7 +173,8 @@ Följande steg visar hur resursansvarig kan ställa in rollen Seniorprojektled
 8.  Klicka på **Fast bokning** &gt; **Total kapacitet**.
 9.  Stäng sidan.
 
-### <a name="assign-a-resource-to-a-default-role"></a>Tilldela en resurs till en standardroll
+### Tilldela en resurs till en standardroll
+<a id="assign-a-resource-to-a-default-role" class="xliff"></a>
 
 Om du vill hjälpa projektledare eller resursansvariga kan du gå nedåt i resurserna som kan reserveras för ett projekt. Du kan associera en standardroll med en befintlig resurs eller en nyligen anskaffad resurs. Exempelvis när Daniel anställdes hade han erfarenhet och sakkunskap som passade för rollen Affärsanalytiker. Resursansvarige tilldelade den här rollen som Daniels standardroll. Därefter lade resursansvarige till Daniel i en pool med affärsanalytiker som är tillgängliga för arbete i projekt. 
 
@@ -180,7 +192,8 @@ Under resursreserveringen kan projektledare filtrera rollresurserna som är till
 5.  Klicka på **Spara** och stäng sedan sidan.
 6.  På fliken **Kompetenser**, lägg till färdigheten **ProjectMgmt** och **PMP**.
 
-## <a name="set-up-role-based-pricing"></a>Ställ in rollbaserad prissättning
+## Ställ in rollbaserad prissättning
+<a id="set-up-role-based-pricing" class="xliff"></a>
 Alla kostnader, försäljningar och internpriser kan ställas in för roller.
 
 1.  Klicka på **Projekthantering och redovisning** &gt; **Inställningar** &gt; **Priser** &gt; **Försäljningspris (timme)**.
@@ -189,8 +202,9 @@ Alla kostnader, försäljningar och internpriser kan ställas in för roller.
 4.  Välj en roll i kolumnen **Roll**.
 5.  I kolumnen **Priser**, ange ett pris för den valda resursrollen.
 
-## <a name="form-a-project-team"></a>Skapa ett projektteam
-Om du vill använda de roller som redan har ställts in i ett projekt, måste en projektledare associera rollerna med projektet. Flera roller kan tilldelas för ett projekt och Dynamics 365 for Operations ger automatiskt dessa roller etiketter under reserveringen för att förhindra förvirring. Om till exempel projektledaren kräver tre programingenjörer, genereras automatiskt tre roller för programingenjör som har etiketterna programingenjör 1, programingenjör 2 och programingenjör 3. Om rollen tidigare fått egenskaper, används de som ett filter för sökningar efter en resurs. Ytterligare egenskaper kan läggas till som krävs för att begränsa sökningen. 
+## Skapa ett projektteam
+<a id="form-a-project-team" class="xliff"></a>
+Om du vill använda de roller som redan har ställts in i ett projekt, måste en projektledare associera rollerna med projektet. Flera roller kan tilldelas för ett projekt och Finance and Operations ger automatiskt dessa roller etiketter under reserveringen för att förhindra förvirring. Om till exempel projektledaren kräver tre programingenjörer, genereras automatiskt tre roller för programingenjör som har etiketterna programingenjör 1, programingenjör 2 och programingenjör 3. Om rollen tidigare fått egenskaper, används de som ett filter för sökningar efter en resurs. Ytterligare egenskaper kan läggas till som krävs för att begränsa sökningen. 
 
 Visningsinställningar kan också anpassas för att ge en bättre vy av resurstillgänglighet. Det finns alternativ för att visa tim, dag, vecka, månad, kvartalsvis och årlig tillgänglighet. Det finns även alternativ för att visa återstående och tillgänglig kapacitet för resurser. Det här alternativet är användbart för tidsadministration, när du vill beräkna tillgänglig tid för aktiviteter eller resurstillgänglighet. 
 
@@ -205,7 +219,8 @@ Projektchefen har olika alternativ för att boka resurser för ett projekt, till
 
 Följande procedur förklarar hur du skapar ett projektteam.
 
-### <a name="create-a-project-team"></a>Skapa ett projektteam
+### Skapa ett projektteam
+<a id="create-a-project-team" class="xliff"></a>
 
 1.  På listsidan **Alla projekt**, välj ett projekt och klicka sedan på **Redigera**.
 2.  På fliken **Projektteam och tidsplanering**, i fältet **Schemalagt slutdatum**, ange schemastartdatumet plus en månad. Om till exempel schemastartdatumet är 24 juni 2017 (24/06/2017), ange **24/07/2017**.
@@ -220,10 +235,12 @@ Följande procedur förklarar hur du skapar ett projektteam.
 11. Klicka på **Skapa**.
 12. På sidan **Projekt**, klicka på **Uppfyll resurs**.
 
-## <a name="resource-capacity-synchronization"></a>Synkronisering av resurskapacitet
+## Synkronisering av resurskapacitet
+<a id="resource-capacity-synchronization" class="xliff"></a>
 Följande processer för synkronisering av resurser hjälper till att garantera att information om kalendern och om baskalendern sipprar ned i tidsplanering av projektresurser. Om kalendern ändras gör processerna de nödvändiga uppdateringarna av planeringen av projektresurser. Processerna kan också hjälpa till att förbättra prestandan, eftersom kalenderns resursinformation synkroniseras i förväg, så att uppdateringar av resurstidsplaneringsinformation sker snabbare. Vi rekommenderar att du planerar processer som en batch i stället för en i taget. Annars finns det en risk att någon glömmer inklusive datum när informationen synkroniserades senast. Om inklusive datum inte används, luckor kan inträffa under datumsynkronisering.
 
-### <a name="calendar-synchronizationmediaprojectresourcing04-1024x471jpg"></a>![Kalendersynkronisering](./media/projectresourcing04-1024x471.jpg)
+### ![Kalendersynkronisering](./media/projectresourcing04-1024x471.jpg)
+<a id="calendar-synchronizationmediaprojectresourcing04-1024x471jpg" class="xliff"></a>
 
 **Synkronisera kapacitetsuppföljningar för resurs**
 
@@ -240,14 +257,16 @@ Vi rekommenderar att du använder en batch. Alternativen är tillgängliga för 
 
 [![Synkroniseringsprocess](./media/projectresourcing09.jpg)](./media/projectresourcing09.jpg)
 
-## <a name="set-up-roles-on-wbs-templates"></a>Konfigurera roller för strukturmallar
+## Konfigurera roller för strukturmallar
+<a id="set-up-roles-on-wbs-templates" class="xliff"></a>
 Projektledare kan ställa in strukturmallar de kan använda när de skapar en struktur för nya projekt. Projektledare kan lägga till roller när de skapar en mall. Använd följande procedur för att tilldela en roll till en strukturmall.** **
 
 1.  Klicka på **Projekthantering och redovisning** &gt; **Inställningar** &gt; **Projekt** &gt; **Uppdelade arbetsstrukturmallar**.
 2.  Klicka på **Information** för en vald strukturmall.
 3.  Välj en uppgift i listan och sedan, i **Roll**-fältet, välj en roll som ska tilldelas uppgiften.
 
-### <a name="work-with-a-wbs"></a>Arbeta med en struktur
+### Arbeta med en struktur
+<a id="work-with-a-wbs" class="xliff"></a>
 
 Du kan skapa en ny struktur, eller så kan du kopiera en struktur från en befintlig strukturmall. En projektledare kan enkelt hantera resurserna genom att tilldela roller till nya uppgifter på strukturen. Roller kan ersättas när en resurs har anskaffats eller efter en bekräftad resurs som ska arbeta med uppgiften identifierats. Denna flexibilitet låter projektledare utföra följande uppgifter:
 
@@ -277,7 +296,7 @@ Ytterligare alternativ har lagts till i strukturen för en bättre användning a
 </tr>
 <tr class="even">
 <td>Autogenerera team</td>
-<td>Automatiskt lägg till planerade resurser genom att använda roller som associeras med en uppgift. Dynamics 365 for Operations föreslår automatiskt planerade resurser genom att använda beslutsanalys för flera kriterier baserat på roller. När rollerna och insatsen (timmar) har angetts för uppgifterna i en struktur, och strukturen har frisläppts, klicka på <strong>Autogenerera team</strong>. Det begärda antalet planerade resurser läggs till i strukturen och på fliken <strong>Projekt och tidsplanering av team</strong>.</td>
+<td>Automatiskt lägg till planerade resurser genom att använda roller som associeras med en uppgift. Finance and Operations föreslår automatiskt planerade resurser genom att använda beslutsanalys för flera kriterier baserat på roller. När rollerna och insatsen (timmar) har angetts för uppgifterna i en struktur, och strukturen har frisläppts, klicka på <strong>Autogenerera team</strong>. Det begärda antalet planerade resurser läggs till i strukturen och på fliken <strong>Projekt och tidsplanering av team</strong>.</td>
 </tr>
 <tr class="odd">
 <td>Resurs (listruta)</td>
@@ -319,7 +338,8 @@ Ytterligare alternativ har lagts till i strukturen för en bättre användning a
 > Du får inte en varning om att den angivna resursen nu är 2, eftersom antalet resurser återstår på 1.
 18. På sidan **Uppdelad arbetsstruktur**, validera resurstilldelningen för strukturen och klicka sedan på **Spara**.
 
-## <a name="resource-fulfillment-for-planned-resources"></a>Resursuppfyllelse för planerade resurser
+## Resursuppfyllelse för planerade resurser
+<a id="resource-fulfillment-for-planned-resources" class="xliff"></a>
 En projektledare kan planera obligatoriska resursroller för ett projekt. Resurschefen ser dessa planerade resurser som förfrågningar på **Resursuppfyllelse**-sidan och kan tilldela verkliga resurser.
 
 1.  Klicka på **Projekthantering och redovisning** &gt; **Projekt** &gt; **Alla projekt**.
@@ -336,7 +356,8 @@ En projektledare kan planera obligatoriska resursroller för ett projekt. Resurs
 12. Kontrollera att raden för **Programutvecklare 1** har raderats för projektet **XYZ uppgraderingsfas 2**.
 13. På fliken **Projektteam och tidsplanering**, för projektet **XYZ uppgraderingsfas 2**, verifiera att arbetaren du valde i steg 11 har lagts till som **Programutvecklare**.
 
-## <a name="requests-for-project-resources"></a>Förfrågningar om projektresurser
+## Förfrågningar om projektresurser
+<a id="requests-for-project-resources" class="xliff"></a>
 Schemaläggningsfunktionen projektresurser stöder bara resursansvariga för att distribuera bemannade resurser för åtaganden eller projekt. För att aktivera funktionen slutför du följande uppgifter, eller kontrollera att de har slutförts.
 
 -   Ställa in nummerserier.
@@ -351,7 +372,8 @@ När du har kontrollerat eller slutfört de ovanstående uppgifterna kan du slut
 -   Begära en bemannad resurs från struktur.
 -   Boka resurser till ett projekt utan en begäran om en bemannad resurs.
 
-## <a name="monitor-project-teams"></a>Övervaka projektteam
+## Övervaka projektteam
+<a id="monitor-project-teams" class="xliff"></a>
 1.  Klicka på **Projekthantering och redovisning** &gt; **Projekt** &gt; **Alla projekt**.
 2.  I listan för projekt, klicka på länken **Projekt-ID** för projektet **XYZ uppgraderingsfas 2**.
 3.  På snabbfliken **Projektteam och tidsplanering**, verifiera att de listade projektresurserna är korrekta.

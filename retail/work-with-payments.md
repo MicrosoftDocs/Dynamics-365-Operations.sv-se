@@ -1,45 +1,47 @@
 ---
 title: Betalningsmetoder i ett kundcenter
-description: "Det här avsnittet ger en beskrivning av olika betalningsmetoder du kan använda i en kundtjänst i Butik och handel."
+description: "Det här avsnittet ger en beskrivning av olika betalningsmetoder som du kan använda i en kundtjänst i Dynamics 365 for Retail."
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.reviewer: josaw
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 92163
 ms.assetid: 8e738907-870b-466c-ab0c-07f4a4aa47f3
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 930264f9c22cbde102b59237e432df7d7e4836c8
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: 07cb1bcb3870b96e34f7f6725fe5b7da32628fde
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
 
-# <a name="payment-methods-in-a-call-center"></a>Betalningsmetoder i ett kundcenter
+# Betalningsmetoder i ett kundcenter
+<a id="payment-methods-in-a-call-center" class="xliff"></a>
 
 [!include[banner](includes/banner.md)]
 
 
-Det här avsnittet ger en beskrivning av olika betalningsmetoder du kan använda i en kundtjänst i Butik och handel.
+Det här avsnittet ger en beskrivning av olika betalningsmetoder som du kan använda i en kundtjänst i Dynamics 365 for Retail.
 
-Betalningsmetoderna som används i andra kanaler i Butik och handel i Microsoft Dynamics AX såsom kontanter, checkar, kreditkort och presentkort kan även användas i kundtjänster. När du har ställt in en betalningsmetod för en kundtjänst visas den som ett alternativ i avsnittet **Betalningar** på sidan **Försäljningsorder** för kundtjänstanvändare. Dessutom kan du kan ställa in kuponger om du vill erbjuda rabatter till kunder när de gör en beställning hos ditt företags kundtjänst. Kuponger kan antingen gälla för en fast beloppsrabatt eller för en procentsats av ett artikelpris eller den totala ordersumman. En värdekupong kan till exempel erbjuda kunderna en rabatt på 75,00 kronor när kunden spenderar 750,00 kronor eller mer. Du kan skapa olika typer av kuponger, ställa in överordnade/underordnade kuponger och kopiera eller annullera en kupong. Använd alternativen i följande tabell för att skapa kuponger.
+Betalningsmetoderna som används i andra kanaler såsom kontanter, checkar, kreditkort och presentkort kan även användas i kundtjänsten. När du har ställt in en betalningsmetod för en kundtjänst visas den som ett alternativ i avsnittet **Betalningar** på sidan **Försäljningsorder** för kundtjänstanvändare. Dessutom kan du kan ställa in kuponger om du vill erbjuda rabatter till kunder när de gör en beställning hos ditt företags kundtjänst. Kuponger kan antingen gälla för en fast beloppsrabatt eller för en procentsats av ett artikelpris eller den totala ordersumman. En värdekupong kan till exempel erbjuda kunderna en rabatt på 75,00 kronor när kunden spenderar 750,00 kronor eller mer. Du kan skapa olika typer av kuponger, ställa in överordnade/underordnade kuponger och kopiera eller annullera en kupong. Använd alternativen i följande tabell för att skapa kuponger.
 
 |                           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 |---------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Attribut**             | Ange värdet för kupongens förväntade återköptspris som en procentsats i fältet **Återköpspris** och välj sedan om kupongen ska användas som en engångskupong, en kupong som automatiskt kommer att återutfärdas eller om den är specifik för en kund.                                                                                                                                                                                                                                                                                                                                                                                       |
 | **Giltig**                 | Ange datumen för den första och sista dagen då kupongen är giltig i fälten **Startdatum** och **Slutdatum**.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| **Inkludera/exkludera regler** | Välj om några kataloger eller artiklar inkluderas eller exkluderas i kupongen i fälten **Kataloger** och **Artiklar**. Om du väljer **Inkludera** eller **Utesluta**ska du klicka på **Ställ in** och välja **Inkludera/uteslut kataloger** eller **Inkludera/uteslut produkter** och ange information om katalogen eller artikeln. Om du väljer **Inga** i dessa fält inkluderas alla kataloger eller artiklar i kupongen.                                                                                                                                                                                                                          |
+| **Inkludera/exkludera regler** | Välj om några kataloger eller artiklar inkluderas eller exkluderas i kupongen i fälten **Kataloger** och **Artiklar**. Om du väljer **Inkludera** eller **Utesluta** ska du klicka på **Ställ in** och välja **Inkludera/uteslut kataloger** eller **Inkludera/uteslut produkter** och ange information om katalogen eller artikeln. Om du väljer **Inga** i dessa fält inkluderas alla kataloger eller artiklar i kupongen.                                                                                                                                                                                                                          |
 | **Diverse**         | Om den här kupongen inte ska gå att använda tillsammans med andra rabatter, välj kryssrutan **Uteslut**. Välj sedan var kupongen kan användas i fältet **Ursprung**. Markera kryssrutan **Tillverkarkupong** om det här är en tillverkares kupong.                                                                                                                                                                                                                                                                                                                                                                |
 | **Framtida kupong**         | Om den här kupongen ska kopplas till andra kuponger som en överordnad kupong markerar du kryssrutan **Överordnad kupong**. Om den här kupongen ska kopplas till en befintlig kupong som en underordnad kupong, välj den överordnade kupongen i fältet **ID för överordnad kupong**. Du kan till exempel skapa en kupong för nästkommande vårkatalog. Alla andra kuponger du skapar för vårkatalogen blir underordnade kuponger till vårkatalogkupongen. Underordnade kuponger kan omfatta en rabatt på 20 procent för nya kundorder, en rabatt på 10 procent på en nylanserad artikel eller en rabatt på 95,00 kronor för order som överstiger 1 000,00 kronor. |
 

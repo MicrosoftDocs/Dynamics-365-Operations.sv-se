@@ -3,14 +3,14 @@ title: "Översikt över budgetplanering"
 description: "Det här avsnittet introducerar budgetplanering och innehåller information om hur du konfigurerar budgetplanering och ställer in budgetplaneringsprocessen."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 17251
 ms.assetid: a2e06633-a800-4840-a962-88fed8462104
 ms.search.region: Global
@@ -18,29 +18,32 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 5212c8401f26f30cf593c52eb88291463b9b8810
+ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
+ms.openlocfilehash: e2c956969626836fadb0a6cac6dbb1d57f169f28
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
 
-# <a name="budget-planning-overview"></a>Översikt över budgetplanering
+# Översikt över budgetplanering
+<a id="budget-planning-overview" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
 Det här avsnittet introducerar budgetplanering och innehåller information om hur du konfigurerar budgetplanering och ställer in budgetplaneringsprocessen.
 
-<a name="overview-of-budget-planning"></a>Översikt över budgetplanering
+Översikt över budgetplanering
+<a id="overview-of-budget-planning" class="xliff"></a>
 ---------------------------
 
 Du gör budgetplanering när du förbereder budgetar som ska implementeras av en organisation. En organisation kan konfigurera budgetplanering och sedan ställa in budgetplaneringsprocesser för att uppfylla organisationens policyer, procedurer och krav för budgetförberedelse. 
 
-När du förstår de begrepp och den terminologi som används i Microsoft Dynamics 365 for Operations, blir det enklare att genomföra budgetplaneringen inom din organisation.
+När du förstår de begrepp och den terminologi som används i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition blir det enklare att genomföra budgetplaneringen inom din organisation.
 
-### <a name="key-terms"></a>Nyckeltermer
+### Nyckeltermer
+<a id="key-terms" class="xliff"></a>
 
 -   **Budgetplaneringsprocesser** – bestämmer hur budgetplaner kan uppdateras, skickas, granskas och godkännas i budgetorganisationshierarkin. En budgetplaneringsprocess är kopplad till en budgetcykel och en organisation via en juridisk person.
 -   **Budgetplaner** – budgetplaner innehåller budgetdata för en budgetcykel. Du kan ha flera budgetplaner som används för olika ändamål. Du kan till exempel använda budgetplaner för att skapa budgetbelopp för olika organisationsenheter, eller de kan hjälpa dig att göra jämförelser och fattat underbyggda beslut.
@@ -50,7 +53,8 @@ När du förstår de begrepp och den terminologi som används i Microsoft Dynami
 
 [![Terminologi för budgetplanering](./media/budgetplanning-terms-1024x504.png)](./media/budgetplanning-terms.png)
 
-### <a name="common-tasks"></a>Vanliga uppgifter
+### Vanliga uppgifter
+<a id="common-tasks" class="xliff"></a>
 
 Du kan använda budgetplanering för att utföra följande uppgifter:
 
@@ -59,12 +63,14 @@ Du kan använda budgetplanering för att utföra följande uppgifter:
 -   Du kan automatiskt skicka budgetplanerna tillsammans med kalkylblad, justeringsdokument och andra bilagor, för granskning och godkännande.
 -   Konsolidera flera budgetplaner från en lägre nivå i organisationen till en enda överordnad budgetplan på en högre nivå i organisationen. Du kan också utveckla en enskild budgetplan på en högre nivå i organisationen och fördela budgeten till lägre nivåer i organisationen.
 
-Budgetplaneringen är integrerad med andra Microsoft Dynamics 365 for Operations-moduler. Därför kan du hämta information från tidigare i budgetar, verkliga utgifter, anläggningstillgångar och personal. Eftersom budgetplanering också är integrerad med Microsoft Excel och Microsoft Word, kan använda dessa program för att arbeta med budgetplaneringsdata. En budgetchef kan till exempel exportera en avdelnings budgetförfrågan från ett budgetplanscenario till Excel. Data kan analyseras, uppdateras och mappas i kalkylbladet och sedan publiceras tillbaka till budgetplansraderna.
+Budgetplaneringen är integrerad med andra Microsoft Dynamics 365 for Finance and Operations-moduler. Därför kan du hämta information från tidigare i budgetar, verkliga utgifter, anläggningstillgångar och personal. Eftersom budgetplanering också är integrerad med Microsoft Excel och Microsoft Word, kan använda dessa program för att arbeta med budgetplaneringsdata. En budgetchef kan till exempel exportera en avdelnings budgetförfrågan från ett budgetplanscenario till Excel. Data kan analyseras, uppdateras och mappas i kalkylbladet och sedan publiceras tillbaka till budgetplansraderna.
 
-## <a name="configuring-budget-planning"></a>Konfigurera budgetplanering
+## Konfigurera budgetplanering
+<a id="configuring-budget-planning" class="xliff"></a>
 Sidan **Budgetplaneringskonfiguration** innehåller de flesta inställningar som du behöver för att ställa in budgetplanering. I följande avsnitt beskrivs några viktiga faktorer du bör beakta när du konfigurerar budgetplaneringen. När du har slutfört konfigurationen, ställer du in budgetplaneringsprocesserna.
 
-### <a name="create-a-budget-planning-schema"></a>Skapa ett budgetplaneringsschema
+### Skapa ett budgetplaneringsschema
+<a id="create-a-budget-planning-schema" class="xliff"></a>
 
 Ett valfritt men rekommenderat första steg är att skapa ett schema som innehåller din organisations procedurer för att formulera en budget. Du kan använda en valfri metod när du skapar det här schemat. Illustrationen visar ett allmänt exempel, där separata budgetplaneringsarbetsflöden skapas för olika nivåer i organisationen. Faser anges i varje arbetsflöde, och specifika scenarier tilldelas varje fas för att innehålla budgetdata. Uppgifter utförs för att flytta data från en fas till nästa. Belopp till exempel fördelas eller aggregeras till olika konton, godkännanden och andra granskningar. I det här exemplet visar kursiv stil ett scenario som inte går att redigera under fas, eller data som är historisk eller godkänts i en tidigare fas och därför inte bör ändras. 
 
@@ -74,27 +80,30 @@ I följande exempel uppskattar företagets huvudkontor de inledande budgetbelopp
 
 [![Exempel på budgetplaneringsschema](./media/budgetplanningexampleschema-300x145.png)](./media/budgetplanningexampleschema.png)
 
-###  <a name="organization-hierarchy-for-budget-planning"></a>Organisationshierarki för budgetplanering
+###  Organisationshierarki för budgetplanering
+<a id="organization-hierarchy-for-budget-planning" class="xliff"></a>
 
 På sidan **Organisationshierarki** kan du välja en organisationshierarki som budgetplaneringshierarki för varje budgetplaneringsprocess. Budgetplaneringshierarkin måste inte matcha den vanliga organisationshierarkin som används för andra ändamål. Eftersom den här hierarkin används för att sammanställa och fördela data, kanske du vill att den ska ha en annan struktur. I exempelschemat är försäljningsavdelningarna under huvudkontorsnivån som innefattar budgetavdelningen och ekonomiavdelningen. Strukturen skiljer sig antagligen från strukturen som används för att hantera driften på försäljningsavdelningarna. Endast en organisationshierarki kan tilldelas varje budgetplaneringsprocess. 
 
-Mer information finns i [Organisationer och organisationens hierarkier](/dynamics365/operations/organization-administration/organizations-organizational-hierarchies).
+Mer information finns i [Organisationer och organisationens hierarkier](/dynamics365/unified-operations/fin-and-ops/organization-administration/organizations-organizational-hierarchies).
 
-### <a name="user-security"></a>Användarsäkerhet
+### Användarsäkerhet
+<a id="user-security" class="xliff"></a>
 
 Budgetplanering kan följa en av två säkerhetsmodeller för att definiera användarbehörigheter. Om du vill ange säkerhetsmodellen ställer du in en budgetplaneringsparameter på sidan **Budgetplaneringskonfiguration**.
 
-### <a name="budget-planning-workflows-stages"></a>Arbetsflödesfaser för budgetplanering
+### Arbetsflödesfaser för budgetplanering
+<a id="budget-planning-workflows-stages" class="xliff"></a>
 
 Budgetplaneringsarbetsflöden används tillsammans med budgetarbetsflöden för att hantera framtagningen och utvecklandet av budgetplaner.
 
-Ett budgetplaneringsarbetsflöde består av en ordnad uppsättning faser som en budgetplan går igenom. Varje budgetplaneringsarbetsflöde är kopplat till ett budgeteringsarbetsflöde. Budgeteringsarbetsflöden en av de arbetsflödestyper som används i Microsoft Dynamics 365 for Operations. Budgeteringsarbetsflödena dirigerar budgetplanerna, tillsammans med kalkylblad, justeringar och bilagor, genom organisationen för granskning och godkännande. 
+Ett budgetplaneringsarbetsflöde består av en ordnad uppsättning faser som en budgetplan går igenom. Varje budgetplaneringsarbetsflöde är kopplat till ett budgeteringsarbetsflöde. Budgeteringsarbetsflöden en av de arbetsflödestyperna som används i Finance and Operations. Budgeteringsarbetsflödena dirigerar budgetplanerna, tillsammans med kalkylblad, justeringar och bilagor, genom organisationen för granskning och godkännande. 
 
 Du skapar budgeteringsplaneringsarbetsflödet i avsnittet **Arbetsflödefaser** på sidan **Budgetplaneringskonfiguration**. Där kan du välja faserna och budgeteringsarbetsflödet som kan användas, och även ytterligare inställningar. 
 
 En bra tips är att skapa ett budgetplaneringsarbetsflöde för varje nivå i en budgeteringshierarki. Du kan sedan tilldela ett budgeteringsarbetsflöde som innehåller element som motsvarar faserna i budgetplaneringsarbetsflödet. I exempelschemat som visades tidigare i den här artikeln, skapades ett budgetplaneringsarbetsflöde för försäljningsavdelningarna, och andra för huvudkontoret. Ett budgeteringsarbetsflöde flyttar budgetplanerna igenom faserna. 
 
-Du skapar budgeteringsarbetsflödet för budgetplanering på sidan **Budgeteringsarbetsflöden**. Processen liknar processen för att skapa andra arbetsflöden i Microsoft Dynamics 365 for Operations. Illustrationen nedan visar ett exempel på en högkvarterarbetsflöde. 
+Du skapar budgeteringsarbetsflödet för budgetplanering på sidan **Budgeteringsarbetsflöden**. Processen liknar processen för att skapa andra arbetsflöden i Finance and Operations. Illustrationen nedan visar ett exempel på en högkvarterarbetsflöde. 
 
 [![Budgetera arbetsflöde för budgetplanering](./media/budgetingworkflowforbudgetplanning-300x300.png)](./media/budgetingworkflowforbudgetplanning.png) 
 
@@ -102,7 +111,8 @@ Arbetsflödet innehåller element för allokering till försäljningsavdelningar
 
 Du tilldelar budgeteringsarbetsflödet till varje budgetplaneringsarbetsflöde i avsnittet **Arbetsflödefaser** på sidan **Budgetplaneringskonfiguration**.
 
-### <a name="parameters-scenarios-and-stages"></a>Parametrar, scenarier och faser
+### Parametrar, scenarier och faser
+<a id="parameters-scenarios-and-stages" class="xliff"></a>
 
 De första inställningarna på sidan **Budgetplaneringskonfiguration** gör att du kan skapa byggstenar för senare konfigurationssteg:
 
@@ -110,7 +120,8 @@ De första inställningarna på sidan **Budgetplaneringskonfiguration** gör att
 -   **Scenarier** – Scenarier omfattar kategorier av data som du vill använda för de här budgetplanerna. Du definierar bugdetplansscenarier för att stödja monetära och andra måttenhetsklasser, till exempel kvantitet. I en budgetplan representerar scenarier en version av budgetplaneringsdata. Exempel på monetära budgetplanscenarier är Föregående års försäljning och Slutna avtal. Exempel på scenarier som använder kvantiteter är Antal säljsamtal och Heltidslön.
 -   **Faser** – Faser definierar vilka steg som en budgetplan följer från dess startdatum till sista godkännande. Exempel på budgetplaneringsfaser inkluderar HQ-beräkningar, Vd-granskning och Slutversion.
 
-### <a name="allocation-schedules"></a>Allokeringsscheman
+### Allokeringsscheman
+<a id="allocation-schedules" class="xliff"></a>
 
 I budgetplaneringen kan du allokera beloppen eller kvantiteterna på budgetplansraderna från ett scenario till ett annat scenario eller t.o.m till samma scenario. Du kan till exempel fördela till samma scenariot, om du vill använda ändringar av ekonomiska dimensioner eller datumen för beloppen i detta scenario. En allokering kan göras inom en budgetplan eller från en budgetplan till en annan. 
 
@@ -123,7 +134,8 @@ Allokeringsplaner fördelar automatiskt budgetplansrader under bearbetning i arb
 -   **Använd allokeringsregler för redovisning** – Budgetplanraderna distribueras från källbudgetplaneringsscenariot till målscenariot baserat på vald allokeringsregel för redovisning.
 -   **Kopiera från budgetplan** – Du kan välja en annan budgetplan som ska användas som allokeringens källa.
 
-### <a name="stage-allocations"></a>Fasallokeringar
+### Fasallokeringar
+<a id="stage-allocations" class="xliff"></a>
 
 Fasallokeringsscheman och fasallokeringar används för att automatiskt allokera budgetplansrader under arbetsflödesprocessen. När fasallokeringar används kan budgetplanrader i målscenariot kan skapas och ändras utan ingripande av budgetplanförberedaren eller granskaren.
 
@@ -137,11 +149,13 @@ I exempelschemat görs också en sammanställning från budgetplanerna och scena
 
 [![Sammansättning](./media/aggregation-109x300.png)](./media/aggregation.png)
 
-### <a name="priorities"></a>Prioriteter
+### Prioriteter
+<a id="priorities" class="xliff"></a>
 
 Du kan även använda budgetplanprioriteter för att definiera kategorier och mål för budgetplanerna som du har ställt in. Du kan också använda prioriteter för att ordna, klassificera och utvärdera flera budgetplaner. Du kan till exempel skapa en budgetplaneringsprioritet för hälsa och säkerhet och sedan utvärdera budgetplaner som tilldelats den prioriteten. Du kan också tilldela ett nummer till rangbudgetplaner över alla budgettransaktioner planer.
 
-### <a name="columns-and-layouts"></a>Kolumner och layout
+### Kolumner och layout
+<a id="columns-and-layouts" class="xliff"></a>
 
 Budgetsiffror visas på en budgetplan i rader och kolumner. Du måste först definiera kolumnerna, och sedan kan du skapa en layout för att definiera utseendet på kolumnerna. 
 
@@ -157,7 +171,8 @@ För exempelschemat kanske du vill skapa kolumner för försäljning, kontrakt, 
 
 Du kan också ange om respektive layoutelement (kolumn) ska gå att redigera och om det finns tillgängligt i alla kalkylbladsmallar som skapas för layouten. För exempelschemat i layouten som används för uppskattningsfasen är prognoskolumnerna redigerbara, men kolumnerna för försäljning och kontrakt är skrivskyddade.
 
-### <a name="templates"></a>Mallar
+### Mallar
+<a id="templates" class="xliff"></a>
 
 I avsnittet **Layouter** på sidan **Budgetplaneringskonfiguration** kan du också skapa, visa och överföra Excel-mallar. Dessa mallar är arbetsböckerna som är kopplade till varje budgetplan för att kunna ge ytterligare analys, mappning och datapostkapaciteter. 
 
@@ -166,11 +181,13 @@ Du kan skapa, visa och överföra en mall för varje layout. När en mall skapas
 > [!NOTE] 
 > Mallen ska sparas på en plats som användaren har tillgång till, så att den kan överföras till layouten när redigeringen är klar. På så vis används mallen med budgetplaner som använder layouten.
 
-### <a name="descriptions"></a>Beskrivningar
+### Beskrivningar
+<a id="descriptions" class="xliff"></a>
 
 Beskrivningarna som du kan tilldela i avsnittet **Layouter** används för att visa namnet på en ekonomisk dimension som är inkluderad i en layout. Till exempel kan en organisation visa huvudkontonamn bredvid huvudkontonumret i en budgetplan, men vill utesluta namnen på andra ekonomiska dimensioner för att undvika att belamra skärmen.
 
-## <a name="setting-up-budget-planning-processes"></a>Ställa in budgetplaneringsprocesser
+## Ställa in budgetplaneringsprocesser
+<a id="setting-up-budget-planning-processes" class="xliff"></a>
 
 När du är klar med konfigureringen av budgetplaneringen, kan du ställa in budgetplaneringsprocesser på sidan **Budgetplaneringsprocess**. Budgetplaneringsprocesser är en uppsättning regler som bestämmer hur budgetplaner kan uppdateras, skickas, granskas och godkännas i budgetorganisationshierarkin. 
 

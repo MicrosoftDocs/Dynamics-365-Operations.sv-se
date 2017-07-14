@@ -1,15 +1,15 @@
 ---
 title: "Stämma av bankutdrag med hjälp av avancerad bankavstämning"
-description: "Med hjälp av funktionen Avancerad bankavstämning kan du importera elektroniska bankutdrag och stämma av dem automatiskt mot transaktioner i Microsoft Dynamics 365 for Operations. Det här ämnet innehåller en beskrivning av avstämningsprocessen."
+description: "Med hjälp av den avancerade bankavstämningen kan du importera elektroniska bankutdrag och utföra automatiskt avstämning mot banktransaktioner i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Det här ämnet innehåller en beskrivning av avstämningsprocessen."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 98243
 ms.assetid: 9df13adf-aa9d-4f6b-bde6-25a214611692
 ms.search.region: global
@@ -17,22 +17,24 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 81368294164ca4ca1915d73f8f5622e61f5d1fc8
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: eb7fd01874b08417933ddf575c7d6ff866b4e6f8
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="reconcile-bank-statements-by-using-advanced-bank-reconciliation"></a>Stämma av bankutdrag med hjälp av avancerad bankavstämning
+# Stäm av bankutdrag med hjälp av avancerad bankavstämning
+<a id="reconcile-bank-statements-by-using-advanced-bank-reconciliation" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-Med hjälp av funktionen Avancerad bankavstämning kan du importera elektroniska bankutdrag och stämma av dem automatiskt mot transaktioner i Microsoft Dynamics 365 for Operations. Det här ämnet innehåller en beskrivning av avstämningsprocessen.  
+Med hjälp av den avancerade bankavstämningen kan du importera elektroniska bankutdrag och utföra automatiskt avstämning mot banktransaktioner i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Det här ämnet innehåller en beskrivning av avstämningsprocessen.  
 
-<a name="import-an-electronic-bank-statement"></a>Importera ett elektronisk bankutdrag
+Importera ett elektronisk bankutdrag
+<a id="import-an-electronic-bank-statement" class="xliff"></a>
 -----------------------------------
 
 Du kan importera dina bankutdrag med hjälp av åtgärden **Importera utdrag** på sidan **Bankutdrag**. På bankutdraget identifieras bankkontot genom en kombination av värden som anges i informationen om bankkontot. Dessa värden är bankens namn, bankkontonummer, organisationsnummer, SWIFT-kod och IBAN-nummer. 
@@ -44,12 +46,13 @@ Du kan överföra ett bankutdrag som innehåller information om antingen ett ens
 
 Om några utdrag i en elektronisk fil inte kan kopplas till ett bankkonto med hjälp av identifieringsfälten ska de inte importeras. Du kan dock fortfarande importera andra utdrag i filen. Användaren får sedan ett meddelande med information om att importen av bankutdraget misslyckades för specifika bankkonton. Observera att användaren som importerar bankutdraget måste ha åtkomst till en juridisk person för att importera utdrag för den juridiska personens bankkonton. 
 
-Du kan använda en zip-fil för att överföra flera utdragsfiler till Microsoft Dynamics 365 for Operations i en enda process. Om du vill importera flera bankutdragsfiler för flera konton kan du slå samla alla bankutdragsfiler i en zip-fil. I dialogrutan **Importera bankutdrag**, ställ in alternativet **Importera utdrag för flera bankkonton i alla juridiska personer** på **Ja**. Klicka på **Bläddra** för att välja zip-filen som innehåller bankutdragsfilerna och klicka sedan på **Överför**. Importeringsprocessen kommer att känna igen zip-filen och överföra varje utdrag som är inkluderade i den, oavsett bankkontots juridiska person. 
+Du kan använda en zip-fil för att överföra flera utdragsfiler till Finance and Operations i en enda process. Om du vill importera flera bankutdragsfiler för flera konton kan du slå samla alla bankutdragsfiler i en zip-fil. I dialogrutan **Importera bankutdrag**, ställ in alternativet **Importera utdrag för flera bankkonton i alla juridiska personer** på **Ja**. Klicka på **Bläddra** för att välja zip-filen som innehåller bankutdragsfilerna och klicka sedan på **Överför**. Importeringsprocessen kommer att känna igen zip-filen och överföra varje utdrag som är inkluderade i den, oavsett bankkontots juridiska person. 
 
 Alternativet **Stäm av efter import** är tillgängligt. När det här alternativet är inställt på **Ja** validerar systemet kontoutdraget, skapar en ny bankkontoavstämning och ett nytt kalkylblad och kör standarduppsättningen för matchningsregler när bankutdraget överförs. Den här funktionen automatiserar processen fram till den punkt där transaktionen måste stämmas av manuellt.
 
-## <a name="validate-the-bank-statement"></a>Validera bankutdraget
-Klicka på **Validera** på sidan**Bankutdrag** om du vill validera ett utdrag. Bankutdrag måste valideras innan de kan stämmas av. Det här steget slutförs automatiskt om alternativet **Stäm av efter import** är inställt på **Ja** vid tidpunkten för importen. 
+## Validera bankutdraget
+<a id="validate-the-bank-statement" class="xliff"></a>
+Klicka på **Validera** på sidan **Bankutdrag** om du vill validera ett utdrag. Bankutdrag måste valideras innan de kan stämmas av. Det här steget slutförs automatiskt om alternativet **Stäm av efter import** är inställt på **Ja** vid tidpunkten för importen. 
 
 Vid bankutdragsvalideringen verifieras att:
 
@@ -63,7 +66,8 @@ Vid bankutdragsvalideringen verifieras att:
 
 När valideringen är slutförd uppdateras statusen på bankutdraget till **Validerat**. Ett bankutdrag måste valideras innan det kan stämmas av.
 
-## <a name="reconcile-the-bank-statement"></a>Stämma av bankutdraget
+## Stämma av bankutdraget
+<a id="reconcile-the-bank-statement" class="xliff"></a>
 När du har importerat ett elektroniskt bankutdrag och validerat det på sidan **Bankutdrag** kan du stämma av det med hjälp av sidorna **Bankavstämning** och **Kalkylblad för bankavstämning**. 
 
 På sidan **Bankavstämning**, klicka på **Ny** för att skapa en ny avstämning och välj sedan bankkonto för utdraget som importerades. Ett bankkonto kan endast ha en öppen bankavstämning. Slutdatumet fastställer vilka bankutdragstransaktioner och Dynamics Operations-banktransaktioner som är inkluderade i avstämningskalkylbladet. Som standard används det aktuella systemdatumet som slutdatum, men du kan ändra datum för avstämningen. Den återstående huvudinformationen hämtas automatiskt från utdraget. Det här steget slutförs automatiskt om alternativet **Stäm av efter import** är inställt på **Ja** vid tidpunkten för importen. 
@@ -76,7 +80,7 @@ Det finns tre metoder för att matcha eller stämma av bankutdragstransaktioner:
 
 -   Matcha transaktioner med Dynamics Operations-banktransaktioner.
 -   Matcha transaktioner med en bankutdragstransaktion för återföring.
--   Markera transaktionen som **Ny**, så att den kan bokföras senare som en banktransaktion i Dynamics 365 for Operations.
+-   Markera transaktionen som **Ny**, så att den kan bokföras senare som en banktransaktion i Finance and Operations.
 
 Om du vill matcha transaktioner manuellt, väljer du transaktionerna i rutnätet **Bankutdragstransaktioner**, markerar motsvarande transaktioner i rutnätet **Operations-banktransaktioner** och klickar sedan på **Matcha**. De valda transaktionerna flyttas från det övre rutnäten för omatchade transaktioner till de nedre rutnäten för matchade transaktioner. Dessutom uppdateras de matchade och omatchade totalbeloppen. Du kan ha ett-till-ett-, många-till-en- och många-till-många-transaktionsmatchningar. Matchningar måste följa reglerna för tillåtna datumskillnader och transaktionstypsmappning. Dessa regler ställs in på sidan **Parametrar för kassa- och bankhantering**.
 
@@ -86,14 +90,15 @@ Om du vill matcha transaktioner manuellt, väljer du transaktionerna i rutnätet
 
 Återförda Dynamics Operations-banktransaktioner måste stämmas av med hjälp av sidan **Dynamics Operations-banktransaktioner**. Du kan stämma av två Dynamics Operations-banktransaktioner tillsammans om dokumenten har samma bankkonto, dokumenttyp och betalningsreferens och om de har motsatta belopp. Du kan även stämma av en enstaka avbruten kontroll för att förhindra att de transaktionerna visas i kalkylbladet för avstämning. 
 
-Om det finns nya bankinitierade transaktioner såsom räntor, avgifter och skatter som ännu inte är införda i Dynamics 365 for Operations kan du lägga till dem i en journal som är associerad med den valda bankutdragsavstämningen. Välj en bankutdragstransaktion i rutnätet **Bankutdragstransaktioner** för ej matchade transaktioner och klicka sedan på **Markera som ny**. Statusen för transaktionen markeras som **Ny** och transaktionen flyttas till rutnätet **Bankutdragstransaktioner** för matchade transaktioner. Du ska bokföra en transaktion som är markerad som **Ny** senare, från sidan **Bankutdrag**. 
+Om det finns nya bankinitierade transaktioner såsom räntor, avgifter och skatter som ännu inte är införda i Finance and Operations kan du lägga till dem i en journal som är associerad med den valda bankutdragsavstämningen. Välj en bankutdragstransaktion i rutnätet **Bankutdragstransaktioner** för ej matchade transaktioner och klicka sedan på **Markera som ny**. Statusen för transaktionen markeras som **Ny** och transaktionen flyttas till rutnätet **Bankutdragstransaktioner** för matchade transaktioner. Du ska bokföra en transaktion som är markerad som **Ny** senare, från sidan **Bankutdrag**. 
 
 Du kan ta bort matchning för transaktioner som matchades felaktigt. Markera den matchade bankutdragstransaktionen och klicka sedan på **Omatchad**. Alla kopplade transaktioner flyttas tillbaka till det övre rutnätet för ej matchade transaktioner och de matchade och omatchade totalbeloppen uppdateras. 
 
 När alla utdragsrader har bearbetats bör du markera kalkylbladet för bankavstämningen som avstämt.
 
-## <a name="post-new-transactions-that-are-associated-with-the-reconciliation"></a>Bokföra nya transaktioner som är kopplade till avstämningen
-En bankutdragstransaktion som har markerats som **Ny** på kalkylbladet för avstämning bokförs på sidan**Bankutdrag**. På sidan **Bankutdrag**, markera utdrags-ID för att visa detaljer om utdraget. I menyn **Redovisning** kan du använda alternativen **Visa fördelningar** och **Visa redovisning** för att visa detaljerna för de nya transaktionerna och tillhörande redovisningsposter. Välj alternativet **Bokför** för att bokföra en bankutdragsrad som är markerad som **Ny** i redovisningen. Observera att bokföringen enbart kan slutföras en gång per bankutdrag.
+## Bokföra nya transaktioner som är kopplade till avstämningen
+<a id="post-new-transactions-that-are-associated-with-the-reconciliation" class="xliff"></a>
+En bankutdragstransaktion som har markerats som **Ny** på kalkylbladet för avstämning bokförs på sidan **Bankutdrag**. På sidan **Bankutdrag**, markera utdrags-ID för att visa detaljer om utdraget. I menyn **Redovisning** kan du använda alternativen **Visa fördelningar** och **Visa redovisning** för att visa detaljerna för de nya transaktionerna och tillhörande redovisningsposter. Välj alternativet **Bokför** för att bokföra en bankutdragsrad som är markerad som **Ny** i redovisningen. Observera att bokföringen enbart kan slutföras en gång per bankutdrag.
 
 
 

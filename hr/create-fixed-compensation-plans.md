@@ -3,59 +3,66 @@ title: "Skapa planer för fast kompensation"
 description: "Fast kompensation refererar till en medarbetares vanliga bruttolön eller löner. Det här avsnittet beskriver komponenterna som måste ställas in innan du kan skapa en fast kompensationsplan och anmäla medarbetare."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-talent
 ms.technology: 
 ms.search.form: HRCCompGrid, HRCCompRefPointSetup, HRMCompEligibility, HRMCompEvent, HRMFixedCompPlanTable
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 15991
 ms.assetid: ef8cf992-176c-4c98-9dff-6510e1eb9f1c
 ms.search.region: Global
 ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: e71e22cef2b65c4cf89b8fe0ea55e092e259c6dc
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 92237f2dda486f71cabe414e88e7ee4b69fb4485
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="create-fixed-compensation-plans"></a>Skapa planer för fast kompensation
+# Skapa planer för fast kompensation
+<a id="create-fixed-compensation-plans" class="xliff"></a>
 
 [!include[banner](includes/banner.md)]
 
 
 Fast kompensation refererar till en medarbetares vanliga bruttolön eller löner. Det här avsnittet beskriver de komponenter som måste ställas in innan du kan skapa en fast kompensationsplan och anmäla medarbetare.
 
-Belopp för fast kompensation kan beräknas för dina medarbetare, baserat på faktorer som till exempel prestanda, region och budget. Microsoft Dynamics 365 for Operations stöder kompensationstyperna steg, grad och band.
+Belopp för fast kompensation kan beräknas för dina medarbetare, baserat på faktorer som till exempel prestanda, region och budget. Microsoft Talent stöder kompensationstyperna steg, grad och band.
 
-## <a name="fixed-compensation-components"></a>Komponenter i fast kompensation
-### <a name="compensation-levels"></a>Kompensationsnivåer
+## Komponenter i fast kompensation
+<a id="fixed-compensation-components" class="xliff"></a>
+### Kompensationsnivåer
+<a id="compensation-levels" class="xliff"></a>
 
 Du kan använda **kompensationsnivåer** för att ange kompensation för olika jobb, detta för att garantera att de medarbetare som innehar dessa jobb betalas rättvist. På sidan **Kompensationsnivåer** kan du skapa kompensationsnivåer som krävs för varje steg-, grad- och bandplan. Använd **uppknappen** och **nedknappen** för att placera nivåerna i rätt ordning enligt deras typ. Genom att ange ersättningsnivåer för ett jobb, kan du att garantera att alla medarbetare som har en befattning för det jobbet betalas på samma nivå.
 
-### <a name="reference-points"></a>Referenspunkter
+### Referenspunkter
+<a id="reference-points" class="xliff"></a>
 
 **Referenspunkter** är kolumnerna som definierar kompensationsintervallen för varje nivå. Kompensationsnivån är raden i tabellen. Typiska referenspunkter för en plan av typen grad är ett minimum, en mittpunkt och ett maximum. Du skapar referenspunkter på sidan **Inställningar för referenspunkter**.
 
-### <a name="compensation-grids"></a>Kompensationsrutnät
+### Kompensationsrutnät
+<a id="compensation-grids" class="xliff"></a>
 
 När du har ställt in nivåerna referenspunkterna, kan de kombineras för att skapa ett **kompensationsrutnät**. Definiera information om rutnätet på sidan **Kompensationsrutnät**. Exempelvis anger du vad rutnätet ska användas till, vilken typ av plan den används med och vilka referenspunkter eller kolumner som krävs. När du har angett informationen klickar du på **Kompensationsstruktur** för att lägga till nivåerna och beloppet i tabellen. 
 
 **Tips:** Använd funktionen **Massändringar** i kompensationsstrukturen för att ange ursprungliga belopp och öka sedan dessa med procentsatser eller belopp på alla nivåer eller referenspunkter.
 
-### <a name="pay-frequencies"></a>Lönefrekvenser
+### Lönefrekvenser
+<a id="pay-frequencies" class="xliff"></a>
 
 **Lönefrekvenser** används för att definiera hur en medarbetares lön anges (till exempel 500 per timme eller 350 000 per år), och konverteringen mellan timlön, veckolön, månadslön (tolv månader) och årslöner. Ett företag som exempelvis har en 38-timmarsvecka för de timanställda anger en betalningsfrekvens med timtakten 1, veckotimmarna 38 och månadslön på 164,6666666667 och en årslön på 1 976. Dessa konverteringar används för att beräkna olika lönebetalningar som visas på en medarbetares post för fast kompensation.
 
-## <a name="fixed-compensation-plans"></a>Planer för fast kompensation
+## Planer för fast kompensation
+<a id="fixed-compensation-plans" class="xliff"></a>
 Du kan utforma planen för fast kompensations för att kombinera alla komponenter som du har konfigurerat. Skapa en plan för fast kompensation genom att öppna sidan **Planer för fasta kompensationsplaner**. Här kan du ge din plan ett namn och en beskrivning, välja typ av plan (steg, grad eller band), välja betalningsfrekvensen för medarbetarens lön (belopp per timme, belopp per år osv.) och ange några alternativ som styr hur kompensation bearbetas. 
 
 Inställningen **Tolerans utanför intervallet** gör att du kan ange hur sträng du ska vara när du ser till att kompensationsbeloppen ligger mellan maximi- och minimibeloppen. **Hård** tolerans kräver en kompensationen ska vara inom intervallet som har definierats för en viss nivå. **Mjuk** tolerans varnar dig om kompensationsbeloppet hamnar utanför intervallet, men tillåter dig att fortsätta. Om du ställer in toleransen på **Ingen**, kan du ange vilket kompensationsbelopp som helst, utan att få några varningar eller felmeddelanden. 
@@ -72,8 +79,10 @@ När du har definierat grunderna av planen för fast kompensation, kan du ställ
 
 När du har valt ett alternativ öppnas sidan **Kompensationsstruktur** och du kan göra ändringar i det nya kompensationsrutnätet eller det befintliga kompensationsrutnätet.
 
-## <a name="fixed-compensation-enrollment"></a>Anmälan till fast kompensation
-### <a name="determine-who-is-eligible-for-the-plan"></a>Bestäm vem som är berättigad till planen
+## Anmälan till fast kompensation
+<a id="fixed-compensation-enrollment" class="xliff"></a>
+### Bestäm vem som är berättigad till planen
+<a id="determine-who-is-eligible-for-the-plan" class="xliff"></a>
 
 Första steget i att ta med medarbetare till en plan för fast kompensation är att bestämma vem som är berättigad till kompensation som definieras i planen. Innan du har bestämt vem som får, kan du inte koppla planen till någon medarbetare. Öppna sidan **Kvalifikationsregler** för att ställa in tillgängligheten. Här skapar du en ny kvalifikationsregel för din kompensationsplan och definierar de kriterier som en medarbetare måste uppfylla för att kvalificera sig för en plan. Du kan begränsa berättigandet baserat på avdelning, fackförening, kompensationsregion (plats), jobb, jobbfunktion eller kompensationsnivå. Medarbetare kan bara tas med i en kompensationsplan om de uppfyller alla kriterier som angetts i berättiganderegeln. 
 
@@ -89,13 +98,15 @@ Berättiganderegeln tar hänsyn till värdet på specifika fält i jobbet, befat
 
 Berättiganderegeln tar också hänsyn till fackföreningar som kopplas till medarbetaren (på sidan **Medarbetare**, på fliken **Arbetare**, klicka på **Personlig information** &gt; **Fackföreningar**).
 
-### <a name="define-fixed-compensation-actions"></a>Definiera åtgärder för fast kompensation
+### Definiera åtgärder för fast kompensation
+<a id="define-fixed-compensation-actions" class="xliff"></a>
 
 **Åtgärder för fast kompensation** används när du ställer in eller använder ändringar i en medarbetares fasta kompensation. Åtgärder för fast kompensation gör att du kan ange beskrivande namn på åtgärdstyperna som en chef över kompensationer och förmåner kan utföra. Olika åtgärdertyper har särskild logik bakom, så att de kan användas vid specifika tidpunkter. 
 
 När till exempel fast kompensation har ställts in för en medarbetare, kan enbart åtgärder, som har typen **Anställ/återanställ** användas. I det här fallet kan du vilja skapa tre olika åtgärder för typen **Anställ/återanställ** och ge dem namnen **Anställ**, **Återanställ** och **Förflytta**. Då har du en mer beskrivande förklaring till varför den fasta kompensationen gavs till en medarbetare eller ändrades.
 
-### <a name="enroll-the-employee"></a>Ta med anställd
+### Ta med anställd
+<a id="enroll-the-employee" class="xliff"></a>
 
 Nu kan du koppla en medarbetare till en plan för fast kompensation. Öppna sidan **Medarbetare** och välj den medarbetare som du vill lägga till i kompensationsplanen. Klicka på **Kompensation** &gt; **Fast plan** i åtgärdsfönstret. Du kan nu skapa en ny åtgärd för fast kompensation för denna medarbetare. 
 
@@ -103,7 +114,8 @@ Nu kan du koppla en medarbetare till en plan för fast kompensation. Öppna sida
 
 Systemet kontrollerar att kompensationsbeloppet som anges för en kompensationsplan av typen grad eller band ligger mellan minimi- och maximireferenspunkterna för en viss kompensationsnivå på medarbetarens jobb. Om kompensationsbeloppet ligger utanför det tillåtna intervallet, visas ett felmeddelande eller varningsmeddela, beroende på den toleransnivå som anges i planen för fast kompensation.
 
-<a name="see-also"></a>Se även
+Se även
+<a id="see-also" class="xliff"></a>
 --------
 
 [Kompensationsplaner](compensation-plans.md)

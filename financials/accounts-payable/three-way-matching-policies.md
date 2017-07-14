@@ -3,15 +3,15 @@ title: "Trevägsmatchningspolicyer"
 description: "Den här artikeln innehåller exempel på trevägsmatchning."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: VendInvoicePostingHistory
 audience: Application User
-ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: twheeloc
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 2761
 ms.assetid: 70f3cb1a-18b7-4474-95ec-28b2410dd8f8
 ms.search.region: Global
@@ -19,22 +19,24 @@ ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: b9f66a9a907cf01046c78677a3f1d55f112fa8c7
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 8ae07088fec05ad416ce1891dd0d0ecd489364ca
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="three-way-matching-policies"></a>Trevägsmatchningspolicyer
+# Trevägsmatchningspolicyer
+<a id="three-way-matching-policies" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
 Den här artikeln innehåller exempel på trevägsmatchning.
 
-<a name="example-three-way-matching-for-items"></a>Exempel: trevägsmatchning för artiklar
+Exempel: trevägsmatchning för artiklar
+<a id="example-three-way-matching-for-items" class="xliff"></a>
 -------------------------------------
 
 **Sammanfattning:** Ken är kontrollant på högkvarteret för av en juridisk person som heter Fabrikam. Ken bestämmer att alla leverantörsfakturor som baseras på inköpsorder ska matchas med inköpsorder (tvåvägsmatchning). Vid inköp av artiklar som ska användas som anläggningstillgångar, fakturor ska matchas med både inköpsorderrader och produktinleveransrader (trevägsmatchning).
@@ -47,7 +49,8 @@ Fakturamatchningpolicyerna i det här exemplet hjälper människor i följande r
 -   Phyllis och April är redovisningchefer på ekonomiavdelningen i Fabrikams amerikanska avdelning. De kan tillämpa företagets policy och kontrollera att fakturor betalas, endast efter att fakturorna matchas med inköpsordern och mottagning av varor och tjänster.
 -   Tony är produktionchefen för Fabrikams amerikanska avdelning. Han och annan produktionpersonal kan kontrollera att artiklar tas emot som de har beställts från leverantörerna och dessutom bokförs så att personalen har vad de behöver för att kunna utföra sitt arbete.
 
-### <a name="prerequisites"></a>Förutsättningar
+### Förutsättningar
+<a id="prerequisites" class="xliff"></a>
 
 -   Ken anger matchningspolicyn på juridisk personnivån till trevägsmatchning.
 -   Ken anger Automatiskt uppdatering av växling av huvudmatchningsstatus för den juridiska personen till Ja.
@@ -61,12 +64,13 @@ Fakturamatchningpolicyerna i det här exemplet hjälper människor i följande r
 
 -   Arnie, en kundreskontraansvarig på Contoso, granskar veckans försändelser. Arnie väljer försändelsetransaktioner för att fakturera Fabrikam för leverans av CNC Milicron-datorerna. Arnie inkluderar en avgift för distribution och hantering. Fabrikam ska beakta om avgiften ska ingå i kostnaden för tillgången.
 
-### <a name="scenario"></a>Scenario
+### Scenario
+<a id="scenario" class="xliff"></a>
 
 1.  Sammy, en anställd på inleveransavdelninen på Fabrikam, tar emot den totala kvantiteten av datorer som levereras från Contoso. Han anger en kvantitet på 5 på en produktinleverans. Eftersom inköpsordern har inlevererats helt, ändras statusen för inköpsordern till Inlevererad.
 2.  April, leverantörsreskontrakoordinatorn på Fabrikam, matar in och verifierar fakturan som skickas in av Contoso. Hon verifierar följande information:
     -   För artiklar, som kräver trevägsmatchning, matchar kvantiteten på fakturaraden den kvantitet som har tagits emot. Den mottagna kvantiteten anges på produktinleveransen som är matchad till fakturan.
-    -   För artiklar som kräver tvåvägs- eller trevägsmatchning ligger priserna på fakturaraden inom toleranserna som definieras i Microsoft Dynamics 365 for Operations. Detta omfattar följande typer av prismatchning:
+    -   För artiklar som kräver tvåvägs- eller trevägsmatchning ligger priserna på fakturaraden inom toleranserna som definieras i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Detta omfattar följande typer av prismatchning:
         -   Matchning av nettopris – Nettopriset per enhet på fakturaraden matchar nettopriset per enhet på inköpsorderraden, inom toleransprocenten. I det här exemplet är nettoenhetspristoleransen +8 %.
         -   Matchning av prissummor – Nettobelopp per enhet på fakturaraden matchar nettobelopp per enhet på inköpsorderraden, inom toleransprocenten, belopp eller procentsats och belopp.  I det här exemplet är toleransen för matchning av prissummor +15 %.
 
@@ -79,7 +83,7 @@ Pappersfakturan från Contoso innehåller följande information.
 | Skatt                         |          |            | 0,00       |
 | Totalt                       |          |            | 44 500,00  |
 
-I Microsoft Dynamics 365 for Operations omfattar fakturaraden följande information.
+I Finance and Operations omfattar fakturaraden följande information:
 
 | Artikelnummer                 | Kvantitet | Enhetspris | Nettobelopp för rad | Matchningspolicy    | Matchning av kvantitet för produktinleverans | Prismatchning | Prissummematchning |
 |-----------------------------|----------|------------|-----------------|--------------------|--------------------------------|-------------|-------------------|
@@ -87,7 +91,8 @@ I Microsoft Dynamics 365 for Operations omfattar fakturaraden följande informat
 
 Eftersom denna rad genomgår fakturamatchningprocessen, kan fakturan bokföras.
 
-## <a name="example-three-way-matching-for-item-and-vendor-combinations"></a> Exempel: Trevägsmatchning för artikel- och leverantörskombinationer
+##  Exempel: Trevägsmatchning för artikel- och leverantörskombinationer
+<a id="example-three-way-matching-for-item-and-vendor-combinations" class="xliff"></a>
 Sammanfattning: Ken är kontrollant på högkvarteret för av en juridisk person som heter Fabrikam. Ken bestämmer att alla fakturor som baseras på inköpsorder ska matchas med inköpsorder (tvåvägsmatchning). Cassie är bokföringsansvarig på Fabrikans malaysiska avdelning. Hon anger att valda artiklar som har beställts från vissa leverantörer i Malaysia ska matchas med både inköpsorderrad och produktinleveransrader (trevägsmatchning). Hon kan också åsidosätta matchningspolicyn till en högre nivå för att matcha för specifika inköpsorder. 
 
 Volymen och beloppen är små och det har funnit har problem vid leverans från alla leverantörer i Malaysia. Av denna anledning anger Cassie kontrollnivån för vissa artiklar och leverantörskombinationer som anskaffas i Malaysia till trevägsmatchning. 
@@ -96,7 +101,8 @@ Fakturamatchningpolicyerna i det här exemplet hjälper människor i följande r
 -   Ken är kontrollanten för företaget Fabrikam. Han kan hjälpa människor i sin organisation att identifiera och korrigera problem med beställning, mottagning och betalning av artiklar (varor och tjänster) från leverantörer.
 -   Cassie är bokföringsansvarig för Fabrikans malaysiska avdelning. Hon kan tillämpa företagets policy och kontrollera att fakturor betalas, endast efter att de matchas med inköpsorderrader och produktinleveranser som representerar inleverans av varor och tjänster. Hon kan även öka kontrollnivån för trevägsmatchning för specifika artiklar för att kontrollera driftskostnader.
 
-### <a name="prerequisites"></a>Förutsättningar
+### Förutsättningar
+<a id="prerequisites" class="xliff"></a>
 
 -   Ken anger matchningspolicyn på juridisk personnivån till tvåmatchning.
 -   Ken anger fältet Matchprissummor för den juridiska personen till Procentsats och anger 10 % som toleransprocent.
@@ -110,12 +116,13 @@ Fakturamatchningpolicyerna i det här exemplet hjälper människor i följande r
     | MM01 – Trådlös mus | 2        | 40,00      | 80,00      | Tvåvägsmatchning                | Trevägsmatchning                           |
     | USB-enhet             | 200      | 10,00      | 2 000,00   | Tvåvägsmatchning                | Tvåvägsmatchning                             |
 
-### <a name="scenario"></a>Scenario
+### Scenario
+<a id="scenario" class="xliff"></a>
 
 1.  Artiklarna har levererats. Sammy, en anställd på inleveransavdelningen på Fabrikans malysiska avdelning, blir störd och bokför inte produktinleveransen på en gång.
 2.  April, leverantörsreskontrakoordinatorn på Fabrikam, matar in och verifierar fakturan som skickas in av Contoso. Hon verifierar följande information:
     -   För artiklar, som kräver trevägsmatchning, matchar kvantiteten på fakturaraden den kvantitet som har tagits emot. Den mottagna kvantiteten anges på produktinleveransen som är matchad till fakturan.
-    -   För artiklar som kräver tvåvägs- eller trevägsmatchning ligger priserna på fakturaraden inom toleranserna som definieras i Microsoft Dynamics 365 for Operations. Detta omfattar följande typer av prismatchning:
+    -   För artiklar som kräver tvåvägs- eller trevägsmatchning ligger priserna på fakturaraden inom toleranserna som definieras i Finance and Operations. Detta omfattar följande typer av prismatchning:
         -   Matchning av nettopris – Nettopriset per enhet på fakturaraden matchar nettopriset per enhet på inköpsorderraden, inom toleransprocenten. I det här exemplet är nettoenhetspristoleransen +2 %.
         -   Matchning av prissummor – Nettobelopp per enhet på fakturaraden matchar nettobelopp per enhet på inköpsorderraden, inom toleransprocenten, belopp eller procentsats och belopp.  I det här exemplet är toleransen för matchning av prissummor +10 %.
 
@@ -128,7 +135,7 @@ Pappersfakturan från Contoso innehåller följande information.
 | USB-enhet             | 200      | 10,05      | 2 010,00   |
 | Total faktura         |          |            | 7 092,00   |
 
-I Microsoft Dynamics 365 for Operations omfattar fakturaraden följande information.
+I Finance and Operations omfattar fakturaraden följande information:
 
 | Artikelnummer           | Kvantitet | Enhetspris | Nettobelopp för rad | Matchningspolicy    | Matchning av kvantitet för produktinleverans | Prismatchning | Prissummematchning |
 |-----------------------|----------|------------|-----------------|--------------------|--------------------------------|-------------|-------------------|

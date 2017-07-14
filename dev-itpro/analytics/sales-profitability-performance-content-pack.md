@@ -1,15 +1,15 @@
 ---
 title: "Innehållspaket för försäljnings- och lönsamhetsprestanda för Power BI"
-description: "Det här avsnittet beskriver vad som ingår i Dynamics 365 or Operations – Innehållspaket för försäljnings- och lönsamhetsprestanda för Microsoft Power BI. Det förklarar åtkomst rapporterna som är inkluderade i innehållspaketet, samt ger dig information om den datamodell och de enheter som användes för att skapa innehållspaketet."
+description: "Det här avsnittet beskriver vad som ingår i Microsoft Power BI-innehållet Försäljnings- och lönsamhetsresultat. Det förklarar hur du öppnar Power BI-rapporter och ger information datamodellen och de enheter som används för att skapa innehållet."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
-audience: Application User
-ms.search.scope: Operations, Core
+audience: Application User, IT Pro
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 260674
 ms.assetid: ab457f02-929e-4d34-b813-335be3092287
 ms.search.region: Global
@@ -17,45 +17,49 @@ ms.author: omulvad
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 357f7071d801b13518c83170f8d0e7946dd9dede
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 16fef86e330a392ddd888fcb46060c3e1efa87c5
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="sales-and-profitability-performance-power-bi-content"></a>Innehållspaket för försäljnings- och lönsamhetsprestanda för Power BI
+# Innehållspaket för försäljnings- och lönsamhetsprestanda för Power BI
+<a id="sales-and-profitability-performance-power-bi-content" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
+Det här avsnittet beskriver vad som ingår i Microsoft Power BI-innehållet **Försäljnings- och lönsamhetsresultat**. Det förklarar hur du öppnar Power BI-rapporter och ger information datamodellen och de enheter som används för att skapa innehållet.
 
-Det här avsnittet beskriver vad som ingår i Dynamics 365 or Operations – Innehållspaket för försäljnings- och lönsamhetsprestanda för Microsoft Power BI. Det förklarar åtkomst rapporterna som är inkluderade i innehållspaketet, samt ger dig information om den datamodell och de enheter som användes för att skapa innehållspaketet.
+## Översikt
+<a id="overview" class="xliff"></a>
 
-<a name="overview"></a>Översikt
---------
+Power BI-innehållet **Försäljnings- och lönsamhetsresultat** skapades så att försäljningschefer kan övervaka viktiga försäljningsmått på omsättning, bruttovinst och vinstmarginaler. Den använder försäljningstransaktionsdata och ger både en sammanfattning av de företagsomspännande försäljningsuppgifterna och en fördelning av försäljningsprestanda för kunder och produkter.
 
-Det här innehållet skapades för försäljningschef vill övervaka viktiga försäljningsmått av omsättning, bruttovinst och vinstmarginaler. Den använder försäljningstransaktionsdata från Dynamics 365 for Operations och ger både en sammanfattning av de företagsomspännande försäljningsuppgifterna och en fördelning av försäljningsprestanda för kunder och produkter. Genom att markera ändringar i intäkter och vinstökning med tiden kan rapporter användas för att avisera chefer om positiva och negativa trender för enskilda kunder och produkter. Kategori och regionala chefer kommer att tycka att det är praktiskt att ha diagram som jämför intäkt och lönsamhet för olika produktkategorier och kundgrupper till varandra för att kan sortera ut eftersläntrare och ledare. En omfattande rapport som visar individuella kunders intäkt jämfört med kontoansvarigas vinstmarginal som ger en grund för säkerhetskopierade data att anpassa deras marknadsföringsansträngningar i respektive profil för varje kund. Innehållspaketet för försäljnings- och lönsamhetsresultat låter försäljningsansvariga analysera försäljningsresultat per:
+Rapporterna visar ändringar i ökade intäkter och vinst över tid. De kan därför användas för att uppmärksamma chefer på positiva och negativa utgiftstrender för enskilda kunder och produkter. Diagram jämför dessutom intäkt och lönsamhet för olika produktkategorier och kundgrupper med varandra. Därför kan kategori- och regionala chefer identifiera eftersläntrare och ledare. En sammanfattande rapport visar dessutom en kunds intäkter och vinstmarginal. Kontoansvariga kan därför ha säkerhetskopierade data som en grund. Dessa kan de använda för att finjustera sina insatser med försäljning och marknadsföringsförsök för varje kundprofil. 
+
+Innehållet **Försäljnings- och lönsamhetsresultat** låter försäljningsansvariga analysera försäljningsresultat på följande sätt:
 
 -   Intäkt, för innevarande år (efter kundgrupp och enskilda kunder, försäljningskategorier och enskilda produkter och områden)
 -   Ändring av intäkter, årsbasis (efter kundregion och försäljningskategori)
 
-Lönsamhet kan analyseras med:
+Lönsamhet kan analyseras på följande sätt:
 
 -   Bruttovinst och vinstmarginal (efter kundgrupper och produktförsäljningskategorier)
 -   Bruttovinständring, årsbasis
 -   Kundlönsamhet (efter intäkt jämfört med bruttomarginal)
 
-## <a name="accessing-the-content-pack"></a>Åtkomst till innehållspaketet
-Innehållspaket för försäljnings- och lönsamhetsprestanda för Microsoft Power BI. har publicerats som en implementeringstillgång i Lifecycle Services (LCS) och kan nås från Dynamics 365 for Operations. Mer information om hur du öppnar och startar Power BI-rapporter finns i [Power BI-innehåll i LCS från Microsoft och din partner](power-bi-content-microsoft-partners.md).
-**Obs!** KB 4011327 är ett krav för hans Power BI-innehåll. När du loggar in till Lifecycle Services får du åtkomst till KB här: <a href="https://fix.lcs.dynamics.com/issue/results/?q=kb4011327">https://fix.lcs.dynamics.com/issue/results/?q=kb4011327</a>.
+## Åtkomst till Power BI-innehåll
+<a id="accessing-the-power-bi-content" class="xliff"></a>
+Om du använder Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, uppdatering juli 2017 visas Power BI-innehållet **Försäljnings- och lönsamhetsresultat** på sidan **Försäljnings- och lönsamhetsresultat** (**Försäljning och marknadsföring** > **Förfrågningar och rapporter** > **Säljprestandaanalys** > **Försäljnings- och lönsamhetsresultat**). 
 
-## <a name="metrics-included-in-the-content-pack"></a>Mått inkluderade i innehållspaketet
-Innehållspaketet innehåller en rapport som består av en uppsättning mått som visas som diagram, paneler och register. Nedanstående register ger en översikt över de visualiseringar som används i innehållspaketet.
+## Mått som ingår i Power BI-innehållet
+<a id="metrics-that-are-included-in-the-power-bi-content" class="xliff"></a>
+Power BI-innehållet **Försäljnings- och lönsamhetsresultat** omfattar en rapport som består av en uppsättning mått. De här måtten visas som diagram, paneler och tabeller. Nedanstående tabell ger en översikt över de visualiseringar som används i innehållet.
 
-|                        |                                            |                                                         |
+| Rapportsida            | Diagram                                     | Paneler                                                   |
 |------------------------|--------------------------------------------|---------------------------------------------------------|
-| **Rapportsida**        | **Diagram**                                 | **Paneler**                                               |
 | Intäkter per kund    | Bästa 10 kunderna per intäkt                | Total intäkt                                           |
 |                        | Total intäkt per kund            | YOY vinstökning                                      |
 |                        | Genomsnittlig kundintäkt per kundgrupp | Bruttomarginal                                            |
@@ -76,47 +80,48 @@ Innehållspaketet innehåller en rapport som består av en uppsättning mått so
 
 \*Intäkter detta och förra året och tillväxt per försäljningskategori.
 
-## <a name="understanding-the-data-model-and-entities"></a>Förstå datamodellen och enheterna
-Dynamics 365 for Operations-data används för att fylla i rapportsidorna i Innehållspaketet för försäljnings- och lönsamhetsresultat. Detta visas som sammansatta mått som mellanlagras i enhetsarkivet, som är en Microsoft SQL-databas som är optimerad för analys. Läs mer om detta i bloggen [Power BI-integration med enhetsbutik i Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/). De sammanlagda måtten i det här innehållspaketet är del av de sammanlagda mått som fanns i Sales Cube i Dynamics AX 2012 och AX 2012 R3. För att förbereda kubens sammanlagda mått i enhetsbutiken måste du göra dem driftfärdiga. Mer information finns i proceduren om hur du mellanlagrar sammanlagda mått i enhetsbutiken i bloggen [Power BI-integration med enhetsbutik i Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/). Följande sammanlagda huvudmått av fakturaradenheten används till grund för innehållspaketet:
+## Utöka Power BI-innehåll
+<a id="extending-the-power-bi-content" class="xliff"></a>
+Genom att använda innehållspaket som är tillgängliga i Microsoft Dynamics Lifecycle Services (LCS) kan du ge bra analyser till människor som inte är inloggade i Microsoft Dynamics 365. Du kan ändra dessa innehållspaket så att de innehåller andra rapporter och modeller och publicera innehållspaket till din Power BI.com-innehavare för analys.
 
-|               |                                              |                                                 |                                              |                                          |
-|---------------|----------------------------------------------|-------------------------------------------------|----------------------------------------------|------------------------------------------|
-| **Enhet**    | **Sammanlagda huvudmått**               | **Datakälla för Dynamics 365 for Operations** | **Fält**                                    | **Beskrivning**                          |
-| Fakturarader | Intäkt                                      | CustInvoiceTrans                                | SUM(LineAmountMST)                           | Belopp i redovisningsvaluta            |
-|               | Kostnader för sålda varor                           | InventTrans                                     | Summa (CostAmountPosted + CostAmountAdjustment) | Kostnadsbelopp + justering                 |
-|               | Provisionsradbelopp - redovisningsvaluta | CustInvoiceTrans                                | SUM(CommissAmountMST)                        | Provisionsradbelopp i redovisningsvaluta |
+Du hittar Power BI-innehåll för **Försäljnings- och lönsamhetsresultat** i biblioteket Gemensamma tillgångar i LCS. Mer information om hur du laddar ned innehållspaket och använder det i din organisation finns i [Power BI-innehåll i LCS från Microsoft och dina partner](power-bi-content-microsoft-partners.md). Om du vill se en demonstration som visar hur du implementerar Power BI-innehållet, se [Power BI-innehåll från Microsoft och dina samarbetspartners i Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office mix.
 
-Följande tabell visar hur viktiga sammanlagda mått av fakturaradenheten som används för att skapa flera beräknade mått i innehållspaketets datauppsättning.
+Hämta innehållet för **Försäljnings- och lönsamhetsresultat** som gäller för den version av Dynamics 365 som du använder.
 
-|                   |                                                                                                  |
+> [!NOTE]
+> Om du använder Microsoft Dynamics 365 for Operations version 1611 krävs KB 4011327 för detta Power BI-innehåll. När du loggar in på LCS får du åtkomst till KB här: https://fix.lcs.dynamics.com/issue/results/?q=kb4011327.
+
+## Förstå datamodellen och enheterna
+<a id="understanding-the-data-model-and-entities" class="xliff"></a>
+Följande data används för att fylla i rapportsidorna Power-Bi-innehållet **Försäljnings- och lönsamhetsresultat**. Informationen visas som sammansatta mått som mellanlagras i Enhetslagring. Enhetslagring är en Microsoft SQL Server-databas som är optimerad för analys. Mer information finns i [Översikt för Power BI-integrering med enhetsarkiv](power-bi-integration-entity-store.md). 
+
+De sammanlagda måtten i det här innehållet är del av de sammanlagda måtten som fanns i Sales Cube in Microsoft Dynamics AX 2012 and Microsoft Dynamics AX 2012 R3. För att förbereda kubens sammanlagda mått i Enhetslagring måste du göra dem driftfärdiga. Mer information finns i proceduren för mellanlagring av sammanlagda mått i enhetsbutiken i blogginlägget [Power BI-integration med enhetsbutik i Dynamics](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/). 
+
+Följande huvudaggregatmått för fakturaradsenheter används som grund för innehållet:
+
+| Enhet        | Sammanlagda huvudmått                   | Datakälla för Dynamics 365                    | Fält                                        | beskrivning                                   |
+|---------------|----------------------------------------------|-------------------------------------------------|----------------------------------------------|----------------------------------------------|
+| Fakturarader | Intäkt                                      | CustInvoiceTrans                                | SUM(LineAmountMST)                           | Belopp i redovisningsvalutan.            |
+|               | Kostnader för sålda varor                           | InventTrans                                     | Summa (CostAmountPosted + CostAmountAdjustment) | Summan av kostnadsbeloppet och justeringen.    |
+|               | Provisionsradbelopp - redovisningsvaluta | CustInvoiceTrans                                | SUM(CommissAmountMST)                        | Provionsbeloppet i redovisningsvalutan. |
+
+Följande tabell visar de sammanlagda mått för fakturaradenheten som används för att skapa flera beräknade mått i innehållets datauppsättning.
+
+| Mått           | Beräkning                                                                                      |
 |-------------------|--------------------------------------------------------------------------------------------------|
-| **Mått**       | **Beräknat som**                                                                                |
 | Bruttovinst      | SUM(Intäkt - COGS - Provision - Moms (som ingår i radbelopp på kundfaktura)           |
 | Bruttomarginal      | SUM(Bruttovinst - COGS - Provision - Moms (som ingår i radbelopp på kundfaktura)              |
 | Intäkt ifjol | Intäkt ifjol = BERÄKNA(SUM('Fakturarader'\[intäkter\]), SAMMAPERIODSOMFÖRRAÅRET(datum\[datum\]) |
 
-Följande huvuddimensioner används som filter i **Försäljningskuben** för att dela upp de sammanlagda måtten i syfte att uppnå en förbättrad nivå och ge djupare analysinsikter.
+Följande tabell visar nyckeldimensionerna i försäljningskuben som används som filter för att dela upp de sammanlagda måtten så att du kan uppnå bättre nivåer och få djupare analysinsikter.
 
-|                  |                                                      |
+| Enhet           | Exempel på attribut                               |
 |------------------|------------------------------------------------------|
-| **Enhet**       | **Exempel på attribut**                           |
 | Kunder        | Kundgrupper, kundregioner, adress, bransch |
 | Produkter         | Produktnummer, produktnamn, artikelgruppsnamn       |
 | Försäljningskategorier | Namn på försäljningskategori                                 |
 | Juridiska personer   | Namn på juridisk person                                   |
 | Datum            | Datum                                                |
 
-Normalt visar innehållspaket data för det aktuella kalenderåret, men du kan öppna avsnittet rapportfilter och ändra datumfiltret. Du kan också ändra filtret för företaget.
-
-## <a name="additional-resources"></a>Ytterligare resurser
-Nedan följer några användbara länkar som är relaterade till enheter och till att skapa innehåll för Power BI:
-
--   [Datatabeller](..\data-entities\data-entities.md)
--   [Skapa innehållspaket för organisationer](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
--   [Datamodeller med hjälp av Power BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
--   [Lägga till Power BI-rutor till arbetsytor](configure-power-bi-integration.md)
-
-
-
-
+Som standard visar innehållet data för det aktuella kalenderåret. Du kan dock ändra filtret i datumavsnittet i rapportfilteravsnittet. Du kan också ändra filtret för företaget.
 

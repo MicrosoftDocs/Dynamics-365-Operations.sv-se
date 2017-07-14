@@ -1,16 +1,16 @@
 ---
 title: "Översikt över kvalitetshantering"
-description: "Det här avsnittet beskriver hur du kan använda kvalitetshantering i Microsoft Dynamics 365 for Operations för att förbättra produktens kvalitet inom din leveranskedja."
+description: "Det här avsnittet beskriver hur du kan använda kvalitetshantering i Microsoft Dynamics 365 for Finance and Operations för att förbättra produktens kvalitet inom din leveranskedja."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventTestAssociationTable, InventTestGroup, InventTestItemQualityGroup, InventTestTable, InventTestVariable, InventTestVariableOutcome
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 94003
 ms.assetid: a1d9417b-268f-4334-8ab6-8499d6c3acf0
 ms.search.region: Global
@@ -19,28 +19,30 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: bb3f36bb425adffa7e055eba4e8732866cb67c49
+ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
+ms.openlocfilehash: 255035bf13155190e59088a7f64f798c7462b885
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
 
-# <a name="quality-management-overview"></a>Översikt över kvalitetshantering
+# Översikt över kvalitetshantering
+<a id="quality-management-overview" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-Det här avsnittet beskriver hur du kan använda kvalitetshantering i Microsoft Dynamics 365 for Operations för att förbättra produktens kvalitet inom din leveranskedja.
+Det här avsnittet beskriver hur du kan använda kvalitetshantering i Microsoft Dynamics 365 for Finance and Operations för att förbättra produktens kvalitet inom din leveranskedja.
 
-Kvalitetshantering kan hjälpa dig att hantera handläggningstider när du hanterar avvikande produkter, oavsett ursprungspunkten. Eftersom diagnostiktyper länkas till korrigeringsrapporteringen kan Microsoft Dynamics 365 for Operations planera uppgifter för att korrigera problem och hindra dem från att återkomma.
+Kvalitetshantering kan hjälpa dig att hantera handläggningstider när du hanterar avvikande produkter, oavsett ursprungspunkten. Eftersom diagnostiktyper länkas till korrigeringsrapporteringen kan Microsoft Dynamics 365 for Finance and Operations planera uppgifter för att korrigera problem och hindra dem från att återkomma.
 
 Förutom funktioner för att hantera avvikelser inkluderar kvalitetshantering funktioner för att spåra problem efter problemtyp (även interna problem), och för att identifiera lösningar som kortsiktiga och långsiktiga. Statistik om KPI:er (Key Performance Indicator) ger insyn i historiken över tidigare avvikelseproblem och lösningarna som användes för att korrigera dem. Du kan använda historiska data om du vill granska effektiviteten hos tidigare kvalitetsmått och bestämma lämpliga mått som ska användas i framtiden.
 
-När du ställer in en kvalitetsassociation kan Microsoft Dynamics 365 for Operations skapa kvalitetsorder för olika affärsprocesser, händelser och villkor. Kvalitetsassociationen kan omfatta en viss artikel, en specifik grupp artiklar eller alla artiklar.
+När du ställer in en kvalitetsassociation kan Finance and Operations skapa kvalitetsorder för olika affärsprocesser, händelser och villkor. Kvalitetsassociationen kan omfatta en viss artikel, en specifik grupp artiklar eller alla artiklar.
 
-## <a name="examples-of-the-use-of-quality-management"></a>Exempel på användningen av kvalitetshantering
+## Exempel på användningen av kvalitetshantering
+<a id="examples-of-the-use-of-quality-management" class="xliff"></a>
 Kvalitetshanteringen är flexibel och kan implementeras på olika sätt för att uppfylla kraven för specifika nivåer i distributionskedjeåtgärder. Följande exempel illustrerar hur dessa funktioner kan användas:
 
 -   Starta automatiskt en kvalitetskontrollprocess baserat på fördefinierade villkor (vid lagerställeregistrering av en inköpsorder från en viss leverantör.)
@@ -50,7 +52,8 @@ Kvalitetshanteringen är flexibel och kan implementeras på olika sätt för att
 -   Ange en godtagbar kvalitetsnivå (AQL) för att kontrollera toleranserna för kvalitetsmått.
 -   Ange resurser som en inspektionsåtgärd kräver, till exempel ett testområde och testinstrument.
 
-## <a name="working-with-quality-associations"></a>Arbeta med kvalitetsassociationer
+## Arbeta med kvalitetsassociationer
+<a id="working-with-quality-associations" class="xliff"></a>
 Affärsprocessen som använder en kvalitetsassociation kan relateras till olika källdokument, till exempel inköpsorder, försäljningsorder eller produktionsorder. 
 
 Varje kvalitetsassociationspost definierar testuppsättningarna, den godtagbara kvalitetsnivån och provtagningsplanen som gäller genererade kvalitetsorder. Du måste definiera en kvalitetsassociationspost för varje variant i en affärsprocess. Du kan till exempel ställa in en kvalitetsassociation som genererar en kvalitetsorder när en produktinleverans för en inköpsorder uppdateras. Beroende på inställningen för körningsplanen kan själva utlösarprocessen spärras medan det finns en öppen kvalitetsorder, eller så kan de efterföljande processerna, till exempel fakturering av inköpsorder, spärras. 
@@ -295,7 +298,8 @@ Följande register innehåller mer information om hur kvalitetsorder kan generer
 </tbody>
 </table>
 
-## <a name="quality-management-pages"></a>Kvalitetshanteringssidor
+## Kvalitetshanteringssidor
+<a id="quality-management-pages" class="xliff"></a>
 <table>
 <colgroup>
 <col width="33%" />
@@ -356,7 +360,8 @@ Du måste definiera en kvalitetsassociation för varje variant i en affärsproce
 
 
 
-<a name="see-also"></a>Se även
+Se även
+<a id="see-also" class="xliff"></a>
 --------
 
 [Kvalitetshanteringsprocesser](quality-management-processes.md)

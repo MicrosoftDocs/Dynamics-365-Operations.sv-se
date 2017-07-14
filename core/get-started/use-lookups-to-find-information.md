@@ -1,15 +1,15 @@
 ---
 title: "Använda sökningar för att söka efter information"
-description: "I Microsoft Dynamics 365 for Operations har många fält sökningar som hjälper dig att enkelt hitta rätt eller önskat värde. Flera förbättringar har lagts till sökningar för att göra dessa kontroller mer användbara och göra användarna mer produktiva. I det här avsnittet lär du dig om dessa nya sökningsfunktionerna och du får några användbara tips för att få optimal användning av sökningar i systemet."
+description: "I Microsoft Dynamics 365 for Finance and Operations har många fält sökningar som hjälper dig att enkelt hitta rätt eller önskat värde. Flera förbättringar har lagts till sökningar för att göra dessa kontroller mer användbara och göra användarna mer produktiva. I det här avsnittet lär du dig om dessa nya sökningsfunktionerna och du får några användbara tips för att få optimal användning av sökningar i systemet."
 author: jasongre
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 269934
 ms.assetid: f20cbd2c-14e0-47e7-b351-8e60d3537f96
 ms.search.region: Global
@@ -17,25 +17,27 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 652fbdb7a96c516ca1fc17357683d94b85cd93f3
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: a5d0a9edd2cb5747fc799c6fdca45dd9ba5720f7
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="use-lookups-to-find-information"></a>Använda sökningar för att söka efter information
+# Använda sökningar för att söka efter information
+<a id="use-lookups-to-find-information" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-I Microsoft Dynamics 365 for Operations har många fält sökningar som hjälper dig att enkelt hitta rätt eller önskat värde. Flera förbättringar har lagts till sökningar för att göra dessa kontroller mer användbara och göra användarna mer produktiva. I det här avsnittet lär du dig om dessa nya sökningsfunktionerna och du får några användbara tips för att få optimal användning av sökningar i systemet.  
+I Microsoft Dynamics 365 for Finance and Operations har många fält sökningar som hjälper dig att enkelt hitta rätt eller önskat värde. Flera förbättringar har lagts till sökningar för att göra dessa kontroller mer användbara och göra användarna mer produktiva. I det här avsnittet lär du dig om dessa nya sökningsfunktionerna och du får några användbara tips för att få optimal användning av sökningar i systemet.  
 
-<a name="responsive-lookups"></a>Responsiv sökning
+Responsiv sökning
+<a id="responsive-lookups" class="xliff"></a>
 ------------------
 
-I tidigare versioner av Dynamics 365 for Operations när du kommunicerar med en sökkontroll skulle användarna behöva göra en explicit åtgärd för att öppna den nedrullningsbara menyn. Detta kan ha uppstått genom att skriva en asterisk (\*) i kontrollen för att filtrera sökningen baserat på det aktuella värdet för kontrollen eller genom att använda kortkommandot **Alt**+**nedpil**. Sökningskontroller har ändrats så att de bättre överensstämmer med gällande praxis för webbplatsen:
+I tidigare versioner av Finance and Operations, när du kommunicerar med en sökkontroll, var användaren tvungen att vidta en explicit åtgärd för att öppna den nedrullningsbara menyn. Detta kan ha uppstått genom att skriva en asterisk (\*) i kontrollen för att filtrera sökningen baserat på det aktuella värdet för kontrollen eller genom att använda kortkommandot **Alt**+**nedpil**. Sökningskontroller har ändrats så att de bättre överensstämmer med gällande praxis för webbplatsen:
 
 -   De nedrullningsbara menyerna för sökning ska nu öppnas automatiskt efter en liten paus i skrivandet med det nedrullningsbara menyinnehållet filtrerat efter sökningkontrollens värde.
     -   Observera att den gamla funktionen hos den nedrullningsbara listan som automatiskt öppnas när du har skrivit en asterisk (\*) har ersatts.
@@ -57,8 +59,9 @@ Nu är markören kvar i sökfältet. Om du fortsätter att skriva så att värde
 
 ![changingSelectionLookup](./media/changingselectionlookup.png)
 
-## <a name="typing-in-more-than-ids"></a>Skriva i mer än ett ID-nummer
-När du anger data är det naturligt för en användare att försöka identifiera en enhet, till exempel en kund eller leverantör med avseende på namnet i stället för en identifierare som representerar enheten. I den aktuella versionen av Dynamics 365 for Operations, är många (men inte alla) sökningar nu sammanhangsberoende. Denna kraftfulla funktion låter användaren ange ID-numret eller det motsvarande namnet i sökningskontrollen. 
+## Skriva i mer än ett ID-nummer
+<a id="typing-in-more-than-ids" class="xliff"></a>
+När du anger data är det naturligt för en användare att försöka identifiera en enhet, till exempel en kund eller leverantör med avseende på namnet i stället för en identifierare som representerar enheten. I den aktuella versionen av Finance and Operations är många (men inte alla) tillåter sökningar nu sammanhangsberoende datainmatning. Denna kraftfulla funktion låter användaren ange ID-numret eller det motsvarande namnet i sökningskontrollen. 
 
 Beakta till exempel fältet **Kundkonto** när du skapar en försäljningsorder. Det här fältet visar den **Konto-ID** för kunden, men en användare skulle normalt föredra att ange **kontonamn** i stället för ett **konto-ID** för det här fältet när de skapar en försäljningsorder, som till exempel " Forest Wholesales" istället för "US-003".
 
@@ -70,7 +73,8 @@ Användaren kan emellertid också ange början på ett **kontonamn**. Om detta i
 
 [![Sammanhangsbaserad sökning när ett kundnamn har angetts](./media/howtocontextuallookups-2.png)](./media/howtocontextuallookups-2.png)
 
-## <a name="using-grid-column-headers-for-more-advanced-filtering-and-sorting"></a>Med hjälp av rutnätets kolumnrubriker för mer avancerad filtrering och sortering
+## Med hjälp av rutnätets kolumnrubriker för mer avancerad filtrering och sortering
+<a id="using-grid-column-headers-for-more-advanced-filtering-and-sorting" class="xliff"></a>
 Sökningsförbättringarna som beskrivs i de föregående punkterna förbättrar avsevärt användarnas möjlighet att navigera raderna i en sökning baserat på en "börjar med"-sökning i fältet **ID** eller **Namn**. Det finns dock situationer då mer avancerad filtrering (eller sortering) behövs för att hitta rätt rad. I sådana fall måste användaren använda alternativen för filtrering och sortering i rutnätets kolumnrubriker i sökningen. Anta exempelvis att en medarbetare registrerar en försäljningsorderrad som behöver hitta rätt "kabel" som produkt. Att skriva "kabel" i kontrollen **artikelnummer** hjälper inte eftersom det inte finns några produktnamn som börjar med "kabel". 
 
 ![emptyitemlookup](./media/emptyitemlookup.png) 

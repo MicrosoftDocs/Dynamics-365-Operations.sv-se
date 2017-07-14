@@ -1,16 +1,16 @@
 ---
-title: Hantera lagerarbetare
-description: "Denna artikel beskriver hur du kan använda Microsoft Dynamics AX för att hjälpa till att kontrollera och övervaka det arbete som utförs av anställda i ditt lager."
+title: "Hantera lagerställearbetare"
+description: "Denna artikel beskriver hur du kan använda Dynamics 365 for Finance and Operations för att hjälpa till att kontrollera och övervaka det arbete som utförs av anställda på dina lager."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: HcmWorker, InventLocation, WHSLaborStandards, WHSWorker, WHSWorkTable, WHSWorkTableListPage
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 72891
 ms.assetid: feaa6f15-49d2-41f5-9b87-453463c52e4e
 ms.search.region: Global
@@ -18,20 +18,21 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: b4e2cb91cac210a659f261c5fcabb5f3643cdbec
+ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
+ms.openlocfilehash: 52753c21862a2955e15140bb1cdb5ef6f6efe31a
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="manage-warehouse-workers"></a>Hantera lagerarbetare
+# Hantera lagerställearbetare
+<a id="manage-warehouse-workers" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-Denna artikel beskriver hur du kan använda Microsoft Dynamics AX för att hjälpa till att kontrollera och övervaka det arbete som utförs av anställda i ditt lager.
+Denna artikel beskriver hur du kan använda Microsoft Dynamics 365 for Finance and Operations, Enterprise edition för att hjälpa till att kontrollera och övervaka det arbete som utförs av anställda på dina lager.
 
 Om du använder funktionerna i lagerhantering, alla lagerarbetare operationer som *arbete*. Arbetet såsom plockning, flytta och räknar lagersaldot registreras med hjälp av mobila enheter. Innan en lagerarbetare kan utföra arbete, han eller hon måste vara associerad med en arbetstagare i mänskliga resurser. Varje **arbetstagare** kan ha flera lagerarbetet användare som är associerade med den. Dessa arbeten kan användarna arbeta i olika lager och kan ha olika nivåer av åtkomst till olika mobila enheten menyer. Du kan tänker av lagerarbetet användare som flera inloggningar för vald anställd. Varje användare har en standard lager, och specifika arbetsflöden exponeras genom menyerna tillgängliga alternativ som fungerar. 
 
@@ -39,12 +40,14 @@ För att skapa en ny arbetsorder användaren, på **arbetstagarnas** sida, på *
 
 Som en del av installationen för varje användare, kan du också definiera specifika process arbetsflöden. Du kan till exempel använda **Är ansvarig för rullande inventering** fältet för att ange huruvida användaren kan bearbeta justeringar av rullande inventerings avvikelser under en inventering, eller om dessa justeringar måste först granskas av en annan person.
 
-## <a name="defining-labor-standards"></a>Definiera arbetsnormer
+## Definiera arbetsnormer
+<a id="defining-labor-standards" class="xliff"></a>
 **Arbetsrätten** sidan kan du definiera de beräkningsmetoder som systemet använder för att beräkna det uppskattade tiden som en viss typ av arbete kräver. Denna definition kan ställas in på en allmän nivå eller på en viss nivå. Du kan t.ex. definiera tid som ska krävas för att bearbeta en försäljningsorder plocka per vikt för en specifik enhet definition när en viss plocka processen används. Samtidigt kan du registrera tid, baserat på en annan beräkningsmetod för putten av lagersaldot som plockas. 
 
 För att arbetsnormer som du definierat, måste du markera kryssrutan **Tillåt arbetsnormer** alternativ för varje lager där arbetsnormer skall användas.
 
-## <a name="monitoring-and-controlling-warehouse-work"></a>Övervakning och kontroll av lagerarbetet
+## Övervakning och kontroll av lagerarbetet
+<a id="monitoring-and-controlling-warehouse-work" class="xliff"></a>
 **Allt arbete på** sidan låter dig övervaka och underhålla allt arbete som är planerade, pågående och slutförda. Från den här sidan kan du uppdatera olika processer, såsom lagerarbetet användaren uppdrag och arbete prioriteras. Du kan också visa detaljer som är relaterade till arbetsordern huvudet och arbeta för att få en förståelse av den förväntade eller avslutad arbetsprocesser. 
 
 Om du aktiverar **arbetsnormer** , kan du se det beräknade beräknad tid för arbetet. När sedan arbetet är bearbetade, den faktiska tiden visas också för varje arbetsoperation. På detta sätt kan du jämföra den beräknade tiden beräkningar till aktuell tid. 

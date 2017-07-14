@@ -1,42 +1,45 @@
 ---
 title: Butikshierarkier
-description: "Den här artikeln beskriver butikshierarkierna i Microsoft Dynamics AX."
+description: "Den här artikeln beskriver butikshierarkierna i Microsoft Dynamics 365 for Retail."
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 15851
 ms.assetid: dfa11d41-2a0c-4cde-99b6-058c49176c94
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 2544b299267ec6e21adf5c657c23f545fc66a0b3
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: a425680fb4d2e2da8d96acd843694ea9a07e29f0
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
+
 
 
 ---
 
-# <a name="retail-hierarchies"></a>Butikshierarkier
+# Butikshierarkier
+<a id="retail-hierarchies" class="xliff"></a>
 
 [!include[banner](includes/banner.md)]
 
 
-Den här artikeln beskriver butikshierarkierna i Microsoft Dynamics AX.
+Den här artikeln beskriver butikshierarkierna i Microsoft Dynamics 365 for Retail.
 
 Du kan skapa en butikskategorihierarki för att strukturera de produkter som du säljer via butikskanaler. Du kan använda butiksprodukthierarkier för att kategorisera eller gruppera produkter. Du kan sedan använda dessa produkter om du vill skapa produktsortiment och kundbonusprogram. Du kan också tilldela produktattribut och egenskaper, tilldela en prissättningstruktur, inkludera produkter i produkterbjudanden och använda produkterna för rapportering. Du kan skapa en butikskategorihierarki som representerar alla produkter och kategorier i organisationen och använder sedan kategorihierarkin för flera syften. Du kan också skapa flera butikskategorihierarkier för särskilda syften, till exempel produkterbjudanden. När du skapar en Produkthierarki (butik), måste du tilldela en kategorihierarkityp för att identifiera syftet med kategorihierarkin. Om du till exempel om endast produkthierarkier som tilldelas typen **Butiksnavigeringshierarki** är refererade när du bläddrar i produkter efter kategori online eller på betalningsplatsen (POS).
 
-## <a name="retail-hierarchy-types"></a>Typ av butikshierarki
+## Typ av butikshierarki
+<a id="retail-hierarchy-types" class="xliff"></a>
 Följande tabell listar de tillgängliga kategorihierarkityperna och det allmänna syftet med varje typ.
 
 | Kategorihierarkityp       | Syfte                                                                                                                                                                                                                                                                                                            |

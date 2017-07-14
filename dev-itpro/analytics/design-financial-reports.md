@@ -1,16 +1,16 @@
 ---
 title: Visa och utforma ekonomiska rapporter
-description: "Denna artikel innehåller övningar som förklarar hur du visar och skapar ekonomiska rapporter för Microsoft Dynamics 365 for Operations."
+description: "Denna artikel innehåller övningar som förklarar hur du visar och skapar ekonomiska rapporter för Microsoft Dynamics 365 for Finance and Operations."
 author: jcart1106
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 10814
 ms.assetid: cd5f6483-c09b-4c2d-9336-d22eb6ab6e4f
 ms.search.region: Global
@@ -18,22 +18,24 @@ ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 1c0787327830d2cdff9e8a48798165dc83493393
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 0dc453ab56a2d381afa6e22d847f0b1eb7a16e7e
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="view-and-design-financial-reports"></a>Visa och utforma ekonomiska rapporter
+# Visa och utforma ekonomiska rapporter
+<a id="view-and-design-financial-reports" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-Denna artikel innehåller övningar som förklarar hur du visar och skapar ekonomiska rapporter för Microsoft Dynamics 365 for Operations. Ekonomisk rapportering består av en visningsupplevelse i Dynamics 365 for Operations och en enklicks-rapportdesigner där du kan skapa och redigera ekonomiska rapporter.  
+Denna artikel innehåller övningar som förklarar hur du visar och skapar ekonomiska rapporter för Microsoft Dynamics 365 for Finance and Operations. Ekonomisk rapportering består av en visningsupplevelse i Finance and Operations och en enklicks-rapportdesigner där du kan skapa och redigera ekonomiska rapporter.  
 
-<a name="exercise-1-generate-and-explore-a-default-financial-report"></a>Övning 1: Generera och undersök en ekonomisk standardrapport
+Övning 1: Generera och undersök en ekonomisk standardrapport
+<a id="exercise-1-generate-and-explore-a-default-financial-report" class="xliff"></a>
 -----------------------------------------------------------
 
 För den här övning ska du generera och undersöka en befintlig standardrapport. Den här rapporten innehåller alla konton och även kontoegenskaper (attribut) för kontona. Du ska gå nedåt till transaktionsdetaljer, tillämpa dimensionsfilter och ändra valutan i rapporten. Först ska du uppdatera visningsordningen för dimensioner för ekonomisk rapportering. På så sätt kan du välja hur dimensionerna visar inte bara när du designar och visar ekonomiska rapporter.
@@ -59,18 +61,19 @@ För den här övning ska du generera och undersöka en befintlig standardrappor
 13. Välj **Rapportalternativ**.
 14. Markera **Lägg till ett dimensionsfilter** och sedan **Affärsenhet**.
 15. Skriv 001 till fältet och välj **OK**. Rapporten visar nu bara data för affärsenheten 001. Detta är en anpassad vy av rapporten och den är inte tillgänglig för andra.
-16. Stäng den filtrerade rapporten. Ekonomiska rapporter kan visas i vilken valuta som helst som har lagts till i Dynamics 365 for Operations.
+16. Stäng den filtrerade rapporten. Ekonomiska rapporter kan visas i vilken valuta som helst som har lagts till i Finance and Operations.
 17. Välj **Valuta** och sedan **EUR**. Rapporten visas nu i euro. Valutakoder eller valutasymboler som ingår i rapportdesignen visas nu i den använda valutan. Om ingen valutasymbol har definierats för en valuta, visas ingen valutasymbol.
 18. Stäng rapporten **Huvudbokdetalj**.
 19. Stäng **rapportdesignern**.
 
-## <a name="exercise-2-add-additional-account-properties-to-a-report-design"></a>Övning 2: Lägg till ytterligare kontoegenskaper i en rapportdesign
+## Övning 2: Lägg till ytterligare kontoegenskaper i en rapportdesign
+<a id="exercise-2-add-additional-account-properties-to-a-report-design" class="xliff"></a>
 I den här övningen ska du ändra en befintlig standardrapport. Du kommer att uppdatera både raddefinitionen för att ta med alla konton och kolumndefinitionen så att den innehåller kontoattribut. När uppdateringarna är slutförd, ska du generera den nyligen skapade rapporten och undersöka rapporten. Vi börjar med listan över ekonomiska rapporter.
 
 1.  Gå till **Ekonomiska rapporter** under Förfrågningar och rapporter i redovisningen.
 2.  Markera raden för rapporten som heter **Råbalanssammanfattning - standardinställning**.
 3.  Välj **Redigera**. **Råbalanssammanfattning - standardinställning** öppnas i rapportdesignern.
-4.  Välj **Arkiv**, sedan **Spara som** och namnge rapporten Detaljerad råbalans med attribut. Obs! När en ny rapport har skapats i rapportdesignern uppdateras listan med ekonomisk rapporter i Dynamics 365 for Operations.
+4.  Välj **Arkiv**, sedan **Spara som** och namnge rapporten Detaljerad råbalans med attribut. Obs! När en ny rapport har skapats i rapportdesignern uppdateras listan med ekonomisk rapporter i Finance and Operations.
 5.  Välj rapportdefinitionen, markera raddefinitionsikonen för att öppna i **Råbalans – detaljerad raddefinition**.
 6.  Spara raddefinitionen som **Detaljerad råbalans med attribut**
 7.  Med markören på rad 50, markera **Redigera** och sedan **Infoga rader från dimensioner**. Infoga rader från dimensioner gör att du kan välja vilka dimensioner du vill ha i din raddefinition. I den här övning ska du skapa raddefinitionen med hjälp av huvudkontot.
@@ -100,7 +103,8 @@ I den här övningen ska du ändra en befintlig standardrapport. Du kommer att u
 25. Stäng rapporten **Detaljerad råbalans med attribut**.
 26. Stäng **rapportdesignern**.
 
-## <a name="exercise-3-create-a-multidimensional-report-using-a-reporting-tree"></a>Övning 3: Skapa en flerdimensionell rapport med ett rapportträd
+## Övning 3: Skapa en flerdimensionell rapport med ett rapportträd
+<a id="exercise-3-create-a-multidimensional-report-using-a-reporting-tree" class="xliff"></a>
 I den här övningen ska du ändra en befintlig standardrapport. Du ska skapa ett rapportträd och lägga till en rapportdefinition för att producera en resultaträkning för kostnadsställe/avdelning. När uppdateringen är klar, skapar du resultaträkningen för kostnadsstället/avdelningen och utforskar rapporten med hjälp av rapportträdet. Vi börjar med listan över ekonomiska rapporter.
 
 1.  Gå till **Ekonomiska rapporter** under Förfrågningar och rapporter i redovisningen.
@@ -136,7 +140,8 @@ I den här övningen ska du ändra en befintlig standardrapport. Du ska skapa et
 31. Stäng **Resultaträkning – standardinställning**.
 32. Stäng **rapportdesignern**.
 
-## <a name="exercise-4-create-a-consolidated-report-using-an-organization-hierarchy"></a>Övning 4: Skapa en konsoliderad rapport med hjälp av en organisationshierarki
+## Övning 4: Skapa en konsoliderad rapport med hjälp av en organisationshierarki
+<a id="exercise-4-create-a-consolidated-report-using-an-organization-hierarchy" class="xliff"></a>
 I den här övningen ska du ändra en befintlig standardrapport. Du kan lägga till en organisationshierarki i rapportdefinitionen för att producera en konsoliderad resultaträkning och balansräkning. När uppdateringarna är klara, skapar du den konsoliderade rapporten och utforskar rapporten med hjälp av rapportträdet. Vi börjar med listan över ekonomiska rapporter.
 
 1.  Gå till **Ekonomiska rapporter** under Förfrågningar och rapporter i redovisningen.
@@ -155,7 +160,8 @@ I den här övningen ska du ändra en befintlig standardrapport. Du kan lägga t
 14. Stäng **Konsoliderad balansräkning och resultaträkning sida vid sida**.
 15. Stäng **rapportdesignern**.
 
-## <a name="exercise-5-create-a-sidebyside-departmental-report"></a>Övning 5: Skapa en rapport för parallella avdelningar
+## Övning 5: Skapa en rapport för parallella avdelningar
+<a id="exercise-5-create-a-sidebyside-departmental-report" class="xliff"></a>
 I den här övning ska du skapa en ny rapport. Rapporten är en resultaträkning för parallella avdelningar. Du använder en befintlig raddefinition, men skapar en ny rapportdefinition och en ny kolumndefinition som använder dimensionsfilter. Vi börjar med listan över ekonomiska rapporter.
 
 1.  Gå till **Ekonomiska rapporter** under Förfrågningar och rapporter i redovisningen.
@@ -182,9 +188,10 @@ I den här övning ska du skapa en ny rapport. Rapporten är en resultaträkning
 17. Ändra detaljnivån till **Ekonomisk, Konto och Transaktion**
 18. **Spara** ändringarna och **generera**. När rapporten har genererats och öppnats kan du granska den.
 
-## <a name="additional-resources"></a>Ytterligare resurser
-[Ekonomisk rapportering](/dynamics365/operations/financials/general-ledger/financial-reporting-getting-started) 
-[Visa ekonomiska rapporter](/dynamics365/operations/financials/general-ledger/view-financial-reports) 
+## Ytterligare resurser
+<a id="additional-resources" class="xliff"></a>
+[Ekonomisk rapportering](/dynamics365/unified-operations/financials/general-ledger/financial-reporting-getting-started) 
+[Visa ekonomiska rapporter](/dynamics365/unified-operations/financials/general-ledger/view-financial-reports) 
 [Dynamics blogg för ekonomisk rapportering](http://blogs.msdn.com/b/dynamics_financial_reporting/)
 
 

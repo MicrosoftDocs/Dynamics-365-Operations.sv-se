@@ -1,6 +1,6 @@
 ---
 title: Hantering av redovisningsjournaler
-description: "Det här avsnittet innehåller en beskrivning av de funktioner i Microsoft Dynamics 365 for Operations som kan underlätta processen för allmänna journaler, och som även kan göra det enklare att garantera att rätt data hämtas in samt att interna kontroller inte påverkas."
+description: "Det här avsnittet innehåller en beskrivning av de funktioner i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition som kan underlätta processen för allmänna journaler, och som även kan göra det enklare att garantera att rätt data hämtas in samt att interna kontroller inte påverkas."
 author: twheeloc
 manager: AnnBe
 ms.date: 04/25/2017
@@ -10,8 +10,8 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: LedgerJournalSetup, LedgerJournalTable
 audience: Application User
-ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: twheeloc
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 15721
 ms.assetid: b4b406fa-b772-44ec-8dd8-8eb818a921ef
 ms.search.region: Global
@@ -19,20 +19,21 @@ ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 150ca540fca154947cca47e97e45ce865ab1f507
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 244eada4202106b65198e3d6e3d0dedaa5486632
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="general-journal-processing"></a>Hantering av redovisningsjournaler
+# Hantering av redovisningsjournaler
+<a id="general-journal-processing" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-Det här avsnittet innehåller en beskrivning av de funktioner i Microsoft Dynamics 365 for Operations som kan underlätta processen för allmänna journaler, och som även kan göra det enklare att garantera att rätt data hämtas in samt att interna kontroller inte påverkas.  
+Det här avsnittet innehåller en beskrivning av de funktioner i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition som kan underlätta processen för allmänna journaler, och som även kan göra det enklare att garantera att rätt data hämtas in samt att interna kontroller inte påverkas.  
 
 Journalnamn
 
@@ -53,16 +54,18 @@ Journalnamn kan användas endast för en viss sektor eller ett datumintervall f�
 **Automatisk återföring** alternativet finns tillgängligt i allmänna journaler. Du kan till exempel ha en periodiserad justering där det aktuella dokumentet har inte bearbetats, som visas i följande illustration.
 [![Allmän journalåterföring](./media/general-journal-reversing1.png)](./media/general-journal-reversing1.png) 
 
-Microsoft Excel-tillägget för poster i redovisningsjournal ger en extra nivå av automatisering och gör dataregistreringen lättare. **Öppna rader i Excel**åtgärden är tillgänglig i **Allmän journal** och **Journalverifikat** sidor. 
+Microsoft Excel-tillägget för poster i redovisningsjournal ger en extra nivå av automatisering och gör dataregistreringen lättare. **Öppna rader i Excel** åtgärden är tillgänglig i **Allmän journal** och **Journalverifikat** sidor. 
 
 På **Periodiska journaler** sidan kan du ställa in återkommande journaler till automatisk journalbearbetning. 
 
 Du kan använda verifikationsmallar när som helst. På sidan **Allmänna journaler** finns åtgärderna **Spara** och **Välj verifikationsmall** på sidan **Journalverifikation**, under **Funktioner** för verifikationsraderna.
 
-## <a name="related-setup"></a>Relaterade inställningar
+## Relaterade inställningar
+<a id="related-setup" class="xliff"></a>
 Följande inställningar är inte specifika för allmänna journaler, men kommer att garantera korrekt dataregistrering, enkelt.
 
-### <a name="main-account"></a>Huvudkonto
+### Huvudkonto
+<a id="main-account" class="xliff"></a>
 
 Huvudkontoinställningen ger flera alternativ för allmän journal bearbetning:
 
@@ -78,7 +81,8 @@ Huvudkontoinställningen ger flera alternativ för allmän journal bearbetning:
     -   **Användarvalidering** – Det här alternativet styr vilka användare som tillåts bokföra på huvudkonto.
     -   **Konteringstypvalidering** – Med det här alternativet styr vilka konteringstyper som tillåts för huvudkonto.
 
-### <a name="accounting-structures-and-advanced-rules-structures"></a>Redovisningsstrukturer och avancerade regler strukturer
+### Redovisningsstrukturer och avancerade regler strukturer
+<a id="accounting-structures-and-advanced-rules-structures" class="xliff"></a>
 
 Redovisningsstrukturer och avancerade regler strukturer är oerhört viktiga för att garantera att de data som krävs för ekonomisk rapportering och uppföljning av prestationer är fångade under allmän journal bearbetning och all dokumentation. Redovisningsstrukturer och avancerade regler strukturer kan du skräddarsy data entry-upplevelse. Du kan registrera data endast för finansiella mått som är relevanta i varje situation, och kan också genomdriva kravet på att obligatorisk och korrekt data alltid finnas fångat.
 

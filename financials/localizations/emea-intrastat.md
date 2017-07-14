@@ -3,7 +3,7 @@ title: Intrastat
 description: "Det här avsnittet ger information om Intrastat-rapportering för handel av varor och, i vissa fall, tjänster mellan länder/regioner i den Europeiska unionen (EU). Det ger en översikt över rapporteringsprocessen och beskriver nödvändiga inställningar och förutsättningar."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,22 +11,23 @@ ms.technology:
 ms.search.form: Intrastat
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 28581
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Ireland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 5dea47c92c3891ce86b470119ea3bad8252c08d1
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 6d1141d597e95b0d5cabf77c0248697d256b102a
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="intrastat"></a>Intrastat
+# Intrastat
+<a id="intrastat" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
@@ -35,18 +36,22 @@ Det här avsnittet ger information om Intrastat-rapportering för handel av varo
 
 Intrastat är systemet för att samla information och generera statistik över handeln med varor mellan länder/regioner i den Europeiska unionen (EU). Intrastat-rapportering krävs när en produkt korsar gränsen till ett annat EU-land eller en annan EU-region. I flera länder/regioner gäller Intrastat-rapportering även för tjänster. Obligatoriska och valfria element kan samlas in i Intrastat-rapportering. Följande element är obligatoriska: momsnumret för parten som ansvarar för att ge information, referensperioden, flödet (införsel eller utförsel), den åttasiffriga artikelkoden, partnerns medlemsstat (medlemsstaten för försändelsen vid införsel och medlemsstaten för destinationen vid utförsel), värdet på varorna, varornas kvantitet (nettomassa och fyllnadsenhet) och transaktionens natur. Länder/regioner kan också samla in valfria element under olika omständigheter. Exempel på valfria element är ursprungsland/ursprungsregion, leveransvillkor, transportsätt, en mer detaljerad artikelkod än CN8, ursprungsregionen vid utförsel och måldestinationen vid införsel, den statistiska proceduren, det statistiska värdet, en beskrivning av varorna och hamn/flygplats för lastning/avlastning.
 
-## <a name="overview-of-the-intrastat-reporting-process"></a>Översikt över processen vid Intrastat-rapportering
+## Översikt över processen vid Intrastat-rapportering
+<a id="overview-of-the-intrastat-reporting-process" class="xliff"></a>
 Följande avsnitt beskriver det generella flödet av information som används för Intrastat-rapportering.
 
-### <a name="1-enter-a-transaction-that-crosses-the-border-of-another-eu-countryregion"></a>1. Ange en transaktion som korsar gränsen till ett annat EU-land eller en annan EU-region
+### 1. Ange en transaktion som korsar gränsen till ett annat EU-land eller en annan EU-region
+<a id="1-enter-a-transaction-that-crosses-the-border-of-another-eu-countryregion" class="xliff"></a>
 
 En kundfaktura, fritextfaktura, inköpsfaktura, projektfaktura, kundföljesedel, produktinleverans för leverantör eller överföringsorder överförs bara till Intrastat-journalen om landet/regionen för destinationen (vid utförsel) eller försändelsen (vid införsel) är **EU**. Denna funktion har utökats för Microsoft Dynamics 365 for Operations version 1611 och låter dig ange fraktadresser för en transaktion inom gemenskapen. Om en fraktadress skiljer sig åt från en leverantörsföretagsadress (eller en kunderföretagsadress för returorder), fungerar Intrastat-rapporteringen med den här informationen. När du skapar en försäljningsorder, fritextfaktura, inköpsorder, leverantörsfaktura, projektfaktura eller överföringsorder har vissa fält som är relaterade till utländsk handel standardvärden i dokumenthuvudet eller på raden. Standardtransaktionskoden hämtas från motsvarande fält på sidan **Utländska handelsparametrar**. Standardartikelkoden, ursprungsland/ursprungsregion och ursprungsstat/ursprungsprovins hämtas från artikeln. Du kan ändra standardvärdena och du kan även fylla i annan utländsk handelsrelaterad information: statistikprocedur, transportmetod och hamn.
 
-### <a name="2-use-the-intrastat-journal-to-generate-information-about-trade-among-eu-countriesregions"></a>2. Använd Intrastat-journalen för att generera information om handel mellan EU-länder/EU-regioner
+### 2. Använd Intrastat-journalen för att generera information om handel mellan EU-länder/EU-regioner
+<a id="2-use-the-intrastat-journal-to-generate-information-about-trade-among-eu-countriesregions" class="xliff"></a>
 
 För statistiska ändamål genererar du information om handeln mellan EU-länder/EU-regioner varje månad. Du kan överföra transaktioner från en fritextfaktura, kundfaktura, kundföljesedel, leverantörsfaktura, leverantörföljesedel, projektfaktura eller överföringsorder enligt överföringsvillkoren som har ställts in på sidan **Utländska handelsparametrar**. Alternativt kan du ange transaktioner manuellt. Du kan uppdatera överförda transaktioner manuellt i Intrastat-journalen om uppdateringar krävs. Under vissa förhållanden som ställs in på sidan **Komprimering av Intrastat** kan du komprimera transaktionerna i Intrastat-journalen. Vissa länder/regioner låter dig tillämpa en liten transaktionströskel. Du kan då rapportera transaktioner som är under det tröskelvärdet under den angivna artikelkoden. Du kan uppdatera artikelkoden på motsvarande Intrastat-journalrader baserat på inställningen **Minimigräns** på sidan **Utländska handelsparametrar**. Du kan också komprimera dessa transaktioner baserat på inställningen **Komprimering av Intrastat**. Du kan validera fullständigheten för transaktionerna i Intrastat-journalen baserat på inställningen **Checkinställningar** på sidan **Utländska handelsparametrar**. Data i motsvarande fält kan valideras för fullständighet: land/region, delstat eller provins, vikt, artikelkod, transaktionskod, fyllnadsenhet, hamn, ursprung, leveransvillkor, transportmetod och momsregistreringsnummer. Transaktioner som inte är kompletta markeras som inte giltiga.
 
-### <a name="3-use-the-intrastat-journal-to-report-information-about-trade-among-eu-countriesregions"></a>3. Använd Intrastat-journalen för att rapportera information om handel mellan EU-länder/EU-regioner
+### 3. Använd Intrastat-journalen för att rapportera information om handel mellan EU-länder/EU-regioner
+<a id="3-use-the-intrastat-journal-to-report-information-about-trade-among-eu-countriesregions" class="xliff"></a>
 
 För statistiska ändamål rapporterar du information om handeln mellan EU-länder/EU-regioner varje månad. Du kan skriva ut Intrastat-rapporten baserat på inställningarna för **Mappning av rapportformat** på sidan **Utländska handelsparametrar**. Du kan även generera en elektronisk fil baserat på inställningarna för **Mappning av filformat** på sidan **Utländska handelsparametrar**. Se uppgiftsinspelningar för Intrastat-rapportering om du vill ha mer information om Intrastat-rapportering:
 
@@ -54,7 +59,8 @@ För statistiska ändamål rapporterar du information om handeln mellan EU-länd
 -   Överföra transaktioner till Intrastat,
 -   Ange fraktadressen för en inomeuropeisk transaktion.
 
-## <a name="prerequisites"></a>Förutsättningar
+## Förutsättningar
+<a id="prerequisites" class="xliff"></a>
 Följande tabell anger förutsättningarna för Intrastat-rapportering.
 
 <table>
@@ -111,10 +117,12 @@ Följande tabell anger förutsättningarna för Intrastat-rapportering.
 </tbody>
 </table>
 
-## <a name="setup"></a>Inställningar
+## Inställningar
+<a id="setup" class="xliff"></a>
 Följande avsnitt beskriver de inställningar som krävs för Intrastat-rapportering.
 
-### <a name="set-up-all-required-intrastat-related-lists"></a>Ställ in alla nödvändiga Intrastat-relaterade listor
+### Ställ in alla nödvändiga Intrastat-relaterade listor
+<a id="set-up-all-required-intrastat-related-lists" class="xliff"></a>
 
 <table>
 <colgroup>
@@ -171,11 +179,13 @@ Följande avsnitt beskriver de inställningar som krävs för Intrastat-rapporte
 </tbody>
 </table>
 
-### <a name="set-up-rules-for-compressing-intrastat-transactions"></a>Ställ in regler för komprimeringen av Intrastat-transaktioner
+### Ställ in regler för komprimeringen av Intrastat-transaktioner
+<a id="set-up-rules-for-compressing-intrastat-transactions" class="xliff"></a>
 
 På sidan **Komprimering av Intrastat** kan du välja vilka fält du vill använda för komprimering. Alla transaktioner som har samma kombination av värden för de valda fälten i Intrastat-journalen komprimeras till en enda transaktion när du kör funktionen Komprimera i Intrastat-journalen.
 
-### <a name="set-up-foreign-trade-parameters"></a>Konfigurera utländska handelsparametrar
+### Konfigurera utländska handelsparametrar
+<a id="set-up-foreign-trade-parameters" class="xliff"></a>
 
 Använd sidan **Utländska handelsparametrar** för att ställa in parametrarna i följande tabell.
 

@@ -3,13 +3,14 @@ title: "Faktureringsarbetsyta för leverantörssamarbeten"
 description: "Det här avsnittet beskriver hur du kan visa leverantörsfakturor och skicka fakturor från arbetsytan för leverantörssamarbetesfakturering."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: Operations, Core
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 221534
 ms.assetid: c4ed62f3-d351-41d7-a2ad-790576cde4ab
 ms.search.region: Global
@@ -17,37 +18,40 @@ ms.author: abruer
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 7c8fe2fea08dbad625cd373ca316135ac4e29e13
+ms.sourcegitcommit: 3abf4b151b177095b71d44e9a6c9fd8541eaa64e
+ms.openlocfilehash: 2171a454c763abab82f6555950994237b4de7b8b
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/14/2017
 
 
 ---
 
-# <a name="vendor-collaboration-invoicing-workspace"></a>Faktureringsarbetsyta för leverantörssamarbeten
+# Faktureringsarbetsyta för leverantörssamarbeten
+<a id="vendor-collaboration-invoicing-workspace" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
 Det här avsnittet beskriver hur du kan visa leverantörsfakturor och skicka fakturor från arbetsytan för leverantörssamarbetesfakturering.
 
-**Faktureringsarbetsyta för leverantörssamarbeten** kan användas för att visa information om leverantörsfaktura och skicka in fakturor till Microsoft Dynamics 365 for Operations med hjälp av arbetsflödesfunktionerna.
-Faktureringsarbetsyta för leverantörssamarbeten
+Arbetsytan **Fakturera leverantörssamarbeten** kan användas för att visa information om leverantörsfaktura och för att skicka fakturor till Microsoft Dynamics 365 for Finance and Operations, Enterprise edition med hjälp av arbetsflödesfunktionerna.
+Arbetsyta för leverantörssamarbetesfakturering
 ----------------------------------------
 
-### <a name="summary-tiles"></a>Sammanfattningsrutor
+### Sammanfattningsrutor
+<a id="summary-tiles" class="xliff"></a>
 
 **Sammanfattningsrutorna** ger en översikt över fakturorna för den valda leverantören. Du kan visa fakturor med hjälp av deras läge.
 -   Utkastfakturor har inte skickats in till arbetsflödet.
--   Skickade, inte godkända fakturor är de fakturor som leverantören har skickat, men de har inte bokförts i Dynamics 365 for Operations.
--   Godkända, inte betalda fakturor är de fakturor har bokförts i Dynamics 365 for Operations, men de har inte ännu betalats helt.
--   Betalda fakturor är de som har betalats helt i Dynamics 365 for Operations.
+-   Skickade, ej godkända fakturor är de fakturor som leverantören har skickat, men som inte har bokförts i Finance and Operations.
+-   Godkända, ej betalda fakturor är de fakturor som har bokförts i Finance and Operations, men som inte ännu har betalats till fullo.
+-   Betalda fakturor är de fakturor som har betalats till fullo i Finance and Operations.
 
-Om du klickar på en ruta öppnas en filtrerad vy av listsidan**Fakturor**.
-### <a name="tabular-lists"></a>Tabellistor
+Om du klickar på en ruta öppnas en filtrerad vy av listsidan **Fakturor**.
+### Tabellistor
+<a id="tabular-lists" class="xliff"></a>
 
-I avsnittet **Tabellistor**är status för faktureringen uppdelad på liknande sätt som sammanfattningsrutorna: Utkast och Skickad, ej godkända listor. En faktura kan skickas till arbetsflödet eller tas bort när den befinner sig läget Utkast. Den sista tabellistan är ett alternativ för att hitta fakturor. Du kan filtrera medan du söker för att tillåta snabbare sökningar.
+I avsnittet **Tabellistor** är status för faktureringen uppdelad på liknande sätt som sammanfattningsrutorna: Utkast och Skickad, ej godkända listor. En faktura kan skickas till arbetsflödet eller tas bort när den befinner sig läget Utkast. Den sista tabellistan är ett alternativ för att hitta fakturor. Du kan filtrera medan du söker för att tillåta snabbare sökningar.
 Alla listsidor med leverantörsfakturor
 -----------------------------
 
@@ -59,7 +63,7 @@ Du kan skapa en ny leverantörsfaktura, genom att välja åtgärden **Ny** på *
 
 
 
-Mer information finns i [samarbeta med leverantörer genom att använda leverantörsportalen](/dynamics365/operations/supply-chain/procurement/collaborate-vendors-vendor-portal)
+Mer information finns i [samarbeta med leverantörer genom att använda leverantörsportalen](/dynamics365/unified-operations/supply-chain/procurement/collaborate-vendors-vendor-portal)
 
 
 

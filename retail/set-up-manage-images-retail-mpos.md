@@ -3,52 +3,58 @@ title: "Ställa in och hantera bilder för Retail Modern POS"
 description: "Den här artikeln beskriver stegen som ingår i hur du ställer in och hanterar avbildningar för de olika entiteterna som visas i Retail Modern POS (MPOS)."
 author: MargoC
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.reviewer: josaw
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 52851
 ms.assetid: 5c21385e-64e0-4091-98fa-6a662eb33010
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: athinesh
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 06915686e1421742c2f1dd1ebbb02491f04431fd
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: 3985d731709eff4085927b277996528e4e448ba9
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
+
 
 
 ---
 
-# <a name="set-up-and-manage-images-for-retail-modern-pos"></a>Ställa in och hantera bilder för Retail Modern POS
+# Ställa in och hantera bilder för Retail Modern POS
+<a id="set-up-and-manage-images-for-retail-modern-pos" class="xliff"></a>
 
 [!include[banner](includes/banner.md)]
 
 
 Den här artikeln beskriver stegen som ingår i hur du ställer in och hanterar avbildningar för de olika entiteterna som visas i Retail Modern POS (MPOS).
 
-<a name="setting-up-the-media-base-url-and-defining-media-templates-to-configure-the-format-for-image-urls"></a>Ställa in mediebaserad URL och definiera mediamallar för att ställa in format för bild-URL
+Ställa in mediebaserad URL och definiera mediamallar för att ställa in format för bild-URL
+<a id="setting-up-the-media-base-url-and-defining-media-templates-to-configure-the-format-for-image-urls" class="xliff"></a>
 -------------------------------------------------------------------------------------------------
 
-Bilderna som anges i Retail Modern POS (MPOS) måste vara värdlagrade externt, utanför Microsoft Dynamics 365 for Operations - Retail. Normalt lagras de i ett innehållshanteringssystem, innehållsleveransnätverk (CDN) eller en mediaserver. MPOS hämtar och visar då bilderna för lämpliga enheter, till exempel produkter och kataloger, genom att få åtkomst till mål-URL. Om du vill hämta dessa externt värdbaserade bilder kräver MPOS korrekt URL-format för bilderna. Du kan konfigurera obligatoriskt URL-format för bilderna genom att ställa in värdet **Mediabas-URL**i kanalprofilen och använda funktionen **Definiera mediamall**för varje enhet. Du kan även skriva över det vanliga URL-formatet för en undergrupp av enheter, genom att använda funktionen **Redigera i Excel**. **Obs!** I den aktuella versionen av Dynamics 365 for Operations kan du inte längre ställa in URL-formatet genom att använda **Bild**-attribut-XML för MPOS i attributgruppen **Standard** för enheter. Om du har kunskaper om Microsoft Dynamics AX 2012 R3 och använder den aktuella versionen av Dynamics 365 for Operations, se till att du använder alltid den nya **Definiera mediamallen**-funktionen för att ställa in bilder. Använd inte eller ändra **Bild**-attributet i **Standard**-attributgruppen för enheter, inklusive produkter. De ändringar du gör direkt i **Standard**-attributgruppen för bilder kommer inte reflekteras. Detta alternativ kommer avaktiveras i en kommande version. I följande procedurer ställs in bilder för katalogenheten till exempel. Dessa procedurer hjälper dig att garantera att rätt bildmålsökväg anges obetingat för alla katalogbilder som använder en gemensam sökväg. Till exempel, om du har ställt in en mediaserver eller en CDN externt, och vill att bilderna att visas i MPOS för en viss butik, **Definiera mediamallen**-funktionen hjälper dig ställa in sökvägen, där MPOS kan slås upp, och att hämta bilderna. **Notering:** I detta demonstrationsdataexempel distribueras mediaservern på Retail Server. Du kan dock ha den någonstans utanför Dynamics 365 for Operations.
+Bilderna som anges i Retail Modern POS (MPOS) måste vara värdlagrade externt, utanför Microsoft Dynamics 365 for Retail. Normalt lagras de i ett innehållshanteringssystem, innehållsleveransnätverk (CDN) eller en mediaserver. MPOS hämtar och visar då bilderna för lämpliga enheter, till exempel produkter och kataloger, genom att få åtkomst till mål-URL. Om du vill hämta dessa externt värdbaserade bilder kräver MPOS korrekt URL-format för bilderna. Du kan konfigurera obligatoriskt URL-format för bilderna genom att ställa in värdet **Mediabas-URL** i kanalprofilen och använda funktionen **Definiera mediamall** för varje enhet. Du kan även skriva över det vanliga URL-formatet för en undergrupp av enheter, genom att använda funktionen **Redigera i Excel**. **Obs!** I den aktuella versionen av Dynamics 365 for Retail kan du inte längre ställa in URL-formatet genom att använda **Bild**-attribut-XML för MPOS i attributgruppen **Standard** för enheter. Om du har kunskaper om Microsoft Dynamics AX 2012 R3 och använder den aktuella versionen av Dynamics 365 for Retail, se till att du använder alltid den nya **Definiera mediamallen**-funktionen för att ställa in bilder. Använd inte eller ändra **Bild**-attributet i **Standard**-attributgruppen för enheter, inklusive produkter. De ändringar du gör direkt i **Standard**-attributgruppen för bilder kommer inte reflekteras. Detta alternativ kommer avaktiveras i en kommande version. I följande procedurer ställs in bilder för katalogenheten till exempel. Dessa procedurer hjälper dig att garantera att rätt bildmålsökväg anges obetingat för alla katalogbilder som använder en gemensam sökväg. Till exempel, om du har ställt in en mediaserver eller en CDN externt, och vill att bilderna att visas i MPOS för en viss butik, **Definiera mediamallen**-funktionen hjälper dig ställa in sökvägen, där MPOS kan slås upp, och att hämta bilderna. **Notering:** I detta demonstrationsdataexempel distribueras mediaservern på Retail Server. Du kan dock ha den någonstans utanför Dynamics 365 for Retail.
 
-### <a name="set-up-the-media-base-url-for-a-channel"></a>Ställ in mediebas-URL för en kanal
+### Ställ in mediebas-URL för en kanal
+<a id="set-up-the-media-base-url-for-a-channel" class="xliff"></a>
 
-1.  Öppna snabbmenyn i Dynamics 365 for Operations HQ-portalen.
-2.  Klicka på **Butik och handel** &gt; **Kanalinställningar** &gt; **Kanalprofiler**. [![kanalprofil1](./media/channel-profile1.png)](./media/channel-profile1.png)
+1.  Öppna Dynamics 365 for Retail HQ portal.
+2.  Klicka på **Butik** &gt; **Kanalinställningar** &gt; **Kanalprofiler**. [![kanalprofil1](./media/channel-profile1.png)](./media/channel-profile1.png)
 3.  I kanalprofilen, som din butik använder för MPOS, uppdatera **Mediabas-URL**-fältet med bas-URL för din mediaserver eller CDN. Bas-URL är den första delen av URL som delas av alla bildmappar för olika enheter.[![kanalprofil2](./media/channel-profile2.png)](./media/channel-profile2.png)
 
-### <a name="define-the-media-template-for-an-entity"></a>Definiera mediamallen för en enhet
+### Definiera mediamallen för en enhet
+<a id="define-the-media-template-for-an-entity" class="xliff"></a>
 
-1.  Klicka på **Butik och handel** &gt; **Kataloghantering** &gt; **Katalogbilder**.
+1.  Klicka på **Butik** &gt; **Kataloghantering** &gt; **Katalogbilder**.
 2.  På **Katalogbilder** sidan i åtgärdsfönstret klickar du på **Definiera mediammall**. I **Definiera mediamall** dialogrutan i **Enhet** fältet, **Katalog** ska markeras som standard.
-3.  På **Mediesökväg** snabbfliken anger du den återstående sökvägen till bildplatsen. Mediesökvägen stöder **LanguageID** som en variabel. Till exempel för demonstrationsdata kan du skapa en **Kataloger** mapp för alla katalogbilder under mediabas-URL för din mediaserver (https://testax3ret.cloud.test.dynamics.com/RetailServer/MediaServer). Du kan sedan ha en mapp för varje språk, till exempel en-US eller fr-FR och kopiering lämpliga bilderna under varje mapp. Om du inte har olika bilder för olika språk, kan du utesluta **LanguageID** variabeln i din mappstruktur, och peka direkt till katalogmappen, som innehåller katalogbilder. **Notering:** Den aktuella versionen av Dynamics AX stöder **{LanguageId}** token för katalog-, produkt- och kategorienheter. (**{LanguageID}** token stöds inte för kund- och arbetarenheter, enligt den befintliga standard som har varit gällande sedan Microsoft Dynamics AX 6.x.)
+3.  På **Mediesökväg** snabbfliken anger du den återstående sökvägen till bildplatsen. Mediesökvägen stöder **LanguageID** som en variabel. Till exempel för demonstrationsdata kan du skapa en **Kataloger** mapp för alla katalogbilder under mediabas-URL för din mediaserver (https://testax3ret.cloud.test.dynamics.com/RetailServer/MediaServer). Du kan sedan ha en mapp för varje språk, till exempel en-US eller fr-FR och kopiering lämpliga bilderna under varje mapp. Om du inte har olika bilder för olika språk, kan du utesluta **LanguageID** variabeln i din mappstruktur, och peka direkt till katalogmappen, som innehåller katalogbilder. **Notering:** Den aktuella versionen av Dynamics 365 for Retail stöder **{LanguageId}** token för katalog-, produkt- och kategorienheter. (**{LanguageID}** token stöds inte för kund- och arbetarenheter, enligt den befintliga standard som har varit gällande sedan Microsoft Dynamics AX 6.x.)
 4.  För bilder, filnamnformatet är hårdkodat till katalognamnet och kan inte ändras. Byt namn på dina bilder, så att de har rätt katalognamn, för att garantera att MPOS hanterar dem korrekt.
 5.  I **Filtillägg** fältet, välj det förväntade filnamnstillägget, beroende på vilken typ av bilder som du har. Till exempel för demodata har katalogbilder ställts in .jpg filtillägget. (Bildfiler byter också namn så att de har katalognamn).
 6.  Klicka på **OK**.
@@ -56,7 +62,8 @@ Bilderna som anges i Retail Modern POS (MPOS) måste vara värdlagrade externt, 
 8.  Kör synkroniseringjobben för att flytta den nya mallen till kanaldatabasen, så att MPOS kan använda mallen för åtkomst till bilderna.
 9.  Uppdatera mediamallen för katalogbilder på kanalsidan, kontrollera att du kör **Katalogjobb 1150** från **Butik-IT** &gt; **Distributionsschema**.[![katalog1](./media/catalog1.png)](./media/catalog1.png)
 
-## <a name="previewing-an-image-from-the-entity-level"></a>Granska en bild ur enhetsnivå
+## Granska en bild ur enhetsnivå
+<a id="previewing-an-image-from-the-entity-level" class="xliff"></a>
 1.  Från sidan för enhetsartikeln i HQ kan du granska den bild som använder bild-URL, som härleds från mediamallen. För det här exemplet, gå till lämplig katalog, och sedan, i åtgärdsfönstret, klicka på **Media** &gt; **Bilder**. Använd listrutan om du vill välja olika butiker som kan ha olika kanalprofiler.
 2.  Om du vill redigera eller ta bort den implicita mediamallen måste du gå tillbaka till **Definiera mediamall** dialogrutan för **Katalogbilder** sidan.
 3.  Du kan använda **Lägg till** och **Ta bort** knapparna som manuellt ändrar sökvägen baserat på den implicita mallen och använda för en viss bild. Mer information finns i ”Skriva över mediamallen för enhetsartiklar" senare i denna artikel.
@@ -64,7 +71,8 @@ Bilderna som anges i Retail Modern POS (MPOS) måste vara värdlagrade externt, 
 
 **Notering:** Du kan använda samma procedur för alla fem enheter som stöds: Arbetare, kund, katalog, kategori och produkter. ”Katalogprodukter” (produkter som anges på katalognivån), och " kanalprodukter " (produkter som anges på kanalnivån) använder mediamallen som anges för produktenheten. För produktmediamallen kan du välja antalet produktbilder som du vill visa per produkt. Du kan även ange standardbilden för en viss produkt. På så sätt kan du förebygga tomma bilder i MPOS och få hjälp att kontrollera vilken bilden som används som standardbild för en produktartikel. I följande exempel har varje produkt fem bilder, och den första bilden anges som standardbilden. Variantprodukter hanteras på samma sätt som huvudplaneringsprodukter. Filnamnet på bildfilen ska baseras på produktnumret. Vissa tecken undantas också medan filnamnet genereras. Därför är det bra att verifiera filnamnet genom att använda **Generera bild-URL för Excel** avsnittet. [![prods](./media/prods.png)](./media/prods.png)  
 
-## <a name="synchronization-jobs-to-send-a-media-template-to-the-channel-side"></a>Synkroniseringsjobb för att skicka en mediamall till kanalsidan
+## Synkroniseringsjobb för att skicka en mediamall till kanalsidan
+<a id="synchronization-jobs-to-send-a-media-template-to-the-channel-side" class="xliff"></a>
 För alla fem enheter som stöds (arbetare, kund, katalog, kategori och produkter), när du uppdaterar dialogrutan **Definiera mediamallen** m du vill ställa in en bild, se till att du kör katalogjobbet (1150 ) från **Butik-IT** &gt; **Distributionsschema**. Detta jobb ska aktivera den uppdaterade mediamallen som ska synkroniseras med kanalen och användas av MPOS. Kör katalogjobbet (1150 )när du gjort någon av följande ändringar:
 
 -   Du uppdaterar katalogbildmediamallen från **Katalogbilder** &gt; **Definiera mediamall**.
@@ -73,15 +81,17 @@ För alla fem enheter som stöds (arbetare, kund, katalog, kategori och produkte
 -   Du uppdaterar produktbildmediamallen från **Produktbilder** &gt; **Definiera mediamall**.
 -   Du uppdaterar kategoribildmediamallen från **Kategoribilder** &gt; **Definiera mediamall**. Du måste även publicera kanalen.
 
-## <a name="overwriting-the-media-template-for-entity-items"></a>Skriva över mediummallen för enhetsartiklar
+## Skriva över mediummallen för enhetsartiklar
+<a id="overwriting-the-media-template-for-entity-items" class="xliff"></a>
 Som du lärde dig i det föregående avsnittet, stöder mediamallen för en viss enhet bara en gemensam sökväg. Den sökvägen baseras på mediabas-URL, som konfigureras, och mediasökvägen som definieras. Men i många fall vill en återförsäljare kunna använda bilder från andra källor för en delmängd artiklar i en enhet. Till exempel en butik använder sin värdmediaserver för en uppsättning katalogbilder men använder CDN-URL för en annan uppsättning. Om du vill skriva över bild-URL, som baseras på en mediamall för enhetsbilder på enhetsnivå, kan du använda Redigera i Excel och Manuell redigering från sidan **Förhandsgranska**.
 
-### <a name="overwrite-by-using-edit-in-excel"></a>Skriv över genom att använda Redigera i Excel
+### Skriv över genom att använda Redigera i Excel
+<a id="overwrite-by-using-edit-in-excel" class="xliff"></a>
 
-1.  Klicka på **Butik och handel** &gt; **Kataloghantering** &gt; **Katalogbilder**.
+1.  Klicka på **Butik** &gt; **Kataloghantering** &gt; **Katalogbilder**.
 2.  På **Katalogbilder** sidan klickar du på **Definiera mediamall**. I **Definiera mediamall** dialogrutan i **Enhet** fältet ska **Katalog** markeras.
 3.  På **Mediesökväg** snabbfliken, notera bildplatsen.
-4.  Klicka på **Generera** på snabbfliken **Generera bild-URL för Excel**. **Viktigt:** Så snart mediamallen ändras, måste du klicka på **Generera** innan du kan använda Redigera i Excel-funktionen. [![excel1](./media/excel1.jpg)](./media/excel1.jpg) Du ser nu en förhandsgranskning av bild-webbadresserna som har genererats utifrån den senast sparade mediamallen. [![excel2](./media/excel2.png)](./media/excel2.png) **Obs!** De webbadresser som genereras för Excel använder sökvägen och konventionerna i den definierade mediamallen. Dessa inkluderar konventioner för filnamn. Förväntan är att du har ställt in de fysiska bilderna utanför Dynamics AX, och bilderna kan hämtas från URL som härleds från mediamallen, som du tidigare definierade. Du kan skriva över härledda URL genom att använda Redigera i Excel-funktionen.
+4.  Klicka på **Generera** på snabbfliken **Generera bild-URL för Excel**. **Viktigt:** Så snart mediamallen ändras, måste du klicka på **Generera** innan du kan använda Redigera i Excel-funktionen. [![excel1](./media/excel1.jpg)](./media/excel1.jpg) Du ser nu en förhandsgranskning av bild-webbadresserna som har genererats utifrån den senast sparade mediamallen. [![excel2](./media/excel2.png)](./media/excel2.png) **Obs!** De webbadresser som genereras för Excel använder sökvägen och konventionerna i den definierade mediamallen. Dessa inkluderar konventioner för filnamn. Förväntan är att du har ställt in de fysiska bilderna utanför Dynamics 365 for Retail och bilderna kan hämtas från URL som härleds från mediamallen, som du tidigare definierade. Du kan skriva över härledda URL genom att använda Redigera i Excel-funktionen.
 5.  Klicka på **Redigera i Excel**.
 6.  Klicka på **Aktivera redigeringen** när du uppmanas, efter att Microsoft Excel kalkylbladet har öppnats.
 7.  Klicka på i högra fönstret **Har förtroende här tilläggsprogram** och väntar på tilläggsprogrammet för att slutföra installationen, när du uppmanas. [![Lita på det här tillägget](./media/excel4.jpg)](./media/excel4.jpg)
@@ -90,64 +100,71 @@ Som du lärde dig i det föregående avsnittet, stöder mediamallen för en viss
 10. Du lägger till, redigera och ta bort bildURL för olika enhetartiklar.
 11. För alla enheter utom produkter kan du skriva över bildURL. Ändra befintlig bildURL, så att den använder den nya målURL av bilden, uppdatera och filnamn med den nya filnamn för den bildfil. Filnamnet måste vara unikt att garantera att posten är unikt. [![Skriv över bild-URL:er i Excel](./media/excel6.jpg)](./media/excel6.jpg) **Obs!** När du skriver över bild-URL:er för produktenheter, genom att använda Redigera i Excel-funktionen eller enhetartikelsidan, visar alltid MPOS alla bild-URL:er för mediamallar tillsammans med de överskriva bild-URL:erna.
 12. När du är klar med ändringarna, klickar **Publicera i Excel** du på du vill skapa en ny stötande associationpost.
-13. Återgå till Huvudkontor och klicka **OK**på.
+13. Återgå till Huvudkontor och klicka **OK** på.
 14. Kör lämpliga synkroniseringjobben för enheten och kontrollera förhandsgranskning på enhetsidan eller i MPOS.
 
-#### <a name="creating-new-records"></a>Skapa nya registreringar
+#### Skapa nya registreringar
+<a id="creating-new-records" class="xliff"></a>
 
 Du kan skapa nya poster i Excel. Se därför till att du använder rätt information. Kontrollera att katalogen, användar-ID och katalognamn är korrekt, och även vill ange en unik filnamn, till exempel vill skapa en ny post för en katalog. Den unika filnamn är mycket viktig, eftersom unikheten över poster i Excel ska valideras under publicering. Första kopiera information från mappen som du vill skapa en ny post för och kopiering posten. Du måste uppdatera bara filnamn och URL, eftersom resten av informationen ska vara identiska. Om du vill skapa nya poster för produktenhetartiklar du använder samma grundläggande proceduren. Kopiera en befintlig post för produkten som du skapar en ny post för och sedan som ersätter det bild URL och filnamnet i Excel-kalkylbladet. Kontrollera att filnamn är unikt.
 
-#### <a name="deleting-an-existing-record"></a>Ta bort en befintlig post
+#### Ta bort en befintlig post
+<a id="deleting-an-existing-record" class="xliff"></a>
 
 Endast de överskrivavna bildURLposterna tas bort. När en bild har tagits bort, och synkronisering ska utföras, bilden visas inte längre på **Förhandsgranska** sidan eller i MPOS. BildURLposter, som härleds från mediummallen, kan inte tas bort, eftersom dessa poster alltid härleds från mediummallen varje gång.
 
-### <a name="overwrite-from-the-entity-level-preview-page"></a>Skriv över från enhetsnivå sidan Förhandsgranska
+### Skriv över från enhetsnivå sidan Förhandsgranska
+<a id="overwrite-from-the-entity-level-preview-page" class="xliff"></a>
 
 För alla enheter utom produkter kan du skriva över bildURL för en viss enhetartikel på enhetartikelnivån från sidan **Förhandsgranska**. För produkter kan du använda sidan ”katalogprodukt" enhet. Det här exemplet visar hur du ersätter en katalogbild.
 
 1.  Klicka på **Kataloger** &gt; **Media** &gt; **Bilder** och välje katalogbilden som ska uppdateras.
-2.  Klicka **Lägg till**på, och anger bildURL om du vill skriva över mediummallURL.
+2.  Klicka **Lägg till** på, och anger bildURL om du vill skriva över mediummallURL.
 3.  Om du vill att den här bild ska visas i MPOS för katalogen, kan du ange den som standardinställningbilden.
 4.  Klicka på **OK**. BildURL uppdateras för den här katalogbild, och en förhandsgranskning visas. [![förhandsgranskning3](./media/preview3.png)](./media/preview3.png)
 5.  Du kan även se bildförtitten för alla överskrivavna bildURL på gallerisidan **Katalogbilder**.
 
 **[![förhandsgranskning-4](./media/preview-4.png)](./media/preview-4.png)Obs!** För närvarande visas galleriet inte bildförtittar för URL för medium mallbild. För katalog-, arbetare-, kund och kategorienheter om användaren innehåller tydligt en URL via den här sidan, rekommenderar vi att du anger vilken bild är standardinställningbilden, eftersom Retail serverklienter visar bara en bild per katalog, kund, anställd och kategori. Om användaren inte anger en standardinställningbild, bestämmer systemet standardinställningbilden och skicka den till Retail Chain Manager-menyn uppringangen tjänst (MPOS eller ecommercen).
 
-### <a name="overwrite-the-image-url-for-catalog-product-images-from-the-preview-page"></a>Skriv över bildURL för katalogproduktbilder från förtittsidan
+### Skriv över bildURL för katalogproduktbilder från förtittsidan
+<a id="overwrite-the-image-url-for-catalog-product-images-from-the-preview-page" class="xliff"></a>
 
 Om du vill skriva över bildURL för katalogproduktbilder måste du använda sidan **Förhandsgranska**. Du kan inte använda funktionerna i Redigera i Excel.
 
 1.  Välj en katalog och välj produkten att skriva över bilden för att skriva över produktbilder på en katalognivå.
 2.  Klicka på **Attribut**.
 3.  På nästa sida markera **Bild** och klicka på **Redigera**. Sidan **Preview** öppnar en dialogruta med skjutreglage.
-4.  Klicka **Lägg till**på, och skriver över bildURL med en ny URL-adressen.
+4.  Klicka **Lägg till** på, och skriver över bildURL med en ny URL-adressen.
 5.  Klicka på **OK**. Du ser förhandsgranskning av den och välj den kan nu ange den som standardinställningbilden.
 
 **[![kat3](./media/cat3.png)](./media/cat3.png)Obs!** När du har kategoribildassociation, måste du publicera kanalen och köra kanaljobbet att garantera att ändringarna publiceras på kanaldatabasen.
 
-## <a name="setting-up-images-to-appear-in-offline-mode-for-mpos"></a>Ställa in bilder som anges i fältet offline läget för MPOS
+## Ställa in bilder som anges i fältet offline läget för MPOS
+<a id="setting-up-images-to-appear-in-offline-mode-for-mpos" class="xliff"></a>
 MPOS kan det i läget OLAP-kuber (när MPOS som är försäljningen i minut server) eller offline det läget (när det inte finns någon Retail server eller nätverksanslutning, och transaktioner lagras i en lokal offlinedatabas). När MPOS körs i frånkopplat läge, kan den inte få bilder från extern bildserveren om du vill visa från ett lämpligt servern, eftersom Retail servermöjlighet anslutning har förlorats. Du kan dock fortfarande ställa in bilder, så att de visas, när MPOS körs i frånkopplat läge.
 
-### <a name="set-up-product-images-to-appear-in-offline-mode-for-mpos"></a>Ställ in produktbilder som anges i fältet offline läget för MPOS
+### Ställ in produktbilder som anges i fältet offline läget för MPOS
+<a id="set-up-product-images-to-appear-in-offline-mode-for-mpos" class="xliff"></a>
 
 Produktbilderna, som måste användas i frånkopplat leveranssätt, kan ställas in, genom att överföra den begärda fysiska till bilden basproduktbilden.
 
 1.  Klicka på **Produktinformationshantering** &gt; **Produkter** &gt; **Produkter**.
 2.  Välj produkten att ange den offline bilden för.
-3.  Klicka **Redigera**på, och sedan klicka på pilen i högra hörnet för att visa det högra fönstret.
-4.  I **Produktbild** snabbfliken överför **Ändra bild**på, och den fysiska bilden som ska användas för den valda produkten i frånkopplat läge.
+3.  Klicka **Redigera** på, och sedan klicka på pilen i högra hörnet för att visa det högra fönstret.
+4.  I **Produktbild** snabbfliken överför **Ändra bild** på, och den fysiska bilden som ska användas för den valda produkten i frånkopplat läge.
 5.  Spara och stäng formuläret
 6.  Kör katalogjobbet i Huvudkontor, medan att se till MPOS är anslutet i form, att data skickas minst en gång till offlinedatabasen.
 7.  Sätt MPOS till frånkopplat läge. Du bör se den bild du överför för den specifika Huvudkontor i produkten. [![offline1](./media/offline1.png)](./media/offline1.png)
 
  
 
-### <a name="set-up-catalog-category-employee-and-customer-images-to-appear-in-offline-mode-for-mpos"></a>Ställ in katalogen, kategori, medarbetare och kundbilder som ska visas i det läget för MPOS offline
+### Ställ in katalogen, kategori, medarbetare och kundbilder som ska visas i det läget för MPOS offline
+<a id="set-up-catalog-category-employee-and-customer-images-to-appear-in-offline-mode-for-mpos" class="xliff"></a>
 
 Katalogen, kategori, medarbetare och kundbilderna, som måste användas i frånkopplat leveranssätt, kan ställas in, genom att lägga till den begärda bildens mållänken till gallerit och ange bilden som standardinställningbilden för den valda enheten.
 
 1.  Gå till katalogen och sedan, i åtgärdsfönstret, klicka på **Media** &gt; **Bilder**.
-2.  Följ stegen i **Skriv över från enhet-nivån förtittsidan**om du vill lägga till den externa bildURL.
+2.  Följ stegen i **Skriv över från enhet-nivån förtittsidan** om du vill lägga till den externa bildURL.
 3.  Välj den bild, som standardinställningbilden för katalogen, genom att markera kryssrutan mot bilden, angav i rutnätet.
 4.  Kör katalogjobbet. Den bild du vill använda nu som den offline bilden för den katalog i MPOS.
 5.  Följ en liknande process för andra enheter, till exempel kategori, medarbetare och kund.

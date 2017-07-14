@@ -1,15 +1,15 @@
 ---
 title: "Power BI-innehåll om kompensationer och förmåner"
-description: "Det här avsnittet beskriver Dynamics 365 for Operations - Power BI-innehåll för kompensationer och förmåner. Det förklarar hur du kommer åt rapporterna som är inkluderade i innehållspaketet, samt ger dig information om den datamodell och de enheter som användes för att skapa innehållspaketet."
+description: "Det här avsnittet beskriver Finance and Operations - Power BI-innehåll för kompensationer och förmåner. Det förklarar hur du kommer åt rapporterna som är inkluderade i innehållspaketet, samt ger dig information om den datamodell och de enheter som användes för att skapa innehållspaketet."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: Operations
+ms.search.scope: Operations, UnifiedOperations
 ms.custom: 263914
 ms.assetid: 18634bb5-3341-42f2-9cc9-7b04708b506b
 ms.search.region: Global
@@ -17,28 +17,31 @@ ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 6f8375d31cb3b6a68314eba8341d94dce2edaac2
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 70e35a33e06fe7c89dd64d17703f19a71d4a157e
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="compensation-and-benefits-power-bi-content"></a>Power BI-innehåll om kompensationer och förmåner
+# Power BI-innehåll om kompensationer och förmåner
+<a id="compensation-and-benefits-power-bi-content" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-Det här avsnittet beskriver Dynamics 365 for Operations - Power BI-innehåll för kompensationer och förmåner. Det förklarar hur du kommer åt rapporterna som är inkluderade i innehållspaketet, samt ger dig information om den datamodell och de enheter som användes för att skapa innehållspaketet.
+Det här avsnittet beskriver Finance and Operations - Power BI-innehåll för kompensationer och förmåner. Det förklarar hur du kommer åt rapporterna som är inkluderade i innehållspaketet, samt ger dig information om den datamodell och de enheter som användes för att skapa innehållspaketet.
 
-<a name="accessing-the-content-pack"></a>Åtkomst till innehållspaketet
+Åtkomst till innehållspaketet
+<a id="accessing-the-content-pack" class="xliff"></a>
 --------------------------
 
-Du kan hitta innehållspaketet för kompensationer och förmåner i biblioteket för gemensamma tillgångar i Microsoft Dynamics Lifecycle Services (LCS). Mer information om hur du hämtar innehållspaketet och kopplar det till dina Microsoft Dynamics 365 for Operations-data, se [Power BI-innehåll i LCS från Microsoft och dina partner](power-bi-content-microsoft-partners.md).
+Du kan hitta innehållspaketet för kompensationer och förmåner i biblioteket för gemensamma tillgångar i Microsoft Dynamics Lifecycle Services (LCS). Mer information om hur du hämtar innehållspaketet och kopplar det till dina Microsoft Dynamics 365 for Finance and Operations-data, se [Power BI-innehåll i LCS från Microsoft och dina partner](power-bi-content-microsoft-partners.md).
 
-## <a name="reports-that-are-included-in-the-content-pack"></a>Rapporter som ingår i innehållspaketet
-När du har anslutit innehållspaketet till dina Dynamics 365 for Operations-data kommer rapporterna att visa din organisations data. Om du aldrig har använt Microsoft Power BI tidigare kan du lära dig mer om det på sidan [Guidad utbildning för Power BI](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData). Rapporter som ingår i innehållspaketet har både diagram och tabeller med ytterligare information. Följande register beskriver rapporterna.
+## Rapporter som ingår i innehållspaketet
+<a id="reports-that-are-included-in-the-content-pack" class="xliff"></a>
+När du har anslutit innehållspaketet till dina Finance and Operations-data kommer rapporterna att visa din organisations data. Om du aldrig har använt Microsoft Power BI tidigare kan du lära dig mer om det på sidan [Guidad utbildning för Power BI](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData). Rapporter som ingår i innehållspaketet har både diagram och tabeller med ytterligare information. Följande register beskriver rapporterna.
 
 | Rapport                     | Innehåll                                                                                                                              |
 |----------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
@@ -47,8 +50,9 @@ När du har anslutit innehållspaketet till dina Dynamics 365 for Operations-dat
 
 Diagrammen och rutorna i samtliga dessa rapporter kan filtreras och fästas på instrumentpanelen. Mer information om hur du filtrerar och fäster i Power BI finns i [Skapa och konfigurera en intrumentpanel](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
-## <a name="understanding-the-data-model-and-entities"></a>Förstå datamodellen och enheterna
-Dynamics 365 for Operations-data används för att fylla i rapporter i innehållspaketet för kompensationer och förmåner. Följande tabell visar enheterna som innehållspaketet baserades på.
+## Förstå datamodellen och enheterna
+<a id="understanding-the-data-model-and-entities" class="xliff"></a>
+Finance and Operations-data används för att fylla i rapporter i innehållspaketet för kompensationer och förmåner. Följande tabell visar enheterna som innehållspaketet baserades på.
 
 | Enhet                            | Innehåll                                                                                                   | Relationer med andra entiteter                                                                                                                                                                                                                                                                                                |
 |-----------------------------------|------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -77,7 +81,8 @@ Dynamics 365 for Operations-data används för att fylla i rapporter i innehåll
 
 Dessa enheter används för att skapa beräknade mått i datamodellen. Beräknade åtgärder används sedan för att beräkna huvudindikatorerna för prestanda (KPI) samt de rapporter som används i innehållspaketet. Om du vill inkludera ytterligare beräkningar i rapporterna och instrumentpanelerna kan du ladda ned och ändra filen CompensationandBenefits.pbix från LCS. Filen är den standarddatamodell som använts för att skapa innehållspaketet. När du är klar med ändringarna kan du skapa ett innehållspaket för organisationen samt en instrumentpanel som innehåller den information som du har lagt till.
 
-## <a name="additional-resources"></a>Ytterligare resurser
+## Ytterligare resurser
+<a id="additional-resources" class="xliff"></a>
 Nedan följer några användbara länkar som är relaterade till enheter och till att skapa innehåll för Power BI:
 
 -   [Datatabeller](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/)

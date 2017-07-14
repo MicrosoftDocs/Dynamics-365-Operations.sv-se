@@ -1,15 +1,15 @@
 ---
 title: Skapa konsolideringskontogrupper och ytterligare konsolideringskonton
-description: "Det här avsnittet innehåller information om konsolideringskontogrupper och ytterligare konsolideringskonton, och förklarar hur de används i Microsoft Dynamics 365 for Operations."
+description: "Det här avsnittet innehåller information om konsolideringskontogrupper och ytterligare konsolideringskonton, och förklarar hur de används i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition."
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 265544
 ms.assetid: 71c31df7-b655-46a8-8844-4f92a8bd71b0
 ms.search.region: Global
@@ -17,27 +17,30 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 72aba47eeaab8c049016c560a9543dd2476308df
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 835669de01deb1ba0dcc5752d9d6d8f498e6ff7d
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="consolidation-account-groups-and-additional-consolidation-accounts"></a>Skapa konsolideringskontogrupper och ytterligare konsolideringskonton
+# Skapa konsolideringskontogrupper och ytterligare konsolideringskonton
+<a id="consolidation-account-groups-and-additional-consolidation-accounts" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-Det här avsnittet innehåller information om konsolideringskontogrupper och ytterligare konsolideringskonton, och förklarar hur de används i Microsoft Dynamics 365 for Operations.
+Det här avsnittet innehåller information om konsolideringskontogrupper och ytterligare konsolideringskonton, och förklarar hur de används i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 
-<a name="consolidation-account-groups"></a>Konsolideringskontogrupper
+Konsolideringskontogrupper
+<a id="consolidation-account-groups" class="xliff"></a>
 ----------------------------
 
 Med konsolideringskontogrupper kan du skapa grupper av konton som du vill använda för att konsolidera data. Oftast representerar konsolideringskontogrupp en myndighetsbeviljad kontoplan eller mappar konton till en grupp som definieras av företagets huvudkontor. Du hittar konsolideringskontogrupper i avsnittet **Inställningar** i modulen **Konsolideringar**. När du lägger till en ny grupp kan du ange en unik identifierare för kontogruppen och ett namn.
 
-## <a name="additional-consolidation-accounts"></a>Ytterligare konsolideringskonton
+## Ytterligare konsolideringskonton
+<a id="additional-consolidation-accounts" class="xliff"></a>
 Med ytterligare konsolideringskonton kan du tilldela en konsolideringskontogrupp ett konto från en befintlig kontoplan. Du kan sedan ange ett värde för konsolideringskonto och ett namn. 
 
 Du hittar ytterligare konsolideringskonton i avsnittet **Inställningar** i modulen **Konsolideringar**. När du skapar ett nytt konsolideringskonto måste du ange följande information:

@@ -1,40 +1,42 @@
 ---
-title: "Ekonomisk rapportering för Dynamics 365 for Operations"
-description: "Ekonomisk rapportering för Dynamics 365 for Operations kan användas av finans- och affärsmän för att skapa, underhålla, distribuera och visa bokslut. Den går utanför traditionella rapporteringsbegränsningar för att hjälpa dig att skapa olika typer av rapporter på ett effektivt sätt."
+title: "Ekonomisk rapportering för Finance and Operations"
+description: "Ekonomisk rapportering för Finance and Operations kan användas av finans- och affärsmän för att skapa, underhålla, distribuera och visa bokslut. Den går utanför traditionella rapporteringsbegränsningar för att hjälpa dig att skapa olika typer av rapporter på ett effektivt sätt."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User
-ms.search.scope: Management Reporter
+ms.search.scope: Management Reporter, UnifiedOperations
 ms.custom: 68813
 ms.assetid: fe8b27e7-a40a-4689-ac6a-7f7401c387f5
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 
-ms.dyn365.ops.version: 
+ms.search.validFrom: 2016-11-30
+ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 997c34856d2445b02038d208f91522fe7a9a487c
+ms.sourcegitcommit: 770a1681e4fa9974b081d0c63a10eb1961f13014
+ms.openlocfilehash: 4e0c984b95cd395e7ab23394b886782e55fac90f
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="financial-reporting-for-dynamics-365-for-operations"></a>Ekonomisk rapportering för Dynamics 365 for Operations
+# Ekonomisk rapportering för Finance and Operations
+<a id="financial-reporting-for-finance-and-operations" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-Ekonomisk rapportering för Dynamics 365 for Operations kan användas av finans- och affärsmän för att skapa, underhålla, distribuera och visa bokslut. Den går utanför traditionella rapporteringsbegränsningar för att hjälpa dig att skapa olika typer av rapporter på ett effektivt sätt.
+Ekonomisk rapportering för Finance and Operations kan användas av finans- och affärsmän för att skapa, underhålla, distribuera och visa bokslut. Den går utanför traditionella rapporteringsbegränsningar för att hjälpa dig att skapa olika typer av rapporter på ett effektivt sätt.
 
 Ekonomisk rapportering innehåller stöd för dimension. Därför är kontosegment eller dimensioner tillgängliga direkt. Det krävs inga ytterligare verktyg eller konfigurationssteg.
 
-## <a name="financial-reporting-components"></a>Komponenter för ekonomisk rapportering
+## Komponenter för ekonomisk rapportering
+<a id="financial-reporting-components" class="xliff"></a>
 Följande komponenter för ekonomisk rapportering gör det lättare att skapa, visa och tidsplanera rapporter.
 
 | Komponent        | Funktioner                                                                                                                                                                                                                                                                           | Ytterligare information                                                                          |
@@ -42,7 +44,8 @@ Följande komponenter för ekonomisk rapportering gör det lättare att skapa, v
 | Report Designer  | Skapa rapportbyggnadsblock som kan kombineras för att definiera och generera en rapport. Rapportguiden leder mindre erfarna användare genom designprocessen. Avancerade användare kan skapa nya rapportbyggnadsblock eller ändra befintliga byggnadsblock så att de uppfyller deras krav. |                                                                                                 |
 | Rapportscheman | Tidsplanera en enstaka rapport eller en rapportgrupp så att den skapas regelbundet.                                                                                                                                                                                          | [Generera ekonomisk rapport](generate-financial-report.md) |
 
-## <a name="features"></a>Funktioner
+## Funktioner
+<a id="features" class="xliff"></a>
 <table>
 <thead>
 <tr class="header">
@@ -86,7 +89,8 @@ Följande komponenter för ekonomisk rapportering gör det lättare att skapa, v
 </tbody>
 </table>
 
-#<a name="see-also"></a>Se även
+#Se även
+<a id="see-also" class="xliff"></a>
 [Generera ekonomisk rapport](generate-financial-report.md)
 
 

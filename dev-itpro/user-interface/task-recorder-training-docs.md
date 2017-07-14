@@ -3,7 +3,7 @@ title: Skapa dokumentation eller utbildning med uppgiftsregistreringar
 description: "Det här avsnittet förklarar vad uppgiftsregistrering och uppgiftsguider är, hur du skapar uppgiftsinspelningar och hur du anpassar Microsoft uppgiftsguider och inkluderar dem i din Hjälp."
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,33 +19,39 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 8b44dc66cdcd1ede59cb9bb4ed05be27dd465599
+ms.sourcegitcommit: ee6d455c44a38d9b3962ca20a5cb28007c19cf1d
+ms.openlocfilehash: e71c2638caccb9a31c5254a3cf68c802808960b9
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/17/2017
 
 
 ---
 
-# <a name="create-documentation-or-training-using-task-recordings"></a>Skapa dokumentation eller utbildning med uppgiftsregistreringar
+# Skapa dokumentation eller utbildning med uppgiftsregistreringar
+<a id="create-documentation-or-training-using-task-recordings" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
-Det här avsnittet förklarar vad uppgiftsregistrering och uppgiftsguider är, hur du skapar uppgiftsinspelningar och hur du anpassar Microsoft uppgiftsguider och inkluderar dem i din Hjälp.
+Det här avsnittet förklarar vad uppgiftsregistrering och uppgiftsguider är, hur du skapar uppgiftsinspelningar och hur du anpassar Microsoft uppgiftsguider för Unified Operations-produkter och inkluderar dem i din Hjälp.
 
-<a name="learn-about-task-recorder"></a>Läs om uppgiftsregistrering
+> [!IMPORTANT]
+> Du kan inte skapa anpassade uppgiftsguider för Dynamics 365 for Talent. Hjälpsystemet för Talent ansluts automatiskt till uppgiftsguider för produkten. 
+
+Läs om uppgiftsregistrering
+<a id="learn-about-task-recorder" class="xliff"></a>
 -------------------------
 
-Uppgiftsregistrering är ett verktyg i Dynamics for Operations som du använder till att registrera åtgärder som du utför i produktens användargränssnitt (UI). När du använder uppgiftsregistrering spelas alla händelser som du utför i UI, som utförs mot servern, inklusive lägga till värden, ändra inställningar, ta bort data, in. Stegen som du registrerar kallas gemensamt för en *uppgiftsregistrering* Uppgiftsregistrering kan användas på flera sätt:
+Uppgiftsinspelaren är ett verktyg som du kan använda till att registrera åtgärder som du utför i produktanvändargränssnittet (UI). När du använder uppgiftsregistrering spelas alla händelser som du utför i UI, som utförs mot servern, inklusive lägga till värden, ändra inställningar, ta bort data, in. Stegen som du registrerar kallas gemensamt för en *uppgiftsregistrering* Uppgiftsregistrering kan användas på flera sätt:
 
--   **Uppgiftsregistrering kan spelas upp som uppgiftsguider.** Uppgifsguider är en integrerad del av hejälpupplevelsen i Dynamics 365 for Operations. En uppgiftsguide är en kontrollerad, guidad, interaktiv upplevelse som leder dig genom stegen för en affärsprocess. Användaren uppmanas avsluta varje steg med en prompt ("eller bubbla") som animerar i UI och pekar på UI-elementet som användaren ska interagera med. "Bubblan" innehåller även information om hur du interagerar med element som till exempel "Klicka här" eller "I det här fältet anger du ett värde". En uppgiftsguide körs mot användarens aktuella datauppsättning och informationen som anges sparas i användarens miljö.
+-   **Uppgiftsregistrering kan spelas upp som uppgiftsguider.** Uppgiftsguider är en integrerad del av Hjälp-upplevelsen. En uppgiftsguide är en kontrollerad, guidad, interaktiv upplevelse som leder dig genom stegen för en affärsprocess. Användaren uppmanas avsluta varje steg med en prompt ("eller bubbla") som animerar i UI och pekar på UI-elementet som användaren ska interagera med. "Bubblan" innehåller även information om hur du interagerar med element som till exempel "Klicka här" eller "I det här fältet anger du ett värde". En uppgiftsguide körs mot användarens aktuella datauppsättning och informationen som anges sparas i användarens miljö.
 -   **Uppgiftsregistreringar kan visas som processteg i hjälpfönstret.** Du kan använda hjälpfönstret om du vill söka efter och visa uppgiftsregistreringar. Du kan öppna hjälpfönstret genom att klicka på ikonen **?** i det övre navigeringsfältet eller så kan du använda tangentkombinationen **Ctrl + Skift +?**. Läsa stegen för en uppgiftsregistrering i hjälpfönstret eller så kan du välja om du vill spela in som en uppgiftsguide för hjälp i UI.
--   **Uppgiftsregistreringar kan sparas i BPM.** Du kan spara dina uppgiftsregistreringar på en rad i en hierarki i ett Business Process Modeler-bibliotek (BPM) i Lifecycle Services (LCS). En lista över steg och en affärsflödesplan genereras från inspelningen. Uppgiftsregistreringar som sparats i ett BPM-bibliotek kan visas i Dynamics 365 for Operations som Hjälp.
+-   **Uppgiftsregistreringar kan sparas i BPM.** Du kan spara dina uppgiftsregistreringar på en rad i en hierarki i ett Business Process Modeler-bibliotek (BPM) i Lifecycle Services (LCS). En lista över steg och en affärsflödesplan genereras från inspelningen. Uppgiftsinspelningar som sparats i ett BPM-bibliotek kan visas som hjälp.
 -   **Uppgiftsregistreringar kan sparas som Word-dokument.** På så sätt kan du enkelt producera utskrivbara utbildningsguider.
 
-Du kan skapa egna uppgiftsregistreringar, spela upp uppgiftsregistreringar som tillhandahålls av Microsoft eller ändra Microsofts uppgiftsregistrering för att återspegla konfigurationen. För mer information om uppgiftsinspelaren, se [Uppgiftsinspelaren i Dynamics 365 for Operations](task-recorder.md).
+Du kan skapa egna uppgiftsregistreringar, spela upp uppgiftsregistreringar som tillhandahålls av Microsoft eller ändra Microsofts uppgiftsregistrering för att återspegla konfigurationen. För mer information om Uppgiftsinspelare, se [Uppgiftsinspelare](task-recorder.md).
 
-## <a name="plan-your-task-recording"></a>Planera uppgiftsregistrering
+## Planera uppgiftsregistrering
+<a id="plan-your-task-recording" class="xliff"></a>
 Om du skapar en ny uppgiftsregistrering eller baserar din registrering på Microsofts uppgiftsregistrering, tänk på följande information.
 
 -   Planera registreringen som för en video. Gör alla dina beslut i förväg.
@@ -83,7 +89,7 @@ Detta är vad anteckningskommentar ser ut som i "bubblan” i uppgiftsguiden.
 
 [![skärm4](./media/screen4.png)](./media/screen4.png)
 
--   **Informationssteg**: Dessa anteckningarna skapats genom att högerklicka på en kontroll eller någonstans i ett formulär &lt; **Uppgiftsregistrering** &lt; **steget Lägg till information. **Informationssteg visas som ett numrerat steg vid den tidpunkt som du infgar det, även om ingen åtgärd rapporterades i användargränssnittet. Du kan lägga till ett informationssteg på formulärnivå eller ett informationssteg associerat med en kontroll. När ett informationssteg tillhör ett formulär visas uppgiftsguidens "bubbla" någonstans i formuläret utan pekare när uppgiftsguiden spelas upp. När ett informationssteg tillhör en kontroll pekar uppgiftsguidens "bubbla" på kontrollen när uppgiftsguiden spelas upp. I hjälpfönstret visas en informationsstegsanteckning som ett numrerat steg med texten du angett. Använd informationssteg för att förbereda användaren för nästa steg, för att beskriva steg som måste utföras utanför Dynamics 365 for Operations eller att hänvisa till andra registreringar (det går dock inte att skapa hyperlänkar i kommentarer).
+-   **Informationssteg**: Dessa anteckningarna skapats genom att högerklicka på en kontroll eller någonstans i ett formulär &lt; **Uppgiftsregistrering** &lt; **steget Lägg till information. **Informationssteg visas som ett numrerat steg vid den tidpunkt som du infgar det, även om ingen åtgärd rapporterades i användargränssnittet. Du kan lägga till ett informationssteg på formulärnivå eller ett informationssteg associerat med en kontroll. När ett informationssteg tillhör ett formulär visas uppgiftsguidens "bubbla" någonstans i formuläret utan pekare när uppgiftsguiden spelas upp. När ett informationssteg tillhör en kontroll pekar uppgiftsguidens "bubbla" på kontrollen när uppgiftsguiden spelas upp. I hjälpfönstret visas en informationsstegsanteckning som ett numrerat steg med texten du angett. Använd informationssteg för att förbereda användaren för nästa steg, för att beskriva steg som måste utföras utanför Microsoft Dynamics 365 for Finance and Operations, Enterprise edition eller att hänvisa till andra registreringar (det går dock inte att skapa hyperlänkar i kommentarer).
 
 **Avgör hur långa registreringen ska vara**
 
@@ -95,13 +101,15 @@ Detta är vad anteckningskommentar ser ut som i "bubblan” i uppgiftsguiden.
 
 **Bestäm var i användargränssnittet du startar en inspelning**. Sidan som visas när du börjar spela in en uppgiftsinspelning påverkar vilka sidor uppgiftsguiden visar. Om du exempelvis vill att din uppgiftsinspelning ska visas i listan i hjälpfönstret när användaren klickar på Hjälp på sidan Redovisningsparametrar måste du starta inspelningen på sidan Redovisningsparametrar. **Spara registreringar som .axtr-filer** När du har skapat eller redigerat en uppgiftsregistrering får du flera alternativ för att hämta eller spara registreringen. Du kan hämta filen som en uppgiftsregistreringspaket (.axtr), hämta den som en rå registreringsfil (.xml), hämta den som ett Word-dokument eller spara filen i ett LCS-bibliotek. Det är en bra idé att alltid uppgiftsregistreringar som en uppgiftsregistreringspaketfil (.axtr). Detta gör det lättare att underhålla filen enklare om procedurer eller kommentarer måste ändras senare. Om du vill hämta filen som ett Word-dokument, spara den även uppgiftsregistreringspaketfil.
 
-## <a name="create-your-task-recording"></a>Skapa en uppgiftsregistrering
+## Skapa en uppgiftsregistrering
+<a id="create-your-task-recording" class="xliff"></a>
 Detaljerad information finns i [Skapa en uppgiftsinspelning](task-recorder.md).
 
-## <a name="copy-and-customize-microsofts-task-recordings"></a>Kopiera och anpassa Microsofts uppgiftsregistreringar
+## Kopiera och anpassa Microsofts uppgiftsregistreringar
+<a id="copy-and-customize-microsofts-task-recordings" class="xliff"></a>
 Du kan hämta och redigera Microsofts uppgiftsregistreringar för att använda dem för egen hjälpdokumentation eller eget utbildningsmaterial. Hämta en Microsoft uppgiftsregistrering genom att följa dessa steg:
 
-1.  Öppna uppgiftsregistrerare i Microsoft Dynamics 365 for Operations. Uppgiftsregistrering finns på menyn **Inställningar**.
+1.  Öppna Uppgiftsinspelaren. Uppgiftsregistrering finns på menyn **Inställningar**.
 2.  Klicka på **Underhåll en registrering** i fönstret Uppgiftsregistrering.
 3.  Under **Var är registreringen?**, klicka på **Den finns i ett LCS-bibliotek**.
 4.  Klicka på **Välj LCS-biblioteket**.
@@ -113,24 +121,21 @@ Du kan hämta och redigera Microsofts uppgiftsregistreringar för att använda d
 10. När registreringen har spelat till slutet, klicka på **Stoppa** i uppgiftsregistreringsfältet överst på skärmen.
 11. Välj hur du vill spara uppgiftsregistreringen.
 
-## <a name="include-your-task-recordings-in-the-help-pane"></a>Inkludera dina uppgiftsregistreringar i hjälpfönstret
+## Inkludera dina uppgiftsregistreringar i hjälpfönstret
+<a id="include-your-task-recordings-in-the-help-pane" class="xliff"></a>
 Om du vill visa dina egna anpassade uppgiftsregistrering i hjälpfönstret så att de kan spelas upp som uppgiftsguider eller visas som text, måste du spara dina uppgiftsregistreringar i ditt eget BPM-bibliotek och sedan uppdatera hjälpsystemparametrarna så att de pekar på ditt BPM bibliotek. Mer information finns i [Ansluta hjälpsystemet](../get-started/help-connect.md).
 
-<a name="see-also"></a>Se även
+Se även
+<a id="see-also" class="xliff"></a>
 --------
 
-[Dynamics 365 for Operations Hjälp](..\get-started\help-overview.md)
+[Hjälp – översikt](..\get-started\help-overview.md)
 
-[Ansluta Hjälp](..\get-started\help-connect.md)
+[Anslut hjälp](..\get-started\help-connect.md)
 
-[Uppgiftsregistrerare i Dynamics 365 for Operations](task-recorder.md)
+[Uppgiftsinspelare](task-recorder.md)
 
 [Nyligen tillagda uppgiftsregistreringsfunktioner](\core\get-started\recently-added-editing-features-in-task-recorder)
 
-[Skapa nya utbildningsmappar för Dynamics AX inom Lifestyle Services med hjälp av Uppgiftsinspelning (extern länk)](https://docs.com/mufife/163372c6-f366-4c5a-94fa-93e2c25f878a/creating-new-training-libraries-for-dynamics-ax)
-
 [Skapa heltäckande hjälpavsnitt med uppgiftsinspelaren (extern länk)](https://mbspartner.microsoft.com/AX/Videos/970)
-
-
-
 

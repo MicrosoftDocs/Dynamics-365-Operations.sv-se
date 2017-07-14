@@ -3,14 +3,14 @@ title: Lagerstatus
 description: "Det här avsnittet innehåller en beskrivning av hur du kan använda lagerstatusar för att kategorisera och spåra lagret."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: EcoResStorageDimensionGroup, WHSInventStatus
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 21331
 ms.assetid: b35f495f-de4f-48a0-9d09-4d06781d7650
 ms.search.region: Global
@@ -18,15 +18,16 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 1565b7738260270a986b515dfd21931296ce83bd
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: b3ec66c805d028c20f3d3f95e7af9d78252828c7
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="inventory-statuses"></a>Lagerstatus
+# Lagerstatus
+<a id="inventory-statuses" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
@@ -44,7 +45,7 @@ Nedan följer några exempel på hur du kan använda lagerstatus:
 
 En lagerstatus är en av dimensionerna i lagringsdimensionsgruppen. Lagerstatusar kan kategoriseras som tillgängliga eller inte tillgängliga, och du kan använda parametern **Lagerspärr** om du vill spärra artiklar som har en otillgänglig lagerstatus. Artiklar med en blockerad status betraktas som fysiskt lager och kan inte användas i en produktionsorder, försäljningsorder, överföringsorder eller en utgående transaktion. 
 
-Du kan använda lagerställeartiklar med tillgänglig eller inte tillgänglig lagerstatus för inkommande arbete. Till exempel skapar du en tillgänglig status med namnet **Klart**, en otillgänglig status med namnet **Skadat** och en blockerad status med namnet **Spärrad**. När du skapar en inköpsorder för inlevererade eller returnerade artiklar och om sådana artiklar skadas, kan du ändra lagerstatus på de artiklarna till **Skadat** på inköpsorderraden. När artiklarna har kommit, anges statusen automatiskt till **Spärrad**. Om du skannar de skadade artiklarna med hjälp av en mobil enhet kan Microsoft Dynamics 365 for Operations använda platsdirektiv och arbetsmallar för att visa information om lämpliga platser eller platsintervall där du kan placera artiklarna. För returnerade artiklar skapas utleveranstypen **Reservation** på sidan **Lagertransaktioner**. 
+Du kan använda lagerställeartiklar med tillgänglig eller inte tillgänglig lagerstatus för inkommande arbete. Till exempel skapar du en tillgänglig status med namnet **Klart**, en otillgänglig status med namnet **Skadat** och en blockerad status med namnet **Spärrad**. När du skapar en inköpsorder för inlevererade eller returnerade artiklar och om sådana artiklar skadas, kan du ändra lagerstatus på de artiklarna till **Skadat** på inköpsorderraden. När artiklarna har kommit, anges statusen automatiskt till **Spärrad**. Om du skannar de skadade artiklarna med hjälp av en mobil enhet kan Microsoft Dynamics 365 for Finance and Operations använda platsdirektiv och arbetsmallar för att visa information om lämpliga platser eller platsintervall där du kan placera artiklarna. För returnerade artiklar skapas utleveranstypen **Reservation** på sidan **Lagertransaktioner**. 
 
 För utgående arbete, använd artiklar med tillgänglig lagerstatus. Om det finns artiklar med statusen **Trasig** och huvudplaneringen körs på dessa artiklar, betraktas artiklarna som saknade och lagret fylls automatiskt på. 
 

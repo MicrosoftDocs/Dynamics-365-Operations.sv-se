@@ -3,14 +3,14 @@ title: Rullande inventering
 description: "Den här artikeln beskriver hur du kan använda rullande inventering tillsammans med den lagerställelösning som är tillgänglig i Lagerstyrning. Den här artikeln gäller inte för den lagerställelösning som är tillgänglig i Lagerhantering."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: WHSCycleCountPlan, WHSCycleCountPlanListPage, WHSCycleCountThreshold, WHSWorkTableListPage
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 50671
 ms.assetid: 49f5c431-b043-4170-aa24-b7d5d1ee063e
 ms.search.region: Global
@@ -18,15 +18,16 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 4446dfec1fa8eabb45e14b3f2ff685b3b1d68e2c
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: ebc7789d7b0be5db4a0faf4309bc3640f51956c6
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="cycle-counting"></a>Rullande inventering
+# Rullande inventering
+<a id="cycle-counting" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
@@ -36,12 +37,13 @@ Den här artikeln beskriver hur du kan använda rullande inventering tillsammans
 Rullande inventering är en lagerställesprocess som du kan använda för att kontrollera lagerbehållningsartiklar. Processen för rullande inventering kan beskrivas i tre steg:
 
 1.  **Skapa arbetsuppgift för rullande inventering** – arbetsuppgift för rullande inventering kan skapas automatiskt baserat på tröskelparametrar för artiklar eller genom att använda en plan för rullande inventering. Du kan också skapa rullande inventering manuellt, med hjälp av artikeln eller lagerställeparametrar på sidan **Rullande inventeringsarbete efter artikel** efter på sidan **Rullande inventeringsarbete efter plats**.
-2.  **Bearbeta rullande inventering** – Efter att du har skapat det rullande inventeringsarbetet utför du det rullande inventeringsarbetet genom att räkna artiklar på en lagerplats och sedan ange resultatet i Microsoft Dynamics 365 for Operations. Alternativt kan du inventera artiklar i ett lagerställe utan att skapa rullande inventeringsarbete. Den här processen kallas för *rullande inventering av typen spot*.
+2.  **Bearbeta rullande inventering** – Efter att du har skapat det rullande inventeringsarbetet utför du det rullande inventeringsarbetet genom att räkna artiklar på en lagerplats och sedan ange resultatet i Microsoft Dynamics 365 for Finance and Operations. Alternativt kan du inventera artiklar i ett lagerställe utan att skapa rullande inventeringsarbete. Den här processen kallas för *rullande inventering av typen spot*.
 3.  **Lösa avvikelser i det räknade värdet** – Efter en rullande inventering har alla artiklar som har avvikelser i det inventerade värdet en arbetsstatus som är **Pågående granskning** på sidan **Allt arbete**. Du kan lösa dessa skillnader på sidan **Granskning av väntande rullande inventeringsarbete**.
 
 I bilden nedan visas processen för rullande inventering. ![Bearbeta flöde rullande inventering](./media/performcyclecountinginawarehouselocation.jpg)
 
-## <a name="cycle-counting-prerequisites"></a>Förutsättningar för rullande inventering
+## Förutsättningar för rullande inventering
+<a id="cycle-counting-prerequisites" class="xliff"></a>
 Följande tabell visar förutsättningarna som krävs och måste finnas på plats innan du kan använda rullande inventering.
 <table>
 <colgroup>
@@ -97,28 +99,33 @@ Följande tabell visar förutsättningarna som krävs och måste finnas på plat
 </tbody>
 </table>
 
-## <a name="automatically-create-cycle-counting-work"></a>Skapa rullande inventeringsarbete automatiskt
+## Skapa rullande inventeringsarbete automatiskt
+<a id="automatically-create-cycle-counting-work" class="xliff"></a>
 Det finns två sätt att schemalägga återkommande skapande av arbete för rullande inventering: ställa in trösklar för rullande inventering eller ställa in planer för rullande inventering.
 
 -   En tröskel för rullande inventering anger kvantitets- eller procentgränsen för lagerartiklar. En arbetsuppgift för rullande inventering skapas automatiskt när tröskelgränsen nås.
 -   En plan för rullande inventering skapar rullande inventeringsarbete antingen direkt eller periodiskt via ett batchjobb. När rullande inventeringsarbete skapas innehåller raden för rullande inventering information om vilken plats som ska räknas. Lagerbehållningen som är associerad med den här platsen är inte spärrad och är därför tillgänglig för reservation och utgående bearbetning, även om öppet inventeringsarbete finns.
 
-### <a name="create-cycle-counting-work-based-on-threshold-parameters-for-items"></a>Skapa arbetsuppgift för rullande inventering baserat på tröskelparametrar för artiklar
+### Skapa arbetsuppgift för rullande inventering baserat på tröskelparametrar för artiklar
+<a id="create-cycle-counting-work-based-on-threshold-parameters-for-items" class="xliff"></a>
 
 En arbetsuppgift för rullande inventering kan skapas när antalet artiklar är under ett specifikt tröskelvärde för en plats. Det finns till exempel 60 artiklar på en plats som har en tröskel för rullande inventering på 40. Under en försäljningsordertransaktion plockas 25 artiklar från platsen och placeras på en mellanlagringsplats. Eftersom det nya artikelantalet är 35, d.v.s. mindre än tröskelkvantiteten, skapas arbete för rullande inventering automatiskt för platsen.
 
-### <a name="schedule-cycle-counting-work"></a>Tidsplanera arbete för rullande inventering
+### Tidsplanera arbete för rullande inventering
+<a id="schedule-cycle-counting-work" class="xliff"></a>
 
 Du kan schemalägga planer för rullande inventering för att skapa rullande inventeringsarbete direkt eller periodiskt. Om du ställer in planer för rullande inventering kan du styra arbetspoolen som arbetet för rullande inventering skapas för, det maximala antalet rullande inventeringar som skapas för artiklar på andra platser, och antal dagar före en lagerställeplats inventeras igen. Exempel: en artikel är tillgänglig på tre platser på lagerstället och det maximala antalet rullande inventeringar har ställts in på **2**. I det här fallet, när du kör planen för rullande inventering kommer två rullande inventeringar att skapas för de två platser där artikeln finns. Som ett annat exempel, du ställer in antal dagar mellan rullande inventeringar till **5**. I detta fall skapas arbete för rullande inventering varje fem dagar. Men om arbete för rullande inventering bearbetas på dag tre kommer nästa arbete för rullande inventering skapas fem dagar efter att den sista rullande inventeringen bearbetades på dag åtta.
 
-## <a name="create-cycle-counting-work-manually"></a>Skapa arbetsuppgift för rullande inventering manuellt
+## Skapa arbetsuppgift för rullande inventering manuellt
+<a id="create-cycle-counting-work-manually" class="xliff"></a>
 Om du vill skapa arbete för rullande inventering manuellt, kan du använda sidan **Rullande inventeringsarbete efter artikel** eller **Rullande inventeringsarbete efter plats**. Du kan ange det högsta antalet rullande inventeringar att skapa. Om till exempel lagerchefen anger ett värde på **5** skapas ett arbete för rullande inventering för fem platser även om artikeln finns på 10 olika platser. Du kan även välja ett ID för arbetspool att tilldela de skapade ID:na för arbetet med rullande inventering. När ett arbetspool-ID bearbetas för rullande inventering, bearbetas de ID:n som är tilldelade till arbetspoolen som en grupp.
 
-## <a name="perform-a-cycle-count-by-using-a-mobile-device"></a>Utför en rullande inventering med hjälp av en mobil enhet
-Det finns flera sätt att genomföra arbetet med rullande inventering genom att använda Microsoft Dynamics 365 for Operations på en mobil enhet:
+## Utför en rullande inventering med hjälp av en mobil enhet
+<a id="perform-a-cycle-count-by-using-a-mobile-device" class="xliff"></a>
+Det finns flera sätt att genomföra arbetet med rullande inventering genom att använda Microsoft Dynamics 365 for Finance and Operations på en mobil enhet:
 
 -   **Användarstyrd** – arbetaren kan ange ett arbets-ID för rullande inventering som har statusen **Öppen**.
--   **Systemstyrd** – Dynamics 365 for Operations tilldelar ett arbets-ID för rullande inventering.
+-   **Systemstyrd** – Finance and Operations tilldelar ett arbets-ID för rullande inventering.
 -   **Gruppering av rullande inventering** – arbetstagare kan gruppera ID:n för pågående rullande inventeringar som är specifika för en viss plats, zon eller arbetspool.
 -   **Rullande inventering av typen Spot** – Arbetaren kan genom att ange en lagerplats räkna artiklar på ett lagerställe när som helst utan att skapa en arbetsuppgift för rullande inventering. Om arbetaren vill utföra rullande inventering av typen spot för en plats, anger hen plats-ID.
 
@@ -129,7 +136,8 @@ Följande procedur visar hur du kan utföra rullande inventering av typen spot g
 3.  Registrera och bekräfta artikelnumret och den inventerade artikelkvantiteten. **Obs!** Statusen för rullande inventeringsarbete uppdateras till antingen **Pågående granskning** eller **Stängd** på sidan **Allt arbete** beroende på de parametrar som anges på sidan **Arbetare**.
 4.  Valfritt: Upprepa steg 3 för de artiklar som återstår på platsen och bekräfta att det inte finns några ytterligare artiklar som är tillgängliga för inventering.
 
-## <a name="resolve-cycle-counting-differences"></a>Lösa avvikelser för rullande inventering
+## Lösa avvikelser för rullande inventering
+<a id="resolve-cycle-counting-differences" class="xliff"></a>
 En avvikelse för rullande inventering inträffar i följande scenarier om alternativet **Är ansvarig för rullande inventering** är inställd till **Nej** för ett arbetaranvändar-ID:
 
 -   Värdet från den rullande inventeringen är inte inom de avvikelsegränser som anges i fälten **Gräns för högsta procentandel** eller **Gräns för högsta kvantitet** på sidan **Arbetsanvändare**. Till exempel är tillgänglig lagerkvantitet på en plats 50, och avvikelsegränsen för arbetsanvändaren är 10. Om arbetsanvändaren anger ett värde som inte är mellan 40 och 60, uppstår en skillnad.
@@ -137,7 +145,8 @@ En avvikelse för rullande inventering inträffar i följande scenarier om alter
 
 Du kan justera avvikelser i det beräknade värdet och sedan acceptera det beräknade värdet på sidan **Granskning av väntande rullande inventering**. Du kan verifiera det modifierade antalet för artikelkvantiteten på sidan **Behållning efter plats**. Värdet från den rullande inventeringen åsidosätts om skillnaden inte kan godkännas.
 
-# <a name="see-also"></a>Se även
+# Se även
+<a id="see-also" class="xliff"></a>
 [Konfigurera mobila enheter för lagerarbete](configure-mobile-devices-warehouse.md)
 
 

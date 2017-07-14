@@ -3,7 +3,7 @@ title: "Tidsgräns för fakturautfärdande"
 description: "Den här artikeln innehåller information om hur du ställer in parametrar för att beräkna förfallodatum för utfärdande av kundfakturor och leverantörsfakturor i EU."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,22 +11,23 @@ ms.technology:
 ms.search.form: CustParameters, LedgerInvoiceIssueDueDateSetup_W
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 10923
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Iceland, Italy, Latvia, Lithuania, Netherlands, Poland, Spain, Sweden, United Kingdom
 ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 77a498e0d3081cdac39dfe4261b7e8be7b7af9e6
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 3fdd9f21964ae6d0c12225feebb6d73e852dc50e
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="invoice-issue-deadline"></a>Tidsgräns för fakturautfärdande
+# Tidsgräns för fakturautfärdande
+<a id="invoice-issue-deadline" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
@@ -40,7 +41,8 @@ Europeiska unionens direktiv 45/2010 och andra direktiv kräver att försändels
 
 Du kan även ställa in datumkontroller som används för att se till att kundfakturor och kreditnotor för kundtransaktioner genereras inom den angivna tidsperioden efter att leveransen har gjorts.
 
-## <a name="prerequisites"></a>Krav
+## Krav
+<a id="prerequisites" class="xliff"></a>
 Följande tabell visar förutsättningarna som krävs innan du kan använda denna funktion för fakturautleveransförfallodatumet.
 
 | Kategori            | Förutsättning                                                                                                                                                                                                                                                                                                                                                                             |
@@ -48,16 +50,20 @@ Följande tabell visar förutsättningarna som krävs innan du kan använda denn
 | Land/region      | Den primära adressen för den juridiska personen måste ligga i ett EU-land.                                                                                                                                                                                                                                                                                                                    |
 | Relaterade inställningsuppgifter | På sidan **Datumintervall** ställer du in ett datumintervall som används för att beräkna fakturautleveransförfallodatumet. (Klicka på **Redovisning** &gt; **Redovisningsinställningar** &gt; **Datumintervall**.) På sidan **Utländska handelsparametrar** ställer du in egenskaper för utländsk handel för olika länder/regioner. (Klicka **Moms** &gt; **Inställningar** &gt; **Utländsk handel** &gt; **Utländska handelsparametrar**.) |
 
-## <a name="invoice-issue-due-date-calculation-rule"></a>Regel för beräkning av förfallodatum för fakturautfärdande
+## Regel för beräkning av förfallodatum för fakturautfärdande
+<a id="invoice-issue-due-date-calculation-rule" class="xliff"></a>
 Använd sidan **Ställ in beräkning för förfallodatum för fakturautfärdande** när du ställer in en beräkningsregel för förfallodatumet för fakturautfärdandet. Koppla en datumintervallskod till en lands- eller regiontyp.
 
-## <a name="date-control-parameters-for-customer-invoices-and-credit-notes"></a>Datumkontrollparametrar för kundfakturor och kreditnotor
+## Datumkontrollparametrar för kundfakturor och kreditnotor
+<a id="date-control-parameters-for-customer-invoices-and-credit-notes" class="xliff"></a>
 Du kan ställa in kontrollparametrar som används för att se till att kundfakturor och kreditnotor för kundtransaktioner genereras inom den angivna tidsperioden efter att leveransen har gjorts. Du kan hitta dessa parametrar i området **Datumkontroll för faktura** på sidan **Parametrar för kundreskontra**.
 
-## <a name="example"></a>Exempel
-Skapa en datumintervallkod och en beräkningsregel med följande inställningar för att ställa in Microsoft Dynamics 365 for Operations för att beräkna förfallodatum för fakturautfärdande på inomeuropeiska (EU) leveranser planerade på den 15:e dagen i månaden efter det att artiklarna har levererats.
+## Exempel
+<a id="example" class="xliff"></a>
+Skapa en datumintervallkod och en beräkningsregel med följande inställningar för att ställa in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition för att beräkna förfallodatum för fakturautfärdande på inomeuropeiska (EU) leveranser planerade på den 15:e dagen i månaden efter det att artiklarna har levererats.
 
-### <a name="date-interval-code"></a>Datumintervallkod
+### Datumintervallkod
+<a id="date-interval-code" class="xliff"></a>
 
 | Fält                                                           | Värde                           |
 |-----------------------------------------------------------------|---------------------------------|
@@ -68,7 +74,8 @@ Skapa en datumintervallkod och en beräkningsregel med följande inställningar 
 | +/- (i fältgruppen **Till datum**)                            | 15                              |
 | Dagar, månader, år eller perioder (i fältgruppen **Till datum**) | Dagar                            |
 
-### <a name="invoice-issue-due-date-calculation-rule"></a>Regel för beräkning av förfallodatum för fakturautfärdande
+### Regel för beräkning av förfallodatum för fakturautfärdande
+<a id="invoice-issue-due-date-calculation-rule" class="xliff"></a>
 
 | Fält               | Värde                                                     |
 |---------------------|-----------------------------------------------------------|
@@ -76,13 +83,15 @@ Skapa en datumintervallkod och en beräkningsregel med följande inställningar 
 | Startdatum          | Ange det datum när den aktuella inställningsraden blir giltig. |
 | Datumintervallkod  | **15-NM**                                                 |
 
-## <a name="next-steps"></a>Nästa steg
+## Nästa steg
+<a id="next-steps" class="xliff"></a>
 När du har avslutat inställningen av parametrarna för att beräkna förfallodatum för fakturautfärdande kan du skapa och bokföra följande transaktioner för att automatiskt beräkna och uppdatera förfallodatum för att utfärda fakturor:
 
 -   **Försäljningsorder** – När du skapar en försäljningsorder och bokför en följesedel beräknas och uppdateras förfallodatumet för utfärdande av fakturan på följesedeln. Förfallodatumet beräknas baserat på det datumintervall som associeras med det land/den region som anges i leveransadressen för försäljningsordern. När du har bokfört följesedeln kan du bekräfta fakturautleveransförfallodatumet i fältet **Förfallodatum för fakturautfärdande** på sidan **Följesedelsjournal**. (Klicka på **Försäljning och marknadsföring** &gt; **Försäljningsorder** &gt; **Orderleverans** &gt; **Följesedel**.) Du kan visa alla följesedlar som inte har fakturerats samt förfallodatum för fakturautfärdande på sidan **Icke-fakturerade följesedlar**. (Klicka på **Försäljning och marknadsföring** &gt; **Försäljningsorder** &gt; **Orderleverans** &gt; **Icke-fakturerade följesedlar**.)
 -   **Inköpsorder** – När du skapar en inköpsorder och bokför en produktinleverans beräknas och uppdateras förfallodatumet för utfärdande av fakturan på produktinleveransen. Förfallodatumet beräknas baserat på det datumintervall som associeras med det land/den region som anges i den primära adressen för leverantören. När du har bokfört produktinleveransen, kan du kontrollera fakturautleveransförfallodatumet i fältet **Förfallodatum för fakturautfärdande** på sidan **Produktinleveransjournal**. (Klicka på **Anskaffning och källa** &gt; **Inköpsorder** &gt; **Ta emot produkter** &gt; **Produktinleverans**.) Du kan visa alla produktinleveranser som inte har fakturerats samt förfallodatum för fakturautfärdande på sidan **Icke-fakturerade produktinleveranser**. (Klicka på **Anskaffning och källa** &gt; **Inköpsorder** &gt; **Ta emot produkter** &gt; **Icke-fakturerade produktinleveranser**.)
 
-## <a name="technical-information-for-system-administrators"></a>Teknisk information för systemadministratörer
+## Teknisk information för systemadministratörer
+<a id="technical-information-for-system-administrators" class="xliff"></a>
 Om du inte har åtkomst till de sidor som används för att slutföra uppgifter som nämns i den här artikeln, kontakta systemadministratören och ange information som visas i följande tabell.
 
 <table>

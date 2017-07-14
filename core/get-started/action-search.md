@@ -1,15 +1,16 @@
 ---
 title: "Åtgärdssökning"
-description: "Denna artikel beskriver åtgärdssökfunktionen i Microsoft Dynamics 365 for Operations. Funktionen för åtgärdssökning hjälper dig att hitta och köra åtgärder på en sida."
+description: "Denna artikel beskriver åtgärdssökfunktionen i Microsoft Dynamics 365 for Finance and Operations. Funktionen för åtgärdssökning hjälper dig att hitta och köra åtgärder på en sida."
 author: jasongre
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: sericks
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 62303
 ms.assetid: 62c70de0-fdde-4417-8e08-0583fb095a40
 ms.search.region: Global
@@ -17,29 +18,32 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: ef5709889dcabd4c9ed760f57d210956f38c37e9
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: cd024f2bc06fca9c21ea41fbed44efbc519cee94
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="action-search"></a>Åtgärdssökning
+# Åtgärdssökning
+<a id="action-search" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-Denna artikel beskriver åtgärdssökfunktionen i Microsoft Dynamics 365 for Operations. Funktionen för åtgärdssökning hjälper dig att hitta och köra åtgärder på en sida.
+Denna artikel beskriver åtgärdssökfunktionen i Microsoft Dynamics 365 for Finance and Operations. Funktionen för åtgärdssökning hjälper dig att hitta och köra åtgärder på en sida.
 
-<a name="introduction"></a>Introduktion
+Introduktion
+<a id="introduction" class="xliff"></a>
 ------------
 
-Sidor i Microsoft Dynamics 365 for Operations visar främst kommandon i åtgärdsfönster, både det vanliga åtgärdsfönstret som visas högst upp på en sida och verktygsfälten som visas på olika delar av sidan. I tidigare versioner fanns funktionen Tangenttips, som snabbt gav dig åtkomst till valfri knapp i ett åtgärdsfönster genom att trycka på ALT och en serie bokstäver. 
+Sidor i Microsoft Dynamics 365 for Finance and Operations visar främst kommandon i åtgärdsfönster, både det vanliga åtgärdsfönstret som visas högst upp på en sida och verktygsfälten som visas på olika delar av sidan. I tidigare versioner fanns funktionen Tangenttips, som snabbt gav dig åtkomst till valfri knapp i ett åtgärdsfönster genom att trycka på ALT och en serie bokstäver. 
 
-[![keyTipsAX6](./media/keytipsax6.png)](./media/keytipsax6.png) I den aktuella versionen av Dynamics 365 for Operations har tangenttipsen emellertid ersatts av funktionen för åtgärdssökning. Den här nya funktionen kan du snabbt söka efter och kör en knapp från synliga rutan Åtgärd.
+[![keyTipsAX6](./media/keytipsax6.png)](./media/keytipsax6.png) I den aktuella versionen av Finance and Operations har tangenttipsen emellertid ersatts av funktionen för åtgärdssökning. Den här nya funktionen kan du snabbt söka efter och kör en knapp från synliga rutan Åtgärd.
 
-## <a name="using-action-search"></a>Med hjälp av action sök
+## Med hjälp av action sök
+<a id="using-action-search" class="xliff"></a>
 För att använda åtgärden sökfunktionen, följ dessa steg.
 
 1.  I åtgärdsrutan, klicka i **sökfältet** . ( **åtgärden sökfältet** innehåller en förstoringsglaset).
@@ -52,8 +56,9 @@ När du kör, fokus återgår till din senaste position på sidan, så att du ka
 
 Du kan också starta åtgärden sökning, genom att pressa Ctrl+/- eller Alt+Q. Tryck på kortkommandot igen för att återgå till din senaste position på sidan.
 
-## <a name="understanding-the-results-list"></a>Förstå resultaten förteckning
-I Dynamics 365 for Operations måste du ofta veta både på plats och samband för en knapp för att förstå syftet med den. Därför visas ytterligare information för varje artikel i resultatlistan, information som hjälper dig att förstå exakt vilka knappar som visas i listan. I synnerhet "sökväg" på knappen visas. Den här sökvägen kan inkludera etiketter av följande UI-beståndsdelar:
+## Förstå resultaten förteckning
+<a id="understanding-the-results-list" class="xliff"></a>
+I Finance and Operations måste du ofta veta både på plats och samband för en knapp för att förstå syftet med den. Därför visas ytterligare information för varje artikel i resultatlistan, information som hjälper dig att förstå exakt vilka knappar som visas i listan. I synnerhet "sökväg" på knappen visas. Den här sökvägen kan inkludera etiketter av följande UI-beståndsdelar:
 
 -   Rutan åtgärd flik
 -   Knappgrupp
@@ -69,8 +74,9 @@ I föregående exempel visade åtgärdsökningen resultat från det vanliga åtg
 
 [![lagerbehållning](./media/on-hand-inventory.png)](./media/on-hand-inventory.png)
 
-## <a name="action-search-vs-navigation-search"></a>Åtgärd söka vs. navigation sökningen
-Medan åtgärdssökningen är avsedd att hitta och köra åtgärder på en sida, finns en separat sökmekanism för att söka och navigera till sidor i Dynamics 365 for Operations. Mer information om funktionen finns i artikeln [Navigeringssökning](navigation-search.md).
+## Åtgärd söka vs. navigation sökningen
+<a id="action-search-vs-navigation-search" class="xliff"></a>
+Medan åtgärdssökningen är avsedd att hitta och köra åtgärder på en sida, finns en separat sökmekanism för att söka och navigera till sidor i Finance and Operations. Mer information om funktionen finns i artikeln [Navigeringssökning](navigation-search.md).
 
 
 

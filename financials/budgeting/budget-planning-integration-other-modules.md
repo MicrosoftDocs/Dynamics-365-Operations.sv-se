@@ -1,16 +1,16 @@
 ---
-title: Budgetplanering integration med andra moduler
-description: 
+title: Integrering av budgetplanering med andra moduler
+description: "Budget planer kan skapas från flera olika resurser: De grundläggande elementen i den återkommande process är samma för alla resurser."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 64443
 ms.assetid: f9a94db5-906c-404a-9ca5-91528d67c490
 ms.search.region: Global
@@ -18,22 +18,24 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 3828416b7da366aa53757ea1b5ed7d2e84446344
+ms.sourcegitcommit: 975497e8ed0c9738c225bad4db9165bf2ebc0192
+ms.openlocfilehash: 7f3dc8089153a6c67c1666aa8f859d63dcc9d3c9
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/05/2017
 
 
 ---
 
-# <a name="budget-planning-integration-with-other-modules"></a>Budgetplanering integration med andra moduler
+# Integrering av budgetplanering med andra moduler
+<a id="budget-planning-integration-with-other-modules" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
 
 
-<a name="periodic-processes-for-generating-budget-plans"></a>Periodiska processer för att generera budget planer
+Periodiska processer för att generera budget planer
+<a id="periodic-processes-for-generating-budget-plans" class="xliff"></a>
 ----------------------------------------------
 
 Budget planer kan skapas från följande resurser:
@@ -49,7 +51,8 @@ Budget planer kan skapas från följande resurser:
 
 De grundläggande elementen i den återkommande process är samma för alla processer. Flikar kan du ange källan till data, målet (budget) attribut, och alternativ för att köra processen i bakgrunden som ett bakgrundsjobb. I senare avsnitt i denna artikel beskriva saker som kanske inte är synliga i varje process.
 
-### <a name="actions"></a>Åtgärder
+### Åtgärder
+<a id="actions" class="xliff"></a>
 
 För varje generation, tre åtgärder är tillgängliga:
 
@@ -57,11 +60,13 @@ För varje generation, tre åtgärder är tillgängliga:
 -   **Byt ut den befintliga budgeten scenario** raderar alla data i målet budget i den valda budget plan scenario och skapar nya rader som använder den valda källdata.
 -   **Uppdatera den befintliga budgeten scenario, och fästa nya data** uppdaterar befintliga rader i målplan som matchar källa rader och lägger till nya rader för nya uppgifter. Matchningen baseras på reskontra, datum, budget klass och diverse andra områden. Till exempel, när du genererar budget planer från prognos positioner, antalet är ett viktigt område. Alla rader som har en position som stämmer överens med källan positionsnummer ersätts med nya rader från källan.
 
-### <a name="source"></a>Källa
+### Källa
+<a id="source" class="xliff"></a>
 
 Fliken **Källa** låter dig filtrera data i alla processer genom att använda knappen **Filter**. Som standard läggs specifika fält i filtret för varje process. Till exempel, för att **generera budget plan från huvudboken** , **reskontra** och **viktigaste konto** kategorier finns tillgängliga och visas på sidan. Några fält som du lägger till filter är också läggas till sidan, tillsammans med några kriterier som du lägger till.
 
-### <a name="target"></a>Mål
+### Mål
+<a id="target" class="xliff"></a>
 
 Det **historiska** alternativet på **fliken Mål** låter dig använda datum från källdata som giltighetsdatum i budgeten. Typiskt, det effektiva datumet måste vara inom planens budgetcykel. När du ställer in det **historiska** alternativet **Ja**, datum (år) källa används, så att du kan använda tidigare data som grund för jämförelsen. Du kan inte ändra historiska data i budgeten och planen är godkänd workflow-status. Men du kan återställa status om du måste andra scenarier i planen kräver förändringar.
 
@@ -71,7 +76,8 @@ Många av fälten på **fliken mål** blir redigerbart eller skrivskyddat, beroe
 
 **Budgeten klass** låter dig ställa in budget plan rader som antingen utgiftstransaktioner inkomster eller transaktioner. Vanligen intäkt transaktioner är krediter till ett reskontrakonto och därför lagras som negativa belopp. Vanligen används dessa transaktioner visas även som negativa belopp i budgeten. Men genom att lägga budgeten klass som ett fält i planen layout kan du aktivera intäkt visas som positiva belopp.
 
-### <a name="generation-rules"></a>Genereringsregler
+### Genereringsregler
+<a id="generation-rules" class="xliff"></a>
 
 Tre fält ger ytterligare funktioner: **Faktor**, **Minimum** och **Avrundning** **regel**. 
 
@@ -81,18 +87,22 @@ Den **minsta** fältet kan du ange gränsbeloppet för att skapa en budget. Om k
 
 **Avrundning regel** fältet kan du ange den precision i budgeten rader som skapas. Du kan avrunda beloppen till närmaste 1,00 10,00 100.00, och så vidare, valuta.
 
-## <a name="notes-for-specific-processes"></a>Anvisningar för specifika processer
-### <a name="generate-budget-plan-from-general-ledger"></a>Generera budgetplan från huvudbok
+## Anvisningar för specifika processer
+<a id="notes-for-specific-processes" class="xliff"></a>
+### Generera budgetplan från huvudbok
+<a id="generate-budget-plan-from-general-ledger" class="xliff"></a>
 
 När du skapar en budget från huvudboken data måste du ange den **sammanlagda genom** fältet till **räkenskapsåret** om **historiska** alternativet är inställt på **Nej**. Perioder och datum i källan kan inte matcha perioderna i datumen i målet. Eftersom processen har inget tillförlitligt sätt att mappa dessa värden måste du begränsa processen till det första året. 
 
-I mål, **Budget klass** är satt till antingen **kostnad** eller **intäkt**. Den här inställningen används för att välja**typ av Budget** attribut för rader som skapas när den huvudsakliga konto på en linje är inte av **intäkten** eller **kostnaden** .
+I mål, **Budget klass** är satt till antingen **kostnad** eller **intäkt**. Den här inställningen används för att välja **typ av Budget** attribut för rader som skapas när den huvudsakliga konto på en linje är inte av **intäkten** eller **kostnaden** .
 
-### <a name="generate-budget-plan-from-fixed-assets"></a>Generera budgetplaner från anläggningstillgångar
+### Generera budgetplaner från anläggningstillgångar
+<a id="generate-budget-plan-from-fixed-assets" class="xliff"></a>
 
-**Skapa budget plan från anläggningsredovisning**har inget alternativ för sammanläggning av perioder eller dag. Det finns inga alternativ för att ange planen som historisk. Du kan använda denna periodiska procedur för att inkludera förväntade transaktioner för fasta tillgångar i din budgetplanering.
+**Skapa budget plan från anläggningsredovisning** har inget alternativ för sammanläggning av perioder eller dag. Det finns inga alternativ för att ange planen som historisk. Du kan använda denna periodiska procedur för att inkludera förväntade transaktioner för fasta tillgångar i din budgetplanering.
 
-### <a name="generate-budget-plan-from-forecast-positions"></a>Generera budgetplansrader från prognosbefattningar
+### Generera budgetplansrader från prognosbefattningar
+<a id="generate-budget-plan-from-forecast-positions" class="xliff"></a>
 
 **Skapa budget plan från prognos positioner** process tilldelar källa prognos position i budgeten. Du kan visa genom att lägga till den prognos som en rad i budgeten layout eller via **budgeten linjer** undersökning. Om du inte vill att prognosen att tilldelas budget plan linjer,**inkluderar position i budget alternativet linje** till **Nej**.
 
@@ -102,7 +112,8 @@ I **budgeten FTE scenario** kan du välja ett scenario ska inkludera antalet hel
 
 Budgeten planering och budget plan scenario som väljs i källset målscenariot budget planeringsprocessen och scenario. Eftersom dessa attribut tilldelas prognos positioner, de måste överensstämma med budget. Därför är dessa attribut kan inte modifieras på målet.
 
-### <a name="generate-budget-plan-from-project-forecasts"></a>Generera budgetplansrader från projektprognoser
+### Generera budgetplansrader från projektprognoser
+<a id="generate-budget-plan-from-project-forecasts" class="xliff"></a>
 
 **Skapa budget plan från projektet prognoser** , som **genererar budget plan från prognos positioner** , har ett alternativ för att inkludera projekt kvantiteter (timmar, kostnader och objekt) i en mängd scenario. De två process har också liknande filter för kolumner i budgeten layout. 
 
@@ -118,24 +129,30 @@ Endast en prognosmodell kan användas för att generera en budget scenario. Om d
 
 **Skapa budget plan från projektet prognoser** tilldelar även källan projekt i budgeten.
 
-### <a name="generate-budget-plan-from-supply-forecast"></a>Generera budgetplan från leveransprognos
+### Generera budgetplan från leveransprognos
+<a id="generate-budget-plan-from-supply-forecast" class="xliff"></a>
 
 Källa filteralternativ i **generera budget plan från prognos** processen var modellerad efter alternativ i **överföringen köpa budget redovisning** funktion, på grund av likheter mellan process och funktion.
 
-### <a name="generate-budget-plan-from-demand-forecast"></a>Skapa budget plan från efterfrågan
+### Skapa budget plan från efterfrågan
+<a id="generate-budget-plan-from-demand-forecast" class="xliff"></a>
 
-För att **generera budget plan från demand forecast** process kan du ställa in **försäljningen för** alternativ till **Ja för** att generera inkomster i budgeten planerar in**livsmedel** till **Ja för** att skapa omkostnadsrader eller båda alternativen till **Ja**.
+För att **generera budget plan från demand forecast** process kan du ställa in **försäljningen för** alternativ till **Ja för** att generera inkomster i budgeten planerar in **livsmedel** till **Ja för** att skapa omkostnadsrader eller båda alternativen till **Ja**.
 
-### <a name="generate-budget-plan-from-budget-register-entries"></a>Generera budgetplan från budgetregisterposter
+### Generera budgetplan från budgetregisterposter
+<a id="generate-budget-plan-from-budget-register-entries" class="xliff"></a>
 
 För att **generera budget plan från budget registrera poster** , källa måste du ange en variant, en budget och ett nummer. Med andra ord kan du skapa budget plan för endast en budget registret hos en tid. Du kan använda ytterligare poster i samma budget plan genom processen körs en gång för varje källa.
 
-### <a name="generate-budget-plan-from-budget-plan"></a>Generera budgetplan från budgetplan
+### Generera budgetplan från budgetplan
+<a id="generate-budget-plan-from-budget-plan" class="xliff"></a>
 
 För att **generera budget plan från budgeten** , en extra uppsättning av alternativ på **fliken Mål** låter dig tilldela nya ekonomiska dimensioner. Om en ekonomisk dimension väljs, att värdet kommer att användas för alla budget-linjer. Därför kan du använda en budget som bas för andra planer, men kan också tilldela, exempelvis en annan avdelning eller ett kostnadsställe till nya budgetplaner.
 
-## <a name="looking-back-from-the-budget-plan"></a>En återblick från budget plan
-### <a name="budget-plans-by-dimension-set-inquiry"></a>Budget planer genom inställda måttet undersökning
+## En återblick från budget plan
+<a id="looking-back-from-the-budget-plan" class="xliff"></a>
+### Budget planer genom inställda måttet undersökning
+<a id="budget-plans-by-dimension-set-inquiry" class="xliff"></a>
 
 **Budgeten planer genom inställda måttet** utredning innehåller flera alternativ som gör att du kan köra en fråga som hjälper dig att identifiera källan av budgeten. 
 

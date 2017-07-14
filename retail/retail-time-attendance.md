@@ -1,59 +1,68 @@
 ---
 title: Butik tidrapportering
-description: "Det här avsnittet beskriver scenarierna som stöds för tids- och närvarohantering i Microsoft Dynamics 365 for Operations - Retail."
+description: "Det här avsnittet beskriver scenarierna som stöds för tids- och närvarohantering i Microsoft Dynamics 365 for Retail."
 author: MargoC
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.reviewer: josaw
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 62813
 ms.assetid: 821994a6-cd29-45a3-a526-ce204064f080
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: aamiral
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 021f0ce8ee73ede482b2b74fce93f61a886288fc
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: b458d1938f49a2f33f7dd3ce3062880f0d4d7bfc
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
+
 
 
 ---
 
-# <a name="retail-time-and-attendance"></a>Butik tidrapportering
+# Tidrapportering för butik
+<a id="retail-time-and-attendance" class="xliff"></a>
 
 [!include[banner](includes/banner.md)]
 
 
-Det här avsnittet beskriver scenarierna som stöds för tids- och närvarohantering i Microsoft Dynamics 365 for Operations - Retail. 
+Det här avsnittet beskriver scenarierna som stöds för tids- och närvarohantering i Microsoft Dynamics 365 for Retail. 
 
-<a name="manage-worker-setup-and-scheduling"></a>Hantera inställningar för arbetare och schemaläggning
+Hantera inställningar för arbetare och schemaläggning
+<a id="manage-worker-setup-and-scheduling" class="xliff"></a>
 ----------------------------------
 
-### <a name="initial-configuration"></a> Ursprunglig konfiguration
+###  Ursprunglig konfiguration
+<a id="initial-configuration" class="xliff"></a>
 
 -   Kör guiden för konfiguration.
 -   Registrera arbetstagare som projekttid arbetstagare.
 
-### <a name="plan-worker-schedules"></a>Planen arbetstagaren scheman
+### Planen arbetstagaren scheman
+<a id="plan-worker-schedules" class="xliff"></a>
 
 -   Använda profiler med arbete planerare. För mer information, se <Https://technet.microsoft.com/en-us/library/aa551234.aspx>.
 
 För information om konfigurering, se <Https://technet.microsoft.com/en-us/library/aa496971.aspx>.
 
-### <a name="retail-specific-configuration"></a>Retail-specifik konfiguration
+### Retail-specifik konfiguration
+<a id="retail-specific-configuration" class="xliff"></a>
 
 -   Aktivera en funktion profil för klocka, för arbetstagare som du vill aktivera tidsregistreringar. Klicka på **Kassafunktionsprofiler** &gt; **Funktioner** &gt; **Tidsregistreringar vid kassa** &gt; **Aktivera tidsregistreringar**.
 -   Konfigurera point of sale (POS) behörigheter grupper att visa timeclock poster tillstånd. Detta tillstånd kan en användare visa tid klocka registreringar av andra arbetstagare i affären (och från alla andra som användaren är kopplad till, via adressboken). Du kanske vill aktivera detta tillstånd för en chef roll men inte för en kassör roll. Klicka på **Kassabehörighetsgrupper** &gt; **Visa stämpelklocksregistreringar**.
 
-## <a name="register-time"></a>Kassatid
-### <a name="cashier-and-non-cashier-time-registrations"></a>Kassa och icke-kassa tidsregistreringar
+## Kassatid
+<a id="register-time" class="xliff"></a>
+### Kassa och icke-kassa tidsregistreringar
+<a id="cashier-and-non-cashier-time-registrations" class="xliff"></a>
 
 -   På POS:
     -   Klocka-operationer:
@@ -112,8 +121,10 @@ För information om konfigurering, se <Https://technet.microsoft.com/en-us/libra
 -   Olika tidszoner:
     -   Om du från en annan plats (för kassören loggbok, eller genom att använda **Visa timeclock poster** för en chef scenario) och platsen är i en annan tidszon, tid som du ser, finnas görat om till din lokala tidzon. Du är till exempel chef för två butiker, en i Arizona och den andra i Nevada. En kassör registrerar en instämpling klockan 09:00 i Arizona. I det ögonblicket i Nevada är 08.00. Därför, om du är i Nevada lagra och titta på gång inskrivningurkunder, projekttid är markerade som 08.00
 
-## <a name="view-worker-time-registrations"></a>Visa arbetstidsregistrering
-### <a name="view-worker-time-registrations-and-filter-by-store-or-activity-type"></a>Visa arbetstagaren tidsregistreringar och filtrera genom butik eller aktivitetstyp
+## Visa arbetstidsregistrering
+<a id="view-worker-time-registrations" class="xliff"></a>
+### Visa arbetstagaren tidsregistreringar och filtrera genom butik eller aktivitetstyp
+<a id="view-worker-time-registrations-and-filter-by-store-or-activity-type" class="xliff"></a>
 
 På POS:
 
@@ -121,16 +132,19 @@ På POS:
 -   Du ser tid klocka registrering verksamheter från alla anställda som är tilldelade till samma butiker som du tilldelats.
 -   Du kan använda aktivitetstyp och lagra filter för att filtrera på tidsregistreringar.
 
-## <a name="process-and-manage-time-registrations"></a>Bearbeta och hantera tidsregistreringar
-En användare av Dynamics 365 for Operations - Retail följer arbetsgången för att beräkna, godkänna och överföra tidsregistreringar till lönesystemet.
+## Bearbeta och hantera tidsregistreringar
+<a id="process-and-manage-time-registrations" class="xliff"></a>
+En användare av Dynamics 365 for Retail följer arbetsgången för att beräkna, godkänna och överföra tidsregistreringar till lönesystemet.
 
-### <a name="primary-operations"></a>Primära verksamheter
+### Primära verksamheter
+<a id="primary-operations" class="xliff"></a>
 
 -   Beräkna
 -   Godkänn
 -   Skicka till lönesystem
 
-### <a name="other-common-operations"></a>Andra gemensamma åtgärder
+### Andra gemensamma åtgärder
+<a id="other-common-operations" class="xliff"></a>
 
 -   Bulk klocka-ut
 -   Registrera frånvaro

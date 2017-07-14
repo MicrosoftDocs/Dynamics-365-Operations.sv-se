@@ -1,39 +1,43 @@
 ---
 title: "Ställa in ett kundbonusprogram"
-description: "I det här avsnittet beskrivs hur du ställer in ett bonusprogram. Bonusprogram kan öka kundlojaliteten genom att kunderna belönas för att köpa produkter i dina butiker. I Microsoft Dynamics 365 for Operations, kan du ställa in enkla eller komplexa bonusprogram som gäller för dina juridiska personer i en butikskanal."
+description: "I det här avsnittet beskrivs hur du ställer in ett bonusprogram. Bonusprogram kan öka kundlojaliteten genom att kunderna belönas för att köpa produkter i dina butiker. I Microsoft Dynamics 365 for Retail kan du ställa in enkla eller komplexa bonusprogram som gäller för dina juridiska personer i en butikskanal."
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.reviewer: josaw
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 16201
 ms.assetid: f79559d2-bc2d-4f0b-a938-e7a61524ed80
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 04521c20ddeca1154b134b23c1db69f45c554ed3
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: 710f8ae3a6a2b5072f37879aad066dc699ede8f0
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
+
 
 
 ---
 
-# <a name="set-up-a-customer-loyalty-program"></a>Ställa in ett kundbonusprogram
+# Ställa in ett kundbonusprogram
+<a id="set-up-a-customer-loyalty-program" class="xliff"></a>
 
 [!include[banner](includes/banner.md)]
 
 
-I det här avsnittet beskrivs hur du ställer in ett bonusprogram. Bonusprogram kan öka kundlojaliteten genom att kunderna belönas för att köpa produkter i dina butiker. I Microsoft Dynamics 365 for Operations, kan du ställa in enkla eller komplexa bonusprogram som gäller för dina juridiska personer i en butikskanal.
+I det här avsnittet beskrivs hur du ställer in ett bonusprogram. Bonusprogram kan öka kundlojaliteten genom att kunderna belönas för att köpa produkter i dina butiker. I Microsoft Dynamics 365 for Retail kan du ställa in enkla eller komplexa bonusprogram som gäller för dina juridiska personer i en butikskanal.
 
-<a name="loyalty-features"></a>Bonusfunktioner
+Bonusfunktioner
+<a id="loyalty-features" class="xliff"></a>
 ----------------
 
 Du kan ställa in bonusprogram, så att de omfattar följande alternativ:
@@ -44,10 +48,12 @@ Du kan ställa in bonusprogram, så att de omfattar följande alternativ:
 -   Utfärda förmånskort från återförsäljare som deltar i dina bonusprogram och länka bonuskort till ett eller flera bonusprogram som kunden kan delta i. Du kan även länka en kundpost till bonuskortet så att kunden kan slå samman bonuspoäng från flera kort och lösa in dem.
 -   Justera förmånskort eller överför bonussaldon manuellt från ett kort till ett annat för att kunna lagra eller belöna en kund.
 
-## <a name="setting-up-loyalty-programs"></a>Ställa in bonusprogram
-Du måste ställa in flera komponenter om du vill aktivera bonusfunktionen i Dynamics 365 for Operations - Retail. I bilden nedan visas lojalitetskomponenterna och hur de är relaterade till varandra. ![Processflöde för bonus](./media/loyaltyprocess.gif)
+## Ställa in bonusprogram
+<a id="setting-up-loyalty-programs" class="xliff"></a>
+Du måste ställa in flera komponenter om du vill aktivera bonusfunktionen i Dynamics 365 for Retail. I bilden nedan visas lojalitetskomponenterna och hur de är relaterade till varandra. ![Processflöde för bonus](./media/loyaltyprocess.gif)
 
-## <a name="loyalty-components"></a>Bonuskomponenter
+## Bonuskomponenter
+<a id="loyalty-components" class="xliff"></a>
 I tabellen nedan beskrivs varje komponent och var den används i lojalitetinställningarna.
 
 | Komponent                                        | Beskrivning                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Var detta används                                                                                                                                                                                                                                                                                                                                                                 |
@@ -63,12 +69,13 @@ I tabellen nedan beskrivs varje komponent och var den används i lojalitetinstä
 | Ställa in förmånsscheman                           | Lojalitetsscheman anger de intjänings- och inlösningsregler som gäller för ett valt bonusprogram. Du tilldelar (butik) kanaler till ett förmånsschema att identifiera som bonusprogrammet och att tjäna regler och befrielseregler gäller för en butik.                                                                                                                                                                                                                                                                                                                                  | Ett förmånsschema tilldelas till ett bonusprogram och till butikskanaler. Du kan tilldela många Förmånsscheman till samma bonusprogrammet, och du kan tilldela många Förmånsscheman till många (butik) kanaler.                                                                                                                                                                        |
 | Ställa in förmånskort                             | Ett förmånskort ger kortinnehavaren rätt att delta i de bonusprogram som är tilldelade till kortet. Förmånskort går att utfärda anonymt, eller tilldelas till en viss kund. Du kan visa förmånstransaktionerna för ett visst kort, och du kan visa en sammanfattning av förmånspoäng som har ackumulerats på kortet. Du kan utfärda förmånskort från en kanal Retail. Du kan också manuellt justera ett förmånskort för uppgradering kunden till en annan nivå, för att lägga till förmånspoäng eller överföra lojalitetpoängsaldot från ett kort till en annan. | Du tilldelar bonusprogram till ett förmånskort.                                                                                                                                                                                                                                                                                                                                  |
 
-## <a name="loyalty-processes"></a>Bonusprocesser
+## Bonusprocesser
+<a id="loyalty-processes" class="xliff"></a>
 I tabellen nedan beskrivs de processer som måste köras för att skicka bonuskonfigurationerna och data till dina butiker, och hämta bonuskonfigurationerna från din butik.
 
 | Processnamn                         | Beskrivning                                                                                                                                                                                                                                                                                                                                                                                                    | Sidnamn                            |
 |--------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------|
-| 1050 (information om förmåner)           | Kör den här processen för att skicka förmånskonfigurationsdata från Dynamics 365 for Operations till butikerna. Det är en bra idé att tidsplanera den här processen om du vill köra den ofta, så att bonusdata överförs till alla butiker.                                                                                                                                                                                               | Distributionsschema                |
+| 1050 (information om förmåner)           | Kör den här processen för att skicka förmånskonfigurationsdata från Dynamics 365 for Retail till butikerna. Det är en bra idé att tidsplanera den här processen om du vill köra den ofta, så att bonusdata överförs till alla butiker.                                                                                                                                                                                               | Distributionsschema                |
 | Bearbeta förmånsscheman              | Kör den här processen för att associera förmånsscheman med de butikskanaler som förmånsschemat är tilldelat till. Den här processen kan schemaläggas för att köras som en batchprocess. Du måste köra den här processen, om du ändrar bonuskonfigurationsdata, till exempel bonusscheman, bonusprogram, eller bonusbelöningspoäng.                                                                                               | Bearbeta förmånsscheman              |
 | Bearbeta förmånstransaktioner offline | Kör den här processen om du vill uppdatera förmånskort för att inkludera transaktioner som har bearbetats offline. Den här processen gäller bara om kryssrutan **Tjäna offline** är markerad på sidan **Gemensamma butiksparametrar** så att belöningar kan tjänas offline.                                                                                                                                               | Bearbeta förmånstransaktioner offline |
 | Uppdatera skikt för förmånskort            | Kör den här processen för att utvärdera kundens inkomstaktivitet mot nivåreglerna för ett bonusprogram och uppdatera kundens nivåstatus. Den här processen behövs bara om du ändrar nivåreglerna i bonusprogrammen och du vill tillämpa de uppdaterade reglerna retroaktivt för förmånskort som redan har utfärdats. Den här processen kan köras som en batchprocess eller för enskilda kort. | Uppdatera skikt för förmånskort            |

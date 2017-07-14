@@ -1,39 +1,41 @@
 ---
 title: "Övervaka resultat för försäljning och marginaler"
-description: "Du kan övervaka försäljning och marginalprestanda i realtid med hjälp av Microsoft Dynamics 365 for Operations."
+description: "Du kan övervaka försäljning och marginalprestanda i realtid med hjälp av Microsoft Dynamics 365 for Retail."
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.reviewer: josaw
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 85123
 ms.assetid: ddd15820-c3e6-4607-819e-8cef744ce9c9
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 51911a5de6a5d55c70a8a03ac75b06f9b5469dd0
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: 6c299a1297e5721119ecfb5208453f8739fb7ad0
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
 
-# <a name="monitor-sales-and-margin-performance"></a>Övervaka resultat för försäljning och marginaler
+# Övervaka försäljningsresultat och marginaler
+<a id="monitor-sales-and-margin-performance" class="xliff"></a>
 
 [!include[banner](includes/banner.md)]
 
 
-Du kan övervaka försäljning och marginalprestanda i realtid med hjälp av Microsoft Dynamics 365 for Operations.
+Du kan övervaka försäljning och marginalprestanda i realtid med hjälp av Microsoft Dynamics 365 for Retail.
 
-Som en del av Dynamics 365 for Operations kan användare övervaka prestanda för försäljning och marginaler i realtid på andra nivåer i organisationshierarkin för följande dimensioner:
+Som en del av Dynamics 365 for Retail kan användare övervaka prestanda för försäljning och marginaler i realtid på andra nivåer i organisationshierarkin för följande dimensioner:
 
 -   Produkter
 -   Kategorier
@@ -46,10 +48,10 @@ Som en del av Dynamics 365 for Operations kan användare övervaka prestanda fö
 
 Dessutom kan två unika rapporter, som används för strukturering av det hierarkiska rutnätet låta användare övervaka försäljning och marginalprestanda genom att detaljgranska från toppkategorinoden till enskilda lövnoder för kategorin i produktkategorihierarkin för butiken. Användarna kan också gå ned från den översta driftenheten till en enskild kanal i organisationshierarkin som har definierats som standardorganisationshierarki för hierarkiändamål för butiksrapportering. Du kan öppna rapporterna från någon av följande platser:
 
--   **Butikshantering** arbetsyta Dynamics 365 for Operations &gt; **Butik och handel** &gt; **Kanaler** &gt; **Butikshantering** &gt; **Rapporter**
--   **Kategori- och produkthantering** arbetsyta Dynamics 365 for Operations &gt; **Butik och handel** &gt; **Produkt och kategorier** &gt; **Butikshantering** &gt; **Rapporter**
--   **Pris- och rabatthantering** arbetsyta Dynamics 365 for Operations &gt; **Butik och handel** &gt; **Prissättning och rabatter** &gt; **Butikshantering** &gt; **Rapporter**
--   **Förfrågningar och rapporter** avsnitt Dynamics 365 for Operations &gt; **Butik och handel** &gt; **Förfrågningar och rapporter** &gt; **Försäljningsrapporter**
+-   Arbetsytan **Butikshantering** &gt; **Butik** &gt; **Kanaler** &gt; **Butikshantering** &gt; **Rapporter**
+-   Arbetsytan **Kategori och produkthantering** &gt; **Butik** &gt; **Produkter och kategorier** &gt; **Butikshantering** &gt; **Rapporter**
+-   Arbetsytan **Pris- och rabatthantering** &gt; **Butik** &gt; **Prissättning och rabatter** &gt; **Butikshantering** &gt; **Rapporter**
+-   Avsnittet **Förfrågningar och rapporter** &gt; **Butik** &gt; **Förfrågningar och rapporter** &gt; **Försäljningsrapporter**
 
 
 

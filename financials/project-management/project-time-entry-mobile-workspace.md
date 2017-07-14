@@ -1,46 +1,46 @@
 ---
-title: "Mobil arbetsyta för projekttidangivelse för appen Dynamics 365 for Operations"
+title: "Mobil arbetsyta för projekttidangivelse"
 description: "Det här avsnittet innehåller information om Mobil arbetsyta för projekttidangivelse. Den här arbetsytan låter användarna ange och spara tid för ett projekt genom att använda sin mobilenhet."
-author: annbe
+author: KimANelson
 manager: AnnBe
-ms.date: 05/10/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
-audience: Application User, IT Pro
-ms.reviewer: annbe
-ms.search.scope: Operations, Core
+audience: Application User
+ms.reviewer: sericks
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 272101
 ms.assetid: 4505f021-b9bb-4b87-be24-6bf0bd88ee60
 ms.search.region: Global
 ms.search.industry: Service industries
-ms.author: annbe
+ms.author: knelson
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 9c592c301908898915164e9236850759b73543fe
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: d80dea89db1fbe270b96063f3818ec3ac95239c8
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="project-time-entry-mobile-workspace"></a>Mobil arbetsyta för projekttidangivelse
+# Mobil arbetsyta för projekttidangivelse
+<a id="project-time-entry-mobile-workspace" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
+Det här avsnittet innehåller information om den mobila arbetsytan **Projekttidsangivelse**. Den här arbetsytan låter användarna ange och spara tid för ett projekt genom att använda sin mobilenhet.
 
+Denna mobila arbetsyta är avsedd att användas med mobilappen Microsoft Dynamics 365 for Unified Operations. 
 
-Det här avsnittet innehåller information om den mobila arbetsytan för projekttidangivelse för mobilappen Microsoft Dynamics 365 for Operations. Den här arbetsytan låter användarna ange och spara tid för ett projekt genom att använda sin mobilenhet.
-
-<a name="overview-of-the-project-time-entry-mobile-workspace"></a>Översikt över Mobil arbetsyta för projekttidangivelse
----------------------------------------------------
-
+## Översikt
+<a id="overview" class="xliff"></a>
 Som ett led i sitt dagliga arbete är projektresurser ofta på plats eller på resande fot. Arbetsytan för **projekttidangivelse** låter användarna mata in sin fakturerbara tid eller ej fakturerbara tid mot ett projekt på den mobila enheten efter eget val. Därför registrerar projektresurser tidangivelse när som helst och var som helst. De kan också visa tidangivelse som redan har registrerats. 
 
-Närmare bestämt erbjuder mobila arbetsytan för **Projekttidsangivelse** följande funktioner:
+I den mobila arbetsytan **Projekttidsangivelse** kan användarna utföra följande uppgifter:
 
 -   Ange antalet timmar som du ägnar till en specifik uppgift för alla valda datum.
 -   Sök efter projektnamn eller kund och hitta projektet du vill registrera tid för.
@@ -48,17 +48,19 @@ Närmare bestämt erbjuder mobila arbetsytan för **Projekttidsangivelse** följ
 -   Ange hur mycket tid som är fakturerbar tid eller ej fakturerbart för projektet.
 -   Ange eventuella interna eller externa kommentarer.
 
-Om du vill implementera den mobila arbetsytan för **Projekttidsangivelse**, se följande delar i det här avsnittet.
+## Förutsättningar
+<a id="prerequisites" class="xliff"></a>
+Kraven varierar baserat på versionen av Microsoft Dynamics 365 som har distribuerats i organisationen.
 
-## <a name="prerequisites"></a>Förutsättningar
-Innan du kan implementera **Mobil arbetsyta för projekttidsangivelse** ska du se till att systemadministratören har slutfört följande förutsättningar.
+### Kraven om du använder Microsoft Dynamics 365 for Finance and Operations, Enterprise edition juli 2017 uppdatering
+<a id="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update" class="xliff"></a> 
+Om Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (juli-uppdateringen 2017) har implementerats för din organisation måste systemadministratören publicera den mobila arbetsytan **Projekttidsangivelse**. Instruktioner finns i [Publicera en mobil arbetsyta](/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace).
+
+### Krav om du använder Microsoft Dynamics 365 for Operations version 1611 med plattformsuppdatering 3 eller senare
+<a id="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later" class="xliff"></a>
+Om Microsoft Dynamics 365 for Operations version 1611 med plattformsuppdatering 3 eller senare har använts i organisationen måste systemadministratören uppfylla följande krav. 
 
 <table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Förutsättning</th>
@@ -68,65 +70,57 @@ Innan du kan implementera **Mobil arbetsyta för projekttidsangivelse** ska du s
 </thead>
 <tbody>
 <tr class="odd">
-<td>Microsoft Dynamics 365 for Operations version 1611 med plattformsuppdatering 3 eller senare måste genomföras.</td>
-<td>Systemadministratör</td>
-<td>Om du inte redan använder Dynamics 365 for Operations i din organisation kan systemadministratören se <a href="/dynamics365/operations/dev-itpro/deployment/deploy-demo-environment">Distribuera en demomiljö för Microsoft Dynamics 365 for Operations</a>.</td>
-</tr>
-<tr class="even">
-<td>KB 4018050 måste genomföras.</td>
+
+<td>Implementera KB 4018050.</td>
 <td>Systemadministratör</td>
 <td>KB 4018050 är X ++ uppdatering eller snabbkorrigering av metadata som innehåller den mobila arbetsytan för <strong>projekttidangivelse</strong>. Om du vill implementera KB 4018050 måste systemadministratören göra följande.
 <ol>
-<li>Hämta KB 4018050 från Microsoft Dynamics Lifecycle Services (LCS).</li>
-<li><a href="/dynamics365/operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Snabbkorrigering av metadata</a>.</li>
-<li><a href="/dynamics365/operations/dev-itpro/deployment/create-apply-deployable-package">Skapa ett driftfärdigt paket</a> som innehåller modellerna <strong>ApplicationSuite</strong> och <strong>ProjectMobile</strong> och överför sedan det driftfärdiga paketet till LCS.</li>
-<li><a href="/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system">Koppla det driftfärdiga paketet</a> till Dynamics 365 for Operations-systemet.</li>
+<li><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/download-hotfix-lcs">Hämta snabbkorrigering av metadata från Microsoft Dynamics AX Lifecycle Services(LCS)</a>.</li>
+<li><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Snabbkorrigering av metadata</a>.</li>
+<li><a href="/dynamics365/unified-operations/dev-itpro/deployment/create-apply-deployable-package">Skapa ett driftfärdigt paket</a> som innehåller modellerna <strong>ApplicationSuite</strong> och <strong>ProjectMobile</strong> och överför sedan det driftfärdiga paketet till LCS.</li>
+<li><a href="/dynamics365/unified-operations/dev-itpro/deployment/apply-deployable-package-system">Tillämpa ett distribuerbart paket</a></li>
+
 </ol></td>
 </tr>
-<tr class="odd">
-<td><strong>Mobil arbetsyta för projekttidangivelse</strong> måste publiceras i mobilappen för Dynamics 365 for Operations.</td>
+<tr class="even">
+<td>Publicera den mobila arbetsytan <strong>Projekttidsangivelse</strong>.</td>
 <td>Systemadministratör</td>
-<td><ol>
-<li>Starta Dynamics 365 for Operations i din webbläsare.</li>
-<li>På sidan <strong>systemparametrar</strong> på fliken <strong>Hantera mobila arbetsområden</strong> väljer du arbetsytan <strong>projekttidangivelse</strong>.</li>
-<li>Klicka på <strong>Publicera mobil arbetsyta</strong>.</li>
-</ol></td>
+<td>Se <a href="/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace">Publicera en mobil arbetsyta</a>.</td>
 </tr>
 </tbody>
 </table>
 
-## <a name="download-and-install-the-dynamics-365-for-operations-mobile-app"></a>Hämta och installera mobilappen Dynamics 365 for Operation.
-Hämta och installera mobilappen Dynamics 365 for Operation från din mobilappsbutik.
+## Hämta och installera mobilappen
+<a id="download-and-install-the-mobile-app" class="xliff"></a>
 
--   För Android - [Dynamics 365 for Operations i Google Play Store](https://play.google.com/store/apps/details?id=com.microsoft.dynamics365.operations.mobile)
--   För iPhone: [Dynamics 365 for Operations iTunes apps store](https://itunes.apple.com/us/app/dynamics-365-for-operations/id1180836730?mt=8)
+Hämta och installera mobilappen Dynamics 365 for Unified Operations:
 
-## <a name="sign-in-to-the-dynamics-365-for-operations-mobile-app"></a>Logga in på mobilappen Dynamics 365 for Operations
+-   [För Android-telefoner](https://go.microsoft.com/fwlink/?linkid=850662)
+-   [För iPhones](https://go.microsoft.com/fwlink/?linkid=850663)
+
+## Logga in på mobilappen
+<a id="sign-in-to-the-mobile-app" class="xliff"></a>
 1.  Starta appen i din mobila enhet.
-2.  Ange URL för Dynamics 365 for Operations
-3.  Ange ett företag att logga in på. Ange till exempel **USMF**.
-4.  Första gången du loggar in uppmanas du ange användarnamn och lösenord för ditt Dynamics 365 for Operations-konto. Ange dina autentiseringsuppgifter.
-5.  När du loggar in visas tillgängliga arbetsytor för ditt företag. Observera att om systemadministratören publicerar en ny arbetsyta senare kan du dra om du vill uppdatera listan över mobila arbetsytor.
+2.  Ange din webbadress för Dynamics 365.
+3.  Första gången du loggar in uppmanas du ange användarnamn och lösenord. Ange dina autentiseringsuppgifter.
+4.  När du loggar in visas tillgängliga arbetsytor för ditt företag. Observera att om systemadministratören publicerar en ny arbetsyta senare kan du dra om du vill uppdatera listan över mobila arbetsytor.
 
 [![Dra för att uppdatera](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
-## <a name="enter-time-by-using-the-project-time-entry-mobile-workspace"></a>Ange tid genom att använda mobila arbetsytan för projekttidangivelse
+## Ange tid genom att använda mobila arbetsytan för projekttidangivelse
+<a id="enter-time-by-using-the-project-time-entry-mobile-workspace" class="xliff"></a>
 1.  På din mobila enhet väljer du arbetsytan **projekttidangivelse**.
-2.  Välj **tidangivelse**. Du kan se kalenderdatum under den aktuella veckan.
+2.  Välj **tidangivelse**. Du kan se kalenderdatum för den aktuella veckan.
 3.  Välj för ett valt datum **åtgärder** &gt; **ny post**.
 4.  Ange antalet timmar att registrera.
-5.  Välj nästa projekt för nästa tidsangivelse. Du kan se en lista över de projekt som laddas i ditt program för användning offline. 50 objekt laddas som standard, men en utvecklare kan ändra detta antal. Mer information bör utvecklare finns [Den mobila plattformen för Dynamics 365 for Operations](/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform).
-6.  Om projektet inte finns i listan väljer du **Sök** för att utföra en onlinesökning i Dynamics 365 for Operations. Sök efter namn eller gå till sök efter projektnamn eller kund.
-7.  Markera en kategori. Du kan se en lista över de kategorier som laddas i ditt program för användning offline. 50 objekt laddas som standard, men en utvecklare kan ändra detta antal. Mer information bör utvecklare finns [Den mobila plattformen för Dynamics 365 for Operations](/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform).
-8.  Om kategorin inte finns i listan väljer du **Sök** för att utföra en onlinesökning i Dynamics 365 for Operations. Sök efter kategori eller växla om du vill söka efter kategorinamnet.
-9.  Välj en aktivitet. Du kan se en lista över de aktiviteter som laddas i ditt program för användning offline. 50 objekt laddas som standard, men en utvecklare kan ändra detta antal. Mer information bör utvecklare finns [Den mobila plattformen för Dynamics 365 for Operations](/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform).
-10. Om aktiviteten inte finns i listan väljer du **Sök** för att utföra en onlinesökning i Dynamics 365 for Operations. Sök efter aktivitetsnummer eller växla till att söka efter funktion.
+5.  Välj nästa projekt för nästa tidsangivelse. En lista visar de projekt som laddas in i din app för användning offline. 50 objekt laddas som standard, men en utvecklare kan ändra detta antal. För information, se [Mobil plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform).
+6.  Om projektet inte finns i listan, välj **Sök**. Sök efter namn eller gå till sök efter projektnamn eller kund.
+7.  Markera en kategori. En lista visar de kategorier som laddas in i din app för användning offline. 50 objekt laddas som standard, men en utvecklare kan ändra detta antal. För information, se [Mobil plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform).
+8.  Om kategorin inte finns i listan, välj **Sök**. Sök efter kategori eller växla om du vill söka efter kategorinamnet.
+9.  Välj en aktivitet. En lista visar de aktiviteter som laddas in i din app för användning offline. 50 objekt laddas som standard, men en utvecklare kan ändra detta antal. För information, se [Mobil plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform).
+10. Om aktiviteten inte finns i listan, välj **Sök**. Sök efter aktivitetsnummer eller växla till att söka efter funktion.
+
 11. Välj radegenskapen.
 12. Tillval: Ange eventuella interna och externa kommentarer.
 13. Välj **Klar**.
-
-
-
-
-
 

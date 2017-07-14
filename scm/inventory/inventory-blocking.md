@@ -1,16 +1,16 @@
 ---
 title: "Lagerspärr"
-description: "Den här artikeln ger en översikt över lagerspärren, som är en del av kvalitetsinspektionsprocessen i Microsoft Dynamics AX. Du kan använda lagerspärr för att förhindra att artiklar bearbetas eller förbrukas."
+description: "Den här artikeln ger en översikt över lagerspärren, som är en del av kvalitetsinspektionsprocessen i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Du kan använda lagerspärr för att förhindra att artiklar bearbetas eller förbrukas."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventBlocking, InventQualityOrderTable
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 2094
 ms.assetid: 1968e32f-eff9-4c17-8f7f-a870f0c38fbc
 ms.search.region: Global
@@ -19,20 +19,21 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 089198f0197427654740da74985001b979f090a3
+ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
+ms.openlocfilehash: 4c5ebea58630188615fb4c22cc9da5215461e513
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="inventory-blocking"></a>Lagerspärr
+# Lagerspärr
+<a id="inventory-blocking" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-Den här artikeln ger en översikt över lagerspärren, som är en del av kvalitetsinspektionsprocessen i Microsoft Dynamics AX. Du kan använda lagerspärr för att förhindra att artiklar bearbetas eller förbrukas.
+Den här artikeln ger en översikt över lagerspärren, som är en del av kvalitetsinspektionsprocessen i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Du kan använda lagerspärr för att förhindra att artiklar bearbetas eller förbrukas.
 
 Du kan spärra lagerartiklar på fäljande sätt:
 -   Manuellt
@@ -40,15 +41,19 @@ Du kan spärra lagerartiklar på fäljande sätt:
 -   Genom att använda en process som genererar en kvalitetsorder
 -   Genom att använda lagerstatusspärr
 
-## <a name="blocking-items-manually"></a>Spärra artiklar manuellt
+## Spärra artiklar manuellt
+<a id="blocking-items-manually" class="xliff"></a>
 Du kan spärra en kvantitet för en artikel, genom att skapa en transaktion på sidan **Lagerspärr**. Endast artiklar som finns i lager kan spärras manuellt. För manuellt spärrade kvantiteter måste du bestämma om plancerade aktiviteter inkluderar förväntade inleveranser som förväntad lagerbehållning. Förväntad inleveranser är spärrade artiklar som förväntas vara tillgängliga som lagerbehållning efter inspektion. Du kan behålla de förväntade datumet. Som standard väljs alternativet **Förväntade inleveranser** för artiklar som är spärrade via en kvalitetsorder. Du kan avbryta en manuell blockering för en kvantitet, genom att radera transaktionen på sidan **Lagerspärr**.
 
-## <a name="blocking-items-by-creating-a-quality-order"></a>Spärra artiklar genom att skapa en kvalitetsorder
+## Spärra artiklar genom att skapa en kvalitetsorder
+<a id="blocking-items-by-creating-a-quality-order" class="xliff"></a>
 Du kan ange artiklar som måste kontrolleras, genom att skapa en kvalitetsorder på sidan **Kvalitetsorder**. När du skapar en kvalitetsorder, spärras kvantiteten för en artikel som du anger. Samplingsplanen som är kopplad till n kvalitetsorder kontrollerar bara kvantiteten av artiklarna som måste kontrolleras, inte kvantiteten som har spärrats. Oavsett vilken kvantitet som skickas på inspektion, är den kvantitet som spärras den kvantitet av artikeln som anges på kvalitetsordern.
 
-## <a name="blocking-items-by-using-a-process-that-generates-a-quality-order"></a>Spärra artiklar med en process som genererar en kvalitetsorder
+## Spärra artiklar med en process som genererar en kvalitetsorder
+<a id="blocking-items-by-using-a-process-that-generates-a-quality-order" class="xliff"></a>
 Om en kvalitetsprocess anger att en artikel måste inspekteras kommer en kvantitet av artikeln att spärras automatiskt. Så när en kvalitetsorder genereras automatiskt kontrollerar den artikelsamplingsprovsplan som hör till kvalitetsordern både kvantiteten av artiklar som är spärrade och kvantiteten som ska kontrolleras. Om alternativet **Fullständig spärr** på sidan **Artikelsampling** har markerats är den fullständiga kvantiteten på till exempel en inköpsorderrad spärrad under inspektion oavsett artikelsamplingskvantiteten.
-### <a name="example"></a>Exempel
+### Exempel
+<a id="example" class="xliff"></a>
 
 I följande exempel skapas en kvalitetsorder när en följesedel för inköpsorder bokförs. På sidan **Kvalitetsassociationer** anger du att bokföring av en följesedel för inköpsorder som den process som aktiverar kvalitetsordern.
 
@@ -56,12 +61,14 @@ I följande exempel skapas en kvalitetsorder när en följesedel för inköpsord
 |--------------------------------------------------------------------------|----------------------------|-------------------|
 | En kvalitetsassociation anger att en kvalitetsorder måste genereras vid bokföringen av en följesedel för inköpsorder. Artikelsamplingsinställningar för kvalitetsordern anger att 10 % av inköpsorderradkvantiteten måste kontrolleras. Eftersom alternativet **Fullständig spärr** är markerad i artikelsamplingsinställningarna måste hela kvantiteten för inköpsorderraden vara spärrad vid inspektion oavsett kvantiteten som skickas för inspektion. | Följesedeln bokförs. | En kvalitetsorder genereras. 10 % av inköpsorderkvantiteten för artikeln skickas för inspektion. Den fullständiga kvantiteten på inköpsorderraden är spärrad. |
 
-## <a name="blocking-items-by-using-inventory-status-blocking"></a>Spärra artiklar med lagerstatusspärr
+## Spärra artiklar med lagerstatusspärr
+<a id="blocking-items-by-using-inventory-status-blocking" class="xliff"></a>
 Du kan ange vilka sorters lagerstatus som är spärrar genom att använda parametern **Lagerspärr** på sidan **Lagerstatus**.  Du kan inte använda lagerstatus som spärrstatus för tillverkningsorder, försäljningsorder, överföringsorder, utgående transaktioner eller projektintegrationer. För utgående arbete, använd artiklar med tillgänglig lagerstatus. Om det finns artiklar med statusen **bruten** och huvudplaneringen körs på dessa artiklar, betraktas artiklarna saknade, och lagret fylls automatiskt på.
 
 
 
-<a name="see-also"></a>Se även
+Se även
+<a id="see-also" class="xliff"></a>
 --------
 
 [Skapa och underhålla en lagerspärr (uppgiftsguide)](https://ax.help.dynamics.com/en/wiki/create-and-maintain-an-inventory-blocking/)
