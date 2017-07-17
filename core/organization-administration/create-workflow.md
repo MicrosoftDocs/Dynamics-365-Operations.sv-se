@@ -3,13 +3,13 @@ title: "Skapa ett arbetsflöde"
 description: "Det här avsnittet innehåller information om hur du skapar ett arbetsflöde."
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: Core
+ms.search.scope: Core, UnifiedOperations
 ms.custom: 195583
 ms.assetid: 836ddd01-cc34-45c3-a4b0-20647357dbc6
 ms.search.region: Global
@@ -17,45 +17,51 @@ ms.author: donaldc
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: bf8f87fffa655b0e8566147af31c8fff02e045ad
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 138cf8d60f5a6e1ec1e46837a516e981c8ff4c19
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="create-a-workflow"></a>Skapa ett arbetsflöde
+# Skapa ett arbetsflöde
+<a id="create-a-workflow" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
 Det här avsnittet innehåller information om hur du skapar ett arbetsflöde.
 
-<a name="open-the-workflow-editor"></a>Öppna arbetsflödesredigeraren
+Öppna arbetsflödesredigeraren
+<a id="open-the-workflow-editor" class="xliff"></a>
 ------------------------
 
-Den Microsoft Dynamics 365 for Operations-modul som du arbetar i bestämmer vilka typer av arbetsflöden som du kan skapa. Gör på följande sätt för att välja vilken typ av arbetsflöden du vill skapa, och öppna arbetsflödesredigeraren.
+Den Microsoft Dynamics 365 for Finance and Operations-modul som du arbetar i bestämmer vilka typer av arbetsflöden som du kan skapa. Gör på följande sätt för att välja vilken typ av arbetsflöden du vill skapa, och öppna arbetsflödesredigeraren.
 
 1.  Öppna den modul som du vill skapa ett nytt arbetsflöde för. Om du till exempel vill skapa ett arbetsflöde för inköpsrekvisitioner, klicka då på **Anskaffning och källa**.
 2.  Klicka på **Inställningar** &gt; **\[Modulnamn\] arbetsflöden**.
 3.  Klicka på **Nytt** i åtgärdsfönstret på den listsida som visas.
 4.  På sidan **Skapa arbetsflöde** väljer du den typ av arbetsflöde som du vill skapa, och klickar sedan på **Skapa arbetsflöde**. Arbetsflödesredigeraren visas. Du kan nu använda följande procedurer när du skapar arbetsflödet.
 
-## <a name="drag-workflow-elements-onto-the-canvas"></a>Dra arbetsflödeselementen till arbetsytan
+## Dra arbetsflödeselementen till arbetsytan
+<a id="drag-workflow-elements-onto-the-canvas" class="xliff"></a>
 Området **Arbetsflödeselement** i arbetsflödesredigeraren innehåller de element som du kan lägga till i ditt arbetsflöde. Dra element till arbetsflödet om du vill lägga till dem i arbetsflödet.
 
-## <a name="connect-the-elements"></a>Anslut elementen
+## Anslut elementen
+<a id="connect-the-elements" class="xliff"></a>
 Om du vill koppla ett arbetsflödeselement till ett annat håller du pekaren över elementet tills kopplingspekaren visas. Klicka på en kopplingspunkt och dra den till det andra elementet. Kontrollera att du ansluter alla element.
 
-## <a name="configure-the-properties-of-the-workflow"></a>Konfigurera egenskaperna för arbetsflödet
+## Konfigurera egenskaperna för arbetsflödet
+<a id="configure-the-properties-of-the-workflow" class="xliff"></a>
 Använd följande steg när du vill konfigurera egenskaperna för arbetsflödet.
 
 1.  Klicka på arbetsytan för att försäkra dig om att inget arbetsflödeselement är markerat.
 2.  Klicka på **Properties** för att öppna sidan **Properties** för arbetsflödet.
 3.  Följ procedurerna i ämnet [Konfigurera egenskaper för ett arbetsflöde](configure-workflow-properties.md).
 
-## <a name="configure-the-elements-of-the-workflow"></a>Konfigurera elementen i arbetsflödet
+## Konfigurera elementen i arbetsflödet
+<a id="configure-the-elements-of-the-workflow" class="xliff"></a>
 Konfigurera varje element som du har dragit till arbetsytan. För information om hur du konfigurerar respektive arbetsflödeselement, se följande ämnen:
 
 -   [Konfigurera en manuell uppgift](configure-manual-task-workflow.md)
@@ -68,10 +74,12 @@ Konfigurera varje element som du har dragit till arbetsytan. För information om
 -   [Konfigurera en parallell gren](configure-parallel-branch-workflow.md)
 -   [Konfigurera ett arbetsflöde för radartiklar](configure-line-item-workflow.md)
 
-## <a name="resolve-any-errors-or-warnings"></a>Lösa eventuella fel eller varningar
+## Lösa eventuella fel eller varningar
+<a id="resolve-any-errors-or-warnings" class="xliff"></a>
 Fönstret **Errors and warning** i nedre delen av arbetsflödesredigeraren visar meddelanden som har skapats för arbetsflödet. Dubbelklicka på felet eller varningsmeddelandet för att hitta det element där en varning eller ett fel har inträffat. Du måste åtgärda alla fel och varningar innan du kan aktivera arbetsflödet.
 
-## <a name="save-and-activate-the-workflow"></a>Spara och aktivera arbetsflödet
+## Spara och aktivera arbetsflödet
+<a id="save-and-activate-the-workflow" class="xliff"></a>
 Följ dessa steg när du är redo att spara och aktivera arbetsflödet.
 
 1.  Klicka på **Spara och stäng** för att stänga redigeraren för arbetsflöde och öppna sidan **Spara arbetsflöde**.

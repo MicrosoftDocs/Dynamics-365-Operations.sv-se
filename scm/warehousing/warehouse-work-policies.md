@@ -1,16 +1,16 @@
 ---
 title: "Policyer för lagerarbete"
-description: "En ny arbetspolicy för lagerställe introduceras i Microsoft Dynamics AX 7.0.1 (uppdatering i maj 2016). Denna arbetspolicy styr huruvida arbetsuppgifter på lagerstället skapas för lagerställeprocesser inom tillverkningen."
+description: "Policyer för lagerställearbete styr om lagerställearbete skapas av lagerprocesser i produktionen, baserat på arbetsordertyp, lagerställe och produkt."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: WHSWorkPolicy
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 196561
 ms.assetid: cbf48ec6-1836-48d5-ad66-a9b534af1786
 ms.search.region: Global
@@ -19,29 +19,31 @@ ms.author: johanho
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 6c9cdf361e4d4543e6aca962e9ec712428bc76e6
+ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
+ms.openlocfilehash: 7612003bc20f91f173629893750478b034cff27b
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="warehouse-work-policies"></a>Policyer för lagerarbete
+# Policyer för lagerarbete
+<a id="warehouse-work-policies" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-En ny arbetspolicy för lagerställe introduceras i Microsoft Dynamics AX 7.0.1 (uppdatering i maj 2016). Denna arbetspolicy styr huruvida arbetsuppgifter på lagerstället skapas för lagerställeprocesser inom tillverkningen.
+Policyer för lagerställearbete i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition styr om lagerställearbete skapas av lagerprocesser i produktionen, baserat på arbetsordertyp, lagerställe och produkt.
 
 Denna arbetspolicy styr huruvida arbetsuppgifter på lagerstället skapas för lagerställeprocesser inom tillverkningen. Du kan ställa in arbetspolicyn genom att använda en kombination av **arbetsordertyper**, en **lagerplats** samt en **produkt** Exempelvis rapporteras produkt L0101 som färdig till utleveransplats 001. Den färdiga varan förbrukas senare i en annan produktionsorder på utleveransplats 001. I det här fallet kan du ställa in en arbetspolicy för att förhindra arbete för inlagring av färdiga varor skapas när du rapporterar produkt L0101 som färdig till utleveransplats 001. Arbetspolicyn är en enskild enhet som kan beskrivas genom följande information:
 
 -   **Arbetspolicynamn**(den unika identifieraren för arbetspolicyn)
--   **Arbetsordertyper**och**Metod för skapande av arbetsuppgift**
+-   **Arbetsordertyper** och **Metod för skapande av arbetsuppgift**
 -   **Lagerplatser**
 -   **Produkter**
 
-## <a name="work-order-types"></a>Typer av arbetsorder
+## Typer av arbetsorder
+<a id="work-order-types" class="xliff"></a>
 Du kan välja bland följande arbetsuppgifter:
 
 -   Plats för slutförda varor
@@ -50,13 +52,16 @@ Du kan välja bland följande arbetsuppgifter:
 
 Fältet **Metod för att skapa arbete** har värdet **Aldrig**. Det här värdet anger att arbetspolicyn förhindrar att arbetsuppgifter på lagerstället skapas för vald arbetsordertyp.
 
-## <a name="inventory-locations"></a>Lagerplatser
+## Lagerplatser
+<a id="inventory-locations" class="xliff"></a>
 Du kan välja en plats som arbetspolicyn gäller för. Om ingen plats finns associerad med en arbetspolicy, gäller inte arbetspolicyn för några processer. På sidan **Locations** kan du också välja eller avbryta valet av arbetspolicy för en viss plats.
 
-## <a name="products"></a>Produkter
+## Produkter
+<a id="products" class="xliff"></a>
 Du kan välja en produkt som arbetspolicyn gäller för. Du kan använda arbetspolicyn antingen på alla produkter eller på utvalda produkter.
 
-## <a name="example"></a>Exempel
+## Exempel
+<a id="example" class="xliff"></a>
 I följande exempel finns det två produktionsorder, PRD-001 och PRD-00*2*. Produktionsorder PRD-001 har en åtgärd med namnet **Sammansättning**, där produkten SC1 rapporterats som färdig till plats O1. Produktionsorder PRD-002 har en åtgärd med namnet **Painting** och förbrukar produkten SC1 från platsen O1. Produktionsorder PRD-002 förbrukar även råmaterial RM1 från platsen O1. RM1 lagras på lagerställeplats och BULK-001 och plockas till platsen O1 av lagerställets arbetsuppgift för plockning av råmaterial. Plockningsarbetet skapas när produktion PRD-002 frisläpps. 
 
 [![Policyer för lagerarbete](./media/warehouse-work-policies.png)](./media/warehouse-work-policies.png) 
@@ -79,7 +84,8 @@ Här följer ett exempel på en arbetspolicy som du kan ställa in, baserat på 
 
 Följande procedurer innehåller steg-för-steg-instruktioner om hur du ställer in arbetspolicyn för lagerstället för detta scenario. En exempelinställning som visar hur du rapporterar en produktionsorder som slutförd till en plats som inte kontrolleras via registreringsskylt beskrivs också.
 
-## <a name="set-up-a-warehouse-work-policy"></a>Konfigurera en policy för lagerarbete
+## Konfigurera en policy för lagerarbete
+<a id="set-up-a-warehouse-work-policy" class="xliff"></a>
 Lagerställeprocesser inkluderar inte alltid lagerarbete. Genom att definiera en arbetspolicy kan du förhindra skapande av arbete för råmaterialhämtning och inlagring av färdiga varor för en uppsättning av produkter på specifika platser. Demonstrationsdataföretaget USMF har använts för att skapa denna procedur. 
 
 STEG (21)
@@ -108,7 +114,8 @@ STEG (21)
 | 20. | Ange eller välj "L0101" i fältet Artikelnummer.                         |
 | 21. | Klicka på Spara.                                                                |
 
-## <a name="report-a-production-order-as-finished-to-a-location-that-isnt-license-platecontrolled"></a>Rapportera en produktionsorder som slutförd till en plats som inte kontrolleras via registreringsskylt
+## Rapportera en produktionsorder som slutförd till en plats som inte kontrolleras via registreringsskylt
+<a id="report-a-production-order-as-finished-to-a-location-that-isnt-license-platecontrolled" class="xliff"></a>
 Denna procedur visar ett exempel på rapportering som slutförd till en plats som inte kontrolleras via registreringsskylt. En tillämplig arbetspolicy är förutsättningen är den här uppgiften. Föregående procedur anger arbetspolicyns konfiguration. 
 
 STEG (25)

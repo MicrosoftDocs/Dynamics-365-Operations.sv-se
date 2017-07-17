@@ -3,46 +3,50 @@ title: Definiera kanalspecifika rabatter
 description: "Återförsäljare ställer ofta in olika rabatter i olika kanaler. Det här avsnittet behandlar de koncept du behöver känna till för att skapa en rabatt för en viss kanal."
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 ms.search.form: RetailAffiliationPriceGroup, RetailCatalogPriceGroup, RetailChannelPriceGroup, RetailDiscountPriceGroup, RetailDiscountPricingWorkspace, RetailPeriodicDiscount, RetailStoreItemPriceList, RetailStoreTable
 audience: Application User
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 16401
 ms.assetid: d807fd51-86aa-47a0-8e00-6c5ddd21ff6b
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 750f61198550a248d70fd531c3cb2ff86ca37f50
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: d40c37628f03a7605e04b95339072a67806f2fa1
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
+
 
 
 ---
 
-# <a name="define-channel-specific-discounts"></a>Definiera kanalspecifika rabatter
+# Definiera kanalspecifika rabatter
+<a id="define-channel-specific-discounts" class="xliff"></a>
 
 [!include[banner](includes/banner.md)]
 
 
 Återförsäljare ställer ofta in olika rabatter i olika kanaler. Det här avsnittet behandlar de koncept du behöver känna till för att skapa en rabatt för en viss kanal. 
 
-<a name="channel-specific-discounts"></a>Kanalspecifika rabatter
+Kanalspecifika rabatter
+<a id="channel-specific-discounts" class="xliff"></a>
 --------------------------
 
 Återförsäljare erbjuder ofta olika rabatter i olika kanaler. Detta kan bero på att man vill adressera lokala marknadsvillkor eller hantera konkurrerande återförsäljare.
 
-Butik och handel i Microsoft Dynamics 365 for Operations använder prisgrupper för att definiera kanalspecifika rabatter. Prisgrupper kan tilldelas till en eller flera av följande enheter: kanaler, kataloger, anknytningar och bonusprogram. Den här artikeln diskuterar kanaler, men samma koncept gäller för katalograbatter, anknytningsrabatter och lojalitetsrabatter.
+Microsoft Dynamics 365 for Retail använder prisgrupper för att definiera kanalspecifika rabatter. Prisgrupper kan tilldelas till en eller flera av följande enheter: kanaler, kataloger, anknytningar och bonusprogram. Den här artikeln diskuterar kanaler, men samma koncept gäller för katalograbatter, anknytningsrabatter och lojalitetsrabatter.
 
-## <a name="price-groups"></a>Prisgrupper
+## Prisgrupper
+<a id="price-groups" class="xliff"></a>
 
 [![Prisgrupper](./media/price-groups-1024x608.png)](./media/price-groups.png)
 
@@ -53,7 +57,8 @@ Diagrammet ovan visar relationen mellan enheter som kan göras för en transakti
 -   **Bonusprisgrupper**– På den här sidan visas en lista med bonusprogram och rabatter som är länkade för varje prisgrupp.
 -   **Anknytningsprisgrupper**– På den här sidan visas en lista med anknytningar och rabatter som är länkade för varje prisgrupp.
 
-## <a name="example-channel-discount-set-up"></a>Inställningar för exempelkanalrabatt
+## Inställningar för exempelkanalrabatt
+<a id="example-channel-discount-set-up" class="xliff"></a>
 Följande exempel illustrerar uppgifterna som ingår i konfigurationen av en kanalrabatt.
 
 1.  För det här exemplet har du en kanal kallad **Houston**, och du ska skapa en ny rabatt kallad **Back-to-School**.
@@ -64,7 +69,8 @@ Följande exempel illustrerar uppgifterna som ingår i konfigurationen av en kan
 
  
 
-<a name="see-also"></a>Se även
+Se även
+<a id="see-also" class="xliff"></a>
 --------
 
 [Prisjusteringar och rabatter](price-adjustments-discounts.md)

@@ -1,9 +1,9 @@
 ---
 title: "Konfigurera leverantörsreskontra"
-description: "Det här avsnittet innehåller en beskrivning av de sidor som används för att ställa in grundläggande och valfria funktion för Leverantörsreskontra i Microsoft Dynamics 365 for Operations. Även inställningsstegen som du måste vidta innan du börjar ställa in Leverantörsreskontra beskrivs."
+description: "Det här avsnittet innehåller en beskrivning av de sidor som används för att ställa in grundläggande och valfria funktion för Leverantörsreskontra i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Även inställningsstegen som du måste vidta innan du börjar ställa in Leverantörsreskontra beskrivs."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: BankAccountTable, DeliveryMode, PaymTerm, VendGroup, VendParameters, VendPaymMode, VendTable
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 24671
 ms.assetid: 82561fe7-b2d6-464c-9347-79d0ce0f9743
 ms.search.region: Global
@@ -19,22 +19,24 @@ ms.author: mfalkner
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: fab98d9fa267c5ffe223a6721095ca26eccf6911
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 2a61cb86a4f2cfc6d701445c139e22df0db44f8c
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="configure-accounts-payable"></a>Konfigurera leverantörsreskontra
+# Konfigurera leverantörsreskontra
+<a id="configure-accounts-payable" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-Det här avsnittet innehåller en beskrivning av de sidor som används för att ställa in grundläggande och valfria funktion för Leverantörsreskontra i Microsoft Dynamics 365 for Operations. Även inställningsstegen som du måste vidta innan du börjar ställa in Leverantörsreskontra beskrivs.
+Det här avsnittet innehåller en beskrivning av de sidor som används för att ställa in grundläggande och valfria funktion för Leverantörsreskontra i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Även inställningsstegen som du måste vidta innan du börjar ställa in Leverantörsreskontra beskrivs.
 
-<a name="prerequisites-for-accounts-payable-setup"></a>Krav för inställning av leverantörsreskontra
+Krav för inställning av leverantörsreskontra
+<a id="prerequisites-for-accounts-payable-setup" class="xliff"></a>
 ----------------------------------------
 
 Följande inställning måste göras innan det går att ställa in leverantörsreskontra:
@@ -44,7 +46,8 @@ Följande inställning måste göras innan det går att ställa in leverantörsr
     -   Om du tänker använda valutakursjusteringar, ställ in valutakoder på sidan Valutor, ställ in valutakurstyper på sidan Valutakurstyp och ställ in valutakurser på sidan Valutakurs.
 -   Ställ in bankkonton som används med betalningsmetoder i Kassa- och bankhantering.
 
-## <a name="setup-pages-for-accounts-payable"></a>Inställningssidor för leverantörsreskontra
+## Inställningssidor för leverantörsreskontra
+<a id="setup-pages-for-accounts-payable" class="xliff"></a>
 
 Använd följande sidor när du vill ställa in de grundläggande funktioner i Leverantörsreskontra för varje juridisk person. Sidorna visas i rekommenderad inställningsordning. Du kan göra inställningsprocessen enklare genom att skapa mallar från de första posterna som du skapas. I en mall anges vanligtvis poster i många fält för att avspegla de funktioner organisationen vill implementera för en viss leverantörstyp.
 1.  Definiera betalningsvillkor som du tilldelar till försäljningsorder, inköpsorder, kunder och leverantörer och som fastställer fakturornas förfallodatum på sidan Betalningsvillkor.
@@ -55,7 +58,8 @@ Använd följande sidor när du vill ställa in de grundläggande funktioner i L
 6.  Definiera formatet för olika dokument som rör leverantörer och som används inom organisationen för att spåra inleveranser från leverantörer samt för att ange orsaker för betalningsflöden till leverantörer på sidan Formulärinställningar.
 7.  Skapa och underhåll leverantörskonton och även de skattemyndigheter som organisationen rapporterar moms till på sidan Leverantörer.
 
-## <a name="optional-setup-pages-for-accounts-payable"></a>Valfria inställningsformulär för leverantörsreskontra
+## Valfria inställningsformulär för leverantörsreskontra
+<a id="optional-setup-pages-for-accounts-payable" class="xliff"></a>
 Utöver de grundläggande funktionerna har Leverantörsreskontra andra funktioner som du kan ställa in.
 
 De ytterligare inställningssidorna som används ordnas efter funktion.
@@ -121,7 +125,8 @@ De ytterligare inställningssidorna som används ordnas efter funktion.
 
 -   På sidan **1099-fält** bekräftar och uppdaterar du de minimibelopp som måste rapporteras till Internal Revenue Service (IRS), baserade på de senaste IRS-kraven.
 
-## <a name="optional-setup-for-other-modules"></a>**Valfria inställningar för andra moduler**
+## **Valfria inställningar för andra moduler**
+<a id="optional-setup-for-other-modules" class="xliff"></a>
 **Organisationsadministration**
 
 -   På sidan Nummerserier, ställ in nummerseriegrupper för fakturanummer.

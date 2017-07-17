@@ -3,7 +3,7 @@ title: Konfigurera kvittning
 description: "Hur och när transaktioner kvittas kan vara komplexa ämnen så det är nödvändigt att du förstår och definierar parametrarna korrekt så att de uppfyller dina verksamhetskrav. Det här avsnittet ger en beskrivning av de parametrar som används för kvittning av både Leverantörsreskontra och Kundreskontra."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: CustOpenTrans, CustParameters, VendOpenTrans, VendParameters
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 14601
 ms.assetid: 6b61e08c-aa8b-40c0-b904-9bca4e8096e7
 ms.search.region: Global
@@ -19,22 +19,23 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 2d3015004371aa041a7ee545df9a4c7f0e48ca31
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 059513de66827aa3a839b9eb06973ec4c1549f73
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="configure-settlement"></a>Konfigurera kvittning
+# Konfigurera kvittning
+<a id="configure-settlement" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
 Hur och när transaktioner kvittas kan vara komplexa ämnen så det är nödvändigt att du förstår och definierar parametrarna korrekt så att de uppfyller dina verksamhetskrav. Det här avsnittet ger en beskrivning av de parametrar som används för kvittning av både Leverantörsreskontra och Kundreskontra. 
 
-Följande parametrar påverkar hur kvittningar bearbetas i Microsoft Dynamics 365 for Operations. Kvittningen är en process som kvittar en faktura mot en betalning eller kreditfaktura. Dessa parametrar finns i området **Kvittning** på sidorna **Parametrar för leverantörsreskontra** och **Parametrar för leverantörsreskontra**.
+Följande parametrar påverkar hur kvittningar bearbetas i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Kvittningen är en process som kvittar en faktura mot en betalning eller kreditfaktura. Dessa parametrar finns i området **Kvittning** på sidorna **Parametrar för leverantörsreskontra** och **Parametrar för leverantörsreskontra**.
 
 -   **Automatisk kvittning** – Ställ in det här alternativet på **Ja** om en transaktion ska kvittas automatiskt mot andra öppna transaktioner när den bokförs. Om det här alternativet ställs in på **Nej**, kan användarna manuellt kvitta transaktioner när de anger betalningar eller senare, via sidan **Kvitta transaktioner**.
 -   **Administration av kassarabatt** – Ange hur en [kassarabatt ska hanteras när en faktura överbetalas](cash-discount-handling-overpayments.md). För överbetalningar kan kassarabatten minskas, behandlas som en differens eller kvarstå på kontot för leverantören eller kunden.

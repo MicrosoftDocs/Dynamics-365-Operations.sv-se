@@ -1,15 +1,15 @@
 ---
 title: "Transporthanteringsöversikt"
-description: "I det här avsnittet finns en översikt över transporthanteringsfunktionen i Microsoft Dynamics 365 for Operations."
+description: "I det här avsnittet finns en översikt över transporthanteringsfunktionen i Microsoft Dynamics 365 for Finance and Operations."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 30251
 ms.assetid: d4e3550c-bca8-469c-82df-56ac0083e4ac
 ms.search.region: Global
@@ -17,22 +17,23 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 796bf42f103bd6d14e872138d07e4a911ddcab1a
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 2fbea4f5e86a6bef98be5df3a2b69aac36e371e5
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="transportation-management-overview"></a>Transporthanteringsöversikt
+# Transporthanteringsöversikt
+<a id="transportation-management-overview" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-I det här avsnittet finns en översikt över transporthanteringsfunktionen i Microsoft Dynamics 365 for Operations.
+I det här avsnittet finns en översikt över transporthanteringsfunktionen i Microsoft Dynamics 365 for Finance and Operations.
 
-Transporthantering låter dig hantera företagets transporter och även identifiera leverantörs- och ruttlösningar för ingående och utgående order. Du kan till exempel identifiera det snabbaste flödet eller den minst kostsamma tariffen för en leverans. I tabellen nedan beskrivs de huvudsakliga scenarierna för att använda Transporthantering i Microsoft Dynamics 365 for Operations
+Transporthantering låter dig hantera företagets transporter och även identifiera leverantörs- och ruttlösningar för ingående och utgående order. Du kan till exempel identifiera det snabbaste flödet eller den minst kostsamma tariffen för en leverans. I tabellen nedan beskrivs de huvudsakliga scenarierna för att använda Transporthantering i Microsoft Dynamics 365 for Finance and Operations.
 
 <table>
 <colgroup>
@@ -68,23 +69,27 @@ Transporthantering låter dig hantera företagets transporter och även identifi
 </tbody>
 </table>
 
-## <a name="planning-transportation-in-dynamics-365-for-operations"></a>Planera transporter i Dynamics 365 for Operations
+## Planera transport i Finance and Operations
+<a id="planning-transportation-in-finance-and-operations" class="xliff"></a>
 I transporthantering, transportplaneringen baseras antingen på order eller på försändelserna som skapas baserat på dessa order. Försändelserna alltid finns någon gång i tiden men krävs inte för transportplanering. Överföringsorder är en del av det utgående scenariot och kan planeras tillsammans med försäljningsorder. 
 
 ![Lastuttag](./media/Load-drawing1-1024x477.jpg)
 
-## <a name="inbound-transportation"></a>Ingående transport
-När du beställer artiklar från en leverantör och artiklarna måste levereras till ditt lagerställe, kanske du vill ordna själva transporten av artiklarna. Du kan använda Dynamics 365 for Operations för att planera transporten och inleveransen av den ingående lasten. I bilden nedan visas affärsprocessflödet för planering av transport för en inkommande beläggning. 
+## Ingående transport
+<a id="inbound-transportation" class="xliff"></a>
+När du beställer artiklar från en leverantör och artiklarna måste levereras till ditt lagerställe, kanske du vill ordna själva transporten av artiklarna. Du kan använda Finance and Operations för att planera transporten och inleveransen av den ingående lasten. I bilden nedan visas affärsprocessflödet för planering av transport för en inkommande beläggning. 
 
 ![Affärsprocessflöde för transport av inkommande last](./media/Businessprocessflowforinboundloadtransportation.jpg)
 
-## <a name="outbound-transportation"></a>Utgående transport
-Du kan planera och bearbeta en utgående last för att skicka vissa artiklar från ett företags lager till en kund. Du kan använda Dynamics 365 for Operations för att planera transporten och leveransen av en utgående last. I bilden nedan visas affärsprocessflödet för planering och bearbetning av utgående beläggningar för leverans. 
+## Utgående transport
+<a id="outbound-transportation" class="xliff"></a>
+Du kan planera och bearbeta en utgående last för att skicka vissa artiklar från ett företags lager till en kund. Du kan använda Finance and Operations för att planera transporten och leveransen av den utgående lasten. I bilden nedan visas affärsprocessflödet för planering och bearbetning av utgående beläggningar för leverans. 
 
 ![Planera och bearbeta utgående laster](./media/Planningandprocessingoutboundloads.jpg)
 
-## <a name="load-building"></a>Lastuppbyggnad
-Dynamics 365 for Operations innehåller en lastuppbyggnadsstrategi med namnet Volymbaserad lastuppbyggnadsstrategi. Denna strategi låter dig använda de angivna maximivärdena som specificerats för höjd och vikt i lastmallen eller så kan du åsidosätta inställningarna genom att ange nya värden. För att använda denna strategi, välj den i fältet **Lastuppbyggnadsstrategi** på snabbfliken **Inställningar** på sidan **Workbench för lastuppbyggnad**. Dessutom kan du lägga till dina egna uppbyggnadsstrategier genom att skapa en ny klass i programobjektträdet.
+## Lastuppbyggnad
+<a id="load-building" class="xliff"></a>
+Finance and Operations innehåller en lastuppbyggnadsstrategi med namnet Volymbaserad lastuppbyggnadsstrategi. Denna strategi låter dig använda de angivna maximivärdena som specificerats för höjd och vikt i lastmallen eller så kan du åsidosätta inställningarna genom att ange nya värden. För att använda denna strategi, välj den i fältet **Lastuppbyggnadsstrategi** på snabbfliken **Inställningar** på sidan **Workbench för lastuppbyggnad**. Dessutom kan du lägga till dina egna uppbyggnadsstrategier genom att skapa en ny klass i programobjektträdet.
 
 
 

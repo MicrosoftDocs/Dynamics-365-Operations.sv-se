@@ -1,16 +1,16 @@
 ---
-title: "Mobil arbetsyta för leverantörssamarbete för programmet Microsoft Dynamics 365 for Operations"
-description: "Med mobil arbetsyta för leverantörssamarbete kan leverantörerna hålla sig uppdaterade i de inköpsorder som har skickats till dem för godkännande och visa information om nya och uppdaterade inköpsorder och kontakter."
-author: YuyuScheller
+title: "Mobil arbetsyta för leverantörssamarbete"
+description: "Det här avsnittet innehåller information om den mobila arbetsytan för leverantörssamarbete. Den här arbetsytan hjälper till att hålla dina leverantörer uppdaterade om de inköpsorder som har skickats till dem för godkännande. De kan också visa information om nya och uppdaterade inköpsorder och kontakter."
+author: mkirknel
 manager: AnnBe
-ms.date: 04/21/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: annbe
-ms.search.scope: Operations, Core
+ms.reviewer: sericks
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 267074
 ms.assetid: 1d293b3a-2fa2-418d-9347-78c2809d67fe
 ms.search.region: global
@@ -18,143 +18,171 @@ ms.author: mkirknel
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: e19fee87dae6e5d425f36dac0db4ea89534a8510
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 20e4c77bc47bffc3474559e3b9933b87e947e178
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="vendor-collaboration-mobile-workspace-for-microsoft-dynamics-365-for-operations-app"></a>Mobil arbetsyta för leverantörssamarbete för programmet Microsoft Dynamics 365 for Operations
+# Mobil arbetsyta för leverantörssamarbete
+<a id="vendor-collaboration-mobile-workspace" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
+Det här avsnittet innehåller information om den mobila arbetsytan för **Leverantörssamarbete**. Den här arbetsytan hjälper till att hålla dina leverantörer uppdaterade om de inköpsorder som har skickats till dem för godkännande. De kan också visa information om nya och uppdaterade inköpsorder och kontakter.
 
-Med mobil arbetsyta för leverantörssamarbete kan leverantörerna hålla sig uppdaterade i de inköpsorder som har skickats till dem för godkännande och visa information om nya och uppdaterade inköpsorder och kontakter.
+Denna mobila arbetsyta är avsedd att användas med mobilappen Microsoft Dynamics 365 for Unified Operations.
 
-<a name="prerequisites"></a>Förutsättningar
--------------
+## Översikt
+<a id="overview" class="xliff"></a> 
+Den mobila arbetsytan **Leverantörssamarbete** håller leverantörer informerade om nya inköpsorder, så att de kan visa och svara på dem i webbklienten för Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
+
+>[!NOTE]
+> Den mobila arbetsytan ska användas som ett tillägg till webbgränssnittet för leverantörssamarbete, inte som en ersättning för det. 
+
+Dina leverantörer kan använda den mobila arbetsytan **Leverantörssamarbete** för att visa nya inköpsorder som har skickats till dem för godkännande. Den visar information om inköpsorder såsom produkter, kvantiteter och begärda leveransdatum. Även prisuppgifter finns tillgängliga, beroende på konfigurationen för varje leverantör. 
+
+En användare som loggar in som en leverantör ser vilka inköpsorder som har besvarats och vilka inköpsorder som fortfarande väntar på kundåtgärd. En inköpsorder kan exempelvis vänta på en kundåtgärd eftersom leverantören föreslog ett annat leveransdatum, men kunden har ännu inte accepterat det datumet. Dessutom kan leverantören se en lista över inköpsorder som har bekräftats men som ännu inte har levererats. 
+
+För att svara på en inköpsorder måste leverantören använda webbgränssnittet för leverantörssamarbete som finns i webbklienten. Där kan leverantören även få mer information om beställningen såsom dokumentbilagor, leveransadress per rad och avgifter som är kopplade till leverantören. 
+
+Leverantörer med en särskild säkerhetsroll kan se vilka kontaktpersoner som är registrerade för ett leverantörskonto. Med samma säkerhetsroll kan leverantören visa statusen för alla användarförfrågningar som har skickats in. 
+
+Webbgränssnittet för leverantörssamarbete i webbklienten måste användas för att skapa nya kontakter och skicka begäranden om nya användare. 
+
+Med hjälp av den mobila arbetsytan **Leverantörssamarbete** kan en leverantör utföra följande uppgifter:
+
+-   Visa nya inköpsorder som har skickats till leverantören.
+-   Visa inköpsorder som leverantören har svarat på och som väntar på kundåtgärd.
+-   Visa inköpsorder som har bekräftats, men som ännu inte har mottagits till fullo.
+-   Visa uppgifter om kontaktpersonen som är registrerad för leverantörskontot. (Den här uppgiften kräver ytterligare en säkerhetsroll.)
+-   Visa information om en användarförfrågan som skickades av leverantören och följa statusen på densamma. (Den här uppgiften kräver ytterligare en säkerhetsroll.)
+
+## Förutsättningar
+<a id="prerequisites" class="xliff"></a>
+Förutsättningarna varierar beroende på vilken version av Microsoft Dynamics 365 som har distribuerats inom organisationen.
+
+### Kraven om du använder Microsoft Dynamics 365 for Finance and Operations, Enterprise edition juli 2017 uppdatering
+<a id="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update" class="xliff"></a> 
+Om Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (juli-uppdateringen 2017) har implementerats för din organisation måste systemadministratören publicera den mobila arbetsytan **Leverantörssamarbete**. Instruktioner finns i [Publicera en mobil arbetsyta](/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace).
+
+### Krav om du använder Microsoft Dynamics 365 for Operations version 1611 med plattformsuppdatering 3 eller senare
+<a id="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later" class="xliff"></a>
+Om Microsoft Dynamics 365 for Operations version 1611 med plattformsuppdatering 3 eller senare har använts i organisationen måste systemadministratören uppfylla följande krav. 
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Förutsättning</th>
+<th>Roll</th>
 <th>beskrivning</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Läs mer om den mobila plattformen Microsoft Dynamics 365 for Operations</td>
-<td><a href="https://ax.help.dynamics.com/en/wiki/mobile-development-handbook/">Den mobila plattformen Dynamics 365 for Operations</a></td>
+<td>KB 3216943 måste implementeras om du använder plattformsuppdatering 3.</td>
+<td>Systemadministratör</td>
+<td>KB 3216943 är en binär uppdatering som krävs om du använder plattformsuppdatering 3. Om du vill implementera denna KB måste systemadministratören göra följande:
+<ol>
+<li>Hämta KB 3216943 från Microsoft Dynamics Lifecycle Services (LCS).</li>
+<li>Installera den binära uppdateringen som levereras som ett distribuerbart paket. Information om hur du installerar ett distribuerbart paket hittar du under <a href="/dynamics365/unified-operations/dev-itpro/deployment/apply-deployable-package-system">Tillämpa ett distribuerbart paket</a>.</li>
+</ol></td>
 </tr>
 <tr class="even">
-<td>Dynamics 365 for Operations</td>
-<td>Se till att använda en miljö med Microsoft Dynamics 365 for Operations version 1611 och plattformen Microsoft Dynamics for Operations med uppdatering 3 (november 2016).</td>
+<td>KB 4013633 måste genomföras.</td>
+<td>Systemadministratör</td>
+<td>KB 4013633 är en X++ -uppdatering eller snabbkorrigering av metadata som innehåller den mobila arbetsytan för <strong>lagerbehållning</strong>. Om du vill implementera KB 4013633 måste systemadministratören göra följande.
+<ol>
+<li><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/download-hotfix-lcs">Hämta snabbkorrigeringen för metadata från LCS</a>.</li>
+<li><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Snabbkorrigering av metadata</a>.</li><li><a href="/dynamics365/unified-operations/dev-itpro/deployment/create-apply-deployable-package">Skapa ett driftfärdigt paket </a> som innehåller modellerna <strong>SCMMobile</strong> och modellen och överför sedan det driftfärdiga paketet till LCS. </li>
+<li><a href="/dynamics365/unified-operations/dev-itpro/deployment/apply-deployable-package-system">Tillämpa ett distribuerbart paket</a></li>
+</ol></td>
 </tr>
 <tr class="odd">
-<td><span style="color: #000000">Mobil enhet med programmet Dynamics 365 for Operations installerat</span></td>
-<td><span style="color: #000000">Hämta programmet Dynamics 365 for Operations från din mobilappsbutik.</span></td>
+<td>Den mobila arbetsytan <strong>Leverantörssamarbete</strong> måste publiceras.</td><td>Systemadministratör</td>
+<td>Se <a href="/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace">Publicera en mobil arbetsyta</a>.</td>
 </tr>
 <tr class="even">
-<td>Snabbkorrigering KB 4013633</td>
-<td>Installera snabbkorrigeringen om du vill aktivera de arbetsytor som finns i Dynamics 365 for Operations.</td>
-</tr>
-<tr class="odd">
-<td><span style="color: #ff0000"><span style="color: #000000">Snabbkorrigering KB 3216943</span> </span></td>
-<td>Installera snabbkorrigering om du vill aktivera Mobil arbetsyta för leverantörssamarbete.</td>
-</tr>
-<tr class="even">
-<td>Leverantörsanvändaren måste har tillgång till leverantörswebbgränssnittet i Dynamics 365 for Operations och ställa in en leverantörssamarbetesanvändare.</td>
-<td>Följ instruktionerna i följande avsnitt för att ställa in och arbeta med leverantörswebbgränssnitt.
+<td>Leverantörsanvändaren måste har tillgång till webbgränssnittet för leverantörssamarbete webbklienten och måste ställa in en leverantörssamarbetesanvändare.</td><td>Inköpsansvariga och systemadministratör</td>
+<td>Följ instruktionerna i följande avsnitt för att ställa in och arbeta med webbgränssnittet för leverantörssamarbete.
 <ul>
 <li><a href="https://ax.help.dynamics.com/en/wiki/using-vendor-collaboration-to-work-with-external-vendors/">Använd leverantörssamarbete för att arbeta med externa leverantörer</a></li>
 <li><a href="https://ax.help.dynamics.com/en/wiki/manage-vendor-collaboration-users/">Hantera användare av leverantörssamarbete</a></li>
 <li><a href="https://ax.help.dynamics.com/en/wiki/set-up-and-maintain-vendor-collaboration/">Skapa och underhåll leverantörssamarbete</a></li>
-<li><a href="https://ax.help.dynamics.com/en/wiki/using-vendor-collaboration-to-work-with-customers-in-dynamics-365-for-operations/">Använd leverantörssamarbete för att arbeta med kunder i Dynamics 365 for Operations</a></li>
+<li><a href="https://ax.help.dynamics.com/en/wiki/using-vendor-collaboration-to-work-with-customers-in-dynamics-365-for-operations/">Använd leverantörssamarbetet för att arbeta med kunder i Finance and Operations</a></li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
-## <a name="overview"></a>Översikt
-Mobil arbetsyta för leverantörssamarbete sparar information om nya inköpsorder så att de kan visa och svara på inköpsorder i webbklienten för Dynamics 365 for Operations. 
+## Hämta och installera mobilappen
+<a id="download-and-install-the-mobile-app" class="xliff"></a>
 
-**Obs!:** Den mobila arbetsytan kan användas som ett tillägg till leverantörswebbgränssnittet, men ingen ersättning. 
+Hämta och installera mobilappen Dynamics 365 for Unified Operations:
 
-Med mobil arbetsyta för leverantörssamarbete kan leverantörerna visa nya inköpsorder som har skickats för godkännande. Den visar inköpsorderinformation som till exempel produkter, kvantitet och begärt leveransdatum. Prisuppgifter finns tillgängliga, beroende på konfigurationen för varje leverantör. 
+-   [För Android-telefoner](https://go.microsoft.com/fwlink/?linkid=850662)
+-   [För iPhones](https://go.microsoft.com/fwlink/?linkid=850663)
 
-När en användare loggar in som en leverantör, visas vilka inköpsorder som har har svarat eller vilken inköpsorder som fortfarande väntar på kundåtgärd. Leverantören kan ha föreslås ett annat leveransdatum som inte ännu har kommits överens med kunden så att inköpsordern väntar på kundåtgärden. Dessutom vill leverantören se en lista över inköpsorder som har bekräftats men ännu inte levererats. 
+## Logga in på mobilappen
+<a id="sign-in-to-the-mobile-app" class="xliff"></a>
+1.  Starta appen i din mobila enhet.
+2.  Ange din webbadress för Microsoft Dynamics 365.
+4.  Första gången du loggar in uppmanas du att ange användarnamn och lösenord. Ange dina autentiseringsuppgifter.
+5.  När du loggar in visas tillgängliga arbetsytor för ditt företag. Observera att om systemadministratören publicerar en ny arbetsyta senare kan du dra om du vill uppdatera listan över mobila arbetsytor.
 
-För att svara på en inköpsorder måste säljaren använda webbgränssnittet för leverantörssamverkan som finns i webbklienten Dynamics 365 for Operations. Det här är också där som leverantören kommer att få mer information om beställningen, till exempel dokumentfiler, leveransadress per rad och avgifter som är kopplade till leverantören. 
+    [![Dra för att uppdatera](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
-Med en särskild säkerhetsroll kan leverantören se vilka kontaktpersoner som är registrerade för ett leverantörskonto. Med samma säkerhetsroll kan leverantören visa status för alla användarförfrågningar som har skickats in. 
+## Använda den mobila arbetsytan för leverantörssamarbete
+<a id="use-the-vendor-collaboration-mobile-workspace" class="xliff"></a>
+När du väljer den mobila arbetsytan **Leverantörssamarbete** visas följande alternativ:
 
-Skapa nya kontakter och skicka nya användarförfrågningar måste göras i leverantörsamarbetesgränssnitt som finns tillgängligt i webbklienten Dynamics 365 for Operations. 
+![Mobil arbetsyta för leverantörssamarbete](./media/vendor-collaboration-mobile-app.png)
 
-Med mobil arbetsyta kan leverantören:
+Arbetsytan **Leverantörssamarbete** omfattar följande sidor:
 
--   Visa nya inköpsorder som skickats till leverantören.
--   Visa inköpsorder som leverantören har svarat på och som väntar på kundåtgärd.
--   Visa inköpsorder som har statusen bekräftat och inte har inlevererats helt.
--   Visa kontaktpersoninformation som har registrerats för leverantörskontot (kräver ytterligare en säkerhetsroll).
--   Visa information och följ statusen för en användarförfrågan som skickats av leverantören (kräver ytterligare en säkerhetsroll).
+### Kontakter
+<a id="contacts" class="xliff"></a>
+Sidan **kontakter** låter dig visa alla kontakter som har ställts in för leverantörskontot. Den visar kontaktpersonens namn, primär e-postadress och användaralias, om kontaktpersonen har ett alias. Sidan visar också om kontaktpersonens användarkonto är aktivt. När du väljer en kontakt visas kontaktinformation såsom juridiska personer som personen är kontaktperson för. Du kan också visa kontaktinformation, till exempel ett telefonnummer eller en alternativ e-postadress.
 
-## <a name="get-started"></a>Kom igång
-Komma igång med din mobila enhet:
+### Användarförfrågningar
+<a id="user-requests" class="xliff"></a>
+Sidan **Användarförfrågningar** låter dig se alla användarförfrågningar som du har skickat in via webbgränssnittet för leverantörssamarbete. Du kan också visa status för dessa förfrågningar. När du väljer en användarförfrågan kan du se vad som förfrågades, lägga till eller inaktivera en användare, ändra säkerhetsinställningar och se vilka säkerhetsroller som krävdes för användaren.
 
-1.  Hämta och installera appen Microsoft Dynamics 365 for Operations från din mobilappsbutik.
-2.  Starta appen på din enhet.
-3.  Ange din webbadress för Dynamics 365.
-4.  Ange ett företag att logga in på. Ange till exempel **USMF**.
-5.  Första gången du loggar in uppmanas du ange användarnamn och lösenord för ditt Microsoft Dynamics 365 for Operations-konto.
+### Inköpsorder redo för granskning
+<a id="purchase-orders-ready-for-review" class="xliff"></a>
+Sidan **Inköpsorder klara för granskning** låter dig se alla inköpsorder som har skickats av kunden, men som inte har besvarats ännu. Du kan visa utvald information om ordern, till exempel vilka produkter som har begärts och när de produkterna ska levereras. Även prisuppgifter finns tillgängliga, beroende på konfigurationen av leverantören.
 
-När du loggar in i appen syns inga arbetsytor. Om du vill visa arbetsytor i din mobilapp måste du först publicera önskade arbetsytor i appen Dynamics 365 for Operations app. Du behöver systemadministrationsbehörighet för att publicera på arbetsytan.
+Du kan se om inköpsordern har anteckningar och bifogade filer. För att öppna anteckningar och bifogade filer måste du dock använda webbgränssnittet för leverantörssamarbete i webbklienten. Välj **Inköpsorderrad** för att visa alla rader tillsammans med information om dem. För varje rad visar en indikator om det finns anteckningar eller bilagor, eller om leveransadressen är en annan än den som anges i rubriken.
 
-1.  Starta Dynamics 365 for Operations.
-2.  Navigera till **Systemadministration** &gt; **Inställningar** &gt; **systemparametrar**.
-3.  Välj **Hantera mobilapp**.
-4.  Markera arbetsytan **Leverantörssamarbete** för att publicera i den mobila plattformen.
-5.  Välj **Publicera arbetsytan**.
-6.  Uppdatera enheten om du vill se de publicerade arbetsytorna.
-7.  Välj **Faktureringsarbetsyta för leverantörssamarbeten** Du kommer till nästa sida.
+Om du vill svara på inköpsordern måste du använda webbgränssnittet för leverantörssamarbete i webbklienten.
 
-    [![mobilapp-för-leverantörssamarbetes](./media/vendor-collaboration-mobile-app.png)](./media/vendor-collaboration-mobile-app.png)
+### Väntar på kundåtgärd
+<a id="awaiting-customer-action" class="xliff"></a>
+Sidan **Inväntar kundåtgärd** låter dig söka efter inköpsorder som du, eller någon annan på företaget som har åtkomst till leverantörssamarbete, har svarat på. Inköpsorder visas bara i listan om kunden måste du vidta någon av följande åtgärder på inköpsordern:
 
-## <a name="contacts"></a>Kontakter
-Sidan **kontakter** låter dig visa alla kontakter som har ställts in för leverantörskontot. Den visar kontaktpersonens namn och primära e-postadress och användaralias, om sådana finns. Den visar också om kontaktpersonens användarkonto är aktivt. När du väljer en kontakt finns kontaktinformation, till exempel vilka juridiska personer som personen är kontakt för och kontaktinformation som till exempel telefonnummer eller någon annan e-postadress.
+-   Om inköpsordern har avvisats måste kunden antingen uppdatera eller avbryta den ursprungliga ordern och sedan skicka den igen. När inköpsordern har skickats igen försvinner den från sidan **Inväntar kundåtgärd**.
+-   Om inköpsordern accepterades med ändringar måste kunden antingen uppdatera den ursprungliga ordern och sedan skicka den igen för granskning eller uppdatera ordern enligt ändringarna och sedan bekräfta det omedelbart. I båda fallen kommer inköpsordern att försvinna från sidan **Inväntar kundåtgärd**.
+-   Om inköpsordern som accepterades fortfarande visas på sidan **Inväntar kundåtgärd** beror det på att inköpsordern inte bekräftades automatiskt när den accepterades. Den väntar nu på att en inköpsagent ska ändra orderstatusen till **Bekräftad**. Vanligtvis brukar inköpsordern betraktas som ett avtal mellan kunden och leverantören så snart leverantören accepterar ordern. Det innebär att uppdateringen till statusen **Bekräftad** vanligtvis bara är en formalitet.
 
-## <a name="user-requests"></a>Användarförfrågningar
-Sidan **användarfrågor** låter dig se alla användarförfrågningar som du har skickat in via leverantörswebbgränssnittet och följa status. När du väljer en användarförfrågan kan du se vad som förfrågades, lägga till eller inaktivera en användare, ändra säkerhetsinställningar och se vilka säkerhetsroller som krävdes för användaren.
+När du väljer en inköpsorder visas ytterligare information om svaret. Du kan se raddetaljer och svar för varje rad. Radstatusen visar vilket av följande svar som har getts:
 
-## <a name="purchase-orders-ready-for-review"></a>Inköpsorder redo för granskning
-Sidan **inköpsorder som är redo för granskning** låter dig se alla inköpsorder som har skickats av kunden och har inte besvarats. Du kan visa utvald information om ordern, till exempel vilka produkter som har begärts och när du kan leverera. Prisuppgifter finns bara om det har konfigurerats för leverantören. Du kan se om inköpsordern har anteckningar och bifogade filer. För att öppna bifogade filer måste du använda leverantörssamarbete i webbklienten. Välj **inköpsorderrad** för att visa alla rader med information. Observera att för varje rad visar en indikator om det finns anteckningar och bilagor, eller om det finns en leveransadress som är en annan än vad som anges i rubriken. Om du vill svara på inköpsordern måste du använda webbklienten för leverantörssamarbete.
-
-## <a name="awaiting-customer-action"></a>Väntar på kundåtgärd
-Sidan **Inväntar kundåtgärd** låter dig söka efter inköpsorder som du eller någon i företaget som har åtkomst till leverantörssamarbete har svarat på. Inköpsorder visas bara i listan om kunden måste du göra något av följande åtgärder på inköpsordern.
-
--   Om inköpsordern har avvisats skulle kunden antingen behöva uppdatera den skickade ordern och skicka igen, eller avbryta ordern och skicka igen. När inköpsordern har skickats igen, försvinner den från sidan **Inväntar kundåtgärd**.
--   Om inköpsordern togs emot med ändringar skulle kunden behöva uppdatera den ursprungliga ordern och skicka om för granskning, eller uppdatera enligt ändringarna och bekräfta det omedelbart. I båda fall kommer inköpsordern att försvinna från sidan **Inväntar kundåtgärd**.
--   Om inköpsordern som har godkänts och visas på sidan **Inväntar kundåtgärd** beror det på att inköpsordern inte bekräftades automatiskt när mottagande gjordes. Den väntar på att en inköpsagent ska ändra ordern till Bekräftad. Vanligtvis skulle inköpsordern betraktas som ett avtal mellan kund och leverantör så snart som leverantören accepterar ordern. Flytta inköpsordern till statusen bekräftat blir en formalitet.
-
-Genom att välja inköpsordern, visas ytterligare information om svaret. Du kan se raddetaljer och svar för varje rad. Radstatus visar i vilket av följande svar som har getts.
-
--   Godkänt
--   Avvisat
+-   Godkänd
+-   Avvisad
 -   Godkänd med ändringar
 -   Ersatt/ersättning
 -   Dela upp i schema/schemarad
 
-Observera att en indikator visar **sända**= Ja/Nej, som används för att ange att raderna inte kommer att levereras. Detta kan bero på att raden avslogs eller ersätts där de ursprungliga raderna inte förväntas levereras eller en rad som har delats upp i flera schemarader och den ursprungliga raden inte förväntas levereras enligt vad som begärts i den inlevererade ordern. Eventuella ändringar i orderradsvaret visas förutom överförda anteckningar och bifogade filer, som du kan se genom att använda webbgränssnittet för leverantörssamarbete.
+Observera att fältet **Levereras** ställs in på antingen **Ja** eller **Nej** för att ange om raderna ska levereras. En rad kan inte levereras på grund av följande skäl:
 
-## <a name="open-confirmed-orders"></a>Öppna bekräftade order
-När inköpsordern har bekräftats av kunden, vilket betyder att inköpsordern ändras till statusen bekräftat visas den i den öppna bekräftade ordern. Den ligger i listan tills den registreras som mottagen av kunden.
+- Raden har avvisats.
+- En ersättning gjordes och den ursprungliga raden förväntades inte levereras enligt förfrågan i den mottagna ordern.
+- Raden är uppdelad i flera rader för tidsplaner och den ursprungliga raden förväntas inte levereras enligt förfrågan i den mottagna ordern.
 
+All ändringar som har gjorts av responsen på orderraden visas. Dock visas inte överförda anteckningar och bifogade filer. För att visa anteckningar och bifogade filer måste du använda webbgränssnittet för leverantörssamarbete i webbklienten.
 
-
-
+### Öppna bekräftade order
+<a id="open-confirmed-orders" class="xliff"></a>
+När inköpsordern har bekräftats av kunden (dvs. när statusen för inköpsordern har ändrats till **Bekräftad**) visas den i den öppna bekräftade ordern. Den finns kvar i listan tills den registreras som mottagen av kunden.
 

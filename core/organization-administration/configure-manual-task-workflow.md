@@ -3,13 +3,13 @@ title: "Konfigurera en manuell uppgift i ett arbetsflöde"
 description: "I det här avsnittet beskrivs hur du konfigurerar olika egenskaper för en manuell uppgift."
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 192191
 ms.assetid: 27f1afde-ff26-4b6f-8c11-27ec49130bbb
 ms.search.region: Global
@@ -17,15 +17,16 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 5d2a69066a1245d5b86d27d01db4b67d4a490488
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 242abaae1aa17578ba8eab4b2664794ff2c2caec
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="configure-a-manual-task-in-a-workflow"></a>Konfigurera en manuell uppgift i ett arbetsflöde
+# Konfigurera en manuell uppgift i ett arbetsflöde
+<a id="configure-a-manual-task-in-a-workflow" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
@@ -34,13 +35,15 @@ I det här avsnittet beskrivs hur du konfigurerar olika egenskaper för en manue
 
 Högerklicka uppgiften och klicka sedan på **Egenskaper** för att öppna sidan **Egenskaper** om du vill konfigurera en manuell uppgift i arbetsflödesredigeraren. Använd sedan följande procedurer när du vill konfigurera egenskaperna för den manuella uppgiften.
 
-## <a name="name-the-task"></a>Ange ett namn på uppgiften
+## Ange ett namn på uppgiften
+<a id="name-the-task" class="xliff"></a>
 Följ dessa steg när du vill ange ett namn för den manuella uppgiften.
 
 1.  Klicka på **Grundinställningar** i det vänstra fönstret.
 2.  I fältet **Namn** anger du ett unikt namn för uppgiften.
 
-## <a name="enter-a-subject-line-and-instructions"></a>Ange en ämnesrad och instruktioner
+## Ange en ämnesrad och instruktioner
+<a id="enter-a-subject-line-and-instructions" class="xliff"></a>
 Du måste ange en ämnesrad och instruktioner för användare som är tilldelade till uppgiften. Om du till exempel konfigurerar en uppgift för inköpsrekvisitioner, kan användaren som tilldelats uppgiften se ämnesraden och instruktionerna på sidan **Inköpsrekvisitioner**. Ämnesraden visas i ett meddelandefält på sidan. Användaren kan sedan klicka på ikonen i meddelandefältet för att visa instruktionerna. Följ dessa steg när du vill ange en ämnesrad och instruktioner.
 
 1.  Klicka på **Grundinställningar** i det vänstra fönstret.
@@ -74,7 +77,8 @@ Du måste ange en ämnesrad och instruktioner för användare som är tilldelade
     5.  Om du vill anpassa texten kan du infoga platshållare enligt vad som beskrivs i steg 6.
     6.  Klicka på **Stäng**.
 
-## <a name="assign-the-task"></a>Tilldela åtgärden
+## Tilldela åtgärden
+<a id="assign-the-task" class="xliff"></a>
 Följ dessa steg för att ange vem som ska tilldelas den manuella uppgiften.
 
 1.  Klicka på **Tilldelning** i det vänstra fönstret.
@@ -126,10 +130,10 @@ Följ dessa steg för att ange vem som ska tilldelas den manuella uppgiften.
     </tr>
     <tr class="even">
     <td>Användare</td>
-    <td>Specifika Microsoft Dynamics 365 for Operations-användare</td>
+    <td>Specifika användare av Microsoft Dynamics 365 for Finance and Operations</td>
     <td><ol>
     <li>Klicka på fliken <strong>Användare</strong> när du har valt <strong>Användare</strong>.</li>
-    <li>Listan <strong>Tillgängliga användare</strong> innehåller alla Dynamics 365 for Operations-användare. Markera de användare som ska tilldelas uppgiften och flytta sedan dessa till listan <strong>Markerade användare</strong>.</li>
+    <li>Listan <strong>Tillgängliga användare</strong> innehåller alla Finance and Operations-användare. Markera de användare som ska tilldelas uppgiften och flytta sedan dessa till listan <strong>Markerade användare</strong>.</li>
     </ol></td>
     </tr>
     <tr class="odd">
@@ -160,7 +164,8 @@ Följ dessa steg för att ange vem som ska tilldelas den manuella uppgiften.
 
     Om användaren inte slutför uppgiften inom den tilldelade tiden, är uppgiften försenad. En uppgift som försenas eskaleras, baserat på de alternativ som du väljer i avsnittet **Eskalering** på sidan.
 
-## <a name="specify-what-happens-when-the-task-is-overdue"></a>Ange vad som händer när en uppgift är försenad
+## Ange vad som händer när en uppgift är försenad
+<a id="specify-what-happens-when-the-task-is-overdue" class="xliff"></a>
 Om en användare inte slutför den manuella uppgiften inom den tilldelade tiden, är uppgiften försenad. En uppgift som är försenad kan eskaleras eller automatiskt tilldelas en annan användare. Följ dessa steg för att eskalera uppgiften om den är försenad.
 
 1.  Klicka på **Eskalering** i det vänstra fönstret.
@@ -212,10 +217,10 @@ Om en användare inte slutför den manuella uppgiften inom den tilldelade tiden,
     </tr>
     <tr class="odd">
     <td>Användare</td>
-    <td>Specifika Dynamics 365 for Operations-användare</td>
+    <td>Specifika Finance and Operations-användare.</td>
     <td><ol>
     <li>Klicka på fliken <strong>Användare</strong> när du har valt <strong>Användare</strong>.</li>
-    <li>Listan <strong>Tillgängliga användare</strong> innehåller alla Dynamics 365 for Operations-användare. Markera de användare som uppgiften ska eskaleras till, och flytta sedan dessa till listan <strong>Markerade användare</strong>.</li>
+    <li>Listan <strong>Tillgängliga användare</strong> innehåller alla Finance and Operations-användare. Markera de användare som uppgiften ska eskaleras till, och flytta sedan dessa till listan <strong>Markerade användare</strong>.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -231,7 +236,8 @@ Om en användare inte slutför den manuella uppgiften inom den tilldelade tiden,
 5.  Upprepa steg 3 och 4 för varje användare som ska läggas till i eskaleringsvägen. Du kan ändra alla användarnas ordningsföljd.
 6.  Om användarna i eskaleringsvägen inte slutför uppgiften inom den tillåtna tidsperioden, utförs uppgiften automatiskt i systemet. Om du vill ange den åtgärd som systemet ska vidta, välj då raden **Åtgärd** och sedan en åtgärd i fliken **Slutåtgärd**.
 
-## <a name="specify-when-the-system-automatically-acts-on-the-task"></a>Ange när systemet ska agera automatiskt på uppgiften
+## Ange när systemet ska agera automatiskt på uppgiften
+<a id="specify-when-the-system-automatically-acts-on-the-task" class="xliff"></a>
 Du kan konfigurera systemet så att detta automatiskt utför en manuell uppgift när särskilda villkor uppfylls. Till exempel kräver en uppgift att en medlem av utgiftsrapportavdelningen granskar de kvitton som skickas in tillsammans med en utgiftsrapport. Enligt företagets policy måste denna uppgift utföras om det totala beloppet för utgiftsrapporten är större än 100 USD. I så fall kan du konfigurera systemet för att automatiskt markera uppgiften som **Slutförd** om totalbeloppet är mindre än 100. Följ dessa steg för att ange när systemet vidtar en åtgärd för den manuella uppgiften.
 
 1.  Klicka på **Automatiska åtgärder** i det vänstra fönstret.
@@ -247,7 +253,8 @@ Du kan konfigurera systemet så att detta automatiskt utför en manuell uppgift 
 
 7.  I listan **Automatisk slutförandeåtgärd** väljer du den åtgärd som systemet ska vidta för uppgiften.
 
-## <a name="specify-when-notifications-are-sent"></a>Ange när meddelanden ska skickas
+## Ange när meddelanden ska skickas
+<a id="specify-when-notifications-are-sent" class="xliff"></a>
 Du kan skicka meddelanden till andra när en manuell uppgift har delegerats, eskalerats, slutförts eller avvisats, eller när en ändring har begärts. Följ dessa steg för att ange när meddelanden skickas och vem de skickas till.
 
 1.  Klicka på **Meddelanden** i det vänstra fönstret.
@@ -306,10 +313,10 @@ Du kan skicka meddelanden till andra när en manuell uppgift har delegerats, esk
     </tr>
     <tr class="odd">
     <td>Användare</td>
-    <td>Specifika Dynamics 365 for Operations-användare</td>
+    <td>Specifika Finance and Operations-användare.</td>
     <td><ol>
     <li>Klicka på fliken <strong>Användare</strong> när du har valt <strong>Användare</strong>.</li>
-    <li>Listan <strong>Tillgängliga användare</strong> innehåller alla Dynamics 365 for Operations-användare. Markera de användare som du vill skicka meddelanden till, och flytta sedan dessa användare till listan <strong>Markerade användare</strong>.</li>
+    <li>Listan <strong>Tillgängliga användare</strong> innehåller alla Finance and Operations-användare. Markera de användare som du vill skicka meddelanden till, och flytta sedan dessa användare till listan <strong>Markerade användare</strong>.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -317,7 +324,8 @@ Du kan skicka meddelanden till andra när en manuell uppgift har delegerats, esk
 
 8.  Upprepa stegen 3 till och med 7 för varje enskild händelse du valde i steg 2.
 
-## <a name="set-a-time-limit"></a>Ange en tidsgräns
+## Ange en tidsgräns
+<a id="set-a-time-limit" class="xliff"></a>
 Följ dessa steg om den manuella uppgiften måste slutföras inom en viss tid. **Obs!** De alternativ som du väljer i denna procedur åsidosätter alternativen som du valde i avsnitten **Tilldelning** och **Eskalering** på sidan.
 
 1.  Klicka på **Avancerade inställningar** i det vänstra fönstret.
@@ -331,7 +339,8 @@ Följ dessa steg om den manuella uppgiften måste slutföras inom en viss tid. *
 
 4.  Om tidsgränsen överskrids, utförs åtgärden automatiskt i systemet. I listan **Åtgärd** väljer du den åtgärd som ska vidtas i systemet.
 
-## <a name="specify-which-actions-are-available-to-the-user"></a>Ange vilka åtgärder som är tillgängliga för användaren
+## Ange vilka åtgärder som är tillgängliga för användaren
+<a id="specify-which-actions-are-available-to-the-user" class="xliff"></a>
 När den manuella uppgiften tilldelas en användare, måste användaren vidta åtgärder för uppgiften. Följ dessa steg för att ange vilka åtgärder som användaren kan vidta för uppgiften. **Obs!** Vilka åtgärder som står till buds varierar beroende på hur uppgiften har utformats.
 
 1.  Klicka på **Avancerade inställningar** i det vänstra fönstret.

@@ -1,9 +1,9 @@
 ---
-title: "Startsida för Power BI"
-description: "Det här avsnittet beskriver resurser som hjälper dig använda Power BI med 365 Dynamics for Operations."
+title: "Tillgängligt Power BI-innehåll"
+description: "Det här avsnittet beskriver Power BI-innehåll som är tillgängligt och hänvisar till resurser där du kan lära dig mer om det."
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,66 +17,95 @@ ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 711a2e18a692d7f4d048109fdd97497483ce05e8
+ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
+ms.openlocfilehash: 2df0c6dc9b41dde861f5361bfcc1226786e7aa76
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
 
-# <a name="power-bi-home-page"></a>Startsida för Power BI
-
+# Tillgängligt Power BI-innehåll
+<a id="power-bi-content-available" class="xliff"></a>
 [!include[banner](../includes/banner.md)]
 
 
-Det här avsnittet beskriver resurser som hjälper dig använda Power BI med 365 Dynamics for Operations.
+Det här avsnittet beskriver Microsoft Power BI-innehåll som är tillgängligt och hänvisar till resurser där du kan lära dig mer om det.
 
-<a name="power-bi-content-for-dynamics-365-for-operations"></a>Power BI-innehåll för Dynamics 365 for Operations
-------------------------------------------------
+## Power BI-innehåll för Dynamics 365 for Finance and Operations, Enterprise edition, juliuppdatering 2017
+<a id="power-bi-content-for-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update" class="xliff"></a>
+Om du använder Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, juliuppdateringen 2017, visas följande Power BI-innehåll:
 
-| **Funktionsområde**                  | **Power BI-innehåll**                          | **Här hittar du Power BI-innehåll**                                                                                                                                                                                         | **Läs mer**                                                                                                                                                               |
-|-----------------------------------|-----------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Ekonomisk styrning              | Finansiellt resultat                         | Microsoft Dynamics Lifecycle Services (LCS) (Den här versionen av innehållspaketet stöder Dynamics 365 for Operations version 1611.) PowerBI.com (Den här versionen av innehållspaketet stöder Microsoft Dynamics 365 for Operations 7.0 och 7.0.1.) | [Innehållspaket för ekonomiska resultat för Power BI](financial-performance-power-bi-content-pack.md)                                               |
-|                                   | Hantering av kredit och inkasso             | LCS                                                                                                                                                                                                                            |                                                                                                                                                                              |
-| Administration av humankapital          | Rekrytering-rapporter                            | LCS                                                                                                                                                                                                                            | [Power BI-innehåll för rekrytering](recruiting-analysis-power-bi-content-pack.md)                                                       |
-|                                   | Rapporter om medarbetares kompetenser och utveckling | LCS                                                                                                                                                                                                                            | [Power BI-innehåll för medarbetares kompetenser och utveckling](employee-competencies-and-development-analysis-power-bi-content-pack.md) |
-|                                   | Organisationsutbildningsrapporter               | LCS                                                                                                                                                                                                                            | [Power BI-innehåll för organisationsutbildning](organizational-training-analysis-power-bi-content-pack.md)                             |
-|                                   | Personalmätningar                             | LCS                                                                                                                                                                                                                            | [Power BI-innehåll för personalmätningar](workforce-analysis-power-bi-content-pack.md)                                                 |
-|                                   | Rapporter om kompensationer och förmåner             | LCS                                                                                                                                                                                                                            | [Power BI-innehåll om kompensationer och förmåner](compensation-and-benefits-analysis-power-bi-content-pack.md)                         |
-| Projekthantering och redovisning | Praxischef                              | LCS                                                                                                                                                                                                                            |                                                                                                                                                                              |
-| Butik och handel               | Butikskanalprestation                    | PowerBI.com                                                                                                                                                                                                                    | [Innehållspaket för butikskanalprestanda för Power BI](retail-channel-performance-dashboard-power-bi-data.md)                 |
-| Hantering av underleverantörer           | Kostnadshantering                               | PowerBI.com                                                                                                                                                                                                                    |  [Power BI-innehåll om kostnadshantering](cost-management-content-pack.md)                                                          |
-|                                   | Försäljnings- och lönsamhetsprestanda           | LCS                                                                                                                                                                                                                            | [Innehållspaket för försäljnings- och lönsamhetsprestanda för Power BI](sales-profitability-performance-content-pack.md)          |
-|                                   | Analys av inköpsutgift                       | LCS                                                                                                                                                                                                                            | [Analys av inköpsutgift – Power BI-innehåll](purchase-content-pack-for-power-bi.md)                                                 |
-|                                   | Kostnadsredovisningsanalys                      | LCS                                                                                                                                                                                                                            | [Power BI-innehåll för kostnadsredovisningsanalys](cost-accounting-analysis-content-pack.md)                                         |
-|                                   | Prestanda för lagerställe                         | LCS                                                                                                                                                                                                                            |                                                                                                                                                                              |
-|                                   | Produktionsprestation                        | LCS                                                                                                                                                                                                                            |                                                                                                                                                                              |
+- [Power BI-innehåll med förmåner](benefits-power-bi.md)
+- [Power BI-innehåll för kassaöversikt](/dynamics365/operations/financials/cash-bank-management/Cash-Overview-Power-BI-content)
+- [Power BI-innehåll för översikt över ekonomichef](CFO-power-bi.md)
+- [Power BI-innehållspaket för kompensationer](compensation-power-bi.md)
+- [Power BI-innehåll för kostnadsredovisningsanalys*](cost-accounting-analysis-content-pack.md) 
+- [Power BI innehållspaket för kredit- och inkassohantering](/dynamics365/operations/financials/accounts-receivable/credit-collections-power-bi)
+- [Utveckling av medarbetare Power BI-innehåll](employee-development-PBI.md) 
+- [Power BI-innehåll för ekonomiska resultat*](financial-performance-power-bi-content-pack.md)
+- [Power BI-innehåll för hantering av anläggningstillgång](/dynamics365/operations/financials/fixed-assets/Fixed-asset-management-workspace)
+- [Learning Power BI-innehåll](learning-power-bi.md)
+- [Power BI-innehåll för praxischef](practice-manager-power-bi.md)
+- [Power BI-innehåll för produktionsprestanda](production-performance-power-bi.md)
+- [Analys av inköpsutgift – Power BI-innehåll](purchase-content-pack-for-power-bi.md) 
+- [Power BI-innehåll för rekrytering](recruiting-analysis-power-bi-content-pack.md) 
+- [Innehållspaket för försäljnings- och lönsamhetsprestanda för Power BI](sales-profitability-performance-content-pack.md)
+- [Power BI-innehåll för leverantörsbetalningar](/dynamics365/operations/financials/accounts-payable/Vendor-payments-workspace)
+- [Power BI-innehåll för lagerställets prestanda](warehouse-power-bi-content.md)
+- [Power BI-innehåll för personalmätningar](workforce-analysis-power-bi-content-pack.md)  
 
-## <a name="access-power-bi-content-from-lcs"></a>Åtkomst till Power BI-innehåll från LCS
-Mer information om hur du laddar ned Power BI-innehåll och kopplar det till dina organisationsdata, se [Power BI-innehåll i LCS från Microsoft och dina partner](power-bi-content-microsoft-partners.md).
+### Komma åt innehåll
+<a id="accessing-the-content" class="xliff"></a>
 
-## <a name="access-power-bi-content-from-powerbicom"></a>Åtkomst till Power BI-innehåll från PowerBI.com
-1.  Logga in på [PowerBI.com](https://www.powerbi.com/).
-2.  Klicka på **Hämta data**.
-3.  I rutan **Tjänster**, klicka på **Hämta**.
-4.  Välj det innehållspaket som du vill ha och klicka sedan på **Hämta**.
-5.  Ange URL-adressen till din Dynamics 365 for Operations-miljö. URL-adressen måste vara i formatet **https://&lt;YourAOSTenant&gt;.cloudax.dynamics.com**. Klicka på **Nästa**.
-6.  Välj **oAuth2** som autentiseringsmetod och klicka sedan på **Logga in**.
-7.  När du uppmanas anger du ett Microsoft Office 365-konto som har behörighet att komma åt din Dynamics 365 for Operations-miljö.
-8.  Importprocessen startar automatiskt när du har loggat in. När importen är klar visas de rapporter som ingår i det aktuella innehållspaketet i navigeringsfönstret. Välj en rapport för att visa importerade data.
+#### Inbäddat innehåll
+<a id="embedded-content" class="xliff"></a>
+Förutom innehåll som är markerat med en asterisk (\*) är allt innehåll i ovanstående lista inbäddat i programmet. Om du vill ha mer information om var du kan visa Power BI-innehåll, klicka på länken.
 
-## <a name="learn-more-about-the-power-bi-integration"></a>Mer information om Power BI-integration
--   [Power BI-integration](power-bi-integration.md)
--   [Översikt för Power BI-integrering med enhetslagring](power-bi-integration-entity-store.md)
--   [Skapa och distribuera Power BI-rapporter med enhetslagring](author-distribute-power-bi-reports.md)
--   [Fäst Power BI-rapporter vid arbetsytor](pin-power-bi-reports.md)
--   [Power BI-innehåll i LCS från Microsoft och dina partner](power-bi-content-microsoft-partners.md)
--   [Använd en elektronisk rapporteringskonfiguration för att tillhandahålla Power BI med data från med Dynamics 365 for Operations](general-electronic-reporting-report-configuration-get-data-powerbi.md)
+#### Filer i Lifecycle Services
+<a id="files-available-in-lifecycle-services" class="xliff"></a>
+Detta Power BI-innehåll finns i biblioteket Gemensamma tillgångar i Microsoft Dynamics Lifecycle Services (LCS). Mer information om hur du laddar ned innehållet och ansluter det till dina data finns i [Power BI-innehåll i LCS från Microsoft och dina partner](power-bi-content-microsoft-partners.md). Om du vill se en demonstration som visar hur du implementerar Power BI-innehållet, se [Power BI-innehåll från Microsoft och dina samarbetspartners i Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office mix.
 
+## Power BI-innehåll för Dynamics 365 for Operations version 1611
+<a id="power-bi-content-for-dynamics-365-for-operations-version-1611" class="xliff"></a>
+Om du använder Microsoft Dynamics 365 for Operations version 1611 finns följande Power BI-innehåll:
 
+- [Power BI-innehåll om kompensationer och förmåner](compensation-and-benefits-analysis-power-bi-content-pack.md)   
+- [Kostnadsredovisningsanalys Power BI-innehåll](cost-accounting-analysis-content-pack.md) 
+- [Power BI innehållspaket för kredit- och inkassohantering](/dynamics365/operations/financials/accounts-receivable/credit-collections-power-bi)
+- [Power BI-innehåll för medarbetares kompetenser och utveckling](employee-competencies-and-development-analysis-power-bi-content-pack.md) 
+- [Innehållspaket för ekonomiska resultat för Power BI](financial-performance-power-bi-content-pack.md)
+- [Power BI-innehåll för organisationsutbildning](organizational-training-analysis-power-bi-content-pack.md) 
+- [Power BI-innehåll för praxischef](practice-manager-power-bi.md)
+- [Power BI-innehåll för produktionsprestanda](production-performance-power-bi.md)
+- [Analys av inköpsutgift – Power BI-innehåll](purchase-content-pack-for-power-bi.md) 
+- [Power BI-innehåll för rekrytering](recruiting-analysis-power-bi-content-pack.md) 
+- [Innehållspaket för försäljnings- och lönsamhetsprestanda för Power BI](sales-profitability-performance-content-pack.md)
+- [Power BI-innehåll för lagerställets prestanda](warehouse-power-bi-content.md)
+- [Power BI-innehåll för personalmätningar](workforce-analysis-power-bi-content-pack.md)  
 
+### Komma åt innehållet
+<a id="accessing-the-content" class="xliff"></a>
+Detta Power BI-innehåll finns i biblioteket Gemensamma tillgångar i Microsoft Dynamics Lifecycle Services (LCS). Mer information om hur du laddar ned innehållet och ansluter det till dina data finns i [Power BI-innehåll i LCS från Microsoft och dina partner](power-bi-content-microsoft-partners.md). Om du vill se en demonstration som visar hur du implementerar Power BI-innehållet, se [Power BI-innehåll från Microsoft och dina samarbetspartners i Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office mix.
 
+## Power BI-innehåll för Microsoft Dynamics AX
+<a id="power-bi-content-for-microsoft-dynamics-ax" class="xliff"></a>
+Om du använder Microsoft Dynamics AX 7.0 or Microsoft Dynamics AX 7.0.1 finns följande Power BI-innehåll:
 
+- [Power BI-innehåll om kostnadshantering](cost-management-content-pack.md)    
+- [Innehållspaket för ekonomiska resultat för Power BI](financial-performance-power-bi-content-pack.md)
+- [Power BI-innehåll för Resultat för butikskanal](retail-channel-performance-dashboard-power-bi-data.md) 
 
+### Komma åt innehållet
+<a id="accessing-the-content" class="xliff"></a>
+Detta Power Bi-innehåll är tillgängligt från PowerBI.com.
+
+1. Logga in på [PowerBI.com](https://www.powerbi.com/).
+2. Klicka på **Hämta data**.
+3. I rutan **Tjänster**, klicka på **Hämta**.
+4. Välj det innehållspaket som du vill ha och klicka sedan på **Hämta**.
+5. Ange URL-adressen till din Dynamics AX-miljö. URL-adressen måste vara i formatet **https://&lt;YourAOSTenant&gt;.cloudax.dynamics.com**. Klicka på **Nästa**.
+6. Välj **oAuth2** som autentiseringsmetod och klicka sedan på **Logga in**.
+7. När du uppmanas anger du ett Microsoft Office 365-konto som har behörighet att komma åt din Microsoft Dynamics AX-miljö.
+8. Importprocessen startar automatiskt när du har loggat in. När importen är klar visas de rapporter som ingår i det aktuella innehållspaketet i navigeringsfönstret. Välj en rapport för att visa importerade data.
 

@@ -3,7 +3,7 @@ title: "Gränssnitt för Report Designer"
 description: "Den här artikeln innehåller en beskrivning av hur du navigerar på Report Designer och hur du använder de olika alternativen för att uppfylla dina krav."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: ShylaThompson
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 59041
 ms.assetid: 054de5b0-8618-4195-be12-f031b4bb4d74
 ms.search.region: Global
@@ -19,27 +19,30 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 775a836748949a86b64a0ddec15ee4519b1c5127
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: aad8f2617d94e9abc77dafe96cb95f7e191873bd
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="report-designer-interface"></a>Gränssnitt för Report Designer
+# Gränssnitt för Report Designer
+<a id="report-designer-interface" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
 Den här artikeln innehåller en beskrivning av hur du navigerar på Report Designer och hur du använder de olika alternativen för att uppfylla dina krav. 
 
-<a name="report-designer-menu-commands"></a>Menykommandon för Report Designer
+Menykommandon för Report Designer
+<a id="report-designer-menu-commands" class="xliff"></a>
 -----------------------------
 
 I tabellen nedan beskrivs menykommandona och alternativen som du kan använda när du utformar ekonomiska rapporter. Vissa menykommandon och alternativ är bara tillgängliga i vissa förhållanden. Exempelvis är kommandona för att främja och att sänka rapportenheter endast tillgängliga om du ändrar en rapportträddefinition.
 
-### <a name="file-menu"></a>Menyn Arkiv
+### Menyn Arkiv
+<a id="file-menu" class="xliff"></a>
 
 Menyn **ArkivFil** är tillgänglig för alla användare och inkluderar följande kommandon.
 
@@ -53,14 +56,15 @@ Menyn **ArkivFil** är tillgänglig för alla användare och inkluderar följand
 | Spara som                           | Spara nuvarande raddefinition, kolumndefinition, rapportträddefinition eller rapportdefinition med ett nytt namn.                                                                            |
 | Egenskaper                        | Öppna dialogrutan **Egenskaper** där du kan ändra namn och beskrivning av en rapport.                                                                                                   |
 | Generera                          | Skapa aktuell rapport. Detta kommando är tillgängligt från en rapportdefinition.                                                                                                                 |
-| Visa rapport                       | Öppna den senaste versionen av den skapade rapporten i Dynamics 365 for Operations. Detta kommando är tillgängligt från en rapportdefinition, om du har genererat minst en rapport.                                 |
+| Visa rapport                       | Öppna den senaste versionen av den skapade rapporten i Finance and Operations. Detta kommando är tillgängligt från en rapportdefinition, om du har genererat minst en rapport.                                 |
 | Senaste rapportdefinitionerna         | Visa en lista med de senast skapade eller ändrade rapporterna. Du kan sedan välja en rapport i listan.                                                                                    |
 | Senaste raddefinitionerna            | Visa en lista med de senast skapade eller ändrade raddefinitionerna. Du kan sedan välja en raddefinition i listan.                                                                    |
 | Senaste kolumndefinitionerna         | Visa en lista med de senast skapade eller ändrade kolumndefinitionerna. Du kan sedan välja en kolumndefinition i listan.                                                              |
 | Senaste rapportträddefinitionerna | Visa en lista med de senast skapade eller ändrade rapportträddefinitionerna. Du kan sedan välja en rapportträddefinition i listan.                                              |
 | Avsluta                              | Avsluta Report Designer.                                                                                                                                                                            |
 
-### <a name="edit-menu"></a>Redigera meny
+### Redigera meny
+<a id="edit-menu" class="xliff"></a>
 
 Menyn **Redigera** är tillgänglig för användare som har rollerna **Designer** eller **Administratör**. Den här menyn innehåller följande kommandon.
 
@@ -88,7 +92,8 @@ Menyn **Redigera** är tillgänglig för användare som har rollerna **Designer*
 | Infoga rapportenhet                  | Infoga en tom rad i rapportträddefinitionen. Detta kommando är tillgängligt från en rapportträddefinition.                                                                                                |
 | Ta bort rapportenhet                  | Ta bort den valda rapportenhetraden från rapportträddefinitionen. Detta kommando är tillgängligt från en rapportträddefinition.                                                                             |
 
-### <a name="view-menu"></a>Visa-menyn
+### Visa-menyn
+<a id="view-menu" class="xliff"></a>
 
 Menyn **Visa** är tillgänglig för alla användare och inkluderar följande kommandon.
 
@@ -99,7 +104,8 @@ Menyn **Visa** är tillgänglig för alla användare och inkluderar följande ko
 | Statusfält      | Visa eller dölj statusinformationen i fönstret **Rapportdesignern**. |
 | Välkomstsida    | Öppna sidan **Välkommen**.                                             |
 
-### <a name="format-menu"></a>Formatera menyn
+### Formatera menyn
+<a id="format-menu" class="xliff"></a>
 
 Menyn **Format** är tillgänglig för användare som har rollerna **Designer** eller **Administratör**. Den här menyn innehåller följande kommandon.
 
@@ -110,7 +116,8 @@ Menyn **Format** är tillgänglig för användare som har rollerna **Designer** 
 | Dölj                  | Dölj den valda kolumnen. Detta kommando är tillgängligt från en raddefinition, en kolumndefinition eller en rapportträddefinition.                                                                                        |
 | Visa                | Visa de dolda kolumnerna mellan de markerade kolumnerna. Detta kommando är tillgängligt från en raddefinition, en kolumndefinition eller en rapportträddefinition.                                                      |
 
-### <a name="company-menu"></a>Företagsmeny
+### Företagsmeny
+<a id="company-menu" class="xliff"></a>
 
 Menyn **Företag** är tillgänglig för användare som har rollerna **Designer** eller **Administratör**. Den här menyn innehåller följande kommandon.
 
@@ -119,7 +126,8 @@ Menyn **Företag** är tillgänglig för användare som har rollerna **Designer*
 | Företag             | Öppna dialogrutan **Företag** där du kan skapa och ändra företag.                                          |
 | Grupper för byggblock | Öppna dialogrutan **Grupper för byggblock** där du kan skapa, ändra, importera och exportera grupper för byggblock. |
 
-### <a name="go-menu"></a>Gå till menyn
+### Gå till menyn
+<a id="go-menu" class="xliff"></a>
 
 Menyn **Gå** är tillgänglig för alla användare och inkluderar följande kommandon. **Obs!** Dessa kommandon har ingen synlig effekt om inte navigeringsfönstret visas.
 
@@ -131,7 +139,8 @@ Menyn **Gå** är tillgänglig för alla användare och inkluderar följande kom
 | Rapportträddefinitioner | Visa rapportträddefinitioner i navigeringsfönstret.                            |
 | Säkerhet                   | Visa säkerhetsinformation för användare, grupper och företag i navigeringsfönstret. |
 
-### <a name="tools-menu"></a>Menyn Verktyg
+### Menyn Verktyg
+<a id="tools-menu" class="xliff"></a>
 
 Menyn **Verktyg** är tillgänglig för alla användare, men en del kommandon har begränsat tillgänglighet. Den här menyn innehåller följande kommandon.
 
@@ -144,7 +153,8 @@ Menyn **Verktyg** är tillgänglig för alla användare, men en del kommandon ha
 | Uppdatera cachelagrade ekonomiska data | Uppdatera data i den ekonomiska dimensionkolumnen.                                                                                                                                                               |
 | Alternativ                       | Öppna dialogrutan **Alternativ** där du kan ändra användarinställningar för Report Designer.                                                                                                                       |
 
-### <a name="window-menu"></a>Menyn Fönster
+### Menyn Fönster
+<a id="window-menu" class="xliff"></a>
 
 Menyn **Fönster** är tillgänglig för alla användare och inkluderar följande kommandon.
 
@@ -157,19 +167,22 @@ Menyn **Fönster** är tillgänglig för alla användare och inkluderar följand
 | Frysa vertikalt      | Frys den valda kolumnen så att denna kolumn fortsätter att visas i fönstret medan du bläddrar. Detta kommando är tillgängligt för användare som har rollerna **Designer** eller **Administratör**. |
 | Lista över öppna fönster | Visa en lista över fönster som är öppna. Välj ett fönster som du vill föra till framsidan.                                                                                                               |
 
-### <a name="help-menu"></a>Hjälp-menyn
+### Hjälp-menyn
+<a id="help-menu" class="xliff"></a>
 
 Menyn **Hjälp** är tillgänglig för alla användare och inkluderar följande kommandon.
 
 | Kommando | beskrivning                                                  |
 |---------|--------------------------------------------------------------|
-| Hjälp    | Öppna Dynamics 365 for Operations hjälpavsnittsida för ekonomisk rapportering. |
+| Hjälp    | Öppna Finance and Operations hjälpavsnittsida för ekonomisk rapportering. |
 |         |                                                              |
 
-## <a name="report-designer-toolbar-buttons"></a>Verktygsfältsknappar för Report Designer
+## Verktygsfältsknappar för Report Designer
+<a id="report-designer-toolbar-buttons" class="xliff"></a>
 Följande tabeller beskriver de verktygsfältsknappar som du kan använda när du utformar rapporter. Vissa verktygsfältsknappar är bara tillgängliga i vissa förhållanden. Exempelvis är knapparna för att främja och att sänka rapportenheter endast tillgängliga om du ändrar en rapportträddefinition.
 
-### <a name="standard-toolbar"></a>Standardverktygsfält
+### Standardverktygsfält
+<a id="standard-toolbar" class="xliff"></a>
 
 Standardverktygsfältet ger snabb åtkomst till fil- och redigeringskommandon. Detta verktygsfält innehåller följande knappar.
 
@@ -194,7 +207,8 @@ Standardverktygsfältet ger snabb åtkomst till fil- och redigeringskommandon. D
 | [![Knappen Komprimera](./media/collapsec130389.png)](./media/collapsec130389.png)               | Döljer rapportträdet.                                                                                                                                                           |
 | [![Knappen Hjälp](./media/helpc130389.png)](./media/helpc130389.png)                           | Öppna Hjälp.                                                                                                                                                                             |
 
-### <a name="formatting-toolbar"></a>Formateringverktygsfält
+### Formateringverktygsfält
+<a id="formatting-toolbar" class="xliff"></a>
 
 Formateringverktygsfältet innehåller enkel åtkomst till utförandekommandon. Detta verktygsfält innehåller följande knappar.
 
@@ -211,7 +225,8 @@ Formateringverktygsfältet innehåller enkel åtkomst till utförandekommandon. 
 | [![Knappen Bakgrundsfärg](./media/fillbackgroundcolorc130389.png)](./media/fillbackgroundcolorc130389.png) | Ändra bakgrundsfärgen på den aktuella cellen.        |
 | [![Knappen Teckenfärg](./media/fontcolorc130389.png)](./media/fontcolorc130389.png)                           | Ändra den aktuella textens teckenfärg.                   |
 
-### <a name="report-designer-toolbar"></a>Verktygsfält för Report Designer
+### Verktygsfält för Report Designer
+<a id="report-designer-toolbar" class="xliff"></a>
 
 Verktygsfältet för rapportdesignern ger snabb åtkomst till kommandon navigering i rapportdesignern. Detta verktygsfält innehåller följande knappar.
 
@@ -226,7 +241,8 @@ Verktygsfältet för rapportdesignern ger snabb åtkomst till kommandon navigeri
 
 
 
-<a name="see-also"></a>Se även
+Se även
+<a id="see-also" class="xliff"></a>
 --------
 
 [Ekonomisk rapportering](financial-reporting-intro.md)

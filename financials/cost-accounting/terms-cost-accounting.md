@@ -3,14 +3,14 @@ title: Kostnadsredovisningsterminologi
 description: "Detta ämne definierar de grundläggande villkoren som används i kostnadsredovisning."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: CAMCostControlWorkspace, CAMCostControlWorkspaceConfiguration
 audience: Application User
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 223114
 ms.assetid: 1c798592-77d0-4a8f-beaa-9159c75957da
 ms.search.region: global
@@ -19,15 +19,16 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 7ce12337c22542aea2002ffc5abd09e4f4d770c1
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 35b8e510e7e2c13aebb73f46d20b16275d097432
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="cost-accounting-terminology"></a>Kostnadsredovisningsterminologi
+# Kostnadsredovisningsterminologi
+<a id="cost-accounting-terminology" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
@@ -36,7 +37,7 @@ Detta ämne definierar de grundläggande villkoren som används i kostnadsredovi
 
 **Kostnadsredovisning**
 
-Kostnadsredovisning låter dig samla in data från olika källor, till exempel huvudbok, delredovisningar, budgetar och statistisk information. Du kan sedan analysera, summera och utvärdera kostnadsdata, så att ledningen kan ta bästa möjliga beslut när det gäller prisuppdateringar, budgetar, kostnadskontroll, osv. Källadatan som används för kostnadsanalys hanteras oberoende i kostnadsredovisning. Därför påverkas inte källadatan av uppdateringar i kostnadsredovisning. När du samlar in kostnadsdata från olika källor och särskilt när du importerar huvudkontona från huvudboken i Microsoft Dynamics 365 for Operation som kostnadselement finns det dataredundans, eftersom samma data finns i både huvudbok och i kostnadsredovisning. Den här redundansen krävs, eftersom du använder ekonomisk hantering för extern rapportering och kostnadsredovisning för intern rapportering.
+Kostnadsredovisning låter dig samla in data från olika källor, till exempel huvudbok, delredovisningar, budgetar och statistisk information. Du kan sedan analysera, summera och utvärdera kostnadsdata, så att ledningen kan ta bästa möjliga beslut när det gäller prisuppdateringar, budgetar, kostnadskontroll, osv. Källadatan som används för kostnadsanalys hanteras oberoende i kostnadsredovisning. Därför påverkas inte källadatan av uppdateringar i kostnadsredovisning. När du samlar in kostnadsdata från olika källor och särskilt när du importerar huvudkontona från huvudboken i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition som kostnadselement finns det dataredundans, eftersom samma data finns i både huvudbok och i kostnadsredovisning. Den här redundansen krävs, eftersom du använder ekonomisk hantering för extern rapportering och kostnadsredovisning för intern rapportering.
 
 **Huvudbok för kostnadsredovisning**
 

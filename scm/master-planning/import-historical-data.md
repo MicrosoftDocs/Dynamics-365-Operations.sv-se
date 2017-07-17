@@ -9,25 +9,27 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.assetid: 59c0d269-9db0-48e7-b8c7-9a388781a9ca
 ms.search.region: Global
 ms.author: roxanad
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 0d1e2b9a51c2d7a7c30c2458b7babf8ac5c08118
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 957626a283b750645adefa5176480e68cc27e4f1
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="import-historical-data-for-demand-forecasts"></a>Importera historikdata för efterfrågeprognoser
+# Importera historikdata för efterfrågeprognoser
+<a id="import-historical-data-for-demand-forecasts" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
-För att garantera att efterfrågeprognoserna blir korrekt måste du ha lika mycket historiska efterfrågeuppgifter som du kan för varje artikel eller artikelallokeringsnyckel. Om den historiska efterfrågedatan inte redan har importerats, använd då dataenheten **Historisk extern efterfrågan** (ReqDemPlanHistoricalExternalDemandEntity) i Microsoft Dynamics 365 for Operations för att importera den.
+För att garantera att efterfrågeprognoserna blir korrekt måste du ha lika mycket historiska efterfrågeuppgifter som du kan för varje artikel eller artikelallokeringsnyckel. Om den historiska begärandedatan inte redan har importerats, använd då dataenheten **Historisk extern begäran** (ReqDemPlanHistoricalExternalDemandEntity) i Microsoft Dynamics 365 for Finance and Operations för att importera den.
 
 I arbetsytan **Datahantering** kan du visa en översikt över alla fält i entiteten.
 
@@ -38,7 +40,8 @@ I arbetsytan **Datahantering** kan du visa en översikt över alla fält i entit
 
 Du måste ha en Microsoft Excel-fil eller kommaseparerade värden (CSV) som innehåller historiska efterfrågeuppgifter data om du vill använda dataenheten. I följande exempel visas hur du importerar data från en CSV-fil.
 
-## <a name="example"></a>Exempel
+## Exempel
+<a id="example" class="xliff"></a>
 
 Du kan använda följande fil som exempel. Hämta [HistoricalDemandData](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/365OperationsDemandForecast). Denna fil innehåller historiska efterfrågedata för artikel D0001. Den innehåller endast följande obligatoriska fält: webbplats, kvantitet och efterfrågedatum.
 
@@ -54,7 +57,8 @@ Du kan använda följande fil som exempel. Hämta [HistoricalDemandData](https:/
 
 När du har importerat efterfrågehistoriken kan du skapa en efterfrågeprognos.
 
-## <a name="see-also"></a>Se även
+## Se även
+<a id="see-also" class="xliff"></a>
 
 [Generera en statistisk baslinjeprognos](generate-statistical-baseline-forecast.md)
 

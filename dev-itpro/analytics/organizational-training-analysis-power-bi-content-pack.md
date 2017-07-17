@@ -1,15 +1,15 @@
 ---
 title: "Power BI-innehåll för organisationsutbildning"
-description: "Det här avsnittet beskriver Dynamics 365 for Operations - Power BI-innehåll för organisationsutbildning. Det förklarar hur du öppnar innehållspaketet, och beskriver datamodellen och de enheter som användes för att skapa paketet."
+description: "Det här avsnittet beskriver Finance and Operations - Power BI-innehåll för organisationsutbildning. Det förklarar hur du öppnar innehållspaketet, och beskriver datamodellen och de enheter som användes för att skapa paketet."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: Operations
+ms.search.scope: Operations, UnifiedOperations
 ms.custom: 263874
 ms.assetid: 45dbba14-aba6-4571-be0d-5d1aba3515d9
 ms.search.region: Global
@@ -17,28 +17,31 @@ ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: e1bfe405e2e4bf6445567d966ab20bd8645f8dbf
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 26499bf5423bc3711d110bd7e548eda238162b7a
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="organizational-training-power-bi-content"></a>Power BI-innehåll för organisationsutbildning
+# Power BI-innehåll för organisationsutbildning
+<a id="organizational-training-power-bi-content" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-Det här avsnittet beskriver Dynamics 365 for Operations - Power BI-innehåll för organisationsutbildning. Det förklarar hur du öppnar innehållspaketet, och beskriver datamodellen och de enheter som användes för att skapa paketet.
+Det här avsnittet beskriver Finance and Operations - Power BI-innehåll för organisationsutbildning. Det förklarar hur du öppnar innehållspaketet, och beskriver datamodellen och de enheter som användes för att skapa paketet.
 
-<a name="accessing-the-content-pack"></a>Åtkomst till innehållspaketet
+Åtkomst till innehållspaketet
+<a id="accessing-the-content-pack" class="xliff"></a>
 --------------------------
 
-Du kan hitta innehållspaketet för organisationsutbildning i biblioteket för gemensamma tillgångar i Microsoft Dynamics Lifecycle Services (LCS). Mer information om hur du hämtar innehållspaketet och kopplar det till dina Microsoft Dynamics 365 for Operations-data, se [Power BI-innehåll i LCS från Microsoft och dina partner](power-bi-content-microsoft-partners.md).
+Du kan hitta innehållspaketet för organisationsutbildning i biblioteket för gemensamma tillgångar i Microsoft Dynamics Lifecycle Services (LCS). Mer information om hur du hämtar innehållspaketet och kopplar det till dina Microsoft Dynamics 365 for Finance and Operations-data, se [Power BI-innehåll i LCS från Microsoft och dina partner](power-bi-content-microsoft-partners.md).
 
-## <a name="reports-that-are-included-in-the-content-pack"></a>Rapporter som ingår i innehållspaketet
-När du har anslutit innehållspaketet till dina Dynamics 365 for Operations-data kommer rapporterna att visa din organisations data. Om du aldrig har använt Microsoft Power BI tidigare kan du lära dig mer om det på sidan [Guidad utbildning för Power BI](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData). Rapporter som ingår i innehållspaketet har både diagram och tabeller med ytterligare information. Följande register beskriver rapporterna.
+## Rapporter som ingår i innehållspaketet
+<a id="reports-that-are-included-in-the-content-pack" class="xliff"></a>
+När du har anslutit innehållspaketet till dina Finance and Operations-data kommer rapporterna att visa din organisations data. Om du aldrig har använt Microsoft Power BI tidigare kan du lära dig mer om det på sidan [Guidad utbildning för Power BI](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData). Rapporter som ingår i innehållspaketet har både diagram och tabeller med ytterligare information. Följande register beskriver rapporterna.
 
 | Rapport          | Innehåll                                                                    |
 |-----------------|-----------------------------------------------------------------------------|
@@ -47,8 +50,9 @@ När du har anslutit innehållspaketet till dina Dynamics 365 for Operations-dat
 
 Diagrammen och rutorna i samtliga dessa rapporter kan filtreras och fästas på instrumentpanelen. Mer information om hur du filtrerar och fäster i Power BI finns i [Skapa och konfigurera en intrumentpanel](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
-## <a name="understanding-the-data-model-and-entities"></a>Förstå datamodellen och enheterna
-Dynamics 365 for Operations-data används för att fylla i rapporter i innehållspaketet för organisationsutbildning. Följande tabell visar enheterna som innehållspaketet baserades på.
+## Förstå datamodellen och enheterna
+<a id="understanding-the-data-model-and-entities" class="xliff"></a>
+Finance and Operations -data används för att fylla i rapporter i innehållspaketet för organisationsutbildning. Följande tabell visar enheterna som innehållspaketet baserades på.
 
 | Enhet                    | Innehåll                                                         | Relationer med andra entiteter                                                                                                                                                                  |
 |---------------------------|------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -68,7 +72,8 @@ Dynamics 365 for Operations-data används för att fylla i rapporter i innehåll
 
 Dessa enheter används för att skapa beräknade mått i datamodellen. Beräknade åtgärder används sedan för att beräkna huvudindikatorerna för prestanda (KPI) samt de rapporter som används i innehållspaketet. Om du vill inkludera ytterligare beräkningar i rapporterna och instrumentpanelerna kan du ladda ned och ändra filen Training.pbix från LCS. Filen är den standarddatamodell som använts för att skapa innehållspaketet. När du är klar med ändringarna kan du skapa ett innehållspaket för organisationen samt en instrumentpanel som innehåller den information som du har lagt till.
 
-## <a name="additional-resources"></a>Ytterligare resurser
+## Ytterligare resurser
+<a id="additional-resources" class="xliff"></a>
 Nedan följer några användbara länkar som är relaterade till enheter och till att skapa innehåll för Power BI:
 
 -   [Datatabeller](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/)

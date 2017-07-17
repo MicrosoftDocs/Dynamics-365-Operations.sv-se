@@ -1,16 +1,16 @@
 ---
 title: "Mobil arbetsyta för inventering av lagerbehållning"
-description: "Det här avsnittet innehåller information om den mobila arbetsytan för inventering av lagerbehållning som är tillgänglig för mobilappen Microsoft Dynamics 365 for Operations. Denna arbetsyta ger dig mobil insyn i reserverat och tillgängligt lager, när som helst och var som helst."
-author: YuyuScheller
+description: "Det här avsnittet innehåller information om den mobila arbetsytan för lagerbehållning. Denna arbetsyta ger dig mobil insyn i reserverat och tillgängligt lager, när som helst och var som helst."
+author: Mirzaab
 manager: AnnBe
-ms.date: 05/10/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: annbe
-ms.search.scope: Operations, Core
+ms.reviewer: sericks
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 267094
 ms.assetid: 3fa385ba-894d-4a9e-b394-ef3697abf895
 ms.search.region: global
@@ -19,33 +19,34 @@ ms.author: mirzaab
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 7387df37e047d5ab7a90b696a6ffa249094499c4
+ms.sourcegitcommit: a0edbad63c51d111d7c8985aa7fdf7312da6149d
+ms.openlocfilehash: d14f3510df45169e3b77ee9c4f3d0d9d389e6036
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="inventory-on-hand-mobile-workspace"></a>Mobil arbetsyta för inventering av lagerbehållning
+# Mobil arbetsyta för inventering av lagerbehållning
+<a id="inventory-on-hand-mobile-workspace" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
+Det här avsnittet innehåller information om den mobila arbetsytan för **Lagerbehållning**. Denna arbetsyta ger dig insyn i reserverat och lagerbehållning, när som helst och var som helst.
 
-Det här avsnittet innehåller information om den mobila arbetsytan för inventering av lagerbehållning som är tillgänglig för mobilappen Microsoft Dynamics 365 for Operations. Denna arbetsyta ger dig mobil insyn i reserverat och tillgängligt lager, när som helst och var som helst.
+Denna mobila arbetsyta är avsedd att användas med mobilappen Microsoft Dynamics 365 for Unified Operations.
 
-<a name="overview-of-the-inventory-on-hand-mobile-workspace"></a>Översikt över Mobil arbetsyta för inventering av lagerbehållning
---------------------------------------------------
-
-Normalt har företag flera in- och flera utleveranser av lager varje dag. Dessa transporter ändrar konstant tillgänglig lagerstatus. **Den mobila arbetsytan för inventering av lagerbehållning** låter dig se tillgänglig lagerstatus för hela företaget, vilket ger dig senaste information om lagerdata på valfri mobil enhet. Oavsett om du arbetar i på lagerstället, inom inköp, försäljning, tillverkning, administration eller har andra roller, kan du använda datan för tillgängligt lager när som helst och var som helst. 
+## Översikt
+<a id="overview" class="xliff"></a>
+Normalt har företag flera in- och flera utleveranser av lager varje dag. Dessa transporter ändrar konstant tillgänglig lagerstatus. Den mobila arbetsytan för **Lagerbehållning** låter dig se tillgänglig lagerstatus för hela företaget, vilket ger dig den senaste informationen om lagerdata på valfri mobil enhet. Oavsett om du arbetar i på lagerstället, inom inköp, försäljning, tillverkning, administration eller har andra roller, kan du använda datan för tillgängligt lager när som helst och var som helst. 
 
 Den mobila arbetsytan för inventering av lagerbehållning ger en översikt över lagerbehållningsstatus över lokaler. Där kan du visa lagerbehållning över lokaler, aktuella reservationer och oreserverad lagerbehållning. Du kan också ange artikelnummer till en förfrågan om lagerbehållning och söka filtrerat efter produkter i lager eller varianter. 
 
 Närmare bestämt erbjuder den mobila arbetsytan följande funktioner:
 
 -   Du kan söka efter produktnummer och produktnamn för att hitta produkter att visa lagerbehållningsstatusen för.
-
 -   Du kan visa följande information för valda produkter:
+
     -   Lagerbehållning efter plats
     -   Lagerbehållning efter lagerställe
     -   Lagerbehållning efter plats
@@ -53,19 +54,24 @@ Närmare bestämt erbjuder den mobila arbetsytan följande funktioner:
     -   Lagerbehållning efter lagerstatus
     
 -   Lagerbehållning för produkt visas på följande sätt:
+
     -   Genom fysiskt lager (denna vy representerar den totala mängden.)
     -   Genom fysiskt reserverat (denna vy representerar den reserverade mängden.)
     -   Genom fysiskt disponibelt (den här vyn representerar tillgänglig mängd utan reservationer.)
 
-## <a name="prerequisites"></a>Förutsättningar
-Innan du kan använda **Mobil arbetsyta för tillgängligt lager** ska du se till att systemadministratören har följande förutsättningar på plats.
+## Förutsättningar
+<a id="prerequisites" class="xliff"></a>
+Kraven varierar baserat på versionen av Microsoft Dynamics 365 som har distribuerats i organisationen.
+
+### Kraven om du använder Microsoft Dynamics 365 for Finance and Operations, Enterprise edition juli 2017 uppdatering
+<a id="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update" class="xliff"></a> 
+Om Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (juli 2017-uppdateringen) har implementerats för din organisation, måste systemadministratören publicera den mobila arbetsytan **Lagerbehållning**. Instruktioner finns i [Publicera en mobil arbetsyta](/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace).
+
+### Krav om du använder Microsoft Dynamics 365 for Operations version 1611 med plattformsuppdatering 3 eller senare
+<a id="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later" class="xliff"></a>
+Om Microsoft Dynamics 365 for Operations version 1611 med plattformsuppdatering 3 eller senare har använts i organisationen måste systemadministratören uppfylla följande krav. 
 
 <table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Förutsättning</th>
@@ -75,55 +81,55 @@ Innan du kan använda **Mobil arbetsyta för tillgängligt lager** ska du se til
 </thead>
 <tbody>
 <tr class="odd">
-<td>Microsoft Dynamics 365 for Operations version 1611 med plattformsuppdatering 3 eller senare måste genomföras.</td>
+<td>Implementera KB 4013633.</td>
 <td>Systemadministratör</td>
-<td>Om du inte redan använder Dynamics 365 for Operations i din organisation kan systemadministratören se <a href="/dynamics365/operations/dev-itpro/deployment/deploy-demo-environment">Distribuera en demomiljö för Microsoft Dynamics 365 for Operations</a>.</td>
+
+<td>KB 4013633 är en X++ -uppdatering eller snabbkorrigering av metadata som innehåller den mobila arbetsytan för <strong>lagerbehållning</strong>. Om du vill implementera KB 4013633 måste systemadministratören göra följande.
+<ol>
+<li><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/download-hotfix-lcs">Hämta snabbkorrigering av metadata från Microsoft Dynamics AX Lifecycle Services(LCS)</a>.</li>
+<li><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Snabbkorrigering av metadata</a>.</li>
+<li><a href="/dynamics365/unified-operations/dev-itpro/deployment/create-apply-deployable-package">Skapa ett driftfärdigt paket </a> som innehåller modellerna <strong>SCMMobile</strong> och modellen och överför sedan det driftfärdiga paketet till LCS. </li>
+<li><a href="/dynamics365/unified-operations/dev-itpro/deployment/apply-deployable-package-system">Tillämpa ett distribuerbart paket</a></li>
+
+</ol></td>
 </tr>
 <tr class="even">
-<td>KB 4013633 måste genomföras.</td>
+<td>Publicera den mobila arbetsytan <strong>Lagerbehållning</strong>.</td>
 <td>Systemadministratör</td>
-<td>KB 4013633 (X++ uppdatering eller snabbkorrigering av metadata) innehåller fyra mobila arbetsytor för hantering av leveranskedjan. Om du vill implementera KB 4013633 måste systemadministratören göra följande:
-<ol>
-<li>Hämta KB 4013633 från Microsoft Dynamics Lifecycle Services (LCS).</li>
-<li><a href="/dynamics365/operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Snabbkorrigering av metadata</a>.</li>
-<li><a href="/dynamics365/operations/dev-itpro/deployment/create-apply-deployable-package">Skapa ett driftfärdigt paket </a> som innehåller modellerna <strong>SCMMobile</strong> och modellen och överför sedan det driftfärdiga paketet till LCS. </li>
-<li><a href="/dynamics365/operations/dev-itpro/deployment/apply-deployable-package-system">Koppla det driftfärdiga paketet</a> till Dynamics 365 for Operations-systemet.</li>
-</ol></td>
-</tr>
-<tr class="odd">
-<td><strong>Mobil arbetsyta för tillgängligt lager</strong> måste publiceras i mobilappen för Dynamics 365 for Operations.</td>
-<td>Systemadministratör</td>
-<td><ol>
-<li>Starta Dynamics 365 for Operations i din webbläsare.</li>
-<li>På sidan <strong>systemparametrar</strong> anger du <strong>Hantera mobila arbetsområden</strong>.</li>
-<li>Välj <strong>arbetsyta för inventering av lagerbehållning</strong></li>
-<li>Klicka på <strong>Publicera mobil arbetsyta</strong>.</li>
-</ol></td>
+<td>Se <a href="/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace">Publicera en mobil arbetsyta</a>.</td>
 </tr>
 </tbody>
 </table>
 
-## <a name="download-and-install-the-dynamics-365-for-operations-mobile-app"></a>Hämta och installera mobilappen Dynamics 365 for Operation.
-Hämta och installera mobilappen Dynamics 365 for Operation från din mobilappsbutik.
+## Hämta och installera mobilappen
+<a id="download-and-install-the-mobile-app" class="xliff"></a>
 
--   För Android - [Dynamics 365 for Operations i Google Play Store](https://play.google.com/store/apps/details?id=com.microsoft.dynamics365.operations.mobile)
--   För iPhone: [Dynamics 365 for Operations iTunes apps store](https://itunes.apple.com/us/app/dynamics-365-for-operations/id1180836730?mt=8)
+Hämta och installera mobilappen Dynamics 365 for Unified Operations:
 
-## <a name="sign-in-to-the-dynamics-365-for-operations-mobile-app"></a>Logga in på mobilappen Dynamics 365 for Operations
+-   [För Android-telefoner](https://go.microsoft.com/fwlink/?linkid=850662)
+-   [För iPhones](https://go.microsoft.com/fwlink/?linkid=850663)
+
+## Logga in på mobilappen
+<a id="sign-in-to-the-mobile-app" class="xliff"></a>
+
 1.  Starta appen i din mobila enhet.
-2.  Ange URL för Dynamics 365 for Operations
-3.  Ange ett företag att logga in på. Ange till exempel **USMF**.
-4.  Första gången du loggar in uppmanas du ange användarnamn och lösenord för ditt Dynamics 365 for Operations-konto. Ange dina autentiseringsuppgifter.
-5.  När du loggar in visas tillgängliga arbetsytor för ditt företag. Observera att om systemadministratören publicerar en ny arbetsyta senare kan du dra om du vill uppdatera listan över mobila arbetsytor. 
+2.  Ange din webbadress för Dynamics 365.
+3.  Första gången du loggar in uppmanas du ange användarnamn och lösenord. Ange dina autentiseringsuppgifter.
+4.  När du loggar in visas tillgängliga arbetsytor för ditt företag. Observera att om systemadministratören publicerar en ny arbetsyta senare kan du dra om du vill uppdatera listan över mobila arbetsytor.
 
     [![Dra för att uppdatera](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
-## <a name="view-the-onhand-inventory-for-a-product-by-using-the-inventory-onhand-mobile-workspace"></a>Visa lagerbehållningen för en produkt med hjälp av Mobil arbetsyta för inventering av lagerbehållning
+## Visa lagerbehållningen för en produkt med hjälp av den mobila arbetsytan för lagerbehållning
+<a id="view-the-on-hand-inventory-for-a-product-by-using-the-inventory-on-hand-mobile-workspace" class="xliff"></a>
+
 1.  På din mobila enhet väljer du arbetsytan **Lagerbehållning**.
-2.  Välj **Kontrollera lagerbehållning för en artikel**. Du kan se en lista över de produkter som laddas i ditt program för användning offline. 50 objekt laddas som standard, men en utvecklare kan ändra detta antal. Mer information bör utvecklare finns [Den mobila plattformen för Dynamics 365 for Operations](/dynamics365/operations/dev-itpro/mobile-apps/mobile-platform).
-3.  Om objektet inte finns i listan väljer du **Sök fler** för att utföra en onlinesökning i Dynamics 365 for Operations. Sök efter produktnummer eller växla till en sökning efter produktnamn.
+
+2.  Välj **Kontrollera lagerbehållning för en artikel**. Du kan se en lista över de produkter som laddas i ditt program för användning offline. 50 objekt laddas som standard, men en utvecklare kan ändra detta antal. Mer information för utvecklare finns under [mobil plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform).
+3.  Om objektet inte finns i listan väljer du **Sök fler**. Sök efter produktnummer eller växla till en sökning efter produktnamn.
+
 4.  Välj en produkt. Om artikeln har en bild, visas bilden.
 5.  Välj ett av följande alternativ för att visa lagerbehållningens status:
+
     -   Visa lagerbehållning per plats
     -   Visa lagerbehållning per lagerställe
     -   Visa lagerbehållning efter plats
@@ -134,9 +140,4 @@ Hämta och installera mobilappen Dynamics 365 for Operation från din mobilappsb
     -   Genom fysiskt lager (denna vy representerar den totala mängden.)
     -   Genom fysiskt reserverat (denna vy representerar den reserverade mängden.)
     -   Genom fysiskt disponibelt (den här vyn representerar tillgänglig mängd utan reservationer.)
-
-
-
-
-
 

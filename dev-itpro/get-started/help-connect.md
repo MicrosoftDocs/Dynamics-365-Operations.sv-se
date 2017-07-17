@@ -1,9 +1,9 @@
 ---
 title: "Ansluta hjälpsystemet"
-description: "Det här avsnittet innehåller en beskrivning av komponenterna i hjälpsystemet för Microsoft Dynamics 365 for Operations, en översikt över hur du ansluter dem samt en sammanfattning över hur du skapar anpassad hjälp."
+description: "Det här avsnittet innehåller en beskrivning av komponenterna i hjälpsystemet för Microsoft Dynamics 365 for Finance and Operations, en översikt över hur du ansluter dem samt en sammanfattning över hur du skapar anpassad hjälp."
 author: margoc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,28 +19,35 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 86c7cb3961ba5170c32979e77aaa5f506ffac8a1
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: 425e87f8b667b53fcc950730dc4ece6330503d66
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
 
-# <a name="connect-the-help-system"></a>Ansluta hjälpsystemet
+# Ansluta hjälpsystemet
+<a id="connect-the-help-system" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-Det här avsnittet innehåller komponenten för hjälpsystemet för Microsoft Dynamics 365 for Operations. Det ger en översikt över hur du skapar ansluter dessa komponenter en sammanfattning av hur du skapar anpassad hjälp. 
+Det här avsnittet innehåller komponenten för hjälpsystemet för Microsoft Dynamics 365 for Finance and Operations. Det ger en översikt över hur du skapar ansluter dessa komponenter en sammanfattning av hur du skapar anpassad hjälp. 
 
-<a name="help-architecture"></a>Hjälparkitektur
------------------
+## Hjälparkitektur
+<a id="help-architecture" class="xliff"></a>
+Följande bild visar delarna i hjälpsystemet för Finance and Operations. Produktens interna hjälpsystem hämtar artiklar från Finance and Operations-webbplatsen på https://docs.microsoft.com, samt på uppgiftsguider som lagras i Affärsprocessmodelleraren i Lifecycle Services (LCS). 
+> [!NOTE]
+> Funktionerna som anges med en asterisk (\*) i diagrammet planeras, men är ännu inte tillgängliga. [![Hjälparkitektur](./media/help-architecture.png)](./media/help-architecture.png)
 
-Följande bild visar delarna i hjälpsystemet för Dynamics 365 for Operations. Produktens interna hjälpsystem hämtar artiklar från hjälpwikin för Dynamics 365 for Operations på https://docs.microsoft.com, samt uppgiftsguider som lagras i Affärsprocessmodelleraren i Microsoft Dynamics Lifecycle Services (LCS). 
-**Obs!** Funktionerna som anges med en asterisk i diagrammet (\*) planeras, men ännu är inte tillgängliga. [![Hjälparkitektur](./media/help-architecture.png)](./media/help-architecture.png)
 
-## <a name="connecting-the-help-system"></a>Ansluta hjälpsystemet
+## Ansluta hjälpsystemet
+<a id="connecting-the-help-system" class="xliff"></a>
+> [!NOTE]
+> Fliken **Uppgiftsguider** finns för närvarande inte i Microsoft Dynamics 365 for Talent eller Microsoft Dynamics 365 for Retail. Vi arbetar för närvarande med att aktivera den här funktionen i framtida versioner. Uppgiftsguiderna i Komma igång i Talent täcker fortsatt basfunktionerna. Procedurhjälp finns också på webbplatsen docs.microsoft.com ([docs.microsoft.com/dynamics365/operations](/dynamics365/#pivot=solutions&panel=solutions_operations)) för både Retail och Talent.
+ 
+
 Med hjälp av sidan **Systemparametrar** ansluter systemadministratörer delar av hjälpsystemet för en implementering [![Formulär för systemparametrar med hjälpinställningar](./media/system-parameters_ops-1024x437.png)](./media/system-parameters_ops.png) Gå till sidan **Systemparametrar** och följ dessa steg:
 
 > [!IMPORTANT]
@@ -48,23 +55,32 @@ Med hjälp av sidan **Systemparametrar** ansluter systemadministratörer delar a
 
 1.  Välj Lifecycle Services-projektet att ansluta till.
 2.  Välj BPM-biblioteken (inom det valda projektet) att hämta uppgiftsregistreringar från.
+    - För Microsoft innehåll för Finance and Operations väljer du QPC Unified Library (februari 2017) för Microsoft Dynamics 365 for Finance and Operations. 
+    - För Retail släpper vi ett bibliotek i juli. 
+    - Du behöver inte välja ett bibliotek för Talent — anslutningen till rätt bibliotek sker automatiskt. 
+
 3.  Välj BPM-bibliotekens visningsordning. Detta bestämmer i vilken ordning som uppgiftsregistreringar från biblioteken visas i fönstret **Hjälp**.
 
-När du har slutfört de här stegen kan du öppna fönstret **Hjälp** och klicka på fliken **Uppgiftsguider**. Du ser nu uppgiftsguiderna som gäller för den sida du för närvarande befinner dig på i Dynamics 365 for Operations. Om inga uppgiftsguider hittas kan du ange nyckelord för att begränsa sökningen.
+När du har slutfört de här stegen kan du öppna fönstret **Hjälp** och klicka på fliken **Uppgiftsguider**. Du ser nu de uppgiftsguider som gäller för den sida du för närvarande befinner dig på i Finance and Operations. Om inga uppgiftsguider hittas kan du ange nyckelord för att begränsa sökningen.
 
-### <a name="showing-translated-task-guides"></a>Visa översatta uppgiftsguider
+### Visa översatta uppgiftsguider
+<a id="showing-translated-task-guides" class="xliff"></a>
 
-Översätta uppgiftsguider medföljde i för första gången i APQC Unified Library i maj 2016, samt i Komma igång-biblioteket. Om du vill se hjälpen för den lokaliserade uppgiftsguiden i Dynamics 365 for Operations ska du se till att är ansluten till maj-biblioteket. Språket i uppgiftsguiden styrs av varje användare via språkinställningarna under **Alternativ** &gt; **Inställningar**. 
+Översätta uppgiftsguider medföljde i för första gången i APQC Unified Library i maj 2016, samt i Komma igång-biblioteket. Om du vill se hjälpen för den lokaliserade uppgiftsguiden i Finance and Operations, se då till att du är ansluten till maj-biblioteket. Språket i uppgiftsguiden styrs av varje användare via språkinställningarna under **Alternativ** &gt; **Inställningar**. 
 
 > [!NOTE]
-> Även om många uppgiftsguider har översatts, visas inte namnen på de översatta uppgiftsguiderna i Dynamics 365 for Operations-klienten för närvarande. Dessutom är enbart de uppgiftsguider som släpptes i februari 2016 tillgängliga i översättningen i maj-biblioteket. Vi kommer att släppa ett uppdaterat bibliotek med fler översättningar.
+> Även om många uppgiftsguider har översatts, visas för närvarande inte namnen på de översatta uppgiftsguiderna i Finance and Operations. Dessutom är enbart de uppgiftsguider som släpptes i februari 2016 tillgängliga i översättningen i maj-biblioteket. Vi kommer att släppa ett uppdaterat bibliotek med fler översättningar.
 > -   Om en uppgiftsguide har översatts visas all text i guiden på det valda språket när du öppnar den.
 > -   Om en uppgiftsguide ännu inte har översatts visas enbart en del text i guiden (text på reglage) på det valda språket när du öppnar den.
 
-## <a name="creating-custom-help"></a>Skapa anpassad hjälp
-Du kan skapa anpassad hjälp för din Dynamics 365 for Operations-implementering genom att skapa uppgiftsinspelningar som speglar din implementering och spara dem i ett bibliotek för LCS-arbetsprocesser. För partners, om du främjar ett bibliotek som ett företagsbibliotek och inkluderar det i en lösning blir det tillgängligt även för dina kunder. Du kan också göra en kopia av det globala biblioteket APQC Unified och sedan öppna din kopia, öppna uppgiftsinspelningar från den, ändra dem och spara inspelningarna med dina ändringar. Mer information finns i avsnittet [Skapa en uppgiftsregistrering att använda som dokumentation eller utbildning](../user-interface/task-recorder.md).
+## Skapa anpassad hjälp
+<a id="creating-custom-help" class="xliff"></a>
+Du kan skapa anpassad hjälp för Finance and Operations samt för Retail genom att skapa uppgiftsinspelningar som speglar din implementering och spara dessa i ett bibliotek för LCS-arbetsprocesser. Du kan inte skapa anpassade uppgiftsguider för Talent. 
 
-<a name="see-also"></a>Se även
+För partners, om du främjar ett bibliotek som ett företagsbibliotek och inkluderar det i en lösning blir det tillgängligt även för dina kunder. Du kan också göra en kopia av det globala biblioteket APQC Unified och sedan öppna din kopia, öppna uppgiftsinspelningar från den, ändra dem och spara inspelningarna med dina ändringar. Mer information finns i avsnittet [Skapa en uppgiftsregistrering att använda som dokumentation eller utbildning](../user-interface/task-recorder.md).
+
+Se även
+<a id="see-also" class="xliff"></a>
 --------
 
 [Hjälpöversikt](help-overview.md)

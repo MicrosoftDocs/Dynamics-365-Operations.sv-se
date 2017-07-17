@@ -3,14 +3,14 @@ title: "Ekonomiska råbalansrapporter"
 description: "Den här artikeln beskriver standardrapporter för råbalanser. Det beskriver även de byggstenar som är associerade med dessa rapporter och hur du kan ändra rapporterna så att de passar ditt företags behov."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: twheeloc
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 12314
 ms.assetid: 3b77d6f3-fd07-41a7-9ddb-1b22d1ae33fc
 ms.search.region: Global
@@ -18,25 +18,27 @@ ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 353880e162e38c7b2e89656be8cdffe5fbc30250
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 86e8e91f2af474999d89bb63ac9e2afad7843c8a
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="trial-balance-financial-reports"></a>Ekonomiska råbalansrapporter
+# Ekonomiska råbalansrapporter
+<a id="trial-balance-financial-reports" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
 Den här artikeln beskriver standardrapporter för råbalanser. Det beskriver även de byggstenar som är associerade med dessa rapporter och hur du kan ändra rapporterna så att de passar ditt företags behov. 
 
-<a name="default-trial-balance-reports"></a>Standardrapporter för råbalans
+Standardrapporter för råbalans
+<a id="default-trial-balance-reports" class="xliff"></a>
 -----------------------------
 
-Tre råbalansrapporter är tillgängliga i ekonomisk rapportering i Microsoft Dynamics AX 7.
+Det finns tre råbalansrapporter i ekonomisk rapportering i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 
 | Standardrapport                                 | Vad den gör                                                                                                                                                                                        |
 |------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -44,7 +46,8 @@ Tre råbalansrapporter är tillgängliga i ekonomisk rapportering i Microsoft Dy
 | Råbalanssammanfattning - standardinställning                | Visar information om saldo för alla konton och inkluderar in- och utgående balanser och debet- och kreditsaldon tillsammans med deras nettodifferens.                                        |
 | Summerad råbalans på årsbasis – standardinställning | Visar saldoinformation för alla konton och inkluderar in- och utgående balanser och debet- och kreditsaldon tillsammans med deras nettodifferens för aktuellt år och föregående år. |
 
-## <a name="building-blocks"></a>Byggstenar
+## Byggstenar
+<a id="building-blocks" class="xliff"></a>
 Råbalansrapporterna använder följande byggstenar.
 
 | Standardrapport                                 | Raddefinition          | Kolumndefinition                              |
@@ -53,16 +56,18 @@ Råbalansrapporterna använder följande byggstenar.
 | Råbalanssammanfattning - standardinställning                | Råbalans – standardinställning | Råbalanssammanfattning – standardinställning                |
 | Summerad råbalans på årsbasis – standardinställning | Råbalans – standardinställning | Summerad råbalans på årsbasis – standardinställning |
 
-### <a name="row-definition"></a>Raddefinition
+### Raddefinition
+<a id="row-definition" class="xliff"></a>
 
 Raddefinitionen Råbalans – standard innehåller en rad som tar emot alla huvudkonton. Därför kan alla generera rapporten, utan att behöva göra några ändringar. När du visar rapporten borrar du till enskild rad om du vill se information om varje konto. Du kan ändra raddefinitionen så att den innehåller mer information. Om du vill ändra Råbalans – standardinställning så att den innehåller rader för alla konton, följer du stegen nedan.
 
-1.  Klicka på **Redigera**och sedan på **Infoga rader från dimensioner**. Kommandot **Infoga rader från dimensioner** gör att du kan välja dimensionerna du vill ha i raddefinitionen. För den här raddefinitionen ska du använda **Huvudkonto**.
+1.  Klicka på **Redigera** och sedan på **Infoga rader från dimensioner**. Kommandot **Infoga rader från dimensioner** gör att du kan välja dimensionerna du vill ha i raddefinitionen. För den här raddefinitionen ska du använda **Huvudkonto**.
 2.  Se till att **Huvudkonto** bara innehåller et-tecken och välj sedan **OK**.
 
 Raddefinitionen innehåller nu alla huvudkonton för din juridiska standardperson.
 
-### <a name="column-definition"></a>Kolumndefinition
+### Kolumndefinition
+<a id="column-definition" class="xliff"></a>
 
 Alla råbalansrapporter använder olika kolumndefinitioner. Dessa kolumndefinitioner innehåller olika typer av kolumner för att tillhandahålla andra nivåer av information och ekonomiska data.
 
@@ -101,7 +106,8 @@ Alla råbalansrapporter använder olika kolumndefinitioner. Dessa kolumndefiniti
 
  
 
-<a name="see-also"></a>Se även
+Se även
+<a id="see-also" class="xliff"></a>
 --------
 
 [Ekonomisk rapportering](financial-reporting-getting-started.md)

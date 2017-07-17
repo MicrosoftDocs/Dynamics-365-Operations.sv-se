@@ -3,14 +3,14 @@ title: Importera valutakurser
 description: "Om en juridisk person har fått fakturor i utländsk valuta, måste den utländska valutan konverteras till lokal valuta. Detta innebär att aktuella valutakurser krävs för olika valutor. Det här avsnittet innehåller en översikt över de inställningar och den bearbetning som krävs för att importera utländska referensvalutakurser som publiceras online av valutakursleverantörer som exempelvis Europeiska centralbanken och Ryska centralbanken."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: ExchangeRateProviderConfiguration
 audience: Application User
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 261374
 ms.assetid: b2b22868-de68-439f-914c-78c6930b7340
 ms.search.region: Global
@@ -18,15 +18,16 @@ ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 69a622f54581504989504a06f90d443a98ad2f63
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 2d0654d6dbed3b4fe56b8918194132787f66af80
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="import-currency-exchange-rates"></a>Importera valutakurser
+# Importera valutakurser
+<a id="import-currency-exchange-rates" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
@@ -35,8 +36,9 @@ Om en juridisk person har fått fakturor i utländsk valuta, måste den utländs
 
 Följande avsnitt beskriver det allmänna informationsflödet som används för att konfigurera och bearbeta importen av utländska valutakurser.
 
-## <a name="configure-an-exchange-rate-provider"></a>Ställ in en valutakursleverantör
-Innan du kan importera valutakurser måste du ställa in den information som krävs av de leverantörer som erbjuder valutakurser. Använd sidan **Konfigurera valutakursleverantörer** för att välja valutakursleverantörer. Vissa valutakursleverantörer medföljer demonstrationsdatan i Microsoft Dynamics 365 for Operations. I följande tabell finns beskrivningar av kontrollerna på denna sida.
+## Ställ in en valutakursleverantör
+<a id="configure-an-exchange-rate-provider" class="xliff"></a>
+Innan du kan importera valutakurser måste du ställa in den information som krävs av de leverantörer som erbjuder valutakurser. Använd sidan **Konfigurera valutakursleverantörer** för att välja valutakursleverantörer. Vissa valutakursleverantörer medföljer demonstrationsdatan i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. I följande tabell finns beskrivningar av kontrollerna på denna sida.
 
 |           |                                                                                                                                                                                                                             |
 |-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -45,7 +47,8 @@ Innan du kan importera valutakurser måste du ställa in den information som kr�
 | **Nyckel**   | Det unika id:t för varje konfigurationsuppgift som krävs av leverantören. Den här informationen läggs till automatiskt för varje valutakursleverantör som du lägger till genom att klicka på knappen **Lägg till**. |
 | **Värde** | Information för varje nyckel. Den här informationen läggs till för varje valutakursleverantör som du lägger till genom att klicka på knappen **Lägg till**.                                                                                         |
 
-## <a name="import-currency-exchange-rates"></a>Importera valutakurser
+## Importera valutakurser
+<a id="import-currency-exchange-rates" class="xliff"></a>
 Du kan importera valutakurser från valutakursleverantörskällan och ställa in dem på sidan **Valutakurser**. Använd sidan **Importera valutakurser** om du vill importera valutakurser. I följande tabell beskrivs de fält som krävs för att genomföra importen.
 
 |                                        |                                                                                                                                                                                                                                                                                                                                                                             |

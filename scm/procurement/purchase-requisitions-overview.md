@@ -3,14 +3,14 @@ title: "Översikt över inköpsrekvisition"
 description: "Den här artikeln beskriver arbetsflödet för inköpsrekvisition och de olika statusar en inköpsrekvisition kan ha."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PurchReqConsolidation, PurchReqCreate, PurchReqCreatePurchDetails, PurchReqCreatePurchListPage, PurchReqTable, PurchReqTableListPage
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 2174
 ms.assetid: 77d07119-4d9f-4c0e-acbe-d319203571ab
 ms.search.region: Global
@@ -18,15 +18,16 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 38e7fba3fbd12de3a1cd9ac7b1c627834978ba30
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 8c60d870d0ca178af84919e5ebaaa13769b46f8a
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="purchase-requisition-overview"></a>Översikt över inköpsrekvisition
+# Översikt över inköpsrekvisition
+<a id="purchase-requisition-overview" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
@@ -37,24 +38,28 @@ Beroende på hur din organisation är inställd kan du skapa inköpsrekvisitione
 
 När en inköpsrekvisition har godkänts kan den användas för att skapa inköpsordern. Inköpsorder är de externa dokument som inköpsavdelningen skickar till leverantörer.
 
-## <a name="creating-purchase-requisitions"></a>Skapa inköpsrekvisitioner
+## Skapa inköpsrekvisitioner
+<a id="creating-purchase-requisitions" class="xliff"></a>
 Du kan skapa en inköpsrekvisition på sidan **Mina inköpsrekvisitioner** och väljer de artiklar och tjänster som du behöver. Du kan välja artiklar från en anskaffningskatalog som din organisation har skapat, eller så kan du begära, artiklar som inte finns i en katalog, genom att välja en anskaffningskategori och ange produktdetaljerna.  
 
-Innan du kan skicka en inköpsrekvisition för granskning måste arbetsflödena konfigureras i Microsoft Dynamics 365 for Operations. Du använder ett arbetsflöde för att flytta en inköpsrekvisition genom granskningsprocessen, från den ursprungliga statusen **Utkast** till den slutliga statusen **godkänd**.
+Innan du kan skicka en inköpsrekvisition för granskning måste arbetsflödena konfigureras i Microsoft Dynamics 365 for Finance and Operations. Du använder ett arbetsflöde för att flytta en inköpsrekvisition genom granskningsprocessen, från den ursprungliga statusen **Utkast** till den slutliga statusen **godkänd**.
 
-### <a name="purchase-requisition-statuses"></a>Status för inköpsrekvisitioner
+### Status för inköpsrekvisitioner
+<a id="purchase-requisition-statuses" class="xliff"></a>
 
 När du skapar en ny inköpsrekvisition sätts tilldelas den en status. En status tilldelats också varje rad som du lägger till en inköpsrekvisition. När du skickar in en inköpsrekvisition till ett arbetsflöde för granskning, uppdateras statusvärdet för inköpsrekvisitionen och statusen för varje rad som raderna går igenom arbetsflödesprocessen.  
 
 Du kan konfigurera arbetsflödesprocessen för inköpsrekvisitionen att flöda en inköpsrekvisition genom granskningsprocessen som ett enskilt dokument. Alternativt kan raderna på inköpsrekvisitionen dirigeras separat till lämpliga granskare. Om inköpsrekvisitionsraderna granskas individuellt, kan statusen för varje inköpsrekvisitionsrad uppdateras allt eftersom raderna flyttas genom granskningsprocessen. När rader har slutfört granskningsprocessen och det inte finns några granskningssteg kvar för inköpsrekvisitionen uppdateras övergripande status för inköpsrekvisitionen.
 
-### <a name="purchase-requisition-workflow"></a>Arbetsflöde för inköpsrekvisitioner
+### Arbetsflöde för inköpsrekvisitioner
+<a id="purchase-requisition-workflow" class="xliff"></a>
 
 Följande diagram visar status som har tilldelats en inköpsrekvisition och en inköpsrekvisitionsrad allt eftersom de går igenom arbetsflödesprocessen.  
 
 [![Status för rubrik och rad för inköpsrekvisition](./media/purchasereq_headerline_statuses.jpg)](./media/purchasereq_headerline_statuses.jpg)
 
-### <a name="purchase-requisition-header-and-line-status-relationships"></a>Statusrelation för rubrik och rad för inköpsrekvisition
+### Statusrelation för rubrik och rad för inköpsrekvisition
+<a id="purchase-requisition-header-and-line-status-relationships" class="xliff"></a>
 
 Den övergripande statusen på inköpsrekvisitionen bestäms av statusen på inköpsrekvisitionsraderna. Därför måste granskningsprocessen slutföras för alla inköpsrekvisitionsraderna innan granskningen för hela inköpsrekvisitionen kan slutföras. Följande tabell beskriver status som har tilldelats en inköpsrekvisition och en inköpsrekvisitionsrubrik och -rader allt eftersom inköpsrekvisitionen går igenom arbetsflödesprocessen.
 
@@ -133,19 +138,23 @@ Om du skickar tillbaka en inköpsrekvisitionsrad som har avvisats, startar grans
 </tbody>
 </table>
 
-## <a name="distributing-costs-to-multiple-financial-accounts"></a>Fördela kostnader till flera affärsredovisningskonton
+## Fördela kostnader till flera affärsredovisningskonton
+<a id="distributing-costs-to-multiple-financial-accounts" class="xliff"></a>
 Du kan fördela kostnaderna i en produkt som är inkluderade i en inköpsrekvisition till flera affärsredovisningskonton. Om din organisation använder dimensioner, till exempel kostnadsställen och avdelningar, kan du fördela kostnaden för en produkt till dimensioner för affärsredovisningskonton.
 
-## <a name="requisition-purposes"></a>Rekvisitionssyften
+## Rekvisitionssyften
+<a id="requisition-purposes" class="xliff"></a>
 Rekvisitionsyften gör att processen att uppfylla rekvisitionsbegäran blir mer flexibel. När du skapar en rekvisition kan du tilldela ett av två syften till den: förbrukning eller påfyllnad. Beroende på rekvisitionssyftet och hur din organisation är konfigurerad kan rekvisitionsbegäran fyllas på av en inköpsorder, överföringsorder, tillverkningsorder eller kanban.  
 
 I anskaffningspolicyerna kan du kontrollera rekvisitionssyftena som är tillgängliga, när en rekvisition skapas för din organisation.
 
-### <a name="requisitions-that-have-a-purpose-of-consumption"></a>Rekvisitioner med förbrukningssyfte
+### Rekvisitioner med förbrukningssyfte
+<a id="requisitions-that-have-a-purpose-of-consumption" class="xliff"></a>
 
-En rekvisition med förbrukningssyfte representerar en efterfrågan på artiklar eller tjänster som ska användas internt i organisationen. En begäran som har skapats av den här sortens rekvisition uppfylls alltid av en inköpsorder. Om Microsoft Dynamics 365 for Operations ställs in på att automatiskt skapa inköpsorder, skapas inköpsorder när inköpsrekvisitionen har godkänts.
+En rekvisition med förbrukningssyfte representerar en efterfrågan på artiklar eller tjänster som ska användas internt i organisationen. En begäran som har skapats av den här sortens rekvisition uppfylls alltid av en inköpsorder. Om Microsoft Dynamics 365 for Finance and Operations ställs in på att automatiskt skapa inköpsorder, skapas inköpsorder när inköpsrekvisitionen har godkänts.
 
-### <a name="requisitions-that-have-a-purpose-of-replenishment"></a>Rekvisitioner som har ett syfte med påfyllnad
+### Rekvisitioner som har ett syfte med påfyllnad
+<a id="requisitions-that-have-a-purpose-of-replenishment" class="xliff"></a>
 
 En rekvisition som har ett syfte med påfyllnad representerar en begäran att fylla på lagret. Till exempel vill du kanske skapa en rekvisition för att fylla på artiklar så att de kan säljas i en viss butik vid en viss tidpunkt. Begäran som skapas av denna sorts rekvisitionens kan uppfyllas av en inköpsorder, överföringsorder, tillverkningsorder eller kanban.  
 
@@ -153,14 +162,16 @@ När rekvisitionssyftet är påfyllnad uttrycks behovet som en kvantitet i stäl
 
 Om du vill använda inköpsrekvisitioner som har ett syfte med lagerpåfyllnad måste ställas in för att inkludera rekvisitionsbegäran i huvudplaneringen. När detta är gjort bestäms uppfyllelsemetoden för en begäran som har skapats av denna typ av rekvisition med påfyllnadssyfte automatiskt av tillförselpolicyerna som har ställts in för artiklarna i organisationen och planerats med hjälp av huvudplaneringen.
 
-## <a name="purchase-requisitions-and-requests-for-quotation"></a>Inköpsrekvisitioner: och anbudsförfrågan
+## Inköpsrekvisitioner: och anbudsförfrågan
+<a id="purchase-requisitions-and-requests-for-quotation" class="xliff"></a>
 I vissa fall måste du starta en anbudsförfrågan (RFQ)-process för att identifiera leverantören och priset för produkter som begärs i en inköpsrekvisition. En anbudsförfrågan kan skapas när inköpsrekvisitionen är under granskning. När du accepterar ett bud, överförs information om leverantör, pris, och så vidare till inköpsrekvisitionen.  
 
 Du kan spärra en inköpsrekvisition genom att välja kryssrutan **Spärrad** på sidan **Information om inköpsrekvisition**. Bearbetningen av inköpsrekvisitionen kan fortsätta först när du har tagit bort spärren genom att avmarkera kryssrutan.  
 
 **Obs!** I eProcurement kan anbudsförfrågan för din inköpsrekvisition tillåta leverantörer lägga till alternativrader. I detta fall kommer din inköpsrekvisition att återspegla godkända alternativ.
 
-## <a name="demand-consolidation"></a>Efterfråganskonsolidering
+## Efterfråganskonsolidering
+<a id="demand-consolidation" class="xliff"></a>
 Genom att konsolidera inköpsrekvisitionsrader från flera inköpsrekvisitioner kan du öka din förhandlingskraft hos leverantörerna och få bättre priser, lägre leverans- och hanteringskostnader och lägre omkostnader.  
 
 Inköpsrekvisitionsrader är bara valbara för efterfrågekonsolidering om följande utdrag är uppfyllda:
@@ -178,7 +189,8 @@ När du har lagt till rekvisitionsrader i konsolideringsmöjligheten och gör de
 
 Om du vill skapa en inköpsorder för inköpsrekvisitionsrader som inte är valbara för efterfrågekonsolidering eller som inte väljs för en konsolideringsmöjlighet, måste du bearbeta raderna manuellt.
 
-### <a name="consolidating-purchase-requisition-lines"></a>Konsolidering av inköpsrekvisitionsrader
+### Konsolidering av inköpsrekvisitionsrader
+<a id="consolidating-purchase-requisition-lines" class="xliff"></a>
 
 Processen för efterfråganskonsolidering börjar när en inköpsrekvisition har godkänts i arbetsflödet och budgetreservationer och förinteckningar har registrerats, om budgetkontroll har konfigurerats för din organisation. Följande diagram visar processflödet för begärandekonsolidering.  
 
@@ -193,7 +205,8 @@ Om du vill konsolidera godkända inköpsrekvisitionsrader, följ dessa steg:
 5.  Skapa inköpsorder för konsoliderade rekvisitionrader eller för inköpsrekvisitionsrader i en konsolideringsmöjlighet.
 
 
-<a name="see-also"></a>Se även
+Se även
+<a id="see-also" class="xliff"></a>
 --------
 
 [Skapa en rekvisition för förbrukning (uppgiftsguide)](https://ax.help.dynamics.com/en/wiki/create-a-requisition-for-consumption/)

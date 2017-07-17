@@ -1,39 +1,42 @@
 ---
 title: "Ställ upp för bearbetningsalternativ"
-description: "Det här avsnittet innehåller information om hur du bearbetar beställningar för kundtjänst med Microsoft Dynamics 365 for Operations - Retail."
+description: "Det här avsnittet innehåller information om hur du bearbetar beställningar för kundtjänst med Microsoft Dynamics 365 for Retail."
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.reviewer: josaw
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 78973
 ms.assetid: 09fca083-ac0d-4f30-baf2-bb00a626be12
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 52b56274c8b72c67bc0a50f23114cebc510f1667
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: afdea84b7016fcc3214dc94f2d393a5f3d256370
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
+
 
 
 ---
 
-# <a name="set-up-order-processing-options"></a>Ställ upp för bearbetningsalternativ
+# Ställ in alternativ för orderbearbetning
+<a id="set-up-order-processing-options" class="xliff"></a>
 
 [!include[banner](includes/banner.md)]
 
 
-Det här avsnittet innehåller information om hur du bearbetar beställningar för kundtjänst med Microsoft Dynamics 365 for Operations - Retail. 
+Det här avsnittet innehåller information om hur du bearbetar beställningar för kundtjänst med Microsoft Dynamics 365 for Retail. 
 
-Butik och handel i Dynamics 365 for Operations stöder flera butikskanaler, till exempel onlinebutiker, fysiska butiker och kundtjänst. I kundtjänster tar anställda emot kundorder per telefon och skapar försäljningsorder. I det här avsnittet beskrivs hur du skapar en kundtjänst och konfigurerar kundtjänstalternativ. Varje kundtjänst kan ha sina egna användare, betalningsmetoder, prisgrupper, ekonomiska dimensioner och leveranssätt. Du kan konfigurera dessa alternativ, när du skapar kundtjänst. **Viktigt!** Före call center arbetsflöden kan användas när den nuvarande Dynamics AX användaren skapar beställningar, måste användaren tilldelas call center som en call center-användare. Du kan använda **Call center-** sidan för att aktivera eller inaktivera grupper av funktioner som är unika för call centers. Följande grupper av funktioner kan aktiveras:
+Retail stöder flera butikskanaler, till exempel onlinebutiker, onlinemarknadsplatser, fysiska butiker och kundtjänst. I kundtjänster tar anställda emot kundorder per telefon och skapar försäljningsorder. I det här avsnittet beskrivs hur du skapar en kundtjänst och konfigurerar kundtjänstalternativ. Varje kundtjänst kan ha sina egna användare, betalningsmetoder, prisgrupper, ekonomiska dimensioner och leveranssätt. Du kan konfigurera dessa alternativ, när du skapar kundtjänst. **Viktigt!** Innan call center-arbetsflöden kan användas när användaren skapar försäljningsorder måste användaren tilldelas call center som en call center-användare. Du kan använda **Call center-** sidan för att aktivera eller inaktivera grupper av funktioner som är unika för call centers. Följande grupper av funktioner kan aktiveras:
 
 -   **Orderns färdigdatum** – Denna grupp omfattar funktioner som är relaterade till betalningar och beställningen slutförs på **försäljningen** .
 -   **Riktad försäljning** – Denna grupp omfattar funktioner som är relaterade till källkoder, manuskript, och katalog.

@@ -3,14 +3,14 @@ title: "Översikt över inköpsorder"
 description: "Den här artikeln innehåller allmän information om inköpsorder (PO) och länkar till fler artiklar som är relaterade till de olika stegen som en inköpsorder geomgår."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PurchTable
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 93083
 ms.assetid: e9b7bc5b-1d7e-4ec2-97be-d655274b0613
 ms.search.region: Global
@@ -18,17 +18,20 @@ ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 88fa3fb97621e0f4a226a45b36809e824c807420
+ms.sourcegitcommit: f76e431320414b508728cbe9fe20456f107cbe40
+ms.openlocfilehash: a5dd28e79cbd66e79311c0549c63ea844394ab14
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/09/2017
 
 
 ---
 
-# <a name="purchase-order-overview"></a>Översikt över inköpsorder
+# Översikt över inköpsorder
+<a id="purchase-order-overview" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
+
+[!include[retail name](../includes/retail-name.md)]
 
 
 Den här artikeln innehåller allmän information om inköpsorder (PO) och länkar till fler artiklar som är relaterade till de olika stegen som en inköpsorder geomgår.
@@ -39,16 +42,17 @@ Sidan **Inköpsorder** innehåller en översikt över tillgängliga order och du
 
 Det finns många rapporter där du kan visa information om inköpsorder, produktinleveranser och leverantörsfakturor. Rapporter finns i modulerna **Anskaffning och källa** och **Leverantörsreskontra**.  
 
-På arbetsytorna **Inköpsorderförberedelse** och **Inleverans av inköpsorder och uppföljning** kan du visa listor över inköpsorder i olika statusar som de har nått. De ger också en sammanfattning av de åtgärder som ska vidtas. Arbetsytan **Inköpsorderförberedelse**fokuserar på skapandet av inköpsorder och granskning, bearbetning av order via godkännande och bekräftelse från leverantören. Arbetsytan **Inleverans av inköpsorder och uppföljning** fokuserar på att bearbeta inleverans av varor eller tjänster mot inköpsorder. Den innehåller listor som ger insikt om inleveranser som är försenade, eller som snart ska levereras av leverantören. Arbetsytorna används inte för att utföra de relaterade inleveransaktiviteterna som utförs på lagerstället. Dessa aktiviteter utförs med hjälp av sidorna i modulerna **Lagerhantering** och **Lagerstyrning**. Bearbetning av leverantörsfakturor ska utföras med hjälp av arbetsytan **Leverantörsfakturaregistrering** och betalningar ska utföras med hjälp av arbetsytan **Leverantörsbetalningar**.  
+På arbetsytorna **Inköpsorderförberedelse** och **Inleverans av inköpsorder och uppföljning** kan du visa listor över inköpsorder i olika statusar som de har nått. De ger också en sammanfattning av de åtgärder som ska vidtas. Arbetsytan **Inköpsorderförberedelse** fokuserar på skapandet av inköpsorder och granskning, bearbetning av order via godkännande och bekräftelse från leverantören. Arbetsytan **Inleverans av inköpsorder och uppföljning** fokuserar på att bearbeta inleverans av varor eller tjänster mot inköpsorder. Den innehåller listor som ger insikt om inleveranser som är försenade, eller som snart ska levereras av leverantören. Arbetsytorna används inte för att utföra de relaterade inleveransaktiviteterna som utförs på lagerstället. Dessa aktiviteter utförs med hjälp av sidorna i modulerna **Lagerhantering** och **Lagerstyrning**. Bearbetning av leverantörsfakturor ska utföras med hjälp av arbetsytan **Leverantörsfakturaregistrering** och betalningar ska utföras med hjälp av arbetsytan **Leverantörsbetalningar**.  
 
 Följande artiklar innehåller en översikt över de olika stegen som en inköpsorder genomgår:
 
 -   [Skapande av inköpsorder](purchase-order-creation.md)
 -   [Godkänna och bekräfta inköpsorder](purchase-order-approval-confirmation.md)
 -   [Produktinleverans mot inköpsorder](product-receipt-against-purchase-orders.md)
--   [Översikt över leverantörsfakturor](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview)
+-   [Översikt över leverantörsfakturor](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview)
 
-## <a name="types-of-purchase-orders"></a>Typer av inköpsorder
+## Typer av inköpsorder
+<a id="types-of-purchase-orders" class="xliff"></a>
 Det finns tre typer av inköpsorder. Du måste ange typ när du skapar en inköpsorder. Du kan ställa in en standardordertyp för nya order på sidan **Anskaffnings- och källparametrar**.
 
 | Inköpsordertyp        | Beskrivning                                                                                                                                                                                                                                                                           |
@@ -57,7 +61,8 @@ Det finns tre typer av inköpsorder. Du måste ange typ när du skapar en inköp
 | Inköpsorder | Använd den här typen för att skapa en inköpsorder när ordern bekräftas av en leverantör och när ordern bearbetas via inleverans och fakturering innan betalningen till leverantören görs. Den här typen av inköpsorder är den vanligaste.                                                                          |
 | Returnerad order | Använd den här typen när du returnerar varor till leverantören. Den här typen av order kräver att du anger returnumret (RMA) som leverantören ger dig. Du kan ange RMA-numret på fliken **Allmänt** för inköpsordern. Orderraderna måste ha negativa kvantiteter. |
 
-## <a name="purchase-order-statuses"></a>Statusar på inköpsorder
+## Statusar på inköpsorder
+<a id="purchase-order-statuses" class="xliff"></a>
 Inköpsorder omfattar flera statusfält som visar orderns förlopp. Alla fält som är synliga i vyn **Rubrik** visar ordern och några av dem är även synliga i översikten över alla order. Fältet **Status** visar statusen för kvantiteter på ordern. Följande värden finns:
 
 -   **Öppen order** – Ordern har skapats och kvantiteterna är angivna på ordern.
@@ -81,7 +86,8 @@ Fältet **Godkännandestatus** används när en inköpsorder genomgår en gransk
 -   **Bekräftad** – Den här statusen tilldelas när ordern har bekräftats. Denna status är vanligtvis den sista godkännandestatusen som tilldelas till en order.
 
 
-<a name="see-also"></a>Se även
+Se även
+<a id="see-also" class="xliff"></a>
 --------
 
 [Skapande av inköpsorder](purchase-order-creation.md)
@@ -90,7 +96,7 @@ Fältet **Godkännandestatus** används när en inköpsorder genomgår en gransk
 
 [Produktinleverans mot inköpsorder](product-receipt-against-purchase-orders.md)
 
-[Översikt över leverantörsfakturor](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview)
+[Översikt över leverantörsfakturor](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview)
 
 
 

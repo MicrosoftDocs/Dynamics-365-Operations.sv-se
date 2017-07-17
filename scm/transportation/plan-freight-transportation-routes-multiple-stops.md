@@ -1,16 +1,16 @@
 ---
 title: "Planera frakttransportvägar med flera stopp"
-description: "Den här artikeln ger en beskrivning av de olika elementen som du använder för att planera transportrutter i Microsoft Dynamics AX."
+description: "Den här artikeln ger en beskrivning av de olika element som du använder för att planera transportrutter i Dynamics 365 for Finance and Operations."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: TMSHubMaster, TMSLoadBuildTemplates, TMSRateRouteWorkbench, TMSRouteGuide, TMSRoutePlan, TMSRouteWorkbench, WHSLoadTemplate
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 90013
 ms.assetid: 50d6f58c-f1c8-4321-9e83-8445cec57a85
 ms.search.region: Global
@@ -18,24 +18,26 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: cdb073f707355d6dbf8dffd3abc410e1320c5db9
+ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
+ms.openlocfilehash: e7965c094f91bcbcad21ecfa599f133a6e84f4f7
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="plan-freight-transportation-routes-with-multiple-stops"></a>Planera frakttransportvägar med flera stopp
+# Planera frakttransportvägar med flera stopp
+<a id="plan-freight-transportation-routes-with-multiple-stops" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-Den här artikeln ger en beskrivning av de olika elementen som du använder för att planera transportrutter i Microsoft Dynamics AX.
+Den här artikeln ger en beskrivning av de olika element som du använder för att planera transportrutter i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 
 Du kan använda färdplaner och ruttguider för komplexa transportvägar som har flera stopp. Om samma rutt ska användas regelbundet kan du ställa in en tidsplanerad rutt.
 
-## <a name="route-plans"></a>Flödesplaner
+## Flödesplaner
+<a id="route-plans" class="xliff"></a>
 En färdplan väg innehåller ruttsegment som ger information om stoppen som besöks på vägen och om de transportföretag som används för varje segment. Du måste definiera stoppen utmed rutten som nav. Ett nav kan vara en leverantör, ett lagerställe, en kund eller bara en omlastningsplats där du byter transportföretag. Du kan definiera "punkttariffer" för olika avgifter för varje segment. Nedan följer några exempel:
 
 -   Avgifter för resor till angivna segment
@@ -44,13 +46,16 @@ En färdplan väg innehåller ruttsegment som ger information om stoppen som bes
 
 Varje färdplan måste associeras med en ruttguide.
 
-## <a name="route-guides"></a>Flödesguider
+## Flödesguider
+<a id="route-guides" class="xliff"></a>
 En ruttguide definierar villkoren för matchning av en last med en specifik färdplan. Du kan till exempel ange ett ursprungsnav och ett målnav, begränsningar för containervolym eller vikt och transportföretag, -tjänst eller -grupp. Ruttguider finns på sidan **Workbench för tariff/rutt** där laster kan matchas till rutter manuellt eller automatiskt. Om ruttguiden gäller för en tidsplanerad rutt finns den även på sidan tillgängligt på sidan **Workbench för lastuppbyggnad**.
 
-## <a name="scheduled-routes"></a>Tidsplanerade rutter
+## Tidsplanerade rutter
+<a id="scheduled-routes" class="xliff"></a>
 En tidsplanerad rutt är en fördefinierad färdplan som har en tidsplan för leveransdatumen. Tidsplanerade rutter och ej tidsplanerade rutter skiljer sig åt på så sätt att laster tilldelas till dem. Om du tilldelar en ej tidsplanerad rutt med hjälp av sidan Workbench för tariff/rutt valideras endast lasten och ruttguiden. Om du tilldelar en tidsplanerad rutt tas det även hänsyn till datum och adresser från order och nav och datumet på färdplanen. Du behöver inte använda sidan Workbench för tariff/rutt för att tilldela laster manuellt till en tidsplanerad rutt. Använd i stället sidan Workbench för lastuppbyggnad för att föreslå att laster byggs på basis av kundadresser och leveransdatum från försäljningsorder för en viss tidsplanerad rutt. För tidsplanerade rutter kommer färdplanen att ha fasta ursprungs- och destinationshubbar. Vanligtvis kommer transportföretaget och -tjänsten att vara samma för alla segment, men de kan variera. Destinationsnav skapas med hjälp av postnumren till de kunder som besöks utmed rutten. Flera tidsplanerade rutter kan definieras för en färdplanen. Färdplanen måste kopplas till en ruttguide. För tidsplanerade rutter behöver planen dock endast kopplas till en ruttguide. Den tidsplanerad rutten används bara för att skapa faktiska rutter på sidan **Tidsplanerad rutt**. Du kan använda standardlastmallen när du föreslår laster på sidan Workbench för lastuppbyggnad.
 
-## <a name="load-building-workbench"></a>Workbench för lastuppbyggnad
+## Workbench för lastuppbyggnad
+<a id="load-building-workbench" class="xliff"></a>
 Sidan Workbench för lastuppbyggnad använder kundadresser och leveransdatum från försäljningsorder och tidsplanerade rutter som är tillgängliga för att föreslå en last. Som standard anges värdena från rutten i workbenchen. Du kan dock välja ett "från"-datum som är tidigare än "från"-datumet för rutten. När en last föreslås kontrolleras leveransadressen och leveransdatumet för alla öppna försäljningsorder. Om postnumret till leveransadressen matchar postnumret för en hubb i färdplanen och om leveransdatumet infaller inom det intervall som valts i kriterierna, föreslås försäljningsordern för lasten. Kapaciteten för lastmallen beaktas också. Endast en last föreslås åt gången. Om du har en försäljningsorder som inte ingår kan du behöva använda en annan lastmall (till exempel en lastmall för en större lastbil eller container) eller planera en extra leverans.
 
 

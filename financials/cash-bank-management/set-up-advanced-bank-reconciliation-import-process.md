@@ -1,16 +1,16 @@
 ---
 title: "Ställa in importprocessen för avancerad bankavstämning"
-description: "Med hjälp av funktionen Avancerad bankavstämning kan du importera elektroniska bankutdrag och stämma av dem automatiskt mot transaktioner i Microsoft Dynamics 365 for Operations. Den här artikeln innehåller en beskrivning av hur du ställer in importfunktionen för bankutdrag."
+description: "Med hjälp av den avancerade bankavstämningen kan du importera elektroniska bankutdrag och utföra automatiskt avstämning mot banktransaktioner i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Den här artikeln innehåller en beskrivning av hur du ställer in importfunktionen för bankutdrag."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 106853
 ms.assetid: 45dae275-ea45-4c7e-b38f-89297c7b5352
 ms.search.region: Global
@@ -18,25 +18,27 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: fda4dca4339c09757477b04166b17d5f92f46a7c
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: a4d1c81386c0ef03391f3127fa51a6b09a5142b3
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="set-up-the-advanced-bank-reconciliation-import-process"></a>Ställa in importprocessen för avancerad bankavstämning
+# Ställa in importprocessen för avancerad bankavstämning
+<a id="set-up-the-advanced-bank-reconciliation-import-process" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-Med hjälp av funktionen Avancerad bankavstämning kan du importera elektroniska bankutdrag och stämma av dem automatiskt mot transaktioner i Microsoft Dynamics 365 for Operations. Den här artikeln innehåller en beskrivning av hur du ställer in importfunktionen för bankutdrag. 
+Med hjälp av den avancerade bankavstämningen kan du importera elektroniska bankutdrag och utföra automatiskt avstämning mot banktransaktioner i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Den här artikeln innehåller en beskrivning av hur du ställer in importfunktionen för bankutdrag. 
 
-Inställningen för import av bankutdrag varierar beroende på formatet på det elektroniska bankutdraget. Microsoft Dynamics 365 for Operations stöder tre färdiga format för bankutdrag: ISO20022, MT940 och BAI2.
+Inställningen för import av bankutdrag varierar beroende på formatet på det elektroniska bankutdraget. Finance and Operations stöder tre färdiga format för bankutdrag: ISO20022, MT940 och BAI2.
 
-## <a name="sample-files"></a>Exempelfiler
-För alla de tre formaten behöver du ha filer som översätter det elektroniska bankutdraget från originalformatet till ett format som kan användas för Dynamics 365 for Operations. Du kan hitta nödvändiga resursfiler under noden **Resurser** i programutforskaren i Microsoft Visual Studio. När du har hittat filerna kan du kopiera dem till en enstaka känd plats, så att du enklare kan överföra dem under inställningsprocessen.
+## Exempelfiler
+<a id="sample-files" class="xliff"></a>
+För alla de tre formaten behöver du ha filer som översätter det elektroniska bankutdraget från originalformatet till ett format som kan användas för Finance and Operations. Du kan hitta nödvändiga resursfiler under noden **Resurser** i programutforskaren i Microsoft Visual Studio. När du har hittat filerna kan du kopiera dem till en enstaka känd plats, så att du enklare kan överföra dem under inställningsprocessen.
 
 | Resursnamn                                           | Filnamn                            |
 |---------------------------------------------------------|--------------------------------------|
@@ -48,7 +50,8 @@ För alla de tre formaten behöver du ha filer som översätter det elektroniska
 | BankStmtImport\_MT940XML\_till\_Reconciliation\_xslt      | MT940XML-to-Reconciliation.xslt      |
 | BankStmtImport\_SampleBankCompositeEntity\_xml          | SampleBankCompositeEntity.xml        |
 
-## <a name="examples-of-bank-statement-formats-and-technical-layouts"></a>Exempel på bankutdragsformat och tekniska layouter
+## Exempel på bankutdragsformat och tekniska layouter
+<a id="examples-of-bank-statement-formats-and-technical-layouts" class="xliff"></a>
 Nedan visas exempel på tekniska layoutdefinitioner för avancerad bankavstämningimportfil och tre relaterade exempel på bankutdragsfiler: https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/exofbankstfotechlayouts  
 
 | Teknisk layoutdefinition                             | Bankutdragsexempelfil          |
@@ -59,7 +62,8 @@ Nedan visas exempel på tekniska layoutdefinitioner för avancerad bankavstämni
 
  
 
-## <a name="set-up-the-import-of-iso20022-bank-statements"></a>Ställa in import av ISO20022-bankutdrag
+## Ställa in import av ISO20022-bankutdrag
+<a id="set-up-the-import-of-iso20022-bank-statements" class="xliff"></a>
 Först måste du definiera bankutdragets formatbearbetningsgrupp för ISO20022-bankutdrag med hjälp av ramverket för datatabellen.
 
 1.  Gå till **Arbetsytor** &gt; **Datahantering**.
@@ -71,7 +75,7 @@ Först måste du definiera bankutdragets formatbearbetningsgrupp för ISO20022-b
 7.  När bankutdragsenheten överförs och mappningen är slutförd ska du klicka på åtgärden **Visa mappning** för enheten.
 8.  Bankutdragsenheten är en sammansatt enhet som består av fyra separata enheter. Markera **BankStatementDocumentEntity** i listan och klicka sedan på åtgärden **Visa mappning**.
 9.  På fliken **Transformationer**, klicka på **Ny**.
-10. För löpnummer 1 klickar du på **Överför fil** och väljer filen **ISO20022XML-to-Reconciliation.xslt** som du sparade tidigare. **Obs!** Dynamics 365 for Operations-transformeringsfiler är byggda för standardformatet. Eftersom banker ofta avviker från detta format behöver du uppdatera transformeringsfilen för att mappa till ditt bankutdragsformat. <!-- For details about the expected format for ISO20022, see [Dynamics AX ISO20022 Layout](./media/dynamicsaxiso20022layout1.xlsx).-->
+10. För löpnummer 1 klickar du på **Överför fil** och väljer filen **ISO20022XML-to-Reconciliation.xslt** som du sparade tidigare. **Obs!** Finance and Operations-transformeringsfiler är byggda för standardformatet. Eftersom banker ofta avviker från detta format behöver du uppdatera transformeringsfilen för att mappa till ditt bankutdragsformat. <!-- For details about the expected format for ISO20022, see [Dynamics AX ISO20022 Layout](./media/dynamicsaxiso20022layout1.xlsx).-->
 11. Klicka på **Ny**.
 12. För löpnummer 2 klickar du på **Överför fil** och väljer filen **BankReconciliation-to-Composite.xslt** som du sparade tidigare.
 13. Klicka på **Tillämpa transformeringar**.
@@ -92,7 +96,8 @@ Det sista steget är att aktivera Avancerad bankavstämning och att ställa in u
 3.  På fliken **Avstämning**, ställ in alternativet **Avancerad bankavstämning** på **Ja**.
 4.  Ställ in fältet **Utdragsformat** på det format som du skapade tidigare, till exempel **ISO20022**.
 
-## <a name="set-up-the-import-of-mt940-bank-statements"></a>Ställa in import av MT940-bankutdrag
+## Ställa in import av MT940-bankutdrag
+<a id="set-up-the-import-of-mt940-bank-statements" class="xliff"></a>
 Först måste du definiera bankutdragets formatbearbetningsgrupp för MT940-bankutdrag med hjälp av ramverket för datatabellen.
 
 1.  Gå till **Arbetsytor** &gt; **Datahantering**.
@@ -106,7 +111,7 @@ Först måste du definiera bankutdragets formatbearbetningsgrupp för MT940-bank
 9.  På fliken **Transformationer**, klicka på **Ny**.
 10. För löpnummer 1 klickar du på **Överför fil** och väljer filen **MT940TXT-to-MT940XML.xslt** som du sparade tidigare.
 11. Klicka på **Ny**.
-12. För löpnummer 2 klickar du på **Överför fil** och väljer filen **MT940XML-to-Reconciliation.xslt** som du sparade tidigare. **Obs!** Dynamics 365 for Operations-transformeringsfiler är byggda för standardformatet. Eftersom banker ofta avviker från detta format behöver du uppdatera transformeringsfilen för att mappa till ditt bankutdragsformat. <!--- For details about the expected format for MT940, see [Dynamics AX MT940 Layout](./media/dynamicsaxmt940layout1.xlsx)-->
+12. För löpnummer 2 klickar du på **Överför fil** och väljer filen **MT940XML-to-Reconciliation.xslt** som du sparade tidigare. **Obs!** Finance and Operations-transformeringsfiler är byggda för standardformatet. Eftersom banker ofta avviker från detta format behöver du uppdatera transformeringsfilen för att mappa till ditt bankutdragsformat. <!--- For details about the expected format for MT940, see [Dynamics AX MT940 Layout](./media/dynamicsaxmt940layout1.xlsx)-->
 13. Klicka på **Ny**.
 14. För löpnummer 3 klickar du på **Överför fil** och väljer filen **BankReconciliation-to-Composite.xslt** som du sparade tidigare.
 15. Klicka på **Tillämpa transformeringar**.
@@ -128,7 +133,8 @@ Det sista steget är att aktivera Avancerad bankavstämning och att ställa in u
 4.  När du uppmanas att bekräfta ditt val och aktivera Avancerad bankavstämning klickar du på **OK**.
 5.  Ställ in fältet **Utdragsformat** på det format som du skapade tidigare, till exempel **MT940**.
 
-## <a name="set-up-the-import-of-bai2-bank-statements"></a>Ställa in import av BAI2-bankutdrag
+## Ställa in import av BAI2-bankutdrag
+<a id="set-up-the-import-of-bai2-bank-statements" class="xliff"></a>
 Först måste du definiera bankutdragets formatbearbetningsgrupp för BAI2-bankutdrag med hjälp av ramverket för datatabellen.
 
 1.  Gå till **Arbetsytor** &gt; **Datahantering**.
@@ -142,7 +148,7 @@ Först måste du definiera bankutdragets formatbearbetningsgrupp för BAI2-banku
 9.  På fliken **Transformationer**, klicka på **Ny**.
 10. För löpnummer 1 klickar du på **Överför fil** och väljer filen **BAI2CSV-to-BAI2XML.xslt** som du sparade tidigare.
 11. Klicka på **Ny**.
-12. För löpnummer 2 klickar du på **Överför fil** och väljer filen **BAI2XML-to-Reconciliation.xslt** som du sparade tidigare. **Obs!** Dynamics 365 for Operations-transformeringsfiler är byggda för standardformatet. Eftersom banker ofta avviker från detta format behöver du uppdatera transformeringsfilen för att mappa till ditt bankutdragsformat. <!--- For details about the expected format for BAI2, see [Dynamics AX BAI2 Layout](./media/dynamicsaxbai2layout1.xlsx).-->
+12. För löpnummer 2 klickar du på **Överför fil** och väljer filen **BAI2XML-to-Reconciliation.xslt** som du sparade tidigare. **Obs!** Finance and Operations-transformeringsfiler är byggda för standardformatet. Eftersom banker ofta avviker från detta format behöver du uppdatera transformeringsfilen för att mappa till ditt bankutdragsformat. <!--- For details about the expected format for BAI2, see [Dynamics AX BAI2 Layout](./media/dynamicsaxbai2layout1.xlsx).-->
 13. Klicka på **Ny**.
 14. För löpnummer 3 klickar du på **Överför fil** och väljer filen **BankReconciliation-to-Composite.xslt** som du sparade tidigare.
 15. Klicka på **Tillämpa transformeringar**.
@@ -164,7 +170,8 @@ Det sista steget är att aktivera Avancerad bankavstämning och att ställa in u
 4.  När du uppmanas att bekräfta ditt val och aktivera Avancerad bankavstämning klickar du på **OK**.
 5.  Ställ in fältet **Utdragsformat** på det format som du skapade tidigare, till exempel **BAI2**.
 
-## <a name="test-the-bank-statement-import"></a>Testa import av bankutdrag
+## Testa import av bankutdrag
+<a id="test-the-bank-statement-import" class="xliff"></a>
 Det sista steget är att kontrollera att du kan importera bankutdraget.
 
 1.  Gå till **Kassa- och bankhantering** &gt; **Bankkonton**.

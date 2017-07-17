@@ -3,13 +3,13 @@ title: "Betalningskontrollöversikt"
 description: "Den här artikeln innehåller information om betalningskontroll, som används för att generera en elektronisk lista med checkar som kan skickas till en bank."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 88463
 ms.assetid: 1e3a39d3-f9b3-4073-9730-c96a607243e2
 ms.search.region: Global
@@ -17,15 +17,16 @@ ms.author: abruer
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: c5a9f3f2a5c456b4ec515b912bb7470b549684a5
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 7c60a7f9444913c5475d08f959944d463cfcbab0
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="positive-pay-overview"></a>Betalningskontrollöversikt
+# Betalningskontrollöversikt
+<a id="positive-pay-overview" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
@@ -42,7 +43,7 @@ Betalningskontrollfiler skapas genom att använda dataentiteter. Innan du skapar
 
 För varje bankkonto som du vill skapa information om betalningskontroll för måste du tilldela betalningskontrollformatet. När du har genererat betalningarna kan du generera en betalningskontrollfil för en enda juridisk person och ett enskilt bankkonto. Du kan även generera betalningskontrollfiler för flera juridiska personer och bankkonton samtidigt. 
 
-När checkarna som anges i en betalningskontrollfil har betalats får du ett bekräftelsenummer från banken. Du kan sedan bekräfta betalningskontrollfilen i Microsoft Dynamics 365 for Operations. 
+När checkarna som anges i en betalningskontrollfil har betalats får du ett bekräftelsenummer från banken. Du kan sedan bekräfta betalningskontrollfilen i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
 
 Om du måste ändra en betalningskontrollfil kan du sedan återkalla den. Sedan, för varje check i betalningskontrollfilen återställs fältet som anger om denna check har inkluderats i en betalningskontrollfil.
 

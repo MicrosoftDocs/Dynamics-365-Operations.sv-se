@@ -3,7 +3,7 @@ title: "Momsöversikt"
 description: "Det här avsnittet innehåller en översikt över momssystemet. Det ger en beskrivning av komponenterna för inställning av moms och hur de arbetar tillsammans."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: TaxAuthority, TaxPeriod, TaxTable
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 13111
 ms.assetid: fe5fdc7f-9834-49fb-a611-1dd9c289619d
 ms.search.region: Global
@@ -19,22 +19,26 @@ ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: bdb3188f533cf0cdb1e70c63891408e45d02418d
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 415928125c14dfc69020b712f281835701ba2f83
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="sales-tax-overview"></a>Momsöversikt
+# Momsöversikt
+<a id="sales-tax-overview" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
+
+[!include[retail name](../includes/retail-name.md)]
 
 
 Det här avsnittet innehåller en översikt över momssystemet. Det ger en beskrivning av komponenterna för inställning av moms och hur de arbetar tillsammans.
 
-<a name="overview"></a>Översikt
+Översikt
+<a id="overview" class="xliff"></a>
 --------
 
 Ramverket för moms stöder många typer av indirekta skatter, till exempel moms/mervärdesskatt, skatt på varor och tjänster (GST), enhetsbaserade avgifter och källskatt. Dessa skatter beräknas och dokumenteras i samband med inköps- och försäljningstransaktioner. Dessa måste regelbundet rapporteras och betalas till skattemyndigheten. 
@@ -67,17 +71,20 @@ I tabellen nedan beskrivs enheterna och sekvensen för momsinställningar.
 | Ställ in artikelmomsgrupper.                                   | Obligatoriskt. Artikelmomsgrupper innehåller en lista med försäljningskoder som gäller för resursen (produkt, tjänst och så vidare) för en transaktion. För en given transaktion bestämmer skärningspunkten för momskoder i momsgruppen och artikelmomsgruppen momskoderna som gäller för den transaktionen. |
 | Ställ in momsparametrar på ansökningsparametersidorna. | Obligatoriskt. Olika områden som till exempel Redovisning och Leverantörsreskontra, Kundreskontra, måste ställa in parametrar för korrekt beräkning av indirekta skatter. Även om de flesta av dessa parametrar har standardvärden måste de ändras så att de passar för varje företags behov.                                          |
 
-## <a name="sales-tax-on-transactions"></a>Moms på transaktioner
+## Moms på transaktioner
+<a id="sales-tax-on-transactions" class="xliff"></a>
 På varje transaktion (försäljnings-/inköpsdokumentrader, journaler och så vidare) måste du ange en momsgrupp och en artikelmomsgrupp för att beräkna moms. Standardgrupper anges i huvuddata (till exempel, kund, leverantör, artikel och anskaffningskategori), men du kan manuellt ändra grupperna för en transaktion, om du måste. Båda grupperna innehåller en lista med momskoder och skärningspunkten av båda listorna med momskoder avgör listan med relevanta momskoder för transaktionen. 
 
 På varje transaktion kan du slå upp den beräknade momsen genom att öppna sidan **Momstransaktion**. Du kan slå upp momsen för en dokumentrad eller för hela dokumentet. För vissa dokument (exempelvis,leverantörsfaktura och allmänna journaler) kan du justera den beräknade momsen om originaldokumentet visar avvikande belopp.
 
-## <a name="sales-tax-settlement-and-reporting"></a>Momskvittning och rapportering
-Moms måste rapporteras och betalas till skattemyndigheten med regelbundna intervall (månad, kvartal och så vidare). Microsoft Dynamics 365 for Operations innehåller de funktioner som gör att du kan kvitta momskonton för intervallet, och förskjuta saldon till momskvittningskontot, enligt uppgifterna i redovisningsbokföringsgrupperna. Du kan använda den här funktionen på sidan **Kvitta och bokföra moms**. Du måste ange en momskvittningsperiod för vilken moms ska kvittas. 
+## Momskvittning och rapportering
+<a id="sales-tax-settlement-and-reporting" class="xliff"></a>
+Moms måste rapporteras och betalas till skattemyndigheten med regelbundna intervall (månad, kvartal och så vidare). Microsoft Dynamics 365 for Finance and Operations, Enterprise edition innehåller de funktioner som gör att du kan kvitta momskonton för intervallet och förskjuta saldon till momskvittningskontot, enligt uppgifterna i redovisningsbokföringsgrupperna. Du kan använda den här funktionen på sidan **Kvitta och bokföra moms**. Du måste ange en momskvittningsperiod för vilken moms ska kvittas. 
 
 När momsen har betalats, ska saldot för momskvittningskontot balanseras mot bankkontot. Om skattemyndigheten som anges i momskvittningsperioden hör till ett annat leverantörskonto, bokförs momssaldot som en öppen leverantörsfaktura och inkluderas i det vanliga betalningsförslaget.
 
-## <a name="conditional-sales-tax"></a>Villkorsmoms
+## Villkorsmoms
+<a id="conditional-sales-tax" class="xliff"></a>
 Villkorsmoms är moms som ska betalas proportionellt mot det faktiska beloppet som betalas på en faktura. Däremot beräknas standardmoms vid faktureringstillfället. Villkorsmoms måste betalas till skattemyndigheten när betalningen bokförs, inte när fakturan bokförs. När fakturan bokförs måste transaktionen rapporteras momsboksrapporten. Transaktionen måste emellertid vara undantagen ur momsbetalningsrapporten. 
 
 Om du markerar kryssrutan Villkorsmoms i formuläret Allmänna redovisningsparametrar, kan ingen moms dras förrän du har betalt fakturan. Detta är ett juridiskt krav i vissa länder/regioner.
@@ -85,7 +92,8 @@ Om du markerar kryssrutan Villkorsmoms i formuläret Allmänna redovisningsparam
 > [!NOTE]
 > När du väljer kryssrutan för villkorsmoms måste du ställa in momskoder, och momsgrupper, samt även skapa redovisningsbokföringsgrupper för att kunna använda funktionen. |
 
-###  <a name="example"></a>Exempel
+###  Exempel
+<a id="example" class="xliff"></a>
 
 Du kvittar momsen varje månad. Den 15 juni skapar du en kundfaktura på 10 000 plus moms.
 -   Momsen är 25 procent, eller 2 500.

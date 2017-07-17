@@ -3,7 +3,7 @@ title: Prissimulering
 description: "Det här avsnittet innehåller information om prissimulering för offerter. Prissimulering hjälper dig att utvärdera effekten av avdrag på det framtida försäljningspriset under offertprocessen innan du på fastställer ett specifikt pris."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: SalesQuotationPriceSimulation
 audience: Application User
 ms.reviewer: YuyuScheller
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 12254
 ms.assetid: 92be7c85-73cf-4f77-833c-d37ce779a031
 ms.search.region: Global
@@ -19,15 +19,16 @@ ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 293f09ca8758c0b1a66614eb9c75ca266b044fe7
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: c5381ab48e394702c2423de7a5b5cb9166993388
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="price-simulation"></a>Prissimulering
+# Prissimulering
+<a id="price-simulation" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
@@ -49,26 +50,31 @@ Du kan ställa in en notifiering när du skapar en offert. Här är exempel på 
 -   De kan hålla dig informerad om statusen för offerter i organisationen.
 -   De kan utlösa en granskning av en viss offert eller informera dig när rabattgränserna överskrids.
 
-## <a name="price-simulation-and-discounts"></a>Prissimulering och rabatter
+## Prissimulering och rabatter
+<a id="price-simulation-and-discounts" class="xliff"></a>
 Var försiktig när du kör prissimuleringar på offerter som har rabatter så att priser och rabatter beräknas korrekt. Eftersom alla prissimuleringar behandlas som specialrabatter på den aktiva offertraden eller på hela offerten är det viktigt att spåra skillnaderna för rabatterna.
 
-### <a name="types-of-discounts-in-trade-agreements"></a>Typer av rabatter i handelsavtal
+### Typer av rabatter i handelsavtal
+<a id="types-of-discounts-in-trade-agreements" class="xliff"></a>
 
-Handelsavtal i Microsoft Dynamics 365 for Operations kan ha fyra typer av prisrabatter. Rabatterna kan anges för olika artiklar, kunder eller prisgrupper och de kan begränsas efter datum. För att undvika felberäkningar måste du ta hänsyn till handelsavtal när du kör prissimuleringar. Här är de fyra rabattyperna i handelsavtal:
+Handelsavtal i Microsoft Dynamics 365 for Finance and Operations kan ha fyra typer av prisrabatter. Rabatterna kan anges för olika artiklar, kunder eller prisgrupper och de kan begränsas efter datum. För att undvika felberäkningar måste du ta hänsyn till handelsavtal när du kör prissimuleringar. Här är de fyra rabattyperna i handelsavtal:
 
 -   **Försäljningspris** – Olika försäljningspriser kan anges för artiklar. När offertrader skapas söker programmet efter rätt försäljningspris för en artikel och överför det till offertraderna. Därför påverkar ett handelsavtal som har den här typen av rabatt inte prissimuleringen. Försäljningspriset som används på offertraden återspeglar handelsavtalet.
 -   **Radrabatt** – Särskilda rabatter anges för artiklar, beroende på den beställda kvantiteten. Radbelopp reduceras normalt med radrabatten innan en prissimulering körs. Därför påverkar ett handelsavtal som har den här typen av rabatt prissimuleringen.
 -   **Samköpsrabatt** – Om de kombinerade summorna överskrider den gräns som du har definierat, utlöser fördefinierade kombinationer av beställda artiklar en rabatt för hela ordern. Radbelopp reduceras normalt med radrabatten innan en prissimulering körs. Därför påverkar ett handelsavtal som har den här typen av rabatt prissimuleringen.
 -   **Total rabatt** – Om de kombinerade summorna överskrider den gräns som du har definierat, utlöser fördefinierade beställda artiklar en rabatt för hela ordern. Totalrabatten genereras via offertraderna. Men eftersom den totala rabatten tillämpas på offertsumman som en rabatt minskar den det totala beloppet för offerten. Därför påverkar ett handelsavtal som har den här typen av rabatt prissimuleringen.
 
-### <a name="quotation-lines-and-trade-agreements"></a>Offertrader och handelsavtal
+### Offertrader och handelsavtal
+<a id="quotation-lines-and-trade-agreements" class="xliff"></a>
 
 När du skapar eller anpassar en offertrad beräknas radrabatterna automatiskt. Det relevanta försäljningspriset hittas för artikeln, baserat på handelsavtalet.
 
-## <a name="price-simulation-examples"></a>Prissimuleringsexempel
+## Prissimuleringsexempel
+<a id="price-simulation-examples" class="xliff"></a>
 I följande exempel används prissimulering för offerthuvuden och artiklar på enskilda rader.
 
-### <a name="price-simulation-for-quotation-headers"></a>Prissimulering för offerthuvuden
+### Prissimulering för offerthuvuden
+<a id="price-simulation-for-quotation-headers" class="xliff"></a>
 
 Du skapar en offert med följande rader:
 
@@ -99,7 +105,8 @@ Du kör en prissimulering och tillämpar en totalrabatt på 15 procent för hela
 | Nytt täckningsbidrag i USD                       | 270,47 – 184,96                           | 85,51    |
 | Ny täckningsgrad                               | \[(270.47 – 184.96) ÷ 270.47\] × 100      | 31,61 %   |
 
-### <a name="price-simulation-for-single-line-items"></a>Prissimulering av artikel på enskild rad
+### Prissimulering av artikel på enskild rad
+<a id="price-simulation-for-single-line-items" class="xliff"></a>
 
 Du skapar en offert med följande rader:
 

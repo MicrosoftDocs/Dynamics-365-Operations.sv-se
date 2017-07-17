@@ -1,15 +1,15 @@
 ---
 title: "Power BI-innehåll för personalmätningar"
-description: "Det här avsnittet beskriver Dynamics 365 for Operations - Power BI-innehåll för personalmätningar Det förklarar hur du kommer åt rapporterna som är inkluderade i innehållspaketet, samt ger dig information om den datamodell och de enheter som användes för att skapa innehållspaketet."
-author: twheeloc
+description: "Det här avsnittet beskriver Power BI-innehåll för personalmätningar. Det förklarar hur du öppnar rapporter, och ger information om den datamodell och de enheter som användes för att skapa innehållet."
+author: jcart1106
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-platform
+ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: Operations
+ms.search.scope: Operations, UnifiedOperations, Talent, Core
 ms.custom: 264084
 ms.assetid: 8e700583-3a7d-4f5f-9ac8-58c4feed1a02
 ms.search.region: Global
@@ -17,85 +17,86 @@ ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 2a3f611d29e041a5f05e3f93fd2330f4218b9dd1
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 1f732a53eee17317417058b92706a9228d783cb5
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="workforce-metrics-power-bi-content"></a>Power BI-innehåll för personalmätningar
+# Power BI-innehåll för personalmätningar
+<a id="workforce-metrics-power-bi-content" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
+Det här avsnittet beskriver **Microsoft Power BI-innehåll för personalmätningar**. Det förklarar hur du öppnar Power BI-rapporter, och ger information om den datamodell och de enheter som användes för att skapa innehållet.
 
-Det här avsnittet beskriver Dynamics 365 for Operations - Power BI-innehåll för personalmätningar Det förklarar hur du kommer åt rapporterna som är inkluderade i innehållspaketet, samt ger dig information om den datamodell och de enheter som användes för att skapa innehållspaketet.
+## Åtkomst till Power BI-innehåll
+<a id="accessing-the-power-bi-content" class="xliff"></a>
+Power BI-innehåll för **Personalmätningar** visas i arbetsytan **Personalhantering** om du använder någon av följande produkter:
 
-<a name="accessing-the-content-pack"></a>Åtkomst till innehållspaketet
---------------------------
+- Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, juli 2017 uppdatering
+- Microsoft Dynamics 365 for Talent
 
-Du kan hitta innehållspaketet för personalmätningar i biblioteket för gemensamma tillgångar i Microsoft Dynamics Lifecycle Services (LCS). Mer information om hur du hämtar innehållspaketet och kopplar det till dina Microsoft Dynamics 365 for Operations-data, se [Power BI-innehåll i LCS från Microsoft och dina partner](power-bi-content-microsoft-partners.md).
+## Mått som ingår i Power BI-innehållet
+<a id="metrics-that-are-included-in-the-power-bi-content" class="xliff"></a>
+Följande tabell visar mätningar som är tillgängliga i varje rapport.
 
-## <a name="reports-that-are-included-in-the-content-pack"></a>Rapporter som ingår i innehållspaketet
-När du har anslutit innehållspaketet till dina Dynamics 365 for Operations-data kommer rapporterna att visa din organisations data. Om du aldrig har använt Microsoft Power BI tidigare kan du lära dig mer om det på sidan [Guidad utbildning för Power BI](https://powerbi.microsoft.com/en-us/guided-learning/?WT.mc_id=PBIService_GetData). Rapporter som ingår i innehållspaketet har både diagram och tabeller med ytterligare information. Följande register beskriver rapporterna.
-
-| Rapport                                           | Innehåll                                                                                                                                                                                                            |
+| Rapport                                           | Mätvärden                                                                                                                                                                                                            |
 |--------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Personmätningar                                   | Sammanfattning av andra rapporter                                                                                                                           |
 | Personalstyrka analys företag, avdelning, plats | Personalstyrka per företag, personalstyrka per avdelning, personalstyrka per plats och totala personalstyrkan                                                                                                                           |
 | Personalstyrka analys, jobb, steg, chef            | Personalstyrka per jobb, personalstyrka per steg, personalstyrka per chef och totala personalstyrkan                                                                                                                                      |
 | Personalstyrkan trendanalys                         | Personalstyrkan detta år jämfört med förra året per företag och rullande personalstyrka under de senaste 12 månaderna                                                                                                                        |
-| Personalens befolkning                           | Personalstyrka per ålder och kön, personalstyrka per etniskt ursprung, personalstyrka per veteranstatus, personalstyrka per civilstånd, antalet heltidsstudenter, genomsnittligt anställningstid, genomsnittlig ålder och förhållandet mellan kvinliga och manliga medarbetare |
+| FTE-analyser                                     | Totalt motsvarande heltid, totalt tilldelad heltid, heltid per avdelning, heltid de senaste 12 månaderna och heltid efter jobb |
+| Personalens befolkning                           | Personalstyrka per ålder och kön, personalstyrka per etniskt ursprung, personalstyrka per veteranstatus, personalstyrka per civilstånd, antal heltidsstudenter, genomsnittlig anställningstid, genomsnittlig ålder, förhållandet mellan kvinnliga och manliga medarbetare och språk som talas av personalen |
 | Befattningsanalys                                | Lediga befattningar per avdelning, öppna till fulla befattningar, aktiva till inaktiva befattningar och befattningar per avdelning                                                                                                   |
-| Avgångsanalys                               | Avgång detta år jämfört med förra året, avgång, genomsnittlig tjänstetid av personer som lämnar, genomsnittlig åldern för personer som lämnar och anställda som lämnar per orsak                                                                   |
+| Avgångsanalys                               | Avgång i år jämfört med förra året, avgång, medarbetare som slutar efter ålder och kön, genomsnittlig anställningstid för medarbetare som slutar, medarbetare som slutar denna månad och medarbetare som slutar efter orsak                                                                   |
 | Personer efter avdelning                             | Anställda med ett anställningsnummer per avdelning, befattning och tilldelningens start-och slutdatum                                                                                                                       |
-| Tjänsteålderanalys                               | Genomsnittligt antal tjänsteår per företag och tjänsteålderslista                                                                                                                                                              |
-| Jubileumsdagar och tjänsteår               | Anställda per tjänsteår och jubileumsdagar                                                                                                                                                                    |
+| Tjänsteålderanalys                               | Genomsnittligt anställningstid, genomsnittliga tjänsteår per företag och tjänsteålderslista                                                                                                                                                              |
+| Medarbetarnas jubileumsdagar                           | Jubileumsdagar denna månad, jubileumsdagar nästa månad, anställda efter tjänsteår, och jubileumsdagar, tjänsteår per avdelning                                                                                                                                                                    |
+| Medarbetarnas födelsedagar                               | Månadens födelsedagar, födelsedagar nästa månad, medarbetarnas födelsedagar, och födelsedagar per månad och avdelning                                                                                                                                                                    |
+| Massanställningsprojekt                               | Totalt antal massanställningsprojekt, massanställningsprojekt efter status, massanställningsprojekt efter avdelning och ägare, massanställningsprojekt efter jobb och massanställningsprojekt                                                                                                                                                                    |
 
-Diagrammen och rutorna i samtliga dessa rapporter kan filtreras och fästas på instrumentpanelen. Mer information om hur du filtrerar och fäster i Power BI finns i [Skapa och konfigurera en intrumentpanel](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
+Diagrammen och rutorna i samtliga dessa rapporter kan filtreras och fästas på instrumentpanelen. Mer information om hur du filtrerar och fäster i Power BI finns i [Skapa och konfigurera en instrumentpanel](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
-## <a name="understanding-the-data-model-and-entities"></a>Förstå datamodellen och enheterna
-Dynamics 365 for Operations-data används för att fylla i rapporter i innehållspaketet för personalmätningar. Följande tabell visar enheterna som innehållspaketet baserades på.
+## Utöka Power BI-innehåll
+<a id="extending-the-power-bi-content" class="xliff"></a>
+Genom att använda innehållspaket som är tillgängliga i Microsoft Dynamics Lifecycle Services (LCS) kan du ge bra analyser till människor som inte är inloggade i Finance and Operations. Du kan ändra dessa innehållspaket så att de innehåller andra rapporter och modeller och publicera innehållspaket till din Power BI.com-innehavare för analys.
 
-| Enhet                            | Innehåll                                                                                                   | Relationer med andra entiteter                                                                                                                                                                                                                                                                                                |
-|-----------------------------------|------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Personal\_Motkalender         | Kalenderförskjutningar till uppdela rapporter                                                                          | Workforce\_PastPositionAssignment Workforce\_PositionTrend Workorce\_WorkerTrend Workforce\_TerminatedWorker                                                                                                                                                                                                                     |
-| Personal\_företag                | Företag att filtrera rapporter efter                                                                             | Workforce\_CurrentCompensation Workforce\_CurrentWorker Workforce\_TerminatedWorker Workorce\_WorkerTrend                                                                                                                                                                                                                        |
-| Personal\_Kompensation           | Lönesatsen och frekvens över tiden                                                                           | Workforce\_CurrentCompensation Workforce\_CurrentWorker Workforce\_TerminatedWorker Workorce\_WorkerTrend                                                                                                                                                                                                                        |
-| Personal\_AktuellKompensation    | Lönesatsen och frekvens per aktuellt datum                                                              | Workforce\_Company Workforce\_Compensation Workforce\_Demographics Workforce\_Job Workforce\_Position                                                                                                                                                                                                                            |
-| Personalen\_AktuellBefattning        | Befattningar per innevarande datum, heltidslön (FTE) öppna positioner och öppna till fulla befattningar | Personal\_jobbpersonal\_befattning                                                                                                                                                                                                                                                                                               |
-| Personal\_AktuellArbetare          | Arbetare per aktuellt datum, ålder och antal anställda                                                         | Workforce\_Company Workforce\_Compensation Workforce\_GeographicLocation Workforce\_Performance Workforce\_WorkerName Workforce\_ReportsToWorkerName Workforce\_WorkerTitle Workforce\_Demographics Workforce\_Job Workforce\_Employment Workforce\_Position Workforce\_WorkerBenefit                                            |
-| Personal\_dag                   | Dagar, veckor, månader och år.                                                                             | Workforce\_PastPositionAssignment Workforce\_PositionTrend Workforce\_TerminatedWorker Workorce\_WorkerTrend                                                                                                                                                                                                                     |
-| Personal\_Demografi           | Födelsedatum, kön, etniskt ursprung och civilstånd                                                   | Personal\_AktuellArbetare Personal\_AvslutadArbetare Personal\_ArbetareTrend                                                                                                                                                                                                                                                       |
-| Personal\_anställning             | Startdatum, slutdatum och övergångsdatum                                                                  | Personal\_AktuellArbetare Personal\_AvslutadArbetare Personal\_ArbetareTrend                                                                                                                                                                                                                                                       |
-| Personal\_GeograpiskPlats     | Stad, region, postnummer och delstat eller region                                                           | Personal\_AktuellArbetare Personal\_AvslutadArbetare Personal\_ArbetareTrend                                                                                                                                                                                                                                                       |
-| Personal\_jobb                    | Funktion, typ och rubrik                                                                                  | Personal\_AktuellBefattning Personal\_AktuellArbetare                                                                                                                                                                                                                                                                              |
-| Personal\_JobbFöredragenKompetens      |                                                                                                            |                                                                                                                                                                                                                                                                                                                                  |
-| Personal\_FöregåendeBefattningTilldelning | Orsak för tilldelningen, startdatum, slutdatum och jobb                                                           | Workforce\_CalendarOffset Workforce\_Date Workforce\_Job Workforce\_Position                                                                                                                                                                                                                                                     |
-| Personal\_Resultat            | Värdering, beskrivning och bedömningsmodellen                                                                      | Personal\_AktuellArbetare Personal\_AvslutadArbetare Personal\_ArbetareTrend                                                                                                                                                                                                                                                       |
-| Personal\_PersonKompetens            | Nivå och kompetens                                                                                            | Personal\_kompetens                                                                                                                                                                                                                                                                                                                 |
-| Personal\_PersonKompetensAnalys    | Certifierad, nivå och kompetens                                                                                | Personal\_KompetensPersonal\_ArbetareNamn                                                                                                                                                                                                                                                                                           |
-| Personal\_Befattning               | Avdelning, FTE, befattning, befattningstyp och titel                                                        | Personal\_AktuellBefattning Personal\_AktuellArbetare                                                                                                                                                                                                                                                                              |
-| Personal\_BefattningTrend          | Positioner över tid, FTE och jobb                                                                          | Workforce\_CalendarOffset Workforce\_Date Workforce\_Job Workforce\_Position                                                                                                                                                                                                                                                     |
-| Personal\_RapporterTillArbetareNamn    | Förnamn, efternamn och fullständiga namn                                                                       | Personal\_AktuellArbetare Personal\_AvslutadArbetare Personal\_ArbetareTrend                                                                                                                                                                                                                                                       |
-| Personal\_kompetens                  | Färdighet, färdighetstyp och värdering                                                                              | Personal\_PersonKompetens Personal\_PersonKompetensAnalys                                                                                                                                                                                                                                                                            |
-| Personal\_AvslutadArbetare       | Avslutade arbetare, uppsägningsdatum, titel, befattning och jobb                                             | Workforce\_Company Workforce\_Compensation Workforce\_GeographicLocation Workforce\_Performance Workforce\_WorkerName Workforce\_ReportsToWorkerName Workforce\_CalendarOffset Workforces\_Date Workforce\_WorkerTitle Workforce\_Demographics Workforce\_Employment Workforce\_Job Workforce\_Position Workforce\_WorkerBenefit |
-| Personal\_ArbetareFörmån          | Giltighetsdatum, förmånsalternativ, förmånsplanen och förmånstyp                                             | Personal\_AktuellArbetare Personal\_AvslutadArbetare Personal\_ArbetareTrend                                                                                                                                                                                                                                                       |
-| Personal\_ArbetareNamn             | Förnamn, efternamn och fullständiga namn                                                                       | Personal\_AktuellArbetare Personal\_AvslutadArbetare Personal\_ArbetareTrend Personal\_PersonKompetensAnalys                                                                                                                                                                                                                        |
-| Personal\_ArbetareTitel            | Titel och tjänsteålder                                                                                   | Personal\_AktuellArbetare Personal\_AvslutadArbetare Personal\_ArbetareTrend                                                                                                                                                                                                                                                       |
-| Personal\_ArbetareTrend             | Arbetare över tid, antal anställda, företag och befattning                                                        | Workforce\_Company Workforce\_Compensation Workforce\_GeographicLocation Workforce\_Performance Workforce\_WorkerName Workforce\_ReportsToWorkerName Workforce\_CalendarOffset Workforces\_Date Workforce\_WorkerTitle Workforce\_Demographics Workforce\_Employment Workforce\_Job Workforce\_WorkerBenefit                     |
+Du hittar Power BI-innehåll för **Personalmätningar** i biblioteket för gemensamma tillgångar i LCS. Mer information om hur du laddar ned innehållspaket och använder det i din organisation finns i [Power BI-innehåll i LCS från Microsoft och dina partner](power-bi-content-microsoft-partners.md). Om du vill se en demonstration som visar hur du implementerar Power BI-innehållet, se [Power BI-innehåll från Microsoft och dina samarbetspartners i Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office mix.
 
-Dessa enheter används för att skapa beräknade mått i datamodellen. Beräknade åtgärder används sedan för att beräkna huvudindikatorerna för prestanda (KPI) samt de rapporter som används i innehållspaketet. Om du vill inkludera ytterligare beräkningar i rapporterna och instrumentpanelerna kan du ladda ned och ändra filen CompensationandBenefits.pbix från LCS. Filen är den standarddatamodell som använts för att skapa innehållspaketet. När du är klar med ändringarna kan du skapa ett innehållspaket för organisationen samt en instrumentpanel som innehåller den information som du har lagt till.
+Hämta Power BI-innehåll för **Personalmätningar** som kan tillämpas på den version av Microsoft Dynamics 365 som du använder.
 
-## <a name="additional-resources"></a>Ytterligare resurser
-Nedan följer några användbara länkar som är relaterade till enheter och till att skapa innehåll för Power BI:
+>[!NOTE]
+>.pbix-filerna i Lifecycle Services gäller endast Finance and Operations.
 
--   [Datatabeller](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/06/09/power-bi-integration-with-entity-store-in-dynamics-ax-7-may-update/)
--   [Skapa innehållspaket för organisationer](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
--   [Datamodeller med hjälp av Power BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
--   [Lägga till Power BI-rutor till arbetsytor](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/07/06/pinning-power-bi-reports-to-dynamics-ax-client/)
+## Förstå datamodellen och enheterna
+<a id="understanding-the-data-model-and-entities" class="xliff"></a>
+Följande tabell visar enheterna som innehållet baserades på.
 
+| Enhet                   | Innehåll                                                                            | Relationer med andra entiteter |
+|--------------------------|-------------------------------------------------------------------------------------|-----------------------------------|
+| Kalenderförskjutning          | Kalenderförskjutningar till uppdela rapporter                                                   | Tidigare befattningstilldelning, befattningsutveckling, uppsagd medarbetare |
+| Företag                  | Företag att filtrera rapporter efter                                                      | Aktuell medarbetare, uppsagd, medarbetare, medarbetarutveckling |
+| Aktuell befattning         | Befattningar per innevarande datum, heltid, lediga positioner och lediga till tillsatta befattningar | Jobb, befattning |
+| Aktuell medarbetare         | Arbetare per aktuellt datum, ålder och antal anställda                                  | Företag, geografisk plats, medarbetarens namn, rapporter till, förskjutningskalender, datum, medarbetarens titel, demografi, jobb, anställning, befattning |
+| Datum                     | Dagar, veckor, månader och år.                                                      | Tidigare befattningstilldelning, befattningsutveckling, uppsagd medarbetare, medarbetarutveckling |
+| Demografi             | Födelsedatum, kön, etniskt ursprung och civilstånd                            | Aktuell medarbetare, uppsagd, medarbetare, medarbetarutveckling |
+| Anställning               | Startdatum, slutdatum och övergångsdatum                                           | Aktuell medarbetare, uppsagd, medarbetare, medarbetarutveckling |
+| Geografisk plats      | Stad, region, postnummer och delstat eller region                                    | Aktuell medarbetare, uppsagd, medarbetare, medarbetarutveckling |
+| Jobb                      | Funktion, typ och rubrik                                                           | Aktuell befattning, aktuell medarbetare |
+| Tidigare befattningstilldelning | Orsak för tilldelningen, startdatum, slutdatum och jobb                                    | Kalenderförskjutning, datum, jobb, befattning |
+| Befattning                 | Avdelning, FTE, befattning, befattningstyp och titel                                 | Aktuell befattning, aktuell medarbetare |
+| Befattningsutveckling           | Positioner över tid, FTE och jobb                                                   | Kalenderförskjutning, datum, jobb, befattning |
+| Rapporterar till               | Förnamn, efternamn och fullständiga namn                                                | Aktuell medarbetare, uppsagd, medarbetare, medarbetarutveckling |
+| Uppsagda medarbetare      | Avslutade arbetare, uppsägningsdatum, titel, befattning och jobb                      | Företag, geografisk plats, medarbetarens namn, rapporter till, förskjutningskalender, datum, medarbetarens titel, demografi, anställning, jobb, befattning |
+| Namn på medarbetare            | Förnamn, efternamn och fullständiga namn                                                | Aktuell arbetare, uppsagd medarbetare, medarbetarutveckling |
+| Medarbetartitel           | Titel och tjänsteålder                                                            | Aktuell medarbetare, uppsagd, medarbetare, medarbetarutveckling |
+| Medarbetarutveckling           | Arbetare över tid, antal anställda, företag och befattning                                 | Företag, geografisk plats, medarbetarens namn, rapporter till, förskjutningskalender, datum, medarbetarens titel, demografi, anställning, jobb |
+| Massanställningsprojekt        | Antal massanställningsprojekt, projektägare och projektstatus                     | Företag, massanställningsrad |
+| Massanställningsrad           | Avdelning, anställningstyp och befattning                                           | Datum, jobb, massanställningsprojekt |
 
-
-
+Dessa enheter används för att skapa beräknade mått i datamodellen. Beräknade åtgärder används sedan för att beräkna huvudindikatorerna för prestanda (KPI) samt de rapporter som används i Power BI-innehållspaketet. Om du vill inkludera ytterligare beräkningar i rapporterna och instrumentpanelerna kan du ladda ned och ändra filen .pbix från LCS. Filen är den standarddatamodell som använts för att skapa Power BI-innehållspaketet. När du är klar med ändringarna kan du skapa ett innehållspaket för organisationen samt en instrumentpanel som innehåller den information som du har lagt till.
 

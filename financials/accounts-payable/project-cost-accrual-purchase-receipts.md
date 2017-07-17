@@ -1,15 +1,15 @@
 ---
 title: "Periodisering av projektkostnad på inköpsinleveranser"
-description: "I det här avsnittet beskrivs hur upplupna projektkostnader från inköpsinleveranser kan spåras i Microsoft Dynamics 365 for Operations."
+description: "I det här avsnittet beskrivs hur upplupna projektkostnader från inköpsinleveranser kan spåras i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 266984
 ms.assetid: 61e7d2a3-5aab-4113-bccc-213f932885d2
 ms.search.region: Global
@@ -17,20 +17,21 @@ ms.author: sigitac
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: acb14deb9d77927ffc95500e4e97763ba3ad7826
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: b46929d2991f3ec1b38d54ddc57de632aa9b01b9
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="project-cost-accrual-on-purchase-receipts"></a>Periodisering av projektkostnad på inköpsinleveranser
+# Periodisering av projektkostnad på inköpsinleveranser
+<a id="project-cost-accrual-on-purchase-receipts" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-I det här avsnittet beskrivs hur upplupna projektkostnader från inköpsinleveranser kan spåras i Microsoft Dynamics 365 for Operations. 
+I det här avsnittet beskrivs hur upplupna projektkostnader från inköpsinleveranser kan spåras i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
 
 Fakturor för ett projekt kommer ofta senare än varorna och tjänster som levereras, vilket betydligt kan påverka projektets nyckeltal (KPI:er). Det är viktigt att kunna spåra transaktionerna i både ekonomiska rapporter och projektrapporter.
 
@@ -38,7 +39,7 @@ I följande exempelscenarion illustreras detta.
 
 Contoso Consulting har påbörjat ett nytt molndistributionsprojekt. En inköpsorder skapas för att köpa en dator för projektet. Datorn kommer att kosta $1500 och installationstjänster kostar $150. Leverantören har levererat och installerat datorn, men fakturan har ännu inte nått Contoso Consulting. Projektledaren vill se de upplupna projektkostnaden på $1650 innan fakturan levereras. Kostnaden bör även återspeglas i företagets månadsslutet bokslut. 
 
-Upplupen kostnad måste registreras på både ekonomisk nivå och projektnivå för rapportering. I Dynamics 365 for Operations kan den ekonomiska uppdateringen av produktinleveransen spåras för artikeln och upphandlingskategorier. 
+Upplupen kostnad måste registreras på både ekonomisk nivå och projektnivå för rapportering. I Finance and Operations kan den ekonomiska uppdateringen av produktinleveransen spåras för artikeln och upphandlingskategorier. 
 
 För artiklar, på sidan **Parametrar för leverantörsreskontra**, anger du alternativet **Bokför produktinleveranser i redovisningen**.
 [![accruals1](./media/accruals1-1024x409.png)](./media/accruals1.png) 
@@ -73,7 +74,7 @@ Du kan mappa anskaffningskategorier till projektkategorier på sidan **Anskaffni
 
 **Steg 3:** Skapa ett utkast till leverantörsfaktura. 
 
-I Dynamics 365 for Operations påverkar bokföringen av en produktinleverans inte projektinformationen. Som tillfällig lösning kan du generera du ett utkast till leverantörsfaktura direkt när inleveransen har bokförts. Gå till sidan **Inköpsorder** &gt; **fliken Faktura** &gt; **Generera** &gt; **Faktura**. Då skapas ett väntande fakturadokumentet som uppdaterar projektinformation. 
+I Finance and Operations påverkar bokföringen av en produktinleverans inte projektinformationen. Som tillfällig lösning kan du generera du ett utkast till leverantörsfaktura direkt när inleveransen har bokförts. Gå till sidan **Inköpsorder** &gt; **fliken Faktura** &gt; **Generera** &gt; **Faktura**. Då skapas ett väntande fakturadokumentet som uppdaterar projektinformation. 
 
 När ett utkast till leverantörsfaktura skapas genereras pågående projekttransaktioner. 
 [![accruals8](./media/accruals8-1024x225.png)](./media/accruals8.png) 

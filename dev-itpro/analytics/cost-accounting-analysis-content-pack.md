@@ -3,46 +3,59 @@ title: "Kostnadsredovisningsanalys för Power BI-innehåll"
 description: "Det här avsnittet beskriver vad som ingår i Power BI-innehållet för kostnadsredovisning. Det förklarar hur du öppnar Power BI-rapporter, och ger information om den datamodell och de enheter som användes för att skapa innehållet."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: Operations
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 270274
 ms.assetid: b74549df-35d5-4f2f-b3c7-405b0d38ea78
 ms.search.region: Global
-ms.author: yuyus
+ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 5ce75a6145bde4a8c33ed785c7d2a60a52416676
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 1d19276331a4278f44ad14292ed434c49b74d727
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="cost-accounting-analysis-power-bi-content"></a>Kostnadsredovisningsanalys för Power BI-innehåll
+# Kostnadsredovisningsanalys för Power BI-innehåll
+<a id="cost-accounting-analysis-power-bi-content" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
+Det här avsnittet beskriver vad som ingår i Microsoft Power BI-innehållet **Kostnadsredovisningsanalys**. Det förklarar hur du öppnar Power BI-rapporter, och ger information om den datamodell och de enheter som användes för att skapa innehållet.
 
-Det här avsnittet beskriver vad som ingår i Power BI-innehållet för kostnadsredovisning. Det förklarar hur du öppnar Power BI-rapporter, och ger information om den datamodell och de enheter som användes för att skapa innehållet.
+## Översikt
+<a id="overview" class="xliff"></a>
 
-<a name="overview"></a>Översikt
---------
+Power BI-innehållet **Kostnadsredovisningsanalys** är avsett för kostnadskontrollanter eller annan som med ansvar för att utföra kostnadskontroll inom en organisation. Det innehåller viktiga mätvärden såsom kostnad, omfattning och kostnadstariff efter verklig kostnad, budgeterad kostnad och kostnad för flexibel budget. Det använder transaktionsdata från modulen **kostnadsredovisning** och visar totala kostnader för hela organisationen i en rapporteringsvaluta. Chefer kan filtrera data efter kostnadsobjekt för kostnadskontroll av organisationsenheter, även om organisationen kan ha flera juridiska personer. 
 
-Microsoft Power BI-innehållet **Kostnadsredovisningsanalys** är avsett för kostnadskontrollanter eller annan som med ansvar för att utföra kostnadskontroll inom en organisation. Det innehåller viktiga mätvärden såsom kostnad, omfattning och kostnadstariff efter verklig kostnad, budgeterad kostnad och kostnad för flexibel budget. Det använder transaktionsdata från kostnadsredovisningen i Microsoft Dynamics 365 for Operations och visar totala kostnader för hela organisationen i en rapporteringsvaluta. Chefer kan filtrera data efter kostnadsobjekt för kostnadskontroll av organisationsenheter, även om organisationen kan ha flera juridiska personer. Eftersom Power BI-innehållet **Kostnadsredovisningsanalys** markerar avvikelser mellan faktiska och budgeterade kostnader, kan chefer meddelas om positiva och negativa trender för deras operativa enheter. Chefer kan gräva ner till hierarkier för kostnadselement eller enskilda kostnadselement för att få detaljerad information om hur kostnadsavvikelser har inträffat, och sedan vidta effektiva åtgärder. Power BI-innehållet **Kostnadsredovisningsanalys** låter kostnadsredovisare analysera kostnadsflödet genom kostnadsobjekt inom hela organisationen. Mer information om kostnadsredovisning finns [Startsida för kostnadsredovisning](/dynamics365/operations/financials/cost-accounting/cost-accounting-home-page). Genom att definiera säkerhetsnivån för åtkomst inom kostnadsredovisningen och kombinera den med säkerheten på radnivå i Power BI, beviljar du alla ägare av kostnadsobjekt åtkomst till Power BI-innehållet **Kostnadsredovisningsanalys**. Alla data i de visuella effekterna filtreras sedan baserat på den åtkomstnivå som kontrolleras i kostnadsredovisningen. Mer information om säkerhetsnivån för åtkomst och säkerhet på radnivå, se [Ange säkerhetsinställningar för kostnadsredovisningsinnehåll för Power BI](setup-security-cost-accounting-content-pack.md).
+Eftersom innehållet **Kostnadsredovisningsanalys** markerar avvikelser mellan faktiska och budgeterade kostnader, kan chefer meddelas om positiva och negativa trender för deras operativa enheter. Chefer kan bläddra ner till kostnadselementhierarkierna eller enskilda kostnadselement. På så sätt kan kan chefer få detaljerad information om hur kostnadsavvikelser har inträffat och vidta effektiva åtgärder. 
 
-## <a name="accessing-the-power-bi-content"></a>Åtkomst till Power BI-innehåll
-Du kan hitta Power BI-innehållet **Kostnadsredovisningsanalys** i biblioteket för gemensamma tillgångar i Microsoft Dynamics Lifecycle Services (LCS). Mer information om hur du hämtar innehållet och kopplar det till dina Microsoft Dynamics 365 for Operations-data, se [Power BI-innehåll i LCS från Microsoft och dina partner](power-bi-content-microsoft-partners.md). 
+Innehållet **Kostnadsredovisningsanalys** låter kostnadsredovisare analysera kostnadsflödet genom kostnadsobjekt inom hela organisationen. 
 
-> OBS - **KB4011327** är ett krav för detta Power BI-innehåll. När du loggar in till Lifecycle Services får du åtkomst till KB här: <https://fix.lcs.dynamics.com/issue/results/?q=kb4011327>.
+Mer information om kostnadsredovisning finns [Startsida för kostnadsredovisning](/dynamics365/unified-operations/financials/cost-accounting/cost-accounting-home-page). 
 
-## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mått som ingår i Power BI-innehållet
+Genom att definiera säkerhetsnivån för åtkomst inom kostnadsredovisningen och kombinera den med säkerheten på radnivå i Power BI, beviljar du alla ägare av kostnadsobjekt åtkomst till Power BI-innehållet **Kostnadsredovisningsanalys**. Alla data i de visuella effekterna filtreras sedan baserat på den åtkomstnivå som kontrolleras i kostnadsredovisningen. Mer information om säkerhetsnivån för åtkomst och säkerhet på radnivå, se [Ange säkerhetsinställningar för kostnadsredovisningsinnehåll för Power BI](setup-security-cost-accounting-content-pack.md).
+
+## Åtkomst till Power BI-innehåll
+<a id="accessing-the-power-bi-content" class="xliff"></a>
+Du kan hitta Power BI-innehållet **Kostnadsredovisningsanalys** i biblioteket för gemensamma tillgångar i Microsoft Dynamics Lifecycle Services (LCS). Mer information om hur du laddar ned innehållspaket och använder det i din organisation finns i [Power BI-innehåll i LCS från Microsoft och dina partner](power-bi-content-microsoft-partners.md). Om du vill se en demonstration som visar hur du implementerar Power BI-innehållet, se [Power BI-innehåll från Microsoft och dina samarbetspartners i Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office mix.
+
+Hämta innehållet **Kostnadsredovisningsanalys** innehåll som avser versionen av Microsoft Dynamics 365 som du använder.
+
+> [!NOTE]
+> KB 4011327 är ett krav för detta Power BI-innehåll När du loggar in till LCS får du åtkomst till KB här: <https://fix.lcs.dynamics.com/issue/results/?q=kb4011327>.
+
+## Mått som ingår i Power BI-innehållet
+<a id="metrics-that-are-included-in-the-power-bi-content" class="xliff"></a>
 Innehållet omfattar en uppsättning rapportsidor. Sidorna består av en uppsättning mått som visualiseras som diagram, brickor och tabeller. Följande register ger en översikt över de visuella effekterna i Power BI-innehållet **Kostnadsredovisningsanalys**.
 
 | Rapportsida                      | Diagram                                                                                                                         | Panel                                          |
@@ -63,13 +76,16 @@ Innehållet omfattar en uppsättning rapportsidor. Sidorna består av en uppsät
 | Kostnadsutdrag efter räkenskapsperiod  | Faktisk kostnad efter hierarkinivå för kostnadselement samt medlemsnamn för kostnadsobjektdimension                                             |                                               |
 |                                  | Faktisk kostnad efter medlemsnamn för kostnadsobjektdimension samt medlemsnamn för kostnadselemetdimension                                       |                                               |
 
-## <a name="understanding-the-data-model-and-entities"></a>Förstå datamodellen och enheterna
-Dynamics 365 for Operations-data används för att fylla i rapportsidorna Power-Bi-innehållet **Kostnadsredovisningsanalys**. Informationen visas som sammansatta mått som mellanlagras i enhetsarkivet, som är en Microsoft SQL-databas som är optimerad för analys. Mer information finns i [Översikt för Power BI-integrering med enhetsarkiv](power-bi-integration-entity-store.md). Följande sammanlagda huvudmått används till grund för innehållet:
+## Förstå datamodellen och enheterna
+<a id="understanding-the-data-model-and-entities" class="xliff"></a>
+Följande data används för att fylla i rapportsidorna Power-Bi-innehållet **Kostnadsredovisningsanalys**. Informationen visas som sammansatta mått som mellanlagras i Enhetslagring. Enhetslagring är en Microsoft SQL Server-databas som är optimerad för analys. Mer information finns i [Översikt för Power BI-integrering med enhetsarkiv](power-bi-integration-entity-store.md). 
 
-| Enhet                  | Sammanlagda huvudmått | Datakälla för Dynamics 365 for Operations | Fält     | beskrivning                                   |
-|-------------------------|---------------------------|---------------------------------------------|-----------|-----------------------------------------------|
-| Poster för kostnadsredovisning | SUMMA(Belopp)               | CAMDATAAggregatedCostEntry                  | Belopp    | Belopp i redovisningsvalutan för kostnadsredovisning |
-| Statistikposter     | SUMMA(storlek)            | CAMDATAAggregatedStatisctialEntry           | Storlek |                                               |
+Följande sammanlagda huvudmått används till grund för innehållet:
+
+| Enhet                  | Sammanlagda huvudmått | Datakälla för Dynamics 365      | Fält     | beskrivning                                        |
+|-------------------------|---------------------------|-----------------------------------|-----------|----------------------------------------------------|
+| Poster för kostnadsredovisning | SUMMA(Belopp)               | CAMDATAAggregatedCostEntry        | Belopp    | Beloppet i redovisningsvalutan för kostnadsredovisning. |
+| Statistikposter     | SUMMA(storlek)            | CAMDATAAggregatedStatisctialEntry | Storlek |                                                    |
 
 Följande tabell visar hur viktiga sammanlagda mått används för att skapa flera beräknade mått i innehållets datauppsättning.
 
@@ -114,16 +130,4 @@ Följande huvuddimensioner används som filter för att dela upp de sammanlagda 
 | Räkenskapskalendrar                   | Kalender, kalenderbeskrivning                                                                                       |
 | Räkenskapsår                       | Kalenderår                                                                                                        |
 | Räkenskapsperioder                     | Kalenderårsperioder                                                                                                 |
-
-## <a name="additional-resources"></a>Ytterligare resurser
-Nedan följer några användbara länkar som är relaterade till enheter och till att skapa innehåll för Power BI:
-
--   [Datatabeller](..\data-entities\data-entities.md)
--   [Skapa innehållspaket för organisationer](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
--   [Datamodeller med hjälp av Power BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
--   [Lägga till Power BI-rutor till arbetsytor](configure-power-bi-integration.md)
--   [Ställa in säkerhet för kostnadsredovisningsinnehåll för Power BI](setup-security-cost-accounting-content-pack.md)
-
-
-
 

@@ -3,14 +3,14 @@ title: "Skapa inköpsorder"
 description: "Den här artikeln innehåller en beskrivning av processen och alternativen för att skapa en inköpsorder manuellt."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PurchTable
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 93053
 ms.assetid: 25b1c9f1-20f8-4cf5-b87c-876e32f68846
 ms.search.region: Global
@@ -18,17 +18,20 @@ ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: c6c6b40d8934d1059c54678df8d4fc6530db1b24
+ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
+ms.openlocfilehash: fbf5337ac41ceae6e911c056db5226c8ed1cefb0
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
 
 
 ---
 
-# <a name="create-purchase-orders"></a>Skapa inköpsorder
+# Skapa inköpsorder
+<a id="create-purchase-orders" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
+
+[!include[retail name](../includes/retail-name.md)]
 
 
 Den här artikeln innehåller en beskrivning av processen och alternativen för att skapa en inköpsorder manuellt.
@@ -39,7 +42,8 @@ Du kan också skapa inköpsorder genom att kopiera rader från ett annat inköps
 
 Även om du kan skapa inköpsorder manuellt genereras de vanligtvis från andra processer. Order kan skapas automatiskt utifrån andra dokument såsom inköpsrekvisitioner. De kan också skapas som en del av huvudplaneringsprocessen via planerade inköpsorder. Om du använder inköpsavtal kan inköpsorder skapas av åtgärden **Frisläpp order**. Det finns även mer avancerade metoder för att skapa en inköpsorder automatiskt. Order kan exempelvis skapas när du använder direktleverans eller koncerninterna orderkedjor.
 
-## <a name="creating-a-purchase-order-header"></a>Skapa ett inköpsorderhuvud
+## Skapa ett inköpsorderhuvud
+<a id="creating-a-purchase-order-header" class="xliff"></a>
 När du skapar en ny inköpsorder visas en dialogruta där du kan ange den vanligaste informationen för inköpsorderhuvudet. När du klickar på **OK** för att stänga dialogrutan skapas ordern och du kan därefter lägga till ytterligare information i huvudet.  
 
 Den första detaljen du måste ta hänsyn till när du skapar en inköpsorder är ordertypen. **Inköpsorder** är den vanligaste typen. Om det krävs en kreditfaktura kan du dock använda typen **Returnerad order**.  
@@ -52,7 +56,8 @@ Om ett inköpsavtal är kopplat till ordern måste du ange den informationen i f
 
 Inköpsorderhuvudet innehåller även information om avgifter som gäller för hela ordern och inte enbart för enskilda rader. Avgifter kan läggas till i ordern automatiskt om automatiska avgifter har ställts in för leverantören eller leverantörens avgiftsgrupp. Du kan även lägga till avgifter manuellt i orderhuvudet genom att klicka på **Underhåll avgifter** i åtgärdsfönstret.
 
-## <a name="adding-purchase-order-lines"></a>Lägga till inköpsorderrader
+## Lägga till inköpsorderrader
+<a id="adding-purchase-order-lines" class="xliff"></a>
 En inköpsorder kan avse fysiska produkter eller tjänster. En inställning i lagermodellgruppen anger om ett visst artikelnummer gäller för en produkt eller en tjänst. Vanligtvis registreras den artikel som anskaffas med ett artikelnummer. Om ordern gäller för produkter eller tjänster som konsumeras direkt kan du dock även registrera artikeln med hjälp av en anskaffningskategori.  
 
 Inköpsorderrader innehåller många fält, men många av dessa fält har ett standardvärde eller ett värde som ärvs från orderhuvudet. Ytterligare fält ställs in när du väljer en produkt eller tjänst. Fälten för artikelnummer, kvantitet och begärt leveransdatum datum är de fält som oftast ställs in manuellt. Information om enhetspris och rabatter är också mycket viktig, men värdena i dessa fält bestäms ofta av handelsavtal eller inköpsavtal.  
@@ -69,8 +74,9 @@ Ibland kanske du vill dela upp kvantiteten du har beställt så att olika delar 
 
 Avgifter kan läggas till på inköpsorderrader automatiskt om automatiska avgifter har ställts in för leverantören eller avgiftsgruppen för leverantören och för artikeln eller avgiftsgruppen för artikeln. Kostnader läggs dock oftast till manuellt på orderradnivå. Om du vill lägga till en avgift kan du öppna sidan **Underhåll avgifter** med hjälp av åtgärden **Underhåll avgifter** i menyn **Ekonomi** i vyn **Rader**. Fördelen med att lägga till avgifter direkt på orderradnivå är att avgiften kan allokeras som en lagerkostnad. Använd debetalternativet **Artikel** för att ställa in avgiftskoder för kontoproduktkostnader. Dessa typer av avgifter ska allokeras från inköpsorderhuvudet till raderna innan ordern kan bekräftas. Du kanske vill allokera tillägg baserat på kvantiteten på varje rad. Avgiftskategorin påverkar även hur avgifter redovisas. Fasta avgifter till exempel anger ett fast belopp och avgifter i procent beräknas som en procentsats av nettobeloppet för orderraden. Inköpsorder kan tilldelas till en last och lasten kan innehålla en uppskattning av den förväntade utgiften för transportkostnader. Du kan allokera den här kostnaden från lasten tillbaka till inköpsorderraderna.
 
-## <a name="purchase-order-actions"></a>Inköpsorderåtgärder
-När du har lagt till huvudet och raderna i inköpsordern måste du ofta utföra ytterligare steg innan ordern är klar att bekräftas. Eftersom det finns så många alternativ kan det vara praktiskt att använda [Åtgärdssökning](/dynamics365/operations/get-started/action-search) för att hitta relevant menyalternativ.  
+## Inköpsorderåtgärder
+<a id="purchase-order-actions" class="xliff"></a>
+När du har lagt till huvudet och raderna i inköpsordern måste du ofta utföra ytterligare steg innan ordern är klar att bekräftas. Eftersom det finns så många alternativ kan det vara praktiskt att använda [Åtgärdssökning](/dynamics365/unified-operations/fin-and-ops/get-started/action-search) för att hitta relevant menyalternativ.  
 
 Du kan konfigurera produkter på ordern så att de har tilläggsartiklar. Tilläggsartiklar är produkter som måste eller kan köpas tillsammans med andra produkter. Tilläggsprodukter kan läggas till kostnadsfritt som medföljande produkter. Du kan även själv bestämma om du vill lägga till dem i ordern eller inte. Du kan granska tilläggsartiklarna efter att varje orderrad har lagts till. Du kommer dock troligtvis att tycka att det är enklare att granska och lägga till relevanta tilläggsartiklar för alla orderrader med hjälp av sidan **Tilläggsartiklar** som du kan öppna från åtgärdsfönstret.  
 
@@ -85,7 +91,8 @@ Inköpsorder kan konfigureras till att kräva att budgetmedel allokeras till ord
 
 Du kan behöva skjuta upp slutförandet av en inköpsorder. Du kan till exempel behöva ytterligare information om produkter eller tjänster eller så kanske du behöver få utgiften godkänd. Det finns flera sätt att hålla tillbaka en order. Till exempel kan du vänta med att bekräfta ordern. Om ett arbetsflöde för ändringshantering används ska du inte skicka ordern för godkännande. Om du måste blockera alla order för en viss leverantör kan du även markera leverantören som **Spärrad** för bearbetning i leverantörshuvudet. Det finns omständigheter som kan förhindra att ordern bearbetas. Bearbetning kan exempelvis förhindras om kreditgränser har överskridits eller om de budgetmedel som krävs inte är tillgängliga.
 
-<a name="see-also"></a>Se även
+Se även
+<a id="see-also" class="xliff"></a>
 --------
 
 [Översikt över inköpsorder](purchase-order-overview.md)
@@ -94,7 +101,7 @@ Du kan behöva skjuta upp slutförandet av en inköpsorder. Du kan till exempel 
 
 [Produktinleverans mot inköpsorder](product-receipt-against-purchase-orders.md)
 
-[Översikt över leverantörsfakturor](/dynamics365/operations/financials/accounts-payable/vendor-invoices-overview)
+[Översikt över leverantörsfakturor](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview)
 
 
 

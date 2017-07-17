@@ -3,13 +3,13 @@ title: Nya uppgiftguider (februari 2016)
 description: "Detta avsnitt visar uppgiftsguiderna som publicerades till Microsoft BPM-bibliotek från och med februari 2016.  De publicerade biblioteken innehåller (februari 2016) APQC Unified Library for Microsoft Dynamics 365 for Operations samt (februari 2016) Komma igång."
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations
+ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 102083
 ms.assetid: f50585e8-4ef6-4cd8-90d8-c8d6a65b22b8
 ms.search.region: global
@@ -17,27 +17,30 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 3c99753f22e537fdc026342dce12389fb9acc83a
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: cdad1d6c2466b47b07133a5335866ef6881609ca
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="new-task-guides-february-2016"></a>Nya uppgiftguider (februari 2016)
+# Nya uppgiftguider (februari 2016)
+<a id="new-task-guides-february-2016" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-Detta avsnitt visar uppgiftsguiderna som publicerades till Microsoft BPM-bibliotek från och med februari 2016.  De publicerade biblioteken innehåller (februari 2016) APQC Unified Library for Microsoft Dynamics 365 for Operations samt (februari 2016) Komma igång.
+Detta avsnitt visar uppgiftsguiderna som publicerades till Microsoft BPM-bibliotek från och med februari 2016.  De publicerade biblioteken innehåller APQC Unified Library for Microsoft Dynamics AX (februari 2016) samt Komma igång (februari 2016).
 
-<a name="task-guides-in-the-february-2016-apqc-unified-library-for-microsoft-dynamics-365-for-operations"></a>Uppgiftsguider i (februari 2016) APQC Unified Library för Microsoft Dynamics 365 for Operations
+Uppgiftsguuider i (februari 2016) APQC Unified Library för Microsoft Dynamics AX
+<a id="task-guides-in-the-february-2016-apqc-unified-library-for-microsoft-dynamics-ax" class="xliff"></a>
 ---------------------------------------------------------------------------------
 
-(Februari 2016) APQC Unified Library innehåller uppgiftsguider som är avsedda att användas för Hjälp med Dynamics 365 for Operations 7.0.0-version. Om du behöver lokaliserade versioner av uppgiftsguiderna är de tillgängliga i (maj 2016) APQC Unified Library för Microsoft Dynamics 365 for Operations. Mer information om hur du ansluter Hjälp-systemet till ett uppgiftsguidebibliotek hittar du i [Komma igång med Hjälp](help-overview.md).
+APQC Unified-biblioteket (februari 2016) innehåller de uppgiftsguider som är avsedda att användas för Hjälp med Dynamics AX 7.0.0-versionen. Om du behöver lokaliserade versioner av uppgiftsguiderna finns dessa tillgängliga i APQC Unified Library (maj 2016) för Microsoft Dynamics AX. Mer information om hur du ansluter Hjälp-systemet till ett uppgiftsguidebibliotek hittar du i [Komma igång med Hjälp](help-overview.md).
 
-### <a name="accounts-payable"></a>Leverantörsreskontra
+### Leverantörsreskontra
+<a id="accounts-payable" class="xliff"></a>
 
 |                                                           |                    |
 |-----------------------------------------------------------|--------------------|
@@ -52,7 +55,8 @@ Detta avsnitt visar uppgiftsguiderna som publicerades till Microsoft BPM-bibliot
 
  
 
-### <a name="accounts-receivable"></a>Kundreskontra
+### Kundreskontra
+<a id="accounts-receivable" class="xliff"></a>
 
 |                                                             |                    |
 |-------------------------------------------------------------|--------------------|
@@ -73,7 +77,8 @@ Detta avsnitt visar uppgiftsguiderna som publicerades till Microsoft BPM-bibliot
 
  
 
-### <a name="cash-and-bank-management"></a>Kassa- och bankhantering
+### Kassa- och bankhantering
+<a id="cash-and-bank-management" class="xliff"></a>
 
 |                                                                      |                    |
 |----------------------------------------------------------------------|--------------------|
@@ -101,7 +106,8 @@ Detta avsnitt visar uppgiftsguiderna som publicerades till Microsoft BPM-bibliot
 
  
 
-### <a name="compliance"></a>Regelefterlevnad
+### Regelefterlevnad
+<a id="compliance" class="xliff"></a>
 
 |                                            |                    |
 |--------------------------------------------|--------------------|
@@ -110,7 +116,8 @@ Detta avsnitt visar uppgiftsguiderna som publicerades till Microsoft BPM-bibliot
 
  
 
-### <a name="cost-management"></a>Kostnadshantering
+### Kostnadshantering
+<a id="cost-management" class="xliff"></a>
 
 |                                                                     |                    |
 |---------------------------------------------------------------------|--------------------|
@@ -123,7 +130,8 @@ Detta avsnitt visar uppgiftsguiderna som publicerades till Microsoft BPM-bibliot
 
  
 
-### <a name="countryregion-functionality"></a>Funktionen Land/region
+### Funktionen Land/region
+<a id="countryregion-functionality" class="xliff"></a>
 
 |                                                                                                        |                                 |
 |--------------------------------------------------------------------------------------------------------|---------------------------------|
@@ -265,7 +273,8 @@ Detta avsnitt visar uppgiftsguiderna som publicerades till Microsoft BPM-bibliot
 
  
 
-### <a name="develop-vision-and-strategy"></a>Utveckla vision och strategi
+### Utveckla vision och strategi
+<a id="develop-vision-and-strategy" class="xliff"></a>
 
 |                                                                                          |                    |
 |------------------------------------------------------------------------------------------|--------------------|
@@ -278,7 +287,8 @@ Detta avsnitt visar uppgiftsguiderna som publicerades till Microsoft BPM-bibliot
 
  
 
-### <a name="electronic-reporting"></a>Elektronisk rapportering
+### Elektronisk rapportering
+<a id="electronic-reporting" class="xliff"></a>
 
 |                                                 |                    |
 |-------------------------------------------------|--------------------|
@@ -291,7 +301,8 @@ Detta avsnitt visar uppgiftsguiderna som publicerades till Microsoft BPM-bibliot
 
  
 
-### <a name="expense-management"></a>Utläggshantering
+### Utläggshantering
+<a id="expense-management" class="xliff"></a>
 
 |                              |                    |
 |------------------------------|--------------------|
@@ -300,7 +311,8 @@ Detta avsnitt visar uppgiftsguiderna som publicerades till Microsoft BPM-bibliot
 
  
 
-### <a name="fixed-assets"></a>Anläggningstillgångar
+### Anläggningstillgångar
+<a id="fixed-assets" class="xliff"></a>
 
 |                                                           |                    |
 |-----------------------------------------------------------|--------------------|
@@ -323,7 +335,8 @@ Detta avsnitt visar uppgiftsguiderna som publicerades till Microsoft BPM-bibliot
 
  
 
-### <a name="general-ledger"></a>Huvudbok
+### Huvudbok
+<a id="general-ledger" class="xliff"></a>
 
 |                                                                   |                    |
 |-------------------------------------------------------------------|--------------------|
@@ -356,7 +369,8 @@ Detta avsnitt visar uppgiftsguiderna som publicerades till Microsoft BPM-bibliot
 
  
 
-### <a name="human-capital-management"></a>HR
+### HR
+<a id="human-capital-management" class="xliff"></a>
 
 |                                                                  |                    |
 |------------------------------------------------------------------|--------------------|
@@ -400,7 +414,8 @@ Detta avsnitt visar uppgiftsguiderna som publicerades till Microsoft BPM-bibliot
 
  
 
-### <a name="inventory-management"></a>Lagerhantering
+### Lagerhantering
+<a id="inventory-management" class="xliff"></a>
 
 |                                                                                   |                    |
 |-----------------------------------------------------------------------------------|--------------------|
@@ -424,7 +439,8 @@ Detta avsnitt visar uppgiftsguiderna som publicerades till Microsoft BPM-bibliot
 
  
 
-### <a name="manufacturing"></a>Tillverkning
+### Tillverkning
+<a id="manufacturing" class="xliff"></a>
 
 |                                                               |                    |
 |---------------------------------------------------------------|--------------------|
@@ -476,7 +492,8 @@ Detta avsnitt visar uppgiftsguiderna som publicerades till Microsoft BPM-bibliot
 
  
 
-### <a name="master-planning"></a>Huvudplanering
+### Huvudplanering
+<a id="master-planning" class="xliff"></a>
 
 |                                                   |                    |
 |---------------------------------------------------|--------------------|
@@ -489,7 +506,8 @@ Detta avsnitt visar uppgiftsguiderna som publicerades till Microsoft BPM-bibliot
 
  
 
-### <a name="organization-administration"></a>Organisationsadministration
+### Organisationsadministration
+<a id="organization-administration" class="xliff"></a>
 
 |                                           |                    |
 |-------------------------------------------|--------------------|
@@ -503,7 +521,8 @@ Detta avsnitt visar uppgiftsguiderna som publicerades till Microsoft BPM-bibliot
 
  
 
-### <a name="planning"></a>Planering
+### Planering
+<a id="planning" class="xliff"></a>
 
 |                        |                    |
 |------------------------|--------------------|
@@ -512,7 +531,8 @@ Detta avsnitt visar uppgiftsguiderna som publicerades till Microsoft BPM-bibliot
 
  
 
-### <a name="procurement-and-sourcing"></a>Anskaffning och källa
+### Anskaffning och källa
+<a id="procurement-and-sourcing" class="xliff"></a>
 
 |                                                                  |                    |
 |------------------------------------------------------------------|--------------------|
@@ -527,7 +547,8 @@ Detta avsnitt visar uppgiftsguiderna som publicerades till Microsoft BPM-bibliot
 
  
 
-### <a name="product-information-and-configuration"></a>Produktinformation och konfiguration
+### Produktinformation och konfiguration
+<a id="product-information-and-configuration" class="xliff"></a>
 
 |                                                       |                    |
 |-------------------------------------------------------|--------------------|
@@ -553,7 +574,8 @@ Detta avsnitt visar uppgiftsguiderna som publicerades till Microsoft BPM-bibliot
 
  
 
-### <a name="public-sector"></a>Offentlig sektor
+### Offentlig sektor
+<a id="public-sector" class="xliff"></a>
 
 |                                                                                         |                    |
 |-----------------------------------------------------------------------------------------|--------------------|
@@ -579,7 +601,8 @@ Detta avsnitt visar uppgiftsguiderna som publicerades till Microsoft BPM-bibliot
 
  
 
-### <a name="retail-and-commerce"></a>Butik och handel
+### Butik och handel
+<a id="retail-and-commerce" class="xliff"></a>
 
 |                                                                                           |                    |
 |-------------------------------------------------------------------------------------------|--------------------|
@@ -621,7 +644,8 @@ Detta avsnitt visar uppgiftsguiderna som publicerades till Microsoft BPM-bibliot
 
  
 
-### <a name="sales"></a>Försäljning
+### Försäljning
+<a id="sales" class="xliff"></a>
 
 |                                            |                    |
 |--------------------------------------------|--------------------|
@@ -644,7 +668,8 @@ Detta avsnitt visar uppgiftsguiderna som publicerades till Microsoft BPM-bibliot
 
  
 
-### <a name="sales-tax"></a>Moms
+### Moms
+<a id="sales-tax" class="xliff"></a>
 
 |                                                    |                    |
 |----------------------------------------------------|--------------------|
@@ -663,7 +688,8 @@ Detta avsnitt visar uppgiftsguiderna som publicerades till Microsoft BPM-bibliot
 
  
 
-### <a name="security"></a>Säkerhet
+### Säkerhet
+<a id="security" class="xliff"></a>
 
 |                                                         |                    |
 |---------------------------------------------------------|--------------------|
@@ -674,7 +700,8 @@ Detta avsnitt visar uppgiftsguiderna som publicerades till Microsoft BPM-bibliot
 
  
 
-### <a name="warehouse-and-transportation"></a>Lager- och transport
+### Lager- och transport
+<a id="warehouse-and-transportation" class="xliff"></a>
 
 |                                                                                   |                    |
 |-----------------------------------------------------------------------------------|--------------------|
@@ -699,7 +726,8 @@ Detta avsnitt visar uppgiftsguiderna som publicerades till Microsoft BPM-bibliot
 
  
 
-## <a name="task-guides-in-the-february-2016-getting-started-library"></a>Uppgiftsguider i (februari 2016) Komma igång-bibliotek
+## Uppgiftsguider i (februari 2016) Komma igång-bibliotek
+<a id="task-guides-in-the-february-2016-getting-started-library" class="xliff"></a>
 |                                                    |                    |
 |----------------------------------------------------|--------------------|
 | **BPM-rad**                                       | **Land/region** |
@@ -719,7 +747,8 @@ Detta avsnitt visar uppgiftsguiderna som publicerades till Microsoft BPM-bibliot
 
  
 
-<a name="see-also"></a>Se även
+Se även
+<a id="see-also" class="xliff"></a>
 --------
 
 [Nya eller uppdaterade uppgiftsguider (maj 2016)](new-updated-task-guides-available-may-2016.md)

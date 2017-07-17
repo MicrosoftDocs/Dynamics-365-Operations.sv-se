@@ -1,42 +1,45 @@
 ---
 title: Skapa och hantera attribut
-description: "Det här avsnittet ger en beskrivning av attributen i Microsoft Dynamics 365 for Operations. Med attribut kan du beskriva en produkt och dess egenskaper genom eget fält."
+description: "Det här avsnittet ger en beskrivning av attributen i Microsoft Dynamics 365 for Retail. Med attribut kan du beskriva en produkt och dess egenskaper genom eget fält."
 author: josaw1
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application User
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core, Retail
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 16461
 ms.assetid: 2b85491c-f830-4e79-a2cb-681b7ced6988
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: prabhup
 ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: eaee0edb4822a386c8781d9929999cea326f0a40
+ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
+ms.openlocfilehash: 4493c2f9e9e9dfe990f3b1670d3cd35e3bbaa38d
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/20/2017
+
 
 
 ---
 
-# <a name="create-and-manage-attributes"></a>Skapa och hantera attribut
+# Skapa och hantera attribut
+<a id="create-and-manage-attributes" class="xliff"></a>
 
 [!include[banner](includes/banner.md)]
 
 
-Det här avsnittet ger en beskrivning av attributen i Microsoft Dynamics 365 for Operations. Med attribut kan du beskriva en produkt och dess egenskaper genom eget fält.
+Det här avsnittet ger en beskrivning av attributen i Microsoft Dynamics 365 for Retail. Med attribut kan du beskriva en produkt och dess egenskaper genom eget fält.
 
 Med attribut kan du beskriva en produkt och dess egenskaper genom eget fält. Du kan till exempel ange produktens minnesstorlek och hårddiskkapaciteten och om produkten är energistjärnmärkt. Attribut som kan förknippas med olika retail enheter, såsom produktkategorier och butikskanaler och standardvärden kan ställas in för dem. Produkter ärva deras attribut och värden för de attribut som när de är associerade med produktkategorier eller butik. Standardvärdena kan åsidosättas på den enskilda produkten, vid butik nivå eller i en återförsäljare katalog.
 
-#### <a name="examples"></a>Exempel
+#### Exempel
+<a id="examples" class="xliff"></a>
 
 | Kategori   | Attribut                | Tillåtna värden          | Standardvärde |
 |------------|--------------------------|-----------------------------|---------------|
@@ -56,10 +59,11 @@ Med attribut kan du beskriva en produkt och dess egenskaper genom eget fält. Du
 | Projektion | antal projektionsrör    | 1–5                         | 3             |
 
 
-## <a name="attribute-type"></a>Attributtyp
+## Attributtyp
+<a id="attribute-type" class="xliff"></a>
   [![attributes-fixed-copy](./media/attributes-fixed-copy.png)](./media/attributes-fixed-copy.png) 
   
-Attribut baseras på attributtyper. Attributtyper identifiera vilken typ av data som kan anges för ett visst attribut. För närvarande stöder Microsoft Dynamics 365 for Operations följande attributtyper:
+Attribut baseras på attributtyper. Attributtyper identifiera vilken typ av data som kan anges för ett visst attribut. För närvarande stöder Microsoft Dynamics 365 for Retail följande attributtyper:
 
 -   **Valuta** – Denna attributtyp stöder valutavärden. Detta kan avgränsas (som kan stödja ett värde värde), eller det kan lämnas öppet.
 -   **DatumTid** -– Denna attributtyp stödjer datum- och tidsinställningarna. Detta kan avgränsas (som kan stödja ett värde värde), eller det kan lämnas öppet.
@@ -69,31 +73,39 @@ Attribut baseras på attributtyper. Attributtyper identifiera vilken typ av data
 -   **Boolesk** – Denna attributtyp stöder binära värden (**sant**/**falskt**).
 -   **Referens**.
 
-## <a name="attribute"></a>Attribut
+## Attribut
+<a id="attribute" class="xliff"></a>
   [![createandmanageattribute-8](./media/createandmanageattribute-8.png)](./media/createandmanageattribute-8.png) Utöver namn, egennamn, beskrivning och hjälptext, kan en eller flera av följande typer av information fångas i ett attribut:
 
 -   Standardvärde
 -   Attributmetadata, t.ex. metadata som anger huruvida egenskapen kan sökas, raffinerade eller sorteras
 
-## <a name="attribute-group"></a>Attributgrupp
+## Attributgrupp
+<a id="attribute-group" class="xliff"></a>
   [![createandmanageattribute-10](./media/createandmanageattribute-10.png)](./media/createandmanageattribute-10.png) När attributen har definierats kan de grupperas i attributgrupper. Attributgrupper ger grupperingar av individuella egenskaper, och kan tilldelas butikskategorier eller butikskanaler.
 
-## <a name="assigning-attribute-groups-to-retail-categories"></a>Tilldela attributgrupper till butikskategorier
+## Tilldela attributgrupper till butikskategorier
+<a id="assigning-attribute-groups-to-retail-categories" class="xliff"></a>
   [![createandmanageattribute-12](./media/createandmanageattribute-12.png)](./media/createandmanageattribute-12.png) En eller flera attributgrupper som kan associeras med kategorinoder i butikskategorihierarkin. När produkterna har kategoriserats, de ärver de attribut som ingår i attributgrupper.
 
-## <a name="assigning-attribute-groups-to-retail-stores"></a>Tilldela attributgrupper till butiker
+## Tilldela attributgrupper till butiker
+<a id="assigning-attribute-groups-to-retail-stores" class="xliff"></a>
   [![createandmanageattribute-13-1024x576](./media/createandmanageattribute-13-1024x576.png)](./media/createandmanageattribute-13-1024x576.png) En eller flera attributgrupper kan associeras med en eller flera butiker i butikskategorihierarkin. När produkterna har förädlats för specifika butiker, de ärver de attribut som ingår i attributgrupper.
 
-## <a name="overriding-attribute-values"></a>Åsidosätta attributvärden
-### <a name="at-the-product-level"></a>På produktnivå
+## Åsidosätta attributvärden
+<a id="overriding-attribute-values" class="xliff"></a>
+### På produktnivå
+<a id="at-the-product-level" class="xliff"></a>
 
   [![createandmanageattribute-14-1024x576](./media/createandmanageattribute-14-1024x576.png)](./media/createandmanageattribute-14-1024x576.png) Standardvärden för attribut kan åsidosättas på produktnivå (dvs. för enskilda produkter).
 
-### <a name="in-a-retail-catalog"></a>I en återförsäljarkatalog
+### I en återförsäljarkatalog
+<a id="in-a-retail-catalog" class="xliff"></a>
 
   [![createandmanageattribute-2](./media/createandmanageattribute-2.png)](./media/createandmanageattribute-2.png) Standardvärden för attribut kan åsidosättas för enskilda produkter i särskilda kataloger som är riktade till specifika butikskanaler.
 
-### <a name="at-the-retail-channel-level"></a>På butiksnivå
+### På butiksnivå
+<a id="at-the-retail-channel-level" class="xliff"></a>
 
   [![createandmanageattribute-1](./media/createandmanageattribute-1.jpg)](./media/createandmanageattribute-1.jpg) Standardvärden för attribut kan åsidosättas för enskilda produkter i särskilda kataloger som är riktade till specifika butikskanaler.
 

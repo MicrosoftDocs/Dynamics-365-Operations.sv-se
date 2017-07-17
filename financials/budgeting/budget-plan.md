@@ -1,9 +1,9 @@
 ---
 title: Budgetplanering
-description: "Målet med den här övningen är att ge en guidad översikt över funktionsuppdateringarna inom området Budgetplanering i Microsoft Dynamics 365 for Operations. Syftet med övningen är att illustrera ett kort konfigureringsexempel av budgetplaneringsmodulen och visa hur budgetplaneringen kan utföras med hjälp av den här konfigurationen.  Den här övningen fokuserar på följande verksamhetsprocesser eller -uppgifter: – Skapa organisationshierarki för budgetplanering och konfigurera användarsäkerhet – Definiera budgetplanscenarion, budgetplankolumner, layouter och Excel-mallar – Skapa och aktivera budgetplaneringsprocessen – Skapa budgetplandokument genom att hämta resultat från redovisningen – Använda allokeringar för att justera budgetplandokumentdata – Redigera budgetplandokumentdata i Excel"
+description: "Målet med den här övningen är att ge en guidad översikt över funktionsuppdateringarna inom området Budgetplanering i Finance and Operations, Enterprise edition Syftet med övningen är att illustrera ett kort konfigureringsexempel av budgetplaneringsmodulen och visa hur budgetplaneringen kan utföras med hjälp av den här konfigurationen.  Den här övningen fokuserar på följande verksamhetsprocesser eller -uppgifter: – Skapa organisationshierarki för budgetplanering och konfigurera användarsäkerhet – Definiera budgetplanscenarion, budgetplankolumner, layouter och Excel-mallar – Skapa och aktivera budgetplaneringsprocessen – Skapa budgetplandokument genom att hämta resultat från redovisningen – Använda allokeringar för att justera budgetplandokumentdata – Redigera budgetplandokumentdata i Excel"
 author: twheeloc
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,27 +18,30 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: dbe2b386de9e88af354015705e1444987a3f7e82
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 11b5ffacef06fd3e83c61cd14da11ad645eec335
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="budget-planning"></a>Budgetplanering
+# Budgetplanering
+<a id="budget-planning" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-Målet med den här övningen är att ge en guidad översikt över funktionsuppdateringarna inom området Budgetplanering i Microsoft Dynamics 365 for Operations. Syftet med övningen är att illustrera ett kort konfigureringsexempel av budgetplaneringsmodulen och visa hur budgetplaneringen kan utföras med hjälp av den här konfigurationen.  Den här övningen fokuserar på följande verksamhetsprocesser eller -uppgifter: – Skapa organisationshierarki för budgetplanering och konfigurera användarsäkerhet – Definiera budgetplanscenarion, budgetplankolumner, layouter och Excel-mallar – Skapa och aktivera budgetplaneringsprocessen – Skapa budgetplandokument genom att hämta resultat från redovisningen – Använda allokeringar för att justera budgetplandokumentdata – Redigera budgetplandokumentdata i Excel 
+Målet med den här övningen är att ge en guidad översikt över funktionsuppdateringarna inom området Budgetplanering i Finance and Operations, Enterprise edition Syftet med övningen är att illustrera ett kort konfigureringsexempel av budgetplaneringsmodulen och visa hur budgetplaneringen kan utföras med hjälp av den här konfigurationen.  Den här övningen fokuserar på följande verksamhetsprocesser eller -uppgifter: – Skapa organisationshierarki för budgetplanering och konfigurera användarsäkerhet – Definiera budgetplanscenarion, budgetplankolumner, layouter och Excel-mallar – Skapa och aktivera budgetplaneringsprocessen – Skapa budgetplandokument genom att hämta resultat från redovisningen – Använda allokeringar för att justera budgetplandokumentdata – Redigera budgetplandokumentdata i Excel 
 
-<a name="prerequisites"></a>Förutsättningar 
+Förutsättningar
+<a id="prerequisites" class="xliff"></a> 
 ------------------
 
-I den här självstudien måste du ha tillgång till Dynamics 365 for Operations-miljön med Contoso-demonstrationsdata och vara administratör för instansen. Använd inte i webbläsaren i privat läge under övningen – logga ut från alla andra konton i webbläsaren och logga sedan in med administratörsautentiseringsuppgifter för Dynamics 365 for Operations. När du loggar in i Dynamics 365 for Operations **MÅSTE** du markera kryssrutan Håll mig inloggad. Då skapas en beständig cookie som Excel-appen behöver. Om du loggar in i Dynamics 365 for Operations med en annan webbläsare än IE, uppmanas du att logga in via Excel-appen. När du klickar på Logga in i Excel-appen visas ett IE-popup-fönster och när du loggar in **MÅSTE** du markera kryssrutan Håll mig inloggad. Om det inte händer något när du klickar på logga in i Excel-appen rensar du cookiecachen i IE.
+I den här självstudien måste du ha tillgång till Finance and Operations-miljön med Contoso-demonstrationsdata och vara administratör för instansen. Använd inte i webbläsaren i privat läge under övningen – logga ut från alla andra konton i webbläsaren och logga sedan in med administratörsautentiseringsuppgifter för Finance and Operations. När du loggar in i Finance and Operations **MÅSTE** du markera kryssrutan Håll mig inloggad. Då skapas en beständig cookie som Excel-appen behöver. Om du loggar in i Finance and Operations med en annan webbläsare än IE, uppmanas du att logga in via Excel-appen. När du klickar på Logga in i Excel-appen visas ett IE-popup-fönster och när du loggar in **MÅSTE** du markera kryssrutan Håll mig inloggad. Om det inte händer något när du klickar på logga in i Excel-appen rensar du cookiecachen i IE.
 
-## <a name="scenario-overview"></a>**Scenarioöversikt**
+## **Scenarioöversikt**
+<a id="scenario-overview" class="xliff"></a>
 Julia arbetar som ekonomichef i Contoso Entertainment Systems i Tyskland (DEMF). Eftersom FY2016 närmar sig, måste hon arbeta med företagets budget för det kommande året. Budgetförberedelserna ser ut så här:
 
 1.  Julia använder föregående års faktiska belopp som utgångspunkt för att skapa budgeten.
@@ -53,10 +56,12 @@ Julia använder följande Excel-mall för att förbereda budgeten:
 
 [![Excel-mall](./media/screenshot2-1024x352.png)](./media/screenshot2.png)
 
-<a name="exercise-1-configuration"></a>Övning 1: Konfiguration
+Övning 1: Konfiguration
+<a id="exercise-1-configuration" class="xliff"></a>
 =========================
 
-## <a name="task-1-create-organizational-hierarchy"></a>**Uppgift 1: Skapa en organisationshierarki**
+## **Uppgift 1: Skapa en organisationshierarki**
+<a id="task-1-create-organizational-hierarchy" class="xliff"></a>
 Eftersom all budgetbearbetning bara görs på finansavdelningen, skapar Julia en mycket enkel hierarki som bara består av finansavdelningen. 1.1. Navigera till organisationshierarkier (Organisationsadministration &gt; Organisationer &gt; Organisationshierarkier) och klickar på knappen Nytt
 
 ![Organisationshierarki](./media/screenshot3.png) 
@@ -85,7 +90,8 @@ Eftersom all budgetbearbetning bara görs på finansavdelningen, skapar Julia en
 
 [![Giltighetsdatum](./media/screenshot9.png)](./media/screenshot9.png)
 
-## <a name="task-2-configure-user-security"></a>Uppgift 2: Konfigurera användarsäkerhet
+## Uppgift 2: Konfigurera användarsäkerhet
+<a id="task-2-configure-user-security" class="xliff"></a>
 Budgetplaneringen använder särskilda säkerhetsprinciper för att kunna konfigurera åtkomst till budgetplandata. Julia måste ge åtkomst till finansbudgetplaner till sig själv. 
 
 2.1. Växla till kontexten för juridisk person DEMF: 
@@ -110,7 +116,8 @@ Budgetplaneringen använder särskilda säkerhetsprinciper för att kunna konfig
 
 [![Ge tillgång till](./media/screenshot14.png)](./media/screenshot14.png)
 
-## <a name="task-3-create-scenarios"></a>Uppgift 3: Skapa scenarier
+## Uppgift 3: Skapa scenarier
+<a id="task-3-create-scenarios" class="xliff"></a>
 3.1. Navigera till Budgetering&gt;Inställningar &gt; Budgetplanering &gt; Budgetplaneringskonfiguration. På scenariosidan kan du se scenarierna som vi ska använda i den här labbövningen: Utfall föregående år och Budgeterat. 
 
 *Obs! Du kan skapa nya scenarier för den här övningen och använda dem istället.* 
@@ -119,7 +126,8 @@ Budgetplaneringen använder särskilda säkerhetsprinciper för att kunna konfig
 
 *Obs! Eftersom Julia inte använder den formella godkännandeprocessen för budgetförberedelser hoppar vi över inställningsstegen för arbetsflöden, faser och arbetsflödesfaser i övningen. I stället använder vi den befintliga inställningen för automatiskt godkända arbetsflöden. Se appendix för denna arbetsflödeskonfiguration.*
 
-## <a name="task-4-create-budget-plan-columns"></a>Uppgift 4: Skapa budgetplankolumner
+## Uppgift 4: Skapa budgetplankolumner
+<a id="task-4-create-budget-plan-columns" class="xliff"></a>
 Budgetplankolumner är antingen monetära eller kvantitetsbaserade och kan användas i budgetplandokumentlayouten. I vårt exempel måste du skapa en kolumn för utfall föregående år och tolv kolumner som ska representera varje månad i ett budgeterat år. Kolumner kan skapas antingen genom att klicka på knappen Lägg till och sedan ange värden eller med hjälp av Datatabell. I den här övningen ska vi använda datatabellen för att fylla i värdena. 
 
 4.1. Öppna sidan Kolumner under Budgetering&gt;Inställningar &gt; Budgetplanering &gt; Budgetplaneringskonfiguration. Klicka på Office-knappen överst till höger i formuläret och välj Kolumner (ofiltrerade) 
@@ -148,11 +156,12 @@ Budgetplankolumner är antingen monetära eller kvantitetsbaserade och kan anvä
 
 [![Autofyll](./media/screenshot22.png)](./media/screenshot22.png) 
 
-4.7. Återgå till Dynamics 365 for Operations och uppdatera sidan. Publicerade värden visas i Dynamics 365 for Operations. 
+4.7. Återgå till Finance and Operations och uppdatera sidan. Publicerade värden visas i Finance and Operations. 
 
 [![Förnya](./media/screenshot23.png)](./media/screenshot23.png)
 
-## <a name="task-5-create-budget-plan-document-layouts-and-templates"></a>Uppgift 5: Skapa mallar och dokumentlayouter för budgetplanen
+## Uppgift 5: Skapa mallar och dokumentlayouter för budgetplanen
+<a id="task-5-create-budget-plan-document-layouts-and-templates" class="xliff"></a>
 Layout definierar hur rutnätet med budgetplanens dokumentrader ser ut när du öppnar budgetplansdokumentet. Det går också att ändra layouten för budgetplandokumentet för att se samma uppgifter ur olika vinklar. Nu när Julia har definierat kolumnerna som ska användas i budgetplandokumentet, ska hon skapa en dokumentlayout för budgetplanen. Den ska se ut om Excel-tabellen hon använde när hon skapade budgetdata (se avsnittet Översikt över scenario i övningen) 
 
 5.1. Öppna sidan Layouter i Budgetering&gt;Inställningar &gt; Budgetplanering &gt; Budgetplaneringskonfiguration. Skapa en ny layout för den månatliga budgetpost:
@@ -172,7 +181,8 @@ Baserat på layoutdefinitionen av budgetplanen kan vi skapa en Excel-mall som sk
 
 5.3. &lt; Valfritt steg&gt; Ändra Excel-mallen för att göra den mer användarvänlig – lägg till formler för summor, rubrikfält, formatering osv. Spara ändringarna och skicka filen till budgetplanlayouten genom att klicka på Layout &gt; Överför [![Överför](./media/screenshot26.png)](./media/screenshot26.png)
 
-## <a name="task-6-create-a-budget-planning-process"></a>Uppgift 6: Skapa en budgetplaneringsprocess
+## Uppgift 6: Skapa en budgetplaneringsprocess
+<a id="task-6-create-a-budget-planning-process" class="xliff"></a>
 Julia behöver skapa och aktivera en ny budgetplaneringsprocess som kombinerar alla inställningar ovan för att börja registrera budgetplaner. Budgetplaneringsprocessen definiera vilka budgeteringsorganisationer, arbetsflöden, layouter och mallar som ska användas för att skapa budgetplaner. 
 
 6.1. Navigera till Budgetering &gt; Inställningar &gt; Budgetplanering &gt; Budgetplaneringsprocess och skapa en ny post.
@@ -193,10 +203,12 @@ Julia behöver skapa och aktivera en ny budgetplaneringsprocess som kombinerar a
 
 [![Aktivera](./media/screenshot28.png)](./media/screenshot28.png)
 
-<a name="exercise-2-process-simulation"></a>Övning 2: Processimulering
+Övning 2: Processimulering
+<a id="exercise-2-process-simulation" class="xliff"></a>
 ==============================
 
-## <a name="task-7-generate-initial-data-for-budget-plan-from-general-ledger"></a>Uppgift 7: Generera initiala data för budgetplan från redovisning
+## Uppgift 7: Generera initiala data för budgetplan från redovisning
+<a id="task-7-generate-initial-data-for-budget-plan-from-general-ledger" class="xliff"></a>
 7.1. Navigera till Budgetering &gt; Periodisk &gt; Generera budgetplan från huvudbok. Fyll i de periodiska processparametrarna och klicka på Generera. 
 
 [![Generera](./media/screenshot29.png)](./media/screenshot29.png) 
@@ -209,7 +221,8 @@ Julia behöver skapa och aktivera en ny budgetplaneringsprocess som kombinerar a
 
 [![Budgetplandokument](./media/screenshot31.png)](./media/screenshot31.png)
 
-## <a name="task-8-create-current-year-budget-based-on-previous-year-actuals"></a>Uppgift 8: Skapa innevarande års budget baserad på utfall för tidigare år
+## Uppgift 8: Skapa innevarande års budget baserad på utfall för tidigare år
+<a id="task-8-create-current-year-budget-based-on-previous-year-actuals" class="xliff"></a>
 Allokeringsmetoder kan användas i budgetplaner för att enkelt kopiera information för budgetplaner från ett scenario till ett annat eller fördela dem över perioder eller allokera till dimensioner. Vi använder allokeringar för att skapa innevarande års budget från tidigare års utfall. 
 
 8.1. Välj alla rader i rutnätet i budgetplandokumentet och klicka på knappen för allokering av budget 
@@ -224,7 +237,8 @@ De faktiska beloppen för föregående kopieras till budgeten för aktuellt år 
 
 [![Försäljningskurva](./media/screenshot34.png)](./media/screenshot34.png)
 
-## <a name="task-9-adjust-budget-plan-document-using-excel-and-finalize-the-document"></a>Uppgift 9: Justera budgetplandokumentet med hjälp av Excel och slutför dokumentet
+## Uppgift 9: Justera budgetplandokumentet med hjälp av Excel och slutför dokumentet
+<a id="task-9-adjust-budget-plan-document-using-excel-and-finalize-the-document" class="xliff"></a>
 9.1. Klicka på knappen för kalkylbladet för att öppna dokumentinnehållet i Excel
 
 [![Excel](./media/screenshot35.png)](./media/screenshot35.png)
@@ -233,16 +247,18 @@ De faktiska beloppen för föregående kopieras till budgeten för aktuellt år 
 
 [![Publicera](./media/screenshot36.png)](./media/screenshot36.png)
 
-9.3. Återgå till budgetplandokument i Dynamics 365 for Operations. Klicka på Arbetsflöde &gt; Skicka för att godkänna dokumentet automatiskt
+9.3. Återgå till budgetplandokument i Finance and Operations. Klicka på Arbetsflöde &gt; Skicka för att godkänna dokumentet automatiskt
 
 [![Automatiskt godkänd](./media/screenshot37.png)](./media/screenshot37.png) 
 
 När arbetsflödet har slutförts, ändras steget för budgetplandokument till Godkänt. [![Godkänd](./media/screenshot38.png)](./media/screenshot38.png)
 
-<a name="appendix"></a>Bilaga
+Bilaga
+<a id="appendix" class="xliff"></a>
 ========
 
-### <a name="auto-approve-workflow-configuration"></a>Konfiguration för automatiskt godkännande arbetsflöde
+### Konfiguration för automatiskt godkännande arbetsflöde
+<a id="auto-approve-workflow-configuration" class="xliff"></a>
 
 A. Budgetering &gt; Inställningar &gt; Budgetplanering &gt; Budgeteringsarbetsflöden Skapa ett nytt arbetsflöde med hjälp av mallen Budgetplaneringsarbetsflöden:
 

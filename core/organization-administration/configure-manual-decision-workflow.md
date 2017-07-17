@@ -3,13 +3,13 @@ title: "Konfigurera ett manuellt beslut i ett arbetsflöde"
 description: "I det här avsnittet beskrivs hur du konfigurerar olika egenskaper för ett manuellt beslut."
 author: sericks007
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 192101
 ms.assetid: 0bccad77-1a44-4f08-967b-12c62c02afc7
 ms.search.region: Global
@@ -17,15 +17,16 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: ac86ffa794b5fd92ca9aba24537fbc05057fe824
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: 6ea8b060741ea94af16861d5bb52894a577e5521
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="configure-a-manual-decision-in-a-workflow"></a>Konfigurera ett manuellt beslut i ett arbetsflöde
+# Konfigurera ett manuellt beslut i ett arbetsflöde
+<a id="configure-a-manual-decision-in-a-workflow" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
@@ -34,13 +35,15 @@ I det här avsnittet beskrivs hur du konfigurerar olika egenskaper för ett manu
 
 Högerklicka det manuella beslutet och klicka sedan på **Egenskaper** för att öppna sidan **Egenskaper** om du vill konfigurera ett manuellt beslut i arbetsflödesredigeraren. Använd sedan följande procedurer när du vill konfigurera egenskaperna för det manuella beslutet.
 
-## <a name="name-the-decision"></a>Namnge beslutet
+## Namnge beslutet
+<a id="name-the-decision" class="xliff"></a>
 Följ dessa steg när du vill ange ett namn för det manuella beslutet.
 
 1.  Klicka på **Grundinställningar** i det vänstra fönstret.
 2.  Ange ett unikt namn för det manuella beslutet i fältet **Namn**.
 
-## <a name="enter-a-subject-line-and-instructions"></a>Ange en ämnesrad och instruktioner
+## Ange en ämnesrad och instruktioner
+<a id="enter-a-subject-line-and-instructions" class="xliff"></a>
 Du måste ange en ämnesrad och instruktioner för användare som är tilldelade det manuella beslutet. Om du till exempel konfigurerar ett beslut för inköpsrekvisitioner kan användaren som tilldelats beslutet se ämnesraden och instruktionerna på sidan **Inköpsrekvisitioner**. Ämnesraden visas i ett meddelandefält på sidan. Användaren kan sedan klicka på ikonen i meddelandefältet för att visa instruktionerna. Följ dessa steg när du vill ange en ämnesrad och instruktioner.
 
 1.  Klicka på **Grundinställningar** i det vänstra fönstret.
@@ -74,8 +77,9 @@ Du måste ange en ämnesrad och instruktioner för användare som är tilldelade
     5.  Om du vill anpassa texten kan du infoga platshållare enligt vad som beskrivs i steg 6.
     6.  Klicka på **Stäng**.
 
-## <a name="specify-the-possible-outcomes-of-a-decision"></a>Ange möjliga resultat av ett beslut
-Vanligtvis ställs en fråga till beslutsfattaren när ett dokument tilldelas till en beslutsfattare. Svaret på frågan är oftast **Ja**eller **Nej** eller **Sant** eller **Falskt**. Gör på följande sätt när du vill ange möjliga resultat av det manuella beslutet.
+## Ange möjliga resultat av ett beslut
+<a id="specify-the-possible-outcomes-of-a-decision" class="xliff"></a>
+Vanligtvis ställs en fråga till beslutsfattaren när ett dokument tilldelas till en beslutsfattare. Svaret på frågan är oftast **Ja** eller **Nej** eller **Sant** eller **Falskt**. Gör på följande sätt när du vill ange möjliga resultat av det manuella beslutet.
 
 1.  Klicka på **Grundinställningar** i det vänstra fönstret.
 2.  Ange namnet på resultatet eller alternativet i fliken **Resultat**, i fältet **Resultat 1**.
@@ -94,7 +98,8 @@ Vanligtvis ställs en fråga till beslutsfattaren när ett dokument tilldelas ti
     4.  I fältet **Översatt text** anger du texten.
     5.  Klicka på **Stäng**.
 
-## <a name="specify-when-notifications-are-sent"></a>Ange när meddelanden ska skickas
+## Ange när meddelanden ska skickas
+<a id="specify-when-notifications-are-sent" class="xliff"></a>
 Du kan skicka meddelanden till andra när ett beslut har fattats, delegerats eller eskalerats. Följ dessa steg för att ange när meddelanden skickas och vem de skickas till.
 
 1.  Klicka på **Meddelanden** i det vänstra fönstret.
@@ -152,10 +157,10 @@ Du kan skicka meddelanden till andra när ett beslut har fattats, delegerats ell
     </tr>
     <tr class="odd">
     <td>Användare</td>
-    <td>Specifika Microsoft Dynamics 365 for Operations-användare</td>
+    <td>Specifika användare av Microsoft Dynamics 365 for Finance and Operations</td>
     <td><ol>
     <li>Klicka på fliken <strong>Användare</strong> när du har valt <strong>Användare</strong>.</li>
-    <li>Listan <strong>Tillgängliga användare</strong> innehåller alla Dynamics 365 for Operations-användare. Markera de användare som du vill skicka meddelanden till, och flytta sedan dessa användare till listan <strong>Markerade användare</strong>.</li>
+    <li>Listan <strong>Tillgängliga användare</strong> innehåller alla Finance and Operations-användare. Markera de användare som du vill skicka meddelanden till, och flytta sedan dessa användare till listan <strong>Markerade användare</strong>.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -163,7 +168,8 @@ Du kan skicka meddelanden till andra när ett beslut har fattats, delegerats ell
 
 8.  Upprepa stegen 3 till och med 7 för varje enskild händelse du valde i steg 2.
 
-## <a name="assign-a-decision"></a>Tilldela ett beslut
+## Tilldela ett beslut
+<a id="assign-a-decision" class="xliff"></a>
 Följ dessa steg för att ange vem som ska tilldelas ett manuellt beslut.
 
 1.  Klicka på **Tilldelning** i det vänstra fönstret.
@@ -215,10 +221,10 @@ Följ dessa steg för att ange vem som ska tilldelas ett manuellt beslut.
     </tr>
     <tr class="even">
     <td>Användare</td>
-    <td>Specifika Dynamics 365 for Operations-användare</td>
+    <td>Specifika Finance and Operations-användare.</td>
     <td><ol>
     <li>Klicka på fliken <strong>Användare</strong> när du har valt <strong>Användare</strong>.</li>
-    <li>Listan <strong>Tillgängliga användare</strong> innehåller alla Dynamics 365 for Operations-användare. Markera de användare som ska tilldelas beslutet och flytta sedan dessa till listan <strong>Markerade användare</strong>.</li>
+    <li>Listan <strong>Tillgängliga användare</strong> innehåller alla Finance and Operations-användare. Markera de användare som ska tilldelas beslutet och flytta sedan dessa till listan <strong>Markerade användare</strong>.</li>
     </ol></td>
     </tr>
     <tr class="odd">
@@ -249,7 +255,8 @@ Följ dessa steg för att ange vem som ska tilldelas ett manuellt beslut.
 
     Om användaren inte fattar beslutet inom den tilldelade tiden, är beslutet försenat. Ett beslut som är försenat eskaleras, baserat på de alternativ som du väljer i avsnittet **Eskalering** på sidan.
 
-## <a name="specify-what-happens-when-a-decision-is-overdue"></a>Ange vad som ska hända när ett beslut är försenat
+## Ange vad som ska hända när ett beslut är försenat
+<a id="specify-what-happens-when-a-decision-is-overdue" class="xliff"></a>
 Om en användare inte fattar beslutet inom den tilldelade tiden, är beslutet försenat. Ett beslut som är försenat kan eskaleras eller automatiskt tilldelas en annan användare. Följ dessa steg för att eskalera beslutet om det är försenat.
 
 1.  Klicka på **Eskalering** i det vänstra fönstret.
@@ -301,10 +308,10 @@ Om en användare inte fattar beslutet inom den tilldelade tiden, är beslutet f�
     </tr>
     <tr class="odd">
     <td>Användare</td>
-    <td>Specifika Dynamics 365 for Operations-användare</td>
+    <td>Specifika Finance and Operations-användare.</td>
     <td><ol>
     <li>Klicka på fliken <strong>Användare</strong> när du har valt <strong>Användare</strong>.</li>
-    <li>Listan <strong>Tillgängliga användare</strong> innehåller alla Dynamics 365 for Operations-användare. Markera de användare som beslutet ska eskaleras till, och flytta sedan dessa till listan <strong>Markerade användare</strong>.</li>
+    <li>Listan <strong>Tillgängliga användare</strong> innehåller alla Finance and Operations-användare. Markera de användare som beslutet ska eskaleras till, och flytta sedan dessa till listan <strong>Markerade användare</strong>.</li>
     </ol></td>
     </tr>
     </tbody>
@@ -320,7 +327,8 @@ Om en användare inte fattar beslutet inom den tilldelade tiden, är beslutet f�
 5.  Upprepa steg 3 och 4 för varje användare som ska läggas till i eskaleringsvägen. Du kan ändra alla användarnas ordningsföljd.
 6.  Om användarna i eskaleringsvägen inte fattar beslutet inom den tillåtna tidsperioden, kommer systemet att fatta beslutet. Om du vill ange vilket alternativ som systemet väljer, välj då raden **Åtgärd** och sedan en åtgärd i fliken **Slutåtgärd**.
 
-## <a name="set-a-time-limit"></a>Ange en tidsgräns
+## Ange en tidsgräns
+<a id="set-a-time-limit" class="xliff"></a>
 Följ dessa steg om beslutet måste fattas inom en viss tid. **Obs!** De alternativ som du väljer i denna procedur åsidosätter alternativen som du valde i avsnitten **Tilldelning** och **Eskalering** på sidan.
 
 1.  Klicka på **Avancerade inställningar** i det vänstra fönstret.

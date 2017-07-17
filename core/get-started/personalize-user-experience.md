@@ -1,16 +1,16 @@
 ---
 title: "Anpassa användarupplevelsen"
-description: "Den här artikeln beskriver hur du kan personanpassa Microsoft Dynamics 365 for Operations."
+description: "Den här artikeln beskriver hur du kan anpassa Microsoft Dynamics 365 for Finance and Operations."
 author: RobinARH
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 06/20/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: SysUserSetup
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 62363
 ms.assetid: 57b445d7-3e9e-4228-8728-f63b9dbd77a3
 ms.search.region: Global
@@ -18,44 +18,48 @@ ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 689efef6ffa10bbee30cd734f3f09ba20957834d
+ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
+ms.openlocfilehash: b338a930777a5945eb6318dc8066fb3649c79dbe
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
 
-# <a name="personalize-the-user-experience"></a>Anpassa användarupplevelsen
+# Anpassa användarupplevelsen
+<a id="personalize-the-user-experience" class="xliff"></a>
 
 [!include[banner](../includes/banner.md)]
 
 
-Den här artikeln beskriver hur du kan personanpassa Microsoft Dynamics 365 for Operations.
+Den här artikeln beskriver hur du kan anpassa Microsoft Dynamics 365 for Finance and Operations.
 
-Det finns många typer av anpassningsalternativ i Microsoft Dynamics 365 for Operations. Vissa anpassningsalternativ är val som du gör i en lista över alternativ på en inställningssida. Vissa anpassningsalternativ är implicita, exempelvis Dynamics 365 for Operations håller koll på bredderna på rutnätskolumner om du justerar dem, och det expanderade/komprimerade läget för snabbflikar. Andra anpassningsalternativ är tydlig. För explicita anpassningsalternativ anger du en interaktiv anpassningsläget och ändra utseende på en sida genom att direkt administrera så att element eller agera på sidan. 
+Det finns många typer av anpassningsalternativ i Microsoft Dynamics 365 for Finance and Operations. Vissa anpassningsalternativ är val som du gör i en lista över alternativ på en inställningssida. Vissa anpassningsalternativ är implicita, exempelvis håller Finance and Operations koll på bredderna på rutnätskolumner om du justerar dem, och på det expanderade/komprimerade läget för snabbflikar. Andra anpassningsalternativ är tydlig. För explicita anpassningsalternativ anger du en interaktiv anpassningsläget och ändra utseende på en sida genom att direkt administrera så att element eller agera på sidan. 
 
-Alla anpassningsalternativ, av något slag, som en användare gör i Dynamics 365 for Operations är endast för den användaren, oavsett vilket företag som användaren interagerar med. Ändringar som en användare gör att en sida inte påverka andra användare i systemet.
+Alla anpassningsalternativ, oavsett slag, som en användare gör i Finance and Operations gäller endast för den användaren, oavsett vilket företag som användaren interagerar med. Ändringar som en användare gör att en sida inte påverka andra användare i systemet.
 
-## <a name="systemwide-options-for-the-current-user"></a>Systemtäckande alternativ för aktuell användare
-I navigeringsfältet hittar du en växel bilden som heter **Inställningar**knappen meny. Öppna **menyn Inställningar** visas ett antal val. Val av **Alternativ** öppnar användarens **Alternativ** sida. Här finns det fyra alternativflikar: **Visuell**, **Inställningar**, **Konto**, och **Arbetsflöde**.
+## Systemtäckande alternativ för aktuell användare
+<a id="systemwide-options-for-the-current-user" class="xliff"></a>
+I navigeringsfältet hittar du en växel bilden som heter **Inställningar** knappen meny. Öppna **menyn Inställningar** visas ett antal val. Val av **Alternativ** öppnar användarens **Alternativ** sida. Här finns det fyra alternativflikar: **Visuell**, **Inställningar**, **Konto**, och **Arbetsflöde**.
 
--   **Visuellt:**Används för att välja ett färgtema och standardstorleken för element på dina sidor.
--   **Inställningar:** Här kan du välja standardinställningar för varje gång du öppnar Dynamics 365 for Operations, inklusive företag, första sidan, och standardläge för visa/redigera (som avgör om en sida är låst för visning eller öppnas för redigering varje gång du öppnar den). Du skar finner dessutom språk, tidszon och datum, tid och antal formatalternativ. Slutligen den här sidan innehåller ett antal diverse inställningar som varierar från version till version.
--   **Konto:**Används för att ange ditt användar-ID och andra kontorelaterade inställningar.
--   **Arbetsflöde:**här kan du välja arbetsflödesrelaterade alternativ.
+-   **Visuellt:** Används för att välja ett färgtema och standardstorleken för element på dina sidor.
+-   **Inställningar:** Här kan du välja standardinställningar för varje gång du öppnar Finance and Operations, inklusive företag, startsida, och standardläge för visning/redigering (som avgör om en sida är låst för visning eller öppnas för redigering varje gång du öppnar den). Du skar finner dessutom språk, tidszon och datum, tid och antal formatalternativ. Slutligen den här sidan innehåller ett antal diverse inställningar som varierar från version till version.
+-   **Konto:** Används för att ange ditt användar-ID och andra kontorelaterade inställningar.
+-   **Arbetsflöde:** här kan du välja arbetsflödesrelaterade alternativ.
 
-## <a name="implicit-personalizations"></a>Uttryckliga anpassningsalternativ
+## Uttryckliga anpassningsalternativ
+<a id="implicit-personalizations" class="xliff"></a>
 Uttryckliga anpassningsalternativ är de anpassningsalternativ som du utför enkelt genom att interagera med vissa kontroller som kommer ihåg deras aktuella synliga. 
 
-**Rutnätskolumner:** Du kan justera bredden på en kolumn i en lista genom att välja storlekssortering bar till vänster eller till höger om kolumnrubriken och skjuta den åt vänster eller höger till önskad bredd. Dynamics 365 for Operations kommer att lagra bredden som du vill ha och visa den kolumnen med den bredden varje gång du öppnar sidan med den listan. 
+**Rutnätskolumner:** Du kan justera bredden på en kolumn i en lista genom att välja storlekssortering bar till vänster eller till höger om kolumnrubriken och skjuta den åt vänster eller höger till önskad bredd. Finance and Operations kommer att lagra bredden som du vill ha, och visa den kolumnen med den bredden varje gång du öppnar sidan med den listan. 
 
-**Snabbflikar:** Vissa sidor har expanderbara avsnitt som kallas snabbflikar. Dynamics 365 for Operations kommer att lagra vilka snabbflikar som du har expanderat och vilka snabbflikar som du har komprimerat. Varje gång du kommer tillbaka till sidan, samma snabbflikens kommer att utökas eller krympas baserat på den senaste gången du använde dem. I denna artikel beskriver vi hur du vill ändra ordning på snabbfliken sektioner. I vissa fall gör komprimering av en snabbflik att prestanda förbättras eftersom Dynamics 365 for Operations inte behöver hämta informationen för snabbfliken förrän snabbfliken expanderas. 
+**Snabbflikar:** Vissa sidor har expanderbara avsnitt som kallas snabbflikar. Finance and Operations kommer att lagra de snabbflikar som du har expanderat samt de snabbflikar som du har komprimerat. Varje gång du kommer tillbaka till sidan, samma snabbflikens kommer att utökas eller krympas baserat på den senaste gången du använde dem. I denna artikel beskriver vi hur du vill ändra ordning på snabbfliken sektioner. I vissa fall gör komprimering av en snabbflik att prestandan förbättras, detta eftersom Finance and Operations inte behöver hämta informationen för snabbfliken förrän snabbfliken expanderas. 
 
-**Faktarutor:** Vissa sidor har ett avsnitt som kallas faktaruta. Den här rutan innehåller skrivskyddad information relaterad till det aktuella ämnet på sidan. Varje avsnitt i faktaruta rutan kallas en faktaruta. Du kan expandera eller komprimera en faktaruta, och Dynamics 365 for Operations sparar inställningarna. I vissa fall gör komprimering av en faktaruta att prestanda förbättras eftersom Dynamics 365 for Operations inte behöver hämta informationen för faktarutan förrän faktarutan expanderas.
+**Faktarutor:** Vissa sidor har ett avsnitt som kallas faktaruta. Den här rutan innehåller skrivskyddad information relaterad till det aktuella ämnet på sidan. Varje avsnitt i faktaruta rutan kallas en faktaruta. Du kan expandera eller komprimera en faktaruta, så kommer Finance and Operations att spara inställningarna. I vissa fall gör komprimering av en faktaruta att prestanda förbättras, detta eftersom Finance and Operations inte behöver hämta informationen för faktarutan förrän faktarutan expanderas.
 
-## <a name="explicit-personalizations-using-the-personalization-toolbar"></a>Explicit anpassningsalternativ med anpassning toolbar
-Varje person och företag har olika perspektiv på vilka data som är viktigast för dem, eller vilka data finnas inte nödvändigt för det sätt de sköter sina affärer. Möjligheten att skräddarsy hur din information beställs, samverkar med eller till och med döljs är nyckeln till att göra Dynamics 365 for Operations till en personlig och givande upplevelse. 
+## Explicit anpassningsalternativ med anpassning toolbar
+<a id="explicit-personalizations-using-the-personalization-toolbar" class="xliff"></a>
+Varje person och företag har olika perspektiv på vilka data som är viktigast för dem, eller vilka data finnas inte nödvändigt för det sätt de sköter sina affärer. Möjligheten att skräddarsy hur din information beställs, samverkas med eller till och med döljs, är nyckeln till att göra Finance and Operations till en personlig och givande upplevelse. 
 
 Explicita anpassningar är de anpassningar som du uttryckligen utför med avsikt att ändra utseende och funktion för ett element eller en sida, genom att välja en meny för anpassning. Den vanligaste typen av explicit anpassning är när du högerklickar på ett element och väljer **Anpassa**. (Observera att inte alla element på sidan kan anpassas). När du väljer den här metoden för anpassning visas elementets egenskapsfönster. 
 
@@ -67,11 +71,11 @@ När du vill flytta eller dölja delar eller göra flera ändringar, kan du med 
 
 [![Verktygsfältet Anpassning](./media/personalization-personalizationtoolbar.jpg)](./media/personalization-personalizationtoolbar.jpg)
 
-Verktygsfältet Anpassning har ett antal anpassningsåtgärder. **Verktyget Välj** när du vill välja och ändra egenskaperna för många element, ett i taget. Först genom att klicka på verktyget Välj och klicka sedan på element vars egenskaper du vill redigera. När du väljer ett element, elementet egendom fönster öppnas och du kan ändra egenskaperna för det elementet. Du kan upprepa processen för andra element på din blankett som personanpassning. I vissa fall kan du välja ett element och se att vissa egenskaper inte ändras. Detta innebär att, baserat på det sätt det nuvarande elementet används, kan Dynamics 365 for Operations inte låta dig du ändra egenskapen. Exempelvis du kan skinnet en fält som krävs. 
+Verktygsfältet Anpassning har ett antal anpassningsåtgärder. **Verktyget Välj** när du vill välja och ändra egenskaperna för många element, ett i taget. Först genom att klicka på verktyget Välj och klicka sedan på element vars egenskaper du vill redigera. När du väljer ett element, elementet egendom fönster öppnas och du kan ändra egenskaperna för det elementet. Du kan upprepa processen för andra element på din blankett som personanpassning. I vissa fall kan du välja ett element och se att vissa egenskaper inte ändras. Detta innebär att Finance and Operations - baserat på det sätt det nuvarande elementet används - inte kan låta dig ändra egenskapen. Exempelvis du kan skinnet en fält som krävs. 
 
-Välj **verktyget Flytta** när du vill välja och flytta en del till en annan plats inom aktuell grupp av element. (Du kan inte flytta ett inslag utanför dess överordnade grupp). Klicka först flytta verktyget och klicka sedan på det element som du vill flytta. När du klickar på det element som du vill flytta, Dynamics 365 for Operations kommer att skanna formuläret för att förstå vart detta element kan flyttas och skapar en serie av "släppzoner" som visas som en färgad, fet linje bredvid det område där elementet kan släppas när du drar elementet runt inom den aktuella gruppen. 
+Välj **verktyget Flytta** när du vill välja och flytta en del till en annan plats inom aktuell grupp av element. (Du kan inte flytta ett inslag utanför dess överordnade grupp). Klicka först flytta verktyget och klicka sedan på det element som du vill flytta. När du klickar på det element som du vill flytta, kommer Finance and Operations att skanna formuläret för att förstå vart detta element kan flyttas, och skapar sedan en serie "släppzoner" som visas som en färgad, fet linje bredvid det område där elementet kan släppas när du drar elementet inom den aktuella gruppen. 
 
-Välj **Dölj** verktyg att välja och döljer en del. För att dölja en del, välj helt enkelt dölja verktyg och klicka på de element som du vill dölja. När du väljer att dölja verktyg, alla dolda element kommer att göras synliga och visas i en skuggig behållare så att du kan välja elementet för att visa det igen. Välj verktyg för att se hur han sida kommer att se ut med de valda element dolda. Välj **sammanfattning** verktyg när du vill ha en numeriskt värde eller sträng att visa i snabbfliken sammanfattning området. Sammanfattningen verktyg kommer endast att gälla områden som är inneslutna i en snabbfliken avsnitt. När du väljer sammanfattningsverktyget visar Dynamics 365 for Operations alla fält som har valts som sammanfattningsfält genom att innesluta dem i ett nedtonad behållare. Du kan interaktivt lägga till och ta bort fält från ett snabbfliken sammanfattning genom att klicka på fältet. 
+Välj **Dölj** verktyg att välja och döljer en del. För att dölja en del, välj helt enkelt dölja verktyg och klicka på de element som du vill dölja. När du väljer att dölja verktyg, alla dolda element kommer att göras synliga och visas i en skuggig behållare så att du kan välja elementet för att visa det igen. Välj verktyg för att se hur han sida kommer att se ut med de valda element dolda. Välj **sammanfattning** verktyg när du vill ha en numeriskt värde eller sträng att visa i snabbfliken sammanfattning området. Sammanfattningen verktyg kommer endast att gälla områden som är inneslutna i en snabbfliken avsnitt. När du väljer sammanfattningsverktyget visar Finance and Operations alla fält som har valts som sammanfattningsfält genom att innesluta dem i ett nedtonad behållare. Du kan interaktivt lägga till och ta bort fält från ett snabbfliken sammanfattning genom att klicka på fältet. 
 
 Välj verktyget **Hoppa över** för att ta bort ett element från sidan tangentbordstabbsekvens. När du väljer verktyget Hoppa över visas alla tillfället överhoppade element i en nedtonad behållare, så att du kan välja dem igen för att göra dem till en del av tabbsekvensen genom att välja ett överhoppat element. 
 
@@ -89,8 +93,9 @@ Välj **Stäng** för att stänga verktygsfältet och återgå till det tidigare
 
 Med anpassning toolbar, spara är implicit. Din anpassningsalternativ träder i kraft omedelbart när du gör dem och det finns inget behov av att klicka på **knappen Save** . I vissa fall visas en hänglåsikon bredvid ett element när du väljer ett verktyg. Detta innebär att du inte kan ändra egenskaperna som hör till det valda verktyget om sidan ska fungera korrekt. När det gäller anpassning toolbar finnas öppnat, sidan blir icke-interaktivt. Du kan inte ange data eller expandera eller komprimera sektioner.
 
-## <a name="explicit-personalization-adding-a-tile-or-list-to-a-workspace"></a>Explicit anpassning: Lägga till en panel eller lista i en arbetsyta
-Några sidor med listor kommer att ha ytterligare en anpassningsfunktion som finns inom dess rutan åtgärd, enligt anpassa grupp på fliken Alternativ. Välj **Lägg till arbetsytan för**att öppna listrutan som ger dig möjlighet att visa informationen i den aktuella listan (filtered och sorterat eller standard) på en arbetsyta som en lista eller en sammanfattning panel (som kan användas för att visa antal objekt i listan). 
+## Explicit anpassning: Lägga till en panel eller lista i en arbetsyta
+<a id="explicit-personalization-adding-a-tile-or-list-to-a-workspace" class="xliff"></a>
+Några sidor med listor kommer att ha ytterligare en anpassningsfunktion som finns inom dess rutan åtgärd, enligt anpassa grupp på fliken Alternativ. Välj **Lägg till arbetsytan för** att öppna listrutan som ger dig möjlighet att visa informationen i den aktuella listan (filtered och sorterat eller standard) på en arbetsyta som en lista eller en sammanfattning panel (som kan användas för att visa antal objekt i listan). 
 
 [![Lägg till på arbetsyta](./media/personalization-addtoworkspace.png)](./media/personalization-addtoworkspace.png) 
 
@@ -100,20 +105,24 @@ Lägg till en sida till en arbetsyta, första filtrera listan för att represent
 
 När din lista eller panel läggs till en arbetsyta kan du sedan öppna arbetsytan och re-order i listan eller panel inom gruppen placerades.
 
-## <a name="explicit-personalization-adding-a-summary-from-a-workspace-to-a-dashboard"></a>Explicit anpassning: Lägga till en sammanfattning från en arbetsyta till en panel
+## Explicit anpassning: Lägga till en sammanfattning från en arbetsyta till en panel
+<a id="explicit-personalization-adding-a-summary-from-a-workspace-to-a-dashboard" class="xliff"></a>
 Vissa arbetsytor innehåller räknepaneler (paneler med siffror på) som också ska visas på instrumentpanelen. På en arbetsyta, högerklicka på en räknepanel och välj **Anpassa**. Välj **PIN-kod för att instrumentpanelen**. Nästa gång du navigerar till (och uppdatera de valda instrumentpanelen ser du att räkna under arbetsytan navigeringsmeny panel på instrumentpanelen.
 
-## <a name="explicit-personalization-personalizing-your-dashboard"></a>Explicit anpassning: Anpassa din instrumentpanel
-Instrumentpanelen är ofta den första sidan du ser när du öppnar Dynamics 365 for Operations. Du kan anpassa instrumentpanelen för att döpa din arbetsyta navigation paneler, för att endast visa panelerna som du skulle vilja se, byta panel, eller arrangerar panelerna i den ordning du föredrar att se dem. För att anpassa instrumentpanelen, välj någon panel och högerklicka för att öppna en snabbmeny. På snabbmenyn, välj **Anpassa**. Om den valda panelen är samma som du vill dölja eller ändra namn på eller hoppa över, du kan göra ändringar direkt i fönstret med egenskaper som har visats. Om du vill ordna paneler, välj sedan **anpassa denna form** i fastigheten för att öppna verktygsfältet anpassning. Sedan kan du använda verktyget Flytta till arrangerar panelerna.
+## Explicit anpassning: Anpassa din instrumentpanel
+<a id="explicit-personalization-personalizing-your-dashboard" class="xliff"></a>
+Instrumentpanelen är ofta den första sida som du ser när du öppnar Finance and Operations. Du kan anpassa instrumentpanelen för att döpa din arbetsyta navigation paneler, för att endast visa panelerna som du skulle vilja se, byta panel, eller arrangerar panelerna i den ordning du föredrar att se dem. För att anpassa instrumentpanelen, välj någon panel och högerklicka för att öppna en snabbmeny. På snabbmenyn, välj **Anpassa**. Om den valda panelen är samma som du vill dölja eller ändra namn på eller hoppa över, du kan göra ändringar direkt i fönstret med egenskaper som har visats. Om du vill ordna paneler, välj sedan **anpassa denna form** i fastigheten för att öppna verktygsfältet anpassning. Sedan kan du använda verktyget Flytta till arrangerar panelerna.
 
-## <a name="administration-of-personalization"></a>Administration av anpassning
-Det är möjligt att anpassa en sida och dela det med andra användare genom att helt enkelt exportera personliga sida och ber andra användare till navigerar till personliga sida och importera anpassningen fil som du har skapat. Om en användare har administratörsbehörighet, de kan även hantera anpassningsalternativ för andra användare i fönstret **Anpassning inställningssida** . Navigera till b-sidan. I fönstret **Anpassning** sida, du hittar två flikar, en märkt **System** och en märkt**användare**. 
+## Administration av anpassning
+<a id="administration-of-personalization" class="xliff"></a>
+När du anpassar en sida kan du dela dina anpassningar med andra användare. Exportera bara den anpassade sidan. Du kan sedan be andra användare att gå till den anpassade sidan och importera anpassningsfilen som du har skapat.
 
-**System:** Det är där du kan inaktivera tillfälligt eller "stänga av" alla anpassningsalternativ i systemet. Detta tar inte bort anpassningsalternativ, instead den återställer alla blanketter till sina standardvärden. Senare kan du återaktivera anpassning så att alla anpassningsalternativ återappliceras för varje användarformulär. Du kan även ta bort alla anpassningsalternativ för alla användare. Observera att när du tar bort anpassningsalternativ, det finns inget sätt att automatiskt återaktivera anpassningsalternativ från systemet. Se till att du har exporterat anpassningsalternativ som du kanske vill senare importera innan detta steg. 
+Användare med administratörsbehörighet kan även hantera anpassningsalternativ för andra användare på sidan **Anpassning** . Den här sidan har fyra flikar: **System**, **Användare**, **Importer**, och **Rensa**.
 
-**Användar:** Det är där du bestämmer för varje användare om de kan göra antingen explicit eller implicit anpassning. Du kan också bestämma om varje användare kan utföra explicit eller implicit anpassning på en särskild blankett. Slutligen kan du importera eller exportera eller radera en anpassning för varje användare. 
-
-**Obs!** I sin ursprungliga version kan anpassningsadministration bara hanteras av en användare på användarbasis.
+- **System:** – Du kan temporärt inaktivera eller stänga av alla anpassningar i systemet. I detta fall tar du inte bort några anpassningar. I stället återställer du bara alla sidor till deras standardtillstånd. Om du återaktivera anpassningen senare, kommer alla anpassningar att återappliceras till respektive användarsidor. Du kan även ta bort alla anpassningsalternativ för alla användare. Observera att när du tar bort anpassningsalternativ, det finns inget sätt att automatiskt återaktivera anpassningsalternativ från systemet. Se därför till att du har exporterat alla anpassningar som du kanske vill senare importera vid ett senare tillfälle innan du utför detta steg.
+- **Användare** – Du kan ange huruvida respektive användare kan genomföra personanpassningen implicit eller explicit. Du kan också ange huruvida respektive användare kan utföra explicit eller implicit anpassning på en särskild sida. Slutligen kan du importera, exportera eller radera en anpassning för respektive användare.
+- **Importera** – Du kan importera en anpassningar för en eller flera användare. Du kan använda den här fliken när du har skapat en anpassning på en sida eller en arbetsyta, och sedan exporterat den anpassningen som en fil för anpassning. Markera enskilda användare i listan över samtliga användare, eller filtrera efter en viss roll och välj sedan användare i den rollen, om du vill importera din anpassningsfil och tillämpa den på en eller flera användare. När du har valt de användare som ska använda dina anpassningar klickar du på **Importera**, och markerar din anpassningsfil. Anpassningen valideras och gäller för de alla valda användare nästa gång de öppnar den markerade sidan.
+- **Rensa** – Du kan rensa en sida eller anpassningar för arbetsyta för en eller flera användare. Först väljer du den sida eller den arbetsyta som du vill rensa anpassningar för. Därefter markerar du enskilda användare i listan över alla användare, eller filtrerar efter en viss roll och väljer sedan användare i den rollen. När du har markerat en sida eller arbetsyta och användare klickar du på **Rensa**. Alla anpassningar som de valda användarna har kopplat till den valda sidan eller arbetsytan tas bort. Denna åtgärd kan inte ångras. Om sidan eller arbetsytan emellertid har en sparad anpassning, kan den anpassningen återimporteras.
 
 
 
