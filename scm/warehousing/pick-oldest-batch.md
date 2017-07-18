@@ -9,11 +9,12 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.reviewer: bis
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 269384
 ms.search.region: Global
 ms.author: mirzaab
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
@@ -21,22 +22,18 @@ ms.openlocfilehash: ee45fed40b10dbe913c73e1186b726a39831816d
 ms.contentlocale: sv-se
 ms.lasthandoff: 06/20/2017
 
-
 ---
 
-# Plocka den äldsta batchen på en mobil enhet
-<a id="pick-oldest-batch-on-a-mobile-device" class="xliff"></a>
+# <a name="pick-oldest-batch-on-a-mobile-device"></a>Plocka den äldsta batchen på en mobil enhet
 
 [!include[banner](../includes/banner.md)]
 
 Du kan komma åt konfigurationen **Plocka äldsta batchen** via menyn för en mobil enhet och du kan tvinga eller varna lagerarbetare att plocka den äldsta batchen på deras nuvarande plats.  
 
-## Tillämpning
-<a id="where-it-applies" class="xliff"></a>
+## <a name="where-it-applies"></a>Tillämpning
 Plocka den äldsta batchen konfigureras på en mobil enhets menyalternativ och påverkar plockningen av batchen under artiklar.
 
-## Hur du ställer in konfigurationen för Plocka äldsta batchen
-<a id="how-to-set-up-the-configuration-for-pick-oldest-batch" class="xliff"></a> 
+## <a name="how-to-set-up-the-configuration-for-pick-oldest-batch"></a>Hur du ställer in konfigurationen för Plocka äldsta batchen 
 För artiklar som är inställda på att använda befintligt arbete kan **Plocka äldsta batchen** ställas in på **Ingen**, **Varna** eller **Tvinga** från menyn i en mobil enhet.
 
 **Ingen**: arbetare får inga meddelanden och tillåts plocka valfri batch på sin plats.

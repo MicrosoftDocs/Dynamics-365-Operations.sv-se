@@ -10,14 +10,14 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: JmgProdParameters
 audience: Application User
-ms.reviewer: YuyuScheller
+ms.reviewer: yuyus
 ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
 ms.industry: Manufacturing
 ms.author: johanhoffmann
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
@@ -27,8 +27,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Produktionsparametrar i Tillverkningskörning
-<a id="production-parameters-in-manufacturing-execution" class="xliff"></a>
+# <a name="production-parameters-in-manufacturing-execution"></a>Produktionsparametrar i Tillverkningskörning
 
 [!include[banner](../includes/banner.md)]
 
@@ -44,8 +43,7 @@ Modulen **Tillverkningskörning** är främst avsedd att användas av tillverkni
 - **Rapportera som färdigt** – Parametrar som används när artiklar rapporteras som färdiga i den sista operationen i en tillverkningsorder.
 - **Kvantitetvalidering** – Parametrar som används för att validera start- och återrapporterade kvantiteter på produktionsorder.
 
-## Typer av produktionsjobb
-<a id="types-of-production-jobs" class="xliff"></a>
+## <a name="types-of-production-jobs"></a>Typer av produktionsjobb
 På fliken **Operationer** väljer du vilken typ av produktionsjobb som måste registreras på sidan **Jobbregistrering**.
 
 Vanligtvis gör anställda registreringar på inställningsjobb och processjobb. Om finplanering används kan du välja andra jobbtyper som arbetare måste göra registreringar på när en produktionsorder bearbetas. Du kan till exempel kräva registreringar på transportjobb.
@@ -58,8 +56,7 @@ Om **Jobbhantering** väljs för en viss jobbtyp i flödesgruppen, rapporteras d
 > [!NOTE]
 > Vissa jobbtyper kan rapporteras manuellt via produktionsjournaler. I det här fallet väljer du **Jobbhantering** för jobbtypen, men väljer inte jobbtypen för registrering på fliken **Operationer** på sidan **Produktionsparametrar** i Tillverkningskörning.
 
-## Strukturlisteförbrukning och flödeskortjournaler
-<a id="bom-consumption-and-picking-list-journals" class="xliff"></a>
+## <a name="bom-consumption-and-picking-list-journals"></a>Strukturlisteförbrukning och flödeskortjournaler
 En konsekvent inställning för förbrukning av strukturlistor (BOM) är viktigt eftersom det hjälper till att garantera att lagerhanteringen är effektiv. Om exempelvis parametrarna för förbrukning av strukturlistor inte installerats korrekt i Tillverkningskörning kan material dras från lagret två gånger eller inte alls.
 
 På sidan **Produktionsparametrar** ställs förbrukning av strukturlistor in i tre steg:
@@ -91,8 +88,7 @@ För varje steg i fältet **Automatisk förbrukning av strukturlista** kan du v�
 
 I följande exempel visas parameterinställningar som stöder olika principer för strukturlisteförbrukning. Parametrarna ställs in på sidan **Produktionsparametrar** i Tillverkningskörning.
 
-### Exempel 1: Backflushing i operationer
-<a id="example-1-backflushing-on-operations" class="xliff"></a>
+### <a name="example-1-backflushing-on-operations"></a>Exempel 1: Backflushing i operationer
 
 Använd följande inställningar om plocklistejournaler med förbrukning av strukturlisteartiklar måste genereras när artiklar rapporteras som färdiga i en operation.
 
@@ -104,8 +100,7 @@ Använd följande inställningar om plocklistejournaler med förbrukning av stru
 | Rapportera som färdig | Automatisk strukturlisteförbrukning      | **Aldrig**                           |
 | Rapportera som färdig | Uppdatera färdig rapport online | **Status + kvantitet**               |
 
-### Exempel 2: Backflushing i tillverkning
-<a id="example-2-backflushing-on-production" class="xliff"></a>
+### <a name="example-2-backflushing-on-production"></a>Exempel 2: Backflushing i tillverkning
 
 Använd följande inställningar om plocklistejournaler och förbrukning av strukturlisteartiklar måste genereras när artiklar rapporteras som färdiga på en tillverkningsorder.
 
@@ -117,8 +112,7 @@ Använd följande inställningar om plocklistejournaler och förbrukning av stru
 | Rapportera som färdig | Automatisk strukturlisteförbrukning      | **Alltid**                          |
 | Rapportera som färdig | Uppdatera färdig rapport online | **Status + kvantitet**               |
 
-### Exempel 3: Avräkningsprincip
-<a id="example-3-flushing-principle" class="xliff"></a>
+### <a name="example-3-flushing-principle"></a>Exempel 3: Avräkningsprincip
 
 Använd följande inställningar om plocklistejournaler och förbrukning av strukturlisteartiklar ska genereras enligt avräkningsprincipen som är inställd för strukturlisteartiklarna.
 
@@ -130,8 +124,7 @@ Använd följande inställningar om plocklistejournaler och förbrukning av stru
 | Rapportera som färdig | Automatisk strukturlisteförbrukning      | **Aldrig**              |
 | Rapportera som färdig | Uppdatera färdig rapport online | **Status + kvantitet**  |
 
-### Exempel 4: Avdrag av material under starten av en tillverkningsorder
-<a id="example-4-deduction-of-materials-during-startup-of-a-production-order" class="xliff"></a>
+### <a name="example-4-deduction-of-materials-during-startup-of-a-production-order"></a>Exempel 4: Avdrag av material under starten av en tillverkningsorder
 
 Använd följande inställningar om plocklistejournaler och förbrukning av strukturlisteartiklar ska genereras när produktionen startas.
 
@@ -149,8 +142,7 @@ Baserat på de val som beskrivits tidigare i det här avsnittet bokförs plockli
 - När kvantitetsåterkoppling rapporteras i en operation.
 - När artiklar rapporteras som färdiga på tillverkningsordern.
 
-### Exempel 5: Manuell strukturlisteförbrukning
-<a id="example-5-manual-bom-consumption" class="xliff"></a>
+### <a name="example-5-manual-bom-consumption"></a>Exempel 5: Manuell strukturlisteförbrukning
 
 Du kan använda följande inställningar om materialen alltid ska dras av manuellt från lagret. I det här fallet bokförs plocklistejournalerna inte.
 

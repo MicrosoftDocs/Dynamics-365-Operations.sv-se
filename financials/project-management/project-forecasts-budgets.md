@@ -10,12 +10,13 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: ForecastModel, ProjYearEndProcess
 audience: Application User
+ms.reviewer: twheeloc
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 23501
 ms.assetid: 4e6d1384-19a2-4232-b3f3-d2590c218bd7
 ms.search.region: Global
 ms.author: twheeloc
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -23,11 +24,9 @@ ms.openlocfilehash: 835a92a8f95c7d75b02f5991cc2528c6a209540a
 ms.contentlocale: sv-se
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Projektprognoser och projektbudgetar
-<a id="project-forecasts-and-budgets" class="xliff"></a>
+# <a name="project-forecasts-and-budgets"></a>Projektprognoser och projektbudgetar
 
 [!include[banner](../includes/banner.md)]
 
@@ -54,8 +53,7 @@ Varje metod har sina fördelar. Du bör beakta följande punkter innan du välje
 | **Överskridna kostnader**         | Du kan endast tillåta eller förbjuda registrering av transaktioner som orsakar kostnadsöverskridande.                                                                                                                                                                | Budgetering för projekt innehåller ytterligare kontrollalternativ för användare. Du kan tillåta varningar och överskridningar.                                                                   |
 | **Kontroll**               | Prognoskontroll utförs genom att använda prognosreducering. Verkliga belopp dras från prognostransaktionsaldon utan någon spårning. Detta kan göra det svårare att spåra var de verkliga transaktionerna uppstod.                   | I projektbudgetkontroll dras verkliga belopp från belopp i den resterande budgeten. Detta innebär en klarare spårning.                                   |
 
-## Projektprognoser
-<a id="project-forecasts" class="xliff"></a>
+## <a name="project-forecasts"></a>Projektprognoser
 När du använder projektberäkning, kan du ange prognostransaktioner i prognosformulär för varje transaktionstyp. Varje attribut som är tillgängligt för en verklig transaktion kan användas för en prognostransaktion, till exempel radlönsamhet, radattribut, arbetare eller beskrivningar. Du kan även projicera hur lång tid efter att en kostnad uppstår du fakturerar kunden. 
 
 Projektberäkningstransaktioner baseras på enheter och belopp. 
@@ -72,8 +70,7 @@ Projektprognoser kan ändras, kopieras, tas bort eller överföras till en redov
 -   **Kopiera eller ta bort** – När du kopierar prognostransaktioner kopierar du transaktionsraderna i en prognosmodell till en annan prognosmodell. När du tar bort en prognos tar du bort prognostransaktionerna från en prognosmodell. Begränsa de prognostransaktioner som kopieras eller tas bort genom att välja specifika transaktionstyper och datum. På så sätt kan du kopiera eller ta bort endast vissa delar av en prognos.
 -   **Överför** – När du överför en prognosbudget till en redovisningsbudget överför du prognostransaktionerna i en prognosmodell till en redovisningsbudget. Du kan skriva över alla tidigare överförda transaktioner i redovisningsbudgeten som du överför din projektprognos till.
 
-## Projektbudgetar
-<a id="project-budgets" class="xliff"></a>
+## <a name="project-budgets"></a>Projektbudgetar
 Budgetering för projekt är en enklare metod än prognoser men den kan integreras med prognosmodeller. Det använder ett enda formulär för information och ändringar för ursprunglig budget och tillåter projiceringar som baseras på endast belopp, kategori eller aktivitet. 
 
 I projektbudgetering måste alla ursprungliga budgetar och ändringar skickas till ett projektarbetsflöde för godkännande. Arbetsflöden ger ökad kontroll över processerna och skapar en ändringshistorikpost. 
@@ -82,8 +79,7 @@ Budgetering för projekt liknar redovisningsbudgetering, men går snabbare och l
 
 Projektbudgeter associeras automatiskt med två prognosmodeller, en för ursprunglig budget och en för resterande budget. Därför kan rapporter baserade på prognosmodeller använda budgetdata. När en projektbudget disponeras skapar systemet prognostransaktioner som baseras på de kopplade modellerna, som används för rapportering och kontroll.
 
-## Prognosmodeller
-<a id="forecast-models" class="xliff"></a>
+## <a name="forecast-models"></a>Prognosmodeller
 Prognosmodeller har enskikts hierarki. Detta innebär att varje projektprognos måste vara kopplad till en prognosmodell.
 
 Om du använder projektprognoser kan du identifiera modeller som delmodeller. Du kan sedan skapa prognoser efter avdelning, tidsperiod eller region. Du kan till exempel skapa en prognosmodell för ett år och sedan delmodeller för regionprognoserna nordost, sydost, nordväst och sydväst som regioncheferna skickar in. Genom att välja olika alternativ i det tillgängliga rapporterna kan du visa information efter total prognos eller efter delmodell.

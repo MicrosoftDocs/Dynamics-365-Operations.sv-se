@@ -9,12 +9,13 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.reviewer: sericks
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 17404
 ms.assetid: babde0c6-bb5d-45ae-95ca-2af75a0ea292
 ms.search.region: Global
 ms.author: sericks
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,11 +23,9 @@ ms.openlocfilehash: 26ca948e26708126686ca0d96ea21dc16b1c3799
 ms.contentlocale: sv-se
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Konfigurera organisationshierarki
-<a id="configure-organizational-hierarchy" class="xliff"></a>
+# <a name="configure-organizational-hierarchy"></a>Konfigurera organisationshierarki
 
 [!include[banner](../includes/banner.md)]
 
@@ -58,8 +57,7 @@ Du måste ha minst en juridisk person som representerar din verksamhet i Finance
 | Produkter                                 | Produktdefinitioner delas och de måste frisläppas till enskilda juridiska personer innan de kan inkluderas i transaktioner. Varje juridisk person har en egen uppsättning frisläppta produkter som kan inkluderas i transaktionsdokument. Om dina interna organisationer måste använda andra uppsättningar av produkter, måste du utforma organisationerna som juridiska personer. **Obs!** Även om produktdefinitioner delas kan du ange olika försäljnings-, inköps - och lagerparametrar för artikeln på varje lagerplats i varje juridisk person där en produkt har frisläppts.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | Alla driftenheter delar samma uppsättning produkter. Om dina interna organisationer kan dela samma uppsättning av produkter, kan du utforma organisationerna som driftenheter.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | Förfrågning och rapportering                    | Du måste manuellt ändra företag för att ange transaktioner och utföra förfrågningar i flera juridiska personer. På grund av gränser för datasäkerhet kan konsoliderad förfrågning och rapportering vara resurs- och tidskrävande.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          | Du behöver inte byta företag för att komma åt data från flera driftenheter. Konsoliderad förfrågning och rapportering och enskild regional förfrågning är enklare och snabbare.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 
-## Metoder för att utforma organisationer och hierarkier
-<a id="best-practices-for-modeling-organizations-and-hierarchies" class="xliff"></a>
+## <a name="best-practices-for-modeling-organizations-and-hierarchies"></a>Metoder för att utforma organisationer och hierarkier
 Tänk på följande när du implementerar en organisationshierarki:
 -   Skapa en avdelning för modellering av skärningspunkten mellan en juridisk person och en affärsenhet. Du kan sedan rulla upp data från en avdelning till en juridisk person för lagstadgad rapportering och från en avdelning till en affärsenhet för intern rapportering. Avdelningar kan fungera som resultatenheter. Om du använder avdelningar, behöver du inte använda juridiska personer och affärsenheter som dimensioner i kontostrukturen. Du kan bara använda avdelningar som en dimension. Du måste dock använda både kostnadsställen och avdelningar som dimensioner i kontostrukturen om kostnadsställen bara används som kostnadsackumulatorer och avdelningar används för intäktsredovisning.
 -   Modellera flera hierarkier för driftenheter om du har komplexa krav för att rapportera vinst och förlust.

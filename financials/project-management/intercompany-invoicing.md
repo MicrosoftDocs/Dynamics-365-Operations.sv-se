@@ -9,12 +9,13 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.reviewer: twheeloc
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 94153
 ms.assetid: 33e98da7-01c1-4369-923d-aa1c8326cb80
 ms.search.region: Global
 ms.author: twheeloc
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,11 +23,9 @@ ms.openlocfilehash: 205903bb68804a46414410c85eacce03c6df6fc7
 ms.contentlocale: sv-se
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Koncernintern fakturering
-<a id="intercompany-invoicing" class="xliff"></a>
+# <a name="intercompany-invoicing"></a>Koncernintern fakturering
 
 [!include[banner](../includes/banner.md)]
 
@@ -53,8 +52,7 @@ Målet är att göra kostnadskontroller, intäktsredovisningar, skatter och öve
     -   **Belopp under försäljningspriset** – Det belopp som den lånande juridiska personen håller tillbaka från försäljningspriserna före överföringen till den utlånande juridiska personen.
     -   **Täckningsgrad** – Den siffra du anger i fältet **Prissättning** täckningsgraden som uttrycks som en procentandel av försäljningspriset.
 
-## Exempel 1: Ställ in parametrar för koncernintern fakturering
-<a id="example-1-set-up-parameters-for-intercompany-invoicing" class="xliff"></a>
+## <a name="example-1-set-up-parameters-for-intercompany-invoicing"></a>Exempel 1: Ställ in parametrar för koncernintern fakturering
 I det här exemplet är US SI en utlånande juridisk person och dess resurser rapporterar tid mot den lånande juridiska personen, FR SI, som innehar kontraktet med slutkunden. Timmar och utgifter som anställda hos USSI rapporterar kan ingå i projektfakturan som FRSI genererar. Det finns dessutom en tredje källa för transaktioner som kan härledas från den utlånande juridiska personen (USSI i det här exemplet) om den innehåller delade leverantörstjänster till dotterbolag (till exempel FRSI) och sedan skickar dessa kostnader till projekt inom dessa dotterbolag. Alla matchande fakturadokument och momsberäkningar slutförs av Finance and Operations. 
 
 I det här exemplet måste FRSI vara en kund till den juridiska personen USSI och USSI måste vara en leverantör till den juridiska personen FRSI. Du kan ställa in en koncernintern relation mellan två juridiska personer. I följande procedur beskrivs hur du ställer in parametrarna så att båda de juridiska personerna kan delta i koncernintern fakturering.
@@ -74,8 +72,7 @@ I det här exemplet måste FRSI vara en kund till den juridiska personen USSI oc
 4.  Välj en valuta, transaktionstyp och överföringsprismodell. Den valuta som används på fakturan är den valuta som är konfigurerad i kundposten för den lånande juridiska personen hos den utlånande juridiska personen. Valutan används för att matcha poster i överföringsprislistan.
 5.  Klicka på **Redovisning** &gt; **Bokföringsinställningar** &gt; **Koncernintern redovisning** och skapa en relation för USSI och FRSI.
 
-## Exempel 2: Skapa och bokföra en koncernintern tidrapport
-<a id="example-2-create-and-post-an-intercompany-timesheet" class="xliff"></a>
+## <a name="example-2-create-and-post-an-intercompany-timesheet"></a>Exempel 2: Skapa och bokföra en koncernintern tidrapport
 USSI, den utlånande juridiska personen måste skapa och bokföra tidrapporten för ett projekt från FRSI, den lånande juridiska personen. Det finns två startpunkter för de steg som krävs för uppgiften.
 
 | Steg | Startpunkt                                                                       | beskrivning                                                                                                                                                                                       |
@@ -83,8 +80,7 @@ USSI, den utlånande juridiska personen måste skapa och bokföra tidrapporten f
 | A    | **Projekthantering och redovisning** &gt; **Tidrapporter** &gt; **Alla tidrapporter** | Skapa en ny tidrapport. På raden tidrapport i fältet **Juridisk person**, markera **FRSI**. I fältet **Projekt-ID**, markera projektet i FRSI. Ange antalet timmar för varje dag i veckan. |
 | G    | Sidan **Tidrapport**                                                                | Bokför tidrapporten och anteckna verifikationsnumret när arbetsflödet körs.                                                                                                               |
 
-## Exempel 3: Skapa och bokföra en koncernintern leverantörsfaktura
-<a id="example-3-create-and-post-an-intercompany-vendor-invoice" class="xliff"></a>
+## <a name="example-3-create-and-post-an-intercompany-vendor-invoice"></a>Exempel 3: Skapa och bokföra en koncernintern leverantörsfaktura
 USSI, den utlånande juridiska personen måste skapa och bokföra den koncerninterna leverantörsfakturan för ett projekt från FRSI, den lånande juridiska personen. Den här leverantörsfakturan representerar utkontrakterat arbete och kostnader som utfördes av leverantörer som betalas av USSI. Det finns två startpunkter för de steg som krävs för uppgiften.
 
 | Steg | Startpunkt                                                                                      | beskrivning                                                                                                                                                                                                                                                                          |
@@ -92,8 +88,7 @@ USSI, den utlånande juridiska personen måste skapa och bokföra den koncernint
 | A    | **Leverantörsreskontra** &gt; **Fakturor** &gt; **Öppna leverantörsfakturor** &gt; **Ny leverantörsfaktura** | Skapa en ny leverantörsfaktura och ange de tjänster som har införskaffats för FRSIS:s projekt.                                                                                                                                                                                  |
 | G    | Sidan **Leverantörsfaktura**                                                                      | Ange rader som representerar de utkontrakterade tjänsterna för FRSI. På snabbfliken **Raddetaljer**, på fliken **Projekt** för fakturaraden, i fältet **Projektföretag**, ange **FRSI**. Ange projektet och motsvarande information. Bokför sedan leverantörsfakturan. |
 
-## Exempel 4: Skapa och bokföra den koncerninterna leverantörsfakturan
-<a id="example-4-create-and-post-the-intercompany-invoice" class="xliff"></a>
+## <a name="example-4-create-and-post-the-intercompany-invoice"></a>Exempel 4: Skapa och bokföra den koncerninterna leverantörsfakturan
 USSI, den utlånande juridiska personen måste skapa och bokföra den koncerninterna fakturan. Det finns två startpunkter för de steg som krävs för uppgiften.
 
 | Steg | Startpunkt                                                                                             | beskrivning                                                                                                                                      |
@@ -104,8 +99,7 @@ USSI, den utlånande juridiska personen måste skapa och bokföra den koncernint
 | D    | Sidan **Koncernintern faktura**                                                                       | Det koncerninterna kundfakturaförslaget visas.                                                                                             |
 | E    | Sidan **Koncernintern faktura**                                                                       | Klicka på **Bokför**.                                                                                                                                  |
 
-## Exempel 5: Bokföra leverantörsfakturan och fakturera kunden
-<a id="example-5-post-the-vendor-invoice-and-invoice-the-customer" class="xliff"></a>
+## <a name="example-5-post-the-vendor-invoice-and-invoice-the-customer"></a>Exempel 5: Bokföra leverantörsfakturan och fakturera kunden
 När den utlånande juridisk personen, USSI, bokför den koncerninterna kundfakturan skapas en matchande väntande leverantörsfaktura för den lånande juridiska personen, FRSI. Efter att denna leverantörsfaktura har bokförs fakturerar även FRSI projektkunden för de timmar som har angetts av USSI. Det finns tre startpunkter för de steg som krävs för uppgiften.
 
 | Steg | Startpunkt                                                                                        | beskrivning                                                                                                             |

@@ -9,12 +9,13 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.reviewer: twheeloc
 ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 221564
 ms.assetid: 7c68eb7c-8b1a-4dd9-afb8-04b4040e305e
 ms.search.region: Global
 ms.author: saraschi
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,11 +23,9 @@ ms.openlocfilehash: add41ceb1dd31d5b5aa26916114d7d7864cb1626
 ms.contentlocale: sv-se
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Sammanfogning av värdemodell för anläggningstillgångar och avskrivningsregler
-<a id="fixed-asset-value-model-and-depreciation-book-merge" class="xliff"></a>
+# <a name="fixed-asset-value-model-and-depreciation-book-merge"></a>Sammanfogning av värdemodell för anläggningstillgångar och avskrivningsregler
 
 [!include[banner](../includes/banner.md)]
 
@@ -35,8 +34,7 @@ I tidigare versioner fanns två värderingsbegrepp för anläggningstillgångar:
 
 Den nya funktionen för avskrivningsregel baseras på tidigare värdemodellfunktion men innehåller även alla funktioner som endast angetts tidigare i avskrivningsregler. [![Boka som en sammanslagning av värdemodell och funktionen för avskrivningsbok](./media/fixed-assets.png)](./media/fixed-assets.png) På grund av denna sammanslagning kan du nu använda en enda uppsättning sidor, rapporter och frågor för alla Anläggningstillgångsprocesser. Tabellerna i det här avsnittet beskriver de tidigare funktionerna för den avskrivningsregler och värdemodeller, tillsammans med de nya funktionerna för böcker.
 
-## Inställningar
-<a id="setup" class="xliff"></a>
+## <a name="setup"></a>Inställningar
 Som standard bokförs böcker i både huvudboken (GL) och i anläggningstillgångar. Böcker har ett nytt alternativ **Bokför i redovisningen** som låter dig inaktivera bokföring till huvudboken och bara bokföra till anläggningstillgångar. Denna funktion liknar det tidigare bokföringbeteendet för avskrivningsregler. Inställningen av journalnamn har ett nytt bokföringsskikt som kallas Inga. Detta bokföringsskikt lades specifikt till för anläggningstillgångar. Om du vill bokföra transaktioner för böcker som inte bokförs till huvudboken måste du använda ett journalnamn som har bokföringsskiktet inställt på **Ingen**.
 
 |                                                  |                                 |                                 |                                                         |
@@ -48,8 +46,7 @@ Som standard bokförs böcker i både huvudboken (GL) och i anläggningstillgån
 | Härledda räkenskapsböcker                                    | Tillåts inte                     | Tillåts                         | Tillåts                                                 |
 | Avskrivningsprofil åsidosätter på tillgångsnivån | Tillåts                         | Tillåts inte                     | Tillåts                                                 |
 
-## Processer
-<a id="processes" class="xliff"></a>
+## <a name="processes"></a>Processer
 Processer använder nu en gemensam sida. Vissa processer tillåts bara om alternativet **Bokför till huvudboken** inställd på **Nej** i bokinställningar.
 
 |                                |                           |                     |                                          |
@@ -60,8 +57,7 @@ Processer använder nu en gemensam sida. Vissa processer tillåts bara om altern
 | Radera historiska transaktioner | Tillåts                   | Inte tillåtet         | Tillåtet, om du inte bokför i huvudboken |
 | Massuppdatering                    | Tillåts                   | Inte tillåtet         | Tillåtet, om du inte bokför i huvudboken |
 
-## Förfrågningar och rapporter
-<a id="inquiries-and-reports" class="xliff"></a>
+## <a name="inquiries-and-reports"></a>Förfrågningar och rapporter
 Förfrågningar och rapporter stöder alla böcker. Rapporter som inte ingår i följande tabell gav tidigare stöd för både avskrivningsregler och värdemodeller och ska nu fortsätta att stödja alla boktyper. Fältet **Bokföringsskikt** har också lagts till rapporterna, så att du enkelt kan identifiera bokföring av transaktioner.
 
 |                                       |                                |                          |                          |
@@ -72,8 +68,7 @@ Förfrågningar och rapporter stöder alla böcker. Rapporter som inte ingår i 
 | Underlag för anläggningstillgång                     | Tillåts                        | Tillåts inte              | Tillåts                  |
 | Anläggningstillgångar kvartalsrapport | Tillåts                        | Tillåts inte              | Tillåts                  |
 
-## Uppgradera
-<a id="upgrade" class="xliff"></a>
+## <a name="upgrade"></a>Uppgradera
 Uppgraderingsprocessen flyttar din befintliga inställning och alla befintliga transaktioner till den nya bokstrukturen. Värdemodeller kommer att kvarstå som de är, som en bok som bokförs till huvudboken. Emellertid flyttas avskrivningsregler till en bok som har alternativet **Bokför i huvudboken** inställt på **Nej**. Journalnamn för avskrivningsregel ska flyttas till ett journalnamn för huvudbok som har bokföringsskiktet inställt på **Ingen**.
 
 

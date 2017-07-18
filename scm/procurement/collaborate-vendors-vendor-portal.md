@@ -10,12 +10,13 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PurchTable, PurchVendorPortalRequests
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 30211
 ms.assetid: 3c7e0e1c-703c-4bbf-b90c-84d29a131360
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: f76e431320414b508728cbe9fe20456f107cbe40
@@ -23,11 +24,9 @@ ms.openlocfilehash: a8284e5a79e00def964b41f5c20bbb7377bf36be
 ms.contentlocale: sv-se
 ms.lasthandoff: 06/09/2017
 
-
 ---
 
-# Samarbeta med leverantörer med hjälp av leverantörsportalen
-<a id="collaborate-with-vendors-by-using-the-vendor-portal" class="xliff"></a>
+# <a name="collaborate-with-vendors-by-using-the-vendor-portal"></a>Samarbeta med leverantörer med hjälp av leverantörsportalen
 
 [!include[banner](../includes/banner.md)]
 
@@ -40,8 +39,7 @@ Leverantörsportalen vänder sig till leverantörer som inte har elektroniskt da
 
 Processen kan konfigureras så att en bekräftelse från leverantören automatiskt bekräftar ordern. I det här fallet behövs uppföljning bara ibland, när en order avslås eller om säljarens bekräftelse är registrerad som ett svar men statusen för IO:n är inte uppdaterad till **Bekräftad** på grund av ett problem med bekräftelseprocessen.
 
-## IO-bekräftelse och -avvisande
-<a id="po-confirmation-and-rejection" class="xliff"></a>
+## <a name="po-confirmation-and-rejection"></a>IO-bekräftelse och -avvisande
 IO:r förbereds i Dynamics AX. När du har en IO som har statusen **Godkänd** skickar du den till leverantören genom att generera bekräftelseförfrågan. Om du vill dra säljarens uppmärksamhet till en ny inköpsorder kan du även använda utskriftshanteringssystemet för att skicka IO:n via e-post. Inköpsordern visas på leverantörsportalen med möjlighet för säljaren att bekräfta eller avvisa den. Leverantören kan också lägga till kommentarer för att kommunicera information som ändringar i IO:n.  
 
 På leverantörsportalen kan leverantören se orderrader. Dessa rader innehåller information som det externa produktnumret, dimensioner, prisinformation, kvantitet, leveransdatum och leveransadress. Leverantören kan generera en rapport som visar inköpsorderinformationen och också det totala priset. Avgifter som är relevanta för leverantören visas om leverantören klickar på **Avgifter** på knappen i sidhuvudet eller på raderna. Leverantörer kan importera PO information i sina egna system med **Export till Excel** funktionsduglighet.  
@@ -54,14 +52,12 @@ Följande tabell visar det typiska utbytet av information, beroende på hur säl
 | Leverantören bekräftar ordern. Systemet har inte konfigurerats för att automatiskt bekräfta inköpsorder när leverantören bekräftar. | Säljarens svar registreras som **Bekräftad** men statusen för IO:n förblir **I extern granskning**.                                                                                                                                                                                      |
 | Leverantören avvisar ordern.                                                                                     | Säljarens svar registreras som **Avvisad** och statusen för IO:n förblir **I extern granskning**. Avvisandet tas emot tillsammans med orsaken och ett förslag till ändring, till exempel ett alternativt leveransdatum. Du uppdaterar IO:n och skickar sedan en ny version för bekräftelse. |
 
-## Ändringar i en PO
-<a id="changes-to-a-po" class="xliff"></a>
+## <a name="changes-to-a-po"></a>Ändringar i en PO
 När du måste ändra en IO som redan bekräftats kan du skicka en ny inköpsorder till leverantören via leverantörsportalen. Den nya IO:n får ett versionssuffix som visar att den är en modifierad version av en IO som meddelades tidigare. Leverantörsportalen låter leverantörer följa historiken för varje order. Föregående bekräftade versionen av IO:n ligger kvar i listan över bekräftade IO:r tills den nya IO:n har bekräftats.  
 
 När du annullerar en IO, statusen ändras till **Godkänd**. Du måste skicka tillbaka IO:n till säljaren via leverantörsportalen så att leverantören kan bekräfta eller avvisa annulleringen. När annulleringen har bekräftats visas IO:n i leverantörens lista över bekräftade IO:r som **Annullerad**.
 
-## Versioner, statusövergångar och ändringshantering
-<a id="versions-status-transitions-and-change-management" class="xliff"></a>
+## <a name="versions-status-transitions-and-change-management"></a>Versioner, statusövergångar och ändringshantering
 När en IO skickas till leverantören registreras den i systemet som en specifik version av inköpsordern och statusen ändras från **Godkänd** till **I extern granskning**. Om IO:n ändras senare, en ny version av IO:n skapas och status går tillbaka till **Godkänd** (eller **Utkast** om förändringshantering är aktiverad).  
 
 Tabellen nedan visar ett exempel på förändringar i status och version som en IO kan gå igenom.
@@ -82,8 +78,7 @@ Leverantörerna måste inte bekräfta IO:n på leverantörsportalen. De kan ocks
 
 **Obs!** Den version av IO:n som är tillgänglig för andra processer i Dynamics AX är alltid senaste versionen, även om denna version ännu inte registrerats.
 
-### Ändringshantering
-<a id="change-management" class="xliff"></a>
+### <a name="change-management"></a>Ändringshantering
 
 Om du har inaktiverat förändringshantering för en IO, går IO:n via en godkännandearbetsflöde för att nå statusen **Godkänd**. Denna process är inte synlig för leverantören.  
 
@@ -100,8 +95,7 @@ Tabellen nedan visar ett exempel på förändringar i statusen och versionen som
 | IO:n skickas till godkännandeprocessen igen.                                                            | Statusvärdet ändras från **Utkast** till **Under granskning** till **Godkännande** om IO:n inte avvisas under godkännandeprocessen. Alternativt kan systemet konfigureras så att specifika fältändringar inte kräver nytt godkännande. I det här fallet ändras statusen först till **Utkast** och sedan uppdateras automatiskt till **Godkänd**. Den godkända inköpsordern registreras som en ny version. |
 | Du skickar den nya versionen av IO:n till leverantörsportalen.                                                      | Den nya versionen registreras på leverantörsportalen och statusen ändras till **I extern granskning**.                                                                                                                                                                                                                                                                                    |
 | Leverantören godkänner den nya versionen av IO:n.                                                                | Statusen ändras till **Bekräftad** antingen automatiskt eller när du får svar från leverantören och sedan bekräftar IO:n.                                                                                                                                                                                                                                                     |
-Se även
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Se även
 --------
 
 [Konfigurering av säkerhet för leverantörssamarbetesanvändare](configure-security-vendor-portal-users.md)

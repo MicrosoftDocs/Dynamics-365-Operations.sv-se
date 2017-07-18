@@ -9,13 +9,14 @@ ms.prod:
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, IT Pro
+ms.reviewer: sericks
 ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 270314
 ms.assetid: 9680d977-43c8-47a7-966d-2280ba21402a
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: yuyus
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -23,24 +24,20 @@ ms.openlocfilehash: 387b804cb20ffdc17ad74dac5d927ecbaf421bae
 ms.contentlocale: sv-se
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Innehåll i Power BI-kostnadshanteringen
-<a id="cost-management-power-bi-content" class="xliff"></a>
+# <a name="cost-management-power-bi-content"></a>Innehåll i Power BI-kostnadshanteringen
 
 [!include[banner](../includes/banner.md)]
 
 
 Det här avsnittet beskriver vad som ingår i Power BI-innehållet för kostnadshantering. Det förklarar hur du öppnar Power BI-rapporter och ger information datamodellen och de enheter som används för att skapa innehållet.
 
-# Översikt
-<a id="overview" class="xliff"></a>
+# <a name="overview"></a>Översikt
 
 Microsoft Power BI-innegållet **Kostnadshantering** riktar sig till lagerrevisorer eller personer inom organisationen med ansvar för lagret. Power BI-innehållet **Kostnadshantering** ger ledarskapsinblick i lager och PIA-lager (projekt i arbete), samt hur kostnadsflöden passerar genom dem per kategori och över tid. Informationen kan också användas som ett detaljerat komplement till bokslutet.
 
-## Huvudmått
-<a id="key-measures" class="xliff"></a>
+## <a name="key-measures"></a>Huvudmått
 
 + Ingående saldo
 + Slutsaldo
@@ -48,19 +45,16 @@ Microsoft Power BI-innegållet **Kostnadshantering** riktar sig till lagerreviso
 + Nettoändring i procent
 + Åldersfördelning
 
-## Prestationsindikatorer
-<a id="key-performance-indicators" class="xliff"></a>
+## <a name="key-performance-indicators"></a>Prestationsindikatorer
 + Lageromsättning
 + Lagerprecision
 
 Den primära datakällan för CostAggregatedCostStatementEntryEntity är registret CostStatementCache. Det här registret hanteras av cacheramverket Datauppsättning. Registret uppdateras var 24: e timme som standard, men du kan aktivera manuella uppdateringar i cachkonfigurationen för data. Du kan sedan göra en manuell uppdatering i arbetsytan **Kostnadshantering** eller **Kostnadsanalys**. När uppdateringen av CostStatementCache har körts måste du uppdatera OData-anslutningen på Power BI.com för att visa uppdaterade data på webbplatsen. Avvikelseåtgärderna (inköp, produktion) i Power BI-innehållet gäller endast artiklar som bedömts av lagermetoden Standardkostnad. Produktionsavvikelsen beräknas som skillnaden mellan aktiv och verklig kostnad. Produktionsavvikelsen beräknas när produktionsordern har statusen **Avslutad**. Mer information om olika produktionsavvikelser och hur varje typ beräknas finns i [Analysera avvikelser för en avslutad tillverkningsorder](https://technet.microsoft.com/en-us/library/gg242850.aspx).
 
-## Åtkomst till Power BI-innehåll
-<a id="accessing-the-power-bi-content" class="xliff"></a>
+## <a name="accessing-the-power-bi-content"></a>Åtkomst till Power BI-innehåll
 Power Bi-innehållet **Kostnadshantering** är tillgängligt från PowerBI.com. Mer information om hur du ansluter och laddar dina Microsoft Dynamics 365 for Finance and Operations-data, se [Åtkomst till Power BI-innehåll från PowerBI.com](power-bi-home-page.md).
 
-## Mått som ingår i Power BI-innehållet
-<a id="metrics-that-are-included-in-the-power-bi-content" class="xliff"></a>
+## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mått som ingår i Power BI-innehållet
 Innehållet omfattar en uppsättning rapportsidor. Sidorna består av en uppsättning mått som visualiseras som diagram, brickor och tabeller. Följande register ger en översikt över de visuella effekterna i Power BI-innehållet **Kostnadshantering**.
 
 | Rapportsida | Diagram | Titlar |
@@ -89,8 +83,7 @@ Innehållet omfattar en uppsättning rapportsidor. Sidorna består av en uppsät
 | |Nettoändring för PIA efter platsnamn och kategorinamn (nivå 2) | |
 | |Produktionsavvikelser efter platsnamn och kategorinamn (nivå 3) | |
 
-## Förstå datamodellen och enheterna
-<a id="understanding-the-data-model-and-entities" class="xliff"></a>
+## <a name="understanding-the-data-model-and-entities"></a>Förstå datamodellen och enheterna
 Finance and Operations-data används för att fylla i rapportsidorna Power-Bi-innehållet **Kostnadshantering**. Informationen visas som sammansatta mått som mellanlagras i enhetsarkivet, som är en Microsoft SQL-databas som är optimerad för analys. Mer information finns i [Översikt för Power BI-integrering med enhetsarkiv](power-bi-integration-entity-store.md). Följande sammanlagda huvudmått används till grund för innehållet:
 
 | Enhet            | Sammanlagda huvudmått | Datakällan för Finance and Operations | Fält             | beskrivning                       |
@@ -143,8 +136,7 @@ Följande huvuddimensioner används som filter för att dela upp de sammanlagda 
 | Redovisningar          | Valuta, namn, beskrivning                  |
 | Platser            | ID, namn, land, ort                      |
 
-## Ytterligare resurser
-<a id="additional-resources" class="xliff"></a>
+## <a name="additional-resources"></a>Ytterligare resurser
 Nedan följer några användbara länkar som är relaterade till enheter och till att skapa innehåll för Power BI:
 
 -   [Datatabeller](..\data-entities\data-entities.md)

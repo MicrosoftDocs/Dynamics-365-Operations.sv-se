@@ -10,13 +10,13 @@ ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: ShylaThompson
+ms.reviewer: shylaw
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 59071
 ms.assetid: a201cfcb-1672-45f6-897d-2db2dd181d9a
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 2016-05-31
+ms.search.validFrom: 2016-05-31T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -24,11 +24,9 @@ ms.openlocfilehash: 5c09b1fc061f95cd78e9f18c2bdf846fdbfc7cf1
 ms.contentlocale: sv-se
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Komponenter för ekonomisk rapport
-<a id="financial-report-components" class="xliff"></a>
+# <a name="financial-report-components"></a>Komponenter för ekonomisk rapport
 
 [!include[banner](../includes/banner.md)]
 
@@ -37,8 +35,7 @@ Den här artikeln innehåller en beskrivning av hur komponenter eller byggblock 
 
 Designfilosofin bakom ekonomiska rapporteringsdesigner är att dela upp information i de minsta komponenterna eller byggblocken och sedan mixa och matcha komponenterna efter behov. Därför är formateringen separerad från dina ekonomiska data och du kan ändra en rapports design utan att ändra ekonomiska data i Microsoft Dynamics ERP-system. Med hjälp av den här byggblocksstrategin kan du kombinera text, belopp och beräkningar för att skapa de rapporter du behöver. Dessutom uppmuntrar den här flexibiliteten till kreativitet genom att göra det enklare för dig att visa dina operationer på olika sätt. De enskilda byggblocken i en rapportdefinition liknar ett tredimensionellt kalkylblad, men är mer effektiva. En rapportdefinitionen specificerar raddefinitionen, kolumndefinitionen och en valfri definition av det rapporteringsträd som ska användas för rapporten. Den innehåller också information om var du lagrar den genererade rapporten och hur du öppnar den. För bättre återanvändbarhet och delning kan du skapa en byggblocksgrupp, som är en uppsättning befintliga rapportdefinitioner, raddefinitioner, kolumndefinitioner, rapporteringsträddefinitioner och dimensionsuppsättningar som är kopplade till ett företag.
 
-##  Byggblock av en rapport
-<a id="building-blocks-of-a-report" class="xliff"></a>
+## <a name="building-blocks-of-a-report"></a> Byggblock av en rapport
 | Byggblock            | Beskrivning                                                                                                                                                                                                                                                                              | Mer information                                                                                                 |
 |---------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
 | Raddefinition            | En raddefinition definierar de beskrivande raderna (till exempel löner eller försäljning) i en rapport. Den anger också de segmentvärden eller dimensioner som innehåller värdena för varje radartikel och innehåller även radformatering och beräkningar.                                                    | [Raddefinitioner](row-definitions-financial-reporting.md)                       |
@@ -48,12 +45,10 @@ Designfilosofin bakom ekonomiska rapporteringsdesigner är att dela upp informat
 
 Om du är nybörjare på att utforma rapporter är det praktiskt att använda rapportguiden för att snabbt skapa en rapportdefinition som du senare kan anpassa. Om du har erfarenhet av att utforma rapporter och vill ha mer flexibilitet i rapportdesignen kan du kombinera nya eller befintliga byggblock för att skapa en ny rapportdefinition. Du behöver inte förstå alla tillgängliga rapportdefinitionsalternativ helt för att skapa kvalitetsrapporter. När du blir bekant med att utforma rapporter kan du expandera dina rapportdefinitioner och dra nytta av mer avancerade funktioner. När du har skapat en grundrapport kan du anpassa rapportdefinitionen och byggblocken i rapportdefinitionen.
 
-## Ordna byggblocken
-<a id="organize-the-building-blocks" class="xliff"></a>
+## <a name="organize-the-building-blocks"></a>Ordna byggblocken
 Använd mappar när du vill ordna byggblock i Report Designer. Alla mappar är specifika för den typ av byggblock de innehåller. Till exempel finns alla mapparna som innehåller raddefinitioner i fönstret **Raddefinitioner** i Report Designer.
 
-### Skapa en mapp
-<a id="create-a-folder" class="xliff"></a>
+### <a name="create-a-folder"></a>Skapa en mapp
 
 1.  I Report Designer. väljer du den typ av byggblock för att organisera i navigeringsfönstret. Om du till exempel vill sortera en raddefinition klickar du på **Raddefinitioner**
 2.  I navigeringsfönstret väljer du en befintlig mapp att skapa en ny mapp under och följer sedan ett av de här stegen:
@@ -62,8 +57,7 @@ Använd mappar när du vill ordna byggblock i Report Designer. Alla mappar är s
 
 3.  Ange namnet på den nya mappen när den visas och tryck sedan på Retur.
 
-## Låsa ett byggblock
-<a id="lock-a-building-block" class="xliff"></a>
+## <a name="lock-a-building-block"></a>Låsa ett byggblock
 Du kan skapa ett lösenord för att skydda och låsa ett byggblock. På det här sättet kan du lägga till en säkerhetsnivå till en rapportkomponent utan att behöva skydda hela systemet. Ett lösenord kan bidra till att skydda information om byggblock som är viktiga för din rapporteringsprocess i månadsslutet. En användare i en roll kan låsa ett byggblock. Andra användare har dock alltid skrivskyddad åtkomst till en låst komponent. Användarna kan öppna, ändra och spara den låsta komponenten under ett nytt namn. En användare som har rollen som administratör kan alltid komma åt och ändra ett låst byggblock.
 1.  I Report Designer öppnar du rapportkomponenten för att låsa till exempel en raddefinition, kolumndefinition, rapportdefinition eller rapporteringsträddefinition.
 2.  Gå till menyn **Verktyg** och klicka på **Skydda/ta bort skydd**. Du kan också klicka på (låsikonen) **Skydda/ta bort skydd** i verktygsfältet.
@@ -71,20 +65,17 @@ Du kan skapa ett lösenord för att skydda och låsa ett byggblock. På det här
 
 Öppna ett låst byggblock genom att öppna byggblocket och sedan klicka på ikonen **Skydda/ta bort skydd** i verktygsfältet. Alternativt, gå till menyn **Verktyg** och klicka på **Ta bort skydd**.
 
-## Byggblocksgrupper
-<a id="building-block-groups" class="xliff"></a>
+## <a name="building-block-groups"></a>Byggblocksgrupper
 
 Byggblock är de raddefinitioner, kolumndefinitioner, rapportträddefinitioner och rapportdefinitioner som du skapar för en rapport. Byggblockgrupp är samlingar med definitioner och dimensionsuppsättningarna som är associerade till ett företag. Byggblocksgrupper kan vara företagsspecifika eller så kan flera företag dela samma uppsättning byggblock. Om några av dina företag har en annan kontoplan kan du använda separata byggblock för varje företag. Alternativt kan du namnge alla dina enskilda byggblock för att återspegla med vilket företag de är kompatibla.
-### Skapa en grupp för byggblock
-<a id="create-a-building-block-group" class="xliff"></a>
+### <a name="create-a-building-block-group"></a>Skapa en grupp för byggblock
 
 1.  I Report Designer, på menyn **Företag** klicka på **Byggblocksgrupper**.
 2.  Klicka på **Ny** i dialogrutan **Byggblocksgrupp**.
 3.  Ange ett unikt namn och beskrivning för byggblockgruppen. Varje fält kan innehålla högst 256 tecken. (Den här siffran innehåller blanksteg.)
 4.  Klicka på **OK** när du vill skapa en ny byggblocksgrupp.
 
-### Tilldela en byggblockgrupp
-<a id="assign-a-building-block-group" class="xliff"></a>
+### <a name="assign-a-building-block-group"></a>Tilldela en byggblockgrupp
 
 När du har skapat en blockgrupp måste du tilldela den till minst ett företag. Du kan sedan skapa rapport-, rad-, kolumn- och rapportträdsdefinitioner och spara dem i byggblocksgruppen. Du måste stänga alla byggblock innan du börjar med följande procedur:
 1.  I Report Designer, på menyn **Företag** klickar du på **Företag**.
@@ -94,8 +85,7 @@ När du har skapat en blockgrupp måste du tilldela den till minst ett företag.
 5.  Klicka på **OK** för att tilldela byggblockgruppen.
 6.  Klicka på **Stäng** för att stänga dialogrutan **Företag**. Byggblockgruppen som du valde tilldelas nu företaget. Nu är alla nya raddefinitioner, kolumndefinitioner osv. som du skapade en del av byggblocksgruppen som tilldelades till det här företaget. Du kan också importera en .tdbx-fil eller rapporten från ett annat system.
 
-###  Visa en byggblockgrupp
-<a id="view-a-building-block-group" class="xliff"></a>
+### <a name="view-a-building-block-group"></a> Visa en byggblockgrupp
 
 När en byggblocksgrupp har skapats och används kan du visa alla byggblock som är tilldelade till det. Du kan även exportera eller importera en byggblocksgrupp och utföra ytterligare underhåll på byggblocksgrupper.
 1.  I Report Designer, på menyn **Företag** klicka på **Byggblockgrupper**.
@@ -103,8 +93,7 @@ När en byggblocksgrupp har skapats och används kan du visa alla byggblock som 
 3.  Klicka på **Visa** för att öppna dialogrutan **Visa byggblocksgrupp** där du kan visa innehållet i byggblocksgruppen.
 4.  Klicka på **Stäng** för att stänga dialogrutan.
 
-### Spara en byggblocksgrupp med ett nytt namn
-<a id="save-a-building-block-group-under-a-new-name" class="xliff"></a>
+### <a name="save-a-building-block-group-under-a-new-name"></a>Spara en byggblocksgrupp med ett nytt namn
 
 Du kan spara en befintlig byggblocksgrupp med ett nytt namn. Därefter kan du ändra den nya byggblocksgruppen utan att ändra den ursprungliga byggblocksgruppen.
 1.  I Report Designer, på menyn **Företag** klicka på **Byggblockgrupper**.
@@ -113,8 +102,7 @@ Du kan spara en befintlig byggblocksgrupp med ett nytt namn. Därefter kan du ä
 4.  Ange ett nytt namn och beskrivning för byggblockgruppen.
 5.  Klicka på **OK**. Den nya bygggblockgruppen visas i dialogrutan **Byggblockgrupper**.
 
-###  Exportera en byggblockgrupp
-<a id="export-a-building-block-group" class="xliff"></a>
+### <a name="export-a-building-block-group"></a> Exportera en byggblockgrupp
 
 Du kan exportera en byggblockgrupp eller specifika rapportbyggblock i en byggblockgrupp. Du kan använda den exporterade byggblockgruppen som en säkerhet. Du kan också kopiera exporterade data mellan byggblocksgrupper eller Finance and Operations-installationer. Rapportdesignern inkluderar de refererade teckenstilarna och dimensionsuppsättningarna tillsammans med byggblockgruppen.
 1.  I Report Designer, på menyn **Företag** klicka på **Byggblockgrupper**.
@@ -128,8 +116,7 @@ Du kan exportera en byggblockgrupp eller specifika rapportbyggblock i en byggblo
 6.  I fältet **Filnamn** anger du ett namn för filen. Report Designer lägger automatiskt till ett .tdbx-filnamnstillägg.
 7.  Klicka på **Spara**. Byggblocksgruppen sparas på den plats du anger.
 
-###  Importera en byggblockgrupp
-<a id="import-a-building-block-group" class="xliff"></a>
+### <a name="import-a-building-block-group"></a> Importera en byggblockgrupp
 
 Du kan importera en byggblocksgrupp till en befintlig byggblocksgrupp eller skapa en ny byggblocksgrupp för data. Alla importerade byggblocksgrupper behåller sina ursprungliga teckensnittsinställningar och företagsreferenser och inkluderar relevanta dimensionsuppsättningar.
 1.  I Report Designer, på menyn **Företag** klicka på **Byggblockgrupper**.
@@ -141,8 +128,7 @@ Du kan importera en byggblocksgrupp till en befintlig byggblocksgrupp eller skap
 
 5.  När du har valt artiklar att importera, klicka på **Importera**.
 
-### Ångra en utcheckning av ett byggblock
-<a id="undo-a-checkout-of-a-building-block" class="xliff"></a>
+### <a name="undo-a-checkout-of-a-building-block"></a>Ångra en utcheckning av ett byggblock
 
 När du öppnar ett byggblock kan andra användare bara komma åt byggblocket i skrivskyddat läge. Ibland kan en användare glömma att stänga ett byggblock eller stänger av sitt system utan att stänga byggblocket. Därför förblir byggblocket utcheckat och ingen annan användare kan öppna det. I en sådan situation kan en administratör för ekonomisk rapportering använda dialogrutan **Utcheckade artiklar** för att checka in byggblock som en användare har lämnat i utcheckad. **Obs!** Du måste ha rollen administratör för att checka in byggblock med hjälp av dialogrutan **Utcheckade artiklar**.
 1.  I Report Designer på menyn **Verktyg** klickar du på **Utcheckade artiklar**.
@@ -150,8 +136,7 @@ När du öppnar ett byggblock kan andra användare bara komma åt byggblocket i 
 3.  Välj ett byggblock och klicka sedan på **Ångra utcheckningen**
 4.  Klicka på **Ja** för att check in byggblocket.
 
-# Se även
-<a id="see-also" class="xliff"></a>
+# <a name="see-also"></a>Se även
 
 [Ekonomisk rapportering](financial-reporting-intro.md)
 

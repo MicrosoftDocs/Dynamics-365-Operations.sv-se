@@ -10,13 +10,14 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: ReqDemPlanDefaultAlgorithmParameters, ReqDemPlanForecastParameters
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 72653
 ms.assetid: c5fa4b09-512d-4349-ac51-cc13da69a160
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: roxanad
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -24,11 +25,9 @@ ms.openlocfilehash: 74d520199410711b80b750a12ee726633e09d01c
 ms.contentlocale: sv-se
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Behovsprognoser inställning
-<a id="demand-forecasting-setup" class="xliff"></a>
+# <a name="demand-forecasting-setup"></a>Behovsprognoser inställning
 
 [!include[banner](../includes/banner.md)]
 
@@ -37,24 +36,21 @@ Detta avsnitt beskriver de uppgifter som du måste utföra för att förbereda b
 
 Förval uppgifter ingår att inrätta följande data och parametrar.
 
-## Artikelallokeringsnyckel
-<a id="item-allocation-key" class="xliff"></a>
+## <a name="item-allocation-key"></a>Artikelallokeringsnyckel
 En efterfrågan prognosen beräknas för ett objekt och dess dimensioner endast om objektet är en del av en fördelningsnyckel. Denna regel tillämpas för att gruppera ett stort antal artiklar i syfte att kunna efterfrågeprognoser kan skapas snabbare. Procentandelen för artikelallokeringsnyckel ignoreras när efterfrågeprognoser genereras. Prognoser är skapade baserad på historiska data bara. 
 
 Ett objekt och dess dimensioner måste vara en del av endast en punkt fördelningsnyckel om posten fördelningsnyckel används under prognos. 
 
 För att lägga till en lagerhållningsenhet (SKU) i en artikelallokeringsnyckel, gå till **Huvudplanering** &gt; **Inställningar** &gt; **Efterfrågeprognosticering** &gt; **Artikelallokeringsnycklar**. Använd **Tilldela artiklar** sidan till att tilldela ett objekt till en fördelningsnyckel.
 
-## Koncerninterna planeringsgrupper
-<a id="intercompany-planning-groups" class="xliff"></a>
+## <a name="intercompany-planning-groups"></a>Koncerninterna planeringsgrupper
 Behovsprognoser genererar gränsöverskridande företag prognoser. Företag som planeras tillsammans grupperas i en enda koncernintern planeringsgrupp i Microsoft Dynamics 365 for Finance and Operations. För att ange (efter företag) vilka artikelallokeringsnycklar som ska beaktas för efterfrågeprognosticering, associera en artikelallokeringsnyckel med den koncerninterna planeringsgruppmedlemmen genom att gå till **Huvudplanering** &gt; **Inställningar** &gt; **Koncerninterna planeringsgrupper**. 
 
 Om inga artikelallokeringsnycklar tilldelas företagsinterna planeringsgruppmedlemmar, kommer en efterfrågeprognos som standard att beräknas för alla artiklar som tilldelats till samtliga artikelallokeringsnycklar från alla Finance and Operations-företag. Extra filtering alternativ för företag och fördelningsnycklar finns på **generera statistiska basprognosen** sida. 
 
 Kontrollera antalet objekt som prognostiseras. Onödiga objekt kan orsaka ökade kostnader när du använder Microsoft Azure maskinen lärande.
 
-## Parametrar för efterfrågeprognosticering
-<a id="demand-forecasting-parameters" class="xliff"></a>
+## <a name="demand-forecasting-parameters"></a>Parametrar för efterfrågeprognosticering
 Gå till **Huvudplanering** &gt; **Inställningar** &gt; **Parametrar för efterfrågeprognosticering** för att skapa parametrar för efterfrågeprognosticering. Eftersom efterfrågan prognostisera körs cross-firma, installationen är global. Med andra ord, gäller för alla företag. 
 
 Behovsprognoser genereras prognosen i mängder. Därför är den enhet som kvantiteten bör uttryckas i måste specificeras i **efterfrågan** . Enheten måste vara unikt, för att garantera att aggregering och procentuell fördelning. För mer information om summering och procentuell fördelning, se [göra manuella justeringar av den ursprungliga prognosen](manual-adjustments-baseline-forecast.md). För varje enhet som används för artiklar som ingår i behovsprognoser, se till att det finns en konverteringsregel för enheten och den allmänna prognoser enhet. När prognosen generation, en lista över poster som inte har en enhet omräkning finnas loggat, så att du lätt kan korrigera inställningen. 
@@ -80,12 +76,10 @@ Finance and Operations använder en webbtjänst för maskininlärning för att g
 
 För att skapa efterfrågeförutsägelser kan du använda din egen service genom att använda Machine Learning Studio eller Finance and Operations behovsprognoser för efterfrågeprognoser. Instruktioner för att implementera Finance and Operations experiment för efterfrågeprognosticering som en webbtjänst finns i Finance and Operations På **behovsprognosparametrar** sidan, klicka på **Azure Machine Learning** fliken.
 
-## Inställningar för Finance and Operations maskininlärningstjänst för efterfrågeprognosticering
-<a id="settings-for-the-finance-and-operations-demand-forecasting-machine-learning-service" class="xliff"></a>
+## <a name="settings-for-the-finance-and-operations-demand-forecasting-machine-learning-service"></a>Inställningar för Finance and Operations maskininlärningstjänst för efterfrågeprognosticering
 Gå till **Huvudplanering** &gt; **Inställningar** &gt; **Efterfrågeprognosticering** &gt; **Algoritmparametrar för prognos** om du vill visa de parametrar som kan konfigureras för Finance and Operations tjänst för efterfrågeprognosticering. Sidan **Algoritmparametrar för prognoser** visas standardvärden för parametrar. Du kan skriva över dessa parametrar på sidan **Parametrar för efterfrågeprognosticering**. På **fliken Allmänt om du** vill skriva över parametrar globalt, eller använda **posten fördelningsnycklar för** att skriva över parametrar per punkt fördelningsnyckel. Parametrar som är över för en fördelningsnyckel som endast påverkar prognosen för de objekt som associeras med objektet fördelningsnyckel.
 
-Se även
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Se även
 --------
 
 [Introduktion till efterfrågeprognosticering](introduction-demand-forecasting.md)

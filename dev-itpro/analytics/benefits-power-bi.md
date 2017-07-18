@@ -9,10 +9,11 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
+ms.reviewer: sericks
 ms.search.scope: Operations, UnifiedOperations, Talent, Core
 ms.search.region: Global
 ms.author: JCart
-ms.search.validFrom: 2017-06-30
+ms.search.validFrom: 2017-06-30T00:00:00.000Z
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,22 +23,19 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Power BI-innehåll med förmåner
-<a id="benefits-power-bi-content" class="xliff"></a>
+# <a name="benefits-power-bi-content"></a>Power BI-innehåll med förmåner
 
 [!include[banner](../includes/banner.md)]
 
 Det här avsnittet beskriver Microsoft Power BI-innehåll för **Förmåner**. Det beskriver hur du får åtkomst till de rapporter som är inkluderade, samt ger dig information om den datamodell och de enheter som användes för att skapa innehållet.
 
-## Åtkomst till Power BI-innehåll
-<a id="accessing-the-power-bi-content" class="xliff"></a>
+## <a name="accessing-the-power-bi-content"></a>Åtkomst till Power BI-innehåll
 Power BI-innehåll för **Förmåner** visas i arbetsytan **Förmånshantering** om du använder någon av följande produkter:
 
 - Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, juli 2017 uppdatering
 - Microsoft Dynamics 365 for Talent
 
-## Rapporter som ingår i Power BI-innehållet
-<a id="reports-that-are-included-in-the-power-bi-content" class="xliff"></a>
+## <a name="reports-that-are-included-in-the-power-bi-content"></a>Rapporter som ingår i Power BI-innehållet
 Rapporter som ingår i  Power BI-innehållspaketet **Förmåner** har både diagram och tabeller med ytterligare information. Följande register beskriver rapporterna.
 
 | Rapport                       | Innehåll                                                                                       |
@@ -47,8 +45,7 @@ Rapporter som ingår i  Power BI-innehållspaketet **Förmåner** har både diag
                                                                                              
 Diagrammen och rutorna i samtliga dessa rapporter kan filtreras och fästas på instrumentpanelen. Mer information om hur du filtrerar och fäster i Power BI finns i [Skapa och konfigurera en intrumentpanel](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
-## Utöka Power BI-innehåll
-<a id="extending-the-power-bi-content" class="xliff"></a>
+## <a name="extending-the-power-bi-content"></a>Utöka Power BI-innehåll
 Genom att använda innehållspaket som är tillgängliga i Microsoft Dynamics Lifecycle Services (LCS) kan du ge bra analyser till människor som inte är inloggade i Finance and Operations. Du kan ändra dessa innehållspaket så att de innehåller andra rapporter och modeller och publicera innehållspaket till din Power BI.com-innehavare för analys.
 
 Du hittar Power BI-innehåll för **Förmåner** i det delade resursbiblioteket i LCS. Mer information om hur du laddar ned innehållspaket och använder det i din organisation finns i [Power BI-innehåll i LCS från Microsoft och dina partner](power-bi-content-microsoft-partners.md). Om du vill se en demonstration som visar hur du implementerar Power BI-innehållet, se [Power BI-innehåll från Microsoft och dina samarbetspartners i Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office mix.
@@ -56,8 +53,7 @@ Du hittar Power BI-innehåll för **Förmåner** i det delade resursbiblioteket 
 >[!NOTE]
 >.pbix-filerna i Lifecycle Services gäller endast Finance and Operations.
 
-## Förstå datamodellen och enheterna
-<a id="understanding-the-data-model-and-entities" class="xliff"></a>
+## <a name="understanding-the-data-model-and-entities"></a>Förstå datamodellen och enheterna
 Följande data används för att fylla i rapporterna i Power-Bi-innehållet för **Förmåner**. Denna tabell visar enheterna som innehållet baserades på.
 
 | Enhet                   | Innehåll                                                                                                   | Relationer med andra entiteter |

@@ -9,12 +9,13 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.reviewer: twheeloc
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 222534
 ms.assetid: d4df11ce-4d36-4c66-8230-f5fc58e021bc
 ms.search.region: global
 ms.author: abruer
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,11 +23,9 @@ ms.openlocfilehash: 31040ff14b99a9b351268feb88698ac706befb55
 ms.contentlocale: sv-se
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# En verifikation med flera kund- eller leverantörsposter
-<a id="single-voucher-with-multiple-customer-or-vendor-records" class="xliff"></a>
+# <a name="single-voucher-with-multiple-customer-or-vendor-records"></a>En verifikation med flera kund- eller leverantörsposter
 
 [!include[banner](../includes/banner.md)]
 
@@ -46,12 +45,10 @@ Det här avsnittet visar hur kvittningen kommer att bearbetas när en verifikati
 -   Kassarabattbokföring
 -   Omvärderingsbokföring
 
-## Hur påverkar kvittning användning av enskild verifikation
-<a id="how-does-settlement-impact-single-voucher-usage" class="xliff"></a>
+## <a name="how-does-settlement-impact-single-voucher-usage"></a>Hur påverkar kvittning användning av enskild verifikation
 När du bokför en verifikation som innehåller flera kund- eller leverantörsposter skapas en enskild redovisningsverifikation som innehåller flera kundreskontra- eller leverantörsreskontrasaldon. Under kvittningsprocessen används de ursprungliga redovisningsposterna för att skapa redovisningsposter för kassarabatten, orealiserad vinst och förlust, realiserad vinst och förlust och avdrag för originaldokumentets samlingskonto. Om till exempel en kassarabatt tas när du kvittar en leverantörsbetalning till en faktura måste kassarabattredovisningen bokföras till huvudboken för leverantörsreskontra från den ursprungliga fakturan. Om den ursprungliga fakturan bokfördes i en verifikation som innehåller flera leverantörsposter, sammanfattas den ursprungliga redovisningen. I det här fallet, eftersom det inte finns något sätt att få tillgång till den detaljerade redovisningsposten för varje leverantörstransaktion i den enkla verifikationen finns det inget sätt att bestämma hur användaren avsåg hur kassarabatten skulle redovisas.
 
-### En verifikation med flera leverantörer och inverkan på kassarabattredovisning
-<a id="one-voucher-with-multiple-vendors-and-the-impact-on-cash-discount-accounting" class="xliff"></a>
+### <a name="one-voucher-with-multiple-vendors-and-the-impact-on-cash-discount-accounting"></a>En verifikation med flera leverantörer och inverkan på kassarabattredovisning
 
 I följande exempel registreras flera leverantörsfakturor i redovisningen på en och samma verifikation på sidan **Allmän journal**. Dessa fakturor fördelas över flera kontodimensioner.
 
@@ -115,8 +112,7 @@ Nu när INV2 har betalats, kommer följande post att göras. Observera att kassa
 | 14000056    | 520200-003-- | Leverantörskassarabatt |           | 3,00       |
 | 14000056    | 200110-001-  | Leverantörssaldo       | 3,00      |            |
 
-### En verifikation med flera leverantörer och inverkan på redovisning av realiserad vinst/förlust
-<a id="one-voucher-with-multiple-vendors-and-the-impact-on-realized-gainloss-accounting" class="xliff"></a>
+### <a name="one-voucher-with-multiple-vendors-and-the-impact-on-realized-gainloss-accounting"></a>En verifikation med flera leverantörer och inverkan på redovisning av realiserad vinst/förlust
 
 |             |                  |             |                 |           |            |                  |              |
 |-------------|------------------|-------------|-----------------|-----------|------------|------------------|--------------|
@@ -165,8 +161,7 @@ Nu när INV2 har betalats, kommer följande post att göras. Observera att kursf
 | 14000056    | 801300-002- | Kursförlust | 0,00                                     | 2.00                                    |
 | 14000056    | 200110-001- | Leverantörssaldo     |                                          | -2,00                                   |
 
-## En verifikation för saldoöverföringar och nettingscenarion
-<a id="one-voucher-for-balance-transfers-and-netting-scenarios" class="xliff"></a>
+## <a name="one-voucher-for-balance-transfers-and-netting-scenarios"></a>En verifikation för saldoöverföringar och nettingscenarion
 Två vanliga scenarier som använder en verifikation som innehåller flera kunder eller leverantörer, inkluderar saldoöverföringar från en kund/leverantör till en annan kund/leverantör och netting av en kund och leverantör som är samma organisation. Följande två exempel visar den metod som ska användas för att ange dessa scenarier i Finance and Operations som ett alternativ till att registrera dem i en verifikation. 
 
 En *saldoöverföring* är en verifikation med flera kunder som har angetts för syftet att föra över saldot från en kund till en annan kund (densamma för leverantörer). Det här scenariot kan ske när ansvaret för att betala fakturan skiftar till en annan part, till exempel ett underordnat företag som skiftar ansvaret till ett moderbolag. 
@@ -238,8 +233,7 @@ På den relaterade verifikationen för kassarabatt kommer de ekonomiska dimensio
 
 ### 
 
-## En verifikation med en netting för flera kunder och leverantörer
-<a id="one-voucher-with-a-netting-for-multiple-customers-and-vendors" class="xliff"></a>
+## <a name="one-voucher-with-a-netting-for-multiple-customers-and-vendors"></a>En verifikation med en netting för flera kunder och leverantörer
 Netting kan vara användbart när organisation köper och säljer till samma företag. Istället för att betala leverantörsfakturor och vänta på att ta emot betalning för fakturor, nettas leverantören och fakturor. Nettingtransaktionen kvittas mot utestående saldon. 
 
 Anta att leverantör 1001 och kund US-008 är samma enhet, så din organisation vill netta saldo i skulder mot saldo i fodringar innan du betalar/mottar det återstående saldot. Anta att kundposten är skyldig 75,00 EUR och leverantörsposten är skyldig 100,00 EUR vilket innebär att du kan föredrar att netta saldon och bara betala leverantören 25,00 EUR. Anta vidare att redovisningsvalutan är SEK. I det här fallet anges en nettingtransaktion i en verifikation i betalningsjournalen för leverantörsreskontra.

@@ -10,12 +10,13 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: FinancialReports
 audience: Application User
+ms.reviewer: shylaw
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 10444
 ms.assetid: 3eae6dc3-ee06-4b6d-9e7d-1ee2c3b10339
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -23,19 +24,16 @@ ms.openlocfilehash: fedde78a563939fd7080e748c412c89c71586823
 ms.contentlocale: sv-se
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Ekonomisk rapportering
-<a id="financial-reporting" class="xliff"></a>
+# <a name="financial-reporting"></a>Ekonomisk rapportering
 
 [!include[banner](../includes/banner.md)]
 
 
 Det här avsnittet beskriver hur du kommer åt ekonomisk rapportering i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition och hur du använder finansiella rapporteringsfunktioner. Den innehåller en beskrivning av de ekonomiska standardrapporter som tillhandahålls.
 
-Åtkomst till ekonomisk rapportering
-<a id="accessing-financial-reporting" class="xliff"></a>
+<a name="accessing-financial-reporting"></a>Åtkomst till ekonomisk rapportering
 -----------------------------
 
 Menyn **Ekonomisk rapportering** finns på följande platser i Finance and Operations:
@@ -55,8 +53,7 @@ Om du vill skapa och generera ekonomiska rapporter för en juridisk person måst
 
 Funktionerna för ekonomisk rapportering är tillgängliga för användare som har rätt behörigheter och uppgifter tilldelade genom sina säkerhetsroller. Nedan följer dessa privilegier och behörigheter tillsammans med de kopplade rollerna.
 
-### Programbehörigheter
-<a id="duties" class="xliff"></a>
+### <a name="duties"></a>Programbehörigheter
 
 | Behörighetsetikett                            | Beskrivning                                                             | AOT-namn                         |
 |---------------------------------------|-------------------------------------------------------------------------|----------------------------------|
@@ -65,8 +62,7 @@ Funktionerna för ekonomisk rapportering är tillgängliga för användare som h
 | Generera ekonomiska rapporter            | Generera och uppdatera ekonomiska rapporter.                                 | FinancialReportsGenerate         |
 | Granska finansiellt resultat          | Granska och analysera finansiellt resultat.                               | FinancialReportsPerfReview       |
 
-### Behörigheter
-<a id="privileges" class="xliff"></a>
+### <a name="privileges"></a>Behörigheter
 
 | Privilegieetikett                       | Beskrivning                                                             | AOT-namn                         |
 |---------------------------------------|-------------------------------------------------------------------------|----------------------------------|
@@ -75,8 +71,7 @@ Funktionerna för ekonomisk rapportering är tillgängliga för användare som h
 | Generera ekonomiska rapporter            | Generera och uppdatera ekonomiska rapporter.                                 | FinancialReportsGenerateReports  |
 | Visa ekonomiska rapporter                | Visa ekonomiska rapporter.                                                 | FinancialReportsView             |
 
-### Roller
-<a id="roles" class="xliff"></a>
+### <a name="roles"></a>Roller
 
 | Privilegieetikett                       | Avgift                                  | Roller                                                                           |
 |---------------------------------------|---------------------------------------|---------------------------------------------------------------------------------|
@@ -87,8 +82,7 @@ Funktionerna för ekonomisk rapportering är tillgängliga för användare som h
 
 När en användare har lagts till eller om en roll ändras får användaren åtkomst till ekonomisk rapportering inom några minuter. **Obs!** Rollen sysadmin läggs till i alla roller inom ekonomisk rapportering.
 
-## Standardrapporter
-<a id="default-reports" class="xliff"></a>
+## <a name="default-reports"></a>Standardrapporter
 Ekonomisk rapportering innehåller 22 standardrapporter. Varje rapport använder standardkategorierna för huvudkonto i Finance and Operations. Du kan använda dessa rapporter som de är eller som utgångspunkt för din ekonomiska rapportering. Utöver de traditionella boksluten, som till exempel resultaträkning och balansräkning, inkluderar dessa standardrapporter rapporter som visar andra typer av ekonomiska rapporter som du kan skapa. Varje rapport i följande tabell länkar till en Office Mix-presentation om rapporten.
 
 | Standardrapport                                                                                         | beskrivning                                                                                                                                                                                                                                                                                                          |
@@ -116,16 +110,13 @@ Ekonomisk rapportering innehåller 22 standardrapporter. Varje rapport använder
 | [Veckoförsäljning och rabatt – standardinställning](https://mix.office.com/watch/112ng0hy5de0j)                     | Visa försäljning och rabatter för varje vecka i en månad. Den här rapporten innehåller en fyraveckors summa.                                                                                                                                                                                                              |
 | [Tillgängliga budgetmedel - standardinställningar](https://mix.office.com/watch/15hcpezcbx7tv)                         | Visa en detaljerad jämförelse av reviderad budget, faktisk utgift, budgetreservationer och tillgängliga budgetmedel för alla konton                                                                                                                                                                                  |
 
-## Öppna ekonomiska rapporter
-<a id="opening-financial-reports" class="xliff"></a>
+## <a name="opening-financial-reports"></a>Öppna ekonomiska rapporter
 När du klickar på menyn **Ekonomisk rapportering** visas listan över ekonomiska standardrapporter för företaget. Du kan sedan öppna eller ändra en rapport. Öppna en av standardrapporterna genom att välja rapportnamnet. Första gången rapporten öppnas skapas den automatiskt för föregående månad. Om du exempelvis öppnar en rapport för första gången i augusti 2016 genereras rapporten för den 31 juli 2016. När en rapport har öppnats kan du börja utforska den mer ingående genom att titta närmare på specifika delar av data och ändra rapportsalternativ.
 
-## Skapa och ändra ekonomiska rapporter
-<a id="creating-and-modifying-financial-reports" class="xliff"></a>
+## <a name="creating-and-modifying-financial-reports"></a>Skapa och ändra ekonomiska rapporter
 På listan med ekonomiska rapporter kan du skapa en ny rapport eller ändra en befintlig rapport. Om du har rätt behörighet kan du skapa en ny ekonomisk rapport genom att klicka på **Ny** i åtgärdsfönstret. Ett rapportdesignerprogram hämtas till enheten. När rapportdesignern startar kan du skapa den nya rapporten. När du har sparat den nya rapporten visas på listan med ekonomiska rapporter. Listan visar endast rapporter som har skapats för företaget som använder i Finance and Operations. Mer information om att skapa och ändra ekonomiska rapporter i Dynamics 365 for Finance and Operations finns i följande [blogginlägg](https://blogs.msdn.microsoft.com/dynamics_financial_reporting/tag/learning/) från Dynamics ekonomirapporteringsblogg. **Obs!** Den dator som du hämtar rapportdesignerklienten till måste har version 4.6.2 av Microsoft .NET Framework installerat. Den här versionen av Microsoft .NET Framework kan hämtas och installeras [här](https://www.microsoft.com/en-us/download/details.aspx?id=53345). Om du använder Chrome måste du installera tillägget ClickOnce för att hämta rapportdesignerklienten. Om du använder osynligt läge, se då till att tillägget ClickOnce har aktiverats för osynligt läge. Det går även att ändra en rapport på listan med ekonomiska rapporter. Klicka på **Redigera** i åtgärdsfönstret när området runt rapportnamnet markeras. Rapportprogrammet startar.
 
-Se även
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Se även
 --------
 
 [Visa ekonomiska rapporter](view-financial-reports.md)

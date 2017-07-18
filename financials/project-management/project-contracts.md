@@ -10,12 +10,13 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: ProjProjectContractsListPage, ProjProjectsListPage
 audience: Application User, IT Pro
+ms.reviewer: twheeloc
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 23561
 ms.assetid: bfd18d9b-d9a6-4e21-bc95-bf4af45f617f
 ms.search.region: Global
 ms.author: twheeloc
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -23,11 +24,9 @@ ms.openlocfilehash: 2aa70e050bf068a26e2d0d86c26045fc000931eb
 ms.contentlocale: sv-se
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Projektkontrakt
-<a id="project-contracts" class="xliff"></a>
+# <a name="project-contracts"></a>Projektkontrakt
 
 [!include[banner](../includes/banner.md)]
 
@@ -42,8 +41,7 @@ Varje projekt som ska faktureras måste kopplas till ett projektkontrakt. Instä
 
 Ett projektkontrakt kan ange en eller flera källor till finansieringen. Därför kan du dela faktureringen mellan flera finansiärer, ställa in finansieringsgränser så att inte finansieringskällor faktureras mer än ett angivet belopp och konfigurera finansieringsregler för debitering av omkostnader.
 
-## Finansiering av projektkontrakt
-<a id="funding-for-project-contracts" class="xliff"></a>
+## <a name="funding-for-project-contracts"></a>Finansiering av projektkontrakt
 Vissa projektkontrakt anger att flera parter delar ansvaret för att finansiera projektkostnaderna. Nedan följer några exempel:
 
 -   En stort kund med flera avdelningar begär att finansiering för ett projekt delas per avdelning.
@@ -70,8 +68,7 @@ Nedan följer några steg du kan ta för att göra det enklare att dela fakturer
 
 Avgör vilken momsgrupp som associeras med en transaktion genom att söka igenom projektet efter en momsgrupptilldelning. Om ingen momsgrupptilldelning har gjorts på projektnivån genomsöks projektkontraktet.
 
-### Exempel: Flera finansieringskällor (enkel)
-<a id="example-multiple-funding-sources-simple" class="xliff"></a>
+### <a name="example-multiple-funding-sources-simple"></a>Exempel: Flera finansieringskällor (enkel)
 
 I följande tabell finns scenarier för hantering av finansieringsallokering mellan flera finansieringskällor. Dessa scenarier baseras på följande antaganden:
 
@@ -167,8 +164,7 @@ I följande tabell finns scenarier för hantering av finansieringsallokering mel
 </tbody>
 </table>
 
-### Exempel: Flera finansieringskällor (komplex)
-<a id="example-multiple-funding-sources-complex" class="xliff"></a>
+### <a name="example-multiple-funding-sources-complex"></a>Exempel: Flera finansieringskällor (komplex)
 
 Du har tre finansieringskällor som du vill använda i följande ordning:
 
@@ -253,8 +249,7 @@ Följande tabell undersöker det här scenariot noggrannare.
 </tbody>
 </table>
 
-## Faktureringsregler
-<a id="billing-rules" class="xliff"></a>
+## <a name="billing-rules"></a>Faktureringsregler
 När du förhandling om ett projektkontrakt med en kund, kan du definiera hur och när du kan fakturera kunden för arbete på ett projekt. När du har ställt in projektkontraktet och projektet kan du ställa in faktureringsregler för projektet. Faktureringsreglerna baseras på projektvillkoren som anges i projektkontraktet. Vilka faktureringsregler som du kan skapa beror på villkoren i projektkontraktet och typen av projekt, till exempel Tid och material eller Fastpris, som du associerar med faktureringsregeln. Du kan skapa mer än en faktureringsregel för ett projektkontrakt. Du kan också tilldela en faktureringsregel till projekt, som associeras med samma projektkontrakt, och du har liknande faktureringstermer. 
 
 Du kan ställa in följande faktureringsregler:
@@ -273,8 +268,7 @@ När du är redo att fakturera kunden är beloppet på fakturan för projektet b
 
 Följande avsnitt innehåller exempel som visar hur du ställer in och hanterar faktureringsregler för ett projekt.
 
-### Exempel: Skapa en faktureringsregel som baseras på antalet levererade enheter
-<a id="example-create-a-billing-rule-that-is-based-on-the-number-of-units-delivered" class="xliff"></a>
+### <a name="example-create-a-billing-rule-that-is-based-on-the-number-of-units-delivered"></a>Exempel: Skapa en faktureringsregel som baseras på antalet levererade enheter
 
 Din organisation avtalar att tillhandahålla totalt fem utbildningssessioner till en kunds medarbetare till en kostnad på 10 000 per utbildningssession. Du fakturerar kunden efter varje utbildningssession. 
 
@@ -286,16 +280,14 @@ När du ställer in faktureringsreglerna för kontraktet använder du följande 
 
 När du har slutfört en utbildningssession kan du skapa en faktura på 10 000 för den första enheten som levererades och skicka fakturan till kunden.
 
-### Exempel: Skapa en faktureringsregel som baseras på en viss procent av projektslutförande (manuell beräkning)
-<a id="example-create-a-billing-rule-that-is-based-on-a-specified-percentage-of-project-completion-manual-calculation" class="xliff"></a>
+### <a name="example-create-a-billing-rule-that-is-based-on-a-specified-percentage-of-project-completion-manual-calculation"></a>Exempel: Skapa en faktureringsregel som baseras på en viss procent av projektslutförande (manuell beräkning)
 
 Din organisation, ett datakonsultföretag, ingår ett avtal med en kund om att utveckla en del av en produkt som kunden utvecklar. Organisationen förbinder sig att leverera programvarukoden över en period på sex månader. Kunden förbinder sig att betala din organisation totalt 100 000 för arbetet. Du skapar en faktureringsregel för att fakturera kunden baserat på en procentsats färdigt arbete i projektet enligt avtalet.
 
 -   I slutet av den första månaden träffar du kunden för att bestämma hur många procent av arbetet som har slutförts. Vid granskning av projektet beslutar du och kunden att projektet är slutfört till 15 procent.
 -   Du skapar en faktura på 15 000 (15 procent av 100 000) och skickar den till kunden.
 
-### Exempel: Skapa en faktureringsregel som baseras på en viss procentandel av projektslutförande (automatisk beräkning)
-<a id="example-create-a-billing-rule-that-is-based-on-a-specified-percentage-of-project-completion-automatic-calculation" class="xliff"></a>
+### <a name="example-create-a-billing-rule-that-is-based-on-a-specified-percentage-of-project-completion-automatic-calculation"></a>Exempel: Skapa en faktureringsregel som baseras på en viss procentandel av projektslutförande (automatisk beräkning)
 
 Din organisation, en programutvecklingsfirma, går med på att sammanställa ett lönelisteredovisningspaket till en kund för 30 000. Kunden förbinder sig att betala din organisation baserat på procentandelen slutfört arbete. Du beräknar att projektkostnaderna är 20 000. Projektkontraktet anger arbetskategorierna som används i faktureringsprocessen. Du ställer in faktureringsregler som automatiskt beräknar fakturabelopp för procent av arbete, som utförs för varje kategori. Du ställer in en budget för varje kategori:
 
@@ -308,8 +300,7 @@ När du skapar en kundfaktura för första gången, är fakturabeloppet automati
 -   Fakturabeloppet på 8 667 beräknas automatiskt (33 procent av 20 000 + 20 procent av 10 000).
 -   Du skapar en faktura på 8 667 och skickar den till kunden.
 
-### Exempel: Skapa en faktureringsregel som baseras på överenskomna milstolpar
-<a id="example-create-a-billing-rule-that-is-based-on-agreed-upon-milestones" class="xliff"></a>
+### <a name="example-create-a-billing-rule-that-is-based-on-agreed-upon-milestones"></a>Exempel: Skapa en faktureringsregel som baseras på överenskomna milstolpar
 
 Din organisation, en management-konsultfirma, genomför marknadsundersökningar för en konsumentprodukt som kunden planerar att sälja. Kunden förbinder sig att använda dina tjänster för en period på tre månader som startar i mars, och förbinder sig att betala din organisation 50 000. Projektet har tre milstolpar:
 
@@ -326,8 +317,7 @@ När du ställer in projektkontrakt går du med på att fakturera kunden baserat
 
 När den första milstolpen är klar de 31 mars, markerar du milstolpen som slutförd och skapar sedan en faktura med beloppet 10 000 som skickas till kunden. Du kan inte skapa en faktura för en milstolpe förrän du har markerat milstolpen som slutförd.
 
-### Exempel: Skapa en faktureringsregel baserad på tjänster plus en förvaltningsavgift
-<a id="example-create-a-billing-rule-that-is-based-on-services-plus-a-management-fee" class="xliff"></a>
+### <a name="example-create-a-billing-rule-that-is-based-on-services-plus-a-management-fee"></a>Exempel: Skapa en faktureringsregel baserad på tjänster plus en förvaltningsavgift
 
 Din organisation, en management-konsultfirma, går med på att utföra marknadsundersökningar för att utvärdera genomförbarheten av en produkt som kunden, ett butiksföretag, utvecklar. Avtalets villkor anger att du tillhandahåller tjänster från de tre bästa managementkonsulterna som genomför undersökningen baserat på tid och material. Kunden går med på att betala 100 per timme plus en ytterligare administrationsavgift på 10 procent för konsulttimmar som debiteras projektet. 
 
@@ -341,8 +331,7 @@ När du skapar en faktura för kunden, kommer kunden att faktureras en 10 procen
 
 Om avgifter är momspliktiga för en kund och du väljer en momsgrupp i projektkontraktet, anges momsgruppen automatiskt i en faktureringsregel för avgifter.
 
-### Exempel: Skapa en faktureringsregel för tids- och materialvärde
-<a id="example-create-a-billing-rule-for-the-value-of-time-and-materials" class="xliff"></a>
+### <a name="example-create-a-billing-rule-for-the-value-of-time-and-materials"></a>Exempel: Skapa en faktureringsregel för tids- och materialvärde
 
 Din organisation, ett datakonsultföretag, avtalar att tillhandahålla fem tekniska konsulter att arbeta på ett programvaruutvecklingsprojekt för en kund under nästa halvår. Kunden förbinder sig att betala 150 för varje konsulttimme plus kostnaden för kontorsmaterial. Din organisation skickar en faktura till kunden i slutet av varje månad. 
 

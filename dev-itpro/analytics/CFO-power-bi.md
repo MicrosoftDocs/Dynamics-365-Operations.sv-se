@@ -9,10 +9,11 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application user, IT Pro
+ms.reviewer: sericks
 ms.search.scope: Core, Operations, UnifiedOperations
 ms.search.region: Global
 ms.author: kweekley
-ms.search.validFrom: 2017-06-30
+ms.search.validFrom: 2017-06-30T00:00:00.000Z
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,21 +23,18 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Power BI-innehåll för översikt över ekonomichef
-<a id="cfo-overview-power-bi-content" class="xliff"></a>
+# <a name="cfo-overview-power-bi-content"></a>Power BI-innehåll för översikt över ekonomichef
 
 [!include[banner](../includes/banner.md)]
 
 
 Det här avsnittet beskriver **Översikt över ekonomichef** för Microsoft Power BI-innehåll. 
 
-## Åtkomst till Power BI-innehåll
-<a id="accessing-the-power-bi-content" class="xliff"></a>
+## <a name="accessing-the-power-bi-content"></a>Åtkomst till Power BI-innehåll
 
 Om du använder Microsoft Dynamics 365 for Finance and Operations, Enterprise edition juli 2017 - uppdatering visas rapporter från Power BI innehåll för **Ekonomichef översikt** i arbetsytan **Ekonomichef översikt**.
 
-## Rapporter som ingår i Power BI-innehållet
-<a id="reports-that-are-included-in-the-power-bi-content" class="xliff"></a>
+## <a name="reports-that-are-included-in-the-power-bi-content"></a>Rapporter som ingår i Power BI-innehållet
 Power Bi-innehåll för **Ekonomichef översikt** är sammansatt av rapporter utifrån annat Power BI-innehåll, tillsammans med vissa budgeterade och faktiska saldon från redovisningen. Därför ger detta Power BI -innehåll ekonomichefen (Ekonomichef) en översikt över organisationen.
 
 Följande tabell visar Power BI-innehållet som rapporten kopieras från och de rapporter som finns i arbetsytan **Ekonomichef översikt**. Länkar finns i dokumentationen för olika Power BI-innehåll.
@@ -49,8 +47,7 @@ Följande tabell visar Power BI-innehållet som rapporten kopieras från och de 
 | [Hantering av kredit och inkasso](/dynamics365/unified-operations/financials/accounts-receivable/credit-collections-power-bi) | <ul><li>Förfallna kunder</li><li>Kundens över kreditgräns</li><li>Åldersfördelade saldon</li></ul> |
 | [Inköps- och utgiftsanalys](/dynamics365/unified-operations/financials/accounts-receivable/credit-collections-power-bi) | <ul><li>Inköp per månad/dag</li><li>Främsta 10 leverantörerna per inköp</li><li>Främsta 10 produkterna per inköp</li></ul> |
 
-## Utöka Power BI-innehåll
-<a id="extending-the-power-bi-content" class="xliff"></a>
+## <a name="extending-the-power-bi-content"></a>Utöka Power BI-innehåll
 Genom att använda innehållspaket som är tillgängliga i Microsoft Dynamics Lifecycle Services (LCS) kan du ge bra analyser till människor som inte är inloggade i Microsoft Dynamics 365. Du kan ändra dessa innehållspaket så att de innehåller andra rapporter och modeller och publicera innehållspaket till din Power BI.com-innehavare för analys.
 
 Du hittar Power BI-innehåll för **Ekonomichef översikt** i det delade resursbiblioteket i LCS. Mer information om hur du laddar ned innehållspaket och använder det i din organisation finns i [Power BI-innehåll i LCS från Microsoft och dina partner](/dynamics365/unified-operations/dev-itpro/analytics/power-bi-content-microsoft-partners). Om du vill se en demonstration som visar hur du implementerar Power BI-innehållet, se [Power BI-innehåll från Microsoft och dina samarbetspartners i Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office mix.

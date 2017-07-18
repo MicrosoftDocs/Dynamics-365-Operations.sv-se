@@ -9,12 +9,13 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
+ms.reviewer: sericks
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 15461
 ms.assetid: 6e19bd1d-192b-4da2-8573-84f6e1ce98ef
 ms.search.region: Global
 ms.author: margoc
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,11 +23,9 @@ ms.openlocfilehash: d260f460bf0da072eb46909d8c28d18041ecaa78
 ms.contentlocale: sv-se
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Översikt över nummerserier
-<a id="number-sequence-overview" class="xliff"></a>
+# <a name="number-sequence-overview"></a>Översikt över nummerserier
 
 [!include[banner](../includes/banner.md)]
 
@@ -38,8 +37,7 @@ Exempel på nummerserier
 ------------------------
 
 Följande exempel visar hur du använder segment när du vill skapa nummerserieformat. Närmare bestämt visar exemplen effekterna av att använda omfångsegment.
-### Utgiftsrapportnummer
-<a id="expense-report-numbers" class="xliff"></a>
+### <a name="expense-report-numbers"></a>Utgiftsrapportnummer
 
 I följande exempel ställs utgiftsrapportnummer in för den juridiska personen med namnet **CS**. **Område:** Resor och utgifter **Referens:** Utgiftsrapportnummer **Omfång:** Juridisk person **Juridisk person:** CS
 | Segment  | Segmenttyp | Värde     |
@@ -50,8 +48,7 @@ I följande exempel ställs utgiftsrapportnummer in för den juridiska personen 
 
 **Exempel på formaterat nummer**: CS-EXPENSE-0039 Du kan ställa in ett liknande nummerserieformat för andra juridiska personer. Om du bara ändrar värdet för segmentet med en juridisk person, **RW**, är det formaterade numret RW-EXPENSE-0039, till exempel. Du kan också ändra heltalsekvensformatet för andra juridiska personer. Du kan till exempel utesluta ett segment med ett omfång av juridiska personer om du vill skapa ett formaterat nummer, som Exp-0001.
 
-### Försäljningsordernummer
-<a id="sales-order-numbers" class="xliff"></a>
+### <a name="sales-order-numbers"></a>Försäljningsordernummer
 
 I följande exempel ställts försäljningsordernummer in för företags-ID **CEU**. **Område:** Försäljning **Referens:** Försäljningsorder **Omfång:** Företag **Företag:** CEU
 | Segment  | Segmenttyp | Värde    |
@@ -61,8 +58,7 @@ I följande exempel ställts försäljningsordernummer in för företags-ID **CE
 
 **Exempel på formaterat nummer**: SO-0029 Även om ett omfångssegment inte ingår i formatet ska numreringen börja om för varje företags-ID. Om du använder samma format för alla företags-ID:n, används samma nummer i varje företag. Försäljningsordernumret SO-0029 används till exempel på varje företag. Du kan också ändra heltalsekvensformatet för andra företags-ID:n.
 
-### Inköpsrekvisitionsnummer
-<a id="purchase-requisition-numbers" class="xliff"></a>
+### <a name="purchase-requisition-numbers"></a>Inköpsrekvisitionsnummer
 
 I följande exempel ordnas inköpsrekvisitionsnummer på företagsnivå. **Område:** Inköp **Referens:** Inköpsrekvisition **Omfång:** Delat
 | Segment  | Segmenttyp | Värde    |
@@ -74,13 +70,11 @@ I följande exempel ordnas inköpsrekvisitionsnummer på företagsnivå. **Områ
 -----------------------------------------------
 
 Beakta följande information om hur konfigurationen av nummerserier kan påverka systemets prestanda innan du ställer in nummerserier.
-### Kontinuerliga och icke-kontinuerliga nummerserier
-<a id="continuous-and-non-continuous-number-sequences" class="xliff"></a>
+### <a name="continuous-and-non-continuous-number-sequences"></a>Kontinuerliga och icke-kontinuerliga nummerserier
 
 Nummerserier kan vara kontinuerliga eller icke-kontinuerliga. En kontinuerlig nummerserie hoppar inte över något nummer, men numren kan inte användas i följd. Nummer från en icke-kontinuerlig nummerserie används efter varandra, men nummerserien kan hoppa över nummer. Om till exempel en användare annullerar en transaktion, genereras ett nummer men det används inte. I en kontinuerlig nummerserie återanvänds det numret senare. I en icke-kontinuerlig nummersekvens används inte numret. Kontinuerliga nummerserier krävs vanligtvis för externa dokument, till exempel inköpsorder, försäljningsorder och fakturor. Kontinuerliga nummerserier kan dock påverka systemsvarstiderna negativt eftersom systemet måste begära ett nummer från databasen varje gång som ett nytt dokument eller en ny post skapas. Om du använder en icke-kontinuerlig nummersekvens kan du aktivera **Förallokering** på snabbfliken **Prestanda** på sidan **Nummersekvenser**. När du anger ett antal nummer för förallokering väljer systemet de siffrorna och lagrar dem i minnet. Nya nummer krävs från databasen enbart efter att den förallokerade kvantiteten har använts. Om det finns ett reglerat krav där du använder kontinuerliga nummerserier, rekommenderar vi att du använder icke-kontinuerliga nummerserier för bättre prestanda.
 
-### Automatisk rensning av nummerserier
-<a id="automatic-cleanup-of-number-sequences" class="xliff"></a>
+### <a name="automatic-cleanup-of-number-sequences"></a>Automatisk rensning av nummerserier
 
 I händelse av strömavbrott, programfel eller annat oväntat fel kan inte systemet återanvända nummer automatiskt för kontinuerliga nummerserier. Du kan köra rensningen manuellt eller automatiskt återställa de förlorade numren. Tänk noggrant igenom serveranvändningen när du planerar rensningen. Vi rekommenderar att du utför rensningen som ett batchjobb under tider då arbetsbelastningen är låg.
 

@@ -9,12 +9,13 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.reviewer: sericks
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 54502
 ms.assetid: d29aac80-e6c7-463c-b7a0-995aac84ea0b
 ms.search.region: Global
 ms.author: jasongre
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,11 +23,9 @@ ms.openlocfilehash: 8daf9d0c5b83e3bca66c0229a328737adeeb2951
 ms.contentlocale: sv-se
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Kortkommandon
-<a id="keyboard-shortcuts" class="xliff"></a>
+# <a name="keyboard-shortcuts"></a>Kortkommandon
 
 [!include[banner](../includes/banner.md)]
 
@@ -35,8 +34,7 @@ Följande kortkommandon gäller i hela Microsoft Dynamics 365 for Finance and Op
 
 **Obs!** Tangentbordsgenvägarna som beskrivs här hänvisar till en amerikansk tangentbordslayout. Knappar på andra tangentbordslayouter kan kanske inte exakt motsvarar tangenterna på ett tangentbord i USA.
 
-## Åtgärdgenvägar
-<a id="action-shortcuts" class="xliff"></a>
+## <a name="action-shortcuts"></a>Åtgärdgenvägar
 |                                                   |                                  |
 |---------------------------------------------------|----------------------------------|
 | **Om du vill göra detta**                                    | **Tryck**                        |
@@ -53,8 +51,7 @@ Följande kortkommandon gäller i hela Microsoft Dynamics 365 for Finance and Op
 
  
 
-## Genvägar för datumväljare
-<a id="date-picker-shortcuts" class="xliff"></a>
+## <a name="date-picker-shortcuts"></a>Genvägar för datumväljare
 |                                       |                                           |
 |---------------------------------------|-------------------------------------------|
 | **Om du vill göra detta**                        | **Tryck**                                 |
@@ -65,8 +62,7 @@ Följande kortkommandon gäller i hela Microsoft Dynamics 365 for Finance and Op
 
  
 
-## Genvägar för faktaboxen
-<a id="factbox-shortcuts" class="xliff"></a>
+## <a name="factbox-shortcuts"></a>Genvägar för faktaboxen
 |                                                                                 |                                           |
 |---------------------------------------------------------------------------------|-------------------------------------------|
 | Öppna faktaboxfönstret (eller flytta fokus till faktaboxfönstre om det redan är öppet,) | Ctrl+F2                                   |
@@ -78,8 +74,7 @@ Följande kortkommandon gäller i hela Microsoft Dynamics 365 for Finance and Op
 
  
 
-## Filtrera genvägar
-<a id="filtering-shortcuts" class="xliff"></a>
+## <a name="filtering-shortcuts"></a>Filtrera genvägar
 |                                                                                                                     |               |
 |---------------------------------------------------------------------------------------------------------------------|---------------|
 | **Om du vill göra detta**                                                                                                      | **Tryck**     |
@@ -91,8 +86,7 @@ Följande kortkommandon gäller i hela Microsoft Dynamics 365 for Finance and Op
 
  
 
-## Bilda kortkommandon
-<a id="form-shortcuts" class="xliff"></a>
+## <a name="form-shortcuts"></a>Bilda kortkommandon
 |                                                                                                                                 |                   |
 |---------------------------------------------------------------------------------------------------------------------------------|-------------------|
 | **Om du vill göra detta**                                                                                                                  | **Tryck**         |
@@ -114,8 +108,7 @@ Följande kortkommandon gäller i hela Microsoft Dynamics 365 for Finance and Op
 
  
 
-## Bilda navigeringsgenvägar
-<a id="form-navigation-shortcuts" class="xliff"></a>
+## <a name="form-navigation-shortcuts"></a>Bilda navigeringsgenvägar
 |                                                     |                                              |
 |-----------------------------------------------------|----------------------------------------------|
 | **Om du vill göra detta**                                      | **Tryck**                                    |
@@ -136,8 +129,7 @@ Följande kortkommandon gäller i hela Microsoft Dynamics 365 for Finance and Op
 
  
 
-## Genvägar för rutnät
-<a id="grid-shortcuts" class="xliff"></a>
+## <a name="grid-shortcuts"></a>Genvägar för rutnät
 |                                                                                                               |                                 |
 |---------------------------------------------------------------------------------------------------------------|---------------------------------|
 | **Om du vill göra detta**                                                                                                | **Tryck**                       |
@@ -155,8 +147,7 @@ Följande kortkommandon gäller i hela Microsoft Dynamics 365 for Finance and Op
 
  
 
-## Mata in kontrollgenvägar
-<a id="input-control-shortcuts" class="xliff"></a>
+## <a name="input-control-shortcuts"></a>Mata in kontrollgenvägar
 |                                                            |                               |
 |------------------------------------------------------------|-------------------------------|
 | **Om du vill göra detta**                                             | **Tryck**                     |
@@ -171,8 +162,7 @@ Följande kortkommandon gäller i hela Microsoft Dynamics 365 for Finance and Op
 
  
 
-## Genvägar för meddelanden
-<a id="messaging-shortcuts" class="xliff"></a>
+## <a name="messaging-shortcuts"></a>Genvägar för meddelanden
 |                          |               |
 |--------------------------|---------------|
 | **Om du vill göra detta**           | **Tryck**     |
@@ -181,8 +171,7 @@ Följande kortkommandon gäller i hela Microsoft Dynamics 365 for Finance and Op
 
  
 
-## Navigeringsgenvägar
-<a id="navigation-shortcuts" class="xliff"></a>
+## <a name="navigation-shortcuts"></a>Navigeringsgenvägar
 |                                                                           |                 |
 |---------------------------------------------------------------------------|-----------------|
 | **Om du vill göra detta**                                                            | **Tryck**       |
@@ -197,8 +186,7 @@ Följande kortkommandon gäller i hela Microsoft Dynamics 365 for Finance and Op
 
  
 
-## Segmenterade postgenvägar
-<a id="segmented-entry-shortcuts" class="xliff"></a>
+## <a name="segmented-entry-shortcuts"></a>Segmenterade postgenvägar
 |                                                                                                                         |                                  |
 |-------------------------------------------------------------------------------------------------------------------------|----------------------------------|
 | **Om du vill göra detta**                                                                                                          | **Tryck**                        |

@@ -10,13 +10,13 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: SalesQuotationPriceSimulation
 audience: Application User
-ms.reviewer: YuyuScheller
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 12254
 ms.assetid: 92be7c85-73cf-4f77-833c-d37ce779a031
 ms.search.region: Global
 ms.author: omulvad
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -24,11 +24,9 @@ ms.openlocfilehash: c5381ab48e394702c2423de7a5b5cb9166993388
 ms.contentlocale: sv-se
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Prissimulering
-<a id="price-simulation" class="xliff"></a>
+# <a name="price-simulation"></a>Prissimulering
 
 [!include[banner](../includes/banner.md)]
 
@@ -50,12 +48,10 @@ Du kan ställa in en notifiering när du skapar en offert. Här är exempel på 
 -   De kan hålla dig informerad om statusen för offerter i organisationen.
 -   De kan utlösa en granskning av en viss offert eller informera dig när rabattgränserna överskrids.
 
-## Prissimulering och rabatter
-<a id="price-simulation-and-discounts" class="xliff"></a>
+## <a name="price-simulation-and-discounts"></a>Prissimulering och rabatter
 Var försiktig när du kör prissimuleringar på offerter som har rabatter så att priser och rabatter beräknas korrekt. Eftersom alla prissimuleringar behandlas som specialrabatter på den aktiva offertraden eller på hela offerten är det viktigt att spåra skillnaderna för rabatterna.
 
-### Typer av rabatter i handelsavtal
-<a id="types-of-discounts-in-trade-agreements" class="xliff"></a>
+### <a name="types-of-discounts-in-trade-agreements"></a>Typer av rabatter i handelsavtal
 
 Handelsavtal i Microsoft Dynamics 365 for Finance and Operations kan ha fyra typer av prisrabatter. Rabatterna kan anges för olika artiklar, kunder eller prisgrupper och de kan begränsas efter datum. För att undvika felberäkningar måste du ta hänsyn till handelsavtal när du kör prissimuleringar. Här är de fyra rabattyperna i handelsavtal:
 
@@ -64,17 +60,14 @@ Handelsavtal i Microsoft Dynamics 365 for Finance and Operations kan ha fyra typ
 -   **Samköpsrabatt** – Om de kombinerade summorna överskrider den gräns som du har definierat, utlöser fördefinierade kombinationer av beställda artiklar en rabatt för hela ordern. Radbelopp reduceras normalt med radrabatten innan en prissimulering körs. Därför påverkar ett handelsavtal som har den här typen av rabatt prissimuleringen.
 -   **Total rabatt** – Om de kombinerade summorna överskrider den gräns som du har definierat, utlöser fördefinierade beställda artiklar en rabatt för hela ordern. Totalrabatten genereras via offertraderna. Men eftersom den totala rabatten tillämpas på offertsumman som en rabatt minskar den det totala beloppet för offerten. Därför påverkar ett handelsavtal som har den här typen av rabatt prissimuleringen.
 
-### Offertrader och handelsavtal
-<a id="quotation-lines-and-trade-agreements" class="xliff"></a>
+### <a name="quotation-lines-and-trade-agreements"></a>Offertrader och handelsavtal
 
 När du skapar eller anpassar en offertrad beräknas radrabatterna automatiskt. Det relevanta försäljningspriset hittas för artikeln, baserat på handelsavtalet.
 
-## Prissimuleringsexempel
-<a id="price-simulation-examples" class="xliff"></a>
+## <a name="price-simulation-examples"></a>Prissimuleringsexempel
 I följande exempel används prissimulering för offerthuvuden och artiklar på enskilda rader.
 
-### Prissimulering för offerthuvuden
-<a id="price-simulation-for-quotation-headers" class="xliff"></a>
+### <a name="price-simulation-for-quotation-headers"></a>Prissimulering för offerthuvuden
 
 Du skapar en offert med följande rader:
 
@@ -105,8 +98,7 @@ Du kör en prissimulering och tillämpar en totalrabatt på 15 procent för hela
 | Nytt täckningsbidrag i USD                       | 270,47 – 184,96                           | 85,51    |
 | Ny täckningsgrad                               | \[(270.47 – 184.96) ÷ 270.47\] × 100      | 31,61 %   |
 
-### Prissimulering av artikel på enskild rad
-<a id="price-simulation-for-single-line-items" class="xliff"></a>
+### <a name="price-simulation-for-single-line-items"></a>Prissimulering av artikel på enskild rad
 
 Du skapar en offert med följande rader:
 

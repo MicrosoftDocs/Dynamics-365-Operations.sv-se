@@ -10,12 +10,13 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: smmContactPerson, VendVendorContactPerson, VendVendorPortalUser
 audience: Application User, IT Pro
+ms.reviewer: yuyus
 ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 220744
 ms.assetid: edc19ad0-3565-4d47-98ac-dda6098f63ac
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -23,11 +24,9 @@ ms.openlocfilehash: ec7ed3a81d296e9bef4d26f1756b73883d560cb5
 ms.contentlocale: sv-se
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Hantera leverantörssamarbetesanvändare
-<a id="manage-vendor-collaboration-users" class="xliff"></a>
+# <a name="manage-vendor-collaboration-users"></a>Hantera leverantörssamarbetesanvändare
 
 [!include[banner](../includes/banner.md)]
 
@@ -38,8 +37,7 @@ Leverantörssamarbetsgränssnittet i Microsoft Dynamics 365 for Finance and Oper
 
 Mer information om hur du använder leverantörssamarbete om du är inköpsspecialist, se [Leverantörssamarbete med externa leverantörer](vendor-collaboration-work-external-vendors.md).
 
-## Lägg till nya lleverantörssamarbeteskontakter
-<a id="add-new-vendor-collaboration-contacts" class="xliff"></a>
+## <a name="add-new-vendor-collaboration-contacts"></a>Lägg till nya lleverantörssamarbeteskontakter
 Om du vill ge någon åtkomst till leverantörssamarbete, måste de först läggas till som en leverantörssamarbeteskontakt. Du kanske också vill lägga till kontakter för medarbetare inom företaget som inte använder leverantörssamarbete. De kan exempelvis utgöra kontaktpunkt för andra typer av anskaffningsinformation. Nya kontakter läggs till på sidan **Alla kontakter**, som du når via menyn **Leverantörssamarbete** &gt; **Kontakter**. För att lägga till en ny kontakt:
 
 1.  Klicka på **Nytt.**
@@ -49,8 +47,7 @@ Om du vill ge någon åtkomst till leverantörssamarbete, måste de först lägg
 
 Om du vill ta bort en kontakt kan du bara ta bort dem som du har skapat.
 
-## Användarbegäranden från leverantörssamarbete
-<a id="vendor-collaboration-user-requests" class="xliff"></a>
+## <a name="vendor-collaboration-user-requests"></a>Användarbegäranden från leverantörssamarbete
 Användarförfrågningar för leverantörssamarbeten kan göras av en yrkesperson inom anskaffning eller av en extern leverantörsadministratör.
 
 -   Om du är en extern leverantör skickar du in begäran från sidan **Alla kontakter** i modulen **Leverantörssamarbete**.
@@ -60,8 +57,7 @@ Du kan ställa en begäran om reservera en användare, inaktivera en användare 
 
 När en begäran skickas in läggs den till i listan **Användarbegäran från leverantörssamarbete** i modulen **Leverantörssamarbete**, samt i listan **Användarbegäran från leverantörssamarbete** i modulen **Anskaffning och källa** (anskaffnings- och inköpsmodulen är inte tillgänglig för externa användare).
 
-### Reservera en användare
-<a id="provision-a-user" class="xliff"></a>
+### <a name="provision-a-user"></a>Reservera en användare
 
 Innan du kan begära att en ny användare reserveras, måste den personen ställas in som en kontakt för en eller flera leverantörskonton. För att skapa en begäran för en ny leverantörssamarbetesanvändare:
 
@@ -73,8 +69,7 @@ Innan du kan begära att en ny användare reserveras, måste den personen ställ
 
 När begäran om leverantörsanvändare skickas in, anges fältet **Åtkomst för leverantörssamarbete medges** som **Ja** för valt leverantörskonto, och ett nytt arbetsflöde för användarbegäran startas. Som en del av arbetsflödet skapas en ny användare i Finance and Operations, och säkerhetsroller tilldelas. Dessutom aktiveras en Azure B2B-tjänst som initierar en interaktion med Azure-portalen samt associerar ett nytt eller befintligt AAD-konto med Finance and Operations-användarkontot.
 
-### Inaktivera en användare
-<a id="inactivate-a-user" class="xliff"></a>
+### <a name="inactivate-a-user"></a>Inaktivera en användare
 
 Det finns två sätt att ta bort åtkomsten till leverantörssamarbete för en användare:
 
@@ -87,8 +82,7 @@ För att begära att en användare avaktiveras:
 2.  Skriv en kommentar i fältet **Affärsjustering**.
 3.  Klicka på **Skicka**.
 
-### Ändra säkerhetsroller
-<a id="modify-security-roles" class="xliff"></a>
+### <a name="modify-security-roles"></a>Ändra säkerhetsroller
 
 Sidan **Bibehåll roller för leverantörsanvändare** är densamma som sidan **Reservera leverantörsanvändare** förutom att listan över säkerhetsroller kan redigeras.  
 

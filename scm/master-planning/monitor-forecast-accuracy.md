@@ -9,13 +9,14 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 72863
 ms.assetid: 810a0d63-f4c6-4167-b2b3-a178b74ead89
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: roxanad
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -23,11 +24,9 @@ ms.openlocfilehash: 56d3f0312e684ab076f9116ac6638bcd67b52e58
 ms.contentlocale: sv-se
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Övervaka prognosprecision
-<a id="monitor-forecast-accuracy" class="xliff"></a>
+# <a name="monitor-forecast-accuracy"></a>Övervaka prognosprecision
 
 [!include[banner](../includes/banner.md)]
 
@@ -42,8 +41,7 @@ Finance and Operations beräknar följande typer av prognosprecision:
 **Obs!** Om du använder tjänsten Microsoft Azure Machine Learning för Finance and Operations-efterfrågeprognoser, baseras beräkningen av intern modellnoggrannhet på testdata. För att ange storleken på testdatauppsättningen, ställ in parametern **TEST\_SET\_SIZE\_PERCENT** på sidan **Parametrar för efterfrågeprognosticering**. Till exempel, om du anger värdet till **20**, de sista 20 procent av historiska data används för att beräkna intern modell noggrannhet.
 
 
-Se även
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Se även
 --------
 
 [Auktorisering av den justerade prognosen](authorize-adjusted-forecast.md)

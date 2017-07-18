@@ -10,13 +10,14 @@ ms.service: dynamics-365-retail
 ms.technology: 
 ms.search.form: RetailStoreTable, RetailStoreTableListPagePreviewPane
 audience: Application User
+ms.reviewer: josaw
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 16481
 ms.assetid: 14496d96-1c72-43ce-a2e7-8467bab4ae46
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: mumani
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
@@ -24,11 +25,9 @@ ms.openlocfilehash: 3f0b566963574569cb40b72550e2337c9ba8a2ce
 ms.contentlocale: sv-se
 ms.lasthandoff: 06/20/2017
 
-
 ---
 
-# Definiera och underhåll butikskanaler
-<a id="define-and-maintain-retail-channels" class="xliff"></a>
+# <a name="define-and-maintain-retail-channels"></a>Definiera och underhåll butikskanaler
 
 [!include[banner](includes/banner.md)]
 
@@ -37,12 +36,10 @@ Det här avsnittet innehåller en översikt över processen för att ställa in 
 
 Dynamics 365 for Retail stöder flera butikskanaler, till exempel onlinebutiker, kundtjänst och fysiska butiker. En fysisk butik kallas för butik. Varje butik kan ha egna betalningsmetoder, prisgrupper, kassaregister (POS), intäkts- och utgiftskonton och personal. Du måste ställa in alla dessa element för en butik innan du skapar den. När du har skapat en butik tilldelar du produkter som du vill ha i butiken. Du tilldelar också medarbetare, register och kunder till butiken. Slutligen lägger du till den nya butiken i en organisationshierarki.
 
-## Ställa in butiker
-<a id="setting-up-retail-stores" class="xliff"></a>
+## <a name="setting-up-retail-stores"></a>Ställa in butiker
 Innan du kan ställa in en butik i Dynamics 365 for Retail måste du utföra vissa obligatoriska uppgifter. Du kan sedan skapa butiken och lägga till information.
 
-### Krav
-<a id="prerequisites" class="xliff"></a>
+### <a name="prerequisites"></a>Krav
 
 Du måste slutföra följande uppgifter innan du kan ställa in en butik:
 
@@ -61,8 +58,7 @@ Du måste slutföra följande uppgifter innan du kan ställa in en butik:
 
 Granska alla uppgifter som ingår i förutsättningarna och slutför alla uppgifter som gäller för dig.
 
-### Skapa en butik
-<a id="set-up-a-retail-store" class="xliff"></a>
+### <a name="set-up-a-retail-store"></a>Skapa en butik
 
 När du har slutfört de obligatoriska uppgifterna slutför du dessa uppgifter för att ställa in detaljer för butiken:
 
@@ -72,8 +68,7 @@ När du har slutfört de obligatoriska uppgifterna slutför du dessa uppgifter f
 4.  Lägg till uppgifter i produktbeskrivningarna för de produkter som du erbjuder i din butik. Du kan till exempel lägga till oformaterad text och bilder. Dessa produktdetaljer visas i olika kontext, till exempel i kassaregistret eller på utskrivna etiketter.
 5.  Lägg till butiken till en standardorganisationshierarki som tilldelas för syftet **Butikssortiment**, **Butikspåfyllnad** eller **Butiksrapportering**.
 
-### När du har ställt in en butik
-<a id="after-you-set-up-a-retail-store" class="xliff"></a>
+### <a name="after-you-set-up-a-retail-store"></a>När du har ställt in en butik
 
 När du har angett information för butiken slutför du dessa uppgifter för att skicka den nya butiksinformationen till Retail POS.
 
@@ -84,8 +79,7 @@ När du har angett information för butiken slutför du dessa uppgifter för att
 5.  Publicera butiken för att skicka butiksdata till Retail POS.
 6.  Kör jobben för att skicka butiksinformationen till Retail POS.
 
-## Organisationshierarkier
-<a id="organization-hierarchies" class="xliff"></a>
+## <a name="organization-hierarchies"></a>Organisationshierarkier
 Retail använder organisationshierarkier för att strukturera butikskanaler. Organisationshierarkier representerar relationerna mellan organisationer som utgör ett företag. När du ställer in butiker kan du lägga till dem till en organisationshierarki. Butikerna delar sedan data som används för sortiment, lagerpåfyllnad och rapportering.
 
 

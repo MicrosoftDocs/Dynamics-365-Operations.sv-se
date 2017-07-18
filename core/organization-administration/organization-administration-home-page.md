@@ -9,12 +9,13 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
+ms.reviewer: sericks
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 20421
 ms.assetid: 7aa24a03-d172-47e9-81f8-ebd39e80bc60
 ms.search.region: Global
 ms.author: sericks
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,33 +23,28 @@ ms.openlocfilehash: 889a9ce79d4599a60a4503d7876276a1452a5465
 ms.contentlocale: sv-se
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Startsidan Organisationsadministration
-<a id="organization-administration-home-page" class="xliff"></a>
+# <a name="organization-administration-home-page"></a>Startsidan Organisationsadministration
 
 [!include[banner](../includes/banner.md)]
 
 
 Det här avsnittet hänvisar till resurser som hjälper dig att använda Microsoft Dynamics 365 for Finance and Operations, Enterprise edition i organisationen.
 
-Nummerserier
-<a id="number-sequences" class="xliff"></a>
+<a name="number-sequences"></a>Nummerserier
 ----------------
 
 -   [Översikt över nummerserier](number-sequence-overview.md)
 -   [Ställa in nummerserier med hjälp av en guide](http://ax.help.dynamics.com/en/wiki/set-up-number-sequences-by-using-a-wizard/) (Uppgiftsguide)
 -   [Ställa in enskilda nummerserier](http://ax.help.dynamics.com/en/wiki/set-up-number-sequences-on-an-individual-basis/) (Uppgiftsguide)
 
-## Adressböcker
-<a id="address-books" class="xliff"></a>
+## <a name="address-books"></a>Adressböcker
 -   [Adressböcker](qa-address-books.md)
 -   [Översikt: Global adressbok](overview-global-address-book.md)
 -   [Planera konfigurationen av den globala adressboken och ytterligare adressbok](plan-configuration-global-address-book-additional-address-books.md)
 
-## Arbetsflöde
-<a id="workflow" class="xliff"></a>
+## <a name="workflow"></a>Arbetsflöde
 -   [Översikt över arbetsflödets system](overview-workflow-system.md)
 -   [Arbetsflödessystemets arkitektur](workflow-system-architecture.md)
 -   [Arbetsflödeselement](workflow-elements.md)
@@ -65,26 +61,22 @@ Nummerserier
 -   [Konfigurera en parallell gren](configure-parallel-branch-workflow.md)
 -   [Konfigurera ett arbetsflödeselement för radartiklar](configure-line-item-workflow.md)
 
-## Ärendehantering
-<a id="case-management" class="xliff"></a>
+## <a name="case-management"></a>Ärendehantering
 -   [Planering: Konfigurera ärende](plan-case-management.md)
 -   [Exempel på ärendehantering](cases.md)
 
-## Elektronisk signatur
-<a id="electronic-signatures" class="xliff"></a>
+## <a name="electronic-signatures"></a>Elektronisk signatur
 -   [Översikt över elektroniska signaturer](electronic-signature-overview.md)
 -   [Ställa in elektroniska signaturer](http://ax.help.dynamics.com/en/wiki/set-up-electronic-signatures/) (Uppgiftsguide)
 
-## Organisationer
-<a id="organizations" class="xliff"></a>
+## <a name="organizations"></a>Organisationer
 -   [Organisationer och organisationshierarkier](organizations-organizational-hierarchies.md)
 -   [Planera organisationshierarkin](plan-organizational-hierarchy.md)
 -   [Skapa en driftenhet](http://ax.help.dynamics.com/en/wiki/create-an-operating-unit/) (Uppgiftsguide)
 -   [Skapa en organisationshierarki](http://ax.help.dynamics.com/en/wiki/create-an-organization-hierarchy/) (Uppgiftsguide)
 -   [Skapa en juridisk person för](http://ax.help.dynamics.com/en/wiki/create-a-legal-entity/) (Uppgiftsguide)
 
-## Allmän administration
-<a id="general-administration" class="xliff"></a>
+## <a name="general-administration"></a>Allmän administration
 -   [Ändra banner eller logotypen](http://ax.help.dynamics.com/en/wiki/change-the-banner-or-logo/) (Uppgiftsguide)
 -   [Om datum/tidsdata och tidszoner](date-time-zones.md)
 -   [Postmallar](record-templates.md)

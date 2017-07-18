@@ -10,13 +10,14 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: ReqDemPlanCreateForecastDialog
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 72004
 ms.assetid: 916707c9-1333-460f-a0fa-4e95f6fda2ad
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: roxanad
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -24,11 +25,9 @@ ms.openlocfilehash: 6b4498ae05b9495918c0a079cc88903820192a59
 ms.contentlocale: sv-se
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Översikt för efterfrågeprognosticering
-<a id="demand-forecasting-overview" class="xliff"></a>
+# <a name="demand-forecasting-overview"></a>Översikt för efterfrågeprognosticering
 
 [!include[banner](../includes/banner.md)]
 
@@ -37,8 +36,7 @@ Behovsprognoser används för att förutsäga oberoende efterfrågan från best�
 
 För att generera den ursprungliga prognosen, en sammanfattning av historiska transaktioner överförs till en Microsoft Azure maskinen lärande service som finnas värtt på Azure. Eftersom denna tjänst är inte delas mellan användare, det kan lätt anpassas till branschspecifika krav. Du kan använda Finance and Operations för att visualisera prognosen, justera prognosen och visa viktiga resultatindikatorer (KPI) om prognosprecisionen.
 
-## Nyckeldrag av behovsprognoser
-<a id="key-features-of-demand-forecasting" class="xliff"></a>
+## <a name="key-features-of-demand-forecasting"></a>Nyckeldrag av behovsprognoser
 Här är några av de viktigaste funktionerna i behovsprognoser:
 
 -   Generera en statistisk utgångspunkt prognosen som bygger på historiska data.
@@ -48,8 +46,7 @@ Här är några av de viktigaste funktionerna i behovsprognoser:
 -   Ta bort avvikare.
 -   Skapa mätningar av prognosprecision.
 
-## Viktiga teman i behovsprognoser
-<a id="major-themes-in-demand-forecasting" class="xliff"></a>
+## <a name="major-themes-in-demand-forecasting"></a>Viktiga teman i behovsprognoser
 Tre stora teman genomförs i behovsprognoser:
 
 -   **Modularitet** – Behovsprognoser är modulär och enkel att konfigurera. Du kan aktivera och avaktivera funktionen genom att ändra konfigurationen på **Handel** &gt; **Lagerprognos** &gt; **Efterfrågeprognosticering**.
@@ -60,8 +57,7 @@ Tre stora teman genomförs i behovsprognoser:
     -   Om du inte kräver höga prestanda, eller om du inte kräver att en stor mängd data som bearbetas kan du använda den fria Machine Learning-nivån. Vi rekommenderar att du alltid börja från denna planet, särskilt under implementering och testning faser. Om du behöver högre prestanda och ytterligare lagringsutrymme kan du använda maskinen lärande standard nivå. Denna nivå kräver en prenumeration på Azure och innebär ytterligare kostnader. För mer information om maskinen lärande prissättning, se <Http://aka.ms/machine-learning-price-info>.
 -   **Prognostiserad minskning vid någon frikoppling** – Efterfrågeprognosticering i Finance and Operations bygger på denna funktion, som låter dig prognosticera såväl beroende som oberoende behov hos någon frikoppling.
 
-## Grundflöde i behovsprognoser
-<a id="basic-flow-in-demand-forecasting" class="xliff"></a>
+## <a name="basic-flow-in-demand-forecasting"></a>Grundflöde i behovsprognoser
 Följande diagram visar grundflöde i behovsprognoser. 
 
 [![Introduktionsdiagram till efterfrågeprognosticering](./media/demand-forecasting-introduction.png)](./media/demand-forecasting-introduction.png)
@@ -74,12 +70,10 @@ Prognoser, historiska data och alla eventuella ändringar som gjorts i efterfrå
 
 Du kan använda Finance and Operations för att visualisera och modifiera baslinjeprognoserna. Manuella justeringar måste attesteras innan de prognoser som kan användas för planering.
 
-## Begränsningar
-<a id="limitations" class="xliff"></a>
+## <a name="limitations"></a>Begränsningar
 Efterfrågeprognosticering i Finance and Operations är ett verktyg som hjälper kunder inom tillverkningsindustrin att skapa prognosprocesser. Det erbjuder kärnfunktionen hos efterfrågeprognosticeringslösningen, och har utformats så att det enkelt kan utökas. Efterfrågeprognosticering är kanske inte det bästa valet för kunder inom exempelvis återförsäljning, grossist, lagring, transport eller andra professionella tjänster.
 
-Se även
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Se även
 --------
 
 [Inställningar för behovsprognosticering](demand-forecasting-setup.md)

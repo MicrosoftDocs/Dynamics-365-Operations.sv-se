@@ -9,12 +9,13 @@ ms.prod:
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User
+ms.reviewer: shylaw
 ms.search.scope: Management Reporter, UnifiedOperations
 ms.custom: 68813
 ms.assetid: fe8b27e7-a40a-4689-ac6a-7f7401c387f5
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 770a1681e4fa9974b081d0c63a10eb1961f13014
@@ -22,11 +23,9 @@ ms.openlocfilehash: 4e0c984b95cd395e7ab23394b886782e55fac90f
 ms.contentlocale: sv-se
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Ekonomisk rapportering för Finance and Operations
-<a id="financial-reporting-for-finance-and-operations" class="xliff"></a>
+# <a name="financial-reporting-for-finance-and-operations"></a>Ekonomisk rapportering för Finance and Operations
 
 [!include[banner](../includes/banner.md)]
 
@@ -35,8 +34,7 @@ Ekonomisk rapportering för Finance and Operations kan användas av finans- och 
 
 Ekonomisk rapportering innehåller stöd för dimension. Därför är kontosegment eller dimensioner tillgängliga direkt. Det krävs inga ytterligare verktyg eller konfigurationssteg.
 
-## Komponenter för ekonomisk rapportering
-<a id="financial-reporting-components" class="xliff"></a>
+## <a name="financial-reporting-components"></a>Komponenter för ekonomisk rapportering
 Följande komponenter för ekonomisk rapportering gör det lättare att skapa, visa och tidsplanera rapporter.
 
 | Komponent        | Funktioner                                                                                                                                                                                                                                                                           | Ytterligare information                                                                          |
@@ -44,8 +42,7 @@ Följande komponenter för ekonomisk rapportering gör det lättare att skapa, v
 | Report Designer  | Skapa rapportbyggnadsblock som kan kombineras för att definiera och generera en rapport. Rapportguiden leder mindre erfarna användare genom designprocessen. Avancerade användare kan skapa nya rapportbyggnadsblock eller ändra befintliga byggnadsblock så att de uppfyller deras krav. |                                                                                                 |
 | Rapportscheman | Tidsplanera en enstaka rapport eller en rapportgrupp så att den skapas regelbundet.                                                                                                                                                                                          | [Generera ekonomisk rapport](generate-financial-report.md) |
 
-## Funktioner
-<a id="features" class="xliff"></a>
+## <a name="features"></a>Funktioner
 <table>
 <thead>
 <tr class="header">
@@ -89,8 +86,7 @@ Följande komponenter för ekonomisk rapportering gör det lättare att skapa, v
 </tbody>
 </table>
 
-#Se även
-<a id="see-also" class="xliff"></a>
+#<a name="see-also"></a>Se även
 [Generera ekonomisk rapport](generate-financial-report.md)
 
 

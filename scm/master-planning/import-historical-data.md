@@ -9,11 +9,12 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.assetid: 59c0d269-9db0-48e7-b8c7-9a388781a9ca
 ms.search.region: Global
 ms.author: roxanad
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -21,11 +22,9 @@ ms.openlocfilehash: 957626a283b750645adefa5176480e68cc27e4f1
 ms.contentlocale: sv-se
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Importera historikdata för efterfrågeprognoser
-<a id="import-historical-data-for-demand-forecasts" class="xliff"></a>
+# <a name="import-historical-data-for-demand-forecasts"></a>Importera historikdata för efterfrågeprognoser
 
 [!include[banner](../includes/banner.md)]
 
@@ -40,8 +39,7 @@ I arbetsytan **Datahantering** kan du visa en översikt över alla fält i entit
 
 Du måste ha en Microsoft Excel-fil eller kommaseparerade värden (CSV) som innehåller historiska efterfrågeuppgifter data om du vill använda dataenheten. I följande exempel visas hur du importerar data från en CSV-fil.
 
-## Exempel
-<a id="example" class="xliff"></a>
+## <a name="example"></a>Exempel
 
 Du kan använda följande fil som exempel. Hämta [HistoricalDemandData](https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/365OperationsDemandForecast). Denna fil innehåller historiska efterfrågedata för artikel D0001. Den innehåller endast följande obligatoriska fält: webbplats, kvantitet och efterfrågedatum.
 
@@ -57,8 +55,7 @@ Du kan använda följande fil som exempel. Hämta [HistoricalDemandData](https:/
 
 När du har importerat efterfrågehistoriken kan du skapa en efterfrågeprognos.
 
-## Se även
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a>Se även
 
 [Generera en statistisk baslinjeprognos](generate-statistical-baseline-forecast.md)
 

@@ -10,12 +10,13 @@ ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: ERDataModelDesigner, ERMappedFormatDesigner, ERModelMappingDesigner, ERModelMappingTable, ERSolutionImport, ERSolutionTable, ERVendorTable, ERWorkspace
 audience: Application User, Developer, IT Pro
+ms.reviewer: kfend
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 58801
 ms.assetid: 35ad19ea-185d-4fce-b9cb-f94584b14f75
 ms.search.region: Global
 ms.author: nselin
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -23,19 +24,16 @@ ms.openlocfilehash: b1f5da07ffff5e34d8c73012a1e3c85fe1546fda
 ms.contentlocale: sv-se
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Hantera livscykeln för konfiguration av elektronisk rapportering
-<a id="manage-the-electronic-reporting-configuration-lifecycle" class="xliff"></a>
+# <a name="manage-the-electronic-reporting-configuration-lifecycle"></a>Hantera livscykeln för konfiguration av elektronisk rapportering
 
 [!include[banner](../includes/banner.md)]
 
 
 Det här avsnittet beskriver hur du hanterar livscykeln för elektroniska rapporteringskonfigurationer (ER) för Microsoft Dynamics 365 for Finance and Operations-lösningen.
 
-Översikt
-<a id="overview" class="xliff"></a>
+<a name="overview"></a>Översikt
 --------
 
 Elektronisk rapportering (ER) är en motor som stöder enligt lag erforderliga samt landsspecifika elektroniska dokument i Microsoft Dynamics 365 for Finance and Operations. I allmänhet förutsätter ER en förmåga att utföra följande uppgifter för ett enstaka elektroniskt dokument. Mer information finns i [översikt för elektronisk rapportering](general-electronic-reporting.md).
@@ -59,8 +57,7 @@ Elektronisk rapportering (ER) är en motor som stöder enligt lag erforderliga s
 -   Använd en mall i en viss affärsprocess.:
     -   Köra en ER-konfiguration i en specifik affärsprocess. Till exempel, referera till ER-konfigurationen i en viss leverantörsreskontrabetalningsmetod när en betalningsmetod som hänvisar till en av ER-konfiguration är vald.
 
-## Begrepp
-<a id="concepts" class="xliff"></a>
+## <a name="concepts"></a>Begrepp
 Följande roller och relaterade aktiviteter är associerade med ER-konfigurationslivscykeln.
 
 | Roll                                       | Aktiviteter                                                      | beskrivning                                                                                                                                                                                                                  |
@@ -70,8 +67,7 @@ Följande roller och relaterade aktiviteter är associerade med ER-konfiguration
 | Redovisningsansvarig                      | Konfigurera processrelaterade inställningar som refererar till ER-artefakter. | Till exempel, en **redovisningsansvarig**-roll som tillåter inställningarna för en ER-konfiguration att användas i en viss leverantörsreskontrabetalningsmetod för att skapa ett meddelande för elektronisk betalning för bearbetning av fakturor |
 | Ansvarig för leverantörsreskontrabetalningar            | Använda ER-artefakter i en viss affärsprocess.                | Till exempel, **Ansvarig för leverantörsreskontrabetalningar**-rollen som gör att meddelanden för elektroniska betalningar skapas för att bearbeta fakturor som baseras på ER-formatet som konfigureras för en viss betalningsmetod.           |
 
-## Livscykel för ER-konfigurationsutveckling
-<a id="er-configuration-development-lifecycle" class="xliff"></a>
+## <a name="er-configuration-development-lifecycle"></a>Livscykel för ER-konfigurationsutveckling
 För följande ER-relaterade orsaker rekommenderas att du designar ER-konfigurationer i utvecklingsmiljön som en separat instans av Finance and Operations:
 
 -   Användare i antingen rollen **elektronisk rapportering utvecklare** eller **elektronisk rapportering funktionella konsult** kan redigera konfigurationer och köra dem för teständamål. Detta scenario kan orsaka metodanrop från klasser och tabeller som kan vara skadliga för affärsdata och för Finance and Operations-instansens prestanda.
@@ -79,8 +75,7 @@ För följande ER-relaterade orsaker rekommenderas att du designar ER-konfigurat
 
 ER-konfigurationer som utformas i utvecklingsmiljön kan överföras till testmiljön för utvärdering av konfigurationen (rätt process integration, korrekta resultat, prestanda) och kvalitetssäkring, till exempel korrektheten i rollen som drivs av åtkomsträttigheter och uppdelning av uppgifter. Funktionerna som aktiverar ER-konfigurationsutbyte kan användas i detta syfte. Slutligen kan beprövade ER-konfigurationer överföras antingen till LCS där de kan delas med abonnenter eller till produktionsmiljön för intern användning, som visas i följande bild. ![Livscykel för ER-konfiguration](./media/ger-configuration-lifecycle.png)
 
-Se även
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Se även
 --------
 
 [Översikt över elektronisk rapportering](general-electronic-reporting.md)

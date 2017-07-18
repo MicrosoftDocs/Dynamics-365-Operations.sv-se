@@ -10,13 +10,14 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: CAMCostRollupRule, CAMDimensionHierarchy
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: AX 7.0.0, Operations, Core
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: YuyuScheller
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
@@ -24,11 +25,9 @@ ms.openlocfilehash: c236c72c2f29578f5ce8f2e536bd708a6ef358a6
 ms.contentlocale: sv-se
 ms.lasthandoff: 06/20/2017
 
-
 ---
 
-## Policy för samlade kostnader och omkostnadsberäkning
-<a id="cost-rollup-policy-and-overhead-calculation" class="xliff"></a> 
+## <a name="cost-rollup-policy-and-overhead-calculation"></a>Policy för samlade kostnader och omkostnadsberäkning 
 
 [!include[banner](../includes/banner.md)]
 
@@ -45,8 +44,7 @@ För att undvika de här effekterna kan du konfigurera kostnadsallokering med ko
 > [!NOTE]
 > Du kan ändra konfigurationer om rapporteringskraven ändras.
 
-## Exempel på inställning av policy för samlad kostnad
-<a id="example-of-cost-rollup-policy-setup" class="xliff"></a>
+## <a name="example-of-cost-rollup-policy-setup"></a>Exempel på inställning av policy för samlad kostnad
 
 Anta att företaget har följande struktur med 4 kostnadsställen.
 
@@ -155,8 +153,7 @@ Kostnadsfördelningsregler kan ställas in på följande sätt.
 | CC001                                | Totalt         | **HR-tjänster**        |
 | CC002                                | Totalt         | **Ekonomitjänster** |
 
-<br>Hur kostnadsflödet går mellan kostnadsställen
-<a id="brhow-cost-flows-between-cost-centers" class="xliff"></a> 
+<a name="brhow-cost-flows-between-cost-centers"></a><br>Hur kostnadsflödet går mellan kostnadsställen 
 ---------------------------------------------------
 
 Om du vill veta hur kostnadsflödet går mellan kostnadsställen i organisationen kan du skapa kostnadselement av typen **sekundär** för varje kostnadsställe. Dessa kostnadselement måste användas för att överföra saldon mellan kostnadsställen under omkostnadsberäkningen.
@@ -207,8 +204,7 @@ Skapa en **Policy för samlade kostnader** där varje kostnadsställe mappas til
 | CC003                                | Resultaträkning               | **SC-CC003**           |
 | CC004                                | Resultaträkning               | **SC-CC004**           |
 
-## Utföra beräkning av indirekta kostnader
-<a id="perform-overhead-calculation" class="xliff"></a>
+## <a name="perform-overhead-calculation"></a>Utföra beräkning av indirekta kostnader
 
 **Journal**
 
@@ -257,8 +253,7 @@ Sidan **Information om kostnadsobjektets journalposter för kostnadsbalans** som
 
 När **omkostnadsberäkning** är klar kan du rapportera resultaten med verktyg som t.ex. Microsoft SharePoint Workspace, Excel eller Power BI.
 
-## Visa rapportering i Excel
-<a id="view-reporting-in-excel" class="xliff"></a> 
+## <a name="view-reporting-in-excel"></a>Visa rapportering i Excel 
 
 Dimensionshierarkierna låter dig visa data på olika aggregationsnivåer.
 
@@ -302,8 +297,7 @@ Den tydliga avgränsningen mellan **kostnadsallokering** och **Policyer för sam
 
 
 
-## Se även
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a>Se även
 -  [Kostnadsobjektdimensioner](cost-objects.md)
 -  [Dimensioner för kostnadselement](cost-elements.md)
 -  [Dimensionshierarkier](dimension-hierarchy.md)

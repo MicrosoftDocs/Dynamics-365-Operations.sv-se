@@ -10,13 +10,14 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: WHSReplenishmentTemplates
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 90043
 ms.assetid: 49fa97eb-8e10-49a5-9261-1e393159f178
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: mirzaab
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
@@ -26,8 +27,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Lagerpåfyllnad
-<a id="replenishment" class="xliff"></a>
+# <a name="replenishment"></a>Lagerpåfyllnad
 
 [!include[banner](../includes/banner.md)]
 
@@ -40,8 +40,7 @@ Det här avsnittet innehåller en beskrivning av strategier för lagerpåfyllnad
 
 Alla de tre strategierna skapar lagerpåfyllnadsarbete, baserat på en mall för lagerpåfyllnad.
 
-## Lagerpåfyllnad baserad på efterfrågan
-<a id="wave-demand-replenishment" class="xliff"></a>
+## <a name="wave-demand-replenishment"></a>Lagerpåfyllnad baserad på efterfrågan
 
 Lagerpåfyllnad baserad på efterfrågan skapar lagerpåfyllnadsarbete baserat på efterfrågan om kvantiteten för produktionsorder, kanbans, utgående order eller laster inte är tillgänglig när en påfyllnad skapar arbete. Lagerpåfyllnadsmallen innehåller information om kriterierna för artikeln, måttenheten, efterfråganökningen och platsen. 
 
@@ -54,20 +53,17 @@ Sidan **Lagerpåfyllnadsmall** innehåller kryssrutan **Tillåt påfyllnadsbegä
 
 Lagerpåfyllnadsbegäran stöds för försäljningsorder, överföringsorder, produktionsorder och kanbans. 
 
-## Minsta/största lagerpåfyllnad
-<a id="minmax-replenishment" class="xliff"></a>
+## <a name="minmax-replenishment"></a>Minsta/största lagerpåfyllnad
 I Minsta/största lagerpåfyllnad fylls lagret på så att behållningen ligger inom de gränser för minsta och största lager som har markerats. Vanligtvis utförs den här processen en gång om dagen för att garantera att alla plockplatser fylls på till maximal nivå innan plockningen inleds. 
 
 Minimi- och maximinivåerna ställs in i en lagerpåfyllnadsmall. Många av de andra inställningarna i mallen liknar inställningarna i mallarna som används i Lagerpåfyllnad baserad på efterfrågan. Mallen ska innehålla en rad för varje artikel och plats. När du kör lagerpåfyllnad med hjälp av batchjobbet utvärderar Finance and Operations om påfyllnad krävs, i den sekvens raderna är ordnad i. 
 
 Observera att strategin Minsta/största lagerpåfyllnad inte kan fylla på en tom plats om inte platsen är markerad som fast lagerplats för artikeln. Om platsen som måste fyllas på inte är en fast plats går det inte att fastställa vilken artikel som ska fyllas på. Därför krävs åtminstone en viss lagerbehållning innan lagerpåfyllnad utförs.
 
-## Lagerpåfyllnad för lastefterfrågan
-<a id="load-demand-replenishment" class="xliff"></a>
+## <a name="load-demand-replenishment"></a>Lagerpåfyllnad för lastefterfrågan
 Lagerpåfyllnad för lastefterfrågan summerar behovet av flera laster och skapar de lagerpåfyllnadsarbeten som krävs för att fylla på relevanta plockplatser. Lagerpåfyllnad för lastefterfrågan liknar Lagerpåfyllnad baserad på efterfrågan på många sätt. Den största skillnaden är hur och när Lagerpåfyllnad för lastefterfrågan och Lagerpåfyllnad baserad på efterfrågan körs. I likhet med Minsta/största lagerpåfyllnad körs Lagerpåfyllnad för lastefterfrågan med hjälp av ett batchjobb. Om du vill ställa in batchjobbet på sidan **Lagerpåfyllnad för lastefterfrågan**, välj vilken lagerpåfyllnadsmall som ska användas och markera en filterfråga för att ange vilka laster som ska användas för att fastställa behovet. Platsfrågan definierar de platser som tillgänglig kvantitet kommer att dras av ifrån för att tillgodose det sammanlagda behovet av laster.
 
-## Förutsättningar för lagerpåfyllnad
-<a id="replenishment-prerequisites" class="xliff"></a>
+## <a name="replenishment-prerequisites"></a>Förutsättningar för lagerpåfyllnad
 | Förutsättning            | Beskrivning                                                                                                                                                                                                                                        |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Artikel                    | Artikeln måste aktiveras för lagerhanteringsprocesser.                                                                                                                                                                                       |

@@ -9,12 +9,13 @@ ms.prod:
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, IT Pro
+ms.reviewer: sericks
 ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 263934
 ms.assetid: 38e6827b-0819-473c-bc47-821a1ec482b8
 ms.search.region: Global
 ms.author: jcart
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,22 +23,18 @@ ms.openlocfilehash: 49cfd0f1ed645f1980b21b6d4f453cb7a8957a1a
 ms.contentlocale: sv-se
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Power BI-innehåll för rekrytering
-<a id="recruiting-power-bi-content" class="xliff"></a>
+# <a name="recruiting-power-bi-content"></a>Power BI-innehåll för rekrytering
 
 [!include[banner](../includes/banner.md)]
 
 Det här avsnittet beskriver Microsoft Power BI-innehållet **Rekrytering**. Det förklarar hur du öppnar Power BI-rapporter, och ger information om den datamodell och de enheter som användes för att skapa innehållet.
 
-## Åtkomst till Power BI-innehåll
-<a id="accessing-the-power-bi-content" class="xliff"></a>
+## <a name="accessing-the-power-bi-content"></a>Åtkomst till Power BI-innehåll
 Om du använder Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, juliuppdateringen 2017, visas Power BI-innehållet **Rekrytering** i arbetsytan **Rekryteringshantering**. 
 
-## Rapporter och modeller i arbetsytan Rekryteringshantering
-<a id="reports-and-visuals-in-the-recruitment-management-workspace" class="xliff"></a>
+## <a name="reports-and-visuals-in-the-recruitment-management-workspace"></a>Rapporter och modeller i arbetsytan Rekryteringshantering
 Arbetsytan **Rekryteringshantering** innehåller fliken **Analyser**. Den här fliken innehåller det inbäddade Power BI-innehållet för rekrytering. Innehållet består av en översiktsflik och ytterligare flikar som innehåller information. Följande register beskriver rapporterna på varje flik.
 
 | Rapport               | Innehåll |
@@ -47,8 +44,7 @@ Arbetsytan **Rekryteringshantering** innehåller fliken **Analyser**. Den här f
 | Sökandestatus     | Sökande efter typ och status och sökandestatus |
 | Rekryteringsanalys  | Nettoanställningskvot, genomsnittligt antal dagar för att anställa, andelen dåliga rekryteringar, rekryteringskostnader, antal rekryteringsprojekt anställning av sökande och sökande gentemot öppningar per rekryteringsprojekt |
 
-## Förstå datamodellen och enheterna
-<a id="understanding-the-data-model-and-entities" class="xliff"></a>
+## <a name="understanding-the-data-model-and-entities"></a>Förstå datamodellen och enheterna
 Diagrammen och rutorna i samtliga dessa rapporter kan filtreras och fästas på instrumentpanelen. Mer information om hur du filtrerar och fäster i Power BI finns i [Skapa och konfigurera en intrumentpanel](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 Följande tabell visar enheterna som Power BI-innehållet **Rekrytering** baserades på.

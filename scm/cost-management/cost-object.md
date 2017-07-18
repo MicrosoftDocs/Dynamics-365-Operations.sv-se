@@ -10,14 +10,14 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventCostOnhandItem
 audience: Application User
-ms.reviewer: YuyuScheller
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 19451
 ms.assetid: ec776b98-813a-490d-848f-468452d98fac
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: yuyus
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
@@ -25,19 +25,16 @@ ms.openlocfilehash: 823d3edd106925339607d01fbf5f1921b85ff244
 ms.contentlocale: sv-se
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Kostnadsobjekt
-<a id="cost-objects" class="xliff"></a>
+# <a name="cost-objects"></a>Kostnadsobjekt
 
 [!include[banner](../includes/banner.md)]
 
 
 Det här avsnittet innehåller information om kostnadsobjekt och en beskrivning av hur kostnader och kvantiteter ackumuleras. Ett kostnadsredovisning är ett objekt som kostnader och kvantiteter ackumuleras för. En kostnadsobjektenhet kan vara antingen en produkt eller produktvarianter såsom varianter för stil och färg.  
 
-Kostnadsobjekt
-<a id="cost-objects" class="xliff"></a>
+<a name="cost-objects"></a>Kostnadsobjekt
 ------------
 
 Sidan **Kostnadsobjekt** visar alla kostnadsobjekt som registreras på en produkt. Kostnadsobjekten definieras av data från följande källor:
@@ -60,8 +57,7 @@ Följande tabell visar vad som är ett kostnadsobjekt och vad som är ett lagero
 | Kostnadsobjekt      | §x           | §x    |           |           |
 | Lagerobjekt | §x           | §x    |  §x        | §x         |
 
-## Ackumulering av kostnader och kvantiteter
-<a id="accumulation-of-costs-and-quantities" class="xliff"></a>
+## <a name="accumulation-of-costs-and-quantities"></a>Ackumulering av kostnader och kvantiteter
 -   Värdet i fältet **Värde** är en summa av följande värden:
     -   Fysiskt kostnadsbelopp
     -   Ekonomiskt självkostnadsbelopp
@@ -74,8 +70,7 @@ Följande tabell visar vad som är ett kostnadsobjekt och vad som är ett lagero
 
 **Obs!** Parametern **Inkludera fysiskt värde **påverkar inte de tidigare beräkningarna.
 
-Se även
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Se även
 --------
 
 [Produktdimensionsgrupp](https://technet.microsoft.com/en-us/library/aa499382.aspx)

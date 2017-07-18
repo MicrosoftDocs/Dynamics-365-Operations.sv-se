@@ -15,7 +15,7 @@ ms.custom: 221534
 ms.assetid: c4ed62f3-d351-41d7-a2ad-790576cde4ab
 ms.search.region: Global
 ms.author: abruer
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 3abf4b151b177095b71d44e9a6c9fd8541eaa64e
@@ -23,11 +23,9 @@ ms.openlocfilehash: 2171a454c763abab82f6555950994237b4de7b8b
 ms.contentlocale: sv-se
 ms.lasthandoff: 06/14/2017
 
-
 ---
 
-# Faktureringsarbetsyta för leverantörssamarbeten
-<a id="vendor-collaboration-invoicing-workspace" class="xliff"></a>
+# <a name="vendor-collaboration-invoicing-workspace"></a>Faktureringsarbetsyta för leverantörssamarbeten
 
 [!include[banner](../includes/banner.md)]
 
@@ -38,8 +36,7 @@ Arbetsytan **Fakturera leverantörssamarbeten** kan användas för att visa info
 Arbetsyta för leverantörssamarbetesfakturering
 ----------------------------------------
 
-### Sammanfattningsrutor
-<a id="summary-tiles" class="xliff"></a>
+### <a name="summary-tiles"></a>Sammanfattningsrutor
 
 **Sammanfattningsrutorna** ger en översikt över fakturorna för den valda leverantören. Du kan visa fakturor med hjälp av deras läge.
 -   Utkastfakturor har inte skickats in till arbetsflödet.
@@ -48,8 +45,7 @@ Arbetsyta för leverantörssamarbetesfakturering
 -   Betalda fakturor är de fakturor som har betalats till fullo i Finance and Operations.
 
 Om du klickar på en ruta öppnas en filtrerad vy av listsidan **Fakturor**.
-### Tabellistor
-<a id="tabular-lists" class="xliff"></a>
+### <a name="tabular-lists"></a>Tabellistor
 
 I avsnittet **Tabellistor** är status för faktureringen uppdelad på liknande sätt som sammanfattningsrutorna: Utkast och Skickad, ej godkända listor. En faktura kan skickas till arbetsflödet eller tas bort när den befinner sig läget Utkast. Den sista tabellistan är ett alternativ för att hitta fakturor. Du kan filtrera medan du söker för att tillåta snabbare sökningar.
 Alla listsidor med leverantörsfakturor

@@ -9,6 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User
+ms.reviewer: twheeloc
 ms.search.scope: 
 ms.assetid: 
 ms.search.region: Global
@@ -19,31 +20,26 @@ ms.openlocfilehash: e105c4b171979a03c20718c1fa9d558c921cd704
 ms.contentlocale: sv-se
 ms.lasthandoff: 06/20/2017
 
-
 ---
 
-# Arbetsyta för datavalidering
-<a id="data-validation-workspace" class="xliff"></a>
+# <a name="data-validation-workspace"></a>Arbetsyta för datavalidering
 
 [!include[banner](../includes/banner.md)]
 
 
 Det här avsnittet innehåller en översikt över arbetsytan **Checklista för datavalidering** och den associerade konfigurationen.
 
-## Arbetsyta för checklista för datavalidering
-<a id="data-validation-checklist-workspace" class="xliff"></a>
+## <a name="data-validation-checklist-workspace"></a>Arbetsyta för checklista för datavalidering
 
 Arbetsytan **checklista för datavalidering** låter dig spåra processer för validering av data mellan företag, områden och personer. Checklistan kan användas under en ny implementering efter uppgradering eller efter en migrering. Beroende på din vy över arbetsytan **Checklista för datavalidering** visas antingen alla uppgifter och status för ett datavalideringsprojekt eller enbart de aktiviteter som har tilldelats dig.
 
 Du måste först markera ett datavalideringsprojekt överst på arbetsytan. Alla data som visas på arbetsytan filtreras sedan genom det markerade datavalideringsprojektet.
 
-### Sammanfattningsrutor
-<a id="summary-tiles" class="xliff"></a>
+### <a name="summary-tiles"></a>Sammanfattningsrutor
 
 Rutorna **Sammanfattning** ger en översikt över processen och inkluderar indikatorer som hjälper dig att följa upp datavalideringsprocessen. Du kan se alla återstående uppgifter, slutförda uppgifter, pågående uppgifter och inte påbörjade uppgifter för processen. Denna information används för alla företag som ingår i det markerade, datavalideringsprojektet.
 
-### Avsnittet Uppgifter och status
-<a id="tasks-and-status-section" class="xliff"></a>
+### <a name="tasks-and-status-section"></a>Avsnittet Uppgifter och status
 
 I avsnittet **uppgifter och status** visas status på det övergripande datavalideringsprojektet på olika sätt: status efter juridisk person, efter område och efter uppgiftslista. Du kan välja filter för att visa status för ett specifikt företag. Varje statusflik tillhandahåller en uppdelning efter såväl slutförd procent och hur många uppgifter som återstår.
 
@@ -56,13 +52,11 @@ Du kan bifoga filer, anteckningar, bilder och URL-adresser till en aktivitet med
 
 Alternativet **Slutförd av** fylls i automatiskt när en uppgift med namnet på arbetaren som slutförde uppgiften. När en aktivitet har markerats som slutförd, uppdateras fältet **Datum för slutförande** automatiskt till aktuellt datum och aktuell tid.
 
-### Konfigurera datavalideringsprojektsidan
-<a id="configure-data-validation-project-page" class="xliff"></a>
+### <a name="configure-data-validation-project-page"></a>Konfigurera datavalideringsprojektsidan
 
 Innan du kan använda arbetsytan **checklista för datavalidering** måste du konfigurera processen med sidan **konfigurera datavalideringsprojekt**. (Klicka på **arbetsytor** \>**checklista för datavalidering** \>**konfigurera datavalideringsprojekt**.)
 
-### Uppgiftsområden
-<a id="task-areas" class="xliff"></a>
+### <a name="task-areas"></a>Uppgiftsområden
 
 Du använder uppgiftområden för att gruppera datavalideringsuppgifter i logiska området baserat på ägarskap i din organisation. Exempelvis kan Leverantörsreskontra, Kundreskontra eller Huvudbok användas som uppgiftområden.
 

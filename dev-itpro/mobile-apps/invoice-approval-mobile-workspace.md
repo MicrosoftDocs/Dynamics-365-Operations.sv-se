@@ -9,10 +9,11 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.reviewer: sericks
 ms.search.scope: Core, Operations, UnifiedOperations
 ms.search.region: Global
 ms.author: abruer
-ms.search.validFrom: 2017-06-30
+ms.search.validFrom: 2017-06-30T00:00:00.000Z
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,8 +23,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Mobil arbetsyta för fakturagodkännanden
-<a id="invoice-approvals-mobile-workspace" class="xliff"></a>
+# <a name="invoice-approvals-mobile-workspace"></a>Mobil arbetsyta för fakturagodkännanden
 
 [!include[banner](../includes/banner.md)]
 
@@ -31,13 +31,11 @@ Detta avsnitt tillhandahåller innehåller information om den mobila arbetsytan 
 
 Denna mobila arbetsyta är avsedd att användas med mobilappen Microsoft Dynamics 365 for Unified Operations.
 
-## Översikt
-<a id="overview" class="xliff"></a>
+## <a name="overview"></a>Översikt
 
 Den mobila arbetsytan **Faktureringsgodkännanden** låter ansvariga och chefer inom leverantörsreskontra visa fakturor som har tilldelats till dem som ett led i arbetsflödet för leverantörsfakturahuvud. Du kan visa faktureringsinformationen - och till och med rad- och distributionsinformationen - för att hjälpa dig att fatta välinformerade godkännandebeslut. Från arbetsytan kan vidta du åtgärder för att flytta faktura genom arbetsflödesprocessen. 
 
-## Förutsättningar
-<a id="prerequisites" class="xliff"></a>
+## <a name="prerequisites"></a>Förutsättningar
 
 Följande förutsättningar måste vara uppfyllda innan du kan använda den här mobila arbetsytan.
 
@@ -64,16 +62,14 @@ Följande förutsättningar måste vara uppfyllda innan du kan använda den här
 </tbody>
 </table>
 
-## Hämta och installera mobilappen
-<a id="download-and-install-the-mobile-app" class="xliff"></a>
+## <a name="download-and-install-the-mobile-app"></a>Hämta och installera mobilappen
 
 Hämta och installera mobilappen Dynamics 365 for Unified Operations:
 
 -   [För Android-telefoner](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [För iPhones](https://go.microsoft.com/fwlink/?linkid=850663)
 
-## Logga in på mobilappen
-<a id="sign-in-to-the-mobile-app" class="xliff"></a>
+## <a name="sign-in-to-the-mobile-app"></a>Logga in på mobilappen
 
 1.  Starta appen i din mobila enhet.
 2.  Ange din webbadress för Microsoft Dynamics 365.
@@ -82,8 +78,7 @@ Hämta och installera mobilappen Dynamics 365 for Unified Operations:
 
     [![Dra för att uppdatera](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
-## Godkänn fakturor genom att använda den mobila arbetsytan för fakturagodkännanden
-<a id="approve-invoices-by-using-the-invoice-approvals-mobile-workspace" class="xliff"></a>
+## <a name="approve-invoices-by-using-the-invoice-approvals-mobile-workspace"></a>Godkänn fakturor genom att använda den mobila arbetsytan för fakturagodkännanden
 1.  På din mobila enhet väljer du arbetsytan **Fakturagodkännanden**.
 2.  Välj den faktura som har tilldelats dig av arbetsflödet för leverantörsfakturahuvud.
 3.  På sidan **Fakturainformation** granskar du informationen i fakturahuvudet, till exempel leverantör och datum.

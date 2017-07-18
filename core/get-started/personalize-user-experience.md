@@ -10,12 +10,13 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: SysUserSetup
 audience: Application User, IT Pro
+ms.reviewer: sericks
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 62363
 ms.assetid: 57b445d7-3e9e-4228-8728-f63b9dbd77a3
 ms.search.region: Global
 ms.author: tlefor
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -23,11 +24,9 @@ ms.openlocfilehash: b338a930777a5945eb6318dc8066fb3649c79dbe
 ms.contentlocale: sv-se
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Anpassa användarupplevelsen
-<a id="personalize-the-user-experience" class="xliff"></a>
+# <a name="personalize-the-user-experience"></a>Anpassa användarupplevelsen
 
 [!include[banner](../includes/banner.md)]
 
@@ -38,8 +37,7 @@ Det finns många typer av anpassningsalternativ i Microsoft Dynamics 365 for Fin
 
 Alla anpassningsalternativ, oavsett slag, som en användare gör i Finance and Operations gäller endast för den användaren, oavsett vilket företag som användaren interagerar med. Ändringar som en användare gör att en sida inte påverka andra användare i systemet.
 
-## Systemtäckande alternativ för aktuell användare
-<a id="systemwide-options-for-the-current-user" class="xliff"></a>
+## <a name="systemwide-options-for-the-current-user"></a>Systemtäckande alternativ för aktuell användare
 I navigeringsfältet hittar du en växel bilden som heter **Inställningar** knappen meny. Öppna **menyn Inställningar** visas ett antal val. Val av **Alternativ** öppnar användarens **Alternativ** sida. Här finns det fyra alternativflikar: **Visuell**, **Inställningar**, **Konto**, och **Arbetsflöde**.
 
 -   **Visuellt:** Används för att välja ett färgtema och standardstorleken för element på dina sidor.
@@ -47,8 +45,7 @@ I navigeringsfältet hittar du en växel bilden som heter **Inställningar** kna
 -   **Konto:** Används för att ange ditt användar-ID och andra kontorelaterade inställningar.
 -   **Arbetsflöde:** här kan du välja arbetsflödesrelaterade alternativ.
 
-## Uttryckliga anpassningsalternativ
-<a id="implicit-personalizations" class="xliff"></a>
+## <a name="implicit-personalizations"></a>Uttryckliga anpassningsalternativ
 Uttryckliga anpassningsalternativ är de anpassningsalternativ som du utför enkelt genom att interagera med vissa kontroller som kommer ihåg deras aktuella synliga. 
 
 **Rutnätskolumner:** Du kan justera bredden på en kolumn i en lista genom att välja storlekssortering bar till vänster eller till höger om kolumnrubriken och skjuta den åt vänster eller höger till önskad bredd. Finance and Operations kommer att lagra bredden som du vill ha, och visa den kolumnen med den bredden varje gång du öppnar sidan med den listan. 
@@ -57,8 +54,7 @@ Uttryckliga anpassningsalternativ är de anpassningsalternativ som du utför enk
 
 **Faktarutor:** Vissa sidor har ett avsnitt som kallas faktaruta. Den här rutan innehåller skrivskyddad information relaterad till det aktuella ämnet på sidan. Varje avsnitt i faktaruta rutan kallas en faktaruta. Du kan expandera eller komprimera en faktaruta, så kommer Finance and Operations att spara inställningarna. I vissa fall gör komprimering av en faktaruta att prestanda förbättras, detta eftersom Finance and Operations inte behöver hämta informationen för faktarutan förrän faktarutan expanderas.
 
-## Explicit anpassningsalternativ med anpassning toolbar
-<a id="explicit-personalizations-using-the-personalization-toolbar" class="xliff"></a>
+## <a name="explicit-personalizations-using-the-personalization-toolbar"></a>Explicit anpassningsalternativ med anpassning toolbar
 Varje person och företag har olika perspektiv på vilka data som är viktigast för dem, eller vilka data finnas inte nödvändigt för det sätt de sköter sina affärer. Möjligheten att skräddarsy hur din information beställs, samverkas med eller till och med döljs, är nyckeln till att göra Finance and Operations till en personlig och givande upplevelse. 
 
 Explicita anpassningar är de anpassningar som du uttryckligen utför med avsikt att ändra utseende och funktion för ett element eller en sida, genom att välja en meny för anpassning. Den vanligaste typen av explicit anpassning är när du högerklickar på ett element och väljer **Anpassa**. (Observera att inte alla element på sidan kan anpassas). När du väljer den här metoden för anpassning visas elementets egenskapsfönster. 
@@ -93,8 +89,7 @@ Välj **Stäng** för att stänga verktygsfältet och återgå till det tidigare
 
 Med anpassning toolbar, spara är implicit. Din anpassningsalternativ träder i kraft omedelbart när du gör dem och det finns inget behov av att klicka på **knappen Save** . I vissa fall visas en hänglåsikon bredvid ett element när du väljer ett verktyg. Detta innebär att du inte kan ändra egenskaperna som hör till det valda verktyget om sidan ska fungera korrekt. När det gäller anpassning toolbar finnas öppnat, sidan blir icke-interaktivt. Du kan inte ange data eller expandera eller komprimera sektioner.
 
-## Explicit anpassning: Lägga till en panel eller lista i en arbetsyta
-<a id="explicit-personalization-adding-a-tile-or-list-to-a-workspace" class="xliff"></a>
+## <a name="explicit-personalization-adding-a-tile-or-list-to-a-workspace"></a>Explicit anpassning: Lägga till en panel eller lista i en arbetsyta
 Några sidor med listor kommer att ha ytterligare en anpassningsfunktion som finns inom dess rutan åtgärd, enligt anpassa grupp på fliken Alternativ. Välj **Lägg till arbetsytan för** att öppna listrutan som ger dig möjlighet att visa informationen i den aktuella listan (filtered och sorterat eller standard) på en arbetsyta som en lista eller en sammanfattning panel (som kan användas för att visa antal objekt i listan). 
 
 [![Lägg till på arbetsyta](./media/personalization-addtoworkspace.png)](./media/personalization-addtoworkspace.png) 
@@ -105,16 +100,13 @@ Lägg till en sida till en arbetsyta, första filtrera listan för att represent
 
 När din lista eller panel läggs till en arbetsyta kan du sedan öppna arbetsytan och re-order i listan eller panel inom gruppen placerades.
 
-## Explicit anpassning: Lägga till en sammanfattning från en arbetsyta till en panel
-<a id="explicit-personalization-adding-a-summary-from-a-workspace-to-a-dashboard" class="xliff"></a>
+## <a name="explicit-personalization-adding-a-summary-from-a-workspace-to-a-dashboard"></a>Explicit anpassning: Lägga till en sammanfattning från en arbetsyta till en panel
 Vissa arbetsytor innehåller räknepaneler (paneler med siffror på) som också ska visas på instrumentpanelen. På en arbetsyta, högerklicka på en räknepanel och välj **Anpassa**. Välj **PIN-kod för att instrumentpanelen**. Nästa gång du navigerar till (och uppdatera de valda instrumentpanelen ser du att räkna under arbetsytan navigeringsmeny panel på instrumentpanelen.
 
-## Explicit anpassning: Anpassa din instrumentpanel
-<a id="explicit-personalization-personalizing-your-dashboard" class="xliff"></a>
+## <a name="explicit-personalization-personalizing-your-dashboard"></a>Explicit anpassning: Anpassa din instrumentpanel
 Instrumentpanelen är ofta den första sida som du ser när du öppnar Finance and Operations. Du kan anpassa instrumentpanelen för att döpa din arbetsyta navigation paneler, för att endast visa panelerna som du skulle vilja se, byta panel, eller arrangerar panelerna i den ordning du föredrar att se dem. För att anpassa instrumentpanelen, välj någon panel och högerklicka för att öppna en snabbmeny. På snabbmenyn, välj **Anpassa**. Om den valda panelen är samma som du vill dölja eller ändra namn på eller hoppa över, du kan göra ändringar direkt i fönstret med egenskaper som har visats. Om du vill ordna paneler, välj sedan **anpassa denna form** i fastigheten för att öppna verktygsfältet anpassning. Sedan kan du använda verktyget Flytta till arrangerar panelerna.
 
-## Administration av anpassning
-<a id="administration-of-personalization" class="xliff"></a>
+## <a name="administration-of-personalization"></a>Administration av anpassning
 När du anpassar en sida kan du dela dina anpassningar med andra användare. Exportera bara den anpassade sidan. Du kan sedan be andra användare att gå till den anpassade sidan och importera anpassningsfilen som du har skapat.
 
 Användare med administratörsbehörighet kan även hantera anpassningsalternativ för andra användare på sidan **Anpassning** . Den här sidan har fyra flikar: **System**, **Användare**, **Importer**, och **Rensa**.

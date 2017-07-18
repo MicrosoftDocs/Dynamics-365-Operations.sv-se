@@ -9,12 +9,13 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.reviewer: sericks
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 17291
 ms.assetid: 76b7ca45-93d4-45cc-b191-66ee63afa1fd
 ms.search.region: Global
 ms.author: sericks
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,31 +23,26 @@ ms.openlocfilehash: 4a7e1253d83e9212d423868a1f841b6944b07ad7
 ms.contentlocale: sv-se
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Organisationer och organisationshierarkier
-<a id="organizations-and-organizational-hierarchies" class="xliff"></a>
+# <a name="organizations-and-organizational-hierarchies"></a>Organisationer och organisationshierarkier
 
 [!include[banner](../includes/banner.md)]
 
 
 En organisation är en grupp personer som arbetar tillsammans för att utföra ett arbete eller uppnå ett mål. Organisationshierarkier representerar relationerna mellan de organisationer som finns i företaget.
 
-Organisationer
-<a id="organizations" class="xliff"></a>
+<a name="organizations"></a>Organisationer
 -------------
 
 I Microsoft Dynamics 365 for Finance and Operations kan du definiera följande typer av interna organisationer: juridiska personer, driftenheter och team.
 
 Alla interna organisationer är typer av enheten **Part**. Därför använder dessa organisationer adressboken för att lagra adress - och kontaktinformation. En part, som kan vara antingen en person eller en organisation, kan tillhöra en eller flera adressböcker.
-### Juridiska personer
-<a id="legal-entities" class="xliff"></a>
+### <a name="legal-entities"></a>Juridiska personer
 
 En juridisk person är en organisation som har en registrerad eller lagstiftad juridisk struktur. Juridiska personer kan ingå juridiska kontrakt och måste förbereda utdrag som rapporterar deras resultat. Ett företag är en sorts juridisk person. I denna version av Microsoft Dynamics 365 for Finance and Operations är företag den enda typ av juridisk person som du kan skapa, och varje juridisk person associeras med ett företags-ID. Denna koppling finns eftersom vissa funktionella områden i programmet använder ett företags-ID eller DataAreaId, i deras datamodeller. I dessa funktionella områden används företag som en gräns för datasäkerhet. Användarna kan endast komma åt data för de företag som de är inloggade på.
 
-### Driftenheter
-<a id="operating-units" class="xliff"></a>
+### <a name="operating-units"></a>Driftenheter
 
 En driftenhet är en organisation som används för skilja kontrollen av ekonomiska resurser och processer kunskap i ett företag. Personer i en driftenhet har en skyldighet att maximera användningen av knappa resurser, att förbättra processer och att redovisa deras resultat. Följande driftenheter ingår i Microsoft Dynamics 365 for Finance and Operations: kostnadsställen, affärsenheter, värdeströmmar, avdelningar och butikskanaler. I följande tabell finns mer information om varje typ av driftenhet.
 | Typ av driftenhet | Beskrivning                                                                                                                                    | Syfte                                                                                                                                 |
@@ -57,8 +53,7 @@ En driftenhet är en organisation som används för skilja kontrollen av ekonomi
 | Avdelning          | En driftenhet som representerar en kategori eller en funktionell del av en organisation som utför en viss uppgift, till exempel försäljning eller redovisning. | Används för att rapportera om funktionsområden. En avdelning kan ha ansvar för vinster och förluster och kan bestå av en grupp av kostnadsställen.   |
 | Butikskanal      | En driftenhet som representerar en fysisk butik, en onlinebutik eller en onlinemarknadsplats.                                          | Används för hantering och den driftskontrollen av en eller flera butiker inom eller mellan juridiska personer.                                  |
 
-### Team
-<a id="teams" class="xliff"></a>
+### <a name="teams"></a>Team
 
 Ett team är en organisation i vilken medlemmarna delar ett gemensamt ansvarsområde, intresse eller mål. Team kan inte användas i organisationens hierarkier.
 Organisationshierarkier
