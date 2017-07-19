@@ -10,13 +10,14 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PlanActivity, ReqSupplyDemandSchedule
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 
 ms.assetid: 
 ms.search.region: Global
 ms.search.industry: 
 ms.author: cvocph
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -24,11 +25,9 @@ ms.openlocfilehash: 84322bb3f02d236843bebc24c4c5eccdd4d9f2bf
 ms.contentlocale: sv-se
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Receptdesigner
-<a id="formula-designer" class="xliff"></a>
+# <a name="formula-designer"></a>Receptdesigner
 
 [!include[banner](../includes/banner.md)]
 
@@ -45,8 +44,7 @@ Klicka **Filter** för att ändra det initiala valet i vyn. Genom att ange visni
 
 Följande avsnitt beskriver de funktioner som är tillgängliga i strukturlistedesignern.
 
-## Analysera en formelstruktur med formeldesignern
-<a id="analyze-a-formula-structure-by-using-the-formula-designer" class="xliff"></a>
+## <a name="analyze-a-formula-structure-by-using-the-formula-designer"></a>Analysera en formelstruktur med formeldesignern
 Formeldesignern har två avsnitt:
 
 -   En trädvy över formelstrukturen.
@@ -57,8 +55,7 @@ Formeldesignern har två avsnitt:
     -   **Flöde** – Visar sidhuvudet för det flöde som är relaterat till den valda noden.
     -   **Flödesoperationer** – Visar en förhandsgranskning av operationerna för flödet. När en strukturlisterad (BOM) som tilldelas en viss operation är markerad, markeras operationen som **Komponent som behövs vid operationer**.
 
-## Välj en formel och ett flöde
-<a id="select-a-formula-and-route" class="xliff"></a>
+## <a name="select-a-formula-and-route"></a>Välj en formel och ett flöde
 Filtret som används för formeln och flödet visas i formeldesignerns rubrik. Du kan ändra filtret, genom att använda dialogrutan **Filter**. I tabellen nedan beskrivs fälten i denna dialogruta.
 
 <table>
@@ -102,8 +99,7 @@ Filtret som används för formeln och flödet visas i formeldesignerns rubrik. D
 
 När du använder formeldesignern för att granska eller redigera formler som består av en eller flera nivåer av fiktiva element, omfattar flödet som är kopplat till den översta artikeln vanligtvis hela formelhierarkin. För att förenkla översikten kan du låsa flödet på högsta nivån på skärmen genom att klicka på **Visa** &gt; **Lås flöde**. Om du vill låsa upp flödet, klicka på **Visa** &gt; **Lås upp flöde**.
 
-## Lägg till och redigera formler och formelrader
-<a id="add-and-edit-formulas-and-formula-lines" class="xliff"></a>
+## <a name="add-and-edit-formulas-and-formula-lines"></a>Lägg till och redigera formler och formelrader
 Använd funktionerna **Strukturlisterader** eller **Formel** för att ändra formelraderna eller formeln. När du väljer en nod i trädet, bestämmer nodtypen vilka funktioner som är tillgängliga.
 
 | Funktion                            | beskrivning                                                                                               | Nodtyp och -villkor |
@@ -117,8 +113,7 @@ Använd funktionerna **Strukturlisterader** eller **Formel** för att ändra for
 | Formel &gt; Beräkning            | Öppna en dialogruta där du kan köra kostnads- och försäljningprisberäkningen för den valda produktvarianten. | Den här funktionen finns bara när vald nod är relaterad till en formelversion. |
 | Formel &gt; Kontroll                  | Validera och kontrollera den valda formeln.                                                                  | Den här funktionen finns bara när vald nod är relaterad till en formelversion. |
 
-## Konfigurera trädvy
-<a id="configuring-the-tree-view" class="xliff"></a>
+## <a name="configuring-the-tree-view"></a>Konfigurera trädvy
 Klicka på **Inställningar** om du vill anpassa informationen som visas i trädvyn för formeldesignern.
 
 | Fältgrupp | beskrivning |

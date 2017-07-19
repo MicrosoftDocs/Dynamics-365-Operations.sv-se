@@ -9,10 +9,11 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
+ms.reviewer: sericks
 ms.search.scope: Operations, UnifiedOperations, Talent, Core
 ms.search.region: Global
 ms.author: JCart
-ms.search.validFrom: 2017-06-30
+ms.search.validFrom: 2017-06-30T00:00:00.000Z
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,20 +23,17 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Utveckling av medarbetare Power BI-innehåll
-<a id="employee-development-power-bi-content" class="xliff"></a>
+# <a name="employee-development-power-bi-content"></a>Utveckling av medarbetare Power BI-innehåll
 
 [!include[banner](../includes/banner.md)]
 
 Det här avsnittet beskriver Power BI-innehåll för **medarbetarutveckling**. Det förklarar hur du öppnar rapporter, och ger information om den datamodell och de enheter som användes för att skapa innehållet.
 
-## Åtkomst till Power BI-innehåll
-<a id="accessing-the-power-bi-content" class="xliff"></a>
+## <a name="accessing-the-power-bi-content"></a>Åtkomst till Power BI-innehåll
 
 Om du använder Microsoft Dynamics 365 for Operations version 1611 eller Finance and Operations, Enterprise edition juli 2017 uppdatering hittar du Power BI-innehållspaket för **medarbetarutveckling** i Microsoft Dynamics Lifecycle Services (LCS). Mer information om hur du laddar ned innehållspaket och ansluter det till dina data finns i [Power BI-innehåll i LCS från Microsoft och dina partner](power-bi-content-microsoft-partners.md).
 
-## Rapporter som ingår i Power BI-innehållet
-<a id="reports-that-are-included-in-the-power-bi-content" class="xliff"></a>
+## <a name="reports-that-are-included-in-the-power-bi-content"></a>Rapporter som ingår i Power BI-innehållet
 Rapporter som ingår i Power BI-innehållspaketet **Medarbetarutveckling** har både diagram och tabeller med ytterligare information. Följande register beskriver rapporterna.
 
 | Rapport                        | Innehåll |
@@ -50,8 +48,7 @@ Rapporter som ingår i Power BI-innehållspaketet **Medarbetarutveckling** har b
 
 Diagrammen och rutorna i samtliga dessa rapporter kan filtreras och fästas på instrumentpanelen. Mer information om hur du filtrerar och fäster i Power BI finns i [Skapa och konfigurera en intrumentpanel](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
-## Förstå datamodellen och enheterna
-<a id="understanding-the-data-model-and-entities" class="xliff"></a>
+## <a name="understanding-the-data-model-and-entities"></a>Förstå datamodellen och enheterna
 | Enhet                   | Innehåll                                                                                                   | Relationer med andra entiteter |
 |--------------------------|------------------------------------------------------------------------------------------------------------|-----------------------------------|
 | Kalenderförskjutning          | Kalenderförskjutningar till uppdela rapporter                                                                          | Tidigare befattningstilldelning, befattningsutveckling, uppsagd medarbetare 

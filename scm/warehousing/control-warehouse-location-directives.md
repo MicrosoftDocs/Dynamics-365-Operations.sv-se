@@ -10,12 +10,13 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: WHSLocDirFailure, WHSLocDirHint, WHSLocDirTable, WHSLocDirTableUOM, WHSRFMenuItem, WHSWork, WHSWorkClass, WHSWorkPool, WHSWorkTemplateTable
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 72921
 ms.assetid: 377ab8af-5b0c-4b5e-a387-06ac1e1820c0
 ms.search.region: Global
 ms.author: perlynne
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -23,11 +24,9 @@ ms.openlocfilehash: f8bcdcf70089aaed06ba0f88cdbec8dfdf9121d1
 ms.contentlocale: sv-se
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Kontrollera lagerarbetet genom arbetsmallar och platsdirektiv
-<a id="control-warehouse-work-by-using-work-templates-and-location-directives" class="xliff"></a>
+# <a name="control-warehouse-work-by-using-work-templates-and-location-directives"></a>Kontrollera lagerarbetet genom arbetsmallar och platsdirektiv
 
 [!include[banner](../includes/banner.md)]
 
@@ -36,8 +35,7 @@ Denna artikel beskriver hur man använder mallar och placering direktiven för a
 
 De instruktioner som lagerarbetare tar emot på en mobil enhet bestäms av de arbetsmallar som du anger i Microsoft Dynamics 365 for Finance and Operations för att definiera de olika lagerprocesserna och -uppgifterna. Arbetsmallar avgör hur arbetet utförs för varje lager. Genom att koppla en lagerplats direktiv att arbeta mallar, du kan bidra till att garantera att arbetet sker i särskilda fysiska områden i lager.
 
-## Arbetsmallar
-<a id="work-templates" class="xliff"></a>
+## <a name="work-templates"></a>Arbetsmallar
 **Arbetsmallar** sidan låter dig definiera arbeten som måste utföras i lagret. Typiskt, warehouse arbeten består av ett par åtgärder: en lagerarbetare plockar upp lagersaldot på en plats och sedan lägger de plockade lager ned på en annan plats. 
 
 Arbetsmallar består av ett sidhuvud och tillhörande ledningar. Varje mall för en viss *arbetsorder*. Många arbetsorder som är kopplade till källa dokument, t.ex. inköpsorder eller beställningar. Men andra arbetsordern typer utgör separata lager processer, såsom inventeras. *Arbetet pool-ID *låter dig att organisera arbetet i grupperna. 
@@ -50,8 +48,7 @@ Du kan ställa in en fråga för att kontrollera när en särskild mall används
 
 För att stoppa eller pausa en arbetsprocess kan du använda **stopp** på arbetet. I detta fall arbetstagare som utför arbetet inte bli ombedd att utföra nästa rad steg. Gå vidare till nästa steg, att arbetstagaren eller annan arbetstagare måste välja igen. Du kan även ta uppdrag inom ett arbete med en annan *klass-ID *för arbetsmallen.
 
-## Platsdirektiv
-<a id="location-directives" class="xliff"></a>
+## <a name="location-directives"></a>Platsdirektiv
 Placering av direktiven är regler som hjälper till att identifiera och sätta platserna för lager. Exempelvis i en försäljningsorder transaktion, en plats direktiv bestämmer var objekten ska plockas, och där plockade artiklar kommer att användas. Plats direktiven består av ett sidhuvud och därtill hörande linjer, och du skapar dem på **plats direktiven** sida. 
 
 På huvudet, varje plats direktiv måste vara associerad med en *arbetsorder typ *som anger typ av lagertransaktionen som direktivet kommer att användas för, såsom beställningar, återfyllnad, eller råmaterial plockning. Den *arbetstyp *anger platsen direktiv kommer att användas för plockning eller arbete, eller för vissa andra lagret process, såsom inventering eller lager status ändras. Du måste också ange en *ort *och ett *lager*. Ett *direktiv kod *som du anger på skärbordet kan användas för att länka placering direktiv till en eller flera arbetsmallar. 
@@ -62,8 +59,7 @@ Platsdirektivraderna anger ytterligare begränsningar för tillämpningen av reg
 
 Platsdirektiv har en ytterligare detaljnivå: *platsdirektivåtgärder*. Du kan definiera flera plats direktiv åtgärder för varje linje. Återigen används ett ordningsnummer för att avgöra i vilken ordning åtgärderna bedöms. På den här nivån kan du skapa en fråga för att definiera hur du hittar den bästa platsen i lagerstället. Du kan också använda fördefinierade **inställningar för strategi för** att finna en optimal placering.
 
-### Exempel på användning av platsen direktiven
-<a id="example-of-the-use-of-location-directives" class="xliff"></a>
+### <a name="example-of-the-use-of-location-directives"></a>Exempel på användning av platsen direktiven
 
 I det här exemplet kommer vi att överväga en inköpsorder där placering direktiv måste hitta ledig kapacitet inom ett lager för inventarier som just registrerats vid mottagningsplatsen. Först vill vi försöka hitta ledig kapacitet inom lagret genom att konsolidera med befintliga lagersaldot. Om konsolideringen är inte möjligt, då vill vi att hitta en tom plats. 
 

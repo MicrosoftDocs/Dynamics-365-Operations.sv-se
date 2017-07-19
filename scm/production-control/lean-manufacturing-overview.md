@@ -10,14 +10,14 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: KanbanBoardTransferJob, KanbanBoardWorkCell, KanbanJobSchedulingListPage, LeanProductionFlow
 audience: Application User
-ms.reviewer: YuyuScheller
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 19371
 ms.assetid: 026c5605-6be7-4fdb-a6f2-8e37a806796c
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: crytt
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
@@ -25,11 +25,9 @@ ms.openlocfilehash: 376b521a7527b4f60bc01c080f8eabb5cb231b30
 ms.contentlocale: sv-se
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Lean manufacturing – översikt
-<a id="lean-manufacturing-overview" class="xliff"></a>
+# <a name="lean-manufacturing-overview"></a>Lean manufacturing – översikt
 
 [!include[banner](../includes/banner.md)]
 
@@ -46,15 +44,13 @@ Lean manufacturing-arkitekturen i Finance and Operations består av produktionsf
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Du kan använda Finance and Operations för att stödja implementeringen av lean manufacturing med kanban. En lyckad implementering av resurssnåla principer beror dock på vilka interna affärsprocesser du använder, och på själva produktionsvillkoren och produktionsmiljön. |
 
-##  Modellera tillverknings- och logistikprocesser som produktionsflöden
-<a id="modeling-manufacturing-and-logistics-processes-as-production-flows" class="xliff"></a>
+## <a name="modeling-manufacturing-and-logistics-processes-as-production-flows"></a> Modellera tillverknings- och logistikprocesser som produktionsflöden
 Du skapar en lean manufacturing-grund genom att modellera tillverknings- och logistikprocesser som produktionsflöden. Aktiviteten består av följande uppgifter:
 1.  Identifiera processerna som du vill implementera en resurssnål återanskaffningsstrategi för och modellera sedan dessa processer som produktionsflöden. Du kan sedan analysera och förenkla processen. Ett av målen med en resurssnål implementering är att reducera spill genom att förbättra flödet av material och information.
 2.  Definiera ett produktionsflöde som en sekvens av aktiviteter som beskriver flödet av material. En överföringsaktivitet definierar förflyttningen av en produkt eller produkter från en plats till en annan. En processaktivitet som definierar en mervärdesåtgärd som tillämpas på en produkt.
 3.  Skapa en version av produktionsflödet som definierar kraven för takttid. Dessa krav används för att beräkna cykeltiderna för varje aktivitet i produktionsflödet. Du kan skapa flera versioner av produktionsflöden och sedan använda dessa versioner för att förbättra processer.
 
-##  Använda kanban för att signalera efterfrågebehov
-<a id="using-kanbans-to-signal-demand-requirements" class="xliff"></a>
+## <a name="using-kanbans-to-signal-demand-requirements"></a> Använda kanban för att signalera efterfrågebehov
 Ett hämtningssystem producerar bara varor när varorna behövs. Denna metod minskar ledtiderna för leveranser och överflödigt lager. Du kan använda kanban att planera, följa och bearbeta krav som baseras på produktionsflöden. Om du vill skapa ett kanban-ramverk skapar du kanban-regler som definierar när kanban skapas och hur behoven uppfylls. Du kan skapa två typer av kanban-regler. Tillverkningsregler skapar kanban-jobb för processer och kanban-regler för tillbakadragande skapar kanban-jobb för överföringar. Du kan ställa in betalningstyper på lagerpåfyllnadsstrategier:
 -   Kanban-regler av typen **Fast kvantitet** är relaterade till ett fast antal hanteringsenheter, vilket innebär att antalet aktiva kanban är konstant. När alla produkter från en kanban förbrukas och hanteringsenheter töms manuellt, skapas en ny kanban av samma typ. När du skapar fasta kanban-regler för kvantitet kan du beräkna de optimala kanban- och produktkvantiteter som används. Beräkningen tar hänsyn till kontoprognosen, faktisk efterfrågan från öppna order, ledtid för att fylla på artiklar och historisk efterfrågan.
 -   Kanban-regler av typen **Schemalagda** fyller på behov som beräknas från huvudplaneringen. Huvudplaneringen genererar planerade kanban som kan kopplas till kanban.
@@ -62,8 +58,7 @@ Ett hämtningssystem producerar bara varor när varorna behövs. Denna metod min
 
 När en kanban skapas genereras ett eller flera kanban-jobb baserat på kanban-flödesaktiviteterna som definierats i kanban-reglerna.
 
-##  Övervaka och underhålla kanban-jobb
-<a id="monitoring-and-maintaining-kanban-jobs" class="xliff"></a>
+## <a name="monitoring-and-maintaining-kanban-jobs"></a> Övervaka och underhålla kanban-jobb
 Lean manufacturing ger insyn i den aktuella statusen för tillverknings- och logistikaktiviteter som regleras av kanban-reglerna. Som ett resultat kan du planera och prioritera följande uppgifter:
 
 -   Få en översikt över schemat med aktuella kanban-jobb.
@@ -75,8 +70,7 @@ I listan nedan beskrivs de specialiserade kanban-tavlorna:
 -   Kanban-tavla för överföringsjobb – Den här tavlan ger en översikt över aktuella överföringsjobb. Du kan uppdatera och registrera plocklistor, starta och slutföra överföringsjobb och utföra andra uppgifter.
 -   Kanban-tavla för processjobb – Den här tavlan har utformats för att stödja det normala produktionsflödet och för att ge en översikt över den aktuella situationen i en eller flera arbetsgrupper. Från den här tavlan kan kanban prioriteras, väljas eller tillverkas. Tavlan har också utformats för att stödja skanning av streckkoder för rapporteringen av kanban.
 
-## Kanban-jobb och integrering med processer i Finance and Operations
-<a id="kanban-jobs-and-integration-with-finance-and-operations-processes" class="xliff"></a>
+## <a name="kanban-jobs-and-integration-with-finance-and-operations-processes"></a>Kanban-jobb och integrering med processer i Finance and Operations
 Kanban-jobb är helt integrerade med aktuella processer för lagertransaktioner i Finance and Operations.
 -   Du kan utföra plockningsaktiviteter för att fylla på material som används för att uppfylla behoven i kanban-jobb.
 -   Du kan skriva ut kanban-kort, cirkulerande kanban-kort och plocklistor för att stödja användningen av kanban. Dessa dokument används för att representera, spåra och registrera kanban-jobb på lagerstället och på produktionsgolvet.

@@ -9,12 +9,13 @@ ms.prod:
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, IT Pro
+ms.reviewer: sericks
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 106233
 ms.assetid: 517e6a88-e7a1-4398-9971-b22fa83306ba
 ms.search.region: Global
 ms.author: kweekley
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,23 +23,19 @@ ms.openlocfilehash: b20f526d20d357750777d0f9bda26e4d9d55b335
 ms.contentlocale: sv-se
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Innehållspaket för ekonomiska resultat för Power BI
-<a id="financial-performance-power-bi-content" class="xliff"></a>
+# <a name="financial-performance-power-bi-content"></a>Innehållspaket för ekonomiska resultat för Power BI
 
 [!include[banner](../includes/banner.md)]
 
 Det här avsnittet beskriver Microsoft Power BI-innehåll för **finansiellt resultat**. Det beskriver instrumentpanelen och de rapporter som är inkluderade, samt ger dig information om den datamodell och de enheter som användes för att skapa innehållet.
 
-## Åtkomst till Power BI-innehåll
-<a id="accessing-the-power-bi-content" class="xliff"></a>
+## <a name="accessing-the-power-bi-content"></a>Åtkomst till Power BI-innehåll
 
 Du kan använda **ekonomiska resultat** Power BI från Microsoft Dynamics Lifecycle Services (LCS) och PowerBI.com.
 
-### Tillgänglig från LCS
-<a id="available-from-lcs" class="xliff"></a>
+### <a name="available-from-lcs"></a>Tillgänglig från LCS
 Det Power BI-innehåll för **ekonomiska resultat** som är tillgängligt från LCS stödjer följande versioner:
 
 - Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, juli 2017 uppdatering
@@ -46,16 +43,13 @@ Det Power BI-innehåll för **ekonomiska resultat** som är tillgängligt från 
 
 Du hittar  Power BI-innehållet i det delade resursbiblioteket i LCS. Mer information om hur du laddar ned innehållspaket och använder det i din organisation finns i [Power BI-innehåll i LCS från Microsoft och dina partner](power-bi-content-microsoft-partners.md). Om du vill se en demonstration som visar hur du implementerar Power BI-innehållet, se [Power BI-innehåll från Microsoft och dina samarbetspartners i Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office mix.
 
-### Från PowerBI.com
-<a id="available-from-powerbicom" class="xliff"></a>
+### <a name="available-from-powerbicom"></a>Från PowerBI.com
 Power BI-innehållet för **exkomnomiska resultat** som finns på PowerBI.com stöder Microsoft Dynamics 7.0 AX, versioner 7.0 och 7.0.1. Mer information om hur du ansluter och laddar dina Dynamics AX, se [Åtkomst till Power BI-innehåll från PowerBI.com](power-bi-home-page.md).
 
-## Huvudkontoinställningar
-<a id="main-account-setup" class="xliff"></a>
+## <a name="main-account-setup"></a>Huvudkontoinställningar
 Konfigurationen av huvudkonton är viktig eftersom organisationer vill att skuld- och intäktsbelopp ska anges som positiva belopp i rapporter. Huvudkontotypen måste anges som **Skuld** eller **Intäkt** för att huvudkontona ska anges som positiva belopp. När dessa kontotyper används, kommer rapporteringen via Power BI att vända på tecknen och ange beloppen som positiva.
 
-## Instrumentpanelen och rapporterna som ingår i Power BI-innehåll
-<a id="dashboard-and-reports-that-are-included-in-the-power-bi-content" class="xliff"></a>
+## <a name="dashboard-and-reports-that-are-included-in-the-power-bi-content"></a>Instrumentpanelen och rapporterna som ingår i Power BI-innehåll
 Instrumentpanelen innehåller summerade datarutor baserade på underliggande rapporter. Varje ruta innehåller sammanfattad information för innevarande år för alla företag i en organisation. Här följer några exempel på paneler:
 
 - Kontant
@@ -91,8 +85,7 @@ Var och en av dessa paneler backas upp av en underliggande rapport. Dessa rappor
 
 Diagrammen och rutorna i samtliga dessa rapporter kan filtreras och fästas på instrumentpanelen. Mer information om hur du filtrerar och fäster i Power BI finns i [Skapa och konfigurera en intrumentpanel](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
-## Förstå datamodellen och enheterna
-<a id="understanding-the-data-model-and-entities" class="xliff"></a>
+## <a name="understanding-the-data-model-and-entities"></a>Förstå datamodellen och enheterna
 Följande enheter användes till grund för Power BI-innehållspaket för **ekonomiska resultat**
 
 **Enheter för aggregerade data**

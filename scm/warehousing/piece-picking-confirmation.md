@@ -9,11 +9,12 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.reviewer: bis
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 269384
 ms.search.region: Global
 ms.author: mirzaab
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
@@ -21,11 +22,9 @@ ms.openlocfilehash: c5340f4dacd743600ef955c8d5228d1e2d2d2fa9
 ms.contentlocale: sv-se
 ms.lasthandoff: 06/20/2017
 
-
 ---
 
-# Enhetsplockningsbekräftelse
-<a id="piece-picking-confirmation" class="xliff"></a>
+# <a name="piece-picking-confirmation"></a>Enhetsplockningsbekräftelse
 
 [!include[banner](../includes/banner.md)]
 
@@ -35,13 +34,11 @@ Bekräftelse av produkten väljs automatiskt när du aktiverar enhetsplockning. 
 
 Du kan också använda kvantitet och måttenhet (UOM) som är associerad med en skannad streckkod. Den här metoden fungerar för inleverans på inkommande flöden inklusive inleverans av blandad registreringsskylt, artikel för inköpsorder, artikel för överföringsorder och lastartikel. Den fungerar även för enhetsplockning där skanning av streckkoden lägger till kvantiteten till det totala antalet bekräftade enheter som konverteras mellan måttenheten på streckkoden och arbetsenheten. Vid bekräftelse på att kvantiteten är godkänd för inventering i sekvensgruppen i samband med inventering av måttenheten på streckkoden läggs kvantiteten till i det totala antalet.
 
-## Tillämpning
-<a id="where-it-applies" class="xliff"></a>
+## <a name="where-it-applies"></a>Tillämpning
 
 Enhetsplockning fungerar för allt inventeringsarbete och för den ursprungliga plockningen för alla typer av arbete. Enhetsplockning gäller inte om artikeln styrs av serienummer eller om det är en tillverknings- eller kanban-plockning från en registreringsskyltsplats (LP) och artikeln är inställd till mellanlagring.
 
-## Ställa in enhetsplockning
-<a id="set-up-piece-picking" class="xliff"></a>
+## <a name="set-up-piece-picking"></a>Ställa in enhetsplockning
 
 1.  I den mobila enhetens menyalternativ öppnar du inställningsformuläret för arbetsbekräftelse: Lagerstyrning > **Lagerstyrning** > **Inställningar** > **Mobil enhet** > **Mobila enhetens menyalternativ**. 
 2. Från den mobila enhetens menyalternativ öppnar du Inställning av arbetsbekräftelse.

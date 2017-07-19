@@ -9,12 +9,13 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
+ms.reviewer: sericks
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 196083
 ms.assetid: 192b7a98-7d04-4c7a-a986-29d797a8a837
 ms.search.region: Global
 ms.author: donaldc
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,11 +23,9 @@ ms.openlocfilehash: 713204bc1e9c757bda48d556ea5b0f66ed79a5c9
 ms.contentlocale: sv-se
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Konfigurera egenskaper för ett arbetsflöde
-<a id="configure-the-properties-of-a-workflow" class="xliff"></a>
+# <a name="configure-the-properties-of-a-workflow"></a>Konfigurera egenskaper för ett arbetsflöde
 
 [!include[banner](../includes/banner.md)]
 
@@ -35,29 +34,25 @@ I det här avsnittet beskrivs hur du konfigurerar olika egenskaper för ett arbe
 
 Öppna arbetsflödet i arbetsflödesredigeraren för att konfigurera ett egenskaperna för ett arbetsflöde. Klicka på arbetsytan i arbetsflödesredigeraren och klicka sedan på **Egenskaper** för att öppna sidan **Egenskaper**. Du kan sedan använda följande procedurer när du vill konfigurera olika egenskaper för arbetsflödet.
 
-## Ge arbetsflödet ett namn
-<a id="name-the-workflow" class="xliff"></a>
+## <a name="name-the-workflow"></a>Ge arbetsflödet ett namn
 Följ dessa steg när du vill ange ett namn för arbetsflödet.
 
 1.  Klicka på **Grundinställningar** i det vänstra fönstret.
 2.  Ange ett unikt namn i fältet **Namn**. Om du till exempel skapar ett arbetsflöde för inköpsrekvisitioner för varje land/region som du har verksamhet i, kan du namnge arbetsflödet för inköpsrekvisitioner **Inköpsrekvisitioner för Danmark** eller **Inköpsrekvisitioner för Spanien**.
 
-## Ange arbetsflödets ägare
-<a id="specify-the-workflow-owner" class="xliff"></a>
+## <a name="specify-the-workflow-owner"></a>Ange arbetsflödets ägare
 Ägaren till arbetsflödet är den person som administrerar och underhåller arbetsflödet. Följ dessa steg för att ange arbetsflödets ägare.
 
 1.  Klicka på **Grundinställningar** i det vänstra fönstret.
 2.  I listan **Ägare** väljer du namnet på den person som ska hantera arbetsflödet.
 
-## Välj en e-postmall
-<a id="select-an-email-template" class="xliff"></a>
+## <a name="select-an-email-template"></a>Välj en e-postmall
 Följ dessa steg för att välja den e-postmall som används för att generera meddelanden om arbetsflödet.
 
 1.  Klicka på **Grundinställningar** i det vänstra fönstret.
 2.  Välj mallen i listan **E-postmall för arbetsflödesmeddelanden**.
 
-## Ange instruktioner för användare
-<a id="enter-instructions-for-users" class="xliff"></a>
+## <a name="enter-instructions-for-users"></a>Ange instruktioner för användare
 Du kan tillhandahålla instruktioner till de användare som skickar dokument för bearbetning och godkännande. Dessa användare kallas även för *upphovsmän*. Anta att du skapar ett arbetsflöde för en inköpsrekvisition och anger instruktioner. Dessa instruktioner kan sedan läsas av användare som anger inköpsrekvisitioner på sidan **Inköpsrekvisitioner**. För att visa instruktioner klickar upphovsmannen klickar på ikonen i meddelandefältet för arbetsflöde. Följ dessa steg om du vill ange instruktioner för användare.
 
 1.  Klicka på **Grundinställningar** i det vänstra fönstret.
@@ -76,8 +71,7 @@ Du kan tillhandahålla instruktioner till de användare som skickar dokument fö
     5.  Om du vill anpassa texten kan du infoga platshållare. Se steg 3 för instruktioner om hur du anger en platshållare.
     6.  Klicka på **Stäng**.
 
-## Ange när detta arbetsflöde ska användas
-<a id="specify-when-this-workflow-is-used" class="xliff"></a>
+## <a name="specify-when-this-workflow-is-used"></a>Ange när detta arbetsflöde ska användas
 Du kan skapa flera arbetsflöden utifrån samma typ. Du kan till exempel skapa ett arbetsflöde för inköpsrekvisitioner för varje land/region som du har verksamhet i, exempelvis inköpsrekvisitioner för Danmark eller inköpsrekvisitioner för Spanien. Om du har flera arbetsflöden som är baserade på samma typ, måste du ange när respektive arbetsflöde ska användas. För föregående exempel anger du följande villkor:
 
 -   Inköpsrekvisitioner för Danmark används när: land/region = DK:
@@ -96,8 +90,7 @@ Följ dessa steg för att ange när arbetsflödet som du konfigurerar ska använ
     3.  Klicka på **Ja**. Systemet utvärderar posten i syfte att avgöra om den uppfyller villkoren som du har angett. Om du till exempel skapar ett arbetsflöde för inköpsrekvisition för Spanien, visar området **Validera villkor** på sidan en lista över inköpsrekvisitioner. När du klickar på **Testa** utför systemet en utvärdering av vald inköpsrekvisition för att kontrollera om land/region är ES.
     4.  När du vill återgå till sidan **Egenskaper** klickar du på **OK** eller på **Avbryt**.
 
-## Ange när meddelanden ska skickas
-<a id="specify-when-notifications-are-sent" class="xliff"></a>
+## <a name="specify-when-notifications-are-sent"></a>Ange när meddelanden ska skickas
 När ett dokument skickas in för bearbetning skapas en arbetsflödesinstans. Du kan skicka meddelanden till användarna när arbetsflödesinstanser som baseras på arbetsflödet har startats, slutförts, annullerats eller stoppats på grund av ett fel. Följ dessa steg för att ange när meddelanden ska skickas.
 
 1.  Klicka på **Meddelanden** i det vänstra fönstret.
@@ -169,8 +162,7 @@ När ett dokument skickas in för bearbetning skapas en arbetsflödesinstans. Du
 
 8.  Upprepa stegen 3 till och med 7 för varje enskild händelse du valde i steg 2.
 
-## Kommentera de ändringar som du har gjorts i arbetsflödet
-<a id="enter-comments-about-the-changes-that-you-made-to-the-workflow" class="xliff"></a>
+## <a name="enter-comments-about-the-changes-that-you-made-to-the-workflow"></a>Kommentera de ändringar som du har gjorts i arbetsflödet
 Gör på följande sätt om du vill kommentera de ändringar som du har utfört i arbetsflödet.
 
 1.  Klicka på **Noteringar** i det vänstra fönstret.

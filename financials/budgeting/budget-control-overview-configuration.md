@@ -9,12 +9,13 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.reviewer: twheeloc
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 60493
 ms.assetid: be964167-43bc-431d-9adb-48bff32d68d5
 ms.search.region: Global
 ms.author: sigitac
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
@@ -22,19 +23,16 @@ ms.openlocfilehash: 77d6d9afeb5669c2ae8460f0503e68a3559514ec
 ms.contentlocale: sv-se
 ms.lasthandoff: 06/20/2017
 
-
 ---
 
-# Översikt över budgetkontroll
-<a id="budget-control-overview" class="xliff"></a>
+# <a name="budget-control-overview"></a>Översikt över budgetkontroll
 
 [!include[banner](../includes/banner.md)]
 
 
 Det här avsnittet innehåller en presentation av budgetkontroll och information som hjälper dig att konfigurera budgetkontrollen i Finance and Operations, Enterprise edition så att du kan hantera ekonomiska resurser.
 
-Översikt
-<a id="overview" class="xliff"></a>
+<a name="overview"></a>Översikt
 --------
 
 Budgetkontroll i Microsoft Dynamics 365 for Finance and Operations stöder hantering av ett företags ekonomiska resurser via kontoplaner, arbetsflöden, användargrupper, källdokument, journaler, konfigurerbar beräkning av tillgängliga medel, budgetcykler och trösklar. Med kontroller på plats kan en organisation planera, mäta, hantera och prognostisera sina ekonomiska resurser genom hela räkenskapsåret. 
@@ -57,17 +55,14 @@ Du kan konfigurera budgetkontrollen enligt flera faktorer:
 
 Budgetkontrollen är helt integrerad med Finance and Operations. Du kan därför utvärdera den tillgängliga budgeten för både planerade och faktiska inköp. Budgetförfrågningar och rapporter är tillgängliga. Användaren kan därmed utvärdera budgeten under hela budgetcykeln och göra de justeringar som krävs i form av budgetrevisioner eller överföringar. En budgetchef kan också exportera budget och utfall till Microsoft Excel för att bättre kunna analysera och prognostisera vid behov.
 
-## Konfigurera budgetkontroll
-<a id="configuring-budget-control" class="xliff"></a>
-### Tidsrymd för budgetcykel
-<a id="budget-cycle-time-span" class="xliff"></a>
+## <a name="configuring-budget-control"></a>Konfigurera budgetkontroll
+### <a name="budget-cycle-time-span"></a>Tidsrymd för budgetcykel
 
 När den grundläggande budgeteringen är konfigurerad kan du definiera tiden eller start- och slutperioderna för budgeteringen och budgetkontrollen på sidan **Tidsrymd för budgetcykel**. Budgetcykler motsvarar ofta räkenskapsårets kalendrar men kan omfatta räkenskapsår.
 
 Nästa steg i konfigureringen ska slutföras i olika flikar på sidan **Konfigurering av budgetkontroll**.
 
-### Definiera parametrar
-<a id="define-parameters" class="xliff"></a>
+### <a name="define-parameters"></a>Definiera parametrar
 
 Baserat på de ekonomiska dimensioner som aktiverats för budgeten kan du använda alla eller en del av de ekonomiska dimensionerna för budgetkontroll. 
 
@@ -77,21 +72,18 @@ Sätten som budgetar skapas och registreras på i budgetregistret är avgörande
 
 Dessutom kan en organisations kultur användas för att definiera konfigureringen, eftersom den är kopplad till budgetering och budgetkontroll.
 
-### Behörighet för överskriden budget
-<a id="over-budget-permissions" class="xliff"></a>
+### <a name="over-budget-permissions"></a>Behörighet för överskriden budget
 
 På fliken **Behörighet för överskriden budget** kan du därefter specificera användargrupper. Du kan även ange om användare som är medlemmar i en grupp har behörighet att överskrida budgeten. Du kan förhindra användare från att överskrida budgeten förbi budgettröskeln som angavs på sidan **Budgetparametrar** eller så kan du förhindra dem från att överskrida budgeten per alla belopp, oavsett tröskeln. Beroende på hur proaktivt en organisation hanterar sina utgifter kan dessa behörigheter hjälpa till att hantera ekonomiska resurser. 
 
-### Budgetmedel är tillgängliga
-<a id="budget-funds-available" class="xliff"></a>
+### <a name="budget-funds-available"></a>Budgetmedel är tillgängliga
 
 På fliken **Tillgängliga budgetmedel** kan du sedan definiera formeln som används för att beräkna tillgängliga budgetmedel. Beroende på hur konservativt en organisation hanterar sina ekonomiska resurser eller beroende på regler eller branschkrav kan beräkningen inkludera utkast eller ej bokförda dokument. 
 
 > [!NOTE] 
 > Om beräkningen ändras under en budgetcykel kommer ändringarna inte att påverka dokument som tidigare har godkänts i budgetkontroller och som har bokförts eller slutförts.
 
-### Dokument och journaler
-<a id="documents-and-journals" class="xliff"></a>
+### <a name="documents-and-journals"></a>Dokument och journaler
 
 På fliken **Dokument och journaler** kan du välja källdokument och journaler som ska vara föremål för budgetkontroller och om kontrollerna ska utföras på radpostnivån eller på dokumentet som helhet. 
 
@@ -99,36 +91,30 @@ Du bör matcha de valda källdokumenten med de kryssrutor du väljer för saldon
 
 Om **Budgetreservationer för inteckning** och/eller **Budgetreservationer för förinteckning** ingår i beräkningen av tillgängliga budgetmedel och måste återspeglas via poster i huvudboken ska journalförd redovisning aktiveras på sidan **Allmänna redovisningsparametrar**.  
 
-### Tilldela budgetmodeller
-<a id="assign-budget-models" class="xliff"></a>
+### <a name="assign-budget-models"></a>Tilldela budgetmodeller
 
 På fliken **Tilldela budgetmodeller** tilldelar du budgetmodeller till tidsrymder för budgetcykel som ska inkluderas i budgetkontrollen.
 
-### Definiera budgetkontrollregler
-<a id="define-budget-control-rules" class="xliff"></a>
+### <a name="define-budget-control-rules"></a>Definiera budgetkontrollregler
 
 På fliken **Definiera budgetkontrollregler** måste du skapa särskilda regler som baseras på de ekonomiska dimensioner som är aktiverade för budgetkontroll. Om det till exempel finns ett fokus baserat på en avdelnings omkostnad eller omkostnadsintervall kan du använda inställningarna för den här fliken för att definiera och utvärdera de omkostnaderna. Du kan definiera olika trösklar för varje budgetkontrollregel. 
 
 > [!Important]
 > Budgetkontroll kommer att aktiveras för alla huvudkonton av typen **Vinst och förlust**, **Utgift**, **Intäkt, Balansräkning, Skulder, Eget kapital** eller **Tillgång**. Om denna flik innehåller en regel som har tomma kriterier kommer budgetkontroll att aktiveras för **alla** ekonomiska dimensionskombinationer som innehåller huvudkonton av de typerna. Därför är det viktigt att skapa budgetkontrollregler som enbart definierar intervallen för kombinationer av ekonomiska dimensioner som är viktiga att aktivera budgetkontroll för.  
 
-### Välj huvudkonton
-<a id="select-main-accounts" class="xliff"></a>
+### <a name="select-main-accounts"></a>Välj huvudkonton
 
 Om **Huvudkonto** inte markeras som en budgetkontrolldimension på sidan **Definiera parametrar**, men specifika omkostnader hanteras, kan du välja de omkostnaderna på fliken **Välj huvudkonton**. Om **Huvudkonto** markeras som en budgetkontrolldimension krävs inga poster.  
 
-### Definiera budgetgrupper
-<a id="define-budget-groups" class="xliff"></a>
+### <a name="define-budget-groups"></a>Definiera budgetgrupper
 
 På fliken **Definiera budgetgrupper** kan du även definiera unika kombinationer av ekonomiska dimensioner där budgetresurser slås samman för sekundär budgetkontroll. Du kan skapa en enskild post som omfattar hela organisationen eller definiera flera grupper som representerar olika avdelningar eller kostnadsställen.  
 
-### Definiera meddelandenivåer
-<a id="define-message-levels" class="xliff"></a>
+### <a name="define-message-levels"></a>Definiera meddelandenivåer
 
 Om varningsmeddelanden för budgetkontroll ska ignoreras för några användargrupper kan du ange de grupperna på sidan **Definiera meddelandenivåer**. Medlemmarna i användargruppen fortsätter att få felmeddelanden när de överskrider tillgängliga budgetmedel, baserat på deras behörigheter för överskriden budget.
 
-### Aktivera budgetkontroll
-<a id="activate-budget-control" class="xliff"></a>
+### <a name="activate-budget-control"></a>Aktivera budgetkontroll
 
 När budgetkontroll har konfigurerats kan du aktivera den på fliken **Aktivera budgetkontroll**. Utkastversionen börjar då gälla.
 > [!Important]
@@ -136,10 +122,10 @@ När budgetkontroll har konfigurerats kan du aktivera den på fliken **Aktivera 
 
 Notera dessutom att transaktioner, inklusive budgetregisterposter, som har bokförts innan budgetkontrollen aktiverades inte beaktas i budgetkontrollen. Det är därför enbart lämpligt att aktivera budgetkontroll i början av en ny budgetcykel. Kontrollera att budgetsaldon för budgetregisterposter som innehåller ingående budgetsaldon för budgetkontroll uppdateras efter att budgetkontrollen aktiveras. Alla öppna dokument (t.ex. inköpsorder) ska kontrolleras med avseende på om de har tillgängliga budgetmedel och kommer att få en budgetreservation för budgetkontroll när användaren manuellt utlöser en budgetkontroll in dokumentet.
 
-## Använda budgetkontroll
-<a id="using-budget-control" class="xliff"></a>
+## <a name="using-budget-control"></a>Använda budgetkontroll
 När budgetkontroll aktiveras kommer användarna att få varnings- och felmeddelanden för budgetkontroll i dokument och journaler som har konfigurerats för budgetkontroll. Kom ihåg du kan konfigurera budgetkontroll så att användare varnas när de överskrider budgetmedlen, men att de kan tillåtas fortsätta bekräfta eller bokföra transaktionen. Användarna kan visa information om misslyckade budgetkontroller på sidan **Budgetkontrollfel och varningar**.   
 
 Från den här sidan kan användare titta på sidan **Budgetkontrollstatistik efter period** för att se information om tillgänglig budget och reservationer för en vald kombination av budgetkontrolldimensioner. Användarna kan även titta på sidan **Budgetkontrollstatistik** för att se tillgänglig budget för alla kombinationer av ekonomisk dimension som används i budgetkontroll. 
 
 Om budgetkontroll aktiveras för inköpsorder kan budgetchefen använda arbetsområdet **Redovisningsbudgetar och prognoser** för att granska kön för alla obekräftade inköpsorder som har varningar och fel för budgetkontroll. Om budgetchefen har behörigheter för överskriden budget kan han eller hon bekräfta inköpsorder direkt i arbetsområdet.    
+

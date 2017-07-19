@@ -9,11 +9,12 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.reviewer: twheeloc
 ms.search.scope: 
 ms.assetid: 
 ms.search.region: Global
 ms.author: twheeloc
-ms.search.validFrom: 2017-06-30
+ms.search.validFrom: 2017-06-30T00:00:00.000Z
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 3abf4b151b177095b71d44e9a6c9fd8541eaa64e
@@ -21,28 +22,23 @@ ms.openlocfilehash: 4011a2383fe4556b730fa0b6353ba0b9773a4eec
 ms.contentlocale: sv-se
 ms.lasthandoff: 06/14/2017
 
-
 ---
 
-# Arbetsyta för leverantörsbetalningar
-<a id="vendor-payments-workspace" class="xliff"></a>
+# <a name="vendor-payments-workspace"></a>Arbetsyta för leverantörsbetalningar
 
 [!include[banner](../includes/banner.md)]
 
 Arbetsytan **Leverantörsbetalningar** visar information kopplad till behandling av leverantörsbetalningar. Den här arbetsytan innehåller vyn **Mitt arbete** och sidan **Analyser**. Vyn **Mitt arbete** visar sammanfattningsrutor, rutnät för leverantörstransaktioner och relaterad leverantörsinformation. Sidan **Analyser** använder funktionerna i Microsoft Power BI för att visa modeller relaterade till leverantörsbetalningar.
 
-## Vyn Mitt arbete
-<a id="my-work-view" class="xliff"></a>
+## <a name="my-work-view"></a>Vyn Mitt arbete
 
-### Sammanfattningsrutor
-<a id="summary-tiles" class="xliff"></a>
+### <a name="summary-tiles"></a>Sammanfattningsrutor
 
 Rutorna i avsnittet **Sammanfattning** ger en översikt över statusen på din betalningsinformation. Du kan se betalningsjournaler som ännu inte har bokförts, fakturor som har passerat förfallodatum, alla leverantörer och spärrade leverantörer. Från avsnittet **Sammanfattning** kan du skapa en ny betalningskörning.
 
 Informationen i avsnittet **Sammanfattning** är avsett för det företag du är inloggat på.
 
-### Rutnät för leverantörstransaktioner
-<a id="vendor-transactions-grids" class="xliff"></a>
+### <a name="vendor-transactions-grids"></a>Rutnät för leverantörstransaktioner
 
 Avsnittet **Leverantörstransaktioner** innehåller rutnät som visar fakturor som har förfallit till betalning och betalningar som inte har kvittats. Från rutnätet **Förfallna fakturor** kan du visa kvittningshistoriken för en vald faktura. Från rutnätet **Förfallna betalningar** kan du visa kvittningshistoriken för en vald faktura och kvitta en faktura.
 
@@ -50,13 +46,11 @@ Ansvariga för centraliserade kundreskontrabetalningar kan använda ett filter s
 
 Under fliken **Sök transaktioner** i avsnittet **Leverantörstransaktioner** kan du söka efter en leverantörstransaktion.
 
-### Relaterad information
-<a id="related-information" class="xliff"></a>
+### <a name="related-information"></a>Relaterad information
 
 Du kan visa rapporterna **Åldersrapport för leverantörer** och **Betalningar per datum** genom att använda länkarna i avsnittet **Relaterad information** på arbetsytan.
 
-## Analyssida
-<a id="analytics-page" class="xliff"></a>
+## <a name="analytics-page"></a>Analyssida
 
 På sidan **Analyser** finns viktiga mätvärden såsom leverantörsfakturor som har förfallit till betalning och leverantörsfakturor som förfaller i framtiden. Denna sida innehåller nio rapportsidor. En sida ger en översikt och de andra åtta sidorna ger information om statistik över leverantörsreskontrabetalning.
 

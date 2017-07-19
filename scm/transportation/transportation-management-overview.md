@@ -9,12 +9,13 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 30251
 ms.assetid: d4e3550c-bca8-469c-82df-56ac0083e4ac
 ms.search.region: Global
 ms.author: yuyus
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,11 +23,9 @@ ms.openlocfilehash: 2fbea4f5e86a6bef98be5df3a2b69aac36e371e5
 ms.contentlocale: sv-se
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Transporthanteringsöversikt
-<a id="transportation-management-overview" class="xliff"></a>
+# <a name="transportation-management-overview"></a>Transporthanteringsöversikt
 
 [!include[banner](../includes/banner.md)]
 
@@ -69,26 +68,22 @@ Transporthantering låter dig hantera företagets transporter och även identifi
 </tbody>
 </table>
 
-## Planera transport i Finance and Operations
-<a id="planning-transportation-in-finance-and-operations" class="xliff"></a>
+## <a name="planning-transportation-in-finance-and-operations"></a>Planera transport i Finance and Operations
 I transporthantering, transportplaneringen baseras antingen på order eller på försändelserna som skapas baserat på dessa order. Försändelserna alltid finns någon gång i tiden men krävs inte för transportplanering. Överföringsorder är en del av det utgående scenariot och kan planeras tillsammans med försäljningsorder. 
 
 ![Lastuttag](./media/Load-drawing1-1024x477.jpg)
 
-## Ingående transport
-<a id="inbound-transportation" class="xliff"></a>
+## <a name="inbound-transportation"></a>Ingående transport
 När du beställer artiklar från en leverantör och artiklarna måste levereras till ditt lagerställe, kanske du vill ordna själva transporten av artiklarna. Du kan använda Finance and Operations för att planera transporten och inleveransen av den ingående lasten. I bilden nedan visas affärsprocessflödet för planering av transport för en inkommande beläggning. 
 
 ![Affärsprocessflöde för transport av inkommande last](./media/Businessprocessflowforinboundloadtransportation.jpg)
 
-## Utgående transport
-<a id="outbound-transportation" class="xliff"></a>
+## <a name="outbound-transportation"></a>Utgående transport
 Du kan planera och bearbeta en utgående last för att skicka vissa artiklar från ett företags lager till en kund. Du kan använda Finance and Operations för att planera transporten och leveransen av den utgående lasten. I bilden nedan visas affärsprocessflödet för planering och bearbetning av utgående beläggningar för leverans. 
 
 ![Planera och bearbeta utgående laster](./media/Planningandprocessingoutboundloads.jpg)
 
-## Lastuppbyggnad
-<a id="load-building" class="xliff"></a>
+## <a name="load-building"></a>Lastuppbyggnad
 Finance and Operations innehåller en lastuppbyggnadsstrategi med namnet Volymbaserad lastuppbyggnadsstrategi. Denna strategi låter dig använda de angivna maximivärdena som specificerats för höjd och vikt i lastmallen eller så kan du åsidosätta inställningarna genom att ange nya värden. För att använda denna strategi, välj den i fältet **Lastuppbyggnadsstrategi** på snabbfliken **Inställningar** på sidan **Workbench för lastuppbyggnad**. Dessutom kan du lägga till dina egna uppbyggnadsstrategier genom att skapa en ny klass i programobjektträdet.
 
 

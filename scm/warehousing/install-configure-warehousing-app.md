@@ -10,13 +10,14 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: SysAADClientTable, WHSMobileAppField, WHSMobileAppFieldPriority, WHSRFMenu, WHSRFMenuItem, WHSWorker
 audience: Application User, IT Pro
+ms.reviewer: yuyus
 ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 267694
 ms.assetid: d95d43b2-13ff-4189-a71a-3a1fb57d55ed
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: mafoge
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
@@ -24,11 +25,9 @@ ms.openlocfilehash: 2e6b0fb81396eef945dbce3be8aee17c9fd455bc
 ms.contentlocale: sv-se
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Installera och konfigurera Microsoft Dynamics 365 for Finance and Operations &#8211; Lagerstyrning
-<a id="install-and-configure-microsoft-dynamics-365-for-finance-and-operations-8211-warehousing" class="xliff"></a>
+# <a name="install-and-configure-microsoft-dynamics-365-for-finance-and-operations-8211-warehousing"></a>Installera och konfigurera Microsoft Dynamics 365 for Finance and Operations &#8211; Lagerstyrning
 
 [!include[banner](../includes/banner.md)]
 
@@ -37,8 +36,7 @@ Det här avsnittet beskriver hur du installerar och konfigurerar Microsoft Dynam
 
 Finance and Operations - Lagerstyrning är ett program som finns att tillgå via Google Play Store och Windows Store. För den senaste versionen av Finance and Operations erbjuds det här programmet som en fristående komponent, vilket innebär att det kan köras separat på enheter som används för lageruppgifter. För att kunna använda programmet i din Finance and Operation-miljö måste du hämta programmet på samtliga enheter och konfigurera det att ansluta till din Finance and Operation-miljö. Det här avsnittet beskriver hur du installerar programmet på dina enheter. Det förklarar också hur du konfigurerar programmet för anslutning till din Finance and Operations-miljö.
 
-## Förutsättningar
-<a id="prerequisites" class="xliff"></a>
+## <a name="prerequisites"></a>Förutsättningar
 Programmet är tillgängligt för operativsystemen Android och Windows. Om du vill använda det här programmet måste du ha något av följande operativsystem som stöds installerade på dina enheter. Du måste också ha någon av följande versioner av Finance and Operation. Följ instruktionerna i följande tabell för att utvärdera om din maskin- och programvarumiljö är redo att stödja installationen.
 
 | Plattform                    | version                                                                                                                                                                     |
@@ -47,15 +45,13 @@ Programmet är tillgängligt för operativsystemen Android och Windows. Om du vi
 | Windows (UWP)               | Windows 10 (all versioner)                                                                                                                                                   |
 | Finance and Operations | Microsoft Finance and Operations version 1611 <br>- eller - <br>Microsoft Dynamics Dynamics AX version 7.0/7.0.1 och Microsoft Dynamics AX, plattformsuppdatering 2 med snabbkorrigering KB 3210014 |
 
-## Hämta programmet
-<a id="get-the-app" class="xliff"></a>
+## <a name="get-the-app"></a>Hämta programmet
 -   Windows (UWP): [Finance and Operations - Lagerstyrning i Windows Store](https://www.microsoft.com/store/apps/9p1bffd5tstm)
 -   Android:
     - [Finance and Operations - Lagerstyrning i Google Play Store](https://play.google.com/store/apps/details?id=com.Microsoft.Dynamics365forOperationsWarehousing)
     - [Finance and Operations - Lagerstyrning i Zebra App Gallery](https://appgallery.zebra.com/showcase/apps/146?type=showcase)
 
-## Skapa ett webbtjänstprogram i Active Directory
-<a id="create-a-web-service-application-in-active-directory" class="xliff"></a>
+## <a name="create-a-web-service-application-in-active-directory"></a>Skapa ett webbtjänstprogram i Active Directory
 Om du vill att programmet ska interagera med en viss Finance and Operations-server, måste du registrera ett webbtjänstprogram i en Azure Active-katalog för Finance and Operations-innehavaren. Av säkerhetsskäl rekommenderar vi att du skapar ett webbtjänstprogram för varje enhet som du använder. Gör följande om du vill skapa ett webbtjänstprogram i Azure Active Directory (Azure AD):
 
 1.  Navigera till <https://manage.windowsazure.com> i webbläsaren.
@@ -74,8 +70,7 @@ Om du vill att programmet ska interagera med en viss Finance and Operations-serv
     -   **Klient-ID** - När du rullar uppför sidan visas **Klient-ID**.
     -   **Nyckel** - I avsnittet **Nycklar** skapar du en nyckel genom att välja varaktighet och kopiera nyckeln. Den här nyckeln kommer senare att betecknas som **Klienthemlighet**.
 
-## Skapa och konfigurera ett användarkonto i Finance and Operations
-<a id="create-and-configure-a-user-account-in-finance-and-operations" class="xliff"></a>
+## <a name="create-and-configure-a-user-account-in-finance-and-operations"></a>Skapa och konfigurera ett användarkonto i Finance and Operations
 Om du vill aktivera Finance and Operations för ditt Azure AD-program, måste du slutföra följande konfigurationssteg:
 
 1.  Skapa ett nytt användarkonto i Azure Active Directory för Finance and Operations-innehavaren. Detta användarkonto syftar till att få åtkomst till den specifika kundtjänsten för lagerstyrningsprogrammet som Finance and Operations-servern visar. När du har slutfört det här steget får du WMDP-autentiseringsuppgifter, som består av en WMDP-e-postadress och ett WMDP-lösenord. Mer information om de grundläggande stegen för att lägga till användare i Azure AD och Finance and Operations finns i kursen: [Registrera dig för ett Finance and Operations-abonnemang](/dynamics365/unified-operations/dev-itpro/dev-tools/sign-up-preview-subscription).
@@ -89,8 +84,7 @@ Om du vill aktivera Finance and Operations för ditt Azure AD-program, måste du
     2.  Skapa en ny rad.
     3.  Ange det **Klient-ID** (som erhölls i det senaste avsnittet), namnge det och välj den användare som skapades tidigare. Vi rekommenderar att du märker samtliga dina enheter, så att du kan enkelt ta bort deras åtkomst till Finance and Operations från denna sida om de skulle gå förlorade. [![wh-10-ad-programformulär](./media/wh-10-ad-applications-form.png)](./media/wh-10-ad-applications-form.png)
 
-## Konfigurera programmet
-<a id="configure-the-application" class="xliff"></a>
+## <a name="configure-the-application"></a>Konfigurera programmet
 Du måste konfigurera programmet på enheten för att ansluta till Finance and Operations-servern via Azure AD-programmet. Det gör du genom att utföra följande steg:
 
 1.  I programmet går du till **Anslutningsinställningar**.
@@ -104,8 +98,7 @@ Du måste konfigurera programmet på enheten för att ansluta till Finance and O
     + **Företag** - Ange den juridiska person i Finance and Operations som du vill att programmet ansluter till. <br>[![wh-12-inställningar-för-programanslutningar](./media/wh-12-app-connection-settings-169x300.png)](./media/wh-12-app-connection-settings.png)
 4.  Välj knappen **Tillbaka** i programmets övre vänstra hörn. Programmet kommer nu att ansluta till din Finance and Operations-server, och inloggningsskärmen för lagermedarbetaren visas. <br>[![wh-13-inloggningsskärm](./media/wh-13-log-in-screen-180x300.png)](./media/wh-13-log-in-screen.png)
 
-## Ta bort åtkomsten för en enhet
-<a id="remove-access-for-a-device" class="xliff"></a>
+## <a name="remove-access-for-a-device"></a>Ta bort åtkomsten för en enhet
 Om en enhet går förlorad eller drabbas av fel, måste du ta bort åtkomsten till Finance and Operations för enheten. Följande steg beskriver den rekommenderade processen när du tar bort åtkomst.
 
 1.  I Finance and Operations, navigera till **Systemadministration** &gt; **Inställningar** &gt; **Azure Active Directory-program**.

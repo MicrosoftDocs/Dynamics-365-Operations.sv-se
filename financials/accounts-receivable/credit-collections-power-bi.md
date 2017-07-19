@@ -9,10 +9,11 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
+ms.reviewer: sericks
 ms.search.scope: Operations, UnifiedOperations. Core
 ms.search.region: Global
 ms.author: shpandey
-ms.search.validFrom: 2017-06-30
+ms.search.validFrom: 2017-06-30T00:00:00.000Z
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
@@ -22,13 +23,11 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Power BI innehållspaket för kredit- och inkassohantering
-<a id="credit-and-collections-management-power-bi-content" class="xliff"></a>
+# <a name="credit-and-collections-management-power-bi-content"></a>Power BI innehållspaket för kredit- och inkassohantering
 
 Det här avsnittet beskriver vad som ingår i Power BI-innehållet för **kredit- och inkassohantering**. Det förklarar hur du öppnar Power BI-rapporter, och ger information om den datamodell och de enheter som användes för att skapa innehållet.
 
-## Översikt
-<a id="overview" class="xliff"></a>
+## <a name="overview"></a>Översikt
 
 Power BI-innehållet för **kredit- och inkassohantering** har skapats för kredit- och inkassochefer och inkassopersonal. Det ger viktiga mått för kredit och inkasso som t.ex. dagar för dagar för utestående betalning, förfallet saldo, kreditexponering och kunder som överskrider sin kreditgräns. Det använder transaktionsdata och ger aggregerade vyer av kredit och inkasso över alla företag. Det innehåller även en uppdelning per kund, kundgrupp och företag.
 
@@ -41,12 +40,10 @@ Alla belopp i visas i systemvalutan. Du kan ange systemvalutan på sidan **Syste
 
 Som standard visas kredit- och inkassodata för det aktuella företaget. Om du vill visa data för alla företag, tilldelar du programbehörigheten **CustCollectionsBICrossCompany** till rollen.
 
-## Åtkomst till Power BI-innehåll
-<a id="accessing-the-power-bi-content" class="xliff"></a>
+## <a name="accessing-the-power-bi-content"></a>Åtkomst till Power BI-innehåll
 Om du använder Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (uppdatering juli 2017) visas Power BI-innehållet **kredit- och inkassohantering** i arbetsytan **Kundkredit och inkasso**.
 
-## Rapporter som ingår i Power BI-innehållet
-<a id="reports-that-are-included-in-the-power-bi-content" class="xliff"></a>
+## <a name="reports-that-are-included-in-the-power-bi-content"></a>Rapporter som ingår i Power BI-innehållet
 
 Power BI-innehållet **CustCollectionsBICrossCompany** innehåller ofta en rapport som består av en uppsättning mått. De här måtten visas som diagram, paneler och tabeller. Följande register ger en översikt över de visuella effekterna i Power BI-innehållet **CustCollectionsBICrossCompany**.
 
@@ -65,16 +62,14 @@ Power BI-innehållet **CustCollectionsBICrossCompany** innehåller ofta en rappo
 
 Diagrammen och rutorna i samtliga dessa rapporter kan filtreras och fästas på instrumentpanelen. Mer information om hur du filtrerar och fäster i Power BI finns i [Skapa och konfigurera en intrumentpanel](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards/). Du kan också använda funktionen Exportera underliggande data för att exportera underliggande data som summerats i en visualisering.
 
-## Utöka Power BI-innehåll
-<a id="extending-the-power-bi-content" class="xliff"></a>
+## <a name="extending-the-power-bi-content"></a>Utöka Power BI-innehåll
 Genom att använda innehållspaket som är tillgängliga i Microsoft Dynamics Lifecycle Services (LCS) kan du ge bra analyser till människor som inte är inloggade i Finance and Operations. Du kan ändra dessa innehållspaket så att de innehåller andra rapporter och modeller och publicera innehållspaket till din Power BI.com-innehavare för analys.
 
 Du hittar Power BI-innehåll för **kredit- och inkassohantering** i det delade resursbiblioteket i LCS. Mer information om hur du laddar ned innehållspaket och använder det i din organisation finns i [Power BI-innehåll i LCS från Microsoft och dina partner](/dynamics365/unified-operations/dev-itpro/analytics/power-bi-content-microsoft-partners). Om du vill se en demonstration som visar hur du implementerar Power BI-innehållet, se [Power BI-innehåll från Microsoft och dina samarbetspartners i Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office mix.
 
 Hämta Power BI-innehållet för **kredit- och inkassohantering** som avser versionen av Finance and Operations som du använder.
 
-## Förstå datamodellen och enheterna
-<a id="understanding-the-data-model-and-entities" class="xliff"></a>
+## <a name="understanding-the-data-model-and-entities"></a>Förstå datamodellen och enheterna
 
 Följande data används för att fylla i rapportsidorna Power-Bi-innehållet **kredit- och inkassohantering**. Informationen visas som sammansatta mått som mellanlagras i Enhetslagring. Enhetslagring är en Microsoft SQL Server-databas som är optimerad för analys. Mer information finns i [Översikt för Power BI-integrering med enhetsarkiv](/dynamics365/unified-operations/dev-itpro/analytics/power-bi-integration-entity-store).
 

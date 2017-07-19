@@ -10,12 +10,13 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: HcmWorker, InventLocation, WHSLaborStandards, WHSWorker, WHSWorkTable, WHSWorkTableListPage
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 72891
 ms.assetid: feaa6f15-49d2-41f5-9b87-453463c52e4e
 ms.search.region: Global
 ms.author: perlynne
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
@@ -23,11 +24,9 @@ ms.openlocfilehash: 52753c21862a2955e15140bb1cdb5ef6f6efe31a
 ms.contentlocale: sv-se
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Hantera lagerställearbetare
-<a id="manage-warehouse-workers" class="xliff"></a>
+# <a name="manage-warehouse-workers"></a>Hantera lagerställearbetare
 
 [!include[banner](../includes/banner.md)]
 
@@ -40,14 +39,12 @@ För att skapa en ny arbetsorder användaren, på **arbetstagarnas** sida, på *
 
 Som en del av installationen för varje användare, kan du också definiera specifika process arbetsflöden. Du kan till exempel använda **Är ansvarig för rullande inventering** fältet för att ange huruvida användaren kan bearbeta justeringar av rullande inventerings avvikelser under en inventering, eller om dessa justeringar måste först granskas av en annan person.
 
-## Definiera arbetsnormer
-<a id="defining-labor-standards" class="xliff"></a>
+## <a name="defining-labor-standards"></a>Definiera arbetsnormer
 **Arbetsrätten** sidan kan du definiera de beräkningsmetoder som systemet använder för att beräkna det uppskattade tiden som en viss typ av arbete kräver. Denna definition kan ställas in på en allmän nivå eller på en viss nivå. Du kan t.ex. definiera tid som ska krävas för att bearbeta en försäljningsorder plocka per vikt för en specifik enhet definition när en viss plocka processen används. Samtidigt kan du registrera tid, baserat på en annan beräkningsmetod för putten av lagersaldot som plockas. 
 
 För att arbetsnormer som du definierat, måste du markera kryssrutan **Tillåt arbetsnormer** alternativ för varje lager där arbetsnormer skall användas.
 
-## Övervakning och kontroll av lagerarbetet
-<a id="monitoring-and-controlling-warehouse-work" class="xliff"></a>
+## <a name="monitoring-and-controlling-warehouse-work"></a>Övervakning och kontroll av lagerarbetet
 **Allt arbete på** sidan låter dig övervaka och underhålla allt arbete som är planerade, pågående och slutförda. Från den här sidan kan du uppdatera olika processer, såsom lagerarbetet användaren uppdrag och arbete prioriteras. Du kan också visa detaljer som är relaterade till arbetsordern huvudet och arbeta för att få en förståelse av den förväntade eller avslutad arbetsprocesser. 
 
 Om du aktiverar **arbetsnormer** , kan du se det beräknade beräknad tid för arbetet. När sedan arbetet är bearbetade, den faktiska tiden visas också för varje arbetsoperation. På detta sätt kan du jämföra den beräknade tiden beräkningar till aktuell tid. 

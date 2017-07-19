@@ -9,12 +9,13 @@ ms.prod:
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, IT Pro
+ms.reviewer: josaw
 ms.search.scope: AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 102083
 ms.assetid: f50585e8-4ef6-4cd8-90d8-c8d6a65b22b8
 ms.search.region: global
 ms.author: josaw
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,25 +23,21 @@ ms.openlocfilehash: cdad1d6c2466b47b07133a5335866ef6881609ca
 ms.contentlocale: sv-se
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Nya uppgiftguider (februari 2016)
-<a id="new-task-guides-february-2016" class="xliff"></a>
+# <a name="new-task-guides-february-2016"></a>Nya uppgiftguider (februari 2016)
 
 [!include[banner](../includes/banner.md)]
 
 
 Detta avsnitt visar uppgiftsguiderna som publicerades till Microsoft BPM-bibliotek från och med februari 2016.  De publicerade biblioteken innehåller APQC Unified Library for Microsoft Dynamics AX (februari 2016) samt Komma igång (februari 2016).
 
-Uppgiftsguuider i (februari 2016) APQC Unified Library för Microsoft Dynamics AX
-<a id="task-guides-in-the-february-2016-apqc-unified-library-for-microsoft-dynamics-ax" class="xliff"></a>
+<a name="task-guides-in-the-february-2016-apqc-unified-library-for-microsoft-dynamics-ax"></a>Uppgiftsguuider i (februari 2016) APQC Unified Library för Microsoft Dynamics AX
 ---------------------------------------------------------------------------------
 
 APQC Unified-biblioteket (februari 2016) innehåller de uppgiftsguider som är avsedda att användas för Hjälp med Dynamics AX 7.0.0-versionen. Om du behöver lokaliserade versioner av uppgiftsguiderna finns dessa tillgängliga i APQC Unified Library (maj 2016) för Microsoft Dynamics AX. Mer information om hur du ansluter Hjälp-systemet till ett uppgiftsguidebibliotek hittar du i [Komma igång med Hjälp](help-overview.md).
 
-### Leverantörsreskontra
-<a id="accounts-payable" class="xliff"></a>
+### <a name="accounts-payable"></a>Leverantörsreskontra
 
 |                                                           |                    |
 |-----------------------------------------------------------|--------------------|
@@ -55,8 +52,7 @@ APQC Unified-biblioteket (februari 2016) innehåller de uppgiftsguider som är a
 
  
 
-### Kundreskontra
-<a id="accounts-receivable" class="xliff"></a>
+### <a name="accounts-receivable"></a>Kundreskontra
 
 |                                                             |                    |
 |-------------------------------------------------------------|--------------------|
@@ -77,8 +73,7 @@ APQC Unified-biblioteket (februari 2016) innehåller de uppgiftsguider som är a
 
  
 
-### Kassa- och bankhantering
-<a id="cash-and-bank-management" class="xliff"></a>
+### <a name="cash-and-bank-management"></a>Kassa- och bankhantering
 
 |                                                                      |                    |
 |----------------------------------------------------------------------|--------------------|
@@ -106,8 +101,7 @@ APQC Unified-biblioteket (februari 2016) innehåller de uppgiftsguider som är a
 
  
 
-### Regelefterlevnad
-<a id="compliance" class="xliff"></a>
+### <a name="compliance"></a>Regelefterlevnad
 
 |                                            |                    |
 |--------------------------------------------|--------------------|
@@ -116,8 +110,7 @@ APQC Unified-biblioteket (februari 2016) innehåller de uppgiftsguider som är a
 
  
 
-### Kostnadshantering
-<a id="cost-management" class="xliff"></a>
+### <a name="cost-management"></a>Kostnadshantering
 
 |                                                                     |                    |
 |---------------------------------------------------------------------|--------------------|
@@ -130,8 +123,7 @@ APQC Unified-biblioteket (februari 2016) innehåller de uppgiftsguider som är a
 
  
 
-### Funktionen Land/region
-<a id="countryregion-functionality" class="xliff"></a>
+### <a name="countryregion-functionality"></a>Funktionen Land/region
 
 |                                                                                                        |                                 |
 |--------------------------------------------------------------------------------------------------------|---------------------------------|
@@ -273,8 +265,7 @@ APQC Unified-biblioteket (februari 2016) innehåller de uppgiftsguider som är a
 
  
 
-### Utveckla vision och strategi
-<a id="develop-vision-and-strategy" class="xliff"></a>
+### <a name="develop-vision-and-strategy"></a>Utveckla vision och strategi
 
 |                                                                                          |                    |
 |------------------------------------------------------------------------------------------|--------------------|
@@ -287,8 +278,7 @@ APQC Unified-biblioteket (februari 2016) innehåller de uppgiftsguider som är a
 
  
 
-### Elektronisk rapportering
-<a id="electronic-reporting" class="xliff"></a>
+### <a name="electronic-reporting"></a>Elektronisk rapportering
 
 |                                                 |                    |
 |-------------------------------------------------|--------------------|
@@ -301,8 +291,7 @@ APQC Unified-biblioteket (februari 2016) innehåller de uppgiftsguider som är a
 
  
 
-### Utläggshantering
-<a id="expense-management" class="xliff"></a>
+### <a name="expense-management"></a>Utläggshantering
 
 |                              |                    |
 |------------------------------|--------------------|
@@ -311,8 +300,7 @@ APQC Unified-biblioteket (februari 2016) innehåller de uppgiftsguider som är a
 
  
 
-### Anläggningstillgångar
-<a id="fixed-assets" class="xliff"></a>
+### <a name="fixed-assets"></a>Anläggningstillgångar
 
 |                                                           |                    |
 |-----------------------------------------------------------|--------------------|
@@ -335,8 +323,7 @@ APQC Unified-biblioteket (februari 2016) innehåller de uppgiftsguider som är a
 
  
 
-### Huvudbok
-<a id="general-ledger" class="xliff"></a>
+### <a name="general-ledger"></a>Huvudbok
 
 |                                                                   |                    |
 |-------------------------------------------------------------------|--------------------|
@@ -369,8 +356,7 @@ APQC Unified-biblioteket (februari 2016) innehåller de uppgiftsguider som är a
 
  
 
-### HR
-<a id="human-capital-management" class="xliff"></a>
+### <a name="human-capital-management"></a>HR
 
 |                                                                  |                    |
 |------------------------------------------------------------------|--------------------|
@@ -414,8 +400,7 @@ APQC Unified-biblioteket (februari 2016) innehåller de uppgiftsguider som är a
 
  
 
-### Lagerhantering
-<a id="inventory-management" class="xliff"></a>
+### <a name="inventory-management"></a>Lagerhantering
 
 |                                                                                   |                    |
 |-----------------------------------------------------------------------------------|--------------------|
@@ -439,8 +424,7 @@ APQC Unified-biblioteket (februari 2016) innehåller de uppgiftsguider som är a
 
  
 
-### Tillverkning
-<a id="manufacturing" class="xliff"></a>
+### <a name="manufacturing"></a>Tillverkning
 
 |                                                               |                    |
 |---------------------------------------------------------------|--------------------|
@@ -492,8 +476,7 @@ APQC Unified-biblioteket (februari 2016) innehåller de uppgiftsguider som är a
 
  
 
-### Huvudplanering
-<a id="master-planning" class="xliff"></a>
+### <a name="master-planning"></a>Huvudplanering
 
 |                                                   |                    |
 |---------------------------------------------------|--------------------|
@@ -506,8 +489,7 @@ APQC Unified-biblioteket (februari 2016) innehåller de uppgiftsguider som är a
 
  
 
-### Organisationsadministration
-<a id="organization-administration" class="xliff"></a>
+### <a name="organization-administration"></a>Organisationsadministration
 
 |                                           |                    |
 |-------------------------------------------|--------------------|
@@ -521,8 +503,7 @@ APQC Unified-biblioteket (februari 2016) innehåller de uppgiftsguider som är a
 
  
 
-### Planering
-<a id="planning" class="xliff"></a>
+### <a name="planning"></a>Planering
 
 |                        |                    |
 |------------------------|--------------------|
@@ -531,8 +512,7 @@ APQC Unified-biblioteket (februari 2016) innehåller de uppgiftsguider som är a
 
  
 
-### Anskaffning och källa
-<a id="procurement-and-sourcing" class="xliff"></a>
+### <a name="procurement-and-sourcing"></a>Anskaffning och källa
 
 |                                                                  |                    |
 |------------------------------------------------------------------|--------------------|
@@ -547,8 +527,7 @@ APQC Unified-biblioteket (februari 2016) innehåller de uppgiftsguider som är a
 
  
 
-### Produktinformation och konfiguration
-<a id="product-information-and-configuration" class="xliff"></a>
+### <a name="product-information-and-configuration"></a>Produktinformation och konfiguration
 
 |                                                       |                    |
 |-------------------------------------------------------|--------------------|
@@ -574,8 +553,7 @@ APQC Unified-biblioteket (februari 2016) innehåller de uppgiftsguider som är a
 
  
 
-### Offentlig sektor
-<a id="public-sector" class="xliff"></a>
+### <a name="public-sector"></a>Offentlig sektor
 
 |                                                                                         |                    |
 |-----------------------------------------------------------------------------------------|--------------------|
@@ -601,8 +579,7 @@ APQC Unified-biblioteket (februari 2016) innehåller de uppgiftsguider som är a
 
  
 
-### Butik och handel
-<a id="retail-and-commerce" class="xliff"></a>
+### <a name="retail-and-commerce"></a>Butik och handel
 
 |                                                                                           |                    |
 |-------------------------------------------------------------------------------------------|--------------------|
@@ -644,8 +621,7 @@ APQC Unified-biblioteket (februari 2016) innehåller de uppgiftsguider som är a
 
  
 
-### Försäljning
-<a id="sales" class="xliff"></a>
+### <a name="sales"></a>Försäljning
 
 |                                            |                    |
 |--------------------------------------------|--------------------|
@@ -668,8 +644,7 @@ APQC Unified-biblioteket (februari 2016) innehåller de uppgiftsguider som är a
 
  
 
-### Moms
-<a id="sales-tax" class="xliff"></a>
+### <a name="sales-tax"></a>Moms
 
 |                                                    |                    |
 |----------------------------------------------------|--------------------|
@@ -688,8 +663,7 @@ APQC Unified-biblioteket (februari 2016) innehåller de uppgiftsguider som är a
 
  
 
-### Säkerhet
-<a id="security" class="xliff"></a>
+### <a name="security"></a>Säkerhet
 
 |                                                         |                    |
 |---------------------------------------------------------|--------------------|
@@ -700,8 +674,7 @@ APQC Unified-biblioteket (februari 2016) innehåller de uppgiftsguider som är a
 
  
 
-### Lager- och transport
-<a id="warehouse-and-transportation" class="xliff"></a>
+### <a name="warehouse-and-transportation"></a>Lager- och transport
 
 |                                                                                   |                    |
 |-----------------------------------------------------------------------------------|--------------------|
@@ -726,8 +699,7 @@ APQC Unified-biblioteket (februari 2016) innehåller de uppgiftsguider som är a
 
  
 
-## Uppgiftsguider i (februari 2016) Komma igång-bibliotek
-<a id="task-guides-in-the-february-2016-getting-started-library" class="xliff"></a>
+## <a name="task-guides-in-the-february-2016-getting-started-library"></a>Uppgiftsguider i (februari 2016) Komma igång-bibliotek
 |                                                    |                    |
 |----------------------------------------------------|--------------------|
 | **BPM-rad**                                       | **Land/region** |
@@ -747,8 +719,7 @@ APQC Unified-biblioteket (februari 2016) innehåller de uppgiftsguider som är a
 
  
 
-Se även
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Se även
 --------
 
 [Nya eller uppdaterade uppgiftsguider (maj 2016)](new-updated-task-guides-available-may-2016.md)

@@ -10,13 +10,13 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: SalesAgreement, SalesAgreementGenerateReleaseOrder, SalesAgreementListPage
 audience: Application User
-ms.reviewer: YuyuScheller
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 9554
 ms.assetid: c5d55c8d-99f2-44f9-a897-5b0dee85fc81
 ms.search.region: Global
 ms.author: omulvad
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -24,11 +24,9 @@ ms.openlocfilehash: 4eaa4fef65fb310524f25d052aeefb58c5f20fe4
 ms.contentlocale: sv-se
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Försäljningsavtal
-<a id="sales-agreements" class="xliff"></a>
+# <a name="sales-agreements"></a>Försäljningsavtal
 
 [!include[banner](../includes/banner.md)]
 
@@ -43,8 +41,7 @@ Du kan skapa en försäljningsorder direkt från ett försäljningsavtal, med hj
 
 **Obs!** I tidigare versioner kallades försäljningsavtal för ramförsäljningsordrar.
 
-## Utfästelsetyper
-<a id="commitment-types" class="xliff"></a>
+## <a name="commitment-types"></a>Utfästelsetyper
 Varje rad i ett försäljningsavtal är en utfästelse att sälja något. I allmänhet finns det två kategorier av utfästelser:
 
 -   **Värdeutfästelse**– Kunden förbinder sig att köpa produkter för ett specifikt belopp.
@@ -59,8 +56,7 @@ Dessutom kan ett avtal låta kunden åta sig att köpa en specifik produkt eller
 
 Rader i samma försäljningsavtalet kan ha andra typer av utfästelser.
 
-## Prisvillkor för försäljningsavtal
-<a id="pricing-terms-for-sales-agreements" class="xliff"></a>
+## <a name="pricing-terms-for-sales-agreements"></a>Prisvillkor för försäljningsavtal
 Prisvillkoren kan variera, beroende på typen av åtagande. I en försäljningsorder som är kopplad till ett försäljningsavtal, åsidosätter prissättningtermerna från det försäljningsavtalet andra prissättningtermer som gäller baserat på handelsavtal. I tabellen nedan beskrivs de prisrelaterade fälten som påverkas av varje utfästelsetyp. "Ja" indikerar att fältet kan uppdateras på en orderrad.
 
 | Utfästelsetyp                   | Enhetspris | Prisenhet | Rabatt i procent | Kassarabattbelopp |
@@ -70,36 +66,31 @@ Prisvillkoren kan variera, beroende på typen av åtagande. I en försäljningso
 | Värdeutfästelse för produktkategori |            |            | Ja              |                      |
 | Värdeutfästelse                  |            |            | Ja              |                      |
 
-## Policy för försäljningsavtal
-<a id="policies-for-sales-agreements" class="xliff"></a>
+## <a name="policies-for-sales-agreements"></a>Policy för försäljningsavtal
 Följande regler påverkar hur länken mellan en försäljningsavtalsutfästelse och motsvarande försäljningsavtalorderrader fungerar:
 
 -   **Max framtvingas** – Den totala kvantiteten eller beloppet för alla orderrader kan inte överskrida kvantiteten eller beloppet som anges i den relaterade utfästelsen.
 -   **Pris och rabatt är fasta** – Priset på en orderrad och priset på den relaterade utfästelsen måste vara samma. Om priset på orderraden ändras, bryts länken till utfästelsen. Om länken bryts bidrar orderraden inte till att uppfylla utfästelsen.
 -   **Minsta frisläppningsbelopp** och **Högsta frisläppningsbelopp** – Om ett belopp anges visas ett meddelande om du gör en ändring av en orderrad som gör att orderraden skiljer sig från den relaterade utfästelsen.
 
-## Uppfyllelseberäkningar för försäljningsavtal
-<a id="fulfillment-calculations-for-sales-agreements" class="xliff"></a>
+## <a name="fulfillment-calculations-for-sales-agreements"></a>Uppfyllelseberäkningar för försäljningsavtal
 Fliken **Uppfyllelse** på snabbfliken **Radinformation** på sidan **Försäljningsavtal** visar uppfyllelsekvantiteter och -belopp.  
 
 I området **Uppfyllelse** kan du visa totala kvantiteter och belopp för alla orderrader som är länkade till det angivna försäljningsavtalet. Du kan också visa det resterande beloppet eller kvantiteten som krävs för att uppfylla utfästelsen.  
 
 I området **Avtal** kan du visa kvantiteter och belopp från det valda försäljningsavtalet. Dessa kvantiteter och belopp är totala kvantiteter och belopp som utfästes.
 
-## Bekräftelser och versionshistorik för försäljningsavtal
-<a id="confirmations-and-version-history-for-sales-agreements" class="xliff"></a>
+## <a name="confirmations-and-version-history-for-sales-agreements"></a>Bekräftelser och versionshistorik för försäljningsavtal
 När ett försäljningsavtal bekräftas lagras den aktuella versionen av försäljningsavtalet i ett historikregister. Om du ändrar försäljningsavtalet, kan du bekräfta det igen för att lagra en annan version av försäljningsavtalet i historiken.  
 
 Om du inte bekräftar ett försäljningsavtal, kan du fortfarande använda det för att skapa försäljningsorder. Den historiska information för försäljningsavtalet lagras emellertid inte.  
 
 Du kan granska eller skriva ut alla ändringar av bekräftelsen. Därefter kan du dela ändringarna med kunden för att erhålla godkännande.
 
-## Använda försäljningsavtal under beställningsprocessen
-<a id="applying-sales-agreements-during-the-ordering-process" class="xliff"></a>
+## <a name="applying-sales-agreements-during-the-ordering-process"></a>Använda försäljningsavtal under beställningsprocessen
 Om du inte släpper försäljningsorder direkt för ett försäljningsavtal, kan du ändå koppla ett försäljningsavtal till en order under orderregistreringsprocessen. När du skapar en ny försäljningsorder och väljer ett försäljningsavtal, tillämpas villkoren för avtalet, som till exempel betalningsvillkor, leveransvillkor och leveransadress på orderrubriken och länken mellan avtalet och ordern skapas. På orderraderna kan du sedan välja produkter och kategorier som anges i försäljningsavtalet och priser och rabatter kopieras från avtalet. Samma försäljningsorder kan inkludera både rader som inte hör till ett försäljningsavtal och rader som har en utfästelse för ett försäljningsavtal.
 
-## Ändra försäljningsorder som är kopplade till försäljningsavtal
-<a id="modifying-sales-orders-that-are-linked-to-sales-agreements" class="xliff"></a>
+## <a name="modifying-sales-orders-that-are-linked-to-sales-agreements"></a>Ändra försäljningsorder som är kopplade till försäljningsavtal
 Om du har skapat (frisläppt) en försäljningsorder mot ett försäljningsavtal, kan vissa fält i försäljningsorderraderna ändras om du tar bort länken till de associerade försäljningsavtalsraderna. Följande tabeller anger några av dessa fält.
 
 | Fält                                                             | Beskrivning                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
@@ -109,20 +100,17 @@ Om du har skapat (frisläppt) en försäljningsorder mot ett försäljningsavtal
 | Nettobelopp                                                        | Om du anger ett belopp som överskrider beloppet som anges på en försäljningsavtalsrad, där kryssrutan **Max framtvingas** kommer en meddelanderuta att uppmana dig att spara det ändrade beloppet. Klicka på **Ja** om du vill ta bort länken till försäljningsavtalsraden och om du vill räkna om priset. Klicka på **Nej** om du vill ta bort länken till försäljningsavtalsraden och om du inte vill räkna om priset.                                                                 |
 | Kvantitet                                                          | Om du anger en kvantitet som överskrider kvantiteten som anges på en försäljningsavtalsrad, där kryssrutan **Max framtvingas** kommer en meddelanderuta att uppmana dig att spara det ändrade beloppet. Klicka på **Ja** om du vill ta bort länken till försäljningsavtalsraden och om du vill räkna om priset. Klicka på **Nej** om du vill ta bort länken till försäljningsavtalsraden och om du inte vill räkna om priset.                                                            |
 
-## Returnera en artikel som har beställts från ett försäljningsavtal
-<a id="returning-an-item-that-was-ordered-from-a-sales-agreement" class="xliff"></a>
+## <a name="returning-an-item-that-was-ordered-from-a-sales-agreement"></a>Returnera en artikel som har beställts från ett försäljningsavtal
 När en kund returnerar en produkt som har beställts från ett försäljningsavtal kan Microsoft Dynamics 365 for Finance and Operations söka efter och automatiskt uppdatera den relaterade utfästelsen för försäljningsavtalet för att återspegla ändringen i kvantitet eller belopp. Genom att skapa en returorder som baseras på den ursprungliga försäljningsordern som är kopplad till en försäljningsavtal, upprättar du en relation mellan försäljningsavtalutfästelsen, försäljningsorderraden och returnera orderfakturan.  
 
 Om du inte vill dra av en returnerad artikelkvantiteten från försäljningsavtalutfästelsen, kan du använda kontrollen **Ta bort länk** på sidan **Returorder** för att ta bort länken mellan returordern och försäljningsavtalutfästelsen. Om du behöver återställa länken senare, klicka på **Skapa länk**.  
 
 **Obs!** En returorder kan bara länkas till en försäljningsavtal. Om din kund returnerar mer än en produkt som har beställts från mer än ett försäljningsavtal, måste du skapa en ny returorder för varje produkt och skapa en länk till motsvarande försäljningsavtalet.
 
-## Automatisk sökning efter försäljningsavtal
-<a id="automatic-search-for-sales-agreements" class="xliff"></a>
+## <a name="automatic-search-for-sales-agreements"></a>Automatisk sökning efter försäljningsavtal
 I vissa fall där försäljningsorder skapas indirekt såsom när du skapar en kreditfaktura eller koncerninterna försäljningsorder, kan du kontrollera att Microsoft Dynamics 365 for Finance and Operations söker automatiskt efter tillämpliga försäljningsavtal.
 
-## Ekonomiska dimensioner i försäljningsavtal
-<a id="financial-dimensions-on-sales-agreements" class="xliff"></a>
+## <a name="financial-dimensions-on-sales-agreements"></a>Ekonomiska dimensioner i försäljningsavtal
 Du kan kopiera ekonomiska dimensioner till dokumenthuvuden eller till enskilda rader i ett försäljningsavtal. Du kan ändra dimensionerna i ett avtalshuvud eller avtalsrad när som helst. I det här fallet kopieras dimensionerna automatiskt till leveranshuvudet eller leveransraden på leveransordern.
 
 

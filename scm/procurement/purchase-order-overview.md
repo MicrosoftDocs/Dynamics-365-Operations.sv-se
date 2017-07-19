@@ -10,12 +10,13 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PurchTable
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 93083
 ms.assetid: e9b7bc5b-1d7e-4ec2-97be-d655274b0613
 ms.search.region: Global
 ms.author: fdahl
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: f76e431320414b508728cbe9fe20456f107cbe40
@@ -23,11 +24,9 @@ ms.openlocfilehash: a5dd28e79cbd66e79311c0549c63ea844394ab14
 ms.contentlocale: sv-se
 ms.lasthandoff: 06/09/2017
 
-
 ---
 
-# Översikt över inköpsorder
-<a id="purchase-order-overview" class="xliff"></a>
+# <a name="purchase-order-overview"></a>Översikt över inköpsorder
 
 [!include[banner](../includes/banner.md)]
 
@@ -51,8 +50,7 @@ Följande artiklar innehåller en översikt över de olika stegen som en inköps
 -   [Produktinleverans mot inköpsorder](product-receipt-against-purchase-orders.md)
 -   [Översikt över leverantörsfakturor](/dynamics365/unified-operations/financials/accounts-payable/vendor-invoices-overview)
 
-## Typer av inköpsorder
-<a id="types-of-purchase-orders" class="xliff"></a>
+## <a name="types-of-purchase-orders"></a>Typer av inköpsorder
 Det finns tre typer av inköpsorder. Du måste ange typ när du skapar en inköpsorder. Du kan ställa in en standardordertyp för nya order på sidan **Anskaffnings- och källparametrar**.
 
 | Inköpsordertyp        | Beskrivning                                                                                                                                                                                                                                                                           |
@@ -61,8 +59,7 @@ Det finns tre typer av inköpsorder. Du måste ange typ när du skapar en inköp
 | Inköpsorder | Använd den här typen för att skapa en inköpsorder när ordern bekräftas av en leverantör och när ordern bearbetas via inleverans och fakturering innan betalningen till leverantören görs. Den här typen av inköpsorder är den vanligaste.                                                                          |
 | Returnerad order | Använd den här typen när du returnerar varor till leverantören. Den här typen av order kräver att du anger returnumret (RMA) som leverantören ger dig. Du kan ange RMA-numret på fliken **Allmänt** för inköpsordern. Orderraderna måste ha negativa kvantiteter. |
 
-## Statusar på inköpsorder
-<a id="purchase-order-statuses" class="xliff"></a>
+## <a name="purchase-order-statuses"></a>Statusar på inköpsorder
 Inköpsorder omfattar flera statusfält som visar orderns förlopp. Alla fält som är synliga i vyn **Rubrik** visar ordern och några av dem är även synliga i översikten över alla order. Fältet **Status** visar statusen för kvantiteter på ordern. Följande värden finns:
 
 -   **Öppen order** – Ordern har skapats och kvantiteterna är angivna på ordern.
@@ -86,8 +83,7 @@ Fältet **Godkännandestatus** används när en inköpsorder genomgår en gransk
 -   **Bekräftad** – Den här statusen tilldelas när ordern har bekräftats. Denna status är vanligtvis den sista godkännandestatusen som tilldelas till en order.
 
 
-Se även
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Se även
 --------
 
 [Skapande av inköpsorder](purchase-order-creation.md)

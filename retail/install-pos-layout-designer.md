@@ -10,13 +10,14 @@ ms.service: dynamics-365-retail
 ms.technology: 
 ms.search.form: RetailTillLayout
 audience: Application User
+ms.reviewer: margoc
 ms.search.scope: Retail, Operations, Core, UnifiedOperations
 ms.custom: 219684
 ms.assetid: 2e2c4eea-c6e2-4912-9832-a6b22416e39f
 ms.search.region: Global
 ms.search.industry: Retail
 ms.author: athinesh
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611, Retail Version
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 52a16be4b07eafb493c7fd7ad52a6d9d1bb9ee89
@@ -24,11 +25,9 @@ ms.openlocfilehash: 4308e7bad71271f242def93d587e4a0c1f7c06cc
 ms.contentlocale: sv-se
 ms.lasthandoff: 06/20/2017
 
-
 ---
 
-# Installera layoutdesignern Retail POS
-<a id="install-the-retail-pos-layout-designer" class="xliff"></a>
+# <a name="install-the-retail-pos-layout-designer"></a>Installera layoutdesignern Retail POS
 
 [!include[banner](includes/banner.md)]
 
@@ -37,8 +36,7 @@ Du kan använda enklicksdesignern för att designa alternativa layouter för Ret
 
 Det grafiska designgränssnittet för MPOS eller Cloud POS styrs av kassalådelayouten. En layout styr positionen för olika objekt. Du kan till exempel välja den totala layouten, layouten för artikelrutnät, kundlayout, betalningslayout samt layouten för olika menyknappar. Layouter innehåller det övergripande utseendet på det försäljningsgränssnitt som visas för arbetare.
 
-## Installera enklicksdesignern
-<a id="install-the-one-click-designer" class="xliff"></a>
+## <a name="install-the-one-click-designer"></a>Installera enklicksdesignern
 1.  I Microsoft Dynamics 365 for Retail använder du menyn i det övre vänstra hörnet för att navigera till **Butik** **och handel** &gt; **Kanalinställningar** &gt; **Kassainställningar** &gt; **Kassa** &gt; **Skärmlayout**.
 2.  Välj en layout med ansökningstypen **Modern POS for Windows** eller **Cloud POS**, och klicka sedan på **layoutdesignern**.
 3.  I meddelandefältet som visas längst ner i Internet Explorer-fönstret klickar du på **Open** att installera enklicksdesignern. (aviseringsfältet kan visas på en annan plats i andra webbläsare).
@@ -46,8 +44,7 @@ Det grafiska designgränssnittet för MPOS eller Cloud POS styrs av kassalådela
 5.  När installationen har slutförts klickar du på sidan **Logga in**, anger ditt användarnamn och lösenord för Microsoft Dynamics 365 for Retail, och klickar sedan på **Logga in** för att starta designverktyget.
 6.  När dina inloggningsuppgifter har validerats och designverktyget startar, kan du utforma din egen layout eller ändra den befintliga. [![Layout i enklicksdesignern](./media/screenlayoutdesign_mposdownload-1024x664.png)](./media/screenlayoutdesign_mposdownload.png)
 
-## Felsöka installationen av layoutdesignern
-<a id="troubleshoot-the-installation-of-the-layout-designer" class="xliff"></a>
+## <a name="troubleshoot-the-installation-of-the-layout-designer"></a>Felsöka installationen av layoutdesignern
 -   När du klickar på **Designer** visas inte prompten att hämta (eller köra) installationsprogrammet, också tillåter inte dina aktuella säkerhetsinställningar att du hämtar filen. **Lösningar:**
     -   Kontrollera att blockering av popup-fönster avaktiveras för webbplatsen i Internet Explorer. Klicka på **Inställningar** &gt; **Alternativ** &gt; **Sekretess** &gt; **Hitta blockerare för popup-meddelanden** och ändra inställningen vid behov.
     -   Lägg till webbadressen (URL) för Dynamics 365 for Retail till dina betrodda webbplatser i Internet Explorer. Klicka på **Inställningar** &gt; **Alternativ** &gt; **Säkerhet** &gt; **Säkra platser** &gt; **Platser** &gt; **Lägg till**.
@@ -55,8 +52,7 @@ Det grafiska designgränssnittet för MPOS eller Cloud POS styrs av kassalådela
 
 **Känt problem:** Designverktyget fungerar inte korrekt i webbläsarna Google Chrome och Mozilla Firefox. Vi arbetar på att åtgärda detta problem.
 
-Se även
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Se även
 --------
 
 [Konfigurera, hämta, installera och aktivera Retail Modern POS](retail-modern-pos-device-activation.md)

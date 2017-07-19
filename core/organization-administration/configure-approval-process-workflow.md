@@ -9,12 +9,13 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
+ms.reviewer: sericks
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 195643
 ms.assetid: f853f57b-83ae-4fb0-a9fa-06ea3fc34fa1
 ms.search.region: Global
 ms.author: donaldc
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,11 +23,9 @@ ms.openlocfilehash: c2765cf4ed8e0f5e00491bfe74835102bddff611
 ms.contentlocale: sv-se
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Konfigurera en godkännandeprocess i ett arbetsflöde
-<a id="configure-an-approval-process-in-a-workflow" class="xliff"></a>
+# <a name="configure-an-approval-process-in-a-workflow"></a>Konfigurera en godkännandeprocess i ett arbetsflöde
 
 [!include[banner](../includes/banner.md)]
 
@@ -41,8 +40,7 @@ Följ dessa steg om du vill ange ett namn för godkännandeprocessen.
 1.  Klicka på **Grundinställningar** i det vänstra fönstret.
 2.  Ange ett unikt namn för godkännandeprocessen i fältet **Namn**.
 
-## Ange när systemet ska agera automatiskt på dokumentet
-<a id="specify-when-the-system-automatically-acts-on-the-document" class="xliff"></a>
+## <a name="specify-when-the-system-automatically-acts-on-the-document"></a>Ange när systemet ska agera automatiskt på dokumentet
 Du kan konfigurera systemet att vidta automatiska åtgärder för dokumentet om vissa villkor uppfylls. Systemet kan till exempel godkänna utgiftsrapporter med totala belopp som understiger 1 000 kronor. Följ dessa steg för att ange när systemet vidtar en åtgärd för dokumentet.
 1.  Klicka på **Automatiska åtgärder** i det vänstra fönstret.
 2.  Markera kryssrutan **Aktivera automatiska åtgärder**.
@@ -57,8 +55,7 @@ Du kan konfigurera systemet att vidta automatiska åtgärder för dokumentet om 
 
 7.  I listan **Automatisk slutförandeåtgärd** väljer du den åtgärd som systemet ska vidta för dokumentet.
 
-## Ange när meddelanden ska skickas
-<a id="specify-when-notifications-are-sent" class="xliff"></a>
+## <a name="specify-when-notifications-are-sent"></a>Ange när meddelanden ska skickas
 Du kan skicka meddelanden till andra när ett dokument har godkänts, avvisats, delegerats eller eskalerats, eller när en ändring har begärts. Följ dessa steg för att ange när meddelanden skickas och vem de skickas till.
 1.  Klicka på **Meddelanden** i det vänstra fönstret.
 2.  Markera kryssrutan bredvid händelserna för att skicka meddelanden för:
@@ -131,15 +128,13 @@ Du kan skicka meddelanden till andra när ett dokument har godkänts, avvisats, 
 
 10. Upprepa stegen 3 till och med 9 för varje enskild händelse som du valde i steg 2.
 
-## Ange den slutliga godkännaren
-<a id="specify-a-final-approver" class="xliff"></a>
+## <a name="specify-a-final-approver"></a>Ange den slutliga godkännaren
 Du kan eventuellt tilldela en slutlig godkännare för situationer där godkännaren är den person, som skickade in dokumentet för godkännande. Följ dessa steg för att ange en slutlig godkännare.
 1.  Klicka på **Avancerade inställningar** i det vänstra fönstret.
 2.  Markera rutan **Använd slutlig godkännare**.
 3.  I listan ska du välja en användare som slutlig godkännare.
 
-## Ange en tidsgräns
-<a id="set-a-time-limit" class="xliff"></a>
+## <a name="set-a-time-limit"></a>Ange en tidsgräns
 Följ dessa steg om den manuella processen måste slutföras inom en viss tid.
 | **Obs!**                                                                                                                                                |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -156,8 +151,7 @@ Följ dessa steg om den manuella processen måste slutföras inom en viss tid.
 
 4.  Om tidsgränsen överskrids, utför systemet åtgärden i dokumentet. I listan **Åtgärd** väljer du den åtgärd som ska vidtas i systemet.
 
-## Ange vilka åtgärder som är tillgängliga för användaren
-<a id="specify-which-actions-are-available-to-the-user" class="xliff"></a>
+## <a name="specify-which-actions-are-available-to-the-user"></a>Ange vilka åtgärder som är tillgängliga för användaren
 När ett dokument tilldelas en användare för godkännande, måste användaren vidta åtgärder för dokumentet. Följ dessa steg för att ange vilka åtgärder som användaren kan vidta för det inskickade dokumentet.
 1.  Klicka på **Avancerade inställningar** i det vänstra fönstret.
 2.  Markera kryssrutan **Godkänn** om du vill att användaren ska kunna godkänna dokumentet.
@@ -167,8 +161,7 @@ När ett dokument tilldelas en användare för godkännande, måste användaren 
 
 **Obs!**: Kryssrutan **Aktivera åtgärder från arbetslistan i Enterprise Portal** stöds inte längre.
 
-## Konfigurera godkännandestegen
-<a id="configure-the-approval-steps" class="xliff"></a>
+## <a name="configure-the-approval-steps"></a>Konfigurera godkännandestegen
 En godkännandeprocess består av godkännandesteg. Slutför följande procedur för att lägga till steg i godkännandeprocessen och konfigurera stegen.
 1.  Dubbelklicka på godkännandeprocessen i arbetsflödesredigeraren. Arbetsflödesredigeraren visar stegen för godkännandeprocessen.
 2.  Dra steget från området **Arbetsflödeselement** till arbetsytan för att lägga till ett godkännandesteg.

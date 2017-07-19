@@ -9,10 +9,11 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.reviewer: sericks
 ms.search.scope: Talent, Operations, UnifiedOperations
 ms.search.region: Global
 ms.author: shielas
-ms.search.validFrom: 2017-06-30
+ms.search.validFrom: 2017-06-30T00:00:00.000Z
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,8 +23,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Mobil arbetsyta för mitt team
-<a id="my-team-mobile-workspace" class="xliff"></a>
+# <a name="my-team-mobile-workspace"></a>Mobil arbetsyta för mitt team
 
 [!include[banner](../includes/banner.md)]
 
@@ -31,8 +31,7 @@ Det här avsnittet innehåller information om den mobila arbetsytan **Mitt team*
 
 Denna mobila arbetsyta är avsedd att användas med mobilappen Microsoft Dynamics 365 for Unified Operations.
 
-## Översikt
-<a id="overview" class="xliff"></a> 
+## <a name="overview"></a>Översikt 
 Den mobila arbetsytan **Mitt team** låter cheferna utföra följande uppgifter:
 
 - Visa en lista över chefens underställda.
@@ -40,8 +39,7 @@ Den mobila arbetsytan **Mitt team** låter cheferna utföra följande uppgifter:
 - Visa detaljerad information för varje medlem i teamet, till exempel födelsedatum, datum för tjänsteålder, antal tjänsteår, samt information om kompensation och resultat.
 - Skicka beröm till en person i chefens utökade rapporteringsteam.
 
-## Förutsättningar
-<a id="prerequisites" class="xliff"></a>
+## <a name="prerequisites"></a>Förutsättningar
 Följande förutsättningar måste vara uppfyllda innan du kan använda den här mobila arbetsytan.
 
 <table>
@@ -71,16 +69,14 @@ Följande förutsättningar måste vara uppfyllda innan du kan använda den här
 </tbody>
 </table>
 
-## Hämta och installera mobilappen
-<a id="download-and-install-the-mobile-app" class="xliff"></a>
+## <a name="download-and-install-the-mobile-app"></a>Hämta och installera mobilappen
 
 Hämta och installera mobilappen Dynamics 365 for Unified Operations:
 
 -   [För Android-telefoner](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [För iPhones](https://go.microsoft.com/fwlink/?linkid=850663)
 
-## Logga in på mobilappen
-<a id="sign-in-to-the-mobile-app" class="xliff"></a>
+## <a name="sign-in-to-the-mobile-app"></a>Logga in på mobilappen
 1.  Starta appen i din mobila enhet.
 2.  Ange din webbadress för Microsoft Dynamics 365.
 3.  Första gången du loggar in uppmanas du ange användarnamn och lösenord. Ange dina autentiseringsuppgifter.
@@ -88,19 +84,16 @@ Hämta och installera mobilappen Dynamics 365 for Unified Operations:
 
 [![Dra för att uppdatera](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
-## Visa team-medlemmar via arbetsytan för Mitt team
-<a id="view-team-members-by-using-the-my-team-mobile-workspace" class="xliff"></a>
+## <a name="view-team-members-by-using-the-my-team-mobile-workspace"></a>Visa team-medlemmar via arbetsytan för Mitt team
 1.  I mobilappen väljer du arbetsytan **Mitt team**. En lista över team-medlemmar visas. Listan visar också varje enskild team-medlems titel, samt alla eventuella underställda som han eller hon har.
 2.  Välj en teammedlem Sidan **Sammanfattning för teammedlem** visas. Informationen på denna sida innehåller teammedlemmarnas födelsedatum, tjänsteålder, antal tjänsteår, år i aktuell befattning samt kompensationsinformation.
 
-## Visa utökade teammedlemmar via arbetsytan för Mitt team
-<a id="view-extended-team-members-by-using-the-my-team-mobile-workspace" class="xliff"></a>
+## <a name="view-extended-team-members-by-using-the-my-team-mobile-workspace"></a>Visa utökade teammedlemmar via arbetsytan för Mitt team
 1.  I mobilappen väljer du arbetsytan **Mitt team**. En lista över team-medlemmar visas. Listan visar också varje enskild team-medlems titel, samt alla eventuella underställda som han eller hon har.
 1.  Välj länken **Underställda**. En lista över ditt utökade team visas.
 1.  Välj en teammedlem Sidan **Sammanfattning för teammedlem** visas. Informationen på denna sida innehåller teammedlemmarnas födelsedatum, tjänsteålder, antal tjänsteår, år i aktuell befattning samt kompensationsinformation.
 
-## Skicka beröm om teammedlemmar via arbetsytan för Mitt team
-<a id="send-praise-about-team-members-by-using-the-my-team-mobile-workspace" class="xliff"></a>
+## <a name="send-praise-about-team-members-by-using-the-my-team-mobile-workspace"></a>Skicka beröm om teammedlemmar via arbetsytan för Mitt team
 1.  I mobilappen väljer du arbetsytan **Mitt team**. En lista över team-medlemmar visas. Listan visar också varje enskild team-medlems titel, samt alla eventuella underställda som han eller hon har.
 1.  Välj en teammedlem Sidan **Sammanfattning för teammedlem** visas.
 1.  Välj **Skicka beröm**. 

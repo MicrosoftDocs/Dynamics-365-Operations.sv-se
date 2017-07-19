@@ -10,12 +10,13 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PurchTable
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 93143
 ms.assetid: cd12a944-c52c-4579-a301-7abe1d237c72
 ms.search.region: Global
 ms.author: fdahl
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -23,11 +24,9 @@ ms.openlocfilehash: 0ec91bcf0ab334585eefae2fe54750c45419682e
 ms.contentlocale: sv-se
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Godkänna och bekräfta inköpsorder
-<a id="approve-and-confirm-purchase-orders" class="xliff"></a>
+# <a name="approve-and-confirm-purchase-orders"></a>Godkänna och bekräfta inköpsorder
 
 [!include[banner](../includes/banner.md)]
 
@@ -37,8 +36,7 @@ Den här artikeln innehåller en beskrivning av de statusar en inköpsorder (IO)
 
 När du har skapat en inköpsorder (IO) kan den behöva genomgå en godkännandeprocess. När leverantören har godkänt ordern sätts statusen för inköpsordern till **Bekräftad**.
 
-## Godkänna inköpsorder
-<a id="approval-of-purchase-orders" class="xliff"></a>
+## <a name="approval-of-purchase-orders"></a>Godkänna inköpsorder
 Inköpsorder som inte använder ändringshantering har statusen **Godkänd** så fort den har skapats medan inköpsorder som använder ändringshantering har statusen **Utkast** när den skapas. En inköpsorder som har skapats via en bekräftelse av en planerad order från huvudplaneringen får alltid statusen **Godkänd**, oberoende av inställningarna för ändringshanteringen. En inköpsorder kan bara skapa lagertransaktioner när den har statusen **Godkänd**. Av den anledningen visas inte lagret som tillgängligt för reservation eller märkning förrän ordern har accepterats.  
 
 Du kan aktivera ändringshantering för inköpsorder genom att ställa in alternativet **Aktivera ändringshantering** på sidan **Anskaffnings- och källparametrar**. När ändringshantering är aktiverad måste inköpsorder genomgå ett godkännandearbetsflöde efter att de har slutförts. Microsoft Dynamics 365 for Finance and Operations har en redigerare för arbetsflödesprocesser i vilken du kan definiera ett arbetsflöde som representerar din godkännandeprocess. Arbetsflödet kan omfatta regler för automatiskt godkännande, regler som fastställer vem som ska godkänna särskilda inköpsorder och regler för att påskynda ett arbetsflöde som har väntat på ett godkännande under en längre tid. Du kan aktivera processen för ändringshantering för alla leverantörer eller för vissa leverantörer. Du kan även ställa in processen så att den kan åsidosättas för enskilda inköpsorder.  
@@ -54,8 +52,7 @@ När ändringshantering är aktiverad genomgår inköpsorder sex godkännandesta
 | Bekräftat       | Inköpsordern har bekräftats. En inköpsorder kan inte bekräftas förrän den har godkänts.        | Ja                       |
 | Slutlig version       | Inköpsordern slutfördes. Den är nu stängd, ur ett ekonomiskt perspektiv, och kan inte längre ändras. | Nej                        |
 
-## Bekräfta inköpsorder
-<a id="confirming-purchase-orders" class="xliff"></a>
+## <a name="confirming-purchase-orders"></a>Bekräfta inköpsorder
 Inköpsorder som har godkännandestatusen **Godkänd** kan genomgår ytterligare steg innan de bekräftas. Du kan exempelvis behöva skicka en förfrågan om inköp till leverantören och fråga om priser, rabatter eller leveransdatum. Du kan då ange statusen på inköpsordern till **Under extern granskning** med hjälp av åtgärden **Inköpsförfrågan**.  
 
 Leverantörer som har ställts in för att använda Leverantörsportalen kan granska order via portalen och godkänna eller avvisa dem. Under granskningsprocessen har inköpsordern statusen **Under extern granskning**. Leverantörsportalen kan konfigureras så att en bekräftelse från leverantören automatiskt bekräftar ordern i Finance and Operations. Du kan även bekräfta en inköpsorder manuellt efter att du har mottagit en bekräftelse från leverantören. Om en leverantör avvisar en inköpsorder kommer avvisandet att åtföljas av orsaken till avvisandet och förslag om ändringar. I det här fallet förblir statusen för inköpsordern **Under extern granskning**.  
@@ -69,8 +66,7 @@ När leverantören har bekräftat ordern är nästa steg att registrera inköpso
 
 En leverantör kan begära någon form av garanti för att betalningen för ett inköp ska genomföras. Det finns olika metoder för att tillhandahålla denna garanti inom leverantörsreskontraprocesser. Åtgärden **Förskottsbetalning** reserverar medel för inköpsordern och förskottsbetalningen registreras på inköpsordern.
 
-## Ändra inköpsorder
-<a id="changing-purchase-orders" class="xliff"></a>
+## <a name="changing-purchase-orders"></a>Ändra inköpsorder
 I vissa situationer kan du behöva ändra en inköpsorder när den har fått godkännandestatusen **Godkänd** eller **Bekräftad**.  
 
 Om inköpsordern skapades med hjälp av en hanteringsprocess kan du utföra ändringar genom att återkalla ordern eller, om ordern redan har godkänts, med hjälp av åtgärden **Begär ändring**. I det här fallet ändras godkännandestatusen tillbaka till **Utkast** och du kan därefter ändra ordern. När du har genomfört ändringarna kan du behöva skicka inköpsordern för godkännande igen. Du kan konfigurera vilka typer av ändringar som kräver ett omgodkännande med hjälp av policyregeln **Regel för omgodkännande av inköpsorder** på sidan **Inköpspolicyer**.  
@@ -79,8 +75,7 @@ Om en del av den beställda kvantiteten för en inköpsorderrad har levererats k
 
 När en order har bekräftats kan du inte längre ta bort den. Du kan dock ändra den totala kvantiteten eller den resterande kvantiteten för en order under förutsättning att kvantiteten inte har tagits emot eller fakturerats.
 
-Se även
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Se även
 --------
 
 [Översikt över inköpsorder](purchase-order-overview.md)

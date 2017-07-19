@@ -10,12 +10,13 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: TMSFreightBillType, TMSGenericEngine, TMSMileageEngine, TMSRateEngine, TMSTransitTimeEngine, TMSZoneEngine
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 12234
 ms.assetid: b878478c-0e04-4a1e-a037-6fdbb345a9a3
 ms.search.region: Global
 ms.author: yuyus
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
@@ -23,11 +24,9 @@ ms.openlocfilehash: c4aac72d9f7e975d4a270deb340f96ddcc9ca1fb
 ms.contentlocale: sv-se
 ms.lasthandoff: 06/20/2017
 
-
 ---
 
-# Transporthanteringsmotorer
-<a id="transportation-management-engines" class="xliff"></a>
+# <a name="transportation-management-engines"></a>Transporthanteringsmotorer
 
 [!include[banner](../includes/banner.md)]
 
@@ -36,8 +35,7 @@ Transporthanteringsmotorer definierar logiken som används för att generera och
 
 En transporthanteringsmotor beräknar uppgifter, till exempel transportföretagets tariff. Motorsystemet låter dig ändra beräkningsstrategier vid körning baserat på data i Microsoft Dynamics 365 for Finance and Operations. En transporthanteringsmotor liknar ett plugin-program som hör till ett visst transportkontrakt.
 
-## Vilka motorer tillgängliga?
-<a id="what-engines-are-available" class="xliff"></a>
+## <a name="what-engines-are-available"></a>Vilka motorer tillgängliga?
 Följande tabell visar de transporthanteringsmotorer som är tillgängliga i Microsoft Dynamics 365 for Finance and Operations.
 
 | Transporthanteringsmotor | beskrivning                                                                                                                                                                                                                                                                                                                 |
@@ -50,14 +48,12 @@ Följande tabell visar de transporthanteringsmotorer som är tillgängliga i Mic
 | **Fraktsedelstyp**            | Standardiserar fraktfakturan och frakträkningsraderna och används för automatisk fraktfakturamatchning.                                                                                                                                                                                                                |
 
  
-Vilka motorer måste konfigureras att utvärdera en försändelse?
-<a id="what-engines-must-be-configured-to-rate-a-shipment" class="xliff"></a>
+<a name="what-engines-must-be-configured-to-rate-a-shipment"></a>Vilka motorer måste konfigureras att utvärdera en försändelse?
 ---------------------------------------------------
 
 Om du vill utvärdera en försändelse genom att använda ett visst transportföretag, måste du konfigurera flera transporthanteringsmotorer. **Tariffmotor** krävs, men andra transportledningsmotorer kan krävas för att stödja **Tariffmotor**. **Tariffmotor** kan till exempel användas för att hämta data från **Milkostnadsmotor** om du vill beräkna tariffen baserat på milkostnad mellan källa och mål.
 
-## Vad krävs för att initiera en transporthanteringsmotor?
-<a id="whats-required-to-initialize-a-transportation-management-engine" class="xliff"></a>
+## <a name="whats-required-to-initialize-a-transportation-management-engine"></a>Vad krävs för att initiera en transporthanteringsmotor?
 En transporthanteringsmotor kräver att du ställer in initieringsdata för att det ska fungera på ett visst sätt. Inställningen kan innehålla följande typer av data:
 -   Referenser till andra transporthanteringsmotorer. Mer information finns i konfigurationexemplet i det här avsnittet.
 -   Referenser till .NET-typer som används av transporthanteringsmotorn.
@@ -71,25 +67,21 @@ I de flesta fall kan du klicka på knappen **Parametrar** i transporthanteringsm
 | *ApportionmentEngine* | Kod för allmän motor som identifierar fördelningsmotorn i Microsoft Dynamics 365 for Finance and Operations-databasen.                                                                                                                                                                                                                                                              |
 
  
-Hur används metadata i transportledningsmotorer?
-<a id="how-is-metadata-used-in-transportation-management-engines" class="xliff"></a>
+<a name="how-is-metadata-used-in-transportation-management-engines"></a>Hur används metadata i transportledningsmotorer?
 ----------------------------------------------------------
 
 Transporthanteringsmotorer, som utgår från data som anges i Dynamics 365 for Finance and Operations kan använda olika datascheman. Transporthanteringssystemet möjliggör för olika transportledningsmotorer att använda samma allmänna register i den fysiska databasen. Om du vill vara säker på att den körtiden för tolkningen av motordata är korrekt, kan du definiera metadata för databasregistren. Detta minskar kostnaden för att skapa nya transporthanteringsmotorer eftersom ytterligare register- och formulärstrukturer inte krävs i Operations.
 
-## Vad användas som sökningsdata i tariffberäkningar?
-<a id="what-can-be-used-as-search-data-in-rate-calculations" class="xliff"></a>
+## <a name="what-can-be-used-as-search-data-in-rate-calculations"></a>Vad användas som sökningsdata i tariffberäkningar?
 De data som du använder när du beräknar tariffer i Microsoft Dynamics 365 for Finance and Operations kontrolleras av metadatakonfigurationen. Om du till exempel vill söka efter tariffer baserat på postnummer, måste du ställa in metadata baserat på uppslagningtypen för ett postnummer.
 
-## Kräver alla motorkonfigurationer metadata?
-<a id="do-all-engine-configurations-require-metadata" class="xliff"></a>
+## <a name="do-all-engine-configurations-require-metadata"></a>Kräver alla motorkonfigurationer metadata?
 Nej, transporthanteringsmotorer som används för att hämta data som krävs för tariffberäkningen från externa system behöver inte metadata. Tariffdata för dessa motorer kan hämtas från externa transportföretags system, vanligen via en webbtjänst. Du kan till exempel använda en milkostnadsmotor som kan hämta data direkt från Bing-kartor, så att du inte behöver metadata för denna motor.
 | **Obs!**                                                                                                                                                                                                                                                                                                                                                                     |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | De transportledningsmotorer som levereras med Finance and Operations är beroende av data som hämtas från programmet. Motorer som ansluter till externa system inkluderas inte i Operations. Med den motorbaserade utvidgningsmodellen kan du dock bygga tillägg med hjälp av Microsoft Dynamics 365 for Finance and Operations Visual Studio Tools. |
 
-## Hur kan jag konfigurera metadata för en transportledningsmotor?
-<a id="how-do-i-configure-metadata-for-a-transportation-management-engine" class="xliff"></a>
+## <a name="how-do-i-configure-metadata-for-a-transportation-management-engine"></a>Hur kan jag konfigurera metadata för en transportledningsmotor?
 Metadata för transporthanteringsmotorer konfigureras olika för olika typer av motorer.
 
 | Transporthanteringsmotor               | Metadatakonfiguration                                                                                                                                                                                                                                                                                                                                                                                                                                               |

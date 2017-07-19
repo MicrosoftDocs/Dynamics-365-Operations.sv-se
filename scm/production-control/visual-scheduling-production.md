@@ -10,14 +10,14 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 keywords: JmgShopSupervisorWorkspace ProdTable, ProdTableListPage
 audience: Application User
-ms.reviewer: YuyuScheller
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
 ms.industry: Manufacturing
 ms.author: johanhoffmann
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -27,8 +27,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Gantt-diagram för jobbplanering
-<a id="gantt-chart-for-job-scheduling" class="xliff"></a>
+# <a name="gantt-chart-for-job-scheduling"></a>Gantt-diagram för jobbplanering
 
 [!include[banner](../includes/banner.md)]
 
@@ -51,17 +50,14 @@ Gantt-diagrammet kan öppnas i två lägen: **Ordervy** och **Resursvy**[.](http
 4.  Symbol för orderns leveransdatum
 5.  Kapacitetsstapel
 
-## Ordervy
-<a id="order-view" class="xliff"></a>
+## <a name="order-view"></a>Ordervy
 
 [![ordervy](./media/orderview.png)](./media/orderview.png)
 
-## Resursvy
-<a id="resource-view" class="xliff"></a>
+## <a name="resource-view"></a>Resursvy
 [![resursvy](./media/resview.png)](./media/resview.png)
 
-## Aktiviteter
-<a id="activities" class="xliff"></a>
+## <a name="activities"></a>Aktiviteter
 Aktiviteterna visas som staplar och ordnas i ett tidsskalerutnät med en schemalagd start- och sluttid, som gör längden på staplarna proportionell mot den tid som krävs för att slutföra aktiviteten. Aktiviteterna visas enligt en tidsskala. Du kan anpassa tidsskalan i menyn där du väljer ett startdatum, slutdatum och en tidsenhet såsom timmar eller dagar. Du kan ange fokus på ett tidsintervall inom vilket du vill hantera aktiviteter genom att justera tidsskalan. 
 
 Om du vill få en bättre översikt finns det olika alternativ som styr färgen på aktiviteterna. Du kan konfigurera en enskild färg för aktiviteter, använda temafärgen som allmänt färgtema som används för programmet eller ställa in färgen som ska styras av färgkoden för produktionsorder. 
@@ -74,39 +70,32 @@ Du kan få mer information om en aktivitet i dialogrutan Aktivitet. Dubbelklicka
 
 Aktiviteter kan grupperas i grupperingsnivåer. Grupperingsnivåerna är hierarkiska och kan användas för att göra en logisk gruppering av aktiviteter. Om du exempelvis har en layout där tillverkningsaktiviteter grupperas efter plats, produktionsenheter, resursgrupper och resurser kan du använda grupperingsnivåerna för att gruppera aktiviteter efter layouten. Grupperingsnivåerna kan visas och döljas på den enskilda grupperingsnivån eller för alla nivåer i diagrammet med hjälp av knapparna **Visa alla** och **Dölj alla** på menyn. Du kan också konfigurera vilka grupperingsnivåer du vill visa eller dölja när diagrammet öppnas.
 
-### Tillgång till material
-<a id="material-availability" class="xliff"></a>
+### <a name="material-availability"></a>Tillgång till material
 
 Gantt-diagrammet kan ställas in för att ge planeraren detaljerad information om materialstatus för enskilda aktiviteter. Exempelvis kan det vara användbart om materialet är försenat och påverkar produktionsplanen. I det här fallet markeras materialproblem i Gantt-diagrammet för att hjälpa planeraren att förstå konsekvenser och göra nödvändiga justeringar. 
 
 Ett jobb visas med en symbol för materialbrist om det schemalagda startdatumet för jobbet infaller efter datumet för tillgång på material som förbrukas av jobbet. Datumet för materialtillgängligheten beräknas baserat på pegging-informationen i den dynamiska huvudplanen. Symbolen för materialbrist visas till exempel på ett jobb som förbrukar material som peggas mot en inköpsorder med en inleverans som infaller efter det planerade startdatumet för jobbet.
 
-### Indikator för datum för materialtillgänglighet
-<a id="indicator-of-material-availability-date" class="xliff"></a>
+### <a name="indicator-of-material-availability-date"></a>Indikator för datum för materialtillgänglighet
 
 När du ställer in diagrammet för att visa jobb med materialbrist kan en symbol som visar datumet för materialtillgängligheten för jobbet också visas. Symbolen visas endast om datumet för materialtillgängligheten infaller inom det definierade tidsintervallet i diagrammet. Om datumet för materialtillgängligheten ligger utanför det definierade tidsintervallet kan mer detaljerad information om materialtillgänglighet hämtas från materiallistan i jobbdialogrutan. I listan finns även en symbol som visar försenade material för jobbet. Du kan tidsplanera om ett jobb med hjälp av materialtillgänglighetsdatumet som startdatum.
 
-### Indikator för leveransdatum för order
-<a id="indicator-of-order-delivery-date" class="xliff"></a>
+### <a name="indicator-of-order-delivery-date"></a>Indikator för leveransdatum för order
 
 Symbolen visar leveransdatum för en tillverkningsorder. Symbolen visas endast i Ordervyn.
 
-### Kapacitetsstapel
-<a id="capacity-bar" class="xliff"></a>
+### <a name="capacity-bar"></a>Kapacitetsstapel
 
 Du kan konfigurera diagrammet om du vill visa en stapel med resurskapacitet. Den här stapeln innehåller en översikt över resurskapacitet för en aktivitet i det definierade tidsintervallet i diagrammet. Kapacitetsstapeln visas inte under tidsperioder då resursen inte är bokad. Under perioder då resursen är kapacitetsbokad visas fältet kapacitetstapeln som en solid stapel. Under perioder där resursen är överbokad är stapeln tjockare och röd. Om exempelvis två jobb överlappar varandra kommer kapacitetsstapeln att indikera ett överbokning i tidsintervallet där det är en överlappning. Kapacitetsstapeln uppdateras dynamiskt när du schemalägger ett jobb. Du aktiverar kapacitetsstapeln i menyn **Visa kapacitetsstapel**. Det kan bara visas i **Resursvy**. Om du vill ha en mer detaljerad vy över kapacitetsbeläggningen för en resurs kan du använda diagrammet **Kapacitetsbeläggning**, som du öppnar från menyn eller innehållsmenyn för en vald aktivitet.
 
-## Gantt-diagram för jobbplanering
-<a id="job-scheduling-in-the-gantt-chart" class="xliff"></a>
+## <a name="job-scheduling-in-the-gantt-chart"></a>Gantt-diagram för jobbplanering
 I Gantt-diagrammet finns olika alternativ för att göra justeringar i produktionsplanen. I Gantt-diagrammet kan du planera om aktiviteter som en dra och släpp-interaktion eller från tidsplansmenyn. Under planeringsprocessen bör du beakta resurskapacitet, resurskunskaper och materialbegränsningar.
 
-### Tidsplanera ett jobb som en dra och släpp-interaktion
-<a id="schedule-a-job-as-a-drag-and-drop-interaction" class="xliff"></a>
+### <a name="schedule-a-job-as-a-drag-and-drop-interaction"></a>Tidsplanera ett jobb som en dra och släpp-interaktion
 
 Du kan tidsplanera om jobbet igen inom det definierade tidsintervallet som en dra och släpp-interaktion. Du kan endast tidsplanera om jobbet på samma resurs och du kan endast tidsplanera ett jobb i taget.
 
-### Tidsplanera ett jobb från menyn
-<a id="schedule-a-job-from-the-menu" class="xliff"></a>
+### <a name="schedule-a-job-from-the-menu"></a>Tidsplanera ett jobb från menyn
 
 I menyn **Tidplanera jobb** kan du tidsplanera ett eller flera jobb i diagrammet baserat på tidsplaneringsriktningen och ett tidsplaneringsdatum. Det finns tre olika tidsplaneringsriktningar.
 
@@ -116,8 +105,7 @@ I menyn **Tidplanera jobb** kan du tidsplanera ett eller flera jobb i diagrammet
 
 Det går inte att schemalägga ett jobb utanför det definierade tidsintervallet i Gantt-diagrammet. Om du gör det kommer jobbet att förbli icke-tidsplanerat och du får felmeddelandet ”Kunde inte tidsplanera jobbet inom den inlästa tidsperioden”.
 
-### Tidsplanera föregående jobb
-<a id="schedule-previous-jobs" class="xliff"></a>
+### <a name="schedule-previous-jobs"></a>Tidsplanera föregående jobb
 
 I ett nätverk med aktiviteter såsom jobb som tillhör samma produktionsorder kan du använda funktionen **Tidsplanera tidigare jobb** för att tidsplanera tidigare jobb i relation till ett valt jobb i nätverket. I exemplet nedan är den markerade aktiviteten det valda jobbet.
 
@@ -137,8 +125,7 @@ Efter
 </tr>
 </table>
 
-### Tidsplanera nästa jobb
-<a id="schedule-next-jobs" class="xliff"></a>
+### <a name="schedule-next-jobs"></a>Tidsplanera nästa jobb
 
 Du kan använda funktionen **Tidsplanera nästa jobb** för att tidsplanera nästa jobb i relation till ett valt jobb i ett nätverk med aktiviteter. I exemplet nedan är den markerade aktiviteten det valda jobbet.
 
@@ -158,8 +145,7 @@ Efter
 </tr>
 </table>
 
-### Tidsplanera runt jobb
-<a id="schedule-around-job" class="xliff"></a>
+### <a name="schedule-around-job"></a>Tidsplanera runt jobb
 
 Du kan använda funktionen **Tidsplanera runt jobb** för att tidsplanera nästa jobb och tidigare jobb i relation till ett valt jobb i ett nätverk med aktiviteter. I exemplet nedan är den markerade aktiviteten det valda jobbet.
 
@@ -179,8 +165,7 @@ Efter
 </tr>
 </table>
 
-### Ordna jobb
-<a id="arrange-jobs" class="xliff"></a>
+### <a name="arrange-jobs"></a>Ordna jobb
 
 Du kan använda funktionen **Ordna** för att ordna valda aktiviteter på samma resurs. Aktiviteterna kan finnas i samma nätverk med aktiviteter, men kan även ingå i olika nätverk. När du använder funktionen Ordna ska tidsgapet mellan de valda aktiviteterna elimineras. Du kan använda funktionen för att optimera kapacitetsutnyttjande resurser.
 
@@ -200,27 +185,22 @@ Efter
 </tr>
 </table>
 
-### Tilldela om aktiviteter från en resurs till en annan
-<a id="reassign-activities-from-one-resource-to-another" class="xliff"></a>
+### <a name="reassign-activities-from-one-resource-to-another"></a>Tilldela om aktiviteter från en resurs till en annan
 
 Du kan tilldela om ett jobb från en resurs till en annan. Detta kan vara användbart i situationer där en dator är obrukbar eller överbokad och du vill söka efter en annan tillgänglig resurs som kan utföra jobbet.
 
-### Tilldela om en aktivitet som en dra och släpp-interaktion
-<a id="reassigning-an-activity-as-a-drag-and-drop-interaction" class="xliff"></a>
+### <a name="reassigning-an-activity-as-a-drag-and-drop-interaction"></a>Tilldela om en aktivitet som en dra och släpp-interaktion
 
 I vyn **Resurs** kan du tilldela om en aktivitet till en annan resurs i Gantt-diagrammet som en dra och släpp-interaktion. Det gör du genom att markera raden där aktiviteten är planerad. Du kan dra raden till resursen i diagrammet grupperad under en annan resursgrupperingsnivå när du har valt raden.
 
-### Tilldela om en aktivitet från menyn Schemalägg jobb
-<a id="reassigning-an-activity-from-the-schedule-jobs-menu" class="xliff"></a>
+### <a name="reassigning-an-activity-from-the-schedule-jobs-menu"></a>Tilldela om en aktivitet från menyn Schemalägg jobb
 
 Du kan tilldela om ett jobb från dialogrutan **Schemalägg jobb** öppnad från menyn **Schemalägg jobb**. Från den här menyn kan du endast tilldela ett jobb till en resurs som redan har lästs in i Gantt-schemat. Om du bara väljer ett jobb sorteras i listrutan för resursen efter tillämpliga resurser. Om du väljer flera jobb kommer det inte att finnas någon information om tillämpliga resurser från resurslistan.
 
-## Läsa in ytterligare resurser i Gantt-schemat
-<a id="load-additional-resources-to-the-gantt-chart" class="xliff"></a>
+## <a name="load-additional-resources-to-the-gantt-chart"></a>Läsa in ytterligare resurser i Gantt-schemat
 I **Resursvy** har du möjlighet att läsa in ytterligare resurser i Gantt-schemat. Detta kan vara användbart om du vill söka efter en alternativ resurs för ett jobb som schemaläggs på en dator som är överbokad eller ur funktion. På sidan **Läs in ytterligare resurser** visas en lista över resurser som är datumeffektiva från och med det datum som listan öppnas. Tillämpliga resurser i relation till ett valt jobb i Gantt-diagrammet visas först. Om du har markerat flera jobb innan du öppnar listan visas inte tillämpliga resurser. På sidan **Läs in ytterligare resurser** kan du välja en eller flera resurser som ska läsas in i Gantt-schemat när du bekräftar ditt val. Om det inte finns några jobb som är tidsplanerade för den valda resursen i Gantt-diagrammet kommer resursen att placeras under en resursgrupperingsnivå längst ned i listan över aktiviteter i Gantt-diagrammet.
 
-### Komma åt Gantt-diagrammet.
-<a id="access-the-gantt-chart" class="xliff"></a>
+### <a name="access-the-gantt-chart"></a>Komma åt Gantt-diagrammet.
 
 Gantt-schemat kan öppnas från följande sidor:
 

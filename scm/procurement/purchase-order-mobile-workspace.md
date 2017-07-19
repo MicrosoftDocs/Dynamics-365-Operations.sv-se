@@ -10,11 +10,12 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PurchTable, PurchVendorPortalRequests
 audience: Application User
+ms.reviewer: bis
 ms.search.scope: Core, Operations, UnifiedOperations, Retail
 ms.custom: 30211
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
@@ -22,11 +23,9 @@ ms.openlocfilehash: a2ab719b971c325be184d1d950f6c03815e4cea2
 ms.contentlocale: sv-se
 ms.lasthandoff: 06/20/2017
 
-
 ---
 
-# Mobil arbetsyta för inköpsordergodkännande
-<a id="purchase-order-approval-mobile-workspace" class="xliff"></a>
+# <a name="purchase-order-approval-mobile-workspace"></a>Mobil arbetsyta för inköpsordergodkännande
 
 [!include[banner](../includes/banner.md)]
 
@@ -34,22 +33,18 @@ ms.lasthandoff: 06/20/2017
 
 Detta avsnitt innehåller information om den mobila arbetsytan **Godkännande av inköpsorder**. På den här arbetsytan kan du visa inköpsorder och reagera på dem genom att utföra åtgärder. Du kan exempelvis godkänna eller avvisa en inköpsorder.
  
-## Översikt
-<a id="overview" class="xliff"></a> 
+## <a name="overview"></a>Översikt 
 Inköpsorder som kräver godkännande genomgår en arbetsflöde för godkännande. Arbetsflödet kan innehålla olika steg som kräver att en eller fler personer utför åtgärder. Exempelvis kanske en person behöva slutföra en aktivitet eller godkänna inköpsordern. 
 
 Med hjälp av den mobila arbetsytan **Godkännande av inköpsorder** kan du lätt visa och svara på inköpsorder från din mobila enhet. På den här arbetsytan kan du utföra samma arbetsflödesåtgärder som du kan utföra från Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, web client.
 
-## Förutsättningar
-<a id="prerequisites" class="xliff"></a>
+## <a name="prerequisites"></a>Förutsättningar
 Förutsättningarna varierar beroende på vilken version av Finance and Operations som har distribuerats inom organisationen.
 
-### Kraven om du använder Microsoft Dynamics 365 for Finance and Operations, Enterprise edition juli 2017 uppdatering
-<a id="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update" class="xliff"></a> 
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update"></a>Kraven om du använder Microsoft Dynamics 365 for Finance and Operations, Enterprise edition juli 2017 uppdatering 
 Om Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (juliuppdateringen 2017) har implementerats för din organisation måste systemadministratören publicera den mobila arbetsytan **Godkännande av inköpsorder**. Instruktioner finns i [Publicera en mobil arbetsyta](/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace).
 
-### Krav om du använder Microsoft Dynamics 365 for Operations version 1611 med plattformsuppdatering 3 eller senare
-<a id="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later" class="xliff"></a>
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Krav om du använder Microsoft Dynamics 365 for Operations version 1611 med plattformsuppdatering 3 eller senare
 Om Microsoft Dynamics 365 for Operations version 1611 med plattformsuppdatering 3 eller senare har använts i organisationen måste systemadministratören uppfylla följande krav. 
 
 <table>
@@ -80,16 +75,14 @@ Om Microsoft Dynamics 365 for Operations version 1611 med plattformsuppdatering 
 </tbody>
 </table>
 
-## Hämta och installera mobilappen
-<a id="download-and-install-the-mobile-app" class="xliff"></a>
+## <a name="download-and-install-the-mobile-app"></a>Hämta och installera mobilappen
 Hämta och installera mobilappen Microsoft Dynamics 365 for Unified Operations:
 
 - [För Android-telefoner](https://go.microsoft.com/fwlink/?linkid=850662)
 - [För iPhones](https://go.microsoft.com/fwlink/?linkid=850663)
 
 
-## Logga in på mobilappen
-<a id="sign-in-to-the-mobile-app" class="xliff"></a>
+## <a name="sign-in-to-the-mobile-app"></a>Logga in på mobilappen
 
 1. Starta appen i din mobila enhet.
 2. Ange din webbadress för Microsoft Dynamics 365.
@@ -98,16 +91,14 @@ Hämta och installera mobilappen Microsoft Dynamics 365 for Unified Operations:
 
 ![Arbetsytan Godkännande av inköpsorder i listan över tillgängliga arbetsytor](./media/po-workspaces.png)
 
-## Visa order som har tilldelats dig
-<a id="view-orders-that-are-assigned-to-you" class="xliff"></a>
+## <a name="view-orders-that-are-assigned-to-you"></a>Visa order som har tilldelats dig
 1. På din mobila enhet väljer du arbetsytan **Godkännande av inköpsorder**.
 2. Välj **Order tilldelad till mig** om du vill visa alla inköpsorder som du har blivit ombedd att vidta åtgärder för i arbetsflödet Godkännande av inköpsorder.
 3. Välj en order. På sidan **Orderinformation** visas informationen i orderrubriken och raderna. Du kan också finna riktlinjer för arbetsflödesuppgiften.
 4. Välj **Redovisningsfördelningar** för att öppna sidan **Redovisningsfördelning, huvud**.
 5. Gå tillbaka till sidan **Orderinformation** och markera en rad. Du kan även utforska radspecifika redovisningsfördelningar från raden Orderinformation.
 
-## Utföra en åtgärd på inköpsordern
-<a id="complete-an-action-on-the-purchase-order" class="xliff"></a>
+## <a name="complete-an-action-on-the-purchase-order"></a>Utföra en åtgärd på inköpsordern
 När du har visat den inköpsorder som har tilldelats dig och läst instruktionerna om arbetsflödet bör du vara redo att vidta åtgärder.
 
 1. På din mobila enhet väljer du arbetsytan **Godkännande av inköpsorder**.

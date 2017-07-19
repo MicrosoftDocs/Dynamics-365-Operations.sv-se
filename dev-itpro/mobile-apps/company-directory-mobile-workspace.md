@@ -9,10 +9,11 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.reviewer: sericks
 ms.search.scope: Talent, Operations, UnifiedOperations
 ms.search.region: Global
 ms.author: JCart
-ms.search.validFrom: 2017-06-30
+ms.search.validFrom: 2017-06-30T00:00:00.000Z
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,8 +23,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Mobila arbetsytan för företagskatalog
-<a id="company-directory-mobile-workspace" class="xliff"></a>
+# <a name="company-directory-mobile-workspace"></a>Mobila arbetsytan för företagskatalog
 
 [!include[banner](../includes/banner.md)]
 
@@ -31,8 +31,7 @@ Det här avsnittet innehåller information om den mobila arbetsytan för **före
 
 Denna mobila arbetsyta kan användas med mobilappen Microsoft Dynamics 365 for Unified Operations.
 
-## Översikt
-<a id="overview" class="xliff"></a>
+## <a name="overview"></a>Översikt
 Den mobil arbetsytan **företagskatalog** låter användarna utföra följande uppgifter:
 
 - Visa en lista över medarbetare i organisationen.
@@ -40,8 +39,7 @@ Den mobil arbetsytan **företagskatalog** låter användarna utföra följande u
 - Visa anställdas kontaktinformation
 - Kontakta anställda från profilinformationen.
 
-## Förutsättningar
-<a id="prerequisites" class="xliff"></a>
+## <a name="prerequisites"></a>Förutsättningar
 Följande förutsättningar måste vara uppfyllda innan du kan använda den här mobila arbetsytan.
 
 <table>
@@ -71,15 +69,13 @@ Följande förutsättningar måste vara uppfyllda innan du kan använda den här
 </tbody>
 </table>
 
-## Hämta och installera mobilappen
-<a id="download-and-install-the-mobile-app" class="xliff"></a>
+## <a name="download-and-install-the-mobile-app"></a>Hämta och installera mobilappen
 Hämta och installera mobilappen Dynamics 365 for Unified Operations:
 
 -   [För Android-telefoner](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [För iPhones](https://go.microsoft.com/fwlink/?linkid=850663)
 
-## Logga in på mobilappen
-<a id="sign-in-to-the-mobile-app" class="xliff"></a>
+## <a name="sign-in-to-the-mobile-app"></a>Logga in på mobilappen
 1.  Starta appen i din mobila enhet.
 2.  Ange din webbadress för Microsoft Dynamics 365.
 3.  Första gången du loggar in uppmanas du ange användarnamn och lösenord. Ange dina autentiseringsuppgifter.
@@ -87,13 +83,11 @@ Hämta och installera mobilappen Dynamics 365 for Unified Operations:
 
 [![Dra för att uppdatera](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
-## Visa företagskatalogen med mobila arbetsytan
-<a id="view-the-company-directory-by-using-the-mobile-workspace" class="xliff"></a>
+## <a name="view-the-company-directory-by-using-the-mobile-workspace"></a>Visa företagskatalogen med mobila arbetsytan
 1.  I mobilappen väljer du **Företagskatalog**. En lista över tillgängliga medarbetare visas.
 3.  Välj en medarbetare. Sidan **profil för medarbetaren** visas. Informationen på den här sidan innehåller medarbetarens förnamn, efternamn, titel och avdelning.
 
-## Sök i företagskatalogen med mobila arbetsytan
-<a id="search-the-company-directory-by-using-the-mobile-workspace" class="xliff"></a>
+## <a name="search-the-company-directory-by-using-the-mobile-workspace"></a>Sök i företagskatalogen med mobila arbetsytan
 1.  I mobilappen väljer du **Företagskatalog**.
 2.  I fältet **söka** anger du medarbetarens förnamn, efternamn, titel eller avdelning för att starta sökningen.
 3.  Välj en medarbetare. Sidan **profil för medarbetaren** visas. Informationen på den här sidan innehåller medarbetarens förnamn, efternamn, titel och avdelning.

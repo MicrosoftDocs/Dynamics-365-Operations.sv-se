@@ -10,13 +10,14 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: CAMCostAccountingLedgerSourceEntryProvider, CAMStatisticalDimension, CAMAXStatisticalMeasureProviderTemplate
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: AX 7.0.0, Operations, Core
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: YuyuScheller
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
@@ -24,11 +25,9 @@ ms.openlocfilehash: 180863b5c3b8fe7870ab58f3849e52583f5880c1
 ms.contentlocale: sv-se
 ms.lasthandoff: 06/20/2017
 
-
 ---
 
-# Providermallar för statistiska dimensionsmedlemmar och statistiska mätningar
-<a id="statistical-dimension-members-and-statistical-measure-provider-templates" class="xliff"></a>
+# <a name="statistical-dimension-members-and-statistical-measure-provider-templates"></a>Providermallar för statistiska dimensionsmedlemmar och statistiska mätningar
 
 [!include[banner](../includes/banner.md)]
 
@@ -37,8 +36,7 @@ En statistisk dimension och dess medlemmar används för att registrera och kont
 - Som en allokeringsbas i policyer såsom kostnadsdistribution eller kostnadsallokering
 - För rapportering av icke-monetär förbrukning
 
-## Statistikdimension
-<a id="statistical-dimension" class="xliff"></a>
+## <a name="statistical-dimension"></a>Statistikdimension
 
 En statistisk dimension har ett unikt namn och en uppsättning unika dimensionsmedlemmar. Den statistiska dimensionen tilldelas ett ID för huvudboken för kostnadsredovisning. Denna relation kopplar samman alla motsvarande statistiska dimensionsmedlemmar till huvudboken för kostnadsredovisning. Alla statistiska transaktioner kommer därför att skapas i kontexten av huvudboken för kostnadsredovisning.
 
@@ -57,8 +55,7 @@ Här följer ett exempel på en statistisk dimension som har tilldelats en huvud
 |-----------------------|---------------------|--------------------|-----------------|------------------------|-----------------------------|
 | Hanterbar redovisning | USD                 | Konstant valuta  | Räkenskapsperiod   | Gemensamma kostnadselement   | Gemensamma statistiska element |
 
-## Statistikdimensionsmedlemmar
-<a id="statistical-dimension-members" class="xliff"></a>
+## <a name="statistical-dimension-members"></a>Statistikdimensionsmedlemmar
 
 En statistisk dimensionsmedlem representerar en enhet som du vill registrera icke-monetära åtgärder för. Dessa åtgärder kan användas som en fördelningsbas eller bara för att rapportera icke-monetära värden.
 
@@ -74,8 +71,7 @@ Här följer några exempel på vanliga statistiska dimensionsmedlemmar.
 | Gemensamma statistiska element | Elektricitet          | Elförbrukning | kWh  |
 | Gemensamma statistiska element | Packkopia              | Kostnadsställe för paketering   | Tim. |
 
-## Providermall för statistisk mätning
-<a id="statistical-measure-provider-template" class="xliff"></a>
+## <a name="statistical-measure-provider-template"></a>Providermall för statistisk mätning
 
 Statistiska mätningar kan ha sitt ursprung i många typer av källor. Microsoft Dynamics 365 for Finance and Operations, Enterprise edition är en stor källa för att extrahera statistiska mätningar från. Du kan använda en providermall för statistisk mätning för att enkelt konfigurera de statistiska mätningar du vill extrahera.
 
@@ -113,8 +109,7 @@ När du skapar posten **Providermall för statistisk mätning** måste du bestä
 - **Antal** – Ett antal poster per kostnadsbärare överförs.
 - **Summa** – En summa poster per kostnadsbärare överförs. (Fältet **Summa** och fältet **Datum** krävs.)
 
-## Använda funktionen Antal
-<a id="using-the-count-function" class="xliff"></a>
+## <a name="using-the-count-function"></a>Använda funktionen Antal
 
 Till exempel kan en providermallar för statistisk mätning ställas in på följande sätt.
 
@@ -183,8 +178,7 @@ Om den fördefinierad dimensionsmedlemsallokeringsbasen för heltidsanställda t
 | CC002       | FI | 2.00      | (2/5) × belopp    |
 | CC003       | LÖ | 2.00      | (2/5) × belopp    |
 
-## Använda funktionen Summa
-<a id="using-the-sum-function" class="xliff"></a>
+## <a name="using-the-sum-function"></a>Använda funktionen Summa
 
 Ett produktionskostnadsställe CC010 (förpackning) ansvarar för förpackning av produkterna innan de levereras till kunder. Direkt arbetskostnad läggs till produkter via strukturlistor och flöden. Den indirekta kostnaden för kostnadsstället måste också tilldelas till de tillverkade produkterna. Ofta är den bästa statistiska mätningen för en sådan fördelning antalet registrerade produktionstimmar per produkt inom den angivna perioden.
 
@@ -271,8 +265,7 @@ Om den fördefinierad dimensionsmedlemsallokeringsbasen för packkopian tilldela
 | Apelsinjuice B2B      | 16,00     | (16 ÷ 24) × belopp |
 | Apelsinjuicekonsument | 8,00      | (8 ÷ 24) × belopp  |
 
-## Importerade statistiska mätningar
-<a id="imported-statistical-measures" class="xliff"></a>
+## <a name="imported-statistical-measures"></a>Importerade statistiska mätningar
 
 Du kan importera statistiska mätningar till kostnadsredovisningen med hjälp av datahanteringsverktyget importera och exportera.
 
@@ -351,8 +344,7 @@ Om den fördefinierad dimensionsmedlemsallokeringsbasen för el tilldelas som en
 | CC002       | FI | 4,100.00  | (4 100 ÷ 21 550) × belopp  |
 | CC003       | LÖ | 15,000.00 | (15 000 ÷ 21 550) × belopp |
 
-## Se även
-<a id="see-also" class="xliff"></a>
+## <a name="see-also"></a>Se även
 
 [Allokeringsunderlag](allocation-bases.md)
 

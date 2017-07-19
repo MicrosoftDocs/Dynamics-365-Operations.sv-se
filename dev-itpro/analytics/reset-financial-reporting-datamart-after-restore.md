@@ -9,12 +9,13 @@ ms.prod:
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, IT Pro
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 261824
 ms.assetid: d0784b2c-fe10-428d-8d07-fd474ca50fcc
 ms.search.region: Global
 ms.author: kweekley
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,11 +23,9 @@ ms.openlocfilehash: c132c04bc64f02201252f03830d3f8309306f19c
 ms.contentlocale: sv-se
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Återställa datamart med ekonomisk rapportering när du återställer en databas
-<a id="reset-the-financial-reporting-data-mart-after-restoring-a-database" class="xliff"></a>
+# <a name="reset-the-financial-reporting-data-mart-after-restoring-a-database"></a>Återställa datamart med ekonomisk rapportering när du återställer en databas
 
 [!include[banner](../includes/banner.md)]
 
@@ -35,8 +34,7 @@ Det här avsnittet beskriver hur du återställer datamart med ekonomisk rapport
 
 Det finns flera olika scenarier då du kan behöva återställa Finance and Operations-databasen från en säkerhetskopia eller kopiera databasen från en annan miljö. I så fall måste du också vidta lämpliga åtgärder för att säkerställa att datamart med ekonomiska rapporter är korrekt med hjälp av den återställda Finance and Operations-databasen. Om du har frågor om att återställa datamart med ekonomisk rapportering av skäl utanför återställning av en Finance and Operations-databas, läs [Återställa Management Reporter-datamart](https://blogs.msdn.microsoft.com/dynamics_financial_reporting/2016/06/28/resetting-the-management-reporter-data-mart/) för mer information. Observera att stegen i processen stöds för Dynamics 365 for Operations maj 2016-versionen (programversion 7.0.1265.23014 och ekonomisk rapportering version 7.0.10000.4) och senare versioner. Om du har en tidigare version av Finance and Operations, kontakta vårt supportteam för hjälp.
 
-## Exportera rapportdefinitioner
-<a id="export-report-definitions" class="xliff"></a>
+## <a name="export-report-definitions"></a>Exportera rapportdefinitioner
 Först exporterar du de rapportdesigner som finns i rapportdesignern på följande sätt:
 
 1.  I Report Designer, gå till **Företag** &gt; **Grupper för byggblock**.
@@ -55,8 +53,7 @@ Filen kan kopieras eller laddas upp till en säker plats, vilket gör det möjli
 > [!WARNING]
 > Var medveten om hur enheten D fungerar på virtuella Azure-datorer. Förvara inte de exporterade byggblocksgrupperna här permanent. Mer information om tillfälliga enheter finns i [Förstå den tillfälliga enheten på virtuella Windows Azure-datorer](https://blogs.msdn.microsoft.com/mast/2013/12/06/understanding-the-temporary-drive-on-windows-azure-virtual-machines/).
 
-## Stoppa tjänster
-<a id="stop-services" class="xliff"></a>
+## <a name="stop-services"></a>Stoppa tjänster
 Använda fjärrskrivbordet för att ansluta till alla datorer i miljön och stoppa följande tjänster för Windows via services.msc:
 
 -   World wide web publishing service (gäller alla AOS-datorer)
@@ -65,15 +62,12 @@ Använda fjärrskrivbordet för att ansluta till alla datorer i miljön och stop
 
 Tjänsterna har öppna anslutningar till Finance and Operations-databasen.
 
-## Återställ
-<a id="reset" class="xliff"></a>
-#### Leta reda på det senaste DataUpgrade.zip-paketet
-<a id="locate-the-latest-dataupgradezip-package" class="xliff"></a>
+## <a name="reset"></a>Återställ
+#### <a name="locate-the-latest-dataupgradezip-package"></a>Leta reda på det senaste DataUpgrade.zip-paketet
 
 Leta reda på det senaste DataUpgrade.zip-paketet med hjälp av instruktionerna i [Hämta skriptet DataUpgrade.zip](..\migration-upgrade\upgrade-data-to-latest-update.md). Instruktionerna förklarar hur du hittar rätt version av datauppgraderingspaketet för din miljö.
 
-#### Köra skript mot Finance and Operations-databasen
-<a id="execute-scripts-against-finance-and-operations-database" class="xliff"></a>
+#### <a name="execute-scripts-against-finance-and-operations-database"></a>Köra skript mot Finance and Operations-databasen
 
 Kör följande skript mot Finance and Operations-databasen (inte mot finansiella rapporteringsdatabasen).
 
@@ -82,8 +76,7 @@ Kör följande skript mot Finance and Operations-databasen (inte mot finansiella
 
 Dessa skript ser till att inställningar för användare, roller och ändringsspårning är korrekta.
 
-#### Köra PowerShell-kommando för att återställa databasen
-<a id="execute-powershell-command-to-reset-database" class="xliff"></a>
+#### <a name="execute-powershell-command-to-reset-database"></a>Köra PowerShell-kommando för att återställa databasen
 
 Kör följande kommando direkt på AOS-datorn för att återställa integrationen mellan Finance and Operations och ekonomisk rapportering:
 
@@ -100,16 +93,14 @@ Beskrivning av parametrarna:
 -   Parametern -ReasonDetail är fritext.
 -   Reason och reasonDetail registreras övervaka telemetri/miljö-övervakning.
 
-## Starta tjänster
-<a id="start-services" class="xliff"></a>
+## <a name="start-services"></a>Starta tjänster
 Använd services.msc för att starta om tjänsterna som du tidigare har stoppat:
 
 -   World wide web publishing service (gäller alla AOS-datorer)
 -   Microsoft Dynamics 365 for Finance and Operations Batch Management Service (endast icke-privata AOS-datorer)
 -   Management Reporter 2012 processtjänst (endast på BI-datorer)
 
-## Importera rapportdefinitioner
-<a id="import-report-definitions" class="xliff"></a>
+## <a name="import-report-definitions"></a>Importera rapportdefinitioner
 Importera dina rapportdesigner från Report Designer med den fil som skapades vid exporten:
 
 1.  I Report Designer, gå till **Företag** &gt; **Grupper för byggblock**.

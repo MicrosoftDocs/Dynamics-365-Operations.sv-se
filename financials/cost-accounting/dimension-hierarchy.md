@@ -10,13 +10,14 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: CAMDimensionHierarchy,
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: AX 7.0.0, Operations, Core
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: YuyuScheller
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
@@ -24,18 +25,15 @@ ms.openlocfilehash: dcbab70d2057a2eb252538a51343fa8bae16873d
 ms.contentlocale: sv-se
 ms.lasthandoff: 06/20/2017
 
-
 ---
 
-# Dimensionshierarki
-<a id="dimension-hierarchy" class="xliff"></a>
+# <a name="dimension-hierarchy"></a>Dimensionshierarki
 
 [!include[banner](../includes/banner.md)]
 
 Det här ämnet innehåller information om dimensionshierarkier. Du använder en hierarki för att definiera rapporteringsstruktur, kostnadspolicyer och säkerhetsinställningar i kostnadsredovisning.  
 
-## Översikt
-<a id="overview" class="xliff"></a>
+## <a name="overview"></a>Översikt
 
 Dimensionshierarkier används på olika ställen i kostnadsredovisning. En dimensionshierarki låter dig ange följande information:
 
@@ -59,26 +57,22 @@ En dimensionshierarki kan skapas för följande typer av dimensioner:
 > - En dimensionshierarki kan ha obegränsat antal nivåer i strukturen. Alla nivåer ska vara tillgängliga i arbetsytan **kostnadskontroll**. Endast de första 15 nivåerna i dimensionshierarkin exporteras när du använder Microsoft Excel eller Microsoft Power BI för rapporteringsändamål. Denna begränsning beror på att både Excel och Power BI kräver ett fast schema.
 > - En dimensionshierarki har inget giltighetsdatum. Därför sparas alla ändringar i en dimensionshierarki omedelbart till posten och kan du inte jämföra före- och efter-datum.
 
-## Typ av dimensionshierarki
-<a id="dimension-hierarchy-type" class="xliff"></a>
+## <a name="dimension-hierarchy-type"></a>Typ av dimensionshierarki
 
 När du skapar en ny dimensionshierarki måste du tilldela en hierarkityp. Gå till **kostnadsredovisning** > **dimensioner** > **Dimensionhierarkier**. Klicka på **Ny**, och välj en typ av dimensionshierarki. Du kan välja antingen **Hierarki för dimensionskategorisering** eller **Hierarki för dimensionsklassificering**.
 
-### Hierarki för dimensionskategorisering
-<a id="dimension-categorization-hierarchy" class="xliff"></a>
+### <a name="dimension-categorization-hierarchy"></a>Hierarki för dimensionskategorisering
 
 Typen **Hierarki för dimensionskategorisering** används för rapporteringsändamål. Den stöder endast dimensioner för kostnadselement. Följande regler gäller när du väljer den här typen:
 
 -  En dimensionsmedlem kan vara associerad mer än en gång i hierarkistrukturen.
 -  Du kan sortera dimensionsmedlemmar för kostnadselement i olika noder genom att tilldela kostnadsbeteende till lövnoden.
 
-### Hierarki för dimensionsklassificering
-<a id="dimension-classification-hierarchy" class="xliff"></a>
+### <a name="dimension-classification-hierarchy"></a>Hierarki för dimensionsklassificering
 
 Typen **Hierarki för dimensionsklassificering** används för att definiera regler för rapporteringsändamål. Den stöder alla dimensioner, till exempel kostnadsobjekt, kostnadselement och statistiska dimensioner. När du väljer denna typ kan en dimensionsmedlem endast vara associerad en gång i hierarkistrukturen.
 
-## Skapa och hantera av dimensionshierarki
-<a id="create-and-maintain-a-dimension-hierarchy" class="xliff"></a>
+## <a name="create-and-maintain-a-dimension-hierarchy"></a>Skapa och hantera av dimensionshierarki
 
 En dimensionshierarki skapas som en trädstruktur som har nod- och lövnodrelationer.
 
@@ -86,8 +80,7 @@ En dimensionshierarki skapas som en trädstruktur som har nod- och lövnodrelati
 -  En nod kan inte ha undernoder och lövnoder tilldelade.
 -  En lövnod kan bara tilldelas i den lägsta nivån i hierarkin.
 
-### Exempel
-<a id="example" class="xliff"></a>
+### <a name="example"></a>Exempel
 
 Ett litet företag har följande organisationsstruktur, där ekonomi och personal är avdelningar under Admin och sammansättning och paketering är avdelningar under Produktion.
 
@@ -165,13 +158,11 @@ Dimensionshierarkin för policyn kan ställas in enligt följande.
 > [!NOTE]
 > Under **Dimensionsmedlemsintervall** kan en nod innehålla 1:_n_ dimensionsmedlemsintervall. Du kan infoga dimensionsmedlem-ID som ännu inte finns som dimensionsmedlemmar. Den här metoden gör hierarkin flexibel för framtiden.  
 
-### Kopiera en hierarki
-<a id="copy-a-hierarchy" class="xliff"></a>
+### <a name="copy-a-hierarchy"></a>Kopiera en hierarki
 
 Du kan kopiera en aktuell dimensionshierarki som utgångspunkt för en ny dimensionshierarki. Den här metoden kan vara användbart om du vill jämföra tidigare dimensionshierarki till den nya dimensionshierarkin.
 
-### Ordna om noderna i en hierarki
-<a id="rearrange-nodes-in-a-hierarchy" class="xliff"></a>
+### <a name="rearrange-nodes-in-a-hierarchy"></a>Ordna om noderna i en hierarki
 
 Du kan flytta en nod uppåt respektive nedåt inom den aktuella nivån i strukturen. På så sätt kan du ändra ordning på noder för rapportering i arbetsytan **kostnadskontroll**.
 
@@ -183,8 +174,7 @@ Du kan flytta en nod till en ny plats i hierarkin genom att markera målnoden. D
 > [!NOTE] 
 > Nodernas ordning bevaras inte när du exporterar data till Excel eller Power BI eftersom dessa verktyg använder bokstavsordning som standard. Du bör ändra ordning manuellt.
 
-## Definiera dimensionshierarkier för rapportering
-<a id="define-dimension-hierarchies-for-reporting" class="xliff"></a>
+## <a name="define-dimension-hierarchies-for-reporting"></a>Definiera dimensionshierarkier för rapportering
 
 Dimensionshierarkier är viktiga för rapportering. De låter dig ange den specifika struktur som passar i den enskilda organisationen. Aggregeringar som görs för på nodnivån i dimensionshierarkin låter intressenter på alla nivåer i organisationen se data på alla nivåer.
 
@@ -223,8 +213,7 @@ I följande exempel visas hur en dimensionshierarki kan se ut i rapportstrukture
 | Organisation                              | Produktion                                | Paketering                                 | CC005                                     |                                            |
 | Organisation                              | Produktion                                | Sammansättning                                  | CC006                                     |                                            |
 
-### Uppdatera de dimensionshierarkier som används för rapportering
-<a id="update-the-dimension-hierarchies-that-are-used-for-reporting" class="xliff"></a> 
+### <a name="update-the-dimension-hierarchies-that-are-used-for-reporting"></a>Uppdatera de dimensionshierarkier som används för rapportering 
 
 Med tiden kan måste de dimensionshierarkier som används i ovanstående rapportverktyg uppdateras. Du kan uppdatera dimensionshierarkier genom att uppdatera klienten.
 
@@ -239,8 +228,7 @@ Uppdateringar av dimensionshierarkier fångas upp var 24:e timme efter ett förc
 > [!NOTE] 
 > Om du vill manuellt utlösa en uppdatering av cachen för dimensionshierarki kan du skapa en ny export till Excel för dimensionshierarki eller hierarkier som måste uppdateras.
 
-## Definiera dimensionshierarkier för kostnadspolicyer
-<a id="define-dimension-hierarchies-for-cost-policies" class="xliff"></a>
+## <a name="define-dimension-hierarchies-for-cost-policies"></a>Definiera dimensionshierarkier för kostnadspolicyer
 
 Kostnadsredovisning består av flera policyer där detaljerade regler har definierats. Du måste definiera minst en eller fler dimensionshierarkier för följande policyer:
 
@@ -251,8 +239,7 @@ Kostnadsredovisning består av flera policyer där detaljerade regler har defini
 
 Dimensionshierarkier gör det enkelt att skapa regler. Om du vill undvika att skapa regler för varje dimensionsmedlem kan du utnyttja sammansättningar med dimensionsmedlemmar som tillhandahålls av dimensionshierarkinivåer. Om du har överlappande regler måste du definiera specifika regler som systemet beaktar när detta gör omkostnadsberäkningen.
 
-### Exempel: Definiera en ny kostnadsbeteendepolicy
-<a id="example-define-a-cost-behavior-policy" class="xliff"></a>
+### <a name="example-define-a-cost-behavior-policy"></a>Exempel: Definiera en ny kostnadsbeteendepolicy
 
 En ny kostnadsbeteendepolicy skapas och lämpliga dimensionshierarkier tilldelas policyn som visas här.
 
@@ -295,8 +282,7 @@ En omkostnadsberäkning som körs efter 20 januari 2017, antar inte längre den 
 > [!NOTE] 
 > Fälten **giltig från** och **giltig till** är giltighetsdatum och giltighetstid. Du kan dra tillbaka regeln och köra en ny omkostnadsberäkning samma dag.
 
-## Definiera dimensionshierarkier för säkerhetsinställning
-<a id="define-dimension-hierarchies-for-security-setup" class="xliff"></a>
+## <a name="define-dimension-hierarchies-for-security-setup"></a>Definiera dimensionshierarkier för säkerhetsinställning
 
 Kostnadsredovisningsdata ska göras tillgänglig för alla chefer, som ansvarar för en rapportenhet. I kostnadsredovisningens terminologi representeras rapportenheten av ett kostnadsobjekt eller en uppsättning kostnadsobjekt.
 

@@ -9,12 +9,13 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
+ms.reviewer: sericks
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 192161
 ms.assetid: 8b478e3d-d6b4-403b-aae0-f639a71ca36c
 ms.search.region: Global
 ms.author: donaldc
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -22,11 +23,9 @@ ms.openlocfilehash: 61b3107516c7af8d1c0f4c427bdffa9be0fbc18d
 ms.contentlocale: sv-se
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Konfigurera ett godkännandesteg i ett arbetsflöde
-<a id="configure-an-approval-step-in-a-workflow" class="xliff"></a>
+# <a name="configure-an-approval-step-in-a-workflow"></a>Konfigurera ett godkännandesteg i ett arbetsflöde
 
 [!include[banner](../includes/banner.md)]
 
@@ -35,15 +34,13 @@ I det här avsnittet beskrivs hur du konfigurerar egenskaperna för ett godkänn
 
 Högerklicka på godkännandesteget och klicka sedan på **Egenskaper** för att öppna sidan **Egenskaper**, om du vill konfigurera ett godkännandesteg i arbetsflödesredigeraren. Använd sedan följande procedurer när du vill konfigurera egenskaperna för godkännandesteget.
 
-## Ange ett namn på steget
-<a id="name-the-step" class="xliff"></a>
+## <a name="name-the-step"></a>Ange ett namn på steget
 Följ dessa steg när du vill ange ett namn för godkännandesteget.
 
 1.  Klicka på **Grundinställningar** i det vänstra fönstret.
 2.  Ange ett unikt namn för godkännandesteget i fältet **Namn**.
 
-## Ange en ämnesrad och instruktioner
-<a id="enter-a-subject-line-and-instructions" class="xliff"></a>
+## <a name="enter-a-subject-line-and-instructions"></a>Ange en ämnesrad och instruktioner
 Du måste ange en ämnesrad och instruktioner för användare som har tilldelats godkännandesteget. Om du till exempel konfigurerar ett godkännandesteg för inköpsrekvisitioner kan användaren som tilldelats steget se ämnesraden och instruktionerna på sidan **Inköpsrekvisitioner**. Ämnesraden visas i ett meddelandefält på sidan. Användaren kan sedan klicka på ikonen i meddelandefältet för att läsa instruktionerna. Följ dessa steg när du vill ange en ämnesrad och instruktioner.
 
 1.  Klicka på **Grundinställningar** i det vänstra fönstret.
@@ -77,8 +74,7 @@ Du måste ange en ämnesrad och instruktioner för användare som har tilldelats
     5.  Om du vill anpassa texten kan du infoga platshållare enligt vad som beskrivs i steg 6.
     6.  Klicka på **Stäng**.
 
-## Tilldela godkännandesteget
-<a id="assign-the-approval-step" class="xliff"></a>
+## <a name="assign-the-approval-step"></a>Tilldela godkännandesteget
 Gör på följande sätt när du vill ange vem som ska tilldelas godkännandesteget.
 
 1.  Klicka på **Tilldelning** i det vänstra fönstret.
@@ -157,20 +153,17 @@ Gör på följande sätt när du vill ange vem som ska tilldelas godkännandeste
         -   Om både Sue och Jo godkänner dokumentet, skickas det till Ann för godkännande.
     -   **Alla godkännare** – Alla godkännare måste godkänna dokumentet. I annat fall kan inte arbetsflödet fortsätta. Till exempel har Sam skickat in en utgiftsrapport på 15 000 dollar. Utgiftsrapporten tilldelas för närvarande Sue, Jo och Bill. Om Sue och Jo godkänner dokumentet men Bill avvisar det, avslås dokumentet och skickas tillbaka till Sam. Om Sue, Jo och Bill alla godkänner dokumentet, skickas det till Ann för godkännande.
 
-## Ange när godkännandesteget krävs
-<a id="specify-when-the-approval-step-is-required" class="xliff"></a>
+## <a name="specify-when-the-approval-step-is-required"></a>Ange när godkännandesteget krävs
 Du kan ange när godkännandesteget krävs. Godkännandesteget kan alltid krävas, eller också kan det krävas endast om specifika villkor uppfylls.
 
-### Godkännandesteget krävs alltid
-<a id="the-approval-step-is-always-required" class="xliff"></a>
+### <a name="the-approval-step-is-always-required"></a>Godkännandesteget krävs alltid
 
 Följ dessa steg om godkännandesteget alltid krävs.
 
 1.  Klicka på **Villkor** i det vänstra fönstret.
 2.  Välj alternativet **Kör alltid det här steget**.
 
-### Godkännandesteget krävs under vissa förhållanden
-<a id="the-approval-step-is-required-in-specific-conditions" class="xliff"></a>
+### <a name="the-approval-step-is-required-in-specific-conditions"></a>Godkännandesteget krävs under vissa förhållanden
 
 Godkännandesteget som du konfigurerar kanske endast krävs då specifika villkor uppfylls. Om du till exempel konfigurerar ett godkännandesteg för ett inköpsrekvisitionsarbetsflöde, kan du tillämpa att godkännandesteget endast inträffar om inköpsrekvisitionens belopp överstiger 10 000 dollar. Följ dessa steg för att ange när godkännandesteget krävs.
 
@@ -184,8 +177,7 @@ Godkännandesteget som du konfigurerar kanske endast krävs då specifika villko
     3.  Klicka på **Ja**. Systemet utvärderar posten i syfte att avgöra om den uppfyller villkoren som du angett.
     4.  När du vill återgå till sidan **Egenskaper** klickar du på **OK** eller på **Avbryt**.
 
-## Ange vad som ska hända när dokumentet är försenat
-<a id="specify-what-happens-when-the-document-is-overdue" class="xliff"></a>
+## <a name="specify-what-happens-when-the-document-is-overdue"></a>Ange vad som ska hända när dokumentet är försenat
 Om en användare inte vidtar åtgärder för ett dokument inom den tilldelade tiden, är dokumentet försenat. Ett dokument som är försenat kan eskaleras eller automatiskt tilldelas till en annan användare för godkännande. Följ dessa steg för att eskalera dokumentet om det är försenat.
 
 1.  Klicka på **Eskalering** i det vänstra fönstret.

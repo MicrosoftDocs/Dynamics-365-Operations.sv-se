@@ -10,12 +10,13 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PurchTable
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
 ms.custom: 93113
 ms.assetid: d4ec3e86-fce2-4546-911b-e0acf64c8887
 ms.search.region: Global
 ms.author: fdahl
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -23,11 +24,9 @@ ms.openlocfilehash: a192688315adb2d83f349c525c5d8f70309375db
 ms.contentlocale: sv-se
 ms.lasthandoff: 06/13/2017
 
-
 ---
 
-# Produktinleverans mot inköpsorder
-<a id="product-receipt-against-purchase-orders" class="xliff"></a>
+# <a name="product-receipt-against-purchase-orders"></a>Produktinleverans mot inköpsorder
 
 [!include[banner](../includes/banner.md)]
 
@@ -38,18 +37,15 @@ Den här artikeln innehåller en beskrivning av olika alternativ för att regist
 
 Produktinleverans är en process som används för att registrera att de produkter som har beställts har tagits emot så att inköpsorderrader (IO) sedan kan bearbetas för fakturering. I vissa fall genomgår produkterna en förregistrering där extra information från leverantören registreras innan produkterna tas emot. När en produkt tas emot får den först statusen **Registrerad**. Produkten kan sedan genomgå ytterligare processer, till exempel kvalitetshantering, innan den slutligen får statusen **Mottagen**.
 
-## Förregistrering (ASN)
-<a id="preregistration-asn" class="xliff"></a>
+## <a name="preregistration-asn"></a>Förregistrering (ASN)
 Leverantörer kan dela information om produkter som ska levereras. I det här fallet kan du förregistrera produkten om du vill registrera den här informationen innan produkten tas emot. Genom att förregistrera produkten minskar du mängden arbete som krävs vid registrering av artikel och inleverans. Leverantörer kan tillhandahålla produktinformation elektroniskt via en leveransavisering (ASN) som sedan automatiskt registreras i systemet. Informationen i ASN omfattar kvantiteten på de produkter som ska levereras och leveransdatumet. ASN kan även innehålla information såsom batch- eller serienummer. Registrering av ASN sker i modulen **Transporthantering**.
 
-## Registrering
-<a id="registration" class="xliff"></a>
+## <a name="registration"></a>Registrering
 Registreringen av produktinleveransen sker ofta vid inlastningsplatser på ett lagerställe. Den utförs antingen med hjälp av en handenhet eller via införseljournaler. Du kan även registrera produktinleveransen manuellt med hjälp av åtgärden **Registrering** på sidan **Inköpsorder**. I båda fallen markeras produkten som **Registrerad**. Observera att produkten ännu inte har statusen **Mottagen**.  
 
 Produkter som tas emot på ett lagerställe kan genomgå en kvalitetskontroll innan de placeras på lagret. Kvalitetsorder eller karantänorder kan användas för att utföra kvalitetskontrollen. Om en kvalitetsorder används kan du konfigurera processen för att tillfälligt blockera produkter genom en reservation medan de kontrolleras. Om en karantänorder används flyttas produkterna till ett annat lagerställe för kontroll. Det här lagerstället kallas karantänlagerställe. I båda kvalitetskontrollsprocesserna kan vissa produkter komma att kasseras, antingen för att de inte uppfyller förväntningarna på kvalitet eller på grund av att kvalitetskontrollen innefattar destruktiv provning av ett urval av produkten.
 
-## Produktinleverans
-<a id="product-receipt" class="xliff"></a>
+## <a name="product-receipt"></a>Produktinleverans
 Oftast används åtgärden **Produktinleverans** på sidan **Inköpsorder** för att markera produkten som **Mottagen** på inköpsordern. Sidan **Bokföra produktinleverans** har olika alternativ för den kvantitet som redovisas som mottagen. Du kan till exempel ställa in fältet **Kvantitet** till **Orderkvantitet** eller **Inleverera nu-kvantitet**. Om ett lagerställes inleveransprocess har använts är det vanligt att fältet i stället ställs in till **Registrerad kvantitet**. Du kan ändra kvantiteterna för varje orderrad som kommer att få statusen **Mottagen** för att kunna ta hänsyn till eventuella avvikelser såsom under- eller överleverans. Vid produktinleveransen måste du ange en identifierare för produktinleveransen. Identifieraren utgörs vanligtvis av en referens till följesedeln från leverantören. Den här identifieraren krävs för redovisning eftersom den möjliggör kontroller och granskningar av leverantörens följesedlar mot vad som har tagits emot. Den krävs även för det bokförda lagret och utgiften.  
 
 Om en medarbetare beställde varor med hjälp av en inköpsrekvisition kan den anställde bli ombedd att bekräfta mottagandet av produkten. Du kan konfigurera det här scenariot med hjälp av ett arbetsflöde. Du kan konfigurera arbetsflödesvillkor så att de matchar din affärsprocess.  
@@ -66,8 +62,7 @@ När produktinleveransen har bearbetats på inköpsordern ändras inköpsorderns
 
 Du kan komma åt den här sidan från åtgärdsgruppen **Inleverans** på sidan **Inköpsorder**. Informationen i journalerna omfattar uppgifter om kvantiteter, datum och dimensioner.
 
-Se även
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Se även
 --------
 
 [Översikt över inköpsorder](purchase-order-overview.md)

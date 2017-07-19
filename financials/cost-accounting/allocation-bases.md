@@ -10,13 +10,14 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: CAMDimensionMember
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 223174
 ms.assetid: 
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: YuyuScheller
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
@@ -24,11 +25,9 @@ ms.openlocfilehash: 74a3033ffbdba2efc6c5ecd6c55019898751a146
 ms.contentlocale: sv-se
 ms.lasthandoff: 06/20/2017
 
-
 ---
 
-# Allokeringsunderlag
-<a id="allocation-bases" class="xliff"></a> 
+# <a name="allocation-bases"></a>Allokeringsunderlag 
 
 [!include[banner](../includes/banner.md)]
 
@@ -40,8 +39,7 @@ Det finns tre typer av allokeringsunderlag i kostnadsredovisning:
 - Allokeringsunderlag för hierarki
 - Formelallokeringsunderlag
 
-## Fördefinierad dimensionsmedlem för allokeringsunderlag
-<a id="predefined-dimension-member-allocation-bases" class="xliff"></a>
+## <a name="predefined-dimension-member-allocation-bases"></a>Fördefinierad dimensionsmedlem för allokeringsunderlag
 
 De fördefinierade dimensionsmedlem för allokeringsunderlag skapas automatiskt när en dimensionsmedlem i en följande typer skapas:
 
@@ -51,8 +49,7 @@ De fördefinierade dimensionsmedlem för allokeringsunderlag skapas automatiskt 
 > [!NOTE]
 > Fördefinierad dimensionsmedlem för allokeringsunderlag som baseras på en dimensionsmedlem för kostnadselement beaktar endast värdena från datakällaprovidern som till exempel redovisnings- och budgettransaktionerna.
 
-### Exempel 1: Använd en dimensionsmedlem för kostnadselement som allokeringsunderlag
-<a id="example-1-use-a-cost-element-dimension-member-as-the-allocation-base" class="xliff"></a>
+### <a name="example-1-use-a-cost-element-dimension-member-as-the-allocation-base"></a>Exempel 1: Använd en dimensionsmedlem för kostnadselement som allokeringsunderlag
 Exemplet visar hur du skapar en kostnadsallokeringsregel för att allokera kostnaselement 10002 (försäkring för medarbetare) till det saldo som registreras på kostnadselement 10001 (löner). Allokeringsregeln definieras utifrån förhållandet mellan avdelningarnas löner till totala löner. (Granskning behövs!)
 
 I redovisningen anges kontoplanen på följande sätt.
@@ -140,8 +137,7 @@ När kostnadselement 10001 (löner) används som allokeringsunderlag, är result
 | CC002       | FI                  | 10002        | Försäkring för medarbetare | Oklassificerade  | 500.00    | 31-01-2017      |
 | CC099       | LÖ                  | 10002        | Försäkring för medarbetare | Oklassificerade  | 300,00    | 31-01-2017      |
 
-### Exempel 2: Använd en statistisk dimensionsmedlem som allokeringsunderlag
-<a id="example-2-use-a-statistical-dimension-member-as-the-allocation-base" class="xliff"></a>
+### <a name="example-2-use-a-statistical-dimension-member-as-the-allocation-base"></a>Exempel 2: Använd en statistisk dimensionsmedlem som allokeringsunderlag
 
 Statistiska dimensionsmedlemmar kan användas som allokeringsunderlag för att definiera policyer eller rapportera icke-monetär förbrukning efter kostnadsobjekt. Du kan manuellt skapa statistiska dimensionsmedlemmar eller importera dem från en fil med hjälp av verktyget Importera/exportera för datahantering.
 
@@ -234,13 +230,11 @@ Här är ett exempel på en kostnadsfördelningsregel om electricitetens fördef
 | CC002       | FI   | 4,100.00  | (4 100 ÷ 21 550) × belopp  |
 | CC003       | LÖ   | 15,000.00 | (15 000 ÷ 21 550) × belopp |
 
-## Allokeringsunderlag för hierarki
-<a id="hierarchy-allocation-bases" class="xliff"></a>
+## <a name="hierarchy-allocation-bases"></a>Allokeringsunderlag för hierarki
 
 Kostnadsrevisorer kan manuellt skapa allokeringsunderlag för hierarki genom att använda en befintlig dimensionshierarkinod för kostnadsobjekt till ett befintligt allokeringsunderlag. På så sätt kan du begränsa intervallet för den ursprungliga fördefinierade dimensionsmedlem för allokeringsunderlag. En fördefinierad dimensionsmedlem för allokeringsunderlag kan användas för att skapa flera allokeringsunderlag för hierarki. Intervallen kan hållas i den dimensionshierarki för kostnadsobjekt som associeras med allokeringsunderlaget för hierarki.
 
-### Exempel: Allokeringsunderlag för hierarki som baseras på heltidsanställda medarbetare i organisationen
-<a id="example-hierarchy-allocation-bases-that-are-based-on-full-time-employees-in-the-organization" class="xliff"></a>
+### <a name="example-hierarchy-allocation-bases-that-are-based-on-full-time-employees-in-the-organization"></a>Exempel: Allokeringsunderlag för hierarki som baseras på heltidsanställda medarbetare i organisationen
 Här följer ett exempel på en dimensionshierarki för kostnadsobjekt som kan skapas för att beskriva en förenklad organisation.
 
 | Hierarkinamn | Nodnivå 0 | Nodnivå 1 | Nodnivå 2 | Dimensionsmedlemmar |
@@ -283,8 +277,7 @@ Här är ett exempel på en kostnadsfördelningsregel om antal FTE:s i CFO:s all
 | CC001       | Personal   | 1,00      | (1/3) × belopp    |
 | CC002       | FI   | 2.00      | (2/3) × belopp    |
 
-## Formelallokeringsunderlag
-<a id="formula-allocation-bases" class="xliff"></a>
+## <a name="formula-allocation-bases"></a>Formelallokeringsunderlag
 
 Formelallokeringsunderlag låter dig definiera avancerade formler för att uppnå rätt allokeringsbas. Du kan manuellt skapa formelallokeringsunderlag.
 
@@ -313,8 +306,7 @@ Traditionella **IF**-rapporter stöds inte. Du kan emellertid skapa rapporter oc
 | a \> b    | Sant       | 1      |
 | a \> b    | Falskt      | 0      |
 
-### Exempel 1: En enkel formel
-<a id="example-1-a-simple-formula" class="xliff"></a>
+### <a name="example-1-a-simple-formula"></a>Exempel 1: En enkel formel
 
 Elräkningar består ofta av två delar:
 
@@ -379,8 +371,7 @@ Här är ett exempel på en kostnadsfördelningsregel om formelallokeringsunderl
 | CC002       | FI   | 1,00      | (1/3) × belopp     |
 | CC003       | LÖ   | 1,00      | (1/3) × belopp     |
 
-### Exempel 2: En avancerad formel
-<a id="example-2-an-advanced-formula" class="xliff"></a>
+### <a name="example-2-an-advanced-formula"></a>Exempel 2: En avancerad formel
 I det här exemplet bör elkostnaderna inte bara följa den faktiska elen som förbrukas i kWh. Ledningen vill inkludera incitament för att minska elförbrukningen. 
 
 | Regel              | Kurs | 

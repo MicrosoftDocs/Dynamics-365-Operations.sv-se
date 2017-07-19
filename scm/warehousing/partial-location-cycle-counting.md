@@ -10,14 +10,14 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 keywords: WHSCycleCountPlan, WHSWorkLineCycleCount, WHSWorkTemplateLineGroup, WHSWorkTemplateTable
 audience: Application User
-ms.reviewer: YuyuScheller
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
 ms.industry: Distribution
 ms.author: perlynne
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -27,8 +27,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Rullande inventering av del av platser
-<a id="partial-location-cycle-counting" class="xliff"></a>
+# <a name="partial-location-cycle-counting"></a>Rullande inventering av del av platser
 
 [!include[banner](../includes/banner.md)]
 
@@ -37,8 +36,7 @@ Planer för rullande inventering guidar de faktiska räkningsoperationerna. Du k
 
 Du kan vägleda de faktiska räkningsoperationerna genom att använda planer för rullande inventering för att skapa räkningsarbeten. Du kan begära att bara specifika produkter och produktvarianter räknas i stället för alla tillgängliga lager på en plats. Genom att filtrera efter specifika produkter kan lagerchefen minska granskningsomkostnaderna, undvika konsolideringsmisstag och spara tid.
 
-## Så här konfigurerar du partiell rullande inventering för plats
-<a id="how-to-configure-partial-location-cycle-counting" class="xliff"></a>
+## <a name="how-to-configure-partial-location-cycle-counting"></a>Så här konfigurerar du partiell rullande inventering för plats
 När du använder arbetsprocessen för lagerställe för inventeringsoperationer skapas en arbetsrubrik för varje plats. När du definierar planen för rullande inventering kan du använda frågan **Välj platser** för att begränsa arbetet för rullande inventering som skapas. När du väljer produkter för planen för rullande inventering kan du välja både produkt- och produktvariantfrågor för att begränsa det som räknas. 
 
 Du kan associera en **arbetsmall** med en plan för rullande inventering för att definiera hur arbetet för rullande inventering ska skapas. Arbetsmallen för inventeringsoperationer refereras direkt från planen för rullande inventering. 
@@ -51,8 +49,7 @@ Innan arbetet för partiell rullande inventering kan bearbetas, måste du välja
 
 För den partiella rullande inventeringsprocessen kommer datum/tid för **Senaste rullande inventering** inte att uppdateras för platsen.
 
-## Exempel
-<a id="example" class="xliff"></a>
+## <a name="example"></a>Exempel
 I det här exemplet måste bara artikelnumret A0001 räknas i lagerställe 61.
 
 1.  En ny arbetsmall skapas för rullande inventering. Alternativet **Arbetsradbrytningar** används för att gruppera inventeringsrader för arbete efter artikelnummer. Det arbete för rullande inventering som skapas kommer får därför rader per artikelnummer. Du kan också gruppera raderna efter produktvariantnummer.
@@ -61,8 +58,7 @@ I det här exemplet måste bara artikelnumret A0001 räknas i lagerställe 61.
 
 
 
-Se även
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Se även
 --------
 
 [Rullande inventering](cycle-counting.md)
