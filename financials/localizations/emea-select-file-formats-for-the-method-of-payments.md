@@ -15,7 +15,7 @@ ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 262514
 ms.search.region: Belgium, France, Germany, Norway, Spain, Sweden, Switzerland
 ms.author: v-lenest
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
 ms.sourcegitcommit: f76e431320414b508728cbe9fe20456f107cbe40
@@ -23,11 +23,9 @@ ms.openlocfilehash: cbe4b57d0ad9119b0e5f6c9725a85c3afe8388ab
 ms.contentlocale: sv-se
 ms.lasthandoff: 06/09/2017
 
-
 ---
 
-# Filformat för betalningsmetod
-<a id="file-formats-for-methods-of-payment" class="xliff"></a>
+# <a name="file-formats-for-methods-of-payment"></a>Filformat för betalningsmetod
 
 [!include[banner](../includes/banner.md)]
 
@@ -41,13 +39,11 @@ Det finns två sätt att få filformat som du kan använda med betalningsmetoder
 -   Retur
 -   Remittering
 
-### Metod 1: Filformat för elektronisk rapportering
-<a id="method-1-electronic-reporting-file-formats" class="xliff"></a>
+### <a name="method-1-electronic-reporting-file-formats"></a>Metod 1: Filformat för elektronisk rapportering
 
-För filformat som baseras på ER-konfigurationer måste du importera konfigurationer från Lifecycle Services (LCS). Mer information finns i [Hämta elektroniska rapporteringskonfigurationer från Lifecycle Services](/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs). När du importerar rapporteringskonfigurationer för dess filformat, blir importerade format tillgängliga för val på sidan **Betalningsmetoder**. Hur du importerar och väljer filformat för Europa liknar proceduren för Japan. <!---For more details, see [Enable the JBA payment file format](https://ax.help.dynamics.com/en/wiki/enable-the-jba-payment-file-format/).-->
+För filformat som baseras på ER-konfigurationer måste du importera konfigurationer från Lifecycle Services (LCS). Mer information finns i [Hämta elektroniska rapporteringskonfigurationer från Lifecycle Services](/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs). När du importerar rapporteringskonfigurationer för dess filformat, blir importerade format tillgängliga för val på sidan **Betalningsmetoder**. Hur du importerar och väljer filformat för Europa liknar proceduren för Japan. <!---For more details, see [Enable the JBA payment file format](/dynamics365/unified-operations/financials/localizations/tasks/jba-payment-file-format).-->
 
-### Metod 2: X++ -filformat
-<a id="method-2-x-file-formats" class="xliff"></a>
+### <a name="method-2-x-file-formats"></a>Metod 2: X++ -filformat
 
 Gör följande om du vill välja filformat som baseras på X++ -kod.
 
