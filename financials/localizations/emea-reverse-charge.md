@@ -23,8 +23,7 @@ ms.lasthandoff: 06/14/2017
 
 ---
 
-# Omvänd moms
-<a id="reverse-charge-vat" class="xliff"></a>
+# <a name="reverse-charge-vat"></a>Omvänd moms
 Det här avsnittet beskriver en allmän metod för att ställa in omvänd moms (VAT) för europeiska länder.
 
 Omvänd moms är ett skatteschema som har ansvaret för redovisning och rapportering av moms från säljaren till köparen av varor eller tjänster. Därför rapporterar mottagaren av varor eller tjänster både utgående moms (i rollen som säljare) och ingående moms (i rollen som inköpare) i deras momsrapport.
@@ -33,8 +32,7 @@ Europeiska unionens (EU) direktiv låter medlemsstaterna fastställa hur de skul
 
 Du måste utföra följande inställningar om du vill använda omvänd moms.
 
-## Ställ in momskoder
-<a id="set-up-sales-tax-codes" class="xliff"></a>
+## <a name="set-up-sales-tax-codes"></a>Ställ in momskoder
 Vi rekommenderar att du använder olika momskoder för inköp och försäljning.
 
 <table>
@@ -58,8 +56,7 @@ Den måste tilldela denna negativa momskod till en artikelmomsgrupp, och däreft
 </tbody>
 </table>
 
-## Ställa in momsgrupper och artikelmomsgrupper
-<a id="set-up-sales-tax-groups-and-item-sales-tax-groups" class="xliff"></a>
+## <a name="set-up-sales-tax-groups-and-item-sales-tax-groups"></a>Ställa in momsgrupper och artikelmomsgrupper
 Vi rekommenderar att du använder olika momsgrupper för inköp och försäljning.
 
 <table>
@@ -77,12 +74,10 @@ Vi rekommenderar att du använder olika momsgrupper för inköp och försäljnin
 </tr>
 </table>
 
-## Ställ in information för omvända momsgrupper
-<a id="set-up-reverse-charge-groups" class="xliff"></a>
+## <a name="set-up-reverse-charge-groups"></a>Ställ in information för omvända momsgrupper
 På sidan **omvänd momsartikelgrupper** (**skatt** > **inställningar** > **moms** > **omvänd momsartikelgrupper**), kan du definiera grupper av produkter eller tjänster, eller enskilda produkter eller tjänster som omvänd moms kan tillämpas på. Definiera listan med artiklar, artikelgrupper och kategorier för försäljning och inköp för varje artikelgrupp för omvänd moms.
 
-## Ställ in regler för omvänd moms
-<a id="set-up-reverse-charge-rules" class="xliff"></a>
+## <a name="set-up-reverse-charge-rules"></a>Ställ in regler för omvänd moms
 På sidan **regler för omvänd moms** (**skatt** > **inställningar** > **moms** > **regler för omvänd moms**), kan du definiera tillämpningsreglerna för inköp och försäljning. Du kan konfigurera en uppställning med regler för omvänd moms. För varje regel anger du följande fält:
 
 - **Dokumenttyp** – Välj **inköpsorder**, **leverantörsfakturajournal**, **försäljningsorder**, **fritextfaktura**, **Kundfakturajournal**, och/eller **leverantörsfakturan**.
@@ -99,18 +94,15 @@ Du kan också ange om ett meddelande visas och dokumentraden uppdateras med moms
 - **Fråga** – ett meddelande visas som bekräftar att omvänd moms kan användas.
 - **Ange** – dokumentraden uppdateras utan meddelande.
 
-## Ställ in standardparametrar
-<a id="set-up-default-parameters" class="xliff"></a>
+## <a name="set-up-default-parameters"></a>Ställ in standardparametrar
 Om du vill aktivera funktionen på sidan **allmänna redovisningsparametrar** på fliken **omvänd moms** anger du alternativet **aktivera omvänd moms** till **Ja**. I fälten **Momsgrupp för inköpsorder** och **Momsgrupp för försäljningsorder** väljer du standardmomsgrupper. När villkoren för omvänd moms uppfylls kommer försäljnings- eller inköpsordern att uppdateras med de här momsgrupperna.
 
-## Omvänd moms på en försäljningsfaktura
-<a id="reverse-charge-on-a-sales-invoice" class="xliff"></a>
+## <a name="reverse-charge-on-a-sales-invoice"></a>Omvänd moms på en försäljningsfaktura
 För försäljningen under schema för omvänd moms debiterar inte säljaren moms. Istället indikerar fakturan både artiklarna för vilka momsen ska återföras och det totala beloppet för den återförda momsen noteras på fakturan.
 
 När en försäljningsfaktura bokförs med omvänd momstransaktion har kryssrutorna **Momsskuld** momsriktning och nollmom och **omvänd moms** markerats.
 
-## Omvänd moms på en inköpsfaktura
-<a id="reverse-charge-on-a-purchase-invoice" class="xliff"></a>
+## <a name="reverse-charge-on-a-purchase-invoice"></a>Omvänd moms på en inköpsfaktura
 För inköpare under schemat omvänd moms agerar inköparen som tar emot fakturan som har omvänd moms som en köpare och säljare för redovisningsändamål.
 
 När en inköpsfaktura med omvänd moms bokförs, skapas två momstransaktioner. En transaktion har skatteriktningen **Momsfordran**. Den andra transaktionen har skatteriktningen **Momsskuld** och kryssrutan **omvänd moms** är markerad.

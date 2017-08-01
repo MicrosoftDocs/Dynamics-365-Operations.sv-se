@@ -28,16 +28,14 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Ställa in ett kundbonusprogram
-<a id="set-up-a-customer-loyalty-program" class="xliff"></a>
+# <a name="set-up-a-customer-loyalty-program"></a>Ställa in ett kundbonusprogram
 
 [!include[banner](includes/banner.md)]
 
 
 I det här avsnittet beskrivs hur du ställer in ett bonusprogram. Bonusprogram kan öka kundlojaliteten genom att kunderna belönas för att köpa produkter i dina butiker. I Microsoft Dynamics 365 for Retail kan du ställa in enkla eller komplexa bonusprogram som gäller för dina juridiska personer i en butikskanal.
 
-Bonusfunktioner
-<a id="loyalty-features" class="xliff"></a>
+<a name="loyalty-features"></a>Bonusfunktioner
 ----------------
 
 Du kan ställa in bonusprogram, så att de omfattar följande alternativ:
@@ -48,12 +46,10 @@ Du kan ställa in bonusprogram, så att de omfattar följande alternativ:
 -   Utfärda förmånskort från återförsäljare som deltar i dina bonusprogram och länka bonuskort till ett eller flera bonusprogram som kunden kan delta i. Du kan även länka en kundpost till bonuskortet så att kunden kan slå samman bonuspoäng från flera kort och lösa in dem.
 -   Justera förmånskort eller överför bonussaldon manuellt från ett kort till ett annat för att kunna lagra eller belöna en kund.
 
-## Ställa in bonusprogram
-<a id="setting-up-loyalty-programs" class="xliff"></a>
+## <a name="setting-up-loyalty-programs"></a>Ställa in bonusprogram
 Du måste ställa in flera komponenter om du vill aktivera bonusfunktionen i Dynamics 365 for Retail. I bilden nedan visas lojalitetskomponenterna och hur de är relaterade till varandra. ![Processflöde för bonus](./media/loyaltyprocess.gif)
 
-## Bonuskomponenter
-<a id="loyalty-components" class="xliff"></a>
+## <a name="loyalty-components"></a>Bonuskomponenter
 I tabellen nedan beskrivs varje komponent och var den används i lojalitetinställningarna.
 
 | Komponent                                        | Beskrivning                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Var detta används                                                                                                                                                                                                                                                                                                                                                                 |
@@ -69,8 +65,7 @@ I tabellen nedan beskrivs varje komponent och var den används i lojalitetinstä
 | Ställa in förmånsscheman                           | Lojalitetsscheman anger de intjänings- och inlösningsregler som gäller för ett valt bonusprogram. Du tilldelar (butik) kanaler till ett förmånsschema att identifiera som bonusprogrammet och att tjäna regler och befrielseregler gäller för en butik.                                                                                                                                                                                                                                                                                                                                  | Ett förmånsschema tilldelas till ett bonusprogram och till butikskanaler. Du kan tilldela många Förmånsscheman till samma bonusprogrammet, och du kan tilldela många Förmånsscheman till många (butik) kanaler.                                                                                                                                                                        |
 | Ställa in förmånskort                             | Ett förmånskort ger kortinnehavaren rätt att delta i de bonusprogram som är tilldelade till kortet. Förmånskort går att utfärda anonymt, eller tilldelas till en viss kund. Du kan visa förmånstransaktionerna för ett visst kort, och du kan visa en sammanfattning av förmånspoäng som har ackumulerats på kortet. Du kan utfärda förmånskort från en kanal Retail. Du kan också manuellt justera ett förmånskort för uppgradering kunden till en annan nivå, för att lägga till förmånspoäng eller överföra lojalitetpoängsaldot från ett kort till en annan. | Du tilldelar bonusprogram till ett förmånskort.                                                                                                                                                                                                                                                                                                                                  |
 
-## Bonusprocesser
-<a id="loyalty-processes" class="xliff"></a>
+## <a name="loyalty-processes"></a>Bonusprocesser
 I tabellen nedan beskrivs de processer som måste köras för att skicka bonuskonfigurationerna och data till dina butiker, och hämta bonuskonfigurationerna från din butik.
 
 | Processnamn                         | Beskrivning                                                                                                                                                                                                                                                                                                                                                                                                    | Sidnamn                            |

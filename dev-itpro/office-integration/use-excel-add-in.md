@@ -25,8 +25,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Använd Excel-tillägget
-<a id="use-the-excel-add-in" class="xliff"></a>
+# <a name="use-the-excel-add-in"></a>Använd Excel-tillägget
 
 [!include[banner](../includes/banner.md)]
 
@@ -35,8 +34,7 @@ Det här avsnittet beskriver hur du öppnar enhetsdata i Microsoft Excel och sed
 
 Genom att öppna enhetsdata i Microsoft Excel kan du snabbt och enkelt visa, uppdatera och redigera data med Microsoft Dynamics Office-tillägget för Excel. Det här tillägget kräver Microsoft Excel 2016. **Obs!** om din Microsoft Azure Active Directory (AD Azure)-innehavare har konfigurerats för att använda Active Directory Federation Services (ADFS), måste du se till att uppdateringen från maj 2016 har installerats, så att Excel-tilläggen logga in dig korrekt.
 
-## Öppna enhetsdata i Excel när du startar från Dynamics 365 for Finance and Operations
-<a id="open-entity-data-in-excel-when-you-start-from-dynamics-365-for-finance-and-operations" class="xliff"></a>
+## <a name="open-entity-data-in-excel-when-you-start-from-dynamics-365-for-finance-and-operations"></a>Öppna enhetsdata i Excel när du startar från Dynamics 365 for Finance and Operations
 1.  På en sida i Microsoft Dynamics 365 for Finance and Operations klickar du på **Öppna i Microsoft Office**. Om rotdatakällan (register) för sidan är samma som rotdatakällan för alla enheter skapas standardalternativet **öppna i Excel** för sidan. Alternativet **Öppna i Excel** finns på ofta använda sidor, t.ex. **alla leverantörer** och **alla kunder**.
 2.  Klicka på alternativet **öppnas i Excel** och öppna en arbetsbok som har skapats. Den här arbetsboken har bindningsinformation för enheten, en pekare till din miljö och en länk till Excel-tillägget.
 3.  I Excel klickar du på **skrivskyddet** för att tillåta att Excel-tillägget körs. Excel-tillägget körs i ett fönster till höger i Excel-fönstret.
@@ -45,8 +43,7 @@ Genom att öppna enhetsdata i Microsoft Excel kan du snabbt och enkelt visa, upp
 
 Excel-tillägget läser automatiskt data för enheten som du har valt. Lägg märke till att det finns inga data i arbetsboken förrän Excel-tillägget läser in den.
 
-## Öppna enhetsdata i Excel när du startar från Excel
-<a id="open-entity-data-in-excel-when-you-start-from-excel" class="xliff"></a>
+## <a name="open-entity-data-in-excel-when-you-start-from-excel"></a>Öppna enhetsdata i Excel när du startar från Excel
 1.  I Excel på fliken **infoga** i gruppen **tillägg** klickar du på **butik** för att öppna Office Store.
 2.  I Office Store.söker du efter nyckelordet "Dynamics" och klickar på **Lägg till** bredvid **Microsoft Dynamics Office-tillägget** (Excel-tillägget).
 3.  Om du använder Excel-tillägg för första gången klickar du på **Lita på det här tillägget** för att tillåta att Excel-tillägget körs. Excel-tillägget körs i ett fönster till höger i Excel-fönstret.
@@ -61,12 +58,10 @@ Exempelvis är URL:en https://xxx.dynamics.com/?cmp=usmf&amp;mi=CustTableListPag
 11. När du är klar med att lägga till fält till listan **markerade fält**, kontrollera att markören är på rätt plats i kalkylbladet (till exempel cell A1) och klicka sedan på **Klar**. Klicka på **Klart** för att stänga designverktyget.
 12. Klicka på **uppdatera** för att dra in en uppsättning data.
 
-## Visa och uppdatera enhetsdata i Excel
-<a id="view-and-update-entity-data-in-excel" class="xliff"></a>
+## <a name="view-and-update-entity-data-in-excel"></a>Visa och uppdatera enhetsdata i Excel
 När Excel-tillägget har läst in enhetsdata i arbetsboken, kan du uppdatera informationen när som helst genom att klicka på **uppdatera** i Excel-tillägget.
 
-## Redigera enhetsdata i Excel
-<a id="edit-entity-data-in-excel" class="xliff"></a>
+## <a name="edit-entity-data-in-excel"></a>Redigera enhetsdata i Excel
 Du kan ändra enhetsdata som du vill och sedan publicera den igen genom att klicka på **publicera** i Excel-tillägget. Markera en cell i kalkylbladet om du vill redigera en post och ändra värdet i cellen. Om du vill lägga till en ny post, gör du något av följande:
 
 -   Klicka var som helst i registret för datakällor och klicka sedan på **Ny** i Excel-tillägg.
@@ -81,8 +76,7 @@ Om du vill ta bort en ny post, gör du något av följande:
 -   Högerklicka på radnummer bredvid kalkylbladsraden om du vill ta bort och klicka sedan på **Ta bort** &gt; **registerrader**.
 Om datakällor har lagts till som relaterade publiceras inte rubriken före raderna. Om det finns beroenden mellan andra datakällor kan du behöva ändra standardpubliceringsordningen. Om du vill publicera klickar du på knappen **alternativ** (växelsymbol) i Excel-tillägget. Klicka sedan på snabbfliken **dataanslutning** och sedan på **konfigurera publiceringsordning**.
 
-## Lägg till eller ta bort kolumner
-<a id="add-or-remove-columns" class="xliff"></a>
+## <a name="add-or-remove-columns"></a>Lägg till eller ta bort kolumner
 Du kan använda designern för att justera att kolumnerna läggs till automatiskt i kalkylbladet.
 
 1.  Starta den datakälla som skapat Excel-tillägg genom att klicka på **alternativ**-knappen (växelsymbol) och sedan markera kryssrutan **aktiverar design**.
@@ -96,8 +90,7 @@ Du kan använda designern för att justera att kolumnerna läggs till automatisk
 5. Gör ändringarna till datakällan genom att klicka på **uppdatering**. Klicka på **Klart** för att stänga designverktyget. 
 6. Om du har lagt till ett fält (kolumn) klickar du på **uppdatera** för att ta emot en uppdaterad uppsättning data.
 
-## [](https://powerapps.microsoft.com/enus/tutorials/dataplatforminteractiveexcel/#troubleshooting)Felsökning
-<a id="httpspowerappsmicrosoftcomenustutorialsdataplatforminteractiveexceltroubleshootingtroubleshooting" class="xliff"></a>
+## <a name="httpspowerappsmicrosoftcomenustutorialsdataplatforminteractiveexceltroubleshootingtroubleshooting"></a>[](https://powerapps.microsoft.com/enus/tutorials/dataplatforminteractiveexcel/#troubleshooting)Felsökning
 Det finns några problem som kan lösas genom några enkla steg.
 
 -   **Knappen Läs in appletar visas.** Om Excel-tillägget har knappen **Läs in appletar** efter inloggning är du troligen inte korrekt inloggad som användare. Kontrollera att rätt användarnamn visas i det övre högra hörnet av Excel-tillägget för att lösa problemet. Om ett felaktigt användarnamn visas, klickar du på den, loggar ut och loggar sedan in igen.

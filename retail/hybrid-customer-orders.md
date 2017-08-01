@@ -27,8 +27,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Hybridkundorder
-<a id="hybrid-customer-orders" class="xliff"></a>
+# <a name="hybrid-customer-orders"></a>Hybridkundorder
 
 [!include[banner](includes/banner.md)]
 
@@ -42,8 +41,7 @@ I Microsoft Dynamics 365 for Retail kan du välja att antingen leverera alla pro
 
 Om en vagnrad har valts och **Plocka valda**, **Skeppa valda** eller **Leverera valda** har markerats, kommer endast den specifika vagnraden att erhålla den leveransmetoden . I så fall fortsätter det underordnade åtgärdsflödet som vanligt. Om emellertid **Plocka valda**, **Skeppa valda** eller **Leverera valda** har valts utan att någon vagnrad har markerats, öppnas en ny sida med en lista över alla vagnrader. På denna skärm kan du välja flera olika rader samtidigt för inställning av leveransmetoden. När du använder denna metod för att välja rader, åsidosätts tidigare leveransmetod som har tilldelats raden.
 
-Se även
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Se även
 --------
 
 [Kundorderöversikt](customer-orders-overview.md)

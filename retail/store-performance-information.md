@@ -28,8 +28,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Analysera butiksresultat
-<a id="analyze-store-performance" class="xliff"></a>
+# <a name="analyze-store-performance"></a>Analysera butiksresultat
 
 [!include[banner](includes/banner.md)]
 

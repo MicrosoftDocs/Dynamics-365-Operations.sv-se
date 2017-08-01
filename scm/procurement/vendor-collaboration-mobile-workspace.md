@@ -26,8 +26,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Mobil arbetsyta för leverantörssamarbete
-<a id="vendor-collaboration-mobile-workspace" class="xliff"></a>
+# <a name="vendor-collaboration-mobile-workspace"></a>Mobil arbetsyta för leverantörssamarbete
 
 [!include[banner](../includes/banner.md)]
 
@@ -35,8 +34,7 @@ Det här avsnittet innehåller information om den mobila arbetsytan för **Lever
 
 Denna mobila arbetsyta är avsedd att användas med mobilappen Microsoft Dynamics 365 for Unified Operations.
 
-## Översikt
-<a id="overview" class="xliff"></a> 
+## <a name="overview"></a>Översikt 
 Den mobila arbetsytan **Leverantörssamarbete** håller leverantörer informerade om nya inköpsorder, så att de kan visa och svara på dem i webbklienten för Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
 
 >[!NOTE]
@@ -60,16 +58,13 @@ Med hjälp av den mobila arbetsytan **Leverantörssamarbete** kan en leverantör
 -   Visa uppgifter om kontaktpersonen som är registrerad för leverantörskontot. (Den här uppgiften kräver ytterligare en säkerhetsroll.)
 -   Visa information om en användarförfrågan som skickades av leverantören och följa statusen på densamma. (Den här uppgiften kräver ytterligare en säkerhetsroll.)
 
-## Förutsättningar
-<a id="prerequisites" class="xliff"></a>
+## <a name="prerequisites"></a>Förutsättningar
 Förutsättningarna varierar beroende på vilken version av Microsoft Dynamics 365 som har distribuerats inom organisationen.
 
-### Kraven om du använder Microsoft Dynamics 365 for Finance and Operations, Enterprise edition juli 2017 uppdatering
-<a id="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update" class="xliff"></a> 
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update"></a>Kraven om du använder Microsoft Dynamics 365 for Finance and Operations, Enterprise edition juli 2017 uppdatering 
 Om Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (juli-uppdateringen 2017) har implementerats för din organisation måste systemadministratören publicera den mobila arbetsytan **Leverantörssamarbete**. Instruktioner finns i [Publicera en mobil arbetsyta](/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace).
 
-### Krav om du använder Microsoft Dynamics 365 for Operations version 1611 med plattformsuppdatering 3 eller senare
-<a id="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later" class="xliff"></a>
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Krav om du använder Microsoft Dynamics 365 for Operations version 1611 med plattformsuppdatering 3 eller senare
 Om Microsoft Dynamics 365 for Operations version 1611 med plattformsuppdatering 3 eller senare har använts i organisationen måste systemadministratören uppfylla följande krav. 
 
 <table>
@@ -117,16 +112,14 @@ Om Microsoft Dynamics 365 for Operations version 1611 med plattformsuppdatering 
 </tbody>
 </table>
 
-## Hämta och installera mobilappen
-<a id="download-and-install-the-mobile-app" class="xliff"></a>
+## <a name="download-and-install-the-mobile-app"></a>Hämta och installera mobilappen
 
 Hämta och installera mobilappen Dynamics 365 for Unified Operations:
 
 -   [För Android-telefoner](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [För iPhones](https://go.microsoft.com/fwlink/?linkid=850663)
 
-## Logga in på mobilappen
-<a id="sign-in-to-the-mobile-app" class="xliff"></a>
+## <a name="sign-in-to-the-mobile-app"></a>Logga in på mobilappen
 1.  Starta appen i din mobila enhet.
 2.  Ange din webbadress för Microsoft Dynamics 365.
 4.  Första gången du loggar in uppmanas du att ange användarnamn och lösenord. Ange dina autentiseringsuppgifter.
@@ -134,32 +127,27 @@ Hämta och installera mobilappen Dynamics 365 for Unified Operations:
 
     [![Dra för att uppdatera](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
-## Använda den mobila arbetsytan för leverantörssamarbete
-<a id="use-the-vendor-collaboration-mobile-workspace" class="xliff"></a>
+## <a name="use-the-vendor-collaboration-mobile-workspace"></a>Använda den mobila arbetsytan för leverantörssamarbete
 När du väljer den mobila arbetsytan **Leverantörssamarbete** visas följande alternativ:
 
 ![Mobil arbetsyta för leverantörssamarbete](./media/vendor-collaboration-mobile-app.png)
 
 Arbetsytan **Leverantörssamarbete** omfattar följande sidor:
 
-### Kontakter
-<a id="contacts" class="xliff"></a>
+### <a name="contacts"></a>Kontakter
 Sidan **kontakter** låter dig visa alla kontakter som har ställts in för leverantörskontot. Den visar kontaktpersonens namn, primär e-postadress och användaralias, om kontaktpersonen har ett alias. Sidan visar också om kontaktpersonens användarkonto är aktivt. När du väljer en kontakt visas kontaktinformation såsom juridiska personer som personen är kontaktperson för. Du kan också visa kontaktinformation, till exempel ett telefonnummer eller en alternativ e-postadress.
 
-### Användarförfrågningar
-<a id="user-requests" class="xliff"></a>
+### <a name="user-requests"></a>Användarförfrågningar
 Sidan **Användarförfrågningar** låter dig se alla användarförfrågningar som du har skickat in via webbgränssnittet för leverantörssamarbete. Du kan också visa status för dessa förfrågningar. När du väljer en användarförfrågan kan du se vad som förfrågades, lägga till eller inaktivera en användare, ändra säkerhetsinställningar och se vilka säkerhetsroller som krävdes för användaren.
 
-### Inköpsorder redo för granskning
-<a id="purchase-orders-ready-for-review" class="xliff"></a>
+### <a name="purchase-orders-ready-for-review"></a>Inköpsorder redo för granskning
 Sidan **Inköpsorder klara för granskning** låter dig se alla inköpsorder som har skickats av kunden, men som inte har besvarats ännu. Du kan visa utvald information om ordern, till exempel vilka produkter som har begärts och när de produkterna ska levereras. Även prisuppgifter finns tillgängliga, beroende på konfigurationen av leverantören.
 
 Du kan se om inköpsordern har anteckningar och bifogade filer. För att öppna anteckningar och bifogade filer måste du dock använda webbgränssnittet för leverantörssamarbete i webbklienten. Välj **Inköpsorderrad** för att visa alla rader tillsammans med information om dem. För varje rad visar en indikator om det finns anteckningar eller bilagor, eller om leveransadressen är en annan än den som anges i rubriken.
 
 Om du vill svara på inköpsordern måste du använda webbgränssnittet för leverantörssamarbete i webbklienten.
 
-### Väntar på kundåtgärd
-<a id="awaiting-customer-action" class="xliff"></a>
+### <a name="awaiting-customer-action"></a>Väntar på kundåtgärd
 Sidan **Inväntar kundåtgärd** låter dig söka efter inköpsorder som du, eller någon annan på företaget som har åtkomst till leverantörssamarbete, har svarat på. Inköpsorder visas bara i listan om kunden måste du vidta någon av följande åtgärder på inköpsordern:
 
 -   Om inköpsordern har avvisats måste kunden antingen uppdatera eller avbryta den ursprungliga ordern och sedan skicka den igen. När inköpsordern har skickats igen försvinner den från sidan **Inväntar kundåtgärd**.
@@ -182,7 +170,6 @@ Observera att fältet **Levereras** ställs in på antingen **Ja** eller **Nej**
 
 All ändringar som har gjorts av responsen på orderraden visas. Dock visas inte överförda anteckningar och bifogade filer. För att visa anteckningar och bifogade filer måste du använda webbgränssnittet för leverantörssamarbete i webbklienten.
 
-### Öppna bekräftade order
-<a id="open-confirmed-orders" class="xliff"></a>
+### <a name="open-confirmed-orders"></a>Öppna bekräftade order
 När inköpsordern har bekräftats av kunden (dvs. när statusen för inköpsordern har ändrats till **Bekräftad**) visas den i den öppna bekräftade ordern. Den finns kvar i listan tills den registreras som mottagen av kunden.
 

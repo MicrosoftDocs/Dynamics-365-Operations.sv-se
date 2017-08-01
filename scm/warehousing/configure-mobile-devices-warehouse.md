@@ -26,8 +26,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Konfigurera mobila enheter för lagerarbete
-<a id="set-up-mobile-devices-for-warehouse-work" class="xliff"></a>
+# <a name="set-up-mobile-devices-for-warehouse-work"></a>Konfigurera mobila enheter för lagerarbete
 
 [!include[banner](../includes/banner.md)]
 
@@ -42,8 +41,7 @@ Den här artikeln beskriver hur du konfigurerar menyalternativ som lagerarbetare
 
 För att skapa ett menyalternativ för en aktivitet eller en förfrågan, ange fältet **Läge** som **Indirekt**. En lista alternativen för **Aktivitetskod** blir sedan tillgänglig, så att du kan välja typ av fråga eller aktivitet som menyalternativet avser. För att skapa ett menyalternativ för att generera lagerarbete, ange fältet **Läge** som **Arbete**. En lista över alternativen för **Skapandeprocess för arbete** blir sedan tillgänglig. För att skapa ett menyalternativ för att bearbeta befintliga lagerarbete konfigurerar du fältet **Metod** till **Arbete** och sedan anger du alternativet **Använd befintligt arbete** som **Ja**. **Obs!** Beroende på det läge som du väljer för menyalternativet och om menyalternativet används för att utföra befintligt arbete, kan det finnas ytterligare fält tillgängliga för menyalternativet. Se avsnittet ”Ytterligare menyalternativ" senare i det här avsnittet för information om ytterligare fältval.
 
-## Konfigurera menyalternativ för aktiviteter och förfrågningar
-<a id="configure-menu-items-for-activities-and-inquiries" class="xliff"></a>
+## <a name="configure-menu-items-for-activities-and-inquiries"></a>Konfigurera menyalternativ för aktiviteter och förfrågningar
 Om fältet **Metod** för ett menyalternativ anges som **Indirekt**, kan du skapa ett menyalternativ för att utföra en allmän aktivitet eller förfrågning som inte skapar arbete. Till exempel nyutskrift av registreringsskyltar och en förfrågan om artiklar på en plats. I följande tabell finns de alternativ som är tillgängliga.
 
 | Alternativ                      | Beskrivning                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
@@ -66,8 +64,7 @@ Om fältet **Metod** för ett menyalternativ anges som **Indirekt**, kan du skap
 | Ändra batchdisposition    | Tillåt att en anställd anger en batchdispositionskod för en artikel och en batch. Detta val uppdaterar den dispositionskod som anges för batchen.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 | Visa lista över öppet arbete      | Visa en lista över tillgängligt arbete till en viss användare. Användaren kan sedan välja arbetet som ska utföras och styrs mot det. Den här listan är avsedd att visas på pekplattor med skärmstorlekar på 7 tum eller mer. När du väljer det här alternativet kommer menyalternativen **Redigera fråga** och **Fältlista** blir tillgängliga. Sidan **Redigera fråga** låter dig ställa in kriterier för det arbete som visas i listan. Sidan **Fältlista** låter dig välja vilka fält som visas i arbetslistan. Du kan till exempel minska antalet fält som visas så att användaren snabbare kan välja den lämpligaste arbetsuppgiften. På snabbfliken **Allmän** i fältet **Poster per sida** kan du också välja hur många arbetsposter per sida som ska visas. Om alternativet **Tillåt användare att filtrera arbete efter transaktionstyp** är markerat, kommer arbetslistan att inkludera en **Filtrera arbete**-kontroll i arbetsuppgiftslistan, som låter användaren filtrera per transaktionstyp. I arbetslistan kommer användaren endast att se arbete som de har behörighet till. Du måste kontrollera att användarna har behörighet för en eller flera användarriktade menykommandon som stöder de specifika arbetsklasstyperna som de ska ha åtkomst till. Behörigheter kontrolleras när en användare försöker utföra arbete i listan. |
 
-## Ställ in menyalternativ för att skapa arbete för en annan arbetare eller process
-<a id="configure-menu-items-to-create-work-for-another-worker-or-process" class="xliff"></a>
+## <a name="configure-menu-items-to-create-work-for-another-worker-or-process"></a>Ställ in menyalternativ för att skapa arbete för en annan arbetare eller process
 Du kan ställa in en menykommando som skapar arbete för en annan anställd, efter en ursprunglig åtgärden har utförts på mobila enheten. När till exempel en arbetstagare använder en mobil enhet för att ta emotå en artikel, skapas inlagrat arbete för en annan arbetstagare. Om du vill ställa in ett menyalternativ som skapar arbete, välj sidan **Menyalternativ på mobil enhet** i fältet **Metod** och sedan **Arbete**. I följande register arrangeras alternativen i fältet **Process för att skapa arbete** efter arbetsordertyp.
 
 <table>
@@ -196,8 +193,7 @@ Du kan ställa in en menykommando som skapar arbete för en annan anställd, eft
 </tbody>
 </table>
 
-## Ställa in menyalternativ för att bearbeta befintligt arbete
-<a id="configure-menu-items-to-process-existing-work" class="xliff"></a>
+## <a name="configure-menu-items-to-process-existing-work"></a>Ställa in menyalternativ för att bearbeta befintligt arbete
 Förutom inställningar av menyalternativ som skapar lagerställearbete, kan du ställa in menyalternativ till processarbete som redan har skapats. Ställ in fältet **Metod** till **Arbete** och välj alternativet **Använd befintligt arbete**. Vissa ytterligare alternativ blir sedan tillgängliga på fliken **Allmänt**. Du kan styra åtkomsten till menyalternativet genom att tilldela en eller flera klasser för arbete på snabbfliken **Arbetsklass**. Arbetsklasserna definierar det arbete som menyalternativet kan bearbeta. Arbetsklassen kan också användas för att bevilja åtkomst till specifika användarroller eller för separat bearbetning för andra typer av operationer. I följande tabell beskriver de alternativ som är tillgängliga.
 
 <table>
@@ -256,8 +252,7 @@ Det här alternativet är praktiskt när t.ex. flera lastpallar mellanlagras fö
 </tbody>
 </table>
 
-## Ytterligare menyalternativ
-<a id="additional-menu-item-options" class="xliff"></a>
+## <a name="additional-menu-item-options"></a>Ytterligare menyalternativ
 Det finns ytterligare menyalternativ tillgängliga på sidan **Menyalternativ på mobil enhet** . Alternativen varierar beroende på processen som du konfigurerar menyalternativen för. 
 
 I följande register beskrivs dessa alternativ.
@@ -394,8 +389,7 @@ I följande register beskrivs dessa alternativ.
 </tbody>
 </table>
 
-## Begär att arbetare ska bekräfta produkten, platsen eller kvantiteten när de plockar artiklar
-<a id="require-workers-to-confirm-the-product-location-or-quantity-when-they-pick-items" class="xliff"></a>
+## <a name="require-workers-to-confirm-the-product-location-or-quantity-when-they-pick-items"></a>Begär att arbetare ska bekräfta produkten, platsen eller kvantiteten när de plockar artiklar
 Du kan ställa in arbetsbekräftelser som kräver en arbetare att använda en mobil enhet för att registrera platsen eller kvantitet, när han eller hon utför arbete på lagerstället. Arbetsbekräftelser hjälper till att garantera att arbetaren är på rätt plats eller hanterar rätt kvantitet av artiklar. Du kan också aktivera Microsoft Dynamics 365 for Finance and Operations om du automatiskt vill bekräfta arbetarens registrering. Om du aktiverar automatisk bekräftelse, kan du inte också kräva bekräftelser för plats och kvantitet. Arbetsbekräftelser innehåller också produkter och produktvarianter. Du kan registrera bekräftelser genom att skanna en streckkod. Om du bekräfta produkter och produktvarianter måste du ange ett ID för produkten eller produktvarianten. Detta ID kan vara ett produkt-ID, ett produktsöknings-ID, ett externt ID, en GTIN eller en streckkod. När du har angett ID eller skannat streckkoden visas dimensionerna för produktvarianten i den mobila enheten. 
 
 I tabellen nedan beskrivs de olika arbetstyperna som du kan använda arbetsbekräftelser med.
@@ -414,8 +408,7 @@ I tabellen nedan beskrivs de olika arbetstyperna som du kan använda arbetsbekr�
 
 **Obs!** Det går bara att begäran produktbekräftelse för plock- och placeringsarbetstyper.
 
-Se även
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Se även
 --------
 
 [Visningsinställningar för mobil lagerställeenhet](change-warehouse-mobile-device-displays.md)

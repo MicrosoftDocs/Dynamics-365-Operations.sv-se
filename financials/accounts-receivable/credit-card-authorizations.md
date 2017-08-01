@@ -27,8 +27,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Kreditkortinställning, auktorisering och registrering
-<a id="credit-card-setup-authorization-and-capture" class="xliff"></a>
+# <a name="credit-card-setup-authorization-and-capture"></a>Kreditkortinställning, auktorisering och registrering
 
 [!include[banner](../includes/banner.md)]
 
@@ -37,8 +36,7 @@ ms.lasthandoff: 06/13/2017
 
 Den här artikeln innehåller en översikt över kreditkortskontroll i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Här finns information om hur du ställer in en betalningstjänst, lägger till ett kreditkort till en försäljningsorder och annullerar en auktorisering.
 
-Ställa in kreditkortbetalningtjänsten
-<a id="setting-up-the-credit-card-payment-service" class="xliff"></a>
+<a name="setting-up-the-credit-card-payment-service"></a>Ställa in kreditkortbetalningtjänsten
 ------------------------------------------
 
 Om du vill använda kreditkort måste du ställa in och aktivera en betalning på sidan Betalningtjänst. En betalningstjänst fungerar som en brygga mellan din juridiska person och banken som bearbetar en kunds kreditkortavgifter. Du måste arbeta med en kreditkortleverantör, som anges i fältet Betalningkoppling och ställer in ett konto med den leverantören. Du måste sedan ställa in andra alternativ på sidan Betalningtjänst, ställa in kreditkorttyper för American Express Discover och MasterCard på sian Kreditkorttyp och aktivera leverantören som standardleverantören. Du måste även följa stegen för att slutföra inställningarna:
@@ -46,8 +44,7 @@ Om du vill använda kreditkort måste du ställa in och aktivera en betalning p�
 -   På sidan Betalningsvillkor ställer du in betalningsvillkor för kreditkort. I fältet Betalningstyp väljer du Kreditkort.
 -   På sidan Kundkreditokort anger du kreditkortsinformation för kunder.
 
-## Lägg till ett nytt kreditkort
-<a id="adding-a-new-credit-card" class="xliff"></a>
+## <a name="adding-a-new-credit-card"></a>Lägg till ett nytt kreditkort
 Du kan skapa nya kreditkortsposter på sidan Kunder, genom att använda Kund, Inställning, Kreditkort. Du kan också skapa kreditkortsposter när du registrerar försäljningsorder på sidan Försäljningsorder, genom att använda Hantera, Kund, Kreditkort, Register.
 Lägg till ett kreditkort till en försäljningsorder
 -------------------------------------
@@ -58,13 +55,11 @@ Kreditkortskontroll
 
 När ett kreditkort auktoriseras verifieras kortnumret och kortinnehavarens namn, och det tillgängliga kreditsaldot bekräftas. Du kan även verifiera cvv-kod och kortinnehavarens adress verifieras. Kundens tillgängliga kreditsaldo minskas med beloppet på fakturan. Betaltjänsten skickar information om att kreditkortet har godkänts eller avvisats. När en försäljningsorder faktureras, debiteras kreditkortet (samlats in) med fakturabeloppet.
 
-### Kortverifieringsnummer
-<a id="card-verification-value" class="xliff"></a>
+### <a name="card-verification-value"></a>Kortverifieringsnummer
 
 Du kan kräva cvv-kod, som ibland refereras till som kortets säkerhetkod. För American Express är detta ett fyrsiffrigt värde. För Discover, MasterCard och Visa är det ett ensiffrigt värde.
 
-### Adressverifiering
-<a id="address-verification" class="xliff"></a>
+### <a name="address-verification"></a>Adressverifiering
 
 Information om adressverifieringen skickas alltid till betalningsleverantören. Du kan bestämma hur mycket information som krävs för att en transaktion ska godkännas. Se till att kontrollera med din leverantör för att avgöra om denne godkänner denna information. Här följer alternativen för adressverifiering:
 -   **Acceptera alltid transaktionen** - Acceptera transaktionen oavsett adressverifieringresultat.
@@ -72,19 +67,16 @@ Information om adressverifieringen skickas alltid till betalningsleverantören. 
 -   **Faktureringsadress** – Jämför kortinnehavarens namn och faktureringsadress från transaktionen med kreditkortsföretagets information.
 -   **Postnummer för fakturering** – Jämför kortinnehavarens namn och faktureringsadress och postnummer från transaktionen med kreditkortsföretagets information.
 
-## Datasupport
-<a id="data-support" class="xliff"></a>
+## <a name="data-support"></a>Datasupport
 För respektive kreditkortstyp som stöds kan du ange datasupportnivån. Denna nivå kontrollerar hur mycket information om en transaktion överförs till betalningtjänsten. Se till att kontrollera med leverantören för att avgöra om den kan ange den här informationen. Här följer alternativen för datasupportnivån:
 -   **Nivå 1** – Överför transaktionsdatum, transaktionsbelopp och beskrivning.
 -   **Nivå 2** – Överför all nivå 1-information, plus leverans- och handelsadresser och momsinformation.
 -   **Nivå 3** – Överför nivå 2-information, plus information om orderrad.
 
-## Delbetalningar
-<a id="partial-payments" class="xliff"></a>
+## <a name="partial-payments"></a>Delbetalningar
 Om du levererar en delorder kommer beloppet för denna del av ordern att regitreras; tillståndet, som gällde beloppet för hela ordern, stängs. Ett nytt tillstånd skickas sedan för det återstående beloppet för den order som inte har levererats.
 
-## Annullera en auktorisering 
-<a id="voiding-an-authorization" class="xliff"></a>
+## <a name="voiding-an-authorization"></a>Annullera en auktorisering 
 Om du vill annullera en kreditkortskontroll kan du ändra betalningsmetoden till en annan metod som inte har någon typ av kreditkort.
 
 

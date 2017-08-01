@@ -26,16 +26,14 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Mobil arbetsyta för utgiftshantering
-<a id="expense-management-mobile-workspace" class="xliff"></a>
+# <a name="expense-management-mobile-workspace"></a>Mobil arbetsyta för utgiftshantering
 
 [!include[banner](../includes/banner.md)]
 
 
 Det här avsnittet innehåller information om den mobila arbetsytan för utgiftshantering som är tillgänglig för mobilappen Microsoft Dynamics 365 for Finance and Operations. Den här arbetsytan låter användarna hämta och skicka ett kvitto så att de kan bifogas till en utgiftsrapport senare. Den mobila arbetsytan låter även användare snabbt skapa en utgiftsrad med en kopplad inleverans.
 
-Översikt över Mobil arbetsyta för utgiftshantering
-<a id="overview-of-the-expense-management-mobile-workspace" class="xliff"></a>
+<a name="overview-of-the-expense-management-mobile-workspace"></a>Översikt över Mobil arbetsyta för utgiftshantering
 ---------------------------------------------------
 
 Många organisationer kräver att en kopia av ett kvitto ska kopplas till en reserelaterad eller affärsrelaterad utgiftsrapport som medarbetaren skickar till dig. Den mobila arbetsytan **utgiftshantering** låter användare snabbt skapa nya utgiftsrader med ett bifogad foto på ett kvitto på den mobila enheten efter eget val. Användare kan även fånga en bild av en inleverans och sedan koppla den till en utgiftsrapport. Den mobila arbetsytan **utgiftshantering** används för att:
@@ -46,8 +44,7 @@ Många organisationer kräver att en kopia av ett kvitto ska kopplas till en res
 
 De andra delarna i det här avsnittet innehåller information om hur du implementerar och använder den mobila arbetsytan **utgiftshantering**.
 
-## Förutsättningar
-<a id="prerequisites" class="xliff"></a>
+## <a name="prerequisites"></a>Förutsättningar
 Innan du kan implementera **Mobil arbetsyta för utgiftshantering** ska du se till att systemadministratören har slutfört följande förutsättningar.
 
 <table>
@@ -93,15 +90,13 @@ Innan du kan implementera **Mobil arbetsyta för utgiftshantering** ska du se ti
 </tbody>
 </table>
 
-## Hämta och installera mobilappen Finance and Operations
-<a id="download-and-install-the-finance-and-operations-mobile-app" class="xliff"></a>
+## <a name="download-and-install-the-finance-and-operations-mobile-app"></a>Hämta och installera mobilappen Finance and Operations
 Hämta och installera mobilappen Finance and Operations från din mobilappsbutik.
 
 -   För Android - [Finance and Operations i Google Play Store](https://play.google.com/store/apps/details?id=com.microsoft.dynamics365.operations.mobile)
 -   För iPhone: [Finance and Operations iTunes apps store](https://itunes.apple.com/us/app/dynamics-365-for-operations/id1180836730?mt=8)
 
-## Logga in på mobilappen Finance and Operations
-<a id="sign-in-to-the-finance-and-operations-mobile-app" class="xliff"></a>
+## <a name="sign-in-to-the-finance-and-operations-mobile-app"></a>Logga in på mobilappen Finance and Operations
 1.  Starta appen i din mobila enhet.
 2.  Ange webbadressen för Finance and Operations
 3.  Ange ett företag att logga in på. Ange till exempel **USMF**.
@@ -110,8 +105,7 @@ Hämta och installera mobilappen Finance and Operations från din mobilappsbutik
 
 [![Dra för att uppdatera](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
-## Skapa en inleverans med hjälp av mobil arbetsyta för utgiftshantering
-<a id="capture-a-receipt-by-using-the-expense-management-mobile-workspace" class="xliff"></a>
+## <a name="capture-a-receipt-by-using-the-expense-management-mobile-workspace"></a>Skapa en inleverans med hjälp av mobil arbetsyta för utgiftshantering
 1.  På din mobila enhet väljer du arbetsytan **Utgiftshantering**.
 2.  Välj **Samla in kvitto**.
 3.  Välj **ta foto** eller **Välj bild**.
@@ -125,8 +119,7 @@ Hämta och installera mobilappen Finance and Operations från din mobilappsbutik
 
 5.  Välj **Klar**.
 
-## Snabb utgiftspost med mobil arbetsyta för utgiftshantering
-<a id="quick-expense-entry-by-using-the-expense-management-mobile-workspace" class="xliff"></a>
+## <a name="quick-expense-entry-by-using-the-expense-management-mobile-workspace"></a>Snabb utgiftspost med mobil arbetsyta för utgiftshantering
 1.  På din mobila enhet väljer du arbetsytan **Utgiftshantering**.
 2.  Välj **snabb utgiftspost**.
 3.  Välj kategori för utgiften. Du kan se en lista över de utgiftskategorier som laddas i ditt program för användning offline. Upp till 50 objekt laddas som standard, men en utvecklare kan ändra detta antal. Mer information bör utvecklare finns [Den mobila plattformen för Finance and Operations](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform). Om kategorin inte finns i listan väljer du **Sök** för att utföra en onlinesökning i Finance and Operations. Sök efter kostnadskategori eller växla om du vill söka efter utgiftstyp.

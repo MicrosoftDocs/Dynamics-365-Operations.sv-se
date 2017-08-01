@@ -27,8 +27,7 @@ ms.lasthandoff: 06/19/2017
 
 ---
 
-# Ställa in HR parametrar över juridiska personer
-<a id="set-up-hr-parameters-across-legal-entities" class="xliff"></a>
+# <a name="set-up-hr-parameters-across-legal-entities"></a>Ställa in HR parametrar över juridiska personer
 
 [!include[banner](includes/banner.md)]
 
@@ -39,12 +38,10 @@ Vissa typer av poster, såsom läge, delas mellan företag. För dessa poster m�
 
 På **mänskliga resurser delade parametrar sidan** , parametrar är indelade i områden, baserade på deras funktionsduglighet. 
 
-### Tidigare utgivna funktioner
-<a id="previously-released-functionality" class="xliff"></a>
+### <a name="previously-released-functionality"></a>Tidigare utgivna funktioner
 På **fliken identifiering** , måste du välja id typer som representerar ID-nummer som finns på sidan. Du måste ställa in identifieringtyper innan du kan ange identifieringsinformation för anställd. Information om personnummer, försäkringsnummer, Alien-ID-nummer och personliga ID-kod bibehålls på **identifiering typ** page. För att definiera en ny typ av identifiering eller granska listan över befintliga typer, klicka på **Mänskliga resurser** &gt; **Länkflik** &gt; **Inställningar** &gt; **Identifieringstyper**. Du kan ange en enkel kod och beskrivning. 
 
-### Om du använder Dynamics 365 for Talent
-<a id="if-youre-using-dynamics-365-for-talent" class="xliff"></a>
+### <a name="if-youre-using-dynamics-365-for-talent"></a>Om du använder Dynamics 365 for Talent
 På **fliken identifiering** , måste du välja id typer som representerar ID-nummer som finns på sidan. Du måste ställa in identifieringtyper innan du kan ange identifieringsinformation för anställd. Information om personnummer, försäkringsnummer, Alien-ID-nummer och personliga ID-kod bibehålls på **identifiering typ** page. För att definiera en ny typ av identifiering eller granska listan över befintliga typer, klicka på **Mänskliga resurser** &gt; **Inställningar** &gt; **Identifieringstyper**. Du kan ange en enkel kod och beskrivning. 
 
 På fliken **Nummersekvenser** kan du välja antalet sekvenser som används för följande poster: Anställningsnummer, befattning, användarens begärande-ID, 1-9 dokument, sökande, diskussion, förmåns-ID och personalåtgärd (om detta är aktiverat). För att bibehålla nummersekvens referenser och koder, använd **nummersekvens** listsidan. För att hitta denna sida, använd sidan sökfunktionen. 
@@ -55,8 +52,7 @@ På **fliken positioner** , ange om nya positioner som är tillgängliga för ti
 -   **Aldrig** – Du kan inte tilldela arbetstagare till nya positioner när positioner skapas. Om du väljer det här alternativet, måste du öppna **läge** sida för varje ny position när den blir tillgänglig, och sedan på **fliken Allmänt** anger du är **tillgängliga för tilldelning** datum att arbetstagaren uppdrag.
 
 
-Se även
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Se även
 --------
 
 [Ställa in företagsspecifika HR parametrar](set-up-company-specific-hr-parameters.md)

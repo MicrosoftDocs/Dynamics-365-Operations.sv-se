@@ -28,8 +28,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Prisjusteringar och rabatter
-<a id="price-adjustments-and-discounts" class="xliff"></a>
+# <a name="price-adjustments-and-discounts"></a>Prisjusteringar och rabatter
 
 [!include[banner](includes/banner.md)]
 
@@ -38,8 +37,7 @@ Den här artikeln innehåller information om prisjusteringar och rabatter i Micr
 
 I Dynamics 365 for Retail kan du göra prisjusteringar för produkter och även ställa in rabatter som tillämpas på en radartikel eller transaktion i kassan (POS), på en försäljningsorder för kundtjänst eller på en onlineorder. Både prisjusteringar och rabatter kan länkas till prisgrupper. För både prisjusteringar och rabatter kan du ange ett enskilt datum för startdatum och slutdatum eller en återkommande period, en rabatt kod och eventuella ytterligare attribut. Prisjusteringar och rabatter kan användas för produkter, varianter eller kategorier. Om mer än en rabatt gäller för en produkt, kan en kund ta emot antingen en av rabatterna eller en kombinerad rabatt, beroende på konfigurationen av rabatten. Dynamics 365 for Retail använder automatiskt rabatten eller en kombination av rabatter som ger kunden det bästa priset. Kontrollera att du bekräftar att prisgruppen tilldelas de korrekta kanalerna, katalogerna, anknytningarna eller bonusprogrammen som du vill att rabatten ska gälla för när du konfigurerar en prisjustering eller rabatt. Om du vill skapa rabatt-ID automatiskt kan du ställa in nummerserier på sidan **Butiksparametrar** innan du definierar en ny prisjustering eller rabatt. **Obs!** Du kan ta bort en prisjustering eller rabatt. Statistisk information går dock förlorad.
 
-### Typer av rabatter
-<a id="types-of-discounts" class="xliff"></a>
+### <a name="types-of-discounts"></a>Typer av rabatter
 
 Det finns fyra typer av butiksrabatter:
 

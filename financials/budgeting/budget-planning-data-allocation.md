@@ -27,8 +27,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Dataallokering för budgetplanering
-<a id="budget-planning-data-allocation" class="xliff"></a>
+# <a name="budget-planning-data-allocation"></a>Dataallokering för budgetplanering
 
 [!include[banner](../includes/banner.md)]
 
@@ -37,8 +36,7 @@ Det här avsnittet beskriver de olika allokeringsmetoder som är tillgängliga i
 
 Du kan fördela data i en budgetplan på många sätt för att exakt att beskriva de projekterade beloppen.
 
-## Allokeringsmetoder
-<a id="allocation-methods" class="xliff"></a>
+## <a name="allocation-methods"></a>Allokeringsmetoder
 Tre allokeringsmetoder (Allokera över perioder, Allokera över dimensioner Använd allokeringsregler för redovisning kan skapa budgetplanrader som baseras på rader i samma budgetplan. Tre andra metoder (Aggregera, Distribuera och Kopiera från budgetplan) kan skapa budgetplanrader i andra budgetplaner. För alla sex allokeringmetoder anger du målscenariot. Målscenariot kan antingen vara samma som källscenariot eller skilja sig från källscenariot. Dessutom kan du ange om nya rader bifogas till budgetplanen eller om de aktuella raderna i budgetplanen ska ersättas.
 
 [![AllocateAcrossPeriods](./media/allocateacrossperiods-300x259.png)](./media/allocateacrossperiods.png)
@@ -59,16 +57,14 @@ Tre allokeringsmetoder (Allokera över perioder, Allokera över dimensioner Anv�
 [![CopyFromBudgetPlan](./media/copyfrombudgetplan-187x300.png)](./media/copyfrombudgetplan.png)
 **Kopiera från budgetplan** – På samma sätt som med metoden Fördela allokering skapas budgetplanrader i målet baserat på rader i en relaterad budgetplan. Men för den här metoden behöver inte källbudgetplanen vara den överordnade utan kan vara på en högre nivå i budgetplanshierarkin. Denna allokeringsmetod är användbar om konsoliderade belopp ursprungligen budgeteras på en mycket högre nivå och måste överföras till en lägre nivå i organisationen för detaljerad granskning och justering, innan de kan få överordnat godkännande.          
 
-## Använda allokeringsmetoder i en budgetplan
-<a id="using-allocation-methods-in-a-budget-plan" class="xliff"></a>
+## <a name="using-allocation-methods-in-a-budget-plan"></a>Använda allokeringsmetoder i en budgetplan
 För att utföra allokeringar på sidan Budgetplan, välj raderna som ska allokeras och klicka sedan på **Allokera budget**
 
 [![AllocateBudgetButton](./media/allocatebudgetbutton-300x84.png)](./media/allocatebudgetbutton.png) 
 
 Sedan väljer du en allokeringsmetod. De återstående fälten ställs sedan in, baserat på den metod som du har valt. Fälten inkluderar källa och mål för budgetplanen och ett alternativ som låter dig multiplicera källan för en angiven faktor när målbeloppen skapas, om du vill förenkla bulkjustering. Du kan även ange alternativet **Bifoga till plan**. Välj **Nej** om du vill ersätta befintliga budgetplanrader eller välj **Ja** för att behålla de befintliga budgetplanraderna och för att lägga till nya rader för de allokerade beloppen.
 
-## Automatisera allokering under ett arbetsflöde
-<a id="automating-allocations-during-a-workflow" class="xliff"></a>
+## <a name="automating-allocations-during-a-workflow"></a>Automatisera allokering under ett arbetsflöde
 En kraftfull funktion låter allokeringar utföras automatiskt som en del av en budgetplaneringsarbetsflöde. Som en budgetplan flyttas genom sin arbetsflödet, kan automatiska uppgifter aktivera en allokering vid en specifik budgetplaneringsfas. 
 
 Om du vill ställa in automatiserad allokering måste du först skapa ett allokeringsschema på sidan **Budgetplaneringskonfiguration**. Allokeringsschemat definierar den allokeringsmetod som ska användas när den automatiserade allokeringen körs och värdena i de olika allokeringsalternativen (se det tidigare avsnittet för beskrivningar). 

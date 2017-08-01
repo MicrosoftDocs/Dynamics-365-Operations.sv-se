@@ -22,15 +22,13 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Power BI-innehåll för produktionsprestanda
-<a id="production-performance-power-bi-content" class="xliff"></a>
+# <a name="production-performance-power-bi-content"></a>Power BI-innehåll för produktionsprestanda
 
 [!include[banner](../includes/banner.md)]
 
 Det här avsnittet beskriver vad som ingår i Microsoft Power BI-innehållet för **Produktionsprestanda**. Det förklarar hur du öppnar Power BI-rapporter, och ger information om den datamodell och de enheter som användes för att skapa innehållet.
 
-## Översikt
-<a id="overview" class="xliff"></a>
+## <a name="overview"></a>Översikt
 
 Power BI-innehållet för **Produktionsprestanda** är avsett för produktionschefer eller personer i organisationen som är ansvariga för produktionskontroll.
 
@@ -42,12 +40,10 @@ Power BI-innehållet låter dig även analysera produktionsavvikelser. Produktio
 
 Den **Produktionsprestanda** som Power BI-innehållet omfattar inkluderar data som har hämtats från produktionsorder och batchorder. Rapporterna innehåller inte data som är relaterade till kanban-produktioner.
 
-## Åtkomst till Power BI-innehåll
-<a id="accessing-the-power-bi-content" class="xliff"></a>
+## <a name="accessing-the-power-bi-content"></a>Åtkomst till Power BI-innehåll
 Om du använder Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, uppdatering juli 2017 visas Power BI-innehållet **Lagerställeprestanda** på sidan **Produktionsprestanda** (**Produktionsstyrning** > **Förfrågningar och rapporter** > **Produktionsprestandaanalyser** > **Produktionsprestanda**). 
 
-## Mått som ingår i Power BI-innehållet
-<a id="metrics-that-are-included-in-the-power-bi-content" class="xliff"></a>
+## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mått som ingår i Power BI-innehållet
 
 Power BI-innehållet **Produktionsprestanda** omfattar en uppsättning rapportsidor. Sidorna består av en uppsättning mått som visualiseras som diagram, brickor och tabeller.
 
@@ -62,8 +58,7 @@ Följande register ger en översikt över visualiseringar som ingår.
 | Feltrend efter resurs                  | Defektgrad (ppm) efter processad kvantitet | |
 | Produktionsavvikelser för kostnadsberäkning av jobborder | <ul><li>Produktionsavvikelse efter datum och kostnadsgruppstyp</li><li>Produktionsavvikelse efter plats och kostnadsgruppstyp</li><li>Topp 10-produkter med negativ produktionsavvikelse</li><li>Topp 10-produkter med produktionsavvikelse efter resurs</li></ul> | <ul><li>Realiserad kostnad</li><li>Produktionsavvikelse</li><li>Produktionsavvikelse i procent</li></ul> |
 
-## Utöka Power BI-innehåll
-<a id="extending-the-power-bi-content" class="xliff"></a>
+## <a name="extending-the-power-bi-content"></a>Utöka Power BI-innehåll
 Genom att använda innehållspaket som är tillgängliga i Microsoft Dynamics Lifecycle Services (LCS) kan du ge bra analyser till människor som inte är inloggade i Microsoft Dynamics 365. Du kan ändra dessa innehållspaket så att de innehåller andra rapporter och modeller och publicera innehållspaket till din Power BI.com-innehavare för analys.
 
 Du hittar Power BI-innehållet **Produktionsprestanda** i biblioteket Gemensamma tillgångar i LCS. Mer information om hur du laddar ned innehållspaket och använder det i din organisation finns i [Power BI-innehåll i LCS från Microsoft och dina partner](power-bi-content-microsoft-partners.md). Om du vill se en demonstration som visar hur du implementerar Power BI-innehållet, se [Power BI-innehåll från Microsoft och dina samarbetspartners i Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office mix.
@@ -73,8 +68,7 @@ Hämta innehållet för **Produktionsprestanda** som avser versionen av Dynamics
 > [!NOTE]
 > Om du använder Microsoft Dynamics 365 for Operations version 1611 krävs KB 4011327 för detta Power BI-innehåll. När du loggar in på LCS får du åtkomst till KB här: https://fix.lcs.dynamics.com/issue/results/?q=kb4011327.
 
-## Förstå datamodellen och enheterna
-<a id="understanding-the-data-model-and-entities" class="xliff"></a>
+## <a name="understanding-the-data-model-and-entities"></a>Förstå datamodellen och enheterna
 
 Följande data används för att fylla i rapportsidorna Power Bi-innehållet **Produktionsprestanda**. Informationen visas som sammansatta mått som mellanlagras i Enhetslagring. Enhetslagring är en Microsoft SQL Server-databas som är optimerad för analys. Mer information om enhetslagring finns i [Power BI-integration med enhetslagring](power-bi-integration-entity-store.md).
 
@@ -144,8 +138,7 @@ Följande tabell visar nyckeldimensionerna som används som filter för att dela
 | Resurser                 | Resurs-ID, resursnamn, resurstyp och resursgrupp |
 | Produkter                  | Produktnummer, produktnamn, artikel-ID och artikelgrupp         |
 
-## Ytterligare resurser
-<a id="additional-resources" class="xliff"></a>
+## <a name="additional-resources"></a>Ytterligare resurser
 
 Nedan följer några användbara länkar som är relaterade till enheter och till att skapa innehåll för Power BI:
 

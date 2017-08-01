@@ -26,8 +26,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Mobil arbetsyta för kostnadskontroll
-<a id="cost-controlling-mobile-workspace" class="xliff"></a>
+# <a name="cost-controlling-mobile-workspace"></a>Mobil arbetsyta för kostnadskontroll
 
 [!include[banner](../includes/banner.md)]
 
@@ -35,20 +34,17 @@ Det här avsnittet innehåller information om den mobila arbetsytan **kostnadsko
 
 Denna mobila arbetsyta är avsedd att användas med mobilappen Microsoft Dynamics 365 for Unified Operations.
 
-## Översikt
-<a id="overview" class="xliff"></a>
+## <a name="overview"></a>Översikt
 Mobil arbetsyta för **Kostnadskontroll** ger en omedelbar översikt över aktuell prestanda för kostnadsställen genom att jämföra faktiska kostnader mot budgeterade kostnader. Du kan gå ända ner till statusen för enskilda kostnadselement.
 
 Till exempel en medarbetare får en inbjudan till en internationell konferens, men organisationen måste stå för alla resekostnader. Medarbetaren frågar sin chef om han kan delta i konferensen. Chefen öppnar den mobila arbetsytan för **kostnadskontroll** i sin mobiltelefon för att se om budgeten tillåter att medarbetaren deltar i konferensen.
 
-### Datasäkerhet
-<a id="data-security" class="xliff"></a>
+### <a name="data-security"></a>Datasäkerhet
 Datan i den mobila arbetsytan för **kostnadskontroll** skyddas av användarens autentiseringsuppgifter. Chefer för ett kostnadsställe får endast se data för eget kostnadsställe. Säkerheten för åtkomstnivå hanteras inom modulen **kostnadsredovisning**.
 
 Kostnadsrevisorerna definierar konfigurationen för den mobila arbetsytan för **kostnadskontroll** i modulen **kostnadsredovisning**. När arbetsytan publiceras i mobilappen, blir den tillgänglig i appen. Detta säkerställer att alla chefer för kostnadsställen i organisationen ser data i samma format.
 
-### Åtgärder, vyer och länkar
-<a id="actions-views-and-links" class="xliff"></a>
+### <a name="actions-views-and-links"></a>Åtgärder, vyer och länkar
 Den mobila arbetsytan **kostnadskontroll** innehåller följande åtgärder, vyer och länkar:
 
 -   **Åtgärder:**
@@ -80,16 +76,13 @@ Den mobila arbetsytan **kostnadskontroll** innehåller följande åtgärder, vye
     
     [![Kort för ett kostnadselement ](./media/Cost-controlling.png)](./media/Cost-controlling.png)
 
-## Förutsättningar
-<a id="prerequisites" class="xliff"></a>
+## <a name="prerequisites"></a>Förutsättningar
 Kraven varierar baserat på versionen av Microsoft Dynamics 365 som har distribuerats i organisationen.
 
-### Kraven om du använder Microsoft Dynamics 365 for Finance and Operations, Enterprise edition juli 2017 uppdatering
-<a id="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update" class="xliff"></a>
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update"></a>Kraven om du använder Microsoft Dynamics 365 for Finance and Operations, Enterprise edition juli 2017 uppdatering
 Om Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (juli 2017-uppdateringen) har implementerats för din organisation, måste systemadministratören publicera den mobila arbetsytan **Kostnadskontroll**. Instruktioner finns i [Publicera en mobil arbetsyta](/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace).
 
-### Krav om du använder Microsoft Dynamics 365 for Operations version 1611 med plattformsuppdatering 3 eller senare
-<a id="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later" class="xliff"></a>
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Krav om du använder Microsoft Dynamics 365 for Operations version 1611 med plattformsuppdatering 3 eller senare
 Om Microsoft Dynamics 365 for Operations version 1611 med plattformsuppdatering 3 eller senare har använts i organisationen måste systemadministratören uppfylla följande krav.
 
 <table>
@@ -123,15 +116,13 @@ Om Microsoft Dynamics 365 for Operations version 1611 med plattformsuppdatering 
 </table>
 
 
-## Hämta och installera mobilappen
-<a id="download-and-install-the-mobile-app" class="xliff"></a>
+## <a name="download-and-install-the-mobile-app"></a>Hämta och installera mobilappen
 Hämta och installera mobilappen Dynamics 365 for Unified Operations:
 
 -   [För Android-telefoner](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [För iPhones](https://go.microsoft.com/fwlink/?linkid=850663)
 
-## Logga in på mobilappen
-<a id="sign-in-to-the-mobile-app" class="xliff"></a>
+## <a name="sign-in-to-the-mobile-app"></a>Logga in på mobilappen
 
 1.  Starta appen i din mobila enhet.
 2.  Ange din webbadress för Dynamics 365.
@@ -140,8 +131,7 @@ Hämta och installera mobilappen Dynamics 365 for Unified Operations:
 
 [![Dra för att uppdatera](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
-## Visa prestanda för ditt kostnadsställe med hjälp av den mobila arbetsytan för kostnadskontroll
-<a id="view-the-performance-of-your-cost-center-by-using-the-cost-controlling-mobile-workspace" class="xliff"></a>
+## <a name="view-the-performance-of-your-cost-center-by-using-the-cost-controlling-mobile-workspace"></a>Visa prestanda för ditt kostnadsställe med hjälp av den mobila arbetsytan för kostnadskontroll
 
 1.  På din mobila enhet väljer du arbetsytan **Kostnadsstyrning**.
 2.  Välj **Styrning av kostnadsobjekt**.

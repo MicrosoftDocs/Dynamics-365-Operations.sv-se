@@ -27,16 +27,13 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Bearbeta kompensation
-<a id="process-compensation" class="xliff"></a>
+# <a name="process-compensation"></a>Bearbeta kompensation
 Kompensationsbearbetning gör att du kan beräkna nya baskompensationsbelopp för personalen utifrån justeringar av eget kapital, meritökningsmål och prestanda. I det här blogginlägget beskrivs det grundläggande flödet för kompensationsbearbetning för fasta kompensationsplaner utan att räkna med prestanda.
 
-## Planera det nya kompensationsbeloppet och budgetar
-<a id="plan-the-new-compensation-amounts-and-budgets" class="xliff"></a>
+## <a name="plan-the-new-compensation-amounts-and-budgets"></a>Planera det nya kompensationsbeloppet och budgetar
 Om du vill ge dina anställda en meritökning, måste du konfigurera en fasta ökningsbudgetför var och en av dina avdelningar: Kompensationshantering > Länkar > Meritökningsmål. (Du kan också öppna formuläret via Avdelning: Organisation > Avdelningar.) Här kan du specificera i mer detalj om medarbetare i en viss fackförening eller på en viss plats skulle ha en annan ökningsprocent. Fälten **Budget** och **Valuta** är informativa och kan användas för att anteckna ett valutabelopp för budgeten.
 
-## Ställa in kompensationsprocessen
-<a id="set-up-the-compensation-process" class="xliff"></a>
+## <a name="set-up-the-compensation-process"></a>Ställa in kompensationsprocessen
 En processhändelse tillåter att du anger parametrar för kompensationsbearbetning. Detta omfattar utvärderingsdatumperioden för att fastställa kompensationsbeloppen.  och det datum då de nya kompensationsbeloppen ska träda i kraft.
 
 Du kan även inkludera en fast lön proportionellt från anställningsdatumet om någon av er fasta kompensationsplaner använder en anställningsregel i procent. För dessa planer kan alla som anställdes efter Cykelns startdatum och före Fast lön proportionellt från anställningsdatumet få 100 % av sin beräknade meritökning eller allmänna ökning. Alla som anställdes efter Fast lön proportionellt från anställningsdatumet och före Cykelns slutdatum får en del av sin beräknade ökning baserat på hur många dagar av det totala antalet cykeldagar de har varit anställda. Till exempel, om vår cykel löper från den 1 januari till den 31 december och vi har en Fast lön proportionellt från anställningsdatumet den 1 April, får en medarbetare som anställts i mars den fullständiga beräknade ökningen medan en medarbetare som anställdes den den 1 juli får ungefär hälften av den beräknade ökningen.
@@ -66,12 +63,10 @@ Du kan bara lägga till Fasta kompensationsåtgärder till typen Steg för steg-
 |                                | **1 steg** – Systemet kontrollerar om medarbetaren redan är på sista referenspunkten för nivån.                                                                                             |
 |                                | **2 steg** – Systemet flyttar fram medarbetaren två steg i den aktuella nivån. Systemet kanske bara flyttar en medarbetare ett eller noll steg om de uppnår den sista referensenspunkten för nivån. |
 
-## Kör kompensationsprocessen
-<a id="run-the-compensation-process" class="xliff"></a>
+## <a name="run-the-compensation-process"></a>Kör kompensationsprocessen
 När processhändelsen har ställts in med nödvändiga datumfält, planer och åtgärder kan du klicka på **Kör process** på händelsesidan Processhändelse. När du gör det öppnas händelsedialogrutan Kör kompensationsprocess. I den här dialogrutan kan du klicka på alternativet **Visa processresultat** för att se hur kompensationsbeloppen beräknades för varje medarbetare. Om du klickar på **OK** körs kompensationsprocessen för alla medarbetare som ingår i de valda kompensationsplanerna för cykelns slutdatum.
 
-## Visa processresultaten
-<a id="view-the-process-results" class="xliff"></a>
+## <a name="view-the-process-results"></a>Visa processresultaten
 Om du vill visa processresultaten, öppna sidan **Processresultat**. En ny kompensationshändelse skapas varje gång processhändelsen körs. På så sätt kan du göra testkörningar, justera och köra kompensationshändelsen flera gånger för att se hur olika ändringar påverkar medarbetarkompensation.
 
 Sidan Processresultat innehåller information om processkörningen, inklusive när körningen inträffade, användaren som körde processen och om eventuella fel uppstod när processen körs. Du kan även markera alternativet **Låst** för att inaktivera den knappen **Läs in kompensation** och förhindra ett någon laddar kompensationshändelser till medarbetarposterna. Om du klickar på knappen **Medarbetarresultat** visas listan med medarbetare som ingick i körningen.
@@ -80,8 +75,7 @@ Medarbetarresultaten visar information om själva processen samt eventuella komp
 
 När kompensationsbeloppen har granskats för en medarbetare och de rekommenderade värdena har justerats kan du ändra **Status** på raden **Medarbetarhändelse** för att indikera om händelsen har statusen Godkänd eller Ignorera. Du kan även ta bort ändringar gjorda på medarbetarens rekommendation genom att klicka på knappen **Beräkna om**. Då markeras den aktuella medarbetarhändelsen med statusen Ignorera och en ny medarbetarhändelse skapas med värden som beräknats om.
 
-## Hämta godkända kompensationsändringar
-<a id="loading-approved-compensation-changes" class="xliff"></a>
+## <a name="loading-approved-compensation-changes"></a>Hämta godkända kompensationsändringar
 När en eller flera medarbetarhändelser har fått sin status uppdaterad till Godkänd, kan de läsas till medarbetarnas fasta kompensationsposter. Detta gör du genom att markera varje Medarbetarhändelse en i taget och klicka på knappen Läs in medarbetarkompensation på resultatsidan Medarbetare eller genom att klicka på **Läs in kompensation** på resultatsidan Processresulta för att läs in alla godkända medarbetarhändelser samtidigt.
 
 Om du klickar på **OK** i dialogrutan **Läs in kompensation** läggs noll kompensationsåtgärdsrader till på sidan **Fast medarbetarkompensation**.

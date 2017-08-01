@@ -26,24 +26,21 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Åtgärdssökning
-<a id="action-search" class="xliff"></a>
+# <a name="action-search"></a>Åtgärdssökning
 
 [!include[banner](../includes/banner.md)]
 
 
 Denna artikel beskriver åtgärdssökfunktionen i Microsoft Dynamics 365 for Finance and Operations. Funktionen för åtgärdssökning hjälper dig att hitta och köra åtgärder på en sida.
 
-Introduktion
-<a id="introduction" class="xliff"></a>
+<a name="introduction"></a>Introduktion
 ------------
 
 Sidor i Microsoft Dynamics 365 for Finance and Operations visar främst kommandon i åtgärdsfönster, både det vanliga åtgärdsfönstret som visas högst upp på en sida och verktygsfälten som visas på olika delar av sidan. I tidigare versioner fanns funktionen Tangenttips, som snabbt gav dig åtkomst till valfri knapp i ett åtgärdsfönster genom att trycka på ALT och en serie bokstäver. 
 
 [![keyTipsAX6](./media/keytipsax6.png)](./media/keytipsax6.png) I den aktuella versionen av Finance and Operations har tangenttipsen emellertid ersatts av funktionen för åtgärdssökning. Den här nya funktionen kan du snabbt söka efter och kör en knapp från synliga rutan Åtgärd.
 
-## Med hjälp av action sök
-<a id="using-action-search" class="xliff"></a>
+## <a name="using-action-search"></a>Med hjälp av action sök
 För att använda åtgärden sökfunktionen, följ dessa steg.
 
 1.  I åtgärdsrutan, klicka i **sökfältet** . ( **åtgärden sökfältet** innehåller en förstoringsglaset).
@@ -56,8 +53,7 @@ När du kör, fokus återgår till din senaste position på sidan, så att du ka
 
 Du kan också starta åtgärden sökning, genom att pressa Ctrl+/- eller Alt+Q. Tryck på kortkommandot igen för att återgå till din senaste position på sidan.
 
-## Förstå resultaten förteckning
-<a id="understanding-the-results-list" class="xliff"></a>
+## <a name="understanding-the-results-list"></a>Förstå resultaten förteckning
 I Finance and Operations måste du ofta veta både på plats och samband för en knapp för att förstå syftet med den. Därför visas ytterligare information för varje artikel i resultatlistan, information som hjälper dig att förstå exakt vilka knappar som visas i listan. I synnerhet "sökväg" på knappen visas. Den här sökvägen kan inkludera etiketter av följande UI-beståndsdelar:
 
 -   Rutan åtgärd flik
@@ -74,8 +70,7 @@ I föregående exempel visade åtgärdsökningen resultat från det vanliga åtg
 
 [![lagerbehållning](./media/on-hand-inventory.png)](./media/on-hand-inventory.png)
 
-## Åtgärd söka vs. navigation sökningen
-<a id="action-search-vs-navigation-search" class="xliff"></a>
+## <a name="action-search-vs-navigation-search"></a>Åtgärd söka vs. navigation sökningen
 Medan åtgärdssökningen är avsedd att hitta och köra åtgärder på en sida, finns en separat sökmekanism för att söka och navigera till sidor i Finance and Operations. Mer information om funktionen finns i artikeln [Navigeringssökning](navigation-search.md).
 
 

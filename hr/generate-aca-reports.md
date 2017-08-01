@@ -26,16 +26,13 @@ ms.lasthandoff: 06/13/2017
 
 
 ---
-# Generera Affordable Care Act-rapporter
-<a id="generate-affordable-care-act-reports" class="xliff"></a>
+# <a name="generate-affordable-care-act-reports"></a>Generera Affordable Care Act-rapporter
 Funktionen är tillgänglig för att underlätta för arbetsgivare som behöver följa upp information rapporterad i formulären 1095 B och 1095-C för att stödja delen **Arbetsgivarfullmakt** inom Affordable Care Act. Observera att den här funktionen endast är aktiverad för juridiska personer i USA.
 
-## Komma igång
-<a id="getting-started" class="xliff"></a>
+## <a name="getting-started"></a>Komma igång
 När du börjar spåra information att rapportera i formulär 1095 B och 1095 C, måste du skapa minst en Affordable Care-försäkringsskyddsgrupp. Dessa Affordable Care-försäkringsskyddsgrupper används för att visa täckningserbjudandet för en anställd, den anställdes andel av den lägsta månadspremien (om kostnaden överstiger den federala fattigdomsgränsen) samt den Safe Harbor som används av arbetsgivaren, i tillämpliga fall. Med Affordable Care Act-grupper kan du hantera information för dessa fält utan att behöva vidröra varje enskild medarbetarpost där villkoren är desamma. Dessutom kan Affordable Care-försäkringsskyddsgrupper enkelt tilldelas till en eller flera anställda med hjälp av funktionen för masstilldelning på sidan.
 
-## Underhålla flera versioner av en försäkringsskyddsgrupp
-<a id="maintaining-multiple-versions-of-a-coverage-group" class="xliff"></a>
+## <a name="maintaining-multiple-versions-of-a-coverage-group"></a>Underhålla flera versioner av en försäkringsskyddsgrupp
 Du kan underhålla flera versioner av en försäkringsskyddsgrupp, vilket för att du kan genomföra ändringar som håller gruppens information aktuell utan att behöva skapa en ny grupp och tilldela anställda till den när en ändring sker i organisationen, eller i de förmåner som erbjuds. 
 
 När du har skapat de Affordable Care-försäkringsskyddsgrupper som du behöver, kan du välja att masstilldela grupperna till medarbetarna med hjälp av funktionen **Masstilldelning** på sidan, eller gå till varje medarbetare och ange om ACA-information ska spåras och rapporteras för denna medarbetare, samt tilldela medarbetaren till Affordable Care-försäkringsskyddsgrupp.
@@ -44,8 +41,7 @@ Om omfattningsinformation för Affordable Care inte behöver spåras och rapport
 
 Om du vill ange undantag för något av Affordable Care-försäkringsskyddsgruppens värden klickar du på länken Affordable Care-täckning som finns på informationssidan för arbetstagare, som finns under avsnittet Ytterligare information på fliken Anställning.
 
-## Rapportering av hälsovårdstäckning
-<a id="reporting-health-care-coverage" class="xliff"></a>
+## <a name="reporting-health-care-coverage"></a>Rapportering av hälsovårdstäckning
 Förutom att spåra vad händer om någon sjukförsäkringstäckning erbjudits till en heltidsanställd, måste ytterligare information redovisas på 1095-C om arbetsgivaren erbjuder arbetsgivarsponsrad, självförsäkrad hälsotäckning som medarbetaren är anmäld för (oavsett om deras anställningsstatus är heltid eller deltid). Varje medarbetare (inklusive beroende) som omfattas av arbetsgivarsponsrade förmånsplaner måste inkluderas i rapporten för de månader som de omfattades. 
 
 Du kan ange huruvida varje förmånsplan måste rapporteras genom att välja kryssrutan **ACA-pliktig**.
@@ -54,14 +50,12 @@ Om medarbetare har valt att låta någon beroende saka omfattas av en förmån s
 
 På sidan **Datumhanterare för beroendetäckning** anger du de datum då beroenden omfattades av förmånen. Om du anger datum på den här sidan kommer kryssrutan **Täckning** automatiskt att markeras på sidan **Bibehåll förmåner**.
 
-## Generera 1095B- och 1095C-formulär
-<a id="generate-1095b-and-1095c-forms" class="xliff"></a>
+## <a name="generate-1095b-and-1095c-forms"></a>Generera 1095B- och 1095C-formulär
 Du kan också generera 109-B- och 1095-C-formulär i själva produkten och distribuera dessa till var och en av dina medarbetare. Elektroniskt genererade 1095-C- och motsvarande 1094-C-överföringsfiler som kan användas för att skicka till IRS kan också genereras från systemet.  
 
 När formuläret 1095-C genereras, ange då i lämplig kalender eller lämpligt beskattningsår om du vill skriva ut formuläret med två eller tre sidor. Det tresidiga formuläret behövs bara om arbetsgivaren tillhandahöll självförsäkrad täckning och en medarbetare har fler än sex omfattade beroenden, inklusive sig själva. När du genererar tvåsidorsformuläret kommer systemet automatiskt att identifiera om en medarbetare har mer än 6 täckta beroenden, och inkluderar inte denna anställde vid generering av formuläret. Systemet kommer dessutom endast att omfatta de medarbetare som har fler än sex dolda beroenden när det genererar det tresidiga formuläret.
 
-## Visa information
-<a id="viewing-information" class="xliff"></a>
+## <a name="viewing-information"></a>Visa information
 Du kan använda sidan **Affordable Care-täckning för arbetstagare** om du vill se vilka medarbetare som har tilldelats respektive försäkringsskyddsgrupp, vilka medarbetare som inte behöver ingå i en rapport, samt vilka medarbetare som inte har tilldelats.
 
 Om något av standardvärdena från Affordable Act-försäkringsskyddsgruppen har åsidosatts, visas en asterisk bredvid värdet som har ändrats. Om värdena för alla 12 månader är desamma och inte har åsidosatts, anges värdet i kolumnen **Samtliga 12 månader**.

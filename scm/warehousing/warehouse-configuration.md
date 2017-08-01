@@ -26,8 +26,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Konfiguration av lagerställe
-<a id="warehouse-configuration" class="xliff"></a>
+# <a name="warehouse-configuration"></a>Konfiguration av lagerställe
 
 [!include[banner](../includes/banner.md)]
 
@@ -36,8 +35,7 @@ Det här avsnittet innehåller information om hur du konfigurerar ett lagerstäl
 
 **Anm.:** Den här artikeln gäller funktioner i modulen **Lagerstyrning** (avancerad lagerstyrning). Den gäller inte lagerställefunktioner i modulen **Lagerhantering**.
 
-## Layout för lagerställe
-<a id="warehouse-layout" class="xliff"></a>
+## <a name="warehouse-layout"></a>Layout för lagerställe
 Lagerhanteringssystemet i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition ger flexibla sätt att definiera lagerställets layout för att uppfylla föränderliga behov, så att du kan uppnå en optimal lagereffektivitet.
 
 -   Du kan fastställa högprioriterade och lågprioriterade lagerområden för optimal placering av varor.
@@ -48,8 +46,7 @@ Lagerhanteringssystemet i Microsoft Dynamics 365 for Finance and Operations, Ent
 
 Om du vill använda lagerstyrning i Finance and Operations måste du skapa ett lagerställe och aktivera funktionen för mer avancerade eller specialiserade lagerstyrningsaktiviteter. Välj alternativet **Använd lagerstyrningsprocesser** på sidan **Lagerställen**.
 
-### Zongrupper, zoner, platstyper och platser
-<a id="zone-groups-zones-location-types-and-locations" class="xliff"></a>
+### <a name="zone-groups-zones-location-types-and-locations"></a>Zongrupper, zoner, platstyper och platser
 
 Som en del av processen för att aktivera en lagerställelayout måste du definiera lagerställezongrupper och zoner, platsprofiler, platstyper och platser.
 
@@ -61,8 +58,7 @@ Som en del av processen för att aktivera en lagerställelayout måste du defini
 
 Enheterna som du skapar för att definiera din lagerställelayout som används i frågorna som du angav i arbetsmallar för att köra arbetsordrar på lagerstället. När du definierar zonerna, platstyperna och så vidare, beakta därför hur andra områden på lagerstället används för olika processer. Beakta även faktorer såsom de fysiska egenskaperna för ett visst område. Det kan exempelvis vara områden där du kan använda endast en viss typ av gaffeltruck. Eller om företaget har både produktions- och färdiga varor i samma anläggning, kanske du vill skapa ett enda lagerställe i Finance and Operations men sedan separera de här två operationerna genom att skapa två zongrupper. Ge enheterna beskrivande namn så att de är lätta att känna igen när du använder dem i mallfrågor.
 
-### Lagringsbegränsningsplatser, platsprofiler och fasta plockplatser
-<a id="location-stocking-limits-location-profiles-and-fixed-picking-locations" class="xliff"></a>
+### <a name="location-stocking-limits-location-profiles-and-fixed-picking-locations"></a>Lagringsbegränsningsplatser, platsprofiler och fasta plockplatser
 
 Du måste ta hänsyn till den fysiska utformningen av lagerstället, både för att bestämma lagringskapaciteter (lagringsbegränsningsplatser och platsprofiler) och som en del av företagets försök att uppnå optimala lagerställeprocesser. 
 
@@ -72,17 +68,14 @@ Om mer avancerade beräkningar krävs för att kontrollera platskapacitetsbegrä
 
 Om du vill uppnå optimala utgående processer ska du utvärdera om du vill använda fasta plockplatser och/eller packplatser. Ofta används minimal/maximal lagerpåfyllnad för lagerpåfyllnadsprocesser från ett bulkområde till de fasta plockplatserna och flera fasta plockplatser kan aktiveras inom samma lagerställe och för produktvarianter. Beakta flexibiliteten som du kan uppnå genom att aktivera dedikerade spillplatser för lagerpåfyllnadsefterfrågan, som endast används för våg-/lastlagerpåfyllnadsprocesser.
 
-### Guide för platsinställning
-<a id="location-setup-wizard" class="xliff"></a>
+### <a name="location-setup-wizard"></a>Guide för platsinställning
 
 Skapa snabbt platser på ett lagerställe genom att använda guiden **Platsinställning**. Som en del av den här processen kan du enkelt hantera formatet för platsnamnen.
 
-## Lagerställeprocesser
-<a id="warehouse-processes" class="xliff"></a>
+## <a name="warehouse-processes"></a>Lagerställeprocesser
 Som en del av konfigurationen för lagerstället är det viktigt att du aktiverar lagerställeprocesser enligt affärskraven. De viktigaste komponenterna som du måste konfigurera är vågmallar, arbetsmallar, arbetspooler och platsdirektiv.
 
-### Påfyllnadsmallar
-<a id="wave-templates" class="xliff"></a>
+### <a name="wave-templates"></a>Påfyllnadsmallar
 
 Vågmallar gör det enklare att aktivera den utgående processen Släpp till lagerställe. Så snart orderrader släpps (antingen direkt från källdokument, med buntjobbprocesser eller med laster som redan har skapats) används vågmallfunktionen. 
 
@@ -95,15 +88,13 @@ Parametrarna används för att definiera hur långt systemet ska gå automatiskt
 
 Du måste ange vågprocessmetoderna i varje vågmall. Metoderna som är tillgängliga varierar beroende på vågmalltypen.
 
-### Arbetsmallar
-<a id="work-templates" class="xliff"></a>
+### <a name="work-templates"></a>Arbetsmallar
 
 Arbetsmalldefinitioner spelar en viktig roll i definitionen av arbetsprocesser för lagerhantering. De definierar vilket arbete som utförs och hur det utförs. Mallar kan också innehålla en vägledande kod som länkar till ett platsdirektiv för att definiera var arbete utförs. Arbetsmallar innehåller en fråga som anger villkoren för arbetet. Varje mall måste innefatta minst en plockoperation och en placeringsoperation för att köra den grundläggande arbetsoperationen för överföring av lagerbehållning från en plats till en annan. 
 
 Om flera anställda måste kunna utföra arbete för vissa av dina lageroperationer, vill du kanske använda begreppet *mellanlagring* för lagerstället och dela utförande av arbetet till olika arbetsklasser.
 
-### Arbetspooler
-<a id="work-pools" class="xliff"></a>
+### <a name="work-pools"></a>Arbetspooler
 
 Arbetspooler används för att ordna arbete i grupper. Du kan till exempel skapa en arbetspool för att klassificera arbete som uppstår på ett visst lagerställe. För alla arbetstyper utom inventering kan du tilldela en arbetspool till en arbetsmall. För rullande inventering kan du tilldela en arbetspool på följande sidor:
 
@@ -116,15 +107,13 @@ När du använder arbetsmallar för att skapa arbete kommer arbetspoolen tilldel
 
 ID för arbetspool kan också användas för att begränsa vilken typ av arbete som skickas till en viss lagerarbetare, förutsatt den här funktionen konfigureras på den relevanta mobilenhetens menyobjekt.
 
-### Platsdirektiv
-<a id="location-directives" class="xliff"></a>
+### <a name="location-directives"></a>Platsdirektiv
 
 Som namnet antyder används platsdirektiv för att vidarebefordra arbetstransaktionerna till lämpliga platser på lagerstället. Med andra ord definierar de platserna plocka och lägga. 
 
 Gör det enklare och snabbare att definiera åtgärder som är knutna till varje platsdirektivrad genom att använda en av de fördefinierade strategierna. Du kan till exempel använda strategin **Tom plats utan inkommande arbetsuppgifter** om du vill söka efter lediga platser på ett lagerställe eller använda strategin **FEFO-batchreservation** för plockning av utgående försäljning.
 
-Se även
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Se även
 --------
 
 [Konfigurera platser på ett WMS-aktiverat lagerställe (uppgiftsguiden)](https://ax.help.dynamics.com/en/wiki/configure-locations-in-a-wms-enabled-warehouse/)

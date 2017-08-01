@@ -27,8 +27,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Kredit och inkasso i Kundreskontra
-<a id="credit-and-collections-in-accounts-receivable" class="xliff"></a>
+# <a name="credit-and-collections-in-accounts-receivable"></a>Kredit och inkasso i Kundreskontra
 
 [!include[banner](../includes/banner.md)]
 
@@ -47,8 +46,7 @@ Innan du börjar ställa in eller arbeta med kassaavstämningar, ska du förstå
 
 De olika elementen beskriver varje koncept.
 
-## Ögonblicksbild av åldersfördelningen för kunder
-<a id="customer-aging-snapshots" class="xliff"></a>
+## <a name="customer-aging-snapshots"></a>Ögonblicksbild av åldersfördelningen för kunder
 En ögonblicksbild av åldersfördelning består av beräknade åldersfördelningssaldon för en kund vid en viss tidpunkt. Information om ögonblicksbilden av åldersfördelning visas på listsidan Åldersfördelade saldon och på sidan Inkasso. En ögonblicksbild av åldersfördelning måste skapas innan du kan visa information om listsidan Inkasso. 
 
 För varje kund innehåller en ögonblicksbild av åldersfördelning en ögonblicksbild av åldersfördelning med rubrik och detaljposter som motsvarar varje åldersfördelningsperiod i åldersfördelningsperioddefinitionen. 
@@ -57,18 +55,15 @@ För varje kund innehåller en ögonblicksbild av åldersfördelning en ögonbli
 
 För varje åldersfördelningsperiod i åldersfördelningsperioddefinitionen skapas en ögonblicksbild av åldersfördelningdetaljpost. Varje ögonblicksbild av åldersfördelningdetaljpost innehåller åldersfördelningsperiod-ID och det totala beloppet för transaktioner med data som infaller under åldersfördelningsperioden. Transaktioner tilldelas en åldersfördelningsperiod, till exempel 30 dagar förfallen. Datumet är relativt till åldersfördelningen som det datum som anges, när du skapar ögonblicksbilden av åldersfördelning. Information om ögonblicksbilden av åldersfördelning visas ifaktaboxen Åldersfördelade saldon och på sidan Inkasso.
 
-##  Kundinkassopooler 
-<a id="collections-customer-pools" class="xliff"></a>
+## <a name="collections-customer-pools"></a> Kundinkassopooler 
 Kundpooler är frågor som definierar en grupp med kundposter som kan visas och hanteras för samlingar eller åldersfördelningsprocesser. Använd kundpooler för att filtrera information på listsidorna Åldersfördelade saldon, Inkassoaktiviteter och Inkassoärenden. Du kan även använda kundpooler för att filtrera de kundkonton som är inkluderade när ögonblicksbilder av åldersfördelning skapas.
 
-## Inkassohandläggare
-<a id="collections-agents" class="xliff"></a>
+## <a name="collections-agents"></a>Inkassohandläggare
 Som standard kan Microsoft Dynamics 365 for Finance and Operations-användare visa all kundinformation på listsidorna för inkasso. Du kan använda inkassohandläggareposter för att bestämma kundpoolerna som är tillgängliga för att filtrera information om listsidorna för Inkasso och sidan Inkasso. 
 
 En inkassohandläggare är en person som arbetar med kunder för att säkerställa att betalningarna samlas in i tid. I Finance and Operations är inkassohandläggare arbetare som tilldelas till användare på sidan Användarinställningar.
 
-##  Listsidor för Inkasso 
-<a id="collections-list-pages" class="xliff"></a>
+## <a name="collections-list-pages"></a> Listsidor för Inkasso 
 Följande listsidor hjälper dig att ordna information om inkasso.
 -   Åldersfördelade saldon - kolumnerna på listsidan visar kundsaldon och föråldrade belopp per åldersfördelningsperiod. Den här informationen lagras i en ögonblicksbild över åldersfördelningen. Åldersfördelningsperioderna bestäms av åldersfördelningsperioddefinitionen som används. Åldersfördelningsperioddefinitionen hämtas från kundpoolen, om en sådan har angetts för poolfrågan. Om kundpoolen inte har någon åldersfördelningsperioddefinition används standardåldersfördelningsperioddefinitionen som angetts på sidan Parametrar för kundreskontra. Om ingen standardåldersfördelningsperioddefinition har angetts, används den första åldersfördelningsperioddefinitionen på sidan Definitioner för åldersfördelningsperiod.
 -   Inkassoaktiviteter – kolumnerna på listsidan visar aktiviteter som identifieras som inkassoaktiviteter. Dessa aktiviteter skapas, genom att använda sidan Inkasso. Använd aktiviteter för att spåra arbetet som du gör med inkasseringar.
@@ -81,8 +76,7 @@ Följande listsidor hjälper dig att ordna information om inkasso.
 <li>Om en användare har ställts in som en inkassohandläggare, är endast poolerna som har valts för den inkassohandläggaren tillgängliga på listsidan. Om Tillåt handläggare att visa alla kundpooler har valts på sidan Inkassohandläggare för inkassohandläggaren, är alla pooler tillgängliga för den handläggaren.</li>
 
 
-##  Sidan Inkasso
-<a id="collections-page" class="xliff"></a>
+## <a name="collections-page"></a> Sidan Inkasso
 Använd sidan Inkasso för att visa, hantera och vidta åtgärder om inkassoinformation, aktiviteter och ärenden för kunder. 
 
 Det övre fönstret visar ärenden för den valda kunden. Det mellersta fönstret visar transaktioner för kunden. Det nedre fönstret visar alla aktiviteter för kunden. Du kan skapa inkassoärenden för att spåra inkassoinformation för en eller flera transaktioner och aktiviteter. Informationen i det övre fönstret och lägre fönstret kan filtreras efter fallet. 
@@ -91,14 +85,12 @@ Faktaboxar innehåller åldriga saldon och information om kreditgräns för vald
 
 Åtgärdsfönstret innehåller knappar som visar relaterad information för vald kund, ärende, transaktion eller aktivitet. Du kan också utföra vanliga åtgärder till exempel ändra inkassostatusen för en transaktion, skicka e-postmeddelande genom integration med din e-postleverantör, återbetalning till kunder, bearbetning och NSF-betalningar och avskrivning av saldon som inte kan inkasseras.
 
-##  Avfärda, återinsätta eller återföra ränta eller avgifter
-<a id="waive-reinstate-or-reverse-interest-and-fees" class="xliff"></a>
+## <a name="waive-reinstate-or-reverse-interest-and-fees"></a> Avfärda, återinsätta eller återföra ränta eller avgifter
 Du kan efterskänka, återinföra eller återföra hela räntefakturor eller avgifter och transaktionränta som är en del av räntefakturor. Du kan göra detta från fliken Inkasso i åtgärdsfönstret på sidan Alla kunder genom att klicka på Räntefaktura, Transaktionsränta eller Avgift. 
 
 Dessa justeringar påverkar endast räntefakturor, och ränta och avgifter som de innehåller. Använd stegen i ”Skapa avskrivningstransaktioner i ett steg" för att skriva av alla avgifter som en kund är skyldig.
 
-## Skapa avskrivningstransaktioner
-<a id="create-writeoff-transactions" class="xliff"></a>
+## <a name="create-writeoff-transactions"></a>Skapa avskrivningstransaktioner
 Du kan skriva av dåliga skulder genom att klicka på Skriv av i formuläret Inkasso och på listsidorna Åldriga saldon, Kunder och Öppna kundfakturor. 
 
 När du skriver av transaktioner för en kund, markeras alla transaktioner för kunden automatiskt för kvittning. Ett belopp, som skrivs av, beror på nettobeloppet för markerade transaktioner. Avskrivningstransaktionen skapas i en allmän journal och får innehålla maximalt tre typer av journalrader.

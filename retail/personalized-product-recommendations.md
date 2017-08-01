@@ -27,16 +27,14 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Översikt över anpassade produktrekommendationer
-<a id="personalized-product-recommendations-overview" class="xliff"></a>
+# <a name="personalized-product-recommendations-overview"></a>Översikt över anpassade produktrekommendationer
 
 [!include[banner](includes/banner.md)]
 
 
 I Dynamics 365 for Retail kan produktrekommendationerna visas på kassaenheten. Rekommendationerna är artiklar som kunden kan vara intresserad av baserat på sina tidigare inköp, artiklar i önskelistor samt artiklar som andra kunder köpt online och i fysiska butiker. För återförsäljare med stora kataloger hjälper rekommendationer kunden att identifiera produkter. Genom att visa upp produkter riktade till en kunds intresse och inköpsvanor kan produktrekommendationer hjälpa återförsäljare med merförsäljning och korsförsäljning, och förbättrad kundvård. I Dynamics 365 for Retail drivs produktrekommendationerna genom kognitiva tjänster och Microsoft Azure-maskininlärning.
 
-Scenarier
-<a id="scenarios" class="xliff"></a>
+<a name="scenarios"></a>Scenarier
 ---------
 
 Produktrekommendationer har aktiverats för följande kassascenarier. De är tillgängliga i Cloud POS och Modern POS (MPOS).
@@ -60,8 +58,7 @@ Produktrekommendationer har aktiverats för följande kassascenarier. De är til
 
 [![customerdetailsrecommendations](./media/customerdetailsrecommendations.png)](./media/customerdetailsrecommendations.png)
 
-## Konfigurera Dynamics 365 for Retail för att aktivera kassarekommendationer
-<a id="configure-dynamics-365-for-retail-to-enable-pos-recommendations" class="xliff"></a>
+## <a name="configure-dynamics-365-for-retail-to-enable-pos-recommendations"></a>Konfigurera Dynamics 365 for Retail för att aktivera kassarekommendationer
 För att ställa in produktrekommendationer måste du göra följande.
 
 1.  Kontrollera att du har valt rätt **Juridisk person**.
@@ -70,8 +67,7 @@ För att ställa in produktrekommendationer måste du göra följande.
 4.  Gå till **Butiksparametrar**, välj **Maskininlärning**,välj **Ja **under **Aktivera kassarekommendationer**.
 5.  Kör jobbet **1110** för global konfiguration om du vill se rekommendationer på kassan. Kör kanalkonfigurationsjobbet **1070** för att avspeglar ändringar i kassaskärmens layoutdesigner.
 
-## []()Hur fungerar det?
-<a id="how-does-it-work" class="xliff"></a>
+## <a name="how-does-it-work"></a>[]()Hur fungerar det?
 När du uppdaterar **Enhetslagring**-enheten utförs följande åtgärder.
 
 -   Data i det format som krävs av kognitiva tjänster extraheras från Dynamics 365 for Retails driftsdatabas och skickas till enhetslagringen.
@@ -84,8 +80,7 @@ När du har aktiverat **Aktivera rekommendationer** och kör konfigurationsjobb,
 -   Modellautentiseringsuppgifter och -ID görs tillgängliga för CRT så att anrop för produktrekommendationer från Cloud POS och MOPS i onlineläge kan utföras.
 
 
-Se även
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Se även
 --------
 
 [Lägg till en rekommendationskontroll på transaktionssidan på en kassaenhet](add-recommendations-control-pos-screen.md)

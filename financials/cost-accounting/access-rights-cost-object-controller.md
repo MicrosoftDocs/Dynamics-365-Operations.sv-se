@@ -27,8 +27,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-## Åtkomsträttigheter för en kostnadsobjektcontroller
-<a id="access-rights-of-a-cost-object-controller" class="xliff"></a>
+## <a name="access-rights-of-a-cost-object-controller"></a>Åtkomsträttigheter för en kostnadsobjektcontroller
 
 [!include[banner](../includes/banner.md)]
 
@@ -56,8 +55,7 @@ När rollen **kostnadsobjektcontroller** har tilldelats en chef kan denne utför
 > [!NOTE]
 > Rollen **kostnadsobjektcontroller** styr inte vilka objekt som användaren kan komma åt och visa data för. Säkerhet på radnivå tillhandahålls via dimensionshierarkier och i Hierarki för åtkomstlista.
 
-## Bevilja åtkomstbehörighet
-<a id="grant-access-rights" class="xliff"></a>
+## <a name="grant-access-rights"></a>Bevilja åtkomstbehörighet
 I följande exempel visas hur en dimensionshierarki kan se ut.
 
 **Detaljer om dimensionshierarki**

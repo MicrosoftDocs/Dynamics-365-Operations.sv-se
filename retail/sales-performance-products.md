@@ -28,8 +28,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Utvärdera försäljningsresultat per produkt
-<a id="assess-sales-performance-by-product" class="xliff"></a>
+# <a name="assess-sales-performance-by-product"></a>Utvärdera försäljningsresultat per produkt
 
 [!include[banner](includes/banner.md)]
 

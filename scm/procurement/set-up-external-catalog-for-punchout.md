@@ -26,8 +26,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Ställ in en extern katalog för PunchOut eProcurement
-<a id="set-up-an-external-catalog-for-punchout-eprocurement" class="xliff"></a>
+# <a name="set-up-an-external-catalog-for-punchout-eprocurement"></a>Ställ in en extern katalog för PunchOut eProcurement
 
 Genom att använda den externa katalogen kan du säkerställa att produkt- och prisinformationen som du därefter bearbetar i Dynamics 365 for Finance and Operations, Enterprise edition, juli 2017 är korrekt och aktuell. Rekvisitionen kan sedan godkännas och konverteras till en inköpsorder och en order kan läggas hos leverantören.
 
@@ -35,13 +34,11 @@ När den externa katalogen har ställts in och anställd förbereder en rekvisit
 
 Om du vill ställa in kommunikationen måste din leverantör tillhandahålla uppgifter som du kan använda i konfiguration av den externa katalogen såsom identiteten för köparens företaget, till exempel ”DUNS” och ”DUNS-nummer”, autentiseringsuppgifter och webbadressen för åtkomst till leverantörens katalog.
 
-## Ställa in en extern katalog
-<a id="setting-up-an-external-catalog" class="xliff"></a>
+## <a name="setting-up-an-external-catalog"></a>Ställa in en extern katalog
 
 Den externa katalogen bör aktivera en medarbetare som registrerar en inköpsrekvisition som ska omdirigeras till en extern webbplats för val av produkter. Produkter som medarbetaren väljer från den externa katalogen returneras till Dynamics 365 for Finance and Operations med aktuell prisinformation och härifrån kan de läggas till på inköpsrekvisitionen. Syftet är inte att göra det möjligt för medarbetare att göra en beställning på den externa webbplatsen. När du ställer in den externa katalogen måste du kontrollera att syftet med den site det går att komma åt via den externa katalogen är att samla in offertinformation, inte att lägga riktiga order.
 
-### Om du vill ställa in en extern leverantörskatalog måste du göra följande:
-<a id="to-set-up-an-external-vendor-catalog-complete-the-following-tasks" class="xliff"></a>
+### <a name="to-set-up-an-external-vendor-catalog-complete-the-following-tasks"></a>Om du vill ställa in en extern leverantörskatalog måste du göra följande:
 
 1. Ställa in en kategorihierarki för anskaffning. För mer information, se [Ställ in policyer för anskaffningskategorihierarkier](/https://ax.help.dynamics.com/en/wiki/set-up-policies-for-procurement-category-hierarchies/).
 2. Registrera leverantören i Finance and Operations. Innan du kan ställa in konfigurationerna för åtkomst till en extern leverantörskatalog måste du ställa in leverantören och leverantörskontakten i Microsoft Dynamics 365. Dessutom måste leverantörens externa katalog läggs till i den valda anskaffningkategorin. Mer information om hur du registrerar leverantörer i Microsoft Dynamics 365 finns i [Hantera leverantörssamarbetesanvändare](/procurement/manage-vendor-collaboration-users.md). Information om hur du tilldelar en leverantörer till en anskaffningskategori finns i [Godkänna leverantörer för specifika anskaffningskategorier](/https://ax.help.dynamics.com/en/wiki/approve-vendors-for-specific-procurement-categories/).
@@ -51,8 +48,7 @@ Den externa katalogen bör aktivera en medarbetare som registrerar en inköpsrek
 6. Aktivera den externa katalogen med hjälp av knappen **Aktivera katalog** på sidan **Externa kataloger**. Den externa katalogen måste aktiveras innan anställda kan använda den. Du kan när som helst inaktivera den externa katalogen.
 
 
-## (4) Konfigurera den externa leverantörskatalogen
-<a id="4-configure-the-external-vendor-catalog" class="xliff"></a>
+## <a name="4-configure-the-external-vendor-catalog"></a>(4) Konfigurera den externa leverantörskatalogen
 
 Det här avsnittet innehåller mer information om uppgift 4 i föregående avsnitt.
 
@@ -68,8 +64,7 @@ Anskaffningspolicyer används för att tillåta eller begränsa åtkomst till ka
 
 När som helst kan du ladda om den systemgenererade meddelandemallen genom att klicka på **Återställ meddelandeformat**. Observera att om du återställer meddelandeformatet kommer det aktuella meddelandet att ersätts med det automatiskt genererade meddelandeformatet som har tomma taggar.
 
-### Installationsmeddelande för cXML
-<a id="cxml-setup-message" class="xliff"></a>
+### <a name="cxml-setup-message"></a>Installationsmeddelande för cXML
 Nedan hittar du en beskrivning av de etiketter som ingår i mallen:
 
 | Fält | beskrivning | 
@@ -84,15 +79,13 @@ Nedan hittar du en beskrivning av de etiketter som ingår i mallen:
 |< Begära deploymentMode = ”” >|Distributionstest eller -produktion.|
 |< Begäran >< PunchOutSetupRequest >< SupplierSetup >< URL >< /URL>|URL för leverantörens PunchOut-slutpunkt.|
 
-### Extrinsic-element
-<a id="extrinsic-elements" class="xliff"></a>
+### <a name="extrinsic-elements"></a>Extrinsic-element
 
 Ett extrinsic-element är ytterligare information, till exempel ett användarnamn som baseras på en användare som loggar ut. Extrinsic-elementet anges när punchout inträffar och kan skickas i begärandemeddelandets inställningar.
 Din leverantör kan ha ett krav för att ta emot ett extrinsic-element i förfrågan om inställningar. I sådana fall bör du lägga till extrinsic-elementet i listan över extrinsic-element i avsnittet **Meddelandeformatet** på sidan **Extern katalog**. Ange ett namn för extrinsic-elementet som leverantören kan känna igen och mappa det till ett värde. Alternativen för värden är: Användarnamn, Användarens e-postadress eller Slumpmässigt värde.
 Mer information om cXML-protokollet finns på: http://cxml.org/
 
-## Retroaktivt meddelande
-<a id="post-back-message" class="xliff"></a>
+## <a name="post-back-message"></a>Retroaktivt meddelande
 Det retroaktiva meddelandet är det meddelande som tas emot från leverantören när användaren checkar ut från den externa webbplatsen och återgår till Finance and Operations. Retroaktiva meddelanden kan inte konfigureras. Meddelandena är baserade på cXML-protokolldefinitionen. Här finns all information som kan ingå i det retroaktiva meddelandet som tas emot på en rekvisitionsrad:
 
 | Meddelande mottaget från leverantör | Kopierad till rekvisitionsraden i Finance and Operations|
@@ -107,8 +100,7 @@ Det retroaktiva meddelandet är det meddelande som tas emot från leverantören 
 |< ItemDetail >< Klassificering >< /Klassificering >|Ingår i artikebeskrivningen|
 |< ItemDetail >< Klassificeringsdomän = ”” >|Ingår i artikebeskrivningen|
 
-## Ta bort en extern katalog
-<a id="delete-an-external-catalog" class="xliff"></a>
+## <a name="delete-an-external-catalog"></a>Ta bort en extern katalog
 Ta bort en extern katalog med åtgärden Ta bort på sidan.
 
 Om en produkt från den externa leverantörskatalogen har efterfrågats kan den externa leverantörskatalogen inte raderas. I stället är statusen för den externa leverantörskatalogen inaktiv. Om du vill ta bort åtkomsten till webbplatsen för den externa leverantörens katalog, men inte ta bort, ändra den externa katalogen till inaktiv.

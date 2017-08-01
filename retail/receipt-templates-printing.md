@@ -28,8 +28,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Mottagandemallar och utskrift
-<a id="receipt-templates-and-printing" class="xliff"></a>
+# <a name="receipt-templates-and-printing"></a>Mottagandemallar och utskrift
 
 [!include[banner](includes/banner.md)]
 
@@ -38,8 +37,7 @@ Den här artikeln beskriver hur du ändrar formulärlayouter om du vill styra hu
 
 **Viktigt!** Du måste ställa in formulärlayouter och kvittoprofiler om du vill skriva ut kvitton och andra dokument från Retail Modern POS och Cloud POS. Du kan inkludera flera formulärlayouter i en kvittoprofil. Du kan sedan tilldela mottagandet profil till en skrivare genom att modifiera hårdvara profil.
 
-## Ställa in en kvittoformat
-<a id="set-up-a-receipt-format" class="xliff"></a>
+## <a name="set-up-a-receipt-format"></a>Ställa in en kvittoformat
 1.  Klicka på **Butik** &gt; **Kanalinställningar** &gt; **Kassainställning** &gt; **POS** &gt; **Kvittoformat**.
 2.  På **kvittot format** sida, klicka på **Ny för** att skapa en ny form layout, eller välja en befintlig form layout.
 3.  I **mottagandet format** anger du ett id för blankettlayout, och välj sedan den typ av inleverans som denna layout används för. Du kan även ange en beskrivning och ett kortnamn för mottagande i **fältet Titel** .
@@ -49,8 +47,7 @@ Den här artikeln beskriver hur du ändrar formulärlayouter om du vill styra hu
     -   **Fråga användaren** – uppmanas användaren att skriva ut kvittot.
     -   **Vid behov** – Detta alternativ används endast för gift kvitton. När det här alternativet är markerat, kan användaren skriva ut en gåva mottagandet från **ändra** sida, om en gåva inleverans krävs.
 
-## Designa ett kvittoformat
-<a id="design-a-receipt-format" class="xliff"></a>
+## <a name="design-a-receipt-format"></a>Designa ett kvittoformat
 Använd den grafiska layoutdesignern för att grafiskt skapa layouten för formulärdokumentet. **Mottagandeformatdesigner** sidan har tre sektioner: **Sidhuvud**, **Rader** och **Sidhuvud**. Vissa typer av blankettlayouter använder element från alla tre delar, medan andra typer använder element från endast en eller två delar. Visa element som är tillgängliga för varje avsnitt, klicka på lämplig knapp i navigeringsfältet till vänster på sidan.
 
 1.  Klicka på **Butik** &gt; **Kanalinställningar** &gt; **Kassainställning** &gt; **POS** &gt; **Kvittoformat**.
@@ -70,8 +67,7 @@ Använd den grafiska layoutdesignern för att grafiskt skapa layouten för formu
     -   **Teckenstorlek** – Ange teckenstorlek till antingen **Normal** eller **Stor**. Stora bokstäver är dubbelt så höga som vanliga bokstäver. Därför kan använda stora bokstäver medföra överlappande text i inleveransen.
     -   **Ta bort** – klicka på den här knappen om du vill ta bort den markerade delen från formulärlayouten.
 
-## Tilldela mottagandet profiler
-<a id="assign-receipt-profiles" class="xliff"></a>
+## <a name="assign-receipt-profiles"></a>Tilldela mottagandet profiler
 Mottagandet profiler tilldelas direkt till skrivare via hårdvara profil.
 
 1.  Öppna maskinvaruprofilen genom att klicka på **Butik** &gt; **Kanalinställningar** &gt; **Kassainställning** &gt; **Kassaprofiler** &gt; **Maskinvaruprofil**.

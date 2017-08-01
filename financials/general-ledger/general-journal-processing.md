@@ -27,8 +27,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Hantering av redovisningsjournaler
-<a id="general-journal-processing" class="xliff"></a>
+# <a name="general-journal-processing"></a>Hantering av redovisningsjournaler
 
 [!include[banner](../includes/banner.md)]
 
@@ -60,12 +59,10 @@ På **Periodiska journaler** sidan kan du ställa in återkommande journaler til
 
 Du kan använda verifikationsmallar när som helst. På sidan **Allmänna journaler** finns åtgärderna **Spara** och **Välj verifikationsmall** på sidan **Journalverifikation**, under **Funktioner** för verifikationsraderna.
 
-## Relaterade inställningar
-<a id="related-setup" class="xliff"></a>
+## <a name="related-setup"></a>Relaterade inställningar
 Följande inställningar är inte specifika för allmänna journaler, men kommer att garantera korrekt dataregistrering, enkelt.
 
-### Huvudkonto
-<a id="main-account" class="xliff"></a>
+### <a name="main-account"></a>Huvudkonto
 
 Huvudkontoinställningen ger flera alternativ för allmän journal bearbetning:
 
@@ -81,8 +78,7 @@ Huvudkontoinställningen ger flera alternativ för allmän journal bearbetning:
     -   **Användarvalidering** – Det här alternativet styr vilka användare som tillåts bokföra på huvudkonto.
     -   **Konteringstypvalidering** – Med det här alternativet styr vilka konteringstyper som tillåts för huvudkonto.
 
-### Redovisningsstrukturer och avancerade regler strukturer
-<a id="accounting-structures-and-advanced-rules-structures" class="xliff"></a>
+### <a name="accounting-structures-and-advanced-rules-structures"></a>Redovisningsstrukturer och avancerade regler strukturer
 
 Redovisningsstrukturer och avancerade regler strukturer är oerhört viktiga för att garantera att de data som krävs för ekonomisk rapportering och uppföljning av prestationer är fångade under allmän journal bearbetning och all dokumentation. Redovisningsstrukturer och avancerade regler strukturer kan du skräddarsy data entry-upplevelse. Du kan registrera data endast för finansiella mått som är relevanta i varje situation, och kan också genomdriva kravet på att obligatorisk och korrekt data alltid finnas fångat.
 

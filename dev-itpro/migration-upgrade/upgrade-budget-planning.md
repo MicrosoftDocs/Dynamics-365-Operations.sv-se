@@ -26,8 +26,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Uppgradera budgetplanering
-<a id="upgrade-budget-planning" class="xliff"></a>
+# <a name="upgrade-budget-planning"></a>Uppgradera budgetplanering
 
 [!include[banner](../includes/banner.md)]
 
@@ -36,8 +35,7 @@ Det finns viktiga skillnader i budgetplanering mellan Microsoft Dynamics AX 2012
 
 Budgetplanering i Microsoft Dynamics 365 for Finance and Operations har många förbättringar som inte var tillgängliga i Microsoft Dynamics AX 2012. Det här avsnittet beskriver de ändringar som kunder som uppgraderar måste göra. Den pekar även ut de nya funktionerna som ska beaktas under uppgraderingsprocessen. På grund av omfattningen av förändringarna kommer eventuella befintliga budgetplaner inte at kunna öppnas förrän du har gjort ändringarna som beskrivs i det här avsnittet. Rapporterna bör emellertid fortsätta att fungera och kräver inte ytterligare ändringar.
 
-## Översikt över ändringar
-<a id="overview-of-changes" class="xliff"></a>
+## <a name="overview-of-changes"></a>Översikt över ändringar
 Många viktiga förändringar har gjorts i budgetering för Finance and Operations. Dessa ändringar är avsedda att göra budgetplaneringen enklare att konfigurera och mer återanvändningsbar för att minska årligt underhåll och inställningar. Följande områden i AX 2012 finns inte längre i Finance and Operations:
 
 -   Budgetplansmallar (budgetplaneringskonfiguration)
@@ -49,35 +47,29 @@ Många viktiga förändringar har gjorts i budgetering för Finance and Operatio
 
 Vissa nya koncept kan inte direkt uppgraderas från den tidigare funktionen. Därför måste du utföra viss omkonfiguration för att hantera dessa nya koncept. I följande avsnitt beskrivs de koncept som har ersatt objekten i föregående lista.
 
-### Kolumner
-<a id="columns" class="xliff"></a>
+### <a name="columns"></a>Kolumner
 
 Kolumnerna är nya koncept som ersätter delar av Excel-mallen och även matrisfält. Kolumnerna kan representera en period, månad, kvartal, år eller all tid. Tidsreferensen är dynamisk. Den pekar på en relativ eller år med hänvisning till budgetprocessen. Till exempel kolumnen **Föregående år januari** hänvisar till räkenskapsperiod 1 för år -1. En kolumn som är specifik för budgetplanscenariot som till exempel utfall- eller budgetförfrågan.
 
-### Layouter
-<a id="layouts" class="xliff"></a>
+### <a name="layouts"></a>Layouter
 
 Layouter är ett nytt koncept som ersätter Excel-mallen. Layouterna innehåller kolumner som definierar vilka budget- eller utfallsdata och perioder som ska visas. Layouter delas även mellan klienten och Excel-tillägget. Användargränssnittet när du registrerar eller granskar data i Finance and Operations-klienten är därför bättre än användarupplevelsen i AX 2012. Om du vill ange data i Finance and Operations-klienten är du inte längre begränsad till att visa och ange ett enda scenario i transaktionsvyn. I stället kan du med en jämförelsevy enkelt visa och ange belopp för flera perioder och konton samtidigt. Layouter kan också definieras så att du kan ange och visa valuta, kommentarer och andra valfria data. Layouter låter dig ange vilka redovisningsdimensioner och dimensionsbeskrivningar som ska visas. Layouter inkludera också scenariobegränsningar som definierar vilka kolumner i en mall som kan redigeras och vilka kolumner som ska vara tillgängliga i Excel. När du har definierat en layout skapas en mall för den. Den här mallen skapar i sin tur motsvarande Excel-mall. Du kan redigera Excel-mallen om du vill lägga in fler formler och formatering och överför sedan bilden igen. Layouter tilldelas sedan varje fasregel på sidan **Budgetplaneringsprocess**. Därför ersätter layouterna mallar, som tilldelats och som används på liknande sätt.
 
-### Budgetplaneringsprocesser
-<a id="budget-planning-processes" class="xliff"></a>
+### <a name="budget-planning-processes"></a>Budgetplaneringsprocesser
 
 Budgetplaneringsprocesser är oftast detsamma som i AX 2012. Den största ändringen är ersättningen av mallar med layouter. Om alla processer har slutförts i AX 2012 uppdateras tidigare processer till statusen Pågående så att ändringar kan göras. Du måste tilldela layouter för varje fasregel för att bestämma vilka tidsperioder och scenarier som visas när planen har öppnats i klienten. Layouterna bestämmer också vilken Excel-mall som öppnas utanför Dynamic 365 for Finance and Operations så att du kan visa budgeten. **Standardkontostruktur** är ett nytt obligatoriskt fält för budgetplaneringsprocessen. För varje budgetplaneringsprocess, tilldela den primära kontostrukturen som ska användas för budgetering.
 
-### Bilagor
-<a id="attachments" class="xliff"></a>
+### <a name="attachments"></a>Bilagor
 
 Handlingar har sparats till en bilagemapp i AX 2012. Inga tidigare handlingar uppgraderas. Motiveringsdokument lagras nu i databasen. Om denna information ska sparas i den uppgraderade versionen kan du överföra motiveringsdokument för varje plan som en bifogad fil med hjälp av knappen **justering** i åtgärdsfönstret. I AX 2012 skapades Excel-kalkylblad för varje budgetplan utifrån mallen. I Finance and Operations öppnar alla planer en kopia av layouten. Inga ändringar i Excel-filen sparas dock. Eventuella formler eller stöd information som användes per plan måste läggas till via kommentarer, ett motiveringsdokumentet eller någon annan kompletterande process.
 
-## Konfigurera en uppgraderad miljö från AX 2012
-<a id="configuring-an-upgraded-environment-from-ax-2012" class="xliff"></a>
+## <a name="configuring-an-upgraded-environment-from-ax-2012"></a>Konfigurera en uppgraderad miljö från AX 2012
 För att hjälpa dig att avgöra hur du konfigurerar det uppgraderade systemet, har följande exempel en uppgraderad budgetprocess från AX 2012 demodata. Standardkonfigurationsdata för kolumner har skapats för att hjälpa uppgraderingsprocessen. Du kan uppdatera eller ta bort den här standarddatan om den inte uppfyller dina behov av konfigurering. **Obs!** Det finns nya obligatoriska fält som inte anges i systemet. Om du fastnar på en sida som t.ex. sidan **Budgetplaneringskonfiguration** och kan inte navigera iväg. Du kan stänga webbläsaren och öppna den på nytt till en annan sida för att ange information i rätt ordning. Det finns obligatoriska fält som inte ännu är angivna. Därför kan problem uppstå tills allt är konfigurerat och alla obligatoriska fält har angetts. Det här avsnittet beskriver hur du ställer in dessa fält efter behov. Här följer några exempel på krävda fält:
 
 -   Sidan **Budgetplaneringsprocess**: fältet **standardkontostruktur**
 -   Sida **Budgetplaneringsprocessen**: fältet **Layout** på snabbfliken **Regler och layouter för budgetplaneringsfaser**
 
-### Definiera kolumner och layout
-<a id="define-columns-and-layouts" class="xliff"></a>
+### <a name="define-columns-and-layouts"></a>Definiera kolumner och layout
 
 1.  På sidan **budgetplaneringskonfiguration** klickar du på fliken **kolumner**. Under uppgraderingen skapas automatiskt nya kolumner utifrån dina budgetplansrader. Kolumner använder nu dynamiska datum där tiden och året förskjuts från räkenskapsåret som definieras i budgetplaneringsprocessen. **Obs:** Av prestandaskäl under uppgraderingen förutsätts att alla budgetcykler representerar kalenderår, inte räkenskapsår. Om du använder räkenskapsår måste du utföra ändringar för att mappa kolumnerna till deras räkenskapsår. Exempelvis följande element fanns i AX 2012:
     -   Budgetplanscenarier: verkliga, baslinje, Budgetförfrågan, budget godkänd
@@ -100,8 +92,7 @@ För att hjälpa dig att avgöra hur du konfigurerar det uppgraderade systemet, 
 4.  På snabbfliken **layoutelement** klickar du på **Lägg till** för att lägga till metadata för varje rad som en valuta, en kommentar eller en budgetklass som bestämmer intäktsrader jämfört med utgiftsrader. Lägg sedan till kolumner för tidsperioden och scenarier som gäller för den här budgetcykeln och fasen. Du kan göra dessa ändringar manuellt i klienten eller via Excel-tillägget som refererar till dataentiteten för layoutelement för budgetplan.
 5.  För varje layoutelement anger du om kolumnen ska kunna redigeras och om kolumnen även visas i Excel-arbetsboken för den här layouten. **Obs!** För våra historiska planer kanske du vill ha en layout som visar 12 månatliga kolumner för alla budgetplanscenarier för den processen.
 
-### Uppdatera budgetplaneringsprocesser för att använda passande layout för varje budgetfas
-<a id="update-budget-planning-processes-to-use-the-appropriate-layout-for-each-budget-stage" class="xliff"></a>
+### <a name="update-budget-planning-processes-to-use-the-appropriate-layout-for-each-budget-stage"></a>Uppdatera budgetplaneringsprocesser för att använda passande layout för varje budgetfas
 
 1.  På sidan **Budgetplaneringsprocess** väljer du hur du vill konfigurera.
 2.  Klicka på **Redigera** i åtgärdsfönstret.
@@ -109,30 +100,24 @@ För att hjälpa dig att avgöra hur du konfigurerar det uppgraderade systemet, 
 4.  På snabbfliken **Regler och layouter för budgetplaneringsfaser** på fältet **Layout** väljer du en layout som tidigare har konfigurerats och som är avsett för den här fasen.
 5.  Fortsätt att välja samma eller olika layouter för olika budgetplaneringsfaser och spara ändringarna.
 
-## Ytterligare egenskaper att tänka på i din budgeteringsprocess
-<a id="additional-features-to-consider-in-your-budgeting-process" class="xliff"></a>
-### Budgetplaneringsarbetsflöde
-<a id="budget-planning-workspace" class="xliff"></a>
+## <a name="additional-features-to-consider-in-your-budgeting-process"></a>Ytterligare egenskaper att tänka på i din budgeteringsprocess
+### <a name="budget-planning-workspace"></a>Budgetplaneringsarbetsflöde
 
 Den här arbetsytan har utformats för både budgetägaren och enskilda bidragare till budget. Det finns länkar till de budgetdokument som kräver din uppmärksamhet. Det finns också rapporter och prestationsindikatorer (KPI:er) för budgetprocessen. Budgetadministratör kan definiera den aktuella budgetplaneringsprocessen för alla användare på sidan **budgeteringsparametrar**. På fliken **Inställningar för arbetsyta** innehåller snabbfliken **budgetplanering** ett fält där du kan välja budgetplaneringsprocessen.
 
-### Alternativa layouter
-<a id="alternate-layouts" class="xliff"></a>
+### <a name="alternate-layouts"></a>Alternativa layouter
 
 Alternativa layouter är en ny funktion som gör att du kan visa planer i olika layouter. En eller flera layouter kan anges som alternativ. Du kan visa en budgetplan i en månatlig layout eller kvartalsvis layout. Du definierar alternativa layouter på snabbfliken **Regler och layouter för budgetplaneringsfaser** på sidan **Budgetplaneringsprocess**.
 
-### Budgetmilstolpar
-<a id="budget-milestones" class="xliff"></a>
+### <a name="budget-milestones"></a>Budgetmilstolpar
 
 Som ett led i budgetprocessen är det viktigt att du förstår viktiga datum och deadlines. Du kan nu konfigurera datum så att de har beskrivningar. Budgeterande användare kommer att se dessa beskrivningar när de öppnar budgetar för att redigera eller visa allt som har tilldelats.
 
-### Kopia från allokering av budgetplan
-<a id="copy-from-budget-plan-allocation" class="xliff"></a>
+### <a name="copy-from-budget-plan-allocation"></a>Kopia från allokering av budgetplan
 
 En ny allokeringsmetod låter dig distribuera från en överordnad plan till en underordnad plan utan att gå via en mellanliggande nivå i hierarkin. Denna metod är särskilt användbar för kunder som tidigare skapade ekonomisk dimension för budgetfördelning och godkännanden.
 
-### Generera budgetplaner från nya budgetkällor
-<a id="generating-budget-plans-from-new-budget-sources" class="xliff"></a>
+### <a name="generating-budget-plans-from-new-budget-sources"></a>Generera budgetplaner från nya budgetkällor
 
 Följande alternativ har lagts till som en periodisk bearbetning. Dessa alternativ låter dig skapa en budgetplan med befintliga data från en annan modul som startpunkt:
 
@@ -141,33 +126,27 @@ Följande alternativ har lagts till som en periodisk bearbetning. Dessa alternat
 -   Generera budgetplan från projekt
 -   Generera budgetplan från budgetregister
 
-### Fullständig spårning av belopp
-<a id="more-complete-tracking-of-amounts" class="xliff"></a>
+### <a name="more-complete-tracking-of-amounts"></a>Fullständig spårning av belopp
 
 Budgetplanering hade ett enstaka planeringsbelopp, eller lagrades för varje värde i AX 2012. I Finance and Operations har datamodellen expanderats. Det finns nu redovisningsvaluta, transaktionsvaluta och rapporteringsvalutabelopp för varje värde. Under uppgraderingen fylls dessa nya kolumner i automatiskt för befintliga data.
 
-### Konvertera inte valuta i sammansättning
-<a id="do-not-convert-currency-in-aggregation" class="xliff"></a>
+### <a name="do-not-convert-currency-in-aggregation"></a>Konvertera inte valuta i sammansättning
 
 Vanligtvis när en underordnad plan läggs till en överordnad nivå konverteras beloppen automatiskt från transaktionsvalutan till redovisningsvalutan för organisationen. När du anger alternativet **konvertera inte valutan i sammansättning** till **Nej** förblir de sammanlagda beloppen i transaktionens ursprungliga valuta. Detta alternativ tillåter därför mer exakta justeringar som påverkas av valutakursen.
 
-### Få en återblick från en budgetplan till andra moduler som bidrar till budgeten
-<a id="looking-back-from-a-budget-plan-to-other-modules-that-contributed-to-the-budget" class="xliff"></a>
+### <a name="looking-back-from-a-budget-plan-to-other-modules-that-contributed-to-the-budget"></a>Få en återblick från en budgetplan till andra moduler som bidrar till budgeten
 
 Budgetplaner kan genereras från efterfrågan eller ange prognoser, projekt och andra områden. Budgetplaner genom dimension innehåller flera alternativ som gör att du kan köra en fråga som hjälper dig att identifiera den data som var källan till budgetplanen.
 
-### Skriva över eller bifoga till planen för allokeringsscheman
-<a id="overwrite-or-append-to-plan-for-allocation-schedules" class="xliff"></a>
+### <a name="overwrite-or-append-to-plan-for-allocation-schedules"></a>Skriva över eller bifoga till planen för allokeringsscheman
 
 Om det finns flera källor till belopp som måste fördelas, kan du ange beloppen ska vara additiva. I det här fallet skriver inte beloppen över eventuella befintliga belopp. I stället läggs de till befintliga belopp.
 
-### Ekonomiska standarddimensionsuppsättning för budgetplaneringskonfiguration
-<a id="default-financial-dimension-set-for-budget-planning-configuration" class="xliff"></a>
+### <a name="default-financial-dimension-set-for-budget-planning-configuration"></a>Ekonomiska standarddimensionsuppsättning för budgetplaneringskonfiguration
 
 Sidan **budgetplaneringskonfiguration** innehåller nu ett fält där du kan ange standard för ekonomiska dimensionsuppsättningen. Även om det här fältet är ett valfritt fält, kanske det krävs för vissa förfrågningar. Det kan också krävas om du vill gruppera eller filtrera rapportgruppering genom dimensionsuppsättning.
 
-### Datatabeller
-<a id="data-entities" class="xliff"></a>
+### <a name="data-entities"></a>Datatabeller
 
 Flera datatabeller har lagts till för att aktivera snabb implementering av budgetplanering. Enheterna låter dig även göra många ändringar via Excel. Därför måste du inte skapa ett objekt i taget till klienten. Här följer en lista över nya datatabeller:
 

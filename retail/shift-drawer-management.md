@@ -28,8 +28,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Hantering av skift och kassalåda
-<a id="shift-and-cash-drawer-management" class="xliff"></a>
+# <a name="shift-and-cash-drawer-management"></a>Hantering av skift och kassalåda
 
 [!include[banner](includes/banner.md)]
 
@@ -38,12 +37,10 @@ Den här artikeln innehåller en beskrivning av hur du ställer in och använder
 
 Det finns två typer av skift för butikskassor (POS): fristående och delade. Fristående skift kan enbart användas av en enda arbetare åt gången. Delade skift kan användas av flera användare på flera ställen. På så sätt skapar de effektivt ett enda skift för flera medarbetare i en butik.
 
-## Fristående skift
-<a id="standalone-shifts" class="xliff"></a>
+## <a name="standalone-shifts"></a>Fristående skift
 Fristående skift används i ett traditionellt, fast kassascenario där kontanter stäms av separat för varje kassaregister. I en livsmedelsbutik till exempel finns det vanligtvis flera fasta kassaregister och varje kassaregister tilldelas i sin tur till en kassör. I det här fallet är det sannolikt att varje kassaregister används som ett fristående skift och kassören ansvarar för kassaregistrets kassalåda. Ett fristående skift omfattar all aktivitet i registret under kassörens arbetsskift. Aktiviteter kan omfatta startbeloppet som läggs i kassalådan, kontanter som tas bort eller läggs till genom åtgärder såsom bankinsättningar och växelposter samt kassaavstämningen i slutet av skiftet.
 
-### Ställa in ett fristående skift
-<a id="set-up-a-stand-alone-shift" class="xliff"></a>
+### <a name="set-up-a-stand-alone-shift"></a>Ställa in ett fristående skift
 
 Ett fristående skift tilldelas på kassalådenivå. Här beskrivs hur du ställer in ett fristående skift i ett kassaregister.
 
@@ -58,8 +55,7 @@ Ett fristående skift tilldelas på kassalådenivå. Här beskrivs hur du ställ
 9.  Klicka på **Butik** &gt; **Butik-IT** &gt; **Distributionsschema**.
 10. Välj distributionsschema **1090** och klicka sedan på **Kör nu** för att synkronisera ändringarna av kassan.
 
-### Använda ett fristående skift
-<a id="use-a-stand-alone-shift" class="xliff"></a>
+### <a name="use-a-stand-alone-shift"></a>Använda ett fristående skift
 
 1.  Logga in i kassan.
 2.  Om inget skift är öppet väljer du **Öppna ett nytt skift**.
@@ -71,12 +67,10 @@ Ett fristående skift tilldelas på kassalådenivå. Här beskrivs hur du ställ
 
 **Obs!** Andra åtgärder är tillgängliga under skiftet beroende på vilka affärsprocesser som används. Åtgärderna **Lämna pengar i kassaskåp**, **Bankinsättning** och **Borttagning av betalningsmedel** kan användas för att ta bort pengar från kassalådan under dagen eller innan skiftet avslutas. Om kontanterna i en kassalåda börjar ta slut kan åtgärden **Växelpost** användas för att lägga till kontanter i kassalådan.
 
-## Delade skift
-<a id="shared-shifts" class="xliff"></a>
+## <a name="shared-shifts"></a>Delade skift
 Delade skift används i en miljö där flera kassörer delar en kassalåda eller en uppsättning kassalådor under arbetsdagen. Vanligtvis används delade skift i mobila kassamiljöer. I en mobil miljö är kassören inte tilldelad och ansvarig för en enda kassalåda. I stället måste alla kassörer kunna ta betalt och lägga till kontanter i den kassalåda som är närmast dem. I det här fallet ingår kassalådorna som delas mellan kassörerna i ett delat skift. Alla kassalådor i delade skift ingår i samma skift för aktiviteter som är relaterade till kontanthanteringen under respektive skift. Startbeloppet för skiftet ska därför innehålla summan av alla kontanter i alla kassalådor som ingår i det delade skiftet. Av samma anledning kommer kassaavstämningen att innehålla summan av alla kontanter i alla kassalådor som ingår i det delade skiftet. **Obs!** Endast ett delat skift åt gången kan vara öppet i varje butik. Delade skift och fristående skift kan användas i samma butik.
 
-### Ställa in ett delat skift
-<a id="set-up-a-shared-shift" class="xliff"></a>
+### <a name="set-up-a-shared-shift"></a>Ställa in ett delat skift
 
 1.  Klicka på **Butik** &gt; **Kanalinställningar** &gt; **Kassainställningar** &gt; **Kassaprofiler** &gt; **Maskinvaruprofiler**.
 2.  Välj vilken maskinvaruprofil som ska användas för det delade skiftet.
@@ -89,8 +83,7 @@ Delade skift används i en miljö där flera kassörer delar en kassalåda eller
 9.  Klicka på **Butik** &gt; **Butik-IT** &gt; **Distributionsschema**.
 10. Välj distributionsschema **1090** och klicka sedan på **Kör nu** för att synkronisera ändringarna av kassan.
 
-### Använda ett delat skift
-<a id="use-a-shared-shift" class="xliff"></a>
+### <a name="use-a-shared-shift"></a>Använda ett delat skift
 
 1.  Logga in i kassan.
 2.  Om kassan ännu inte är ansluten till en maskinvarustation, välj **Åtgärd som inte berör kassalådan** och välj sedan åtgärden **Välj maskinvarustation** för att aktivera en maskinvarustation för det delade skiftet. Den här steget krävs endast första gången ett register läggs till i en miljö med delade skift.

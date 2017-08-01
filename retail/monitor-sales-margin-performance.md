@@ -27,8 +27,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Övervaka försäljningsresultat och marginaler
-<a id="monitor-sales-and-margin-performance" class="xliff"></a>
+# <a name="monitor-sales-and-margin-performance"></a>Övervaka försäljningsresultat och marginaler
 
 [!include[banner](includes/banner.md)]
 

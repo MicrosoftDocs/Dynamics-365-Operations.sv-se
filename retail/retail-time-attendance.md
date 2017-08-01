@@ -28,41 +28,34 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Tidrapportering för butik
-<a id="retail-time-and-attendance" class="xliff"></a>
+# <a name="retail-time-and-attendance"></a>Tidrapportering för butik
 
 [!include[banner](includes/banner.md)]
 
 
 Det här avsnittet beskriver scenarierna som stöds för tids- och närvarohantering i Microsoft Dynamics 365 for Retail. 
 
-Hantera inställningar för arbetare och schemaläggning
-<a id="manage-worker-setup-and-scheduling" class="xliff"></a>
+<a name="manage-worker-setup-and-scheduling"></a>Hantera inställningar för arbetare och schemaläggning
 ----------------------------------
 
-###  Ursprunglig konfiguration
-<a id="initial-configuration" class="xliff"></a>
+### <a name="initial-configuration"></a> Ursprunglig konfiguration
 
 -   Kör guiden för konfiguration.
 -   Registrera arbetstagare som projekttid arbetstagare.
 
-### Planen arbetstagaren scheman
-<a id="plan-worker-schedules" class="xliff"></a>
+### <a name="plan-worker-schedules"></a>Planen arbetstagaren scheman
 
 -   Använda profiler med arbete planerare. För mer information, se <Https://technet.microsoft.com/en-us/library/aa551234.aspx>.
 
 För information om konfigurering, se <Https://technet.microsoft.com/en-us/library/aa496971.aspx>.
 
-### Retail-specifik konfiguration
-<a id="retail-specific-configuration" class="xliff"></a>
+### <a name="retail-specific-configuration"></a>Retail-specifik konfiguration
 
 -   Aktivera en funktion profil för klocka, för arbetstagare som du vill aktivera tidsregistreringar. Klicka på **Kassafunktionsprofiler** &gt; **Funktioner** &gt; **Tidsregistreringar vid kassa** &gt; **Aktivera tidsregistreringar**.
 -   Konfigurera point of sale (POS) behörigheter grupper att visa timeclock poster tillstånd. Detta tillstånd kan en användare visa tid klocka registreringar av andra arbetstagare i affären (och från alla andra som användaren är kopplad till, via adressboken). Du kanske vill aktivera detta tillstånd för en chef roll men inte för en kassör roll. Klicka på **Kassabehörighetsgrupper** &gt; **Visa stämpelklocksregistreringar**.
 
-## Kassatid
-<a id="register-time" class="xliff"></a>
-### Kassa och icke-kassa tidsregistreringar
-<a id="cashier-and-non-cashier-time-registrations" class="xliff"></a>
+## <a name="register-time"></a>Kassatid
+### <a name="cashier-and-non-cashier-time-registrations"></a>Kassa och icke-kassa tidsregistreringar
 
 -   På POS:
     -   Klocka-operationer:
@@ -121,10 +114,8 @@ För information om konfigurering, se <Https://technet.microsoft.com/en-us/libra
 -   Olika tidszoner:
     -   Om du från en annan plats (för kassören loggbok, eller genom att använda **Visa timeclock poster** för en chef scenario) och platsen är i en annan tidszon, tid som du ser, finnas görat om till din lokala tidzon. Du är till exempel chef för två butiker, en i Arizona och den andra i Nevada. En kassör registrerar en instämpling klockan 09:00 i Arizona. I det ögonblicket i Nevada är 08.00. Därför, om du är i Nevada lagra och titta på gång inskrivningurkunder, projekttid är markerade som 08.00
 
-## Visa arbetstidsregistrering
-<a id="view-worker-time-registrations" class="xliff"></a>
-### Visa arbetstagaren tidsregistreringar och filtrera genom butik eller aktivitetstyp
-<a id="view-worker-time-registrations-and-filter-by-store-or-activity-type" class="xliff"></a>
+## <a name="view-worker-time-registrations"></a>Visa arbetstidsregistrering
+### <a name="view-worker-time-registrations-and-filter-by-store-or-activity-type"></a>Visa arbetstagaren tidsregistreringar och filtrera genom butik eller aktivitetstyp
 
 På POS:
 
@@ -132,19 +123,16 @@ På POS:
 -   Du ser tid klocka registrering verksamheter från alla anställda som är tilldelade till samma butiker som du tilldelats.
 -   Du kan använda aktivitetstyp och lagra filter för att filtrera på tidsregistreringar.
 
-## Bearbeta och hantera tidsregistreringar
-<a id="process-and-manage-time-registrations" class="xliff"></a>
+## <a name="process-and-manage-time-registrations"></a>Bearbeta och hantera tidsregistreringar
 En användare av Dynamics 365 for Retail följer arbetsgången för att beräkna, godkänna och överföra tidsregistreringar till lönesystemet.
 
-### Primära verksamheter
-<a id="primary-operations" class="xliff"></a>
+### <a name="primary-operations"></a>Primära verksamheter
 
 -   Beräkna
 -   Godkänn
 -   Skicka till lönesystem
 
-### Andra gemensamma åtgärder
-<a id="other-common-operations" class="xliff"></a>
+### <a name="other-common-operations"></a>Andra gemensamma åtgärder
 
 -   Bulk klocka-ut
 -   Registrera frånvaro

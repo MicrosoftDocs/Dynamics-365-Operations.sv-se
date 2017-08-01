@@ -27,8 +27,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Översikt över kvalitetshantering
-<a id="quality-management-overview" class="xliff"></a>
+# <a name="quality-management-overview"></a>Översikt över kvalitetshantering
 
 [!include[banner](../includes/banner.md)]
 
@@ -41,8 +40,7 @@ Förutom funktioner för att hantera avvikelser inkluderar kvalitetshantering fu
 
 När du ställer in en kvalitetsassociation kan Finance and Operations skapa kvalitetsorder för olika affärsprocesser, händelser och villkor. Kvalitetsassociationen kan omfatta en viss artikel, en specifik grupp artiklar eller alla artiklar.
 
-## Exempel på användningen av kvalitetshantering
-<a id="examples-of-the-use-of-quality-management" class="xliff"></a>
+## <a name="examples-of-the-use-of-quality-management"></a>Exempel på användningen av kvalitetshantering
 Kvalitetshanteringen är flexibel och kan implementeras på olika sätt för att uppfylla kraven för specifika nivåer i distributionskedjeåtgärder. Följande exempel illustrerar hur dessa funktioner kan användas:
 
 -   Starta automatiskt en kvalitetskontrollprocess baserat på fördefinierade villkor (vid lagerställeregistrering av en inköpsorder från en viss leverantör.)
@@ -52,8 +50,7 @@ Kvalitetshanteringen är flexibel och kan implementeras på olika sätt för att
 -   Ange en godtagbar kvalitetsnivå (AQL) för att kontrollera toleranserna för kvalitetsmått.
 -   Ange resurser som en inspektionsåtgärd kräver, till exempel ett testområde och testinstrument.
 
-## Arbeta med kvalitetsassociationer
-<a id="working-with-quality-associations" class="xliff"></a>
+## <a name="working-with-quality-associations"></a>Arbeta med kvalitetsassociationer
 Affärsprocessen som använder en kvalitetsassociation kan relateras till olika källdokument, till exempel inköpsorder, försäljningsorder eller produktionsorder. 
 
 Varje kvalitetsassociationspost definierar testuppsättningarna, den godtagbara kvalitetsnivån och provtagningsplanen som gäller genererade kvalitetsorder. Du måste definiera en kvalitetsassociationspost för varje variant i en affärsprocess. Du kan till exempel ställa in en kvalitetsassociation som genererar en kvalitetsorder när en produktinleverans för en inköpsorder uppdateras. Beroende på inställningen för körningsplanen kan själva utlösarprocessen spärras medan det finns en öppen kvalitetsorder, eller så kan de efterföljande processerna, till exempel fakturering av inköpsorder, spärras. 
@@ -298,8 +295,7 @@ Följande register innehåller mer information om hur kvalitetsorder kan generer
 </tbody>
 </table>
 
-## Kvalitetshanteringssidor
-<a id="quality-management-pages" class="xliff"></a>
+## <a name="quality-management-pages"></a>Kvalitetshanteringssidor
 <table>
 <colgroup>
 <col width="33%" />
@@ -360,8 +356,7 @@ Du måste definiera en kvalitetsassociation för varje variant i en affärsproce
 
 
 
-Se även
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Se även
 --------
 
 [Kvalitetshanteringsprocesser](quality-management-processes.md)

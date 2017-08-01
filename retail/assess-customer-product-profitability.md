@@ -28,8 +28,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Utvärdera lönsamhet för kunder och produkter
-<a id="assess-customer-and-product-profitability" class="xliff"></a>
+# <a name="assess-customer-and-product-profitability"></a>Utvärdera lönsamhet för kunder och produkter
 
 [!include[banner](includes/banner.md)]
 

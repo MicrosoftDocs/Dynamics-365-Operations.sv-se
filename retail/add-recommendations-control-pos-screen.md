@@ -27,8 +27,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Lägg till en rekommendationskontroll på transaktionssidan på en kassaenhet
-<a id="add-a-recommendations-control-to-the-transaction-page-on-a-pos-device" class="xliff"></a>
+# <a name="add-a-recommendations-control-to-the-transaction-page-on-a-pos-device"></a>Lägg till en rekommendationskontroll på transaktionssidan på en kassaenhet
 
 [!include[banner](includes/banner.md)]
 
@@ -37,8 +36,7 @@ Det här avsnittet beskriver hur du lägger till en rekommendationskontroll på 
 
 Du kan visa produktrekommendationer på din kassaenhet när du använder Microsoft Dynamics 365 for Retail. *Rekommendationer* är artiklar som dina kunder kan vara intresserade av baserat på sina tidigare inköp, artiklar i sina önskelistor samt artiklar som andra kunder köpt online och i fysiska butiker. Om du vill visa produktrekommendationer måste du lägga till en kontroll på transaktionsskärmen med skärmlayoutdesignern.
 
-## Öppna layoutdesignern
-<a id="open-layout-designer" class="xliff"></a>
+## <a name="open-layout-designer"></a>Öppna layoutdesignern
 1.  Navigera till **Butik** &gt; **Kanalinställningar** &gt; **Kassainställningar** &gt; **Kassa** &gt; **Skärmlayout**.
 2.  Med snabbfiltret kan du snabbt hitta den skärm som du vill lägga till kontrollen i. Filtrera till exempel fältet **ID för skärmlayout** med hjälp av värdet "F2CP16:9M".
 3.  Hitta och markera önskad post i listan. Markera exempelvis "Namn: F2CP16:9M Skärmlayout-ID: F2CP16:9M".
@@ -53,8 +51,7 @@ Det finns två konfigurationsalternativ tillgängliga. Välj det alternativ som 
 -   Rekommendationer visas alltid.
 -   Fliken **Rekommendationer** visas i rutnätet till höger på skärmen.
 
-#### För att alltid visa rekommendationer
-<a id="to-make-recommendations-always-visible" class="xliff"></a>
+#### <a name="to-make-recommendations-always-visible"></a>För att alltid visa rekommendationer
 
 1.  Minska höjden på detaljområdet för transaktionsrader så att denna är samma höjd som hos kundpanelen till vänster.[](./media/pic-2.png)[![skärmlayout-bild-2](./media/screenlayout-pic-2.png)](./media/screenlayout-pic-2.png)
 2.  Från menyn till vänster, dra och släpp rekommendationskontrollen mellan detaljområdet för transaktionsrad och knappsatsen längst ned i mitten längst på transaktionsskärmen. Ändra storlek på kontrollen så att den passar in i utrymmet.[](./media/pic-3.png)[![bildlayout-bild-3](./media/screenlayout-pic-3.png)](./media/screenlayout-pic-3.png)
@@ -63,8 +60,7 @@ Det finns två konfigurationsalternativ tillgängliga. Välj det alternativ som 
 5.  I listan väljer du **1090 Registers**.
 6.  Klicka på **Kör nu**.
 
-#### För att lägga till en rekommendationsflik i knappsatsen till höger på skärmen
-<a id="to-add-a-recommendations-tab-to-the-button-grid-on-the-right-side-of-the-screen" class="xliff"></a>
+#### <a name="to-add-a-recommendations-tab-to-the-button-grid-on-the-right-side-of-the-screen"></a>För att lägga till en rekommendationsflik i knappsatsen till höger på skärmen
 
 1.  Högerklicka i det tomma utrymmet under den sista fliken på knappsatsen till höger på sidan.
 2.  Klicka på **Anpassa**.[![bild-5](./media/pic-5.png)](./media/pic-5.png)
@@ -80,8 +76,7 @@ Det finns två konfigurationsalternativ tillgängliga. Välj det alternativ som 
 12. Klicka på **Kör nu**.
 
 
-Se även
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Se även
 --------
 
 [Översikt över anpassade produktrekommendationer](personalized-product-recommendations.md)

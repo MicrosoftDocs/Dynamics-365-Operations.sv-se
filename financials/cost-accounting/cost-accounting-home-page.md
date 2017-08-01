@@ -24,8 +24,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Startsida för kostnadsredovisning
-<a id="cost-accounting-home-page" class="xliff"></a>
+# <a name="cost-accounting-home-page"></a>Startsida för kostnadsredovisning
 
 [!include[banner](../includes/banner.md)]
 
@@ -48,8 +47,7 @@ Med kostnadsredovisningsmodulen kan du göra följande:
 -   Skapa utdrag som kan visas på arbetsytan.
 -   Skapa rapporter genom att använda Excel.
 
-## Kom igång
-<a id="get-started" class="xliff"></a>
+## <a name="get-started"></a>Kom igång
 
 > [!Video https://www.youtube.com/embed/https://www.youtube.com/embed/1pUDtJQZ8FU]
 
@@ -66,14 +64,12 @@ För att förstå hur du kan använda kostnadsredovisning i ditt dagliga arbete 
 -   [Dimensioner för kostnadsobjekt](cost-objects.md)
 -   [Skapa kostnadselement](http://ax.help.dynamics.com/en/wiki/create-cost-objects/) (uppgiftsguide)
 
-## Mobil arbetsyta för kostnadskontroll
-<a id="cost-control-mobile-workspace" class="xliff"></a>
+## <a name="cost-control-mobile-workspace"></a>Mobil arbetsyta för kostnadskontroll
 Med den mobila arbetsytan för kostnadskontroll kan chefer för kostnadsställen se kostnadsställets effektivitet när som helst och var som helst.
 
 -   [Mobil arbetsyta för kostnadskontroll](cost-controlling-mobile-workspace.md)
 
-## Kostnadsredovisningsanalys för Power BI-innehåll
-<a id="cost-accounting-analysis-power-bi-content" class="xliff"></a>
+## <a name="cost-accounting-analysis-power-bi-content"></a>Kostnadsredovisningsanalys för Power BI-innehåll
 Microsoft Power BI-innehållet för kostnadsredovisningsanalys är avsett för kostnadscontrollers eller andra med ansvar för att utföra kostnadskontroller inom en organisation. Det innehåller viktiga mätvärden såsom kostnad, omfattning och kostnadstariff efter verklig kostnad, budgeterad kostnad och kostnad för flexibel budget. Det använder transaktionsdata från kostnadsredovisningen i Finance and Operations och visar totala kostnader för hela organisationen i en rapporteringsvaluta. Chefer kan filtrera data efter kostnadsobjekt för kostnadskontroll av organisationsenheter, även om organisationen kan ha flera juridiska personer.
 
 -   [Power BI-innehåll för kostnadsredovisningsanalys](/dynamics365/unified-operations/dev-itpro/analytics/cost-accounting-analysis-content-pack)

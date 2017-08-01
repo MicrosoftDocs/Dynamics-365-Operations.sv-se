@@ -26,8 +26,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Hjälpöversikt
-<a id="help-overview" class="xliff"></a>
+# <a name="help-overview"></a>Hjälpöversikt
 
 [!include[banner](../includes/banner.md)]
 
@@ -57,8 +56,7 @@ Det här avsnittet beskriver hjälpsystemet och förklarar hur du kan skapa anpa
 > [!IMPORTANT]
 > Fliken **Uppgiftsguider** finns för närvarande inte i Microsoft Dynamics 365 for Talent eller Microsoft Dynamics 365 for Retail. Vi arbetar för närvarande med att aktivera den här funktionen i framtida versioner. Uppgiftsguiderna i Komma igång i Talent täcker fortsatt basfunktionerna. Procedurhjälp finns också på webbplatsen docs.microsoft.com ([docs.microsoft.com/dynamics365/operations](/dynamics365/#pivot=solutions&panel=solutions_operations)) för både Retail och Talent.
 
-## Hjälp om docs.microsoft.com
-<a id="help-on-docsmicrosoftcom" class="xliff"></a>
+## <a name="help-on-docsmicrosoftcom"></a>Hjälp om docs.microsoft.com
 
 Webbplatsen docs.microsoft.com ([docs.microsoft.com/dynamics365/operations](/dynamics365/#pivot=solutions&panel=solutions_operations)) är den primära källan för produktinformation för Finance and Operations. Webbplatsen erbjuder följande funktioner:
 
@@ -67,8 +65,7 @@ Webbplatsen docs.microsoft.com ([docs.microsoft.com/dynamics365/operations](/dyn
 -   **Åtkomst till andra typer av innehåll** – Webbplatsen ger dig snabb åtkomst till olika typer av innehåll om Finance and Operations, till exempel Microsoft Office Mix-presentationer, uppgiftsguider, videor och avsnitt.
 -   **Innehåll som stöder dina affärsprocesser**– Webbplatsen innehåller affärsprocessfokuserat innehåll som använder affärsprocessmodelleraren (Business Process Modeler, BPM) i Microsoft Dynamics Lifecycle Services (LCS).
 
-### Söka på docs.microsoft.com
-<a id="searching-on-docsmicrosoftcom" class="xliff"></a>
+### <a name="searching-on-docsmicrosoftcom"></a>Söka på docs.microsoft.com
 Vi får många frågor om hur man söker efter webbplatsens innehåll. Om du startar från en sida om Finance and Operations på vår webbplats begränsar vi din sökning så att den bara omfattar Finance and Operations-innehåll. Du kan ta bort begränsningen genom att klicka på X bredvid Operationer i sökrutan. 
 
 ![Sök efter order](./media/search-scope.png)
@@ -78,12 +75,10 @@ Du kan också hitta webbplatsens innehåll via valfri sökmotor. För bästa res
 
 ![Sökresultat för webbplats](./media/site-search-results.png)
 
-### docs.microsoft.com-innehållsförteckningen för Unified Operations
-<a id="the-docsmicrosoftcom-table-of-contents-for-unified-operations" class="xliff"></a>
+### <a name="the-docsmicrosoftcom-table-of-contents-for-unified-operations"></a>docs.microsoft.com-innehållsförteckningen för Unified Operations
 Alla produkter delar en och samma innehållsförteckning på dokumentwebbplatsen, vilket gör att kunder kan se kontexten för det avsnitt som de befinner sig i. Du kan också använda filterkontrollen för att hitta avsnitt som du letar efter.
 
-### Hur kan jag bidra?
-<a id="how-can-i-contribute" class="xliff"></a> 
+### <a name="how-can-i-contribute"></a>Hur kan jag bidra? 
 
 Skriv en kommentar! 
 
@@ -105,8 +100,7 @@ Ange en e-postadress och ett nytt lösenord till höger för att skapa ett nytt 
 ![Inloggningsalternativ](./media/signin-options.png)
 
 
-## Uppgiftsguider
-<a id="task-guides" class="xliff"></a>
+## <a name="task-guides"></a>Uppgiftsguider
 En uppgiftsguide är en kontrollerad, guidad, interaktiv upplevelse som leder dig genom stegen för en uppgift eller en affärsprocess. Du kan öppna (spela upp) en uppgiftsguide via fönstret Hjälp. När du först klickar på en uppgiftsguide visar fönstret Hjälp steg för steg-instruktionerna för uppgiften. Nu finns det lokaliserade uppgiftsguider. 
 
 Vi tillhandahåller olika typer av uppgiftsguider för varje Unified Operations-produkt. Avsnittet Komma åt uppgiftsguider från hjälpfönstret beskriver hur du hittar rätt uppgiftsguider för just din produkt. 
@@ -119,8 +113,7 @@ Om du vill starta en guidad, interaktiv tur ska du klicka på **Starta uppgiftsg
 > [!IMPORTANT] 
 > De data som du anger när du spelar upp en uppgiftsguide är verkliga. Om du arbetar i en produktionsmiljö anges data i företaget som du för närvarande använder.
 
-### Allt börjar med uppgiftsregistreraren
-<a id="it-all-begins-with-task-recorder" class="xliff"></a>
+### <a name="it-all-begins-with-task-recorder"></a>Allt börjar med uppgiftsregistreraren
 
 Uppgiftsguider skapas genom med uppgiftsregistreraren. När du använder uppgiftsinspelaren registreras alla åtgärder du utför i användargränssnittet för Finance and Operations (som att klicka på menyer, ändra inställningar eller ange data). Stegen som du registrerar kallas gemensamt för en uppgiftsregistrering Som vi förklarade i det föregående avsnittet, kan uppgiftsregistreringar visas i fönstret Hjälp och spelas som uppgiftsguider. Det finns dock andra sätt att använda uppgiftsregistrering:
 
@@ -129,27 +122,23 @@ Uppgiftsguider skapas genom med uppgiftsregistreraren. När du använder uppgift
 
 För mer information om uppgiftsinspelaren, se [Uppgiftsinspelaren i Finance and Operations](../user-interface/task-recorder.md).
 
-### Skapa anpassade uppgiftsregistreringar
-<a id="creating-customized-task-recordings" class="xliff"></a>
+### <a name="creating-customized-task-recordings"></a>Skapa anpassade uppgiftsregistreringar
 
 Du kan skapa egna uppgiftsregistreringar eller så hämta och anpassa uppgiftsregistreringen som Microsoft tillhandahåller. Därför kan du skapa anpassad hjälp för din organisation som återspeglar din specifika implementering av Finance and Operations. Om du vill visa en uppgiftsinspelning i hjälpfönstret för Finance and Operations och spela upp den som en uppgiftsguide, måste du spara inspelningen i ett BPM-bibliotek i LCS. Om du är partner och befordrar ett bibliotek till ett företagsbibliotek och inkluderar det i en lösning, blir det tillgängligt även för dina kunder. Fullständiga instruktioner finns i [Använda uppgiftsregistreringar för att skapa dokumentation eller utbildning](../user-interface/task-recorder.md).
 
-## Produkthjälp
-<a id="in-product-help" class="xliff"></a>
+## <a name="in-product-help"></a>Produkthjälp
 För att nå hjälpavsnittet i Dynamics 365 for Operations Finance and Operations klickar du antingen på ikonen **Hjälp** (**?**) och väljer sedan Hjälp, eller också trycker du på Ctrl+Shift+?. I båda fall öppnas fönstret Hjälp. I fönstret Hjälp kan du öppna artiklar eller uppgiftsguider. 
 
 ![Hjälpfönster](./media/help-pane-wiki-1024x684.png)
 
-### Öppna hjälpavsnitt via hjälpfönstret
-<a id="accessing-help-topics-from-the-help-pane" class="xliff"></a>
+### <a name="accessing-help-topics-from-the-help-pane"></a>Öppna hjälpavsnitt via hjälpfönstret
 
 Via hjälpfönstret kan du få åtkomst till artiklar som gäller för Finance and Operations-klienten. När du först öppnar hjälpfönstret och klickar på fliken **Wiki** ser du de artiklar som gäller för den sida du för närvarande använder i Finance and Operations. Om inga artiklar hittas kan du ange nyckelord för att begränsa sökningen. När du klickar på en artikel i fönstret Hjälp öppnas en ny flik i webbläsaren som visar artikeln. 
 
 > [!IMPORTANT]
 > Det här avsnittet gäller inte Dynamics 365 for Talent. Hjälpsystemet för Talent ansluts automatiskt till uppgiftsguider för produkten. Du skapa heller inte skapa anpassade uppgiftsguider för Talent. 
 
-### Öppna uppgiftsguider via hjälpfönstret
-<a id="accessing-task-guides-from-the-help-pane" class="xliff"></a>
+### <a name="accessing-task-guides-from-the-help-pane"></a>Öppna uppgiftsguider via hjälpfönstret
 
 Innan du kan få åtkomst till uppgiftsguiderna via hjälpfönstret måste en systemadministratör öppna sidan **Systemparametrar** i Finance and Operations och konfigurera vissa inställningar. 
 
@@ -175,15 +164,13 @@ När en systemadministratör har slutfört de här stegen kan du öppna Hjälp-f
 
 ![Läsvy för uppgiftsguide](./media/task-guide-ops-1024x742.png)
 
-### Var finns de översatta uppgiftsguiderna?
-<a id="where-are-the-translated-task-guides" class="xliff"></a>
+### <a name="where-are-the-translated-task-guides"></a>Var finns de översatta uppgiftsguiderna?
 
 Översatta uppgiftsguider publiceras i bibliotek med "Alla språk" i rubriken. Om du vill se hjälpen för den lokaliserade uppgiftsguiden i Finance and Operations, se då till att du är ansluten till ett lämpligt bibliotek. Språket i uppgiftsguiden styrs av varje användare via Språkinställningar under **Alternativ** &gt; **Inställningar**. 
 -   Om en uppgiftsguide har översatts visas all text i guiden på det valda språket när du öppnar den.
 -   Om en uppgiftsguide ännu inte har översatts, visas enbart en del text i guiden (text för kontroller) på det valda språket när du öppnar den.
 
-## Ytterligare resurser
-<a id="additional-resources" class="xliff"></a>
+## <a name="additional-resources"></a>Ytterligare resurser
 Följande tabell anger webbplatser med tillhandahåller Unified Operations-innehåll. Våra innehållswebbplatser är ordnade för att stödja kundlivscykeln. Varje fas stöds av en annan uppsättning webbplatser. Webbplatser som har en asterisk (\*) bredvid namnet kräver att du loggar in med ett konto som är kopplat till ett tjänsteavtal.
 
 | Plats                                                                     | beskrivning                                                                                                                                                                                                                                |
@@ -199,8 +186,7 @@ Följande tabell anger webbplatser med tillhandahåller Unified Operations-inneh
 
 
 
-Se även
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Se även
 --------
 [Hjälpsystem för Finance and Operations (hämtningsbart faktablad)](https://mbs.microsoft.com/files/public/CS/AX2012R3/DynamicsAXHelpSystemFactSheet.pdf)
 

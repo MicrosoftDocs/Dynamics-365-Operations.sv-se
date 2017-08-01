@@ -27,8 +27,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Översikt över avancerad bankavstämning
-<a id="advanced-bank-reconciliation-overview" class="xliff"></a>
+# <a name="advanced-bank-reconciliation-overview"></a>Översikt över avancerad bankavstämning
 
 [!include[banner](../includes/banner.md)]
 

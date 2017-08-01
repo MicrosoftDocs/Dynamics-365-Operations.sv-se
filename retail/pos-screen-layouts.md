@@ -27,8 +27,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Konfigurera skärmlayouter för kassa
-<a id="configure-screen-layouts-for-pos" class="xliff"></a>
+# <a name="configure-screen-layouts-for-pos"></a>Konfigurera skärmlayouter för kassa
 
 [!include[banner](includes/banner.md)]
 
@@ -37,8 +36,7 @@ Det här avsnittet innehåller information om skärmlayouter för Microsoft Dyna
 
 Användargränssnittet för The Microsoft Dynamics 365 for Retail point of sale (POS) kan konfigureras med en kombination av visuella profiler och skärmlayouter, tilldelade till butiker, kassor och/eller användare.
 
-## Visuell profil
-<a id="visual-profile" class="xliff"></a>
+## <a name="visual-profile"></a>Visuell profil
 Visuella profiler tilldelas till kassor och används för att ange visuella element som är kassaspecifika och delade för användare. Alla användare som loggar in på kassan har samma tema, färger och bilder. 
 
 **Profilnummer** - Profilnumret är en unik identifierare för den visuella profilen. 
@@ -55,8 +53,7 @@ Visuella profiler tilldelas till kassor och används för att ange visuella elem
 
 **Programmets bakgrund** - Kassan kan också använda en bild som bakgrund i hela programmet i stället den fasta temafärgen. Med inloggningsbakgrunder rekommenderas du att hålla filstorleken så minimal som möjligt.
 
-## Skärmlayouter
-<a id="screen-layouts" class="xliff"></a>
+## <a name="screen-layouts"></a>Skärmlayouter
 Skärmlayoutkonfigurationen avgör åtgärderna, innehållet i och placeringen av UI-kontrollerna på kassavälkomstskärmen och transaktionsskärmen. 
 
 **Välkomstskärm**- I de flesta fall är välkomstskärmen den sida som användare ser när de först loggar in i kassan. Välkomstskärmen kan bestå av ett varumärke och knappsatser som ger åtkomst till kassaåtgärder. Åtgärder som inte är specifika för den aktuella transaktionen är oftast placerade här. 
@@ -65,13 +62,11 @@ Skärmlayoutkonfigurationen avgör åtgärderna, innehållet i och placeringen a
 
 **Standardstartskärm** - Vissa återförsäljare föredrar att kassören går direkt till transaktionsskärmen efter inloggning. Standardinställningarna för startskärmen gör att användare kan ställa in detta för varje skärmlayout.
 
-### Uppdrag
-<a id="assignment" class="xliff"></a>
+### <a name="assignment"></a>Uppdrag
 
 Skärmlayouter kan tilldelas på butik-, kassa- och användarnivå. Användartilldelningen åsidosätter kassa- och butikstilldelningen, och kassatilldelningen åsidosättningar butikstilldelningen. I ett enkelt scenario där alla användare använder samma layout oavsett kassa eller roll kan skärmlayouten endast anges för butiken. I de fall där vissa kassor eller användare kräver specialiserade layouter, kan de tilldelas på därefter.
 
-### Layoutstorlekar
-<a id="layout-sizes" class="xliff"></a>
+### <a name="layout-sizes"></a>Layoutstorlekar
 
 Den här funktionen gäller bara Dynamics 365 for Retail version 1611. Eftersom skärmlayouter i många fall kan användas för flera skärmstorlekar och upplösningar, kan användare konfigurera sin layout och sitt innehåll för var och en. Kassaprogrammet väljer automatiskt den närmaste layoutstorleken för enheten vid tiden för start. En skärmlayout kan även innehålla konfigurationer för både fullstora och kompakta enheter. Med den här konfigurationen kan en användare tilldelas till en enda skärmlayout som fungerar för olika storlekar och formfaktorer i butiken. 
 
@@ -79,8 +74,7 @@ Den här funktionen gäller bara Dynamics 365 for Retail version 1611. Eftersom 
 
 **Modern POS - komprimerad** - Komprimerad layout används oftast bäst för telefoner eller små surfplattor. Designmöjligheter är begränsade för kompakta enheter. Användare kan konfigurera kolumner och fält för kvitto- och summarfönster.
 
-### Layoutdesigner för skärm
-<a id="screen-layout-designer" class="xliff"></a>
+### <a name="screen-layout-designer"></a>Layoutdesigner för skärm
 
 Varje layoutstorlek inom en skärmlayout måste konfigureras med skärmlayoutdesignern. Med designern kan användarna ange och konfigurera UI-elementen på transaktionsskärmen. Skärmlayoutdesignern använder ClickOnce för att hämta, installera och starta den senaste versionen av programmet varje gång användaren öppnar den. Kontrollera webbläsarkraven för ClickOnce. Vissa webbläsare, t ex Chrome, kräver tillägg. 
 
@@ -98,8 +92,7 @@ Varje layoutstorlek inom en skärmlayout måste konfigureras med skärmlayoutdes
 
 **Rekommenderade produkter** - Om det är konfigurerat för miljön, visar kontrollen för rekommenderade produkter produktförslag baserade på maskininlärning. Den rekommenderade kontrollen av produkter är bara tillgänglig för fullständiga layouter i Dynamics 365 for Retail version 1611. **Anpassad kontroll **- Den anpassade kontrollen fungerar som platshållare i skärmlayouten så att du kan reservera utrymme för anpassat innehåll. Den anpassade kontrollen är bara tillgänglig för fullständiga layouter.
 
-Se även
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Se även
 --------
 
 [Installera layoutdesignern Retail POS](install-pos-layout-designer.md)

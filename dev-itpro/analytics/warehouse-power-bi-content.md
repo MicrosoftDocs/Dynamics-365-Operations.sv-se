@@ -26,15 +26,13 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Power BI-innehåll för lagerställets prestanda
-<a id="warehouse-performance-power-bi-content" class="xliff"></a>
+# <a name="warehouse-performance-power-bi-content"></a>Power BI-innehåll för lagerställets prestanda
 
 [!include[banner](../includes/banner.md)]
 
 Det här avsnittet beskriver vad som ingår i Microsoft Power BI-innehållet för **Lagerställets prestanda**. Det förklarar hur du öppnar Power BI-rapporter och ger information datamodellen och de enheter som används för att skapa innehållet.
 
-## Översikt
-<a id="overview" class="xliff"></a>
+## <a name="overview"></a>Översikt
 
 Microsoft Power BI-innehåll för **Lagerställets prestanda** skapades så att chefer för lagerställen och verksamhetschefer kan övervaka viktiga inkommande, utgående och lagermått. Den använder lagerstyrning, produkt och andra transaktionsdata från ditt system och ger både en aggregerad vy över lagerställets prestanda och en uppdelning för leverantörer, produktgrupper och produkter samt plats och lagerställen. 
 
@@ -44,12 +42,10 @@ Lagerställechefer kan använda Power BI-innehåll för **lagerställets prestan
 -   **Leveransprestanda** – mät om distributionslagret levereras i sin helhet och i tid till kunder (d.v.s. mät utgående transport- och leveransprestanda), så att du kan identifiera eventuella problem som rör produkter, platser eller lagerställen eller särskilda kunder. Om du tycker att du får sen leverans till specifika områden eller städer kan du behöva ägna mer uppmärksamhet åt transport eller kontohantering.
 -   **Platslagerprecision** – lagerprecision är en viktigt intern Business Intelligence för lagerställe (BI). Det är mycket viktigt att du avgör hur exakt du i allmänhet räknar. Det är dock också viktigt att fastställa hur exakt du artiklarna lagras på rätt plats och att markera avvikelsedata så att du kan hitta bättre befattningar för artiklar eller initiera totala positioner om ett visst objekt. (För närvarande levereras nya artikelbaserade cykliska funktioner som en snabbkorrigering). Om du använder Power BI-innehållet för att avgöra korrekt lagerbehållningsdata per lagerställe kan du även identifiera stöld i dina butiker. Du kan bestämma om några platser har lagerbehållningskvantiteter som avviker från företagets resursplaneringsdata (ERP). Dessa platser kan vara för stora eller omöjligt att räkna. Alternativt kan bland annat fysisk placering vara dålig, så att det är svårt att synkronisera en enstaka objekttyp med behållningsdata.
 
-## Åtkomst till Power BI-innehållspaket
-<a id="accessing-the-power-bi-content-pack" class="xliff"></a>
+## <a name="accessing-the-power-bi-content-pack"></a>Åtkomst till Power BI-innehållspaket
 Om du använder Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, uppdatering juli 2017 visas Power BI-innehållet **Lagerställeprestanda** på sidan **Lagerställeprestanda** (**Lagerstyrning** > **Förfrågningar och rapporter** > **Lagerprestandaanalyser** > **Lagerställeprestanda**). 
 
-## Mått som ingår i Power BI-innehållet
-<a id="metrics-that-are-included-in-the-power-bi-content" class="xliff"></a>
+## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mått som ingår i Power BI-innehållet
 Power BI-innehållet för **Prestanda för lagerställe** innehåller ofta en rapport. Denna rapport består av en uppsättning mått som visualiseras som diagram, brickor och tabeller. Följande register ger en översikt över de visuella effekterna i Power BI-innehållet **Prestanda för lagerställe**.
 
 | Rapportsida                 | Diagram                                   | beskrivning                                                                                                                                                                                                                                                                                                                                                                                                     |
@@ -81,8 +77,7 @@ Power BI-innehållet för **Prestanda för lagerställe** innehåller ofta en ra
 | Leveransprestanda        | Leverans efter produkt                       | Den procentandel som levererades tidigt, i tid eller sent per artikel eller artikelgrupp.                                                                                                                                                                                                                                                                                                                                   |
 | Leveransprestanda        | Levererade av kunder                      | Den procentandel som levererades tidigt, i tid eller sent per kund eller kundgrupp.                                                                                                                                                                                                                                                                                                                           |
 | Leveransprestanda        | Levererat per site/lagerställe              | Den procentandel som levererades tidigt, i tid eller sent per site eller lagerställe.                                                                                                                                                                                                                                                                                                                                    |
-## Utöka Power BI-innehåll
-<a id="extending-the-power-bi-content" class="xliff"></a>
+## <a name="extending-the-power-bi-content"></a>Utöka Power BI-innehåll
 Genom att använda innehållspaket som är tillgängliga i Microsoft Dynamics Lifecycle Services (LCS) kan du ge bra analyser till människor som inte är inloggade i Microsoft Dynamics 365. Du kan ändra dessa innehållspaket så att de innehåller andra rapporter och modeller och publicera innehållspaket till din Power BI.com-innehavare för analys. 
 
 Du hittar Power BI-innehåll för **Lagerställeprestanda** i biblioteket för gemensamma tillgångar i LCS. Mer information om hur du laddar ned innehållspaket och använder det i din organisation finns i [Power BI-innehåll i LCS från Microsoft och dina partner](power-bi-content-microsoft-partners.md). Om du vill se en demonstration som visar hur du implementerar Power BI-innehållet, se [Power BI-innehåll från Microsoft och dina samarbetspartners i Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office mix.
@@ -92,8 +87,7 @@ Hämta innehållet för **Lagerprestanda** som avser versionen av Dynamics 365 s
 > [!NOTE]
 > Om du använder Microsoft Dynamics 365 for Operations version 1611 krävs KB 4011327 för detta Power BI-innehåll. När du loggar in på LCS får du åtkomst till KB här: https://fix.lcs.dynamics.com/issue/results/?q=kb4011327.
 
-## Förstå datamodellen och beräkningar
-<a id="understanding-the-data-model-and-calculations" class="xliff"></a>
+## <a name="understanding-the-data-model-and-calculations"></a>Förstå datamodellen och beräkningar
 Följande data används för att fylla i rapportsidorna Power-Bi-innehållet **Lagerställeprestanda**. Informationen visas som sammansatta mått som mellanlagras i Enhetslagring. Enhetslagring är en Microsoft SQL Server-databas som är optimerad för analys. Mer information finns i [Översikt för Power BI-integrering med enhetsarkiv](power-bi-integration-entity-store.md). 
 
 Följande sammanlagda huvudmått används till grund för innehållet:

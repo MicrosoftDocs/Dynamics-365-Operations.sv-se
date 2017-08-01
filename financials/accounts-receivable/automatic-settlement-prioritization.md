@@ -27,8 +27,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Automatisk kvittning och prioritering
-<a id="automatic-settlement-and-prioritization" class="xliff"></a>
+# <a name="automatic-settlement-and-prioritization"></a>Automatisk kvittning och prioritering
 
 [!include[banner](../includes/banner.md)]
 
@@ -42,8 +41,7 @@ Du har två alternativ när du kvittar fakturor och betalningar mot andra transa
 
 Följande avsnitt beskriver hur transaktioner kvittas för varje metod.
 
-## Exempel på transaktioner
-<a id="example-transactions" class="xliff"></a>
+## <a name="example-transactions"></a>Exempel på transaktioner
 Exemplen på kvittningar senare i den här artikeln baseras på följande transaktioner. Alla transaktioner är för kund 2050.
 
 | Transaktion   | Datum        | Belopp | Villkor för kassarabatt | Kassarabattdatum | Kommentarer                                                                                                                                                                                      |
@@ -53,8 +51,7 @@ Exemplen på kvittningar senare i den här artikeln baseras på följande transa
 | Faktura 3     | 15 oktober  | 500.00 | 2% 14/Netto 30        | 29 oktober         |                                                                                                                                                                                               |
 | Räntefaktura | 15 oktober  | 07:00   |                     |                    | Den här räntefakturan gäller faktura 1 och 2. Beloppet beräknas som 2 % ränta på belopp som är mer eller 30 dagar efter förfallodatum. T.ex. 0,02 × (100,00 + 250,00) = 7,00. |
 
-## Användardefinierad kvittningsprioritet
-<a id="userdefined-settlement-priority" class="xliff"></a>
+## <a name="userdefined-settlement-priority"></a>Användardefinierad kvittningsprioritet
 Om du ställer in **Använd prioritet för automatiska betalningar** till **Ja** på sidan **Parametrar för kundreskontra** används den betalningsprioritet som du definierar på sidan **Kvittningprioritet** när transaktioner markeras för automatisk kvittning. För det här exemplet har följande kvittningprioritet definierats:
 
 1.  transaktionstyp
@@ -75,8 +72,7 @@ Om du bokför en betalning på 700,00 den 25 oktober kvittas betalingen för tra
 | Faktura 2     | 2015/09/01   | 10002   | 250.00                         | 250.00           | 0,00    | USD      |
 | Faktura 3     | 2015/10/15 |         | 500.00                         | 343,00           | 157,00  | USD      |
 
-## Standardvald automatisk kvittning
-<a id="default-automatic-settlement" class="xliff"></a>
+## <a name="default-automatic-settlement"></a>Standardvald automatisk kvittning
 Om det inte finns någon användardefinierad kvittningsprioritet, markeras automatiskt transaktioner för kvittning baserat på förfallodatumet. Transaktionerna som betalats måste ha samma valuta som transaktionen de ska kvittas mot. Om du bokför en betalning på 700,00 den 25 oktober väljs automatiskt följande transaktioner för kvittning.
 
 | Verifikation       | Datum       | Faktura | Belopp i transaktionsvalutan | Belopp att kvitta | Saldo | Valuta |

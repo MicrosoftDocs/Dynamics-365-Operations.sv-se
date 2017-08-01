@@ -27,8 +27,7 @@ ms.lasthandoff: 06/17/2017
 
 ---
 
-# Skapa dokumentation eller utbildning med uppgiftsregistreringar
-<a id="create-documentation-or-training-using-task-recordings" class="xliff"></a>
+# <a name="create-documentation-or-training-using-task-recordings"></a>Skapa dokumentation eller utbildning med uppgiftsregistreringar
 
 [!include[banner](../includes/banner.md)]
 
@@ -37,8 +36,7 @@ Det här avsnittet förklarar vad uppgiftsregistrering och uppgiftsguider är, h
 > [!IMPORTANT]
 > Du kan inte skapa anpassade uppgiftsguider för Dynamics 365 for Talent. Hjälpsystemet för Talent ansluts automatiskt till uppgiftsguider för produkten. 
 
-Läs om uppgiftsregistrering
-<a id="learn-about-task-recorder" class="xliff"></a>
+<a name="learn-about-task-recorder"></a>Läs om uppgiftsregistrering
 -------------------------
 
 Uppgiftsinspelaren är ett verktyg som du kan använda till att registrera åtgärder som du utför i produktanvändargränssnittet (UI). När du använder uppgiftsregistrering spelas alla händelser som du utför i UI, som utförs mot servern, inklusive lägga till värden, ändra inställningar, ta bort data, in. Stegen som du registrerar kallas gemensamt för en *uppgiftsregistrering* Uppgiftsregistrering kan användas på flera sätt:
@@ -50,8 +48,7 @@ Uppgiftsinspelaren är ett verktyg som du kan använda till att registrera åtg�
 
 Du kan skapa egna uppgiftsregistreringar, spela upp uppgiftsregistreringar som tillhandahålls av Microsoft eller ändra Microsofts uppgiftsregistrering för att återspegla konfigurationen. För mer information om Uppgiftsinspelare, se [Uppgiftsinspelare](task-recorder.md).
 
-## Planera uppgiftsregistrering
-<a id="plan-your-task-recording" class="xliff"></a>
+## <a name="plan-your-task-recording"></a>Planera uppgiftsregistrering
 Om du skapar en ny uppgiftsregistrering eller baserar din registrering på Microsofts uppgiftsregistrering, tänk på följande information.
 
 -   Planera registreringen som för en video. Gör alla dina beslut i förväg.
@@ -101,12 +98,10 @@ Detta är vad anteckningskommentar ser ut som i "bubblan” i uppgiftsguiden.
 
 **Bestäm var i användargränssnittet du startar en inspelning**. Sidan som visas när du börjar spela in en uppgiftsinspelning påverkar vilka sidor uppgiftsguiden visar. Om du exempelvis vill att din uppgiftsinspelning ska visas i listan i hjälpfönstret när användaren klickar på Hjälp på sidan Redovisningsparametrar måste du starta inspelningen på sidan Redovisningsparametrar. **Spara registreringar som .axtr-filer** När du har skapat eller redigerat en uppgiftsregistrering får du flera alternativ för att hämta eller spara registreringen. Du kan hämta filen som en uppgiftsregistreringspaket (.axtr), hämta den som en rå registreringsfil (.xml), hämta den som ett Word-dokument eller spara filen i ett LCS-bibliotek. Det är en bra idé att alltid uppgiftsregistreringar som en uppgiftsregistreringspaketfil (.axtr). Detta gör det lättare att underhålla filen enklare om procedurer eller kommentarer måste ändras senare. Om du vill hämta filen som ett Word-dokument, spara den även uppgiftsregistreringspaketfil.
 
-## Skapa en uppgiftsregistrering
-<a id="create-your-task-recording" class="xliff"></a>
+## <a name="create-your-task-recording"></a>Skapa en uppgiftsregistrering
 Detaljerad information finns i [Skapa en uppgiftsinspelning](task-recorder.md).
 
-## Kopiera och anpassa Microsofts uppgiftsregistreringar
-<a id="copy-and-customize-microsofts-task-recordings" class="xliff"></a>
+## <a name="copy-and-customize-microsofts-task-recordings"></a>Kopiera och anpassa Microsofts uppgiftsregistreringar
 Du kan hämta och redigera Microsofts uppgiftsregistreringar för att använda dem för egen hjälpdokumentation eller eget utbildningsmaterial. Hämta en Microsoft uppgiftsregistrering genom att följa dessa steg:
 
 1.  Öppna Uppgiftsinspelaren. Uppgiftsregistrering finns på menyn **Inställningar**.
@@ -121,12 +116,10 @@ Du kan hämta och redigera Microsofts uppgiftsregistreringar för att använda d
 10. När registreringen har spelat till slutet, klicka på **Stoppa** i uppgiftsregistreringsfältet överst på skärmen.
 11. Välj hur du vill spara uppgiftsregistreringen.
 
-## Inkludera dina uppgiftsregistreringar i hjälpfönstret
-<a id="include-your-task-recordings-in-the-help-pane" class="xliff"></a>
+## <a name="include-your-task-recordings-in-the-help-pane"></a>Inkludera dina uppgiftsregistreringar i hjälpfönstret
 Om du vill visa dina egna anpassade uppgiftsregistrering i hjälpfönstret så att de kan spelas upp som uppgiftsguider eller visas som text, måste du spara dina uppgiftsregistreringar i ditt eget BPM-bibliotek och sedan uppdatera hjälpsystemparametrarna så att de pekar på ditt BPM bibliotek. Mer information finns i [Ansluta hjälpsystemet](../get-started/help-connect.md).
 
-Se även
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Se även
 --------
 
 [Hjälp – översikt](..\get-started\help-overview.md)

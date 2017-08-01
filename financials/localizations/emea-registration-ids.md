@@ -26,8 +26,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Registrerings-ID
-<a id="registration-ids" class="xliff"></a>
+# <a name="registration-ids"></a>Registrerings-ID
 
 [!include[banner](../includes/banner.md)]
 
@@ -36,8 +35,7 @@ Det här avsnittet innehåller information om hur du konfigurerar och använder 
 
 Många länder och regioner har olika regler och krav för att registrera momsregistreringsnummer eller -ID. Det här avsnittet ger en översikt en över de inställningar och den bearbetning av stödda registreringstyper som krävs för parter i olika europeiska länder/regioner. Alla länder/regioner har sina krav för att stödja olika landsspecifika funktioner som berör registreringsnummer utfärdade av andra myndigheter. Exempel på registreringsnummer är socialförsäkringsnummer (social security number, SSN), skatteidentifieringsnummer (tax identification number, TIN) samt europeiskt moms-ID (EU moms-ID). Den här funktionen ger en enhetlig ram för alla länder i alla regioner med hänsyn till nationsspecifika krav i vissa europeiska länder. Följande avsnitt beskriver det generella flödet av information som används för att konfigurera och bearbeta registrerings-ID.
 
-## Skapa registreringstyp
-<a id="registration-type-creation" class="xliff"></a>
+## <a name="registration-type-creation"></a>Skapa registreringstyp
 Innan du kan ange ett registrerings-ID måste du ställa in momsregistreringstyper för de olika typer av registreringsnummer som varje part berörs av. Navigera till sidan **Organisationsadministration** &gt; **Global adressbok** &gt; **Registreringstyper** &gt; **Registreringstyper**  för att skapa och hantera registreringstyper för leverantörer, kunder, personal och juridiska personer i olika länder/regioner.
 
 |Fält                 |beskrivning      |
@@ -52,8 +50,7 @@ Innan du kan ange ett registrerings-ID måste du ställa in momsregistreringstyp
 | Unik              | Anger om registreringsnumret för registreringstypen är unikt. |
 | Primärt för land | Om en part är associerad med en eller fler adresser i ett visst land och registrerings-ID är giltigt för alla adresser, måste du ange en adress som primär för landet. Du kan bara registrera ett ID som primärt. Anger om registreringsnummer kan anges endast som primär landsadress. |
 
-## Tilldela en registreringstyp i en registreringskategori
-<a id="assign-a-registration-type-to-a-registration-category" class="xliff"></a>
+## <a name="assign-a-registration-type-to-a-registration-category"></a>Tilldela en registreringstyp i en registreringskategori
 Registreringskategori är registreringsidentifierare för land/region som har godkänts för användning i ett visst land/ en viss region i moms-, tull- och andra syften. Den här kategorin definierar valideringsregler för ett visst registrerings-ID (inklusive kontrollsiffror osv.) och registrerings-ID för inkludering i olika rapporter. Använd sidan **Organisationsadministration** &gt; **Global adressbok** &gt; **Registreringstyper** &gt; **Registreringskategorier** för att tilldela registreringstypen för ett visst land till en registreringskategori som stöds.
 
 | Fält            | beskrivning|
@@ -62,8 +59,7 @@ Registreringskategori är registreringsidentifierare för land/region som har go
 | Begränsat till         | Begränsningstypen gäller för momsregistreringstypen: Ingen, Person, Organisation.|
 | Registreringskategori | Den unika registreringsidentifieraren som har godkänts för användning i landet. En fullständig lista över stöds i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition-kategorierna nedan. |
 
-## Ange registrerings-ID för globala adressboksposter
-<a id="enter-registration-ids-for-global-address-book-records" class="xliff"></a>
+## <a name="enter-registration-ids-for-global-address-book-records"></a>Ange registrerings-ID för globala adressboksposter
 
 Den globala adressboken (GAB) i Microsoft Finance and Operations innehåller konsoliderad adressinformation för kunder, leverantörer, kontakter, affärsrelationer och juridiska personer. Mer information finns i [Översikt över Global adressbok](/dynamics365/unified-operations/fin-and-ops/organization-administration/overview-global-address-book). Partposterna som lagras i den globala adressboken kan innehålla en eller flera adressposter. Dessa adresser används för olika ändamål såsom fakturering, eller delleverans. Du kan ställa in registrerings-ID för adressinformation för kunder, leverantörer, personal och juridiska personer. Leta upp den partpost (juridisk person, leverantör, kund, anställd) som du vill ange register-ID för, klicka på **Registrerings-ID** på formulär som berör par, juridisk person, leverantör, kund eller arbetare för att öppna sidan **Hantera adresser**. På fliken **Momsregistrering** klickar du på **Lägg till** och anger följande information om registrerings-ID.
 
@@ -82,12 +78,10 @@ Den globala adressboken (GAB) i Microsoft Finance and Operations innehåller kon
 > [!NOTE]
 > Momsbefrielsenumret för juridisk person, leverantör eller kund kan väljas från registrerings-ID relaterade till moms-ID och som angetts för parten.
 
-## Söka efter poster efter registrerings-ID
-<a id="search-for-records-by-registration-id" class="xliff"></a>
+## <a name="search-for-records-by-registration-id"></a>Söka efter poster efter registrerings-ID
 Funktionen för att söka efter partposter utifrån ett registrerings-ID finns för formulär relaterade till part, juridisk person, leverantör, kund och arbetare. Klicka på **Söka registrerings-ID** för att öppna sidan **Sökvillkor för registrerings-ID**. Ange sökvillkor och klicka på **Sök**. De markerade posterna från den globala adressboken och associerade typer av partspost visas.
 
-## Registreringskategorier som stöds
-<a id="supported-registration-categories" class="xliff"></a>
+## <a name="supported-registration-categories"></a>Registreringskategorier som stöds
 I följande tabell visas de registreringstyper som stöds i Finance and Operations. Om du är bekant med Microsoft Dynamics AX 2012-fält för registrerings-ID så mappar denna tabell även dessa fält till registreringskategorierna i Finance and Operations.
 
 | Registreringskategori för Finance and Operations         |Land/region  | Term/fält för Dynamics AX 2012|

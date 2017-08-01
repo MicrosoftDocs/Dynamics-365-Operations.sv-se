@@ -27,8 +27,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Konfigurera utgiftshantering
-<a id="configure-expense-management" class="xliff"></a>
+# <a name="configure-expense-management"></a>Konfigurera utgiftshantering
 
 [!include[banner](../includes/banner.md)]
 
@@ -37,16 +36,13 @@ Det här avsnittet ger en beskrivning av övervägandena och besluten som måste
 
 Eftersom flera av besluten som du gör när du planerar konfigurationen för Utgiftshantering baseras på organisationens hierarki och ekonomiska struktur, måste du hänvisa till planläggningsdokumenten för dessa områden.
 
-## Koncerninterna utgifter
-<a id="intercompany-expenses" class="xliff"></a>
+## <a name="intercompany-expenses"></a>Koncerninterna utgifter
 När du aktiverar koncerninterna utgifter, kan du tillåta att juridiska personer och medarbetare ådrar utgifter på uppdrag av och inkasserar betalning från en annan juridisk person inom din organisation. En medarbetare i juridisk person A slutför till exempel ett projekt för juridisk person B. Om koncerninterna utgifter aktiveras kan medarbetaren spara en tidrapport till och får betalt av juridisk person, B. Om din organisation inte har flera juridiska personer behöver du inte aktivera koncerninterna utgifter. **Beslut:** Vill du aktivera koncerninterna utgifter?
 
-## Ekonomisk styrning
-<a id="financial-management" class="xliff"></a>
+## <a name="financial-management"></a>Ekonomisk styrning
 Utgiftshantering är väl integrerad med ekonomisk hanteringen i din organisation. Många konfigurationer för utgiftshantering baseras på besluten du har tagit om organisationens ekonomi. Följande avsnitt beskrivs olika områden som kräver planering och beslut baserade på företagets ekonomiska beslut och till och anvisningar från ditt ledningsteam.
 
-### Dagtraktamenten
-<a id="per-diems" class="xliff"></a>
+### <a name="per-diems"></a>Dagtraktamenten
 
 Du måste definiera medarbetarens dagtraktamente som din organisation ger. Eftersom dagtraktamente vanligtvis används för utgifter som till exempel logi, måltider och andra tillfälliga utgifter, kan du skapa regler för dagtraktamenteavdragen som din organisation ger. Traktamentstariffer kan anges utifrån tid på året, resmål eller båda. När du skapar en traktamentsregel kan du ange att hålla inne en procentandel av traktamentstariffen om medarbetaren bjuds på måltider eller tjänster. Du kan också definiera traktamentsreglernas skikt för att ange lägsta och högsta antal timmar som dagtraktamentetariffen kan tillämpas på en arbetares resor. **Beslut:**
 
@@ -67,8 +63,7 @@ Du måste definiera medarbetarens dagtraktamente som din organisation ger. Efter
         -   hotell
         -   övriga utgifter
 
-### Utgiftshanteringsjournaler och konton
-<a id="expense-management-journals-and-accounts" class="xliff"></a>
+### <a name="expense-management-journals-and-accounts"></a>Utgiftshanteringsjournaler och konton
 
 Utgiftshantering kräver att du använder flera journaler och konton. Du måste bestämma om till exempel samma konto används för förskott och kreditkortstvister. **Beslut:**
 
@@ -76,8 +71,7 @@ Utgiftshantering kräver att du använder flera journaler och konton. Du måste 
 -   Vilket konto används för förskott?
 -   Ska förskott bokföras direkt?
 
-### Betalningsmetoder
-<a id="payment-methods" class="xliff"></a>
+### <a name="payment-methods"></a>Betalningsmetoder
 
 När du beviljar medarbetare utlägg på uppdrag av ditt företag, måste du definiera de betalningsmetoder som medarbetare har behörighet att använda. Du kan till exempel tillåta att använda kontanter eller ett företagskort. Du kan även tillåta medarbetare att använda personliga kreditkort och sedan ersätta dem. Du måste göra följande beslut för varje betalningsmetod som du tillåter. **Beslut:**
 
@@ -87,8 +81,7 @@ När du beviljar medarbetare utlägg på uppdrag av ditt företag, måste du def
 -   Om det finns ett motkonto, vilket är kontot?
 -   Om betalningsmetoden är kreditkort, ska betalningsmetoden användas endast med importerade transaktioner?
 
-### Utgiftskategorier och delade kategorier
-<a id="expense-categories-and-shared-categories" class="xliff"></a>
+### <a name="expense-categories-and-shared-categories"></a>Utgiftskategorier och delade kategorier
 
 När medarbetare skapar en utgiftsrapport måste varje utgift som de registrerar associeras med en utgiftskategori. Utgiftskategorier härleds från delade kategorier som kan delas mellan juridiska personer inom din organisation. Dessa kategorier kan också delas i redovisning och projekthantering beroende på hur din organisation har definierats. Bestäm om kategorierna som används i utgiftshanteringen endast används i utgifter eller om de ska delas mellan projektet och utgifter, baserat på definitionen av din organisation och med anvisningar från implementeringsteamet. Observera att dessa kategorier kan delas mellan projekt och utgifter eller projekt och produktion, men inte mellan utgifter och produktion. Du måste göra följande beslut för varje utgiftskategori. **Beslut:**
 
@@ -126,8 +119,7 @@ När medarbetare skapar en utgiftsrapport måste varje utgift som de registrerar
 
  
 
-### Skatter
-<a id="taxes" class="xliff"></a>
+### <a name="taxes"></a>Skatter
 
 För utgiftsrelaterade skatter måste du bestämma vad som inkluderas eller aktiveras i utgiftsrapporter. **Beslut:**
 
@@ -136,8 +128,7 @@ För utgiftsrelaterade skatter måste du bestämma vad som inkluderas eller akti
 
 Observera att om du under din planering av redovisningen bestämmer dig för att tillämpa moms för USA och använda skatteregler, vilket görs genom att växla fältet **Använd momsbeskattningsregler** till Ja, kan du inte aktivera momsåterbetalning på utgifter.
 
-## Policyer
-<a id="policies" class="xliff"></a>
+## <a name="policies"></a>Policyer
 Du kan skapa utgiftsrapportpolicyer så att din organisation kan spara tid och pengar när medarbetarna gör utlägg å dess vägnar. Policyer garanterar att medarbetare håller budgeten, ger all information som krävs och spenderar pengar endast efter behov. Du måste ta följande beslut för varje utgiftsrapportpolicy och policy för utgiftsrapportgodkännande som du skapar. **Beslut:**
 
 -   Vilket är namnet på policyn?

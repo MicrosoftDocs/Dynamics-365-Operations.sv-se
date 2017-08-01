@@ -29,24 +29,21 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Definiera kanalspecifika rabatter
-<a id="define-channel-specific-discounts" class="xliff"></a>
+# <a name="define-channel-specific-discounts"></a>Definiera kanalspecifika rabatter
 
 [!include[banner](includes/banner.md)]
 
 
 Återförsäljare ställer ofta in olika rabatter i olika kanaler. Det här avsnittet behandlar de koncept du behöver känna till för att skapa en rabatt för en viss kanal. 
 
-Kanalspecifika rabatter
-<a id="channel-specific-discounts" class="xliff"></a>
+<a name="channel-specific-discounts"></a>Kanalspecifika rabatter
 --------------------------
 
 Återförsäljare erbjuder ofta olika rabatter i olika kanaler. Detta kan bero på att man vill adressera lokala marknadsvillkor eller hantera konkurrerande återförsäljare.
 
 Microsoft Dynamics 365 for Retail använder prisgrupper för att definiera kanalspecifika rabatter. Prisgrupper kan tilldelas till en eller flera av följande enheter: kanaler, kataloger, anknytningar och bonusprogram. Den här artikeln diskuterar kanaler, men samma koncept gäller för katalograbatter, anknytningsrabatter och lojalitetsrabatter.
 
-## Prisgrupper
-<a id="price-groups" class="xliff"></a>
+## <a name="price-groups"></a>Prisgrupper
 
 [![Prisgrupper](./media/price-groups-1024x608.png)](./media/price-groups.png)
 
@@ -57,8 +54,7 @@ Diagrammet ovan visar relationen mellan enheter som kan göras för en transakti
 -   **Bonusprisgrupper**– På den här sidan visas en lista med bonusprogram och rabatter som är länkade för varje prisgrupp.
 -   **Anknytningsprisgrupper**– På den här sidan visas en lista med anknytningar och rabatter som är länkade för varje prisgrupp.
 
-## Inställningar för exempelkanalrabatt
-<a id="example-channel-discount-set-up" class="xliff"></a>
+## <a name="example-channel-discount-set-up"></a>Inställningar för exempelkanalrabatt
 Följande exempel illustrerar uppgifterna som ingår i konfigurationen av en kanalrabatt.
 
 1.  För det här exemplet har du en kanal kallad **Houston**, och du ska skapa en ny rabatt kallad **Back-to-School**.
@@ -69,8 +65,7 @@ Följande exempel illustrerar uppgifterna som ingår i konfigurationen av en kan
 
  
 
-Se även
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Se även
 --------
 
 [Prisjusteringar och rabatter](price-adjustments-discounts.md)
