@@ -21,25 +21,21 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Power BI-innehåll för kassaöversikt
-<a id="cash-overview-power-bi-content" class="xliff"></a>
+# <a name="cash-overview-power-bi-content"></a>Power BI-innehåll för kassaöversikt
 
 [!include[banner](../includes/banner.md)]
 
 Det här avsnittet beskriver **Översikt över kontanter** för Microsoft Power BI-innehåll. Det förklarar hur du kommer åt rapporterna som är inkluderade i innehållspaketet, samt ger dig information om den datamodell och de enheter som användes för att skapa innehållspaketet.
 
-## Översikt
-<a id="overview" class="xliff"></a>
+## <a name="overview"></a>Översikt
 
 Power BI-innehåll för **kassaöversikt** har skapats för personer som är ansvariga för kontanta betalningar i din organisation. Power BI-innehåll för **kassaöversikt** ger insyn i kassaflödet. Det innehåller även prognoser som kan hjälpa dig att fatta bättre beslut och därmed förbättra kassaflödet. Du kan analysera kontanter per juridisk person, valuta och bankkonto för att få en bättre förståelse för överskott och brister.
 
-## Åtkomst till Power BI-innehåll
-<a id="accessing-the-power-bi-content" class="xliff"></a>
+## <a name="accessing-the-power-bi-content"></a>Åtkomst till Power BI-innehåll
 
 Om du använder Microsoft Dynamics 365 for Finance and Operations, Enterprise edition juli 2017 - uppdatering visas rapporter från **Kassaöversikt** i arbetsytorna **Kassaöversikt** och **Bankhantering**.
 
-## Rapporter som ingår i Power BI-innehållet
-<a id="reports-that-are-included-in-the-power-bi-content" class="xliff"></a>
+## <a name="reports-that-are-included-in-the-power-bi-content"></a>Rapporter som ingår i Power BI-innehållet
 I följande tabell finns information om mått som finns på varje enskild rapportsida i Power BI-innehållet för **kassaöversikt**.
 
 | Rapport                                | Innehåll |
@@ -51,14 +47,12 @@ I följande tabell finns information om mått som finns på varje enskild rappor
 | Valutaprognos                     | <ul><li>Prognostiserade valutasaldon</li><li>Daglig sammanfattningsvaluta</li><li>Prognosdetaljer</li></ul> |
 | Banksaldon                         | <ul><li>Totalt banksaldo i systemvaluta</li><li>Saldo per juridisk person</li><li>Aktuellt utfall kontra prognostiserat saldot i bankkontots valuta</li><li>Saldo per bankkonto</li><li>Saldo per valuta</li></ul> |
 
-## Utöka Power BI-innehåll
-<a id="extending-the-power-bi-content" class="xliff"></a>
+## <a name="extending-the-power-bi-content"></a>Utöka Power BI-innehåll
 Du kan ge utmärkt analys till de som inte loggar in Dynamics 365 genom att använda innehållspaketen tillgängliga i Lifecycle Services (LCS). Dessa innehållspaket kan ändras så att de innehåller andra rapporter och modeller och publicera till din Power BI.com-innehavare för analys. 
 
 Du hittar Power BI-innehåll för **Kassaöversikt** i det delade resursbiblioteket i LCS. Mer information om hur du laddar ned innehållspaket och använder det i din organisation finns i [Power BI-innehåll i LCS från Microsoft och dina partner](/dynamics365/unified-operations/dev-itpro/analytics/power-bi-content-microsoft-partners). Om du vill se en demonstration som visar hur du implementerar Power BI-innehållet, se [Power BI-innehåll från Microsoft och dina samarbetspartners i Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office mix.
 
-## Förstå datamodellen och enheterna
-<a id="understanding-the-data-model-and-entities" class="xliff"></a>
+## <a name="understanding-the-data-model-and-entities"></a>Förstå datamodellen och enheterna
 
 Följande tabell visar enheterna som Power BI-innehållspaketet **Kassaöversikt** baseras på.
 

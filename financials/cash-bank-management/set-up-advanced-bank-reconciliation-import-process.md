@@ -26,8 +26,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Ställa in importprocessen för avancerad bankavstämning
-<a id="set-up-the-advanced-bank-reconciliation-import-process" class="xliff"></a>
+# <a name="set-up-the-advanced-bank-reconciliation-import-process"></a>Ställa in importprocessen för avancerad bankavstämning
 
 [!include[banner](../includes/banner.md)]
 
@@ -36,8 +35,7 @@ Med hjälp av den avancerade bankavstämningen kan du importera elektroniska ban
 
 Inställningen för import av bankutdrag varierar beroende på formatet på det elektroniska bankutdraget. Finance and Operations stöder tre färdiga format för bankutdrag: ISO20022, MT940 och BAI2.
 
-## Exempelfiler
-<a id="sample-files" class="xliff"></a>
+## <a name="sample-files"></a>Exempelfiler
 För alla de tre formaten behöver du ha filer som översätter det elektroniska bankutdraget från originalformatet till ett format som kan användas för Finance and Operations. Du kan hitta nödvändiga resursfiler under noden **Resurser** i programutforskaren i Microsoft Visual Studio. När du har hittat filerna kan du kopiera dem till en enstaka känd plats, så att du enklare kan överföra dem under inställningsprocessen.
 
 | Resursnamn                                           | Filnamn                            |
@@ -50,8 +48,7 @@ För alla de tre formaten behöver du ha filer som översätter det elektroniska
 | BankStmtImport\_MT940XML\_till\_Reconciliation\_xslt      | MT940XML-to-Reconciliation.xslt      |
 | BankStmtImport\_SampleBankCompositeEntity\_xml          | SampleBankCompositeEntity.xml        |
 
-## Exempel på bankutdragsformat och tekniska layouter
-<a id="examples-of-bank-statement-formats-and-technical-layouts" class="xliff"></a>
+## <a name="examples-of-bank-statement-formats-and-technical-layouts"></a>Exempel på bankutdragsformat och tekniska layouter
 Nedan visas exempel på tekniska layoutdefinitioner för avancerad bankavstämningimportfil och tre relaterade exempel på bankutdragsfiler: https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/how-to-articles/exofbankstfotechlayouts  
 
 | Teknisk layoutdefinition                             | Bankutdragsexempelfil          |
@@ -62,8 +59,7 @@ Nedan visas exempel på tekniska layoutdefinitioner för avancerad bankavstämni
 
  
 
-## Ställa in import av ISO20022-bankutdrag
-<a id="set-up-the-import-of-iso20022-bank-statements" class="xliff"></a>
+## <a name="set-up-the-import-of-iso20022-bank-statements"></a>Ställa in import av ISO20022-bankutdrag
 Först måste du definiera bankutdragets formatbearbetningsgrupp för ISO20022-bankutdrag med hjälp av ramverket för datatabellen.
 
 1.  Gå till **Arbetsytor** &gt; **Datahantering**.
@@ -96,8 +92,7 @@ Det sista steget är att aktivera Avancerad bankavstämning och att ställa in u
 3.  På fliken **Avstämning**, ställ in alternativet **Avancerad bankavstämning** på **Ja**.
 4.  Ställ in fältet **Utdragsformat** på det format som du skapade tidigare, till exempel **ISO20022**.
 
-## Ställa in import av MT940-bankutdrag
-<a id="set-up-the-import-of-mt940-bank-statements" class="xliff"></a>
+## <a name="set-up-the-import-of-mt940-bank-statements"></a>Ställa in import av MT940-bankutdrag
 Först måste du definiera bankutdragets formatbearbetningsgrupp för MT940-bankutdrag med hjälp av ramverket för datatabellen.
 
 1.  Gå till **Arbetsytor** &gt; **Datahantering**.
@@ -133,8 +128,7 @@ Det sista steget är att aktivera Avancerad bankavstämning och att ställa in u
 4.  När du uppmanas att bekräfta ditt val och aktivera Avancerad bankavstämning klickar du på **OK**.
 5.  Ställ in fältet **Utdragsformat** på det format som du skapade tidigare, till exempel **MT940**.
 
-## Ställa in import av BAI2-bankutdrag
-<a id="set-up-the-import-of-bai2-bank-statements" class="xliff"></a>
+## <a name="set-up-the-import-of-bai2-bank-statements"></a>Ställa in import av BAI2-bankutdrag
 Först måste du definiera bankutdragets formatbearbetningsgrupp för BAI2-bankutdrag med hjälp av ramverket för datatabellen.
 
 1.  Gå till **Arbetsytor** &gt; **Datahantering**.
@@ -170,8 +164,7 @@ Det sista steget är att aktivera Avancerad bankavstämning och att ställa in u
 4.  När du uppmanas att bekräfta ditt val och aktivera Avancerad bankavstämning klickar du på **OK**.
 5.  Ställ in fältet **Utdragsformat** på det format som du skapade tidigare, till exempel **BAI2**.
 
-## Testa import av bankutdrag
-<a id="test-the-bank-statement-import" class="xliff"></a>
+## <a name="test-the-bank-statement-import"></a>Testa import av bankutdrag
 Det sista steget är att kontrollera att du kan importera bankutdraget.
 
 1.  Gå till **Kassa- och bankhantering** &gt; **Bankkonton**.

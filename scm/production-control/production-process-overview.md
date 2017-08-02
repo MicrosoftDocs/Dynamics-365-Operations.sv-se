@@ -28,8 +28,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Översikt över produktionsprocessen
-<a id="production-process-overview" class="xliff"></a>
+# <a name="production-process-overview"></a>Översikt över produktionsprocessen
 
 [!include[banner](../includes/banner.md)]
 
@@ -44,8 +43,7 @@ Produktionsprocessen påverkas vanligtvis av kostnadsredovisning och lagervärde
 
 Valet av de kostnadsmätningsmetoder anger även kraven för att rapportera om material- och resursförbrukning under produktionsprocessen. Normalt kräver faktiska kostnadsredovisningsmetoder exakt rapportering på jobbnivå, medan periodiska kostnadsredovisningmetoder tillåter mindre finmaskig rapportering av material- och resursförbrukning.
 
-## Tillverkning med blandat läge
-<a id="mixed-mode-manufacturing" class="xliff"></a>
+## <a name="mixed-mode-manufacturing"></a>Tillverkning med blandat läge
 Olika produkter och produktionstopologier kräver tillämpning av olika ordertyper. Finance and Operations kan använda olika ordertyper i ett blandat läge. Med andra ord kan alla ordertyper ske under slutpunktsprocessen för produktionen av en färdig produkt.
 
 -   **Produktionsorder** – Detta är den klassiska ordertypen som producerar en specifik produkt eller produktvariant i en given kvantitet på ett visst datum. Produktionsorder baseras på strukturlistor och flöden.
@@ -53,8 +51,7 @@ Olika produkter och produktionstopologier kräver tillämpning av olika ordertyp
 -   **Kanban** – Kanban används för lean manufacturingprocesser som baseras på produktionsflöden, kanban-regel och strukturlistor.
 -   **Projekt** - Ett tillverkningsprojekt kombinerar produkter och tjänster med en viss tidsplan och budget. Tillverkningsdelen av ett projekt kan levereras via någon av de andra ordertyperna.
 
-## Tillverkningsprinciper
-<a id="manufacturing-principles" class="xliff"></a>
+## <a name="manufacturing-principles"></a>Tillverkningsprinciper
 Om du vill välja den tillverkningsprincip som stämmer bäst för en viss produkt och en relaterad marknad, måste du ta hänsyn till kraven för produktion och logistik och också till kundens förväntningar om ledtiderna för leveranser.
 
 -   **Gör till lager** – Detta är den klassiska tillverkningsprincipen där produkter produceras för lager, baserat på prognos eller minsta lagerpåfyllning (det senare beräknas normalt baserat på prognos eller historisk förbrukning).
@@ -62,8 +59,7 @@ Om du vill välja den tillverkningsprincip som stämmer bäst för en viss produ
 -   **Konfigurera till order** - På samma sätt som för Tillverka mot beställning-principen, görs de sista operationerna i värdekedjan mot beställning. Den verkliga produktvarianten som tillverkas är inte fördefinierad men skapas vid tidpunkten för orderregistreringen, baserat på försäljningsproduktens konfigurationsmodell. Konfigurera till order-principen kräver en viss nivå av processammanslagning för en viss produktserie.
 -   **Tillverka vid order** – Tillverka vid order-processer, behandlas normalt av ett projekt och som vanligtvis ska startas med teknikfasen. Under teknikfasen, uppfyller de faktiska produkterna som krävs, den order som utformats och beskrivs. Produktionsorder, batchorder eller kanban kan sedan skapas för att producera produkterna.
 
-## Översikt över produktionslivscykeln
-<a id="overview-of-the-production-life-cycle" class="xliff"></a>
+## <a name="overview-of-the-production-life-cycle"></a>Översikt över produktionslivscykeln
 Följande steg i tillverkningslivscykeln kan genereras för alla ordertyper av tillverkning som görs i blandat läge. Alla av dem representeras dock inte av en uttrycklig orderstatus.
 
 1.  **Skapad** – Du kan skapa en produktionsorder, batch order eller en kanban manuellt, eller så kan du konfigurera systemet för att generera dem baserat på olika efterfrågansignaler. Huvudplanering skapar produktionsorder, batchorder eller kanban, genom att bekräfta planerade order. Andra efterfrågansignaler är försäljningsorder eller peggad leveranssignaler från andra produktionsorder eller kanban. För kanbana med fasta kvantiteter skapas efterfrågansignaler när kanban registreras som tomma.
@@ -84,8 +80,7 @@ Följande steg i tillverkningslivscykeln kan genereras för alla ordertyper av t
 12. **Stängning av period** - En del kostnadsredovisningprinciper som periodiskt genomsnitt, kostnadsredovisning med bakåtavräkning, FIFO eller LIFO, kräver periodiska aktiviteter för att stänga lagret eller den finansiella perioden. Vanligtvis försöker systemet att rapportera all material- och resursförbrukning och även korrigeringar av lagret och kassering innan perioderna stängs. Detta görs normalt genom att använda lagerrörelsejournaler, eller justering av journaler. Målet är att bedöma ekonomisk prestanda för driftenheter per period. I vissa fall används när avancerade produktionsorder används som sträcker sig över perioder för ekonomisk rapportering, används produktionsjournaler för att rapportera produktionsförlopp och resursförbrukning i slutet av perioden.
 
 
-Se även
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Se även
 --------
 
 [Produktionsåterrapportering](production-feedback.md)

@@ -28,8 +28,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Ställ in streckkoder
-<a id="set-up-bar-codes" class="xliff"></a>
+# <a name="set-up-bar-codes"></a>Ställ in streckkoder
 
 [!include[banner](includes/banner.md)]
 
@@ -44,8 +43,7 @@ Du kan använda streckkoder för att köpa eller sälja produkter, spåra produk
 4.  Skapa streckkoder för specifika produkter.
 
 
-Se även
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Se även
 --------
 
 [Ställ in streckkodsmasker](set-up-bar-code-masks.md)

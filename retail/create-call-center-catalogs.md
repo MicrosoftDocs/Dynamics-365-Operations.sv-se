@@ -26,8 +26,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Skapa en kundtjänstkatalog
-<a id="create-a-call-center-catalog" class="xliff"></a>
+# <a name="create-a-call-center-catalog"></a>Skapa en kundtjänstkatalog
 
 [!include[banner](includes/banner.md)]
 
@@ -43,8 +42,7 @@ I en kundtjänst kan du använda produktkataloger för att identifiera de produk
 
 Dessa alternativ måste ställas innan katalogen godkänns och publiceras.
 
-## Krav
-<a id="prerequisites" class="xliff"></a>
+## <a name="prerequisites"></a>Krav
 Följande uppgifter måste ha slutförts innan du börjar:
 
 -   Ställa in produkter och produktsortiment.
@@ -55,28 +53,23 @@ Följande uppgifter måste ha slutförts innan du börjar:
 -   Lägg till kundtjänst i en organisationshierarki.
 -   Skapa eller ändra en organisationshierarki.
 
-## Skapa en katalog
-<a id="create-a-catalog" class="xliff"></a>
+## <a name="create-a-catalog"></a>Skapa en katalog
 Du måste första skapa en katalog, lägga till produkter i katalogen och sedan granska och uppdatera attributen för produkterna.
 
-## Validera katalogen
-<a id="validate-the-catalog" class="xliff"></a>
+## <a name="validate-the-catalog"></a>Validera katalogen
 När du har avslutat inställningen av katalogen måste du validera den. Valideringsprocessen verifierar att data som krävs för kanalattribut och produktattribut är kompletta och giltiga och att katalogen kan publiceras.
 
-## Skicka katalogen till granskning och godkännande
-<a id="submit-the-catalog-for-review-and-approval" class="xliff"></a>
+## <a name="submit-the-catalog-for-review-and-approval"></a>Skicka katalogen till granskning och godkännande
 När en katalog har validerats kan du skicka katalogen för granskning och godkännande. En katalog måste godkännas innan den kan publiceras. Du kan konfigurera arbetsflödet så att kataloger antingen godkänns automatiskt eller kräver manuellt godkännande.
 
-## Du kan även: Lägg till källkoder, lediga produkter och skript
-<a id="optional-add-source-codes-free-products-and-scripts" class="xliff"></a>
+## <a name="optional-add-source-codes-free-products-and-scripts"></a>Du kan även: Lägg till källkoder, lediga produkter och skript
 Du kan också lägga till följande artiklar till en kundtjänstkatalog. Dessa artiklar är valfria.
 
 -   **Källkoder** kan användas av företag som skapar utskrivna kataloger kan använda källkoder för att följa kundsvaret för särskilda kataloger. Källkoder skrivs ofta ut på baksidan av en katalog och anges ofta i försäljningsordern när en kund gör ett inköp. För att lägga till en källkod i katalogen måste du först skapa en målmarknad. Vanligtvis mappas målmarknaden till en ägd eller hyrd utskickslista.
 -   **Kostnadsfria produkter** är reklamartiklar som ingår kostnadsfritt med kundens order, när katalogen refereras till.
 -   **Skript** kan användas till att vägleda arbetarens interaktioner med kunder i samband med en katalog eller en produkt i en katalog.
 
-## Publicera katalogen
-<a id="publish-the-catalog" class="xliff"></a>
+## <a name="publish-the-catalog"></a>Publicera katalogen
 Genom att publicera en katalog för en kundtjänst slutför du produktinformationen i katalogen. Publicering visar också att katalogen är klar för ytterligare åtgärder som du vill utföra, till exempel skapa en skriven ut katalog. Du kan till exempel skapa en utskriven katalog. Du kan publicera dina kataloger manuellt eller använda en batchprocess för att publicera i enlighet med en plan. Innan du kan publicera en katalog måste katalogen valideras och godkännas. Om du vill ändra katalogen, efter att den har publicerats, kan du dra tillbaka katalogen och sedan publicera den på nytt.
 
 

@@ -27,16 +27,14 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Konfigurera leverantörsreskontra
-<a id="configure-accounts-payable" class="xliff"></a>
+# <a name="configure-accounts-payable"></a>Konfigurera leverantörsreskontra
 
 [!include[banner](../includes/banner.md)]
 
 
 Det här avsnittet innehåller en beskrivning av de sidor som används för att ställa in grundläggande och valfria funktion för Leverantörsreskontra i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Även inställningsstegen som du måste vidta innan du börjar ställa in Leverantörsreskontra beskrivs.
 
-Krav för inställning av leverantörsreskontra
-<a id="prerequisites-for-accounts-payable-setup" class="xliff"></a>
+<a name="prerequisites-for-accounts-payable-setup"></a>Krav för inställning av leverantörsreskontra
 ----------------------------------------
 
 Följande inställning måste göras innan det går att ställa in leverantörsreskontra:
@@ -46,8 +44,7 @@ Följande inställning måste göras innan det går att ställa in leverantörsr
     -   Om du tänker använda valutakursjusteringar, ställ in valutakoder på sidan Valutor, ställ in valutakurstyper på sidan Valutakurstyp och ställ in valutakurser på sidan Valutakurs.
 -   Ställ in bankkonton som används med betalningsmetoder i Kassa- och bankhantering.
 
-## Inställningssidor för leverantörsreskontra
-<a id="setup-pages-for-accounts-payable" class="xliff"></a>
+## <a name="setup-pages-for-accounts-payable"></a>Inställningssidor för leverantörsreskontra
 
 Använd följande sidor när du vill ställa in de grundläggande funktioner i Leverantörsreskontra för varje juridisk person. Sidorna visas i rekommenderad inställningsordning. Du kan göra inställningsprocessen enklare genom att skapa mallar från de första posterna som du skapas. I en mall anges vanligtvis poster i många fält för att avspegla de funktioner organisationen vill implementera för en viss leverantörstyp.
 1.  Definiera betalningsvillkor som du tilldelar till försäljningsorder, inköpsorder, kunder och leverantörer och som fastställer fakturornas förfallodatum på sidan Betalningsvillkor.
@@ -58,8 +55,7 @@ Använd följande sidor när du vill ställa in de grundläggande funktioner i L
 6.  Definiera formatet för olika dokument som rör leverantörer och som används inom organisationen för att spåra inleveranser från leverantörer samt för att ange orsaker för betalningsflöden till leverantörer på sidan Formulärinställningar.
 7.  Skapa och underhåll leverantörskonton och även de skattemyndigheter som organisationen rapporterar moms till på sidan Leverantörer.
 
-## Valfria inställningsformulär för leverantörsreskontra
-<a id="optional-setup-pages-for-accounts-payable" class="xliff"></a>
+## <a name="optional-setup-pages-for-accounts-payable"></a>Valfria inställningsformulär för leverantörsreskontra
 Utöver de grundläggande funktionerna har Leverantörsreskontra andra funktioner som du kan ställa in.
 
 De ytterligare inställningssidorna som används ordnas efter funktion.
@@ -125,8 +121,7 @@ De ytterligare inställningssidorna som används ordnas efter funktion.
 
 -   På sidan **1099-fält** bekräftar och uppdaterar du de minimibelopp som måste rapporteras till Internal Revenue Service (IRS), baserade på de senaste IRS-kraven.
 
-## **Valfria inställningar för andra moduler**
-<a id="optional-setup-for-other-modules" class="xliff"></a>
+## <a name="optional-setup-for-other-modules"></a>**Valfria inställningar för andra moduler**
 **Organisationsadministration**
 
 -   På sidan Nummerserier, ställ in nummerseriegrupper för fakturanummer.

@@ -27,8 +27,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Mobil arbetsyta för försäljningsorder
-<a id="sales-orders-mobile-workspace" class="xliff"></a>
+# <a name="sales-orders-mobile-workspace"></a>Mobil arbetsyta för försäljningsorder
 
 [!include[banner](../includes/banner.md)]
 
@@ -36,14 +35,12 @@ Det här avsnittet innehåller information om den mobila arbetsytan för **Förs
 
 Denna mobila arbetsyta är avsedd att användas med mobilappen Microsoft Dynamics 365 for Unified Operations.
 
-## Översikt
-<a id="overview" class="xliff"></a>
+## <a name="overview"></a>Översikt
 Den mobila arbetsytan **Försäljningsorder** låter dig visa detaljerad information om varje försäljningsorder. Informationen innehåller status för den ordern, kontaktinformation för kunden och kontaktinformation för ordermottagaren. Den mobila arbetsytan för **försäljnigsorder** ger en direkt översikt över försäljningsorder. Du kan visa alla försäljningsorder, visa försäljningsorder per kund, eller visa information om en specifik försäljningsorder. 
 
 Den mobila arbetsytan innehåller två vyer som hjälper dig att analysera försäljningsorder på djupet.
 
-### Visa alla försäljningsorder
-<a id="view-all-sales-orders" class="xliff"></a>
+### <a name="view-all-sales-orders"></a>Visa alla försäljningsorder
 Den här vyn visar en lista över alla försäljningsorder.
 
 -   Använd ett av följande filter för att välja de försäljningsorder som du vill visa:
@@ -64,8 +61,7 @@ Den här vyn visar en lista över alla försäljningsorder.
     -   Orderrader
     -   Leveranser som visar hur och när en försäljningsorder har levererats
 
-### Visa order för en kund
-<a id="view-orders-for-a-customer" class="xliff"></a>
+### <a name="view-orders-for-a-customer"></a>Visa order för en kund
 Denna vy listar försäljningsorder per kund.
 
 -   Använd något av följande filter för att visa order för en kund:
@@ -86,16 +82,13 @@ Denna vy listar försäljningsorder per kund.
         -   Orderrader
         -   Leveranser som visar hur och när en försäljningsorder har levererats
 
-## Förutsättningar
-<a id="prerequisites" class="xliff"></a>
+## <a name="prerequisites"></a>Förutsättningar
 Kraven varierar baserat på versionen av Microsoft Dynamics 365 som har distribuerats i organisationen.
 
-### Kraven om du använder Microsoft Dynamics 365 for Finance and Operations, Enterprise edition juli 2017 uppdatering
-<a id="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update" class="xliff"></a> 
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update"></a>Kraven om du använder Microsoft Dynamics 365 for Finance and Operations, Enterprise edition juli 2017 uppdatering 
 Om Dynamics 365 for Finance and Operations, Enterprise edition (juli-uppdateringen 2017) har implementerats för din organisation, måste systemadministratören publicera den mobila arbetsytan **Försäljningsorder**. Instruktioner finns i [Publicera en mobil arbetsyta](/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace).
 
-### Krav om du använder Dynamics 365 for Operations version 1611 med plattformsuppdatering 3 eller senare
-<a id="prerequisites-if-you-use-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later" class="xliff"></a>
+### <a name="prerequisites-if-you-use-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Krav om du använder Dynamics 365 for Operations version 1611 med plattformsuppdatering 3 eller senare
 Om Dynamics 365 for Operations version 1611 med plattformsuppdatering 3 eller senare har använts i organisationen måste systemadministratören uppfylla följande krav. 
 
 <table>
@@ -128,15 +121,13 @@ Om Dynamics 365 for Operations version 1611 med plattformsuppdatering 3 eller se
 </tbody>
 </table>
 
-## Hämta och installera mobilappen
-<a id="download-and-install-the-mobile-app" class="xliff"></a>
+## <a name="download-and-install-the-mobile-app"></a>Hämta och installera mobilappen
 Hämta och installera mobilappen Dynamics 365 for Unified Operations:
 
 -   [För Android-telefoner](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [För iPhones](https://go.microsoft.com/fwlink/?linkid=850663)
 
-## Logga in på mobilappen
-<a id="sign-in-to-the-mobile-app" class="xliff"></a>
+## <a name="sign-in-to-the-mobile-app"></a>Logga in på mobilappen
 
 1.  Starta appen i din mobila enhet.
 2.  Ange din webbadress för Dynamics 365.
@@ -145,8 +136,7 @@ Hämta och installera mobilappen Dynamics 365 for Unified Operations:
 
 [![Dra för att uppdatera](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
-## Visa information om försäljningsorder för en kund med hjälp av den mobila arbetsytan Försäljningsorder
-<a id="view-information-about-sales-orders-for-a-customer-by-using-the-sales-order-mobile-workspace" class="xliff"></a>
+## <a name="view-information-about-sales-orders-for-a-customer-by-using-the-sales-order-mobile-workspace"></a>Visa information om försäljningsorder för en kund med hjälp av den mobila arbetsytan Försäljningsorder
 
 1.  På din mobila enhet väljer du arbetsytan **Försäljningsorder**.
 2.  Välj **Visa order för en kund**.

@@ -26,8 +26,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Startsida för mobilapp
-<a id="mobile-app-home-page" class="xliff"></a>
+# <a name="mobile-app-home-page"></a>Startsida för mobilapp
 
 [!include[banner](../includes/banner.md)]
 
@@ -36,8 +35,7 @@ Det här avsnittet beskriver mobilappen Microsoft Dynamics 365 for Unified Opera
 > [!NOTE]
 > Mobilappen kallades tidigare *Microsoft Dynamics 365 for Finance and Operations*.
 
-Översikt
-<a id="overview" class="xliff"></a>
+<a name="overview"></a>Översikt
 --------
 
 Mobilappen låter din organisation sina dess affärsprocesser tillgängliga på mobila enheter. När din IT-administratör aktiverar funktionen för mobila arbetsytor för organisationen, kan användare logga in på appen och omedelbart börja köra affärsprocesser från sina mobila enheter. Mobilappen innehåller följande funktioner som hjälper dig att öka produktiviteten:
@@ -47,8 +45,7 @@ Mobilappen låter din organisation sina dess affärsprocesser tillgängliga på 
 - IT-administratörer och utvecklare kan enkelt utforma mobila arbetsytor genom att använda arbetsytedesignern med peka-och-klicka som ingår i webbklienten.
 - IT-administratörer och utvecklare kan även optimera arbetsytornas offlinekapacitet med hjälp av ramverket för Business logic utbyggbarhet. Eftersom data fortfarande bearbetas när en enhet är offline, förblir dina mobila scenarier omfattande eller flytande, även om enheterna inte har fasta nätverksanslutningar.
 
-## Delar av mobilappen
-<a id="elements-of-the-mobile-app" class="xliff"></a>
+## <a name="elements-of-the-mobile-app"></a>Delar av mobilappen
 Navigering i mobilappen består av fyra grundläggande begrepp: instrumentpanel, arbetsytor, sidor och åtgärder. 
 
 [![Navigeringsbegrepp i mobilappen](./media/mobilephoneapp1-1024x536.png)](./media/mobilephoneapp1.png)
@@ -62,8 +59,7 @@ Navigering i mobilappen består av fyra grundläggande begrepp: instrumentpanel,
     - Navigera till andra sidor för relaterade data, till exempel enhetsinformation eller -rader.
     - Visa en lista över **åtgärder** som är tillgängliga för den aktuella sidan. Åtgärder låter dig skapa och redigera befintliga data.
 
-## Implementeringsprocess
-<a id="implementation-process" class="xliff"></a>
+## <a name="implementation-process"></a>Implementeringsprocess
 Följande illustration visar processen för implementering av såväl mobila arbetsytor som tillhandahålls av Microsoft, som anpassade mobila arbetsytor. 
 
 ![Implementeringsprocess för mobila program](./media/Mobile-implementation-process-5.png)

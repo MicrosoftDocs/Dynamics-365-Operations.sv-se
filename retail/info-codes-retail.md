@@ -28,8 +28,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Infokoder
-<a id="info-codes" class="xliff"></a>
+# <a name="info-codes"></a>Infokoder
 
 [!include[banner](includes/banner.md)]
 
@@ -43,14 +42,12 @@ Informationskoder utgör ett sätt att samla in data vid ett kassaregister (POS)
 -   Sälja en produkt som vanlig försäljning, rabatterad försäljning eller kostnadsfri produkt.
 -   Uppmana kassören att ange ett värde eller välja från en lista över delkoder när registerlådan öppnas utan att utföra en försäljningsoperation.
 
-## Infokodgrupp
-<a id="info-codes-group" class="xliff"></a>
+## <a name="info-codes-group"></a>Infokodgrupp
 I Dynamics 365 for Retail kan du skapa grupper med informationskoder. Informationskodgrupper tillför flexibilitet genom att du kan definiera färre informationskoder och sedan använda dem på ett mer mångsidigt sätt. Du kan använda informationskodgrupper på följande sätt:
 -   Definiera färre informationskoder och återanvänd dem enkelt. Informationskoder som ingår i informationskodgrupper har inga fördefinierade beroenden i andra informationskoder. Du kan ta med samma informationskod i flera informationskodgrupper och sedan använda prioritering för att visa samma informationskoder i den ordning som fungerar för olika situationer.
 -   Länka infokoder till andra infokoder eller infokodgrupper för att samla in information om en produkt eller en transaktion så att du inte behöver ange en separat infokod eller den kopplade infokoden för alla scenarier.
 
-## Exempel på infokod
-<a id="info-code-examples" class="xliff"></a>
+## <a name="info-code-examples"></a>Exempel på infokod
 **Exempel 1: Återanvända infokoder** Du kan koppla infokoder så att, när en infokod utlöses, utlöses även en annan infokod omedelbart efter den. När du till exempel säljer vissa produkter kan du uppmana kassören att fråga kunden om de vill köpa batterier och en produktgaranti. För andra produkter kan du uppmana kassören att fråga kunden om de vill köpa batterier och för att hämta in deras postnummer. Om du skapar kopplade informationkoder för dessa situationer, måste du ställa in varje variant av informationskoden, så att kassapersonalen uppmanas att fråga efter den rätta informationen. Om du använder infokodgrupper kan du ställa in vanliga infokoder, till exempel frågor om batterier, en gång och sedan återanvända dem i flera infokodgrupper. Du kan också använda prioritering i informationkodgrupperna för att identifiera vilken ordning som visas prompten i.
 
 

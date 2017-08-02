@@ -24,13 +24,11 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Direktleverans från produktionsorder till utlastningsplatser
-<a id="cross-docking-from-production-orders-to-outbound-docks" class="xliff"></a>
+# <a name="cross-docking-from-production-orders-to-outbound-docks"></a>Direktleverans från produktionsorder till utlastningsplatser
 
 Det här avsnittet beskriver hur du hanterar processen för direktutleveransmaterial som rapporteras som färdiga från en produktionsrad till en plats med utgående transporter.
 
-Introduktion
-<a id="introduction" class="xliff"></a>
+<a name="introduction"></a>Introduktion
 ------------
 
 Direktutleverans från produktion till en utlastningsplats gäller tillverkare som producerar stora volymer och vi vill skicka de färdiga produkterna när de rapporteras som färdiga från produktionsraderna. Syftet är att leverera produkter till distributionscenter som fysiskt finns nära kundefterfrågan, i stället för att bygga upp lagret på tillverkningsplatsen.
@@ -47,25 +45,21 @@ En produkt har rapporterats som färdig för produktionsutleveransplatsen (3) oc
 
 [![](./media/scenario1.png)](./media/scenario1.png)
 
-## Konfigurera direktleverans
-<a id="configure-cross-docking" class="xliff"></a>
+## <a name="configure-cross-docking"></a>Konfigurera direktleverans
 Du konfigurerar direktutleveransprocessen i **arbetspolicyer**. En arbetspolicy omfattar en arbetsordertyp, plats och produkt. I följande exempel konfigureras direktutleverans för produkt X och plats Y.
 
-#### Typer av arbetsorder
-<a id="work-order-types" class="xliff"></a>
+#### <a name="work-order-types"></a>Typer av arbetsorder
 
 -   Arbetsordertyp: Plats för slutförda varor
 -   Metod för att skapa arbete: direktutleverans
 -   Direktleveranspolicynamn: överföra order
 
-#### Lagerplatser
-<a id="inventory-locations" class="xliff"></a>
+#### <a name="inventory-locations"></a>Lagerplatser
 
 -   Lagerställe: 51
 -   Plats: Y
 
-#### Produkter
-<a id="products" class="xliff"></a>
+#### <a name="products"></a>Produkter
 
 -   Artikelnummer: X
 
@@ -76,31 +70,26 @@ Direktutleveranser kan för närvarande konfigureras för två arbetsordertyper:
 
 I **direktutleveranspolicy** definierar du vilka dokumenttyper som är tillämpliga för direktutleverans. För närvarande är den enda dokumenttypen som stöds **överföringsorder**. Följande exempel visar konfigurationen av en direktutleveranspolicy.
 
-### Direktleveranspolicynamn: överföringsorder
-<a id="cross-docking-policy-name-transfer-order" class="xliff"></a>
+### <a name="cross-docking-policy-name-transfer-order"></a>Direktleveranspolicynamn: överföringsorder
 
 -   Löpnummer: 10
 -   Typ av arbetsorder: Överför leverans
 -   Direktleverans kräver plats : Falskt
 -   Direktutleveransstrategi: datum och tid
 
-### Löpnummer
-<a id="sequence-number" class="xliff"></a>
+### <a name="sequence-number"></a>Löpnummer
 
 **Löpnumret** anger prioriteten för dokumenttypen. För närvarande är den enda dokumenttypen som stöds **överföringsorder**. Lönumret blir därför endast relevant när fler arbetsordertyper stöds.
 
-### Direktleveranspolicy
-<a id="cross-docking-policy" class="xliff"></a>
+### <a name="cross-docking-policy"></a>Direktleveranspolicy
 
 Direktutleveranspolicyn anger också policyn för prioritering av överföringsorderkrav. Om t.ex. flera överföringsorder finns för samma produkt, kommer planerat datum och tid som är inställd på lasten och associerad med överföringsordern avgör prioriteringen mellan order. Tidsplanerat datum och tid kan anges direkt på lasten eller kan ställas in på ett **mötesschema** som associeras med lasten. Prioriteringen bestäms av strategin för direktutleverans. För närvarande finns endast en metod: **datum och tid**.
 
-### Direktleverans kräver plats
-<a id="cross-docking-demand-requires-location" class="xliff"></a>
+### <a name="cross-docking-demand-requires-location"></a>Direktleverans kräver plats
 
 I direktutleveranspolicyn som du kan ställa in villkor för kräver att överföringsorder har en tilldelad plats för att berättiga för direktutleverans. Detta kriterium anges i fältet **Direktleverans kräver plats**. Platsen på mötesschemat som hör till lasten kopplas till den slutgiltiga platsen för varor som direktutlevereras. Den slutgiltiga platsen för varor som direktutlevereras bestäms av platsdirektivet för **Överför leverans** för arbetsordertypen **Placera**. Det kan vara lämpligt att ange fältet **Direktleverans kräver plats** i ett scenario där färdiga varor endast ska direktutlevereras om ett släpfordon har tilldelats en vikdörr. I så fall flyttas varorna direkt från produktionsraden till släpfordonet. När ett släpfordon tilldelas vikdörren, tilldelar en användare platsen för mötesschemat och gör därför platsen tillgänglig för direktutleveransen I följande avsnitt förklaras två exempel.
 
-#### Scenario 1 - Direktleverans från produktion till överföringsorder
-<a id="scenario-1--cross-docking-from-production-to-transfer-orders" class="xliff"></a>
+#### <a name="scenario-1--cross-docking-from-production-to-transfer-orders"></a>Scenario 1 - Direktleverans från produktion till överföringsorder
 
 När en produkt som har rapporterats som avslutat på produktionsraden överförs den till en vikdörrplats där den lastas på en lastbil och överförs till ett distributionscenter. Använd företags-USMF.
 
@@ -117,8 +106,7 @@ När en produkt som har rapporterats som avslutat på produktionsraden överför
 
 Arbete av typen **Plats för slutförda varor** har skapats och bearbetats.
 
-#### Scenario 2: direktutleverans från produktion till överföringsorder med ett mötesschema
-<a id="scenario-2---cross-docking-from-production-to-transfer-orders-with-an-appointment-schedule" class="xliff"></a>
+#### <a name="scenario-2---cross-docking-from-production-to-transfer-orders-with-an-appointment-schedule"></a>Scenario 2: direktutleverans från produktion till överföringsorder med ett mötesschema
 
 När en produkt har rapporterats som avslutad på produktionsraden överförs den till en vikdörrplats som identifieras av ett mötesschema för vikdörrplatserna. Använd företags-USMF.
 
@@ -132,8 +120,7 @@ När en produkt har rapporterats som avslutad på produktionsraden överförs de
 8.  Gå till portalen för den mobila enheten och välj menyalternativet **Rapportera som färdig och inlagrad**.
 9.  Rapportera nu som färdig **L0101** från den handhållna enheten. Observera att platsen nu är **BAYDOOR 2**. Den här platsen finns från mötesschemat i stället för ett platsdirektiv **Överföringsinleverans**.
 
-### Ytterligare information
-<a id="additional-information" class="xliff"></a>
+### <a name="additional-information"></a>Ytterligare information
 
 -   Direktutleverans scenario stöds för batch- och seriekontrollerade element, både för batch- och serienummerdimensioner definierade ovan och under platsen i reservationshierarkin.
 -   Den kvantitet som rapporteras som färdig kan inte delas till ett överföringsorderkrav som är lägre. Om exempelvis 20 stycken rapporteras som färdiga och en överföringsorder existerar för 5 stycken, så kommer överföringsordern inte att vara tillämplig för direktutleverans.

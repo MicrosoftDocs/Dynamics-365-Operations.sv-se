@@ -28,8 +28,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Butikshierarkier
-<a id="retail-hierarchies" class="xliff"></a>
+# <a name="retail-hierarchies"></a>Butikshierarkier
 
 [!include[banner](includes/banner.md)]
 
@@ -38,8 +37,7 @@ Den här artikeln beskriver butikshierarkierna i Microsoft Dynamics 365 for Reta
 
 Du kan skapa en butikskategorihierarki för att strukturera de produkter som du säljer via butikskanaler. Du kan använda butiksprodukthierarkier för att kategorisera eller gruppera produkter. Du kan sedan använda dessa produkter om du vill skapa produktsortiment och kundbonusprogram. Du kan också tilldela produktattribut och egenskaper, tilldela en prissättningstruktur, inkludera produkter i produkterbjudanden och använda produkterna för rapportering. Du kan skapa en butikskategorihierarki som representerar alla produkter och kategorier i organisationen och använder sedan kategorihierarkin för flera syften. Du kan också skapa flera butikskategorihierarkier för särskilda syften, till exempel produkterbjudanden. När du skapar en Produkthierarki (butik), måste du tilldela en kategorihierarkityp för att identifiera syftet med kategorihierarkin. Om du till exempel om endast produkthierarkier som tilldelas typen **Butiksnavigeringshierarki** är refererade när du bläddrar i produkter efter kategori online eller på betalningsplatsen (POS).
 
-## Typ av butikshierarki
-<a id="retail-hierarchy-types" class="xliff"></a>
+## <a name="retail-hierarchy-types"></a>Typ av butikshierarki
 Följande tabell listar de tillgängliga kategorihierarkityperna och det allmänna syftet med varje typ.
 
 | Kategorihierarkityp       | Syfte                                                                                                                                                                                                                                                                                                            |

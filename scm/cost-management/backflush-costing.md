@@ -28,8 +28,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Kostnadskalkylering med automatisk lageravräkning
-<a id="backflush-costing" class="xliff"></a>
+# <a name="backflush-costing"></a>Kostnadskalkylering med automatisk lageravräkning
 
 [!include[banner](../includes/banner.md)]
 
@@ -38,8 +37,7 @@ Det här avsnittet förklarar kostnadsredovisning med bakåtavräkning som anvä
 
 Kostnadsredovisning för Lean manufacturing tillåter att produktionsflödet använder den metod för kostnadsackumulering som kallas kostnadsredovisning med bakåtavräkning. I kostnadsredovisning med bakåtavräkning ackumuleras de direktmaterial som förbrukas i produktionsflödets kostnadskonto för pågående arbete (PIA). Lagermodellgruppen för standardkostnader används. Produkterna som inlevereras från produktionsflödet dras från PIA till deras standardkostnad. Den största skillnaden mellan bakåtavräkning och standardkostnad är att för bakåtavräkning beräknas inte avvikelser per kanban eller färdig produkt. I stället beräknas avvikelser per produktionsflöde under en period. Denna metod innebär ett riktigt resurssnålt koncept för rapportering av materialförbrukning. Dedikerade plockade kvantiteter rapporteras inte till en kanban eller tillverkningsorder. I stället mellanlagras hela batchar eller materialhanteringsenheter till produktionsflödet. När batchar eller materialhanteringsenheter registrerats som tomma, förklaras de som förbrukade. Avancerad förbrukning kan användas, beroende på [konfigurationen av produktionsflödet](http://ax.help.dynamics.com/en/wiki/lean-manufacturing-modeling-the-lean-organization/). Innan du kan använda avancerad förbrukning, måste organisationer tillåta att de låter material försvinna i PIA för produktionsflödet. Den periodiska bakåtavräkningen bestämmer det effektiva värdet för PIA i slutet av perioden. Beslutet baseras på kanban-materialhanteringsenheten och kanban-jobbstatus. Avvikelser mellan effektiva värden och faktiska PIA-värden per kostnadsgrupp och artikel bokförs och visas som avvikelser.
 
-## Konfigurera kostnadsredovisning med bakåtavräkning
-<a id="configuring-backflush-costing" class="xliff"></a>
+## <a name="configuring-backflush-costing"></a>Konfigurera kostnadsredovisning med bakåtavräkning
 Om du vill aktivera kostnadsredovisning måste du slutföra stegen nedan:
 
 -   **Ställa in PIA-konton för produktionsgruppen och produktionsflödet.** PIA-konton för produktionsflödet anges i produktionsgruppen. Bakåtavräkning för produktionsflödet beräknas som skillnaden i värdet för PIA-avvikelser före och efter bakåtavräkning körs för varje produktionsflöde. Därför rekommenderar vi att du skapar ett PIA-konto för varje produktionsflöde.
@@ -51,8 +49,7 @@ Om du vill aktivera kostnadsredovisning måste du slutföra stegen nedan:
     -   **Kostnadsgrupp för direktutkontraktering** - kostnadsgruppen för direktutkontraktering tillåter en aggregerad vy över tilldelade kostnader och PIA och avgör kostnadsavvikelser för legotillverkningstjänster.
     -   **Kostnadsgrupp för en färdig produkt** - färdiga produkter kräver en kostnadsgrupp som identifierar produktkategori för kostnadsredovisning. Denna kostnadsgrupp tillåter en aggregerad vy över kostnader, PIA och avvikelser genom produktkategori. Standardkostnaden för produkter beräknas med hjälp av kostnadsberäkningen som baseras på en strukturlista (BOM) och antingen produktionsflödet och kanbanregler för produktion, eller flödet.
 
-### Kostnadsredovisning
-<a id="costing-sheet" class="xliff"></a>
+### <a name="costing-sheet"></a>Kostnadsredovisning
 
 Företagets kostnadsredovisningen och kostnadsstrukturmodeller skapas med kostnadsgrupper för att klassificera kostnaden. Kostnadsredovisningen har olika formulär. Den visar kostnadsinformation enligt strukturen som visas i den. I kostnadsredovisningen definierar du även formeln som används för beräkning av indirekta kostnader. Beräkningsformeln kan baseras på kvantitet, vikt, volym eller värde.
 
@@ -62,29 +59,24 @@ Företagets kostnadsredovisningen och kostnadsstrukturmodeller skapas med kostna
 
 För slutprodukter kräver kostnadsberäkning som baseras på produktionsflödet att standardkostnaden behålls för tjänster som rör legotillverkningsaktiviteter. Den kostnadsgrupp som tilldelas tjänster används för att bestämma kostnadsavvikelser för den legotillverkningsaktiviteten.
 
-## Kostnadsberäkning för Lean manufacturing
-<a id="cost-calculation-for-lean-manufacturing" class="xliff"></a>
+## <a name="cost-calculation-for-lean-manufacturing"></a>Kostnadsberäkning för Lean manufacturing
 För produkter som tillhandahålls av ett produktionsflöde ska strukturlisteberäkningen baseras på ett produktionsflöde eller en flödesversion. Strukturlisteberäkningen beräknar kostnaden för en produkt och den relaterade fördelningen till resurser och material som krävs för att skapa produkten. Avdrag från PIA-kontot för produktionsflödet görs med hjälp av fördelningen av en produkt per artikel och kostnadsgrupp.
 
-### Beräkning som baseras på produktionsflöde.
-<a id="calculation-that-is-based-on-the-production-flow" class="xliff"></a>
+### <a name="calculation-that-is-based-on-the-production-flow"></a>Beräkning som baseras på produktionsflöde.
 
 Lean manufacturing för Microsoft Dynamics 365 for Finance and Operations är oberoende av flöden. Kostnadsberäkningen för produkter som tillhandahålls från ett produktionsflöde kan baseras på själva produktionsflödet. Innan beräkningen kan göras måste en kanban-regel skapas som levererar produkten utanför produktionsflödet. Om en produkt kan läsas in från flera produktionsflöden på samma plats på beräkningsdatumet, kan du välja produktionsflödet för strukturlisteberäkningen. På sidan **Standardproduktionsflöde** kan du konfigurera ett standardproduktionsflöde för varje artikel. Om det inte finns flera kanban-regler för samma produkt i samma produktionsflöde som är aktivt på beräkningsdatumet markerar beräkningen den första kanban-regeln som är aktiv för beräkningen.
 
-### Beräkningen baseras på flödet.
-<a id="calculation-that-is-based-on-the-route" class="xliff"></a>
+### <a name="calculation-that-is-based-on-the-route"></a>Beräkningen baseras på flödet.
 
 Beräkning som baseras på ett flöde är en giltig beräkning som baseras på ett produktionsflöde. Däremot en beräkning som baseras på ett flöde använder inte funktionerna kostnadsredovisning för Lean manufacturing. Flödet bör använda resursbehov för resursgrupper. För att undvika systematiska avvikelser bör det också använda samma arbetsgrupper eller åtminstone samma kostnadskategorier. Återigen bör du undvika kostnadskategorier för inställning och kvantitet. De hjälper inte till att beräkna kostnaden i en mer detaljerad uppdelning än för bakåtavräkning av kostnad i Lean manufacturing. För att avgöra vilket alternativ (produktionsflöde eller flöde) som bör användas för att beräkna kostnaden bör kostnadsuppdelningens resultat beaktas. Versionen som kommer närmast utgångspunkten och ger generellt färre avvikelser är ett bra alternativ. I en Lean manufacturing-miljö där en produkt levereras av ett enda produktionsflöde och en enda kanban-regel, är förmodligen beräkningen som baseras på produktionsflödet mer exakt. För en produkt som levereras av en Lean manufacturing och produktionsorder på samma plats och kan ha flera produktionsflöden eller flera kanban-regler i samma flöde kan vara mer exakt om den är baserad på en flödesversion som skapats speciellt för kostnadsberäkningen, inte för produktionen. Beräkningen av produktionsflödet måste användas för att beräkna produkter som innefattar legotillverkning. I Microsoft Dynamics 365 for Finance and Operations använder kostnadsmodeller för legotillverkning via tillverkningsorder och underleverantörer i Lean manufacturing två olika sätt. Lean manufacturing introducerar en ny typ av kostnadsgrupp, **direktutkontraktering**, för att beräkna legotillverkningstjänster.
 
-## Materialförbrukning
-<a id="material-consumption" class="xliff"></a>
+## <a name="material-consumption"></a>Materialförbrukning
 När material förbrukas från lagret till PIA läggs kostnaden för material till i PIA enligt dess faktiska standardkostnad för en kostnadsgrupp. Den här åtgärden uppstår under följande förutsättningar:
 
 -   Kanban-utleveranser bokförs för kanban-plockrader som uppdaterar lagret.
 -   Överföringsjobb slutförs som uppdaterar lagret vid plockning men inte för inleverans (överföring av material från lager till PIA).
 
-## Mottagning av produkter från produktionsflödet
-<a id="receiving-products-from-the-production-flow" class="xliff"></a>
+## <a name="receiving-products-from-the-production-flow"></a>Mottagning av produkter från produktionsflödet
 Produkterna inlevereras från produktionsflödet under följande förhållanden:
 
 -   Processjobb slutförs som har **uppdatering av lager vid inleverans** inställt på **Ja**.
@@ -92,8 +84,7 @@ Produkterna inlevereras från produktionsflödet under följande förhållanden:
 
 Produkterna som inlevereras från produktionsflödet dras från PIA.
 
-## Produkter i PIA 
-<a id="products-in-wip" class="xliff"></a>
+## <a name="products-in-wip"></a>Produkter i PIA 
 PIA i Microsoft Dynamics 365 for Finance and Operations låter dig använda den enhetsstatus för kanban-hantering för att hantera material, halvfabrikat och färdiga produkter som ingår i PIA.
 
 -   **Tilldelad** - kanban kan ha förbrukat materialet som redovisas i PIA.
@@ -101,12 +92,10 @@ PIA i Microsoft Dynamics 365 for Finance and Operations låter dig använda den 
 
 Observera att material från PIA inte syns i lagerbehållningsvyn. Men den syns i kanban-kvantitetsvyn.
 
-## Förbrukade produkter i PIA
-<a id="consuming-products-in-wip" class="xliff"></a>
+## <a name="consuming-products-in-wip"></a>Förbrukade produkter i PIA
 Produkter i PIA förbrukas när motsvarande kanban-materialhanteringsenheter är tomma. En tom kanban-signal ger inte en aktiv kostnadsredovisningstransaktionen men börjar gälla efter att nästa kostnadsredovisning med bakåtavräkning körs. Tomma kanban-materialhanteringsenheter redovisas inte längre som behållna därför beräknas de som förbrukade inom perioden
 
-### Automatisk registrering av tömning
-<a id="automatic-empty-registration" class="xliff"></a>
+### <a name="automatic-empty-registration"></a>Automatisk registrering av tömning
 
 Schemalagda eller händelse-kanban som kan ställas in för automatisk registrering av tömning i kanban-regeln:
 
@@ -115,8 +104,7 @@ Schemalagda eller händelse-kanban som kan ställas in för automatisk registrer
 
 Sammanfattningsvis  kan kanban-hantering av enheter kan tilldelas (= pågår) tas emot (= komplett), eller tömts. Det finns ingen del tömma. För att aktivera korrekt registrering av förbrukning är det viktigt att du begränsar produktkvantiteter för en kanbans så att de är mindre än förbrukning per period. Produkter som flyttas till verkstaden i stora grupper som täcker dagar eller veckor av efterfrågan ska inte förbrukas till PIA. I stället bör produkterna finnas i lager.
 
-## Kostnadskalkylering med automatisk lageravräkning
-<a id="backflush-costing" class="xliff"></a>
+## <a name="backflush-costing"></a>Kostnadskalkylering med automatisk lageravräkning
 Kör ostnadsredovisning med bakåtavräkning till periodiskt värdet för PIA och producera en slutstatus som beräknar varians av material, arbete och omkostnader. Beräknade avvikelser bokförs på avvikelsekontona. I kostnadsredovisning med bakåtavräkning används alla produktionsflöden för den juridiska personen i samma batchkörning. Vid kostnadsredovisning med bakåtavräkning i en batch kan bearbetning vara flertrådad i produktionsmiljön. Bakåtavräkningsperioden definieras av ett slutdatum. Du kan inte bokföra nya transaktioner till ett datum när kostnadsredovisning med bakåtavräkning har körts. Kör aldrig kostnadsredovisning med bakåtavräkning för det aktuella datumet innan dagen är slut. Utför följande steg för kostnadsredovisning med bakåtavräkning.
 
 1.  Bestäm de outnyttjade kvantiteterna i produktionsflödet vid periodens slutdatum. När kostnadsredovisning med bakåtavräkning körs kan du visa de outnyttjade kvantiteterna på datumet för kostnadsredovisningen körs i dialogrutan **Outnyttjade kvantiteter**.

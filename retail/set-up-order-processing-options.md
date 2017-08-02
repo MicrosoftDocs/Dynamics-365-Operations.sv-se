@@ -28,8 +28,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Ställ in alternativ för orderbearbetning
-<a id="set-up-order-processing-options" class="xliff"></a>
+# <a name="set-up-order-processing-options"></a>Ställ in alternativ för orderbearbetning
 
 [!include[banner](includes/banner.md)]
 

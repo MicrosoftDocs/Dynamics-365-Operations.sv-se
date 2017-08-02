@@ -27,24 +27,21 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Definiera och hantera ett förmånsprogram
-<a id="define-and-manage-a-benefits-program" class="xliff"></a>
+# <a name="define-and-manage-a-benefits-program"></a>Definiera och hantera ett förmånsprogram
 
 [!include[banner](includes/banner.md)]
 
 
 Personal innehåller en uppsättning av verktyg som kan användas för att ställa in och underhålla förmåner, avdrag och arbetares kompensationsplaner som en organisation ger eller bearbetar för dess arbetare. Denna artikel innehåller information om hur du ställer in och hanterar förmåner.
 
-Förmånsinställning
-<a id="benefit-setup" class="xliff"></a>
+<a name="benefit-setup"></a>Förmånsinställning
 -------------
 
 Innan arbetare kan anmäla sig till förmåner, måste du skapa elementen för varje förmån. Dessa element kombinerar liknande förmånplaner och definierar standardinställningen, till exempel avdragspriser och redovisningsinformation. Många av de här inställningarna kan justeras när arbetare anmäler sig till förmånen vid ett senare tillfälle. För varje förmånplan kan en organisation erbjuda flera anmälningsalternativ, eller så kan en arbetare anmäla sig till planen. 
 
 [![Processflöde för förmåner](./media/benefit-process-flow1.png)](./media/benefit-process-flow1.png)
 
-## Förmånselement
-<a id="benefit-elements" class="xliff"></a>
+## <a name="benefit-elements"></a>Förmånselement
 Innan du börjar skapa förmåner och anmäla arbetare till dem, måste du definiera de element som utgör en förmån: typ, plan och alternativ.
 
 -   **Typ** – en samling planer för en viss förmån, till exempel medicin eller parkering.
@@ -55,8 +52,7 @@ För varje typ av förmån som till exempel syn- eller tandvård kan en organisa
 
 [![förmånsbild](./media/benefit-pic.png)](./media/benefit-pic.png)
 
-## Berättigande
-<a id="eligibility" class="xliff"></a>
+## <a name="eligibility"></a>Berättigande
 Många faktorer bestämmer berättigande för arbetaren för olika typer av förmåner som en arbetsgivare erbjuder. När du skapar en förmån i Microsoft Talent kan du ange den typ av berättigande som gäller för den förmånen. 
 
 Du kan göra en förmån tillgänglig för alla arbetare. Vissa företag erbjuder till exempel parkeringstillstånd för alla medarbetare som en löneförmån. När du skapar den här förmånen, förmån du ställer in berättigande till **Alla arbetare är berättigade**. 
@@ -65,16 +61,14 @@ För andra förmåner, exempelvis införsel i lån och skatteavgifter, gäller i
 
 Slutligen kan förmånsberättigandet vara regelbaserat. Ett företag erbjuder exempelvis två typer av livförsäkringsförmåner för medarbetare. Anställda i ledande befattningar är berättigade till en livförsäkringsplan, medan alla andra heltidsanställda är berättigade till den andra livförsäkringsplanen. I Talent kan du skapa en förmånsberättiganderegel för att hitta alla anställda i ledande befattningar och en annan regel för att hitta alla andra heltidsanställda, och sedan tillämpa dessa regler på lämplig förmån.
 
-## Anmälning
-<a id="enrollment" class="xliff"></a>
+## <a name="enrollment"></a>Anmälning
 När du har skapat de förmåner som din organisation erbjuder och har fastställt berättigande, kan du registrera dina anställda på förmåner. Du kan skriva in som ett enda anställd i förmåner, eller så kan du anmäla sig många anställd i en eller flera förmåner under en enskild process. 
 
 Ibland stoppar en organisation att erbjuda vissa förmåner. I det här fallet måste du uppdatera förmånen och den personal som registrerats för den. Med massutgångsdatum kan du ändra utgångsdatumet för både en förmån och medarbetarregistreringarna för denna förmån samtidigt. Du kan också markera flera anställd, som är anmäld till en förmån, och ändra slutdatumet för deras disponering. 
 
 På liknande sätt låter dig förlängning av massförmån dig förlänga sista giltighetsdatum för både en förmån och för medarbetarregistreringar för den förmånen om du väljer att erbjuda en förmån längre än vad du ursprungligen planerade.
 
-Se även
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Se även
 --------
 
 [Policyer för förmånsberättigande](benefit-eligibility-policies.md)

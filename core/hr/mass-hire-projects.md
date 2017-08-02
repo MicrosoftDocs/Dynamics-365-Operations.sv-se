@@ -27,16 +27,14 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Massanställningsprojekt
-<a id="mass-hire-projects" class="xliff"></a>
+# <a name="mass-hire-projects"></a>Massanställningsprojekt
 
 [!include[banner](../includes/banner.md)]
 
 
 Massanställningsprojekt låter personalresursspecialister skapa flera befattningar och anställa ett antal arbetare till dessa befattningar på ett effektivt sätt.
 
-Översikt
-<a id="overview" class="xliff"></a>
+<a name="overview"></a>Översikt
 --------
 
 Använd massanställningsprojekt när du anställer flera medarbetare på en gång, till exempel för säsongsarbete. Det kan vara praktiskt att skapa ett massanställningsprojekt, eftersom du kan skapa befattningposter, arbetarposter och arbetartilldelningar för befattningar samtidigt. När du skapar befattningar för ett massanställningsprojekt kan du ange följande information:
@@ -45,16 +43,14 @@ Använd massanställningsprojekt när du anställer flera medarbetare på en gå
 -   Avdelningen och det jobb som befattningarna kopplas till
 -   Heltid motsvarar befattningens värde
 
-## Exempel
-<a id="example" class="xliff"></a>
+## <a name="example"></a>Exempel
 På sommaren anställer du ofta 15-20 högskolestudenter på deltid för att fylla tillgängliga praktikplatser i ditt företag. I år vill du anställa fem revisorer, fem orderprocessorer och fem kassörer. I stället för att skapa varje befattningpost och arbetarposten separat, skapar du ett massanställningsprojektet som kallas ”SummerInterns”. Projektstart- och slutdatum korrelerar med start- och slutdatumen för befattningsvaraktighet för befattningarna som du skapar för massanställningsprojektet. 
 
 Välj sidan **Massanställningsprojekt** och välj projektet "SummerInterns” och klicka sedan på sidan **Öppna projekt**. I den öppna massanställningsprojektet klickar du på **Skapa befattningar** och anger information om revisorbefattningen. Du kan ange att fem revisorbefattningar ska skapas med samma information för varje, och klicka sedan på OK. Upprepa den här processen för orderprocessor- och kassörbefattningarna. 
 
 När du har valt studenter att anställa till praktikbefattningarna, ska du ange varje students information i **Befattningsinformation** för befattningen som du anställer dem för. När du har angett alla befattningdetaljer väljer du befattning på sidan Massanställningsprojekt och klickar sedan på **Anställ**. En befattningspost skapas för varje befattning och en arbetarpost skapas och tilldelas korrekt befattning för varje person som du anställer.
 
-## Status för massanställningsprojekt
-<a id="mass-hire-project-statuses" class="xliff"></a>
+## <a name="mass-hire-project-statuses"></a>Status för massanställningsprojekt
 Ett massanställningsprojekt kan ha nedanstående statusvärden.
 -   Skapad
 -   Öppen

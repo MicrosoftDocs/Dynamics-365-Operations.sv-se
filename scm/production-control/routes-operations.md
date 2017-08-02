@@ -27,16 +27,14 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Flöden och operationer
-<a id="routes-and-operations" class="xliff"></a>
+# <a name="routes-and-operations"></a>Flöden och operationer
 
 [!include[banner](../includes/banner.md)]
 
 
 Det här avsnittet innehåller information om Flöden och operationer. Ett flöde definierar processen för tillverkning av en produkt eller produktvariant. Det beskriver varje steg (operation) i produktionsprocessen och den ordning som dessa steg måste utföras i. För varje steg definierar också flödet de operationsresurser krävs, ställtid och körtid som krävs och hur kostnaden ska beräknas.
 
-Översikt
-<a id="overview" class="xliff"></a>
+<a name="overview"></a>Översikt
 --------
 
 Ett flöde beskriver ordningen av operationer som krävs för att producera en produkt eller produktvariant. Flödet definierar också operationsresurser som krävs, tid som krävs för att ställa in och utföra operationen och hur kostnaden ska beräknas för varje operation. Du kan använda samma flöde för att skapa flera produkter eller definiera ett unikt flöde för varje produkt eller produktvariant. Du kan också ha flera flöden för samma produkt. I detta fall varierar det flöde som används beroende på faktorer som t.ex. den kvantitet som måste produceras. Definitionen av ett flöde i Microsoft Dynamics 365 for Finance and Operations består av fyra separata element som tillsammans beskriver produktionsprocessen:
@@ -46,12 +44,10 @@ Ett flöde beskriver ordningen av operationer som krävs för att producera en p
 -   **Operationsrelation** – En operationsrelation definierar de funktionella egenskaper för en operation som ställtid och körtid, kostnadskategorier, förbrukningsparametrar och krav på systemresurser. Operationsrelationen möjliggör att operativa egenskaper hos en operation varierar beroende på vilket föde som operationen används i eller produkterna som produceras.
 -   **Flödesversion** – en flödesversion som definierar flödet som används för att tillverka en produkt eller produktvariant. Flödesversioner tillåter att flöden ska återanvändas mellan produkter eller ändras med tiden. De tillåter också att olika flöden används för att tillverka samma produkt. I detta fall varierar det flöde som används beroende på faktorer som t.ex. plats eller den kvantitet som måste produceras.
 
-## Flöden
-<a id="routes" class="xliff"></a>
+## <a name="routes"></a>Flöden
 Ett flöde beskriver ordningen av operationer som används för att producera en produkt eller produktvariant. Varje operation tilldelas ett operationsnummer och en efterföljande operation. Operationernas ordning utgör en flödesnätverk som kan representeras av ett riktat diagram med en eller flera startpunkter och en enda slutpunkt. I Dynamics 365 for Finance and Operations skiljer flöden sig åt beroende på typen av struktur. Två typer av flöden är enkla flöden och flödesnätverk. I produktionsstyrningsparametrarna kan du ange om endast enkla flöden kan användas, eller om mer komplexa flödesnätverk kan användas
 
-### Enkla flöden
-<a id="simple-routes" class="xliff"></a>
+### <a name="simple-routes"></a>Enkla flöden
 
 Ett enkelt flöde är sekventiellt och det finns bara en startpunkt för flödet.  
 
@@ -59,8 +55,7 @@ Ett enkelt flöde är sekventiellt och det finns bara en startpunkt för flödet
 
 Om du bara aktiverar enkla flöden i produktionsstyrningsparametrarna genererar Finance and Operations automatiskt operationsnumren (10, 20, 30 osv.) när du definierar flödet.
 
-### Flödesnätverk
-<a id="route-networks" class="xliff"></a>
+### <a name="route-networks"></a>Flödesnätverk
 
 Om du aktiverar mer komplexa flödesnätverk i produktionsstyrningsparametrarna kan du definiera flöden som har flera startpunkter och operationer som kan köras parallellt.  
 
@@ -72,8 +67,7 @@ Om du aktiverar mer komplexa flödesnätverk i produktionsstyrningsparametrarna 
 -   Det finns ingen garanti för att flera operationer med samma efterföljande operation (exempelvis operationer 30 och 40 i bilden ovan) kommer att köras parallellt. Tillgängligheten och kapaciteten hos resurserna kan sätta begränsningar på sättet som operationerna schemaläggs.
 -   Du kan inte använda 0 (noll) som operationsnummer. Det numret är reserverat och används för att ange att den sista operationen i flödet inte har någon efterföljande operation.
 
-### Parallella operationer
-<a id="parallel-operations" class="xliff"></a>
+### <a name="parallel-operations"></a>Parallella operationer
 
 Ibland krävs en kombination av flera operationsresurser som har olika egenskaper för att utföra en operation. En monteringsoperation kanske till exempel kräver en maskin och ett verktyg och en arbetare för varje två maskiner för att övervaka operationen. Det här exemplet kan utformas med parallella operationer där en operation anges som den primära operationen och de andra sekundära.  
 
@@ -85,8 +79,7 @@ Både den primära operationen och sekundära operationer måste ha samma operat
 
 I det föregående exemplet är resursbehovet för den primära operationen (30) maskinen, medan resursbehoven för de sekundära operationerna (30' och 30'') är verktyget och arbetaren. En 50 procentig beläggning hjälper till att garantera att den schemalagda arbetaren kan övervaka två datorer samtidigt.
 
-### Godkännande av flöden
-<a id="approval-of-routes" class="xliff"></a>
+### <a name="approval-of-routes"></a>Godkännande av flöden
 
 Ett flöde måste godkännas innen det kan användas i planeringen eller tillverkningsprocessen. Godkännande anger att flödesdesignen har slutförts. Samma frisläppta produkt eller frisläppta produktvariant kan ha flera godkända flöden. Vanligtvis sker godkännande av ett flöde när den första relevanta flödesversionen är godkänd. I vissa affärsscenarier är dock godkännandet av flödet och flödesvisionen separata aktiviteter som kan involvera olika processägare.  
 
@@ -94,8 +87,7 @@ Varje flöde och formel går att godkänna och upphäva separat. Observera att o
 
 Om du måste hålla en logg som registrerar vem som godkänner varje flöde, kan du kräva elektroniska signaturer för flödeskännande. Användare måste sedan bekräfta sin identitet med hjälp av en [elektronisk signatur](/dynamics365/unified-operations/fin-and-ops/organization-administration/electronic-signature-overview).
 
-## Operationer
-<a id="operations" class="xliff"></a>
+## <a name="operations"></a>Operationer
 En operation är ett steg i produktionsprocessen, t.ex. I Dynamics 365 for Finance and Operations har varje operation ett ID och en kort beskrivning. I följande tabell visas vanliga exempel på operationer från en maskinaffär.
 
 | Åtgärd  | beskrivning        |
@@ -107,8 +99,7 @@ En operation är ett steg i produktionsprocessen, t.ex. I Dynamics 365 for Finan
 
 De funktionella egenskaper för en operation som ställtid och körtid, kostnadskategorier, resursbehov, kostnadsinformation och konsumtionsberäkning specificeras i operationsrelationen. (Mer information om operationsrelationer finns i nästa avsnitt.)
 
-## Operationsrelation
-<a id="operation-relations" class="xliff"></a>
+## <a name="operation-relations"></a>Operationsrelation
 Följande funktionella egenskaper för en operation hanteras i operationsrelationen:
 
 -   Kostnadskategorier
@@ -135,8 +126,7 @@ Operationsrelationer ger stor flexibilitet när du definierar dina flöden. Dess
 
 **Obs!** eftersom funktionella egenskaper lagras i operationsrelationer per operation, per flöde, har alla förekomster av samma operation (exempelvis sammansättningen) samma ställtid, körtid, resurskrav och så vidare. Om två förekomster av en operation måste finnas i samma flöde men har olika körtider, måste du därför skapa två olika operationer, t.ex. Sammansättning1 och Sammansättning2.
 
-### Ändra produktspecifika flöden
-<a id="modifying-product-specific-routes" class="xliff"></a>
+### <a name="modifying-product-specific-routes"></a>Ändra produktspecifika flöden
 
 När du öppnar sidan **Flöde** från **Frisläppt produktinformation** kommer de flödesversioner som är kopplade till den valda frisläppt produkten att visas. I detta sammanhang visar Dynamics 365 for Finance and Operations de operationsrelationers funktionella egenskaper som bäst motsvarar flödesversionen för varje operation. Du ser att listan över operationer innehåller egenskaperna **Artikelkod** och **flöde śkod** från operationsrelationen. Därför kan du bestämma vilken operationsrelation som ska visas.  
 
@@ -146,22 +136,19 @@ Kan du också manuellt skapa en operation som gäller ett flöde och en frisläp
 
 **Obs!** om du lägger till en ny operation till ett flöde på sidan **flöde**, skapas en operationsrelation endast för den aktuella frisläppta produkten. Därför används också flödet för att tillverka andra frisläppta produkter, gäller inte operationsrelationen för de frisläppta produkterna och flödet kan inte längre användas för de frisläppta produkterna.
 
-### Underhåll operationsrelationer för flöden
-<a id="maintaining-operation-relations-per-route" class="xliff"></a>
+### <a name="maintaining-operation-relations-per-route"></a>Underhåll operationsrelationer för flöden
 
 När du öppnar sidan **Flödesdetaljer** från listsidan **flöden** visas en lista över alla operationsrelationer som gäller för det valda flödet. Du kan därför enkelt kontrollera vilka funktionella egenskaper används för vilka produkter. Du kan ändra både standardvärden för egenskaper och produktspecifika egenskapsvärden.  
 
 Om du lägger till en ny operationsrelation på sidan **flödesinformation** anges fältet **flödeskod** automatiskt till **flöde**, och **flödesrelationen** är inställt på flödesnumret för det aktuella flödet.
 
-### Underhåll av operationsrelationer per operation
-<a id="maintaining-operation-relations-per-operation" class="xliff"></a>
+### <a name="maintaining-operation-relations-per-operation"></a>Underhåll av operationsrelationer per operation
 
 Från sidan **Operationer** kan du öppna sidan **operationsrelationer**. Du kan ändra alla operationsrelationer för en specifik operation på denna sida. Du kan även ändra operationsrelationer med standardvärden.  
 
 Om ditt företag använder standardåtgärder och om driftsparametrar är desamma för alla produkter och processer ger sidan **operationsrelationer** ett enkelt sätt att underhålla standardegenskaperna för dessa operationer.
 
-### Tillämpa operationsrelationer
-<a id="applying-operation-relations" class="xliff"></a>
+### <a name="applying-operation-relations"></a>Tillämpa operationsrelationer
 
 I vissa fall måste Dynamics 365 for Finance and Operations hitta operationens funktionella egenskaper. Exempelvis när en inköpsorder skapas måste de funktionella egenskaperna för varje operation kopieras från operationsrelationer i produktionsflödet. I sådana fall söker Finance and Operations efter de relevanta operationsrelationerna från den mest specifika kombinationen till den minst specifika.  
 
@@ -179,8 +166,7 @@ När Dynamics 365 for Finance and Operations söker efter den mest relevanta ope
 
 En operation bör därför användas endast en gång för varje flöde. Om en operation händer flera gånger i samma flöde kommer alla händelser av den operationen kommer ha samma operationsrelation och du inte har olika egenskaper (till exempel körtid) för varje händelse.
 
-## Flödesversioner
-<a id="route-versions" class="xliff"></a>
+## <a name="route-versions"></a>Flödesversioner
 Flödesversioner används för att ge plats åt variationer i produktionen av produkter, eller för att ge dig större kontroll över produktionsprocessen. De definierar vilket flöde som ska användas när en specifik frisläppt produkt eller frisläppt produktvariant tillverkas. Du kan använda följande villkor för att definiera vilka flödesversioner används för frisläppt produkt:
 
 -   Produktdimensioner (storlek, färg, format eller konfiguration)
@@ -192,32 +178,26 @@ När du skapar produkten på en viss plats, i en viss kvantitet eller under en v
 
 I produktionsstyrningsparametrarna kan du kräva att giltighetsperioden för en flödesversion alltid anges.
 
-### Godkännande av flödesversioner
-<a id="approval-of-route-versions" class="xliff"></a>
+### <a name="approval-of-route-versions"></a>Godkännande av flödesversioner
 
 Innan en flödesversion kan användas i planeringen eller tillverkningsprocessen måste den godkännas. När du godkänner en flödesversion kan du också godkänna det relaterade flödet. Observera dock att en färdvägsversion endast kan godkännas om det relaterade flödet också är godkänt.
 
-### Aktivera standardflödesversionen
-<a id="activating-the-default-route-version" class="xliff"></a>
+### <a name="activating-the-default-route-version"></a>Aktivera standardflödesversionen
 
 När du aktiverar en flödesversion måste ange du den som standardflödesversionen som huvudplaneringen använder eller den som används för att skapa produktionsorder. Du kan ha endast en aktiv flödesversion för en given uppsättning villkor (till exempel period, plats eller antal). Du får ett felmeddelande om versionen som du försöker aktivera står i konflikt med en version som redan är aktiv. Du måste sedan antingen inaktivera den motstridiga versionen eller ändra versionsbegränsningarna (vanligtvis perioden) för att förhindra en oklar aktivering.
 
-### Elektronisk signatur
-<a id="electronic-signatures" class="xliff"></a>
+### <a name="electronic-signatures"></a>Elektronisk signatur
 
 Om du måste hålla en logg som registrerar vem som godkänner och aktiverar varje flödesversion, kan du kräva elektroniska signaturer för flödeskännande. Användare som kan godkänna och aktivera flödesversioner måste sedan bekräfta sin identitet med hjälp av en [elektronisk signatur](/dynamics365/unified-operations/fin-and-ops/organization-administration/electronic-signature-overview).
 
-### Produktändring med ärendehantering
-<a id="product-change-that-uses-case-management" class="xliff"></a>
+### <a name="product-change-that-uses-case-management"></a>Produktändring med ärendehantering
 
 Produktändringsärendet för godkännande och aktivering av nya eller ändrade flöden och flödesversioner ger dig ett enkelt sätt att visa en översikt över begränsningarna för flödesversioner. Du kan också godkänna och aktivera alla flöden som är kopplade till en viss händelse i en operation och resultaten i produktändringsfallet.
 
-## Underhålla flöden
-<a id="maintaining-routes" class="xliff"></a>
+## <a name="maintaining-routes"></a>Underhålla flöden
 Beroende på ditt företags behov kanske du vill minska det arbete som krävs för att underhålla dina processdefinitioner.
 
-### Göra flöden oberoende av resurser
-<a id="making-routes-independent-of-resources" class="xliff"></a>
+### <a name="making-routes-independent-of-resources"></a>Göra flöden oberoende av resurser
 
 I många system måste operationresursen eller resursgruppen som ska utföra operationen anges i flödet. I Dynamics 365 for Finance and Operations kan du dock definiera en uppsättning krav som en verksamhetsresurs måste uppfylla för att kunna tillämpas på operationen. Därför kan inte specifika operationsresurser eller resursgrupper som ska användas bestämmas förrän operationen schemaläggs. Denna funktion är speciellt användbar när du har många arbetare eller maskiner som kan utföra samma operation.  
 
@@ -225,8 +205,7 @@ Till exempel anger du att en operation kräver en operationsresurs av typen **ma
 
 Mer information om de olika typerna av resursbehov och hur de används finns i Operationsresurskrav och [resurskunskaper](resource-capabilities.md).
 
-### Dela flöden mellan platser
-<a id="sharing-routes-across-sites" class="xliff"></a>
+### <a name="sharing-routes-across-sites"></a>Dela flöden mellan platser
 
 Om du skapar samma produkt på mer än en produktionsplats och stegen för att framställa produkten är samma på alla platser skapar du ofta ett delat flöde som används i alla produktionsanläggningar. Om du vill skapa ett delat flöde ska du inte specifiera en plats på själva flödet. Du måste fortfarande skapa en flödesversion som kopplar produkten på varje delad flödet.  
 
@@ -234,8 +213,7 @@ Du måste också kontrollera att resursbehov för varje operation i flödet inte
 
 Du bör också använda resursförbrukning på motsvarande strukturlista(BOM) om du vill dra nytta av fördelarna med delade flöden. När du anger flaggan för resursförbrukning för strukturlisteraden härleds lageret och den plats som råvaror ska konsumeras av från den operationresurs som operationen är planerad till. Därför måste inte lagerstället och platsen bestämmas förrän produktionen planeras. På så sätt kan du göra både strukturlistan och flödet oberoende av den fysiska platsen där produkten tillverkas.
 
-### Standardoperationsrelationer
-<a id="standard-operation-relations" class="xliff"></a>
+### <a name="standard-operation-relations"></a>Standardoperationsrelationer
 
 Om företaget använder standardiserad operationer genom hela produktionen och om det finns en liten eller ingen variation i ställtid, körtid, förbrukningsberäkning, kostnadsberäkning osv, kan du dra nytta av att skapa standardoperationsrelationer för alla operationer. Då slipper du operationsrelationer som avser ett flöde eller frisläppt produkt.  
 
@@ -243,8 +221,7 @@ Om även uttrycker resursbehov i fråga om kunskaper och funktioner och gör din
 
 När du använder den här metoden blir sidan **operationsrelationer** det primära målet för underhållskörtid och andra egenskaper.
 
-### Resursspecifika processtider
-<a id="resource-specific-process-times" class="xliff"></a>
+### <a name="resource-specific-process-times"></a>Resursspecifika processtider
 
 Om du inte anger en operationsresurs eller resursgrupp som en del av resurskraven för en operation, kan resurser arbeta med olika hastigheter. Den tid som behövs för att bearbeta en operation varierar. För att lösa problemet kan du använda fältet **formel** på operationsrelationenför att ange hur processtiden beräknas. Följande alternativ är tillgängliga:
 
@@ -254,8 +231,7 @@ Om du inte anger en operationsresurs eller resursgrupp som en del av resurskrave
 -   **Resursbatch** – det här alternativet är ungefär densamma som alternativet **Batch**. Men innefattar fältet **Batchkapacitet** från operationsresursen. Därför är tiden resursenberoende.
 
 
-Se även
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Se även
 --------
 
 [Strukturlistor och formler](bill-of-material-bom.md)

@@ -27,16 +27,14 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Trevägsmatchningspolicyer
-<a id="three-way-matching-policies" class="xliff"></a>
+# <a name="three-way-matching-policies"></a>Trevägsmatchningspolicyer
 
 [!include[banner](../includes/banner.md)]
 
 
 Den här artikeln innehåller exempel på trevägsmatchning.
 
-Exempel: trevägsmatchning för artiklar
-<a id="example-three-way-matching-for-items" class="xliff"></a>
+<a name="example-three-way-matching-for-items"></a>Exempel: trevägsmatchning för artiklar
 -------------------------------------
 
 **Sammanfattning:** Ken är kontrollant på högkvarteret för av en juridisk person som heter Fabrikam. Ken bestämmer att alla leverantörsfakturor som baseras på inköpsorder ska matchas med inköpsorder (tvåvägsmatchning). Vid inköp av artiklar som ska användas som anläggningstillgångar, fakturor ska matchas med både inköpsorderrader och produktinleveransrader (trevägsmatchning).
@@ -49,8 +47,7 @@ Fakturamatchningpolicyerna i det här exemplet hjälper människor i följande r
 -   Phyllis och April är redovisningchefer på ekonomiavdelningen i Fabrikams amerikanska avdelning. De kan tillämpa företagets policy och kontrollera att fakturor betalas, endast efter att fakturorna matchas med inköpsordern och mottagning av varor och tjänster.
 -   Tony är produktionchefen för Fabrikams amerikanska avdelning. Han och annan produktionpersonal kan kontrollera att artiklar tas emot som de har beställts från leverantörerna och dessutom bokförs så att personalen har vad de behöver för att kunna utföra sitt arbete.
 
-### Förutsättningar
-<a id="prerequisites" class="xliff"></a>
+### <a name="prerequisites"></a>Förutsättningar
 
 -   Ken anger matchningspolicyn på juridisk personnivån till trevägsmatchning.
 -   Ken anger Automatiskt uppdatering av växling av huvudmatchningsstatus för den juridiska personen till Ja.
@@ -64,8 +61,7 @@ Fakturamatchningpolicyerna i det här exemplet hjälper människor i följande r
 
 -   Arnie, en kundreskontraansvarig på Contoso, granskar veckans försändelser. Arnie väljer försändelsetransaktioner för att fakturera Fabrikam för leverans av CNC Milicron-datorerna. Arnie inkluderar en avgift för distribution och hantering. Fabrikam ska beakta om avgiften ska ingå i kostnaden för tillgången.
 
-### Scenario
-<a id="scenario" class="xliff"></a>
+### <a name="scenario"></a>Scenario
 
 1.  Sammy, en anställd på inleveransavdelninen på Fabrikam, tar emot den totala kvantiteten av datorer som levereras från Contoso. Han anger en kvantitet på 5 på en produktinleverans. Eftersom inköpsordern har inlevererats helt, ändras statusen för inköpsordern till Inlevererad.
 2.  April, leverantörsreskontrakoordinatorn på Fabrikam, matar in och verifierar fakturan som skickas in av Contoso. Hon verifierar följande information:
@@ -91,8 +87,7 @@ I Finance and Operations omfattar fakturaraden följande information:
 
 Eftersom denna rad genomgår fakturamatchningprocessen, kan fakturan bokföras.
 
-##  Exempel: Trevägsmatchning för artikel- och leverantörskombinationer
-<a id="example-three-way-matching-for-item-and-vendor-combinations" class="xliff"></a>
+## <a name="example-three-way-matching-for-item-and-vendor-combinations"></a> Exempel: Trevägsmatchning för artikel- och leverantörskombinationer
 Sammanfattning: Ken är kontrollant på högkvarteret för av en juridisk person som heter Fabrikam. Ken bestämmer att alla fakturor som baseras på inköpsorder ska matchas med inköpsorder (tvåvägsmatchning). Cassie är bokföringsansvarig på Fabrikans malaysiska avdelning. Hon anger att valda artiklar som har beställts från vissa leverantörer i Malaysia ska matchas med både inköpsorderrad och produktinleveransrader (trevägsmatchning). Hon kan också åsidosätta matchningspolicyn till en högre nivå för att matcha för specifika inköpsorder. 
 
 Volymen och beloppen är små och det har funnit har problem vid leverans från alla leverantörer i Malaysia. Av denna anledning anger Cassie kontrollnivån för vissa artiklar och leverantörskombinationer som anskaffas i Malaysia till trevägsmatchning. 
@@ -101,8 +96,7 @@ Fakturamatchningpolicyerna i det här exemplet hjälper människor i följande r
 -   Ken är kontrollanten för företaget Fabrikam. Han kan hjälpa människor i sin organisation att identifiera och korrigera problem med beställning, mottagning och betalning av artiklar (varor och tjänster) från leverantörer.
 -   Cassie är bokföringsansvarig för Fabrikans malaysiska avdelning. Hon kan tillämpa företagets policy och kontrollera att fakturor betalas, endast efter att de matchas med inköpsorderrader och produktinleveranser som representerar inleverans av varor och tjänster. Hon kan även öka kontrollnivån för trevägsmatchning för specifika artiklar för att kontrollera driftskostnader.
 
-### Förutsättningar
-<a id="prerequisites" class="xliff"></a>
+### <a name="prerequisites"></a>Förutsättningar
 
 -   Ken anger matchningspolicyn på juridisk personnivån till tvåmatchning.
 -   Ken anger fältet Matchprissummor för den juridiska personen till Procentsats och anger 10 % som toleransprocent.
@@ -116,8 +110,7 @@ Fakturamatchningpolicyerna i det här exemplet hjälper människor i följande r
     | MM01 – Trådlös mus | 2        | 40,00      | 80,00      | Tvåvägsmatchning                | Trevägsmatchning                           |
     | USB-enhet             | 200      | 10,00      | 2 000,00   | Tvåvägsmatchning                | Tvåvägsmatchning                             |
 
-### Scenario
-<a id="scenario" class="xliff"></a>
+### <a name="scenario"></a>Scenario
 
 1.  Artiklarna har levererats. Sammy, en anställd på inleveransavdelningen på Fabrikans malysiska avdelning, blir störd och bokför inte produktinleveransen på en gång.
 2.  April, leverantörsreskontrakoordinatorn på Fabrikam, matar in och verifierar fakturan som skickas in av Contoso. Hon verifierar följande information:

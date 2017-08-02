@@ -26,8 +26,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Nyheter eller ändringar
-<a id="whats-new-or-changed" class="xliff"></a>
+# <a name="whats-new-or-changed"></a>Nyheter eller ändringar
 
 [!include[banner](../includes/banner.md)]
 
@@ -35,8 +34,7 @@ Den här sidan hänvisar dig till teman som kan hjälpa dig att få kunskap om d
 
 Om du vill ha information om hur du uppgraderar till den senaste versionen, se [Process för uppgradering den senaste uppdateringen](../migration-upgrade/upgrade-latest-update.md).
 
-## Programutgåvor
-<a id="application-releases" class="xliff"></a>
+## <a name="application-releases"></a>Programutgåvor
 
 För mer information om mobila arbetsytor och Power BI-innehåll som nyligen lanserats, se [Nyligen lanserade mobila arbetsytor för mobilappen Dynamics 365 for Finance and Operations](../mobile-apps/mobile-workspaces-released.md) och [Nyligen lanserat Power BI-innehåll för Dynamics 365 for Finance and Operations](../analytics/power-bi-home-page.md)
 
@@ -89,8 +87,7 @@ För mer information om mobila arbetsytor och Power BI-innehåll som nyligen lan
 </tbody>
 </table>
 
-## Plattformsutgåvor
-<a id="platform-releases" class="xliff"></a>
+## <a name="platform-releases"></a>Plattformsutgåvor
 
 <table>
 <colgroup>

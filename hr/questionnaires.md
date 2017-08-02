@@ -27,8 +27,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Enkäter
-<a id="questionnaires" class="xliff"></a>
+# <a name="questionnaires"></a>Enkäter
 
 Det här ämnet innehåller allmän information om enkäter och länkar till mer detaljerad information. En enkät är en uppsättning frågor som används för att samla in information för olika ändamål. Det går att utforma, skapa, distribuera och fylla i enkäter och sedan analysera resultaten. 
 
@@ -50,8 +49,7 @@ I följande tabell finns länkar till mer information om viktiga enkätuppgifter
 
 
 
-Se även
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Se även
 --------
 
 [Utforma enkäter](design-questionnaires.md)

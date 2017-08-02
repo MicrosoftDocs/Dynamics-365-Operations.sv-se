@@ -28,16 +28,14 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Beräkning av indirekta kostnader
-<a id="overhead-calculation" class="xliff"></a>
+# <a name="overhead-calculation"></a>Beräkning av indirekta kostnader
 
 [!include[banner](../includes/banner.md)]
 
 
 Det här avsnittet beskriver de vanliga processerna för beräkning och allokering av indirekta kostnader.
 
-Termdefinition
-<a id="term-definition" class="xliff"></a>
+<a name="term-definition"></a>Termdefinition
 ---------------
 
 Indirekta kostnader är sådana kostnader som uppkommer för att kunna driva ett företag, men som inte är direkt hänförliga till en viss affärsverksamhet, produkt eller tjänst. Indirekta kostnader har viktiga funktioner för generering av vinstdrivande aktiviteter. Här följer några exempel på indirekta kostnader:
@@ -46,8 +44,7 @@ Indirekta kostnader är sådana kostnader som uppkommer för att kunna driva ett
 -   Elektricitet
 -   Administrativa löner
 
-## Översikt över beräkning av indirekta kostnader
-<a id="overhead-calculation-overview" class="xliff"></a>
+## <a name="overhead-calculation-overview"></a>Översikt över beräkning av indirekta kostnader
 Beräkning av indirekta kostnader kör kostnadsredovisningspolicyerna i korrekt ordning. Du kan köra beräkningar av indirekta kostnader flera gånger för samma räkenskapsperiod om kostnadsredovisningspolicyerna har ändrats eller om specifika fel har upptäckts. Varje körning av beräkning av indirekta kostnader lagras och får ett unikt versions-ID som gör att du kan jämföra beräkningarna i olika versioner. Kostnadstransaktioner som beräkningen av indirekta kostnader genererar får ett redovisningsdatum. Det här redovisningsdatumet matchar slutdatumet för den räkenskapsperiod som används i beräkningen. Det unika versions-ID:t består av följande element:
 
 -   Versionstyp
@@ -59,8 +56,7 @@ Beräkning av indirekta kostnader kör kostnadsredovisningspolicyerna i korrekt 
 Beräkningen av indirekta kostnader körs oberoende av versionen. Du kan därför beräkna budgetversionen innan den faktiska versionen. Beräkningen av indirekta kostnader består av fyra steg som visas i följande bild. I varje steg skapas en journalrubrik med journalposter. Den här journalrubriken behåller indata för varje beräkningssteg. Policyer och regler tillämpas på varje journalrad och kostnadstransaktioner skapas som utleverans. Därför måste du alltid ha fullständig spårning. 
 [![Beräkning av indirekta kostnader](./media/period-cost-calculation.png)](./media/period-cost-calculation.png)
 
-## Beräkna och fördela den indirekta elkostnaden
-<a id="calculate-and-allocate-the-electricity-overhead-cost" class="xliff"></a>
+## <a name="calculate-and-allocate-the-electricity-overhead-cost"></a>Beräkna och fördela den indirekta elkostnaden
 I affärsredovisning är vissa kostnader som till exempel el, registrerade som en klumpsumma. Därför ges inte detaljerad ledarskapsinblick för kostnadsredovisning. I kostnadsredovisning måste kostnader flöda genom organisationsenheterna för att ge rätt ledarskapsinsikt för alla organisationsenheter och nivåer. Detta flöde måste baseras på en korrekt bild av förbrukningen eller en rimlig bedömning. I redovisning kan en elkostnad bokföras enligt tabellen nedan.
 
 <table>
@@ -84,13 +80,11 @@ I affärsredovisning är vissa kostnader som till exempel el, registrerade som e
 </tbody>
 </table>
 
-### Steg 1: Bearbeta beräkning av kostnadsbeteende
-<a id="step-1-process-the-cost-behavior-calculation" class="xliff"></a>
+### <a name="step-1-process-the-cost-behavior-calculation"></a>Steg 1: Bearbeta beräkning av kostnadsbeteende
 
 Som standard när kostnadstransaktioner importeras från källdata, får de klassificeringen **Oklassificerade** i kostnadsredovisning. Genom att använda policyregler för kostnadsbeteende klassificerar du kostnadstransaktioner som **fast kostnad** eller **variabel kostnad**.
 
-#### Definiera kostnadsbeteenderegeln
-<a id="define-the-cost-behavior-rule" class="xliff"></a>
+#### <a name="define-the-cost-behavior-rule"></a>Definiera kostnadsbeteenderegeln
 
 I vissa fall är en del av kostnaden en fast avgift och återstående kostnad baseras på förbrukning. Elräkningar matchar ofta denna definition. När du betalar en fast avgift betalar du för förbrukning per kilowattimme (Kwh). Om avgiften t.ex. är en fast kostnad på 1 000,00 definieras kostnadsbeteenderegeln enligt följande:
 
@@ -98,8 +92,7 @@ I vissa fall är en del av kostnaden en fast avgift och återstående kostnad ba
     -   0 &lt;= 1 000,00 = fast
     -   1 000,01 &lt; N = variabel
 
-##### Journal
-<a id="journal" class="xliff"></a>
+##### <a name="journal"></a>Journal
 
 <table>
 <thead>
@@ -122,8 +115,7 @@ I vissa fall är en del av kostnaden en fast avgift och återstående kostnad ba
 </tbody>
 </table>
 
-##### Journalposter (Journalposter för kostnadsobjektsaldo)
-<a id="journal-entries-cost-object-balance-journal-entries" class="xliff"></a>
+##### <a name="journal-entries-cost-object-balance-journal-entries"></a>Journalposter (Journalposter för kostnadsobjektsaldo)
 
 <table>
 <thead>
@@ -148,8 +140,7 @@ I vissa fall är en del av kostnaden en fast avgift och återstående kostnad ba
 </tbody>
 </table>
 
-##### Kostnadsposter
-<a id="cost-entries" class="xliff"></a>
+##### <a name="cost-entries"></a>Kostnadsposter
 
 <table>
 <thead>
@@ -203,13 +194,11 @@ I vissa fall är en del av kostnaden en fast avgift och återstående kostnad ba
 
 Detaljerad information om kostnadsbeteende finns i Kostnadsbeteendepolicy. (Observera att det här ämnet ännu inte är färdigt men kommer snart.)
 
-### Steg 2: Bearbeta beräkning av kostnadsfördelning
-<a id="step-2-process-the-cost-distribution-calculation" class="xliff"></a>
+### <a name="step-2-process-the-cost-distribution-calculation"></a>Steg 2: Bearbeta beräkning av kostnadsfördelning
 
 Kostnadsfördelning används för att distribuera kostnad från ett kostnadsobjekt till ett eller flera andra kostnadsobjekt genom att tillämpa ett relevant allokeringsunderlag. Kostnadsfördelning och kostnadsallokering skiljer sig genom att kostnadsfördelning alltid inträffar i nivån för det primära kostnadselementet i den ursprungliga kostnaden.
 
-#### Definiera kostnadsfördelningsregeln
-<a id="define-the-cost-distribution-rule" class="xliff"></a>
+#### <a name="define-the-cost-distribution-rule"></a>Definiera kostnadsfördelningsregeln
 
 I affärsredovisning är elkostnader ofta registrerade som en klumpsumma. I kostnadsredovisning är inte denna metod tillräckligt detaljerad. Variabelkostnaden ska fördelas på det enskilda kostnadsobjektet på ett rättvist sätt. Den mest logiska allokeringsbasen är elförbrukning (Kwh). En statistikdimensionsmedlem som heter Elektricitet skapas och elförbrukningen bokförs. Som standard blir alla statistikdimensionsmedlemmar tillgängliga som allokeringsunderlag.
 
@@ -315,8 +304,7 @@ Den fasta kostnaden ska fördelas jämnt på de enskilda kostnadsbärarna som ha
 </tbody>
 </table>
 
-##### Journal
-<a id="journal" class="xliff"></a>
+##### <a name="journal"></a>Journal
 
 <table>
 <thead>
@@ -339,8 +327,7 @@ Den fasta kostnaden ska fördelas jämnt på de enskilda kostnadsbärarna som ha
 </tbody>
 </table>
 
-##### Journalposter (Journalposter för kostnadsobjektsaldo)
-<a id="journal-entries-cost-object-balance-journal-entries" class="xliff"></a>
+##### <a name="journal-entries-cost-object-balance-journal-entries"></a>Journalposter (Journalposter för kostnadsobjektsaldo)
 
 <table>
 <thead>
@@ -374,8 +361,7 @@ Den fasta kostnaden ska fördelas jämnt på de enskilda kostnadsbärarna som ha
 </tbody>
 </table>
 
-##### Kostnadsposter
-<a id="cost-entries" class="xliff"></a>
+##### <a name="cost-entries"></a>Kostnadsposter
 
 <table>
 <thead>
@@ -447,13 +433,11 @@ Den fasta kostnaden ska fördelas jämnt på de enskilda kostnadsbärarna som ha
 
 För detaljerad information om kostnadsfördelning och allokeringsunderlag, se Kostnadsfördelningspolicy och Allokeringsunderlag. (Observera att det här ämnet ännu inte är färdigt men kommer snart.)
 
-### Steg 3: Bearbeta beräkning av indirekt kostnad
-<a id="step-3-process-the-overhead-rate-calculation" class="xliff"></a>
+### <a name="step-3-process-the-overhead-rate-calculation"></a>Steg 3: Bearbeta beräkning av indirekt kostnad
 
 Den indirekta kostnaden används för att debitera en eller flera specifika kostnadsobjekt. Avgiften baseras på en förutbestämd kostnadstarriff och storleken från det tilldelade fördelningsunderlaget. 
 
-#### Definiera en indirekt kostnad
-<a id="define-the-overhead-rate" class="xliff"></a>
+#### <a name="define-the-overhead-rate"></a>Definiera en indirekt kostnad
 
 Kostnadsobjekt CC001 HR bidrar till en uppsättning interna projekt. En statistikdimensionsmedlem som heter HR skapas för att mäta förbrukad storlek.
 
@@ -534,8 +518,7 @@ Följande tabell visar resultatet när HR-projekt används som allokeringsunderl
 </tbody>
 </table>
 
-##### Journal
-<a id="journal" class="xliff"></a>
+##### <a name="journal"></a>Journal
 
 <table>
 <thead>
@@ -558,8 +541,7 @@ Följande tabell visar resultatet när HR-projekt används som allokeringsunderl
 </tbody>
 </table>
 
-##### Journalposter för beräkning av indirekt kostnad (Journalposter för beräkning av indirekt kostnad)
-<a id="journal-entries-journal-entries-for-overhead-rate-calculation" class="xliff"></a>
+##### <a name="journal-entries-journal-entries-for-overhead-rate-calculation"></a>Journalposter för beräkning av indirekt kostnad (Journalposter för beräkning av indirekt kostnad)
 
 <table>
 <thead>
@@ -585,8 +567,7 @@ Följande tabell visar resultatet när HR-projekt används som allokeringsunderl
 </tbody>
 </table>
 
-##### Kostnadsposter
-<a id="cost-entries" class="xliff"></a>
+##### <a name="cost-entries"></a>Kostnadsposter
 
 <table>
 <thead>
@@ -640,13 +621,11 @@ Följande tabell visar resultatet när HR-projekt används som allokeringsunderl
 
 Detaljerad information om policy för indirekt kostnad finns i Policy för indirekt kostnad och Allokeringsunderlag. (Observera att det här ämnet ännu inte är färdigt men kommer snart.)
 
-### Steg 4: Bearbeta beräkning av kostnadsallokering
-<a id="step-4-process-the-cost-allocation-calculation" class="xliff"></a>
+### <a name="step-4-process-the-cost-allocation-calculation"></a>Steg 4: Bearbeta beräkning av kostnadsallokering
 
 Allokering används för att allkokera saldot på ett kostnadsobjekt till andra kostnadsobjekt genom att använda ett allokeringsunderlag. Finance and Operations stöder ömsesidig allokeringsmetod. I den inbördes allokeringsmetoden identifieras de ömsesidiga tjänsterna som de extra kostnadobjekten utbyter fullständigt. Systemet avgör automatiskt den korrekta ordnigen för att utföra allokeringar i. Saldot på ett kostnadsobjekt allkoeras genom ett enda allokeringsunderlag. Allokeringar över kostnadsobjektdimensioner och deras respektive medlemmar stöds. Allokeringsordern styrs av kostnadskontrollenheten. [![Ömsesidig metod](./media/reciprocal-method.png)]
 
-#### Definiera kostnadsallokering
-<a id="define-the-cost-allocation" class="xliff"></a>
+#### <a name="define-the-cost-allocation"></a>Definiera kostnadsallokering
 
 Här följer ett enkelt exempel som förklarar hur du kan spåra kostnadsflödet. Kostnadsobjekt CC001 HR bidrar till flera kostnadsobjekt. En statistikdimensionsmedlem som heter HR-tjänster skapas för att mäta förbrukad storlek.
 
@@ -953,8 +932,7 @@ Följande tabell visar resultatet när Förpackningstjänster för privatpersone
 </tbody>
 </table>
 
-##### Journalposter (Journalposter för kostnadsobjektsaldo)
-<a id="journal-entries-cost-object-balance-journal-entries" class="xliff"></a>
+##### <a name="journal-entries-cost-object-balance-journal-entries"></a>Journalposter (Journalposter för kostnadsobjektsaldo)
 
 <table>
 <thead>
@@ -977,8 +955,7 @@ Följande tabell visar resultatet när Förpackningstjänster för privatpersone
 </tbody>
 </table>
 
-##### Journalrader
-<a id="journal-lines" class="xliff"></a>
+##### <a name="journal-lines"></a>Journalrader
 
 <table>
 <thead>
@@ -1102,8 +1079,7 @@ Följande tabell visar resultatet när Förpackningstjänster för privatpersone
 </tbody>
 </table>
 
-##### Kostnadsposter
-<a id="cost-entries" class="xliff"></a>
+##### <a name="cost-entries"></a>Kostnadsposter
 
 <table>
 <thead>
@@ -1353,8 +1329,7 @@ Följande tabell visar resultatet när Förpackningstjänster för privatpersone
 </tbody>
 </table>
 
-## Slutsats
-<a id="conclusion" class="xliff"></a>
+## <a name="conclusion"></a>Slutsats
 I Affärsredovisning bokförs en kostnad på 10 000,00 för Electricitet på ett dummykostnadscenter-ID. Därför vet kostnadsrevisorer att kostnaden måste allkoeras. I kostnadsredovisning flödar kostnaderna över organisationsenheter och nivåer, baserat på de policyer och regler som tillämpas. Varje kostnad har kopplats till ett allokeringsunderlag som ger den bästa bedömningen för allkoeringen av kostnaden.
 
 <table>

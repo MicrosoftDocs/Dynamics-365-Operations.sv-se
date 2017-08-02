@@ -27,8 +27,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Kostnadsredovisningsterminologi
-<a id="cost-accounting-terminology" class="xliff"></a>
+# <a name="cost-accounting-terminology"></a>Kostnadsredovisningsterminologi
 
 [!include[banner](../includes/banner.md)]
 

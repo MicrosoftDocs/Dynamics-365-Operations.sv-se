@@ -24,8 +24,7 @@ ms.contentlocale: sv-se
 ms.lasthandoff: 06/19/2017
 
 ---
-# Kassaapparater för Sverige
-<a id="cash-registers-for-sweden" class="xliff"></a>
+# <a name="cash-registers-for-sweden"></a>Kassaapparater för Sverige
 
 Det här avsnittet innehåller en översikt över kassaapparatfunktioner för Sverige i Microsoft Dynamics 365 for Retail. Den innehåller även riktlinjer för att ställa in funktionen. Funktionen innehåller följande delar:
 
@@ -33,11 +32,9 @@ Det här avsnittet innehåller en översikt över kassaapparatfunktioner för Sv
 - Sverige-specifika funktioner, t.ex. ytterligare räknare i dagliga kassarapporter
 - Ett exempel för att integrera 365 Dynamics for Retail POS med Sverige-specifika kvittoskrivarenhet som kallas kontrollenheter.
 
-## Översikt över kassaapparatfunktioner för Sverige
-<a id="overview-of-cash-register-functionality-for-sweden" class="xliff"></a> 
+## <a name="overview-of-cash-register-functionality-for-sweden"></a>Översikt över kassaapparatfunktioner för Sverige 
 
-### Vanliga kassafunktioner
-<a id="common-pos-features" class="xliff"></a>
+### <a name="common-pos-features"></a>Vanliga kassafunktioner
 
 Mer information om vanliga kassafunktioner som är tillgängliga för kunder i alla länder eller regioner finns i [Microsoft Dynamics 365 Retail, dokumentation](../index.md).
 
@@ -48,8 +45,7 @@ Dessutom har följande kassafunktioner som implementerades för Sverige gjorts t
 - **Registrera utskrift av kvittokopior i händelseloggen kassagranskning.** Du kan använda parametern **granska** i kassafunktionsprofilen för utskrift av kvittokopior och andra kassagranskningshändelser som ska registreras. Granskningshändelserna registreras i kanaldatabasen och i butiksadministrationen. Du kan visa granskningshändelser på sidan **granskningshändelser**.
 - **Förhindra att en kopia av ett kvitto skrivs ut mer än en gång.** När parametern **granska** i kassafunktionsprofilen är aktiverad kan kassabehörigheten **Tillåt utskrift av kassakopior** kontrollera om kvittokopiorna kan skrivas ut. Det finns också ett alternativ för att förhindra att en kopia av ett kvitto skrivs ut mer än en gång. 
 
-### Sverige-specifika kassafunktioner
-<a id="sweden-specific-pos-features" class="xliff"></a>
+### <a name="sweden-specific-pos-features"></a>Sverige-specifika kassafunktioner
 
 Följande Sverige-specifika kassafunktioner aktiveras när parametern **ISO-kod** i kassafunktionsprofilen ställs in till **SE**:
 
@@ -66,8 +62,7 @@ Följande Sverige-specifika kassafunktioner aktiveras när parametern **ISO-kod*
     > [!NOTE]
     > För närvarande kan rapporten **elektronisk journal (Sverige)** inte exporteras eller skrivas ut. Men funktionen för export och utskrift av rapportenkommer att läggas till senare.
 
-### Integrering med kontrollenheter i Retail POS
-<a id="integration-of-retail-pos-with-control-units" class="xliff"></a>
+### <a name="integration-of-retail-pos-with-control-units"></a>Integrering med kontrollenheter i Retail POS
 
 Retail inkluderar ett exempel för att integrera kassa med Sverige-specifika kvittoskrivarenhet som kallas kontrollenheter. Det antas att en enhet är fysiskt ansluten till maskinvarustationerna som kassan är kopplad till. Provet implementeras i källkoden för kassan, maskinvarustationen och Commerce Runtime-tillägg och är tillgänglig i Retail software development kit (SDK). Provet innehåller följande funktioner:
 
@@ -82,8 +77,7 @@ Retail inkluderar ett exempel för att integrera kassa med Sverige-specifika kvi
 
 Mer information om styrenhetens integrationsprov finns i [Guiden för provanvändning](/dynamics365/unified-operations/dev-itpro/retail-sdk/retail-sdk-control-unit-sample).
 
-## Konfigurera Retail för Sverige
-<a id="setting-up-retail-for-sweden" class="xliff"></a>
+## <a name="setting-up-retail-for-sweden"></a>Konfigurera Retail för Sverige
 
 Det här avsnittet beskriver inställningar för Retails som avser och rekommenderas för Sverige. Mer information om hur du ställer in Retail finns i [Microsoft Dynamics 365 for Retail - dokumentation](../index.md).
 
@@ -97,8 +91,7 @@ Sverige-specifika inställningar kan delas in i två grupper:
 - Allmänna inställningar
 - Styrenhet - specifika inställningar
 
-### Allmänna inställningar
-<a id="general-settings" class="xliff"></a>
+### <a name="general-settings"></a>Allmänna inställningar
 
 Du måste ange följande allmänna inställningar för Sverige.
 
@@ -150,8 +143,7 @@ Du måste ange följande allmänna inställningar för Sverige.
 
 6. På sidan **Konfiguration av kanalrapporter** anger du rapporten **elektronisk journal (Sverige)**. I fältet **behörighetsgrupper** väljer du kassabehörighetsgrupper som får köra rapporten.
 
-### Styrenhet - specifika inställningar
-<a id="control-unitspecific-settings" class="xliff"></a>
+### <a name="control-unitspecific-settings"></a>Styrenhet - specifika inställningar
 
 Du måste du ange följande inställningar för att aktivera [integrationsprovet](/dynamics365/unified-operations/dev-itpro/retail-sdk/retail-sdk-control-unit-sample) så att Retail POS är integrerat med kontrollenheter för Sverige.
 

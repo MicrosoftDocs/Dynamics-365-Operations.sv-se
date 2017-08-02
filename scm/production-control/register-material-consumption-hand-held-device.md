@@ -25,23 +25,19 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Registrera materialförbrukning med en mobil enhet
-<a id="register-material-consumption-using-a-mobile-device" class="xliff"></a>
+# <a name="register-material-consumption-using-a-mobile-device"></a>Registrera materialförbrukning med en mobil enhet
 Det här avsnittet beskriver ett arbetsflöde som möjliggör registrering av förbrukningen av råmaterial i produktionen med hjälp av en bärbar enhet.
 
-Introduktion
-<a id="introduction" class="xliff"></a>
+<a name="introduction"></a>Introduktion
 ------------
 
 Arbetsflödet är relevant om det finns strikta krav på att material ska kunna spåras. Om du vill behålla spårbarheten för material måste exakt datum och exakt tid rapporteras för förbrukningen. Den här processen kan ses i motsats till för- eller backflushing-arbete där det finns en avvikelse mellan registreringstiden och tiden då den faktiska förbrukningen sker. Detta förklarar varför en strategi för automatisk förbrukning inte kan inte för vissa material med spårbarhetskrav. Låt oss titta på ett enkelt scenario som beskriver hur du ställer in ett arbetsflöde för att aktivera registrering av förbrukningen av råmaterial med hjälp av en bärbar enhet. [![](./media/scenario3.png)](./media/scenario3.png)
 
-### Scenario-information
-<a id="scenario-details" class="xliff"></a>
+### <a name="scenario-details"></a>Scenario-information
 
 En kontinuerlig produktionsprocess (5) använder batch-kontrollerat råmaterial RM-100. Materialet som finns i lager på lagerstället Bulk-001 (1) vid registreringsskylt PL-1 med två batcher, B1 och B2, båda med en kvantitet på 100 kg. Lagerställearbete (2) publiceras och bearbetas av RM 100 och materialet hämtas från Bulk-001 till platsen för produktionsinleverans PIL-01 (3), som definieras som icke-registreringsskyltkontrollerad. Maskinoperatören väger ut material från platsen för produktionsinleverans (3) och registrerar vikten och batchnumret som förbrukade (4). Från produktionsinleveransplatsen läggs en del av materialet till manuellt i produktionsprocessen i angivna tidsintervall. När maskinoperatören lägger till material, vägs det på en våg och batchnumret registreras.
 
-## Konfigurera arbetsflödet för att registrera förbrukning med hjälp av en bärbar enhet
-<a id="set-up-the-workflow-to-register-consumption-using-a-handheld-device" class="xliff"></a>
+## <a name="set-up-the-workflow-to-register-consumption-using-a-handheld-device"></a>Konfigurera arbetsflödet för att registrera förbrukning med hjälp av en bärbar enhet
 Skapa en färdigvaruprodukt, FG 100, med en strukturlista med material som har batch-styrt råmaterial RM-100. Lägg till två batcher B1 och B2 i RM-100 i en kvantitet på 100 till plats: Bulk-001 vid registreringsskylt: PL-1. Avräkningsprincipen på strukturlisteraden för RM-100 anges till **Manuell**. Ställ in plats för produktionsinleverans på PIL-01. Du kan du göra det genom att välja den här platsen som den standardinleveransplats för lagerställe 51.
 
 1.  Skapa en ny menyartikel för mobila enheter: 
@@ -85,8 +81,7 @@ Du kan nu välja att fortsätta med registreringen, till exempel på batchnummer
 
 När du har slutfört registreringen väljer du **Klart** för att bokföra journalen och avsluta arbetsflödet.
 
-### Ytterligare kommentarer
-<a id="additional-comments" class="xliff"></a> 
+### <a name="additional-comments"></a>Ytterligare kommentarer 
 
 -   Om en användare avbryter arbetsflödet när en journalrad har skapats är journalen i ett ej bokfört tillstånd, men om användaren vid en senare tidpunkt använder arbetsflödet för samma produktionsorder, kommer raderna att läggas till i den öppna journalen i stället för i en ny journal.
 -   Det nya arbetsflödet har även stöd för registrering av serienummer.

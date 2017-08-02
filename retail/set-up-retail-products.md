@@ -28,8 +28,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Ställ in butiksprodukter
-<a id="set-up-retail-products" class="xliff"></a>
+# <a name="set-up-retail-products"></a>Ställ in butiksprodukter
 
 [!include[banner](includes/banner.md)]
 

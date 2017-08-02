@@ -26,37 +26,32 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Resultaträkning
-<a id="income-statement-financial-report" class="xliff"></a>
+# <a name="income-statement-financial-report"></a>Resultaträkning
 
 [!include[banner](../includes/banner.md)]
 
 
 Den här artikeln beskriver standardrapporten för inkomstredovisning. Här beskrivs också de byggstenar som associeras med den här rapporten. 
 
-Standardresultaträkning
-<a id="default-income-statement-report" class="xliff"></a>
+<a name="default-income-statement-report"></a>Standardresultaträkning
 -------------------------------
 
 | Standardrapport             | Vad den gör                                                                                              |
 |----------------------------|-----------------------------------------------------------------------------------------------------------|
 | Resultaträkning – standardinställning | Visar organisationens lönsamhet för den aktuella perioden och även till dags dato. |
 
-## Byggstenar
-<a id="building-blocks" class="xliff"></a>
+## <a name="building-blocks"></a>Byggstenar
 Resultatrapporten använder följande byggstenar.
 
 | Standardrapport             | Raddefinition                     | Kolumndefinition          |
 |----------------------------|------------------------------------|----------------------------|
 | Resultaträkning – standardinställning | Översiktsresultaträkning – standardinställning | Periodisk och hittills i år – standardvärde |
 
-### Raddefinition
-<a id="row-definition" class="xliff"></a>
+### <a name="row-definition"></a>Raddefinition
 
 Raddefinitionen, översiktsresultaträkningen – standardinställning, innehåller ett avsnitt för varje del av en traditionell resultaträkning. Huvudkontokategoridimensionen används för att bygga upp raddefinitionen. Därför kan alla generera rapporten, utan att behöva göra några ändringar.
 
-### Kolumndefinition
-<a id="column-definition" class="xliff"></a>
+### <a name="column-definition"></a>Kolumndefinition
 
 Dessa kolumndefinitioner innehåller olika typer av kolumner för att tillhandahålla andra nivåer av information och ekonomiska data.
 
@@ -67,8 +62,7 @@ Dessa kolumndefinitioner innehåller olika typer av kolumner för att tillhandah
 
  
 
-Se även
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Se även
 --------
 
 [Ekonomisk rapportering](financial-reporting-getting-started.md)

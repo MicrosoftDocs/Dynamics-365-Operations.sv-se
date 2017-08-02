@@ -1,28 +1,28 @@
 ---
 title: "Startsidan Hantering av underleverantörer"
 description: "Den här sidan hänvisar till resurser som hjälper dig att använda Microsoft Dynamics 365 for Finance and Operations - Hantering av underleverantörer mer effektivt."
-author: yuyus
+author: YuyuScheller
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/20/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 
 ms.assetid: ad2a889a-acfd-4b59-a3b3-4017dd374c7b
 ms.search.region: global
 ms.search.industry: 
 ms.author: yuyus
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
-ms.openlocfilehash: 4044c66833e914b1f0f2d552d827013bd48dc2db
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 7e916dd91126d140790cbb3a6a740c2e2f20ccef
 ms.contentlocale: sv-se
-ms.lasthandoff: 06/29/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -36,22 +36,49 @@ Den här sidan hänvisar till resurser som hjälper dig att använda Microsoft D
 Öppna <a href="https://roadmap.dynamics.com/">översikten till Dynamics 365</a> för att visa vilka nya funktioner som lanseras och nya funktioner under utveckling. 
 
 ## <a name="core-concepts-and-tasks"></a>Grundläggande begrepp och uppgifter
-*  Välj ett funktionsområde som du vill veta mer om i det vänstra fönstret. 
-*  <a href="https://mix.office.com/watch/wpf78tr7rjuh/">Bearbeta inkommande ASN:er i Lagerstyrning</a> (video) 
 
+Välj ett funktionsområde för att läsa mer om det.
+
+- [Kostnadsredovisning](/dynamics365/unified-operations/financials/cost-accounting/cost-accounting-home-page?toc=/dynamics365/unified-operations/financials/toc.json)
+- [Kostnadshantering](cost-management\costing-sheets.md)  
+- [Lagerhantering](inventory\consignment.md)
+- [Huvudplanering](master-planning\introduction-demand-forecasting.md)
+- [Anskaffning och källa](procurement\procurement-sourcing-overview.md)
+- [Produktinformationshantering](pim\product-information.md)
+- [Produktionskontroll](production-control\production-process-overview.md)
+- [Försäljning och marknadsföring](sales-marketing\overview-sales-marketing.md)
+- [Transporthantering](transportation\transportation-management-overview.md)
+- [Lagerstyrning](warehousing\warehouse-configuration.md)
+
+## <a name="videos"></a>Videoklipp
+
+### <a name="get-started"></a>Kom igång  
+
+Med hjälp av videoklippen kommer du snabbt igång med de nya funktionerna i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition, uppdatering juli 2017.
+
+-  [Kom igång med Kostnadsredovisning](https://youtu.be/1pUDtJQZ8FU)
+-  [Mobil arbetsyta för kostnadskontroll](https://youtu.be/imsuTg8rUVk)
+-  [Använd Excel för kostnadsanalys](https://youtu.be/-HKHYdClvx8)
+
+### <a name="tech-talk"></a>Tekniksnack 
+-  <a href="https://youtu.be/zotrj3SbCl4">Produktkonfigureraren i Microsoft Dynamics AX</a>
+-  <a href="https://youtu.be/7v8BPmEs9Dg">Huvudplanering - tips och trick för felsökning av prestandaproblem</a>
+-  <a href="https://youtu.be/RLXybx20B5o">Hjälp! MPS går långsamt!</a>
+-  <a href="https://mix.office.com/watch/wpf78tr7rjuh/">Bearbeta inkommande ASN:er i Lagerstyrning</a> 
+-  <a href="https://www.youtube.com/watch?v=--_didmZKHo&t=10s">Få ut mesta möjliga av lagerstyrningssystemet</a>
+-  <a href="https://www.youtube.com/watch?v=z5_V5Eqlf5M&t=48s">Avancerad lagerstyrning i R3 - inkommande bearbetning och minsta/största lagerpåfyllnad</a>
+-  <a href="https://youtu.be/Og0gLlVp7jA">Avancerad lagerstyrning i R3 - en arbetsdag med utgående bearbetning och efterfrågan av lagerpåfyllnad</a>
+-  <a href="https://youtu.be/5w1MngVchBA">Etiketter i nya lagerstyrningssystemet i Microsoft Dynamics AX 2012 R3</a>
+-  <a href="https://www.youtube.com/embed/QUxXUrN-7n4">Dynamics AX 2012 R3: Avancerad lagerstyrning - en arbetsdag med processtillverkning</a>
+-  <a href="https://youtu.be/y1jrd3A_k70">Legotillverkningsåtgärder och aktiviteter inom tillverkning</a>
 
 ## <a name="blogs"></a>Bloggar
 Det finns många avsnitt om tillverkning och hantering av underleverantörer i <a href="https://blogs.msdn.microsoft.com/axmfg/">teambloggen Dynamics AX Manufacturing R&D</a> och <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/">teambloggen Supply Chain Management in Dynamics AX R&D</a>. De flesta av inläggen skrevs för den föregående versionen av for Finance and Operations, men samma begrepp gäller fortfarande och procedurerna är liknande i den aktuella versionen. 
 
-Det går till exempel att läsa de senaste inläggen om: 
-* <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/2017/01/20/announcing-dynamics-365-for-operations-warehousing/">Vi presenterar Finance and Operations – Warehousing</a>
-* <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/2016/12/01/improved-packing-functionality-dynamics-365-for-operations-1611/">Förbättrad packningsfunktion (Dynamics 365 for Operations 1611)</a>
-* <a href="https://blogs.msdn.microsoft.com/axmfg/2017/02/13/cross-docking-from-production-orders-to-transfer-orders/">Direktleverans från produktionsorder till överföringsorder</a>
-
 ## <a name="white-papers"></a>Dokumentation
-* Faktabladet <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc/">Microsoft Dynamics 365 for Finance and Operations - komma igång med kostnadsredovisning</a> innehåller grundläggande steg för att konfigurera Microsoft for Finance and Operations – Kostnadsredovisning för att analysera faktiska kostnader. Den innehåller även ett antal procedurer som går att utföra i ordningen som de visas.
-* Faktabladet <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/leanmanufkanban365opt/">for Finance and Operations - Lean Manufacturing: Capable to Promise and Kanban Job Scheduling</a> innehåller information om tidsplanering av kanban-jobb och introducerar konceptet att ta emot försäljningsorder som använder metoden CTP (capable to promise) för styrning av leveransdatum. Det förklarar även hur CTP går att kombinera med händelse-kanbans för modellering av scenarierna montering mot kundorder eller bygga enligt order.
-* Faktabladet <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet/">Microsoft Dynamics 365 for Finance and Operations - Strukturlisteberäkning med hjälp av kostnadsredovisningsblad</a> innehåller information om att ställa in kostnadsredovisningsblad med material och tillverkning och hur inställningen påverkar resultat av strukturlisteberäkningar. Det går att utföra övningarna i bilagan i inlärningssyfte och använda kunskaperna från det här dokumentet för att analysera strukturlisteberäkningar.
+-  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc/">Praktiska övningar för kostnadsredovisning</a> 
+-  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/leanmanufkanban365opt/">Lean Manufacturing: CTP (Capable To Promise) och tidsplanering av kanban-jobb</a> 
+-  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet/">Strukturlisteberäkning med hjälp av kostnadsredovisningsblad</a>
 
 ## <a name="elearning-courses"></a>E-utbildningskurser
 Mer information om utbildning för Microsoft Dynamics 365 for Finance and Operations finns på <a href="https://mbspartner.microsoft.com/AX/LearningPlans/"> utbildningsportalen för Microsoft Dynamics</a>. (kräver CustomerSource-konto) 

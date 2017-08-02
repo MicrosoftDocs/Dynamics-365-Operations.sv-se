@@ -27,8 +27,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Konfigurera kvittning
-<a id="configure-settlement" class="xliff"></a>
+# <a name="configure-settlement"></a>Konfigurera kvittning
 
 [!include[banner](../includes/banner.md)]
 

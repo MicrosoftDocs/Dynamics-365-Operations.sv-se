@@ -27,8 +27,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Ställ in matchningsregler för bankavstämning
-<a id="set-up-bank-reconciliation-matching-rules" class="xliff"></a>
+# <a name="set-up-bank-reconciliation-matching-rules"></a>Ställ in matchningsregler för bankavstämning
 
 [!include[banner](../includes/banner.md)]
 

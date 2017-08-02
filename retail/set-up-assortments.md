@@ -28,8 +28,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Lägg upp sortiment
-<a id="set-up-assortments" class="xliff"></a>
+# <a name="set-up-assortments"></a>Lägg upp sortiment
 
 [!include[banner](includes/banner.md)]
 
@@ -38,8 +37,7 @@ Denna artikeln beskriver vad ett sortiment är och förklarar hur du ställer in
 
 Ett sortiment är en samling relaterade produkter som du tilldelar en butikskanal, till exempel en fysisk butik eller en onlinebutik. Du använder sortiment för att identifiera de produkter som är tillgängliga i varje butik. Ett sortiment kan inkludera kategorier av produkter. Alla produkter som tilldelats den valda kategorin, ingår i sortimentet. Ett sortiment kan också ta med specifika produkter och specifika varianter av produkter. Om du ställer in ett sortiment, kan du tilldela tusentals produkter till dina butikskanaler samtidigt, i valfri kombination som din butik kräver. Du kan ställa in så många produktsortiment, som du behöver. Varje produkt kan inkluderas i ett eller flera sortiment, och varje produkt kan tilldelas en eller flera butikskanaler. Om du till exempel anger ett sortiment som innehåller en basuppsättning med produkter. Alla butiker tar emot sortimentet. Du definierar sedan ett annat sortiment som inkluderar en större sportutrustning. Endast dina större butiker får sortimentet. Följande diagram visar hur produkter kan tilldelas sortiment, och hur de sortimenten kan tilldelas butikskanaler. ![Relationer för produktsortiment](./media/assortments_relationship.gif)
 
-## Krav
-<a id="prerequisites" class="xliff"></a>
+## <a name="prerequisites"></a>Krav
 Innan du kan ställa in ett sortiment och tilldela den till en butikskanal, måste du göra följande.
 
 | Uppgift                              | Beskrivning                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
@@ -49,8 +47,7 @@ Innan du kan ställa in ett sortiment och tilldela den till en butikskanal, mås
 | Definiera produkter.                  | Innan du kan lägga till produkter till ett sortiment, måste du lägga till dem i Microsoft Dynamics 365 for Retail. Du kan lägga till produkter manuellt, eller så kan du importera dem från en leverantör. När du har lagt till produkterna, måste du frisläppa dem till en juridisk person. Endast produkter som har frisläppts till juridiska personer, kan göras tillgängliga för dina butikskanaler. Produkter, som ännu inte har frisläppts till en juridisk person, kan läggas till ett sortiment och sortimentet kan godkännas. Endast produkter som har frisläppts till juridiska personer, kan göras tillgängliga för dina butikskanaler.                                                                                                                                                                                                                                                                                     |
 | Ställ in en kategorihierarki      | När du skapar dina butiksprodukter, kan du gruppera dem och kategorisera dem genom att använda kategorihierarkifunktionen. Du kan skapa en huvudhierarki för att gruppera och kategorisera alla produkter som du distribuerar via butikskanaler. Du kan också skapa separata extra kategorihierarkier för att gruppera eller kategorisera dina produkter för särskilda syften, till exempel kampanjer eller sortiment. Genom att använda kategorihierarkier, kan du tilldela alla produkter i en specifik kategori till ett sortiment. Vissa produkter som läggs till en kategori, som är inkluderade i sortimentet, inkluderas automatiskt i sortimentet. Nästa gång som butikssortimentplaneraren körs blir dessa produkter tillgängliga för de butikskanaler som sortimentet tilldelas.                                            |
 
-## Ställa in ett sortiment
-<a id="setting-up-an-assortment" class="xliff"></a>
+## <a name="setting-up-an-assortment"></a>Ställa in ett sortiment
 När du har slutfört förberedelserna, kan du skapa ett sortiment och tilldela den till dina butikskanaler. Om du vill ställa in ett sortiment måste du göra följande.
 
 1.  Skapa ett nytt sortiment eller kopiera ett befintligt sortiment.

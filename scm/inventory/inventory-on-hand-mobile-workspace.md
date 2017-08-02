@@ -27,8 +27,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Mobil arbetsyta för inventering av lagerbehållning
-<a id="inventory-on-hand-mobile-workspace" class="xliff"></a>
+# <a name="inventory-on-hand-mobile-workspace"></a>Mobil arbetsyta för inventering av lagerbehållning
 
 [!include[banner](../includes/banner.md)]
 
@@ -36,8 +35,7 @@ Det här avsnittet innehåller information om den mobila arbetsytan för **Lager
 
 Denna mobila arbetsyta är avsedd att användas med mobilappen Microsoft Dynamics 365 for Unified Operations.
 
-## Översikt
-<a id="overview" class="xliff"></a>
+## <a name="overview"></a>Översikt
 Normalt har företag flera in- och flera utleveranser av lager varje dag. Dessa transporter ändrar konstant tillgänglig lagerstatus. Den mobila arbetsytan för **Lagerbehållning** låter dig se tillgänglig lagerstatus för hela företaget, vilket ger dig den senaste informationen om lagerdata på valfri mobil enhet. Oavsett om du arbetar i på lagerstället, inom inköp, försäljning, tillverkning, administration eller har andra roller, kan du använda datan för tillgängligt lager när som helst och var som helst. 
 
 Den mobila arbetsytan för inventering av lagerbehållning ger en översikt över lagerbehållningsstatus över lokaler. Där kan du visa lagerbehållning över lokaler, aktuella reservationer och oreserverad lagerbehållning. Du kan också ange artikelnummer till en förfrågan om lagerbehållning och söka filtrerat efter produkter i lager eller varianter. 
@@ -59,16 +57,13 @@ Närmare bestämt erbjuder den mobila arbetsytan följande funktioner:
     -   Genom fysiskt reserverat (denna vy representerar den reserverade mängden.)
     -   Genom fysiskt disponibelt (den här vyn representerar tillgänglig mängd utan reservationer.)
 
-## Förutsättningar
-<a id="prerequisites" class="xliff"></a>
+## <a name="prerequisites"></a>Förutsättningar
 Kraven varierar baserat på versionen av Microsoft Dynamics 365 som har distribuerats i organisationen.
 
-### Kraven om du använder Microsoft Dynamics 365 for Finance and Operations, Enterprise edition juli 2017 uppdatering
-<a id="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update" class="xliff"></a> 
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update"></a>Kraven om du använder Microsoft Dynamics 365 for Finance and Operations, Enterprise edition juli 2017 uppdatering 
 Om Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (juli 2017-uppdateringen) har implementerats för din organisation, måste systemadministratören publicera den mobila arbetsytan **Lagerbehållning**. Instruktioner finns i [Publicera en mobil arbetsyta](/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace).
 
-### Krav om du använder Microsoft Dynamics 365 for Operations version 1611 med plattformsuppdatering 3 eller senare
-<a id="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later" class="xliff"></a>
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Krav om du använder Microsoft Dynamics 365 for Operations version 1611 med plattformsuppdatering 3 eller senare
 Om Microsoft Dynamics 365 for Operations version 1611 med plattformsuppdatering 3 eller senare har använts i organisationen måste systemadministratören uppfylla följande krav. 
 
 <table>
@@ -101,16 +96,14 @@ Om Microsoft Dynamics 365 for Operations version 1611 med plattformsuppdatering 
 </tbody>
 </table>
 
-## Hämta och installera mobilappen
-<a id="download-and-install-the-mobile-app" class="xliff"></a>
+## <a name="download-and-install-the-mobile-app"></a>Hämta och installera mobilappen
 
 Hämta och installera mobilappen Dynamics 365 for Unified Operations:
 
 -   [För Android-telefoner](https://go.microsoft.com/fwlink/?linkid=850662)
 -   [För iPhones](https://go.microsoft.com/fwlink/?linkid=850663)
 
-## Logga in på mobilappen
-<a id="sign-in-to-the-mobile-app" class="xliff"></a>
+## <a name="sign-in-to-the-mobile-app"></a>Logga in på mobilappen
 
 1.  Starta appen i din mobila enhet.
 2.  Ange din webbadress för Dynamics 365.
@@ -119,8 +112,7 @@ Hämta och installera mobilappen Dynamics 365 for Unified Operations:
 
     [![Dra för att uppdatera](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
-## Visa lagerbehållningen för en produkt med hjälp av den mobila arbetsytan för lagerbehållning
-<a id="view-the-on-hand-inventory-for-a-product-by-using-the-inventory-on-hand-mobile-workspace" class="xliff"></a>
+## <a name="view-the-on-hand-inventory-for-a-product-by-using-the-inventory-on-hand-mobile-workspace"></a>Visa lagerbehållningen för en produkt med hjälp av den mobila arbetsytan för lagerbehållning
 
 1.  På din mobila enhet väljer du arbetsytan **Lagerbehållning**.
 

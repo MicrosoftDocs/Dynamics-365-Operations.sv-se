@@ -26,8 +26,7 @@ ms.lasthandoff: 06/19/2017
 
 ---
 
-# Ange initiala lönesaldon
-<a id="enter-payroll-beginning-balances" class="xliff"></a>
+# <a name="enter-payroll-beginning-balances"></a>Ange initiala lönesaldon
 
 [!include[banner](../../includes/banner.md)]]
 
@@ -52,12 +51,10 @@ I följande exempel visas hur du kan ange medarbetarens initiala lönesaldon, in
 > [!NOTE] 
 > Om du vill reproducera samma steg nedan använder du demodatan. Du kan hämta demonstrationsdatan i PartnerSource
 
-### A. Hur du ställer in inkomstkoder som ska användas för ingående lönesaldon på lönelistan
-<a id="a-how-to-set-up-earnings-codes-to-be-used-on-payroll-beginning-balances" class="xliff"></a>
+### <a name="a-how-to-set-up-earnings-codes-to-be-used-on-payroll-beginning-balances"></a>A. Hur du ställer in inkomstkoder som ska användas för ingående lönesaldon på lönelistan
 När du anger initiala lönesaldon för lönelistor, se då till att de inkomstkoder som du ska använda konfigureras med alternativet ”Tillåt redigering av tariffer för inkomstutdrag" är aktiverat. Detta gör att du manuellt kan ange beloppet från det äldre systemet. 
 
-### B. Skapa inkomstutdrag för en medarbetare för att få ett initialt saldo
-<a id="b-create-earnings-statement-for-an-employee-to-have-a-beginning-balance" class="xliff"></a>
+### <a name="b-create-earnings-statement-for-an-employee-to-have-a-beginning-balance"></a>B. Skapa inkomstutdrag för en medarbetare för att få ett initialt saldo
 Det här steget skapar manuellt ett inkomstutdrag för respektive arbetstagare för det äldre systemet sista löneperiod, vilket skapar inkomstutdragsraderna i det nya lönesystemet. Ange en rad per inkomstkod samt belopp och timmar för hittillsvarande år fram till dags dato. Exempelstegen är som följer:
 
 1. Öppna sidan **Alla intäktsutdrag** och klicka på **Ny**.  
@@ -121,12 +118,10 @@ Rad 3: Fliken **Rad för inkomstutdrag**
 
 Klicka på **OK** och stäng **Informationsloggen**.
 
-#### Varför måste kryssrutan Inaktivera redovisning aktiveras vid generering av lönerapporter?
-<a id="why-disable-accounting-checkbox-needs-to-be-turned-on-when-generating-pay-statements" class="xliff"></a>
+#### <a name="why-disable-accounting-checkbox-needs-to-be-turned-on-when-generating-pay-statements"></a>Varför måste kryssrutan Inaktivera redovisning aktiveras vid generering av lönerapporter?
 Detta förhindrar att rader i löneutdraget distribueras och bokförs i redovisningen. Du vill inte bokföra detta initiala lönesaldoutdrag eftersom dess värden redan finns i redovisningen från det äldre systemet. Denna saldoinläsning används endast för rapporterings och begränsningssyften.
 
-### C. Skapa löneutdrag för anställda
-<a id="c-create-pay-statements-for-employees" class="xliff"></a>
+### <a name="c-create-pay-statements-for-employees"></a>C. Skapa löneutdrag för anställda
 Du måste kontrollera att betalningsutdrag korrekt återspeglar lönedatan när du genererar löneutdrag med initiala saldon. Du måste även manuellt uppdatera förmåns- och skatteinformationen så att denna matchar värdena i det föregående lönesystemet. När du har bekräftat att beloppen från föregående lönesystem matchar beloppen på aktuella löneutdrag, måste du slutföra löneutdragen.
 
 1. Öppna sidan **Alla löneutdrag**.
@@ -180,8 +175,7 @@ Du måste kontrollera att betalningsutdrag korrekt återspeglar lönedatan när 
 
 Samma tillvägagångssätt kan vid behov göras kvartalsvis för alla föregående kvartal under varje år. Detta behövs bara om kunden behöver visa data kvartalsvis utan att gå tillbaka till det äldre systemet.
 
-## Om du gör ett misstag när du anger initiala saldon för en medarbetare
-<a id="if-you-make-a-mistake-entering-beginning-balances-for-an-employee" class="xliff"></a>
+## <a name="if-you-make-a-mistake-entering-beginning-balances-for-an-employee"></a>Om du gör ett misstag när du anger initiala saldon för en medarbetare
 Det går att återföra och omregistrera transaktioner. Om du vill återföra transaktionen är allt du behöver göra är att slutföra följande steg på sidan **Alla löneutdrag**.
 
 1. Klicka på **Återför**.

@@ -28,8 +28,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Översikt över onlinebutik
-<a id="online-store-overview" class="xliff"></a>
+# <a name="online-store-overview"></a>Översikt över onlinebutik
 
 [!include[banner](includes/banner.md)]
 
@@ -38,8 +37,7 @@ Den här artikeln innehåller information om onlinebutiker för detaljhandel och
 
 Dynamics 365 for Retail stöder flera butikskanaler. Dessa kanaler inkluderar onlinebutiker, kundtjänst och butiker (kallas också fysiska butiker). En onlinebutik ger en återförsäljare onlinenärvaro så att deras kunder kan köpa produkter från deras onlinebutik såväl som från deras fysiska butik. Om kunder köper produkter från onlinebutiken kan dessa produkter levereras till sig eller så kan kunden hämta produkterna från en lokal butik. Du skapar en onlinebutik i Dynamics 365 for Retail-klienten. Denna onlinebutik publiceras sedan till en tredje parts onlinebutik som har integrerats med Dynamics 365 for Retail. Tredje parts onlinebutik fungerar som skyltfönstret (användargränssnitt) för onlinebutiken och får du ett urval av kundhanteringsystem (CMS) och UI-kapaciteter. Flera integrationer av den här typen är tillgängliga för Dynamics 365 for Retail. De egenskaper som du definierar för onlinebutiken styr hur onlinebutiken fungerar. Till exempel definierar du navigeringskategorihierarkin i Dynamics 365 for Retail och tilldelar den till onlinebutiken. När du publicerar onlinebutiken i en tredje parts onlinebutik kommer navigeringskategorihierarkin att visas i butikens onlineversion. Shoppare använder navigeringskategorihierarkin för att bläddra i onlinebutiken och för att söka efter produkter. Om du vill skapa onlinebutiken måste du ställa in de komponenter som aktiverar transaktioner som ska bearbetas för butiken. Till exempel måste du lägga till sortiment, tillämpa attribut och ställa in betalningsmetoder och leveranssätt. Du kan också ange priser, rabatter, kampanjer, handelsavtal och sändningstermer som är specifika för storen online. När du har publicerat onlinebutiken på tredje partens onlinebutik kan du skapa butiksproduktkataloger för onlinebutiken. Produkterna i katalogen blir produktlistor i onlinebutiken. När en shoppare köper produkter från onlinebutiken, synkroniseras och uppdateras tillgängligt lager i klienten. Försäljningsorder skapas för inköpen och skickas till klienten för orderbehandling och bearbetning.
 
-## Konfigurera en onlinebutik
-<a id="set-up-an-online-store" class="xliff"></a>
+## <a name="set-up-an-online-store"></a>Konfigurera en onlinebutik
 Om du vill ställa in en onlinebutik måste du göra följande.
 
 1.  Skapa onlinebutik.
@@ -53,12 +51,10 @@ Om du vill ställa in en onlinebutik måste du göra följande.
 9.  Mappa attribut när du vill definiera de egenskaper som bestämmer hur dessa attributen uppför sig i onlinekanalen. Du kan till exempel definiera attribut som ska vara obligatoriska eller sökbara.
 10. Publicera onlinebutiken för att generera butikstrukturen på ditt val av tredje parts onlinebutik. **Viktigt:** Innan du publicerar onlinebutiken måste du ställa in en distributionsplats för onlinebutiken.
 
-## Navigeringshierarkier för butikskanal
-<a id="retail-channel-navigation-hierarchies" class="xliff"></a>
+## <a name="retail-channel-navigation-hierarchies"></a>Navigeringshierarkier för butikskanal
 Innan du kan skapa en onlinebutik måste du skapa en navigeringshierarki för butikskanal som du vill använda för den. Navigeringshierarkin för butikskanaler representerar kategorihierarkin som visas i onlinebutiken efter att den har publicerats. När du publicerar butiksproduktkataloger för onlinebutiken kommer produkter i katalogen att mappas till kategorier i navigeringshierarkin för butikskanalen. Shoppare kan sedan använda hierarkin när de navigerar i onlinebutiken.
 
-## Organisationshierarkier
-<a id="organization-hierarchies" class="xliff"></a>
+## <a name="organization-hierarchies"></a>Organisationshierarkier
 Organisationshierarkier används för att strukturera butikskanaler. Organisationshierarkier representerar relationerna mellan organisationer som utgör ett företag. När du ställer in onlinebutiker kan du lägga till dem till en organisationshierarki. Butikerna delar sedan data som används för sortiment, lagerpåfyllnad och rapportering. När du skapar en organisationshierarki måste du tilldela ett syfte till den. Syftet anger hur hierarkin används i affärsstrukturen. Du kan skapa en organisationshierarki för dina Butiksåtgärder och användning som hierarkin för sortiment, påfyllnad och rapportering. Alternativt kan du skapa en separat organisationshierarki för varje syfte. Du kan även skapa flera hierarkier som har samma syfte, och tilldela en separat kanal för var och en. Om du vill publicera butiksproduktkataloger i onlinebutiken, ska du åtminstone lägga till onlinebutiken i en organisationshierarki för sortiment. Produkterna i en katalog väljs från de sortiment som tilldelats till onlinebutiken. När katalogen publiceras, jämför publiceringsprocessen giltighetsdatum för sortimentet som tilldelats onlinebutiken med de produkter som ingår i katalogen för att avgöra vilka produkter som ska vara tillgängliga i onlinebutiken.
 
 

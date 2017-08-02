@@ -28,8 +28,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Initiera startdata i en ny detaljhandelsmiljö
-<a id="initialize-seed-data-in-a-new-retail-environment" class="xliff"></a>
+# <a name="initialize-seed-data-in-a-new-retail-environment"></a>Initiera startdata i en ny detaljhandelsmiljö
 
 [!include[banner](includes/banner.md)]
 

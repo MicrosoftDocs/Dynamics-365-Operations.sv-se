@@ -27,16 +27,14 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Konfigurera globala adressböcker
-<a id="configure-global-address-books" class="xliff"></a>
+# <a name="configure-global-address-books"></a>Konfigurera globala adressböcker
 
 [!include[banner](../includes/banner.md)]
 
 
 Det här avsnittet innehåller en beskrivning av övervägandena och besluten som måste fattas under planeringsprocessen innan du konfigurerar den globala adressboken och alla ytterligare adressböcker i Microsoft Dynamics 365 for Finance and Operations. Vissa av besluten kräver att du bekräftar besluten som har fattats för andra produktområden såsom organisationshierarkin.
 
-Global adressbok
-<a id="global-address-book" class="xliff"></a>
+<a name="global-address-book"></a>Global adressbok
 -------------------
 
 Innan du börjar att arbeta med den globala adressboken måste du bestämma standardvärdena för den. Dessa standardvärden används sedan för eventuella ytterligare adressböcker som du skapar. **Beslut:**
@@ -49,8 +47,7 @@ Innan du börjar att arbeta med den globala adressboken måste du bestämma stan
 -   När en partpost skapas i den globala adressboken, vill du ha en standardparttyp, person eller organisation?
 -   Vilka användarroller får åtkomst till privata adresser och kontaktinformation för partposter?
 
-## Ytterligare adressböcker
-<a id="additional-address-books" class="xliff"></a>
+## <a name="additional-address-books"></a>Ytterligare adressböcker
 När du har skapat den globala adressboken, kan du skapa ytterligare adressböcker efter behov, till exempel en separat adressbok för varje företag i organisationen eller för varje affärsområde. Exempelvis är Fabrikam en internationell organisation som har flera företag och flera affärsområden. Fabrikam planerar att skapa en adressbok för varje affärsområde. För affärsområden som finns på fler än en plats, till exempel det pneumatiska verktygsföretaget, planerar Fabrikam att skapa en adressbok för varje plats. Chris, IT-chefen på Fabrikam, har skapat följande lista över adressböcker som krävs. Listan beskriver även partposterna som varje adressbok måste inkludera.
 
 -   **Kontrakt med offentlig sektor (PubSC)** – Partposter för alla parter som ingår i Fabrikams avtal med den offentliga sektorn.
@@ -63,8 +60,7 @@ När du har skapat den globala adressboken, kan du skapa ytterligare adressböck
 
 -   Hur många ytterligare adressböcker ska du skapa?
 
-### Adressbokssäkerhet
-<a id="address-book-security" class="xliff"></a>
+### <a name="address-book-security"></a>Adressbokssäkerhet
 
 Du kan skapa adressböcker när som helst och du kan även ange säkerhetsparametrar för adressböckerna när som helst. Du måste inte att ange säkerhetsprivilegier för en adressbok, men om du inte gör det kan alla anställda i organisationen den visa alla partposter i den adressboken. Du kan ange säkerhetsprivilegier för partposter med adressböcker. Säkerhetsprivilegier baseras på team. Det här garanterar att endast anställda som tilldelas till en grupp har åtkomst till en adressbok kan visa partposterna i den adressboken. Du måste du välja team som har åtkomst till varje adressbok. För varje adressbok kan du ange säkerhetsprivilegier som tillåter eller förhindrar åtkomst för specifika team. Om du beviljar ett team åtkomst till en adressbok kan alla medlemmarna i teamet visa posterna i den adressboken. Om du inte beviljar ett team åtkomst till en adressbok kan inga medlemmar i teamet visa posterna eller innehållet i den adressboken. **Beslut:**
 

@@ -25,8 +25,7 @@ ms.lasthandoff: 06/15/2017
 
 ---
 
-# Leverantörssamarbete med externa leverantörer
-<a id="vendor-collaboration-with-external-vendors" class="xliff"></a>
+# <a name="vendor-collaboration-with-external-vendors"></a>Leverantörssamarbete med externa leverantörer
 
 [!include[banner](../includes/banner.md)]
 
@@ -41,8 +40,7 @@ För mer information om hur leverantörer kan använda leverantörssamarbeten i 
 
 För mer information hur du reserverar nya användare av leverantörssamarbeten, se [Hantera användare av leverantörssamarbete](manage-vendor-collaboration-users.md).
 
-## Definiera information som visas för leverantörer när dessa svarar på inköpsorder
-<a id="define-the-information-that-is-shown-to-vendors-when-they-respond-to-pos" class="xliff"></a>
+## <a name="define-the-information-that-is-shown-to-vendors-when-they-respond-to-pos"></a>Definiera information som visas för leverantörer när dessa svarar på inköpsorder
 När leverantörer svarar på en inköpsorder som du skickar till dem, visas en meddelanderuta där de måste bekräfta att de vill acceptera, avvisa eller godkänna inköpsordern med ändringar. Eftersom informationen som måste visas för leverantören vid den tidpunkten kan vara specifik för din verksamhet kan du ange den text som ska visas i vart och ett av de tre bekräftelsemeddelandena. Texten kan till exempel informera leverantören om de nästkommande stegen i processen, eller om leveransvillkor och villkor.  
 
 Om du vill definiera den text som visas i svaret på inköpsordern:
@@ -54,34 +52,28 @@ Om du vill definiera den text som visas i svaret på inköpsordern:
 
 Om du måste lägga till meddelanden på flera språk, skapa då separata meddelanden och ange lämplig språkkod för varje språk. Meddelandet som visas för leverantören är på det språk leverantören använder.
 
-## Ange alternativen för leverantörssamarbete för en specifik leverantör
-<a id="set-the-vendor-collaboration-options-for-a-specific-vendor" class="xliff"></a>
+## <a name="set-the-vendor-collaboration-options-for-a-specific-vendor"></a>Ange alternativen för leverantörssamarbete för en specifik leverantör
 De allmänna inställningarna för leverantörssamarbete i Finance and Operation konfigureras av en administratör. Exempelvis avgör en administratör vilka säkerhetsroller som är tillgängliga för de leverantörer du samarbetar med. Även inställningar kan skilja sig åt mellan olika leverantörskonton, och du måste ställa in dessa:
 -   Aktivera leverantörssamarbeten.
 -   Bestäm om du vill att leverantören ska få se prisinformation.
 
-### Aktivera leverantörssamarbeten
-<a id="enable-vendor-collaboration" class="xliff"></a>
+### <a name="enable-vendor-collaboration"></a>Aktivera leverantörssamarbeten
 
 Innan användarkonton kan skapas för en extern leverantör, måste du konfigurera leverantörskontot om du vill låta dem använda leverantörssamarbeten. För att göra detta, ange fältet **Samarbetesaktivering** som aktivt i fliken **Allmänt** på sidan **Leverantörer**. Det finns två väljare som du kan välja mellan:
 
 -   **Aktiv (IO bekräftas automatiskt)**- Inköpsorder bekräftas automatiskt när leverantören godkänner dem utan ändringar.
 -   **Aktiv (IO bekräftas inte automatiskt)**- Inköpsorder måste bekräftas manuellt av din organisation efter det att leverantören har godkänt dem.
 
-### Bestäm om du vill att leverantören ska få se prisinformation
-<a id="decide-whether-you-want-the-vendor-to-see-price-information" class="xliff"></a>
+### <a name="decide-whether-you-want-the-vendor-to-see-price-information"></a>Bestäm om du vill att leverantören ska få se prisinformation
 
 Om du vill dela information om exempelvis enhetspris, rabatter och avgifter via samarbetsgränssnittet, måste du ange alternativet **Inköpsorderpriser/belopp** som **Ja** på leverantörskontot. Detta alternativt finns i fliken **Standardvärden för inköpsorder**.
 
-## Arbeta med inköpsorder när du använder leverantörssamarbeten
-<a id="work-with-pos-when-using-vendor-collaboration" class="xliff"></a>
-### Skicka en inköpsorder till leverantören
-<a id="sending-a-po-to-the-vendor" class="xliff"></a>
+## <a name="work-with-pos-when-using-vendor-collaboration"></a>Arbeta med inköpsorder när du använder leverantörssamarbeten
+### <a name="sending-a-po-to-the-vendor"></a>Skicka en inköpsorder till leverantören
 
 Inköpsorder skapas i Finance and Operation. När inköpsordern har statusen **Godkänd** skickar du den till leverantören med hjälp av åtgärden **Skicka för bekräftelse** på sidan **Inköpsorder**. Statusen för inköpsordern ändras till i **In External Review**. När inköpsordern har skickats kan leverantören se den på sidan **Inköpsorder för granskning** i gränssnittet leverantörssamarbete. Leverantören kan sedan acceptera eller avvisa ordern eller föreslå ändringar. Leverantören kan också lägga till kommentarer för att kommunicera information som ändringar i IO:n. Om du vill dra säljarens uppmärksamhet till en ny inköpsorder kan du även använda utskriftshanteringssystemet för att skicka IO:n via e-post.
 
-### Bekräftelse och godkännande av inköpsordern av leverantören
-<a id="confirmation-and-acceptance-of-the-po-by-the-vendor" class="xliff"></a>
+### <a name="confirmation-and-acceptance-of-the-po-by-the-vendor"></a>Bekräftelse och godkännande av inköpsordern av leverantören
 
 När en leverantör har godkänt en inköpsorder kan den bekräftas automatiskt, eller också kan den komma att behöva bekräftas manuellt. Detta beror på om fältet **Leverantörsaktivering** är inställt på **Aktiv (IO bekräftas automatiskt)** eller på **Aktiv (IO bekräftas inte automatiskt)** för leverantören.  
 
@@ -133,23 +125,19 @@ Du kan använda arbetsytan **Förberedelse** **av inköpsorder** för att överv
 -   "I extern granskning" kräver åtgärd.
 -   "I extern granskning" inväntar leverantörssvar.
 
-### Ändra en inköpsorder
-<a id="changing-a-po" class="xliff"></a>
+### <a name="changing-a-po"></a>Ändra en inköpsorder
 
 När du behöver ändra en inköpsorder som redan har besvarats måste du skicka en ny version av inköpsordern till leverantören. Den nya inköpsordern får ett versionstillägg som visar att den är en modifierad version av en inköpsorder som meddelats tidigare. Med hjälp av sidan **Historik för leverantörsbekräftelse av inköpsorder** kan du och dina leverantörer spåra historiken för respektive order. Föregående bekräftad version av inköpsordern ligger kvar i listan över bekräftade inköpsorder tills den nya inköpsordern har bekräftats.
 
-### Avbryta en inköpsorder
-<a id="cancelling-a-po" class="xliff"></a>
+### <a name="cancelling-a-po"></a>Avbryta en inköpsorder
 
 När du avbryter in inköpsorder ändras statusen till **Approved**. Du måste skicka tillbaka IO:n till säljaren via leverantörsportalen så att leverantören kan bekräfta eller avvisa annulleringen. När annulleringen har bekräftats visas inköpsordern i leverantörens lista över bekräftade inköpsorder som **Annullerat**.
 
-### Lägga till bilagor till en inköpsorder
-<a id="adding-attachments-to-a-po" class="xliff"></a>
+### <a name="adding-attachments-to-a-po"></a>Lägga till bilagor till en inköpsorder
 
 Du kan lägga till bilagor såsom filer, bilder och anteckningar till inköpsordern genom att använda dokumenthanteringssystemet. Bilagor av typen **Extern** kommer att vara synliga för leverantören när du skickar inköpsordern.
 
-## Uppdatera inköpsordern när en leverantör föreslår ändringar
-<a id="update-the-po-when-a-vendor-suggests-changes" class="xliff"></a>
+## <a name="update-the-po-when-a-vendor-suggests-changes"></a>Uppdatera inköpsordern när en leverantör föreslår ändringar
 Om en leverantör har svarat på inköpsordern och föreslår ändringar är nästa steg att behandla svaret.
 **Förberedelse av inköpsorder** i ”I extern granskning” kräver en åtgärdslista. Du kan identifiera en inköpsorder som en leverantör har svarat på som accepterad med ändringar. ”I extern granskning” kräver en åtgärdslista. Du kan även navigera till leverantörens svar. Efter svar kan en leverantör ändra följande information i rubriken.
  
@@ -178,12 +166,10 @@ Inte alla föreslagna ändringar kan uppdateras på en inköpsorder. Endast uppd
 En rad som har statusen **Accepterad** har ett bekräftat leveransdatum som ska uppdateras på inköpsordern när du kör **Behandla uppdatering av inköpsorder**. Anteckningar och bifogade filer överföras inte automatiskt till den aktuella inköpsordern. När du uppdaterar den aktuella inköpsordern via åtgärden **Behandla uppdatering av inköpsorder** kommer handelsavtal inte att utvärderas på inköpsorderraderna.
 
 
-## Statusar och versioner för inköpsorder
-<a id="po-statuses-and-versions" class="xliff"></a>
+## <a name="po-statuses-and-versions"></a>Statusar och versioner för inköpsorder
 Det här avsnittet beskrivs olika statusvärden som en inköpsorder kan ha tills den har bekräftats. Här beskrivs också vid vilken tidpunkt nya versioner av inköpsordern görs tillgängliga för leverantören. Beteendet varierar beroende på om du använder ändringshantering för inköpsorder. 
 
-### Versioner och status om du inte använder ändringshantering
-<a id="versions-and-statuses-if-you-dont-use-change-management" class="xliff"></a>
+### <a name="versions-and-statuses-if-you-dont-use-change-management"></a>Versioner och status om du inte använder ändringshantering
 
 Tabellen nedan visar ett exempel på förändringar i status och version som en IO kan gå igenom.
 
@@ -204,8 +190,7 @@ Leverantörer måste inte bekräfta inköpsordern med hjälp av gränssnittet le
 >[!NOTE]
 >Den version av inköpsordern som är tillgänglig för andra processer i Dynamics 365 for Finance and Operations är alltid den senaste versionen, även om denna version ännu inte har registrerats i gränssnittet leverantörssamarbete.
 
-### Versioner och status om du använder ändringshantering
-<a id="versions-and-statuses-if-you-use-change-management" class="xliff"></a>
+### <a name="versions-and-statuses-if-you-use-change-management"></a>Versioner och status om du använder ändringshantering
 
 Om du har inaktiverat ändringshantering för inköpsorder, kommer inköpsordern att genomgå ett arbetsflöde för godkännande för att nå statusen **Godkänd**. Denna process är inte synlig för leverantören.  
 
@@ -218,8 +203,7 @@ Tabellen nedan visar ett exempel på förändringar i statusen och versionen som
 
 | Inköpsordern är skickad till godkännandeprocessen. (Godkännandeprocessen är en intern process som leverantören inte är involverad i.) | Statusen ändras från **Utkast** till **Under granskning** till **Godkännande** om inköpsordern inte avvisas under godkännandeprocessen. Den godkända inköpsordern registreras som en version.                                                                                                                                                                                                                     | | Inköpsordern skickas till leverantören                                                                                  | Versionen registreras i gränssnittet leverantörssamarbete och statusen ändras till **På extern granskning**.                                                                                                                                                                                                                                                                       | | Du kan göra några ändringar som begärts av leverantören, antingen manuellt eller genom att använda åtgärden på svaret för att uppdatera inköpsordern.                                                       | Statusen ändras tillbaka till **Utkast**.                                                                                                                                                                                                                                                                                                                                                    | | Inköpsordern skickas till godkännandeprocessen igen.                                                            | Statusen ändras från **Utkast** till **Under granskning** till **Godkännande** om inköpsordern inte avvisas under godkännandeprocessen. Alternativt kan systemet konfigureras så att specifika fältändringar inte kräver nytt godkännande. I det här fallet ändras statusen först till **Utkast** och sedan uppdateras automatiskt till **Godkänd**. Den godkända inköpsordern registreras som en ny version. | | Du skickar den nya versionen av inköpsordern till leverantören.                                                             | Den nya versionen registreras i gränssnittet leverantörssamarbete och statusen ändras till **På extern granskning**.                                                                                                                                                                                                                                                                   | | Leverantören godkänner den nya versionen av inköpsordern.                                                                | Statusen ändras till **Bekräftad**, antingen automatiskt eller när du får svar från leverantören och sedan bekräftar inköpsordern.                                                                                                                                                                                                                                                     |
 
-## Dela information om försändelselager
-<a id="share-information-about-consignment-inventory" class="xliff"></a>
+## <a name="share-information-about-consignment-inventory"></a>Dela information om försändelselager
 Om du använder försändelselager, kan leverantörerna använda gränssnittet för leverantörssamarbete för att visa information på följande sidor:
 
 -   **Inköpsorder som förbrukar försändelselager** - Inköpsorder för försändelselager skapas när ägarskapet för lagret ändras från leverantören till ditt företag. En produktinleverans bokförs samtidigt. Dessa försändelseinköpsorder visas bara på sidan **Inköpsorder som förbrukar försändelselager**. De inkluderas inte på sidan **Alla bekräftade inköpsorder** i modulen **Leverantörssamarbete**.

@@ -27,8 +27,7 @@ ms.lasthandoff: 06/19/2017
 
 ---
 
-# Översikt över elektronisk rapportering
-<a id="electronic-reporting-overview" class="xliff"></a>
+# <a name="electronic-reporting-overview"></a>Översikt över elektronisk rapportering
 
 [!include[banner](../includes/banner.md)]
 
@@ -41,8 +40,7 @@ ER-motorn riktar sig till företagsanvändare, i stället för till utvecklare. 
 
 ER stöder för närvarande formaten TEXT, XML, Microsoft Word-dokument samt OPENXML-kalkylblad. Ett tilläggsgränssnitt kan dock ge stöd för ytterligare format.
 
-## Funktioner
-<a id="capabilities" class="xliff"></a>
+## <a name="capabilities"></a>Funktioner
 ER-motorn har följande funktioner:
 
 - Det representerar ett enskilt, delat verktyg som kan användas för elektronisk rapportering i olika domäner och ersätter fler än 20 olika motorer som används för någon form av elektronisk rapportering för Microsoft Dynamics 365 for Operations.
@@ -51,15 +49,12 @@ ER-motorn har följande funktioner:
 - Det kommer att vara det primära standardverktyget för att stödja lokaliseringskrav vid elektronisk rapportering – både för Microsoft samt för Microsofts partners.
 - Den stöder funktionen för att distribuera format till partners och kunder via Microsoft Dynamics Lifecycle Services (LCS).
 
-## Viktiga begrepp
-<a id="key-concepts" class="xliff"></a>
-### Komponenter
-<a id="components" class="xliff"></a>
+## <a name="key-concepts"></a>Viktiga begrepp
+### <a name="components"></a>Komponenter
 
 ER stöder två typer av komponenter: **Datamodell** och **Format**.
 
-#### Datamodellkomponenter
-<a id="data-model-components" class="xliff"></a>
+#### <a name="data-model-components"></a>Datamodellkomponenter
 
 En datamodellskomponent är en abstrakt representation av en datastruktur. Den används för att beskriva domänen för ett visst affärsområde tillräckligt detaljerat för att uppfylla rapporteringskraven för domänen. En datamodellkomponent för omfattar följande delar:
 
@@ -88,8 +83,7 @@ En modellmappning som har stöd för inkommande elektroniska dokument har följa
 - Den har stöd för användardefinierade indataparametrar som kan definieras som datakällor för datamodeller när vissa data måste specificeras vid körning.
 En datamodellskomponent har utformats för respektive företagsdomän som ska användas som en enhetlig datakälla för rapportering som isolerar rapporterna från den fysiska implementeringen av datakällor för Dynamics 365 for Operations. Den representerar domänspecifika affärsbegrepp och -funktioner i ett formulär som utgör ett rapporteringsformulärs ursprungliga konstruktion och vidare underhåll effektivare.
 
-#### Formatkomponenter för utgående elektroniska dokument
-<a id="format-components-for-outgoing-electronic-documents" class="xliff"></a>
+#### <a name="format-components-for-outgoing-electronic-documents"></a>Formatkomponenter för utgående elektroniska dokument
 
 En formatkomponent är schemat för de rapporteringsutdata som genereras vid körning. Ett schema består av följande element:
 
@@ -115,8 +109,7 @@ Följande bild visar hur datan flödar för dessa format.
 
 Du måste identifiera mappningen av formatkonfigurationen för att kunna köra en enskild ER formatkonfiguration och generera utgående elektroniska dokument.
 
-#### Formatkomponenter för inkommande elektroniska dokument
-<a id="format-components-for-incoming-electronic-documents" class="xliff"></a>
+#### <a name="format-components-for-incoming-electronic-documents"></a>Formatkomponenter för inkommande elektroniska dokument
 En formatkomponent är schemat för de inkommande dokument som importeras vid körning. Ett schema består av följande element:
 
 - Ett format som definierar strukturen och innehållet i de inkommande elektroniska dokument som innehåller data som importeras vid körning. En formatkomponent används för att tolka ett inkommande dokument i olika format, till exempel text och XML.
@@ -129,8 +122,7 @@ Följande bild visar hur datan flödar för dessa format.
 
 Om du vill köra en enskild ER formatkonfiguration för att importera data från ett inkommande elektroniskt dokument måste du identifiera önskad mappning för en formatkonfiguration, samt även integreringspunkten för en modellmappning. Du kan använda samma modellmappning och destinationer tillsammans med olika format för olika typer av inkommande dokument.
 
-#### Komponentversionsnumrering
-<a id="component-versioning" class="xliff"></a>
+#### <a name="component-versioning"></a>Komponentversionsnumrering
 
 Versionsnumrering stöds för ER-komponenter. Följande arbetsflöde tillhandahålls för att hantera ändringar i ER-komponenter:
 
@@ -144,20 +136,17 @@ Versioner som har statusen **Slutförd** eller **Delad** är tillgängliga för 
 - Komponenten kan serialiseras i XML-format och exporteras från Dynamics 365 for Operations som en XML-fil.
 - Komponenten kan omserialiseras från en XML-fil och importeras till Dynamics 365 for Operations som en ny version av en ER-komponent.
 
-#### Komponent giltighetsdatum
-<a id="component-date-effectivity" class="xliff"></a>
+#### <a name="component-date-effectivity"></a>Komponent giltighetsdatum
 
 ER-komponentversionerna har giltighetsdatum. Du kan ange **Gäller från**-datumet för en ER-komponent för att ange från och med vilket datum komponenten ska aktiveras för rapporteringsprocesser. Dynamics 365 for Operations-sessionsdatumet används för att definiera huruvida en komponent är giltig för utförande. Den senaste versionen används för rapporteringsprocesser om fler än en version är giltig för ett visst datum.
 
-#### Åtkomsten till komponenter
-<a id="component-access" class="xliff"></a>
+#### <a name="component-access"></a>Åtkomsten till komponenter
 
 Åtkomsten till ER-formatkomponenter beror på inställningen för ISO-lands-/regionskod. När den här inställningen lämnas tom för en vald version av en formatkonfiguration, kan en formatkomponent nås från vilket Dynamics 365 for Operations-företag som helst vid körning. När inställningen innehåller ISO-koder för lands-/regionskoder är formatkomponenten endast tillgänglig från Dynamics 365 for Operations-företag som har en primäradress som har definierats för en av en formatkomponents ISO-kod för land/region.
 
 Olika versioner av en dataformatkomponent kan ha olika inställningar för ISO-lands-/regionskoder.
 
-#### Konfiguration
-<a id="configuration" class="xliff"></a>
+#### <a name="configuration"></a>Konfiguration
 
 En ER-konfiguration är omslaget (wrappern) för en viss ER-komponent. Komponenten kan antingen vara en datamodellskomponent eller en formatkomponent. En konfiguration kan omfatta olika versioner av en ER-komponent. Varje konfiguration markeras som ägda av en viss konfigurationsleverantör. **Utkast**-versionen av en komponent i en konfiguration kan redigeras om ägaren till konfigurationen har valts som en aktiv leverantör i ER-inställningarna i Dynamics 365 for Operations.
 
@@ -167,15 +156,13 @@ Formatkonfigurationen som skapas innehåller en formatkomponent. Datamodellkompo
 
 En ER-konfiguration delas av Dynamics 365 for Operations-företag.
 
-#### Leverantör
-<a id="provider" class="xliff"></a>
+#### <a name="provider"></a>Leverantör
 
 ER-leverantören är partens identifierare som används för att indikera författare (ägare) av varje ER-konfiguration. Med hjälp av ER kan du hantera listan över konfigurationsleverantörer. Formatkonfigurationer som släpps för elektroniska dokument som en del av Dynamics 365 for Operations-lösningen markeras som ägda av **Microsoft**-konfigurationsleverantören.
 
 För information om hur du registrerar en ny ER-leverantör, kör uppgiftsguiden **ER skapa en konfigurationstjänst och markera den som aktiv** (ingår i affärsprocessen **7.5.4.3 Införskaffa/utveckla IT-tjänst/-lösningskomponenter (10677)**).
 
-#### Databas
-<a id="repository" class="xliff"></a>
+#### <a name="repository"></a>Databas
 
 En ER-databas lagrar ER-konfigurationer. Två typer av ER-databaser stöds för närvarande: **Verksamhetsresurser** och **LCS-projekt**.
 
@@ -185,10 +172,8 @@ En **LCS-projekt**-databas ger åtkomst till listan över konfigurationerna för
 
 Obligatoriska **LCS-projekt**-databaser kan registreras separat för respektive konfigurationsleverantör av den aktuella Dynamics 365 for Operations-instansen. Varje databas kan reserveras för en viss konfigurationsleverantör.
 
-## Stödda scenarier
-<a id="supported-scenarios" class="xliff"></a>
-### Bygga en datamodell
-<a id="building-a-data-model" class="xliff"></a>
+## <a name="supported-scenarios"></a>Stödda scenarier
+### <a name="building-a-data-model"></a>Bygga en datamodell
 
 ER erbjuder en modelldesigner som kan användas för att bygga en datamodell för en viss affärsdomän. Alla domänspecifika företagsenheter och relationerna mellan dem kan presenteras i en datamodell som en hierarkisk struktur. Följande illustration visar ett exempel på den här typen av datamodell (för betalningsdomän). 
 
@@ -196,8 +181,7 @@ ER erbjuder en modelldesigner som kan användas för att bygga en datamodell fö
 
 Spela upp ER-uppgiftsguiden **Skapa domänspecifik datamodell** (del av affärsprocessen **7.5.4.3 Anskaffa/utveckla komponenter för IT-tjänster eller -lösningar (10677)**) för att bekanta dig med detaljerna i det här scenariot.
 
-### Översätta datamodellens innehåll
-<a id="translating-data-model-content" class="xliff"></a>
+### <a name="translating-data-model-content"></a>Översätta datamodellens innehåll
 
 Datamodellens innehåll (etiketter och beskrivningar) kan översättas till andra språk som stöds av Finance and Operations. Du kanske vill översätta datamodellens innehåll av följande skäl:
 
@@ -211,8 +195,7 @@ Följande illustration visar ett exempel där datamodellens innehåll översatts
 [![Datamodellens innehåll översatt till japanska](./media/ER-overview-06.png)](./media/ER-overview-06.png)
 
 
-### Konfigurera mappningar för datamodeller för utgående dokument
-<a id="configuring-data-model-mappings-for-outgoing-documents" class="xliff"></a>
+### <a name="configuring-data-model-mappings-for-outgoing-documents"></a>Konfigurera mappningar för datamodeller för utgående dokument
 
 ER har en modellmappningsdesigner som låter användarna mappa datamodeller som de har utformat för specifika Finance and Operations-datakällor. Baserat på mappningen importeras datan vid körning från markerade datakällor till datamodellen. Datamodellen används sedan som en abstrakt datakälla för ER format som genererar utgående elektroniska dokument. Följande illustration visar ett exempel på en sådan datamodellmappning (modellmappning av **SEPA-kreditöverföring** i datamodellen för betalningsdomänen). 
 
@@ -220,21 +203,18 @@ ER har en modellmappningsdesigner som låter användarna mappa datamodeller som 
 
 Spela upp ER-uppgiftsguiderna **Definiera modellmappning och välja datakällor** och **Mappa datamodell till valda datakällor** (del av affärsprocessen **7.5.4.3 Anskaffa/utveckla komponenter för IT-tjänster eller -lösningar (10677)**) för att bekanta dig med detaljerna i det här scenariot.
 
-### Konfigurera mappningar för datamodeller för inkommande dokument
-<a id="configuring-data-model-mappings-for-incoming-documents" class="xliff"></a>
+### <a name="configuring-data-model-mappings-for-incoming-documents"></a>Konfigurera mappningar för datamodeller för inkommande dokument
 ER har en modellmappningsdesigner som låter användarna mappa datamodeller som de har utformat för specifika destinationer. Exempelvis kan datamodeller mappas till uppdateringsbara datakomponenter för Dynamics 365 for Operations (tabeller, dataenheter och vyer). Baserat på mappningen uppdateras Dynamics 365 for Operations vid körning med data från datamodellen. Som abstrakt lagring av ER formatet fylls datamodellen med data som importeras från ett inkommande elektroniskt dokument. Följande illustration visar ett exempel på den här typen av datamodellmappning. I det här exemplet används modellmappningen **Importera mappning för NETS** för betalningsdomänens datamodell för import av bankutdrag i bankformatet NETS för Norge.
 
 [![Importera mappning för exemplet NETS-datamodell](./media/ER-overview-08.png)](./media/ER-overview-08.png)
 
-### Spara en skapad modellkomponent som en modellkonfiguration
-<a id="storing-a-designed-model-component-as-a-model-configuration" class="xliff"></a>
+### <a name="storing-a-designed-model-component-as-a-model-configuration"></a>Spara en skapad modellkomponent som en modellkonfiguration
 
 ER kan lagra en skapad datamodell tillsammans med tillhörande datamappningar som en modellkonfiguration för den aktuella Finance and Operations-instansen. Följande illustration visar ett exempel på den här typen av datamodellkonfiguration (betalningsmodellskonfiguration). 
 
 Spela upp ER-uppgiftsguiden för **Mappa datamodell till valda datakällor** (del av affärsprocessen **7.5.4.3 Anskaffa/utveckla komponenter för IT-tjänster eller -lösningar (10677)**) för att bekanta dig med detaljerna i det här scenariot.
 
-### Skapa ett format som använder en datamodell som bas
-<a id="building-a-format-that-uses-a-data-model-as-a-base" class="xliff"></a>
+### <a name="building-a-format-that-uses-a-data-model-as-a-base"></a>Skapa ett format som använder en datamodell som bas
 
 ER stöder en formatdesigner som kan användas för att skapa formatet för ett visst elektroniskt dokument för en vald affärsdomän genom att välja modellkomponenten som bas. Med hjälp av samma ER-formatdesigner kan du mappa formatet du skapar till en vald domäns datamodellmappning som en datakälla. I följande illustration visas ett exempel på den här typen av format (formatkonfigurationen som stöder **BACS**-betalningsformatet för Storbritannien). 
 
@@ -242,8 +222,7 @@ ER stöder en formatdesigner som kan användas för att skapa formatet för ett 
 
 Spela upp ER-uppgiftsguiden för **Skapa domänspecifika format** (del av affärsprocessen **7.5.4.3 Anskaffa/utveckla komponenter för IT-tjänster eller -lösningar (10677)**) för att bekanta dig med detaljerna i det här scenariot.
 
-### Skapa en konfiguration för att generera elektroniska dokument i OPENXML-kalkylbladsformat
-<a id="building-a-configuration-to-generate-electronic-documents-in-openxml-worksheet-format" class="xliff"></a>
+### <a name="building-a-configuration-to-generate-electronic-documents-in-openxml-worksheet-format"></a>Skapa en konfiguration för att generera elektroniska dokument i OPENXML-kalkylbladsformat
 
 ER-formatdesignern kan användas för att skapa ett elektroniskt dokument i OPENXML-kalkylbladsformat. I följande illustration visas ett exempel på denna typ av format (en formatkonfiguration för att generera OPENXML-kalkylblad med information om den valda betalningsjournalen).
 
@@ -251,8 +230,7 @@ ER-formatdesignern kan användas för att skapa ett elektroniskt dokument i OPEN
 
 Spela upp ER-uppgiftsguiden för **Skapa en konfiguration för rapporter i OPENXML-format** (del av affärsprocessen **7.5.4.3 Anskaffa/utveckla komponenter för IT-tjänster eller -lösningar (10677)**) för att bekanta dig med detaljerna i det här scenariot. Som ett led i uppgiftsguiden för att importera en mall använder du Excel-filen [Mall för betalningsrapport (SampleVendPaymWsReport.xlsx)](https://go.microsoft.com/fwlink/?linkid=845202) som en mall.
 
-### Skapa en konfiguration för att generera elektroniska dokument i ett Word-dokumentformat
-<a id="building-a-configuration-to-generate-electronic-documents-in-a-word-document-format" class="xliff"></a>
+### <a name="building-a-configuration-to-generate-electronic-documents-in-a-word-document-format"></a>Skapa en konfiguration för att generera elektroniska dokument i ett Word-dokumentformat
 ER-formatdesignern kan användas för att skapa ett elektroniskt dokument i ett Word-dokumentformat. Följande illustration visar ett exempel på den här typen av format. Notera att detta format återanvänder den befintliga ER-konfigurationen som ursprungligen skapades för att generera rapportutdata i OPENXML-format.
 
 [![Pic-ER-format-Word](./media/ER-overview-11.png)](./media/ER-overview-11.png)
@@ -262,8 +240,7 @@ Kör ER-uppgiftsguiden för Designa en konfiguration för att generera rapporter
 - [Mall för betalningsrapport (SampleVendPaymDocReport.docx)](https://go.microsoft.com/fwlink/?linkid=845202)
 - [Bunden mall för betalningsrapport (SampleVendPaymDocReportBounded.docx)](https://go.microsoft.com/fwlink/?linkid=845202)
 
-### Skapa en konfiguration för att importera data från inkommande elektroniska dokument
-<a id="building-a-configuration-to-import-data-from-incoming-electronic-documents" class="xliff"></a>  
+### <a name="building-a-configuration-to-import-data-from-incoming-electronic-documents"></a>Skapa en konfiguration för att importera data från inkommande elektroniska dokument  
 ER-formatdesignern kan användas för att beskriva ett elektroniskt dokument som har planerats för dataimport i antingen text- eller XML-format. Det designade formatet används för att tolka ett inkommande dokument. Mappningsdesignern för ER-format kan användas för att definiera elementbindningen för det utformade formatet för datamodellen. Följande illustrationer visar ett exempel på den här typen av format och formatmappning. I det här exemplet importeras NETS-bankutdrag som innehåller information om leverantörsbetalningen i textformat.
 
 [![ER-formatdesigner](./media/ER-overview-12.png)](./media/ER-overview-12.png)
@@ -277,13 +254,11 @@ Kör uppgiftsguiden Skapa erforderlig ER för att importera data från en extern
 - [Exempel på det inkommande dokumentet i XML-format (1099entries.xml)](https://go.microsoft.com/fwlink/?linkid=845202)
 - [Exempel på arbetsboken för att hantera data för inkommande dokument (1099entries.xlsx)](https://go.microsoft.com/fwlink/?linkid=845202)
 
-### Spara en skapad formatkomponent i en formatkonfiguration
-<a id="storing-a-designed-format-component-in-a-format-configuration" class="xliff"></a>
+### <a name="storing-a-designed-format-component-in-a-format-configuration"></a>Spara en skapad formatkomponent i en formatkonfiguration
 
 ER kan spara ett utformat format tillsammans med de konfigurerade datamappningarna som en formatkonfiguration för den aktuella Finance and Operations-instansen. I föregående illustration visas ett exempel på denna typ av konfiguration för format (**BACS (UK)**, som är underordnad konfigurationen för **Betalningsmodell**). Spela upp ER-uppgiftsguiden för **Skapa domänspecifika format** (del av affärsprocessen **7.5.4.3 Anskaffa/utveckla komponenter för IT-tjänster eller -lösningar (10677)**) för att bekanta dig med detaljerna i det här scenariot.
 
-### Konfigurera Finance and Operations för att börja använda skapade format internt
-<a id="configuring-finance-and-operations-to-start-to-use-a-created-format-internally" class="xliff"></a>
+### <a name="configuring-finance-and-operations-to-start-to-use-a-created-format-internally"></a>Konfigurera Finance and Operations för att börja använda skapade format internt
 
 Finance and Operations kan konfigureras för att börja använda ett skapat format för att generera elektroniska rapporter. Hänvisningen till den skapade formatkonfigurationen ska definieras i inställningarna för en viss domän. Om du exempelvis vill börja använda en ER-formatkonfiguration för elektroniska leverantörsbetalningar i BACS-format ska du referera till formatkonfigurationen i specifika betalningsmetoder, så som visas i följande illustrationer: 
 
@@ -293,30 +268,24 @@ Finance and Operations kan konfigureras för att börja använda ett skapat form
 
 Spela upp ER-uppgiftsguiden **Använda format för att generera elektroniska dokument för betalningar** (del av affärsprocessen **7.5.4.3 Anskaffa/utveckla komponenter för IT-tjänster eller -lösningar (10677)**) för att bekanta dig med detaljerna i detta scenario.
 
-## Hantera ER-komponenter
-<a id="handling-er-components" class="xliff"></a>
-### Publicera en ER-komponent i LCS så att den kan användas externt (lokalisering)
-<a id="publishing-an-er-component-in-lcs-to-offer-it-externally-localization" class="xliff"></a>
+## <a name="handling-er-components"></a>Hantera ER-komponenter
+### <a name="publishing-an-er-component-in-lcs-to-offer-it-externally-localization"></a>Publicera en ER-komponent i LCS så att den kan användas externt (lokalisering)
 
 Ägaren av en skapad komponent (modell eller format) kan använda ER för att publicera den färdiga versionen av en komponent i LCS. Det krävs en databas av typen **LCS-projekt** för den aktuella ER-konfigurationsleverantören. När statusen för den slutgiltiga versionen av en komponent ändras från **AVSLUTAD** till **DELAD** publiceras den versionen i LCS. När en komponent har publicerats i LCS blir ägaren av komponenten ansvarig för att uppdatera komponenten. Om formatkomponenten exempelvis utformas för att generera ett rättsligt obligatoriskt elektroniskt dokument (t.ex. i enlighet med lokaliseringsscenario) förmodas det att formatet uppdateras så att det överensstämmer med lagändringar och att leverantören publicerar nya versioner av komponenten när nya lagkrav uppstår. Spela upp ER-uppgiftsguiden för **Överför en konfiguration i Lifecycle Services** (del av affärsprocessen **7.5.4.3 Anskaffa/utveckla komponenter för IT-tjänster eller -lösningar (10677)**) för att bekanta dig med detaljerna i det här scenariot.
 
-### Importera en ER-komponent från LCS och använda den internt
-<a id="importing-an-er-component-from-lcs-to-use-it-internally" class="xliff"></a>
+### <a name="importing-an-er-component-from-lcs-to-use-it-internally"></a>Importera en ER-komponent från LCS och använda den internt
 
 Med hjälp av ER kan du importera ER-komponenter från LCS till den aktuella Finance and Operations-instansen. Det krävs en databas av typen **LCS-projekt** för detta. När en ER-komponent har importerats från LCS till den aktuella Finance and Operations-instansen blir ägaren av instansen en konsument av den tjänst som tillhandahålls av ägaren (författaren) till den importerade komponenten. Om formatkomponenten exempelvis har utformats för att generera specifika elektroniska dokument från Finance and Operations i ett lands- eller regionsspecifikt format (lokaliseringsscenario), förmodas tjänstkonsumenten kunna hämta alla uppdateringar som görs i det formatet så att det uppfyller alla rättsliga krav. Spela upp ER-uppgiftsguiden för **Importera en konfiguration från Lifecycle Services** (del av affärsprocessen **7.5.4.3 Anskaffa/utveckla komponenter för IT-tjänster eller -lösningar (10677)**) för att bekanta dig med detaljerna i det här scenariot.
 
-### Att bygga ett format att välja ett annat format som bas (anpassning)
-<a id="building-a-format-selecting-another-format-as-a-base-customization" class="xliff"></a>
+### <a name="building-a-format-selecting-another-format-as-a-base-customization"></a>Att bygga ett format att välja ett annat format som bas (anpassning)
 
 Med hjälp av ER kan du skapa (härleda) en ny komponent från den aktuella versionen av en komponent (bas) som importerats från LCS. En användare vill kanske härleda ett nytt format för att införa vissa särskilda krav för ett elektroniskt dokument (t.ex. ett extra fält eller en omfattande beskrivning) så att det stöder ett anpassningsscenario. Spela upp ER-uppgiftsguiden **Uppdatera format genom att tillämpa en ny grundversion av det** (del av affärsprocessen **7.5.4.3 Anskaffa/utveckla komponenter för IT-tjänster eller -lösningar (10677)**) för att bekanta dig med detaljerna i detta scenario.
 
-### Uppgradering av ett format att välja en ny version av format (ändra basåren)
-<a id="upgrading-a-format-selecting-a-new-version-of-base-format-rebase" class="xliff"></a>
+### <a name="upgrading-a-format-selecting-a-new-version-of-base-format-rebase"></a>Uppgradering av ett format att välja en ny version av format (ändra basåren)
 
 Med hjälp av ER kan du införa ändringar av den senaste versionen av baskomponenten automatiskt i den aktuella utkastversionen av den härledda komponenten. Den här processen kallas för *ombasering*. En ny regeländring som infördes i den senaste versionen av formatet som importerades från LCS kan exempelvis sammanfogas automatiskt i den anpassade versionen av detta format för elektroniska dokument. Ändringar som inte kan sammanfogas automatiskt anses vara konflikter. Konflikterna presenteras för manuell lösning i designerverktyget för lämplig komponent. Spela upp ER-uppgiftsguiden **Uppdatera format genom att tillämpa en ny grundversion av det** (del av affärsprocessen **7.5.4.3 Anskaffa/utveckla komponenter för IT-tjänster eller -lösningar (10677)**) för att bekanta dig med detaljerna i detta scenario.
 
-## Lista över ER-konfigurationer som levereras i Finance and Operations-lösningen
-<a id="list-of-er-configurations-that-are-delivered-in-the-finance-and-operations-solution" class="xliff"></a>
+## <a name="list-of-er-configurations-that-are-delivered-in-the-finance-and-operations-solution"></a>Lista över ER-konfigurationer som levereras i Finance and Operations-lösningen
 | Konfigurationer för domänspecifik datamodell: rubrik | Domän                | Konfigurationer för datamodellsberoende format: rubrik | Beskrivning                                                        |
 |--------------------------------------------------|-----------------------|---------------------------------------------------|--------------------------------------------------------------------|
 | Verifieringsfilsmodell                                 | Ekonomisk granskning       |                                                   |                                                                    |
@@ -399,8 +368,7 @@ Med hjälp av ER kan du införa ändringar av den senaste versionen av baskompon
 
 
 
-Se även
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Se även
 --------
 
 [Krav för lokalisering – Skapa en konfiguration för elektronisk rapportering](electronic-reporting-configuration.md)

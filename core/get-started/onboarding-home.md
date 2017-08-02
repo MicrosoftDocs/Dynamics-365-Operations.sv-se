@@ -24,8 +24,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Startsidan Integrering
-<a id="onboarding-home-page" class="xliff"></a>
+# <a name="onboarding-home-page"></a>Startsidan Integrering
 
 [!include[banner](../includes/banner.md)]
 

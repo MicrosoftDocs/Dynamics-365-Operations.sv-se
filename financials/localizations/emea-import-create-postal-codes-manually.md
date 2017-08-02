@@ -26,8 +26,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Importera eller skapa postnummer manuellt
-<a id="import-or-manually-create-postal-codes" class="xliff"></a>
+# <a name="import-or-manually-create-postal-codes"></a>Importera eller skapa postnummer manuellt
 
 [!include[banner](../includes/banner.md)]
 
@@ -36,8 +35,7 @@ Den här artikeln beskriver hur du importerar och manuellt skapar postnummer i r
 
 Genom importen kan du uppdatera postnummer för ett visst land/en viss region. Du kan också skapa postnummer manuellt.
 
-## Importera postnr
-<a id="import-zippostal-codes" class="xliff"></a>
+## <a name="import-zippostal-codes"></a>Importera postnr
 Du kan använda sidan **Importera postnummer** för att importera nya postnummer till Finance and Operations. När du importerar koderna ersätts befintliga postnummer och postkoder med det nya formatet, och alla nya nummer/koder läggs till.
 
 I vissa länder måste du använda ramverket för datahantering för att importera koder, medan för andra länder bara den överförda filen krävs. Belgien, Nederländerna och Sverige kräver en fil att överföra.
@@ -48,8 +46,7 @@ I vissa länder måste du använda ramverket för datahantering för att importe
 > -   För Sverige finns Postnummerservice.se, som tillhandahåller två typer av filer: svenska postnummer och svenska adresser. Importen stöder textfilsformat för båda typer.
 
 
-## Skapa postnummer/postkoder manuellt
-<a id="create-zippostal-codes-manually" class="xliff"></a>
+## <a name="create-zippostal-codes-manually"></a>Skapa postnummer/postkoder manuellt
 I stället för att importera koder kan du använda sidan **Adressinställningar** för att manuellt lägga till nya postnummer.
 
 

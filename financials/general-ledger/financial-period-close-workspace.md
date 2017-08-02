@@ -27,8 +27,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Arbetsyta för räkenskapsperiodens stängning
-<a id="financial-period-close-workspace" class="xliff"></a>
+# <a name="financial-period-close-workspace"></a>Arbetsyta för räkenskapsperiodens stängning
 
 [!include[banner](../includes/banner.md)]
 
@@ -41,13 +40,11 @@ Arbetsytan **Räkenskapsperiodslut** låter dig spåra dina ekonomiska processer
 
 Du måste först markera ett avslutande schema överst på arbetsytan. Alla data som visas på arbetsytan filtreras sedan genom det markerade stängningsschemat.
 
-### Sammanfattningsrutor
-<a id="summary-tiles" class="xliff"></a>
+### <a name="summary-tiles"></a>Sammanfattningsrutor
 
 Rutorna **Sammanfattning** ger en översikt över processen och indikatorer hjälper dig att följa upp stängningsprocessen. Du kan se aktiviteter som passerat förfallodatum, återstående aktiviteter för idag, uppgifter som förfaller idag men som är spärrade p.g.a. beroenden, samt alla återstående aktiviteter för processen. Denna information används för alla företag som ingår i det markerade, utgående schemat.
 
-### Avsnittet Uppgifter och status
-<a id="tasks-and-status-section" class="xliff"></a>
+### <a name="tasks-and-status-section"></a>Avsnittet Uppgifter och status
 
 I avsnittet **Uppgifter och status** delas statusen för hela det utgående schemat upp på flera olika sätt: status efter företag, status efter område samt status per ansvarig person. Du kan visa statusen för alla aktiviteter i det utgående schemat, endast uppgifter som förfaller idag eller uppgifter som har förfallit genom att ändra filtret överst i listan på kortet. Du kan också välja företagsfilter för att visa status för ett specifikt företag. Varje statusflik tillhandahåller en uppdelning efter såväl slutförd procent och hur många uppgifter som återstår. Klicka på kortet eller åtgärden **Visa detaljer** för att filtrera den detaljerade aktivitetslistan efter det markerade kortet. 
 
@@ -64,16 +61,13 @@ Du kan bifoga filer, anteckningar, bilder och URL-adresser till en aktivitet med
 
 Alternativet **Uppgiften slutförd** måste väljas manuellt när aktiviteten är avslutad. När en aktivitet har markerats som slutförd, uppdateras fältet **Datum för slutförande** automatiskt till aktuellt datum och aktuell tid. Beroendeindikatorer uppdateras också om tillämpbart.
 
-## Listsida Alla uppgifter för räkenskapsperiodens stängning
-<a id="all-financial-period-close-tasks-list-page" class="xliff"></a>
+## <a name="all-financial-period-close-tasks-list-page"></a>Listsida Alla uppgifter för räkenskapsperiodens stängning
 Du kan visa alla aktuella och föregående periodstängningsuppgifter från listsidan **Alla ekonomiska periodstängningsuppgifter**. Den här listsidan passar bäst för historisk analys av stängningen, detta eftersom den innehåller information om planerade förfallodatum, verkligt slutdatum och den person som har slutfört uppgiften. Du kan enkelt exportera informationen på den här listsidan till Microsoft Excel i rapporterings- och granskningssyfte.
 
-## Sidan Räkenskapsperiodens stängningskonfiguration
-<a id="financial-period-close-configuration-page" class="xliff"></a>
+## <a name="financial-period-close-configuration-page"></a>Sidan Räkenskapsperiodens stängningskonfiguration
 Innan du kan använda arbetsytan **Räkenskapsperiodens stängning** måste du konfigurera processen i Microsoft Dynamics 365 for Finance and Operations på sidan **Räkenskapsperiodens stängningskonfiguration**. (Klicka på **Huvudbok** &gt; **Periodstängning** &gt; **Räkenskapsperiodens stängningskonfiguration**.)
 
-### Resurser
-<a id="resources" class="xliff"></a>
+### <a name="resources"></a>Resurser
 
 På fliken **resurser** definierar du de personer som är inblandade i utgående processer. Alla medarbetare som ansvarar för en stängningsaktivitet måste först tilldelas här. Du måste också ange medarbetarvyn i arbetsytan. Följande alternativ är tillgängliga:
 
@@ -82,18 +76,15 @@ På fliken **resurser** definierar du de personer som är inblandade i utgående
 
 Användare som har behörighet att visa endast sina tilldelade uppgifter, kommer inte att vara i stånd att lägga till uppgifter i uppgiftslistan, redigera uppgifter eller ta bort uppgifter från uppgiftslistan.
 
-### Uppgiftsområden
-<a id="task-areas" class="xliff"></a>
+### <a name="task-areas"></a>Uppgiftsområden
 
 Du använder uppgiftområden för att gruppera bokslutsuppgifter i logiska området baserat på ägarskap i din organisation. Exempelvis kan Leverantörsreskontra, Kundreskontra eller Huvudbok användas som uppgiftområden.
 
-### Kalendrar
-<a id="calendars" class="xliff"></a>
+### <a name="calendars"></a>Kalendrar
 
 Skapa och redigera ekonomiska stängningskalendrar på fliken Kalendrar.  Det är här som du kan definiera arbetsdagar för stängningsprocesser, vilket används för att schemalägga aktiviteter för stängning.  Skapa en ny kalender och ange de arbetsdagar som ska användas för att schemalägga uppgiften.  Det är bäst att skapa en kalender för en lång tidsperiod, till exempel ett år eller flera år, eftersom den kan redigeras när den har skapats.  När du har skapat kalendern, klicka på knappen Redigera för att uppdatera kalendern för särskilda dagar, t.ex. helgdagar.  Stängningsaktiviteter schemaläggs på dagar då kontrollvärdet har angetts som Öppet.  Om stängningsaktiviteter inte ska schemaläggas på en viss dag, bör kontrollvärdet för den dagen vara Stängd.
 
-### Mallar
-<a id="templates" class="xliff"></a>
+### <a name="templates"></a>Mallar
 
 Du använder en mall för ekonomisk stängning för att definiera alla aktiviteter som ingår i en stängningsprocess. En stängningsuppgift är en återkommande arbetsinsats som tilldelas en person att slutföras som en del av varje stängningsprocess. I mallen måste du definiera ett relativt förfallodatum för varje stängningsuppgift. Relativt förfallodatum är det antal dagar före eller efter det definierade periodslutsdatumet som aktiviteten förfaller varje period. Förfallodatum tilldelas även varje aktivitet. Förfallotiden anges med hänsyn till din tidszon, och konverteras till den lokala tidszonen för varje användare. 
 
@@ -107,8 +98,7 @@ Du kan definiera samband i mallen. Om en uppgift har ställts in så att den är
 
 Du kan skapa flera mall för ekonomisk stängning. Du kan sedan använda de olika mallarna för att spåra avslutande processer för olika periodtyper, t.ex. månads- eller årsslut, eller för att spåra företag som använder olika utgående processer. När en mall har skapats kan du kopiera den till en ny mall och utföra nödvändiga ändringar. Du kan bara tilldela en mall till respektive stängningsschema.
 
-### Stängningstidsplaner
-<a id="closing-schedules" class="xliff"></a>
+### <a name="closing-schedules"></a>Stängningstidsplaner
 
 Du kan använda ett stängningsschema för att tilldela en mall för ekonomisk stängning till en viss ekonomisk period som ska stängas. Uppgifterna från mallen skapas sedan automatiskt för den angivna perioden, och det nya stängningsschemat läggs till på arbetsytan. När du skapar ett nytt stängningsschema används fältet **Periodslutdatum** för att fastställa det faktiska förfallodatumet för stängningsaktiviteter, baserat på det relativa förfallodatum som används i den ekonomiska stängningsmallen. 
 

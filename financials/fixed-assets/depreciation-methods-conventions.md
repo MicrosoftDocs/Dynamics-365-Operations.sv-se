@@ -27,8 +27,7 @@ ms.lasthandoff: 06/13/2017
 
 ---
 
-# Avskrivningsmetoder och praxis
-<a id="depreciation-methods-and-conventions" class="xliff"></a>
+# <a name="depreciation-methods-and-conventions"></a>Avskrivningsmetoder och praxis
 
 [!include[banner](../includes/banner.md)]
 
@@ -68,8 +67,7 @@ Du kan välja mellan följande avskrivningsmetoder.
 
 
 
-Se även
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Se även
 --------
 
 [Avskrivning av anläggningstillgång](fixed-asset-depreciation.md)

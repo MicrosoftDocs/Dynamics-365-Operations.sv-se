@@ -27,23 +27,20 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Ansluta hjälpsystemet
-<a id="connect-the-help-system" class="xliff"></a>
+# <a name="connect-the-help-system"></a>Ansluta hjälpsystemet
 
 [!include[banner](../includes/banner.md)]
 
 
 Det här avsnittet innehåller komponenten för hjälpsystemet för Microsoft Dynamics 365 for Finance and Operations. Det ger en översikt över hur du skapar ansluter dessa komponenter en sammanfattning av hur du skapar anpassad hjälp. 
 
-## Hjälparkitektur
-<a id="help-architecture" class="xliff"></a>
+## <a name="help-architecture"></a>Hjälparkitektur
 Följande bild visar delarna i hjälpsystemet för Finance and Operations. Produktens interna hjälpsystem hämtar artiklar från Finance and Operations-webbplatsen på https://docs.microsoft.com, samt på uppgiftsguider som lagras i Affärsprocessmodelleraren i Lifecycle Services (LCS). 
 > [!NOTE]
 > Funktionerna som anges med en asterisk (\*) i diagrammet planeras, men är ännu inte tillgängliga. [![Hjälparkitektur](./media/help-architecture.png)](./media/help-architecture.png)
 
 
-## Ansluta hjälpsystemet
-<a id="connecting-the-help-system" class="xliff"></a>
+## <a name="connecting-the-help-system"></a>Ansluta hjälpsystemet
 > [!NOTE]
 > Fliken **Uppgiftsguider** finns för närvarande inte i Microsoft Dynamics 365 for Talent eller Microsoft Dynamics 365 for Retail. Vi arbetar för närvarande med att aktivera den här funktionen i framtida versioner. Uppgiftsguiderna i Komma igång i Talent täcker fortsatt basfunktionerna. Procedurhjälp finns också på webbplatsen docs.microsoft.com ([docs.microsoft.com/dynamics365/operations](/dynamics365/#pivot=solutions&panel=solutions_operations)) för både Retail och Talent.
  
@@ -63,8 +60,7 @@ Med hjälp av sidan **Systemparametrar** ansluter systemadministratörer delar a
 
 När du har slutfört de här stegen kan du öppna fönstret **Hjälp** och klicka på fliken **Uppgiftsguider**. Du ser nu de uppgiftsguider som gäller för den sida du för närvarande befinner dig på i Finance and Operations. Om inga uppgiftsguider hittas kan du ange nyckelord för att begränsa sökningen.
 
-### Visa översatta uppgiftsguider
-<a id="showing-translated-task-guides" class="xliff"></a>
+### <a name="showing-translated-task-guides"></a>Visa översatta uppgiftsguider
 
 Översätta uppgiftsguider medföljde i för första gången i APQC Unified Library i maj 2016, samt i Komma igång-biblioteket. Om du vill se hjälpen för den lokaliserade uppgiftsguiden i Finance and Operations, se då till att du är ansluten till maj-biblioteket. Språket i uppgiftsguiden styrs av varje användare via språkinställningarna under **Alternativ** &gt; **Inställningar**. 
 
@@ -73,14 +69,12 @@ När du har slutfört de här stegen kan du öppna fönstret **Hjälp** och klic
 > -   Om en uppgiftsguide har översatts visas all text i guiden på det valda språket när du öppnar den.
 > -   Om en uppgiftsguide ännu inte har översatts visas enbart en del text i guiden (text på reglage) på det valda språket när du öppnar den.
 
-## Skapa anpassad hjälp
-<a id="creating-custom-help" class="xliff"></a>
+## <a name="creating-custom-help"></a>Skapa anpassad hjälp
 Du kan skapa anpassad hjälp för Finance and Operations samt för Retail genom att skapa uppgiftsinspelningar som speglar din implementering och spara dessa i ett bibliotek för LCS-arbetsprocesser. Du kan inte skapa anpassade uppgiftsguider för Talent. 
 
 För partners, om du främjar ett bibliotek som ett företagsbibliotek och inkluderar det i en lösning blir det tillgängligt även för dina kunder. Du kan också göra en kopia av det globala biblioteket APQC Unified och sedan öppna din kopia, öppna uppgiftsinspelningar från den, ändra dem och spara inspelningarna med dina ändringar. Mer information finns i avsnittet [Skapa en uppgiftsregistrering att använda som dokumentation eller utbildning](../user-interface/task-recorder.md).
 
-Se även
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Se även
 --------
 
 [Hjälpöversikt](help-overview.md)

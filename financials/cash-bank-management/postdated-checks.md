@@ -26,8 +26,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Efterdaterade checkar
-<a id="postdated-checks" class="xliff"></a>
+# <a name="postdated-checks"></a>Efterdaterade checkar
 
 [!include[banner](../includes/banner.md)]
 

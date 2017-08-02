@@ -27,8 +27,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Bearbeta allokeringar
-<a id="process-allocations" class="xliff"></a>
+# <a name="process-allocations"></a>Bearbeta allokeringar
 
 [!include[banner](../includes/banner.md)]
 
@@ -41,8 +40,7 @@ I Microsoft Dynamics 365 for Finance and Operations finns följande funktioner f
 -   Fördela transaktionsbelopp automatiskt baserat på allokeringsvillkor som definieras för individuella huvudkonton. Allokeringskontoposter skapas för varje journal som baseras på procentsats och målhuvudbokskontot, när en redovisningspost uppfyller kriterierna som definieras som källhuvudbokskontot.
 -   Fördela redovisningssaldon eller fasta belopp automatiskt baserat på redovisningsallokeringsregler. Redovisningsallokeringsreglerna bearbetas periodvis med hjälp av allokeringsjournaler. 
 
-###  Allokeringar i budgetplanering
-<a id="allocations-in-budget-planning" class="xliff"></a>
+###  <a name="allocations-in-budget-planning"></a>Allokeringar i budgetplanering
 
 Redovisningsallokeringsregler kan användas för budgetplaner. När du använder allokeringsregler för redovisning i budgetplanering kommer allokeringsreglerna att fungera på samma sätt som i redovisningen, men källdata och måldata kommer från budgetplanen. Du kan manuellt välja redovisningsallokeringsregler som ska användas för budgetplaner. Alternativt kan du använda ett allokeringsschema som körs som en del i en arbetsflödesprocess.
 

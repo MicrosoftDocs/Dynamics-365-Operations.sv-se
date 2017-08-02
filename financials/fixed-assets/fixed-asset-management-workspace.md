@@ -24,23 +24,19 @@ ms.lasthandoff: 06/14/2017
 
 ---
 
-# Arbetsyta för hantering av anläggningstillgångar
-<a id="fixed-asset-management-workspace" class="xliff"></a>
+# <a name="fixed-asset-management-workspace"></a>Arbetsyta för hantering av anläggningstillgångar
 
 [!include[banner](../includes/banner.md)]
 
 Arbetsytan **anläggningstillgångar** visar information som är relaterad till anläggningstillgångar som har registrerats i systemet. Den här arbetsytan innehåller en sammanfattningsvy och en analysvy. Fliken **Mitt arbete** visar sammanfattningsrutor, information om anläggningstillgångar och information om anläggningstillgångar i det aktuella företaget. Du kan också lägga till analys till Power BI analysavsnittet direkt på arbetsytan. Fliken **Analys – alla företag** använder funktionerna i Microsoft Power BI för att visa visuella som är relaterade till anläggningstillgångar i alla företag.
 
-## Mitt arbete
-<a id="my-work" class="xliff"></a>
+## <a name="my-work"></a>Mitt arbete
 
-### Sammanfattning
-<a id="summary" class="xliff"></a>
+### <a name="summary"></a>Sammanfattning
 
 Rutorna i avsnittet **sammanfattning** ger en översikt över anläggningstillgångarna. Informationen inkluderar mått om tillgångar som ännu inte har förvärvats, tillgångar som förvärvats under innevarande år och tillgångar som har avyttrats under det innevarande året. Avsnittet **sammanfattning** har också snabbnavigering till listsidan **anläggningstillgång** och batchavskrivningsförslag och anläggningstillgångsjournal.
 
-### Sök anläggningstillgångar
-<a id="find-fixed-assets" class="xliff"></a>
+### <a name="find-fixed-assets"></a>Sök anläggningstillgångar
 
 Avsnittet **hitta anläggningstillgångar** låter dig snabbt söka efter resurser med anläggningstillgångsnummer, grupp, namn, plats eller person som är ansvarig. Alla tillgångar som matchar sökvillkoren visas i listan.
 
@@ -50,20 +46,17 @@ Du kan visa följande sidor i listan:
  - Sidan **Böcker** för alla böcker som associeras med anläggningstillgången
  - Sidan **Anläggningstillgångvärderingar**
 
-### Värderingar
-<a id="valuations" class="xliff"></a>
+### <a name="valuations"></a>Värderingar
 
 Sidan **anläggningstillgångvärderingar** låter dig visa den viktigaste informationen om en anläggningstillgång på en sida och även uppgifter för alla böcker som associeras med anläggningstillgången. Alternativet **saldon** längst upp till vänster på sidan visar den aktuella värderingen för varje bok som associeras med anläggningstillgången. Du kan gå tillbaka från värdena för att visa de detaljerade transaktioner som utgör sammanfattningsvärdet. Alternativet **profil** längst upp till vänster på sidan visar avskrivningstidsplanen för varje bok som associeras med anläggningstillgången.
 
 Du kan komma åt sidan **Anläggningstillgångvärderingar** från arbetsytan **Anläggningstillgånghantering** eller listsidan **Anläggningstillgång**.
 
-### Relaterad information
-<a id="related-information" class="xliff"></a>
+### <a name="related-information"></a>Relaterad information
 
 Du kan gå direkt till sidan **Bokinställningar**, sidan **Fråga om transaktioner med anläggningstillgångar** och flera rapporter med hjälp av länkarna i delen **relaterad information** i arbetsytan.
 
-### Analyser – alla företag
-<a id="analytics--all-companies" class="xliff"></a>
+### <a name="analytics--all-companies"></a>Analyser – alla företag
 
 Sidan **analys** ger viktiga mått om anläggningstillgångar för alla juridiska personer i systemet. Åtkomst till den här fliken styrs av vyn anläggningstillgångsanalyser för alla företags säkerhetsprofil.
 

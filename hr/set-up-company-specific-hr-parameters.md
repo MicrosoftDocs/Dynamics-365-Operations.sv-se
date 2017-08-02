@@ -27,8 +27,7 @@ ms.lasthandoff: 06/19/2017
 
 ---
 
-# Ställa in företagsspecifika HR parametrar
-<a id="set-up-company-specific-hr-parameters" class="xliff"></a>
+# <a name="set-up-company-specific-hr-parameters"></a>Ställa in företagsspecifika HR parametrar
 
 [!include[banner](includes/banner.md)]
 
@@ -50,20 +49,17 @@ Inställningar på **fliken rekrytering** definierar dokumenttyper som används 
 
 Inställningarna på fliken **Kompensation** anger om användare måste bekräfta att de vill spara information för en fast eller variabel kompensationsplan. Om du markerar kryssrutan **Aktivera spara validering** kommer användarna när de stänger en relaterad kompensationsplanssida att få ett meddelande som frågar om de vill spara posten. Vissa sidor i kompensationshantering låter inte användare ta bort information. Därför, genom att meddela användarna att bekräfta att de vill spara information, du kan begränsa den mängd information som sparas men inte tas bort senare. Om **Aktivera spara validering** är avmarkerad, poster sparas alltid omedelbart, möjligen innan användaren är redo. Om du använder performance management, **fliken ersättningar** kan du också välja ett betyg modell att använda i stället för den modell som är tilldelade till ersättningsplaner när prestanda är klassad. 
 
-### Tidigare utgivna funktioner
-<a id="previously-released-functionality" class="xliff"></a>
+### <a name="previously-released-functionality"></a>Tidigare utgivna funktioner
 Inställningarna på **fliken sekvensen** avgör de sekvenser som används för att automatiskt tilldela ID-nummer för objekt i mänskliga resurser, såsom applikationer, ingen registrering, ersättning process resultat, fallnummer, kurser och kurs dagordningar. För att bibehålla nummersekvensreferenser och koder, använd listsidan **Nummersekvenser** (klicka på **Organisationsadministration** &gt; **Nummersekvenser** &gt; **Nummersekvenser**).
 
-### Om du använder Dynamics 365 for Talent
-<a id="if-youre-using-dynamics-365-for-talent" class="xliff"></a>
+### <a name="if-youre-using-dynamics-365-for-talent"></a>Om du använder Dynamics 365 for Talent
 Inställningarna på **fliken sekvensen** avgör de sekvenser som används för att automatiskt tilldela ID-nummer för objekt i mänskliga resurser, såsom applikationer, ingen registrering, ersättning process resultat, fallnummer, kurser och kurs dagordningar. För att bibehålla nummersekvensreferenser och koder, använd listsidan **Nummersekvenser** (klicka på **Systemadministration** &gt; **Länkflik** &gt; **Nummersekvenser** &gt; **Nummersekvenser**). 
 
 Inställningar på **fliken FMLA** ange hur många timmar som en anställd måste arbeta för att vara berättigade till fmla förmåner, längden på anställningen som krävs för berättigande och anställningsdatum som används för att bestämma längden på anställningen. Inställningarna även definiera antalet FMLA-timmar som de anställda har rätt till och FMLA lämnar kalendern som används för att beräkna hur många FMLA timmar anställda har använt. Det **FMLA-** fliken är endast tillgänglig för företag i Förenta staterna. 
 
 **Obs!** Det antal timmar som arbetas inte överstiga 1250 och längden på anställningen får inte överskrida 12 månader. Dessa största värden i enlighet med federal lag i USA. Slutligen inställningarna på den **anställde självbetjäning** fliken bestämmer vilken information som en chef kan ange på uppdrag av hans eller hennes anställda.
 
-Se även
-<a id="see-also" class="xliff"></a>
+<a name="see-also"></a>Se även
 --------
 
 [Ställa in HR parametrar över juridiska personer](set-up-hr-parameters-across-legal-entities.md)

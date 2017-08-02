@@ -27,8 +27,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Analysera försäljningstrender och försäljningsmönster
-<a id="analyze-sales-trends-and-patterns" class="xliff"></a>
+# <a name="analyze-sales-trends-and-patterns"></a>Analysera försäljningstrender och försäljningsmönster
 
 [!include[banner](includes/banner.md)]
 

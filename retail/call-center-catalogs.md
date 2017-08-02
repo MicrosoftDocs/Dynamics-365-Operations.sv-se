@@ -28,8 +28,7 @@ ms.lasthandoff: 06/20/2017
 
 ---
 
-# Kundtjänstkataloger
-<a id="call-center-catalogs" class="xliff"></a>
+# <a name="call-center-catalogs"></a>Kundtjänstkataloger
 
 [!include[banner](includes/banner.md)]
 
