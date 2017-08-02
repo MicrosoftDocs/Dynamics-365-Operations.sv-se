@@ -1,37 +1,35 @@
 ---
-title: "Ordlista för Dynamics 365 for Operations"
-description: Microsoft Dynamics 365 for Operations-ordlistan definierar viktiga begrepp och termer i Dynamics 365 for Operations-produkten.
+title: "Ordlista för Finance and Operations"
+description: "I den här ordlistan definieras viktiga termer och begrepp i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition."
 author: tonyafehr
 manager: AnnBe
-ms.date: 04/04/2017
+ms.date: 07/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 44101
 ms.assetid: d4e01957-69a0-4c92-91c5-4646c8b0cad8
 ms.search.region: Global
 ms.author: tfehr
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 4f3015ed4f8dc165d988b2b63ed9ad89d6d6f578
+ms.translationtype: HT
+ms.sourcegitcommit: 84ee9110fa32a551133a6ab4b7c6feb9ea9c017a
+ms.openlocfilehash: 0b4d5285cc1aa44da566ec5d7fa7ebe568729fdf
 ms.contentlocale: sv-se
-ms.lasthandoff: 06/08/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
-# <a name="dynamics-365-for-operations-glossary"></a>Ordlista för Dynamics 365 for Operations
+# <a name="finance-and-operations-glossary"></a>Ordlista för Finance and Operations
 
 [!include[banner](../includes/banner.md)]
 
-
-Microsoft Dynamics 365 for Operations-ordlistan definierar viktiga begrepp och termer i Dynamics 365 for Operations-produkten. 
+I den här ordlistan definieras viktiga termer och begrepp i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition. 
 
 ### <a name="a"></a>**A**
 
@@ -51,17 +49,9 @@ Ett elektroniskt betalningssystem i USA som underlättar betalningsöverföringa
 
 Den uppmätta kvantitet som matas in eller ut från en aktivitet.
 
-###### <a name="address-verification-service"></a>**adressverifieringstjänst**
+###### <a name="address-verification"></a>**adressverifiering**
 
 Den tjänst som tillhandahålls av ett kreditkortsföretag och som validerar att den faktureringsadress som anges av en kortinnehavare matchar informationen hos den utfärdande banken.
-
-###### <a name="adjusted-unit-price"></a>**justerat enhetspris**
-
-Det beräknade priset per enhet baserat på attributbaserad prissättning och den faktiska potensen.
-
-###### <a name="advanced-pricing"></a>**avancerad prissättning**
-
-Logik som används för att beräkna inköpspriset för en potensartikel.
 
 ###### <a name="aging"></a>**åldersfördelning**
 
@@ -89,7 +79,7 @@ En metod för att stämma av ett redovisningskonto som motsvarar ett bankkonto g
 
 Ett produktattribut för en processbatch eller en överföringsbatch.
 
-###### <a name="best-before-date"></a>**bästföredatum**
+###### <a name="best-before-date"></a>**bäst-före-datum**
 
 Ett rekommenderat datum då produkten har optimal kvalitet eller bästa möjliga egenskaper.
 
@@ -101,14 +91,13 @@ Den tidsperiod då produkten har optimal kvalitet eller de bästa egenskaperna.
 
 Ett källdokument som anger en ovillkorlig begäran om att en tredje part ska betala en annan part på begäran.
 
-###### <a name="bill-of-materials"></a>**strukturlista**
-
-En lista över produkter och kvantiteter som krävs för att producera en produkt.
-
-###### <a name="blocking"></a>**spärr**
+###### <a name="blocking"></a>**spärra**
 
 Åtgärden att spärra ett dokument eller en produkt.
 
+###### <a name="bom-bill-of-materials"></a>**strukturlista**
+
+En lista över produkter och kvantiteter som krävs för att producera en produkt.
 ###### <a name="budget-control"></a>**budgetkontroll**
 
 En metod för att auktorisera omkostnader endast när budgetmedel kan reserveras för att uppfylla framtida betalningsutfästelser.
@@ -175,14 +164,6 @@ En lista över huvudkonton.
 
 En redovisningskategori som används för att summera de ekonomiska följderna av produkttillverkning och lagerhållning.
 
-###### <a name="commodity-pricing"></a>**råvaruprissättning**
-
-En prissättningsstrategi för att uppdatera priset för försäljningsartiklar som produceras från varor med frekventa prisändringar.
-
-###### <a name="consolidated-order"></a>**konsoliderad order**
-
-Ett källdokument som anger mer än en refererad order.
-
 ###### <a name="contractor"></a>**leverantör**
 
 En roll för en person som deltar i en leverantör/anställd-relation med en juridisk person.
@@ -194,10 +175,6 @@ En artikel som tillverkas med en annan artikel.
 ###### <a name="cost-center"></a>**kostnadsställe**
 
 En driftenhet där chefer är ansvariga för budgeterade och faktiska omkostnader.
-
-###### <a name="cost-of-goods-sold"></a>**kostnader för sålda varor**
-
-En redovisningskategori som används för att summera de ekonomiska följderna av produkttillverkning och lagerhållning.
 
 ###### <a name="cost-variance"></a>**kostnadsavvikelse**
 
@@ -223,7 +200,7 @@ Den tid det tar att slutföra en aktivitet.
 
 ###### <a name="dashboard"></a>**instrumentpanel**
 
-Den typiska startsidan i Dynamics 365 for Operations. På instrumentpanelen ser användarna ett avsnitt för varje arbetsyta som de har tillgång till. Varje avsnitt visar paneler från sammanfattningsavsnitten i den relaterade arbetsytan. Instrumentpanelen består av ett namn och avsnitt med paneler.
+Den typiska startsidan i Finance and Operations. På instrumentpanelen ser användarna ett avsnitt för varje arbetsyta som de har tillgång till. Varje avsnitt visar paneler från sammanfattningsavsnitten i den relaterade arbetsytan. Instrumentpanelen består av ett namn och avsnitt med paneler.
 
 ###### <a name="data-entity"></a>**datatabell**
 
@@ -259,11 +236,7 @@ En konfigurationsteknik som används för att skapa produktvarianter genom att v
 
 ###### <a name="distinct-product"></a>**specifik produkt**
 
-Ett unikt identifierar produkt.
-
-###### <a name="document-blocking"></a>**orderspärr**
-
-En metod för att spärra en operationsprocess medan beställda artiklar befinner sig i en kvalitetssäkringsprocess.
+En unikt identifierbar produkt.
 
 ###### <a name="document-management-system"></a>**dokumenthanteringssystem**
 
@@ -316,10 +289,6 @@ En valuta som har en fast valutakurs i förhållande till annan valuta.
 ###### <a name="fixed-quantity-kanban"></a>**kanban för fast kvantitet**
 
 En typ av kanban som används när antalet kanban som tilldelats en kanban-regel är konstant.
-
-###### <a name="flexible-authentication"></a>**flexibel autentisering**
-
-En autentiseringsprocess där användare kan autentiseras i flera olika identitetshanteringssystem.
 
 ###### <a name="formula"></a>**formel**
 
@@ -379,10 +348,6 @@ En process eller överföringsaktivitet i ett produktionsflöde som utlöses av 
 
 Tillbakadragandet av produktkomponenter från lagret för att kunna slutföra kanban-produktionsjobb.
 
-###### <a name="kanban-product-quantity"></a>**kanban-produktkvantitet**
-
-Antalet artikelbehov som ingår i en kanban baserat på en kanban-regel.
-
 ###### <a name="kanban-rule"></a>**kanban-regel**
 
 En regel i ett lean manufacturing-system som tillämpar policyer för materialplanering och lagerpåfyllnad genom att kontrollera hur processer och överföringsaktiviteter samordnas i produktionsflöden.
@@ -410,10 +375,6 @@ En alfanumerisk nyckel som ger en part rätt att använda programmet eller progr
 Möjligheten för en part att använda kortfristiga tillgångar för att kvitta kortfristiga skulder.
 
 ### <a name="m"></a>**M**
-
-###### <a name="manufacturing-overhead-based-on-material"></a>**tillverkningsomkostnader som baseras på material**
-
-Tillverkningsomkostnader uttrycks som beräkningsformler för indirekta kostnader för en tilläggsprocent. En kostnadsgrupp som tilldelas materialkomponenter ligger till grund för en beräkningsformel. Beräkningsformler kan definieras för enskilda produkter eller för artikelgrupper som tilldelas produkter, vilket på så sätt ger större flexibilitet vid beräkning av tillverkningsomkostnader som baseras på material.
 
 ###### <a name="master-scheduling"></a>**huvudplanering**
 
@@ -459,10 +420,6 @@ Ett paket är en kompilerbar och distribuerbar enhet av en eller flera modeller.
 
 ###### <a name="party"></a>**part**
 
-En enhet som antar en juridiskt bindande roll vid deltagande i en avtalsrelation.
-
-###### <a name="party"></a>**part**
-
 En person eller organisation som deltar i ekonomiska aktiviteter.
 
 ###### <a name="pegging"></a>**pegging**
@@ -472,10 +429,6 @@ Processen för att spåra en kvantitet av en begärd artikel till dess källa.
 ###### <a name="pegging-event"></a>**pegging-händelse**
 
 En resursflödeshändelse som signalerar efterfrågan på en produkt.
-
-###### <a name="phantom-item"></a>**fiktiv artikel**
-
-En artikel som tillverkas, men inte lagerhålls.
 
 ###### <a name="planned-intercompany-demand"></a>**planerad koncernintern efterfrågan**
 
@@ -489,17 +442,9 @@ Att registrera penningvärdet av en ekonomisk händelse på ett visst konto, ell
 
 Den person som skapar ett källdokument för att starta en begäran om ekonomiska resurser.
 
-###### <a name="privilege"></a>**privilegium**
-
-En eller flera behörigheter som en användare behöver för att utföra en uppgift.
-
 ###### <a name="procurement-catalog"></a>**anskaffningskatalog**
 
 En lista med produkterbjudanden som är grupperade efter anskaffningskategori. En anskaffningskatalog används för att begära produkter för intern användning i en organisation.
-
-###### <a name="product-component"></a>**produktkomponent**
-
-En del av en produkt.
 
 ###### <a name="product-dimension"></a>**produktdimension**
 
@@ -507,7 +452,7 @@ De produktattribut för storlek, färg eller konfiguration som används för dim
 
 ###### <a name="product-family"></a>**produktfamilj**
 
-En unik gruppering av artiklar, tjänster eller rättigheter som antingen deltar i samma produktions - eller leveransaktiviteter, eller som tillhandahålls till samma marknadssegment. I Microsoft Dynamics 365 for Operations representeras grupperingen genom att använda en prognostiserad allokeringsnyckel.
+En unik gruppering av artiklar, tjänster eller rättigheter som antingen deltar i samma produktions - eller leveransaktiviteter, eller som tillhandahålls till samma marknadssegment. I Finance and Operations representeras grupperingen genom att använda en prognostiserad allokeringsnyckel.
 
 ###### <a name="product-master"></a>**produktmall**
 
@@ -581,10 +526,6 @@ En metod som används för att öka eller minska prognoskraven i huvudplaneringe
 
 En post som används för att registrera de verksamhetsmässiga, juridiska och ekonomiska följderna av resursflödeshändelser i ett redovisningssystem.
 
-###### <a name="regulated-product"></a>**reglerad produkt**
-
-En produkt som regleras av en statlig myndighet som kräver efterlevnad- och granskningsrapportering.
-
 ###### <a name="rfq-request-for-quotation"></a>**anbudsförfrågan**
 
 Ett källdokument som anger en inbjudan att lämna offerter för att tillhandahålla en produktkvantitet till ett angivet pris och datum.
@@ -593,9 +534,6 @@ Ett källdokument som anger en inbjudan att lämna offerter för att tillhandah�
 
 Den person som begär de ekonomiska resurserna.
 
-###### <a name="restricted-product"></a>**begränsad produkt**
-
-En produkt vars distribution begränsas av en statlig myndighet.
 
 ### <a name="s"></a>**S**
 
@@ -647,13 +585,6 @@ Produktkvantiteten som dokumenteras på en källdokumentrad som skapar ett peggi
 
 En uppskattning av framtida efterfrågan som skapas genom att du tillämpar en prognosalgoritm på historiska transaktionsdata.
 
-###### <a name="supermarket"></a>**storlager**
-
-En lagerplats med begränsad kapacitet som används för samla material nära konsumtionsplatsen.
-
-###### <a name="system-defined-financial-dimension-type"></a>**systemdefinierad ekonomisk dimensionstyp**
-
-En ekonomisk dimension som mappas till ett register eller en vy i databasen som representerar en enhetstyp, och vars värden finns i domänen för ett attribut av den enhetstypen.
 
 ### <a name="t"></a>**T**
 
@@ -665,13 +596,13 @@ Den tid det tar att producera en enhet av en produkt.
 
 En kontrollerad, guidad upplevelse genom stegen i en uppgiftsinspelning. En uppgiftsguide leder användaren genom vad som registrerades. Alla säkerhets-, data- och programbeteenden är desamma oavsett om du går igenom en uppgiftsguide eller inte. Uppgiftsguiden använder samma instrumentering som Uppgiftsinspelaren för att ta reda på när en användare har slutfört de avsedda stegen, och kan då uppmana användaren att utföra nästa steg i inspelningen.
 
-###### <a name="task-recorder"></a>**uppgiftsinspelaren**
+###### <a name="task-recorder"></a>**Uppgiftsinspelare**
 
-Ett verktyg som finns förinstallerat i Dynamics 365 for Operations. Vid inspelning registrerar den alla händelser som användaren matar in i Dynamics 365 for Operations-användargränssnittet som körs mot servern ‒ inklusive tillagda värden, ändrade inställningar, borttagna data, o.s.v.
+Ett verktyg som finns förinstallerat i Finance and Operations. Vid inspelning registrerar den alla händelser som användaren matar in i Finance and Operations-användargränssnittet som körs mot servern ‒ inklusive tillagda värden, ändrade inställningar, borttagna data, o.s.v.
 
 ###### <a name="task-recording"></a>**uppgiftsinspelning**
 
-En fil som innehåller åtgärder och kommentarer som registreras när Uppgiftsinspelaren körs i Microsoft Dynamics 365 for Operations.
+En fil som innehåller åtgärder och kommentarer som registreras när Uppgiftsinspelare körs i Finance and Operations.
 
 ###### <a name="three-way-matching-policy"></a>**policy för trevägsmatchning**
 
@@ -684,12 +615,6 @@ Kvantiteten av en eller flera artiklar som överförs eller som kan överföras.
 ###### <a name="two-way-matching-policy"></a>**policy för tvåvägsmatchning**
 
 En matchningspolicy som kräver att ett eller flera leverantörsfakturapriser matchar ett eller flera inköpsorderpriser.
-
-### <a name="u"></a>**U**
-
-###### <a name="user-defined-financial-dimension-type"></a>**användardefinierad ekonomisk dimensionstyp**
-
-En ekonomisk dimension som mappas till en användardefinierad lista med värden.
 
 ### <a name="v"></a>**V**
 
@@ -726,7 +651,4 @@ En person som har rollen medarbetare eller leverantör och som betalas i utbyte 
 ###### <a name="workspace"></a>**arbetsyta**
 
 En sida som ger en överblick av en av de aktiviteter som användaren utför. Sidan använder paneler, listor och diagram för att visa pågående arbete och relaterade data från flera källor, och lyfter fram vanligt förekommande arbetsuppgifter som berör dessa data. Panelerna som visas i sammanfattningsavsnittet på arbetsytan visas också i relaterade avsnitt på instrumentpanelen.
-
-
-
 

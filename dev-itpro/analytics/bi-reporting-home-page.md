@@ -17,11 +17,11 @@ ms.search.region: Global
 ms.author: sericks
 ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
-ms.openlocfilehash: 745abbfde09bab40f032c13d1b0293e0990a3de3
+ms.translationtype: HT
+ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
+ms.openlocfilehash: 85000ee4507e1d716c6118441d77d94091494f33
 ms.contentlocale: sv-se
-ms.lasthandoff: 06/29/2017
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -73,32 +73,32 @@ Det här ämnet innehåller en lista med resurser för BI och rapporter i Micros
 -   [Destinationer för elektronisk rapportering](electronic-reporting-destinations.md)
 -   [Hämta konfigurationer för elektronisk rapportering från Lifecycle Services](download-electronic-reporting-configuration-lcs.md)
 -   [Använd en elektronisk rapporteringskonfiguration för att tillhandahålla Power BI med data från Finance and Operations](general-electronic-reporting-report-configuration-get-data-powerbi.md)
--   [ER Skapa en konfigurationsleverantör och markera den som aktiv](http://ax.help.dynamics.com/en/wiki/er-select-service-provider/) (uppgiftsguide)
--   [ER Utforma domänspecifik datamodell](http://ax.help.dynamics.com/en/wiki/er-design-domain-specific-data-model/) (uppgiftsguide)
--   [ER Definiera modellmappning och välj datakällor](http://ax.help.dynamics.com/en/wiki/er-define-model-mapping-and-select-data-sources/) (uppgiftsguide)
--   [ER Mappa datamodeller till utvalda datakällor](http://ax.help.dynamics.com/en/wiki/er-map-data-model-to-selected-data-sources/) (uppgiftsguide)
--   [ER Utforma domänspecifikt format](http://ax.help.dynamics.com/en/wiki/er-design-domain-specific-format/) (uppgiftsguide)
--   [ER Överför en konfiguration till Lifecycle Services](http://ax.help.dynamics.com/en/wiki/upload-a-configuration-into-lifecycle-services/) (uppgiftsguide)
--   [ER Importera en konfiguration från Lifecycle Services](http://ax.help.dynamics.com/en/wiki/import-a-configuration-from-lifecycle-services/) (uppgiftsguide)
--   [ER Utforma en konfiguration för rapportgenerering i OPENXML-format](http://ax.help.dynamics.com/en/wiki/design-a-configuration-for-generating-reports-in-openxml-format/) (uppgiftsguide)
--   [ER Konfigurera destinationer](http://ax.help.dynamics.com/en/wiki/configure-destinations/) (uppgiftsguide)
--   [ER Använd ekonomiska dimensioner som datakälla (Del 1: Utforma datamodell)](http://ax.help.dynamics.com/en/wiki/er-use-financial-dimensions-as-a-data-source-part-1-design-data-model/) (uppgiftsguide)
--   [ER Använd ekonomiska dimensioner som datakälla (Del 2: Modellmappning)](http://ax.help.dynamics.com/en/wiki/er-use-financial-dimensions-as-a-data-source-part-2-model-mapping/) (uppgiftsguide)
--   [ER Använd ekonomiska dimensioner som datakälla (Del 3: Utforma rapporten)](http://ax.help.dynamics.com/en/wiki/er-use-financial-dimensions-as-a-data-source-part-3-design-the-report/) (uppgiftsguide)
--   [ER Använd ekonomiska dimensioner som datakälla (Del 4: Kör rapporten)](http://ax.help.dynamics.com/en/wiki/er-use-financial-dimensions-as-a-data-source-part-4-run-the-report/) (uppgiftsguide)
--   [ER Konfigurera format för inventering och summering (Del 1: Skapa format)](http://ax.help.dynamics.com/en/wiki/er-configure-format-to-do-counting-and-summing-part-1-create-format/) (uppgiftsguide)
--   [ER Konfigurera format för inventering och summering (Del 2: Konfigurera beräkningar)](http://ax.help.dynamics.com/en/wiki/er-configure-format-to-do-counting-and-summing-part-2-configure-computations/) (uppgiftsguide)
--   [ER Konfigurera format för inventering och summering (Del 3: Använd beräkningar för att generera utdata)](http://ax.help.dynamics.com/en/wiki/er-configure-format-to-do-counting-and-summing-part-3-use-computations-to-make-the-output/) (uppgiftsguide)
--   [ER Konfigurera format för inventering och summering (Del 4: Kör format)](http://ax.help.dynamics.com/en/wiki/er-configure-format-to-do-counting-and-summing-part-4-run-format/) (uppgiftsguide)
--   [ER Använd horisontellt expanderbara intervall för att lägga till kolumner dynamiskt i Excel-rapporter (Del 1: Utforma format)](http://ax.help.dynamics.com/en/wiki/er-use-horizontally-expandable-ranges-to-dynamically-add-columns-in-excel-reports-part-1-design-format/) (uppgiftsguide)
--   [ER Använd horisontellt expanderbara intervall för att lägga till kolumner dynamiskt i Excel-rapporter (Del 2: Kör format)](http://ax.help.dynamics.com/en/wiki/er-use-horizontally-expandable-ranges-to-dynamically-add-columns-in-excel-reports-part-2-run-format/) (uppgiftsguide)
--   [ER Använd dokumenthanteringsfiler i formatutdata (Del 1: Förbered datamodell)](http://ax.help.dynamics.com/en/wiki/er-use-document-management-files-in-format-outputs-part-1-prepare-data-model/) (uppgiftsguide)
--   [ER Använd dokumenthanteringsfiler i formatutdata (Del 2: Utöka datamodell)](http://ax.help.dynamics.com/en/wiki/er-use-document-management-files-in-format-outputs-part-2-extend-data-model/) (uppgiftsguide)
--   [ER Använd dokumenthanteringsfiler i formatutdata (Del 3: Skapa format)](http://ax.help.dynamics.com/en/wiki/er-use-document-management-files-in-format-outputs-part-3-create-format/) (uppgiftsguide)
--   [ER Använd dokumenthanteringsfiler i formatutdata (Del 4: Kör format)](http://ax.help.dynamics.com/en/wiki/er-use-document-management-files-in-format-outputs-part-4-run-format/) (uppgiftsguide)
--   [ER Använd dokumenthanteringsfiler i formatutdata (Del 5: Ändra och kör format)](http://ax.help.dynamics.com/en/wiki/er-use-document-management-files-in-format-outputs-part-5-modify-and-run-format/) (uppgiftsguide)
--   [ER Generera elektroniska dokument för betalningar med en formatkonfiguration](http://ax.help.dynamics.com/en/wiki/generate-electronic-documents-for-payments-using-a-format-configuration/) (uppgiftsguide)
--   [ER Uppgradera formatet genom att implementera en ny basversion för formatet](http://ax.help.dynamics.com/en/wiki/upgrade-your-format-by-adopting-a-new-base-version-of-that-format/) (uppgiftsguide)
+-   [ER Skapa en konfigurationsleverantör och markera den som aktiv](/dynamics365/unified-operations/do-not-publish/er-configuration-provider-mark-it-active-2016-02) (uppgiftsguide)
+-   [ER Utforma domänspecifik datamodell](/dynamics365/unified-operations/do-not-publish/er-design-domain-specific-data-model-2016-02-05) (uppgiftsguide)
+-   [ER Definiera modellmappning och välj datakällor](/dynamics365/unified-operations/do-not-publish/er-define-model-mapping-select-data-sources-2016-02-05) (uppgiftsguide)
+-   [ER Mappa datamodeller till utvalda datakällor](/dynamics365/unified-operations/do-not-publish/er-map-data-model-selected-data-sources-2016-02-05) (uppgiftsguide)
+-   [ER Utforma domänspecifikt format](/dynamics365/unified-operations/do-not-publish/er-design-domain-specific-format-2016-02-05) (uppgiftsguide)
+-   [ER Överför en konfiguration till Lifecycle Services](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services) (uppgiftsguide)
+-   [ER Importera en konfiguration från Lifecycle Services](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services) (uppgiftsguide)
+-   [ER Utforma en konfiguration för rapportgenerering i OPENXML-format](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11) (uppgiftsguide)
+-   [ER Konfigurera destinationer](/dynamics365/unified-operations/do-not-publish/er-destinations-2016-05) (uppgiftsguide)
+-   [ER Använd ekonomiska dimensioner som datakälla (Del 1: Utforma datamodell)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1) (uppgiftsguide)
+-   [ER Använd ekonomiska dimensioner som datakälla (Del 2: Modellmappning)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2) (uppgiftsguide)
+-   [ER Använd ekonomiska dimensioner som datakälla (Del 3: Utforma rapporten)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3) (uppgiftsguide)
+-   [ER Använd ekonomiska dimensioner som datakälla (Del 4: Kör rapporten)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4) (uppgiftsguide)
+-   [ER Konfigurera format för inventering och summering (Del 1: Skapa format)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-format-counting-summing-1) (uppgiftsguide)
+-   [ER Konfigurera format för inventering och summering (Del 2: Konfigurera beräkningar)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-format-counting-summing-2) (uppgiftsguide)
+-   [ER Konfigurera format för inventering och summering (Del 3: Använd beräkningar för att generera utdata)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-format-counting-summing-3) (uppgiftsguide)
+-   [ER Konfigurera format för inventering och summering (Del 4: Kör format)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-format-counting-summing-4) (uppgiftsguide)
+-   [ER Använd horisontellt expanderbara intervall för att lägga till kolumner dynamiskt i Excel-rapporter (Del 1: Utforma format)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-horizontal-1) (uppgiftsguide)
+-   [ER Använd horisontellt expanderbara intervall för att lägga till kolumner dynamiskt i Excel-rapporter (Del 2: Kör format)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-horizontal-2) (uppgiftsguide)
+-   [ER Använd dokumenthanteringsfiler i formatutdata (Del 1: Förbered datamodell)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-document-management-files-1) (uppgiftsguide)
+-   [ER Använd dokumenthanteringsfiler i formatutdata (Del 2: Utöka datamodell)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-document-management-files-2) (uppgiftsguide)
+-   [ER Använd dokumenthanteringsfiler i formatutdata (Del 3: Skapa format)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-document-management-files-3) (uppgiftsguide)
+-   [ER Använd dokumenthanteringsfiler i formatutdata (Del 4: Kör format)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-document-management-files-4) (uppgiftsguide)
+-   [ER Använd dokumenthanteringsfiler i formatutdata (Del 5: Ändra och kör format)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-document-management-files-5) (uppgiftsguide)
+-   [ER Generera elektroniska dokument för betalningar med en formatkonfiguration](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-electronic-payments) (uppgiftsguide)
+-   [ER Uppgradera formatet genom att implementera en ny basversion för formatet](/dynamics365/unified-operations/do-not-publish/er-upgrade-format--2016-05) (uppgiftsguide)
 
 
 
