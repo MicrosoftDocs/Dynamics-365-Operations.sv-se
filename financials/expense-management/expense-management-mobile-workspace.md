@@ -1,58 +1,72 @@
 ---
 title: "Mobil arbetsyta för utgiftshantering"
-description: "Det här avsnittet innehåller information om den mobila arbetsytan för utgiftshantering som är tillgänglig för mobilappen Microsoft Dynamics 365 for Finance and Operations. Den här arbetsytan låter användarna hämta och skicka ett kvitto så att de kan bifogas till en utgiftsrapport senare. Den mobila arbetsytan låter även användare snabbt skapa en utgiftsrad med en kopplad inleverans."
-author: annbe
+description: "Det här avsnittet innehåller information om mobil arbetsyta för Utläggshantering. Den här arbetsytan låter användarna hämta och skicka ett kvitto så att de kan bifogas till en utgiftsrapport senare. Användare kan snabbt skapa en utgiftsrad med en kopplad inleverans och skapa och hantera sina utgiftsrapporter."
+author: KimANelson
 manager: AnnBe
-ms.date: 04/10/2017
+ms.date: 06/16/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
-audience: end user, IT Pro
-ms.reviewer: annbe
-ms.search.scope: Operations
+audience: Application User
+ms.reviewer: sericks
+ms.search.scope: Operations, UnifiedOperations
 ms.custom: 274023
 ms.assetid: 3605eda1-a7ed-4675-8031-5279c5a8f5e4
 ms.search.region: Global
-ms.author: annbe
+ms.author: knelson
 ms.dyn365.ops.intro: Version 1611
-ms.search.validFrom: 2016-11-30
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 0e52d1c5dde7f79c4a8ac5ac2d9c3b25bba9c2cd
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.translationtype: HT
+ms.sourcegitcommit: 2dd3db95eb741c37dd8a50c397cb4c9494599250
+ms.openlocfilehash: 993586b1fb46c21d2b68a6060ab897c8ccc76a6c
 ms.contentlocale: sv-se
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
-# <a name="expense-management-mobile-workspace"></a>Mobil arbetsyta för utgiftshantering
+# <a name="expense-management-mobile-workspace"></a>Mobil arbetsyta för utläggshantering
 
 [!include[banner](../includes/banner.md)]
 
+Det här avsnittet innehåller information om mobil arbetsyta för **Utläggshantering**. Den här arbetsytan låter användarna hämta och skicka ett kvitto så att de kan bifogas till en utgiftsrapport senare. Användare kan snabbt skapa en utgiftsrad med en kopplad inleverans och skapa och hantera sina utgiftsrapporter. Godkännare kan dessutom använda den mobila arbetsytan **utgiftshantering** för att visa kostnadsrapporter som har tilldelats till dem och antingen godkänna eller avvisa de utgiftsrapporterna.
 
-Det här avsnittet innehåller information om den mobila arbetsytan för utgiftshantering som är tillgänglig för mobilappen Microsoft Dynamics 365 for Finance and Operations. Den här arbetsytan låter användarna hämta och skicka ett kvitto så att de kan bifogas till en utgiftsrapport senare. Den mobila arbetsytan låter även användare snabbt skapa en utgiftsrad med en kopplad inleverans.
 
-<a name="overview-of-the-expense-management-mobile-workspace"></a>Översikt över Mobil arbetsyta för utgiftshantering
----------------------------------------------------
+Denna mobila arbetsyta är avsedd att användas med mobilappen Microsoft Dynamics 365 for Unified Operations.
 
-Många organisationer kräver att en kopia av ett kvitto ska kopplas till en reserelaterad eller affärsrelaterad utgiftsrapport som medarbetaren skickar till dig. Den mobila arbetsytan **utgiftshantering** låter användare snabbt skapa nya utgiftsrader med ett bifogad foto på ett kvitto på den mobila enheten efter eget val. Användare kan även fånga en bild av en inleverans och sedan koppla den till en utgiftsrapport. Den mobila arbetsytan **utgiftshantering** används för att:
 
--   Ta en bild av en inleverans och överföra den till Microsoft Dynamics 365 for Finance and Operations. En användare kan sedan bifoga den bilden i en utgiftsrapport senare.
--   Överför en fil som ett insamlat kvitto. En användare kan sedan bifoga den filen i en utgiftsrapport senare.
--   Skapa en ny utgiftsrad med en kopplad inleverans. En användare kan sedan lägga till artikeln i en utgiftsrapport senare och skicka det för godkännande och återbetalning.
+## <a name="overview"></a>Översikt
 
-De andra delarna i det här avsnittet innehåller information om hur du implementerar och använder den mobila arbetsytan **utgiftshantering**.
+Många organisationer kräver att en kopia av ett kvitto ska kopplas till en reserelaterad eller affärsrelaterad utgiftsrapport som medarbetaren skickar till dig. Den mobila arbetsytan **utgiftshantering** låter användare snabbt skapa nya utgiftsrader med ett bifogad foto på ett kvitto på den mobila enheten efter eget val. Användare kan även fånga en bild av en inleverans och sedan koppla den till en utgiftsrapport. Medarbetare kan också skapa och hantera sina utgiftsrapporter och skicka dem för godkännande och ersättning genom att använda sin mobilenhet.
+
+
+Särskilt den mobila arbetsytan **Utgiftshantering** låter användarna utföra följande uppgifter:
+
+- Ta en bild av en inleverans och överföra den till Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. En användare kan sedan bifoga den bilden i en utgiftsrapport senare.
+- Överför en fil som ett insamlat kvitto. En användare kan sedan bifoga den filen i en utgiftsrapport senare.
+- Skapa en ny utgiftsrad med en kopplad inleverans. En användare kan sedan lägga till artikeln i en utgiftsrapport senare och skicka det för godkännande och återbetalning.
+
+Om du använder Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, juliuppdateringen 2017, kan du även använda följande innehåll:
+
+- Skapa en ny utgiftsrapport.
+- Koppla kreditkortstransaktioner och andra tidigare skapade utgifter i en utgiftsrapport.
+- Skapa en ny utgift för en utgiftsrapport.
+- Koppla ett kvitto till några utgifter för en utgiftsrapport, antingen med ett foto på kvittot eller genom att överföra en fil som insamlat kvitto.
+- Beroende på företagets utgiftspolicy, lägg till gäster för en utgift.
+- Beroende på företagets utgiftspolicy, specificera utgifter.
+- Skicka en utgiftsrapport för godkännande och återbetalning.
+- Godkänn eller avvisa utgiftsrapporter som du tilldelat en godkänner till.
 
 ## <a name="prerequisites"></a>Förutsättningar
-Innan du kan implementera **Mobil arbetsyta för utgiftshantering** ska du se till att systemadministratören har slutfört följande förutsättningar.
+Kraven varierar baserat på versionen av Microsoft Dynamics 365 som har distribuerats i organisationen.
+
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-update"></a>Kraven om du använder Microsoft Dynamics 365 for Finance and Operations, Enterprise edition juli 2017 uppdatering 
+Om Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (juli-uppdateringen 2017) har implementerats för din organisation måste systemadministratören publicera den mobila arbetsytan **Utgiftshantering**. Instruktioner finns i [Publicera en mobil arbetsyta](/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace).
+
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Krav om du använder Microsoft Dynamics 365 for Operations version 1611 med plattformsuppdatering 3 eller senare
+Om Microsoft Dynamics 365 for Operations version 1611 med plattformsuppdatering 3 eller senare har använts i organisationen måste systemadministratören uppfylla följande krav. 
 
 <table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Förutsättning</th>
@@ -62,77 +76,171 @@ Innan du kan implementera **Mobil arbetsyta för utgiftshantering** ska du se ti
 </thead>
 <tbody>
 <tr class="odd">
-<td>Microsoft Dynamics 365 for Operations version 1611 med plattformsuppdatering 3 eller senare måste genomföras.</td>
+<td>Implementera KB 4019015.</td>
 <td>Systemadministratör</td>
-<td>Om du inte redan använder Dynamics 365 for Finance and Operations i din organisation kan systemadministratören se <a href="/dynamics365/unified-operations/dev-itpro/deployment/deploy-demo-environment">Distribuera en demomiljö för Microsoft Dynamics 365 for Finance and Operations</a>.</td>
-</tr>
-<tr class="even">
-<td>KB 4019015 måste genomföras.</td>
-<td>Systemadministratör</td>
-<td>KB 4019015 (X++ uppdatering eller snabbkorrigering av metadata) innehåller fyra mobila arbetsytor för hantering av leveranskedjan. Om du vill implementera KB 4019015 måste systemadministratören göra följande:
+<td>KB 4019015 är X ++ uppdatering eller snabbkorrigering av metadata som innehåller den mobila arbetsytan för <strong>Utgiftshantering</strong>. Om du vill implementera KB 4019015 måste systemadministratören göra följande.
 <ol>
-<li>Hämta KB 4019015 från Microsoft Dynamics Lifecycle Services (LCS).</li>
+<li><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/download-hotfix-lcs">Hämta snabbkorrigering av metadata från Microsoft Dynamics AX Lifecycle Services(LCS)</a>.</li>
 <li><a href="/dynamics365/unified-operations/dev-itpro/migration-upgrade/install-metadata-hotfix-package">Snabbkorrigering av metadata</a>.</li>
 <li><a href="/dynamics365/unified-operations/dev-itpro/deployment/create-apply-deployable-package">Skapa ett driftfärdigt paket</a> som innehåller modellerna <strong>ApplicationSuite</strong> och modellen <strong>ExpenseMobile</strong> och överför sedan det driftfärdiga paketet till LCS.</li>
-<li><a href="/dynamics365/unified-operations/dev-itpro/deployment/apply-deployable-package-system">Koppla det driftfärdiga paketet</a> till Finance and Operations-systemet.</li>
+<li><a href="/dynamics365/unified-operations/dev-itpro/deployment/apply-deployable-package-system">Tillämpa ett distribuerbart paket</a></li>
 </ol></td>
 </tr>
-<tr class="odd">
-<td><strong>Mobil arbetsyta för utgiftshantering</strong> måste publiceras i mobilappen för Finance and Operations.</td>
+<tr class="even">
+<td>Publicera mobila arbetsytan <strong>Utgiftshantering</strong>.</td>
 <td>Systemadministratör</td>
-<td><ol>
-<li>Starta Finance and Operations i din webbläsare.</li>
-<li>På sidan <strong>systemparametrar</strong> anger du <strong>Hantera mobila arbetsområden</strong>.</li>
-<li>Välj <strong>Mobil arbetsyta för utgiftshantering</strong></li>
-<li>Klicka på <strong>Publicera mobil arbetsyta</strong>.</li>
-</ol></td>
+<td>Se <a href="/dynamics365/unified-operations/dev-itpro/mobile-apps/publish-mobile-workspace">Publicera en mobil arbetsyta</a>.</td>
 </tr>
 </tbody>
 </table>
 
-## <a name="download-and-install-the-finance-and-operations-mobile-app"></a>Hämta och installera mobilappen Finance and Operations
-Hämta och installera mobilappen Finance and Operations från din mobilappsbutik.
+## <a name="download-and-install-the-dynamics-365-for-operations-mobile-app"></a>Hämta och installera mobilappen Dynamics 365 for Operation.
+Hämta och installera mobilappen Dynamics 365 for Unified Operations:
 
--   För Android - [Finance and Operations i Google Play Store](https://play.google.com/store/apps/details?id=com.microsoft.dynamics365.operations.mobile)
--   För iPhone: [Finance and Operations iTunes apps store](https://itunes.apple.com/us/app/dynamics-365-for-operations/id1180836730?mt=8)
+- [För Android-telefoner](https://go.microsoft.com/fwlink/?linkid=850662)
+- [För iPhones](https://go.microsoft.com/fwlink/?linkid=850663)
 
-## <a name="sign-in-to-the-finance-and-operations-mobile-app"></a>Logga in på mobilappen Finance and Operations
-1.  Starta appen i din mobila enhet.
-2.  Ange webbadressen för Finance and Operations
-3.  Ange ett företag att logga in på. Ange till exempel **USMF**.
-4.  Första gången du loggar in uppmanas du ange användarnamn och lösenord för ditt Finance and Operations-konto. Ange dina autentiseringsuppgifter.
-5.  När du loggar in visas tillgängliga arbetsytor för ditt företag. Observera att om systemadministratören publicerar en ny arbetsyta senare kan du dra om du vill uppdatera listan över mobila arbetsytor. 
+## <a name="sign-in-to-the-mobile-app"></a>Logga in på mobilappen
+1. Starta appen i din mobila enhet.
+2. Ange din webbadress för Dynamics 365.
+4. Första gången du loggar in uppmanas du ange användarnamn och lösenord. Ange dina autentiseringsuppgifter.
+5. När du loggar in visas tillgängliga arbetsytor för ditt företag. Observera att om systemadministratören publicerar en ny arbetsyta senare kan du dra om du vill uppdatera listan över mobila arbetsytor.
+
 
 [![Dra för att uppdatera](./media/pull-to-refresh-list-of-workspaces-183x300.png)](./media/pull-to-refresh-list-of-workspaces.png)
 
 ## <a name="capture-a-receipt-by-using-the-expense-management-mobile-workspace"></a>Skapa en inleverans med hjälp av mobil arbetsyta för utgiftshantering
-1.  På din mobila enhet väljer du arbetsytan **Utgiftshantering**.
-2.  Välj **Samla in kvitto**.
-3.  Välj **ta foto** eller **Välj bild**.
-4.  Om du har valt **ta foto**, gör du följande:
-    1.  Du förflyttas till kameran på din mobila enhet så att du kan ta ett foto på kvittot. När du är klar med en bild klickar du på **OK** för att acceptera fotot.
-    2.  Valfritt: Ange ett namn för bilden och ange eventuella noteringar.
 
-     **Eller:**  Om du valde **Välj bild**, följ då dessa steg:
-    1.  Välj en bild i listan.
-    2.  Valfritt: Ange ett namn för bilden och ange eventuella noteringar.
+1. På din mobila enhet öppnar du arbetsytan **Utgiftshantering**.
+2. Välj **Samla in kvitto**.
+3. Välj **ta foto** eller **Välj bild**.
+4. Gör något av följande:
 
-5.  Välj **Klar**.
+    - Om du har valt **ta foto**, gör du följande:
 
-## <a name="quick-expense-entry-by-using-the-expense-management-mobile-workspace"></a>Snabb utgiftspost med mobil arbetsyta för utgiftshantering
-1.  På din mobila enhet väljer du arbetsytan **Utgiftshantering**.
-2.  Välj **snabb utgiftspost**.
-3.  Välj kategori för utgiften. Du kan se en lista över de utgiftskategorier som laddas i ditt program för användning offline. Upp till 50 objekt laddas som standard, men en utvecklare kan ändra detta antal. Mer information bör utvecklare finns [Den mobila plattformen för Finance and Operations](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform). Om kategorin inte finns i listan väljer du **Sök** för att utföra en onlinesökning i Finance and Operations. Sök efter kostnadskategori eller växla om du vill söka efter utgiftstyp.
-4.  Ange transaktionsdatum för utgiften.
-5.  Valfritt: Ange handlare för utgiften.
-6.  Ange belopp för utgiften.
-7.  Välj valutakod för utgiften. Du kan se en lista över de valutakoder som laddas i ditt program för användning offline. Upp till 400 valutor laddas som standard, men en utvecklare kan ändra detta antal. Mer information bör utvecklare finns [Den mobila plattformen för Finance and Operations](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform). Om valutan inte finns i listan väljer du **Sök** för att utföra en onlinesökning i Finance and Operations. Sök efter valuta eller växla om du vill söka efter namnet.
-8.  Välj **ta foto** eller **Välj bild**.
-9.  Om du valde **Ta foto** förflyttas du till kameran på din mobila enhet så att du kan ta ett foto på kvittot. När du är klar med en bild klickar du på **OK** för att acceptera fotot.  eller om du har valt **Välj bild**, markerar du en bild i listan.
+        1. Du förflyttas till kameran på din mobila enhet så att du kan ta ett foto på kvittot. När du är klar med en bild klickar du på **OK** för att acceptera fotot.
+        2. Valfritt: Ange ett namn för bilden och ange eventuella noteringar.
+
+    - Eller om du har valt **Välj bild**, gör du följande:
+
+        1. Välj en bild i listan.
+        2. Valfritt: Ange ett namn för bilden och ange eventuella noteringar.
+
+5. Välj **Klar**.
+
+## <a name="quickly-enter-expenses-by-using-the-expense-management-mobile-workspace"></a>Snabb utgiftspost med mobil arbetsyta för utgiftshantering
+1. På din mobila enhet öppnar du arbetsytan **Utgiftshantering**.
+2. Välj **snabb utgiftspost**.
+3. Välj kategori för utgiften. Du kan se en lista över de utgiftskategorier som laddas i ditt program för användning offline. 50 objekt laddas som standard, men en utvecklare kan ändra detta antal. Mer information för utvecklare finns under [mobil plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform). Om kategorin inte finns i listan, välj **Sök** för att göra en onlinesökning. Sök efter kostnadskategori eller växla om du vill söka efter utgiftstyp.
+4. Ange transaktionsdatum för utgiften.
+5. Valfritt: Ange handlare för utgiften.
+6. Ange belopp för utgiften.
+7. Välj valutakod för utgiften. Du kan se en lista över de valutakoder som laddas i ditt program för användning offline. Upp till 400 valutor laddas som standard, men en utvecklare kan ändra detta antal. Mer information för utvecklare finns under [mobil plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform). Om valutan inte finns i listan, välj **Sök** för att göra en onlinesökning. Sök efter valuta eller växla om du vill söka efter namnet.
+8. Välj **ta foto** eller **Välj bild**.
+9. Gör något av följande:
+
+    - Om du valde **Ta foto** förflyttas du till kameran på din mobila enhet så att du kan ta ett foto på kvittot. När du är klar med en bild klickar du på **OK** för att acceptera fotot.
+    - eller om du har valt **Välj bild**, markerar du en bild i listan.
+
 10. Välj **Klar**.
 
+## <a name="approve-an-expense-report-by-using-the-expense-management-mobile-workspace-if-you-use-the-july-2017-update"></a>Godkänn en utgiftsrapport med hjälp av mobilaarbetsytan utgiftshantering (om du använder uppdateringen juli 2017)
+1. På din mobila enhet öppnar du arbetsytan **Utgiftshantering**.
+2. **Godkännanden av utgifter** visar antalet utgiftsrapporter som har tilldelats dig för godkännande. Antalet uppdateras ungefär var 30:e minut. Välj **Utgiftsgodkännanden**.
 
+    Listan över utgiftsrapporter som har tilldelats dig för godkännande visas.
+    
+3. Välj en utgiftsrapport att visa utgiftsinformationen för.
+4. Välj en utgift att visa informationen för. Den information som visas för en utgift inkluderar alla inleveranser, gäster och specifikationsdetaljer.
+5. Tillbaka på sidan **Reseräkning** väljer du att godkänna eller avvisa utgiftsrapporten.
+6. Ange eventuella kommentarer för godkännande av åtgärden.
+7. Välj **Klar**.
 
+## <a name="create-a-new-expense-report-and-submit-it-for-approval-by-using-the-expense-management-mobile-workspace-if-you-use-the-july-2017-update"></a>Skapa en ny utgiftsrapport och skicka den för godkännande med hjälp av mobila arbetsytan utgiftshantering (om du använder uppdateringen juli 2017)
+1. På din mobila enhet öppnar du arbetsytan **Utgiftshantering**.
+2. Välj **Utgiftspost**.
+3. Välj **ny rapport**, eller markera en befintlig utgiftsrapport i listan.
+4. För nya utgiftsrapporter anger du syftet och eventuell ytterligare information som är tillgänglig. Informationen beror på sättet som utgiftshantering har konfigurerats för företaget.
+5. Välj **Klar**.
+6. Lägg till befintlig utgifter, till exempel kreditkortstransaktioner till utgiftsrapporten och markera **bifoga**.
+7. Välj en eller flera utgifter i listan.
+8. Välj **Klar**.
+9. För att lägga till en ny utgift i utgiftsrapporten, välj **ny utgift**.
+10. Välj kategori för utgiften. Du kan se en lista över de utgiftskategorier som laddas i ditt program för användning offline. 50 objekt laddas som standard, men en utvecklare kan ändra detta antal. Mer information för utvecklare finns under [mobil plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform). Om kategorin inte finns i listan, välj **Sök** för att göra en onlinesökning. Sök efter kostnadskategori eller växla om du vill söka efter utgiftstyp.
+11. Valfritt: Ange handlare för utgiften.
+12. Ange transaktionsdatum för utgiften.
+13. Ange belopp för utgiften.
+14. Välj valutakod för utgiften. Du kan se en lista över de valutakoder som laddas i ditt program för användning offline. Upp till 400 valutor laddas som standard, men en utvecklare kan ändra detta antal. Mer information för utvecklare finns under [mobil plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform). Om valutan inte finns i listan, välj **Sök** för att göra en onlinesökning. Sök efter valuta eller växla om du vill söka efter namnet.
+15. Välj **Klar**.
+16. Lägg till fler detaljer till utgiften genom att markera **lägg till fler detaljer**. Fälten som är tillgängliga beror på konfigurationen av utgiftshantering för ditt företag.
+17. Om företagets policy kräver inleverans för utgiften markerar du **inleveranser**, och gör sedan följande:
 
+    1. Välj **Hämta inleverans** eller **koppla inleverans**.
+    2. Gör något av följande:
 
+        - Eller om du har valt **Samla in inleverans**, gör du följande:
+
+            1. Välj **ta foto** eller **Välj bild**.
+            2. Gör något av följande:
+
+                - Om du har valt **ta foto**, gör du följande:
+
+                    1. Du förflyttas till kameran på din mobila enhet så att du kan ta ett foto på kvittot. När du är klar med en bild klickar du på **OK** för att acceptera fotot.
+                    2. Valfritt: Ange ett namn för bilden och ange eventuella noteringar.
+
+                - Eller om du har valt **Välj bild**, gör du följande:
+
+                    1. Välj en bild i listan.
+                    2. Valfritt: Ange ett namn för bilden och ange eventuella noteringar.
+
+            3.  Välj **Klar**.
+
+        - Eller om du har valt **Bifoga inleverans**, gör du följande:
+
+            1.  Välj en eller flera bilder i listan.
+            2.  Välj **Klar**.
+
+    3. För att återgå till utgiftsdetaljerna, klicka på knappen **Bakåt** .
+
+18. Om företagets policy kräver gäster för utgiften markerar du **gäster**, och gör sedan följande:
+
+    1. Välj **gäst**, **tidigare gäster**, eller **medarbetare**.
+    2. Gör något av följande:
+
+        - Om du har valt **gäst**, gör du följande:
+
+            1. Ange namnet på gästen
+            2. Valfritt: Ange organisation och/eller land för gästen.
+            3. Valfritt: Ange gästens titel.
+            4. Välj **Klar**.
+
+        - Eller om du har valt **Tidigare gäst**, gör du följande:
+
+            1. Välj en eller flera tidigare gäster i listan. Du kan visa en lista med tidigare gäster som du har lagt till tidigare kostnadsrapporter som läses in i ditt program för användning offline. 50 objekt laddas som standard, men en utvecklare kan ändra detta antal. Mer information för utvecklare finns under [mobil plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform). Om dina tidigare gäster inte finns i listan, välj **Sök** för att göra en onlinesökning. Sök efter namn eller gå till sök efter organisation, land eller titel.
+            2. Välj **Klar**.
+
+        - Om du har valt **Medarbetare**, gör du följande:
+
+            1. Välj en eller flera medarbetare i listan. Du kan se en lista över medarbetare som laddas i ditt program för användning offline. 50 objekt laddas som standard, men en utvecklare kan ändra detta antal. Mer information för utvecklare finns under [mobil plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform). Om medarbetare inte finns i listan, välj **Sök** för att göra en onlinesökning. Sök efter namn eller gå till sök efter företag eller titel.
+            2. Välj **Klar**.
+
+    3. För att återgå till utgiftsdetaljerna, klicka på knappen **Bakåt** .
+
+19. Om företagets policy kräver att utgiften specificeras markerar du **specificera**, och gör sedan följande:
+
+    1. Välj startdatum att specificera.
+    2. Välj **Lägg till specifikation**.
+    3. Välj underkategori för utgiftsspecifikation. Du kan se en lista över de underskategorier som laddas i ditt program för användning offline. 50 objekt laddas som standard, men en utvecklare kan ändra detta antal. Mer information för utvecklare finns under [mobil plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform). Om underkategorin inte finns i listan, välj **Sök** för att göra en onlinesökning. Sök efter underkategori för utgift.
+    4. Ange ett transaktionsbelopp för specifikationen.
+    5. Redigera transaktionsdatum om det är obligatoriskt.
+    6. Välj **Klar**.
+    7. Upprepa föregående steg tills du har lagt till alla specifikationer för det valda datumet.
+    8. För extra dagar kan du välja **kopiera till nästa dag** om du vill kopiera specifikationer till nästa dag. Alternativt kan du välja datum att specificera och lägga till specifikationer som du gjorde för det första datumet.
+    9. När du är klar med att specifiera utgifterna väljer du knappen **tillbaka** för att gå tillbaka till utgiftsinformationen.
+
+20. Klicka på knappen **Tillbaka** för att gå tillbaka till sidan **Utgiftsrapport**.
+21. Upprepa föregående steg tills du har lagt till alla utgifter.
+22. Välj **skicka**.
+23. Ange eventuella kommentarer för godkännaren.
+24. Välj **Klar**.
 

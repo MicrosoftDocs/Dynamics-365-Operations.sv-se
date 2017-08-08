@@ -10,19 +10,19 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: smmContactPerson, VendBankAccounts, VendTable
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: bis
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 191053
 ms.assetid: 06168199-7c54-40e9-a038-4eb274ca958d
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 4c97f11fa85b8eee54daea8ccaa183859a89fe7f
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 3c3c215dbc64c3b823ab8537b66f72d7d7fdf5c1
 ms.contentlocale: sv-se
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -94,6 +94,18 @@ Du kan spärra en leverantör för olika transaktionstyper. Följande alternativ
 -   **Aldrig** – Leverantören spärras aldrig för inaktivitet.
 
 När du spärrar en leverantör kan du också ange en orsak och ett datum då spärrstatusen avslutas. Om du inte anger något slutdatum, varar leverantörens spärrade status på obestämd tid.
+
+Du kan massimportera uppdateringar som inte är spärrade till **alla** för leverantörer baserat på de valda kriterierna på sidan **inaktivering av leverantör** och tilldela en orsak till varför leverantören är spärrad.
+
+Följande kriterier används för att inkludera leverantörer som har varit inaktiva under en period, inkludera eller undanta leverantörer som är anställda eller utelämna leverantörer under en respittid före nästa spärr.
+
+- Baserat på hur många dagar som du anger i fältet **i aktivitetsperiod** på sidan **inaktivering av leverantör** beräknar programmet det senaste datumet då leverantören kan ha någon aktivitet som ska anses vara inaktiv. Det vill säga det aktuella datumet minus antalet dagar du anger. Om det finns en eller flera fakturor för leverantören där datumet är senare än det senaste beräknade datumet undantas leverantören från inaktiveringen. Detta kontrolleras även om leverantören har betalningar efter detta datum, öppnar inköpsrekvisitioner, öppnar inköpsorder, begär offerter eller svar.
+- Antal dagar i fältet **Respittid före nästa spärr** används för att beräkna det senaste datumet för respittid. Det vill säga det aktuella datumet minus antalet dagar du anger. Detta gäller endast leverantörer som tidigare har inaktiverats. När det gäller en tidigare inaktivering kontrollerar programmet historiken för andra förekomster av inaktivering för leverantören och kontrollerar om senaste inaktiveringen uppstått före det senaste datumet för respittid. Om så är fallet inkluderas leverantören i inaktiveringsprocessen.
+- Parametern **inkludera medarbetare** refererar till leverantörer som är kopplade till en medarbetare. Du kan ange om du vill inkludera dessa medarbetare.
+
+Denna process utesluter alltid leverantörer där värdet i fältet **leverantörsspärr** är **aldrig**.
+
+Leverantörer som går igenom valideringen placeras i spärr vilket anger fältvärdet **leverantörsspärr** till **alla** och **orsak** till vad som har valts. En post i spärrningshistoriken skapas för leverantören.
 
 ## <a name="vendor-invoice-account"></a>Leverantörsfakturakonto
 Du kan ange ett faktureringskonto på leverantörsposten om mer än en leverantör har samma faktureringsadress, eller om en leverantör faktureras via en tredje part. Fakturakontot är det konto till vilket fakturabeloppet krediteras när du skapar en leverantörsfaktura från en inköpsorder. Om du inte anger ett fakturakonto på leverantörsposten används leverantörskontot som fakturakonto.

@@ -3,26 +3,26 @@ title: "Skapa leverantörsbetalningar med ett betalningsförslag"
 description: "Detta avsnitt ger en översikt över alternativen för betalningsförslag och inkluderar några exempel som visar hur betalningsförslag fungerar. Betalningsförslag används ofta för att skapa leverantörsbetalningar eftersom frågan kan användas för att snabbt välja leverantörsfakturor för betalning, baserat på kriterier som förfallodatum och kassarabatt."
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/17/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: LedgerJournalTransVendPaym
 audience: Application User
+ms.reviewer: twheeloc
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 14312
 ms.assetid: 585d5b0b-1b79-4a03-ab18-528918070377
 ms.search.region: Global
 ms.author: kweekley
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: b351ea58a25c763dcf90ff1c61e0e3b3cba6c34a
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: aac70abc25c45ef4479425cdb648f4450d5db2dc
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -39,8 +39,8 @@ Betalningsförslagfrågan innehåller olika flikar, som var och en har olika alt
 
 ## <a name="parameters"></a>Parametrar
 -   **Välj fakturor efter** – Fakturor inom det datumintervall som har angetts i fälten **Startdatum** och **Slutdatum** kan väljas efter förfallodatum, kassarabattdatum eller båda. Om du använder kassarabattdatumet söker systemet först sker efter fakturor som har ett kassarabattdatum mellan start- och slutdatum. Systemet avgör sedan om fakturan är valbar för kassarabatten genom att använda sessiondatumet för att säkerställa att kassarabattdatum inte redan har passerat.
--   **Från-datum** och**Till-datum** - Fakturor som har ett förfallodatum eller kassarabattdatum inom detta datumintervall, markeras för betalning.
--   **Betalningsdatum** – Om ett datum anges, skapas alla betalningar på detta datum. Fältet **Tidigaste betalningsdatum** ignoreras.
+-   **Från-datum** och **Till-datum** - Fakturor som har ett förfallodatum eller kassarabattdatum inom detta datumintervall, markeras för betalning.
+-   **Betalningsdatumet** – detta används endast när fältet **Period** på betalningsmetoden är inställt på **totala**. Om ett datum anges, skapas alla betalningar på detta datum. Fältet **Tidigaste betalningsdatum** ignoreras.
 -   **Tidigaste betalningsdatum** – Ange det tidigaste betalningsdatumet. Till exempel anger fälten **Startdatum** och **Slutdatum** ett intervall från den 1 september till den 10 september, och det tidigaste betalningsdatumet är den 5 september. I detta fall kommer samtliga fakturor med ett förfallodatum mellan den 1 september och den 5 september att få betalningsdatumet 5 september. Alla fakturor som har ett förfallodatum mellan den 5 september och den 10 september har ett betalningsdatum som motsvarar förfallodatumet för respektive faktura.
 -   **Beloppsgräns** – Ange det högsta totala beloppet för alla betalningar.
 -   **Skapa betalningar utan att förhandsgranska faktura** – Om du ställer in detta alternativ på **Ja** kommer betalningarna att skapas direkt på sidan **Leverantörsbetalningar**. Sidan **Betalningsförslag** hoppas över. Detta innebär att betalningarna skapas snabbare. Betalningar kan fortfarande ändras från sidan **Leverantörsbetalningar**. Alternativt kan du gå tillbaka till sidan **Betalningsförslag** genom att använda knappen **Redigera fakturor för vald betalning**.

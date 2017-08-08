@@ -1,7 +1,7 @@
 ---
 title: "Ställ in en extern katalog för PunchOut eProcurement"
 description: "Det här avsnittet beskriver hur en extern katalog eller PunchOut-katalog används för att samla in offertinformation från en leverantör och lägga till den i en rekvisition."
-author: BibiSp
+author: mkirknel
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,19 +10,19 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PurchTable, PurchVendorPortalRequests
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: bis
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 30211
 ms.assetid: 3c7e0e1c-703c-4bbf-b90c-84d29a131360
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
-ms.openlocfilehash: 2d853cb963471f81d7a2a09a0f7913722de8a417
+ms.translationtype: HT
+ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
+ms.openlocfilehash: 4c89f6f168825f7767b836be09fa73b8659b00c6
 ms.contentlocale: sv-se
-ms.lasthandoff: 06/20/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -40,9 +40,9 @@ Den externa katalogen bör aktivera en medarbetare som registrerar en inköpsrek
 
 ### <a name="to-set-up-an-external-vendor-catalog-complete-the-following-tasks"></a>Om du vill ställa in en extern leverantörskatalog måste du göra följande:
 
-1. Ställa in en kategorihierarki för anskaffning. För mer information, se [Ställ in policyer för anskaffningskategorihierarkier](/https://ax.help.dynamics.com/en/wiki/set-up-policies-for-procurement-category-hierarchies/).
-2. Registrera leverantören i Finance and Operations. Innan du kan ställa in konfigurationerna för åtkomst till en extern leverantörskatalog måste du ställa in leverantören och leverantörskontakten i Microsoft Dynamics 365. Dessutom måste leverantörens externa katalog läggs till i den valda anskaffningkategorin. Mer information om hur du registrerar leverantörer i Microsoft Dynamics 365 finns i [Hantera leverantörssamarbetesanvändare](/procurement/manage-vendor-collaboration-users.md). Information om hur du tilldelar en leverantörer till en anskaffningskategori finns i [Godkänna leverantörer för specifika anskaffningskategorier](/https://ax.help.dynamics.com/en/wiki/approve-vendors-for-specific-procurement-categories/).
-3. Kontrollera att måttenheterna och valutan som leverantören använder har ställts in. Information om hur du skapar en måttenhet finns i [Skapa måttenheter](/https://ax.help.dynamics.com/en/wiki/manage-unit-of-measure/).
+1. Ställa in en kategorihierarki för anskaffning. För mer information, se [Ställ in policyer för anskaffningskategorihierarkier](/dynamics365/unified-operations/supply-chain/procurement/tasks/set-up-policies-procurement-category-hierarchies).
+2. Registrera leverantören i Finance and Operations. Innan du kan ställa in konfigurationerna för åtkomst till en extern leverantörskatalog måste du ställa in leverantören och leverantörskontakten i Microsoft Dynamics 365. Dessutom måste leverantörens externa katalog läggs till i den valda anskaffningkategorin. Mer information om hur du registrerar leverantörer i Microsoft Dynamics 365 finns i [Hantera leverantörssamarbetesanvändare](manage-vendor-collaboration-users.md). Information om hur du tilldelar en leverantörer till en anskaffningskategori finns i [Godkänna leverantörer för specifika anskaffningskategorier](/dynamics365/unified-operations/supply-chain/procurement/tasks/approve-vendors-specific-procurement-categories).
+3. Kontrollera att måttenheterna och valutan som leverantören använder har ställts in. Information om hur du skapar en måttenhet finns i [Hantera måttenheter](/dynamics365/unified-operations/supply-chain/pim/tasks/manage-unit-measure).
 4. Konfigurera den externa leverantörskatalogen med hjälp av kraven för webbplatsen för din externa leverantörskatalog. Mer information om denna uppgift finns i nästa avsnitt.
 5. Testa leverantörens externa katalogkonfigurationer för att bekräfta att inställningarna är korrekta och att du kan komma åt leverantörens externa katalog. Använd åtgärden **Validera inställningar** för att validera meddelandet om begäran om inställning som du har definierat. Det här meddelandet ska åstadkomma att leverantörens externa katalogwebbplats öppnas i ett webbläsarfönster. Vid validering kan du inte beställa artiklar och tjänster från leverantören. Om du vill beställa artiklar och tjänster måste du använda leverantörens katalog från en inköpsrekvisition.
 6. Aktivera den externa katalogen med hjälp av knappen **Aktivera katalog** på sidan **Externa kataloger**. Den externa katalogen måste aktiveras innan anställda kan använda den. Du kan när som helst inaktivera den externa katalogen.

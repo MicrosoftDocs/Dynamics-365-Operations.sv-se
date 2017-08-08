@@ -10,19 +10,19 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PurchReqAuthorization, WorkflowParticipantExpenToken
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 2234
 ms.assetid: dad3ba5a-2892-45d2-874a-300896f59b34
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 2d28e92fa853d155bc62932625e0e714cdf4edcc
+ms.translationtype: HT
+ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
+ms.openlocfilehash: 95d1d3a34728aab38f77635ae68bea16b08f6587
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -105,12 +105,12 @@ Det är inte nödvändigt att ställa in en omkostnadsgranskarkonfigurationen. D
 
 Du kan ställa in omkostnadgranskarna på sidan **Inköpsrekvisitionomkostnadgranskare**. När du skapar en omkostnadgranskarekonfiguration, måste du ange standardvärden för varje juridisk person som angetts för din organisation. För rekvisitioner som tilldelats ett projekt, kan du ange rollen som ansvarar för att granska rekvisitioner: Projektledare,Projektstyrenhet eller Projektförsäljningchef. Expenditures skickas till användaren som tilldelats den angivna roll. Du kan också skicka omkostnaden för den ekonomiska dimensionägaren, genom att välja lämpligt alternativ för ekonomisk dimension på fliken **Organisationsfördelningar**.  
 
-Om du vill använda en av omkostnadgranskarna, som ställs in i ett arbetsflöde måste du ange alternativet **Typ av deltagare** till**Deltagare vid omkostnad** i egenskaperna**Tilldelning** för det relevanta arbetsflödeselementet.
+Om du vill använda en av omkostnadgranskarna, som ställs in i ett arbetsflöde måste du ange alternativet **Typ av deltagare** till **Deltagare vid omkostnad** i egenskaperna **Tilldelning** för det relevanta arbetsflödeselementet.
 
 <a name="see-also"></a>Se även
 --------
 
-[Skapa en rekvisition för förbrukning (uppgiftsguide)](https://ax.help.dynamics.com/en/wiki/create-a-requisition-for-consumption/)
+[Skapa en rekvisition för förbrukning (uppgiftsguide)](/dynamics365/unified-operations/supply-chain/procurement/tasks/create-requisition-consumption)
 
 [Definiera affärsprocessarbetsflöden för inköpsrekvisitioner](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions)
 

@@ -18,13 +18,12 @@ ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: conradv
 ms.dyn365.ops.intro: Version 1611
-ms.search.validFrom: 2016-11-30
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: e520c292b7350f332649f23fb4232e7ecd191776
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.translationtype: HT
+ms.sourcegitcommit: 9ea9eb66abf7898ce735e1204259fcc9b9523c52
+ms.openlocfilehash: 404803c6317b2aeda78de86d4ba11987b2a8cf65
 ms.contentlocale: sv-se
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -35,7 +34,7 @@ ms.lasthandoff: 06/13/2017
 
 Det här avsnittet förklarar kostnadsredovisning med bakåtavräkning som används för Lean manufacturing. 
 
-Kostnadsredovisning för Lean manufacturing tillåter att produktionsflödet använder den metod för kostnadsackumulering som kallas kostnadsredovisning med bakåtavräkning. I kostnadsredovisning med bakåtavräkning ackumuleras de direktmaterial som förbrukas i produktionsflödets kostnadskonto för pågående arbete (PIA). Lagermodellgruppen för standardkostnader används. Produkterna som inlevereras från produktionsflödet dras från PIA till deras standardkostnad. Den största skillnaden mellan bakåtavräkning och standardkostnad är att för bakåtavräkning beräknas inte avvikelser per kanban eller färdig produkt. I stället beräknas avvikelser per produktionsflöde under en period. Denna metod innebär ett riktigt resurssnålt koncept för rapportering av materialförbrukning. Dedikerade plockade kvantiteter rapporteras inte till en kanban eller tillverkningsorder. I stället mellanlagras hela batchar eller materialhanteringsenheter till produktionsflödet. När batchar eller materialhanteringsenheter registrerats som tomma, förklaras de som förbrukade. Avancerad förbrukning kan användas, beroende på [konfigurationen av produktionsflödet](http://ax.help.dynamics.com/en/wiki/lean-manufacturing-modeling-the-lean-organization/). Innan du kan använda avancerad förbrukning, måste organisationer tillåta att de låter material försvinna i PIA för produktionsflödet. Den periodiska bakåtavräkningen bestämmer det effektiva värdet för PIA i slutet av perioden. Beslutet baseras på kanban-materialhanteringsenheten och kanban-jobbstatus. Avvikelser mellan effektiva värden och faktiska PIA-värden per kostnadsgrupp och artikel bokförs och visas som avvikelser.
+Kostnadsredovisning för Lean manufacturing tillåter att produktionsflödet använder den metod för kostnadsackumulering som kallas kostnadsredovisning med bakåtavräkning. I kostnadsredovisning med bakåtavräkning ackumuleras de direktmaterial som förbrukas i produktionsflödets kostnadskonto för pågående arbete (PIA). Lagermodellgruppen för standardkostnader används. Produkterna som inlevereras från produktionsflödet dras från PIA till deras standardkostnad. Den största skillnaden mellan bakåtavräkning och standardkostnad är att för bakåtavräkning beräknas inte avvikelser per kanban eller färdig produkt. I stället beräknas avvikelser per produktionsflöde under en period. Denna metod innebär ett riktigt resurssnålt koncept för rapportering av materialförbrukning. Dedikerade plockade kvantiteter rapporteras inte till en kanban eller tillverkningsorder. I stället mellanlagras hela batchar eller materialhanteringsenheter till produktionsflödet. När batchar eller materialhanteringsenheter registrerats som tomma, förklaras de som förbrukade. Avancerad förbrukning kan användas, beroende på [konfigurationen av produktionsflödet](/dynamics365/unified-operations/supply-chain/production-control/lean-manufacturing-modeling-lean-organization). Innan du kan använda avancerad förbrukning, måste organisationer tillåta att de låter material försvinna i PIA för produktionsflödet. Den periodiska bakåtavräkningen bestämmer det effektiva värdet för PIA i slutet av perioden. Beslutet baseras på kanban-materialhanteringsenheten och kanban-jobbstatus. Avvikelser mellan effektiva värden och faktiska PIA-värden per kostnadsgrupp och artikel bokförs och visas som avvikelser.
 
 ## <a name="configuring-backflush-costing"></a>Konfigurera kostnadsredovisning med bakåtavräkning
 Om du vill aktivera kostnadsredovisning måste du slutföra stegen nedan:

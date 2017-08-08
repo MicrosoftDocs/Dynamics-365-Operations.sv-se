@@ -19,11 +19,11 @@ ms.search.industry: Manufacturing
 ms.author: yuyus
 ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 0bad513590ec0b0d495664d81f2e5f92e162bdd7
+ms.translationtype: HT
+ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
+ms.openlocfilehash: dd6f993e5c5fe343c6484383ff097f87f5dbf894
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -44,7 +44,7 @@ Registerbegränsningar anger de kombinationer av värden som tillåts för attri
 
 ### <a name="example-of-a-table-constraint"></a>Exempel på registerbegränsning.
 
-I det här exemplet visas hur du kan begränsa konfigurationen för en högtalare till specifika kabinettfinish och framdelar. Den första tabellen visar storlekar och typer av kabinettfinish och framdelar som är allmänt tillgängliga för konfiguration. Du definierar värdena för attributtyperna **Kabinettfinish**och **Frontgaller**.
+I det här exemplet visas hur du kan begränsa konfigurationen för en högtalare till specifika kabinettfinish och framdelar. Den första tabellen visar storlekar och typer av kabinettfinish och framdelar som är allmänt tillgängliga för konfiguration. Du definierar värdena för attributtyperna **Kabinettfinish** och **Frontgaller**.
 
 | Attributtyp | Värden                      |
 |----------------|-----------------------------|
@@ -88,7 +88,7 @@ När du konfigurerar en produkt, genom att använda följande begränsninginstä
 (Färg == "Svart" & (storlek == "30" | storlek == "50")) | (färg == "Rör" & storlek = "20")
 
 ## <a name="should-i-use-operators-or-infix-notation-when-i-write-expression-constraints"></a>Ska jag använda operatorer eller infixnotation när jag skriver uttrycksbegränsningar?
-Du kan ange ett begränsningsuttryck, antingen genom att använda de tillgängliga prefixoperatorerna eller genom att använda infixnotation. För operatorerna **Min**, **Max**, och **Abs**kan du inte använda en infixnotation. Dessa operatorer inkluderas som standard i de flesta programspråk.
+Du kan ange ett begränsningsuttryck, antingen genom att använda de tillgängliga prefixoperatorerna eller genom att använda infixnotation. För operatorerna **Min**, **Max**, och **Abs** kan du inte använda en infixnotation. Dessa operatorer inkluderas som standard i de flesta programspråk.
 
 ## <a name="what-operators-and-infix-notation-can-i-use-when-i-write-expression-constraints"></a>Vilka operatorer eller infixnotationer kan jag använda när jag skriver uttrycksbegränsningar?
 I följande tabeller visas operatorerna och infixnotationerna som du kan använda när du skriver en uttrycksbegränsning för en komponent i en produktkonfigurationsmodell. I exemplen i den första tabellen ser du hur du kan skriva ett uttryck genom att använda infixnotation eller operatorer.
@@ -249,9 +249,9 @@ Du kan inte använda reserverade nyckelord som solvernamn för attribut, kompone
 <a name="see-also"></a>Se även
 --------
 
-[Skapa en uttrycksbegränsning (Uppgiftsguide)](http://ax.help.dynamics.com/en/wiki/create-an-expression-constraint/)
+[Skapa en uttrycksbegränsning (uppgiftsguide)(/dynamics365/unified-operations/supply-chain/pim/tasks/add-expression-constraint-product-configuration-model)
 
-[Lägga till en beräkning i en produktkonfigurationsmodell (uppgiftsguide)](http://ax.help.dynamics.com/en/wiki/add-a-calculation-to-a-product-configuration-model/)
+[Lägga till en beräkning i en produktkonfigurationsmodell (uppgiftsguide)](/dynamics365/unified-operations/supply-chain/pim/tasks/add-calculation-product-configuration-model)
 
 
 

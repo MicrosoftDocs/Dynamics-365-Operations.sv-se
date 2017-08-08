@@ -9,19 +9,19 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: Operations, Core
+ms.reviewer: yuyus
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 221264
 ms.assetid: dde49743-1541-4353-a030-63ca3069cd7d
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: b0aefc62f2d54da963f03dc74d492260722cd451
-ms.openlocfilehash: aabb8277218895566edada3c74d99c02a83dae1e
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: cbd099403f48b502ca74bcb38ae12decedb8f2da
 ms.contentlocale: sv-se
-ms.lasthandoff: 06/15/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -36,7 +36,7 @@ Modulen **Leverantörssamarbete** vänder sig till leverantörer som inte har el
 
 För mer information om hur leverantörer kan använda leverantörssamarbeten i faktureringsprocessen, se [Arbetsyta för leverantörssamarbetesfakturering](/dynamics365/unified-operations/financials/accounts-payable/vendor-portal-invoicing-workspace). För mer information hur du reserverar nya användare av leverantörssamarbeten, se [Hantera användare av leverantörssamarbete](manage-vendor-collaboration-users.md).
 
-För mer information om hur leverantörer kan använda leverantörssamarbeten i faktureringsprocessen, se [Arbetsyta för leverantörssamarbetesfakturering](/dynamics365/operations/financials/accounts-payable/vendor-portal-invoicing-workspace). 
+För mer information om hur leverantörer kan använda leverantörssamarbeten i faktureringsprocessen, se [Arbetsyta för leverantörssamarbetesfakturering](/dynamics365/unified-operations/financials/accounts-payable/vendor-portal-invoicing-workspace). 
 
 För mer information hur du reserverar nya användare av leverantörssamarbeten, se [Hantera användare av leverantörssamarbete](manage-vendor-collaboration-users.md).
 
@@ -71,7 +71,7 @@ Om du vill dela information om exempelvis enhetspris, rabatter och avgifter via 
 ## <a name="work-with-pos-when-using-vendor-collaboration"></a>Arbeta med inköpsorder när du använder leverantörssamarbeten
 ### <a name="sending-a-po-to-the-vendor"></a>Skicka en inköpsorder till leverantören
 
-Inköpsorder skapas i Finance and Operation. När inköpsordern har statusen **Godkänd** skickar du den till leverantören med hjälp av åtgärden **Skicka för bekräftelse** på sidan **Inköpsorder**. Statusen för inköpsordern ändras till i **In External Review**. När inköpsordern har skickats kan leverantören se den på sidan **Inköpsorder för granskning** i gränssnittet leverantörssamarbete. Leverantören kan sedan acceptera eller avvisa ordern eller föreslå ändringar. Leverantören kan också lägga till kommentarer för att kommunicera information som ändringar i IO:n. Om du vill dra säljarens uppmärksamhet till en ny inköpsorder kan du även använda utskriftshanteringssystemet för att skicka IO:n via e-post.
+Inköpsorder skapas i Finance and Operation. När inköpsordern har statusen **Godkänd** skickar du den till leverantören med hjälp av åtgärden **Skicka för bekräftelse** på sidan **Inköpsorder**. Statusen för inköpsordern ändras till i **I extern granskning**. När inköpsordern har skickats kan leverantören se den på sidan **Inköpsorder för granskning** i gränssnittet leverantörssamarbete. Leverantören kan sedan acceptera eller avvisa ordern eller föreslå ändringar. Leverantören kan också lägga till kommentarer för att kommunicera information som ändringar i IO:n. Om du vill dra säljarens uppmärksamhet till en ny inköpsorder kan du även använda utskriftshanteringssystemet för att skicka IO:n via e-post.
 
 ### <a name="confirmation-and-acceptance-of-the-po-by-the-vendor"></a>Bekräftelse och godkännande av inköpsordern av leverantören
 
@@ -196,12 +196,16 @@ Om du har inaktiverat ändringshantering för inköpsorder, kommer inköpsordern
 
 Tabellen nedan visar ett exempel på förändringar i statusen och versionen som en IO kan gå igenom när ändringshantering är aktiverad. Versionen registreras när inköpsordern godkänns, inte när inköpsordern skickas till leverantören eller bekräftas.
 
-|                                                                                                               |                                                                                                                                                                                                                                                                                                                                                                                             |
-|---------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Åtgärd**                                                                                                    | **Status och version**                                                                                                                                                                                                                                                                                                                                                                      |
-| Den första versionen av inköpsordern skapas i Finance and Operations.                                      | Statusen är **Utkast**.                                                                                                                                                                                                                                                                                                                                                                    |
-
-| Inköpsordern är skickad till godkännandeprocessen. (Godkännandeprocessen är en intern process som leverantören inte är involverad i.) | Statusen ändras från **Utkast** till **Under granskning** till **Godkännande** om inköpsordern inte avvisas under godkännandeprocessen. Den godkända inköpsordern registreras som en version.                                                                                                                                                                                                                     | | Inköpsordern skickas till leverantören                                                                                  | Versionen registreras i gränssnittet leverantörssamarbete och statusen ändras till **På extern granskning**.                                                                                                                                                                                                                                                                       | | Du kan göra några ändringar som begärts av leverantören, antingen manuellt eller genom att använda åtgärden på svaret för att uppdatera inköpsordern.                                                       | Statusen ändras tillbaka till **Utkast**.                                                                                                                                                                                                                                                                                                                                                    | | Inköpsordern skickas till godkännandeprocessen igen.                                                            | Statusen ändras från **Utkast** till **Under granskning** till **Godkännande** om inköpsordern inte avvisas under godkännandeprocessen. Alternativt kan systemet konfigureras så att specifika fältändringar inte kräver nytt godkännande. I det här fallet ändras statusen först till **Utkast** och sedan uppdateras automatiskt till **Godkänd**. Den godkända inköpsordern registreras som en ny version. | | Du skickar den nya versionen av inköpsordern till leverantören.                                                             | Den nya versionen registreras i gränssnittet leverantörssamarbete och statusen ändras till **På extern granskning**.                                                                                                                                                                                                                                                                   | | Leverantören godkänner den nya versionen av inköpsordern.                                                                | Statusen ändras till **Bekräftad**, antingen automatiskt eller när du får svar från leverantören och sedan bekräftar inköpsordern.                                                                                                                                                                                                                                                     |
+|                                                                          |                                                                                                                                                              |
+|--------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Åtgärd**                                                               | **Status och version**                                                                                                                                       |
+| Den första versionen av inköpsordern skapas i Finance and Operations.      | Statusen är **Utkast**.  |
+| IO:n är skickad till godkännandeprocessen. (Godkännandeprocessen är en intern process som leverantören inte är inblandad i.)                                                           | Statusen ändras från **Draft** till **In Review** till **Approval** om inköpsordern inte avvisas i samband med godkännandeprocessen. Den godkända inköpsordern registreras som en version.           | 
+| Inköpsordern skickas till leverantören                                                            | Versionen registreras i gränssnittet för leverantörssamarbete, och statusen ändras till **I extern granskning**.      |
+| Du kan göra några ändringar som begärts av leverantören, antingen manuellt eller genom att använda åtgärden på svaret för att uppdatera inköpsordern.                                                            | Statusen ändras tillbaka till **Utkast**.     |
+|IO:n skickas till godkännandeprocessen igen.                                                |  Statusen ändras från **Draft** till **In Review** till **Approval** om inköpsordern inte avvisas under godkännandeprocessen. Alternativt kan systemet konfigureras så att specifika fältändringar inte kräver nytt godkännande. I det här fallet ändras statusen först till **Utkast** och sedan uppdateras automatiskt till **Godkänd**. Den godkända inköpsordern registreras som en ny version.                                         |
+|Du skickar den nya versionen av inköpsordern till leverantören.                                                |  Den nya versionen registreras i gränssnittet för leverantörssamarbete, och statusen ändras till **I extern granskning**.                                         |
+|Leverantören godkänner den nya versionen av IO:n.                                                |  Statusen ändras till **Bekräftad** antingen automatiskt eller när du får svar från leverantören och sedan bekräftar IO:n. |
 
 ## <a name="share-information-about-consignment-inventory"></a>Dela information om försändelselager
 Om du använder försändelselager, kan leverantörerna använda gränssnittet för leverantörssamarbete för att visa information på följande sidor:

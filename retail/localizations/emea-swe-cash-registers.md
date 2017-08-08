@@ -15,13 +15,13 @@ ms.search.scope: Retail, Operations, Core, UnifiedOperations
 ms.search.region: Sweden
 ms.search.industry: retail
 ms.author: epopov
-ms.search.validFrom: 2017-06-30
+ms.search.validFrom: 2017-06-30T00:00:00.000Z
 ms.dyn365.ops.version: July 2017 update
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 2db0b3886ec1ec0504cbb380f12bc72ddf7951e4
-ms.openlocfilehash: 4a28b5f0b7fba63e608326d09f386e48840f2d8a
+ms.translationtype: HT
+ms.sourcegitcommit: 9f4b007c174961a8e6794ab532d733584f492758
+ms.openlocfilehash: daa172f82424d5b300634d2d329b8ac232901c66
 ms.contentlocale: sv-se
-ms.lasthandoff: 06/19/2017
+ms.lasthandoff: 07/27/2017
 
 ---
 # <a name="cash-registers-for-sweden"></a>Kassaapparater för Sverige
@@ -75,7 +75,7 @@ Retail inkluderar ett exempel för att integrera kassa med Sverige-specifika kvi
 > [!NOTE]
 > För närvarande stöder inte styrenhetens integrationsprov kundorder. Men ett prov som stöder kundorder kommer att bli tillgängligt senare.
 
-Mer information om styrenhetens integrationsprov finns i [Guiden för provanvändning](/dynamics365/unified-operations/dev-itpro/retail-sdk/retail-sdk-control-unit-sample).
+Mer information om styrenhetens integrationsprov finns i [Guiden för provanvändning](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/retail-sdk-control-unit-sample).
 
 ## <a name="setting-up-retail-for-sweden"></a>Konfigurera Retail för Sverige
 
@@ -145,7 +145,7 @@ Du måste ange följande allmänna inställningar för Sverige.
 
 ### <a name="control-unitspecific-settings"></a>Styrenhet - specifika inställningar
 
-Du måste du ange följande inställningar för att aktivera [integrationsprovet](/dynamics365/unified-operations/dev-itpro/retail-sdk/retail-sdk-control-unit-sample) så att Retail POS är integrerat med kontrollenheter för Sverige.
+Du måste du ange följande inställningar för att aktivera [integrationsprovet](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/retail-sdk-control-unit-sample) så att Retail POS är integrerat med kontrollenheter för Sverige.
 
 1. Skapa räkenskapsregisterkonfigurationer och tilldela dem till maskinvaruprofiler:
 
