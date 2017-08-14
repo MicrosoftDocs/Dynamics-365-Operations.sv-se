@@ -1,6 +1,6 @@
 ---
-title: "Anbudsförfrågningar (RFQ:er)"
-description: "Den här artikeln ger en översikt över anbudsförfrågningar (RFQ:er) som organisationer utfärdar när de måste köpa artiklar eller tjänster och vill erhålla konkurrenskraftiga erbjudanden från flera leverantörer. I en anbudsförfrågan ber du leverantörer att ge priser och leveranstiderna för de kvantiteter av artiklar du anger. Du kan också be leverantörerna att ange om det finns några tillfälliga avgifter, till exempel fraktkostnader, eller om leverantören erbjuder rabatter för stora order eller tidig betalning av leverantörsfakturan."
+title: "Anbudsförfrågningar (RFQ)"
+description: "Det här ämnet ger en översikt över anbudsförfrågningar (RFQ:er) som organisationer utfärdar när de måste köpa artiklar eller tjänster och vill erhålla konkurrenskraftiga erbjudanden från flera leverantörer."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 06/20/2017
@@ -10,34 +10,34 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: PurchRFQCaseTable, PurchRFQCaseTableListPage, PurchRFQCompare, PurchRFQReplyTable, PurchRFQVendReplyTableListPage
 audience: Application User
+ms.reviewer: yuyus
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 2154
 ms.assetid: 3936996e-d943-46ca-8385-84c042990f1d
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: d681f4c107a9dbc1ea8c5e1de38b2d45cf19bcfa
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 47e394c8642f502c698dbcd5506979b7cac0a830
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
-# <a name="request-for-quotations-rfqs"></a>Anbudsförfrågningar (RFQ:er)
+# <a name="request-for-quotations-rfqs"></a>Anbudsförfrågningar (RFQ)
 
 [!include[banner](../includes/banner.md)]
 
 
-Den här artikeln ger en översikt över anbudsförfrågningar (RFQ:er) som organisationer utfärdar när de måste köpa artiklar eller tjänster och vill erhålla konkurrenskraftiga erbjudanden från flera leverantörer. I en anbudsförfrågan ber du leverantörer att ge priser och leveranstiderna för de kvantiteter av artiklar du anger. Du kan också be leverantörerna att ange om det finns några tillfälliga avgifter, till exempel fraktkostnader, eller om leverantören erbjuder rabatter för stora order eller tidig betalning av leverantörsfakturan.
+Det här ämnet ger en översikt över anbudsförfrågningar (RFQ:er) som organisationer utfärdar när de måste köpa artiklar eller tjänster och vill erhålla konkurrenskraftiga erbjudanden från flera leverantörer. I en anbudsförfrågan ber du leverantörer att ge priser och leveranstiderna för de kvantiteter av artiklar du anger. Du kan också be leverantörerna att ange om det finns några tillfälliga avgifter, till exempel fraktkostnader, eller om leverantören erbjuder rabatter för stora order eller tidig betalning av leverantörsfakturan.
 
 Anbudsförfråganprocessen (RFQ) omfattar följande uppgifter:
 
--   Skapa och skicka en anbudsförfrågan till en eller flera leverantörer
--   Ta emot och registrera svar på anbudsförfrågningar (bud)
--   Överföra accepterade bud till en inköpsorder, ett inköpsavtal eller en inköpsrekvisition
+-   Skapa och skicka en anbudsförfrågan till en eller flera leverantörer.
+-   Ta emot och registrera svar på anbudsförfrågningar (bud).
+-   Överföra accepterade bud till en inköpsorder, ett inköpsavtal eller en inköpsrekvisition.
 
 Följande bild ger en översikt över ändringarna i anbudsförfrågansprocessen.  
 
@@ -49,9 +49,9 @@ Om du måste ändra en anbudsförfrågan efter att du har skickat den, kan du sk
 
 När du tar emot bud, måste du registrera dem på sidan **Svar på anbudsförfrågan**. Om du väljer alternativet **Kopiera data till svar** kommer data som till exempel kvantitet och data från anbudsförfrågansärende kopieras till svaret. Du kan ändra dessa data så att den avspeglar leverantörens bud.  
 
-Om en andra iteration av ett svar krävs för en viss leverantör, klicka på **Retur**på sidan**Svar på anbudsförfrågan**. Returågärden skapar en ny journal och en rapport som ska skrivas ut, arkiveras och skickas enligt dina inställningar för utskriftshantering.  
+Om en andra iteration av ett svar krävs för en viss leverantör, klicka på **Retur** på sidan **Svar på anbudsförfrågan**. Returågärden skapar en ny journal och en rapport som ska skrivas ut, arkiveras och skickas enligt dina inställningar för utskriftshantering.  
 
-Om du har lagt till poängkriterier i ditt anbudsförfrågansärende kommer svaret på anbudsförfrågan ha en poängpanel där du kan ange poängen. De totala poängen visas när du jämför svaren på sidan **Jämför svar**där du också kan jämföra annan svarsinformation som t.ex. radpris, leveransdatum och totalpris.  
+Om du har lagt till poängkriterier i ditt anbudsförfrågansärende kommer svaret på anbudsförfrågan ha en poängpanel där du kan ange poängen. De totala poängen visas när du jämför svaren på sidan **Jämför svar** där du också kan jämföra annan svarsinformation som t.ex. radpris, leveransdatum och totalpris.  
 
 När du har bestämt dig för ett bud eller delbud kan du godkänna dem och avvisa resten. Acceptansjournaler, avvisningsjournaler och motsvarande rapporter genereras. De skrivs ut, arkiveras och skickas enligt inställningarna för utskriftshantering. När du accepterar ett bud eller specifika rader i ett bud, skapas antingen ett inköpsavtal eller en inköpsorder, eller så uppdateras en inköpsrekvisition beroende på inköpstypen för anbudsförfrågan. Du kan skapa ett handelsavtal som du kan använda senare för någon av svaren, oavsett om du accepterade eller avvisade dem.  
 
@@ -66,17 +66,17 @@ Sekvensen för status vid bearbetning av anbudsförfrågningar är följande:
 3.  **Inlevererad**
 4.  **Godkänd**/**Annullerad**/**Avvisad**
 
-Statusvärdet kommer att beskrivas mer utförligt i senare avsnitt i denna artikel.
+Statusvärdet kommer att beskrivas mer utförligt i senare avsnitt i detta ämne.
 
 ## <a name="setting-up-rfq-functionality"></a>Ställa in funktionen för anbudsförfrågan
 Innan du kan skapa ett anbudsförfrågansärende måste du ställa in information om anbudsförfrågan på sidan **Anskaffnings- och källparametrar**. När du skapar ett anbudsförfrågansärende kan du ange förvalda värden som kopieras till anbudsförfrågan. Du kan ange följande standardvärden:
 
--   Inköpstypen av nya anbudsförfrågan: **Inköpsorder** eller **Inköpsavtal**
--   Inställningar för utgångsdatum och utgångstid
+-   Inköpstypen av nya anbudsförfrågan: **Inköpsorder** eller **Inköpsavtal**.
+-   Inställningar för utgångsdatum och utgångstid.
 -   Leveransinformation och betalningsvillkor.
--   Fält som ska vara inkluderade i svaret för anbudsförfrågan
+-   Fält som ska vara inkluderade i svaret för anbudsförfrågan.
 
-Du kan åsidosätta dessa värden för ett visst anbudsförfråganärende. Du bör också konfigurera ändringsprocessen. Som en del av den här konfigurationen kan du aktivera låsning av fält. När låsning av fält aktiveras, måste en prokurist som vill ändra en anbudsförfrågan, först klicka på **Skapa** i avsnittet **Rättelse** på fältet **Offert**. När anbudsförfrågan har uppdaterats med rättelsen, måste anskaffningspersonen slutföra processen genom att klicka på **Slutför**.** **Slutför-åtgärden genererar ett e-postmeddelande som meddelar leverantörerna om den ändrade anbudsförfrågan. Du väljer mallen för e-postmeddelandet som skickas till leverantörer på sidan **Anskaffnings- och källparametrar** . När en mall skapas, kan den innehålla följande utbytestoken:
+Du kan åsidosätta dessa värden för ett visst anbudsförfråganärende. Du bör också konfigurera ändringsprocessen. Som en del av den här konfigurationen kan du aktivera låsning av fält. När låsning av fält aktiveras, måste en prokurist som vill ändra en anbudsförfrågan, först klicka på **Skapa** i avsnittet **Rättelse** på fältet **Offert**. När anbudsförfrågan har uppdaterats med ändringar, måste anskaffningsproffset slutföra processen genom att klicka på **Slutför**. Åtgärden **Slutför** genererar ett e-postmeddelande som meddelar leverantörer om den ändrade anbudsförfrågan. Du väljer mallen för e-postmeddelandet som skickas till leverantörer på sidan **Anskaffnings- och källparametrar** . När en mall skapas, kan den innehålla följande utbytestoken:
 
 -   %Orsak till att buden returneras%
 -   %Orsak till ändring%
@@ -87,7 +87,10 @@ Token för %Orsak till att buden returneras% och %Orsak till ändring% ersätts 
 
 Om du vill använda orsakskoder för ett svar på en anbudsförfrågan för att ange varför ett bud accepterades eller avvisades, måste du ställa in orsakskoder på sidan **Leverantöranledningar**.  
 
-Du kan konfigurera utseendet på dina utskrivna eller lagrade anbudsförfrågandokument på sidan **Formulärinställningar** i anskaffning och källa.  
+Du kan konfigurera utseendet på dina utskrivna eller lagrade anbudsförfrågandokument på sidan **Formulärinställningar** i anskaffning och källa. 
+
+**Obs!** För en konfiguration av offentliga sektorn i en anbudsförfrågan som redan har skickats kräver användning av en ändringsprocessen. När anbudsförfrågan skickas blir fälten skrivskyddade, så om du klickar på **Skapa** för att använda ändringsprocessen på det sätt som beskrivs ovan är ett obligatoriskt steg för att ändra anbudsförfrågan.
+Detta styrs av fältlåsparametern **Lås anbudsförfrågan när de har skickats** i **Anskaffnings- och källparametrar**. Denna parameter är inställd på **Ja** och för en konfiguration av offentlig sektor är det en standardinställning som inte kan ändras. Detta innebär att där ändringsprocessen kan hanteras mannuellt i en konfiguration av en ej offentlig sektor, är låsning av fälten när anbudsförfrågan har skickats obligatorisk för offentliga sektorn.
 
 När du skapar en anbudsförfrågan för en inköpsorder och lägger till en lagerartikel för anbudsförfrågan, skapas en lagertransaktion som har inleveransstatusen **Offert inleverans**. Endast rader i en anbudsförfrågan som har denna status beaktas när du använder en huvudplan för att beräkna varor. Om du vill att huvudplanen inkluderar anbudsförfrågansrader som förväntad inleverans, måste du konfigurera detta beteende i inställningarna av huvudplaneringen.  
 
@@ -108,7 +111,7 @@ Om anbudsförfrågan är av typen **Inköpsavtal**:
 -   Anbudsförfrågan används för att köpa en visst kvantitet eller värde av produkten över tid. Du måste välja det datumintervall som gäller för inköpsavtalet och namnet på personen, som hanterar inköpsavtalet.
 -   När du accepterar ett bud, skapas ett inköpsavtal.
 
-Du kan endast skapa en anbudsförfrågan från en inköpsrekvisition om statusen på inköpsrekvisitionen är **Under granskning**och du har tilldelats att göra nästa arbetsflödesuppgift. Raderna uppdateras automatiskt i inköpsrekvisitionen allt eftersom du accepterar rader i anbudsförfrågansvar (bud) som du får från leverantörer. Du kan inte slutföra, avvisa, godkänna eller utföra några andra åtgärder på inköpsrekvisitionen medan anbudsförfrågningen pågår.  
+Du kan endast skapa en anbudsförfrågan från en inköpsrekvisition om statusen på inköpsrekvisitionen är **Under granskning** och du har tilldelats att göra nästa arbetsflödesuppgift. Raderna uppdateras automatiskt i inköpsrekvisitionen allt eftersom du accepterar rader i anbudsförfrågansvar (bud) som du får från leverantörer. Du kan inte slutföra, avvisa, godkänna eller utföra några andra åtgärder på inköpsrekvisitionen medan anbudsförfrågningen pågår.  
 
 När du skapar en anbudsförfrågan, kan du välja en specifik typ av begäran. Typ av begäran bestämmer uppsättning med poängkriterier som används för att poängsätta svar på anbudsförfrågan.  
 
@@ -181,7 +184,7 @@ När du accepterar ett svar på en anbudsförfrågan av typen **Inköpsrekvisiti
 
 I svaret kan du lägga till en orsakskod för att förklara varför du accepterade eller avvisade ett bud.  
 
-Du kan acceptera alla rader i ett bud och avvisa andra. Du kan också ta emot rader från olika leverantörer. Var medveten om att du bara godtar några rader, ska du uppmanas att avvisa alla andra rader. Därför om du vill ta emot andra rader måste du klicka på **Avbryt** när du tar emot bekräftelsen.  
+Du kan acceptera alla rader i ett bud och avvisa andra. Du kan också ta emot rader från olika leverantörer. Var medveten om att du bara godtar några rader, ska du uppmanas att avvisa alla andra rader. Därför om du vill ta emot andra rader måste du klicka på **Avbryt** när du tar emot bekräftelsen.  
 
 Följande tabell visar hur anbudsförfråganstatus ändras allt eftersom du godtar och avvisar leverantörernas bud.
 

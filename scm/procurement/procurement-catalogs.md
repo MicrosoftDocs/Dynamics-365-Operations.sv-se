@@ -18,11 +18,11 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 15767a54da25c293bb3d6d5e0a14e7e05a7d730b
+ms.translationtype: HT
+ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
+ms.openlocfilehash: b94ecf3e173a2a7ce649170b6eff1e16f2626074
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -62,7 +62,7 @@ Katalogen definierar vilka produkter som är tillgängliga när inköpsrekvisiti
 |--------------------------------------------------------|------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Skapa en ny katalog.                                  | Inköpsagent | När du skapar en katalog, anger du ett namn och en beskrivning för katalogen. Du anger även om katalogen uppdateras manuellt eller automatiskt och anger katalogägaren.                                                                                                                                      |
 | Produkter för kontroll som är tillgängliga i katalogen. | Inköpsagent | Eftersom produkterna ärvs från anskaffningkategorierna, visas de i lämpliga katalognoder. Du kan kontrollera om alla produkter i en nod visas eller döljs när katalogen används i en inköpsrekvisition. Du kan också kontrollera om enskilda produkter i en nod döljs eller visas. |
-| Publicera katalogen.                                   | Inköpsagent | Innan en katalog är tillgänglig för medarbetare att använda i en rekvisition, måste du definiera en katalogpolicyregel för katalogen, ange katalogens status till **Aktiv**och publicera katalogen. Du kan inaktivera kataloger som du vill inte längre vill ska vara tillgängliga för dina användare.                                              |
+| Publicera katalogen.                                   | Inköpsagent | Innan en katalog är tillgänglig för medarbetare att använda i en rekvisition, måste du definiera en katalogpolicyregel för katalogen, ange katalogens status till **Aktiv** och publicera katalogen. Du kan inaktivera kataloger som du vill inte längre vill ska vara tillgängliga för dina användare.                                              |
 
 Uppdateringar publiceras automatiskt eller fylls i manuellt, beroende på det alternativ som du väljer för katalogen i fältet **Standarduppdateringstyp** på sidan **Kataloger**. Följande standarduppdateringtyper är tillgängliga för kataloger:
 
@@ -74,7 +74,7 @@ Uppdateringar publiceras automatiskt eller fylls i manuellt, beroende på det al
 <a name="see-also"></a>Se även
 --------
 
-[Ställa in en kategorihierarki för anskaffning (uppgiftsguide)](http://ax.help.dynamics.com/en/wiki/set-up-a-procurement-category-hierarchy/)
+[Ställa in en kategorihierarki för anskaffning (uppgiftsguide)](/dynamics365/unified-operations/supply-chain/procurement/tasks/set-up-procurement-category-hierarchy)
 
 
 

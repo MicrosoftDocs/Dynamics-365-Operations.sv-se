@@ -10,19 +10,18 @@ ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, Developer, IT Pro
 ms.reviewer: annbe
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 16381
 ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
 ms.search.region: Global
 ms.author: margoc
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
-ms.openlocfilehash: 91207e03902fa8a45ab44270cc61b58ef9e3c98c
+ms.translationtype: HT
+ms.sourcegitcommit: 9c083fd26a58e96b3bb810df11eadace184f9dbf
+ms.openlocfilehash: eaa3317acf7df84d06ad3641486df1c096b26a56
 ms.contentlocale: sv-se
-ms.lasthandoff: 06/20/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -32,33 +31,31 @@ ms.lasthandoff: 06/20/2017
 
 Den här artikeln innehåller en översikt över komponenterna i hjälpsystemet för Microsoft Dynamics 365 for Finance and Operations. Det innehåller beskrivningar av hur du kan skapa anpassad dokumentation och utbildning för din organisation. 
 
-> [!IMPORTANT] 
-> Följande produkter är nära relaterade: Dynamics 365 for Finance and Operations, Enterprise edition; Dynamics 365 for Retail; samt Dynamics 365 for Talent. Samma funktioner kan förekomma i samtliga 3 produkter. I avsnitt som huvudsakligen berör Retail blir produktnamnet därför Dynamics 365 for Retail; i avsnitt som främst berör Talent blir produktnamnet Dynamics 365 for Talent; och i avsnitt som berör kärnprodukten blir produktnamnet Dynamics 365 for Finance and Operations. Avsnitt som skrivs för en produkt kan även gälla för samma funktioner i en relaterad produkt
+> [!NOTE] 
+> Följande produkter är nära relaterade: Dynamics 365 for Finance and Operations, Enterprise edition; Dynamics 365 for Retail; samt Dynamics 365 for Talent. Samma funktioner kan förekomma i samtliga 3 produkter. I avsnitt som huvudsakligen berör Retail blir produktnamnet därför Dynamics 365 for Retail; i avsnitt som främst berör Talent blir produktnamnet Dynamics 365 for Talent; och i avsnitt som berör kärnprodukten blir produktnamnet Dynamics 365 for Finance and Operations. Avsnitt som skrivs för en produkt kan även gälla för samma funktioner i en relaterad produkt.
+
+Hjälpsystemet är gemensamt för alla Unified Operations-produkter:
+- Dynamics 365 for Finance and Operations, Enterprise-utgåvan
+- Dynamics 365 for Retail
+- Dynamics 365 for Talent
 
 Finance and Operations inkluderar ett hjälpsystem baserat på två huvudkomponenter:
 
 -   En dokumentationsplats
 -   Uppgiftsguider
 
-Följande produkter är nära relaterade: Dynamics 365 for Finance and Operations, Enterprise edition; Dynamics 365 for Retail; samt Dynamics 365 for Talent. Samma funktioner kan förekomma i samtliga 3 produkter. I avsnitt som huvudsakligen berör Retail blir produktnamnet därför Dynamics 365 for Retail; i avsnitt som främst berör Talent blir produktnamnet Dynamics 365 for Talent; och i avsnitt som berör kärnprodukten blir produktnamnet Dynamics 365 for Finance and Operations. Avsnitt som skrivs för en produkt kan även gälla för samma funktioner i en relaterad produkt. 
-
-Hjälpsystemet är gemensamt för alla Unified Operations-produkter:
-- Dynamics 365 for Finance and Operations, Enterprise Edition
-- Dynamics 365 for Retail
-- Dynamics 365 for Talent
-
 Du får åtkomst till både hjälp och uppgiftsguider från hjälpfönstret oavsett vilken produkt du använder. Följande skärmdump visar Dynamics 365 for Finance and Operations
 
-![Hjälpfönster](./media/help-pane-ops-task-guides-1024x741.png)
+![Hjälpfönster](./media/help-pane-ops-task-guides.png)
 
 Det här avsnittet beskriver hjälpsystemet och förklarar hur du kan skapa anpassad dokumentation och anpassade utbildningsresurser för din organisation.
 
 > [!IMPORTANT]
-> Fliken **Uppgiftsguider** finns för närvarande inte i Microsoft Dynamics 365 for Talent eller Microsoft Dynamics 365 for Retail. Vi arbetar för närvarande med att aktivera den här funktionen i framtida versioner. Uppgiftsguiderna i Komma igång i Talent täcker fortsatt basfunktionerna. Procedurhjälp finns också på webbplatsen docs.microsoft.com ([docs.microsoft.com/dynamics365/operations](/dynamics365/#pivot=solutions&panel=solutions_operations)) för både Retail och Talent.
+> Fliken **Uppgiftsguider** finns för närvarande inte i Microsoft Dynamics 365 for Talent eller Microsoft Dynamics 365 for Retail. Vi arbetar för närvarande med att aktivera den här funktionen i framtida versioner. Uppgiftsguiderna i Komma igång i Talent täcker fortsatt basfunktionerna. Procedurhjälp finns också på webbplatsen docs.microsoft.com ([docs.microsoft.com/dynamics365/operations](/dynamics365/unified-operations/fin-and-ops/index)) för både Retail och Talent.
 
 ## <a name="help-on-docsmicrosoftcom"></a>Hjälp om docs.microsoft.com
 
-Webbplatsen docs.microsoft.com ([docs.microsoft.com/dynamics365/operations](/dynamics365/#pivot=solutions&panel=solutions_operations)) är den primära källan för produktinformation för Finance and Operations. Webbplatsen erbjuder följande funktioner:
+Webbplatsen docs.microsoft.com ([docs.microsoft.com/dynamics365/operations](/dynamics365/unified-operations/fin-and-ops/index)) är den primära källan för produktinformation för Finance and Operations. Webbplatsen erbjuder följande funktioner:
 
 -   **Åtkomst till det senaste innehållet**– Webbplatsen ger oss ett snabbare och mer flexibelt sätt att skapa, leverera och uppdatera produktdokumentation. Därför hjälper den till att säkerställa att du har tillgång till den senaste tekniska informationen.
 -   **Innehåll skrivet av experter**– Webbplatsen ger en större mängd produktdokumentation som kan förbättras av community-medlemmar både inom och utanför Microsoft.
@@ -68,12 +65,13 @@ Webbplatsen docs.microsoft.com ([docs.microsoft.com/dynamics365/operations](/dyn
 ### <a name="searching-on-docsmicrosoftcom"></a>Söka på docs.microsoft.com
 Vi får många frågor om hur man söker efter webbplatsens innehåll. Om du startar från en sida om Finance and Operations på vår webbplats begränsar vi din sökning så att den bara omfattar Finance and Operations-innehåll. Du kan ta bort begränsningen genom att klicka på X bredvid Operationer i sökrutan. 
 
-![Sök efter order](./media/search-scope.png)
+![Sök efter order](./media/search-scope-2.png)
 
 Du kan också hitta webbplatsens innehåll via valfri sökmotor. För bästa resultat rekommenderas du använda en webbplatssökning, exempelvis site:docs.microsoft.com dynamics 365 "sökord".  
-![Webbplatssökning](./media/site-search.png)
 
-![Sökresultat för webbplats](./media/site-search-results.png)
+![Webbplatssökning](./media/site-search-1.png)
+
+![Sökresultat för webbplats](./media/site-search-results-2.png)
 
 ### <a name="the-docsmicrosoftcom-table-of-contents-for-unified-operations"></a>docs.microsoft.com-innehållsförteckningen för Unified Operations
 Alla produkter delar en och samma innehållsförteckning på dokumentwebbplatsen, vilket gör att kunder kan se kontexten för det avsnitt som de befinner sig i. Du kan också använda filterkontrollen för att hitta avsnitt som du letar efter.
@@ -105,7 +103,7 @@ En uppgiftsguide är en kontrollerad, guidad, interaktiv upplevelse som leder di
 
 Vi tillhandahåller olika typer av uppgiftsguider för varje Unified Operations-produkt. Avsnittet Komma åt uppgiftsguider från hjälpfönstret beskriver hur du hittar rätt uppgiftsguider för just din produkt. 
 
-![Läsvy för uppgiftsguide](./media/task-guide-ops-1024x742.png)
+![Läsvy för uppgiftsguide](./media/task-guide-ops.png)
 
 Om du vill starta en guidad, interaktiv tur ska du klicka på **Starta uppgiftsguide** längst ned i fönstret Hjälp. En svart markör visas och indikerar den åtgärd som du måste utföra. Följ beskrivningarna som anges i gränssnittet och ange data som anvisat. 
 ![Steginstruktion för uppgiftsguide](./media/task-guide-step-1-ops.png)
@@ -129,7 +127,7 @@ Du kan skapa egna uppgiftsregistreringar eller så hämta och anpassa uppgiftsre
 ## <a name="in-product-help"></a>Produkthjälp
 För att nå hjälpavsnittet i Dynamics 365 for Operations Finance and Operations klickar du antingen på ikonen **Hjälp** (**?**) och väljer sedan Hjälp, eller också trycker du på Ctrl+Shift+?. I båda fall öppnas fönstret Hjälp. I fönstret Hjälp kan du öppna artiklar eller uppgiftsguider. 
 
-![Hjälpfönster](./media/help-pane-wiki-1024x684.png)
+![Hjälpfönster](./media/help-pane-wiki.png)
 
 ### <a name="accessing-help-topics-from-the-help-pane"></a>Öppna hjälpavsnitt via hjälpfönstret
 
@@ -162,7 +160,7 @@ Gå till sidan **Systemparametrar** och följ dessa steg:
 
 När en systemadministratör har slutfört de här stegen kan du öppna Hjälp-fönstret och klicka på fliken **Uppgiftsguider**. Du ser nu de uppgiftsguider som gäller för sidan du för närvarande befinner dig på i Finance and Operations. Om inga uppgiftsguider hittas kan du ange nyckelord för att begränsa sökningen. Efter att du har klickat på en uppgiftsguide i Hjälp-fönstret visas steg-för-steg-instruktioner och du kan spela upp uppgiftsguiden. 
 
-![Läsvy för uppgiftsguide](./media/task-guide-ops-1024x742.png)
+![Läsvy för uppgiftsguide](./media/task-guide-ops.png)
 
 ### <a name="where-are-the-translated-task-guides"></a>Var finns de översatta uppgiftsguiderna?
 

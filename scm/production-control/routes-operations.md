@@ -10,20 +10,20 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: BOMDesigner, BOMDesignerRouteVersion, Route, RouteInventProd, RouteOpr, RouteOprTable
 audience: Application User
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: yuyus
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 268124
 ms.assetid: f78d5836-3e71-42b7-a5d1-41f19228d9d2
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: sorenand
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
-ms.openlocfilehash: 61548f2e308781e8329ca3cd26c3e6502d2f92c9
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 017985645e0f77e7f269fce2932c0ec0f6eaaa1c
 ms.contentlocale: sv-se
-ms.lasthandoff: 06/20/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -45,7 +45,7 @@ Ett flöde beskriver ordningen av operationer som krävs för att producera en p
 -   **Flödesversion** – en flödesversion som definierar flödet som används för att tillverka en produkt eller produktvariant. Flödesversioner tillåter att flöden ska återanvändas mellan produkter eller ändras med tiden. De tillåter också att olika flöden används för att tillverka samma produkt. I detta fall varierar det flöde som används beroende på faktorer som t.ex. plats eller den kvantitet som måste produceras.
 
 ## <a name="routes"></a>Flöden
-Ett flöde beskriver ordningen av operationer som används för att producera en produkt eller produktvariant. Varje operation tilldelas ett operationsnummer och en efterföljande operation. Operationernas ordning utgör en flödesnätverk som kan representeras av ett riktat diagram med en eller flera startpunkter och en enda slutpunkt. I Dynamics 365 for Finance and Operations skiljer flöden sig åt beroende på typen av struktur. Två typer av flöden är enkla flöden och flödesnätverk. I produktionsstyrningsparametrarna kan du ange om endast enkla flöden kan användas, eller om mer komplexa flödesnätverk kan användas
+Ett flöde beskriver ordningen av operationer som används för att producera en produkt eller produktvariant. Varje operation tilldelas ett operationsnummer och en efterföljande operation. Operationernas ordning utgör en flödesnätverk som kan representeras av ett riktat diagram med en eller flera startpunkter och en enda slutpunkt. I Finance and Operations skiljer sig flöden baserat på vilken typ av struktur. Två typer av flöden är enkla flöden och flödesnätverk. I produktionsstyrningsparametrarna kan du ange om endast enkla flöden kan användas, eller om mer komplexa flödesnätverk kan användas
 
 ### <a name="simple-routes"></a>Enkla flöden
 
@@ -87,8 +87,8 @@ Varje flöde och formel går att godkänna och upphäva separat. Observera att o
 
 Om du måste hålla en logg som registrerar vem som godkänner varje flöde, kan du kräva elektroniska signaturer för flödeskännande. Användare måste sedan bekräfta sin identitet med hjälp av en [elektronisk signatur](/dynamics365/unified-operations/fin-and-ops/organization-administration/electronic-signature-overview).
 
-## <a name="operations"></a>Operationer
-En operation är ett steg i produktionsprocessen, t.ex. I Dynamics 365 for Finance and Operations har varje operation ett ID och en kort beskrivning. I följande tabell visas vanliga exempel på operationer från en maskinaffär.
+## <a name="operations"></a>Operations
+En operation är ett steg i produktionsprocessen, t.ex. I Finance and Operations har varje operation ett ID och en kort beskrivning. I följande tabell visas vanliga exempel på operationer från en maskinaffär.
 
 | Åtgärd  | beskrivning        |
 |------------|--------------------|
@@ -128,7 +128,7 @@ Operationsrelationer ger stor flexibilitet när du definierar dina flöden. Dess
 
 ### <a name="modifying-product-specific-routes"></a>Ändra produktspecifika flöden
 
-När du öppnar sidan **Flöde** från **Frisläppt produktinformation** kommer de flödesversioner som är kopplade till den valda frisläppt produkten att visas. I detta sammanhang visar Dynamics 365 for Finance and Operations de operationsrelationers funktionella egenskaper som bäst motsvarar flödesversionen för varje operation. Du ser att listan över operationer innehåller egenskaperna **Artikelkod** och **flöde śkod** från operationsrelationen. Därför kan du bestämma vilken operationsrelation som ska visas.  
+När du öppnar sidan **Flöde** från **Frisläppt produktinformation** kommer de flödesversioner som är kopplade till den valda frisläppt produkten att visas. I detta sammanhang visar Finance and Operations de operationsrelationers funktionella egenskaper som bäst motsvarar flödesversionen för varje operation. Du ser att listan över operationer innehåller egenskaperna **Artikelkod** och **flöde śkod** från operationsrelationen. Därför kan du bestämma vilken operationsrelation som ska visas.  
 
 På sidan **flöde** kan du ändra funktionella egenskaperna för operationen, till exempel körtiden eller kostnadskategorier. Ändringarna sparas i operationsrelationen som är specifika för flödet och frisläppt produkt som hänvisas till i den aktuella flödesversionen. Om operationsrelationen som visas inte är specifik till flödet och frisläppt produkt innan ändringarna sparas, skapas en kopia av operationsrelationen. Den här kopian *är* specifik för flödet och frisläppt produkt. Ändringarna påverkar inte andra flöden eller frisläppta produkter. Kontrollera vilka operationsrelationen ändras på den **flöde** kan du titta på fälten **Artikelkod** och **flödeskod**.  
 
@@ -150,9 +150,9 @@ Om ditt företag använder standardåtgärder och om driftsparametrar är desamm
 
 ### <a name="applying-operation-relations"></a>Tillämpa operationsrelationer
 
-I vissa fall måste Dynamics 365 for Finance and Operations hitta operationens funktionella egenskaper. Exempelvis när en inköpsorder skapas måste de funktionella egenskaperna för varje operation kopieras från operationsrelationer i produktionsflödet. I sådana fall söker Finance and Operations efter de relevanta operationsrelationerna från den mest specifika kombinationen till den minst specifika.  
+I vissa fall måste for Finance and Operations hitta operationens funktionella egenskaper. Exempelvis när en inköpsorder skapas måste de funktionella egenskaperna för varje operation kopieras från operationsrelationer i produktionsflödet. I sådana fall söker Finance and Operations efter de relevanta operationsrelationerna från den mest specifika kombinationen till den minst specifika.  
 
-När Dynamics 365 for Finance and Operations söker efter den mest relevanta operationsrelationen för en frisläppt produkt, föredras en operationsrelation som överensstämmer med artikel-ID för den frisläppta produkten över en operationsrelation som matchar artikelgrupp-ID. I sin tur är en operationsrelation som överensstämmer med artikel grupp-ID att föredra över standardoperationsrelationen. Tabellen görs i följande ordning.
+När Finance and Operations söker efter den mest relevanta operationsrelationen för en frisläppt produkt, föredras en operationsrelation som överensstämmer med artikel-ID för frisläppt produkt över en operationsrelation som matchar artikelgrupp-ID. I sin tur är en operationsrelation som överensstämmer med artikel grupp-ID att föredra över standardoperationsrelationen. Tabellen görs i följande ordning.
 
 1.  **Artikelkod**=**Tabell** och **Artikelrelation**=&lt;artikel-ID&gt;
 2.  **Artikelkod**=**Grupp** och **Artikelrelation**=&lt;artikelgrupp-ID&gt;
@@ -199,7 +199,7 @@ Beroende på ditt företags behov kanske du vill minska det arbete som krävs f�
 
 ### <a name="making-routes-independent-of-resources"></a>Göra flöden oberoende av resurser
 
-I många system måste operationresursen eller resursgruppen som ska utföra operationen anges i flödet. I Dynamics 365 for Finance and Operations kan du dock definiera en uppsättning krav som en verksamhetsresurs måste uppfylla för att kunna tillämpas på operationen. Därför kan inte specifika operationsresurser eller resursgrupper som ska användas bestämmas förrän operationen schemaläggs. Denna funktion är speciellt användbar när du har många arbetare eller maskiner som kan utföra samma operation.  
+I många system måste operationresursen eller resursgruppen som ska utföra operationen anges i flödet. I Finance and Operations kan du dock definiera en uppsättning krav som en verksamhetsresurs måste uppfylla för att kunna tillämpas på operationen. Därför kan inte specifika operationsresurser eller resursgrupper som ska användas bestämmas förrän operationen schemaläggs. Denna funktion är speciellt användbar när du har många arbetare eller maskiner som kan utföra samma operation.  
 
 Till exempel anger du att en operation kräver en operationsresurs av typen **maskin** med en **stämplings** kapacitet på 20 ton. Planeringsmotorn matchar sedan dessa krav med en specifik operationsresurs eller resursgrupp när operationen planeras. Eftersom du bara kan ange dessa krav i stället för bindning av operationen till en viss maskin, har du mycket större flexibilitet. Underhåll är dessutom lättare när resurser flyttas eller när nya resurser läggs till.  
 

@@ -9,19 +9,19 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.search.scope: Operations, Core
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 261794
 ms.assetid: 1d8e99c1-b70d-41ba-991e-ab50b16797e0
 ms.search.region: Global
 ms.author: sigitac
-ms.search.validFrom: 2016-11-30
+ms.search.validFrom: 2016-11-30T00:00:00.000Z
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 9f8073a2eb0d1b61d6a168f43eba983d113cf453
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 734c8930f239d8c9d220601bb2103bd55dd5bfd8
 ms.contentlocale: sv-se
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -35,12 +35,18 @@ Det här avsnittet beskriver hur du skapar Microsoft Excel-mallar som kan använ
 Det här avsnittet beskriver hur du skapar Excel-mallar som ska användas med budgetplaner som använder vanlig demodatauppsättning och administratörsinloggning. Mer information om budgetplanering finns [Översikt för budgetplanering.](budget-planning-overview-configuration.md) Du kan även följa guiden [Budgetplanering 101](budget-plan.md) för att lära dig grundläggande modulkonfiguration och användning.
 
 ## <a name="generate-a-worksheet-using-budget-plan-document-layout"></a>Skapa ett kalkylblad med en dokumentlayout för budgetplan
-Budgetplandokument kan visas och redigeras med hjälp av en eller flera av layouter. Varje layout kan ha en associerad budgetplansmall som låter dig visa och redigera budgetplandata i ett Excel-kalkylblad. I det här avsnittet genereras en budgetplansmall med hjälp av en befintlig layoutkonfiguration. Öppna **Budgetplanlista** (**Budgetering**&gt; **Budgetplaner**). Klicka på **Ny** om du vill skapa en ny budgetplan. [![bpt1](./media/bpt11-1024x552.png)](./media/bpt11.png) 
+
+Budgetplandokument kan visas och redigeras med hjälp av en eller flera av layouter. Varje layout kan ha en associerad budgetplansmall som låter dig visa och redigera budgetplandata i ett Excel-kalkylblad. I det här avsnittet genereras en budgetplansmall med hjälp av en befintlig layoutkonfiguration. 
+
+Öppna **Budgetplanlista** (**Budgetering** &gt; **Budgetplaner**). Klicka på **Ny** om du vill skapa en ny budgetplan. 
+
+[![bpt1](./media/bpt11-1024x552.png)](./media/bpt11.png) 
 
 Använd radalternativet **Lägg till** för att lägga till rader. Klicka på **Layout** för att visa dokumentlayoutens konfiguration för budgetplanen. 
+
 [![bpt2](./media/bpt2-1024x274.png)](./media/bpt2.png) 
 
-Du kan granska layoutkonfigurationen och justera den efter behov. Navigera till **Mall** &gt; **Generera** för att skapa en Excel-fil för den här layouten. När mallen har skapats går du till **Mall** &gt; **Visa** om du vill öppna och granska mallen för budgetplan. Du kan spara Excel-filen på hårddisken. [![bpt3](./media/bpt3-1024x545.png)](./media/bpt3.png) 
+Du kan granska layoutkonfigurationen och justera den efter behov. Navigera till **Mall** &gt; **Generera** för att skapa en Excel-fil för den här layouten. När mallen har skapats går du till **Mall** &gt; **Visa** om du vill öppna och granska mallen för budgetplan. Du kan spara Excel-filen på hårddisken. [![bpt3](./media/bpt3-1024x545.png)](./media/bpt3.png)
 
 > [!NOTE] 
 > Budgetplanens dokumentlayout kan inte redigeras sedan en Excel-mall har associerats med den. För att ändra layouten, ta bort associerad Excel-mallfil och återskapa den. Detta krävs för att hålla fälten i layouten och kalkylbladet synkroniserade. 

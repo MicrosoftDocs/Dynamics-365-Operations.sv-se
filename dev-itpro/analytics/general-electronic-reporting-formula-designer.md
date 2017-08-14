@@ -10,19 +10,19 @@ ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
-ms.search.scope: AX 7.0.0, Operations, Core
+ms.reviewer: kfend
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
 ms.search.region: Global
 ms.author: nselin
-ms.search.validFrom: 2016-02-28
+ms.search.validFrom: 2016-02-28T00:00:00.000Z
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
-ms.openlocfilehash: 655a6fd99c0688b13c31c79f3322a287f902e7f1
+ms.translationtype: HT
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 2c04bbccf22ab830404206cd54b4cb8e97b6a822
 ms.contentlocale: sv-se
-ms.lasthandoff: 06/20/2017
-
+ms.lasthandoff: 07/27/2017
 
 ---
 
@@ -196,8 +196,8 @@ I följande tabeller finns beskrivningar av datamanipuleringsfunktioner kan anv�
 | SESSIONNOW ()                              | Returnerar aktuellt datum och tid för Dynamics 365 for Finance and Operations-session som ett datetime-värde.                                                                                                                                                                                                                                                                         |                                                                                                                                                                                                                                                                                                       |
 | DATEFORMAT (datum, format)                  | Returnerar en strängrepresentation av datumet med ett angivet format.                                                                                                                                                                                                                                                                                                    | **DATEFORMAT (SESSIONTODAY (), "åååå-mm-dd")** returnerar det aktuella Dynamics 365 for Finance and Operations-sessionsdatumet, 2015-12-24, som "**2015-12-24"**" enligt det definierade anpassade formatet.                                                                                                                      |
 | DATEFORMAT (datum, format, kultur)         | Konverterar det angivna datumvärdet till en sträng i det definierade formatet och den definierade [kulturen](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx). (Om du vill ha mer information om format som stöds, se [Standard](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) och [Anpassat](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx).)     | **DATETIMEFORMAT (SESSIONNOW (), "d", "de")** returnerar det aktuella sessionsdatumet för Finance and Operations, 2015-12-24, som **"2015-12-24"** enligt den valda svenska kulturen.                                                                                                                       |
-| DAYOFYEAR (datum)              | Returnerar en heltalsrepresentation av antalet dagar mellan 1 januari och det angivna datumet.       | **DAYOFYEAR (DATEVALUE (”01-03-2016”, ”dd-MM-åååå”))** returnerar **61**.
-**DAYOFYEAR (DATEVALUE (”01-01-2016”, ”dd-MM-åååå”))** returnerar **1**.                                                                                                                       |
+| DAYOFYEAR (datum)              | Returnerar en heltalsrepresentation av antalet dagar mellan 1 januari och det angivna datumet.       | **DAYOFYEAR (DATEVALUE (”01-03-2016”, ”dd-MM-åååå”))** returnerar **61**. **DAYOFYEAR (DATEVALUE (”01-01-2016”, ”dd-MM-åååå”))** returnerar **1**. 
+                                                                                                                      |
 
 **Funktioner för datakonvertering**
 
@@ -236,7 +236,14 @@ I följande tabeller finns beskrivningar av datamanipuleringsfunktioner kan anv�
 <li>Batchar som vanliga listor (<strong>Värde</strong> komponent)</li>
 <li>Det aktuella batchnumret (<strong>Batchnummer</strong> component)</li>
 </ul></td>
-<td>I följande exempel skapas datakällan <strong>Lines</strong> som en postlista med tre poster som delas upp i batchar som var och en innehåller högst två poster. <a href="./media/picture-splitlist-datasource.jpg"><img src="./media/picture-splitlist-datasource.jpg" alt="Data source that is divided into batches" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a> Detta anger den utformade formatlayouten, där bindningar till datakällan <strong>Rader</strong> skapas i syfte att generera utdata i XML-format som innehåller enskilda noder för varje batch och posterna i den. <a href="./media/picture-splitlist-format.jpg"><img src="./media/picture-splitlist-format.jpg" alt="Format layout that has bindings to a data source" class="alignnone wp-image-290691 size-full" width="374" height="161" /></a> Följande utgör resultatet av att köra designformatet. <a href="./media/picture-splitlist-result.jpg"><img src="./media/picture-splitlist-result.jpg" alt="Result of running the format" class="alignnone wp-image-290701 size-full" width="358" height="191" /></a></td>
+<td>I följande exempel skapas datakällan <strong>Lines</strong> som en postlista med tre poster som delas upp i batchar som var och en innehåller högst två poster. 
+<a href="./media/picture-splitlist-datasource.jpg"><img src="./media/picture-splitlist-datasource.jpg" alt="Data source that is divided into batches" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a> 
+
+Detta anger den utformade formatlayouten, där bindningar till datakällan <strong>Lines</strong> skapas i syfte att generera utdata i XML-format som innehåller enskilda noder för varje batch och posterna i den. 
+<a href="./media/picture-splitlist-format.jpg"><img src="./media/picture-splitlist-format.jpg" alt="Format layout that has bindings to a data source" class="alignnone wp-image-290691 size-full" width="374" height="161" /></a> 
+
+Följande utgör resultatet av att köra designformatet. 
+<a href="./media/picture-splitlist-result.jpg"><img src="./media/picture-splitlist-result.jpg" alt="Result of running the format" class="alignnone wp-image-290701 size-full" width="358" height="191" /></a></td>
 </tr>
 <tr class="odd">
 <td>LIST (record 1 [, record 2, ...])</td>
@@ -300,7 +307,14 @@ I följande tabeller finns beskrivningar av datamanipuleringsfunktioner kan anv�
 <li>Definierade listposter som vanliga listor (<strong>Värde</strong> komponent)</li>
 <li>Den aktuella postens index (<strong>Nummer</strong> komponent)</li>
 </ul></td>
-<td>I följande exempel är datakällan <strong>Enumerated</strong> skapad som en fast lista över leverantörsposter från datakällan <strong>Vendors</strong>, som refererar till tabellen <strong>VendTable</strong>. <a href="./media/picture-enumerate-datasource.jpg"><img src="./media/picture-enumerate-datasource.jpg" alt="Enumerated data source" class="alignnone wp-image-290711 size-full" width="387" height="136" /></a> Detta är formatet där databindningar skapas för att generera utdata i XML-format som innehåller enskilda leverantörer som uppräknade noder. <a href="./media/picture-enumerate-format.jpg"><img src="./media/picture-enumerate-format.jpg" alt="Format that has data bindings" class="alignnone wp-image-290721 size-full" width="414" height="138" /></a> Detta är resultatet av att köra det designade formatet. <a href="./media/picture-enumerate-result.jpg"><img src="./media/picture-enumerate-result.jpg" alt="Result of running the format" class="alignnone wp-image-290731 size-full" width="567" height="176" /></a></td>
+<td>I följande exempel är datakällan <strong>Enumerated</strong> skapad som en fast lista över leverantörsposter från datakällan <strong>Vendors</strong>, som refererar till tabellen <strong>VendTable</strong>. 
+<a href="./media/picture-enumerate-datasource.jpg"><img src="./media/picture-enumerate-datasource.jpg" alt="Enumerated data source" class="alignnone wp-image-290711 size-full" width="387" height="136" /></a> 
+
+Detta är formatet där databindningar skapas för att generera utdata i XML-format som innehåller enskilda leverantörer som uppräknade noder. 
+<a href="./media/picture-enumerate-format.jpg"><img src="./media/picture-enumerate-format.jpg" alt="Format that has data bindings" class="alignnone wp-image-290721 size-full" width="414" height="138" /></a> 
+
+Detta är resultatet av att köra designformatet. 
+<a href="./media/picture-enumerate-result.jpg"><img src="./media/picture-enumerate-result.jpg" alt="Result of running the format" class="alignnone wp-image-290731 size-full" width="567" height="176" /></a></td>
 </tr>
 <tr class="odd">
 <td>COUNT (list)</td>
@@ -322,13 +336,24 @@ Den skapade listan består av poster med följande fält:
 <li>beskrivning</li>
 </ul>
 I samband med körning returnerar fälten Label och Description värden baserade på formatets språkinställningar.</td>
-<td>I följande exempel visar uppräkningen som introducerats i datamodellen. <a href="./media/ger-listoffields-function-model-enumeration.png"><img src="./media/ger-listoffields-function-model-enumeration-e1474545790761.png" alt="GER LISTOFFIELDS function - model enumeration" class="alignnone wp-image-1203943 size-full" width="514" height="155" /></a>Följande exempel visar:
+<td>I följande exempel visar uppräkningen som introducerats i datamodellen. 
+<a href="./media/ger-listoffields-function-model-enumeration.png"><img src="./media/ger-listoffields-function-model-enumeration-e1474545790761.png" alt="GER LISTOFFIELDS function - model enumeration" class="alignnone wp-image-1203943 size-full" width="514" height="155" /></a>
+
+Följande exempel visar:
 <ul>
 <li>Modelluppräkning har infogats i en rapport som en datakälla.</li>
 <li>ER-uttryck utformat att använda modelluppräkning som en parameter för denna funktion.</li>
 <li>Datakällan för den typ av postlista som infogats i en rapport genom det skapade ER-uttrycket.</li>
 </ul>
-<a href="./media/ger-listoffields-function-in-format-expression.png"><img src="./media/ger-listoffields-function-in-format-expression-e1474546110395.png" alt="GER LISTOFFIELDS function - in format expression" class="alignnone wp-image-1204033 size-full" width="549" height="318" /></a> Följande exempel visar de ER-format som är bundna till datakällan tillhörande en postlisttyp som skapades med funktionen LISTOFFIELDS.<a href="./media/ger-listoffields-function-format-design.png"><img src="./media/ger-listoffields-function-format-design.png" alt="GER LISTOFFIELDS function - format design" class="alignnone size-full wp-image-1204043" width="466" height="221" /></a>Detta är resultatet av körningen av det utformade formatet.<a href="./media/ger-listoffields-function-format-output.png"><img src="./media/ger-listoffields-function-format-output.png" alt="GER LISTOFFIELDS function - format output" class="alignnone size-full wp-image-1204053" width="585" height="158" /></a><strong>Obs!</strong> Översatt text för etiketter och beskrivningar anges automatiskt i ER-formatutmatningen i enlighet med de språkinställningar som har gjorts för överordnade FILE- och FOLDER-element.</td>
+<a href="./media/ger-listoffields-function-in-format-expression.png"><img src="./media/ger-listoffields-function-in-format-expression-e1474546110395.png" alt="GER LISTOFFIELDS function - in format expression" class="alignnone wp-image-1204033 size-full" width="549" height="318" /></a> 
+
+Följande exempel visar de ER-formatelement som är kopplade till en datakälla av typen postlista som skapats med funktionen LISTOFFIELDS.
+<a href="./media/ger-listoffields-function-format-design.png"><img src="./media/ger-listoffields-function-format-design.png" alt="GER LISTOFFIELDS function - format design" class="alignnone size-full wp-image-1204043" width="466" height="221" /></a>
+
+Detta är resultatet av att köra det designade formatet.
+<a href="./media/ger-listoffields-function-format-output.png"><img src="./media/ger-listoffields-function-format-output.png" alt="GER LISTOFFIELDS function - format output" class="alignnone size-full wp-image-1204053" width="585" height="158" /></a><strong>
+
+Obs!</strong> Översatt text för etiketter och beskrivningar fylls i ER-formatet i enlighet med språkinställningarna för den överordnade formatelementen FIL och MAPP.</td>
 </tr>
 <tr class="odd">
 <td>STRINGJOIN (lista, fältnamn, avgränsare)</td>
@@ -338,7 +363,18 @@ I samband med körning returnerar fälten Label och Description värden baserade
 <tr class="even">
 <td>SPLITLISTBYLIMIT (lista, gränsvärde, gränskälla)</td>
 <td>Delar angiven lista i en ny lista bestående av underlistor och returnerar resultatet i form av innehåll i en postlista. Parametern för gränsvärde anger värdet på den gräns som delar ursprungslistan. Gränskälleparametern anger det steg med vilket totalsumman höjs. Gränsen tillämpas inte på en enskild artikel i angiven lista när gränskällan överskrider angiven gräns.</td>
-<td>I följande exempel visas exempelformatet med datakällor. <a href="./media/ger-splitlistbylimit-format.png"><img src="./media/ger-splitlistbylimit-format.png" alt="GER SPLITLISTBYLIMIT - format" class="alignnone size-full wp-image-1204063" width="396" height="195" /></a><a href="./media/ger-splitlistbylimit-datasources.png"><img src="./media/ger-splitlistbylimit-datasources.png" alt="GER SPLITLISTBYLIMIT - datasources" class="alignnone size-full wp-image-1204073" width="320" height="208" /></a>Detta är resultatformatkörningen som en förenklad lista över varuartiklar.<a href="./media/ger-splitlistbylimit-output.png"><img src="./media/ger-splitlistbylimit-output.png" alt="GER SPLITLISTBYLIMIT - output" class="alignnone size-full wp-image-1204083" width="462" height="204" /></a>I följande exempel visas samma format som justerades för att visa listan över varuartiklar i batchar när ett enskilt parti ska omfatta varor med en totalvikt som inte får överstiga gränsen på 9.<a href="./media/ger-splitlistbylimit-format-1.png"><img src="./media/ger-splitlistbylimit-format-1.png" alt="GER SPLITLISTBYLIMIT - format 1" class="alignnone size-full wp-image-1204103" width="466" height="438" /></a><a href="./media/ger-splitlistbylimit-datasources-1.png"><img src="./media/ger-splitlistbylimit-datasources-1.png" alt="GER SPLITLISTBYLIMIT - datasources 1" class="alignnone size-full wp-image-1204093" width="645" height="507" /></a>Detta är resultatet av den justerade formatkörningen. <a href="./media/ger-splitlistbylimit-output-1.png"><img src="./media/ger-splitlistbylimit-output-1.png" alt="GER SPLITLISTBYLIMIT - output 1" class="alignnone size-full wp-image-1204113" width="676" height="611" /></a><strong>Obs!</strong> Gränsen tillämpas inte på den sista artikeln i den ursprungliga listan eftersom värdet (11) i gränskällan (vikt) överskrider angiven gräns (9). Använd antingen funktionen <strong>WHERE</strong> eller uttrycket <strong>Enabled</strong> för respektive formatelement för att ignorera (hoppa över) underlistor i samband med rapportgenerering (vid behov).</td>
+<td>I följande exempel visas exempelformatet med datakällor. 
+<a href="./media/ger-splitlistbylimit-format.png"><img src="./media/ger-splitlistbylimit-format.png" alt="GER SPLITLISTBYLIMIT - format" class="alignnone size-full wp-image-1204063" width="396" height="195" /></a><a href="./media/ger-splitlistbylimit-datasources.png"><img src="./media/ger-splitlistbylimit-datasources.png" alt="GER SPLITLISTBYLIMIT - datasources" class="alignnone size-full wp-image-1204073" width="320" height="208" /></a>
+
+Detta är resultatformatkörningen som visar en plan lista över artiklar.
+<a href="./media/ger-splitlistbylimit-output.png"><img src="./media/ger-splitlistbylimit-output.png" alt="GER SPLITLISTBYLIMIT - output" class="alignnone size-full wp-image-1204083" width="462" height="204" /></a>
+
+I följande exempel visas samma format som justerades för att visa listan med artiklar i systemet i batchar när ett enda parti ska omfatta varor med en totalvikt som inte får överstiga gränsen på 9.
+<a href="./media/ger-splitlistbylimit-format-1.png"><img src="./media/ger-splitlistbylimit-format-1.png" alt="GER SPLITLISTBYLIMIT - format 1" class="alignnone size-full wp-image-1204103" width="466" height="438" /></a><a href="./media/ger-splitlistbylimit-datasources-1.png"><img src="./media/ger-splitlistbylimit-datasources-1.png" alt="GER SPLITLISTBYLIMIT - datasources 1" class="alignnone size-full wp-image-1204093" width="645" height="507" /></a>
+
+Detta är resultatet av att köra det justerade formatet. <a href="./media/ger-splitlistbylimit-output-1.png"><img src="./media/ger-splitlistbylimit-output-1.png" alt="GER SPLITLISTBYLIMIT - output 1" class="alignnone size-full wp-image-1204113" width="676" height="611" /></a>
+
+<strong>Obs!</strong> Gränsen tillämpas inte på den sista artikeln i den ursprungliga listan eftersom värdet (11) i gränskällan (vikt) överskrider angiven gräns (9). Använd antingen funktionen <strong>WHERE</strong> eller uttrycket <strong>Enabled</strong> för respektive formatelement för att ignorera (hoppa över) underlistor i samband med rapportgenerering (vid behov).</td>
 </tr>
 <tr class="odd">
 <td>FILTER (list, villkor)</td>
@@ -511,7 +547,10 @@ I samband med körning returnerar fälten Label och Description värden baserade
 <tr class="even">
 <td>FORMAT (string 1, string 2[, string 3, ...])</td>
 <td>Returnerar den definierade strängen, som har formaterats genom att byta ut alla förekomster av <strong>%N</strong> med argumentet <em>n</em>. Argumenten är strängar. Om ett argument inte har angetts för en parameter, returneras parametern som <strong>&quot;%N&quot;</strong> i strängen. För värden av typen <strong>real</strong> är strängkonverteringen begränsad till två decimaler.</td>
-<td>I det här exemplet returnerar datakällan <strong>PaymentModel</strong> listan över kundposter via komponenten <strong>Customer</strong> och bearbetar datumvärdet via fältet <strong>ProcessingDate</strong>. <a href="./media/picture-format-datasource.jpg"><img src="./media/picture-format-datasource.jpg" alt="PaymentModel data source" class="alignnone wp-image-290751 size-full" width="293" height="143" /></a> I ER-formatet, som har utformats för att generera en elektronisk fil för utvalda kunder, väljs <strong>PaymentModel</strong> som en datakälla och styr processflödet. Ett undantag kastas för slutanvändare när en vald kund stoppas för det datum då rapporten bearbetas. Formeln, som utformats för denna typ av bearbetningsstyrning, kan endast använda följande resurser:
+<td>I det här exemplet returnerar datakällan <strong>PaymentModel</strong> listan över kundposter via komponenten <strong>Customer</strong> och bearbetar datumvärdet via fältet <strong>ProcessingDate</strong>. 
+<a href="./media/picture-format-datasource.jpg"><img src="./media/picture-format-datasource.jpg" alt="PaymentModel data source" class="alignnone wp-image-290751 size-full" width="293" height="143" /></a> 
+
+I ER-formatet, som har utformats för att generera en elektronisk fil för utvalda kunder, väljs <strong>PaymentModel</strong> som en datakälla och styr processflödet. Ett undantag kastas för slutanvändare när en vald kund stoppas för det datum då rapporten bearbetas. Formeln, som utformats för denna typ av bearbetningsstyrning, kan endast använda följande resurser:
 <ul>
 <li>Finance and Operations-etikett SYS70894, som har följande text:
 <ul>
@@ -527,7 +566,7 @@ I samband med körning returnerar fälten Label och Description värden baserade
 Här följer formeln som kan utformas: FORMAT (CONCATENATE (@&quot;SYS70894&quot;, &quot;. &quot;, @&quot;SYS18389&quot;), model.Customer.Name, DATETIMEFORMAT (model.ProcessingDate, &quot;d&quot;)) Om en rapport bearbetas för <strong>Litware-butikskunden</strong> den 17 december 2015, i kulturen <strong>EN-US</strong> och språket <strong>EN-US</strong>, så returnerar denna formel följande text, som sedan kan presenteras i form av ett undantagsmeddelande för slutanvändaren: &quot;Nothing to print. Kunden Litware Retail har stoppats för 2015-12-17&quot; Om samma rapport bearbetas för<strong> kunden Litware Retail</strong> den 17 december 2015, kommer denna formel i kulturen <strong>SV</strong> och med språket <strong>SV</strong> att returnera följande text, som använder ett annat datumformat: &quot;Det finns inget att skriva ut. Gäldenären "Litware Retail" spärras dunder 2015-12-17.&quot; <strong>Obs!</strong> Följande syntax används i ER-formler för etiketter:
 <ul>
 <li><strong>För etiketter från Finance and Operations-resurser:</strong> <strong>@&quot;X&quot;</strong>, där X är etikettens ID i programobjektträdet (Application Object Tree, AOT)</li>
-<li><strong>För etiketter i ER-konfigurationer:</strong> <strong>@&quot;SV_LABEL:X&quot;</strong>, där X är etikettens ID i ER-konfigurationen</li>
+<li><strong>För etiketter i ER-konfigurationer:</strong> <strong>@&quot;GER_LABEL:X&quot;</strong>, där X är etikettens ID i ER-konfigurationen</li>
 </ul></td>
 </tr>
 <tr class="odd">
@@ -549,7 +588,8 @@ Här följer formeln som kan utformas: FORMAT (CONCATENATE (@&quot;SYS70894&quot
 <td>TRIM (string)</td>
 <td>Returnerar angiven text efter trunkering av inledande och avslutande blanksteg, och avlägsnar multipla blanksteg mellan ord. </td>
 <td><strong>TRIM ("     Sample     text     ")</strong> returnerar <strong>"Sample text".</strong></td>
-=======
+</tr>
+<tr class="odd">
 <td>GETENUMVALUEBYNAME (uppräkning av sökväg för datakälla, uppräkning av etikettext för värde)</td>
 <td>Returnerar ett värde för en angiven datakälla efter angiven text för denna uppräkningsetikett.</td>
 <td>I följande exempel visas ReportDirection-uppräkningen introducerad i en datamodell. Observera att etiketter definieras för uppräkningsvärden.
