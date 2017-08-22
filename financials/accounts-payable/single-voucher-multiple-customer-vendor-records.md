@@ -1,9 +1,9 @@
 ---
 title: "En verifikation med flera kund- eller leverantörsposter"
 description: "Det här avsnittet innehåller en översikt över vad som händer när du bokför en enskild verifikation med flera kund- eller leverantörsposter. Den här funktionen ska annulleras i kommande versioner av Microsoft Dynamics 365 for Finance and Operations, Enterprise edition och därför rekommenderar vi att inte använda denna metod för bokföring på grund av redovisningens inverkan på kvittningsbehandling."
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -14,8 +14,8 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 222534
 ms.assetid: d4df11ce-4d36-4c66-8230-f5fc58e021bc
 ms.search.region: global
-ms.author: abruer
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.author: Shiva.Pandey
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008

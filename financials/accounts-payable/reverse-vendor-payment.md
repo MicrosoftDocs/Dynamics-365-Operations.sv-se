@@ -1,9 +1,9 @@
 ---
 title: "Återföra en leverantörsbetalning"
 description: "Den här artikeln beskriver skillnaderna mellan att återföra, ta bort, annullera och avvisa en betalning. Den beskriver dessutom de två metoderna för att återföra en leverantörscheck."
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -15,7 +15,7 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 14361
 ms.assetid: 9f0a1883-cbe0-4cc7-b9f3-dd12fb85ebe8
 ms.search.region: Global
-ms.author: kweekley
+ms.author: Shiva.Pandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
@@ -23,7 +23,6 @@ ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
 ms.openlocfilehash: 4f8b77efabe0c002654dac0b80d721a79dc42003
 ms.contentlocale: sv-se
 ms.lasthandoff: 05/25/2017
-
 
 ---
 
