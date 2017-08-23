@@ -18,12 +18,11 @@ ms.search.industry: Service industries
 ms.author: knelson
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: d80dea89db1fbe270b96063f3818ec3ac95239c8
+ms.translationtype: HT
+ms.sourcegitcommit: db41b3873755f93895aea7a32b65f2a8ed6a57fd
+ms.openlocfilehash: 83899969255a9b771fc5e62e66e3c5ffdca0296e
 ms.contentlocale: sv-se
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 08/10/2017
 
 ---
 
@@ -105,11 +104,11 @@ Hämta och installera mobilappen Dynamics 365 for Unified Operations:
 2.  Välj **tidangivelse**. Du kan se kalenderdatum för den aktuella veckan.
 3.  Välj för ett valt datum **åtgärder** &gt; **ny post**.
 4.  Ange antalet timmar att registrera.
-5.  Välj nästa projekt för nästa tidsangivelse. En lista visar de projekt som laddas in i din app för användning offline. 50 objekt laddas som standard, men en utvecklare kan ändra detta antal. För information, se [Mobil plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform).
+5.  Välj nästa projekt för nästa tidsangivelse. En lista visar de projekt som laddas in i din app för användning offline. 50 objekt laddas som standard, men en utvecklare kan ändra detta antal. För information, se [Mobil plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page).
 6.  Om projektet inte finns i listan, välj **Sök**. Sök efter namn eller gå till sök efter projektnamn eller kund.
-7.  Markera en kategori. En lista visar de kategorier som laddas in i din app för användning offline. 50 objekt laddas som standard, men en utvecklare kan ändra detta antal. För information, se [Mobil plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform).
+7.  Markera en kategori. En lista visar de kategorier som laddas in i din app för användning offline. 50 objekt laddas som standard, men en utvecklare kan ändra detta antal. För information, se [Mobil plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page).
 8.  Om kategorin inte finns i listan, välj **Sök**. Sök efter kategori eller växla om du vill söka efter kategorinamnet.
-9.  Välj en aktivitet. En lista visar de aktiviteter som laddas in i din app för användning offline. 50 objekt laddas som standard, men en utvecklare kan ändra detta antal. För information, se [Mobil plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform).
+9.  Välj en aktivitet. En lista visar de aktiviteter som laddas in i din app för användning offline. 50 objekt laddas som standard, men en utvecklare kan ändra detta antal. För information, se [Mobil plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page).
 10. Om aktiviteten inte finns i listan, välj **Sök**. Sök efter aktivitetsnummer eller växla till att söka efter funktion.
 
 11. Välj radegenskapen.

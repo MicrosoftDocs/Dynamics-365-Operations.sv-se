@@ -1,9 +1,9 @@
 ---
 title: "Budgetplaneringsmallar för Excel"
 description: "Det här avsnittet beskriver hur du skapar Microsoft Excel-mallar som kan användas med budgetplaner."
-author: twheeloc
+author: ryansandness
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -14,12 +14,12 @@ ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 261794
 ms.assetid: 1d8e99c1-b70d-41ba-991e-ab50b16797e0
 ms.search.region: Global
-ms.author: sigitac
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.author: ryansand
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
-ms.openlocfilehash: 734c8930f239d8c9d220601bb2103bd55dd5bfd8
+ms.sourcegitcommit: 1945d137b337508a1850e3e679a60487aecb6b84
+ms.openlocfilehash: 7cec40859a8c68cb8a9751c5531c67cef7706258
 ms.contentlocale: sv-se
 ms.lasthandoff: 07/27/2017
 
@@ -38,22 +38,27 @@ Det här avsnittet beskriver hur du skapar Excel-mallar som ska användas med bu
 
 Budgetplandokument kan visas och redigeras med hjälp av en eller flera av layouter. Varje layout kan ha en associerad budgetplansmall som låter dig visa och redigera budgetplandata i ett Excel-kalkylblad. I det här avsnittet genereras en budgetplansmall med hjälp av en befintlig layoutkonfiguration. 
 
-Öppna **Budgetplanlista** (**Budgetering** &gt; **Budgetplaner**). Klicka på **Ny** om du vill skapa en ny budgetplan. 
+1. Öppna **Budgetplanlista** (**Budgetering** &gt; **Budgetplaner**). 
+2. Klicka på **Ny** om du vill skapa en ny budgetplan. 
 
-[![bpt1](./media/bpt11-1024x552.png)](./media/bpt11.png) 
+  [![Budgetplanslista](./media/bpt11-1024x552.png)](./media/bpt11.png) 
 
-Använd radalternativet **Lägg till** för att lägga till rader. Klicka på **Layout** för att visa dokumentlayoutens konfiguration för budgetplanen. 
+3. Använd radalternativet **Lägg till** för att lägga till rader. Klicka på **Layout** för att visa dokumentlayoutens konfiguration för budgetplanen. 
 
-[![bpt2](./media/bpt2-1024x274.png)](./media/bpt2.png) 
+  [![Lägg till budgetplaner](./media/bpt2-1024x274.png)](./media/bpt2.png) 
 
-Du kan granska layoutkonfigurationen och justera den efter behov. Navigera till **Mall** &gt; **Generera** för att skapa en Excel-fil för den här layouten. När mallen har skapats går du till **Mall** &gt; **Visa** om du vill öppna och granska mallen för budgetplan. Du kan spara Excel-filen på hårddisken. [![bpt3](./media/bpt3-1024x545.png)](./media/bpt3.png)
+Du kan granska layoutkonfigurationen och justera den efter behov. 
+1. Navigera till **Mall** &gt; **Generera** för att skapa en Excel-fil för den här layouten. 
+2. När mallen har skapats går du till **Mall** &gt; **Visa** om du vill öppna och granska mallen för budgetplan. Du kan spara Excel-filen på hårddisken. 
+
+[![Spara som](./media/bpt3-1024x545.png)](./media/bpt3.png)
 
 > [!NOTE] 
 > Budgetplanens dokumentlayout kan inte redigeras sedan en Excel-mall har associerats med den. För att ändra layouten, ta bort associerad Excel-mallfil och återskapa den. Detta krävs för att hålla fälten i layouten och kalkylbladet synkroniserade. 
 
 Excel-mallen innehåller alla element från budgetplanens dokumentlayout, där kolumnen **Tillgängliga i kalkylbladet** har angetts som True. Överlappande element tillåts inte i Excel-mallen. Om layouten exempelvis innehåller kolumner för Begäran K1, Begäran K2, Begäran K3 och Begäran K4 och en kolumn för total begäran som motsvarar summan för alla 4 kvartalkolumner, är endast den kvartalsvisa kolumnen (totalkolumnen) tillgänglig att användas i Excel-mallen. Excel-filen kan inte uppdatera överlappande kolumner under uppdateringen, detta eftersom informationen i tabellen kan bli för gammal eller felaktig.
 
-[![bpt4](./media/bpt4-1024x615.png)](./media/bpt4.png)
+[![Exempel](./media/bpt4-1024x615.png)](./media/bpt4.png)
 
 > [!NOTE] 
 > Om du vill undvika problem med att visa och redigera budgetplandata med Excel, bör samma användare vara inloggad på både Microsoft Dynamics 365 for Finance and Operations, Enterprise edition och Office-tillägget för datakoppling till Microsoft Dynamics.
@@ -63,7 +68,7 @@ För att lägga till sidrubriksinformation, markera den översta raden i Excel-f
 
 [![bpt5](./media/bpt5-1024x615.png)](./media/bpt5.png) 
 
-I fliken **Design**, ** ** klicka på fälten **Lägg till** och markera sedan **BudgetPlanHeader** som datakälla för enheten.
+I fliken **Design**, klicka på fälten **Lägg till** och markera sedan **BudgetPlanHeader** som datakälla för enheten.
 
 [![bpt6](./media/bpt6-1024x615.png)](./media/bpt6.png)
 

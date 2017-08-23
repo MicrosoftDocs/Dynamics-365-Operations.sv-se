@@ -1,9 +1,9 @@
 ---
 title: Kredit och inkasso i Kundreskontra
 description: "Information om kundreskontrasamlingar hanteras i en central vy med hjälp av Microsoft Dynamics 365 for Finance and Operations, Enterprise edition-samlingssidan. Kredit- och inkassoansvariga kan använda denna centrala vy för att hantera inkasseringar. Inkassohandläggare kan börja inkassoprocessen från kundlistor som genereras med hjälp av fördefinierade inkassokriterier eller från sidan Kunder."
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -15,15 +15,14 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 3061
 ms.assetid: fd851520-8d93-434b-845b-be127d6ac3a6
 ms.search.region: Global
-ms.author: mfalkner
+ms.author: Shiva.Pandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
-ms.openlocfilehash: 49bc7ca4e5fff4c2686a8b7396d5bd2bcdd0c51a
+ms.translationtype: HT
+ms.sourcegitcommit: 1982e495f740d6061b9574aa9f40f38180e8d110
+ms.openlocfilehash: 282084b9d4e63795ec475690e5b22e06c23bb704
 ms.contentlocale: sv-se
-ms.lasthandoff: 06/20/2017
-
+ms.lasthandoff: 08/03/2017
 
 ---
 
@@ -90,6 +89,8 @@ Du kan efterskänka, återinföra eller återföra hela räntefakturor eller avg
 
 Dessa justeringar påverkar endast räntefakturor, och ränta och avgifter som de innehåller. Använd stegen i ”Skapa avskrivningstransaktioner i ett steg" för att skriva av alla avgifter som en kund är skyldig.
 
+Mer information finns i [Skapa en räntekod med ett intervall](tasks/create-interest-code-range.md) och [Bearbeta ränta](tasks/process-interest.md). 
+
 ## <a name="create-writeoff-transactions"></a>Skapa avskrivningstransaktioner
 Du kan skriva av dåliga skulder genom att klicka på Skriv av i formuläret Inkasso och på listsidorna Åldriga saldon, Kunder och Öppna kundfakturor. 
 
@@ -100,7 +101,10 @@ När du skriver av transaktioner för en kund, markeras alla transaktioner för 
 -   Den tredje typen av journalrad innehåller information för redovisningsavskrivning för moms. Denna journalrad skapas, om konfigurationsnyckeln för separata momsvippen valts på sidan Parametrar för kundreskontra. Om markerade transaktioner innehåller flera kombinationer av konto för utgående moms, dimension och momskod, skapas en separat journalrad för varje kombination.
 
 Avskrivningstransaktionen skapas i transaktionsvalutan.
-Bearbeta otillräckliga medel (NSF-betalning) 
+
+Mer information finns i [Skapa en avskrivningsjournal för en kund](tasks/create-write-off-journal-customer.md).
+
+<a name="process-not-sufficient-funds-nsf-payments"></a>Bearbeta otillräckliga medel (NSF-betalning) 
 --------------------------------------------
 
 Du kan bearbeta NSF-betalningar, genom att klicka på NSF-betalning på sidan Inkasso. När du klickar på den här knappen, annulleras betalningen. Om en NSF-avgift tillämpas för kunden, skapas en avgiftstransaktion i en betalningsjournal. Avgiftsbeloppet baseras på inställningarna för de automatiska avgifterna. De automatiska avgifterna som gäller för NSF-betalningar anges av avgiftsgruppen som valts på sidan Bankkonton för det berörda bankkontot.

@@ -1,9 +1,9 @@
 ---
 title: "Kundbetalningar för ett delbelopp"
 description: "Ibland kan kunder betala ett belopp som är mindre än beloppet i en faktura. Det här avsnittet innehåller en beskrivning av de olika alternativen för att hantera den här situationen. Vilka alternativ som är tillgängliga för dig beror på dina affärskrav och konfigurationer."
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -14,15 +14,14 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 13011
 ms.assetid: 20423a2d-6997-4e1c-a596-a77016600071
 ms.search.region: Global
-ms.author: kweekley
+ms.author: Shiva.Pandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 795d13a07065a125a750970beaff85b59307f623
+ms.translationtype: HT
+ms.sourcegitcommit: 1982e495f740d6061b9574aa9f40f38180e8d110
+ms.openlocfilehash: ebfa8aaed6f82e9c3142540d0850c59d49328d59
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 08/03/2017
 
 ---
 
@@ -61,5 +60,5 @@ När kunder gör en betalning kan det finnas ett mycket litet belopp som fortfar
 Kunder kan göra en delbetalning där det resterande beloppet inte betalas men är större än det underbetalningsbeloppet som anges på sidan **Leverantörsreskontraparametrar**. Om du vill markera fakturan som helt kvittad kan du använda alternativet **Full kvittning** på sidan **Kvitta transaktion**. (Du kan aktivera den fullständiga kvittningsfunktionen, med hjälp av en konfigurationsnyckel.) Till exempel bokförs en faktura på 1 000,00 och kunden gör en betalning på 990,00. Du har kommit överens om att kunden inte behöver betala återstående 10,00. När du har märkt fakturan för kvittning kan du även markera **Full kvittning**. Fakturan betraktas sedan som helt kvittad. Skillnaden på 10,00 bokförs på ett kassarabattskonto som ytterligare kassarabattbelopp.
 
 
-
+Mer information finns i [Sätta in kundbetalningar](tasks/deposit-customer-payments.md).
 

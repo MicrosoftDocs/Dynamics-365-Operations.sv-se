@@ -3,7 +3,7 @@ title: Hantering av redovisningsjournaler
 description: "Det här avsnittet innehåller en beskrivning av de funktioner i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition som kan underlätta processen för allmänna journaler, och som även kan göra det enklare att garantera att rätt data hämtas in samt att interna kontroller inte påverkas."
 author: twheeloc
 manager: AnnBe
-ms.date: 04/25/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,12 +18,11 @@ ms.search.region: Global
 ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 244eada4202106b65198e3d6e3d0dedaa5486632
+ms.translationtype: HT
+ms.sourcegitcommit: c4f5dae90c5fcaaa52a7087d7c20b2de343b7da0
+ms.openlocfilehash: 68da281cb4793ed83f70c68d061d327aa8a8c772
 ms.contentlocale: sv-se
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 08/01/2017
 
 ---
 
@@ -40,7 +39,7 @@ Ett av de viktigaste områdena att konfigurera är journalnamn. Det är en god i
 
 På **Journalnamn** sidan kan du ställa in följande element:
 
--   **Arbetsflödesgodkännande** – För att öka den interna kontrollen, definiera journalarbetsflöden som upprättar gränser för granskning och godkännande av åtgärder, på grundval av kriterier såsom totala debetbeloppet. Du ställer in arbetsflöden för allmänna journaler på sidan ** Arbetsflöden för redovisning**.
+-   **Arbetsflödesgodkännande** – För att öka den interna kontrollen, definiera journalarbetsflöden som upprättar gränser för granskning och godkännande av åtgärder, på grundval av kriterier såsom totala debetbeloppet. Du ställer in arbetsflöden för allmänna journaler på sidan **Arbetsflöden för redovisning**.
 -   **Standardvärden** – Välj standardvärdena för kvittning, valuta och finansiella mått.
 -   **Journalkontroll** – Du kan ställa in begränsningar för företaget och kontotyp och även segmentvärden. 
 
@@ -82,8 +81,13 @@ Huvudkontoinställningen ger flera alternativ för allmän journal bearbetning:
 
 Redovisningsstrukturer och avancerade regler strukturer är oerhört viktiga för att garantera att de data som krävs för ekonomisk rapportering och uppföljning av prestationer är fångade under allmän journal bearbetning och all dokumentation. Redovisningsstrukturer och avancerade regler strukturer kan du skräddarsy data entry-upplevelse. Du kan registrera data endast för finansiella mått som är relevanta i varje situation, och kan också genomdriva kravet på att obligatorisk och korrekt data alltid finnas fångat.
 
-Mer information finns i [Planering: kontoplan](plan-chart-of-accounts.md). 
-
+Mer information finns i följande avsnitt:
+- [Planering: Kontoplan](plan-chart-of-accounts.md) 
+- [Skapa avancerade regler för journaler](tasks/create-advanced-rules-journals.md)
+- [Skapa en post i en redovisningsjournal med hjälp av en mall](tasks/create-journal-entry-template.md)
+- [Skapa och validera journaler](tasks/create-validate-journals.md)
+- [Bokför periodiska journaler](tasks/post-periodic-journals.md)
+- [Bearbeta journal för redovisningsallokering](tasks/process-ledger-allocation-journal.md)
 
 
 

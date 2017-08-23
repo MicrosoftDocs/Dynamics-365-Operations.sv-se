@@ -3,7 +3,7 @@ title: "Momsöversikt"
 description: "Det här avsnittet innehåller en översikt över momssystemet. Det ger en beskrivning av komponenterna för inställning av moms och hur de arbetar tillsammans."
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,12 +18,11 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 415928125c14dfc69020b712f281835701ba2f83
+ms.translationtype: HT
+ms.sourcegitcommit: c4f5dae90c5fcaaa52a7087d7c20b2de343b7da0
+ms.openlocfilehash: f4838dade6b2694a11f4b9775fe53560b1332f18
 ms.contentlocale: sv-se
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 08/01/2017
 
 ---
 
@@ -47,7 +46,7 @@ Följande diagram visar de enheterna för skatteinställning och hur de hör iho
 
 För varje momstyp som ett företag redovisar redovisa måste en momskod anges. En momskod lagrar skattesatserna och beräkningsregler för moms. 
 
-Varje momskod måste vara länkad till en momskvittningsperiod. Momskvittningsperiodens definierar intervallerna med vilka moms rapporteras och betalas till skattemyndigheten. Varje momskvittningsperiod måste vara länkad till en skattemyndighet. En skattemyndighet representerar enheten som moms rapporteras och betalas till. Den definierar också utseendet på momsrapporten. Momsmyndigheter kan relateras till leverantörskonton. 
+Varje momskod måste vara länkad till en momskvittningsperiod. Momskvittningsperiodens definierar intervallerna med vilka moms rapporteras och betalas till skattemyndigheten. Varje momskvittningsperiod måste vara länkad till en skattemyndighet. En skattemyndighet representerar enheten som moms rapporteras och betalas till. Den definierar också utseendet på momsrapporten. Momsmyndigheter kan relateras till leverantörskonton. Mer information finns i [Ställ in moms för kvittningsperioder](tasks/set-up-sales-tax-settlement-periods.md).
 
 Varje momskod måste också vara länkad till en redovisningsbokföringsgrupp. En redovisningsbokföringgrupp anger huvudkontona som belopp för momskoderna som ska bokföras på. 
 
@@ -60,13 +59,13 @@ I tabellen nedan beskrivs enheterna och sekvensen för momsinställningar.
 | Inställningsaktivitet                                                  | Nödvändig/frivillig och beskrivning                                                                                                                                                                                                                                                                                         |
 |-----------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Skapa huvudkonton.                                           | Obligatoriskt. Innan du kan ställa in momsfunktionerna måste du skapa huvudkontona som företaget använder för att betala och registrera skatter.                                                                                                                                                                             |
-| Ställ in redovisningsbokföringsgrupper för moms.                     | Obligatoriskt. Redovisningsbokföringsgrupper definierar huvudkontona för att registrera och betala moms.                                                                                                                                                                                                                            |
-| Ställ in momsmyndigheter.                                   | Obligatoriskt. Momsmyndigheter är de enheter som moms måste rapporteras och betalas till.                                                                                                                                                                                                                                   |
+| Ställ in redovisningsbokföringsgrupper för moms.                     | Obligatoriskt. Redovisningsbokföringsgrupper definierar huvudkontona för att registrera och betala moms.   Mer information finns i [Ställ in redovisningsbokföringsgrupper för moms](tasks/set-up-ledger-posting-groups-sales-tax.md).                                                                                 |
+| Ställ in momsmyndigheter.                                   | Obligatoriskt. Momsmyndigheter är de enheter som moms måste rapporteras och betalas till.    Mer information finns i [Ställ in skattemyndigheter](tasks/set-up-sales-tax-authorities.md).                                                                                                                                          |
 | Ställ in momskvittningsperioder.                            | Obligatoriskt. Momskvittningsperioder innehåller information om när och hur ofta moms måste rapporteras och betalas. De är relaterad till en momsmyndighet.                                                                                                                                                       |
-| Ställ in momsrapporteringskoder.                               | Valfritt. Momsrapporteringskoder kan tilldelas till momskoder för rapport av belopp för flera momskoder under en momsrapporteringskod.                                                                                                                                                                 |
-| Ställ in momskoder.                                         | Obligatoriskt. Momskoder lagrar skattesatserna och beräkningsregler för varje moms. Momskoder är relaterade till en momskvittningsperiod och en redovisningsbokföringsgrupp.                                                                                                                                        |
+| Ställ in momsrapporteringskoder.                               | Valfritt. Momsrapporteringskoder kan tilldelas till momskoder för rapport av belopp för flera momskoder under en momsrapporteringskod. Mer information finns i [Ställ in momsrapporteringskoder](tasks/set-up-sales-tax-reporting-codes.md).                                         |
+| Ställ in momskoder.                                         | Obligatoriskt. Momskoder lagrar skattesatserna och beräkningsregler för varje moms. Momskoder är relaterade till en momskvittningsperiod och en redovisningsbokföringsgrupp. Mer information finns i [Ställ in momskoder](tasks/set-up-sales-tax-codes.md).                                |
 | Ställa in momsgrupper.                                        | Obligatoriskt. Momsgrupper innehåller en lista med försäljningskoder som gäller för parten (kund eller leverantör) för en transaktion. För en given transaktion bestämmer skärningspunkten för momskoder i momsgruppen och artikelmomsgruppen momskoderna som gäller för den transaktionen.                  |
-| Ställ in artikelmomsgrupper.                                   | Obligatoriskt. Artikelmomsgrupper innehåller en lista med försäljningskoder som gäller för resursen (produkt, tjänst och så vidare) för en transaktion. För en given transaktion bestämmer skärningspunkten för momskoder i momsgruppen och artikelmomsgruppen momskoderna som gäller för den transaktionen. |
+| Ställ in artikelmomsgrupper.                                   | Obligatoriskt. Artikelmomsgrupper innehåller en lista med försäljningskoder som gäller för resursen (produkt, tjänst och så vidare) för en transaktion. För en given transaktion bestämmer skärningspunkten för momskoder i momsgruppen och artikelmomsgruppen momskoderna som gäller för den transaktionen. Mer information, se [Ange momsgrupper och artikelmomsgruppe](tasks/set-up-sales-tax-groups-item-sales-tax-groups.md). |
 | Ställ in momsparametrar på ansökningsparametersidorna. | Obligatoriskt. Olika områden som till exempel Redovisning och Leverantörsreskontra, Kundreskontra, måste ställa in parametrar för korrekt beräkning av indirekta skatter. Även om de flesta av dessa parametrar har standardvärden måste de ändras så att de passar för varje företags behov.                                          |
 
 ## <a name="sales-tax-on-transactions"></a>Moms på transaktioner
@@ -98,5 +97,5 @@ Du skulle normalt behöva betala in 2 500 till skattemyndigheten när fakturan 
 Om du emellertid använder villkorsmoms kvittar du med skattemyndigheten när du får betalningen från kunden den 30 juli.
 
 
-
+Mer information finns i [Ställ in källskatt](tasks/set-up-withholding-tax.md).
 

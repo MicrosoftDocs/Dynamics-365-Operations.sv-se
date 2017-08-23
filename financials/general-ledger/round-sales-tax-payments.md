@@ -3,7 +3,7 @@ title: Momsbetalningar och avrundningregler
 description: "Den här artikeln beskriver hur avrundningsregelinställningar på skattemyndigheter fungerar och avrundning av momssaldot under jobbet Kvitta och bokför moms."
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,12 +18,11 @@ ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 7ec117598a6a008e5b274179659b515824029874
+ms.translationtype: HT
+ms.sourcegitcommit: c4f5dae90c5fcaaa52a7087d7c20b2de343b7da0
+ms.openlocfilehash: 8de01b77fcbeb65321e60614b6a11d264460208f
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 08/01/2017
 
 ---
 
@@ -65,8 +64,11 @@ Följande tabell visar hur ett belopp på 98 765,43 avrundas med hjälp av varje
 > [!NOTE]                                                                                  
 > Om du väljer Egen fördel är alltid avrundningen till fördelen för den juridiska personen. 
 
-Mer information finns i [Momsöversikt](indirect-taxes-overview.md). 
-
+Mer information finns i följande avsnitt:
+- [Momsöversikt](indirect-taxes-overview.md)
+- [Skapa en momsbetalning](tasks/create-sales-tax-payment.md)
+- [Skapa försäljningstransaktioner i dokument](tasks/create-sales-tax-transactions-documents.md)
+- [Visa bokförda momstransaktioner](tasks/view-posted-sales-tax-transactions.md)
 
 
 

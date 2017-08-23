@@ -15,13 +15,13 @@ ms.custom: 16381
 ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
 ms.search.region: Global
 ms.author: margoc
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9c083fd26a58e96b3bb810df11eadace184f9dbf
-ms.openlocfilehash: eaa3317acf7df84d06ad3641486df1c096b26a56
+ms.sourcegitcommit: 529751c09b8f99f986cad23a633bea661929d558
+ms.openlocfilehash: 171d006e20834ea4ad6d5651ec27fc305eac4bc6
 ms.contentlocale: sv-se
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/09/2017
 
 ---
 
@@ -34,8 +34,8 @@ Den här artikeln innehåller en översikt över komponenterna i hjälpsystemet 
 > [!NOTE] 
 > Följande produkter är nära relaterade: Dynamics 365 for Finance and Operations, Enterprise edition; Dynamics 365 for Retail; samt Dynamics 365 for Talent. Samma funktioner kan förekomma i samtliga 3 produkter. I avsnitt som huvudsakligen berör Retail blir produktnamnet därför Dynamics 365 for Retail; i avsnitt som främst berör Talent blir produktnamnet Dynamics 365 for Talent; och i avsnitt som berör kärnprodukten blir produktnamnet Dynamics 365 for Finance and Operations. Avsnitt som skrivs för en produkt kan även gälla för samma funktioner i en relaterad produkt.
 
-Hjälpsystemet är gemensamt för alla Unified Operations-produkter:
-- Dynamics 365 for Finance and Operations, Enterprise-utgåvan
+Hjälpsystemet är gemensamt för följande produkter:
+- Dynamics 365 for Finance and Operations, Enterprise Edition
 - Dynamics 365 for Retail
 - Dynamics 365 for Talent
 
@@ -73,7 +73,7 @@ Du kan också hitta webbplatsens innehåll via valfri sökmotor. För bästa res
 
 ![Sökresultat för webbplats](./media/site-search-results-2.png)
 
-### <a name="the-docsmicrosoftcom-table-of-contents-for-unified-operations"></a>docs.microsoft.com-innehållsförteckningen för Unified Operations
+### <a name="the-docsmicrosoftcom-table-of-contents"></a>docs.microsoft.com-innehållsförteckningen
 Alla produkter delar en och samma innehållsförteckning på dokumentwebbplatsen, vilket gör att kunder kan se kontexten för det avsnitt som de befinner sig i. Du kan också använda filterkontrollen för att hitta avsnitt som du letar efter.
 
 ### <a name="how-can-i-contribute"></a>Hur kan jag bidra? 
@@ -101,7 +101,7 @@ Ange en e-postadress och ett nytt lösenord till höger för att skapa ett nytt 
 ## <a name="task-guides"></a>Uppgiftsguider
 En uppgiftsguide är en kontrollerad, guidad, interaktiv upplevelse som leder dig genom stegen för en uppgift eller en affärsprocess. Du kan öppna (spela upp) en uppgiftsguide via fönstret Hjälp. När du först klickar på en uppgiftsguide visar fönstret Hjälp steg för steg-instruktionerna för uppgiften. Nu finns det lokaliserade uppgiftsguider. 
 
-Vi tillhandahåller olika typer av uppgiftsguider för varje Unified Operations-produkt. Avsnittet Komma åt uppgiftsguider från hjälpfönstret beskriver hur du hittar rätt uppgiftsguider för just din produkt. 
+Vi ger olika typer av uppgiftsguider för varje produkt som Dynamics 365 for Retail, Dynamics 365 for Finance and Operations, eller Dynamics 365 for Talent. Avsnittet Komma åt uppgiftsguider från hjälpfönstret beskriver hur du hittar rätt uppgiftsguider för just din produkt. 
 
 ![Läsvy för uppgiftsguide](./media/task-guide-ops.png)
 
@@ -169,7 +169,7 @@ När en systemadministratör har slutfört de här stegen kan du öppna Hjälp-f
 -   Om en uppgiftsguide ännu inte har översatts, visas enbart en del text i guiden (text för kontroller) på det valda språket när du öppnar den.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
-Följande tabell anger webbplatser med tillhandahåller Unified Operations-innehåll. Våra innehållswebbplatser är ordnade för att stödja kundlivscykeln. Varje fas stöds av en annan uppsättning webbplatser. Webbplatser som har en asterisk (\*) bredvid namnet kräver att du loggar in med ett konto som är kopplat till ett tjänsteavtal.
+I följande register visas våra webbplatser. Våra innehållswebbplatser är ordnade för att stödja kundlivscykeln. Varje fas stöds av en annan uppsättning webbplatser. Webbplatser som har en asterisk (\*) bredvid namnet kräver att du loggar in med ett konto som är kopplat till ett tjänsteavtal.
 
 | Plats                                                                     | beskrivning                                                                                                                                                                                                                                |
 |--------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

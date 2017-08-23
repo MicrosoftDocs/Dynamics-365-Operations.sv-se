@@ -1,9 +1,9 @@
 ---
 title: Konfigurera Kundreskontra och Kredit och inkasso
 description: "Konfigurera Kundreskontra och Kredit och inkasso för att följa fakturor och inkommande betalningar från kunder."
-author: twheeloc
+author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/22/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -15,15 +15,14 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 24631
 ms.assetid: 8c1fc7c5-b461-41ed-b102-2648cc58eb0b
 ms.search.region: Global
-ms.author: mfalkner
+ms.author: Shiva.Pandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 74556e571c215b0fea8deb061fd968c240b063d4
+ms.translationtype: HT
+ms.sourcegitcommit: 1982e495f740d6061b9574aa9f40f38180e8d110
+ms.openlocfilehash: 1d37014e8f7b333a15077fc3477808a3ad62b96f
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 08/03/2017
 
 ---
 
@@ -66,12 +65,12 @@ Följande tabell visar sidorna som har stöd för konfiguration och underhåll a
 |                                                      | Valutor                           | Skapa och visa de valutor som din organisation använder.                                                                                                                                                                                                                       |
 |                                                      | Valutakurser              | Skapa och underhåll lämpliga valutakurser mellan redovisningsvalutan och andra valutor.                                                                                                                                                                              |
 |                                                      | Koncernintern redovisning              | Skapa en lista över vilka konton den juridiska personen kan bokföra på. Du måste ställa in debet- och kreditkonton, och även ställa in den journal där transaktionerna införs i den andra juridiska personen.                                                                             |
-|                                                      | Betalningsmetoder - kund        | Skapa och underhåll information om kundernas betalningsmetoder.                                                                                                                                                                                                           |
+|                                                      | Betalningsmetoder - kund        | Skapa och underhåll information om kundernas betalningsmetoder. Mer information finns i [upprätta kundens betalningsmetod](tasks/establish-customer-method-payment.md).                                                                                             |
 |                                                      | Organisationshierarkier             | Ställa in en organisationshierarki för centraliserade betalningar.                                                                                                                                                                                                                        |
 |                                                      | Syften för organisationshierarki      | Ange ett syfte för centraliserade betalningar.                                                                                                                                                                                                                                       |
 |                                                      | Betalningsdagar                         | Ange antalet betalningsdagar som används för att beräkna förfallodatum för betalningar som du ska få från kunder eller göra till leverantörer.                                                                                                                                                |
-|                                                      | Betalningsavgift                          | Skapa och underhåll betalningsavgifter som är kopplade till kunder, t.ex. avgifter för växlar.                                                                                                                                                                               |
-|                                                      | Betalningsavgiftsinställning                    | Ställ in betalningsavgifter för olika kombinationer av banker, betalningsmetoder, typer av remissa, betalningsspecifikationer, valutor och datumintervall.                                                                                                                              |
+|                                                      | Betalningsavgift                          | Skapa och underhåll betalningsavgifter som är kopplade till kunder, t.ex. avgifter för växlar.                                                                                                                                                                         |
+|                                                      | Betalningsavgiftsinställning                    | Ställ in betalningsavgifter för olika kombinationer av banker, betalningsmetoder, typer av remissa, betalningsspecifikationer, valutor och datumintervall.  Mer information finns i [upprätta kundens betalningsavgifter](tasks/establish-customer-payment-fees.md).                                                                                   |
 |                                                      | Betalningsplaner                    | Skapa betalningsplaner som du använder för att schemalägga avbetalningar från kunder och till leverantörer.                                                                                                                                                                       |
 |                                                      | Betalningsspecifikation                | Skapa och visa betalningsspecifikationskoder för den betalningsmetod som du har valt på sidan Betalningsmetoder. Du definierar betalningsspecifikationskoder enligt ditt avtal med den bank som angivits för den valda betalningsmetoden.                    |
 |                                                      | Transaktionstext                     | Skapa transaktionstext för automatisk bokföring i Redovisningsmodulen. Du kan ställa in transaktionstexter på olika språk.                                                                                                                                                           |
@@ -83,7 +82,7 @@ Följande tabell visar sidorna som har stöd för konfiguration och underhåll a
 |                                                      | Betalningsmetoder - kund        | Skapa och underhåll information om kundernas betalningsmetoder.                                                                                                                                                                                                           |
 |                                                      | Signatur                            | Lägg till, ändra eller ta bort signaturbildfiler, till exempel .bmp-, .jpg- eller .gif-filer. Bildfiler med signaturer skrivs ut på checkar som officiella signaturer för juridisk person.                                                                                                             |
 |                                                      |                                      |                                                                                                                                                                                                                                                                                   |
-| Konfigurera kundreskontrastatistik           | Definitioner för åldersfördelningsperiod             | Ställa in och hantera användardefinierade åldersfördelningsperioder som används för att analysera kund- och leverantörskontonas förfallotider, baserat på ett datum som du anger.                                                                                                         |
+| Konfigurera kundreskontrastatistik           | Definitioner för åldersfördelningsperiod             | Ställa in och hantera användardefinierade åldersfördelningsperioder som används för att analysera kund- och leverantörskontonas förfallotider, baserat på ett datum som du anger. Mer information finns i [Ställ in och generera åldersfördelningsinformation för kundreskontra](tasks/set-up-accounts-receivable-aging-information.md).                                                           |
 |                                                      | Affärsstatistik                  | Ställ in frågor om affärsstatistik som kan hjälpa dig att analysera organisationens resultat.                                                                                                                                                                              |
 |                                                      | Affärsstatistikdata             | Visa data i ett rutnätsformat för vald affärsstatistik.                                                                                                                                                                                                                     |
 |                                                      |                                      |                                                                                                                                                                                                                                                                                   |
