@@ -1,35 +1,33 @@
 ---
 title: Konvertera redovisning eller rapporteringsvalutor
 description: 
-author: RobinARH
+author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: robinr
+ms.reviewer: twheeloc
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 78223
 ms.assetid: 31c56f9a-9c64-40a2-90e3-1969a760614b
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 728af2fff6317c17e47d48ea07dbeb57068fbf3f
+ms.translationtype: HT
+ms.sourcegitcommit: c4f5dae90c5fcaaa52a7087d7c20b2de343b7da0
+ms.openlocfilehash: c738207f3088da151ec2317ce2b445f83278ec79
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 08/01/2017
 
 ---
 
 # <a name="convert-accounting-or-reporting-currencies"></a>Konvertera redovisning eller rapporteringsvalutor
 
 [!include[banner](../includes/banner.md)]
-
-
 
 
 Ett företag som måste ändra sin redovisningsvaluta eller rapportvaluta har två alternativ. Det första alternativet är för att skapa ett nytt företag och starta på nytt. Det andra alternativet är att köra konverteringsprocessen för redovisnings- och rapporteringsvaluta. Detta är mycket en avancerad process som ändrar varje transaktion i systemet. En del inställningar krävs också innan du kan köra processen.
@@ -77,6 +75,6 @@ Alla avstämningsrapporter måste köras igen efter konverteringen för att kont
 
 När alla journaler för redovisningstransaktioner har raderats kan du journalföra redovisningstransaktionerna. Klicka på **Redovisning** &gt; **Journalföring av** &gt; **Periodiska** &gt; **Journaler**. Du kan omvärdera belopp i utländsk valuta efter valutakonverteringen om omvärdering krävs. Du omvärderar belopp i utländsk valuta, genom att välja **Standard** i fältet **Metod** för omvärdering.
 
-
+Mer information finns i [Journalföra bokförda poster i redovisningsjournal](tasks/journalize-posted-journal-entries.md).
 
 

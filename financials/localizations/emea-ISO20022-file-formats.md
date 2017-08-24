@@ -3,7 +3,7 @@ title: Importera ISO20022-filer
 description: "I det här avsnittet beskrivs hur du importerar betalningsfiler i ISO 20022 camt.054 och pain.002-format i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition."
 author: neserovleo
 manager: AnnBe
-ms.date: 05/25/2017
+ms.date: 07/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -13,13 +13,13 @@ ms.reviewer: shylaw
 ms.search.scope: Core, Operations, UnifiedOperations
 ms.search.region: Austria, Belgium, Czech Republic, Denmark, Estonia, Finland, France, Germany, Hungary, Italy, Latvia, Lithuania, Norway, Poland, Spain, Sweden, Switzerland, United Kingdom
 ms.author: v-lenest
-ms.search.validFrom: 2017-06-01T00:00:00.000Z
+ms.search.validFrom: 2017-06-01
 ms.dyn365.ops.version: Enterprise edition, July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 48e280bf0a6c5db237bd389fe448c9d698d3ae12
-ms.openlocfilehash: acf6ed5f503d77f372d802a51a71cec062c2b24b
+ms.sourcegitcommit: 77a0d4c2a31128fb7d082238d443f297fd40664f
+ms.openlocfilehash: 90e21bb939bd96a3420decb5f9bc07c017c3e946
 ms.contentlocale: sv-se
-ms.lasthandoff: 07/25/2017
+ms.lasthandoff: 07/31/2017
 
 ---
 
@@ -105,4 +105,29 @@ Om du importerar filen camt.054 ska du ange följande ytterligare parametrar:
 - **Kvitta transaktioner** – ange detta alternativ till **Ja** om importerade leverantörsbetalningar måste kvittas mot fakturor som finns i systemet.
 
 Du hittar den importerade informationen på sidan **betalningsöverföringar**. 
+
+## <a name="additional-details"></a>Ytterligare detaljer
+
+När du importerar en formatkonfigurationen från LCS importerar du hela konfigurationsträdet vilket innebär att konfigurationerna för modellen och modellmappning är inkluderade. I betalningsmodellen från version 8, finns mappningarna i separata ER-konfigurationer i lösningsträdet (betalningsmodellmappning 1611, betalningsmodellmappning till destinationen ISO20022 osv). Det finns många betalningsformat under en modell (betalningsmodell), därför är separat mappningshantering en nyckel för enkelt lösningsunderhåll. Anta exempelvis följande scenario: du använder ISO20022-betalningar för att generera kreditöverföringsfiler och när du importerar returmeddelanden från banken. I det här fallet ska du använda följande konfigurationer:
+
+ - **Betalningsmodell**
+ - **Betalningsmodellmappning 1611** - den här mappningen används för att generera exportfilen
+ - **Betalningsmodellmappning till destination mål ISO20022** – den här konfigurationen innehåller alla mappningar som ska användas för att importera data mappningsriktningen ”till destination”)
+ - **ISO20022 kreditöverföring** – den här konfigurationen innehåller en formatkomponent som ansvarar för export av filgenerering (pain.001) utifrån betalningsmodellmappning 1611 samt ett format till modellmappningskomponent som ska användas tillsammans med betalningsmodellmappning till destination ISO20022 för att registrera exporterade betalningar i systemet för ytterligare import (import i tekniska tabellen CustVendProcessedPayments)
+ - **ISO20022 kreditöverföring (CE)**, där CE motsvarar landstillägg – härlett format till ISO20022 kreditöverföring med samma struktur och vissa landsspecifika skillnader
+ - **Pain.002** – det här formatet ska användas tillsammans med betalningsmodellmappning till destination ISO20022 för att importera filen pain.002 till överföringsjournalen för leverantörsbetalningar
+ - **Camt.054** – det här formatet ska användas tillsammans med betalningsmodellmappning till destination ISO20022 för att importera filen camt.054 till överföringsjournalen för leverantörsbetalningar Samma formatkonfiguration används i kundens betalningsimporteringsfunktion men olika mappning ska användas i en betalningsmodellmappning till destinationskonfigurationen ISO20022.
+
+Mer information om elektronisk rapportering finns i [översikt över elektronisk rapportering](/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting).
+
+## <a name="additional-resources"></a>Ytterligare resurser
+- [Skapa och exportera leverantörbetalningar med ett ISO20022-betalningsformat](./tasks/create-export-vendor-payments-iso20022-payment-format.md)
+- [Importera konfiguration av ISO20022-kreditöverföring](./tasks/import-iso20022-credit-transfer-configuration.md)
+- [Importera konfiguration för ISO20022-autogiro](./tasks/import-iso20022-direct-debit-configuration.md)
+- [Ställ in företagets bankkonton för ISO20022-kreditöverföringar](./tasks/set-up-company-bank-accounts-iso20022-credit-transfers.md)
+- [Ställ in företagets bankkonton för ISO20022-autogiron](./tasks/set-up-company-bank-accounts-iso20022-direct-debits.md)
+- [Ställ in kunder och kundbankkonton för ISO20022-autogiron](./tasks/set-up-bank-accounts-iso20022-direct-debits.md)
+- [Ställ in en betalningsmetod för ISO20022-kreditöverföringar](./tasks/set-up-method-payment-iso20022-credit-transfer.md)
+- [Ställ in en betalningsmetod för ISO20022-autogiro](./tasks/setup-method-payment-iso20022-direct-debit.md)
+- [Ställ in leverantörer och leverantörsbankkonton för ISO20022-krediteringsöverföringar](./tasks/set-up-vendor-iso20022-credit-transfers.md)
 

@@ -17,12 +17,11 @@ ms.search.region: Global
 ms.author: leguo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
-ms.openlocfilehash: f7cf2b7996d113f0f883b39f3603de8236e8ad2c
+ms.translationtype: HT
+ms.sourcegitcommit: 45d28110ca93875eb534c69886ac2074ea4fe737
+ms.openlocfilehash: 6a535b5f1192b7c27383cb8ece53f76a9c76f047
 ms.contentlocale: sv-se
-ms.lasthandoff: 06/20/2017
-
+ms.lasthandoff: 08/09/2017
 
 ---
 
@@ -52,7 +51,7 @@ Microsoft Dynamics 365 for Finance and Operations stöder den fullständiga cyke
 </tr>
 <tr class="even">
 <td>Registrera och bokför en efterdaterad check för en leverantör</td>
-<td>Registrera information om en efterdaterad check som du utfärdar till en leverantör. När betalningen bokförs känns leverantörsskulden igen, men bankkontot krediteras inte ännu. I stället används ett clearingkonto för detta ändamål.</td>
+<td>Registrera information om en efterdaterad check som du utfärdar till en leverantör. När betalningen bokförs känns leverantörsskulden igen, men bankkontot krediteras inte ännu. I stället används ett clearingkonto för detta ändamål. </td>
 </tr>
 <tr class="odd">
 <td>Registrera och bokför en efterdaterad check för en kund</td>
@@ -87,6 +86,17 @@ Om din ursprungliga check till en leverantör eller från en kund förloras elle
 
 
 
+Mer information finns i följande avsnitt:
+
+[Ställ in efterdaterade checkar](tasks/set-up-postdated-checks.md)
+
+[Registrera och bokför en efterdaterad check för en kund](tasks/register-post-postdated-check-customer.md)
+
+[Kvitta en efterdaterad check från en kund](tasks/settle-postdated-check-customer.md)
+
+[Registrera och bokför en efterdaterad check för en leverantör](tasks/register-post-postdated-check-vendor.md) 
+
+[Kvitta en efterdaterad check för en leverantör](tasks/settle-postdated-check-vendor.md)
 
 
 

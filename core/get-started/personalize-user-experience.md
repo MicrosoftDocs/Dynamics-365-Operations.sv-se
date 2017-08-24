@@ -1,9 +1,9 @@
 ---
 title: "Anpassa användarupplevelsen"
-description: "Den här artikeln beskriver hur du kan anpassa Microsoft Dynamics 365 for Finance and Operations."
+description: "Det här ämnet beskriver hur du kan anpassa Microsoft Dynamics 365 for Finance and Operations."
 author: RobinARH
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,13 +16,13 @@ ms.custom: 62363
 ms.assetid: 57b445d7-3e9e-4228-8728-f63b9dbd77a3
 ms.search.region: Global
 ms.author: tlefor
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: b338a930777a5945eb6318dc8066fb3649c79dbe
+ms.translationtype: HT
+ms.sourcegitcommit: 5230911e1febc66b294f1331846373a472789adf
+ms.openlocfilehash: dbc80ff756a5286a98489f1f1403959d9b18ebe6
 ms.contentlocale: sv-se
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 08/04/2017
 
 ---
 
@@ -31,28 +31,28 @@ ms.lasthandoff: 06/13/2017
 [!include[banner](../includes/banner.md)]
 
 
-Den här artikeln beskriver hur du kan anpassa Microsoft Dynamics 365 for Finance and Operations.
+Det här ämnet beskriver hur du kan anpassa Microsoft Dynamics 365 for Finance and Operations.
 
 Det finns många typer av anpassningsalternativ i Microsoft Dynamics 365 for Finance and Operations. Vissa anpassningsalternativ är val som du gör i en lista över alternativ på en inställningssida. Vissa anpassningsalternativ är implicita, exempelvis håller Finance and Operations koll på bredderna på rutnätskolumner om du justerar dem, och på det expanderade/komprimerade läget för snabbflikar. Andra anpassningsalternativ är tydlig. För explicita anpassningsalternativ anger du en interaktiv anpassningsläget och ändra utseende på en sida genom att direkt administrera så att element eller agera på sidan. 
 
 Alla anpassningsalternativ, oavsett slag, som en användare gör i Finance and Operations gäller endast för den användaren, oavsett vilket företag som användaren interagerar med. Ändringar som en användare gör att en sida inte påverka andra användare i systemet.
 
 ## <a name="systemwide-options-for-the-current-user"></a>Systemtäckande alternativ för aktuell användare
-I navigeringsfältet hittar du en växel bilden som heter **Inställningar** knappen meny. Öppna **menyn Inställningar** visas ett antal val. Val av **Alternativ** öppnar användarens **Alternativ** sida. Här finns det fyra alternativflikar: **Visuell**, **Inställningar**, **Konto**, och **Arbetsflöde**.
+I navigeringsfältet hittar du en växel bilden som heter **Inställningar** knappen meny. Öppna **menyn Inställningar** visas ett antal val. Val av **Alternativ** öppnar användarens **Alternativ** sida. Det finns fyra alternativflikar: 
 
--   **Visuellt:** Används för att välja ett färgtema och standardstorleken för element på dina sidor.
--   **Inställningar:** Här kan du välja standardinställningar för varje gång du öppnar Finance and Operations, inklusive företag, startsida, och standardläge för visning/redigering (som avgör om en sida är låst för visning eller öppnas för redigering varje gång du öppnar den). Du skar finner dessutom språk, tidszon och datum, tid och antal formatalternativ. Slutligen den här sidan innehåller ett antal diverse inställningar som varierar från version till version.
--   **Konto:** Används för att ange ditt användar-ID och andra kontorelaterade inställningar.
--   **Arbetsflöde:** här kan du välja arbetsflödesrelaterade alternativ.
+-   **Visuellt:** - Används för att välja ett färgtema och standardstorleken för element på dina sidor.
+-   **Inställningar:** - Här kan du välja standardinställningar för varje gång du öppnar Finance and Operations, inklusive företag, startsida, och standardläge för visning/redigering (som avgör om en sida är låst för visning eller öppnas för redigering varje gång du öppnar den). Du skar finner dessutom språk, tidszon och datum, tid och antal formatalternativ. Slutligen den här sidan innehåller ett antal diverse inställningar som varierar från version till version.
+-   **Konto:** - Används för att ange ditt användar-ID och andra kontorelaterade inställningar.
+-   **Arbetsflöde:** - Här kan du välja arbetsflödesrelaterade alternativ.
 
 ## <a name="implicit-personalizations"></a>Uttryckliga anpassningsalternativ
 Uttryckliga anpassningsalternativ är de anpassningsalternativ som du utför enkelt genom att interagera med vissa kontroller som kommer ihåg deras aktuella synliga. 
 
-**Rutnätskolumner:** Du kan justera bredden på en kolumn i en lista genom att välja storlekssortering bar till vänster eller till höger om kolumnrubriken och skjuta den åt vänster eller höger till önskad bredd. Finance and Operations kommer att lagra bredden som du vill ha, och visa den kolumnen med den bredden varje gång du öppnar sidan med den listan. 
+**Rutnätskolumner:** - Du kan justera bredden på en kolumn i en lista genom att välja storlekssortering bar till vänster eller till höger om kolumnrubriken och skjuta den åt vänster eller höger till önskad bredd. Finance and Operations kommer att lagra bredden som du vill ha, och visa den kolumnen med den bredden varje gång du öppnar sidan med den listan. 
 
-**Snabbflikar:** Vissa sidor har expanderbara avsnitt som kallas snabbflikar. Finance and Operations kommer att lagra de snabbflikar som du har expanderat samt de snabbflikar som du har komprimerat. Varje gång du kommer tillbaka till sidan, samma snabbflikens kommer att utökas eller krympas baserat på den senaste gången du använde dem. I denna artikel beskriver vi hur du vill ändra ordning på snabbfliken sektioner. I vissa fall gör komprimering av en snabbflik att prestandan förbättras, detta eftersom Finance and Operations inte behöver hämta informationen för snabbfliken förrän snabbfliken expanderas. 
+**Snabbflikar:** - Vissa sidor har expanderbara avsnitt som kallas snabbflikar. Finance and Operations kommer att lagra de snabbflikar som du har expanderat samt de snabbflikar som du har komprimerat. Varje gång du kommer tillbaka till sidan, samma snabbflikens kommer att utökas eller krympas baserat på den senaste gången du använde dem. I denna artikel beskriver vi hur du vill ändra ordning på snabbfliken sektioner. I vissa fall gör komprimering av en snabbflik att prestandan förbättras, detta eftersom Finance and Operations inte behöver hämta informationen för snabbfliken förrän snabbfliken expanderas. 
 
-**Faktarutor:** Vissa sidor har ett avsnitt som kallas faktaruta. Den här rutan innehåller skrivskyddad information relaterad till det aktuella ämnet på sidan. Varje avsnitt i faktaruta rutan kallas en faktaruta. Du kan expandera eller komprimera en faktaruta, så kommer Finance and Operations att spara inställningarna. I vissa fall gör komprimering av en faktaruta att prestanda förbättras, detta eftersom Finance and Operations inte behöver hämta informationen för faktarutan förrän faktarutan expanderas.
+**Faktarutor:** - Vissa sidor har ett avsnitt som kallas faktaruta. Den här rutan innehåller skrivskyddad information relaterad till det aktuella ämnet på sidan. Varje avsnitt i faktaruta rutan kallas en faktaruta. Du kan expandera eller komprimera en faktaruta, så kommer Finance and Operations att spara inställningarna. I vissa fall gör komprimering av en faktaruta att prestanda förbättras, detta eftersom Finance and Operations inte behöver hämta informationen för faktarutan förrän faktarutan expanderas.
 
 ## <a name="explicit-personalizations-using-the-personalization-toolbar"></a>Explicit anpassningsalternativ med anpassning toolbar
 Varje person och företag har olika perspektiv på vilka data som är viktigast för dem, eller vilka data finnas inte nödvändigt för det sätt de sköter sina affärer. Möjligheten att skräddarsy hur din information beställs, samverkas med eller till och med döljs, är nyckeln till att göra Finance and Operations till en personlig och givande upplevelse. 
@@ -107,15 +107,20 @@ Vissa arbetsytor innehåller räknepaneler (paneler med siffror på) som också 
 Instrumentpanelen är ofta den första sida som du ser när du öppnar Finance and Operations. Du kan anpassa instrumentpanelen för att döpa din arbetsyta navigation paneler, för att endast visa panelerna som du skulle vilja se, byta panel, eller arrangerar panelerna i den ordning du föredrar att se dem. För att anpassa instrumentpanelen, välj någon panel och högerklicka för att öppna en snabbmeny. På snabbmenyn, välj **Anpassa**. Om den valda panelen är samma som du vill dölja eller ändra namn på eller hoppa över, du kan göra ändringar direkt i fönstret med egenskaper som har visats. Om du vill ordna paneler, välj sedan **anpassa denna form** i fastigheten för att öppna verktygsfältet anpassning. Sedan kan du använda verktyget Flytta till arrangerar panelerna.
 
 ## <a name="administration-of-personalization"></a>Administration av anpassning
-När du anpassar en sida kan du dela dina anpassningar med andra användare. Exportera bara den anpassade sidan. Du kan sedan be andra användare att gå till den anpassade sidan och importera anpassningsfilen som du har skapat.
+När du anpassar en sida kan du dela dina anpassningar med andra användare genom att exportera den anpassade sidan. Du kan sedan be andra användare att gå till den anpassade sidan och importera anpassningsfilen som du har skapat.
 
-Användare med administratörsbehörighet kan även hantera anpassningsalternativ för andra användare på sidan **Anpassning** . Den här sidan har fyra flikar: **System**, **Användare**, **Importer**, och **Rensa**.
+Användare med administratörsbehörighet kan även hantera anpassningsalternativ för andra användare på sidan **Anpassning** . Den här sidan innehåller fyra flikar: 
 
 - **System:** – Du kan temporärt inaktivera eller stänga av alla anpassningar i systemet. I detta fall tar du inte bort några anpassningar. I stället återställer du bara alla sidor till deras standardtillstånd. Om du återaktivera anpassningen senare, kommer alla anpassningar att återappliceras till respektive användarsidor. Du kan även ta bort alla anpassningsalternativ för alla användare. Observera att när du tar bort anpassningsalternativ, det finns inget sätt att automatiskt återaktivera anpassningsalternativ från systemet. Se därför till att du har exporterat alla anpassningar som du kanske vill senare importera vid ett senare tillfälle innan du utför detta steg.
 - **Användare** – Du kan ange huruvida respektive användare kan genomföra personanpassningen implicit eller explicit. Du kan också ange huruvida respektive användare kan utföra explicit eller implicit anpassning på en särskild sida. Slutligen kan du importera, exportera eller radera en anpassning för respektive användare.
 - **Importera** – Du kan importera en anpassningar för en eller flera användare. Du kan använda den här fliken när du har skapat en anpassning på en sida eller en arbetsyta, och sedan exporterat den anpassningen som en fil för anpassning. Markera enskilda användare i listan över samtliga användare, eller filtrera efter en viss roll och välj sedan användare i den rollen, om du vill importera din anpassningsfil och tillämpa den på en eller flera användare. När du har valt de användare som ska använda dina anpassningar klickar du på **Importera**, och markerar din anpassningsfil. Anpassningen valideras och gäller för de alla valda användare nästa gång de öppnar den markerade sidan.
 - **Rensa** – Du kan rensa en sida eller anpassningar för arbetsyta för en eller flera användare. Först väljer du den sida eller den arbetsyta som du vill rensa anpassningar för. Därefter markerar du enskilda användare i listan över alla användare, eller filtrerar efter en viss roll och väljer sedan användare i den rollen. När du har markerat en sida eller arbetsyta och användare klickar du på **Rensa**. Alla anpassningar som de valda användarna har kopplat till den valda sidan eller arbetsytan tas bort. Denna åtgärd kan inte ångras. Om sidan eller arbetsytan emellertid har en sparad anpassning, kan den anpassningen återimporteras.
 
+## <a name="personalization-of-inventory-dimensions"></a>Anpassning av lagerdimensioner
 
+När du anpassar inställningarna för lagerdimensionerna på en sida, beakta inställningarna som har skapats med hjälp av alternativet **Visa dimension**. Om du exempelvis använder anpassning för att dölja en kolumn för lagerdimensionens batchnummer och kolumnen visas nästa gång sidan öppnas, kan det bero på att dimensionsvisningsinställningen kontrollerar vilka lagerdimensionskolumner som visas. 
 
+Dimensionsvisningsinställningar tillämpas på alla sidor och dessa inställningar åsidosätter eventuella anpassade inställningar av lagerdimensionsfälten på enskilda sidor. 
+
+För till exempel batchnumrets lagerdimension måste denna dimension tas bort som en del av alternativet **Visa dimensioner** för att tabellen inte ska visa den här kolumnen. Slutligen används ändringen inte bara på en specifik sida utan på alla sidor.
 

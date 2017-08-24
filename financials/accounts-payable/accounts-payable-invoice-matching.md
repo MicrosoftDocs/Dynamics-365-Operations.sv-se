@@ -3,7 +3,7 @@ title: "Fakturamatchning för leverantörsreskontra"
 description: "Fakturamatchning i leverantörsreskontra är den process där information om leverantörsfaktura, inköpsorder och produktinleverans matchas."
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,12 +18,11 @@ ms.search.region: Global
 ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 6d1348ad43f8170f29bfc2f3df8a2ec60f9f8912
+ms.translationtype: HT
+ms.sourcegitcommit: 1982e495f740d6061b9574aa9f40f38180e8d110
+ms.openlocfilehash: aa195f6057ae4ea511d661ffb47b1feeed58d2f9
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
-
+ms.lasthandoff: 08/03/2017
 
 ---
 
@@ -192,7 +191,7 @@ Leverantörsfakturor baseras ofta på produktinleveranser som representerar fakt
 -   Ange fakturabelopp som inte inkluderades i den ursprungliga inköpsordern så att fakturainformationen matchar den faktura du tagit emot från leverantören. Du kan jämföra avgifterna för inköpsorder med avgifterna för fakturor. Vid behov kan du lägga till avgifter till fakturor och tilldela dem till fakturarader.
 -   Visa och godkänn prismatchningsavvikelser mellan fakturans nettoenhetspris och inköpsorderns nettoenhetspris. Du kan ange procentsatser för pristoleranser för juridiska personer, artiklar och leverantörer. Om leverantörens fakturaradpris inte ligger inom den acceptabla pristoleransen, kan du spara fakturan tills den godkänts för bokföring eller tills du får en korrigering från leverantören.
 
-Mer information finns i [Trevägs-matchningsprinciper](three-way-matching-policies.md).
+Mer information finns i [Trevägsmatchningspolicyer](three-way-matching-policies.md) och [Konfigurera validering av fakturamatchning för leverantörsreskontra](tasks/set-up-accounts-payable-invoice-matching-validation.md). 
 
 
 

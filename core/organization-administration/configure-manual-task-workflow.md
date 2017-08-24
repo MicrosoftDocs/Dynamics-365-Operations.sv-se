@@ -3,7 +3,7 @@ title: "Konfigurera en manuell uppgift i ett arbetsflöde"
 description: "I det här avsnittet beskrivs hur du konfigurerar olika egenskaper för en manuell uppgift."
 author: sericks007
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -15,7 +15,7 @@ ms.custom: 192191
 ms.assetid: 27f1afde-ff26-4b6f-8c11-27ec49130bbb
 ms.search.region: Global
 ms.author: donaldc
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
@@ -165,6 +165,7 @@ Om en användare inte slutför den manuella uppgiften inom den tilldelade tiden,
 
 1.  Klicka på **Eskalering** i det vänstra fönstret.
 2.  Markera kryssrutan **Använd eskaleringsväg** om du vill skapa en eskaleringsväg. Systemet tilldelar automatiskt uppgiften till de användare som har listats i eskaleringsvägen. Till exempel representerar följande register en eskaleringsväg.
+
     | Sekvens | Eskaleringsväg      |
     |----------|----------------------|
     | 1        | Tilldela till: Donna     |
@@ -318,7 +319,9 @@ Du kan skicka meddelanden till andra när en manuell uppgift har delegerats, esk
 8.  Upprepa stegen 3 till och med 7 för varje enskild händelse du valde i steg 2.
 
 ## <a name="set-a-time-limit"></a>Ange en tidsgräns
-Följ dessa steg om den manuella uppgiften måste slutföras inom en viss tid. **Obs!** De alternativ som du väljer i denna procedur åsidosätter alternativen som du valde i avsnitten **Tilldelning** och **Eskalering** på sidan.
+Följ dessa steg om den manuella uppgiften måste slutföras inom en viss tid. 
+
+**Obs!** De alternativ som du väljer i denna procedur åsidosätter alternativen som du valde i avsnitten **Tilldelning** och **Eskalering** på sidan.
 
 1.  Klicka på **Avancerade inställningar** i det vänstra fönstret.
 2.  Markera kryssrutan **Ange en tidsgräns för arbetsflödeselement**.

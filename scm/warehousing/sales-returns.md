@@ -15,13 +15,13 @@ ms.custom: 269384
 ms.assetid: 98a4b517-e606-4036-b55f-1ab248898bdf
 ms.search.region: Global
 ms.author: omulvad
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: b66bf79413ad21f12f789eabafe8413af3f58c9c
+ms.translationtype: HT
+ms.sourcegitcommit: 04f8cb1a6375be9371bca2af7e4044392ce7322b
+ms.openlocfilehash: 0484723217ccff2ebf717d059429d863ececb797
 ms.contentlocale: sv-se
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 08/02/2017
 
 ---
 
@@ -37,7 +37,7 @@ Kunder kan returnera artiklar av olika skäl. Till exempel kan en artikel ha fel
 ## <a name="return-order-process"></a>Returorderprocess
 Följande bild ger en översikt över returorderprocessen.  
 
-[![försäljningsreturer01](./media/salesreturns01.jpg)](./media/salesreturns01.jpg)  
+[![Returorderprocess](./media/salesreturns01.jpg)](./media/salesreturns01.jpg)  
 
 Det finns två typer av returorder: fysisk retur och endast kreditering.
 
@@ -213,7 +213,7 @@ Det finns två metoder för hantering av produktersättning:
 
 I direkt ersättning ska ersättningsartikeln levereras till kunden innan artikeln returneras. Den här metoden är användbar om artikeln till exempel är en maskindel som inte kan tas bort om det inte finns en reservdel som ersätter den eller om du bara vill att kunden ska ha ersättningsprodukten så snart som möjligt. Direkt ersättning är en oberoende försäljningsorder. Rubrikinformationen initieras från kunden och radinformationen initieras från returordern. Du kan bearbeta, redigera och ta bort ersättningsordern oberoende av returordern. När du raderar en ersättningsorder får du ett meddelande att ordern skapades som en ersättningsorder. Följande bild visar processen för direkt ersättning.  
 
-[![Process för direkt ersättning](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn04.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn04.png)  
+![Process för direkt ersättning](./media/SalesReturn04.png)
 
 Returordern innehåller en referens till ersättningsordern. Om en direkt ersättningsorder har skapats för en returorder innan den felaktiga artikeln returneras kan inte välja dispositionskoder för ersättning efter att felaktiga artiklar har returnerats.
 
@@ -221,7 +221,7 @@ Returordern innehåller en referens till ersättningsordern. Om en direkt ersät
 
 Om du levererar en ersättningsartikel till kunden och använder dispositionsåtgärden **Ersätt och kassera** eller **Ersätt och kreditera** på returordern, använder du processen som visas i följande bild.  
 
-[![Ersättningsprocess när en dispositionskod används](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn05.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn05.png)  
+![Ersättningsprocess när en dispositionskod används](./media/SalesReturn05.png)
 
 Ersättningsartikeln levereras med hjälp av en oberoende försäljningsorder, ersättningsförsäljningsordern. Den här försäljningsordern skapas när packsedeln för returordern skapas. Orderrubriken använder information från kunden som refereras till i returorderrubriken. Radinformationen hämtas från informationen som registreras på sidan **Ersättningsartikel**. Sidan **Ersättningsartikel** måste fyllas i för rader som har dispositionsåtgärder som börjar med ordet "Ersätt". Emellertid valideras eller begrämsas varken kvantiteten eller ersättningsartikelns identitet. Det här beteendet gör det möjligt för ärenden där kunden vill ha samma artikel, men i en annan konfiguration eller storlek samt ärenden där kunderna vill ha en helt annan artikel. Som standard anges en identisk artikel på sidan **Ersättningsartikel**. Men du kan välja en annan artikel förutsatt att funktionen har ställts in. **Obs!** Du kan redigera och ta bort ersättningsförsäljningsordern när den har skapats.
 
@@ -254,7 +254,7 @@ Returorder kan slutföras mellan två företag inom din organisation. Följande 
 
 Följande bild visar de basinställningar som krävs för två företag att delta i en koncernintern relation och dra nytta av koncernintern handel.  
 
-[![Basinställningar](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn06.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn06.png)  
+![Basinställningar](./media/SalesReturn06.png)
 
 I följande scenario är CompBuy det inköpande företaget och CompSell är det säljande företaget. Vanligtvis levererar det säljande företaget varor till det inköpande företaget eller, vid direktleveransscenarier direkt till slutkunden. I CompBuy definieras leverantören IC\_CompSell som en koncernintern slutpunkt som är associerad med företaget CompSell. Samtidigt definieras kunden i CompSell, IC\_CompSell som en koncernintern slutpunkt som är associerad med företaget CompBuy. Lämplig åtgärdspolicyinformation och värdemappningar måste definieras i båda företagen. I scenariot direktleverans skapas en koncernintern returorder som också är en koncernintern försäljningsorder i det säljande företaget. RMA-numret för den koncerninterna returordern kan plockas från RMA-nummerserien i CompSell eller så kan den kopieras från RMA-numret som har tilldelats till den ursprungliga returordern i CompBuy. RMA-nummerinställningarna i åtgärdspolicyn **Inköpsrekvisition** avgör dessa åtgärder. Om RMA-numret synkroniseras bör du planera att minska risken för en konflikt av nummersammanstötningar om de två företagen använder samma nummerserie.
 
@@ -262,7 +262,7 @@ I följande scenario är CompBuy det inköpande företaget och CompSell är det 
 
 Scenariot innebär två företag i samma organisation, vilket visas i följande illustration.  
 
-[![Enkel koncernintern retur](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn07.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn07.png)  
+![Enkel koncernintern retur](./media/SalesReturn07.png)
 
 Orderkedjan kan upprättas när en leverantörs returorder skapas i det inköpande företaget eller en kundreturorder skapas i det säljande företaget. Finance and Operations skapar motsvarande order i det andra företaget och ser till att rubrik- och radinformationen på leverantörsreturordern reflekterar inställningarna för kundens returorder. Returordern som har upprättats kan inkludera eller utesluta referensen (**Sök efter försäljningsorder**) till en befintlig kundfaktura. Följesedlar och fakturor för de två order kan behandlas separat. Du behöver inte skapa en följesedel för returordern för leverantören innan du genererar följesedeln för returordern.
 
@@ -270,7 +270,7 @@ Orderkedjan kan upprättas när en leverantörs returorder skapas i det inköpan
 
 Det här scenariot kan fastställas om föregående försäljning av typen **Direktleverans** har slutförts och om en faktura mot kunden finns i företaget som samverkar med kunden. I följande bild har företaget CompBuy tidigare sålt och fakturerat produkter till kunden externt. Produkterna har levererats direkt från företagets CompSell via en koncernintern orderkedja.  
 
-[![Direktleverans returnerar mellan tre parter](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn08.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn08.png)  
+![Direktleverans returnerar mellan tre parter](./media/SalesReturn08.png)
 
 Om kunden Extern vill returnera produkterna, skapas en returorder (RMA02) för kunden i företaget CompBuy. Om du vill skapa den koncerninterna kedjan måste returordern markeras för direktleverans. När du använder funktionen **Sök efter försäljningsorder** för att plocka kundfakturan till retur kommer en koncernintern orderkedja som består av följande dokument att upprättas:
 
@@ -292,7 +292,7 @@ I exemplen nedan representeras retursjälvkostnaden av **Lagerkostnadspris**.
 
 Returordern refererar inte till en kundfaktura. Den returnerade artikeln krediteras. Parametern **Kreditkorrigering** markeras inte när returorderfakturan eller kreditfakturan genereras.  
 
-[![Returordern refererar inte till en kundfaktura](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn09.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn09.png)  
+![Returordern refererar inte till en kundfaktura](./media/SalesReturn09.png)  
 
 **Obs!** Artikelns huvudpris används som standardvärde för parametern **Retursjälvkostnad**. Standardpriset skiljer sig från självkostnaden vid tidpunkten för lagerutleveransen. Därför är implikationen att en förlust på 3 har uppkommit. Dessutom innehåller inte returordern rabatten som gavs till kunden på försäljningsordern. Därför uppstår en alltför stor kredit.
 
@@ -300,7 +300,7 @@ Returordern refererar inte till en kundfaktura. Den returnerade artikeln kredite
 
 Exempel 2 är samma som exempel 1, men parametern **Kreditkorrigering** parametern väljs när returorderfakturan genereras.  
 
-[![Returordern där kreditkorrigering markeras ](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn10.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn10.png)  
+![Returordern där kreditkorrigering markeras  ](./media/SalesReturn10.png)  
 
 **Obs!** Redovisningsbokföringar anges som negativa korrigeringar.
 
@@ -308,7 +308,7 @@ Exempel 2 är samma som exempel 1, men parametern **Kreditkorrigering** paramete
 
 I det här exemplet skapas returorderraden med hjälp av funktionen **Sök efter försäljningsorder**. Parametern **Kreditkorrigering** inte är markerad när fakturan skapas.  
 
-[![Returorderraden skapas med hjälp av funktionen Sök efter försäljningsorder ](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn11.png)](https://msdynamics.blob.core.windows.net/media/2017/02/SalesReturn11.png)  
+![Returorderraden skapas med hjälp av funktionen Sök efter försäljningsorder  ](./media/SalesReturn11.png)  
 
 **Obs!** **Rabatt** och **Retursjälvkostnad** är korrekt inställda. Därför uppstår en exakt återföring av kundfakturan.
 

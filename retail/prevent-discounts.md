@@ -1,0 +1,44 @@
+---
+title: "Förhindra rabatter för butiksprodukter"
+description: "Det finns olika skäl varför återförsäljare kan vilja förhindra att vissa produkter rabatteras från ett erbjudande eller vid försäljningen i kassan."
+author: jeffbl
+manager: AnnBe
+ms.date: 06/20/2017
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-365-retail
+ms.technology: 
+audience: Application User
+ms.reviewer: josaw
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
+ms.custom: 85183
+ms.assetid: e8c5a24f-7edd-4fd6-af80-5e0ac9f03127
+ms.search.region: Global
+ms.search.industry: Retail
+ms.author: jeffbl
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
+ms.translationtype: HT
+ms.sourcegitcommit: c124ecf104bdb3de786c9dd98c2b07a4c9c04041
+ms.openlocfilehash: 0debfe984a83295dde145fe4b8c2deb836345cd6
+ms.contentlocale: sv-se
+ms.lasthandoff: 07/31/2017
+
+---
+
+# <a name="prevent-discounts-for-retail-products"></a>Förhindra rabatter för butiksprodukter
+
+[!include[banner](includes/banner.md)]
+
+Det finns olika skäl varför återförsäljare kan vilja förhindra att vissa produkter rabatteras från ett erbjudande eller vid försäljningen i kassan.
+
+Följande alternativ, som du hittar på fliken **Butik** för frisläppta produkter, tillåter att produkten konfigureras för att förhindra alla eller manuella rabatter. Inställningarna kan också anges på kategorinivå från butikskategorihierarki.
+
+**Förhindra alla rabatter**: Markera det här alternativet om du vill förhindra att alla typer av rabatter används för den här produkten. Detta inkluderar erbjudanden som till exempel mixa och matcha, kvantitets- och tröskelvärdesrabatter samt manuella rad- och transaktionsrabatter som används vid försäljning av en kassaanvändare.
+
+**Förhindra manuella rabatter**: Markera det här alternativet för att bara förhindra manuella rad- och transaktionsrabatter som används vid försäljning av en kassaanvändare. Produkter med det här alternativet är fortfarande berättigade till erbjudanden, såsom rabatter för mixa och matcha och kvantitets- och tröskelvärdesrabatter.
+
+**Observera**: De här inställningarna begränsar inte hur prisåsidosättningsåtgärden eftersom de anger grundpriset och behandlas inte som en rabatt.  
+
+![förhindra rabattfält](/media/prevent-discounts.png)
+

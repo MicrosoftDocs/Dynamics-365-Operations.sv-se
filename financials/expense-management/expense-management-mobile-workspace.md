@@ -16,12 +16,12 @@ ms.assetid: 3605eda1-a7ed-4675-8031-5279c5a8f5e4
 ms.search.region: Global
 ms.author: knelson
 ms.dyn365.ops.intro: Version 1611
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 2dd3db95eb741c37dd8a50c397cb4c9494599250
-ms.openlocfilehash: 993586b1fb46c21d2b68a6060ab897c8ccc76a6c
+ms.sourcegitcommit: db41b3873755f93895aea7a32b65f2a8ed6a57fd
+ms.openlocfilehash: 58d36505461ea89bf466209d3da968d1357e58ae
 ms.contentlocale: sv-se
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/10/2017
 
 ---
 
@@ -131,11 +131,11 @@ Hämta och installera mobilappen Dynamics 365 for Unified Operations:
 ## <a name="quickly-enter-expenses-by-using-the-expense-management-mobile-workspace"></a>Snabb utgiftspost med mobil arbetsyta för utgiftshantering
 1. På din mobila enhet öppnar du arbetsytan **Utgiftshantering**.
 2. Välj **snabb utgiftspost**.
-3. Välj kategori för utgiften. Du kan se en lista över de utgiftskategorier som laddas i ditt program för användning offline. 50 objekt laddas som standard, men en utvecklare kan ändra detta antal. Mer information för utvecklare finns under [mobil plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform). Om kategorin inte finns i listan, välj **Sök** för att göra en onlinesökning. Sök efter kostnadskategori eller växla om du vill söka efter utgiftstyp.
+3. Välj kategori för utgiften. Du kan se en lista över de utgiftskategorier som laddas i ditt program för användning offline. 50 objekt laddas som standard, men en utvecklare kan ändra detta antal. Mer information för utvecklare finns under [mobil plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page). Om kategorin inte finns i listan, välj **Sök** för att göra en onlinesökning. Sök efter kostnadskategori eller växla om du vill söka efter utgiftstyp.
 4. Ange transaktionsdatum för utgiften.
 5. Valfritt: Ange handlare för utgiften.
 6. Ange belopp för utgiften.
-7. Välj valutakod för utgiften. Du kan se en lista över de valutakoder som laddas i ditt program för användning offline. Upp till 400 valutor laddas som standard, men en utvecklare kan ändra detta antal. Mer information för utvecklare finns under [mobil plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform). Om valutan inte finns i listan, välj **Sök** för att göra en onlinesökning. Sök efter valuta eller växla om du vill söka efter namnet.
+7. Välj valutakod för utgiften. Du kan se en lista över de valutakoder som laddas i ditt program för användning offline. Upp till 400 valutor laddas som standard, men en utvecklare kan ändra detta antal. Mer information för utvecklare finns under [mobil plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page). Om valutan inte finns i listan, välj **Sök** för att göra en onlinesökning. Sök efter valuta eller växla om du vill söka efter namnet.
 8. Välj **ta foto** eller **Välj bild**.
 9. Gör något av följande:
 
@@ -166,11 +166,11 @@ Hämta och installera mobilappen Dynamics 365 for Unified Operations:
 7. Välj en eller flera utgifter i listan.
 8. Välj **Klar**.
 9. För att lägga till en ny utgift i utgiftsrapporten, välj **ny utgift**.
-10. Välj kategori för utgiften. Du kan se en lista över de utgiftskategorier som laddas i ditt program för användning offline. 50 objekt laddas som standard, men en utvecklare kan ändra detta antal. Mer information för utvecklare finns under [mobil plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform). Om kategorin inte finns i listan, välj **Sök** för att göra en onlinesökning. Sök efter kostnadskategori eller växla om du vill söka efter utgiftstyp.
+10. Välj kategori för utgiften. Du kan se en lista över de utgiftskategorier som laddas i ditt program för användning offline. 50 objekt laddas som standard, men en utvecklare kan ändra detta antal. Mer information för utvecklare finns under [mobil plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page). Om kategorin inte finns i listan, välj **Sök** för att göra en onlinesökning. Sök efter kostnadskategori eller växla om du vill söka efter utgiftstyp.
 11. Valfritt: Ange handlare för utgiften.
 12. Ange transaktionsdatum för utgiften.
 13. Ange belopp för utgiften.
-14. Välj valutakod för utgiften. Du kan se en lista över de valutakoder som laddas i ditt program för användning offline. Upp till 400 valutor laddas som standard, men en utvecklare kan ändra detta antal. Mer information för utvecklare finns under [mobil plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform). Om valutan inte finns i listan, välj **Sök** för att göra en onlinesökning. Sök efter valuta eller växla om du vill söka efter namnet.
+14. Välj valutakod för utgiften. Du kan se en lista över de valutakoder som laddas i ditt program för användning offline. Upp till 400 valutor laddas som standard, men en utvecklare kan ändra detta antal. Mer information för utvecklare finns under [mobil plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page). Om valutan inte finns i listan, välj **Sök** för att göra en onlinesökning. Sök efter valuta eller växla om du vill söka efter namnet.
 15. Välj **Klar**.
 16. Lägg till fler detaljer till utgiften genom att markera **lägg till fler detaljer**. Fälten som är tillgängliga beror på konfigurationen av utgiftshantering för ditt företag.
 17. Om företagets policy kräver inleverans för utgiften markerar du **inleveranser**, och gör sedan följande:
@@ -216,12 +216,12 @@ Hämta och installera mobilappen Dynamics 365 for Unified Operations:
 
         - Eller om du har valt **Tidigare gäst**, gör du följande:
 
-            1. Välj en eller flera tidigare gäster i listan. Du kan visa en lista med tidigare gäster som du har lagt till tidigare kostnadsrapporter som läses in i ditt program för användning offline. 50 objekt laddas som standard, men en utvecklare kan ändra detta antal. Mer information för utvecklare finns under [mobil plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform). Om dina tidigare gäster inte finns i listan, välj **Sök** för att göra en onlinesökning. Sök efter namn eller gå till sök efter organisation, land eller titel.
+            1. Välj en eller flera tidigare gäster i listan. Du kan visa en lista med tidigare gäster som du har lagt till tidigare kostnadsrapporter som läses in i ditt program för användning offline. 50 objekt laddas som standard, men en utvecklare kan ändra detta antal. Mer information för utvecklare finns under [mobil plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page). Om dina tidigare gäster inte finns i listan, välj **Sök** för att göra en onlinesökning. Sök efter namn eller gå till sök efter organisation, land eller titel.
             2. Välj **Klar**.
 
         - Om du har valt **Medarbetare**, gör du följande:
 
-            1. Välj en eller flera medarbetare i listan. Du kan se en lista över medarbetare som laddas i ditt program för användning offline. 50 objekt laddas som standard, men en utvecklare kan ändra detta antal. Mer information för utvecklare finns under [mobil plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform). Om medarbetare inte finns i listan, välj **Sök** för att göra en onlinesökning. Sök efter namn eller gå till sök efter företag eller titel.
+            1. Välj en eller flera medarbetare i listan. Du kan se en lista över medarbetare som laddas i ditt program för användning offline. 50 objekt laddas som standard, men en utvecklare kan ändra detta antal. Mer information för utvecklare finns under [mobil plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page). Om medarbetare inte finns i listan, välj **Sök** för att göra en onlinesökning. Sök efter namn eller gå till sök efter företag eller titel.
             2. Välj **Klar**.
 
     3. För att återgå till utgiftsdetaljerna, klicka på knappen **Bakåt** .
@@ -230,7 +230,7 @@ Hämta och installera mobilappen Dynamics 365 for Unified Operations:
 
     1. Välj startdatum att specificera.
     2. Välj **Lägg till specifikation**.
-    3. Välj underkategori för utgiftsspecifikation. Du kan se en lista över de underskategorier som laddas i ditt program för användning offline. 50 objekt laddas som standard, men en utvecklare kan ändra detta antal. Mer information för utvecklare finns under [mobil plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/mobile-platform). Om underkategorin inte finns i listan, välj **Sök** för att göra en onlinesökning. Sök efter underkategori för utgift.
+    3. Välj underkategori för utgiftsspecifikation. Du kan se en lista över de underskategorier som laddas i ditt program för användning offline. 50 objekt laddas som standard, men en utvecklare kan ändra detta antal. Mer information för utvecklare finns under [mobil plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page). Om underkategorin inte finns i listan, välj **Sök** för att göra en onlinesökning. Sök efter underkategori för utgift.
     4. Ange ett transaktionsbelopp för specifikationen.
     5. Redigera transaktionsdatum om det är obligatoriskt.
     6. Välj **Klar**.
