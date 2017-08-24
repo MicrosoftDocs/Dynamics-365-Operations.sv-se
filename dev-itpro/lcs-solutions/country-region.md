@@ -14,13 +14,13 @@ ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 104173
 ms.search.region: Global
 ms.author: shylaw
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9f4b007c174961a8e6794ab532d733584f492758
-ms.openlocfilehash: ead315d2e07818b35dd2806fca7e242f4028be07
+ms.sourcegitcommit: db41b3873755f93895aea7a32b65f2a8ed6a57fd
+ms.openlocfilehash: 25cba59dfbab2e1030660840e85d278452e39e52
 ms.contentlocale: sv-se
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/10/2017
 
 ---
 
@@ -29,9 +29,9 @@ ms.lasthandoff: 07/27/2017
 [!include[banner](../includes/banner.md)]
 
 
-Microsoft Dynamics 365 for Finance and Operations innehåller funktioner för länder/regioner dokumenterade i [produkttillgänglighetsguiden](http://download.microsoft.com/documents/en-us/dynamics/Microsoft%20Dynamics%20AX%20Product%20Availability%20Guide.pdf). Den här funktionen aktiveras grundad på den aktiva juridiska personens primära adress. 
+Microsoft Dynamics 365 for Finance and Operations innehåller funktioner för länder/regioner dokumenterade i den [internationella produkttillgänglighetsguiden](http://download.microsoft.com/documents/en-us/dynamics/Microsoft%20Dynamics%20AX%20Product%20Availability%20Guide.pdf). Den här funktionen aktiveras grundad på den aktiva juridiska personens primära adress. 
 
-Det här ämnet innehåller listor med resurser som lär dig mer om lands- och regionspecifika funktioner. 
+Det här ämnet innehåller listor med resurser som lär dig mer om lands- och regionspecifika lösningar, uppdateringar, notifieringar och funktioner. 
 
 ## <a name="developing-localized-solutions"></a>Utveckla lokaliserade lösningar
 Följande resurser innehåller anvisningar och information som hjälper utvecklare och programvaruleverantörer som skapar lands-/regionspecifika anpassningar eller skapar en lösning för ett land Microsoft inte stöder.
@@ -96,9 +96,13 @@ Följande avsnitt visar resurser efter land/region.
 -   [CODA-bankutdrag](/dynamics365/unified-operations/financials/localizations/emea-bel-coda-bank-statement-import)
 -   [Intervat momsdeklaration](/dynamics365/unified-operations/financials/localizations/emea-bel-intervat-tax-declaration)
 -   [Inställning av PRODCOM-rapport](/dynamics365/unified-operations/financials/localizations/emea-bel-prodcom-report)
+-   [Avstämningsrapporter](/dynamics365/unified-operations/financials/localizations/emea-bel-reconciliation-reports)
 
 ### <a name="brazil"></a>Brasilien
 
+-   [CIAP-anläggningstillgång](/dynamics365/unified-operations/financials/localizations/latam-bra-ciap-fixed-asset)
+-   [Konfigurera skatteböcker](/dynamics365/unified-operations/financials/localizations/latam-bra-configure-fiscal-books)
+-   [Exportera och importera transaktioner för redovisningskonsolidering för Brasilien](/dynamics365/unified-operations/financials/localizations/latam-bra-general-ledger-consolidation-transactions)
 -   [Skatteböcker](/dynamics365/unified-operations/financials/localizations/latam-bra-fiscal-books)
 -   [Platshållare för text i skattedokument](/dynamics365/unified-operations/financials/localizations/latam-bra-fiscal-document-text-placeholders)
 -   [Skattedokument](/dynamics365/unified-operations/financials/localizations/latam-bra-fiscal-documents-fiscal-document-framework)
@@ -108,10 +112,12 @@ Följande avsnitt visar resurser efter land/region.
 -   [Journaler skapade under den elektroniska betalningsreturen](/dynamics365/unified-operations/financials/localizations/latam-bra-examples-journals-generated-electronic-payment-return-process)
 -   [NF-e-process](/dynamics365/unified-operations/financials/localizations/latam-bra-nf-e-process)
 -   [Parametrar för juridiska personer](/dynamics365/unified-operations/financials/localizations/latam-bra-legal-entity-parameters)
+-   [Bearbeta elektroniska betalningsremissor för Brasilien](/dynamics365/unified-operations/financials/localizations/latam-bra-process-electronic-payment-remittances)
 -   [Kompletterande skattedokumentet för inköp](/dynamics365/unified-operations/financials/localizations/latam-bra-purchase-complementary-fiscal-documents)
 -   [Refererade skattedokument](/dynamics365/unified-operations/financials/localizations/latam-bra-referenced-fiscal-documents)
 -   [Kompletterande skattedokumentet för försäljning](/dynamics365/unified-operations/financials/localizations/latam-bra-sales-complementary-fiscal-documents)
 -   [Serva skattedokument för tjänst](/dynamics365/unified-operations/financials/localizations/latam-bra-service-electronic-fiscal-document)
+-   [Ställ in, importera och verifiera NF-e XML-dokument och DANFE](/dynamics365/unified-operations/financials/localizations/latam-bra-set-up-import-nfe)
 -   [Momsattribut](/dynamics365/unified-operations/financials/localizations/latam-bra-tax-attributes)
 -   [Momsbetalningar](/dynamics365/unified-operations/financials/localizations/latam-bra-tax-payments)
 -   [Skatter](/dynamics365/unified-operations/financials/localizations/latam-bra-calculate-taxes)
@@ -159,6 +165,7 @@ Följande avsnitt visar resurser efter land/region.
 - [Valutakursjusteringar](/dynamics365/unified-operations/financials/localizations/emea-exchange-rate-adjustments)
 - [Filformat för betalningsmetoder](/dynamics365/unified-operations/financials/localizations/emea-select-file-formats-for-the-method-of-payments)
 - [Avyttring av anläggningstillgångar för Estland och Litauen](/dynamics365/unified-operations/financials/localizations/emea-credit-note-reverse-fixed-asset-sale)
+- [Importera ISO20022-filer](/dynamics365/unified-operations/financials/localizations/emea-ISO20022-file-formats)
 - [Intrastat](/dynamics365/unified-operations/financials/localizations/emea-intrastat)
 - [Lagerjournalrapporter](/dynamics365/unified-operations/financials/localizations/emea-set-up-report-inventory-journal-names)
 - [Faktura- och följesedelsnumrering för Lettland och Litauen](/dynamics365/unified-operations/financials/localizations/emea-invoices-packing-slips-numbering)
@@ -174,6 +181,7 @@ Följande avsnitt visar resurser efter land/region.
 - [Översikt över SEPA-autogiro](/dynamics365/unified-operations/financials/accounts-receivable/sepa-direct-debit-overview)
 - [Ställ in kund- och leverantörskompensation](/dynamics365/unified-operations/financials/localizations/emea-compensation-customer-vendor-transactions)
 - [Ställ in undertecknare för utskriftsformulär](/dynamics365/unified-operations/financials/localizations/emea-set-up-signers-for-printing-forms)
+- [Storno-redovisning](/dynamics365/unified-operations/financials/localizations/emea-storno)
 - [Skattedirektiv](/dynamics365/unified-operations/financials/localizations/emea-tax-directives)
 - [Uppdatera hur belopp visas i rapporter och dokument](/dynamics365/unified-operations/financials/localizations/emea-amount-printing-forms) 
 - [Momsvalutakurser](/dynamics365/unified-operations/financials/localizations/emea-vat-exchange-rate)
@@ -199,7 +207,7 @@ Följande avsnitt visar resurser efter land/region.
 
 ### <a name="germany"></a>Tyskland
 -   [Ytterligare förvärvsavskrivning](/dynamics365/unified-operations/financials/localizations/emea-deu-additional-acquisition-depreciation)
--   [Tysk verifieringsfil (GDPdU/GoBD](/dynamics365/unified-operations/financials/localizations/emea-deu-gdpdu-audit-data-export)
+-   [Tysk verifieringsfil (GDPdU/GoBD)](/dynamics365/unified-operations/financials/localizations/emea-deu-gdpdu-audit-data-export)
 -   [Tysk journallisterapport](/dynamics365/unified-operations/financials/localizations/emea-deu-journal-list-report)
 -   [Skriv ut en separat etikett för kreditnotor från försäljning](/dynamics365/unified-operations/financials/localizations/emea-deu-print-separate-label-credit-memo-originating-sales)
 
@@ -246,6 +254,7 @@ Följande avsnitt visar resurser efter land/region.
 
 -   [Utdrag reparation av anläggningstillgångar](/dynamics365/unified-operations/financials/localizations/emea-ltu-fixed-asset-repair-statement)
 -   [Numrering av fakturor och följesedlar](/dynamics365/unified-operations/financials/localizations/emea-invoices-packing-slips-numbering)
+-   [Momsutdragsinformation](/dynamics365/unified-operations/financials/localizations/emea-ltu-vat-statement-details)
 
 ### <a name="mexico"></a>Mexiko
 
@@ -296,6 +305,7 @@ Följande avsnitt visar resurser efter land/region.
 -   [Omvärderingsgrupper för anläggningstillgångar](/dynamics365/unified-operations/financials/localizations/emea-esp-fixed-asset-group-revaluation)
 -   [Inomeuropeisk moms](/dynamics365/unified-operations/financials/localizations/emea-esp-intra-community-vat)
 -   [Engångskunder](/dynamics365/unified-operations/financials/localizations/emea-esp-no-one-time-customer-for-project-contracts)
+-   [Skriv ut checkar med spansk layout](/dynamics365/unified-operations/financials/localizations/emea-esp-print-checks-with-spanish-layout)
 -   [Alternativ för spansk skuldsedel](/dynamics365/unified-operations/financials/localizations/emea-esp-promissory-note-options)
 -   [Inköps- och försäljningscykler](/dynamics365/unified-operations/financials/localizations/emea-esp-sales-purchase-cycle)
 -   [Särskilda poster och ingående ark](/dynamics365/unified-operations/financials/localizations/emea-esp-opening-sheets-spain)
@@ -313,6 +323,7 @@ Följande avsnitt visar resurser efter land/region.
 ### <a name="thailand"></a>Thailand
 
 -   [Lagerkortsrapporter](/dynamics365/unified-operations/financials/localizations/apac-tha-stock-card-reports)
+-   [Momsfaktura för ersättning/justering för Thailand](/dynamics365/unified-operations/financials/localizations/apac-tha-substitution-and-adjustment-invoices)
 -   [Orealiserad moms](/dynamics365/unified-operations/financials/localizations/apac-tha-unrealized-vat)
 -   [Källskatt](/dynamics365/unified-operations/financials/localizations/apac-tha-withholding-tax)
 
@@ -322,6 +333,7 @@ Följande avsnitt visar resurser efter land/region.
 
 ### <a name="united-states"></a>USA
 
+-   [1099-blankett i den offentliga sektorn](/dynamics365/unified-operations/financials/localizations/noam-usa-form-1099-public-sector)   
 -   [Verifiering av I–9-formulär](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-form-i-9-verification)
 -   [1099-rapportering vid årsslut](/dynamics365/unified-operations/financials/localizations/noam-usa-year-end-1099-reporting)
 -   [Lön](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-payroll)

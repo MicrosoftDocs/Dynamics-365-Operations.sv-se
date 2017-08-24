@@ -13,22 +13,22 @@ ms.reviewer: margoc
 ms.custom: 62303
 ms.search.region: Global
 ms.author: margoc
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: fc446f381850f4f42b6dbc886646d3d32f2d5dd7
-ms.openlocfilehash: 1b46d24a0f671502c9dc3d46849240342d680468
+ms.sourcegitcommit: 8ae84f23744947cf49365d318a208802c6db95a9
+ms.openlocfilehash: 5c40e4bf1d2defeeb656348e1bc3886d5423ca12
 ms.contentlocale: sv-se
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/16/2017
 
 ---
 
 # <a name="introduction-to-dynamics-365-for-finance-and-operations"></a>Introduktion till Dynamics 365 for Finance and Operations
 [!include[banner](includes/banner.md)]
 
-Microsoft Dynamics 365 for Finance and Operations är Microsofts affärsprogram för företag. Den gör det möjligt att snabbt fatta smartare beslut med ett intelligent användargränssnitt som ger åtkomst till information och data i realtid. Den möjliggör för företag att omvandlas och förändras genom att leverera beprövad affärslogik som gör det möjligt att snabbare ändra affärsprocesserna. Den ger företag flexibilitet att växa i sin egen takt och göra affärer nästan var som helst, när som helst, och gör det möjligt för dem att skala verksamheten globalt för att passa affärsbehoven. 
+Microsoft Dynamics 365 for Finance and Operations är Microsofts affärsprogram för företag. Med detta blir det möjligt att snabbt fatta smartare beslut med ett intelligent användargränssnitt som ger åtkomst till information och data i realtid. Det möjliggör för företag att omvandlas och förändras genom att leverera beprövad affärslogik som gör det möjligt att snabbare ändra affärsprocesserna. Den ger företag flexibilitet att växa i sin egen takt och göra affärer nästan var som helst, när som helst, och gör det möjligt för dem att skala verksamheten globalt för att passa affärsbehoven. 
 
-Den här dokumentationen hjälper dig att anpassa Dynamics 365 for Finance and Operations till ditt företag. Den är kopplad till dokumentationen för relaterade produkter i det enhetliga Operations-programpaketet, Dynamics 365 for Retail och Dynamics 365 for Talent. 
+Den här dokumentationen hjälper dig att anpassa Dynamics 365 for Finance and Operations till ditt företag. Den är kopplad till dokumentationen för relaterade produkter: Dynamics 365 for Retail och Dynamics 365 for Talent. 
 
 <table>
 <colgroup>
@@ -86,7 +86,7 @@ Den här dokumentationen hjälper dig att anpassa Dynamics 365 for Finance and O
 <p><a href="../dev-itpro/analytics/financial-reporting-intro">Ekonomisk rapportering</a></p>
 <p><a href="../dev-itpro/analytics/general-electronic-reporting">Lagstadgad rapportering</a></p>
 
-<h3><a href="../dev-itpro/mobile-apps/mobile-platform">Mobilplattform</a></h3>
+<h3><a href="../dev-itpro/mobile-apps/platform/mobile-platform-home-page">Mobilplattform</a></h3>
 
 <h3>Funktioner för utvecklare</h3>
 <p><a href="../dev-itpro/dev-tools/developer-home-page">Startsida för utvecklare</a></p>
