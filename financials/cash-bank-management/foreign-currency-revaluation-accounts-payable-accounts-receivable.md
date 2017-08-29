@@ -1,7 +1,7 @@
 ---
 title: "Omräkning i utländsk valuta för Leverantörsreskontra och Kundreskontra"
 description: "Variationer i valutakurser gör att det teoretiska värdet (bokförda värdet) för öppna kundtransaktioner i utländska valutor varierar över tiden. Den här artikeln innehåller information om den process för omräkning i utländsk valuta som du kör om du vill uppdatera värdet för öppna transaktioner i Leverantörsreskontra och Kundreskontra."
-author: twheeloc
+author: kweekley
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -23,7 +23,6 @@ ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
 ms.openlocfilehash: f09589a6f0a684752c7c9b98528e9546fedf341e
 ms.contentlocale: sv-se
 ms.lasthandoff: 05/25/2017
-
 
 ---
 

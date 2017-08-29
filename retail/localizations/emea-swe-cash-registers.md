@@ -1,7 +1,7 @@
 ---
 title: "Kassaapparater för Sverige"
 description: "Det här avsnittet innehåller en översikt över kassaapparatfunktioner för Sverige."
-author: epopov
+author: EvgenyPopovMBS
 manager: annbe
 ms.date: 06/22/2017
 ms.topic: article
@@ -15,7 +15,7 @@ ms.search.scope: Retail, Operations, Core, UnifiedOperations
 ms.search.region: Sweden
 ms.search.industry: retail
 ms.author: epopov
-ms.search.validFrom: 2017-06-30T00:00:00.000Z
+ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
 ms.sourcegitcommit: 9f4b007c174961a8e6794ab532d733584f492758

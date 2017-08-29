@@ -1,7 +1,7 @@
 ---
 title: "Ställ in centraliserade leverantörsbetalningar"
 description: "Följ dessa steg för att bearbeta betalningar för en juridisk person på uppdrag av andra juridiska personer inom din organisation."
-author: twheeloc
+author: kweekley
 manager: AnnBe
 ms.date: 05/09/2017
 ms.topic: article

@@ -1,7 +1,7 @@
 ---
 title: Importera eller skapa postnummer manuellt
 description: "Den här artikeln beskriver hur du importerar och manuellt skapar postnummer i rätt format. Det här avsnittet innehåller information om funktioner som har lagts till för Microsoft Dynamics 365 for Finance and Operations, Enterprise edition."
-author: ShylaThompson
+author: EvgenyPopovMBS
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -22,7 +22,6 @@ ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
 ms.openlocfilehash: 34dbdf5fe0d15069607a9f6154443684d59f6c1d
 ms.contentlocale: sv-se
 ms.lasthandoff: 06/13/2017
-
 
 ---
 

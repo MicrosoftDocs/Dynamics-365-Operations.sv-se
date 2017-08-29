@@ -1,7 +1,7 @@
 ---
 title: Huvudkontotyper
 description: "Huvudkontotyperna bestämmer hur ett huvudkonto används i kontoplanen."
-author: twheeloc
+author: aprilolson
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article

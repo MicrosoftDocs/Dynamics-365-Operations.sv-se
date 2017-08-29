@@ -1,7 +1,7 @@
 ---
 title: "Hantering av skift och kassalåda"
 description: "Den här artikeln innehåller en beskrivning av hur du ställer in och använder de två typerna av skift för butikskassor: delat och fristående. Delade skift kan användas av flera användare på flera ställen, medan fristående skift enbart kan användas av en medarbetare åt gången."
-author: josaw1
+author: rubencdelgado
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -23,8 +23,6 @@ ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
 ms.openlocfilehash: 0d5e05e8f1edcc01af985c25459d93de0bc2acf1
 ms.contentlocale: sv-se
 ms.lasthandoff: 06/20/2017
-
-
 
 ---
 

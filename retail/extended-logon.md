@@ -1,7 +1,7 @@
 ---
 title: "Konfigurera utökad inloggning för Cloud POS och MPOS"
 description: "Detta avsnitt täcker dina alternativ för att ställa in utökad inloggning för molnbaserad kassa och Retail Modern POS (MPOS)."
-author: josaw1
+author: rubencdelgado
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -23,8 +23,6 @@ ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
 ms.openlocfilehash: 0b7e5ed451497aea1c2ce798af2b717705538d47
 ms.contentlocale: sv-se
 ms.lasthandoff: 06/20/2017
-
-
 
 ---
 
