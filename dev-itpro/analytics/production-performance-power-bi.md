@@ -1,7 +1,7 @@
 ---
 title: "Power BI-innehåll för produktionsprestanda"
 description: "Det här avsnittet beskriver vad som ingår i Power BI-innehållet för produktionsprestanda. Det förklarar hur du öppnar Power BI-rapporter, och ger information om den datamodell och de enheter som användes för att skapa innehållet."
-author: sericks
+author: AndersGirke
 manager: AnnBe
 ms.date: 06/16/2017
 ms.topic: article

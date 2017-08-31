@@ -1,7 +1,7 @@
 ---
 title: Ekonomiska dimensioner
 description: "Den här ämnet beskriver de olika typerna av ekonomiska dimensioner och hur de ställs in."
-author: twheeloc
+author: aprilolson
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article

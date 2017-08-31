@@ -1,7 +1,7 @@
 ---
 title: "Stäng redovisningen vid periodslutet"
 description: "Det här avsnittet beskriver de uppgifter som normalt slutförs vid en periodstängning av redovisningen."
-author: RobinARH
+author: aprilolson
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article

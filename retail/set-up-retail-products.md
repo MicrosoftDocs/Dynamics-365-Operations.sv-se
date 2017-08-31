@@ -1,7 +1,7 @@
 ---
 title: "Ställ in butiksprodukter"
 description: "Denna artikel beskriver hur du ställer in butiksprodukter i Microsoft Dynamics 365 for Retail."
-author: josaw1
+author: jblucher
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -23,8 +23,6 @@ ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
 ms.openlocfilehash: 2be44e0000e9730aa93076f21a4204f5d56f6aac
 ms.contentlocale: sv-se
 ms.lasthandoff: 06/20/2017
-
-
 
 ---
 

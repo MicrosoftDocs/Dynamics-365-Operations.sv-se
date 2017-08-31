@@ -1,7 +1,7 @@
 ---
 title: "Ställa in ett kundbonusprogram"
 description: "I det här avsnittet beskrivs hur du ställer in ett bonusprogram. Bonusprogram kan öka kundlojaliteten genom att kunderna belönas för att köpa produkter i dina butiker. I Microsoft Dynamics 365 for Retail kan du ställa in enkla eller komplexa bonusprogram som gäller för dina juridiska personer i en butikskanal."
-author: josaw1
+author: scott-tucker
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -23,8 +23,6 @@ ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
 ms.openlocfilehash: 710f8ae3a6a2b5072f37879aad066dc699ede8f0
 ms.contentlocale: sv-se
 ms.lasthandoff: 06/20/2017
-
-
 
 ---
 

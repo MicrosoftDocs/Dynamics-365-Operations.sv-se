@@ -1,7 +1,7 @@
 ---
 title: "Ange initiala lönesaldon"
 description: "Avsnittet beskriver stegen för att ange initiala saldon för lönekoder, förmåner, avdrag och moms. Denna information är viktig för partnerföretag som vill migrera eller överföra data för en ny implementering av lönelistor från ett annat system."
-author: kherr
+author: kherr75
 manager: AnnBe
 ms.date: 07/01/2017
 ms.topic: article
@@ -15,7 +15,7 @@ ms.custom: 20931
 ms.assetid: b48b1cb2-6e66-467e-9c0e-09b6a4aeb9fe
 ms.search.region: Global
 ms.author: kherr
-ms.search.validFrom: 2017-07-01T00:00:00.000Z
+ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
 ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e

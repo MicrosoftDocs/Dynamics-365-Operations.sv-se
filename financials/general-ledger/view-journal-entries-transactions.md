@@ -1,7 +1,7 @@
 ---
 title: Visa journalposter och transaktioner
 description: "Det här avsnittet innehåller information om de olika sätten att visa journalposter och transaktioner."
-author: RobinARH
+author: aprilolson
 manager: AnnBe
 ms.date: 08/01/2017
 ms.topic: article
