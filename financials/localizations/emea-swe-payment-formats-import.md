@@ -23,7 +23,6 @@ ms.openlocfilehash: aaf6aab4deb4cd676ecb56d89fbc8f4ef610ae8d
 ms.contentlocale: sv-se
 ms.lasthandoff: 05/25/2017
 
-
 ---
 
 # <a name="import-payment-formats-for-sweden"></a>Importformat för betalning för Sverige
@@ -41,7 +40,8 @@ Filimporter via BankGirot MAX och BankGirot OCR låter dig importera kundbetalni
 1.  Gå till sidan **Betalningsjournal**.
 2.  Klicka på **Rader**.
 3.  Klicka på **Funktioner** &gt; **Importera betalningar**.
-4.  I dialogrutan väljer du betalningsmetoden och bläddrar sedan till platsen för filen som ska importeras. 
+4.  I dialogrutan väljer du betalningsmetoden och bläddrar sedan till platsen för filen som ska importeras.
+
   > [!NOTE]
   >  Innan du kan slutföra detta steg måste du redan ha importerat konfigurationerna från Lifecycle Services (LCS) och ställt in betalningsmetoderna. Mer information finns i [Filformat för betalningsmetod](emea-select-file-formats-for-the-method-of-payments.md).
 
@@ -53,6 +53,7 @@ Bankgirot Autogiro returnerar format för autogiro-betalningsformatet med samma 
 1.  Gå till sidan **Betalningsöverföringar**.
 2.  Klicka på **Returfil-kund**.
 3.  I dialogrutan väljer du relaterad betalningsmetod och bläddrar sedan till platsen för filen som ska importeras. 
+
   > [!NOTE]
   >  Innan du kan slutföra detta steg måste du redan ha importerat konfigurationerna från Lifecycle Services (LCS) och ställt in betalningsmetoderna. Mer information finns i [Filformat för betalningsmetod](emea-select-file-formats-for-the-method-of-payments.md).
 
