@@ -1,4 +1,4 @@
---- 
+---
 title: "Inventering i ett lagerställe"
 description: "I den här proceduren beskrivs hur du kan skapa och bokföra en lagerinventeringsjournal för att kunna räkna en viss artikel på en plats på lagerstället."
 author: MarkusFogelberg
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -68,5 +68,4 @@ I den här proceduren beskrivs hur du kan skapa och bokföra en lagerinventering
 1. Klicka på Lager.
 2. Klicka på Transaktioner.
     * Här kan du se alla relaterade transaktioner som skapas när du bokför en lagerinventeringsjournal.   
-
 

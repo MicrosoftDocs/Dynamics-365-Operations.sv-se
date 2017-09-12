@@ -1,4 +1,4 @@
---- 
+---
 title: "Definiera lagerberäkningsprocesser"
 description: "I den här proceduren om du vill gå du hjälp med konfigurationen för ifyllda processer för det grundläggande lager, genom att skapa en beräkningsgrupp och en inventeringsjournal."
 author: MarkusFogelberg
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -84,5 +84,4 @@ I den här proceduren om du vill gå du hjälp med konfigurationen för ifyllda 
 7. Välj inventeringsgrupp i listan.
     * Här kan du välja en viss beräkningsgrupp som ska användas för artikeln i den angivna lagerstället, som du har valt. När du vill beräkna är den utförs i lagerstället, kommer denna av policy åsidosätta den allmänna principen för av artikeln.  
 8. Klicka på Spara.
-
 

@@ -1,4 +1,4 @@
---- 
+---
 title: "Ställ in kvalitetsorder"
 description: "I den här proceduren visas om hur du aktiverar en kvalitetshantering process där det inkommande lager måste kontrolleras omedelbart efter fakturaregister."
 author: perlynne
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -142,5 +142,4 @@ I den här proceduren visas om hur du aktiverar en kvalitetshantering process d�
 15. Hitta och markera önskad post i listan.
 16. Klicka på Spara.
 17. Stäng sidan.
-
 

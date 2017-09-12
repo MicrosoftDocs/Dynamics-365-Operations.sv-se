@@ -1,4 +1,4 @@
---- 
+---
 title: "Skapa och underhålla lagerspärr"
 description: "I den här proceduren visas hur du kan förhindra den fysiska lagerbehållningen från att reserveras av andra utgående källdokument genom att använda lagerspärren."
 author: perlynne
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -34,7 +34,7 @@ I den här proceduren visas hur du kan förhindra den fysiska lagerbehållningen
 1. Gå till Lagerhantering > Periodiska uppgifter >Lagerspärr.
 2. Klicka på Ny.
 3. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Artikelnummer.
-4. Välj den artikel som du vill ha i listan. 
+4. Välj den artikel som du vill ha i listan.
     * Välj ett artikelnummer med fysisk lagerbehållning som du vill spärra. Om du använder USMF kan du välja artikeln M9201.  
 5. Ange ett tal i fältet Kvantitet.
     * Om du använder artikeln M9201 måste du välja lägre än 200.  
@@ -55,5 +55,4 @@ I den här proceduren visas hur du kan förhindra den fysiska lagerbehållningen
 1. Klicka på Ta bort.
 2. Klicka på Ja.
 3. Stäng sidan.
-
 

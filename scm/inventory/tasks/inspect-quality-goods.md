@@ -1,4 +1,4 @@
---- 
+---
 title: "Kontrollera kvaliteten på varor"
 description: "I den här proceduren visas hur du bearbetar en kvalitetsorder."
 author: perlynne
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -55,5 +55,4 @@ I den här proceduren visas hur du bearbetar en kvalitetsorder. Du kan köra den
 4. Klicka på Välj.
 5. Klicka på OK.
 6. Stäng sidan.
-
 

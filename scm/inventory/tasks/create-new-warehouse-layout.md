@@ -1,4 +1,4 @@
---- 
+---
 title: "Skapa en ny layout för lagerställe"
 description: "I den här proceduren visas hur du ställer in information om platserna i ett lagerställe."
 author: perlynne
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -49,7 +49,7 @@ I den här proceduren visas hur du ställer in information om platserna i ett la
 7. Växla utökningen av avsnittet Platsnamn.
     * Alternativen i detta avsnitt definierar standardformatet på platsnamn. I vårt exempel ska vi inkludera gångnummer, ställningsnummer och hyllnummer.  
 8. Ange alternativet Inkludera gång som Ja.
-9. Ange alternativet Inkludera ställning som Ja. 
+9. Ange alternativet Inkludera ställning som Ja.
 10. I fältet Format skriver du in ett värde för ställningen.
     * Exempel: -##  
 11. Ange alternativet Inkludera hylla som Ja.
@@ -74,5 +74,4 @@ I den här proceduren visas hur du ställer in information om platserna i ett la
 14. Klicka på Avsluta.
 15. Stäng sidan.
 16. Uppdatera sidan.
-
 

@@ -1,4 +1,4 @@
---- 
+---
 title: "Kontrollera lagertillgängligheten"
 description: "Den här proceduren visar hur du kontrollerar lagerbehållning och fysisk lagerbehållning för ett visst artikelnummer."
 author: perlynne
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -67,5 +67,4 @@ Den här proceduren visar hur du kontrollerar lagerbehållning och fysisk lagerb
 4. Klicka på Visa dimensioner.
 5. Klicka på OK.
 6. Stäng sidan.
-
 

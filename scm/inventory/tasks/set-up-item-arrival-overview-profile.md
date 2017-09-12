@@ -1,7 +1,7 @@
---- 
+---
 title: "Ställ in en översiktsprofil för artikelinförsel"
 description: "Denna uppgift är avsedd för att ställa in en översiktsprofil för införsel."
-author: BibiSp
+author: perlynne
 manager: AnnBe
 ms.date: 11/14/2016
 ms.topic: business-process
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -62,5 +62,4 @@ Denna uppgift är avsedd för att ställa in en översiktsprofil för införsel.
     * Välj inköpsrader från överföringsorder.  
 17. Klicka på Spara.
 18. Stäng sidan.
-
 

@@ -1,4 +1,4 @@
---- 
+---
 title: "Justera lagernivåer i lagerstället (grundläggande lagerstyrning)"
 description: "Den här proceduren beskriver hur du kan skapa och bokför en lagerjusteringsjournal för att justera lagernivåer för produkter på lagerstället."
 author: MarkusFogelberg
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -58,5 +58,4 @@ Den här proceduren beskriver hur du kan skapa och bokför en lagerjusteringsjou
 4. Klicka på OK.
 5. Stäng formuläret.
 6. Stäng sidan.
-
 

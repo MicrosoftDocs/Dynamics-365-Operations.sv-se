@@ -1,7 +1,7 @@
 ---
 title: "Införselöversikt"
 description: "Det här avsnittet ger information om funktionen Införselöversikt. Sidan för införselöversikt är en del av den här funktionen och ger en översikt över alla artiklar som förväntas ankomma som inkommande artiklar."
-author: YuyuScheller
+author: perlynne
 manager: AnnBe
 ms.date: 04/20/2017
 ms.topic: article
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: WMSArrivalOverview, WMSArrivalOverviewProfile, WMSJournalTable
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: YuyuScheller
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 274363
 ms.assetid: 375807b2-a426-4f1b-bc1f-2fe00fd48413
@@ -37,9 +37,9 @@ Det här avsnittet ger information om funktionen Införselöversikt. Sidan för 
 Sidan **Införselöversikt** sidan ger en överblick över alla förväntade inkommande artiklar. Den visar också införsel som kan initieras utifrån översikten. Det här avsnittet fokuserar på inleveransprocessen.
 
 ## <a name="business-scenario"></a>Affärsscenario
-Föreställ dig följande scenario i inkommande processer. 
+Föreställ dig följande scenario i inkommande processer.
 
-[![Affärsscenario](./media/arrival-overview-scenario.png)](./media/arrival-overview-scenario.png) 
+[![Affärsscenario](./media/arrival-overview-scenario.png)](./media/arrival-overview-scenario.png)
 
 Sammy, inleveransansvarig, vill veta vad som förväntas inlevereras den aktuella dagen. På sidan **Införselöversikt** kan Sammy få en översikt över pågående aktiviteter och en grov uppskattning av kvantiteter, volym, vikt, olika ordertyper och så vidare. Senare ankommer en leverans på en av inlastningsplatserna och Sammy tar emot en lista med leveransen. På sidan **Införselöversikt** kan Sammy utföra följande uppgifter:
 
@@ -69,7 +69,7 @@ I det här exemplet på fältet **Namn på översiktsprofil för införsel** på
 
 Om du vill skapa införseljournaler automatiskt från sidan **Införselöversikt** måste du definiera lämplig information i fältgruppen **journal** på snabbfliken **införselalternativ**.
 
--   Du måste ange ett journalnamn för att skapa en journal. 
+-   Du måste ange ett journalnamn för att skapa en journal.
 
 [![Ange ett journalnamn](./media/arrival-overview-journal.png)](./media/arrival-overview-journal.png)
 
@@ -123,7 +123,4 @@ När alla artiklar har registrerats uppdaterar lagerchefen eller inköpschefen d
 
 ## <a name="summary"></a>Sammanfattning
 Sidan **Införselöversikt** kan hjälpa lagerchefen och lagerarbetare att få en översikter över förväntat arbete som måste utföras av ett inkommande process. Sidan kan också användas för att starta artikelinleveransprocessen för att hjälpa till att garantera att artiklarna spåras i den första posten i lagret.
-
-
-
 

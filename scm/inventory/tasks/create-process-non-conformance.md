@@ -1,4 +1,4 @@
---- 
+---
 title: "Skapa och bearbeta en överensstämmelse"
 description: "Använd den här proceduren för att utföra avvikelsehantering baserat på en befintlig kvalitetsorder."
 author: perlynne
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -27,7 +27,7 @@ ms.lasthandoff: 07/27/2017
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Använd den här proceduren för att utföra avvikelsehantering baserat på en befintlig kvalitetsorder. Du kan köra denna registrering i USMF-demonstrationsföretaget och kan använda det föreslagna värdet. Vanligtvis utförs den här proceduren av en kontorist.  Kör uppgiftsregistreringen "kontrollera kvaliteten på varor" först. För att bearbeta godkännandet av en avvikelse måste användaren som utför uppgiftsregistreringen ha ett "namn"-värde tilldelat på användarsidan. För att använda dokumentanteckningar måste användaren även ha Dokumenthantering aktiverat i användaralternativen. 
+Använd den här proceduren för att utföra avvikelsehantering baserat på en befintlig kvalitetsorder. Du kan köra denna registrering i USMF-demonstrationsföretaget och kan använda det föreslagna värdet. Vanligtvis utförs den här proceduren av en kontorist.  Kör uppgiftsregistreringen "kontrollera kvaliteten på varor" först. För att bearbeta godkännandet av en avvikelse måste användaren som utför uppgiftsregistreringen ha ett "namn"-värde tilldelat på användarsidan. För att använda dokumentanteckningar måste användaren även ha Dokumenthantering aktiverat i användaralternativen.
 
 
 ## <a name="select-a-quality-order"></a>Välj en kvalitetsorder.
@@ -78,5 +78,4 @@ Använd den här proceduren för att utföra avvikelsehantering baserat på en b
 3. Klicka på Ja.
 4. Stäng sidan.
 5. Stäng sidan.
-
 

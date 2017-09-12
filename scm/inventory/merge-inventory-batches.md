@@ -1,7 +1,7 @@
 ---
 title: Sammanfoga lagerbatchar
 description: "Den här artikeln innehåller information om hur du konsoliderar två eller flera lagerbatchar till en sammanfogad batch."
-author: YuyuScheller
+author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,13 +10,13 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventBatchJournalListPage, InventBatchJournalMerge
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: YuyuScheller
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 39782
 ms.assetid: 07c5e98b-10fd-4f5c-b471-41d2150f47b0
 ms.search.region: Global
 ms.author: pjacobse
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: 9262dcaa3b326d8c31b7d7416b102920795da94b
@@ -31,7 +31,7 @@ ms.lasthandoff: 06/13/2017
 [!include[banner](../includes/banner.md)]
 
 
-Den här artikeln innehåller information om hur du konsoliderar två eller flera lagerbatchar till en sammanfogad batch. 
+Den här artikeln innehåller information om hur du konsoliderar två eller flera lagerbatchar till en sammanfogad batch.
 
 När du sammanslår batchar kan beräkningar hjälpa dig att optimera egenskaperna och batchattribut för den sammanslagna batchen. När källbatcharna har valts kan den sammanfogade batchen granskas och ändras innan den bokförs. (Du kan även överföra batchsammanfogningen till en lagerjournal för godkännande. Lagret kan sedan reserveras eller bokföras direkt från den aktuella lagerjournalen. När du bokför en sammanslagen batch, justeras lager för källbatcharna och den sammanslagna batchen.
 
@@ -142,7 +142,4 @@ Du kan godkänna lagerjournalen för batchsammanfogningen från listsidan **Alla
 
 ## <a name="after-i-merged-a-catchweight-item-why-cant-i-see-the-catchweight-information-in-the-inventory-journal"></a>Varför visas inte faktisk/nominell vikt i lagerjournalen efter att jag slagit ihop en fångstviktartikel?
 Du kan sammanslå batchar med fångstviktartiklar precis som alla andra artiklar. Dock visas information om faktisk/nominell vikt inte i lagerjournalen. Vi rekommenderar att du kontrollerar information om faktisk/nominell vikt innan du överför batchsammanfogningen till lagerjournalen.
-
-
-
 

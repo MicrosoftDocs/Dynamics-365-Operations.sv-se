@@ -1,7 +1,7 @@
 ---
 title: "Spåra artiklar och råmaterial i lager, produktion och försäljning"
 description: "I det här avsnittet beskrivs hur du kan använda artikelspårning för att identifiera var artiklar och råmaterial har använts, används eller ska användas i produktionen och försäljningsprocessen."
-author: YuyuScheller
+author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,13 +10,13 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventTrackingDimTracing, InventTrackingDimTracingCriteria
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: YuyuScheller
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 30191
 ms.assetid: fdd0939a-855c-430f-a684-94f3baea1df4
 ms.search.region: Global
 ms.author: pjacobse
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
@@ -31,7 +31,7 @@ ms.lasthandoff: 05/25/2017
 [!include[banner](../includes/banner.md)]
 
 
-I det här avsnittet beskrivs hur du kan använda artikelspårning för att identifiera var artiklar och råmaterial har använts, används eller ska användas i produktionen och försäljningsprocessen. 
+I det här avsnittet beskrivs hur du kan använda artikelspårning för att identifiera var artiklar och råmaterial har använts, används eller ska användas i produktionen och försäljningsprocessen.
 
 Artikelspårningsfunktionen är tillgänglig på **Artikelspårning** sidan. Följande avsnitt beskriver hur du kan använda artikelspårning och vilka alternativen och begränsningarna är.
 
@@ -142,7 +142,4 @@ Du kan generera rapporten **Levererade till kunder** när du vill identifiera m�
 
 ## <a name="can-i-trace-coproducts-and-byproducts"></a>Kan jag spåra samprodukter och biprodukter?
 Du kan spåra samprodukter, men du kan inte spåra en biprodukt eftersom spårningsdimensioner vanligtvis inte tilldelas till biprodukter. När du spårar en artikel omfattar spårningsdetaljerna alla relaterade samprodukter. En nod som innehåller en samprodukt inkluderar ordet ”samprodukt” i detaljerna. Du kan även visa information om en samprodukt genom att välja noden i spårningsdetaljerna och sedan klicka på snabbfliken **Produktion**.
-
-
-
 

@@ -1,4 +1,4 @@
---- 
+---
 title: "Övervaka försändelselagret med hjälp av leverantörssamarbete"
 description: "I den här proceduren visas hur du använder leverantörssamarbete om du vill visa information om lagernivån för den produkt som du har placerat i försändelse med en kund."
 author: mkirknel
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -41,5 +41,4 @@ I den här proceduren visas hur du använder leverantörssamarbete om du vill vi
 ## <a name="view-on-hand-inventory"></a>Visa lagerbehållning
 1. Gå till Leverantörssamarbete > Försändelselager > Behållning i försändelselager.
     * Lagersidan för behållningsförsändelse (On-hand consignment inventory) visar det lager som du äger på kundens lagerställe. Du kan visa ytterligare dimensioner, till exempel plats och lagerställe, genom att klicka på fliken Display dimensions.   
-
 

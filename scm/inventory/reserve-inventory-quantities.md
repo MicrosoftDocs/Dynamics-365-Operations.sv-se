@@ -1,7 +1,7 @@
 ---
 title: Reservera lagerkvantiteter
 description: "I det här avsnittet beskrivs de olika alternativ som är tillgängliga för att reservera lager."
-author: YuyuScheller
+author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,13 +10,13 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: InventModelGroup
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: YuyuScheller
 ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
 ms.custom: 207264
 ms.assetid: 47537e4f-cdf6-4813-96fd-c945b2dfe9d4
 ms.search.region: Global
 ms.author: perlynne
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
 ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
@@ -83,7 +83,4 @@ Det finns två alternativ som är relaterade till reservationer på sidan **Para
 ### <a name="inventory-reservation-policies-on-the-production-parameters-page"></a>Lagerreservationpolicyer på sidan för produktparametrar
 
 Värdet i fältet **Reservation** i fliken **Allmänt** på sidan **Produktionsparametrar** avgör den förvalda punkten i produktionsprocessen då lager bör reserveras. Till exempel kan lager reserveras när arbete schemaläggs eller när jobbet startas.
-
-
-
 

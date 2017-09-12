@@ -1,4 +1,4 @@
---- 
+---
 title: "Spåra en artikel eller råmaterial"
 description: "I den här proceduren visas hur du använder artikelspårning för att identifiera var artiklar eller råmaterial har använts eller används."
 author: pjacobse
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -54,5 +54,4 @@ I den här proceduren visas hur du använder artikelspårning för att identifie
 8. Klicka på Spårning i åtgärdsfönstret.
 9. Klicka på Levererade försäljningsorder.
 10. Stäng sidan.
-
 

@@ -1,4 +1,4 @@
---- 
+---
 title: "Ställ in förutsättningar för hantering"
 description: "Använd den här proceduren för att aktivera avvikelsehanteringsprocesser."
 author: perlynne
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -101,5 +101,4 @@ Använd den här proceduren för att aktivera avvikelsehanteringsprocesser. En a
 3. Skriv ett värde i fältet Karantänzon.
 4. Ange ett värde i fältet Beskrivning.
 5. Stäng sidan.
-
 

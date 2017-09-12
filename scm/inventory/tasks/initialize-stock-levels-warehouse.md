@@ -1,4 +1,4 @@
---- 
+---
 title: "Initiera lagernivåer i lagerstället"
 description: "Den här proceduren visar hur du kan uppdatera lagerbehållningen manuellt genom att använda en journal för lagerrörelse."
 author: perlynne
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -58,5 +58,4 @@ Den här proceduren visar hur du kan uppdatera lagerbehållningen manuellt genom
 24. Klicka på OK.
 25. Stäng sidan.
 26. Stäng sidan.
-
 

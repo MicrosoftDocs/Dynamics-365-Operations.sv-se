@@ -1,4 +1,4 @@
---- 
+---
 title: "Ändra ägarskapet för försändelselagret baserat på produktionsbegäran"
 description: "I den här proceduren visas hur du ändrar ägaren till försändelselagret, från leverantören till din juridiska person, om det finns en efterfrågan på lagret i produktionen."
 author: perlynne
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -51,5 +51,4 @@ I den här proceduren visas hur du ändrar ägaren till försändelselagret, fr�
     * När journalen bokförs frisläpps det leverantörsägda lagret genom att använda referensen ”Ownership change". Lagret tas sedan emot som behållning genom att använda en lagertransaktion som uppdateras med en produktinleverans för inköpsorder. Observera att endast transaktioner kopplade till den bokförda journalen skapas. Inga förväntade lagertransaktioner skapas.  
 2. Klicka på OK.
 3. Stäng sidan.
-
 

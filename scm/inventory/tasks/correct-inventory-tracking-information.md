@@ -1,4 +1,4 @@
---- 
+---
 title: "Korrekt information om lagerspårning"
 description: "Den här proceduren går igenom processen med att skapa och bokföra en lageröverföringsjournal för att korrigera information om lagerspårning."
 author: MarkusFogelberg
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -62,5 +62,4 @@ Den här proceduren går igenom processen med att skapa och bokföra en lageröv
 1. Klicka på Lager.
 2. Klicka på Transaktioner.
     * Här kan du se de transaktioner som skapades när du bokförde din journal.   
-
 

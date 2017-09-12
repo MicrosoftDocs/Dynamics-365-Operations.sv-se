@@ -1,7 +1,7 @@
 ---
 title: "Försändelse"
 description: "Det här avsnittet beskriver hur du använder inkommande försändelselagerprocesser."
-author: YuyuScheller
+author: perlynne
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -10,13 +10,13 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: ConsignmentDraftReplenishmentOrderJournal, ConsignmentProductReceiptLines, ConsignmentReplenishmentOrder, ConsignmentVendorPortalOnHand, InventJournalOwnershipChange, InventOnHandItemListPage, PurchTable, PurchVendorPortalConfirmedOrders
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: YuyuScheller
 ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 220834
 ms.assetid: 3c9d6de4-45d4-459a-aef7-0d9ad2c22b3a
 ms.search.region: Global
 ms.author: perlynne
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: Human Translation
 ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
@@ -61,7 +61,7 @@ USMF utför ytterligare periodiska processer:
 Leverantören US-104, kan övervaka uppdateringarna på **Behållning i försändelselager**.
 
 ## <a name="consignment-replenishment-orders"></a>Order för försändelseåteranskaffning
-En order för försändelseåteranskaffning är ett dokument som används för att begära och hålla ordning kvantiteterna av produkter, som en leverantör har för avsikt att leverera inom ett visst datumintervall genom att skapa beställda lagertransaktioner. Vanligtvis baseras detta på prognosen och faktisk efterfrågan av de specifika produkterna. Lagret som ska inlevereras mot ordern för försändelseåteranskaffning kvarstår leverantörens ägarskap. Endast innehav av produkter relaterade till uppdateringen av fysiska inleverans registreras och därför sker inga redovisningstransaktionsuppdateringar. Dimensionen**Ägare** används för att separat information om vilket lager som ägs av leverantören och som ägs av den mottagande juridiska personen. Orderrader för försändelsepåfyllnad har statusen **Öppen order** status så länge inte hela radkvantiteten har tagits emot eller annullerats. När den fullständiga kvantiteten har tagits emot eller annullerats ändras statusen till **Slutfört**. Den fysiska lagerbehållningen som gäller en order för försändelseåteranskaffning kan registreras med hjälp av en registreringsprocess samt en uppdateringsprocess för produktinleverans. Registreringen kan göras som en del av artikelinförselprocessen eller manuellt genom att uppdatera orderraderna. När uppdateringprocessen för produktinleverans används, görs en post i produktinleveransjournalen som kan användas för att bekräfta inleveranser av varor till leverantörerna. 
+En order för försändelseåteranskaffning är ett dokument som används för att begära och hålla ordning kvantiteterna av produkter, som en leverantör har för avsikt att leverera inom ett visst datumintervall genom att skapa beställda lagertransaktioner. Vanligtvis baseras detta på prognosen och faktisk efterfrågan av de specifika produkterna. Lagret som ska inlevereras mot ordern för försändelseåteranskaffning kvarstår leverantörens ägarskap. Endast innehav av produkter relaterade till uppdateringen av fysiska inleverans registreras och därför sker inga redovisningstransaktionsuppdateringar. Dimensionen**Ägare** används för att separat information om vilket lager som ägs av leverantören och som ägs av den mottagande juridiska personen. Orderrader för försändelsepåfyllnad har statusen **Öppen order** status så länge inte hela radkvantiteten har tagits emot eller annullerats. När den fullständiga kvantiteten har tagits emot eller annullerats ändras statusen till **Slutfört**. Den fysiska lagerbehållningen som gäller en order för försändelseåteranskaffning kan registreras med hjälp av en registreringsprocess samt en uppdateringsprocess för produktinleverans. Registreringen kan göras som en del av artikelinförselprocessen eller manuellt genom att uppdatera orderraderna. När uppdateringprocessen för produktinleverans används, görs en post i produktinleveransjournalen som kan användas för att bekräfta inleveranser av varor till leverantörerna.
 
 [![Order-för-försändelseåteranskaffning](./media/consignment-replenishment-order.png)](./media/consignment-replenishment-order.png)
 
@@ -71,7 +71,7 @@ Processen att ändra ägare för lagret från leverantören till mottagande juri
 -   Det leverantörsägda lagret sker med hjälp av **Äganderättändring**-referens med en **Såld**-status.
 -   Lagerbehållning tas emot av den juridiska person som förbrukar den genom att använda en lagertransaktion som uppdaterats för produktinleveransen på inköpsordern. Detta ställer in orderns status på **Inlevererat**. Inköpsorder som används för försändelse har fältet **Ursprung** inställt på **Försändelse**.
 
-Det går inte att uppdatera kvantiteten på rader för försändelseinköpsorder efter att ordern har skapats. 
+Det går inte att uppdatera kvantiteten på rader för försändelseinköpsorder efter att ordern har skapats.
 
 [![Journal-för-lagerägarskapsändring](./media/inventory-ownership-change-journal.png)](./media/inventory-ownership-change-journal.png)
 
@@ -81,8 +81,4 @@ Leverantörsamarbetesgränssnittet har tre sidor som är relaterade till den ink
 -   **Inköpsorder** **som förbrukar försändelselager** - Visar detaljerad information om inköpsorder relaterad till ägarskapsändringen från försändelseprocessen.
 -   **Mottagna produkter från försändelselager** - Visar information om de artiklar och kvantiteter som har produktinleveranser uppdaterade under ägandeskapets ändringsprocess.
 -   **Behållning i försändelselager** - Visar information om försändelseartiklarna som de förväntas leverera och de artiklar som redan är fysiskt tillgängliga på kundsiten.
-
-
-
-
 

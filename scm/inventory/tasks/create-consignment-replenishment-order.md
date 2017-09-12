@@ -1,4 +1,4 @@
---- 
+---
 title: "Skapa en ny order för försändelseåteranskaffning"
 description: "I den här proceduren visas hur du skapar en lagerpåfyllnadsorder för försändelse, där du kan följa den förväntade leveransen från en leverantör till ditt försändelselager."
 author: mkirknel
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -60,7 +60,7 @@ I den här proceduren visas hur du skapar en lagerpåfyllnadsorder för försän
 ## <a name="receive-items"></a>Ta emot artiklar
 1. Klicka på Produktinleverans.
 2. Ange ett värde i fältet External product receipt.
-3. Ange ett värde som är lägre än det som visas i fältet Quantity. 
+3. Ange ett värde som är lägre än det som visas i fältet Quantity.
 4. Klicka på OK.
 
 ## <a name="check-the-on-hand-inventory"></a>Kontrollera behållningslagret
@@ -70,5 +70,4 @@ I den här proceduren visas hur du skapar en lagerpåfyllnadsorder för försän
     * Artiklarna som har inlevererats som ett försändelselager ägt av leverantören finns tillgängliga i lager. Återstående kvantitet i lagerpåfyllnadsordern för försändelse anges i fältet Ordered in total.  
 4. Stäng sidan.
 5. Klicka på Stäng.
-
 
