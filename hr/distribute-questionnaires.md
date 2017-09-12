@@ -16,7 +16,7 @@ ms.custom: 17424
 ms.assetid: fd8d867a-2446-400a-b91f-ad4085427470
 ms.search.region: Global
 ms.author: twheeloc
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
 ms.sourcegitcommit: b2b1b99fd4c7c439ad89440827ad78173d371855
@@ -26,242 +26,242 @@ ms.lasthandoff: 07/27/2017
 
 ---
 
-# <a name="distribute-and-complete-a-questionnaire"></a>Distribuera och slutföra en enkät
+# <a name="distribute-and-complete-a-questionnaire"></a><span data-ttu-id="e21cd-103">Distribuera och slutföra en enkät</span><span class="sxs-lookup"><span data-stu-id="e21cd-103">Distribute and complete a questionnaire</span></span>
 
 [!include[banner](includes/banner.md)]
 
 
-Den här artikeln beskriver hur du fördelar de enkäter som du utformar så att de blir tillgängliga för den person eller grupp som ska fylla i dem. 
+<span data-ttu-id="e21cd-104">Den här artikeln beskriver hur du fördelar de enkäter som du utformar så att de blir tillgängliga för den person eller grupp som ska fylla i dem.</span><span class="sxs-lookup"><span data-stu-id="e21cd-104">This topic explains how distribute the questionnaires that you design, so that they are available to the person or group of people who will complete them.</span></span> 
 
-Det finns flera sätt att distribuera en enkät:
+<span data-ttu-id="e21cd-105">Det finns flera sätt att distribuera en enkät:</span><span class="sxs-lookup"><span data-stu-id="e21cd-105">There are multiple ways to distribute a questionnaire:</span></span>
 
--   Markera enkäten som aktiv. Enkäten är då tillgänglig för alla medarbetare, om inte en enkätgrupp har ställts in för att begränsa åtkomst till den.
--   Tilldela rättigheter till en enkätgrupp. Enkäten är då tillgänglig för alla medlemmar i den valda gruppen.
--   Skapa planerade svarsomgångar. Enkäten är då endast tillgänglig för en viss person.
--   Skapa en tidsplan. Enkäten kan sedan vara tillgänglig för flera personer.
+-   <span data-ttu-id="e21cd-106">Markera enkäten som aktiv.</span><span class="sxs-lookup"><span data-stu-id="e21cd-106">Mark the questionnaire as active.</span></span> <span data-ttu-id="e21cd-107">Enkäten är då tillgänglig för alla medarbetare, om inte en enkätgrupp har ställts in för att begränsa åtkomst till den.</span><span class="sxs-lookup"><span data-stu-id="e21cd-107">The questionnaire is then available to all employees, unless a questionnaire group is set up to restrict access to it.</span></span>
+-   <span data-ttu-id="e21cd-108">Tilldela rättigheter till en enkätgrupp.</span><span class="sxs-lookup"><span data-stu-id="e21cd-108">Assign rights to a questionnaire group.</span></span> <span data-ttu-id="e21cd-109">Enkäten är då tillgänglig för alla medlemmar i den valda gruppen.</span><span class="sxs-lookup"><span data-stu-id="e21cd-109">The questionnaire is then available to all members of the selected group.</span></span>
+-   <span data-ttu-id="e21cd-110">Skapa planerade svarsomgångar.</span><span class="sxs-lookup"><span data-stu-id="e21cd-110">Create planned answer sessions.</span></span> <span data-ttu-id="e21cd-111">Enkäten är då endast tillgänglig för en viss person.</span><span class="sxs-lookup"><span data-stu-id="e21cd-111">The questionnaire is then available only to a particular person.</span></span>
+-   <span data-ttu-id="e21cd-112">Skapa en tidsplan.</span><span class="sxs-lookup"><span data-stu-id="e21cd-112">Create a schedule.</span></span> <span data-ttu-id="e21cd-113">Enkäten kan sedan vara tillgänglig för flera personer.</span><span class="sxs-lookup"><span data-stu-id="e21cd-113">The questionnaire can then be available to multiple people.</span></span>
 
-## <a name="marking-a-questionnaire-as-active"></a>Markera en enkät som aktiv.
-Genom att ange fältet **Aktiv** som **Ja** på sidan **Enkäter** kan du göra enkäten tillgänglig för alla medarbetare. De svarande kan fylla i formuläret flera gånger. Denna funktion är användbar om du vill samla in feedback kontinuerligt under hela året. Du kan till exempel göra en enkät där anställda ger feedback om lunchtjänsten i kafeterian.
+## <a name="marking-a-questionnaire-as-active"></a><span data-ttu-id="e21cd-114">Markera en enkät som aktiv.</span><span class="sxs-lookup"><span data-stu-id="e21cd-114">Marking a questionnaire as active</span></span>
+<span data-ttu-id="e21cd-115">Genom att ange fältet **Aktiv** som **Ja** på sidan **Enkäter** kan du göra enkäten tillgänglig för alla medarbetare.</span><span class="sxs-lookup"><span data-stu-id="e21cd-115">By setting the **Active** field to **Yes** on the **Questionnaires** page, you make the questionnaire available for all employees to complete.</span></span> <span data-ttu-id="e21cd-116">De svarande kan fylla i formuläret flera gånger.</span><span class="sxs-lookup"><span data-stu-id="e21cd-116">Respondents can complete the questionnaire multiple times.</span></span> <span data-ttu-id="e21cd-117">Denna funktion är användbar om du vill samla in feedback kontinuerligt under hela året.</span><span class="sxs-lookup"><span data-stu-id="e21cd-117">This functionality is useful if you want to gather continual feedback throughout the year.</span></span> <span data-ttu-id="e21cd-118">Du kan till exempel göra en enkät där anställda ger feedback om lunchtjänsten i kafeterian.</span><span class="sxs-lookup"><span data-stu-id="e21cd-118">For example, you can make a questionnaire that employees use to give feedback about the lunch service in the cafeteria.</span></span>
 
-## <a name="questionnaire-groups"></a>Enkätgrupper
-Du kan ställa in enkätgrupper och sedan inkludera de svarande som ett frågeformulär ska distribueras till. 
+## <a name="questionnaire-groups"></a><span data-ttu-id="e21cd-119">Enkätgrupper</span><span class="sxs-lookup"><span data-stu-id="e21cd-119">Questionnaire groups</span></span>
+<span data-ttu-id="e21cd-120">Du kan ställa in enkätgrupper och sedan inkludera de svarande som ett frågeformulär ska distribueras till.</span><span class="sxs-lookup"><span data-stu-id="e21cd-120">You can set up questionnaire groups and then include the respondents that a questionnaire should be distributed to.</span></span> 
 
-Du kan skapa enkätgrupper på följande sidor:
+<span data-ttu-id="e21cd-121">Du kan skapa enkätgrupper på följande sidor:</span><span class="sxs-lookup"><span data-stu-id="e21cd-121">You can create questionnaire groups from the following pages:</span></span>
 
--   **Enkätgrupper**– Endast personer i en enkätgrupp kan avsluta en vald enkät. Till exempel om din målgrupp är leverantörer, då skapar du en enkätgrupp som är specifik för dessa svarande.
--   **Enkätgruppsmedlemmar** – Du kan lägga till kontakter till enkätgrupperna.
+-   <span data-ttu-id="e21cd-122">**Enkätgrupper**– Endast personer i en enkätgrupp kan avsluta en vald enkät.</span><span class="sxs-lookup"><span data-stu-id="e21cd-122">**Questionnaire groups** – Only individuals in a questionnaire group can complete a selected questionnaire.</span></span> <span data-ttu-id="e21cd-123">Till exempel om din målgrupp är leverantörer, då skapar du en enkätgrupp som är specifik för dessa svarande.</span><span class="sxs-lookup"><span data-stu-id="e21cd-123">For example, your intended audience is contractors, so you create a questionnaire group that is specific to those respondents.</span></span>
+-   <span data-ttu-id="e21cd-124">**Enkätgruppsmedlemmar** – Du kan lägga till kontakter till enkätgrupperna.</span><span class="sxs-lookup"><span data-stu-id="e21cd-124">**Questionnaire group members** – You can add people to the questionnaire groups.</span></span>
 
-På sidan **Enkäter** klickar du på **Användarrättigheter** för att tilldela en enkätgrupp till en enkät. Medlemmarna i enkätgruppen kan fylla i enkäten när enkäten har sparats som aktiv. Denna funktion är användbar om du vill testa en enkät i en utvald grupp användare innan du skickar ut den till en större grupp, eller om du vill rikta enkäten till en mycket specifik målgrupp.
+<span data-ttu-id="e21cd-125">På sidan **Enkäter** klickar du på **Användarrättigheter** för att tilldela en enkätgrupp till en enkät.</span><span class="sxs-lookup"><span data-stu-id="e21cd-125">To assign a questionnaire group to a questionnaire, on the **Questionnaires** page, click **User rights**.</span></span> <span data-ttu-id="e21cd-126">Medlemmarna i enkätgruppen kan fylla i enkäten när enkäten har sparats som aktiv.</span><span class="sxs-lookup"><span data-stu-id="e21cd-126">After the questionnaire is saved as active, the members of the questionnaire group can complete the questionnaire.</span></span> <span data-ttu-id="e21cd-127">Denna funktion är användbar om du vill testa en enkät i en utvald grupp användare innan du skickar ut den till en större grupp, eller om du vill rikta enkäten till en mycket specifik målgrupp.</span><span class="sxs-lookup"><span data-stu-id="e21cd-127">This functionality is helpful if you want to test a questionnaire on a select group of people before you roll it out to a larger group, or if you want to target a questionnaire to a very specific audience.</span></span>
 
-## <a name="planned-answer-sessions-in-a-questionnaire"></a>Planerade svarsomgångar i en enkät
-Planerade svarsomgångar är enkäter som du har utformat för och valt svarande till. 
+## <a name="planned-answer-sessions-in-a-questionnaire"></a><span data-ttu-id="e21cd-128">Planerade svarsomgångar i en enkät</span><span class="sxs-lookup"><span data-stu-id="e21cd-128">Planned answer sessions in a questionnaire</span></span>
+<span data-ttu-id="e21cd-129">Planerade svarsomgångar är enkäter som du har utformat för och valt svarande till.</span><span class="sxs-lookup"><span data-stu-id="e21cd-129">Planned answer sessions are questionnaires that you've designed and selected the respondents for.</span></span> 
 
-> **Anm.:** Innan du kan ställa in planerade svarsomgångar måste du utforma en enkät. 
+> <span data-ttu-id="e21cd-130">**Anm.:** Innan du kan ställa in planerade svarsomgångar måste du utforma en enkät.</span><span class="sxs-lookup"><span data-stu-id="e21cd-130">**Note** Before you can set up planned answer sessions, you must design a questionnaire.</span></span> 
 
-På sidan **Planerad svarsomgång** kan du skapa en planerad svarsomgång för en enskild medarbetare. Listan på sidan visar alla planerade enkäter. 
+<span data-ttu-id="e21cd-131">På sidan **Planerad svarsomgång** kan du skapa en planerad svarsomgång för en enskild medarbetare.</span><span class="sxs-lookup"><span data-stu-id="e21cd-131">On the **Planned answer session** page, you can create a planned answer session for an individual employee.</span></span> <span data-ttu-id="e21cd-132">Listan på sidan visar alla planerade enkäter.</span><span class="sxs-lookup"><span data-stu-id="e21cd-132">The list on the page displays all planned questionnaires.</span></span> 
 
-Planerade svarsomgångar används också på sidan **Tidsplaner för enkäter** där du kan planera enkäter för flera personer:
+<span data-ttu-id="e21cd-133">Planerade svarsomgångar används också på sidan **Tidsplaner för enkäter** där du kan planera enkäter för flera personer:</span><span class="sxs-lookup"><span data-stu-id="e21cd-133">Planned answer sessions are also used on the **Questionnaire schedules** page, where you can plan questionnaires for multiple people:</span></span>
 
--   Medarbetare
--   Kursdeltagare
--   Organisationsenheter
+-   <span data-ttu-id="e21cd-134">Medarbetare</span><span class="sxs-lookup"><span data-stu-id="e21cd-134">Employees</span></span>
+-   <span data-ttu-id="e21cd-135">Kursdeltagare</span><span class="sxs-lookup"><span data-stu-id="e21cd-135">Course participants</span></span>
+-   <span data-ttu-id="e21cd-136">Organisationsenheter</span><span class="sxs-lookup"><span data-stu-id="e21cd-136">Organizational units</span></span>
 
-Varje person får besvara enkäten en gång.
+<span data-ttu-id="e21cd-137">Varje person får besvara enkäten en gång.</span><span class="sxs-lookup"><span data-stu-id="e21cd-137">Each person can answer the questionnaire only one time.</span></span>
 
-## <a name="scheduling-a-questionnaire"></a>Tidsplanera en enkät
-Det går även att tidsplanera en enkät för flera svarande.
+## <a name="scheduling-a-questionnaire"></a><span data-ttu-id="e21cd-138">Tidsplanera en enkät</span><span class="sxs-lookup"><span data-stu-id="e21cd-138">Scheduling a questionnaire</span></span>
+<span data-ttu-id="e21cd-139">Det går även att tidsplanera en enkät för flera svarande.</span><span class="sxs-lookup"><span data-stu-id="e21cd-139">You can optionally schedule a questionnaire for multiple respondents.</span></span>
 
-### <a name="planning-types"></a>Planeringstyper
+### <a name="planning-types"></a><span data-ttu-id="e21cd-140">Planeringstyper</span><span class="sxs-lookup"><span data-stu-id="e21cd-140">Planning types</span></span>
 
-Planeringstyper krävs om du vill schemalägga planerade svarsomgångar för flera svarande. Planeringstyper används för att klassificera enkättidsplaner. Du kan till exempel tidsplanera enkäter för följande syften:
+<span data-ttu-id="e21cd-141">Planeringstyper krävs om du vill schemalägga planerade svarsomgångar för flera svarande.</span><span class="sxs-lookup"><span data-stu-id="e21cd-141">Planning types are required if you want to schedule planned answer sessions for multiple respondents.</span></span> <span data-ttu-id="e21cd-142">Planeringstyper används för att klassificera enkättidsplaner.</span><span class="sxs-lookup"><span data-stu-id="e21cd-142">Planning types are used to classify questionnaire schedules.</span></span> <span data-ttu-id="e21cd-143">Du kan till exempel tidsplanera enkäter för följande syften:</span><span class="sxs-lookup"><span data-stu-id="e21cd-143">For example, you can schedule questionnaires for the following purposes:</span></span>
 
--   Utvärdering
--   Översikt
--   Testa
+-   <span data-ttu-id="e21cd-144">Utvärdering</span><span class="sxs-lookup"><span data-stu-id="e21cd-144">Evaluation</span></span>
+-   <span data-ttu-id="e21cd-145">Översikt</span><span class="sxs-lookup"><span data-stu-id="e21cd-145">Survey</span></span>
+-   <span data-ttu-id="e21cd-146">Testa</span><span class="sxs-lookup"><span data-stu-id="e21cd-146">Testing</span></span>
 
-Du kan ange planeringstyper för en enkät på sidan **Tidsplaner för enkäter** .
+<span data-ttu-id="e21cd-147">Du kan ange planeringstyper för en enkät på sidan **Tidsplaner för enkäter** .</span><span class="sxs-lookup"><span data-stu-id="e21cd-147">You can specify planning types for a questionnaire schedule on the **Questionnaire schedules** page.</span></span>
 
-### <a name="reference-types-for-questionnaire"></a>Referenstyper för enkät
+### <a name="reference-types-for-questionnaire"></a><span data-ttu-id="e21cd-148">Referenstyper för enkät</span><span class="sxs-lookup"><span data-stu-id="e21cd-148">Reference types for questionnaire</span></span>
 
-Du kan använda referenstyper när du vill ställa in kriterier för svarande som du kan välja när du tidsplanerar en enkät. 
+<span data-ttu-id="e21cd-149">Du kan använda referenstyper när du vill ställa in kriterier för svarande som du kan välja när du tidsplanerar en enkät.</span><span class="sxs-lookup"><span data-stu-id="e21cd-149">You can use reference types to enter criteria for the respondents that you might select when you schedule a questionnaire.</span></span> 
 
-Använd sidan **Referenstyper** för att ställa in referenstyper för en enkät. Varje referenstyp motsvarar en tabell i Microsoft Dynamics 365 for Finance and Operations. När du skapar enkättidsplaner kan du ange de enskilda posterna i tabellen eller ett intervall med poster som enkäten ska associeras med. 
+<span data-ttu-id="e21cd-150">Använd sidan **Referenstyper** för att ställa in referenstyper för en enkät.</span><span class="sxs-lookup"><span data-stu-id="e21cd-150">Use the **Reference types** page to set up reference types for a questionnaire.</span></span> <span data-ttu-id="e21cd-151">Varje referenstyp motsvarar en tabell i Microsoft Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="e21cd-151">Each reference type corresponds to a table in Microsoft Dynamics 365 for Finance and Operations.</span></span> <span data-ttu-id="e21cd-152">När du skapar enkättidsplaner kan du ange de enskilda posterna i tabellen eller ett intervall med poster som enkäten ska associeras med.</span><span class="sxs-lookup"><span data-stu-id="e21cd-152">When you create questionnaire schedules, you can specify individual records in the table or a range of records that the questionnaire will be associated with.</span></span> 
 
-Om du till exempel väljer tabellen Kurser kan du bestämma vilken specifik kurs enkäten ska gälla för. När du ställer in en referens för tabellen Kurser blir alla fält och knappar på sidan **Kurser** tillgängliga.
+<span data-ttu-id="e21cd-153">Om du till exempel väljer tabellen Kurser kan du bestämma vilken specifik kurs enkäten ska gälla för.</span><span class="sxs-lookup"><span data-stu-id="e21cd-153">For example, if you select the Courses table, you can decide which specific course the questionnaire will be for.</span></span> <span data-ttu-id="e21cd-154">När du ställer in en referens för tabellen Kurser blir alla fält och knappar på sidan **Kurser** tillgängliga.</span><span class="sxs-lookup"><span data-stu-id="e21cd-154">When you set up a reference for the Courses table, some fields and buttons on the **Courses** page become available.</span></span>
 
-### <a name="questionnaire-schedules"></a>Tidsplaner för enkäter
+### <a name="questionnaire-schedules"></a><span data-ttu-id="e21cd-155">Tidsplaner för enkäter</span><span class="sxs-lookup"><span data-stu-id="e21cd-155">Questionnaire schedules</span></span>
 
-Du kan använda enkättidsplaner för att generera flera planerade svarsomgångar för ett antal användare, baserat på en referenstyp. Skapa ett schema på sidan **Enkättidsplaner**. Välj planeringstyp för att kategorisera schemat, och välj även den referenstyp som ska användas för att ställa frågor i systemet för enskilda användare. Om du anger referenstypen som tabellen Kurser, kan du exempelvis välja en viss kurs i fältet **Referens**. 
+<span data-ttu-id="e21cd-156">Du kan använda enkättidsplaner för att generera flera planerade svarsomgångar för ett antal användare, baserat på en referenstyp.</span><span class="sxs-lookup"><span data-stu-id="e21cd-156">You can use questionnaire schedules to generate multiple planned answer sessions for a group of users, based on a reference type.</span></span> <span data-ttu-id="e21cd-157">Skapa ett schema på sidan **Enkättidsplaner**.</span><span class="sxs-lookup"><span data-stu-id="e21cd-157">Create a schedule on the **Questionnaire schedules** page.</span></span> <span data-ttu-id="e21cd-158">Välj planeringstyp för att kategorisera schemat, och välj även den referenstyp som ska användas för att ställa frågor i systemet för enskilda användare.</span><span class="sxs-lookup"><span data-stu-id="e21cd-158">Select the planning type to categorize the schedule, and also select the reference type that should be used to query the system for specific users.</span></span> <span data-ttu-id="e21cd-159">Om du anger referenstypen som tabellen Kurser, kan du exempelvis välja en viss kurs i fältet **Referens**.</span><span class="sxs-lookup"><span data-stu-id="e21cd-159">For example, if you set the reference type to the Courses table, you can select a specific course in the **Reference** field.</span></span> 
 
-Klicka på **Inställningsdetaljer** om du vill välja enkäten och andra kriterier. Ange exempelvis namnet på läraren som ett kriterium om enkäten utgör en utvärdering av instruktören. När du är klar med att ange inställningsinformationen, genererar systemet planerade svarsomgångar för de användare som deltar i enkäten. 
+<span data-ttu-id="e21cd-160">Klicka på **Inställningsdetaljer** om du vill välja enkäten och andra kriterier.</span><span class="sxs-lookup"><span data-stu-id="e21cd-160">Click **Setup details** to select the questionnaire and other criteria.</span></span> <span data-ttu-id="e21cd-161">Ange exempelvis namnet på läraren som ett kriterium om enkäten utgör en utvärdering av instruktören.</span><span class="sxs-lookup"><span data-stu-id="e21cd-161">For example, specify the instructor's name as a criterion if the questionnaire is an evaluation of the instructor.</span></span> <span data-ttu-id="e21cd-162">När du är klar med att ange inställningsinformationen, genererar systemet planerade svarsomgångar för de användare som deltar i enkäten.</span><span class="sxs-lookup"><span data-stu-id="e21cd-162">After you've finished entering the setup details, the system generates planned answer sessions for the users that are included in the query.</span></span> 
 
-Klicka på **Planerade svarsomgångar** om du vill visa svarsomgången för tidsplanen. Därefter kan du manuellt skapa ytterligare planerade svarsomgångar eller ta bort planerade svarsomgångar som inte har besvarats. 
+<span data-ttu-id="e21cd-163">Klicka på **Planerade svarsomgångar** om du vill visa svarsomgången för tidsplanen.</span><span class="sxs-lookup"><span data-stu-id="e21cd-163">Click **Planned answer sessions** to view the answer sessions for the schedule.</span></span> <span data-ttu-id="e21cd-164">Därefter kan du manuellt skapa ytterligare planerade svarsomgångar eller ta bort planerade svarsomgångar som inte har besvarats.</span><span class="sxs-lookup"><span data-stu-id="e21cd-164">You can then manually create additional planned answer sessions or delete planned answer sessions that haven't been answered.</span></span> 
 
-Klicka på **Funktioner** &gt; **Start** för att göra enkäten tillgänglig för användarna i relaterade planerade svarsomgångar. Klicka på **Svar** om du vill visa de ifyllda svaren på enkäten. Du kan också kopiera enkätens tidsplaninställningar, planerade svarsomgångar och svaren till en ny enkättidsplan.
+<span data-ttu-id="e21cd-165">Klicka på **Funktioner** &gt; **Start** för att göra enkäten tillgänglig för användarna i relaterade planerade svarsomgångar.</span><span class="sxs-lookup"><span data-stu-id="e21cd-165">Click **Functions** &gt; **Start** to make the questionnaire available to the users in related planned answer sessions.</span></span> <span data-ttu-id="e21cd-166">Klicka på **Svar** om du vill visa de ifyllda svaren på enkäten.</span><span class="sxs-lookup"><span data-stu-id="e21cd-166">Click **Answers** to view the completed responses to the questionnaire.</span></span> <span data-ttu-id="e21cd-167">Du kan också kopiera enkätens tidsplaninställningar, planerade svarsomgångar och svaren till en ny enkättidsplan.</span><span class="sxs-lookup"><span data-stu-id="e21cd-167">You can optionally copy the questionnaire schedule settings, planned answer sessions, and answers to a new questionnaire schedule.</span></span>
 
-## <a name="notifying-respondents-about-questionnaires-that-are-available-to-them"></a>Meddela svarande om enkäter som är tillgängliga för dem
-När du distribuerar en enkät måste du meddela svarande att enkäter finns tillgängliga för dem. 
+## <a name="notifying-respondents-about-questionnaires-that-are-available-to-them"></a><span data-ttu-id="e21cd-168">Meddela svarande om enkäter som är tillgängliga för dem</span><span class="sxs-lookup"><span data-stu-id="e21cd-168">Notifying respondents about questionnaires that are available to them</span></span>
+<span data-ttu-id="e21cd-169">När du distribuerar en enkät måste du meddela svarande att enkäter finns tillgängliga för dem.</span><span class="sxs-lookup"><span data-stu-id="e21cd-169">When you distribute a questionnaire, you must notify respondents that questionnaires are available to them.</span></span> 
 
-### <a name="notifying-respondents-about-a-planned-answer-session"></a>Meddela svarande om en planerad svarsomgång
+### <a name="notifying-respondents-about-a-planned-answer-session"></a><span data-ttu-id="e21cd-170">Meddela svarande om en planerad svarsomgång</span><span class="sxs-lookup"><span data-stu-id="e21cd-170">Notifying respondents about a planned answer session</span></span>
 
-Om du använder en planerad svarsomgång måste du meddela personen direkt, till exempel per telefon eller e-post.
+<span data-ttu-id="e21cd-171">Om du använder en planerad svarsomgång måste du meddela personen direkt, till exempel per telefon eller e-post.</span><span class="sxs-lookup"><span data-stu-id="e21cd-171">If you use a planned answer session, you must notify the person directly, such as by telephone or email.</span></span>
 
-### <a name="notifying-respondents-about-a-scheduling"></a>Meddela svarande om en planering
+### <a name="notifying-respondents-about-a-scheduling"></a><span data-ttu-id="e21cd-172">Meddela svarande om en planering</span><span class="sxs-lookup"><span data-stu-id="e21cd-172">Notifying respondents about a scheduling</span></span>
 
-Använd sidan **Tidsplaner för enkäter** för att förbereda och skicka ett e-postmeddelande till alla svarande som är kopplade till enkäten. Skriv in e-postmeddelandets text på fliken **E-post för medarbetarsjälvbetjäning**. När du har startat schemat klickar du på **Funktioner** &gt; **Skicka e-post** för att generera och skicka e-postmeddelandet till de svarande. De svarande kan sedan logga in på webbplatsen och fylla i enkäten. 
+<span data-ttu-id="e21cd-173">Använd sidan **Tidsplaner för enkäter** för att förbereda och skicka ett e-postmeddelande till alla svarande som är kopplade till enkäten.</span><span class="sxs-lookup"><span data-stu-id="e21cd-173">Use the **Questionnaire schedules** page to prepare and send email to all respondents who are assigned to the questionnaire.</span></span> <span data-ttu-id="e21cd-174">Skriv in e-postmeddelandets text på fliken **E-post för medarbetarsjälvbetjäning**.</span><span class="sxs-lookup"><span data-stu-id="e21cd-174">Enter the email text on the **E-mail for employee self service** tab.</span></span> <span data-ttu-id="e21cd-175">När du har startat schemat klickar du på **Funktioner** &gt; **Skicka e-post** för att generera och skicka e-postmeddelandet till de svarande.</span><span class="sxs-lookup"><span data-stu-id="e21cd-175">After the schedule has been started, click **Functions** &gt; **Send e-mail** to generate and send the email to the respondents.</span></span> <span data-ttu-id="e21cd-176">De svarande kan sedan logga in på webbplatsen och fylla i enkäten.</span><span class="sxs-lookup"><span data-stu-id="e21cd-176">Respondents can then sign in to the website and complete the questionnaire.</span></span> 
 
-> **Anm.:** Innan du kan använda e-postfunktionen måste din IT-administratör ange e-postinställningarna på sidan **E-postparametrar**.
+> <span data-ttu-id="e21cd-177">**Anm.:** Innan du kan använda e-postfunktionen måste din IT-administratör ange e-postinställningarna på sidan **E-postparametrar**.</span><span class="sxs-lookup"><span data-stu-id="e21cd-177">**Note** Before you can use the email functionality, your IT administrator must enter the email settings on the **E-mail parameters** page.</span></span>
 
-## <a name="ending-a-scheduled-questionnaire"></a>Avsluta en tidsplanerad enkät
-Du kan avsluta en tidsplanerad enkät när alla svaranden har avslutat sina tilldelade svarsomgångar. När planerad enkät slutförs kan du inte kopiera inställningarna till en ny tidsplan. 
+## <a name="ending-a-scheduled-questionnaire"></a><span data-ttu-id="e21cd-178">Avsluta en tidsplanerad enkät</span><span class="sxs-lookup"><span data-stu-id="e21cd-178">Ending a scheduled questionnaire</span></span>
+<span data-ttu-id="e21cd-179">Du kan avsluta en tidsplanerad enkät när alla svaranden har avslutat sina tilldelade svarsomgångar.</span><span class="sxs-lookup"><span data-stu-id="e21cd-179">You can end a scheduled questionnaire after all respondents have completed their assigned answer sessions.</span></span> <span data-ttu-id="e21cd-180">När planerad enkät slutförs kan du inte kopiera inställningarna till en ny tidsplan.</span><span class="sxs-lookup"><span data-stu-id="e21cd-180">After a scheduled questionnaire is ended, you can't copy its settings to a new schedule.</span></span> 
 
-> **Anm.:** Om en eller flera svarande inte har fyllt i enkäten och du fortfarande vill avsluta tidsplanen måste du först radera dessa svarande från listan på sidan **Planerad svarsomgång**. Sedan kan du avsluta tidsplanen.
+> <span data-ttu-id="e21cd-181">**Anm.:** Om en eller flera svarande inte har fyllt i enkäten och du fortfarande vill avsluta tidsplanen måste du först radera dessa svarande från listan på sidan **Planerad svarsomgång**.</span><span class="sxs-lookup"><span data-stu-id="e21cd-181">**Note** If one or more respondents haven't completed the questionnaire, but you still want to end the scheduling, you must first delete those respondents from the list on the **Planned answer session** page.</span></span> <span data-ttu-id="e21cd-182">Sedan kan du avsluta tidsplanen.</span><span class="sxs-lookup"><span data-stu-id="e21cd-182">You can then end the schedule.</span></span>
 
-## <a name="completing-questionnaires"></a>Fylla i enkäter
-När du har utformat och har fördelat en enkät kan den besvaras av valda svarande. Du kan fylla i de tillgängliga frågeformulären från två platser:
+## <a name="completing-questionnaires"></a><span data-ttu-id="e21cd-183">Fylla i enkäter</span><span class="sxs-lookup"><span data-stu-id="e21cd-183">Completing questionnaires</span></span>
+<span data-ttu-id="e21cd-184">När du har utformat och har fördelat en enkät kan den besvaras av valda svarande.</span><span class="sxs-lookup"><span data-stu-id="e21cd-184">After you've designed and distributed a questionnaire, the questionnaire can be completed by selected respondents.</span></span> <span data-ttu-id="e21cd-185">Du kan fylla i de tillgängliga frågeformulären från två platser:</span><span class="sxs-lookup"><span data-stu-id="e21cd-185">You can complete the questionnaires that are available to you from two locations:</span></span>
 
--   I navigeringsfönstret klickar du på **Enkäter** &gt; **Fördela** &gt; **Fyll i en enkät**.
--   Klicka på **Enkäter att fylla i** i Medarbetarsjälvbetjäning.
+-   <span data-ttu-id="e21cd-186">I navigeringsfönstret klickar du på **Enkäter** &gt; **Fördela** &gt; **Fyll i en enkät**.</span><span class="sxs-lookup"><span data-stu-id="e21cd-186">In the navigation pane, click **Questionnaires** &gt; **Distribute** &gt; **Complete a questionnaire**.</span></span>
+-   <span data-ttu-id="e21cd-187">Klicka på **Enkäter att fylla i** i Medarbetarsjälvbetjäning.</span><span class="sxs-lookup"><span data-stu-id="e21cd-187">In Employee self-service, click **Questionnaires to complete**.</span></span>
 
-Enkäter kan göras tillgängliga för vissa användare eller grupper av användare eller för alla användare i ett nätverk.
+<span data-ttu-id="e21cd-188">Enkäter kan göras tillgängliga för vissa användare eller grupper av användare eller för alla användare i ett nätverk.</span><span class="sxs-lookup"><span data-stu-id="e21cd-188">Questionnaires can made be available to specific users or groups of users, or to all users in a network.</span></span>
 
-<a name="see-also"></a>Se även
+<a name="see-also"></a><span data-ttu-id="e21cd-189">Se även</span><span class="sxs-lookup"><span data-stu-id="e21cd-189">See also</span></span>
 --------
 
-[Utforma enkäter](design-questionnaires.md)
+[<span data-ttu-id="e21cd-190">Utforma enkäter</span><span class="sxs-lookup"><span data-stu-id="e21cd-190">Designing questionnaires</span></span>](design-questionnaires.md)
 
-[Använda enkäter](questionnaires.md)
+[<span data-ttu-id="e21cd-191">Använda enkäter</span><span class="sxs-lookup"><span data-stu-id="e21cd-191">Using questionnaires</span></span>](questionnaires.md)
 
-[Visa och utvärdera resultaten av en enkät](evaluate-questionnaire-results.md)
+[<span data-ttu-id="e21cd-192">Visa och utvärdera resultaten av en enkät</span><span class="sxs-lookup"><span data-stu-id="e21cd-192">Viewing and evaluating the results of questionnaires</span></span>](evaluate-questionnaire-results.md)
 
 
 
 <a name=""></a>=======
 ---
-# <a name="required-metadata"></a>nödvändiga metadata
+# <a name="required-metadata"></a><span data-ttu-id="e21cd-193">nödvändiga metadata</span><span class="sxs-lookup"><span data-stu-id="e21cd-193">required metadata</span></span>
 
-titel: Distribuera och komplettera en enkätbeskrivning: Den här artikeln beskriver hur du fördelar de enkäter som du utformar så att de blir tillgängliga för den person eller grupp som ska fylla i dem. författare: twheeloc manager: AnnBe ms.date: 2017/20/06-ms.topic: artikel ms.prod: ms.service: Dynamics365Operations ms.technology: 
+<span data-ttu-id="e21cd-194">titel: Distribuera och komplettera en enkätbeskrivning: Den här artikeln beskriver hur du fördelar de enkäter som du utformar så att de blir tillgängliga för den person eller grupp som ska fylla i dem.</span><span class="sxs-lookup"><span data-stu-id="e21cd-194">title: Distribute and complete a questionnaire description: This topic explains how distribute the questionnaires that you design, so that they are available to the person or group of people who will complete them.</span></span> <span data-ttu-id="e21cd-195">författare: twheeloc manager: AnnBe ms.date: 2017/20/06-ms.topic: artikel ms.prod: ms.service: Dynamics365Operations ms.technology:</span><span class="sxs-lookup"><span data-stu-id="e21cd-195">author: twheeloc manager: AnnBe ms.date: 06/20/2017 ms.topic: article ms.prod: ms.service: Dynamics365Operations ms.technology:</span></span> 
 
-# <a name="optional-metadata"></a>valfria metadata
+# <a name="optional-metadata"></a><span data-ttu-id="e21cd-196">valfria metadata</span><span class="sxs-lookup"><span data-stu-id="e21cd-196">optional metadata</span></span>
 
-ms.search.form: KMConnectionType, KMKnowledgeCollectorPlanningTabel, SysEmailParameters
-# <a name="robots"></a>ROBOTAR: 
-publik: programanvändare
-# <a name="msdevlang"></a>ms.devlang: 
-ms.reviewer: twheeloc ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
-# <a name="mstgtpltfrm"></a>ms.tgt_pltfrm: 
-ms.custom: 17424 ms.assetid: fd8d867a-2446-400a-b91f-ad4085427470 ms.search.region: Global
-# <a name="mssearchindustry"></a>ms.search.industry: 
-ms.author: twheeloc ms.search.validFrom: 2016-02-28 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
+<span data-ttu-id="e21cd-197">ms.search.form: KMConnectionType, KMKnowledgeCollectorPlanningTabel, SysEmailParameters</span><span class="sxs-lookup"><span data-stu-id="e21cd-197">ms.search.form: KMConnectionType, KMKnowledgeCollectorPlanningTabel, SysEmailParameters</span></span>
+# <a name="robots"></a><span data-ttu-id="e21cd-198">ROBOTAR:</span><span class="sxs-lookup"><span data-stu-id="e21cd-198">ROBOTS:</span></span> 
+<span data-ttu-id="e21cd-199">publik: programanvändare</span><span class="sxs-lookup"><span data-stu-id="e21cd-199">audience: Application User</span></span>
+# <a name="msdevlang"></a><span data-ttu-id="e21cd-200">ms.devlang:</span><span class="sxs-lookup"><span data-stu-id="e21cd-200">ms.devlang:</span></span> 
+<span data-ttu-id="e21cd-201">ms.reviewer: twheeloc ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations</span><span class="sxs-lookup"><span data-stu-id="e21cd-201">ms.reviewer: twheeloc ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations</span></span>
+# <a name="mstgtpltfrm"></a><span data-ttu-id="e21cd-202">ms.tgt_pltfrm:</span><span class="sxs-lookup"><span data-stu-id="e21cd-202">ms.tgt_pltfrm:</span></span> 
+<span data-ttu-id="e21cd-203">ms.custom: 17424 ms.assetid: fd8d867a-2446-400a-b91f-ad4085427470 ms.search.region: Global</span><span class="sxs-lookup"><span data-stu-id="e21cd-203">ms.custom: 17424 ms.assetid: fd8d867a-2446-400a-b91f-ad4085427470 ms.search.region: Global</span></span>
+# <a name="mssearchindustry"></a><span data-ttu-id="e21cd-204">ms.search.industry:</span><span class="sxs-lookup"><span data-stu-id="e21cd-204">ms.search.industry:</span></span> 
+<span data-ttu-id="e21cd-205">ms.author: twheeloc ms.search.validFrom: 2016-02-28 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update</span><span class="sxs-lookup"><span data-stu-id="e21cd-205">ms.author: twheeloc ms.search.validFrom: 2016-02-28 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update</span></span>
 
 ---
 
-# <a name="distribute-and-complete-a-questionnaire"></a>Distribuera och slutföra en enkät
+# <a name="distribute-and-complete-a-questionnaire"></a><span data-ttu-id="e21cd-206">Distribuera och slutföra en enkät</span><span class="sxs-lookup"><span data-stu-id="e21cd-206">Distribute and complete a questionnaire</span></span>
 
-Den här artikeln beskriver hur du fördelar de enkäter som du utformar så att de blir tillgängliga för den person eller grupp som ska fylla i dem. 
+<span data-ttu-id="e21cd-207">Den här artikeln beskriver hur du fördelar de enkäter som du utformar så att de blir tillgängliga för den person eller grupp som ska fylla i dem.</span><span class="sxs-lookup"><span data-stu-id="e21cd-207">This topic explains how distribute the questionnaires that you design, so that they are available to the person or group of people who will complete them.</span></span> 
 
-Det finns flera sätt att distribuera en enkät:
+<span data-ttu-id="e21cd-208">Det finns flera sätt att distribuera en enkät:</span><span class="sxs-lookup"><span data-stu-id="e21cd-208">There are multiple ways to distribute a questionnaire:</span></span>
 
--   Markera enkäten som aktiv. Enkäten är då tillgänglig för alla medarbetare, om inte en enkätgrupp har ställts in för att begränsa åtkomst till den.
--   Tilldela rättigheter till en enkätgrupp. Enkäten är då tillgänglig för alla medlemmar i den valda gruppen.
--   Skapa planerade svarsomgångar. Enkäten är då endast tillgänglig för en viss person.
--   Skapa en tidsplan. Enkäten kan sedan vara tillgänglig för flera personer.
+-   <span data-ttu-id="e21cd-209">Markera enkäten som aktiv.</span><span class="sxs-lookup"><span data-stu-id="e21cd-209">Mark the questionnaire as active.</span></span> <span data-ttu-id="e21cd-210">Enkäten är då tillgänglig för alla medarbetare, om inte en enkätgrupp har ställts in för att begränsa åtkomst till den.</span><span class="sxs-lookup"><span data-stu-id="e21cd-210">The questionnaire is then available to all employees, unless a questionnaire group is set up to restrict access to it.</span></span>
+-   <span data-ttu-id="e21cd-211">Tilldela rättigheter till en enkätgrupp.</span><span class="sxs-lookup"><span data-stu-id="e21cd-211">Assign rights to a questionnaire group.</span></span> <span data-ttu-id="e21cd-212">Enkäten är då tillgänglig för alla medlemmar i den valda gruppen.</span><span class="sxs-lookup"><span data-stu-id="e21cd-212">The questionnaire is then available to all members of the selected group.</span></span>
+-   <span data-ttu-id="e21cd-213">Skapa planerade svarsomgångar.</span><span class="sxs-lookup"><span data-stu-id="e21cd-213">Create planned answer sessions.</span></span> <span data-ttu-id="e21cd-214">Enkäten är då endast tillgänglig för en viss person.</span><span class="sxs-lookup"><span data-stu-id="e21cd-214">The questionnaire is then available only to a particular person.</span></span>
+-   <span data-ttu-id="e21cd-215">Skapa en tidsplan.</span><span class="sxs-lookup"><span data-stu-id="e21cd-215">Create a schedule.</span></span> <span data-ttu-id="e21cd-216">Enkäten kan sedan vara tillgänglig för flera personer.</span><span class="sxs-lookup"><span data-stu-id="e21cd-216">The questionnaire can then be available to multiple people.</span></span>
 
-## <a name="marking-a-questionnaire-as-active"></a>Markera en enkät som aktiv.
-Genom att ange fältet **Aktiv** som **Ja** på sidan **Enkäter** kan du göra enkäten tillgänglig för alla medarbetare. De svarande kan fylla i formuläret flera gånger. Denna funktion är användbar om du vill samla in feedback kontinuerligt under hela året. Du kan till exempel göra en enkät där anställda ger feedback om lunchtjänsten i kafeterian.
+## <a name="marking-a-questionnaire-as-active"></a><span data-ttu-id="e21cd-217">Markera en enkät som aktiv.</span><span class="sxs-lookup"><span data-stu-id="e21cd-217">Marking a questionnaire as active</span></span>
+<span data-ttu-id="e21cd-218">Genom att ange fältet **Aktiv** som **Ja** på sidan **Enkäter** kan du göra enkäten tillgänglig för alla medarbetare.</span><span class="sxs-lookup"><span data-stu-id="e21cd-218">By setting the **Active** field to **Yes** on the **Questionnaires** page, you make the questionnaire available for all employees to complete.</span></span> <span data-ttu-id="e21cd-219">De svarande kan fylla i formuläret flera gånger.</span><span class="sxs-lookup"><span data-stu-id="e21cd-219">Respondents can complete the questionnaire multiple times.</span></span> <span data-ttu-id="e21cd-220">Denna funktion är användbar om du vill samla in feedback kontinuerligt under hela året.</span><span class="sxs-lookup"><span data-stu-id="e21cd-220">This functionality is useful if you want to gather continual feedback throughout the year.</span></span> <span data-ttu-id="e21cd-221">Du kan till exempel göra en enkät där anställda ger feedback om lunchtjänsten i kafeterian.</span><span class="sxs-lookup"><span data-stu-id="e21cd-221">For example, you can make a questionnaire that employees use to give feedback about the lunch service in the cafeteria.</span></span>
 
-## <a name="questionnaire-groups"></a>Enkätgrupper
-Du kan ställa in enkätgrupper och sedan inkludera de svarande som ett frågeformulär ska distribueras till. 
+## <a name="questionnaire-groups"></a><span data-ttu-id="e21cd-222">Enkätgrupper</span><span class="sxs-lookup"><span data-stu-id="e21cd-222">Questionnaire groups</span></span>
+<span data-ttu-id="e21cd-223">Du kan ställa in enkätgrupper och sedan inkludera de svarande som ett frågeformulär ska distribueras till.</span><span class="sxs-lookup"><span data-stu-id="e21cd-223">You can set up questionnaire groups and then include the respondents that a questionnaire should be distributed to.</span></span> 
 
-Du kan skapa enkätgrupper på följande sidor:
+<span data-ttu-id="e21cd-224">Du kan skapa enkätgrupper på följande sidor:</span><span class="sxs-lookup"><span data-stu-id="e21cd-224">You can create questionnaire groups from the following pages:</span></span>
 
--   **Enkätgrupper**– Endast personer i en enkätgrupp kan avsluta en vald enkät. Till exempel om din målgrupp är leverantörer, då skapar du en enkätgrupp som är specifik för dessa svarande.
--   **Enkätgruppsmedlemmar** – Du kan lägga till kontakter till enkätgrupperna.
+-   <span data-ttu-id="e21cd-225">**Enkätgrupper**– Endast personer i en enkätgrupp kan avsluta en vald enkät.</span><span class="sxs-lookup"><span data-stu-id="e21cd-225">**Questionnaire groups** – Only individuals in a questionnaire group can complete a selected questionnaire.</span></span> <span data-ttu-id="e21cd-226">Till exempel om din målgrupp är leverantörer, då skapar du en enkätgrupp som är specifik för dessa svarande.</span><span class="sxs-lookup"><span data-stu-id="e21cd-226">For example, your intended audience is contractors, so you create a questionnaire group that is specific to those respondents.</span></span>
+-   <span data-ttu-id="e21cd-227">**Enkätgruppsmedlemmar** – Du kan lägga till kontakter till enkätgrupperna.</span><span class="sxs-lookup"><span data-stu-id="e21cd-227">**Questionnaire group members** – You can add people to the questionnaire groups.</span></span>
 
-På sidan **Enkäter** klickar du på **Användarrättigheter** för att tilldela en enkätgrupp till en enkät. Medlemmarna i enkätgruppen kan fylla i enkäten när enkäten har sparats som aktiv. Denna funktion är användbar om du vill testa en enkät i en utvald grupp användare innan du skickar ut den till en större grupp, eller om du vill rikta enkäten till en mycket specifik målgrupp.
+<span data-ttu-id="e21cd-228">På sidan **Enkäter** klickar du på **Användarrättigheter** för att tilldela en enkätgrupp till en enkät.</span><span class="sxs-lookup"><span data-stu-id="e21cd-228">To assign a questionnaire group to a questionnaire, on the **Questionnaires** page, click **User rights**.</span></span> <span data-ttu-id="e21cd-229">Medlemmarna i enkätgruppen kan fylla i enkäten när enkäten har sparats som aktiv.</span><span class="sxs-lookup"><span data-stu-id="e21cd-229">After the questionnaire is saved as active, the members of the questionnaire group can complete the questionnaire.</span></span> <span data-ttu-id="e21cd-230">Denna funktion är användbar om du vill testa en enkät i en utvald grupp användare innan du skickar ut den till en större grupp, eller om du vill rikta enkäten till en mycket specifik målgrupp.</span><span class="sxs-lookup"><span data-stu-id="e21cd-230">This functionality is helpful if you want to test a questionnaire on a select group of people before you roll it out to a larger group, or if you want to target a questionnaire to a very specific audience.</span></span>
 
-## <a name="planned-answer-sessions-in-a-questionnaire"></a>Planerade svarsomgångar i en enkät
-Planerade svarsomgångar är enkäter som du har utformat för och valt svarande till. 
+## <a name="planned-answer-sessions-in-a-questionnaire"></a><span data-ttu-id="e21cd-231">Planerade svarsomgångar i en enkät</span><span class="sxs-lookup"><span data-stu-id="e21cd-231">Planned answer sessions in a questionnaire</span></span>
+<span data-ttu-id="e21cd-232">Planerade svarsomgångar är enkäter som du har utformat för och valt svarande till.</span><span class="sxs-lookup"><span data-stu-id="e21cd-232">Planned answer sessions are questionnaires that you've designed and selected the respondents for.</span></span> 
 
-**Anm.:** Innan du kan ställa in planerade svarsomgångar måste du utforma en enkät. 
+<span data-ttu-id="e21cd-233">**Anm.:** Innan du kan ställa in planerade svarsomgångar måste du utforma en enkät.</span><span class="sxs-lookup"><span data-stu-id="e21cd-233">**Note:** Before you can set up planned answer sessions, you must design a questionnaire.</span></span> 
 
-På sidan **Planerad svarsomgång** kan du skapa en planerad svarsomgång för en enskild medarbetare. Listan på sidan visar alla planerade enkäter. 
+<span data-ttu-id="e21cd-234">På sidan **Planerad svarsomgång** kan du skapa en planerad svarsomgång för en enskild medarbetare.</span><span class="sxs-lookup"><span data-stu-id="e21cd-234">On the **Planned answer session** page, you can create a planned answer session for an individual employee.</span></span> <span data-ttu-id="e21cd-235">Listan på sidan visar alla planerade enkäter.</span><span class="sxs-lookup"><span data-stu-id="e21cd-235">The list on the page displays all planned questionnaires.</span></span> 
 
-Planerade svarsomgångar används också på sidan **Tidsplaner för enkäter** där du kan planera enkäter för flera personer:
+<span data-ttu-id="e21cd-236">Planerade svarsomgångar används också på sidan **Tidsplaner för enkäter** där du kan planera enkäter för flera personer:</span><span class="sxs-lookup"><span data-stu-id="e21cd-236">Planned answer sessions are also used on the **Questionnaire schedules** page, where you can plan questionnaires for multiple people:</span></span>
 
--   Medarbetare
--   Kursdeltagare
--   Organisationsenheter
+-   <span data-ttu-id="e21cd-237">Medarbetare</span><span class="sxs-lookup"><span data-stu-id="e21cd-237">Employees</span></span>
+-   <span data-ttu-id="e21cd-238">Kursdeltagare</span><span class="sxs-lookup"><span data-stu-id="e21cd-238">Course participants</span></span>
+-   <span data-ttu-id="e21cd-239">Organisationsenheter</span><span class="sxs-lookup"><span data-stu-id="e21cd-239">Organizational units</span></span>
 
-Varje person får besvara enkäten en gång.
+<span data-ttu-id="e21cd-240">Varje person får besvara enkäten en gång.</span><span class="sxs-lookup"><span data-stu-id="e21cd-240">Each person can answer the questionnaire only one time.</span></span>
 
-## <a name="scheduling-a-questionnaire"></a>Tidsplanera en enkät
-Det går även att tidsplanera en enkät för flera svarande.
+## <a name="scheduling-a-questionnaire"></a><span data-ttu-id="e21cd-241">Tidsplanera en enkät</span><span class="sxs-lookup"><span data-stu-id="e21cd-241">Scheduling a questionnaire</span></span>
+<span data-ttu-id="e21cd-242">Det går även att tidsplanera en enkät för flera svarande.</span><span class="sxs-lookup"><span data-stu-id="e21cd-242">You can optionally schedule a questionnaire for multiple respondents.</span></span>
 
-### <a name="planning-types"></a>Planeringstyper
+### <a name="planning-types"></a><span data-ttu-id="e21cd-243">Planeringstyper</span><span class="sxs-lookup"><span data-stu-id="e21cd-243">Planning types</span></span>
 
-Planeringstyper krävs om du vill schemalägga planerade svarsomgångar för flera svarande. Planeringstyper används för att klassificera enkättidsplaner. Du kan till exempel tidsplanera enkäter för följande syften:
+<span data-ttu-id="e21cd-244">Planeringstyper krävs om du vill schemalägga planerade svarsomgångar för flera svarande.</span><span class="sxs-lookup"><span data-stu-id="e21cd-244">Planning types are required if you want to schedule planned answer sessions for multiple respondents.</span></span> <span data-ttu-id="e21cd-245">Planeringstyper används för att klassificera enkättidsplaner.</span><span class="sxs-lookup"><span data-stu-id="e21cd-245">Planning types are used to classify questionnaire schedules.</span></span> <span data-ttu-id="e21cd-246">Du kan till exempel tidsplanera enkäter för följande syften:</span><span class="sxs-lookup"><span data-stu-id="e21cd-246">For example, you can schedule questionnaires for the following purposes:</span></span>
 
--   Utvärdering
--   Översikt
--   Testa
+-   <span data-ttu-id="e21cd-247">Utvärdering</span><span class="sxs-lookup"><span data-stu-id="e21cd-247">Evaluation</span></span>
+-   <span data-ttu-id="e21cd-248">Översikt</span><span class="sxs-lookup"><span data-stu-id="e21cd-248">Survey</span></span>
+-   <span data-ttu-id="e21cd-249">Testa</span><span class="sxs-lookup"><span data-stu-id="e21cd-249">Testing</span></span>
 
-Du kan ange planeringstyper för en enkät på sidan **Tidsplaner för enkäter** .
+<span data-ttu-id="e21cd-250">Du kan ange planeringstyper för en enkät på sidan **Tidsplaner för enkäter** .</span><span class="sxs-lookup"><span data-stu-id="e21cd-250">You can specify planning types for a questionnaire schedule on the **Questionnaire schedules** page.</span></span>
 
-### <a name="reference-types-for-questionnaire"></a>Referenstyper för enkät
+### <a name="reference-types-for-questionnaire"></a><span data-ttu-id="e21cd-251">Referenstyper för enkät</span><span class="sxs-lookup"><span data-stu-id="e21cd-251">Reference types for questionnaire</span></span>
 
-Du kan använda referenstyper när du vill ställa in kriterier för svarande som du kan välja när du tidsplanerar en enkät. 
+<span data-ttu-id="e21cd-252">Du kan använda referenstyper när du vill ställa in kriterier för svarande som du kan välja när du tidsplanerar en enkät.</span><span class="sxs-lookup"><span data-stu-id="e21cd-252">You can use reference types to enter criteria for the respondents that you might select when you schedule a questionnaire.</span></span> 
 
-Använd sidan **Referenstyper** för att ställa in referenstyper för en enkät. Varje referenstyp motsvarar en tabell i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition. När du skapar enkättidsplaner kan du ange de enskilda posterna i tabellen eller ett intervall med poster som enkäten ska associeras med. 
+<span data-ttu-id="e21cd-253">Använd sidan **Referenstyper** för att ställa in referenstyper för en enkät.</span><span class="sxs-lookup"><span data-stu-id="e21cd-253">Use the **Reference types** page to set up reference types for a questionnaire.</span></span> <span data-ttu-id="e21cd-254">Varje referenstyp motsvarar en tabell i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition.</span><span class="sxs-lookup"><span data-stu-id="e21cd-254">Each reference type corresponds to a table in Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition.</span></span> <span data-ttu-id="e21cd-255">När du skapar enkättidsplaner kan du ange de enskilda posterna i tabellen eller ett intervall med poster som enkäten ska associeras med.</span><span class="sxs-lookup"><span data-stu-id="e21cd-255">When you create questionnaire schedules, you can specify individual records in the table or a range of records that the questionnaire will be associated with.</span></span> 
 
-Om du till exempel väljer tabellen Kurser kan du bestämma vilken specifik kurs enkäten ska gälla för. När du ställer in en referens för tabellen Kurser blir alla fält och knappar på sidan **Kurser** tillgängliga.
+<span data-ttu-id="e21cd-256">Om du till exempel väljer tabellen Kurser kan du bestämma vilken specifik kurs enkäten ska gälla för.</span><span class="sxs-lookup"><span data-stu-id="e21cd-256">For example, if you select the Courses table, you can decide which specific course the questionnaire will be for.</span></span> <span data-ttu-id="e21cd-257">När du ställer in en referens för tabellen Kurser blir alla fält och knappar på sidan **Kurser** tillgängliga.</span><span class="sxs-lookup"><span data-stu-id="e21cd-257">When you set up a reference for the Courses table, some fields and buttons on the **Courses** page become available.</span></span>
 
-### <a name="questionnaire-schedules"></a>Tidsplaner för enkäter
+### <a name="questionnaire-schedules"></a><span data-ttu-id="e21cd-258">Tidsplaner för enkäter</span><span class="sxs-lookup"><span data-stu-id="e21cd-258">Questionnaire schedules</span></span>
 
-Du kan använda enkättidsplaner för att generera flera planerade svarsomgångar för ett antal användare, baserat på en referenstyp. Skapa ett schema på sidan **Enkättidsplaner**. Välj planeringstyp för att kategorisera schemat, och välj även den referenstyp som ska användas för att ställa frågor i systemet för enskilda användare. Om du anger referenstypen som tabellen Kurser, kan du exempelvis välja en viss kurs i fältet **Referens**. 
+<span data-ttu-id="e21cd-259">Du kan använda enkättidsplaner för att generera flera planerade svarsomgångar för ett antal användare, baserat på en referenstyp.</span><span class="sxs-lookup"><span data-stu-id="e21cd-259">You can use questionnaire schedules to generate multiple planned answer sessions for a group of users, based on a reference type.</span></span> <span data-ttu-id="e21cd-260">Skapa ett schema på sidan **Enkättidsplaner**.</span><span class="sxs-lookup"><span data-stu-id="e21cd-260">Create a schedule on the **Questionnaire schedules** page.</span></span> <span data-ttu-id="e21cd-261">Välj planeringstyp för att kategorisera schemat, och välj även den referenstyp som ska användas för att ställa frågor i systemet för enskilda användare.</span><span class="sxs-lookup"><span data-stu-id="e21cd-261">Select the planning type to categorize the schedule, and also select the reference type that should be used to query the system for specific users.</span></span> <span data-ttu-id="e21cd-262">Om du anger referenstypen som tabellen Kurser, kan du exempelvis välja en viss kurs i fältet **Referens**.</span><span class="sxs-lookup"><span data-stu-id="e21cd-262">For example, if you set the reference type to the Courses table, you can select a specific course in the **Reference** field.</span></span> 
 
-Klicka på **Inställningsdetaljer** om du vill välja enkäten och andra kriterier. Ange exempelvis namnet på läraren som ett kriterium om enkäten utgör en utvärdering av instruktören. När du är klar med att ange inställningsinformationen, genererar systemet planerade svarsomgångar för de användare som deltar i enkäten. 
+<span data-ttu-id="e21cd-263">Klicka på **Inställningsdetaljer** om du vill välja enkäten och andra kriterier.</span><span class="sxs-lookup"><span data-stu-id="e21cd-263">Click **Setup details** to select the questionnaire and other criteria.</span></span> <span data-ttu-id="e21cd-264">Ange exempelvis namnet på läraren som ett kriterium om enkäten utgör en utvärdering av instruktören.</span><span class="sxs-lookup"><span data-stu-id="e21cd-264">For example, specify the instructor's name as a criterion if the questionnaire is an evaluation of the instructor.</span></span> <span data-ttu-id="e21cd-265">När du är klar med att ange inställningsinformationen, genererar systemet planerade svarsomgångar för de användare som deltar i enkäten.</span><span class="sxs-lookup"><span data-stu-id="e21cd-265">After you've finished entering the setup details, the system generates planned answer sessions for the users that are included in the query.</span></span> 
 
-Klicka på **Planerade svarsomgångar** om du vill visa svarsomgången för tidsplanen. Därefter kan du manuellt skapa ytterligare planerade svarsomgångar eller ta bort planerade svarsomgångar som inte har besvarats. 
+<span data-ttu-id="e21cd-266">Klicka på **Planerade svarsomgångar** om du vill visa svarsomgången för tidsplanen.</span><span class="sxs-lookup"><span data-stu-id="e21cd-266">Click **Planned answer sessions** to view the answer sessions for the schedule.</span></span> <span data-ttu-id="e21cd-267">Därefter kan du manuellt skapa ytterligare planerade svarsomgångar eller ta bort planerade svarsomgångar som inte har besvarats.</span><span class="sxs-lookup"><span data-stu-id="e21cd-267">You can then manually create additional planned answer sessions or delete planned answer sessions that haven't been answered.</span></span> 
 
-Klicka på **Funktioner** &gt; **Start** för att göra enkäten tillgänglig för användarna i relaterade planerade svarsomgångar. Klicka på **Svar** om du vill visa de ifyllda svaren på enkäten. Du kan också kopiera enkätens tidsplaninställningar, planerade svarsomgångar och svaren till en ny enkättidsplan.
+<span data-ttu-id="e21cd-268">Klicka på **Funktioner** &gt; **Start** för att göra enkäten tillgänglig för användarna i relaterade planerade svarsomgångar.</span><span class="sxs-lookup"><span data-stu-id="e21cd-268">Click **Functions** &gt; **Start** to make the questionnaire available to the users in related planned answer sessions.</span></span> <span data-ttu-id="e21cd-269">Klicka på **Svar** om du vill visa de ifyllda svaren på enkäten.</span><span class="sxs-lookup"><span data-stu-id="e21cd-269">Click **Answers** to view the completed responses to the questionnaire.</span></span> <span data-ttu-id="e21cd-270">Du kan också kopiera enkätens tidsplaninställningar, planerade svarsomgångar och svaren till en ny enkättidsplan.</span><span class="sxs-lookup"><span data-stu-id="e21cd-270">You can optionally copy the questionnaire schedule settings, planned answer sessions, and answers to a new questionnaire schedule.</span></span>
 
-## <a name="notifying-respondents-about-questionnaires-that-are-available-to-them"></a>Meddela svarande om enkäter som är tillgängliga för dem
-När du distribuerar en enkät måste du meddela svarande att enkäter finns tillgängliga för dem. 
+## <a name="notifying-respondents-about-questionnaires-that-are-available-to-them"></a><span data-ttu-id="e21cd-271">Meddela svarande om enkäter som är tillgängliga för dem</span><span class="sxs-lookup"><span data-stu-id="e21cd-271">Notifying respondents about questionnaires that are available to them</span></span>
+<span data-ttu-id="e21cd-272">När du distribuerar en enkät måste du meddela svarande att enkäter finns tillgängliga för dem.</span><span class="sxs-lookup"><span data-stu-id="e21cd-272">When you distribute a questionnaire, you must notify respondents that questionnaires are available to them.</span></span> 
 
-**Obs!** De svarande måste vara användare i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition för att fylla i en enkät.
+<span data-ttu-id="e21cd-273">**Obs!** De svarande måste vara användare i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition för att fylla i en enkät.</span><span class="sxs-lookup"><span data-stu-id="e21cd-273">**Note:** Respondents must be users in Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition to complete a questionnaire.</span></span>
 
-### <a name="notifying-respondents-about-a-planned-answer-session"></a>Meddela svarande om en planerad svarsomgång
+### <a name="notifying-respondents-about-a-planned-answer-session"></a><span data-ttu-id="e21cd-274">Meddela svarande om en planerad svarsomgång</span><span class="sxs-lookup"><span data-stu-id="e21cd-274">Notifying respondents about a planned answer session</span></span>
 
-Om du använder en planerad svarsomgång måste du meddela personen direkt, till exempel per telefon eller e-post.
+<span data-ttu-id="e21cd-275">Om du använder en planerad svarsomgång måste du meddela personen direkt, till exempel per telefon eller e-post.</span><span class="sxs-lookup"><span data-stu-id="e21cd-275">If you use a planned answer session, you must notify the person directly, such as by telephone or email.</span></span>
 
-### <a name="notifying-respondents-about-a-scheduling"></a>Meddela svarande om en planering
+### <a name="notifying-respondents-about-a-scheduling"></a><span data-ttu-id="e21cd-276">Meddela svarande om en planering</span><span class="sxs-lookup"><span data-stu-id="e21cd-276">Notifying respondents about a scheduling</span></span>
 
-Använd sidan **Tidsplaner för enkäter** för att förbereda och skicka ett e-postmeddelande till alla svarande som är kopplade till enkäten. Skriv in e-postmeddelandets text på fliken **E-post för medarbetarsjälvbetjäning**. När du har startat schemat klickar du på **Funktioner** &gt; **Skicka e-post** för att generera och skicka e-postmeddelandet till de svarande. De svarande kan sedan logga in på webbplatsen och fylla i enkäten. 
+<span data-ttu-id="e21cd-277">Använd sidan **Tidsplaner för enkäter** för att förbereda och skicka ett e-postmeddelande till alla svarande som är kopplade till enkäten.</span><span class="sxs-lookup"><span data-stu-id="e21cd-277">Use the **Questionnaire schedules** page to prepare and send email to all respondents who are assigned to the questionnaire.</span></span> <span data-ttu-id="e21cd-278">Skriv in e-postmeddelandets text på fliken **E-post för medarbetarsjälvbetjäning**.</span><span class="sxs-lookup"><span data-stu-id="e21cd-278">Enter the email text on the **E-mail for employee self service** tab.</span></span> <span data-ttu-id="e21cd-279">När du har startat schemat klickar du på **Funktioner** &gt; **Skicka e-post** för att generera och skicka e-postmeddelandet till de svarande.</span><span class="sxs-lookup"><span data-stu-id="e21cd-279">After the schedule has been started, click **Functions** &gt; **Send e-mail** to generate and send the email to the respondents.</span></span> <span data-ttu-id="e21cd-280">De svarande kan sedan logga in på webbplatsen och fylla i enkäten.</span><span class="sxs-lookup"><span data-stu-id="e21cd-280">Respondents can then sign in to the website and complete the questionnaire.</span></span> 
 
-**Anm.:** Innan du kan använda e-postfunktionen måste din IT-administratör ange e-postinställningarna på sidan **E-postparametrar**.
+<span data-ttu-id="e21cd-281">**Anm.:** Innan du kan använda e-postfunktionen måste din IT-administratör ange e-postinställningarna på sidan **E-postparametrar**.</span><span class="sxs-lookup"><span data-stu-id="e21cd-281">**Note:** Before you can use the email functionality, your IT administrator must enter the email settings on the **E-mail parameters** page.</span></span>
 
-## <a name="ending-a-scheduled-questionnaire"></a>Avsluta en tidsplanerad enkät
-Du kan avsluta en tidsplanerad enkät när alla svaranden har avslutat sina tilldelade svarsomgångar. När planerad enkät slutförs kan du inte kopiera inställningarna till en ny tidsplan. 
+## <a name="ending-a-scheduled-questionnaire"></a><span data-ttu-id="e21cd-282">Avsluta en tidsplanerad enkät</span><span class="sxs-lookup"><span data-stu-id="e21cd-282">Ending a scheduled questionnaire</span></span>
+<span data-ttu-id="e21cd-283">Du kan avsluta en tidsplanerad enkät när alla svaranden har avslutat sina tilldelade svarsomgångar.</span><span class="sxs-lookup"><span data-stu-id="e21cd-283">You can end a scheduled questionnaire after all respondents have completed their assigned answer sessions.</span></span> <span data-ttu-id="e21cd-284">När planerad enkät slutförs kan du inte kopiera inställningarna till en ny tidsplan.</span><span class="sxs-lookup"><span data-stu-id="e21cd-284">After a scheduled questionnaire is ended, you can't copy its settings to a new schedule.</span></span> 
 
-**Anm.:** Om en eller flera svarande inte har fyllt i enkäten och du fortfarande vill avsluta tidsplanen måste du först radera dessa svarande från listan på sidan **Planerad svarsomgång**. Sedan kan du avsluta tidsplanen.
+<span data-ttu-id="e21cd-285">**Anm.:** Om en eller flera svarande inte har fyllt i enkäten och du fortfarande vill avsluta tidsplanen måste du först radera dessa svarande från listan på sidan **Planerad svarsomgång**.</span><span class="sxs-lookup"><span data-stu-id="e21cd-285">**Note:** If one or more respondents haven't completed the questionnaire, but you still want to end the scheduling, you must first delete those respondents from the list on the **Planned answer session** page.</span></span> <span data-ttu-id="e21cd-286">Sedan kan du avsluta tidsplanen.</span><span class="sxs-lookup"><span data-stu-id="e21cd-286">You can then end the schedule.</span></span>
 
-## <a name="completing-questionnaires"></a>Fylla i enkäter
-När du har utformat och har fördelat en enkät kan den besvaras av valda svarande. Du kan fylla i de tillgängliga frågeformulären från två platser:
+## <a name="completing-questionnaires"></a><span data-ttu-id="e21cd-287">Fylla i enkäter</span><span class="sxs-lookup"><span data-stu-id="e21cd-287">Completing questionnaires</span></span>
+<span data-ttu-id="e21cd-288">När du har utformat och har fördelat en enkät kan den besvaras av valda svarande.</span><span class="sxs-lookup"><span data-stu-id="e21cd-288">After you've designed and distributed a questionnaire, the questionnaire can be completed by selected respondents.</span></span> <span data-ttu-id="e21cd-289">Du kan fylla i de tillgängliga frågeformulären från två platser:</span><span class="sxs-lookup"><span data-stu-id="e21cd-289">You can complete the questionnaires that are available to you from two locations:</span></span>
 
--   I navigeringsfönstret klickar du på **Enkäter** &gt; **Fördela** &gt; **Fyll i en enkät**.
--   Klicka på **Enkäter att fylla i** i Medarbetarsjälvbetjäning.
+-   <span data-ttu-id="e21cd-290">I navigeringsfönstret klickar du på **Enkäter** &gt; **Fördela** &gt; **Fyll i en enkät**.</span><span class="sxs-lookup"><span data-stu-id="e21cd-290">In the navigation pane, click **Questionnaires** &gt; **Distribute** &gt; **Complete a questionnaire**.</span></span>
+-   <span data-ttu-id="e21cd-291">Klicka på **Enkäter att fylla i** i Medarbetarsjälvbetjäning.</span><span class="sxs-lookup"><span data-stu-id="e21cd-291">In Employee self-service, click **Questionnaires to complete**.</span></span>
 
-Enkäter kan göras tillgängliga för vissa användare eller grupper av användare eller för alla användare i ett nätverk.
+<span data-ttu-id="e21cd-292">Enkäter kan göras tillgängliga för vissa användare eller grupper av användare eller för alla användare i ett nätverk.</span><span class="sxs-lookup"><span data-stu-id="e21cd-292">Questionnaires can made be available to specific users or groups of users, or to all users in a network.</span></span>
 
-<a name="see-also"></a>Se även
+<a name="see-also"></a><span data-ttu-id="e21cd-293">Se även</span><span class="sxs-lookup"><span data-stu-id="e21cd-293">See also</span></span>
 --------
 
-[Utforma enkäter](design-questionnaires.md)
+[<span data-ttu-id="e21cd-294">Utforma enkäter</span><span class="sxs-lookup"><span data-stu-id="e21cd-294">Designing questionnaires</span></span>](design-questionnaires.md)
 
-[Använda enkäter](questionnaires.md)
+[<span data-ttu-id="e21cd-295">Använda enkäter</span><span class="sxs-lookup"><span data-stu-id="e21cd-295">Using questionnaires</span></span>](questionnaires.md)
 
-[Visa och utvärdera resultaten av en enkät](evaluate-questionnaire-results.md)
+[<span data-ttu-id="e21cd-296">Visa och utvärdera resultaten av en enkät</span><span class="sxs-lookup"><span data-stu-id="e21cd-296">Viewing and evaluating the results of questionnaires</span></span>](evaluate-questionnaire-results.md)
 
-master
+<span data-ttu-id="e21cd-297">master</span><span class="sxs-lookup"><span data-stu-id="e21cd-297">master</span></span>
 

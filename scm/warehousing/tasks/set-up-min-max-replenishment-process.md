@@ -17,133 +17,133 @@ ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b947a02be981155053e33a4ef20e19bf2a194a5
-ms.openlocfilehash: 01a0c42c43a23234e0e355193f8dd7e8ee116f71
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 02af5d1beb2d4eb6a7162b47c42854725fbdbec2
 ms.contentlocale: sv-se
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="set-up-a-min-max-replenishment-process"></a>Ställ in en min-max-process för lagerpåfyllnad
+# <a name="set-up-a-min-max-replenishment-process"></a><span data-ttu-id="12062-103">Ställ in en min-max-process för lagerpåfyllnad</span><span class="sxs-lookup"><span data-stu-id="12062-103">Set up a min-max replenishment process</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Den här proceduren visar hur du ställer in en ny process för lagerpåfyllnad som använder den minsta/största lagerpåfyllnadsstrategin. När lager faller under den lägsta nivån kommer arbete att skapas för att fylla på platsen. Proceduren visar även hur du använder fasta plockplatser om du vill tillåta att fylla på lager även om lager faller under den lägsta nivån, och hur du aktiverar processen för lagerpåfyllnad att köras regelbundet med hjälp av ett batchjobb. Dessa uppgifter utförs vanligtvis av en lagerchef. Du kan köra den här proceduren i demonstrationsdataföretaget USMF som använder exempelvärdena i anteckningar eller så kan du köra det på dina egna data. Om du använder dina egna data ska du kontrollera att du har ett lagerställe som aktiveras för Lagerstyrningsprocesser.
+<span data-ttu-id="12062-104">Den här proceduren visar hur du ställer in en ny process för lagerpåfyllnad som använder den minsta/största lagerpåfyllnadsstrategin.</span><span class="sxs-lookup"><span data-stu-id="12062-104">This procedure shows you how to set up a new replenishment process which uses the minimum/maximum replenishment strategy.</span></span> <span data-ttu-id="12062-105">När lager faller under den lägsta nivån kommer arbete att skapas för att fylla på platsen.</span><span class="sxs-lookup"><span data-stu-id="12062-105">When inventory falls below the minimum level, work will be created to replenish the location.</span></span> <span data-ttu-id="12062-106">Proceduren visar även hur du använder fasta plockplatser om du vill tillåta att fylla på lager även om lager faller under den lägsta nivån, och hur du aktiverar processen för lagerpåfyllnad att köras regelbundet med hjälp av ett batchjobb.</span><span class="sxs-lookup"><span data-stu-id="12062-106">The procedure also shows how to use fixed picking locations to allow restocking even if inventory falls below the minimum level, and how to enable the replenishment process to run regularly using a batch job.</span></span> <span data-ttu-id="12062-107">Dessa uppgifter utförs vanligtvis av en lagerchef.</span><span class="sxs-lookup"><span data-stu-id="12062-107">These tasks would typically be carried out by a warehouse manager.</span></span> <span data-ttu-id="12062-108">Du kan köra den här proceduren i demonstrationsdataföretaget USMF som använder exempelvärdena i anteckningar eller så kan du köra det på dina egna data.</span><span class="sxs-lookup"><span data-stu-id="12062-108">You can run this procedure in the USMF demo data company using the example values in the notes, or can run it on your own data.</span></span> <span data-ttu-id="12062-109">Om du använder dina egna data ska du kontrollera att du har ett lagerställe som aktiveras för Lagerstyrningsprocesser.</span><span class="sxs-lookup"><span data-stu-id="12062-109">If you’re using your own data, make sure that you have a warehouse that’s enabled for Warehouse management processes.</span></span>
 
 
-## <a name="create-a-fixed-picking-location"></a>Skapa en fast plockplats
-1. Gå till Lagerstyrning > Inställningar > Lagerställe > Fasta lagerplatser.
-    * Detta är en valfri uppgift för en min-max process för lagerpåfyllnad, men om du använder fast plockplats låter detta lagret fyllas på även om det är under den lägsta nivån eftersom systemet kan bestämma vilka artiklar som måste fyllas på även om det inte finns något kvar.  
-2. Klicka på Ny.
-3. Ange eller välj ett värde i fältet Artikelnummer.
-    * Om du använder USMF kan du välja artikeln A0001.  
-4. Ange eller välj ett värde i fältet Plats.
-    * Om du använder USMF kan du välja site 2.  
-5. Ange eller välj ett värde i fältet Lagerställe.
-    * Om du använder USMF kan du välja lager 24.  
-6. Ange eller välj ett värde i fältet Plats.
-    * Om du använder USMF kan du välja CP-003.  
-7. Stäng sidan.
+## <a name="create-a-fixed-picking-location"></a><span data-ttu-id="12062-110">Skapa en fast plockplats</span><span class="sxs-lookup"><span data-stu-id="12062-110">Create a fixed picking location</span></span>
+1. <span data-ttu-id="12062-111">Gå till Lagerstyrning > Inställningar > Lagerställe > Fasta lagerplatser.</span><span class="sxs-lookup"><span data-stu-id="12062-111">Go to Warehouse management > Setup > Warehouse > Fixed locations.</span></span>
+    * <span data-ttu-id="12062-112">Detta är en valfri uppgift för en min-max process för lagerpåfyllnad, men om du använder fast plockplats låter detta lagret fyllas på även om det är under den lägsta nivån eftersom systemet kan bestämma vilka artiklar som måste fyllas på även om det inte finns något kvar.</span><span class="sxs-lookup"><span data-stu-id="12062-112">This is an optional task for min-max replenishment, but if you use fixed picking location, this allows stock to be replenished even if it falls below the minimum level, because the system can determine which items need to be replenished, even if there aren't any left.</span></span>  
+2. <span data-ttu-id="12062-113">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="12062-113">Click New.</span></span>
+3. <span data-ttu-id="12062-114">Ange eller välj ett värde i fältet Artikelnummer.</span><span class="sxs-lookup"><span data-stu-id="12062-114">In the Item number field, enter or select a value.</span></span>
+    * <span data-ttu-id="12062-115">Om du använder USMF kan du välja artikeln A0001.</span><span class="sxs-lookup"><span data-stu-id="12062-115">If you’re using USMF, you can select item A0001.</span></span>  
+4. <span data-ttu-id="12062-116">Ange eller välj ett värde i fältet Plats.</span><span class="sxs-lookup"><span data-stu-id="12062-116">In the Site field, enter or select a value.</span></span>
+    * <span data-ttu-id="12062-117">Om du använder USMF kan du välja site 2.</span><span class="sxs-lookup"><span data-stu-id="12062-117">If you’re using USMF, you can select site 2.</span></span>  
+5. <span data-ttu-id="12062-118">Ange eller välj ett värde i fältet Lagerställe.</span><span class="sxs-lookup"><span data-stu-id="12062-118">In the Warehouse field, enter or select a value.</span></span>
+    * <span data-ttu-id="12062-119">Om du använder USMF kan du välja lager 24.</span><span class="sxs-lookup"><span data-stu-id="12062-119">If you’re using USMF, you can select warehouse 24.</span></span>  
+6. <span data-ttu-id="12062-120">Ange eller välj ett värde i fältet Plats.</span><span class="sxs-lookup"><span data-stu-id="12062-120">In the Location field, enter or select a value.</span></span>
+    * <span data-ttu-id="12062-121">Om du använder USMF kan du välja CP-003.</span><span class="sxs-lookup"><span data-stu-id="12062-121">If you’re using USMF, you can select CP-003.</span></span>  
+7. <span data-ttu-id="12062-122">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="12062-122">Close the page.</span></span>
 
-## <a name="create-a-replenishment-location-directive"></a>Skapa en platsdirektiv för lagerpåfyllnad
-1. Gå till Lagerstyrning > Inställningar > Platsdirektiv.
-    * Platsdirektiv används för att bestämma var artiklarna ska plockas från i processen för lastlagerpåfyllnad.  
-2. Välj "Lagerpåfyllnad" i fältet Typ av arbetsorder.
-3. Klicka på Ny.
-4. Skriv ett värde i fältet Namn.
-5. Välj Välj i fältet Arbetstyp.
-6. Ange eller välj ett värde i fältet Plats.
-    * Om du använder USMF kan du välja site 2.  
-7. Ange eller välj ett värde i fältet Lagerställe.
-    * Om du använder USMF kan du välja lager 24.  
-8. Klicka på Spara.
-9. Klicka på Ny.
-10. Markera vald rad i listan.
-11. Ange ett värde i fältet Till kvantitet.
-    * Till exempel kan du ställa in den på 9999.  
-12. Markera kryssrutan Tillåt delningar.
-    * Om du väljer det här alternativet kommer processen för att skapa arbete tillåta att kvantiteter på arbetsrader delas av flera platser.  
-13. Klicka på Spara.
-14. Klicka på Ny.
-15. Markera vald rad i listan.
-16. Skriv ett värde i fältet Namn.
-17. Klicka på Spara.
-18. Klicka på Redigera fråga.
-    * Du kan redigera den här frågan för att lägga till begränsningar som lager kan väljas från i processen för lagerpåfyllnad. Till exempel kan det hända att lagret bara används från lagerställets bulkområde.  
-19. Klicka på OK.
-20. Stäng sidan.
+## <a name="create-a-replenishment-location-directive"></a><span data-ttu-id="12062-123">Skapa en platsdirektiv för lagerpåfyllnad</span><span class="sxs-lookup"><span data-stu-id="12062-123">Create a replenishment location directive</span></span>
+1. <span data-ttu-id="12062-124">Gå till Lagerstyrning > Inställningar > Platsdirektiv.</span><span class="sxs-lookup"><span data-stu-id="12062-124">Go to Warehouse management > Setup > Location directives.</span></span>
+    * <span data-ttu-id="12062-125">Platsdirektiv används för att bestämma var artiklarna ska plockas från i processen för lastlagerpåfyllnad.</span><span class="sxs-lookup"><span data-stu-id="12062-125">Location directives are used to determine where items should be picked from in the replenishment process.</span></span>  
+2. <span data-ttu-id="12062-126">Välj "Lagerpåfyllnad" i fältet Typ av arbetsorder.</span><span class="sxs-lookup"><span data-stu-id="12062-126">In the Work order type field, select 'Replenishment'.</span></span>
+3. <span data-ttu-id="12062-127">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="12062-127">Click New.</span></span>
+4. <span data-ttu-id="12062-128">Skriv ett värde i fältet Namn.</span><span class="sxs-lookup"><span data-stu-id="12062-128">In the Name field, type a value.</span></span>
+5. <span data-ttu-id="12062-129">Välj Välj i fältet Arbetstyp.</span><span class="sxs-lookup"><span data-stu-id="12062-129">In the Work type field, select 'Pick'.</span></span>
+6. <span data-ttu-id="12062-130">Ange eller välj ett värde i fältet Plats.</span><span class="sxs-lookup"><span data-stu-id="12062-130">In the Site field, enter or select a value.</span></span>
+    * <span data-ttu-id="12062-131">Om du använder USMF kan du välja site 2.</span><span class="sxs-lookup"><span data-stu-id="12062-131">If you’re using USMF, you can select site 2.</span></span>  
+7. <span data-ttu-id="12062-132">Ange eller välj ett värde i fältet Lagerställe.</span><span class="sxs-lookup"><span data-stu-id="12062-132">In the Warehouse field, enter or select a value.</span></span>
+    * <span data-ttu-id="12062-133">Om du använder USMF kan du välja lager 24.</span><span class="sxs-lookup"><span data-stu-id="12062-133">If you’re using USMF, you can select warehouse 24.</span></span>  
+8. <span data-ttu-id="12062-134">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="12062-134">Click Save.</span></span>
+9. <span data-ttu-id="12062-135">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="12062-135">Click New.</span></span>
+10. <span data-ttu-id="12062-136">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="12062-136">In the list, mark the selected row.</span></span>
+11. <span data-ttu-id="12062-137">Ange ett värde i fältet Till kvantitet.</span><span class="sxs-lookup"><span data-stu-id="12062-137">In the To quantity field, enter a number.</span></span>
+    * <span data-ttu-id="12062-138">Till exempel kan du ställa in den på 9999.</span><span class="sxs-lookup"><span data-stu-id="12062-138">For example, you can set it to 9999.</span></span>  
+12. <span data-ttu-id="12062-139">Markera kryssrutan Tillåt delningar.</span><span class="sxs-lookup"><span data-stu-id="12062-139">Select the Allow split check box.</span></span>
+    * <span data-ttu-id="12062-140">Om du väljer det här alternativet kommer processen för att skapa arbete tillåta att kvantiteter på arbetsrader delas av flera platser.</span><span class="sxs-lookup"><span data-stu-id="12062-140">If you select this option, the work creation process will allow work line quantities to be split across multiple locations.</span></span>  
+13. <span data-ttu-id="12062-141">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="12062-141">Click Save.</span></span>
+14. <span data-ttu-id="12062-142">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="12062-142">Click New.</span></span>
+15. <span data-ttu-id="12062-143">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="12062-143">In the list, mark the selected row.</span></span>
+16. <span data-ttu-id="12062-144">Skriv ett värde i fältet Namn.</span><span class="sxs-lookup"><span data-stu-id="12062-144">In the Name field, type a value.</span></span>
+17. <span data-ttu-id="12062-145">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="12062-145">Click Save.</span></span>
+18. <span data-ttu-id="12062-146">Klicka på Redigera fråga.</span><span class="sxs-lookup"><span data-stu-id="12062-146">Click Edit query.</span></span>
+    * <span data-ttu-id="12062-147">Du kan redigera den här frågan för att lägga till begränsningar som lager kan väljas från i processen för lagerpåfyllnad.</span><span class="sxs-lookup"><span data-stu-id="12062-147">You can edit this query to add restrictions where inventory can be selected from in the replenishment process.</span></span> <span data-ttu-id="12062-148">Till exempel kan det hända att lagret bara används från lagerställets bulkområde.</span><span class="sxs-lookup"><span data-stu-id="12062-148">For example, it could be that inventory should only be used from the Bulk area of the warehouse.</span></span>  
+19. <span data-ttu-id="12062-149">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="12062-149">Click OK.</span></span>
+20. <span data-ttu-id="12062-150">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="12062-150">Close the page.</span></span>
 
-## <a name="create-a-replenishment-work-template"></a>Skapa en arbetsmall för lagerpåfyllnad.
-1. Gå till Lagerstyrning > Inställningar > Arbete > Arbetsmallar.
-    * Arbetsmallen används för att guida systemet hur det minsta/största lagerpåfyllnadsarbetet måste skapas. Det måste åtminstone finnas en arbetsmallrad för en plockplats och en läggplats. Arbetsmallen kommer att säga att den är ogiltig, tills all nödvändig information har fyllts i.  
-2. Välj "Lagerpåfyllnad" i fältet Typ av arbetsorder.
-3. Klicka på Ny.
-4. Skriv ett värde i fältet Arbetsmall.
-5. Klicka på Spara.
-6. Klicka på Ny.
-7. Välj Välj i fältet Arbetstyp.
-8. I fältet Arbetsklass-ID, ange eller välj ett värde.
-    * Detta ska vara en arbetsklass som är relaterad till lagerpåfyllnad. Välj Lagerpåfyllnad om du använder USMF.  
-9. Klicka på Ny.
-10. Markera vald rad i listan.
-11. Välj Placera i fältet Arbetstyp.
-12. I fältet Arbetsklass-ID, ange eller välj ett värde.
-13. Klicka på Spara.
-14. Stäng sidan.
+## <a name="create-a-replenishment-work-template"></a><span data-ttu-id="12062-151">Skapa en arbetsmall för lagerpåfyllnad.</span><span class="sxs-lookup"><span data-stu-id="12062-151">Create a replenishment work template</span></span>
+1. <span data-ttu-id="12062-152">Gå till Lagerstyrning > Inställningar > Arbete > Arbetsmallar.</span><span class="sxs-lookup"><span data-stu-id="12062-152">Go to Warehouse management > Setup > Work > Work templates.</span></span>
+    * <span data-ttu-id="12062-153">Arbetsmallen används för att guida systemet hur det minsta/största lagerpåfyllnadsarbetet måste skapas.</span><span class="sxs-lookup"><span data-stu-id="12062-153">The work template is use to guide the system as to how the min/max replenishment work must be created.</span></span> <span data-ttu-id="12062-154">Det måste åtminstone finnas en arbetsmallrad för en plockplats och en läggplats.</span><span class="sxs-lookup"><span data-stu-id="12062-154">As a minimum, there must be a work template line for a pick and a put.</span></span> <span data-ttu-id="12062-155">Arbetsmallen kommer att säga att den är ogiltig, tills all nödvändig information har fyllts i.</span><span class="sxs-lookup"><span data-stu-id="12062-155">The work template will say that it’s Invalid until all the necessary information has been filled in.</span></span>  
+2. <span data-ttu-id="12062-156">Välj "Lagerpåfyllnad" i fältet Typ av arbetsorder.</span><span class="sxs-lookup"><span data-stu-id="12062-156">In the Work order type field, select 'Replenishment'.</span></span>
+3. <span data-ttu-id="12062-157">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="12062-157">Click New.</span></span>
+4. <span data-ttu-id="12062-158">Skriv ett värde i fältet Arbetsmall.</span><span class="sxs-lookup"><span data-stu-id="12062-158">In the Work template field, type a value.</span></span>
+5. <span data-ttu-id="12062-159">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="12062-159">Click Save.</span></span>
+6. <span data-ttu-id="12062-160">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="12062-160">Click New.</span></span>
+7. <span data-ttu-id="12062-161">Välj Välj i fältet Arbetstyp.</span><span class="sxs-lookup"><span data-stu-id="12062-161">In the Work type field, select 'Pick'.</span></span>
+8. <span data-ttu-id="12062-162">I fältet Arbetsklass-ID, ange eller välj ett värde.</span><span class="sxs-lookup"><span data-stu-id="12062-162">In the Work class ID field, enter or select a value.</span></span>
+    * <span data-ttu-id="12062-163">Detta ska vara en arbetsklass som är relaterad till lagerpåfyllnad.</span><span class="sxs-lookup"><span data-stu-id="12062-163">This should be a work class related to replenishment.</span></span> <span data-ttu-id="12062-164">Välj Lagerpåfyllnad om du använder USMF.</span><span class="sxs-lookup"><span data-stu-id="12062-164">If you’re using USMF, select Replenish.</span></span>  
+9. <span data-ttu-id="12062-165">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="12062-165">Click New.</span></span>
+10. <span data-ttu-id="12062-166">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="12062-166">In the list, mark the selected row.</span></span>
+11. <span data-ttu-id="12062-167">Välj Placera i fältet Arbetstyp.</span><span class="sxs-lookup"><span data-stu-id="12062-167">In the Work type field, select 'Put'.</span></span>
+12. <span data-ttu-id="12062-168">I fältet Arbetsklass-ID, ange eller välj ett värde.</span><span class="sxs-lookup"><span data-stu-id="12062-168">In the Work class ID field, enter or select a value.</span></span>
+13. <span data-ttu-id="12062-169">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="12062-169">Click Save.</span></span>
+14. <span data-ttu-id="12062-170">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="12062-170">Close the page.</span></span>
 
-## <a name="create-a-new-replenishment-template"></a>Skapa en ny mall för lagerpåfyllnad
-1. Gå till Lagerstyrning > Inställningar > Lagerpåfyllnad > Mall för lagerpåfyllnad.
-    * Lagerpåfyllnadsmallen används för att definiera artiklarna och kvantiteterna och platsen som ska fyllas på.  
-2. Klicka på Ny.
-3. Skriv ett värde i fältet Lagerpåfyllnadsmall.
-    * Namnge mallen för att ange att den är för minsta/största för påfyllnad.  
-4. Ange ett värde i fältet Beskrivning.
-5. Markera kryssrutan Tillåt påfyllnadsbegäran för att använda ej reserverade kvantiteter.
-    * Om du markerar det här alternativet, aktiverar den lagerpåfyllnadsbegäran för att använda kvantiteter som är relaterade till minsta/största lagerpåfyllnad. Detta kan t.ex. vara praktiskt om det minsta/största lagerpåfyllnadsarbetet inte bearbetas på en gång för att undvika att onödigt påfyllnadsbegäransarbete skapas.  
-6. Klicka på Ny.
-7. Ange ett nummer i fältet Sekvensnummer.
-8. Ange ett värde i fältet Beskrivning.
-9. Markera vald rad i listan.
-10. Ange eller välj ett värde i fältet Lagerpåfyllnadsenhet.
-    * Välj till exempel st. Denna inställning är obligatorisk. Den låter dig ange olika måttenheter för lagerpåfyllnadsarbete jämfört med de enheter som anges för de lägsta och högsta lagernivåerna i den här mallen.  
-11. Ange eller välj ett värde i fältet Arbetsmall.
-    * Välj den arbetsmall som du skapade tidigare.  
-12. Ange ett nummer i fältet Minsta kvantitet.
-    * Välj den minsta kvantitet som ska utlösa lagerpåfyllnaden. Ange den t.ex. till 50. Det går att ange detta till noll om du fyller på en fast plats och alternativet Fyll på tomma fasta lagerplatser är angett till Ja. Vi rekommenderar även att du väljer alternativet Fyll endast på fasta lagerplatser av prestandaskäl.  
-13. Ange ett nummer i fältet Högsta kvantitet.
-    * Ange t.ex. detta till 100.  
-14. Ange eller välj ett värde i fältet Enhet.
-    * Tilldela enheten för de minsta och högsta kvantiteterna. Ange t.ex. detta till st.  
-15. Markera kryssrutan Fyll på tomma fasta lagerplatser.
-    * Markera den här kryssrutan för att fylla på fasta lagerplatser när de är tomma. Annars kommer bara platserna där det finns en kvantitet i lager att fyllas på.  
-16. Markera kryssrutan Fyll endast på tomma fasta lagerplatser.
-17. Klicka på Välj produkter.
-    * Detta är platsen för att definiera vilka produkter som ska fyllas på. Om alternativet Fasta plockplatser markeras, måste du även definiera platserna i den här frågan. Variantspecifika frågor är tillgängliga, liksom produktspecifika frågor.  
-18. Markera raden Artiklar.
-19. Ange ett värde i fältet Kriterier.
-    * Välj de artiklar som ska fyllas på de fasta platserna. Ange t.ex. A* för att markera alla artikelnummer som börjar med A.  
-20. Klicka på Lägg till.
-    * Lägg till Platsenheten (såvida den inte redan finns) för att kunna begränsa lagerpåfyllnadsarbete till de fasta plockplatserna inom ett specifikt område på lagerstället.  
-21. Markera vald rad i listan.
-22. Ange fältet Tabell till Platser.
-23. Välj Platsprofil-ID i fältet Fält.
-24. Ange eller välj ett värde i fältet Kriterier.
-25. Klicka på OK.
-26. Stäng sidan.
+## <a name="create-a-new-replenishment-template"></a><span data-ttu-id="12062-171">Skapa en ny mall för lagerpåfyllnad</span><span class="sxs-lookup"><span data-stu-id="12062-171">Create a new replenishment template</span></span>
+1. <span data-ttu-id="12062-172">Gå till Lagerstyrning > Inställningar > Lagerpåfyllnad > Mall för lagerpåfyllnad.</span><span class="sxs-lookup"><span data-stu-id="12062-172">Go to Warehouse management > Setup > Replenishment > Replenishment templates.</span></span>
+    * <span data-ttu-id="12062-173">Lagerpåfyllnadsmallen används för att definiera artiklarna och kvantiteterna och platsen som ska fyllas på.</span><span class="sxs-lookup"><span data-stu-id="12062-173">The replenishment template is used to define the items and quantities, and the location to replenish.</span></span>  
+2. <span data-ttu-id="12062-174">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="12062-174">Click New.</span></span>
+3. <span data-ttu-id="12062-175">Skriv ett värde i fältet Lagerpåfyllnadsmall.</span><span class="sxs-lookup"><span data-stu-id="12062-175">In the Replenish template field, type a value.</span></span>
+    * <span data-ttu-id="12062-176">Namnge mallen för att ange att den är för minsta/största för påfyllnad.</span><span class="sxs-lookup"><span data-stu-id="12062-176">Give the template a name to indicate that it’s for min/max replenishment.</span></span>  
+4. <span data-ttu-id="12062-177">Ange ett värde i fältet Beskrivning.</span><span class="sxs-lookup"><span data-stu-id="12062-177">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="12062-178">Markera kryssrutan Tillåt påfyllnadsbegäran för att använda ej reserverade kvantiteter.</span><span class="sxs-lookup"><span data-stu-id="12062-178">Select the Allow wave demand to use unreserved quantities check box.</span></span>
+    * <span data-ttu-id="12062-179">Om du markerar det här alternativet, aktiverar den lagerpåfyllnadsbegäran för att använda kvantiteter som är relaterade till minsta/största lagerpåfyllnad.</span><span class="sxs-lookup"><span data-stu-id="12062-179">If you select this option, it enables wave demand replenishment to consume quantities that are related to min/max replenishment.</span></span> <span data-ttu-id="12062-180">Detta kan t.ex. vara praktiskt om det minsta/största lagerpåfyllnadsarbetet inte bearbetas på en gång för att undvika att onödigt påfyllnadsbegäransarbete skapas.</span><span class="sxs-lookup"><span data-stu-id="12062-180">For example, this might be useful if the min/max replenishment work isn’t processed immediately, to avoid unnecessary demand replenishment work from being created.</span></span>  
+6. <span data-ttu-id="12062-181">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="12062-181">Click New.</span></span>
+7. <span data-ttu-id="12062-182">Ange ett nummer i fältet Sekvensnummer.</span><span class="sxs-lookup"><span data-stu-id="12062-182">In the Sequence number field, enter a number.</span></span>
+8. <span data-ttu-id="12062-183">Ange ett värde i fältet Beskrivning.</span><span class="sxs-lookup"><span data-stu-id="12062-183">In the Description field, type a value.</span></span>
+9. <span data-ttu-id="12062-184">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="12062-184">In the list, mark the selected row.</span></span>
+10. <span data-ttu-id="12062-185">Ange eller välj ett värde i fältet Lagerpåfyllnadsenhet.</span><span class="sxs-lookup"><span data-stu-id="12062-185">In the Replenishment unit field, enter or select a value.</span></span>
+    * <span data-ttu-id="12062-186">Välj till exempel st.</span><span class="sxs-lookup"><span data-stu-id="12062-186">For example, select pcs.</span></span> <span data-ttu-id="12062-187">Denna inställning är obligatorisk.</span><span class="sxs-lookup"><span data-stu-id="12062-187">This setting is mandatory.</span></span> <span data-ttu-id="12062-188">Den låter dig ange olika måttenheter för lagerpåfyllnadsarbete jämfört med de enheter som anges för de lägsta och högsta lagernivåerna i den här mallen.</span><span class="sxs-lookup"><span data-stu-id="12062-188">It allows you to specify a different unit of measurement for replenishment work compared to the unit specified for the minimum and maximum stock levels in this template.</span></span>  
+11. <span data-ttu-id="12062-189">Ange eller välj ett värde i fältet Arbetsmall.</span><span class="sxs-lookup"><span data-stu-id="12062-189">In the Work template field, enter or select a value.</span></span>
+    * <span data-ttu-id="12062-190">Välj den arbetsmall som du skapade tidigare.</span><span class="sxs-lookup"><span data-stu-id="12062-190">Choose the work template that you created earlier.</span></span>  
+12. <span data-ttu-id="12062-191">Ange ett nummer i fältet Minsta kvantitet.</span><span class="sxs-lookup"><span data-stu-id="12062-191">In the Minimum quantity field, enter a number.</span></span>
+    * <span data-ttu-id="12062-192">Välj den minsta kvantitet som ska utlösa lagerpåfyllnaden.</span><span class="sxs-lookup"><span data-stu-id="12062-192">Select the minimum quantity that should trigger the replenishment.</span></span> <span data-ttu-id="12062-193">Ange den t.ex. till 50.</span><span class="sxs-lookup"><span data-stu-id="12062-193">For example, set this to 50.</span></span> <span data-ttu-id="12062-194">Det går att ange detta till noll om du fyller på en fast plats och alternativet Fyll på tomma fasta lagerplatser är angett till Ja.</span><span class="sxs-lookup"><span data-stu-id="12062-194">It is possible to leave this set to zero, if you’re replenishing a fixed location and the Replenish empty fixed locations option is set to Yes.</span></span> <span data-ttu-id="12062-195">Vi rekommenderar även att du väljer alternativet Fyll endast på fasta lagerplatser av prestandaskäl.</span><span class="sxs-lookup"><span data-stu-id="12062-195">We also recommend that you select the Replenish only fixed locations option for performance reasons.</span></span>  
+13. <span data-ttu-id="12062-196">Ange ett nummer i fältet Högsta kvantitet.</span><span class="sxs-lookup"><span data-stu-id="12062-196">In the Maximum quantity field, enter a number.</span></span>
+    * <span data-ttu-id="12062-197">Ange t.ex. detta till 100.</span><span class="sxs-lookup"><span data-stu-id="12062-197">For example, set this to 100.</span></span>  
+14. <span data-ttu-id="12062-198">Ange eller välj ett värde i fältet Enhet.</span><span class="sxs-lookup"><span data-stu-id="12062-198">In the Unit field, enter or select a value.</span></span>
+    * <span data-ttu-id="12062-199">Tilldela enheten för de minsta och högsta kvantiteterna.</span><span class="sxs-lookup"><span data-stu-id="12062-199">Assign the unit for the minimum and maximum quantities.</span></span> <span data-ttu-id="12062-200">Ange t.ex. detta till st.</span><span class="sxs-lookup"><span data-stu-id="12062-200">For example, set this to pcs.</span></span>  
+15. <span data-ttu-id="12062-201">Markera kryssrutan Fyll på tomma fasta lagerplatser.</span><span class="sxs-lookup"><span data-stu-id="12062-201">Select the Replenish empty fixed locations check box.</span></span>
+    * <span data-ttu-id="12062-202">Markera den här kryssrutan för att fylla på fasta lagerplatser när de är tomma.</span><span class="sxs-lookup"><span data-stu-id="12062-202">Select this check box to replenish fixed locations when they are empty.</span></span> <span data-ttu-id="12062-203">Annars kommer bara platserna där det finns en kvantitet i lager att fyllas på.</span><span class="sxs-lookup"><span data-stu-id="12062-203">Otherwise, only the locations where there is a quantity on hand will be replenished.</span></span>  
+16. <span data-ttu-id="12062-204">Markera kryssrutan Fyll endast på tomma fasta lagerplatser.</span><span class="sxs-lookup"><span data-stu-id="12062-204">Select the Replenish only fixed locations check box.</span></span>
+17. <span data-ttu-id="12062-205">Klicka på Välj produkter.</span><span class="sxs-lookup"><span data-stu-id="12062-205">Click Select products.</span></span>
+    * <span data-ttu-id="12062-206">Detta är platsen för att definiera vilka produkter som ska fyllas på.</span><span class="sxs-lookup"><span data-stu-id="12062-206">This is the place to define which products should be replenished.</span></span> <span data-ttu-id="12062-207">Om alternativet Fasta plockplatser markeras, måste du även definiera platserna i den här frågan.</span><span class="sxs-lookup"><span data-stu-id="12062-207">If the Fixed picking locations option is selected, you also need to define the locations in this query.</span></span> <span data-ttu-id="12062-208">Variantspecifika frågor är tillgängliga, liksom produktspecifika frågor.</span><span class="sxs-lookup"><span data-stu-id="12062-208">Variant-specific queries are available as well product-specific queries.</span></span>  
+18. <span data-ttu-id="12062-209">Markera raden Artiklar.</span><span class="sxs-lookup"><span data-stu-id="12062-209">Select the Items row.</span></span>
+19. <span data-ttu-id="12062-210">Ange ett värde i fältet Kriterier.</span><span class="sxs-lookup"><span data-stu-id="12062-210">In the Criteria field, type a value.</span></span>
+    * <span data-ttu-id="12062-211">Välj de artiklar som ska fyllas på de fasta platserna.</span><span class="sxs-lookup"><span data-stu-id="12062-211">Select the items that should be replenished at the fixed locations.</span></span> <span data-ttu-id="12062-212">Ange t.ex. A* för att markera alla artikelnummer som börjar med A.</span><span class="sxs-lookup"><span data-stu-id="12062-212">For example, type A* to select all item numbers beginning with A.</span></span>  
+20. <span data-ttu-id="12062-213">Klicka på Lägg till.</span><span class="sxs-lookup"><span data-stu-id="12062-213">Click Add.</span></span>
+    * <span data-ttu-id="12062-214">Lägg till Platsenheten (såvida den inte redan finns) för att kunna begränsa lagerpåfyllnadsarbete till de fasta plockplatserna inom ett specifikt område på lagerstället.</span><span class="sxs-lookup"><span data-stu-id="12062-214">Add the Location entity (unless it already exists) to be able to restrict the replenishment work to the fixed picking locations within a specific area of the warehouse.</span></span>  
+21. <span data-ttu-id="12062-215">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="12062-215">In the list, mark the selected row.</span></span>
+22. <span data-ttu-id="12062-216">Ange fältet Tabell till Platser.</span><span class="sxs-lookup"><span data-stu-id="12062-216">Set the Table field to Locations.</span></span>
+23. <span data-ttu-id="12062-217">Välj Platsprofil-ID i fältet Fält.</span><span class="sxs-lookup"><span data-stu-id="12062-217">In the Field field, select Location profile ID.</span></span>
+24. <span data-ttu-id="12062-218">Ange eller välj ett värde i fältet Kriterier.</span><span class="sxs-lookup"><span data-stu-id="12062-218">In the Criteria field, enter or select a value.</span></span>
+25. <span data-ttu-id="12062-219">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="12062-219">Click OK.</span></span>
+26. <span data-ttu-id="12062-220">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="12062-220">Close the page.</span></span>
 
-## <a name="set-the-replenishment-process-to-run-as-a-batch-job"></a>Ange att processen för lagerpåfyllnad ska köras som ett batchjobb
-1. Gå till Lagerstyrning > Lagerpåfyllnad > Lagerpåfyllnad.
-    * Sidan Lagerpåfyllnad Återanskaffningarna låter dig ange påfyllnad som ska köras som ett batchjobb eller om du vill att den startas manuellt.  
-2. Klicka på Filter.
-3. Markera vald rad i listan.
-4. Ange eller välj ett värde i fältet Kriterier.
-5. Klicka på OK.
-6. Expandera avsnittet Kör i bakgrunden.
-7. Ange alternativet Batchbearbetning till Ja.
-8. Klicka på Upprepning.
-9. Välj alternativet Slutdatum saknas.
-10. Ange Upprepningsmönstret.
-    * Välj till exempel Dagar.  
-11. Klicka på OK.
-12. Klicka på OK.
+## <a name="set-the-replenishment-process-to-run-as-a-batch-job"></a><span data-ttu-id="12062-221">Ange att processen för lagerpåfyllnad ska köras som ett batchjobb</span><span class="sxs-lookup"><span data-stu-id="12062-221">Set the replenishment process to run as a batch job</span></span>
+1. <span data-ttu-id="12062-222">Gå till Lagerstyrning > Lagerpåfyllnad > Lagerpåfyllnad.</span><span class="sxs-lookup"><span data-stu-id="12062-222">Go to Warehouse management > Replenishment > Replenishments.</span></span>
+    * <span data-ttu-id="12062-223">Sidan Lagerpåfyllnad Återanskaffningarna låter dig ange påfyllnad som ska köras som ett batchjobb eller om du vill att den startas manuellt.</span><span class="sxs-lookup"><span data-stu-id="12062-223">The Replenishments page allows you to set up replenishment to run as a batch job, or to require that it’s started manually.</span></span>  
+2. <span data-ttu-id="12062-224">Klicka på Filter.</span><span class="sxs-lookup"><span data-stu-id="12062-224">Click Filter.</span></span>
+3. <span data-ttu-id="12062-225">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="12062-225">In the list, mark the selected row.</span></span>
+4. <span data-ttu-id="12062-226">Ange eller välj ett värde i fältet Kriterier.</span><span class="sxs-lookup"><span data-stu-id="12062-226">In the Criteria field, enter or select a value.</span></span>
+5. <span data-ttu-id="12062-227">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="12062-227">Click OK.</span></span>
+6. <span data-ttu-id="12062-228">Expandera avsnittet Kör i bakgrunden.</span><span class="sxs-lookup"><span data-stu-id="12062-228">Expand the Run in the background section.</span></span>
+7. <span data-ttu-id="12062-229">Ange alternativet Batchbearbetning till Ja.</span><span class="sxs-lookup"><span data-stu-id="12062-229">Set the Batch processing option to Yes.</span></span>
+8. <span data-ttu-id="12062-230">Klicka på Upprepning.</span><span class="sxs-lookup"><span data-stu-id="12062-230">Click Recurrence.</span></span>
+9. <span data-ttu-id="12062-231">Välj alternativet Slutdatum saknas.</span><span class="sxs-lookup"><span data-stu-id="12062-231">Select the No end date option.</span></span>
+10. <span data-ttu-id="12062-232">Ange Upprepningsmönstret.</span><span class="sxs-lookup"><span data-stu-id="12062-232">Set the Recurrance pattern.</span></span>
+    * <span data-ttu-id="12062-233">Välj till exempel Dagar.</span><span class="sxs-lookup"><span data-stu-id="12062-233">For example, select Days.</span></span>  
+11. <span data-ttu-id="12062-234">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="12062-234">Click OK.</span></span>
+12. <span data-ttu-id="12062-235">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="12062-235">Click OK.</span></span>
 
 

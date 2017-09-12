@@ -17,61 +17,61 @@ ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: 6fe49a5c871a175612223e0354e7880f17108044
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: d9692ce9ad282b76504588d8f796560c00773a8c
 ms.contentlocale: sv-se
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="base-price-and-trade-agreements"></a> Baspris och handelsavtal
+# <a name="base-price-and-trade-agreements"></a><span data-ttu-id="cdb5f-103"> Baspris och handelsavtal</span><span class="sxs-lookup"><span data-stu-id="cdb5f-103">Base price and trade agreements</span></span>
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-Den här proceduren går igenom hur du skapar kanalspecifika handelsavtal för försäljningspriset. I proceduren används demonstrationsföretaget USRT.
+<span data-ttu-id="cdb5f-104">Den här proceduren går igenom hur du skapar kanalspecifika handelsavtal för försäljningspriset.</span><span class="sxs-lookup"><span data-stu-id="cdb5f-104">This procedure walks through creating channel-specific sales price trade agreements.</span></span> <span data-ttu-id="cdb5f-105">I proceduren används demonstrationsföretaget USRT.</span><span class="sxs-lookup"><span data-stu-id="cdb5f-105">This procedure uses the USRT demo data company.</span></span>
 
-1. Gå till butik och handel > prissättning och rabatter > prisgrupper > alla prisgrupper.
-    * Prisgrupper hur handelsavtal tilldelas specifika kanaler. Användningen av prisgrupperna för att tilldela handelsavtal till en kanal aktiverar kanalspecifik prissättning.  
-2. Klicka på Ny.
-3. Ange ett värde i fältet Prisgrupper.
-4. Skriv ett värde i fältet Namn.
-5. Klicka på Spara.
-6. Stäng sidan.
-7. Gå till butik och handel > Kanaler > butiker > Alla butiker.
-8. Välj New York i listan.
-9. Klicka på Butik i åtgärdsfönstret.
-10. Klicka på Prisgrupper.
-11. Klicka på Ny.
-12. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Prisgrupper.
-13. Hitta och markera önskad post i listan.
-14. Klicka på Spara.
-15. Stäng sidan.
-16. Stäng sidan.
-17. Gå till butik och handel > Produkter och kategorier > Frisläppta produkter per kategori.
-18. Klicka på länken på den valda raden i listan.
-19. Klicka på Redigera.
-20. Växla utökningen av avsnittet Sälj.
-21. Ange ett tal i fältet Pris.
-    * Detta pris används om inget tillämpligt handelsavtal hittas.  
-22. Klicka på Spara.
-23. Klicka på Sälj i åtgärdsfönstret.
-24. Klicka på Skapa handelsavtal.
-25. Klicka på Ny.
-26. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Namn.
-27. I listan väljer du Butik .
-    * I demonstrationsdata har journalnamnet Butik standardrelationen Pris (Försäljning). Det innebär att alla skapade nya rader får standardinställningen handelsavtal för försäljningspriset.  
-28. Klicka på Rader.
-29. Välj Grupp i fältet Konto.
-30. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Kontomarkering.
-31. Hitta och markera önskad post i listan.
-    * Detta slutför länken från Kanal till Prisgrupp till Handelsavtal.  
-32. Skriv ett värde i fältet Artikelrelation.
-33. Ange ett nummer i fältet Belopp i valuta.
-34. Markera eller avmarkera kryssrutan Sök nästa.
-    * När Sök nästa sedan anges till Ja, prissättningsmotorn ska fortsätta att söka efter tillämpliga handelsavtal med ett lägre försäljningspris. När Sök nästa anges till Nej slutar prismotorn söka och använder handelsavtalet.  
-35. Klicka på Bokför.
-36. Klicka på OK.
-37. Stäng sidan.
-38. Klicka på Sälj i åtgärdsfönstret.
-39. Klicka på Försäljningspris.
+1. <span data-ttu-id="cdb5f-106">Gå till butik och handel > prissättning och rabatter > prisgrupper > alla prisgrupper.</span><span class="sxs-lookup"><span data-stu-id="cdb5f-106">Go to Retail and commerce > Pricing and discounts > Price groups > All price groups.</span></span>
+    * <span data-ttu-id="cdb5f-107">Prisgrupper hur handelsavtal tilldelas specifika kanaler.</span><span class="sxs-lookup"><span data-stu-id="cdb5f-107">Price groups are how trade agreements are assigned to specific channels.</span></span> <span data-ttu-id="cdb5f-108">Användningen av prisgrupperna för att tilldela handelsavtal till en kanal aktiverar kanalspecifik prissättning.</span><span class="sxs-lookup"><span data-stu-id="cdb5f-108">Using price groups to assign trade agreements to a channel enables channel-specific pricing.</span></span>  
+2. <span data-ttu-id="cdb5f-109">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="cdb5f-109">Click New.</span></span>
+3. <span data-ttu-id="cdb5f-110">Ange ett värde i fältet Prisgrupper.</span><span class="sxs-lookup"><span data-stu-id="cdb5f-110">In the Price groups field, type a value.</span></span>
+4. <span data-ttu-id="cdb5f-111">Skriv ett värde i fältet Namn.</span><span class="sxs-lookup"><span data-stu-id="cdb5f-111">In the Name field, type a value.</span></span>
+5. <span data-ttu-id="cdb5f-112">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="cdb5f-112">Click Save.</span></span>
+6. <span data-ttu-id="cdb5f-113">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="cdb5f-113">Close the page.</span></span>
+7. <span data-ttu-id="cdb5f-114">Gå till butik och handel > Kanaler > butiker > Alla butiker.</span><span class="sxs-lookup"><span data-stu-id="cdb5f-114">Go to Retail and commerce > Channels > Retail stores > All retail stores.</span></span>
+8. <span data-ttu-id="cdb5f-115">Välj New York i listan.</span><span class="sxs-lookup"><span data-stu-id="cdb5f-115">In the list, select 'New York'</span></span>
+9. <span data-ttu-id="cdb5f-116">Klicka på Butik i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="cdb5f-116">On the Action Pane, click Store.</span></span>
+10. <span data-ttu-id="cdb5f-117">Klicka på Prisgrupper.</span><span class="sxs-lookup"><span data-stu-id="cdb5f-117">Click Price groups.</span></span>
+11. <span data-ttu-id="cdb5f-118">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="cdb5f-118">Click New.</span></span>
+12. <span data-ttu-id="cdb5f-119">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Prisgrupper.</span><span class="sxs-lookup"><span data-stu-id="cdb5f-119">In the Price groups field, click the drop-down button to open the lookup.</span></span>
+13. <span data-ttu-id="cdb5f-120">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="cdb5f-120">In the list, find and select the desired record.</span></span>
+14. <span data-ttu-id="cdb5f-121">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="cdb5f-121">Click Save.</span></span>
+15. <span data-ttu-id="cdb5f-122">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="cdb5f-122">Close the page.</span></span>
+16. <span data-ttu-id="cdb5f-123">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="cdb5f-123">Close the page.</span></span>
+17. <span data-ttu-id="cdb5f-124">Gå till butik och handel > Produkter och kategorier > Frisläppta produkter per kategori.</span><span class="sxs-lookup"><span data-stu-id="cdb5f-124">Go to Retail and commerce > Products and categories > Released products by category.</span></span>
+18. <span data-ttu-id="cdb5f-125">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="cdb5f-125">In the list, click the link in the selected row.</span></span>
+19. <span data-ttu-id="cdb5f-126">Klicka på Redigera.</span><span class="sxs-lookup"><span data-stu-id="cdb5f-126">Click Edit.</span></span>
+20. <span data-ttu-id="cdb5f-127">Växla utökningen av avsnittet Sälj.</span><span class="sxs-lookup"><span data-stu-id="cdb5f-127">Toggle the expansion of the Sell section.</span></span>
+21. <span data-ttu-id="cdb5f-128">Ange ett tal i fältet Pris.</span><span class="sxs-lookup"><span data-stu-id="cdb5f-128">In the Price field, enter a number.</span></span>
+    * <span data-ttu-id="cdb5f-129">Detta pris används om inget tillämpligt handelsavtal hittas.</span><span class="sxs-lookup"><span data-stu-id="cdb5f-129">This price is used if no applicable trade agreements are found.</span></span>  
+22. <span data-ttu-id="cdb5f-130">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="cdb5f-130">Click Save.</span></span>
+23. <span data-ttu-id="cdb5f-131">Klicka på Sälj i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="cdb5f-131">On the Action Pane, click Sell.</span></span>
+24. <span data-ttu-id="cdb5f-132">Klicka på Skapa handelsavtal.</span><span class="sxs-lookup"><span data-stu-id="cdb5f-132">Click Create trade agreements.</span></span>
+25. <span data-ttu-id="cdb5f-133">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="cdb5f-133">Click New.</span></span>
+26. <span data-ttu-id="cdb5f-134">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Namn.</span><span class="sxs-lookup"><span data-stu-id="cdb5f-134">In the Name field, click the drop-down button to open the lookup.</span></span>
+27. <span data-ttu-id="cdb5f-135">I listan väljer du Butik .</span><span class="sxs-lookup"><span data-stu-id="cdb5f-135">In the list, select 'Retail'.</span></span>
+    * <span data-ttu-id="cdb5f-136">I demonstrationsdata har journalnamnet Butik standardrelationen Pris (Försäljning).</span><span class="sxs-lookup"><span data-stu-id="cdb5f-136">In the demo data, the 'Retail' journal name has the default relation of 'Price (sales)'.</span></span> <span data-ttu-id="cdb5f-137">Det innebär att alla skapade nya rader får standardinställningen handelsavtal för försäljningspriset.</span><span class="sxs-lookup"><span data-stu-id="cdb5f-137">That means all new lines created will default to sales price trade agreements.</span></span>  
+28. <span data-ttu-id="cdb5f-138">Klicka på Rader.</span><span class="sxs-lookup"><span data-stu-id="cdb5f-138">Click Lines.</span></span>
+29. <span data-ttu-id="cdb5f-139">Välj Grupp i fältet Konto.</span><span class="sxs-lookup"><span data-stu-id="cdb5f-139">In the Account code field, select 'Group'.</span></span>
+30. <span data-ttu-id="cdb5f-140">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Kontomarkering.</span><span class="sxs-lookup"><span data-stu-id="cdb5f-140">In the Account selection field, click the drop-down button to open the lookup.</span></span>
+31. <span data-ttu-id="cdb5f-141">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="cdb5f-141">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="cdb5f-142">Detta slutför länken från Kanal till Prisgrupp till Handelsavtal.</span><span class="sxs-lookup"><span data-stu-id="cdb5f-142">This will complete the link from Channel to Price group to Trade agreement.</span></span>  
+32. <span data-ttu-id="cdb5f-143">Skriv ett värde i fältet Artikelrelation.</span><span class="sxs-lookup"><span data-stu-id="cdb5f-143">In the Item relation field, type a value.</span></span>
+33. <span data-ttu-id="cdb5f-144">Ange ett nummer i fältet Belopp i valuta.</span><span class="sxs-lookup"><span data-stu-id="cdb5f-144">In the Amount in currency field, enter a number.</span></span>
+34. <span data-ttu-id="cdb5f-145">Markera eller avmarkera kryssrutan Sök nästa.</span><span class="sxs-lookup"><span data-stu-id="cdb5f-145">Check or uncheck the Find next checkbox.</span></span>
+    * <span data-ttu-id="cdb5f-146">När Sök nästa sedan anges till Ja, prissättningsmotorn ska fortsätta att söka efter tillämpliga handelsavtal med ett lägre försäljningspris.</span><span class="sxs-lookup"><span data-stu-id="cdb5f-146">When Find next is set to 'Yes', the pricing engine will continue to search for applicable trade agreements with a lower sale price.</span></span> <span data-ttu-id="cdb5f-147">När Sök nästa anges till Nej slutar prismotorn söka och använder handelsavtalet.</span><span class="sxs-lookup"><span data-stu-id="cdb5f-147">When Find next is set to 'No', the price engine stops searching and uses the trade agreement.</span></span>  
+35. <span data-ttu-id="cdb5f-148">Klicka på Bokför.</span><span class="sxs-lookup"><span data-stu-id="cdb5f-148">Click Post.</span></span>
+36. <span data-ttu-id="cdb5f-149">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="cdb5f-149">Click OK.</span></span>
+37. <span data-ttu-id="cdb5f-150">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="cdb5f-150">Close the page.</span></span>
+38. <span data-ttu-id="cdb5f-151">Klicka på Sälj i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="cdb5f-151">On the Action Pane, click Sell.</span></span>
+39. <span data-ttu-id="cdb5f-152">Klicka på Försäljningspris.</span><span class="sxs-lookup"><span data-stu-id="cdb5f-152">Click Sales price.</span></span>
 
 

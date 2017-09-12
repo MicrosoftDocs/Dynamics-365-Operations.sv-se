@@ -16,48 +16,48 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 88927a220246d11e48b210eb5648d7e7c2a7cef8
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 1187448393e4905ed5f2dfe826ec843fdcf0cb67
 ms.contentlocale: sv-se
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="configure-destinations-for-electronic-reporting-er"></a>Konfigurera mål för elektronisk rapportering (ER)
+# <a name="configure-destinations-for-electronic-reporting-er"></a><span data-ttu-id="1b036-103">Konfigurera mål för elektronisk rapportering (ER)</span><span class="sxs-lookup"><span data-stu-id="1b036-103">Configure destinations for electronic reporting (ER)</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Den här proceduren visar hur du ställer in och använder olika destinationer för utdatakomponenter för elektronisk rapportering (ER) som till exempel en mapp eller en fil. Det demonstrationsdataföretag som används för att skapa den här proceduren är DEMF. Tyskland är land/region för den juridiska personens primära adress, men du kan använda valfri juridisk person för denna procedur. 
+<span data-ttu-id="1b036-104">Den här proceduren visar hur du ställer in och använder olika destinationer för utdatakomponenter för elektronisk rapportering (ER) som till exempel en mapp eller en fil.</span><span class="sxs-lookup"><span data-stu-id="1b036-104">This procedure demonstrates how to set up and use different destinations for Electronic reporting (ER) output components, such as a folder or a file.</span></span> <span data-ttu-id="1b036-105">Det demonstrationsdataföretag som används för att skapa den här proceduren är DEMF.</span><span class="sxs-lookup"><span data-stu-id="1b036-105">The demo data company used to create this procedure is DEMF.</span></span> <span data-ttu-id="1b036-106">Tyskland är land/region för den juridiska personens primära adress, men du kan använda valfri juridisk person för denna procedur.</span><span class="sxs-lookup"><span data-stu-id="1b036-106">Germany is the country\region of the legal entity’s primary address, however you can use any legal entity for this procedure.</span></span> 
 
-Formatet som används i det här exemplet är kreditöverföringen ISO20022, men du kan använda valfritt format som du redan har importerat. Observera att den här proceduren är ett exempel på en enda fil och en enda destinationsinställning. Mer information om Destinationshantering för elektronisk rapportering hittar du i hjälpwikin för Dynamics 365 for Finance and Operations.
+<span data-ttu-id="1b036-107">Formatet som används i det här exemplet är kreditöverföringen ISO20022, men du kan använda valfritt format som du redan har importerat.</span><span class="sxs-lookup"><span data-stu-id="1b036-107">The format used in this example is ISO20022 Credit transfer, but you can use any format that you have already imported.</span></span> <span data-ttu-id="1b036-108">Observera att den här proceduren är ett exempel på en enda fil och en enda destinationsinställning.</span><span class="sxs-lookup"><span data-stu-id="1b036-108">Note, this procedure is an example of a single file and a single destination setup.</span></span> <span data-ttu-id="1b036-109">Mer information om Destinationshantering för elektronisk rapportering hittar du i hjälpwikin för Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="1b036-109">More information about Electronic reporting destination management can be found in the Dynamics 365 for Finance and Operations Help.</span></span>
 
-1. Gå till Organisationsadministration > Elektronisk rapportering > Elektroniska rapporteringsdestination.
-2. Klicka på Ny för att skapa en ny uppsättning destinationer för ett format.
-3. Välj ett format som du vill konfigurera för destinationer i fältet Referenser.
-    * Om du inte har ett värde som ska markeras, innebär det att du inte har importerat några elektroniska rapporteringformatkonfigurationer. Du måste importera en formatkonfiguration innan du ställer in destinationer.  
-4. Klicka på New om du vill skapa en ny fildestination.
-    * Observera att du kan skapa en fildestination för varje utleveranskomponent av samma format, till exempel en mapp eller en fil. Du kommer att kunna aktivera och avaktivera destinationer separat i inställningarna.  
-5. Ange det användarvänliga namnet på utleveranskomponenten i namnfältet.
-    * Vi rekommenderar att du använder meningsfulla namn, till exempel ”betalningsfil” eller” kontrollrapport ". Dessa namn ska visas för användarna i konfigurationkörning tillsammans med destinationsinställningarna.  
-6. Välj en fil eller en mapp som är specifik för formatet i Filnamn.
-7. Klicka på Inställningar.
-8. Välj Ja i fältet Aktiverad.
-    * Kryssrutan Aktiverad på varje flik aktiverar och avaktiverar varje destination separat. I det här exemplet kan du aktivera att skicka en utdatafil till en e-postmottagare när filen genereras.  
-9. Klicka på Edit för att konfigurera e-postmottagare.
-10. Klicka på Lägg till.
-11. Klicka på Print Management email.
-12. Välj ett alternativ i fältet Email source.
-    * Du kan välja olika typer för e-postkälla, till exempel en kund- eller leverantörstyp. Detta definierar den typ av argument som ska returneras av e-postkällans kontoformel. E-postkällans kontoformel, som beskrivs i följande steg, är platsen där du binder upp en e-postmeddelandekälla. Markera Leverantör om din formel returnerar ett leverantörskonto. Använd Leverantör om du använder exemplet ISO 20022 Kreditöverföringskonfiguration.  
-13. Klicka på knappen Email source bind.
-14. Ange en dokumentspecifik referens till en tidigare vald parttyp i formeln.
-    * I stället för att skriva kan du hitta en datakällnod som representerar partens konto och klicka på knappen Add data source om du vill uppdatera formeln. Om du till exempel använder kreditöverföringskonfigurationen ISO 20022, är noden som representerar ett leverantörskonto '$PaymentsForCoveringLetter'.Creditor.Identification.SourceID. Ange ett strängvärde som till exempel "DE-001" om du vill spara en formel.  
-15. Klicka på Spara.
-16. Stäng sidan.
-17. Klicka på Edit för att konfigurera kontaktinformation för parten.
-18. Välj Yes i fältet Primary contact.
-    * Du kan använda olika alternativ du vill ange vilken av partens kontakttyper som ska användas som en e-postadress för detta mål. Vi använder en primär kontakt i det här exemplet.  
-19. Klicka på OK.
-20. Klicka på OK.
-21. Skriv ett värde i fältet Ämne.
-22. Klicka på OK.
+1. <span data-ttu-id="1b036-110">Gå till Organisationsadministration > Elektronisk rapportering > Elektroniska rapporteringsdestination.</span><span class="sxs-lookup"><span data-stu-id="1b036-110">Go to Organization administration > Electronic reporting > Electronic reporting destination.</span></span>
+2. <span data-ttu-id="1b036-111">Klicka på Ny för att skapa en ny uppsättning destinationer för ett format.</span><span class="sxs-lookup"><span data-stu-id="1b036-111">Click New to create a new set of destinations for a format.</span></span>
+3. <span data-ttu-id="1b036-112">Välj ett format som du vill konfigurera för destinationer i fältet Referenser.</span><span class="sxs-lookup"><span data-stu-id="1b036-112">In the Reference field, select a format for which you want to configure destinations.</span></span>
+    * <span data-ttu-id="1b036-113">Om du inte har ett värde som ska markeras, innebär det att du inte har importerat några elektroniska rapporteringformatkonfigurationer.</span><span class="sxs-lookup"><span data-stu-id="1b036-113">If you don't have a value to select, it means that you have not imported any Electronic reporting format configurations.</span></span> <span data-ttu-id="1b036-114">Du måste importera en formatkonfiguration innan du ställer in destinationer.</span><span class="sxs-lookup"><span data-stu-id="1b036-114">You must import a format configuration before setting up destinations.</span></span>  
+4. <span data-ttu-id="1b036-115">Klicka på New om du vill skapa en ny fildestination.</span><span class="sxs-lookup"><span data-stu-id="1b036-115">Click New to create a new file destination.</span></span>
+    * <span data-ttu-id="1b036-116">Observera att du kan skapa en fildestination för varje utleveranskomponent av samma format, till exempel en mapp eller en fil.</span><span class="sxs-lookup"><span data-stu-id="1b036-116">Note, you can create one file destination for each output component of the same format, such as a folder or a file.</span></span> <span data-ttu-id="1b036-117">Du kommer att kunna aktivera och avaktivera destinationer separat i inställningarna.</span><span class="sxs-lookup"><span data-stu-id="1b036-117">You will be able to enable and disable destinations separately in the settings.</span></span>  
+5. <span data-ttu-id="1b036-118">Ange det användarvänliga namnet på utleveranskomponenten i namnfältet.</span><span class="sxs-lookup"><span data-stu-id="1b036-118">In the Name field, enter the user-friendly name of output component.</span></span>
+    * <span data-ttu-id="1b036-119">Vi rekommenderar att du använder meningsfulla namn, till exempel ”betalningsfil” eller” kontrollrapport ".</span><span class="sxs-lookup"><span data-stu-id="1b036-119">We recommend that you use meaningful names, such as "Payment file" or "Control report".</span></span> <span data-ttu-id="1b036-120">Dessa namn ska visas för användarna i konfigurationkörning tillsammans med destinationsinställningarna.</span><span class="sxs-lookup"><span data-stu-id="1b036-120">These names will be presented to users at configuration runtime along with the destination settings.</span></span>  
+6. <span data-ttu-id="1b036-121">Välj en fil eller en mapp som är specifik för formatet i Filnamn.</span><span class="sxs-lookup"><span data-stu-id="1b036-121">In the File name, select a file or folder that is specific to the format.</span></span>
+7. <span data-ttu-id="1b036-122">Klicka på Inställningar.</span><span class="sxs-lookup"><span data-stu-id="1b036-122">Click Settings.</span></span>
+8. <span data-ttu-id="1b036-123">Välj Ja i fältet Aktiverad.</span><span class="sxs-lookup"><span data-stu-id="1b036-123">Select Yes in the Enabled field.</span></span>
+    * <span data-ttu-id="1b036-124">Kryssrutan Aktiverad på varje flik aktiverar och avaktiverar varje destination separat.</span><span class="sxs-lookup"><span data-stu-id="1b036-124">The Enabled check box on each tab enables and disables each destination separately.</span></span> <span data-ttu-id="1b036-125">I det här exemplet kan du aktivera att skicka en utdatafil till en e-postmottagare när filen genereras.</span><span class="sxs-lookup"><span data-stu-id="1b036-125">In this example, you'll enable sending an output file to a mail recipient when the file is generated.</span></span>  
+9. <span data-ttu-id="1b036-126">Klicka på Edit för att konfigurera e-postmottagare.</span><span class="sxs-lookup"><span data-stu-id="1b036-126">Click Edit, to set up email recipients.</span></span>
+10. <span data-ttu-id="1b036-127">Klicka på Lägg till.</span><span class="sxs-lookup"><span data-stu-id="1b036-127">Click Add.</span></span>
+11. <span data-ttu-id="1b036-128">Klicka på Print Management email.</span><span class="sxs-lookup"><span data-stu-id="1b036-128">Click Print Management email.</span></span>
+12. <span data-ttu-id="1b036-129">Välj ett alternativ i fältet Email source.</span><span class="sxs-lookup"><span data-stu-id="1b036-129">In the Email source  field, select an option.</span></span>
+    * <span data-ttu-id="1b036-130">Du kan välja olika typer för e-postkälla, till exempel en kund- eller leverantörstyp.</span><span class="sxs-lookup"><span data-stu-id="1b036-130">You can select different email source types, such as a customer or a vendor type.</span></span> <span data-ttu-id="1b036-131">Detta definierar den typ av argument som ska returneras av e-postkällans kontoformel.</span><span class="sxs-lookup"><span data-stu-id="1b036-131">This defines the type of argument that will be returned by the Email source account formula.</span></span> <span data-ttu-id="1b036-132">E-postkällans kontoformel, som beskrivs i följande steg, är platsen där du binder upp en e-postmeddelandekälla.</span><span class="sxs-lookup"><span data-stu-id="1b036-132">The Email source account formula, described in a following step, is the place where you bind an email source.</span></span> <span data-ttu-id="1b036-133">Markera Leverantör om din formel returnerar ett leverantörskonto.</span><span class="sxs-lookup"><span data-stu-id="1b036-133">Select Vendor if your formula will return a vendor account.</span></span> <span data-ttu-id="1b036-134">Använd Leverantör om du använder exemplet ISO 20022 Kreditöverföringskonfiguration.</span><span class="sxs-lookup"><span data-stu-id="1b036-134">Use Vendor if you are using the ISO 20022 Credit Transfer configuration example.</span></span>  
+13. <span data-ttu-id="1b036-135">Klicka på knappen Email source bind.</span><span class="sxs-lookup"><span data-stu-id="1b036-135">Click Email source bind button.</span></span>
+14. <span data-ttu-id="1b036-136">Ange en dokumentspecifik referens till en tidigare vald parttyp i formeln.</span><span class="sxs-lookup"><span data-stu-id="1b036-136">In the Formula, enter a document-specific reference to a party type that you selected earlier.</span></span>
+    * <span data-ttu-id="1b036-137">I stället för att skriva kan du hitta en datakällnod som representerar partens konto och klicka på knappen Add data source om du vill uppdatera formeln.</span><span class="sxs-lookup"><span data-stu-id="1b036-137">Instead of typing, you can find a data source node that represents the party account, and click the Add data source button to update the formula.</span></span> <span data-ttu-id="1b036-138">Om du till exempel använder kreditöverföringskonfigurationen ISO 20022, är noden som representerar ett leverantörskonto '$PaymentsForCoveringLetter'.Creditor.Identification.SourceID.</span><span class="sxs-lookup"><span data-stu-id="1b036-138">For example, if you use the ISO 20022 Credit Transfer configuration, the node representing a vendor account is '$PaymentsForCoveringLetter'.Creditor.Identification.SourceID.</span></span> <span data-ttu-id="1b036-139">Ange ett strängvärde som till exempel "DE-001" om du vill spara en formel.</span><span class="sxs-lookup"><span data-stu-id="1b036-139">Otherwise, enter any string value, such as "DE-001", to save a formula.</span></span>  
+15. <span data-ttu-id="1b036-140">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="1b036-140">Click Save.</span></span>
+16. <span data-ttu-id="1b036-141">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="1b036-141">Close the page.</span></span>
+17. <span data-ttu-id="1b036-142">Klicka på Edit för att konfigurera kontaktinformation för parten.</span><span class="sxs-lookup"><span data-stu-id="1b036-142">Click Edit to configure contact details for the party.</span></span>
+18. <span data-ttu-id="1b036-143">Välj Yes i fältet Primary contact.</span><span class="sxs-lookup"><span data-stu-id="1b036-143">Select Yes in the Primary contact field.</span></span>
+    * <span data-ttu-id="1b036-144">Du kan använda olika alternativ du vill ange vilken av partens kontakttyper som ska användas som en e-postadress för detta mål.</span><span class="sxs-lookup"><span data-stu-id="1b036-144">You may use different options to indicate what contact type of the party should be used as an email address for this destination.</span></span> <span data-ttu-id="1b036-145">Vi använder en primär kontakt i det här exemplet.</span><span class="sxs-lookup"><span data-stu-id="1b036-145">We use primary contact in this example.</span></span>  
+19. <span data-ttu-id="1b036-146">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="1b036-146">Click OK.</span></span>
+20. <span data-ttu-id="1b036-147">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="1b036-147">Click OK.</span></span>
+21. <span data-ttu-id="1b036-148">Skriv ett värde i fältet Ämne.</span><span class="sxs-lookup"><span data-stu-id="1b036-148">In the Subject field, type a value.</span></span>
+22. <span data-ttu-id="1b036-149">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="1b036-149">Click OK.</span></span>
 
 

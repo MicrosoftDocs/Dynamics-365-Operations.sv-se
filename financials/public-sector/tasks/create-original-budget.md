@@ -17,37 +17,37 @@ ms.author: twheeloc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: c3463444c432f6bb4ca939fc77c04d0d3d23bf65
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 2f50cc6bf8ec533db677d290c52dbd711d7a1de8
 ms.contentlocale: sv-se
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-an-original-budget-and-reverse-preliminary-budget-entries-in-the-public-sector"></a>Skapa en ursprunglig budget och återföra preliminära budgetposter i den offentliga sektorn
+# <a name="create-an-original-budget-and-reverse-preliminary-budget-entries-in-the-public-sector"></a><span data-ttu-id="ff150-103">Skapa en ursprunglig budget och återföra preliminära budgetposter i den offentliga sektorn</span><span class="sxs-lookup"><span data-stu-id="ff150-103">Create an original budget and reverse preliminary budget entries in the public sector</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-När du skapar en ursprunglig budgetpost och använder budgetmodellen och dimensionsvärden som innehåller preliminära budgetbelopp, kan de preliminära budgetbeloppen återföras. Den här proceduren har skapats med hjälp av data för demoföretaget PSUS i partitionen för den offentliga sektorn.
+<span data-ttu-id="ff150-104">När du skapar en ursprunglig budgetpost och använder budgetmodellen och dimensionsvärden som innehåller preliminära budgetbelopp, kan de preliminära budgetbeloppen återföras.</span><span class="sxs-lookup"><span data-stu-id="ff150-104">When you create an original budget entry and use the budget model and dimension values that contain preliminary budget amounts, the preliminary budget amounts can be reversed.</span></span> <span data-ttu-id="ff150-105">Den här proceduren har skapats med hjälp av data för demoföretaget PSUS i partitionen för den offentliga sektorn.</span><span class="sxs-lookup"><span data-stu-id="ff150-105">This procedure was created using the PSUS demo company data in the public sector partition.</span></span>
 
-1. Gå till Budgetering > Budgetregisterposter.
-2. Klicka på Ny.
-3. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Budgetmodell.
-4. Hitta och markera önskad post i listan.
-5. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Budgetkod.
-6. Klicka på Ursprunglig budget i listan.
-7. Klicka på Spara.
-8. Klicka på Lägg till rad.
-9. Valfritt: om du vill ändra datumet från det i rubriken, ange ett annat datum. Detta datum bestämmer vilken räkenskapsperiod budgeten ska registreras i.
-10. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Kontostruktur.
-11. Hitta och markera önskad post i listan.
-12. Ange önskade värden i fältet Dimensionsvärden.
-13. I fältet Belopp, ange ett tal.
-14. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Valuta.
-15. Klicka på länken på den valda raden i listan.
-16. Klicka på Spara.
-17. Klicka på Uppdatera budgetsaldon.
-    * Valfritt: du kan välja alternativet för att återföra preliminära budgetposter. Observera att du kan återföra alla preliminära budgetposter eller endast de preliminära budgetposter som har den budgetkod som du anger.  
-    * Du kan göra ytterligare val genom att klicka på upplåsningsikonen högst upp på skärmen.  
-18. Klicka på Uppdatera.
+1. <span data-ttu-id="ff150-106">Gå till Budgetering > Budgetregisterposter.</span><span class="sxs-lookup"><span data-stu-id="ff150-106">Go to Budgeting > Budget register entries.</span></span>
+2. <span data-ttu-id="ff150-107">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="ff150-107">Click New.</span></span>
+3. <span data-ttu-id="ff150-108">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Budgetmodell.</span><span class="sxs-lookup"><span data-stu-id="ff150-108">In the Budget model field, click the drop-down button to open the lookup.</span></span>
+4. <span data-ttu-id="ff150-109">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="ff150-109">In the list, find and select the desired record.</span></span>
+5. <span data-ttu-id="ff150-110">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Budgetkod.</span><span class="sxs-lookup"><span data-stu-id="ff150-110">In the Budget code field, click the drop-down button to open the lookup.</span></span>
+6. <span data-ttu-id="ff150-111">Klicka på Ursprunglig budget i listan.</span><span class="sxs-lookup"><span data-stu-id="ff150-111">In the list, click Original budget.</span></span>
+7. <span data-ttu-id="ff150-112">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="ff150-112">Click Save.</span></span>
+8. <span data-ttu-id="ff150-113">Klicka på Lägg till rad.</span><span class="sxs-lookup"><span data-stu-id="ff150-113">Click Add line.</span></span>
+9. <span data-ttu-id="ff150-114">Valfritt: om du vill ändra datumet från det i rubriken, ange ett annat datum.</span><span class="sxs-lookup"><span data-stu-id="ff150-114">Optional: If you want to change the date from the one in the header, enter a new date.</span></span> <span data-ttu-id="ff150-115">Detta datum bestämmer vilken räkenskapsperiod budgeten ska registreras i.</span><span class="sxs-lookup"><span data-stu-id="ff150-115">This date determines the fiscal period that the budget will be recorded to.</span></span>
+10. <span data-ttu-id="ff150-116">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Kontostruktur.</span><span class="sxs-lookup"><span data-stu-id="ff150-116">In the Account structure field, click the drop-down button to open the lookup.</span></span>
+11. <span data-ttu-id="ff150-117">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="ff150-117">In the list, find and select the desired record.</span></span>
+12. <span data-ttu-id="ff150-118">Ange önskade värden i fältet Dimensionsvärden.</span><span class="sxs-lookup"><span data-stu-id="ff150-118">In the Dimension values field, specify the desired values.</span></span>
+13. <span data-ttu-id="ff150-119">I fältet Belopp, ange ett tal.</span><span class="sxs-lookup"><span data-stu-id="ff150-119">In the Amount field, enter a number.</span></span>
+14. <span data-ttu-id="ff150-120">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Valuta.</span><span class="sxs-lookup"><span data-stu-id="ff150-120">In the Currency field, click the drop-down button to open the lookup.</span></span>
+15. <span data-ttu-id="ff150-121">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="ff150-121">In the list, click the link in the selected row.</span></span>
+16. <span data-ttu-id="ff150-122">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="ff150-122">Click Save.</span></span>
+17. <span data-ttu-id="ff150-123">Klicka på Uppdatera budgetsaldon.</span><span class="sxs-lookup"><span data-stu-id="ff150-123">Click Update budget balances.</span></span>
+    * <span data-ttu-id="ff150-124">Valfritt: du kan välja alternativet för att återföra preliminära budgetposter.</span><span class="sxs-lookup"><span data-stu-id="ff150-124">Optional: You can select the Reverse preliminary budget option.</span></span> <span data-ttu-id="ff150-125">Observera att du kan återföra alla preliminära budgetposter eller endast de preliminära budgetposter som har den budgetkod som du anger.</span><span class="sxs-lookup"><span data-stu-id="ff150-125">Note that you can reverse all preliminary budget entries, or only the preliminary budget entries that have the budget code that you specify.</span></span>  
+    * <span data-ttu-id="ff150-126">Du kan göra ytterligare val genom att klicka på upplåsningsikonen högst upp på skärmen.</span><span class="sxs-lookup"><span data-stu-id="ff150-126">To make optional selections, click the Unlock icon at the top of the page.</span></span>  
+18. <span data-ttu-id="ff150-127">Klicka på Uppdatera.</span><span class="sxs-lookup"><span data-stu-id="ff150-127">Click Update.</span></span>
 
 

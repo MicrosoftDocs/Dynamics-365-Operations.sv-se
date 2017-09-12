@@ -22,84 +22,84 @@ ms.contentlocale: sv-se
 ms.lasthandoff: 07/27/2017
 
 ---
-# <a name="ship-orders-as-direct-deliveries"></a>Leverera order som direktleveranser
+# <a name="ship-orders-as-direct-deliveries"></a><span data-ttu-id="5fcc7-103">Leverera order som direktleveranser</span><span class="sxs-lookup"><span data-stu-id="5fcc7-103">Ship orders as direct deliveries</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Den här proceduren visar hur du kan skapa en direktleverans för en försäljningsorder. Du använder direktleverans när du vill leverera varor direkt till kunden från leverantören, i stället för att skicka dem till ditt lagerställe först. Du kan köra den här proceduren i demonstrationsföretaget USMF eller på dina egna data. Om du vill slutföra den andra deluppgiften ”Skapa direktleveranser från arbetsbänken” ska du se till att artikeln du väljer på försäljningsordern har en standardleverantör angiven på inköpsnabbfliken för den frisläppta produktmallen.
+<span data-ttu-id="5fcc7-104">Den här proceduren visar hur du kan skapa en direktleverans för en försäljningsorder.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-104">This procedure demonstrates how to create a direct delivery for a sales order.</span></span> <span data-ttu-id="5fcc7-105">Du använder direktleverans när du vill leverera varor direkt till kunden från leverantören, i stället för att skicka dem till ditt lagerställe först.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-105">You use direct delivery when you want to ship goods to the customer directly from your vendor, instead of shipping them to your own warehouse first.</span></span> <span data-ttu-id="5fcc7-106">Du kan köra den här proceduren i demonstrationsföretaget USMF eller på dina egna data.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-106">You can run this procedure in demo data company USMF or on your own data.</span></span> <span data-ttu-id="5fcc7-107">Om du vill slutföra den andra deluppgiften ”Skapa direktleveranser från arbetsbänken” ska du se till att artikeln du väljer på försäljningsordern har en standardleverantör angiven på inköpsnabbfliken för den frisläppta produktmallen.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-107">To successfully complete the second sub-task "Create direct deliveries from the workbench", make sure that the item that you choose on the sales order has a default Vendor specified on the Purchase FastTab of the Released product master.</span></span>
 
 
-## <a name="set-an-individual-order-for-direct-delivery"></a>Ange en enskild order för direktleverans
-1. Gå till Alla försäljningsorder.
-2. Klicka på Ny.
-3. I fältet Kundkonto, ange eller välj ett värde.
-    * Om du använder USMF kan du välja kontot US-001.  
-4. Klicka på OK.
-5. Ange eller välj ett värde i fältet Artikelnummer.
-    * Om du använder USMF kan du välja artikeln T0020.  
-6. Klicka på Spara.
-7. Klicka på Försäljningsorder i åtgärdsfönstret.
-8. Klicka på Direktleverans.
-    * På sidan för leveransgenerering visas alla öppna försäljningsorderrader som kopierade från försäljningsordern. Du kan granska orderinformation och om det behövs, även ändra detaljer som inköpkvantitet och prissättningsvillkor innan du skapar direktleveransen.  
-9. Välj Ja i fältet Inkludera allt.
-    * Om du vill skapa en direktleverans för bara en delmängd av försäljningsorderraderna väljer du dessa separat.  
-    * Fältet Leverantörskonto har eller har inte redan fyllts i med ett leverantörsnummer. Om säljaren är inställd för produkten (på den associerade artikeltäckning) då säljaren kommer att kopieras till kundorderraden. Annars måste du ange en leverantör manuellt. I det här exemplet kommer vi att välja en ny leverantör i nästa steg, även om det redan ifylld.   
-10. Ange eller välj ett värde i fältet Leverantörskonto.
-    * Om du använder USMF kan du välja kontot 1001.  
-11. Klicka på OK.
-    * Meddelandet informerar dig om att inköpsordern har skapats.   
-12. Expandera avsnittet Radinformation.
-13. Klicka på fliken Leverans.
-    * Direktleveransfältet är inställt på Ja.  
-    * Status för direktleverans visar den skapade inköpsordern.   
-14. Klicka på Allmänt i åtgärdsfönstret.
-15. Klicka på Relaterade order.
-16. Klicka för att följa länken i fältet Inköpsorder.
-17. Expandera avsnittet Radinformation.
-18. Klicka på fliken Adress.
-    * Observera att leveransadressen för den här inköpsorderraden är kundens leveransadress och inte företagsadressen.  
-    * Om du ändrar leveransadressen på antingen inköpsorderraden eller den ursprungliga försäljningsorderraden, kommer adressen på motsvarande orderrad att uppdateras automatiskt.  
-19. Klicka på fliken Leverans.
-    * Precis som försäljningsorderraden, har den associerade radtypen för inköpsordern ställts in på direktleverans.  
-    * Inköpsorderradens leveransdatum och datumet för bekräftad leverans har ställts in på begärt inleveransdatum respektive bekräftat inleveransdatum för den ursprungliga försäljningsorderraden.   
-    * Om du uppdaterar någon av dessa datum på antingen inköpsraden eller försäljningsraden, kommer data på motsvarande order att uppdateras automatiskt.     
-    * Inköpsordern som har ställts in på att leverera varor direkt till kunden, är kopplad till den ursprungliga försäljningsordern med hjälp av en speciell associering. Denna association medför regeln att följesedeln uppdatering av försäljningsorder kan inte göras från försäljningen för sig själv och måste göras med hjälp av inköpsordern. Kundfakturering måste dock göras från försäljningsordern.  
-20. Klicka på Inköp i åtgärdsfönstret.
-21. Klicka på Bekräftelse.
-22. Klicka på OK.
-23. Klicka på Ta emot i åtgärdsfönstret.
-24. Klicka på Produktinleverans.
-25. Skriv ett värde i fältet Produktinleverans.
-26. Klicka på OK.
-27. Klicka på Allmänt i åtgärdsfönstret.
-28. Klicka på Relaterade order.
-29. Markera vald rad i listan.
-    * När inköpsordern har uppdaterats som inkommen, med andra ord efter att leverantören har skickat varor till kundens adress, uppdateras status för den ursprungliga försäljningsordern automatiskt till Levererat.  
-    * Försäljningsordern går nu att fakturera.    
-30. Klicka på OK.
-31. Stäng sidan.
-32. Klicka på OK.
+## <a name="set-an-individual-order-for-direct-delivery"></a><span data-ttu-id="5fcc7-108">Ange en enskild order för direktleverans</span><span class="sxs-lookup"><span data-stu-id="5fcc7-108">Set an individual order for direct delivery</span></span>
+1. <span data-ttu-id="5fcc7-109">Gå till Alla försäljningsorder.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-109">Go to All sales orders.</span></span>
+2. <span data-ttu-id="5fcc7-110">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-110">Click New.</span></span>
+3. <span data-ttu-id="5fcc7-111">I fältet Kundkonto, ange eller välj ett värde.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-111">In the Customer account field, enter or select a value.</span></span>
+    * <span data-ttu-id="5fcc7-112">Om du använder USMF kan du välja kontot US-001.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-112">If you’re using USMF, you can select account US-001.</span></span>  
+4. <span data-ttu-id="5fcc7-113">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-113">Click OK.</span></span>
+5. <span data-ttu-id="5fcc7-114">Ange eller välj ett värde i fältet Artikelnummer.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-114">In the Item number field, enter or select a value.</span></span>
+    * <span data-ttu-id="5fcc7-115">Om du använder USMF kan du välja artikeln T0020.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-115">If you’re using USMF, you can select item T0020.</span></span>  
+6. <span data-ttu-id="5fcc7-116">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-116">Click Save.</span></span>
+7. <span data-ttu-id="5fcc7-117">Klicka på Försäljningsorder i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-117">On the Action Pane, click Sales order.</span></span>
+8. <span data-ttu-id="5fcc7-118">Klicka på Direktleverans.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-118">Click Direct delivery.</span></span>
+    * <span data-ttu-id="5fcc7-119">På sidan för leveransgenerering visas alla öppna försäljningsorderrader som kopierade från försäljningsordern.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-119">The Create delivery page lists all the open sales order lines as copied from the sales order.</span></span> <span data-ttu-id="5fcc7-120">Du kan granska orderinformation och om det behövs, även ändra detaljer som inköpkvantitet och prissättningsvillkor innan du skapar direktleveransen.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-120">You can review the order details, and if required, you can modify details such purchase quantity and pricing terms before you create the direct delivery.</span></span>  
+9. <span data-ttu-id="5fcc7-121">Välj Ja i fältet Inkludera allt.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-121">Select Yes in the Include all field.</span></span>
+    * <span data-ttu-id="5fcc7-122">Om du vill skapa en direktleverans för bara en delmängd av försäljningsorderraderna väljer du dessa separat.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-122">If you want to generate a direct delivery for only a subset of the sales order lines, select these individually.</span></span>  
+    * <span data-ttu-id="5fcc7-123">Fältet Leverantörskonto har eller har inte redan fyllts i med ett leverantörsnummer.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-123">The Vendor account field may or may not already be populated with a vendor number.</span></span> <span data-ttu-id="5fcc7-124">Om säljaren är inställd för produkten (på den associerade artikeltäckning) då säljaren kommer att kopieras till kundorderraden.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-124">If the default vendor is set up for the product (on the associated Item coverage) then this vendor will be copied to the line.</span></span> <span data-ttu-id="5fcc7-125">Annars måste du ange en leverantör manuellt.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-125">Otherwise, you must enter a vendor manually.</span></span> <span data-ttu-id="5fcc7-126">I det här exemplet kommer vi att välja en ny leverantör i nästa steg, även om det redan ifylld.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-126">In this example, we’ll select a new vendor in the next step, even if one is already populated.</span></span>   
+10. <span data-ttu-id="5fcc7-127">Ange eller välj ett värde i fältet Leverantörskonto.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-127">In the Vendor account field, enter or select a value.</span></span>
+    * <span data-ttu-id="5fcc7-128">Om du använder USMF kan du välja kontot 1001.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-128">If you’re using USMF, you can select account 1001.</span></span>  
+11. <span data-ttu-id="5fcc7-129">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-129">Click OK.</span></span>
+    * <span data-ttu-id="5fcc7-130">Meddelandet informerar dig om att inköpsordern har skapats.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-130">The message informs you that the purchase order has now been created.</span></span>   
+12. <span data-ttu-id="5fcc7-131">Expandera avsnittet Radinformation.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-131">Expand the Line details section.</span></span>
+13. <span data-ttu-id="5fcc7-132">Klicka på fliken Leverans.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-132">Click the Delivery tab.</span></span>
+    * <span data-ttu-id="5fcc7-133">Direktleveransfältet är inställt på Ja.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-133">The Direct delivery field is now set to Yes.</span></span>  
+    * <span data-ttu-id="5fcc7-134">Status för direktleverans visar den skapade inköpsordern.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-134">The Direct delivery status shows the Purchase order created.</span></span>   
+14. <span data-ttu-id="5fcc7-135">Klicka på Allmänt i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-135">On the Action Pane, click General.</span></span>
+15. <span data-ttu-id="5fcc7-136">Klicka på Relaterade order.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-136">Click Related orders.</span></span>
+16. <span data-ttu-id="5fcc7-137">Klicka för att följa länken i fältet Inköpsorder.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-137">Click to follow the link in the Purchase order field.</span></span>
+17. <span data-ttu-id="5fcc7-138">Expandera avsnittet Radinformation.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-138">Expand the Line details section.</span></span>
+18. <span data-ttu-id="5fcc7-139">Klicka på fliken Adress.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-139">Click the Address tab.</span></span>
+    * <span data-ttu-id="5fcc7-140">Observera att leveransadressen för den här inköpsorderraden är kundens leveransadress och inte företagsadressen.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-140">Note that the delivery address for this purchase order line is the customer's delivery address and not your company's address.</span></span>  
+    * <span data-ttu-id="5fcc7-141">Om du ändrar leveransadressen på antingen inköpsorderraden eller den ursprungliga försäljningsorderraden, kommer adressen på motsvarande orderrad att uppdateras automatiskt.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-141">If you change the delivery address on either the purchase order line or the originating sales order line, the address on the corresponding order line will be automatically updated.</span></span>  
+19. <span data-ttu-id="5fcc7-142">Klicka på fliken Leverans.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-142">Click the Delivery tab.</span></span>
+    * <span data-ttu-id="5fcc7-143">Precis som försäljningsorderraden, har den associerade radtypen för inköpsordern ställts in på direktleverans.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-143">Like the sales order line, the associated purchase order line type is also set to Direct delivery.</span></span>  
+    * <span data-ttu-id="5fcc7-144">Inköpsorderradens leveransdatum och datumet för bekräftad leverans har ställts in på begärt inleveransdatum respektive bekräftat inleveransdatum för den ursprungliga försäljningsorderraden.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-144">The purchase order line's Delivery  date and the Confirmed delivery date are set to the Requested receipt date and Confirmed receipt date of the originating sales order line respectively.</span></span>   
+    * <span data-ttu-id="5fcc7-145">Om du uppdaterar någon av dessa datum på antingen inköpsraden eller försäljningsraden, kommer data på motsvarande order att uppdateras automatiskt.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-145">If you update any of these dates on either the purchase line or the sales line, the dates on the corresponding order will be automatically updated.</span></span>     
+    * <span data-ttu-id="5fcc7-146">Inköpsordern som har ställts in på att leverera varor direkt till kunden, är kopplad till den ursprungliga försäljningsordern med hjälp av en speciell associering.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-146">The purchase order that is set to deliver goods directly the customer is linked to the originating sales order by means of a special association.</span></span> <span data-ttu-id="5fcc7-147">Denna association medför regeln att följesedeln uppdatering av försäljningsorder kan inte göras från försäljningen för sig själv och måste göras med hjälp av inköpsordern.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-147">This association imposes the rule that the packing slip update of the sales order can't be done from the sales order itself and must be done by using the purchase order.</span></span> <span data-ttu-id="5fcc7-148">Kundfakturering måste dock göras från försäljningsordern.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-148">However, customer invoicing must be carried out from the sales order.</span></span>  
+20. <span data-ttu-id="5fcc7-149">Klicka på Inköp i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-149">On the Action Pane, click Purchase.</span></span>
+21. <span data-ttu-id="5fcc7-150">Klicka på Bekräftelse.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-150">Click Confirmation.</span></span>
+22. <span data-ttu-id="5fcc7-151">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-151">Click OK.</span></span>
+23. <span data-ttu-id="5fcc7-152">Klicka på Ta emot i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-152">On the Action Pane, click Receive.</span></span>
+24. <span data-ttu-id="5fcc7-153">Klicka på Produktinleverans.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-153">Click Product receipt.</span></span>
+25. <span data-ttu-id="5fcc7-154">Skriv ett värde i fältet Produktinleverans.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-154">In the Product receipt field, type a value.</span></span>
+26. <span data-ttu-id="5fcc7-155">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-155">Click OK.</span></span>
+27. <span data-ttu-id="5fcc7-156">Klicka på Allmänt i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-156">On the Action Pane, click General.</span></span>
+28. <span data-ttu-id="5fcc7-157">Klicka på Relaterade order.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-157">Click Related orders.</span></span>
+29. <span data-ttu-id="5fcc7-158">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-158">In the list, mark the selected row.</span></span>
+    * <span data-ttu-id="5fcc7-159">När inköpsordern har uppdaterats som inkommen, med andra ord efter att leverantören har skickat varor till kundens adress, uppdateras status för den ursprungliga försäljningsordern automatiskt till Levererat.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-159">After the purchase order has been updated as received, or in other words, after the vendor has shipped the goods to your customer's address, the status of the originating sales order is automatically updated to Delivered.</span></span>  
+    * <span data-ttu-id="5fcc7-160">Försäljningsordern går nu att fakturera.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-160">The sales order can now be invoiced.</span></span>    
+30. <span data-ttu-id="5fcc7-161">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-161">Click OK.</span></span>
+31. <span data-ttu-id="5fcc7-162">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-162">Close the page.</span></span>
+32. <span data-ttu-id="5fcc7-163">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-163">Click OK.</span></span>
 
-## <a name="create-direct-deliveries-from-the-workbench"></a>Skapa direktleveranser från arbetsytan.
-1. Stäng sidan.
-2. Stäng sidan.
-3. Gå till Alla försäljningsorder.
-4. Klicka på Ny.
-5. I fältet Kundkonto, ange eller välj ett värde.
-6. Klicka på OK.
-7. Ange eller välj ett värde i fältet Artikelnummer.
-8. Expandera avsnittet Radinformation.
-9. Klicka på fliken Leverans.
-    * Istället för att skapa en direktleverans som en del av bearbetningen av försäljningsordern som i föregående procedur, kan du överlämna uppgiften till en inköpare. Om du vill inkludera försäljningsorderraden i hanteringsprocessen för direktleveransen måste du markera raden för direktleverans.  
-10. Välj Ja i fältet Direktleverans.
-    *   Om artikeln redan har ställts in för direktleverans som standard, kommer fältet automatiskt att ställas in på Ja i orderradposten. Du kan ställa in en artikel för direktleverans i en frisläppts produkts mall genom att ställa in alternativet Direktleverans på Ja och markera ett standardlagerställe för direktleveransen.  
-    * Eftersom inköpsordern ännu inte har skapats, ställs statusen för direktleveransen in på För direktleverans.   
-11. Stäng sidan.
-12. Stäng sidan.
-13. Gå till Direktleverans.
-    * Direktleveranssidan fungerar som en arbetsyta som ger inköparen en översikt över alla försäljningsorderrader som ska direktlevereras, och det gör att det går att skapa respektive inköpsorder. Dessutom kan de visa öppna direktleveransorder och bekräftade order på flikarna Bekräftelse och Leverans.   
-14. Klicka på Skapa direktleverans.
-15. Klicka på fliken Bekräftelse.
-    * När du har skapat en direktleveransorder, flyttas den automatiskt till fliken Bekräftelse. Du kan välja att bekräfta ordern direkt från den här sidan. När inköpet har bekräftats flyttas det automatiskt till fliken Leverans där du kan registrera inleveransen.  
+## <a name="create-direct-deliveries-from-the-workbench"></a><span data-ttu-id="5fcc7-164">Skapa direktleveranser från arbetsytan.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-164">Create direct deliveries from the workbench</span></span>
+1. <span data-ttu-id="5fcc7-165">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-165">Close the page.</span></span>
+2. <span data-ttu-id="5fcc7-166">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-166">Close the page.</span></span>
+3. <span data-ttu-id="5fcc7-167">Gå till Alla försäljningsorder.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-167">Go to All sales orders.</span></span>
+4. <span data-ttu-id="5fcc7-168">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-168">Click New.</span></span>
+5. <span data-ttu-id="5fcc7-169">I fältet Kundkonto, ange eller välj ett värde.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-169">In the Customer account field, enter or select a value.</span></span>
+6. <span data-ttu-id="5fcc7-170">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-170">Click OK.</span></span>
+7. <span data-ttu-id="5fcc7-171">Ange eller välj ett värde i fältet Artikelnummer.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-171">In the Item number field, enter or select a value.</span></span>
+8. <span data-ttu-id="5fcc7-172">Expandera avsnittet Radinformation.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-172">Expand the Line details section.</span></span>
+9. <span data-ttu-id="5fcc7-173">Klicka på fliken Leverans.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-173">Click the Delivery tab.</span></span>
+    * <span data-ttu-id="5fcc7-174">Istället för att skapa en direktleverans som en del av bearbetningen av försäljningsordern som i föregående procedur, kan du överlämna uppgiften till en inköpare.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-174">Instead of creating a direct delivery as part of the sales order processing as in the previous procedure, you can choose to hand over this task to a purchasing professional.</span></span> <span data-ttu-id="5fcc7-175">Om du vill inkludera försäljningsorderraden i hanteringsprocessen för direktleveransen måste du markera raden för direktleverans.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-175">To include the sales order line in the direct delivery handling process, you must mark the line for direct delivery.</span></span>  
+10. <span data-ttu-id="5fcc7-176">Välj Ja i fältet Direktleverans.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-176">Select Yes in the Direct delivery field.</span></span>
+    *   <span data-ttu-id="5fcc7-177">Om artikeln redan har ställts in för direktleverans som standard, kommer fältet automatiskt att ställas in på Ja i orderradposten.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-177">If the item has already been set up for direct delivery by default, the field will automatically be set to Yes at the order line entry.</span></span> <span data-ttu-id="5fcc7-178">Du kan ställa in en artikel för direktleverans i en frisläppts produkts mall genom att ställa in alternativet Direktleverans på Ja och markera ett standardlagerställe för direktleveransen.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-178">You can set up an item for direct delivery on the Released product's master by setting the Direct delivery option to Yes and selecting a default Direct delivery warehouse.</span></span>  
+    * <span data-ttu-id="5fcc7-179">Eftersom inköpsordern ännu inte har skapats, ställs statusen för direktleveransen in på För direktleverans.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-179">Because the purchase order has not yet been created, the Direct delivery status is set to To be direct delivered.</span></span>   
+11. <span data-ttu-id="5fcc7-180">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-180">Close the page.</span></span>
+12. <span data-ttu-id="5fcc7-181">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-181">Close the page.</span></span>
+13. <span data-ttu-id="5fcc7-182">Gå till Direktleverans.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-182">Go to Direct delivery.</span></span>
+    * <span data-ttu-id="5fcc7-183">Direktleveranssidan fungerar som en arbetsyta som ger inköparen en översikt över alla försäljningsorderrader som ska direktlevereras, och det gör att det går att skapa respektive inköpsorder.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-183">The Direct delivery page acts as a workbench that provides the purchasing agent with an overview of all the sales order lines that are to be direct delivered and it allows them to create the respective purchase orders.</span></span> <span data-ttu-id="5fcc7-184">Dessutom kan de visa öppna direktleveransorder och bekräftade order på flikarna Bekräftelse och Leverans.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-184">In addition, they can view the open direct delivery orders and the confirmed orders on the Confirmation and Delivery tabs.</span></span>   
+14. <span data-ttu-id="5fcc7-185">Klicka på Skapa direktleverans.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-185">Click Create direct delivery.</span></span>
+15. <span data-ttu-id="5fcc7-186">Klicka på fliken Bekräftelse.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-186">Click the Confirmation tab.</span></span>
+    * <span data-ttu-id="5fcc7-187">När du har skapat en direktleveransorder, flyttas den automatiskt till fliken Bekräftelse.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-187">After you have created a direct delivery order, it automatically moved to the Confirmation tab.</span></span> <span data-ttu-id="5fcc7-188">Du kan välja att bekräfta ordern direkt från den här sidan.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-188">You can choose to confirm the order directly from this page.</span></span> <span data-ttu-id="5fcc7-189">När inköpet har bekräftats flyttas det automatiskt till fliken Leverans där du kan registrera inleveransen.</span><span class="sxs-lookup"><span data-stu-id="5fcc7-189">When the purchase is confirmed, it will automatically move to the Delivery tab, from which you can registered its receipt.</span></span>  
 
 

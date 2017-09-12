@@ -16,29 +16,29 @@ ms.author: saraschi
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 93408ec16cd8d27c45a77d1012a746d4de59d574
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 352d8700df234f80381c4778c5f90b4b6f1a2297
 ms.contentlocale: sv-se
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-a-fixed-asset"></a>Skapa en anläggningstillgång
+# <a name="create-a-fixed-asset"></a><span data-ttu-id="370f4-103">Skapa en anläggningstillgång</span><span class="sxs-lookup"><span data-stu-id="370f4-103">Create a fixed asset</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-I den här uppgiftsguiden används demonstrationsföretaget USMF.  En ny anläggningstillgång skapas med hjälp av listsidan Anläggningstillgångar.
+<span data-ttu-id="370f4-104">I den här uppgiftsguiden används demonstrationsföretaget USMF.</span><span class="sxs-lookup"><span data-stu-id="370f4-104">This task guide uses the USMF demo company.</span></span>  <span data-ttu-id="370f4-105">En ny anläggningstillgång skapas med hjälp av listsidan Anläggningstillgångar.</span><span class="sxs-lookup"><span data-stu-id="370f4-105">It will create a new fixed asset using the Fixed asset list page.</span></span>
 
-1. Gå till anläggningstillgångar > anläggningstillgångar > Fasta tillgångar.
-2. Klicka på Ny.
-3. I fältet Anläggningstillgångsgrupp, ange eller välj ett värde.
-    * Numret får sin standard om du har aktiverat funktionen Autonummer för anläggningstillgångar i anläggningstillgångparametrarna och anläggningstillgångsgruppen.  Om inte måste du ange ett unikt nummer som identifierar anläggningstillgången.  
-4. Skriv ett värde i fältet Namn.
-    * Ange ytterligare information som verksamheten kräver för tillgången.  
-5. Klicka på Books.
-6. Ange ett datum i fältet Anskaffningsdatum.
-7. Ange ett tal i fältet Anskaffningspris.
-    * Ange den ytterligare information som din verksamhet kräver för denna bok.  
-    * Ange den ytterligare information som verksamheten kräver för återstående böcker.  
-8. Stäng sidan.
+1. <span data-ttu-id="370f4-106">Gå till anläggningstillgångar > anläggningstillgångar > Fasta tillgångar.</span><span class="sxs-lookup"><span data-stu-id="370f4-106">Go to Fixed assets > Fixed assets > Fixed assets.</span></span>
+2. <span data-ttu-id="370f4-107">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="370f4-107">Click New.</span></span>
+3. <span data-ttu-id="370f4-108">I fältet Anläggningstillgångsgrupp, ange eller välj ett värde.</span><span class="sxs-lookup"><span data-stu-id="370f4-108">In the Fixed asset group field, enter or select a value.</span></span>
+    * <span data-ttu-id="370f4-109">Numret får sin standard om du har aktiverat funktionen Autonummer för anläggningstillgångar i anläggningstillgångparametrarna och anläggningstillgångsgruppen.</span><span class="sxs-lookup"><span data-stu-id="370f4-109">The Number will default if you have enabled Autonumber fixed assets functionality in the Fixed assets parameters and the Fixed asset group.</span></span>  <span data-ttu-id="370f4-110">Om inte måste du ange ett unikt nummer som identifierar anläggningstillgången.</span><span class="sxs-lookup"><span data-stu-id="370f4-110">If not, you must enter a unique number to identify the fixed asset.</span></span>  
+4. <span data-ttu-id="370f4-111">Skriv ett värde i fältet Namn.</span><span class="sxs-lookup"><span data-stu-id="370f4-111">In the Name field, type a value.</span></span>
+    * <span data-ttu-id="370f4-112">Ange ytterligare information som verksamheten kräver för tillgången.</span><span class="sxs-lookup"><span data-stu-id="370f4-112">Enter the additional information that your business needs for this asset.</span></span>  
+5. <span data-ttu-id="370f4-113">Klicka på Books.</span><span class="sxs-lookup"><span data-stu-id="370f4-113">Click Books.</span></span>
+6. <span data-ttu-id="370f4-114">Ange ett datum i fältet Anskaffningsdatum.</span><span class="sxs-lookup"><span data-stu-id="370f4-114">In the Acquisition date field, enter a date.</span></span>
+7. <span data-ttu-id="370f4-115">Ange ett tal i fältet Anskaffningspris.</span><span class="sxs-lookup"><span data-stu-id="370f4-115">In the Acquisition price field, enter a number.</span></span>
+    * <span data-ttu-id="370f4-116">Ange den ytterligare information som din verksamhet kräver för denna bok.</span><span class="sxs-lookup"><span data-stu-id="370f4-116">Enter the additional information that your business needs for this book.</span></span>  
+    * <span data-ttu-id="370f4-117">Ange den ytterligare information som verksamheten kräver för återstående böcker.</span><span class="sxs-lookup"><span data-stu-id="370f4-117">Enter the additional information that your business needs for the remaining books.</span></span>  
+8. <span data-ttu-id="370f4-118">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="370f4-118">Close the page.</span></span>
 
 

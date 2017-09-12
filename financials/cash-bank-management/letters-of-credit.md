@@ -25,33 +25,33 @@ ms.lasthandoff: 08/09/2017
 
 ---
 
-# <a name="letters-of-credit"></a>Remburser
+# <a name="letters-of-credit"></a><span data-ttu-id="953d1-103">Remburser</span><span class="sxs-lookup"><span data-stu-id="953d1-103">Letters of credit</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Remburser är bankdokument som vanligtvis används för inköp och försäljning av varor över internationella gränser. 
+<span data-ttu-id="953d1-104">Remburser är bankdokument som vanligtvis används för inköp och försäljning av varor över internationella gränser.</span><span class="sxs-lookup"><span data-stu-id="953d1-104">Letters of credit are bank documents that are commonly used for the purchase and sale of goods across international borders.</span></span> 
 
-Remburser används i internationella transaktioner för att se till att betalningarna utförs. En remburs är ett avtal som har utfärdats av en bank, i vilket banken går med på att säkerställa betalningen på uppdrag av köparen om villkoren i avtalet mellan köparen och säljaren uppfylls. En remburs kallas letter of credit eller documentary credit (DC) på engelska. 
+<span data-ttu-id="953d1-105">Remburser används i internationella transaktioner för att se till att betalningarna utförs.</span><span class="sxs-lookup"><span data-stu-id="953d1-105">Letters of credit are used for international transactions to ensure that payments will be made.</span></span> <span data-ttu-id="953d1-106">En remburs är ett avtal som har utfärdats av en bank, i vilket banken går med på att säkerställa betalningen på uppdrag av köparen om villkoren i avtalet mellan köparen och säljaren uppfylls.</span><span class="sxs-lookup"><span data-stu-id="953d1-106">A letter of credit is an agreement that is issued by a bank, in which the bank agrees to ensure payment on behalf of the buyer, if the terms of the agreement between the buyer and seller are met.</span></span> <span data-ttu-id="953d1-107">En remburs kallas letter of credit eller documentary credit (DC) på engelska.</span><span class="sxs-lookup"><span data-stu-id="953d1-107">Note that a letter of credit is also referred to as a documentary credit (DC).</span></span> 
 
-För en importremburs är den juridiska personen köparen eller sökande av rembursen. För en exportremburs är den juridiska personen säljaren eller mottagaren av rembursen. Följande parter är inblandade vid en remburs: 
+<span data-ttu-id="953d1-108">För en importremburs är den juridiska personen köparen eller sökande av rembursen.</span><span class="sxs-lookup"><span data-stu-id="953d1-108">For an import letter of credit, the legal entity is the buyer or the applicant for the letter of credit.</span></span> <span data-ttu-id="953d1-109">För en exportremburs är den juridiska personen säljaren eller mottagaren av rembursen.</span><span class="sxs-lookup"><span data-stu-id="953d1-109">For an export letter of credit, the legal entity is the seller or the beneficiary of the letter of credit.</span></span> <span data-ttu-id="953d1-110">Följande parter är inblandade vid en remburs:</span><span class="sxs-lookup"><span data-stu-id="953d1-110">The following parties are involved with a letter of credit:</span></span> 
 
- - En sökande (köparen) som ska betala för varorna. 
- - Mottagaren (säljaren) som ska få betalningen.
- - Banken som utfärdar rembursen.
- - Banken som utför transaktionen på uppdrag av den sökande.
+ - <span data-ttu-id="953d1-111">En sökande (köparen) som ska betala för varorna.</span><span class="sxs-lookup"><span data-stu-id="953d1-111">The applicant (buyer) who intends to pay for the goods</span></span> 
+ - <span data-ttu-id="953d1-112">Mottagaren (säljaren) som ska få betalningen.</span><span class="sxs-lookup"><span data-stu-id="953d1-112">The beneficiary (seller) who will receive the payment</span></span>
+ - <span data-ttu-id="953d1-113">Banken som utfärdar rembursen.</span><span class="sxs-lookup"><span data-stu-id="953d1-113">The issuing bank that issues the letter of credit</span></span>
+ - <span data-ttu-id="953d1-114">Banken som utför transaktionen på uppdrag av den sökande.</span><span class="sxs-lookup"><span data-stu-id="953d1-114">The advising bank that carries out the transaction on behalf of the applicant</span></span>
 
-Rembursen innehåller en beskrivning av varorna, eventuella obligatoriska dokument, leveransdatumet och ett utgångsdatum för betalningen, dvs. betalningen görs inte efter detta datum. Den utfärdande banken får en avgift för rembursen. 
+<span data-ttu-id="953d1-115">Rembursen innehåller en beskrivning av varorna, eventuella obligatoriska dokument, leveransdatumet och ett utgångsdatum för betalningen, dvs. betalningen görs inte efter detta datum.</span><span class="sxs-lookup"><span data-stu-id="953d1-115">The letter of credit includes a description of the goods, any required documents, the date of shipment, and the expiration date after which payment will not be made.</span></span> <span data-ttu-id="953d1-116">Den utfärdande banken får en avgift för rembursen.</span><span class="sxs-lookup"><span data-stu-id="953d1-116">The issuing bank collects a margin for the letter of credit.</span></span> 
 
-En remburs kan vara återkallelig eller oåterkallelig. En remburs kan vara transferabel, ej transferabel eller revolverande. Vanligtvis är en remburs ett oåterkalleligt avtal om att betalning ska göras till en viss mottagare vid uppvisande av fullständiga och korrekta leveransdokument.
+<span data-ttu-id="953d1-117">En remburs kan vara återkallelig eller oåterkallelig.</span><span class="sxs-lookup"><span data-stu-id="953d1-117">A letter of credit can be revocable or irrevocable.</span></span> <span data-ttu-id="953d1-118">En remburs kan vara transferabel, ej transferabel eller revolverande.</span><span class="sxs-lookup"><span data-stu-id="953d1-118">The nature of a letter of credit can be transferable, non transferable, or revolving.</span></span> <span data-ttu-id="953d1-119">Vanligtvis är en remburs ett oåterkalleligt avtal om att betalning ska göras till en viss mottagare vid uppvisande av fullständiga och korrekta leveransdokument.</span><span class="sxs-lookup"><span data-stu-id="953d1-119">Typically, a letter of credit is an irrevocable and confirmed agreement that payment will be made to a specific beneficiary upon submission of complete and accurate shipping documentation.</span></span>
 
-Mer information finns i följande avsnitt:
+<span data-ttu-id="953d1-120">Mer information finns i följande avsnitt:</span><span class="sxs-lookup"><span data-stu-id="953d1-120">For more information, see the following topics:</span></span>
 
-[Importera en remburs](tasks/import-letter-credit.md)
+[<span data-ttu-id="953d1-121">Importera en remburs</span><span class="sxs-lookup"><span data-stu-id="953d1-121">Import a letter of credit</span></span>](tasks/import-letter-credit.md)
 
-[Exportera en remburs](tasks/export-letter-credit.md)
+[<span data-ttu-id="953d1-122">Exportera en remburs</span><span class="sxs-lookup"><span data-stu-id="953d1-122">Export a letter of credit</span></span>](tasks/export-letter-credit.md)
 
-[Skapa ett bankkreditlimit för en remburs](tasks/create-bank-facility-agreement-letter-credit.md)
+[<span data-ttu-id="953d1-123">Skapa ett bankkreditlimit för en remburs</span><span class="sxs-lookup"><span data-stu-id="953d1-123">Create a bank facility for a letter of credit</span></span>](tasks/create-bank-facility-agreement-letter-credit.md)
 
 
 

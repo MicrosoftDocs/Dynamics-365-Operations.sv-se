@@ -15,43 +15,43 @@ ms.custom: 196043
 ms.assetid: dfdae2b8-6a4f-4760-b339-b755c66f3f89
 ms.search.region: Global
 ms.author: donaldc
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 8d53528f2250cfecbbe0dda25fc53b6e9046af10
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 88c927505dde933f10f77922397aeb1c89a5fce5
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="configure-a-parallel-branch-in-a-workflow"></a>Konfigurera en parallell gren i ett arbetsflöde
+# <a name="configure-a-parallel-branch-in-a-workflow"></a><span data-ttu-id="23b76-103">Konfigurera en parallell gren i ett arbetsflöde</span><span class="sxs-lookup"><span data-stu-id="23b76-103">Configure a parallel branch in a workflow</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Slutför följande procedurer i arbetsflödesredigeraren om du vill konfigurera en parallell gren.
+<span data-ttu-id="23b76-104">Slutför följande procedurer i arbetsflödesredigeraren om du vill konfigurera en parallell gren.</span><span class="sxs-lookup"><span data-stu-id="23b76-104">To configure a parallel branch, complete the following procedures in the workflow editor.</span></span>
 
-En parallellt gren är i grunden i ett arbetsflöde som körs i samband med ett överordnat arbetsflöde.
+<span data-ttu-id="23b76-105">En parallellt gren är i grunden i ett arbetsflöde som körs i samband med ett överordnat arbetsflöde.</span><span class="sxs-lookup"><span data-stu-id="23b76-105">A parallel branch is essentially a workflow that runs in the context of a parent workflow.</span></span>
 
-## <a name="name-a-branch"></a>Namnge en gren
-Följ dessa steg när du vill ange ett namn för en parallell gren.
-1.  Högerklicka på den parallella grenen och klicka sedan på **Egenskaper**. Formuläret **Egenskaper** visas.
-2.  Klicka på **Grundinställningar** i det vänstra fönstret.
-3.  Ange ett unikt namn för parallellnamnet i fältet **Namn**.
-4.  Klicka på **Stäng**.
+## <a name="name-a-branch"></a><span data-ttu-id="23b76-106">Namnge en gren</span><span class="sxs-lookup"><span data-stu-id="23b76-106">Name a branch</span></span>
+<span data-ttu-id="23b76-107">Följ dessa steg när du vill ange ett namn för en parallell gren.</span><span class="sxs-lookup"><span data-stu-id="23b76-107">Follow these steps to enter a name for a parallel branch.</span></span>
+1.  <span data-ttu-id="23b76-108">Högerklicka på den parallella grenen och klicka sedan på **Egenskaper**.</span><span class="sxs-lookup"><span data-stu-id="23b76-108">Right-click the parallel branch, and then click **Properties**.</span></span> <span data-ttu-id="23b76-109">Formuläret **Egenskaper** visas.</span><span class="sxs-lookup"><span data-stu-id="23b76-109">The **Properties** form is displayed.</span></span>
+2.  <span data-ttu-id="23b76-110">Klicka på **Grundinställningar** i det vänstra fönstret.</span><span class="sxs-lookup"><span data-stu-id="23b76-110">In the left pane, click **Basic Settings**.</span></span>
+3.  <span data-ttu-id="23b76-111">Ange ett unikt namn för parallellnamnet i fältet **Namn**.</span><span class="sxs-lookup"><span data-stu-id="23b76-111">In the **Name** field, enter a unique name for the parallel branch.</span></span>
+4.  <span data-ttu-id="23b76-112">Klicka på **Stäng**.</span><span class="sxs-lookup"><span data-stu-id="23b76-112">Click **Close**.</span></span>
 
-## <a name="design-and-configure-the-elements-of-a-branch"></a>Designa och konfigurera elementen för en gren
-Gör på följande sätt när du vill designa och konfigurera elementen för en parallell gren.
-1.  Dubbelklicka på den parallella grenen.
-2.  Dra arbetsflödeselement till arbetsytan och konfigurera sedan elementen, på samma sätt som du skapar vilket annat arbetsflöde som helst. Mer information finns i Skapa ett arbetsflöde.
+## <a name="design-and-configure-the-elements-of-a-branch"></a><span data-ttu-id="23b76-113">Designa och konfigurera elementen för en gren</span><span class="sxs-lookup"><span data-stu-id="23b76-113">Design and configure the elements of a branch</span></span>
+<span data-ttu-id="23b76-114">Gör på följande sätt när du vill designa och konfigurera elementen för en parallell gren.</span><span class="sxs-lookup"><span data-stu-id="23b76-114">Follow these steps to design and configure the elements of a parallel branch.</span></span>
+1.  <span data-ttu-id="23b76-115">Dubbelklicka på den parallella grenen.</span><span class="sxs-lookup"><span data-stu-id="23b76-115">Double-click the parallel branch.</span></span>
+2.  <span data-ttu-id="23b76-116">Dra arbetsflödeselement till arbetsytan och konfigurera sedan elementen, på samma sätt som du skapar vilket annat arbetsflöde som helst.</span><span class="sxs-lookup"><span data-stu-id="23b76-116">Drag workflow elements onto the canvas, and then configure the elements, just as you would to create any other workflow.</span></span> <span data-ttu-id="23b76-117">Mer information finns i Skapa ett arbetsflöde.</span><span class="sxs-lookup"><span data-stu-id="23b76-117">For more information, see Create a workflow.</span></span>
 
 
 
-<a name="see-also"></a>Se även
+<a name="see-also"></a><span data-ttu-id="23b76-118">Se även</span><span class="sxs-lookup"><span data-stu-id="23b76-118">See also</span></span>
 --------
 
-[Skapa ett arbetsflöde](create-workflow.md)
+[<span data-ttu-id="23b76-119">Skapa ett arbetsflöde</span><span class="sxs-lookup"><span data-stu-id="23b76-119">Create a workflow</span></span>](create-workflow.md)
 
 
 

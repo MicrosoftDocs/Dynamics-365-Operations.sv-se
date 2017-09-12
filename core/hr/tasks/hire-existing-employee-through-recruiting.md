@@ -16,29 +16,29 @@ ms.author: rschloma
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 839f803690bef657078483a073ef363beefa6ee3
-ms.openlocfilehash: 59688ad50addaf4e5a6d76ef78990b303ff114fe
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 5dfe5c25b299284267bed91d58e0acefb7250570
 ms.contentlocale: sv-se
-ms.lasthandoff: 08/01/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="hire-an-existing-employee-through-recruiting"></a>Anställ en befintlig medarbetare genom att rekrytera
+# <a name="hire-an-existing-employee-through-recruiting"></a><span data-ttu-id="05e3c-103">Anställ en befintlig medarbetare genom att rekrytera</span><span class="sxs-lookup"><span data-stu-id="05e3c-103">Hire an existing employee through recruiting</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Ibland kan lediga befattningar fyllas av kandidater som redan är medarbetare i organisationen. Den här proceduren går igenom stegen för att anställa en befintlig medarbetare via rekryteringsprocessen. I den här proceduren har ett rekryteringsprojekt redan ställts in och en befintlig medarbetare har redan skickat in en ansökning för rekryteringsprojektet. Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.
+<span data-ttu-id="05e3c-104">Ibland kan lediga befattningar fyllas av kandidater som redan är medarbetare i organisationen.</span><span class="sxs-lookup"><span data-stu-id="05e3c-104">Sometimes open positions can be filled by candidates who are already employees in your organization.</span></span> <span data-ttu-id="05e3c-105">Den här proceduren går igenom stegen för att anställa en befintlig medarbetare via rekryteringsprocessen.</span><span class="sxs-lookup"><span data-stu-id="05e3c-105">This procedure walks through the steps of hiring an existing employee through the recruiting process.</span></span> <span data-ttu-id="05e3c-106">I den här proceduren har ett rekryteringsprojekt redan ställts in och en befintlig medarbetare har redan skickat in en ansökning för rekryteringsprojektet.</span><span class="sxs-lookup"><span data-stu-id="05e3c-106">In this procedure, a recruitment project has already been set up, and an existing employee has already submitted an application for the recruitment project.</span></span> <span data-ttu-id="05e3c-107">Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.</span><span class="sxs-lookup"><span data-stu-id="05e3c-107">The demo data company used to create this procedure is USMF.</span></span>
 
-1. Gå till Personal > Rekrytering > Ansökningar > Ansökningar.
-2. Sök efter ansökningen för den medarbetare som du vill anställa i listan. Exempel: 00002 John Emory
-3. Klicka på Ansökningsstatus.
-    * Ansökningsstatusen anger var en ansökan är i rekryteringsprocessen.  Vart och ett av dessa steg är valfria. Vanligtvis flyttar en ansökning statusarna i följande ordning: mottagen, bekräftad och intervjuad. Efter intervjuprocessen fattas ett anställningsbeslut.  
-4. Klicka på Ändra befattning.
-5. Välj den befattning som du anställer medarbetaren till.
-6. Ange det datum då medarbetaren ska börja arbeta i den nya befattningen i fältet Startdatum för ny arbetsuppgift.  
-7. Ange det datum då medarbetaren ska sluta arbeta i den aktuella befattningen i fältet Slutdatum för ny arbetsuppgift.
-    * Startdatum för den nya befattningen och slutdatumet för den gamla befattningen kan överlappa. Detta kan inträffa när en person utför uppdrag för båda befattningarna under en övergångsperiod.  
-8. Du kan även välja en orsakskod. Exempel: Omorganisation
-9. Klicka på Ändra befattning.
-    * Du kan också ändra kompensation vid denna tidpunkt. Om du inte tilldelar kompensation vid denna tidpunkt kan du ändra den genom att gå till arbetarformuläret, välja fliken Kompensation och sedan "Fast plan". När du har valt "Ändra befattning" uppdateras statusen för ansökningen till "Anställd".  
+1. <span data-ttu-id="05e3c-108">Gå till Personal > Rekrytering > Ansökningar > Ansökningar.</span><span class="sxs-lookup"><span data-stu-id="05e3c-108">Go to Human resources > Recruitment > Applications > Applications.</span></span>
+2. <span data-ttu-id="05e3c-109">Sök efter ansökningen för den medarbetare som du vill anställa i listan.</span><span class="sxs-lookup"><span data-stu-id="05e3c-109">In the list, find application for the employee that you would like to hire.</span></span> <span data-ttu-id="05e3c-110">Exempel: 00002 John Emory</span><span class="sxs-lookup"><span data-stu-id="05e3c-110">Example:  00002  John Emory</span></span>
+3. <span data-ttu-id="05e3c-111">Klicka på Ansökningsstatus.</span><span class="sxs-lookup"><span data-stu-id="05e3c-111">Click Application status.</span></span>
+    * <span data-ttu-id="05e3c-112">Ansökningsstatusen anger var en ansökan är i rekryteringsprocessen.</span><span class="sxs-lookup"><span data-stu-id="05e3c-112">The application status indicates where an application is at in the recruitment process.</span></span>  <span data-ttu-id="05e3c-113">Vart och ett av dessa steg är valfria.</span><span class="sxs-lookup"><span data-stu-id="05e3c-113">Each of these steps is optional.</span></span> <span data-ttu-id="05e3c-114">Vanligtvis flyttar en ansökning statusarna i följande ordning: mottagen, bekräftad och intervjuad.</span><span class="sxs-lookup"><span data-stu-id="05e3c-114">Typically, an application would move the statuses in the following order:  received, confirmed, and interviewed.</span></span> <span data-ttu-id="05e3c-115">Efter intervjuprocessen fattas ett anställningsbeslut.</span><span class="sxs-lookup"><span data-stu-id="05e3c-115">After the interview process, a hiring decision would be made.</span></span>  
+4. <span data-ttu-id="05e3c-116">Klicka på Ändra befattning.</span><span class="sxs-lookup"><span data-stu-id="05e3c-116">Click Change position.</span></span>
+5. <span data-ttu-id="05e3c-117">Välj den befattning som du anställer medarbetaren till.</span><span class="sxs-lookup"><span data-stu-id="05e3c-117">Select the position that you are hiring the employee into.</span></span>
+6. <span data-ttu-id="05e3c-118">Ange det datum då medarbetaren ska börja arbeta i den nya befattningen i fältet Startdatum för ny arbetsuppgift.</span><span class="sxs-lookup"><span data-stu-id="05e3c-118">In the New Assignment Start Date field, enter the date that the employee will begin working in the new position.</span></span>  
+7. <span data-ttu-id="05e3c-119">Ange det datum då medarbetaren ska sluta arbeta i den aktuella befattningen i fältet Slutdatum för ny arbetsuppgift.</span><span class="sxs-lookup"><span data-stu-id="05e3c-119">In the Assignment end date, enter the date that the employee will stop working in their current position.</span></span>
+    * <span data-ttu-id="05e3c-120">Startdatum för den nya befattningen och slutdatumet för den gamla befattningen kan överlappa.</span><span class="sxs-lookup"><span data-stu-id="05e3c-120">The starting date for the new position and the ending date of the old position may overlap.</span></span> <span data-ttu-id="05e3c-121">Detta kan inträffa när en person utför uppdrag för båda befattningarna under en övergångsperiod.</span><span class="sxs-lookup"><span data-stu-id="05e3c-121">This can happen when a person is performing duties for both positions during a transition period.</span></span>  
+8. <span data-ttu-id="05e3c-122">Du kan även välja en orsakskod.</span><span class="sxs-lookup"><span data-stu-id="05e3c-122">Optionally, you can select a reason code.</span></span> <span data-ttu-id="05e3c-123">Exempel: Omorganisation</span><span class="sxs-lookup"><span data-stu-id="05e3c-123">Example: Reorganization</span></span>
+9. <span data-ttu-id="05e3c-124">Klicka på Ändra befattning.</span><span class="sxs-lookup"><span data-stu-id="05e3c-124">Click Change position.</span></span>
+    * <span data-ttu-id="05e3c-125">Du kan också ändra kompensation vid denna tidpunkt.</span><span class="sxs-lookup"><span data-stu-id="05e3c-125">You may also change compensation at this time.</span></span> <span data-ttu-id="05e3c-126">Om du inte tilldelar kompensation vid denna tidpunkt kan du ändra den genom att gå till arbetarformuläret, välja fliken Kompensation och sedan "Fast plan".</span><span class="sxs-lookup"><span data-stu-id="05e3c-126">If you do not assign compensation at this time, you can change it by going to the worker form, selecting the Compensation tab, and choosing 'Fixed Plan'.</span></span> <span data-ttu-id="05e3c-127">När du har valt "Ändra befattning" uppdateras statusen för ansökningen till "Anställd".</span><span class="sxs-lookup"><span data-stu-id="05e3c-127">After you select 'Change position', the status on the application will be updated to 'Employed'.</span></span>  
 
 

@@ -15,188 +15,188 @@ ms.custom: 104233
 ms.assetid: 2a2ffa1e-5a15-4e2a-b18c-c4d890d38a50
 ms.search.region: global
 ms.author: josaw
-ms.search.validFrom: 2016-05-31T00:00:00.000Z
+ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: Platform update 1
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: a613f5a84a7c72da3cc76eac147d4754f6259e4c
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 8b5437e5652ca5111ded89cb3417db46ab4b45af
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="new-or-updated-task-guides-may-2016"></a>Nya eller uppdaterade uppgiftsguider (maj 2016)
+# <a name="new-or-updated-task-guides-may-2016"></a><span data-ttu-id="1d7ca-104">Nya eller uppdaterade uppgiftsguider (maj 2016)</span><span class="sxs-lookup"><span data-stu-id="1d7ca-104">New or updated task guides (May 2016)</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Den har artikeln anger nya eller uppdaterade uppgiftsguider som släpptes för Microsoft APQC Unified Library för Microsoft Dynamics AX (maj 2016 - alla språk). Inge nytt Komma igång-biblioteket gavs ut. 
+<span data-ttu-id="1d7ca-105">Den har artikeln anger nya eller uppdaterade uppgiftsguider som släpptes för Microsoft APQC Unified Library för Microsoft Dynamics AX (maj 2016 - alla språk).</span><span class="sxs-lookup"><span data-stu-id="1d7ca-105">This article lists the new or updated Task guides that were released to the Microsoft (May 2016 - all languages) APQC Unified Library for Microsoft Dynamics AX.</span></span> <span data-ttu-id="1d7ca-106">Inge nytt Komma igång-biblioteket gavs ut.</span><span class="sxs-lookup"><span data-stu-id="1d7ca-106">No new Getting Started Library was released.</span></span> 
 
-<a name="task-guides-in-the-may-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a>[]()Uppgiftsguider i (maj 2016 - alla språk) APQC Unified Library för Microsoft Dynamics AX
+<a name="task-guides-in-the-may-2016---all-languages-apqc-unified-library-for-microsoft-dynamics-ax"></a><span data-ttu-id="1d7ca-107">[]()Uppgiftsguider i (maj 2016 - alla språk) APQC Unified Library för Microsoft Dynamics AX</span><span class="sxs-lookup"><span data-stu-id="1d7ca-107">[]()Task guides in the (May 2016 - all languages) APQC Unified Library for Microsoft Dynamics AX</span></span>
 ------------------------------------------------------------------------------------------------
 
-(Maj 2016) APQC Unified Library innehåller uppgiftsguider som är avsedda att användas för Hjälp med Microsoft Dynamics AX (maj 2016) – uppdatering och Microsoft Dynamics AX (utgåva februari 2016). Lokaliserade versioner av uppgiftsguider som frisläpptes i (februari 2016) APQC Unified Library är tillgängliga i det här biblioteket. Mer information om hur du ansluter Hjälp-systemet till ett uppgiftsguidebibliotek hittar du i [Komma igång med Hjälp](help-overview.md). **Obs!** En asterisk (**\***) bredvid rubriken för en affärsprocessmodellerare (BPM)-rad visar att uppgiftsguiden för den affärsprocessen skapades för Dynamics AX maj 2016-uppdateringen och inte stöds i tidigare versioner av Microsoft Dynamics AX.
+<span data-ttu-id="1d7ca-108">(Maj 2016) APQC Unified Library innehåller uppgiftsguider som är avsedda att användas för Hjälp med Microsoft Dynamics AX (maj 2016) – uppdatering och Microsoft Dynamics AX (utgåva februari 2016).</span><span class="sxs-lookup"><span data-stu-id="1d7ca-108">The (May 2016) APQC Unified Library contains the Task guides that are intended to be used for Help with Microsoft Dynamics AX May 2016 update and the Microsoft Dynamics AX February 2016 release.</span></span> <span data-ttu-id="1d7ca-109">Lokaliserade versioner av uppgiftsguider som frisläpptes i (februari 2016) APQC Unified Library är tillgängliga i det här biblioteket.</span><span class="sxs-lookup"><span data-stu-id="1d7ca-109">Localized versions of the Task guides that were released in the (February 2016) APQC Unified Library are available in this library.</span></span> <span data-ttu-id="1d7ca-110">Mer information om hur du ansluter Hjälp-systemet till ett uppgiftsguidebibliotek hittar du i [Komma igång med Hjälp](help-overview.md).</span><span class="sxs-lookup"><span data-stu-id="1d7ca-110">For more information about how to connect the Help system to a Task guide library, see [Get started with Help](help-overview.md).</span></span> <span data-ttu-id="1d7ca-111">**Obs!** En asterisk (**\***) bredvid rubriken för en affärsprocessmodellerare (BPM)-rad visar att uppgiftsguiden för den affärsprocessen skapades för Dynamics AX maj 2016-uppdateringen och inte stöds i tidigare versioner av Microsoft Dynamics AX.</span><span class="sxs-lookup"><span data-stu-id="1d7ca-111">**Note:** An asterisk (**\***) next to the title of a Business process modeler (BPM) line indicates that the task guide for that business process was created for Dynamics AX May 2016 update and isn't supported in earlier versions of Microsoft Dynamics AX.</span></span>
 
-### <a name="countryregion-functionality"></a>Funktionsland/-region
+### <a name="countryregion-functionality"></a><span data-ttu-id="1d7ca-112">Funktionsland/-region</span><span class="sxs-lookup"><span data-stu-id="1d7ca-112">Country/region functionality</span></span>
 
-| BPM-rad                                                                 | Land/region                    |
+| <span data-ttu-id="1d7ca-113">BPM-rad</span><span class="sxs-lookup"><span data-stu-id="1d7ca-113">BPM line</span></span>                                                                 | <span data-ttu-id="1d7ca-114">Land/region</span><span class="sxs-lookup"><span data-stu-id="1d7ca-114">Country/region</span></span>                    |
 |--------------------------------------------------------------------------|-----------------------------------|
-| Ställ in elektroniska OIOUBL-fakturor                                       | Danmark                           |
-| EUR-00002 Generera en Intrastat-deklaration för EU                           | Europa                            |
-| EUR-00002 Överföra transaktioner till Intrastat                         | Europa                            |
-| FR-00004 Uppdatera betalningsmetod för kund                            | Europa                            |
-| Upprätta betalningsmetoder för kunder                                    | Frankrike                            |
-| FR-00003 NAF-koder och SIRET-nummer                                     | Frankrike                            |
-| FR-00004 Godkänna och bokföra utställda växlar                          | Frankrike                            |
-| Konfigurera accelererade avskrivningparametrar och bokföringsprofiler       | Japan                             |
-| Konfigurera konsoliderade fakturaparametrar och inställningar för leverantörsreskontra | Japan                             |
-| Skapa ett accelererat avskrivningsdokument och ange användningsdata         | Japan                             |
-| Skapa CGU-grupp och kassagenererande enheter                               | Japan                             |
-| Avyttra en anläggningstillgång med avdragsregistrering                            | Japan                             |
-| MY-00004 Hantera leverantörs debet- och kreditfaktura för GST                | Singapore, Malaysia och Thailand |
+| <span data-ttu-id="1d7ca-115">Ställ in elektroniska OIOUBL-fakturor</span><span class="sxs-lookup"><span data-stu-id="1d7ca-115">Set up OIOUBL electronic invoicing</span></span>                                       | <span data-ttu-id="1d7ca-116">Danmark</span><span class="sxs-lookup"><span data-stu-id="1d7ca-116">Denmark</span></span>                           |
+| <span data-ttu-id="1d7ca-117">EUR-00002 Generera en Intrastat-deklaration för EU</span><span class="sxs-lookup"><span data-stu-id="1d7ca-117">EUR-00002 Generate an EU Intrastat declaration</span></span>                           | <span data-ttu-id="1d7ca-118">Europa</span><span class="sxs-lookup"><span data-stu-id="1d7ca-118">Europe</span></span>                            |
+| <span data-ttu-id="1d7ca-119">EUR-00002 Överföra transaktioner till Intrastat</span><span class="sxs-lookup"><span data-stu-id="1d7ca-119">EUR-00002 Transfer transactions to the Intrastat</span></span>                         | <span data-ttu-id="1d7ca-120">Europa</span><span class="sxs-lookup"><span data-stu-id="1d7ca-120">Europe</span></span>                            |
+| <span data-ttu-id="1d7ca-121">FR-00004 Uppdatera betalningsmetod för kund</span><span class="sxs-lookup"><span data-stu-id="1d7ca-121">FR-00004 Update method of payment on customer</span></span>                            | <span data-ttu-id="1d7ca-122">Europa</span><span class="sxs-lookup"><span data-stu-id="1d7ca-122">Europe</span></span>                            |
+| <span data-ttu-id="1d7ca-123">Upprätta betalningsmetoder för kunder</span><span class="sxs-lookup"><span data-stu-id="1d7ca-123">Establish customer methods of payment</span></span>                                    | <span data-ttu-id="1d7ca-124">Frankrike</span><span class="sxs-lookup"><span data-stu-id="1d7ca-124">France</span></span>                            |
+| <span data-ttu-id="1d7ca-125">FR-00003 NAF-koder och SIRET-nummer</span><span class="sxs-lookup"><span data-stu-id="1d7ca-125">FR-00003 NAF codes and Siret numbers</span></span>                                     | <span data-ttu-id="1d7ca-126">Frankrike</span><span class="sxs-lookup"><span data-stu-id="1d7ca-126">France</span></span>                            |
+| <span data-ttu-id="1d7ca-127">FR-00004 Godkänna och bokföra utställda växlar</span><span class="sxs-lookup"><span data-stu-id="1d7ca-127">FR-00004 Approve and post draw bill of exchange</span></span>                          | <span data-ttu-id="1d7ca-128">Frankrike</span><span class="sxs-lookup"><span data-stu-id="1d7ca-128">France</span></span>                            |
+| <span data-ttu-id="1d7ca-129">Konfigurera accelererade avskrivningparametrar och bokföringsprofiler</span><span class="sxs-lookup"><span data-stu-id="1d7ca-129">Configure accelerated depreciation parameters and posting profiles</span></span>       | <span data-ttu-id="1d7ca-130">Japan</span><span class="sxs-lookup"><span data-stu-id="1d7ca-130">Japan</span></span>                             |
+| <span data-ttu-id="1d7ca-131">Konfigurera konsoliderade fakturaparametrar och inställningar för leverantörsreskontra</span><span class="sxs-lookup"><span data-stu-id="1d7ca-131">Configure consolidated invoice parameters and setup for accounts payable</span></span> | <span data-ttu-id="1d7ca-132">Japan</span><span class="sxs-lookup"><span data-stu-id="1d7ca-132">Japan</span></span>                             |
+| <span data-ttu-id="1d7ca-133">Skapa ett accelererat avskrivningsdokument och ange användningsdata</span><span class="sxs-lookup"><span data-stu-id="1d7ca-133">Create an accelerated depreciation document and enter usage data</span></span>         | <span data-ttu-id="1d7ca-134">Japan</span><span class="sxs-lookup"><span data-stu-id="1d7ca-134">Japan</span></span>                             |
+| <span data-ttu-id="1d7ca-135">Skapa CGU-grupp och kassagenererande enheter</span><span class="sxs-lookup"><span data-stu-id="1d7ca-135">Create CGU group and cash generating units</span></span>                               | <span data-ttu-id="1d7ca-136">Japan</span><span class="sxs-lookup"><span data-stu-id="1d7ca-136">Japan</span></span>                             |
+| <span data-ttu-id="1d7ca-137">Avyttra en anläggningstillgång med avdragsregistrering</span><span class="sxs-lookup"><span data-stu-id="1d7ca-137">Dispose of a fixed asset with reduction entry</span></span>                            | <span data-ttu-id="1d7ca-138">Japan</span><span class="sxs-lookup"><span data-stu-id="1d7ca-138">Japan</span></span>                             |
+| <span data-ttu-id="1d7ca-139">MY-00004 Hantera leverantörs debet- och kreditfaktura för GST</span><span class="sxs-lookup"><span data-stu-id="1d7ca-139">MY-00004 Manage vendor Debit note and Credit note for GST</span></span>                | <span data-ttu-id="1d7ca-140">Singapore, Malaysia och Thailand</span><span class="sxs-lookup"><span data-stu-id="1d7ca-140">Singapore, Malaysia, and Thailand</span></span> |
 
-### <a name="data-access"></a>Dataåtkomst
+### <a name="data-access"></a><span data-ttu-id="1d7ca-141">Dataåtkomst</span><span class="sxs-lookup"><span data-stu-id="1d7ca-141">Data access</span></span>
 
-| BPM-rad                                       | Land/region |
+| <span data-ttu-id="1d7ca-142">BPM-rad</span><span class="sxs-lookup"><span data-stu-id="1d7ca-142">BPM line</span></span>                                       | <span data-ttu-id="1d7ca-143">Land/region</span><span class="sxs-lookup"><span data-stu-id="1d7ca-143">Country/region</span></span> |
 |------------------------------------------------|----------------|
-| Konfigurera finansiell datadelning mellan företag | Globalt         |
+| <span data-ttu-id="1d7ca-144">Konfigurera finansiell datadelning mellan företag</span><span class="sxs-lookup"><span data-stu-id="1d7ca-144">Configure financial cross-company data sharing</span></span> | <span data-ttu-id="1d7ca-145">Globalt</span><span class="sxs-lookup"><span data-stu-id="1d7ca-145">Global</span></span>         |
 
-### <a name="electronic-reporting"></a>Elektronisk rapportering
+### <a name="electronic-reporting"></a><span data-ttu-id="1d7ca-146">Elektronisk rapportering</span><span class="sxs-lookup"><span data-stu-id="1d7ca-146">Electronic reporting</span></span>
 
-| BPM-rad                                                                   | Land/region |
+| <span data-ttu-id="1d7ca-147">BPM-rad</span><span class="sxs-lookup"><span data-stu-id="1d7ca-147">BPM line</span></span>                                                                   | <span data-ttu-id="1d7ca-148">Land/region</span><span class="sxs-lookup"><span data-stu-id="1d7ca-148">Country/region</span></span> |
 |----------------------------------------------------------------------------|----------------|
-| ER konfigurera destinationer                                                  | Globalt         |
-| ER utformar en konfiguration för rapportgenerering i OPENXML-format         | Globalt         |
-| ER generera elektroniska handlingar för betalningar med en formatkonfiguration | Globalt         |
-| ER importera en konfiguration från Lifecycle Services                          | Globalt         |
-| **\***ER Välja tjänsteleverantör                                           | Globalt         |
-| ER uppgraderar ditt format genom att anta den nya basversionen för det formatet      | Globalt         |
-| ER överför en konfiguration till Lifecycle Services                          | Globalt         |
+| <span data-ttu-id="1d7ca-149">ER konfigurera destinationer</span><span class="sxs-lookup"><span data-stu-id="1d7ca-149">ER Configure destinations</span></span>                                                  | <span data-ttu-id="1d7ca-150">Globalt</span><span class="sxs-lookup"><span data-stu-id="1d7ca-150">Global</span></span>         |
+| <span data-ttu-id="1d7ca-151">ER utformar en konfiguration för rapportgenerering i OPENXML-format</span><span class="sxs-lookup"><span data-stu-id="1d7ca-151">ER Design a configuration for generating reports in OPENXML format</span></span>         | <span data-ttu-id="1d7ca-152">Globalt</span><span class="sxs-lookup"><span data-stu-id="1d7ca-152">Global</span></span>         |
+| <span data-ttu-id="1d7ca-153">ER generera elektroniska handlingar för betalningar med en formatkonfiguration</span><span class="sxs-lookup"><span data-stu-id="1d7ca-153">ER Generate electronic documents for payments using a format configuration</span></span> | <span data-ttu-id="1d7ca-154">Globalt</span><span class="sxs-lookup"><span data-stu-id="1d7ca-154">Global</span></span>         |
+| <span data-ttu-id="1d7ca-155">ER importera en konfiguration från Lifecycle Services</span><span class="sxs-lookup"><span data-stu-id="1d7ca-155">ER Import a configuration from Lifecycle Services</span></span>                          | <span data-ttu-id="1d7ca-156">Globalt</span><span class="sxs-lookup"><span data-stu-id="1d7ca-156">Global</span></span>         |
+| <span data-ttu-id="1d7ca-157">**\***ER Välja tjänsteleverantör</span><span class="sxs-lookup"><span data-stu-id="1d7ca-157">**\***ER Select service provider</span></span>                                           | <span data-ttu-id="1d7ca-158">Globalt</span><span class="sxs-lookup"><span data-stu-id="1d7ca-158">Global</span></span>         |
+| <span data-ttu-id="1d7ca-159">ER uppgraderar ditt format genom att anta den nya basversionen för det formatet</span><span class="sxs-lookup"><span data-stu-id="1d7ca-159">ER Upgrade your format by adopting of new base version of that format</span></span>      | <span data-ttu-id="1d7ca-160">Globalt</span><span class="sxs-lookup"><span data-stu-id="1d7ca-160">Global</span></span>         |
+| <span data-ttu-id="1d7ca-161">ER överför en konfiguration till Lifecycle Services</span><span class="sxs-lookup"><span data-stu-id="1d7ca-161">ER Upload a configuration into Lifecycle Services</span></span>                          | <span data-ttu-id="1d7ca-162">Globalt</span><span class="sxs-lookup"><span data-stu-id="1d7ca-162">Global</span></span>         |
 
-### <a name="human-capital-management"></a>HR
+### <a name="human-capital-management"></a><span data-ttu-id="1d7ca-163">HR</span><span class="sxs-lookup"><span data-stu-id="1d7ca-163">Human capital management</span></span>
 
-| BPM-rad                                    | Land/region |
+| <span data-ttu-id="1d7ca-164">BPM-rad</span><span class="sxs-lookup"><span data-stu-id="1d7ca-164">BPM line</span></span>                                    | <span data-ttu-id="1d7ca-165">Land/region</span><span class="sxs-lookup"><span data-stu-id="1d7ca-165">Country/region</span></span> |
 |---------------------------------------------|----------------|
-| Fördela en enkät med schemaläggning | Globalt         |
-| Ställ in befattningar                            | Globalt         |
+| <span data-ttu-id="1d7ca-166">Fördela en enkät med schemaläggning</span><span class="sxs-lookup"><span data-stu-id="1d7ca-166">Distribute a questionnaire using scheduling</span></span> | <span data-ttu-id="1d7ca-167">Globalt</span><span class="sxs-lookup"><span data-stu-id="1d7ca-167">Global</span></span>         |
+| <span data-ttu-id="1d7ca-168">Ställ in befattningar</span><span class="sxs-lookup"><span data-stu-id="1d7ca-168">Set up positions</span></span>                            | <span data-ttu-id="1d7ca-169">Globalt</span><span class="sxs-lookup"><span data-stu-id="1d7ca-169">Global</span></span>         |
 
-### <a name="inventory-management"></a>Lagerhantering
+### <a name="inventory-management"></a><span data-ttu-id="1d7ca-170">Lagerhantering</span><span class="sxs-lookup"><span data-stu-id="1d7ca-170">Inventory management</span></span>
 
-| BPM-rad                                           | Land/region |
+| <span data-ttu-id="1d7ca-171">BPM-rad</span><span class="sxs-lookup"><span data-stu-id="1d7ca-171">BPM line</span></span>                                           | <span data-ttu-id="1d7ca-172">Land/region</span><span class="sxs-lookup"><span data-stu-id="1d7ca-172">Country/region</span></span> |
 |----------------------------------------------------|----------------|
-| Definiera standardorderinställningar för artiklar.            | Globalt         |
-| Ställ in förutsättningar för avvikelsehantering | Globalt         |
+| <span data-ttu-id="1d7ca-173">Definiera standardorderinställningar för artiklar.</span><span class="sxs-lookup"><span data-stu-id="1d7ca-173">Define default order settings for items</span></span>            | <span data-ttu-id="1d7ca-174">Globalt</span><span class="sxs-lookup"><span data-stu-id="1d7ca-174">Global</span></span>         |
+| <span data-ttu-id="1d7ca-175">Ställ in förutsättningar för avvikelsehantering</span><span class="sxs-lookup"><span data-stu-id="1d7ca-175">Set up prerequisites for nonconformance management</span></span> | <span data-ttu-id="1d7ca-176">Globalt</span><span class="sxs-lookup"><span data-stu-id="1d7ca-176">Global</span></span>         |
 
-### <a name="manufacturing"></a>Tillverkning
+### <a name="manufacturing"></a><span data-ttu-id="1d7ca-177">Tillverkning</span><span class="sxs-lookup"><span data-stu-id="1d7ca-177">Manufacturing</span></span>
 
-| BPM-rad                                           | Land/region |
+| <span data-ttu-id="1d7ca-178">BPM-rad</span><span class="sxs-lookup"><span data-stu-id="1d7ca-178">BPM line</span></span>                                           | <span data-ttu-id="1d7ca-179">Land/region</span><span class="sxs-lookup"><span data-stu-id="1d7ca-179">Country/region</span></span> |
 |----------------------------------------------------|----------------|
-| Kopiera samprodukter från ett befintligt recept          | Globalt         |
-| Skapa en kanban-regel för strukturlistehändelse                | Globalt         |
-| Skapa en ersättningsregel för kanban                   | Globalt         |
-| Skapa en uttagskanban-regel                    | Globalt         |
-| Kör kanban-processjobb                        | Globalt         |
-| Schemalägg en produktionsorder                        | Globalt         |
-| Ordningsföljd för produktionsjobb för processtillverkning | Globalt         |
-| Uppdatera kanban-status                               | Globalt         |
+| <span data-ttu-id="1d7ca-180">Kopiera samprodukter från ett befintligt recept</span><span class="sxs-lookup"><span data-stu-id="1d7ca-180">Copy co-products from an existing formula</span></span>          | <span data-ttu-id="1d7ca-181">Globalt</span><span class="sxs-lookup"><span data-stu-id="1d7ca-181">Global</span></span>         |
+| <span data-ttu-id="1d7ca-182">Skapa en kanban-regel för strukturlistehändelse</span><span class="sxs-lookup"><span data-stu-id="1d7ca-182">Create a BOM line event kanban rule</span></span>                | <span data-ttu-id="1d7ca-183">Globalt</span><span class="sxs-lookup"><span data-stu-id="1d7ca-183">Global</span></span>         |
+| <span data-ttu-id="1d7ca-184">Skapa en ersättningsregel för kanban</span><span class="sxs-lookup"><span data-stu-id="1d7ca-184">Create a replacement kanban rule</span></span>                   | <span data-ttu-id="1d7ca-185">Globalt</span><span class="sxs-lookup"><span data-stu-id="1d7ca-185">Global</span></span>         |
+| <span data-ttu-id="1d7ca-186">Skapa en uttagskanban-regel</span><span class="sxs-lookup"><span data-stu-id="1d7ca-186">Create a withdrawal kanban rule</span></span>                    | <span data-ttu-id="1d7ca-187">Globalt</span><span class="sxs-lookup"><span data-stu-id="1d7ca-187">Global</span></span>         |
+| <span data-ttu-id="1d7ca-188">Kör kanban-processjobb</span><span class="sxs-lookup"><span data-stu-id="1d7ca-188">Execute kanban process jobs</span></span>                        | <span data-ttu-id="1d7ca-189">Globalt</span><span class="sxs-lookup"><span data-stu-id="1d7ca-189">Global</span></span>         |
+| <span data-ttu-id="1d7ca-190">Schemalägg en produktionsorder</span><span class="sxs-lookup"><span data-stu-id="1d7ca-190">Schedule a production order</span></span>                        | <span data-ttu-id="1d7ca-191">Globalt</span><span class="sxs-lookup"><span data-stu-id="1d7ca-191">Global</span></span>         |
+| <span data-ttu-id="1d7ca-192">Ordningsföljd för produktionsjobb för processtillverkning</span><span class="sxs-lookup"><span data-stu-id="1d7ca-192">Sequence production jobs for process manufacturing</span></span> | <span data-ttu-id="1d7ca-193">Globalt</span><span class="sxs-lookup"><span data-stu-id="1d7ca-193">Global</span></span>         |
+| <span data-ttu-id="1d7ca-194">Uppdatera kanban-status</span><span class="sxs-lookup"><span data-stu-id="1d7ca-194">Update kanban status</span></span>                               | <span data-ttu-id="1d7ca-195">Globalt</span><span class="sxs-lookup"><span data-stu-id="1d7ca-195">Global</span></span>         |
 
-### <a name="master-planning"></a>Huvudplanering
+### <a name="master-planning"></a><span data-ttu-id="1d7ca-196">Huvudplanering</span><span class="sxs-lookup"><span data-stu-id="1d7ca-196">Master planning</span></span>
 
-| BPM-rad                      | Land/region |
+| <span data-ttu-id="1d7ca-197">BPM-rad</span><span class="sxs-lookup"><span data-stu-id="1d7ca-197">BPM line</span></span>                      | <span data-ttu-id="1d7ca-198">Land/region</span><span class="sxs-lookup"><span data-stu-id="1d7ca-198">Country/region</span></span> |
 |-------------------------------|----------------|
-| Skapa en plan för en site.      | Globalt         |
-| Skapa ett platsschema        | Globalt         |
-| Övervaka en huvudplaneringskörning | Globalt         |
+| <span data-ttu-id="1d7ca-199">Skapa en plan för en site.</span><span class="sxs-lookup"><span data-stu-id="1d7ca-199">Create a plan for a site</span></span>      | <span data-ttu-id="1d7ca-200">Globalt</span><span class="sxs-lookup"><span data-stu-id="1d7ca-200">Global</span></span>         |
+| <span data-ttu-id="1d7ca-201">Skapa ett platsschema</span><span class="sxs-lookup"><span data-stu-id="1d7ca-201">Create a site schedule</span></span>        | <span data-ttu-id="1d7ca-202">Globalt</span><span class="sxs-lookup"><span data-stu-id="1d7ca-202">Global</span></span>         |
+| <span data-ttu-id="1d7ca-203">Övervaka en huvudplaneringskörning</span><span class="sxs-lookup"><span data-stu-id="1d7ca-203">Monitor a master planning run</span></span> | <span data-ttu-id="1d7ca-204">Globalt</span><span class="sxs-lookup"><span data-stu-id="1d7ca-204">Global</span></span>         |
 
-### <a name="organization-administration"></a>Organisationsadministration
+### <a name="organization-administration"></a><span data-ttu-id="1d7ca-205">Organisationsadministration</span><span class="sxs-lookup"><span data-stu-id="1d7ca-205">Organization administration</span></span>
 
-| BPM-rad                                       | Land/region |
+| <span data-ttu-id="1d7ca-206">BPM-rad</span><span class="sxs-lookup"><span data-stu-id="1d7ca-206">BPM line</span></span>                                       | <span data-ttu-id="1d7ca-207">Land/region</span><span class="sxs-lookup"><span data-stu-id="1d7ca-207">Country/region</span></span> |
 |------------------------------------------------|----------------|
-| Skapa en juridisk person                          | Globalt         |
-| Skapa en organisationshierarki             | Globalt         |
-| Ställa in enskilda nummerserier | Globalt         |
+| <span data-ttu-id="1d7ca-208">Skapa en juridisk person</span><span class="sxs-lookup"><span data-stu-id="1d7ca-208">Create a legal entity</span></span>                          | <span data-ttu-id="1d7ca-209">Globalt</span><span class="sxs-lookup"><span data-stu-id="1d7ca-209">Global</span></span>         |
+| <span data-ttu-id="1d7ca-210">Skapa en organisationshierarki</span><span class="sxs-lookup"><span data-stu-id="1d7ca-210">Create an organizational hierarchy</span></span>             | <span data-ttu-id="1d7ca-211">Globalt</span><span class="sxs-lookup"><span data-stu-id="1d7ca-211">Global</span></span>         |
+| <span data-ttu-id="1d7ca-212">Ställa in enskilda nummerserier</span><span class="sxs-lookup"><span data-stu-id="1d7ca-212">Set up number sequences on an individual basis</span></span> | <span data-ttu-id="1d7ca-213">Globalt</span><span class="sxs-lookup"><span data-stu-id="1d7ca-213">Global</span></span>         |
 
-### <a name="procurement-and-sourcing"></a>Anskaffning och källa
+### <a name="procurement-and-sourcing"></a><span data-ttu-id="1d7ca-214">Anskaffning och källa</span><span class="sxs-lookup"><span data-stu-id="1d7ca-214">Procurement and sourcing</span></span>
 
-| BPM-rad                                        | Land/region |
+| <span data-ttu-id="1d7ca-215">BPM-rad</span><span class="sxs-lookup"><span data-stu-id="1d7ca-215">BPM line</span></span>                                        | <span data-ttu-id="1d7ca-216">Land/region</span><span class="sxs-lookup"><span data-stu-id="1d7ca-216">Country/region</span></span> |
 |-------------------------------------------------|----------------|
-| Godkänna leverantörer för specifika produkter           | Globalt         |
-| Skapa en inköpsorder                         | Globalt         |
-| Skapa en anbudsförfrågan                  | Globalt         |
-| Ange och jämför anbudsförfråganbud och tilldela kontrakt | Globalt         |
+| <span data-ttu-id="1d7ca-217">Godkänna leverantörer för specifika produkter</span><span class="sxs-lookup"><span data-stu-id="1d7ca-217">Approve vendors for specific products</span></span>           | <span data-ttu-id="1d7ca-218">Globalt</span><span class="sxs-lookup"><span data-stu-id="1d7ca-218">Global</span></span>         |
+| <span data-ttu-id="1d7ca-219">Skapa en inköpsorder</span><span class="sxs-lookup"><span data-stu-id="1d7ca-219">Create a purchase order</span></span>                         | <span data-ttu-id="1d7ca-220">Globalt</span><span class="sxs-lookup"><span data-stu-id="1d7ca-220">Global</span></span>         |
+| <span data-ttu-id="1d7ca-221">Skapa en anbudsförfrågan</span><span class="sxs-lookup"><span data-stu-id="1d7ca-221">Create a request for quotation</span></span>                  | <span data-ttu-id="1d7ca-222">Globalt</span><span class="sxs-lookup"><span data-stu-id="1d7ca-222">Global</span></span>         |
+| <span data-ttu-id="1d7ca-223">Ange och jämför anbudsförfråganbud och tilldela kontrakt</span><span class="sxs-lookup"><span data-stu-id="1d7ca-223">Enter and compare RFQ bids, and award contracts</span></span> | <span data-ttu-id="1d7ca-224">Globalt</span><span class="sxs-lookup"><span data-stu-id="1d7ca-224">Global</span></span>         |
 
-### <a name="product-information-and-configuration"></a>Produktinformation och konfiguration
+### <a name="product-information-and-configuration"></a><span data-ttu-id="1d7ca-225">Produktinformation och konfiguration</span><span class="sxs-lookup"><span data-stu-id="1d7ca-225">Product information and configuration</span></span>
 
-| BPM-rad                                                 | Land/region |
+| <span data-ttu-id="1d7ca-226">BPM-rad</span><span class="sxs-lookup"><span data-stu-id="1d7ca-226">BPM line</span></span>                                                 | <span data-ttu-id="1d7ca-227">Land/region</span><span class="sxs-lookup"><span data-stu-id="1d7ca-227">Country/region</span></span> |
 |----------------------------------------------------------|----------------|
-| Skapa en ny produkt                                     | Globalt         |
-| Skapa dimensionsbaserade konfigurationer                    | Globalt         |
-| Skapa fördefinierade produktvarianter                       | Globalt         |
-| Skapa urvalskriterier för försäljningspris                    | Globalt         |
-| Ange order för konfigurerbara produkter                   | Globalt         |
-| Ställa in attributbaserad prissättning för konfigurerbara produkter | Globalt         |
+| <span data-ttu-id="1d7ca-228">Skapa en ny produkt</span><span class="sxs-lookup"><span data-stu-id="1d7ca-228">Create a new product</span></span>                                     | <span data-ttu-id="1d7ca-229">Globalt</span><span class="sxs-lookup"><span data-stu-id="1d7ca-229">Global</span></span>         |
+| <span data-ttu-id="1d7ca-230">Skapa dimensionsbaserade konfigurationer</span><span class="sxs-lookup"><span data-stu-id="1d7ca-230">Create dimension-based configurations</span></span>                    | <span data-ttu-id="1d7ca-231">Globalt</span><span class="sxs-lookup"><span data-stu-id="1d7ca-231">Global</span></span>         |
+| <span data-ttu-id="1d7ca-232">Skapa fördefinierade produktvarianter</span><span class="sxs-lookup"><span data-stu-id="1d7ca-232">Create predefined product variants</span></span>                       | <span data-ttu-id="1d7ca-233">Globalt</span><span class="sxs-lookup"><span data-stu-id="1d7ca-233">Global</span></span>         |
+| <span data-ttu-id="1d7ca-234">Skapa urvalskriterier för försäljningspris</span><span class="sxs-lookup"><span data-stu-id="1d7ca-234">Create sales price selection criteria</span></span>                    | <span data-ttu-id="1d7ca-235">Globalt</span><span class="sxs-lookup"><span data-stu-id="1d7ca-235">Global</span></span>         |
+| <span data-ttu-id="1d7ca-236">Ange order för konfigurerbara produkter</span><span class="sxs-lookup"><span data-stu-id="1d7ca-236">Enter orders for configurable products</span></span>                   | <span data-ttu-id="1d7ca-237">Globalt</span><span class="sxs-lookup"><span data-stu-id="1d7ca-237">Global</span></span>         |
+| <span data-ttu-id="1d7ca-238">Ställa in attributbaserad prissättning för konfigurerbara produkter</span><span class="sxs-lookup"><span data-stu-id="1d7ca-238">Set up attribute-based pricing for configurable products</span></span> | <span data-ttu-id="1d7ca-239">Globalt</span><span class="sxs-lookup"><span data-stu-id="1d7ca-239">Global</span></span>         |
 
-### <a name="retail-and-commerce"></a>Butik och handel
+### <a name="retail-and-commerce"></a><span data-ttu-id="1d7ca-240">Butik och handel</span><span class="sxs-lookup"><span data-stu-id="1d7ca-240">Retail and commerce</span></span>
 
-| BPM-rad                                                           | Land/region |
+| <span data-ttu-id="1d7ca-241">BPM-rad</span><span class="sxs-lookup"><span data-stu-id="1d7ca-241">BPM line</span></span>                                                           | <span data-ttu-id="1d7ca-242">Land/region</span><span class="sxs-lookup"><span data-stu-id="1d7ca-242">Country/region</span></span> |
 |--------------------------------------------------------------------|----------------|
-| Tilldela uppgifter                                                       | Globalt         |
-| Konfigurera och köra återkommande jobb för att uppdatera lager                | Globalt         |
-| Direktleverera produkter från det mottagande lagerstället som ska lagras              | Globalt         |
-| Skjut produkter från distributionscenter om du vill lagra med hjälp av centraliserad distribution | Globalt         |
+| <span data-ttu-id="1d7ca-243">Tilldela uppgifter</span><span class="sxs-lookup"><span data-stu-id="1d7ca-243">Assign tasks</span></span>                                                       | <span data-ttu-id="1d7ca-244">Globalt</span><span class="sxs-lookup"><span data-stu-id="1d7ca-244">Global</span></span>         |
+| <span data-ttu-id="1d7ca-245">Konfigurera och köra återkommande jobb för att uppdatera lager</span><span class="sxs-lookup"><span data-stu-id="1d7ca-245">Configure and run recurrent job to update inventory</span></span>                | <span data-ttu-id="1d7ca-246">Globalt</span><span class="sxs-lookup"><span data-stu-id="1d7ca-246">Global</span></span>         |
+| <span data-ttu-id="1d7ca-247">Direktleverera produkter från det mottagande lagerstället som ska lagras</span><span class="sxs-lookup"><span data-stu-id="1d7ca-247">Cross dock products from receiving warehouse to store</span></span>              | <span data-ttu-id="1d7ca-248">Globalt</span><span class="sxs-lookup"><span data-stu-id="1d7ca-248">Global</span></span>         |
+| <span data-ttu-id="1d7ca-249">Skjut produkter från distributionscenter om du vill lagra med hjälp av centraliserad distribution</span><span class="sxs-lookup"><span data-stu-id="1d7ca-249">Push products from distribution center to store using buyer's push</span></span> | <span data-ttu-id="1d7ca-250">Globalt</span><span class="sxs-lookup"><span data-stu-id="1d7ca-250">Global</span></span>         |
 
-### <a name="security"></a>Säkerhet
+### <a name="security"></a><span data-ttu-id="1d7ca-251">Säkerhet</span><span class="sxs-lookup"><span data-stu-id="1d7ca-251">Security</span></span>
 
-| BPM-rad                       | Land/region |
+| <span data-ttu-id="1d7ca-252">BPM-rad</span><span class="sxs-lookup"><span data-stu-id="1d7ca-252">BPM line</span></span>                       | <span data-ttu-id="1d7ca-253">Land/region</span><span class="sxs-lookup"><span data-stu-id="1d7ca-253">Country/region</span></span> |
 |--------------------------------|----------------|
-| Tilldela användare till säkerhetsroller | Globalt         |
+| <span data-ttu-id="1d7ca-254">Tilldela användare till säkerhetsroller</span><span class="sxs-lookup"><span data-stu-id="1d7ca-254">Assign users to security roles</span></span> | <span data-ttu-id="1d7ca-255">Globalt</span><span class="sxs-lookup"><span data-stu-id="1d7ca-255">Global</span></span>         |
 
-### <a name="sales-tax"></a>Moms
+### <a name="sales-tax"></a><span data-ttu-id="1d7ca-256">Moms</span><span class="sxs-lookup"><span data-stu-id="1d7ca-256">Sales tax</span></span>
 
-| BPM-rad                                           | Land/region |
+| <span data-ttu-id="1d7ca-257">BPM-rad</span><span class="sxs-lookup"><span data-stu-id="1d7ca-257">BPM line</span></span>                                           | <span data-ttu-id="1d7ca-258">Land/region</span><span class="sxs-lookup"><span data-stu-id="1d7ca-258">Country/region</span></span> |
 |----------------------------------------------------|----------------|
-| Beräkna och justera moms på en leverantörsfaktura | Globalt         |
-| Skapa en momsbetalning                         | Globalt         |
-| Skapa momstransaktioner på dokument         | Globalt         |
-| Ställ in redovisningsbokföringsgrupper för moms         | Globalt         |
-| Ställ in momsmyndigheter                       | Globalt         |
-| Ställ in momskoder                             | Globalt         |
-| Ställa in momsgrupper och artikelmomsgrupper  | Globalt         |
-| Ställ in momsrapporteringskoder                   | Globalt         |
-| Ställ in momskvittningsperioder                | Globalt         |
-| Ställa in källskatt                             | Globalt         |
-| Visa bokförda momstransaktioner                 | Globalt         |
+| <span data-ttu-id="1d7ca-259">Beräkna och justera moms på en leverantörsfaktura</span><span class="sxs-lookup"><span data-stu-id="1d7ca-259">Calculate and adjust sales tax on a vendor invoice</span></span> | <span data-ttu-id="1d7ca-260">Globalt</span><span class="sxs-lookup"><span data-stu-id="1d7ca-260">Global</span></span>         |
+| <span data-ttu-id="1d7ca-261">Skapa en momsbetalning</span><span class="sxs-lookup"><span data-stu-id="1d7ca-261">Create a sales tax payment</span></span>                         | <span data-ttu-id="1d7ca-262">Globalt</span><span class="sxs-lookup"><span data-stu-id="1d7ca-262">Global</span></span>         |
+| <span data-ttu-id="1d7ca-263">Skapa momstransaktioner på dokument</span><span class="sxs-lookup"><span data-stu-id="1d7ca-263">Create sales tax transactions on documents</span></span>         | <span data-ttu-id="1d7ca-264">Globalt</span><span class="sxs-lookup"><span data-stu-id="1d7ca-264">Global</span></span>         |
+| <span data-ttu-id="1d7ca-265">Ställ in redovisningsbokföringsgrupper för moms</span><span class="sxs-lookup"><span data-stu-id="1d7ca-265">Set up ledger posting groups for sales tax</span></span>         | <span data-ttu-id="1d7ca-266">Globalt</span><span class="sxs-lookup"><span data-stu-id="1d7ca-266">Global</span></span>         |
+| <span data-ttu-id="1d7ca-267">Ställ in momsmyndigheter</span><span class="sxs-lookup"><span data-stu-id="1d7ca-267">Set up sales tax authorities</span></span>                       | <span data-ttu-id="1d7ca-268">Globalt</span><span class="sxs-lookup"><span data-stu-id="1d7ca-268">Global</span></span>         |
+| <span data-ttu-id="1d7ca-269">Ställ in momskoder</span><span class="sxs-lookup"><span data-stu-id="1d7ca-269">Set up sales tax codes</span></span>                             | <span data-ttu-id="1d7ca-270">Globalt</span><span class="sxs-lookup"><span data-stu-id="1d7ca-270">Global</span></span>         |
+| <span data-ttu-id="1d7ca-271">Ställa in momsgrupper och artikelmomsgrupper</span><span class="sxs-lookup"><span data-stu-id="1d7ca-271">Set up sales tax groups and item sales tax groups</span></span>  | <span data-ttu-id="1d7ca-272">Globalt</span><span class="sxs-lookup"><span data-stu-id="1d7ca-272">Global</span></span>         |
+| <span data-ttu-id="1d7ca-273">Ställ in momsrapporteringskoder</span><span class="sxs-lookup"><span data-stu-id="1d7ca-273">Set up sales tax reporting codes</span></span>                   | <span data-ttu-id="1d7ca-274">Globalt</span><span class="sxs-lookup"><span data-stu-id="1d7ca-274">Global</span></span>         |
+| <span data-ttu-id="1d7ca-275">Ställ in momskvittningsperioder</span><span class="sxs-lookup"><span data-stu-id="1d7ca-275">Set up sales tax settlement periods</span></span>                | <span data-ttu-id="1d7ca-276">Globalt</span><span class="sxs-lookup"><span data-stu-id="1d7ca-276">Global</span></span>         |
+| <span data-ttu-id="1d7ca-277">Ställa in källskatt</span><span class="sxs-lookup"><span data-stu-id="1d7ca-277">Set up withholding tax</span></span>                             | <span data-ttu-id="1d7ca-278">Globalt</span><span class="sxs-lookup"><span data-stu-id="1d7ca-278">Global</span></span>         |
+| <span data-ttu-id="1d7ca-279">Visa bokförda momstransaktioner</span><span class="sxs-lookup"><span data-stu-id="1d7ca-279">View posted sales tax transactions</span></span>                 | <span data-ttu-id="1d7ca-280">Globalt</span><span class="sxs-lookup"><span data-stu-id="1d7ca-280">Global</span></span>         |
 
-### <a name="security"></a>Säkerhet
+### <a name="security"></a><span data-ttu-id="1d7ca-281">Säkerhet</span><span class="sxs-lookup"><span data-stu-id="1d7ca-281">Security</span></span>
 
-| BPM-rad                                                | Land/region |
+| <span data-ttu-id="1d7ca-282">BPM-rad</span><span class="sxs-lookup"><span data-stu-id="1d7ca-282">BPM line</span></span>                                                | <span data-ttu-id="1d7ca-283">Land/region</span><span class="sxs-lookup"><span data-stu-id="1d7ca-283">Country/region</span></span> |
 |---------------------------------------------------------|----------------|
-| Skapa nya användare                                        | Globalt         |
-| Identifiera och lösa konflikter vid ansvarsfördelning | Globalt         |
-| Ställ in ansvarsfördelning                            | Globalt         |
+| <span data-ttu-id="1d7ca-284">Skapa nya användare</span><span class="sxs-lookup"><span data-stu-id="1d7ca-284">Create new users</span></span>                                        | <span data-ttu-id="1d7ca-285">Globalt</span><span class="sxs-lookup"><span data-stu-id="1d7ca-285">Global</span></span>         |
+| <span data-ttu-id="1d7ca-286">Identifiera och lösa konflikter vid ansvarsfördelning</span><span class="sxs-lookup"><span data-stu-id="1d7ca-286">Identify and resolve conflicts in segregation of duties</span></span> | <span data-ttu-id="1d7ca-287">Globalt</span><span class="sxs-lookup"><span data-stu-id="1d7ca-287">Global</span></span>         |
+| <span data-ttu-id="1d7ca-288">Ställ in ansvarsfördelning</span><span class="sxs-lookup"><span data-stu-id="1d7ca-288">Set up segregation of duties</span></span>                            | <span data-ttu-id="1d7ca-289">Globalt</span><span class="sxs-lookup"><span data-stu-id="1d7ca-289">Global</span></span>         |
 
-### <a name="warehouse-and-transportation"></a>Lager- och transport
+### <a name="warehouse-and-transportation"></a><span data-ttu-id="1d7ca-290">Lager- och transport</span><span class="sxs-lookup"><span data-stu-id="1d7ca-290">Warehouse and transportation</span></span>
 
-| BPM-rad                                                            | Land/region |
+| <span data-ttu-id="1d7ca-291">BPM-rad</span><span class="sxs-lookup"><span data-stu-id="1d7ca-291">BPM line</span></span>                                                            | <span data-ttu-id="1d7ca-292">Land/region</span><span class="sxs-lookup"><span data-stu-id="1d7ca-292">Country/region</span></span> |
 |---------------------------------------------------------------------|----------------|
-| Konfigurera påfyllnadsbearbetning                                           | Globalt         |
-| **\***Rapportera som färdig till en ej registreringsskyltstyrd plats | Globalt         |
-| Ställa in en min-max process för lagerpåfyllnad                              | Globalt         |
-| Ställa in skapande av behållare                                             | Globalt         |
-| Ställa in manuell förpackning                                               | Globalt         |
-| Ställa in transportbegränsningar för en artikel                       | Globalt         |
-| **\***Konfigurera policyer för lagerarbete                                | Globalt         |
+| <span data-ttu-id="1d7ca-293">Konfigurera påfyllnadsbearbetning</span><span class="sxs-lookup"><span data-stu-id="1d7ca-293">Configure wave processing</span></span>                                           | <span data-ttu-id="1d7ca-294">Globalt</span><span class="sxs-lookup"><span data-stu-id="1d7ca-294">Global</span></span>         |
+| <span data-ttu-id="1d7ca-295">**\***Rapportera som färdig till en ej registreringsskyltstyrd plats</span><span class="sxs-lookup"><span data-stu-id="1d7ca-295">**\***Report as finished to a non-license plate controlled location</span></span> | <span data-ttu-id="1d7ca-296">Globalt</span><span class="sxs-lookup"><span data-stu-id="1d7ca-296">Global</span></span>         |
+| <span data-ttu-id="1d7ca-297">Ställa in en min-max process för lagerpåfyllnad</span><span class="sxs-lookup"><span data-stu-id="1d7ca-297">Set up a min-max replenishment process</span></span>                              | <span data-ttu-id="1d7ca-298">Globalt</span><span class="sxs-lookup"><span data-stu-id="1d7ca-298">Global</span></span>         |
+| <span data-ttu-id="1d7ca-299">Ställa in skapande av behållare</span><span class="sxs-lookup"><span data-stu-id="1d7ca-299">Set up containerization</span></span>                                             | <span data-ttu-id="1d7ca-300">Globalt</span><span class="sxs-lookup"><span data-stu-id="1d7ca-300">Global</span></span>         |
+| <span data-ttu-id="1d7ca-301">Ställa in manuell förpackning</span><span class="sxs-lookup"><span data-stu-id="1d7ca-301">Set up manual packing</span></span>                                               | <span data-ttu-id="1d7ca-302">Globalt</span><span class="sxs-lookup"><span data-stu-id="1d7ca-302">Global</span></span>         |
+| <span data-ttu-id="1d7ca-303">Ställa in transportbegränsningar för en artikel</span><span class="sxs-lookup"><span data-stu-id="1d7ca-303">Set up transportation constraints for an item</span></span>                       | <span data-ttu-id="1d7ca-304">Globalt</span><span class="sxs-lookup"><span data-stu-id="1d7ca-304">Global</span></span>         |
+| <span data-ttu-id="1d7ca-305">**\***Konfigurera policyer för lagerarbete</span><span class="sxs-lookup"><span data-stu-id="1d7ca-305">**\***Set up warehouse work policies</span></span>                                | <span data-ttu-id="1d7ca-306">Globalt</span><span class="sxs-lookup"><span data-stu-id="1d7ca-306">Global</span></span>         |
 
 
 
-<a name="see-also"></a>Se även
+<a name="see-also"></a><span data-ttu-id="1d7ca-307">Se även</span><span class="sxs-lookup"><span data-stu-id="1d7ca-307">See also</span></span>
 --------
 
-[Nya uppgiftguider tillgängliga (februari 2016)](new-task-guides-available-february-2016.md)
+[<span data-ttu-id="1d7ca-308">Nya uppgiftguider tillgängliga (februari 2016)</span><span class="sxs-lookup"><span data-stu-id="1d7ca-308">New Task guides (February 2016)</span></span>](new-task-guides-available-february-2016.md)
 
-[Nya eller uppdaterade uppgiftsguider (augusti 2016)](new-updated-task-guides-available-august-2016.md)
+[<span data-ttu-id="1d7ca-309">Nya eller uppdaterade uppgiftsguider (augusti 2016)</span><span class="sxs-lookup"><span data-stu-id="1d7ca-309">New or updated Task guides (August 2016)</span></span>](new-updated-task-guides-available-august-2016.md)
 
-[Nya eller uppdaterade uppgiftsguider (november 2016)](new-task-guides-november-2016.md)
+[<span data-ttu-id="1d7ca-310">Nya eller uppdaterade uppgiftsguider (november 2016)</span><span class="sxs-lookup"><span data-stu-id="1d7ca-310">New or updated Task guides (November 2016)</span></span>](new-task-guides-november-2016.md)
 
 
 

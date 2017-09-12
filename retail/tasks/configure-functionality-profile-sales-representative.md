@@ -17,23 +17,23 @@ ms.author: jeffbl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: 3312ad115d7c4429b5a1a45c8117247a9fa97954
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: d545090daea6f5d4ec2e045da07f7dc1f756f560
 ms.contentlocale: sv-se
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="configure-the-functionality-profile-for-a-sales-representative"></a> Konfigurera funktionsprofilen för en säljare
+# <a name="configure-the-functionality-profile-for-a-sales-representative"></a><span data-ttu-id="5c213-103"> Konfigurera funktionsprofilen för en säljare</span><span class="sxs-lookup"><span data-stu-id="5c213-103">Configure the functionality profile for a sales representative</span></span>
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-I den här proceduren visas hur du konfigurerar en butiks funktionsprofilinställningar som gäller för säljare. Denna procedur använder demonstrationsföretaget USRT.
+<span data-ttu-id="5c213-104">I den här proceduren visas hur du konfigurerar en butiks funktionsprofilinställningar som gäller för säljare.</span><span class="sxs-lookup"><span data-stu-id="5c213-104">This procedure demonstrates how to configure a store's functionality profile settings that apply to sales representatives.</span></span> <span data-ttu-id="5c213-105">Denna procedur använder demonstrationsföretaget USRT.</span><span class="sxs-lookup"><span data-stu-id="5c213-105">This procedures uses the USRT demo data company.</span></span>
 
-1. Gå till Butik och handel > Kanalinställning > Kassainställning > Kassaprofil > Funktionsprofiler.
-2. Klicka på Redigera.
-3. Expandera avsnittet Functions.
-    * Du kan använda funktionsprofilinställningarna för att konfigurera kassan så att den automatiskt lägger till kassörens förvalda försäljningsgrupp, samt för att begära försäljningsgrupper.  
-4. Välj ett alternativ i fältet Prompt for sales representative.
-5. Välj Yes i fältet Require sales representative.
+1. <span data-ttu-id="5c213-106">Gå till Butik och handel > Kanalinställning > Kassainställning > Kassaprofil > Funktionsprofiler.</span><span class="sxs-lookup"><span data-stu-id="5c213-106">Go to Retail and commerce > Channel setup > POS setup > POS profiles > Functionality profiles.</span></span>
+2. <span data-ttu-id="5c213-107">Klicka på Redigera.</span><span class="sxs-lookup"><span data-stu-id="5c213-107">Click Edit.</span></span>
+3. <span data-ttu-id="5c213-108">Expandera avsnittet Functions.</span><span class="sxs-lookup"><span data-stu-id="5c213-108">Expand the Functions section.</span></span>
+    * <span data-ttu-id="5c213-109">Du kan använda funktionsprofilinställningarna för att konfigurera kassan så att den automatiskt lägger till kassörens förvalda försäljningsgrupp, samt för att begära försäljningsgrupper.</span><span class="sxs-lookup"><span data-stu-id="5c213-109">You can use the functionality profile settings to configure POS to automatically add the cashier's default sales group, to prompt for sales groups, and to require sales groups.</span></span>  
+4. <span data-ttu-id="5c213-110">Välj ett alternativ i fältet Prompt for sales representative.</span><span class="sxs-lookup"><span data-stu-id="5c213-110">In the Prompt for sales representative field, select an option.</span></span>
+5. <span data-ttu-id="5c213-111">Välj Yes i fältet Require sales representative.</span><span class="sxs-lookup"><span data-stu-id="5c213-111">Select Yes in the Require sales representative field.</span></span>
 
 

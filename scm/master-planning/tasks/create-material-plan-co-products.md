@@ -16,55 +16,55 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 4eb36b0de53f40f882950628d55d6ac08ac5fdde
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: c8805ca02525ae001fbd5e10ad9405fe60c7473e
 ms.contentlocale: sv-se
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-a-material-plan-for-co-products"></a>Skapa en materialplan för samprodukter
+# <a name="create-a-material-plan-for-co-products"></a><span data-ttu-id="e8b84-103">Skapa en materialplan för samprodukter</span><span class="sxs-lookup"><span data-stu-id="e8b84-103">Create a material plan for co-products</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Produktionsplaneraren planerar materialbehoven för de artiklar som är samprodukter för formeln. Det demonstrationsdataföretag som används för att skapa den här proceduren är USP2.
+<span data-ttu-id="e8b84-104">Produktionsplaneraren planerar materialbehoven för de artiklar som är samprodukter för formeln.</span><span class="sxs-lookup"><span data-stu-id="e8b84-104">The production planner plans the material requirements for items that are formula co-products.</span></span> <span data-ttu-id="e8b84-105">Det demonstrationsdataföretag som används för att skapa den här proceduren är USP2.</span><span class="sxs-lookup"><span data-stu-id="e8b84-105">The demo data company used to create this procedure is USP2.</span></span>
 
 
-## <a name="create-requirement-for-a-co-product"></a>Skapa behov för en samprodukt
-1. Gå till standardinstrumentpanelen.
-2. Klicka på Bearbetning och förfrågan om försäljningsorder.
-3. Klicka på Ny.
-4. Klicka på Försäljningsorder.
-5. Ange ett värde i fältet Kundkonto.
-    * Exempel: US-001  
-6. Klicka på OK.
-7. Skriv ett värde i fältet Artikelnummer.
-    * Exempel: P6003  
-8. Ange ett tal i fältet Kvantitet.
-    * Exempel: 50 000  
-9. Klicka på Spara.
+## <a name="create-requirement-for-a-co-product"></a><span data-ttu-id="e8b84-106">Skapa behov för en samprodukt</span><span class="sxs-lookup"><span data-stu-id="e8b84-106">Create requirement for a co-product</span></span>
+1. <span data-ttu-id="e8b84-107">Gå till standardinstrumentpanelen.</span><span class="sxs-lookup"><span data-stu-id="e8b84-107">Go to Default dashboard.</span></span>
+2. <span data-ttu-id="e8b84-108">Klicka på Bearbetning och förfrågan om försäljningsorder.</span><span class="sxs-lookup"><span data-stu-id="e8b84-108">Click Sales order processing and inquiry.</span></span>
+3. <span data-ttu-id="e8b84-109">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="e8b84-109">Click New.</span></span>
+4. <span data-ttu-id="e8b84-110">Klicka på Försäljningsorder.</span><span class="sxs-lookup"><span data-stu-id="e8b84-110">Click Sales order.</span></span>
+5. <span data-ttu-id="e8b84-111">Ange ett värde i fältet Kundkonto.</span><span class="sxs-lookup"><span data-stu-id="e8b84-111">In the Customer account field, type a value.</span></span>
+    * <span data-ttu-id="e8b84-112">Exempel: US-001</span><span class="sxs-lookup"><span data-stu-id="e8b84-112">Example: US-001</span></span>  
+6. <span data-ttu-id="e8b84-113">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="e8b84-113">Click OK.</span></span>
+7. <span data-ttu-id="e8b84-114">Skriv ett värde i fältet Artikelnummer.</span><span class="sxs-lookup"><span data-stu-id="e8b84-114">In the Item number field, type a value.</span></span>
+    * <span data-ttu-id="e8b84-115">Exempel: P6003</span><span class="sxs-lookup"><span data-stu-id="e8b84-115">Example: P6003</span></span>  
+8. <span data-ttu-id="e8b84-116">Ange ett tal i fältet Kvantitet.</span><span class="sxs-lookup"><span data-stu-id="e8b84-116">In the Quantity field, enter a number.</span></span>
+    * <span data-ttu-id="e8b84-117">Exempel: 50 000</span><span class="sxs-lookup"><span data-stu-id="e8b84-117">Example: 50000</span></span>  
+9. <span data-ttu-id="e8b84-118">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="e8b84-118">Click Save.</span></span>
 
-## <a name="create-a-material-plan-for-co-products"></a>Skapa en materialplan för samprodukter
-1. Klcka på Huvudplanering.
-2. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Plan.
-3. Klicka på länken på den valda raden i listan.
-    * Exempel: MasterPlan  
-4. Klicka på Kör.
-5. Utöka eller komprimera avsnittet Poster som ska ingå.
-6. Klicka på Filter.
-7. Välj raden för fält = artikelnummer i listan.
-8. Ange ett värde i fältet Kriterier.
-    * Exempel: P6003  
-9. Klicka på OK.
-10. Klicka på OK.
-11. Klicka på Planerade order.
-12. Använd snabbfiltret för att söka efter poster. Filtrera till exempel i fältet Artikelnummer med värdet "P6000".
-    * Filtrera efter den receptartikel som har en samprodukt för den artikel som du har skapat en försäljningsorder för.  
-13. Markera vald rad i listan.
-    * Välj någon av de rader som returneras av filtret.  
-14. Klicka på länken på den valda raden i listan.
-15. Expandera eller komprimera avsnittet Pegging.
-16. Klicka på länken på den valda raden i listan.
-    * Den planerade ordern peggas till försäljningsordern för samprodukten.  
-17. Stäng sidan.
+## <a name="create-a-material-plan-for-co-products"></a><span data-ttu-id="e8b84-119">Skapa en materialplan för samprodukter</span><span class="sxs-lookup"><span data-stu-id="e8b84-119">Create a material plan for co-products</span></span>
+1. <span data-ttu-id="e8b84-120">Klcka på Huvudplanering.</span><span class="sxs-lookup"><span data-stu-id="e8b84-120">Click Master planning.</span></span>
+2. <span data-ttu-id="e8b84-121">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Plan.</span><span class="sxs-lookup"><span data-stu-id="e8b84-121">In the Plan field, click the drop-down button to open the lookup.</span></span>
+3. <span data-ttu-id="e8b84-122">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="e8b84-122">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="e8b84-123">Exempel: MasterPlan</span><span class="sxs-lookup"><span data-stu-id="e8b84-123">Example: MasterPlan</span></span>  
+4. <span data-ttu-id="e8b84-124">Klicka på Kör.</span><span class="sxs-lookup"><span data-stu-id="e8b84-124">Click Run.</span></span>
+5. <span data-ttu-id="e8b84-125">Utöka eller komprimera avsnittet Poster som ska ingå.</span><span class="sxs-lookup"><span data-stu-id="e8b84-125">Expand or collapse the Records to include section.</span></span>
+6. <span data-ttu-id="e8b84-126">Klicka på Filter.</span><span class="sxs-lookup"><span data-stu-id="e8b84-126">Click Filter.</span></span>
+7. <span data-ttu-id="e8b84-127">Välj raden för fält = artikelnummer i listan.</span><span class="sxs-lookup"><span data-stu-id="e8b84-127">In the list, select the row for Field = Item number.</span></span>
+8. <span data-ttu-id="e8b84-128">Ange ett värde i fältet Kriterier.</span><span class="sxs-lookup"><span data-stu-id="e8b84-128">In the Criteria field, type a value.</span></span>
+    * <span data-ttu-id="e8b84-129">Exempel: P6003</span><span class="sxs-lookup"><span data-stu-id="e8b84-129">Example: P6003</span></span>  
+9. <span data-ttu-id="e8b84-130">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="e8b84-130">Click OK.</span></span>
+10. <span data-ttu-id="e8b84-131">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="e8b84-131">Click OK.</span></span>
+11. <span data-ttu-id="e8b84-132">Klicka på Planerade order.</span><span class="sxs-lookup"><span data-stu-id="e8b84-132">Click Planned orders.</span></span>
+12. <span data-ttu-id="e8b84-133">Använd snabbfiltret för att söka efter poster.</span><span class="sxs-lookup"><span data-stu-id="e8b84-133">Use the Quick Filter to find records.</span></span> <span data-ttu-id="e8b84-134">Filtrera till exempel i fältet Artikelnummer med värdet "P6000".</span><span class="sxs-lookup"><span data-stu-id="e8b84-134">For example, filter on the Item number field with a value of 'P6000'.</span></span>
+    * <span data-ttu-id="e8b84-135">Filtrera efter den receptartikel som har en samprodukt för den artikel som du har skapat en försäljningsorder för.</span><span class="sxs-lookup"><span data-stu-id="e8b84-135">Filter by the formula item that has as co-product of the item that you created a sales order for.</span></span>  
+13. <span data-ttu-id="e8b84-136">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="e8b84-136">In the list, mark the selected row.</span></span>
+    * <span data-ttu-id="e8b84-137">Välj någon av de rader som returneras av filtret.</span><span class="sxs-lookup"><span data-stu-id="e8b84-137">Select any of the rows returned by the filter.</span></span>  
+14. <span data-ttu-id="e8b84-138">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="e8b84-138">In the list, click the link in the selected row.</span></span>
+15. <span data-ttu-id="e8b84-139">Expandera eller komprimera avsnittet Pegging.</span><span class="sxs-lookup"><span data-stu-id="e8b84-139">Expand or collapse the Pegging section.</span></span>
+16. <span data-ttu-id="e8b84-140">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="e8b84-140">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="e8b84-141">Den planerade ordern peggas till försäljningsordern för samprodukten.</span><span class="sxs-lookup"><span data-stu-id="e8b84-141">The planned order is pegged to the sales order for the co-product.</span></span>  
+17. <span data-ttu-id="e8b84-142">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="e8b84-142">Close the page.</span></span>
 
 

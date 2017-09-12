@@ -16,45 +16,45 @@ ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: ce1b0ebe41974d3e176caee9ca7dd5e79676b401
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 1bb1663b0f5d7e6a550e1ffd2ee2edf3771a13b3
 ms.contentlocale: sv-se
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-advanced-rules-for-journals"></a>Skapa avancerade regler för journaler
+# <a name="create-advanced-rules-for-journals"></a><span data-ttu-id="00595-103">Skapa avancerade regler för journaler</span><span class="sxs-lookup"><span data-stu-id="00595-103">Create advanced rules for journals</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Den här proceduren går igenom hur du kan skapa avancerade regler för journaler. Detta inkluderar att ställa in begränsningar för journalkontroll och användarbokföring. I proceduren används demonstrationsföretag USMF.
+<span data-ttu-id="00595-104">Den här proceduren går igenom hur du kan skapa avancerade regler för journaler.</span><span class="sxs-lookup"><span data-stu-id="00595-104">This procedure steps through creating advanced rules for journals.</span></span> <span data-ttu-id="00595-105">Detta inkluderar att ställa in begränsningar för journalkontroll och användarbokföring.</span><span class="sxs-lookup"><span data-stu-id="00595-105">This includes setting up journal control and user posting restrictions.</span></span> <span data-ttu-id="00595-106">I proceduren används demonstrationsföretag USMF.</span><span class="sxs-lookup"><span data-stu-id="00595-106">This procedure uses the USMF demo data company.</span></span>
 
 
-## <a name="set-up-journal-control"></a>Ställ in journalkontroll
-1. Gå till Redovisning > Journalkonfigurering > Journalnamn.
-2. Hitta och markera önskad post i listan.
-3. Klicka på Journalkontroll.
-4. Klicka på Lägg till.
-5. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Företagskonton.
-6. Hitta och markera önskad post i listan.
-7. Klicka på länken på den valda raden i listan.
-8. Klicka på Lägg till.
-9. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Kontostruktur.
-10. Hitta och markera önskad post i listan.
-11. Klicka på länken på den valda raden i listan.
-12. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Segment.
-13. Klicka på länken på den valda raden i listan.
-14. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Från-värde.
-15. Hitta och markera önskad post i listan.
-16. Klicka på länken på den valda raden i listan.
-17. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Till-värde.
-18. Hitta och markera önskad post i listan.
-19. Klicka på länken på den valda raden i listan.
+## <a name="set-up-journal-control"></a><span data-ttu-id="00595-107">Ställ in journalkontroll</span><span class="sxs-lookup"><span data-stu-id="00595-107">Set up journal control</span></span>
+1. <span data-ttu-id="00595-108">Gå till Redovisning > Journalkonfigurering > Journalnamn.</span><span class="sxs-lookup"><span data-stu-id="00595-108">Go to General ledger > Journal setup > Journal names.</span></span>
+2. <span data-ttu-id="00595-109">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="00595-109">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="00595-110">Klicka på Journalkontroll.</span><span class="sxs-lookup"><span data-stu-id="00595-110">Click Journal control.</span></span>
+4. <span data-ttu-id="00595-111">Klicka på Lägg till.</span><span class="sxs-lookup"><span data-stu-id="00595-111">Click Add.</span></span>
+5. <span data-ttu-id="00595-112">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Företagskonton.</span><span class="sxs-lookup"><span data-stu-id="00595-112">In the Company accounts field, click the drop-down button to open the lookup.</span></span>
+6. <span data-ttu-id="00595-113">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="00595-113">In the list, find and select the desired record.</span></span>
+7. <span data-ttu-id="00595-114">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="00595-114">In the list, click the link in the selected row.</span></span>
+8. <span data-ttu-id="00595-115">Klicka på Lägg till.</span><span class="sxs-lookup"><span data-stu-id="00595-115">Click Add.</span></span>
+9. <span data-ttu-id="00595-116">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Kontostruktur.</span><span class="sxs-lookup"><span data-stu-id="00595-116">In the Account structure field, click the drop-down button to open the lookup.</span></span>
+10. <span data-ttu-id="00595-117">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="00595-117">In the list, find and select the desired record.</span></span>
+11. <span data-ttu-id="00595-118">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="00595-118">In the list, click the link in the selected row.</span></span>
+12. <span data-ttu-id="00595-119">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Segment.</span><span class="sxs-lookup"><span data-stu-id="00595-119">In the Segment field, click the drop-down button to open the lookup.</span></span>
+13. <span data-ttu-id="00595-120">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="00595-120">In the list, click the link in the selected row.</span></span>
+14. <span data-ttu-id="00595-121">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Från-värde.</span><span class="sxs-lookup"><span data-stu-id="00595-121">In the From value field, click the drop-down button to open the lookup.</span></span>
+15. <span data-ttu-id="00595-122">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="00595-122">In the list, find and select the desired record.</span></span>
+16. <span data-ttu-id="00595-123">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="00595-123">In the list, click the link in the selected row.</span></span>
+17. <span data-ttu-id="00595-124">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Till-värde.</span><span class="sxs-lookup"><span data-stu-id="00595-124">In the To value field, click the drop-down button to open the lookup.</span></span>
+18. <span data-ttu-id="00595-125">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="00595-125">In the list, find and select the desired record.</span></span>
+19. <span data-ttu-id="00595-126">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="00595-126">In the list, click the link in the selected row.</span></span>
 
-## <a name="set-up-posting-restrictions"></a>Konfigurera bokföringsrestriktioner
-1. Stäng sidan.
-2. Klicka på Bokföringsrestriktioner.
-3. Välj Efter användargrupp i Hur vill du ställa in bokföringsrestriktioner.
-4. Markera gruppen du vill tillåta bokföring för när det gäller journalnamnet i trädet.
-5. Klicka på OK.
+## <a name="set-up-posting-restrictions"></a><span data-ttu-id="00595-127">Konfigurera bokföringsrestriktioner</span><span class="sxs-lookup"><span data-stu-id="00595-127">Set up posting restrictions</span></span>
+1. <span data-ttu-id="00595-128">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="00595-128">Close the page.</span></span>
+2. <span data-ttu-id="00595-129">Klicka på Bokföringsrestriktioner.</span><span class="sxs-lookup"><span data-stu-id="00595-129">Click Posting restrictions.</span></span>
+3. <span data-ttu-id="00595-130">Välj Efter användargrupp i Hur vill du ställa in bokföringsrestriktioner.</span><span class="sxs-lookup"><span data-stu-id="00595-130">In the How do you want to set up posting restrictions, select By user group.</span></span>
+4. <span data-ttu-id="00595-131">Markera gruppen du vill tillåta bokföring för när det gäller journalnamnet i trädet.</span><span class="sxs-lookup"><span data-stu-id="00595-131">In the tree, check 'the group that you want to allow posting for this journal name.'.</span></span>
+5. <span data-ttu-id="00595-132">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="00595-132">Click OK.</span></span>
 
 

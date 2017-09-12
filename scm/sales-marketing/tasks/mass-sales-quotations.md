@@ -16,88 +16,88 @@ ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: bb32fbf14e7a96481dd78059e0299e33e754c0d7
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 1fcb2c4d47f0c8e701be025e0554ed476693d732
 ms.contentlocale: sv-se
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="mass-create-sales-quotations"></a>Masskapa försäljningsofferter
+# <a name="mass-create-sales-quotations"></a><span data-ttu-id="406ab-103">Masskapa försäljningsofferter</span><span class="sxs-lookup"><span data-stu-id="406ab-103">Mass create sales quotations</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-I den här proceduren visas hur du skapar offerter med en uppsättning produkter eller tjänster som ska skickas till flera kunder. Den här genereringen av massofferter baseras på offertmallar. Du kan köra den här proceduren med dina egna uppgifter i demonstrationsföretaget USMF.
+<span data-ttu-id="406ab-104">I den här proceduren visas hur du skapar offerter med en uppsättning produkter eller tjänster som ska skickas till flera kunder.</span><span class="sxs-lookup"><span data-stu-id="406ab-104">This procedure demonstrates how to efficiently create quotations offering a set of products or services that are to be sent to multiple customers.</span></span> <span data-ttu-id="406ab-105">Den här genereringen av massofferter baseras på offertmallar.</span><span class="sxs-lookup"><span data-stu-id="406ab-105">This mass quotation creation is based on quotation templates.</span></span> <span data-ttu-id="406ab-106">Du kan köra den här proceduren med dina egna uppgifter i demonstrationsföretaget USMF.</span><span class="sxs-lookup"><span data-stu-id="406ab-106">You can run this procedure on your own data or in demo data company USMF.</span></span>
 
 
-## <a name="create-a-quotation-template"></a>Skapa en offertmall
-1. Gå till försäljning och marknadsföring > Installation > offerter > Template Groups.
-2. Klicka på Ny.
-3. Ange ett id i fältet Grupp-ID.
-4. Ange ett värde i fältet Beskrivning.
-5. Klicka på Spara.
-6. Stäng sidan.
-7. Gå till försäljning och marknadsföring > offerter > Alla offerter.
-8. Klicka på Ny.
-9. I fältet Kontotyp väljer du "Kund".
-10. I fältet Kundkonto, ange eller välj ett värde.
-11. Klicka på OK.
-    * För att en offert ska kunna bli en mall, måste du utföra inställningssteg i offerthuvudet. Detta måste göras innan du lägger till rader i offerten.   
-12. Klicka på Alternativ i åtgärdsfönstret.
-13. Klicka på Ändra vy.
-14. Klicka på Huvudvy.
-15. Expandera avsnittet Inställningar.
-16. Ange eller välj ett värde i fältet Grupp-ID.
-17. I fältet Mallnamn, skriv ett värde.
-18. Välj Ja i fältet Aktivt.
-    * Endast aktiva mallar kan användas när du använder en mall till en ny försäljningsoffert.  
-19. Klicka på Alternativ i åtgärdsfönstret.
-20. Klicka på Ändra vy.
-21. Klicka på Radvy.
-22. Ange eller välj ett värde i fältet Artikel.
-23. Ange ett värde i fältet Artikel.
-24. Stäng sidan.
-25. Ange ett värde i fältet Rabatt i procent.
-26. Klicka på Lägg till rad.
-27. Ange eller välj ett värde i fältet Artikel.
-28. Ange ett värde i fältet Artikel.
-29. Stäng sidan.
-30. Ange ett nytt pris eller ändra det aktuella i fältet Enhetspris.
-31. Klicka på Lägg till rad.
-32. Ange eller välj ett värde i fältet Artikel.
-33. Ange ett värde i fältet Artikel.
-34. Stäng sidan.
-35. Ange ett tal i fältet Kvantitet.
-36. Ange ett värde i fältet Rabatt.
-37. Klicka på Spara.
+## <a name="create-a-quotation-template"></a><span data-ttu-id="406ab-107">Skapa en offertmall</span><span class="sxs-lookup"><span data-stu-id="406ab-107">Create a quotation template</span></span>
+1. <span data-ttu-id="406ab-108">Gå till försäljning och marknadsföring > Installation > offerter > Template Groups.</span><span class="sxs-lookup"><span data-stu-id="406ab-108">Go to Sales and marketing > Setup > Quotations > Template groups.</span></span>
+2. <span data-ttu-id="406ab-109">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="406ab-109">Click New.</span></span>
+3. <span data-ttu-id="406ab-110">Ange ett id i fältet Grupp-ID.</span><span class="sxs-lookup"><span data-stu-id="406ab-110">In the Group ID field, type an ID of your choice.</span></span>
+4. <span data-ttu-id="406ab-111">Ange ett värde i fältet Beskrivning.</span><span class="sxs-lookup"><span data-stu-id="406ab-111">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="406ab-112">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="406ab-112">Click Save.</span></span>
+6. <span data-ttu-id="406ab-113">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="406ab-113">Close the page.</span></span>
+7. <span data-ttu-id="406ab-114">Gå till försäljning och marknadsföring > offerter > Alla offerter.</span><span class="sxs-lookup"><span data-stu-id="406ab-114">Go to Sales and marketing > Sales quotations > All quotations.</span></span>
+8. <span data-ttu-id="406ab-115">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="406ab-115">Click New.</span></span>
+9. <span data-ttu-id="406ab-116">I fältet Kontotyp väljer du "Kund".</span><span class="sxs-lookup"><span data-stu-id="406ab-116">In the Account type field, select 'Customer'.</span></span>
+10. <span data-ttu-id="406ab-117">I fältet Kundkonto, ange eller välj ett värde.</span><span class="sxs-lookup"><span data-stu-id="406ab-117">In the Customer account field, enter or select a value.</span></span>
+11. <span data-ttu-id="406ab-118">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="406ab-118">Click OK.</span></span>
+    * <span data-ttu-id="406ab-119">För att en offert ska kunna bli en mall, måste du utföra inställningssteg i offerthuvudet.</span><span class="sxs-lookup"><span data-stu-id="406ab-119">For a quotation to become a template you must carry out  setup steps on the quotation header.</span></span> <span data-ttu-id="406ab-120">Detta måste göras innan du lägger till rader i offerten.</span><span class="sxs-lookup"><span data-stu-id="406ab-120">This must be done before you add lines to the quotation.</span></span>   
+12. <span data-ttu-id="406ab-121">Klicka på Alternativ i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="406ab-121">On the Action Pane, click Options.</span></span>
+13. <span data-ttu-id="406ab-122">Klicka på Ändra vy.</span><span class="sxs-lookup"><span data-stu-id="406ab-122">Click Change view.</span></span>
+14. <span data-ttu-id="406ab-123">Klicka på Huvudvy.</span><span class="sxs-lookup"><span data-stu-id="406ab-123">Click Header view.</span></span>
+15. <span data-ttu-id="406ab-124">Expandera avsnittet Inställningar.</span><span class="sxs-lookup"><span data-stu-id="406ab-124">Expand the Setup section.</span></span>
+16. <span data-ttu-id="406ab-125">Ange eller välj ett värde i fältet Grupp-ID.</span><span class="sxs-lookup"><span data-stu-id="406ab-125">In the Group ID field, enter or select a value.</span></span>
+17. <span data-ttu-id="406ab-126">I fältet Mallnamn, skriv ett värde.</span><span class="sxs-lookup"><span data-stu-id="406ab-126">In the Template name field, type a value.</span></span>
+18. <span data-ttu-id="406ab-127">Välj Ja i fältet Aktivt.</span><span class="sxs-lookup"><span data-stu-id="406ab-127">Select Yes in the Active field.</span></span>
+    * <span data-ttu-id="406ab-128">Endast aktiva mallar kan användas när du använder en mall till en ny försäljningsoffert.</span><span class="sxs-lookup"><span data-stu-id="406ab-128">Only active templates can be used when you apply a template to a new sales quotation.</span></span>  
+19. <span data-ttu-id="406ab-129">Klicka på Alternativ i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="406ab-129">On the Action Pane, click Options.</span></span>
+20. <span data-ttu-id="406ab-130">Klicka på Ändra vy.</span><span class="sxs-lookup"><span data-stu-id="406ab-130">Click Change view.</span></span>
+21. <span data-ttu-id="406ab-131">Klicka på Radvy.</span><span class="sxs-lookup"><span data-stu-id="406ab-131">Click Line view.</span></span>
+22. <span data-ttu-id="406ab-132">Ange eller välj ett värde i fältet Artikel.</span><span class="sxs-lookup"><span data-stu-id="406ab-132">In the Item field, enter or select a value.</span></span>
+23. <span data-ttu-id="406ab-133">Ange ett värde i fältet Artikel.</span><span class="sxs-lookup"><span data-stu-id="406ab-133">In the Item field, type a value.</span></span>
+24. <span data-ttu-id="406ab-134">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="406ab-134">Close the page.</span></span>
+25. <span data-ttu-id="406ab-135">Ange ett värde i fältet Rabatt i procent.</span><span class="sxs-lookup"><span data-stu-id="406ab-135">In the Discount percent field, enter a number.</span></span>
+26. <span data-ttu-id="406ab-136">Klicka på Lägg till rad.</span><span class="sxs-lookup"><span data-stu-id="406ab-136">Click Add line.</span></span>
+27. <span data-ttu-id="406ab-137">Ange eller välj ett värde i fältet Artikel.</span><span class="sxs-lookup"><span data-stu-id="406ab-137">In the Item field, enter or select a value.</span></span>
+28. <span data-ttu-id="406ab-138">Ange ett värde i fältet Artikel.</span><span class="sxs-lookup"><span data-stu-id="406ab-138">In the Item field, type a value.</span></span>
+29. <span data-ttu-id="406ab-139">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="406ab-139">Close the page.</span></span>
+30. <span data-ttu-id="406ab-140">Ange ett nytt pris eller ändra det aktuella i fältet Enhetspris.</span><span class="sxs-lookup"><span data-stu-id="406ab-140">In the Unit price field, enter a new price or change the current one.</span></span>
+31. <span data-ttu-id="406ab-141">Klicka på Lägg till rad.</span><span class="sxs-lookup"><span data-stu-id="406ab-141">Click Add line.</span></span>
+32. <span data-ttu-id="406ab-142">Ange eller välj ett värde i fältet Artikel.</span><span class="sxs-lookup"><span data-stu-id="406ab-142">In the Item field, enter or select a value.</span></span>
+33. <span data-ttu-id="406ab-143">Ange ett värde i fältet Artikel.</span><span class="sxs-lookup"><span data-stu-id="406ab-143">In the Item field, type a value.</span></span>
+34. <span data-ttu-id="406ab-144">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="406ab-144">Close the page.</span></span>
+35. <span data-ttu-id="406ab-145">Ange ett tal i fältet Kvantitet.</span><span class="sxs-lookup"><span data-stu-id="406ab-145">In the Quantity field, enter a number.</span></span>
+36. <span data-ttu-id="406ab-146">Ange ett värde i fältet Rabatt.</span><span class="sxs-lookup"><span data-stu-id="406ab-146">In the Discount field, enter a number.</span></span>
+37. <span data-ttu-id="406ab-147">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="406ab-147">Click Save.</span></span>
 
-## <a name="apply-the-template-to-create-a-single-quotation"></a>Använd mallen för att skapa en offert
-1. Gå till försäljning och marknadsföring > offerter > Alla offerter.
-    * Observera att offerten som du nyss skapade markeras som mall.  
-2. Klicka på Ny.
-3. I fältet Kontotyp väljer du "Kund".
-4. I fältet Kundkonto, ange eller välj ett värde.
-5. Expandera alternativet Mall.
-6. Ange eller välj ett värde i fältet Grupp-ID.
-7. Ange eller välj ett värde i fältet Mallnamn.
-8. Välj Baserat på mallvärden i fältet Beräkningsmetod.
-9. Klicka på OK.
-    * Den nya offerten har nu skapats, baserat på data och villkoren i mallen.  
-10. Stäng sidan.
-11. Stäng sidan.
+## <a name="apply-the-template-to-create-a-single-quotation"></a><span data-ttu-id="406ab-148">Använd mallen för att skapa en offert</span><span class="sxs-lookup"><span data-stu-id="406ab-148">Apply the template to create a single quotation</span></span>
+1. <span data-ttu-id="406ab-149">Gå till försäljning och marknadsföring > offerter > Alla offerter.</span><span class="sxs-lookup"><span data-stu-id="406ab-149">Go to Sales and marketing > Sales quotations > All quotations.</span></span>
+    * <span data-ttu-id="406ab-150">Observera att offerten som du nyss skapade markeras som mall.</span><span class="sxs-lookup"><span data-stu-id="406ab-150">Note that the quotation you have just created is marked as template.</span></span>  
+2. <span data-ttu-id="406ab-151">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="406ab-151">Click New.</span></span>
+3. <span data-ttu-id="406ab-152">I fältet Kontotyp väljer du "Kund".</span><span class="sxs-lookup"><span data-stu-id="406ab-152">In the Account type field, select 'Customer'.</span></span>
+4. <span data-ttu-id="406ab-153">I fältet Kundkonto, ange eller välj ett värde.</span><span class="sxs-lookup"><span data-stu-id="406ab-153">In the Customer account field, enter or select a value.</span></span>
+5. <span data-ttu-id="406ab-154">Expandera alternativet Mall.</span><span class="sxs-lookup"><span data-stu-id="406ab-154">Expand the Template section.</span></span>
+6. <span data-ttu-id="406ab-155">Ange eller välj ett värde i fältet Grupp-ID.</span><span class="sxs-lookup"><span data-stu-id="406ab-155">In the Group ID field, enter or select a value.</span></span>
+7. <span data-ttu-id="406ab-156">Ange eller välj ett värde i fältet Mallnamn.</span><span class="sxs-lookup"><span data-stu-id="406ab-156">In the Template name field, enter or select a value.</span></span>
+8. <span data-ttu-id="406ab-157">Välj Baserat på mallvärden i fältet Beräkningsmetod.</span><span class="sxs-lookup"><span data-stu-id="406ab-157">In the Calculation method field, select 'Based on template values'.</span></span>
+9. <span data-ttu-id="406ab-158">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="406ab-158">Click OK.</span></span>
+    * <span data-ttu-id="406ab-159">Den nya offerten har nu skapats, baserat på data och villkoren i mallen.</span><span class="sxs-lookup"><span data-stu-id="406ab-159">The new quotation has now been created, based on the data and terms of the template.</span></span>  
+10. <span data-ttu-id="406ab-160">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="406ab-160">Close the page.</span></span>
+11. <span data-ttu-id="406ab-161">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="406ab-161">Close the page.</span></span>
 
-## <a name="apply-the-template-to-mass-create-quotations"></a>Använd mallen för att skapa flera offerter
-1. Gå till försäljning och marknadsföring > offerter > Offert update > massa skapa offerter.
-2. I fältet Kontotyp väljer du "Kund".
-3. Ange eller välj ett värde i fältet Grupp-ID.
-4. Ange eller välj ett värde i fältet Mallnamn.
-5. Välj Baserat på mallvärden i fältet Beräkningsmetod.
-6. Expandera avsnittet Poster som ska ingå.
-7. Klicka på Filter.
-8. Gå till fältet Kriterier och ställ in ett filter som omfattar kunder du vill ta med i massofferten. Använd format Kund1..KundN.
-    * Du kan till exempel ställa in filtret på US-001..US-004  
-9. Klicka på OK.
-10. Klicka på OK.
-11. Gå till försäljning och marknadsföring > offerter > Alla offerter.
-    * Kontrollera att offerter har skapats för alla angivna kunder i massuppdateringrutinen som baserat på den valda mallen.  
+## <a name="apply-the-template-to-mass-create-quotations"></a><span data-ttu-id="406ab-162">Använd mallen för att skapa flera offerter</span><span class="sxs-lookup"><span data-stu-id="406ab-162">Apply the template to mass create quotations</span></span>
+1. <span data-ttu-id="406ab-163">Gå till försäljning och marknadsföring > offerter > Offert update > massa skapa offerter.</span><span class="sxs-lookup"><span data-stu-id="406ab-163">Go to Sales and marketing > Sales quotations > Quotation update > Mass create quotations.</span></span>
+2. <span data-ttu-id="406ab-164">I fältet Kontotyp väljer du "Kund".</span><span class="sxs-lookup"><span data-stu-id="406ab-164">In the Account type field, select 'Customer'.</span></span>
+3. <span data-ttu-id="406ab-165">Ange eller välj ett värde i fältet Grupp-ID.</span><span class="sxs-lookup"><span data-stu-id="406ab-165">In the Group ID field, enter or select a value.</span></span>
+4. <span data-ttu-id="406ab-166">Ange eller välj ett värde i fältet Mallnamn.</span><span class="sxs-lookup"><span data-stu-id="406ab-166">In the Template name field, enter or select a value.</span></span>
+5. <span data-ttu-id="406ab-167">Välj Baserat på mallvärden i fältet Beräkningsmetod.</span><span class="sxs-lookup"><span data-stu-id="406ab-167">In the Calculation method field, select 'Based on template values'.</span></span>
+6. <span data-ttu-id="406ab-168">Expandera avsnittet Poster som ska ingå.</span><span class="sxs-lookup"><span data-stu-id="406ab-168">Expand the Records to include section.</span></span>
+7. <span data-ttu-id="406ab-169">Klicka på Filter.</span><span class="sxs-lookup"><span data-stu-id="406ab-169">Click Filter.</span></span>
+8. <span data-ttu-id="406ab-170">Gå till fältet Kriterier och ställ in ett filter som omfattar kunder du vill ta med i massofferten.</span><span class="sxs-lookup"><span data-stu-id="406ab-170">In the Criteria field, set the filter to cover a range of customers you want to include in this mass quotation creation.</span></span> <span data-ttu-id="406ab-171">Använd format Kund1..KundN.</span><span class="sxs-lookup"><span data-stu-id="406ab-171">Use the following format "Customer1..CustomerN.</span></span>
+    * <span data-ttu-id="406ab-172">Du kan till exempel ställa in filtret på US-001..US-004</span><span class="sxs-lookup"><span data-stu-id="406ab-172">For example, you could set the filter to: US-001..US-004</span></span>  
+9. <span data-ttu-id="406ab-173">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="406ab-173">Click OK.</span></span>
+10. <span data-ttu-id="406ab-174">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="406ab-174">Click OK.</span></span>
+11. <span data-ttu-id="406ab-175">Gå till försäljning och marknadsföring > offerter > Alla offerter.</span><span class="sxs-lookup"><span data-stu-id="406ab-175">Go to Sales and marketing > Sales quotations > All quotations.</span></span>
+    * <span data-ttu-id="406ab-176">Kontrollera att offerter har skapats för alla angivna kunder i massuppdateringrutinen som baserat på den valda mallen.</span><span class="sxs-lookup"><span data-stu-id="406ab-176">Verify that quotations have been created for all the customers specified in the mass update routine, as based on the selected template.</span></span>  
 
 

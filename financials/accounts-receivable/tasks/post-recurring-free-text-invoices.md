@@ -16,33 +16,33 @@ ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 8b5c9a11b60315b5d4509dac71cb1e6c65014d94
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: e04f9baf6b757ed2c22e018c660cd7291395f877
 ms.contentlocale: sv-se
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="generate-and-post-recurring-free-text-invoices"></a>Generera och bokför återkommande fritextfakturor
+# <a name="generate-and-post-recurring-free-text-invoices"></a><span data-ttu-id="c4124-103">Generera och bokför återkommande fritextfakturor</span><span class="sxs-lookup"><span data-stu-id="c4124-103">Generate and post recurring free text invoices</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Återkommande fakturor används för att fakturakunder regelbundet för samma belopp. I den här registreringen används demonstrationsföretaget USMF. Inspelningen är avsedd för den användare som ansvarar för hantering och bearbetning av kundreskontrafakturor.
+<span data-ttu-id="c4124-104">Återkommande fakturor används för att fakturakunder regelbundet för samma belopp.</span><span class="sxs-lookup"><span data-stu-id="c4124-104">Recurring invoices are used to invoice customers regularly for the same amount.</span></span> <span data-ttu-id="c4124-105">I den här registreringen används demonstrationsföretaget USMF.</span><span class="sxs-lookup"><span data-stu-id="c4124-105">This recording uses the USMF demo company.</span></span> <span data-ttu-id="c4124-106">Inspelningen är avsedd för den användare som ansvarar för hantering och bearbetning av kundreskontrafakturor.</span><span class="sxs-lookup"><span data-stu-id="c4124-106">The recording is intended for the person responsible for managing and processing A/R invoices.</span></span>
 
 
-## <a name="generate-recurring-invoices"></a>Generera återkommande fakturor
+## <a name="generate-recurring-invoices"></a><span data-ttu-id="c4124-107">Generera återkommande fakturor</span><span class="sxs-lookup"><span data-stu-id="c4124-107">Generate recurring invoices</span></span>
 
-## <a name="post-recurring-invoices"></a>Bokför återkommande fakturor
-1. Gå till Kundreskontra > Fakturor > Återkommande fakturor > Bokföra återkommande fakturor.
-    * Använd den här sidan för att visa och skriva ut återkommande fakturor som redan har skapats.  
-2. Klicka på länken på den valda raden i listan.
-    * Välj grupp av återkommande fakturor.  
-3. Klicka på Summor.
-    * Kontrollera summor för återkommande fakturagruppen.  
-4. Klicka på Stäng.
-    * Varje rad nedan är en återkommande fritextfaktura. Du kan markera en rad och att klicka på knappen Detaljer om du vill visa fritextfakturadetaljer.  
-5. Klicka på Validera.
-    * Kontrollera att de valda fakturorna inte har några fel, men inte bokföra fakturor.  
-6. Klicka på Bokför.
-    * Bokför de valda fakturorna.  
+## <a name="post-recurring-invoices"></a><span data-ttu-id="c4124-108">Bokför återkommande fakturor</span><span class="sxs-lookup"><span data-stu-id="c4124-108">Post recurring invoices</span></span>
+1. <span data-ttu-id="c4124-109">Gå till Kundreskontra > Fakturor > Återkommande fakturor > Bokföra återkommande fakturor.</span><span class="sxs-lookup"><span data-stu-id="c4124-109">Go to Accounts receivable > Invoices > Recurring invoices > Post recurring invoices.</span></span>
+    * <span data-ttu-id="c4124-110">Använd den här sidan för att visa och skriva ut återkommande fakturor som redan har skapats.</span><span class="sxs-lookup"><span data-stu-id="c4124-110">Use this page to view and print recurring invoices that have already been generated.</span></span>  
+2. <span data-ttu-id="c4124-111">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="c4124-111">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="c4124-112">Välj grupp av återkommande fakturor.</span><span class="sxs-lookup"><span data-stu-id="c4124-112">Select the recurring invoice group.</span></span>  
+3. <span data-ttu-id="c4124-113">Klicka på Summor.</span><span class="sxs-lookup"><span data-stu-id="c4124-113">Click Totals.</span></span>
+    * <span data-ttu-id="c4124-114">Kontrollera summor för återkommande fakturagruppen.</span><span class="sxs-lookup"><span data-stu-id="c4124-114">Verify totals for the recurring invoice group.</span></span>  
+4. <span data-ttu-id="c4124-115">Klicka på Stäng.</span><span class="sxs-lookup"><span data-stu-id="c4124-115">Click Close.</span></span>
+    * <span data-ttu-id="c4124-116">Varje rad nedan är en återkommande fritextfaktura.</span><span class="sxs-lookup"><span data-stu-id="c4124-116">Each line below is a recurring free text invoice.</span></span> <span data-ttu-id="c4124-117">Du kan markera en rad och att klicka på knappen Detaljer om du vill visa fritextfakturadetaljer.</span><span class="sxs-lookup"><span data-stu-id="c4124-117">You can select a line and click 'Details' button to view free text invoice details.</span></span>  
+5. <span data-ttu-id="c4124-118">Klicka på Validera.</span><span class="sxs-lookup"><span data-stu-id="c4124-118">Click Validate.</span></span>
+    * <span data-ttu-id="c4124-119">Kontrollera att de valda fakturorna inte har några fel, men inte bokföra fakturor.</span><span class="sxs-lookup"><span data-stu-id="c4124-119">Verify that the selected invoices do not have errors, but do not post the invoices.</span></span>  
+6. <span data-ttu-id="c4124-120">Klicka på Bokför.</span><span class="sxs-lookup"><span data-stu-id="c4124-120">Click Post.</span></span>
+    * <span data-ttu-id="c4124-121">Bokför de valda fakturorna.</span><span class="sxs-lookup"><span data-stu-id="c4124-121">Post the selected invoices.</span></span>  
 
 

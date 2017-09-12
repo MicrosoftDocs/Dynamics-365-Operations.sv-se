@@ -19,84 +19,84 @@ ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
-ms.openlocfilehash: 0d5e05e8f1edcc01af985c25459d93de0bc2acf1
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 72f73404f99330c3ff8b23dabed78477a0cd30cd
 ms.contentlocale: sv-se
-ms.lasthandoff: 06/20/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="shift-and-cash-drawer-management"></a>Hantering av skift och kassalåda
+# <a name="shift-and-cash-drawer-management"></a><span data-ttu-id="4f49a-104">Hantering av skift och kassalåda</span><span class="sxs-lookup"><span data-stu-id="4f49a-104">Shift and cash drawer management</span></span>
 
 [!include[banner](includes/banner.md)]
 
 
-Den här artikeln innehåller en beskrivning av hur du ställer in och använder de två typerna av skift för butikskassor: delat och fristående. Delade skift kan användas av flera användare på flera ställen, medan fristående skift enbart kan användas av en medarbetare åt gången.
+<span data-ttu-id="4f49a-105">Den här artikeln innehåller en beskrivning av hur du ställer in och använder de två typerna av skift för butikskassor: delat och fristående.</span><span class="sxs-lookup"><span data-stu-id="4f49a-105">This article explains how to set up and use the two types of retail point of sale (POS) shifts -  shared and stand-alone.</span></span> <span data-ttu-id="4f49a-106">Delade skift kan användas av flera användare på flera ställen, medan fristående skift enbart kan användas av en medarbetare åt gången.</span><span class="sxs-lookup"><span data-stu-id="4f49a-106">Shared shifts can be used by multiple users in multiple places, whereas stand-alone shifts can be used by only one worker at a time.</span></span>
 
-Det finns två typer av skift för butikskassor (POS): fristående och delade. Fristående skift kan enbart användas av en enda arbetare åt gången. Delade skift kan användas av flera användare på flera ställen. På så sätt skapar de effektivt ett enda skift för flera medarbetare i en butik.
+<span data-ttu-id="4f49a-107">Det finns två typer av skift för butikskassor (POS): fristående och delade.</span><span class="sxs-lookup"><span data-stu-id="4f49a-107">There are two types of retail point of sale (POS) shifts: stand-alone and shared.</span></span> <span data-ttu-id="4f49a-108">Fristående skift kan enbart användas av en enda arbetare åt gången.</span><span class="sxs-lookup"><span data-stu-id="4f49a-108">Stand-alone shifts can be used by only one worker at a time.</span></span> <span data-ttu-id="4f49a-109">Delade skift kan användas av flera användare på flera ställen.</span><span class="sxs-lookup"><span data-stu-id="4f49a-109">Shared shifts can be used by multiple users in multiple places.</span></span> <span data-ttu-id="4f49a-110">På så sätt skapar de effektivt ett enda skift för flera medarbetare i en butik.</span><span class="sxs-lookup"><span data-stu-id="4f49a-110">Therefore, they effectively create a single shift for multiple workers in a store.</span></span>
 
-## <a name="standalone-shifts"></a>Fristående skift
-Fristående skift används i ett traditionellt, fast kassascenario där kontanter stäms av separat för varje kassaregister. I en livsmedelsbutik till exempel finns det vanligtvis flera fasta kassaregister och varje kassaregister tilldelas i sin tur till en kassör. I det här fallet är det sannolikt att varje kassaregister används som ett fristående skift och kassören ansvarar för kassaregistrets kassalåda. Ett fristående skift omfattar all aktivitet i registret under kassörens arbetsskift. Aktiviteter kan omfatta startbeloppet som läggs i kassalådan, kontanter som tas bort eller läggs till genom åtgärder såsom bankinsättningar och växelposter samt kassaavstämningen i slutet av skiftet.
+## <a name="standalone-shifts"></a><span data-ttu-id="4f49a-111">Fristående skift</span><span class="sxs-lookup"><span data-stu-id="4f49a-111">Standalone shifts</span></span>
+<span data-ttu-id="4f49a-112">Fristående skift används i ett traditionellt, fast kassascenario där kontanter stäms av separat för varje kassaregister.</span><span class="sxs-lookup"><span data-stu-id="4f49a-112">Stand-alone shifts are used in a traditional, fixed POS scenario, where cash is reconciled independently for each POS register.</span></span> <span data-ttu-id="4f49a-113">I en livsmedelsbutik till exempel finns det vanligtvis flera fasta kassaregister och varje kassaregister tilldelas i sin tur till en kassör.</span><span class="sxs-lookup"><span data-stu-id="4f49a-113">For example, in a grocery store setting, there are typically several fixed POS registers, and a cashier is assigned to each register.</span></span> <span data-ttu-id="4f49a-114">I det här fallet är det sannolikt att varje kassaregister används som ett fristående skift och kassören ansvarar för kassaregistrets kassalåda.</span><span class="sxs-lookup"><span data-stu-id="4f49a-114">In this case, each register likely uses a stand-alone shift, and the cashier is responsible for the till or physical cash at that register.</span></span> <span data-ttu-id="4f49a-115">Ett fristående skift omfattar all aktivitet i registret under kassörens arbetsskift.</span><span class="sxs-lookup"><span data-stu-id="4f49a-115">A stand-alone shift encompasses all the activity on that register during the cashier’s work shift.</span></span> <span data-ttu-id="4f49a-116">Aktiviteter kan omfatta startbeloppet som läggs i kassalådan, kontanter som tas bort eller läggs till genom åtgärder såsom bankinsättningar och växelposter samt kassaavstämningen i slutet av skiftet.</span><span class="sxs-lookup"><span data-stu-id="4f49a-116">Activities can include the opening amount that is deposited in the till, all removal and addition of cash through operations such as bank drops and float entry, and the tender declaration at the end of the shift.</span></span>
 
-### <a name="set-up-a-stand-alone-shift"></a>Ställa in ett fristående skift
+### <a name="set-up-a-stand-alone-shift"></a><span data-ttu-id="4f49a-117">Ställa in ett fristående skift</span><span class="sxs-lookup"><span data-stu-id="4f49a-117">Set up a stand-alone shift</span></span>
 
-Ett fristående skift tilldelas på kassalådenivå. Här beskrivs hur du ställer in ett fristående skift i ett kassaregister.
+<span data-ttu-id="4f49a-118">Ett fristående skift tilldelas på kassalådenivå.</span><span class="sxs-lookup"><span data-stu-id="4f49a-118">A stand-alone shift is designated at the cash drawer level.</span></span> <span data-ttu-id="4f49a-119">Här beskrivs hur du ställer in ett fristående skift i ett kassaregister.</span><span class="sxs-lookup"><span data-stu-id="4f49a-119">This procedure explains how to set up a stand-alone shift on a POS register.</span></span>
 
-1.  Klicka på **Butik** &gt; **Kanalinställningar** &gt; **Kassainställningar** &gt; **Kassaprofiler** &gt; **Maskinvaruprofiler**.
-2.  Välj vilken maskinvaruprofil som ska användas för det fristående skiftet.
-3.  Bekräfta att alternativet **Kassalåda för delat skift** på snabbfliken **Kassalåda** är inställt på **Nej**.
-4.  Klicka på **Spara**.
-5.  Klicka på **Butik** &gt; **Kanalinställningar** &gt; **Kassainställning** &gt; **Kassaapparat**.
-6.  Välj registret som kräver ett fristående skift och klicka sedan på **Redigera**.
-7.  Markera maskinvaruprofilen du valde i steg 2 i fältet **Maskinvaruprofil**.
-8.  Klicka på **Spara**.
-9.  Klicka på **Butik** &gt; **Butik-IT** &gt; **Distributionsschema**.
-10. Välj distributionsschema **1090** och klicka sedan på **Kör nu** för att synkronisera ändringarna av kassan.
+1.  <span data-ttu-id="4f49a-120">Klicka på **Butik** &gt; **Kanalinställningar** &gt; **Kassainställningar** &gt; **Kassaprofiler** &gt; **Maskinvaruprofiler**.</span><span class="sxs-lookup"><span data-stu-id="4f49a-120">Click **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **POS profiles** &gt; **Hardware profiles**.</span></span>
+2.  <span data-ttu-id="4f49a-121">Välj vilken maskinvaruprofil som ska användas för det fristående skiftet.</span><span class="sxs-lookup"><span data-stu-id="4f49a-121">Select the hardware profile to use for the stand-alone shift.</span></span>
+3.  <span data-ttu-id="4f49a-122">Bekräfta att alternativet **Kassalåda för delat skift** på snabbfliken **Kassalåda** är inställt på **Nej**.</span><span class="sxs-lookup"><span data-stu-id="4f49a-122">On the **Drawer** FastTab, confirm that the **Shared shift drawer** option is set to **No**.</span></span>
+4.  <span data-ttu-id="4f49a-123">Klicka på **Spara**.</span><span class="sxs-lookup"><span data-stu-id="4f49a-123">Click **Save**.</span></span>
+5.  <span data-ttu-id="4f49a-124">Klicka på **Butik** &gt; **Kanalinställningar** &gt; **Kassainställning** &gt; **Kassaapparat**.</span><span class="sxs-lookup"><span data-stu-id="4f49a-124">Click **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **Registers**.</span></span>
+6.  <span data-ttu-id="4f49a-125">Välj registret som kräver ett fristående skift och klicka sedan på **Redigera**.</span><span class="sxs-lookup"><span data-stu-id="4f49a-125">Select the register that requires a stand-alone shift, and then click **Edit**.</span></span>
+7.  <span data-ttu-id="4f49a-126">Markera maskinvaruprofilen du valde i steg 2 i fältet **Maskinvaruprofil**.</span><span class="sxs-lookup"><span data-stu-id="4f49a-126">In the **Hardware profile** field, select the hardware profile that you selected in step 2.</span></span>
+8.  <span data-ttu-id="4f49a-127">Klicka på **Spara**.</span><span class="sxs-lookup"><span data-stu-id="4f49a-127">Click **Save**.</span></span>
+9.  <span data-ttu-id="4f49a-128">Klicka på **Butik** &gt; **Butik-IT** &gt; **Distributionsschema**.</span><span class="sxs-lookup"><span data-stu-id="4f49a-128">Click **Retail** &gt; **Retail IT** &gt; **Distribution schedule**.</span></span>
+10. <span data-ttu-id="4f49a-129">Välj distributionsschema **1090** och klicka sedan på **Kör nu** för att synkronisera ändringarna av kassan.</span><span class="sxs-lookup"><span data-stu-id="4f49a-129">Select the **1090** distribution schedule, and then click **Run now** to synchronize changes to the POS.</span></span>
 
-### <a name="use-a-stand-alone-shift"></a>Använda ett fristående skift
+### <a name="use-a-stand-alone-shift"></a><span data-ttu-id="4f49a-130">Använda ett fristående skift</span><span class="sxs-lookup"><span data-stu-id="4f49a-130">Use a stand-alone shift</span></span>
 
-1.  Logga in i kassan.
-2.  Om inget skift är öppet väljer du **Öppna ett nytt skift**.
-3.  Gå till åtgärden **Ange startbelopp** och ange kontantbeloppet som läggs i kassalådan i början av arbetsdagen.
-4.  Utför några transaktioner.
-5.  Välj **Stäm av betalningsmedel** i slutet av dagen för att ange kontantbeloppet som finns kvar i kassalådan.
-6.  Ange kontantbeloppet och klicka sedan på **Spara** för att spara kassaavstämningen.
-7.  Välj **Stäng skift** för att avsluta skiftet.
+1.  <span data-ttu-id="4f49a-131">Logga in i kassan.</span><span class="sxs-lookup"><span data-stu-id="4f49a-131">Sign in to the POS.</span></span>
+2.  <span data-ttu-id="4f49a-132">Om inget skift är öppet väljer du **Öppna ett nytt skift**.</span><span class="sxs-lookup"><span data-stu-id="4f49a-132">If no shift is open, select **Open a new shift**.</span></span>
+3.  <span data-ttu-id="4f49a-133">Gå till åtgärden **Ange startbelopp** och ange kontantbeloppet som läggs i kassalådan i början av arbetsdagen.</span><span class="sxs-lookup"><span data-stu-id="4f49a-133">Go to the **Declare start amount** operation, and specify the amount of cash that is being added to the till to start the work day.</span></span>
+4.  <span data-ttu-id="4f49a-134">Utför några transaktioner.</span><span class="sxs-lookup"><span data-stu-id="4f49a-134">Perform some transactions.</span></span>
+5.  <span data-ttu-id="4f49a-135">Välj **Stäm av betalningsmedel** i slutet av dagen för att ange kontantbeloppet som finns kvar i kassalådan.</span><span class="sxs-lookup"><span data-stu-id="4f49a-135">At the end of the day, select **Declare tender** to declare the amount of cash that remains in the cash drawer.</span></span>
+6.  <span data-ttu-id="4f49a-136">Ange kontantbeloppet och klicka sedan på **Spara** för att spara kassaavstämningen.</span><span class="sxs-lookup"><span data-stu-id="4f49a-136">Enter the amount of cash, and then click **Save** to save the tender declaration.</span></span>
+7.  <span data-ttu-id="4f49a-137">Välj **Stäng skift** för att avsluta skiftet.</span><span class="sxs-lookup"><span data-stu-id="4f49a-137">Select **Close shift** to close the shift.</span></span>
 
-**Obs!** Andra åtgärder är tillgängliga under skiftet beroende på vilka affärsprocesser som används. Åtgärderna **Lämna pengar i kassaskåp**, **Bankinsättning** och **Borttagning av betalningsmedel** kan användas för att ta bort pengar från kassalådan under dagen eller innan skiftet avslutas. Om kontanterna i en kassalåda börjar ta slut kan åtgärden **Växelpost** användas för att lägga till kontanter i kassalådan.
+<span data-ttu-id="4f49a-138">**Obs!** Andra åtgärder är tillgängliga under skiftet beroende på vilka affärsprocesser som används.</span><span class="sxs-lookup"><span data-stu-id="4f49a-138">**Note:** Other operations are available during the shift, depending on the business processes that are in place.</span></span> <span data-ttu-id="4f49a-139">Åtgärderna **Lämna pengar i kassaskåp**, **Bankinsättning** och **Borttagning av betalningsmedel** kan användas för att ta bort pengar från kassalådan under dagen eller innan skiftet avslutas.</span><span class="sxs-lookup"><span data-stu-id="4f49a-139">The **Safe drop**, **Bank drop**, and **Tender removal** operations can be used to remove money from the till during the day or before the shift is closed.</span></span> <span data-ttu-id="4f49a-140">Om kontanterna i en kassalåda börjar ta slut kan åtgärden **Växelpost** användas för att lägga till kontanter i kassalådan.</span><span class="sxs-lookup"><span data-stu-id="4f49a-140">If a till runs low on cash, the **Float entry** operation can be used to add cash to the till.</span></span>
 
-## <a name="shared-shifts"></a>Delade skift
-Delade skift används i en miljö där flera kassörer delar en kassalåda eller en uppsättning kassalådor under arbetsdagen. Vanligtvis används delade skift i mobila kassamiljöer. I en mobil miljö är kassören inte tilldelad och ansvarig för en enda kassalåda. I stället måste alla kassörer kunna ta betalt och lägga till kontanter i den kassalåda som är närmast dem. I det här fallet ingår kassalådorna som delas mellan kassörerna i ett delat skift. Alla kassalådor i delade skift ingår i samma skift för aktiviteter som är relaterade till kontanthanteringen under respektive skift. Startbeloppet för skiftet ska därför innehålla summan av alla kontanter i alla kassalådor som ingår i det delade skiftet. Av samma anledning kommer kassaavstämningen att innehålla summan av alla kontanter i alla kassalådor som ingår i det delade skiftet. **Obs!** Endast ett delat skift åt gången kan vara öppet i varje butik. Delade skift och fristående skift kan användas i samma butik.
+## <a name="shared-shifts"></a><span data-ttu-id="4f49a-141">Delade skift</span><span class="sxs-lookup"><span data-stu-id="4f49a-141">Shared shifts</span></span>
+<span data-ttu-id="4f49a-142">Delade skift används i en miljö där flera kassörer delar en kassalåda eller en uppsättning kassalådor under arbetsdagen.</span><span class="sxs-lookup"><span data-stu-id="4f49a-142">A shared shift is used in an environment where multiple cashiers share a cash drawer or a set of cash drawers throughout the work day.</span></span> <span data-ttu-id="4f49a-143">Vanligtvis används delade skift i mobila kassamiljöer.</span><span class="sxs-lookup"><span data-stu-id="4f49a-143">Typically, a shared shift is used in mobile POS environments.</span></span> <span data-ttu-id="4f49a-144">I en mobil miljö är kassören inte tilldelad och ansvarig för en enda kassalåda.</span><span class="sxs-lookup"><span data-stu-id="4f49a-144">In a mobile environment, each cashier isn’t assigned to and responsible for a single cash drawer.</span></span> <span data-ttu-id="4f49a-145">I stället måste alla kassörer kunna ta betalt och lägga till kontanter i den kassalåda som är närmast dem.</span><span class="sxs-lookup"><span data-stu-id="4f49a-145">Instead, all cashiers must be able to tender a sale and add cash to whatever cash drawer is closest to them.</span></span> <span data-ttu-id="4f49a-146">I det här fallet ingår kassalådorna som delas mellan kassörerna i ett delat skift.</span><span class="sxs-lookup"><span data-stu-id="4f49a-146">In this scenario, the cash drawers that are shared among cashiers are included in a shared shift.</span></span> <span data-ttu-id="4f49a-147">Alla kassalådor i delade skift ingår i samma skift för aktiviteter som är relaterade till kontanthanteringen under respektive skift.</span><span class="sxs-lookup"><span data-stu-id="4f49a-147">All the cash drawers in a shared shift are included in the same shift for the purpose of activities that are related to cash management for that shift.</span></span> <span data-ttu-id="4f49a-148">Startbeloppet för skiftet ska därför innehålla summan av alla kontanter i alla kassalådor som ingår i det delade skiftet.</span><span class="sxs-lookup"><span data-stu-id="4f49a-148">Therefore, the starting amount for the shift should include the sum of all cash in all the cash drawers that are included in the shared shift.</span></span> <span data-ttu-id="4f49a-149">Av samma anledning kommer kassaavstämningen att innehålla summan av alla kontanter i alla kassalådor som ingår i det delade skiftet.</span><span class="sxs-lookup"><span data-stu-id="4f49a-149">Likewise, the tender declaration will be the sum of all the cash in all the cash drawers that are included in the shared shift.</span></span> <span data-ttu-id="4f49a-150">**Obs!** Endast ett delat skift åt gången kan vara öppet i varje butik.</span><span class="sxs-lookup"><span data-stu-id="4f49a-150">**Note:** Only one shared shift can be open at a time in each store.</span></span> <span data-ttu-id="4f49a-151">Delade skift och fristående skift kan användas i samma butik.</span><span class="sxs-lookup"><span data-stu-id="4f49a-151">Shared shifts and stand-alone shifts can be used in the same store.</span></span>
 
-### <a name="set-up-a-shared-shift"></a>Ställa in ett delat skift
+### <a name="set-up-a-shared-shift"></a><span data-ttu-id="4f49a-152">Ställa in ett delat skift</span><span class="sxs-lookup"><span data-stu-id="4f49a-152">Set up a shared shift</span></span>
 
-1.  Klicka på **Butik** &gt; **Kanalinställningar** &gt; **Kassainställningar** &gt; **Kassaprofiler** &gt; **Maskinvaruprofiler**.
-2.  Välj vilken maskinvaruprofil som ska användas för det delade skiftet.
-3.  Gå till snabbfliken **Kassalåda** och ställ in alternativet **Kassalåda för delat skift** till **Ja**.
-4.  Klicka på **Spara**.
-5.  Klicka på **Butik** &gt; **Kanalinställningar** &gt; **Kassainställning** &gt; **Kassaapparat**.
-6.  Välj registret som kräver ett delat skift och klicka sedan på **Redigera**.
-7.  Markera maskinvaruprofilen du valde i steg 2 i fältet **Maskinvaruprofil**.
-8.  Klicka på **Spara**.
-9.  Klicka på **Butik** &gt; **Butik-IT** &gt; **Distributionsschema**.
-10. Välj distributionsschema **1090** och klicka sedan på **Kör nu** för att synkronisera ändringarna av kassan.
+1.  <span data-ttu-id="4f49a-153">Klicka på **Butik** &gt; **Kanalinställningar** &gt; **Kassainställningar** &gt; **Kassaprofiler** &gt; **Maskinvaruprofiler**.</span><span class="sxs-lookup"><span data-stu-id="4f49a-153">Click **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **POS profiles** &gt; **Hardware profiles**.</span></span>
+2.  <span data-ttu-id="4f49a-154">Välj vilken maskinvaruprofil som ska användas för det delade skiftet.</span><span class="sxs-lookup"><span data-stu-id="4f49a-154">Select the hardware profile to use for the shared shift.</span></span>
+3.  <span data-ttu-id="4f49a-155">Gå till snabbfliken **Kassalåda** och ställ in alternativet **Kassalåda för delat skift** till **Ja**.</span><span class="sxs-lookup"><span data-stu-id="4f49a-155">On the **Drawer** FastTab, set the **Shared shift drawer** option to **Yes**.</span></span>
+4.  <span data-ttu-id="4f49a-156">Klicka på **Spara**.</span><span class="sxs-lookup"><span data-stu-id="4f49a-156">Click **Save**.</span></span>
+5.  <span data-ttu-id="4f49a-157">Klicka på **Butik** &gt; **Kanalinställningar** &gt; **Kassainställning** &gt; **Kassaapparat**.</span><span class="sxs-lookup"><span data-stu-id="4f49a-157">Click **Retail** &gt; **Channel setup** &gt; **POS setup** &gt; **Registers**.</span></span>
+6.  <span data-ttu-id="4f49a-158">Välj registret som kräver ett delat skift och klicka sedan på **Redigera**.</span><span class="sxs-lookup"><span data-stu-id="4f49a-158">Select the register that requires a shared shift, and then click **Edit**.</span></span>
+7.  <span data-ttu-id="4f49a-159">Markera maskinvaruprofilen du valde i steg 2 i fältet **Maskinvaruprofil**.</span><span class="sxs-lookup"><span data-stu-id="4f49a-159">In the **Hardware profile** field, select the hardware profile that you selected in step 2.</span></span>
+8.  <span data-ttu-id="4f49a-160">Klicka på **Spara**.</span><span class="sxs-lookup"><span data-stu-id="4f49a-160">Click **Save**.</span></span>
+9.  <span data-ttu-id="4f49a-161">Klicka på **Butik** &gt; **Butik-IT** &gt; **Distributionsschema**.</span><span class="sxs-lookup"><span data-stu-id="4f49a-161">Click **Retail** &gt; **Retail IT** &gt; **Distribution schedule**.</span></span>
+10. <span data-ttu-id="4f49a-162">Välj distributionsschema **1090** och klicka sedan på **Kör nu** för att synkronisera ändringarna av kassan.</span><span class="sxs-lookup"><span data-stu-id="4f49a-162">Select the **1090** distribution schedule, and then click **Run now** to synchronize changes to the POS.</span></span>
 
-### <a name="use-a-shared-shift"></a>Använda ett delat skift
+### <a name="use-a-shared-shift"></a><span data-ttu-id="4f49a-163">Använda ett delat skift</span><span class="sxs-lookup"><span data-stu-id="4f49a-163">Use a shared shift</span></span>
 
-1.  Logga in i kassan.
-2.  Om kassan ännu inte är ansluten till en maskinvarustation, välj **Åtgärd som inte berör kassalådan** och välj sedan åtgärden **Välj maskinvarustation** för att aktivera en maskinvarustation för det delade skiftet. Den här steget krävs endast första gången ett register läggs till i en miljö med delade skift.
-3.  Logga ut från kassan och logga sedan in igen.
-4.  Välj **Skapa ett nytt skift**.
-5.  Välj **Ange startbelopp**.
-6.  Ange startbeloppet för alla kassalådor i butiken som ingår i det delade skiftet och klicka sedan på **Spara**.
-    -   Om du vill lägga till startbeloppet till varje efterföljande kassalåda, använd åtgätden **Välj maskinvarustation** för att aktivera maskinvarustationen.
-    -   Om du vill lägga till en kassalåda till en speciell kassalåda, använd åtgärden **Öppna kassalådan**.
-    -   Fortsätt tills alla kassalådor i det delade skiftet innehåller sin del av startbeloppet.
+1.  <span data-ttu-id="4f49a-164">Logga in i kassan.</span><span class="sxs-lookup"><span data-stu-id="4f49a-164">Sign in to the POS.</span></span>
+2.  <span data-ttu-id="4f49a-165">Om kassan ännu inte är ansluten till en maskinvarustation, välj **Åtgärd som inte berör kassalådan** och välj sedan åtgärden **Välj maskinvarustation** för att aktivera en maskinvarustation för det delade skiftet.</span><span class="sxs-lookup"><span data-stu-id="4f49a-165">If the POS isn’t yet connected to a hardware station, select **Non-drawer operation**, and then select the **Select hardware station** operation to make a hardware station active for the shared shift.</span></span> <span data-ttu-id="4f49a-166">Den här steget krävs endast första gången ett register läggs till i en miljö med delade skift.</span><span class="sxs-lookup"><span data-stu-id="4f49a-166">This step is required only the first time that a register is added to a shared shift environment.</span></span>
+3.  <span data-ttu-id="4f49a-167">Logga ut från kassan och logga sedan in igen.</span><span class="sxs-lookup"><span data-stu-id="4f49a-167">Sign out of the POS, and then sign back in.</span></span>
+4.  <span data-ttu-id="4f49a-168">Välj **Skapa ett nytt skift**.</span><span class="sxs-lookup"><span data-stu-id="4f49a-168">Select **Create a new shift**.</span></span>
+5.  <span data-ttu-id="4f49a-169">Välj **Ange startbelopp**.</span><span class="sxs-lookup"><span data-stu-id="4f49a-169">Select **Declare start amount**.</span></span>
+6.  <span data-ttu-id="4f49a-170">Ange startbeloppet för alla kassalådor i butiken som ingår i det delade skiftet och klicka sedan på **Spara**.</span><span class="sxs-lookup"><span data-stu-id="4f49a-170">Enter the starting amount of all the cash drawers in the store that are part of the shared shift, and then click **Save**.</span></span>
+    -   <span data-ttu-id="4f49a-171">Om du vill lägga till startbeloppet till varje efterföljande kassalåda, använd åtgätden **Välj maskinvarustation** för att aktivera maskinvarustationen.</span><span class="sxs-lookup"><span data-stu-id="4f49a-171">To add part of the starting amount to each subsequent cash drawer, use the **Select hardware station** operation to make the hardware station active.</span></span>
+    -   <span data-ttu-id="4f49a-172">Om du vill lägga till en kassalåda till en speciell kassalåda, använd åtgärden **Öppna kassalådan**.</span><span class="sxs-lookup"><span data-stu-id="4f49a-172">To add a till to a specific cash drawer, use the **Open drawer** operation.</span></span>
+    -   <span data-ttu-id="4f49a-173">Fortsätt tills alla kassalådor i det delade skiftet innehåller sin del av startbeloppet.</span><span class="sxs-lookup"><span data-stu-id="4f49a-173">Continue until all cash drawers in the shared shift have their part of the starting amount.</span></span>
 
-7.  Öppna alla kassalådor vid dagens slut och ta bort kontanterna.
-8.  När du tagit bort kontanterna från sista kassalådan, räkna alla kontanter från alla kassalådor.
-9.  Använd åtgärden **Stäm av betalningsmedel** för att ange det totala kontantbeloppet från alla kassalådor som ingår i det delade skiftet.
-10. Använd åtgärden **Avsluta skift** för att avsluta delade skift.
+7.  <span data-ttu-id="4f49a-174">Öppna alla kassalådor vid dagens slut och ta bort kontanterna.</span><span class="sxs-lookup"><span data-stu-id="4f49a-174">At the end of the day, open each cash drawer, and remove the cash.</span></span>
+8.  <span data-ttu-id="4f49a-175">När du tagit bort kontanterna från sista kassalådan, räkna alla kontanter från alla kassalådor.</span><span class="sxs-lookup"><span data-stu-id="4f49a-175">After you’ve removed the cash from the last cash drawer, count all the cash from all the cash drawers.</span></span>
+9.  <span data-ttu-id="4f49a-176">Använd åtgärden **Stäm av betalningsmedel** för att ange det totala kontantbeloppet från alla kassalådor som ingår i det delade skiftet.</span><span class="sxs-lookup"><span data-stu-id="4f49a-176">Use the **Declare tender** operation to declare the total amount of cash from all the cash drawers that are included in the shared shift.</span></span>
+10. <span data-ttu-id="4f49a-177">Använd åtgärden **Avsluta skift** för att avsluta delade skift.</span><span class="sxs-lookup"><span data-stu-id="4f49a-177">Use the **Close shift** operation to close the shared shift.</span></span>
 
 
 

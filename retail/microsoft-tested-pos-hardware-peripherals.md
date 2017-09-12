@@ -19,54 +19,54 @@ ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: f5f090eb406488ecfcd502c2cc6e3a63ca16111a
+ms.sourcegitcommit: 97d374230cc6e833b9f585de000e1252f2a78b9d
+ms.openlocfilehash: 17738e794f18fddc7320b1b40ef55376fba0de24
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 08/30/2017
 
 ---
 
-# <a name="pos-hardware-peripherals"></a>Kringutrustning för kassa
+# <a name="pos-hardware-peripherals"></a><span data-ttu-id="60446-103">Kringutrustning för kassa</span><span class="sxs-lookup"><span data-stu-id="60446-103">POS hardware peripherals</span></span>
 
 [!include[banner](includes/banner.md)]
 
 
-Retail Modern point of sale (POS) och Cloud POS kan använda en mängd olika kassakringutrustning, med flera olika gränssnitt och tillämpningsalternativ för att uppfylla en återförsäljares olika verksamhetsscenarier. 
+<span data-ttu-id="60446-104">Retail Modern point of sale (POS) och Cloud POS kan använda en mängd olika kassakringutrustning, med flera olika gränssnitt och tillämpningsalternativ för att uppfylla en återförsäljares olika verksamhetsscenarier.</span><span class="sxs-lookup"><span data-stu-id="60446-104">Retail Modern point of sale (POS) and Cloud POS can utilize a wide range of POS hardware peripherals, with multiple interfaces and deployment options to achieve a retailer’s various business scenarios.</span></span> 
 
-För att ge stöd för bredast möjliga enhetsurval oavsett tillverkare eller modell, använder kassan standardgränssnitt som exempelvis OLE for Retail POS (OPOS), enhetsdrivrutiner för Windows samt Windows point of service application program interfaces (API). Generellt kommer kassan att fungera på dessa enheter förutsatt att rätt drivrutin finns tillgänglig. Eftersom varje tillverkares och programutvecklares implementering av dessa standardvärden emellertid kan variera, finns det ofta skillnader i vilka kvalifikationer eller beteenden som stöds.
+<span data-ttu-id="60446-105">För att ge stöd för bredast möjliga enhetsurval oavsett tillverkare eller modell, använder kassan standardgränssnitt som exempelvis OLE for Retail POS (OPOS), enhetsdrivrutiner för Windows samt Windows point of service application program interfaces (API).</span><span class="sxs-lookup"><span data-stu-id="60446-105">To support the widest selection of devices across manufactures and models, POS utilizes standard interfaces such as OLE for Retail POS (OPOS), Windows device drivers, and Windows point of service application program interfaces (APIs).</span></span> <span data-ttu-id="60446-106">Generellt kommer kassan att fungera på dessa enheter förutsatt att rätt drivrutin finns tillgänglig.</span><span class="sxs-lookup"><span data-stu-id="60446-106">Generally, POS will work on these devices provided that the appropriate driver is supplied.</span></span> <span data-ttu-id="60446-107">Eftersom varje tillverkares och programutvecklares implementering av dessa standardvärden emellertid kan variera, finns det ofta skillnader i vilka kvalifikationer eller beteenden som stöds.</span><span class="sxs-lookup"><span data-stu-id="60446-107">However, because each manufacturer and software developer’s implementation of these standards can vary, there are often differences in supported capabilities or behaviors.</span></span>
 
-Följande lista innehåller enhetsmodeller, i varje klass, som har testats internt av Microsoft.
+<span data-ttu-id="60446-108">Följande lista innehåller enhetsmodeller, i varje klass, som har testats internt av Microsoft.</span><span class="sxs-lookup"><span data-stu-id="60446-108">The following list includes device models, in each class, that have been tested internally by Microsoft.</span></span>
 
-**OPOS-enheter**
+<span data-ttu-id="60446-109">**OPOS-enheter**</span><span class="sxs-lookup"><span data-stu-id="60446-109">**OPOS devices**</span></span>
 
--   Streckkod – Motorola DS9208
--   MSR – HP IDRA-334133, Magtek PN - 21073062
--   LineDisplay – Epson M58DC
--   Pinpad – Verifone 1000SE
--   Signaturblock – Scriptel ST1550
--   Skrivare – EPSON TM-T88IV, TMT88V
--   Kassa – Star SMD2-1317BK44
--   Skala – Datalogic Magellan 8400
+-   <span data-ttu-id="60446-110">Streckkod – Motorola DS9208</span><span class="sxs-lookup"><span data-stu-id="60446-110">Barcode – Motorola DS9208</span></span>
+-   <span data-ttu-id="60446-111">MSR – HP IDRA-334133, Magtek PN - 21073062</span><span class="sxs-lookup"><span data-stu-id="60446-111">MSR – HP IDRA-334133, Magtek PN - 21073062</span></span>
+-   <span data-ttu-id="60446-112">LineDisplay – Epson M58DC</span><span class="sxs-lookup"><span data-stu-id="60446-112">LineDisplay – Epson M58DC</span></span>
+-   <span data-ttu-id="60446-113">Pinpad – Verifone 1000SE</span><span class="sxs-lookup"><span data-stu-id="60446-113">Pinpad – Verifone 1000SE</span></span>
+-   <span data-ttu-id="60446-114">Signaturblock – Scriptel ST1550</span><span class="sxs-lookup"><span data-stu-id="60446-114">Signature pad – Scriptel ST1550</span></span>
+-   <span data-ttu-id="60446-115">Skrivare – EPSON TM-T88IV, TMT88V</span><span class="sxs-lookup"><span data-stu-id="60446-115">Printer – EPSON TM-T88IV, TMT88V</span></span>
+-   <span data-ttu-id="60446-116">Kassa – Star SMD2-1317BK44</span><span class="sxs-lookup"><span data-stu-id="60446-116">Cash drawer – Star SMD2-1317BK44</span></span>
+-   <span data-ttu-id="60446-117">Skala – Datalogic Magellan 8400</span><span class="sxs-lookup"><span data-stu-id="60446-117">Scale – Datalogic Magellan 8400</span></span>
 
-**Tangentbords-wedge MSR**
+<span data-ttu-id="60446-118">**Tangentbords-wedge MSR**</span><span class="sxs-lookup"><span data-stu-id="60446-118">**Keyboard wedge MSR**</span></span>
 
--   Magtek USB
+-   <span data-ttu-id="60446-119">Magtek USB</span><span class="sxs-lookup"><span data-stu-id="60446-119">Magtek USB</span></span>
 
-**Betalterminal**
+<span data-ttu-id="60446-120">**Betalterminal**</span><span class="sxs-lookup"><span data-stu-id="60446-120">**Payment terminal**</span></span>
 
--   Equinox L3500
--   Verifone MX925
+-   <span data-ttu-id="60446-121">Equinox L3500</span><span class="sxs-lookup"><span data-stu-id="60446-121">Equinox L3500</span></span>
+-   <span data-ttu-id="60446-122">Verifone MX925</span><span class="sxs-lookup"><span data-stu-id="60446-122">Verifone MX925</span></span>
 
-**Nätverksenheter**
+<span data-ttu-id="60446-123">**Nätverksenheter**</span><span class="sxs-lookup"><span data-stu-id="60446-123">**Network devices**</span></span>
 
--   Skrivare – Star TSP650II
--   Kassa – APG Atwood
--   Betalterminal – MX915, MX925
+-   <span data-ttu-id="60446-124">Skrivare – Star TSP650II</span><span class="sxs-lookup"><span data-stu-id="60446-124">Printer – Star TSP650II</span></span>
+-   <span data-ttu-id="60446-125">Kassa – APG Atwood</span><span class="sxs-lookup"><span data-stu-id="60446-125">Cash drawer – APG Atwood</span></span>
+-   <span data-ttu-id="60446-126">Betalterminal – MX915, MX925</span><span class="sxs-lookup"><span data-stu-id="60446-126">Payment terminal – MX915, MX925</span></span>
 
-**MPOS styr endast IPC**
+<span data-ttu-id="60446-127">**MPOS styr endast IPC**</span><span class="sxs-lookup"><span data-stu-id="60446-127">**MPOS direct IPC only**</span></span>
 
--   Streckkod – Honeywell 1900, HP LS2208
--   MSR – Magtek PN - 21073075
+-   <span data-ttu-id="60446-128">Streckkod – Honeywell 1900, HP LS2208</span><span class="sxs-lookup"><span data-stu-id="60446-128">Barcode – Honeywell 1900, HP LS2208</span></span>
+-   <span data-ttu-id="60446-129">MSR – Magtek PN - 21073075</span><span class="sxs-lookup"><span data-stu-id="60446-129">MSR – Magtek PN - 21073075</span></span>
 
 
 

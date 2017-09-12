@@ -18,246 +18,246 @@ ms.author: cmercado
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: a7275e9ad8d655d0d2ee5ba90a792775dec0cf05
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: fc36d399759b6321995f9bd827849c8a0bced090
 ms.contentlocale: sv-se
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 06/29/2017
 
 
 ---
 
-# <a name="project-resourcing"></a>Resurshantering för projekt
+# <a name="project-resourcing"></a><span data-ttu-id="ffd8f-103">Resurshantering för projekt</span><span class="sxs-lookup"><span data-stu-id="ffd8f-103">Project resourcing</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Det här avsnittet innehåller information om resurshantering för projekt.
+<span data-ttu-id="ffd8f-104">Det här avsnittet innehåller information om resurshantering för projekt.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-104">This topic provides information about project resourcing.</span></span>
 
-En utmaning för projektledare och resurschefer under projektplanläggningsfasen är resursallokeringen, där de måste bestämma och reservera rätt resurser för arbetet i ett projekt. I Microsoft Dynamics 365 for Finance and Operations, Enterprise editions resurshanteringsfunktioner för projekt kan du definiera roller som behandlas som tillfälliga resurser och som kan reserveras för ett visst engagemang eller delar av ett engagemang. Den här typen av resurshantering låter projektledare och resurschefer slutföra följande uppgifter:
+<span data-ttu-id="ffd8f-105">En utmaning för projektledare och resurschefer under projektplanläggningsfasen är resursallokeringen, där de måste bestämma och reservera rätt resurser för arbetet i ett projekt.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-105">One challenge for project managers and resource managers during the project planning stage is resource allocation, where they must determine and reserve the correct resource to work on a project.</span></span> <span data-ttu-id="ffd8f-106">I Microsoft Dynamics 365 for Finance and Operations, Enterprise editions resurshanteringsfunktioner för projekt kan du definiera roller som behandlas som tillfälliga resurser och som kan reserveras för ett visst engagemang eller delar av ett engagemang.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-106">In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, resourcing capabilities for projects let you define roles that are treated as temporary resources that can be reserved for a specific engagement, or part of an engagement.</span></span> <span data-ttu-id="ffd8f-107">Den här typen av resurshantering låter projektledare och resurschefer slutföra följande uppgifter:</span><span class="sxs-lookup"><span data-stu-id="ffd8f-107">This type of resourcing lets project managers and resource managers complete the following tasks:</span></span>
 
--   Definiera en roll som har begärt kompetenserna som gör det enklare att matcha resurser.
--   Använd roller för att definiera en ursprunglig engagemangstidsplan som baseras på reserverade resurser.
--   Beräkna kostnader och konfigurera en ursprunglig budget baserad på tilldelade roller och resurser för ett projekt.
--   Använd roller för att beräkna antalet resursreserveringar som krävs för respektive engagemang.
--   Beräkna antalet resurser som krävs för hela livscykeln för ett projekt.
--   Gör ett utkast till en uppdelad arbetsstruktur med hjälp av de ursprungliga resurstilldelningarna.
+-   <span data-ttu-id="ffd8f-108">Definiera en roll som har begärt kompetenserna som gör det enklare att matcha resurser.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-108">Define a role that has the required competencies to make it easy to match resources.</span></span>
+-   <span data-ttu-id="ffd8f-109">Använd roller för att definiera en ursprunglig engagemangstidsplan som baseras på reserverade resurser.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-109">Use roles to define an initial engagement schedule that is based on reserved resources.</span></span>
+-   <span data-ttu-id="ffd8f-110">Beräkna kostnader och konfigurera en ursprunglig budget baserad på tilldelade roller och resurser för ett projekt.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-110">Estimate costs and determine an initial budget, based on assigned roles and resources for a project.</span></span>
+-   <span data-ttu-id="ffd8f-111">Använd roller för att beräkna antalet resursreserveringar som krävs för respektive engagemang.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-111">Use roles to estimate the number of resource reservations that are required for each engagement.</span></span>
+-   <span data-ttu-id="ffd8f-112">Beräkna antalet resurser som krävs för hela livscykeln för ett projekt.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-112">Estimate the number of resources that are required for the entire life cycle of a project.</span></span>
+-   <span data-ttu-id="ffd8f-113">Gör ett utkast till en uppdelad arbetsstruktur med hjälp av de ursprungliga resurstilldelningarna.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-113">Draft a work breakdown structure (WBS) by using the initial resource assignments.</span></span>
 
-[![Projektets livscykel](./media/projectresourcing02-1024x812.jpg)](./media/projectresourcing02.jpg) 
+<span data-ttu-id="ffd8f-114">[![Projektets livscykel](./media/projectresourcing02-1024x812.jpg)](./media/projectresourcing02.jpg)</span><span class="sxs-lookup"><span data-stu-id="ffd8f-114">[![Project life cycle](./media/projectresourcing02-1024x812.jpg)](./media/projectresourcing02.jpg)</span></span> 
 
-I takt med att projektplanläggningen fortsätter, kan planerade resurser ersättas med bemannade resurser. Projektledaren kan också gå tillbaka och uppdatera resursreservationerna under alla projektfaserna.
+<span data-ttu-id="ffd8f-115">I takt med att projektplanläggningen fortsätter, kan planerade resurser ersättas med bemannade resurser.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-115">As project planning proceeds, planned resources can be replaced with staffed resources.</span></span> <span data-ttu-id="ffd8f-116">Projektledaren kan också gå tillbaka och uppdatera resursreservationerna under alla projektfaserna.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-116">The project manager can also go back and update the resourcing reservations during any of the project stages.</span></span>
 
-## <a name="set-up-project-resources"></a>Ställ in projektresurser
-Du måste ställa in en kalender och associera den till en medarbetare eller en arbetare. Kalendern används för att kunna tidsplanera projektet och arbetstiden för de resurser som har reserverats för projektet. Under kalenderinställningarna, projektledare kan utföra resursutjämning som en del av resursoptimering. Baserat på kalendertidsplanen kan begränsningar placeras på resurser. Du kan ställa in en kalender på sidan **Kalendrar**. 
+## <a name="set-up-project-resources"></a><span data-ttu-id="ffd8f-117">Ställ in projektresurser</span><span class="sxs-lookup"><span data-stu-id="ffd8f-117">Set up project resources</span></span>
+<span data-ttu-id="ffd8f-118">Du måste ställa in en kalender och associera den till en medarbetare eller en arbetare.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-118">You must set up a calendar and associate it with an employee or a worker.</span></span> <span data-ttu-id="ffd8f-119">Kalendern används för att kunna tidsplanera projektet och arbetstiden för de resurser som har reserverats för projektet.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-119">The calendar is used to schedule the project and the working time of the resources that are reserved for the project.</span></span> <span data-ttu-id="ffd8f-120">Under kalenderinställningarna, projektledare kan utföra resursutjämning som en del av resursoptimering.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-120">During calendar setup, project managers can perform resource leveling as part of resource optimization.</span></span> <span data-ttu-id="ffd8f-121">Baserat på kalendertidsplanen kan begränsningar placeras på resurser.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-121">Based on the calendar schedule, restrictions can be placed on resources.</span></span> <span data-ttu-id="ffd8f-122">Du kan ställa in en kalender på sidan **Kalendrar**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-122">You can set up a calendar on the **Calendars** page.</span></span> 
 
-När du ställer in en arbetare som en projektresurs du kan välja bland arbetare som arbetar i företaget som du ställer in resurser för, eller välja arbetare från andra företag inom din organisation. Dessa är koncerninterna resurser. Följande procedurer förklarar hur du ställer in en arbetare som projektresurs inom ditt företag och hur du ställer in en koncernintern projektresurs.
+<span data-ttu-id="ffd8f-123">När du ställer in en arbetare som en projektresurs du kan välja bland arbetare som arbetar i företaget som du ställer in resurser för, eller välja arbetare från andra företag inom din organisation.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-123">When you set up a worker as a project resource, you can select from workers that work in the company for which you are setting up resources or, you can select workers from other companies within your organization.</span></span> <span data-ttu-id="ffd8f-124">Dessa är koncerninterna resurser.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-124">These are intercompany resources.</span></span> <span data-ttu-id="ffd8f-125">Följande procedurer förklarar hur du ställer in en arbetare som projektresurs inom ditt företag och hur du ställer in en koncernintern projektresurs.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-125">The following procedures explain how to set up a worker as a project resource within your company and how to set up an intercompany project resource.</span></span>
 
-### <a name="set-up-a-worker-as-a-project-resource"></a>Ställ in en arbetare som en projektresurs
+### <a name="set-up-a-worker-as-a-project-resource"></a><span data-ttu-id="ffd8f-126">Ställ in en arbetare som en projektresurs</span><span class="sxs-lookup"><span data-stu-id="ffd8f-126">Set up a worker as a project resource</span></span>
 
-1.  På sidan **Arbetare**, i listan **Arbetare**, välj den arbetare som du lägger till som en projektresurs och öppna arbetarens post.
-2.  I åtgärdsfönstret klickar du på **Projekt** &gt; **Inställningar** &gt; **Projektinställning**.
-3.  Välj en kalender och stäng sedan sidan.
+1.  <span data-ttu-id="ffd8f-127">På sidan **Arbetare**, i listan **Arbetare**, välj den arbetare som du lägger till som en projektresurs och öppna arbetarens post.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-127">On the **Workers** page, in the **Workers** list, select the worker that you're adding as a project resource, and open the worker record.</span></span>
+2.  <span data-ttu-id="ffd8f-128">I åtgärdsfönstret klickar du på **Projekt** &gt; **Inställningar** &gt; **Projektinställning**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-128">On the Action Pane, click **Project** &gt; **Setup** &gt; **Project setup**.</span></span>
+3.  <span data-ttu-id="ffd8f-129">Välj en kalender och stäng sedan sidan.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-129">Select a calendar, and then close the page.</span></span>
 
-Du kan även ange standardprojekt för en resurs som en typ av förtilldelning. Förtilldelningar kan användas när resurschefen eller projektledaren vet vilka projekt att resursen ska arbeta med i förväg. Förtilldelningar kan också baseras på en begäran av en projektsponsor eller kund. Du förtilldelar ett projekt genom att välja lämpligt projekt på sidan **Tilldela projekt**, på **Projekt** fliken, i listan **Resterande projekt**.
+<span data-ttu-id="ffd8f-130">Du kan även ange standardprojekt för en resurs som en typ av förtilldelning.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-130">You can also specify default projects for a resource as a type of pre-assignment.</span></span> <span data-ttu-id="ffd8f-131">Förtilldelningar kan användas när resurschefen eller projektledaren vet vilka projekt att resursen ska arbeta med i förväg.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-131">Pre-assignments can be used when the resource manager or project manager knows which projects the resource will be working on in advance.</span></span> <span data-ttu-id="ffd8f-132">Förtilldelningar kan också baseras på en begäran av en projektsponsor eller kund.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-132">Pre-assignments can also be based on the request of a project sponsor or customer.</span></span> <span data-ttu-id="ffd8f-133">Du förtilldelar ett projekt genom att välja lämpligt projekt på sidan **Tilldela projekt**, på **Projekt** fliken, i listan **Resterande projekt**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-133">To pre-assign a project, on the **Assign projects** page, on the **Projects** tab, in the **Remaining projects** list, select the appropriate project.</span></span>
 
-### <a name="set-up-an-intercompany-resource"></a>Ställa in en koncernintern resurs
+### <a name="set-up-an-intercompany-resource"></a><span data-ttu-id="ffd8f-134">Ställa in en koncernintern resurs</span><span class="sxs-lookup"><span data-stu-id="ffd8f-134">Set up an intercompany resource</span></span>
 
-När du ställer in en arbetare som en koncernintern resurs måste du slutföra inställningarna i det långivande företaget och det lånande företaget. 
+<span data-ttu-id="ffd8f-135">När du ställer in en arbetare som en koncernintern resurs måste du slutföra inställningarna i det långivande företaget och det lånande företaget.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-135">When you set up a worker as an intercompany resource, you must complete the setup in the lending company and the borrowing company.</span></span> 
 
-**I det långivande företaget:**
+<span data-ttu-id="ffd8f-136">**I det långivande företaget:**</span><span class="sxs-lookup"><span data-stu-id="ffd8f-136">**In the lending company:**</span></span>
 
-1.  I Finance and Operations, kontrollera att det långivande företaget har valts och slutför sedan proceduren ovan, "Ställ in en arbetare som en projektresurs".
-2.  Gå till **Redovisning **&gt; **Inställningar för bokföring **&gt; **Koncernintern redovisning**. Klicka på **Ny**.
-3.  I fältet **ID för juridisk person **, välj det långivande företaget. Fyll i återstående fält efter behov och klicka sedan på **Spara**.
-4.  Gå till **Projekthantering och redovisning **&gt; **Inställningar **&gt; **Priser ** &gt; **Internpris**.** **
-5.  I formuläret **Internpris **, klicka på **Nytt** och i fältet **Lånande juridisk person **, välj lämpligt företag.
-6.  Om du bara vill låna ut den resurs som du skapade i början av detta avsnitt till det lånande företaget, väljer du namnet på resursen som du har skapat i fältet **Resurs**. Om du vill att alla resurser inom företaget ska vara tillgängliga för det lånande företaget lämnar du fältet **Resurs ** tomt.
-7.  Gå till **Projekthantering och redovisning **&gt; **Inställningar **&gt; **Parametrar för projekthantering och redovisning**, och på fliken **Koncerninternt ** ställer du in fältet **Aktivera koncernintern resursplanering och tidrapporter ** till **Ja**.
+1.  <span data-ttu-id="ffd8f-137">I Finance and Operations, kontrollera att det långivande företaget har valts och slutför sedan proceduren ovan, "Ställ in en arbetare som en projektresurs".</span><span class="sxs-lookup"><span data-stu-id="ffd8f-137">In Finance and Operations, verify that the lending company is selected, and then complete the procedure above, "Set up a worker as a project resource."</span></span>
+2.  <span data-ttu-id="ffd8f-138">Gå till **Redovisning **&gt; **Inställningar för bokföring **&gt; **Koncernintern redovisning**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-138">Go to **General ledger **&gt; **Posting setup **&gt; **Intercompany accounting**.</span></span> <span data-ttu-id="ffd8f-139">Klicka på **Ny**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-139">Click **New**.</span></span>
+3.  <span data-ttu-id="ffd8f-140">I fältet **ID för juridisk person **, välj det långivande företaget.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-140">In the **Legal entity ID **field, select the lending company.</span></span> <span data-ttu-id="ffd8f-141">Fyll i återstående fält efter behov och klicka sedan på **Spara**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-141">Fill in the remaining fields as appropriate, and then click **Save**.</span></span>
+4.  <span data-ttu-id="ffd8f-142">Gå till **Projekthantering och redovisning **&gt; **Inställningar **&gt; **Priser ** &gt; **Internpris**.**</span><span class="sxs-lookup"><span data-stu-id="ffd8f-142">Go the **Project management and accounting **&gt; **Setup **&gt; **Prices ** &gt; **Transfer price**.**</span></span> **
+5.  <span data-ttu-id="ffd8f-143">I formuläret **Internpris **, klicka på **Nytt** och i fältet **Lånande juridisk person **, välj lämpligt företag.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-143">On the **Transfer price **form, click **New**, and in the **Borrowing legal entity **field, select the appropriate company.</span></span>
+6.  <span data-ttu-id="ffd8f-144">Om du bara vill låna ut den resurs som du skapade i början av detta avsnitt till det lånande företaget, väljer du namnet på resursen som du har skapat i fältet **Resurs**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-144">If you want to only loan the borrowing company the resource that you created at the beginning of this section, in the **Resource** field, select the name of the resource that you created.</span></span> <span data-ttu-id="ffd8f-145">Om du vill att alla resurser inom företaget ska vara tillgängliga för det lånande företaget lämnar du fältet **Resurs ** tomt.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-145">If you want to make all resources in the company available to the borrowing company, leave the **Resource **field blank.</span></span>
+7.  <span data-ttu-id="ffd8f-146">Gå till **Projekthantering och redovisning **&gt; **Inställningar **&gt; **Parametrar för projekthantering och redovisning**, och på fliken **Koncerninternt ** ställer du in fältet **Aktivera koncernintern resursplanering och tidrapporter ** till **Ja**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-146">Go to **Project management and accounting **&gt; **Setup **&gt; **Project management and accounting parameters**, and on the **Intercompany **tab, set the **Enable intercompany resource scheduling and timesheets **field to **Yes**.</span></span>
 
-**I det lånande företaget:**
+<span data-ttu-id="ffd8f-147">**I det lånande företaget:**</span><span class="sxs-lookup"><span data-stu-id="ffd8f-147">**In the borrowing company:**</span></span>
 
-1.  Gå till **Projekthantering och redovisning** &gt; **Projektresurser** &gt; **Resurslista**.
-2.  I sökfiltret anger du namnet på resursen som du skapade i föregående procedur för det långivande företaget, för att kontrollera att namnet finns i resurslistan för det lånande företaget.
+1.  <span data-ttu-id="ffd8f-148">Gå till **Projekthantering och redovisning** &gt; **Projektresurser** &gt; **Resurslista**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-148">Go to **Project management and accounting** &gt; **Project resources** &gt; **Resources list**.</span></span>
+2.  <span data-ttu-id="ffd8f-149">I sökfiltret anger du namnet på resursen som du skapade i föregående procedur för det långivande företaget, för att kontrollera att namnet finns i resurslistan för det lånande företaget.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-149">In the search filter, enter the name of the resource that you created in the previous procedure for the lending company to verify that the name is included in the resource list for the borrowing company.</span></span>
 
-## <a name="manage-resource-competencies"></a>Hantera resurskompetenser
-Resurskompetenser är en viktig del av resurshantering. Kompetenser kan användas som en jämföra för att bestämma resurser som har rätt balans av utbildning, färdigheter, certifiering och projekterfarenhet. Du bör ställa in informationen för varje resurs och uppdatera den regelbundet. På så sätt kan du maximera förmågor när specifika resurskompetenser matchas under projektresurstilldelning. [![Exempel på färdigheter, certifieringar, utbildning och projekterfarenhet](./media/projectresourcing06-1024x383.jpg)](./media/projectresourcing06.jpg) 
+## <a name="manage-resource-competencies"></a><span data-ttu-id="ffd8f-150">Hantera resurskompetenser</span><span class="sxs-lookup"><span data-stu-id="ffd8f-150">Manage resource competencies</span></span>
+<span data-ttu-id="ffd8f-151">Resurskompetenser är en viktig del av resurshantering.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-151">Resource competencies are an essential part of resource management.</span></span> <span data-ttu-id="ffd8f-152">Kompetenser kan användas som en jämföra för att bestämma resurser som har rätt balans av utbildning, färdigheter, certifiering och projekterfarenhet.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-152">Competencies can be used as a baseline to determine resources that have the correct balance of skills, education, certification, and project experience.</span></span> <span data-ttu-id="ffd8f-153">Du bör ställa in informationen för varje resurs och uppdatera den regelbundet.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-153">You should set up this information for each resource and update it on a regular basis.</span></span> <span data-ttu-id="ffd8f-154">På så sätt kan du maximera förmågor när specifika resurskompetenser matchas under projektresurstilldelning.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-154">In this way, you can maximize capabilities when specific resource competencies are matched during project resource assignment.</span></span> <span data-ttu-id="ffd8f-155">[![Exempel på färdigheter, certifieringar, utbildning och projekterfarenhet](./media/projectresourcing06-1024x383.jpg)](./media/projectresourcing06.jpg)</span><span class="sxs-lookup"><span data-stu-id="ffd8f-155">[![Examples of skills, certifications, education, and project experience](./media/projectresourcing06-1024x383.jpg)](./media/projectresourcing06.jpg)</span></span> 
 
-Följande procedurer innehåller information om hur du ställer in vissa kompetenser för en resurs. 
+<span data-ttu-id="ffd8f-156">Följande procedurer innehåller information om hur du ställer in vissa kompetenser för en resurs.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-156">The following procedures explain how to set up some of the competencies for a resource.</span></span> 
 
-Om du vill ställa in kompetenser för en arbetare kan du använda antingen **Arbetare** listsidan i Personal eller **Resurser** listsidan i Projekthantering och redovisning. För följande procedurer används listsidan **Arbetare** i Personal.
+<span data-ttu-id="ffd8f-157">Om du vill ställa in kompetenser för en arbetare kan du använda antingen **Arbetare** listsidan i Personal eller **Resurser** listsidan i Projekthantering och redovisning.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-157">To set up competencies for a worker, you can use either the **Workers** list page in Human resources or the **Resources** list page in Project management and accounting.</span></span> <span data-ttu-id="ffd8f-158">För följande procedurer används listsidan **Arbetare** i Personal.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-158">For the following procedures, the **Workers** list page in Human resources is used.</span></span>
 
-### <a name="set-up-competencies-certificates"></a>Ställa in kompetenser: Certifikat
+### <a name="set-up-competencies-certificates"></a><span data-ttu-id="ffd8f-159">Ställa in kompetenser: Certifikat</span><span class="sxs-lookup"><span data-stu-id="ffd8f-159">Set up competencies: Certificates</span></span>
 
-1.  På listsidan **Arbetare**, välj raden för arbetaren som du lägger till certifikatinformation för.
-2.  I Åtgärdsfönster, på fliken **Arbetare**, i gruppen **Kompetenser** klickar du på **Certifikat**.
-3.  Klicka på **Ny**.
-4.  I fältet **Certifikattyp**, välj **PMP**.
-5.  I fältet **Startdatum**, välj **10/1/2015**.
-6.  Klicka på **Spara** och stäng sedan sidan.
+1.  <span data-ttu-id="ffd8f-160">På listsidan **Arbetare**, välj raden för arbetaren som du lägger till certifikatinformation för.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-160">On the **Workers** list page, select the line of the worker that you're adding certificate information for.</span></span>
+2.  <span data-ttu-id="ffd8f-161">I Åtgärdsfönster, på fliken **Arbetare**, i gruppen **Kompetenser** klickar du på **Certifikat**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-161">On the Action Pane, on the **Worker** tab, in the **Competencies** group, click **Certificates**.</span></span>
+3.  <span data-ttu-id="ffd8f-162">Klicka på **Ny**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-162">Click **New**.</span></span>
+4.  <span data-ttu-id="ffd8f-163">I fältet **Certifikattyp**, välj **PMP**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-163">In the **Certificate type** field, select **PMP**.</span></span>
+5.  <span data-ttu-id="ffd8f-164">I fältet **Startdatum**, välj **10/1/2015**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-164">In the **Start date** field, select **10/1/2015**.</span></span>
+6.  <span data-ttu-id="ffd8f-165">Klicka på **Spara** och stäng sedan sidan.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-165">Click **Save**, and then close the page.</span></span>
 
-### <a name="set-up-competencies-skills"></a>Ställ in kompetenser: Kompetenser
+### <a name="set-up-competencies-skills"></a><span data-ttu-id="ffd8f-166">Ställ in kompetenser: Kompetenser</span><span class="sxs-lookup"><span data-stu-id="ffd8f-166">Set up competencies: Skills</span></span>
 
-1.  Kontrollera på listsidan **Arbetare** att arbetaren som du använde i den föregående proceduren markeras fortfarande. Sedan i Åtgärdsfönster, på fliken **Arbetare**, i gruppen **Kompetenser** klickar du på **Kompetenser**.
-2.  Klicka på **Ny**.
-3.  I fältet **Kompetens**, välj **Projekthantering**.
-4.  I fältet **Nivå**, välj **5 Expert**.
-5.  I fältet **Nivådatum**, välj **1-/14/2014**.
-6.  Ange i **Erfarenhetsår** fältet, **10**.
-7.  Klicka på **Spara** och stäng sedan sidan.
+1.  <span data-ttu-id="ffd8f-167">Kontrollera på listsidan **Arbetare** att arbetaren som du använde i den föregående proceduren markeras fortfarande.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-167">On the **Workers** list page, make sure that the worker that you used in the previous procedure is still selected.</span></span> <span data-ttu-id="ffd8f-168">Sedan i Åtgärdsfönster, på fliken **Arbetare**, i gruppen **Kompetenser** klickar du på **Kompetenser**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-168">Then, on the Action Pane, on the **Worker** tab, in the **Competencies** group, click **Skills**.</span></span>
+2.  <span data-ttu-id="ffd8f-169">Klicka på **Ny**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-169">Click **New**.</span></span>
+3.  <span data-ttu-id="ffd8f-170">I fältet **Kompetens**, välj **Projekthantering**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-170">In the **Skill** field, select **Project management**.</span></span>
+4.  <span data-ttu-id="ffd8f-171">I fältet **Nivå**, välj **5 Expert**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-171">In the **Level** field, select **5 Expert**.</span></span>
+5.  <span data-ttu-id="ffd8f-172">I fältet **Nivådatum**, välj **1-/14/2014**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-172">In the **Level date** field, select **1-/14/2014**.</span></span>
+6.  <span data-ttu-id="ffd8f-173">Ange i **Erfarenhetsår** fältet, **10**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-173">In the **Years of experience** field, enter **10**.</span></span>
+7.  <span data-ttu-id="ffd8f-174">Klicka på **Spara** och stäng sedan sidan.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-174">Click **Save**, and then close the page.</span></span>
 
-## <a name="create-a-new-project"></a>Skapa ett nytt projekt
-1.  Klicka på **Projekthantering och redovisning** &gt; **Arbetsytor** &gt; **Projekthantering**.
-2.  Klicka på **Nytt projekt** och ange sedan följande värden:
-    -   **Projekttyp** – tid och material
-    -   **Projektnamn** – XYZ uppgraderingsfas 2
-    -   **Projektgrupp** – TM\_WIP
-    -   **Projektkontrakt-ID:** – 00000002
-3.  Klicka på **Skapa projekt**.
+## <a name="create-a-new-project"></a><span data-ttu-id="ffd8f-175">Skapa ett nytt projekt</span><span class="sxs-lookup"><span data-stu-id="ffd8f-175">Create a new project</span></span>
+1.  <span data-ttu-id="ffd8f-176">Klicka på **Projekthantering och redovisning** &gt; **Arbetsytor** &gt; **Projekthantering**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-176">Click **Project management and accounting** &gt; **Workspaces** &gt; **Project management**.</span></span>
+2.  <span data-ttu-id="ffd8f-177">Klicka på **Nytt projekt** och ange sedan följande värden:</span><span class="sxs-lookup"><span data-stu-id="ffd8f-177">Click **New project**, and enter the following values:</span></span>
+    -   <span data-ttu-id="ffd8f-178">**Projekttyp** – tid och material</span><span class="sxs-lookup"><span data-stu-id="ffd8f-178">**Project type** - Time and material</span></span>
+    -   <span data-ttu-id="ffd8f-179">**Projektnamn** – XYZ uppgraderingsfas 2</span><span class="sxs-lookup"><span data-stu-id="ffd8f-179">**Project name** - XYZ Upgrade Phase 2</span></span>
+    -   <span data-ttu-id="ffd8f-180">**Projektgrupp** – TM\_WIP</span><span class="sxs-lookup"><span data-stu-id="ffd8f-180">**Project group** - TM\_WIP</span></span>
+    -   <span data-ttu-id="ffd8f-181">**Projektkontrakt-ID:** – 00000002</span><span class="sxs-lookup"><span data-stu-id="ffd8f-181">**Project contract ID**  - 00000002</span></span>
+3.  <span data-ttu-id="ffd8f-182">Klicka på **Skapa projekt**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-182">Click **Create project**.</span></span>
 
-### <a name="assign-a-resource-to-a-project"></a>Tilldela en resurs till ett projekt
+### <a name="assign-a-resource-to-a-project"></a><span data-ttu-id="ffd8f-183">Tilldela en resurs till ett projekt</span><span class="sxs-lookup"><span data-stu-id="ffd8f-183">Assign a resource to a project</span></span>
 
-1.  Klicka på **Personal** &gt; **Arbetare** &gt; **Arbetare**.
-2.  I listan **Arbetare**, markera posten för den arbetare som kompetenser ställts in för tidigare och öppna arbetarposten.
-3.  I Åtgärdsfönstret, på fliken **Projekt**, i gruppen **Inställningar**, klicka på **Tilldela projekt**.
-4.  På sidan **Resursvalidering för projekttilldelningar**, klicka på fliken **Projekt**.
-5.  I **Lägg till projektet i valda projekt**, filtrera på projektet, XYZ uppgraderingsfas 2
-6.  I fönstret **Resterande projekt**, välj ett projekt och klicka sedan på pilen för att lägga till det i fönstret **Valda projekt**.
-7.  Stäng sidan.
+1.  <span data-ttu-id="ffd8f-184">Klicka på **Personal** &gt; **Arbetare** &gt; **Arbetare**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-184">Click **Human resources** &gt; **Workers** &gt; **Workers**.</span></span>
+2.  <span data-ttu-id="ffd8f-185">I listan **Arbetare**, markera posten för den arbetare som kompetenser ställts in för tidigare och öppna arbetarposten.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-185">In the **Workers** list, select the record for the worker that you previously set up competencies for, and open the worker record.</span></span>
+3.  <span data-ttu-id="ffd8f-186">I Åtgärdsfönstret, på fliken **Projekt**, i gruppen **Inställningar**, klicka på **Tilldela projekt**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-186">On the Action Pane, on the **Project** tab, in the **Setup** group, click **Assign projects**.</span></span>
+4.  <span data-ttu-id="ffd8f-187">På sidan **Resursvalidering för projekttilldelningar**, klicka på fliken **Projekt**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-187">On the **Resource validation project assignments** page, click the **Projects** tab.</span></span>
+5.  <span data-ttu-id="ffd8f-188">I **Lägg till projektet i valda projekt**, filtrera på projektet, XYZ uppgraderingsfas 2</span><span class="sxs-lookup"><span data-stu-id="ffd8f-188">In the **Add the project to selected projects**, filter on the project, XYZ Upgrade Phase 2</span></span>
+6.  <span data-ttu-id="ffd8f-189">I fönstret **Resterande projekt**, välj ett projekt och klicka sedan på pilen för att lägga till det i fönstret **Valda projekt**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-189">In the **Remaining projects** pane, select a project, and then click the arrow to add it to the **Selected projects** pane.</span></span>
+7.  <span data-ttu-id="ffd8f-190">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-190">Close the page.</span></span>
 
-Om det behövs kan du också tilldela kategorier för en resurs. Kategoritypen är antingen Kostnad eller Intäkt. Detta avgörs av din organisation. Om det inte finns några tilldelade kategorier för resursen, slår Finance and Operations upp standardkategorin på timpriser för kostnader och intäkter.
+<span data-ttu-id="ffd8f-191">Om det behövs kan du också tilldela kategorier för en resurs.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-191">If needed, you can also assign categories for a resource.</span></span> <span data-ttu-id="ffd8f-192">Kategoritypen är antingen Kostnad eller Intäkt.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-192">The category type is either Cost or Revenue.</span></span> <span data-ttu-id="ffd8f-193">Detta avgörs av din organisation.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-193">This is determined by your organization.</span></span> <span data-ttu-id="ffd8f-194">Om det inte finns några tilldelade kategorier för resursen, slår Finance and Operations upp standardkategorin på timpriser för kostnader och intäkter.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-194">If there are no assigned categories for the resource, Finance and Operations will look up the default category on hour prices for cost and revenue.</span></span>
 
-### <a name="set-up-project-resource-and-role-characteristics"></a>Ställ in projektresurs och rollegenskaper
+### <a name="set-up-project-resource-and-role-characteristics"></a><span data-ttu-id="ffd8f-195">Ställ in projektresurs och rollegenskaper</span><span class="sxs-lookup"><span data-stu-id="ffd8f-195">Set up project resource and role characteristics</span></span>
 
-En projektledare kan använda projektresurshanteringsfunktionen för att skapa roller som krävs för projektet. Roller kan användas när bekräftade resurser fortfarande är okända när resurser reserveras. Roller kan tillfälligt reserveras som planerade resurser, så att du kan fortsätta projektplanläggningsfaserna. 
+<span data-ttu-id="ffd8f-196">En projektledare kan använda projektresurshanteringsfunktionen för att skapa roller som krävs för projektet.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-196">A project manager can use the project resourcing functionality to create the roles that are required for the project.</span></span> <span data-ttu-id="ffd8f-197">Roller kan användas när bekräftade resurser fortfarande är okända när resurser reserveras.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-197">Roles can be used when confirmed resources are still unknown when reserving resources.</span></span> <span data-ttu-id="ffd8f-198">Roller kan tillfälligt reserveras som planerade resurser, så att du kan fortsätta projektplanläggningsfaserna.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-198">Roles can be temporarily reserved as planned resources, so that you can continue the project planning stages.</span></span> 
 
-[![Exempel på en roll](./media/projectresourcing05.jpg)](./media/projectresourcing05.jpg) 
+<span data-ttu-id="ffd8f-199">[![Exempel på en roll](./media/projectresourcing05.jpg)](./media/projectresourcing05.jpg)</span><span class="sxs-lookup"><span data-stu-id="ffd8f-199">[![Example of a role](./media/projectresourcing05.jpg)](./media/projectresourcing05.jpg)</span></span> 
 
-**Scenario:** Contoso anlitades för att slutföra ett tids- och materialprojekt som har ett godkänt projektramverk. Juniorprojektledaren avslutar fortfarande omfånget för projektet. Den resursansvarige identifierar för närvarande specifika resurser som ska reserveras för arbete på det nya projektet. En av rollerna som begärdes av projektsponsorn, på grund av projektets viktiga art, är seniorprojektledaren. Den resursansvarig måste skaffa den nya resursen och definiera rollen i systemet, om juniorprojektledaren kräver resursinformationen under projektplaneringen. 
+<span data-ttu-id="ffd8f-200">**Scenario:** Contoso anlitades för att slutföra ett tids- och materialprojekt som har ett godkänt projektramverk.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-200">**Scenario:** Contoso was hired to complete a Time and material project that has an approved project charter.</span></span> <span data-ttu-id="ffd8f-201">Juniorprojektledaren avslutar fortfarande omfånget för projektet.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-201">The junior project manager is still completing the scope of the project.</span></span> <span data-ttu-id="ffd8f-202">Den resursansvarige identifierar för närvarande specifika resurser som ska reserveras för arbete på det nya projektet.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-202">The resource manager is currently identifying specific resources that will be reserved to work on the new project.</span></span> <span data-ttu-id="ffd8f-203">En av rollerna som begärdes av projektsponsorn, på grund av projektets viktiga art, är seniorprojektledaren.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-203">One of the roles that the project sponsor requested, because of the critical nature of the project, is the Senior project manager.</span></span> <span data-ttu-id="ffd8f-204">Den resursansvarig måste skaffa den nya resursen och definiera rollen i systemet, om juniorprojektledaren kräver resursinformationen under projektplaneringen.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-204">The resource manager must acquire the new resource and define the role in the system in case the junior project manager requires the resource information during the project planning.</span></span> 
 
-Följande steg visar hur resursansvarig kan ställa in rollen Seniorprojektledare och associera resursegenskaper med den. Senare rollen kan användas för att söka efter tillgängliga resurser som matchar de nödvändiga resurskompetenserna.
+<span data-ttu-id="ffd8f-205">Följande steg visar hur resursansvarig kan ställa in rollen Seniorprojektledare och associera resursegenskaper med den.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-205">The following steps show how the resource manager can set up the Senior project manager role and associate resource characteristics with it.</span></span> <span data-ttu-id="ffd8f-206">Senare rollen kan användas för att söka efter tillgängliga resurser som matchar de nödvändiga resurskompetenserna.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-206">Later, the role can be used to search for available resources that match the required resource competencies.</span></span>
 
-1.  Klicka på **Projekthantering och redovisning** &gt; **Inställningar** &gt; **Resurser** &gt; **Ställ in roller**.
-2.  Klicka på **Nytt** och ange sedan följande värden:
-    -   **Roll-ID** – Senior projektledare
-    -   **Beskrivning** – Senior projektledare
-3.  Klicka på **Skapa**.
-4.  Välj **Senior projektledare**-rollen och klicka sedan på **Konfigurera egenskaper**.
-5.  I fältet **Egenskapstyp**, välj **Kompetens**.
-6.  I fältet **Tillgängliga egenskaper**, ange den färdighet som du söker efter.
-7.  I fältet **Egenskapstyp**, välj **Certifikat**.
-8.  I fältet **Tillgängliga egenskaper**, ange den certifikattyp som du söker efter.
-9.  Klicka på **OK** och stäng sidan.
+1.  <span data-ttu-id="ffd8f-207">Klicka på **Projekthantering och redovisning** &gt; **Inställningar** &gt; **Resurser** &gt; **Ställ in roller**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-207">Click **Project management and accounting** &gt; **Setup** &gt; **Resources** &gt; **Setup roles**.</span></span>
+2.  <span data-ttu-id="ffd8f-208">Klicka på **Nytt** och ange sedan följande värden:</span><span class="sxs-lookup"><span data-stu-id="ffd8f-208">Click **New**, and enter the following values:</span></span>
+    -   <span data-ttu-id="ffd8f-209">**Roll-ID** – Senior projektledare</span><span class="sxs-lookup"><span data-stu-id="ffd8f-209">**Role ID** - Senior Project Manager</span></span>
+    -   <span data-ttu-id="ffd8f-210">**Beskrivning** – Senior projektledare</span><span class="sxs-lookup"><span data-stu-id="ffd8f-210">**Description** - Senior Project Manager</span></span>
+3.  <span data-ttu-id="ffd8f-211">Klicka på **Skapa**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-211">Click **Create**.</span></span>
+4.  <span data-ttu-id="ffd8f-212">Välj **Senior projektledare**-rollen och klicka sedan på **Konfigurera egenskaper**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-212">Select the **Senior Project Manager** role, and then click **Configure characteristics**.</span></span>
+5.  <span data-ttu-id="ffd8f-213">I fältet **Egenskapstyp**, välj **Kompetens**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-213">In the **Characteristics type** field, select **Skill**.</span></span>
+6.  <span data-ttu-id="ffd8f-214">I fältet **Tillgängliga egenskaper**, ange den färdighet som du söker efter.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-214">In the **Available characteristics** field, enter the skill that you're searching for.</span></span>
+7.  <span data-ttu-id="ffd8f-215">I fältet **Egenskapstyp**, välj **Certifikat**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-215">In the **Characteristic type** field, select **Certificate**.</span></span>
+8.  <span data-ttu-id="ffd8f-216">I fältet **Tillgängliga egenskaper**, ange den certifikattyp som du söker efter.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-216">In the **Available characteristics** field, enter the certificate type to search for.</span></span>
+9.  <span data-ttu-id="ffd8f-217">Klicka på **OK** och stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-217">Click **OK**, and close the page.</span></span>
 
-### <a name="assign-a-project-resource-to-a-project"></a>Tilldela en projektresurs till ett projekt
+### <a name="assign-a-project-resource-to-a-project"></a><span data-ttu-id="ffd8f-218">Tilldela en projektresurs till ett projekt</span><span class="sxs-lookup"><span data-stu-id="ffd8f-218">Assign a project resource to a project</span></span>
 
-1.  Klicka på **Projekthantering och redovisning** &gt; **Allmänt** &gt; **Projekt** &gt; **Alla projekt** och öppna projektet **XYZ uppgraderingsfas 2**.
-2.  På fliken **Projektteam och tidsplanering**, klicka på **Lägg till**.
-3.  I fältet **Roll**, välj **Teammedlem**.
-4.  Klicka på **Boka från kalender**.
-5.  På **Resurstillgänglighet**-sidan, klicka på **Visa inställningar**.
-6.  På sidan **Justera visningsinställningar**, ange följande värden:
-    -   **Vy för format för datumintervall** – Dag
-    -   **Visa beskrivningar av tillgänglighet** – Ja
-    -   **Visa resterande kapacitet** – Ja
-7.  Välj en resurs i listan över resurser.
-8.  Klicka på **Fast bokning** &gt; **Total kapacitet**.
-9.  Stäng sidan.
+1.  <span data-ttu-id="ffd8f-219">Klicka på **Projekthantering och redovisning** &gt; **Allmänt** &gt; **Projekt** &gt; **Alla projekt** och öppna projektet **XYZ uppgraderingsfas 2**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-219">Click **Project management and accounting** &gt; **Common** &gt; **Projects** &gt; **All projects**, and open the **XYZ Upgrade Phase 2** project.</span></span>
+2.  <span data-ttu-id="ffd8f-220">På fliken **Projektteam och tidsplanering**, klicka på **Lägg till**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-220">On the **Project team and scheduling** tab, click **Add**.</span></span>
+3.  <span data-ttu-id="ffd8f-221">I fältet **Roll**, välj **Teammedlem**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-221">In the **Role** field, select **Team member**.</span></span>
+4.  <span data-ttu-id="ffd8f-222">Klicka på **Boka från kalender**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-222">Click **Book from calendar**.</span></span>
+5.  <span data-ttu-id="ffd8f-223">På **Resurstillgänglighet**-sidan, klicka på **Visa inställningar**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-223">On the **Resource availability** page, click **View settings**.</span></span>
+6.  <span data-ttu-id="ffd8f-224">På sidan **Justera visningsinställningar**, ange följande värden:</span><span class="sxs-lookup"><span data-stu-id="ffd8f-224">On the **Adjust view settings** page, enter the following values:</span></span>
+    -   <span data-ttu-id="ffd8f-225">**Vy för format för datumintervall** – Dag</span><span class="sxs-lookup"><span data-stu-id="ffd8f-225">**Format for date range view** - Day</span></span>
+    -   <span data-ttu-id="ffd8f-226">**Visa beskrivningar av tillgänglighet** – Ja</span><span class="sxs-lookup"><span data-stu-id="ffd8f-226">**Display availability descriptions** - Yes</span></span>
+    -   <span data-ttu-id="ffd8f-227">**Visa resterande kapacitet** – Ja</span><span class="sxs-lookup"><span data-stu-id="ffd8f-227">**Display remaining capacity** - Yes</span></span>
+7.  <span data-ttu-id="ffd8f-228">Välj en resurs i listan över resurser.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-228">In the list of resources, select a resource.</span></span>
+8.  <span data-ttu-id="ffd8f-229">Klicka på **Fast bokning** &gt; **Total kapacitet**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-229">Click **Hard book** &gt; **Full capacity**.</span></span>
+9.  <span data-ttu-id="ffd8f-230">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-230">Close the page.</span></span>
 
-### <a name="assign-a-resource-to-a-default-role"></a>Tilldela en resurs till en standardroll
+### <a name="assign-a-resource-to-a-default-role"></a><span data-ttu-id="ffd8f-231">Tilldela en resurs till en standardroll</span><span class="sxs-lookup"><span data-stu-id="ffd8f-231">Assign a resource to a default role</span></span>
 
-Om du vill hjälpa projektledare eller resursansvariga kan du gå nedåt i resurserna som kan reserveras för ett projekt. Du kan associera en standardroll med en befintlig resurs eller en nyligen anskaffad resurs. Exempelvis när Daniel anställdes hade han erfarenhet och sakkunskap som passade för rollen Affärsanalytiker. Resursansvarige tilldelade den här rollen som Daniels standardroll. Därefter lade resursansvarige till Daniel i en pool med affärsanalytiker som är tillgängliga för arbete i projekt. 
+<span data-ttu-id="ffd8f-232">Om du vill hjälpa projektledare eller resursansvariga kan du gå nedåt i resurserna som kan reserveras för ett projekt.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-232">To help project or resource managers, you can drill down further on the resources that can be reserved for a project.</span></span> <span data-ttu-id="ffd8f-233">Du kan associera en standardroll med en befintlig resurs eller en nyligen anskaffad resurs.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-233">You can associate a default role with an existing resource or a newly acquired resource.</span></span> <span data-ttu-id="ffd8f-234">Exempelvis när Daniel anställdes hade han erfarenhet och sakkunskap som passade för rollen Affärsanalytiker.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-234">For example, when Daniel was hired, he had the experience and skills to fill the Business analyst role.</span></span> <span data-ttu-id="ffd8f-235">Resursansvarige tilldelade den här rollen som Daniels standardroll.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-235">The resource manager assigned this role as Daniel's default role.</span></span> <span data-ttu-id="ffd8f-236">Därefter lade resursansvarige till Daniel i en pool med affärsanalytiker som är tillgängliga för arbete i projekt.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-236">Therefore, the resource manager added Daniel to a pool of business analysts who are available to work on projects.</span></span> 
 
-Under resursreserveringen kan projektledare filtrera rollresurserna som är tillgängliga för arbete i projekt. De kan använda den här informationen som ett villkor när de använder beslutsanalys för flera kriterier under resursuppfyllelse. De kan också lägga till andra resursegenskaper till filtret om du vill söka efter resurser som har specifika färdigheter, utbildning och erfarenheter för ett visst projekt. 
+<span data-ttu-id="ffd8f-237">Under resursreserveringen kan projektledare filtrera rollresurserna som är tillgängliga för arbete i projekt.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-237">During resource reservation, project managers can filter the role resources that are available to work on projects.</span></span> <span data-ttu-id="ffd8f-238">De kan använda den här informationen som ett villkor när de använder beslutsanalys för flera kriterier under resursuppfyllelse.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-238">They can use this information as one criterion when they perform multi-criteria decision analysis during resource fulfillment.</span></span> <span data-ttu-id="ffd8f-239">De kan också lägga till andra resursegenskaper till filtret om du vill söka efter resurser som har specifika färdigheter, utbildning och erfarenheter för ett visst projekt.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-239">They can also add other resource characteristics to the filter to search for resources that have specific skills, education, and experience for a given project.</span></span> 
 
-**Scenario:** Ett godkänt projekt har startat och den seniora projektledarrollen reserverades som en planerad resurs under projektplanläggningsfasen. Resurschefen har nu fått en resurs för att uppfylla den seniora rollen som projektledare.
+<span data-ttu-id="ffd8f-240">**Scenario:** Ett godkänt projekt har startat och den seniora projektledarrollen reserverades som en planerad resurs under projektplanläggningsfasen.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-240">**Scenario:** An approved project has started, and the Senior project manager role was reserved as a planned resource during the project planning stage.</span></span> <span data-ttu-id="ffd8f-241">Resurschefen har nu fått en resurs för att uppfylla den seniora rollen som projektledare.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-241">The resource manager has now acquired a resource to fulfill the Senior project manager role.</span></span>
 
-1.  Klicka på **Projekthantering och redovisning** &gt; **Projektresurser** &gt; **Resurslista**.
-2.  I listan **Resurs**, välj **Daniel Goldschmidt**.
-3.  Klicka på **Projektresurs** &gt; **Underhåll** &gt; **Resursroll**.
-4.  Klicka på **Nytt** och ange sedan följande värden:
-    -   **Giltighet** – (det aktuella datumet)
-    -   **Utgång** – Aldrig
-    -   **Roll** – Senior projektledare
-5.  Klicka på **Spara** och stäng sedan sidan.
-6.  På fliken **Kompetenser**, lägg till färdigheten **ProjectMgmt** och **PMP**.
+1.  <span data-ttu-id="ffd8f-242">Klicka på **Projekthantering och redovisning** &gt; **Projektresurser** &gt; **Resurslista**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-242">Click **Project management and accounting** &gt; **Project resources** &gt; **Resources list**.</span></span>
+2.  <span data-ttu-id="ffd8f-243">I listan **Resurs**, välj **Daniel Goldschmidt**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-243">In the **Resource** list, select **Daniel Goldschmidt**.</span></span>
+3.  <span data-ttu-id="ffd8f-244">Klicka på **Projektresurs** &gt; **Underhåll** &gt; **Resursroll**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-244">Click **Project resource** &gt; **Maintain** &gt; **Resource role**.</span></span>
+4.  <span data-ttu-id="ffd8f-245">Klicka på **Nytt** och ange sedan följande värden:</span><span class="sxs-lookup"><span data-stu-id="ffd8f-245">Click **New**, and enter the following values:</span></span>
+    -   <span data-ttu-id="ffd8f-246">**Giltighet** – (det aktuella datumet)</span><span class="sxs-lookup"><span data-stu-id="ffd8f-246">**Effective** - (The current date)</span></span>
+    -   <span data-ttu-id="ffd8f-247">**Utgång** – Aldrig</span><span class="sxs-lookup"><span data-stu-id="ffd8f-247">**Expiration** - Never</span></span>
+    -   <span data-ttu-id="ffd8f-248">**Roll** – Senior projektledare</span><span class="sxs-lookup"><span data-stu-id="ffd8f-248">**Role** - Senior Project Manager</span></span>
+5.  <span data-ttu-id="ffd8f-249">Klicka på **Spara** och stäng sedan sidan.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-249">Click **Save**, and then close the page.</span></span>
+6.  <span data-ttu-id="ffd8f-250">På fliken **Kompetenser**, lägg till färdigheten **ProjectMgmt** och **PMP**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-250">On the **Competencies** tab, add the **ProjectMgmt** skill and the **PMP** certificate.</span></span>
 
-## <a name="set-up-role-based-pricing"></a>Ställ in rollbaserad prissättning
-Alla kostnader, försäljningar och internpriser kan ställas in för roller.
+## <a name="set-up-role-based-pricing"></a><span data-ttu-id="ffd8f-251">Ställ in rollbaserad prissättning</span><span class="sxs-lookup"><span data-stu-id="ffd8f-251">Set up role-based pricing</span></span>
+<span data-ttu-id="ffd8f-252">Alla kostnader, försäljningar och internpriser kan ställas in för roller.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-252">All cost, sales, and transfer prices can be set up for roles.</span></span>
 
-1.  Klicka på **Projekthantering och redovisning** &gt; **Inställningar** &gt; **Priser** &gt; **Försäljningspris (timme)**.
-2.  Klicka på **Ny**.
-3.  Ange ett ikraftträdandedatum.
-4.  Välj en roll i kolumnen **Roll**.
-5.  I kolumnen **Priser**, ange ett pris för den valda resursrollen.
+1.  <span data-ttu-id="ffd8f-253">Klicka på **Projekthantering och redovisning** &gt; **Inställningar** &gt; **Priser** &gt; **Försäljningspris (timme)**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-253">Click **Project management and accounting** &gt; **Setup** &gt; **Prices** &gt; **Sales price (hour)**.</span></span>
+2.  <span data-ttu-id="ffd8f-254">Klicka på **Ny**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-254">Click **New**.</span></span>
+3.  <span data-ttu-id="ffd8f-255">Ange ett ikraftträdandedatum.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-255">Enter an effective date.</span></span>
+4.  <span data-ttu-id="ffd8f-256">Välj en roll i kolumnen **Roll**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-256">In the **Role** column, select a role.</span></span>
+5.  <span data-ttu-id="ffd8f-257">I kolumnen **Priser**, ange ett pris för den valda resursrollen.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-257">In the **Pricing** column, enter a price for the selected resource role.</span></span>
 
-## <a name="form-a-project-team"></a>Skapa ett projektteam
-Om du vill använda de roller som redan har ställts in i ett projekt, måste en projektledare associera rollerna med projektet. Flera roller kan tilldelas för ett projekt och Finance and Operations ger automatiskt dessa roller etiketter under reserveringen för att förhindra förvirring. Om till exempel projektledaren kräver tre programingenjörer, genereras automatiskt tre roller för programingenjör som har etiketterna programingenjör 1, programingenjör 2 och programingenjör 3. Om rollen tidigare fått egenskaper, används de som ett filter för sökningar efter en resurs. Ytterligare egenskaper kan läggas till som krävs för att begränsa sökningen. 
+## <a name="form-a-project-team"></a><span data-ttu-id="ffd8f-258">Skapa ett projektteam</span><span class="sxs-lookup"><span data-stu-id="ffd8f-258">Form a project team</span></span>
+<span data-ttu-id="ffd8f-259">Om du vill använda de roller som redan har ställts in i ett projekt, måste en projektledare associera rollerna med projektet.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-259">To use the roles that were previously set up in a project, a project manager must associate the roles with the project.</span></span> <span data-ttu-id="ffd8f-260">Flera roller kan tilldelas för ett projekt och Finance and Operations ger automatiskt dessa roller etiketter under reserveringen för att förhindra förvirring.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-260">Multiple roles can be assigned for a project, and Finance and Operations automatically labels these roles during reservation to prevent confusion.</span></span> <span data-ttu-id="ffd8f-261">Om till exempel projektledaren kräver tre programingenjörer, genereras automatiskt tre roller för programingenjör som har etiketterna programingenjör 1, programingenjör 2 och programingenjör 3.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-261">For example, if the project manager requires three software engineers, three Software engineer roles that have software engineer 1, software engineer 2, and software engineer 3 as their labels are automatically generated.</span></span> <span data-ttu-id="ffd8f-262">Om rollen tidigare fått egenskaper, används de som ett filter för sökningar efter en resurs.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-262">If role characteristics were previously set for the role, they are applied as a filter during searches for a resource.</span></span> <span data-ttu-id="ffd8f-263">Ytterligare egenskaper kan läggas till som krävs för att begränsa sökningen.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-263">Additional characteristics can be added as required to further refine the search.</span></span> 
 
-Visningsinställningar kan också anpassas för att ge en bättre vy av resurstillgänglighet. Det finns alternativ för att visa tim, dag, vecka, månad, kvartalsvis och årlig tillgänglighet. Det finns även alternativ för att visa återstående och tillgänglig kapacitet för resurser. Det här alternativet är användbart för tidsadministration, när du vill beräkna tillgänglig tid för aktiviteter eller resurstillgänglighet. 
+<span data-ttu-id="ffd8f-264">Visningsinställningar kan också anpassas för att ge en bättre vy av resurstillgänglighet.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-264">View settings can also be customized to give a better view of resource availability.</span></span> <span data-ttu-id="ffd8f-265">Det finns alternativ för att visa tim, dag, vecka, månad, kvartalsvis och årlig tillgänglighet.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-265">There are options to show hourly, daily, weekly, monthly, quarterly, and annual availability.</span></span> <span data-ttu-id="ffd8f-266">Det finns även alternativ för att visa återstående och tillgänglig kapacitet för resurser.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-266">There is also an option to show available and remaining capacity on resources.</span></span> <span data-ttu-id="ffd8f-267">Det här alternativet är användbart för tidsadministration, när du vill beräkna tillgänglig tid för aktiviteter eller resurstillgänglighet.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-267">This option is useful for time management when you're estimating available time for activities or resource availability.</span></span> 
 
-Projektledaren kan välja en roll på sidan och sedan, om det finns en tillgänglig resurs som passar behovet, välja att reservera en resurs för att fylla rollen. Observera att resurserna inte måste reserveras vid denna tidpunkt under planeringsfasen. När du skapar en struktur kan du ersätta roller med bemannade resurser för projektet. Om roller ersättas med bemannade resurser i strukturen uppdaterar inställningen av resursen automatiskt projektteamslistan och tidsplaneringen. 
+<span data-ttu-id="ffd8f-268">Projektledaren kan välja en roll på sidan och sedan, om det finns en tillgänglig resurs som passar behovet, välja att reservera en resurs för att fylla rollen.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-268">The project manager can select a role on the page and then, if there is an available resource that fits the requirement, select to reserve a resource to fill the role.</span></span> <span data-ttu-id="ffd8f-269">Observera att resurserna inte måste reserveras vid denna tidpunkt under planeringsfasen.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-269">Note that the resources don't have to be reserved at this point during the planning stage.</span></span> <span data-ttu-id="ffd8f-270">När du skapar en struktur kan du ersätta roller med bemannade resurser för projektet.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-270">When you create a WBS, you can replace roles with staffed resources for the project.</span></span> <span data-ttu-id="ffd8f-271">Om roller ersättas med bemannade resurser i strukturen uppdaterar inställningen av resursen automatiskt projektteamslistan och tidsplaneringen.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-271">If roles are replaced with staffed resources in the WBS, the resource setup automatically updates the project team listing and scheduling.</span></span> 
 
-[![Projektteam som innehåller både roller och faktiska resurser](./media/projectresourcing03-1024x368.jpg)](./media/projectresourcing03.jpg) 
+<span data-ttu-id="ffd8f-272">[![Projektteam som innehåller både roller och faktiska resurser](./media/projectresourcing03-1024x368.jpg)](./media/projectresourcing03.jpg)</span><span class="sxs-lookup"><span data-stu-id="ffd8f-272">[![Project team listing that includes both roles and actual resources](./media/projectresourcing03-1024x368.jpg)](./media/projectresourcing03.jpg)</span></span> 
 
-Projektchefen har olika alternativ för att boka resurser för ett projekt, till exempel **Resterande kapacitet**, **Total kapacitet**, **Kapacitet i procent** och **Ange timmar**. Dessa bokningsalternativ kan annulleras när som helst om resurstilldelningen ändras. Två typer av bokningar stöds:
+<span data-ttu-id="ffd8f-273">Projektchefen har olika alternativ för att boka resurser för ett projekt, till exempel **Resterande kapacitet**, **Total kapacitet**, **Kapacitet i procent** och **Ange timmar**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-273">The project manager has various options for booking a resource for a project, such as **Remaining capacity**, **Full capacity**, **Capacity percentage**, and **Specify hours**.</span></span> <span data-ttu-id="ffd8f-274">Dessa bokningsalternativ kan annulleras när som helst om resurstilldelningen ändras.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-274">These booking options can be canceled at any time if resource assignments change.</span></span> <span data-ttu-id="ffd8f-275">Två typer av bokningar stöds:</span><span class="sxs-lookup"><span data-stu-id="ffd8f-275">Two types of booking are supported:</span></span>
 
--   **Fast bokning** – Resursreservationen godkändes och bekräftades för att arbeta på engagemanget under den angivna varaktigheten.
--   **Preliminär bokning** – Resursreservationerna godkändes preliminärt för att arbeta på engagemanget för den angivna varaktigheten.
+-   <span data-ttu-id="ffd8f-276">**Fast bokning** – Resursreservationen godkändes och bekräftades för att arbeta på engagemanget under den angivna varaktigheten.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-276">**Hard Book** – The resource reservation was approved and confirmed to work on the engagement for the specified duration.</span></span>
+-   <span data-ttu-id="ffd8f-277">**Preliminär bokning** – Resursreservationerna godkändes preliminärt för att arbeta på engagemanget för den angivna varaktigheten.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-277">**Soft book** – The resource reservations was tentatively set to work on the engagement for the specified duration.</span></span>
 
-Följande procedur förklarar hur du skapar ett projektteam.
+<span data-ttu-id="ffd8f-278">Följande procedur förklarar hur du skapar ett projektteam.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-278">The following procedure explains how to create a project team.</span></span>
 
-### <a name="create-a-project-team"></a>Skapa ett projektteam
+### <a name="create-a-project-team"></a><span data-ttu-id="ffd8f-279">Skapa ett projektteam</span><span class="sxs-lookup"><span data-stu-id="ffd8f-279">Create a project team</span></span>
 
-1.  På listsidan **Alla projekt**, välj ett projekt och klicka sedan på **Redigera**.
-2.  På fliken **Projektteam och tidsplanering**, i fältet **Schemalagt slutdatum**, ange schemastartdatumet plus en månad. Om till exempel schemastartdatumet är 24 juni 2017 (24/06/2017), ange **24/07/2017**.
-3.  Klicka på **Lägg till**.
-4.  I **Lägg till roller i projektet**-fönstret, i **Roll**-fältet, välj **Senior projektledare**.
-5.  Klicka på **Kompetenser som krävs**.
-6.  På **Välj egenskaper**-sidan markeras de egenskaper som du tidigare angett för rollen senior projektledare som standard. Klicka på **OK**.
-7.  På **Lägg till roller i projektet**-sidan i **Antal resurser**-fältet, ange **1**.
-8.  I **Resurs**-fältet visar sökningen alla resurser som har begärt kompetenserna. Välj **Daniel Goldschmidt** och klicka sedan på **Skapa**.
-9.  På **Projekt**-sidan, klicka på **Lägg till**.
-10. I **Lägg till roller i projektet**-fönstret, i **Roll**-fältet, välj **Teammedlem**. I fältet **Antal resurser**, ange **5**.
-11. Klicka på **Skapa**.
-12. På sidan **Projekt**, klicka på **Uppfyll resurs**.
+1.  <span data-ttu-id="ffd8f-280">På listsidan **Alla projekt**, välj ett projekt och klicka sedan på **Redigera**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-280">On the **All projects** list page, select a project, and then click **Edit**.</span></span>
+2.  <span data-ttu-id="ffd8f-281">På fliken **Projektteam och tidsplanering**, i fältet **Schemalagt slutdatum**, ange schemastartdatumet plus en månad.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-281">On the **Project team and scheduling** tab, in the **Schedule end date** field, enter the schedule start date plus one month.</span></span> <span data-ttu-id="ffd8f-282">Om till exempel schemastartdatumet är 24 juni 2017 (24/06/2017), ange **24/07/2017**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-282">For example, if the schedule start date is June 24, 2017 (24/06/2017), enter **24/07/2017**.</span></span>
+3.  <span data-ttu-id="ffd8f-283">Klicka på **Lägg till**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-283">Click **Add**.</span></span>
+4.  <span data-ttu-id="ffd8f-284">I **Lägg till roller i projektet**-fönstret, i **Roll**-fältet, välj **Senior projektledare**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-284">In the **Add roles to the project** pane, in the **Role** field, select **Senior Project Manager**.</span></span>
+5.  <span data-ttu-id="ffd8f-285">Klicka på **Kompetenser som krävs**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-285">Click **Required competencies**.</span></span>
+6.  <span data-ttu-id="ffd8f-286">På **Välj egenskaper**-sidan markeras de egenskaper som du tidigare angett för rollen senior projektledare som standard.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-286">On the **Choose characteristics** page, the characteristics that you previously set for the Senior project manager role are selected by default.</span></span> <span data-ttu-id="ffd8f-287">Klicka på **OK**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-287">Click **OK**.</span></span>
+7.  <span data-ttu-id="ffd8f-288">På **Lägg till roller i projektet**-sidan i **Antal resurser**-fältet, ange **1**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-288">On the **Add roles to project** page, in the **Number of resources** field, enter **1**.</span></span>
+8.  <span data-ttu-id="ffd8f-289">I **Resurs**-fältet visar sökningen alla resurser som har begärt kompetenserna.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-289">In the **Resource** field, the lookup shows all resources that have the required competencies.</span></span> <span data-ttu-id="ffd8f-290">Välj **Daniel Goldschmidt** och klicka sedan på **Skapa**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-290">Select **Daniel Goldschmidt**, and then click **Create**.</span></span>
+9.  <span data-ttu-id="ffd8f-291">På **Projekt**-sidan, klicka på **Lägg till**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-291">On the **Project** page, click **Add**.</span></span>
+10. <span data-ttu-id="ffd8f-292">I **Lägg till roller i projektet**-fönstret, i **Roll**-fältet, välj **Teammedlem**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-292">In the **Add roles to the project** pane, in the **Role** field, select **Team member**.</span></span> <span data-ttu-id="ffd8f-293">I fältet **Antal resurser**, ange **5**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-293">In the **Number of resources** field, enter **5**.</span></span>
+11. <span data-ttu-id="ffd8f-294">Klicka på **Skapa**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-294">Click **Create**.</span></span>
+12. <span data-ttu-id="ffd8f-295">På sidan **Projekt**, klicka på **Uppfyll resurs**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-295">On the **Projects** page, click **Fulfill resource**.</span></span>
 
-## <a name="resource-capacity-synchronization"></a>Synkronisering av resurskapacitet
-Följande processer för synkronisering av resurser hjälper till att garantera att information om kalendern och om baskalendern sipprar ned i tidsplanering av projektresurser. Om kalendern ändras gör processerna de nödvändiga uppdateringarna av planeringen av projektresurser. Processerna kan också hjälpa till att förbättra prestandan, eftersom kalenderns resursinformation synkroniseras i förväg, så att uppdateringar av resurstidsplaneringsinformation sker snabbare. Vi rekommenderar att du planerar processer som en batch i stället för en i taget. Annars finns det en risk att någon glömmer inklusive datum när informationen synkroniserades senast. Om inklusive datum inte används, luckor kan inträffa under datumsynkronisering.
+## <a name="resource-capacity-synchronization"></a><span data-ttu-id="ffd8f-296">Synkronisering av resurskapacitet</span><span class="sxs-lookup"><span data-stu-id="ffd8f-296">Resource capacity synchronization</span></span>
+<span data-ttu-id="ffd8f-297">Följande processer för synkronisering av resurser hjälper till att garantera att information om kalendern och om baskalendern sipprar ned i tidsplanering av projektresurser.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-297">The processes for resource synchronization helps guarantee that the calendar and base calendar information trickles down into project resource scheduling.</span></span> <span data-ttu-id="ffd8f-298">Om kalendern ändras gör processerna de nödvändiga uppdateringarna av planeringen av projektresurser.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-298">If the calendar is changed, the processes make the required updates to the scheduling of project resources.</span></span> <span data-ttu-id="ffd8f-299">Processerna kan också hjälpa till att förbättra prestandan, eftersom kalenderns resursinformation synkroniseras i förväg, så att uppdateringar av resurstidsplaneringsinformation sker snabbare.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-299">The processes also help improve performance, because the calendar’s resource information is synchronized in advance, so that updates to resource scheduling information occur more quickly.</span></span> <span data-ttu-id="ffd8f-300">Vi rekommenderar att du planerar processer som en batch i stället för en i taget.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-300">We recommend that you schedule the processes as a batch instead of one at a time.</span></span> <span data-ttu-id="ffd8f-301">Annars finns det en risk att någon glömmer inklusive datum när informationen synkroniserades senast.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-301">Otherwise, there is a risk that someone will forget the inclusive dates when the information was last synchronized.</span></span> <span data-ttu-id="ffd8f-302">Om inklusive datum inte används, luckor kan inträffa under datumsynkronisering.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-302">If inclusive dates aren't used, gaps can occur during date synchronization.</span></span>
 
 ### <a name="calendar-synchronizationmediaprojectresourcing04-1024x471jpg"></a>![Kalendersynkronisering](./media/projectresourcing04-1024x471.jpg)
 
-**Synkronisera kapacitetsuppföljningar för resurs**
+<span data-ttu-id="ffd8f-304">**Synkronisera kapacitetsuppföljningar för resurs**</span><span class="sxs-lookup"><span data-stu-id="ffd8f-304">**Synchronize resource capacity roll-ups**</span></span>
 
-Synkroniseringsprocessen har utformats för att synkronisera all information om resurskalendrarna. Informationen omfattar baskalenderinformation om alla ändringar i kapacitetsregistret för projektets resurskalender. Om nya resurser läggs till i projektet, synkroniseringen hjälper till att säkerställa att den uppdaterade kalenderinformationen är tillgänglig. Den här synkroniseringen kan göras när som helst. 
+<span data-ttu-id="ffd8f-305">Synkroniseringsprocessen har utformats för att synkronisera all information om resurskalendrarna.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-305">The synchronization process is designed to synchronize all resource calendar information.</span></span> <span data-ttu-id="ffd8f-306">Informationen omfattar baskalenderinformation om alla ändringar i kapacitetsregistret för projektets resurskalender.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-306">This information includes base calendar information about any changes to the project’s Resource calendar capacity table.</span></span> <span data-ttu-id="ffd8f-307">Om nya resurser läggs till i projektet, synkroniseringen hjälper till att säkerställa att den uppdaterade kalenderinformationen är tillgänglig.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-307">If new resources are added in the project, synchronization helps ensure that the updated calendar information is available.</span></span> <span data-ttu-id="ffd8f-308">Den här synkroniseringen kan göras när som helst.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-308">This synchronization can be done at any time.</span></span> 
 
-Vi rekommenderar att du använder en batch. Alternativen är tillgängliga för att synkronisera kapacitetsreservationer.
+<span data-ttu-id="ffd8f-309">Vi rekommenderar att du använder en batch.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-309">We recommend that you use a batch.</span></span> <span data-ttu-id="ffd8f-310">Alternativen är tillgängliga för att synkronisera kapacitetsreservationer.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-310">The options are available in synchronizing capacity reservations.</span></span>
 
--   Klicka på **Projekthantering och redovisning** &gt; **Periodisk** &gt; **Kapacitetssynkronisering** &gt; **Synkronisera kapacitetsuppföljningar för resurs**.
+-   <span data-ttu-id="ffd8f-311">Klicka på **Projekthantering och redovisning** &gt; **Periodisk** &gt; **Kapacitetssynkronisering** &gt; **Synkronisera kapacitetsuppföljningar för resurs**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-311">Click **Project management and accounting** &gt; **Periodic** &gt; **Capacity synchronization** &gt; **Synchronize resources capacity roll-ups**.</span></span>
 
-| Alternativ | beskrivning                                                                                                                                                                                          |
+| <span data-ttu-id="ffd8f-312">Alternativ</span><span class="sxs-lookup"><span data-stu-id="ffd8f-312">Option</span></span> | <span data-ttu-id="ffd8f-313">beskrivning</span><span class="sxs-lookup"><span data-stu-id="ffd8f-313">Description</span></span>                                                                                                                                                                                          |
 |--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Ja    | Synkronisera alla resursdata med information om kalender och om baskalender och ersätt all information i projektets kalender för resurskapacitet.                                                  |
-| Nej     | Synkronisera resursdata som baseras på en datumintervallkod och de angivna start- och slutdatumen. Det här alternativet tar inte bort befintliga data och uppdaterar information endast för nyligen tillagda resurser. |
+| <span data-ttu-id="ffd8f-314">Ja</span><span class="sxs-lookup"><span data-stu-id="ffd8f-314">Yes</span></span>    | <span data-ttu-id="ffd8f-315">Synkronisera alla resursdata med information om kalender och om baskalender och ersätt all information i projektets kalender för resurskapacitet.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-315">Synchronize all resource data with calendar and base calendar information, and replace all information in the project's resource capacity calendar.</span></span>                                                  |
+| <span data-ttu-id="ffd8f-316">Nej</span><span class="sxs-lookup"><span data-stu-id="ffd8f-316">No</span></span>     | <span data-ttu-id="ffd8f-317">Synkronisera resursdata som baseras på en datumintervallkod och de angivna start- och slutdatumen.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-317">Synchronize resource data, based on the date interval code, and the specified start and end dates.</span></span> <span data-ttu-id="ffd8f-318">Det här alternativet tar inte bort befintliga data och uppdaterar information endast för nyligen tillagda resurser.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-318">This option doesn't remove existing data, and updates information only for newly added resources.</span></span> |
 
-[![Synkroniseringsprocess](./media/projectresourcing09.jpg)](./media/projectresourcing09.jpg)
+<span data-ttu-id="ffd8f-319">[![Synkroniseringsprocess](./media/projectresourcing09.jpg)](./media/projectresourcing09.jpg)</span><span class="sxs-lookup"><span data-stu-id="ffd8f-319">[![Synchronization process](./media/projectresourcing09.jpg)](./media/projectresourcing09.jpg)</span></span>
 
-## <a name="set-up-roles-on-wbs-templates"></a>Konfigurera roller för strukturmallar
-Projektledare kan ställa in strukturmallar de kan använda när de skapar en struktur för nya projekt. Projektledare kan lägga till roller när de skapar en mall. Använd följande procedur för att tilldela en roll till en strukturmall.** **
+## <a name="set-up-roles-on-wbs-templates"></a><span data-ttu-id="ffd8f-320">Konfigurera roller för strukturmallar</span><span class="sxs-lookup"><span data-stu-id="ffd8f-320">Set up roles on WBS templates</span></span>
+<span data-ttu-id="ffd8f-321">Projektledare kan ställa in strukturmallar de kan använda när de skapar en struktur för nya projekt.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-321">Project managers can set up WBS templates that they can apply when they create a WBS for new projects.</span></span> <span data-ttu-id="ffd8f-322">Projektledare kan lägga till roller när de skapar en mall.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-322">Project managers can add roles when they create a template.</span></span> <span data-ttu-id="ffd8f-323">Använd följande procedur för att tilldela en roll till en strukturmall.** **</span><span class="sxs-lookup"><span data-stu-id="ffd8f-323">Use the following procedure to assign a role to a WBS template.** **</span></span>
 
-1.  Klicka på **Projekthantering och redovisning** &gt; **Inställningar** &gt; **Projekt** &gt; **Uppdelade arbetsstrukturmallar**.
-2.  Klicka på **Information** för en vald strukturmall.
-3.  Välj en uppgift i listan och sedan, i **Roll**-fältet, välj en roll som ska tilldelas uppgiften.
+1.  <span data-ttu-id="ffd8f-324">Klicka på **Projekthantering och redovisning** &gt; **Inställningar** &gt; **Projekt** &gt; **Uppdelade arbetsstrukturmallar**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-324">Click **Project management and accounting** &gt; **Setup** &gt; **Projects** &gt; **Work breakdown structure templates**.</span></span>
+2.  <span data-ttu-id="ffd8f-325">Klicka på **Information** för en vald strukturmall.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-325">Click **Details** for a selected WBS template.</span></span>
+3.  <span data-ttu-id="ffd8f-326">Välj en uppgift i listan och sedan, i **Roll**-fältet, välj en roll som ska tilldelas uppgiften.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-326">Select a task in the list, and then, in the **Role** field, select a role to assign to the task.</span></span>
 
-### <a name="work-with-a-wbs"></a>Arbeta med en struktur
+### <a name="work-with-a-wbs"></a><span data-ttu-id="ffd8f-327">Arbeta med en struktur</span><span class="sxs-lookup"><span data-stu-id="ffd8f-327">Work with a WBS</span></span>
 
-Du kan skapa en ny struktur, eller så kan du kopiera en struktur från en befintlig strukturmall. En projektledare kan enkelt hantera resurserna genom att tilldela roller till nya uppgifter på strukturen. Roller kan ersättas när en resurs har anskaffats eller efter en bekräftad resurs som ska arbeta med uppgiften identifierats. Denna flexibilitet låter projektledare utföra följande uppgifter:
+<span data-ttu-id="ffd8f-328">Du kan skapa en ny struktur, eller så kan du kopiera en struktur från en befintlig strukturmall.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-328">You can create a new WBS, or you can copy a WBS from an existing WBS template.</span></span> <span data-ttu-id="ffd8f-329">En projektledare kan enkelt hantera resurserna genom att tilldela roller till nya uppgifter på strukturen.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-329">A project manager can easily manage the resources by assigning roles to new tasks on the WBS.</span></span> <span data-ttu-id="ffd8f-330">Roller kan ersättas när en resurs har anskaffats eller efter en bekräftad resurs som ska arbeta med uppgiften identifierats.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-330">Roles can be replaced after a resource is acquired, or after a confirmed resource to work on the task is identified.</span></span> <span data-ttu-id="ffd8f-331">Denna flexibilitet låter projektledare utföra följande uppgifter:</span><span class="sxs-lookup"><span data-stu-id="ffd8f-331">This flexibility lets project managers perform the following tasks:</span></span>
 
--   Identifiera det antal resurser som krävs för strukturarbetspaket.
--   Uppskatta projektkostnader.
--   Fastställa en preliminär budget.
--   Beräkna aktivitetvaraktighet baserat på roller och resurser.
--   Utveckla alla projektledningsplaner baserat på den tillgängliga projektinformationen.
+-   <span data-ttu-id="ffd8f-332">Identifiera det antal resurser som krävs för strukturarbetspaket.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-332">Identify the number of resources that are required for WBS work packages.</span></span>
+-   <span data-ttu-id="ffd8f-333">Uppskatta projektkostnader.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-333">Estimate project costs.</span></span>
+-   <span data-ttu-id="ffd8f-334">Fastställa en preliminär budget.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-334">Determine a preliminary budget.</span></span>
+-   <span data-ttu-id="ffd8f-335">Beräkna aktivitetvaraktighet baserat på roller och resurser.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-335">Estimate activity duration, based on roles and resources.</span></span>
+-   <span data-ttu-id="ffd8f-336">Utveckla alla projektledningsplaner baserat på den tillgängliga projektinformationen.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-336">Develop some project management plans, based on the available project information.</span></span>
 
-Ytterligare alternativ har lagts till i strukturen för en bättre användning av resursplaneringsfunktionerna.
+<span data-ttu-id="ffd8f-337">Ytterligare alternativ har lagts till i strukturen för en bättre användning av resursplaneringsfunktionerna.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-337">Additional options have been added in the WBS to better use the resourcing functionality.</span></span>
 
 <table>
 <colgroup>
@@ -266,95 +266,95 @@ Ytterligare alternativ har lagts till i strukturen för en bättre användning a
 </colgroup>
 <thead>
 <tr class="header">
-<th>Alternativ</th>
-<th>Beskrivning</th>
+<th><span data-ttu-id="ffd8f-338">Alternativ</span><span class="sxs-lookup"><span data-stu-id="ffd8f-338">Option</span></span></th>
+<th><span data-ttu-id="ffd8f-339">Beskrivning</span><span class="sxs-lookup"><span data-stu-id="ffd8f-339">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Resurstilldelningar</td>
-<td>Visa tilldelade resurser, datum, antalet timmar och bokningstyp för uppgifter på strukturen.</td>
+<td><span data-ttu-id="ffd8f-340">Resurstilldelningar</span><span class="sxs-lookup"><span data-stu-id="ffd8f-340">Resource assignments</span></span></td>
+<td><span data-ttu-id="ffd8f-341">Visa tilldelade resurser, datum, antalet timmar och bokningstyp för uppgifter på strukturen.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-341">View the assigned resources, dates, number of hours, and booking type for tasks on the WBS.</span></span></td>
 </tr>
 <tr class="even">
-<td>Autogenerera team</td>
-<td>Automatiskt lägg till planerade resurser genom att använda roller som associeras med en uppgift. Finance and Operations föreslår automatiskt planerade resurser genom att använda beslutsanalys för flera kriterier baserat på roller. När rollerna och insatsen (timmar) har angetts för uppgifterna i en struktur, och strukturen har frisläppts, klicka på <strong>Autogenerera team</strong>. Det begärda antalet planerade resurser läggs till i strukturen och på fliken <strong>Projekt och tidsplanering av team</strong>.</td>
+<td><span data-ttu-id="ffd8f-342">Autogenerera team</span><span class="sxs-lookup"><span data-stu-id="ffd8f-342">Auto generate team</span></span></td>
+<td><span data-ttu-id="ffd8f-343">Automatiskt lägg till planerade resurser genom att använda roller som associeras med en uppgift.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-343">Automatically add planned resources by using roles that are associated with a task.</span></span> <span data-ttu-id="ffd8f-344">Finance and Operations föreslår automatiskt planerade resurser genom att använda beslutsanalys för flera kriterier baserat på roller.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-344">Finance and Operations automatically suggests planned resources by using multi-criteria decision analysis that is based on roles.</span></span> <span data-ttu-id="ffd8f-345">När rollerna och insatsen (timmar) har angetts för uppgifterna i en struktur, och strukturen har frisläppts, klicka på <strong>Autogenerera team</strong>.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-345">After the roles and effort (hours) have been set for the tasks in a WBS, and the structure has been released, click <strong>Auto generate team</strong>.</span></span> <span data-ttu-id="ffd8f-346">Det begärda antalet planerade resurser läggs till i strukturen och på fliken <strong>Projekt och tidsplanering av team</strong>.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-346">The required number of planned resources is added to the WBS and the <strong>Project and team scheduling</strong> tab.</span></span></td>
 </tr>
 <tr class="odd">
-<td>Resurs (listruta)</td>
-<td>På sidan <strong>Starta resurstilldelning</strong> kan du välja resurser att preliminär- eller fastboka utifrån den angivna varaktigheten. Du kan justera vyinställningarna om du vill visa och ange längden för resursaktiviteter. Du kan välja och tilldela resurser på nivån för arbetspaketet genom att använda följande alternativ:
+<td><span data-ttu-id="ffd8f-347">Resurs (listruta)</span><span class="sxs-lookup"><span data-stu-id="ffd8f-347">Resource (drop-down list)</span></span></td>
+<td><span data-ttu-id="ffd8f-348">På sidan <strong>Starta resurstilldelning</strong> kan du välja resurser att preliminär- eller fastboka utifrån den angivna varaktigheten.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-348">On the <strong>Launch resource assignment </strong>page, you can select resources to hard-book or soft-book, based on the specified duration.</span></span> <span data-ttu-id="ffd8f-349">Du kan justera vyinställningarna om du vill visa och ange längden för resursaktiviteter.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-349">You can adjust the view settings to see and set the duration of resource activities.</span></span> <span data-ttu-id="ffd8f-350">Du kan välja och tilldela resurser på nivån för arbetspaketet genom att använda följande alternativ:</span><span class="sxs-lookup"><span data-stu-id="ffd8f-350">You can select and assign resources at the work package level by using the following options:</span></span>
 <ul>
-<li><strong>Godkänn</strong> – Bekräfta ändringarna för resursen som har tilldelats en uppgift.</li>
-<li><strong>Avbryt</strong> – Avbryt ändringarna för resursen som har tilldelats en uppgift.</li>
-<li><strong>Tilldela automatiskt</strong> – Det här alternativet väljer en tillgänglig bemannad resurs med en matchande roll för den valda uppgiften.</li>
+<li><span data-ttu-id="ffd8f-351"><strong>Godkänn</strong> – Bekräfta ändringarna för resursen som har tilldelats en uppgift.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-351"><strong>Accept</strong> – Confirm changes to the resource that is assigned to a task.</span></span></li>
+<li><span data-ttu-id="ffd8f-352"><strong>Avbryt</strong> – Avbryt ändringarna för resursen som har tilldelats en uppgift.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-352"><strong>Cancel</strong> – Cancel changes to the resource that is assigned to a task.</span></span></li>
+<li><span data-ttu-id="ffd8f-353"><strong>Tilldela automatiskt</strong> – Det här alternativet väljer en tillgänglig bemannad resurs med en matchande roll för den valda uppgiften.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-353"><strong>Assign automatically</strong> – This option selects an available staffed resource with a matching role to the selected task.</span></span></li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
-1.  Klicka på **Projekthantering och redovisning** &gt; **Projekt** &gt; **Alla projekt**.
-2.  I listan, välj projektet **XYZ uppgraderingsfas 2**.
-3.  Klicka på **Plan** &gt; **Aktiviteter** &gt; **Uppdelad arbetsstruktur**.
-4.  Klicka på **Nytt** om du lägger till följande aktiviteter för första nivån till strukturen:
-    -   Påbörjande
-    -   Planering
-    -   Kör
-    -   Övervakning och kontroll
-    -   Stäng
+1.  <span data-ttu-id="ffd8f-354">Klicka på **Projekthantering och redovisning** &gt; **Projekt** &gt; **Alla projekt**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-354">Click **Project management and accounting** &gt; **Projects** &gt; **All projects**.</span></span>
+2.  <span data-ttu-id="ffd8f-355">I listan, välj projektet **XYZ uppgraderingsfas 2**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-355">In the list, select the **XYZ Upgrade Phase 2** project.</span></span>
+3.  <span data-ttu-id="ffd8f-356">Klicka på **Plan** &gt; **Aktiviteter** &gt; **Uppdelad arbetsstruktur**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-356">Click **Plan** &gt; **Activities** &gt; **Work breakdown structure**.</span></span>
+4.  <span data-ttu-id="ffd8f-357">Klicka på **Nytt** om du lägger till följande aktiviteter för första nivån till strukturen:</span><span class="sxs-lookup"><span data-stu-id="ffd8f-357">Click **New** to add the following level-one activities to the WBS:</span></span>
+    -   <span data-ttu-id="ffd8f-358">Påbörjande</span><span class="sxs-lookup"><span data-stu-id="ffd8f-358">Initiating</span></span>
+    -   <span data-ttu-id="ffd8f-359">Planering</span><span class="sxs-lookup"><span data-stu-id="ffd8f-359">Planning</span></span>
+    -   <span data-ttu-id="ffd8f-360">Kör</span><span class="sxs-lookup"><span data-stu-id="ffd8f-360">Executing</span></span>
+    -   <span data-ttu-id="ffd8f-361">Övervakning och kontroll</span><span class="sxs-lookup"><span data-stu-id="ffd8f-361">Monitoring and Control</span></span>
+    -   <span data-ttu-id="ffd8f-362">Stäng</span><span class="sxs-lookup"><span data-stu-id="ffd8f-362">Close</span></span>
 
-5.  Ange datum och insats (timmar), som i följande skärmdump[![Ange datum och insats](./media/projectresourcing10.jpg)](./media/projectresourcing10.jpg)
-6.  Välj uppgiftsraden **Initierande** och sedan, i fältet **Roll**, välj **Senior projektledare**.
-7.  Klicka på **Publicera**.
-8.  På samma rad, i fältet **Resurs**, välj **Daniel Goldschmidt**.
-9.  Klicka på **Godkänn**.
-10. Välj **Planering**-uppgiftsraden och sedan, i fältet **Roll**, välj **Affärsanalytiker**.
-11. Klicka på **Publicera** och klicka sedan på **Autogenerera team**.
-12. Klicka på **Ja** i dialogrutan som visas.
-13. I fältet **Resurs**, kontrollera att värdet är **Affärsanalytiker 1**.
-14. För resursen **Affärsanalytiker 1**, öppna sökningen och klicka på **Starta formulär för resurstilldelning**.
-15. Välj en arbetare för uppgiften.
-16. Klicka på **Preliminär tilldelning** &gt; **Total kapacitet**.
-17. Klicka på **Spara** och stäng sidan. 
+5.  <span data-ttu-id="ffd8f-363">Ange datum och insats (timmar), som i följande skärmdump[![Ange datum och insats](./media/projectresourcing10.jpg)](./media/projectresourcing10.jpg)</span><span class="sxs-lookup"><span data-stu-id="ffd8f-363">Set the dates and effort (hours), as shown in the following screenshot.[![Setting the dates and effort](./media/projectresourcing10.jpg)](./media/projectresourcing10.jpg)</span></span>
+6.  <span data-ttu-id="ffd8f-364">Välj uppgiftsraden **Initierande** och sedan, i fältet **Roll**, välj **Senior projektledare**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-364">Select the **Initiating** task line, and then, in the **Role** field, select **Senior Project Manager**.</span></span>
+7.  <span data-ttu-id="ffd8f-365">Klicka på **Publicera**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-365">Click **Publish**.</span></span>
+8.  <span data-ttu-id="ffd8f-366">På samma rad, i fältet **Resurs**, välj **Daniel Goldschmidt**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-366">On the same line, in the **Resource** field, select **Daniel Goldschmidt**.</span></span>
+9.  <span data-ttu-id="ffd8f-367">Klicka på **Godkänn**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-367">Click **Accept**.</span></span>
+10. <span data-ttu-id="ffd8f-368">Välj **Planering**-uppgiftsraden och sedan, i fältet **Roll**, välj **Affärsanalytiker**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-368">Select the **Planning** task line, and then, in the **Role** field, select **Business analyst**.</span></span>
+11. <span data-ttu-id="ffd8f-369">Klicka på **Publicera** och klicka sedan på **Autogenerera team**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-369">Click **Publish**, and then click **Auto generate team**.</span></span>
+12. <span data-ttu-id="ffd8f-370">Klicka på **Ja** i dialogrutan som visas.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-370">In the dialog box that appears, click **Yes**.</span></span>
+13. <span data-ttu-id="ffd8f-371">I fältet **Resurs**, kontrollera att värdet är **Affärsanalytiker 1**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-371">In the **Resource** field, verify that the value is **Business analyst 1**.</span></span>
+14. <span data-ttu-id="ffd8f-372">För resursen **Affärsanalytiker 1**, öppna sökningen och klicka på **Starta formulär för resurstilldelning**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-372">For the **Business analyst 1** resource, open the lookup, and click **Launch resource assignments form**.</span></span>
+15. <span data-ttu-id="ffd8f-373">Välj en arbetare för uppgiften.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-373">Select a worker for the task.</span></span>
+16. <span data-ttu-id="ffd8f-374">Klicka på **Preliminär tilldelning** &gt; **Total kapacitet**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-374">Click **Soft assign** &gt; **Full capacity**.</span></span>
+17. <span data-ttu-id="ffd8f-375">Klicka på **Spara** och stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-375">Click **Save**, and close the page.</span></span> 
 
 > [!NOTE] 
-> Du får inte en varning om att den angivna resursen nu är 2, eftersom antalet resurser återstår på 1.
-18. På sidan **Uppdelad arbetsstruktur**, validera resurstilldelningen för strukturen och klicka sedan på **Spara**.
+> <span data-ttu-id="ffd8f-376">Du får inte en varning om att den angivna resursen nu är 2, eftersom antalet resurser återstår på 1.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-376">You don't receive a warning that the specified resource is now 2, because the number of resources remains at 1.</span></span>
+18. <span data-ttu-id="ffd8f-377">På sidan **Uppdelad arbetsstruktur**, validera resurstilldelningen för strukturen och klicka sedan på **Spara**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-377">On the **Work breakdown structure** page, validate the resource assignment on the WBS, and then click **Save**.</span></span>
 
-## <a name="resource-fulfillment-for-planned-resources"></a>Resursuppfyllelse för planerade resurser
-En projektledare kan planera obligatoriska resursroller för ett projekt. Resurschefen ser dessa planerade resurser som förfrågningar på **Resursuppfyllelse**-sidan och kan tilldela verkliga resurser.
+## <a name="resource-fulfillment-for-planned-resources"></a><span data-ttu-id="ffd8f-378">Resursuppfyllelse för planerade resurser</span><span class="sxs-lookup"><span data-stu-id="ffd8f-378">Resource fulfillment for planned resources</span></span>
+<span data-ttu-id="ffd8f-379">En projektledare kan planera obligatoriska resursroller för ett projekt.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-379">A project manager can plan required resource roles for a project.</span></span> <span data-ttu-id="ffd8f-380">Resurschefen ser dessa planerade resurser som förfrågningar på **Resursuppfyllelse**-sidan och kan tilldela verkliga resurser.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-380">The resource manager will see these planned resources as requests on the **Resource fulfillment** page and can assign actual resources.</span></span>
 
-1.  Klicka på **Projekthantering och redovisning** &gt; **Projekt** &gt; **Alla projekt**.
-2.  I listan, välj projektet **XYZ uppgraderingsfas 2**.
-3.  Klicka på **Projekt**.
-4.  Klicka på **Redigera**.
-5.  På fliken **Projektteam och tidsplanering**, ** ** klicka på **Lägg till**.
-6.  I **Lägg till roller**-dialogrutan, välj rollen **Programutvecklare**.
-7.  Klicka på **Skapa**.
-8.  Stäng projektsidan.
-9.  Klicka på **Projekthantering och redovisning** &gt; **Projektresurser** &gt; **Resursuppfyllelse**.
-10. Välj **Programutvecklare 1** för projektet **XYZ uppgraderingsfas 2**.
-11. Välj en arbetare och klicka sedan på **Tilldela**.
-12. Kontrollera att raden för **Programutvecklare 1** har raderats för projektet **XYZ uppgraderingsfas 2**.
-13. På fliken **Projektteam och tidsplanering**, för projektet **XYZ uppgraderingsfas 2**, verifiera att arbetaren du valde i steg 11 har lagts till som **Programutvecklare**.
+1.  <span data-ttu-id="ffd8f-381">Klicka på **Projekthantering och redovisning** &gt; **Projekt** &gt; **Alla projekt**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-381">Click **Project management and accounting** &gt; **Projects** &gt; **All projects**.</span></span>
+2.  <span data-ttu-id="ffd8f-382">I listan, välj projektet **XYZ uppgraderingsfas 2**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-382">In the list, select the **XYZ Upgrade Phase 2** project.</span></span>
+3.  <span data-ttu-id="ffd8f-383">Klicka på **Projekt**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-383">Click **Project**.</span></span>
+4.  <span data-ttu-id="ffd8f-384">Klicka på **Redigera**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-384">Click **Edit**.</span></span>
+5.  <span data-ttu-id="ffd8f-385">På fliken **Projektteam och tidsplanering**, ** ** klicka på **Lägg till**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-385">On the **Project team and scheduling** tab,** **click **Add**.</span></span>
+6.  <span data-ttu-id="ffd8f-386">I **Lägg till roller**-dialogrutan, välj rollen **Programutvecklare**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-386">In the **Add roles** dialog box, select the **Software developer** role.</span></span>
+7.  <span data-ttu-id="ffd8f-387">Klicka på **Skapa**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-387">Click **Create**.</span></span>
+8.  <span data-ttu-id="ffd8f-388">Stäng projektsidan.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-388">Close the project page.</span></span>
+9.  <span data-ttu-id="ffd8f-389">Klicka på **Projekthantering och redovisning** &gt; **Projektresurser** &gt; **Resursuppfyllelse**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-389">Click **Project management and accounting** &gt; **Project resources** &gt; **Resource fulfillment**.</span></span>
+10. <span data-ttu-id="ffd8f-390">Välj **Programutvecklare 1** för projektet **XYZ uppgraderingsfas 2**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-390">Select **Software developer 1** for the **XYZ Upgrade project Phase 2** project.</span></span>
+11. <span data-ttu-id="ffd8f-391">Välj en arbetare och klicka sedan på **Tilldela**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-391">Select a worker, and then click **Assign**.</span></span>
+12. <span data-ttu-id="ffd8f-392">Kontrollera att raden för **Programutvecklare 1** har raderats för projektet **XYZ uppgraderingsfas 2**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-392">Verify that the line for **Software developer 1** has been removed for the **XYZ Upgrade project Phase 2** project.</span></span>
+13. <span data-ttu-id="ffd8f-393">På fliken **Projektteam och tidsplanering**, för projektet **XYZ uppgraderingsfas 2**, verifiera att arbetaren du valde i steg 11 har lagts till som **Programutvecklare**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-393">On the **Project team and scheduling** tab, for the **XYZ Upgrade Phase 2** project, verify that the worker that you selected in step 11 has been added as **Software developer**.</span></span>
 
-## <a name="requests-for-project-resources"></a>Förfrågningar om projektresurser
-Schemaläggningsfunktionen projektresurser stöder bara resursansvariga för att distribuera bemannade resurser för åtaganden eller projekt. För att aktivera funktionen slutför du följande uppgifter, eller kontrollera att de har slutförts.
+## <a name="requests-for-project-resources"></a><span data-ttu-id="ffd8f-394">Förfrågningar om projektresurser</span><span class="sxs-lookup"><span data-stu-id="ffd8f-394">Requests for project resources</span></span>
+<span data-ttu-id="ffd8f-395">Schemaläggningsfunktionen projektresurser stöder bara resursansvariga för att distribuera bemannade resurser för åtaganden eller projekt.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-395">The project resource scheduling functionality only supports resource managers to distribute staffed resources on engagements or projects.</span></span> <span data-ttu-id="ffd8f-396">För att aktivera funktionen slutför du följande uppgifter, eller kontrollera att de har slutförts.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-396">To enable this functionality, complete the following tasks, or verify that they have been completed.</span></span>
 
--   Ställa in nummerserier.
--   Ställ in projekthanterings- och redovisningsarbetsflöden.
--   Aktivera arbetsflödet för resursbegäran.
+-   <span data-ttu-id="ffd8f-397">Ställa in nummerserier.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-397">Set up number sequences.</span></span>
+-   <span data-ttu-id="ffd8f-398">Ställ in projekthanterings- och redovisningsarbetsflöden.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-398">Set up project management and accounting workflows.</span></span>
+-   <span data-ttu-id="ffd8f-399">Aktivera arbetsflödet för resursbegäran.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-399">Enable resource request workflow.</span></span>
 
-När du har kontrollerat eller slutfört de ovanstående uppgifterna kan du slutföra följande uppgifter efter behov.
+<span data-ttu-id="ffd8f-400">När du har kontrollerat eller slutfört de ovanstående uppgifterna kan du slutföra följande uppgifter efter behov.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-400">After you have either verified or completed the tasks above, you can complete the following tasks as needed.</span></span>
 
--   Skapa en resursbegäran från en preliminärbokad bemannad resurs.
--   Övervaka resursbegäranden.
--   Uppfylla resursbegäranden.
--   Begära en bemannad resurs från struktur.
--   Boka resurser till ett projekt utan en begäran om en bemannad resurs.
+-   <span data-ttu-id="ffd8f-401">Skapa en resursbegäran från en preliminärbokad bemannad resurs.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-401">Create a resource request from a soft-booked staffed resource.</span></span>
+-   <span data-ttu-id="ffd8f-402">Övervaka resursbegäranden.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-402">Monitor resource requests.</span></span>
+-   <span data-ttu-id="ffd8f-403">Uppfylla resursbegäranden.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-403">Fulfill resource requests.</span></span>
+-   <span data-ttu-id="ffd8f-404">Begära en bemannad resurs från struktur.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-404">Request a staffed resource from WBS.</span></span>
+-   <span data-ttu-id="ffd8f-405">Boka resurser till ett projekt utan en begäran om en bemannad resurs.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-405">Book resources to a project without a request for a staffed resource.</span></span>
 
-## <a name="monitor-project-teams"></a>Övervaka projektteam
-1.  Klicka på **Projekthantering och redovisning** &gt; **Projekt** &gt; **Alla projekt**.
-2.  I listan för projekt, klicka på länken **Projekt-ID** för projektet **XYZ uppgraderingsfas 2**.
-3.  På snabbfliken **Projektteam och tidsplanering**, verifiera att de listade projektresurserna är korrekta.
+## <a name="monitor-project-teams"></a><span data-ttu-id="ffd8f-406">Övervaka projektteam</span><span class="sxs-lookup"><span data-stu-id="ffd8f-406">Monitor project teams</span></span>
+1.  <span data-ttu-id="ffd8f-407">Klicka på **Projekthantering och redovisning** &gt; **Projekt** &gt; **Alla projekt**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-407">Click **Project management and accounting** &gt; **Projects** &gt; **All projects**.</span></span>
+2.  <span data-ttu-id="ffd8f-408">I listan för projekt, klicka på länken **Projekt-ID** för projektet **XYZ uppgraderingsfas 2**.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-408">In the list of projects, click the **Project ID** link for the **XYZ Upgrade Phase 2** project.</span></span>
+3.  <span data-ttu-id="ffd8f-409">På snabbfliken **Projektteam och tidsplanering**, verifiera att de listade projektresurserna är korrekta.</span><span class="sxs-lookup"><span data-stu-id="ffd8f-409">On the **Project team and scheduling** FastTab, verify that the project resources that are listed are correct.</span></span>
 
 
 

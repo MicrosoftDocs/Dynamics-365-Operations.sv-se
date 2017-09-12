@@ -16,46 +16,46 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 5ad4c448077ef9cf40555d39bb69c3ba8e2bce1e
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 50764f99be04d27e04047824f870e724336cb452
 ms.contentlocale: sv-se
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="set-up-policies-for-procurement-category-hierarchies"></a>Ställ in policyer för hierarkier för anskaffningskategorier
+# <a name="set-up-policies-for-procurement-category-hierarchies"></a><span data-ttu-id="2aa8a-103">Ställ in policyer för hierarkier för anskaffningskategorier</span><span class="sxs-lookup"><span data-stu-id="2aa8a-103">Set up policies for procurement category hierarchies</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Använd den här proceduren för att ställa in regler för att beställa produkter i en kategori. Policyreglerna definieras för en specifik inköpspolicy. Åtkomstregeldata kontrollerar vilka anskaffningskategorier som anställda har åtkomst till när de skapar en rekvisition. När en rekvisition skapas fastställs den inköpspolicy och den kategoriåtkomstregel som ska användas av den juridiska person och den driftenhet som medarbetaren tillhör. Du kan köra den här proceduren i demonstrationsdataföretaget USMF. Denna uppgift utförs vanligtvis av en inköpschef.
+<span data-ttu-id="2aa8a-104">Använd den här proceduren för att ställa in regler för att beställa produkter i en kategori.</span><span class="sxs-lookup"><span data-stu-id="2aa8a-104">Use this procedure to set up rules for ordering products in a category.</span></span> <span data-ttu-id="2aa8a-105">Policyreglerna definieras för en specifik inköpspolicy.</span><span class="sxs-lookup"><span data-stu-id="2aa8a-105">The rules are defined for a specific purchasing policy.</span></span> <span data-ttu-id="2aa8a-106">Åtkomstregeldata kontrollerar vilka anskaffningskategorier som anställda har åtkomst till när de skapar en rekvisition.</span><span class="sxs-lookup"><span data-stu-id="2aa8a-106">The category access rule controls which procurement categories employees have access to when they create a requisition.</span></span> <span data-ttu-id="2aa8a-107">När en rekvisition skapas fastställs den inköpspolicy och den kategoriåtkomstregel som ska användas av den juridiska person och den driftenhet som medarbetaren tillhör.</span><span class="sxs-lookup"><span data-stu-id="2aa8a-107">When a requisition is being created, the purchasing policy and category access rule that should be applied are determined by the legal entity and the operational unit that the employee belongs to.</span></span> <span data-ttu-id="2aa8a-108">Du kan köra den här proceduren i demonstrationsdataföretaget USMF.</span><span class="sxs-lookup"><span data-stu-id="2aa8a-108">You can use this procedure in demo data company USMF.</span></span> <span data-ttu-id="2aa8a-109">Denna uppgift utförs vanligtvis av en inköpschef.</span><span class="sxs-lookup"><span data-stu-id="2aa8a-109">This task would typically be carried out by a purchasing manager.</span></span>
 
 
-## <a name="find-the-procurement-policy"></a>Hitta anskaffningpolicyn
-1. Gå till anskaffning och källa > Inställningar > Policyer > Inköpspolicyer.
-2. Klicka på länken för anskaffningspolicy USMF.
-    * Detta är policyn som du vill lägga till en regel till. Den måste vara en aktiv policy.  
+## <a name="find-the-procurement-policy"></a><span data-ttu-id="2aa8a-110">Hitta anskaffningpolicyn</span><span class="sxs-lookup"><span data-stu-id="2aa8a-110">Find the procurement policy</span></span>
+1. <span data-ttu-id="2aa8a-111">Gå till anskaffning och källa > Inställningar > Policyer > Inköpspolicyer.</span><span class="sxs-lookup"><span data-stu-id="2aa8a-111">Go to Procurement and sourcing > Setup > Policies > Purchasing policies.</span></span>
+2. <span data-ttu-id="2aa8a-112">Klicka på länken för anskaffningspolicy USMF.</span><span class="sxs-lookup"><span data-stu-id="2aa8a-112">Click the link on the Procurement Policy USMF policy.</span></span>
+    * <span data-ttu-id="2aa8a-113">Detta är policyn som du vill lägga till en regel till.</span><span class="sxs-lookup"><span data-stu-id="2aa8a-113">This is the policy that you’ll add a rule to.</span></span> <span data-ttu-id="2aa8a-114">Den måste vara en aktiv policy.</span><span class="sxs-lookup"><span data-stu-id="2aa8a-114">It must be an Active policy.</span></span>  
 
-## <a name="create-a-category-access-rule"></a>Skapa en kategoriåtkomstregel
-1. Välj Policyregel för kategoriåtkomst.
-    * Om knappen Skapa policyregel tonasned är det på grund av att det redan finns en aktiv policyregel för Kategoriåtkomst. Kontrollera fälten Giltighet och Utgångsdatum för att bestämma vilket den är, sedan väljer du den och klickar på Dra tillbaka policyregel. Om knappen Skapa policyregel är tillgänglig behöver du inte att göra någonting.  
-2. Klicka på Skapa policyregel.
-3. Ange datum och tid i fältet Giltighetsdatum.
-    * Tiden får inte överlappa med en annan regel som redan är aktiv.  
-    * Välj en kategori som regeln ska gälla för. Gör en notering av vilken kategori detta är – du behöver den senare. När du väljer en kategori kommer alla dess överordnade kategorier också att läggas till i listan för Valda kategorier.  
-    * Om du vill att regeln ska gälla alla underkategorier för den valda kategorin, markerar du kryssrutan Inkludera underkategorier.  
-4. Klicka på Lägg till.
-    * Om du ställer in alternativet Inkludera överordnad regel kommer policyregeln som du definierar för en överordnad kategori också att tilldelas till dess underordnade kategorier, om ingen policyregel har definierats för de underordnade kategorierna.  
-5. Klicka på OK.
+## <a name="create-a-category-access-rule"></a><span data-ttu-id="2aa8a-115">Skapa en kategoriåtkomstregel</span><span class="sxs-lookup"><span data-stu-id="2aa8a-115">Create a category access rule</span></span>
+1. <span data-ttu-id="2aa8a-116">Välj Policyregel för kategoriåtkomst.</span><span class="sxs-lookup"><span data-stu-id="2aa8a-116">Select the Category access policy rule.</span></span>
+    * <span data-ttu-id="2aa8a-117">Om knappen Skapa policyregel tonasned är det på grund av att det redan finns en aktiv policyregel för Kategoriåtkomst.</span><span class="sxs-lookup"><span data-stu-id="2aa8a-117">If the Create policy rule button is dimmed, it’s because there’s already an active policy rule for Category access.</span></span> <span data-ttu-id="2aa8a-118">Kontrollera fälten Giltighet och Utgångsdatum för att bestämma vilket den är, sedan väljer du den och klickar på Dra tillbaka policyregel.</span><span class="sxs-lookup"><span data-stu-id="2aa8a-118">Check the Effective and Expiration date fields to determine which it is, then select it, and click Retire policy rule.</span></span> <span data-ttu-id="2aa8a-119">Om knappen Skapa policyregel är tillgänglig behöver du inte att göra någonting.</span><span class="sxs-lookup"><span data-stu-id="2aa8a-119">If the Create policy rule button is available, you don’t need to do anything.</span></span>  
+2. <span data-ttu-id="2aa8a-120">Klicka på Skapa policyregel.</span><span class="sxs-lookup"><span data-stu-id="2aa8a-120">Click Create policy rule.</span></span>
+3. <span data-ttu-id="2aa8a-121">Ange datum och tid i fältet Giltighetsdatum.</span><span class="sxs-lookup"><span data-stu-id="2aa8a-121">In the Effective date field, enter a date and time.</span></span>
+    * <span data-ttu-id="2aa8a-122">Tiden får inte överlappa med en annan regel som redan är aktiv.</span><span class="sxs-lookup"><span data-stu-id="2aa8a-122">The time must not overlap with another rule that’s already active.</span></span>  
+    * <span data-ttu-id="2aa8a-123">Välj en kategori som regeln ska gälla för.</span><span class="sxs-lookup"><span data-stu-id="2aa8a-123">Select a category that the rule will apply to.</span></span> <span data-ttu-id="2aa8a-124">Gör en notering av vilken kategori detta är – du behöver den senare.</span><span class="sxs-lookup"><span data-stu-id="2aa8a-124">Make a note of which category this is – you’ll need it later.</span></span> <span data-ttu-id="2aa8a-125">När du väljer en kategori kommer alla dess överordnade kategorier också att läggas till i listan för Valda kategorier.</span><span class="sxs-lookup"><span data-stu-id="2aa8a-125">When you select a category, its parent category or categories will also be added to the Selected categories list.</span></span>  
+    * <span data-ttu-id="2aa8a-126">Om du vill att regeln ska gälla alla underkategorier för den valda kategorin, markerar du kryssrutan Inkludera underkategorier.</span><span class="sxs-lookup"><span data-stu-id="2aa8a-126">If you want the rule to apply to all subcategories of the selected category, select the Include subcategories check box.</span></span>  
+4. <span data-ttu-id="2aa8a-127">Klicka på Lägg till.</span><span class="sxs-lookup"><span data-stu-id="2aa8a-127">Click Add.</span></span>
+    * <span data-ttu-id="2aa8a-128">Om du ställer in alternativet Inkludera överordnad regel kommer policyregeln som du definierar för en överordnad kategori också att tilldelas till dess underordnade kategorier, om ingen policyregel har definierats för de underordnade kategorierna.</span><span class="sxs-lookup"><span data-stu-id="2aa8a-128">If you set the Include parent rule option to Yes, the policy rule that you define for a parent category is also assigned to its child categories, if no policy rule has been defined for the child categories.</span></span>  
+5. <span data-ttu-id="2aa8a-129">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="2aa8a-129">Click OK.</span></span>
 
-## <a name="create-a-category-policy-rule"></a>Skapa en kategoripolicyregel
-1. Välj Policyregel för kategoriåtkomst
-    * Om knappen Skapa policyregel är nedtonad väljer du den aktiva policyregeln och klickar sedan på Dra tillbaka policyregel.  
-2. Klicka på Skapa policyregel.
-3. Ange datum och tid i fältet Giltighetsdatum.
-4. Klicka på Lägg till.
-5. Markera samma kategori som du använde för kategoriåtkomstregeln.
-6. Välj ett alternativ i fältet Leverantörsurval.
-    * Välj en regel för att kontrollera vilken typ av leverantörer som kan väljas för kategorin, när rekvisitioner skapas.  
-7. Klicka på Stäng.
-    * De policyregler som du har definierat har varit för rekvisitioner av typen Förbrukning. Om du vill definiera policyer för rekvisitioner av typen Återanskaffning, ska du skapa en regel för Policyregeltypen som kallas "Åtkomstpolicyregel för återanskaffningskategori".  
+## <a name="create-a-category-policy-rule"></a><span data-ttu-id="2aa8a-130">Skapa en kategoripolicyregel</span><span class="sxs-lookup"><span data-stu-id="2aa8a-130">Create a category policy rule</span></span>
+1. <span data-ttu-id="2aa8a-131">Välj Policyregel för kategoriåtkomst</span><span class="sxs-lookup"><span data-stu-id="2aa8a-131">Select the Category policy rule</span></span>
+    * <span data-ttu-id="2aa8a-132">Om knappen Skapa policyregel är nedtonad väljer du den aktiva policyregeln och klickar sedan på Dra tillbaka policyregel.</span><span class="sxs-lookup"><span data-stu-id="2aa8a-132">If the Create policy rule button is dimmed, select the active policy rule, and then click Retire policy rule.</span></span>  
+2. <span data-ttu-id="2aa8a-133">Klicka på Skapa policyregel.</span><span class="sxs-lookup"><span data-stu-id="2aa8a-133">Click Create policy rule.</span></span>
+3. <span data-ttu-id="2aa8a-134">Ange datum och tid i fältet Giltighetsdatum.</span><span class="sxs-lookup"><span data-stu-id="2aa8a-134">In the Effective date field, enter a date and time.</span></span>
+4. <span data-ttu-id="2aa8a-135">Klicka på Lägg till.</span><span class="sxs-lookup"><span data-stu-id="2aa8a-135">Click Add.</span></span>
+5. <span data-ttu-id="2aa8a-136">Markera samma kategori som du använde för kategoriåtkomstregeln.</span><span class="sxs-lookup"><span data-stu-id="2aa8a-136">Select the same category that you used for the Category access rule.</span></span>
+6. <span data-ttu-id="2aa8a-137">Välj ett alternativ i fältet Leverantörsurval.</span><span class="sxs-lookup"><span data-stu-id="2aa8a-137">In the Vendor selection field, select an option.</span></span>
+    * <span data-ttu-id="2aa8a-138">Välj en regel för att kontrollera vilken typ av leverantörer som kan väljas för kategorin, när rekvisitioner skapas.</span><span class="sxs-lookup"><span data-stu-id="2aa8a-138">Select a rule to control which kind of vendors can be selected for the category when requisitions are created.</span></span>  
+7. <span data-ttu-id="2aa8a-139">Klicka på Stäng.</span><span class="sxs-lookup"><span data-stu-id="2aa8a-139">Click Close.</span></span>
+    * <span data-ttu-id="2aa8a-140">De policyregler som du har definierat har varit för rekvisitioner av typen Förbrukning.</span><span class="sxs-lookup"><span data-stu-id="2aa8a-140">The policy rules that you have defined have been for requisitions of type Consumption.</span></span> <span data-ttu-id="2aa8a-141">Om du vill definiera policyer för rekvisitioner av typen Återanskaffning, ska du skapa en regel för Policyregeltypen som kallas "Åtkomstpolicyregel för återanskaffningskategori".</span><span class="sxs-lookup"><span data-stu-id="2aa8a-141">If you wanted to define policies for requisitions of type Replenishment, you would create a rule for the Policy rule type called “Replenishment category access policy rule”.</span></span>  
 
 

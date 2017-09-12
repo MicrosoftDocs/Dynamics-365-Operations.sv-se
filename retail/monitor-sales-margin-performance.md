@@ -19,37 +19,37 @@ ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
-ms.openlocfilehash: 6c299a1297e5721119ecfb5208453f8739fb7ad0
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: c2442f27221e429761abb8c1b17c50a737c10795
 ms.contentlocale: sv-se
-ms.lasthandoff: 06/20/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="monitor-sales-and-margin-performance"></a>Övervaka försäljningsresultat och marginaler
+# <a name="monitor-sales-and-margin-performance"></a><span data-ttu-id="5ef1c-103">Övervaka försäljningsresultat och marginaler</span><span class="sxs-lookup"><span data-stu-id="5ef1c-103">Monitor sales and margin performance</span></span>
 
 [!include[banner](includes/banner.md)]
 
 
-Du kan övervaka försäljning och marginalprestanda i realtid med hjälp av Microsoft Dynamics 365 for Retail.
+<span data-ttu-id="5ef1c-104">Du kan övervaka försäljning och marginalprestanda i realtid med hjälp av Microsoft Dynamics 365 for Retail.</span><span class="sxs-lookup"><span data-stu-id="5ef1c-104">You can monitor sales and margin performance in real time using Microsoft Dynamics 365 for Retail.</span></span>
 
-Som en del av Dynamics 365 for Retail kan användare övervaka prestanda för försäljning och marginaler i realtid på andra nivåer i organisationshierarkin för följande dimensioner:
+<span data-ttu-id="5ef1c-105">Som en del av Dynamics 365 for Retail kan användare övervaka prestanda för försäljning och marginaler i realtid på andra nivåer i organisationshierarkin för följande dimensioner:</span><span class="sxs-lookup"><span data-stu-id="5ef1c-105">As part of Dynamics 365 for Retail, users can monitor sales and margin performance in real time across different levels of the organization hierarchy for the following dimensions:</span></span>
 
--   Produkter
--   Kategorier
--   Rabatter
--   År som tidsperiod
--   Kassor/terminaler
--   Personal/anställda
--   Kunder
--   Driftenheter
+-   <span data-ttu-id="5ef1c-106">Produkter</span><span class="sxs-lookup"><span data-stu-id="5ef1c-106">Products</span></span>
+-   <span data-ttu-id="5ef1c-107">Kategorier</span><span class="sxs-lookup"><span data-stu-id="5ef1c-107">Categories</span></span>
+-   <span data-ttu-id="5ef1c-108">Rabatter</span><span class="sxs-lookup"><span data-stu-id="5ef1c-108">Discounts</span></span>
+-   <span data-ttu-id="5ef1c-109">År som tidsperiod</span><span class="sxs-lookup"><span data-stu-id="5ef1c-109">Years as time period</span></span>
+-   <span data-ttu-id="5ef1c-110">Kassor/terminaler</span><span class="sxs-lookup"><span data-stu-id="5ef1c-110">Registers/terminals</span></span>
+-   <span data-ttu-id="5ef1c-111">Personal/anställda</span><span class="sxs-lookup"><span data-stu-id="5ef1c-111">Staff/employees</span></span>
+-   <span data-ttu-id="5ef1c-112">Kunder</span><span class="sxs-lookup"><span data-stu-id="5ef1c-112">Customers</span></span>
+-   <span data-ttu-id="5ef1c-113">Driftenheter</span><span class="sxs-lookup"><span data-stu-id="5ef1c-113">Operating units</span></span>
 
-Dessutom kan två unika rapporter, som används för strukturering av det hierarkiska rutnätet låta användare övervaka försäljning och marginalprestanda genom att detaljgranska från toppkategorinoden till enskilda lövnoder för kategorin i produktkategorihierarkin för butiken. Användarna kan också gå ned från den översta driftenheten till en enskild kanal i organisationshierarkin som har definierats som standardorganisationshierarki för hierarkiändamål för butiksrapportering. Du kan öppna rapporterna från någon av följande platser:
+<span data-ttu-id="5ef1c-114">Dessutom kan två unika rapporter, som används för strukturering av det hierarkiska rutnätet låta användare övervaka försäljning och marginalprestanda genom att detaljgranska från toppkategorinoden till enskilda lövnoder för kategorin i produktkategorihierarkin för butiken.</span><span class="sxs-lookup"><span data-stu-id="5ef1c-114">Additionally, two unique reports that take advantage of hierarchical grid structuring let users monitor sales and margin performance by drilling down from the top category node to individual leaf nodes of the category in the default retail product category hierarchy.</span></span> <span data-ttu-id="5ef1c-115">Användarna kan också gå ned från den översta driftenheten till en enskild kanal i organisationshierarkin som har definierats som standardorganisationshierarki för hierarkiändamål för butiksrapportering.</span><span class="sxs-lookup"><span data-stu-id="5ef1c-115">Users can also drill-down from the top operating unit to an individual channel in the organization hierarchy that is defined as the default organization hierarchy for retail reporting hierarchy purposes.</span></span> <span data-ttu-id="5ef1c-116">Du kan öppna rapporterna från någon av följande platser:</span><span class="sxs-lookup"><span data-stu-id="5ef1c-116">You can open the reports from any of the following locations:</span></span>
 
--   Arbetsytan **Butikshantering** &gt; **Butik** &gt; **Kanaler** &gt; **Butikshantering** &gt; **Rapporter**
--   Arbetsytan **Kategori och produkthantering** &gt; **Butik** &gt; **Produkter och kategorier** &gt; **Butikshantering** &gt; **Rapporter**
--   Arbetsytan **Pris- och rabatthantering** &gt; **Butik** &gt; **Prissättning och rabatter** &gt; **Butikshantering** &gt; **Rapporter**
--   Avsnittet **Förfrågningar och rapporter** &gt; **Butik** &gt; **Förfrågningar och rapporter** &gt; **Försäljningsrapporter**
+-   <span data-ttu-id="5ef1c-117">Arbetsytan **Butikshantering** &gt; **Butik** &gt; **Kanaler** &gt; **Butikshantering** &gt; **Rapporter**</span><span class="sxs-lookup"><span data-stu-id="5ef1c-117">**Retail store management** workspace &gt; **Retail** &gt; **Channels** &gt; **Retail store management** &gt; **Reports**</span></span>
+-   <span data-ttu-id="5ef1c-118">Arbetsytan **Kategori och produkthantering** &gt; **Butik** &gt; **Produkter och kategorier** &gt; **Butikshantering** &gt; **Rapporter**</span><span class="sxs-lookup"><span data-stu-id="5ef1c-118">**Category and product management** workspace &gt; **Retail** &gt; **Product and categories** &gt; **Retail store management** &gt; **Reports**</span></span>
+-   <span data-ttu-id="5ef1c-119">Arbetsytan **Pris- och rabatthantering** &gt; **Butik** &gt; **Prissättning och rabatter** &gt; **Butikshantering** &gt; **Rapporter**</span><span class="sxs-lookup"><span data-stu-id="5ef1c-119">**Pricing and discount management** workspace &gt; **Retail** &gt; **Pricing and discounts** &gt; **Retail store management** &gt; **Reports**</span></span>
+-   <span data-ttu-id="5ef1c-120">Avsnittet **Förfrågningar och rapporter** &gt; **Butik** &gt; **Förfrågningar och rapporter** &gt; **Försäljningsrapporter**</span><span class="sxs-lookup"><span data-stu-id="5ef1c-120">**Inquiries and reports** section &gt; **Retail** &gt; **Inquiries and reports** &gt; **Sales reports**</span></span>
 
 
 

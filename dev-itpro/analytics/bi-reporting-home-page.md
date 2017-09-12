@@ -15,7 +15,7 @@ ms.custom: 27681
 ms.assetid: c4624bc8-3661-49e6-9cb4-87778acdc302
 ms.search.region: Global
 ms.author: sericks
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
 ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
@@ -25,80 +25,80 @@ ms.lasthandoff: 07/27/2017
 
 ---
 
-# <a name="bi-amp-reporting-home-page"></a>Startsida för BI och rapporter
+# <a name="bi-amp-reporting-home-page"></a><span data-ttu-id="64d2d-103">Startsida för BI och rapporter</span><span class="sxs-lookup"><span data-stu-id="64d2d-103">BI &amp; reporting home page</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Det här ämnet innehåller en lista med resurser för BI och rapporter i Microsoft Dynamics 365 for Finance and Operations. 
+<span data-ttu-id="64d2d-104">Det här ämnet innehåller en lista med resurser för BI och rapporter i Microsoft Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="64d2d-104">This topic lists BI &amp; reporting resources that are available in Microsoft Dynamics 365 for Finance and Operations.</span></span> 
 
-<a name="working-with-aggregate-data"></a>Arbeta med aggregerade data
+<a name="working-with-aggregate-data"></a><span data-ttu-id="64d2d-105">Arbeta med aggregerade data</span><span class="sxs-lookup"><span data-stu-id="64d2d-105">Working with aggregate data</span></span>
 ---------------------------
 
--   [Analyser](analytics.md)
--   [Aggregerade realtidsmodeller i minnet ersätter SSAS-kuber](..\migration-upgrade\in-memory-real-time-aggregate-models.md)
--   [Modellera och använda aggregerade data](model-aggregate-data.md)
--   [Migrera en uppgraderad Dynamics AX 2012 R3-försäljningskub till enhetslagringen](..\migration-upgrade\migrate-upgraded-cube-entity-store.md)
+-   [<span data-ttu-id="64d2d-106">Analyser</span><span class="sxs-lookup"><span data-stu-id="64d2d-106">Analytics</span></span>](analytics.md)
+-   [<span data-ttu-id="64d2d-107">Aggregerade realtidsmodeller i minnet ersätter SSAS-kuber</span><span class="sxs-lookup"><span data-stu-id="64d2d-107">In-memory, real-time aggregate models replace SSAS cubes</span></span>](..\migration-upgrade\in-memory-real-time-aggregate-models.md)
+-   [<span data-ttu-id="64d2d-108">Modellera och använda aggregerade data</span><span class="sxs-lookup"><span data-stu-id="64d2d-108">Modeling and using Aggregate Data</span></span>](model-aggregate-data.md)
+-   [<span data-ttu-id="64d2d-109">Migrera en uppgraderad Dynamics AX 2012 R3-försäljningskub till enhetslagringen</span><span class="sxs-lookup"><span data-stu-id="64d2d-109">Migrate an upgraded Dynamics AX 2012 R3 sales cube to the entity store</span></span>](..\migration-upgrade\migrate-upgraded-cube-entity-store.md)
 
-## <a name="self-service-reporting"></a>Självbetjäningsrapportering
--   [Power BI-integration](power-bi-integration.md)
--   [Konfigurera Power BI-integrering för arbetsytor](configure-power-bi-integration.md)
--   [Skapa en Power BI-rapport med Microsoft Dynamics 365 for Finance and Operations-data](create-powerbi-report-data.md)
--   [Skapa en Power BI-rapport och instrumentpanel](create-powerbi-report-dashboard.md)
--   [Innehållspaket för butikskanalprestanda för Power BI](retail-channel-performance-dashboard-power-bi-data.md)
--   [Innehållspaket för ekonomiska resultat för Power BI](financial-performance-power-bi-content-pack.md)
--   [Innehållspaket för försäljnings- och lönsamhetsprestanda för Power BI](sales-profitability-performance-content-pack.md)
--   [Använd en elektronisk rapporteringskonfiguration för att tillhandahålla Power BI med data från Finance and Operations](general-electronic-reporting-report-configuration-get-data-powerbi.md)
+## <a name="self-service-reporting"></a><span data-ttu-id="64d2d-110">Självbetjäningsrapportering</span><span class="sxs-lookup"><span data-stu-id="64d2d-110">Self service reporting</span></span>
+-   [<span data-ttu-id="64d2d-111">Power BI-integration</span><span class="sxs-lookup"><span data-stu-id="64d2d-111">Power BI integration</span></span>](power-bi-integration.md)
+-   [<span data-ttu-id="64d2d-112">Konfigurera Power BI-integrering för arbetsytor</span><span class="sxs-lookup"><span data-stu-id="64d2d-112">Configuring Power BI integration for workspaces</span></span>](configure-power-bi-integration.md)
+-   [<span data-ttu-id="64d2d-113">Skapa en Power BI-rapport med Microsoft Dynamics 365 for Finance and Operations-data</span><span class="sxs-lookup"><span data-stu-id="64d2d-113">Create a Power BI report by using Microsoft Dynamics 365 for Finance and Operations data</span></span>](create-powerbi-report-data.md)
+-   [<span data-ttu-id="64d2d-114">Skapa en Power BI-rapport och instrumentpanel</span><span class="sxs-lookup"><span data-stu-id="64d2d-114">Create a Power BI report and dashboard</span></span>](create-powerbi-report-dashboard.md)
+-   [<span data-ttu-id="64d2d-115">Innehållspaket för butikskanalprestanda för Power BI</span><span class="sxs-lookup"><span data-stu-id="64d2d-115">Retail Channel Performance Power BI content</span></span>](retail-channel-performance-dashboard-power-bi-data.md)
+-   [<span data-ttu-id="64d2d-116">Innehållspaket för ekonomiska resultat för Power BI</span><span class="sxs-lookup"><span data-stu-id="64d2d-116">Financial Performance Power BI content</span></span>](financial-performance-power-bi-content-pack.md)
+-   [<span data-ttu-id="64d2d-117">Innehållspaket för försäljnings- och lönsamhetsprestanda för Power BI</span><span class="sxs-lookup"><span data-stu-id="64d2d-117">Sales and profitability performance Power BI content</span></span>](sales-profitability-performance-content-pack.md)
+-   [<span data-ttu-id="64d2d-118">Använd en elektronisk rapporteringskonfiguration för att tillhandahålla Power BI med data från Finance and Operations</span><span class="sxs-lookup"><span data-stu-id="64d2d-118">Use an Electronic reporting configuration to provide Power BI with data from Finance and Operations</span></span>](general-electronic-reporting-report-configuration-get-data-powerbi.md)
 
-## <a name="building-embedded-analytical-experiences-in-the-finance-and-operations-client"></a>Bygga inbäddade analytiska erfarenheter i Finance and Operations-klienten
--   [Inbäddad Business Intelligence](analytics.md#embedded-business-intelligence)
--   [KPI-modellering och anpassning](analytics.md#kpi-modeling-and-customization)
--   [Lägga till BI i arbetsytor](add-bi-workspaces.md)
--   [Lägga till sammanhangsbaserad BI till formulär](add-contextual-bi-forms.md)
+## <a name="building-embedded-analytical-experiences-in-the-finance-and-operations-client"></a><span data-ttu-id="64d2d-119">Bygga inbäddade analytiska erfarenheter i Finance and Operations-klienten</span><span class="sxs-lookup"><span data-stu-id="64d2d-119">Building embedded analytical experiences in the Finance and Operations client</span></span>
+-   [<span data-ttu-id="64d2d-120">Inbäddad Business Intelligence</span><span class="sxs-lookup"><span data-stu-id="64d2d-120">Embedded business intelligence</span></span>](analytics.md#embedded-business-intelligence)
+-   [<span data-ttu-id="64d2d-121">KPI-modellering och anpassning</span><span class="sxs-lookup"><span data-stu-id="64d2d-121">KPI modeling and customization</span></span>](analytics.md#kpi-modeling-and-customization)
+-   [<span data-ttu-id="64d2d-122">Lägga till BI i arbetsytor</span><span class="sxs-lookup"><span data-stu-id="64d2d-122">Adding BI to workspaces</span></span>](add-bi-workspaces.md)
+-   [<span data-ttu-id="64d2d-123">Lägga till sammanhangsbaserad BI till formulär</span><span class="sxs-lookup"><span data-stu-id="64d2d-123">Adding contextual BI to forms</span></span>](add-contextual-bi-forms.md)
 
-## <a name="document-reporting-and-printing"></a>Rapportera och skriva ut dokument
--   [Översikt över dokumentrapporteringstjänster](document-reporting-services.md)
--   [Skriva ut i Finance and Operations-program](print-documents.md)
--   [Installera dokumentflödesagenten för att aktivera nätverksskrivarenheter](install-document-routing-agent.md)
--   [Kör dokumentflödesagenten som en Windows-tjänst](run-document-routing-agent-as-windows-service.md)
--   [Skapa nästa generations rapporteringslösningar](create-nextgen-reporting-solutions.md)
--   [Installera de moderna rapportformgivningsmallarna](install-modern-report-design-templates.md)
--   [Tips som förhindrar att tidsgränsen för långvariga rapporter löper ut](prevent-long-running-reports-timing-out.md)
+## <a name="document-reporting-and-printing"></a><span data-ttu-id="64d2d-124">Rapportera och skriva ut dokument</span><span class="sxs-lookup"><span data-stu-id="64d2d-124">Document reporting and printing</span></span>
+-   [<span data-ttu-id="64d2d-125">Översikt över dokumentrapporteringstjänster</span><span class="sxs-lookup"><span data-stu-id="64d2d-125">Document Reporting Services Overview</span></span>](document-reporting-services.md)
+-   [<span data-ttu-id="64d2d-126">Skriva ut i Finance and Operations-program</span><span class="sxs-lookup"><span data-stu-id="64d2d-126">Printing in Finance and Operations applications</span></span>](print-documents.md)
+-   [<span data-ttu-id="64d2d-127">Installera dokumentflödesagenten för att aktivera nätverksskrivarenheter</span><span class="sxs-lookup"><span data-stu-id="64d2d-127">Install the Document Routing Agent to enable network printer devices</span></span>](install-document-routing-agent.md)
+-   [<span data-ttu-id="64d2d-128">Kör dokumentflödesagenten som en Windows-tjänst</span><span class="sxs-lookup"><span data-stu-id="64d2d-128">Run the Document Routing agent as a Windows service</span></span>](run-document-routing-agent-as-windows-service.md)
+-   [<span data-ttu-id="64d2d-129">Skapa nästa generations rapporteringslösningar</span><span class="sxs-lookup"><span data-stu-id="64d2d-129">Creating next-generation reporting solutions</span></span>](create-nextgen-reporting-solutions.md)
+-   [<span data-ttu-id="64d2d-130">Installera de moderna rapportformgivningsmallarna</span><span class="sxs-lookup"><span data-stu-id="64d2d-130">Install the modern report design templates</span></span>](install-modern-report-design-templates.md)
+-   [<span data-ttu-id="64d2d-131">Tips som förhindrar att tidsgränsen för långvariga rapporter löper ut</span><span class="sxs-lookup"><span data-stu-id="64d2d-131">Tips to help prevent long-running reports from timing out</span></span>](prevent-long-running-reports-timing-out.md)
 
-## <a name="electronic-reporting"></a>Elektronisk rapportering
--   [Översikt över elektronisk rapportering](general-electronic-reporting.md)
--   [Hantera livscykeln för konfiguration av elektronisk rapportering](general-electronic-reporting-manage-configuration-lifecycle.md)
--   [Utöka listan med funktioner för elektronisk rapportering](general-electronic-reporting-formulas-list-extension.md)
--   [Formeldesigner i elektronisk rapportering](general-electronic-reporting-formula-designer.md)
--   [Destinationer för elektronisk rapportering](electronic-reporting-destinations.md)
--   [Hämta konfigurationer för elektronisk rapportering från Lifecycle Services](download-electronic-reporting-configuration-lcs.md)
--   [Använd en elektronisk rapporteringskonfiguration för att tillhandahålla Power BI med data från Finance and Operations](general-electronic-reporting-report-configuration-get-data-powerbi.md)
--   [ER Skapa en konfigurationsleverantör och markera den som aktiv](/dynamics365/unified-operations/do-not-publish/er-configuration-provider-mark-it-active-2016-02) (uppgiftsguide)
--   [ER Utforma domänspecifik datamodell](/dynamics365/unified-operations/do-not-publish/er-design-domain-specific-data-model-2016-02-05) (uppgiftsguide)
--   [ER Definiera modellmappning och välj datakällor](/dynamics365/unified-operations/do-not-publish/er-define-model-mapping-select-data-sources-2016-02-05) (uppgiftsguide)
--   [ER Mappa datamodeller till utvalda datakällor](/dynamics365/unified-operations/do-not-publish/er-map-data-model-selected-data-sources-2016-02-05) (uppgiftsguide)
--   [ER Utforma domänspecifikt format](/dynamics365/unified-operations/do-not-publish/er-design-domain-specific-format-2016-02-05) (uppgiftsguide)
--   [ER Överför en konfiguration till Lifecycle Services](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services) (uppgiftsguide)
--   [ER Importera en konfiguration från Lifecycle Services](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services) (uppgiftsguide)
--   [ER Utforma en konfiguration för rapportgenerering i OPENXML-format](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11) (uppgiftsguide)
--   [ER Konfigurera destinationer](/dynamics365/unified-operations/do-not-publish/er-destinations-2016-05) (uppgiftsguide)
--   [ER Använd ekonomiska dimensioner som datakälla (Del 1: Utforma datamodell)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1) (uppgiftsguide)
--   [ER Använd ekonomiska dimensioner som datakälla (Del 2: Modellmappning)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2) (uppgiftsguide)
--   [ER Använd ekonomiska dimensioner som datakälla (Del 3: Utforma rapporten)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3) (uppgiftsguide)
--   [ER Använd ekonomiska dimensioner som datakälla (Del 4: Kör rapporten)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4) (uppgiftsguide)
--   [ER Konfigurera format för inventering och summering (Del 1: Skapa format)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-format-counting-summing-1) (uppgiftsguide)
--   [ER Konfigurera format för inventering och summering (Del 2: Konfigurera beräkningar)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-format-counting-summing-2) (uppgiftsguide)
--   [ER Konfigurera format för inventering och summering (Del 3: Använd beräkningar för att generera utdata)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-format-counting-summing-3) (uppgiftsguide)
--   [ER Konfigurera format för inventering och summering (Del 4: Kör format)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-format-counting-summing-4) (uppgiftsguide)
--   [ER Använd horisontellt expanderbara intervall för att lägga till kolumner dynamiskt i Excel-rapporter (Del 1: Utforma format)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-horizontal-1) (uppgiftsguide)
--   [ER Använd horisontellt expanderbara intervall för att lägga till kolumner dynamiskt i Excel-rapporter (Del 2: Kör format)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-horizontal-2) (uppgiftsguide)
--   [ER Använd dokumenthanteringsfiler i formatutdata (Del 1: Förbered datamodell)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-document-management-files-1) (uppgiftsguide)
--   [ER Använd dokumenthanteringsfiler i formatutdata (Del 2: Utöka datamodell)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-document-management-files-2) (uppgiftsguide)
--   [ER Använd dokumenthanteringsfiler i formatutdata (Del 3: Skapa format)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-document-management-files-3) (uppgiftsguide)
--   [ER Använd dokumenthanteringsfiler i formatutdata (Del 4: Kör format)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-document-management-files-4) (uppgiftsguide)
--   [ER Använd dokumenthanteringsfiler i formatutdata (Del 5: Ändra och kör format)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-document-management-files-5) (uppgiftsguide)
--   [ER Generera elektroniska dokument för betalningar med en formatkonfiguration](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-electronic-payments) (uppgiftsguide)
--   [ER Uppgradera formatet genom att implementera en ny basversion för formatet](/dynamics365/unified-operations/do-not-publish/er-upgrade-format--2016-05) (uppgiftsguide)
+## <a name="electronic-reporting"></a><span data-ttu-id="64d2d-132">Elektronisk rapportering</span><span class="sxs-lookup"><span data-stu-id="64d2d-132">Electronic reporting</span></span>
+-   [<span data-ttu-id="64d2d-133">Översikt över elektronisk rapportering</span><span class="sxs-lookup"><span data-stu-id="64d2d-133">Electronic reporting overview</span></span>](general-electronic-reporting.md)
+-   [<span data-ttu-id="64d2d-134">Hantera livscykeln för konfiguration av elektronisk rapportering</span><span class="sxs-lookup"><span data-stu-id="64d2d-134">Manage the Electronic reporting configuration lifecycle</span></span>](general-electronic-reporting-manage-configuration-lifecycle.md)
+-   [<span data-ttu-id="64d2d-135">Utöka listan med funktioner för elektronisk rapportering</span><span class="sxs-lookup"><span data-stu-id="64d2d-135">Extending the list of Electronic reporting functions</span></span>](general-electronic-reporting-formulas-list-extension.md)
+-   [<span data-ttu-id="64d2d-136">Formeldesigner i elektronisk rapportering</span><span class="sxs-lookup"><span data-stu-id="64d2d-136">Formula designer in Electronic reporting</span></span>](general-electronic-reporting-formula-designer.md)
+-   [<span data-ttu-id="64d2d-137">Destinationer för elektronisk rapportering</span><span class="sxs-lookup"><span data-stu-id="64d2d-137">Electronic reporting destinations</span></span>](electronic-reporting-destinations.md)
+-   [<span data-ttu-id="64d2d-138">Hämta konfigurationer för elektronisk rapportering från Lifecycle Services</span><span class="sxs-lookup"><span data-stu-id="64d2d-138">Download Electronic reporting configurations from Lifecycle Services</span></span>](download-electronic-reporting-configuration-lcs.md)
+-   [<span data-ttu-id="64d2d-139">Använd en elektronisk rapporteringskonfiguration för att tillhandahålla Power BI med data från Finance and Operations</span><span class="sxs-lookup"><span data-stu-id="64d2d-139">Use an Electronic reporting configuration to provide Power BI with data from Finance and Operations</span></span>](general-electronic-reporting-report-configuration-get-data-powerbi.md)
+-   <span data-ttu-id="64d2d-140">[ER Skapa en konfigurationsleverantör och markera den som aktiv](/dynamics365/unified-operations/do-not-publish/er-configuration-provider-mark-it-active-2016-02) (uppgiftsguide)</span><span class="sxs-lookup"><span data-stu-id="64d2d-140">[ER Create a configuration provider and mark it as active](/dynamics365/unified-operations/do-not-publish/er-configuration-provider-mark-it-active-2016-02) (Task guide)</span></span>
+-   <span data-ttu-id="64d2d-141">[ER Utforma domänspecifik datamodell](/dynamics365/unified-operations/do-not-publish/er-design-domain-specific-data-model-2016-02-05) (uppgiftsguide)</span><span class="sxs-lookup"><span data-stu-id="64d2d-141">[ER Design domain specific data model](/dynamics365/unified-operations/do-not-publish/er-design-domain-specific-data-model-2016-02-05) (Task guide)</span></span>
+-   <span data-ttu-id="64d2d-142">[ER Definiera modellmappning och välj datakällor](/dynamics365/unified-operations/do-not-publish/er-define-model-mapping-select-data-sources-2016-02-05) (uppgiftsguide)</span><span class="sxs-lookup"><span data-stu-id="64d2d-142">[ER Define model mapping and select data sources](/dynamics365/unified-operations/do-not-publish/er-define-model-mapping-select-data-sources-2016-02-05) (Task guide)</span></span>
+-   <span data-ttu-id="64d2d-143">[ER Mappa datamodeller till utvalda datakällor](/dynamics365/unified-operations/do-not-publish/er-map-data-model-selected-data-sources-2016-02-05) (uppgiftsguide)</span><span class="sxs-lookup"><span data-stu-id="64d2d-143">[ER Map data model to selected data sources](/dynamics365/unified-operations/do-not-publish/er-map-data-model-selected-data-sources-2016-02-05) (Task guide)</span></span>
+-   <span data-ttu-id="64d2d-144">[ER Utforma domänspecifikt format](/dynamics365/unified-operations/do-not-publish/er-design-domain-specific-format-2016-02-05) (uppgiftsguide)</span><span class="sxs-lookup"><span data-stu-id="64d2d-144">[ER Design domain specific format](/dynamics365/unified-operations/do-not-publish/er-design-domain-specific-format-2016-02-05) (Task guide)</span></span>
+-   <span data-ttu-id="64d2d-145">[ER Överför en konfiguration till Lifecycle Services](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services) (uppgiftsguide)</span><span class="sxs-lookup"><span data-stu-id="64d2d-145">[ER Upload a configuration into Lifecycle Services](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services) (Task guide)</span></span>
+-   <span data-ttu-id="64d2d-146">[ER Importera en konfiguration från Lifecycle Services](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services) (uppgiftsguide)</span><span class="sxs-lookup"><span data-stu-id="64d2d-146">[ER Import a configuration from Lifecycle Services](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services) (Task guide)</span></span>
+-   <span data-ttu-id="64d2d-147">[ER Utforma en konfiguration för rapportgenerering i OPENXML-format](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11) (uppgiftsguide)</span><span class="sxs-lookup"><span data-stu-id="64d2d-147">[ER Design a configuration for generating reports in OPENXML format](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11) (Task guide)</span></span>
+-   <span data-ttu-id="64d2d-148">[ER Konfigurera destinationer](/dynamics365/unified-operations/do-not-publish/er-destinations-2016-05) (uppgiftsguide)</span><span class="sxs-lookup"><span data-stu-id="64d2d-148">[ER Configure destinations](/dynamics365/unified-operations/do-not-publish/er-destinations-2016-05) (Task guide)</span></span>
+-   <span data-ttu-id="64d2d-149">[ER Använd ekonomiska dimensioner som datakälla (Del 1: Utforma datamodell)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1) (uppgiftsguide)</span><span class="sxs-lookup"><span data-stu-id="64d2d-149">[ER Use financial dimensions as a data source (Part 1: Design data model)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1) (Task guide)</span></span>
+-   <span data-ttu-id="64d2d-150">[ER Använd ekonomiska dimensioner som datakälla (Del 2: Modellmappning)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2) (uppgiftsguide)</span><span class="sxs-lookup"><span data-stu-id="64d2d-150">[ER Use financial dimensions as a data source (Part 2: Model mapping)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2) (Task guide)</span></span>
+-   <span data-ttu-id="64d2d-151">[ER Använd ekonomiska dimensioner som datakälla (Del 3: Utforma rapporten)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3) (uppgiftsguide)</span><span class="sxs-lookup"><span data-stu-id="64d2d-151">[ER Use financial dimensions as a data source (Part 3: Design the report)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3) (Task guide)</span></span>
+-   <span data-ttu-id="64d2d-152">[ER Använd ekonomiska dimensioner som datakälla (Del 4: Kör rapporten)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4) (uppgiftsguide)</span><span class="sxs-lookup"><span data-stu-id="64d2d-152">[ER Use financial dimensions as a data source (Part 4: Run the report)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4) (Task guide)</span></span>
+-   <span data-ttu-id="64d2d-153">[ER Konfigurera format för inventering och summering (Del 1: Skapa format)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-format-counting-summing-1) (uppgiftsguide)</span><span class="sxs-lookup"><span data-stu-id="64d2d-153">[ER Configure format to do counting and summing (Part 1: Create format)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-format-counting-summing-1) (Task guide)</span></span>
+-   <span data-ttu-id="64d2d-154">[ER Konfigurera format för inventering och summering (Del 2: Konfigurera beräkningar)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-format-counting-summing-2) (uppgiftsguide)</span><span class="sxs-lookup"><span data-stu-id="64d2d-154">[ER Configure format to do counting and summing (Part 2: Configure computations)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-format-counting-summing-2) (Task guide)</span></span>
+-   <span data-ttu-id="64d2d-155">[ER Konfigurera format för inventering och summering (Del 3: Använd beräkningar för att generera utdata)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-format-counting-summing-3) (uppgiftsguide)</span><span class="sxs-lookup"><span data-stu-id="64d2d-155">[ER Configure format to do counting and summing (Part 3: Use computations to make the output)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-format-counting-summing-3) (Task guide)</span></span>
+-   <span data-ttu-id="64d2d-156">[ER Konfigurera format för inventering och summering (Del 4: Kör format)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-format-counting-summing-4) (uppgiftsguide)</span><span class="sxs-lookup"><span data-stu-id="64d2d-156">[ER Configure format to do counting and summing (Part 4: Run format)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-format-counting-summing-4) (Task guide)</span></span>
+-   <span data-ttu-id="64d2d-157">[ER Använd horisontellt expanderbara intervall för att lägga till kolumner dynamiskt i Excel-rapporter (Del 1: Utforma format)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-horizontal-1) (uppgiftsguide)</span><span class="sxs-lookup"><span data-stu-id="64d2d-157">[ER Use horizontally expandable ranges to dynamically add columns in Excel reports (Part 1: Design format)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-horizontal-1) (Task guide)</span></span>
+-   <span data-ttu-id="64d2d-158">[ER Använd horisontellt expanderbara intervall för att lägga till kolumner dynamiskt i Excel-rapporter (Del 2: Kör format)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-horizontal-2) (uppgiftsguide)</span><span class="sxs-lookup"><span data-stu-id="64d2d-158">[ER Use horizontally expandable ranges to dynamically add columns in Excel reports (Part 2: Run format)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-horizontal-2) (Task guide)</span></span>
+-   <span data-ttu-id="64d2d-159">[ER Använd dokumenthanteringsfiler i formatutdata (Del 1: Förbered datamodell)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-document-management-files-1) (uppgiftsguide)</span><span class="sxs-lookup"><span data-stu-id="64d2d-159">[ER Use Document Management files in format outputs (Part 1: Prepare data model)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-document-management-files-1) (Task guide)</span></span>
+-   <span data-ttu-id="64d2d-160">[ER Använd dokumenthanteringsfiler i formatutdata (Del 2: Utöka datamodell)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-document-management-files-2) (uppgiftsguide)</span><span class="sxs-lookup"><span data-stu-id="64d2d-160">[ER Use Document Management files in format outputs (Part 2: Extend data model)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-document-management-files-2) (Task guide)</span></span>
+-   <span data-ttu-id="64d2d-161">[ER Använd dokumenthanteringsfiler i formatutdata (Del 3: Skapa format)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-document-management-files-3) (uppgiftsguide)</span><span class="sxs-lookup"><span data-stu-id="64d2d-161">[ER Use Document Management files in format outputs (Part 3: Create format)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-document-management-files-3) (Task guide)</span></span>
+-   <span data-ttu-id="64d2d-162">[ER Använd dokumenthanteringsfiler i formatutdata (Del 4: Kör format)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-document-management-files-4) (uppgiftsguide)</span><span class="sxs-lookup"><span data-stu-id="64d2d-162">[ER Use Document Management files in format outputs (Part 4: Run format)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-document-management-files-4) (Task guide)</span></span>
+-   <span data-ttu-id="64d2d-163">[ER Använd dokumenthanteringsfiler i formatutdata (Del 5: Ändra och kör format)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-document-management-files-5) (uppgiftsguide)</span><span class="sxs-lookup"><span data-stu-id="64d2d-163">[ER Use Document Management files in format outputs (Part 5: Modify and run format)](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-document-management-files-5) (Task guide)</span></span>
+-   <span data-ttu-id="64d2d-164">[ER Generera elektroniska dokument för betalningar med en formatkonfiguration](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-electronic-payments) (uppgiftsguide)</span><span class="sxs-lookup"><span data-stu-id="64d2d-164">[ER Generate electronic documents for payments using a format configuration](/dynamics365/unified-operations/dev-itpro/analytics/tasks/er-electronic-payments) (Task guide)</span></span>
+-   <span data-ttu-id="64d2d-165">[ER Uppgradera formatet genom att implementera en ny basversion för formatet](/dynamics365/unified-operations/do-not-publish/er-upgrade-format--2016-05) (uppgiftsguide)</span><span class="sxs-lookup"><span data-stu-id="64d2d-165">[ER Upgrade your format by adopting a new, base version of that format](/dynamics365/unified-operations/do-not-publish/er-upgrade-format--2016-05) (Task guide)</span></span>
 
 
 

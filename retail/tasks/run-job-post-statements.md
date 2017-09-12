@@ -17,29 +17,29 @@ ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: d111e914ef24b328d26fc88c059f51180fa02ee3
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 0e2dae54cc9ccfc0a85046c5478e539585c3744d
 ms.contentlocale: sv-se
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="configure-and-run-a-job-to-post-statements"></a> Konfigurera och kör ett jobb för att bokföra utdrag
+# <a name="configure-and-run-a-job-to-post-statements"></a><span data-ttu-id="544aa-103"> Konfigurera och kör ett jobb för att bokföra utdrag</span><span class="sxs-lookup"><span data-stu-id="544aa-103">Configure and run a job to post statements</span></span>
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-Den här proceduren går igenom konfigurationen och körning av regelbundet återkommande batchjobb för att bokföra utdrag för en vald butik eller grupp av butiker. I proceduren används demonstrationsföretaget USRT.
+<span data-ttu-id="544aa-104">Den här proceduren går igenom konfigurationen och körning av regelbundet återkommande batchjobb för att bokföra utdrag för en vald butik eller grupp av butiker.</span><span class="sxs-lookup"><span data-stu-id="544aa-104">This procedure walks through configuring and running a recurrent batch job to post statements for a selected store or group of stores.</span></span> <span data-ttu-id="544aa-105">I proceduren används demonstrationsföretaget USRT.</span><span class="sxs-lookup"><span data-stu-id="544aa-105">This procedure uses the USRT company in demo data.</span></span>
 
-1. Alla arbetsytor > .. > Butiksekonomi.
-2. Klicka på Bokför utdrag.
-    * Välj en organisationshierarki och sedan i organisationsnodträdet, välj antingen en enskild butik eller en nod. Välj en nod om du vill skapa batchjobbet för en grupp av butiker.  
-    * Klicka på pilen om du vill lägga till ditt val.  
-3. Klicka på fliken Kör i bakgrunden ...
-4. Markera eller avmarkera kryssrutan Batchbearbetning.
-5. Klicka på Upprepning.
-6. Ange ett datum i fältet Startdatum.
-7. Ange en tid i fältet Starttid.
-    * Välj om du vill att slutföra återkommande efter ett visst antal körningar, vid ett visst datum eller aldrig. Välj sedan de olika alternativen för att definiera hur ofta du vill att jobbet ska köras.  
-8. Klicka på OK.
-9. Klicka på OK.
+1. <span data-ttu-id="544aa-106">Alla arbetsytor > ..</span><span class="sxs-lookup"><span data-stu-id="544aa-106">Go to All workspaces > ..</span></span> <span data-ttu-id="544aa-107">> Butiksekonomi.</span><span class="sxs-lookup"><span data-stu-id="544aa-107">> Retail store financials.</span></span>
+2. <span data-ttu-id="544aa-108">Klicka på Bokför utdrag.</span><span class="sxs-lookup"><span data-stu-id="544aa-108">Click Post statements.</span></span>
+    * <span data-ttu-id="544aa-109">Välj en organisationshierarki och sedan i organisationsnodträdet, välj antingen en enskild butik eller en nod.</span><span class="sxs-lookup"><span data-stu-id="544aa-109">Select an organizational hierarchy and then in the organization nodes tree, select either an individual store or a node.</span></span> <span data-ttu-id="544aa-110">Välj en nod om du vill skapa batchjobbet för en grupp av butiker.</span><span class="sxs-lookup"><span data-stu-id="544aa-110">Select a node if you want to create the batch job for a group of stores.</span></span>  
+    * <span data-ttu-id="544aa-111">Klicka på pilen om du vill lägga till ditt val.</span><span class="sxs-lookup"><span data-stu-id="544aa-111">Click the arrow to add your selection.</span></span>  
+3. <span data-ttu-id="544aa-112">Klicka på fliken Kör i bakgrunden ...</span><span class="sxs-lookup"><span data-stu-id="544aa-112">Click the Run in the background tab.</span></span>
+4. <span data-ttu-id="544aa-113">Markera eller avmarkera kryssrutan Batchbearbetning.</span><span class="sxs-lookup"><span data-stu-id="544aa-113">Check or uncheck the Batch processing checkbox.</span></span>
+5. <span data-ttu-id="544aa-114">Klicka på Upprepning.</span><span class="sxs-lookup"><span data-stu-id="544aa-114">Click Recurrence.</span></span>
+6. <span data-ttu-id="544aa-115">Ange ett datum i fältet Startdatum.</span><span class="sxs-lookup"><span data-stu-id="544aa-115">In the Start date field, enter a date.</span></span>
+7. <span data-ttu-id="544aa-116">Ange en tid i fältet Starttid.</span><span class="sxs-lookup"><span data-stu-id="544aa-116">In the Start time field, enter a time.</span></span>
+    * <span data-ttu-id="544aa-117">Välj om du vill att slutföra återkommande efter ett visst antal körningar, vid ett visst datum eller aldrig.</span><span class="sxs-lookup"><span data-stu-id="544aa-117">Choose whether you want to end the recurrence after a specific number of runs, at a specific date, or never.</span></span> <span data-ttu-id="544aa-118">Välj sedan de olika alternativen för att definiera hur ofta du vill att jobbet ska köras.</span><span class="sxs-lookup"><span data-stu-id="544aa-118">Then choose the various options to define how frequently you want the job to run.</span></span>  
+8. <span data-ttu-id="544aa-119">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="544aa-119">Click OK.</span></span>
+9. <span data-ttu-id="544aa-120">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="544aa-120">Click OK.</span></span>
 
 

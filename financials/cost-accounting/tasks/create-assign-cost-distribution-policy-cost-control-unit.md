@@ -16,60 +16,60 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 492e4a94ec0caef8c51a691043a1ffb9e6a04758
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: fbd44816fc2f2569dd477fc21f59418a575bb835
 ms.contentlocale: sv-se
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-and-assign-a-cost-distribution-policy-to-a-cost-control-unit"></a>Skapa och tilldela en kostnadsfördelningspolicy till en kostnadsstyrenhet
+# <a name="create-and-assign-a-cost-distribution-policy-to-a-cost-control-unit"></a><span data-ttu-id="13a6e-103">Skapa och tilldela en kostnadsfördelningspolicy till en kostnadsstyrenhet</span><span class="sxs-lookup"><span data-stu-id="13a6e-103">Create and assign a cost distribution policy to a cost control unit</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Kostnadsfördelningsregler används för att fördela kostnader som räknats ekonomiskt i ett samlat kostnadsställe. Kostnadsrevisorn säkerställer att kostnaderna fördelas till kostnadsställena utifrån det valda allokeringsunderlaget. En princip och motsvarande regler tilldelas en kostnadsstyrenhet. I den här uppgiftsguiden används ett exempel för att lära dig skapa en kostnadsfördelningspolicy och motsvarande regler.
+<span data-ttu-id="13a6e-104">Kostnadsfördelningsregler används för att fördela kostnader som räknats ekonomiskt i ett samlat kostnadsställe.</span><span class="sxs-lookup"><span data-stu-id="13a6e-104">Cost distribution rules are used to distribute costs that have been financially counted on a collective cost center.</span></span> <span data-ttu-id="13a6e-105">Kostnadsrevisorn säkerställer att kostnaderna fördelas till kostnadsställena utifrån det valda allokeringsunderlaget.</span><span class="sxs-lookup"><span data-stu-id="13a6e-105">The cost accountant makes sure that the cost is distributed to the cost centers, based on the selected allocation base.</span></span> <span data-ttu-id="13a6e-106">En princip och motsvarande regler tilldelas en kostnadsstyrenhet.</span><span class="sxs-lookup"><span data-stu-id="13a6e-106">A policy and the corresponding rules are assigned to a cost control unit.</span></span> <span data-ttu-id="13a6e-107">I den här uppgiftsguiden används ett exempel för att lära dig skapa en kostnadsfördelningspolicy och motsvarande regler.</span><span class="sxs-lookup"><span data-stu-id="13a6e-107">This task guide uses an example to show how to create a cost distribution policy and the corresponding rules.</span></span>
 
 
-## <a name="create-a-policy"></a>Skapa en policy
-1. Gå till Kostnadsredovisning > Policyer > Kostnadsfördelningspolicyer.
-2. Klicka på Ny.
-3. Skriv ett värde i fältet Policynamn.
-4. Ange ett värde i fältet Beskrivning.
-5. Ange eller välj ett värde i fältet Dimensionshierarki för kostnadsobjekt.
-    * Välj Organisation.  
-6. Ange eller välj ett värde i fältet Dimensionshierarki för kostnadselement.
-    * Välj CDS P/L.  
-7. Ange eller välj ett värde i fältet Statistikdimension.
-    * Välj Statistiska element.  
-8. Klicka på Spara.
+## <a name="create-a-policy"></a><span data-ttu-id="13a6e-108">Skapa en policy</span><span class="sxs-lookup"><span data-stu-id="13a6e-108">Create a policy</span></span>
+1. <span data-ttu-id="13a6e-109">Gå till Kostnadsredovisning > Policyer > Kostnadsfördelningspolicyer.</span><span class="sxs-lookup"><span data-stu-id="13a6e-109">Go to Cost accounting > Policies > Cost distribution policies.</span></span>
+2. <span data-ttu-id="13a6e-110">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="13a6e-110">Click New.</span></span>
+3. <span data-ttu-id="13a6e-111">Skriv ett värde i fältet Policynamn.</span><span class="sxs-lookup"><span data-stu-id="13a6e-111">In the Policy name field, type a value.</span></span>
+4. <span data-ttu-id="13a6e-112">Ange ett värde i fältet Beskrivning.</span><span class="sxs-lookup"><span data-stu-id="13a6e-112">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="13a6e-113">Ange eller välj ett värde i fältet Dimensionshierarki för kostnadsobjekt.</span><span class="sxs-lookup"><span data-stu-id="13a6e-113">In the Cost object dimension hierarchy field, enter or select a value.</span></span>
+    * <span data-ttu-id="13a6e-114">Välj Organisation.</span><span class="sxs-lookup"><span data-stu-id="13a6e-114">Select Organization.</span></span>  
+6. <span data-ttu-id="13a6e-115">Ange eller välj ett värde i fältet Dimensionshierarki för kostnadselement.</span><span class="sxs-lookup"><span data-stu-id="13a6e-115">In the Cost element dimension hierarchy field, enter or select a value.</span></span>
+    * <span data-ttu-id="13a6e-116">Välj CDS P/L.</span><span class="sxs-lookup"><span data-stu-id="13a6e-116">Select CDS P/L.</span></span>  
+7. <span data-ttu-id="13a6e-117">Ange eller välj ett värde i fältet Statistikdimension.</span><span class="sxs-lookup"><span data-stu-id="13a6e-117">In the Statistical dimension field, enter or select a value.</span></span>
+    * <span data-ttu-id="13a6e-118">Välj Statistiska element.</span><span class="sxs-lookup"><span data-stu-id="13a6e-118">Select Statistical elements.</span></span>  
+8. <span data-ttu-id="13a6e-119">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="13a6e-119">Click Save.</span></span>
 
-## <a name="create-rules-for-the-policy"></a>Skapa regler för policyn
-1. Klicka på Ny.
-2. Markera vald rad i listan.
-3. Ange eller välj ett värde i fältet Dimensionshierarkinod för kostnadsobjekt.
-    * Expandera hela hierarkin för att välja 094.  
-4. Ange eller välj ett värde i fältet Dimensionshierarkinod för kostnadselement.
-    * Välj Övriga driftkostnader och sedan 605110 Cleaning.  
-5. Välj ett alternativ i fältet Kostnadsbeteende.
-    * Välj Fast kostnad.  
-6. Ange eller välj ett värde i fältet Allokeringsunderlag.
-7. Klicka på Ny.
-8. Markera vald rad i listan.
-9. Ange eller välj ett värde i fältet Dimensionshierarkinod för kostnadsobjekt.
-    * Expandera hela hierarkin för att välja 094.  
-10. Ange eller välj ett värde i fältet Dimensionshierarkinod för kostnadselement.
-    * Välj Övriga driftkostnader och sedan 605150 Rent.  
-11. Välj ett alternativ i fältet Kostnadsbeteende.
-    * Välj Fast kostnad.  
-12. Ange eller välj ett värde i fältet Allokeringsunderlag.
-13. Klicka på Spara.
+## <a name="create-rules-for-the-policy"></a><span data-ttu-id="13a6e-120">Skapa regler för policyn</span><span class="sxs-lookup"><span data-stu-id="13a6e-120">Create rules for the policy</span></span>
+1. <span data-ttu-id="13a6e-121">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="13a6e-121">Click New.</span></span>
+2. <span data-ttu-id="13a6e-122">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="13a6e-122">In the list, mark the selected row.</span></span>
+3. <span data-ttu-id="13a6e-123">Ange eller välj ett värde i fältet Dimensionshierarkinod för kostnadsobjekt.</span><span class="sxs-lookup"><span data-stu-id="13a6e-123">In the Cost object dimension hierarchy node field, enter or select a value.</span></span>
+    * <span data-ttu-id="13a6e-124">Expandera hela hierarkin för att välja 094.</span><span class="sxs-lookup"><span data-stu-id="13a6e-124">Expand the hierarchy to select 094.</span></span>  
+4. <span data-ttu-id="13a6e-125">Ange eller välj ett värde i fältet Dimensionshierarkinod för kostnadselement.</span><span class="sxs-lookup"><span data-stu-id="13a6e-125">In the Cost element dimension hierarchy node field, enter or select a value.</span></span>
+    * <span data-ttu-id="13a6e-126">Välj Övriga driftkostnader och sedan 605110 Cleaning.</span><span class="sxs-lookup"><span data-stu-id="13a6e-126">Select Other operating expenses and then select 605110 Cleaning.</span></span>  
+5. <span data-ttu-id="13a6e-127">Välj ett alternativ i fältet Kostnadsbeteende.</span><span class="sxs-lookup"><span data-stu-id="13a6e-127">In the Cost behavior field, select an option.</span></span>
+    * <span data-ttu-id="13a6e-128">Välj Fast kostnad.</span><span class="sxs-lookup"><span data-stu-id="13a6e-128">Select Fixed cost.</span></span>  
+6. <span data-ttu-id="13a6e-129">Ange eller välj ett värde i fältet Allokeringsunderlag.</span><span class="sxs-lookup"><span data-stu-id="13a6e-129">In the Allocation base field, enter or select a value.</span></span>
+7. <span data-ttu-id="13a6e-130">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="13a6e-130">Click New.</span></span>
+8. <span data-ttu-id="13a6e-131">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="13a6e-131">In the list, mark the selected row.</span></span>
+9. <span data-ttu-id="13a6e-132">Ange eller välj ett värde i fältet Dimensionshierarkinod för kostnadsobjekt.</span><span class="sxs-lookup"><span data-stu-id="13a6e-132">In the Cost object dimension hierarchy node field, enter or select a value.</span></span>
+    * <span data-ttu-id="13a6e-133">Expandera hela hierarkin för att välja 094.</span><span class="sxs-lookup"><span data-stu-id="13a6e-133">Expand the hierarchy to select 094.</span></span>  
+10. <span data-ttu-id="13a6e-134">Ange eller välj ett värde i fältet Dimensionshierarkinod för kostnadselement.</span><span class="sxs-lookup"><span data-stu-id="13a6e-134">In the Cost element dimension hierarchy node field, enter or select a value.</span></span>
+    * <span data-ttu-id="13a6e-135">Välj Övriga driftkostnader och sedan 605150 Rent.</span><span class="sxs-lookup"><span data-stu-id="13a6e-135">Select Other operating expenses and then select 605150 Rent.</span></span>  
+11. <span data-ttu-id="13a6e-136">Välj ett alternativ i fältet Kostnadsbeteende.</span><span class="sxs-lookup"><span data-stu-id="13a6e-136">In the Cost behavior field, select an option.</span></span>
+    * <span data-ttu-id="13a6e-137">Välj Fast kostnad.</span><span class="sxs-lookup"><span data-stu-id="13a6e-137">Select Fixed cost.</span></span>  
+12. <span data-ttu-id="13a6e-138">Ange eller välj ett värde i fältet Allokeringsunderlag.</span><span class="sxs-lookup"><span data-stu-id="13a6e-138">In the Allocation base field, enter or select a value.</span></span>
+13. <span data-ttu-id="13a6e-139">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="13a6e-139">Click Save.</span></span>
 
-## <a name="assign-rules-to-a-cost-control-unit"></a>Tilldela regler till en kostnadsstyrenhet
-1. Klicka på Policytilldelningar för kostnadsstyrenhet.
-2. Klicka på Ny.
-3. Markera vald rad i listan.
-4. Ange ett datum i fältet Gäller från redovisningsdatum.
-    * Välj den 1 september som giltigt räkenskapsår.  
-5. Ange eller välj ett värde i fältet Kostnadsstyrenhet.
-6. Klicka på Spara.
+## <a name="assign-rules-to-a-cost-control-unit"></a><span data-ttu-id="13a6e-140">Tilldela regler till en kostnadsstyrenhet</span><span class="sxs-lookup"><span data-stu-id="13a6e-140">Assign rules to a cost control unit</span></span>
+1. <span data-ttu-id="13a6e-141">Klicka på Policytilldelningar för kostnadsstyrenhet.</span><span class="sxs-lookup"><span data-stu-id="13a6e-141">Click Policy assignments for cost control unit.</span></span>
+2. <span data-ttu-id="13a6e-142">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="13a6e-142">Click New.</span></span>
+3. <span data-ttu-id="13a6e-143">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="13a6e-143">In the list, mark the selected row.</span></span>
+4. <span data-ttu-id="13a6e-144">Ange ett datum i fältet Gäller från redovisningsdatum.</span><span class="sxs-lookup"><span data-stu-id="13a6e-144">In the Valid from accounting date field, enter a date.</span></span>
+    * <span data-ttu-id="13a6e-145">Välj den 1 september som giltigt räkenskapsår.</span><span class="sxs-lookup"><span data-stu-id="13a6e-145">Select September 1 in the valid fiscal year.</span></span>  
+5. <span data-ttu-id="13a6e-146">Ange eller välj ett värde i fältet Kostnadsstyrenhet.</span><span class="sxs-lookup"><span data-stu-id="13a6e-146">In the Cost control unit field, enter or select a value.</span></span>
+6. <span data-ttu-id="13a6e-147">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="13a6e-147">Click Save.</span></span>
 
 

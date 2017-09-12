@@ -16,63 +16,63 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 6250fb309417c938d829e08b73343ece9de7b1a1
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: b9897b1184e8159b20a45d4cedbba56baef31a3c
 ms.contentlocale: sv-se
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="set-up-a-procurement-category-hierarchy"></a>Ställ in en anskaffningskategorihierarki
+# <a name="set-up-a-procurement-category-hierarchy"></a><span data-ttu-id="dc911-103">Ställ in en anskaffningskategorihierarki</span><span class="sxs-lookup"><span data-stu-id="dc911-103">Set up a procurement category hierarchy</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-I den här proceduren visas hur du skapar nya noder i en anskaffningskategorihierarki och hur du konfigurerar en anskaffningskategori som ska användas i en anskaffningsprocess. Dessa uppgifter utförs vanligtvis av en inköpschef. Innan du kan starta den här proceduren måste det finnas en kategorihierarki av typen anskaffning. Om du använder ett demonstrationsdataföretag kan du köra denna procedur i USMF-företaget.
+<span data-ttu-id="dc911-104">I den här proceduren visas hur du skapar nya noder i en anskaffningskategorihierarki och hur du konfigurerar en anskaffningskategori som ska användas i en anskaffningsprocess.</span><span class="sxs-lookup"><span data-stu-id="dc911-104">This procedure shows you how to create new nodes in a procurement category hierarchy and how to configure a procurement category to be used in a procurement process.</span></span> <span data-ttu-id="dc911-105">Dessa uppgifter utförs vanligtvis av en inköpschef.</span><span class="sxs-lookup"><span data-stu-id="dc911-105">These tasks would typically be carried out by a Purchasing manager.</span></span> <span data-ttu-id="dc911-106">Innan du kan starta den här proceduren måste det finnas en kategorihierarki av typen anskaffning.</span><span class="sxs-lookup"><span data-stu-id="dc911-106">Before you can start this procedure, there must be a category hierarchy of type Procurement.</span></span> <span data-ttu-id="dc911-107">Om du använder ett demonstrationsdataföretag kan du köra denna procedur i USMF-företaget.</span><span class="sxs-lookup"><span data-stu-id="dc911-107">If you're using a demo data company, you can run this procedure in the USMF company.</span></span>
 
 
-## <a name="add-a-new-procurement-category"></a>Lägg till en ny anskaffningskategori.
-1. Gå till Anskaffning och källa > >Anskaffningskategorier.
-2. Klicka på Redigera kategorihierarki.
-    * Den aktuella anskaffningskategorihierarkin visas till vänster på sidan. Du är på väg att ändra hierarkin.  
-3. Klicka på Ny kategorinod.
-    * Systemet väljer toppnoden som standard. Om du kör den här proceduren som en uppgiftsguide kan du klicka på fliken Lås upp och välja en annan överordnad nod att infoga den nya noden i. Lås uppgifthandboken igen och klicka på noden Ny kategori när det är klart.  
-4. Skriv ett värde i fältet Namn.
-5. Ange ett värde i fältet Beskrivning.
-6. Skriv ett värde i fältet Eget namn.
-    * Det egna namnet är valfritt. Detta visas i kategorisökningar tillsammans med kategorinamnet.  
-7. Klicka på Spara.
+## <a name="add-a-new-procurement-category"></a><span data-ttu-id="dc911-108">Lägg till en ny anskaffningskategori.</span><span class="sxs-lookup"><span data-stu-id="dc911-108">Add a new procurement category</span></span>
+1. <span data-ttu-id="dc911-109">Gå till Anskaffning och källa ></span><span class="sxs-lookup"><span data-stu-id="dc911-109">Go to Procurement and sourcing > ..</span></span> <span data-ttu-id="dc911-110">>Anskaffningskategorier.</span><span class="sxs-lookup"><span data-stu-id="dc911-110">> Procurement categories.</span></span>
+2. <span data-ttu-id="dc911-111">Klicka på Redigera kategorihierarki.</span><span class="sxs-lookup"><span data-stu-id="dc911-111">Click Edit category hierarchy.</span></span>
+    * <span data-ttu-id="dc911-112">Den aktuella anskaffningskategorihierarkin visas till vänster på sidan.</span><span class="sxs-lookup"><span data-stu-id="dc911-112">The current procurement category hierarchy is displayed in the left side of the page.</span></span> <span data-ttu-id="dc911-113">Du är på väg att ändra hierarkin.</span><span class="sxs-lookup"><span data-stu-id="dc911-113">You  are about to modify the hierarchy.</span></span>  
+3. <span data-ttu-id="dc911-114">Klicka på Ny kategorinod.</span><span class="sxs-lookup"><span data-stu-id="dc911-114">Click New category node.</span></span>
+    * <span data-ttu-id="dc911-115">Systemet väljer toppnoden som standard.</span><span class="sxs-lookup"><span data-stu-id="dc911-115">The system selects the top node by default.</span></span> <span data-ttu-id="dc911-116">Om du kör den här proceduren som en uppgiftsguide kan du klicka på fliken Lås upp och välja en annan överordnad nod att infoga den nya noden i.</span><span class="sxs-lookup"><span data-stu-id="dc911-116">If you are running this procedure as a task guide, you can click the Unlock button and select another parent node to insert your new node into.</span></span> <span data-ttu-id="dc911-117">Lås uppgifthandboken igen och klicka på noden Ny kategori när det är klart.</span><span class="sxs-lookup"><span data-stu-id="dc911-117">Once that is done, lock the task guide again and then click New category node.</span></span>  
+4. <span data-ttu-id="dc911-118">Skriv ett värde i fältet Namn.</span><span class="sxs-lookup"><span data-stu-id="dc911-118">In the Name field, type a value.</span></span>
+5. <span data-ttu-id="dc911-119">Ange ett värde i fältet Beskrivning.</span><span class="sxs-lookup"><span data-stu-id="dc911-119">In the Description field, type a value.</span></span>
+6. <span data-ttu-id="dc911-120">Skriv ett värde i fältet Eget namn.</span><span class="sxs-lookup"><span data-stu-id="dc911-120">In the Friendly name field, type a value.</span></span>
+    * <span data-ttu-id="dc911-121">Det egna namnet är valfritt.</span><span class="sxs-lookup"><span data-stu-id="dc911-121">The friendly name is optional.</span></span> <span data-ttu-id="dc911-122">Detta visas i kategorisökningar tillsammans med kategorinamnet.</span><span class="sxs-lookup"><span data-stu-id="dc911-122">It will be displayed in category lookups together with the category name.</span></span>  
+7. <span data-ttu-id="dc911-123">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="dc911-123">Click Save.</span></span>
 
-## <a name="add-products-to-your-new-procurement-category"></a>Lägg till produkter i den nya anskaffningskategorin
-1. Gå till Anskaffning och källa > >Anskaffningskategorier.
-    * Välj den nod som du precis lade till. Om du kör den här proceduren som en uppgiftsguide kanske du behöver låsa upp uppgiftsguiden för att välja noden.  
-2. Växla expansionen av avsnittet Produkter.
-3. Klicka på Lägg till i associerade produkter med anskaffningskategorin.
-4. Välj den produkt som du vill lägga till i anskaffningskategorin.
-5. Klicka på pilen för att välja produkten.
-6. Välj en annan produkt som du vill lägga till i anskaffningskategorin.
-7. Klicka på pilen för att välja produkten.
-8. Klicka på OK.
+## <a name="add-products-to-your-new-procurement-category"></a><span data-ttu-id="dc911-124">Lägg till produkter i den nya anskaffningskategorin</span><span class="sxs-lookup"><span data-stu-id="dc911-124">Add products to your new procurement category</span></span>
+1. <span data-ttu-id="dc911-125">Gå till Anskaffning och källa ></span><span class="sxs-lookup"><span data-stu-id="dc911-125">Go to Procurement and sourcing > ..</span></span> <span data-ttu-id="dc911-126">>Anskaffningskategorier.</span><span class="sxs-lookup"><span data-stu-id="dc911-126">> Procurement categories.</span></span>
+    * <span data-ttu-id="dc911-127">Välj den nod som du precis lade till.</span><span class="sxs-lookup"><span data-stu-id="dc911-127">Select the node you just added.</span></span> <span data-ttu-id="dc911-128">Om du kör den här proceduren som en uppgiftsguide kanske du behöver låsa upp uppgiftsguiden för att välja noden.</span><span class="sxs-lookup"><span data-stu-id="dc911-128">If you’re running this procedure as a task guide you might need to unlock the task guide to select the node.</span></span>  
+2. <span data-ttu-id="dc911-129">Växla expansionen av avsnittet Produkter.</span><span class="sxs-lookup"><span data-stu-id="dc911-129">Toggle the expansion of the Products section.</span></span>
+3. <span data-ttu-id="dc911-130">Klicka på Lägg till i associerade produkter med anskaffningskategorin.</span><span class="sxs-lookup"><span data-stu-id="dc911-130">Click Add to associate products with the procurement category.</span></span>
+4. <span data-ttu-id="dc911-131">Välj den produkt som du vill lägga till i anskaffningskategorin.</span><span class="sxs-lookup"><span data-stu-id="dc911-131">Select the product you want to add to the procurement category.</span></span>
+5. <span data-ttu-id="dc911-132">Klicka på pilen för att välja produkten.</span><span class="sxs-lookup"><span data-stu-id="dc911-132">Click the arrow to select the product.</span></span>
+6. <span data-ttu-id="dc911-133">Välj en annan produkt som du vill lägga till i anskaffningskategorin.</span><span class="sxs-lookup"><span data-stu-id="dc911-133">Select another product to add to the procurement category.</span></span>
+7. <span data-ttu-id="dc911-134">Klicka på pilen för att välja produkten.</span><span class="sxs-lookup"><span data-stu-id="dc911-134">Click the arrow to select the product.</span></span>
+8. <span data-ttu-id="dc911-135">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="dc911-135">Click OK.</span></span>
 
-## <a name="add-approved-and-preferred-vendors"></a>Lägg till godkända och prioriterade leverantörer
-1. Växla utökningen av avsnittet Leverantörer.
-2. Klicka på Lägg till.
-    * Du kan lägga till en leverantör i en anskaffningskategori och ange om en leverantör är prioriterad eller precis godkänd för kategorin. När du tar bort en leverantör från en kategori, tas historiska transaktioner med leverantör i kategorin inte bort.   
-3. Sök efter den leverantör som du vill lägga till i kategorin.
-4. Klicka på pilen för att välja leverantören.
-5. Klicka på OK.
-6. Välj den leverantörsrad som du vill ändra.
-7. Välj ett alternativ i fältet Leverantörsstatus.
-    * Inställningen av leverantörsurval i kategoripolicyregeln styr om prioriterade, godkända eller alla leverantörer är tillgängliga på inköpsrekvisitioner.   
+## <a name="add-approved-and-preferred-vendors"></a><span data-ttu-id="dc911-136">Lägg till godkända och prioriterade leverantörer</span><span class="sxs-lookup"><span data-stu-id="dc911-136">Add approved and preferred vendors</span></span>
+1. <span data-ttu-id="dc911-137">Växla utökningen av avsnittet Leverantörer.</span><span class="sxs-lookup"><span data-stu-id="dc911-137">Toggle the expansion of the Vendors section.</span></span>
+2. <span data-ttu-id="dc911-138">Klicka på Lägg till.</span><span class="sxs-lookup"><span data-stu-id="dc911-138">Click Add.</span></span>
+    * <span data-ttu-id="dc911-139">Du kan lägga till en leverantör i en anskaffningskategori och ange om en leverantör är prioriterad eller precis godkänd för kategorin.</span><span class="sxs-lookup"><span data-stu-id="dc911-139">You can add a vendor to a procurement category and specify whether a vendor is preferred or just approved for the category.</span></span> <span data-ttu-id="dc911-140">När du tar bort en leverantör från en kategori, tas historiska transaktioner med leverantör i kategorin inte bort.</span><span class="sxs-lookup"><span data-stu-id="dc911-140">When you delete a vendor from a category, the historical transactions with the vendor in the category are not deleted.</span></span>   
+3. <span data-ttu-id="dc911-141">Sök efter den leverantör som du vill lägga till i kategorin.</span><span class="sxs-lookup"><span data-stu-id="dc911-141">Find the vendor you want to add to the category.</span></span>
+4. <span data-ttu-id="dc911-142">Klicka på pilen för att välja leverantören.</span><span class="sxs-lookup"><span data-stu-id="dc911-142">Click the arrow to select the vendor.</span></span>
+5. <span data-ttu-id="dc911-143">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="dc911-143">Click OK.</span></span>
+6. <span data-ttu-id="dc911-144">Välj den leverantörsrad som du vill ändra.</span><span class="sxs-lookup"><span data-stu-id="dc911-144">Select the vendor row that you want to modify.</span></span>
+7. <span data-ttu-id="dc911-145">Välj ett alternativ i fältet Leverantörsstatus.</span><span class="sxs-lookup"><span data-stu-id="dc911-145">In the Vendor status field, select an option.</span></span>
+    * <span data-ttu-id="dc911-146">Inställningen av leverantörsurval i kategoripolicyregeln styr om prioriterade, godkända eller alla leverantörer är tillgängliga på inköpsrekvisitioner.</span><span class="sxs-lookup"><span data-stu-id="dc911-146">The vendor selection setting in the Category policy rule governs whether preferred, approved, or all vendors are available on purchase requisitions.</span></span>   
 
-## <a name="add-additional-information-to-the-category"></a>Lägg till ytterligare information till kategorin
-1. Växla expansionen av avsnittet Kriteriegrupper för leverantörsutvärdering.
-    * På den här fliken kan du definiera vilka kriterier som leverantörerna i anskaffningskategorin ska bedömas mot. Om du vill göra det måste du först klicka på Lägg till och sedan välja en leverantörsutvärderingsgrupp som innehåller de kriterier du vill använda.  
-2. Växla utökningen av avsnittet Enkäter.
-    * På den här fliken kan du lägga till enkäter som ska visas på rekvisitionen så länge som du har ställt in aktivitetstypen till ”Rekvisition”. Beställaren måste sedan fylla i ett frågeformulär innan han/hon skickar en rekvisition för den specifika produkten eller produkterna i anskaffningskategorin.  
-3. Växla expansionen av avsnittet Artikelmomsgrupper.
-4. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Artikelmomsgrupp.
-5. Välj en momsgrupp.
-6. Växla utökningen av avsnittet Kategorisida.
-    * Kategorisidor skapas på sidan Kategorihierarki. De innehåller information om anskaffningskategorin, till exempel information om typen av produkter i en kategori, bilder av produkter i en kategori eller meddelanden som till exempel vilka rabatter som är tillgängliga i en kategori. Informationen på en kategorisida visas på inköpsrekvisitioner.  
-7. Stäng sidan.
+## <a name="add-additional-information-to-the-category"></a><span data-ttu-id="dc911-147">Lägg till ytterligare information till kategorin</span><span class="sxs-lookup"><span data-stu-id="dc911-147">Add additional information to the category</span></span>
+1. <span data-ttu-id="dc911-148">Växla expansionen av avsnittet Kriteriegrupper för leverantörsutvärdering.</span><span class="sxs-lookup"><span data-stu-id="dc911-148">Toggle the expansion of the Vendor evaluation criterion groups section.</span></span>
+    * <span data-ttu-id="dc911-149">På den här fliken kan du definiera vilka kriterier som leverantörerna i anskaffningskategorin ska bedömas mot.</span><span class="sxs-lookup"><span data-stu-id="dc911-149">This tab allows you to define which criteria the vendors in the procurement category should be rated against.</span></span> <span data-ttu-id="dc911-150">Om du vill göra det måste du först klicka på Lägg till och sedan välja en leverantörsutvärderingsgrupp som innehåller de kriterier du vill använda.</span><span class="sxs-lookup"><span data-stu-id="dc911-150">To do this you would click Add and then select a vendor evaluation group that contains the criteria you want.</span></span>  
+2. <span data-ttu-id="dc911-151">Växla utökningen av avsnittet Enkäter.</span><span class="sxs-lookup"><span data-stu-id="dc911-151">Toggle the expansion of the Questionnaires section.</span></span>
+    * <span data-ttu-id="dc911-152">På den här fliken kan du lägga till enkäter som ska visas på rekvisitionen så länge som du har ställt in aktivitetstypen till ”Rekvisition”.</span><span class="sxs-lookup"><span data-stu-id="dc911-152">This tab allows you to add questionnaires that will appear on the requisition, as long as you set the Activity type to "Requisition".</span></span> <span data-ttu-id="dc911-153">Beställaren måste sedan fylla i ett frågeformulär innan han/hon skickar en rekvisition för den specifika produkten eller produkterna i anskaffningskategorin.</span><span class="sxs-lookup"><span data-stu-id="dc911-153">The requester then has to fill out a questionnaire before they submit a requisition for the specific product or products in the procurement category.</span></span>  
+3. <span data-ttu-id="dc911-154">Växla expansionen av avsnittet Artikelmomsgrupper.</span><span class="sxs-lookup"><span data-stu-id="dc911-154">Toggle the expansion of the Item sales tax groups section.</span></span>
+4. <span data-ttu-id="dc911-155">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Artikelmomsgrupp.</span><span class="sxs-lookup"><span data-stu-id="dc911-155">In the Item sales tax group: field, click the drop-down button to open the lookup.</span></span>
+5. <span data-ttu-id="dc911-156">Välj en momsgrupp.</span><span class="sxs-lookup"><span data-stu-id="dc911-156">Select a sales tax group.</span></span>
+6. <span data-ttu-id="dc911-157">Växla utökningen av avsnittet Kategorisida.</span><span class="sxs-lookup"><span data-stu-id="dc911-157">Toggle the expansion of the Category page section.</span></span>
+    * <span data-ttu-id="dc911-158">Kategorisidor skapas på sidan Kategorihierarki.</span><span class="sxs-lookup"><span data-stu-id="dc911-158">Category pages are created in the Category hierarchy page.</span></span> <span data-ttu-id="dc911-159">De innehåller information om anskaffningskategorin, till exempel information om typen av produkter i en kategori, bilder av produkter i en kategori eller meddelanden som till exempel vilka rabatter som är tillgängliga i en kategori.</span><span class="sxs-lookup"><span data-stu-id="dc911-159">They contain information about the procurement category such as information about the type of products in a category, images of products in a category, or announcements such as the discounts that are available in a category.</span></span> <span data-ttu-id="dc911-160">Informationen på en kategorisida visas på inköpsrekvisitioner.</span><span class="sxs-lookup"><span data-stu-id="dc911-160">The information in a category page is displayed on purchase requisitions.</span></span>  
+7. <span data-ttu-id="dc911-161">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="dc911-161">Close the page.</span></span>
 
 

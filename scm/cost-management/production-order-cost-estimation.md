@@ -17,52 +17,52 @@ ms.assetid: b4625d10-c852-4fda-b718-79df458de0d4
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: mguada
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 9ae0bbb641d7517d33ad087faec231cb0bda3f78
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 172bb55358c20ba80b1c32b05f1ae8e6aff8901f
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="production-order-cost-estimation"></a>Kostnadsuppskattning av produktionsorder
+# <a name="production-order-cost-estimation"></a><span data-ttu-id="cc396-104">Kostnadsuppskattning av produktionsorder</span><span class="sxs-lookup"><span data-stu-id="cc396-104">Production order cost estimation</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Det här avsnittet innehåller information om produktionskostnadsuppskattning. Produktionskostnadsuppskattning ger dig information om material- och kapacitetsförbrukningskostnader vid produktion av en artikel i den kvantitet som anges på den planerade produktionsordern. 
+<span data-ttu-id="cc396-105">Det här avsnittet innehåller information om produktionskostnadsuppskattning.</span><span class="sxs-lookup"><span data-stu-id="cc396-105">This article provides information about production cost estimation.</span></span> <span data-ttu-id="cc396-106">Produktionskostnadsuppskattning ger dig information om material- och kapacitetsförbrukningskostnader vid produktion av en artikel i den kvantitet som anges på den planerade produktionsordern.</span><span class="sxs-lookup"><span data-stu-id="cc396-106">Production cost estimation provides the projected material and capacity consumption costs of producing an item in the planned production order quantity.</span></span> 
 
-När du har skapat en produktionsorder måste du beräkna produktionskostnader. Syftet är att uppskatta artikel- och flödesförbrukningen under produktionsprocessen eftersom dessa uppskattningar används för de efterföljande planerings- och produktionsprocesserna.
+<span data-ttu-id="cc396-107">När du har skapat en produktionsorder måste du beräkna produktionskostnader.</span><span class="sxs-lookup"><span data-stu-id="cc396-107">After you create a production order, you must estimate production costs.</span></span> <span data-ttu-id="cc396-108">Syftet är att uppskatta artikel- och flödesförbrukningen under produktionsprocessen eftersom dessa uppskattningar används för de efterföljande planerings- och produktionsprocesserna.</span><span class="sxs-lookup"><span data-stu-id="cc396-108">The purpose is to estimate item and route consumption for the production process, because these estimates are used as the basis for subsequent scheduling and production processes.</span></span>
 
-## <a name="production-cost-estimation"></a>Uppskattning av produktionskostnad
-Uppskattning av produktionskostnader baseras på följande information:
+## <a name="production-cost-estimation"></a><span data-ttu-id="cc396-109">Uppskattning av produktionskostnad</span><span class="sxs-lookup"><span data-stu-id="cc396-109">Production cost estimation</span></span>
+<span data-ttu-id="cc396-110">Uppskattning av produktionskostnader baseras på följande information:</span><span class="sxs-lookup"><span data-stu-id="cc396-110">Estimates of production costs are based on the following information:</span></span>
 
--   Kvantitet på produktionsordern
--   Komponenterna i produktionsstrukturlistorna (BOMs)
--   Flödesoperationerna i produktionsflödet
--   Indirekta kostnader som gäller för komponenter och operationer
--   Aktiva kostnadsdata vid beräkningsdatumet
+-   <span data-ttu-id="cc396-111">Kvantitet på produktionsordern</span><span class="sxs-lookup"><span data-stu-id="cc396-111">The quantity on the production order</span></span>
+-   <span data-ttu-id="cc396-112">Komponenterna i produktionsstrukturlistorna (BOMs)</span><span class="sxs-lookup"><span data-stu-id="cc396-112">The components on the production bills of materials (BOMs)</span></span>
+-   <span data-ttu-id="cc396-113">Flödesoperationerna i produktionsflödet</span><span class="sxs-lookup"><span data-stu-id="cc396-113">The routing operations in the production route</span></span>
+-   <span data-ttu-id="cc396-114">Indirekta kostnader som gäller för komponenter och operationer</span><span class="sxs-lookup"><span data-stu-id="cc396-114">The indirect costs that apply to the components and operations</span></span>
+-   <span data-ttu-id="cc396-115">Aktiva kostnadsdata vid beräkningsdatumet</span><span class="sxs-lookup"><span data-stu-id="cc396-115">The active cost data as of the calculation date</span></span>
 
-Om det finns en fiktiv radartikel i produktionsstrukturlistan återspeglar beräkningarna den fiktiva artikelns komponenter och flödesoperationer. Du kan använda uppskattningsuppgiften när du beräknar om uppskattade kostnader för att återspegla uppdaterad information. Den uppdaterade informationen kan till exempel vara ändringar i tillverkningsorderkvantiteten, komponenterna i produktionsstrukturlistan, flödesoperationerna i produktionsflödet, de indirekta kostnaderna som gäller för de här komponenterna och operationerna eller aktiva kostnadsdata på omräkningsdatumet. Beräkningarna av uppskattad kostnad föreslår också ett försäljningspris för produktionsartikeln baserat på kostnader plus tillägg. Beräkningarna av uppskattad kostnad kan också gälla för referensorder som återspeglar andra tillverkningsorder som är länkade till tillverkningsordern.
+<span data-ttu-id="cc396-116">Om det finns en fiktiv radartikel i produktionsstrukturlistan återspeglar beräkningarna den fiktiva artikelns komponenter och flödesoperationer.</span><span class="sxs-lookup"><span data-stu-id="cc396-116">If there is a phantom line item on the production BOMs, the calculations reflect the phantom’s components and route operations.</span></span> <span data-ttu-id="cc396-117">Du kan använda uppskattningsuppgiften när du beräknar om uppskattade kostnader för att återspegla uppdaterad information.</span><span class="sxs-lookup"><span data-stu-id="cc396-117">You can use the estimation task to recalculate estimated costs so that they reflect updated information.</span></span> <span data-ttu-id="cc396-118">Den uppdaterade informationen kan till exempel vara ändringar i tillverkningsorderkvantiteten, komponenterna i produktionsstrukturlistan, flödesoperationerna i produktionsflödet, de indirekta kostnaderna som gäller för de här komponenterna och operationerna eller aktiva kostnadsdata på omräkningsdatumet.</span><span class="sxs-lookup"><span data-stu-id="cc396-118">For example, the updated information might be changes to the quantity on the production order, the components on the production BOMs, the routing operations in the production route, the indirect costs that apply to these components and operations, or the active cost data as of the recalculation date.</span></span> <span data-ttu-id="cc396-119">Beräkningarna av uppskattad kostnad föreslår också ett försäljningspris för produktionsartikeln baserat på kostnader plus tillägg.</span><span class="sxs-lookup"><span data-stu-id="cc396-119">The calculations of estimated cost also suggest a sales price for the production item, based on a cost-plus-markup approach.</span></span> <span data-ttu-id="cc396-120">Beräkningarna av uppskattad kostnad kan också gälla för referensorder som återspeglar andra tillverkningsorder som är länkade till tillverkningsordern.</span><span class="sxs-lookup"><span data-stu-id="cc396-120">The calculations of estimated cost can optionally apply to reference orders that reflect other production orders that are linked to the production order.</span></span>
 
-## <a name="view-the-estimated-costs"></a>Visa uppskattade kostnader
-När du har kört en uppskattning kan du visa resultaten på sidan **Prisberäkning**. Vid uppskattningen beräknas följande värden:
+## <a name="view-the-estimated-costs"></a><span data-ttu-id="cc396-121">Visa uppskattade kostnader</span><span class="sxs-lookup"><span data-stu-id="cc396-121">View the estimated costs</span></span>
+<span data-ttu-id="cc396-122">När du har kört en uppskattning kan du visa resultaten på sidan **Prisberäkning**.</span><span class="sxs-lookup"><span data-stu-id="cc396-122">After you run estimation, you can view the results on the **Price calculation** page.</span></span> <span data-ttu-id="cc396-123">Vid uppskattningen beräknas följande värden:</span><span class="sxs-lookup"><span data-stu-id="cc396-123">The estimation calculates the following values:</span></span>
 
--   **Produktionskostnad** – Produktionskostnaden visas på den översta raden i uppskattningen. Här visas den fullständiga kostnaden för tillverkningsordern och det totala försäljningspriset för produktionen. Detta är summan av alla kostnadsrader i uppskattningen.
--   **Flödes- eller resurskostnader** – Flödes- eller resurskostnader är kostnader för produktionsoperationerna. De inkluderar kostnaden för element såsom inställningstid, körtid och omkostnader.
--   **Materialkostnader** – Materialkostnader är de kostnader och priser för strukturlistekomponenter som krävs för att tillverka artikeln. De här kostnaderna har tidigare fastställts och registrerats i systemet.
+-   <span data-ttu-id="cc396-124">**Produktionskostnad** – Produktionskostnaden visas på den översta raden i uppskattningen.</span><span class="sxs-lookup"><span data-stu-id="cc396-124">**Production cost** – The production cost is the top line of the estimate.</span></span> <span data-ttu-id="cc396-125">Här visas den fullständiga kostnaden för tillverkningsordern och det totala försäljningspriset för produktionen.</span><span class="sxs-lookup"><span data-stu-id="cc396-125">It shows the complete cost of running the production order and the total sales price for the production.</span></span> <span data-ttu-id="cc396-126">Detta är summan av alla kostnadsrader i uppskattningen.</span><span class="sxs-lookup"><span data-stu-id="cc396-126">It's the sum of all the cost lines on the estimate.</span></span>
+-   <span data-ttu-id="cc396-127">**Flödes- eller resurskostnader** – Flödes- eller resurskostnader är kostnader för produktionsoperationerna.</span><span class="sxs-lookup"><span data-stu-id="cc396-127">**Route or resource costs** – Route or resource costs are the costs for the production operations.</span></span> <span data-ttu-id="cc396-128">De inkluderar kostnaden för element såsom inställningstid, körtid och omkostnader.</span><span class="sxs-lookup"><span data-stu-id="cc396-128">They include the cost of elements such as setup time, run time, and overhead.</span></span>
+-   <span data-ttu-id="cc396-129">**Materialkostnader** – Materialkostnader är de kostnader och priser för strukturlistekomponenter som krävs för att tillverka artikeln.</span><span class="sxs-lookup"><span data-stu-id="cc396-129">**Material costs** – Material costs are the costs and prices of the BOM components that are required in order to produce the item.</span></span> <span data-ttu-id="cc396-130">De här kostnaderna har tidigare fastställts och registrerats i systemet.</span><span class="sxs-lookup"><span data-stu-id="cc396-130">These costs have previously been established and entered into the system.</span></span>
 
-## <a name="other-uses-of-cost-estimation"></a>Andra användningsområden för kostnadsuppskattning
-En kostnadsuppskattning ger även följande information:
+## <a name="other-uses-of-cost-estimation"></a><span data-ttu-id="cc396-131">Andra användningsområden för kostnadsuppskattning</span><span class="sxs-lookup"><span data-stu-id="cc396-131">Other uses of cost estimation</span></span>
+<span data-ttu-id="cc396-132">En kostnadsuppskattning ger även följande information:</span><span class="sxs-lookup"><span data-stu-id="cc396-132">A cost estimate also provides the following information:</span></span>
 
--   Välgrundande prisofferter
--   Uppskattning av orderns lönsamhet
--   Uppskattning av råmaterialanvändning
--   Jämförelser av kostnadsinformation från tidigare produktioner
--   Budget- och prognosinformation
--   Uppskattning av vilken produktionsstorlek som krävs för att upprätthålla en viss kostnad
+-   <span data-ttu-id="cc396-133">Välgrundande prisofferter</span><span class="sxs-lookup"><span data-stu-id="cc396-133">Meaningful price quotations</span></span>
+-   <span data-ttu-id="cc396-134">Uppskattning av orderns lönsamhet</span><span class="sxs-lookup"><span data-stu-id="cc396-134">Estimates of the profitability of the order</span></span>
+-   <span data-ttu-id="cc396-135">Uppskattning av råmaterialanvändning</span><span class="sxs-lookup"><span data-stu-id="cc396-135">Estimates of raw material usage</span></span>
+-   <span data-ttu-id="cc396-136">Jämförelser av kostnadsinformation från tidigare produktioner</span><span class="sxs-lookup"><span data-stu-id="cc396-136">Comparisons of cost information from previous productions</span></span>
+-   <span data-ttu-id="cc396-137">Budget- och prognosinformation</span><span class="sxs-lookup"><span data-stu-id="cc396-137">Budget and forecasting information</span></span>
+-   <span data-ttu-id="cc396-138">Uppskattning av vilken produktionsstorlek som krävs för att upprätthålla en viss kostnad</span><span class="sxs-lookup"><span data-stu-id="cc396-138">Estimates of the production size that is required in order to maintain a particular cost</span></span>
 
 
 

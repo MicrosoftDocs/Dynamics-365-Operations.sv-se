@@ -16,131 +16,131 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 6b9b6a59d5e350502c618e11924c46e4ad8229ca
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 02787c96077e8bae54d8073e8d0770613ea2b49a
 ms.contentlocale: sv-se
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="design-a-report-to-use-financial-dimensions-as-a-data-source-for-electronic-reporting-er"></a>Utforma en rapport som använder ekonomiska dimensioner som datakälla för elektronisk rapportering (ER)
+# <a name="design-a-report-to-use-financial-dimensions-as-a-data-source-for-electronic-reporting-er"></a><span data-ttu-id="08f11-103">Utforma en rapport som använder ekonomiska dimensioner som datakälla för elektronisk rapportering (ER)</span><span class="sxs-lookup"><span data-stu-id="08f11-103">Design a report to use financial dimensions as a data source for electronic reporting (ER)</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-I följande steg beskrivs hur en användare som tilldelats en roll som systemadministratör eller utvecklare för elektronisk rapportering kan konfigurera en modell för elektronisk rapportering (ER) för att använda ekonomiska dimensioner som datakällor för ER-rapporter. Dessa steg kan utföras på valfritt företag.
+<span data-ttu-id="08f11-104">I följande steg beskrivs hur en användare som tilldelats en roll som systemadministratör eller utvecklare för elektronisk rapportering kan konfigurera en modell för elektronisk rapportering (ER) för att använda ekonomiska dimensioner som datakällor för ER-rapporter.</span><span class="sxs-lookup"><span data-stu-id="08f11-104">The following steps explain how a user assigned to the system administrator or electronic reporting developer role can configure an Electronic reporting (ER) model to use financial dimensions as a data source for ER reports.</span></span> <span data-ttu-id="08f11-105">Dessa steg kan utföras på valfritt företag.</span><span class="sxs-lookup"><span data-stu-id="08f11-105">These steps can be performed in any company.</span></span>
 
-För att slutföra dessa steg måste du först avsluta stegen i proceduren ”ER Use financial dimensions as a data source (Part 2: Model mapping”.
+<span data-ttu-id="08f11-106">För att slutföra dessa steg måste du först avsluta stegen i proceduren ”ER Use financial dimensions as a data source (Part 2: Model mapping”.</span><span class="sxs-lookup"><span data-stu-id="08f11-106">To complete these steps, you must first complete the steps in the “ER Use financial dimensions as a data source (Part 2: Model mapping)” procedure.</span></span>
 
 
-## <a name="design-a-report-to-present-financial-dimensions"></a>Designa en rapport för att presentera ekonomiska dimensioner
-1. Gå till Organisationsadministration > Elektronisk rapportering > Konfigurationer.
-2. Välj "Financial dimensions sample model" i trädet.
-3. Klicka på Skapa konfiguration om du vill öppna dialogrutan.
-4. Ange "Format based on data model Financial dimensions sample model" i fältet New.
-    * Använd den modell som skapades i förväg som datakälla för den nya rapporten.  
-5. Ange "Ledger journal report" i namnfältet.
-6. Välj Entry i fältet Data model definition.
-7. Klicka på Skapa konfiguration.
-8. Klicka på Designer.
-9. Klicka på Lägg till rot för att öppna dialogrutan.
-10. Välj "XML\Element" i trädet.
-11. Ange "Root" i namnfältet.
-12. Klicka på OK.
-13. Klicka på Lägg till för att öppna dialogrutan.
-14. Välj "XML\Attribut" i trädet.
-15. Skriv "Företag" i fältet Namn.
-16. Klicka på OK.
-17. Klicka på Lägg till för att öppna dialogrutan.
-18. Välj "XML\Element" i trädet.
-19. Ange "Journal" i namnfältet.
-20. Klicka på OK.
-21. I trädet väljer du "Root: XML Element\Journal: XML Element".
-22. Klicka på Lägg till för att öppna dialogrutan.
-23. Välj "XML\Attribut" i trädet.
-24. Ange "Batch" i namnfältet.
-25. Klicka på OK.
-26. Klicka på Lägg till för att öppna dialogrutan.
-27. Välj "XML\Element" i trädet.
-28. Ange "Transaction" i namnfältet.
-29. Klicka på OK.
-30. I trädet väljer du "Root: XML Element\Journal: XML Element\Transaction: XML Element".
-31. Klicka på Lägg till för att öppna dialogrutan.
-32. Välj "XML\Attribut" i trädet.
-33. Ange "Voucher" i namnfältet.
-34. Klicka på OK.
-35. Klicka på Add Attribute.
-36. Ange "Date" i namnfältet.
-37. Klicka på OK.
-38. Klicka på Add Attribute.
-39. Skriv "Valuta" i fältet Namn.
-40. Klicka på OK.
-41. Klicka på Add Attribute.
-42. Ange "Dt" i namnfältet.
-43. Klicka på OK.
-44. Klicka på Add Attribute.
-45. Ange "Ct" i namnfältet.
-46. Klicka på OK.
-47. Klicka på Lägg till för att öppna dialogrutan.
-48. Välj "XML\Element" i trädet.
-49. Ange "Dimensions" i namnfältet.
-50. Klicka på OK.
-51. I trädet väljer du "Root: XML Element\Journal: XML Element\Transaction: XML Element\Dimensions: XML Element".
-52. Klicka på Lägg till för att öppna dialogrutan.
-53. Välj "XML\Attribut" i trädet.
-54. Ange "Code" i namnfältet.
-55. Klicka på OK.
-56. Klicka på Add Attribute.
-57. Ange "Value" i namnfältet.
-58. Klicka på OK.
-59. Klicka på Add Attribute.
-60. Ange "Desc" i namnfältet.
-61. Klicka på OK.
+## <a name="design-a-report-to-present-financial-dimensions"></a><span data-ttu-id="08f11-107">Designa en rapport för att presentera ekonomiska dimensioner</span><span class="sxs-lookup"><span data-stu-id="08f11-107">Design a report to present financial dimensions</span></span>
+1. <span data-ttu-id="08f11-108">Gå till Organisationsadministration > Elektronisk rapportering > Konfigurationer.</span><span class="sxs-lookup"><span data-stu-id="08f11-108">Go to Organization administration > Electronic reporting > Configurations.</span></span>
+2. <span data-ttu-id="08f11-109">Välj "Financial dimensions sample model" i trädet.</span><span class="sxs-lookup"><span data-stu-id="08f11-109">In the tree, select 'Financial dimensions sample model'.</span></span>
+3. <span data-ttu-id="08f11-110">Klicka på Skapa konfiguration om du vill öppna dialogrutan.</span><span class="sxs-lookup"><span data-stu-id="08f11-110">Click Create configuration to open the drop dialog.</span></span>
+4. <span data-ttu-id="08f11-111">Ange "Format based on data model Financial dimensions sample model" i fältet New.</span><span class="sxs-lookup"><span data-stu-id="08f11-111">In the New field, enter 'Format based on data model Financial dimensions sample model'.</span></span>
+    * <span data-ttu-id="08f11-112">Använd den modell som skapades i förväg som datakälla för den nya rapporten.</span><span class="sxs-lookup"><span data-stu-id="08f11-112">Use the model that was created in advance as the data source for your new report.</span></span>  
+5. <span data-ttu-id="08f11-113">Ange "Ledger journal report" i namnfältet.</span><span class="sxs-lookup"><span data-stu-id="08f11-113">In the Name field, type 'Ledger journal report'.</span></span>
+6. <span data-ttu-id="08f11-114">Välj Entry i fältet Data model definition.</span><span class="sxs-lookup"><span data-stu-id="08f11-114">In the Data model definition field, select Entry.</span></span>
+7. <span data-ttu-id="08f11-115">Klicka på Skapa konfiguration.</span><span class="sxs-lookup"><span data-stu-id="08f11-115">Click Create configuration.</span></span>
+8. <span data-ttu-id="08f11-116">Klicka på Designer.</span><span class="sxs-lookup"><span data-stu-id="08f11-116">Click Designer.</span></span>
+9. <span data-ttu-id="08f11-117">Klicka på Lägg till rot för att öppna dialogrutan.</span><span class="sxs-lookup"><span data-stu-id="08f11-117">Click Add root to open the drop dialog.</span></span>
+10. <span data-ttu-id="08f11-118">Välj "XML\Element" i trädet.</span><span class="sxs-lookup"><span data-stu-id="08f11-118">In the tree, select 'XML\Element'.</span></span>
+11. <span data-ttu-id="08f11-119">Ange "Root" i namnfältet.</span><span class="sxs-lookup"><span data-stu-id="08f11-119">In the Name field, type 'Root'.</span></span>
+12. <span data-ttu-id="08f11-120">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="08f11-120">Click OK.</span></span>
+13. <span data-ttu-id="08f11-121">Klicka på Lägg till för att öppna dialogrutan.</span><span class="sxs-lookup"><span data-stu-id="08f11-121">Click Add to open the drop dialog.</span></span>
+14. <span data-ttu-id="08f11-122">Välj "XML\Attribut" i trädet.</span><span class="sxs-lookup"><span data-stu-id="08f11-122">In the tree, select 'XML\Attribute'.</span></span>
+15. <span data-ttu-id="08f11-123">Skriv "Företag" i fältet Namn.</span><span class="sxs-lookup"><span data-stu-id="08f11-123">In the Name field, type 'Company'.</span></span>
+16. <span data-ttu-id="08f11-124">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="08f11-124">Click OK.</span></span>
+17. <span data-ttu-id="08f11-125">Klicka på Lägg till för att öppna dialogrutan.</span><span class="sxs-lookup"><span data-stu-id="08f11-125">Click Add to open the drop dialog.</span></span>
+18. <span data-ttu-id="08f11-126">Välj "XML\Element" i trädet.</span><span class="sxs-lookup"><span data-stu-id="08f11-126">In the tree, select 'XML\Element'.</span></span>
+19. <span data-ttu-id="08f11-127">Ange "Journal" i namnfältet.</span><span class="sxs-lookup"><span data-stu-id="08f11-127">In the Name field, type 'Journal'.</span></span>
+20. <span data-ttu-id="08f11-128">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="08f11-128">Click OK.</span></span>
+21. <span data-ttu-id="08f11-129">I trädet väljer du "Root: XML Element\Journal: XML Element".</span><span class="sxs-lookup"><span data-stu-id="08f11-129">In the tree, select 'Root: XML Element\Journal: XML Element'.</span></span>
+22. <span data-ttu-id="08f11-130">Klicka på Lägg till för att öppna dialogrutan.</span><span class="sxs-lookup"><span data-stu-id="08f11-130">Click Add to open the drop dialog.</span></span>
+23. <span data-ttu-id="08f11-131">Välj "XML\Attribut" i trädet.</span><span class="sxs-lookup"><span data-stu-id="08f11-131">In the tree, select 'XML\Attribute'.</span></span>
+24. <span data-ttu-id="08f11-132">Ange "Batch" i namnfältet.</span><span class="sxs-lookup"><span data-stu-id="08f11-132">In the Name field, type 'Batch'.</span></span>
+25. <span data-ttu-id="08f11-133">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="08f11-133">Click OK.</span></span>
+26. <span data-ttu-id="08f11-134">Klicka på Lägg till för att öppna dialogrutan.</span><span class="sxs-lookup"><span data-stu-id="08f11-134">Click Add to open the drop dialog.</span></span>
+27. <span data-ttu-id="08f11-135">Välj "XML\Element" i trädet.</span><span class="sxs-lookup"><span data-stu-id="08f11-135">In the tree, select 'XML\Element'.</span></span>
+28. <span data-ttu-id="08f11-136">Ange "Transaction" i namnfältet.</span><span class="sxs-lookup"><span data-stu-id="08f11-136">In the Name field, type 'Transaction'.</span></span>
+29. <span data-ttu-id="08f11-137">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="08f11-137">Click OK.</span></span>
+30. <span data-ttu-id="08f11-138">I trädet väljer du "Root: XML Element\Journal: XML Element\Transaction: XML Element".</span><span class="sxs-lookup"><span data-stu-id="08f11-138">In the tree, select 'Root: XML Element\Journal: XML Element\Transaction: XML Element'.</span></span>
+31. <span data-ttu-id="08f11-139">Klicka på Lägg till för att öppna dialogrutan.</span><span class="sxs-lookup"><span data-stu-id="08f11-139">Click Add to open the drop dialog.</span></span>
+32. <span data-ttu-id="08f11-140">Välj "XML\Attribut" i trädet.</span><span class="sxs-lookup"><span data-stu-id="08f11-140">In the tree, select 'XML\Attribute'.</span></span>
+33. <span data-ttu-id="08f11-141">Ange "Voucher" i namnfältet.</span><span class="sxs-lookup"><span data-stu-id="08f11-141">In the Name field, type 'Voucher'.</span></span>
+34. <span data-ttu-id="08f11-142">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="08f11-142">Click OK.</span></span>
+35. <span data-ttu-id="08f11-143">Klicka på Add Attribute.</span><span class="sxs-lookup"><span data-stu-id="08f11-143">Click Add Attribute.</span></span>
+36. <span data-ttu-id="08f11-144">Ange "Date" i namnfältet.</span><span class="sxs-lookup"><span data-stu-id="08f11-144">In the Name field, type 'Date'.</span></span>
+37. <span data-ttu-id="08f11-145">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="08f11-145">Click OK.</span></span>
+38. <span data-ttu-id="08f11-146">Klicka på Add Attribute.</span><span class="sxs-lookup"><span data-stu-id="08f11-146">Click Add Attribute.</span></span>
+39. <span data-ttu-id="08f11-147">Skriv "Valuta" i fältet Namn.</span><span class="sxs-lookup"><span data-stu-id="08f11-147">In the Name field, type 'Currency'.</span></span>
+40. <span data-ttu-id="08f11-148">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="08f11-148">Click OK.</span></span>
+41. <span data-ttu-id="08f11-149">Klicka på Add Attribute.</span><span class="sxs-lookup"><span data-stu-id="08f11-149">Click Add Attribute.</span></span>
+42. <span data-ttu-id="08f11-150">Ange "Dt" i namnfältet.</span><span class="sxs-lookup"><span data-stu-id="08f11-150">In the Name field, type 'Dt'.</span></span>
+43. <span data-ttu-id="08f11-151">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="08f11-151">Click OK.</span></span>
+44. <span data-ttu-id="08f11-152">Klicka på Add Attribute.</span><span class="sxs-lookup"><span data-stu-id="08f11-152">Click Add Attribute.</span></span>
+45. <span data-ttu-id="08f11-153">Ange "Ct" i namnfältet.</span><span class="sxs-lookup"><span data-stu-id="08f11-153">In the Name field, type 'Ct'.</span></span>
+46. <span data-ttu-id="08f11-154">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="08f11-154">Click OK.</span></span>
+47. <span data-ttu-id="08f11-155">Klicka på Lägg till för att öppna dialogrutan.</span><span class="sxs-lookup"><span data-stu-id="08f11-155">Click Add to open the drop dialog.</span></span>
+48. <span data-ttu-id="08f11-156">Välj "XML\Element" i trädet.</span><span class="sxs-lookup"><span data-stu-id="08f11-156">In the tree, select 'XML\Element'.</span></span>
+49. <span data-ttu-id="08f11-157">Ange "Dimensions" i namnfältet.</span><span class="sxs-lookup"><span data-stu-id="08f11-157">In the Name field, type 'Dimensions'.</span></span>
+50. <span data-ttu-id="08f11-158">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="08f11-158">Click OK.</span></span>
+51. <span data-ttu-id="08f11-159">I trädet väljer du "Root: XML Element\Journal: XML Element\Transaction: XML Element\Dimensions: XML Element".</span><span class="sxs-lookup"><span data-stu-id="08f11-159">In the tree, select 'Root: XML Element\Journal: XML Element\Transaction: XML Element\Dimensions: XML Element'.</span></span>
+52. <span data-ttu-id="08f11-160">Klicka på Lägg till för att öppna dialogrutan.</span><span class="sxs-lookup"><span data-stu-id="08f11-160">Click Add to open the drop dialog.</span></span>
+53. <span data-ttu-id="08f11-161">Välj "XML\Attribut" i trädet.</span><span class="sxs-lookup"><span data-stu-id="08f11-161">In the tree, select 'XML\Attribute'.</span></span>
+54. <span data-ttu-id="08f11-162">Ange "Code" i namnfältet.</span><span class="sxs-lookup"><span data-stu-id="08f11-162">In the Name field, type 'Code'.</span></span>
+55. <span data-ttu-id="08f11-163">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="08f11-163">Click OK.</span></span>
+56. <span data-ttu-id="08f11-164">Klicka på Add Attribute.</span><span class="sxs-lookup"><span data-stu-id="08f11-164">Click Add Attribute.</span></span>
+57. <span data-ttu-id="08f11-165">Ange "Value" i namnfältet.</span><span class="sxs-lookup"><span data-stu-id="08f11-165">In the Name field, type 'Value'.</span></span>
+58. <span data-ttu-id="08f11-166">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="08f11-166">Click OK.</span></span>
+59. <span data-ttu-id="08f11-167">Klicka på Add Attribute.</span><span class="sxs-lookup"><span data-stu-id="08f11-167">Click Add Attribute.</span></span>
+60. <span data-ttu-id="08f11-168">Ange "Desc" i namnfältet.</span><span class="sxs-lookup"><span data-stu-id="08f11-168">In the Name field, type 'Desc'.</span></span>
+61. <span data-ttu-id="08f11-169">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="08f11-169">Click OK.</span></span>
 
-## <a name="map-report-elements-to-data-sources"></a>Mappa rapportelement till datakällor
-1. Klicka på fliken Mappning.
-2. Expandera "model: Data model Financial dimensions sample model" i trädet.
-3. Expandera "model: Data model Financial dimensions sample model\Journal: Record list" i trädet.
-4. Expandera "model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list" i trädet.
-5. Expandera "model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Dimensions data: Record list" i trädet.
-6. Välj "Root: XML Element\Journal: XML Element\Transaction: XML Element\Dimensions: XML Element\Desc: XML Attribute" i trädet.
-7. Välj "model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Dimensions data: Record list\Description: String" i trädet.
-8. Klicka på Bind.
-9. Välj "Root: XML Element\Journal: XML Element\Transaction: XML Element\Dimensions: XML Element\Value: XML Attribute" i trädet.
-10. Välj "model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Dimensions data: Record list\Code: String" i trädet.
-11. Klicka på Bind.
-12. Välj "Root: XML Element\Journal: XML Element\Transaction: XML Element\Dimensions: XML Element\Code: XML Attribute" i trädet.
-13. Välj "model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Dimensions data: Record list\Name: String" i trädet.
-14. Klicka på Bind.
-15. Välj "model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Dimensions data: Record list" i trädet.
-16. I trädet väljer du "Root: XML Element\Journal: XML Element\Transaction: XML Element\Dimensions: XML Element".
-17. Klicka på Bind.
-18. Välj "Root: XML Element\Journal: XML Element\Transaction: XML Element\Ct: XML Attribute" i trädet.
-19. Välj "model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Credit: Real" i trädet.
-20. Klicka på Bind.
-21. Välj "Root: XML Element\Journal: XML Element\Transaction: XML Element\Dt: XML Attribute" i trädet.
-22. Välj "model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Debit: Real" i trädet.
-23. Klicka på Bind.
-24. Välj "Root: XML Element\Journal: XML Element\Transaction: XML Element\Currency: XML Attribute" i trädet.
-25. Välj "model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Currency: String" i trädet.
-26. Klicka på Bind.
-27. Välj "Root: XML Element\Journal: XML Element\Transaction: XML Element\Date: XML Attribute" i trädet.
-28. Välj "model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Date: Date" i trädet.
-29. Klicka på Bind.
-30. Välj "Root: XML Element\Journal: XML Element\Transaction: XML Element\Voucher: XML Attribute" i trädet.
-31. Välj "model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Voucher: String" i trädet.
-32. Klicka på Bind.
-33. I trädet väljer du "Root: XML Element\Journal: XML Element\Transaction: XML Element".
-34. Välj "model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list" i trädet.
-35. Klicka på Bind.
-36. Välj "Root: XML Element\Journal: XML Element\Batch: XML Attribute" i trädet.
-37. Välj "model: Data model Financial dimensions sample model\Journal: Record list\Batch: String" i trädet.
-38. Klicka på Bind.
-39. I trädet väljer du "Root: XML Element\Journal: XML Element".
-40. Välj "model: Data model Financial dimensions sample model\Journal: Record list" i trädet.
-41. Klicka på Bind.
-42. Välj "Root: XML Element\Company: XML Attribute" i trädet.
-43. Välj "model: Data model Financial dimensions sample model\Company: String" i trädet.
-44. Klicka på Bind.
-45. Klicka på Spara.
-46. Stäng sidan.
+## <a name="map-report-elements-to-data-sources"></a><span data-ttu-id="08f11-170">Mappa rapportelement till datakällor</span><span class="sxs-lookup"><span data-stu-id="08f11-170">Map report elements to data sources</span></span>
+1. <span data-ttu-id="08f11-171">Klicka på fliken Mappning.</span><span class="sxs-lookup"><span data-stu-id="08f11-171">Click the Mapping tab.</span></span>
+2. <span data-ttu-id="08f11-172">Expandera "model: Data model Financial dimensions sample model" i trädet.</span><span class="sxs-lookup"><span data-stu-id="08f11-172">In the tree, expand 'model: Data model Financial dimensions sample model'.</span></span>
+3. <span data-ttu-id="08f11-173">Expandera "model: Data model Financial dimensions sample model\Journal: Record list" i trädet.</span><span class="sxs-lookup"><span data-stu-id="08f11-173">In the tree, expand 'model: Data model Financial dimensions sample model\Journal: Record list'.</span></span>
+4. <span data-ttu-id="08f11-174">Expandera "model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list" i trädet.</span><span class="sxs-lookup"><span data-stu-id="08f11-174">In the tree, expand 'model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list'.</span></span>
+5. <span data-ttu-id="08f11-175">Expandera "model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Dimensions data: Record list" i trädet.</span><span class="sxs-lookup"><span data-stu-id="08f11-175">In the tree, expand 'model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Dimensions data: Record list'.</span></span>
+6. <span data-ttu-id="08f11-176">Välj "Root: XML Element\Journal: XML Element\Transaction: XML Element\Dimensions: XML Element\Desc: XML Attribute" i trädet.</span><span class="sxs-lookup"><span data-stu-id="08f11-176">In the tree, select 'Root: XML Element\Journal: XML Element\Transaction: XML Element\Dimensions: XML Element\Desc: XML Attribute'.</span></span>
+7. <span data-ttu-id="08f11-177">Välj "model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Dimensions data: Record list\Description: String" i trädet.</span><span class="sxs-lookup"><span data-stu-id="08f11-177">In the tree, select 'model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Dimensions data: Record list\Description: String'.</span></span>
+8. <span data-ttu-id="08f11-178">Klicka på Bind.</span><span class="sxs-lookup"><span data-stu-id="08f11-178">Click Bind.</span></span>
+9. <span data-ttu-id="08f11-179">Välj "Root: XML Element\Journal: XML Element\Transaction: XML Element\Dimensions: XML Element\Value: XML Attribute" i trädet.</span><span class="sxs-lookup"><span data-stu-id="08f11-179">In the tree, select 'Root: XML Element\Journal: XML Element\Transaction: XML Element\Dimensions: XML Element\Value: XML Attribute'.</span></span>
+10. <span data-ttu-id="08f11-180">Välj "model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Dimensions data: Record list\Code: String" i trädet.</span><span class="sxs-lookup"><span data-stu-id="08f11-180">In the tree, select 'model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Dimensions data: Record list\Code: String'.</span></span>
+11. <span data-ttu-id="08f11-181">Klicka på Bind.</span><span class="sxs-lookup"><span data-stu-id="08f11-181">Click Bind.</span></span>
+12. <span data-ttu-id="08f11-182">Välj "Root: XML Element\Journal: XML Element\Transaction: XML Element\Dimensions: XML Element\Code: XML Attribute" i trädet.</span><span class="sxs-lookup"><span data-stu-id="08f11-182">In the tree, select 'Root: XML Element\Journal: XML Element\Transaction: XML Element\Dimensions: XML Element\Code: XML Attribute'.</span></span>
+13. <span data-ttu-id="08f11-183">Välj "model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Dimensions data: Record list\Name: String" i trädet.</span><span class="sxs-lookup"><span data-stu-id="08f11-183">In the tree, select 'model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Dimensions data: Record list\Name: String'.</span></span>
+14. <span data-ttu-id="08f11-184">Klicka på Bind.</span><span class="sxs-lookup"><span data-stu-id="08f11-184">Click Bind.</span></span>
+15. <span data-ttu-id="08f11-185">Välj "model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Dimensions data: Record list" i trädet.</span><span class="sxs-lookup"><span data-stu-id="08f11-185">In the tree, select 'model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Dimensions data: Record list'.</span></span>
+16. <span data-ttu-id="08f11-186">I trädet väljer du "Root: XML Element\Journal: XML Element\Transaction: XML Element\Dimensions: XML Element".</span><span class="sxs-lookup"><span data-stu-id="08f11-186">In the tree, select 'Root: XML Element\Journal: XML Element\Transaction: XML Element\Dimensions: XML Element'.</span></span>
+17. <span data-ttu-id="08f11-187">Klicka på Bind.</span><span class="sxs-lookup"><span data-stu-id="08f11-187">Click Bind.</span></span>
+18. <span data-ttu-id="08f11-188">Välj "Root: XML Element\Journal: XML Element\Transaction: XML Element\Ct: XML Attribute" i trädet.</span><span class="sxs-lookup"><span data-stu-id="08f11-188">In the tree, select 'Root: XML Element\Journal: XML Element\Transaction: XML Element\Ct: XML Attribute'.</span></span>
+19. <span data-ttu-id="08f11-189">Välj "model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Credit: Real" i trädet.</span><span class="sxs-lookup"><span data-stu-id="08f11-189">In the tree, select 'model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Credit: Real'.</span></span>
+20. <span data-ttu-id="08f11-190">Klicka på Bind.</span><span class="sxs-lookup"><span data-stu-id="08f11-190">Click Bind.</span></span>
+21. <span data-ttu-id="08f11-191">Välj "Root: XML Element\Journal: XML Element\Transaction: XML Element\Dt: XML Attribute" i trädet.</span><span class="sxs-lookup"><span data-stu-id="08f11-191">In the tree, select 'Root: XML Element\Journal: XML Element\Transaction: XML Element\Dt: XML Attribute'.</span></span>
+22. <span data-ttu-id="08f11-192">Välj "model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Debit: Real" i trädet.</span><span class="sxs-lookup"><span data-stu-id="08f11-192">In the tree, select 'model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Debit: Real'.</span></span>
+23. <span data-ttu-id="08f11-193">Klicka på Bind.</span><span class="sxs-lookup"><span data-stu-id="08f11-193">Click Bind.</span></span>
+24. <span data-ttu-id="08f11-194">Välj "Root: XML Element\Journal: XML Element\Transaction: XML Element\Currency: XML Attribute" i trädet.</span><span class="sxs-lookup"><span data-stu-id="08f11-194">In the tree, select 'Root: XML Element\Journal: XML Element\Transaction: XML Element\Currency: XML Attribute'.</span></span>
+25. <span data-ttu-id="08f11-195">Välj "model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Currency: String" i trädet.</span><span class="sxs-lookup"><span data-stu-id="08f11-195">In the tree, select 'model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Currency: String'.</span></span>
+26. <span data-ttu-id="08f11-196">Klicka på Bind.</span><span class="sxs-lookup"><span data-stu-id="08f11-196">Click Bind.</span></span>
+27. <span data-ttu-id="08f11-197">Välj "Root: XML Element\Journal: XML Element\Transaction: XML Element\Date: XML Attribute" i trädet.</span><span class="sxs-lookup"><span data-stu-id="08f11-197">In the tree, select 'Root: XML Element\Journal: XML Element\Transaction: XML Element\Date: XML Attribute'.</span></span>
+28. <span data-ttu-id="08f11-198">Välj "model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Date: Date" i trädet.</span><span class="sxs-lookup"><span data-stu-id="08f11-198">In the tree, select 'model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Date: Date'.</span></span>
+29. <span data-ttu-id="08f11-199">Klicka på Bind.</span><span class="sxs-lookup"><span data-stu-id="08f11-199">Click Bind.</span></span>
+30. <span data-ttu-id="08f11-200">Välj "Root: XML Element\Journal: XML Element\Transaction: XML Element\Voucher: XML Attribute" i trädet.</span><span class="sxs-lookup"><span data-stu-id="08f11-200">In the tree, select 'Root: XML Element\Journal: XML Element\Transaction: XML Element\Voucher: XML Attribute'.</span></span>
+31. <span data-ttu-id="08f11-201">Välj "model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Voucher: String" i trädet.</span><span class="sxs-lookup"><span data-stu-id="08f11-201">In the tree, select 'model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list\Voucher: String'.</span></span>
+32. <span data-ttu-id="08f11-202">Klicka på Bind.</span><span class="sxs-lookup"><span data-stu-id="08f11-202">Click Bind.</span></span>
+33. <span data-ttu-id="08f11-203">I trädet väljer du "Root: XML Element\Journal: XML Element\Transaction: XML Element".</span><span class="sxs-lookup"><span data-stu-id="08f11-203">In the tree, select 'Root: XML Element\Journal: XML Element\Transaction: XML Element'.</span></span>
+34. <span data-ttu-id="08f11-204">Välj "model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list" i trädet.</span><span class="sxs-lookup"><span data-stu-id="08f11-204">In the tree, select 'model: Data model Financial dimensions sample model\Journal: Record list\Transaction: Record list'.</span></span>
+35. <span data-ttu-id="08f11-205">Klicka på Bind.</span><span class="sxs-lookup"><span data-stu-id="08f11-205">Click Bind.</span></span>
+36. <span data-ttu-id="08f11-206">Välj "Root: XML Element\Journal: XML Element\Batch: XML Attribute" i trädet.</span><span class="sxs-lookup"><span data-stu-id="08f11-206">In the tree, select 'Root: XML Element\Journal: XML Element\Batch: XML Attribute'.</span></span>
+37. <span data-ttu-id="08f11-207">Välj "model: Data model Financial dimensions sample model\Journal: Record list\Batch: String" i trädet.</span><span class="sxs-lookup"><span data-stu-id="08f11-207">In the tree, select 'model: Data model Financial dimensions sample model\Journal: Record list\Batch: String'.</span></span>
+38. <span data-ttu-id="08f11-208">Klicka på Bind.</span><span class="sxs-lookup"><span data-stu-id="08f11-208">Click Bind.</span></span>
+39. <span data-ttu-id="08f11-209">I trädet väljer du "Root: XML Element\Journal: XML Element".</span><span class="sxs-lookup"><span data-stu-id="08f11-209">In the tree, select 'Root: XML Element\Journal: XML Element'.</span></span>
+40. <span data-ttu-id="08f11-210">Välj "model: Data model Financial dimensions sample model\Journal: Record list" i trädet.</span><span class="sxs-lookup"><span data-stu-id="08f11-210">In the tree, select 'model: Data model Financial dimensions sample model\Journal: Record list'.</span></span>
+41. <span data-ttu-id="08f11-211">Klicka på Bind.</span><span class="sxs-lookup"><span data-stu-id="08f11-211">Click Bind.</span></span>
+42. <span data-ttu-id="08f11-212">Välj "Root: XML Element\Company: XML Attribute" i trädet.</span><span class="sxs-lookup"><span data-stu-id="08f11-212">In the tree, select 'Root: XML Element\Company: XML Attribute'.</span></span>
+43. <span data-ttu-id="08f11-213">Välj "model: Data model Financial dimensions sample model\Company: String" i trädet.</span><span class="sxs-lookup"><span data-stu-id="08f11-213">In the tree, select 'model: Data model Financial dimensions sample model\Company: String'.</span></span>
+44. <span data-ttu-id="08f11-214">Klicka på Bind.</span><span class="sxs-lookup"><span data-stu-id="08f11-214">Click Bind.</span></span>
+45. <span data-ttu-id="08f11-215">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="08f11-215">Click Save.</span></span>
+46. <span data-ttu-id="08f11-216">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="08f11-216">Close the page.</span></span>
 
 

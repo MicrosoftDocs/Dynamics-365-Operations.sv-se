@@ -19,42 +19,42 @@ ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 8c158ac5badd22054db86d269b58d223274176d2
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: d0f599964833162dd4bf4b490019cbed692428eb
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/29/2017
 
 
 ---
 
-# <a name="benefit-eligibility-policies"></a>Policyer för förmånsberättigande
+# <a name="benefit-eligibility-policies"></a><span data-ttu-id="9a042-103">Policyer för förmånsberättigande</span><span class="sxs-lookup"><span data-stu-id="9a042-103">Benefit eligibility policies</span></span>
 
 [!include[banner](includes/banner.md)]
 
 
-Det här avsnittet innehåller information om policyer för förmånsberättigande som underlättar vid definition av vem som är berättigad till specifika förmåner.
+<span data-ttu-id="9a042-104">Det här avsnittet innehåller information om policyer för förmånsberättigande som underlättar vid definition av vem som är berättigad till specifika förmåner.</span><span class="sxs-lookup"><span data-stu-id="9a042-104">This topic provides information about benefit eligibility policies, which help you define who is eligible for specific benefits.</span></span>
 
-När du skapar förmåner, väljer du vilka förmåner ska vara tillgängliga för vilka medarbetare. Följande tabell visar exempel på förmåner som du kan göra tillgängliga för specifika medarbetare.
+<span data-ttu-id="9a042-105">När du skapar förmåner, väljer du vilka förmåner ska vara tillgängliga för vilka medarbetare.</span><span class="sxs-lookup"><span data-stu-id="9a042-105">When you create benefits, you decide which benefits will be available to which employees.</span></span> <span data-ttu-id="9a042-106">Följande tabell visar exempel på förmåner som du kan göra tillgängliga för specifika medarbetare.</span><span class="sxs-lookup"><span data-stu-id="9a042-106">The following table shows examples of benefits that you might make available to specific employees.</span></span>
 
-| Förmån          | Vem förmånen är tillgängliga för |
+| <span data-ttu-id="9a042-107">Förmån</span><span class="sxs-lookup"><span data-stu-id="9a042-107">Benefit</span></span>          | <span data-ttu-id="9a042-108">Vem förmånen är tillgängliga för</span><span class="sxs-lookup"><span data-stu-id="9a042-108">Who the benefit is available to</span></span> |
 |------------------|---------------------------------|
-| Sjukförsäkring | Alla medarbetare                   |
-| Mobiltelefon     | Försäljningspersonal, chefer         |
-| Parkeringskort   | Chefer                      |
+| <span data-ttu-id="9a042-109">Sjukförsäkring</span><span class="sxs-lookup"><span data-stu-id="9a042-109">Health insurance</span></span> | <span data-ttu-id="9a042-110">Alla medarbetare</span><span class="sxs-lookup"><span data-stu-id="9a042-110">All employees</span></span>                   |
+| <span data-ttu-id="9a042-111">Mobiltelefon</span><span class="sxs-lookup"><span data-stu-id="9a042-111">Mobile phone</span></span>     | <span data-ttu-id="9a042-112">Försäljningspersonal, chefer</span><span class="sxs-lookup"><span data-stu-id="9a042-112">Sales staff, executives</span></span>         |
+| <span data-ttu-id="9a042-113">Parkeringskort</span><span class="sxs-lookup"><span data-stu-id="9a042-113">Parking passes</span></span>   | <span data-ttu-id="9a042-114">Chefer</span><span class="sxs-lookup"><span data-stu-id="9a042-114">Executives</span></span>                      |
 
-Följande komponenter används för att skapa valbarhetpolicyer:
+<span data-ttu-id="9a042-115">Följande komponenter används för att skapa valbarhetpolicyer:</span><span class="sxs-lookup"><span data-stu-id="9a042-115">The following components in are used to create eligibility policies:</span></span>
 
--   Policyregeltyper
--   Policyer för förmånsberättigande
+-   <span data-ttu-id="9a042-116">Policyregeltyper</span><span class="sxs-lookup"><span data-stu-id="9a042-116">Policy rule types</span></span>
+-   <span data-ttu-id="9a042-117">Policyer för förmånsberättigande</span><span class="sxs-lookup"><span data-stu-id="9a042-117">Benefit eligibility policies</span></span>
 
-Policyregeltyper definierar frågeparametrar som används när du utvecklar specifika policyregler. När du har skapat policyregeltyper, kan du skapa förmånvalbarhetpolicyer. Policyerna gör att du kan skapa en grupp av regler som gäller en eller flera juridiska personer. Inom varje policy kan du visa någon av policyregeltyperna för förmånsberättigande som du skapade tidigare. 
+<span data-ttu-id="9a042-118">Policyregeltyper definierar frågeparametrar som används när du utvecklar specifika policyregler.</span><span class="sxs-lookup"><span data-stu-id="9a042-118">Policy rule types define the query parameters that are used when you develop specific policy rules.</span></span> <span data-ttu-id="9a042-119">När du har skapat policyregeltyper, kan du skapa förmånvalbarhetpolicyer.</span><span class="sxs-lookup"><span data-stu-id="9a042-119">After you create policy rule types, you can create benefit eligibility policies.</span></span> <span data-ttu-id="9a042-120">Policyerna gör att du kan skapa en grupp av regler som gäller en eller flera juridiska personer.</span><span class="sxs-lookup"><span data-stu-id="9a042-120">The policies let you create a collection of rules that apply to one or more legal entities.</span></span> <span data-ttu-id="9a042-121">Inom varje policy kan du visa någon av policyregeltyperna för förmånsberättigande som du skapade tidigare.</span><span class="sxs-lookup"><span data-stu-id="9a042-121">Within each policy, you can view any of the benefit eligibility policy rule types that you created earlier.</span></span> 
 
-Du definierar regelns omfång inom policyn. Om du till exempel skapar en policyregeltyp för förmånsberättigande med namnet **Chef** kan du ange vad regeln är inom den policyn. I det här exemplet kan regeln ange att en jobbtitel som innehåller ordet chef inkluderas i regeln. När du har definierat parametrar för regeln eller regler som är inkluderade i policyn, kan du koppla en viss regel till förmånen.
+<span data-ttu-id="9a042-122">Du definierar regelns omfång inom policyn.</span><span class="sxs-lookup"><span data-stu-id="9a042-122">You define the scope of the rule within the policy.</span></span> <span data-ttu-id="9a042-123">Om du till exempel skapar en policyregeltyp för förmånsberättigande med namnet **Chef** kan du ange vad regeln är inom den policyn.</span><span class="sxs-lookup"><span data-stu-id="9a042-123">For example, if you create a benefit eligibility policy rule type that is named **Executive**, you can specify what the rule is within that policy.</span></span> <span data-ttu-id="9a042-124">I det här exemplet kan regeln ange att en jobbtitel som innehåller ordet chef inkluderas i regeln.</span><span class="sxs-lookup"><span data-stu-id="9a042-124">In this example, the rule might state that any job title that contains the word “executive” should be included in the rule.</span></span> <span data-ttu-id="9a042-125">När du har definierat parametrar för regeln eller regler som är inkluderade i policyn, kan du koppla en viss regel till förmånen.</span><span class="sxs-lookup"><span data-stu-id="9a042-125">After you've defined the parameters of the rule or rules that are included in the policy, you can assign a specific rule to the benefit.</span></span>
 
-<a name="see-also"></a>Se även
+<a name="see-also"></a><span data-ttu-id="9a042-126">Se även</span><span class="sxs-lookup"><span data-stu-id="9a042-126">See also</span></span>
 --------
 
-[Definiera och hantera ett förmånsprogram](manage-benefit-program.md)
+[<span data-ttu-id="9a042-127">Definiera och hantera ett förmånsprogram</span><span class="sxs-lookup"><span data-stu-id="9a042-127">Defining and managing a benefit program</span></span>](manage-benefit-program.md)
 
 
 

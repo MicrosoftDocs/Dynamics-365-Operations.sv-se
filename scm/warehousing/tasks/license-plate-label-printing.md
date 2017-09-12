@@ -17,95 +17,95 @@ ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b947a02be981155053e33a4ef20e19bf2a194a5
-ms.openlocfilehash: c4ca3cd02a43692cfa9510847b460a318855fd24
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 6d186bf7e4aee8cfa97adbd90b9090085e842f9b
 ms.contentlocale: sv-se
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="enable-license-plate-label-printing"></a>Aktivera utskrift av ID-nummer
+# <a name="enable-license-plate-label-printing"></a><span data-ttu-id="2ab08-103">Aktivera utskrift av ID-nummer</span><span class="sxs-lookup"><span data-stu-id="2ab08-103">Enable license plate label printing</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-I den här proceduren aktiveras automatisk utskrift av ett EAN-kollinummer (SSCC) efter den sista artikeln som plockas från lagret i arbetsprocessen för försäljningsplocklistan. Du kan köra den här proceduren i demonstrationsdataföretaget USMF. Om du kör med dina egna data måste du ha en nummerserie som har ställts in för ID-nummer. Du måste konfigurera en etikettskrivare innan du börjar med den här uppgiften. Gå till Organisationsadministration > Inställningar > Nätverksskrivare. I åtgärdsfönstret klickar du på Alternativ och sedan på knappen Hämta installationsprogram för dokumentflödesagent. Kör installationsprogrammet och kontrollera att du har en nätverkskrivare som är inställd på Aktiv innan du fortsätter med proceduren.
+<span data-ttu-id="2ab08-104">I den här proceduren aktiveras automatisk utskrift av ett EAN-kollinummer (SSCC) efter den sista artikeln som plockas från lagret i arbetsprocessen för försäljningsplocklistan.</span><span class="sxs-lookup"><span data-stu-id="2ab08-104">This procedure enables the automatic printing of a Serial shipping container code (SSCC) label after the last item is picked from inventory in a sales picking work process.</span></span> <span data-ttu-id="2ab08-105">Du kan köra den här proceduren i demonstrationsdataföretaget USMF.</span><span class="sxs-lookup"><span data-stu-id="2ab08-105">You can run this procedure in demo data company USMF.</span></span> <span data-ttu-id="2ab08-106">Om du kör med dina egna data måste du ha en nummerserie som har ställts in för ID-nummer.</span><span class="sxs-lookup"><span data-stu-id="2ab08-106">If you’re run it using your own data, you need to have a number sequence set up for license plates.</span></span> <span data-ttu-id="2ab08-107">Du måste konfigurera en etikettskrivare innan du börjar med den här uppgiften.</span><span class="sxs-lookup"><span data-stu-id="2ab08-107">You need to set up a label printer before you begin this task.</span></span> <span data-ttu-id="2ab08-108">Gå till Organisationsadministration > Inställningar > Nätverksskrivare.</span><span class="sxs-lookup"><span data-stu-id="2ab08-108">Go to Organization administration > Setup > Network printers.</span></span> <span data-ttu-id="2ab08-109">I åtgärdsfönstret klickar du på Alternativ och sedan på knappen Hämta installationsprogram för dokumentflödesagent.</span><span class="sxs-lookup"><span data-stu-id="2ab08-109">On the Action pane, click Options, and then click the Download document routing agent installer button.</span></span> <span data-ttu-id="2ab08-110">Kör installationsprogrammet och kontrollera att du har en nätverkskrivare som är inställd på Aktiv innan du fortsätter med proceduren.</span><span class="sxs-lookup"><span data-stu-id="2ab08-110">Run the installer and make sure that you have a working network printer set to Active before you continue with the procedure.</span></span>
 
 
-## <a name="set-up-the-gs1-company-prefix"></a>Ställ in GS1-företagsprefix
-1. Gå till Lagerstyrning > Inställningar > Parametrar för lagerstyrning.
-2. Ange det sjusiffriga numret på ditt GS1-företag i fältet GS1-företagsprefix.
-3. Klicka på Spara.
-4. Stäng sidan.
+## <a name="set-up-the-gs1-company-prefix"></a><span data-ttu-id="2ab08-111">Ställ in GS1-företagsprefix</span><span class="sxs-lookup"><span data-stu-id="2ab08-111">Set up the GS1 company prefix</span></span>
+1. <span data-ttu-id="2ab08-112">Gå till Lagerstyrning > Inställningar > Parametrar för lagerstyrning.</span><span class="sxs-lookup"><span data-stu-id="2ab08-112">Go to Warehouse management > Setup > Warehouse management parameters.</span></span>
+2. <span data-ttu-id="2ab08-113">Ange det sjusiffriga numret på ditt GS1-företag i fältet GS1-företagsprefix.</span><span class="sxs-lookup"><span data-stu-id="2ab08-113">In the GS1 company prefix field, enter the 7 numbers for your GS1 company number.</span></span>
+3. <span data-ttu-id="2ab08-114">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="2ab08-114">Click Save.</span></span>
+4. <span data-ttu-id="2ab08-115">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="2ab08-115">Close the page.</span></span>
 
-## <a name="setup-the-sscc-license-plate-number-sequence"></a>Ställ in nummerserien för SSCC-ID-numret
-1. Gå till Organisationsadministration > Nummerserier > Nummerserier.
-2. Markera ett alternativ i fältet Område.
-3. Markera ett alternativ i fältet Referens.
-4. Skriv ett värde i fältet Företag.
-5. Markera vald rad i listan.
-6. Klicka på länken på den valda raden i listan.
-7. Expandera avsnittet Segment.
-8. Klicka på Redigera.
-9. Välj den första raden i segmentregistret
-10. Klicka på Ta bort.
-11. Klicka på Ta bort.
-12. Klicka på Spara.
-13. Stäng sidan.
+## <a name="setup-the-sscc-license-plate-number-sequence"></a><span data-ttu-id="2ab08-116">Ställ in nummerserien för SSCC-ID-numret</span><span class="sxs-lookup"><span data-stu-id="2ab08-116">Setup the SSCC license plate number sequence</span></span>
+1. <span data-ttu-id="2ab08-117">Gå till Organisationsadministration > Nummerserier > Nummerserier.</span><span class="sxs-lookup"><span data-stu-id="2ab08-117">Go to Organization administration > Number sequences > Number sequences.</span></span>
+2. <span data-ttu-id="2ab08-118">Markera ett alternativ i fältet Område.</span><span class="sxs-lookup"><span data-stu-id="2ab08-118">In the Area field, select an option.</span></span>
+3. <span data-ttu-id="2ab08-119">Markera ett alternativ i fältet Referens.</span><span class="sxs-lookup"><span data-stu-id="2ab08-119">In the Reference field, select an option.</span></span>
+4. <span data-ttu-id="2ab08-120">Skriv ett värde i fältet Företag.</span><span class="sxs-lookup"><span data-stu-id="2ab08-120">In the Company field, type a value.</span></span>
+5. <span data-ttu-id="2ab08-121">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="2ab08-121">In the list, mark the selected row.</span></span>
+6. <span data-ttu-id="2ab08-122">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="2ab08-122">In the list, click the link in the selected row.</span></span>
+7. <span data-ttu-id="2ab08-123">Expandera avsnittet Segment.</span><span class="sxs-lookup"><span data-stu-id="2ab08-123">Expand the Segments section.</span></span>
+8. <span data-ttu-id="2ab08-124">Klicka på Redigera.</span><span class="sxs-lookup"><span data-stu-id="2ab08-124">Click Edit.</span></span>
+9. <span data-ttu-id="2ab08-125">Välj den första raden i segmentregistret</span><span class="sxs-lookup"><span data-stu-id="2ab08-125">In the Segments table, select the first row</span></span>
+10. <span data-ttu-id="2ab08-126">Klicka på Ta bort.</span><span class="sxs-lookup"><span data-stu-id="2ab08-126">Click Remove.</span></span>
+11. <span data-ttu-id="2ab08-127">Klicka på Ta bort.</span><span class="sxs-lookup"><span data-stu-id="2ab08-127">Click Remove.</span></span>
+12. <span data-ttu-id="2ab08-128">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="2ab08-128">Click Save.</span></span>
+13. <span data-ttu-id="2ab08-129">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="2ab08-129">Close the page.</span></span>
 
-## <a name="create-the-document-route-layout"></a>Skapa dokumentflödeslayouten
-1. Gå till Lagerstyrning > Inställningar > Dokumentflöde > Dokumentflödets layouter.
-    * Aktivera SSCC-layout.  
-2. Klicka på Ny.
-3. Skriv ett värde i fältet Layout-ID.
-4. Ange ett värde i fältet Beskrivning.
-5. Hitta och markera önskad post i listan.
-6. Klicka på Infoga vid textens slut.
-7. Klicka på Spara.
-8. Stäng sidan.
+## <a name="create-the-document-route-layout"></a><span data-ttu-id="2ab08-130">Skapa dokumentflödeslayouten</span><span class="sxs-lookup"><span data-stu-id="2ab08-130">Create the document route layout</span></span>
+1. <span data-ttu-id="2ab08-131">Gå till Lagerstyrning > Inställningar > Dokumentflöde > Dokumentflödets layouter.</span><span class="sxs-lookup"><span data-stu-id="2ab08-131">Go to Warehouse management > Setup > Document routing > Document routing layouts.</span></span>
+    * <span data-ttu-id="2ab08-132">Aktivera SSCC-layout.</span><span class="sxs-lookup"><span data-stu-id="2ab08-132">Enable the SSCC layout.</span></span>  
+2. <span data-ttu-id="2ab08-133">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="2ab08-133">Click New.</span></span>
+3. <span data-ttu-id="2ab08-134">Skriv ett värde i fältet Layout-ID.</span><span class="sxs-lookup"><span data-stu-id="2ab08-134">In the Layout ID field, type a value.</span></span>
+4. <span data-ttu-id="2ab08-135">Ange ett värde i fältet Beskrivning.</span><span class="sxs-lookup"><span data-stu-id="2ab08-135">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="2ab08-136">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="2ab08-136">In the list, find and select the desired record.</span></span>
+6. <span data-ttu-id="2ab08-137">Klicka på Infoga vid textens slut.</span><span class="sxs-lookup"><span data-stu-id="2ab08-137">Click Insert at end of text.</span></span>
+7. <span data-ttu-id="2ab08-138">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="2ab08-138">Click Save.</span></span>
+8. <span data-ttu-id="2ab08-139">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="2ab08-139">Close the page.</span></span>
 
-## <a name="set-up-the-document-routing"></a>Ställ in dokumentflödet
-1. Gå till Lagerstyrning > Inställningar > Dokumentflöde > Dokumentflöde.
-2. Välj ett alternativ i fältet Arbetsorder.
-3. Klicka på Ny.
-4. Ange ett värde i fältet Lagerställe.
-5. Skriv ett värde i fältet Namn.
-6. Klicka på Ny.
-7. Ange eller välj ett värde i fältet Layout-ID.
-8. I namnfältet väljer du det skrivarnamn som du vill använda.
-9. Klicka på Spara.
-10. Stäng sidan.
+## <a name="set-up-the-document-routing"></a><span data-ttu-id="2ab08-140">Ställ in dokumentflödet</span><span class="sxs-lookup"><span data-stu-id="2ab08-140">Set up the document routing</span></span>
+1. <span data-ttu-id="2ab08-141">Gå till Lagerstyrning > Inställningar > Dokumentflöde > Dokumentflöde.</span><span class="sxs-lookup"><span data-stu-id="2ab08-141">Go to Warehouse management > Setup > Document routing > Document routing.</span></span>
+2. <span data-ttu-id="2ab08-142">Välj ett alternativ i fältet Arbetsorder.</span><span class="sxs-lookup"><span data-stu-id="2ab08-142">In the Work order type field, select an option.</span></span>
+3. <span data-ttu-id="2ab08-143">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="2ab08-143">Click New.</span></span>
+4. <span data-ttu-id="2ab08-144">Ange ett värde i fältet Lagerställe.</span><span class="sxs-lookup"><span data-stu-id="2ab08-144">In the Warehouse field, type a value.</span></span>
+5. <span data-ttu-id="2ab08-145">Skriv ett värde i fältet Namn.</span><span class="sxs-lookup"><span data-stu-id="2ab08-145">In the Name field, type a value.</span></span>
+6. <span data-ttu-id="2ab08-146">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="2ab08-146">Click New.</span></span>
+7. <span data-ttu-id="2ab08-147">Ange eller välj ett värde i fältet Layout-ID.</span><span class="sxs-lookup"><span data-stu-id="2ab08-147">In the Layout ID field, enter or select a value.</span></span>
+8. <span data-ttu-id="2ab08-148">I namnfältet väljer du det skrivarnamn som du vill använda.</span><span class="sxs-lookup"><span data-stu-id="2ab08-148">In the Name field, enter the printer name that you want to use..</span></span>
+9. <span data-ttu-id="2ab08-149">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="2ab08-149">Click Save.</span></span>
+10. <span data-ttu-id="2ab08-150">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="2ab08-150">Close the page.</span></span>
 
-## <a name="create-mobile-device-menu"></a>Skapa meny på mobil enhet
-1. Gå till Lagerstyrning > Inställningar > Mobil enhet > Menyalternativ på mobil enhet.
-2. Klicka på Ny.
-3. Skriv ett värde i fältet Menyalternativ.
-4. Ange ett värde i fältet Titel.
-5. Markera ett alternativ i fältet Läge.
-6. Välj Ja i fältet Använd befintligt arbete.
-7. Välj Ja i fältet Generera nummerplåt.
-8. Expandera arbetsklassavsnittet.
-9. Klicka på Ny.
-10. Skriv ett värde i fältet Arbetsklass-ID.
-11. Klicka på Spara.
-12. Stäng sidan.
-13. Gå till Lagerstyrning > Inställningar > Mobil enhet > Meny på mobil enhet.
-14. Hitta och markera önskad post i listan.
-15. I trädet markerar du "Välj menyalternativet du skapade tidigare i trädet".
-16. Klicka på Redigera.
-17. Klicka på pilen för att lägga till menykommandot till menyn.
-18. Klicka på Spara.
-19. Stäng sidan.
+## <a name="create-mobile-device-menu"></a><span data-ttu-id="2ab08-151">Skapa meny på mobil enhet</span><span class="sxs-lookup"><span data-stu-id="2ab08-151">Create mobile device menu</span></span>
+1. <span data-ttu-id="2ab08-152">Gå till Lagerstyrning > Inställningar > Mobil enhet > Menyalternativ på mobil enhet.</span><span class="sxs-lookup"><span data-stu-id="2ab08-152">Go to Warehouse management > Setup > Mobile device > Mobile device menu items.</span></span>
+2. <span data-ttu-id="2ab08-153">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="2ab08-153">Click New.</span></span>
+3. <span data-ttu-id="2ab08-154">Skriv ett värde i fältet Menyalternativ.</span><span class="sxs-lookup"><span data-stu-id="2ab08-154">In the Menu item name field, type a value.</span></span>
+4. <span data-ttu-id="2ab08-155">Ange ett värde i fältet Titel.</span><span class="sxs-lookup"><span data-stu-id="2ab08-155">In the Title field, type a value.</span></span>
+5. <span data-ttu-id="2ab08-156">Markera ett alternativ i fältet Läge.</span><span class="sxs-lookup"><span data-stu-id="2ab08-156">In the Mode field, select an option.</span></span>
+6. <span data-ttu-id="2ab08-157">Välj Ja i fältet Använd befintligt arbete.</span><span class="sxs-lookup"><span data-stu-id="2ab08-157">Select Yes in the Use existing work field.</span></span>
+7. <span data-ttu-id="2ab08-158">Välj Ja i fältet Generera nummerplåt.</span><span class="sxs-lookup"><span data-stu-id="2ab08-158">Select Yes in the Generate license plate field.</span></span>
+8. <span data-ttu-id="2ab08-159">Expandera arbetsklassavsnittet.</span><span class="sxs-lookup"><span data-stu-id="2ab08-159">Expand the Work classes section.</span></span>
+9. <span data-ttu-id="2ab08-160">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="2ab08-160">Click New.</span></span>
+10. <span data-ttu-id="2ab08-161">Skriv ett värde i fältet Arbetsklass-ID.</span><span class="sxs-lookup"><span data-stu-id="2ab08-161">In the Work class ID field, type a value.</span></span>
+11. <span data-ttu-id="2ab08-162">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="2ab08-162">Click Save.</span></span>
+12. <span data-ttu-id="2ab08-163">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="2ab08-163">Close the page.</span></span>
+13. <span data-ttu-id="2ab08-164">Gå till Lagerstyrning > Inställningar > Mobil enhet > Meny på mobil enhet.</span><span class="sxs-lookup"><span data-stu-id="2ab08-164">Go to Warehouse management > Setup > Mobile device > Mobile device menu.</span></span>
+14. <span data-ttu-id="2ab08-165">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="2ab08-165">In the list, find and select the desired record.</span></span>
+15. <span data-ttu-id="2ab08-166">I trädet markerar du "Välj menyalternativet du skapade tidigare i trädet".</span><span class="sxs-lookup"><span data-stu-id="2ab08-166">In the tree, select 'In the tree, select the menu item that you created before.'.</span></span>
+16. <span data-ttu-id="2ab08-167">Klicka på Redigera.</span><span class="sxs-lookup"><span data-stu-id="2ab08-167">Click Edit.</span></span>
+17. <span data-ttu-id="2ab08-168">Klicka på pilen för att lägga till menykommandot till menyn.</span><span class="sxs-lookup"><span data-stu-id="2ab08-168">Click on the arrow to add the menu item to the menu.</span></span>
+18. <span data-ttu-id="2ab08-169">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="2ab08-169">Click Save.</span></span>
+19. <span data-ttu-id="2ab08-170">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="2ab08-170">Close the page.</span></span>
 
-## <a name="update-a-work-template"></a>Uppdatera en arbetsuppgiftsmall
-1. Gå till Lagerstyrning > Inställningar > Arbete > Arbetsmallar.
-2. Hitta och markera önskad post i listan.
-3. Klicka på Redigera.
-4. Klicka på Ny.
-5. Markera vald rad i listan.
-6. Välj "Skriv ut" i fältet Arbetstyp.
-7. I fältet Arbetsklass-ID, ange eller välj ett värde.
-8. Klicka på länken på den valda raden i listan.
-9. Klicka på Flytta upp.
-10. Klicka på Spara.
-11. Stäng sidan.
+## <a name="update-a-work-template"></a><span data-ttu-id="2ab08-171">Uppdatera en arbetsuppgiftsmall</span><span class="sxs-lookup"><span data-stu-id="2ab08-171">Update a work template</span></span>
+1. <span data-ttu-id="2ab08-172">Gå till Lagerstyrning > Inställningar > Arbete > Arbetsmallar.</span><span class="sxs-lookup"><span data-stu-id="2ab08-172">Go to Warehouse management > Setup > Work > Work templates.</span></span>
+2. <span data-ttu-id="2ab08-173">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="2ab08-173">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="2ab08-174">Klicka på Redigera.</span><span class="sxs-lookup"><span data-stu-id="2ab08-174">Click Edit.</span></span>
+4. <span data-ttu-id="2ab08-175">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="2ab08-175">Click New.</span></span>
+5. <span data-ttu-id="2ab08-176">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="2ab08-176">In the list, mark the selected row.</span></span>
+6. <span data-ttu-id="2ab08-177">Välj "Skriv ut" i fältet Arbetstyp.</span><span class="sxs-lookup"><span data-stu-id="2ab08-177">In the Work type field, select 'Print'.</span></span>
+7. <span data-ttu-id="2ab08-178">I fältet Arbetsklass-ID, ange eller välj ett värde.</span><span class="sxs-lookup"><span data-stu-id="2ab08-178">In the Work class ID field, enter or select a value.</span></span>
+8. <span data-ttu-id="2ab08-179">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="2ab08-179">In the list, click the link in the selected row.</span></span>
+9. <span data-ttu-id="2ab08-180">Klicka på Flytta upp.</span><span class="sxs-lookup"><span data-stu-id="2ab08-180">Click Move up.</span></span>
+10. <span data-ttu-id="2ab08-181">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="2ab08-181">Click Save.</span></span>
+11. <span data-ttu-id="2ab08-182">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="2ab08-182">Close the page.</span></span>
 
 

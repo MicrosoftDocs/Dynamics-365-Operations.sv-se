@@ -16,20 +16,20 @@ ms.author: pvillads
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 2f7945ad1837fed0dcb473bb7ce66b0796433776
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 69a449766f2e5d9a6833127fcd28a2959d4578fc
 ms.contentlocale: sv-se
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="change-the-date-for-the-session"></a>Ändra datumet för sessionen
+# <a name="change-the-date-for-the-session"></a><span data-ttu-id="3517c-103">Ändra datumet för sessionen</span><span class="sxs-lookup"><span data-stu-id="3517c-103">Change the date for the session</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Som standard används aktuellt datum vid registrering och bokföring av journalposter eller källdokument. Du kan ändra det datum som används för din aktuella session. Använd denna funktion för att antedatera journalposter eller källdokument vid behov.
+<span data-ttu-id="3517c-104">Som standard används aktuellt datum vid registrering och bokföring av journalposter eller källdokument.</span><span class="sxs-lookup"><span data-stu-id="3517c-104">By default, the current date is used when entering and posting journal entries or source documents.</span></span> <span data-ttu-id="3517c-105">Du kan ändra det datum som används för din aktuella session.</span><span class="sxs-lookup"><span data-stu-id="3517c-105">You can change the date that is used for your current session.</span></span> <span data-ttu-id="3517c-106">Använd denna funktion för att antedatera journalposter eller källdokument vid behov.</span><span class="sxs-lookup"><span data-stu-id="3517c-106">Use this feature to back-date journal entries or source documents, as necessary.</span></span>
 
-1. Gå till Allmänt > Allmänt > Sessionsdatum och -tid.
-2. Ange ett datum i fältet Datum.
-3. Klicka på OK.
+1. <span data-ttu-id="3517c-107">Gå till Allmänt > Allmänt > Sessionsdatum och -tid.</span><span class="sxs-lookup"><span data-stu-id="3517c-107">Go to Common > Common > Session date and time.</span></span>
+2. <span data-ttu-id="3517c-108">Ange ett datum i fältet Datum.</span><span class="sxs-lookup"><span data-stu-id="3517c-108">In the Date field, enter a date.</span></span>
+3. <span data-ttu-id="3517c-109">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="3517c-109">Click OK.</span></span>
 
 

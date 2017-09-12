@@ -25,228 +25,228 @@ ms.lasthandoff: 08/04/2017
 
 ---
 
-# <a name="system-requirements-for-on-premises-deployments"></a>Systemkrav för lokala distributioner
+# <a name="system-requirements-for-on-premises-deployments"></a><span data-ttu-id="311ce-103">Systemkrav för lokala distributioner</span><span class="sxs-lookup"><span data-stu-id="311ce-103">System requirements for on-premises deployments</span></span>
 
 [!include[banner](../includes/banner.md)]
 
-Det här ämnet innehåller en lista med systemkrav för den aktuella versionen av Microsoft Dynamics 365 for Finance and Operations, Enterprise edition för och lokala distributioner. Innan du installerar Finance and Operations, kontrollera vid behov om systemet du arbetar med uppfyller eller överskrider minimikraven för programvara, maskinvara och nätverk.
+<span data-ttu-id="311ce-104">Det här ämnet innehåller en lista med systemkrav för den aktuella versionen av Microsoft Dynamics 365 for Finance and Operations, Enterprise edition för och lokala distributioner.</span><span class="sxs-lookup"><span data-stu-id="311ce-104">This topic lists the system requirements for the current version of Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, for on-premises deployments.</span></span> <span data-ttu-id="311ce-105">Innan du installerar Finance and Operations, kontrollera vid behov om systemet du arbetar med uppfyller eller överskrider minimikraven för programvara, maskinvara och nätverk.</span><span class="sxs-lookup"><span data-stu-id="311ce-105">Before you install Finance and Operations, when this step is appropriate, verify that the system that you're working with meets or exceeds the minimum network, hardware, and software requirements.</span></span>
 
-## <a name="network-requirements"></a>Nätverkskrav
-Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (lokal) fungerar över nätverk som använder Internet Protocol Version 4 (IPv4) eller Internet Protocol Version 6 (IPv6). Överväg nätverksmiljön när du planerar ditt system och följ riktlinjerna nedan.
+## <a name="network-requirements"></a><span data-ttu-id="311ce-106">Nätverkskrav</span><span class="sxs-lookup"><span data-stu-id="311ce-106">Network requirements</span></span>
+<span data-ttu-id="311ce-107">Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (lokal) fungerar över nätverk som använder Internet Protocol Version 4 (IPv4) eller Internet Protocol Version 6 (IPv6).</span><span class="sxs-lookup"><span data-stu-id="311ce-107">Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (on-premises) can work on networks that use Internet Protocol Version 4 (IPv4) or Internet Protocol Version 6 (IPv6).</span></span> <span data-ttu-id="311ce-108">Överväg nätverksmiljön när du planerar ditt system och följ riktlinjerna nedan.</span><span class="sxs-lookup"><span data-stu-id="311ce-108">Consider the network environment when you plan your system, and use the following guidelines.</span></span>
 
-### <a name="network-response-time"></a>Svarstid för nätverk
-Nedan beskrivs minimikraven för nätverk för anslutningen mellan webbläsaren och Application Object Server (AOS) och anslutningen mellan AOS och databasen i ett lokalt system.
+### <a name="network-response-time"></a><span data-ttu-id="311ce-109">Svarstid för nätverk</span><span class="sxs-lookup"><span data-stu-id="311ce-109">Network response time</span></span>
+<span data-ttu-id="311ce-110">Nedan beskrivs minimikraven för nätverk för anslutningen mellan webbläsaren och Application Object Server (AOS) och anslutningen mellan AOS och databasen i ett lokalt system.</span><span class="sxs-lookup"><span data-stu-id="311ce-110">The following table lists the minimum network requirements for the connection between the web browser and Application Object Server (AOS), and for the connection between AOS and the database in an on-premises system.</span></span>
 
-| Värde     | Webbläsare till AOS                      | AOS till databas |
+| <span data-ttu-id="311ce-111">Värde</span><span class="sxs-lookup"><span data-stu-id="311ce-111">Value</span></span>     | <span data-ttu-id="311ce-112">Webbläsare till AOS</span><span class="sxs-lookup"><span data-stu-id="311ce-112">Web browser to AOS</span></span>                      | <span data-ttu-id="311ce-113">AOS till databas</span><span class="sxs-lookup"><span data-stu-id="311ce-113">AOS to database</span></span> |
 |-----------|-----------------------------------------|------------------------------------------------------------------------------------------|
-| Bandbredd | 50 KB per sekund per användare | 100 MB per sekund (MBps) |
-| Svarstid   | Mindre än 250 – 300 millisekunder (ms)     | Mindre än 1 ms (endast lokalt nätverk LAN]). AOS och databasen måste finnas samtidigt. |
+| <span data-ttu-id="311ce-114">Bandbredd</span><span class="sxs-lookup"><span data-stu-id="311ce-114">Bandwidth</span></span> | <span data-ttu-id="311ce-115">50 KB per sekund per användare</span><span class="sxs-lookup"><span data-stu-id="311ce-115">50 kilobytes per second (KBps) per user</span></span> | <span data-ttu-id="311ce-116">100 MB per sekund (MBps)</span><span class="sxs-lookup"><span data-stu-id="311ce-116">100 megabytes per second (MBps)</span></span> |
+| <span data-ttu-id="311ce-117">Svarstid</span><span class="sxs-lookup"><span data-stu-id="311ce-117">Latency</span></span>   | <span data-ttu-id="311ce-118">Mindre än 250 – 300 millisekunder (ms)</span><span class="sxs-lookup"><span data-stu-id="311ce-118">Less than 250–300 milliseconds (ms)</span></span>     | <span data-ttu-id="311ce-119">Mindre än 1 ms (endast lokalt nätverk LAN]).</span><span class="sxs-lookup"><span data-stu-id="311ce-119">Less than 1 ms (local area network [LAN] only).</span></span> <span data-ttu-id="311ce-120">AOS och databasen måste finnas samtidigt.</span><span class="sxs-lookup"><span data-stu-id="311ce-120">AOS and the database must be co-located.</span></span> |
 
-- Finance and Operations (lokal) har utformats för nätverk med svarstid på 250-300 millisekunder eller mindre. Denna svarstid är svarstiden från en webbläsarklient till det datacenter som är värd för Finance and Operations.
-- Bandbreddskrav för Finance and Operations (lokal) är beroende av en viss situation. Typiska scenarier kräver en bandbredd på mer än 50 kB per sekund mellan webbläsaren och Finance and Operations-servern. Scenarier som har höga nyttolastkrav, till exempel scenarier som involverar arbetsytor eller omfattande anpassning, rekommenderas större bandbredd. Den specifika mängden bandbredd beror på användning.
+- <span data-ttu-id="311ce-121">Finance and Operations (lokal) har utformats för nätverk med svarstid på 250-300 millisekunder eller mindre.</span><span class="sxs-lookup"><span data-stu-id="311ce-121">Finance and Operations (on-premises) is designed for networks that have a latency of 250–300 milliseconds (ms) or less.</span></span> <span data-ttu-id="311ce-122">Denna svarstid är svarstiden från en webbläsarklient till det datacenter som är värd för Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="311ce-122">This latency is the latency from a browser client to the datacenter that hosts Finance and Operations.</span></span>
+- <span data-ttu-id="311ce-123">Bandbreddskrav för Finance and Operations (lokal) är beroende av en viss situation.</span><span class="sxs-lookup"><span data-stu-id="311ce-123">Bandwidth requirements for Finance and Operations (on-premises) depend on your scenario.</span></span> <span data-ttu-id="311ce-124">Typiska scenarier kräver en bandbredd på mer än 50 kB per sekund mellan webbläsaren och Finance and Operations-servern.</span><span class="sxs-lookup"><span data-stu-id="311ce-124">Typical scenarios require a bandwidth of more than 50 KBps between the browser and the Finance and Operations server.</span></span> <span data-ttu-id="311ce-125">Scenarier som har höga nyttolastkrav, till exempel scenarier som involverar arbetsytor eller omfattande anpassning, rekommenderas större bandbredd.</span><span class="sxs-lookup"><span data-stu-id="311ce-125">However, we recommend higher bandwidth for scenarios that have high payload requirements, such as scenarios that involve workspaces or extensive customization.</span></span> <span data-ttu-id="311ce-126">Den specifika mängden bandbredd beror på användning.</span><span class="sxs-lookup"><span data-stu-id="311ce-126">The specific amount of bandwidth depends on use.</span></span>
 
-Distribution där AOS och Microsoft SQL Server-databasen finns i olika datacenter stöds inte. AOS och SQL Server-databasen måste finnas samtidigt. 
+<span data-ttu-id="311ce-127">Distribution där AOS och Microsoft SQL Server-databasen finns i olika datacenter stöds inte.</span><span class="sxs-lookup"><span data-stu-id="311ce-127">Deployments where AOS and the Microsoft SQL Server database are in different datacenters aren't supported.</span></span> <span data-ttu-id="311ce-128">AOS och SQL Server-databasen måste finnas samtidigt.</span><span class="sxs-lookup"><span data-stu-id="311ce-128">AOS and the SQL Server database must be co-located.</span></span> 
 
-I allmänhet är Finance and Operations optimerat för att reducera returresor från webbläsare till server. Antalet returresor från en webbläsarklient till datacentret är antingen noll eller ett för varje användarinteraktion.
+<span data-ttu-id="311ce-129">I allmänhet är Finance and Operations optimerat för att reducera returresor från webbläsare till server.</span><span class="sxs-lookup"><span data-stu-id="311ce-129">In general, Finance and Operations is optimized to reduce browser-to-server round trips.</span></span> <span data-ttu-id="311ce-130">Antalet returresor från en webbläsarklient till datacentret är antingen noll eller ett för varje användarinteraktion.</span><span class="sxs-lookup"><span data-stu-id="311ce-130">The number of round trips from a browser client to the datacenter is either zero or one for each user interaction, and the payload is compressed.</span></span>
 
 > [!WARNING]
-> Beräkna inte bandbreddskrav från en klientplats genom att multiplicera antalet användare med den minsta bandbredd som krävs. Det är mycket svårt att beräkna samtidiga användningen av en viss plats. Vi rekommenderar att du använder en verklig simulering mot en miljö för icke-produktion i Finance and Operations som bästa prestandamätare för ditt specifika fall. 
+> <span data-ttu-id="311ce-131">Beräkna inte bandbreddskrav från en klientplats genom att multiplicera antalet användare med den minsta bandbredd som krävs.</span><span class="sxs-lookup"><span data-stu-id="311ce-131">Don't calculate bandwidth requirements from a client location by multiplying the number of users by the minimum bandwidth requirements.</span></span> <span data-ttu-id="311ce-132">Det är mycket svårt att beräkna samtidiga användningen av en viss plats.</span><span class="sxs-lookup"><span data-stu-id="311ce-132">The concurrent usage of a given location is very difficult to calculate.</span></span> <span data-ttu-id="311ce-133">Vi rekommenderar att du använder en verklig simulering mot en miljö för icke-produktion i Finance and Operations som bästa prestandamätare för ditt specifika fall.</span><span class="sxs-lookup"><span data-stu-id="311ce-133">We recommend that you use a real-life simulation against a non-production environment of Finance and Operations as the best gauge of performance for your specific case.</span></span> 
 
-### <a name="lan-environments"></a>LAN-miljöer
-I lokala nätverksmiljöer (LAN) krävs inte Microsoft fjärrskrivbord i Microsoft Windows Server för att ansluta till Finance and Operations. Däremot kan Fjärrskrivbord krävas för underhållsåtgärder på virtuella maskiner (VM) som utgör serverinstallationer.
+### <a name="lan-environments"></a><span data-ttu-id="311ce-134">LAN-miljöer</span><span class="sxs-lookup"><span data-stu-id="311ce-134">LAN environments</span></span>
+<span data-ttu-id="311ce-135">I lokala nätverksmiljöer (LAN) krävs inte Microsoft fjärrskrivbord i Microsoft Windows Server för att ansluta till Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="311ce-135">In LAN environments, Microsoft Remote Desktop in Microsoft Windows Server isn't required in order to connect to Finance and Operations.</span></span> <span data-ttu-id="311ce-136">Däremot kan Fjärrskrivbord krävas för underhållsåtgärder på virtuella maskiner (VM) som utgör serverinstallationer.</span><span class="sxs-lookup"><span data-stu-id="311ce-136">However, Remote Desktop might be required for servicing operations on the virtual machines (VMs) that make up the server deployments.</span></span>
 
-### <a name="wan-environments"></a>WAN-miljöer
-I WAN-nätverk (Wide Area Network) krävs inte fjärrskrivbord i Windows Server för att ansluta till inance and Operations.
+### <a name="wan-environments"></a><span data-ttu-id="311ce-137">WAN-miljöer</span><span class="sxs-lookup"><span data-stu-id="311ce-137">WAN environments</span></span>
+<span data-ttu-id="311ce-138">I WAN-nätverk (Wide Area Network) krävs inte fjärrskrivbord i Windows Server för att ansluta till inance and Operations.</span><span class="sxs-lookup"><span data-stu-id="311ce-138">In wide area network (WAN) environments, Remote Desktop in Windows Server isn't required in order to connect to Finance and Operations.</span></span>
 
-### <a name="internet-connectivity-requirements"></a>Krav för Internetanslutning
-Finance and Operations (lokalt) kräver inte Internetanslutning från användarens arbetsplatser. Dock är vissa funktioner inte tillgängliga utan Internetanslutning.
+### <a name="internet-connectivity-requirements"></a><span data-ttu-id="311ce-139">Krav för Internetanslutning</span><span class="sxs-lookup"><span data-stu-id="311ce-139">Internet connectivity requirements</span></span>
+<span data-ttu-id="311ce-140">Finance and Operations (lokalt) kräver inte Internetanslutning från användarens arbetsplatser.</span><span class="sxs-lookup"><span data-stu-id="311ce-140">Finance and Operations (on-premises) doesn't require internet connectivity from user workstations.</span></span> <span data-ttu-id="311ce-141">Dock är vissa funktioner inte tillgängliga utan Internetanslutning.</span><span class="sxs-lookup"><span data-stu-id="311ce-141">However, some features won't be available if there is no internet connectivity.</span></span>
 
 |                    |   |
 |--------------------|---|
-| **Webbläsarklient** | Ett intranätscenario utan Internetanslutning är en designpunkt för alternativet för lokal distribution. Vissa funktioner som kräver molnbaserade tjänster inte är tillgängliga, som till exempel Hjälp- och uppgiftsguidebibliotek i Microsoft Dynamics Lifecycle Services (LCS). |
-| **Server**         | AOS eller Microsoft Azure Service Fabric måste kunna kommunicera med LCS. Lokal webbläsarbaserad klient kräver inte tillgång till Internet. |
-| **Telemetri**      | Telemetridata kan gå förlorade om det är långa avbrott i anslutningen. Avbrott i anslutningen till LCS påverkar inte lokala programfunktioner. |
-| **LCS**            | Anslutning till LCS krävs för distribution, kodinstallation och underhållsåtgärder. |
+| <span data-ttu-id="311ce-142">**Webbläsarklient**</span><span class="sxs-lookup"><span data-stu-id="311ce-142">**Browser client**</span></span> | <span data-ttu-id="311ce-143">Ett intranätscenario utan Internetanslutning är en designpunkt för alternativet för lokal distribution.</span><span class="sxs-lookup"><span data-stu-id="311ce-143">An intranet scenario without internet connectivity is a design point for the on-premises deployment option.</span></span> <span data-ttu-id="311ce-144">Vissa funktioner som kräver molnbaserade tjänster inte är tillgängliga, som till exempel Hjälp- och uppgiftsguidebibliotek i Microsoft Dynamics Lifecycle Services (LCS).</span><span class="sxs-lookup"><span data-stu-id="311ce-144">Some features that require cloud services won't be available, such as Help and Task guide libraries in Microsoft Dynamics Lifecycle Services (LCS).</span></span> |
+| <span data-ttu-id="311ce-145">**Server**</span><span class="sxs-lookup"><span data-stu-id="311ce-145">**Server**</span></span>         | <span data-ttu-id="311ce-146">AOS eller Microsoft Azure Service Fabric måste kunna kommunicera med LCS.</span><span class="sxs-lookup"><span data-stu-id="311ce-146">The AOS or Microsoft Azure Service Fabric tier must be able to communicate with LCS.</span></span> <span data-ttu-id="311ce-147">Lokal webbläsarbaserad klient kräver inte tillgång till Internet.</span><span class="sxs-lookup"><span data-stu-id="311ce-147">The on-premises browser-based client doesn't require internet access.</span></span> |
+| <span data-ttu-id="311ce-148">**Telemetri**</span><span class="sxs-lookup"><span data-stu-id="311ce-148">**Telemetry**</span></span>      | <span data-ttu-id="311ce-149">Telemetridata kan gå förlorade om det är långa avbrott i anslutningen.</span><span class="sxs-lookup"><span data-stu-id="311ce-149">Telemetry data might be lost if there are long interruptions in connectivity.</span></span> <span data-ttu-id="311ce-150">Avbrott i anslutningen till LCS påverkar inte lokala programfunktioner.</span><span class="sxs-lookup"><span data-stu-id="311ce-150">Interruptions in connectivity to LCS don't affect the on-premises application functionality.</span></span> |
+| <span data-ttu-id="311ce-151">**LCS**</span><span class="sxs-lookup"><span data-stu-id="311ce-151">**LCS**</span></span>            | <span data-ttu-id="311ce-152">Anslutning till LCS krävs för distribution, kodinstallation och underhållsåtgärder.</span><span class="sxs-lookup"><span data-stu-id="311ce-152">Connectivity to LCS is required for deployment, code deployment, and servicing operations.</span></span> |
 
-## <a name="telemetry-data-transfer-to-the-cloud"></a>Överföring av telemetridata till molnet
-De flesta telemetridata lagras lokalt och kan nås med hjälp av loggboken i Microsoft Windows. En liten del av telemetrihändelsen överförs till Microsoft telemetriförloppet i molnet för diagnostik. Kunddata och identifierbar data av slutanvändaren tillhör inte telemetridata som skickas till Microsoft. Namn på VM skickas till Microsoft för att underlätta hantering av miljö och diagnostik från LCS-portalen.
+## <a name="telemetry-data-transfer-to-the-cloud"></a><span data-ttu-id="311ce-153">Överföring av telemetridata till molnet</span><span class="sxs-lookup"><span data-stu-id="311ce-153">Telemetry data transfer to the cloud</span></span>
+<span data-ttu-id="311ce-154">De flesta telemetridata lagras lokalt och kan nås med hjälp av loggboken i Microsoft Windows.</span><span class="sxs-lookup"><span data-stu-id="311ce-154">Most telemetry data is stored locally and can be accessed by using Event Viewer in Microsoft Windows.</span></span> <span data-ttu-id="311ce-155">En liten del av telemetrihändelsen överförs till Microsoft telemetriförloppet i molnet för diagnostik.</span><span class="sxs-lookup"><span data-stu-id="311ce-155">A small subset of telemetry events is transferred to the Microsoft telemetry pipeline in the cloud for diagnostics.</span></span> <span data-ttu-id="311ce-156">Kunddata och identifierbar data av slutanvändaren tillhör inte telemetridata som skickas till Microsoft.</span><span class="sxs-lookup"><span data-stu-id="311ce-156">Customer data and user-identifiable data aren't part of the telemetry data that is sent to Microsoft.</span></span> <span data-ttu-id="311ce-157">Namn på VM skickas till Microsoft för att underlätta hantering av miljö och diagnostik från LCS-portalen.</span><span class="sxs-lookup"><span data-stu-id="311ce-157">VM names are sent to Microsoft to help with environment management and diagnostics from the LCS portal.</span></span>
 
-## <a name="domain-requirements"></a>Domänkrav
-Tänk på följande domänkrav när du installerar Finance and Operations (lokal):
+## <a name="domain-requirements"></a><span data-ttu-id="311ce-158">Domänkrav</span><span class="sxs-lookup"><span data-stu-id="311ce-158">Domain requirements</span></span>
+<span data-ttu-id="311ce-159">Tänk på följande domänkrav när du installerar Finance and Operations (lokal):</span><span class="sxs-lookup"><span data-stu-id="311ce-159">Consider the following domain requirements when you install Finance and Operations (on-premises):</span></span>
 
-- Virtuella maskiner som är värdar för Finance and Operations (lokal) komponenter måste tillhöra en Active Directory-domän. Active Directory Domain Services (AD DS) måste konfigureras i enhetligt läge.
-- Virtuella maskiner som kör Finance and Operations (lokal) måste ha åtkomst till varandra. Den här behörigheten är konfigurerad i AD DS. 
-- Domänkontrollanten måste vara Microsoft Windows Server 2012 R2 eller senare och domänfunktionsnivån måste vara 2012 R2 eller större
+- <span data-ttu-id="311ce-160">Virtuella maskiner som är värdar för Finance and Operations (lokal) komponenter måste tillhöra en Active Directory-domän.</span><span class="sxs-lookup"><span data-stu-id="311ce-160">VMs that host Finance and Operations (on-premises) components must belong to an Active Directory domain.</span></span> <span data-ttu-id="311ce-161">Active Directory Domain Services (AD DS) måste konfigureras i enhetligt läge.</span><span class="sxs-lookup"><span data-stu-id="311ce-161">Active Directory Domain Services (AD DS) must be configured in native mode.</span></span>
+- <span data-ttu-id="311ce-162">Virtuella maskiner som kör Finance and Operations (lokal) måste ha åtkomst till varandra.</span><span class="sxs-lookup"><span data-stu-id="311ce-162">VMs that run Finance and Operations (on-premises) components must have access to each other.</span></span> <span data-ttu-id="311ce-163">Den här behörigheten är konfigurerad i AD DS.</span><span class="sxs-lookup"><span data-stu-id="311ce-163">This access is configured in AD DS.</span></span> 
+- <span data-ttu-id="311ce-164">Domänkontrollanten måste vara Microsoft Windows Server 2012 R2 eller senare och domänfunktionsnivån måste vara 2012 R2 eller större</span><span class="sxs-lookup"><span data-stu-id="311ce-164">The domain controller must be Microsoft Windows Server 2012 R2 or later, and the domain functional level must be 2012 R2 or more.</span></span>
 
-## <a name="hardware-requirements"></a>Maskinvarukrav
-Det här avsnittet beskriver den maskinvara som behövs för att köra Finance and Operations (lokalt).
+## <a name="hardware-requirements"></a><span data-ttu-id="311ce-165">Maskinvarukrav</span><span class="sxs-lookup"><span data-stu-id="311ce-165">Hardware requirements</span></span>
+<span data-ttu-id="311ce-166">Det här avsnittet beskriver den maskinvara som behövs för att köra Finance and Operations (lokalt).</span><span class="sxs-lookup"><span data-stu-id="311ce-166">This section describes the hardware that is required in order to run Finance and Operations (on-premises).</span></span>
 
-Kraven på maskinvara varierar baserat på systemkonfigurationen, datasammansättning och de program och funktioner som du bestämmer dig för att använda. Här följer några av de faktorer som kan påverka valet av lämplig maskinvara för Finance and Operations (lokalt):
+<span data-ttu-id="311ce-167">Kraven på maskinvara varierar baserat på systemkonfigurationen, datasammansättning och de program och funktioner som du bestämmer dig för att använda.</span><span class="sxs-lookup"><span data-stu-id="311ce-167">The actual hardware requirements vary, based on the system configuration, the data composition, and the applications and features that you decide to use.</span></span> <span data-ttu-id="311ce-168">Här följer några av de faktorer som kan påverka valet av lämplig maskinvara för Finance and Operations (lokalt):</span><span class="sxs-lookup"><span data-stu-id="311ce-168">Here are some of the factors that can affect the choice of appropriate hardware for Finance and Operations (on-premises):</span></span>
 
-- Antal transaktioner per timme.
-- Antal samtidiga användare.
+- <span data-ttu-id="311ce-169">Antal transaktioner per timme.</span><span class="sxs-lookup"><span data-stu-id="311ce-169">The number of transactions per hour</span></span>
+- <span data-ttu-id="311ce-170">Antal samtidiga användare.</span><span class="sxs-lookup"><span data-stu-id="311ce-170">The number of concurrent users</span></span>
 
-## <a name="minimum-infrastructure-requirements"></a>Minsta infrastrukturkrav
-Finance and Operations (lokalt) använder Service Fabric som värd för AOS, batch, datahantering, Management reporter och Environment orchestrator-tjänster. Microsoft SQL Server Reporting Services (SSRS) finns inte i Service Fabric-grupperingen.
+## <a name="minimum-infrastructure-requirements"></a><span data-ttu-id="311ce-171">Minsta infrastrukturkrav</span><span class="sxs-lookup"><span data-stu-id="311ce-171">Minimum infrastructure requirements</span></span>
+<span data-ttu-id="311ce-172">Finance and Operations (lokalt) använder Service Fabric som värd för AOS, batch, datahantering, Management reporter och Environment orchestrator-tjänster.</span><span class="sxs-lookup"><span data-stu-id="311ce-172">Finance and Operations (on-premises) uses Service Fabric to host the AOS, Batch, Data management, Management reporter, and Environment orchestrator services.</span></span> <span data-ttu-id="311ce-173">Microsoft SQL Server Reporting Services (SSRS) finns inte i Service Fabric-grupperingen.</span><span class="sxs-lookup"><span data-stu-id="311ce-173">Microsoft SQL Server Reporting Services (SSRS) aren't hosted in the Service Fabric cluster.</span></span>
 
-SQL Server måste ha en HADRON inställning med hög tillgänglighet som har minst två noder för produktionsanvändning.
+<span data-ttu-id="311ce-174">SQL Server måste ha en HADRON inställning med hög tillgänglighet som har minst två noder för produktionsanvändning.</span><span class="sxs-lookup"><span data-stu-id="311ce-174">SQL Server must have a high-availability HADRON setup that has at least two nodes for production use.</span></span>
 
-Bilden nedan visar det minsta rekommenderade antalet noder i din Service Fabric-gruppering.
+<span data-ttu-id="311ce-175">Bilden nedan visar det minsta rekommenderade antalet noder i din Service Fabric-gruppering.</span><span class="sxs-lookup"><span data-stu-id="311ce-175">The following illustration shows the minimum number of nodes that is recommended for your Service Fabric cluster.</span></span>
 
-[![Rekommenderat antal noder för Service Fabric-gruppering](./media/system-reqs-on-premises-01.png)](./media/system-reqs-on-premises-01.png) 
+<span data-ttu-id="311ce-176">[![Rekommenderat antal noder för Service Fabric-gruppering](./media/system-reqs-on-premises-01.png)](./media/system-reqs-on-premises-01.png)</span><span class="sxs-lookup"><span data-stu-id="311ce-176">[![Recommended number of nodes for the Service Fabric cluster](./media/system-reqs-on-premises-01.png)](./media/system-reqs-on-premises-01.png)</span></span> 
 
-## <a name="processor-and-ram-requirements"></a>Processor och RAM-krav
-Följande tabell visar antalet processorer och mängden direktminne (RAM) som krävs för de olika rollerna som krävs för att köra det här distributionsalternativet. För mer information läs rekommendationen om minimikrav för Service Fabric-grupperingar i [Planera och förbereda distributionen av fristående Service Fabric-gruppering](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
+## <a name="processor-and-ram-requirements"></a><span data-ttu-id="311ce-177">Processor och RAM-krav</span><span class="sxs-lookup"><span data-stu-id="311ce-177">Processor and RAM requirements</span></span>
+<span data-ttu-id="311ce-178">Följande tabell visar antalet processorer och mängden direktminne (RAM) som krävs för de olika rollerna som krävs för att köra det här distributionsalternativet.</span><span class="sxs-lookup"><span data-stu-id="311ce-178">The following tables list the number of processors and the amount of random-access memory (RAM) that are required for each role that is required in order to run this deployment option.</span></span> <span data-ttu-id="311ce-179">För mer information läs rekommendationen om minimikrav för Service Fabric-grupperingar i [Planera och förbereda distributionen av fristående Service Fabric-gruppering](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).</span><span class="sxs-lookup"><span data-stu-id="311ce-179">For more information, see the recommended minimum requirements for a Service Fabric standalone cluster in [Plan and prepare your Service Fabric cluster](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).</span></span>
 
 > [!NOTE]
-> Om andra Microsoft-program är installerade på samma dator, måste systemet även uppfylla maskinvarukraven för programvaran. Om andra serverprogram är installerade på samma dator som AOS, rekommenderar vi att du begränsar dessa serverprogram till 1 gigabyte (GB) av RAM.
+> <span data-ttu-id="311ce-180">Om andra Microsoft-program är installerade på samma dator, måste systemet även uppfylla maskinvarukraven för programvaran.</span><span class="sxs-lookup"><span data-stu-id="311ce-180">If other Microsoft software is installed on the same computer, the system must also comply with the hardware requirements for that software.</span></span> <span data-ttu-id="311ce-181">Om andra serverprogram är installerade på samma dator som AOS, rekommenderar vi att du begränsar dessa serverprogram till 1 gigabyte (GB) av RAM.</span><span class="sxs-lookup"><span data-stu-id="311ce-181">If other server applications are installed on the same computer as AOS, we recommend that you limit those server applications 1 gigabyte (GB) of RAM.</span></span>
 
-**Storlekssortering efter roll och topologityp**
+<span data-ttu-id="311ce-182">**Storlekssortering efter roll och topologityp**</span><span class="sxs-lookup"><span data-stu-id="311ce-182">**Sizing by role and topology type**</span></span>
 
-| Topologi   | Roll (nodtyp)              | Rekommenderade processorkärnor | Rekommenderat minne (GB) |
+| <span data-ttu-id="311ce-183">Topologi</span><span class="sxs-lookup"><span data-stu-id="311ce-183">Topology</span></span>   | <span data-ttu-id="311ce-184">Roll (nodtyp)</span><span class="sxs-lookup"><span data-stu-id="311ce-184">Role (node type)</span></span>              | <span data-ttu-id="311ce-185">Rekommenderade processorkärnor</span><span class="sxs-lookup"><span data-stu-id="311ce-185">Recommended processor cores</span></span> | <span data-ttu-id="311ce-186">Rekommenderat minne (GB)</span><span class="sxs-lookup"><span data-stu-id="311ce-186">Recommended memory (GB)</span></span> |
 |------------|-------------------------------|-----------------------------|-------------------------|
-| Produktion | AOS, datahantering, batch   | 8                           | 24                      |
-|            | Styrningsrapportering           | 4                           | 16                      |
-|            | SQL Server Reporting Services  | 4                           | 16                      |
-|            | Orchestrator                  | 4                           | 16                      |
-| Begränsat fel    | AOS, datahantering, batch   | 4                           | 24                      |
-|            | Styrningsrapportering           | 4                           | 16                      |
-|            | SQL Server Reporting Services  | 4                           | 16                      |
-|            | Orchestrator                  | 4                           | 16                      |
+| <span data-ttu-id="311ce-187">Produktion</span><span class="sxs-lookup"><span data-stu-id="311ce-187">Production</span></span> | <span data-ttu-id="311ce-188">AOS, datahantering, batch</span><span class="sxs-lookup"><span data-stu-id="311ce-188">AOS, Data management, Batch</span></span>   | <span data-ttu-id="311ce-189">8</span><span class="sxs-lookup"><span data-stu-id="311ce-189">8</span></span>                           | <span data-ttu-id="311ce-190">24</span><span class="sxs-lookup"><span data-stu-id="311ce-190">24</span></span>                      |
+|            | <span data-ttu-id="311ce-191">Styrningsrapportering</span><span class="sxs-lookup"><span data-stu-id="311ce-191">Management Reporter</span></span>           | <span data-ttu-id="311ce-192">4</span><span class="sxs-lookup"><span data-stu-id="311ce-192">4</span></span>                           | <span data-ttu-id="311ce-193">16</span><span class="sxs-lookup"><span data-stu-id="311ce-193">16</span></span>                      |
+|            | <span data-ttu-id="311ce-194">SQL Server Reporting Services </span><span class="sxs-lookup"><span data-stu-id="311ce-194">SQL Server Reporting Services</span></span> | <span data-ttu-id="311ce-195">4</span><span class="sxs-lookup"><span data-stu-id="311ce-195">4</span></span>                           | <span data-ttu-id="311ce-196">16</span><span class="sxs-lookup"><span data-stu-id="311ce-196">16</span></span>                      |
+|            | <span data-ttu-id="311ce-197">Orchestrator</span><span class="sxs-lookup"><span data-stu-id="311ce-197">Orchestrator</span></span>                  | <span data-ttu-id="311ce-198">4</span><span class="sxs-lookup"><span data-stu-id="311ce-198">4</span></span>                           | <span data-ttu-id="311ce-199">16</span><span class="sxs-lookup"><span data-stu-id="311ce-199">16</span></span>                      |
+| <span data-ttu-id="311ce-200">Begränsat fel</span><span class="sxs-lookup"><span data-stu-id="311ce-200">Sandbox</span></span>    | <span data-ttu-id="311ce-201">AOS, datahantering, batch</span><span class="sxs-lookup"><span data-stu-id="311ce-201">AOS, Data management, Batch</span></span>   | <span data-ttu-id="311ce-202">4</span><span class="sxs-lookup"><span data-stu-id="311ce-202">4</span></span>                           | <span data-ttu-id="311ce-203">24</span><span class="sxs-lookup"><span data-stu-id="311ce-203">24</span></span>                      |
+|            | <span data-ttu-id="311ce-204">Styrningsrapportering</span><span class="sxs-lookup"><span data-stu-id="311ce-204">Management Reporter</span></span>           | <span data-ttu-id="311ce-205">4</span><span class="sxs-lookup"><span data-stu-id="311ce-205">4</span></span>                           | <span data-ttu-id="311ce-206">16</span><span class="sxs-lookup"><span data-stu-id="311ce-206">16</span></span>                      |
+|            | <span data-ttu-id="311ce-207">SQL Server Reporting Services </span><span class="sxs-lookup"><span data-stu-id="311ce-207">SQL Server Reporting Services</span></span> | <span data-ttu-id="311ce-208">4</span><span class="sxs-lookup"><span data-stu-id="311ce-208">4</span></span>                           | <span data-ttu-id="311ce-209">16</span><span class="sxs-lookup"><span data-stu-id="311ce-209">16</span></span>                      |
+|            | <span data-ttu-id="311ce-210">Orchestrator</span><span class="sxs-lookup"><span data-stu-id="311ce-210">Orchestrator</span></span>                  | <span data-ttu-id="311ce-211">4</span><span class="sxs-lookup"><span data-stu-id="311ce-211">4</span></span>                           | <span data-ttu-id="311ce-212">16</span><span class="sxs-lookup"><span data-stu-id="311ce-212">16</span></span>                      |
 
-**Minsta storleksuppskattningar för produktion och distributioner med begränsat fel\***
+<span data-ttu-id="311ce-213">**Minsta storleksuppskattningar för produktion och distributioner med begränsat fel\***</span><span class="sxs-lookup"><span data-stu-id="311ce-213">**Minimum sizing estimates for production and sandbox deployments\***</span></span>
 
-| Topologi                                        | Roll                          | Antal instanser |
+| <span data-ttu-id="311ce-214">Topologi</span><span class="sxs-lookup"><span data-stu-id="311ce-214">Topology</span></span>                                        | <span data-ttu-id="311ce-215">Roll</span><span class="sxs-lookup"><span data-stu-id="311ce-215">Role</span></span>                          | <span data-ttu-id="311ce-216">Antal instanser</span><span class="sxs-lookup"><span data-stu-id="311ce-216">Number of instances</span></span> |
 |-------------------------------------------------|-------------------------------|---------------------|
-| Produktion                                      | AOS (datahantering, batch)  | 3                   |
-|                                                 | Styrningsrapportering           | 2                   |
-|                                                 | SQL Server Reporting Services  | 1                   |
-|                                                 | Orchestrator\*\*              | 3                   |
-| Begränsat fel                                         | AOS, datahantering, batch   | 2                   |
-|                                                 | Styrningsrapportering           | 1                   |
-|                                                 | SQL Server Reporting Services  | 1                   |
-|                                                 | Orchestrator                  | 3                   |
-| *Sammanfattningsproduktion och topologier med begränsat fel* |                               | *16*                |
+| <span data-ttu-id="311ce-217">Produktion</span><span class="sxs-lookup"><span data-stu-id="311ce-217">Production</span></span>                                      | <span data-ttu-id="311ce-218">AOS (datahantering, batch)</span><span class="sxs-lookup"><span data-stu-id="311ce-218">AOS (Data management, Batch)</span></span>  | <span data-ttu-id="311ce-219">3</span><span class="sxs-lookup"><span data-stu-id="311ce-219">3</span></span>                   |
+|                                                 | <span data-ttu-id="311ce-220">Styrningsrapportering</span><span class="sxs-lookup"><span data-stu-id="311ce-220">Management Reporter</span></span>           | <span data-ttu-id="311ce-221">2</span><span class="sxs-lookup"><span data-stu-id="311ce-221">2</span></span>                   |
+|                                                 | <span data-ttu-id="311ce-222">SQL Server Reporting Services </span><span class="sxs-lookup"><span data-stu-id="311ce-222">SQL Server Reporting Services</span></span> | <span data-ttu-id="311ce-223">1</span><span class="sxs-lookup"><span data-stu-id="311ce-223">1</span></span>                   |
+|                                                 | <span data-ttu-id="311ce-224">Orchestrator\*\*</span><span class="sxs-lookup"><span data-stu-id="311ce-224">Orchestrator\*\*</span></span>              | <span data-ttu-id="311ce-225">3</span><span class="sxs-lookup"><span data-stu-id="311ce-225">3</span></span>                   |
+| <span data-ttu-id="311ce-226">Begränsat fel</span><span class="sxs-lookup"><span data-stu-id="311ce-226">Sandbox</span></span>                                         | <span data-ttu-id="311ce-227">AOS, datahantering, batch</span><span class="sxs-lookup"><span data-stu-id="311ce-227">AOS, Data management, Batch</span></span>   | <span data-ttu-id="311ce-228">2</span><span class="sxs-lookup"><span data-stu-id="311ce-228">2</span></span>                   |
+|                                                 | <span data-ttu-id="311ce-229">Styrningsrapportering</span><span class="sxs-lookup"><span data-stu-id="311ce-229">Management Reporter</span></span>           | <span data-ttu-id="311ce-230">1</span><span class="sxs-lookup"><span data-stu-id="311ce-230">1</span></span>                   |
+|                                                 | <span data-ttu-id="311ce-231">SQL Server Reporting Services </span><span class="sxs-lookup"><span data-stu-id="311ce-231">SQL Server Reporting Services</span></span> | <span data-ttu-id="311ce-232">1</span><span class="sxs-lookup"><span data-stu-id="311ce-232">1</span></span>                   |
+|                                                 | <span data-ttu-id="311ce-233">Orchestrator</span><span class="sxs-lookup"><span data-stu-id="311ce-233">Orchestrator</span></span>                  | <span data-ttu-id="311ce-234">3</span><span class="sxs-lookup"><span data-stu-id="311ce-234">3</span></span>                   |
+| <span data-ttu-id="311ce-235">*Sammanfattningsproduktion och topologier med begränsat fel*</span><span class="sxs-lookup"><span data-stu-id="311ce-235">*Summary for production and sandbox topologies*</span></span> |                               | <span data-ttu-id="311ce-236">*16*</span><span class="sxs-lookup"><span data-stu-id="311ce-236">*16*</span></span>                |
 
-\* Siffrorna i tabellen verifieras av våra förhandsgranskningskunder och kan justeras utifrån feedback från dessa kunder.
+<span data-ttu-id="311ce-237">\* Siffrorna i tabellen verifieras av våra förhandsgranskningskunder och kan justeras utifrån feedback från dessa kunder.</span><span class="sxs-lookup"><span data-stu-id="311ce-237">\* The numbers in this table are being validated by our preview customers and might be adjusted based on the feedback from those customers.</span></span>
 
-\*\* Orchestrator anges som den primära nodtypen och används för att köra Service Fabric-tjänsten också.
+<span data-ttu-id="311ce-238">\*\* Orchestrator anges som den primära nodtypen och används för att köra Service Fabric-tjänsten också.</span><span class="sxs-lookup"><span data-stu-id="311ce-238">\*\* Orchestrator is designated as the primary node type and will also be used to run the Service Fabric services.</span></span>
 
-**Initiala uppskattningar för intern SQL Server och AD DS**
+<span data-ttu-id="311ce-239">**Initiala uppskattningar för intern SQL Server och AD DS**</span><span class="sxs-lookup"><span data-stu-id="311ce-239">**Initial estimates for the back-end SQL Server and AD DS**</span></span>
 
 <table>
 <thead>
 <tr>
 <th></th>
-<th>Roll</th>
-<th>VM/förekomster</th>
-<th>Kärnor</th>
-<th>Totala kärnor</th>
-<th>Minne per instans (GB)</th>
-<th>Totalt minne (GB)</th>
+<th><span data-ttu-id="311ce-240">Roll</span><span class="sxs-lookup"><span data-stu-id="311ce-240">Role</span></span></th>
+<th><span data-ttu-id="311ce-241">VM/förekomster</span><span class="sxs-lookup"><span data-stu-id="311ce-241">VMs/instances</span></span></th>
+<th><span data-ttu-id="311ce-242">Kärnor</span><span class="sxs-lookup"><span data-stu-id="311ce-242">Cores</span></span></th>
+<th><span data-ttu-id="311ce-243">Totala kärnor</span><span class="sxs-lookup"><span data-stu-id="311ce-243">Total cores</span></span></th>
+<th><span data-ttu-id="311ce-244">Minne per instans (GB)</span><span class="sxs-lookup"><span data-stu-id="311ce-244">Memory per instance (GB)</span></span></th>
+<th><span data-ttu-id="311ce-245">Totalt minne (GB)</span><span class="sxs-lookup"><span data-stu-id="311ce-245">Total memory (GB)</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td rowspan="3"><strong>Delad infrastruktur</strong></td>
-<td>SQL Server*</td>
-<td>2</td>
-<td>8</td>
-<td>16</td>
-<td>32</td>
-<td>64</td>
+<td rowspan="3"><span data-ttu-id="311ce-246"><strong>Delad infrastruktur</strong></span><span class="sxs-lookup"><span data-stu-id="311ce-246"><strong>Shared infrastructure</strong></span></span></td>
+<td><span data-ttu-id="311ce-247">SQL Server*</span><span class="sxs-lookup"><span data-stu-id="311ce-247">SQL Server*</span></span></td>
+<td><span data-ttu-id="311ce-248">2</span><span class="sxs-lookup"><span data-stu-id="311ce-248">2</span></span></td>
+<td><span data-ttu-id="311ce-249">8</span><span class="sxs-lookup"><span data-stu-id="311ce-249">8</span></span></td>
+<td><span data-ttu-id="311ce-250">16</span><span class="sxs-lookup"><span data-stu-id="311ce-250">16</span></span></td>
+<td><span data-ttu-id="311ce-251">32</span><span class="sxs-lookup"><span data-stu-id="311ce-251">32</span></span></td>
+<td><span data-ttu-id="311ce-252">64</span><span class="sxs-lookup"><span data-stu-id="311ce-252">64</span></span></td>
 </tr>
 <tr>
-<td>Filserver/lagringsnätverk/högtillgänglig lagring</td>
-<td colspan="5"><p>Intern lagring måste baseras på SSD (solid-state drives) i ett körningslagringsnätverk (SAN).</p>
-<p>Genomflödet storlek och ingångs-/utgångsåtgärder per sekund (IOPS) baseras på arbetsbelastningens storlek.</p></td>
+<td><span data-ttu-id="311ce-253">Filserver/lagringsnätverk/högtillgänglig lagring</span><span class="sxs-lookup"><span data-stu-id="311ce-253">File server/Storage area network/Highly available storage</span></span></td>
+<td colspan="5"><p><span data-ttu-id="311ce-254">Intern lagring måste baseras på SSD (solid-state drives) i ett körningslagringsnätverk (SAN).</span><span class="sxs-lookup"><span data-stu-id="311ce-254">The back-end storage must be based on solid-state drives (SSDs) on a runtime storage area network (SAN).</span></span></p>
+<p><span data-ttu-id="311ce-255">Genomflödet storlek och ingångs-/utgångsåtgärder per sekund (IOPS) baseras på arbetsbelastningens storlek.</span><span class="sxs-lookup"><span data-stu-id="311ce-255">Size and input/output operations per second (IOPS) throughput is based on the size of the workload.</span></span></p></td>
 </tr>
 <tr>
-<td>Active Directory</td>
-<td>3</td>
-<td>4</td>
-<td>12</td>
-<td>16</td>
-<td>48</td>
+<td><span data-ttu-id="311ce-256">Active Directory</span><span class="sxs-lookup"><span data-stu-id="311ce-256">Active Directory</span></span></td>
+<td><span data-ttu-id="311ce-257">3</span><span class="sxs-lookup"><span data-stu-id="311ce-257">3</span></span></td>
+<td><span data-ttu-id="311ce-258">4</span><span class="sxs-lookup"><span data-stu-id="311ce-258">4</span></span></td>
+<td><span data-ttu-id="311ce-259">12</span><span class="sxs-lookup"><span data-stu-id="311ce-259">12</span></span></td>
+<td><span data-ttu-id="311ce-260">16</span><span class="sxs-lookup"><span data-stu-id="311ce-260">16</span></span></td>
+<td><span data-ttu-id="311ce-261">48</span><span class="sxs-lookup"><span data-stu-id="311ce-261">48</span></span></td>
 </tr>
 <tr>
-<td><em>Sammanfattning för en delad infrastruktur</em></td>
+<td><span data-ttu-id="311ce-262"><em>Sammanfattning för en delad infrastruktur</em></span><span class="sxs-lookup"><span data-stu-id="311ce-262"><em>Summary for shared infrastructure</em></span></span></td>
 <td></td>
-<td><em>5</em></td>
+<td><span data-ttu-id="311ce-263"><em>5</em></span><span class="sxs-lookup"><span data-stu-id="311ce-263"><em>5</em></span></span></td>
 <td></td>
-<td><em>28</em></td>
+<td><span data-ttu-id="311ce-264"><em>28</em></span><span class="sxs-lookup"><span data-stu-id="311ce-264"><em>28</em></span></span></td>
 <td></td>
-<td><em>112</em></td>
+<td><span data-ttu-id="311ce-265"><em>112</em></span><span class="sxs-lookup"><span data-stu-id="311ce-265"><em>112</em></span></span></td>
 </tr>
 </tbody>
 </table>
 
-\*SQL Server-storlekar kan variera mycket beroende på arbetsbelastning. Mer information finns i [Maskinvarustorlek för lokala miljöer](hardware-sizing-on-premises-environments.md).
+<span data-ttu-id="311ce-266">\*SQL Server-storlekar kan variera mycket beroende på arbetsbelastning.</span><span class="sxs-lookup"><span data-stu-id="311ce-266">\* SQL Server sizes are highly dependent on workloads.</span></span> <span data-ttu-id="311ce-267">Mer information finns i [Maskinvarustorlek för lokala miljöer](hardware-sizing-on-premises-environments.md).</span><span class="sxs-lookup"><span data-stu-id="311ce-267">For more information, see [Hardware sizing for on-premises environments](hardware-sizing-on-premises-environments.md).</span></span>
 
-## <a name="storage"></a>Lagring
+## <a name="storage"></a><span data-ttu-id="311ce-268">Lagring</span><span class="sxs-lookup"><span data-stu-id="311ce-268">Storage</span></span>
 
-- **AOS** - Finance and Operations (lokalt) använder en Server Message Block (SMB) 3.0-resurs för att lagra ostrukturerade data. Mer information finns i [Lagringsplatser direkt i Windows Server 2016](/windows-server/storage/storage-spaces/storage-spaces-direct-overview).
-- **SQL** – Följande alternativ är gångbara:
+- <span data-ttu-id="311ce-269">**AOS** - Finance and Operations (lokalt) använder en Server Message Block (SMB) 3.0-resurs för att lagra ostrukturerade data.</span><span class="sxs-lookup"><span data-stu-id="311ce-269">**AOS** – Finance and Operations (on-premises) uses a Server Message Block (SMB) 3.0 share to store unstructured data.</span></span> <span data-ttu-id="311ce-270">Mer information finns i [Lagringsplatser direkt i Windows Server 2016](/windows-server/storage/storage-spaces/storage-spaces-direct-overview).</span><span class="sxs-lookup"><span data-stu-id="311ce-270">For more information, see [Storage Spaces Direct in Windows Server 2016](/windows-server/storage/storage-spaces/storage-spaces-direct-overview).</span></span>
+- <span data-ttu-id="311ce-271">**SQL** – Följande alternativ är gångbara:</span><span class="sxs-lookup"><span data-stu-id="311ce-271">**SQL** – The following options are viable:</span></span>
 
-    - En lättillgänglig SSD-inställning
-    - En SAN som är optimerad för OLTP-genomflöden (online transaction processing)
-    - Högpresterande direktansluten lagring (DAS) 
+    - <span data-ttu-id="311ce-272">En lättillgänglig SSD-inställning</span><span class="sxs-lookup"><span data-stu-id="311ce-272">A highly available SSD setup</span></span>
+    - <span data-ttu-id="311ce-273">En SAN som är optimerad för OLTP-genomflöden (online transaction processing)</span><span class="sxs-lookup"><span data-stu-id="311ce-273">A SAN that is optimized for online transaction processing (OLTP) throughputs</span></span>
+    - <span data-ttu-id="311ce-274">Högpresterande direktansluten lagring (DAS)</span><span class="sxs-lookup"><span data-stu-id="311ce-274">High-performance direct-attached storage (DAS)</span></span> 
 
-- **SQL Server och datahantering IOPS** – Lagring för både datahantering och SQL Server ska ha minst 2 000 IOPS. Produktions-IOPS beror på flera faktorer. Mer information finns i [Maskinvarustorlek för lokala miljöer](hardware-sizing-on-premises-environments.md).
-- **VM IOPS** – varje VM bör ha minst 100 skriv-IOPS.
+- <span data-ttu-id="311ce-275">**SQL Server och datahantering IOPS** – Lagring för både datahantering och SQL Server ska ha minst 2 000 IOPS.</span><span class="sxs-lookup"><span data-stu-id="311ce-275">**SQL Server and data management IOPS** – The storage for both data management and SQL Server should have at least 2,000 IOPS.</span></span> <span data-ttu-id="311ce-276">Produktions-IOPS beror på flera faktorer.</span><span class="sxs-lookup"><span data-stu-id="311ce-276">Production IOPS depends on many factors.</span></span> <span data-ttu-id="311ce-277">Mer information finns i [Maskinvarustorlek för lokala miljöer](hardware-sizing-on-premises-environments.md).</span><span class="sxs-lookup"><span data-stu-id="311ce-277">For more information, see [Hardware sizing for on-premises environments](hardware-sizing-on-premises-environments.md).</span></span>
+- <span data-ttu-id="311ce-278">**VM IOPS** – varje VM bör ha minst 100 skriv-IOPS.</span><span class="sxs-lookup"><span data-stu-id="311ce-278">**VM IOPS** – Each VM should have at least 100 write IOPS.</span></span>
 
-## <a name="virtual-host-requirements"></a>Krav för virtuell värd
-När du ställer in virtuella värdar för en Finance and Operations-miljö (lokalt) gäller följande riktlinjer: [planera och förbereda din Service Fabric-gruppering](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation) och [Beskriva en Service Fabric-gruppering](/azure/service-fabric/service-fabric-cluster-resource-manager-cluster-description). Varje virtuell värd bör ha tillräckligt med kärnor för den infrastruktur som dimensioneras. Flera avancerade konfigurationer är möjliga om SQL Server finns på fysisk maskinvara men allt annat är virtualiserat. Om SQL Server är virtualiserat ska diskundersystemet vara en snabb SAN eller motsvarande. Kontrollera alltid att grundläggande inställningar för virtuell server är hög tillgängliga och redundanta. I samtliga fall, om virtualisering används, ska ingen VM-ögonblicksbild tas.
+## <a name="virtual-host-requirements"></a><span data-ttu-id="311ce-279">Krav för virtuell värd</span><span class="sxs-lookup"><span data-stu-id="311ce-279">Virtual host requirements</span></span>
+<span data-ttu-id="311ce-280">När du ställer in virtuella värdar för en Finance and Operations-miljö (lokalt) gäller följande riktlinjer: [planera och förbereda din Service Fabric-gruppering](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation) och [Beskriva en Service Fabric-gruppering](/azure/service-fabric/service-fabric-cluster-resource-manager-cluster-description).</span><span class="sxs-lookup"><span data-stu-id="311ce-280">When you set up the virtual hosts for a Finance and Operations (on-premises) environment, see the guidelines in [Plan and prepare your Service Fabric cluster](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation) and [Describing a service fabric cluster](/azure/service-fabric/service-fabric-cluster-resource-manager-cluster-description).</span></span> <span data-ttu-id="311ce-281">Varje virtuell värd bör ha tillräckligt med kärnor för den infrastruktur som dimensioneras.</span><span class="sxs-lookup"><span data-stu-id="311ce-281">Each virtual host should have enough cores for the infrastructure that is being sized.</span></span> <span data-ttu-id="311ce-282">Flera avancerade konfigurationer är möjliga om SQL Server finns på fysisk maskinvara men allt annat är virtualiserat.</span><span class="sxs-lookup"><span data-stu-id="311ce-282">Multiple advanced configurations are possible, where SQL Server resides on physical hardware but everything else is virtualized.</span></span> <span data-ttu-id="311ce-283">Om SQL Server är virtualiserat ska diskundersystemet vara en snabb SAN eller motsvarande.</span><span class="sxs-lookup"><span data-stu-id="311ce-283">If SQL Server is virtualized, the disk subsystem should be a fast SAN or the equivalent.</span></span> <span data-ttu-id="311ce-284">Kontrollera alltid att grundläggande inställningar för virtuell server är hög tillgängliga och redundanta.</span><span class="sxs-lookup"><span data-stu-id="311ce-284">In all cases, make sure that the basic setup of the virtual host is highly available and redundant.</span></span> <span data-ttu-id="311ce-285">I samtliga fall, om virtualisering används, ska ingen VM-ögonblicksbild tas.</span><span class="sxs-lookup"><span data-stu-id="311ce-285">In all cases, when virtualization is used, no VM snapshots should be taken.</span></span>
 
-## <a name="software-requirements-for-all-server-computers"></a>Programvarukrav för alla serverdatorer
-Följande programvara måste finnas på datorn innan några Finance and Operations (lokal)-komponenter kan installeras:
+## <a name="software-requirements-for-all-server-computers"></a><span data-ttu-id="311ce-286">Programvarukrav för alla serverdatorer</span><span class="sxs-lookup"><span data-stu-id="311ce-286">Software requirements for all server computers</span></span>
+<span data-ttu-id="311ce-287">Följande programvara måste finnas på datorn innan några Finance and Operations (lokal)-komponenter kan installeras:</span><span class="sxs-lookup"><span data-stu-id="311ce-287">The following software must be present on a computer before any Finance and Operations (on-premises) components can be installed:</span></span>
 
-- Microsoft .NET Framework version 4.5.1 eller senare
-- Service Fabric
+- <span data-ttu-id="311ce-288">Microsoft .NET Framework version 4.5.1 eller senare</span><span class="sxs-lookup"><span data-stu-id="311ce-288">The Microsoft .NET Framework version 4.5.1 or later</span></span>
+- <span data-ttu-id="311ce-289">Service Fabric</span><span class="sxs-lookup"><span data-stu-id="311ce-289">Service Fabric</span></span>
 
-För mer information, se [planera och förbereda ditt kluster med Service Fabric](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).
+<span data-ttu-id="311ce-290">För mer information, se [planera och förbereda ditt kluster med Service Fabric](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).</span><span class="sxs-lookup"><span data-stu-id="311ce-290">For more information, see [Plan and prepare your Service Fabric cluster](/azure/service-fabric/service-fabric-cluster-standalone-deployment-preparation).</span></span>
 
-## <a name="supported-server-operating-systems"></a>Serveroperativsystem som stöds
-Följande tabell innehåller serveroperativsystem som stöds för Finance and Operations-komponenter.
+## <a name="supported-server-operating-systems"></a><span data-ttu-id="311ce-291">Serveroperativsystem som stöds</span><span class="sxs-lookup"><span data-stu-id="311ce-291">Supported server operating systems</span></span>
+<span data-ttu-id="311ce-292">Följande tabell innehåller serveroperativsystem som stöds för Finance and Operations-komponenter.</span><span class="sxs-lookup"><span data-stu-id="311ce-292">The following table lists the server operating systems that are supported for Finance and Operations components.</span></span>
 
-| Operativsystem                                     | Anteckningar |
+| <span data-ttu-id="311ce-293">Operativsystem</span><span class="sxs-lookup"><span data-stu-id="311ce-293">Operating system</span></span>                                     | <span data-ttu-id="311ce-294">Anteckningar</span><span class="sxs-lookup"><span data-stu-id="311ce-294">Notes</span></span> |
 |------------------------------------------------------|-------|
-| Microsoft Windows Server 2016 Datacenter eller Standard | Dessa krav gäller för databasen och Service Fabric-klustret som är värd för AOS. |
+| <span data-ttu-id="311ce-295">Microsoft Windows Server 2016 Datacenter eller Standard</span><span class="sxs-lookup"><span data-stu-id="311ce-295">Microsoft Windows Server 2016 Datacenter or Standard</span></span> | <span data-ttu-id="311ce-296">Dessa krav gäller för databasen och Service Fabric-klustret som är värd för AOS.</span><span class="sxs-lookup"><span data-stu-id="311ce-296">These requirements are for the database and the Service Fabric cluster that hosts AOS.</span></span> |
 
-## <a name="software-requirements-for-database-servers"></a>Programvarukrav för alla databasservrar
+## <a name="software-requirements-for-database-servers"></a><span data-ttu-id="311ce-297">Programvarukrav för alla databasservrar</span><span class="sxs-lookup"><span data-stu-id="311ce-297">Software requirements for database servers</span></span>
 
-- Endast 64-bitars version av SQL Server 2016 stöds.
-- I en produktionsmiljö rekommenderar vi att du installerar den senaste kumulativa uppdateringen (CU) för versionen av SQL Server som du använder.
-- Finance and Operations (lokalt) stödjer Unicode-sorteringar som är skiftlägeskänsliga, accentkänsliga, kana-känslig och breddkänsliga. Sorteringen måste matcha de nationella inställningarna på de datorer som kör AOS-instanser. Om du sätter upp en ny installation rekommenderar vi att du väljer en Windows-sortering istället för en SQL Server-sortering. Mer information om hur du väljer en sortering för en SQL Server-databas finns på [dokumentationen till SQL Server](/sql/sql-server/sql-server-technical-documentation).
+- <span data-ttu-id="311ce-298">Endast 64-bitars version av SQL Server 2016 stöds.</span><span class="sxs-lookup"><span data-stu-id="311ce-298">Only 64-bit versions of SQL Server 2016 are supported.</span></span>
+- <span data-ttu-id="311ce-299">I en produktionsmiljö rekommenderar vi att du installerar den senaste kumulativa uppdateringen (CU) för versionen av SQL Server som du använder.</span><span class="sxs-lookup"><span data-stu-id="311ce-299">In a production environment, we recommend that you install the latest cumulative update (CU) for the version of SQL Server that you’re using.</span></span>
+- <span data-ttu-id="311ce-300">Finance and Operations (lokalt) stödjer Unicode-sorteringar som är skiftlägeskänsliga, accentkänsliga, kana-känslig och breddkänsliga.</span><span class="sxs-lookup"><span data-stu-id="311ce-300">Finance and Operations (on-premises) supports Unicode collations that are case-insensitive, accent-sensitive, kana-sensitive, and width-insensitive.</span></span> <span data-ttu-id="311ce-301">Sorteringen måste matcha de nationella inställningarna på de datorer som kör AOS-instanser.</span><span class="sxs-lookup"><span data-stu-id="311ce-301">The collation must match the Windows locale of the computers that are running AOS instances.</span></span> <span data-ttu-id="311ce-302">Om du sätter upp en ny installation rekommenderar vi att du väljer en Windows-sortering istället för en SQL Server-sortering.</span><span class="sxs-lookup"><span data-stu-id="311ce-302">If you’re setting up a new installation, we recommend that you select a Windows collation instead of a SQL Server collation.</span></span> <span data-ttu-id="311ce-303">Mer information om hur du väljer en sortering för en SQL Server-databas finns på [dokumentationen till SQL Server](/sql/sql-server/sql-server-technical-documentation).</span><span class="sxs-lookup"><span data-stu-id="311ce-303">For more information about how to select a collation for a SQL Server database, see the [SQL Server documentation](/sql/sql-server/sql-server-technical-documentation).</span></span>
 
-Följande tabell innehåller de SQL Server-versioner som stöds för Finance and Operations-databaser. Mer information finns i maskinvarukraven för [SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-2016).
+<span data-ttu-id="311ce-304">Följande tabell innehåller de SQL Server-versioner som stöds för Finance and Operations-databaser.</span><span class="sxs-lookup"><span data-stu-id="311ce-304">The following table lists the SQL Server versions that are supported for the Finance and Operations databases.</span></span> <span data-ttu-id="311ce-305">Mer information finns i maskinvarukraven för [SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-2016).</span><span class="sxs-lookup"><span data-stu-id="311ce-305">For more information, see the minimum hardware requirements for [SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-2016).</span></span>
 
-| Behov                                                      | Anteckningar |
+| <span data-ttu-id="311ce-306">Behov</span><span class="sxs-lookup"><span data-stu-id="311ce-306">Requirement</span></span>                                                      | <span data-ttu-id="311ce-307">Anteckningar</span><span class="sxs-lookup"><span data-stu-id="311ce-307">Notes</span></span> |
 |------------------------------------------------------------------|-------|
-| Microsoft SQL Server 2016 Standard Edition eller Enterprise Edition | Maskinvarukrav för SQL Server 2016 finns i [Maskin- och programvarukrav för installation av SQL Server 2016](/sql/sql-server/install/hardware-and-software-requirements-for-installing-sql-server). |
+| <span data-ttu-id="311ce-308">Microsoft SQL Server 2016 Standard Edition eller Enterprise Edition</span><span class="sxs-lookup"><span data-stu-id="311ce-308">Microsoft SQL Server 2016 Standard Edition or Enterprise Edition</span></span> | <span data-ttu-id="311ce-309">Maskinvarukrav för SQL Server 2016 finns i [Maskin- och programvarukrav för installation av SQL Server 2016](/sql/sql-server/install/hardware-and-software-requirements-for-installing-sql-server).</span><span class="sxs-lookup"><span data-stu-id="311ce-309">For the hardware requirements for SQL Server 2016, see [Hardware and Software Requirements for Installing SQL Server 2016](/sql/sql-server/install/hardware-and-software-requirements-for-installing-sql-server).</span></span> |
 
-## <a name="software-requirements-for-client-computers"></a>Programvarukrav för alla klientdatorer
-Webbprogrammet Finance and Operations kan köras på alla enheter med en HTML 5.0-kompatibel webbläsare. Här är några specifika enhets-/webbläsarkombinationer som Microsoft har bekräftat:
+## <a name="software-requirements-for-client-computers"></a><span data-ttu-id="311ce-310">Programvarukrav för alla klientdatorer</span><span class="sxs-lookup"><span data-stu-id="311ce-310">Software requirements for client computers</span></span>
+<span data-ttu-id="311ce-311">Webbprogrammet Finance and Operations kan köras på alla enheter med en HTML 5.0-kompatibel webbläsare.</span><span class="sxs-lookup"><span data-stu-id="311ce-311">The Finance and Operations web application can run on any device that has an HTML 5.0–compliant web browser.</span></span> <span data-ttu-id="311ce-312">Här är några specifika enhets-/webbläsarkombinationer som Microsoft har bekräftat:</span><span class="sxs-lookup"><span data-stu-id="311ce-312">Here are some of the specific device/browser combinations that Microsoft has confirmed:</span></span>
 
-- Microsoft Edge (den senaste tillgängliga versionen) på Windows 10
-- Internet Explorer 11 på Windows 10, Windows 8.1 eller Windows 7
-- Google Chrome (senaste tillgängliga versionen) på Windows 10, Windows 8.1, Windows 8, Windows 7 eller Google Nexus 10 surfplatta
-- Apple Safari (senaste tillgängliga versionen) på Mac OS X 10.10 (Yosemite), 10.11 (El Capitan) eller 10.12 (Sierra), eller Apple iPad
+- <span data-ttu-id="311ce-313">Microsoft Edge (den senaste tillgängliga versionen) på Windows 10</span><span class="sxs-lookup"><span data-stu-id="311ce-313">Microsoft Edge (latest publicly available version) on Windows 10</span></span>
+- <span data-ttu-id="311ce-314">Internet Explorer 11 på Windows 10, Windows 8.1 eller Windows 7</span><span class="sxs-lookup"><span data-stu-id="311ce-314">Internet Explorer 11 on Windows 10, Windows 8.1, or Windows 7</span></span>
+- <span data-ttu-id="311ce-315">Google Chrome (senaste tillgängliga versionen) på Windows 10, Windows 8.1, Windows 8, Windows 7 eller Google Nexus 10 surfplatta</span><span class="sxs-lookup"><span data-stu-id="311ce-315">Google Chrome (latest publicly available version) on Windows 10, Windows 8.1, Windows 8, Windows 7, or Google Nexus 10 tablet</span></span>
+- <span data-ttu-id="311ce-316">Apple Safari (senaste tillgängliga versionen) på Mac OS X 10.10 (Yosemite), 10.11 (El Capitan) eller 10.12 (Sierra), eller Apple iPad</span><span class="sxs-lookup"><span data-stu-id="311ce-316">Apple Safari (latest publicly available version) on Mac OS X 10.10 (Yosemite), 10.11 (El Capitan) or 10.12 (Sierra), or Apple iPad</span></span>
 
-## <a name="software-requirements-for-active-directory-federation-services"></a>Programvarukrav för Active Directory Federation Services 
-Active Directory Federation Services (AD FS) i Windows Server 2016 krävs
+## <a name="software-requirements-for-active-directory-federation-services"></a><span data-ttu-id="311ce-317">Programvarukrav för Active Directory Federation Services</span><span class="sxs-lookup"><span data-stu-id="311ce-317">Software requirements for Active Directory Federation Services</span></span> 
+<span data-ttu-id="311ce-318">Active Directory Federation Services (AD FS) i Windows Server 2016 krävs</span><span class="sxs-lookup"><span data-stu-id="311ce-318">Active Directory Federation Services (AD FS) on Windows Server 2016 is required.</span></span>
 
-Domänkontrollanten måste vara Windows Server 2012 R2 eller senare och domänfunktionsnivån måste vara 2012 R2 eller större Mer information om domänfunktionsnivåer finns på följande sidor:
+<span data-ttu-id="311ce-319">Domänkontrollanten måste vara Windows Server 2012 R2 eller senare och domänfunktionsnivån måste vara 2012 R2 eller större</span><span class="sxs-lookup"><span data-stu-id="311ce-319">The domain controller must be Windows Server 2012 R2 or later, and the domain functional level must be 2012 R2 or more.</span></span> <span data-ttu-id="311ce-320">Mer information om domänfunktionsnivåer finns på följande sidor:</span><span class="sxs-lookup"><span data-stu-id="311ce-320">For more information about domain functional levels, see the following pages:</span></span>
 
-- [Vad är funktionsnivåer i Active Directory](https://technet.microsoft.com/en-us/library/cc787290(v=ws.10).aspx)
-- [Förstå funktionsnivåer i Active Directory domäntjänster](https://technet.microsoft.com/en-us/library/understanding-active-directory-functional-levels(v=ws.10).aspx)
+- <span data-ttu-id="311ce-321">[Vad är funktionsnivåer i Active Directory](https://technet.microsoft.com/en-us/library/cc787290(v=ws.10).aspx)</span><span class="sxs-lookup"><span data-stu-id="311ce-321">[What Are Active Directory Functional Levels](https://technet.microsoft.com/en-us/library/cc787290(v=ws.10).aspx)</span></span>
+- <span data-ttu-id="311ce-322">[Förstå funktionsnivåer i Active Directory domäntjänster](https://technet.microsoft.com/en-us/library/understanding-active-directory-functional-levels(v=ws.10).aspx)</span><span class="sxs-lookup"><span data-stu-id="311ce-322">[Understanding Active Directory Domain Services Functional Levels](https://technet.microsoft.com/en-us/library/understanding-active-directory-functional-levels(v=ws.10).aspx)</span></span>
 
-## <a name="supported-microsoft-office-applications"></a>Microsoft Office-program som stöds
-Följande Microsoft Office-program stöds i molnet och i lokala distributioner av Finance and Operations.
+## <a name="supported-microsoft-office-applications"></a><span data-ttu-id="311ce-323">Microsoft Office-program som stöds</span><span class="sxs-lookup"><span data-stu-id="311ce-323">Supported Microsoft Office applications</span></span>
+<span data-ttu-id="311ce-324">Följande Microsoft Office-program stöds i molnet och i lokala distributioner av Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="311ce-324">The following Microsoft Office applications are supported in the cloud and on-premises deployments of Finance and Operations:</span></span>
 
--   För att kunna köra Microsoft Excel och Microsoft Word-tillägg måste du ha Microsoft Office 2016 för Windows eller Mac installerat. Mer information om kraven på version finns i [felsökning av Office-integrering](/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-troubleshooting).
--   Om du vill visa dokument som har genererats av Export till Excel eller Export till Word-funktioner måste Microsoft Office 2007 eller senare installeras.
+-   <span data-ttu-id="311ce-325">För att kunna köra Microsoft Excel och Microsoft Word-tillägg måste du ha Microsoft Office 2016 för Windows eller Mac installerat.</span><span class="sxs-lookup"><span data-stu-id="311ce-325">To run the Microsoft Excel and Microsoft Word add-ins, you must have Microsoft Office 2016 for Windows or Mac installed.</span></span> <span data-ttu-id="311ce-326">Mer information om kraven på version finns i [felsökning av Office-integrering](/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-troubleshooting).</span><span class="sxs-lookup"><span data-stu-id="311ce-326">For more information about version requirements, see [Office integration troubleshooting](/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-troubleshooting).</span></span>
+-   <span data-ttu-id="311ce-327">Om du vill visa dokument som har genererats av Export till Excel eller Export till Word-funktioner måste Microsoft Office 2007 eller senare installeras.</span><span class="sxs-lookup"><span data-stu-id="311ce-327">To view documents that are generated by the Export to Excel or Export to Word functionality, you must have Microsoft Office 2007 or later installed.</span></span>
  
-## <a name="hardware-and-software-requirements-for-retail-components"></a>Maskin- och programvarukrav för Retail-komponenter
-Finance and Operations (lokalt) innehåller för närvarande inte Retail-komponenter.
+## <a name="hardware-and-software-requirements-for-retail-components"></a><span data-ttu-id="311ce-328">Maskin- och programvarukrav för Retail-komponenter</span><span class="sxs-lookup"><span data-stu-id="311ce-328">Hardware and software requirements for Retail components</span></span>
+<span data-ttu-id="311ce-329">Finance and Operations (lokalt) innehåller för närvarande inte Retail-komponenter.</span><span class="sxs-lookup"><span data-stu-id="311ce-329">Currently, Finance and Operations (on-premises) doesn't include the Retail components.</span></span>
 

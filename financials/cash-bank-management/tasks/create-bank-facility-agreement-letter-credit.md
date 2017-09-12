@@ -16,38 +16,38 @@ ms.author: leguo
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 3fef888f62bfa9f17434af940e0d137a1aeb49a2
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: ac3394a40bff3aaee6a76448633e4f36c4049612
 ms.contentlocale: sv-se
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-a-bank-facility-agreement-for-a-letter-of-credit"></a>Skapa ett kreditlimitavtal för en remburs
+# <a name="create-a-bank-facility-agreement-for-a-letter-of-credit"></a><span data-ttu-id="ea1e2-103">Skapa ett kreditlimitavtal för en remburs</span><span class="sxs-lookup"><span data-stu-id="ea1e2-103">Create a bank facility agreement for a letter of credit</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Denna uppgift är en genomgång av hur du skapar ett bankkreditlimitavtal om du vill bearbeta en remburs. Du kanske vill ställa in bankkreditlimiter och bokföringsprofiler före detta.  I den här uppgiften används demonstrationsföretaget "USMF".  
+<span data-ttu-id="ea1e2-104">Denna uppgift är en genomgång av hur du skapar ett bankkreditlimitavtal om du vill bearbeta en remburs.</span><span class="sxs-lookup"><span data-stu-id="ea1e2-104">This task walks through the creating a Bank facility agreement to process a Letter of credit.</span></span> <span data-ttu-id="ea1e2-105">Du kanske vill ställa in bankkreditlimiter och bokföringsprofiler före detta.</span><span class="sxs-lookup"><span data-stu-id="ea1e2-105">You will want to set up bank facilities and posting profiles before this task.</span></span>  <span data-ttu-id="ea1e2-106">I den här uppgiften används demonstrationsföretaget "USMF".</span><span class="sxs-lookup"><span data-stu-id="ea1e2-106">This task uses the demo company 'USMF'.</span></span>  
 
 
-## <a name="create-bank-facility-agreement"></a>Skapa bankkreditlimitavtalet
-1. Gå till Kassa- och bankhantering > Remburser > Kreditlimitavtal för bank.
-2. Klicka på Ny.
-3. Ange avtalsnumret enligt avtalet med banken i fältet Avtalsnummer.
-4. Ange bankkontonumret i den utfärdande banken i fältet Bankkonto.
-5. Klicka på länken på den valda raden i listan.
-6. Ange datum och tid i fältet Startdatum.
-7. I fältet Slutdatum anger du datum och tid.
-8. Utöka eller komprimera avsnittet Allmänt.
-9. Klicka på Lägg till rad.
-10. Öppna sökningen genom att klicka på den nedrullningsbara knappen i Kreditlimittyp.
-11. Hitta och markera önskad post i listan.
-12. Klicka på länken på den valda raden i listan.
-13. I fältet Gräns, ange kreditlimitbeloppet som har förhandlats med banken.
-14. Klicka på Spara.
-15. Klicka på Utöka om du vill öppna dialogrutan.
-16. Skriv ett värde i fältet Nytt avtal.
-17. I fältet Slutdatum anger du datum och tid.
-18. Klicka på Utöka.
-19. Stäng sidan.
+## <a name="create-bank-facility-agreement"></a><span data-ttu-id="ea1e2-107">Skapa bankkreditlimitavtalet</span><span class="sxs-lookup"><span data-stu-id="ea1e2-107">Create Bank facility agreement</span></span>
+1. <span data-ttu-id="ea1e2-108">Gå till Kassa- och bankhantering > Remburser > Kreditlimitavtal för bank.</span><span class="sxs-lookup"><span data-stu-id="ea1e2-108">Go to Cash and bank management > Letters of credit > Bank facility agreements.</span></span>
+2. <span data-ttu-id="ea1e2-109">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="ea1e2-109">Click New.</span></span>
+3. <span data-ttu-id="ea1e2-110">Ange avtalsnumret enligt avtalet med banken i fältet Avtalsnummer.</span><span class="sxs-lookup"><span data-stu-id="ea1e2-110">In the Agreement number field, enter the agreement number according to the agreement with the bank.</span></span>
+4. <span data-ttu-id="ea1e2-111">Ange bankkontonumret i den utfärdande banken i fältet Bankkonto.</span><span class="sxs-lookup"><span data-stu-id="ea1e2-111">In the Bank account field, enter the account number at the issuing bank.</span></span>
+5. <span data-ttu-id="ea1e2-112">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="ea1e2-112">In the list, click the link in the selected row.</span></span>
+6. <span data-ttu-id="ea1e2-113">Ange datum och tid i fältet Startdatum.</span><span class="sxs-lookup"><span data-stu-id="ea1e2-113">In the Start date field, enter a date and time.</span></span>
+7. <span data-ttu-id="ea1e2-114">I fältet Slutdatum anger du datum och tid.</span><span class="sxs-lookup"><span data-stu-id="ea1e2-114">In the End date field, enter a date and time.</span></span>
+8. <span data-ttu-id="ea1e2-115">Utöka eller komprimera avsnittet Allmänt.</span><span class="sxs-lookup"><span data-stu-id="ea1e2-115">Expand or collapse the General section.</span></span>
+9. <span data-ttu-id="ea1e2-116">Klicka på Lägg till rad.</span><span class="sxs-lookup"><span data-stu-id="ea1e2-116">Click Add line.</span></span>
+10. <span data-ttu-id="ea1e2-117">Öppna sökningen genom att klicka på den nedrullningsbara knappen i Kreditlimittyp.</span><span class="sxs-lookup"><span data-stu-id="ea1e2-117">In the Facility type field, click the drop-down button to open the lookup.</span></span>
+11. <span data-ttu-id="ea1e2-118">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="ea1e2-118">In the list, find and select the desired record.</span></span>
+12. <span data-ttu-id="ea1e2-119">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="ea1e2-119">In the list, click the link in the selected row.</span></span>
+13. <span data-ttu-id="ea1e2-120">I fältet Gräns, ange kreditlimitbeloppet som har förhandlats med banken.</span><span class="sxs-lookup"><span data-stu-id="ea1e2-120">In the Limit field, enter the facility amount that was negotiated with the bank.</span></span>
+14. <span data-ttu-id="ea1e2-121">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="ea1e2-121">Click Save.</span></span>
+15. <span data-ttu-id="ea1e2-122">Klicka på Utöka om du vill öppna dialogrutan.</span><span class="sxs-lookup"><span data-stu-id="ea1e2-122">Click Extend to open the drop dialog.</span></span>
+16. <span data-ttu-id="ea1e2-123">Skriv ett värde i fältet Nytt avtal.</span><span class="sxs-lookup"><span data-stu-id="ea1e2-123">In the New agreement number field, type a value.</span></span>
+17. <span data-ttu-id="ea1e2-124">I fältet Slutdatum anger du datum och tid.</span><span class="sxs-lookup"><span data-stu-id="ea1e2-124">In the End date field, enter a date and time.</span></span>
+18. <span data-ttu-id="ea1e2-125">Klicka på Utöka.</span><span class="sxs-lookup"><span data-stu-id="ea1e2-125">Click Extend.</span></span>
+19. <span data-ttu-id="ea1e2-126">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="ea1e2-126">Close the page.</span></span>
 
 

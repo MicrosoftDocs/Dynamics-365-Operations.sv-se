@@ -17,58 +17,58 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b947a02be981155053e33a4ef20e19bf2a194a5
-ms.openlocfilehash: 61b795d52d4d2586db7f42a976790ee8608e179b
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 97f0c4d8fe06ab2fc252b9543cb688306214c79f
 ms.contentlocale: sv-se
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="set-up-automatic-freight-reconciliation"></a>Ställ in automatisk fraktavstämning
+# <a name="set-up-automatic-freight-reconciliation"></a><span data-ttu-id="4417c-103">Ställ in automatisk fraktavstämning</span><span class="sxs-lookup"><span data-stu-id="4417c-103">Set up automatic freight reconciliation</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Denna procedur visar hur du ställer in data för automatisk fraktavstämning. Detta utförs normalt av en lagerchef. Du kan köra den här proceduren i demonstrationsdataföretaget USMF.
+<span data-ttu-id="4417c-104">Denna procedur visar hur du ställer in data för automatisk fraktavstämning.</span><span class="sxs-lookup"><span data-stu-id="4417c-104">This procedure shows how to set up data for automatic freight reconciliation.</span></span> <span data-ttu-id="4417c-105">Detta utförs normalt av en lagerchef.</span><span class="sxs-lookup"><span data-stu-id="4417c-105">This is typically done by a warehouse manager.</span></span> <span data-ttu-id="4417c-106">Du kan köra den här proceduren i demonstrationsdataföretaget USMF.</span><span class="sxs-lookup"><span data-stu-id="4417c-106">You can use this procedure in demo data company USMF.</span></span>
 
 
-## <a name="set-up-the-freight-bill-type"></a>Ställ in fraktsedelstypen
-1. Gå till Transporthantering > Inställningar > Fraktavstämning > Fraktsedelstyp.
-    * Rehabiliteringstypen anger hur frakträkningar och transportfakturor ska matchas.  
-2. Klicka på Ny.
-3. Ange ett värde i fältet Fredlighet Bill typ.
-4. Ange "Microsoft.Dynamits.Ax.Tims.Bell." i fältet Engående assembler.
-    * Detta är jodbiblioteket för den vanliga förbränningsmotorn för transportledningen.  
-5. Ange "Microsoft.Dynamits.Ax.Tims.dl" i fältet Engående lass.
-    * Detta är den vanliga klassificeringen för transportledningen.  
-6. Klicka på Ny.
-7. Välj det värde som ska matcha på frakträkningen och transportföretag i fältet Deskription.  
-8. Välj "Res" i fältet Match reducibel.
-    * Om du ställer in detta fält som Res innebär detta att värdet som valdes i fältet Deskription måste matcha både frakträkningen och transportföretag. Om du har ställt in detta som O kan fältet vara tomt på en av dessa.  
-9. Klicka på Spara.
+## <a name="set-up-the-freight-bill-type"></a><span data-ttu-id="4417c-107">Ställ in fraktsedelstypen</span><span class="sxs-lookup"><span data-stu-id="4417c-107">Set up the freight bill type</span></span>
+1. <span data-ttu-id="4417c-108">Gå till Transporthantering > Inställningar > Fraktavstämning > Fraktsedelstyp.</span><span class="sxs-lookup"><span data-stu-id="4417c-108">Go to Transportation management > Setup > Freight reconciliation > Freight bill type.</span></span>
+    * <span data-ttu-id="4417c-109">Rehabiliteringstypen anger hur frakträkningar och transportfakturor ska matchas.</span><span class="sxs-lookup"><span data-stu-id="4417c-109">The freight bill type defines how freight bills and carrier invoices  should be matched.</span></span>  
+2. <span data-ttu-id="4417c-110">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="4417c-110">Click New.</span></span>
+3. <span data-ttu-id="4417c-111">Ange ett värde i fältet Fredlighet Bill typ.</span><span class="sxs-lookup"><span data-stu-id="4417c-111">In the Freight bill type field, type a value.</span></span>
+4. <span data-ttu-id="4417c-112">Ange "Microsoft.Dynamits.Ax.Tims.Bell." i fältet Engående assembler.</span><span class="sxs-lookup"><span data-stu-id="4417c-112">In the Engine assembly field, type 'Microsoft.Dynamics.Ax.Tms.Bll.GenericNormalizer'.</span></span>
+    * <span data-ttu-id="4417c-113">Detta är jodbiblioteket för den vanliga förbränningsmotorn för transportledningen.</span><span class="sxs-lookup"><span data-stu-id="4417c-113">This is the standard Transportation management matching engine code library.</span></span>  
+5. <span data-ttu-id="4417c-114">Ange "Microsoft.Dynamits.Ax.Tims.dl" i fältet Engående lass.</span><span class="sxs-lookup"><span data-stu-id="4417c-114">In the Engine class field, type 'Microsoft.Dynamics.Ax.Tms.dll'.</span></span>
+    * <span data-ttu-id="4417c-115">Detta är den vanliga klassificeringen för transportledningen.</span><span class="sxs-lookup"><span data-stu-id="4417c-115">This is the standard Transportation management matching engine class.</span></span>  
+6. <span data-ttu-id="4417c-116">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="4417c-116">Click New.</span></span>
+7. <span data-ttu-id="4417c-117">Välj det värde som ska matcha på frakträkningen och transportföretag i fältet Deskription.</span><span class="sxs-lookup"><span data-stu-id="4417c-117">In the Description field, choose the value that should match on the freight bill and the carrier invoice.</span></span>  
+8. <span data-ttu-id="4417c-118">Välj "Res" i fältet Match reducibel.</span><span class="sxs-lookup"><span data-stu-id="4417c-118">In the Match required field, select 'Yes'.</span></span>
+    * <span data-ttu-id="4417c-119">Om du ställer in detta fält som Res innebär detta att värdet som valdes i fältet Deskription måste matcha både frakträkningen och transportföretag.</span><span class="sxs-lookup"><span data-stu-id="4417c-119">If you set this field to Yes this means that the value selected in the Description field needs to match on both the freight bill and the carrier invoice.</span></span> <span data-ttu-id="4417c-120">Om du har ställt in detta som O kan fältet vara tomt på en av dessa.</span><span class="sxs-lookup"><span data-stu-id="4417c-120">If you set it to No, the field can be blank on one of these.</span></span>  
+9. <span data-ttu-id="4417c-121">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="4417c-121">Click Save.</span></span>
 
-## <a name="set-up-the-freight-bill-type-assignment"></a>Ställa in tilldelningen för fraktsedelstyp
-1. Stäng sidan.
-2. Gå till Transporthantering > Inställningar > Fraktavstämning > Typtilldelningar för fraktsedel.
-    * Tilldelningen av omräkningstal används för att ange vilken typ av för frakträkning som används för en viss transportör.   
-3. Klicka på Ny.
-4. Ange eller välj ett värde i fältet Mode.
-5. Ange eller välj ett värde i fältet Shopping Harriet.
-6. Välj den omräkningstal som du skapade tidigare i fältet för Fredlighet Bill typ.
-7. Stäng sidan.
+## <a name="set-up-the-freight-bill-type-assignment"></a><span data-ttu-id="4417c-122">Ställa in tilldelningen för fraktsedelstyp</span><span class="sxs-lookup"><span data-stu-id="4417c-122">Set up the freight bill type assignment</span></span>
+1. <span data-ttu-id="4417c-123">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="4417c-123">Close the page.</span></span>
+2. <span data-ttu-id="4417c-124">Gå till Transporthantering > Inställningar > Fraktavstämning > Typtilldelningar för fraktsedel.</span><span class="sxs-lookup"><span data-stu-id="4417c-124">Go to Transportation management > Setup > Freight reconciliation > Freight bill type assignments.</span></span>
+    * <span data-ttu-id="4417c-125">Tilldelningen av omräkningstal används för att ange vilken typ av för frakträkning som används för en viss transportör.</span><span class="sxs-lookup"><span data-stu-id="4417c-125">The freight bill type assignment is used to specify which freight bill type is used for a particular carrier.</span></span>   
+3. <span data-ttu-id="4417c-126">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="4417c-126">Click New.</span></span>
+4. <span data-ttu-id="4417c-127">Ange eller välj ett värde i fältet Mode.</span><span class="sxs-lookup"><span data-stu-id="4417c-127">In the Mode field, enter or select a value.</span></span>
+5. <span data-ttu-id="4417c-128">Ange eller välj ett värde i fältet Shopping Harriet.</span><span class="sxs-lookup"><span data-stu-id="4417c-128">In the Shipping carrier field, enter or select a value.</span></span>
+6. <span data-ttu-id="4417c-129">Välj den omräkningstal som du skapade tidigare i fältet för Fredlighet Bill typ.</span><span class="sxs-lookup"><span data-stu-id="4417c-129">In the Freight bill type field, select the freight bill type that you created earlier.</span></span>
+7. <span data-ttu-id="4417c-130">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="4417c-130">Close the page.</span></span>
 
-## <a name="set-up-the-audit-master"></a>Ställ in revisionsmallen
-1. Gå till Transporthantering > Inställningar > Fraktavstämning > Granskningsmall.
-    * Revisionsmallen anger toleransgränserna för automatisk fraktavstämning. Den anger hur mycket penningbeloppen på frakträkningen och transportföretag kan skilja sig åt och ändå medge avstämning. Den definierar även hur du hanterar avvikelser.  
-2. Klicka på Ny.
-3. Skriv in ett värde i fältet Audit master ID.
-4. Markera samma transportföretag som tidigare i fältet Shipping carrier.
-5. Välj den omräkningstal som du skapade tidigare i fältet för Fredlighet Bill typ.
-6. Expandera avsnittet Tolerance.
-7. Ange ett värde i fältet Minimum tolerance level.
-8. Ange ett värde i fältet Maximum tolerance level.
-9. Expandera avsnittet Result.
-10. Ange eller välj ett värde i fältet Overpayment reason code.
-    * Om penningbeloppen skiljer sig åt på frakträkningen och transportföretag, anger koderna för över- och återbetalningsskyldig de konton som skillnaden bör registreras på, så länge skillnaden är inom toleransnivåerna.  
-11. Ange eller välj ett värde i fältet Underpayment reason code.
-12. Stäng sidan.
+## <a name="set-up-the-audit-master"></a><span data-ttu-id="4417c-131">Ställ in revisionsmallen</span><span class="sxs-lookup"><span data-stu-id="4417c-131">Set up the audit master</span></span>
+1. <span data-ttu-id="4417c-132">Gå till Transporthantering > Inställningar > Fraktavstämning > Granskningsmall.</span><span class="sxs-lookup"><span data-stu-id="4417c-132">Go to Transportation management > Setup > Freight reconciliation > Audit master.</span></span>
+    * <span data-ttu-id="4417c-133">Revisionsmallen anger toleransgränserna för automatisk fraktavstämning.</span><span class="sxs-lookup"><span data-stu-id="4417c-133">The audit master defines the tolerance limits for automatic freight reconciliation.</span></span> <span data-ttu-id="4417c-134">Den anger hur mycket penningbeloppen på frakträkningen och transportföretag kan skilja sig åt och ändå medge avstämning.</span><span class="sxs-lookup"><span data-stu-id="4417c-134">It specifies by how much the monetary amounts on the freight bill and the carrier invoice can differ and still allow reconciliation to occur.</span></span> <span data-ttu-id="4417c-135">Den definierar även hur du hanterar avvikelser.</span><span class="sxs-lookup"><span data-stu-id="4417c-135">It also defines how to handle discrepancies.</span></span>  
+2. <span data-ttu-id="4417c-136">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="4417c-136">Click New.</span></span>
+3. <span data-ttu-id="4417c-137">Skriv in ett värde i fältet Audit master ID.</span><span class="sxs-lookup"><span data-stu-id="4417c-137">In the Audit master ID field, type a value.</span></span>
+4. <span data-ttu-id="4417c-138">Markera samma transportföretag som tidigare i fältet Shipping carrier.</span><span class="sxs-lookup"><span data-stu-id="4417c-138">In the Shipping carrier  field, select the same shipping carrier as you did earlier.</span></span>
+5. <span data-ttu-id="4417c-139">Välj den omräkningstal som du skapade tidigare i fältet för Fredlighet Bill typ.</span><span class="sxs-lookup"><span data-stu-id="4417c-139">In the Freight bill type field, select the freight bill type that you created earlier.</span></span>
+6. <span data-ttu-id="4417c-140">Expandera avsnittet Tolerance.</span><span class="sxs-lookup"><span data-stu-id="4417c-140">Expand the Tolerance section.</span></span>
+7. <span data-ttu-id="4417c-141">Ange ett värde i fältet Minimum tolerance level.</span><span class="sxs-lookup"><span data-stu-id="4417c-141">In the Minimum tolerance level field, enter a number.</span></span>
+8. <span data-ttu-id="4417c-142">Ange ett värde i fältet Maximum tolerance level.</span><span class="sxs-lookup"><span data-stu-id="4417c-142">In the Maximum tolerance level field, enter a number.</span></span>
+9. <span data-ttu-id="4417c-143">Expandera avsnittet Result.</span><span class="sxs-lookup"><span data-stu-id="4417c-143">Expand the Result section.</span></span>
+10. <span data-ttu-id="4417c-144">Ange eller välj ett värde i fältet Overpayment reason code.</span><span class="sxs-lookup"><span data-stu-id="4417c-144">In the Overpayment reason code field, enter or select a value.</span></span>
+    * <span data-ttu-id="4417c-145">Om penningbeloppen skiljer sig åt på frakträkningen och transportföretag, anger koderna för över- och återbetalningsskyldig de konton som skillnaden bör registreras på, så länge skillnaden är inom toleransnivåerna.</span><span class="sxs-lookup"><span data-stu-id="4417c-145">If the monetary amounts differ on the freight bill and the carrier invoice, the overpayment and underpayment reason codes specify the accounts that the difference should be registered on, as long as the difference is within the tolerance levels.</span></span>  
+11. <span data-ttu-id="4417c-146">Ange eller välj ett värde i fältet Underpayment reason code.</span><span class="sxs-lookup"><span data-stu-id="4417c-146">In the Underpayment reason code field, enter or select a value.</span></span>
+12. <span data-ttu-id="4417c-147">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="4417c-147">Close the page.</span></span>
 
 

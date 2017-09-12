@@ -16,32 +16,32 @@ ms.assetid: bc1fde9f-5ad9-4339-8ae8-e2839b792eb2
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: mguada
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 7f7c1008eea83bbda96ace92cd4aedf09c8febdc
+ms.sourcegitcommit: fb74ddfbc46047251a1f96512891bfbdca8e0389
+ms.openlocfilehash: 2b4a27465908b5ffe19e91cb7ad0d29bce49505a
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 08/15/2017
 
 ---
 
-# <a name="adjust-on-hand-inventory-cost-values"></a>Justera kostnadsvärden för lagerbehållning
+# <a name="adjust-on-hand-inventory-cost-values"></a><span data-ttu-id="beec6-103">Justera kostnadsvärden för lagerbehållning</span><span class="sxs-lookup"><span data-stu-id="beec6-103">Adjust on-hand inventory cost values</span></span>
 
 [!include[banner](../includes/banner.md)]
 
-Använd sidan Justering av lagerbehållning för att justera kostnadsvärdet för lagerbehållningskvantiteter efter att en lagerstängningsprocess har körts.
+<span data-ttu-id="beec6-104">Använd sidan Justering av lagerbehållning för att justera kostnadsvärdet för lagerbehållningskvantiteter efter att en lagerstängningsprocess har körts.</span><span class="sxs-lookup"><span data-stu-id="beec6-104">Use the Adjustment of on-hand inventory page to adjust the cost value of the on-hand inventory quantities after an inventory close process is run.</span></span>
 
-På sidan **Justering av lagerbehållning** kan du justera justera kostnadsvärdet för lagerbehållningskvantiteter när en lagerstängningsprocess körs. **Obs!** Om du vill öppna sidan **Justering av lagerbehållning** går du till sidan **Stängning och justering** och markerar posten för en slutförd lagerstängningsprocess. Klicka sedan på **Justering** &gt; **Behållning**. **Exempel:** Du har följande transaktioner i februari:
+<span data-ttu-id="beec6-105">På sidan **Justering av lagerbehållning** kan du justera justera kostnadsvärdet för lagerbehållningskvantiteter när en lagerstängningsprocess körs.</span><span class="sxs-lookup"><span data-stu-id="beec6-105">You can use the **Adjustment of on-hand inventory** page to adjust the cost value of on-hand inventory quantities after an inventory close process is run.</span></span> <span data-ttu-id="beec6-106">**Obs!** Om du vill öppna sidan **Justering av lagerbehållning** går du till sidan **Stängning och justering** och markerar posten för en slutförd lagerstängningsprocess. Klicka sedan på **Justering** &gt; **Behållning**.</span><span class="sxs-lookup"><span data-stu-id="beec6-106">**Note:** To open the **Adjustment of on-hand inventory** page, on the **Closing and adjustment** page, select the record of a completed inventory close process, and then click **Adjustment** &gt; **On-hand**.</span></span> <span data-ttu-id="beec6-107">**Exempel:** Du har följande transaktioner i februari:</span><span class="sxs-lookup"><span data-stu-id="beec6-107">**Example:** You have the following transactions in February:</span></span>
 
--   1 februari: en ekonomisk lagerinleverans för kvantiteten 2 till en kostnad av 100 SEK.
--   5 februari: en ekonomisk lagerinleverans för kvantiteten 1 till en kostnad av 130 SEK.
--   19 februari: en ekonomisk lagerutleverans för en kvantitet på 1 till en genomsnittlig driftskostnad på 110 SEK.
+-   <span data-ttu-id="beec6-108">1 februari: en ekonomisk lagerinleverans för kvantiteten 2 till en kostnad av 100 SEK.</span><span class="sxs-lookup"><span data-stu-id="beec6-108">February 1: An inventory financial receipt for a quantity of 2 at a cost of USD 10.00</span></span>
+-   <span data-ttu-id="beec6-109">5 februari: en ekonomisk lagerinleverans för kvantiteten 1 till en kostnad av 130 SEK.</span><span class="sxs-lookup"><span data-stu-id="beec6-109">February 5: An inventory financial receipt for a quantity of 1 at a cost of USD 13.00</span></span>
+-   <span data-ttu-id="beec6-110">19 februari: en ekonomisk lagerutleverans för en kvantitet på 1 till en genomsnittlig driftskostnad på 110 SEK.</span><span class="sxs-lookup"><span data-stu-id="beec6-110">February 19: An inventory financial issue for a quantity of 1 at a running average cost of USD 11.00</span></span>
 
-Denna artikel skapades med FIFO-lagermodellen (först in, först ut), och lagerstängningen genomfördes den 28 februari. Den ekonomiska utleveranstransaktionen på SEK 110,00 kommer att kvittas mot den ekonomiska inleveransen daterad den 1 februari, och en justering på SEK 10,00 kommer att göras. Följande lagerinleveranser kommer därefter att innehålla öppna lagerkvantiteter:
+<span data-ttu-id="beec6-111">Denna artikel skapades med FIFO-lagermodellen (först in, först ut), och lagerstängningen genomfördes den 28 februari.</span><span class="sxs-lookup"><span data-stu-id="beec6-111">This item was set up with the first in, first out (FIFO) inventory model, and inventory close was performed as of February 28.</span></span> <span data-ttu-id="beec6-112">Den ekonomiska utleveranstransaktionen på SEK 110,00 kommer att kvittas mot den ekonomiska inleveransen daterad den 1 februari, och en justering på SEK 10,00 kommer att göras.</span><span class="sxs-lookup"><span data-stu-id="beec6-112">The financial issue transaction of USD 11.00 will be settled against the financial receipt that is dated February 1, and an adjustment of USD 1.00 will be made.</span></span> <span data-ttu-id="beec6-113">Följande lagerinleveranser kommer därefter att innehålla öppna lagerkvantiteter:</span><span class="sxs-lookup"><span data-stu-id="beec6-113">The following inventory receipts will then contain open inventory quantities:</span></span>
 
--   1 februari: en kvantitet på 1 till en kostnad av 100 SEK.
--   5 februari: en kvantitet på 1 till en kostnad av 130 SEK.
+-   <span data-ttu-id="beec6-114">1 februari: en kvantitet på 1 till en kostnad av 100 SEK.</span><span class="sxs-lookup"><span data-stu-id="beec6-114">February 1: A quantity of 1 at a cost of USD 10.00</span></span>
+-   <span data-ttu-id="beec6-115">5 februari: en kvantitet på 1 till en kostnad av 130 SEK.</span><span class="sxs-lookup"><span data-stu-id="beec6-115">February 5: A quantity of 1 at a cost of USD 13.00</span></span>
 
-Ange kostnaden för dessa två artiklar till SEK 150,00 med hjälp av alternativet för justering av lagerbehållning så att de öppna behållningarna justeras per den sista lagerstängningsperioden. **Obs!** Bokföringsdatumet för transaktionen för behållningsjustering är datumet för den senaste lagerstängningen. Datumet går inte att ändra.
+<span data-ttu-id="beec6-116">Ange kostnaden för dessa två artiklar till SEK 150,00 med hjälp av alternativet för justering av lagerbehållning så att de öppna behållningarna justeras per den sista lagerstängningsperioden.</span><span class="sxs-lookup"><span data-stu-id="beec6-116">To set the cost of these two items to USD 15.00, use the on-hand adjustment option to adjust the open on-hand quantities as of the last inventory close period.</span></span> <span data-ttu-id="beec6-117">**Obs!** Bokföringsdatumet för transaktionen för behållningsjustering är datumet för den senaste lagerstängningen.</span><span class="sxs-lookup"><span data-stu-id="beec6-117">**Note:** The posting date of the on-hand adjustment transaction will be the date of the last inventory close.</span></span> <span data-ttu-id="beec6-118">Datumet går inte att ändra.</span><span class="sxs-lookup"><span data-stu-id="beec6-118">This date can't be modified.</span></span>
 

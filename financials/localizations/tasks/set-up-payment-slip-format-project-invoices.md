@@ -16,53 +16,53 @@ ms.author: epopov
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: 8afbcf781e917f48136e06692234d49302b077fb
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: f2dab127a40a1a48b49077d4b2395f5b8c58116b
 ms.contentlocale: sv-se
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="set-up-payment-slip-format-for-project-invoices"></a>Skapa betalningsblankettformat för projektfakturor
+# <a name="set-up-payment-slip-format-for-project-invoices"></a><span data-ttu-id="0b821-103">Skapa betalningsblankettformat för projektfakturor</span><span class="sxs-lookup"><span data-stu-id="0b821-103">Set up payment slip format for project invoices</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Företag bifogar ofta betalningsblanketter till fakturor för att hjälpa kunder och ange en betalningsreferens för bokföring och kvittning. Betalningsblanketten kan användas för projekt - eller tjänstfakturor, kravbrev, räntefakturor och kontoutdrag, utöver försäljningsfakturor och fritextfakturor. Om du vill bearbeta betalningsblanketter, ställ först in betalningsmottagarens identifieringsnummer och formaten för den bifogade betalningsblanketten.
+<span data-ttu-id="0b821-104">Företag bifogar ofta betalningsblanketter till fakturor för att hjälpa kunder och ange en betalningsreferens för bokföring och kvittning.</span><span class="sxs-lookup"><span data-stu-id="0b821-104">Businesses commonly attach printed payment slips to invoices to assist customers and provide a payment reference for posting and settlement.</span></span> <span data-ttu-id="0b821-105">Betalningsblanketten kan användas för projekt - eller tjänstfakturor, kravbrev, räntefakturor och kontoutdrag, utöver försäljningsfakturor och fritextfakturor.</span><span class="sxs-lookup"><span data-stu-id="0b821-105">The payment slip can be used for project or service invoices, collection letters, interest notes, and account statements, in addition to sales invoices and free text invoices.</span></span> <span data-ttu-id="0b821-106">Om du vill bearbeta betalningsblanketter, ställ först in betalningsmottagarens identifieringsnummer och formaten för den bifogade betalningsblanketten.</span><span class="sxs-lookup"><span data-stu-id="0b821-106">To process payment slips, first set up your creditor identification number and payment slip attachment formats.</span></span>
 
-I den här proceduren används demonstrationsföretaget DEMF. 
+<span data-ttu-id="0b821-107">I den här proceduren används demonstrationsföretaget DEMF.</span><span class="sxs-lookup"><span data-stu-id="0b821-107">This procedure uses the DEMF demo company.</span></span> 
 
-Den här funktionen är bara tillgänglig för juridiska personer som har den primära adressen i Danmark.
+<span data-ttu-id="0b821-108">Den här funktionen är bara tillgänglig för juridiska personer som har den primära adressen i Danmark.</span><span class="sxs-lookup"><span data-stu-id="0b821-108">This functionality is available for legal entities whose primary address is in Denmark.</span></span>
 
 
-## <a name="set-up-a-creditor-id-number"></a>Ställ in en betalningsmottagares identifieringsnummer
-1. Gå till Organisationsadministration > Organisationer > Juridiska personer.
-2. Expandera eller komprimera avsnittet Bankkontoinformation.
-3. Klicka på Redigera.
-4. Skriv ett värde i fältet ID för FI-kreditgivare.
-5. Klicka på Spara.
-6. Stäng sidan.
+## <a name="set-up-a-creditor-id-number"></a><span data-ttu-id="0b821-109">Ställ in en betalningsmottagares identifieringsnummer</span><span class="sxs-lookup"><span data-stu-id="0b821-109">Set up a creditor ID number</span></span>
+1. <span data-ttu-id="0b821-110">Gå till Organisationsadministration > Organisationer > Juridiska personer.</span><span class="sxs-lookup"><span data-stu-id="0b821-110">Go to Organization administration > Organizations > Legal entities.</span></span>
+2. <span data-ttu-id="0b821-111">Expandera eller komprimera avsnittet Bankkontoinformation.</span><span class="sxs-lookup"><span data-stu-id="0b821-111">Expand or collapse the Bank account information section.</span></span>
+3. <span data-ttu-id="0b821-112">Klicka på Redigera.</span><span class="sxs-lookup"><span data-stu-id="0b821-112">Click Edit.</span></span>
+4. <span data-ttu-id="0b821-113">Skriv ett värde i fältet ID för FI-kreditgivare.</span><span class="sxs-lookup"><span data-stu-id="0b821-113">In the FI-Creditor ID field, type a value.</span></span>
+5. <span data-ttu-id="0b821-114">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="0b821-114">Click Save.</span></span>
+6. <span data-ttu-id="0b821-115">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="0b821-115">Close the page.</span></span>
 
-## <a name="set-up-a-payment-slip-format-for-invoices-notes-letters-and-statements"></a>Ställ in ett betalningsblankettformat för fakturor, anteckningar, brev och utdrag
-1. Gå till Kundreskontra > Inställningar > Formulär > Formulärinställningar.
-2. Klicka på fliken Faktura.
-3. I fältet Associerad betalningsbilaga för kundfaktura, välj ett alternativ.
-    * Ingen – skriv inte ut någon betalningsblankett. Välj det här alternativet om betalningsbeloppet är i en annan valuta än danska kroner (DKK).   FIK 751 – Skriv ut ett FIK 751-betalningskvitto om du tänker skriva betalningsbeloppet och förfallodatumet manuellt på betalningskvittot.   FIK 752 – skriv ut ett betalningskvitto för FIK 752, om du tänker använda en betalningskvitto som har ett fördefinierad betalningsbelopp och förfallodatum.  
-4. Klicka på Spara.
-5. Klicka på fliken Fritextfaktura.
-6. I fältet Associerad betalningsbilaga på fritextfaktura, välj ett alternativ.
-    * Ingen – skriv inte ut någon betalningsblankett. Välj det här alternativet om betalningsbeloppet är i en annan valuta än danska kroner (DKK).   FIK 751 – skriv ut ett betalningskvitto för FIK 751 om du tänker skriva betalningsbeloppet och förfallodatumet manuellt på betalningskvittot.   FIK 752 – skriv ut ett betalningskvitto för FIK 752, om du tänker använda en betalningskvitto som har ett fördefinierad betalningsbelopp och förfallodatum.  
-7. Klicka på Spara.
-8. Klicka på fliken Räntefaktura.
-9. I fältet Associerad betalningsbilaga på räntefaktura, välj ett alternativ.
-    * Ingen – skriv inte ut någon betalningsblankett. Välj det här alternativet om betalningsbeloppet är i en annan valuta än danska kroner (DKK).   FIK 751 – skriv ut ett betalningskvitto för FIK 751 om du tänker skriva betalningsbeloppet och förfallodatumet manuellt på betalningskvittot.   FIK 752 – skriv ut ett betalningskvitto för FIK 752, om du tänker använda en betalningskvitto som har ett fördefinierad betalningsbelopp och förfallodatum.  
-10. Klicka på Spara.
-11. Klicka på fliken Kravbrev.
-12. I fältet Associerad betalningsbilaga i kravbrev, välj ett alternativ.
-    * Ingen – skriv inte ut någon betalningsblankett. Välj det här alternativet om betalningsbeloppet är i en annan valuta än danska kroner (DKK).   FIK 751 – skriv ut ett betalningskvitto för FIK 751 om du tänker skriva betalningsbeloppet och förfallodatumet manuellt på betalningskvittot.   FIK 752 – skriv ut ett betalningskvitto för FIK 752, om du tänker använda en betalningskvitto som har ett fördefinierad betalningsbelopp och förfallodatum.  
-13. Klicka på Spara.
-14. Klicka på fliken Kontoutdrag.
-15. I fältet Associerad betalningsbilaga på kontoutdrag, välj ett alternativ.
-    * Ingen – skriv inte ut någon betalningsblankett. Välj det här alternativet om betalningsbeloppet är i en annan valuta än danska kroner (DKK).   FIK 751 – skriv ut ett betalningskvitto för FIK 751 om du tänker skriva betalningsbeloppet och förfallodatumet manuellt på betalningskvittot.   FIK 752 – skriv ut ett betalningskvitto för FIK 752, om du tänker använda en betalningskvitto som har ett fördefinierad betalningsbelopp och förfallodatum.  
-16. Klicka på Spara.
-17. Stäng sidan.
+## <a name="set-up-a-payment-slip-format-for-invoices-notes-letters-and-statements"></a><span data-ttu-id="0b821-116">Ställ in ett betalningsblankettformat för fakturor, anteckningar, brev och utdrag</span><span class="sxs-lookup"><span data-stu-id="0b821-116">Set up a payment slip format for invoices, notes, letters, and statements</span></span>
+1. <span data-ttu-id="0b821-117">Gå till Kundreskontra > Inställningar > Formulär > Formulärinställningar.</span><span class="sxs-lookup"><span data-stu-id="0b821-117">Go to Accounts receivable > Setup > Forms > Form setup.</span></span>
+2. <span data-ttu-id="0b821-118">Klicka på fliken Faktura.</span><span class="sxs-lookup"><span data-stu-id="0b821-118">Click the Invoice tab.</span></span>
+3. <span data-ttu-id="0b821-119">I fältet Associerad betalningsbilaga för kundfaktura, välj ett alternativ.</span><span class="sxs-lookup"><span data-stu-id="0b821-119">In the Associated payment attachment on customer invoice field, select an option.</span></span>
+    * <span data-ttu-id="0b821-120">Ingen – skriv inte ut någon betalningsblankett.</span><span class="sxs-lookup"><span data-stu-id="0b821-120">None – Do not print a payment slip.</span></span> <span data-ttu-id="0b821-121">Välj det här alternativet om betalningsbeloppet är i en annan valuta än danska kroner (DKK).</span><span class="sxs-lookup"><span data-stu-id="0b821-121">Choose this option if the payment amount is in a currency other than Danish kroner (DKK).</span></span>   <span data-ttu-id="0b821-122">FIK 751 – Skriv ut ett FIK 751-betalningskvitto om du tänker skriva betalningsbeloppet och förfallodatumet manuellt på betalningskvittot.</span><span class="sxs-lookup"><span data-stu-id="0b821-122">FIK 751 – Print an FIK 751 payment slip if you intend to manually write the payment amount and due date on the payment slip.</span></span>   <span data-ttu-id="0b821-123">FIK 752 – skriv ut ett betalningskvitto för FIK 752, om du tänker använda en betalningskvitto som har ett fördefinierad betalningsbelopp och förfallodatum.</span><span class="sxs-lookup"><span data-stu-id="0b821-123">FIK 752 – Print an FIK 752 payment slip if you intend to use a computer-generated payment slip with a preprinted payment amount and due date.</span></span>  
+4. <span data-ttu-id="0b821-124">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="0b821-124">Click Save.</span></span>
+5. <span data-ttu-id="0b821-125">Klicka på fliken Fritextfaktura.</span><span class="sxs-lookup"><span data-stu-id="0b821-125">Click the Free text invoice tab.</span></span>
+6. <span data-ttu-id="0b821-126">I fältet Associerad betalningsbilaga på fritextfaktura, välj ett alternativ.</span><span class="sxs-lookup"><span data-stu-id="0b821-126">In the Associated payment attachment on free text invoice field, select an option.</span></span>
+    * <span data-ttu-id="0b821-127">Ingen – skriv inte ut någon betalningsblankett.</span><span class="sxs-lookup"><span data-stu-id="0b821-127">None – Do not print a payment slip.</span></span> <span data-ttu-id="0b821-128">Välj det här alternativet om betalningsbeloppet är i en annan valuta än danska kroner (DKK).</span><span class="sxs-lookup"><span data-stu-id="0b821-128">Choose this option if the payment amount is in a currency other than Danish kroner (DKK).</span></span>   <span data-ttu-id="0b821-129">FIK 751 – skriv ut ett betalningskvitto för FIK 751 om du tänker skriva betalningsbeloppet och förfallodatumet manuellt på betalningskvittot.</span><span class="sxs-lookup"><span data-stu-id="0b821-129">FIK 751 – Print an FIK 751 payment slip if you intend to write the payment amount and due date on the payment slip manually.</span></span>   <span data-ttu-id="0b821-130">FIK 752 – skriv ut ett betalningskvitto för FIK 752, om du tänker använda en betalningskvitto som har ett fördefinierad betalningsbelopp och förfallodatum.</span><span class="sxs-lookup"><span data-stu-id="0b821-130">FIK 752 – Print an FIK 752 payment slip if you intend to use a computer-generated payment slip with a preprinted payment amount and due date.</span></span>  
+7. <span data-ttu-id="0b821-131">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="0b821-131">Click Save.</span></span>
+8. <span data-ttu-id="0b821-132">Klicka på fliken Räntefaktura.</span><span class="sxs-lookup"><span data-stu-id="0b821-132">Click the Interest note tab.</span></span>
+9. <span data-ttu-id="0b821-133">I fältet Associerad betalningsbilaga på räntefaktura, välj ett alternativ.</span><span class="sxs-lookup"><span data-stu-id="0b821-133">In the Associated payment attachment on interest note field, select an option.</span></span>
+    * <span data-ttu-id="0b821-134">Ingen – skriv inte ut någon betalningsblankett.</span><span class="sxs-lookup"><span data-stu-id="0b821-134">None – Do not print a payment slip.</span></span> <span data-ttu-id="0b821-135">Välj det här alternativet om betalningsbeloppet är i en annan valuta än danska kroner (DKK).</span><span class="sxs-lookup"><span data-stu-id="0b821-135">Choose this option if the payment amount is in a currency other than Danish kroner (DKK).</span></span>   <span data-ttu-id="0b821-136">FIK 751 – skriv ut ett betalningskvitto för FIK 751 om du tänker skriva betalningsbeloppet och förfallodatumet manuellt på betalningskvittot.</span><span class="sxs-lookup"><span data-stu-id="0b821-136">FIK 751 – Print an FIK 751 payment slip if you intend to write the payment amount and due date on the payment slip manually.</span></span>   <span data-ttu-id="0b821-137">FIK 752 – skriv ut ett betalningskvitto för FIK 752, om du tänker använda en betalningskvitto som har ett fördefinierad betalningsbelopp och förfallodatum.</span><span class="sxs-lookup"><span data-stu-id="0b821-137">FIK 752 – Print an FIK 752 payment slip if you intend to use a computer-generated payment slip with a preprinted payment amount and due date.</span></span>  
+10. <span data-ttu-id="0b821-138">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="0b821-138">Click Save.</span></span>
+11. <span data-ttu-id="0b821-139">Klicka på fliken Kravbrev.</span><span class="sxs-lookup"><span data-stu-id="0b821-139">Click the Collection letter tab.</span></span>
+12. <span data-ttu-id="0b821-140">I fältet Associerad betalningsbilaga i kravbrev, välj ett alternativ.</span><span class="sxs-lookup"><span data-stu-id="0b821-140">In the Associated payment attachment on collection letter field, select an option.</span></span>
+    * <span data-ttu-id="0b821-141">Ingen – skriv inte ut någon betalningsblankett.</span><span class="sxs-lookup"><span data-stu-id="0b821-141">None – Do not print a payment slip.</span></span> <span data-ttu-id="0b821-142">Välj det här alternativet om betalningsbeloppet är i en annan valuta än danska kroner (DKK).</span><span class="sxs-lookup"><span data-stu-id="0b821-142">Choose this option if the payment amount is in a currency other than Danish kroner (DKK).</span></span>   <span data-ttu-id="0b821-143">FIK 751 – skriv ut ett betalningskvitto för FIK 751 om du tänker skriva betalningsbeloppet och förfallodatumet manuellt på betalningskvittot.</span><span class="sxs-lookup"><span data-stu-id="0b821-143">FIK 751 – Print an FIK 751 payment slip if you intend to write the payment amount and due date on the payment slip manually.</span></span>   <span data-ttu-id="0b821-144">FIK 752 – skriv ut ett betalningskvitto för FIK 752, om du tänker använda en betalningskvitto som har ett fördefinierad betalningsbelopp och förfallodatum.</span><span class="sxs-lookup"><span data-stu-id="0b821-144">FIK 752 – Print an FIK 752 payment slip if you intend to use a computer-generated payment slip with a preprinted payment amount and due date.</span></span>  
+13. <span data-ttu-id="0b821-145">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="0b821-145">Click Save.</span></span>
+14. <span data-ttu-id="0b821-146">Klicka på fliken Kontoutdrag.</span><span class="sxs-lookup"><span data-stu-id="0b821-146">Click the Account statement tab.</span></span>
+15. <span data-ttu-id="0b821-147">I fältet Associerad betalningsbilaga på kontoutdrag, välj ett alternativ.</span><span class="sxs-lookup"><span data-stu-id="0b821-147">In the Associated payment attachment on account statement field, select an option.</span></span>
+    * <span data-ttu-id="0b821-148">Ingen – skriv inte ut någon betalningsblankett.</span><span class="sxs-lookup"><span data-stu-id="0b821-148">None – Do not print a payment slip.</span></span> <span data-ttu-id="0b821-149">Välj det här alternativet om betalningsbeloppet är i en annan valuta än danska kroner (DKK).</span><span class="sxs-lookup"><span data-stu-id="0b821-149">Choose this option if the payment amount is in a currency other than Danish kroner (DKK).</span></span>   <span data-ttu-id="0b821-150">FIK 751 – skriv ut ett betalningskvitto för FIK 751 om du tänker skriva betalningsbeloppet och förfallodatumet manuellt på betalningskvittot.</span><span class="sxs-lookup"><span data-stu-id="0b821-150">FIK 751 – Print an FIK 751 payment slip if you intend to write the payment amount and due date on the payment slip manually.</span></span>   <span data-ttu-id="0b821-151">FIK 752 – skriv ut ett betalningskvitto för FIK 752, om du tänker använda en betalningskvitto som har ett fördefinierad betalningsbelopp och förfallodatum.</span><span class="sxs-lookup"><span data-stu-id="0b821-151">FIK 752 – Print an FIK 752 payment slip if you intend to use a computer-generated payment slip with a preprinted payment amount and due date.</span></span>  
+16. <span data-ttu-id="0b821-152">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="0b821-152">Click Save.</span></span>
+17. <span data-ttu-id="0b821-153">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="0b821-153">Close the page.</span></span>
 
 

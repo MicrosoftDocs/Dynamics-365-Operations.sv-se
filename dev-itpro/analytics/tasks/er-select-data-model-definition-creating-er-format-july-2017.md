@@ -16,87 +16,87 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 9820888a6ab0b3eafcd4d8c95982900b2719b2ec
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 79e5c09484f9d33106194c2a8b2c9971d58d0e75
 ms.contentlocale: sv-se
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="select-data-model-definition-while-creating-format-for-electronic-reporting-er"></a>Välja en datamodelldefinition när du skapar format för elektronisk rapportering (ER)
+# <a name="select-data-model-definition-while-creating-format-for-electronic-reporting-er"></a><span data-ttu-id="7cb3a-103">Välja en datamodelldefinition när du skapar format för elektronisk rapportering (ER)</span><span class="sxs-lookup"><span data-stu-id="7cb3a-103">Select data model definition while creating format for electronic reporting (ER)</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-För att slutföra stegen i den här proceduren måste du först slutföra stegen i proceduren "ER Skapa en konfigurationsleverantör och markera den som aktiv". 
+<span data-ttu-id="7cb3a-104">För att slutföra stegen i den här proceduren måste du först slutföra stegen i proceduren "ER Skapa en konfigurationsleverantör och markera den som aktiv".</span><span class="sxs-lookup"><span data-stu-id="7cb3a-104">To complete the steps in this procedure, you must first complete the procedure, ER Create a configuration provider and mark it as active.</span></span> 
 
-Den här proceduren visar hur en modells rotobjekt kan väljas som en datamodelldefinition för att infoga en ER-formatkonfiguration (elektronisk rapportering) som syftar till att generera elektroniska dokument. I den här proceduren ska du skapa en ER-formatkonfiguration för exempelföretaget Litware, Inc. 
+<span data-ttu-id="7cb3a-105">Den här proceduren visar hur en modells rotobjekt kan väljas som en datamodelldefinition för att infoga en ER-formatkonfiguration (elektronisk rapportering) som syftar till att generera elektroniska dokument.</span><span class="sxs-lookup"><span data-stu-id="7cb3a-105">This procedure shows how a model’s root item can be selected as a data model definition for inserting an Electronic reporting (ER) format configuration that is designed to generate electronic documents.</span></span> <span data-ttu-id="7cb3a-106">I den här proceduren ska du skapa en ER-formatkonfiguration för exempelföretaget Litware, Inc.</span><span class="sxs-lookup"><span data-stu-id="7cb3a-106">In this procedure, you will add a new ER format configuration for the sample company Litware, Inc.</span></span> 
 
-Den här proceduren är avsedd för användare med rollen Systemadministratör eller Utvecklare för elektronisk rapportering. Stegen kan utföras med hjälp av valfri datauppsättning.
+<span data-ttu-id="7cb3a-107">Den här proceduren är avsedd för användare med rollen Systemadministratör eller Utvecklare för elektronisk rapportering.</span><span class="sxs-lookup"><span data-stu-id="7cb3a-107">This procedure is intended for users who have the System administrator or Electronic reporting developer role assigned to them.</span></span> <span data-ttu-id="7cb3a-108">Stegen kan utföras med hjälp av valfri datauppsättning.</span><span class="sxs-lookup"><span data-stu-id="7cb3a-108">The steps can be completed by using any dataset.</span></span>
 
-1. Gå till Organisationsadministration > Arbetsytor > Elektronisk rapportering.
-    * Kontrollera att konfigurationsleverantören för exempelföretaget "Litware, Inc." är markerad som aktiv och är tillgänglig. Om du inte ser den här konfigurationsleverantören ska du först slutföra stegen i proceduren Skapa en konfigurationsleverantör och välj den som aktiv.  
-2. Klicka på Reporting configurations.
+1. <span data-ttu-id="7cb3a-109">Gå till Organisationsadministration > Arbetsytor > Elektronisk rapportering.</span><span class="sxs-lookup"><span data-stu-id="7cb3a-109">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
+    * <span data-ttu-id="7cb3a-110">Kontrollera att konfigurationsleverantören för exempelföretaget "Litware, Inc." är markerad som aktiv och är tillgänglig.</span><span class="sxs-lookup"><span data-stu-id="7cb3a-110">Make sure that the configuration provider for the sample company, Litware, Inc., is available and marked as Active.</span></span> <span data-ttu-id="7cb3a-111">Om du inte ser den här konfigurationsleverantören ska du först slutföra stegen i proceduren Skapa en konfigurationsleverantör och välj den som aktiv.</span><span class="sxs-lookup"><span data-stu-id="7cb3a-111">If you don’t see this configuration provider, complete the steps in the procedure, Create a configuration provider and mark it as active.</span></span>  
+2. <span data-ttu-id="7cb3a-112">Klicka på Reporting configurations.</span><span class="sxs-lookup"><span data-stu-id="7cb3a-112">Click Reporting configurations.</span></span>
 
-## <a name="add-a-new-er-data-model-configuration"></a>Lägg till en ny konfiguration för ER-datamodell
-1. Klicka på Skapa konfiguration om du vill öppna dialogrutan.
-    * Vi lägger till en ny ER-modellkonfiguration som innehåller en datamodell som ska användas som datakälla för generering av ER-rapporter.  
-2. Skriv "Payment model (fictitious)" i namnfältet.
-    * Betalningsmodell (fiktiv)  
-3. Klicka på Skapa konfiguration.
-4. Klicka på Designer.
-    * Öppna ER-designern för att ange strukturen på datamodellen för den här konfigurationen.  
-    * Anta att vi utformar datamodellen för betalningens företagsdomän till att stödja två betalningsmetoder – kreditöverföring och autogiro.  
-5. Klicka på Nytt om du vill öppna dialogrutan.
-6. Skriv "Payments – credit transfer" i namnfältet.
-    * Betalningar - kreditöverföring  
-7. Klicka på Lägg till.
-8. Klicka på Nytt om du vill öppna dialogrutan.
-9. Ange "Modellrot" i fältet "Ny nod som ett fält...".
-10. Skriv "Payments – direct debit" i namnfältet.
-    * Betalningar - autogirobetalningar  
-11. Klicka på Lägg till.
-12. Klicka på Spara.
-13. Stäng sidan.
-14. Klicka på Ändra status.
-    * Slutför utkastversionen av modellen för att göra den tillgänglig i nya modellmappningar och format.  
-15. Klicka på Slutför.
-16. Klicka på OK.
+## <a name="add-a-new-er-data-model-configuration"></a><span data-ttu-id="7cb3a-113">Lägg till en ny konfiguration för ER-datamodell</span><span class="sxs-lookup"><span data-stu-id="7cb3a-113">Add a new ER data model configuration</span></span>
+1. <span data-ttu-id="7cb3a-114">Klicka på Skapa konfiguration om du vill öppna dialogrutan.</span><span class="sxs-lookup"><span data-stu-id="7cb3a-114">Click Create configuration to open the drop dialog.</span></span>
+    * <span data-ttu-id="7cb3a-115">Vi lägger till en ny ER-modellkonfiguration som innehåller en datamodell som ska användas som datakälla för generering av ER-rapporter.</span><span class="sxs-lookup"><span data-stu-id="7cb3a-115">We add a new ER model configuration containing a data model that is designed to be used as data source for generation ER reports.</span></span>  
+2. <span data-ttu-id="7cb3a-116">Skriv "Payment model (fictitious)" i namnfältet.</span><span class="sxs-lookup"><span data-stu-id="7cb3a-116">In the Name field, type 'Payment model (fictitious)'.</span></span>
+    * <span data-ttu-id="7cb3a-117">Betalningsmodell (fiktiv)</span><span class="sxs-lookup"><span data-stu-id="7cb3a-117">Payment model (fictitious)</span></span>  
+3. <span data-ttu-id="7cb3a-118">Klicka på Skapa konfiguration.</span><span class="sxs-lookup"><span data-stu-id="7cb3a-118">Click Create configuration.</span></span>
+4. <span data-ttu-id="7cb3a-119">Klicka på Designer.</span><span class="sxs-lookup"><span data-stu-id="7cb3a-119">Click Designer.</span></span>
+    * <span data-ttu-id="7cb3a-120">Öppna ER-designern för att ange strukturen på datamodellen för den här konfigurationen.</span><span class="sxs-lookup"><span data-stu-id="7cb3a-120">Open the ER designer to specify the structure of data model of this configuration.</span></span>  
+    * <span data-ttu-id="7cb3a-121">Anta att vi utformar datamodellen för betalningens företagsdomän till att stödja två betalningsmetoder – kreditöverföring och autogiro.</span><span class="sxs-lookup"><span data-stu-id="7cb3a-121">Assume that we design the data model for payments business domain to support 2 payment methods – credit transfer and direct debit ones.</span></span>  
+5. <span data-ttu-id="7cb3a-122">Klicka på Nytt om du vill öppna dialogrutan.</span><span class="sxs-lookup"><span data-stu-id="7cb3a-122">Click New to open the drop dialog.</span></span>
+6. <span data-ttu-id="7cb3a-123">Skriv "Payments – credit transfer" i namnfältet.</span><span class="sxs-lookup"><span data-stu-id="7cb3a-123">In the Name field, type 'Payments – credit transfer'.</span></span>
+    * <span data-ttu-id="7cb3a-124">Betalningar - kreditöverföring</span><span class="sxs-lookup"><span data-stu-id="7cb3a-124">Payments – credit transfer</span></span>  
+7. <span data-ttu-id="7cb3a-125">Klicka på Lägg till.</span><span class="sxs-lookup"><span data-stu-id="7cb3a-125">Click Add.</span></span>
+8. <span data-ttu-id="7cb3a-126">Klicka på Nytt om du vill öppna dialogrutan.</span><span class="sxs-lookup"><span data-stu-id="7cb3a-126">Click New to open the drop dialog.</span></span>
+9. <span data-ttu-id="7cb3a-127">Ange "Modellrot" i fältet "Ny nod som ett fält...".</span><span class="sxs-lookup"><span data-stu-id="7cb3a-127">In the New node as a field, enter 'Model root'.</span></span>
+10. <span data-ttu-id="7cb3a-128">Skriv "Payments – direct debit" i namnfältet.</span><span class="sxs-lookup"><span data-stu-id="7cb3a-128">In the Name field, type 'Payments – direct debit'.</span></span>
+    * <span data-ttu-id="7cb3a-129">Betalningar - autogirobetalningar</span><span class="sxs-lookup"><span data-stu-id="7cb3a-129">Payments – direct debit</span></span>  
+11. <span data-ttu-id="7cb3a-130">Klicka på Lägg till.</span><span class="sxs-lookup"><span data-stu-id="7cb3a-130">Click Add.</span></span>
+12. <span data-ttu-id="7cb3a-131">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="7cb3a-131">Click Save.</span></span>
+13. <span data-ttu-id="7cb3a-132">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="7cb3a-132">Close the page.</span></span>
+14. <span data-ttu-id="7cb3a-133">Klicka på Ändra status.</span><span class="sxs-lookup"><span data-stu-id="7cb3a-133">Click Change status.</span></span>
+    * <span data-ttu-id="7cb3a-134">Slutför utkastversionen av modellen för att göra den tillgänglig i nya modellmappningar och format.</span><span class="sxs-lookup"><span data-stu-id="7cb3a-134">Complete the draft version of the model to make it available in new model mappings and formats.</span></span>  
+15. <span data-ttu-id="7cb3a-135">Klicka på Slutför.</span><span class="sxs-lookup"><span data-stu-id="7cb3a-135">Click Complete.</span></span>
+16. <span data-ttu-id="7cb3a-136">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="7cb3a-136">Click OK.</span></span>
 
-## <a name="start-to-enter-a-new-er-format-configuration"></a>Börja ange en ny ER-formatkonfiguration
-1. Klicka på Skapa konfiguration om du vill öppna dialogrutan.
-2. Ange "Format based on data model Payment model (fictitious)" i fältet Ny.
-3. Ange eller välj ett värde i fältet Data model definition.
-    * Observera att alla rotobjekt i den valda datamodellen kan väljas som datamodelldefinition. Du kan fortsätta att utforma formatet genom att använda de rotobjekt som behövs för datamodellen. Du kan fortsätta även om det saknas en modellmappning för valda rotobjektet.  
-4. Stäng sidan.
+## <a name="start-to-enter-a-new-er-format-configuration"></a><span data-ttu-id="7cb3a-137">Börja ange en ny ER-formatkonfiguration</span><span class="sxs-lookup"><span data-stu-id="7cb3a-137">Start to enter a new ER format configuration</span></span>
+1. <span data-ttu-id="7cb3a-138">Klicka på Skapa konfiguration om du vill öppna dialogrutan.</span><span class="sxs-lookup"><span data-stu-id="7cb3a-138">Click Create configuration to open the drop dialog.</span></span>
+2. <span data-ttu-id="7cb3a-139">Ange "Format based on data model Payment model (fictitious)" i fältet Ny.</span><span class="sxs-lookup"><span data-stu-id="7cb3a-139">In the New field, enter 'Format based on data model Payment model (fictitious)'.</span></span>
+3. <span data-ttu-id="7cb3a-140">Ange eller välj ett värde i fältet Data model definition.</span><span class="sxs-lookup"><span data-stu-id="7cb3a-140">In the Data model definition field, enter or select a value.</span></span>
+    * <span data-ttu-id="7cb3a-141">Observera att alla rotobjekt i den valda datamodellen kan väljas som datamodelldefinition.</span><span class="sxs-lookup"><span data-stu-id="7cb3a-141">Note that all root items of the selected data model are currently available for selection as a data model definition.</span></span> <span data-ttu-id="7cb3a-142">Du kan fortsätta att utforma formatet genom att använda de rotobjekt som behövs för datamodellen.</span><span class="sxs-lookup"><span data-stu-id="7cb3a-142">You can continue to design your format by using any of the required root items of the data model.</span></span> <span data-ttu-id="7cb3a-143">Du kan fortsätta även om det saknas en modellmappning för valda rotobjektet.</span><span class="sxs-lookup"><span data-stu-id="7cb3a-143">A missing model mapping for the selected root item doesn't prevent you from continuing.</span></span>  
+4. <span data-ttu-id="7cb3a-144">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="7cb3a-144">Close the page.</span></span>
 
-## <a name="add-a-new-er-model-mapping-configuration"></a>Lägg till en ny konfiguration för ER-modellmappning
-1. Klicka på Skapa konfiguration om du vill öppna dialogrutan.
-2. Ange "Model Mapping based on data model Payment model (fictitious)" i fältet Ny.
-3. Skriv "Payment model mappings (fictitious)" i namnfältet.
-    * Betalningsmodellmappningar (fiktiv)  
-4. Ange eller välj ett värde i fältet Data model definition.
-5. Klicka på Skapa konfiguration.
+## <a name="add-a-new-er-model-mapping-configuration"></a><span data-ttu-id="7cb3a-145">Lägg till en ny konfiguration för ER-modellmappning</span><span class="sxs-lookup"><span data-stu-id="7cb3a-145">Add a new ER model mapping configuration</span></span>
+1. <span data-ttu-id="7cb3a-146">Klicka på Skapa konfiguration om du vill öppna dialogrutan.</span><span class="sxs-lookup"><span data-stu-id="7cb3a-146">Click Create configuration to open the drop dialog.</span></span>
+2. <span data-ttu-id="7cb3a-147">Ange "Model Mapping based on data model Payment model (fictitious)" i fältet Ny.</span><span class="sxs-lookup"><span data-stu-id="7cb3a-147">In the New field, enter 'Model Mapping based on data model Payment model (fictitious)'.</span></span>
+3. <span data-ttu-id="7cb3a-148">Skriv "Payment model mappings (fictitious)" i namnfältet.</span><span class="sxs-lookup"><span data-stu-id="7cb3a-148">In the Name field, type 'Payment model mappings (fictitious)'.</span></span>
+    * <span data-ttu-id="7cb3a-149">Betalningsmodellmappningar (fiktiv)</span><span class="sxs-lookup"><span data-stu-id="7cb3a-149">Payment model mappings (fictitious)</span></span>  
+4. <span data-ttu-id="7cb3a-150">Ange eller välj ett värde i fältet Data model definition.</span><span class="sxs-lookup"><span data-stu-id="7cb3a-150">In the Data model definition field, enter or select a value.</span></span>
+5. <span data-ttu-id="7cb3a-151">Klicka på Skapa konfiguration.</span><span class="sxs-lookup"><span data-stu-id="7cb3a-151">Click Create configuration.</span></span>
 
-## <a name="design-er-model-mappings"></a>Utforma ER-modellmappningar
-1. Klicka på Designer.
-    * Använd ER-designern om du vill ange modellmappningar för de nödvändiga rotobjekten.  
-2. Klicka på Designer.
-    * Simulera inställningen för den valda modellmappningen för den valda modellens rotobjekt.  
-3. Välj Dynamics 365 for Dynamics 365 for Operations\Table records i trädet.
-4. Klicka på Lägg till rot.
-5. Skriv "Ledger" i namnfältet.
-6. Skriv "LedgerJournalTrans" i fältet Tabell.
-    * LedgerJournalTrans  
-7. Klicka på OK.
-8. Klicka på Spara.
-9. Stäng sidan.
-10. Stäng sidan.
+## <a name="design-er-model-mappings"></a><span data-ttu-id="7cb3a-152">Utforma ER-modellmappningar</span><span class="sxs-lookup"><span data-stu-id="7cb3a-152">Design ER model mappings</span></span>
+1. <span data-ttu-id="7cb3a-153">Klicka på Designer.</span><span class="sxs-lookup"><span data-stu-id="7cb3a-153">Click Designer.</span></span>
+    * <span data-ttu-id="7cb3a-154">Använd ER-designern om du vill ange modellmappningar för de nödvändiga rotobjekten.</span><span class="sxs-lookup"><span data-stu-id="7cb3a-154">Use the ER designer to specify the model mappings for the required root items.</span></span>  
+2. <span data-ttu-id="7cb3a-155">Klicka på Designer.</span><span class="sxs-lookup"><span data-stu-id="7cb3a-155">Click Designer.</span></span>
+    * <span data-ttu-id="7cb3a-156">Simulera inställningen för den valda modellmappningen för den valda modellens rotobjekt.</span><span class="sxs-lookup"><span data-stu-id="7cb3a-156">Simulate setting of selected model mapping for the selected model’s root item.</span></span>  
+3. <span data-ttu-id="7cb3a-157">Välj Dynamics 365 for Dynamics 365 for Operations\Table records i trädet.</span><span class="sxs-lookup"><span data-stu-id="7cb3a-157">In the tree, select 'Dynamics 365 for Operations\Table records'.</span></span>
+4. <span data-ttu-id="7cb3a-158">Klicka på Lägg till rot.</span><span class="sxs-lookup"><span data-stu-id="7cb3a-158">Click Add root.</span></span>
+5. <span data-ttu-id="7cb3a-159">Skriv "Ledger" i namnfältet.</span><span class="sxs-lookup"><span data-stu-id="7cb3a-159">In the Name field, type 'Ledger'.</span></span>
+6. <span data-ttu-id="7cb3a-160">Skriv "LedgerJournalTrans" i fältet Tabell.</span><span class="sxs-lookup"><span data-stu-id="7cb3a-160">In the Table field, type 'LedgerJournalTrans'.</span></span>
+    * <span data-ttu-id="7cb3a-161">LedgerJournalTrans</span><span class="sxs-lookup"><span data-stu-id="7cb3a-161">LedgerJournalTrans</span></span>  
+7. <span data-ttu-id="7cb3a-162">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="7cb3a-162">Click OK.</span></span>
+8. <span data-ttu-id="7cb3a-163">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="7cb3a-163">Click Save.</span></span>
+9. <span data-ttu-id="7cb3a-164">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="7cb3a-164">Close the page.</span></span>
+10. <span data-ttu-id="7cb3a-165">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="7cb3a-165">Close the page.</span></span>
 
-## <a name="start-to-enter-another-new-er-format-configuration"></a>Börja ange en till ny ER-formatkonfiguration
-1. Välj "Payment model (fictitious)" i trädet.
-2. Klicka på Skapa konfiguration om du vill öppna dialogrutan.
-3. Ange "Format based on data model Payment model (fictitious)" i fältet Ny.
-4. Ange eller välj ett värde i fältet Data model definition.
-    * Observera att det nu bara finns ett rotobjekt tillgängligt att mappa till programmets datakällor. När minst en modellmappning har tagits i bruk kan bara modellens rotobjekt som är mappade till programmet datakällor väljas som modelldefinition när ER-formatet läggs till.   
-5. Stäng sidan.
+## <a name="start-to-enter-another-new-er-format-configuration"></a><span data-ttu-id="7cb3a-166">Börja ange en till ny ER-formatkonfiguration</span><span class="sxs-lookup"><span data-stu-id="7cb3a-166">Start to enter another new ER format configuration</span></span>
+1. <span data-ttu-id="7cb3a-167">Välj "Payment model (fictitious)" i trädet.</span><span class="sxs-lookup"><span data-stu-id="7cb3a-167">In the tree, select 'Payment model (fictitious)'.</span></span>
+2. <span data-ttu-id="7cb3a-168">Klicka på Skapa konfiguration om du vill öppna dialogrutan.</span><span class="sxs-lookup"><span data-stu-id="7cb3a-168">Click Create configuration to open the drop dialog.</span></span>
+3. <span data-ttu-id="7cb3a-169">Ange "Format based on data model Payment model (fictitious)" i fältet Ny.</span><span class="sxs-lookup"><span data-stu-id="7cb3a-169">In the New field, enter 'Format based on data model Payment model (fictitious)'.</span></span>
+4. <span data-ttu-id="7cb3a-170">Ange eller välj ett värde i fältet Data model definition.</span><span class="sxs-lookup"><span data-stu-id="7cb3a-170">In the Data model definition field, enter or select a value.</span></span>
+    * <span data-ttu-id="7cb3a-171">Observera att det nu bara finns ett rotobjekt tillgängligt att mappa till programmets datakällor.</span><span class="sxs-lookup"><span data-stu-id="7cb3a-171">Note that now only one root item is available to map to the application data sources.</span></span> <span data-ttu-id="7cb3a-172">När minst en modellmappning har tagits i bruk kan bara modellens rotobjekt som är mappade till programmet datakällor väljas som modelldefinition när ER-formatet läggs till.</span><span class="sxs-lookup"><span data-stu-id="7cb3a-172">When at least one model mapping is introduced, only the model’s root items that are mapped to application data sources can be selected as a model definition while the ER format is added.</span></span>   
+5. <span data-ttu-id="7cb3a-173">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="7cb3a-173">Close the page.</span></span>
 
 

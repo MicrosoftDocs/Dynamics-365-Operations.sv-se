@@ -17,43 +17,43 @@ ms.author: jeffbl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: f241899df89377e3c08c94663b90ee9d0ce750dc
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 09c5d263f3ad0bade6b7dd8f099dd3f62a1ddf5d
 ms.contentlocale: sv-se
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="configure-a-worker"></a> Konfigurera en arbetare
+# <a name="configure-a-worker"></a><span data-ttu-id="bcb4c-103"> Konfigurera en arbetare</span><span class="sxs-lookup"><span data-stu-id="bcb4c-103">Configure a worker</span></span>
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-I den här proceduren visas hur du konfigurerar en detaljhandelsmedarbetare som en säljare som är berättigad till provision på försäljning i kassan. I proceduren används demonstrationsföretaget USRT.
+<span data-ttu-id="bcb4c-104">I den här proceduren visas hur du konfigurerar en detaljhandelsmedarbetare som en säljare som är berättigad till provision på försäljning i kassan.</span><span class="sxs-lookup"><span data-stu-id="bcb4c-104">This procedure demonstrates how to configure a retail worker as a sales representative who is eligible for commission on sales in POS.</span></span> <span data-ttu-id="bcb4c-105">I proceduren används demonstrationsföretaget USRT.</span><span class="sxs-lookup"><span data-stu-id="bcb4c-105">This procedure uses the USRT demo data company.</span></span>
 
 
-## <a name="create-a-commission-sales-group-for-the-worker"></a>Skapa en provisionsförsäljningsgrupp för arbetaren
-1. Gå till Försäljning och marknadsföring > Provisioner > Säljgrupper.
-    * Arbetare kan tilldelas en eller flera försäljningsgrupper. I kassan kan du välja valfri försäljningsgrupp som innehåller arbetare från butikens adressbok.  
-2. Klicka på Ny.
-3. Ange ett värde i fältet Grupp.
-4. Skriv ett värde i fältet Namn.
-5. Klicka på Spara.
-6. Klicka på Allmänt i åtgärdsfönstret.
-7. Klicka på Sales rep.
-    * En försäljningsgrupp kan innehålla mer än en arbetare. Provision kan delas mellan arbetare baserat på hur du definierar provisionsdelningen.  
-8. Ange eller välj ett värde i fältet Namn.
-9. Ange ett värde i fältet Commission share.
-10. Klicka på Spara.
-11. Stäng sidan.
-12. Stäng sidan.
+## <a name="create-a-commission-sales-group-for-the-worker"></a><span data-ttu-id="bcb4c-106">Skapa en provisionsförsäljningsgrupp för arbetaren</span><span class="sxs-lookup"><span data-stu-id="bcb4c-106">Create a commission sales group for the worker</span></span>
+1. <span data-ttu-id="bcb4c-107">Gå till Försäljning och marknadsföring > Provisioner > Säljgrupper.</span><span class="sxs-lookup"><span data-stu-id="bcb4c-107">Go to Sales and marketing > Commissions > Sales groups.</span></span>
+    * <span data-ttu-id="bcb4c-108">Arbetare kan tilldelas en eller flera försäljningsgrupper.</span><span class="sxs-lookup"><span data-stu-id="bcb4c-108">Workers can be assigned to one or more sales groups.</span></span> <span data-ttu-id="bcb4c-109">I kassan kan du välja valfri försäljningsgrupp som innehåller arbetare från butikens adressbok.</span><span class="sxs-lookup"><span data-stu-id="bcb4c-109">In POS, you can choose any sales group that contains workers from the store's address book.</span></span>  
+2. <span data-ttu-id="bcb4c-110">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="bcb4c-110">Click New.</span></span>
+3. <span data-ttu-id="bcb4c-111">Ange ett värde i fältet Grupp.</span><span class="sxs-lookup"><span data-stu-id="bcb4c-111">In the Group field, type a value.</span></span>
+4. <span data-ttu-id="bcb4c-112">Skriv ett värde i fältet Namn.</span><span class="sxs-lookup"><span data-stu-id="bcb4c-112">In the Name field, type a value.</span></span>
+5. <span data-ttu-id="bcb4c-113">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="bcb4c-113">Click Save.</span></span>
+6. <span data-ttu-id="bcb4c-114">Klicka på Allmänt i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="bcb4c-114">On the Action Pane, click General.</span></span>
+7. <span data-ttu-id="bcb4c-115">Klicka på Sales rep.</span><span class="sxs-lookup"><span data-stu-id="bcb4c-115">Click Sales rep.</span></span>
+    * <span data-ttu-id="bcb4c-116">En försäljningsgrupp kan innehålla mer än en arbetare.</span><span class="sxs-lookup"><span data-stu-id="bcb4c-116">A sales group can contain more than one worker.</span></span> <span data-ttu-id="bcb4c-117">Provision kan delas mellan arbetare baserat på hur du definierar provisionsdelningen.</span><span class="sxs-lookup"><span data-stu-id="bcb4c-117">Commissions can be split between workers based on how you define the commission share.</span></span>  
+8. <span data-ttu-id="bcb4c-118">Ange eller välj ett värde i fältet Namn.</span><span class="sxs-lookup"><span data-stu-id="bcb4c-118">In the Name field, enter or select a value.</span></span>
+9. <span data-ttu-id="bcb4c-119">Ange ett värde i fältet Commission share.</span><span class="sxs-lookup"><span data-stu-id="bcb4c-119">In the Commission share field, enter a number.</span></span>
+10. <span data-ttu-id="bcb4c-120">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="bcb4c-120">Click Save.</span></span>
+11. <span data-ttu-id="bcb4c-121">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="bcb4c-121">Close the page.</span></span>
+12. <span data-ttu-id="bcb4c-122">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="bcb4c-122">Close the page.</span></span>
 
-## <a name="assign-the-workers-default-sales-group"></a>Tilldela förvald försäljningsgrupp för arbetare
-1. Gå till Butik och handel > Medarbetare > Alla arbetare.
-2. Hitta och markera önskad post i listan.
-3. Klicka på länken på den valda raden i listan.
-4. Klicka på fliken Butik.
-    * En arbetare kan tilldelas en förvald försäljningsgrupp. Den förvalda försäljningsgruppen läggs automatiskt till i försäljningsrader i kassan om alternativet aktiveras i funktionsprofilen för butiken.  
-5. Klicka på Redigera.
-6. Ange eller välj ett värde i fältet Default group.
-7. Klicka på Spara.
+## <a name="assign-the-workers-default-sales-group"></a><span data-ttu-id="bcb4c-123">Tilldela förvald försäljningsgrupp för arbetare</span><span class="sxs-lookup"><span data-stu-id="bcb4c-123">Assign the workers default sales group</span></span>
+1. <span data-ttu-id="bcb4c-124">Gå till Butik och handel > Medarbetare > Alla arbetare.</span><span class="sxs-lookup"><span data-stu-id="bcb4c-124">Go to Retail and commerce > Employees > Workers.</span></span>
+2. <span data-ttu-id="bcb4c-125">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="bcb4c-125">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="bcb4c-126">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="bcb4c-126">In the list, click the link in the selected row.</span></span>
+4. <span data-ttu-id="bcb4c-127">Klicka på fliken Butik.</span><span class="sxs-lookup"><span data-stu-id="bcb4c-127">Click the Retail tab.</span></span>
+    * <span data-ttu-id="bcb4c-128">En arbetare kan tilldelas en förvald försäljningsgrupp.</span><span class="sxs-lookup"><span data-stu-id="bcb4c-128">A worker can be assigned to a default sales group.</span></span> <span data-ttu-id="bcb4c-129">Den förvalda försäljningsgruppen läggs automatiskt till i försäljningsrader i kassan om alternativet aktiveras i funktionsprofilen för butiken.</span><span class="sxs-lookup"><span data-stu-id="bcb4c-129">The default sales group will be automatically added to sales lines in POS if the option is enabled in the functionality profile for the store.</span></span>  
+5. <span data-ttu-id="bcb4c-130">Klicka på Redigera.</span><span class="sxs-lookup"><span data-stu-id="bcb4c-130">Click Edit.</span></span>
+6. <span data-ttu-id="bcb4c-131">Ange eller välj ett värde i fältet Default group.</span><span class="sxs-lookup"><span data-stu-id="bcb4c-131">In the Default group field, enter or select a value.</span></span>
+7. <span data-ttu-id="bcb4c-132">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="bcb4c-132">Click Save.</span></span>
 
 

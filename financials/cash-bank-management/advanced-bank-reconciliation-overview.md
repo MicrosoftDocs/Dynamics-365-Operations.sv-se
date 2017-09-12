@@ -19,36 +19,36 @@ ms.author: leguo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 67cd622d7766e5b177ccc58398431b007e8bda4e
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: 33150777222faa97af7488c59ab13cb0fb9e8e2c
 ms.contentlocale: sv-se
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 06/29/2017
 
 
 ---
 
-# <a name="advanced-bank-reconciliation-overview"></a>Översikt över avancerad bankavstämning
+# <a name="advanced-bank-reconciliation-overview"></a><span data-ttu-id="52fa2-104">Översikt över avancerad bankavstämning</span><span class="sxs-lookup"><span data-stu-id="52fa2-104">Advanced bank reconciliation overview</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Det här avsnittet beskriver flödet för den avancerade bankavstämningsprocessen. Med hjälp av den avancerade bankavstämningsfunktionen kan du importera bankutdrag som kan vara automatiskt avstämda inom banktransaktioner.
+<span data-ttu-id="52fa2-105">Det här avsnittet beskriver flödet för den avancerade bankavstämningsprocessen.</span><span class="sxs-lookup"><span data-stu-id="52fa2-105">This article describes the flow for the advanced bank reconciliation process.</span></span> <span data-ttu-id="52fa2-106">Med hjälp av den avancerade bankavstämningsfunktionen kan du importera bankutdrag som kan vara automatiskt avstämda inom banktransaktioner.</span><span class="sxs-lookup"><span data-stu-id="52fa2-106">The advanced bank reconciliation feature lets you import bank statements that can be automatically reconciled from within bank transactions.</span></span>
 
-Den avancerade bankavstämningsfunktionen gör att du kan importera bankutdrag. Det importerade bankutdraget kan sedan automatiskt stämmas av från banktransaktioner. Här följer stegen i flödet för avancerad bankavstämning.
+<span data-ttu-id="52fa2-107">Den avancerade bankavstämningsfunktionen gör att du kan importera bankutdrag.</span><span class="sxs-lookup"><span data-stu-id="52fa2-107">The advanced bank reconciliation feature lets you import bank statements.</span></span> <span data-ttu-id="52fa2-108">Det importerade bankutdraget kan sedan automatiskt stämmas av från banktransaktioner.</span><span class="sxs-lookup"><span data-stu-id="52fa2-108">The imported bank statement can then be automatically reconciled from within bank transactions.</span></span> <span data-ttu-id="52fa2-109">Här följer stegen i flödet för avancerad bankavstämning.</span><span class="sxs-lookup"><span data-stu-id="52fa2-109">Here are the steps in the advanced bank reconciliation flow.</span></span>
 
-1.  Ställ in import av bankutdrag.
-    -   Importera bankutdrag via datatabellsramverket.
-    -   Tre vanligaste bankutdragformat är inbyggda i: ISO20022, BAI2 och MT940.
-    -   Funktionen kan utökas till alla format.
+1.  <span data-ttu-id="52fa2-110">Ställ in import av bankutdrag.</span><span class="sxs-lookup"><span data-stu-id="52fa2-110">Set up a bank statement import.</span></span>
+    -   <span data-ttu-id="52fa2-111">Importera bankutdrag via datatabellsramverket.</span><span class="sxs-lookup"><span data-stu-id="52fa2-111">Import bank statements through the data entity framework.</span></span>
+    -   <span data-ttu-id="52fa2-112">Tre vanligaste bankutdragformat är inbyggda i: ISO20022, BAI2 och MT940.</span><span class="sxs-lookup"><span data-stu-id="52fa2-112">Three typical bank statement formats are built in: ISO20022, BAI2, and MT940.</span></span>
+    -   <span data-ttu-id="52fa2-113">Funktionen kan utökas till alla format.</span><span class="sxs-lookup"><span data-stu-id="52fa2-113">The functionality can be extended to any format.</span></span>
 
-2.  Ställ in en nummerserie som ska användas för avancerad bankavstämning och definiera matchningsregler för bankavstämning.
-    -   En regel för avstämningsmatchning är en uppsättning villkor som används för att filtrera bankutdragsrader och transaktionsrader för Microsoft Dynamics 365 for Finance and Operations, Enterprise edition under avstämningsprocessen. Du kan ställa in mer än en matchningsregel att automatisera och optimera din avstämningsprocess beroende på din affärsverksamhet.
+2.  <span data-ttu-id="52fa2-114">Ställ in en nummerserie som ska användas för avancerad bankavstämning och definiera matchningsregler för bankavstämning.</span><span class="sxs-lookup"><span data-stu-id="52fa2-114">Set up a number sequence to use for advanced bank reconciliation, and define the bank reconciliation matching rules.</span></span>
+    -   <span data-ttu-id="52fa2-115">En regel för avstämningsmatchning är en uppsättning villkor som används för att filtrera bankutdragsrader och transaktionsrader för Microsoft Dynamics 365 for Finance and Operations, Enterprise edition under avstämningsprocessen.</span><span class="sxs-lookup"><span data-stu-id="52fa2-115">A reconciliation matching rule is a set of criteria that are used to filter bank statement lines and Microsoft Dynamics 365 for Finance and Operations, Enterprise edition bank transaction lines during the reconciliation process.</span></span> <span data-ttu-id="52fa2-116">Du kan ställa in mer än en matchningsregel att automatisera och optimera din avstämningsprocess beroende på din affärsverksamhet.</span><span class="sxs-lookup"><span data-stu-id="52fa2-116">Depending on your business practice, you can set up more than one matching rule to automate and optimize your reconciliation process.</span></span>
 
-3.  Stäm av bankutdragen med banktransaktioner för Finance and Operations.
-    -   Utför automatisk matchning och genereringen av avstämningsjournaler.
-    -   Visa bankutdrag och Finance and Operations-banktransaktioner sida vid sida.
-    -   Bokför Finance and Operations-banktransaktioner automatiskt om de visas på ett bankutdrag men inte i Finance and Operations.
-    -   Generera ett avstämningsutdrag.
+3.  <span data-ttu-id="52fa2-117">Stäm av bankutdragen med banktransaktioner för Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="52fa2-117">Reconcile bank statements with Finance and Operations bank transactions.</span></span>
+    -   <span data-ttu-id="52fa2-118">Utför automatisk matchning och genereringen av avstämningsjournaler.</span><span class="sxs-lookup"><span data-stu-id="52fa2-118">Perform automatic matching and creation of reconciliation journals.</span></span>
+    -   <span data-ttu-id="52fa2-119">Visa bankutdrag och Finance and Operations-banktransaktioner sida vid sida.</span><span class="sxs-lookup"><span data-stu-id="52fa2-119">View bank statements and Finance and Operations bank transactions side by side.</span></span>
+    -   <span data-ttu-id="52fa2-120">Bokför Finance and Operations-banktransaktioner automatiskt om de visas på ett bankutdrag men inte i Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="52fa2-120">Automatically post Finance and Operations bank transactions if they appear on a bank statement but don't appear in Finance and Operations.</span></span>
+    -   <span data-ttu-id="52fa2-121">Generera ett avstämningsutdrag.</span><span class="sxs-lookup"><span data-stu-id="52fa2-121">Generate a reconciliation statement.</span></span>
 
 
 

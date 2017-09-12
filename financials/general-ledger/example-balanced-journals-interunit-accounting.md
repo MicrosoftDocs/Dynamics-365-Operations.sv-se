@@ -19,40 +19,40 @@ ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 0909b64a77024d551af0dad2de985887cf6ff06d
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: f45d180dc8dcafb0579e76b890dd5d516df5b8c0
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/29/2017
 
 
 ---
 
-# <a name="balanced-journals-for-interunit-accounting"></a>Balanserade journaler för internredovisning
+# <a name="balanced-journals-for-interunit-accounting"></a><span data-ttu-id="7de52-103">Balanserade journaler för internredovisning</span><span class="sxs-lookup"><span data-stu-id="7de52-103">Balanced journals for interunit accounting</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Den här artikeln visar hur en journal automatiskt balanseras när en balanserande ekonomisk dimension har valts på sidan Redovisning. 
+<span data-ttu-id="7de52-104">Den här artikeln visar hur en journal automatiskt balanseras när en balanserande ekonomisk dimension har valts på sidan Redovisning.</span><span class="sxs-lookup"><span data-stu-id="7de52-104">This article shows how a journal is automatically balanced when a balancing financial dimension is selected on the Ledger page.</span></span> 
 
-Om redovisningposterna inte balanserar på nivån av värdena för den ekonomiska dimension, skapas ytterligare kontoposter automatiskt till att balansera journalen. Dessa kontoposter använder bokföringstyperna **Enhetsintern - debet** och**Enhetsintern - kredit** på sidan **Konton för automatiska transaktioner** för att bestämma huvudkontot. Exempelvis väljs Avdelning, som är det andra segmentet i huvudbokskonto, som den balanserade ekonomiska dimensionen och följande redovisningsposter håller på att skapas.
+<span data-ttu-id="7de52-105">Om redovisningposterna inte balanserar på nivån av värdena för den ekonomiska dimension, skapas ytterligare kontoposter automatiskt till att balansera journalen.</span><span class="sxs-lookup"><span data-stu-id="7de52-105">If account entries don't balance at the level of the financial dimension values, additional account entries are created automatically to balance the journal.</span></span> <span data-ttu-id="7de52-106">Dessa kontoposter använder bokföringstyperna **Enhetsintern - debet** och**Enhetsintern - kredit** på sidan **Konton för automatiska transaktioner** för att bestämma huvudkontot.</span><span class="sxs-lookup"><span data-stu-id="7de52-106">These account entries use the **Interunit - debit** and **Interunit - credit** posting types on the **Accounts for automatic transactions** page to determine the main account.</span></span> <span data-ttu-id="7de52-107">Exempelvis väljs Avdelning, som är det andra segmentet i huvudbokskonto, som den balanserade ekonomiska dimensionen och följande redovisningsposter håller på att skapas.</span><span class="sxs-lookup"><span data-stu-id="7de52-107">For example, Branch, which is the second segment of the ledger account, is selected as the balancing financial dimension, and the following accounting entries are about to be created.</span></span>
 
 |                      |           |
 |----------------------|-----------|
-| 6100 – MSP – OU\_256 | 100.00 DR |
-| 6100 – NY – OU\_249  | 100.00 DR |
-| 2100 – MSP – OU\_256 | 200.00 CR |
+| <span data-ttu-id="7de52-108">6100 – MSP – OU\_256</span><span class="sxs-lookup"><span data-stu-id="7de52-108">6100 – MSP – OU\_256</span></span> | <span data-ttu-id="7de52-109">100.00 DR</span><span class="sxs-lookup"><span data-stu-id="7de52-109">100.00 DR</span></span> |
+| <span data-ttu-id="7de52-110">6100 – NY – OU\_249</span><span class="sxs-lookup"><span data-stu-id="7de52-110">6100 – NY – OU\_249</span></span>  | <span data-ttu-id="7de52-111">100.00 DR</span><span class="sxs-lookup"><span data-stu-id="7de52-111">100.00 DR</span></span> |
+| <span data-ttu-id="7de52-112">2100 – MSP – OU\_256</span><span class="sxs-lookup"><span data-stu-id="7de52-112">2100 – MSP – OU\_256</span></span> | <span data-ttu-id="7de52-113">200.00 CR</span><span class="sxs-lookup"><span data-stu-id="7de52-113">200.00 CR</span></span> |
 
-I detta fall bestäms följande saldon:
+<span data-ttu-id="7de52-114">I detta fall bestäms följande saldon:</span><span class="sxs-lookup"><span data-stu-id="7de52-114">In this case, the following balances are determined:</span></span>
 
--   För avdelning MSP = 100,00 CR
--   För avdelning NY = 100,00 DR
+-   <span data-ttu-id="7de52-115">För avdelning MSP = 100,00 CR</span><span class="sxs-lookup"><span data-stu-id="7de52-115">For Branch MSP = 100.00 CR</span></span>
+-   <span data-ttu-id="7de52-116">För avdelning NY = 100,00 DR</span><span class="sxs-lookup"><span data-stu-id="7de52-116">For Branch NY = 100.00 DR</span></span>
 
-Därför skapas följande redovisningsposter automatiskt för att balansera journalen till nivån för värdena för ekonomisk dimension.
+<span data-ttu-id="7de52-117">Därför skapas följande redovisningsposter automatiskt för att balansera journalen till nivån för värdena för ekonomisk dimension.</span><span class="sxs-lookup"><span data-stu-id="7de52-117">Therefore, the following accounting entries are created automatically to balance the  journal at the level of the financial dimension values.</span></span>
 
 |                                   |           |
 |-----------------------------------|-----------|
-| (Enhetsintern debit) – MSP – OU\_256 | 100.00 DR |
-| (Enhetsintern kredit) – NY – OU\_249 | 100.00 CR |
+| <span data-ttu-id="7de52-118">(Enhetsintern debit) – MSP – OU\_256</span><span class="sxs-lookup"><span data-stu-id="7de52-118">(Interunit Debit) – MSP – OU\_256</span></span> | <span data-ttu-id="7de52-119">100.00 DR</span><span class="sxs-lookup"><span data-stu-id="7de52-119">100.00 DR</span></span> |
+| <span data-ttu-id="7de52-120">(Enhetsintern kredit) – NY – OU\_249</span><span class="sxs-lookup"><span data-stu-id="7de52-120">(Interunit Credit) – NY – OU\_249</span></span> | <span data-ttu-id="7de52-121">100.00 CR</span><span class="sxs-lookup"><span data-stu-id="7de52-121">100.00 CR</span></span> |
 
 
 

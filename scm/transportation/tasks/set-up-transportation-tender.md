@@ -17,34 +17,34 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b947a02be981155053e33a4ef20e19bf2a194a5
-ms.openlocfilehash: a8ad2469bbe51648369d2df17fc027c03e6c97ca
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 8ccd82b3249e99dd2884fb257f3e65261ab64d96
 ms.contentlocale: sv-se
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="set-up-a-transportation-tender"></a>Ställ in ett transportanbud
+# <a name="set-up-a-transportation-tender"></a><span data-ttu-id="dcacb-103">Ställ in ett transportanbud</span><span class="sxs-lookup"><span data-stu-id="dcacb-103">Set up a transportation tender</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-I den här proceduren visas hur du skapar ett anbud för transport. Detta görs normalt av en transportkoordinator. Du kan använda den här proceduren i demonstrationsdataföretaget USMF.
+<span data-ttu-id="dcacb-104">I den här proceduren visas hur du skapar ett anbud för transport.</span><span class="sxs-lookup"><span data-stu-id="dcacb-104">This procedure shows how to set up a transportation tender.</span></span> <span data-ttu-id="dcacb-105">Detta görs normalt av en transportkoordinator.</span><span class="sxs-lookup"><span data-stu-id="dcacb-105">This is typically done by a transportation coordinator.</span></span> <span data-ttu-id="dcacb-106">Du kan använda den här proceduren i demonstrationsdataföretaget USMF.</span><span class="sxs-lookup"><span data-stu-id="dcacb-106">You can use this procedure in the USMF demo data company.</span></span>
 
 
-## <a name="select-a-route"></a>Välj ett flöde
-1. Gå till Transporthantering > Planering > Workbench för lastplanering.
-2. Avmarkera kryssrutan Clear the Hide shipped and received.
-3. Välj raden med last-ID 00006.
-4. Klicka på Värdering och rutt.
-5. Klicka på Rotes.
+## <a name="select-a-route"></a><span data-ttu-id="dcacb-107">Välj ett flöde</span><span class="sxs-lookup"><span data-stu-id="dcacb-107">Select a route</span></span>
+1. <span data-ttu-id="dcacb-108">Gå till Transporthantering > Planering > Workbench för lastplanering.</span><span class="sxs-lookup"><span data-stu-id="dcacb-108">Go to Transportation management > Planning > Load planning workbench.</span></span>
+2. <span data-ttu-id="dcacb-109">Avmarkera kryssrutan Clear the Hide shipped and received.</span><span class="sxs-lookup"><span data-stu-id="dcacb-109">Clear the Hide shipped and received check box.</span></span>
+3. <span data-ttu-id="dcacb-110">Välj raden med last-ID 00006.</span><span class="sxs-lookup"><span data-stu-id="dcacb-110">Select the line with Load ID 00006.</span></span>
+4. <span data-ttu-id="dcacb-111">Klicka på Värdering och rutt.</span><span class="sxs-lookup"><span data-stu-id="dcacb-111">Click Rating and routing.</span></span>
+5. <span data-ttu-id="dcacb-112">Klicka på Rotes.</span><span class="sxs-lookup"><span data-stu-id="dcacb-112">Click Routes.</span></span>
 
-## <a name="create-the-transportation-tender"></a>Skapa ett transportanbud
-1. Klicka på Transportation tänders.
-2. Klicka på Ny.
-3. Expandera avsnittet Allmänt.
-4. Ange ett nummer i fältet Restituerad retas.
-5. Klicka på Spara.
-6. Klicka på Update status.
-7. Klicka på Skicka.
-8. Välj ett flöde.
+## <a name="create-the-transportation-tender"></a><span data-ttu-id="dcacb-113">Skapa ett transportanbud</span><span class="sxs-lookup"><span data-stu-id="dcacb-113">Create the transportation tender</span></span>
+1. <span data-ttu-id="dcacb-114">Klicka på Transportation tänders.</span><span class="sxs-lookup"><span data-stu-id="dcacb-114">Click Transportation tenders.</span></span>
+2. <span data-ttu-id="dcacb-115">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="dcacb-115">Click New.</span></span>
+3. <span data-ttu-id="dcacb-116">Expandera avsnittet Allmänt.</span><span class="sxs-lookup"><span data-stu-id="dcacb-116">Expand the General section.</span></span>
+4. <span data-ttu-id="dcacb-117">Ange ett nummer i fältet Restituerad retas.</span><span class="sxs-lookup"><span data-stu-id="dcacb-117">In the Requested rates field, enter a number.</span></span>
+5. <span data-ttu-id="dcacb-118">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="dcacb-118">Click Save.</span></span>
+6. <span data-ttu-id="dcacb-119">Klicka på Update status.</span><span class="sxs-lookup"><span data-stu-id="dcacb-119">Click Update status.</span></span>
+7. <span data-ttu-id="dcacb-120">Klicka på Skicka.</span><span class="sxs-lookup"><span data-stu-id="dcacb-120">Click Submit.</span></span>
+8. <span data-ttu-id="dcacb-121">Välj ett flöde.</span><span class="sxs-lookup"><span data-stu-id="dcacb-121">Select a route.</span></span>
 
 

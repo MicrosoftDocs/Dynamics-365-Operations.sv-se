@@ -17,115 +17,115 @@ ms.assetid: c0286bba-f54b-42de-904c-81fd796bdd1d
 ms.search.region: global
 ms.search.industry: Product information
 ms.author: yuyus
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: d232473a1df0b821c6f39553ad826c61ff9ecff8
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: c18d50122e22c3f3476a1b204ea302d1b05e7c75
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="product-related-translations-faq"></a>Vanliga frågor för produktrelaterade översättningar
+# <a name="product-related-translations-faq"></a><span data-ttu-id="555af-103">Vanliga frågor för produktrelaterade översättningar</span><span class="sxs-lookup"><span data-stu-id="555af-103">Product-related translations FAQ</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-I det här avsnittet beskrivs hur du hanterar översättningar för produkter, produktdimensionvärden och produktattribut. 
+<span data-ttu-id="555af-104">I det här avsnittet beskrivs hur du hanterar översättningar för produkter, produktdimensionvärden och produktattribut.</span><span class="sxs-lookup"><span data-stu-id="555af-104">This topic describes how to manage translations for products, product dimension values, and product attributes.</span></span> 
 
-<a name="what-product-related-data-can-be-translated"></a>Vilka produktrelaterade data kan översättas?
+<a name="what-product-related-data-can-be-translated"></a><span data-ttu-id="555af-105">Vilka produktrelaterade data kan översättas?</span><span class="sxs-lookup"><span data-stu-id="555af-105">What product-related data can be translated?</span></span>
 --------------------------------------------
 
-Du kan skapa översättningar för följande produktrelaterade information:
--   Namn och beskrivningar av produkter.
--   Beskrivningar, användarvänliga namn och hjälptext om produktattributvärden.
--   Namn och beskrivningar av produktdimensionsvärden.
+<span data-ttu-id="555af-106">Du kan skapa översättningar för följande produktrelaterade information:</span><span class="sxs-lookup"><span data-stu-id="555af-106">You can create translations for the following product-related information:</span></span>
+-   <span data-ttu-id="555af-107">Namn och beskrivningar av produkter.</span><span class="sxs-lookup"><span data-stu-id="555af-107">Names and descriptions of products.</span></span>
+-   <span data-ttu-id="555af-108">Beskrivningar, användarvänliga namn och hjälptext om produktattributvärden.</span><span class="sxs-lookup"><span data-stu-id="555af-108">Descriptions, friendly names, and help text of product attribute values.</span></span>
+-   <span data-ttu-id="555af-109">Namn och beskrivningar av produktdimensionsvärden.</span><span class="sxs-lookup"><span data-stu-id="555af-109">Names and descriptions of product dimension values.</span></span>
 
-Du kan översätta produktrelaterad information till valfritt språk som är tillgängligt på sidan **Textöversättning**. För mer information, se **Hur skapar jag översättningar för produktrelaterad information**.
+<span data-ttu-id="555af-110">Du kan översätta produktrelaterad information till valfritt språk som är tillgängligt på sidan **Textöversättning**.</span><span class="sxs-lookup"><span data-stu-id="555af-110">You can translate the product-related information into any language that is available from the **Text translation** page.</span></span> <span data-ttu-id="555af-111">För mer information, se **Hur skapar jag översättningar för produktrelaterad information**.</span><span class="sxs-lookup"><span data-stu-id="555af-111">For more information, see the following section **How do I created translations for product-related information**.</span></span>
 
-## <a name="where-can-i-view-the-translated-information"></a>Var kan jag visa den översatta informationen?
-Du kan visa översättningar av produktrelaterad information i alla externa källdokument, till exempel en faktura, som använder ett språk där översättningar är tillgängliga.
+## <a name="where-can-i-view-the-translated-information"></a><span data-ttu-id="555af-112">Var kan jag visa den översatta informationen?</span><span class="sxs-lookup"><span data-stu-id="555af-112">Where can I view the translated information?</span></span>
+<span data-ttu-id="555af-113">Du kan visa översättningar av produktrelaterad information i alla externa källdokument, till exempel en faktura, som använder ett språk där översättningar är tillgängliga.</span><span class="sxs-lookup"><span data-stu-id="555af-113">You can view translations of product-related information in any external source document, such as an invoice, that uses a language where translations are available.</span></span>
 
-## <a name="how-do-i-create-translations-for-productrelated-information"></a>Hur skapar jag översättningar för produktrelaterad information?
-Följ dessa steg för att skapa översättningar för en produkt:
-1.  Klicka på **Produktinformationshantering** &gt; **Allmänt** &gt; **Frisläppta produkter**.
-2.  Välj en produkt och klicka på **Översättningar** i gruppen **Språk**.
-3.  På sidan **Textöversättning**, i fältet **Språk**, väljer du ett språk. Expandera fältet **Språk** och klicka sedan på **OK**.
-4.  I gruppen **Översatt text** anger du översättningar i fälten **Beskrivning** och **Produktnamn**.
+## <a name="how-do-i-create-translations-for-productrelated-information"></a><span data-ttu-id="555af-114">Hur skapar jag översättningar för produktrelaterad information?</span><span class="sxs-lookup"><span data-stu-id="555af-114">How do I create translations for productrelated information?</span></span>
+<span data-ttu-id="555af-115">Följ dessa steg för att skapa översättningar för en produkt:</span><span class="sxs-lookup"><span data-stu-id="555af-115">To create translations for a product, follow these steps:</span></span>
+1.  <span data-ttu-id="555af-116">Klicka på **Produktinformationshantering** &gt; **Allmänt** &gt; **Frisläppta produkter**.</span><span class="sxs-lookup"><span data-stu-id="555af-116">Click **Product information management** &gt; **Common** &gt; **Released products**.</span></span>
+2.  <span data-ttu-id="555af-117">Välj en produkt och klicka på **Översättningar** i gruppen **Språk**.</span><span class="sxs-lookup"><span data-stu-id="555af-117">Select a product, and on the Action Pane, in the **Languages** group, click **Translations**.</span></span>
+3.  <span data-ttu-id="555af-118">På sidan **Textöversättning**, i fältet **Språk**, väljer du ett språk.</span><span class="sxs-lookup"><span data-stu-id="555af-118">In the **Text translation** page, in the **Language** field, select a language.</span></span> <span data-ttu-id="555af-119">Expandera fältet **Språk** och klicka sedan på **OK**.</span><span class="sxs-lookup"><span data-stu-id="555af-119">To add more languages, expand the **Language** field, and then click **OK**.</span></span>
+4.  <span data-ttu-id="555af-120">I gruppen **Översatt text** anger du översättningar i fälten **Beskrivning** och **Produktnamn**.</span><span class="sxs-lookup"><span data-stu-id="555af-120">In the **Translated text** group, enter translations in the **Description** and **Product name** fields.</span></span>
 
-Följ dessa steg för att skapa översättningar för produktattribut:
-1.  Klicka på **Produktinformationshantering** &gt; **Allmänt** &gt; **Frisläppta produkter**.
-2.  Under **Inställningar** klickar du på **Attribut** och sedan på **Attribut**.
-3.  På sidan **Attribut** klickar du på **Översätt**.
-4.  På sidan **Textöversättning**, i fältet **Språk**, väljer du ett språk. Expandera fältet **Språk** och klicka sedan på **OK**.
-5.  I gruppen **Översatt text** anger du översättningar i fälten **Beskrivning**, **Eget namn** och **Hjälptext**.
+<span data-ttu-id="555af-121">Följ dessa steg för att skapa översättningar för produktattribut:</span><span class="sxs-lookup"><span data-stu-id="555af-121">To create translations for product attributes, follow these steps:</span></span>
+1.  <span data-ttu-id="555af-122">Klicka på **Produktinformationshantering** &gt; **Allmänt** &gt; **Frisläppta produkter**.</span><span class="sxs-lookup"><span data-stu-id="555af-122">Click **Product information management** &gt; **Common** &gt; **Released products**.</span></span>
+2.  <span data-ttu-id="555af-123">Under **Inställningar** klickar du på **Attribut** och sedan på **Attribut**.</span><span class="sxs-lookup"><span data-stu-id="555af-123">Under **Setup**, click **Attributes**, and then click **Attributes**.</span></span>
+3.  <span data-ttu-id="555af-124">På sidan **Attribut** klickar du på **Översätt**.</span><span class="sxs-lookup"><span data-stu-id="555af-124">In the **Attributes** page, click **Translate**.</span></span>
+4.  <span data-ttu-id="555af-125">På sidan **Textöversättning**, i fältet **Språk**, väljer du ett språk.</span><span class="sxs-lookup"><span data-stu-id="555af-125">In the **Text translation** page, in the **Language** field, select a language.</span></span> <span data-ttu-id="555af-126">Expandera fältet **Språk** och klicka sedan på **OK**.</span><span class="sxs-lookup"><span data-stu-id="555af-126">To add more languages, expand the **Language** field, and then click **OK**.</span></span>
+5.  <span data-ttu-id="555af-127">I gruppen **Översatt text** anger du översättningar i fälten **Beskrivning**, **Eget namn** och **Hjälptext**.</span><span class="sxs-lookup"><span data-stu-id="555af-127">In the **Translated text** group, enter translations in the **Description**, **Friendly name**, and **Help text** fields.</span></span>
 
-Följ dessa steg för att skapa översättningar för produktdimensionsvärden:
-1.  Klicka på **Produktinformationshantering** &gt; **Allmänt** &gt; **Frisläppta produkter**.
-2.  Välj en produkt och klicka sedan på **Produktdimensioner**.
-3.  Välj en av länkarna för produktdimensioner: **Configurations**, **Sizes**, **Colors** eller **Style**.
-4.  Välj ett dimensionsvärde och klicka sedan på **Översätt**.
-5.  På sidan **Textöversättning**, i fältet **Språk**, väljer du ett språk. Expandera fältet **Språk** och klicka sedan på **OK**.
-6.  I gruppen **Översatt text** anger du översättningar i fälten **Namn** och **Beskrivning**.
+<span data-ttu-id="555af-128">Följ dessa steg för att skapa översättningar för produktdimensionsvärden:</span><span class="sxs-lookup"><span data-stu-id="555af-128">To create translations for product dimension values, follow these steps:</span></span>
+1.  <span data-ttu-id="555af-129">Klicka på **Produktinformationshantering** &gt; **Allmänt** &gt; **Frisläppta produkter**.</span><span class="sxs-lookup"><span data-stu-id="555af-129">Click **Product information management** &gt; **Common** &gt; **Released products**.</span></span>
+2.  <span data-ttu-id="555af-130">Välj en produkt och klicka sedan på **Produktdimensioner**.</span><span class="sxs-lookup"><span data-stu-id="555af-130">Select a product, and then click **Product dimensions**.</span></span>
+3.  <span data-ttu-id="555af-131">Välj en av länkarna för produktdimensioner: **Configurations**, **Sizes**, **Colors** eller **Style**.</span><span class="sxs-lookup"><span data-stu-id="555af-131">Select one of the links for the product dimensions: **Configurations**, **Sizes**, **Colors**, or **Style**.</span></span>
+4.  <span data-ttu-id="555af-132">Välj ett dimensionsvärde och klicka sedan på **Översätt**.</span><span class="sxs-lookup"><span data-stu-id="555af-132">Select a dimension value and then click **Translate**.</span></span>
+5.  <span data-ttu-id="555af-133">På sidan **Textöversättning**, i fältet **Språk**, väljer du ett språk.</span><span class="sxs-lookup"><span data-stu-id="555af-133">In the **Text translation** page, in the **Language** field, select a language.</span></span> <span data-ttu-id="555af-134">Expandera fältet **Språk** och klicka sedan på **OK**.</span><span class="sxs-lookup"><span data-stu-id="555af-134">To add more languages, expand the **Language** field, and then click **OK**.</span></span>
+6.  <span data-ttu-id="555af-135">I gruppen **Översatt text** anger du översättningar i fälten **Namn** och **Beskrivning**.</span><span class="sxs-lookup"><span data-stu-id="555af-135">In the **Translated text** group, enter translations in the **Name** and **Description** fields.</span></span>
 
-## <a name="can-the-names-of-product-variants-be-translated"></a>Kan namnen på produktvarianter översättas?
-Produktvarianter baseras på dimensionerna för en frisläppt produkt. Produktvariantnamn baseras på en kombination av dimensionsvärden. När dimensionsvärdena, som är kopplad till en produktvariant översätts, visas namnet på produktvarianten i den översatta versionen.  
+## <a name="can-the-names-of-product-variants-be-translated"></a><span data-ttu-id="555af-136">Kan namnen på produktvarianter översättas?</span><span class="sxs-lookup"><span data-stu-id="555af-136">Can the names of product variants be translated?</span></span>
+<span data-ttu-id="555af-137">Produktvarianter baseras på dimensionerna för en frisläppt produkt.</span><span class="sxs-lookup"><span data-stu-id="555af-137">Product variants are based on the dimensions of a released product.</span></span> <span data-ttu-id="555af-138">Produktvariantnamn baseras på en kombination av dimensionsvärden.</span><span class="sxs-lookup"><span data-stu-id="555af-138">Product variant names are based on a combination of dimension values.</span></span> <span data-ttu-id="555af-139">När dimensionsvärdena, som är kopplad till en produktvariant översätts, visas namnet på produktvarianten i den översatta versionen.</span><span class="sxs-lookup"><span data-stu-id="555af-139">When the dimension values that are associated with a product variant are translated, the name of the product variant appears in the translated version.</span></span>  
 
-**Exempel**  
+<span data-ttu-id="555af-140">**Exempel**</span><span class="sxs-lookup"><span data-stu-id="555af-140">**Example**</span></span>  
 
-Din produkt är en T-tröja som finns i olika storlekar och färger och namnen och varianterna baseras på följande information:
--   Produktnummer: \#3
--   Dimensioner: Storlek och färg
--   Storlekdimensionsvärden: Liten, medium, stor
--   Färgdimensionsvärden: Rött, Grönt, Svart
+<span data-ttu-id="555af-141">Din produkt är en T-tröja som finns i olika storlekar och färger och namnen och varianterna baseras på följande information:</span><span class="sxs-lookup"><span data-stu-id="555af-141">Your product is a T-shirt that comes in different sizes and colors and the variant names are based on the following details:</span></span>
+-   <span data-ttu-id="555af-142">Produktnummer: \#3</span><span class="sxs-lookup"><span data-stu-id="555af-142">Product number: \#3</span></span>
+-   <span data-ttu-id="555af-143">Dimensioner: Storlek och färg</span><span class="sxs-lookup"><span data-stu-id="555af-143">Dimensions: Size and color</span></span>
+-   <span data-ttu-id="555af-144">Storlekdimensionsvärden: Liten, medium, stor</span><span class="sxs-lookup"><span data-stu-id="555af-144">Size dimension values: Small, Medium, Large</span></span>
+-   <span data-ttu-id="555af-145">Färgdimensionsvärden: Rött, Grönt, Svart</span><span class="sxs-lookup"><span data-stu-id="555af-145">Color dimension values: Red, Green, Black</span></span>
 
-Namnet på en produktvariant som baseras på dimensionsvärdena Liten (Small) och Röd (Red) blir **\#3:Small:Red**.  
+<span data-ttu-id="555af-146">Namnet på en produktvariant som baseras på dimensionsvärdena Liten (Small) och Röd (Red) blir **\#3:Small:Red**.</span><span class="sxs-lookup"><span data-stu-id="555af-146">The name of a product variant that is based on the dimension values Small and Red is **\#3:Small:Red**.</span></span>  
 
-En kund vill köpa några små röda t-shirts och namnet på t-shirten måste visas på franska på fakturan. Du översätter dimensionsvärdena Liten (Small) och Red (Röd) till franska, och namnet på produktvarianten blir **\#3:Petit:Rouge**.
+<span data-ttu-id="555af-147">En kund vill köpa några små röda t-shirts och namnet på t-shirten måste visas på franska på fakturan.</span><span class="sxs-lookup"><span data-stu-id="555af-147">A customer wants to buy some small, red T-shirts and the name of the T-shirt must appear in French on the invoice.</span></span> <span data-ttu-id="555af-148">Du översätter dimensionsvärdena Liten (Small) och Red (Röd) till franska, och namnet på produktvarianten blir **\#3:Petit:Rouge**.</span><span class="sxs-lookup"><span data-stu-id="555af-148">You translate the dimension values, Small and Red, into French, and the name of the product variant is **\#3:Petit:Rouge**.</span></span>
 <table>
 <colgroup>
 <col width="100%" />
 </colgroup>
 <thead>
 <tr class="header">
-<th><strong>Tips!</strong></th>
+<th><span data-ttu-id="555af-149"><strong>Tips!</strong></span><span class="sxs-lookup"><span data-stu-id="555af-149"><strong>Tip</strong></span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Om du vill ange önskat språk för en kund, följ dessa steg:
+<td><span data-ttu-id="555af-150">Om du vill ange önskat språk för en kund, följ dessa steg:</span><span class="sxs-lookup"><span data-stu-id="555af-150">To set the preferred language of a customer, follow these steps:</span></span>
 <ol>  
-<li>Klicka på <strong>Försäljning och marknadsföring</strong> &gt; <strong>Allmänt</strong> &gt; <strong>Kund</strong> &gt; <strong>Alla</strong> <strong>kunder</strong>.</li>
-<li>Dubbelklicka på en kund för att öppna sidan <strong>Customers</strong>. På fliken <strong>Allmänt</strong>, i fältet <strong>Språk</strong> väljer du <strong>språk</strong>.</li>
+<li><span data-ttu-id="555af-151">Klicka på <strong>Försäljning och marknadsföring</strong> &gt; <strong>Allmänt</strong> &gt; <strong>Kund</strong> &gt; <strong>Alla</strong> <strong>kunder</strong>.</span><span class="sxs-lookup"><span data-stu-id="555af-151">Click <strong>Sales and marketing</strong> &gt; <strong>Common</strong> &gt; <strong>Customers</strong> &gt; <strong>All</strong> <strong>customers</strong>.</span></span></li>
+<li><span data-ttu-id="555af-152">Dubbelklicka på en kund för att öppna sidan <strong>Customers</strong>.</span><span class="sxs-lookup"><span data-stu-id="555af-152">Double-click a customer to open the <strong>Customers</strong> page.</span></span> <span data-ttu-id="555af-153">På fliken <strong>Allmänt</strong>, i fältet <strong>Språk</strong> väljer du <strong>språk</strong>.</span><span class="sxs-lookup"><span data-stu-id="555af-153">On the <strong>General</strong> tab, in the <strong>Language</strong> field, select the <strong>language</strong>.</span></span></li>
 </ol></td>
 </tr>
 </tbody>
 </table>
 
-## <a name="what-happens-if-a-customer-has-a-preferred-language-for-which-no-translations-are-available"></a>Vad händer om en kund har ett prioriterat språk som inga översättningar är tillgängliga för?
-Om översättningar inte är tillgängliga på kundens prioriterade språk, visas namnen och beskrivningarna på det globala språket för ditt företag.
+## <a name="what-happens-if-a-customer-has-a-preferred-language-for-which-no-translations-are-available"></a><span data-ttu-id="555af-154">Vad händer om en kund har ett prioriterat språk som inga översättningar är tillgängliga för?</span><span class="sxs-lookup"><span data-stu-id="555af-154">What happens if a customer has a preferred language for which no translations are available?</span></span>
+<span data-ttu-id="555af-155">Om översättningar inte är tillgängliga på kundens prioriterade språk, visas namnen och beskrivningarna på det globala språket för ditt företag.</span><span class="sxs-lookup"><span data-stu-id="555af-155">If translations are not available in the customer’s preferred language, the names and descriptions are displayed in the global language of your own company.</span></span>
 
-## <a name="can-i-manage-translations-for-a-series-of-dimension-values-at-the-same-time"></a>Kan jag hantera översättningar för en serie dimensionsvärden samtidigt?
-Dimensionsvärden är produktspecifika och du kan hantera översättningar av dimensionsvärden för varje produkt. Men om du skapar en dimensionsvärdegrupp och skapar översättningar för värdena i värdegruppen är det enklare att hantera översättningarna.   
+## <a name="can-i-manage-translations-for-a-series-of-dimension-values-at-the-same-time"></a><span data-ttu-id="555af-156">Kan jag hantera översättningar för en serie dimensionsvärden samtidigt?</span><span class="sxs-lookup"><span data-stu-id="555af-156">Can I manage translations for a series of dimension values at the same time?</span></span>
+<span data-ttu-id="555af-157">Dimensionsvärden är produktspecifika och du kan hantera översättningar av dimensionsvärden för varje produkt.</span><span class="sxs-lookup"><span data-stu-id="555af-157">Dimension values are product specific and you can manage the translations for the dimension values for each product.</span></span> <span data-ttu-id="555af-158">Men om du skapar en dimensionsvärdegrupp och skapar översättningar för värdena i värdegruppen är det enklare att hantera översättningarna.</span><span class="sxs-lookup"><span data-stu-id="555af-158">However, if you create a dimension value group and create translations for the values in the value group, it is easier to manage the translations.</span></span>   
 
-**Exempel**  
+<span data-ttu-id="555af-159">**Exempel**</span><span class="sxs-lookup"><span data-stu-id="555af-159">**Example**</span></span>  
 
-Ditt företag tillverkar T-tröjor i olika stilar, och varje stil finns i storlekarna Small, Medium och Large. Storlekarna samlas i en dimensionsvärdegrupp. När ett nytt T-tröjutförande läggs till, kan du koppla det till dimensionsvärdegruppen som används för storlekar, så att alla storlekar är tillgängliga för produkten. Du kan också lägga till, eller ändra översättningar för storlekarna i dimensionsvärdet gruppera när som helst.  
+<span data-ttu-id="555af-160">Ditt företag tillverkar T-tröjor i olika stilar, och varje stil finns i storlekarna Small, Medium och Large.</span><span class="sxs-lookup"><span data-stu-id="555af-160">Your company produces T-shirts in different styles, and each style is available in the sizes Small, Medium, and Large.</span></span> <span data-ttu-id="555af-161">Storlekarna samlas i en dimensionsvärdegrupp.</span><span class="sxs-lookup"><span data-stu-id="555af-161">The sizes are collected in one dimension value group.</span></span> <span data-ttu-id="555af-162">När ett nytt T-tröjutförande läggs till, kan du koppla det till dimensionsvärdegruppen som används för storlekar, så att alla storlekar är tillgängliga för produkten.</span><span class="sxs-lookup"><span data-stu-id="555af-162">When a new T-shirt style is added, you can associate it with the dimension value group that is used for sizes, so that all the sizes are available for the product.</span></span> <span data-ttu-id="555af-163">Du kan också lägga till, eller ändra översättningar för storlekarna i dimensionsvärdet gruppera när som helst.</span><span class="sxs-lookup"><span data-stu-id="555af-163">You can also add or change translations for the sizes in the dimension value group at any time.</span></span>  
 
-Ett dimensionsvärde som är associerat med en produkt via en dimensionsvariantgrupp måste underhållas från produktvariantgruppen.   
-Gör så här om du vill skapa dimensionsvärdegrupp:
-1.  Klicka på **Produktinformationshantering** &gt; **Inställning** &gt; **Variantgrupper**.
-2.  Välj **Storlek** **grupper**, **Färggrupper** eller **Utförandegrupper**.
-3.  Klicka på **Ny** och ange sedan ett namn för gruppen i fälten**Storleks****grupp**, **Färggrupp**, eller **Formatgrupp**. Klicka på **Sizes**, **Colors** eller **Styles** för att skapa rader för grupper.
-4.  I **Format****grupp**rader, **Färg****grupp****rader**, eller sidan **Utförandegrupprader** klickar du på **Ny** och skapar sedan storlekar, färger och utföranden för grupperna.
+<span data-ttu-id="555af-164">Ett dimensionsvärde som är associerat med en produkt via en dimensionsvariantgrupp måste underhållas från produktvariantgruppen.</span><span class="sxs-lookup"><span data-stu-id="555af-164">A dimension value that is associated with a product through a dimension variant group must be maintained from the product variant group.</span></span>   
+<span data-ttu-id="555af-165">Gör så här om du vill skapa dimensionsvärdegrupp:</span><span class="sxs-lookup"><span data-stu-id="555af-165">To create a dimension value group, follow these steps:</span></span>
+1.  <span data-ttu-id="555af-166">Klicka på **Produktinformationshantering** &gt; **Inställning** &gt; **Variantgrupper**.</span><span class="sxs-lookup"><span data-stu-id="555af-166">Click **Product information management** &gt; **Setup** &gt; **Variant groups**.</span></span>
+2.  <span data-ttu-id="555af-167">Välj **Storlek** **grupper**, **Färggrupper** eller **Utförandegrupper**.</span><span class="sxs-lookup"><span data-stu-id="555af-167">Select **Size** **groups**, **Color groups**, or **Style groups**.</span></span>
+3.  <span data-ttu-id="555af-168">Klicka på **Ny** och ange sedan ett namn för gruppen i fälten**Storleks****grupp**, **Färggrupp**, eller **Formatgrupp**.</span><span class="sxs-lookup"><span data-stu-id="555af-168">Click **New**, and then enter a name for the group in the **Size** **group**, **Color group**, or **Style group** field.</span></span> <span data-ttu-id="555af-169">Klicka på **Sizes**, **Colors** eller **Styles** för att skapa rader för grupper.</span><span class="sxs-lookup"><span data-stu-id="555af-169">Click **Sizes**, **Colors**, or **Styles** to create lines for the groups.</span></span>
+4.  <span data-ttu-id="555af-170">I **Format****grupp**rader, **Färg****grupp****rader**, eller sidan **Utförandegrupprader** klickar du på **Ny** och skapar sedan storlekar, färger och utföranden för grupperna.</span><span class="sxs-lookup"><span data-stu-id="555af-170">In the **Size** **group** lines, **Color** **group** **lines**, or **Style group lines** page, click **New**, and then create the sizes, colors, and styles for the groups.</span></span>
 
-Om du vill hantera översättningar för värden i ett dimensionsvärdegrupp, följ dessa steg:
-1.  Följ stegen i den föregående proceduren för att skapa en dimensionsvärdesgrupp som ska öppna sidan **Storleksgrupprader**, **Färggrupprader** eller **Utförandegruppsrader**.
-2.  Klicka på **Textöversättning**. På sidan **Textöversättning** i gruppen **Översatt text** anger du översättningar i fälten **Namn** och **Beskrivning**.
+<span data-ttu-id="555af-171">Om du vill hantera översättningar för värden i ett dimensionsvärdegrupp, följ dessa steg:</span><span class="sxs-lookup"><span data-stu-id="555af-171">To manage translations for values in a dimension value group, follow these steps:</span></span>
+1.  <span data-ttu-id="555af-172">Följ stegen i den föregående proceduren för att skapa en dimensionsvärdesgrupp som ska öppna sidan **Storleksgrupprader**, **Färggrupprader** eller **Utförandegruppsrader**.</span><span class="sxs-lookup"><span data-stu-id="555af-172">Follow the steps in the previous procedure for creating a dimension value group to open the **Size group lines**, **Color group lines**, or **Style group lines** page.</span></span>
+2.  <span data-ttu-id="555af-173">Klicka på **Textöversättning**.</span><span class="sxs-lookup"><span data-stu-id="555af-173">Click **Text translation**.</span></span> <span data-ttu-id="555af-174">På sidan **Textöversättning** i gruppen **Översatt text** anger du översättningar i fälten **Namn** och **Beskrivning**.</span><span class="sxs-lookup"><span data-stu-id="555af-174">In the **Text translation** page, in the **Translated text** group, enter translations in the **Name** and **Description** fields.</span></span>
 
-## <a name="when-can-translations-of-productrelated-information-be-managed"></a>När kan översättningar av produktrelaterad information hanteras?
-Översättningar av produktrelaterad information kan hanteras när som helst. När översättningar uppdateras för ett dimensionsvärde som är kopplat till en produkt, uppdateras produktinformationen, oavsett om produkten har transaktioner.
+## <a name="when-can-translations-of-productrelated-information-be-managed"></a><span data-ttu-id="555af-175">När kan översättningar av produktrelaterad information hanteras?</span><span class="sxs-lookup"><span data-stu-id="555af-175">When can translations of productrelated information be managed?</span></span>
+<span data-ttu-id="555af-176">Översättningar av produktrelaterad information kan hanteras när som helst.</span><span class="sxs-lookup"><span data-stu-id="555af-176">Translations of product-related information can be managed at any time.</span></span> <span data-ttu-id="555af-177">När översättningar uppdateras för ett dimensionsvärde som är kopplat till en produkt, uppdateras produktinformationen, oavsett om produkten har transaktioner.</span><span class="sxs-lookup"><span data-stu-id="555af-177">When translations are updated for a dimension value that is associated with a product, the product information is updated, regardless of whether the product has transactions.</span></span>
 
 
 

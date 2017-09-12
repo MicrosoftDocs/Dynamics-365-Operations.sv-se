@@ -16,7 +16,7 @@ ms.custom: 3421
 ms.assetid: f5187c21-eec5-4148-b178-b8a5feff7f23
 ms.search.region: Global
 ms.author: saraschi
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
 ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
@@ -26,38 +26,38 @@ ms.lasthandoff: 07/27/2017
 
 ---
 
-# <a name="post-with-derived-books"></a>Bokför med härledda böcker
+# <a name="post-with-derived-books"></a><span data-ttu-id="130c6-103">Bokför med härledda böcker</span><span class="sxs-lookup"><span data-stu-id="130c6-103">Post with derived books</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Det här avsnittet beskriver hur du använder härledda böcker.
+<span data-ttu-id="130c6-104">Det här avsnittet beskriver hur du använder härledda böcker.</span><span class="sxs-lookup"><span data-stu-id="130c6-104">This article describes how to use derived books.</span></span>
 
-När transaktioner bokförs för en bok som innehåller härledda böcker, bokförs de härledda boktransaktionerna automatiskt i journaler, inköpsorder eller fritextfakturor. Om du emellertid förbereder de primära boktransaktionerna i journalen för anläggningstillgångar kan du visa och ändra beloppen för härledda transaktioner innan de bokförs.
--   Vissa konton, som till exempel moms- och kund- eller leverantörskonton, uppdateras bara en gång genom bokföring av den primära boken. Härledda boktransaktioner bokförs på de konton som har definierats för den härledda boken på sidan för bokföringsprofiler för anläggningstillgångar.
--   Anskaffning (Acquisition) används ofta som transaktionstyp för härledda böcker. Den används när boken och härledd bok ska tillämpas för anläggningstillgången från och med dess anskaffningsdatum.
--   Även andra värden kan gälla för transaktionstypen. Om till exempel den primära boken och de härledda böckerna har samma intervaller vad gäller försäljning eller avyttring, blir alla transaktionstyper tillgängliga för inställningen av en härledd bok.
+<span data-ttu-id="130c6-105">När transaktioner bokförs för en bok som innehåller härledda böcker, bokförs de härledda boktransaktionerna automatiskt i journaler, inköpsorder eller fritextfakturor.</span><span class="sxs-lookup"><span data-stu-id="130c6-105">When you post transactions for a book that contains derived books, the derived book transactions are posted automatically in journals, purchase orders, or free text invoices.</span></span> <span data-ttu-id="130c6-106">Om du emellertid förbereder de primära boktransaktionerna i journalen för anläggningstillgångar kan du visa och ändra beloppen för härledda transaktioner innan de bokförs.</span><span class="sxs-lookup"><span data-stu-id="130c6-106">However, if you prepare the primary book transactions in the Fixed assets journal, you can view and modify the amounts of the derived transactions before you post them.</span></span>
+-   <span data-ttu-id="130c6-107">Vissa konton, som till exempel moms- och kund- eller leverantörskonton, uppdateras bara en gång genom bokföring av den primära boken.</span><span class="sxs-lookup"><span data-stu-id="130c6-107">Certain accounts, such as sales tax and customer or vendor accounts, are updated only once by postings of the primary book.</span></span> <span data-ttu-id="130c6-108">Härledda boktransaktioner bokförs på de konton som har definierats för den härledda boken på sidan för bokföringsprofiler för anläggningstillgångar.</span><span class="sxs-lookup"><span data-stu-id="130c6-108">The derived book transactions are posted to the accounts that have been defined for the derived book in the Fixed asset posting profiles page.</span></span>
+-   <span data-ttu-id="130c6-109">Anskaffning (Acquisition) används ofta som transaktionstyp för härledda böcker.</span><span class="sxs-lookup"><span data-stu-id="130c6-109">Acquisition is often used as the transaction type for the derived books.</span></span> <span data-ttu-id="130c6-110">Den används när boken och härledd bok ska tillämpas för anläggningstillgången från och med dess anskaffningsdatum.</span><span class="sxs-lookup"><span data-stu-id="130c6-110">You use this when the book and the derived book should be applied to the fixed asset from the time of the acquisition of the fixed asset.</span></span>
+-   <span data-ttu-id="130c6-111">Även andra värden kan gälla för transaktionstypen.</span><span class="sxs-lookup"><span data-stu-id="130c6-111">Other values for the transaction type can also apply.</span></span> <span data-ttu-id="130c6-112">Om till exempel den primära boken och de härledda böckerna har samma intervaller vad gäller försäljning eller avyttring, blir alla transaktionstyper tillgängliga för inställningen av en härledd bok.</span><span class="sxs-lookup"><span data-stu-id="130c6-112">For example, if the primary book and the derived books have the same intervals regarding sale or disposal, all fixed asset transaction types are available for the setup of a derived book.</span></span>
 
 > [!WARNING]
-> Den avskrivning som är bokförd i härledd bok kommer att vara densamma som det belopp som bokfördes för den primära boken. Om avskrivningsmetoderna skiljer sig åt mellan böckerna bör du inte generera avskrivningstransaktioner med den härledda processen. |
+> <span data-ttu-id="130c6-113">Den avskrivning som är bokförd i härledd bok kommer att vara densamma som det belopp som bokfördes för den primära boken.</span><span class="sxs-lookup"><span data-stu-id="130c6-113">Depreciation posted in the derived book will be the same amount as was posted for the primary book.</span></span> <span data-ttu-id="130c6-114">Om avskrivningsmetoderna skiljer sig åt mellan böckerna bör du inte generera avskrivningstransaktioner med den härledda processen.</span><span class="sxs-lookup"><span data-stu-id="130c6-114">If the depreciation methods are different between the books, you should not generate depreciation transactions using the derived process.</span></span> |
 
-## <a name="example"></a>Exempel 
-Följande information beskriver hur du skapar anskaffningstransaktioner med funktionerna för den härledda boken.
+## <a name="example"></a><span data-ttu-id="130c6-115">Exempel</span><span class="sxs-lookup"><span data-stu-id="130c6-115">Example</span></span> 
+<span data-ttu-id="130c6-116">Följande information beskriver hur du skapar anskaffningstransaktioner med funktionerna för den härledda boken.</span><span class="sxs-lookup"><span data-stu-id="130c6-116">The following information describes how to set up acquisition transactions with the derived book functionality.</span></span>
 
-1.  Skapa böckerna på boksidan (Böcker).
-    -   Bok för redovisning: VM 1, aktuellt bokföringsskikt
-    -   Bok för skattesyften: VM 2, momsbokföringsskikt
+1.  <span data-ttu-id="130c6-117">Skapa böckerna på boksidan (Böcker).</span><span class="sxs-lookup"><span data-stu-id="130c6-117">Create the books on the Books page.</span></span>
+    -   <span data-ttu-id="130c6-118">Bok för redovisning: VM 1, aktuellt bokföringsskikt</span><span class="sxs-lookup"><span data-stu-id="130c6-118">The book for accounting: VM 1, Current posting layer</span></span>
+    -   <span data-ttu-id="130c6-119">Bok för skattesyften: VM 2, momsbokföringsskikt</span><span class="sxs-lookup"><span data-stu-id="130c6-119">The book for tax purposes: VM 2, Tax posting layer</span></span>
 
-2.  Klicka på fliken Härledda räkenskapsböcker i VM 1. Välj VM 2 i fältet Böcker och Anskaffning fältet Transaktion type.
+2.  <span data-ttu-id="130c6-120">Klicka på fliken Härledda räkenskapsböcker i VM 1.</span><span class="sxs-lookup"><span data-stu-id="130c6-120">On VM 1, click the Derived books tab.</span></span> <span data-ttu-id="130c6-121">Välj VM 2 i fältet Böcker och Anskaffning fältet Transaktion type.</span><span class="sxs-lookup"><span data-stu-id="130c6-121">Select VM 2 in the Book field, and Acquisition in the Transaction type field.</span></span>
 
-Böckerna kan sedan kopplas till specifika anläggningstillgångar. 
+<span data-ttu-id="130c6-122">Böckerna kan sedan kopplas till specifika anläggningstillgångar.</span><span class="sxs-lookup"><span data-stu-id="130c6-122">The books then can be attached to specific fixed assets.</span></span> 
 
-När en anskaffning bokförs för en anläggningstillgång med bok VM 1 bokförs anskaffningen inte bara på VM 1 utan även på den härledda boken VM 2. Statusen för båda böckerna för anläggningstillgång uppdateras till Öppen.
+<span data-ttu-id="130c6-123">När en anskaffning bokförs för en anläggningstillgång med bok VM 1 bokförs anskaffningen inte bara på VM 1 utan även på den härledda boken VM 2.</span><span class="sxs-lookup"><span data-stu-id="130c6-123">When an acquisition is posted for a fixed asset with book VM 1, the acquisition is posted not only on VM 1, but also on the derived book VM 2.</span></span> <span data-ttu-id="130c6-124">Statusen för båda böckerna för anläggningstillgång uppdateras till Öppen.</span><span class="sxs-lookup"><span data-stu-id="130c6-124">The status of both fixed asset books is updated to Open.</span></span>
 
 > [!NOTE]                                                                                                         
-> Om härledda böcker inte används måste du bokföra anskaffningen av anläggningstillgången för både boken VM 1 och boken VM 2.
+> <span data-ttu-id="130c6-125">Om härledda böcker inte används måste du bokföra anskaffningen av anläggningstillgången för både boken VM 1 och boken VM 2.</span><span class="sxs-lookup"><span data-stu-id="130c6-125">If you do not use derived books, you must post the acquisition of the fixed asset both for book VM 1 and book VM 2.</span></span>
 
-Mer information finns i [Härledda böcker](derived-books.md).
+<span data-ttu-id="130c6-126">Mer information finns i [Härledda böcker](derived-books.md).</span><span class="sxs-lookup"><span data-stu-id="130c6-126">For more information, see [Derived books](derived-books.md)</span></span>
 
 
 

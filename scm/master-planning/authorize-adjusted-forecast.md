@@ -20,36 +20,36 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 324f7385e8064eedcf35f0f07bb3b2ef6474f410
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 399a7a21ec71fe50e280ccb24699cda76d571990
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="authorize-an-adjusted-forecast"></a>Auktorisera en justerad prognos
+# <a name="authorize-an-adjusted-forecast"></a><span data-ttu-id="b2974-105">Auktorisera en justerad prognos</span><span class="sxs-lookup"><span data-stu-id="b2974-105">Authorize an adjusted forecast</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Inte alla prognosdata måste godkännas omedelbart. Denna artikel beskriver hur du kan ange den period som en prognos är godkända för. Det förklarar också hur du kan attestera prognos för specifika företag och prognosmodeller.
+<span data-ttu-id="b2974-106">Inte alla prognosdata måste godkännas omedelbart.</span><span class="sxs-lookup"><span data-stu-id="b2974-106">Not all forecast data must be authorized immediately.</span></span> <span data-ttu-id="b2974-107">Denna artikel beskriver hur du kan ange den period som en prognos är godkända för.</span><span class="sxs-lookup"><span data-stu-id="b2974-107">This article explains how you can specify the period that a forecast is authorized for.</span></span> <span data-ttu-id="b2974-108">Det förklarar också hur du kan attestera prognos för specifika företag och prognosmodeller.</span><span class="sxs-lookup"><span data-stu-id="b2974-108">It also explains how you can authorize the forecast for specific companies and forecast models.</span></span>
 
-Inte alla prognosdata måste godkännas omedelbart. Du kan ange start- och slutdatum för den period som prognosen är godkända för. Med denna funktion kan du frysa specifikt kostnadsslag. 
+<span data-ttu-id="b2974-109">Inte alla prognosdata måste godkännas omedelbart.</span><span class="sxs-lookup"><span data-stu-id="b2974-109">Not all forecast data must be authorized immediately.</span></span> <span data-ttu-id="b2974-110">Du kan ange start- och slutdatum för den period som prognosen är godkända för.</span><span class="sxs-lookup"><span data-stu-id="b2974-110">You can specify the start and end dates of the period that the forecast is authorized for.</span></span> <span data-ttu-id="b2974-111">Med denna funktion kan du frysa specifikt kostnadsslag.</span><span class="sxs-lookup"><span data-stu-id="b2974-111">This functionality lets you freeze specific buckets.</span></span> 
 
-Start- och slutdatumen som du anger måste överensstämma med start- och slutdatumen på gruppen som prognosen skapas i. Systemet använder denna begränsning och justerar datumen automatiskt om justeringar krävs. 
+<span data-ttu-id="b2974-112">Start- och slutdatumen som du anger måste överensstämma med start- och slutdatumen på gruppen som prognosen skapas i.</span><span class="sxs-lookup"><span data-stu-id="b2974-112">The start and end dates that you specify must correspond to the start and end dates of the bucket that the forecast is generated in.</span></span> <span data-ttu-id="b2974-113">Systemet använder denna begränsning och justerar datumen automatiskt om justeringar krävs.</span><span class="sxs-lookup"><span data-stu-id="b2974-113">The system enforces this restriction and automatically adjusts the dates, if adjustment is required.</span></span> 
 
-På **fliken Detaljer** i fönstret **Attest** kan du visa information om den prognos som var mest nyligen genererade. 
+<span data-ttu-id="b2974-114">På **fliken Detaljer** i fönstret **Attest** kan du visa information om den prognos som var mest nyligen genererade.</span><span class="sxs-lookup"><span data-stu-id="b2974-114">On the **Details** tab of the **Authorization** page, you can view details about the forecast that was most recently generated.</span></span> 
 
-Du kan välja företag och prognosmodeller för att godkänna prognosen för användning. Som standard är rutnätet omfattar alla företag som prognostiserad efterfrågan har skapats för. För varje företag, den prognosmodell som motsvarar aktuell prognos plan som sätts upp i huvudplanering parametrar är fyllt. Du kan dock ändra den här prognosmodellen till någon prognosmodell som tillhör företaget. Om ingen förväntad efterfrågan data har skapats för ett valt företag, får du ett varningsmeddelande vid importen. 
+<span data-ttu-id="b2974-115">Du kan välja företag och prognosmodeller för att godkänna prognosen för användning.</span><span class="sxs-lookup"><span data-stu-id="b2974-115">You can select the companies and the forecast models to authorize the forecast for use.</span></span> <span data-ttu-id="b2974-116">Som standard är rutnätet omfattar alla företag som prognostiserad efterfrågan har skapats för.</span><span class="sxs-lookup"><span data-stu-id="b2974-116">By default, the grid includes all the companies that forecast demand has been created for.</span></span> <span data-ttu-id="b2974-117">För varje företag, den prognosmodell som motsvarar aktuell prognos plan som sätts upp i huvudplanering parametrar är fyllt.</span><span class="sxs-lookup"><span data-stu-id="b2974-117">For each company, the forecast model that corresponds to the current forecast plan that is set up in the master planning parameters is prefilled.</span></span> <span data-ttu-id="b2974-118">Du kan dock ändra den här prognosmodellen till någon prognosmodell som tillhör företaget.</span><span class="sxs-lookup"><span data-stu-id="b2974-118">However, you can change this forecast model to any forecast model that belongs to that company.</span></span> <span data-ttu-id="b2974-119">Om ingen förväntad efterfrågan data har skapats för ett valt företag, får du ett varningsmeddelande vid importen.</span><span class="sxs-lookup"><span data-stu-id="b2974-119">If no forecast demand data has been generated for a selected company, you receive a warning message at import time.</span></span> 
 
-Det är mycket viktigt att du förstår hur **spara den manuella justeringar av baslinjen demand forecast** kryssruta fungerar. Om du har gjort manuella justeringar av den statistisk baslinjeprognosen, kommer de justerade värdena att godkännas för användning även om denna kryssruta är avmarkerad. Ändringarna kan emellertid kasseras efter tillstånd. Därför nästa gång en prognos genereras, att prognosen är bara en statistisk prognos och inte har någon handmanöver, även om **överlåtelsen manuella justeringar för att efterfrågan** är markerad. Därför kan du överväga att **spara den manuella justeringar av baslinjen demand forecast** kryssrutan en mekanism som låter dig att förvara eller kasta alla manuella ändringar.
+<span data-ttu-id="b2974-120">Det är mycket viktigt att du förstår hur **spara den manuella justeringar av baslinjen demand forecast** kryssruta fungerar.</span><span class="sxs-lookup"><span data-stu-id="b2974-120">It's very important that you understand how the **Save the manual adjustments made to the baseline demand forecast** check box works.</span></span> <span data-ttu-id="b2974-121">Om du har gjort manuella justeringar av den statistisk baslinjeprognosen, kommer de justerade värdena att godkännas för användning även om denna kryssruta är avmarkerad.</span><span class="sxs-lookup"><span data-stu-id="b2974-121">If you've made manual adjustments to the statistical baseline forecast, the adjusted values are authorized for use, even if this check box is cleared.</span></span> <span data-ttu-id="b2974-122">Ändringarna kan emellertid kasseras efter tillstånd.</span><span class="sxs-lookup"><span data-stu-id="b2974-122">However, the changes are discarded after the authorization.</span></span> <span data-ttu-id="b2974-123">Därför nästa gång en prognos genereras, att prognosen är bara en statistisk prognos och inte har någon handmanöver, även om **överlåtelsen manuella justeringar för att efterfrågan** är markerad.</span><span class="sxs-lookup"><span data-stu-id="b2974-123">Therefore, the next time that a forecast is generated, that forecast is only a statistical forecast and doesn't have any manual overrides, even if **Transfer manual adjustments to the demand forecast** is selected.</span></span> <span data-ttu-id="b2974-124">Därför kan du överväga att **spara den manuella justeringar av baslinjen demand forecast** kryssrutan en mekanism som låter dig att förvara eller kasta alla manuella ändringar.</span><span class="sxs-lookup"><span data-stu-id="b2974-124">Therefore, you can consider the **Save the manual adjustments made to the baseline demand forecast** check box a mechanism that lets you keep or discard all manual changes.</span></span>
 
-<a name="see-also"></a>Se även
+<a name="see-also"></a><span data-ttu-id="b2974-125">Se även</span><span class="sxs-lookup"><span data-stu-id="b2974-125">See also</span></span>
 --------
 
-[Gör manuella justeringar till den ursprungliga prognosen](manual-adjustments-baseline-forecast.md)
+[<span data-ttu-id="b2974-126">Gör manuella justeringar till den ursprungliga prognosen</span><span class="sxs-lookup"><span data-stu-id="b2974-126">Making manual adjustments to the baseline forecast</span></span>](manual-adjustments-baseline-forecast.md)
 
-[Övervaka prognosprecisionen](monitor-forecast-accuracy.md)
+[<span data-ttu-id="b2974-127">Övervaka prognosprecisionen</span><span class="sxs-lookup"><span data-stu-id="b2974-127">Monitoring forecast accuracy</span></span>](monitor-forecast-accuracy.md)
 
 
 

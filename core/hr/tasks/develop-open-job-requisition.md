@@ -16,53 +16,53 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: ad893f81b7de0d9dcd8e9a9de6e58bebf57dac4d
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 0eb5ec731655e2f023d941724a10d1cf12f8e558
 ms.contentlocale: sv-se
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="develop-and-open-a-job-requisition"></a>Utveckla och öppna en jobbrekvisition
+# <a name="develop-and-open-a-job-requisition"></a><span data-ttu-id="255b7-103">Utveckla och öppna en jobbrekvisition</span><span class="sxs-lookup"><span data-stu-id="255b7-103">Develop and open a job requisition</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Med rekryteringsprojekt kan du hantera rekryteringsprocessen. För varje rekryteringsprojekt kan du konfigurera information, till exempel jobbet som rekryteringen gäller, namnet på rekryteraren, projektets status och den avdelning som jobbet ska finns på. När du har skapat ett rekryteringsprojekt, kan du skriva en jobbannons för projektet, publicera annonsen på medarbetarnas självbetjäningssidor, koppla jobbansökningar till projektet och spåra aktiviteter för det här projekt. Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF. Börja proceduren genom att gå till Personal > Rekrytering > Rekryteringsprojekt > Rekryteringsprojekt
+<span data-ttu-id="255b7-104">Med rekryteringsprojekt kan du hantera rekryteringsprocessen.</span><span class="sxs-lookup"><span data-stu-id="255b7-104">Recruitment projects help manage the recruiting process.</span></span> <span data-ttu-id="255b7-105">För varje rekryteringsprojekt kan du konfigurera information, till exempel jobbet som rekryteringen gäller, namnet på rekryteraren, projektets status och den avdelning som jobbet ska finns på.</span><span class="sxs-lookup"><span data-stu-id="255b7-105">For each recruitment project, you can set up information, such as the job that recruiting is for, the name of the recruiter, the status of the project and the department that the job will be located in.</span></span> <span data-ttu-id="255b7-106">När du har skapat ett rekryteringsprojekt, kan du skriva en jobbannons för projektet, publicera annonsen på medarbetarnas självbetjäningssidor, koppla jobbansökningar till projektet och spåra aktiviteter för det här projekt.</span><span class="sxs-lookup"><span data-stu-id="255b7-106">After creating a recruitment project, you can write a job advertisement for the project, publish the ad on Employee self-service pages, associate applications for employment with the project, and track activities for that project.</span></span> <span data-ttu-id="255b7-107">Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.</span><span class="sxs-lookup"><span data-stu-id="255b7-107">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="255b7-108">Börja proceduren genom att gå till Personal > Rekrytering > Rekryteringsprojekt > Rekryteringsprojekt</span><span class="sxs-lookup"><span data-stu-id="255b7-108">To begin the procedure, go to Human resources > Recruitment > Recruitment projects > Recruitment projects</span></span>
 
-1. Klicka på Ny.
-2. Skriv ett värde i fältet Rekryteringsprojekt.
-3. Ange ett värde i fältet Beskrivning.
-4. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Rekryterare.
-5. Hitta och markera önskad post i listan.
-6. Klicka på länken på den valda raden i listan.
-7. Klicka på Välj.
-8. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Avdelning.
-9. Klicka på länken på den valda raden i listan.
-10. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Jobb.
-11. Hitta och markera önskad post i listan.
-12. Klicka på länken på den valda raden i listan.
-13. Ange ett antal i fältet Antal lediga jobb.
-14. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Anställande chef.
-15. Hitta och markera önskad post i listan.
-16. Klicka på länken på den valda raden i listan.
-17. Klicka på Välj.
-18. Ange ett datum i fältet Deadline för ansökning.
-19. Klicka på Media.
-    * Rekryteringsprojekt har alternativ för att ange mediakanaler som ska användas för att annonsera vakanta befattningar.  
-20. Klicka på Ny.
-21. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Media.
-22. Klicka på länken på den valda raden i listan.
-23. Ange ett datum i fältet Startdatum.
-24. Ange ett datum i fältet Slutdatum.
-25. Klicka på Spara.
-26. Stäng sidan.
-27. Klicka på Platsannonser.
-28. Klicka på Spara.
-29. Stäng sidan.
-30. Markera eller avmarkera kryssrutan Visa i självbetjäningen för medarbetare.
-    * Markera kryssrutan Visa i självbetjäningen för medarbetare om du vill göra rekryteringsprojektet synligt för medarbetare på deras medarbetarsjälvbetjäningssidor.  
-31. Klicka på Rekryteringsprojektets status.
-32. Klicka på Start.
-    * Statusen Startad innebär att projektet är redo att ta emot ansökningar.  
-33. Klicka på OK.
+1. <span data-ttu-id="255b7-109">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="255b7-109">Click New.</span></span>
+2. <span data-ttu-id="255b7-110">Skriv ett värde i fältet Rekryteringsprojekt.</span><span class="sxs-lookup"><span data-stu-id="255b7-110">In the Recruitment project field, type a value.</span></span>
+3. <span data-ttu-id="255b7-111">Ange ett värde i fältet Beskrivning.</span><span class="sxs-lookup"><span data-stu-id="255b7-111">In the Description field, type a value.</span></span>
+4. <span data-ttu-id="255b7-112">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Rekryterare.</span><span class="sxs-lookup"><span data-stu-id="255b7-112">In the Recruiter field, click the drop-down button to open the lookup.</span></span>
+5. <span data-ttu-id="255b7-113">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="255b7-113">In the list, find and select the desired record.</span></span>
+6. <span data-ttu-id="255b7-114">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="255b7-114">In the list, click the link in the selected row.</span></span>
+7. <span data-ttu-id="255b7-115">Klicka på Välj.</span><span class="sxs-lookup"><span data-stu-id="255b7-115">Click Select.</span></span>
+8. <span data-ttu-id="255b7-116">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Avdelning.</span><span class="sxs-lookup"><span data-stu-id="255b7-116">In the Department field, click the drop-down button to open the lookup.</span></span>
+9. <span data-ttu-id="255b7-117">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="255b7-117">In the list, click the link in the selected row.</span></span>
+10. <span data-ttu-id="255b7-118">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Jobb.</span><span class="sxs-lookup"><span data-stu-id="255b7-118">In the Job field, click the drop-down button to open the lookup.</span></span>
+11. <span data-ttu-id="255b7-119">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="255b7-119">In the list, find and select the desired record.</span></span>
+12. <span data-ttu-id="255b7-120">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="255b7-120">In the list, click the link in the selected row.</span></span>
+13. <span data-ttu-id="255b7-121">Ange ett antal i fältet Antal lediga jobb.</span><span class="sxs-lookup"><span data-stu-id="255b7-121">In the Number of openings field, enter a number.</span></span>
+14. <span data-ttu-id="255b7-122">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Anställande chef.</span><span class="sxs-lookup"><span data-stu-id="255b7-122">In the Hiring manager field, click the drop-down button to open the lookup.</span></span>
+15. <span data-ttu-id="255b7-123">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="255b7-123">In the list, find and select the desired record.</span></span>
+16. <span data-ttu-id="255b7-124">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="255b7-124">In the list, click the link in the selected row.</span></span>
+17. <span data-ttu-id="255b7-125">Klicka på Välj.</span><span class="sxs-lookup"><span data-stu-id="255b7-125">Click Select.</span></span>
+18. <span data-ttu-id="255b7-126">Ange ett datum i fältet Deadline för ansökning.</span><span class="sxs-lookup"><span data-stu-id="255b7-126">In the Application deadline field, enter a date.</span></span>
+19. <span data-ttu-id="255b7-127">Klicka på Media.</span><span class="sxs-lookup"><span data-stu-id="255b7-127">Click Media.</span></span>
+    * <span data-ttu-id="255b7-128">Rekryteringsprojekt har alternativ för att ange mediakanaler som ska användas för att annonsera vakanta befattningar.</span><span class="sxs-lookup"><span data-stu-id="255b7-128">Recruitment projects include the option to specify media outlets to use to advertise open positions.</span></span>  
+20. <span data-ttu-id="255b7-129">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="255b7-129">Click New.</span></span>
+21. <span data-ttu-id="255b7-130">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Media.</span><span class="sxs-lookup"><span data-stu-id="255b7-130">In the Media field, click the drop-down button to open the lookup.</span></span>
+22. <span data-ttu-id="255b7-131">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="255b7-131">In the list, click the link in the selected row.</span></span>
+23. <span data-ttu-id="255b7-132">Ange ett datum i fältet Startdatum.</span><span class="sxs-lookup"><span data-stu-id="255b7-132">In the Start date field, enter a date.</span></span>
+24. <span data-ttu-id="255b7-133">Ange ett datum i fältet Slutdatum.</span><span class="sxs-lookup"><span data-stu-id="255b7-133">In the End date field, enter a date.</span></span>
+25. <span data-ttu-id="255b7-134">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="255b7-134">Click Save.</span></span>
+26. <span data-ttu-id="255b7-135">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="255b7-135">Close the page.</span></span>
+27. <span data-ttu-id="255b7-136">Klicka på Platsannonser.</span><span class="sxs-lookup"><span data-stu-id="255b7-136">Click Job ads.</span></span>
+28. <span data-ttu-id="255b7-137">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="255b7-137">Click Save.</span></span>
+29. <span data-ttu-id="255b7-138">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="255b7-138">Close the page.</span></span>
+30. <span data-ttu-id="255b7-139">Markera eller avmarkera kryssrutan Visa i självbetjäningen för medarbetare.</span><span class="sxs-lookup"><span data-stu-id="255b7-139">Check or uncheck the Display on employee self service checkbox.</span></span>
+    * <span data-ttu-id="255b7-140">Markera kryssrutan Visa i självbetjäningen för medarbetare om du vill göra rekryteringsprojektet synligt för medarbetare på deras medarbetarsjälvbetjäningssidor.</span><span class="sxs-lookup"><span data-stu-id="255b7-140">Select the Display on employee self service check box to make the recruitment project visible to employees on their Employee self-service pages.</span></span>  
+31. <span data-ttu-id="255b7-141">Klicka på Rekryteringsprojektets status.</span><span class="sxs-lookup"><span data-stu-id="255b7-141">Click Recruitment project status.</span></span>
+32. <span data-ttu-id="255b7-142">Klicka på Start.</span><span class="sxs-lookup"><span data-stu-id="255b7-142">Click Start.</span></span>
+    * <span data-ttu-id="255b7-143">Statusen Startad innebär att projektet är redo att ta emot ansökningar.</span><span class="sxs-lookup"><span data-stu-id="255b7-143">The Started status means that the project is ready to receive applications.</span></span>  
+33. <span data-ttu-id="255b7-144">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="255b7-144">Click OK.</span></span>
 
 

@@ -15,24 +15,24 @@ ms.custom: 20671
 ms.assetid: 1040678e-ffcb-47fb-a1bc-626db8046504
 ms.search.region: Global
 ms.author: twheeloc
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: fe644d5e8f76da95d2738a5fa76eebfe47066fb7
+ms.sourcegitcommit: 1982e495f740d6061b9574aa9f40f38180e8d110
+ms.openlocfilehash: 066106db04ad34db1d0a07a41d57e167252d6459
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 08/03/2017
 
 ---
 
-# <a name="accounts-receivable-home-page"></a>Startsida för Kundreskontra
+# <a name="accounts-receivable-home-page"></a><span data-ttu-id="28564-103">Startsida för Kundreskontra</span><span class="sxs-lookup"><span data-stu-id="28564-103">Accounts receivable home page</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Använd Kundreskontra när du vill spåra kundfakturor och inkommande betalningar. 
+<span data-ttu-id="28564-104">Använd Kundreskontra när du vill spåra kundfakturor och inkommande betalningar.</span><span class="sxs-lookup"><span data-stu-id="28564-104">Use Accounts receivable to track customer invoices and incoming payments.</span></span> 
 
-Det går att skapa kundfakturor baserade på försäljningsorder eller följesedlar. Det går även att ange fritextfakturor som inte är relaterade till försäljningsorder. Det går att ta emot betalningar med flera olika betalningstyper. Dessa inkluderar växlar, kontanter, checkar, kreditkort och elektroniska betalningar. Om organisationen består av flera juridiska personer går det att använda centraliserade betalningar för att registrera betalningar för en juridisk person å andra juridiska personers vägnar.
+<span data-ttu-id="28564-105">Det går att skapa kundfakturor baserade på försäljningsorder eller följesedlar.</span><span class="sxs-lookup"><span data-stu-id="28564-105">You can create customer invoices that are based on sales orders or packing slips.</span></span> <span data-ttu-id="28564-106">Det går även att ange fritextfakturor som inte är relaterade till försäljningsorder.</span><span class="sxs-lookup"><span data-stu-id="28564-106">You can also enter free text invoices that are not related to sales orders.</span></span> <span data-ttu-id="28564-107">Det går att ta emot betalningar med flera olika betalningstyper.</span><span class="sxs-lookup"><span data-stu-id="28564-107">You can receive payments by using several different payment types.</span></span> <span data-ttu-id="28564-108">Dessa inkluderar växlar, kontanter, checkar, kreditkort och elektroniska betalningar.</span><span class="sxs-lookup"><span data-stu-id="28564-108">These include bills of exchange, cash, checks, credit cards, and electronic payments.</span></span> <span data-ttu-id="28564-109">Om organisationen består av flera juridiska personer går det att använda centraliserade betalningar för att registrera betalningar för en juridisk person å andra juridiska personers vägnar.</span><span class="sxs-lookup"><span data-stu-id="28564-109">If your organization includes multiple legal entities, you can use centralized payments to record payments in a single legal entity on behalf of the other legal entities.</span></span>
 
 
 

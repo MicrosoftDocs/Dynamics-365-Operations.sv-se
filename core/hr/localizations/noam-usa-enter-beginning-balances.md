@@ -18,155 +18,155 @@ ms.author: kherr
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
-ms.openlocfilehash: d9e3018eb7b6c20cfd5e23a10d15e230009196de
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 736eedf270ac08b0bdf9364821f8a7bae981ade9
 ms.contentlocale: sv-se
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="enter-payroll-beginning-balances"></a>Ange initiala lönesaldon
+# <a name="enter-payroll-beginning-balances"></a><span data-ttu-id="be80b-104">Ange initiala lönesaldon</span><span class="sxs-lookup"><span data-stu-id="be80b-104">Enter payroll beginning balances</span></span>
 
 [!include[banner](../../includes/banner.md)]
 
-Avsnittet beskriver stegen för att ange initiala saldon för lönekoder, förmåner, avdrag och moms. Denna information är viktig för partnerföretag som överför data för en ny implementering av lönelistor från ett annat system. Vi bekräftar följande information när du förbereder inmatningen av initiala lönesaldon:
+<span data-ttu-id="be80b-105">Avsnittet beskriver stegen för att ange initiala saldon för lönekoder, förmåner, avdrag och moms.</span><span class="sxs-lookup"><span data-stu-id="be80b-105">The topic describes the steps for entering beginning balances for earning codes, deductions, benefits, and taxes.</span></span> <span data-ttu-id="be80b-106">Denna information är viktig för partnerföretag som överför data för en ny implementering av lönelistor från ett annat system.</span><span class="sxs-lookup"><span data-stu-id="be80b-106">This information is valuable for partners who transfer data for a new Payroll implementation from another system.</span></span> <span data-ttu-id="be80b-107">Vi bekräftar följande information när du förbereder inmatningen av initiala lönesaldon:</span><span class="sxs-lookup"><span data-stu-id="be80b-107">To prepare to enter beginning payroll balances, we verify the following information:</span></span>
 
-> * Medarbetarposter anges och finns tillgängliga i systemet
-> * Följande uppgifter har konfigurerats och tilldelats medarbetare:
+> * <span data-ttu-id="be80b-108">Medarbetarposter anges och finns tillgängliga i systemet</span><span class="sxs-lookup"><span data-stu-id="be80b-108">Employee records are entered and available in the system</span></span>
+> * <span data-ttu-id="be80b-109">Följande uppgifter har konfigurerats och tilldelats medarbetare:</span><span class="sxs-lookup"><span data-stu-id="be80b-109">The following data is set up and assigned to employees:</span></span>
 
-> > * Lönecykler och löneperioder
-> > * Inkomstkoder
-> > * Moms
-> > * Förmåner och avdrag
+> > * <span data-ttu-id="be80b-110">Lönecykler och löneperioder</span><span class="sxs-lookup"><span data-stu-id="be80b-110">Pay cycles and pay periods</span></span>
+> > * <span data-ttu-id="be80b-111">Inkomstkoder</span><span class="sxs-lookup"><span data-stu-id="be80b-111">Earning codes</span></span>
+> > * <span data-ttu-id="be80b-112">Moms</span><span class="sxs-lookup"><span data-stu-id="be80b-112">Taxes</span></span>
+> > * <span data-ttu-id="be80b-113">Förmåner och avdrag</span><span class="sxs-lookup"><span data-stu-id="be80b-113">Benefits and deductions</span></span>
 
-> * Företaget bör har valt ett datum där initiala lönesaldon kan ställas in.
+> * <span data-ttu-id="be80b-114">Företaget bör har valt ett datum där initiala lönesaldon kan ställas in.</span><span class="sxs-lookup"><span data-stu-id="be80b-114">The company should have chosen a date where payroll beginning balances can be set.</span></span>
 
-> * Informationen har samlats in för alla inkomster och förmåner/avdrag, förmånsbidrag, medarbetar- och arbetsgivarmoms deras hittillsvarande belopp under hittillsvarande år från det äldre systemet.
+> * <span data-ttu-id="be80b-115">Informationen har samlats in för alla inkomster och förmåner/avdrag, förmånsbidrag, medarbetar- och arbetsgivarmoms deras hittillsvarande belopp under hittillsvarande år från det äldre systemet.</span><span class="sxs-lookup"><span data-stu-id="be80b-115">Information were gathered on all earnings, benefits/deductions, benefit contributions, employee taxes, and employer taxes and their YTD amounts from the legacy system.</span></span>
 
-När du planerar att ange initiala balanser, överväg då hur pass detaljerade datan måste vara. De flesta företag anger ett enda, konsoliderat belopp under hittillsvarande år till dags dato. Om mer detaljerad information skulle krävas kan saldon emellertid anges kvartalsvis. Valet av erforderlig detaljnivå avgör hur många manuella löneutdrag som måste skapas för varje arbetstagare. För ett enstaka belopp till dags dato behövs endast ett manuellt utdrag för respektive medarbetare. För att göra detta använder du hittillsvarande belopp under året till dags dato, från det slutliga löneutdraget från det tidigare systemet som det belopp som bokförs i det nya lönesystemet.
+<span data-ttu-id="be80b-116">När du planerar att ange initiala balanser, överväg då hur pass detaljerade datan måste vara.</span><span class="sxs-lookup"><span data-stu-id="be80b-116">As you plan to enter beginning balances, consider how detailed the data needs to be.</span></span> <span data-ttu-id="be80b-117">De flesta företag anger ett enda, konsoliderat belopp under hittillsvarande år till dags dato.</span><span class="sxs-lookup"><span data-stu-id="be80b-117">Most businesses enter a single, consolidated year-to-date amount.</span></span> <span data-ttu-id="be80b-118">Om mer detaljerad information skulle krävas kan saldon emellertid anges kvartalsvis.</span><span class="sxs-lookup"><span data-stu-id="be80b-118">However if more detailed information is needed, balances can be entered in quarterly increments.</span></span> <span data-ttu-id="be80b-119">Valet av erforderlig detaljnivå avgör hur många manuella löneutdrag som måste skapas för varje arbetstagare.</span><span class="sxs-lookup"><span data-stu-id="be80b-119">Deciding the level of detail that's needed determines how many manual pay statements must be created for each worker.</span></span> <span data-ttu-id="be80b-120">För ett enstaka belopp till dags dato behövs endast ett manuellt utdrag för respektive medarbetare.</span><span class="sxs-lookup"><span data-stu-id="be80b-120">For a single year-to-date amount, only one manual statement is needed for each employee.</span></span> <span data-ttu-id="be80b-121">För att göra detta använder du hittillsvarande belopp under året till dags dato, från det slutliga löneutdraget från det tidigare systemet som det belopp som bokförs i det nya lönesystemet.</span><span class="sxs-lookup"><span data-stu-id="be80b-121">To do this use year-to-date amounts from the final pay statement from the previous system as the amount entered in the new payroll system.</span></span>
 
-I följande exempel visas hur du kan ange medarbetarens initiala lönesaldon, inklusive inkomstkoder, förmåner/avdrag och moms. I ett verkligt exempel skulle det finnas en radartikel för varje inkomstkod, förmånsavdrag, förmånsbidrag, medarbetar- och arbetsgivarskatt där det angivna beloppet är lika med beloppet under hittillsvarande år fram till dags dato. Med hjälp av denna förteckning över koder och belopp följer du instruktionerna för att skapa ett manuellt inkomst- och betalningsutdrag med inaktiverad redovisning om du vill flytta över ingående saldon i betalningsändamål.  Du kan inaktivera redovisningen eftersom du inte vill bokföra detta betalningsutdrag för initial saldo i redovisningen. Detta gjordes i det äldre systemet och kommer att överföras till det nya systemet när du anger initiala saldon i redovisningen.
+<span data-ttu-id="be80b-122">I följande exempel visas hur du kan ange medarbetarens initiala lönesaldon, inklusive inkomstkoder, förmåner/avdrag och moms.</span><span class="sxs-lookup"><span data-stu-id="be80b-122">The following example shows how you can enter employee payroll beginning balances, including earning codes, benefits/deductions, and taxes.</span></span> <span data-ttu-id="be80b-123">I ett verkligt exempel skulle det finnas en radartikel för varje inkomstkod, förmånsavdrag, förmånsbidrag, medarbetar- och arbetsgivarskatt där det angivna beloppet är lika med beloppet under hittillsvarande år fram till dags dato.</span><span class="sxs-lookup"><span data-stu-id="be80b-123">In a real-world example you would have a line item for each earning code, benefit deduction, benefit contribution, employee tax and employer tax with the amount entered being the year-to-date amount.</span></span> <span data-ttu-id="be80b-124">Med hjälp av denna förteckning över koder och belopp följer du instruktionerna för att skapa ett manuellt inkomst- och betalningsutdrag med inaktiverad redovisning om du vill flytta över ingående saldon i betalningsändamål.</span><span class="sxs-lookup"><span data-stu-id="be80b-124">Using that list of codes and amounts, follow the steps for creating a manual earning and pay statement with accounting disabled to bring over beginning balances for payroll purposes.</span></span>  <span data-ttu-id="be80b-125">Du kan inaktivera redovisningen eftersom du inte vill bokföra detta betalningsutdrag för initial saldo i redovisningen.</span><span class="sxs-lookup"><span data-stu-id="be80b-125">You disable accounting because you won't want to post this beginning balance pay statement to your general ledger.</span></span> <span data-ttu-id="be80b-126">Detta gjordes i det äldre systemet och kommer att överföras till det nya systemet när du anger initiala saldon i redovisningen.</span><span class="sxs-lookup"><span data-stu-id="be80b-126">That was done in the legacy system and will come over to the new system when you set beginning balances in General ledger.</span></span>
 
-### <a name="a-how-to-set-up-earnings-codes-to-be-used-on-payroll-beginning-balances"></a>A. Hur du ställer in inkomstkoder som ska användas för ingående lönesaldon på lönelistan
-När du anger initiala lönesaldon för lönelistor, se då till att de inkomstkoder som du ska använda konfigureras med alternativet ”Tillåt redigering av tariffer för inkomstutdrag" är aktiverat. Detta gör att du manuellt kan ange beloppet från det äldre systemet. 
+### <a name="a-how-to-set-up-earnings-codes-to-be-used-on-payroll-beginning-balances"></a><span data-ttu-id="be80b-127">A.</span><span class="sxs-lookup"><span data-stu-id="be80b-127">A.</span></span> <span data-ttu-id="be80b-128">Hur du ställer in inkomstkoder som ska användas för ingående lönesaldon på lönelistan</span><span class="sxs-lookup"><span data-stu-id="be80b-128">How to set up earnings codes to be used on payroll beginning balances</span></span>
+<span data-ttu-id="be80b-129">När du anger initiala lönesaldon för lönelistor, se då till att de inkomstkoder som du ska använda konfigureras med alternativet ”Tillåt redigering av tariffer för inkomstutdrag" är aktiverat.</span><span class="sxs-lookup"><span data-stu-id="be80b-129">When you enter payroll beginning balances, be sure the earning codes that you will be using are configured with the "Allow editing of earning statement rates" option enabled.</span></span> <span data-ttu-id="be80b-130">Detta gör att du manuellt kan ange beloppet från det äldre systemet.</span><span class="sxs-lookup"><span data-stu-id="be80b-130">This will allow you to manually key the amount from the legacy system.</span></span> 
 
-### <a name="b-create-earnings-statement-for-an-employee-to-have-a-beginning-balance"></a>B. Skapa inkomstutdrag för en medarbetare för att få ett initialt saldo
-Det här steget skapar manuellt ett inkomstutdrag för respektive arbetstagare för det äldre systemet sista löneperiod, vilket skapar inkomstutdragsraderna i det nya lönesystemet. Ange en rad per inkomstkod samt belopp och timmar för hittillsvarande år fram till dags dato. Exempelstegen är som följer:
+### <a name="b-create-earnings-statement-for-an-employee-to-have-a-beginning-balance"></a><span data-ttu-id="be80b-131">B.</span><span class="sxs-lookup"><span data-stu-id="be80b-131">B.</span></span> <span data-ttu-id="be80b-132">Skapa inkomstutdrag för en medarbetare för att få ett initialt saldo</span><span class="sxs-lookup"><span data-stu-id="be80b-132">Create earnings statement for an employee to have a beginning balance</span></span>
+<span data-ttu-id="be80b-133">Det här steget skapar manuellt ett inkomstutdrag för respektive arbetstagare för det äldre systemet sista löneperiod, vilket skapar inkomstutdragsraderna i det nya lönesystemet.</span><span class="sxs-lookup"><span data-stu-id="be80b-133">This step manually creates an earnings statement for each worker for the last pay period of the legacy system, which creates the earning statement lines in the new payroll system.</span></span> <span data-ttu-id="be80b-134">Ange en rad per inkomstkod samt belopp och timmar för hittillsvarande år fram till dags dato.</span><span class="sxs-lookup"><span data-stu-id="be80b-134">Enter one line per earning code and the YTD amount and hours.</span></span> <span data-ttu-id="be80b-135">Exempelstegen är som följer:</span><span class="sxs-lookup"><span data-stu-id="be80b-135">The sample steps are as follows:</span></span>
 
-1. Öppna sidan **Alla intäktsutdrag** och klicka på **Ny**.  
+1. <span data-ttu-id="be80b-136">Öppna sidan **Alla intäktsutdrag** och klicka på **Ny**.</span><span class="sxs-lookup"><span data-stu-id="be80b-136">Open the **All earnings statements** page and click **New**.</span></span>  
 
-Ange följande: 
+<span data-ttu-id="be80b-137">Ange följande:</span><span class="sxs-lookup"><span data-stu-id="be80b-137">Enter the following:</span></span> 
 
-| Fält      | Värde                 |
+| <span data-ttu-id="be80b-138">Fält</span><span class="sxs-lookup"><span data-stu-id="be80b-138">Field</span></span>      | <span data-ttu-id="be80b-139">Värde</span><span class="sxs-lookup"><span data-stu-id="be80b-139">Value</span></span>                 |
 |------------|-----------------------|
-| Arbetare     | Michael Redmond       |
-| Lönecykel  | sm                    |
-| Löneperiod | 2016-06-16 - 2017-06-30 |
+| <span data-ttu-id="be80b-140">Arbetare</span><span class="sxs-lookup"><span data-stu-id="be80b-140">Worker</span></span>     | <span data-ttu-id="be80b-141">Michael Redmond</span><span class="sxs-lookup"><span data-stu-id="be80b-141">Michael Redmond</span></span>       |
+| <span data-ttu-id="be80b-142">Lönecykel</span><span class="sxs-lookup"><span data-stu-id="be80b-142">Pay cycle</span></span>  | <span data-ttu-id="be80b-143">sm</span><span class="sxs-lookup"><span data-stu-id="be80b-143">sm</span></span>                    |
+| <span data-ttu-id="be80b-144">Löneperiod</span><span class="sxs-lookup"><span data-stu-id="be80b-144">Pay period</span></span> | <span data-ttu-id="be80b-145">2016-06-16 - 2017-06-30</span><span class="sxs-lookup"><span data-stu-id="be80b-145">6/16/2017 - 6/30/2017</span></span> |
 
-2. I fliken **Rad för inkomstutdrag** anger du följande:
+2. <span data-ttu-id="be80b-146">I fliken **Rad för inkomstutdrag** anger du följande:</span><span class="sxs-lookup"><span data-stu-id="be80b-146">In the **Earnings statement line** tab, enter the following:</span></span>
 
-Rad 1: Fliken **Rad för inkomsutdrag**
+<span data-ttu-id="be80b-147">Rad 1: Fliken **Rad för inkomsutdrag**</span><span class="sxs-lookup"><span data-stu-id="be80b-147">Line 1: **Earning statement line** tab</span></span>
 
-| Fält            | Värde       |
+| <span data-ttu-id="be80b-148">Fält</span><span class="sxs-lookup"><span data-stu-id="be80b-148">Field</span></span>            | <span data-ttu-id="be80b-149">Värde</span><span class="sxs-lookup"><span data-stu-id="be80b-149">Value</span></span>       |
 |------------------|-------------|
-| Inkomstkod    | Standardlön |
-| Kvantitet         | 1,00        |
-| Rage             | 30 000      |
-| Flik för radinformation |             |
-| Manuell           | (markerad)    |
+| <span data-ttu-id="be80b-150">Inkomstkod</span><span class="sxs-lookup"><span data-stu-id="be80b-150">Earnings code</span></span>    | <span data-ttu-id="be80b-151">Standardlön</span><span class="sxs-lookup"><span data-stu-id="be80b-151">Regular pay</span></span> |
+| <span data-ttu-id="be80b-152">Kvantitet</span><span class="sxs-lookup"><span data-stu-id="be80b-152">Quantity</span></span>         | <span data-ttu-id="be80b-153">1,00</span><span class="sxs-lookup"><span data-stu-id="be80b-153">1.00</span></span>        |
+| <span data-ttu-id="be80b-154">Rage</span><span class="sxs-lookup"><span data-stu-id="be80b-154">Rage</span></span>             | <span data-ttu-id="be80b-155">30 000</span><span class="sxs-lookup"><span data-stu-id="be80b-155">30,000</span></span>      |
+| <span data-ttu-id="be80b-156">Flik för radinformation</span><span class="sxs-lookup"><span data-stu-id="be80b-156">Line details tab</span></span> |             |
+| <span data-ttu-id="be80b-157">Manuell</span><span class="sxs-lookup"><span data-stu-id="be80b-157">Manual</span></span>           | <span data-ttu-id="be80b-158">(markerad)</span><span class="sxs-lookup"><span data-stu-id="be80b-158">(marked)</span></span>    |
 
-Rad 2: Fliken **Rad för inkomstutrag**
+<span data-ttu-id="be80b-159">Rad 2: Fliken **Rad för inkomstutrag**</span><span class="sxs-lookup"><span data-stu-id="be80b-159">Line 2: **Earning statement line** tab</span></span>
 
-| Fält            | Värde    |
+| <span data-ttu-id="be80b-160">Fält</span><span class="sxs-lookup"><span data-stu-id="be80b-160">Field</span></span>            | <span data-ttu-id="be80b-161">Värde</span><span class="sxs-lookup"><span data-stu-id="be80b-161">Value</span></span>    |
 |------------------|----------|
-| Inkomstkod    | Bonus    |
-| Kvantitet         | 1.0000   |
-| Kurs             | 4250.00  |
-| Flik för radinformation |          |
-| Manuell           | (markerad) |
+| <span data-ttu-id="be80b-162">Inkomstkod</span><span class="sxs-lookup"><span data-stu-id="be80b-162">Earnings code</span></span>    | <span data-ttu-id="be80b-163">Bonus</span><span class="sxs-lookup"><span data-stu-id="be80b-163">Bonus</span></span>    |
+| <span data-ttu-id="be80b-164">Kvantitet</span><span class="sxs-lookup"><span data-stu-id="be80b-164">Quantity</span></span>         | <span data-ttu-id="be80b-165">1.0000</span><span class="sxs-lookup"><span data-stu-id="be80b-165">1.0000</span></span>   |
+| <span data-ttu-id="be80b-166">Kurs</span><span class="sxs-lookup"><span data-stu-id="be80b-166">Rate</span></span>             | <span data-ttu-id="be80b-167">4250.00</span><span class="sxs-lookup"><span data-stu-id="be80b-167">4250.00</span></span>  |
+| <span data-ttu-id="be80b-168">Flik för radinformation</span><span class="sxs-lookup"><span data-stu-id="be80b-168">Line details tab</span></span> |          |
+| <span data-ttu-id="be80b-169">Manuell</span><span class="sxs-lookup"><span data-stu-id="be80b-169">Manual</span></span>           | <span data-ttu-id="be80b-170">(markerad)</span><span class="sxs-lookup"><span data-stu-id="be80b-170">(marked)</span></span> |
 
-Rad 3: Fliken **Rad för inkomstutdrag**
+<span data-ttu-id="be80b-171">Rad 3: Fliken **Rad för inkomstutdrag**</span><span class="sxs-lookup"><span data-stu-id="be80b-171">Line 3: **Earning statement line** tab</span></span>
 
-| Fält           | Värde      |
+| <span data-ttu-id="be80b-172">Fält</span><span class="sxs-lookup"><span data-stu-id="be80b-172">Field</span></span>           | <span data-ttu-id="be80b-173">Värde</span><span class="sxs-lookup"><span data-stu-id="be80b-173">Value</span></span>      |
 |-----------------|------------|
-| Inkomstkod   | Provision |
-| Kvantitet        | 1.0000     |
-| Kurs            | 1 299,00   |
-| Kurs            | 1,299.00   |
-| Flik för radinformation |            |
-| Manuell          | (markerad)   |
+| <span data-ttu-id="be80b-174">Inkomstkod</span><span class="sxs-lookup"><span data-stu-id="be80b-174">Earnings code</span></span>   | <span data-ttu-id="be80b-175">Provision</span><span class="sxs-lookup"><span data-stu-id="be80b-175">Commission</span></span> |
+| <span data-ttu-id="be80b-176">Kvantitet</span><span class="sxs-lookup"><span data-stu-id="be80b-176">Quantity</span></span>        | <span data-ttu-id="be80b-177">1.0000</span><span class="sxs-lookup"><span data-stu-id="be80b-177">1.0000</span></span>     |
+| <span data-ttu-id="be80b-178">Kurs</span><span class="sxs-lookup"><span data-stu-id="be80b-178">Rate</span></span>            | <span data-ttu-id="be80b-179">1 299,00</span><span class="sxs-lookup"><span data-stu-id="be80b-179">!,299.00</span></span>   |
+| <span data-ttu-id="be80b-180">Kurs</span><span class="sxs-lookup"><span data-stu-id="be80b-180">Rate</span></span>            | <span data-ttu-id="be80b-181">1,299.00</span><span class="sxs-lookup"><span data-stu-id="be80b-181">1,299.00</span></span>   |
+| <span data-ttu-id="be80b-182">Flik för radinformation</span><span class="sxs-lookup"><span data-stu-id="be80b-182">Line detail tab</span></span> |            |
+| <span data-ttu-id="be80b-183">Manuell</span><span class="sxs-lookup"><span data-stu-id="be80b-183">Manual</span></span>          | <span data-ttu-id="be80b-184">(markerad)</span><span class="sxs-lookup"><span data-stu-id="be80b-184">(Marked)</span></span>   |
 
 > [!NOTE]
-> Sätta det **manuella** skjutreglaget till **Ja** på fliken **Radinformation** för respektive rad för inkomstutdrag är nyckeln till att initiala saldon ska anges för respektive arbetstagare.
+> <span data-ttu-id="be80b-185">Sätta det **manuella** skjutreglaget till **Ja** på fliken **Radinformation** för respektive rad för inkomstutdrag är nyckeln till att initiala saldon ska anges för respektive arbetstagare.</span><span class="sxs-lookup"><span data-stu-id="be80b-185">Setting the **Manual** slider to **Yes** in the **Line Details** tab for each earnings statement line is key to have payroll beginning balances entered for each worker.</span></span>
 
-3. I fönstret **Åtgärd** klickar du på **Frisläpp intäktsutdrag** USA-FED ER-FICA.
+3. <span data-ttu-id="be80b-186">I fönstret **Åtgärd** klickar du på **Frisläpp intäktsutdrag** USA-FED ER-FICA.</span><span class="sxs-lookup"><span data-stu-id="be80b-186">On the **Action** pane, click **Release earnings statement** USA-FED-ER-FICA.</span></span>
 
-4. I fönstret **Åtgärd** klickar du på **Löneutdrag** för att öppna sidan **Skapa löneutdrag** och anger följande:
+4. <span data-ttu-id="be80b-187">I fönstret **Åtgärd** klickar du på **Löneutdrag** för att öppna sidan **Skapa löneutdrag** och anger följande:</span><span class="sxs-lookup"><span data-stu-id="be80b-187">On the **Action** pane click **Pay statement** to open the **Generate pay statements** page and set the following:</span></span>
 
-| Fält              | Värde     |
+| <span data-ttu-id="be80b-188">Fält</span><span class="sxs-lookup"><span data-stu-id="be80b-188">Field</span></span>              | <span data-ttu-id="be80b-189">Värde</span><span class="sxs-lookup"><span data-stu-id="be80b-189">Value</span></span>     |
 |--------------------|-----------|
-| Betalningsdatum       | 6/30/2017 |
-| Typ av lönekörning   | Manuell    |
-| Inaktivera redovisning |   Ja     |
+| <span data-ttu-id="be80b-190">Betalningsdatum</span><span class="sxs-lookup"><span data-stu-id="be80b-190">Payment date</span></span>       | <span data-ttu-id="be80b-191">6/30/2017</span><span class="sxs-lookup"><span data-stu-id="be80b-191">6/30/2017</span></span> |
+| <span data-ttu-id="be80b-192">Typ av lönekörning</span><span class="sxs-lookup"><span data-stu-id="be80b-192">Payment run type</span></span>   | <span data-ttu-id="be80b-193">Manuell</span><span class="sxs-lookup"><span data-stu-id="be80b-193">Manual</span></span>    |
+| <span data-ttu-id="be80b-194">Inaktivera redovisning</span><span class="sxs-lookup"><span data-stu-id="be80b-194">Disable accounting</span></span> |   <span data-ttu-id="be80b-195">Ja</span><span class="sxs-lookup"><span data-stu-id="be80b-195">Yes</span></span>     |
 
 > [!NOTE] 
-> Detta är endast tillgängligt när betalningens körningstyp är manuell och där användaren vill inaktivera redovisningen för betalningskörningen.
+> <span data-ttu-id="be80b-196">Detta är endast tillgängligt när betalningens körningstyp är manuell och där användaren vill inaktivera redovisningen för betalningskörningen.</span><span class="sxs-lookup"><span data-stu-id="be80b-196">This is only available when the payment run type is manual and wherein the user want to disable accounting on the pay run.</span></span>
 
-Klicka på **OK** och stäng **Informationsloggen**.
+<span data-ttu-id="be80b-197">Klicka på **OK** och stäng **Informationsloggen**.</span><span class="sxs-lookup"><span data-stu-id="be80b-197">Click **OK** and close the **Infolog**.</span></span>
 
-#### <a name="why-the-disable-accounting-slider-needs-to-set-to-yes-when-generating-pay-statements"></a>Varför måste skjutereglaget ställas in på Ja vid generering av lönerapporter?
-Att ställa in skjutreglaget på **Ja** förhindrar att rader i löneutdraget distribueras till redovisningen. Redovisningsbeloppen uppdaterar tidigare när kontosaldon från äldre system angavs. Att ange ingående balanser för löner låter dig skapa rapporter som innehåller information från föregående år och för att identifiera gränser av förmåns- och skattemässiga skäl.   
+#### <a name="why-the-disable-accounting-slider-needs-to-set-to-yes-when-generating-pay-statements"></a><span data-ttu-id="be80b-198">Varför måste skjutereglaget ställas in på Ja vid generering av lönerapporter?</span><span class="sxs-lookup"><span data-stu-id="be80b-198">Why the Disable Accounting slider needs to set to Yes when generating pay statements?</span></span>
+<span data-ttu-id="be80b-199">Att ställa in skjutreglaget på **Ja** förhindrar att rader i löneutdraget distribueras till redovisningen.</span><span class="sxs-lookup"><span data-stu-id="be80b-199">Setting the slider to **Yes** prevents lines in the pay statement from being districuted to General ledger.</span></span> <span data-ttu-id="be80b-200">Redovisningsbeloppen uppdaterar tidigare när kontosaldon från äldre system angavs.</span><span class="sxs-lookup"><span data-stu-id="be80b-200">General ledger amounts were updating earlier when account balances from the legacy system were entered.</span></span> <span data-ttu-id="be80b-201">Att ange ingående balanser för löner låter dig skapa rapporter som innehåller information från föregående år och för att identifiera gränser av förmåns- och skattemässiga skäl.</span><span class="sxs-lookup"><span data-stu-id="be80b-201">Entering beginning balances for Payroll lets you generate reports that include information from prior years, as well as for identifying limits for benefit and tax purposes.</span></span>   
 
-### <a name="c-create-pay-statements-for-employees"></a>C. Skapa löneutdrag för anställda
-Du måste kontrollera att betalningsutdrag korrekt återspeglar lönedatan när du genererar löneutdrag med initiala saldon. Du måste även manuellt uppdatera förmåns- och skatteinformationen så att denna matchar värdena i det föregående lönesystemet. När du har bekräftat att beloppen från föregående lönesystem matchar beloppen på aktuella löneutdrag, måste du slutföra löneutdragen.
+### <a name="c-create-pay-statements-for-employees"></a><span data-ttu-id="be80b-202">C.</span><span class="sxs-lookup"><span data-stu-id="be80b-202">C.</span></span> <span data-ttu-id="be80b-203">Skapa löneutdrag för anställda</span><span class="sxs-lookup"><span data-stu-id="be80b-203">Create pay statements for employees</span></span>
+<span data-ttu-id="be80b-204">Du måste kontrollera att betalningsutdrag korrekt återspeglar lönedatan när du genererar löneutdrag med initiala saldon.</span><span class="sxs-lookup"><span data-stu-id="be80b-204">After you generate pay statements that have beginning balances, you must verify that the pay statements accurately reflect payroll data.</span></span> <span data-ttu-id="be80b-205">Du måste även manuellt uppdatera förmåns- och skatteinformationen så att denna matchar värdena i det föregående lönesystemet.</span><span class="sxs-lookup"><span data-stu-id="be80b-205">You must also manually update the benefit and taxes information to match the values in the previous payroll system.</span></span> <span data-ttu-id="be80b-206">När du har bekräftat att beloppen från föregående lönesystem matchar beloppen på aktuella löneutdrag, måste du slutföra löneutdragen.</span><span class="sxs-lookup"><span data-stu-id="be80b-206">After you verify that the amounts from the previous payroll system match the amounts on the current pay statements, you must finalize the pay statements.</span></span>
 
-1. Öppna sidan **Alla löneutdrag**.
+1. <span data-ttu-id="be80b-207">Öppna sidan **Alla löneutdrag**.</span><span class="sxs-lookup"><span data-stu-id="be80b-207">Open the **All pay statements** page.</span></span>
 
-2. Markera det senast genererade löneutdraget för Michael Redmond
+2. <span data-ttu-id="be80b-208">Markera det senast genererade löneutdraget för Michael Redmond</span><span class="sxs-lookup"><span data-stu-id="be80b-208">Highlight the last generated pay statement for Michael Redmond</span></span>
 
-3. Klicka på **Redigera** för att öppna sidan **Löneutdrag**.
+3. <span data-ttu-id="be80b-209">Klicka på **Redigera** för att öppna sidan **Löneutdrag**.</span><span class="sxs-lookup"><span data-stu-id="be80b-209">Click **Edit** to open the **Pay statement** page.</span></span>
 
-4. Öppna fliken **Förmånsavdrag** och ange följande:
+4. <span data-ttu-id="be80b-210">Öppna fliken **Förmånsavdrag** och ange följande:</span><span class="sxs-lookup"><span data-stu-id="be80b-210">Open the **Benefit deductions** tab and enter the following:</span></span>
 
-| Fält                           | Värde            |
+| <span data-ttu-id="be80b-211">Fält</span><span class="sxs-lookup"><span data-stu-id="be80b-211">Field</span></span>                           | <span data-ttu-id="be80b-212">Värde</span><span class="sxs-lookup"><span data-stu-id="be80b-212">Value</span></span>            |
 |---------------------------------|------------------|
-| Förmån                         | Avdragsbelopp |
-| 401K | Delta              | 3000.00          |
-| Tandvård | SubSp                  | 495.00           |
-| Utgifter för beroendevård | Delta | 2500.00          |
-| Vision | SupSp                  | 500.00           |
+| <span data-ttu-id="be80b-213">Förmån</span><span class="sxs-lookup"><span data-stu-id="be80b-213">Benefit</span></span>                         | <span data-ttu-id="be80b-214">Avdragsbelopp</span><span class="sxs-lookup"><span data-stu-id="be80b-214">Deduction amount</span></span> |
+| <span data-ttu-id="be80b-215">401K</span><span class="sxs-lookup"><span data-stu-id="be80b-215">401K</span></span> | <span data-ttu-id="be80b-216">Delta</span><span class="sxs-lookup"><span data-stu-id="be80b-216">Participate</span></span>              | <span data-ttu-id="be80b-217">3000.00</span><span class="sxs-lookup"><span data-stu-id="be80b-217">3000.00</span></span>          |
+| <span data-ttu-id="be80b-218">Tandvård</span><span class="sxs-lookup"><span data-stu-id="be80b-218">Dental</span></span> | <span data-ttu-id="be80b-219">SubSp</span><span class="sxs-lookup"><span data-stu-id="be80b-219">SubSp</span></span>                  | <span data-ttu-id="be80b-220">495.00</span><span class="sxs-lookup"><span data-stu-id="be80b-220">495.00</span></span>           |
+| <span data-ttu-id="be80b-221">Utgifter för beroendevård</span><span class="sxs-lookup"><span data-stu-id="be80b-221">Dep care spending</span></span> | <span data-ttu-id="be80b-222">Delta</span><span class="sxs-lookup"><span data-stu-id="be80b-222">Participate</span></span> | <span data-ttu-id="be80b-223">2500.00</span><span class="sxs-lookup"><span data-stu-id="be80b-223">2500.00</span></span>          |
+| <span data-ttu-id="be80b-224">Vision</span><span class="sxs-lookup"><span data-stu-id="be80b-224">Vision</span></span> | <span data-ttu-id="be80b-225">SupSp</span><span class="sxs-lookup"><span data-stu-id="be80b-225">SupSp</span></span>                  | <span data-ttu-id="be80b-226">500.00</span><span class="sxs-lookup"><span data-stu-id="be80b-226">500.00</span></span>           |
 
-5. I fliken **Förmånsbidrag** anger du följande:
+5. <span data-ttu-id="be80b-227">I fliken **Förmånsbidrag** anger du följande:</span><span class="sxs-lookup"><span data-stu-id="be80b-227">In the **Benefit contributions** tab and enter the following:</span></span>
 
-| Fält              | Värde               |
+| <span data-ttu-id="be80b-228">Fält</span><span class="sxs-lookup"><span data-stu-id="be80b-228">Field</span></span>              | <span data-ttu-id="be80b-229">Värde</span><span class="sxs-lookup"><span data-stu-id="be80b-229">Value</span></span>               |
 |--------------------|---------------------|
-| Förmån            | Förmånsbelopp |
-| 401K | Delta | 3000,00             |
-| Tandvård | SubSp     | 495.00              |
-| Vision | SubSp     | 500.00              |
+| <span data-ttu-id="be80b-230">Förmån</span><span class="sxs-lookup"><span data-stu-id="be80b-230">Benefit</span></span>            | <span data-ttu-id="be80b-231">Förmånsbelopp</span><span class="sxs-lookup"><span data-stu-id="be80b-231">Contribution amount</span></span> |
+| <span data-ttu-id="be80b-232">401K</span><span class="sxs-lookup"><span data-stu-id="be80b-232">401K</span></span> | <span data-ttu-id="be80b-233">Delta</span><span class="sxs-lookup"><span data-stu-id="be80b-233">Participate</span></span> | <span data-ttu-id="be80b-234">3000,00</span><span class="sxs-lookup"><span data-stu-id="be80b-234">3000,00</span></span>             |
+| <span data-ttu-id="be80b-235">Tandvård</span><span class="sxs-lookup"><span data-stu-id="be80b-235">Dental</span></span> | <span data-ttu-id="be80b-236">SubSp</span><span class="sxs-lookup"><span data-stu-id="be80b-236">SubSp</span></span>     | <span data-ttu-id="be80b-237">495.00</span><span class="sxs-lookup"><span data-stu-id="be80b-237">495.00</span></span>              |
+| <span data-ttu-id="be80b-238">Vision</span><span class="sxs-lookup"><span data-stu-id="be80b-238">Vision</span></span> | <span data-ttu-id="be80b-239">SubSp</span><span class="sxs-lookup"><span data-stu-id="be80b-239">SubSp</span></span>     | <span data-ttu-id="be80b-240">500.00</span><span class="sxs-lookup"><span data-stu-id="be80b-240">500.00</span></span>              |
 
-6. I fliken **Skatteavdrag** anger du följande:
+6. <span data-ttu-id="be80b-241">I fliken **Skatteavdrag** anger du följande:</span><span class="sxs-lookup"><span data-stu-id="be80b-241">In the **Tax deductions** tab, enter the following:</span></span>
 
-| Fält           | Värde            |
+| <span data-ttu-id="be80b-242">Fält</span><span class="sxs-lookup"><span data-stu-id="be80b-242">Field</span></span>           | <span data-ttu-id="be80b-243">Värde</span><span class="sxs-lookup"><span data-stu-id="be80b-243">Value</span></span>            |
 |-----------------|------------------|
-| Skattekod        | Avdragsbelopp |
-| USA-FED-ER-FICA | 1600.00          |
-| USA-FED-ER-MEDI | 825.75           |
+| <span data-ttu-id="be80b-244">Skattekod</span><span class="sxs-lookup"><span data-stu-id="be80b-244">Tax code</span></span>        | <span data-ttu-id="be80b-245">Avdragsbelopp</span><span class="sxs-lookup"><span data-stu-id="be80b-245">Deduction amount</span></span> |
+| <span data-ttu-id="be80b-246">USA-FED-ER-FICA</span><span class="sxs-lookup"><span data-stu-id="be80b-246">USA-FED-ER-FICA</span></span> | <span data-ttu-id="be80b-247">1600.00</span><span class="sxs-lookup"><span data-stu-id="be80b-247">1600.00</span></span>          |
+| <span data-ttu-id="be80b-248">USA-FED-ER-MEDI</span><span class="sxs-lookup"><span data-stu-id="be80b-248">USA-FED-ER-MEDI</span></span> | <span data-ttu-id="be80b-249">825.75</span><span class="sxs-lookup"><span data-stu-id="be80b-249">825.75</span></span>           |
 
-7. I fliken **Skattebidrag** anger du följande:
+7. <span data-ttu-id="be80b-250">I fliken **Skattebidrag** anger du följande:</span><span class="sxs-lookup"><span data-stu-id="be80b-250">In the **Tax contributions** tab enter the following:</span></span>
 
-8. Klicka på **Beräkna**.
+8. <span data-ttu-id="be80b-251">Klicka på **Beräkna**.</span><span class="sxs-lookup"><span data-stu-id="be80b-251">Click **Calculate**.</span></span>
 > [!IMPORTANT] 
-> Validera summorna i löneutdraget så att de matchar saldot till dags dato det äldre systemet för arbetstagaren. Du kanske vill avstå från att slutföra i nästa steg för att istället validera samtliga löneutdrag sammanlagt. Kör igenom alla löneutdrag och slutför dem när de väl har validerats.
+> <span data-ttu-id="be80b-252">Validera summorna i löneutdraget så att de matchar saldot till dags dato det äldre systemet för arbetstagaren.</span><span class="sxs-lookup"><span data-stu-id="be80b-252">Validate the totals of the pay statement that they match the YTD of the legacy system for the worker.</span></span> <span data-ttu-id="be80b-253">Du kanske vill avstå från att slutföra i nästa steg för att istället validera samtliga löneutdrag sammanlagt.</span><span class="sxs-lookup"><span data-stu-id="be80b-253">You may want to hold off on finalizing in the next step to do some overall validating of all pay statements in aggregate.</span></span> <span data-ttu-id="be80b-254">Kör igenom alla löneutdrag och slutför dem när de väl har validerats.</span><span class="sxs-lookup"><span data-stu-id="be80b-254">Once validated run through all the pay statements and finalize them.</span></span>
 
-Samma tillvägagångssätt kan vid behov göras kvartalsvis för alla föregående kvartal under varje år. Detta behövs bara om kunden behöver visa data kvartalsvis utan att gå tillbaka till det äldre systemet.
+<span data-ttu-id="be80b-255">Samma tillvägagångssätt kan vid behov göras kvartalsvis för alla föregående kvartal under varje år.</span><span class="sxs-lookup"><span data-stu-id="be80b-255">The same process can be done in quarter increments if necessary for all prior quarters in each year.</span></span> <span data-ttu-id="be80b-256">Detta behövs bara om kunden behöver visa data kvartalsvis utan att gå tillbaka till det äldre systemet.</span><span class="sxs-lookup"><span data-stu-id="be80b-256">This is only needed if the customer needs to see the data by quarter without going back to the legacy system.</span></span>
 
-## <a name="if-you-make-a-mistake-entering-beginning-balances-for-an-employee"></a>Om du gör ett misstag när du anger initiala saldon för en medarbetare
-Det går att återföra och omregistrera transaktioner. Om du vill återföra transaktionen är allt du behöver göra är att slutföra följande steg på sidan **Alla löneutdrag**.
+## <a name="if-you-make-a-mistake-entering-beginning-balances-for-an-employee"></a><span data-ttu-id="be80b-257">Om du gör ett misstag när du anger initiala saldon för en medarbetare</span><span class="sxs-lookup"><span data-stu-id="be80b-257">If you make a mistake Entering Beginning Balances for an Employee</span></span>
+<span data-ttu-id="be80b-258">Det går att återföra och omregistrera transaktioner.</span><span class="sxs-lookup"><span data-stu-id="be80b-258">It is possible to reverse and reenter transactions.</span></span> <span data-ttu-id="be80b-259">Om du vill återföra transaktionen är allt du behöver göra är att slutföra följande steg på sidan **Alla löneutdrag**.</span><span class="sxs-lookup"><span data-stu-id="be80b-259">To reverse the transaction, all you have to do is to complete the follow steps on the **All pay statements** page.</span></span>
 
-1. Klicka på **Återför**.
+1. <span data-ttu-id="be80b-260">Klicka på **Återför**.</span><span class="sxs-lookup"><span data-stu-id="be80b-260">Click **Reverse**.</span></span>
 
-2. Klicka på **Ja** när meddelandet ”När du återför detta löneutdrag kommer ett utdrag om löneåterförande att skapas för att kompensera detta löneutdrag. Ingetdera löneutdrag kan redigeras. Vill du återföra detta löneudrag?" visningar. 
+2. <span data-ttu-id="be80b-261">Klicka på **Ja** när meddelandet ”När du återför detta löneutdrag kommer ett utdrag om löneåterförande att skapas för att kompensera detta löneutdrag.</span><span class="sxs-lookup"><span data-stu-id="be80b-261">Click **Yes** when the message "When you reverse this pay statement, a reversing pay statement will be created to offset this pay statement.</span></span> <span data-ttu-id="be80b-262">Ingetdera löneutdrag kan redigeras.</span><span class="sxs-lookup"><span data-stu-id="be80b-262">Neither pay statement can be edited.</span></span> <span data-ttu-id="be80b-263">Vill du återföra detta löneudrag?"</span><span class="sxs-lookup"><span data-stu-id="be80b-263">Do you want to reverse this pay statement?"</span></span> <span data-ttu-id="be80b-264">visningar.</span><span class="sxs-lookup"><span data-stu-id="be80b-264">displays.</span></span> 
 
-När du återför löneutdraget kan du generera ett nytt löneutdrag för arbetaren från inkomstutdrag som du skapade tidigare. Kom ihåg att korrigera felaktiga rader på inkomstutdraget innan du skapar nya löneutdrag och generera sedan nya löneutdrag med korrekt belopp. 
+<span data-ttu-id="be80b-265">När du återför löneutdraget kan du generera ett nytt löneutdrag för arbetaren från inkomstutdrag som du skapade tidigare.</span><span class="sxs-lookup"><span data-stu-id="be80b-265">After you reverse the pay statement, you can generate a new pay statement for the worker from the earnings statement that you created previously.</span></span> <span data-ttu-id="be80b-266">Kom ihåg att korrigera felaktiga rader på inkomstutdraget innan du skapar nya löneutdrag och generera sedan nya löneutdrag med korrekt belopp.</span><span class="sxs-lookup"><span data-stu-id="be80b-266">Be sure to fix any incorrect lines on the earnings statement before you generate the new pay statement, and then generate new pay statements with the correct amounts.</span></span> 
 

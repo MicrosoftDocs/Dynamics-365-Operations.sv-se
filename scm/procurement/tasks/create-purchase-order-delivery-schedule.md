@@ -16,63 +16,63 @@ ms.author: fdahl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 93bd832b4bbb91e6bd0288042098383eb5f4488d
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 1e4a0204d74c8966cd90b52ae13c88e222ebc3ef
 ms.contentlocale: sv-se
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-a-purchase-order-with-a-delivery-schedule"></a>Skapa en inköpsorder med en leveransplan
+# <a name="create-a-purchase-order-with-a-delivery-schedule"></a><span data-ttu-id="54333-103">Skapa en inköpsorder med en leveransplan</span><span class="sxs-lookup"><span data-stu-id="54333-103">Create a purchase order with a delivery schedule</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Den här proceduren visas hur du kan skapa en leveransplan för en inköpsorder. En leveransplan används när en kvantitet på en order eller en journal begärs för att levereras i flera försändelser. De exempel som visas i den här handboken kan användas i demoföretaget USMF. Denna procedur görs normalt av en inköpsagent.
+<span data-ttu-id="54333-104">Den här proceduren visas hur du kan skapa en leveransplan för en inköpsorder.</span><span class="sxs-lookup"><span data-stu-id="54333-104">This procedure demonstrates how to create a delivery schedule for a purchase order.</span></span> <span data-ttu-id="54333-105">En leveransplan används när en kvantitet på en order eller en journal begärs för att levereras i flera försändelser.</span><span class="sxs-lookup"><span data-stu-id="54333-105">A delivery schedule is used when a quantity on an order or a journal is requested to be delivered in multiple shipments.</span></span> <span data-ttu-id="54333-106">De exempel som visas i den här handboken kan användas i demoföretaget USMF.</span><span class="sxs-lookup"><span data-stu-id="54333-106">The example shown in this guide can be used in the USMF demo data company.</span></span> <span data-ttu-id="54333-107">Denna procedur görs normalt av en inköpsagent.</span><span class="sxs-lookup"><span data-stu-id="54333-107">This procedure would typically be done by a purchasing agent.</span></span>
 
 
-## <a name="create-a-delivery-schedule"></a>Skapa en leveransplan
-1. Gå till Anskaffning och källa > Inköpsorder > Alla inköpsorder.
-2. Klicka på Ny.
-3. Ange "US-101" i fältet Leverantörskonto.
-4. Klicka på OK.
-5. Ange ett artikelnummer i fältet M0001.
-6. Ange 10 i fältet Kvantitet.
-7. Klicka på Inköpsorderrad.
-8. Klicka på Leveransplan.
-    * Sidan Leveransplan låter dig ange antalet leveranser för den totala kvantiteten på orderraden som ska levereras från leverantören.  
-    * Som standard kopierar systemet den totala kvantiteten och andra leveransdetaljer för de ursprungliga inköpsraderna till den första leveransplanraden. I det här exemplet ska du skapa ett schema för två leveranser, med det andra leveransdatumet med förskjutning på en vecka efter den första leveransen.  
-9. Ändra kvantiteten till 4 i fältet Kvantitet.
-10. Klicka på Ny.
-11. Ange 6 som den återstående kvantiteten i fältet Kvantitet.
-    * Välj ett datum som infaller en vecka efter datumet på den första leveransraden i fältet Leveransdatum.  
-    * Du kan spåra den totala kvantiteten som tilldelas till leveransplanraderna genom att visa summan och återstående fält. När den resterande kvantiteten är noll, har den fullständiga kvantiteten från den ursprungliga raden allokerats till tidsplaneringen.  
-12. Expandera avsnittet Konvertering av avgifter.
-    * Alternativen här låter dig kontrollera hur du vill att avgifter ska fördelas mellan leveransplanraderna. Om du väljer Kopiera bruttobelopp, kopieras avgiftsbeloppet på den ursprungliga orderraden till varje leverandsrad. Alternativet Fördela på leveransrader delar upp den ursprungliga radavgiften enligt kvantiteten på varje leveransrad.  
-13. Komprimera avsnittet Konvertering av avgifter.
-14. Klicka på OK.
-    * Leveransplanen har nu tillämpats på orderraderna.  
-    * Den ursprungliga orderraden som nu kallas för en kommersiell rad, har konverterats till en orderrad med flera leveranser. Den markeras med en särskild ikon och fungerar som rubrik för leveransraderna.  
-15. Välj den andra orderraden, som är den första av de två leveransraderna.
-    * De två nya raderna som kallas för leveransrader utgör en leveransplan. Ordern ska bearbetas mot dessa rader och inte den ursprungliga raden. Om dokument som bekräftelser, produktinleveransjournaler eller fakturor skrivs ut, visas bara leveransraderna.  
+## <a name="create-a-delivery-schedule"></a><span data-ttu-id="54333-108">Skapa en leveransplan</span><span class="sxs-lookup"><span data-stu-id="54333-108">Create a delivery schedule</span></span>
+1. <span data-ttu-id="54333-109">Gå till Anskaffning och källa > Inköpsorder > Alla inköpsorder.</span><span class="sxs-lookup"><span data-stu-id="54333-109">Go to Procurement and sourcing > Purchase orders > All purchase orders.</span></span>
+2. <span data-ttu-id="54333-110">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="54333-110">Click New.</span></span>
+3. <span data-ttu-id="54333-111">Ange "US-101" i fältet Leverantörskonto.</span><span class="sxs-lookup"><span data-stu-id="54333-111">In the Vendor account field, enter US-101.</span></span>
+4. <span data-ttu-id="54333-112">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="54333-112">Click OK.</span></span>
+5. <span data-ttu-id="54333-113">Ange ett artikelnummer i fältet M0001.</span><span class="sxs-lookup"><span data-stu-id="54333-113">In the Item number field, enter M0001.</span></span>
+6. <span data-ttu-id="54333-114">Ange 10 i fältet Kvantitet.</span><span class="sxs-lookup"><span data-stu-id="54333-114">In the Quantity field, enter 10.</span></span>
+7. <span data-ttu-id="54333-115">Klicka på Inköpsorderrad.</span><span class="sxs-lookup"><span data-stu-id="54333-115">Click Purchase order line.</span></span>
+8. <span data-ttu-id="54333-116">Klicka på Leveransplan.</span><span class="sxs-lookup"><span data-stu-id="54333-116">Click Delivery schedule.</span></span>
+    * <span data-ttu-id="54333-117">Sidan Leveransplan låter dig ange antalet leveranser för den totala kvantiteten på orderraden som ska levereras från leverantören.</span><span class="sxs-lookup"><span data-stu-id="54333-117">The Delivery schedule page allows you to specify the number of shipments in which the total quantity of the order line will be delivered from the vendor.</span></span>  
+    * <span data-ttu-id="54333-118">Som standard kopierar systemet den totala kvantiteten och andra leveransdetaljer för de ursprungliga inköpsraderna till den första leveransplanraden.</span><span class="sxs-lookup"><span data-stu-id="54333-118">By default, the system copies the total quantity and other delivery details of the original purchase line into the first delivery schedule line.</span></span> <span data-ttu-id="54333-119">I det här exemplet ska du skapa ett schema för två leveranser, med det andra leveransdatumet med förskjutning på en vecka efter den första leveransen.</span><span class="sxs-lookup"><span data-stu-id="54333-119">In this example, we’ll create a schedule for two shipments, with the second shipment’s date offset by a week from the first shipment.</span></span>  
+9. <span data-ttu-id="54333-120">Ändra kvantiteten till 4 i fältet Kvantitet.</span><span class="sxs-lookup"><span data-stu-id="54333-120">In the Quantity field, change the quantity to 4.</span></span>
+10. <span data-ttu-id="54333-121">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="54333-121">Click New.</span></span>
+11. <span data-ttu-id="54333-122">Ange 6 som den återstående kvantiteten i fältet Kvantitet.</span><span class="sxs-lookup"><span data-stu-id="54333-122">In the Quantity field, enter 6 as the remaining quantity.</span></span>
+    * <span data-ttu-id="54333-123">Välj ett datum som infaller en vecka efter datumet på den första leveransraden i fältet Leveransdatum.</span><span class="sxs-lookup"><span data-stu-id="54333-123">In the delivery date field, select a date that’s one week after the date on the first delivery line.</span></span>  
+    * <span data-ttu-id="54333-124">Du kan spåra den totala kvantiteten som tilldelas till leveransplanraderna genom att visa summan och återstående fält.</span><span class="sxs-lookup"><span data-stu-id="54333-124">You can keep track of the total quantity that’s allocated to the delivery schedule lines by looking at the Total and Remaining fields.</span></span> <span data-ttu-id="54333-125">När den resterande kvantiteten är noll, har den fullständiga kvantiteten från den ursprungliga raden allokerats till tidsplaneringen.</span><span class="sxs-lookup"><span data-stu-id="54333-125">When the remaining quantity is zero, the full quantity from the original line has been allocated to the schedule.</span></span>  
+12. <span data-ttu-id="54333-126">Expandera avsnittet Konvertering av avgifter.</span><span class="sxs-lookup"><span data-stu-id="54333-126">Expand the Charges conversion section.</span></span>
+    * <span data-ttu-id="54333-127">Alternativen här låter dig kontrollera hur du vill att avgifter ska fördelas mellan leveransplanraderna.</span><span class="sxs-lookup"><span data-stu-id="54333-127">The options here allow you to control how you want charges to be distributed across the delivery schedule lines.</span></span> <span data-ttu-id="54333-128">Om du väljer Kopiera bruttobelopp, kopieras avgiftsbeloppet på den ursprungliga orderraden till varje leverandsrad.</span><span class="sxs-lookup"><span data-stu-id="54333-128">If you select Copy gross amounts, the charge amount on the original order line is copied to each delivery line.</span></span> <span data-ttu-id="54333-129">Alternativet Fördela på leveransrader delar upp den ursprungliga radavgiften enligt kvantiteten på varje leveransrad.</span><span class="sxs-lookup"><span data-stu-id="54333-129">The Allocate to delivery lines option divides the original line charge according to the quantity on each delivery line.</span></span>  
+13. <span data-ttu-id="54333-130">Komprimera avsnittet Konvertering av avgifter.</span><span class="sxs-lookup"><span data-stu-id="54333-130">Collapse the Charges conversion section.</span></span>
+14. <span data-ttu-id="54333-131">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="54333-131">Click OK.</span></span>
+    * <span data-ttu-id="54333-132">Leveransplanen har nu tillämpats på orderraderna.</span><span class="sxs-lookup"><span data-stu-id="54333-132">The delivery schedule has now been applied to the order.</span></span>  
+    * <span data-ttu-id="54333-133">Den ursprungliga orderraden som nu kallas för en kommersiell rad, har konverterats till en orderrad med flera leveranser.</span><span class="sxs-lookup"><span data-stu-id="54333-133">The original order line, now referred to as a Commercial line, has been converted to an Order line with multiple deliveries.</span></span> <span data-ttu-id="54333-134">Den markeras med en särskild ikon och fungerar som rubrik för leveransraderna.</span><span class="sxs-lookup"><span data-stu-id="54333-134">It is marked with a distinct icon and acts as a header for the delivery lines.</span></span>  
+15. <span data-ttu-id="54333-135">Välj den andra orderraden, som är den första av de två leveransraderna.</span><span class="sxs-lookup"><span data-stu-id="54333-135">Select the second order line, which is the first of the two delivery lines.</span></span>
+    * <span data-ttu-id="54333-136">De två nya raderna som kallas för leveransrader utgör en leveransplan.</span><span class="sxs-lookup"><span data-stu-id="54333-136">The two new lines, referred to as Delivery lines, make up one delivery schedule.</span></span> <span data-ttu-id="54333-137">Ordern ska bearbetas mot dessa rader och inte den ursprungliga raden.</span><span class="sxs-lookup"><span data-stu-id="54333-137">The order will be processed against these lines and not the original line.</span></span> <span data-ttu-id="54333-138">Om dokument som bekräftelser, produktinleveransjournaler eller fakturor skrivs ut, visas bara leveransraderna.</span><span class="sxs-lookup"><span data-stu-id="54333-138">If documents such as confirmations, product receipt journals, or invoices are printed, only the delivery lines are shown.</span></span>  
 
-## <a name="change-the-delivery-schedule"></a>Ändra leveransplanen
-    * Du kan ändra leveranskvantitet på leveransraderna. Om du gör detta, uppdateras den kommersiella raden automatiskt till den totala kvantiteten för leveransraden.  
-1. Ändra kvantiteten från 4 till 5 i fältet Kvantitet för den första leveransraden.
-2. Välj den första orderraden (den kommersiella raden).
-    * Kvantiteten på den kommersiella raden har ändrats till 11.  
+## <a name="change-the-delivery-schedule"></a><span data-ttu-id="54333-139">Ändra leveransplanen</span><span class="sxs-lookup"><span data-stu-id="54333-139">Change the delivery schedule</span></span>
+    * <span data-ttu-id="54333-140">Du kan ändra leveranskvantitet på leveransraderna.</span><span class="sxs-lookup"><span data-stu-id="54333-140">You can change the quantity on delivery lines.</span></span> <span data-ttu-id="54333-141">Om du gör detta, uppdateras den kommersiella raden automatiskt till den totala kvantiteten för leveransraden.</span><span class="sxs-lookup"><span data-stu-id="54333-141">If you do this, the commercial line is automatically updated to the total quantity in the delivery lines.</span></span>  
+1. <span data-ttu-id="54333-142">Ändra kvantiteten från 4 till 5 i fältet Kvantitet för den första leveransraden.</span><span class="sxs-lookup"><span data-stu-id="54333-142">In the Quantity field of the first delivery line, change the quantity from 4 to 5.</span></span>
+2. <span data-ttu-id="54333-143">Välj den första orderraden (den kommersiella raden).</span><span class="sxs-lookup"><span data-stu-id="54333-143">Select the first order line (the commercial line).</span></span>
+    * <span data-ttu-id="54333-144">Kvantiteten på den kommersiella raden har ändrats till 11.</span><span class="sxs-lookup"><span data-stu-id="54333-144">The quantity on the commercial line has been changed to 11.</span></span>  
 
-## <a name="process-product-receipt-using-delivery-schedules"></a>Bearbeta produktinleveransen med hjälp av leveransplaner
-    * Inköpsordern måste bekräftas före produktinleveransen kan bearbetas. I detta exempel registreras inleveransen direkt på inköpsordern. Inleveransen kan också ha registrerats, när varorna ankom till lagerstället.  
-1. Klicka på Inköp i åtgärdsfönstret.
-2. Klicka på Bekräfta.
-3. Klicka på Ta emot i åtgärdsfönstret.
-4. Klicka på Produktinleverans.
-5. I fältet Produktinleverans anger du ett värde.
-    * Det här fältet används för att ange en referens som ska användas som verifikation för produktinleveransjournalen.  
-    * Välj "Beställd kvantitet" i fältet Kvantitet. Det här alternativet innebär att inleverans kommer att bearbetas för den kvantitet som orderradena skapades med.  
-    * Kontrollera att fältet Skriv ut produktinleverans inte anges till Nej. Utskrift är inte nödvändigt i det här exemplet.  
-6. Expandera avsnittet Rader.
-    * Observera hur produktinleveransen skapas för de två leveransraderna och inte den ursprungliga orderraden. Om inleveransen har registrerats i lagerstället, har den också registrerats på leveransplanraderna.  
-7. Komprimera avsnittet Rader.
-8. Klicka på OK när du vill bokföra inleveransen.
+## <a name="process-product-receipt-using-delivery-schedules"></a><span data-ttu-id="54333-145">Bearbeta produktinleveransen med hjälp av leveransplaner</span><span class="sxs-lookup"><span data-stu-id="54333-145">Process product receipt using delivery schedules</span></span>
+    * <span data-ttu-id="54333-146">Inköpsordern måste bekräftas före produktinleveransen kan bearbetas.</span><span class="sxs-lookup"><span data-stu-id="54333-146">The purchase order must be confirmed before product receipt can be processed.</span></span> <span data-ttu-id="54333-147">I detta exempel registreras inleveransen direkt på inköpsordern.</span><span class="sxs-lookup"><span data-stu-id="54333-147">In this example, receipt is recorded directly on the purchase order.</span></span> <span data-ttu-id="54333-148">Inleveransen kan också ha registrerats, när varorna ankom till lagerstället.</span><span class="sxs-lookup"><span data-stu-id="54333-148">Receipt could also have been recorded when the goods arrived in the warehouse.</span></span>  
+1. <span data-ttu-id="54333-149">Klicka på Inköp i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="54333-149">On the Action Pane, click Purchase.</span></span>
+2. <span data-ttu-id="54333-150">Klicka på Bekräfta.</span><span class="sxs-lookup"><span data-stu-id="54333-150">Click Confirm.</span></span>
+3. <span data-ttu-id="54333-151">Klicka på Ta emot i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="54333-151">On the Action Pane, click Receive.</span></span>
+4. <span data-ttu-id="54333-152">Klicka på Produktinleverans.</span><span class="sxs-lookup"><span data-stu-id="54333-152">Click Product receipt.</span></span>
+5. <span data-ttu-id="54333-153">I fältet Produktinleverans anger du ett värde.</span><span class="sxs-lookup"><span data-stu-id="54333-153">In the Product receipt field, type any value.</span></span>
+    * <span data-ttu-id="54333-154">Det här fältet används för att ange en referens som ska användas som verifikation för produktinleveransjournalen.</span><span class="sxs-lookup"><span data-stu-id="54333-154">This field is used to enter a reference that will be used as voucher for the product receipt journal.</span></span>  
+    * <span data-ttu-id="54333-155">Välj "Beställd kvantitet" i fältet Kvantitet.</span><span class="sxs-lookup"><span data-stu-id="54333-155">In the Quantity field, select ‘Ordered quantity’.</span></span> <span data-ttu-id="54333-156">Det här alternativet innebär att inleverans kommer att bearbetas för den kvantitet som orderradena skapades med.</span><span class="sxs-lookup"><span data-stu-id="54333-156">This option means that receipt will process for the quantity that the order lines were created with.</span></span>  
+    * <span data-ttu-id="54333-157">Kontrollera att fältet Skriv ut produktinleverans inte anges till Nej.</span><span class="sxs-lookup"><span data-stu-id="54333-157">Make sure that the Print product receipt field is set to No.</span></span> <span data-ttu-id="54333-158">Utskrift är inte nödvändigt i det här exemplet.</span><span class="sxs-lookup"><span data-stu-id="54333-158">Printing isn’t needed in this example.</span></span>  
+6. <span data-ttu-id="54333-159">Expandera avsnittet Rader.</span><span class="sxs-lookup"><span data-stu-id="54333-159">Expand the Lines section.</span></span>
+    * <span data-ttu-id="54333-160">Observera hur produktinleveransen skapas för de två leveransraderna och inte den ursprungliga orderraden.</span><span class="sxs-lookup"><span data-stu-id="54333-160">Notice how the product receipt is created for the two delivery lines and not the original order line.</span></span> <span data-ttu-id="54333-161">Om inleveransen har registrerats i lagerstället, har den också registrerats på leveransplanraderna.</span><span class="sxs-lookup"><span data-stu-id="54333-161">If receipt had been recorded in the warehouse, it would also have been recorded on the delivery schedule lines.</span></span>  
+7. <span data-ttu-id="54333-162">Komprimera avsnittet Rader.</span><span class="sxs-lookup"><span data-stu-id="54333-162">Collapse the Lines section.</span></span>
+8. <span data-ttu-id="54333-163">Klicka på OK när du vill bokföra inleveransen.</span><span class="sxs-lookup"><span data-stu-id="54333-163">Click OK to post the receipt.</span></span>
 
 

@@ -16,52 +16,52 @@ ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 7382c5ddc5d0972c8756b64ca7cc4e62073c367e
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: e9c9811b348d81cd735c5b75ca48e0a56a8d52be
 ms.contentlocale: sv-se
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-a-free-text-invoice-template"></a>Skapa en mall för fritextfaktura
+# <a name="create-a-free-text-invoice-template"></a><span data-ttu-id="d854e-103">Skapa en mall för fritextfaktura</span><span class="sxs-lookup"><span data-stu-id="d854e-103">Create a free text invoice template</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-I den här registreringen används demonstrationsföretaget USMF. Inspelningen är avsedd för den användare som ansvarar för hantering och bearbetning av kundreskontrafakturor.
+<span data-ttu-id="d854e-104">I den här registreringen används demonstrationsföretaget USMF.</span><span class="sxs-lookup"><span data-stu-id="d854e-104">This recording uses the USMF demo company.</span></span> <span data-ttu-id="d854e-105">Inspelningen är avsedd för den användare som ansvarar för hantering och bearbetning av kundreskontrafakturor.</span><span class="sxs-lookup"><span data-stu-id="d854e-105">The recording is intended for the user who is responsible for managing and processing A/R invoices.</span></span>
 
-1. Gå till Kundreskontra > Fakturor > Återkommande fakturor > Mallar för fritextfaktura.
-    * Använd det här formuläret om du vill skapa fritextfakturamallar som kan innehålla fakturarader, avgifter, en redovisningsfördelning mall och information om redovisningskonto.  
-2. Klicka på Ny om du vill skapa en ny fritextfaktura.
-3. I fältet Mallnamn, skriv ett värde.
-    * "Mallnamn" identifierar unikt en fritextfakturamall. Två mallar kan inte ha samma ”mallnamn".  
-4. Ange en beskrivning av mallen i fältet Beskrivning.
-5. Expandera fakturaradfliken.
-6. Ange en beskrivning av fakturaraden i fältet Beskrivning.
-7. Välj ett intäktskonto i huvudkontofältet.
-    * Du kan välja mottransaktionskontot för en kundkredit för hela faktureringsbeloppet på sidan Kundbokföringsprofiler.  
-8. I fältet Momsgrupp, öppna sökningen genom att klicka på den nedrullningsbara knappen.
-    * Momsgruppen för den aktuella fakturaraden, som är standardmomsgruppen för kundkontot.  
-9. Klicka på länken på den valda raden i listan.
-10. I fältet Artikelmomsgrupp väljer du artikelmomsgruppen för den aktuella fakturaraden.
-11. Klicka på länken på den valda raden i listan.
-12. Ange eller visa pris per enhet för fakturaraden i fältet Enhetspris.
-    * Detta belopp multipliceras med värdet i fältet Kvantitet för att bestämma fakturaradbeloppet.  
-13. Lägg till en ny rad i fritextfakturamallen.
-14. Ange en beskrivning av fakturaraden i fältet Beskrivning.
-15. Välj ett intäktskonto i huvudkontofältet.
-    * Du kan välja mottransaktionskontot för en kundkredit för hela faktureringsbeloppet på sidan Kundbokföringsprofiler.  
-16. I fältet Momsgrupp, öppna sökningen genom att klicka på den nedrullningsbara knappen.
-    * Momsgruppen för den aktuella fakturaraden, som är standardmomsgruppen för kundkontot.  
-17. Klicka på länken på den valda raden i listan.
-18. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Artikelmomsgrupp.
-    * Artikelmomsgruppen för den aktuella fakturaraden.  
-19. Klicka på länken på den valda raden i listan.
-20. Ange eller visa antalet enheter för fakturaraden.
-    * Detta nummer multipliceras med värdet i fältet Enhetspris för att bestämma fakturaradbeloppet.  
-21. Ange eller visa priset per enhet för fakturaraden. 
-    * Detta belopp multipliceras med värdet i fältet Kvantitet för att bestämma fakturaradbeloppet.  
-22. Visa och ändra redovisningsfördelningarna för en enskild rad, och alla underordnade.
-    * Redovisningsfördelningar definierar hur ett belopp ska redovisas, till exempel hur intäkten, momsen eller avgifterna ska redovisas på en fritextfaktura.  
-23. Uppdatera redovisningsfördelningarna för fakturaraden.
-24. Klicka på Stäng.
+1. <span data-ttu-id="d854e-106">Gå till Kundreskontra > Fakturor > Återkommande fakturor > Mallar för fritextfaktura.</span><span class="sxs-lookup"><span data-stu-id="d854e-106">Go to Accounts receivable > Invoices > Recurring invoices > Free text invoice templates.</span></span>
+    * <span data-ttu-id="d854e-107">Använd det här formuläret om du vill skapa fritextfakturamallar som kan innehålla fakturarader, avgifter, en redovisningsfördelning mall och information om redovisningskonto.</span><span class="sxs-lookup"><span data-stu-id="d854e-107">Use this form to create free text invoice templates that can include invoice lines, charges, an accounting distribution template, and ledger account information.</span></span>  
+2. <span data-ttu-id="d854e-108">Klicka på Ny om du vill skapa en ny fritextfaktura.</span><span class="sxs-lookup"><span data-stu-id="d854e-108">Click 'New' to create a new free text invoice template.</span></span>
+3. <span data-ttu-id="d854e-109">I fältet Mallnamn, skriv ett värde.</span><span class="sxs-lookup"><span data-stu-id="d854e-109">In the Template name field, type a value.</span></span>
+    * <span data-ttu-id="d854e-110">"Mallnamn" identifierar unikt en fritextfakturamall.</span><span class="sxs-lookup"><span data-stu-id="d854e-110">‘Template name’ uniquely identifies a free text invoice template.</span></span> <span data-ttu-id="d854e-111">Två mallar kan inte ha samma ”mallnamn".</span><span class="sxs-lookup"><span data-stu-id="d854e-111">No two templates can have the same ‘Template name’.</span></span>  
+4. <span data-ttu-id="d854e-112">Ange en beskrivning av mallen i fältet Beskrivning.</span><span class="sxs-lookup"><span data-stu-id="d854e-112">In the Description field, enter a description of the template.</span></span>
+5. <span data-ttu-id="d854e-113">Expandera fakturaradfliken.</span><span class="sxs-lookup"><span data-stu-id="d854e-113">Expand the Invoice lines tab.</span></span>
+6. <span data-ttu-id="d854e-114">Ange en beskrivning av fakturaraden i fältet Beskrivning.</span><span class="sxs-lookup"><span data-stu-id="d854e-114">In the Description field, enter a description of the invoice line.</span></span>
+7. <span data-ttu-id="d854e-115">Välj ett intäktskonto i huvudkontofältet.</span><span class="sxs-lookup"><span data-stu-id="d854e-115">In the Main account field, select a revenue account.</span></span>
+    * <span data-ttu-id="d854e-116">Du kan välja mottransaktionskontot för en kundkredit för hela faktureringsbeloppet på sidan Kundbokföringsprofiler.</span><span class="sxs-lookup"><span data-stu-id="d854e-116">You can select the offset transaction account of a customer credit for the total invoice amount in the Customer posting profiles page.</span></span>  
+8. <span data-ttu-id="d854e-117">I fältet Momsgrupp, öppna sökningen genom att klicka på den nedrullningsbara knappen.</span><span class="sxs-lookup"><span data-stu-id="d854e-117">In the Sales tax group field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="d854e-118">Momsgruppen för den aktuella fakturaraden, som är standardmomsgruppen för kundkontot.</span><span class="sxs-lookup"><span data-stu-id="d854e-118">The sales tax group for the current invoice line is the default sales tax group for the customer account.</span></span>  
+9. <span data-ttu-id="d854e-119">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="d854e-119">In the list, click the link in the selected row.</span></span>
+10. <span data-ttu-id="d854e-120">I fältet Artikelmomsgrupp väljer du artikelmomsgruppen för den aktuella fakturaraden.</span><span class="sxs-lookup"><span data-stu-id="d854e-120">In the Item tax group field, select the item sales tax group for the current invoice line.</span></span>
+11. <span data-ttu-id="d854e-121">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="d854e-121">In the list, click the link in the selected row.</span></span>
+12. <span data-ttu-id="d854e-122">Ange eller visa pris per enhet för fakturaraden i fältet Enhetspris.</span><span class="sxs-lookup"><span data-stu-id="d854e-122">In the Unit price field, enter or view the price per unit for the invoice line</span></span>
+    * <span data-ttu-id="d854e-123">Detta belopp multipliceras med värdet i fältet Kvantitet för att bestämma fakturaradbeloppet.</span><span class="sxs-lookup"><span data-stu-id="d854e-123">This amount is multiplied by the Quantity field to determine the invoice line amount.</span></span>  
+13. <span data-ttu-id="d854e-124">Lägg till en ny rad i fritextfakturamallen.</span><span class="sxs-lookup"><span data-stu-id="d854e-124">Add a new line to free text invoice template.</span></span>
+14. <span data-ttu-id="d854e-125">Ange en beskrivning av fakturaraden i fältet Beskrivning.</span><span class="sxs-lookup"><span data-stu-id="d854e-125">In the Description field, enter a description of the invoice line.</span></span>
+15. <span data-ttu-id="d854e-126">Välj ett intäktskonto i huvudkontofältet.</span><span class="sxs-lookup"><span data-stu-id="d854e-126">In the Main account field, select a revenue account.</span></span>
+    * <span data-ttu-id="d854e-127">Du kan välja mottransaktionskontot för en kundkredit för hela faktureringsbeloppet på sidan Kundbokföringsprofiler.</span><span class="sxs-lookup"><span data-stu-id="d854e-127">You can select the offset transaction account of a customer credit for the total invoice amount in the Customer posting profiles page.</span></span>  
+16. <span data-ttu-id="d854e-128">I fältet Momsgrupp, öppna sökningen genom att klicka på den nedrullningsbara knappen.</span><span class="sxs-lookup"><span data-stu-id="d854e-128">In the Sales tax group field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="d854e-129">Momsgruppen för den aktuella fakturaraden, som är standardmomsgruppen för kundkontot.</span><span class="sxs-lookup"><span data-stu-id="d854e-129">The sales tax group for the current invoice line is the default sales tax group for the customer account.</span></span>  
+17. <span data-ttu-id="d854e-130">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="d854e-130">In the list, click the link in the selected row.</span></span>
+18. <span data-ttu-id="d854e-131">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Artikelmomsgrupp.</span><span class="sxs-lookup"><span data-stu-id="d854e-131">In the Item sales tax group field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="d854e-132">Artikelmomsgruppen för den aktuella fakturaraden.</span><span class="sxs-lookup"><span data-stu-id="d854e-132">The item sales tax group for the current invoice line.</span></span>  
+19. <span data-ttu-id="d854e-133">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="d854e-133">In the list, click the link in the selected row.</span></span>
+20. <span data-ttu-id="d854e-134">Ange eller visa antalet enheter för fakturaraden.</span><span class="sxs-lookup"><span data-stu-id="d854e-134">Enter or view the number of units for the invoice line</span></span>
+    * <span data-ttu-id="d854e-135">Detta nummer multipliceras med värdet i fältet Enhetspris för att bestämma fakturaradbeloppet.</span><span class="sxs-lookup"><span data-stu-id="d854e-135">This number is multiplied by the value in the Unit price field to determine the invoice line amount.</span></span>  
+21. <span data-ttu-id="d854e-136">Ange eller visa priset per enhet för fakturaraden.</span><span class="sxs-lookup"><span data-stu-id="d854e-136">Enter or view the price per unit for the invoice line.</span></span> 
+    * <span data-ttu-id="d854e-137">Detta belopp multipliceras med värdet i fältet Kvantitet för att bestämma fakturaradbeloppet.</span><span class="sxs-lookup"><span data-stu-id="d854e-137">This amount is multiplied by the value in the Quantity field to determine the invoice line amount.</span></span>  
+22. <span data-ttu-id="d854e-138">Visa och ändra redovisningsfördelningarna för en enskild rad, och alla underordnade.</span><span class="sxs-lookup"><span data-stu-id="d854e-138">View and modify the accounting distributions for an individual line and any child lines.</span></span>
+    * <span data-ttu-id="d854e-139">Redovisningsfördelningar definierar hur ett belopp ska redovisas, till exempel hur intäkten, momsen eller avgifterna ska redovisas på en fritextfaktura.</span><span class="sxs-lookup"><span data-stu-id="d854e-139">Accounting distributions define how an amount will be accounted for, such as how the revenue, tax, or charges will be accounted for on a free text invoice.</span></span>  
+23. <span data-ttu-id="d854e-140">Uppdatera redovisningsfördelningarna för fakturaraden.</span><span class="sxs-lookup"><span data-stu-id="d854e-140">Update the accounting distributions for the selected invoice line.</span></span>
+24. <span data-ttu-id="d854e-141">Klicka på Stäng.</span><span class="sxs-lookup"><span data-stu-id="d854e-141">Click Close.</span></span>
 
 

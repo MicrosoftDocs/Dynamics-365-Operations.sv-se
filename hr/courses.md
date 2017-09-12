@@ -19,124 +19,124 @@ ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 095f41c35641834a1ed8ac2527c7014826921376
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: 0ab79e85872c19e30f24e182ea483687ecc0bc09
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 06/29/2017
 
 
 ---
 
-# <a name="set-up-training-courses"></a>Ställa in utbildningskurser
+# <a name="set-up-training-courses"></a><span data-ttu-id="30949-103">Ställa in utbildningskurser</span><span class="sxs-lookup"><span data-stu-id="30949-103">Set up training courses</span></span>
 
 [!include[banner](includes/banner.md)]
 
 
-Personalresursadministratörer och chefer kan använda kursfunktionerna för att underhålla information om utbildningen som ges till arbetare.
+<span data-ttu-id="30949-104">Personalresursadministratörer och chefer kan använda kursfunktionerna för att underhålla information om utbildningen som ges till arbetare.</span><span class="sxs-lookup"><span data-stu-id="30949-104">Human resources administrators and managers can use the courses features to maintain information about the training that's offered to workers.</span></span>
 
- <a name="set-up-prerequisites"></a> Konfigurera krav
+ <a name="set-up-prerequisites"></a><span data-ttu-id="30949-105"> Konfigurera krav</span><span class="sxs-lookup"><span data-stu-id="30949-105">Set up prerequisites</span></span>
 ---------------------
 
-Följande information krävs och måste ställas in innan du skapar kurser.
--   **Kurstyper**
+<span data-ttu-id="30949-106">Följande information krävs och måste ställas in innan du skapar kurser.</span><span class="sxs-lookup"><span data-stu-id="30949-106">The following information is required and must be set up before you create courses.</span></span>
+-   <span data-ttu-id="30949-107">**Kurstyper**</span><span class="sxs-lookup"><span data-stu-id="30949-107">**Course types**</span></span>
 
-Följande information är valfri information som du kan ange för kurser. Om du vet att du ska ange denna information för kurser, ska du ställa in informationen, innan du skapar kursposter.
--   **Klassrumsgrupper**
--   **Kursgrupper**
--   **Kursplatser**
--   **Klassrum**
--   **Lärare**
+<span data-ttu-id="30949-108">Följande information är valfri information som du kan ange för kurser.</span><span class="sxs-lookup"><span data-stu-id="30949-108">The following information is optional information that you can specify for courses.</span></span> <span data-ttu-id="30949-109">Om du vet att du ska ange denna information för kurser, ska du ställa in informationen, innan du skapar kursposter.</span><span class="sxs-lookup"><span data-stu-id="30949-109">If you know that you will be entering this information for courses, you should set up this information before you create course records.</span></span>
+-   <span data-ttu-id="30949-110">**Klassrumsgrupper**</span><span class="sxs-lookup"><span data-stu-id="30949-110">**Classroom groups**</span></span>
+-   <span data-ttu-id="30949-111">**Kursgrupper**</span><span class="sxs-lookup"><span data-stu-id="30949-111">**Course groups**</span></span>
+-   <span data-ttu-id="30949-112">**Kursplatser**</span><span class="sxs-lookup"><span data-stu-id="30949-112">**Course locations**</span></span>
+-   <span data-ttu-id="30949-113">**Klassrum**</span><span class="sxs-lookup"><span data-stu-id="30949-113">**Classrooms**</span></span>
+-   <span data-ttu-id="30949-114">**Lärare**</span><span class="sxs-lookup"><span data-stu-id="30949-114">**Instructors**</span></span>
 
-## <a name="course-types"></a>Kurstyper
-Du kan använda kurstyper för att kategorisera kurser enligt strukturen eller innehållet i kursen. Du kan skapa kurstyper på sidan **Kurstyper**. Du måste välja en kurstyp när du skapar en kurspost.
+## <a name="course-types"></a><span data-ttu-id="30949-115">Kurstyper</span><span class="sxs-lookup"><span data-stu-id="30949-115">Course types</span></span>
+<span data-ttu-id="30949-116">Du kan använda kurstyper för att kategorisera kurser enligt strukturen eller innehållet i kursen.</span><span class="sxs-lookup"><span data-stu-id="30949-116">You can use course types to categorize courses according to the structure or content of the course.</span></span> <span data-ttu-id="30949-117">Du kan skapa kurstyper på sidan **Kurstyper**.</span><span class="sxs-lookup"><span data-stu-id="30949-117">You can create course types on the **Course types** page.</span></span> <span data-ttu-id="30949-118">Du måste välja en kurstyp när du skapar en kurspost.</span><span class="sxs-lookup"><span data-stu-id="30949-118">You must select a course type when you create a course record.</span></span>
 
-## <a name="course-setup-type"></a>Kursinställningstyp
-Följande tabell listar de tre inställningstyperna för kurser. Inställningstyper bestämmer strukturen för kursen.
+## <a name="course-setup-type"></a><span data-ttu-id="30949-119">Kursinställningstyp</span><span class="sxs-lookup"><span data-stu-id="30949-119">Course setup type</span></span>
+<span data-ttu-id="30949-120">Följande tabell listar de tre inställningstyperna för kurser.</span><span class="sxs-lookup"><span data-stu-id="30949-120">The following table lists the three setup types for courses.</span></span> <span data-ttu-id="30949-121">Inställningstyper bestämmer strukturen för kursen.</span><span class="sxs-lookup"><span data-stu-id="30949-121">Setup types determine the structure of the course.</span></span>
 
 <table>
 <thead>
 <tr class="header">
-<th>Inställningstyp</th>
-<th>Beskrivning</th>
+<th><span data-ttu-id="30949-122">Inställningstyp</span><span class="sxs-lookup"><span data-stu-id="30949-122">Setup type</span></span></th>
+<th><span data-ttu-id="30949-123">Beskrivning</span><span class="sxs-lookup"><span data-stu-id="30949-123">Description</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong>Standard</strong></td>
-<td>Välj den här typen för kurser som inte ska ha en daglig agenda. Detta är standardinställningen när du skapar en ny kurs.</td>
+<td><span data-ttu-id="30949-124"><strong>Standard</strong></span><span class="sxs-lookup"><span data-stu-id="30949-124"><strong>Standard</strong></span></span></td>
+<td><span data-ttu-id="30949-125">Välj den här typen för kurser som inte ska ha en daglig agenda.</span><span class="sxs-lookup"><span data-stu-id="30949-125">Select this type for courses that will not have a daily agenda.</span></span> <span data-ttu-id="30949-126">Detta är standardinställningen när du skapar en ny kurs.</span><span class="sxs-lookup"><span data-stu-id="30949-126">This is the default setup type when you create a new course.</span></span></td>
 </tr>
 <tr class="even">
-<td><strong>Agenda</strong></td>
-<td>Välj den här typen för att planera information om varje dag i en kurs som hålls över flera dagar.</td>
+<td><span data-ttu-id="30949-127"><strong>Agenda</strong></span><span class="sxs-lookup"><span data-stu-id="30949-127"><strong>Agenda</strong></span></span></td>
+<td><span data-ttu-id="30949-128">Välj den här typen för att planera information om varje dag i en kurs som hålls över flera dagar.</span><span class="sxs-lookup"><span data-stu-id="30949-128">Select this type to plan the details of each day of a course that takes place over multiple days.</span></span></td>
 </tr>
 <tr class="odd">
-<td><strong>Agenda + session</strong></td>
-<td>Välj den här typen för mer komplexa de kurser. Du kan till exempel dela in kursprogrammet i spårningar och sessioner.
+<td><span data-ttu-id="30949-129"><strong>Agenda + session</strong></span><span class="sxs-lookup"><span data-stu-id="30949-129"><strong>Agenda + session</strong></span></span></td>
+<td><span data-ttu-id="30949-130">Välj den här typen för mer komplexa de kurser.</span><span class="sxs-lookup"><span data-stu-id="30949-130">Select this type for the more complex courses.</span></span> <span data-ttu-id="30949-131">Du kan till exempel dela in kursprogrammet i spårningar och sessioner.</span><span class="sxs-lookup"><span data-stu-id="30949-131">For example, you can divide the agenda for the course into tracks and sessions.</span></span>
 <ul>
-<li><strong>Spår</strong> – Spår är specifika ämnesområden för en kurs.</li>
-<li><strong>Sessioner</strong> – Sessioner används för att dela upp spår och kan omfatta specifika processer eller tekniker som är relevanta för varje spår.</li>
+<li><span data-ttu-id="30949-132"><strong>Spår</strong> – Spår är specifika ämnesområden för en kurs.</span><span class="sxs-lookup"><span data-stu-id="30949-132"><strong>Track</strong> – Tracks are specific subject areas for a course.</span></span></li>
+<li><span data-ttu-id="30949-133"><strong>Sessioner</strong> – Sessioner används för att dela upp spår och kan omfatta specifika processer eller tekniker som är relevanta för varje spår.</span><span class="sxs-lookup"><span data-stu-id="30949-133"><strong>Sessions</strong> – Sessions divide up tracks and help identify specific processes or techniques that are relevant to the track.</span></span></li>
 </ul></td>
 </tr>
 </tbody>
 </table>
 
-## <a name="course-tasks"></a>Kursuppgifter
-Du kan utföra följande uppgifter för varje kurs.
--   Registrera deltagare
--   Ange en deadline för registreringen
--   Ange lägsta och högsta antal deltagare
--   Tilldela en plats och ett klassrum för kursen
--   Rekommendera hotell för kursdeltagare
--   Skapa en kursbeskrivning som du sedan kan annonsera på Självbetjäning för medarbetare
+## <a name="course-tasks"></a><span data-ttu-id="30949-134">Kursuppgifter</span><span class="sxs-lookup"><span data-stu-id="30949-134">Course tasks</span></span>
+<span data-ttu-id="30949-135">Du kan utföra följande uppgifter för varje kurs.</span><span class="sxs-lookup"><span data-stu-id="30949-135">For each course, you can complete the following tasks.</span></span>
+-   <span data-ttu-id="30949-136">Registrera deltagare</span><span class="sxs-lookup"><span data-stu-id="30949-136">Register participants</span></span>
+-   <span data-ttu-id="30949-137">Ange en deadline för registreringen</span><span class="sxs-lookup"><span data-stu-id="30949-137">Specify a registration deadline</span></span>
+-   <span data-ttu-id="30949-138">Ange lägsta och högsta antal deltagare</span><span class="sxs-lookup"><span data-stu-id="30949-138">Define the minimum and maximum number of participants</span></span>
+-   <span data-ttu-id="30949-139">Tilldela en plats och ett klassrum för kursen</span><span class="sxs-lookup"><span data-stu-id="30949-139">Assign a course location and classroom</span></span>
+-   <span data-ttu-id="30949-140">Rekommendera hotell för kursdeltagare</span><span class="sxs-lookup"><span data-stu-id="30949-140">Recommend hotels to course participants</span></span>
+-   <span data-ttu-id="30949-141">Skapa en kursbeskrivning som du sedan kan annonsera på Självbetjäning för medarbetare</span><span class="sxs-lookup"><span data-stu-id="30949-141">Create a course description, which you can then advertise on Employee self service</span></span>
 
-  >**Obs!** Du kan bara ta bort en kurs om ingen har registrerat sig för den. 
+  ><span data-ttu-id="30949-142">**Obs!** Du kan bara ta bort en kurs om ingen har registrerat sig för den.</span><span class="sxs-lookup"><span data-stu-id="30949-142">**Note** You can delete a course only if no one has registered for it.</span></span> 
     
-## <a name="course-statuses"></a>Kursstatus
-Följande tabell listar möjliga kursstatusvärden och de åtgärder som du kan utföra när kursen har en viss status.
+## <a name="course-statuses"></a><span data-ttu-id="30949-143">Kursstatus</span><span class="sxs-lookup"><span data-stu-id="30949-143">Course statuses</span></span>
+<span data-ttu-id="30949-144">Följande tabell listar möjliga kursstatusvärden och de åtgärder som du kan utföra när kursen har en viss status.</span><span class="sxs-lookup"><span data-stu-id="30949-144">The following table lists the possible course statuses and the actions that you can complete when the course has a specific status.</span></span>
 
 <table>
 <thead>
 <tr class="header">
-<th>Status</th>
-<th>Åtgärder</th>
+<th><span data-ttu-id="30949-145">Status</span><span class="sxs-lookup"><span data-stu-id="30949-145">Status</span></span></th>
+<th><span data-ttu-id="30949-146">Åtgärder</span><span class="sxs-lookup"><span data-stu-id="30949-146">Actions</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong>Skapad</strong></td>
+<td><span data-ttu-id="30949-147"><strong>Skapad</strong></span><span class="sxs-lookup"><span data-stu-id="30949-147"><strong>Created</strong></span></span></td>
 <td><ul>
-<li>Ange och ändra kursinformation.</li>
-<li>Ändra kursstatus till <strong>Öppen</strong> så att arbetare kan registrera sig för kursen.</li>
+<li><span data-ttu-id="30949-148">Ange och ändra kursinformation.</span><span class="sxs-lookup"><span data-stu-id="30949-148">Enter and modify course information.</span></span></li>
+<li><span data-ttu-id="30949-149">Ändra kursstatus till <strong>Öppen</strong> så att arbetare kan registrera sig för kursen.</span><span class="sxs-lookup"><span data-stu-id="30949-149">Change the course status to <strong>Open</strong> so that workers can register for the course.</span></span></li>
 </ul></td>
 </tr>
 <tr class="even">
-<td><strong>Öppna</strong></td>
+<td><span data-ttu-id="30949-150"><strong>Öppna</strong></span><span class="sxs-lookup"><span data-stu-id="30949-150"><strong>Open</strong></span></span></td>
 <td><ul>
-<li>Registrera deltagare till kursen.</li>
-<li>Ta bort deltagare från kursen.</li>
-<li>Bekräfta deltagare för kursen.</li>
-<li>Ändra kursens status till <strong>Stängd</strong> eller <strong>Inställd</strong>.</li>
-<li>Planera enkäter för deltagare vilkas status är <strong>Bekräftad</strong>.</li>
+<li><span data-ttu-id="30949-151">Registrera deltagare till kursen.</span><span class="sxs-lookup"><span data-stu-id="30949-151">Register participants for the course.</span></span></li>
+<li><span data-ttu-id="30949-152">Ta bort deltagare från kursen.</span><span class="sxs-lookup"><span data-stu-id="30949-152">Remove participants from the course.</span></span></li>
+<li><span data-ttu-id="30949-153">Bekräfta deltagare för kursen.</span><span class="sxs-lookup"><span data-stu-id="30949-153">Confirm participants for the course.</span></span></li>
+<li><span data-ttu-id="30949-154">Ändra kursens status till <strong>Stängd</strong> eller <strong>Inställd</strong>.</span><span class="sxs-lookup"><span data-stu-id="30949-154">Change the course status to <strong>Closed</strong> or <strong>Canceled</strong>.</span></span></li>
+<li><span data-ttu-id="30949-155">Planera enkäter för deltagare vilkas status är <strong>Bekräftad</strong>.</span><span class="sxs-lookup"><span data-stu-id="30949-155">Plan questionnaires for participants whose status is <strong>Confirmed</strong>.</span></span></li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td><strong>Stängt</strong></td>
-<td>Du kan öppna kursen igen.</td>
+<td><span data-ttu-id="30949-156"><strong>Stängt</strong></span><span class="sxs-lookup"><span data-stu-id="30949-156"><strong>Closed</strong></span></span></td>
+<td><span data-ttu-id="30949-157">Du kan öppna kursen igen.</span><span class="sxs-lookup"><span data-stu-id="30949-157">You can reopen the course.</span></span></td>
 </tr>
 <tr class="even">
-<td><strong>Avbrutna</strong></td>
-<td>Du kan öppna kursen igen.</td>
+<td><span data-ttu-id="30949-158"><strong>Avbrutna</strong></span><span class="sxs-lookup"><span data-stu-id="30949-158"><strong>Canceled</strong></span></span></td>
+<td><span data-ttu-id="30949-159">Du kan öppna kursen igen.</span><span class="sxs-lookup"><span data-stu-id="30949-159">You can reopen the course.</span></span></td>
 </tr>
 </tbody>
 </table>
 
-## <a name="course-participants"></a>Kursdeltagare
-Kursdeltagare är arbetare, sökanden eller kontaktpersoner som deltar i en utbildningskurs eller en händelse. Du kan bara registrera deltagare för öppna kurser. Det minsta och det högsta antalet deltagare som du kan registrera för en kurs definieras på snabbfliken **Allmänt** på sidan **Kurser**.
+## <a name="course-participants"></a><span data-ttu-id="30949-160">Kursdeltagare</span><span class="sxs-lookup"><span data-stu-id="30949-160">Course participants</span></span>
+<span data-ttu-id="30949-161">Kursdeltagare är arbetare, sökanden eller kontaktpersoner som deltar i en utbildningskurs eller en händelse.</span><span class="sxs-lookup"><span data-stu-id="30949-161">Course participants are workers, applicants, or contact persons who participate in a training course or event.</span></span> <span data-ttu-id="30949-162">Du kan bara registrera deltagare för öppna kurser.</span><span class="sxs-lookup"><span data-stu-id="30949-162">You can only register participants for open courses.</span></span> <span data-ttu-id="30949-163">Det minsta och det högsta antalet deltagare som du kan registrera för en kurs definieras på snabbfliken **Allmänt** på sidan **Kurser**.</span><span class="sxs-lookup"><span data-stu-id="30949-163">The minimum and maximum number of participants that you can register for a course is defined on the **General** FastTab on the **Courses** page.</span></span>
 
-<a name="workflow"></a>Arbetsflöde
+<a name="workflow"></a><span data-ttu-id="30949-164">Arbetsflöde</span><span class="sxs-lookup"><span data-stu-id="30949-164">Workflow</span></span>
 --------
 
-Medarbetare som registrerar sig för en kurs via sidan **Självbetjäning för medarbetare** kan få sin registrering skickad via arbetsflödet för godkännande.  Ett arbetsflöde kan tilldelas till en kurs i snabbfliken **Allmänt** på sidan **Kurser**.
+<span data-ttu-id="30949-165">Medarbetare som registrerar sig för en kurs via sidan **Självbetjäning för medarbetare** kan få sin registrering skickad via arbetsflödet för godkännande.</span><span class="sxs-lookup"><span data-stu-id="30949-165">Employees who register for a course through the **Employee self service** page can have their registration routed through workflow for approval.</span></span>  <span data-ttu-id="30949-166">Ett arbetsflöde kan tilldelas till en kurs i snabbfliken **Allmänt** på sidan **Kurser**.</span><span class="sxs-lookup"><span data-stu-id="30949-166">A workflow can be assigned to a course on the **General** FastTab on the **Courses** page.</span></span>
 
 
 

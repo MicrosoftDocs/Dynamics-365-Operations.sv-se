@@ -16,91 +16,91 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 14eed7982041b7af7dad5453b10f07f063ba1855
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: d97ccd15031b2f7398486eee4a716ecef5e9dafd
 ms.contentlocale: sv-se
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-a-requisition-that-uses-an-rfq"></a>Skapa en rekvisition som använder en anbudsförfrågan
+# <a name="create-a-requisition-that-uses-an-rfq"></a><span data-ttu-id="83cd1-103">Skapa en rekvisition som använder en anbudsförfrågan</span><span class="sxs-lookup"><span data-stu-id="83cd1-103">Create a requisition that uses an RFQ</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Den här handboken visar hur du lägger till pris- och leverantörsinformation till en inköpsrekvisition från en anbudsförfråganprocess. De exempel som visas i den här handboken kan användas i demoföretaget USMF och du måste vara inloggad som administratör för att utföra alla steg. Uppgifterna i den här handboken utförs normalt av anskaffningsproffs.
+<span data-ttu-id="83cd1-104">Den här handboken visar hur du lägger till pris- och leverantörsinformation till en inköpsrekvisition från en anbudsförfråganprocess.</span><span class="sxs-lookup"><span data-stu-id="83cd1-104">This guide shows how to add price and vendor information to a purchase requisition from an RFQ process.</span></span> <span data-ttu-id="83cd1-105">De exempel som visas i den här handboken kan användas i demoföretaget USMF och du måste vara inloggad som administratör för att utföra alla steg.</span><span class="sxs-lookup"><span data-stu-id="83cd1-105">The example shown in this guide can be used in the USMF demo data company, and you must be logged in as an Admin to complete all the steps.</span></span> <span data-ttu-id="83cd1-106">Uppgifterna i den här handboken utförs normalt av anskaffningsproffs.</span><span class="sxs-lookup"><span data-stu-id="83cd1-106">The tasks in this guide would typically be done by procurement professionals.</span></span>
 
 
-## <a name="create-a-requisition"></a>Skapaen rekvisition
-1. Gå till Anskaffning och källa > Inköpsrekvisitioner > Inköpsrekvisitioner som har förberetts av mig.
-2. Klicka på Ny.
-3. Skriv ett värde i fältet Namn.
-4. Ange ett datum i fältet Begärt datum.
-5. Ange ett datum i fältet Redovisningsdatum.
-6. Klicka på OK.
-7. Ange eller välj ett värde i fältet Orsak.
-8. Klicka på Lägg till rad.
-9. I fältet Anskaffningkategori väljer du kategori i trädet och klickar på OK.
-10. Skriv ett värde i fältet Produktnamn.
-11. Ange ett tal i fältet Kvantitet.
-12. Ange eller välj ett värde i fältet Enhet.
-13. Klicka på Spara.
-14. Klicka på Arbetsflöde för att öppna dialogrutan.
-15. Klicka på Skicka.
-16. Stäng sidan.
-17. Klicka på Skicka.
+## <a name="create-a-requisition"></a><span data-ttu-id="83cd1-107">Skapaen rekvisition</span><span class="sxs-lookup"><span data-stu-id="83cd1-107">Create a requisition</span></span>
+1. <span data-ttu-id="83cd1-108">Gå till Anskaffning och källa > Inköpsrekvisitioner > Inköpsrekvisitioner som har förberetts av mig.</span><span class="sxs-lookup"><span data-stu-id="83cd1-108">Go to Procurement and sourcing > Purchase requisitions > Purchase requisitions prepared by me.</span></span>
+2. <span data-ttu-id="83cd1-109">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="83cd1-109">Click New.</span></span>
+3. <span data-ttu-id="83cd1-110">Skriv ett värde i fältet Namn.</span><span class="sxs-lookup"><span data-stu-id="83cd1-110">In the Name field, type a value.</span></span>
+4. <span data-ttu-id="83cd1-111">Ange ett datum i fältet Begärt datum.</span><span class="sxs-lookup"><span data-stu-id="83cd1-111">In the Requested date field, enter a date.</span></span>
+5. <span data-ttu-id="83cd1-112">Ange ett datum i fältet Redovisningsdatum.</span><span class="sxs-lookup"><span data-stu-id="83cd1-112">In the Accounting date field, enter a date.</span></span>
+6. <span data-ttu-id="83cd1-113">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="83cd1-113">Click OK.</span></span>
+7. <span data-ttu-id="83cd1-114">Ange eller välj ett värde i fältet Orsak.</span><span class="sxs-lookup"><span data-stu-id="83cd1-114">In the Reason field, enter or select a value.</span></span>
+8. <span data-ttu-id="83cd1-115">Klicka på Lägg till rad.</span><span class="sxs-lookup"><span data-stu-id="83cd1-115">Click Add line.</span></span>
+9. <span data-ttu-id="83cd1-116">I fältet Anskaffningkategori väljer du kategori i trädet och klickar på OK.</span><span class="sxs-lookup"><span data-stu-id="83cd1-116">In the Procurement category field, select a category in the tree, and then click OK.</span></span>
+10. <span data-ttu-id="83cd1-117">Skriv ett värde i fältet Produktnamn.</span><span class="sxs-lookup"><span data-stu-id="83cd1-117">In the Product name field, type a value.</span></span>
+11. <span data-ttu-id="83cd1-118">Ange ett tal i fältet Kvantitet.</span><span class="sxs-lookup"><span data-stu-id="83cd1-118">In the Quantity field, enter a number.</span></span>
+12. <span data-ttu-id="83cd1-119">Ange eller välj ett värde i fältet Enhet.</span><span class="sxs-lookup"><span data-stu-id="83cd1-119">In the Unit field, enter or select a value.</span></span>
+13. <span data-ttu-id="83cd1-120">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="83cd1-120">Click Save.</span></span>
+14. <span data-ttu-id="83cd1-121">Klicka på Arbetsflöde för att öppna dialogrutan.</span><span class="sxs-lookup"><span data-stu-id="83cd1-121">Click Workflow to open the drop dialog.</span></span>
+15. <span data-ttu-id="83cd1-122">Klicka på Skicka.</span><span class="sxs-lookup"><span data-stu-id="83cd1-122">Click Submit.</span></span>
+16. <span data-ttu-id="83cd1-123">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="83cd1-123">Close the page.</span></span>
+17. <span data-ttu-id="83cd1-124">Klicka på Skicka.</span><span class="sxs-lookup"><span data-stu-id="83cd1-124">Click Submit.</span></span>
 
-## <a name="reassign-a-workflow-task"></a>Tilldela om en arbetsflödesuppgift
-    * Nästa uppgift är att skapa en anbudsförfrågan för att få bud från leverantörer för produkten. I USMF-demonstrationdata ställs rekvisitionarbetsflödet in med en regel så att om en leverantör inte är markerad, eller om priset per enhet är 0 för en rad, tilldelas en uppgift till en särskild arbetare för att skapa en anbudsförfrågan. Om du vill fortsätta med den här guiden måste du tilldela om den uppgiften igen till en annan användare (dig själv). Du kan bara göra detta om du är inloggad som administratör.  
-1. Klicka på Arbetsflöde för att öppna dialogrutan.
-2. Klicka på Visa historik.
-3. Uppdatera sidan.
-4. Expandera avsnittet Spårningsuppgifter.
-5. Välj ”raden som startar med ”Arbetsflödet för rad aktiverat på” i trädet.
-6. Klicka på Visa information om arbetsflöde.
-7. Expandera avsnittet Arbetsuppgifter.
-8. Klicka på Tilldela om.
-9. Välj Administraör i fältet Användare.
-10. Klicka på Tilldela om.
-11. Stäng sidan.
-12. Stäng sidan.
+## <a name="reassign-a-workflow-task"></a><span data-ttu-id="83cd1-125">Tilldela om en arbetsflödesuppgift</span><span class="sxs-lookup"><span data-stu-id="83cd1-125">Reassign a workflow task</span></span>
+    * <span data-ttu-id="83cd1-126">Nästa uppgift är att skapa en anbudsförfrågan för att få bud från leverantörer för produkten.</span><span class="sxs-lookup"><span data-stu-id="83cd1-126">The next task is to create an RFQ to get bids from vendors for the product.</span></span> <span data-ttu-id="83cd1-127">I USMF-demonstrationdata ställs rekvisitionarbetsflödet in med en regel så att om en leverantör inte är markerad, eller om priset per enhet är 0 för en rad, tilldelas en uppgift till en särskild arbetare för att skapa en anbudsförfrågan.</span><span class="sxs-lookup"><span data-stu-id="83cd1-127">In USMF demo data, the requisition workflow is set up with a rule so that if a vendor is not selected, or the unit price is 0 for a line, a task is assigned to a specific worker to create an RFQ.</span></span> <span data-ttu-id="83cd1-128">Om du vill fortsätta med den här guiden måste du tilldela om den uppgiften igen till en annan användare (dig själv).</span><span class="sxs-lookup"><span data-stu-id="83cd1-128">To continue with this guide, you need to re-assign that task to another user (yourself).</span></span> <span data-ttu-id="83cd1-129">Du kan bara göra detta om du är inloggad som administratör.</span><span class="sxs-lookup"><span data-stu-id="83cd1-129">You can only do this if you are logged in as an Admin.</span></span>  
+1. <span data-ttu-id="83cd1-130">Klicka på Arbetsflöde för att öppna dialogrutan.</span><span class="sxs-lookup"><span data-stu-id="83cd1-130">Click Workflow to open the drop dialog.</span></span>
+2. <span data-ttu-id="83cd1-131">Klicka på Visa historik.</span><span class="sxs-lookup"><span data-stu-id="83cd1-131">Click View history.</span></span>
+3. <span data-ttu-id="83cd1-132">Uppdatera sidan.</span><span class="sxs-lookup"><span data-stu-id="83cd1-132">Refresh the page.</span></span>
+4. <span data-ttu-id="83cd1-133">Expandera avsnittet Spårningsuppgifter.</span><span class="sxs-lookup"><span data-stu-id="83cd1-133">Expand the Tracking details section.</span></span>
+5. <span data-ttu-id="83cd1-134">Välj ”raden som startar med ”Arbetsflödet för rad aktiverat på” i trädet.</span><span class="sxs-lookup"><span data-stu-id="83cd1-134">In the tree, select 'the line that starts with “Line workflow activated on”'.</span></span>
+6. <span data-ttu-id="83cd1-135">Klicka på Visa information om arbetsflöde.</span><span class="sxs-lookup"><span data-stu-id="83cd1-135">Click View workflow details.</span></span>
+7. <span data-ttu-id="83cd1-136">Expandera avsnittet Arbetsuppgifter.</span><span class="sxs-lookup"><span data-stu-id="83cd1-136">Expand the Work items section.</span></span>
+8. <span data-ttu-id="83cd1-137">Klicka på Tilldela om.</span><span class="sxs-lookup"><span data-stu-id="83cd1-137">Click Reassign.</span></span>
+9. <span data-ttu-id="83cd1-138">Välj Administraör i fältet Användare.</span><span class="sxs-lookup"><span data-stu-id="83cd1-138">In the User field, select Admin.</span></span>
+10. <span data-ttu-id="83cd1-139">Klicka på Tilldela om.</span><span class="sxs-lookup"><span data-stu-id="83cd1-139">Click Reassign.</span></span>
+11. <span data-ttu-id="83cd1-140">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="83cd1-140">Close the page.</span></span>
+12. <span data-ttu-id="83cd1-141">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="83cd1-141">Close the page.</span></span>
 
-## <a name="create-an-rfq"></a>Skapa en anbudsförfrågan
-1. Uppdatera sidan.
-2. Klicka på Anbudsförfrågan.
-3. Välj USMF i fältet Juridisk person för inköp.
-    * Du måste välja samma juridiska person som finns på rekvisitionraden.  
-4. Markera vald rad i listan.
-    * Om du har flera rader i din inköpsrekvisition, markerar du alla rader som du vill lägga till i anbudsförfrågan.  
-5. Klicka på OK.
-6. Uppdatera sidan.
-7. Öppna faktaboxen och expandera sedan avsnittet Relaterade dokument.
-    * Du kanske redan har faktaboxen öppen. Sök efter ikonen med en pil till höger om växlingsknapparna rader/rubrik. Om pilen pekar till höger är faktaboxen redan öppen. Om pilen pekar åt vänster klickar du på den för att öppna faktaboxen.  
-8. Klicka på länken i fältet Anbudsförfrågan för att öppna anbudsförfrågan som just har skapats.
-9. Klicka på Rubrik.
-10. Klicka på Lägg till.
-11. Ange eller välj ett värde i fältet Leverantörskonto.
-12. Klicka på Lägg till.
-13. Ange eller välj ett värde i fältet Leverantörskonto.
-14. Klicka på Skicka.
-15. Klicka på OK.
-16. Klicka på Ange svar.
-17. Klicka på Svar i åtgärdsfönstret.
-18. Klicka på Kopiera data för att svara.
-    * Då kopieras data, till exempel kvantitet och datum, från anbudsförfrågan till svaret.  
-19. Ange ett tal i fältet Enhetspris.
-    * Detta är priset som du har tagit emot från leverantören. Du kanske också vill ange ytterligare information från leverantören.  
-20. Klicka på Godkänn.
-21. Klicka på OK.
+## <a name="create-an-rfq"></a><span data-ttu-id="83cd1-142">Skapa en anbudsförfrågan</span><span class="sxs-lookup"><span data-stu-id="83cd1-142">Create an RFQ</span></span>
+1. <span data-ttu-id="83cd1-143">Uppdatera sidan.</span><span class="sxs-lookup"><span data-stu-id="83cd1-143">Refresh the page.</span></span>
+2. <span data-ttu-id="83cd1-144">Klicka på Anbudsförfrågan.</span><span class="sxs-lookup"><span data-stu-id="83cd1-144">Click Request for quotation.</span></span>
+3. <span data-ttu-id="83cd1-145">Välj USMF i fältet Juridisk person för inköp.</span><span class="sxs-lookup"><span data-stu-id="83cd1-145">In the Buying legal entity field, select USMF.</span></span>
+    * <span data-ttu-id="83cd1-146">Du måste välja samma juridiska person som finns på rekvisitionraden.</span><span class="sxs-lookup"><span data-stu-id="83cd1-146">You must select the same legal entity that’s on the requisition line.</span></span>  
+4. <span data-ttu-id="83cd1-147">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="83cd1-147">In the list, mark the selected row.</span></span>
+    * <span data-ttu-id="83cd1-148">Om du har flera rader i din inköpsrekvisition, markerar du alla rader som du vill lägga till i anbudsförfrågan.</span><span class="sxs-lookup"><span data-stu-id="83cd1-148">If you had multiple lines on your purchase requisition, select all the lines that you want to add to the RFQ.</span></span>  
+5. <span data-ttu-id="83cd1-149">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="83cd1-149">Click OK.</span></span>
+6. <span data-ttu-id="83cd1-150">Uppdatera sidan.</span><span class="sxs-lookup"><span data-stu-id="83cd1-150">Refresh the page.</span></span>
+7. <span data-ttu-id="83cd1-151">Öppna faktaboxen och expandera sedan avsnittet Relaterade dokument.</span><span class="sxs-lookup"><span data-stu-id="83cd1-151">Open the FactBox and then expand the Related documents section.</span></span>
+    * <span data-ttu-id="83cd1-152">Du kanske redan har faktaboxen öppen.</span><span class="sxs-lookup"><span data-stu-id="83cd1-152">You may already have the FactBox open.</span></span> <span data-ttu-id="83cd1-153">Sök efter ikonen med en pil till höger om växlingsknapparna rader/rubrik.</span><span class="sxs-lookup"><span data-stu-id="83cd1-153">Look for the icon with an arrow on it, to the right of the Lines/Header toggle buttons.</span></span> <span data-ttu-id="83cd1-154">Om pilen pekar till höger är faktaboxen redan öppen.</span><span class="sxs-lookup"><span data-stu-id="83cd1-154">If the arrow is pointing to the right, the FactBox is already open.</span></span> <span data-ttu-id="83cd1-155">Om pilen pekar åt vänster klickar du på den för att öppna faktaboxen.</span><span class="sxs-lookup"><span data-stu-id="83cd1-155">If the arrow points to the left, click it to open the FactBox.</span></span>  
+8. <span data-ttu-id="83cd1-156">Klicka på länken i fältet Anbudsförfrågan för att öppna anbudsförfrågan som just har skapats.</span><span class="sxs-lookup"><span data-stu-id="83cd1-156">Click the link in the Request for quotation field to open the RFQ that was just created.</span></span>
+9. <span data-ttu-id="83cd1-157">Klicka på Rubrik.</span><span class="sxs-lookup"><span data-stu-id="83cd1-157">Click Header.</span></span>
+10. <span data-ttu-id="83cd1-158">Klicka på Lägg till.</span><span class="sxs-lookup"><span data-stu-id="83cd1-158">Click Add.</span></span>
+11. <span data-ttu-id="83cd1-159">Ange eller välj ett värde i fältet Leverantörskonto.</span><span class="sxs-lookup"><span data-stu-id="83cd1-159">In the Vendor account field, enter or select a value.</span></span>
+12. <span data-ttu-id="83cd1-160">Klicka på Lägg till.</span><span class="sxs-lookup"><span data-stu-id="83cd1-160">Click Add.</span></span>
+13. <span data-ttu-id="83cd1-161">Ange eller välj ett värde i fältet Leverantörskonto.</span><span class="sxs-lookup"><span data-stu-id="83cd1-161">In the Vendor account field, enter or select a value.</span></span>
+14. <span data-ttu-id="83cd1-162">Klicka på Skicka.</span><span class="sxs-lookup"><span data-stu-id="83cd1-162">Click Send.</span></span>
+15. <span data-ttu-id="83cd1-163">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="83cd1-163">Click OK.</span></span>
+16. <span data-ttu-id="83cd1-164">Klicka på Ange svar.</span><span class="sxs-lookup"><span data-stu-id="83cd1-164">Click Enter reply.</span></span>
+17. <span data-ttu-id="83cd1-165">Klicka på Svar i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="83cd1-165">On the Action Pane, click Reply.</span></span>
+18. <span data-ttu-id="83cd1-166">Klicka på Kopiera data för att svara.</span><span class="sxs-lookup"><span data-stu-id="83cd1-166">Click Copy data to reply.</span></span>
+    * <span data-ttu-id="83cd1-167">Då kopieras data, till exempel kvantitet och datum, från anbudsförfrågan till svaret.</span><span class="sxs-lookup"><span data-stu-id="83cd1-167">This copies data, such as the quantity and dates, from the RFQ to the reply .</span></span>  
+19. <span data-ttu-id="83cd1-168">Ange ett tal i fältet Enhetspris.</span><span class="sxs-lookup"><span data-stu-id="83cd1-168">In the Unit price field, enter a number.</span></span>
+    * <span data-ttu-id="83cd1-169">Detta är priset som du har tagit emot från leverantören.</span><span class="sxs-lookup"><span data-stu-id="83cd1-169">This is the price that you’ve received from the vendor.</span></span> <span data-ttu-id="83cd1-170">Du kanske också vill ange ytterligare information från leverantören.</span><span class="sxs-lookup"><span data-stu-id="83cd1-170">You might also want to enter additional information from the vendor.</span></span>  
+20. <span data-ttu-id="83cd1-171">Klicka på Godkänn.</span><span class="sxs-lookup"><span data-stu-id="83cd1-171">Click Accept.</span></span>
+21. <span data-ttu-id="83cd1-172">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="83cd1-172">Click OK.</span></span>
 
-## <a name="verify-that-vendor-and-price-have-been-transferred-to-the-requisition"></a>Kontrollera att leverantören och priset har överförts till rekvisitionen
-1. Stäng sidan.
-2. Klicka på Rader.
-3. Klicka på Relaterad information.
-4. Klicka på Inköpsrekvisition.
-5. Markera raden som har överförts till anbudsförfrågan.
-    * Kontrollera att priset och leverantören har kopierats till rekvisitionen.  
-6. Klicka på Arbetsflöde för att öppna dialogrutan.
-7. Klicka på Slutför.
-8. Stäng sidan.
-9. Klicka på Slutför.
+## <a name="verify-that-vendor-and-price-have-been-transferred-to-the-requisition"></a><span data-ttu-id="83cd1-173">Kontrollera att leverantören och priset har överförts till rekvisitionen</span><span class="sxs-lookup"><span data-stu-id="83cd1-173">Verify that vendor and price have been transferred to the requisition</span></span>
+1. <span data-ttu-id="83cd1-174">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="83cd1-174">Close the page.</span></span>
+2. <span data-ttu-id="83cd1-175">Klicka på Rader.</span><span class="sxs-lookup"><span data-stu-id="83cd1-175">Click Lines.</span></span>
+3. <span data-ttu-id="83cd1-176">Klicka på Relaterad information.</span><span class="sxs-lookup"><span data-stu-id="83cd1-176">Click Related information.</span></span>
+4. <span data-ttu-id="83cd1-177">Klicka på Inköpsrekvisition.</span><span class="sxs-lookup"><span data-stu-id="83cd1-177">Click Purchase requisition.</span></span>
+5. <span data-ttu-id="83cd1-178">Markera raden som har överförts till anbudsförfrågan.</span><span class="sxs-lookup"><span data-stu-id="83cd1-178">Select the line that was transferred to the RFQ.</span></span>
+    * <span data-ttu-id="83cd1-179">Kontrollera att priset och leverantören har kopierats till rekvisitionen.</span><span class="sxs-lookup"><span data-stu-id="83cd1-179">Verify that the price and vendor have been copied to the requisition.</span></span>  
+6. <span data-ttu-id="83cd1-180">Klicka på Arbetsflöde för att öppna dialogrutan.</span><span class="sxs-lookup"><span data-stu-id="83cd1-180">Click Workflow to open the drop dialog.</span></span>
+7. <span data-ttu-id="83cd1-181">Klicka på Slutför.</span><span class="sxs-lookup"><span data-stu-id="83cd1-181">Click Complete.</span></span>
+8. <span data-ttu-id="83cd1-182">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="83cd1-182">Close the page.</span></span>
+9. <span data-ttu-id="83cd1-183">Klicka på Slutför.</span><span class="sxs-lookup"><span data-stu-id="83cd1-183">Click Complete.</span></span>
 
 

@@ -17,62 +17,62 @@ ms.assetid: 128340e1-c573-48e6-b835-6c350d8dd0fb
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: mguada
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: a0eeb5a57f9b82150150752c64e89c2c91856889
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 07ed503b7c441cb594e8e96ddcd9a81c0745a963
 ms.contentlocale: sv-se
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="physical-and-financial-updates"></a>Fysiska och ekonomiska uppdateringar
+# <a name="physical-and-financial-updates"></a><span data-ttu-id="096c0-103">Fysiska och ekonomiska uppdateringar</span><span class="sxs-lookup"><span data-stu-id="096c0-103">Physical and financial updates</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-I det här avsnittet ges en översikt över vilka transaktionstyper som ökar eller minskar lagerkvantiteterna. 
+<span data-ttu-id="096c0-104">I det här avsnittet ges en översikt över vilka transaktionstyper som ökar eller minskar lagerkvantiteterna.</span><span class="sxs-lookup"><span data-stu-id="096c0-104">This topic provides an overview of which types of transactions increase or decrease inventory quantities.</span></span> 
 
-Lagertransaktioner kan uppdateras fysiskt och ekonomiskt i Microsoft Dynamics 365 for Finance and Operations. I vissa typer av fysiska och ekonomiska transaktioner ökar lagerkvantiteterna, medan andra minskar kvantiteten.
+<span data-ttu-id="096c0-105">Lagertransaktioner kan uppdateras fysiskt och ekonomiskt i Microsoft Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="096c0-105">Inventory transactions can be physically updated and financially updated in Microsoft Dynamics 365 for Finance and Operations.</span></span> <span data-ttu-id="096c0-106">I vissa typer av fysiska och ekonomiska transaktioner ökar lagerkvantiteterna, medan andra minskar kvantiteten.</span><span class="sxs-lookup"><span data-stu-id="096c0-106">Some types of physical and financial transactions increase inventory quantities, whereas others decrease the quantity.</span></span>
 
-## <a name="physical-increases"></a>Fysiska ökningar
-När en fysisk transaktion bokförs får transaktionsposten statusen **Inlevererad**. Följande transaktioner betraktas som fysiska ökningar:
+## <a name="physical-increases"></a><span data-ttu-id="096c0-107">Fysiska ökningar</span><span class="sxs-lookup"><span data-stu-id="096c0-107">Physical increases</span></span>
+<span data-ttu-id="096c0-108">När en fysisk transaktion bokförs får transaktionsposten statusen **Inlevererad**.</span><span class="sxs-lookup"><span data-stu-id="096c0-108">When a physical transaction is posted, the status of the transaction record is **Received**.</span></span> <span data-ttu-id="096c0-109">Följande transaktioner betraktas som fysiska ökningar:</span><span class="sxs-lookup"><span data-stu-id="096c0-109">The following transactions are considered physical increases:</span></span>
 
--   Inleverans av inköpsorder
--   Försäljningsorder, följesedelsretur
--   Rapportera en produktionsorder som färdig
--   Biprodukt på plocklista för tillverkningsorder
+-   <span data-ttu-id="096c0-110">Inleverans av inköpsorder</span><span class="sxs-lookup"><span data-stu-id="096c0-110">Purchase order receipt</span></span>
+-   <span data-ttu-id="096c0-111">Försäljningsorder, följesedelsretur</span><span class="sxs-lookup"><span data-stu-id="096c0-111">Sales order packing slip return</span></span>
+-   <span data-ttu-id="096c0-112">Rapportera en produktionsorder som färdig</span><span class="sxs-lookup"><span data-stu-id="096c0-112">Reporting a production order as finished</span></span>
+-   <span data-ttu-id="096c0-113">Biprodukt på plocklista för tillverkningsorder</span><span class="sxs-lookup"><span data-stu-id="096c0-113">By-product on a production order picking list</span></span>
 
-## <a name="financial-increases"></a>Ekonomiska ökningar
-När en ekonomisk inleveranstransaktion bokförs blir statusen för transaktionen som ökar kvantiteten **Inköpt**. Följande transaktioner betraktas som ekonomiska ökningar:
+## <a name="financial-increases"></a><span data-ttu-id="096c0-114">Ekonomiska ökningar</span><span class="sxs-lookup"><span data-stu-id="096c0-114">Financial increases</span></span>
+<span data-ttu-id="096c0-115">När en ekonomisk inleveranstransaktion bokförs blir statusen för transaktionen som ökar kvantiteten **Inköpt**.</span><span class="sxs-lookup"><span data-stu-id="096c0-115">When a financial receipt transaction is posted, the status of the transaction record that increases the quantity is **Purchased**.</span></span> <span data-ttu-id="096c0-116">Följande transaktioner betraktas som ekonomiska ökningar:</span><span class="sxs-lookup"><span data-stu-id="096c0-116">The following transactions are considered financial increases:</span></span>
 
--   Leverantörsfaktura
--   Inköpsorderfaktura för en retur
--   Kostnadskalkylering för tillverkningsorder
--   Lagerjournaler med positiv kvantitet, t.ex. förflyttningar, resultat, inventeringsjournaler, strukturlistor och överföringar
+-   <span data-ttu-id="096c0-117">Leverantörsfaktura</span><span class="sxs-lookup"><span data-stu-id="096c0-117">Vendor invoice</span></span>
+-   <span data-ttu-id="096c0-118">Inköpsorderfaktura för en retur</span><span class="sxs-lookup"><span data-stu-id="096c0-118">Sales order invoice for a return</span></span>
+-   <span data-ttu-id="096c0-119">Kostnadskalkylering för tillverkningsorder</span><span class="sxs-lookup"><span data-stu-id="096c0-119">Production order costing</span></span>
+-   <span data-ttu-id="096c0-120">Lagerjournaler med positiv kvantitet, t.ex. förflyttningar, resultat, inventeringsjournaler, strukturlistor och överföringar</span><span class="sxs-lookup"><span data-stu-id="096c0-120">Positive quantity inventory journals, such as movement, profit and loss, counting, bill of materials, and transfer</span></span>
 
-## <a name="transactions-that-increase-quantity"></a>Transaktioner som ökar kvantiteten
-Transaktioner som ökar kvantiteten bokförs till den löpande genomsnittliga självkostnaden. Finance and Operations beräknar en löpande genomsnittlig självkostnad som baseras på kostnaden för respektive transaktion för alla lagerdimensioner som spåras ekonomiskt. Mer information om löpande genomsnittliga självkostnaden finns i [Löpande genomsnittlig självkostnad](running-average-cost-price.md).
+## <a name="transactions-that-increase-quantity"></a><span data-ttu-id="096c0-121">Transaktioner som ökar kvantiteten</span><span class="sxs-lookup"><span data-stu-id="096c0-121">Transactions that increase quantity</span></span>
+<span data-ttu-id="096c0-122">Transaktioner som ökar kvantiteten bokförs till den löpande genomsnittliga självkostnaden.</span><span class="sxs-lookup"><span data-stu-id="096c0-122">Transactions that increase quantity are posted at the running average cost price.</span></span> <span data-ttu-id="096c0-123">Finance and Operations beräknar en löpande genomsnittlig självkostnad som baseras på kostnaden för respektive transaktion för alla lagerdimensioner som spåras ekonomiskt.</span><span class="sxs-lookup"><span data-stu-id="096c0-123">Finance and Operations calculates a running average cost price that is based on the cost of each of these transactions for each inventory dimension that is being tracked financially.</span></span> <span data-ttu-id="096c0-124">Mer information om löpande genomsnittliga självkostnaden finns i [Löpande genomsnittlig självkostnad](running-average-cost-price.md).</span><span class="sxs-lookup"><span data-stu-id="096c0-124">For information about running average cost prices, see [Running average cost price](running-average-cost-price.md).</span></span>
 
-## <a name="transactions-that-decrease-quantity"></a>Transaktioner som minskar kvantiteten
-Finance and Operations använder den beräknade löpande genomsnittliga självkostnaden när en transaktion som minskar kvantiteten bokförs, oavsett vilken lagermodell som är associerad med lagret. Transaktionen som minskar kvantiteten får inte tidigare ha markerats till en annan transaktion innan den bokfördes. Om den fysiska lagerbehållningen blir negativ använder Finance and Operations den lagerkostnad som definierats för artikeln på sidan **Artikel**. **Obs!** Om multisitefunktionen har aktiverats utgörs denna kostnad i stället av den lagerkostnad som definierats för en plats på sidan **Standardorderinställningar** page.
+## <a name="transactions-that-decrease-quantity"></a><span data-ttu-id="096c0-125">Transaktioner som minskar kvantiteten</span><span class="sxs-lookup"><span data-stu-id="096c0-125">Transactions that decrease quantity</span></span>
+<span data-ttu-id="096c0-126">Finance and Operations använder den beräknade löpande genomsnittliga självkostnaden när en transaktion som minskar kvantiteten bokförs, oavsett vilken lagermodell som är associerad med lagret.</span><span class="sxs-lookup"><span data-stu-id="096c0-126">Finance and Operations uses the calculated running average cost price when a transaction that decreases quantity is posted, regardless of the inventory model that is associated with that inventory.</span></span> <span data-ttu-id="096c0-127">Transaktionen som minskar kvantiteten får inte tidigare ha markerats till en annan transaktion innan den bokfördes.</span><span class="sxs-lookup"><span data-stu-id="096c0-127">The transaction that decreases quantity must not have been marked to another transaction before it was posted.</span></span> <span data-ttu-id="096c0-128">Om den fysiska lagerbehållningen blir negativ använder Finance and Operations den lagerkostnad som definierats för artikeln på sidan **Artikel**.</span><span class="sxs-lookup"><span data-stu-id="096c0-128">If the physical on-hand inventory becomes negative, Finance and Operations uses the inventory cost that is defined for the item on the **Item** page.</span></span> <span data-ttu-id="096c0-129">**Obs!** Om multisitefunktionen har aktiverats utgörs denna kostnad i stället av den lagerkostnad som definierats för en plats på sidan **Standardorderinställningar** page.</span><span class="sxs-lookup"><span data-stu-id="096c0-129">**Note:** If multisite functionality is enabled, this cost will instead be the inventory cost that is defined for a site on the **Default order settings** page.</span></span>
 
-## <a name="physical-issues-vs-financial-issues"></a>Fysiska utleveranser kontra ekonomiska problem.
-När en fysisk utleveranstransaktion bokförs blir transaktionspostens status **Avdragen**. Följande transaktioner betraktas som fysiska utleveranser:
+## <a name="physical-issues-vs-financial-issues"></a><span data-ttu-id="096c0-130">Fysiska utleveranser kontra ekonomiska problem.</span><span class="sxs-lookup"><span data-stu-id="096c0-130">Physical issues vs. financial issues</span></span>
+<span data-ttu-id="096c0-131">När en fysisk utleveranstransaktion bokförs blir transaktionspostens status **Avdragen**.</span><span class="sxs-lookup"><span data-stu-id="096c0-131">When a physical issue transaction is posted, the status of the transaction record is **Deducted**.</span></span> <span data-ttu-id="096c0-132">Följande transaktioner betraktas som fysiska utleveranser:</span><span class="sxs-lookup"><span data-stu-id="096c0-132">The following transactions are considered physical issues:</span></span>
 
--   Plocklistejournal för tillverkningsorder
--   Följesedel för försäljningsorder
--   Inköpsorder, följesedelsretur
+-   <span data-ttu-id="096c0-133">Plocklistejournal för tillverkningsorder</span><span class="sxs-lookup"><span data-stu-id="096c0-133">Production order picking list journal</span></span>
+-   <span data-ttu-id="096c0-134">Följesedel för försäljningsorder</span><span class="sxs-lookup"><span data-stu-id="096c0-134">Sales order packing slip</span></span>
+-   <span data-ttu-id="096c0-135">Inköpsorder, följesedelsretur</span><span class="sxs-lookup"><span data-stu-id="096c0-135">Purchase order packing slip return</span></span>
 
-När en ekonomisk transaktion bokförs får transaktionsposten statusen **Såld**. Följande transaktioner betraktas som ekonomiska utleveranser:
+<span data-ttu-id="096c0-136">När en ekonomisk transaktion bokförs får transaktionsposten statusen **Såld**.</span><span class="sxs-lookup"><span data-stu-id="096c0-136">When a financial transaction is posted, the status of the transaction record is **Sold**.</span></span> <span data-ttu-id="096c0-137">Följande transaktioner betraktas som ekonomiska utleveranser:</span><span class="sxs-lookup"><span data-stu-id="096c0-137">The following transactions are considered financial issues:</span></span>
 
--   Avsluta en produktionsorder
--   Försäljningsorderfaktura
--   Leverantörsfakturaretur
--   Lagerjournaler med negativ kvantitet, t.ex. förflyttningar, resultat, inventeringsjournaler, strukturlistor och överföringar
+-   <span data-ttu-id="096c0-138">Avsluta en produktionsorder</span><span class="sxs-lookup"><span data-stu-id="096c0-138">Ending a production order</span></span>
+-   <span data-ttu-id="096c0-139">Försäljningsorderfaktura</span><span class="sxs-lookup"><span data-stu-id="096c0-139">Sales order invoice</span></span>
+-   <span data-ttu-id="096c0-140">Leverantörsfakturaretur</span><span class="sxs-lookup"><span data-stu-id="096c0-140">Vendor invoice return</span></span>
+-   <span data-ttu-id="096c0-141">Lagerjournaler med negativ kvantitet, t.ex. förflyttningar, resultat, inventeringsjournaler, strukturlistor och överföringar</span><span class="sxs-lookup"><span data-stu-id="096c0-141">Negative quantity inventory journals, such as movement, profit and loss, counting, bill of materials, and transfer</span></span>
 
-Transaktioner som minskar kvantiteten bokförs till den löpande genomsnittliga självkostnaden. Därför måste lagerstängningsprocessen kvitta utleveranstransaktioner mot inleveranstransaktioner baserat på den lagermodell som har valts för varje artikel.
+<span data-ttu-id="096c0-142">Transaktioner som minskar kvantiteten bokförs till den löpande genomsnittliga självkostnaden.</span><span class="sxs-lookup"><span data-stu-id="096c0-142">Transactions that decrease quantity are posted at the running average cost price.</span></span> <span data-ttu-id="096c0-143">Därför måste lagerstängningsprocessen kvitta utleveranstransaktioner mot inleveranstransaktioner baserat på den lagermodell som har valts för varje artikel.</span><span class="sxs-lookup"><span data-stu-id="096c0-143">Therefore, the inventory close procedure is required in order to settle issue transactions to receipt transactions, based on the inventory model that is assigned to each item.</span></span>
 
 
 

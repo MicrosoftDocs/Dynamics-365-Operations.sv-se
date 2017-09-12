@@ -19,32 +19,32 @@ ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
-ms.openlocfilehash: caa701dfcbffe045d701442b1a39b88ea5f43125
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: c96f7afdb095fd45b5dd88c7760a24226518f61c
 ms.contentlocale: sv-se
-ms.lasthandoff: 06/20/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="price-adjustments-and-discounts"></a>Prisjusteringar och rabatter
+# <a name="price-adjustments-and-discounts"></a><span data-ttu-id="87497-103">Prisjusteringar och rabatter</span><span class="sxs-lookup"><span data-stu-id="87497-103">Price adjustments and discounts</span></span>
 
 [!include[banner](includes/banner.md)]
 
 
-Den här artikeln innehåller information om prisjusteringar och rabatter i Microsoft Dynamics 365 for Retail.
+<span data-ttu-id="87497-104">Den här artikeln innehåller information om prisjusteringar och rabatter i Microsoft Dynamics 365 for Retail.</span><span class="sxs-lookup"><span data-stu-id="87497-104">This article provides information about price adjustments and discounts in Microsoft Dynamics 365 for Retail.</span></span>
 
-I Dynamics 365 for Retail kan du göra prisjusteringar för produkter och även ställa in rabatter som tillämpas på en radartikel eller transaktion i kassan (POS), på en försäljningsorder för kundtjänst eller på en onlineorder. Både prisjusteringar och rabatter kan länkas till prisgrupper. För både prisjusteringar och rabatter kan du ange ett enskilt datum för startdatum och slutdatum eller en återkommande period, en rabatt kod och eventuella ytterligare attribut. Prisjusteringar och rabatter kan användas för produkter, varianter eller kategorier. Om mer än en rabatt gäller för en produkt, kan en kund ta emot antingen en av rabatterna eller en kombinerad rabatt, beroende på konfigurationen av rabatten. Dynamics 365 for Retail använder automatiskt rabatten eller en kombination av rabatter som ger kunden det bästa priset. Kontrollera att du bekräftar att prisgruppen tilldelas de korrekta kanalerna, katalogerna, anknytningarna eller bonusprogrammen som du vill att rabatten ska gälla för när du konfigurerar en prisjustering eller rabatt. Om du vill skapa rabatt-ID automatiskt kan du ställa in nummerserier på sidan **Butiksparametrar** innan du definierar en ny prisjustering eller rabatt. **Obs!** Du kan ta bort en prisjustering eller rabatt. Statistisk information går dock förlorad.
+<span data-ttu-id="87497-105">I Dynamics 365 for Retail kan du göra prisjusteringar för produkter och även ställa in rabatter som tillämpas på en radartikel eller transaktion i kassan (POS), på en försäljningsorder för kundtjänst eller på en onlineorder.</span><span class="sxs-lookup"><span data-stu-id="87497-105">In Dynamics 365 for Retail, you can make price adjustments to products, and can also set up discounts that are applied to a line item or a transaction at the point of sale (POS), in a call center sales order, or in an online order.</span></span> <span data-ttu-id="87497-106">Både prisjusteringar och rabatter kan länkas till prisgrupper.</span><span class="sxs-lookup"><span data-stu-id="87497-106">Both price adjustments and discounts can be linked to price groups.</span></span> <span data-ttu-id="87497-107">För både prisjusteringar och rabatter kan du ange ett enskilt datum för startdatum och slutdatum eller en återkommande period, en rabatt kod och eventuella ytterligare attribut.</span><span class="sxs-lookup"><span data-stu-id="87497-107">For both price adjustments and discounts, you can specify a single start date and end date or a reoccurring period, a discount code, and a few additional attributes.</span></span> <span data-ttu-id="87497-108">Prisjusteringar och rabatter kan användas för produkter, varianter eller kategorier.</span><span class="sxs-lookup"><span data-stu-id="87497-108">Price adjustments and discounts can be applied to products, variants, or categories.</span></span> <span data-ttu-id="87497-109">Om mer än en rabatt gäller för en produkt, kan en kund ta emot antingen en av rabatterna eller en kombinerad rabatt, beroende på konfigurationen av rabatten.</span><span class="sxs-lookup"><span data-stu-id="87497-109">If more than one discount applies to a product, a customer might receive either one of the discounts or a combined discount, depending on the configuration of the discount.</span></span> <span data-ttu-id="87497-110">Dynamics 365 for Retail använder automatiskt rabatten eller en kombination av rabatter som ger kunden det bästa priset.</span><span class="sxs-lookup"><span data-stu-id="87497-110">Dynamics 365 for Retail automatically applies the discount or combination of discounts that gives the best price to the customer.</span></span> <span data-ttu-id="87497-111">Kontrollera att du bekräftar att prisgruppen tilldelas de korrekta kanalerna, katalogerna, anknytningarna eller bonusprogrammen som du vill att rabatten ska gälla för när du konfigurerar en prisjustering eller rabatt.</span><span class="sxs-lookup"><span data-stu-id="87497-111">When you set up a price adjustment or a discount, be sure to confirm that price groups are assigned to the correct channels, catalogs, affiliations, or loyalty programs that you want the discount to apply to.</span></span> <span data-ttu-id="87497-112">Om du vill skapa rabatt-ID automatiskt kan du ställa in nummerserier på sidan **Butiksparametrar** innan du definierar en ny prisjustering eller rabatt.</span><span class="sxs-lookup"><span data-stu-id="87497-112">Additionally, if you want to automatically generate the discount ID, set up number sequences on the **Retail parameters** page before you define a new price adjustment or discount.</span></span> <span data-ttu-id="87497-113">**Obs!** Du kan ta bort en prisjustering eller rabatt.</span><span class="sxs-lookup"><span data-stu-id="87497-113">**Note:** You can delete a price adjustment or a discount.</span></span> <span data-ttu-id="87497-114">Statistisk information går dock förlorad.</span><span class="sxs-lookup"><span data-stu-id="87497-114">However, statistical information will be lost.</span></span>
 
-### <a name="types-of-discounts"></a>Typer av rabatter
+### <a name="types-of-discounts"></a><span data-ttu-id="87497-115">Typer av rabatter</span><span class="sxs-lookup"><span data-stu-id="87497-115">Types of discounts</span></span>
 
-Det finns fyra typer av butiksrabatter:
+<span data-ttu-id="87497-116">Det finns fyra typer av butiksrabatter:</span><span class="sxs-lookup"><span data-stu-id="87497-116">There are four types of retail discounts:</span></span>
 
--   **Enkel rabatt** – En procentandel eller ett belopp.
--   **Rabatterad kvantitet** – En rabatt som används när två eller fler produkter köps.
--   **Mixa-och-matcha-rabatt** – En rabatt som används när en specifik kombination av produkter köps in.
--   **Tröskelrabatt** – En rabatt som används när transaktionens summa är mer än ett angivet belopp.
+-   <span data-ttu-id="87497-117">**Enkel rabatt** – En procentandel eller ett belopp.</span><span class="sxs-lookup"><span data-stu-id="87497-117">**Simple discount** – A single percentage or amount.</span></span>
+-   <span data-ttu-id="87497-118">**Rabatterad kvantitet** – En rabatt som används när två eller fler produkter köps.</span><span class="sxs-lookup"><span data-stu-id="87497-118">**Quantity discount** – A discount that is applied when two or more products are purchased.</span></span>
+-   <span data-ttu-id="87497-119">**Mixa-och-matcha-rabatt** – En rabatt som används när en specifik kombination av produkter köps in.</span><span class="sxs-lookup"><span data-stu-id="87497-119">**Mix and match discount** – A discount that is applied when a specific combination of products is purchased.</span></span>
+-   <span data-ttu-id="87497-120">**Tröskelrabatt** – En rabatt som används när transaktionens summa är mer än ett angivet belopp.</span><span class="sxs-lookup"><span data-stu-id="87497-120">**Threshold discount** – A discount that is applied when the transaction total is more than a specified amount.</span></span>
 
-Både prisjusteringar och rabatter kan associeras till prisgrupper. Prisgrupper kan sedan associeras till kanaler, kataloger, anknytningar och bonusprogram.
+<span data-ttu-id="87497-121">Både prisjusteringar och rabatter kan associeras till prisgrupper.</span><span class="sxs-lookup"><span data-stu-id="87497-121">Both price adjustments and discounts can be associated with price groups.</span></span> <span data-ttu-id="87497-122">Prisgrupper kan sedan associeras till kanaler, kataloger, anknytningar och bonusprogram.</span><span class="sxs-lookup"><span data-stu-id="87497-122">Price groups can then be associated with channels, catalogs, affiliations, and loyalty programs.</span></span>
 
 
 

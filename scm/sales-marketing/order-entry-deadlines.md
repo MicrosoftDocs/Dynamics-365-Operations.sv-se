@@ -16,98 +16,98 @@ ms.custom: 7151
 ms.assetid: bbc4f9a2-df4b-4d92-9f18-25282a85541f
 ms.search.region: Global
 ms.author: omulvad
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: a9cabce5400216ee0214eb6d56f0d32d746b260f
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 9e9d1912abf9a356542ce2c317fa717bc991dbf9
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="order-entry-deadlines"></a>Deadlines för orderregistrering
+# <a name="order-entry-deadlines"></a><span data-ttu-id="83681-104">Deadlines för orderregistrering</span><span class="sxs-lookup"><span data-stu-id="83681-104">Order entry deadlines</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Den här artikeln innehåller information om deadlines för orderregistrering. En deadline för orderregistrering är en sluttid som bestämmer om en kundorder behandlas (och genomförs) som om det togs emot den aktuella dagen eller nästa dag.
+<span data-ttu-id="83681-105">Den här artikeln innehåller information om deadlines för orderregistrering.</span><span class="sxs-lookup"><span data-stu-id="83681-105">This article provides information about order entry deadlines.</span></span> <span data-ttu-id="83681-106">En deadline för orderregistrering är en sluttid som bestämmer om en kundorder behandlas (och genomförs) som om det togs emot den aktuella dagen eller nästa dag.</span><span class="sxs-lookup"><span data-stu-id="83681-106">An order entry deadline is a cut-off time that determines whether a customer order is treated (and fulfilled) as if it was received on the current day or the next day.</span></span>
 
-I många företag kommer bara försäljningsorder som inkommer före en viss tid att behandlas som om de kom in samma dag. Alla order som har inlevererats efter den tiden ska behandlas som om de inlevereras nästa vardag. Den här sluttiden för order kallas deadline för orderregistrering.  
+<span data-ttu-id="83681-107">I många företag kommer bara försäljningsorder som inkommer före en viss tid att behandlas som om de kom in samma dag.</span><span class="sxs-lookup"><span data-stu-id="83681-107">In many companies, only sales orders that are received before a certain time of day are treated as if they were received on that day.</span></span> <span data-ttu-id="83681-108">Alla order som har inlevererats efter den tiden ska behandlas som om de inlevereras nästa vardag.</span><span class="sxs-lookup"><span data-stu-id="83681-108">Any orders that are received after that time are treated as if they are received on the next business day.</span></span> <span data-ttu-id="83681-109">Den här sluttiden för order kallas deadline för orderregistrering.</span><span class="sxs-lookup"><span data-stu-id="83681-109">This cut-off time for orders is known as the order entry deadline.</span></span>  
 
-Deadlines för orderregistrering används som inmatning av orderlöfte. Därför hjälper de dig att hantera kundens förväntningar om orderleveranser. Kunder kan till exempel se om de gör någon beställning med dig innan en viss tidpunkt, att du kommer att leverera varor på samma dag. Men om de missar denna deadline kan de förvänta leveransen först på nästa arbetsdag. Du kan ange deadlines för orderregistrering utifrån dina lagerställefunktioner och transportföretagets tidsscheman.  
+<span data-ttu-id="83681-110">Deadlines för orderregistrering används som inmatning av orderlöfte.</span><span class="sxs-lookup"><span data-stu-id="83681-110">Order entry deadlines are used as input for order promising.</span></span> <span data-ttu-id="83681-111">Därför hjälper de dig att hantera kundens förväntningar om orderleveranser.</span><span class="sxs-lookup"><span data-stu-id="83681-111">Therefore, they help you manage customer expectations about order deliveries.</span></span> <span data-ttu-id="83681-112">Kunder kan till exempel se om de gör någon beställning med dig innan en viss tidpunkt, att du kommer att leverera varor på samma dag.</span><span class="sxs-lookup"><span data-stu-id="83681-112">For example, customers can see that, if they place an order with you before a specific time, you will commit to shipping the goods on the same day.</span></span> <span data-ttu-id="83681-113">Men om de missar denna deadline kan de förvänta leveransen först på nästa arbetsdag.</span><span class="sxs-lookup"><span data-stu-id="83681-113">However, if they miss that deadline, they can expect the shipment only on the next business day.</span></span> <span data-ttu-id="83681-114">Du kan ange deadlines för orderregistrering utifrån dina lagerställefunktioner och transportföretagets tidsscheman.</span><span class="sxs-lookup"><span data-stu-id="83681-114">You set order entry deadlines based on your warehouse capabilities and shipping carrier schedules.</span></span>  
 
-På sidan **Deadlines för orderregistrering** anger du tider för orderregistrering för alla veckodagar. Om alla order inlevererad efter den angivna tiden ska de behandlas som om de inlevereras nästa dag. Som standard är tiden 23:59, det vill säga en minut före midnatt den aktuella dagen. Du kan ändra standardtiderna så att de stämmer med faktisk deadline för ut- eller inleverans.  
+<span data-ttu-id="83681-115">På sidan **Deadlines för orderregistrering** anger du tider för orderregistrering för alla veckodagar.</span><span class="sxs-lookup"><span data-stu-id="83681-115">On the **Order entry deadlines** page, you set up order entry deadline times for all the days of the week.</span></span> <span data-ttu-id="83681-116">Om alla order inlevererad efter den angivna tiden ska de behandlas som om de inlevereras nästa dag.</span><span class="sxs-lookup"><span data-stu-id="83681-116">If orders are received after the specified times, they are treated as if they are received on the next day.</span></span> <span data-ttu-id="83681-117">Som standard är tiden 23:59, det vill säga en minut före midnatt den aktuella dagen.</span><span class="sxs-lookup"><span data-stu-id="83681-117">By default, these times are set to 23:59 (that is, one minute before midnight at the end of the relevant day).</span></span> <span data-ttu-id="83681-118">Du kan ändra standardtiderna så att de stämmer med faktisk deadline för ut- eller inleverans.</span><span class="sxs-lookup"><span data-stu-id="83681-118">You can change the default times so that they coincide with actual ship or receipt deadline times.</span></span>  
 
-Du kan definiera deadline för order för en specifik kundgrupp. Du kan till exempel ange att en specifik kundgrupp har deadlines för orderregistrering som infaller senare än andra kunder. I det här fallet definierar du först grupper för deadlines för orderregistrering på sidan **Deadlinegrupper för orderregistrering**. Du kan sedan tilldela grupper till kunder på sidan **Kunder**.  
+<span data-ttu-id="83681-119">Du kan definiera deadline för order för en specifik kundgrupp.</span><span class="sxs-lookup"><span data-stu-id="83681-119">You can define order entry deadlines for a specific group of customers.</span></span> <span data-ttu-id="83681-120">Du kan till exempel ange att en specifik kundgrupp har deadlines för orderregistrering som infaller senare än andra kunder.</span><span class="sxs-lookup"><span data-stu-id="83681-120">For example, you might want a specific group of customers to have order entry deadlines that are later than those of other customers.</span></span> <span data-ttu-id="83681-121">I det här fallet definierar du först grupper för deadlines för orderregistrering på sidan **Deadlinegrupper för orderregistrering**.</span><span class="sxs-lookup"><span data-stu-id="83681-121">In this case, you first define groups for order entry deadlines on the **Order entry deadline groups** page.</span></span> <span data-ttu-id="83681-122">Du kan sedan tilldela grupper till kunder på sidan **Kunder**.</span><span class="sxs-lookup"><span data-stu-id="83681-122">You then assign the groups to customers on the **Customers** page.</span></span>  
 
-Om verksamheten inom ditt företag är utspridd på flera siter kan du skapa en deadline för order per site. Om siterna finns i olika tidszoner skapar du en deadline för orderregistrering för sitens tidszon. När du arbetar med säljorder och säljofferter konverteras deadline för order till din tidszon på sidan **Tillgängliga speditions- och inleveransdatum**.  
+<span data-ttu-id="83681-123">Om verksamheten inom ditt företag är utspridd på flera siter kan du skapa en deadline för order per site.</span><span class="sxs-lookup"><span data-stu-id="83681-123">If your company consists of several sites, you can set up order entry deadlines for each site.</span></span> <span data-ttu-id="83681-124">Om siterna finns i olika tidszoner skapar du en deadline för orderregistrering för sitens tidszon.</span><span class="sxs-lookup"><span data-stu-id="83681-124">If the sites are located in different time zones, the order entry deadlines are set up in each site's time zone.</span></span> <span data-ttu-id="83681-125">När du arbetar med säljorder och säljofferter konverteras deadline för order till din tidszon på sidan **Tillgängliga speditions- och inleveransdatum**.</span><span class="sxs-lookup"><span data-stu-id="83681-125">However, when you work with sales orders and sales quotations, the order entry deadline is converted to your time zone on the **Available ship and receipt dates** page.</span></span>  
 
-På sidan **Aktivera kombinationer för deadline för orderregistrering** definierar du de kombinationer av siter och deadlinegrupper för orderregistrering som tillåts.
+<span data-ttu-id="83681-126">På sidan **Aktivera kombinationer för deadline för orderregistrering** definierar du de kombinationer av siter och deadlinegrupper för orderregistrering som tillåts.</span><span class="sxs-lookup"><span data-stu-id="83681-126">On the **Activate order entry deadline combinations** page, you define the combinations of sites and order entry deadline groups that are allowed.</span></span>
 
-## <a name="example-order-entry-deadline"></a>Exempel: Deadline för orderregistrering
-Deadline för orderregistrering på tisdagar har ställts in på 16:00. På en särskild tisdag klockan 17:00 försöker du att ange det aktuella datumet som transportdatum. (Observera att det inte finns någon produktionstid för det här exemplet.) Om kryssrutan **Leveransdatumkontroll** är markerad får du en varning med information om att datumet inte är giltigt. Denna varning visas på sidan **Tillgängligt transport- och inleveransdatum** där du kan sedan välja andra datum.
+## <a name="example-order-entry-deadline"></a><span data-ttu-id="83681-127">Exempel: Deadline för orderregistrering</span><span class="sxs-lookup"><span data-stu-id="83681-127">Example: Order entry deadline</span></span>
+<span data-ttu-id="83681-128">Deadline för orderregistrering på tisdagar har ställts in på 16:00.</span><span class="sxs-lookup"><span data-stu-id="83681-128">The order entry deadline on Tuesdays has been set to 16:00.</span></span> <span data-ttu-id="83681-129">På en särskild tisdag klockan 17:00 försöker du att ange det aktuella datumet som transportdatum.</span><span class="sxs-lookup"><span data-stu-id="83681-129">On a particular Tuesday, at 17:00, you try to set the current date as the ship date.</span></span> <span data-ttu-id="83681-130">(Observera att det inte finns någon produktionstid för det här exemplet.) Om kryssrutan **Leveransdatumkontroll** är markerad får du en varning med information om att datumet inte är giltigt.</span><span class="sxs-lookup"><span data-stu-id="83681-130">(Note that there is no lead time for this example.) If the **Delivery date control** check box is selected, you receive a warning that states that the date isn't valid.</span></span> <span data-ttu-id="83681-131">Denna varning visas på sidan **Tillgängligt transport- och inleveransdatum** där du kan sedan välja andra datum.</span><span class="sxs-lookup"><span data-stu-id="83681-131">This warning appears on the **Available ship and receipt dates** page, where you can then select alternative dates.</span></span>
 
-## <a name="example-different-order-entry-deadlines-per-site"></a>Exempel: Olika deadline för orderregistreringar per site
-Ditt företag bedriver sin verksamhet på två siter. Siterna finns i andra tidszoner, som visas i följande tabell.
+## <a name="example-different-order-entry-deadlines-per-site"></a><span data-ttu-id="83681-132">Exempel: Olika deadline för orderregistreringar per site</span><span class="sxs-lookup"><span data-stu-id="83681-132">Example: Different order entry deadlines per site</span></span>
+<span data-ttu-id="83681-133">Ditt företag bedriver sin verksamhet på två siter.</span><span class="sxs-lookup"><span data-stu-id="83681-133">Your company consists of two sites.</span></span> <span data-ttu-id="83681-134">Siterna finns i andra tidszoner, som visas i följande tabell.</span><span class="sxs-lookup"><span data-stu-id="83681-134">The sites are located in different time zones, as shown in the following table.</span></span>
 
-| Webbplats A                      | Plats B                       |
+| <span data-ttu-id="83681-135">Webbplats A</span><span class="sxs-lookup"><span data-stu-id="83681-135">Site A</span></span>                      | <span data-ttu-id="83681-136">Plats B </span><span class="sxs-lookup"><span data-stu-id="83681-136">Site B</span></span>                      |
 |-----------------------------|-----------------------------|
-| Kalifornien                  | Florida                     |
-| Pacific, normaltid | Eastern, normaltid |
+| <span data-ttu-id="83681-137">Kalifornien</span><span class="sxs-lookup"><span data-stu-id="83681-137">California</span></span>                  | <span data-ttu-id="83681-138">Florida</span><span class="sxs-lookup"><span data-stu-id="83681-138">Florida</span></span>                     |
+| <span data-ttu-id="83681-139">Pacific, normaltid</span><span class="sxs-lookup"><span data-stu-id="83681-139">PST (Pacific Standard Time)</span></span> | <span data-ttu-id="83681-140">Eastern, normaltid</span><span class="sxs-lookup"><span data-stu-id="83681-140">EST (Eastern Standard Time)</span></span> |
 
-Plats A och B har definierat följande deadlines för orderregistrering.
+<span data-ttu-id="83681-141">Plats A och B har definierat följande deadlines för orderregistrering.</span><span class="sxs-lookup"><span data-stu-id="83681-141">Sites A and B have defined the following order entry deadlines.</span></span>
 
-| Dagen i veckan             | A: Deadlines för orderregistrering (PST) | B: Deadlines för order (EST) |
+| <span data-ttu-id="83681-142">Dagen i veckan</span><span class="sxs-lookup"><span data-stu-id="83681-142">Day of the week</span></span>             | <span data-ttu-id="83681-143">A: Deadlines för orderregistrering (PST)</span><span class="sxs-lookup"><span data-stu-id="83681-143">A: Order entry deadlines (PST)</span></span> | <span data-ttu-id="83681-144">B: Deadlines för order (EST)</span><span class="sxs-lookup"><span data-stu-id="83681-144">B: Order entry deadlines (EST)</span></span> |
 |-----------------------------|--------------------------------|--------------------------------|
-| Måndag                      | 13:00:00                          | 14:00:00                          |
-| Tisdag                     | 13:00:00                          | 14:00:00                          |
-| Onsdag                   | 13:00:00                          | 14:00:00                          |
-| Torsdag                    | 13:00:00                          | 14:00:00                          |
-| Fredag                      | 13:00:00                          | 14:00:00                          |
+| <span data-ttu-id="83681-145">Måndag</span><span class="sxs-lookup"><span data-stu-id="83681-145">Monday</span></span>                      | <span data-ttu-id="83681-146">13:00:00</span><span class="sxs-lookup"><span data-stu-id="83681-146">13:00</span></span>                          | <span data-ttu-id="83681-147">14:00:00</span><span class="sxs-lookup"><span data-stu-id="83681-147">14:00</span></span>                          |
+| <span data-ttu-id="83681-148">Tisdag</span><span class="sxs-lookup"><span data-stu-id="83681-148">Tuesday</span></span>                     | <span data-ttu-id="83681-149">13:00:00</span><span class="sxs-lookup"><span data-stu-id="83681-149">13:00</span></span>                          | <span data-ttu-id="83681-150">14:00:00</span><span class="sxs-lookup"><span data-stu-id="83681-150">14:00</span></span>                          |
+| <span data-ttu-id="83681-151">Onsdag</span><span class="sxs-lookup"><span data-stu-id="83681-151">Wednesday</span></span>                   | <span data-ttu-id="83681-152">13:00:00</span><span class="sxs-lookup"><span data-stu-id="83681-152">13:00</span></span>                          | <span data-ttu-id="83681-153">14:00:00</span><span class="sxs-lookup"><span data-stu-id="83681-153">14:00</span></span>                          |
+| <span data-ttu-id="83681-154">Torsdag</span><span class="sxs-lookup"><span data-stu-id="83681-154">Thursday</span></span>                    | <span data-ttu-id="83681-155">13:00:00</span><span class="sxs-lookup"><span data-stu-id="83681-155">13:00</span></span>                          | <span data-ttu-id="83681-156">14:00:00</span><span class="sxs-lookup"><span data-stu-id="83681-156">14:00</span></span>                          |
+| <span data-ttu-id="83681-157">Fredag</span><span class="sxs-lookup"><span data-stu-id="83681-157">Friday</span></span>                      | <span data-ttu-id="83681-158">13:00:00</span><span class="sxs-lookup"><span data-stu-id="83681-158">13:00</span></span>                          | <span data-ttu-id="83681-159">14:00:00</span><span class="sxs-lookup"><span data-stu-id="83681-159">14:00</span></span>                          |
 
-Du behandlar order och du befinner dig i Utah där tidzonen är MST (Mountain Standard Time). Det innebär att så länge du skickar order till site A före kl. 14:00 (MST) och till site B före kl. 12:00 (MST), så klarar du orderdeadline för båda siterna.  
+<span data-ttu-id="83681-160">Du behandlar order och du befinner dig i Utah där tidzonen är MST (Mountain Standard Time).</span><span class="sxs-lookup"><span data-stu-id="83681-160">You're an order processor in Utah, where the time zone is MST (Mountain Standard Time).</span></span> <span data-ttu-id="83681-161">Det innebär att så länge du skickar order till site A före kl. 14:00 (MST) och till site B före kl. 12:00 (MST), så klarar du orderdeadline för båda siterna.</span><span class="sxs-lookup"><span data-stu-id="83681-161">Therefore, provided that you place orders with site A before 14:00 MST and place orders with site B before 12:00 MST, you meet the order entry deadlines for both sites.</span></span>  
 
-Följande tabeller visar deadline för order för site A och B konverterat till MST-tid.
+<span data-ttu-id="83681-162">Följande tabeller visar deadline för order för site A och B konverterat till MST-tid.</span><span class="sxs-lookup"><span data-stu-id="83681-162">The following table shows how the order entry deadlines for sites A and B are converted to MST time.</span></span>
 
-| Plats A: PST         | Plats A: MST        | Plats B: EST           | Plats B: MST        |
+| <span data-ttu-id="83681-163">Plats A: PST</span><span class="sxs-lookup"><span data-stu-id="83681-163">Site A: PST</span></span>         | <span data-ttu-id="83681-164">Plats A: MST</span><span class="sxs-lookup"><span data-stu-id="83681-164">Site A: MST</span></span>        | <span data-ttu-id="83681-165">Plats B: EST</span><span class="sxs-lookup"><span data-stu-id="83681-165">Site B: EST</span></span>           | <span data-ttu-id="83681-166">Plats B: MST</span><span class="sxs-lookup"><span data-stu-id="83681-166">Site B: MST</span></span>        |
 |---------------------|--------------------|-----------------------|--------------------|
-| 13:00:00               | 14:00:00              | 14:00:00                 | 12:00:00              |
+| <span data-ttu-id="83681-167">13:00:00</span><span class="sxs-lookup"><span data-stu-id="83681-167">13:00</span></span>               | <span data-ttu-id="83681-168">14:00:00</span><span class="sxs-lookup"><span data-stu-id="83681-168">14:00</span></span>              | <span data-ttu-id="83681-169">14:00:00</span><span class="sxs-lookup"><span data-stu-id="83681-169">14:00</span></span>                 | <span data-ttu-id="83681-170">12:00:00</span><span class="sxs-lookup"><span data-stu-id="83681-170">12:00</span></span>              |
 
-**Obs!** Om justering av sommartid gäller, kommer deadline för order att justeras i enlighet därmed.
+<span data-ttu-id="83681-171">**Obs!** Om justering av sommartid gäller, kommer deadline för order att justeras i enlighet därmed.</span><span class="sxs-lookup"><span data-stu-id="83681-171">**Note:** If adjustment for daylight saving time is in effect, the order entry deadlines are adjusted accordingly.</span></span>
 
-## <a name="example-same-order-entry-deadline-per-site"></a>Exempel: Samma deadline för order per site
-Ditt företag bedriver sin verksamhet på två siter. Siterna finns i andra tidszoner, som visas i följande tabell.
+## <a name="example-same-order-entry-deadline-per-site"></a><span data-ttu-id="83681-172">Exempel: Samma deadline för order per site</span><span class="sxs-lookup"><span data-stu-id="83681-172">Example: Same order entry deadline per site</span></span>
+<span data-ttu-id="83681-173">Ditt företag bedriver sin verksamhet på två siter.</span><span class="sxs-lookup"><span data-stu-id="83681-173">Your company consists of two sites.</span></span> <span data-ttu-id="83681-174">Siterna finns i andra tidszoner, som visas i följande tabell.</span><span class="sxs-lookup"><span data-stu-id="83681-174">The sites are located in different time zones, as shown in the following table.</span></span>
 
-| Webbplats A                      | Plats B                       |
+| <span data-ttu-id="83681-175">Webbplats A</span><span class="sxs-lookup"><span data-stu-id="83681-175">Site A</span></span>                      | <span data-ttu-id="83681-176">Plats B </span><span class="sxs-lookup"><span data-stu-id="83681-176">Site B</span></span>                      |
 |-----------------------------|-----------------------------|
-| Kalifornien                  | Florida                     |
-| Pacific, normaltid | Eastern, normaltid |
+| <span data-ttu-id="83681-177">Kalifornien</span><span class="sxs-lookup"><span data-stu-id="83681-177">California</span></span>                  | <span data-ttu-id="83681-178">Florida</span><span class="sxs-lookup"><span data-stu-id="83681-178">Florida</span></span>                     |
+| <span data-ttu-id="83681-179">Pacific, normaltid</span><span class="sxs-lookup"><span data-stu-id="83681-179">PST (Pacific Standard Time)</span></span> | <span data-ttu-id="83681-180">Eastern, normaltid</span><span class="sxs-lookup"><span data-stu-id="83681-180">EST (Eastern Standard Time)</span></span> |
 
-Plats A och B har definierat följande deadlines för orderregistrering.
+<span data-ttu-id="83681-181">Plats A och B har definierat följande deadlines för orderregistrering.</span><span class="sxs-lookup"><span data-stu-id="83681-181">Sites A and B have defined the following order entry deadlines.</span></span>
 
-| Dagen i veckan | PST och EST |
+| <span data-ttu-id="83681-182">Dagen i veckan</span><span class="sxs-lookup"><span data-stu-id="83681-182">Day of the week</span></span> | <span data-ttu-id="83681-183">PST och EST</span><span class="sxs-lookup"><span data-stu-id="83681-183">PST and EST</span></span> |
 |-----------------|-------------|
-| Måndag          | 13:00:00       |
-| Tisdag         | 13:00:00       |
-| Onsdag       | 13:00:00       |
-| Torsdag        | 13:00:00       |
-| Fredag          | 13:00:00       |
+| <span data-ttu-id="83681-184">Måndag</span><span class="sxs-lookup"><span data-stu-id="83681-184">Monday</span></span>          | <span data-ttu-id="83681-185">13:00:00</span><span class="sxs-lookup"><span data-stu-id="83681-185">13:00</span></span>       |
+| <span data-ttu-id="83681-186">Tisdag</span><span class="sxs-lookup"><span data-stu-id="83681-186">Tuesday</span></span>         | <span data-ttu-id="83681-187">13:00:00</span><span class="sxs-lookup"><span data-stu-id="83681-187">13:00</span></span>       |
+| <span data-ttu-id="83681-188">Onsdag</span><span class="sxs-lookup"><span data-stu-id="83681-188">Wednesday</span></span>       | <span data-ttu-id="83681-189">13:00:00</span><span class="sxs-lookup"><span data-stu-id="83681-189">13:00</span></span>       |
+| <span data-ttu-id="83681-190">Torsdag</span><span class="sxs-lookup"><span data-stu-id="83681-190">Thursday</span></span>        | <span data-ttu-id="83681-191">13:00:00</span><span class="sxs-lookup"><span data-stu-id="83681-191">13:00</span></span>       |
+| <span data-ttu-id="83681-192">Fredag</span><span class="sxs-lookup"><span data-stu-id="83681-192">Friday</span></span>          | <span data-ttu-id="83681-193">13:00:00</span><span class="sxs-lookup"><span data-stu-id="83681-193">13:00</span></span>       |
 
-Du behandlar order och du befinner dig i Utah där tidzonen är MST. Det innebär att så länge du skickar order till site A före kl. 14:00 (MST) och till site B före kl. 11:00 (MST), så klarar du orderdeadline för båda siterna. 
+<span data-ttu-id="83681-194">Du behandlar order och du befinner dig i Utah där tidzonen är MST.</span><span class="sxs-lookup"><span data-stu-id="83681-194">You're an order processor in Utah, where the time zone is MST.</span></span> <span data-ttu-id="83681-195">Det innebär att så länge du skickar order till site A före kl. 14:00 (MST) och till site B före kl. 11:00 (MST), så klarar du orderdeadline för båda siterna.</span><span class="sxs-lookup"><span data-stu-id="83681-195">Therefore, provided that you place orders with site A before 14:00 MST and place orders with site B before 11:00 MST, you meet the order entry deadlines for both sites.</span></span> 
 
-Följande tabeller visar deadline för order för site A och B konverterat till MST-tid.
+<span data-ttu-id="83681-196">Följande tabeller visar deadline för order för site A och B konverterat till MST-tid.</span><span class="sxs-lookup"><span data-stu-id="83681-196">The following table shows how the order entry deadlines for sites A and B are converted to MST time.</span></span>
 
-| Plats A: PST         | Plats A: MST        | Plats B: EST           | Plats B: MST        |
+| <span data-ttu-id="83681-197">Plats A: PST</span><span class="sxs-lookup"><span data-stu-id="83681-197">Site A: PST</span></span>         | <span data-ttu-id="83681-198">Plats A: MST</span><span class="sxs-lookup"><span data-stu-id="83681-198">Site A: MST</span></span>        | <span data-ttu-id="83681-199">Plats B: EST</span><span class="sxs-lookup"><span data-stu-id="83681-199">Site B: EST</span></span>           | <span data-ttu-id="83681-200">Plats B: MST</span><span class="sxs-lookup"><span data-stu-id="83681-200">Site B: MST</span></span>        |
 |---------------------|--------------------|-----------------------|--------------------|
-| 13:00:00               | 14:00:00              | 13:00:00                 | 11:00:00              |
+| <span data-ttu-id="83681-201">13:00:00</span><span class="sxs-lookup"><span data-stu-id="83681-201">13:00</span></span>               | <span data-ttu-id="83681-202">14:00:00</span><span class="sxs-lookup"><span data-stu-id="83681-202">14:00</span></span>              | <span data-ttu-id="83681-203">13:00:00</span><span class="sxs-lookup"><span data-stu-id="83681-203">13:00</span></span>                 | <span data-ttu-id="83681-204">11:00:00</span><span class="sxs-lookup"><span data-stu-id="83681-204">11:00</span></span>              |
 
-**Obs!** Om justering av sommartid gäller, kommer deadline för order att justeras i enlighet därmed.
+<span data-ttu-id="83681-205">**Obs!** Om justering av sommartid gäller, kommer deadline för order att justeras i enlighet därmed.</span><span class="sxs-lookup"><span data-stu-id="83681-205">**Note:** If adjustment for daylight saving time is in effect, the order entry deadlines are adjusted accordingly.</span></span>
 
-<a name="see-also"></a>Se även
+<a name="see-also"></a><span data-ttu-id="83681-206">Se även</span><span class="sxs-lookup"><span data-stu-id="83681-206">See also</span></span>
 --------
 
-[Leveransplaner](delivery-schedules.md)
+[<span data-ttu-id="83681-207">Leveransplaner</span><span class="sxs-lookup"><span data-stu-id="83681-207">Delivery schedules</span></span>](delivery-schedules.md)
 
 
 

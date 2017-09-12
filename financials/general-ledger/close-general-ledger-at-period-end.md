@@ -18,40 +18,40 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: c4f5dae90c5fcaaa52a7087d7c20b2de343b7da0
-ms.openlocfilehash: bcf58b0ca995883bc466eec66a3d75c73c0be79e
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 16acadf0b814ff5863873280cd8d6e6ddbdcffc8
 ms.contentlocale: sv-se
-ms.lasthandoff: 08/01/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="close-the-general-ledger-at-period-end"></a>Stäng redovisningen vid periodslutet
+# <a name="close-the-general-ledger-at-period-end"></a><span data-ttu-id="03c6d-103">Stäng redovisningen vid periodslutet</span><span class="sxs-lookup"><span data-stu-id="03c6d-103">Close the general ledger at period end</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Det här avsnittet beskriver de uppgifter som normalt slutförs vid en periodstängning av redovisningen. 
+<span data-ttu-id="03c6d-104">Det här avsnittet beskriver de uppgifter som normalt slutförs vid en periodstängning av redovisningen.</span><span class="sxs-lookup"><span data-stu-id="03c6d-104">This topic describes the tasks that are typically completed when performing a period closing for General ledger.</span></span> 
 
-I redovisningen kan du slutföra stängningsprocedurerna för en period eller ett år. Stängningsprocesser förbereder systemet för en ny period. För att förbereda systemet för ett nytt år måste du köra processen för årsslutet. Varje organisation har olika processer och steg som utförs i samband med ett periodslut. Här följer några valfria steg för periodslut:
+<span data-ttu-id="03c6d-105">I redovisningen kan du slutföra stängningsprocedurerna för en period eller ett år.</span><span class="sxs-lookup"><span data-stu-id="03c6d-105">In General ledger, you can complete closing procedures for a period or a year.</span></span> <span data-ttu-id="03c6d-106">Stängningsprocesser förbereder systemet för en ny period.</span><span class="sxs-lookup"><span data-stu-id="03c6d-106">Closing processes prepare the system for a new period.</span></span> <span data-ttu-id="03c6d-107">För att förbereda systemet för ett nytt år måste du köra processen för årsslutet.</span><span class="sxs-lookup"><span data-stu-id="03c6d-107">To prepare the system for a new year, you must run the year end close process.</span></span> <span data-ttu-id="03c6d-108">Varje organisation har olika processer och steg som utförs i samband med ett periodslut.</span><span class="sxs-lookup"><span data-stu-id="03c6d-108">Each organization has different processes and steps that it performs for the end of a period.</span></span> <span data-ttu-id="03c6d-109">Här följer några valfria steg för periodslut:</span><span class="sxs-lookup"><span data-stu-id="03c6d-109">Here are some optional steps for period ends:</span></span>
 
--   Slutför alla uppgifter i alla andra moduler, som Kundreskontra, Leverantörsreskontra och Lager.
--   Kontrollera att alla journaler har bokförts.
--   Kör omräkningen i utländsk valuta för att skapa belopp för orealiserad vinst eller förlust.
--   Kvitta transaktioner för varje huvudbokskonto.
--   Behandla alla obligatorisk allokeringar.
--   Bokför periodslutsjusteringar manuellt.
--   Journalför transaktioner och granska rapporten **Redovisningsjournal**.
--   Utför en konsolidering genom att använda ett konsolideringsföretag eller en ekonomisk rapportering.
--   Generera bokslut för periodslutet genom att använda ekonomisk rapportering.
--   Ställ in redovisningsperioder på **Spärrad** så att ingen ytterligare bokföring sker. Du kan även begränsa en period till en viss användargrupp medan periodslutsaktiviteter sker för bättre kontroll. Det är ingen god idé att ange en period som **Permanent stängd**, detta eftersom du inte på nytt kan öppna en period som har stängts.
+-   <span data-ttu-id="03c6d-110">Slutför alla uppgifter i alla andra moduler, som Kundreskontra, Leverantörsreskontra och Lager.</span><span class="sxs-lookup"><span data-stu-id="03c6d-110">Complete all the tasks for all other modules, such as Accounts receivable, Accounts payable, and Inventory.</span></span>
+-   <span data-ttu-id="03c6d-111">Kontrollera att alla journaler har bokförts.</span><span class="sxs-lookup"><span data-stu-id="03c6d-111">Verify that all journals are posted.</span></span>
+-   <span data-ttu-id="03c6d-112">Kör omräkningen i utländsk valuta för att skapa belopp för orealiserad vinst eller förlust.</span><span class="sxs-lookup"><span data-stu-id="03c6d-112">Run foreign currency revaluation to generate any unrealized gain or loss amounts.</span></span>
+-   <span data-ttu-id="03c6d-113">Kvitta transaktioner för varje huvudbokskonto.</span><span class="sxs-lookup"><span data-stu-id="03c6d-113">Settle transactions for each ledger account.</span></span>
+-   <span data-ttu-id="03c6d-114">Behandla alla obligatorisk allokeringar.</span><span class="sxs-lookup"><span data-stu-id="03c6d-114">Process any required allocations.</span></span>
+-   <span data-ttu-id="03c6d-115">Bokför periodslutsjusteringar manuellt.</span><span class="sxs-lookup"><span data-stu-id="03c6d-115">Manually post period-end adjustments.</span></span>
+-   <span data-ttu-id="03c6d-116">Journalför transaktioner och granska rapporten **Redovisningsjournal**.</span><span class="sxs-lookup"><span data-stu-id="03c6d-116">Journalize transactions, and review the **Ledger journal** report.</span></span>
+-   <span data-ttu-id="03c6d-117">Utför en konsolidering genom att använda ett konsolideringsföretag eller en ekonomisk rapportering.</span><span class="sxs-lookup"><span data-stu-id="03c6d-117">Perform a consolidation by using a consolidation company or Financial reporting.</span></span>
+-   <span data-ttu-id="03c6d-118">Generera bokslut för periodslutet genom att använda ekonomisk rapportering.</span><span class="sxs-lookup"><span data-stu-id="03c6d-118">Generate period-end financial statements by using Financial reporting.</span></span>
+-   <span data-ttu-id="03c6d-119">Ställ in redovisningsperioder på **Spärrad** så att ingen ytterligare bokföring sker.</span><span class="sxs-lookup"><span data-stu-id="03c6d-119">Set ledger periods to **On hold**, so that no further posting occurs.</span></span> <span data-ttu-id="03c6d-120">Du kan även begränsa en period till en viss användargrupp medan periodslutsaktiviteter sker för bättre kontroll.</span><span class="sxs-lookup"><span data-stu-id="03c6d-120">You can also restrict a period to a specific user group while period-end activities are occurring, for better control.</span></span> <span data-ttu-id="03c6d-121">Det är ingen god idé att ange en period som **Permanent stängd**, detta eftersom du inte på nytt kan öppna en period som har stängts.</span><span class="sxs-lookup"><span data-stu-id="03c6d-121">It's not a good idea to set periods to **Permanently closed**, because you can't reopen a period that has been closed.</span></span>
 
-Arbetsytan för ett finansiellt periodslut kan användas för att organisera och spåra de aktiviteter som krävs för olika periodslutsprocesser. 
+<span data-ttu-id="03c6d-122">Arbetsytan för ett finansiellt periodslut kan användas för att organisera och spåra de aktiviteter som krävs för olika periodslutsprocesser.</span><span class="sxs-lookup"><span data-stu-id="03c6d-122">The Financial period close workspace can be used to organize and track the tasks required for various period end processes.</span></span> 
 
 
-Mer information finns i följande avsnitt:
-- [Arbetsyta för räkenskapsperiodens stängning](financial-period-close-workspace.md) 
-- [Årsbokslut](Year-end-close.md)  
-- [Masstäng räkenskapsperiod](tasks/mass-financial-period-close.md)
+<span data-ttu-id="03c6d-123">Mer information finns i följande avsnitt:</span><span class="sxs-lookup"><span data-stu-id="03c6d-123">For more information, see the following topics for more information:</span></span>
+- [<span data-ttu-id="03c6d-124">Arbetsyta för räkenskapsperiodens stängning</span><span class="sxs-lookup"><span data-stu-id="03c6d-124">Financial period close workspace</span></span>](financial-period-close-workspace.md) 
+- [<span data-ttu-id="03c6d-125">Årsbokslut</span><span class="sxs-lookup"><span data-stu-id="03c6d-125">Year end close</span></span>](Year-end-close.md)  
+- [<span data-ttu-id="03c6d-126">Masstäng räkenskapsperiod</span><span class="sxs-lookup"><span data-stu-id="03c6d-126">Mass financial period close</span></span>](tasks/mass-financial-period-close.md)
 
 
 

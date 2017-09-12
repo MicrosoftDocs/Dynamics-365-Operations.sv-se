@@ -16,28 +16,28 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: df39768595ffe21d103a01a57decdad2d0a22d4d
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 05b7acaa903c7223111db2e879cff2147df34628
 ms.contentlocale: sv-se
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="define-cost-control-units"></a>Definiera kostnadsstyrenheter
+# <a name="define-cost-control-units"></a><span data-ttu-id="3da2a-103">Definiera kostnadsstyrenheter</span><span class="sxs-lookup"><span data-stu-id="3da2a-103">Define cost control units</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-I den här proceduren beskrivs hur du definierar kostnadsstyrenheter i huvudboken för kostnadsredovisning. Du väljer kostnadsobjektdimensionen som du vill kontrollera kostnader för i huvudboken. Kostnadsobjektdimensionsmedlemmarna omvandlas till kostnadsobjekt för kostnadsstyrenheterna. Det demonstrationsdataföretag som används för att skapa den här proceduren är USP2.
+<span data-ttu-id="3da2a-104">I den här proceduren beskrivs hur du definierar kostnadsstyrenheter i huvudboken för kostnadsredovisning.</span><span class="sxs-lookup"><span data-stu-id="3da2a-104">This procedure shows how to define cost control units in the cost accounting ledger.</span></span> <span data-ttu-id="3da2a-105">Du väljer kostnadsobjektdimensionen som du vill kontrollera kostnader för i huvudboken.</span><span class="sxs-lookup"><span data-stu-id="3da2a-105">You select the cost object dimension for which you want to control costs in the ledger.</span></span> <span data-ttu-id="3da2a-106">Kostnadsobjektdimensionsmedlemmarna omvandlas till kostnadsobjekt för kostnadsstyrenheterna.</span><span class="sxs-lookup"><span data-stu-id="3da2a-106">The cost object dimension members are transformed into cost objects of the cost control units.</span></span> <span data-ttu-id="3da2a-107">Det demonstrationsdataföretag som används för att skapa den här proceduren är USP2.</span><span class="sxs-lookup"><span data-stu-id="3da2a-107">The demo data company used to create this procedure is USP2.</span></span>
 
-1. Gå till Kostnadsredovisning > Redovisningsinställningar > Huvudböcker för kostnadsredovisning.
-2. Hitta och markera önskad post i listan.
-3. Klicka på Styrenheter.
-4. Klicka på Ny.
-5. Skriv ett värde i fältet Namn.
-6. Ange eller välj ett värde i fältet Dimension.
-7. Klicka på Spara.
-8. Klicka på Ny.
-9. Skriv ett värde i fältet Namn.
-10. Ange eller välj ett värde i fältet Dimension.
-11. Klicka på Spara.
+1. <span data-ttu-id="3da2a-108">Gå till Kostnadsredovisning > Redovisningsinställningar > Huvudböcker för kostnadsredovisning.</span><span class="sxs-lookup"><span data-stu-id="3da2a-108">Go to Cost accounting > Ledger setup > Cost accounting ledgers.</span></span>
+2. <span data-ttu-id="3da2a-109">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="3da2a-109">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="3da2a-110">Klicka på Styrenheter.</span><span class="sxs-lookup"><span data-stu-id="3da2a-110">Click Control units.</span></span>
+4. <span data-ttu-id="3da2a-111">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="3da2a-111">Click New.</span></span>
+5. <span data-ttu-id="3da2a-112">Skriv ett värde i fältet Namn.</span><span class="sxs-lookup"><span data-stu-id="3da2a-112">In the Name field, type a value.</span></span>
+6. <span data-ttu-id="3da2a-113">Ange eller välj ett värde i fältet Dimension.</span><span class="sxs-lookup"><span data-stu-id="3da2a-113">In the Dimension field, enter or select a value.</span></span>
+7. <span data-ttu-id="3da2a-114">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="3da2a-114">Click Save.</span></span>
+8. <span data-ttu-id="3da2a-115">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="3da2a-115">Click New.</span></span>
+9. <span data-ttu-id="3da2a-116">Skriv ett värde i fältet Namn.</span><span class="sxs-lookup"><span data-stu-id="3da2a-116">In the Name field, type a value.</span></span>
+10. <span data-ttu-id="3da2a-117">Ange eller välj ett värde i fältet Dimension.</span><span class="sxs-lookup"><span data-stu-id="3da2a-117">In the Dimension field, enter or select a value.</span></span>
+11. <span data-ttu-id="3da2a-118">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="3da2a-118">Click Save.</span></span>
 
 

@@ -16,45 +16,45 @@ ms.author: knelson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 1200b18b2109cef2f6d89c0b93ebb3b1d127decb
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 7c9093439c4c0c4645d96ad97ba56f31026ec334
 ms.contentlocale: sv-se
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="receive-items-on-purchase-order-from-item-requirement"></a>Ta emot artiklar i inköpsorder från artikelbehov
+# <a name="receive-items-on-purchase-order-from-item-requirement"></a><span data-ttu-id="2d07c-103">Ta emot artiklar i inköpsorder från artikelbehov</span><span class="sxs-lookup"><span data-stu-id="2d07c-103">Receive items on purchase order from item requirement</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Nedan beskrivs proceduren för att ta emot artiklar i en inköpsorder från ett artikelbehov.
+<span data-ttu-id="2d07c-104">Nedan beskrivs proceduren för att ta emot artiklar i en inköpsorder från ett artikelbehov.</span><span class="sxs-lookup"><span data-stu-id="2d07c-104">This procedure shows how to receive items on a purchase order from an item requirement.</span></span>
 
-Genom att använda ett artikelbehov i stället för en artikeltransaktion kan du planera för inleverans precis innan artikeln verkligen används, skapa en inköpsorder, ta med artikeln i handelsavtalsramverket och ta med artikelbehovet i produktionsplaneringen. 
+<span data-ttu-id="2d07c-105">Genom att använda ett artikelbehov i stället för en artikeltransaktion kan du planera för inleverans precis innan artikeln verkligen används, skapa en inköpsorder, ta med artikeln i handelsavtalsramverket och ta med artikelbehovet i produktionsplaneringen.</span><span class="sxs-lookup"><span data-stu-id="2d07c-105">By using an item requirement instead of an item transaction, you can plan for delivery just before the item is actually used, create a purchase order, include the item in the trade-agreement framework, and include the item requirement in production planning.</span></span> 
 
-I den här uppgiften används datauppsättningen USSI.
+<span data-ttu-id="2d07c-106">I den här uppgiften används datauppsättningen USSI.</span><span class="sxs-lookup"><span data-stu-id="2d07c-106">This task uses the USSI data set.</span></span>
 
-1. Gå till Projekthantering och redovisning > Projekt > Alla projekt.
-2. Klicka på länken på den valda raden i listan.
-3. Klicka på Plan i åtgärdsfönstret.
-4. Klicka på Artikelbehov.
-5. Klicka på Ny.
-6. Markera vald rad i listan.
-7. Ange eller välj ett värde i fältet Artikelnummer.
-8. Ange ett tal i fältet Kvantitet.
-9. Klicka på Spara.
-10. Klicka på Hantera i åtgärdsfönstret.
-11. Klicka på Funktioner.
-12. Klicka på Skapa inköpsorder.
-13. Markera kryssrutan Inkludera.
-14. Ange eller välj ett värde i fältet Leverantörskonto.
-15. Klicka på OK.
-16. Gå till leverantörsskulder > inköpsorder > Alla inköpsorder.
-17. Klicka på länken på den valda raden i listan.
-18. Klicka på Inköp i åtgärdsfönstret.
-19. Klicka på Bekräfta.
-20. Klicka på Ta emot i åtgärdsfönstret.
-21. Klicka på Produktinleverans.
-22. Markera vald rad i listan.
-23. Skriv ett värde i fältet Produktinleverans.
-24. Klicka på OK.
+1. <span data-ttu-id="2d07c-107">Gå till Projekthantering och redovisning > Projekt > Alla projekt.</span><span class="sxs-lookup"><span data-stu-id="2d07c-107">Go to Project management and accounting > Projects > All projects.</span></span>
+2. <span data-ttu-id="2d07c-108">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="2d07c-108">In the list, click the link in the selected row.</span></span>
+3. <span data-ttu-id="2d07c-109">Klicka på Plan i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="2d07c-109">On the Action Pane, click Plan.</span></span>
+4. <span data-ttu-id="2d07c-110">Klicka på Artikelbehov.</span><span class="sxs-lookup"><span data-stu-id="2d07c-110">Click Item requirements.</span></span>
+5. <span data-ttu-id="2d07c-111">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="2d07c-111">Click New.</span></span>
+6. <span data-ttu-id="2d07c-112">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="2d07c-112">In the list, mark the selected row.</span></span>
+7. <span data-ttu-id="2d07c-113">Ange eller välj ett värde i fältet Artikelnummer.</span><span class="sxs-lookup"><span data-stu-id="2d07c-113">In the Item number field, enter or select a value.</span></span>
+8. <span data-ttu-id="2d07c-114">Ange ett tal i fältet Kvantitet.</span><span class="sxs-lookup"><span data-stu-id="2d07c-114">In the Quantity field, enter a number.</span></span>
+9. <span data-ttu-id="2d07c-115">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="2d07c-115">Click Save.</span></span>
+10. <span data-ttu-id="2d07c-116">Klicka på Hantera i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="2d07c-116">On the Action Pane, click Manage.</span></span>
+11. <span data-ttu-id="2d07c-117">Klicka på Funktioner.</span><span class="sxs-lookup"><span data-stu-id="2d07c-117">Click Functions.</span></span>
+12. <span data-ttu-id="2d07c-118">Klicka på Skapa inköpsorder.</span><span class="sxs-lookup"><span data-stu-id="2d07c-118">Click Create purchase order.</span></span>
+13. <span data-ttu-id="2d07c-119">Markera kryssrutan Inkludera.</span><span class="sxs-lookup"><span data-stu-id="2d07c-119">Select the Include check box.</span></span>
+14. <span data-ttu-id="2d07c-120">Ange eller välj ett värde i fältet Leverantörskonto.</span><span class="sxs-lookup"><span data-stu-id="2d07c-120">In the Vendor account field, enter or select a value.</span></span>
+15. <span data-ttu-id="2d07c-121">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="2d07c-121">Click OK.</span></span>
+16. <span data-ttu-id="2d07c-122">Gå till leverantörsskulder > inköpsorder > Alla inköpsorder.</span><span class="sxs-lookup"><span data-stu-id="2d07c-122">Go to Accounts payable > Purchase orders > All purchase orders.</span></span>
+17. <span data-ttu-id="2d07c-123">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="2d07c-123">In the list, click the link in the selected row.</span></span>
+18. <span data-ttu-id="2d07c-124">Klicka på Inköp i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="2d07c-124">On the Action Pane, click Purchase.</span></span>
+19. <span data-ttu-id="2d07c-125">Klicka på Bekräfta.</span><span class="sxs-lookup"><span data-stu-id="2d07c-125">Click Confirm.</span></span>
+20. <span data-ttu-id="2d07c-126">Klicka på Ta emot i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="2d07c-126">On the Action Pane, click Receive.</span></span>
+21. <span data-ttu-id="2d07c-127">Klicka på Produktinleverans.</span><span class="sxs-lookup"><span data-stu-id="2d07c-127">Click Product receipt.</span></span>
+22. <span data-ttu-id="2d07c-128">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="2d07c-128">In the list, mark the selected row.</span></span>
+23. <span data-ttu-id="2d07c-129">Skriv ett värde i fältet Produktinleverans.</span><span class="sxs-lookup"><span data-stu-id="2d07c-129">In the Product receipt field, type a value.</span></span>
+24. <span data-ttu-id="2d07c-130">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="2d07c-130">Click OK.</span></span>
 
 

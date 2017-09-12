@@ -16,41 +16,41 @@ ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: ef4d5deb6ea812023112251f00fcdd25229e02e7
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: db813353eef97375451e78320d6d14de74292309
 ms.contentlocale: sv-se
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-a-main-account"></a>Skapa ett huvudkonto
+# <a name="create-a-main-account"></a><span data-ttu-id="4822f-103">Skapa ett huvudkonto</span><span class="sxs-lookup"><span data-stu-id="4822f-103">Create a main account</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Den här uppgiften vägleder dig genom stegen för att lägga till en huvudkonto till en befintlig kontoplan. I den här registreringen används demonstrationsföretaget USMF.  
+<span data-ttu-id="4822f-104">Den här uppgiften vägleder dig genom stegen för att lägga till en huvudkonto till en befintlig kontoplan.</span><span class="sxs-lookup"><span data-stu-id="4822f-104">This task guide steps through adding a main account to an existing chart of accounts.</span></span> <span data-ttu-id="4822f-105">I den här registreringen används demonstrationsföretaget USMF.</span><span class="sxs-lookup"><span data-stu-id="4822f-105">This recording uses the USMF demo company.</span></span>  
 
-1. Gå till Redovisning > Kontoplan > Konton > Huvudkonton.
-2. Klicka på Ny.
-3. Ange ett värde i fältet Huvudkonto.
-4. Skriv ett värde i fältet Namn.
-5. I fältet Huvudkontotyp väljer du den typ som bäst representerar kontonas saldo och plats i boksluten.
-6. I listan väljer du den kontokategori som huvudkontot tillhör.
-    * Kontokategorin används för ekonomiska standardrapporter och innehåll för Power BI-instrumentpaneler.  
-7. Klicka på länken på den valda raden i listan.
-    * Ändra förvalt debet- eller kreditsaldo.  
-8. I fältet Standardvaluta väljer du ett värde i listan med valutor.
-9. Hitta och markera önskad post i listan.
-10. Klicka på länken på den valda raden i listan.
-11. Växla utökningen av avsnittet Juridisk person åsidosätter.
-12. Klicka på Lägg till för att välja en juridisk person.
-13. Välj den juridiska personen i listan.
-14. Klicka på Lägg till.
-15. Markera vald rad i listan.
-16. Markera eller avmarkera kryssrutan Uppskjutet.
-17. Expandera snabbfliken Ekonomisk rapportering.
-18. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Valutakurstyp.
-19. Välj valutakurstypen för kontot i listan.
-20. Klicka på länken på den valda raden i listan.
-21. Välj metoden för att beräkna valutakurser för kontot i fältet Valutaregistreringstyp.
-22. Stäng sidan.
+1. <span data-ttu-id="4822f-106">Gå till Redovisning > Kontoplan > Konton > Huvudkonton.</span><span class="sxs-lookup"><span data-stu-id="4822f-106">Go to General ledger > Chart of accounts > Accounts > Main accounts.</span></span>
+2. <span data-ttu-id="4822f-107">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="4822f-107">Click New.</span></span>
+3. <span data-ttu-id="4822f-108">Ange ett värde i fältet Huvudkonto.</span><span class="sxs-lookup"><span data-stu-id="4822f-108">In the Main account field, type a value.</span></span>
+4. <span data-ttu-id="4822f-109">Skriv ett värde i fältet Namn.</span><span class="sxs-lookup"><span data-stu-id="4822f-109">In the Name field, type a value.</span></span>
+5. <span data-ttu-id="4822f-110">I fältet Huvudkontotyp väljer du den typ som bäst representerar kontonas saldo och plats i boksluten.</span><span class="sxs-lookup"><span data-stu-id="4822f-110">In the Main account type field, select the type that best represents the accounts balance and location on financial statements.</span></span>
+6. <span data-ttu-id="4822f-111">I listan väljer du den kontokategori som huvudkontot tillhör.</span><span class="sxs-lookup"><span data-stu-id="4822f-111">In the list, select the account category the main account belongs to.</span></span>
+    * <span data-ttu-id="4822f-112">Kontokategorin används för ekonomiska standardrapporter och innehåll för Power BI-instrumentpaneler.</span><span class="sxs-lookup"><span data-stu-id="4822f-112">Account category is used for default financial reports and Power BI dashboard content.</span></span>  
+7. <span data-ttu-id="4822f-113">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="4822f-113">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="4822f-114">Ändra förvalt debet- eller kreditsaldo.</span><span class="sxs-lookup"><span data-stu-id="4822f-114">Change the default debit or credit balance.</span></span>  
+8. <span data-ttu-id="4822f-115">I fältet Standardvaluta väljer du ett värde i listan med valutor.</span><span class="sxs-lookup"><span data-stu-id="4822f-115">In the Default currency field, select a value from the list of currencies.</span></span>
+9. <span data-ttu-id="4822f-116">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="4822f-116">In the list, find and select the desired record.</span></span>
+10. <span data-ttu-id="4822f-117">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="4822f-117">In the list, click the link in the selected row.</span></span>
+11. <span data-ttu-id="4822f-118">Växla utökningen av avsnittet Juridisk person åsidosätter.</span><span class="sxs-lookup"><span data-stu-id="4822f-118">Toggle the expansion of the Legal entity overrides section.</span></span>
+12. <span data-ttu-id="4822f-119">Klicka på Lägg till för att välja en juridisk person.</span><span class="sxs-lookup"><span data-stu-id="4822f-119">Click Add to select a legal entity.</span></span>
+13. <span data-ttu-id="4822f-120">Välj den juridiska personen i listan.</span><span class="sxs-lookup"><span data-stu-id="4822f-120">In the list, select the Legal entity.</span></span>
+14. <span data-ttu-id="4822f-121">Klicka på Lägg till.</span><span class="sxs-lookup"><span data-stu-id="4822f-121">Click Add.</span></span>
+15. <span data-ttu-id="4822f-122">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="4822f-122">In the list, mark the selected row.</span></span>
+16. <span data-ttu-id="4822f-123">Markera eller avmarkera kryssrutan Uppskjutet.</span><span class="sxs-lookup"><span data-stu-id="4822f-123">Check or uncheck the Suspended checkbox.</span></span>
+17. <span data-ttu-id="4822f-124">Expandera snabbfliken Ekonomisk rapportering.</span><span class="sxs-lookup"><span data-stu-id="4822f-124">Expand the Financial reporting fast tab.</span></span>
+18. <span data-ttu-id="4822f-125">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Valutakurstyp.</span><span class="sxs-lookup"><span data-stu-id="4822f-125">In the Exchange rate type field, click the drop-down button to open the lookup.</span></span>
+19. <span data-ttu-id="4822f-126">Välj valutakurstypen för kontot i listan.</span><span class="sxs-lookup"><span data-stu-id="4822f-126">In the list, select the Exchange rate type for the account.</span></span>
+20. <span data-ttu-id="4822f-127">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="4822f-127">In the list, click the link in the selected row.</span></span>
+21. <span data-ttu-id="4822f-128">Välj metoden för att beräkna valutakurser för kontot i fältet Valutaregistreringstyp.</span><span class="sxs-lookup"><span data-stu-id="4822f-128">In the Currency translation type field, select the method for calculating exchange rates for the account.</span></span>
+22. <span data-ttu-id="4822f-129">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="4822f-129">Close the page.</span></span>
 
 

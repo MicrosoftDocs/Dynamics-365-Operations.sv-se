@@ -16,47 +16,47 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: 93215c752e035e68b8d9a7e80cffd9da63a31bae
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: b1caaf5f52282a8daae62602dcc5ef86b901e338
 ms.contentlocale: sv-se
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="develop-a-succession-plan"></a>Utveckla en successionsplan
+# <a name="develop-a-succession-plan"></a><span data-ttu-id="191a2-103">Utveckla en successionsplan</span><span class="sxs-lookup"><span data-stu-id="191a2-103">Develop a succession plan</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-I takt med att organisationen växer och du börjar planera successioner kan du vilja hitta någon som har liknande kompetens som en annan person.  Med kompetensmappning kan du analysera dina befintliga medarbetare och sökande för att se om de matchar kompetensuppsättningen hos en värderad medarbetare. Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.
+<span data-ttu-id="191a2-104">I takt med att organisationen växer och du börjar planera successioner kan du vilja hitta någon som har liknande kompetens som en annan person.</span><span class="sxs-lookup"><span data-stu-id="191a2-104">As your organization grows, and you consider succession planning, you may want to find someone who has similar skills to another person.</span></span>  <span data-ttu-id="191a2-105">Med kompetensmappning kan du analysera dina befintliga medarbetare och sökande för att se om de matchar kompetensuppsättningen hos en värderad medarbetare.</span><span class="sxs-lookup"><span data-stu-id="191a2-105">Skill mapping allows you to analyse your existing employees and applicants to see if they match the skill set of a valued employee.</span></span> <span data-ttu-id="191a2-106">Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.</span><span class="sxs-lookup"><span data-stu-id="191a2-106">The demo data company used to create this procedure is USMF.</span></span>
 
-1. Gå till Personal > Kompetenser > Kompetensanalys > Kompetensmappningsprofiler.
-2. Klicka på Ny.
-3. Ange ett namn på din kompetensmappning i kompetensmappningsfältet.  Exempel: Medarbetare.
-4. Ange ett värde i fältet Beskrivning.
-5. Ange ett datum i fältet Datum.
-6. Klicka på Hämta profil.
-7. Klicka på Person.
-8. Skriv in ett namn eller välj ett i listrutan i personfältet.  Exempel: Cassie Hicks.
-9. Klicka på OK.
-10. Expandera certifikatsnabbfliken om du vill visa eller redigera certifikat som ingår i kompetensmappningen.
-11. Expandera snabbfliken Kompetenser om du vill visa kompetenser som ska ingå.
-12. Markera den första raden i listan.  Exempel: Redovisning
-13. Markera kryssrutan Valfritt.
-14. Markera ett alternativ i fältet Betydelse.
-    * När du markerar en kompetens som valfri, måste du att välja betydelsenivå för kompetensen.  
-15. Väl rad 2 i listan.
-16. Markera kryssrutan Valfritt.
-17. Markera ett alternativ i fältet Betydelse.
-18. Väl rad 3 i listan.
-19. Markera kryssrutan Valfritt.
-20. Markera ett alternativ i fältet Betydelse.
-21. Väl rad 4 i listan.
-22. Markera kryssrutan Valfritt.
-23. Markera ett alternativ i fältet Betydelse.
-24. Expandera utbildningssnabbfliken när du vill visa eller redigera utbildningskompetenserna som ska inkluderas i kompetensmappningen.
-25. Klicka på Kör.
-26. Klicka på OK.
-27. Klicka på Resultat.
-28. Klicka på Rapport.
-    * Rapporten anger de bästa matchningarna högst upp i rapporten.  Du kan se att det finns en lucka i listan.  Detta är skillnaden mellan nivån som anges i kompetensmappningen och nivån på färdigheten som tilldelas till en person.  
+1. <span data-ttu-id="191a2-107">Gå till Personal > Kompetenser > Kompetensanalys > Kompetensmappningsprofiler.</span><span class="sxs-lookup"><span data-stu-id="191a2-107">Go to Human resources > Competencies > Skill analysis > Skill mapping profiles.</span></span>
+2. <span data-ttu-id="191a2-108">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="191a2-108">Click New.</span></span>
+3. <span data-ttu-id="191a2-109">Ange ett namn på din kompetensmappning i kompetensmappningsfältet.</span><span class="sxs-lookup"><span data-stu-id="191a2-109">In the Skill mapping field, In the Skill mapping field, enter a name for your skill mapping.</span></span>  <span data-ttu-id="191a2-110">Exempel: Medarbetare.</span><span class="sxs-lookup"><span data-stu-id="191a2-110">Example: Employee.</span></span>
+4. <span data-ttu-id="191a2-111">Ange ett värde i fältet Beskrivning.</span><span class="sxs-lookup"><span data-stu-id="191a2-111">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="191a2-112">Ange ett datum i fältet Datum.</span><span class="sxs-lookup"><span data-stu-id="191a2-112">In the Date field, enter a date.</span></span>
+6. <span data-ttu-id="191a2-113">Klicka på Hämta profil.</span><span class="sxs-lookup"><span data-stu-id="191a2-113">Click Retrieve profile.</span></span>
+7. <span data-ttu-id="191a2-114">Klicka på Person.</span><span class="sxs-lookup"><span data-stu-id="191a2-114">Click Person.</span></span>
+8. <span data-ttu-id="191a2-115">Skriv in ett namn eller välj ett i listrutan i personfältet.</span><span class="sxs-lookup"><span data-stu-id="191a2-115">In the Person field, type in a name, or select the drop down.</span></span>  <span data-ttu-id="191a2-116">Exempel: Cassie Hicks.</span><span class="sxs-lookup"><span data-stu-id="191a2-116">Example: Cassie Hicks.</span></span>
+9. <span data-ttu-id="191a2-117">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="191a2-117">Click OK.</span></span>
+10. <span data-ttu-id="191a2-118">Expandera certifikatsnabbfliken om du vill visa eller redigera certifikat som ingår i kompetensmappningen.</span><span class="sxs-lookup"><span data-stu-id="191a2-118">Exapnd the certificates fast tab to view or edit the certificates included in the skill mapping.</span></span>
+11. <span data-ttu-id="191a2-119">Expandera snabbfliken Kompetenser om du vill visa kompetenser som ska ingå.</span><span class="sxs-lookup"><span data-stu-id="191a2-119">Expand the Skills fast tab to view or edit the skills to be included.</span></span>
+12. <span data-ttu-id="191a2-120">Markera den första raden i listan.</span><span class="sxs-lookup"><span data-stu-id="191a2-120">In the list, mark the first row.</span></span>  <span data-ttu-id="191a2-121">Exempel: Redovisning</span><span class="sxs-lookup"><span data-stu-id="191a2-121">Example:  Accounting</span></span>
+13. <span data-ttu-id="191a2-122">Markera kryssrutan Valfritt.</span><span class="sxs-lookup"><span data-stu-id="191a2-122">Click the Optional checkbox.</span></span>
+14. <span data-ttu-id="191a2-123">Markera ett alternativ i fältet Betydelse.</span><span class="sxs-lookup"><span data-stu-id="191a2-123">In the Importance field, select an option.</span></span>
+    * <span data-ttu-id="191a2-124">När du markerar en kompetens som valfri, måste du att välja betydelsenivå för kompetensen.</span><span class="sxs-lookup"><span data-stu-id="191a2-124">When you mark a skill as optional, you are required to select the importance level of the skill.</span></span>  
+15. <span data-ttu-id="191a2-125">Väl rad 2 i listan.</span><span class="sxs-lookup"><span data-stu-id="191a2-125">In the list, select row 2.</span></span>
+16. <span data-ttu-id="191a2-126">Markera kryssrutan Valfritt.</span><span class="sxs-lookup"><span data-stu-id="191a2-126">Click the Optional checkbox.</span></span>
+17. <span data-ttu-id="191a2-127">Markera ett alternativ i fältet Betydelse.</span><span class="sxs-lookup"><span data-stu-id="191a2-127">In the Importance field, select an option.</span></span>
+18. <span data-ttu-id="191a2-128">Väl rad 3 i listan.</span><span class="sxs-lookup"><span data-stu-id="191a2-128">In the list, select row 3.</span></span>
+19. <span data-ttu-id="191a2-129">Markera kryssrutan Valfritt.</span><span class="sxs-lookup"><span data-stu-id="191a2-129">Click the Optional checkbox.</span></span>
+20. <span data-ttu-id="191a2-130">Markera ett alternativ i fältet Betydelse.</span><span class="sxs-lookup"><span data-stu-id="191a2-130">In the Importance field, select an option.</span></span>
+21. <span data-ttu-id="191a2-131">Väl rad 4 i listan.</span><span class="sxs-lookup"><span data-stu-id="191a2-131">In the list, select row 4.</span></span>
+22. <span data-ttu-id="191a2-132">Markera kryssrutan Valfritt.</span><span class="sxs-lookup"><span data-stu-id="191a2-132">Click the Optional checkbox.</span></span>
+23. <span data-ttu-id="191a2-133">Markera ett alternativ i fältet Betydelse.</span><span class="sxs-lookup"><span data-stu-id="191a2-133">In the Importance field, select an option.</span></span>
+24. <span data-ttu-id="191a2-134">Expandera utbildningssnabbfliken när du vill visa eller redigera utbildningskompetenserna som ska inkluderas i kompetensmappningen.</span><span class="sxs-lookup"><span data-stu-id="191a2-134">Expand the Education fast tab to view or edit the education competencies to be included in the skill mapping.</span></span>
+25. <span data-ttu-id="191a2-135">Klicka på Kör.</span><span class="sxs-lookup"><span data-stu-id="191a2-135">Click Execute.</span></span>
+26. <span data-ttu-id="191a2-136">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="191a2-136">Click OK.</span></span>
+27. <span data-ttu-id="191a2-137">Klicka på Resultat.</span><span class="sxs-lookup"><span data-stu-id="191a2-137">Click Result.</span></span>
+28. <span data-ttu-id="191a2-138">Klicka på Rapport.</span><span class="sxs-lookup"><span data-stu-id="191a2-138">Click Report.</span></span>
+    * <span data-ttu-id="191a2-139">Rapporten anger de bästa matchningarna högst upp i rapporten.</span><span class="sxs-lookup"><span data-stu-id="191a2-139">The report will list the best matches at the top of the report.</span></span>  <span data-ttu-id="191a2-140">Du kan se att det finns en lucka i listan.</span><span class="sxs-lookup"><span data-stu-id="191a2-140">You can see that there is a gap element listed.</span></span>  <span data-ttu-id="191a2-141">Detta är skillnaden mellan nivån som anges i kompetensmappningen och nivån på färdigheten som tilldelas till en person.</span><span class="sxs-lookup"><span data-stu-id="191a2-141">This is the difference between the level that was listed on the skill mapping, and the level of the skill that is assigned to the person.</span></span>  
 
 

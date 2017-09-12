@@ -15,192 +15,192 @@ ms.custom: 54502
 ms.assetid: d29aac80-e6c7-463c-b7a0-995aac84ea0b
 ms.search.region: Global
 ms.author: jasongre
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 8daf9d0c5b83e3bca66c0229a328737adeeb2951
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 45582c5378fb2b3d6c9e26632accf37197a671bb
 ms.contentlocale: sv-se
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="keyboard-shortcuts"></a>Kortkommandon
+# <a name="keyboard-shortcuts"></a><span data-ttu-id="38bf5-103">Kortkommandon</span><span class="sxs-lookup"><span data-stu-id="38bf5-103">Keyboard shortcuts</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Följande kortkommandon gäller i hela Microsoft Dynamics 365 for Finance and Operations. 
+<span data-ttu-id="38bf5-104">Följande kortkommandon gäller i hela Microsoft Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="38bf5-104">The following keyboard shortcuts apply across Microsoft Dynamics 365 for Finance and Operations.</span></span> 
 
-**Obs!** Tangentbordsgenvägarna som beskrivs här hänvisar till en amerikansk tangentbordslayout. Knappar på andra tangentbordslayouter kan kanske inte exakt motsvarar tangenterna på ett tangentbord i USA.
+<span data-ttu-id="38bf5-105">**Obs!** Tangentbordsgenvägarna som beskrivs här hänvisar till en amerikansk tangentbordslayout.</span><span class="sxs-lookup"><span data-stu-id="38bf5-105">**Note:** The keyboard shortcuts described here refer to the United States keyboard layout.</span></span> <span data-ttu-id="38bf5-106">Knappar på andra tangentbordslayouter kan kanske inte exakt motsvarar tangenterna på ett tangentbord i USA.</span><span class="sxs-lookup"><span data-stu-id="38bf5-106">Keys on other keyboard layouts might not correspond exactly to the keys on a US keyboard.</span></span>
 
-## <a name="action-shortcuts"></a>Åtgärdgenvägar
+## <a name="action-shortcuts"></a><span data-ttu-id="38bf5-107">Åtgärdgenvägar</span><span class="sxs-lookup"><span data-stu-id="38bf5-107">Action shortcuts</span></span>
 |                                                   |                                  |
 |---------------------------------------------------|----------------------------------|
-| **Om du vill göra detta**                                    | **Tryck**                        |
-| Öppna åtgärdssökning                                | Ctrl+ eller Alt+Q                  |
-| Flytta till standardåtgärdsfönstret                  | Ctrl+F6                          |
-| Öppna en flik i åtgärdsfönstret eller en meny           | Retur eller Blanksteg eller Alt+Nedpil |
-| Flytta till nästa/föregående alternativ i en meny            | Nedpil/uppil            |
-| Stäng en flik i åtgärdsfönstret eller en meny          | Esc                              |
-| Simulera en högerklickning                            | Skift+F10                        |
-| Öppna kontextmenyn i Finance and Operations | Ctrl+F10                         |
-| Köra standardknappen i ett formulär/dialog       | Alt+Retur                        |
-| Klicka på en knapp eller en panel                            | Retur eller Blanksteg                   |
-| Visa uppdatering av information för en beräkningspanel         | Alt+uppil                     |
+| <span data-ttu-id="38bf5-108">**Om du vill göra detta**</span><span class="sxs-lookup"><span data-stu-id="38bf5-108">**To do this**</span></span>                                    | <span data-ttu-id="38bf5-109">**Tryck**</span><span class="sxs-lookup"><span data-stu-id="38bf5-109">**Press**</span></span>                        |
+| <span data-ttu-id="38bf5-110">Öppna åtgärdssökning</span><span class="sxs-lookup"><span data-stu-id="38bf5-110">Open action search</span></span>                                | <span data-ttu-id="38bf5-111">Ctrl+ eller Alt+Q</span><span class="sxs-lookup"><span data-stu-id="38bf5-111">Ctrl+’ or Alt+Q</span></span>                  |
+| <span data-ttu-id="38bf5-112">Flytta till standardåtgärdsfönstret</span><span class="sxs-lookup"><span data-stu-id="38bf5-112">Move to the standard action pane</span></span>                  | <span data-ttu-id="38bf5-113">Ctrl+F6</span><span class="sxs-lookup"><span data-stu-id="38bf5-113">Ctrl+F6</span></span>                          |
+| <span data-ttu-id="38bf5-114">Öppna en flik i åtgärdsfönstret eller en meny</span><span class="sxs-lookup"><span data-stu-id="38bf5-114">Open a tab in the action pane or a menu</span></span>           | <span data-ttu-id="38bf5-115">Retur eller Blanksteg eller Alt+Nedpil</span><span class="sxs-lookup"><span data-stu-id="38bf5-115">Enter or Space or Alt+Down Arrow</span></span> |
+| <span data-ttu-id="38bf5-116">Flytta till nästa/föregående alternativ i en meny</span><span class="sxs-lookup"><span data-stu-id="38bf5-116">Move to next/previous option in a menu</span></span>            | <span data-ttu-id="38bf5-117">Nedpil/uppil</span><span class="sxs-lookup"><span data-stu-id="38bf5-117">Down Arrow / Up Arrow</span></span>            |
+| <span data-ttu-id="38bf5-118">Stäng en flik i åtgärdsfönstret eller en meny</span><span class="sxs-lookup"><span data-stu-id="38bf5-118">Close a tab in the action pane or a menu</span></span>          | <span data-ttu-id="38bf5-119">Esc</span><span class="sxs-lookup"><span data-stu-id="38bf5-119">Esc</span></span>                              |
+| <span data-ttu-id="38bf5-120">Simulera en högerklickning</span><span class="sxs-lookup"><span data-stu-id="38bf5-120">Simulate a right-click</span></span>                            | <span data-ttu-id="38bf5-121">Skift+F10</span><span class="sxs-lookup"><span data-stu-id="38bf5-121">Shift+F10</span></span>                        |
+| <span data-ttu-id="38bf5-122">Öppna kontextmenyn i Finance and Operations</span><span class="sxs-lookup"><span data-stu-id="38bf5-122">Open the Finance and Operations context menu</span></span> | <span data-ttu-id="38bf5-123">Ctrl+F10</span><span class="sxs-lookup"><span data-stu-id="38bf5-123">Ctrl+F10</span></span>                         |
+| <span data-ttu-id="38bf5-124">Köra standardknappen i ett formulär/dialog</span><span class="sxs-lookup"><span data-stu-id="38bf5-124">Execute the default button on a form/dialog</span></span>       | <span data-ttu-id="38bf5-125">Alt+Retur</span><span class="sxs-lookup"><span data-stu-id="38bf5-125">Alt+Enter</span></span>                        |
+| <span data-ttu-id="38bf5-126">Klicka på en knapp eller en panel</span><span class="sxs-lookup"><span data-stu-id="38bf5-126">Click a button or tile</span></span>                            | <span data-ttu-id="38bf5-127">Retur eller Blanksteg</span><span class="sxs-lookup"><span data-stu-id="38bf5-127">Enter or Space</span></span>                   |
+| <span data-ttu-id="38bf5-128">Visa uppdatering av information för en beräkningspanel</span><span class="sxs-lookup"><span data-stu-id="38bf5-128">View refresh information for a count tile</span></span>         | <span data-ttu-id="38bf5-129">Alt+uppil</span><span class="sxs-lookup"><span data-stu-id="38bf5-129">Alt+Up Arrow</span></span>                     |
 
  
 
-## <a name="date-picker-shortcuts"></a>Genvägar för datumväljare
+## <a name="date-picker-shortcuts"></a><span data-ttu-id="38bf5-130">Genvägar för datumväljare</span><span class="sxs-lookup"><span data-stu-id="38bf5-130">Date picker shortcuts</span></span>
 |                                       |                                           |
 |---------------------------------------|-------------------------------------------|
-| **Om du vill göra detta**                        | **Tryck**                                 |
-| Öppna datumväljaren                  | Alt+nedpil                            |
-| Flytta mellan datumen i datumväljaren | Ctrl+pilar                               |
-| Flytta till nästa/föregående månad       | Page Down/Page Up                       |
-| Flytta till nästa/föregående år        | Ctrl+Skift+Page Down/Ctrl+Skift+Page Up |
+| <span data-ttu-id="38bf5-131">**Om du vill göra detta**</span><span class="sxs-lookup"><span data-stu-id="38bf5-131">**To do this**</span></span>                        | <span data-ttu-id="38bf5-132">**Tryck**</span><span class="sxs-lookup"><span data-stu-id="38bf5-132">**Press**</span></span>                                 |
+| <span data-ttu-id="38bf5-133">Öppna datumväljaren</span><span class="sxs-lookup"><span data-stu-id="38bf5-133">Open the date picker</span></span>                  | <span data-ttu-id="38bf5-134">Alt+nedpil</span><span class="sxs-lookup"><span data-stu-id="38bf5-134">Alt+Down Arrow</span></span>                            |
+| <span data-ttu-id="38bf5-135">Flytta mellan datumen i datumväljaren</span><span class="sxs-lookup"><span data-stu-id="38bf5-135">Move between dates in the date picker</span></span> | <span data-ttu-id="38bf5-136">Ctrl+pilar</span><span class="sxs-lookup"><span data-stu-id="38bf5-136">Ctrl+Arrows</span></span>                               |
+| <span data-ttu-id="38bf5-137">Flytta till nästa/föregående månad</span><span class="sxs-lookup"><span data-stu-id="38bf5-137">Move to the next/previous month</span></span>       | <span data-ttu-id="38bf5-138">Page Down/Page Up</span><span class="sxs-lookup"><span data-stu-id="38bf5-138">Page Down / Page Up</span></span>                       |
+| <span data-ttu-id="38bf5-139">Flytta till nästa/föregående år</span><span class="sxs-lookup"><span data-stu-id="38bf5-139">Move to the next/previous year</span></span>        | <span data-ttu-id="38bf5-140">Ctrl+Skift+Page Down/Ctrl+Skift+Page Up</span><span class="sxs-lookup"><span data-stu-id="38bf5-140">Ctrl+Shift+Page Down / Ctrl+Shift+Page Up</span></span> |
 
  
 
-## <a name="factbox-shortcuts"></a>Genvägar för faktaboxen
+## <a name="factbox-shortcuts"></a><span data-ttu-id="38bf5-141">Genvägar för faktaboxen</span><span class="sxs-lookup"><span data-stu-id="38bf5-141">FactBox shortcuts</span></span>
 |                                                                                 |                                           |
 |---------------------------------------------------------------------------------|-------------------------------------------|
-| Öppna faktaboxfönstret (eller flytta fokus till faktaboxfönstre om det redan är öppet,) | Ctrl+F2                                   |
-| Stäng faktaboxfönstret (med fokus i faktaboxfönstret)                         | Esc                                       |
-| Flytta till nästa/tidigare faktabox (med fokus i faktaboxfönstret)              | Alt+Skift+nedpil/Alt+Skift+uppil |
-| Flytta till faktabox &lt;n&gt; (med fokus på faktaboxfönstret)                | Alt+&lt;n&gt; (&lt;n&gt; = 1-9)           |
-| Expandera en faktabox (med fokus på faktaboxhuvudet)                             | Blanksteg eller Retur                            |
-| Komprimera den aktuella faktaboxen                                                    | Alt+0                                     |
+| <span data-ttu-id="38bf5-142">Öppna faktaboxfönstret (eller flytta fokus till faktaboxfönstre om det redan är öppet,)</span><span class="sxs-lookup"><span data-stu-id="38bf5-142">Open the FactBox pane (or move focus to the FactBox pane if it is already open)</span></span> | <span data-ttu-id="38bf5-143">Ctrl+F2</span><span class="sxs-lookup"><span data-stu-id="38bf5-143">Ctrl+F2</span></span>                                   |
+| <span data-ttu-id="38bf5-144">Stäng faktaboxfönstret (med fokus i faktaboxfönstret)</span><span class="sxs-lookup"><span data-stu-id="38bf5-144">Close the FactBox pane (with focus in the FactBox pane)</span></span>                         | <span data-ttu-id="38bf5-145">Esc</span><span class="sxs-lookup"><span data-stu-id="38bf5-145">Esc</span></span>                                       |
+| <span data-ttu-id="38bf5-146">Flytta till nästa/tidigare faktabox (med fokus i faktaboxfönstret)</span><span class="sxs-lookup"><span data-stu-id="38bf5-146">Move to the next/previous FactBox (with focus in the FactBox pane)</span></span>              | <span data-ttu-id="38bf5-147">Alt+Skift+nedpil/Alt+Skift+uppil</span><span class="sxs-lookup"><span data-stu-id="38bf5-147">Alt+Shift+Down Arrow / Alt+Shift+Up Arrow</span></span> |
+| <span data-ttu-id="38bf5-148">Flytta till faktabox &lt;n&gt; (med fokus på faktaboxfönstret)</span><span class="sxs-lookup"><span data-stu-id="38bf5-148">Move to the &lt;n&gt;th FactBox (with focus in the FactBox pane)</span></span>                | <span data-ttu-id="38bf5-149">Alt+&lt;n&gt; (&lt;n&gt; = 1-9)</span><span class="sxs-lookup"><span data-stu-id="38bf5-149">Alt+&lt;n&gt; (&lt;n&gt; = 1-9)</span></span>           |
+| <span data-ttu-id="38bf5-150">Expandera en faktabox (med fokus på faktaboxhuvudet)</span><span class="sxs-lookup"><span data-stu-id="38bf5-150">Expand a FactBox (with focus on the FactBox header)</span></span>                             | <span data-ttu-id="38bf5-151">Blanksteg eller Retur</span><span class="sxs-lookup"><span data-stu-id="38bf5-151">Space or Enter</span></span>                            |
+| <span data-ttu-id="38bf5-152">Komprimera den aktuella faktaboxen</span><span class="sxs-lookup"><span data-stu-id="38bf5-152">Collapse the current FactBox</span></span>                                                    | <span data-ttu-id="38bf5-153">Alt+0</span><span class="sxs-lookup"><span data-stu-id="38bf5-153">Alt+0</span></span>                                     |
 
  
 
-## <a name="filtering-shortcuts"></a>Filtrera genvägar
+## <a name="filtering-shortcuts"></a><span data-ttu-id="38bf5-154">Filtrera genvägar</span><span class="sxs-lookup"><span data-stu-id="38bf5-154">Filtering shortcuts</span></span>
 |                                                                                                                     |               |
 |---------------------------------------------------------------------------------------------------------------------|---------------|
-| **Om du vill göra detta**                                                                                                      | **Tryck**     |
-| Öppna rutnätsfiltreringen för den aktuella kolumnen                                                                          | Ctrl+G        |
-| Stäng rutnätsfiltreringen för den aktuella kolumnen                                                                         | Esc           |
-| Öppna filterfönstret (eller växla fokus mellan filterrutan och huvudformuläret om filterfönstret redan är öppet) | Ctrl+F3       |
-| Stäng filterfönstret (med fokus i filterfönstret)                                                               | Esc           |
-| Öppna avancerad filtrering/sortering                                                                                        | Ctrl+Skift+F3 |
+| <span data-ttu-id="38bf5-155">**Om du vill göra detta**</span><span class="sxs-lookup"><span data-stu-id="38bf5-155">**To do this**</span></span>                                                                                                      | <span data-ttu-id="38bf5-156">**Tryck**</span><span class="sxs-lookup"><span data-stu-id="38bf5-156">**Press**</span></span>     |
+| <span data-ttu-id="38bf5-157">Öppna rutnätsfiltreringen för den aktuella kolumnen</span><span class="sxs-lookup"><span data-stu-id="38bf5-157">Open grid filtering for the current column</span></span>                                                                          | <span data-ttu-id="38bf5-158">Ctrl+G</span><span class="sxs-lookup"><span data-stu-id="38bf5-158">Ctrl+G</span></span>        |
+| <span data-ttu-id="38bf5-159">Stäng rutnätsfiltreringen för den aktuella kolumnen</span><span class="sxs-lookup"><span data-stu-id="38bf5-159">Close grid filtering for the current column</span></span>                                                                         | <span data-ttu-id="38bf5-160">Esc</span><span class="sxs-lookup"><span data-stu-id="38bf5-160">Esc</span></span>           |
+| <span data-ttu-id="38bf5-161">Öppna filterfönstret (eller växla fokus mellan filterrutan och huvudformuläret om filterfönstret redan är öppet)</span><span class="sxs-lookup"><span data-stu-id="38bf5-161">Open the Filter pane (or switch focus between the Filter pane and the main form if the Filter pane is already open)</span></span> | <span data-ttu-id="38bf5-162">Ctrl+F3</span><span class="sxs-lookup"><span data-stu-id="38bf5-162">Ctrl+F3</span></span>       |
+| <span data-ttu-id="38bf5-163">Stäng filterfönstret (med fokus i filterfönstret)</span><span class="sxs-lookup"><span data-stu-id="38bf5-163">Close the Filter pane (with focus in the Filter pane)</span></span>                                                               | <span data-ttu-id="38bf5-164">Esc</span><span class="sxs-lookup"><span data-stu-id="38bf5-164">Esc</span></span>           |
+| <span data-ttu-id="38bf5-165">Öppna avancerad filtrering/sortering</span><span class="sxs-lookup"><span data-stu-id="38bf5-165">Open advanced filtering/sort</span></span>                                                                                        | <span data-ttu-id="38bf5-166">Ctrl+Skift+F3</span><span class="sxs-lookup"><span data-stu-id="38bf5-166">Ctrl+Shift+F3</span></span> |
 
  
 
-## <a name="form-shortcuts"></a>Bilda kortkommandon
+## <a name="form-shortcuts"></a><span data-ttu-id="38bf5-167">Bilda kortkommandon</span><span class="sxs-lookup"><span data-stu-id="38bf5-167">Form shortcuts</span></span>
 |                                                                                                                                 |                   |
 |---------------------------------------------------------------------------------------------------------------------------------|-------------------|
-| **Om du vill göra detta**                                                                                                                  | **Tryck**         |
-| Skapa en ny post                                                                                                             | Alt+N             |
-| Ta bort en post                                                                                                                 | Alt+Del eller Alt+F9 |
-| Spara posten                                                                                                                     | Alt+S eller Ctrl+S   |
-| Återställa                                                                                                                | Ctrl+Skift+F5     |
-| Uppdatera data                                                                                                                    | Skift+F5          |
-| Flytta till det första fältet som visas i formuläret                                                                                     | Alt+Skift+F       |
-| Växla redigeringsläge                                                                                                                | F2                |
-| Bifoga ett dokument                                                                                                               | Ctrl+Skift+A      |
-| Exportera till Excel                                                                                                                 | Ctrl+Skift+E      |
-| Flytta till föregående post (utanför ett rutnät)                                                                                    | Ctrl+uppil     |
-| Flytta till nästa post (utanför ett rutnät)                                                                                        | Ctrl+nedpil   |
-| Flytta till första posten (utanför ett rutnät)                                                                                       | Ctrl+start         |
-| Flytta till sista posten (utanför ett rutnät)                                                                                        | Ctrl+End          |
-| Öppna navigeringlistan på formuläret Detaljer (eller växla fokus mellan navigeringlistan och huvudformuläret om det redan är öppet) | Ctrl+F8           |
-| Stäng navigeringlistan på formuläret Detaljer (med fokus i navigeringlistan)                                                   | Esc               |
+| <span data-ttu-id="38bf5-168">**Om du vill göra detta**</span><span class="sxs-lookup"><span data-stu-id="38bf5-168">**To do this**</span></span>                                                                                                                  | <span data-ttu-id="38bf5-169">**Tryck**</span><span class="sxs-lookup"><span data-stu-id="38bf5-169">**Press**</span></span>         |
+| <span data-ttu-id="38bf5-170">Skapa en ny post</span><span class="sxs-lookup"><span data-stu-id="38bf5-170">Create a new record</span></span>                                                                                                             | <span data-ttu-id="38bf5-171">Alt+N</span><span class="sxs-lookup"><span data-stu-id="38bf5-171">Alt+N</span></span>             |
+| <span data-ttu-id="38bf5-172">Ta bort en post</span><span class="sxs-lookup"><span data-stu-id="38bf5-172">Delete a record</span></span>                                                                                                                 | <span data-ttu-id="38bf5-173">Alt+Del eller Alt+F9</span><span class="sxs-lookup"><span data-stu-id="38bf5-173">Alt+Del or Alt+F9</span></span> |
+| <span data-ttu-id="38bf5-174">Spara posten</span><span class="sxs-lookup"><span data-stu-id="38bf5-174">Save record</span></span>                                                                                                                     | <span data-ttu-id="38bf5-175">Alt+S eller Ctrl+S</span><span class="sxs-lookup"><span data-stu-id="38bf5-175">Alt+S or Ctrl+S</span></span>   |
+| <span data-ttu-id="38bf5-176">Återställa</span><span class="sxs-lookup"><span data-stu-id="38bf5-176">Revert (restore)</span></span>                                                                                                                | <span data-ttu-id="38bf5-177">Ctrl+Skift+F5</span><span class="sxs-lookup"><span data-stu-id="38bf5-177">Ctrl+Shift+F5</span></span>     |
+| <span data-ttu-id="38bf5-178">Uppdatera data</span><span class="sxs-lookup"><span data-stu-id="38bf5-178">Data refresh</span></span>                                                                                                                    | <span data-ttu-id="38bf5-179">Skift+F5</span><span class="sxs-lookup"><span data-stu-id="38bf5-179">Shift+F5</span></span>          |
+| <span data-ttu-id="38bf5-180">Flytta till det första fältet som visas i formuläret</span><span class="sxs-lookup"><span data-stu-id="38bf5-180">Move to the visible first field on the form</span></span>                                                                                     | <span data-ttu-id="38bf5-181">Alt+Skift+F</span><span class="sxs-lookup"><span data-stu-id="38bf5-181">Alt+Shift+F</span></span>       |
+| <span data-ttu-id="38bf5-182">Växla redigeringsläge</span><span class="sxs-lookup"><span data-stu-id="38bf5-182">Toggle edit mode</span></span>                                                                                                                | <span data-ttu-id="38bf5-183">F2</span><span class="sxs-lookup"><span data-stu-id="38bf5-183">F2</span></span>                |
+| <span data-ttu-id="38bf5-184">Bifoga ett dokument</span><span class="sxs-lookup"><span data-stu-id="38bf5-184">Attach a document</span></span>                                                                                                               | <span data-ttu-id="38bf5-185">Ctrl+Skift+A</span><span class="sxs-lookup"><span data-stu-id="38bf5-185">Ctrl+Shift+A</span></span>      |
+| <span data-ttu-id="38bf5-186">Exportera till Excel</span><span class="sxs-lookup"><span data-stu-id="38bf5-186">Export to Excel</span></span>                                                                                                                 | <span data-ttu-id="38bf5-187">Ctrl+Skift+E</span><span class="sxs-lookup"><span data-stu-id="38bf5-187">Ctrl+Shift+E</span></span>      |
+| <span data-ttu-id="38bf5-188">Flytta till föregående post (utanför ett rutnät)</span><span class="sxs-lookup"><span data-stu-id="38bf5-188">Move to the previous record (outside a grid)</span></span>                                                                                    | <span data-ttu-id="38bf5-189">Ctrl+uppil</span><span class="sxs-lookup"><span data-stu-id="38bf5-189">Ctrl+Up Arrow</span></span>     |
+| <span data-ttu-id="38bf5-190">Flytta till nästa post (utanför ett rutnät)</span><span class="sxs-lookup"><span data-stu-id="38bf5-190">Move to the next record (outside a grid)</span></span>                                                                                        | <span data-ttu-id="38bf5-191">Ctrl+nedpil</span><span class="sxs-lookup"><span data-stu-id="38bf5-191">Ctrl+Down Arrow</span></span>   |
+| <span data-ttu-id="38bf5-192">Flytta till första posten (utanför ett rutnät)</span><span class="sxs-lookup"><span data-stu-id="38bf5-192">Move to the first record (outside a grid)</span></span>                                                                                       | <span data-ttu-id="38bf5-193">Ctrl+start</span><span class="sxs-lookup"><span data-stu-id="38bf5-193">Ctrl+Home</span></span>         |
+| <span data-ttu-id="38bf5-194">Flytta till sista posten (utanför ett rutnät)</span><span class="sxs-lookup"><span data-stu-id="38bf5-194">Move to the last record (outside a grid)</span></span>                                                                                        | <span data-ttu-id="38bf5-195">Ctrl+End</span><span class="sxs-lookup"><span data-stu-id="38bf5-195">Ctrl+End</span></span>          |
+| <span data-ttu-id="38bf5-196">Öppna navigeringlistan på formuläret Detaljer (eller växla fokus mellan navigeringlistan och huvudformuläret om det redan är öppet)</span><span class="sxs-lookup"><span data-stu-id="38bf5-196">Open the navigation list on Details forms (or switch focus between the navigation list and the main form if it is already open)</span></span> | <span data-ttu-id="38bf5-197">Ctrl+F8</span><span class="sxs-lookup"><span data-stu-id="38bf5-197">Ctrl+F8</span></span>           |
+| <span data-ttu-id="38bf5-198">Stäng navigeringlistan på formuläret Detaljer (med fokus i navigeringlistan)</span><span class="sxs-lookup"><span data-stu-id="38bf5-198">Close the navigation list on Details form (with focus in the navigation list)</span></span>                                                   | <span data-ttu-id="38bf5-199">Esc</span><span class="sxs-lookup"><span data-stu-id="38bf5-199">Esc</span></span>               |
 
  
 
-## <a name="form-navigation-shortcuts"></a>Bilda navigeringsgenvägar
+## <a name="form-navigation-shortcuts"></a><span data-ttu-id="38bf5-200">Bilda navigeringsgenvägar</span><span class="sxs-lookup"><span data-stu-id="38bf5-200">Form navigation shortcuts</span></span>
 |                                                     |                                              |
 |-----------------------------------------------------|----------------------------------------------|
-| **Om du vill göra detta**                                      | **Tryck**                                    |
-| Flytta till nästa/föregående fältgrupp.                     | Tab/Skift+Tab                              |
-| Flytta till nästa/föregående flik                       | Alt+Skift+höger pil/Alt+Skift+vänster pil |
-| Flytta till nästa/föregående snabbflik                   | Alt+Skift+nedpil/Alt+Skift+uppil    |
-| Flytta till snabbflik &lt;n&gt;                     | Alt+&lt;n&gt; (&lt;n&gt; = 1-9)              |
-| Flytta till flik &lt;n&gt;                         | Alt+Shift+&lt;n&gt; (&lt;n&gt; = 1-9)        |
-| Expandera en snabbflik (med fokus på snabbflikhuvudet) | Blanksteg eller Retur                               |
-| Komprimera den aktuella snabbfliken                        | Alt+0                                        |
-| Byt till rutnätsvy                                 | Ctrl+Skift+G                                 |
-| Byt till detaljvy                              | Ctrl+Skift+D                                 |
-| Byt till rubrikvy                               | Ctrl+Skift+H                                 |
-| Byt till radvy                                | Ctrl+Skift+L                                 |
-| Stäng formuläret (klicka på Tillbaka)                         | Esc                                          |
-| Stäng formuläret genom att uttryckligen spara                   | Skift+Esc                                    |
-| Stäng formuläret och tag bort alla osparade ändringar       | Alt+Skift+Q                                  |
+| <span data-ttu-id="38bf5-201">**Om du vill göra detta**</span><span class="sxs-lookup"><span data-stu-id="38bf5-201">**To do this**</span></span>                                      | <span data-ttu-id="38bf5-202">**Tryck**</span><span class="sxs-lookup"><span data-stu-id="38bf5-202">**Press**</span></span>                                    |
+| <span data-ttu-id="38bf5-203">Flytta till nästa/föregående fältgrupp.</span><span class="sxs-lookup"><span data-stu-id="38bf5-203">Move to the next/previous field</span></span>                     | <span data-ttu-id="38bf5-204">Tab/Skift+Tab</span><span class="sxs-lookup"><span data-stu-id="38bf5-204">Tab / Shift+Tab</span></span>                              |
+| <span data-ttu-id="38bf5-205">Flytta till nästa/föregående flik</span><span class="sxs-lookup"><span data-stu-id="38bf5-205">Move to the next/previous tab</span></span>                       | <span data-ttu-id="38bf5-206">Alt+Skift+höger pil/Alt+Skift+vänster pil</span><span class="sxs-lookup"><span data-stu-id="38bf5-206">Alt+Shift+Right Arrow / Alt+Shift+Left Arrow</span></span> |
+| <span data-ttu-id="38bf5-207">Flytta till nästa/föregående snabbflik</span><span class="sxs-lookup"><span data-stu-id="38bf5-207">Move to the next/previous FastTab</span></span>                   | <span data-ttu-id="38bf5-208">Alt+Skift+nedpil/Alt+Skift+uppil</span><span class="sxs-lookup"><span data-stu-id="38bf5-208">Alt+Shift+Down Arrow / Alt+Shift+Up Arrow</span></span>    |
+| <span data-ttu-id="38bf5-209">Flytta till snabbflik &lt;n&gt;</span><span class="sxs-lookup"><span data-stu-id="38bf5-209">Move to the &lt;n&gt;th FastTab</span></span>                     | <span data-ttu-id="38bf5-210">Alt+&lt;n&gt; (&lt;n&gt; = 1-9)</span><span class="sxs-lookup"><span data-stu-id="38bf5-210">Alt+&lt;n&gt; (&lt;n&gt; = 1-9)</span></span>              |
+| <span data-ttu-id="38bf5-211">Flytta till flik &lt;n&gt;</span><span class="sxs-lookup"><span data-stu-id="38bf5-211">Move to the &lt;n&gt;th tab</span></span>                         | <span data-ttu-id="38bf5-212">Alt+Shift+&lt;n&gt; (&lt;n&gt; = 1-9)</span><span class="sxs-lookup"><span data-stu-id="38bf5-212">Alt+Shift+&lt;n&gt; (&lt;n&gt; = 1-9)</span></span>        |
+| <span data-ttu-id="38bf5-213">Expandera en snabbflik (med fokus på snabbflikhuvudet)</span><span class="sxs-lookup"><span data-stu-id="38bf5-213">Expand a FastTab (with focus on the FastTab header)</span></span> | <span data-ttu-id="38bf5-214">Blanksteg eller Retur</span><span class="sxs-lookup"><span data-stu-id="38bf5-214">Space or Enter</span></span>                               |
+| <span data-ttu-id="38bf5-215">Komprimera den aktuella snabbfliken</span><span class="sxs-lookup"><span data-stu-id="38bf5-215">Collapse the current FastTab</span></span>                        | <span data-ttu-id="38bf5-216">Alt+0</span><span class="sxs-lookup"><span data-stu-id="38bf5-216">Alt+0</span></span>                                        |
+| <span data-ttu-id="38bf5-217">Byt till rutnätsvy</span><span class="sxs-lookup"><span data-stu-id="38bf5-217">Switch to grid view</span></span>                                 | <span data-ttu-id="38bf5-218">Ctrl+Skift+G</span><span class="sxs-lookup"><span data-stu-id="38bf5-218">Ctrl+Shift+G</span></span>                                 |
+| <span data-ttu-id="38bf5-219">Byt till detaljvy</span><span class="sxs-lookup"><span data-stu-id="38bf5-219">Switch to details view</span></span>                              | <span data-ttu-id="38bf5-220">Ctrl+Skift+D</span><span class="sxs-lookup"><span data-stu-id="38bf5-220">Ctrl+Shift+D</span></span>                                 |
+| <span data-ttu-id="38bf5-221">Byt till rubrikvy</span><span class="sxs-lookup"><span data-stu-id="38bf5-221">Switch to header view</span></span>                               | <span data-ttu-id="38bf5-222">Ctrl+Skift+H</span><span class="sxs-lookup"><span data-stu-id="38bf5-222">Ctrl+Shift+H</span></span>                                 |
+| <span data-ttu-id="38bf5-223">Byt till radvy</span><span class="sxs-lookup"><span data-stu-id="38bf5-223">Switch to lines view</span></span>                                | <span data-ttu-id="38bf5-224">Ctrl+Skift+L</span><span class="sxs-lookup"><span data-stu-id="38bf5-224">Ctrl+Shift+L</span></span>                                 |
+| <span data-ttu-id="38bf5-225">Stäng formuläret (klicka på Tillbaka)</span><span class="sxs-lookup"><span data-stu-id="38bf5-225">Close the form (click Back)</span></span>                         | <span data-ttu-id="38bf5-226">Esc</span><span class="sxs-lookup"><span data-stu-id="38bf5-226">Esc</span></span>                                          |
+| <span data-ttu-id="38bf5-227">Stäng formuläret genom att uttryckligen spara</span><span class="sxs-lookup"><span data-stu-id="38bf5-227">Close the form with explicit save</span></span>                   | <span data-ttu-id="38bf5-228">Skift+Esc</span><span class="sxs-lookup"><span data-stu-id="38bf5-228">Shift+Esc</span></span>                                    |
+| <span data-ttu-id="38bf5-229">Stäng formuläret och tag bort alla osparade ändringar</span><span class="sxs-lookup"><span data-stu-id="38bf5-229">Close the form discarding any unsaved changes</span></span>       | <span data-ttu-id="38bf5-230">Alt+Skift+Q</span><span class="sxs-lookup"><span data-stu-id="38bf5-230">Alt+Shift+Q</span></span>                                  |
 
  
 
-## <a name="grid-shortcuts"></a>Genvägar för rutnät
+## <a name="grid-shortcuts"></a><span data-ttu-id="38bf5-231">Genvägar för rutnät</span><span class="sxs-lookup"><span data-stu-id="38bf5-231">Grid shortcuts</span></span>
 |                                                                                                               |                                 |
 |---------------------------------------------------------------------------------------------------------------|---------------------------------|
-| **Om du vill göra detta**                                                                                                | **Tryck**                       |
-| Flytta till nästa/föregående kolumn                                                                              | Tab/Skift+Tab                 |
-| Flytta till nästa/föregående rad                                                                                 | Nedpil/uppil           |
-| Flytta till nästa eller föregående rad utan att välja (Obs! Denna genväg gäller endast för scenarion med flera val). | Ctrl+uppil/Ctrl+nedpil |
-| Markera/avmarkera den aktuella raden (Obs! Denna genväg gäller endast för scenarion med flera val).                    | Ctrl+Blanksteg/Ctrl+Klick         |
-| Lägg till nästa eller föregående rad till den markerade uppsättningen. (Obs! Denna genväg gäller endast för scenarion med flera val).   | Skift+Space                     |
-| Lägg till ett intervall med rader till den markerade uppsättningen. (Obs! Denna genväg gäller endast för scenarion med flera val).         | Skift+Klick                     |
-| Gå till näst7föregående sida med data.                                                                          | Page Up/Page Down             |
-| Skapa en ny rad längst ned i rutnätet                                                                    | Nedpil (från sista raden)  |
-| Markera eller avmarkera alla rader                                                                                      | Ctrl+Skift+M                    |
-| Flytta till första posten                                                                                      | Ctrl+start                       |
-| Flytta till den sista posten                                                                                       | Ctrl+End                        |
+| <span data-ttu-id="38bf5-232">**Om du vill göra detta**</span><span class="sxs-lookup"><span data-stu-id="38bf5-232">**To do this**</span></span>                                                                                                | <span data-ttu-id="38bf5-233">**Tryck**</span><span class="sxs-lookup"><span data-stu-id="38bf5-233">**Press**</span></span>                       |
+| <span data-ttu-id="38bf5-234">Flytta till nästa/föregående kolumn</span><span class="sxs-lookup"><span data-stu-id="38bf5-234">Move to the next/previous column</span></span>                                                                              | <span data-ttu-id="38bf5-235">Tab/Skift+Tab</span><span class="sxs-lookup"><span data-stu-id="38bf5-235">Tab / Shift+Tab</span></span>                 |
+| <span data-ttu-id="38bf5-236">Flytta till nästa/föregående rad</span><span class="sxs-lookup"><span data-stu-id="38bf5-236">Move to the next/previous row</span></span>                                                                                 | <span data-ttu-id="38bf5-237">Nedpil/uppil</span><span class="sxs-lookup"><span data-stu-id="38bf5-237">Down Arrow / Up Arrow</span></span>           |
+| <span data-ttu-id="38bf5-238">Flytta till nästa eller föregående rad utan att välja (Obs! Denna genväg gäller endast för scenarion med flera val).</span><span class="sxs-lookup"><span data-stu-id="38bf5-238">Move to the next/previous row without selecting (Note: This shortcut applies to multi-select scenarios only.)</span></span> | <span data-ttu-id="38bf5-239">Ctrl+uppil/Ctrl+nedpil</span><span class="sxs-lookup"><span data-stu-id="38bf5-239">Ctrl+Up Arrow / Ctrl+Down Arrow</span></span> |
+| <span data-ttu-id="38bf5-240">Markera/avmarkera den aktuella raden (Obs! Denna genväg gäller endast för scenarion med flera val).</span><span class="sxs-lookup"><span data-stu-id="38bf5-240">Select/clear the current row (Note: This shortcut applies to multi-select scenarios only.)</span></span>                    | <span data-ttu-id="38bf5-241">Ctrl+Blanksteg/Ctrl+Klick</span><span class="sxs-lookup"><span data-stu-id="38bf5-241">Ctrl+Space / Ctrl+Click</span></span>         |
+| <span data-ttu-id="38bf5-242">Lägg till nästa eller föregående rad till den markerade uppsättningen. (Obs! Denna genväg gäller endast för scenarion med flera val).</span><span class="sxs-lookup"><span data-stu-id="38bf5-242">Add the next/previous row to the selected set (Note: This shortcut applies to multi-select scenarios only.)</span></span>   | <span data-ttu-id="38bf5-243">Skift+Space</span><span class="sxs-lookup"><span data-stu-id="38bf5-243">Shift+Space</span></span>                     |
+| <span data-ttu-id="38bf5-244">Lägg till ett intervall med rader till den markerade uppsättningen. (Obs! Denna genväg gäller endast för scenarion med flera val).</span><span class="sxs-lookup"><span data-stu-id="38bf5-244">Add a range of rows to the selected set (Note: This shortcut applies to multi-select scenarios only.)</span></span>         | <span data-ttu-id="38bf5-245">Skift+Klick</span><span class="sxs-lookup"><span data-stu-id="38bf5-245">Shift+Click</span></span>                     |
+| <span data-ttu-id="38bf5-246">Gå till näst7föregående sida med data.</span><span class="sxs-lookup"><span data-stu-id="38bf5-246">Go to the next/previous page of data</span></span>                                                                          | <span data-ttu-id="38bf5-247">Page Up/Page Down</span><span class="sxs-lookup"><span data-stu-id="38bf5-247">Page Up / Page Down</span></span>             |
+| <span data-ttu-id="38bf5-248">Skapa en ny rad längst ned i rutnätet</span><span class="sxs-lookup"><span data-stu-id="38bf5-248">Create a new row at the bottom of the grid</span></span>                                                                    | <span data-ttu-id="38bf5-249">Nedpil (från sista raden)</span><span class="sxs-lookup"><span data-stu-id="38bf5-249">Down Arrow (from the last row)</span></span>  |
+| <span data-ttu-id="38bf5-250">Markera eller avmarkera alla rader</span><span class="sxs-lookup"><span data-stu-id="38bf5-250">Select or clear all rows</span></span>                                                                                      | <span data-ttu-id="38bf5-251">Ctrl+Skift+M</span><span class="sxs-lookup"><span data-stu-id="38bf5-251">Ctrl+Shift+M</span></span>                    |
+| <span data-ttu-id="38bf5-252">Flytta till första posten</span><span class="sxs-lookup"><span data-stu-id="38bf5-252">Move to the first record</span></span>                                                                                      | <span data-ttu-id="38bf5-253">Ctrl+start</span><span class="sxs-lookup"><span data-stu-id="38bf5-253">Ctrl+Home</span></span>                       |
+| <span data-ttu-id="38bf5-254">Flytta till den sista posten</span><span class="sxs-lookup"><span data-stu-id="38bf5-254">Move to the last record</span></span>                                                                                       | <span data-ttu-id="38bf5-255">Ctrl+End</span><span class="sxs-lookup"><span data-stu-id="38bf5-255">Ctrl+End</span></span>                        |
 
  
 
-## <a name="input-control-shortcuts"></a>Mata in kontrollgenvägar
+## <a name="input-control-shortcuts"></a><span data-ttu-id="38bf5-256">Mata in kontrollgenvägar</span><span class="sxs-lookup"><span data-stu-id="38bf5-256">Input control shortcuts</span></span>
 |                                                            |                               |
 |------------------------------------------------------------|-------------------------------|
-| **Om du vill göra detta**                                             | **Tryck**                     |
-| Ange aktuellt sessionsdatum i ett datumfält                     | D+Tab                         |
-| Ange aktuellt datum i ett datumfält                     | T+Tab                         |
-| Öppna uppslagning, kombinationsruta, datumväljaren, dialogrutan           | Alt+nedpil                |
-| Stäng uppslagning, kombinationsruta, datumväljaren, dialogrutan          | Esc                           |
-| Flytta fokus till en uppslagning (när uppslagningen redan är öppen,) | Alt+nedpil                |
-| Öppna kontrollens utökade förhandsgranskning                        | Alt+uppil                  |
-| Välj text i det aktuella fältet.                           | Ctrl+A                        |
-| Ange/lämna textområdet i en HTML-redigeringskontroll        | Alt+Uppil/Alt+nedpil |
+| <span data-ttu-id="38bf5-257">**Om du vill göra detta**</span><span class="sxs-lookup"><span data-stu-id="38bf5-257">**To do this**</span></span>                                             | <span data-ttu-id="38bf5-258">**Tryck**</span><span class="sxs-lookup"><span data-stu-id="38bf5-258">**Press**</span></span>                     |
+| <span data-ttu-id="38bf5-259">Ange aktuellt sessionsdatum i ett datumfält</span><span class="sxs-lookup"><span data-stu-id="38bf5-259">Enter the session date in a date field</span></span>                     | <span data-ttu-id="38bf5-260">D+Tab</span><span class="sxs-lookup"><span data-stu-id="38bf5-260">D+Tab</span></span>                         |
+| <span data-ttu-id="38bf5-261">Ange aktuellt datum i ett datumfält</span><span class="sxs-lookup"><span data-stu-id="38bf5-261">Enter the current date in a date field</span></span>                     | <span data-ttu-id="38bf5-262">T+Tab</span><span class="sxs-lookup"><span data-stu-id="38bf5-262">T+Tab</span></span>                         |
+| <span data-ttu-id="38bf5-263">Öppna uppslagning, kombinationsruta, datumväljaren, dialogrutan</span><span class="sxs-lookup"><span data-stu-id="38bf5-263">Open lookup, combo box, date picker, drop dialog</span></span>           | <span data-ttu-id="38bf5-264">Alt+nedpil</span><span class="sxs-lookup"><span data-stu-id="38bf5-264">Alt+Down Arrow</span></span>                |
+| <span data-ttu-id="38bf5-265">Stäng uppslagning, kombinationsruta, datumväljaren, dialogrutan</span><span class="sxs-lookup"><span data-stu-id="38bf5-265">Close lookup, combo box, date picker, drop dialog</span></span>          | <span data-ttu-id="38bf5-266">Esc</span><span class="sxs-lookup"><span data-stu-id="38bf5-266">Esc</span></span>                           |
+| <span data-ttu-id="38bf5-267">Flytta fokus till en uppslagning (när uppslagningen redan är öppen,)</span><span class="sxs-lookup"><span data-stu-id="38bf5-267">Move focus into a lookup (when the lookup is already open)</span></span> | <span data-ttu-id="38bf5-268">Alt+nedpil</span><span class="sxs-lookup"><span data-stu-id="38bf5-268">Alt+Down Arrow</span></span>                |
+| <span data-ttu-id="38bf5-269">Öppna kontrollens utökade förhandsgranskning</span><span class="sxs-lookup"><span data-stu-id="38bf5-269">Open the control's enhanced preview</span></span>                        | <span data-ttu-id="38bf5-270">Alt+uppil</span><span class="sxs-lookup"><span data-stu-id="38bf5-270">Alt+Up Arrow</span></span>                  |
+| <span data-ttu-id="38bf5-271">Välj text i det aktuella fältet.</span><span class="sxs-lookup"><span data-stu-id="38bf5-271">Select text in the current field</span></span>                           | <span data-ttu-id="38bf5-272">Ctrl+A</span><span class="sxs-lookup"><span data-stu-id="38bf5-272">Ctrl+A</span></span>                        |
+| <span data-ttu-id="38bf5-273">Ange/lämna textområdet i en HTML-redigeringskontroll</span><span class="sxs-lookup"><span data-stu-id="38bf5-273">Enter/leave the text area in an HTML editor control</span></span>        | <span data-ttu-id="38bf5-274">Alt+Uppil/Alt+nedpil</span><span class="sxs-lookup"><span data-stu-id="38bf5-274">Alt+Down Arrow / Alt+Up Arrow</span></span> |
 
  
 
-## <a name="messaging-shortcuts"></a>Genvägar för meddelanden
+## <a name="messaging-shortcuts"></a><span data-ttu-id="38bf5-275">Genvägar för meddelanden</span><span class="sxs-lookup"><span data-stu-id="38bf5-275">Messaging shortcuts</span></span>
 |                          |               |
 |--------------------------|---------------|
-| **Om du vill göra detta**           | **Tryck**     |
-| Gå till meddelandecenter | Ctrl+Skift+F7 |
-| Gå till meddelandefältet    | Ctrl+F7       |
+| <span data-ttu-id="38bf5-276">**Om du vill göra detta**</span><span class="sxs-lookup"><span data-stu-id="38bf5-276">**To do this**</span></span>           | <span data-ttu-id="38bf5-277">**Tryck**</span><span class="sxs-lookup"><span data-stu-id="38bf5-277">**Press**</span></span>     |
+| <span data-ttu-id="38bf5-278">Gå till meddelandecenter</span><span class="sxs-lookup"><span data-stu-id="38bf5-278">Go to the Message Center</span></span> | <span data-ttu-id="38bf5-279">Ctrl+Skift+F7</span><span class="sxs-lookup"><span data-stu-id="38bf5-279">Ctrl+Shift+F7</span></span> |
+| <span data-ttu-id="38bf5-280">Gå till meddelandefältet</span><span class="sxs-lookup"><span data-stu-id="38bf5-280">Go to the Message Bar</span></span>    | <span data-ttu-id="38bf5-281">Ctrl+F7</span><span class="sxs-lookup"><span data-stu-id="38bf5-281">Ctrl+F7</span></span>       |
 
  
 
-## <a name="navigation-shortcuts"></a>Navigeringsgenvägar
+## <a name="navigation-shortcuts"></a><span data-ttu-id="38bf5-282">Navigeringsgenvägar</span><span class="sxs-lookup"><span data-stu-id="38bf5-282">Navigation shortcuts</span></span>
 |                                                                           |                 |
 |---------------------------------------------------------------------------|-----------------|
-| **Om du vill göra detta**                                                            | **Tryck**       |
-| Gå till instrumentpanelen                                                       | Alt+Skift+Start  |
-| Gå till navigeringsfältet                                                  | Alt+Skift+F1    |
-| Gå till navigeringsfönstret                                                 | Alt+F1          |
-| Gör ett formulär till favorit/ta bort favorit (med fokus på ett formulär i navigeringsfönstret) | Skift+F         |
-| Gå till företagsväljaren                                                  | Ctrl+Skift+O    |
-| Gå till navigeringssökningen                                                   | Ctrl+/ eller Alt+G |
-| Öppna Hjälp-fönstret                                                        | Ctrl+?          |
-| Öppen Trace Parser                                                     | Alt+Skift+T     |
+| <span data-ttu-id="38bf5-283">**Om du vill göra detta**</span><span class="sxs-lookup"><span data-stu-id="38bf5-283">**To do this**</span></span>                                                            | <span data-ttu-id="38bf5-284">**Tryck**</span><span class="sxs-lookup"><span data-stu-id="38bf5-284">**Press**</span></span>       |
+| <span data-ttu-id="38bf5-285">Gå till instrumentpanelen</span><span class="sxs-lookup"><span data-stu-id="38bf5-285">Go to the dashboard</span></span>                                                       | <span data-ttu-id="38bf5-286">Alt+Skift+Start</span><span class="sxs-lookup"><span data-stu-id="38bf5-286">Alt+Shift+Home</span></span>  |
+| <span data-ttu-id="38bf5-287">Gå till navigeringsfältet</span><span class="sxs-lookup"><span data-stu-id="38bf5-287">Go to the navigation bar</span></span>                                                  | <span data-ttu-id="38bf5-288">Alt+Skift+F1</span><span class="sxs-lookup"><span data-stu-id="38bf5-288">Alt+Shift+F1</span></span>    |
+| <span data-ttu-id="38bf5-289">Gå till navigeringsfönstret</span><span class="sxs-lookup"><span data-stu-id="38bf5-289">Go to the navigation pane</span></span>                                                 | <span data-ttu-id="38bf5-290">Alt+F1</span><span class="sxs-lookup"><span data-stu-id="38bf5-290">Alt+F1</span></span>          |
+| <span data-ttu-id="38bf5-291">Gör ett formulär till favorit/ta bort favorit (med fokus på ett formulär i navigeringsfönstret)</span><span class="sxs-lookup"><span data-stu-id="38bf5-291">Favorite/un-favorite a form (with focus on a form in the navigation pane)</span></span> | <span data-ttu-id="38bf5-292">Skift+F</span><span class="sxs-lookup"><span data-stu-id="38bf5-292">Shift+F</span></span>         |
+| <span data-ttu-id="38bf5-293">Gå till företagsväljaren</span><span class="sxs-lookup"><span data-stu-id="38bf5-293">Go to the company picker</span></span>                                                  | <span data-ttu-id="38bf5-294">Ctrl+Skift+O</span><span class="sxs-lookup"><span data-stu-id="38bf5-294">Ctrl+Shift+O</span></span>    |
+| <span data-ttu-id="38bf5-295">Gå till navigeringssökningen</span><span class="sxs-lookup"><span data-stu-id="38bf5-295">Go to navigation search</span></span>                                                   | <span data-ttu-id="38bf5-296">Ctrl+/ eller Alt+G</span><span class="sxs-lookup"><span data-stu-id="38bf5-296">Ctrl+/ or Alt+G</span></span> |
+| <span data-ttu-id="38bf5-297">Öppna Hjälp-fönstret</span><span class="sxs-lookup"><span data-stu-id="38bf5-297">Open the help pane</span></span>                                                        | <span data-ttu-id="38bf5-298">Ctrl+?</span><span class="sxs-lookup"><span data-stu-id="38bf5-298">Ctrl+?</span></span>          |
+| <span data-ttu-id="38bf5-299">Öppen Trace Parser</span><span class="sxs-lookup"><span data-stu-id="38bf5-299">Open the trace parser</span></span>                                                     | <span data-ttu-id="38bf5-300">Alt+Skift+T</span><span class="sxs-lookup"><span data-stu-id="38bf5-300">Alt+Shift+T</span></span>     |
 
  
 
-## <a name="segmented-entry-shortcuts"></a>Segmenterade postgenvägar
+## <a name="segmented-entry-shortcuts"></a><span data-ttu-id="38bf5-301">Segmenterade postgenvägar</span><span class="sxs-lookup"><span data-stu-id="38bf5-301">Segmented entry shortcuts</span></span>
 |                                                                                                                         |                                  |
 |-------------------------------------------------------------------------------------------------------------------------|----------------------------------|
-| **Om du vill göra detta**                                                                                                          | **Tryck**                        |
-| Öppna listrutan (när listrutan är stängd)                                                             | Alt+nedpil                   |
-| Flytta fokus till indatafältet för det aktuella segmentet i listrutan (när listrutan redan är öppen) | Alt+nedpil                   |
-| Stäng listrutan.                                                                                                | Alt+uppil                     |
-| Stäng/öppna den högra delen av listrutan                                                                      | Alt+vänster pil / Alt+höger pil |
-| Växla mellan lägena "Visa giltig" och "Visa alla"                                                                        | Alt+W                            |
-| Välj värdet från listruta och gå till nästa segment                                                       | Ange                            |
-| Flytta till nästa/tidigare kontroll på sidan (när fokus är i indatakontroll)                                          | Tab/Skift+Tab                  |
-| Flytta till nästa/tidigare ange indatafältet i menyn utfällbara (när fokus är i listrutan,)                               | Tab/Skift+Tab                  |
-| Flytta upp/ned en rad i uppslagningen                                                                                        | Uppil/nedpil            |
-| Flytta upp/ned en sida i uppslagningen                                                                                       | Page Up/Page Down              |
-| Flytta till längst upp/längst ned i uppslagningen                                                                                    | Startsida/slut                       |
+| <span data-ttu-id="38bf5-302">**Om du vill göra detta**</span><span class="sxs-lookup"><span data-stu-id="38bf5-302">**To do this**</span></span>                                                                                                          | <span data-ttu-id="38bf5-303">**Tryck**</span><span class="sxs-lookup"><span data-stu-id="38bf5-303">**Press**</span></span>                        |
+| <span data-ttu-id="38bf5-304">Öppna listrutan (när listrutan är stängd)</span><span class="sxs-lookup"><span data-stu-id="38bf5-304">Open the drop-down list (when the drop-down list is closed)</span></span>                                                             | <span data-ttu-id="38bf5-305">Alt+nedpil</span><span class="sxs-lookup"><span data-stu-id="38bf5-305">Alt+Down Arrow</span></span>                   |
+| <span data-ttu-id="38bf5-306">Flytta fokus till indatafältet för det aktuella segmentet i listrutan (när listrutan redan är öppen)</span><span class="sxs-lookup"><span data-stu-id="38bf5-306">Move focus into the input field for the current segment in the drop-down list (when the drop-down list is already open)</span></span> | <span data-ttu-id="38bf5-307">Alt+nedpil</span><span class="sxs-lookup"><span data-stu-id="38bf5-307">Alt+Down Arrow</span></span>                   |
+| <span data-ttu-id="38bf5-308">Stäng listrutan.</span><span class="sxs-lookup"><span data-stu-id="38bf5-308">Close the drop-down list</span></span>                                                                                                | <span data-ttu-id="38bf5-309">Alt+uppil</span><span class="sxs-lookup"><span data-stu-id="38bf5-309">Alt+Up Arrow</span></span>                     |
+| <span data-ttu-id="38bf5-310">Stäng/öppna den högra delen av listrutan</span><span class="sxs-lookup"><span data-stu-id="38bf5-310">Close/open the right portion of the drop-down list</span></span>                                                                      | <span data-ttu-id="38bf5-311">Alt+vänster pil / Alt+höger pil</span><span class="sxs-lookup"><span data-stu-id="38bf5-311">Alt+Left Arrow / Alt+Right Arrow</span></span> |
+| <span data-ttu-id="38bf5-312">Växla mellan lägena "Visa giltig" och "Visa alla"</span><span class="sxs-lookup"><span data-stu-id="38bf5-312">Toggle between “Show valid” and “Show all” modes</span></span>                                                                        | <span data-ttu-id="38bf5-313">Alt+W</span><span class="sxs-lookup"><span data-stu-id="38bf5-313">Alt+W</span></span>                            |
+| <span data-ttu-id="38bf5-314">Välj värdet från listruta och gå till nästa segment</span><span class="sxs-lookup"><span data-stu-id="38bf5-314">Select the value from drop-down list and move to the next segment</span></span>                                                       | <span data-ttu-id="38bf5-315">Ange</span><span class="sxs-lookup"><span data-stu-id="38bf5-315">Enter</span></span>                            |
+| <span data-ttu-id="38bf5-316">Flytta till nästa/tidigare kontroll på sidan (när fokus är i indatakontroll)</span><span class="sxs-lookup"><span data-stu-id="38bf5-316">Move to the next/previous control on the page (when focus is in input control)</span></span>                                          | <span data-ttu-id="38bf5-317">Tab/Skift+Tab</span><span class="sxs-lookup"><span data-stu-id="38bf5-317">Tab / Shift+Tab</span></span>                  |
+| <span data-ttu-id="38bf5-318">Flytta till nästa/tidigare ange indatafältet i menyn utfällbara (när fokus är i listrutan,)</span><span class="sxs-lookup"><span data-stu-id="38bf5-318">Move to the next/previous input field in the flyout (when focus is in the drop-down list)</span></span>                               | <span data-ttu-id="38bf5-319">Tab/Skift+Tab</span><span class="sxs-lookup"><span data-stu-id="38bf5-319">Tab / Shift+Tab</span></span>                  |
+| <span data-ttu-id="38bf5-320">Flytta upp/ned en rad i uppslagningen</span><span class="sxs-lookup"><span data-stu-id="38bf5-320">Move up/down a row in the lookup</span></span>                                                                                        | <span data-ttu-id="38bf5-321">Uppil/nedpil</span><span class="sxs-lookup"><span data-stu-id="38bf5-321">Up Arrow / Down Arrow</span></span>            |
+| <span data-ttu-id="38bf5-322">Flytta upp/ned en sida i uppslagningen</span><span class="sxs-lookup"><span data-stu-id="38bf5-322">Move up/down a page in the lookup</span></span>                                                                                       | <span data-ttu-id="38bf5-323">Page Up/Page Down</span><span class="sxs-lookup"><span data-stu-id="38bf5-323">Page Up / Page Down</span></span>              |
+| <span data-ttu-id="38bf5-324">Flytta till längst upp/längst ned i uppslagningen</span><span class="sxs-lookup"><span data-stu-id="38bf5-324">Move to the top/bottom of the lookup</span></span>                                                                                    | <span data-ttu-id="38bf5-325">Startsida/slut</span><span class="sxs-lookup"><span data-stu-id="38bf5-325">Home / End</span></span>                       |
 
  
 

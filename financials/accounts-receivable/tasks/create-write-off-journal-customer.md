@@ -16,74 +16,74 @@ ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 1c7ecd07c294b7357e4bda9f4183deb346b3e6ee
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 19a816f04283ce4f200de7396617313e45e057db
 ms.contentlocale: sv-se
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-a-write-off-journal-for-a-customer"></a>Skapa en avskrivningsjournal för en kund
+# <a name="create-a-write-off-journal-for-a-customer"></a><span data-ttu-id="3bf31-103">Skapa en avskrivningsjournal för en kund</span><span class="sxs-lookup"><span data-stu-id="3bf31-103">Create a write-off journal for a customer</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Den här uppgiftsguiden innehåller information om hur du ställer in parametrar för avskrivningar och sedan skriver av transaktioner från sidan Inkasso, sidan Öppna kundfakturor och sidan Kund. I den här uppgiften används demonstrationsföretaget USMF.
+<span data-ttu-id="3bf31-104">Den här uppgiftsguiden innehåller information om hur du ställer in parametrar för avskrivningar och sedan skriver av transaktioner från sidan Inkasso, sidan Öppna kundfakturor och sidan Kund.</span><span class="sxs-lookup"><span data-stu-id="3bf31-104">This task guide will show you how to set up the parameters for write-offs and then write off transactions from the Collections page, the Open customer invoices page, and the Customer page.</span></span> <span data-ttu-id="3bf31-105">I den här uppgiften används demonstrationsföretaget USMF.</span><span class="sxs-lookup"><span data-stu-id="3bf31-105">This task uses the USMF demo company.</span></span>
 
 
-## <a name="set-up-the-write-off-parameters"></a>Konfigurera avskrivningsparametrar
-1. Gå till Kredit och inkasso > Setup > Parametrar för kundreskontra.
-2. Klicka på fliken Inkasso.
-3. Expandera eller komprimera avsnittet Avskrivning.
-    * Avskrivningsjournalen är den allmänna journal som ska innehålla de avskrivningstransaktioner som du skapar.  
-    * Du kan koppla en orsakskod till varje avskrivning. Du kan åsidosätta den här standarden vid avskrivningen.  
-    * Ange detta till Ja om du vill separera momsen från den ursprungliga transaktionen i avskrivningen.  
-4. Stäng sidan.
-5. Gå till Kredit och inkasso > Inställningar > Kundbokföringsprofiler.
-    * Avskrivningskontot ska användas som utgiftskonto eller reserveringsjustering i den allmänna journalen   
-6. Stäng sidan.
+## <a name="set-up-the-write-off-parameters"></a><span data-ttu-id="3bf31-106">Konfigurera avskrivningsparametrar</span><span class="sxs-lookup"><span data-stu-id="3bf31-106">Set up the write off parameters</span></span>
+1. <span data-ttu-id="3bf31-107">Gå till Kredit och inkasso > Setup > Parametrar för kundreskontra.</span><span class="sxs-lookup"><span data-stu-id="3bf31-107">Go to Credit and collections > Setup > Accounts receivable parameters.</span></span>
+2. <span data-ttu-id="3bf31-108">Klicka på fliken Inkasso.</span><span class="sxs-lookup"><span data-stu-id="3bf31-108">Click the Collections tab.</span></span>
+3. <span data-ttu-id="3bf31-109">Expandera eller komprimera avsnittet Avskrivning.</span><span class="sxs-lookup"><span data-stu-id="3bf31-109">Expand or collapse the Write-off section.</span></span>
+    * <span data-ttu-id="3bf31-110">Avskrivningsjournalen är den allmänna journal som ska innehålla de avskrivningstransaktioner som du skapar.</span><span class="sxs-lookup"><span data-stu-id="3bf31-110">The Write-off journal is the general journal that will hold the write-off transactions that you create.</span></span>  
+    * <span data-ttu-id="3bf31-111">Du kan koppla en orsakskod till varje avskrivning.</span><span class="sxs-lookup"><span data-stu-id="3bf31-111">You can attach a reason code to every write-off.</span></span> <span data-ttu-id="3bf31-112">Du kan åsidosätta den här standarden vid avskrivningen.</span><span class="sxs-lookup"><span data-stu-id="3bf31-112">You can override this default at the time of the write-off.</span></span>  
+    * <span data-ttu-id="3bf31-113">Ange detta till Ja om du vill separera momsen från den ursprungliga transaktionen i avskrivningen.</span><span class="sxs-lookup"><span data-stu-id="3bf31-113">Set this to Yes if you want to separate the sales tax from the original transaction in the write-off.</span></span>  
+4. <span data-ttu-id="3bf31-114">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="3bf31-114">Close the page.</span></span>
+5. <span data-ttu-id="3bf31-115">Gå till Kredit och inkasso > Inställningar > Kundbokföringsprofiler.</span><span class="sxs-lookup"><span data-stu-id="3bf31-115">Go to Credit and collections > Setup > Customer posting profiles.</span></span>
+    * <span data-ttu-id="3bf31-116">Avskrivningskontot ska användas som utgiftskonto eller reserveringsjustering i den allmänna journalen</span><span class="sxs-lookup"><span data-stu-id="3bf31-116">The write-off account will be used as the expense account or reserve adjustment in the general journal</span></span>   
+6. <span data-ttu-id="3bf31-117">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="3bf31-117">Close the page.</span></span>
 
-## <a name="write-off-a-customer-balance-from-the-aged-balances-page"></a>Skriv av en kundbalans på sidan Åldersfördelade saldon.
-1. Gå till Kredit och inkasso > Inkasso > Åldersfördelade saldon.
-2. Markera raden för den kund som du vill skriva av. Markera till exempel raden med företaget Birch.
-3. Klicka på Inkasso i åtgärdsfönstret.
-4. Klicka på Skriv av.
-5. Klicka på OK.
-6. Stäng sidan.
-7. Gå till Redovisning > Journalposter > Allmänna journaler.
-8. Välj journalbatchnumret för den journal som innehåller din avskrivning.
-    * En rad skapas för att återföra kundbalansen. En eller flera rader skapas för att bokföra avskrivningen till avskrivningskontot.  
-9. Stäng sidan.
-10. Stäng sidan.
+## <a name="write-off-a-customer-balance-from-the-aged-balances-page"></a><span data-ttu-id="3bf31-118">Skriv av en kundbalans på sidan Åldersfördelade saldon.</span><span class="sxs-lookup"><span data-stu-id="3bf31-118">Write off a customer balance from the aged balances page</span></span>
+1. <span data-ttu-id="3bf31-119">Gå till Kredit och inkasso > Inkasso > Åldersfördelade saldon.</span><span class="sxs-lookup"><span data-stu-id="3bf31-119">Go to Credit and collections > Collections > Aged balances.</span></span>
+2. <span data-ttu-id="3bf31-120">Markera raden för den kund som du vill skriva av.</span><span class="sxs-lookup"><span data-stu-id="3bf31-120">Mark the row for the customer that you want to write off.</span></span> <span data-ttu-id="3bf31-121">Markera till exempel raden med företaget Birch.</span><span class="sxs-lookup"><span data-stu-id="3bf31-121">For example, mark the line with Birch Company on it.</span></span>
+3. <span data-ttu-id="3bf31-122">Klicka på Inkasso i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="3bf31-122">On the Action Pane, click Collect.</span></span>
+4. <span data-ttu-id="3bf31-123">Klicka på Skriv av.</span><span class="sxs-lookup"><span data-stu-id="3bf31-123">Click Write off.</span></span>
+5. <span data-ttu-id="3bf31-124">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="3bf31-124">Click OK.</span></span>
+6. <span data-ttu-id="3bf31-125">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="3bf31-125">Close the page.</span></span>
+7. <span data-ttu-id="3bf31-126">Gå till Redovisning > Journalposter > Allmänna journaler.</span><span class="sxs-lookup"><span data-stu-id="3bf31-126">Go to General ledger > Journal entries > General journals.</span></span>
+8. <span data-ttu-id="3bf31-127">Välj journalbatchnumret för den journal som innehåller din avskrivning.</span><span class="sxs-lookup"><span data-stu-id="3bf31-127">Select the journal batch number for the journal that contains your write-off.</span></span>
+    * <span data-ttu-id="3bf31-128">En rad skapas för att återföra kundbalansen.</span><span class="sxs-lookup"><span data-stu-id="3bf31-128">One line is created to reverse the customer balance.</span></span> <span data-ttu-id="3bf31-129">En eller flera rader skapas för att bokföra avskrivningen till avskrivningskontot.</span><span class="sxs-lookup"><span data-stu-id="3bf31-129">One or more lines are created to post the write-off to the write-off account.</span></span>  
+9. <span data-ttu-id="3bf31-130">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="3bf31-130">Close the page.</span></span>
+10. <span data-ttu-id="3bf31-131">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="3bf31-131">Close the page.</span></span>
 
-## <a name="write-off-transactions-from-the-collections-form"></a>Skriv av transaktioner från inkassoformuläret.
-1. Gå till Kredit och inkasso > Inkasso > Åldersfördelade saldon.
-2. Välj namnet på kunden som har de transaktioner som du vill skriva av. Välj till exempel Cave Wholesales (US-004).
-3. Markera raden för den första transaktionen.
-4. Markera raden för den andra transaktionen.
-5. Klicka på Skriv av.
-6. Skriv "Dåliga skulder" i fältet Orsakskommentar.
-7. Klicka på OK.
-8. Stäng sidan.
-9. Stäng sidan.
-10. Gå till Redovisning > Journalposter > Allmänna journaler.
-11. Välj journalbatchnumret för den journal som innehåller din avskrivning.
-    * En rad skapas för att återföra kundbalansen. En eller flera rader skapas för att bokföra avskrivningen till avskrivningskontot.  
-12. Stäng sidan.
-13. Stäng sidan.
+## <a name="write-off-transactions-from-the-collections-form"></a><span data-ttu-id="3bf31-132">Skriv av transaktioner från inkassoformuläret.</span><span class="sxs-lookup"><span data-stu-id="3bf31-132">Write off transactions from the collections form.</span></span>
+1. <span data-ttu-id="3bf31-133">Gå till Kredit och inkasso > Inkasso > Åldersfördelade saldon.</span><span class="sxs-lookup"><span data-stu-id="3bf31-133">Go to Credit and collections > Collections > Aged balances.</span></span>
+2. <span data-ttu-id="3bf31-134">Välj namnet på kunden som har de transaktioner som du vill skriva av.</span><span class="sxs-lookup"><span data-stu-id="3bf31-134">Select the name of the customer that has the transactions that you want to write off.</span></span> <span data-ttu-id="3bf31-135">Välj till exempel Cave Wholesales (US-004).</span><span class="sxs-lookup"><span data-stu-id="3bf31-135">For example, select Cave Wholesales (US-004).</span></span>
+3. <span data-ttu-id="3bf31-136">Markera raden för den första transaktionen.</span><span class="sxs-lookup"><span data-stu-id="3bf31-136">Mark the row for the first transaction.</span></span>
+4. <span data-ttu-id="3bf31-137">Markera raden för den andra transaktionen.</span><span class="sxs-lookup"><span data-stu-id="3bf31-137">Mark the row for the second transaction.</span></span>
+5. <span data-ttu-id="3bf31-138">Klicka på Skriv av.</span><span class="sxs-lookup"><span data-stu-id="3bf31-138">Click Write off.</span></span>
+6. <span data-ttu-id="3bf31-139">Skriv "Dåliga skulder" i fältet Orsakskommentar.</span><span class="sxs-lookup"><span data-stu-id="3bf31-139">In the Reason comment field, type 'Bad debts'.</span></span>
+7. <span data-ttu-id="3bf31-140">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="3bf31-140">Click OK.</span></span>
+8. <span data-ttu-id="3bf31-141">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="3bf31-141">Close the page.</span></span>
+9. <span data-ttu-id="3bf31-142">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="3bf31-142">Close the page.</span></span>
+10. <span data-ttu-id="3bf31-143">Gå till Redovisning > Journalposter > Allmänna journaler.</span><span class="sxs-lookup"><span data-stu-id="3bf31-143">Go to General ledger > Journal entries > General journals.</span></span>
+11. <span data-ttu-id="3bf31-144">Välj journalbatchnumret för den journal som innehåller din avskrivning.</span><span class="sxs-lookup"><span data-stu-id="3bf31-144">Select the journal batch number for the journal that contains your write-off.</span></span>
+    * <span data-ttu-id="3bf31-145">En rad skapas för att återföra kundbalansen.</span><span class="sxs-lookup"><span data-stu-id="3bf31-145">One line is created to reverse the customer balance.</span></span> <span data-ttu-id="3bf31-146">En eller flera rader skapas för att bokföra avskrivningen till avskrivningskontot.</span><span class="sxs-lookup"><span data-stu-id="3bf31-146">One or more lines are created to post the write-off to the write-off account.</span></span>  
+12. <span data-ttu-id="3bf31-147">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="3bf31-147">Close the page.</span></span>
+13. <span data-ttu-id="3bf31-148">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="3bf31-148">Close the page.</span></span>
 
-## <a name="write-off-an-invoice-from-the-open-customers-invoices-page"></a>Skriv av en faktura från sidan Öppna kundfakturor
-1. Gå till Kundreskontra > Fakturor > Öppna kundfakturor.
-2. Markera raden för en faktura. Markera till exempel raden för CIV-000667.
-3. Klicka på Faktura i åtgärdsfönstret.
-4. Klicka på Skriv av.
-5. Klicka på OK.
-6. Stäng sidan.
+## <a name="write-off-an-invoice-from-the-open-customers-invoices-page"></a><span data-ttu-id="3bf31-149">Skriv av en faktura från sidan Öppna kundfakturor</span><span class="sxs-lookup"><span data-stu-id="3bf31-149">Write off an invoice from the Open customers invoices page</span></span>
+1. <span data-ttu-id="3bf31-150">Gå till Kundreskontra > Fakturor > Öppna kundfakturor.</span><span class="sxs-lookup"><span data-stu-id="3bf31-150">Go to Accounts receivable > Invoices > Open customer invoices.</span></span>
+2. <span data-ttu-id="3bf31-151">Markera raden för en faktura.</span><span class="sxs-lookup"><span data-stu-id="3bf31-151">Mark the line for an invoice.</span></span> <span data-ttu-id="3bf31-152">Markera till exempel raden för CIV-000667.</span><span class="sxs-lookup"><span data-stu-id="3bf31-152">For example, mark the line for CIV-000667.</span></span>
+3. <span data-ttu-id="3bf31-153">Klicka på Faktura i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="3bf31-153">On the Action Pane, click Invoice.</span></span>
+4. <span data-ttu-id="3bf31-154">Klicka på Skriv av.</span><span class="sxs-lookup"><span data-stu-id="3bf31-154">Click Write off.</span></span>
+5. <span data-ttu-id="3bf31-155">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="3bf31-155">Click OK.</span></span>
+6. <span data-ttu-id="3bf31-156">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="3bf31-156">Close the page.</span></span>
 
-## <a name="write-off-a-customer-balance-from-the-customer-page"></a>Skriv av ett kundsaldo från sidan Kunder
-1. Gå till Leverantörsreskontra > Kunder > Alla kunder.
-2. Välj ett kundkonto. Välj till exempel US-001 (Contoso Retail San Diego).
-3. Klicka på Inkasso i åtgärdsfönstret.
-4. Klicka på Skriv av.
-5. Klicka på OK.
-6. Stäng sidan.
+## <a name="write-off-a-customer-balance-from-the-customer-page"></a><span data-ttu-id="3bf31-157">Skriv av ett kundsaldo från sidan Kunder</span><span class="sxs-lookup"><span data-stu-id="3bf31-157">Write off a customer balance from the customer page</span></span>
+1. <span data-ttu-id="3bf31-158">Gå till Leverantörsreskontra > Kunder > Alla kunder.</span><span class="sxs-lookup"><span data-stu-id="3bf31-158">Go to Accounts receivable > Customers > All customers.</span></span>
+2. <span data-ttu-id="3bf31-159">Välj ett kundkonto.</span><span class="sxs-lookup"><span data-stu-id="3bf31-159">Select a customer account.</span></span> <span data-ttu-id="3bf31-160">Välj till exempel US-001 (Contoso Retail San Diego).</span><span class="sxs-lookup"><span data-stu-id="3bf31-160">For example, select US-001 (Contoso Retail San Diego).</span></span>
+3. <span data-ttu-id="3bf31-161">Klicka på Inkasso i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="3bf31-161">On the Action Pane, click Collect.</span></span>
+4. <span data-ttu-id="3bf31-162">Klicka på Skriv av.</span><span class="sxs-lookup"><span data-stu-id="3bf31-162">Click Write off.</span></span>
+5. <span data-ttu-id="3bf31-163">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="3bf31-163">Click OK.</span></span>
+6. <span data-ttu-id="3bf31-164">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="3bf31-164">Close the page.</span></span>
 
 

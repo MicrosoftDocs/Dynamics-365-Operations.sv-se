@@ -16,29 +16,29 @@ ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: c4dcc0a086095029aec24eda0b89a7f6a2063bf3
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 3a6aa136018e586fd66e77c0f2af3a9f321f822f
 ms.contentlocale: sv-se
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="view-posted-sales-tax-transactions"></a>Visa bokförda momstransaktioner
+# <a name="view-posted-sales-tax-transactions"></a><span data-ttu-id="6e8c2-103">Visa bokförda momstransaktioner</span><span class="sxs-lookup"><span data-stu-id="6e8c2-103">View posted sales tax transactions</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Du kan visa bokförda momstransaktioner från olika sidor beroende på vad du behöver visa. I den här uppgiften används demonstrationsföretaget USMF.
+<span data-ttu-id="6e8c2-104">Du kan visa bokförda momstransaktioner från olika sidor beroende på vad du behöver visa.</span><span class="sxs-lookup"><span data-stu-id="6e8c2-104">You can view posted sales tax transactions from various page depending on what you need to view.</span></span> <span data-ttu-id="6e8c2-105">I den här uppgiften används demonstrationsföretaget USMF.</span><span class="sxs-lookup"><span data-stu-id="6e8c2-105">This task uses the USMF demo company.</span></span>
 
-1. Gå till > Förfrågningar och rapporter > Momsförfrågningar > Bokför moms.
-2. Klicka på Visa filter.
-3. Stäng sidan.
-4. Gå till Moms > Indirekt moms > Moms > Momskvittningsperioder.
-5. Expandera avsnittet Periodintervall.
-6. Välj intervallet som du är intresserad av.
-7. Visa bokförda momstransaktioner för det valda kvittningsperiodintervallet.
-8. Du kan ytterligare filtrera listan med bokförda momstransaktioner.
-9. Stäng sidan.
-10. Gå till Skatt > Indirekta skatter > Moms > Momskoder.
-11. Klicka på Momskod i åtgärdsfönstret.
-12. Klicka på Bokförd moms.
+1. <span data-ttu-id="6e8c2-106">Gå till > Förfrågningar och rapporter > Momsförfrågningar > Bokför moms.</span><span class="sxs-lookup"><span data-stu-id="6e8c2-106">Go to Tax > Inquiries and reports > Sales tax inquiries > Posted sales tax.</span></span>
+2. <span data-ttu-id="6e8c2-107">Klicka på Visa filter.</span><span class="sxs-lookup"><span data-stu-id="6e8c2-107">Click Show filters.</span></span>
+3. <span data-ttu-id="6e8c2-108">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="6e8c2-108">Close the page.</span></span>
+4. <span data-ttu-id="6e8c2-109">Gå till Moms > Indirekt moms > Moms > Momskvittningsperioder.</span><span class="sxs-lookup"><span data-stu-id="6e8c2-109">Go to Tax > Indirect taxes > Sales tax > Sales tax settlement periods.</span></span>
+5. <span data-ttu-id="6e8c2-110">Expandera avsnittet Periodintervall.</span><span class="sxs-lookup"><span data-stu-id="6e8c2-110">Expand the Period intervals section.</span></span>
+6. <span data-ttu-id="6e8c2-111">Välj intervallet som du är intresserad av.</span><span class="sxs-lookup"><span data-stu-id="6e8c2-111">Select the interval you are interested in.</span></span>
+7. <span data-ttu-id="6e8c2-112">Visa bokförda momstransaktioner för det valda kvittningsperiodintervallet.</span><span class="sxs-lookup"><span data-stu-id="6e8c2-112">Display posted sales tax transactions for the selected settlement period interval.</span></span>
+8. <span data-ttu-id="6e8c2-113">Du kan ytterligare filtrera listan med bokförda momstransaktioner.</span><span class="sxs-lookup"><span data-stu-id="6e8c2-113">You can further filter the list of posted sales tax transactions.</span></span>
+9. <span data-ttu-id="6e8c2-114">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="6e8c2-114">Close the page.</span></span>
+10. <span data-ttu-id="6e8c2-115">Gå till Skatt > Indirekta skatter > Moms > Momskoder.</span><span class="sxs-lookup"><span data-stu-id="6e8c2-115">Go to Tax > Indirect taxes > Sales tax > Sales tax codes.</span></span>
+11. <span data-ttu-id="6e8c2-116">Klicka på Momskod i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="6e8c2-116">On the Action Pane, click Sales tax code.</span></span>
+12. <span data-ttu-id="6e8c2-117">Klicka på Bokförd moms.</span><span class="sxs-lookup"><span data-stu-id="6e8c2-117">Click Posted sales tax.</span></span>
 
 

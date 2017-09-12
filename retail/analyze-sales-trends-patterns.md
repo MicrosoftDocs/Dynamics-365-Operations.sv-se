@@ -19,31 +19,31 @@ ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
-ms.openlocfilehash: f27e332e5a8028055903054a6175baafd224abe9
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 46aa385d14f913a24e1cc3c4cc2fd00243b30e75
 ms.contentlocale: sv-se
-ms.lasthandoff: 06/20/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="analyze-sales-trends-and-patterns"></a>Analysera försäljningstrender och försäljningsmönster
+# <a name="analyze-sales-trends-and-patterns"></a><span data-ttu-id="19eaa-103">Analysera försäljningstrender och försäljningsmönster</span><span class="sxs-lookup"><span data-stu-id="19eaa-103">Analyze sales trends and patterns</span></span>
 
 [!include[banner](includes/banner.md)]
 
 
-Du kan studera försäljningstrender och mönster i realtid i Microsoft Dynamics 365 for Retail.
+<span data-ttu-id="19eaa-104">Du kan studera försäljningstrender och mönster i realtid i Microsoft Dynamics 365 for Retail.</span><span class="sxs-lookup"><span data-stu-id="19eaa-104">You can study sales trends and patterns in real time in Microsoft Dynamics 365 for Retail.</span></span>
 
-Som en del av Dynamics 365 for Retail kan användare studera försäljningstrender och -mönster, i realtid på olika nivåer i organisationshierarkin och för olika år, genom att öppna den medföljande rapporten **Kanalförsäljning efter år**. Du kan öppna den här rapporten från någon av följande platser:
+<span data-ttu-id="19eaa-105">Som en del av Dynamics 365 for Retail kan användare studera försäljningstrender och -mönster, i realtid på olika nivåer i organisationshierarkin och för olika år, genom att öppna den medföljande rapporten **Kanalförsäljning efter år**.</span><span class="sxs-lookup"><span data-stu-id="19eaa-105">As part of Dynamics 365 for Retail, users can study sales trends and patterns in real time across different levels of the organization hierarchy over a period of years by using the out-of-box **Channel sales by year** report.</span></span> <span data-ttu-id="19eaa-106">Du kan öppna den här rapporten från någon av följande platser:</span><span class="sxs-lookup"><span data-stu-id="19eaa-106">You can open this report from any of the following locations:</span></span>
 
--   Arbetsytan **Butikshantering** &gt; **Butik** &gt; **Kanaler** &gt; **Butikshantering** &gt; **Rapporter** &gt; **Kanalförsäljning per år - rapport**
--   Arbetsytan **Butiksekonomi** &gt; **Butik** &gt; **Kanaler** &gt; **Butiksekonomi** &gt; **Rapporter** &gt; **Kanalförsäljning per år - rapport**
--   Avsnittet **Förfrågningar och rapporter** &gt; **Butik** &gt; **Förfrågningar och rapporter** &gt; **Försäljningsrapporter** &gt; **Kanalförsäljning per år - rapport**
+-   <span data-ttu-id="19eaa-107">Arbetsytan **Butikshantering** &gt; **Butik** &gt; **Kanaler** &gt; **Butikshantering** &gt; **Rapporter** &gt; **Kanalförsäljning per år - rapport**</span><span class="sxs-lookup"><span data-stu-id="19eaa-107">**Retail store management** workspace &gt; **Retail** &gt; **Channels** &gt; **Retail store management** &gt; **Reports** &gt; **Channel sales by year report**</span></span>
+-   <span data-ttu-id="19eaa-108">Arbetsytan **Butiksekonomi** &gt; **Butik** &gt; **Kanaler** &gt; **Butiksekonomi** &gt; **Rapporter** &gt; **Kanalförsäljning per år - rapport**</span><span class="sxs-lookup"><span data-stu-id="19eaa-108">**Retail store financials** workspace &gt; **Retail** &gt; **Channels** &gt; **Retail store financials** &gt; **Reports** &gt; **Channel sales by year report**</span></span>
+-   <span data-ttu-id="19eaa-109">Avsnittet **Förfrågningar och rapporter** &gt; **Butik** &gt; **Förfrågningar och rapporter** &gt; **Försäljningsrapporter** &gt; **Kanalförsäljning per år - rapport**</span><span class="sxs-lookup"><span data-stu-id="19eaa-109">**Inquiries and reports** section &gt; **Retail** &gt; **Inquiries and reports** &gt; **Sales reports** &gt; **Channel sales by year report**</span></span>
 
-Användare kan även studera försäljningstrender och mönster på timnivå i organisationshierarkin för en vald period genom att öppna den inbyggda rapporten **Kanalförsäljning per timme**. Du kan öppna den här rapporten från någon av följande platser:
+<span data-ttu-id="19eaa-110">Användare kan även studera försäljningstrender och mönster på timnivå i organisationshierarkin för en vald period genom att öppna den inbyggda rapporten **Kanalförsäljning per timme**.</span><span class="sxs-lookup"><span data-stu-id="19eaa-110">Users can also study sales trends and patterns by hour across different levels of the organization hierarchy over a selected period by using the out-of-box **Channel sales by hour** report.</span></span> <span data-ttu-id="19eaa-111">Du kan öppna den här rapporten från någon av följande platser:</span><span class="sxs-lookup"><span data-stu-id="19eaa-111">You can open this report from any of the following locations:</span></span>
 
--   Arbetsytan **Butikshantering** &gt; **Butik** &gt; **Kanaler** &gt; **Butikshantering** &gt; **Rapporter** &gt; **Kanalförsäljning per timme - rapport**
--   Arbetsytan **Butiksekonomi** &gt; **Butik** &gt; **Kanaler** &gt; **Butiksekonomi** &gt; **Rapporter** &gt; **Kanalförsäljning per timme - rapport**
--   Avsnittet **Förfrågningar och rapporter** &gt; **Butik** &gt; **Förfrågningar och rapporter** &gt; **Försäljningsrapporter** &gt; **Kanalförsäljning per timme - rapport**
+-   <span data-ttu-id="19eaa-112">Arbetsytan **Butikshantering** &gt; **Butik** &gt; **Kanaler** &gt; **Butikshantering** &gt; **Rapporter** &gt; **Kanalförsäljning per timme - rapport**</span><span class="sxs-lookup"><span data-stu-id="19eaa-112">**Retail store management** workspace &gt; **Retail** &gt; **Channels** &gt; **Retail store management** &gt; **Reports** &gt; **Channel sales by hour report**</span></span>
+-   <span data-ttu-id="19eaa-113">Arbetsytan **Butiksekonomi** &gt; **Butik** &gt; **Kanaler** &gt; **Butiksekonomi** &gt; **Rapporter** &gt; **Kanalförsäljning per timme - rapport**</span><span class="sxs-lookup"><span data-stu-id="19eaa-113">**Retail store financials** workspace &gt; **Retail** &gt; **Channels** &gt; **Retail store financials** &gt; **Reports** &gt; **Channel sales by hour report**</span></span>
+-   <span data-ttu-id="19eaa-114">Avsnittet **Förfrågningar och rapporter** &gt; **Butik** &gt; **Förfrågningar och rapporter** &gt; **Försäljningsrapporter** &gt; **Kanalförsäljning per timme - rapport**</span><span class="sxs-lookup"><span data-stu-id="19eaa-114">**Inquiries and reports** section &gt; **Retail** &gt; **Inquiries and reports** &gt; **Sales reports** &gt; **Channel sales by hour report**</span></span>
 
 
 

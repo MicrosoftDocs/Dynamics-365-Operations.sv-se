@@ -1,4 +1,4 @@
---- 
+---
 title: "Skapa och underhålla lagerspärr"
 description: "I den här proceduren visas hur du kan förhindra den fysiska lagerbehållningen från att reserveras av andra utgående källdokument genom att använda lagerspärren."
 author: perlynne
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -17,43 +17,42 @@ ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b947a02be981155053e33a4ef20e19bf2a194a5
-ms.openlocfilehash: 7d0834aa3a415e8e9b4eab745b680e22a680b6b6
+ms.sourcegitcommit: 0e7f66cccd76e5326fce75d1a13aff294c16fb9b
+ms.openlocfilehash: 7272349cf16b9459823a752b8d3df915f42606ef
 ms.contentlocale: sv-se
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/12/2017
 
 ---
-# <a name="create-and-maintain-inventory-blocking"></a>Skapa och underhålla lagerspärr
+# <a name="create-and-maintain-inventory-blocking"></a><span data-ttu-id="efe96-103">Skapa och underhålla lagerspärr</span><span class="sxs-lookup"><span data-stu-id="efe96-103">Create and maintain inventory blocking</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-I den här proceduren visas hur du kan förhindra den fysiska lagerbehållningen från att reserveras av andra utgående källdokument genom att använda lagerspärren. Du kan köra proceduren i demonstrationsdataföretaget USMF med hjälp av exempelvärdena som visas. Du behöver ha en artikel med fysisk lagerbehållning tillgänglig innan du startar den här proceduren.
+<span data-ttu-id="efe96-104">I den här proceduren visas hur du kan förhindra den fysiska lagerbehållningen från att reserveras av andra utgående källdokument genom att använda lagerspärren.</span><span class="sxs-lookup"><span data-stu-id="efe96-104">This procedure shows how to prevent physical on-hand inventory from being reserved by other outbound source documents by using the inventory blocking.</span></span> <span data-ttu-id="efe96-105">Du kan köra proceduren i demonstrationsdataföretaget USMF med hjälp av exempelvärdena som visas.</span><span class="sxs-lookup"><span data-stu-id="efe96-105">You can run the procedure in demo data company USMF using the example values that are shown.</span></span> <span data-ttu-id="efe96-106">Du behöver ha en artikel med fysisk lagerbehållning tillgänglig innan du startar den här proceduren.</span><span class="sxs-lookup"><span data-stu-id="efe96-106">You need to have an item with physical on-hand inventory available before you start this procedure.</span></span>
 
 
-## <a name="create-an-inventory-blocking"></a>Skapa en lagerspärr
-1. Gå till Lagerhantering > Periodiska uppgifter >Lagerspärr.
-2. Klicka på Ny.
-3. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Artikelnummer.
-4. Välj den artikel som du vill ha i listan. 
-    * Välj ett artikelnummer med fysisk lagerbehållning som du vill spärra. Om du använder USMF kan du välja artikeln M9201.  
-5. Ange ett tal i fältet Kvantitet.
-    * Om du använder artikeln M9201 måste du välja lägre än 200.  
-6. Växla expansionen av avsnittet Lagerdimensioner.
-7. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Lagerställe.
-8. Hitta och markera önskad post i listan.
-    * Om du använder artikeln M9201 kan du välja lager 51.  
-9. Klicka på Spara.
+## <a name="create-an-inventory-blocking"></a><span data-ttu-id="efe96-107">Skapa en lagerspärr</span><span class="sxs-lookup"><span data-stu-id="efe96-107">Create an inventory blocking</span></span>
+1. <span data-ttu-id="efe96-108">Gå till Lagerhantering > Periodiska uppgifter >Lagerspärr.</span><span class="sxs-lookup"><span data-stu-id="efe96-108">Go to Inventory management > Periodic tasks > Inventory blocking.</span></span>
+2. <span data-ttu-id="efe96-109">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="efe96-109">Click New.</span></span>
+3. <span data-ttu-id="efe96-110">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Artikelnummer.</span><span class="sxs-lookup"><span data-stu-id="efe96-110">In the Item number field, click the drop-down button to open the lookup.</span></span>
+4. <span data-ttu-id="efe96-111">Välj den artikel som du vill ha i listan.</span><span class="sxs-lookup"><span data-stu-id="efe96-111">In the list, select the item you want to choose.</span></span>
+    * <span data-ttu-id="efe96-112">Välj ett artikelnummer med fysisk lagerbehållning som du vill spärra.</span><span class="sxs-lookup"><span data-stu-id="efe96-112">Select an item number with physical on-hand inventory that you want to block.</span></span> <span data-ttu-id="efe96-113">Om du använder USMF kan du välja artikeln M9201.</span><span class="sxs-lookup"><span data-stu-id="efe96-113">If you’re using USMF you can select item M9201.</span></span>  
+5. <span data-ttu-id="efe96-114">Ange ett tal i fältet Kvantitet.</span><span class="sxs-lookup"><span data-stu-id="efe96-114">In the Quantity field, enter a number.</span></span>
+    * <span data-ttu-id="efe96-115">Om du använder artikeln M9201 måste du välja lägre än 200.</span><span class="sxs-lookup"><span data-stu-id="efe96-115">If you’re using item M9201, you need to select less than 200.</span></span>  
+6. <span data-ttu-id="efe96-116">Växla expansionen av avsnittet Lagerdimensioner.</span><span class="sxs-lookup"><span data-stu-id="efe96-116">Toggle the expansion of the Inventory dimensions section.</span></span>
+7. <span data-ttu-id="efe96-117">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Lagerställe.</span><span class="sxs-lookup"><span data-stu-id="efe96-117">In the Warehouse field, click the drop-down button to open the lookup.</span></span>
+8. <span data-ttu-id="efe96-118">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="efe96-118">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="efe96-119">Om du använder artikeln M9201 kan du välja lager 51.</span><span class="sxs-lookup"><span data-stu-id="efe96-119">If you’re using item M9201, you can select warehouse 51.</span></span>  
+9. <span data-ttu-id="efe96-120">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="efe96-120">Click Save.</span></span>
 
-## <a name="update-the-conditions-of-the-inventory-blocking"></a>Uppdatera villkoren för lagerspärrren
-1. Ange ett tal i fältet Kvantitet.
-    * Uppdatera lagerkvantitetsfältet som speglar kvantiteten som ska spärras.  
-2. Ange ett datum i fältet Förväntat datum.
-    * Du kanske vill ange när det spärrade lagret förväntas bli tillgängligt för reservation genom att tilldela ett förväntat datum. Om du väljer alternativet Förväntade inleveranser för lagerspärren som anges som standard när du skapar en spärr manuellt, kommer detta datum visas på den förväntade transaktionen.  
-3. Klicka på Spara.
+## <a name="update-the-conditions-of-the-inventory-blocking"></a><span data-ttu-id="efe96-121">Uppdatera villkoren för lagerspärrren</span><span class="sxs-lookup"><span data-stu-id="efe96-121">Update the conditions of the inventory blocking</span></span>
+1. <span data-ttu-id="efe96-122">Ange ett tal i fältet Kvantitet.</span><span class="sxs-lookup"><span data-stu-id="efe96-122">In the Quantity field, enter a number.</span></span>
+    * <span data-ttu-id="efe96-123">Uppdatera lagerkvantitetsfältet som speglar kvantiteten som ska spärras.</span><span class="sxs-lookup"><span data-stu-id="efe96-123">Update the inventory quantity field to reflect the quantity to block.</span></span>  
+2. <span data-ttu-id="efe96-124">Ange ett datum i fältet Förväntat datum.</span><span class="sxs-lookup"><span data-stu-id="efe96-124">In the Expected date field, enter a date.</span></span>
+    * <span data-ttu-id="efe96-125">Du kanske vill ange när det spärrade lagret förväntas bli tillgängligt för reservation genom att tilldela ett förväntat datum.</span><span class="sxs-lookup"><span data-stu-id="efe96-125">You might want to indicate when the blocked inventory is expected to become available for reservation by assigning an expected date.</span></span> <span data-ttu-id="efe96-126">Om du väljer alternativet Förväntade inleveranser för lagerspärren som anges som standard när du skapar en spärr manuellt, kommer detta datum visas på den förväntade transaktionen.</span><span class="sxs-lookup"><span data-stu-id="efe96-126">If the Expected receipts option is selected for the inventory blocking, as it is by default when you manually create a blocking, this date will appear on the expected transaction.</span></span>  
+3. <span data-ttu-id="efe96-127">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="efe96-127">Click Save.</span></span>
 
-## <a name="remove-the-inventory-blocking"></a>Ta bort lagerspärren
-1. Klicka på Ta bort.
-2. Klicka på Ja.
-3. Stäng sidan.
-
+## <a name="remove-the-inventory-blocking"></a><span data-ttu-id="efe96-128">Ta bort lagerspärren</span><span class="sxs-lookup"><span data-stu-id="efe96-128">Remove the inventory blocking</span></span>
+1. <span data-ttu-id="efe96-129">Klicka på Ta bort.</span><span class="sxs-lookup"><span data-stu-id="efe96-129">Click Delete.</span></span>
+2. <span data-ttu-id="efe96-130">Klicka på Ja.</span><span class="sxs-lookup"><span data-stu-id="efe96-130">Click Yes.</span></span>
+3. <span data-ttu-id="efe96-131">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="efe96-131">Close the page.</span></span>
 

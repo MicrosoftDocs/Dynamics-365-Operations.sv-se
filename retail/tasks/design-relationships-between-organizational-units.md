@@ -17,49 +17,49 @@ ms.author: mumani
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: 885f36861e3b1ac0dcd3c944d4a514c3af247329
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: e35915d2300755249ecd54bf2e4939d3a8df4f61
 ms.contentlocale: sv-se
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="design-the-relationships-between-organizational-units"></a> Utforma relationerna mellan organisationsenheter
+# <a name="design-the-relationships-between-organizational-units"></a><span data-ttu-id="37095-103"> Utforma relationerna mellan organisationsenheter</span><span class="sxs-lookup"><span data-stu-id="37095-103">Design the relationships between organizational units</span></span>
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-I den här proceduren går vi igenom hur du utformar relationen mellan organisationsenheter. Du måste skapa ett nytt organisationsyfte innan du definierar relationen, eller använda det befintliga organisationsyftet. Demonstrationsdataföretaget som används för att utföra den här proceduren är USRT. Den här uppgiften är avsedd för administratörsrollen.
+<span data-ttu-id="37095-104">I den här proceduren går vi igenom hur du utformar relationen mellan organisationsenheter.</span><span class="sxs-lookup"><span data-stu-id="37095-104">This procedure walks through how to design the relationship between organizational units.</span></span> <span data-ttu-id="37095-105">Du måste skapa ett nytt organisationsyfte innan du definierar relationen, eller använda det befintliga organisationsyftet.</span><span class="sxs-lookup"><span data-stu-id="37095-105">You must create a new organization purpose before defining the relationship, or you can use the existing organization purpose.</span></span> <span data-ttu-id="37095-106">Demonstrationsdataföretaget som används för att utföra den här proceduren är USRT.</span><span class="sxs-lookup"><span data-stu-id="37095-106">The demo data company used to complete this procedure is USRT.</span></span> <span data-ttu-id="37095-107">Den här uppgiften är avsedd för administratörsrollen.</span><span class="sxs-lookup"><span data-stu-id="37095-107">This task is intended for the administrator role.</span></span>
 
-1. Gå till Organisationsadministration > Organisationer > Organisationshierarkier.
-2. Klicka på Ny.
-3. Skriv ett värde i fältet Namn.
-4. Klicka på Tilldela syfte.
-5. Hitta och markera önskad post i listan.
-6. Klicka på Lägg till.
-7. Hitta och markera önskad post i listan.
-8. Klicka på OK.
-    * Du kan välja så många organisationsyften som krävs för din organisation.  
-9. Hitta och markera önskad post i listan.
-10. Klicka på Ange som standard.
-11. Stäng sidan.
-12. Klicka på Spara.
-13. Klicka på Visa.
-14. Klicka på Redigera.
-15. Klicka på Infoga.
-16. Klicka på Affärsenhet.
-17. Hitta och markera önskad post i listan.
-18. Klicka på länken på den valda raden i listan.
-19. Klicka på Infoga.
-20. Klicka på Butikskanal.
-21. Hitta och markera önskad post i listan.
-22. Klicka på länken på den valda raden i listan.
-    * Du kan lägga till så många organisationsenheter som krävs.  
-23. Klicka på Spara.
-24. Klicka på Stäng.
-25. Klicka på Publicera om du vill öppna formuläret med listrutan för att öppna dialogrutan.
-26. Ange datum och tid i fältet Giltighetsdatum.
-27. Ange datum och tid i fältet Giltighetsdatum.
-28. Skriv ett värde i fältet Beskriv ändringar.
-29. Klicka på Publicera.
-30. Klicka på Stäng.
+1. <span data-ttu-id="37095-108">Gå till Organisationsadministration > Organisationer > Organisationshierarkier.</span><span class="sxs-lookup"><span data-stu-id="37095-108">Go to Organization administration > Organizations > Organization hierarchies.</span></span>
+2. <span data-ttu-id="37095-109">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="37095-109">Click New.</span></span>
+3. <span data-ttu-id="37095-110">Skriv ett värde i fältet Namn.</span><span class="sxs-lookup"><span data-stu-id="37095-110">In the Name field, type a value.</span></span>
+4. <span data-ttu-id="37095-111">Klicka på Tilldela syfte.</span><span class="sxs-lookup"><span data-stu-id="37095-111">Click Assign purpose.</span></span>
+5. <span data-ttu-id="37095-112">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="37095-112">In the list, find and select the desired record.</span></span>
+6. <span data-ttu-id="37095-113">Klicka på Lägg till.</span><span class="sxs-lookup"><span data-stu-id="37095-113">Click Add.</span></span>
+7. <span data-ttu-id="37095-114">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="37095-114">In the list, find and select the desired record.</span></span>
+8. <span data-ttu-id="37095-115">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="37095-115">Click OK.</span></span>
+    * <span data-ttu-id="37095-116">Du kan välja så många organisationsyften som krävs för din organisation.</span><span class="sxs-lookup"><span data-stu-id="37095-116">You can select as many organization purposes as required for your organization.</span></span>  
+9. <span data-ttu-id="37095-117">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="37095-117">In the list, find and select the desired record.</span></span>
+10. <span data-ttu-id="37095-118">Klicka på Ange som standard.</span><span class="sxs-lookup"><span data-stu-id="37095-118">Click Set as default.</span></span>
+11. <span data-ttu-id="37095-119">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="37095-119">Close the page.</span></span>
+12. <span data-ttu-id="37095-120">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="37095-120">Click Save.</span></span>
+13. <span data-ttu-id="37095-121">Klicka på Visa.</span><span class="sxs-lookup"><span data-stu-id="37095-121">Click View.</span></span>
+14. <span data-ttu-id="37095-122">Klicka på Redigera.</span><span class="sxs-lookup"><span data-stu-id="37095-122">Click Edit.</span></span>
+15. <span data-ttu-id="37095-123">Klicka på Infoga.</span><span class="sxs-lookup"><span data-stu-id="37095-123">Click Insert.</span></span>
+16. <span data-ttu-id="37095-124">Klicka på Affärsenhet.</span><span class="sxs-lookup"><span data-stu-id="37095-124">Click Business unit.</span></span>
+17. <span data-ttu-id="37095-125">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="37095-125">In the list, find and select the desired record.</span></span>
+18. <span data-ttu-id="37095-126">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="37095-126">In the list, click the link in the selected row.</span></span>
+19. <span data-ttu-id="37095-127">Klicka på Infoga.</span><span class="sxs-lookup"><span data-stu-id="37095-127">Click Insert.</span></span>
+20. <span data-ttu-id="37095-128">Klicka på Butikskanal.</span><span class="sxs-lookup"><span data-stu-id="37095-128">Click Retail channel.</span></span>
+21. <span data-ttu-id="37095-129">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="37095-129">In the list, find and select the desired record.</span></span>
+22. <span data-ttu-id="37095-130">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="37095-130">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="37095-131">Du kan lägga till så många organisationsenheter som krävs.</span><span class="sxs-lookup"><span data-stu-id="37095-131">You can add as many organization units as is required.</span></span>  
+23. <span data-ttu-id="37095-132">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="37095-132">Click Save.</span></span>
+24. <span data-ttu-id="37095-133">Klicka på Stäng.</span><span class="sxs-lookup"><span data-stu-id="37095-133">Click Close.</span></span>
+25. <span data-ttu-id="37095-134">Klicka på Publicera om du vill öppna formuläret med listrutan för att öppna dialogrutan.</span><span class="sxs-lookup"><span data-stu-id="37095-134">Click Publish to open the drop dialog.</span></span>
+26. <span data-ttu-id="37095-135">Ange datum och tid i fältet Giltighetsdatum.</span><span class="sxs-lookup"><span data-stu-id="37095-135">In the Effective date field, enter a date and time.</span></span>
+27. <span data-ttu-id="37095-136">Ange datum och tid i fältet Giltighetsdatum.</span><span class="sxs-lookup"><span data-stu-id="37095-136">In the Effective date field, enter a date and time.</span></span>
+28. <span data-ttu-id="37095-137">Skriv ett värde i fältet Beskriv ändringar.</span><span class="sxs-lookup"><span data-stu-id="37095-137">In the Describe changes field, type a value.</span></span>
+29. <span data-ttu-id="37095-138">Klicka på Publicera.</span><span class="sxs-lookup"><span data-stu-id="37095-138">Click Publish.</span></span>
+30. <span data-ttu-id="37095-139">Klicka på Stäng.</span><span class="sxs-lookup"><span data-stu-id="37095-139">Click Close.</span></span>
 
 

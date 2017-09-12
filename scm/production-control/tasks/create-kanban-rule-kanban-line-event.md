@@ -17,55 +17,55 @@ ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b947a02be981155053e33a4ef20e19bf2a194a5
-ms.openlocfilehash: cc8c3ff5e98ccce56a7a19b16c1aceac650cdf5a
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 9ef7b8e920d22cbc4f96676e68a263f2da7f232c
 ms.contentlocale: sv-se
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-a-kanban-rule-using-a-kanban-line-event"></a>Skapa en kanban-regel med en kanban-radhändelse
+# <a name="create-a-kanban-rule-using-a-kanban-line-event"></a><span data-ttu-id="bfeb4-103">Skapa en kanban-regel med en kanban-radhändelse</span><span class="sxs-lookup"><span data-stu-id="bfeb4-103">Create a kanban rule using a kanban line event</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Den här proceduren skapar en kanban-regel genom att använda inställningen för kanban-radhändelsen för att utlösa drag från en processaktivitet. Kanban-regeln utlöses av en kanban processaktivitet med en kvantitet lika med eller större än 25 vardera. Det demonstrationsdataföretag som används för att skapa den här uppgiften är USMF. Den här uppgiften är avsedd för processingenjören eller värdeströmansvarig när de förbereder tillverkningen av en ny eller ändrad produkt i en resurssnål miljö.
+<span data-ttu-id="bfeb4-104">Den här proceduren skapar en kanban-regel genom att använda inställningen för kanban-radhändelsen för att utlösa drag från en processaktivitet.</span><span class="sxs-lookup"><span data-stu-id="bfeb4-104">This procedure creates a kanban rule by using the kanban line event setting to trigger pull from a process activity.</span></span> <span data-ttu-id="bfeb4-105">Kanban-regeln utlöses av en kanban processaktivitet med en kvantitet lika med eller större än 25 vardera.</span><span class="sxs-lookup"><span data-stu-id="bfeb4-105">The kanban rule is triggered by a kanban process activity, with a quantity equal to or greater than 25 each.</span></span> <span data-ttu-id="bfeb4-106">Det demonstrationsdataföretag som används för att skapa den här uppgiften är USMF.</span><span class="sxs-lookup"><span data-stu-id="bfeb4-106">The demo data company used to create this task is USMF.</span></span> <span data-ttu-id="bfeb4-107">Den här uppgiften är avsedd för processingenjören eller värdeströmansvarig när de förbereder tillverkningen av en ny eller ändrad produkt i en resurssnål miljö.</span><span class="sxs-lookup"><span data-stu-id="bfeb4-107">This task is intended for the process engineer or the value stream manager, as they prepare production of a new or modified product in a lean environment.</span></span>
 
 
-## <a name="create-a-kanban-rule"></a>Skapa en kanban-regel
-1. Gå till Produktinformationshantering > Lean manufacturing > Kanban-regler.
-2. Klicka på Ny.
-3. Välj Händelse i fältet för återanskaffningsstrategi.
-    * Detta skapar kanban direkt från efterfrågan. Den används för att ställa in regler som definierar ett tillverkas på beställning-scenario.  
-4. Ange eller välj ett värde i fältet Första planaktivitet.
-    * Ange eller välj SpeakerAssemblyAndPolish. Den första aktiviteten av en tillverkningskanban-regel är en processaktivitet i produktionsflödet. När du väljer en aktivitet, kopieras giltighetsdatum för aktiviteten till giltighetsdatum för kanban-regeln.  
-5. Expandera avsnittet Detaljer.
-6. Ange "L0001" i fältet Produkt.
-7. Expandera avsnittet Händelser.
-8. Välj "Automatisk" i fältet Kanban-radhändelse.
-    * Då skapas händelse-kanbans på begäran.  Detta fällt används för att konfigurera kanban-regeln som fyller på det material som behövs för en underordnad processaktivitet. När du väljer Automatiskt, skapas händelse-kanbans med efterfrågan. Den här inställningen rekommenderas om du förväntar dig att köra produktion samma dag.  
-9. Ange den minsta händelsekvantiteten till "25".
-    * Händelse-kanban skapas när efterfrågekvantiteten är lika med eller fler än det här fältet. Detta är användbart om du vill producera en orderkvantitet som är mindre än det här fältet på en dator och mer än det här fältet på en annan dator.  
-10. Klicka på Spara.
+## <a name="create-a-kanban-rule"></a><span data-ttu-id="bfeb4-108">Skapa en kanban-regel</span><span class="sxs-lookup"><span data-stu-id="bfeb4-108">Create a kanban rule</span></span>
+1. <span data-ttu-id="bfeb4-109">Gå till Produktinformationshantering > Lean manufacturing > Kanban-regler.</span><span class="sxs-lookup"><span data-stu-id="bfeb4-109">Go to Product information management > Lean manufacturing > Kanban rules.</span></span>
+2. <span data-ttu-id="bfeb4-110">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="bfeb4-110">Click New.</span></span>
+3. <span data-ttu-id="bfeb4-111">Välj Händelse i fältet för återanskaffningsstrategi.</span><span class="sxs-lookup"><span data-stu-id="bfeb4-111">In the Replenishment strategy field, select 'Event'.</span></span>
+    * <span data-ttu-id="bfeb4-112">Detta skapar kanban direkt från efterfrågan.</span><span class="sxs-lookup"><span data-stu-id="bfeb4-112">This generates kanbans directly from demand.</span></span> <span data-ttu-id="bfeb4-113">Den används för att ställa in regler som definierar ett tillverkas på beställning-scenario.</span><span class="sxs-lookup"><span data-stu-id="bfeb4-113">It is used to set up rules that define a make-to-order scenario.</span></span>  
+4. <span data-ttu-id="bfeb4-114">Ange eller välj ett värde i fältet Första planaktivitet.</span><span class="sxs-lookup"><span data-stu-id="bfeb4-114">In the First plan activity field, enter or select a value.</span></span>
+    * <span data-ttu-id="bfeb4-115">Ange eller välj SpeakerAssemblyAndPolish.</span><span class="sxs-lookup"><span data-stu-id="bfeb4-115">Enter or select SpeakerAssemblyAndPolish.</span></span> <span data-ttu-id="bfeb4-116">Den första aktiviteten av en tillverkningskanban-regel är en processaktivitet i produktionsflödet.</span><span class="sxs-lookup"><span data-stu-id="bfeb4-116">The first activity of a manufacturing kanban rule is a process activity in the production flow.</span></span> <span data-ttu-id="bfeb4-117">När du väljer en aktivitet, kopieras giltighetsdatum för aktiviteten till giltighetsdatum för kanban-regeln.</span><span class="sxs-lookup"><span data-stu-id="bfeb4-117">When you select the activity, the validity dates of the activity are copied to the validity dates of the kanban rule.</span></span>  
+5. <span data-ttu-id="bfeb4-118">Expandera avsnittet Detaljer.</span><span class="sxs-lookup"><span data-stu-id="bfeb4-118">Expand the Details section.</span></span>
+6. <span data-ttu-id="bfeb4-119">Ange "L0001" i fältet Produkt.</span><span class="sxs-lookup"><span data-stu-id="bfeb4-119">In the Product field, type 'L0001'.</span></span>
+7. <span data-ttu-id="bfeb4-120">Expandera avsnittet Händelser.</span><span class="sxs-lookup"><span data-stu-id="bfeb4-120">Expand the Events section.</span></span>
+8. <span data-ttu-id="bfeb4-121">Välj "Automatisk" i fältet Kanban-radhändelse.</span><span class="sxs-lookup"><span data-stu-id="bfeb4-121">In the Kanban line event field, select 'Automatic'.</span></span>
+    * <span data-ttu-id="bfeb4-122">Då skapas händelse-kanbans på begäran.</span><span class="sxs-lookup"><span data-stu-id="bfeb4-122">This generates event kanbans on demand.</span></span>  <span data-ttu-id="bfeb4-123">Detta fällt används för att konfigurera kanban-regeln som fyller på det material som behövs för en underordnad processaktivitet.</span><span class="sxs-lookup"><span data-stu-id="bfeb4-123">The field is used to configure kanban rules that replenish material that is required for a downstream process activity.</span></span> <span data-ttu-id="bfeb4-124">När du väljer Automatiskt, skapas händelse-kanbans med efterfrågan.</span><span class="sxs-lookup"><span data-stu-id="bfeb4-124">When you select Automatic, the event kanbans are created with the demand.</span></span> <span data-ttu-id="bfeb4-125">Den här inställningen rekommenderas om du förväntar dig att köra produktion samma dag.</span><span class="sxs-lookup"><span data-stu-id="bfeb4-125">This setting is recommended if you expect to execute production on the same day.</span></span>  
+9. <span data-ttu-id="bfeb4-126">Ange den minsta händelsekvantiteten till "25".</span><span class="sxs-lookup"><span data-stu-id="bfeb4-126">Set Minimum event quantity to '25'.</span></span>
+    * <span data-ttu-id="bfeb4-127">Händelse-kanban skapas när efterfrågekvantiteten är lika med eller fler än det här fältet.</span><span class="sxs-lookup"><span data-stu-id="bfeb4-127">Event kanbans are generated when the demand quantity is equal to or more than this field.</span></span> <span data-ttu-id="bfeb4-128">Detta är användbart om du vill producera en orderkvantitet som är mindre än det här fältet på en dator och mer än det här fältet på en annan dator.</span><span class="sxs-lookup"><span data-stu-id="bfeb4-128">This is useful if you want to produce an order quantity less than this field on one machine and more than this field on another machine.</span></span>  
+10. <span data-ttu-id="bfeb4-129">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="bfeb4-129">Click Save.</span></span>
 
-## <a name="create-sales-order-and-trigger-kanban-chain"></a>Skapa försäljningsorder och utlösa kanbankedjan
-1. Gå till försäljning och marknadsföring > beställningar > Alla beställningar.
-2. Klicka på Ny.
-3. I fältet Kundkonto, ange eller välj ett värde.
-    * Välj kundkontot US-003, Forest Wholesales.  
-4. Klicka på OK.
-5. Skriv "L0001" i fältet Artikelnummer.
-    * L0001 är den artikel som du skapat för kanban-regeln.  
-6. Ställ in kvantiteten på 27.
-    * Eftersom 27 är högre än minimikvantiteten på 25 på kanban-regel, kommer detta att utlösa en händelse-kanban.  
-7. Skriv "1" i fältet Plats.
-8. Ange eller välj ett värde i fältet Lagerställe.
-    * Välj lagerställe 13.  
-9. Klicka på Spara.
+## <a name="create-sales-order-and-trigger-kanban-chain"></a><span data-ttu-id="bfeb4-130">Skapa försäljningsorder och utlösa kanbankedjan</span><span class="sxs-lookup"><span data-stu-id="bfeb4-130">Create sales order and trigger kanban chain</span></span>
+1. <span data-ttu-id="bfeb4-131">Gå till försäljning och marknadsföring > beställningar > Alla beställningar.</span><span class="sxs-lookup"><span data-stu-id="bfeb4-131">Go to Sales and marketing > Sales orders > All sales orders.</span></span>
+2. <span data-ttu-id="bfeb4-132">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="bfeb4-132">Click New.</span></span>
+3. <span data-ttu-id="bfeb4-133">I fältet Kundkonto, ange eller välj ett värde.</span><span class="sxs-lookup"><span data-stu-id="bfeb4-133">In the Customer account field, enter or select a value.</span></span>
+    * <span data-ttu-id="bfeb4-134">Välj kundkontot US-003, Forest Wholesales.</span><span class="sxs-lookup"><span data-stu-id="bfeb4-134">Select Customer account US-003, Forest Wholesales.</span></span>  
+4. <span data-ttu-id="bfeb4-135">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="bfeb4-135">Click OK.</span></span>
+5. <span data-ttu-id="bfeb4-136">Skriv "L0001" i fältet Artikelnummer.</span><span class="sxs-lookup"><span data-stu-id="bfeb4-136">In the Item number field, type 'L0001'.</span></span>
+    * <span data-ttu-id="bfeb4-137">L0001 är den artikel som du skapat för kanban-regeln.</span><span class="sxs-lookup"><span data-stu-id="bfeb4-137">L0001 is the item for which you created the kanban rule.</span></span>  
+6. <span data-ttu-id="bfeb4-138">Ställ in kvantiteten på 27.</span><span class="sxs-lookup"><span data-stu-id="bfeb4-138">Set Quantity to '27'.</span></span>
+    * <span data-ttu-id="bfeb4-139">Eftersom 27 är högre än minimikvantiteten på 25 på kanban-regel, kommer detta att utlösa en händelse-kanban.</span><span class="sxs-lookup"><span data-stu-id="bfeb4-139">Because 27 is higher than the minimum quantity of 25 on the kanban rule, this will trigger an event kanban.</span></span>  
+7. <span data-ttu-id="bfeb4-140">Skriv "1" i fältet Plats.</span><span class="sxs-lookup"><span data-stu-id="bfeb4-140">In the Site field, type '1'.</span></span>
+8. <span data-ttu-id="bfeb4-141">Ange eller välj ett värde i fältet Lagerställe.</span><span class="sxs-lookup"><span data-stu-id="bfeb4-141">In the Warehouse field, enter or select a value.</span></span>
+    * <span data-ttu-id="bfeb4-142">Välj lagerställe 13.</span><span class="sxs-lookup"><span data-stu-id="bfeb4-142">Select warehouse 13.</span></span>  
+9. <span data-ttu-id="bfeb4-143">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="bfeb4-143">Click Save.</span></span>
 
-## <a name="view-the-kanban-generated-by-the-kanban-rule"></a>Visa den kanban som genereras av kanban-regeln
-1. Gå till Produktinformationshantering > Lean manufacturing > Kanban-regler.
-2. Hitta och markera önskad post i listan.
-3. Expandera avsnittet Kanbans.
-    * Observera att en kanban för 27 skapades för att bearbeta den aktivitet som baseras på den skapade kanban-regeln.  
-    * Detta är det sista steget.  
+## <a name="view-the-kanban-generated-by-the-kanban-rule"></a><span data-ttu-id="bfeb4-144">Visa den kanban som genereras av kanban-regeln</span><span class="sxs-lookup"><span data-stu-id="bfeb4-144">View the kanban generated by the kanban rule</span></span>
+1. <span data-ttu-id="bfeb4-145">Gå till Produktinformationshantering > Lean manufacturing > Kanban-regler.</span><span class="sxs-lookup"><span data-stu-id="bfeb4-145">Go to Product information management > Lean manufacturing > Kanban rules.</span></span>
+2. <span data-ttu-id="bfeb4-146">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="bfeb4-146">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="bfeb4-147">Expandera avsnittet Kanbans.</span><span class="sxs-lookup"><span data-stu-id="bfeb4-147">Expand the Kanbans section.</span></span>
+    * <span data-ttu-id="bfeb4-148">Observera att en kanban för 27 skapades för att bearbeta den aktivitet som baseras på den skapade kanban-regeln.</span><span class="sxs-lookup"><span data-stu-id="bfeb4-148">Notice that a kanban for 27 was created to process the  activity based on the created kanban rule.</span></span>  
+    * <span data-ttu-id="bfeb4-149">Detta är det sista steget.</span><span class="sxs-lookup"><span data-stu-id="bfeb4-149">This is the last step.</span></span>  
 
 

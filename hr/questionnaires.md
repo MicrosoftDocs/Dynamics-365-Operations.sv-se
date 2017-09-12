@@ -19,43 +19,43 @@ ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: Human Translation
-ms.sourcegitcommit: bcaaa846e0e88eca2c24048b483db8a031b19c43
-ms.openlocfilehash: 703174d3c9809949af2eec2eb996e1e80eac3393
+ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
+ms.openlocfilehash: fda9e7b017d26f7145414548424e194861095d65
 ms.contentlocale: sv-se
-ms.lasthandoff: 06/20/2017
+ms.lasthandoff: 06/29/2017
 
 
 ---
 
-# <a name="questionnaires"></a>Enkäter
+# <a name="questionnaires"></a><span data-ttu-id="78eef-105">Enkäter</span><span class="sxs-lookup"><span data-stu-id="78eef-105">Questionnaires</span></span>
 
-Det här ämnet innehåller allmän information om enkäter och länkar till mer detaljerad information. En enkät är en uppsättning frågor som används för att samla in information för olika ändamål. Det går att utforma, skapa, distribuera och fylla i enkäter och sedan analysera resultaten. 
+<span data-ttu-id="78eef-106">Det här ämnet innehåller allmän information om enkäter och länkar till mer detaljerad information.</span><span class="sxs-lookup"><span data-stu-id="78eef-106">This topic provides general information about questionnaires, and links to more detailed information.</span></span> <span data-ttu-id="78eef-107">En enkät är en uppsättning frågor som används för att samla in information för olika ändamål.</span><span class="sxs-lookup"><span data-stu-id="78eef-107">A questionnaire is a set of questions that is used to collect information for various purposes.</span></span> <span data-ttu-id="78eef-108">Det går att utforma, skapa, distribuera och fylla i enkäter och sedan analysera resultaten.</span><span class="sxs-lookup"><span data-stu-id="78eef-108">You can design, create, distribute, and complete questionnaires, and then analyze the results.</span></span> 
 
-Du kan anpassa en enkät så att den passar dina specifika krav genom att använda olika funktioner som är tillgängliga i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition. Nedan följer några exempel på hur enkäter kan användas:
+<span data-ttu-id="78eef-109">Du kan anpassa en enkät så att den passar dina specifika krav genom att använda olika funktioner som är tillgängliga i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition.</span><span class="sxs-lookup"><span data-stu-id="78eef-109">You can customize a questionnaire to fit your specific requirements by using various features that are available in Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition.</span></span> <span data-ttu-id="78eef-110">Nedan följer några exempel på hur enkäter kan användas:</span><span class="sxs-lookup"><span data-stu-id="78eef-110">Here are some examples of how questionnaires can be used:</span></span>
 
--   Testa medarbetares och sökandes professionella färdigheter.
--   Utvärdera om kursdeltagare lärde sig kursmaterialet.
--   Utvärdera en kurs (till exempel lokaler, innehåll och lärare).
--   Undersöka hur nöjda medarbetare och kunder är.
--   Utvärdera medarbetares arbete.
+-   <span data-ttu-id="78eef-111">Testa medarbetares och sökandes professionella färdigheter.</span><span class="sxs-lookup"><span data-stu-id="78eef-111">Test the professional skills of employees and applicants.</span></span>
+-   <span data-ttu-id="78eef-112">Utvärdera om kursdeltagare lärde sig kursmaterialet.</span><span class="sxs-lookup"><span data-stu-id="78eef-112">Evaluate whether course participants learned the course material.</span></span>
+-   <span data-ttu-id="78eef-113">Utvärdera en kurs (till exempel lokaler, innehåll och lärare).</span><span class="sxs-lookup"><span data-stu-id="78eef-113">Evaluate a course (for example, the facilities, content, and instructor).</span></span>
+-   <span data-ttu-id="78eef-114">Undersöka hur nöjda medarbetare och kunder är.</span><span class="sxs-lookup"><span data-stu-id="78eef-114">Survey employee and customer satisfaction.</span></span>
+-   <span data-ttu-id="78eef-115">Utvärdera medarbetares arbete.</span><span class="sxs-lookup"><span data-stu-id="78eef-115">Evaluate employee job performance.</span></span>
 
-I följande tabell finns länkar till mer information om viktiga enkätuppgifter: Klicka på länkarna för information.
+<span data-ttu-id="78eef-116">I följande tabell finns länkar till mer information om viktiga enkätuppgifter:</span><span class="sxs-lookup"><span data-stu-id="78eef-116">The following table provides links to information about the core questionnaire tasks.</span></span> <span data-ttu-id="78eef-117">Klicka på länkarna för information.</span><span class="sxs-lookup"><span data-stu-id="78eef-117">Click the links for more information.</span></span>
 
-| Avsnitt| beskrivning|
+| <span data-ttu-id="78eef-118">Avsnitt</span><span class="sxs-lookup"><span data-stu-id="78eef-118">Topic</span></span>| <span data-ttu-id="78eef-119">beskrivning</span><span class="sxs-lookup"><span data-stu-id="78eef-119">Description</span></span>|
 |------|------------|
-| [Utforma en enkät](design-questionnaires.md)  | Den här artikeln ger information om hur du utformar en enkät. Utformningen omfattar att ställa in förutsättningar, frågor och svar och sedan att kombinera dem till en enkät. |
-| [Distribuera och slutföra en enkät](distribute-questionnaires.md)  | Den här artikeln innehåller information om hur du distribuerar en enkät till svarande och hur du fyller i enkäter.                                                                       |
-| [Visa och utvärdera resultaten för en enkät](evaluate-questionnaire-results.md) | Den här artikeln innehåller information om hur du visar och utvärderar resultaten från ifyllda enkäter.                                                                                        |
+| [<span data-ttu-id="78eef-120">Utforma en enkät</span><span class="sxs-lookup"><span data-stu-id="78eef-120">Design a questionnaire</span></span>](design-questionnaires.md)  | <span data-ttu-id="78eef-121">Den här artikeln ger information om hur du utformar en enkät.</span><span class="sxs-lookup"><span data-stu-id="78eef-121">This article provides information about how to design a questionnaire.</span></span> <span data-ttu-id="78eef-122">Utformningen omfattar att ställa in förutsättningar, frågor och svar och sedan att kombinera dem till en enkät.</span><span class="sxs-lookup"><span data-stu-id="78eef-122">The design process involves setting up prerequisites, answers, and questions, and then combining them into a questionnaire.</span></span> |
+| [<span data-ttu-id="78eef-123">Distribuera och slutföra en enkät</span><span class="sxs-lookup"><span data-stu-id="78eef-123">Distribute and complete a questionnaire</span></span>](distribute-questionnaires.md)  | <span data-ttu-id="78eef-124">Den här artikeln innehåller information om hur du distribuerar en enkät till svarande och hur du fyller i enkäter.</span><span class="sxs-lookup"><span data-stu-id="78eef-124">This article provides information about how to distribute a questionnaire to respondents and how to complete questionnaires.</span></span>                                                                       |
+| [<span data-ttu-id="78eef-125">Visa och utvärdera resultaten för en enkät</span><span class="sxs-lookup"><span data-stu-id="78eef-125">View and evaluate the results of a questionnaire</span></span>](evaluate-questionnaire-results.md) | <span data-ttu-id="78eef-126">Den här artikeln innehåller information om hur du visar och utvärderar resultaten från ifyllda enkäter.</span><span class="sxs-lookup"><span data-stu-id="78eef-126">This article provides information about how to view and evaluate the results from completed questionnaires.</span></span>                                                                                        |
 
 
 
-<a name="see-also"></a>Se även
+<a name="see-also"></a><span data-ttu-id="78eef-127">Se även</span><span class="sxs-lookup"><span data-stu-id="78eef-127">See also</span></span>
 --------
 
-[Utforma enkäter](design-questionnaires.md)
+[<span data-ttu-id="78eef-128">Utforma enkäter</span><span class="sxs-lookup"><span data-stu-id="78eef-128">Designing questionnaires</span></span>](design-questionnaires.md)
 
-[Distribuera och slutföra enkäter](distribute-questionnaires.md)
+[<span data-ttu-id="78eef-129">Distribuera och slutföra enkäter</span><span class="sxs-lookup"><span data-stu-id="78eef-129">Distributing and completing questionnaires</span></span>](distribute-questionnaires.md)
 
-[Visa och utvärdera resultaten av en enkät](evaluate-questionnaire-results.md)
+[<span data-ttu-id="78eef-130">Visa och utvärdera resultaten av en enkät</span><span class="sxs-lookup"><span data-stu-id="78eef-130">Viewing and evaluating the results of questionnaires</span></span>](evaluate-questionnaire-results.md)
 
 

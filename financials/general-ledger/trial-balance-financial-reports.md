@@ -18,96 +18,96 @@ ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 86e8e91f2af474999d89bb63ac9e2afad7843c8a
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 6405599186c8d07ac5ade19d3b7d27ae83b036ff
 ms.contentlocale: sv-se
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 08/29/2017
 
 ---
 
-# <a name="trial-balance-financial-reports"></a>Ekonomiska råbalansrapporter
+# <a name="trial-balance-financial-reports"></a><span data-ttu-id="6da5a-104">Ekonomiska råbalansrapporter</span><span class="sxs-lookup"><span data-stu-id="6da5a-104">Trial balance financial reports</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Den här artikeln beskriver standardrapporter för råbalanser. Det beskriver även de byggstenar som är associerade med dessa rapporter och hur du kan ändra rapporterna så att de passar ditt företags behov. 
+<span data-ttu-id="6da5a-105">Den här artikeln beskriver standardrapporter för råbalanser.</span><span class="sxs-lookup"><span data-stu-id="6da5a-105">This article describes the default reports for trial balances.</span></span> <span data-ttu-id="6da5a-106">Det beskriver även de byggstenar som är associerade med dessa rapporter och hur du kan ändra rapporterna så att de passar ditt företags behov.</span><span class="sxs-lookup"><span data-stu-id="6da5a-106">It also describes the building blocks that are associated with these reports and how you can modify the reports to fit your business requirements.</span></span> 
 
-<a name="default-trial-balance-reports"></a>Standardrapporter för råbalans
+<a name="default-trial-balance-reports"></a><span data-ttu-id="6da5a-107">Standardrapporter för råbalans</span><span class="sxs-lookup"><span data-stu-id="6da5a-107">Default trial balance reports</span></span>
 -----------------------------
 
-Det finns tre råbalansrapporter i ekonomisk rapportering i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+<span data-ttu-id="6da5a-108">Det finns tre råbalansrapporter i ekonomisk rapportering i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.</span><span class="sxs-lookup"><span data-stu-id="6da5a-108">Three trial balance reports are available in Financial reporting in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.</span></span>
 
-| Standardrapport                                 | Vad den gör                                                                                                                                                                                        |
+| <span data-ttu-id="6da5a-109">Standardrapport</span><span class="sxs-lookup"><span data-stu-id="6da5a-109">Default report</span></span>                                 | <span data-ttu-id="6da5a-110">Vad den gör</span><span class="sxs-lookup"><span data-stu-id="6da5a-110">What it does</span></span>                                                                                                                                                                                        |
 |------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Detaljerad råbalans – standardinställning               | Visar saldoinformation för alla konton med och inkluderar debet- och kreditsaldon och nettot för dessa saldon, tillsammans med transaktionsdatum, verifikation och journalbeskrivning.                  |
-| Råbalanssammanfattning - standardinställning                | Visar information om saldo för alla konton och inkluderar in- och utgående balanser och debet- och kreditsaldon tillsammans med deras nettodifferens.                                        |
-| Summerad råbalans på årsbasis – standardinställning | Visar saldoinformation för alla konton och inkluderar in- och utgående balanser och debet- och kreditsaldon tillsammans med deras nettodifferens för aktuellt år och föregående år. |
+| <span data-ttu-id="6da5a-111">Detaljerad råbalans – standardinställning</span><span class="sxs-lookup"><span data-stu-id="6da5a-111">Detailed Trial Balance - Default</span></span>               | <span data-ttu-id="6da5a-112">Visar saldoinformation för alla konton med och inkluderar debet- och kreditsaldon och nettot för dessa saldon, tillsammans med transaktionsdatum, verifikation och journalbeskrivning.</span><span class="sxs-lookup"><span data-stu-id="6da5a-112">Provides balance information for all accounts, and includes debit and credit balances, and the net of these, together with the transaction date, voucher, and journal description.</span></span>                  |
+| <span data-ttu-id="6da5a-113">Råbalanssammanfattning - standardinställning</span><span class="sxs-lookup"><span data-stu-id="6da5a-113">Summary Trial Balance – Default</span></span>                | <span data-ttu-id="6da5a-114">Visar information om saldo för alla konton och inkluderar in- och utgående balanser och debet- och kreditsaldon tillsammans med deras nettodifferens.</span><span class="sxs-lookup"><span data-stu-id="6da5a-114">Provides balance information for all accounts, and includes opening and closing balances, and debit and credit balances, together with their net difference.</span></span>                                        |
+| <span data-ttu-id="6da5a-115">Summerad råbalans på årsbasis – standardinställning</span><span class="sxs-lookup"><span data-stu-id="6da5a-115">Summary Trial Balance Year Over Year – Default</span></span> | <span data-ttu-id="6da5a-116">Visar saldoinformation för alla konton och inkluderar in- och utgående balanser och debet- och kreditsaldon tillsammans med deras nettodifferens för aktuellt år och föregående år.</span><span class="sxs-lookup"><span data-stu-id="6da5a-116">Provides balance information for all accounts, and includes opening and closing balances, and debit and credit balances, together with their net difference for the current year and the past year.</span></span> |
 
-## <a name="building-blocks"></a>Byggstenar
-Råbalansrapporterna använder följande byggstenar.
+## <a name="building-blocks"></a><span data-ttu-id="6da5a-117">Byggstenar</span><span class="sxs-lookup"><span data-stu-id="6da5a-117">Building blocks</span></span>
+<span data-ttu-id="6da5a-118">Råbalansrapporterna använder följande byggstenar.</span><span class="sxs-lookup"><span data-stu-id="6da5a-118">The trial balance financial reports use the following building blocks.</span></span>
 
-| Standardrapport                                 | Raddefinition          | Kolumndefinition                              |
+| <span data-ttu-id="6da5a-119">Standardrapport</span><span class="sxs-lookup"><span data-stu-id="6da5a-119">Default report</span></span>                                 | <span data-ttu-id="6da5a-120">Raddefinition</span><span class="sxs-lookup"><span data-stu-id="6da5a-120">Row definition</span></span>          | <span data-ttu-id="6da5a-121">Kolumndefinition</span><span class="sxs-lookup"><span data-stu-id="6da5a-121">Column definition</span></span>                              |
 |------------------------------------------------|-------------------------|------------------------------------------------|
-| Detaljerad råbalans – standardinställning               | Råbalans – standardinställning | Detaljerad råbalans – standardinställning               |
-| Råbalanssammanfattning - standardinställning                | Råbalans – standardinställning | Råbalanssammanfattning – standardinställning                |
-| Summerad råbalans på årsbasis – standardinställning | Råbalans – standardinställning | Summerad råbalans på årsbasis – standardinställning |
+| <span data-ttu-id="6da5a-122">Detaljerad råbalans – standardinställning</span><span class="sxs-lookup"><span data-stu-id="6da5a-122">Detailed Trial Balance - Default</span></span>               | <span data-ttu-id="6da5a-123">Råbalans – standardinställning</span><span class="sxs-lookup"><span data-stu-id="6da5a-123">Trial Balance - Default</span></span> | <span data-ttu-id="6da5a-124">Detaljerad råbalans – standardinställning</span><span class="sxs-lookup"><span data-stu-id="6da5a-124">Detailed Trial Balance - Default</span></span>               |
+| <span data-ttu-id="6da5a-125">Råbalanssammanfattning - standardinställning</span><span class="sxs-lookup"><span data-stu-id="6da5a-125">Summary Trial Balance – Default</span></span>                | <span data-ttu-id="6da5a-126">Råbalans – standardinställning</span><span class="sxs-lookup"><span data-stu-id="6da5a-126">Trial Balance - Default</span></span> | <span data-ttu-id="6da5a-127">Råbalanssammanfattning – standardinställning</span><span class="sxs-lookup"><span data-stu-id="6da5a-127">Summary Trial Balance - Default</span></span>                |
+| <span data-ttu-id="6da5a-128">Summerad råbalans på årsbasis – standardinställning</span><span class="sxs-lookup"><span data-stu-id="6da5a-128">Summary Trial Balance Year Over Year – Default</span></span> | <span data-ttu-id="6da5a-129">Råbalans – standardinställning</span><span class="sxs-lookup"><span data-stu-id="6da5a-129">Trial Balance - Default</span></span> | <span data-ttu-id="6da5a-130">Summerad råbalans på årsbasis – standardinställning</span><span class="sxs-lookup"><span data-stu-id="6da5a-130">Summary Trial Balance Year Over Year - Default</span></span> |
 
-### <a name="row-definition"></a>Raddefinition
+### <a name="row-definition"></a><span data-ttu-id="6da5a-131">Raddefinition</span><span class="sxs-lookup"><span data-stu-id="6da5a-131">Row definition</span></span>
 
-Raddefinitionen Råbalans – standard innehåller en rad som tar emot alla huvudkonton. Därför kan alla generera rapporten, utan att behöva göra några ändringar. När du visar rapporten borrar du till enskild rad om du vill se information om varje konto. Du kan ändra raddefinitionen så att den innehåller mer information. Om du vill ändra Råbalans – standardinställning så att den innehåller rader för alla konton, följer du stegen nedan.
+<span data-ttu-id="6da5a-132">Raddefinitionen Råbalans – standard innehåller en rad som tar emot alla huvudkonton.</span><span class="sxs-lookup"><span data-stu-id="6da5a-132">The row definition, Trial Balance – Default, contains a single row that pulls in all main accounts.</span></span> <span data-ttu-id="6da5a-133">Därför kan alla generera rapporten, utan att behöva göra några ändringar.</span><span class="sxs-lookup"><span data-stu-id="6da5a-133">Therefore, anyone can generate the report without having to make any modifications.</span></span> <span data-ttu-id="6da5a-134">När du visar rapporten borrar du till enskild rad om du vill se information om varje konto.</span><span class="sxs-lookup"><span data-stu-id="6da5a-134">When you view the report, you drill into the single row to see details about each account.</span></span> <span data-ttu-id="6da5a-135">Du kan ändra raddefinitionen så att den innehåller mer information.</span><span class="sxs-lookup"><span data-stu-id="6da5a-135">You can modify the row definition so that it includes more detail.</span></span> <span data-ttu-id="6da5a-136">Om du vill ändra Råbalans – standardinställning så att den innehåller rader för alla konton, följer du stegen nedan.</span><span class="sxs-lookup"><span data-stu-id="6da5a-136">To modify the Trial Balance – Default row definition so that it includes rows for all accounts, follow these steps.</span></span>
 
-1.  Klicka på **Redigera** och sedan på **Infoga rader från dimensioner**. Kommandot **Infoga rader från dimensioner** gör att du kan välja dimensionerna du vill ha i raddefinitionen. För den här raddefinitionen ska du använda **Huvudkonto**.
-2.  Se till att **Huvudkonto** bara innehåller et-tecken och välj sedan **OK**.
+1.  <span data-ttu-id="6da5a-137">Klicka på **Redigera** och sedan på **Infoga rader från dimensioner**.</span><span class="sxs-lookup"><span data-stu-id="6da5a-137">Click **Edit**, and then click **Insert Rows from Dimensions**.</span></span> <span data-ttu-id="6da5a-138">Kommandot **Infoga rader från dimensioner** gör att du kan välja dimensionerna du vill ha i raddefinitionen.</span><span class="sxs-lookup"><span data-stu-id="6da5a-138">The **Insert Rows from Dimensions** command lets you choose the dimensions that you want to have in your row definition.</span></span> <span data-ttu-id="6da5a-139">För den här raddefinitionen ska du använda **Huvudkonto**.</span><span class="sxs-lookup"><span data-stu-id="6da5a-139">For this row definition, you're going to use **Main Account**.</span></span>
+2.  <span data-ttu-id="6da5a-140">Se till att **Huvudkonto** bara innehåller et-tecken och välj sedan **OK**.</span><span class="sxs-lookup"><span data-stu-id="6da5a-140">Make sure that **Main Account** contains all ampersands (&), and then click **OK**.</span></span>
 
-Raddefinitionen innehåller nu alla huvudkonton för din juridiska standardperson.
+<span data-ttu-id="6da5a-141">Raddefinitionen innehåller nu alla huvudkonton för din juridiska standardperson.</span><span class="sxs-lookup"><span data-stu-id="6da5a-141">The row definition now contains all the main accounts for your default legal entity.</span></span>
 
-### <a name="column-definition"></a>Kolumndefinition
+### <a name="column-definition"></a><span data-ttu-id="6da5a-142">Kolumndefinition</span><span class="sxs-lookup"><span data-stu-id="6da5a-142">Column definition</span></span>
 
-Alla råbalansrapporter använder olika kolumndefinitioner. Dessa kolumndefinitioner innehåller olika typer av kolumner för att tillhandahålla andra nivåer av information och ekonomiska data.
+<span data-ttu-id="6da5a-143">Alla råbalansrapporter använder olika kolumndefinitioner.</span><span class="sxs-lookup"><span data-stu-id="6da5a-143">Each trial balance report uses a different column definition.</span></span> <span data-ttu-id="6da5a-144">Dessa kolumndefinitioner innehåller olika typer av kolumner för att tillhandahålla andra nivåer av information och ekonomiska data.</span><span class="sxs-lookup"><span data-stu-id="6da5a-144">These column definitions contain different types of columns to provide different levels of detail and financial data.</span></span>
 
--   **Detaljerad råbalans – standardkolumntyper:**
-    -   **DESC** – beskrivningen från raddefinitionen.
-    -   **ACCT** – kontokoder
-    -   **ATTR (3)** – attribut:
-        -   Transaktionsdatum
-        -   Verifikation
-        -   Journalbeskrivning
-    -   **FD** – ekonomisk data som bara innehåller debet
-    -   **FD** – ekonomisk data som bara innehåller kredit
-    -   **CALC** – nettoskillnaden
--   **Råbalanssammanfattning – standardkolumntyper:**
-    -   **ACCT** – kontokoder
-    -   **DESC** – beskrivningen från raddefinitionen.
-    -   **ATTR** – ett attribut:
-        -   Verifikation
-    -   **FD** – den ingående balansen
-    -   **FD** – ekonomisk data som bara innehåller debet
-    -   **FD** – ekonomisk data som bara innehåller kredit
-    -   **CALC** – nettoskillnaden
-    -   **CALC** – den utgående balansen
--   **Summerad råbalans på årsbasis – standardinställning:**
-    -   **ACCT** – kontokoder
-    -   **DESC** – beskrivningen från raddefinitionen.
-    -   **ATTR** – ett attribut
-        -   Verifikation
-    -   **FD** – den ingående balansen för det innevarande året
-    -   **FD** – ekonomisk data som bara innehåller debet för innevarande året
-    -   **FD** – ekonomisk data som bara innehåller kredit för innevarande året
-    -   **CALC** – nettoskillnaden
-    -   **CALC** – den utgående balansen
-    -   **FD** – ekonomisk data som bara innehåller debet för det senaste året
-    -   **FD** – ekonomisk data som bara innehåller kredit för det senaste året
+-   <span data-ttu-id="6da5a-145">**Detaljerad råbalans – standardkolumntyper:**</span><span class="sxs-lookup"><span data-stu-id="6da5a-145">**Detailed Trial Balance – Default column types:**</span></span>
+    -   <span data-ttu-id="6da5a-146">**DESC** – beskrivningen från raddefinitionen.</span><span class="sxs-lookup"><span data-stu-id="6da5a-146">**DESC** – The description from the row definition</span></span>
+    -   <span data-ttu-id="6da5a-147">**ACCT** – kontokoder</span><span class="sxs-lookup"><span data-stu-id="6da5a-147">**ACCT** – Account codes</span></span>
+    -   <span data-ttu-id="6da5a-148">**ATTR (3)** – attribut:</span><span class="sxs-lookup"><span data-stu-id="6da5a-148">**ATTR (3)** – Attributes:</span></span>
+        -   <span data-ttu-id="6da5a-149">Transaktionsdatum</span><span class="sxs-lookup"><span data-stu-id="6da5a-149">Transaction Date</span></span>
+        -   <span data-ttu-id="6da5a-150">Verifikation</span><span class="sxs-lookup"><span data-stu-id="6da5a-150">Voucher</span></span>
+        -   <span data-ttu-id="6da5a-151">Journalbeskrivning</span><span class="sxs-lookup"><span data-stu-id="6da5a-151">Journal Description</span></span>
+    -   <span data-ttu-id="6da5a-152">**FD** – ekonomisk data som bara innehåller debet</span><span class="sxs-lookup"><span data-stu-id="6da5a-152">**FD** – Financial data that contains only debits</span></span>
+    -   <span data-ttu-id="6da5a-153">**FD** – ekonomisk data som bara innehåller kredit</span><span class="sxs-lookup"><span data-stu-id="6da5a-153">**FD** – Financial data that contains only credits</span></span>
+    -   <span data-ttu-id="6da5a-154">**CALC** – nettoskillnaden</span><span class="sxs-lookup"><span data-stu-id="6da5a-154">**CALC** – The net difference</span></span>
+-   <span data-ttu-id="6da5a-155">**Råbalanssammanfattning – standardkolumntyper:**</span><span class="sxs-lookup"><span data-stu-id="6da5a-155">**Summary Trial Balance – Default columns types:**</span></span>
+    -   <span data-ttu-id="6da5a-156">**ACCT** – kontokoder</span><span class="sxs-lookup"><span data-stu-id="6da5a-156">**ACCT** – Account codes</span></span>
+    -   <span data-ttu-id="6da5a-157">**DESC** – beskrivningen från raddefinitionen.</span><span class="sxs-lookup"><span data-stu-id="6da5a-157">**DESC** – The description from the row definition</span></span>
+    -   <span data-ttu-id="6da5a-158">**ATTR** – ett attribut:</span><span class="sxs-lookup"><span data-stu-id="6da5a-158">**ATTR** – An attribute:</span></span>
+        -   <span data-ttu-id="6da5a-159">Verifikation</span><span class="sxs-lookup"><span data-stu-id="6da5a-159">Voucher</span></span>
+    -   <span data-ttu-id="6da5a-160">**FD** – den ingående balansen</span><span class="sxs-lookup"><span data-stu-id="6da5a-160">**FD** – The beginning balance financial data</span></span>
+    -   <span data-ttu-id="6da5a-161">**FD** – ekonomisk data som bara innehåller debet</span><span class="sxs-lookup"><span data-stu-id="6da5a-161">**FD** – Financial data that contains only debits</span></span>
+    -   <span data-ttu-id="6da5a-162">**FD** – ekonomisk data som bara innehåller kredit</span><span class="sxs-lookup"><span data-stu-id="6da5a-162">**FD** – Financial data that contains only credits</span></span>
+    -   <span data-ttu-id="6da5a-163">**CALC** – nettoskillnaden</span><span class="sxs-lookup"><span data-stu-id="6da5a-163">**CALC** – The net difference</span></span>
+    -   <span data-ttu-id="6da5a-164">**CALC** – den utgående balansen</span><span class="sxs-lookup"><span data-stu-id="6da5a-164">**CALC** – The closing balance</span></span>
+-   <span data-ttu-id="6da5a-165">**Summerad råbalans på årsbasis – standardinställning:**</span><span class="sxs-lookup"><span data-stu-id="6da5a-165">**Summary Trial Balance Year Over Year – Default:**</span></span>
+    -   <span data-ttu-id="6da5a-166">**ACCT** – kontokoder</span><span class="sxs-lookup"><span data-stu-id="6da5a-166">**ACCT** – Account codes</span></span>
+    -   <span data-ttu-id="6da5a-167">**DESC** – beskrivningen från raddefinitionen.</span><span class="sxs-lookup"><span data-stu-id="6da5a-167">**DESC** – The description from the row definition</span></span>
+    -   <span data-ttu-id="6da5a-168">**ATTR** – ett attribut</span><span class="sxs-lookup"><span data-stu-id="6da5a-168">**ATTR** – An attribute</span></span>
+        -   <span data-ttu-id="6da5a-169">Verifikation</span><span class="sxs-lookup"><span data-stu-id="6da5a-169">Voucher</span></span>
+    -   <span data-ttu-id="6da5a-170">**FD** – den ingående balansen för det innevarande året</span><span class="sxs-lookup"><span data-stu-id="6da5a-170">**FD** – The beginning balance financial data for the current year</span></span>
+    -   <span data-ttu-id="6da5a-171">**FD** – ekonomisk data som bara innehåller debet för innevarande året</span><span class="sxs-lookup"><span data-stu-id="6da5a-171">**FD** – Financial data that contains only debits for the current year</span></span>
+    -   <span data-ttu-id="6da5a-172">**FD** – ekonomisk data som bara innehåller kredit för innevarande året</span><span class="sxs-lookup"><span data-stu-id="6da5a-172">**FD** – Financial data that contains only credits for the current year</span></span>
+    -   <span data-ttu-id="6da5a-173">**CALC** – nettoskillnaden</span><span class="sxs-lookup"><span data-stu-id="6da5a-173">**CALC** – The net difference</span></span>
+    -   <span data-ttu-id="6da5a-174">**CALC** – den utgående balansen</span><span class="sxs-lookup"><span data-stu-id="6da5a-174">**CALC** – The closing balance</span></span>
+    -   <span data-ttu-id="6da5a-175">**FD** – ekonomisk data som bara innehåller debet för det senaste året</span><span class="sxs-lookup"><span data-stu-id="6da5a-175">**FD** – Financial data that contains only debits for the last year</span></span>
+    -   <span data-ttu-id="6da5a-176">**FD** – ekonomisk data som bara innehåller kredit för det senaste året</span><span class="sxs-lookup"><span data-stu-id="6da5a-176">**FD** – Financial data that contains only credits for the last year</span></span>
 
  
 
-<a name="see-also"></a>Se även
+<a name="see-also"></a><span data-ttu-id="6da5a-177">Se även</span><span class="sxs-lookup"><span data-stu-id="6da5a-177">See also</span></span>
 --------
 
-[Ekonomisk rapportering](financial-reporting-getting-started.md)
+[<span data-ttu-id="6da5a-178">Ekonomisk rapportering</span><span class="sxs-lookup"><span data-stu-id="6da5a-178">Financial reporting</span></span>](financial-reporting-getting-started.md)
 
-[Visa ekonomiska rapporter](view-financial-reports.md)
+[<span data-ttu-id="6da5a-179">Visa ekonomiska rapporter</span><span class="sxs-lookup"><span data-stu-id="6da5a-179">View financial reports</span></span>](view-financial-reports.md)
 
-[Dynamics-ekonomirapporteringsblogg](http://blogs.msdn.com/b/dynamics_financial_reporting/)
+[<span data-ttu-id="6da5a-180">Dynamics-ekonomirapporteringsblogg</span><span class="sxs-lookup"><span data-stu-id="6da5a-180">Dynamics Financial Reporting Blog</span></span>](http://blogs.msdn.com/b/dynamics_financial_reporting/)
 
 
 

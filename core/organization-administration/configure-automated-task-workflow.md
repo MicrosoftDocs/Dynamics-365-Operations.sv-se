@@ -15,56 +15,56 @@ ms.custom: 192061
 ms.assetid: c0aceb57-b5e6-4ef3-91e7-89a21c9f048a
 ms.search.region: Global
 ms.author: donaldc
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 66f1b8e03cc0da5d21fea9b3c795d8f4097c8cfc
+ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
+ms.openlocfilehash: 56e29bd2e875b8bb729e5dfe0c5ac03fc997ecbe
 ms.contentlocale: sv-se
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 07/18/2017
 
 ---
 
-# <a name="configure-an-automated-task-in-a-workflow"></a>Konfigurera en automatisk uppgift i ett arbetsflöde
+# <a name="configure-an-automated-task-in-a-workflow"></a><span data-ttu-id="4dcec-103">Konfigurera en automatisk uppgift i ett arbetsflöde</span><span class="sxs-lookup"><span data-stu-id="4dcec-103">Configure an automated task in a workflow</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-I det här avsnittet beskrivs hur du konfigurerar egenskaperna för en automatisk uppgift.
+<span data-ttu-id="4dcec-104">I det här avsnittet beskrivs hur du konfigurerar egenskaperna för en automatisk uppgift.</span><span class="sxs-lookup"><span data-stu-id="4dcec-104">This topic explains how to configure the properties for an automated task.</span></span>
 
-Högerklicka på uppgiften och klicka sedan på **Egenskaper** för att öppna sidan **Egenskaper** om du vill konfigurera en automatisk uppgift i arbetsflödesredigeraren. Använd sedan följande procedurer när du vill konfigurera egenskaperna för den automatiska uppgiften.
+<span data-ttu-id="4dcec-105">Högerklicka på uppgiften och klicka sedan på **Egenskaper** för att öppna sidan **Egenskaper** om du vill konfigurera en automatisk uppgift i arbetsflödesredigeraren.</span><span class="sxs-lookup"><span data-stu-id="4dcec-105">To configure an automated task in the workflow editor, right-click the task, and then click **Properties** to open the **Properties** page.</span></span> <span data-ttu-id="4dcec-106">Använd sedan följande procedurer när du vill konfigurera egenskaperna för den automatiska uppgiften.</span><span class="sxs-lookup"><span data-stu-id="4dcec-106">Then use the following procedures to configure the properties for the automated task.</span></span>
 
-## <a name="name-the-task"></a>Ange ett namn på uppgiften
-Följ dessa steg när du vill ange ett namn för den automatiska uppgiften.
+## <a name="name-the-task"></a><span data-ttu-id="4dcec-107">Ange ett namn på uppgiften</span><span class="sxs-lookup"><span data-stu-id="4dcec-107">Name the task</span></span>
+<span data-ttu-id="4dcec-108">Följ dessa steg när du vill ange ett namn för den automatiska uppgiften.</span><span class="sxs-lookup"><span data-stu-id="4dcec-108">Follow these steps to enter a name for the automated task.</span></span>
 
-1.  Klicka på **Grundinställningar** i det vänstra fönstret.
-2.  I fältet **Namn** anger du ett unikt namn för uppgiften.
+1.  <span data-ttu-id="4dcec-109">Klicka på **Grundinställningar** i det vänstra fönstret.</span><span class="sxs-lookup"><span data-stu-id="4dcec-109">In the left pane, click **Basic Settings**.</span></span>
+2.  <span data-ttu-id="4dcec-110">I fältet **Namn** anger du ett unikt namn för uppgiften.</span><span class="sxs-lookup"><span data-stu-id="4dcec-110">In the **Name** field, enter a unique name for the task.</span></span>
 
-## <a name="specify-when-notifications-are-sent"></a>Ange när meddelanden ska skickas
-Du kan skicka meddelanden till andra personer när en automatisk uppgift har körts eller annullerats. Följ dessa steg för att ange när meddelanden skickas och vem de skickas till.
+## <a name="specify-when-notifications-are-sent"></a><span data-ttu-id="4dcec-111">Ange när meddelanden ska skickas</span><span class="sxs-lookup"><span data-stu-id="4dcec-111">Specify when notifications are sent</span></span>
+<span data-ttu-id="4dcec-112">Du kan skicka meddelanden till andra personer när en automatisk uppgift har körts eller annullerats.</span><span class="sxs-lookup"><span data-stu-id="4dcec-112">You can send notifications to people when an automated task has been run or canceled.</span></span> <span data-ttu-id="4dcec-113">Följ dessa steg för att ange när meddelanden skickas och vem de skickas till.</span><span class="sxs-lookup"><span data-stu-id="4dcec-113">Follow these steps to specify when notifications are sent, and who they are sent to.</span></span>
 
-1.  Klicka på **Meddelanden** i det vänstra fönstret.
-2.  Markera kryssrutan bredvid händelserna för att skicka meddelanden för:
-    -   **Utförande** – Meddelanden skickas när uppgiften har körts.
-    -   **Annullerad** – Meddelanden skickas när uppgiften har annullerats.
+1.  <span data-ttu-id="4dcec-114">Klicka på **Meddelanden** i det vänstra fönstret.</span><span class="sxs-lookup"><span data-stu-id="4dcec-114">In the left pane, click **Notifications**.</span></span>
+2.  <span data-ttu-id="4dcec-115">Markera kryssrutan bredvid händelserna för att skicka meddelanden för:</span><span class="sxs-lookup"><span data-stu-id="4dcec-115">Select the check box next to the events to send notifications for:</span></span>
+    -   <span data-ttu-id="4dcec-116">**Utförande** – Meddelanden skickas när uppgiften har körts.</span><span class="sxs-lookup"><span data-stu-id="4dcec-116">**Execution** – Notifications are sent when the task has been run.</span></span>
+    -   <span data-ttu-id="4dcec-117">**Annullerad** – Meddelanden skickas när uppgiften har annullerats.</span><span class="sxs-lookup"><span data-stu-id="4dcec-117">**Canceled** – Notifications are sent when the task has been canceled.</span></span>
 
-3.  Välj raden för en händelse som du valde i steg 2.
-4.  Ange meddelandetexten i textrutan i fliken **Meddelandetext**.
-5.  Om du vill anpassa meddelandet kan du infoga platshållare. Platshållare ersätts med lämpliga data när meddelandet visas för användarna. Följ dessa steg när du vill infoga en platshållare:
-    1.  Klicka på den plats i textrutan där platshållaren ska visas.
-    2.  Klicka på **Infoga platshållare**.
-    3.  Välj önskad platshållare i listan som visas.
-    4.  Klicka på **Infoga**.
+3.  <span data-ttu-id="4dcec-118">Välj raden för en händelse som du valde i steg 2.</span><span class="sxs-lookup"><span data-stu-id="4dcec-118">Select the row for an event that you selected in step 2.</span></span>
+4.  <span data-ttu-id="4dcec-119">Ange meddelandetexten i textrutan i fliken **Meddelandetext**.</span><span class="sxs-lookup"><span data-stu-id="4dcec-119">On the **Notification text** tab, in the text box, enter the text of the notification.</span></span>
+5.  <span data-ttu-id="4dcec-120">Om du vill anpassa meddelandet kan du infoga platshållare.</span><span class="sxs-lookup"><span data-stu-id="4dcec-120">To personalize the notification, you can insert placeholders.</span></span> <span data-ttu-id="4dcec-121">Platshållare ersätts med lämpliga data när meddelandet visas för användarna.</span><span class="sxs-lookup"><span data-stu-id="4dcec-121">Placeholders are replaced with appropriate data when the notification is shown to users.</span></span> <span data-ttu-id="4dcec-122">Följ dessa steg när du vill infoga en platshållare:</span><span class="sxs-lookup"><span data-stu-id="4dcec-122">Follow these steps to insert a placeholder:</span></span>
+    1.  <span data-ttu-id="4dcec-123">Klicka på den plats i textrutan där platshållaren ska visas.</span><span class="sxs-lookup"><span data-stu-id="4dcec-123">In the text box, click where the placeholder should appear.</span></span>
+    2.  <span data-ttu-id="4dcec-124">Klicka på **Infoga platshållare**.</span><span class="sxs-lookup"><span data-stu-id="4dcec-124">Click **Insert placeholder**.</span></span>
+    3.  <span data-ttu-id="4dcec-125">Välj önskad platshållare i listan som visas.</span><span class="sxs-lookup"><span data-stu-id="4dcec-125">In the list that appears, select the placeholder to insert.</span></span>
+    4.  <span data-ttu-id="4dcec-126">Klicka på **Infoga**.</span><span class="sxs-lookup"><span data-stu-id="4dcec-126">Click **Insert**.</span></span>
 
-6.  Om du vill lägga till översättningar av meddelandet följer du dessa steg:
-    1.  Klicka på **Översättningar**.
-    2.  Klicka på **Lägg till** på sidan som visas.
-    3.  I listan som visas väljer du det språk som du skriver texten i.
-    4.  I fältet **Översatt text** anger du texten.
-    5.  Om du vill anpassa texten kan du infoga platshållare enligt vad som beskrivs i steg 5.
-    6.  Klicka på **Stäng**.
+6.  <span data-ttu-id="4dcec-127">Om du vill lägga till översättningar av meddelandet följer du dessa steg:</span><span class="sxs-lookup"><span data-stu-id="4dcec-127">To add translations of the notification, follow these steps:</span></span>
+    1.  <span data-ttu-id="4dcec-128">Klicka på **Översättningar**.</span><span class="sxs-lookup"><span data-stu-id="4dcec-128">Click **Translations**.</span></span>
+    2.  <span data-ttu-id="4dcec-129">Klicka på **Lägg till** på sidan som visas.</span><span class="sxs-lookup"><span data-stu-id="4dcec-129">On the page that appears, click **Add**.</span></span>
+    3.  <span data-ttu-id="4dcec-130">I listan som visas väljer du det språk som du skriver texten i.</span><span class="sxs-lookup"><span data-stu-id="4dcec-130">In the list that appears, select the language that you're entering the text in.</span></span>
+    4.  <span data-ttu-id="4dcec-131">I fältet **Översatt text** anger du texten.</span><span class="sxs-lookup"><span data-stu-id="4dcec-131">In the **Translated text** field, enter the text.</span></span>
+    5.  <span data-ttu-id="4dcec-132">Om du vill anpassa texten kan du infoga platshållare enligt vad som beskrivs i steg 5.</span><span class="sxs-lookup"><span data-stu-id="4dcec-132">To personalize the text, you can insert placeholders as described in step 5.</span></span>
+    6.  <span data-ttu-id="4dcec-133">Klicka på **Stäng**.</span><span class="sxs-lookup"><span data-stu-id="4dcec-133">Click **Close**.</span></span>
 
-7.  Ange vem meddelandena ska skickas till i fliken **Mottagare**. I följande register väljer du ett av alternativen och följer sedan de ytterligare stegen för detta alternativ innan du går vidare till steg 8.
+7.  <span data-ttu-id="4dcec-134">Ange vem meddelandena ska skickas till i fliken **Mottagare**.</span><span class="sxs-lookup"><span data-stu-id="4dcec-134">On the **Recipient** tab, specify who the notifications are sent to.</span></span> <span data-ttu-id="4dcec-135">I följande register väljer du ett av alternativen och följer sedan de ytterligare stegen för detta alternativ innan du går vidare till steg 8.</span><span class="sxs-lookup"><span data-stu-id="4dcec-135">Select one of the options in the following table, and then follow the additional steps for that option before you go to step 8.</span></span>
     <table>
     <colgroup>
     <col width="33%" />
@@ -73,39 +73,39 @@ Du kan skicka meddelanden till andra personer när en automatisk uppgift har kö
     </colgroup>
     <thead>
     <tr class="header">
-    <th>Alternativ</th>
-    <th>Meddelandemottagare</th>
-    <th>Ytterligare steg</th>
+    <th><span data-ttu-id="4dcec-136">Alternativ</span><span class="sxs-lookup"><span data-stu-id="4dcec-136">Option</span></span></th>
+    <th><span data-ttu-id="4dcec-137">Meddelandemottagare</span><span class="sxs-lookup"><span data-stu-id="4dcec-137">Notification recipients</span></span></th>
+    <th><span data-ttu-id="4dcec-138">Ytterligare steg</span><span class="sxs-lookup"><span data-stu-id="4dcec-138">Additional steps</span></span></th>
     </tr>
     </thead>
     <tbody>
     <tr class="odd">
-    <td>Deltagare</td>
-    <td>Användare som tilldelas en specifik grupp eller roll</td>
+    <td><span data-ttu-id="4dcec-139">Deltagare</span><span class="sxs-lookup"><span data-stu-id="4dcec-139">Participant</span></span></td>
+    <td><span data-ttu-id="4dcec-140">Användare som tilldelas en specifik grupp eller roll</span><span class="sxs-lookup"><span data-stu-id="4dcec-140">Users who are assigned to a specific group or role</span></span></td>
     <td><ol>
-    <li>Välj <strong>Deltagare</strong> i fliken <strong>Rollbaserad</strong> i listan <strong>Deltagartyp</strong> innan du väljer den grupp- eller rolltyp som du vill skicka meddelanden till.</li>
-    <li>Välj den grupp eller roll som du vill skicka meddelanden till i listan <strong>Deltagare</strong>.</li>
+    <li><span data-ttu-id="4dcec-141">Välj <strong>Deltagare</strong> i fliken <strong>Rollbaserad</strong> i listan <strong>Deltagartyp</strong> innan du väljer den grupp- eller rolltyp som du vill skicka meddelanden till.</span><span class="sxs-lookup"><span data-stu-id="4dcec-141">After you select <strong>Participant</strong>, on the <strong>Role based</strong> tab, in the <strong>Type of participant</strong> list, select the type of group or role to send notifications to.</span></span></li>
+    <li><span data-ttu-id="4dcec-142">Välj den grupp eller roll som du vill skicka meddelanden till i listan <strong>Deltagare</strong>.</span><span class="sxs-lookup"><span data-stu-id="4dcec-142">In the <strong>Participant</strong> list, select the group or role to send notifications to.</span></span></li>
     </ol></td>
     </tr>
     <tr class="even">
-    <td>Användare av arbetsflöde</td>
-    <td>Användare som deltar i det aktuella arbetsflödet</td>
+    <td><span data-ttu-id="4dcec-143">Användare av arbetsflöde</span><span class="sxs-lookup"><span data-stu-id="4dcec-143">Workflow user</span></span></td>
+    <td><span data-ttu-id="4dcec-144">Användare som deltar i det aktuella arbetsflödet</span><span class="sxs-lookup"><span data-stu-id="4dcec-144">Users who participate in the current workflow</span></span></td>
     <td><ul>
-    <li>När du har valt <strong>Användare av arbetsflöde</strong> i fliken <strong>Användare av arbetsflöde</strong> väljer du en användare som deltar i arbetsflödet i listan <strong>Användare av arbetsflöde</strong>.</li>
+    <li><span data-ttu-id="4dcec-145">När du har valt <strong>Användare av arbetsflöde</strong> i fliken <strong>Användare av arbetsflöde</strong> väljer du en användare som deltar i arbetsflödet i listan <strong>Användare av arbetsflöde</strong>.</span><span class="sxs-lookup"><span data-stu-id="4dcec-145">After you select <strong>Workflow user</strong>, on the <strong>Workflow user</strong> tab, in the <strong>Workflow user</strong> list, select a user who participates in the workflow.</span></span></li>
     </ul></td>
     </tr>
     <tr class="odd">
-    <td>Användare</td>
-    <td>Specifika användare av Microsoft Dynamics 365 for Finance and Operations</td>
+    <td><span data-ttu-id="4dcec-146">Användare</span><span class="sxs-lookup"><span data-stu-id="4dcec-146">User</span></span></td>
+    <td><span data-ttu-id="4dcec-147">Specifika användare av Microsoft Dynamics 365 for Finance and Operations</span><span class="sxs-lookup"><span data-stu-id="4dcec-147">Specific Microsoft Dynamics 365 for Finance and Operations users</span></span></td>
     <td><ol>
-    <li>Klicka på fliken <strong>Användare</strong> när du har valt <strong>Användare</strong>.</li>
-    <li>Listan <strong>Tillgängliga användare</strong> innehåller alla Finance and Operations-användare. Markera de användare som du vill skicka meddelanden till, och flytta sedan dessa användare till listan <strong>Markerade användare</strong>.</li>
+    <li><span data-ttu-id="4dcec-148">Klicka på fliken <strong>Användare</strong> när du har valt <strong>Användare</strong>.</span><span class="sxs-lookup"><span data-stu-id="4dcec-148">After you select <strong>User</strong>, click the <strong>User</strong> tab.</span></span></li>
+    <li><span data-ttu-id="4dcec-149">Listan <strong>Tillgängliga användare</strong> innehåller alla Finance and Operations-användare.</span><span class="sxs-lookup"><span data-stu-id="4dcec-149">The <strong>Available users</strong> list includes all Finance and Operations users.</span></span> <span data-ttu-id="4dcec-150">Markera de användare som du vill skicka meddelanden till, och flytta sedan dessa användare till listan <strong>Markerade användare</strong>.</span><span class="sxs-lookup"><span data-stu-id="4dcec-150">Select the users to send notifications to, and then move those users to the <strong>Selected users</strong> list.</span></span></li>
     </ol></td>
     </tr>
     </tbody>
     </table>
 
-8.  Upprepa stegen 3 till och med 7 för varje enskild händelse du valde i steg 2.
+8.  <span data-ttu-id="4dcec-151">Upprepa stegen 3 till och med 7 för varje enskild händelse du valde i steg 2.</span><span class="sxs-lookup"><span data-stu-id="4dcec-151">Repeat steps 3 through 7 for each event that you selected in step 2.</span></span>
 
 
 

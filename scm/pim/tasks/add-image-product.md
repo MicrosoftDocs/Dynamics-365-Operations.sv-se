@@ -16,24 +16,24 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: f009d040d7bdc419363dd9d7bc84fdeae5284ea6
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: b6a0ffb1b5be1ecda929ad604fc39b260fa1c34c
 ms.contentlocale: sv-se
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="add-an-image-to-a-product"></a>Lägg till en bild till en produkt
+# <a name="add-an-image-to-a-product"></a><span data-ttu-id="6cf8c-103">Lägg till en bild till en produkt</span><span class="sxs-lookup"><span data-stu-id="6cf8c-103">Add an image to a product</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-I den här proceduren visas hur du lägger till en bild till en produkt. Det demonstrationdataföretag som använts för att skapa den här uppgiften är USMF.
+<span data-ttu-id="6cf8c-104">I den här proceduren visas hur du lägger till en bild till en produkt. Det demonstrationdataföretag som använts för att skapa den här uppgiften är USMF.</span><span class="sxs-lookup"><span data-stu-id="6cf8c-104">This procedure shows how to add an image to a product The demo data company used to create this task is USMF.</span></span>
 
-1. Gå till Produktinformationshantering > Produkter > Frisläppta produkter.
-2. Expandera faktaboxen för produktbilden.
-3. Hitta och markera önskad post i listan.
-    * Välj exempelvis artikelnummer C0002.  
-4. Klicka på Change image.
-5. Klicka på Ny.
-    * Klicka på Bläddra. Hitta den bild som du vill använda, markera den och stäng sedan dialogrutan.    
+1. <span data-ttu-id="6cf8c-105">Gå till Produktinformationshantering > Produkter > Frisläppta produkter.</span><span class="sxs-lookup"><span data-stu-id="6cf8c-105">Go to Product information management > Products > Released products.</span></span>
+2. <span data-ttu-id="6cf8c-106">Expandera faktaboxen för produktbilden.</span><span class="sxs-lookup"><span data-stu-id="6cf8c-106">Expand the Product image FactBox.</span></span>
+3. <span data-ttu-id="6cf8c-107">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="6cf8c-107">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="6cf8c-108">Välj exempelvis artikelnummer C0002.</span><span class="sxs-lookup"><span data-stu-id="6cf8c-108">For example, select the item number C0002.</span></span>  
+4. <span data-ttu-id="6cf8c-109">Klicka på Change image.</span><span class="sxs-lookup"><span data-stu-id="6cf8c-109">Click Change image.</span></span>
+5. <span data-ttu-id="6cf8c-110">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="6cf8c-110">Click New.</span></span>
+    * <span data-ttu-id="6cf8c-111">Klicka på Bläddra.</span><span class="sxs-lookup"><span data-stu-id="6cf8c-111">Click Browse.</span></span> <span data-ttu-id="6cf8c-112">Hitta den bild som du vill använda, markera den och stäng sedan dialogrutan.</span><span class="sxs-lookup"><span data-stu-id="6cf8c-112">Find the image that you want to use, select it, and then close the dialog box.</span></span>    
 
 

@@ -16,89 +16,89 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: 34a6485c6f4c11d794fbdb5f4d33f22c0e577221
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: ba28cf1fa6a8e9a4497d3bac1a2161098ec53db1
 ms.contentlocale: sv-se
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="define-compensation-process-and-calculate-results"></a>Definiera kompensationsprocessen och beräkna resultat
+# <a name="define-compensation-process-and-calculate-results"></a><span data-ttu-id="1fddf-103">Definiera kompensationsprocessen och beräkna resultat</span><span class="sxs-lookup"><span data-stu-id="1fddf-103">Define compensation process and calculate results</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Kompensationsprocesser används för att bestämma nya kompensationsbelopp och belöningar för medarbetare som har anmälts till fasta och variabla kompensationsplaner. Kompensationsprocesser kan köras för att utföra ”vad händer om"-analyser, för att kontrollera att alla ändringar och inställningarna är korrekta. Den här proceduren skapar en kompensationsprocess, kör processen och visar resultatet. Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.
+<span data-ttu-id="1fddf-104">Kompensationsprocesser används för att bestämma nya kompensationsbelopp och belöningar för medarbetare som har anmälts till fasta och variabla kompensationsplaner.</span><span class="sxs-lookup"><span data-stu-id="1fddf-104">Compensation processes are used to determine new compensation amounts and awards for employees enrolled in fixed and variable compensation plans.</span></span> <span data-ttu-id="1fddf-105">Kompensationsprocesser kan köras för att utföra ”vad händer om"-analyser, för att kontrollera att alla ändringar och inställningarna är korrekta.</span><span class="sxs-lookup"><span data-stu-id="1fddf-105">Compensation processes can be run multiple times to perform "what-if" analysis, to verify all changes and settings are correct.</span></span> <span data-ttu-id="1fddf-106">Den här proceduren skapar en kompensationsprocess, kör processen och visar resultatet.</span><span class="sxs-lookup"><span data-stu-id="1fddf-106">This procedure will create a compensation process, run the process, and view the results.</span></span> <span data-ttu-id="1fddf-107">Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.</span><span class="sxs-lookup"><span data-stu-id="1fddf-107">The demo data company used to create this procedure is USMF.</span></span>
 
 
-## <a name="create-a-compensation-process"></a>Skapa en kompensationsprocess
-1. Gå till Personal > Kompensation > Process > Kompensationsprocesser.
-2. Klicka på Ny.
-3. I fältet Process, ange ett värde.
-4. Ange ett värde i fältet Beskrivning.
-5. Välj ett alternativ i fältet Processtyp.
-    * En cykel anger den tidsperiod som utvärderas för att avgöra kompensationen. Utvärderingen tar hänsyn till vilka befattningar som innehades av medarbetarna, vilka resultatvärderingar som ska inkluderas, beräkningen av procentandelen av tid som medarbetaren var anställd under cykeln med mera. Ett exempel på ett cykelstartdatum kan vara den första dagen i det föregående räkenskapsåret.  
-6. Ange ett datum i fältet Periodstart.
-    * Cykelns slutdatum är viktigt eftersom det används för att bestämma vilka medarbetare som var aktivt anställda och anmälda till en eller flera kompensationsplaner.  
-7. Ange ett datum i fältet Periodslut.
-    * Det aktiva transaktionsdatumet är det datum då de nya kompensationstarifferna börjar gälla. Många företag inkluderar några månader innan slutet på en cykel och tiden när de nya kompensationstarifferna börjar gälla. Den extra tiden används för att bearbeta och granska den nya kompensationen.  
-8. I fältet Aktivt transaktionsdatum, ange ett datum.
-    * Tidpunktsdatumet används för variabla kompensationsplaner som bestämmer medarbetarens belöningsbelopp som baseras på deras kompensationssats vid den här tidpunkten.  
-    * Den fasta lönen proportionellt från anställningsdatumet används tillsammans med fasta kompensationsplaner med en anställningsregel i procent.  Medarbetare som anställs mellan cykelstarten och den fasta lönen proportionellt från anställningsdatumet får 100 % av den beräknade kompensationsökningen, i stället för dem proportionella procentandelen.  
-9. I fältet Fast lön proportionellt från anställningsdatumet, ange ett datum.
-    * Deadline för granskning är det datum då alla processresultat ska granskas så att de kan läsas in i medarbetarens post för kompensation före det aktiva transaktionsdatumet. Det här fältet är endast till för information.  
-10. I fältet Granska deadline, ange ett datum.
-11. Klicka på Spara.
+## <a name="create-a-compensation-process"></a><span data-ttu-id="1fddf-108">Skapa en kompensationsprocess</span><span class="sxs-lookup"><span data-stu-id="1fddf-108">Create a compensation process</span></span>
+1. <span data-ttu-id="1fddf-109">Gå till Personal > Kompensation > Process > Kompensationsprocesser.</span><span class="sxs-lookup"><span data-stu-id="1fddf-109">Go to Human resources > Compensation > Process > Compensation processes.</span></span>
+2. <span data-ttu-id="1fddf-110">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="1fddf-110">Click New.</span></span>
+3. <span data-ttu-id="1fddf-111">I fältet Process, ange ett värde.</span><span class="sxs-lookup"><span data-stu-id="1fddf-111">In the Process field, type a value.</span></span>
+4. <span data-ttu-id="1fddf-112">Ange ett värde i fältet Beskrivning.</span><span class="sxs-lookup"><span data-stu-id="1fddf-112">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="1fddf-113">Välj ett alternativ i fältet Processtyp.</span><span class="sxs-lookup"><span data-stu-id="1fddf-113">In the Process type field, select an option.</span></span>
+    * <span data-ttu-id="1fddf-114">En cykel anger den tidsperiod som utvärderas för att avgöra kompensationen.</span><span class="sxs-lookup"><span data-stu-id="1fddf-114">A cycle specifies the time period evaluated to determine compensation.</span></span> <span data-ttu-id="1fddf-115">Utvärderingen tar hänsyn till vilka befattningar som innehades av medarbetarna, vilka resultatvärderingar som ska inkluderas, beräkningen av procentandelen av tid som medarbetaren var anställd under cykeln med mera.</span><span class="sxs-lookup"><span data-stu-id="1fddf-115">The evaluation considers which positions were held by employees, which performance ratings to include, calculation of the percentage of time the employee was employed during the cycle, and more.</span></span> <span data-ttu-id="1fddf-116">Ett exempel på ett cykelstartdatum kan vara den första dagen i det föregående räkenskapsåret.</span><span class="sxs-lookup"><span data-stu-id="1fddf-116">An example of a cycle start date might be the first day of the past fiscal year.</span></span>  
+6. <span data-ttu-id="1fddf-117">Ange ett datum i fältet Periodstart.</span><span class="sxs-lookup"><span data-stu-id="1fddf-117">In the Cycle start field, enter a date.</span></span>
+    * <span data-ttu-id="1fddf-118">Cykelns slutdatum är viktigt eftersom det används för att bestämma vilka medarbetare som var aktivt anställda och anmälda till en eller flera kompensationsplaner.</span><span class="sxs-lookup"><span data-stu-id="1fddf-118">The cycle end date is  important because it is the date used to determine which employees were actively employed and enrolled in one or more compensation plans.</span></span>  
+7. <span data-ttu-id="1fddf-119">Ange ett datum i fältet Periodslut.</span><span class="sxs-lookup"><span data-stu-id="1fddf-119">In the Cycle end field, enter a date.</span></span>
+    * <span data-ttu-id="1fddf-120">Det aktiva transaktionsdatumet är det datum då de nya kompensationstarifferna börjar gälla.</span><span class="sxs-lookup"><span data-stu-id="1fddf-120">The transaction active date is the date the new compensation rates should take effect.</span></span> <span data-ttu-id="1fddf-121">Många företag inkluderar några månader innan slutet på en cykel och tiden när de nya kompensationstarifferna börjar gälla.</span><span class="sxs-lookup"><span data-stu-id="1fddf-121">Many companies include a few months between their end of a cycle and the time the new compensation rates go into effect.</span></span> <span data-ttu-id="1fddf-122">Den extra tiden används för att bearbeta och granska den nya kompensationen.</span><span class="sxs-lookup"><span data-stu-id="1fddf-122">The additional time is used for processing and reviewing the new compensation.</span></span>  
+8. <span data-ttu-id="1fddf-123">I fältet Aktivt transaktionsdatum, ange ett datum.</span><span class="sxs-lookup"><span data-stu-id="1fddf-123">In the Transaction active date field, enter a date.</span></span>
+    * <span data-ttu-id="1fddf-124">Tidpunktsdatumet används för variabla kompensationsplaner som bestämmer medarbetarens belöningsbelopp som baseras på deras kompensationssats vid den här tidpunkten.</span><span class="sxs-lookup"><span data-stu-id="1fddf-124">The point-in-time date is used for variable compensation plans that determine an employee's award amount based on their compensation rate at this point in time.</span></span>  
+    * <span data-ttu-id="1fddf-125">Den fasta lönen proportionellt från anställningsdatumet används tillsammans med fasta kompensationsplaner med en anställningsregel i procent.</span><span class="sxs-lookup"><span data-stu-id="1fddf-125">The fixed pay pro rated hire date is used with fixed compensation plans with a hire rule of Percent.</span></span>  <span data-ttu-id="1fddf-126">Medarbetare som anställs mellan cykelstarten och den fasta lönen proportionellt från anställningsdatumet får 100 % av den beräknade kompensationsökningen, i stället för dem proportionella procentandelen.</span><span class="sxs-lookup"><span data-stu-id="1fddf-126">Employees who are hired between the cycle start and the fixed pay pro rated hire date will receive 100% of their calculated compensation increase, instead of pro-rated percentage.</span></span>  
+9. <span data-ttu-id="1fddf-127">I fältet Fast lön proportionellt från anställningsdatumet, ange ett datum.</span><span class="sxs-lookup"><span data-stu-id="1fddf-127">In the Fixed pay pro rated hire date field, enter a date.</span></span>
+    * <span data-ttu-id="1fddf-128">Deadline för granskning är det datum då alla processresultat ska granskas så att de kan läsas in i medarbetarens post för kompensation före det aktiva transaktionsdatumet.</span><span class="sxs-lookup"><span data-stu-id="1fddf-128">The review deadline is the date by which all process results should be reviewed so that they can be loaded into an employee's compensation record before the transaction active date.</span></span> <span data-ttu-id="1fddf-129">Det här fältet är endast till för information.</span><span class="sxs-lookup"><span data-stu-id="1fddf-129">This field is informational only.</span></span>  
+10. <span data-ttu-id="1fddf-130">I fältet Granska deadline, ange ett datum.</span><span class="sxs-lookup"><span data-stu-id="1fddf-130">In the Review deadline field, enter a date.</span></span>
+11. <span data-ttu-id="1fddf-131">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="1fddf-131">Click Save.</span></span>
 
-## <a name="setup-the-compensation-plans-and-actions-for-a-compensation-process"></a>Ställ in kompensationsplanerna och åtgärderna för en kompensationsprocess
-1. Klicka på Inställningar.
-    * Sidan Inställningar används för att välja vilka planer som ska behandlas som en del av den här kompensationsprocessen samt vilka åtgärder ska utföras för varje plan.  
-2. I fältet Plan, ange eller välj ett värde.
-3. Klicka på Spara.
-4. Klicka på Lägg till.
-5. I fältet Åtgärd, välj en åtgärdstyp för eget kapital.
-6. Klicka på Lägg till.
-7. I fältet Åtgärd, välj en åtgärdstyp för Merit.
-    * Kompensationsåtgärder kan ”kedjas fast” tillsammans med fältet Använd tidigare resultat för att ange om den valda åtgärden ska använda medarbetarens grundlön eller resultatet för den föregående åtgärden som startpunkt för beräkningen av den här åtgärden.  
-8. Välj Ja i fältet Använd tidigare resultat.
-9. Klicka på Lägg till.
-10. I fältet Åtgärd, välj en åtgärdstyp för Allmänt.
-    * Olika kompensationsåtgärdstyper aktiverar olika fält. För en allmän kompensationsåtgärdstyp kan en ökningsprocent eller ett ökningsbelopp anges.  
-11. Välj alternativet Välj ökningsbelopp.
-12. Ange ett tal i fältet Ökningsbelopp.
-13. Klicka på Lägg till.
-14. I fältet Åtgärd, välj en åtgärdstyp för Befordran.
-    * Befordringar och andra nivåändrande åtgärdstyper gör det möjligt för användarna att göra manuella justeringar för medarbetarkompensationen. Rekommendationer kan aktiveras för att dessa åtgärdstyper samt andra åtgärdstyper för att möjliggöra att ange ett nytt rekommenderat kompensationsvärde för en medarbetare.  
-15. Klicka på Lägg till.
-16. Välj ett alternativ i fältet Typ.
-    * Fasta och variabla kompensationsplaner kan köras i samma kompensationsprocess.  
-17. I fältet Plan, ange eller välj ett värde.
-    * Använd kryssrutan Aktivera prestationslön för att bestämma om fasta och variabla kompensationsbelopp ska justeras baserat på medarbetarens resultatvärdering.  
-    * Hävstångsverkan kan åsidosättas i variabla kompensationsplaner.  
-18. Klicka på Spara.
-19. Klicka på Lägg till.
-20. Stäng sidan.
+## <a name="setup-the-compensation-plans-and-actions-for-a-compensation-process"></a><span data-ttu-id="1fddf-132">Ställ in kompensationsplanerna och åtgärderna för en kompensationsprocess</span><span class="sxs-lookup"><span data-stu-id="1fddf-132">Setup the compensation plans and actions for a compensation process</span></span>
+1. <span data-ttu-id="1fddf-133">Klicka på Inställningar.</span><span class="sxs-lookup"><span data-stu-id="1fddf-133">Click Setup.</span></span>
+    * <span data-ttu-id="1fddf-134">Sidan Inställningar används för att välja vilka planer som ska behandlas som en del av den här kompensationsprocessen samt vilka åtgärder ska utföras för varje plan.</span><span class="sxs-lookup"><span data-stu-id="1fddf-134">The Setup page is used to select which plans to process as part of this compensation process, as well as which actions should be taken against each plan.</span></span>  
+2. <span data-ttu-id="1fddf-135">I fältet Plan, ange eller välj ett värde.</span><span class="sxs-lookup"><span data-stu-id="1fddf-135">In the Plan field, enter or select a value.</span></span>
+3. <span data-ttu-id="1fddf-136">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="1fddf-136">Click Save.</span></span>
+4. <span data-ttu-id="1fddf-137">Klicka på Lägg till.</span><span class="sxs-lookup"><span data-stu-id="1fddf-137">Click Add.</span></span>
+5. <span data-ttu-id="1fddf-138">I fältet Åtgärd, välj en åtgärdstyp för eget kapital.</span><span class="sxs-lookup"><span data-stu-id="1fddf-138">In the Action field, select an Equity type of action.</span></span>
+6. <span data-ttu-id="1fddf-139">Klicka på Lägg till.</span><span class="sxs-lookup"><span data-stu-id="1fddf-139">Click Add.</span></span>
+7. <span data-ttu-id="1fddf-140">I fältet Åtgärd, välj en åtgärdstyp för Merit.</span><span class="sxs-lookup"><span data-stu-id="1fddf-140">In the Action field, select a Merit type of action.</span></span>
+    * <span data-ttu-id="1fddf-141">Kompensationsåtgärder kan ”kedjas fast” tillsammans med fältet Använd tidigare resultat för att ange om den valda åtgärden ska använda medarbetarens grundlön eller resultatet för den föregående åtgärden som startpunkt för beräkningen av den här åtgärden.</span><span class="sxs-lookup"><span data-stu-id="1fddf-141">Compensation actions can be "chained" together using the Use previous result field to indicate whether the selected action should use the employees base pay or the result of the previous action as the starting point for this action's calculation.</span></span>  
+8. <span data-ttu-id="1fddf-142">Välj Ja i fältet Använd tidigare resultat.</span><span class="sxs-lookup"><span data-stu-id="1fddf-142">Select Yes in the Use previous result field.</span></span>
+9. <span data-ttu-id="1fddf-143">Klicka på Lägg till.</span><span class="sxs-lookup"><span data-stu-id="1fddf-143">Click Add.</span></span>
+10. <span data-ttu-id="1fddf-144">I fältet Åtgärd, välj en åtgärdstyp för Allmänt.</span><span class="sxs-lookup"><span data-stu-id="1fddf-144">In the Action field, select a General type of Action.</span></span>
+    * <span data-ttu-id="1fddf-145">Olika kompensationsåtgärdstyper aktiverar olika fält.</span><span class="sxs-lookup"><span data-stu-id="1fddf-145">Different compensation action types enable different fields.</span></span> <span data-ttu-id="1fddf-146">För en allmän kompensationsåtgärdstyp kan en ökningsprocent eller ett ökningsbelopp anges.</span><span class="sxs-lookup"><span data-stu-id="1fddf-146">For a General compensation action type, an increase percent or increase amount can be specified.</span></span>  
+11. <span data-ttu-id="1fddf-147">Välj alternativet Välj ökningsbelopp.</span><span class="sxs-lookup"><span data-stu-id="1fddf-147">Select the Select increase amount option.</span></span>
+12. <span data-ttu-id="1fddf-148">Ange ett tal i fältet Ökningsbelopp.</span><span class="sxs-lookup"><span data-stu-id="1fddf-148">In the Increase amount field, enter a number.</span></span>
+13. <span data-ttu-id="1fddf-149">Klicka på Lägg till.</span><span class="sxs-lookup"><span data-stu-id="1fddf-149">Click Add.</span></span>
+14. <span data-ttu-id="1fddf-150">I fältet Åtgärd, välj en åtgärdstyp för Befordran.</span><span class="sxs-lookup"><span data-stu-id="1fddf-150">In the Action field, select a Promotion type of Action.</span></span>
+    * <span data-ttu-id="1fddf-151">Befordringar och andra nivåändrande åtgärdstyper gör det möjligt för användarna att göra manuella justeringar för medarbetarkompensationen.</span><span class="sxs-lookup"><span data-stu-id="1fddf-151">Promotion and Other level change action types enable users to make manual adjustments to employee compensation.</span></span> <span data-ttu-id="1fddf-152">Rekommendationer kan aktiveras för att dessa åtgärdstyper samt andra åtgärdstyper för att möjliggöra att ange ett nytt rekommenderat kompensationsvärde för en medarbetare.</span><span class="sxs-lookup"><span data-stu-id="1fddf-152">Recommendations can be enabled for these action types, as well as other action types to enable you to enter a new recommended compensation value for an employee.</span></span>  
+15. <span data-ttu-id="1fddf-153">Klicka på Lägg till.</span><span class="sxs-lookup"><span data-stu-id="1fddf-153">Click Add.</span></span>
+16. <span data-ttu-id="1fddf-154">Välj ett alternativ i fältet Typ.</span><span class="sxs-lookup"><span data-stu-id="1fddf-154">In the Type field, select an option.</span></span>
+    * <span data-ttu-id="1fddf-155">Fasta och variabla kompensationsplaner kan köras i samma kompensationsprocess.</span><span class="sxs-lookup"><span data-stu-id="1fddf-155">Fixed and variable compensation plans can be run in the same compensation process.</span></span>  
+17. <span data-ttu-id="1fddf-156">I fältet Plan, ange eller välj ett värde.</span><span class="sxs-lookup"><span data-stu-id="1fddf-156">In the Plan field, enter or select a value.</span></span>
+    * <span data-ttu-id="1fddf-157">Använd kryssrutan Aktivera prestationslön för att bestämma om fasta och variabla kompensationsbelopp ska justeras baserat på medarbetarens resultatvärdering.</span><span class="sxs-lookup"><span data-stu-id="1fddf-157">Use the Enable pay for performance check box to determined whether fixed and variable compensation amounts should be adjusted based on the employee's performance rating.</span></span>  
+    * <span data-ttu-id="1fddf-158">Hävstångsverkan kan åsidosättas i variabla kompensationsplaner.</span><span class="sxs-lookup"><span data-stu-id="1fddf-158">Leverage can be overridden on variable compensation plans.</span></span>  
+18. <span data-ttu-id="1fddf-159">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="1fddf-159">Click Save.</span></span>
+19. <span data-ttu-id="1fddf-160">Klicka på Lägg till.</span><span class="sxs-lookup"><span data-stu-id="1fddf-160">Click Add.</span></span>
+20. <span data-ttu-id="1fddf-161">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="1fddf-161">Close the page.</span></span>
 
-## <a name="run-the-compensation-process"></a>Kör kompensationsprocessen
-1. Klicka på Kör process.
-    * Kontrollen Visa bearbetningsresultat gör det möjligt att visa bearbetningsmeddelanden för den färdiga kompensationsprocessen när denna har avslutats.  
-2. Välj Ja i fältet Visa bearbetningsresultat.
-3. Klicka på OK.
+## <a name="run-the-compensation-process"></a><span data-ttu-id="1fddf-162">Kör kompensationsprocessen</span><span class="sxs-lookup"><span data-stu-id="1fddf-162">Run the compensation process</span></span>
+1. <span data-ttu-id="1fddf-163">Klicka på Kör process.</span><span class="sxs-lookup"><span data-stu-id="1fddf-163">Click Run process.</span></span>
+    * <span data-ttu-id="1fddf-164">Kontrollen Visa bearbetningsresultat gör det möjligt att visa bearbetningsmeddelanden för den färdiga kompensationsprocessen när denna har avslutats.</span><span class="sxs-lookup"><span data-stu-id="1fddf-164">The Show processing results control lets you view processing messages for the complete compensation process when processing has finished.</span></span>  
+2. <span data-ttu-id="1fddf-165">Välj Ja i fältet Visa bearbetningsresultat.</span><span class="sxs-lookup"><span data-stu-id="1fddf-165">Select Yes in the Show processing results field.</span></span>
+3. <span data-ttu-id="1fddf-166">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="1fddf-166">Click OK.</span></span>
 
-## <a name="view-the-results"></a>Visa resultaten
-1. Klicka på Processresultat.
-2. Klicka på Medarbetarresultat.
-3. Hitta och markera önskad post i listan.
-4. Expandera avsnittet Fast kompensation.
-    * Expandera snabbflikarna om du vill visa resultaten av processen. Om Aktivera rekommendationer var markerad för en kompensationsåtgärd, fälten Rekommendation kommer att aktiveras för den åtgärden.  
-5. Hitta och markera önskad post i listan.
-    * Resultaten för en enskild medarbetare kan visas genom att klicka på knappen Visa resultat.  
-    * Du kan skriva över det beräknade kompensationsbeloppet genom att justera procenttalet eller öka beloppet i fälten Rekommendation.  
-6. I fältet Rekommenderad procent, ange ett nummer.
-7. Hitta och markera önskad post i listan.
-8. I fältet Rekommenderad procent, ange ett nummer.
-    * Omberäkna kan användas för att ignorera ändringar som gjorts för befintliga poster och skapa ett nytt kompensationsresultat för den valda medarbetaren.  
-    * Ändra statusen till Godkänt när alla ändringar är färdiga för en medarbetare.  
-9. Klicka på Ändra status.
-10. Klicka på Godkända.
-    * När posten har godkänts kan den läsas in till medarbetarens officiella kompensationspost. Den nya kompensationen blir giltig på det transaktionsdatum som anges i kompensationsprocessen.  
+## <a name="view-the-results"></a><span data-ttu-id="1fddf-167">Visa resultaten</span><span class="sxs-lookup"><span data-stu-id="1fddf-167">View the results</span></span>
+1. <span data-ttu-id="1fddf-168">Klicka på Processresultat.</span><span class="sxs-lookup"><span data-stu-id="1fddf-168">Click Process results.</span></span>
+2. <span data-ttu-id="1fddf-169">Klicka på Medarbetarresultat.</span><span class="sxs-lookup"><span data-stu-id="1fddf-169">Click Employee results.</span></span>
+3. <span data-ttu-id="1fddf-170">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="1fddf-170">In the list, find and select the desired record.</span></span>
+4. <span data-ttu-id="1fddf-171">Expandera avsnittet Fast kompensation.</span><span class="sxs-lookup"><span data-stu-id="1fddf-171">Expand the Fixed compensation section.</span></span>
+    * <span data-ttu-id="1fddf-172">Expandera snabbflikarna om du vill visa resultaten av processen.</span><span class="sxs-lookup"><span data-stu-id="1fddf-172">Expand the FastTabs to view the results of the process.</span></span> <span data-ttu-id="1fddf-173">Om Aktivera rekommendationer var markerad för en kompensationsåtgärd, fälten Rekommendation kommer att aktiveras för den åtgärden.</span><span class="sxs-lookup"><span data-stu-id="1fddf-173">If Enable recommendations was marked for a compensation action, the Recommendation fields will be enabled for that action.</span></span>  
+5. <span data-ttu-id="1fddf-174">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="1fddf-174">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="1fddf-175">Resultaten för en enskild medarbetare kan visas genom att klicka på knappen Visa resultat.</span><span class="sxs-lookup"><span data-stu-id="1fddf-175">The results for a single employee can be viewed by clicking the View results button.</span></span>  
+    * <span data-ttu-id="1fddf-176">Du kan skriva över det beräknade kompensationsbeloppet genom att justera procenttalet eller öka beloppet i fälten Rekommendation.</span><span class="sxs-lookup"><span data-stu-id="1fddf-176">You can overwrite the calculated compensation amount by adjusting the percent or the increase amount in the Recommendation fields.</span></span>  
+6. <span data-ttu-id="1fddf-177">I fältet Rekommenderad procent, ange ett nummer.</span><span class="sxs-lookup"><span data-stu-id="1fddf-177">In the percent recommended field, enter a number.</span></span>
+7. <span data-ttu-id="1fddf-178">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="1fddf-178">In the list, find and select the desired record.</span></span>
+8. <span data-ttu-id="1fddf-179">I fältet Rekommenderad procent, ange ett nummer.</span><span class="sxs-lookup"><span data-stu-id="1fddf-179">In the percent recommended field, enter a number.</span></span>
+    * <span data-ttu-id="1fddf-180">Omberäkna kan användas för att ignorera ändringar som gjorts för befintliga poster och skapa ett nytt kompensationsresultat för den valda medarbetaren.</span><span class="sxs-lookup"><span data-stu-id="1fddf-180">Recalculate can be used to ignore any changes made to the existing record and generate a new compensation result for the selected employee.</span></span>  
+    * <span data-ttu-id="1fddf-181">Ändra statusen till Godkänt när alla ändringar är färdiga för en medarbetare.</span><span class="sxs-lookup"><span data-stu-id="1fddf-181">When all changes are complete for an employee, change the status to Approved.</span></span>  
+9. <span data-ttu-id="1fddf-182">Klicka på Ändra status.</span><span class="sxs-lookup"><span data-stu-id="1fddf-182">Click Change status.</span></span>
+10. <span data-ttu-id="1fddf-183">Klicka på Godkända.</span><span class="sxs-lookup"><span data-stu-id="1fddf-183">Click Approved.</span></span>
+    * <span data-ttu-id="1fddf-184">När posten har godkänts kan den läsas in till medarbetarens officiella kompensationspost.</span><span class="sxs-lookup"><span data-stu-id="1fddf-184">After the record has been approved it can be loaded to the employee's official compensation record.</span></span> <span data-ttu-id="1fddf-185">Den nya kompensationen blir giltig på det transaktionsdatum som anges i kompensationsprocessen.</span><span class="sxs-lookup"><span data-stu-id="1fddf-185">The new compensation will be effective as of the transaction date set on the compensation process.</span></span>  
 
 

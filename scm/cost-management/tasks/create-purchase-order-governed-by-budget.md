@@ -16,50 +16,50 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: f9b82db94d98fb19c67888a1f8a35b2fe62c98fe
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 7cc024caa54db6629a1e573df295fe8333996647
 ms.contentlocale: sv-se
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-a-purchase-order-governed-by-budget"></a>Skapa en inköpsorder som omfattas av budget
+# <a name="create-a-purchase-order-governed-by-budget"></a><span data-ttu-id="df722-103">Skapa en inköpsorder som omfattas av budget</span><span class="sxs-lookup"><span data-stu-id="df722-103">Create a purchase order governed by budget</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Använd den här proceduren för att skapa en inköpsorder som ska kontrolleras med avseende budget. I den här inspelningen används demonstrationsföretaget USMF.
+<span data-ttu-id="df722-104">Använd den här proceduren för att skapa en inköpsorder som ska kontrolleras med avseende budget.</span><span class="sxs-lookup"><span data-stu-id="df722-104">Use this procedure to create a purchase order that is checked for available budget.</span></span> <span data-ttu-id="df722-105">I den här inspelningen används demonstrationsföretaget USMF.</span><span class="sxs-lookup"><span data-stu-id="df722-105">This recording uses the USMF demo data company.</span></span>
 
 
-## <a name="review-the-budget-control-configuration"></a>Granska budgetkontrollkonfigurationen
-1. Gå till Budgetering > Inställningar > Budgetkontroll > Budgetkontrollkonfiguration.
-2. Klicka på fliken Budgetmedel är tillgängliga.
-3. Klicka på fliken Dokument och journaler.
-4. Klicka på fliken Definiera budgetkontrollregler.
-5. Klicka på fliken Definiera budgetgrupper.
-6. Stäng sidan.
+## <a name="review-the-budget-control-configuration"></a><span data-ttu-id="df722-106">Granska budgetkontrollkonfigurationen</span><span class="sxs-lookup"><span data-stu-id="df722-106">Review the budget control configuration</span></span>
+1. <span data-ttu-id="df722-107">Gå till Budgetering > Inställningar > Budgetkontroll > Budgetkontrollkonfiguration.</span><span class="sxs-lookup"><span data-stu-id="df722-107">Go to Budgeting > Setup > Budget control > Budget control configuration.</span></span>
+2. <span data-ttu-id="df722-108">Klicka på fliken Budgetmedel är tillgängliga.</span><span class="sxs-lookup"><span data-stu-id="df722-108">Click the Budget funds available tab.</span></span>
+3. <span data-ttu-id="df722-109">Klicka på fliken Dokument och journaler.</span><span class="sxs-lookup"><span data-stu-id="df722-109">Click the Documents and journals tab.</span></span>
+4. <span data-ttu-id="df722-110">Klicka på fliken Definiera budgetkontrollregler.</span><span class="sxs-lookup"><span data-stu-id="df722-110">Click the Define budget control rules tab.</span></span>
+5. <span data-ttu-id="df722-111">Klicka på fliken Definiera budgetgrupper.</span><span class="sxs-lookup"><span data-stu-id="df722-111">Click the Define budget groups tab.</span></span>
+6. <span data-ttu-id="df722-112">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="df722-112">Close the page.</span></span>
 
-## <a name="create-the-purchase-order-header"></a>Skapa inköpsorderrubriken
-1. Gå till Anskaffning och källa > Inköpsorder > Alla inköpsorder.
-2. Klicka på Ny.
-3. Ange eller välj ett värde i fältet Leverantörskonto.
-4. Expandera avsnittet Allmänt.
-5. Ställ in datumet i fältet Redovisning till "2016-01-01".
-6. Klicka på OK.
+## <a name="create-the-purchase-order-header"></a><span data-ttu-id="df722-113">Skapa inköpsorderrubriken</span><span class="sxs-lookup"><span data-stu-id="df722-113">Create the purchase order header</span></span>
+1. <span data-ttu-id="df722-114">Gå till Anskaffning och källa > Inköpsorder > Alla inköpsorder.</span><span class="sxs-lookup"><span data-stu-id="df722-114">Go to Procurement and sourcing > Purchase orders > All purchase orders.</span></span>
+2. <span data-ttu-id="df722-115">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="df722-115">Click New.</span></span>
+3. <span data-ttu-id="df722-116">Ange eller välj ett värde i fältet Leverantörskonto.</span><span class="sxs-lookup"><span data-stu-id="df722-116">In the Vendor account field, enter or select a value.</span></span>
+4. <span data-ttu-id="df722-117">Expandera avsnittet Allmänt.</span><span class="sxs-lookup"><span data-stu-id="df722-117">Expand the General section.</span></span>
+5. <span data-ttu-id="df722-118">Ställ in datumet i fältet Redovisning till "2016-01-01".</span><span class="sxs-lookup"><span data-stu-id="df722-118">In the Accounting date field, set the date to '2016-01-01'.</span></span>
+6. <span data-ttu-id="df722-119">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="df722-119">Click OK.</span></span>
 
-## <a name="add-a-purchase-order-line"></a>Lägg till en inköpsorderrad
-1. Ange eller välj ett värde i fältet Anskaffningskategori.
-2. Ställ in kvantiteten till 2.
-3. Ange eller välj ett värde i fältet Enhet.
-4. Ställ in Enhetspris till "10 000".
-5. Klicka på Ekonomi.
-6. Klicka på Fördela belopp.
-7. Ange värdet "601300-001-023--" i fältet Redovisningskonto.
-8. Stäng sidan.
+## <a name="add-a-purchase-order-line"></a><span data-ttu-id="df722-120">Lägg till en inköpsorderrad</span><span class="sxs-lookup"><span data-stu-id="df722-120">Add a purchase order line</span></span>
+1. <span data-ttu-id="df722-121">Ange eller välj ett värde i fältet Anskaffningskategori.</span><span class="sxs-lookup"><span data-stu-id="df722-121">In the Procurement category field, enter or select a value.</span></span>
+2. <span data-ttu-id="df722-122">Ställ in kvantiteten till 2.</span><span class="sxs-lookup"><span data-stu-id="df722-122">Set Quantity to '2'.</span></span>
+3. <span data-ttu-id="df722-123">Ange eller välj ett värde i fältet Enhet.</span><span class="sxs-lookup"><span data-stu-id="df722-123">In the Unit field, enter or select a value.</span></span>
+4. <span data-ttu-id="df722-124">Ställ in Enhetspris till "10 000".</span><span class="sxs-lookup"><span data-stu-id="df722-124">Set Unit price to '10000'.</span></span>
+5. <span data-ttu-id="df722-125">Klicka på Ekonomi.</span><span class="sxs-lookup"><span data-stu-id="df722-125">Click Financials.</span></span>
+6. <span data-ttu-id="df722-126">Klicka på Fördela belopp.</span><span class="sxs-lookup"><span data-stu-id="df722-126">Click Distribute amounts.</span></span>
+7. <span data-ttu-id="df722-127">Ange värdet "601300-001-023--" i fältet Redovisningskonto.</span><span class="sxs-lookup"><span data-stu-id="df722-127">In the Ledger account field, specify the value '601300-001-023--'.</span></span>
+8. <span data-ttu-id="df722-128">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="df722-128">Close the page.</span></span>
 
-## <a name="perform-budget-checking"></a>Utför budgetkontroll
-1. Klicka på Ekonomi.
-2. Klicka på Utför budgetkontroll.
-3. Klicka på Ekonomi.
-4. Klicka på Fel eller varningar från budgetkontroll.
-5. Klicka på Stäng.
+## <a name="perform-budget-checking"></a><span data-ttu-id="df722-129">Utför budgetkontroll</span><span class="sxs-lookup"><span data-stu-id="df722-129">Perform budget checking</span></span>
+1. <span data-ttu-id="df722-130">Klicka på Ekonomi.</span><span class="sxs-lookup"><span data-stu-id="df722-130">Click Financials.</span></span>
+2. <span data-ttu-id="df722-131">Klicka på Utför budgetkontroll.</span><span class="sxs-lookup"><span data-stu-id="df722-131">Click Perform budget checking.</span></span>
+3. <span data-ttu-id="df722-132">Klicka på Ekonomi.</span><span class="sxs-lookup"><span data-stu-id="df722-132">Click Financials.</span></span>
+4. <span data-ttu-id="df722-133">Klicka på Fel eller varningar från budgetkontroll.</span><span class="sxs-lookup"><span data-stu-id="df722-133">Click Budget check errors or warnings.</span></span>
+5. <span data-ttu-id="df722-134">Klicka på Stäng.</span><span class="sxs-lookup"><span data-stu-id="df722-134">Click Close.</span></span>
 
 

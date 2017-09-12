@@ -16,57 +16,57 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 9c5f79b7d9d62b29f21f2ddd1f6507ff82b381cc
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: b0647e1ec55d23607d07f38105e42af498ad1174
 ms.contentlocale: sv-se
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="configure-access-rights-for-a-cost-object-controller"></a>Konfigurera åtkomsträttigheter för en kostnadsobjektcontroller
+# <a name="configure-access-rights-for-a-cost-object-controller"></a><span data-ttu-id="b14ad-103">Konfigurera åtkomsträttigheter för en kostnadsobjektcontroller</span><span class="sxs-lookup"><span data-stu-id="b14ad-103">Configure access rights for a cost object controller</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Använd den är proceduren för att konfigurera åtkomsträttigheter för en kostnadsobjektcontroller. I den här inspelningen används demonstrationsföretaget USP2.
+<span data-ttu-id="b14ad-104">Använd den är proceduren för att konfigurera åtkomsträttigheter för en kostnadsobjektcontroller.</span><span class="sxs-lookup"><span data-stu-id="b14ad-104">Use this procedure to configure access rights for a cost object controller.</span></span> <span data-ttu-id="b14ad-105">I den här inspelningen används demonstrationsföretaget USP2.</span><span class="sxs-lookup"><span data-stu-id="b14ad-105">This recording uses the USP2 demo data company.</span></span>
 
 
-## <a name="assign-the-cost-object-controller-role"></a>Tilldela rollen kostnadsobjektcontroller
-1. Gå till Systemadministration > Användare > Användare.
-2. Använd snabbfiltret för att söka efter poster. Filtrera till exempel fältet Användarnamn med värdet "alicia".
-3. Klicka på länken på den valda raden i listan.
-4. Klicka på Tilldela roller.
-5. Hitta och markera önskad post i listan.
-6. Klicka på OK.
+## <a name="assign-the-cost-object-controller-role"></a><span data-ttu-id="b14ad-106">Tilldela rollen kostnadsobjektcontroller</span><span class="sxs-lookup"><span data-stu-id="b14ad-106">Assign the cost object controller role</span></span>
+1. <span data-ttu-id="b14ad-107">Gå till Systemadministration > Användare > Användare.</span><span class="sxs-lookup"><span data-stu-id="b14ad-107">Go to System administration > Users > Users.</span></span>
+2. <span data-ttu-id="b14ad-108">Använd snabbfiltret för att söka efter poster.</span><span class="sxs-lookup"><span data-stu-id="b14ad-108">Use the Quick Filter to find records.</span></span> <span data-ttu-id="b14ad-109">Filtrera till exempel fältet Användarnamn med värdet "alicia".</span><span class="sxs-lookup"><span data-stu-id="b14ad-109">For example, filter on the User name field with a value of 'alicia'.</span></span>
+3. <span data-ttu-id="b14ad-110">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="b14ad-110">In the list, click the link in the selected row.</span></span>
+4. <span data-ttu-id="b14ad-111">Klicka på Tilldela roller.</span><span class="sxs-lookup"><span data-stu-id="b14ad-111">Click Assign roles.</span></span>
+5. <span data-ttu-id="b14ad-112">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="b14ad-112">In the list, find and select the desired record.</span></span>
+6. <span data-ttu-id="b14ad-113">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="b14ad-113">Click OK.</span></span>
 
-## <a name="enable-access-list-security"></a>Aktivera listan åtkomstsäkerhet
-1. Gå till Kostnadsredovisning > Dimensioner > Dimensionshierarkier.
-2. Hitta och markera önskad post i listan.
-    * Välj Organisation.  
-3. Klicka på Redigera.
-4. Välj Ja i fältet Hierarki för åtkomstlista.
-5. Klicka p Visa hierarki
+## <a name="enable-access-list-security"></a><span data-ttu-id="b14ad-114">Aktivera listan åtkomstsäkerhet</span><span class="sxs-lookup"><span data-stu-id="b14ad-114">Enable access list security</span></span>
+1. <span data-ttu-id="b14ad-115">Gå till Kostnadsredovisning > Dimensioner > Dimensionshierarkier.</span><span class="sxs-lookup"><span data-stu-id="b14ad-115">Go to Cost accounting > Dimensions > Dimension hierarchies.</span></span>
+2. <span data-ttu-id="b14ad-116">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="b14ad-116">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="b14ad-117">Välj Organisation.</span><span class="sxs-lookup"><span data-stu-id="b14ad-117">Select Organization.</span></span>  
+3. <span data-ttu-id="b14ad-118">Klicka på Redigera.</span><span class="sxs-lookup"><span data-stu-id="b14ad-118">Click Edit.</span></span>
+4. <span data-ttu-id="b14ad-119">Välj Ja i fältet Hierarki för åtkomstlista.</span><span class="sxs-lookup"><span data-stu-id="b14ad-119">Select Yes in the Access list hierarchy field.</span></span>
+5. <span data-ttu-id="b14ad-120">Klicka p Visa hierarki</span><span class="sxs-lookup"><span data-stu-id="b14ad-120">Click View hierarchy.</span></span>
 
-## <a name="assign-access-rights-to-user"></a>Tilldela åtkomsträttigheter till användare
-1. Klicka på Ny.
-2. Markera vald rad i listan.
-3. Ange eller välj ett värde i fältet Användar-ID.
-    * Välj Administratör.  
-4. Välj Organization\CEO\CFO\FIM i trädet.
-5. Klicka på Ny.
-6. Markera vald rad i listan.
-7. Ange eller välj ett värde i fältet Användar-ID.
-    * Välj Alicia.  
-8. Klicka på Spara.
+## <a name="assign-access-rights-to-user"></a><span data-ttu-id="b14ad-121">Tilldela åtkomsträttigheter till användare</span><span class="sxs-lookup"><span data-stu-id="b14ad-121">Assign access rights to user</span></span>
+1. <span data-ttu-id="b14ad-122">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="b14ad-122">Click New.</span></span>
+2. <span data-ttu-id="b14ad-123">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="b14ad-123">In the list, mark the selected row.</span></span>
+3. <span data-ttu-id="b14ad-124">Ange eller välj ett värde i fältet Användar-ID.</span><span class="sxs-lookup"><span data-stu-id="b14ad-124">In the User ID field, enter or select a value.</span></span>
+    * <span data-ttu-id="b14ad-125">Välj Administratör.</span><span class="sxs-lookup"><span data-stu-id="b14ad-125">Select Admin.</span></span>  
+4. <span data-ttu-id="b14ad-126">Välj Organization\CEO\CFO\FIM i trädet.</span><span class="sxs-lookup"><span data-stu-id="b14ad-126">In the tree, select 'Organization\CEO\CFO\FIM'.</span></span>
+5. <span data-ttu-id="b14ad-127">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="b14ad-127">Click New.</span></span>
+6. <span data-ttu-id="b14ad-128">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="b14ad-128">In the list, mark the selected row.</span></span>
+7. <span data-ttu-id="b14ad-129">Ange eller välj ett värde i fältet Användar-ID.</span><span class="sxs-lookup"><span data-stu-id="b14ad-129">In the User ID field, enter or select a value.</span></span>
+    * <span data-ttu-id="b14ad-130">Välj Alicia.</span><span class="sxs-lookup"><span data-stu-id="b14ad-130">Select Alicia.</span></span>  
+8. <span data-ttu-id="b14ad-131">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="b14ad-131">Click Save.</span></span>
 
-## <a name="enable-access-rights-in-cost-accounting"></a>Aktivera åtkomsträttigheter i Kostnadsredovisning
-1. Gå till Kostnadsredovisning > Inställningar > Parametrar.
-2. Klicka på fliken Allmänt.
-3. Välj Ja i fältet Aktivera visningsåtkomst för kostnadsobjektets dimensionsmedlemmar.
-4. Klicka på Spara.
-5. Stäng sidan.
-6. Gå till Kostnadsredovisning > Inställningar > Konfiguration av arbetsytan för kostnadsstyrning.
-7. Klicka på Redigera.
-8. Välj Ja i fältet Publicerad.
-    * Om du väljer Ja kan en användare med någon av följande fyra roller se rapporter i arbetsytan Kostnadskontroll: kostnadsredovisningschef, kostnadsrevisor, ansvarig kostnadsredovisare och kostnadsobjektcontroller. Om du väljer Nej kan bara en användare med någon av följande fyra roller se rapporter: kostnadsredovisningschef, kostnadsrevisor och kostnadsredovisare.    
-9. Klicka på Spara.
+## <a name="enable-access-rights-in-cost-accounting"></a><span data-ttu-id="b14ad-132">Aktivera åtkomsträttigheter i Kostnadsredovisning</span><span class="sxs-lookup"><span data-stu-id="b14ad-132">Enable access rights in Cost accounting</span></span>
+1. <span data-ttu-id="b14ad-133">Gå till Kostnadsredovisning > Inställningar > Parametrar.</span><span class="sxs-lookup"><span data-stu-id="b14ad-133">Go to Cost accounting > Setup > Parameters.</span></span>
+2. <span data-ttu-id="b14ad-134">Klicka på fliken Allmänt.</span><span class="sxs-lookup"><span data-stu-id="b14ad-134">Click the General tab.</span></span>
+3. <span data-ttu-id="b14ad-135">Välj Ja i fältet Aktivera visningsåtkomst för kostnadsobjektets dimensionsmedlemmar.</span><span class="sxs-lookup"><span data-stu-id="b14ad-135">Select Yes in the Enable view access for cost object dimension members field.</span></span>
+4. <span data-ttu-id="b14ad-136">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="b14ad-136">Click Save.</span></span>
+5. <span data-ttu-id="b14ad-137">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="b14ad-137">Close the page.</span></span>
+6. <span data-ttu-id="b14ad-138">Gå till Kostnadsredovisning > Inställningar > Konfiguration av arbetsytan för kostnadsstyrning.</span><span class="sxs-lookup"><span data-stu-id="b14ad-138">Go to Cost accounting > Setup > Cost control workspace configuration.</span></span>
+7. <span data-ttu-id="b14ad-139">Klicka på Redigera.</span><span class="sxs-lookup"><span data-stu-id="b14ad-139">Click Edit.</span></span>
+8. <span data-ttu-id="b14ad-140">Välj Ja i fältet Publicerad.</span><span class="sxs-lookup"><span data-stu-id="b14ad-140">Select Yes in the Published field.</span></span>
+    * <span data-ttu-id="b14ad-141">Om du väljer Ja kan en användare med någon av följande fyra roller se rapporter i arbetsytan Kostnadskontroll: kostnadsredovisningschef, kostnadsrevisor, ansvarig kostnadsredovisare och kostnadsobjektcontroller.</span><span class="sxs-lookup"><span data-stu-id="b14ad-141">If you select Yes, a user who is assigned one of the following four roles can see the reports in the Cost control workspace: cost accounting manager, cost accountant, cost accountant clerk, and cost object controller.</span></span> <span data-ttu-id="b14ad-142">Om du väljer Nej kan bara en användare med någon av följande fyra roller se rapporter: kostnadsredovisningschef, kostnadsrevisor och kostnadsredovisare.</span><span class="sxs-lookup"><span data-stu-id="b14ad-142">If you select No, only a user who is assigned one of the following roles can see the reports: cost accounting manager, cost accountant, and cost accountant clerk.</span></span>    
+9. <span data-ttu-id="b14ad-143">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="b14ad-143">Click Save.</span></span>
 
 

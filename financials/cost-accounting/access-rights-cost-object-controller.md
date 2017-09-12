@@ -17,7 +17,7 @@ ms.assetid:
 ms.search.region: global
 ms.search.industry: Manufacturing
 ms.author: YuyuScheller
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
 ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
@@ -27,84 +27,84 @@ ms.lasthandoff: 07/27/2017
 
 ---
 
-## <a name="access-rights-of-a-cost-object-controller"></a>Åtkomsträttigheter för en kostnadsobjektcontroller
+## <a name="access-rights-of-a-cost-object-controller"></a><span data-ttu-id="38997-103">Åtkomsträttigheter för en kostnadsobjektcontroller</span><span class="sxs-lookup"><span data-stu-id="38997-103">Access rights of a cost object controller</span></span>
 
 [!include[banner](../includes/banner.md)]
 
-Arbetsytan **Kostnadskontroll** är en central plats där chefer kan visa prestanda för deras kostnadsobjekt. Den här arbetsytan låter chefer använda kostnadsredovisningsdata även om de inte är kostnadsrevisorer. Av säkerhetsskäl ska chefer endast tillåtas se kostnadsredovisningsdata som hör till ett visst kostnadsobjekt som de ansvarar för.
+<span data-ttu-id="38997-104">Arbetsytan **Kostnadskontroll** är en central plats där chefer kan visa prestanda för deras kostnadsobjekt.</span><span class="sxs-lookup"><span data-stu-id="38997-104">The **Cost control** workspace is a central point where managers can view the performance of their cost objects.</span></span> <span data-ttu-id="38997-105">Den här arbetsytan låter chefer använda kostnadsredovisningsdata även om de inte är kostnadsrevisorer.</span><span class="sxs-lookup"><span data-stu-id="38997-105">This workspace lets managers consume Cost accounting data even though they aren't cost accountants.</span></span> <span data-ttu-id="38997-106">Av säkerhetsskäl ska chefer endast tillåtas se kostnadsredovisningsdata som hör till ett visst kostnadsobjekt som de ansvarar för.</span><span class="sxs-lookup"><span data-stu-id="38997-106">For security reasons, managers should be allowed to see only the Cost accounting data that is related to the specific cost objects that they are responsible for.</span></span>
 
-Det finns fyra unika roller i kostnadsredovisning.
+<span data-ttu-id="38997-107">Det finns fyra unika roller i kostnadsredovisning.</span><span class="sxs-lookup"><span data-stu-id="38997-107">There are four unique roles in Cost accounting.</span></span>
 
-| Rollnamn               | Licens      |
+| <span data-ttu-id="38997-108">Rollnamn</span><span class="sxs-lookup"><span data-stu-id="38997-108">Role name</span></span>               | <span data-ttu-id="38997-109">Licens</span><span class="sxs-lookup"><span data-stu-id="38997-109">License</span></span>      |
 |-------------------------|--------------|
-| Kostnadsredovisningschef | Aktivitet     |
-| Kostnadsredovisare         | Operations   |
-| Ansvarig kostnadsredovisare   | Operations   |
-| Kostnadsobjektcontroller  | Teammedlemmar |
+| <span data-ttu-id="38997-110">Kostnadsredovisningschef</span><span class="sxs-lookup"><span data-stu-id="38997-110">Cost accounting manager</span></span> | <span data-ttu-id="38997-111">Aktivitet</span><span class="sxs-lookup"><span data-stu-id="38997-111">Activity</span></span>     |
+| <span data-ttu-id="38997-112">Kostnadsredovisare</span><span class="sxs-lookup"><span data-stu-id="38997-112">Cost accountant</span></span>         | <span data-ttu-id="38997-113">Operations</span><span class="sxs-lookup"><span data-stu-id="38997-113">Operations</span></span>   |
+| <span data-ttu-id="38997-114">Ansvarig kostnadsredovisare</span><span class="sxs-lookup"><span data-stu-id="38997-114">Cost accountant clerk</span></span>   | <span data-ttu-id="38997-115">Operations</span><span class="sxs-lookup"><span data-stu-id="38997-115">Operations</span></span>   |
+| <span data-ttu-id="38997-116">Kostnadsobjektcontroller</span><span class="sxs-lookup"><span data-stu-id="38997-116">Cost object controller</span></span>  | <span data-ttu-id="38997-117">Teammedlemmar</span><span class="sxs-lookup"><span data-stu-id="38997-117">Team members</span></span> |
 
-Det här avsnittet beskriver hur du tilldelar rollen **kostnadsobjektcontroller** till en chef.
+<span data-ttu-id="38997-118">Det här avsnittet beskriver hur du tilldelar rollen **kostnadsobjektcontroller** till en chef.</span><span class="sxs-lookup"><span data-stu-id="38997-118">This topic explains how to assign the **Cost object controller** role to a manager.</span></span>
 
-När rollen **kostnadsobjektcontroller** har tilldelats en chef kan denne utföra följande uppgifter:
+<span data-ttu-id="38997-119">När rollen **kostnadsobjektcontroller** har tilldelats en chef kan denne utföra följande uppgifter:</span><span class="sxs-lookup"><span data-stu-id="38997-119">When the **Cost object controller** role is assigned to a manager, the manager can perform the following tasks:</span></span>
 
-- Åtkomst till arbetsytan **kostnadskontroll** (i klienten).
+- <span data-ttu-id="38997-120">Åtkomst till arbetsytan **kostnadskontroll** (i klienten).</span><span class="sxs-lookup"><span data-stu-id="38997-120">Access the **Cost control** workspace (in the client).</span></span>
 
-    - Gå igenom och ha visningsåtkomst till sidorna som stöder detaljgranskningsupplevelsen.
+    - <span data-ttu-id="38997-121">Gå igenom och ha visningsåtkomst till sidorna som stöder detaljgranskningsupplevelsen.</span><span class="sxs-lookup"><span data-stu-id="38997-121">Drill through and have view access to the pages that support the drill-through experience.</span></span>
 
-- Åtkomst till arbetsytan **kostnadskontroll** (i mobilapplikationen).
+- <span data-ttu-id="38997-122">Åtkomst till arbetsytan **kostnadskontroll** (i mobilapplikationen).</span><span class="sxs-lookup"><span data-stu-id="38997-122">Access the **Cost control** workspace (in the mobile application).</span></span>
 
 > [!NOTE]
-> Rollen **kostnadsobjektcontroller** styr inte vilka objekt som användaren kan komma åt och visa data för. Säkerhet på radnivå tillhandahålls via dimensionshierarkier och i Hierarki för åtkomstlista.
+> <span data-ttu-id="38997-123">Rollen **kostnadsobjektcontroller** styr inte vilka objekt som användaren kan komma åt och visa data för.</span><span class="sxs-lookup"><span data-stu-id="38997-123">The **Cost object controller** role doesn't control which cost objects the user can access and view data for.</span></span> <span data-ttu-id="38997-124">Säkerhet på radnivå tillhandahålls via dimensionshierarkier och i Hierarki för åtkomstlista.</span><span class="sxs-lookup"><span data-stu-id="38997-124">Row-level security is provided via dimension hierarchies and the Access list hierarchy.</span></span>
 
-## <a name="grant-access-rights"></a>Bevilja åtkomstbehörighet
-I följande exempel visas hur en dimensionshierarki kan se ut.
+## <a name="grant-access-rights"></a><span data-ttu-id="38997-125">Bevilja åtkomstbehörighet</span><span class="sxs-lookup"><span data-stu-id="38997-125">Grant access rights</span></span>
+<span data-ttu-id="38997-126">I följande exempel visas hur en dimensionshierarki kan se ut.</span><span class="sxs-lookup"><span data-stu-id="38997-126">The following example shows what a dimension hierarchy can look like.</span></span>
 
-**Detaljer om dimensionshierarki**
+<span data-ttu-id="38997-127">**Detaljer om dimensionshierarki**</span><span class="sxs-lookup"><span data-stu-id="38997-127">**Dimension hierarchy details**</span></span>
 
-| Dimensionshierarkins namn | Dimension    | Namn på typ av dimensionshierarki      | Hierarki för åtkomstlista |
+| <span data-ttu-id="38997-128">Dimensionshierarkins namn</span><span class="sxs-lookup"><span data-stu-id="38997-128">Dimension hierarchy name</span></span> | <span data-ttu-id="38997-129">Dimension</span><span class="sxs-lookup"><span data-stu-id="38997-129">Dimension</span></span>    | <span data-ttu-id="38997-130">Namn på typ av dimensionshierarki</span><span class="sxs-lookup"><span data-stu-id="38997-130">Dimension hierarchy type name</span></span>      | <span data-ttu-id="38997-131">Hierarki för åtkomstlista</span><span class="sxs-lookup"><span data-stu-id="38997-131">Access list hierarchy</span></span> |
 |--------------------------|--------------|------------------------------------|-----------------------|
-| Organisation             | Kostnadsställen | Hierarki för dimensionsklassificering | **Ja**               |
+| <span data-ttu-id="38997-132">Organisation</span><span class="sxs-lookup"><span data-stu-id="38997-132">Organization</span></span>             | <span data-ttu-id="38997-133">Kostnadsställen</span><span class="sxs-lookup"><span data-stu-id="38997-133">Cost centers</span></span> | <span data-ttu-id="38997-134">Hierarki för dimensionsklassificering</span><span class="sxs-lookup"><span data-stu-id="38997-134">Dimension classification hierarchy</span></span> | <span data-ttu-id="38997-135">**Ja**</span><span class="sxs-lookup"><span data-stu-id="38997-135">**Yes**</span></span>               |
 
-Du kan använda snabbfliken **användare** i hierarkidesignern för att infoga minst ett användar-ID på varje nod.
+<span data-ttu-id="38997-136">Du kan använda snabbfliken **användare** i hierarkidesignern för att infoga minst ett användar-ID på varje nod.</span><span class="sxs-lookup"><span data-stu-id="38997-136">You can use the **Users** FastTab in the hierarchy designer to insert one or more user IDs on each node.</span></span>
 
-|                                   | Användare            | Dimensionsmedlemsintervall   |                         |
+|                                   | <span data-ttu-id="38997-137">Användare</span><span class="sxs-lookup"><span data-stu-id="38997-137">Users</span></span>            | <span data-ttu-id="38997-138">Dimensionsmedlemsintervall</span><span class="sxs-lookup"><span data-stu-id="38997-138">Dimension member ranges</span></span>   |                         |
 |-----------------------------------|------------------|---------------------------|-------------------------|
-| **Noder**                         | **Användar-ID**      | **Från dimensionsmedlem** | **Till dimensionsmedlem** |
-| Organisation                      | Benjamin Claire |                           |                         |
-| &nbsp;&nbsp;Admin                 | april            |                           |                         |
-| &nbsp;&nbsp;&nbsp;&nbsp;Finansiellt   | Alicia           | CC002                     | CC003                   |
-|                                   |                  | CC007                     | CC007                   |
-| &nbsp;&nbsp;&nbsp;&nbsp;Personal        | Arnie            | CC001                     | CC001                   |
-| &nbsp;&nbsp;Produktion            | David            |                           |                         |
-| &nbsp;&nbsp;&nbsp;&nbsp;Paketering | Ellen            | CC005                     | CC005                   |
-| &nbsp;&nbsp;&nbsp;&nbsp;Sammansättning  | Chris            | CC006                     | CC006                   |
+| <span data-ttu-id="38997-139">**Noder**</span><span class="sxs-lookup"><span data-stu-id="38997-139">**Nodes**</span></span>                         | <span data-ttu-id="38997-140">**Användar-ID**</span><span class="sxs-lookup"><span data-stu-id="38997-140">**User ID**</span></span>      | <span data-ttu-id="38997-141">**Från dimensionsmedlem**</span><span class="sxs-lookup"><span data-stu-id="38997-141">**From dimension member**</span></span> | <span data-ttu-id="38997-142">**Till dimensionsmedlem**</span><span class="sxs-lookup"><span data-stu-id="38997-142">**To dimension member**</span></span> |
+| <span data-ttu-id="38997-143">Organisation</span><span class="sxs-lookup"><span data-stu-id="38997-143">Organization</span></span>                      | <span data-ttu-id="38997-144">Benjamin Claire</span><span class="sxs-lookup"><span data-stu-id="38997-144">Benjamin, Claire</span></span> |                           |                         |
+| <span data-ttu-id="38997-145">&nbsp;&nbsp;Admin</span><span class="sxs-lookup"><span data-stu-id="38997-145">&nbsp;&nbsp;Admin</span></span>                 | <span data-ttu-id="38997-146">april</span><span class="sxs-lookup"><span data-stu-id="38997-146">April</span></span>            |                           |                         |
+| <span data-ttu-id="38997-147">&nbsp;&nbsp;&nbsp;&nbsp;Finansiellt</span><span class="sxs-lookup"><span data-stu-id="38997-147">&nbsp;&nbsp;&nbsp;&nbsp;Finance</span></span>   | <span data-ttu-id="38997-148">Alicia</span><span class="sxs-lookup"><span data-stu-id="38997-148">Alicia</span></span>           | <span data-ttu-id="38997-149">CC002</span><span class="sxs-lookup"><span data-stu-id="38997-149">CC002</span></span>                     | <span data-ttu-id="38997-150">CC003</span><span class="sxs-lookup"><span data-stu-id="38997-150">CC003</span></span>                   |
+|                                   |                  | <span data-ttu-id="38997-151">CC007</span><span class="sxs-lookup"><span data-stu-id="38997-151">CC007</span></span>                     | <span data-ttu-id="38997-152">CC007</span><span class="sxs-lookup"><span data-stu-id="38997-152">CC007</span></span>                   |
+| <span data-ttu-id="38997-153">&nbsp;&nbsp;&nbsp;&nbsp;Personal</span><span class="sxs-lookup"><span data-stu-id="38997-153">&nbsp;&nbsp;&nbsp;&nbsp;HR</span></span>        | <span data-ttu-id="38997-154">Arnie</span><span class="sxs-lookup"><span data-stu-id="38997-154">Arnie</span></span>            | <span data-ttu-id="38997-155">CC001</span><span class="sxs-lookup"><span data-stu-id="38997-155">CC001</span></span>                     | <span data-ttu-id="38997-156">CC001</span><span class="sxs-lookup"><span data-stu-id="38997-156">CC001</span></span>                   |
+| <span data-ttu-id="38997-157">&nbsp;&nbsp;Produktion</span><span class="sxs-lookup"><span data-stu-id="38997-157">&nbsp;&nbsp;Production</span></span>            | <span data-ttu-id="38997-158">David</span><span class="sxs-lookup"><span data-stu-id="38997-158">David</span></span>            |                           |                         |
+| <span data-ttu-id="38997-159">&nbsp;&nbsp;&nbsp;&nbsp;Paketering</span><span class="sxs-lookup"><span data-stu-id="38997-159">&nbsp;&nbsp;&nbsp;&nbsp;Packaging</span></span> | <span data-ttu-id="38997-160">Ellen</span><span class="sxs-lookup"><span data-stu-id="38997-160">Ellen</span></span>            | <span data-ttu-id="38997-161">CC005</span><span class="sxs-lookup"><span data-stu-id="38997-161">CC005</span></span>                     | <span data-ttu-id="38997-162">CC005</span><span class="sxs-lookup"><span data-stu-id="38997-162">CC005</span></span>                   |
+| <span data-ttu-id="38997-163">&nbsp;&nbsp;&nbsp;&nbsp;Sammansättning</span><span class="sxs-lookup"><span data-stu-id="38997-163">&nbsp;&nbsp;&nbsp;&nbsp;Assembly</span></span>  | <span data-ttu-id="38997-164">Chris</span><span class="sxs-lookup"><span data-stu-id="38997-164">Chris</span></span>            | <span data-ttu-id="38997-165">CC006</span><span class="sxs-lookup"><span data-stu-id="38997-165">CC006</span></span>                     | <span data-ttu-id="38997-166">CC006</span><span class="sxs-lookup"><span data-stu-id="38997-166">CC006</span></span>                   |
 
 > [!NOTE]
-> Kostnadsrevisorerna ska tilldelas till den översta nivån i hierarkin, så att de kan se alla poster i kostnadsredovisningen.
+> <span data-ttu-id="38997-167">Kostnadsrevisorerna ska tilldelas till den översta nivån i hierarkin, så att de kan se alla poster i kostnadsredovisningen.</span><span class="sxs-lookup"><span data-stu-id="38997-167">Cost accountants should be assigned to the top level of the hierarchy, so that they can see all entries in Cost accounting.</span></span>
 
-Innan Hierarki för åtkomstlista kan användas måste alternativet **Aktivera visningsåtkomst för kostnadsobjektets dimensionsmedlemmar** anges till **Ja** på fliken **Allmänt** på fliken **kostnadsredovisningsparametrar** på sidan (**kostnadsredovisning** > **inställningar** > **parametrar**).
+<span data-ttu-id="38997-168">Innan Hierarki för åtkomstlista kan användas måste alternativet **Aktivera visningsåtkomst för kostnadsobjektets dimensionsmedlemmar** anges till **Ja** på fliken **Allmänt** på fliken **kostnadsredovisningsparametrar** på sidan (**kostnadsredovisning** > **inställningar** > **parametrar**).</span><span class="sxs-lookup"><span data-stu-id="38997-168">Before the Access list hierarchy and its security settings can be applied, the **Enable view access for cost object dimension members** option must be set to **Yes** on the **General** tab of the **Cost accounting parameters** page (**Cost accounting** > **Setup** > **Parameters**).</span></span>
 
-Inställningar för Hierarki för åtkomstlista används för att bestämma vilka data som visas i följande områden:
+<span data-ttu-id="38997-169">Inställningar för Hierarki för åtkomstlista används för att bestämma vilka data som visas i följande områden:</span><span class="sxs-lookup"><span data-stu-id="38997-169">The settings for the Access list hierarchy are used to control the data that is shown in following areas:</span></span>
 
-- Arbetsytan **kostnadskontroll** (i klienten):
+- <span data-ttu-id="38997-170">Arbetsytan **kostnadskontroll** (i klienten):</span><span class="sxs-lookup"><span data-stu-id="38997-170">**Cost control** workspace (in the client):</span></span>
 
-    - Data på de sidor som används för detaljgranskning
+    - <span data-ttu-id="38997-171">Data på de sidor som används för detaljgranskning</span><span class="sxs-lookup"><span data-stu-id="38997-171">Data on the pages that are used for drill-through</span></span>
 
-- Arbetsytan **kostnadskontroll** (i mobilapplikationen):
+- <span data-ttu-id="38997-172">Arbetsytan **kostnadskontroll** (i mobilapplikationen):</span><span class="sxs-lookup"><span data-stu-id="38997-172">**Cost control** workspace (in the mobile application):</span></span>
 
-    - Saldon i kort
+    - <span data-ttu-id="38997-173">Saldon i kort</span><span class="sxs-lookup"><span data-stu-id="38997-173">Balances in cards</span></span>
 
-- Microsoft Power BI
+- <span data-ttu-id="38997-174">Microsoft Power BI</span><span class="sxs-lookup"><span data-stu-id="38997-174">Microsoft Power BI:</span></span>
 
-    - Data som visas i Power BI-visualiseringar
-    - Data Power BI-visualiseringar som bäddas in i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, klient
+    - <span data-ttu-id="38997-175">Data som visas i Power BI-visualiseringar</span><span class="sxs-lookup"><span data-stu-id="38997-175">Data that is shown in Power BI visualizations</span></span>
+    - <span data-ttu-id="38997-176">Data Power BI-visualiseringar som bäddas in i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, klient</span><span class="sxs-lookup"><span data-stu-id="38997-176">Data Power BI visualizations that are embedded in the Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, client</span></span>
 
 > [!IMPORTANT]
-> - Innan Hierarki för åtkomstlista kan påverka data i Power BI, måste hierarkiåtkomst och säkerhet på radnivå i Power BI anges. Mer information finns i [ställa in säkerhet för kostnadsredovisningens innehållspaket](/dynamics365/unified-operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack).
-> - Det här avsnittet visar kraven som måste vara på plats innan du kan använda arbetsytan **kostnadskontroll**.
+> - <span data-ttu-id="38997-177">Innan Hierarki för åtkomstlista kan påverka data i Power BI, måste hierarkiåtkomst och säkerhet på radnivå i Power BI anges.</span><span class="sxs-lookup"><span data-stu-id="38997-177">Before the Access list hierarchy can affect data in Power BI, the Access list hierarchy and row-level security in Power BI must be paired.</span></span> <span data-ttu-id="38997-178">Mer information finns i [ställa in säkerhet för kostnadsredovisningens innehållspaket](/dynamics365/unified-operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack).</span><span class="sxs-lookup"><span data-stu-id="38997-178">For more information, see [Set up security for Cost accounting content pack](/dynamics365/unified-operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack).</span></span>
+> - <span data-ttu-id="38997-179">Det här avsnittet visar kraven som måste vara på plats innan du kan använda arbetsytan **kostnadskontroll**.</span><span class="sxs-lookup"><span data-stu-id="38997-179">This topic shows the prerequisites that must be in place before you can use the **Cost control** workspace.</span></span>
 
-Se även
+<span data-ttu-id="38997-180">Se även</span><span class="sxs-lookup"><span data-stu-id="38997-180">See also</span></span>
 
-- [Arbetsyta för kostnadskontroll](cost-control-workspace.md)
-- [Dimensionshierarki](dimension-hierarchy.md)
-- [Ställa in säkerhet för kostnadsredovisningsinnehållspaket](/dynamics365/unified-operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack)
+- [<span data-ttu-id="38997-181">Arbetsyta för kostnadskontroll</span><span class="sxs-lookup"><span data-stu-id="38997-181">Cost control workspace</span></span>](cost-control-workspace.md)
+- [<span data-ttu-id="38997-182">Dimensionshierarki</span><span class="sxs-lookup"><span data-stu-id="38997-182">Dimension hierarchy</span></span>](dimension-hierarchy.md)
+- [<span data-ttu-id="38997-183">Ställa in säkerhet för kostnadsredovisningsinnehållspaket</span><span class="sxs-lookup"><span data-stu-id="38997-183">Set up security for Cost accounting content pack</span></span>](/dynamics365/unified-operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack)
 

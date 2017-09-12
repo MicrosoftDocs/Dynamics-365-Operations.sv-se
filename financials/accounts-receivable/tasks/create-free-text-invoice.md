@@ -16,52 +16,52 @@ ms.author: mfalkner
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: a9f9a780868926009f30cee6aa634c53ca870b3f
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 33324a9b95026600bcc6facb9c22a04fd2e323c8
 ms.contentlocale: sv-se
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-a-free-text-invoice"></a>Skapa en fritextfaktura
+# <a name="create-a-free-text-invoice"></a><span data-ttu-id="26a92-103">Skapa en fritextfaktura</span><span class="sxs-lookup"><span data-stu-id="26a92-103">Create a free text invoice</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Den här uppgifthandboken visar hur du skapar en fritextfaktura. I den här uppgiften används demonstrationsföretaget USMF.
+<span data-ttu-id="26a92-104">Den här uppgifthandboken visar hur du skapar en fritextfaktura.</span><span class="sxs-lookup"><span data-stu-id="26a92-104">This task guide demonstrates creating a free text invoice.</span></span> <span data-ttu-id="26a92-105">I den här uppgiften används demonstrationsföretaget USMF.</span><span class="sxs-lookup"><span data-stu-id="26a92-105">This task uses the USMF demo company.</span></span>
 
-1. Gå till Kundreskontra > Fakturor > Alla fritextfakturor.
-2. Klicka på Ny.
-3. Välj ett värde i fältet Kundkonto.
-    * Fakturakontot blir som standard samma konto som används för kundkontot.   
-    * Redovisningsstatusen börjar med Pågår om fakturan inte har bokförts.   
-    * Fakturanumret tilldelas när fakturan bokförs.  
-    * Om du använder SEPA-fullmakter, fylls autogiromedgivandet i automatiskt med en fullmakt när du väljer kundkontot.  
-4. Ange ett värde i fältet Beskrivning.
-5. Ange ett kontonummer utan dimensioner i huvudkontofältet.
-    * Du kan även ange ett eller flera tecken för huvudkontot och använda sökning för att hitta kontot. Du anger dimensioner senare i den här handboken.  
-6. Expandera snabbfliken Radinformation så att du kan lägga till dimensioner i huvudkontot.
-7. Klicka på fliken Rad för ekonomisk dimension.
-    * Dimensionerna avser endast den valda raden.    
-    * Momsgruppen fylls i från kunden. Om kunden inte har en momsgrupp, används momsgruppen från huvudkontot.  
-    * Artikelmomsgruppen fylls i från huvudkontot. Om huvudkontot inte har en artikelmomsgrupp, används artikelmomsgruppen i redovisningens momsparametrar.    
-8. Ange ett tal i fältet Kvantitet.
-    * Kvantiteten är valfri.  
-9. Ange ett tal i fältet Enhetspris.
-    * Enhetspriset är valfritt.  
-    * Beloppet beräknas som kvantitet gånger enhetspriset. Du kan dock åsidosätta den beräkningen och ange ett belopp.  
-10. Om du vill visa moms som beräknats för din faktura klickar du på Moms.
-    * Visa momsbeloppen på den här sidan, eller så kan du åsidosätta beloppen på fliken Justering.  
-11. Klicka på OK.
-12. Klicka på Avgifter om du vill lägga till en avgift i din faktura. 
-13. I fältet Kod för avgifter, skriv ett värde.
-14. I fältet Avgiftsvärde, ange ett värde.
-15. Stäng sidan.
-16. Klicka på Summor för att visa sammanfattande fakturadetaljer och summor.
-17. Klicka på Stäng.
-18. Klicka på Bokför när du vill bokföra fakturan. Du kan avbryta innan du bokför.
-    * Om du vill ändra timing på din fakturautskrift: Välj Aktuell om du vill skriva ut fakturor när de uppdateras eller välj Efter om du vill skriva ut när alla fakturor har uppdaterats.  
-    * Om du vill ändra hur kundens kreditgräns kontrolleras innan bokföring, ändra kreditgränstypen.  
-    * Välj Ja om du vill skriva ut fakturan.  
-    * Välj Ja om du vill bokföra fakturan. Du kan skriva ut fakturan utan bokföring.  
-19. Klicka på OK.
+1. <span data-ttu-id="26a92-106">Gå till Kundreskontra > Fakturor > Alla fritextfakturor.</span><span class="sxs-lookup"><span data-stu-id="26a92-106">Go to Accounts receivable > Invoices > All free text invoices.</span></span>
+2. <span data-ttu-id="26a92-107">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="26a92-107">Click New.</span></span>
+3. <span data-ttu-id="26a92-108">Välj ett värde i fältet Kundkonto.</span><span class="sxs-lookup"><span data-stu-id="26a92-108">In the Customer account field, select a value.</span></span>
+    * <span data-ttu-id="26a92-109">Fakturakontot blir som standard samma konto som används för kundkontot.</span><span class="sxs-lookup"><span data-stu-id="26a92-109">The invoice account will default to the same account used for the customer account.</span></span>   
+    * <span data-ttu-id="26a92-110">Redovisningsstatusen börjar med Pågår om fakturan inte har bokförts.</span><span class="sxs-lookup"><span data-stu-id="26a92-110">The accounting status starts with In process if the invoice is not posted.</span></span>   
+    * <span data-ttu-id="26a92-111">Fakturanumret tilldelas när fakturan bokförs.</span><span class="sxs-lookup"><span data-stu-id="26a92-111">The invoice number will be assigned when the invoice is posted.</span></span>  
+    * <span data-ttu-id="26a92-112">Om du använder SEPA-fullmakter, fylls autogiromedgivandet i automatiskt med en fullmakt när du väljer kundkontot.</span><span class="sxs-lookup"><span data-stu-id="26a92-112">If you are using SEPA mandates, the direct debit mandate will be automatically populated with a mandate when you select the customer account.</span></span>  
+4. <span data-ttu-id="26a92-113">Ange ett värde i fältet Beskrivning.</span><span class="sxs-lookup"><span data-stu-id="26a92-113">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="26a92-114">Ange ett kontonummer utan dimensioner i huvudkontofältet.</span><span class="sxs-lookup"><span data-stu-id="26a92-114">In the Main account field, specify an account number without dimensions.</span></span>
+    * <span data-ttu-id="26a92-115">Du kan även ange ett eller flera tecken för huvudkontot och använda sökning för att hitta kontot.</span><span class="sxs-lookup"><span data-stu-id="26a92-115">You can also enter one or more characters for the main account and use the lookup to find your account.</span></span> <span data-ttu-id="26a92-116">Du anger dimensioner senare i den här handboken.</span><span class="sxs-lookup"><span data-stu-id="26a92-116">You will enter dimensions later on in this guide.</span></span>  
+6. <span data-ttu-id="26a92-117">Expandera snabbfliken Radinformation så att du kan lägga till dimensioner i huvudkontot.</span><span class="sxs-lookup"><span data-stu-id="26a92-117">Expand the Line details fasttab so you can add dimensions to your main account.</span></span>
+7. <span data-ttu-id="26a92-118">Klicka på fliken Rad för ekonomisk dimension.</span><span class="sxs-lookup"><span data-stu-id="26a92-118">Click the Financial dimensions line tab.</span></span>
+    * <span data-ttu-id="26a92-119">Dimensionerna avser endast den valda raden.</span><span class="sxs-lookup"><span data-stu-id="26a92-119">The dimensions are for the selected line only.</span></span>    
+    * <span data-ttu-id="26a92-120">Momsgruppen fylls i från kunden.</span><span class="sxs-lookup"><span data-stu-id="26a92-120">The sales tax group is populated from the customer.</span></span> <span data-ttu-id="26a92-121">Om kunden inte har en momsgrupp, används momsgruppen från huvudkontot.</span><span class="sxs-lookup"><span data-stu-id="26a92-121">If the customer does not have a sales tax group, the sales tax group from the main account is used.</span></span>  
+    * <span data-ttu-id="26a92-122">Artikelmomsgruppen fylls i från huvudkontot.</span><span class="sxs-lookup"><span data-stu-id="26a92-122">The items sales tax group is populated from the main account.</span></span> <span data-ttu-id="26a92-123">Om huvudkontot inte har en artikelmomsgrupp, används artikelmomsgruppen i redovisningens momsparametrar.</span><span class="sxs-lookup"><span data-stu-id="26a92-123">If the main account does not have a item sales tax group, then the item sales tax group in the General ledger sales tax parameters is used.</span></span>    
+8. <span data-ttu-id="26a92-124">Ange ett tal i fältet Kvantitet.</span><span class="sxs-lookup"><span data-stu-id="26a92-124">In the Quantity field, enter a number.</span></span>
+    * <span data-ttu-id="26a92-125">Kvantiteten är valfri.</span><span class="sxs-lookup"><span data-stu-id="26a92-125">The quantity is optional.</span></span>  
+9. <span data-ttu-id="26a92-126">Ange ett tal i fältet Enhetspris.</span><span class="sxs-lookup"><span data-stu-id="26a92-126">In the Unit price field, enter a number.</span></span>
+    * <span data-ttu-id="26a92-127">Enhetspriset är valfritt.</span><span class="sxs-lookup"><span data-stu-id="26a92-127">The unit price is optional.</span></span>  
+    * <span data-ttu-id="26a92-128">Beloppet beräknas som kvantitet gånger enhetspriset.</span><span class="sxs-lookup"><span data-stu-id="26a92-128">The amount is calculated as the quantity times the unit price.</span></span> <span data-ttu-id="26a92-129">Du kan dock åsidosätta den beräkningen och ange ett belopp.</span><span class="sxs-lookup"><span data-stu-id="26a92-129">However, you can override that calculation and enter an amount.</span></span>  
+10. <span data-ttu-id="26a92-130">Om du vill visa moms som beräknats för din faktura klickar du på Moms.</span><span class="sxs-lookup"><span data-stu-id="26a92-130">Click on Sales tax to view the sales tax calculated for your invoice.</span></span>
+    * <span data-ttu-id="26a92-131">Visa momsbeloppen på den här sidan, eller så kan du åsidosätta beloppen på fliken Justering.</span><span class="sxs-lookup"><span data-stu-id="26a92-131">View the sales tax amounts in this page or you can override the amounts on the Adjustment tab.</span></span>  
+11. <span data-ttu-id="26a92-132">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="26a92-132">Click OK.</span></span>
+12. <span data-ttu-id="26a92-133">Klicka på Avgifter om du vill lägga till en avgift i din faktura.</span><span class="sxs-lookup"><span data-stu-id="26a92-133">Click Charges to add a charge to your invoice.</span></span> 
+13. <span data-ttu-id="26a92-134">I fältet Kod för avgifter, skriv ett värde.</span><span class="sxs-lookup"><span data-stu-id="26a92-134">In the Charges code field, type a value.</span></span>
+14. <span data-ttu-id="26a92-135">I fältet Avgiftsvärde, ange ett värde.</span><span class="sxs-lookup"><span data-stu-id="26a92-135">In the Charges value field, enter a number.</span></span>
+15. <span data-ttu-id="26a92-136">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="26a92-136">Close the page.</span></span>
+16. <span data-ttu-id="26a92-137">Klicka på Summor för att visa sammanfattande fakturadetaljer och summor.</span><span class="sxs-lookup"><span data-stu-id="26a92-137">Click Totals to view the summary invoice details and totals.</span></span>
+17. <span data-ttu-id="26a92-138">Klicka på Stäng.</span><span class="sxs-lookup"><span data-stu-id="26a92-138">Click Close.</span></span>
+18. <span data-ttu-id="26a92-139">Klicka på Bokför när du vill bokföra fakturan.</span><span class="sxs-lookup"><span data-stu-id="26a92-139">Click Post to post the invoice.</span></span> <span data-ttu-id="26a92-140">Du kan avbryta innan du bokför.</span><span class="sxs-lookup"><span data-stu-id="26a92-140">You will be able to cancel before you post.</span></span>
+    * <span data-ttu-id="26a92-141">Om du vill ändra timing på din fakturautskrift: Välj Aktuell om du vill skriva ut fakturor när de uppdateras eller välj Efter om du vill skriva ut när alla fakturor har uppdaterats.</span><span class="sxs-lookup"><span data-stu-id="26a92-141">To change the timing of your invoice printing:  Select Current to print each invoice as it is updated   or  Select After to print after all invoices have been updated.</span></span>  
+    * <span data-ttu-id="26a92-142">Om du vill ändra hur kundens kreditgräns kontrolleras innan bokföring, ändra kreditgränstypen.</span><span class="sxs-lookup"><span data-stu-id="26a92-142">If you want to change how the customer's credit limit is checked before posting, change the Credit limit type.</span></span>  
+    * <span data-ttu-id="26a92-143">Välj Ja om du vill skriva ut fakturan.</span><span class="sxs-lookup"><span data-stu-id="26a92-143">If you want to print the invoice, select Yes.</span></span>  
+    * <span data-ttu-id="26a92-144">Välj Ja om du vill bokföra fakturan.</span><span class="sxs-lookup"><span data-stu-id="26a92-144">If you want to post the invoice, select Yes.</span></span> <span data-ttu-id="26a92-145">Du kan skriva ut fakturan utan bokföring.</span><span class="sxs-lookup"><span data-stu-id="26a92-145">You can print the invoice without posting.</span></span>  
+19. <span data-ttu-id="26a92-146">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="26a92-146">Click OK.</span></span>
 
 

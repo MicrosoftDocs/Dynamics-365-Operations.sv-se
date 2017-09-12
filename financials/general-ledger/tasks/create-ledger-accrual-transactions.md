@@ -16,36 +16,36 @@ ms.author: aolson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 5a8d9fb805838be67424926ca0cd56577ae43cba
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 368614ff447ae9f5cb6e74274558b92a0873ec7a
 ms.contentlocale: sv-se
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-ledger-accrual-transactions"></a>Skapa periodiseringtransaktioner i redovisningen
+# <a name="create-ledger-accrual-transactions"></a><span data-ttu-id="3acab-103">Skapa periodiseringtransaktioner i redovisningen</span><span class="sxs-lookup"><span data-stu-id="3acab-103">Create ledger accrual transactions</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Stegen i den här guiden beskriver hur du genererar periodiseringstransaktioner för redovisning som baseras på periodiseringsscheman
+<span data-ttu-id="3acab-104">Stegen i den här guiden beskriver hur du genererar periodiseringstransaktioner för redovisning som baseras på periodiseringsscheman</span><span class="sxs-lookup"><span data-stu-id="3acab-104">This task guide steps through generating ledger accrual transactions that are based on accrual schemes</span></span>
 
-1. Gå till Redovisning > Journalposter > Allmänna journaler.
-2. I listan letar du upp och väljer önskad journal eller skapar en ny.
-3. Klicka för att följa länken i fältet Journalbatchnummer.
-4. Markera vald rad i listan.
-5. Ange önskade värden i fältet Konto.
-    * I det här exemplet definierar vi utgifterna för försäkringen. Det blir ett periodiskt utgiftbelopp.  
-6. Ange ett värde i fältet Beskrivning.
-7. Ange ett tal i fältet Debet.
-8. Ange önskade värden i fältet Motkonto.
-9. Klicka på Funktioner.
-10. Klicka på Periodiseringar.
-11. I fältet Identifiering av periodisering öppnar du sökningen genom att klicka på den nedrullningsbara knappen.
-12. I listan letar du upp och väljer det periodiseringsschema som du vill använda.
-13. Klicka på länken på den valda raden i listan.
-14. Ange ett datum i fältet Startdatum.
-15. Klicka på Transaktioner.
-16. Stäng sidan.
-17. Klicka på OK.
-18. Klicka på Bokför.
+1. <span data-ttu-id="3acab-105">Gå till Redovisning > Journalposter > Allmänna journaler.</span><span class="sxs-lookup"><span data-stu-id="3acab-105">Go to General ledger > Journal entries > General journals.</span></span>
+2. <span data-ttu-id="3acab-106">I listan letar du upp och väljer önskad journal eller skapar en ny.</span><span class="sxs-lookup"><span data-stu-id="3acab-106">In the list, find and select the desired journal or create a new one.</span></span>
+3. <span data-ttu-id="3acab-107">Klicka för att följa länken i fältet Journalbatchnummer.</span><span class="sxs-lookup"><span data-stu-id="3acab-107">Click to follow the link in the Journal batch number field.</span></span>
+4. <span data-ttu-id="3acab-108">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="3acab-108">In the list, mark the selected row.</span></span>
+5. <span data-ttu-id="3acab-109">Ange önskade värden i fältet Konto.</span><span class="sxs-lookup"><span data-stu-id="3acab-109">In the Account field, specify the desired values.</span></span>
+    * <span data-ttu-id="3acab-110">I det här exemplet definierar vi utgifterna för försäkringen.</span><span class="sxs-lookup"><span data-stu-id="3acab-110">In this example, we are defining the expense for the insurance.</span></span> <span data-ttu-id="3acab-111">Det blir ett periodiskt utgiftbelopp.</span><span class="sxs-lookup"><span data-stu-id="3acab-111">It will be come periodic expense amount.</span></span>  
+6. <span data-ttu-id="3acab-112">Ange ett värde i fältet Beskrivning.</span><span class="sxs-lookup"><span data-stu-id="3acab-112">In the Description field, type a value.</span></span>
+7. <span data-ttu-id="3acab-113">Ange ett tal i fältet Debet.</span><span class="sxs-lookup"><span data-stu-id="3acab-113">In the Debit field, enter a number.</span></span>
+8. <span data-ttu-id="3acab-114">Ange önskade värden i fältet Motkonto.</span><span class="sxs-lookup"><span data-stu-id="3acab-114">In the Offset account field, specify the desired values.</span></span>
+9. <span data-ttu-id="3acab-115">Klicka på Funktioner.</span><span class="sxs-lookup"><span data-stu-id="3acab-115">Click Functions.</span></span>
+10. <span data-ttu-id="3acab-116">Klicka på Periodiseringar.</span><span class="sxs-lookup"><span data-stu-id="3acab-116">Click Ledger accruals.</span></span>
+11. <span data-ttu-id="3acab-117">I fältet Identifiering av periodisering öppnar du sökningen genom att klicka på den nedrullningsbara knappen.</span><span class="sxs-lookup"><span data-stu-id="3acab-117">In the Accrual identification field, click the drop-down button to open the lookup.</span></span>
+12. <span data-ttu-id="3acab-118">I listan letar du upp och väljer det periodiseringsschema som du vill använda.</span><span class="sxs-lookup"><span data-stu-id="3acab-118">In the list, find and select the accural scheme you want to apply.</span></span>
+13. <span data-ttu-id="3acab-119">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="3acab-119">In the list, click the link in the selected row.</span></span>
+14. <span data-ttu-id="3acab-120">Ange ett datum i fältet Startdatum.</span><span class="sxs-lookup"><span data-stu-id="3acab-120">In the Start date field, enter a date.</span></span>
+15. <span data-ttu-id="3acab-121">Klicka på Transaktioner.</span><span class="sxs-lookup"><span data-stu-id="3acab-121">Click Transactions.</span></span>
+16. <span data-ttu-id="3acab-122">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="3acab-122">Close the page.</span></span>
+17. <span data-ttu-id="3acab-123">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="3acab-123">Click OK.</span></span>
+18. <span data-ttu-id="3acab-124">Klicka på Bokför.</span><span class="sxs-lookup"><span data-stu-id="3acab-124">Click Post.</span></span>
 
 

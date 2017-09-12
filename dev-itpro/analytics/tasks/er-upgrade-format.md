@@ -22,181 +22,181 @@ ms.contentlocale: sv-se
 ms.lasthandoff: 07/27/2017
 
 ---
-# <a name="upgrade-your-format-by-adopting-of-new-base-version-of-that-format-for-electronic-reporting-er"></a>Uppgradera ett format genom att anpassa den nya basversionen för det formatet för elektronisk rapportering (ER)
+# <a name="upgrade-your-format-by-adopting-of-new-base-version-of-that-format-for-electronic-reporting-er"></a><span data-ttu-id="be59e-103">Uppgradera ett format genom att anpassa den nya basversionen för det formatet för elektronisk rapportering (ER)</span><span class="sxs-lookup"><span data-stu-id="be59e-103">Upgrade your format by adopting of new base version of that format for electronic reporting (ER)</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-I följande steg förklaras hur en användare i rollen Systemadministratör eller Utvecklare för elektronisk rapportering kan behålla en formatkonfiguration för elektronisk rapportering (ER). I den här proceduren förklaras hur en anpassad version av ett format kan skapas baserat på det format som tas emot från en konfigurationsleverantör (CP). Den förklarar också hur du antar en ny basversion av det formatet.
+<span data-ttu-id="be59e-104">I följande steg förklaras hur en användare i rollen Systemadministratör eller Utvecklare för elektronisk rapportering kan behålla en formatkonfiguration för elektronisk rapportering (ER).</span><span class="sxs-lookup"><span data-stu-id="be59e-104">The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can maintain an Electronic reporting (ER) format configuration.</span></span> <span data-ttu-id="be59e-105">I den här proceduren förklaras hur en anpassad version av ett format kan skapas baserat på det format som tas emot från en konfigurationsleverantör (CP).</span><span class="sxs-lookup"><span data-stu-id="be59e-105">This procedure explains how a custom version of a format can be created based on the format received from a configuration provider (CP).</span></span> <span data-ttu-id="be59e-106">Den förklarar också hur du antar en ny basversion av det formatet.</span><span class="sxs-lookup"><span data-stu-id="be59e-106">It also explains how to adopt a new, base version of that format.</span></span>
 
 
 
-För att slutföra dessa steg måste du först avsluta stegen i procedurerna ”Skapa en konfigurationsleverantör och markera den som aktiv" och "Använd skapade format för att generera elektroniska handlingar för betalningar". Dessa steg kan utföras i GBSI-företaget.
+<span data-ttu-id="be59e-107">För att slutföra dessa steg måste du först avsluta stegen i procedurerna ”Skapa en konfigurationsleverantör och markera den som aktiv" och "Använd skapade format för att generera elektroniska handlingar för betalningar".</span><span class="sxs-lookup"><span data-stu-id="be59e-107">To complete these steps, you must first complete the steps in the “Create a configuration provider and mark it as active” and “Use created format to generate electronic documents for payments” procedures.</span></span> <span data-ttu-id="be59e-108">Dessa steg kan utföras i GBSI-företaget.</span><span class="sxs-lookup"><span data-stu-id="be59e-108">These steps can be performed in the GBSI company.</span></span>
 
 
-## <a name="select-format-configuration-for-customization"></a>Välj formatkonfigurationen för anpassning
-1. Gå till Organisationsadministration > Arbetsytor > Elektronisk rapportering.
-    * I det här exemplet kommer exempelföretaget Litware, Inc. (http://www.litware.com) att fungera som en konfigurationsleverantör som stöder formatkonfigurationer för elektroniska betalningar för ett angivet land.    Eexempelföretaget Proseware, Inc. (http://www.proseware.com) kommer att fungera som en konsument av formatkonfigurationen som Litware, Inc. tillhandahåller. Proseware, Inc. använder format i vissa regioner för det landet.  
-2. Klicka på Reporting configurations.
-3. Klicka på Visa filter.
-4. Använd följande filter: Ange filtervärdet "BACS (fiktivt, Storbritannien)" i fältet "Namn" med hjälp av filteroperatorn "Börjar med"
-    * BACS (fiktivt UK)  
-    * Den valda formatkonfigurationen BACS (fiktiv, från Storbritannien) ägs av leverantören Litware, Inc.  
-5. Klicka på Visa filter.
-6. Hitta och markera önskad post i listan.
-    * Versionen av formatet med statusen avslutad ska användas av Proseware, Inc. för anpassning.  
+## <a name="select-format-configuration-for-customization"></a><span data-ttu-id="be59e-109">Välj formatkonfigurationen för anpassning</span><span class="sxs-lookup"><span data-stu-id="be59e-109">Select format configuration for customization</span></span>
+1. <span data-ttu-id="be59e-110">Gå till Organisationsadministration > Arbetsytor > Elektronisk rapportering.</span><span class="sxs-lookup"><span data-stu-id="be59e-110">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
+    * <span data-ttu-id="be59e-111">I det här exemplet kommer exempelföretaget Litware, Inc. (http://www.litware.com) att fungera som en konfigurationsleverantör som stöder formatkonfigurationer för elektroniska betalningar för ett angivet land.</span><span class="sxs-lookup"><span data-stu-id="be59e-111">In this example, sample company Litware, Inc. (http://www.litware.com) will act as a configuration provider that supports format configurations for electronic payments for a particular country.</span></span>    <span data-ttu-id="be59e-112">Eexempelföretaget Proseware, Inc. (http://www.proseware.com) kommer att fungera som en konsument av formatkonfigurationen som Litware, Inc. tillhandahåller.</span><span class="sxs-lookup"><span data-stu-id="be59e-112">Sample company Proseware, Inc. (http://www.proseware.com) will act as a consumer of the format configuration that Litware, Inc. provided.</span></span> <span data-ttu-id="be59e-113">Proseware, Inc. använder format i vissa regioner för det landet.</span><span class="sxs-lookup"><span data-stu-id="be59e-113">Proseware, Inc. uses formats in certain regions of that country.</span></span>  
+2. <span data-ttu-id="be59e-114">Klicka på Reporting configurations.</span><span class="sxs-lookup"><span data-stu-id="be59e-114">Click Reporting configurations.</span></span>
+3. <span data-ttu-id="be59e-115">Klicka på Visa filter.</span><span class="sxs-lookup"><span data-stu-id="be59e-115">Click Show filters.</span></span>
+4. <span data-ttu-id="be59e-116">Använd följande filter: Ange filtervärdet "BACS (fiktivt, Storbritannien)" i fältet "Namn" med hjälp av filteroperatorn "Börjar med"</span><span class="sxs-lookup"><span data-stu-id="be59e-116">Apply the following filters: Enter a filter value of "BACS (UK fictitious)" on the "Name" field using the "begins with" filter operator</span></span>
+    * <span data-ttu-id="be59e-117">BACS (fiktivt UK)</span><span class="sxs-lookup"><span data-stu-id="be59e-117">BACS (UK fictitious)</span></span>  
+    * <span data-ttu-id="be59e-118">Den valda formatkonfigurationen BACS (fiktiv, från Storbritannien) ägs av leverantören Litware, Inc.</span><span class="sxs-lookup"><span data-stu-id="be59e-118">The selected format configuration BACS (UK fictitious) is owned by provider Litware, Inc.</span></span>  
+5. <span data-ttu-id="be59e-119">Klicka på Visa filter.</span><span class="sxs-lookup"><span data-stu-id="be59e-119">Click Show filters.</span></span>
+6. <span data-ttu-id="be59e-120">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="be59e-120">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="be59e-121">Versionen av formatet med statusen avslutad ska användas av Proseware, Inc. för anpassning.</span><span class="sxs-lookup"><span data-stu-id="be59e-121">The version of the format with the status of Completed will be used by Proseware, Inc. for customization.</span></span>  
 
-## <a name="create-a-new-configuration-for-your-custom-format-of-electronic-document"></a>Skapa en ny konfiguration för ditt anpassade format för elektroniskt dokument
-    * Proseware, Inc. tog emot version 1.1 av BACS-konfigurationen (fiktiv från Storbritannien) som innehåller det initiala formatet för att generera elektroniska betalningsdokument från Litware, Inc. i enlighet med deras serviceabonnemang. Proseware, Inc. vill börja använda detta som standard för deras land, men det krävs en del anpassning för att stödja specifika regionala krav. Proseware, Inc. vill behålla förmågan att uppgradera ett allmänt format så snart som en ny version av den (med ändringar som stöder nya landsspecifika behov) kommer från Litware, Inc. och de vill utföra denna uppgradering med den lägsta kostnaden.  För att göra detta måste Prosewares, Inc. skapa en konfiguration med Litware Inc. konfiguration BACS (fiktiva UK) som bas.  
-1. Stäng sidan.
-2. Välj Prosewares Inc. för att göra den till en aktiv leverantör.
-3. Klicka på Ställ in aktiv.
-4. Klicka på Reporting configurations.
-5. Visa "Betalningar (förenklad modell)" i trädet.
-6. Välj "Betalningar (förenklad modell))\BACS (UK fiktivt)" i trädet.
-    * Välj konfigurationen (fiktiva UK) från Litware, Inc. Prosewares Inc. kommer att använda 1.1 som bas för din anpassade version.  
-7. Klicka på Skapa konfiguration om du vill öppna dialogrutan.
-    * Detta låter dig skapa en ny konfiguration för ett anpassat betalningsformat.  
-8. Ange ”Härled från namn: BACS (UK fiktivt) Litware, Inc.” i fältet Nytt.
-    * Välj alternativet Härled för att bekräfta användningen av BACS (fiktivt UK) som bas för att skapa den anpassade versionen.  
-9. Skriv "BACS (fiktiv UK kund) i fältet Namn.
-    * BACS (fiktiv kund från Storbritannien)  
-10. Skriv "BACS-leverantörsbetalnings (fiktivt, Storbritannien)" i fältet Beskrivning.
-    * BACS-leverantörsbetalning (fiktiv, anpassad från Storbritannien)  
-    * Den aktiva konfigurationsleverantören (Proseware, Inc.) anges automatiskt här. Den här leverantören kommer att kunna underhålla konfigurationen. Andra leverantörer kan använda den här konfigurationen, men de kan inte underhålla den.  
-11. Klicka på Skapa konfiguration.
+## <a name="create-a-new-configuration-for-your-custom-format-of-electronic-document"></a><span data-ttu-id="be59e-122">Skapa en ny konfiguration för ditt anpassade format för elektroniskt dokument</span><span class="sxs-lookup"><span data-stu-id="be59e-122">Create a new configuration for your custom format of electronic document</span></span>
+    * <span data-ttu-id="be59e-123">Proseware, Inc. tog emot version 1.1 av BACS-konfigurationen (fiktiv från Storbritannien) som innehåller det initiala formatet för att generera elektroniska betalningsdokument från Litware, Inc. i enlighet med deras serviceabonnemang.</span><span class="sxs-lookup"><span data-stu-id="be59e-123">Proseware, Inc. received version 1.1 of BACS (UK fictitious) configuration that contains the initial format to generate electronic payment documents from Litware, Inc. in accordance to their service subscription.</span></span> <span data-ttu-id="be59e-124">Proseware, Inc. vill börja använda detta som standard för deras land, men det krävs en del anpassning för att stödja specifika regionala krav.</span><span class="sxs-lookup"><span data-stu-id="be59e-124">Proseware, Inc. wants to start using this as a standard for their country but some customization is required to support specific regional requirements.</span></span> <span data-ttu-id="be59e-125">Proseware, Inc. vill behålla förmågan att uppgradera ett allmänt format så snart som en ny version av den (med ändringar som stöder nya landsspecifika behov) kommer från Litware, Inc. och de vill utföra denna uppgradering med den lägsta kostnaden.</span><span class="sxs-lookup"><span data-stu-id="be59e-125">Proseware, Inc. also wants to keep the ability to upgrade a custom format as soon as a new version of it (with changes to support new country-specific requirements) comes from Litware, Inc. and they want to perform this upgrade with the lowest cost.</span></span>  <span data-ttu-id="be59e-126">För att göra detta måste Prosewares, Inc. skapa en konfiguration med Litware Inc. konfiguration BACS (fiktiva UK) som bas.</span><span class="sxs-lookup"><span data-stu-id="be59e-126">To do this, Proseware, Inc. needs to create a configuration using the Litware, Inc. configuration BACS (UK fictitious) as a base.</span></span>  
+1. <span data-ttu-id="be59e-127">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="be59e-127">Close the page.</span></span>
+2. <span data-ttu-id="be59e-128">Välj Prosewares Inc. för att göra den till en aktiv leverantör.</span><span class="sxs-lookup"><span data-stu-id="be59e-128">Select Proseware, Inc. to make it an active provider.</span></span>
+3. <span data-ttu-id="be59e-129">Klicka på Ställ in aktiv.</span><span class="sxs-lookup"><span data-stu-id="be59e-129">Click Set active.</span></span>
+4. <span data-ttu-id="be59e-130">Klicka på Reporting configurations.</span><span class="sxs-lookup"><span data-stu-id="be59e-130">Click Reporting configurations.</span></span>
+5. <span data-ttu-id="be59e-131">Visa "Betalningar (förenklad modell)" i trädet.</span><span class="sxs-lookup"><span data-stu-id="be59e-131">In the tree, expand 'Payments (simplified model)'.</span></span>
+6. <span data-ttu-id="be59e-132">Välj "Betalningar (förenklad modell))\BACS (UK fiktivt)" i trädet.</span><span class="sxs-lookup"><span data-stu-id="be59e-132">In the tree, select 'Payments (simplified model)\BACS (UK fictitious)'.</span></span>
+    * <span data-ttu-id="be59e-133">Välj konfigurationen (fiktiva UK) från Litware, Inc. Prosewares Inc. kommer att använda 1.1 som bas för din anpassade version.</span><span class="sxs-lookup"><span data-stu-id="be59e-133">Select the BACS (UK fictitious) configuration from Litware, Inc.     Proseware, Inc. will use version 1.1 as a base for the custom version.</span></span>  
+7. <span data-ttu-id="be59e-134">Klicka på Skapa konfiguration om du vill öppna dialogrutan.</span><span class="sxs-lookup"><span data-stu-id="be59e-134">Click Create configuration to open the drop dialog.</span></span>
+    * <span data-ttu-id="be59e-135">Detta låter dig skapa en ny konfiguration för ett anpassat betalningsformat.</span><span class="sxs-lookup"><span data-stu-id="be59e-135">This lets you create a new configuration for a custom payment format.</span></span>  
+8. <span data-ttu-id="be59e-136">Ange ”Härled från namn: BACS (UK fiktivt) Litware, Inc.” i fältet Nytt.</span><span class="sxs-lookup"><span data-stu-id="be59e-136">In the New field, enter 'Derive from Name: BACS (UK fictitious), Litware, Inc.'.</span></span>
+    * <span data-ttu-id="be59e-137">Välj alternativet Härled för att bekräfta användningen av BACS (fiktivt UK) som bas för att skapa den anpassade versionen.</span><span class="sxs-lookup"><span data-stu-id="be59e-137">Select the Derive option to confirm the usage of BACS (UK fictitious) as the base for creating the custom version.</span></span>  
+9. <span data-ttu-id="be59e-138">Skriv "BACS (fiktiv UK kund) i fältet Namn.</span><span class="sxs-lookup"><span data-stu-id="be59e-138">In the Name field, type 'BACS (UK fictitious custom)'.</span></span>
+    * <span data-ttu-id="be59e-139">BACS (fiktiv kund från Storbritannien)</span><span class="sxs-lookup"><span data-stu-id="be59e-139">BACS (UK fictitious custom)</span></span>  
+10. <span data-ttu-id="be59e-140">Skriv "BACS-leverantörsbetalnings (fiktivt, Storbritannien)" i fältet Beskrivning.</span><span class="sxs-lookup"><span data-stu-id="be59e-140">In the Description field, type 'BACS vendor payment (UK fictitious custom)'.</span></span>
+    * <span data-ttu-id="be59e-141">BACS-leverantörsbetalning (fiktiv, anpassad från Storbritannien)</span><span class="sxs-lookup"><span data-stu-id="be59e-141">BACS vendor payment (UK fictitious custom)</span></span>  
+    * <span data-ttu-id="be59e-142">Den aktiva konfigurationsleverantören (Proseware, Inc.) anges automatiskt här.</span><span class="sxs-lookup"><span data-stu-id="be59e-142">The active configuration provider (Proseware, Inc.) is automatically entered here.</span></span> <span data-ttu-id="be59e-143">Den här leverantören kommer att kunna underhålla konfigurationen.</span><span class="sxs-lookup"><span data-stu-id="be59e-143">This provider will be able to maintain this configuration.</span></span> <span data-ttu-id="be59e-144">Andra leverantörer kan använda den här konfigurationen, men de kan inte underhålla den.</span><span class="sxs-lookup"><span data-stu-id="be59e-144">Other providers can use this configuration, but will not be able to maintain it.</span></span>  
+11. <span data-ttu-id="be59e-145">Klicka på Skapa konfiguration.</span><span class="sxs-lookup"><span data-stu-id="be59e-145">Click Create configuration.</span></span>
 
-## <a name="customize-your-format-for-the-electronic-document"></a>Anpassa ditt format för elektroniskt dokument
-1. Klicka på Designer.
-2. Klicka på Expandera/Komprimera.
-3. Klicka på Expandera/Komprimera.
-4. Välj "Xml\Message\Payments\Item\Vendor\Bank" i trädet.
-5. Klicka på Lägg till för att öppna dialogrutan.
-6. Välj "XML\Element" i trädet.
-7. Skriv "IBAN" i fältet Namn.
-    * IBAN  
-8. Klicka på OK.
-9. Välj "Xml\Message\Payments\Item\Vendor\Bank\IBAN" i trädet.
-10. Klicka på Lägg till för att öppna dialogrutan.
-11. Välj "Text\Sträng" i trädet.
-12. Klicka på OK.
-13. Välj "Xml\Message\Payments\Item\Vendor\Name\String" i trädet.
-14. Ange "60" i fältet Maximal längd.
-15. Klicka på fliken Mappning.
-16. Expandera "modell" i trädet.
-17. Expandera "modell\Betalningar" i trädet.
-18. Expandera "modell\Betalningar\Betalningsmottagare" i trädet.
-19. Expandera "modell\Betalningar\Betalningsmottagare\Konto" i trädet.
-20. Välj "model\Payments\Creditor\Account\IBAN" i trädet.
-21. Välj "Xml\Message\Payments\Item =  model.Payments\Vendor\Bank\IBAN\String" i trädet.
-22. Klicka på Bind.
-23. Klicka på Spara.
+## <a name="customize-your-format-for-the-electronic-document"></a><span data-ttu-id="be59e-146">Anpassa ditt format för elektroniskt dokument</span><span class="sxs-lookup"><span data-stu-id="be59e-146">Customize your format for the electronic document</span></span>
+1. <span data-ttu-id="be59e-147">Klicka på Designer.</span><span class="sxs-lookup"><span data-stu-id="be59e-147">Click Designer.</span></span>
+2. <span data-ttu-id="be59e-148">Klicka på Expandera/Komprimera.</span><span class="sxs-lookup"><span data-stu-id="be59e-148">Click Expand/collapse.</span></span>
+3. <span data-ttu-id="be59e-149">Klicka på Expandera/Komprimera.</span><span class="sxs-lookup"><span data-stu-id="be59e-149">Click Expand/collapse.</span></span>
+4. <span data-ttu-id="be59e-150">Välj "Xml\Message\Payments\Item\Vendor\Bank" i trädet.</span><span class="sxs-lookup"><span data-stu-id="be59e-150">In the tree, select 'Xml\Message\Payments\Item\Vendor\Bank'.</span></span>
+5. <span data-ttu-id="be59e-151">Klicka på Lägg till för att öppna dialogrutan.</span><span class="sxs-lookup"><span data-stu-id="be59e-151">Click Add to open the drop dialog.</span></span>
+6. <span data-ttu-id="be59e-152">Välj "XML\Element" i trädet.</span><span class="sxs-lookup"><span data-stu-id="be59e-152">In the tree, select 'XML\Element'.</span></span>
+7. <span data-ttu-id="be59e-153">Skriv "IBAN" i fältet Namn.</span><span class="sxs-lookup"><span data-stu-id="be59e-153">In the Name field, type 'IBAN'.</span></span>
+    * <span data-ttu-id="be59e-154">IBAN</span><span class="sxs-lookup"><span data-stu-id="be59e-154">IBAN</span></span>  
+8. <span data-ttu-id="be59e-155">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="be59e-155">Click OK.</span></span>
+9. <span data-ttu-id="be59e-156">Välj "Xml\Message\Payments\Item\Vendor\Bank\IBAN" i trädet.</span><span class="sxs-lookup"><span data-stu-id="be59e-156">In the tree, select 'Xml\Message\Payments\Item\Vendor\Bank\IBAN'.</span></span>
+10. <span data-ttu-id="be59e-157">Klicka på Lägg till för att öppna dialogrutan.</span><span class="sxs-lookup"><span data-stu-id="be59e-157">Click Add to open the drop dialog.</span></span>
+11. <span data-ttu-id="be59e-158">Välj "Text\Sträng" i trädet.</span><span class="sxs-lookup"><span data-stu-id="be59e-158">In the tree, select 'Text\String'.</span></span>
+12. <span data-ttu-id="be59e-159">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="be59e-159">Click OK.</span></span>
+13. <span data-ttu-id="be59e-160">Välj "Xml\Message\Payments\Item\Vendor\Name\String" i trädet.</span><span class="sxs-lookup"><span data-stu-id="be59e-160">In the tree, select 'Xml\Message\Payments\Item\Vendor\Name\String'.</span></span>
+14. <span data-ttu-id="be59e-161">Ange "60" i fältet Maximal längd.</span><span class="sxs-lookup"><span data-stu-id="be59e-161">In the Maximum length field, enter '60'.</span></span>
+15. <span data-ttu-id="be59e-162">Klicka på fliken Mappning.</span><span class="sxs-lookup"><span data-stu-id="be59e-162">Click the Mapping tab.</span></span>
+16. <span data-ttu-id="be59e-163">Expandera "modell" i trädet.</span><span class="sxs-lookup"><span data-stu-id="be59e-163">In the tree, expand 'model'.</span></span>
+17. <span data-ttu-id="be59e-164">Expandera "modell\Betalningar" i trädet.</span><span class="sxs-lookup"><span data-stu-id="be59e-164">In the tree, expand 'model\Payments'.</span></span>
+18. <span data-ttu-id="be59e-165">Expandera "modell\Betalningar\Betalningsmottagare" i trädet.</span><span class="sxs-lookup"><span data-stu-id="be59e-165">In the tree, expand 'model\Payments\Creditor'.</span></span>
+19. <span data-ttu-id="be59e-166">Expandera "modell\Betalningar\Betalningsmottagare\Konto" i trädet.</span><span class="sxs-lookup"><span data-stu-id="be59e-166">In the tree, expand 'model\Payments\Creditor\Account'.</span></span>
+20. <span data-ttu-id="be59e-167">Välj "model\Payments\Creditor\Account\IBAN" i trädet.</span><span class="sxs-lookup"><span data-stu-id="be59e-167">In the tree, select 'model\Payments\Creditor\Account\IBAN'.</span></span>
+21. <span data-ttu-id="be59e-168">Välj "Xml\Message\Payments\Item =  model.Payments\Vendor\Bank\IBAN\String" i trädet.</span><span class="sxs-lookup"><span data-stu-id="be59e-168">In the tree, select 'Xml\Message\Payments\Item =  model.Payments\Vendor\Bank\IBAN\String'.</span></span>
+22. <span data-ttu-id="be59e-169">Klicka på Bind.</span><span class="sxs-lookup"><span data-stu-id="be59e-169">Click Bind.</span></span>
+23. <span data-ttu-id="be59e-170">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="be59e-170">Click Save.</span></span>
 
-## <a name="validate-the-customized-format"></a>Validera det anpassade formatet
-1. Klicka på Validera.
-    * Validera det anpassade formatlayoutet och datamappningändringarna för att se till att alla bindningar är ok.  
-2. Stäng sidan.
+## <a name="validate-the-customized-format"></a><span data-ttu-id="be59e-171">Validera det anpassade formatet</span><span class="sxs-lookup"><span data-stu-id="be59e-171">Validate the customized format</span></span>
+1. <span data-ttu-id="be59e-172">Klicka på Validera.</span><span class="sxs-lookup"><span data-stu-id="be59e-172">Click Validate.</span></span>
+    * <span data-ttu-id="be59e-173">Validera det anpassade formatlayoutet och datamappningändringarna för att se till att alla bindningar är ok.</span><span class="sxs-lookup"><span data-stu-id="be59e-173">Validate the customized format layout and data mapping changes to make sure that all bindings are okay.</span></span>  
+2. <span data-ttu-id="be59e-174">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="be59e-174">Close the page.</span></span>
 
-## <a name="change-the-status-of-the-current-version-of-the-custom-format-configuration"></a>Ändra statusen för den aktuella versionen av den anpassade formatkonfigurationen
-    * Ändra statusen för den utformade formatkonfigurationen från Utkast till Slutfört för att göra den tillgänglig för generering av betalningsdokument.  
-1. Klicka på Ändra status.
-    * Observera att den aktuella versionen av den valda konfigurationen finns i utkastläge.  
-2. Klicka på Slutför.
-3. Ange ett värde i fältet Beskrivning.
-4. Klicka på OK.
-5. Hitta och markera önskad post i listan.
-    * Observera att den skapade konfigurationen sparas som slutförd version 1.1.1. Det innebär att det är version 1 av det anpassade BACS-formatet (fiktiv kund från Storbritannien) baserat på version 1 av BACS-formatet (fiktiv från Storbritannien) baserat på version 1 av datamodellen Betalningar (förenklad modell).  
+## <a name="change-the-status-of-the-current-version-of-the-custom-format-configuration"></a><span data-ttu-id="be59e-175">Ändra statusen för den aktuella versionen av den anpassade formatkonfigurationen</span><span class="sxs-lookup"><span data-stu-id="be59e-175">Change the status of the current version of the custom format configuration</span></span>
+    * <span data-ttu-id="be59e-176">Ändra statusen för den utformade formatkonfigurationen från Utkast till Slutfört för att göra den tillgänglig för generering av betalningsdokument.</span><span class="sxs-lookup"><span data-stu-id="be59e-176">Change the status of the designed format configuration from Draft to Completed to make it available for payment document generation.</span></span>  
+1. <span data-ttu-id="be59e-177">Klicka på Ändra status.</span><span class="sxs-lookup"><span data-stu-id="be59e-177">Click Change status.</span></span>
+    * <span data-ttu-id="be59e-178">Observera att den aktuella versionen av den valda konfigurationen finns i utkastläge.</span><span class="sxs-lookup"><span data-stu-id="be59e-178">Note that the current version of the selected configuration is in Draft status.</span></span>  
+2. <span data-ttu-id="be59e-179">Klicka på Slutför.</span><span class="sxs-lookup"><span data-stu-id="be59e-179">Click Complete.</span></span>
+3. <span data-ttu-id="be59e-180">Ange ett värde i fältet Beskrivning.</span><span class="sxs-lookup"><span data-stu-id="be59e-180">In the Description field, type a value.</span></span>
+4. <span data-ttu-id="be59e-181">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="be59e-181">Click OK.</span></span>
+5. <span data-ttu-id="be59e-182">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="be59e-182">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="be59e-183">Observera att den skapade konfigurationen sparas som slutförd version 1.1.1.</span><span class="sxs-lookup"><span data-stu-id="be59e-183">Note that the created configuration is saved as completed version 1.1.1.</span></span> <span data-ttu-id="be59e-184">Det innebär att det är version 1 av det anpassade BACS-formatet (fiktiv kund från Storbritannien) baserat på version 1 av BACS-formatet (fiktiv från Storbritannien) baserat på version 1 av datamodellen Betalningar (förenklad modell).</span><span class="sxs-lookup"><span data-stu-id="be59e-184">This means it is version 1 of the custom BACS (UK fictitious custom) format, which is based on version 1 of the BACS (UK fictitious) format, which is based on version 1 of the Payments (simplified model) data model.</span></span>  
 
-## <a name="test-the-customized-format-to-generate-payment-files"></a>Testa det anpassade formatet för att generera betalningsfiler
-    * Slutför stegen i sessionen "Använd skapade format för att generera elektroniska dokument för betalningar" i en parallell Dynamics 365 for Finance and Operations, Enterprise Edition-session. Välj det BACS-formatet (fiktiv kund från Storbritannien) i parametrar för elektronisk betalningsmetod. Kontrollera att den skapade betalningsfilen innehåller den för en tid eftersom introducerade XML-noden som innehåller IBANkod i korrespondens till regionala kraven.  
+## <a name="test-the-customized-format-to-generate-payment-files"></a><span data-ttu-id="be59e-185">Testa det anpassade formatet för att generera betalningsfiler</span><span class="sxs-lookup"><span data-stu-id="be59e-185">Test the customized format to generate payment files</span></span>
+    * <span data-ttu-id="be59e-186">Slutför stegen i sessionen "Använd skapade format för att generera elektroniska dokument för betalningar" i en parallell Dynamics 365 for Finance and Operations, Enterprise Edition-session.</span><span class="sxs-lookup"><span data-stu-id="be59e-186">Complete the steps in the “Use created format to generate electronic documents for payments” procedure in a parallel Dynamics 365 for Finance and Operations, Enterprise edition session.</span></span> <span data-ttu-id="be59e-187">Välj det BACS-formatet (fiktiv kund från Storbritannien) i parametrar för elektronisk betalningsmetod.</span><span class="sxs-lookup"><span data-stu-id="be59e-187">Select the BACS (UK fictitious custom) format in electronic payment method parameters.</span></span> <span data-ttu-id="be59e-188">Kontrollera att den skapade betalningsfilen innehåller den för en tid eftersom introducerade XML-noden som innehåller IBANkod i korrespondens till regionala kraven.</span><span class="sxs-lookup"><span data-stu-id="be59e-188">Make sure that the created payment file contains the recently introduced XML node presenting IBAN code in accordance to regional requirements.</span></span>  
 
-## <a name="update-the-existing-country-specific-configuration"></a>Uppdatera den befintliga landsspecifika konfigurationen
-    * Litware, Inc. behöver uppdatera BACS-konfigurationen (fiktivt UK) och anta nya landskrav för hantering av formatet för elektroniskt dokument. Senare kommer detta att bifogas i en ny version av den här konfigurationen som ska erbjudas abonnenter, inklusive Proseware, Inc.  
-    * I verkliga tjänsterelaterade processer kan varje ny version av BACS (fiktiv från Storbritannien) importeras av Proseware, Inc. från Litware, Inc. konfigurationers LCS-databas. I den här proceduren kommer vi att simulera detta genom att uppdatera BACS (fiktiv från Storbritannien) på uppdrag av en tjänsteleverantör.  
-1. Stäng sidan.
-2. Välj Litware, Inc. leverantör.
-3. Klicka på Ställ in aktiv.
-4. Klicka på Reporting configurations.
-5. Visa "Betalningar (förenklad modell)" i trädet.
-6. Välj "Betalningar (förenklad modell))\BACS (UK fiktivt)" i trädet.
-    * Utkastversionen som ägs av Litware, Inc. leverantören BACS (fiktivt UK) för att ta in ändringar som stödjer nya landsspecifika krav.  
+## <a name="update-the-existing-country-specific-configuration"></a><span data-ttu-id="be59e-189">Uppdatera den befintliga landsspecifika konfigurationen</span><span class="sxs-lookup"><span data-stu-id="be59e-189">Update the existing country-specific configuration</span></span>
+    * <span data-ttu-id="be59e-190">Litware, Inc. behöver uppdatera BACS-konfigurationen (fiktivt UK) och anta nya landskrav för hantering av formatet för elektroniskt dokument.</span><span class="sxs-lookup"><span data-stu-id="be59e-190">Litware, Inc. needs to update the BACS (UK fictitious) configuration and adopt new country requirements for managing the format of the electronic document.</span></span> <span data-ttu-id="be59e-191">Senare kommer detta att bifogas i en ny version av den här konfigurationen som ska erbjudas abonnenter, inklusive Proseware, Inc.</span><span class="sxs-lookup"><span data-stu-id="be59e-191">Later, this will be enclosed in a new version of this configuration that will be offered for service subscribers, including Proseware, Inc.</span></span>  
+    * <span data-ttu-id="be59e-192">I verkliga tjänsterelaterade processer kan varje ny version av BACS (fiktiv från Storbritannien) importeras av Proseware, Inc. från Litware, Inc. konfigurationers LCS-databas.</span><span class="sxs-lookup"><span data-stu-id="be59e-192">In real service provision related processes, each new version of BACS (UK fictitious) can be imported by Proseware, Inc. from Litware, Inc. configurations’ LCS repository.</span></span> <span data-ttu-id="be59e-193">I den här proceduren kommer vi att simulera detta genom att uppdatera BACS (fiktiv från Storbritannien) på uppdrag av en tjänsteleverantör.</span><span class="sxs-lookup"><span data-stu-id="be59e-193">In this procedure we will simulate this by updating BACS (UK fictitious) on behalf of a service provider.</span></span>  
+1. <span data-ttu-id="be59e-194">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="be59e-194">Close the page.</span></span>
+2. <span data-ttu-id="be59e-195">Välj Litware, Inc.</span><span class="sxs-lookup"><span data-stu-id="be59e-195">Select Litware, inc.</span></span> <span data-ttu-id="be59e-196">leverantör.</span><span class="sxs-lookup"><span data-stu-id="be59e-196">provider.</span></span>
+3. <span data-ttu-id="be59e-197">Klicka på Ställ in aktiv.</span><span class="sxs-lookup"><span data-stu-id="be59e-197">Click Set active.</span></span>
+4. <span data-ttu-id="be59e-198">Klicka på Reporting configurations.</span><span class="sxs-lookup"><span data-stu-id="be59e-198">Click Reporting configurations.</span></span>
+5. <span data-ttu-id="be59e-199">Visa "Betalningar (förenklad modell)" i trädet.</span><span class="sxs-lookup"><span data-stu-id="be59e-199">In the tree, expand 'Payments (simplified model)'.</span></span>
+6. <span data-ttu-id="be59e-200">Välj "Betalningar (förenklad modell))\BACS (UK fiktivt)" i trädet.</span><span class="sxs-lookup"><span data-stu-id="be59e-200">In the tree, select 'Payments (simplified model)\BACS (UK fictitious)'.</span></span>
+    * <span data-ttu-id="be59e-201">Utkastversionen som ägs av Litware, Inc. leverantören BACS (fiktivt UK) för att ta in ändringar som stödjer nya landsspecifika krav.</span><span class="sxs-lookup"><span data-stu-id="be59e-201">The draft version owned by Litware, Inc. provider BACS (UK fictitious) is selected to bring in changes to support new country-specific requirements.</span></span>  
 
-## <a name="localize-the-base-format-of-the-electronic-document"></a>Lokalisera basformat för elektroniskt dokument
-    * Anta att det finns nya landsspecifika krav som stöds av Litware, Inc.: - Ett värde för betalningsmottagarens SWFT-kod i varje betalningstransaktion.  - En gräns på 100 tecken för textlängden för leverantörens namn i en genereringsfil.  
-    * Nya landsspecifika krav  
-    * Välj utkastversionen av önskad konfiguration för att införa nödvändiga ändringar.  
-1. Klicka på Designer.
-2. Klicka på Expandera/Komprimera.
-3. Klicka på Expandera/Komprimera.
-4. Välj "Xml\Message\Payments\Item\Vendor\Bank" i trädet.
-5. Klicka på Lägg till för att öppna dialogrutan.
-6. Välj "XML\Element" i trädet.
-7. Skriv "SWIFT" i fältet Namn.
-    * SWIFT  
-8. Klicka på OK.
-9. Välj "Xml\Message\Payments\Item\Vendor\Bank\SWIFT" i trädet.
-10. Klicka på Lägg till för att öppna dialogrutan.
-11. Välj "Text\Sträng" i trädet.
-12. Klicka på OK.
-13. Välj "Xml\Message\Payments\Item\Vendor\Name\String" i trädet.
-14. Ange "100" i fältet Maximal längd.
-15. Klicka på fliken Mappning.
-16. Expandera "modell" i trädet.
-17. Expandera "modell\Betalningar" i trädet.
-18. Expandera "modell\Betalningar\Betalningsmottagare" i trädet.
-19. Expandera "modell\Betalningar\Betalningsmottagare\Agent" i trädet.
-20. Välj "model\Payments\Creditor\Agent\SWIFT" i trädet.
-21. Välj "Xml\Message\Payments\Item =  model.Payments\Vendor\Bank\SWIFT\String" i trädet.
-22. Klicka på Bind.
-23. Klicka på Spara.
+## <a name="localize-the-base-format-of-the-electronic-document"></a><span data-ttu-id="be59e-202">Lokalisera basformat för elektroniskt dokument</span><span class="sxs-lookup"><span data-stu-id="be59e-202">Localize the base format of the electronic document</span></span>
+    * <span data-ttu-id="be59e-203">Anta att det finns nya landsspecifika krav som stöds av Litware, Inc.: - Ett värde för betalningsmottagarens SWFT-kod i varje betalningstransaktion.</span><span class="sxs-lookup"><span data-stu-id="be59e-203">Assume that there are new country-specific requirements to be supported by Litware, Inc.:  - A value for the creditor’s bank SWIFT code in each payment transaction.</span></span>  <span data-ttu-id="be59e-204">- En gräns på 100 tecken för textlängden för leverantörens namn i en genereringsfil.</span><span class="sxs-lookup"><span data-stu-id="be59e-204">- A limit of 100 characters for the length of text for the vendor’s name in a generating file.</span></span>  
+    * <span data-ttu-id="be59e-205">Nya landsspecifika krav</span><span class="sxs-lookup"><span data-stu-id="be59e-205">New country-specific requirements</span></span>  
+    * <span data-ttu-id="be59e-206">Välj utkastversionen av önskad konfiguration för att införa nödvändiga ändringar.</span><span class="sxs-lookup"><span data-stu-id="be59e-206">Select the draft version of the desired configuration to introduce required changes.</span></span>  
+1. <span data-ttu-id="be59e-207">Klicka på Designer.</span><span class="sxs-lookup"><span data-stu-id="be59e-207">Click Designer.</span></span>
+2. <span data-ttu-id="be59e-208">Klicka på Expandera/Komprimera.</span><span class="sxs-lookup"><span data-stu-id="be59e-208">Click Expand/collapse.</span></span>
+3. <span data-ttu-id="be59e-209">Klicka på Expandera/Komprimera.</span><span class="sxs-lookup"><span data-stu-id="be59e-209">Click Expand/collapse.</span></span>
+4. <span data-ttu-id="be59e-210">Välj "Xml\Message\Payments\Item\Vendor\Bank" i trädet.</span><span class="sxs-lookup"><span data-stu-id="be59e-210">In the tree, select 'Xml\Message\Payments\Item\Vendor\Bank'.</span></span>
+5. <span data-ttu-id="be59e-211">Klicka på Lägg till för att öppna dialogrutan.</span><span class="sxs-lookup"><span data-stu-id="be59e-211">Click Add to open the drop dialog.</span></span>
+6. <span data-ttu-id="be59e-212">Välj "XML\Element" i trädet.</span><span class="sxs-lookup"><span data-stu-id="be59e-212">In the tree, select 'XML\Element'.</span></span>
+7. <span data-ttu-id="be59e-213">Skriv "SWIFT" i fältet Namn.</span><span class="sxs-lookup"><span data-stu-id="be59e-213">In the Name field, type 'SWIFT'.</span></span>
+    * <span data-ttu-id="be59e-214">SWIFT</span><span class="sxs-lookup"><span data-stu-id="be59e-214">SWIFT</span></span>  
+8. <span data-ttu-id="be59e-215">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="be59e-215">Click OK.</span></span>
+9. <span data-ttu-id="be59e-216">Välj "Xml\Message\Payments\Item\Vendor\Bank\SWIFT" i trädet.</span><span class="sxs-lookup"><span data-stu-id="be59e-216">In the tree, select 'Xml\Message\Payments\Item\Vendor\Bank\SWIFT'.</span></span>
+10. <span data-ttu-id="be59e-217">Klicka på Lägg till för att öppna dialogrutan.</span><span class="sxs-lookup"><span data-stu-id="be59e-217">Click Add to open the drop dialog.</span></span>
+11. <span data-ttu-id="be59e-218">Välj "Text\Sträng" i trädet.</span><span class="sxs-lookup"><span data-stu-id="be59e-218">In the tree, select 'Text\String'.</span></span>
+12. <span data-ttu-id="be59e-219">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="be59e-219">Click OK.</span></span>
+13. <span data-ttu-id="be59e-220">Välj "Xml\Message\Payments\Item\Vendor\Name\String" i trädet.</span><span class="sxs-lookup"><span data-stu-id="be59e-220">In the tree, select 'Xml\Message\Payments\Item\Vendor\Name\String'.</span></span>
+14. <span data-ttu-id="be59e-221">Ange "100" i fältet Maximal längd.</span><span class="sxs-lookup"><span data-stu-id="be59e-221">In the Maximum length field, enter '100'.</span></span>
+15. <span data-ttu-id="be59e-222">Klicka på fliken Mappning.</span><span class="sxs-lookup"><span data-stu-id="be59e-222">Click the Mapping tab.</span></span>
+16. <span data-ttu-id="be59e-223">Expandera "modell" i trädet.</span><span class="sxs-lookup"><span data-stu-id="be59e-223">In the tree, expand 'model'.</span></span>
+17. <span data-ttu-id="be59e-224">Expandera "modell\Betalningar" i trädet.</span><span class="sxs-lookup"><span data-stu-id="be59e-224">In the tree, expand 'model\Payments'.</span></span>
+18. <span data-ttu-id="be59e-225">Expandera "modell\Betalningar\Betalningsmottagare" i trädet.</span><span class="sxs-lookup"><span data-stu-id="be59e-225">In the tree, expand 'model\Payments\Creditor'.</span></span>
+19. <span data-ttu-id="be59e-226">Expandera "modell\Betalningar\Betalningsmottagare\Agent" i trädet.</span><span class="sxs-lookup"><span data-stu-id="be59e-226">In the tree, expand 'model\Payments\Creditor\Agent'.</span></span>
+20. <span data-ttu-id="be59e-227">Välj "model\Payments\Creditor\Agent\SWIFT" i trädet.</span><span class="sxs-lookup"><span data-stu-id="be59e-227">In the tree, select 'model\Payments\Creditor\Agent\SWIFT'.</span></span>
+21. <span data-ttu-id="be59e-228">Välj "Xml\Message\Payments\Item =  model.Payments\Vendor\Bank\SWIFT\String" i trädet.</span><span class="sxs-lookup"><span data-stu-id="be59e-228">In the tree, select 'Xml\Message\Payments\Item =  model.Payments\Vendor\Bank\SWIFT\String'.</span></span>
+22. <span data-ttu-id="be59e-229">Klicka på Bind.</span><span class="sxs-lookup"><span data-stu-id="be59e-229">Click Bind.</span></span>
+23. <span data-ttu-id="be59e-230">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="be59e-230">Click Save.</span></span>
 
-## <a name="validate-the-localized-format"></a>Validera det lokaliserade formatet
-1. Klicka på Validera.
-2. Stäng sidan.
+## <a name="validate-the-localized-format"></a><span data-ttu-id="be59e-231">Validera det lokaliserade formatet</span><span class="sxs-lookup"><span data-stu-id="be59e-231">Validate the localized format</span></span>
+1. <span data-ttu-id="be59e-232">Klicka på Validera.</span><span class="sxs-lookup"><span data-stu-id="be59e-232">Click Validate.</span></span>
+2. <span data-ttu-id="be59e-233">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="be59e-233">Close the page.</span></span>
 
-## <a name="change-the-status-of-the-current-version-of-the-base-format-configuration"></a>Ändra statusen för den aktuella versionen av basformatkonfigurationen
-    * Ändra status för den uppdaterade basformatkonfigurationen från utkast till slutfört om du vill göra den tillgänglig för generering av betalningdokument och uppdatering av formatkonfigurationer som härleds från den.  
-1. Klicka på Ändra status.
-    * Observera att den aktuella versionen av den valda konfigurationen finns i utkastläge.  
-2. Klicka på Slutför.
-3. Ange ett värde i fältet Beskrivning.
-4. Klicka på OK.
-5. Hitta och markera önskad post i listan.
+## <a name="change-the-status-of-the-current-version-of-the-base-format-configuration"></a><span data-ttu-id="be59e-234">Ändra statusen för den aktuella versionen av basformatkonfigurationen</span><span class="sxs-lookup"><span data-stu-id="be59e-234">Change the status of the current version of the base format configuration</span></span>
+    * <span data-ttu-id="be59e-235">Ändra status för den uppdaterade basformatkonfigurationen från utkast till slutfört om du vill göra den tillgänglig för generering av betalningdokument och uppdatering av formatkonfigurationer som härleds från den.</span><span class="sxs-lookup"><span data-stu-id="be59e-235">Change the status of the updated base format configuration from Draft to Completed to make it available for generation of payment documents and updates of format configurations derived from it.</span></span>  
+1. <span data-ttu-id="be59e-236">Klicka på Ändra status.</span><span class="sxs-lookup"><span data-stu-id="be59e-236">Click Change status.</span></span>
+    * <span data-ttu-id="be59e-237">Observera att den aktuella versionen av den valda konfigurationen finns i utkastläge.</span><span class="sxs-lookup"><span data-stu-id="be59e-237">Note that the current version of the selected configuration is in Draft status.</span></span>  
+2. <span data-ttu-id="be59e-238">Klicka på Slutför.</span><span class="sxs-lookup"><span data-stu-id="be59e-238">Click Complete.</span></span>
+3. <span data-ttu-id="be59e-239">Ange ett värde i fältet Beskrivning.</span><span class="sxs-lookup"><span data-stu-id="be59e-239">In the Description field, type a value.</span></span>
+4. <span data-ttu-id="be59e-240">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="be59e-240">Click OK.</span></span>
+5. <span data-ttu-id="be59e-241">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="be59e-241">In the list, find and select the desired record.</span></span>
 
-## <a name="change-the-base-version-for-the-custom-format-configuration"></a>Ändra basversionen för anpassad formatkonfiguration
-    * Proseware, Inc. informeras att en ny version 1.2 av BACS-konfigurationen (fiktivt UK) är tillgänglig om du vill generera elektroniska betalningsdokument i enlighet med tillkännagivna landsspecifika krav. Proseware, Inc. vill börja använda den som standard för landet.  För att göra detta måste Proseware, Inc. ändra baskonfigurationversionen för den anpassade BACS-konfigurationen för (fiktiv UK kund). I stället för version 1.1 för BACS (fiktivt UK), använd version 1.2.  
-1. Gå till Organisationsadministration > Arbetsytor > Elektronisk rapportering.
-2. Välj Prosewares Inc. leverantör för att markera den som aktiv.
-3. Klicka på Ställ in aktiv.
-4. Klicka på Reporting configurations.
-5. Visa "Betalningar (förenklad modell)" i trädet.
-6. Expandera "Betalningar (förenklad modell))\BACS (UK fiktivt)" i trädet.
-7. Välj "Betalningar (förenklad modell))\BACS (UK fiktiv kund)" i trädet.
-    * Välj BACS-konfigurationen (fiktiv kund från Storbritannien), som ägs av Proseware Inc.  
-    * Använd utkastversionen av den valda konfiguration för att införa nödvändiga ändringar.  
-8. Klicka på Basera om.
-    * Välj den nya versionen 1.2 av baskonfigurationen som ska användas som ett nytt underlag för att uppdatera konfigurationen.  
-9. Klicka på OK.
-    * Observera att eventuella konflikter har upptäckts mellan sammanslagning av den anpassade version och en ny basversion som representerar en del formatändringar som inte kan sammanslås automatiskt.  
+## <a name="change-the-base-version-for-the-custom-format-configuration"></a><span data-ttu-id="be59e-242">Ändra basversionen för anpassad formatkonfiguration</span><span class="sxs-lookup"><span data-stu-id="be59e-242">Change the base version for the custom format configuration</span></span>
+    * <span data-ttu-id="be59e-243">Proseware, Inc. informeras att en ny version 1.2 av BACS-konfigurationen (fiktivt UK) är tillgänglig om du vill generera elektroniska betalningsdokument i enlighet med tillkännagivna landsspecifika krav.</span><span class="sxs-lookup"><span data-stu-id="be59e-243">Proseware, Inc. is informed that a new version 1.2 of BACS (UK fictitious) configuration is available to generate electronic payment documents in accordance to recently announced country-specific requirements.</span></span> <span data-ttu-id="be59e-244">Proseware, Inc. vill börja använda den som standard för landet.</span><span class="sxs-lookup"><span data-stu-id="be59e-244">Proseware, Inc. wants to start using it as a standard for the country.</span></span>  <span data-ttu-id="be59e-245">För att göra detta måste Proseware, Inc. ändra baskonfigurationversionen för den anpassade BACS-konfigurationen för (fiktiv UK kund).</span><span class="sxs-lookup"><span data-stu-id="be59e-245">To do this, Proseware, Inc. needs to change the base configuration version for the custom configuration BACS (UK fictitious custom).</span></span> <span data-ttu-id="be59e-246">I stället för version 1.1 för BACS (fiktivt UK), använd version 1.2.</span><span class="sxs-lookup"><span data-stu-id="be59e-246">Instead of version 1.1 of BACS (UK fictitious) use new version 1.2.</span></span>  
+1. <span data-ttu-id="be59e-247">Gå till Organisationsadministration > Arbetsytor > Elektronisk rapportering.</span><span class="sxs-lookup"><span data-stu-id="be59e-247">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
+2. <span data-ttu-id="be59e-248">Välj Prosewares Inc. leverantör för att markera den som aktiv.</span><span class="sxs-lookup"><span data-stu-id="be59e-248">Select the Proseware, Inc. provider to mark it as active.</span></span>
+3. <span data-ttu-id="be59e-249">Klicka på Ställ in aktiv.</span><span class="sxs-lookup"><span data-stu-id="be59e-249">Click Set active.</span></span>
+4. <span data-ttu-id="be59e-250">Klicka på Reporting configurations.</span><span class="sxs-lookup"><span data-stu-id="be59e-250">Click Reporting configurations.</span></span>
+5. <span data-ttu-id="be59e-251">Visa "Betalningar (förenklad modell)" i trädet.</span><span class="sxs-lookup"><span data-stu-id="be59e-251">In the tree, expand 'Payments (simplified model)'.</span></span>
+6. <span data-ttu-id="be59e-252">Expandera "Betalningar (förenklad modell))\BACS (UK fiktivt)" i trädet.</span><span class="sxs-lookup"><span data-stu-id="be59e-252">In the tree, expand 'Payments (simplified model)\BACS (UK fictitious)'.</span></span>
+7. <span data-ttu-id="be59e-253">Välj "Betalningar (förenklad modell))\BACS (UK fiktiv kund)" i trädet.</span><span class="sxs-lookup"><span data-stu-id="be59e-253">In the tree, select 'Payments (simplified model)\BACS (UK fictitious)\BACS (UK fictitious custom)'.</span></span>
+    * <span data-ttu-id="be59e-254">Välj BACS-konfigurationen (fiktiv kund från Storbritannien), som ägs av Proseware Inc.</span><span class="sxs-lookup"><span data-stu-id="be59e-254">Select the BACS (UK fictitious custom) configuration, which is owned by Proseware, Inc.</span></span>  
+    * <span data-ttu-id="be59e-255">Använd utkastversionen av den valda konfiguration för att införa nödvändiga ändringar.</span><span class="sxs-lookup"><span data-stu-id="be59e-255">Use the draft version of the selected configuration to introduce required changes.</span></span>  
+8. <span data-ttu-id="be59e-256">Klicka på Basera om.</span><span class="sxs-lookup"><span data-stu-id="be59e-256">Click Rebase.</span></span>
+    * <span data-ttu-id="be59e-257">Välj den nya versionen 1.2 av baskonfigurationen som ska användas som ett nytt underlag för att uppdatera konfigurationen.</span><span class="sxs-lookup"><span data-stu-id="be59e-257">Select the new version 1.2 of the base configuration to be applied as a new base for updating the configuration.</span></span>  
+9. <span data-ttu-id="be59e-258">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="be59e-258">Click OK.</span></span>
+    * <span data-ttu-id="be59e-259">Observera att eventuella konflikter har upptäckts mellan sammanslagning av den anpassade version och en ny basversion som representerar en del formatändringar som inte kan sammanslås automatiskt.</span><span class="sxs-lookup"><span data-stu-id="be59e-259">Note that some conflicts have been discovered between merging the custom version and a new base version representing some format changes that can’t be merged automatically.</span></span>  
 
-## <a name="resolve-rebase-conflicts"></a>Lös basera om konflikter
-1. Klicka på Designer.
-    * Observera att ändringar i textlängdgränsen för leverantörens namn inte kan lösas automatiskt. Därför visas den i en konfliktlista. För varje konflikt av typen Uppdatera är följande alternativ tillgängliga: - Använd ett tidigare basvärde (knappen överst i rutnätet) om du vill ta med det föregående basversionsvärdet (0 i vårt fall).  - Använd ett basvärde (knappen överst i rutnätet) om du vill ta med det nya basversionsvärdet (100 i vårt fall).  - Behåll ditt eget (anpassade) värde (60 i det här fallet).  Klicka på Tillämpa basvärde för att använda den landsspecifika gränsen på 100 tecken för textländen på leverantörsnamnet.  
-    * Observera att Proseware, Inc. och Litware, Inc. har anpassade och lokala versioner av det här formatet med hjälp av IBAN och SWIFT-koder med tillhörande komponenter som sammanslås automatiskt i det hanterade formatet.  
-2. Klicka på Tillämpa innan basvärde.
-    * Klicka på Tillämpa basvärde för att använda den landsspecifika gränsen på 100 tecken för leverantörsnamn.  
-3. Klicka på Spara.
-    * När du sparar formatet kommer lösta konflikter att tas bort från konfliktlistan.  
-4. Stäng sidan.
+## <a name="resolve-rebase-conflicts"></a><span data-ttu-id="be59e-260">Lös basera om konflikter</span><span class="sxs-lookup"><span data-stu-id="be59e-260">Resolve rebase conflicts</span></span>
+1. <span data-ttu-id="be59e-261">Klicka på Designer.</span><span class="sxs-lookup"><span data-stu-id="be59e-261">Click Designer.</span></span>
+    * <span data-ttu-id="be59e-262">Observera att ändringar i textlängdgränsen för leverantörens namn inte kan lösas automatiskt.</span><span class="sxs-lookup"><span data-stu-id="be59e-262">Note that changes to the vendor’s name text length limit couldn’t be resolved automatically.</span></span> <span data-ttu-id="be59e-263">Därför visas den i en konfliktlista.</span><span class="sxs-lookup"><span data-stu-id="be59e-263">Therefore, this is presented in a conflicts list.</span></span> <span data-ttu-id="be59e-264">För varje konflikt av typen Uppdatera är följande alternativ tillgängliga: - Använd ett tidigare basvärde (knappen överst i rutnätet) om du vill ta med det föregående basversionsvärdet (0 i vårt fall).</span><span class="sxs-lookup"><span data-stu-id="be59e-264">For each conflict of type Update, the following options are available:  - Apply a prior base value (button on top of the grid) to bring in the previous base version value (0 in our case).</span></span>  <span data-ttu-id="be59e-265">- Använd ett basvärde (knappen överst i rutnätet) om du vill ta med det nya basversionsvärdet (100 i vårt fall).</span><span class="sxs-lookup"><span data-stu-id="be59e-265">- Apply a base value (button on top of the grid) to bring in the new base version value (100 in our case).</span></span>  <span data-ttu-id="be59e-266">- Behåll ditt eget (anpassade) värde (60 i det här fallet).</span><span class="sxs-lookup"><span data-stu-id="be59e-266">- Keep your own (custom) value (60 in our case).</span></span>  <span data-ttu-id="be59e-267">Klicka på Tillämpa basvärde för att använda den landsspecifika gränsen på 100 tecken för textländen på leverantörsnamnet.</span><span class="sxs-lookup"><span data-stu-id="be59e-267">Click Apply base value to apply a country-specific limit of 100 characters for vendor’s name text length.</span></span>  
+    * <span data-ttu-id="be59e-268">Observera att Proseware, Inc. och Litware, Inc. har anpassade och lokala versioner av det här formatet med hjälp av IBAN och SWIFT-koder med tillhörande komponenter som sammanslås automatiskt i det hanterade formatet.</span><span class="sxs-lookup"><span data-stu-id="be59e-268">Note that Proseware, Inc. and Litware, Inc. have custom and local versions of this format using IBAN and SWIFT codes with related components that are automatically merged in the managing format.</span></span>  
+2. <span data-ttu-id="be59e-269">Klicka på Tillämpa innan basvärde.</span><span class="sxs-lookup"><span data-stu-id="be59e-269">Click Apply base value.</span></span>
+    * <span data-ttu-id="be59e-270">Klicka på Tillämpa basvärde för att använda den landsspecifika gränsen på 100 tecken för leverantörsnamn.</span><span class="sxs-lookup"><span data-stu-id="be59e-270">Click Apply base value to apply the country-specific limit of 100 characters for vendor names.</span></span>  
+3. <span data-ttu-id="be59e-271">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="be59e-271">Click Save.</span></span>
+    * <span data-ttu-id="be59e-272">När du sparar formatet kommer lösta konflikter att tas bort från konfliktlistan.</span><span class="sxs-lookup"><span data-stu-id="be59e-272">Saving the format will remove resolved conflicts from the conflicts list.</span></span>  
+4. <span data-ttu-id="be59e-273">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="be59e-273">Close the page.</span></span>
 
-## <a name="change-the-status-of-the-new-version-of-the-custom-format-configuration"></a>Ändra statusen för den nya versionen av den anpassade formatkonfigurationen
-1. Klicka på Ändra status.
-    * Ändra status för den uppdaterade anpassade formatkonfigurationen från Utkast till Slutförd. Detta kommer att göra formatkonfigurationen tillgänglig för att generera betalningsdokument. Observera att den aktuella versionen av den valda konfigurationen finns i utkastläge.  
-2. Klicka på Slutför.
-3. Ange ett värde i fältet Beskrivning.
-4. Klicka på OK.
-    * Observera att den skapade konfigurationen sparas som slutförd version 1.2.2: version 2 av BACS-basformatet (fiktiv UK kund) baserat på version 2 av BACS-basformatet (UK fiktivt) som baseras på version 1 av datamodellen Betalningar (förenklad modell).  
+## <a name="change-the-status-of-the-new-version-of-the-custom-format-configuration"></a><span data-ttu-id="be59e-274">Ändra statusen för den nya versionen av den anpassade formatkonfigurationen</span><span class="sxs-lookup"><span data-stu-id="be59e-274">Change the status of the new version of the custom format configuration</span></span>
+1. <span data-ttu-id="be59e-275">Klicka på Ändra status.</span><span class="sxs-lookup"><span data-stu-id="be59e-275">Click Change status.</span></span>
+    * <span data-ttu-id="be59e-276">Ändra status för den uppdaterade anpassade formatkonfigurationen från Utkast till Slutförd.</span><span class="sxs-lookup"><span data-stu-id="be59e-276">Change the status of the updated, custom format configuration from Draft to Completed.</span></span> <span data-ttu-id="be59e-277">Detta kommer att göra formatkonfigurationen tillgänglig för att generera betalningsdokument.</span><span class="sxs-lookup"><span data-stu-id="be59e-277">This will make the format configuration available for generating payment documents.</span></span> <span data-ttu-id="be59e-278">Observera att den aktuella versionen av den valda konfigurationen finns i utkastläge.</span><span class="sxs-lookup"><span data-stu-id="be59e-278">Note that the current version of the selected configuration is in Draft status.</span></span>  
+2. <span data-ttu-id="be59e-279">Klicka på Slutför.</span><span class="sxs-lookup"><span data-stu-id="be59e-279">Click Complete.</span></span>
+3. <span data-ttu-id="be59e-280">Ange ett värde i fältet Beskrivning.</span><span class="sxs-lookup"><span data-stu-id="be59e-280">In the Description field, type a value.</span></span>
+4. <span data-ttu-id="be59e-281">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="be59e-281">Click OK.</span></span>
+    * <span data-ttu-id="be59e-282">Observera att den skapade konfigurationen sparas som slutförd version 1.2.2: version 2 av BACS-basformatet (fiktiv UK kund) baserat på version 2 av BACS-basformatet (UK fiktivt) som baseras på version 1 av datamodellen Betalningar (förenklad modell).</span><span class="sxs-lookup"><span data-stu-id="be59e-282">Note that the created configuration is saved as completed version 1.2.2: version 2 of base BACS (UK fictitious custom) format, which is based on version 2 of base BACS (UK fictitious) format, which is based on version 1 of Payments (simplified model) data model.</span></span>  
 
-## <a name="test-the-customized-format-for-payment-files-generation"></a>Testa det anpassade formatet för att generera betalningsfiler
-    * Slutför stegen i sessionen "Använd skapade format för att generera elektroniska dokument för betalningar" i en parallell Dynamics 365 for Finance and Operations, Enterprise Edition-session. Välj det skapade BACS-formatet (fiktiv kund från Storbritannien) i parametrar för elektronisk betalningsmetod. Kontrollera att den skapade betalningsfilen innehåller den för en tid eftersom Proseware, Inc. introducerade XML-noden som innehåller IBAN-kontokoden i korrespondens till regionala kraven. Filen ska också innehålla nyligen introducerade genom Litware Inc. XML-noden som presenterar SWIFT-bankkoden i enlighet med kraven i landet.  
+## <a name="test-the-customized-format-for-payment-files-generation"></a><span data-ttu-id="be59e-283">Testa det anpassade formatet för att generera betalningsfiler</span><span class="sxs-lookup"><span data-stu-id="be59e-283">Test the customized format for payment files generation</span></span>
+    * <span data-ttu-id="be59e-284">Slutför stegen i sessionen "Använd skapade format för att generera elektroniska dokument för betalningar" i en parallell Dynamics 365 for Finance and Operations, Enterprise Edition-session.</span><span class="sxs-lookup"><span data-stu-id="be59e-284">Complete the steps in the “Use created format to generate electronic documents for payments” procedure in parallel Dynamics 365 for Finance and Operations, Enterprise edition session.</span></span> <span data-ttu-id="be59e-285">Välj det skapade BACS-formatet (fiktiv kund från Storbritannien) i parametrar för elektronisk betalningsmetod.</span><span class="sxs-lookup"><span data-stu-id="be59e-285">Select the created ‘BACS (UK fictitious custom)’ format in electronic payment method parameters.</span></span> <span data-ttu-id="be59e-286">Kontrollera att den skapade betalningsfilen innehåller den för en tid eftersom Proseware, Inc. introducerade XML-noden som innehåller IBAN-kontokoden i korrespondens till regionala kraven.</span><span class="sxs-lookup"><span data-stu-id="be59e-286">Make sure that the created payment file contains recently introduced by Proseware, Inc. XML node presenting IBAN account code in accordance to regional requirements.</span></span> <span data-ttu-id="be59e-287">Filen ska också innehålla nyligen introducerade genom Litware Inc. XML-noden som presenterar SWIFT-bankkoden i enlighet med kraven i landet.</span><span class="sxs-lookup"><span data-stu-id="be59e-287">The file also should contain the recently introduced by Litware, Inc. XML node presenting SWIFT bank code in accordance to country requirements.</span></span>  
 
 

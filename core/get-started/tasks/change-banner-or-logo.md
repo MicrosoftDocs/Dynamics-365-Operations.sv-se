@@ -16,29 +16,29 @@ ms.author: aneesa
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 0f7ea6d92ac198b3d86094f61c4f24f007c2d615
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: d2dac4d1799a958b6eff4c7aa134fe0b136089ca
 ms.contentlocale: sv-se
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="change-the-banner-or-logo"></a>Ändra webbannonsen eller logotypen
+# <a name="change-the-banner-or-logo"></a><span data-ttu-id="6484b-103">Ändra webbannonsen eller logotypen</span><span class="sxs-lookup"><span data-stu-id="6484b-103">Change the banner or logo</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Följande procedur visar de steg som systemadministratörer kan använda för att uppdatera webbannons- eller logotypbilden som visas för en juridisk person. Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.
+<span data-ttu-id="6484b-104">Följande procedur visar de steg som systemadministratörer kan använda för att uppdatera webbannons- eller logotypbilden som visas för en juridisk person.</span><span class="sxs-lookup"><span data-stu-id="6484b-104">The following procedure lists the steps that system administrators can use to update the banner or logo image that is displayed for a legal entity.</span></span> <span data-ttu-id="6484b-105">Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.</span><span class="sxs-lookup"><span data-stu-id="6484b-105">The demo data company used to create this procedure is USMF.</span></span>
 
-1. Gå till Organisationsadministration > Organisationer > Juridiska personer.
-2. I listan till vänster, välj den juridiska person du vill uppdatera webbannonsen eller logotypen för. Om den redan har markerats, gå till nästa steg.
-3. Expandera avsnittet Bilder. Om det redan har expanderats, gå till nästa steg.
-4. Klicka på Redigera.
-5. I fältet Typ av företagsbild för instrumentpanel, välj Webbannons.
-6. Klicka på Ändra.
-    * Tips: den idealiska lösningen för en webbannonsbild är 1 920 × 281 pixlar. Den idealiska bredden för en logotypbild är 350 pixlar.  
-    * När överföringen är avslutad bör du se den nya webbannonsen eller logotypbilden i avsnittet Instrumentpanelsbild.  
-7. Klicka på Spara.
-8. Gå till Allmänt > Allmänt > Standardinstrumentpanel.
-    * Du bör se den nya webbannonsen eller logotypbilden på instrumentpanelen.  
-    * Du kan behöva ändra ditt företag, med hjälp av företagsväljaren, till det som du överför webbannonsen för.  
+1. <span data-ttu-id="6484b-106">Gå till Organisationsadministration > Organisationer > Juridiska personer.</span><span class="sxs-lookup"><span data-stu-id="6484b-106">Go to Organization administration > Organizations > Legal entities.</span></span>
+2. <span data-ttu-id="6484b-107">I listan till vänster, välj den juridiska person du vill uppdatera webbannonsen eller logotypen för.</span><span class="sxs-lookup"><span data-stu-id="6484b-107">In the list on the left, select the legal entity for which you want to update the banner or logo.</span></span> <span data-ttu-id="6484b-108">Om den redan har markerats, gå till nästa steg.</span><span class="sxs-lookup"><span data-stu-id="6484b-108">If it is already selected, go to the next step.</span></span>
+3. <span data-ttu-id="6484b-109">Expandera avsnittet Bilder.</span><span class="sxs-lookup"><span data-stu-id="6484b-109">Expand the Images section.</span></span> <span data-ttu-id="6484b-110">Om det redan har expanderats, gå till nästa steg.</span><span class="sxs-lookup"><span data-stu-id="6484b-110">If it is already expanded, go to the next step.</span></span>
+4. <span data-ttu-id="6484b-111">Klicka på Redigera.</span><span class="sxs-lookup"><span data-stu-id="6484b-111">Click Edit.</span></span>
+5. <span data-ttu-id="6484b-112">I fältet Typ av företagsbild för instrumentpanel, välj Webbannons.</span><span class="sxs-lookup"><span data-stu-id="6484b-112">In the Dashboard company image type field, select 'Banner'.</span></span>
+6. <span data-ttu-id="6484b-113">Klicka på Ändra.</span><span class="sxs-lookup"><span data-stu-id="6484b-113">Click Change.</span></span>
+    * <span data-ttu-id="6484b-114">Tips: den idealiska lösningen för en webbannonsbild är 1 920 × 281 pixlar.</span><span class="sxs-lookup"><span data-stu-id="6484b-114">Tip: The ideal resolution for a banner image is 1920 x 281 pixels.</span></span> <span data-ttu-id="6484b-115">Den idealiska bredden för en logotypbild är 350 pixlar.</span><span class="sxs-lookup"><span data-stu-id="6484b-115">The ideal width for a logo image is 350 pixels.</span></span>  
+    * <span data-ttu-id="6484b-116">När överföringen är avslutad bör du se den nya webbannonsen eller logotypbilden i avsnittet Instrumentpanelsbild.</span><span class="sxs-lookup"><span data-stu-id="6484b-116">When the upload is complete, you should see your new banner or logo image in the Dashboard Image section.</span></span>  
+7. <span data-ttu-id="6484b-117">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="6484b-117">Click Save.</span></span>
+8. <span data-ttu-id="6484b-118">Gå till Allmänt > Allmänt > Standardinstrumentpanel.</span><span class="sxs-lookup"><span data-stu-id="6484b-118">Go to Common > Common > Default dashboard.</span></span>
+    * <span data-ttu-id="6484b-119">Du bör se den nya webbannonsen eller logotypbilden på instrumentpanelen.</span><span class="sxs-lookup"><span data-stu-id="6484b-119">You should see the new banner or logo image on the dashboard.</span></span>  
+    * <span data-ttu-id="6484b-120">Du kan behöva ändra ditt företag, med hjälp av företagsväljaren, till det som du överför webbannonsen för.</span><span class="sxs-lookup"><span data-stu-id="6484b-120">You may need to change your company, using the company picker, to the one you uploaded the banner for.</span></span>  
 
 

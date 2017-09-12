@@ -22,132 +22,132 @@ ms.contentlocale: sv-se
 ms.lasthandoff: 07/27/2017
 
 ---
-# <a name="modify-format-to-generate-documents-with-application-data-update-for-electronic-reporting-er"></a>Ändra format för att generera dokument med programdatauppdatering för elektronisk rapportering (ER)
+# <a name="modify-format-to-generate-documents-with-application-data-update-for-electronic-reporting-er"></a><span data-ttu-id="a3b54-103">Ändra format för att generera dokument med programdatauppdatering för elektronisk rapportering (ER)</span><span class="sxs-lookup"><span data-stu-id="a3b54-103">Modify format to generate documents with application data update for electronic reporting (ER)</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Om du vill utföra stegen i den här proceduren måste du först slutföra proceduren "ER Generera dokument med uppdatering av programdata (Del 3: Ändra modell och mappning)".
+<span data-ttu-id="a3b54-104">Om du vill utföra stegen i den här proceduren måste du först slutföra proceduren "ER Generera dokument med uppdatering av programdata (Del 3: Ändra modell och mappning)".</span><span class="sxs-lookup"><span data-stu-id="a3b54-104">To complete the steps in this procedure, you must first complete the procedure, "ER Generate documents with application data update (Part 3: Modify model and mapping)".</span></span>
 
-Stegen i den här proceduren beskriver hur du utformar ER-konfigurationer (elektronisk rapportering) för att generera ett elektroniskt dokument och uppdatera programdata. I den här proceduren ska du ändra ER-konfigurationerna inte bara för att använda dem för att skapa elektroniska dokument, utan även för att uppdatera programdata. Den här proceduren har skapats för användare med rollen Systemadministratör eller Utvecklare för elektronisk rapportering. Stegen kan utföras med hjälp av datauppsättningen DEMF.
+<span data-ttu-id="a3b54-105">Stegen i den här proceduren beskriver hur du utformar ER-konfigurationer (elektronisk rapportering) för att generera ett elektroniskt dokument och uppdatera programdata.</span><span class="sxs-lookup"><span data-stu-id="a3b54-105">The steps in this procedure explain how to design Electronic reporting (ER) configurations to generate an electronic document and update application data.</span></span> <span data-ttu-id="a3b54-106">I den här proceduren ska du ändra ER-konfigurationerna inte bara för att använda dem för att skapa elektroniska dokument, utan även för att uppdatera programdata.</span><span class="sxs-lookup"><span data-stu-id="a3b54-106">In this procedure, you will modify the ER configurations to not just use them to generate electronic documents, but also to update application data.</span></span> <span data-ttu-id="a3b54-107">Den här proceduren har skapats för användare med rollen Systemadministratör eller Utvecklare för elektronisk rapportering.</span><span class="sxs-lookup"><span data-stu-id="a3b54-107">This procedure is created for users with the assigned role of system administrator or electronic reporting developer.</span></span> <span data-ttu-id="a3b54-108">Stegen kan utföras med hjälp av datauppsättningen DEMF.</span><span class="sxs-lookup"><span data-stu-id="a3b54-108">These steps can be completed using the DEMF dataset.</span></span>
 
 
-## <a name="modify-format-to-collect-details-of-reporting"></a>Ändra format för att samla in information om rapportering
-1. Gå till Organisationsadministration > Elektronisk rapportering > Konfigurationer.
-2. Expandera Intrastat (model) i trädet.
-3. Välj Intrastat Intrastat (model)\Intrastat (format) i trädet.
-4. Klicka på Designer.
-5. Expandera File i trädet.
-6. Expandera FileDeclaration i trädet.
-7. Välj File\Declaration\Data i trädet.
-8. Välj Ett många i fältet Sammansatt.
-    * Konfigurera det här formatelementet om du vill arkivera information om Intrastat-rapporteringen. Det här objektet representerar arkivets rubrikpost.  
-9. Expandera File\Declaration\Data i trädet.
-10. Välj File\Declaration\Data\Item i trädet.
-11. Välj Noll många i fältet Sammansatt.
-    * Konfigurera det här formatelementet om du vill arkivera information om Intrastat-rapporteringen. Det här objektet representerar listan med arkiverade rader.  
-12. Expandera File\Declaration\Data\Item i trädet.
-13. Välj File\Declaration\Data\Item\Dim1 i trädet.
-14. Välj Ja i fältet Exkluderad.
-    * Du ska inte att arkivera dessa data, så du kan utelämna detta formatelement från datakällan i informationen för Intrastat-rapportering.  
-15. Expandera File\Declaration\Data\Item\Dim1 i trädet.
-16. Välj File\Declaration\Data\Item\Dim1\property i trädet.
-17. Välj Ja i fältet Exkluderad.
-18. Välj File\Declaration\Data\Item\Dim1\date i trädet.
-19. Välj Ja i fältet Exkluderad.
-20. Välj File\Declaration\Data\Item\Dim2 i trädet.
-21. Välj Ja i fältet Exkluderad.
-22. Expandera File\Declaration\Data\Item\Dim2 i trädet.
-23. Välj File\Declaration\Data\Item\Dim2\property i trädet.
-24. Välj Ja i fältet Exkluderad.
-25. Välj File\Declaration\Data\Item\Dim2\code i trädet.
-26. Välj Ja i fältet Exkluderad.
-27. Välj File\Declaration\Data\Item\Dim3 i trädet.
-    * Flera formatelement kan ha samma namn. Till exempel Dim. Du kan inte uttryckligen känna igen dem när du använder det här formatet som en datakälla för arkivering av Intrastat-rapporteringsinformation, så du måste definiera alternativa namn på dessa formatelement.   
-28. Skriv "Belopp" i fältet Namn.
-    * Tid  
-29. Välj Exakt ett i fältet Sammansatt.
-30. Välj File\Declaration\Data\Item\Dim4 i trädet.
-31. Skriv "Artikel" i fältet Namn.
-    * Artikel  
-32. Välj Exakt ett i fältet Sammansatt.
-    * Förutom designformatelementen måste följande information för Intrastat-rapportering arkiveras: unik postidentifiering för varje rapporterad vara och namnet på den genererade filen. Eftersom dessa data inte att fylls i i Intrastat-rapporten, måste du lägga till det format som hör till dessa informationselement som datakällsartiklar.  
-33. Välj File\Declaration\Data i trädet.
-34. Klicka på Lägg till för att öppna dialogrutan.
-35. Välj Data source\Item i trädet.
-36. Ange "File name" i namnfältet.
-    * Filnamn  
-37. Välj Datatyp i fältet Artikeltyp.
-38. Klicka på OK.
-39. Välj File\Declaration\Data\Item i trädet.
-40. Klicka på Lägg till artikel.
-41. Skriv "Commodity rec id" i namnfältet.
-    * Artikelpost-ID  
-42. Välj Int64 i fältet Datatyp.
-43. Klicka på OK.
-44. Klicka på fliken Mappning.
-45. Välj File\Declaration\Data\File name i trädet.
-46. Klicka på Bind.
-47. Expandera "modell" i trädet.
-48. Expandera model\Transactions i trädet.
-49. Välj File\Declaration\Data\Item =  model.Transactions\Commodity rec id i trädet.
-50. Välj model\Transactions\Commodity rec id i trädet.
-51. Klicka på Bind.
-52. Klicka på Spara.
+## <a name="modify-format-to-collect-details-of-reporting"></a><span data-ttu-id="a3b54-109">Ändra format för att samla in information om rapportering</span><span class="sxs-lookup"><span data-stu-id="a3b54-109">Modify format to collect details of reporting</span></span>
+1. <span data-ttu-id="a3b54-110">Gå till Organisationsadministration > Elektronisk rapportering > Konfigurationer.</span><span class="sxs-lookup"><span data-stu-id="a3b54-110">Go to Organization administration > Electronic reporting > Configurations.</span></span>
+2. <span data-ttu-id="a3b54-111">Expandera Intrastat (model) i trädet.</span><span class="sxs-lookup"><span data-stu-id="a3b54-111">In the tree, expand 'Intrastat (model)'.</span></span>
+3. <span data-ttu-id="a3b54-112">Välj Intrastat Intrastat (model)\Intrastat (format) i trädet.</span><span class="sxs-lookup"><span data-stu-id="a3b54-112">In the tree, select 'Intrastat (model)\Intrastat (format)'.</span></span>
+4. <span data-ttu-id="a3b54-113">Klicka på Designer.</span><span class="sxs-lookup"><span data-stu-id="a3b54-113">Click Designer.</span></span>
+5. <span data-ttu-id="a3b54-114">Expandera File i trädet.</span><span class="sxs-lookup"><span data-stu-id="a3b54-114">In the tree, expand 'File'.</span></span>
+6. <span data-ttu-id="a3b54-115">Expandera FileDeclaration i trädet.</span><span class="sxs-lookup"><span data-stu-id="a3b54-115">In the tree, expand 'File\Declaration'.</span></span>
+7. <span data-ttu-id="a3b54-116">Välj File\Declaration\Data i trädet.</span><span class="sxs-lookup"><span data-stu-id="a3b54-116">In the tree, select 'File\Declaration\Data'.</span></span>
+8. <span data-ttu-id="a3b54-117">Välj Ett många i fältet Sammansatt.</span><span class="sxs-lookup"><span data-stu-id="a3b54-117">In the Multiplicity field, select 'One many'.</span></span>
+    * <span data-ttu-id="a3b54-118">Konfigurera det här formatelementet om du vill arkivera information om Intrastat-rapporteringen.</span><span class="sxs-lookup"><span data-stu-id="a3b54-118">Configure this format element to archive details of the Intrastat reporting process.</span></span> <span data-ttu-id="a3b54-119">Det här objektet representerar arkivets rubrikpost.</span><span class="sxs-lookup"><span data-stu-id="a3b54-119">This item represents the archive’s header record.</span></span>  
+9. <span data-ttu-id="a3b54-120">Expandera File\Declaration\Data i trädet.</span><span class="sxs-lookup"><span data-stu-id="a3b54-120">In the tree, expand 'File\Declaration\Data'.</span></span>
+10. <span data-ttu-id="a3b54-121">Välj File\Declaration\Data\Item i trädet.</span><span class="sxs-lookup"><span data-stu-id="a3b54-121">In the tree, select 'File\Declaration\Data\Item'.</span></span>
+11. <span data-ttu-id="a3b54-122">Välj Noll många i fältet Sammansatt.</span><span class="sxs-lookup"><span data-stu-id="a3b54-122">In the Multiplicity field, select 'Zero many'.</span></span>
+    * <span data-ttu-id="a3b54-123">Konfigurera det här formatelementet om du vill arkivera information om Intrastat-rapporteringen.</span><span class="sxs-lookup"><span data-stu-id="a3b54-123">Configure this format element to archive details of the Intrastat reporting process.</span></span> <span data-ttu-id="a3b54-124">Det här objektet representerar listan med arkiverade rader.</span><span class="sxs-lookup"><span data-stu-id="a3b54-124">This item will represent the list of archived lines.</span></span>  
+12. <span data-ttu-id="a3b54-125">Expandera File\Declaration\Data\Item i trädet.</span><span class="sxs-lookup"><span data-stu-id="a3b54-125">In the tree, expand 'File\Declaration\Data\Item'.</span></span>
+13. <span data-ttu-id="a3b54-126">Välj File\Declaration\Data\Item\Dim1 i trädet.</span><span class="sxs-lookup"><span data-stu-id="a3b54-126">In the tree, select 'File\Declaration\Data\Item\Dim1'.</span></span>
+14. <span data-ttu-id="a3b54-127">Välj Ja i fältet Exkluderad.</span><span class="sxs-lookup"><span data-stu-id="a3b54-127">Select Yes in the Excluded field.</span></span>
+    * <span data-ttu-id="a3b54-128">Du ska inte att arkivera dessa data, så du kan utelämna detta formatelement från datakällan i informationen för Intrastat-rapportering.</span><span class="sxs-lookup"><span data-stu-id="a3b54-128">You will not archive this data, so you can exclude this format element from the data source of Intrastat reporting details.</span></span>  
+15. <span data-ttu-id="a3b54-129">Expandera File\Declaration\Data\Item\Dim1 i trädet.</span><span class="sxs-lookup"><span data-stu-id="a3b54-129">In the tree, expand 'File\Declaration\Data\Item\Dim1'.</span></span>
+16. <span data-ttu-id="a3b54-130">Välj File\Declaration\Data\Item\Dim1\property i trädet.</span><span class="sxs-lookup"><span data-stu-id="a3b54-130">In the tree, select 'File\Declaration\Data\Item\Dim1\property'.</span></span>
+17. <span data-ttu-id="a3b54-131">Välj Ja i fältet Exkluderad.</span><span class="sxs-lookup"><span data-stu-id="a3b54-131">Select Yes in the Excluded field.</span></span>
+18. <span data-ttu-id="a3b54-132">Välj File\Declaration\Data\Item\Dim1\date i trädet.</span><span class="sxs-lookup"><span data-stu-id="a3b54-132">In the tree, select 'File\Declaration\Data\Item\Dim1\date'.</span></span>
+19. <span data-ttu-id="a3b54-133">Välj Ja i fältet Exkluderad.</span><span class="sxs-lookup"><span data-stu-id="a3b54-133">Select Yes in the Excluded field.</span></span>
+20. <span data-ttu-id="a3b54-134">Välj File\Declaration\Data\Item\Dim2 i trädet.</span><span class="sxs-lookup"><span data-stu-id="a3b54-134">In the tree, select 'File\Declaration\Data\Item\Dim2'.</span></span>
+21. <span data-ttu-id="a3b54-135">Välj Ja i fältet Exkluderad.</span><span class="sxs-lookup"><span data-stu-id="a3b54-135">Select Yes in the Excluded field.</span></span>
+22. <span data-ttu-id="a3b54-136">Expandera File\Declaration\Data\Item\Dim2 i trädet.</span><span class="sxs-lookup"><span data-stu-id="a3b54-136">In the tree, expand 'File\Declaration\Data\Item\Dim2'.</span></span>
+23. <span data-ttu-id="a3b54-137">Välj File\Declaration\Data\Item\Dim2\property i trädet.</span><span class="sxs-lookup"><span data-stu-id="a3b54-137">In the tree, select 'File\Declaration\Data\Item\Dim2\property'.</span></span>
+24. <span data-ttu-id="a3b54-138">Välj Ja i fältet Exkluderad.</span><span class="sxs-lookup"><span data-stu-id="a3b54-138">Select Yes in the Excluded field.</span></span>
+25. <span data-ttu-id="a3b54-139">Välj File\Declaration\Data\Item\Dim2\code i trädet.</span><span class="sxs-lookup"><span data-stu-id="a3b54-139">In the tree, select 'File\Declaration\Data\Item\Dim2\code'.</span></span>
+26. <span data-ttu-id="a3b54-140">Välj Ja i fältet Exkluderad.</span><span class="sxs-lookup"><span data-stu-id="a3b54-140">Select Yes in the Excluded field.</span></span>
+27. <span data-ttu-id="a3b54-141">Välj File\Declaration\Data\Item\Dim3 i trädet.</span><span class="sxs-lookup"><span data-stu-id="a3b54-141">In the tree, select 'File\Declaration\Data\Item\Dim3'.</span></span>
+    * <span data-ttu-id="a3b54-142">Flera formatelement kan ha samma namn.</span><span class="sxs-lookup"><span data-stu-id="a3b54-142">Several format elements can have the same name.</span></span> <span data-ttu-id="a3b54-143">Till exempel Dim.</span><span class="sxs-lookup"><span data-stu-id="a3b54-143">For example, Dim.</span></span> <span data-ttu-id="a3b54-144">Du kan inte uttryckligen känna igen dem när du använder det här formatet som en datakälla för arkivering av Intrastat-rapporteringsinformation, så du måste definiera alternativa namn på dessa formatelement.</span><span class="sxs-lookup"><span data-stu-id="a3b54-144">You cannot explicitly recognize them when you use this format as a data source for archiving Intrastat reporting details, so you need to define the alternative names for these format elements.</span></span>   
+28. <span data-ttu-id="a3b54-145">Skriv "Belopp" i fältet Namn.</span><span class="sxs-lookup"><span data-stu-id="a3b54-145">In the Name field, type 'Amount'.</span></span>
+    * <span data-ttu-id="a3b54-146">Tid</span><span class="sxs-lookup"><span data-stu-id="a3b54-146">Amount</span></span>  
+29. <span data-ttu-id="a3b54-147">Välj Exakt ett i fältet Sammansatt.</span><span class="sxs-lookup"><span data-stu-id="a3b54-147">In the Multiplicity field, select 'Exactly one'.</span></span>
+30. <span data-ttu-id="a3b54-148">Välj File\Declaration\Data\Item\Dim4 i trädet.</span><span class="sxs-lookup"><span data-stu-id="a3b54-148">In the tree, select 'File\Declaration\Data\Item\Dim4'.</span></span>
+31. <span data-ttu-id="a3b54-149">Skriv "Artikel" i fältet Namn.</span><span class="sxs-lookup"><span data-stu-id="a3b54-149">In the Name field, type 'Item'.</span></span>
+    * <span data-ttu-id="a3b54-150">Artikel</span><span class="sxs-lookup"><span data-stu-id="a3b54-150">Item</span></span>  
+32. <span data-ttu-id="a3b54-151">Välj Exakt ett i fältet Sammansatt.</span><span class="sxs-lookup"><span data-stu-id="a3b54-151">In the Multiplicity field, select 'Exactly one'.</span></span>
+    * <span data-ttu-id="a3b54-152">Förutom designformatelementen måste följande information för Intrastat-rapportering arkiveras: unik postidentifiering för varje rapporterad vara och namnet på den genererade filen.</span><span class="sxs-lookup"><span data-stu-id="a3b54-152">In addition to the design format elements, the following Intrastat reporting details must be archived: unique record identification of each reported commodity item and name of the generated file.</span></span> <span data-ttu-id="a3b54-153">Eftersom dessa data inte att fylls i i Intrastat-rapporten, måste du lägga till det format som hör till dessa informationselement som datakällsartiklar.</span><span class="sxs-lookup"><span data-stu-id="a3b54-153">Because this data will not be populated in the Intrastat report, you need to add the format that is related to these detail elements as data source items.</span></span>  
+33. <span data-ttu-id="a3b54-154">Välj File\Declaration\Data i trädet.</span><span class="sxs-lookup"><span data-stu-id="a3b54-154">In the tree, select 'File\Declaration\Data'.</span></span>
+34. <span data-ttu-id="a3b54-155">Klicka på Lägg till för att öppna dialogrutan.</span><span class="sxs-lookup"><span data-stu-id="a3b54-155">Click Add to open the drop dialog.</span></span>
+35. <span data-ttu-id="a3b54-156">Välj Data source\Item i trädet.</span><span class="sxs-lookup"><span data-stu-id="a3b54-156">In the tree, select 'Data source\Item'.</span></span>
+36. <span data-ttu-id="a3b54-157">Ange "File name" i namnfältet.</span><span class="sxs-lookup"><span data-stu-id="a3b54-157">In the Name field, type 'File name'.</span></span>
+    * <span data-ttu-id="a3b54-158">Filnamn</span><span class="sxs-lookup"><span data-stu-id="a3b54-158">File name</span></span>  
+37. <span data-ttu-id="a3b54-159">Välj Datatyp i fältet Artikeltyp.</span><span class="sxs-lookup"><span data-stu-id="a3b54-159">In the Data type field, select 'String'.</span></span>
+38. <span data-ttu-id="a3b54-160">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="a3b54-160">Click OK.</span></span>
+39. <span data-ttu-id="a3b54-161">Välj File\Declaration\Data\Item i trädet.</span><span class="sxs-lookup"><span data-stu-id="a3b54-161">In the tree, select 'File\Declaration\Data\Item'.</span></span>
+40. <span data-ttu-id="a3b54-162">Klicka på Lägg till artikel.</span><span class="sxs-lookup"><span data-stu-id="a3b54-162">Click Add Item.</span></span>
+41. <span data-ttu-id="a3b54-163">Skriv "Commodity rec id" i namnfältet.</span><span class="sxs-lookup"><span data-stu-id="a3b54-163">In the Name field, type 'Commodity rec id'.</span></span>
+    * <span data-ttu-id="a3b54-164">Artikelpost-ID</span><span class="sxs-lookup"><span data-stu-id="a3b54-164">Commodity rec id</span></span>  
+42. <span data-ttu-id="a3b54-165">Välj Int64 i fältet Datatyp.</span><span class="sxs-lookup"><span data-stu-id="a3b54-165">In the Data type field, select 'Int64'.</span></span>
+43. <span data-ttu-id="a3b54-166">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="a3b54-166">Click OK.</span></span>
+44. <span data-ttu-id="a3b54-167">Klicka på fliken Mappning.</span><span class="sxs-lookup"><span data-stu-id="a3b54-167">Click the Mapping tab.</span></span>
+45. <span data-ttu-id="a3b54-168">Välj File\Declaration\Data\File name i trädet.</span><span class="sxs-lookup"><span data-stu-id="a3b54-168">In the tree, select 'File\Declaration\Data\File name'.</span></span>
+46. <span data-ttu-id="a3b54-169">Klicka på Bind.</span><span class="sxs-lookup"><span data-stu-id="a3b54-169">Click Bind.</span></span>
+47. <span data-ttu-id="a3b54-170">Expandera "modell" i trädet.</span><span class="sxs-lookup"><span data-stu-id="a3b54-170">In the tree, expand 'model'.</span></span>
+48. <span data-ttu-id="a3b54-171">Expandera model\Transactions i trädet.</span><span class="sxs-lookup"><span data-stu-id="a3b54-171">In the tree, expand 'model\Transactions'.</span></span>
+49. <span data-ttu-id="a3b54-172">Välj File\Declaration\Data\Item =  model.Transactions\Commodity rec id i trädet.</span><span class="sxs-lookup"><span data-stu-id="a3b54-172">In the tree, select 'File\Declaration\Data\Item =  model.Transactions\Commodity rec id'.</span></span>
+50. <span data-ttu-id="a3b54-173">Välj model\Transactions\Commodity rec id i trädet.</span><span class="sxs-lookup"><span data-stu-id="a3b54-173">In the tree, select 'model\Transactions\Commodity rec id'.</span></span>
+51. <span data-ttu-id="a3b54-174">Klicka på Bind.</span><span class="sxs-lookup"><span data-stu-id="a3b54-174">Click Bind.</span></span>
+52. <span data-ttu-id="a3b54-175">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="a3b54-175">Click Save.</span></span>
 
-## <a name="modify-format-to-memorize-details-of-reporting"></a>Ändra format för att memorera information om rapportering
-1. Klicka på Mappa format till modell.
-2. Klicka på Ny.
-3. Ange eller välj ett värde för rotobjektet For application data update i fältet Definition.
-    * För uppdatering av programdata  
-4. Skriv "Mapping to update data" i namnfältet.
-    * Mappning för att uppdatera data  
-5. Klicka på Spara.
-    * Den här mappningen avgör hur information om Intrastat-rapporten samlas in i datamodellen, strukturen som anges av det valda rotobjektet "For application data update". Dessa uppgifter, modellmappningen med samma rotobjekt "For application data update" och riktningen "To destination" används för uppdatering av programdata. Uppdateringen av programdata inleds omedelbart efter att den utgående Intrastat-rapporten har genererats. Observera att uppdateringen av programdata kan hoppas över under körning, men datamodellen måste vara tom (innehåller en tom postlista).   
-6. Klicka på Designer.
-    * Observera att formatet för den utgående Intrastat-rapporten läggs till som standard som datakälla för den här modellmappningen.  
-    * Bind elementen i den utformade rapporten (visas som datakälla) till elementen i datamodellen, som filtreras utifrån den valda modellens rotobjekt.  
-7. Expandera Archive header i trädet.
-8. Expandera Archive header\Archive lines i trädet.
-9. Expandera format i trädet.
-10. Expandera format\Declaration: XML Element(Declaration) i trädet.
-11. Expandera format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data) i trädet.
-12. Expandera format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item) i trädet.
-13. Expandera format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Dim3: XML Element 1..1 (Amount) i trädet.
-14. Expandera format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Dim4: XML Element 1..1 (Item) i trädet.
-15. Välj Archive header\Number of lines i trädet.
-16. Klicka på Redigera.
-17. Välj ListCOUNT i trädet.
-18. Klicka på funktionen Lägg till.
-19. Expandera format i trädet.
-20. Expandera format\Declaration: XML Element(Declaration) i trädet.
-21. Expandera format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data) i trädet.
-22. Välj format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item) i trädet.
-23. Klicka på Lägg till datakälla.
-24. Skriv "COUNT(format.Declaration.Data.Item)" i formelfältet.
-    * COUNT(format.Declaration.Data.Item)  
-25. Klicka på Spara.
-26. Stäng sidan.
-27. Välj Archive header\File name i trädet.
-28. Välj format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\File name: Item String(File name) i trädet.
-29. Klicka på Bind.
-30. Välj format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Dim4: XML Element 1..1 (Item)\number: String(number) i trädet.
-31. Välj Archive header\Archive lines\Item number i trädet.
-32. Klicka på Bind.
-33. Välj format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Dim3: XML Element 1..1 (Amount)\value: Numeric Real(value) i trädet.
-34. Välj Archive header\Archive lines\Amount i trädet.
-35. Klicka på Bind.
-36. Välj format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Commodity rec id: Item Int64(Commodity rec id) i trädet.
-37. Välj Archive header\Archive lines\Commodity rec id i trädet.
-38. Klicka på Bind.
-39. Välj Archive header\Archive lines i trädet.
-40. Välj format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item) i trädet.
-41. Klicka på Bind.
-42. Välj Archive header i trädet.
-43. Välj format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data).
-44. Klicka på Bind.
-45. Klicka på Spara.
-46. Stäng sidan.
-47. Stäng sidan.
-48. Stäng sidan.
+## <a name="modify-format-to-memorize-details-of-reporting"></a><span data-ttu-id="a3b54-176">Ändra format för att memorera information om rapportering</span><span class="sxs-lookup"><span data-stu-id="a3b54-176">Modify format to memorize details of reporting</span></span>
+1. <span data-ttu-id="a3b54-177">Klicka på Mappa format till modell.</span><span class="sxs-lookup"><span data-stu-id="a3b54-177">Click Map format to model.</span></span>
+2. <span data-ttu-id="a3b54-178">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="a3b54-178">Click New.</span></span>
+3. <span data-ttu-id="a3b54-179">Ange eller välj ett värde för rotobjektet For application data update i fältet Definition.</span><span class="sxs-lookup"><span data-stu-id="a3b54-179">In the Definition field, enter or select the ‘For application data update’ root item.</span></span>
+    * <span data-ttu-id="a3b54-180">För uppdatering av programdata</span><span class="sxs-lookup"><span data-stu-id="a3b54-180">For application data update</span></span>  
+4. <span data-ttu-id="a3b54-181">Skriv "Mapping to update data" i namnfältet.</span><span class="sxs-lookup"><span data-stu-id="a3b54-181">In the Name field, type 'Mapping to update data'.</span></span>
+    * <span data-ttu-id="a3b54-182">Mappning för att uppdatera data</span><span class="sxs-lookup"><span data-stu-id="a3b54-182">Mapping to update data</span></span>  
+5. <span data-ttu-id="a3b54-183">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="a3b54-183">Click Save.</span></span>
+    * <span data-ttu-id="a3b54-184">Den här mappningen avgör hur information om Intrastat-rapporten samlas in i datamodellen, strukturen som anges av det valda rotobjektet "For application data update".</span><span class="sxs-lookup"><span data-stu-id="a3b54-184">This mapping defines how the details of the Intrastat report are collected in the data model, the structure of which is specified by the selected root item ‘For application data update’.</span></span> <span data-ttu-id="a3b54-185">Dessa uppgifter, modellmappningen med samma rotobjekt "For application data update" och riktningen "To destination" används för uppdatering av programdata.</span><span class="sxs-lookup"><span data-stu-id="a3b54-185">These details, the model mapping with same root item ‘For application data update’, and the direction ‘To destination’ will be used for the application data update.</span></span> <span data-ttu-id="a3b54-186">Uppdateringen av programdata inleds omedelbart efter att den utgående Intrastat-rapporten har genererats.</span><span class="sxs-lookup"><span data-stu-id="a3b54-186">The application data update starts immediately after the outgoing Intrastat report is generated.</span></span> <span data-ttu-id="a3b54-187">Observera att uppdateringen av programdata kan hoppas över under körning, men datamodellen måste vara tom (innehåller en tom postlista).</span><span class="sxs-lookup"><span data-stu-id="a3b54-187">Note that the application data update can be skipped at run-time, but the data model must be empty (containing empty record list).</span></span>   
+6. <span data-ttu-id="a3b54-188">Klicka på Designer.</span><span class="sxs-lookup"><span data-stu-id="a3b54-188">Click Designer.</span></span>
+    * <span data-ttu-id="a3b54-189">Observera att formatet för den utgående Intrastat-rapporten läggs till som standard som datakälla för den här modellmappningen.</span><span class="sxs-lookup"><span data-stu-id="a3b54-189">Note that the outgoing Intrastat report format is added by default as a data source for this model mapping.</span></span>  
+    * <span data-ttu-id="a3b54-190">Bind elementen i den utformade rapporten (visas som datakälla) till elementen i datamodellen, som filtreras utifrån den valda modellens rotobjekt.</span><span class="sxs-lookup"><span data-stu-id="a3b54-190">Bind elements of the designed report (presented as data source) to elements of the data model, which is filtered based on the selected model’s root item.</span></span>  
+7. <span data-ttu-id="a3b54-191">Expandera Archive header i trädet.</span><span class="sxs-lookup"><span data-stu-id="a3b54-191">In the tree, expand 'Archive header'.</span></span>
+8. <span data-ttu-id="a3b54-192">Expandera Archive header\Archive lines i trädet.</span><span class="sxs-lookup"><span data-stu-id="a3b54-192">In the tree, expand 'Archive header\Archive lines'.</span></span>
+9. <span data-ttu-id="a3b54-193">Expandera format i trädet.</span><span class="sxs-lookup"><span data-stu-id="a3b54-193">In the tree, expand 'format'.</span></span>
+10. <span data-ttu-id="a3b54-194">Expandera format\Declaration: XML Element(Declaration) i trädet.</span><span class="sxs-lookup"><span data-stu-id="a3b54-194">In the tree, expand 'format\Declaration: XML Element(Declaration)'.</span></span>
+11. <span data-ttu-id="a3b54-195">Expandera format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data) i trädet.</span><span class="sxs-lookup"><span data-stu-id="a3b54-195">In the tree, expand 'format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)'.</span></span>
+12. <span data-ttu-id="a3b54-196">Expandera format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item) i trädet.</span><span class="sxs-lookup"><span data-stu-id="a3b54-196">In the tree, expand 'format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)'.</span></span>
+13. <span data-ttu-id="a3b54-197">Expandera format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Dim3: XML Element 1..1 (Amount) i trädet.</span><span class="sxs-lookup"><span data-stu-id="a3b54-197">In the tree, expand 'format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Dim3: XML Element 1..1 (Amount)'.</span></span>
+14. <span data-ttu-id="a3b54-198">Expandera format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Dim4: XML Element 1..1 (Item) i trädet.</span><span class="sxs-lookup"><span data-stu-id="a3b54-198">In the tree, expand 'format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Dim4: XML Element 1..1 (Item)'.</span></span>
+15. <span data-ttu-id="a3b54-199">Välj Archive header\Number of lines i trädet.</span><span class="sxs-lookup"><span data-stu-id="a3b54-199">In the tree, select 'Archive header\Number of lines'.</span></span>
+16. <span data-ttu-id="a3b54-200">Klicka på Redigera.</span><span class="sxs-lookup"><span data-stu-id="a3b54-200">Click Edit.</span></span>
+17. <span data-ttu-id="a3b54-201">Välj ListCOUNT i trädet.</span><span class="sxs-lookup"><span data-stu-id="a3b54-201">In the tree, select 'List\COUNT'.</span></span>
+18. <span data-ttu-id="a3b54-202">Klicka på funktionen Lägg till.</span><span class="sxs-lookup"><span data-stu-id="a3b54-202">Click Add function.</span></span>
+19. <span data-ttu-id="a3b54-203">Expandera format i trädet.</span><span class="sxs-lookup"><span data-stu-id="a3b54-203">In the tree, expand 'format'.</span></span>
+20. <span data-ttu-id="a3b54-204">Expandera format\Declaration: XML Element(Declaration) i trädet.</span><span class="sxs-lookup"><span data-stu-id="a3b54-204">In the tree, expand 'format\Declaration: XML Element(Declaration)'.</span></span>
+21. <span data-ttu-id="a3b54-205">Expandera format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data) i trädet.</span><span class="sxs-lookup"><span data-stu-id="a3b54-205">In the tree, expand 'format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)'.</span></span>
+22. <span data-ttu-id="a3b54-206">Välj format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item) i trädet.</span><span class="sxs-lookup"><span data-stu-id="a3b54-206">In the tree, select 'format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)'.</span></span>
+23. <span data-ttu-id="a3b54-207">Klicka på Lägg till datakälla.</span><span class="sxs-lookup"><span data-stu-id="a3b54-207">Click Add data source.</span></span>
+24. <span data-ttu-id="a3b54-208">Skriv "COUNT(format.Declaration.Data.Item)" i formelfältet.</span><span class="sxs-lookup"><span data-stu-id="a3b54-208">In the Formula field, enter 'COUNT(format.Declaration.Data.Item)'.</span></span>
+    * <span data-ttu-id="a3b54-209">COUNT(format.Declaration.Data.Item)</span><span class="sxs-lookup"><span data-stu-id="a3b54-209">COUNT(format.Declaration.Data.Item)</span></span>  
+25. <span data-ttu-id="a3b54-210">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="a3b54-210">Click Save.</span></span>
+26. <span data-ttu-id="a3b54-211">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="a3b54-211">Close the page.</span></span>
+27. <span data-ttu-id="a3b54-212">Välj Archive header\File name i trädet.</span><span class="sxs-lookup"><span data-stu-id="a3b54-212">In the tree, select 'Archive header\File name'.</span></span>
+28. <span data-ttu-id="a3b54-213">Välj format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\File name: Item String(File name) i trädet.</span><span class="sxs-lookup"><span data-stu-id="a3b54-213">In the tree, select 'format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\File name: Item String(File name)'.</span></span>
+29. <span data-ttu-id="a3b54-214">Klicka på Bind.</span><span class="sxs-lookup"><span data-stu-id="a3b54-214">Click Bind.</span></span>
+30. <span data-ttu-id="a3b54-215">Välj format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Dim4: XML Element 1..1 (Item)\number: String(number) i trädet.</span><span class="sxs-lookup"><span data-stu-id="a3b54-215">In the tree, select 'format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Dim4: XML Element 1..1 (Item)\number: String(number)'.</span></span>
+31. <span data-ttu-id="a3b54-216">Välj Archive header\Archive lines\Item number i trädet.</span><span class="sxs-lookup"><span data-stu-id="a3b54-216">In the tree, select 'Archive header\Archive lines\Item number'.</span></span>
+32. <span data-ttu-id="a3b54-217">Klicka på Bind.</span><span class="sxs-lookup"><span data-stu-id="a3b54-217">Click Bind.</span></span>
+33. <span data-ttu-id="a3b54-218">Välj format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Dim3: XML Element 1..1 (Amount)\value: Numeric Real(value) i trädet.</span><span class="sxs-lookup"><span data-stu-id="a3b54-218">In the tree, select 'format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Dim3: XML Element 1..1 (Amount)\value: Numeric Real(value)'.</span></span>
+34. <span data-ttu-id="a3b54-219">Välj Archive header\Archive lines\Amount i trädet.</span><span class="sxs-lookup"><span data-stu-id="a3b54-219">In the tree, select 'Archive header\Archive lines\Amount'.</span></span>
+35. <span data-ttu-id="a3b54-220">Klicka på Bind.</span><span class="sxs-lookup"><span data-stu-id="a3b54-220">Click Bind.</span></span>
+36. <span data-ttu-id="a3b54-221">Välj format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Commodity rec id: Item Int64(Commodity rec id) i trädet.</span><span class="sxs-lookup"><span data-stu-id="a3b54-221">In the tree, select 'format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)\Commodity rec id: Item Int64(Commodity rec id)'.</span></span>
+37. <span data-ttu-id="a3b54-222">Välj Archive header\Archive lines\Commodity rec id i trädet.</span><span class="sxs-lookup"><span data-stu-id="a3b54-222">In the tree, select 'Archive header\Archive lines\Commodity rec id'.</span></span>
+38. <span data-ttu-id="a3b54-223">Klicka på Bind.</span><span class="sxs-lookup"><span data-stu-id="a3b54-223">Click Bind.</span></span>
+39. <span data-ttu-id="a3b54-224">Välj Archive header\Archive lines i trädet.</span><span class="sxs-lookup"><span data-stu-id="a3b54-224">In the tree, select 'Archive header\Archive lines'.</span></span>
+40. <span data-ttu-id="a3b54-225">Välj format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item) i trädet.</span><span class="sxs-lookup"><span data-stu-id="a3b54-225">In the tree, select 'format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)\Item: XML Element 0..* (Item)'.</span></span>
+41. <span data-ttu-id="a3b54-226">Klicka på Bind.</span><span class="sxs-lookup"><span data-stu-id="a3b54-226">Click Bind.</span></span>
+42. <span data-ttu-id="a3b54-227">Välj Archive header i trädet.</span><span class="sxs-lookup"><span data-stu-id="a3b54-227">In the tree, select 'Archive header'.</span></span>
+43. <span data-ttu-id="a3b54-228">Välj format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data).</span><span class="sxs-lookup"><span data-stu-id="a3b54-228">In the tree, select 'format\Declaration: XML Element(Declaration)\Data: XML Element 1..* (Data)'.</span></span>
+44. <span data-ttu-id="a3b54-229">Klicka på Bind.</span><span class="sxs-lookup"><span data-stu-id="a3b54-229">Click Bind.</span></span>
+45. <span data-ttu-id="a3b54-230">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="a3b54-230">Click Save.</span></span>
+46. <span data-ttu-id="a3b54-231">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="a3b54-231">Close the page.</span></span>
+47. <span data-ttu-id="a3b54-232">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="a3b54-232">Close the page.</span></span>
+48. <span data-ttu-id="a3b54-233">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="a3b54-233">Close the page.</span></span>
 
 

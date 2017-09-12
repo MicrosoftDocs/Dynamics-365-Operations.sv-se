@@ -16,57 +16,57 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: ab453d3ee44e206aea148de8dc3b428dc5056576
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 0ea1e70f94e4b81919512127578d5927b36db56f
 ms.contentlocale: sv-se
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="import-a-configuration-from-lifecycle-services-for-electronic-reporting-er"></a>Importera en konfiguration från Lifecycle Services för elektronisk rapportering (ER)
+# <a name="import-a-configuration-from-lifecycle-services-for-electronic-reporting-er"></a><span data-ttu-id="0ce8c-103">Importera en konfiguration från Lifecycle Services för elektronisk rapportering (ER)</span><span class="sxs-lookup"><span data-stu-id="0ce8c-103">Import a configuration from Lifecycle Services for electronic reporting (ER)</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-I följande steg förklaras hur en användare i rollen Systemadministratör eller Utvecklare för elektronisk rapportering kan importera en ny version av en konfiguration för elektronisk rapportering (ER) från Microsoft Lifecycle Services (LCS).
+<span data-ttu-id="0ce8c-104">I följande steg förklaras hur en användare i rollen Systemadministratör eller Utvecklare för elektronisk rapportering kan importera en ny version av en konfiguration för elektronisk rapportering (ER) från Microsoft Lifecycle Services (LCS).</span><span class="sxs-lookup"><span data-stu-id="0ce8c-104">The following steps explain how a user in the System Administrator or Electronic Reporting Developer role can import a new version of an Electronic reporting (ER) configuration from Microsoft Lifecycle Services (LCS).</span></span>
 
-I det här exemplet ska du välja önskad versio av ER-konfigurationen och importera den för exempelföretaget, Litware, Inc. Dessa steg kan utföras i alla företag eftersom ER-konfigureringar delas mellan företag. För att slutföra dessa steg måste du först slutföra stegen i proceduren "Överföra en ER-konfiguration till Lifecycle Services”. Åtkomst till LCS krävs även för att slutföra dessa steg.
+<span data-ttu-id="0ce8c-105">I det här exemplet ska du välja önskad versio av ER-konfigurationen och importera den för exempelföretaget, Litware, Inc. Dessa steg kan utföras i alla företag eftersom ER-konfigureringar delas mellan företag.</span><span class="sxs-lookup"><span data-stu-id="0ce8c-105">In this example, you will select the desired version of the ER configuration and import it for sample company, Litware, Inc. These steps can be performed in any company as ER configurations are shared among companies.</span></span> <span data-ttu-id="0ce8c-106">För att slutföra dessa steg måste du först slutföra stegen i proceduren "Överföra en ER-konfiguration till Lifecycle Services”.</span><span class="sxs-lookup"><span data-stu-id="0ce8c-106">To complete these steps, you must first complete the steps in the “Upload an ER configuration into Lifecycle Services” procedure.</span></span> <span data-ttu-id="0ce8c-107">Åtkomst till LCS krävs även för att slutföra dessa steg.</span><span class="sxs-lookup"><span data-stu-id="0ce8c-107">Access to LCS is also required for completion of these steps.</span></span>
 
-1. Gå till Organisationsadministration > Arbetsytor > Elektronisk rapportering.
-2. Klientkonfigurationer.
+1. <span data-ttu-id="0ce8c-108">Gå till Organisationsadministration > Arbetsytor > Elektronisk rapportering.</span><span class="sxs-lookup"><span data-stu-id="0ce8c-108">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
+2. <span data-ttu-id="0ce8c-109">Klientkonfigurationer.</span><span class="sxs-lookup"><span data-stu-id="0ce8c-109">Click Configurations.</span></span>
 
-## <a name="delete-a-shared-version-of-data-model-configuration"></a>Ta bort en delad version av konfiguration av datamodell
-1. Välj "Konfiguration av exempelmodell" i trädet.
-    * Den första versionen av en konfiguration av exempeldatamodell har skapats och har publicerats till LCS under proceduren "Överför en ER-konfiguration till Lifecycle Services". I den här proceduren kommer du ta bort den här versionen av ER-konfigurationen. Denna version av en konfiguration av exempeldatamodell kommer att importeras senare från LCS.  
-2. Hitta och markera önskad post i listan.
-    * Välj versionen av den här konfigurationen som har statusen "Delad". Statusen visar att konfigurationen har publicerats till LCS.  
-3. Klicka på Ändra status.
-4. Klicka på Upphör.
-    * Ändra status för den valda versionen från ”Delad" till "Upphörd" om du vill göra det tillgänglig för radering.  
-5. Klicka på OK.
-6. Hitta och markera önskad post i listan.
-    * Välj versionen av den här konfigurationen som har statusen "Upphörd".  
-7. Klicka på Ta bort.
-8. Klicka på Ja.
-    * Observera att den enda utkastversionen 2 i den valda konfigurationen av datamodell är tillgänglig.  
-9. Stäng sidan.
+## <a name="delete-a-shared-version-of-data-model-configuration"></a><span data-ttu-id="0ce8c-110">Ta bort en delad version av konfiguration av datamodell</span><span class="sxs-lookup"><span data-stu-id="0ce8c-110">Delete a shared version of data model configuration</span></span>
+1. <span data-ttu-id="0ce8c-111">Välj "Konfiguration av exempelmodell" i trädet.</span><span class="sxs-lookup"><span data-stu-id="0ce8c-111">In the tree, select 'Sample model configuration'.</span></span>
+    * <span data-ttu-id="0ce8c-112">Den första versionen av en konfiguration av exempeldatamodell har skapats och har publicerats till LCS under proceduren "Överför en ER-konfiguration till Lifecycle Services".</span><span class="sxs-lookup"><span data-stu-id="0ce8c-112">The first version of a sample data model configuration has been created and published to LCS during the “Upload an ER configuration into Lifecycle Services” procedure.</span></span> <span data-ttu-id="0ce8c-113">I den här proceduren kommer du ta bort den här versionen av ER-konfigurationen.</span><span class="sxs-lookup"><span data-stu-id="0ce8c-113">In this procedure, you will delete this version of the ER configuration.</span></span> <span data-ttu-id="0ce8c-114">Denna version av en konfiguration av exempeldatamodell kommer att importeras senare från LCS.</span><span class="sxs-lookup"><span data-stu-id="0ce8c-114">This version of a sample data model configuration will be imported later from LCS.</span></span>  
+2. <span data-ttu-id="0ce8c-115">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="0ce8c-115">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="0ce8c-116">Välj versionen av den här konfigurationen som har statusen "Delad".</span><span class="sxs-lookup"><span data-stu-id="0ce8c-116">Select the version of this configuration that is in the ‘Shared’ status.</span></span> <span data-ttu-id="0ce8c-117">Statusen visar att konfigurationen har publicerats till LCS.</span><span class="sxs-lookup"><span data-stu-id="0ce8c-117">This status indicates that the configuration has been published to LCS.</span></span>  
+3. <span data-ttu-id="0ce8c-118">Klicka på Ändra status.</span><span class="sxs-lookup"><span data-stu-id="0ce8c-118">Click Change status.</span></span>
+4. <span data-ttu-id="0ce8c-119">Klicka på Upphör.</span><span class="sxs-lookup"><span data-stu-id="0ce8c-119">Click Discontinue.</span></span>
+    * <span data-ttu-id="0ce8c-120">Ändra status för den valda versionen från ”Delad" till "Upphörd" om du vill göra det tillgänglig för radering.</span><span class="sxs-lookup"><span data-stu-id="0ce8c-120">Change the status of the selected version from ‘Shared’ to ‘Discontinued’ to make it available for deletion.</span></span>  
+5. <span data-ttu-id="0ce8c-121">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="0ce8c-121">Click OK.</span></span>
+6. <span data-ttu-id="0ce8c-122">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="0ce8c-122">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="0ce8c-123">Välj versionen av den här konfigurationen som har statusen "Upphörd".</span><span class="sxs-lookup"><span data-stu-id="0ce8c-123">Select the version of this configuration that has a status of ‘Discontinued’.</span></span>  
+7. <span data-ttu-id="0ce8c-124">Klicka på Ta bort.</span><span class="sxs-lookup"><span data-stu-id="0ce8c-124">Click Delete.</span></span>
+8. <span data-ttu-id="0ce8c-125">Klicka på Ja.</span><span class="sxs-lookup"><span data-stu-id="0ce8c-125">Click Yes.</span></span>
+    * <span data-ttu-id="0ce8c-126">Observera att den enda utkastversionen 2 i den valda konfigurationen av datamodell är tillgänglig.</span><span class="sxs-lookup"><span data-stu-id="0ce8c-126">Note that the only draft version 2 of the selected data model configuration is available.</span></span>  
+9. <span data-ttu-id="0ce8c-127">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="0ce8c-127">Close the page.</span></span>
 
-## <a name="import-a-shared-version-of-data-model-configuration-from-lcs"></a>Importera en delad version av konfiguration av datamodell från LCS
-1. Markera vald rad i listan.
-    * Öppna listan över databaser för Litware, Inc. konfigurationsleverantör.  
-2. Klicka på Databaser.
-3. Klicka på Öppna.
-    * Välj LCS-databasen och öppna den.  
-4. Markera vald rad i listan.
-    * Välj den första versionen av "Konfiguration av exempelmodell" i versionlistan.  
-5. Klicka på Importera.
-6. Klicka på Ja.
-    * Bekräfta importen av den valda versionen från LCS.  
-    * Observera att informationmeddelandet (över formuläret) bekräftar lyckad import av den valda versionen.  
-7. Stäng sidan.
-8. Stäng sidan.
-9. Klientkonfigurationer.
-10. Välj "Konfiguration av exempelmodell" i trädet.
-11. Hitta och markera önskad post i listan.
-    * Välj versionen av den här konfigurationen som har statusen "Delad".  
-    * Observera att den enda delade versionen 1 i den valda konfigurationen av datamodell nu också är tillgänglig.  
+## <a name="import-a-shared-version-of-data-model-configuration-from-lcs"></a><span data-ttu-id="0ce8c-128">Importera en delad version av konfiguration av datamodell från LCS</span><span class="sxs-lookup"><span data-stu-id="0ce8c-128">Import a shared version of data model configuration from LCS</span></span>
+1. <span data-ttu-id="0ce8c-129">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="0ce8c-129">In the list, mark the selected row.</span></span>
+    * <span data-ttu-id="0ce8c-130">Öppna listan över databaser för Litware, Inc.</span><span class="sxs-lookup"><span data-stu-id="0ce8c-130">Open the list of repositories for the ‘Litware, Inc.’</span></span> <span data-ttu-id="0ce8c-131">konfigurationsleverantör.</span><span class="sxs-lookup"><span data-stu-id="0ce8c-131">configuration provider.</span></span>  
+2. <span data-ttu-id="0ce8c-132">Klicka på Databaser.</span><span class="sxs-lookup"><span data-stu-id="0ce8c-132">Click Repositories.</span></span>
+3. <span data-ttu-id="0ce8c-133">Klicka på Öppna.</span><span class="sxs-lookup"><span data-stu-id="0ce8c-133">Click Open.</span></span>
+    * <span data-ttu-id="0ce8c-134">Välj LCS-databasen och öppna den.</span><span class="sxs-lookup"><span data-stu-id="0ce8c-134">Select the LCS repository and open it.</span></span>  
+4. <span data-ttu-id="0ce8c-135">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="0ce8c-135">In the list, mark the selected row.</span></span>
+    * <span data-ttu-id="0ce8c-136">Välj den första versionen av "Konfiguration av exempelmodell" i versionlistan.</span><span class="sxs-lookup"><span data-stu-id="0ce8c-136">Select the first version of the 'Sample model configuration' in the versions list.</span></span>  
+5. <span data-ttu-id="0ce8c-137">Klicka på Importera.</span><span class="sxs-lookup"><span data-stu-id="0ce8c-137">Click Import.</span></span>
+6. <span data-ttu-id="0ce8c-138">Klicka på Ja.</span><span class="sxs-lookup"><span data-stu-id="0ce8c-138">Click Yes.</span></span>
+    * <span data-ttu-id="0ce8c-139">Bekräfta importen av den valda versionen från LCS.</span><span class="sxs-lookup"><span data-stu-id="0ce8c-139">Confirm the import of the selected version from LCS .</span></span>  
+    * <span data-ttu-id="0ce8c-140">Observera att informationmeddelandet (över formuläret) bekräftar lyckad import av den valda versionen.</span><span class="sxs-lookup"><span data-stu-id="0ce8c-140">Note that the information message (above the form) confirms the successful completion of the import of the selected version.</span></span>  
+7. <span data-ttu-id="0ce8c-141">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="0ce8c-141">Close the page.</span></span>
+8. <span data-ttu-id="0ce8c-142">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="0ce8c-142">Close the page.</span></span>
+9. <span data-ttu-id="0ce8c-143">Klientkonfigurationer.</span><span class="sxs-lookup"><span data-stu-id="0ce8c-143">Click Configurations.</span></span>
+10. <span data-ttu-id="0ce8c-144">Välj "Konfiguration av exempelmodell" i trädet.</span><span class="sxs-lookup"><span data-stu-id="0ce8c-144">In the tree, select 'Sample model configuration'.</span></span>
+11. <span data-ttu-id="0ce8c-145">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="0ce8c-145">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="0ce8c-146">Välj versionen av den här konfigurationen som har statusen "Delad".</span><span class="sxs-lookup"><span data-stu-id="0ce8c-146">Select the version of this configuration that has a status of ‘Shared’.</span></span>  
+    * <span data-ttu-id="0ce8c-147">Observera att den enda delade versionen 1 i den valda konfigurationen av datamodell nu också är tillgänglig.</span><span class="sxs-lookup"><span data-stu-id="0ce8c-147">Note that the shared version 1 of the selected data model configuration is available now as well.</span></span>  
 
 

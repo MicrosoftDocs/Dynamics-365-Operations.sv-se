@@ -17,86 +17,86 @@ ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 9b947a02be981155053e33a4ef20e19bf2a194a5
-ms.openlocfilehash: dc9793bd59e59c96532549d73c56bad518fa7394
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 1d2381c045f9f0f98b35912fa732f3627b038785
 ms.contentlocale: sv-se
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="define-lean-manufacturing-work-cells"></a>Definiera arbetsgrupper för lean manufacturing
+# <a name="define-lean-manufacturing-work-cells"></a><span data-ttu-id="37d1d-103">Definiera arbetsgrupper för lean manufacturing</span><span class="sxs-lookup"><span data-stu-id="37d1d-103">Define lean manufacturing work cells</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-En arbetsgrupp är en viss form av resursgrupp som går att använda i lean manufacturing-aktiviteter. Arbetsgrupper har platser för inleverans och utleverans och en kapacitetsdefinition som baseras på en produktionsflödesmodell. Mer grundläggande information om arbetsgrupper och kapacitetsberäkningar i lean manufacturing finns i dokumentationen om lean manufacturing. I proceduren används demonstrationsföretag USMF.
+<span data-ttu-id="37d1d-104">En arbetsgrupp är en viss form av resursgrupp som går att använda i lean manufacturing-aktiviteter.</span><span class="sxs-lookup"><span data-stu-id="37d1d-104">A work cell is a specific form of resource groups that can be used in lean manufacturing process activities.</span></span> <span data-ttu-id="37d1d-105">Arbetsgrupper har platser för inleverans och utleverans och en kapacitetsdefinition som baseras på en produktionsflödesmodell.</span><span class="sxs-lookup"><span data-stu-id="37d1d-105">Work cells have input and output locations and a capacity definition based on a production flow model.</span></span> <span data-ttu-id="37d1d-106">Mer grundläggande information om arbetsgrupper och kapacitetsberäkningar i lean manufacturing finns i dokumentationen om lean manufacturing.</span><span class="sxs-lookup"><span data-stu-id="37d1d-106">To learn more about the basic concepts of lean manufacturing work cells and capacity calculations, see the white papers on Lean manufacturing.</span></span> <span data-ttu-id="37d1d-107">I proceduren används demonstrationsföretag USMF.</span><span class="sxs-lookup"><span data-stu-id="37d1d-107">The demo data company used to create this procedure is USMF</span></span>
 
 
-## <a name="create-a-work-cell"></a>Skapa en arbetsgrupp. 
-1. Gå till Organisationsadministration > Resurser > Resursgrupper.
-2. Klicka på Ny.
-3. Skriv ett värde i fältet Resursgrupp.
-    * Arbetsgrupps-id:t är vanligtvis en systematisk kod och måste vara unik för juridiska personen.  
-4. Ange ett värde i fältet Beskrivning.
-    * Beskrivningen innehåller namnet på arbetsgruppen.  
-5. Öppna sökningen genom att klicka på listruteknappen i fältet Plats.
-    * En arbetsgrupp finns på en viss plats. Både inleverans- och utleveranslagerstället och lagerplatsen måste finnas på platsen.  
-6. Klicka på länken på den valda raden i listan.
-7. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Produktionsenhet.
-8. Klicka på länken på den valda raden i listan.
-    * Välj en produktionsenhet som arbetsgruppen tillhör.  
-9. Markera kryssrutan Arbetsgrupp.
-    * Om en resursgrupp ska kunna användas som en lean-arbetsgrupp måste kryssrutan Arbetsgrupp markeras.  Observera att egenskapen kan inte ändras när resursgruppen har skapats.  
-10. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Inleveranslagerställe.
-11. Klicka på länken på den valda raden i listan.
-    * För redovisning och materialkontroll, fördelas materialet som mellanlagras på tillverkningsstället vanligtvis till ett visst virtuell lagerställe. Om du vill fylla på platserna med hjälp av lagerställearbete, måste de dock vara en del av det mottagande råvarulagerstället.  
-12. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Plats för inleverans.
-13. Klicka på länken på den valda raden i listan.
-    * Observera att för en processaktivitet, kan inleveransplatsen ersättas i allmänhet eller för en viss produkt eller produktvariant genom att plockningsaktiviteter definieras som matar in till processaktiviteten. Det går inte att id-nummerstyra inleveransplatserna för en arbetsgrupp.  
-14. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Utleveranslagerställe.
-15. Hitta och markera önskad post i listan.
-    * I flera aktivitetsproduktionsflöden eller produktionsrader, är detta ofta inleveranslagerstället för nästa resursgrupp eller försäljnings- eller transitlager dit en produkt vanligen överförs efter produktionsprocessen. Kom ihåg att transport och även transportrapporteringen vanligen är slöseri när modeller för lean manufacturing-processer skapas.  
-16. Klicka på länken på den valda raden i listan.
-17. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Utleveransplats.
-    * I ett produktionsflöde med flera processaktiviteter är detta ofta inleveransplatsen för nästa arbetsgrupp.  
-18. Hitta och markera önskad post i listan.
-19. Klicka på länken på den valda raden i listan.
-20. Utöka eller komprimera avsnittet Åtgärd.
-    * En körtidskategori måste anges om du vill aktivera kostnadsberäkning och kostnadsbearbetning i lean-kanban-jobb.  
-21. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Kategori för körtid.
-22. Hitta och markera önskad post i listan.
-    * Körtidskostnadskategorin används i standardkostnadsberäkningar och på kostnadskalkylering med automatisk lageravräkning.  
-23. Klicka på länken på den valda raden i listan.
-24. Utöka eller komprimera avsnittet Kalendrar.
-25. Klicka på Lägg till.
-26. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Kalender.
-27. Hitta och markera önskad post i listan.
-    * Normalt använder arbetsgrupper på en viss plats samma arbetstidskalender. Om arbetsgrupper ska han separata arbetstider, kan du behöva skapa specifika arbetstidskalendrar för grupperna. Observera att kalendern ska ha en definierad standardarbetstid när den används till en lean-arbetsgrupp, eftersom kapacitetdefinitionen oftast är relaterad till standardarbetstiden för en arbetsdag.  
-28. Klicka på länken på den valda raden i listan.
-29. Expandera eller komprimera avsnittet Kapacitet för arbetsgrupp.
-30. Klicka på Lägg till.
-31. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Produktionsflödesmodell.
-32. Hitta och markera önskad post i listan.
-    * Detta kräver produktionsflödesmodelltypen Genomflöde för att visa definitionen av genomflödekapaciteten.  
-33. Klicka på länken på den valda raden i listan.
-34. Markera ett alternativ i fältet Kapacitetsperiod.
-    * Alternativen omfattar: Standardarbetsdag – kapaciteten uttrycks i längden på standardarbetsdagen i arbetstidskalendern för arbetsgruppen. För varje dag bestäms den verkliga arbetstiden i kalendern och den gällande tillgängliga kapaciteten beräknas baserat på det.   Vecka – tillåter en veckokapacitet. Ingen justering görs av den verkliga arbetstiden.   Månad – tillåter en månadskapacitet. Ingen justering görs av den verkliga kapaciteten.   Vanligtvis används standardarbetsdagen för dagliga perioder, och veckokapaciteten används för veckokapacitetsperioder.  
-35. Ange ett värde i fältet Genomsnittlig genomflödeskvantitet.
-    * Observera att en lean-operation aldrig ställs in för den högsta möjliga kapaciteten i en ideal miljö. Istället ska kapaciteten alltid definieras för operationer som körs under normala omständigheter.  
-36. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Enhet.
-37. Klicka på länken på den valda raden i listan.
-38. ResolveChanges enheten.
+## <a name="create-a-work-cell"></a><span data-ttu-id="37d1d-108">Skapa en arbetsgrupp.</span><span class="sxs-lookup"><span data-stu-id="37d1d-108">Create a work cell.</span></span> 
+1. <span data-ttu-id="37d1d-109">Gå till Organisationsadministration > Resurser > Resursgrupper.</span><span class="sxs-lookup"><span data-stu-id="37d1d-109">Go to Organization administration > Resources > Resource groups.</span></span>
+2. <span data-ttu-id="37d1d-110">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="37d1d-110">Click New.</span></span>
+3. <span data-ttu-id="37d1d-111">Skriv ett värde i fältet Resursgrupp.</span><span class="sxs-lookup"><span data-stu-id="37d1d-111">In the Resource group field, type a value.</span></span>
+    * <span data-ttu-id="37d1d-112">Arbetsgrupps-id:t är vanligtvis en systematisk kod och måste vara unik för juridiska personen.</span><span class="sxs-lookup"><span data-stu-id="37d1d-112">The work cell ID is typically a systematic code and has to be unique for the legal entity.</span></span>  
+4. <span data-ttu-id="37d1d-113">Ange ett värde i fältet Beskrivning.</span><span class="sxs-lookup"><span data-stu-id="37d1d-113">In the Description field, type a value.</span></span>
+    * <span data-ttu-id="37d1d-114">Beskrivningen innehåller namnet på arbetsgruppen.</span><span class="sxs-lookup"><span data-stu-id="37d1d-114">The description contains the name or title of the work cell.</span></span>  
+5. <span data-ttu-id="37d1d-115">Öppna sökningen genom att klicka på listruteknappen i fältet Plats.</span><span class="sxs-lookup"><span data-stu-id="37d1d-115">In the Site field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="37d1d-116">En arbetsgrupp finns på en viss plats.</span><span class="sxs-lookup"><span data-stu-id="37d1d-116">A work cell is located at one specific site.</span></span> <span data-ttu-id="37d1d-117">Både inleverans- och utleveranslagerstället och lagerplatsen måste finnas på platsen.</span><span class="sxs-lookup"><span data-stu-id="37d1d-117">Both input and output warehouse and location have to be located on this site.</span></span>  
+6. <span data-ttu-id="37d1d-118">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="37d1d-118">In the list, click the link in the selected row.</span></span>
+7. <span data-ttu-id="37d1d-119">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Produktionsenhet.</span><span class="sxs-lookup"><span data-stu-id="37d1d-119">In the Production unit field, click the drop-down button to open the lookup.</span></span>
+8. <span data-ttu-id="37d1d-120">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="37d1d-120">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="37d1d-121">Välj en produktionsenhet som arbetsgruppen tillhör.</span><span class="sxs-lookup"><span data-stu-id="37d1d-121">Select a production unit that this work cell belongs to.</span></span>  
+9. <span data-ttu-id="37d1d-122">Markera kryssrutan Arbetsgrupp.</span><span class="sxs-lookup"><span data-stu-id="37d1d-122">Select the Work cell check box.</span></span>
+    * <span data-ttu-id="37d1d-123">Om en resursgrupp ska kunna användas som en lean-arbetsgrupp måste kryssrutan Arbetsgrupp markeras.</span><span class="sxs-lookup"><span data-stu-id="37d1d-123">To use a resource group as a lean work cell, the Work cell check box has to be selected.</span></span>  <span data-ttu-id="37d1d-124">Observera att egenskapen kan inte ändras när resursgruppen har skapats.</span><span class="sxs-lookup"><span data-stu-id="37d1d-124">Note that this property cannot be changed after resource group is created.</span></span>  
+10. <span data-ttu-id="37d1d-125">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Inleveranslagerställe.</span><span class="sxs-lookup"><span data-stu-id="37d1d-125">In the Input warehouse field, click the drop-down button to open the lookup.</span></span>
+11. <span data-ttu-id="37d1d-126">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="37d1d-126">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="37d1d-127">För redovisning och materialkontroll, fördelas materialet som mellanlagras på tillverkningsstället vanligtvis till ett visst virtuell lagerställe.</span><span class="sxs-lookup"><span data-stu-id="37d1d-127">For accounting and material control, the material staged on the shop floor is typically allocated to a specific virtual warehouse.</span></span> <span data-ttu-id="37d1d-128">Om du vill fylla på platserna med hjälp av lagerställearbete, måste de dock vara en del av det mottagande råvarulagerstället.</span><span class="sxs-lookup"><span data-stu-id="37d1d-128">However, if you want to replenish the locations using warehouse work, they must be part of the receptive raw material warehouse.</span></span>  
+12. <span data-ttu-id="37d1d-129">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Plats för inleverans.</span><span class="sxs-lookup"><span data-stu-id="37d1d-129">In the Input location field, click the drop-down button to open the lookup.</span></span>
+13. <span data-ttu-id="37d1d-130">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="37d1d-130">In the list, click the link in the selected row.</span></span>
+    * <span data-ttu-id="37d1d-131">Observera att för en processaktivitet, kan inleveransplatsen ersättas i allmänhet eller för en viss produkt eller produktvariant genom att plockningsaktiviteter definieras som matar in till processaktiviteten.</span><span class="sxs-lookup"><span data-stu-id="37d1d-131">Note that for a process activity, the input location can by overwritten in general or for a specific product or product variant by defining picking activities that feed to the process activity.</span></span> <span data-ttu-id="37d1d-132">Det går inte att id-nummerstyra inleveransplatserna för en arbetsgrupp.</span><span class="sxs-lookup"><span data-stu-id="37d1d-132">The input locations of a work cell cannot be license plate controlled.</span></span>  
+14. <span data-ttu-id="37d1d-133">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Utleveranslagerställe.</span><span class="sxs-lookup"><span data-stu-id="37d1d-133">In the Output warehouse field, click the drop-down button to open the lookup.</span></span>
+15. <span data-ttu-id="37d1d-134">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="37d1d-134">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="37d1d-135">I flera aktivitetsproduktionsflöden eller produktionsrader, är detta ofta inleveranslagerstället för nästa resursgrupp eller försäljnings- eller transitlager dit en produkt vanligen överförs efter produktionsprocessen.</span><span class="sxs-lookup"><span data-stu-id="37d1d-135">In multiple activity production flows or production lines, this is often the input warehouse of the next work cell or the sales or transit warehouse where a product is typically transferred to after the production process.</span></span> <span data-ttu-id="37d1d-136">Kom ihåg att transport och även transportrapporteringen vanligen är slöseri när modeller för lean manufacturing-processer skapas.</span><span class="sxs-lookup"><span data-stu-id="37d1d-136">Remember when modeling lean manufacturing processes, transport is usually waste, as is reporting transport.</span></span>  
+16. <span data-ttu-id="37d1d-137">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="37d1d-137">In the list, click the link in the selected row.</span></span>
+17. <span data-ttu-id="37d1d-138">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Utleveransplats.</span><span class="sxs-lookup"><span data-stu-id="37d1d-138">In the Output location field, click the drop-down button to open the lookup.</span></span>
+    * <span data-ttu-id="37d1d-139">I ett produktionsflöde med flera processaktiviteter är detta ofta inleveransplatsen för nästa arbetsgrupp.</span><span class="sxs-lookup"><span data-stu-id="37d1d-139">In a production flow with multiple process activites this if often the input location of the next work cell.</span></span>  
+18. <span data-ttu-id="37d1d-140">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="37d1d-140">In the list, find and select the desired record.</span></span>
+19. <span data-ttu-id="37d1d-141">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="37d1d-141">In the list, click the link in the selected row.</span></span>
+20. <span data-ttu-id="37d1d-142">Utöka eller komprimera avsnittet Åtgärd.</span><span class="sxs-lookup"><span data-stu-id="37d1d-142">Expand or collapse the Operation section.</span></span>
+    * <span data-ttu-id="37d1d-143">En körtidskategori måste anges om du vill aktivera kostnadsberäkning och kostnadsbearbetning i lean-kanban-jobb.</span><span class="sxs-lookup"><span data-stu-id="37d1d-143">A Run time category must be provided to enable cost calculation and processing of lean kanban jobs.</span></span>  
+21. <span data-ttu-id="37d1d-144">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Kategori för körtid.</span><span class="sxs-lookup"><span data-stu-id="37d1d-144">In the Run time category field, click the drop-down button to open the lookup.</span></span>
+22. <span data-ttu-id="37d1d-145">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="37d1d-145">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="37d1d-146">Körtidskostnadskategorin används i standardkostnadsberäkningar och på kostnadskalkylering med automatisk lageravräkning.</span><span class="sxs-lookup"><span data-stu-id="37d1d-146">The run time cost category is used in standard cost calculation and on backflush costing.</span></span>  
+23. <span data-ttu-id="37d1d-147">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="37d1d-147">In the list, click the link in the selected row.</span></span>
+24. <span data-ttu-id="37d1d-148">Utöka eller komprimera avsnittet Kalendrar.</span><span class="sxs-lookup"><span data-stu-id="37d1d-148">Expand or collapse the Calendars section.</span></span>
+25. <span data-ttu-id="37d1d-149">Klicka på Lägg till.</span><span class="sxs-lookup"><span data-stu-id="37d1d-149">Click Add.</span></span>
+26. <span data-ttu-id="37d1d-150">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Kalender.</span><span class="sxs-lookup"><span data-stu-id="37d1d-150">In the Calendar field, click the drop-down button to open the lookup.</span></span>
+27. <span data-ttu-id="37d1d-151">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="37d1d-151">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="37d1d-152">Normalt använder arbetsgrupper på en viss plats samma arbetstidskalender.</span><span class="sxs-lookup"><span data-stu-id="37d1d-152">Typically work cells of a given site use the same working time calendar.</span></span> <span data-ttu-id="37d1d-153">Om arbetsgrupper ska han separata arbetstider, kan du behöva skapa specifika arbetstidskalendrar för grupperna.</span><span class="sxs-lookup"><span data-stu-id="37d1d-153">If work cells can have individual working times, you might need to create a specific working time calendar for the work cell.</span></span> <span data-ttu-id="37d1d-154">Observera att kalendern ska ha en definierad standardarbetstid när den används till en lean-arbetsgrupp, eftersom kapacitetdefinitionen oftast är relaterad till standardarbetstiden för en arbetsdag.</span><span class="sxs-lookup"><span data-stu-id="37d1d-154">Note that the calendar should have a standard working time defined when used for a lean work cell, because the capacity definition is usually related to the standard working time of a work day.</span></span>  
+28. <span data-ttu-id="37d1d-155">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="37d1d-155">In the list, click the link in the selected row.</span></span>
+29. <span data-ttu-id="37d1d-156">Expandera eller komprimera avsnittet Kapacitet för arbetsgrupp.</span><span class="sxs-lookup"><span data-stu-id="37d1d-156">Expand or collapse the Work cell capacity section.</span></span>
+30. <span data-ttu-id="37d1d-157">Klicka på Lägg till.</span><span class="sxs-lookup"><span data-stu-id="37d1d-157">Click Add.</span></span>
+31. <span data-ttu-id="37d1d-158">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Produktionsflödesmodell.</span><span class="sxs-lookup"><span data-stu-id="37d1d-158">In the Production flow model field, click the drop-down button to open the lookup.</span></span>
+32. <span data-ttu-id="37d1d-159">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="37d1d-159">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="37d1d-160">Detta kräver produktionsflödesmodelltypen Genomflöde för att visa definitionen av genomflödekapaciteten.</span><span class="sxs-lookup"><span data-stu-id="37d1d-160">This procedures requires production flow model type Throughput, to show the definition of throughput capacity.</span></span>  
+33. <span data-ttu-id="37d1d-161">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="37d1d-161">In the list, click the link in the selected row.</span></span>
+34. <span data-ttu-id="37d1d-162">Markera ett alternativ i fältet Kapacitetsperiod.</span><span class="sxs-lookup"><span data-stu-id="37d1d-162">In the Capacity period field, select an option.</span></span>
+    * <span data-ttu-id="37d1d-163">Alternativen omfattar: Standardarbetsdag – kapaciteten uttrycks i längden på standardarbetsdagen i arbetstidskalendern för arbetsgruppen.</span><span class="sxs-lookup"><span data-stu-id="37d1d-163">The options include:   Standard workday - The capacity is expressed by the length of the standard workday of the working time calendar for the work cell.</span></span> <span data-ttu-id="37d1d-164">För varje dag bestäms den verkliga arbetstiden i kalendern och den gällande tillgängliga kapaciteten beräknas baserat på det.</span><span class="sxs-lookup"><span data-stu-id="37d1d-164">For each day, the actual working time is determined from the calendar and the effective available capacity is calculated based on that.</span></span>   <span data-ttu-id="37d1d-165">Vecka – tillåter en veckokapacitet.</span><span class="sxs-lookup"><span data-stu-id="37d1d-165">Week - Allows a weekly capacity.</span></span> <span data-ttu-id="37d1d-166">Ingen justering görs av den verkliga arbetstiden.</span><span class="sxs-lookup"><span data-stu-id="37d1d-166">There is no adjustment done by the actual working time.</span></span>   <span data-ttu-id="37d1d-167">Månad – tillåter en månadskapacitet.</span><span class="sxs-lookup"><span data-stu-id="37d1d-167">Month - Allows a monthly capacity.</span></span> <span data-ttu-id="37d1d-168">Ingen justering görs av den verkliga kapaciteten.</span><span class="sxs-lookup"><span data-stu-id="37d1d-168">There is no adjustment done by the actual capacity.</span></span>   <span data-ttu-id="37d1d-169">Vanligtvis används standardarbetsdagen för dagliga perioder, och veckokapaciteten används för veckokapacitetsperioder.</span><span class="sxs-lookup"><span data-stu-id="37d1d-169">Typically, the standard workday is used for daily periods and the weekly capacity is used for weekly capacity periods.</span></span>  
+35. <span data-ttu-id="37d1d-170">Ange ett värde i fältet Genomsnittlig genomflödeskvantitet.</span><span class="sxs-lookup"><span data-stu-id="37d1d-170">In the Average throughput quantity field, enter a number.</span></span>
+    * <span data-ttu-id="37d1d-171">Observera att en lean-operation aldrig ställs in för den högsta möjliga kapaciteten i en ideal miljö.</span><span class="sxs-lookup"><span data-stu-id="37d1d-171">Note that a lean operation is never set up for the maximum possible capacity in an ideal environment.</span></span> <span data-ttu-id="37d1d-172">Istället ska kapaciteten alltid definieras för operationer som körs under normala omständigheter.</span><span class="sxs-lookup"><span data-stu-id="37d1d-172">Instead the capacity should always be defined for operations running under typical circumstances.</span></span>  
+36. <span data-ttu-id="37d1d-173">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Enhet.</span><span class="sxs-lookup"><span data-stu-id="37d1d-173">In the Unit field, click the drop-down button to open the lookup.</span></span>
+37. <span data-ttu-id="37d1d-174">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="37d1d-174">In the list, click the link in the selected row.</span></span>
+38. <span data-ttu-id="37d1d-175">ResolveChanges enheten.</span><span class="sxs-lookup"><span data-stu-id="37d1d-175">ResolveChanges the Unit.</span></span>
 
-## <a name="add-a-financial-dimension"></a>Lägga till en ekonomisk dimension
-1. Expandera eller komprimera avsnittet Ekonomiska dimensioner.
-    * Observera att de ekonomiska dimensioner som anges i produktionsflödet ersätter den ekonomiska dimensionen i en viss arbetsgrupp.    Vilka ekonomiska dimensionerna som går att välja beror på de ekonomiska dimensionernas konfiguration i systemet. Nedanstående steg motsvarar datauppsättningen i demoföretaget USMF. Om du använder andra uppgifter kanske inte stegen stämmer.  
-2. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet CostCenter.
-3. Hitta och markera önskad post i listan.
-    * Dimensionerna som måste markeras i lean-arbetsgrupper, beror på implementeringen av ekonomiska dimensioner i redovisningsmodellen för en viss juridisk person.  
-4. Klicka på länken på den valda raden i listan.
-5. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet ItemGroup.
-6. Hitta och markera önskad post i listan.
-7. Klicka på länken på den valda raden i listan.
+## <a name="add-a-financial-dimension"></a><span data-ttu-id="37d1d-176">Lägga till en ekonomisk dimension</span><span class="sxs-lookup"><span data-stu-id="37d1d-176">Add a financial dimension</span></span>
+1. <span data-ttu-id="37d1d-177">Expandera eller komprimera avsnittet Ekonomiska dimensioner.</span><span class="sxs-lookup"><span data-stu-id="37d1d-177">Expand or collapse the Financial dimensions section.</span></span>
+    * <span data-ttu-id="37d1d-178">Observera att de ekonomiska dimensioner som anges i produktionsflödet ersätter den ekonomiska dimensionen i en viss arbetsgrupp.</span><span class="sxs-lookup"><span data-stu-id="37d1d-178">Note that financial dimensions defined on the production flow override the financial dimension of a given work cell.</span></span>    <span data-ttu-id="37d1d-179">Vilka ekonomiska dimensionerna som går att välja beror på de ekonomiska dimensionernas konfiguration i systemet.</span><span class="sxs-lookup"><span data-stu-id="37d1d-179">The financial dimensions that can be selected depend on the configuration of the financial dimensions of your system.</span></span> <span data-ttu-id="37d1d-180">Nedanstående steg motsvarar datauppsättningen i demoföretaget USMF.</span><span class="sxs-lookup"><span data-stu-id="37d1d-180">The following steps correspond to the Demo data set in company USMF.</span></span> <span data-ttu-id="37d1d-181">Om du använder andra uppgifter kanske inte stegen stämmer.</span><span class="sxs-lookup"><span data-stu-id="37d1d-181">When using different data, the steps might not be applicable.</span></span>  
+2. <span data-ttu-id="37d1d-182">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet CostCenter.</span><span class="sxs-lookup"><span data-stu-id="37d1d-182">In the CostCenter field, click the drop-down button to open the lookup.</span></span>
+3. <span data-ttu-id="37d1d-183">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="37d1d-183">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="37d1d-184">Dimensionerna som måste markeras i lean-arbetsgrupper, beror på implementeringen av ekonomiska dimensioner i redovisningsmodellen för en viss juridisk person.</span><span class="sxs-lookup"><span data-stu-id="37d1d-184">The dimensions that need to be selected on lean work cells depend on the implementation of financial dimensions in the accounting model for a specific legal entity.</span></span>  
+4. <span data-ttu-id="37d1d-185">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="37d1d-185">In the list, click the link in the selected row.</span></span>
+5. <span data-ttu-id="37d1d-186">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet ItemGroup.</span><span class="sxs-lookup"><span data-stu-id="37d1d-186">In the ItemGroup field, click the drop-down button to open the lookup.</span></span>
+6. <span data-ttu-id="37d1d-187">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="37d1d-187">In the list, find and select the desired record.</span></span>
+7. <span data-ttu-id="37d1d-188">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="37d1d-188">In the list, click the link in the selected row.</span></span>
 
-## <a name="save"></a>Spara
-1. Klicka på Spara.
+## <a name="save"></a><span data-ttu-id="37d1d-189">Spara</span><span class="sxs-lookup"><span data-stu-id="37d1d-189">Save</span></span>
+1. <span data-ttu-id="37d1d-190">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="37d1d-190">Click Save.</span></span>
 
 

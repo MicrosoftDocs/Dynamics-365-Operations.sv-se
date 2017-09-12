@@ -17,54 +17,54 @@ ms.author: knelson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 55b22d246d6bfa9e8159fb844da95f61fcf07c62
-ms.openlocfilehash: 3e26f4261c4028767c20a1118107777d582bb277
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 4de7257ed5e9c9c08ec6cc423c29739a541926d5
 ms.contentlocale: sv-se
-ms.lasthandoff: 07/28/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="configure-intercompany-project-invoicing"></a>Konfigurera koncernintern projektfakturering
+# <a name="configure-intercompany-project-invoicing"></a><span data-ttu-id="534e8-103">Konfigurera koncernintern projektfakturering</span><span class="sxs-lookup"><span data-stu-id="534e8-103">Configure intercompany project invoicing</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Den här proceduren visar hur du ställer in projektfakturering mellan två företag i din organisation. I den här uppgiften används datauppsättningen USSI.
+<span data-ttu-id="534e8-104">Den här proceduren visar hur du ställer in projektfakturering mellan två företag i din organisation.</span><span class="sxs-lookup"><span data-stu-id="534e8-104">This procedure shows how to set up project invoicing between two companies in your organization.</span></span> <span data-ttu-id="534e8-105">I den här uppgiften används datauppsättningen USSI.</span><span class="sxs-lookup"><span data-stu-id="534e8-105">This task uses the USSI data set.</span></span>
 
-1. Gå till leverantörsreskontra > Leverantörer > Alla leverantörer.
-2. Hitta och markera önskad post i listan.
-3. Klicka på Allmänt i åtgärdsfönstret.
-4. Klicka på Koncernintern.
-5. Ange Aktiv som Ja för att aktivera koncernintern handel.
-6. Ange eller välj ett värde i fältet för Kundföretag.
-7. Ange eller välj ett värde i fältet Mitt konto.
-8. Klicka på Spara.
-9. Stäng sidan.
-10. Stäng sidan.
-11. Gå till Projektledning och redovisning > Inställningar > Parametrar för projekthantering och redovisning.
-12. Klicka på fliken Koncernintern.
-13. Flytta reglaget till Ja för att aktivera koncernintern resursplanering och tidrapporter.
-14. Markera vald rad i listan.
-15. Klicka på Ny.
-16. Markera vald rad i listan.
-17. Ange eller välj ett värde i fältet Lånande juridisk person.
-18. Välj kryssrutan Upplupen intäkt.
-19. Ange eller välj ett värde i fältet Standardkategori för tidrapport.
-20. Ange eller välj ett värde i fältet Standardkategori för utgift.
-21. Klicka på Spara.
-22. Stäng sidan.
-23. Gå till Projekthantering och redovisning > Inställningar > Bokföra > Inställning av redovisningsbokföring.
-24. Välj ett alternativ i fältet Huvudbokskontotyp.
-25. Klicka på Ny.
-26. Markera vald rad i listan.
-27. Markera vald rad i listan.
-28. Ange önskade värden i fältet Huvudkonto.
-29. Klicka på Spara.
-30. Stäng sidan.
-31. Gå till Projekthantering och redovisning > Inställningar > Priser > Överföringspris.
-32. Klicka på Ny.
-33. Ange ett datum i fältet Giltighetsdatum.
-34. Ange eller välj ett värde i fältet Lånande juridisk person.
-35. Välj ett alternativ i fältet Modell för överföringspris.
-36. Ange ett nummer i fältet Pris.
-37. Klicka på Spara.
+1. <span data-ttu-id="534e8-106">Gå till leverantörsreskontra > Leverantörer > Alla leverantörer.</span><span class="sxs-lookup"><span data-stu-id="534e8-106">Go to Accounts payable > Vendors > All vendors.</span></span>
+2. <span data-ttu-id="534e8-107">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="534e8-107">In the list, find and select the desired record.</span></span>
+3. <span data-ttu-id="534e8-108">Klicka på Allmänt i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="534e8-108">On the Action Pane, click General.</span></span>
+4. <span data-ttu-id="534e8-109">Klicka på Koncernintern.</span><span class="sxs-lookup"><span data-stu-id="534e8-109">Click Intercompany.</span></span>
+5. <span data-ttu-id="534e8-110">Ange Aktiv som Ja för att aktivera koncernintern handel.</span><span class="sxs-lookup"><span data-stu-id="534e8-110">Set Active to Yes to enable intercompany trading.</span></span>
+6. <span data-ttu-id="534e8-111">Ange eller välj ett värde i fältet för Kundföretag.</span><span class="sxs-lookup"><span data-stu-id="534e8-111">In the Customer company field, enter or select a value.</span></span>
+7. <span data-ttu-id="534e8-112">Ange eller välj ett värde i fältet Mitt konto.</span><span class="sxs-lookup"><span data-stu-id="534e8-112">In the My account field, enter or select a value.</span></span>
+8. <span data-ttu-id="534e8-113">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="534e8-113">Click Save.</span></span>
+9. <span data-ttu-id="534e8-114">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="534e8-114">Close the page.</span></span>
+10. <span data-ttu-id="534e8-115">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="534e8-115">Close the page.</span></span>
+11. <span data-ttu-id="534e8-116">Gå till Projektledning och redovisning > Inställningar > Parametrar för projekthantering och redovisning.</span><span class="sxs-lookup"><span data-stu-id="534e8-116">Go to Project management and accounting > Setup > Project management and accounting parameters.</span></span>
+12. <span data-ttu-id="534e8-117">Klicka på fliken Koncernintern.</span><span class="sxs-lookup"><span data-stu-id="534e8-117">Click the Intercompany tab.</span></span>
+13. <span data-ttu-id="534e8-118">Flytta reglaget till Ja för att aktivera koncernintern resursplanering och tidrapporter.</span><span class="sxs-lookup"><span data-stu-id="534e8-118">Move the slider to Yes to enable intercompany resource scheduling and timesheets.</span></span>
+14. <span data-ttu-id="534e8-119">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="534e8-119">In the list, mark the selected row.</span></span>
+15. <span data-ttu-id="534e8-120">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="534e8-120">Click New.</span></span>
+16. <span data-ttu-id="534e8-121">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="534e8-121">In the list, mark the selected row.</span></span>
+17. <span data-ttu-id="534e8-122">Ange eller välj ett värde i fältet Lånande juridisk person.</span><span class="sxs-lookup"><span data-stu-id="534e8-122">In the Borrowing legal entity field, enter or select a value.</span></span>
+18. <span data-ttu-id="534e8-123">Välj kryssrutan Upplupen intäkt.</span><span class="sxs-lookup"><span data-stu-id="534e8-123">Select the Accrue revenue check box.</span></span>
+19. <span data-ttu-id="534e8-124">Ange eller välj ett värde i fältet Standardkategori för tidrapport.</span><span class="sxs-lookup"><span data-stu-id="534e8-124">In the Default timesheet category field, enter or select a value.</span></span>
+20. <span data-ttu-id="534e8-125">Ange eller välj ett värde i fältet Standardkategori för utgift.</span><span class="sxs-lookup"><span data-stu-id="534e8-125">In the Default expense category field, enter or select a value.</span></span>
+21. <span data-ttu-id="534e8-126">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="534e8-126">Click Save.</span></span>
+22. <span data-ttu-id="534e8-127">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="534e8-127">Close the page.</span></span>
+23. <span data-ttu-id="534e8-128">Gå till Projekthantering och redovisning > Inställningar > Bokföra > Inställning av redovisningsbokföring.</span><span class="sxs-lookup"><span data-stu-id="534e8-128">Go to Project management and accounting > Setup > Posting > Ledger posting setup.</span></span>
+24. <span data-ttu-id="534e8-129">Välj ett alternativ i fältet Huvudbokskontotyp.</span><span class="sxs-lookup"><span data-stu-id="534e8-129">In the Ledger account types field, select an option.</span></span>
+25. <span data-ttu-id="534e8-130">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="534e8-130">Click New.</span></span>
+26. <span data-ttu-id="534e8-131">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="534e8-131">In the list, mark the selected row.</span></span>
+27. <span data-ttu-id="534e8-132">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="534e8-132">In the list, mark the selected row.</span></span>
+28. <span data-ttu-id="534e8-133">Ange önskade värden i fältet Huvudkonto.</span><span class="sxs-lookup"><span data-stu-id="534e8-133">In the Main account field, specify the desired values.</span></span>
+29. <span data-ttu-id="534e8-134">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="534e8-134">Click Save.</span></span>
+30. <span data-ttu-id="534e8-135">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="534e8-135">Close the page.</span></span>
+31. <span data-ttu-id="534e8-136">Gå till Projekthantering och redovisning > Inställningar > Priser > Överföringspris.</span><span class="sxs-lookup"><span data-stu-id="534e8-136">Go to Project management and accounting > Setup > Prices > Transfer price.</span></span>
+32. <span data-ttu-id="534e8-137">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="534e8-137">Click New.</span></span>
+33. <span data-ttu-id="534e8-138">Ange ett datum i fältet Giltighetsdatum.</span><span class="sxs-lookup"><span data-stu-id="534e8-138">In the Effective date field, enter a date.</span></span>
+34. <span data-ttu-id="534e8-139">Ange eller välj ett värde i fältet Lånande juridisk person.</span><span class="sxs-lookup"><span data-stu-id="534e8-139">In the Borrowing legal entity field, enter or select a value.</span></span>
+35. <span data-ttu-id="534e8-140">Välj ett alternativ i fältet Modell för överföringspris.</span><span class="sxs-lookup"><span data-stu-id="534e8-140">In the Transfer price model field, select an option.</span></span>
+36. <span data-ttu-id="534e8-141">Ange ett nummer i fältet Pris.</span><span class="sxs-lookup"><span data-stu-id="534e8-141">In the Pricing field, enter a number.</span></span>
+37. <span data-ttu-id="534e8-142">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="534e8-142">Click Save.</span></span>
 
 

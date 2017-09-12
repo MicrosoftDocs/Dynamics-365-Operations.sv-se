@@ -16,7 +16,7 @@ ms.custom: 3811
 ms.assetid: b4969b30-2fe1-4a3c-bbea-725dc37c8b60
 ms.search.region: Global
 ms.author: jasongre
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
 ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
@@ -26,14 +26,14 @@ ms.lasthandoff: 07/27/2017
 
 ---
 
-# <a name="advanced-filtering-and-query-syntax"></a>Avancerade filtrerings- och frågesyntax
+# <a name="advanced-filtering-and-query-syntax"></a><span data-ttu-id="e099e-103">Avancerade filtrerings- och frågesyntax</span><span class="sxs-lookup"><span data-stu-id="e099e-103">Advanced filtering and query syntax</span></span>
 
 [!include[banner](../includes/banner.md)]
 
 
-Denna artikel beskriver filterings- och frågealternativ som är tillgängliga, när du använder operatorn ”matchar" i den avancerade filtrerings-/sorteringsdialogen.
+<span data-ttu-id="e099e-104">Denna artikel beskriver filterings- och frågealternativ som är tillgängliga, när du använder operatorn ”matchar" i den avancerade filtrerings-/sorteringsdialogen.</span><span class="sxs-lookup"><span data-stu-id="e099e-104">This article describes the filtering and query options that are available when you use the "matches" operator in the Advanced filter/sort dialog.</span></span>
 
-<a name="advanced-query-syntax"></a>Avancerad frågesyntax
+<a name="advanced-query-syntax"></a><span data-ttu-id="e099e-105">Avancerad frågesyntax</span><span class="sxs-lookup"><span data-stu-id="e099e-105">Advanced query syntax</span></span>
 ---------------------
 
 <table>
@@ -45,116 +45,116 @@ Denna artikel beskriver filterings- och frågealternativ som är tillgängliga, 
 </colgroup>
 <thead>
 <tr class="header">
-<th>Syntax</th>
-<th>Teckenbeskrivning</th>
-<th>beskrivning</th>
-<th>Exempel</th>
+<th><span data-ttu-id="e099e-106">Syntax</span><span class="sxs-lookup"><span data-stu-id="e099e-106">Syntax</span></span></th>
+<th><span data-ttu-id="e099e-107">Teckenbeskrivning</span><span class="sxs-lookup"><span data-stu-id="e099e-107">Character description</span></span></th>
+<th><span data-ttu-id="e099e-108">beskrivning</span><span class="sxs-lookup"><span data-stu-id="e099e-108">Description</span></span></th>
+<th><span data-ttu-id="e099e-109">Exempel</span><span class="sxs-lookup"><span data-stu-id="e099e-109">Example</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><em>värde</em></td>
-<td>Motsvarar värdet som angavs</td>
-<td>Skriv in värdet som du vill hitta.</td>
-<td><strong>Smith</strong> hittar &quot;Smith&quot;.</td>
+<td><span data-ttu-id="e099e-110"><em>värde</em></span><span class="sxs-lookup"><span data-stu-id="e099e-110"><em>value</em></span></span></td>
+<td><span data-ttu-id="e099e-111">Motsvarar värdet som angavs</span><span class="sxs-lookup"><span data-stu-id="e099e-111">Equal to the value that is entered</span></span></td>
+<td><span data-ttu-id="e099e-112">Skriv in värdet som du vill hitta.</span><span class="sxs-lookup"><span data-stu-id="e099e-112">Type the value to find.</span></span></td>
+<td><span data-ttu-id="e099e-113"><strong>Smith</strong> hittar &quot;Smith&quot;.</span><span class="sxs-lookup"><span data-stu-id="e099e-113"><strong>Smith</strong> finds &quot;Smith&quot;.</span></span></td>
 </tr>
 <tr class="even">
-<td>!<em>-värde</em> (utropstecken)</td>
-<td>Motsvarar inte värdet som angavs</td>
-<td>Skriv in ett utropstecken och sedan värdet som du vill utesluta.</td>
-<td><strong>!Smith</strong> hittar alla värden utom &quot;Smith&quot;.</td>
+<td><span data-ttu-id="e099e-114">!<em>-värde</em> (utropstecken)</span><span class="sxs-lookup"><span data-stu-id="e099e-114">!<em>value</em> (exclamation point)</span></span></td>
+<td><span data-ttu-id="e099e-115">Motsvarar inte värdet som angavs</span><span class="sxs-lookup"><span data-stu-id="e099e-115">Not equal to the value that is entered</span></span></td>
+<td><span data-ttu-id="e099e-116">Skriv in ett utropstecken och sedan värdet som du vill utesluta.</span><span class="sxs-lookup"><span data-stu-id="e099e-116">Type an exclamation point and then the value to exclude.</span></span></td>
+<td><span data-ttu-id="e099e-117"><strong>!Smith</strong> hittar alla värden utom &quot;Smith&quot;.</span><span class="sxs-lookup"><span data-stu-id="e099e-117"><strong>!Smith</strong> finds all values except &quot;Smith&quot;.</span></span></td>
 </tr>
 <tr class="odd">
-<td><em>värdet Från</em>.<em>värdet Till</em> (dubbla punkter)</td>
-<td>Mellan de två värdena som angavs åtskilda med dubbla punkter</td>
-<td>Skriv in värdet Från, sedan två punkter och sist värdet Till.</td>
-<td><strong>1..10</strong> hittar alla värden från 1 till 10. I ett strängfält hittar dock <strong>A..C</strong> alla värden som börjar med &quot;A&quot; och &quot;B&quot; och värden som exakt motsvarar &quot;C&quot;. Till exempel kommer denna fråga inte att hitta &quot;Ca&quot;. Om du vill hitta alla värden från &quot;A*&quot; till &quot;C*&quot;, skriv då <strong>A..D</strong>.</td>
+<td><span data-ttu-id="e099e-118"><em>värdet Från</em>.<em>värdet Till</em> (dubbla punkter)</span><span class="sxs-lookup"><span data-stu-id="e099e-118"><em>from-value</em>..<em>to-value</em> (double period)</span></span></td>
+<td><span data-ttu-id="e099e-119">Mellan de två värdena som angavs åtskilda med dubbla punkter</span><span class="sxs-lookup"><span data-stu-id="e099e-119">Between the two values that are separated by double periods</span></span></td>
+<td><span data-ttu-id="e099e-120">Skriv in värdet Från, sedan två punkter och sist värdet Till.</span><span class="sxs-lookup"><span data-stu-id="e099e-120">Type the from-value, then two periods, and then the to-value.</span></span></td>
+<td><span data-ttu-id="e099e-121"><strong>1..10</strong> hittar alla värden från 1 till 10.</span><span class="sxs-lookup"><span data-stu-id="e099e-121"><strong>1..10</strong> finds all values from 1 through 10.</span></span> <span data-ttu-id="e099e-122">I ett strängfält hittar dock <strong>A..C</strong> alla värden som börjar med &quot;A&quot; och &quot;B&quot; och värden som exakt motsvarar &quot;C&quot;.</span><span class="sxs-lookup"><span data-stu-id="e099e-122">However, in a string field, <strong>A..C</strong> finds all values that start with &quot;A&quot; and &quot;B&quot;, and values that are exactly equal to &quot;C&quot;.</span></span> <span data-ttu-id="e099e-123">Till exempel kommer denna fråga inte att hitta &quot;Ca&quot;.</span><span class="sxs-lookup"><span data-stu-id="e099e-123">For example, this query won't find &quot;Ca&quot;.</span></span> <span data-ttu-id="e099e-124">Om du vill hitta alla värden från &quot;A*&quot; till &quot;C*&quot;, skriv då <strong>A..D</strong>.</span><span class="sxs-lookup"><span data-stu-id="e099e-124">To find all values from &quot;A*&quot; through &quot;C*&quot;, type <strong>A..D</strong>.</span></span></td>
 </tr>
 <tr class="even">
-<td>..<em>värde</em> (dubbla punkter)</td>
-<td>Mindre än eller lika med värdet som angavs.</td>
-<td>Skriv in de två punkterna och sedan värdet.</td>
-<td><strong>..1000</strong> hittar alla tal som är mindre än eller lika med 1 000, t.ex. &quot;100&quot;, &quot;999,95&quot; och &quot;1 000&quot;.</td>
+<td><span data-ttu-id="e099e-125">..<em>värde</em> (dubbla punkter)</span><span class="sxs-lookup"><span data-stu-id="e099e-125">..<em>value</em> (double period)</span></span></td>
+<td><span data-ttu-id="e099e-126">Mindre än eller lika med värdet som angavs.</span><span class="sxs-lookup"><span data-stu-id="e099e-126">Less than or equal to the value that is entered</span></span></td>
+<td><span data-ttu-id="e099e-127">Skriv in de två punkterna och sedan värdet.</span><span class="sxs-lookup"><span data-stu-id="e099e-127">Type two periods and then the value.</span></span></td>
+<td><span data-ttu-id="e099e-128"><strong>..1000</strong> hittar alla tal som är mindre än eller lika med 1 000, t.ex. &quot;100&quot;, &quot;999,95&quot; och &quot;1 000&quot;.</span><span class="sxs-lookup"><span data-stu-id="e099e-128"><strong>..1000</strong> finds any number that is less than or equal to 1000, such as &quot;100&quot;, &quot;999.95&quot;, and &quot;1,000&quot;.</span></span></td>
 </tr>
 <tr class="odd">
-<td><em>värde</em>.. (dubbla punkter)</td>
-<td>Större än eller lika med värdet som angavs.</td>
-<td>Skriv in värdet och sen två punkter.</td>
-<td><strong>1000..</strong> hittar alla tal som är större än eller lika med 1 000, t.ex. &quot;1 000&quot;, &quot;1 000,01&quot; och &quot;1 000 000&quot;.</td>
+<td><span data-ttu-id="e099e-129"><em>värde</em>..</span><span class="sxs-lookup"><span data-stu-id="e099e-129"><em>value</em>..</span></span> <span data-ttu-id="e099e-130">(dubbla punkter)</span><span class="sxs-lookup"><span data-stu-id="e099e-130">(double period)</span></span></td>
+<td><span data-ttu-id="e099e-131">Större än eller lika med värdet som angavs.</span><span class="sxs-lookup"><span data-stu-id="e099e-131">Greater than or equal to the value that is entered</span></span></td>
+<td><span data-ttu-id="e099e-132">Skriv in värdet och sen två punkter.</span><span class="sxs-lookup"><span data-stu-id="e099e-132">Type the value and then two periods.</span></span></td>
+<td><span data-ttu-id="e099e-133"><strong>1000..</strong></span><span class="sxs-lookup"><span data-stu-id="e099e-133"><strong>1000..</strong></span></span> <span data-ttu-id="e099e-134">hittar alla tal som är större än eller lika med 1 000, t.ex. &quot;1 000&quot;, &quot;1 000,01&quot; och &quot;1 000 000&quot;.</span><span class="sxs-lookup"><span data-stu-id="e099e-134">finds any number that is greater than or equal to 1000, such as &quot;1,000&quot;, &quot;1,000.01&quot;, and &quot;1,000,000&quot;.</span></span></td>
 </tr>
 <tr class="even">
-<td>&gt;<em>värde</em> (tecknet för "större än")</td>
-<td>Större än värdet som angavs.</td>
-<td>Ange tecknet för "större än" (<strong>&gt;</strong>) och därefter värdet.</td>
-<td><strong>&gt;1 000</strong> hittar alla tal som är större än 1 000, t.ex.s &quot;1000,01&quot;, &quot;20 000&quot; och &quot;1 000 000&quot;.</td>
+<td><span data-ttu-id="e099e-135">&gt;<em>värde</em> (tecknet för "större än")</span><span class="sxs-lookup"><span data-stu-id="e099e-135">&gt;<em>value</em> (greater than sign)</span></span></td>
+<td><span data-ttu-id="e099e-136">Större än värdet som angavs.</span><span class="sxs-lookup"><span data-stu-id="e099e-136">Greater than the value that is entered</span></span></td>
+<td><span data-ttu-id="e099e-137">Ange tecknet för "större än" (<strong>&gt;</strong>) och därefter värdet.</span><span class="sxs-lookup"><span data-stu-id="e099e-137">Type a greater than sign (<strong>&gt;</strong>) and then the value.</span></span></td>
+<td><span data-ttu-id="e099e-138"><strong>&gt;1 000</strong> hittar alla tal som är större än 1 000, t.ex.s &quot;1000,01&quot;, &quot;20 000&quot; och &quot;1 000 000&quot;.</span><span class="sxs-lookup"><span data-stu-id="e099e-138"><strong>&gt;1000</strong> finds any number that is greater than 1000, such as &quot;1000.01&quot;, &quot;20,000&quot;, and &quot;1,000,000&quot;.</span></span></td>
 </tr>
 <tr class="odd">
-<td>&lt;<em>värde</em> (tecknet för "mindre än")</td>
-<td>Mindere än värdet som angavs.</td>
-<td>Skriv in tecknet för "mindre än" (<strong>&lt;</strong>) och därefter värdet.</td>
-<td><strong>&lt;1 000</strong> hittar alla tal, som är mindre än 1 000, t.ex. &quot;999,99&quot;, &quot;1&quot; och &quot;-200&quot;.</td>
+<td><span data-ttu-id="e099e-139">&lt;<em>värde</em> (tecknet för "mindre än")</span><span class="sxs-lookup"><span data-stu-id="e099e-139">&lt;<em>value</em> (less than sign)</span></span></td>
+<td><span data-ttu-id="e099e-140">Mindere än värdet som angavs.</span><span class="sxs-lookup"><span data-stu-id="e099e-140">Less than the value that is entered</span></span></td>
+<td><span data-ttu-id="e099e-141">Skriv in tecknet för "mindre än" (<strong>&lt;</strong>) och därefter värdet.</span><span class="sxs-lookup"><span data-stu-id="e099e-141">Type a less than sign (<strong>&lt;</strong>) and then the value.</span></span></td>
+<td><span data-ttu-id="e099e-142"><strong>&lt;1 000</strong> hittar alla tal, som är mindre än 1 000, t.ex. &quot;999,99&quot;, &quot;1&quot; och &quot;-200&quot;.</span><span class="sxs-lookup"><span data-stu-id="e099e-142"><strong>&lt;1000</strong> finds any number that is less than 1000, such as &quot;999.99&quot;, &quot;1&quot;, and &quot;-200&quot;.</span></span></td>
 </tr>
 <tr class="even">
-<td><em>värde</em>* (asterisk)</td>
-<td>Startar från värdet som angavs</td>
-<td>Skriv in startvärdet och sedan en asterisk (<strong>*</strong>).</td>
-<td><strong>S*</strong> hittar alla strängar som börjar med &quot;S&quot;, t.ex. &quot;Stockholm&quot;, &quot;Sydney&quot; eller &quot;San Francisco&quot;.</td>
+<td><span data-ttu-id="e099e-143"><em>värde</em>* (asterisk)</span><span class="sxs-lookup"><span data-stu-id="e099e-143"><em>value</em>* (asterisk)</span></span></td>
+<td><span data-ttu-id="e099e-144">Startar från värdet som angavs</span><span class="sxs-lookup"><span data-stu-id="e099e-144">Starting from the value that is entered</span></span></td>
+<td><span data-ttu-id="e099e-145">Skriv in startvärdet och sedan en asterisk (<strong>*</strong>).</span><span class="sxs-lookup"><span data-stu-id="e099e-145">Type the starting value and then an asterisk (<strong>*</strong>).</span></span></td>
+<td><span data-ttu-id="e099e-146"><strong>S*</strong> hittar alla strängar som börjar med &quot;S&quot;, t.ex. &quot;Stockholm&quot;, &quot;Sydney&quot; eller &quot;San Francisco&quot;.</span><span class="sxs-lookup"><span data-stu-id="e099e-146"><strong>S*</strong> finds any string that starts with &quot;S&quot;, such as &quot;Stockholm&quot;, &quot;Sydney&quot;, and &quot;San Francisco&quot;.</span></span></td>
 </tr>
 <tr class="odd">
-<td>*<em>värde</em> (asterisk)</td>
-<td>Slutar med värdet som angavs.</td>
-<td>Skriv in en asterisk och sedan slutvärdet.</td>
-<td><strong>*öst</strong> hittar alla strängar som slutar med &quot;öst&quot;, t.ex. &quot;Nordöst&quot; och &quot;Sydöst&quot;.</td>
+<td><span data-ttu-id="e099e-147">*<em>värde</em> (asterisk)</span><span class="sxs-lookup"><span data-stu-id="e099e-147">*<em>value</em> (asterisk)</span></span></td>
+<td><span data-ttu-id="e099e-148">Slutar med värdet som angavs.</span><span class="sxs-lookup"><span data-stu-id="e099e-148">Ending with the value that is entered</span></span></td>
+<td><span data-ttu-id="e099e-149">Skriv in en asterisk och sedan slutvärdet.</span><span class="sxs-lookup"><span data-stu-id="e099e-149">Type an asterisk and then the ending value.</span></span></td>
+<td><span data-ttu-id="e099e-150"><strong>*öst</strong> hittar alla strängar som slutar med &quot;öst&quot;, t.ex. &quot;Nordöst&quot; och &quot;Sydöst&quot;.</span><span class="sxs-lookup"><span data-stu-id="e099e-150"><strong>*east</strong> finds any string that ends with &quot;east&quot;, such as &quot;Northeast&quot; and &quot;Southeast&quot;.</span></span></td>
 </tr>
 <tr class="even">
-<td>*<em>värde</em>* (asterisk)</td>
-<td>Innehåller värdet som angavs.</td>
-<td>Skriv in en asterisk, sedan ett värde och slutligen en till asterisk.</td>
-<td><strong>*st*</strong> hittar alla strängar som innehåller &quot;st&quot;, t.ex. &quot;Nordöst&quot; och &quot;Sydöst&quot;.</td>
+<td><span data-ttu-id="e099e-151">*<em>värde</em>* (asterisk)</span><span class="sxs-lookup"><span data-stu-id="e099e-151">*<em>value</em>* (asterisk)</span></span></td>
+<td><span data-ttu-id="e099e-152">Innehåller värdet som angavs.</span><span class="sxs-lookup"><span data-stu-id="e099e-152">Containing the value that is entered</span></span></td>
+<td><span data-ttu-id="e099e-153">Skriv in en asterisk, sedan ett värde och slutligen en till asterisk.</span><span class="sxs-lookup"><span data-stu-id="e099e-153">Type an asterisk, then a value, and then another asterisk.</span></span></td>
+<td><span data-ttu-id="e099e-154"><strong>*st*</strong> hittar alla strängar som innehåller &quot;st&quot;, t.ex. &quot;Nordöst&quot; och &quot;Sydöst&quot;.</span><span class="sxs-lookup"><span data-stu-id="e099e-154"><strong>*th*</strong> finds any string that contains &quot;th&quot;, such as &quot;Northeast&quot; and &quot;Southeast&quot;.</span></span></td>
 </tr>
 <tr class="odd">
-<td>? (frågetecken)</td>
-<td>Har ett eller flera okända tecken</td>
-<td>Skriv in ett frågetecken vid det okända tecknets placering i värdet.</td>
-<td><strong>Sm?th</strong> hittar &quot;Smith&quot; och &quot;Smyth&quot;.</td>
+<td><span data-ttu-id="e099e-155">?</span><span class="sxs-lookup"><span data-stu-id="e099e-155">?</span></span> <span data-ttu-id="e099e-156">(frågetecken)</span><span class="sxs-lookup"><span data-stu-id="e099e-156">(question mark)</span></span></td>
+<td><span data-ttu-id="e099e-157">Har ett eller flera okända tecken</span><span class="sxs-lookup"><span data-stu-id="e099e-157">Having one or more unknown characters</span></span></td>
+<td><span data-ttu-id="e099e-158">Skriv in ett frågetecken vid det okända tecknets placering i värdet.</span><span class="sxs-lookup"><span data-stu-id="e099e-158">Type a question mark at the position of the unknown character in the value.</span></span></td>
+<td><span data-ttu-id="e099e-159"><strong>Sm?th</strong> hittar &quot;Smith&quot; och &quot;Smyth&quot;.</span><span class="sxs-lookup"><span data-stu-id="e099e-159"><strong>Sm?th</strong> finds &quot;Smith&quot; and &quot;Smyth&quot;.</span></span></td>
 </tr>
 <tr class="even">
-<td><em>värde</em>,<em>värde</em> (kommatecken)</td>
-<td>Matchar värdena som angavs åtskilda med kommatecken.</td>
-<td>Skriv in alla kriterier och skilj dem åt med kommatecken.</td>
-<td><strong>A, D, F, G</strong> hittar exakt &quot;A&quot;, &quot;D&quot;, &quot;F&quot; och &quot;G&quot;. <strong>10, 20, 30, 100</strong> hittar exakt &quot;10, 20, 30, 100&quot;.</td>
+<td><span data-ttu-id="e099e-160"><em>värde</em>,<em>värde</em> (kommatecken)</span><span class="sxs-lookup"><span data-stu-id="e099e-160"><em>value</em>,<em>value</em> (comma)</span></span></td>
+<td><span data-ttu-id="e099e-161">Matchar värdena som angavs åtskilda med kommatecken.</span><span class="sxs-lookup"><span data-stu-id="e099e-161">Matching the values that are separated by commas</span></span></td>
+<td><span data-ttu-id="e099e-162">Skriv in alla kriterier och skilj dem åt med kommatecken.</span><span class="sxs-lookup"><span data-stu-id="e099e-162">Type all your criteria, and separate them by using commas.</span></span></td>
+<td><span data-ttu-id="e099e-163"><strong>A, D, F, G</strong> hittar exakt &quot;A&quot;, &quot;D&quot;, &quot;F&quot; och &quot;G&quot;.</span><span class="sxs-lookup"><span data-stu-id="e099e-163"><strong>A, D, F, G</strong> finds exactly &quot;A&quot;, &quot;D&quot;, &quot;F&quot;, and &quot;G&quot;.</span></span> <span data-ttu-id="e099e-164"><strong>10, 20, 30, 100</strong> hittar exakt &quot;10, 20, 30, 100&quot;.</span><span class="sxs-lookup"><span data-stu-id="e099e-164"><strong>10, 20, 30, 100</strong> finds exactly &quot;10, 20, 30, 100&quot;.</span></span></td>
 </tr>
 <tr class="odd">
-<td>(<span class="code">SQL-sats</span>) (SQL-sats inom parentes)</td>
-<td>Matchar en definierad fråga</td>
-<td>Skriv in en fråga som en SQL-sats inom parentes.</td>
-<td><strong><span class="code">(data source.Fieldname != &quot;A&quot;)</span></strong></td>
+<td><span data-ttu-id="e099e-165">(<span class="code">SQL-sats</span>) (SQL-sats inom parentes)</span><span class="sxs-lookup"><span data-stu-id="e099e-165">(<span class="code">SQL statement</span>) (SQL statement between parentheses)</span></span></td>
+<td><span data-ttu-id="e099e-166">Matchar en definierad fråga</span><span class="sxs-lookup"><span data-stu-id="e099e-166">Matching a defined query</span></span></td>
+<td><span data-ttu-id="e099e-167">Skriv in en fråga som en SQL-sats inom parentes.</span><span class="sxs-lookup"><span data-stu-id="e099e-167">Type a query as an SQL statement between parentheses.</span></span></td>
+<td><span data-ttu-id="e099e-168"><strong><span class="code">(data source.Fieldname != &quot;A&quot;)</span></strong></span><span class="sxs-lookup"><span data-stu-id="e099e-168"><strong><span class="code">(data source.Fieldname != &quot;A&quot;)</span></strong></span></span></td>
 </tr>
 <tr class="even">
-<td>T</td>
-<td>Dagens datum</td>
-<td>Skriv in <strong>T</strong>.</td>
-<td><strong>T</strong> matchar dagens datum.</td>
+<td><span data-ttu-id="e099e-169">T</span><span class="sxs-lookup"><span data-stu-id="e099e-169">T</span></span></td>
+<td><span data-ttu-id="e099e-170">Dagens datum</span><span class="sxs-lookup"><span data-stu-id="e099e-170">Today's date</span></span></td>
+<td><span data-ttu-id="e099e-171">Skriv in <strong>T</strong>.</span><span class="sxs-lookup"><span data-stu-id="e099e-171">Type <strong>T</strong>.</span></span></td>
+<td><span data-ttu-id="e099e-172"><strong>T</strong> matchar dagens datum.</span><span class="sxs-lookup"><span data-stu-id="e099e-172"><strong>T</strong> matches today's date.</span></span></td>
 </tr>
 <tr class="odd">
-<td>(methodName(parameters)) (<strong>SysQueryRangeUtil</strong> metod mellan parentes)</td>
-<td>Matcha värdet eller intervallet av värden som anges av parametrar för metoden <strong>SysQueryRangeUtil</strong></td>
-<td>Skriv en <strong>SysQueryRangeUtil</strong>-metod med parametrar som specificerar värdet eller intervallet av värden.</td>
+<td><span data-ttu-id="e099e-173">(methodName(parameters)) (<strong>SysQueryRangeUtil</strong> metod mellan parentes)</span><span class="sxs-lookup"><span data-stu-id="e099e-173">(methodName(parameters)) (<strong>SysQueryRangeUtil</strong> method between parentheses)</span></span></td>
+<td><span data-ttu-id="e099e-174">Matcha värdet eller intervallet av värden som anges av parametrar för metoden <strong>SysQueryRangeUtil</strong></span><span class="sxs-lookup"><span data-stu-id="e099e-174">Matching the value or range of values that are specified by the parameters of the <strong>SysQueryRangeUtil</strong> method</span></span></td>
+<td><span data-ttu-id="e099e-175">Skriv en <strong>SysQueryRangeUtil</strong>-metod med parametrar som specificerar värdet eller intervallet av värden.</span><span class="sxs-lookup"><span data-stu-id="e099e-175">Type a <strong>SysQueryRangeUtil</strong> method that has parameters that specify the value or range of values.</span></span></td>
 <td><ol>
-<li>Klicka på <strong>Kundreskontra</strong> &gt; <strong>Fakturor</strong> &gt; <strong>Öppna kundfakturor</strong>.</li>
-<li>Tryck på Ctrl+Shift+F3 om du vill öppna sidan <strong>Förfrågan</strong>.</li>
-<li>På fliken <strong>Intervall</strong> klickar du på <strong>Anslutning</strong>.</li>
-<li>I fältet <strong>Tabell</strong> väljer du <strong>Öppna kundtransaktioner</strong>.</li>
-<li>I fältet <strong>Fält</strong> väljer du <strong>Förfallodatum</strong>.</li>
-<li>I fältet <strong>Kriterium</strong> anger du <strong>2(yearRange(-2,0))</strong>.</li>
-<li>Klicka på <strong>OK</strong>. Listsidan uppdateras och visar de fakturor som matchar kriteriet som du angav. För det här exemplet registreras specifika fakturor som förfallit under de föregående två åren.</li>
+<li><span data-ttu-id="e099e-176">Klicka på <strong>Kundreskontra</strong> &gt; <strong>Fakturor</strong> &gt; <strong>Öppna kundfakturor</strong>.</span><span class="sxs-lookup"><span data-stu-id="e099e-176">Click <strong>Accounts receivable</strong> &gt; <strong>Invoices</strong> &gt; <strong>Open customer invoices</strong>.</span></span></li>
+<li><span data-ttu-id="e099e-177">Tryck på Ctrl+Shift+F3 om du vill öppna sidan <strong>Förfrågan</strong>.</span><span class="sxs-lookup"><span data-stu-id="e099e-177">Press Ctrl+Shift+F3 to open the <strong>Inquiry</strong> page.</span></span></li>
+<li><span data-ttu-id="e099e-178">På fliken <strong>Intervall</strong> klickar du på <strong>Anslutning</strong>.</span><span class="sxs-lookup"><span data-stu-id="e099e-178">On the <strong>Range</strong> tab, click <strong>Add</strong>.</span></span></li>
+<li><span data-ttu-id="e099e-179">I fältet <strong>Tabell</strong> väljer du <strong>Öppna kundtransaktioner</strong>.</span><span class="sxs-lookup"><span data-stu-id="e099e-179">In the <strong>Table</strong> field, select <strong>Open customer transactions</strong>.</span></span></li>
+<li><span data-ttu-id="e099e-180">I fältet <strong>Fält</strong> väljer du <strong>Förfallodatum</strong>.</span><span class="sxs-lookup"><span data-stu-id="e099e-180">In the <strong>Field</strong> field, select <strong>Due date</strong>.</span></span></li>
+<li><span data-ttu-id="e099e-181">I fältet <strong>Kriterium</strong> anger du <strong>2(yearRange(-2,0))</strong>.</span><span class="sxs-lookup"><span data-stu-id="e099e-181">In the <strong>Criteria</strong> field, enter <strong>(yearRange(-2,0))</strong>.</span></span></li>
+<li><span data-ttu-id="e099e-182">Klicka på <strong>OK</strong>.</span><span class="sxs-lookup"><span data-stu-id="e099e-182">Click <strong>OK</strong>.</span></span> <span data-ttu-id="e099e-183">Listsidan uppdateras och visar de fakturor som matchar kriteriet som du angav.</span><span class="sxs-lookup"><span data-stu-id="e099e-183">The list page is updated and lists the invoices that match the criterion that you entered.</span></span> <span data-ttu-id="e099e-184">För det här exemplet registreras specifika fakturor som förfallit under de föregående två åren.</span><span class="sxs-lookup"><span data-stu-id="e099e-184">For this example, invoices that were due in the previous two years are listed.</span></span></li>
 </ol>
-Se tabellen i nästa avsnittet för ytterligare information om <strong>SysQueryRangeUtil</strong>-datummetoder och flera exempel.</td>
+<span data-ttu-id="e099e-185">Se tabellen i nästa avsnittet för ytterligare information om <strong>SysQueryRangeUtil</strong>-datummetoder och flera exempel.</span><span class="sxs-lookup"><span data-stu-id="e099e-185">See the table in the next section for additional details about <strong>SysQueryRangeUtil</strong> date methods, and several examples.</span></span></td>
 </tr>
 </tbody>
 </table>
 
-## <a name="advanced-date-queries-that-use-sysqueryrangeutil-methods"></a>Avancerade datumfrågor som använder SysQueryRangeUtil-metoder
+## <a name="advanced-date-queries-that-use-sysqueryrangeutil-methods"></a><span data-ttu-id="e099e-186">Avancerade datumfrågor som använder SysQueryRangeUtil-metoder</span><span class="sxs-lookup"><span data-stu-id="e099e-186">Advanced date queries that use SysQueryRangeUtil methods</span></span>
 <table>
 <colgroup>
 <col width="33%" />
@@ -163,71 +163,71 @@ Se tabellen i nästa avsnittet för ytterligare information om <strong>SysQueryR
 </colgroup>
 <thead>
 <tr class="header">
-<th>Metod</th>
-<th>Beskrivning</th>
-<th>Exempel</th>
+<th><span data-ttu-id="e099e-187">Metod</span><span class="sxs-lookup"><span data-stu-id="e099e-187">Method</span></span></th>
+<th><span data-ttu-id="e099e-188">Beskrivning</span><span class="sxs-lookup"><span data-stu-id="e099e-188">Description</span></span></th>
+<th><span data-ttu-id="e099e-189">Exempel</span><span class="sxs-lookup"><span data-stu-id="e099e-189">Example</span></span></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>Dag (_relativeDays=0)</td>
-<td>Sök efter en datumrelativ till sessionsdatumet. Positiva värden anger framtida datum, och negativa värdeen anger tidigare datum.</td>
+<td><span data-ttu-id="e099e-190">Dag (_relativeDays=0)</span><span class="sxs-lookup"><span data-stu-id="e099e-190">Day (_relativeDays=0)</span></span></td>
+<td><span data-ttu-id="e099e-191">Sök efter en datumrelativ till sessionsdatumet.</span><span class="sxs-lookup"><span data-stu-id="e099e-191">Find a date relative to the session date.</span></span> <span data-ttu-id="e099e-192">Positiva värden anger framtida datum, och negativa värdeen anger tidigare datum.</span><span class="sxs-lookup"><span data-stu-id="e099e-192">Positive values indicate future dates, and negative values indicate past dates.</span></span></td>
 <td><ul>
-<li><strong>Imorgon</strong> – Ange <strong>(Dag(1))</strong>.</li>
-<li><strong>I dag</strong> – Ange <strong>(Dag(0))</strong>.</li>
-<li><strong>Igår</strong> – Ange <strong>(Dag(-1))</strong>.</li>
+<li><span data-ttu-id="e099e-193"><strong>Imorgon</strong> – Ange <strong>(Dag(1))</strong>.</span><span class="sxs-lookup"><span data-stu-id="e099e-193"><strong>Tomorrow</strong> – Enter <strong>(Day(1))</strong>.</span></span></li>
+<li><span data-ttu-id="e099e-194"><strong>I dag</strong> – Ange <strong>(Dag(0))</strong>.</span><span class="sxs-lookup"><span data-stu-id="e099e-194"><strong>Today</strong> – Enter <strong>(Day(0))</strong>.</span></span></li>
+<li><span data-ttu-id="e099e-195"><strong>Igår</strong> – Ange <strong>(Dag(-1))</strong>.</span><span class="sxs-lookup"><span data-stu-id="e099e-195"><strong>Yesterday</strong> – Enter <strong>(Day(-1))</strong>.</span></span></li>
 </ul></td>
 </tr>
 <tr class="even">
-<td>DayRange (_relativeDaysFrom=0, _relativeDaysTo=0)</td>
-<td>Hitta ett intervall med datumrelativ till sessionsdatumet. Positiva värden anger framtida datum, och negativa värdeen anger tidigare datum.</td>
+<td><span data-ttu-id="e099e-196">DayRange (_relativeDaysFrom=0, _relativeDaysTo=0)</span><span class="sxs-lookup"><span data-stu-id="e099e-196">DayRange (_relativeDaysFrom=0, _relativeDaysTo=0)</span></span></td>
+<td><span data-ttu-id="e099e-197">Hitta ett intervall med datumrelativ till sessionsdatumet.</span><span class="sxs-lookup"><span data-stu-id="e099e-197">Find a range of dates relative to the session date.</span></span> <span data-ttu-id="e099e-198">Positiva värden anger framtida datum, och negativa värdeen anger tidigare datum.</span><span class="sxs-lookup"><span data-stu-id="e099e-198">Positive values indicate future dates, and negative values indicate past dates.</span></span></td>
 <td><ul>
-<li><strong>De 30 senaste dagarna</strong> – Ange <strong>(DayRange(-30,0))</strong>.</li>
-<li><strong>Föregående 30 dagar och framtida 30 dagar</strong> – Ange <strong>(DayRange(-30,30))</strong>.</li>
+<li><span data-ttu-id="e099e-199"><strong>De 30 senaste dagarna</strong> – Ange <strong>(DayRange(-30,0))</strong>.</span><span class="sxs-lookup"><span data-stu-id="e099e-199"><strong>Last 30 days</strong> – Enter <strong>(DayRange(-30,0))</strong>.</span></span></li>
+<li><span data-ttu-id="e099e-200"><strong>Föregående 30 dagar och framtida 30 dagar</strong> – Ange <strong>(DayRange(-30,30))</strong>.</span><span class="sxs-lookup"><span data-stu-id="e099e-200"><strong>Previous 30 days and next 30 days</strong> – Enter <strong>(DayRange(-30,30))</strong>.</span></span></li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td>GreaterThanDate (_relativeDays=0) GreaterThanUtcDate (_relativeDays=0)</td>
-<td>Sök efter alla data efter det angivna relativa datumet.</td>
+<td><span data-ttu-id="e099e-201">GreaterThanDate (_relativeDays=0) GreaterThanUtcDate (_relativeDays=0)</span><span class="sxs-lookup"><span data-stu-id="e099e-201">GreaterThanDate (_relativeDays=0) GreaterThanUtcDate (_relativeDays=0)</span></span></td>
+<td><span data-ttu-id="e099e-202">Sök efter alla data efter det angivna relativa datumet.</span><span class="sxs-lookup"><span data-stu-id="e099e-202">Find all dates after the specified relative date.</span></span></td>
 <td><ul>
-<li><strong>Mer än 30 dagar från och med nu</strong> – Ange <strong>(GreaterThanDate(30))</strong>.</li>
+<li><span data-ttu-id="e099e-203"><strong>Mer än 30 dagar från och med nu</strong> – Ange <strong>(GreaterThanDate(30))</strong>.</span><span class="sxs-lookup"><span data-stu-id="e099e-203"><strong>More than 30 days from now</strong> – Enter <strong>(GreaterThanDate(30))</strong>.</span></span></li>
 </ul></td>
 </tr>
 <tr class="even">
-<td>GreaterThanUtcNow ()</td>
-<td>Sök efter alla datum/tidposter efter den aktuella tiden.</td>
+<td><span data-ttu-id="e099e-204">GreaterThanUtcNow ()</span><span class="sxs-lookup"><span data-stu-id="e099e-204">GreaterThanUtcNow ()</span></span></td>
+<td><span data-ttu-id="e099e-205">Sök efter alla datum/tidposter efter den aktuella tiden.</span><span class="sxs-lookup"><span data-stu-id="e099e-205">Find all date/time entries after the current time.</span></span></td>
 <td><ul>
-<li><strong>Alla framtida datum/tider</strong> – Ange <strong>(GreaterThanUtcNow())</strong>.</li>
+<li><span data-ttu-id="e099e-206"><strong>Alla framtida datum/tider</strong> – Ange <strong>(GreaterThanUtcNow())</strong>.</span><span class="sxs-lookup"><span data-stu-id="e099e-206"><strong>All future date/times</strong> – Enter <strong>(GreaterThanUtcNow())</strong>.</span></span></li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td>LessThanDate (_relativeDays=0) LessThanUtcDate (_relativeDays=0)</td>
-<td>Sök efter alla data före det angivna relativa datumet.</td>
+<td><span data-ttu-id="e099e-207">LessThanDate (_relativeDays=0) LessThanUtcDate (_relativeDays=0)</span><span class="sxs-lookup"><span data-stu-id="e099e-207">LessThanDate (_relativeDays=0) LessThanUtcDate (_relativeDays=0)</span></span></td>
+<td><span data-ttu-id="e099e-208">Sök efter alla data före det angivna relativa datumet.</span><span class="sxs-lookup"><span data-stu-id="e099e-208">Find all dates before the specified relative date.</span></span></td>
 <td><ul>
-<li><strong>Mindre än sju dagar från och med nu</strong> – Ange <strong>(LessThanDate(7))</strong>.</li>
+<li><span data-ttu-id="e099e-209"><strong>Mindre än sju dagar från och med nu</strong> – Ange <strong>(LessThanDate(7))</strong>.</span><span class="sxs-lookup"><span data-stu-id="e099e-209"><strong>Less than seven days from now</strong> – Enter <strong>(LessThanDate(7))</strong>.</span></span></li>
 </ul></td>
 </tr>
 <tr class="even">
-<td>LessThanUtcNow ()</td>
-<td>Sök efter alla datum/tidposter före den aktuella tiden.</td>
+<td><span data-ttu-id="e099e-210">LessThanUtcNow ()</span><span class="sxs-lookup"><span data-stu-id="e099e-210">LessThanUtcNow ()</span></span></td>
+<td><span data-ttu-id="e099e-211">Sök efter alla datum/tidposter före den aktuella tiden.</span><span class="sxs-lookup"><span data-stu-id="e099e-211">Find all date/time entries before the current time.</span></span></td>
 <td><ul>
-<li><strong>Alla förfallna datum/tider</strong> – Ange <strong>(LessThanUtcNow())</strong>.</li>
+<li><span data-ttu-id="e099e-212"><strong>Alla förfallna datum/tider</strong> – Ange <strong>(LessThanUtcNow())</strong>.</span><span class="sxs-lookup"><span data-stu-id="e099e-212"><strong>All past date/times</strong> – Enter <strong>(LessThanUtcNow())</strong>.</span></span></li>
 </ul></td>
 </tr>
 <tr class="odd">
-<td>MonthRange (_relativeFrom=0, _relativeTo=0)</td>
-<td>Hitta ett datumintervall baserat på månader i förhållande till den aktuella månaden.</td>
+<td><span data-ttu-id="e099e-213">MonthRange (_relativeFrom=0, _relativeTo=0)</span><span class="sxs-lookup"><span data-stu-id="e099e-213">MonthRange (_relativeFrom=0, _relativeTo=0)</span></span></td>
+<td><span data-ttu-id="e099e-214">Hitta ett datumintervall baserat på månader i förhållande till den aktuella månaden.</span><span class="sxs-lookup"><span data-stu-id="e099e-214">Find a range of dates, based on months relative to the current month.</span></span></td>
 <td><ul>
-<li><strong>Tidigare två månader</strong> – Ange <strong>(MonthRange(-2,0))</strong>.</li>
-<li><strong>Nästa tre månader</strong> – Ange <strong>(MonthRange(0,3))</strong>.</li>
+<li><span data-ttu-id="e099e-215"><strong>Tidigare två månader</strong> – Ange <strong>(MonthRange(-2,0))</strong>.</span><span class="sxs-lookup"><span data-stu-id="e099e-215"><strong>Previous two months</strong> – Enter <strong>(MonthRange(-2,0))</strong>.</span></span></li>
+<li><span data-ttu-id="e099e-216"><strong>Nästa tre månader</strong> – Ange <strong>(MonthRange(0,3))</strong>.</span><span class="sxs-lookup"><span data-stu-id="e099e-216"><strong>Next three months</strong> – Enter <strong>(MonthRange(0,3))</strong>.</span></span></li>
 </ul></td>
 </tr>
 <tr class="even">
-<td>YearRange (_relativeFrom=0, _relativeTo=0)</td>
-<td>Hitta ett datumintervall baserat på år i förhållande till det aktuella året.</td>
+<td><span data-ttu-id="e099e-217">YearRange (_relativeFrom=0, _relativeTo=0)</span><span class="sxs-lookup"><span data-stu-id="e099e-217">YearRange (_relativeFrom=0, _relativeTo=0)</span></span></td>
+<td><span data-ttu-id="e099e-218">Hitta ett datumintervall baserat på år i förhållande till det aktuella året.</span><span class="sxs-lookup"><span data-stu-id="e099e-218">Find a range of dates, based on years relative to the current year.</span></span></td>
 <td><ul>
-<li><strong>Nästa år</strong> – Ange <strong>(YearRange(0, 1))</strong>.</li>
-<li><strong>Föregående år</strong> – Ange <strong>(YearRange(-1,0))</strong>.</li>
+<li><span data-ttu-id="e099e-219"><strong>Nästa år</strong> – Ange <strong>(YearRange(0, 1))</strong>.</span><span class="sxs-lookup"><span data-stu-id="e099e-219"><strong>Next year</strong> – Enter <strong>(YearRange(0, 1))</strong>.</span></span></li>
+<li><span data-ttu-id="e099e-220"><strong>Föregående år</strong> – Ange <strong>(YearRange(-1,0))</strong>.</span><span class="sxs-lookup"><span data-stu-id="e099e-220"><strong>Previous year</strong> – Enter <strong>(YearRange(-1,0))</strong>.</span></span></li>
 </ul></td>
 </tr>
 </tbody>

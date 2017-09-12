@@ -16,73 +16,73 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 4190fde8c587475f34e5e3fdf6e2d32d59a26022
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 392cb83ceb8612a2e73cc54bb2d8d40c62a6b7b6
 ms.contentlocale: sv-se
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="create-and-assign-a-cost-behavior-policy-to-a-cost-control-unit"></a>Skapa och tilldela en kostnadsbeteendepolicy till en kostnadsstyrenhet
+# <a name="create-and-assign-a-cost-behavior-policy-to-a-cost-control-unit"></a><span data-ttu-id="de7e8-103">Skapa och tilldela en kostnadsbeteendepolicy till en kostnadsstyrenhet</span><span class="sxs-lookup"><span data-stu-id="de7e8-103">Create and assign a cost behavior policy to a cost control unit</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-Kostnadsbeteende är klassificeringen av kostnader som fasta eller rörliga. En policy och motsvarande regler måste tilldelas till en kostnadsstyrenhet för att policyn ska börja gälla. Använd den här proceduren när du vill skapa en policy och sedan tilldela den till en kostnadsstyrenhet.
+<span data-ttu-id="de7e8-104">Kostnadsbeteende är klassificeringen av kostnader som fasta eller rörliga.</span><span class="sxs-lookup"><span data-stu-id="de7e8-104">Cost behavior is the classification of costs as either fixed or variable.</span></span> <span data-ttu-id="de7e8-105">En policy och motsvarande regler måste tilldelas till en kostnadsstyrenhet för att policyn ska börja gälla.</span><span class="sxs-lookup"><span data-stu-id="de7e8-105">A policy and the corresponding rules have to be assigned to a cost control unit for the policy to become effective.</span></span> <span data-ttu-id="de7e8-106">Använd den här proceduren när du vill skapa en policy och sedan tilldela den till en kostnadsstyrenhet.</span><span class="sxs-lookup"><span data-stu-id="de7e8-106">Use this procedure to create a policy and then assign the policy to a cost control unit.</span></span>
 
 
-## <a name="create-a-cost-behavior-hierarchy"></a>Skapa en hierarki för kostnadsbeteende
-1. Gå till Kostnadsredovisning > Dimensioner > Dimensionshierarkier.
-2. Klicka på Ny.
-3. Klicka på Skapa.
-4. Skriv "Cost behavior hierarchy" i fältet Dimensionshierarkins namn.
-5. Ange eller välj ett värde i fältet Dimension.
-    * Välj Kostnadselement.  
-6. Klicka på Spara.
-7. Klicka p Visa hierarki
-8. Klicka på Ny.
-9. Skriv ett värde i fältet för nodnamn.
-    * Ange fast kostnad.  
-10. Välj Cost behavior hierarchy i trädet.
-11. Klicka på Ny.
-12. Skriv ett värde i fältet för nodnamn.
-    * Ange rörlig kostnad.  
-13. Klicka på Spara.
-14. Välj Cost behavior hierarchy\Fixed cost i trädet.
-15. Klicka på Ny.
-16. Markera vald rad i listan.
-17. Ange eller välj ett värde i fältet Från dimensionsmedlem.
-    * Intervallet med dimensionsmedlemmar får innehålla luckor men medlemmarna får inte överlappa.  
-18. Ange eller välj ett värde i fältet Till dimensionsmedlem.
-    * Intervallet med dimensionsmedlemmar får innehålla luckor men medlemmarna får inte överlappa.  
-19. Välj Cost behavior hierarchy\Variable cost i trädet.
-20. Klicka på Ny.
-21. Markera vald rad i listan.
-22. Ange eller välj ett värde i fältet Från dimensionsmedlem.
-    * Intervallet med dimensionsmedlemmar får innehålla luckor men medlemmarna får inte överlappa.  
-23. Ange eller välj ett värde i fältet Till dimensionsmedlem.
-    * Intervallet med dimensionsmedlemmar får innehålla luckor men medlemmarna får inte överlappa.  
-24. Klicka på Spara.
+## <a name="create-a-cost-behavior-hierarchy"></a><span data-ttu-id="de7e8-107">Skapa en hierarki för kostnadsbeteende</span><span class="sxs-lookup"><span data-stu-id="de7e8-107">Create a cost behavior hierarchy</span></span>
+1. <span data-ttu-id="de7e8-108">Gå till Kostnadsredovisning > Dimensioner > Dimensionshierarkier.</span><span class="sxs-lookup"><span data-stu-id="de7e8-108">Go to Cost accounting > Dimensions > Dimension hierarchies.</span></span>
+2. <span data-ttu-id="de7e8-109">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="de7e8-109">Click New.</span></span>
+3. <span data-ttu-id="de7e8-110">Klicka på Skapa.</span><span class="sxs-lookup"><span data-stu-id="de7e8-110">Click Create.</span></span>
+4. <span data-ttu-id="de7e8-111">Skriv "Cost behavior hierarchy" i fältet Dimensionshierarkins namn.</span><span class="sxs-lookup"><span data-stu-id="de7e8-111">In the Dimension hierarchy name field, type 'Cost behavior hierarchy'.</span></span>
+5. <span data-ttu-id="de7e8-112">Ange eller välj ett värde i fältet Dimension.</span><span class="sxs-lookup"><span data-stu-id="de7e8-112">In the Dimension field, enter or select a value.</span></span>
+    * <span data-ttu-id="de7e8-113">Välj Kostnadselement.</span><span class="sxs-lookup"><span data-stu-id="de7e8-113">Select Cost elements.</span></span>  
+6. <span data-ttu-id="de7e8-114">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="de7e8-114">Click Save.</span></span>
+7. <span data-ttu-id="de7e8-115">Klicka p Visa hierarki</span><span class="sxs-lookup"><span data-stu-id="de7e8-115">Click View hierarchy.</span></span>
+8. <span data-ttu-id="de7e8-116">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="de7e8-116">Click New.</span></span>
+9. <span data-ttu-id="de7e8-117">Skriv ett värde i fältet för nodnamn.</span><span class="sxs-lookup"><span data-stu-id="de7e8-117">In the Node name field, type a value.</span></span>
+    * <span data-ttu-id="de7e8-118">Ange fast kostnad.</span><span class="sxs-lookup"><span data-stu-id="de7e8-118">Enter Fixed cost.</span></span>  
+10. <span data-ttu-id="de7e8-119">Välj Cost behavior hierarchy i trädet.</span><span class="sxs-lookup"><span data-stu-id="de7e8-119">In the tree, select 'Cost behavior hierarchy'.</span></span>
+11. <span data-ttu-id="de7e8-120">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="de7e8-120">Click New.</span></span>
+12. <span data-ttu-id="de7e8-121">Skriv ett värde i fältet för nodnamn.</span><span class="sxs-lookup"><span data-stu-id="de7e8-121">In the Node name field, type a value.</span></span>
+    * <span data-ttu-id="de7e8-122">Ange rörlig kostnad.</span><span class="sxs-lookup"><span data-stu-id="de7e8-122">Enter Variable cost.</span></span>  
+13. <span data-ttu-id="de7e8-123">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="de7e8-123">Click Save.</span></span>
+14. <span data-ttu-id="de7e8-124">Välj Cost behavior hierarchy\Fixed cost i trädet.</span><span class="sxs-lookup"><span data-stu-id="de7e8-124">In the tree, select 'Cost behavior hierarchy\Fixed cost'.</span></span>
+15. <span data-ttu-id="de7e8-125">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="de7e8-125">Click New.</span></span>
+16. <span data-ttu-id="de7e8-126">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="de7e8-126">In the list, mark the selected row.</span></span>
+17. <span data-ttu-id="de7e8-127">Ange eller välj ett värde i fältet Från dimensionsmedlem.</span><span class="sxs-lookup"><span data-stu-id="de7e8-127">In the From dimension member field, enter or select a value.</span></span>
+    * <span data-ttu-id="de7e8-128">Intervallet med dimensionsmedlemmar får innehålla luckor men medlemmarna får inte överlappa.</span><span class="sxs-lookup"><span data-stu-id="de7e8-128">The range of dimension members can contain gaps, but the members cannot overlap.</span></span>  
+18. <span data-ttu-id="de7e8-129">Ange eller välj ett värde i fältet Till dimensionsmedlem.</span><span class="sxs-lookup"><span data-stu-id="de7e8-129">In the To dimension member field, enter or select a value.</span></span>
+    * <span data-ttu-id="de7e8-130">Intervallet med dimensionsmedlemmar får innehålla luckor men medlemmarna får inte överlappa.</span><span class="sxs-lookup"><span data-stu-id="de7e8-130">The range of dimension members can contain gaps, but the members cannot overlap.</span></span>  
+19. <span data-ttu-id="de7e8-131">Välj Cost behavior hierarchy\Variable cost i trädet.</span><span class="sxs-lookup"><span data-stu-id="de7e8-131">In the tree, select 'Cost behavior hierarchy\Variable cost'.</span></span>
+20. <span data-ttu-id="de7e8-132">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="de7e8-132">Click New.</span></span>
+21. <span data-ttu-id="de7e8-133">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="de7e8-133">In the list, mark the selected row.</span></span>
+22. <span data-ttu-id="de7e8-134">Ange eller välj ett värde i fältet Från dimensionsmedlem.</span><span class="sxs-lookup"><span data-stu-id="de7e8-134">In the From dimension member field, enter or select a value.</span></span>
+    * <span data-ttu-id="de7e8-135">Intervallet med dimensionsmedlemmar får innehålla luckor men medlemmarna får inte överlappa.</span><span class="sxs-lookup"><span data-stu-id="de7e8-135">The range of dimension members can contain gaps, but the members cannot overlap.</span></span>  
+23. <span data-ttu-id="de7e8-136">Ange eller välj ett värde i fältet Till dimensionsmedlem.</span><span class="sxs-lookup"><span data-stu-id="de7e8-136">In the To dimension member field, enter or select a value.</span></span>
+    * <span data-ttu-id="de7e8-137">Intervallet med dimensionsmedlemmar får innehålla luckor men medlemmarna får inte överlappa.</span><span class="sxs-lookup"><span data-stu-id="de7e8-137">The range of dimension members can contain gaps, but the members cannot overlap.</span></span>  
+24. <span data-ttu-id="de7e8-138">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="de7e8-138">Click Save.</span></span>
 
-## <a name="create-the-policy-and-rules"></a>Skapa policyn och regler
-1. Gå till Kostnadsredovisning > Policyer > Kostnadsbeteendepolicyer.
-2. Klicka på Ny.
-3. Skriv ett värde i fältet Policynamn.
-4. Ange eller välj ett värde i fältet Dimensionshierarki för kostnadselement.
-    * Välj policyhierarkin som du just har skapat.  
-5. Ange eller välj ett värde i fältet Dimensionshierarki för kostnadsobjekt.
-    * Välj Organisation.  
-6. Klicka på Spara.
-7. Klicka på Ny.
-8. Markera vald rad i listan.
-9. Ange eller välj ett värde i fältet Dimensionshierarkinod för kostnadselement.
-    * Expandera hela hierarkin för att Rörlig kostnad.  
-10. Ange eller välj ett värde i fältet Dimensionshierarkinod för kostnadsobjekt.
-    * Som standard är den rörliga procentandelen 100 procent.  
-11. Klicka på Policytilldelningar för kostnadsstyrenhet.
-12. Klicka på Ny.
-13. Markera vald rad i listan.
-14. Ange ett datum i fältet Gäller från redovisningsdatum.
-    * Reglerna gäller utifrån datum och en regel kan upphöra att gälla genom en användare eller systemet om en nyare version skapas.  
-15. Ange eller välj ett värde i fältet Kostnadsstyrenhet.
-16. Klicka på Spara.
+## <a name="create-the-policy-and-rules"></a><span data-ttu-id="de7e8-139">Skapa policyn och regler</span><span class="sxs-lookup"><span data-stu-id="de7e8-139">Create the policy and rules</span></span>
+1. <span data-ttu-id="de7e8-140">Gå till Kostnadsredovisning > Policyer > Kostnadsbeteendepolicyer.</span><span class="sxs-lookup"><span data-stu-id="de7e8-140">Go to Cost accounting > Policies > Cost behavior policies.</span></span>
+2. <span data-ttu-id="de7e8-141">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="de7e8-141">Click New.</span></span>
+3. <span data-ttu-id="de7e8-142">Skriv ett värde i fältet Policynamn.</span><span class="sxs-lookup"><span data-stu-id="de7e8-142">In the Policy name field, type a value.</span></span>
+4. <span data-ttu-id="de7e8-143">Ange eller välj ett värde i fältet Dimensionshierarki för kostnadselement.</span><span class="sxs-lookup"><span data-stu-id="de7e8-143">In the Cost element dimension hierarchy field, enter or select a value.</span></span>
+    * <span data-ttu-id="de7e8-144">Välj policyhierarkin som du just har skapat.</span><span class="sxs-lookup"><span data-stu-id="de7e8-144">Select the policy hierarchy that you just created.</span></span>  
+5. <span data-ttu-id="de7e8-145">Ange eller välj ett värde i fältet Dimensionshierarki för kostnadsobjekt.</span><span class="sxs-lookup"><span data-stu-id="de7e8-145">In the Cost object dimension hierarchy field, enter or select a value.</span></span>
+    * <span data-ttu-id="de7e8-146">Välj Organisation.</span><span class="sxs-lookup"><span data-stu-id="de7e8-146">Select Organization.</span></span>  
+6. <span data-ttu-id="de7e8-147">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="de7e8-147">Click Save.</span></span>
+7. <span data-ttu-id="de7e8-148">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="de7e8-148">Click New.</span></span>
+8. <span data-ttu-id="de7e8-149">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="de7e8-149">In the list, mark the selected row.</span></span>
+9. <span data-ttu-id="de7e8-150">Ange eller välj ett värde i fältet Dimensionshierarkinod för kostnadselement.</span><span class="sxs-lookup"><span data-stu-id="de7e8-150">In the Cost element dimension hierarchy node field, enter or select a value.</span></span>
+    * <span data-ttu-id="de7e8-151">Expandera hela hierarkin för att Rörlig kostnad.</span><span class="sxs-lookup"><span data-stu-id="de7e8-151">Expand the hierarchy to select Variable cost.</span></span>  
+10. <span data-ttu-id="de7e8-152">Ange eller välj ett värde i fältet Dimensionshierarkinod för kostnadsobjekt.</span><span class="sxs-lookup"><span data-stu-id="de7e8-152">In the Cost object dimension hierarchy node field, enter or select a value.</span></span>
+    * <span data-ttu-id="de7e8-153">Som standard är den rörliga procentandelen 100 procent.</span><span class="sxs-lookup"><span data-stu-id="de7e8-153">By default, the variable percentage is 100 percent.</span></span>  
+11. <span data-ttu-id="de7e8-154">Klicka på Policytilldelningar för kostnadsstyrenhet.</span><span class="sxs-lookup"><span data-stu-id="de7e8-154">Click Policy assignments for cost control unit.</span></span>
+12. <span data-ttu-id="de7e8-155">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="de7e8-155">Click New.</span></span>
+13. <span data-ttu-id="de7e8-156">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="de7e8-156">In the list, mark the selected row.</span></span>
+14. <span data-ttu-id="de7e8-157">Ange ett datum i fältet Gäller från redovisningsdatum.</span><span class="sxs-lookup"><span data-stu-id="de7e8-157">In the Valid from accounting date field, enter a date.</span></span>
+    * <span data-ttu-id="de7e8-158">Reglerna gäller utifrån datum och en regel kan upphöra att gälla genom en användare eller systemet om en nyare version skapas.</span><span class="sxs-lookup"><span data-stu-id="de7e8-158">The rules are date-effective, and a user or the system can expire a rule if a newer version is created.</span></span>  
+15. <span data-ttu-id="de7e8-159">Ange eller välj ett värde i fältet Kostnadsstyrenhet.</span><span class="sxs-lookup"><span data-stu-id="de7e8-159">In the Cost control unit field, enter or select a value.</span></span>
+16. <span data-ttu-id="de7e8-160">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="de7e8-160">Click Save.</span></span>
 
 

@@ -16,61 +16,61 @@ ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: f1e22f15e98b563f7d2aae812aee3df1d454524c
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: f195f9e466eab3cf87afea2b5d430d0ea25c5a83
 ms.contentlocale: sv-se
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="register-sales-commissions"></a>Registrera försäljningsprovisioner
+# <a name="register-sales-commissions"></a><span data-ttu-id="899db-103">Registrera försäljningsprovisioner</span><span class="sxs-lookup"><span data-stu-id="899db-103">Register sales commissions</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-I den här proceduren visas hur försäljningsprovisioner beräknas och registreras. Du kan köra den här proceduren i demonstrationsföretaget USMF eller på dina egna data. Innan du startar guiden kör du guiden ”Ställ in regler för försäljningsprovision” för att vara säker på att alla nödvändiga inställningar för provisionsberäkningen har gjorts.
+<span data-ttu-id="899db-104">I den här proceduren visas hur försäljningsprovisioner beräknas och registreras.</span><span class="sxs-lookup"><span data-stu-id="899db-104">This procedure shows you how sales commissions are calculated and registered.</span></span> <span data-ttu-id="899db-105">Du kan köra den här proceduren i demonstrationsföretaget USMF eller på dina egna data.</span><span class="sxs-lookup"><span data-stu-id="899db-105">You can run this procedure in demo data company USMF or on your own data.</span></span> <span data-ttu-id="899db-106">Innan du startar guiden kör du guiden ”Ställ in regler för försäljningsprovision” för att vara säker på att alla nödvändiga inställningar för provisionsberäkningen har gjorts.</span><span class="sxs-lookup"><span data-stu-id="899db-106">Before starting this guide, run the guide called "Set up sales commission rules" to make sure that you have all the necessary commission calculation setup.</span></span>
 
-Skriv upp kundnumren och artikelnumret du har valt för provisionsprocessen, och använd dem när du ska skapa en försäljningsorder i den här guiden.
+<span data-ttu-id="899db-107">Skriv upp kundnumren och artikelnumret du har valt för provisionsprocessen, och använd dem när du ska skapa en försäljningsorder i den här guiden.</span><span class="sxs-lookup"><span data-stu-id="899db-107">Take note of the customer and item numbers that you have chosen for the commission process and use them when asked to create a sales order in this guide.</span></span>
 
 
-## <a name="invoice-a-sales-order-that-qualifies-a-salesperson-for-a-commission"></a>Fakturera en försäljningsorder som kvalificerar en säljare för provision
-1. Gå till försäljning och marknadsföring > beställningar > Alla beställningar.
-2. Klicka på Ny.
-3. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Kundkonto.
-4. Hitta och markera önskad post i listan.
-5. Klicka på länken på den valda raden i listan.
-6. Klicka på OK.
-7. Klicka på Alternativ i åtgärdsfönstret.
-8. Klicka på Ändra vy.
-9. Klicka på Huvudvy.
-10. Expandera avsnittet Inställningar.
-    * Värdet i försäljningsgruppfältet representerar en grupp med en eller flera säljare som har kopplats till det. Människorna i gruppen är de som ska få provision när ordern är fakturerad enligt fördefinierade frekvenser och distribution.   Värdet kopieras från kund-kort, men du kan ändra det om du vill.  Försäljningsgruppen finns också kopieras till kundorderraden. Du kan ändra den, så att den kan skilja sig från den i huvudet och/eller mellan raderna.  
-    * Värdet i provisiongruppsfältet representerar en grupp som du har skapat för en eller flera kunder med syftet att spåra provisioner.   Värdet kopieras från kund-kort, men du kan ändra det om du vill.   
-11. Klicka på Alternativ i åtgärdsfönstret.
-12. Klicka på Ändra vy.
-13. Klicka på Radvy.
-14. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Artikelnummer.
-15. Välj den artikel som du har ställt in för provisioner i listan. 
-16. Ange ett tal i fältet Kvantitet.
-    * Observera radens nettobelopp. Det representerar försäljningsintäkten, som i det här exemplet är grunden för provisionsberäkningen.  
-17. Klicka på Spara.
-18. Klicka på Faktura i åtgärdsfönstret.
-19. Klicka på Faktura.
-20. Expandera avsnittet Parametrar.
-21. Välj Alla i fältet Kvantitet.
-22. Välj Ja i fältet Bokför.
-23. Klicka på OK.
-24. Klicka på OK.
-    * Den kan ta minut eller så att bokföra transaktionen. Tillåt processen att slutföras och stäng inte sidan.  
+## <a name="invoice-a-sales-order-that-qualifies-a-salesperson-for-a-commission"></a><span data-ttu-id="899db-108">Fakturera en försäljningsorder som kvalificerar en säljare för provision</span><span class="sxs-lookup"><span data-stu-id="899db-108">Invoice a sales order that qualifies a salesperson for a commission</span></span>
+1. <span data-ttu-id="899db-109">Gå till försäljning och marknadsföring > beställningar > Alla beställningar.</span><span class="sxs-lookup"><span data-stu-id="899db-109">Go to Sales and marketing > Sales orders > All sales orders.</span></span>
+2. <span data-ttu-id="899db-110">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="899db-110">Click New.</span></span>
+3. <span data-ttu-id="899db-111">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Kundkonto.</span><span class="sxs-lookup"><span data-stu-id="899db-111">In the Customer account field, click the drop-down button to open the lookup.</span></span>
+4. <span data-ttu-id="899db-112">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="899db-112">In the list, find and select the desired record.</span></span>
+5. <span data-ttu-id="899db-113">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="899db-113">In the list, click the link in the selected row.</span></span>
+6. <span data-ttu-id="899db-114">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="899db-114">Click OK.</span></span>
+7. <span data-ttu-id="899db-115">Klicka på Alternativ i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="899db-115">On the Action Pane, click Options.</span></span>
+8. <span data-ttu-id="899db-116">Klicka på Ändra vy.</span><span class="sxs-lookup"><span data-stu-id="899db-116">Click Change view.</span></span>
+9. <span data-ttu-id="899db-117">Klicka på Huvudvy.</span><span class="sxs-lookup"><span data-stu-id="899db-117">Click Header view.</span></span>
+10. <span data-ttu-id="899db-118">Expandera avsnittet Inställningar.</span><span class="sxs-lookup"><span data-stu-id="899db-118">Expand the Setup section.</span></span>
+    * <span data-ttu-id="899db-119">Värdet i försäljningsgruppfältet representerar en grupp med en eller flera säljare som har kopplats till det.</span><span class="sxs-lookup"><span data-stu-id="899db-119">The value in the Sales group field represents a group with one or more sales representatives assigned to it.</span></span> <span data-ttu-id="899db-120">Människorna i gruppen är de som ska få provision när ordern är fakturerad enligt fördefinierade frekvenser och distribution.</span><span class="sxs-lookup"><span data-stu-id="899db-120">The people in the group are the ones who will receive commissions when the order is invoiced, as per predefined rates and distribution.</span></span>   <span data-ttu-id="899db-121">Värdet kopieras från kund-kort, men du kan ändra det om du vill.</span><span class="sxs-lookup"><span data-stu-id="899db-121">The value is copied from the Customer card, but you can change it if you wish.</span></span>  <span data-ttu-id="899db-122">Försäljningsgruppen finns också kopieras till kundorderraden.</span><span class="sxs-lookup"><span data-stu-id="899db-122">The Sales group is also copied to the sales order line.</span></span> <span data-ttu-id="899db-123">Du kan ändra den, så att den kan skilja sig från den i huvudet och/eller mellan raderna.</span><span class="sxs-lookup"><span data-stu-id="899db-123">You can change it so that it can differ from the one in the header and/or between lines.</span></span>  
+    * <span data-ttu-id="899db-124">Värdet i provisiongruppsfältet representerar en grupp som du har skapat för en eller flera kunder med syftet att spåra provisioner.</span><span class="sxs-lookup"><span data-stu-id="899db-124">The value in the Commission group field represents a group that you have created for one or more customers with the purpose of tracking commissions.</span></span>   <span data-ttu-id="899db-125">Värdet kopieras från kund-kort, men du kan ändra det om du vill.</span><span class="sxs-lookup"><span data-stu-id="899db-125">The value is copied from the Customer card, but you can change it if you wish.</span></span>   
+11. <span data-ttu-id="899db-126">Klicka på Alternativ i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="899db-126">On the Action Pane, click Options.</span></span>
+12. <span data-ttu-id="899db-127">Klicka på Ändra vy.</span><span class="sxs-lookup"><span data-stu-id="899db-127">Click Change view.</span></span>
+13. <span data-ttu-id="899db-128">Klicka på Radvy.</span><span class="sxs-lookup"><span data-stu-id="899db-128">Click Line view.</span></span>
+14. <span data-ttu-id="899db-129">Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Artikelnummer.</span><span class="sxs-lookup"><span data-stu-id="899db-129">In the Item number field, click the drop-down button to open the lookup.</span></span>
+15. <span data-ttu-id="899db-130">Välj den artikel som du har ställt in för provisioner i listan.</span><span class="sxs-lookup"><span data-stu-id="899db-130">In the list, select the item you have set up for commissions.</span></span> 
+16. <span data-ttu-id="899db-131">Ange ett tal i fältet Kvantitet.</span><span class="sxs-lookup"><span data-stu-id="899db-131">In the Quantity field, enter a number.</span></span>
+    * <span data-ttu-id="899db-132">Observera radens nettobelopp.</span><span class="sxs-lookup"><span data-stu-id="899db-132">Take note of the line's Net amount.</span></span> <span data-ttu-id="899db-133">Det representerar försäljningsintäkten, som i det här exemplet är grunden för provisionsberäkningen.</span><span class="sxs-lookup"><span data-stu-id="899db-133">It represents the sales revenue, which in this example is the basis for commission calculation.</span></span>  
+17. <span data-ttu-id="899db-134">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="899db-134">Click Save.</span></span>
+18. <span data-ttu-id="899db-135">Klicka på Faktura i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="899db-135">On the Action Pane, click Invoice.</span></span>
+19. <span data-ttu-id="899db-136">Klicka på Faktura.</span><span class="sxs-lookup"><span data-stu-id="899db-136">Click Invoice.</span></span>
+20. <span data-ttu-id="899db-137">Expandera avsnittet Parametrar.</span><span class="sxs-lookup"><span data-stu-id="899db-137">Expand the Parameters section.</span></span>
+21. <span data-ttu-id="899db-138">Välj Alla i fältet Kvantitet.</span><span class="sxs-lookup"><span data-stu-id="899db-138">In the Quantity field, select 'All'.</span></span>
+22. <span data-ttu-id="899db-139">Välj Ja i fältet Bokför.</span><span class="sxs-lookup"><span data-stu-id="899db-139">Select Yes in the Posting field.</span></span>
+23. <span data-ttu-id="899db-140">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="899db-140">Click OK.</span></span>
+24. <span data-ttu-id="899db-141">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="899db-141">Click OK.</span></span>
+    * <span data-ttu-id="899db-142">Den kan ta minut eller så att bokföra transaktionen.</span><span class="sxs-lookup"><span data-stu-id="899db-142">It may take a minute or so to post the transaction.</span></span> <span data-ttu-id="899db-143">Tillåt processen att slutföras och stäng inte sidan.</span><span class="sxs-lookup"><span data-stu-id="899db-143">Allow the processing to complete and don’t close the page.</span></span>  
 
-## <a name="review-the-registered-sales-commissions"></a>Granska de registrerade försäljningsprovisionerna
-1. Klicka på Faktura i åtgärdsfönstret.
-2. Klicka på Faktura.
-3. Klicka på Faktura i åtgärdsfönstret.
-4. Klicka på Provisionstransaktioner.
-    * På fliken Översikt visas raderna med provisionsbeloppen som är betalning till säljare som är kopplade till den fakturerade försäljningsordern. Vi tar en titt på detaljerna.     
-    * Om du använde guiden ”Ställ in regler för försäljningsprovision” när du ställde in försäljningsprovisionsgruppen, finns det två säljare som får provision och provisionen fördelas lika mellan dem.  
-    * I det här exemplet beräknas provisionens totala belopp som procent av försäljningsintäkten (nettobeloppet på orderraden).   
-5. Stäng sidan.
-6. Klicka på Verifikation.
-    * Du kan granska de verifikationstransaktionerna för provisionsbeloppen som har bokförts på de fördefinierade kontona för provisionsutgiften och provisionsskulden.  
+## <a name="review-the-registered-sales-commissions"></a><span data-ttu-id="899db-144">Granska de registrerade försäljningsprovisionerna</span><span class="sxs-lookup"><span data-stu-id="899db-144">Review the registered sales commissions</span></span>
+1. <span data-ttu-id="899db-145">Klicka på Faktura i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="899db-145">On the Action Pane, click Invoice.</span></span>
+2. <span data-ttu-id="899db-146">Klicka på Faktura.</span><span class="sxs-lookup"><span data-stu-id="899db-146">Click Invoice.</span></span>
+3. <span data-ttu-id="899db-147">Klicka på Faktura i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="899db-147">On the Action Pane, click Invoice.</span></span>
+4. <span data-ttu-id="899db-148">Klicka på Provisionstransaktioner.</span><span class="sxs-lookup"><span data-stu-id="899db-148">Click Commission transactions.</span></span>
+    * <span data-ttu-id="899db-149">På fliken Översikt visas raderna med provisionsbeloppen som är betalning till säljare som är kopplade till den fakturerade försäljningsordern.</span><span class="sxs-lookup"><span data-stu-id="899db-149">The Overview tab displays lines representing the commission amounts payable to sales representatives who are associated with the invoiced sales order.</span></span> <span data-ttu-id="899db-150">Vi tar en titt på detaljerna.</span><span class="sxs-lookup"><span data-stu-id="899db-150">Let's review the details.</span></span>     
+    * <span data-ttu-id="899db-151">Om du använde guiden ”Ställ in regler för försäljningsprovision” när du ställde in försäljningsprovisionsgruppen, finns det två säljare som får provision och provisionen fördelas lika mellan dem.</span><span class="sxs-lookup"><span data-stu-id="899db-151">If you used the "Set up sales commission rules" guide to set up the Commission sales group, there are two sales people to receive a sales commissions, and the commission is split equally between them.</span></span>  
+    * <span data-ttu-id="899db-152">I det här exemplet beräknas provisionens totala belopp som procent av försäljningsintäkten (nettobeloppet på orderraden).</span><span class="sxs-lookup"><span data-stu-id="899db-152">In this example, the total amount of the commission is calculated as a percentage of the sales revenue (the net amount of order line).</span></span>   
+5. <span data-ttu-id="899db-153">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="899db-153">Close the page.</span></span>
+6. <span data-ttu-id="899db-154">Klicka på Verifikation.</span><span class="sxs-lookup"><span data-stu-id="899db-154">Click Voucher.</span></span>
+    * <span data-ttu-id="899db-155">Du kan granska de verifikationstransaktionerna för provisionsbeloppen som har bokförts på de fördefinierade kontona för provisionsutgiften och provisionsskulden.</span><span class="sxs-lookup"><span data-stu-id="899db-155">You can review the voucher transactions for the commission amounts that have been posted to the predefined commission expense and commission payable accounts.</span></span>  
 
 

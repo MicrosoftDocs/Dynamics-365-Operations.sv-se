@@ -16,150 +16,150 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 65db27e59ce5f9234eeb486efeb9bb6e9dad40f7
+ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.openlocfilehash: 473cad588253b0eb42eb927834e186ccfa4c4f1e
 ms.contentlocale: sv-se
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 08/29/2017
 
 ---
-# <a name="manage-model-mapping-configurations-for-electronic-reporting-er"></a>Hantera modellmappningskonfigurationer för elektronisk rapportering (ER)
+# <a name="manage-model-mapping-configurations-for-electronic-reporting-er"></a><span data-ttu-id="25df3-103">Hantera modellmappningskonfigurationer för elektronisk rapportering (ER)</span><span class="sxs-lookup"><span data-stu-id="25df3-103">Manage model mapping configurations for electronic reporting (ER)</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-I följande steg förklaras hur en användare som är tilldelad rollen som systemadministratör eller utvecklare för elektronisk rapportering kan hantera ER-modellmappningar (elektronisk rapportering) i separata ER-konfigurationer. I den här uppgiftsguide skapar du de ER-konfigurationer som krävs för exempelföretaget Litware, Inc. För att slutföra uppgiftsguiden måste du först slutföra stegen i uppgiftsguiden ”ER skapa en konfigurationsleverantör” och markera den som aktiv. 
+<span data-ttu-id="25df3-104">I följande steg förklaras hur en användare som är tilldelad rollen som systemadministratör eller utvecklare för elektronisk rapportering kan hantera ER-modellmappningar (elektronisk rapportering) i separata ER-konfigurationer.</span><span class="sxs-lookup"><span data-stu-id="25df3-104">The following steps explain how a user assigned to the System administrator or Electronic reporting developer role can manage Electronic reporting (ER) model mappings in separate ER configurations.</span></span> <span data-ttu-id="25df3-105">I den här uppgiftsguide skapar du de ER-konfigurationer som krävs för exempelföretaget Litware, Inc. För att slutföra uppgiftsguiden måste du först slutföra stegen i uppgiftsguiden ”ER skapa en konfigurationsleverantör” och markera den som aktiv.</span><span class="sxs-lookup"><span data-stu-id="25df3-105">In this task guide, you will create required ER configurations for the sample company, Litware, Inc. To complete this task guide, you must first complete the steps in the task guide, “ER Create a configuration provider” and mark it as active.</span></span> 
 
-Eftersom ER-konfigurationer delas mellan företag kan du genomföra den här uppgiftsguiden med valfri företagsdatauppsättning. Funktionerna för den här uppgiften är tillgängliga om du har installerat någon av följande snabbkorrigeringar: https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012872 för Dynamics AX 7.0 eller https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871 för Dynamics 365 for Operations-versionen.
+<span data-ttu-id="25df3-106">Eftersom ER-konfigurationer delas mellan företag kan du genomföra den här uppgiftsguiden med valfri företagsdatauppsättning.</span><span class="sxs-lookup"><span data-stu-id="25df3-106">Because ER configurations are shared among companies, you can complete this task guide using the company data set of your choice.</span></span> <span data-ttu-id="25df3-107">Funktionerna för den här uppgiften är tillgängliga om du har installerat någon av följande snabbkorrigeringar: https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012872 för Dynamics AX 7.0 eller https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871 för Dynamics 365 for Operations-versionen.</span><span class="sxs-lookup"><span data-stu-id="25df3-107">The functionality for this task guide is available if you have installed one of the following hotfixes: https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012872 for the Dynamics AX 7.0 version or https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871 for the Dynamics 365 for Operations version.</span></span>
 
-1. Gå till Organisationsadministration > Arbetsytor > Elektronisk rapportering.
-    * Kontrollera att konfigurationsleverantören för provföretaget "Litware, Inc." är markerad som aktiv och tillgänglig. Om du inte ser den här konfigurationsleverantören måste du först slutföra stegen i uppgiftsguiden Skapa en konfigurationsleverantör och välj den som aktiv.   
+1. <span data-ttu-id="25df3-108">Gå till Organisationsadministration > Arbetsytor > Elektronisk rapportering.</span><span class="sxs-lookup"><span data-stu-id="25df3-108">Go to Organization administration > Workspaces > Electronic reporting.</span></span>
+    * <span data-ttu-id="25df3-109">Kontrollera att konfigurationsleverantören för provföretaget "Litware, Inc." är markerad som aktiv och tillgänglig.</span><span class="sxs-lookup"><span data-stu-id="25df3-109">Verify that the configuration provider for the sample company Litware, Inc. is available and marked as active.</span></span> <span data-ttu-id="25df3-110">Om du inte ser den här konfigurationsleverantören måste du först slutföra stegen i uppgiftsguiden Skapa en konfigurationsleverantör och välj den som aktiv.</span><span class="sxs-lookup"><span data-stu-id="25df3-110">If you don’t see this configuration provider, you must first complete the steps in the task guide, Create a configuration provider and mark it as active.</span></span>   
 
-## <a name="add-a-new-er-model-configuration"></a>Lägg till en ny konfiguration för ER-modell
-1. Klicka på Reporting configurations.
-    * Lägg till en ny modellkonfiguration. Namnet måste vara unikt i konfigurationsträdet.  
-2. Klicka på Skapa konfiguration om du vill öppna dialogrutan.
-3. Skriv "Sample data model" i namnfältet.
-    * Exempel på datamodell  
-4. Klicka på Skapa konfiguration.
-5. Klicka på Designer.
-6. Klicka på Nytt om du vill öppna dialogrutan.
-7. Ange "Root" i namnfältet.
-    * Rot  
-8. Klicka på Lägg till.
-9. Klicka på Nytt om du vill öppna dialogrutan.
-10. Skriv "Företag" i fältet Namn.
-    * Företag  
-11. Klicka på Lägg till.
-12. Gå till beskrivningsfältet och skriv texten "Description of the legal entity or company in which a user logged at run-time". 
-    * Beskrivning av den juridiska personen eller företaget som en användare loggat in till under körning.  
-13. Klicka på Rotreferens.
-14. Klicka på OK.
-15. Klicka på Spara.
-16. Stäng sidan.
-17. Klicka på Ändra status.
-18. Klicka på Slutför.
-19. Klicka på OK.
+## <a name="add-a-new-er-model-configuration"></a><span data-ttu-id="25df3-111">Lägg till en ny konfiguration för ER-modell</span><span class="sxs-lookup"><span data-stu-id="25df3-111">Add a new ER model configuration</span></span>
+1. <span data-ttu-id="25df3-112">Klicka på Reporting configurations.</span><span class="sxs-lookup"><span data-stu-id="25df3-112">Click Reporting configurations.</span></span>
+    * <span data-ttu-id="25df3-113">Lägg till en ny modellkonfiguration.</span><span class="sxs-lookup"><span data-stu-id="25df3-113">Add a new model configuration.</span></span> <span data-ttu-id="25df3-114">Namnet måste vara unikt i konfigurationsträdet.</span><span class="sxs-lookup"><span data-stu-id="25df3-114">The name must be unique in the configurations tree.</span></span>  
+2. <span data-ttu-id="25df3-115">Klicka på Skapa konfiguration om du vill öppna dialogrutan.</span><span class="sxs-lookup"><span data-stu-id="25df3-115">Click Create configuration to open the drop dialog.</span></span>
+3. <span data-ttu-id="25df3-116">Skriv "Sample data model" i namnfältet.</span><span class="sxs-lookup"><span data-stu-id="25df3-116">In the Name field, type 'Sample data model'.</span></span>
+    * <span data-ttu-id="25df3-117">Exempel på datamodell</span><span class="sxs-lookup"><span data-stu-id="25df3-117">Sample data model</span></span>  
+4. <span data-ttu-id="25df3-118">Klicka på Skapa konfiguration.</span><span class="sxs-lookup"><span data-stu-id="25df3-118">Click Create configuration.</span></span>
+5. <span data-ttu-id="25df3-119">Klicka på Designer.</span><span class="sxs-lookup"><span data-stu-id="25df3-119">Click Designer.</span></span>
+6. <span data-ttu-id="25df3-120">Klicka på Nytt om du vill öppna dialogrutan.</span><span class="sxs-lookup"><span data-stu-id="25df3-120">Click New to open the drop dialog.</span></span>
+7. <span data-ttu-id="25df3-121">Ange "Root" i namnfältet.</span><span class="sxs-lookup"><span data-stu-id="25df3-121">In the Name field, type 'Root'.</span></span>
+    * <span data-ttu-id="25df3-122">Rot</span><span class="sxs-lookup"><span data-stu-id="25df3-122">Root</span></span>  
+8. <span data-ttu-id="25df3-123">Klicka på Lägg till.</span><span class="sxs-lookup"><span data-stu-id="25df3-123">Click Add.</span></span>
+9. <span data-ttu-id="25df3-124">Klicka på Nytt om du vill öppna dialogrutan.</span><span class="sxs-lookup"><span data-stu-id="25df3-124">Click New to open the drop dialog.</span></span>
+10. <span data-ttu-id="25df3-125">Skriv "Företag" i fältet Namn.</span><span class="sxs-lookup"><span data-stu-id="25df3-125">In the Name field, type 'Company'.</span></span>
+    * <span data-ttu-id="25df3-126">Företag</span><span class="sxs-lookup"><span data-stu-id="25df3-126">Company</span></span>  
+11. <span data-ttu-id="25df3-127">Klicka på Lägg till.</span><span class="sxs-lookup"><span data-stu-id="25df3-127">Click Add.</span></span>
+12. <span data-ttu-id="25df3-128">Gå till beskrivningsfältet och skriv texten "Description of the legal entity or company in which a user logged at run-time".</span><span class="sxs-lookup"><span data-stu-id="25df3-128">In the Description field, enter the text, Description of the legal entity or company in which a user logged at run-time.</span></span> 
+    * <span data-ttu-id="25df3-129">Beskrivning av den juridiska personen eller företaget som en användare loggat in till under körning.</span><span class="sxs-lookup"><span data-stu-id="25df3-129">Description of the legal entity or company in which a user logged at run-time.</span></span>  
+13. <span data-ttu-id="25df3-130">Klicka på Rotreferens.</span><span class="sxs-lookup"><span data-stu-id="25df3-130">Click Root reference.</span></span>
+14. <span data-ttu-id="25df3-131">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="25df3-131">Click OK.</span></span>
+15. <span data-ttu-id="25df3-132">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="25df3-132">Click Save.</span></span>
+16. <span data-ttu-id="25df3-133">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="25df3-133">Close the page.</span></span>
+17. <span data-ttu-id="25df3-134">Klicka på Ändra status.</span><span class="sxs-lookup"><span data-stu-id="25df3-134">Click Change status.</span></span>
+18. <span data-ttu-id="25df3-135">Klicka på Slutför.</span><span class="sxs-lookup"><span data-stu-id="25df3-135">Click Complete.</span></span>
+19. <span data-ttu-id="25df3-136">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="25df3-136">Click OK.</span></span>
 
-## <a name="add-a-new-er-model-mapping-configuration"></a>Lägg till en ny konfiguration för ER-modellmappning
-1. Klicka på Skapa konfiguration om du vill öppna dialogrutan.
-2. Skriv "Model Mapping based on data model Sample data model" i fältet Ny.
-3. Skriv "Sample mapping" i namnfältet.
-    * Exempelmappning  
-4. Klicka på Skapa konfiguration.
-5. Expandera avsnittet Förutsättningar.
-    * Observera att gruppen för implementeringsförutsättningar har lagts till automatiskt. Gruppen innehåller den nödvändiga komponent som refererar till den överordnade datamodellkonfigurationen och markeras som Implementering. Detta innebär den här modellmappningskonfigurationen, Sample mapping, tar hänsyn till implementeringen av datamodellen, Sample data model. Den här komponenten tvingar därför ER att hämta modellmappningskonfigurationen, Sample mapping, från en ER-databas när modellkonfigurationen, Sample data model, hämtas.   
-6. Klicka på Designer.
-    * Observera att den skapade modellmappningskonfigurationen innehåller en tom ny mappning med samma namn som den skapade konfigurationen. När en vald överordnad modellkonfiguration innehåller modellmappningar kopieras de till en ny modellmappningskonfiguration.   
-7. Klicka på Designer.
-8. Välj Dynamics 365 for Operations\Table i trädet.
-9. Klicka på Lägg till rot.
-10. Skriv "Företag" i fältet Namn.
-    * Företag  
-11. Skriv "CompanyInfo" i fältet Tabell.
-    * CompanyInfo  
-12. Klicka på OK.
-13. Expandera "Company" i trädet.
-14. Expandera Company\find() i trädet.
-15. Välj Company\find()\Name i trädet.
-16. Klicka på Bind.
-17. Klicka på Spara.
-18. Stäng sidan.
-19. Stäng sidan.
-20. Klicka på Configurations i åtgärdsfönstret.
-21. Klicka på User parameters.
-22. Välj Yes i fältet Run settings.
-23. Klicka på OK.
-24. Klicka på Redigera.
-25. Välj Yes i fältet Run Draft.
+## <a name="add-a-new-er-model-mapping-configuration"></a><span data-ttu-id="25df3-137">Lägg till en ny konfiguration för ER-modellmappning</span><span class="sxs-lookup"><span data-stu-id="25df3-137">Add a new ER model mapping configuration</span></span>
+1. <span data-ttu-id="25df3-138">Klicka på Skapa konfiguration om du vill öppna dialogrutan.</span><span class="sxs-lookup"><span data-stu-id="25df3-138">Click Create configuration to open the drop dialog.</span></span>
+2. <span data-ttu-id="25df3-139">Skriv "Model Mapping based on data model Sample data model" i fältet Ny.</span><span class="sxs-lookup"><span data-stu-id="25df3-139">In the New field, enter 'Model Mapping based on data model Sample data model'.</span></span>
+3. <span data-ttu-id="25df3-140">Skriv "Sample mapping" i namnfältet.</span><span class="sxs-lookup"><span data-stu-id="25df3-140">In the Name field, type 'Sample mapping'.</span></span>
+    * <span data-ttu-id="25df3-141">Exempelmappning</span><span class="sxs-lookup"><span data-stu-id="25df3-141">Sample mapping</span></span>  
+4. <span data-ttu-id="25df3-142">Klicka på Skapa konfiguration.</span><span class="sxs-lookup"><span data-stu-id="25df3-142">Click Create configuration.</span></span>
+5. <span data-ttu-id="25df3-143">Expandera avsnittet Förutsättningar.</span><span class="sxs-lookup"><span data-stu-id="25df3-143">Expand the Prerequisites section.</span></span>
+    * <span data-ttu-id="25df3-144">Observera att gruppen för implementeringsförutsättningar har lagts till automatiskt.</span><span class="sxs-lookup"><span data-stu-id="25df3-144">Note that the Implementations prerequisites group has been added automatically.</span></span> <span data-ttu-id="25df3-145">Gruppen innehåller den nödvändiga komponent som refererar till den överordnade datamodellkonfigurationen och markeras som Implementering.</span><span class="sxs-lookup"><span data-stu-id="25df3-145">The group contains the prerequisite component that refers to the parent data model configuration and is marked as Implementation.</span></span> <span data-ttu-id="25df3-146">Detta innebär den här modellmappningskonfigurationen, Sample mapping, tar hänsyn till implementeringen av datamodellen, Sample data model.</span><span class="sxs-lookup"><span data-stu-id="25df3-146">This means that this Sample mapping model mapping configuration is considered the implementation of the data model, Sample data model.</span></span> <span data-ttu-id="25df3-147">Den här komponenten tvingar därför ER att hämta modellmappningskonfigurationen, Sample mapping, från en ER-databas när modellkonfigurationen, Sample data model, hämtas.</span><span class="sxs-lookup"><span data-stu-id="25df3-147">Therefore, this component will force ER to download the model mapping configuration, Sample mapping from an ER repository when the model configuration, Sample data model, is downloaded.</span></span>   
+6. <span data-ttu-id="25df3-148">Klicka på Designer.</span><span class="sxs-lookup"><span data-stu-id="25df3-148">Click Designer.</span></span>
+    * <span data-ttu-id="25df3-149">Observera att den skapade modellmappningskonfigurationen innehåller en tom ny mappning med samma namn som den skapade konfigurationen.</span><span class="sxs-lookup"><span data-stu-id="25df3-149">Note that the created model mapping configuration contains a new blank mapping with the same name as the created configuration.</span></span> <span data-ttu-id="25df3-150">När en vald överordnad modellkonfiguration innehåller modellmappningar kopieras de till en ny modellmappningskonfiguration.</span><span class="sxs-lookup"><span data-stu-id="25df3-150">Be aware that when a selected parent model configuration contains model mappings, they will be copied to a new model mapping configuration.</span></span>   
+7. <span data-ttu-id="25df3-151">Klicka på Designer.</span><span class="sxs-lookup"><span data-stu-id="25df3-151">Click Designer.</span></span>
+8. <span data-ttu-id="25df3-152">Välj Dynamics 365 for Operations\Table i trädet.</span><span class="sxs-lookup"><span data-stu-id="25df3-152">In the tree, select 'Dynamics 365 for Operations\Table'.</span></span>
+9. <span data-ttu-id="25df3-153">Klicka på Lägg till rot.</span><span class="sxs-lookup"><span data-stu-id="25df3-153">Click Add root.</span></span>
+10. <span data-ttu-id="25df3-154">Skriv "Företag" i fältet Namn.</span><span class="sxs-lookup"><span data-stu-id="25df3-154">In the Name field, type 'Company'.</span></span>
+    * <span data-ttu-id="25df3-155">Företag</span><span class="sxs-lookup"><span data-stu-id="25df3-155">Company</span></span>  
+11. <span data-ttu-id="25df3-156">Skriv "CompanyInfo" i fältet Tabell.</span><span class="sxs-lookup"><span data-stu-id="25df3-156">In the Table field, type 'CompanyInfo'.</span></span>
+    * <span data-ttu-id="25df3-157">CompanyInfo</span><span class="sxs-lookup"><span data-stu-id="25df3-157">CompanyInfo</span></span>  
+12. <span data-ttu-id="25df3-158">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="25df3-158">Click OK.</span></span>
+13. <span data-ttu-id="25df3-159">Expandera "Company" i trädet.</span><span class="sxs-lookup"><span data-stu-id="25df3-159">In the tree, expand 'Company'.</span></span>
+14. <span data-ttu-id="25df3-160">Expandera Company\find() i trädet.</span><span class="sxs-lookup"><span data-stu-id="25df3-160">In the tree, expand 'Company\find()'.</span></span>
+15. <span data-ttu-id="25df3-161">Välj Company\find()\Name i trädet.</span><span class="sxs-lookup"><span data-stu-id="25df3-161">In the tree, select 'Company\find()\Name'.</span></span>
+16. <span data-ttu-id="25df3-162">Klicka på Bind.</span><span class="sxs-lookup"><span data-stu-id="25df3-162">Click Bind.</span></span>
+17. <span data-ttu-id="25df3-163">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="25df3-163">Click Save.</span></span>
+18. <span data-ttu-id="25df3-164">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="25df3-164">Close the page.</span></span>
+19. <span data-ttu-id="25df3-165">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="25df3-165">Close the page.</span></span>
+20. <span data-ttu-id="25df3-166">Klicka på Configurations i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="25df3-166">On the Action Pane, click Configurations.</span></span>
+21. <span data-ttu-id="25df3-167">Klicka på User parameters.</span><span class="sxs-lookup"><span data-stu-id="25df3-167">Click User parameters.</span></span>
+22. <span data-ttu-id="25df3-168">Välj Yes i fältet Run settings.</span><span class="sxs-lookup"><span data-stu-id="25df3-168">Select Yes in the Run settings field.</span></span>
+23. <span data-ttu-id="25df3-169">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="25df3-169">Click OK.</span></span>
+24. <span data-ttu-id="25df3-170">Klicka på Redigera.</span><span class="sxs-lookup"><span data-stu-id="25df3-170">Click Edit.</span></span>
+25. <span data-ttu-id="25df3-171">Välj Yes i fältet Run Draft.</span><span class="sxs-lookup"><span data-stu-id="25df3-171">Select Yes in the Run Draft field.</span></span>
 
-## <a name="add-a-new-er-format-configuration"></a>Lägg till en ny konfiguration för ER-format
-1. Välj "Sample data model" i trädet.
-2. Klicka på Skapa konfiguration om du vill öppna dialogrutan.
-3. Skriv "Format based on data model Sample data model" i fältet Ny.
-4. Skriv "Sample format" i namnfältet.
-    * Exempelformat  
-5. Klicka på Skapa konfiguration.
-6. Klicka på Designer.
-7. Klicka på Lägg till rot för att öppna dialogrutan.
-8. Välj "Text\Sträng" i trädet.
-9. Klicka på OK.
-10. Klicka på fliken Mappning.
-11. Expandera "modell" i trädet.
-12. Välj model\Company i trädet.
-13. Klicka på Bind.
-14. Klicka på Spara.
-15. Stäng sidan.
-    * Kör utkastversionen av det skapade formatet i testsyfte.  
-16. Klicka på Kör.
-    * Klicka på Kör på snabbfliken Versioner.  
-17. Klicka på OK.
-    * Granska utdata som innehåller namnet på det företaget där användaren som kör den här formatkonfigurationen är inloggad i. Observera att den skapade konfigurationen för modellmappning används av denna formatkonfiguration eftersom det bara finns en konfigurationsnyckel som innehåller nödvändiga modellmappningar.   
+## <a name="add-a-new-er-format-configuration"></a><span data-ttu-id="25df3-172">Lägg till en ny konfiguration för ER-format</span><span class="sxs-lookup"><span data-stu-id="25df3-172">Add a new ER format configuration</span></span>
+1. <span data-ttu-id="25df3-173">Välj "Sample data model" i trädet.</span><span class="sxs-lookup"><span data-stu-id="25df3-173">In the tree, select 'Sample data model'.</span></span>
+2. <span data-ttu-id="25df3-174">Klicka på Skapa konfiguration om du vill öppna dialogrutan.</span><span class="sxs-lookup"><span data-stu-id="25df3-174">Click Create configuration to open the drop dialog.</span></span>
+3. <span data-ttu-id="25df3-175">Skriv "Format based on data model Sample data model" i fältet Ny.</span><span class="sxs-lookup"><span data-stu-id="25df3-175">In the New field, enter 'Format based on data model Sample data model'.</span></span>
+4. <span data-ttu-id="25df3-176">Skriv "Sample format" i namnfältet.</span><span class="sxs-lookup"><span data-stu-id="25df3-176">In the Name field, type 'Sample format'.</span></span>
+    * <span data-ttu-id="25df3-177">Exempelformat</span><span class="sxs-lookup"><span data-stu-id="25df3-177">Sample format</span></span>  
+5. <span data-ttu-id="25df3-178">Klicka på Skapa konfiguration.</span><span class="sxs-lookup"><span data-stu-id="25df3-178">Click Create configuration.</span></span>
+6. <span data-ttu-id="25df3-179">Klicka på Designer.</span><span class="sxs-lookup"><span data-stu-id="25df3-179">Click Designer.</span></span>
+7. <span data-ttu-id="25df3-180">Klicka på Lägg till rot för att öppna dialogrutan.</span><span class="sxs-lookup"><span data-stu-id="25df3-180">Click Add root to open the drop dialog.</span></span>
+8. <span data-ttu-id="25df3-181">Välj "Text\Sträng" i trädet.</span><span class="sxs-lookup"><span data-stu-id="25df3-181">In the tree, select 'Text\String'.</span></span>
+9. <span data-ttu-id="25df3-182">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="25df3-182">Click OK.</span></span>
+10. <span data-ttu-id="25df3-183">Klicka på fliken Mappning.</span><span class="sxs-lookup"><span data-stu-id="25df3-183">Click the Mapping tab.</span></span>
+11. <span data-ttu-id="25df3-184">Expandera "modell" i trädet.</span><span class="sxs-lookup"><span data-stu-id="25df3-184">In the tree, expand 'model'.</span></span>
+12. <span data-ttu-id="25df3-185">Välj model\Company i trädet.</span><span class="sxs-lookup"><span data-stu-id="25df3-185">In the tree, select 'model\Company'.</span></span>
+13. <span data-ttu-id="25df3-186">Klicka på Bind.</span><span class="sxs-lookup"><span data-stu-id="25df3-186">Click Bind.</span></span>
+14. <span data-ttu-id="25df3-187">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="25df3-187">Click Save.</span></span>
+15. <span data-ttu-id="25df3-188">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="25df3-188">Close the page.</span></span>
+    * <span data-ttu-id="25df3-189">Kör utkastversionen av det skapade formatet i testsyfte.</span><span class="sxs-lookup"><span data-stu-id="25df3-189">Run the draft version of the created format for testing purposes.</span></span>  
+16. <span data-ttu-id="25df3-190">Klicka på Kör.</span><span class="sxs-lookup"><span data-stu-id="25df3-190">Click Run.</span></span>
+    * <span data-ttu-id="25df3-191">Klicka på Kör på snabbfliken Versioner.</span><span class="sxs-lookup"><span data-stu-id="25df3-191">On the Versions FastTab, click Run.</span></span>  
+17. <span data-ttu-id="25df3-192">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="25df3-192">Click OK.</span></span>
+    * <span data-ttu-id="25df3-193">Granska utdata som innehåller namnet på det företaget där användaren som kör den här formatkonfigurationen är inloggad i.</span><span class="sxs-lookup"><span data-stu-id="25df3-193">Review the output that contains the name of the company in which the user who is running this format configuration is logged into.</span></span> <span data-ttu-id="25df3-194">Observera att den skapade konfigurationen för modellmappning används av denna formatkonfiguration eftersom det bara finns en konfigurationsnyckel som innehåller nödvändiga modellmappningar.</span><span class="sxs-lookup"><span data-stu-id="25df3-194">Note that the created model mapping configuration is used by this format configuration because there is only one configuration available that contains required model mappings.</span></span>   
 
-## <a name="add-alternative-er-model-mapping-configuration"></a>Lägg till en alternativ konfiguration för ER-modellmappning
-1. Välj "Sample data model" i trädet.
-2. Klicka på Skapa konfiguration om du vill öppna dialogrutan.
-3. Skriv "Model Mapping based on data model Sample data model" i fältet Ny.
-4. Skriv "Sample mapping (alternative)" i namnfältet.
-    * Exempelmappning (alternativ)  
-5. Klicka på Skapa konfiguration.
-6. Klicka på Designer.
-7. Klicka på Designer.
-8. Välj Dynamics 365 for Operations\Table i trädet.
-9. Klicka på Lägg till rot.
-10. Skriv "Företag" i fältet Namn.
-    * Företag  
-11. Skriv "CompanyInfo" i fältet Tabell.
-    * CompanyInfo  
-12. Klicka på OK.
-13. Klicka på Redigera.
-14. Välj "Sträng\SAMMANFOGA" i trädet.
-15. Klicka på funktionen Lägg till.
-16. Expandera "Company" i trädet.
-17. Expandera Company\find() i trädet.
-18. Välj Company\find()\Name i trädet.
-19. Klicka på Lägg till datakälla.
-20. Skriv ett värde i fältet Formel.
-    * CONCATENATE(Company.'find()'.Name, ";",  
-21. Välj Company\find()\Company(DataArea) i trädet.
-22. Klicka på Lägg till datakälla.
-23. Skriv ett värde i fältet Formel.
-    * CONCATENATE(Company.'find()'.Name, ";", Company.'find()'.DataArea)  
-24. Klicka på Spara.
-25. Stäng sidan.
-26. Klicka på Spara.
-27. Stäng sidan.
-28. Stäng sidan.
-29. Välj Yes i fältet Run Draft.
+## <a name="add-alternative-er-model-mapping-configuration"></a><span data-ttu-id="25df3-195">Lägg till en alternativ konfiguration för ER-modellmappning</span><span class="sxs-lookup"><span data-stu-id="25df3-195">Add alternative ER model mapping configuration</span></span>
+1. <span data-ttu-id="25df3-196">Välj "Sample data model" i trädet.</span><span class="sxs-lookup"><span data-stu-id="25df3-196">In the tree, select 'Sample data model'.</span></span>
+2. <span data-ttu-id="25df3-197">Klicka på Skapa konfiguration om du vill öppna dialogrutan.</span><span class="sxs-lookup"><span data-stu-id="25df3-197">Click Create configuration to open the drop dialog.</span></span>
+3. <span data-ttu-id="25df3-198">Skriv "Model Mapping based on data model Sample data model" i fältet Ny.</span><span class="sxs-lookup"><span data-stu-id="25df3-198">In the New field, enter 'Model Mapping based on data model Sample data model'.</span></span>
+4. <span data-ttu-id="25df3-199">Skriv "Sample mapping (alternative)" i namnfältet.</span><span class="sxs-lookup"><span data-stu-id="25df3-199">In the Name field, type 'Sample mapping (alternative)'.</span></span>
+    * <span data-ttu-id="25df3-200">Exempelmappning (alternativ)</span><span class="sxs-lookup"><span data-stu-id="25df3-200">Sample mapping (alternative)</span></span>  
+5. <span data-ttu-id="25df3-201">Klicka på Skapa konfiguration.</span><span class="sxs-lookup"><span data-stu-id="25df3-201">Click Create configuration.</span></span>
+6. <span data-ttu-id="25df3-202">Klicka på Designer.</span><span class="sxs-lookup"><span data-stu-id="25df3-202">Click Designer.</span></span>
+7. <span data-ttu-id="25df3-203">Klicka på Designer.</span><span class="sxs-lookup"><span data-stu-id="25df3-203">Click Designer.</span></span>
+8. <span data-ttu-id="25df3-204">Välj Dynamics 365 for Operations\Table i trädet.</span><span class="sxs-lookup"><span data-stu-id="25df3-204">In the tree, select 'Dynamics 365 for Operations\Table'.</span></span>
+9. <span data-ttu-id="25df3-205">Klicka på Lägg till rot.</span><span class="sxs-lookup"><span data-stu-id="25df3-205">Click Add root.</span></span>
+10. <span data-ttu-id="25df3-206">Skriv "Företag" i fältet Namn.</span><span class="sxs-lookup"><span data-stu-id="25df3-206">In the Name field, type 'Company'.</span></span>
+    * <span data-ttu-id="25df3-207">Företag</span><span class="sxs-lookup"><span data-stu-id="25df3-207">Company</span></span>  
+11. <span data-ttu-id="25df3-208">Skriv "CompanyInfo" i fältet Tabell.</span><span class="sxs-lookup"><span data-stu-id="25df3-208">In the Table field, type 'CompanyInfo'.</span></span>
+    * <span data-ttu-id="25df3-209">CompanyInfo</span><span class="sxs-lookup"><span data-stu-id="25df3-209">CompanyInfo</span></span>  
+12. <span data-ttu-id="25df3-210">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="25df3-210">Click OK.</span></span>
+13. <span data-ttu-id="25df3-211">Klicka på Redigera.</span><span class="sxs-lookup"><span data-stu-id="25df3-211">Click Edit.</span></span>
+14. <span data-ttu-id="25df3-212">Välj "Sträng\SAMMANFOGA" i trädet.</span><span class="sxs-lookup"><span data-stu-id="25df3-212">In the tree, select 'String\CONCATENATE'.</span></span>
+15. <span data-ttu-id="25df3-213">Klicka på funktionen Lägg till.</span><span class="sxs-lookup"><span data-stu-id="25df3-213">Click Add function.</span></span>
+16. <span data-ttu-id="25df3-214">Expandera "Company" i trädet.</span><span class="sxs-lookup"><span data-stu-id="25df3-214">In the tree, expand 'Company'.</span></span>
+17. <span data-ttu-id="25df3-215">Expandera Company\find() i trädet.</span><span class="sxs-lookup"><span data-stu-id="25df3-215">In the tree, expand 'Company\find()'.</span></span>
+18. <span data-ttu-id="25df3-216">Välj Company\find()\Name i trädet.</span><span class="sxs-lookup"><span data-stu-id="25df3-216">In the tree, select 'Company\find()\Name'.</span></span>
+19. <span data-ttu-id="25df3-217">Klicka på Lägg till datakälla.</span><span class="sxs-lookup"><span data-stu-id="25df3-217">Click Add data source.</span></span>
+20. <span data-ttu-id="25df3-218">Skriv ett värde i fältet Formel.</span><span class="sxs-lookup"><span data-stu-id="25df3-218">In the Formula field, type a value.</span></span>
+    * <span data-ttu-id="25df3-219">CONCATENATE(Company.'find()'.Name, ";",</span><span class="sxs-lookup"><span data-stu-id="25df3-219">CONCATENATE(Company.'find()'.Name, ";",</span></span>  
+21. <span data-ttu-id="25df3-220">Välj Company\find()\Company(DataArea) i trädet.</span><span class="sxs-lookup"><span data-stu-id="25df3-220">In the tree, select 'Company\find()\Company(DataArea)'.</span></span>
+22. <span data-ttu-id="25df3-221">Klicka på Lägg till datakälla.</span><span class="sxs-lookup"><span data-stu-id="25df3-221">Click Add data source.</span></span>
+23. <span data-ttu-id="25df3-222">Skriv ett värde i fältet Formel.</span><span class="sxs-lookup"><span data-stu-id="25df3-222">In the Formula field, type a value.</span></span>
+    * <span data-ttu-id="25df3-223">CONCATENATE(Company.'find()'.Name, ";", Company.'find()'.DataArea)</span><span class="sxs-lookup"><span data-stu-id="25df3-223">CONCATENATE(Company.'find()'.Name, ";", Company.'find()'.DataArea)</span></span>  
+24. <span data-ttu-id="25df3-224">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="25df3-224">Click Save.</span></span>
+25. <span data-ttu-id="25df3-225">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="25df3-225">Close the page.</span></span>
+26. <span data-ttu-id="25df3-226">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="25df3-226">Click Save.</span></span>
+27. <span data-ttu-id="25df3-227">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="25df3-227">Close the page.</span></span>
+28. <span data-ttu-id="25df3-228">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="25df3-228">Close the page.</span></span>
+29. <span data-ttu-id="25df3-229">Välj Yes i fältet Run Draft.</span><span class="sxs-lookup"><span data-stu-id="25df3-229">Select Yes in the Run Draft field.</span></span>
 
-## <a name="use-an-existing-er-model-mapping-configuration"></a>Använd en befintlig konfiguration för ER-mappning
-1. Välj Sample data model\Sample format i trädet.
-2. Klicka på Kör.
-    * Observera att den valda utkastversionen av ER-formatkonfigurationen inte kan köras eftersom det finns mer än en modellmappningskonfiguration för den odefinierade datamodellen som har valts som datakälla för ER-formatet som körs.   
-    * Härnäst ska du definiera den alternativa modellmappningskonfigurationen som den varifrån modellmappningar ska användas som datakällor för ER-formatet som körs.   
-3. Välj Sample data model\Sample mapping (alternative) i trädet.
-4. Välj Ja i fältet Standardvärde för modellmappning.
-5. Välj Sample data model\Sample format i trädet.
-6. Klicka på Kör.
-7. Klicka på OK.
-    * Observera att standardmodellmappningskonfigurationen används i den här formatkonfigurationen för att generera det elektroniska dokumentet (de utdata som skapas innehåller företagskoden).  
+## <a name="use-an-existing-er-model-mapping-configuration"></a><span data-ttu-id="25df3-230">Använd en befintlig konfiguration för ER-mappning</span><span class="sxs-lookup"><span data-stu-id="25df3-230">Use an existing ER model mapping configuration</span></span>
+1. <span data-ttu-id="25df3-231">Välj Sample data model\Sample format i trädet.</span><span class="sxs-lookup"><span data-stu-id="25df3-231">In the tree, select 'Sample data model\Sample format'.</span></span>
+2. <span data-ttu-id="25df3-232">Klicka på Kör.</span><span class="sxs-lookup"><span data-stu-id="25df3-232">Click Run.</span></span>
+    * <span data-ttu-id="25df3-233">Observera att den valda utkastversionen av ER-formatkonfigurationen inte kan köras eftersom det finns mer än en modellmappningskonfiguration för den odefinierade datamodellen som har valts som datakälla för ER-formatet som körs.</span><span class="sxs-lookup"><span data-stu-id="25df3-233">Note that the selected draft version of the ER format configuration can’t be executed because there is more than one model mapping configuration available for the undefined data model that has been selected as the data source of the running ER format.</span></span>   
+    * <span data-ttu-id="25df3-234">Härnäst ska du definiera den alternativa modellmappningskonfigurationen som den varifrån modellmappningar ska användas som datakällor för ER-formatet som körs.</span><span class="sxs-lookup"><span data-stu-id="25df3-234">Next, you will define the alternative model mapping configuration as the one from which model mappings will be used as data sources for running ER format.</span></span>   
+3. <span data-ttu-id="25df3-235">Välj Sample data model\Sample mapping (alternative) i trädet.</span><span class="sxs-lookup"><span data-stu-id="25df3-235">In the tree, select 'Sample data model\Sample mapping (alternative)'.</span></span>
+4. <span data-ttu-id="25df3-236">Välj Ja i fältet Standardvärde för modellmappning.</span><span class="sxs-lookup"><span data-stu-id="25df3-236">Select Yes in the Default for model mapping field.</span></span>
+5. <span data-ttu-id="25df3-237">Välj Sample data model\Sample format i trädet.</span><span class="sxs-lookup"><span data-stu-id="25df3-237">In the tree, select 'Sample data model\Sample format'.</span></span>
+6. <span data-ttu-id="25df3-238">Klicka på Kör.</span><span class="sxs-lookup"><span data-stu-id="25df3-238">Click Run.</span></span>
+7. <span data-ttu-id="25df3-239">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="25df3-239">Click OK.</span></span>
+    * <span data-ttu-id="25df3-240">Observera att standardmodellmappningskonfigurationen används i den här formatkonfigurationen för att generera det elektroniska dokumentet (de utdata som skapas innehåller företagskoden).</span><span class="sxs-lookup"><span data-stu-id="25df3-240">Note that the default model mapping configuration is used by this format configuration for generating the electronic document (the created output contains the company code).</span></span>  
 
 
