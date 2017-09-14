@@ -1,7 +1,7 @@
 --- 
 title: Skapa en produktklassificeringshierarki
 description: "I den här proceduren visas hur du skapar en ny kategorihierarki och tilldelar en typ av artikelkodhierarki."
-author: BibiSp
+author: YuyuScheller
 manager: AnnBe
 ms.date: 11/11/2016
 ms.topic: business-process
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: bis

@@ -1,7 +1,7 @@
 --- 
 title: "Frisläpp en produkt/produktmall till juridiska personer"
 description: "Den här proceduren går igenom hur du frisläpper en produkt eller en produktmall till en eller flera juridiska personer."
-author: BibiSp
+author: josaw1
 manager: AnnBe
 ms.date: 11/14/2016
 ms.topic: business-process
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: josaw1
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: bis
