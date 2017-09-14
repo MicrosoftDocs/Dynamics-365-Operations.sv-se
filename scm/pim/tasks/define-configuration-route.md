@@ -1,7 +1,7 @@
 --- 
 title: "Definiera konfigurationsflöden"
 description: "Den här proceduren visar hur du kan definiera ett konfigureringsflöde som fastställer frekvensen för hur konfigurationsgrupperna ska visas."
-author: BibiSp
+author: YuyuScheller
 manager: AnnBe
 ms.date: 11/11/2016
 ms.topic: business-process
@@ -9,17 +9,17 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: YuyuScheller
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
-ms.openlocfilehash: 42d37079eeea99aeea062168f4dd5462a8da8016
+ms.sourcegitcommit: 6dd2aa1ebc713287120106a9d1ec7dc15c24def9
+ms.openlocfilehash: 781645e43bbad5d712c4506ea00fd9e6c0f967f4
 ms.contentlocale: sv-se
-ms.lasthandoff: 08/29/2017
+ms.lasthandoff: 09/14/2017
 
 ---
 # <a name="define-configuration-routes"></a><span data-ttu-id="8f27e-103">Definiera konfigurationsflöden</span><span class="sxs-lookup"><span data-stu-id="8f27e-103">Define configuration routes</span></span>
