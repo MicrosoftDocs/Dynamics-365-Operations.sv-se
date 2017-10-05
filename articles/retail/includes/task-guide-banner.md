@@ -1,2 +1,2 @@
 > [!NOTE]
-> <span data-ttu-id="ef4f6-101">Vi accepterar inte att det här avsnittet redigeras, eftersom det har skapats från en affärsprocess i Lifecycle Services.</span><span class="sxs-lookup"><span data-stu-id="ef4f6-101">We will not be accepting edits to this topic, because it is generated from a business process in Lifecycle Services.</span></span>
+> <span data-ttu-id="9739b-101">Vi accepterar inte att det här avsnittet redigeras, eftersom det har skapats från en affärsprocess i Lifecycle Services.</span><span class="sxs-lookup"><span data-stu-id="9739b-101">We will not be accepting edits to this topic, because it is generated from a business process in Lifecycle Services.</span></span>
