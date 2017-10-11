@@ -17,10 +17,10 @@ ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: db41b3873755f93895aea7a32b65f2a8ed6a57fd
-ms.openlocfilehash: 25cba59dfbab2e1030660840e85d278452e39e52
+ms.sourcegitcommit: c73eeaaf28df8db720431d4bcd317c9721baa99d
+ms.openlocfilehash: fd01d40d3e74503e3e310132882306ed8c23ad1d
 ms.contentlocale: sv-se
-ms.lasthandoff: 08/10/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -72,7 +72,7 @@ Uppgiftsguider finns i produktens hjälpfönster och ger en guidad genomgång av
 
 Hitta uppgiftsguiderna genom att öppna i Microsoft Dynamics 365 for Finance and Operations och klicka på Hjälp. Uppgiftsguider som använder sidan visas i hjälpfönstret. Det går även att använda hjälpfönstret till att söka efter uppgiftsguider efter rubrik.
 
-Mer information finns i [Uppgiftsguider](/dynamics365/unified-operations/dev-itpro/get-started/help-overview#task-guides).
+Mer information finns i [Uppgiftsguider](../../fin-and-ops/get-started/help-overview.md#task-guides).
 
 
 ## <a name="countryregion-specific-help-topics"></a>Land-/regionspecifika hjälpavsnitt
@@ -80,264 +80,264 @@ Följande avsnitt visar resurser efter land/region.
 
 ### <a name="australia"></a>Australien
 
--   [Bankfilformat](/dynamics365/unified-operations/financials/localizations/apac-aus-method-of-payment-pay-vendors-banks)
--   [Affärsaktivitetsrapport](/dynamics365/unified-operations/financials/localizations/apac-aus-business-activity-statement)
--   [Avskrivning för lågvärdespool](/dynamics365/unified-operations/financials/localizations/apac-aus-low-value-pool-depreciation)
+-   [Bankfilformat](../../financials/localizations/apac-aus-method-of-payment-pay-vendors-banks.md)
+-   [Affärsaktivitetsrapport](../../financials/localizations/apac-aus-business-activity-statement.md)
+-   [Avskrivning för lågvärdespool](../../financials/localizations/apac-aus-low-value-pool-depreciation.md)
 
 ### <a name="austria"></a>Österrike
 
-- [Halvårsavskrivning](/dynamics365/unified-operations/financials/localizations/emea-aut-half-year-depreciation)
-- [Avgifter för förpackningsmaterial](/dynamics365/unified-operations/financials/localizations/emea-aut-packing-material-fee-calculation)
-- [Inköpsavgifter](/dynamics365/unified-operations/financials/localizations/emea-aut-purchase-duties)
-- [Momsutdrag](/dynamics365/unified-operations/financials/localizations/emea-aut-vat-statement-details)
+- [Halvårsavskrivning](../../financials/localizations/emea-aut-half-year-depreciation.md)
+- [Avgifter för förpackningsmaterial](../../financials/localizations/emea-aut-packing-material-fee-calculation.md)
+- [Inköpsavgifter](../../financials/localizations/emea-aut-purchase-duties.md)
+- [Momsutdrag](../../financials/localizations/emea-aut-vat-statement-details.md)
 
 ### <a name="belgium"></a>Belgien
 
--   [CODA-bankutdrag](/dynamics365/unified-operations/financials/localizations/emea-bel-coda-bank-statement-import)
--   [Intervat momsdeklaration](/dynamics365/unified-operations/financials/localizations/emea-bel-intervat-tax-declaration)
--   [Inställning av PRODCOM-rapport](/dynamics365/unified-operations/financials/localizations/emea-bel-prodcom-report)
--   [Avstämningsrapporter](/dynamics365/unified-operations/financials/localizations/emea-bel-reconciliation-reports)
+-   [CODA-bankutdrag](../../financials/localizations/emea-bel-coda-bank-statement-import.md)
+-   [Intervat momsdeklaration](../../financials/localizations/emea-bel-intervat-tax-declaration.md)
+-   [Inställning av PRODCOM-rapport](../../financials/localizations/emea-bel-prodcom-report.md)
+-   [Avstämningsrapporter](../../financials/localizations/emea-bel-reconciliation-reports.md)
 
 ### <a name="brazil"></a>Brasilien
 
--   [CIAP-anläggningstillgång](/dynamics365/unified-operations/financials/localizations/latam-bra-ciap-fixed-asset)
--   [Konfigurera skatteböcker](/dynamics365/unified-operations/financials/localizations/latam-bra-configure-fiscal-books)
--   [Exportera och importera transaktioner för redovisningskonsolidering för Brasilien](/dynamics365/unified-operations/financials/localizations/latam-bra-general-ledger-consolidation-transactions)
--   [Skatteböcker](/dynamics365/unified-operations/financials/localizations/latam-bra-fiscal-books)
--   [Platshållare för text i skattedokument](/dynamics365/unified-operations/financials/localizations/latam-bra-fiscal-document-text-placeholders)
--   [Skattedokument](/dynamics365/unified-operations/financials/localizations/latam-bra-fiscal-documents-fiscal-document-framework)
--   [ICMS-skattedokument](/dynamics365/unified-operations/financials/localizations/latam-bra-icms-tax-fiscal-documents)
--   [Importera och verifiera NF-e XML-dokument och DANFE-filer](/dynamics365/unified-operations/financials/localizations/latam-bra-import-verify-nf-e-xml-documents-danfe-emails)
--   [Importera skattedokument](/dynamics365/unified-operations/financials/localizations/latam-bra-import-fiscal-documents)
--   [Journaler skapade under den elektroniska betalningsreturen](/dynamics365/unified-operations/financials/localizations/latam-bra-examples-journals-generated-electronic-payment-return-process)
--   [NF-e-process](/dynamics365/unified-operations/financials/localizations/latam-bra-nf-e-process)
--   [Parametrar för juridiska personer](/dynamics365/unified-operations/financials/localizations/latam-bra-legal-entity-parameters)
--   [Bearbeta elektroniska betalningsremissor för Brasilien](/dynamics365/unified-operations/financials/localizations/latam-bra-process-electronic-payment-remittances)
--   [Kompletterande skattedokumentet för inköp](/dynamics365/unified-operations/financials/localizations/latam-bra-purchase-complementary-fiscal-documents)
--   [Refererade skattedokument](/dynamics365/unified-operations/financials/localizations/latam-bra-referenced-fiscal-documents)
--   [Kompletterande skattedokumentet för försäljning](/dynamics365/unified-operations/financials/localizations/latam-bra-sales-complementary-fiscal-documents)
--   [Serva skattedokument för tjänst](/dynamics365/unified-operations/financials/localizations/latam-bra-service-electronic-fiscal-document)
--   [Ställ in, importera och verifiera NF-e XML-dokument och DANFE](/dynamics365/unified-operations/financials/localizations/latam-bra-set-up-import-nfe)
--   [Momsattribut](/dynamics365/unified-operations/financials/localizations/latam-bra-tax-attributes)
--   [Momsbetalningar](/dynamics365/unified-operations/financials/localizations/latam-bra-tax-payments)
--   [Skatter](/dynamics365/unified-operations/financials/localizations/latam-bra-calculate-taxes)
+-   [CIAP-anläggningstillgång](../../financials/localizations/latam-bra-ciap-fixed-asset.md)
+-   [Konfigurera skatteböcker](../../financials/localizations/latam-bra-configure-fiscal-books.md)
+-   [Exportera och importera transaktioner för redovisningskonsolidering för Brasilien](../../financials/localizations/latam-bra-general-ledger-consolidation-transactions.md)
+-   [Skatteböcker](../../financials/localizations/latam-bra-fiscal-books.md)
+-   [Platshållare för text i skattedokument](../../financials/localizations/latam-bra-fiscal-document-text-placeholders.md)
+-   [Skattedokument](../../financials/localizations/latam-bra-fiscal-documents-fiscal-document-framework.md)
+-   [ICMS-skattedokument](../../financials/localizations/latam-bra-icms-tax-fiscal-documents.md)
+-   [Importera och verifiera NF-e XML-dokument och DANFE-filer](../../financials/localizations/latam-bra-import-verify-nf-e-xml-documents-danfe-emails.md)
+-   [Importera skattedokument](../../financials/localizations/latam-bra-import-fiscal-documents.md)
+-   [Journaler skapade under den elektroniska betalningsreturen](../../financials/localizations/latam-bra-examples-journals-generated-electronic-payment-return-process.md)
+-   [NF-e-process](../../financials/localizations/latam-bra-nf-e-process.md)
+-   [Parametrar för juridiska personer](../../financials/localizations/latam-bra-legal-entity-parameters.md)
+-   [Bearbeta elektroniska betalningsremissor för Brasilien](../../financials/localizations/latam-bra-process-electronic-payment-remittances.md)
+-   [Kompletterande skattedokumentet för inköp](../../financials/localizations/latam-bra-purchase-complementary-fiscal-documents.md)
+-   [Refererade skattedokument](../../financials/localizations/latam-bra-referenced-fiscal-documents.md)
+-   [Kompletterande skattedokumentet för försäljning](../../financials/localizations/latam-bra-sales-complementary-fiscal-documents.md)
+-   [Elektroniska skattedokument för tjänster](../../financials/localizations/latam-bra-service-electronic-fiscal-document.md)
+-   [Ställ in, importera och verifiera NF-e XML-dokument och DANFE](../../financials/localizations/latam-bra-set-up-import-nfe.md)
+-   [Momsattribut](../../financials/localizations/latam-bra-tax-attributes.md)
+-   [Momsbetalningar](../../financials/localizations/latam-bra-tax-payments.md)
+-   [Skatter](../../financials/localizations/latam-bra-calculate-taxes.md)
 
 ### <a name="china"></a>Kina
--   [Jämförelse av strukturlista](/dynamics365/unified-operations/financials/localizations/apac-chn-bom-comparison)
--   [Kinesiska verifikationer](/dynamics365/unified-operations/financials/localizations/apac-chn-vouchers)
--   [Konfigurera momsintegrering](/dynamics365/unified-operations/financials/localizations/apac-chn-tax-integration)
-    -   [Vanliga frågor om momskundfakturor](/dynamics365/unified-operations/financials/localizations/apac-chn-tax-integration-vat-customer-invoices)
-    -   [Avskrivningsregler för anläggningstillgångar](/dynamics365/unified-operations/financials/localizations/apac-chn-depreciation-methods-fixed-assets)
--   [Importera dataenheten Chinese Golden Tax](/dynamics365/unified-operations/financials/localizations/apac-chn-import-golden-tax-data-entity)
--   [Månatlig, genomsnittlig kostnadsmodell](/dynamics365/unified-operations/financials/localizations/apac-chn-monthly-average-cost-model)
--   [Bokför lagerhuvudkonton efter plats](/dynamics365/unified-operations/financials/localizations/apac-chn-post-inventory-main-accounts-by-site)
--   [Visa debet- och kreditbelopp för redovisning](/dynamics365/unified-operations/financials/localizations/apac-chn-negative-debits-credits)
+-   [Jämförelse av strukturlista](../../financials/localizations/apac-chn-bom-comparison.md)
+-   [Kinesiska verifikationer](../../financials/localizations/apac-chn-vouchers.md)
+-   [Konfigurera momsintegrering](../../financials/localizations/apac-chn-tax-integration.md)
+    -   [Vanliga frågor om momskundfakturor](../../financials/localizations/apac-chn-tax-integration-vat-customer-invoices.md)
+    -   [Avskrivningsregler för anläggningstillgångar](../../financials/localizations/apac-chn-depreciation-methods-fixed-assets.md)
+-   [Importera datatabellen Chinese Golden Tax](../../financials/localizations/apac-chn-import-golden-tax-data-entity.md)
+-   [Månatlig, genomsnittlig kostnadsmodell](../../financials/localizations/apac-chn-monthly-average-cost-model.md)
+-   [Bokför lagerhuvudkonton efter plats](../../financials/localizations/apac-chn-post-inventory-main-accounts-by-site.md)
+-   [Visa debet- och kreditbelopp för redovisning](../../financials/localizations/apac-chn-negative-debits-credits.md)
 
 ### <a name="the-czech-republic"></a>Tjeckien
 
--   [Kassarabatt på kreditfaktura](/dynamics365/unified-operations/financials/localizations/emea-cze-credit-note-cash-discount)
--   [Avrundning av avskrivning](/dynamics365/unified-operations/financials/localizations/emea-cze-depreciation-rounding)
--   [Halvårs avskrivning för avyttrande av anläggningstillgångar i Tjeckien](/dynamics365/unified-operations/financials/localizations/emea-cze-half-depreciation-fixed-asset-disposal)
--   [Avskrivningsuppskjutning (helgdagar)](/dynamics365/unified-operations/financials/localizations/emea-cze-depreciation-suspension-holidays)
--   [Avskrivningsmetoder för anläggningstillgångar i Tjeckien](/dynamics365/unified-operations/financials/localizations/emea-cze-fixed-assets-depreciation)
--   [Bokför anläggningstillgången före anskaffning](/dynamics365/unified-operations/financials/localizations/emea-pre-acquisition-acquisition-fixed-asset)
--   [Momsutdrag för Tjeckien](/dynamics365/unified-operations/financials/localizations/emea-cze-vat-statement-details)
--   [Momsrapportering ](/dynamics365/unified-operations/financials/localizations/emea-cze-intra-community-vat-transactions)
--   [Dela perioder i periodiska journaler](/dynamics365/unified-operations/financials/localizations/emea-create-post-periodic-journals)
--   [Ställ in undertecknare för utskriftsformulär](/dynamics365/unified-operations/financials/localizations/emea-set-up-signers-for-printing-forms)
--   [Uppdatera hur belopp visas i rapporter och dokument](/dynamics365/unified-operations/financials/localizations/emea-amount-printing-forms)
+-   [Kassarabatt på kreditfaktura](../../financials/localizations/emea-cze-credit-note-cash-discount.md)
+-   [Avrundning av avskrivning](../../financials/localizations/emea-cze-depreciation-rounding.md)
+-   [Halvårs avskrivning för avyttrande av anläggningstillgångar i Tjeckien](../../financials/localizations/emea-cze-half-depreciation-fixed-asset-disposal.md)
+-   [Avskrivningsuppskjutning (holidays.md)](../../financials/localizations/emea-cze-depreciation-suspension-holidays.md)
+-   [Avskrivningsmetoder för anläggningstillgångar i Tjeckien](../../financials/localizations/emea-cze-fixed-assets-depreciation.md)
+-   [Bokför anläggningstillgången före anskaffning](../../financials/localizations/emea-pre-acquisition-acquisition-fixed-asset.md)
+-   [Momsutdrag för Tjeckien](../../financials/localizations/emea-cze-vat-statement-details.md)
+-   [Momsrapportering ](../../financials/localizations/emea-cze-intra-community-vat-transactions.md)
+-   [Dela perioder i periodiska journaler](../../financials/localizations/emea-create-post-periodic-journals.md)
+-   [Ställ in undertecknare för utskriftsformulär](../../financials/localizations/emea-set-up-signers-for-printing-forms.md)
+-   [Uppdatera hur belopp visas i rapporter och dokument](../../financials/localizations/emea-amount-printing-forms.md)
 
 ### <a name="estonia"></a>Estland
 
--   [Momsutdragsinformation för Estland](/dynamics365/unified-operations/financials/localizations/emea-est-vat-statement-details)
--   [Avyttrande av anläggningstillgångar](/dynamics365/unified-operations/financials/localizations/emea-credit-note-reverse-fixed-asset-sale)
+-   [Momsutdragsinformation för Estland](../../financials/localizations/emea-est-vat-statement-details.md)
+-   [Avyttrande av anläggningstillgångar](../../financials/localizations/emea-credit-note-reverse-fixed-asset-sale.md)
 
 ### <a name="europe"></a>Europa
-- [Förskottsmottagare](/dynamics365/unified-operations/financials/localizations/emea-advance-holders)
-- [Transaktioner för förskottsmottagare](/dynamics365/unified-operations/financials/localizations/emea-advance-holders-transactions)
-- [Avancerad fakturering](/dynamics365/unified-operations/financials/localizations/emea-advance-invoice)
-- [Bankavstämning](/dynamics365/unified-operations/financials/localizations/emea-bank-reconciliation)
-- [Korrigeringsfakturering](/dynamics365/unified-operations/financials/localizations/emea-corrective-invoice)
-- [Skapa och bokför periodiska journaler](/dynamics365/unified-operations/financials/localizations/emea-create-post-periodic-journals)
-- [Redigera faktura-ID för försäljningsorder](/dynamics365/unified-operations/financials/localizations/emea-edit-invoice-id-sales-orders)
-- [Mottagningskvitton för EU](/dynamics365/unified-operations/financials/localizations/emea-entry-certificates)
-- [Rapportering av EU-säljlista](/dynamics365/unified-operations/financials/localizations/emea-eu-sales-list)
-- [Valutakursjusteringar](/dynamics365/unified-operations/financials/localizations/emea-exchange-rate-adjustments)
-- [Filformat för betalningsmetoder](/dynamics365/unified-operations/financials/localizations/emea-select-file-formats-for-the-method-of-payments)
-- [Avyttring av anläggningstillgångar för Estland och Litauen](/dynamics365/unified-operations/financials/localizations/emea-credit-note-reverse-fixed-asset-sale)
-- [Importera ISO20022-filer](/dynamics365/unified-operations/financials/localizations/emea-ISO20022-file-formats)
-- [Intrastat](/dynamics365/unified-operations/financials/localizations/emea-intrastat)
-- [Lagerjournalrapporter](/dynamics365/unified-operations/financials/localizations/emea-set-up-report-inventory-journal-names)
-- [Faktura- och följesedelsnumrering för Lettland och Litauen](/dynamics365/unified-operations/financials/localizations/emea-invoices-packing-slips-numbering)
-- [Tidsgränser för fakturautfärdande](/dynamics365/unified-operations/financials/localizations/emea-invoice-issue-deadline)
-- [OIOUBL-standarder](/dynamics365/unified-operations/financials/localizations/emea-oioubl-standards-electronic-invoicing)
-- [Betalningskvittorapport](/dynamics365/unified-operations/financials/localizations/emea-eur-payment-slip-report-giro)
-- [Handkassa](/dynamics365/unified-operations/financials/localizations/emea-petty-cash)
-- [Bokför anläggningstillgången före anskaffning](/dynamics365/unified-operations/financials/localizations/emea-pre-acquisition-acquisition-fixed-asset)
-- [Postnummer](/dynamics365/unified-operations/financials/localizations/emea-import-create-postal-codes-manually)
-- [Registrerings-ID](/dynamics365/unified-operations/financials/localizations/emea-registration-ids)
-- [Återföringsavgifter](/dynamics365/unified-operations/financials/localizations/emea-reverse-charge)
-- [Översikt över SEPA-kreditöverföring](/dynamics365/unified-operations/financials/accounts-payable/sepa-credit-transfer)
-- [Översikt över SEPA-autogiro](/dynamics365/unified-operations/financials/accounts-receivable/sepa-direct-debit-overview)
-- [Ställ in kund- och leverantörskompensation](/dynamics365/unified-operations/financials/localizations/emea-compensation-customer-vendor-transactions)
-- [Ställ in undertecknare för utskriftsformulär](/dynamics365/unified-operations/financials/localizations/emea-set-up-signers-for-printing-forms)
-- [Storno-redovisning](/dynamics365/unified-operations/financials/localizations/emea-storno)
-- [Skattedirektiv](/dynamics365/unified-operations/financials/localizations/emea-tax-directives)
-- [Uppdatera hur belopp visas i rapporter och dokument](/dynamics365/unified-operations/financials/localizations/emea-amount-printing-forms) 
-- [Momsvalutakurser](/dynamics365/unified-operations/financials/localizations/emea-vat-exchange-rate)
-- [Momsregistrera transaktioner för Östeuropa](/dynamics365/unified-operations/financials/localizations/emea-vat-register-transactions)
-- [Momsrapportering](/dynamics365/unified-operations/financials/localizations/emea-vat-reporting)
-- [Visa transaktioner på kvittning](/dynamics365/unified-operations/financials/localizations/emea-transactions-settlement-form)
+- [Förskottsmottagare](../../financials/localizations/emea-advance-holders.md)
+- [Transaktioner för förskottsmottagare](../../financials/localizations/emea-advance-holders-transactions.md)
+- [Avancerad fakturering](../../financials/localizations/emea-advance-invoice.md)
+- [Bankavstämning](../../financials/localizations/emea-bank-reconciliation.md)
+- [Korrigeringsfakturering](../../financials/localizations/emea-corrective-invoice.md)
+- [Skapa och bokför periodiska journaler](../../financials/localizations/emea-create-post-periodic-journals.md)
+- [Redigera faktura-ID för försäljningsorder](../../financials/localizations/emea-edit-invoice-id-sales-orders.md)
+- [Mottagningskvitton för EU](../../financials/localizations/emea-entry-certificates.md)
+- [EU-säljlistrapportering](../../financials/localizations/emea-eu-sales-list.md)
+- [Valutakursjusteringar](../../financials/localizations/emea-exchange-rate-adjustments.md)
+- [Filformat för betalningsmetoder](../../financials/localizations/emea-select-file-formats-for-the-method-of-payments.md)
+- [Avyttring av anläggningstillgångar för Estland och Litauen](../../financials/localizations/emea-credit-note-reverse-fixed-asset-sale.md)
+- [Importera ISO20022-filer](../../financials/localizations/emea-ISO20022-file-formats.md)
+- [Intrastat](../../financials/localizations/emea-intrastat.md)
+- [Lagerjournalrapporter](../../financials/localizations/emea-set-up-report-inventory-journal-names.md)
+- [Faktura- och följesedelnumrering för Lettland och Litauen](../../financials/localizations/emea-invoices-packing-slips-numbering.md)
+- [Tidsgränser för fakturautfärdande](../../financials/localizations/emea-invoice-issue-deadline.md)
+- [OIOUBL-standarder](../../financials/localizations/emea-oioubl-standards-electronic-invoicing.md)
+- [Betalningskvittorapport](../../financials/localizations/emea-eur-payment-slip-report-giro.md)
+- [Handkassa](../../financials/localizations/emea-petty-cash.md)
+- [Bokför anläggningstillgången före anskaffning](../../financials/localizations/emea-pre-acquisition-acquisition-fixed-asset.md)
+- [Postnummer](../../financials/localizations/emea-import-create-postal-codes-manually.md)
+- [Registrerings-ID:n](../../financials/localizations/emea-registration-ids.md)
+- [Återföringsavgifter](../../financials/localizations/emea-reverse-charge.md)
+- [Översikt över SEPA-kreditöverföring](../../financials/accounts-payable/sepa-credit-transfer.md)
+- [Översikt över SEPA-autogiro](../../financials/accounts-receivable/sepa-direct-debit-overview.md)
+- [Ställ in kund- och leverantörskompensation](../../financials/localizations/emea-compensation-customer-vendor-transactions.md)
+- [Ställ in undertecknare för utskriftsformulär](../../financials/localizations/emea-set-up-signers-for-printing-forms.md)
+- [Storno-redovisning](../../financials/localizations/emea-storno.md)
+- [Skattedirektiv](../../financials/localizations/emea-tax-directives.md)
+- [Uppdatera hur belopp visas i rapporter och dokument](../../financials/localizations/emea-amount-printing-forms.md) 
+- [Momsvalutakurser](../../financials/localizations/emea-vat-exchange-rate.md)
+- [Momsregistrera transaktioner för Östeuropa](../../financials/localizations/emea-vat-register-transactions.md)
+- [Momsrapportering](../../financials/localizations/emea-vat-reporting.md)
+- [Visa transaktioner på kvittning](../../financials/localizations/emea-transactions-settlement-form.md)
 
 ### <a name="france"></a>Frankrike
--   [Kronologiska faktura- och verifikationsnummer](/dynamics365/unified-operations/financials/localizations/emea-fra-chronological-invoices-vouchers)
--   [Nedsättningsavskrivning för Frankrike](/dynamics365/unified-operations/financials/localizations/emea-fra-derogatory-depreciation)
--   [NAF-koder och SIRET-nummer](/dynamics365/unified-operations/financials/localizations/emea-fra-naf-codes-siret-numbers)
--   [Avgifter för förfallna kundbetalningar i Frankrike](/dynamics365/unified-operations/financials/localizations/emea-fra-apply-penalty-customer-payment-past-due)
--   [Skriv ut text för återbetalning av engångsbelopp på en kundfaktura](/dynamics365/unified-operations/financials/localizations/emea-fra-print-lump-sum-recovery-text)
--   [RB/SL-avskrivning](/dynamics365/unified-operations/financials/localizations/emea-fra-rbsl-depreciation)
+-   [Kronologiska faktura- och verifikationsnummer](../../financials/localizations/emea-fra-chronological-invoices-vouchers.md)
+-   [Nedsättningsavskrivning för Frankrike](../../financials/localizations/emea-fra-derogatory-depreciation.md)
+-   [NAF-koder och SIRET-nummer](../../financials/localizations/emea-fra-naf-codes-siret-numbers.md)
+-   [Avgifter för förfallna kundbetalningar i Frankrike](../../financials/localizations/emea-fra-apply-penalty-customer-payment-past-due.md)
+-   [Skriv ut text för återbetalning av engångsbelopp på en kundfaktura](../../financials/localizations/emea-fra-print-lump-sum-recovery-text.md)
+-   [RB/SL-avskrivning](../../financials/localizations/emea-fra-rbsl-depreciation.md)
 
 #### <a name="public-sector"></a>Offentlig sektor
-   -   [Utfästelser i offentlig sektor](/dynamics365/unified-operations/financials/localizations/emea-fra-commitments-public-sector)
-   -   [Mandats de paiement i offentlig sektor](/dynamics365/unified-operations/financials/localizations/emea-fra-mandats-de-paiement)
-   -   [Anskaffning och källa](/dynamics365/unified-operations/financials/localizations/emea-fra-procurement-sourcing-public-sector?toc=/dynamics365/unified-operations/fin-and-ops/toc.json)
-   -   [Redovisning i offentlig sektor](/dynamics365/unified-operations/financials/localizations/emea-fra-public-sector-accounting)
-   -   [Titres de recette](/dynamics365/unified-operations/financials/localizations/emea-fra-titres-de-recette-public-sector)
-   -   [Betalningsreservationer för leverantörsfakturor](/dynamics365/unified-operations/financials/localizations/emea-fra-vendor-invoice-payment-holds-public-sector)
+   -   [Utfästelser i offentlig sektor](../../financials/localizations/emea-fra-commitments-public-sector.md)
+   -   [Mandats de paiement i offentlig sektor](../../financials/localizations/emea-fra-mandats-de-paiement.md)
+   -   [Anskaffning och källa](../../financials/localizations/emea-fra-procurement-sourcing-public-sector.md)
+   -   [Redovisning i offentlig sektor](../../financials/localizations/emea-fra-public-sector-accounting.md)
+   -   [Titres de recette](../../financials/localizations/emea-fra-titres-de-recette-public-sector.md)
+   -   [Betalningsreservationer för leverantörsfakturor](../../financials/localizations/emea-fra-vendor-invoice-payment-holds-public-sector.md)
 
 ### <a name="germany"></a>Tyskland
--   [Ytterligare förvärvsavskrivning](/dynamics365/unified-operations/financials/localizations/emea-deu-additional-acquisition-depreciation)
--   [Tysk verifieringsfil (GDPdU/GoBD)](/dynamics365/unified-operations/financials/localizations/emea-deu-gdpdu-audit-data-export)
--   [Tysk journallisterapport](/dynamics365/unified-operations/financials/localizations/emea-deu-journal-list-report)
--   [Skriv ut en separat etikett för kreditnotor från försäljning](/dynamics365/unified-operations/financials/localizations/emea-deu-print-separate-label-credit-memo-originating-sales)
+-   [Ytterligare förvärvsavskrivning](../../financials/localizations/emea-deu-additional-acquisition-depreciation.md)
+-   [Tysk verifieringsfil (GDPdU/GoBD)](../../financials/localizations/emea-deu-gdpdu-audit-data-export.md)
+-   [Tysk journallisterapport](../../financials/localizations/emea-deu-journal-list-report.md)
+-   [Skriv ut en separat etikett för kreditnotor från försäljning](../../financials/localizations/emea-deu-print-separate-label-credit-memo-originating-sales.md)
 
 ### <a name="hungary"></a>Ungern
 
--   [Avskrivningsmetoder för anläggningstillgångar](/dynamics365/unified-operations/financials/localizations/emea-hun-fixed-assets-depreciation-methods) 
--   [Flytta en anläggningstillgång till lager](/dynamics365/unified-operations/financials/localizations/emea-hun-fixed-asset-to-inventory)
--   [Fasta lågkostnadstillgångar](/dynamics365/unified-operations/financials/localizations/emea-hun-low-cost-fixed-assets)
+-   [Avskrivningsmetoder för anläggningstillgångar](../../financials/localizations/emea-hun-fixed-assets-depreciation-methods.md)    
+-   [Flytta en anläggningstillgång till lager](../../financials/localizations/emea-hun-fixed-asset-to-inventory.md)
+-   [Fasta lågkostnadstillgångar](../../financials/localizations/emea-hun-low-cost-fixed-assets.md)
 
 ### <a name="italy"></a>Italien
 
--   [Italiensk rapport över svarta listan](/dynamics365/unified-operations/financials/localizations/emea-ita-black-list-report)
--   [Momsutdragsinformation](/dynamics365/unified-operations/financials/localizations/emea-ita-vat-statements-details)
--   [Bokföringsdatum för transaktioner](/dynamics365/unified-operations/financials/localizations/emea-ita-competence-date)
--   [Manuell avskrivning av anläggningstillgångar](/dynamics365/unified-operations/financials/localizations/emea-ita-depreciation-of-fixed-assets)
--   [Verifieringsdatum för följesedel för fakturor i Italien](/dynamics365/unified-operations/financials/localizations/emea-ita-packing-slip-date-verification-on-invoice)
--   [Italienska momsböcker](/dynamics365/unified-operations/financials/localizations/emea-ita-fiscal-books)
--   [Delbetalning av fakturor utfärdade till offentlig administration](/dynamics365/unified-operations/financials/localizations/emea-ita-split-payment-invoices-issued-public-administration)
--   [Källskatt](/dynamics365/unified-operations/financials/localizations/emea-ita-withholding-tax)
+-   [Italiensk rapport över svarta listan](../../financials/localizations/emea-ita-black-list-report.md)
+-   [Momsutdragsinformation](../../financials/localizations/emea-ita-vat-statements-details.md)
+-   [Bokföringsdatum för transaktioner](../../financials/localizations/emea-ita-competence-date.md)
+-   [Manuell avskrivning av anläggningstillgångar](../../financials/localizations/emea-ita-depreciation-of-fixed-assets.md)
+-   [Verifieringsdatum för följesedel för fakturor i Italien](../../financials/localizations/emea-ita-packing-slip-date-verification-on-invoice.md)
+-   [Italienska momsböcker](../../financials/localizations/emea-ita-fiscal-books.md)
+-   [Delbetalning av fakturor utfärdade till offentlig administration](../../financials/localizations/emea-ita-split-payment-invoices-issued-public-administration.md)
+-   [Källskatt](../../financials/localizations/emea-ita-withholding-tax.md)
 
 ### <a name="japan"></a>Japan
 
--  [Bankbetalningsavgifter som täcks av leverantörer](/dynamics365/unified-operations/financials/localizations/apac-jpn-bank-payment-fees-vendors)
--  [Konsoliderade fakturor](/dynamics365/unified-operations/financials/localizations/apac-jpn-consolidate-invoices)
--  [Allokeringsregler för anläggningstillgångar](/dynamics365/unified-operations/financials/localizations/apac-jpn-allocation-rules-fixed-assets)
--  [Jämnt fördelad avskrivningsmetod](/dynamics365/unified-operations/financials/localizations/apac-jpn-equally-divided-depreciation-method)
--  [Avskrivning av anläggningstillgång](/dynamics365/unified-operations/financials/localizations/apac-jpn-fixed-asset-depreciation)
--  [Hantering av nedskrivning av anläggningstillgång på kontantgenererande enhet](/dynamics365/unified-operations/financials/localizations/apac-jpn-impairment-accounting-cash-generating-unit)
--  [Importera postnummer](/dynamics365/unified-operations/financials/localizations/apac-jpn-import-postal-codes)
--  [Ställ in utrangeringsskyldighet för anläggningstillgångar](/dynamics365/unified-operations/financials/localizations/apac-jpn-asset-retirement-obligation-fixed-assets)
--  [Ställ in avdragsposter för anläggningstillgångar](/dynamics365/unified-operations/financials/localizations/apac-jpn-reduction-entry-fixed-assets)
--  [Betala en leverantör genom att godkänna en växel](/dynamics365/unified-operations/financials/localizations/apac-jpn-endorse-bill-of-exchange)
--  [Beräkning av progressiv källskatt](/dynamics365/unified-operations/financials/localizations/apac-jpn-progressive-withholding-tax-calculation)
+-  [Bankbetalningsavgifter som täcks av leverantörer](../../financials/localizations/apac-jpn-bank-payment-fees-vendors.md)
+-  [Konsoliderade fakturor](../../financials/localizations/apac-jpn-consolidate-invoices.md)
+-  [Allokeringsregler för anläggningstillgångar](../../financials/localizations/apac-jpn-allocation-rules-fixed-assets.md)
+-  [Jämnt fördelad avskrivningsmetod](../../financials/localizations/apac-jpn-equally-divided-depreciation-method.md)
+-  [Avskrivning av anläggningstillgång](../../financials/localizations/apac-jpn-fixed-asset-depreciation.md)
+-  [Hantering av nedskrivning av anläggningstillgång på kontantgenererande enhet](../../financials/localizations/apac-jpn-impairment-accounting-cash-generating-unit.md)
+-  [Importera postnummer](../../financials/localizations/apac-jpn-import-postal-codes.md)
+-  [Ställ in utrangeringsskyldighet för anläggningstillgångar](../../financials/localizations/apac-jpn-asset-retirement-obligation-fixed-assets.md)
+-  [Ställ in avdragsposter för anläggningstillgångar](../../financials/localizations/apac-jpn-reduction-entry-fixed-assets.md)
+-  [Betala en leverantör genom att godkänna en växel](../../financials/localizations/apac-jpn-endorse-bill-of-exchange.md)
+-  [Beräkning av progressiv källskatt](../../financials/localizations/apac-jpn-progressive-withholding-tax-calculation.md)
 
 ### <a name="latvia"></a>Lettland
 
--   [Redovisning av anläggningstillgångar i skattesyfte](/dynamics365/unified-operations/financials/localizations/emea-lva-fixed-assets-accounting)
--   [Ändringsspårning av plats för anläggningstillgångar](/dynamics365/unified-operations/financials/localizations/emea-lva-fixed-assets-location-fields-change)
--   [Numrering av fakturor och följesedlar](/dynamics365/unified-operations/financials/localizations/emea-invoices-packing-slips-numbering)
--   [Rapport om skatt på naturtillgångar](/dynamics365/unified-operations/financials/localizations/emea-lva-tax-natural-resources)
--   [Momsutdragsinformation](/dynamics365/unified-operations/financials/localizations/emea-lva-vat-statement-details)
+-   [Redovisning av anläggningstillgångar i skattesyfte](../../financials/localizations/emea-lva-fixed-assets-accounting.md)
+-   [Ändringsspårning av plats för anläggningstillgångar](../../financials/localizations/emea-lva-fixed-assets-location-fields-change.md)
+-   [Numrering av fakturor och följesedlar](../../financials/localizations/emea-invoices-packing-slips-numbering.md)
+-   [Rapport om skatt på naturtillgångar](../../financials/localizations/emea-lva-tax-natural-resources.md)
+-   [Momsutdragsinformation](../../financials/localizations/emea-lva-vat-statement-details.md)
 
 ### <a name="lithuania"></a>Litauen
 
--   [Utdrag reparation av anläggningstillgångar](/dynamics365/unified-operations/financials/localizations/emea-ltu-fixed-asset-repair-statement)
--   [Numrering av fakturor och följesedlar](/dynamics365/unified-operations/financials/localizations/emea-invoices-packing-slips-numbering)
--   [Momsutdragsinformation](/dynamics365/unified-operations/financials/localizations/emea-ltu-vat-statement-details)
+-   [Utdrag reparation av anläggningstillgångar](../../financials/localizations/emea-ltu-fixed-asset-repair-statement.md)
+-   [Numrering av fakturor och följesedlar](../../financials/localizations/emea-invoices-packing-slips-numbering.md)
+-   [Momsutdragsinformation](../../financials/localizations/emea-ltu-vat-statement-details.md)
 
 ### <a name="mexico"></a>Mexiko
 
--   [DIOT-deklarationsutdrag](/dynamics365/unified-operations/financials/localizations/latam-mex-diot-declaration-statement)
--   [Elektroniska redovisningsutdrag](/dynamics365/unified-operations/financials/localizations/latam-mex-electronic-ledger-accounting-statements)
--   [Rapport för inflationsjusteringsdeklaration](/dynamics365/unified-operations/financials/localizations/latam-mex-adjustment-inflation-declaration-report)
--   [ISR-deklarationsrapport](/dynamics365/unified-operations/financials/localizations/latam-mex-isr-declaration-report-supporting-processes)
--   [Elektroniska fakturor (CFDI)](/dynamics365/unified-operations/financials/localizations/latam-mex-CFDI-electronic-invoices)
+-   [DIOT-deklarationsutdrag](../../financials/localizations/latam-mex-diot-declaration-statement.md)
+-   [Elektroniska redovisningsutdrag](../../financials/localizations/latam-mex-electronic-ledger-accounting-statements.md)
+-   [Rapport för inflationsjusteringsdeklaration](../../financials/localizations/latam-mex-adjustment-inflation-declaration-report.md)
+-   [ISR-deklarationsrapport](../../financials/localizations/latam-mex-isr-declaration-report-supporting-processes.md)
+-   [Elektroniska fakturor (CFDI)](../../financials/localizations/latam-mex-CFDI-electronic-invoices.md)
    
 ### <a name="malaysia"></a>Malaysia
 
--   [Moms på varor och tjänster](/dynamics365/unified-operations/financials/localizations/apac-mys-gst)
+-   [Moms på varor och tjänster](../../financials/localizations/apac-mys-gst.md)
 
 ### <a name="netherlands"></a>Nederländerna
 
--   [Tidsgräns för fakturautfärdande](/dynamics365/unified-operations/financials/localizations/emea-invoice-issue-deadline)
+-   [Tidsgräns för fakturautfärdande](../../financials/localizations/emea-invoice-issue-deadline.md)
 
 ### <a name="norway"></a>Norge
 
--   [Nets-importformat](/dynamics365/unified-operations/financials/localizations/emea-nor-nets-import-format)
--   [Momsutdrag](/dynamics365/unified-operations/financials/localizations/emea-nor-sales-tax-payment-report)
+-   [Nets-importformat](../../financials/localizations/emea-nor-nets-import-format.md)
+-   [Momsutdrag](../../financials/localizations/emea-nor-sales-tax-payment-report.md)
 
 ### <a name="poland"></a>Polen
 
--   [Beräkna radrabatter från enhetspris](/dynamics365/unified-operations/financials/localizations/emea-pol-line-discount-calculation-from-unit-price)
--   [Korrigeringsanteckningar](/dynamics365/unified-operations/financials/localizations/emea-pol-correction-notes)
--   [Numrering av försäljningsfakturadubbletter](/dynamics365/unified-operations/financials/localizations/emea-pol-sales-invoice-duplicates-numbering)
--   [Avskrivning av anläggningstillgångar](/dynamics365/unified-operations/financials/localizations/emea-pol-fixed-assets-depreciation)
--   [Avyttrande av anläggningstillgångar](/dynamics365/unified-operations/financials/localizations/emea-pol-fixed-asset-disposal-functionality-extension)
--   [Returförpackningar](/dynamics365/unified-operations/financials/localizations/emea-pol-returnable-packages)
--   [Momsrapporter](/dynamics365/unified-operations/financials/localizations/emea-pol-sales-tax-reports)
--   [Standardverifieringsfil (SAF-T)](/dynamics365/unified-operations/financials/localizations/emea-pol-standard-audit-file-saf)
--   [Omsättnings- och saldoutdrag](/dynamics365/unified-operations/financials/localizations/emea-pol-turnover-balances-statement)
+-   [Beräkna radrabatter från enhetspris](../../financials/localizations/emea-pol-line-discount-calculation-from-unit-price.md)
+-   [Korrigeringsanteckningar](../../financials/localizations/emea-pol-correction-notes.md)
+-   [Numrering av försäljningsfakturadubbletter](../../financials/localizations/emea-pol-sales-invoice-duplicates-numbering.md)
+-   [Avskrivning av anläggningstillgångar](../../financials/localizations/emea-pol-fixed-assets-depreciation.md)
+-   [Avyttrande av anläggningstillgångar](../../financials/localizations/emea-pol-fixed-asset-disposal-functionality-extension.md)
+-   [Returförpackningar](../../financials/localizations/emea-pol-returnable-packages.md)
+-   [Momsrapporter](../../financials/localizations/emea-pol-sales-tax-reports.md)
+-   [Standardverifieringsfil (SAF-T)](../../financials/localizations/emea-pol-standard-audit-file-saf.md)
+-   [Omsättnings- och saldoutdrag](../../financials/localizations/emea-pol-turnover-balances-statement.md)
 
 ### <a name="saudi-arabia"></a>Saudiarabien
 
--   [Zakat-rapporter](/dynamics365/unified-operations/financials/localizations/emea-sau-zakat-reporting)
+-   [Zakat-rapporter](../../financials/localizations/emea-sau-zakat-reporting.md)
 
 ### <a name="singapore"></a>Singapore
 
--   [Generera Singapore GST-05-rapport](/dynamics365/unified-operations/financials/localizations/apac-sgp-generate-gst-05-report)
+-   [Generera Singapore GST-05-rapport](../../financials/localizations/apac-sgp-generate-gst-05-report.md)
 
 ### <a name="spain"></a>Spanien
 
--   [Alternativ för spansk växel](/dynamics365/unified-operations/financials/localizations/emea-esp-bill-of-exchange-options)
--   [Parametern kassarabatt tillämpas på fakturan](/dynamics365/unified-operations/financials/localizations/emea-esp-cash-discount-applied-invoice)
--   [Villkorsmoms](/dynamics365/unified-operations/financials/localizations/emea-esp-conditional-sales-tax)
--   [Omvärderingsgrupper för anläggningstillgångar](/dynamics365/unified-operations/financials/localizations/emea-esp-fixed-asset-group-revaluation)
--   [Inomeuropeisk moms](/dynamics365/unified-operations/financials/localizations/emea-esp-intra-community-vat)
--   [Engångskunder](/dynamics365/unified-operations/financials/localizations/emea-esp-no-one-time-customer-for-project-contracts)
--   [Skriv ut checkar med spansk layout](/dynamics365/unified-operations/financials/localizations/emea-esp-print-checks-with-spanish-layout)
--   [Alternativ för spansk skuldsedel](/dynamics365/unified-operations/financials/localizations/emea-esp-promissory-note-options)
--   [Inköps- och försäljningscykler](/dynamics365/unified-operations/financials/localizations/emea-esp-sales-purchase-cycle)
--   [Särskilda poster och ingående ark](/dynamics365/unified-operations/financials/localizations/emea-esp-opening-sheets-spain)
--   [Använd räkenskapsdata från fakturakontot](/dynamics365/unified-operations/financials/localizations/emea-esp-fiscal-data-invoice-account)
+-   [Alternativ för spansk växel](../../financials/localizations/emea-esp-bill-of-exchange-options.md)
+-   [Parametern kassarabatt tillämpas på fakturan](../../financials/localizations/emea-esp-cash-discount-applied-invoice.md)
+-   [Villkorsmoms](../../financials/localizations/emea-esp-conditional-sales-tax.md)
+-   [Omvärderingsgrupper för anläggningstillgångar](../../financials/localizations/emea-esp-fixed-asset-group-revaluation.md)
+-   [Inomeuropeisk moms](../../financials/localizations/emea-esp-intra-community-vat.md)
+-   [Engångskunder](../../financials/localizations/emea-esp-no-one-time-customer-for-project-contracts.md)
+-   [Skriv ut checkar med spansk layout](../../financials/localizations/emea-esp-print-checks-with-spanish-layout.md)
+-   [Alternativ för spansk skuldsedel](../../financials/localizations/emea-esp-promissory-note-options.md)
+-   [Inköps- och försäljningscykler](../../financials/localizations/emea-esp-sales-purchase-cycle.md)
+-   [Särskilda poster och ingående ark](../../financials/localizations/emea-esp-opening-sheets-spain.md)
+-   [Använd räkenskapsdata från fakturakontot](../../financials/localizations/emea-esp-fiscal-data-invoice-account.md)
 
 ### <a name="sweden"></a>Sverige
 
--   [Importera betalningsformat för Sverige](/dynamics365/unified-operations/financials/localizations/emea-swe-payment-formats-import)
--   [Kassaapparat för Sverige](/dynamics365/unified-operations/retail/localizations/emea-swe-cash-registers)
+-   [Importera betalningsformat för Sverige](../../financials/localizations/emea-swe-payment-formats-import.md)
+-   [Kassaapparat för Sverige](../../retail/localizations/emea-swe-cash-registers.md)
 
 ### <a name="switzerland"></a>Schweiz
 
--   [Import av ESR-kundbetalningar](/dynamics365/unified-operations/financials/localizations/emea-che-esr-customer-payments-import)
+-   [Import av ESR-kundbetalningar](../../financials/localizations/emea-che-esr-customer-payments-import.md)
 
 ### <a name="thailand"></a>Thailand
 
--   [Lagerkortsrapporter](/dynamics365/unified-operations/financials/localizations/apac-tha-stock-card-reports)
--   [Momsfaktura för ersättning/justering för Thailand](/dynamics365/unified-operations/financials/localizations/apac-tha-substitution-and-adjustment-invoices)
--   [Orealiserad moms](/dynamics365/unified-operations/financials/localizations/apac-tha-unrealized-vat)
--   [Källskatt](/dynamics365/unified-operations/financials/localizations/apac-tha-withholding-tax)
+-   [Lagerkortsrapporter](../../financials/localizations/apac-tha-stock-card-reports.md)
+-   [Momsfaktura för ersättning/justering för Thailand](../../financials/localizations/apac-tha-substitution-and-adjustment-invoices.md)
+-   [Orealiserad moms](../../financials/localizations/apac-tha-unrealized-vat.md)
+-   [Källskatt](../../financials/localizations/apac-tha-withholding-tax.md)
 
 ### <a name="united-kingdom"></a>Storbritannien
 
--   [Byggbranschschema för Storbritannien](/dynamics365/unified-operations/financials/localizations/emea-gbr-cis-construction-industry-scheme)
+-   [Byggbranschschema för Storbritannien](../../financials/localizations/emea-gbr-cis-construction-industry-scheme.md)
 
 ### <a name="united-states"></a>USA
 
--   [1099-blankett i den offentliga sektorn](/dynamics365/unified-operations/financials/localizations/noam-usa-form-1099-public-sector)   
--   [Verifiering av I–9-formulär](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-form-i-9-verification)
--   [1099-rapportering vid årsslut](/dynamics365/unified-operations/financials/localizations/noam-usa-year-end-1099-reporting)
--   [Lön](/dynamics365/unified-operations/fin-and-ops/hr/localizations/noam-usa-payroll)
--   [Offentlig sektor](/dynamics365/unified-operations/financials/public-sector/public-sector-functionality)
+-   [1099-blankett i den offentliga sektorn](../../financials/localizations/noam-usa-form-1099-public-sector.md)   
+-   [Verifiering av I–9-formulär](../../fin-and-ops/hr/localizations/noam-usa-form-i-9-verification.md)
+-   [1099-rapportering vid årsslut](../../financials/localizations/noam-usa-year-end-1099-reporting.md)
+-   [Lön](../../fin-and-ops/hr/localizations/noam-usa-payroll.md)
+-   [Offentlig sektor](../../financials/public-sector/public-sector-functionality.md)
 
 
 
