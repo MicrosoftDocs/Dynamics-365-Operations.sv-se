@@ -451,6 +451,7 @@
 ### [Dela modeller](dev-tools/model-split.md)
 ### [Använd ombud för att lösa beroenden mellan modeller](migration-upgrade/delegates-migration.md)
 
+
 ## Uppgradera till den senaste uppdateringen
 ### [Process för flytta till den senaste uppdateringen](migration-upgrade/upgrade-latest-update.md)
 ### [Livscykelpolicy](migration-upgrade/versions-update-policy.md)
@@ -511,6 +512,8 @@
 ## [Överför anpassade affärsprocesser](lifecycle-services/upload-business-processes-bpm-task-recorder.md)
 ## [Övervakning och diagnostik ](lifecycle-services/monitoring-diagnostics.md)
 ## [Tillgångsbibliotek](lifecycle-services/asset-library.md)
+## [Microsoft Dynamics 365 - översättningstjänst, översikt](lifecycle-services/translation-service-overview.md)
+### [Användarhandbok för Microsoft Dynamics 365 - översättningstjänst](lifecycle-services/use-translation-service.md)
 
 ## Funktioner i Dynamics AX 2012 Lifecycle Services
 ### Distribution
