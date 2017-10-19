@@ -1,5 +1,8 @@
 # [Välkommen till Dynamics 365 for Retail](index.md)
 
+# Kom igång
+## [Nyheter eller ändringar](get-started/whats-new.md)
+
 # Betalningar
 ## [Betalningsmetoder](payment-methods.md)
 ## [Inställning, auktorisering och registrering av kreditkort](../financials/accounts-receivable/credit-card-authorizations.md)
@@ -173,8 +176,9 @@
 ### [Konfiguration och installation av Retail Modern POS](retail-modern-pos-device-activation.md)
 #### [Hantera butikskonton och enheter från huvudkontoret](set-up-activation-accounts-validate-devices-hq.md)
 #### [Enhetsaktivering för Retail POS](dev-itpro/retail-device-activation.md)
-#### [Säker molnbaserad kassa för butik](dev-itpro/secure-retail-cloud-pos.md)
+#### [Skydda Retail Cloud POS](dev-itpro/secure-retail-cloud-pos.md)
 ### [Konfiguration och installation av Retail Hardware Station](retail-hardware-station-configuration-installation.md)
+### [Massdistribution av komponenter för självbetjäningspaket för Retail](dev-itpro/retail-mass-deployment.md)
 ### [Retail-komponenthändelser för diagnostik och felsökning](dev-itpro/retail-component-events-diagnostics-troubleshooting.md)
 ### [Tillämpa ett distribuerbart paket](../dev-itpro/deployment/apply-deployable-package-system.md)
 
