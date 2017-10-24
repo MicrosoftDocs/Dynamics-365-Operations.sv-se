@@ -16,13 +16,13 @@ ms.custom: 59041
 ms.assetid: 054de5b0-8618-4195-be12-f031b4bb4d74
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 2016-05-31T00:00:00.000Z
+ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: aad8f2617d94e9abc77dafe96cb95f7e191873bd
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 1fd7231ad204a0764d601e9b64bf2150255c6f78
 ms.contentlocale: sv-se
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -85,7 +85,7 @@ Menyn **Redigera** är tillgänglig för användare som har rollerna **Designer*
 | Infoga Rapportenheter från Dimensioner | Öppna dialogrutan **Infoga Rapportenheter från Dimensioner** där du kan välja de dimensionsvärden som ska inkluderas i rapportträddefinitionen. Detta kommando är tillgängligt från en rapportträddefinition. |
 | Importera hierarki för dimensionsuppsättning         | Öppna dialogrutan **Hierarki för dimensionsuppsättning** där du kan importera en hierarki för dimensionsuppsättning från de ekonomiska data. Detta kommando är tillgängligt från en raddefinition för ett ..\financial-dimensions\dimension-baserat system.  |
 | Infoga rapportenhet                  | Infoga en tom rad i rapportträddefinitionen. Detta kommando är tillgängligt från en rapportträddefinition.                                                                                                |
-| Ta bort rapportenhet                  | Ta bort den valda rapportenhetraden från rapportträddefinitionen. Detta kommando är tillgängligt från en rapportträddefinition.                                                                             |
+| Ta bort rapportenhet                  | Ta bort den valda rapportenhetraden från rapportträddefinitionen. Det här kommandot är tillgängligt i rapportträdsdefinitioner.                                                                             |
 
 ### <a name="view-menu"></a>Visa-menyn
 
@@ -96,7 +96,7 @@ Menyn **Visa** är tillgänglig för alla användare och inkluderar följande ko
 | Navigeringsfönstret | Visa eller dölja navigeringsfönstret.                                      |
 | Verktygsfält        | Välj de verktygsfält som är synliga.                                  |
 | Statusfält      | Visa eller dölj statusinformationen i fönstret **Rapportdesignern**. |
-| Välkomstsida    | Öppna sidan **Välkommen**.                                             |
+| Välkomstsida    | Öppna **Välkomstsidan**.                                             |
 
 ### <a name="format-menu"></a>Formatera menyn
 

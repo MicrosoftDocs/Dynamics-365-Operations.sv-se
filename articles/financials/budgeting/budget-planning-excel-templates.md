@@ -18,10 +18,10 @@ ms.author: ryansand
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 1945d137b337508a1850e3e679a60487aecb6b84
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
 ms.openlocfilehash: 7cec40859a8c68cb8a9751c5531c67cef7706258
 ms.contentlocale: sv-se
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -133,7 +133,7 @@ Klicka på pilen för att visa en ytterligare meny. Välj **Lås**.
 
 Ja, de flesta vanliga Excel-funktioner fungerar i budgetplansmallar. Vi rekommenderar att använda färgkodning så att användare kan skilja mellan skrivskyddade och redigerbara kolumner. Villkorsstyrd formatering kan användas för att framhäva vissa problematiska delar av budgeten. Totalsummor för kolumner kan enkelt visas med vanliga Excel-formler ovanför tabellen.
 
-Du kan också skapa och använda pivottabeller och diagram för ytterligare grupper och visualiseringar av budgetdata. På fliken **Data**, i gruppen **Anslutningar**, klickar du på **Uppdatera alla** och sedan på **Anslutningsegenskaper**. Klicka på fliken **Användning**. Under **Uppdatera** markerar du kryssrutan **Uppdatera data när filen öppnas**. 
+Du kan också skapa och använda pivottabeller och diagram för ytterligare grupper och visualiseringar av budgetdata. På fliken **Data**, i gruppen **Anslutningar**, klickar du på **Uppdatera alla** och sedan på **Anslutningsegenskaper**. Klicka på fliken **Användning**. Under fliken **Uppdatera** markerar du kryssrutan **Uppdatera data när filen öppnas**. 
 
 [![bpt17](./media/bpt17-1024x614.png)](./media/bpt17.png)
 

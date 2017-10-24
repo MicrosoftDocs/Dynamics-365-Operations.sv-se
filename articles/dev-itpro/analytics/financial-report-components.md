@@ -16,13 +16,13 @@ ms.custom: 59071
 ms.assetid: a201cfcb-1672-45f6-897d-2db2dd181d9a
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 2016-05-31T00:00:00.000Z
+ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 5c09b1fc061f95cd78e9f18c2bdf846fdbfc7cf1
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 074a2f377c16d47e95343dae3ebec6cbba4d5050
 ms.contentlocale: sv-se
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -71,7 +71,7 @@ Byggblock är de raddefinitioner, kolumndefinitioner, rapportträddefinitioner o
 ### <a name="create-a-building-block-group"></a>Skapa en grupp för byggblock
 
 1.  I Report Designer, på menyn **Företag** klicka på **Byggblocksgrupper**.
-2.  Klicka på **Ny** i dialogrutan **Byggblocksgrupp**.
+2.  Klicka på **Ny** i dialogrutan **Byggblocksgrupper**.
 3.  Ange ett unikt namn och beskrivning för byggblockgruppen. Varje fält kan innehålla högst 256 tecken. (Den här siffran innehåller blanksteg.)
 4.  Klicka på **OK** när du vill skapa en ny byggblocksgrupp.
 
@@ -79,7 +79,7 @@ Byggblock är de raddefinitioner, kolumndefinitioner, rapportträddefinitioner o
 
 När du har skapat en blockgrupp måste du tilldela den till minst ett företag. Du kan sedan skapa rapport-, rad-, kolumn- och rapportträdsdefinitioner och spara dem i byggblocksgruppen. Du måste stänga alla byggblock innan du börjar med följande procedur:
 1.  I Report Designer, på menyn **Företag** klickar du på **Företag**.
-2.  Markera det företag som du tilldelar en byggblocksgrupp till i dialogrutan **Företag**.
+2.  Markera det företag som du vill tilldela en byggblockgrupp till i dialogrutan **Företag**.
 3.  Klicka på **Ändra**.
 4.  I dialogrutan **Ändra företag** i fältet **Byggblockgrupp** väljer du den byggblockgrupp so ska tilldels företaget eller klickar på **Nytt** för att skapa en ny byggblockgrupp.
 5.  Klicka på **OK** för att tilldela byggblockgruppen.
@@ -96,7 +96,7 @@ När en byggblocksgrupp har skapats och används kan du visa alla byggblock som 
 ### <a name="save-a-building-block-group-under-a-new-name"></a>Spara en byggblocksgrupp med ett nytt namn
 
 Du kan spara en befintlig byggblocksgrupp med ett nytt namn. Därefter kan du ändra den nya byggblocksgruppen utan att ändra den ursprungliga byggblocksgruppen.
-1.  I Report Designer, på menyn **Företag** klicka på **Byggblockgrupper**.
+1.  Klicka på **Byggblocksgrupper** på **Företag**-menyn i Report Designer.
 2.  I dialogrutan **Byggblocksgrupper** väljer du den byggblocksgrupp du vill spara med ett nytt namn.
 3.  Klicka på **Spara som**.
 4.  Ange ett nytt namn och beskrivning för byggblockgruppen.
@@ -104,12 +104,12 @@ Du kan spara en befintlig byggblocksgrupp med ett nytt namn. Därefter kan du ä
 
 ### <a name="export-a-building-block-group"></a> Exportera en byggblockgrupp
 
-Du kan exportera en byggblockgrupp eller specifika rapportbyggblock i en byggblockgrupp. Du kan använda den exporterade byggblockgruppen som en säkerhet. Du kan också kopiera exporterade data mellan byggblocksgrupper eller Finance and Operations-installationer. Rapportdesignern inkluderar de refererade teckenstilarna och dimensionsuppsättningarna tillsammans med byggblockgruppen.
+Du kan exportera en byggblocksgrupp eller rapportbyggblock i en byggblocksgrupp. Du kan använda den exporterade byggblocksgruppen som en säkerhetskopia. Du kan också kopiera exporterade data mellan byggblocksgrupper eller Finance and Operations-installationer. Rapportdesignern inkluderar de refererade teckenstilarna och dimensionsuppsättningarna tillsammans med byggblockgruppen.
 1.  I Report Designer, på menyn **Företag** klicka på **Byggblockgrupper**.
-2.  I dialogrutan **Byggblockgrupper** väljer du den byggblockgrupp som du vill exportera och klickar sedan på **Exportera**.
+2.  Markera det byggblock som ska exporteras i dialogrutan **Byggblocksgrupper** och klicka sedan på **Exportera**.
 3.  I dialogrutan **Exportera** väljer du de rapportdefinitioner som du vill exportera:
     -   Klicka på **Markera alla** om du vill exportera alla dina rapportdefinitioner och de associerade byggblocken.
-    -   Om du vill exportera specifika rapporter, rader, kolumner, träd eller dimensionsuppsättningar klickar du på lämpliga flikar och väljer de artiklar du vill exportera. Tryck och håll ned CTRL-tangenten om du vill välja flera artiklar på en flik. **Obs!** När du väljer rapporter att exportera väljer du även associerade rader, kolumner, träd och dimensionsuppsättningar.
+    -   Om du vill exportera specifika rapporter, rader, kolumner, träd eller dimensionsuppsättningar klickar du på lämpliga flikar och väljer de artiklar du vill exportera. Håll knappen Ctrl intryckt för att välja flera olika artiklar på en flik. **Obs:** När du väljer vilka rapporter du vill exportera kommer tillhörande rader, kolumner, träd och dimensionsuppsättningar att väljas.
 
 4.  När du har valt artiklar som ska exporteras, klicka på **Exportera**.
 5.  I dialogrutan **Spara som** väljer du en plats att exportera byggblockgruppen till.
@@ -120,8 +120,8 @@ Du kan exportera en byggblockgrupp eller specifika rapportbyggblock i en byggblo
 
 Du kan importera en byggblocksgrupp till en befintlig byggblocksgrupp eller skapa en ny byggblocksgrupp för data. Alla importerade byggblocksgrupper behåller sina ursprungliga teckensnittsinställningar och företagsreferenser och inkluderar relevanta dimensionsuppsättningar.
 1.  I Report Designer, på menyn **Företag** klicka på **Byggblockgrupper**.
-2.  I dialogrutan **Byggblockgrupper** väljer du den byggblockgrupp som du vill importera byggblockgruppen till och klickar sedan på **Importera**.
-3.  I dialogrutan **Öppna** väljer du den byggblockgrupp som du vill importera och klickar sedan på **Öppna**.
+2.  Markera det byggblock som ska byggblocksgruppen ska importeras till i dialogrutan **Byggblocksgrupper** och klicka sedan på **Importera**.
+3.  Markera den byggblocksgrupp som ska importeras i dialogrutan **Öppna**, och klicka sedan på **Öppna**.
 4.  I dialogrutan **Importera** väljer du de rapportdefinitioner som du vill importera:
     -   Klicka på **Markera alla** om du vill importera alla rapportdefinitioner och stödjande byggblock.
     -   Om du vill importera specifika rapporter väljer du de rader, kolumner, träd eller dimensionsuppsättningar som ska importeras.
@@ -130,9 +130,9 @@ Du kan importera en byggblocksgrupp till en befintlig byggblocksgrupp eller skap
 
 ### <a name="undo-a-checkout-of-a-building-block"></a>Ångra en utcheckning av ett byggblock
 
-När du öppnar ett byggblock kan andra användare bara komma åt byggblocket i skrivskyddat läge. Ibland kan en användare glömma att stänga ett byggblock eller stänger av sitt system utan att stänga byggblocket. Därför förblir byggblocket utcheckat och ingen annan användare kan öppna det. I en sådan situation kan en administratör för ekonomisk rapportering använda dialogrutan **Utcheckade artiklar** för att checka in byggblock som en användare har lämnat i utcheckad. **Obs!** Du måste ha rollen administratör för att checka in byggblock med hjälp av dialogrutan **Utcheckade artiklar**.
+När du öppnar ett byggblock kan andra användare bara komma åt byggblocket i skrivskyddat läge. Ibland kan en användare glömma att stänga ett byggblock eller stänger av sitt system utan att stänga byggblocket. Därför förblir byggblocket utcheckat och ingen annan användare kan öppna det. I dessa situationer kan en ekonomisk rapporteringsadministratör använda dialogrutan **Utcheckade artiklar** för att checka in byggblock som användare kvarlämnat som utcheckade. **Obs:** Du måste inneha rollen som administratör för att checka in byggblock via dialogrutan **Utcheckade artiklar**.
 1.  I Report Designer på menyn **Verktyg** klickar du på **Utcheckade artiklar**.
-2.  I dialogrutan **Utcheckade artiklar**, välj **Visa artiklar från alla användare**. Listan uppdateras för att visa alla byggblock som är utcheckade och de användare som har checkat ut dem.
+2.  Markera **Visa objekt från alla användare** i dialogrutan **Utcheckade objekt**. Listan uppdateras så att alla byggblock som är utcheckade och de användare som har checkat ut byggblocken visas.
 3.  Välj ett byggblock och klicka sedan på **Ångra utcheckningen**
 4.  Klicka på **Ja** för att check in byggblocket.
 

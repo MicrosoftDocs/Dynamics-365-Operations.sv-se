@@ -16,13 +16,13 @@ ms.assetid: 9680d977-43c8-47a7-966d-2280ba21402a
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: yuyus
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 387b804cb20ffdc17ad74dac5d927ecbaf421bae
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: fb5c39a65ea59acda05b0828f84bfaea4ad75062
 ms.contentlocale: sv-se
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -52,7 +52,7 @@ Microsoft Power BI-innegållet **Kostnadshantering** riktar sig till lagerreviso
 Den primära datakällan för CostAggregatedCostStatementEntryEntity är registret CostStatementCache. Det här registret hanteras av cacheramverket Datauppsättning. Registret uppdateras var 24: e timme som standard, men du kan aktivera manuella uppdateringar i cachkonfigurationen för data. Du kan sedan göra en manuell uppdatering i arbetsytan **Kostnadshantering** eller **Kostnadsanalys**. När uppdateringen av CostStatementCache har körts måste du uppdatera OData-anslutningen på Power BI.com för att visa uppdaterade data på webbplatsen. Avvikelseåtgärderna (inköp, produktion) i Power BI-innehållet gäller endast artiklar som bedömts av lagermetoden Standardkostnad. Produktionsavvikelsen beräknas som skillnaden mellan aktiv och verklig kostnad. Produktionsavvikelsen beräknas när produktionsordern har statusen **Avslutad**. Mer information om olika produktionsavvikelser och hur varje typ beräknas finns i [Analysera avvikelser för en avslutad tillverkningsorder](https://technet.microsoft.com/en-us/library/gg242850.aspx).
 
 ## <a name="accessing-the-power-bi-content"></a>Åtkomst till Power BI-innehåll
-Power Bi-innehållet **Kostnadshantering** är tillgängligt från PowerBI.com. Mer information om hur du ansluter och laddar dina Microsoft Dynamics 365 for Finance and Operations-data, se [Åtkomst till Power BI-innehåll från PowerBI.com](power-bi-home-page.md).
+Power BI-innehållet **Kostnadshantering** finns tillgängligt via PowerBI.com. Mer information om hur du ansluter och laddar dina Microsoft Dynamics 365 for Finance and Operations-data, se [Åtkomst till Power BI-innehåll från PowerBI.com](power-bi-home-page.md).
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mått som ingår i Power BI-innehållet
 Innehållet omfattar en uppsättning rapportsidor. Sidorna består av en uppsättning mått som visualiseras som diagram, brickor och tabeller. Följande register ger en översikt över de visuella effekterna i Power BI-innehållet **Kostnadshantering**.

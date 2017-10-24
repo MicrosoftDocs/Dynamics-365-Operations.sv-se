@@ -1,7 +1,7 @@
 ---
 title: "Rörligt genomsnitt"
 description: 
-author: YuyuScheller
+author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -17,13 +17,13 @@ ms.assetid: dfd10099-8f7f-44b1-917e-df37c2fe8773
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: yuyus
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 0018f5df3d0d2882c300b6458bfb8adfba84e2ad
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: afc8f4922810983a6582558f0577a05aa21cbdbb
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -35,7 +35,7 @@ ms.lasthandoff: 05/25/2017
 Följande är förutsättningar när du använder rörligt genomsnitt för kostnad som en kostnadsredovisningsmetod.
 1.  På sidan **Artikelmodellgrupper** ställer du in en artikelmodellgrupp som har valts i fältet rörligt genomsnitt i fältet **Lagermodell**. **Obs!** Som standard när rörligt genomsnitt väljs, väljs också fälten **Bokför fysiskt lager** och **Bokför ekonomiskt lager**. 
 
-2.  På sidna **Bokföring** tilldelar du konton till kontona **Prisdifferens för rörligt genomsnitt** och **Kostnadsomvärdering för rörligt genomsnitt** på sidan **Lager** . Du använder kontot **Prisdifferens för rörligt genomsnitt** när kostnader måste vara proportionella till utgifter. Detta inträffar på grund av en skillnad mellan en kostnad i inköpsinleverans och inköpsfakturan och på grund av en skillnad mellan den ursprungliga lagerkvantitet och kvantiteten för aktuell lagerbehållning. Använd kontot **Kostnadsomvärdering för rörligt genomsnitt** när du vill justera kostnaden för rörligt genomsnitt för en produkt till ett nytt enhetspris.
+2.  På sidan **Bokföring** tilldelar du konton till kontona **Prisskillnad för glidande medelvärde** och **Kostnadsomberäkning för glidande medelvärde** på fliken **Lager**. Du använder kontot **Prisskillnad för glidande medelvärde** när kostnader ska kostnadsföras proportionerligt. Detta inträffar på grund av en skillnad mellan en kostnad i inköpsinleverans och inköpsfakturan och på grund av en skillnad mellan den ursprungliga lagerkvantitet och kvantiteten för aktuell lagerbehållning. Använd kontot **Kostnadsomvärdering för rörligt genomsnitt** när du vill justera kostnaden för rörligt genomsnitt för en produkt till ett nytt enhetspris.
 3.  På sidan **Frisläppta produkter** tilldelar du artikelmodellgruppen för rörligt genomsnitt till produkten. **Obs:** Lagerslutprocessen stänger bara redovisningsperioden. Den påverkar inte produkter som har rörligt genomsnitt tilldelat dem som en artikelmodellgrupp.
 
 ## <a name="convert-to-the-moving-average-costing-method"></a>Konvertera till kostnadsredovisningmetoden för rörligt genomsnitt

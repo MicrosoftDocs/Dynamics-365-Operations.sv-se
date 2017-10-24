@@ -16,13 +16,13 @@ ms.custom: 57592
 ms.assetid: 747faa47-9a23-4277-bc11-8d0a1267c3a4
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 2016-05-31T00:00:00.000Z
+ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 331f3480b8454dac7da12be169ba017f36cefa06
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 4708ff4427fe507fee7e1ce1ca226289ddf648cc
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -33,13 +33,13 @@ ms.lasthandoff: 05/25/2017
 
 Den här artikeln innehåller information om rapportdefinitioner. En rapportträdsdefinition är en rapportkomponent eller ett byggblock som bidrar till att definiera strukturen och hierarkin i din organisation.
 
-Ekonomisk rapportering stöder flexibel rapportering så att du enkelt kan göra ändringar allt eftersom din verksamhetsstruktur ändras. Rapporter är uppbyggda av olika komponenter eller byggblock. Ett av de här byggblocken är en rapportträddefinition. En rapportträddefinition hjälper till att definiera din organisations struktur och hierarki. Det är en korsdimensionell hierarkisk struktur som baseras på de dimensionella relationerna i ekonomiska data. Den innehåller information på rapporteringsenhetsnivå och sammanfattningsnivå för alla enheter i trädet. Rapportträddefinitioner kan kombineras med kolumndefinitioner och rapportdefinitioner om du vill skapa en byggblocksgrupp som kan användas för flera företag. En rapportenhet används för varje ruta i ett organisationsschema. En rapportenhet kan vara en enskild avdelning från ekonomiska data, eller så kan det vara en summeringsenhet på hög nivå som kombinerar information från andra rapportenheter. För en rapportdefinition som innehåller ett rapportträd genereras en rapport för varje rapportenhet och för sammanfattningsnivån. Alla dessa rapporter använder rad- och kolumndefinitionerna som anges i rapportdefinitionen såvida inte rapportdefinitionen anger att rapportträdet från raddefinitionen ska användas. Rad- och kolumndefinitioner är viktiga komponenter i designen och funktioner för ekonomiska rapporter. Rapportträd ökar kraften och stöder komponenterna för flexibel rapportering allt eftersom verksamhetsstrukturen ändras. Ekonomiska rapporter som inte baseras på ett rapportträd använder bara några av de funktioner som finns för ekonomisk rapportering. Du kan använda flera rapportträddefinitioner tillsammans med samma rad- och kolumndefinitioner för att visa dina företagsuppgifter på olika sätt.
+Ekonomisk rapportering stöder flexibel rapportering så att du enkelt kan göra ändringar allt eftersom din verksamhetsstruktur ändras. Rapporter är uppbyggda av olika komponenter eller byggblock. Ett av de här byggblocken är en rapportträddefinition. En rapportträddefinition hjälper till att definiera din organisations struktur och hierarki. Det är en korsdimensionell hierarkisk struktur som baseras på de dimensionella relationerna i ekonomiska data. Den innehåller information på rapporteringsenhetsnivå och sammanfattningsnivå för alla enheter i trädet. Rapportträddefinitioner kan kombineras med kolumndefinitioner och rapportdefinitioner om du vill skapa en byggblocksgrupp som kan användas för flera företag. En rapportenhet används för varje ruta i ett organisationsschema. En rapportenhet kan vara en enskild avdelning från dina ekonomiska data eller så kan det vara en summeringsenhet på en högre nivå som kombinerar information från andra rapportenheter. För en rapportdefinition som innehåller ett rapportträd genereras en rapport för varje rapportenhet och för sammanfattningsnivån. Alla dessa rapporter använder rad- och kolumndefinitionerna som anges i rapportdefinitionen såvida inte rapportdefinitionen anger att rapportträdet från raddefinitionen ska användas. Rad- och kolumndefinitioner är viktiga komponenter i designen och funktioner för ekonomiska rapporter. Rapportträd ökar kraften och stöder komponenterna för flexibel rapportering allt eftersom verksamhetsstrukturen ändras. Ekonomiska rapporter som inte baseras på ett rapportträd använder bara några av de funktioner som finns för ekonomisk rapportering. Du kan använda flera rapportträddefinitioner tillsammans med samma rad- och kolumndefinitioner för att visa dina företagsuppgifter på olika sätt.
 
 ## <a name="reporting-tree-best-practices"></a>Regelverk för rapportträd
 Innan du skapar ett rapportträd ska du tänka på följande regelverk:
 
 -   Bestäm först vilka rapporteringsdimensioner som din juridiska person eller företag behöver.
--   Beakta hur du har ställt in din struktur och utforma sedan ett organisationsschema för ditt företag. Organisationsschemat kommer att hjälpa dig att visualisera hur du grupperar rapportenheterna till ett eller flera rapportträd.
+-   Beakta hur du har ställt in din struktur och utforma sedan ett organisationsschema för ditt företag. Organisationsschemat underlättar när du ska visualisera grupperingen av rapportenheterna i ett eller flera rapportträd.
 -   Starta med den lägsta tillgängliga detaljnivån, till exempel avdelningar och projekt som definieras i ekonomiska data. Lägg till så många rutor på detaljnivån som krävs för att visa avdelningar eller regioner på hög nivå. Varje ruta motsvarar en potentiell rapportenhet i något rapportträd som du skapar.
 -   Du måste också beakta det bästa sättet att bygga upp dina träd på. Du kan använda en automatiserad byggprocess för att skapa ett rapportträd eller så kan du skapa det manuellt. Det är viktigt att förstå båda metoderna innan du utformar dina träd.
 -   Du kan använda rapportenheterna som definieras i ditt ekonomiska datasystem om du vill lägga till rapportenheter till rapportträddefinitionen.
@@ -52,13 +52,13 @@ En rapportträddefinition innehåller de kolumner som beskrivs i följande tabel
 
 | Rapportträdkolumn | beskrivning|
 |---|---|
-| Företag               | Företagsnamn för rapportenheten. Värdet **@ANY**, som normalt bara tilldelas sammanfattningsnivån aktiverar rapportträdet som ska användas för alla företag. Alla underordnade förgreningar har ett företag som tilldelats dem.|
+| Företag               | Företagsnamn för rapportenheten. Värdet **@ANY**, som normalt bara tilldelas sammanfattningsnivån aktiverar rapportträdet som ska användas för alla företag. Alla underordnade grenar har ett tilldelat företag.|
 | Enhetsnamn             | Den kod som identifierar den här rapportenheten i det grafiska rapportträdet. Se till att upprätta ett unikt kodsystem som är konsekvent och som är enkelt för användarna att förstå. |
 | Enhetsbeskrivning      | Rapportenhetsrubriken visas i rapportens sidhuvudet eller sidfoten om du anger **UnitDesc** som kod i fliken **Sidhuvud och Sidfot** på rapportdefinitionen. Rubriken visas i rapportradbeskrivningen om du anger **UnitDesc** i cellen **Beskrivning** på raddefinitionen .|
 | Dimensioner            | En rapportenhet om du vill ställa ut information direkt från ekonomiska data. Den definierar den logiska placeringen och längderna för kontot och de relaterade segmenten. Varje rapportenhetsrad måste ha en dimension i den här kolumnen. Du kan också placera en dimension på en rad för en summeringsenhet (till exempel för utgifter som är direkt kopplade till enheten). Om du anger en dimension på en rad för en summeringsenhet ska konton som används i överordnade enheter inte användas i underordnade. I annat fall kan belopp dubbleras.|
-| Raddefinitioner       | Namnet på raddefinitionen för rapportenheten. Samma raddefinition används för varje enhet av rapportträdet. När du genererar en rapport används raddefinitionen för varje rapportenhet. Raddefinitionen kan innehålla flera länkar för ekonomiska dimensioner. Om en raddefinition har angetts i rapportträdet väljer du kryssrutan **Använd raddefinition från rapporteringsträd** på fliken **Rapport** i rapportdefinitionen.|
-| Radlänk              | Radlänken som ska användas för rapportenheten. Radlänkar definieras för att raddefinitionen ska kunna identifiera ekonomiska dimensioner som du vill länka till.|
-| Extern länk         | Radlänken som ska användas för denna rapportenheten. Radlänkar definieras för att raddefinitionen ska kunna identifiera den rapport du vill länka till.|
+| Raddefinitioner       | Namnet på raddefinitionen för rapportenheten. Samma på raddefinition används för alla enheter i rapportträdet. När du genererar en rapport används den här raddefinitionen för alla rapportenheter. Raddefinitionen kan innehålla flera ekonomiska dimensionslänkar. Om en raddefinition är specificerad i rapportträdet markerar du kryssrutan **Använd raddefinition från rapportträd** på fliken **Rapport** i rapportdefinitionen.|
+| Radlänk              | Radlänken som ska användas för rapportenheten. Radlänkar definieras för raddefinitionen för att identifiera vilka ekonomiska dimensioner som ska länkas till.|
+| Extern länk         | Radlänken som ska användas för den här rapportenheten. Radlänkar definieras för att raddefinitionen ska kunna identifiera den rapport du vill länka till.|
 | Extern fil         | Sökvägen till kalkylbladet för den ekonomiska rapporten som data hämtas från.|
 | Sidalternativ          | Den här kolumnen styr om detaljer för rapportenheten ska ignoreras när rapporten visas eller skrivs ut.|
 | Samlad uppdatering för %              | Den procentandel av rapportenheten som ska tilldelas till den överordnade enheten. Den procentandel som du anger i den här kolumnen gäller för varje rad i raddefinitionen innan värdet i raden läggs till den överordnade rapporten. Om till exempel en underordnad enhet ska fördelas jämnt mellan två avdelningar multipliceras beloppet på varje rad med 50 procent innan det läggs till i avdelningsrapporten. En rapportenhet kan inte ha två överordnade enheter. om du vill fördela beloppen från en rapportenhet till två överordnade enheter ska du skapa en annan rapportenhet med samma dimension för att samla de ytterligare 50 procenten. Ange hela procenttalet utan decimaltecken. **25** exempelvis representerar 25 procent allokering till den överordnade enheten. Om du inkluderar ett decimaltecken (**,25**) allokeras 0,25 procent till den överordnade enheten. Om du vill använda en procentsats som är mindre än 1 procent ska du använda alternativet **Tillåt samlad uppdatering &lt;1%** i rapportdefinitionen. Detta alternativ är på fliken **Ytterligare alternativ** i dialogrutan **Rapportinställningar**. Du kommer åt den här dialogrutan från knappen **Övrigt** på fliken **Inställningar** i rapportdefinitionen. |
@@ -138,8 +138,8 @@ En extra textpost är en statisk textsträng på upp till 255 tecken som lägger
 
 ### <a name="remove-additional-text-from-a-reporting-unit"></a>Ta bort ytterligare text från en rapportenhet
 
-1.  Öppna rapportträddefinitionen i Report Designer för att ändra den.
-2.  Dubbelklicka på cellen **Mer text** på raden för rapportenheten.
+1.  Öppna den rapportträdsdefinition som ska ändras i Report Designer.
+2.  Dubbelklicka på cellen **Tilläggstext** för rapportenhetens rad.
 3.  I dialogrutan **Mer text** kan du välja en post du vill ta bort och sedan klicka på **Rensa**. Du kan också högerklicka på posten och välj sedan **Klipp ut**.
 4.  Klicka på **OK**.
 
@@ -148,7 +148,7 @@ En extra textpost är en statisk textsträng på upp till 255 tecken som lägger
 Du kan förhindra vissa användare och grupper från åtkomst till en rapportenhet. Det går även att definiera begränsningar så att de gäller för rapportenheter som är underordnade andra rapportenheter.
 
 1.  Öppna rapportträddefinitionen i Report Designer för att ändra den.
-2.  Dubbelklicka på cellen **Enhetssäkerhet** som rapportenhetsraden ska begränsa åtkomst till.
+2.  Dubbelklicka på cellen **Enhetssäkerhet** för den rapportenhetsrad som du vill begränsa åtkomsten till.
 3.  I dialogrutan **Användare och grupper** klickar du på **Enhetssäkerhet**.
 4.  Markera de användare eller grupper som ska ha åtkomst till rapportenheten och klicka sedan på **OK**.
 5.  Markera kryssrutan **Lägg till säkerhet för underordnad rapportenhet** om du vill begränsa åtkomsten till underordnade rapportenheter.

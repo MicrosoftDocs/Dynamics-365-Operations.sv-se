@@ -19,10 +19,10 @@ ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 5230911e1febc66b294f1331846373a472789adf
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
 ms.openlocfilehash: dbc80ff756a5286a98489f1f1403959d9b18ebe6
 ms.contentlocale: sv-se
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -63,7 +63,7 @@ Explicita anpassningar är de anpassningar som du uttryckligen utför med avsikt
 
 Anpassa ett elements egenskaper på din sida på detta sätt om du bara vill ändra elementets etikett, dölja element så att det inte visas på sidan (detta ändrar inte några uppgifter, det visar helt enkelt ingen information för dig), inkludera informationen i snabbflikens sammanfattningsavsnitt (om elementet är i en snabbflik), hoppa över det här fältet om du gör fel eller gör det så att data inte kan ändras genom att markera det som "redigera inte". 
 
-När du vill flytta eller dölja delar eller göra flera ändringar, kan du med hjälp av anpassningsfönstret toolbar, tillgänglig från elementen egenskapsfönstret genom att välja **anpassa formuläret**. Personalisering toolbar finnas dessutom tillgängligt på blanketten rutan åtgärd, enligt anpassa grupp på **fliken Alternativ** . Välj **anpassa denna blankett,** och du skar ser anpassningen verktygsfältet. 
+När du vill flytta eller dölja delar eller göra flera ändringar, kan du med hjälp av anpassningsfönstret toolbar, tillgänglig från elementen egenskapsfönstret genom att välja **anpassa formuläret**. Verktygsfältet för personlig anpassning finns även att tillgå via formulärets åtgärdsfönster, under gruppen Anpassa på fliken **Alternativ**. Välj **Anpassa detta formulär** för att visa verktygsfältet Anpassa. 
 
 [![Verktygsfältet Anpassning](./media/personalization-personalizationtoolbar.jpg)](./media/personalization-personalizationtoolbar.jpg)
 
@@ -90,7 +90,7 @@ Välj **Stäng** för att stänga verktygsfältet och återgå till det tidigare
 Med anpassning toolbar, spara är implicit. Din anpassningsalternativ träder i kraft omedelbart när du gör dem och det finns inget behov av att klicka på **knappen Save** . I vissa fall visas en hänglåsikon bredvid ett element när du väljer ett verktyg. Detta innebär att du inte kan ändra egenskaperna som hör till det valda verktyget om sidan ska fungera korrekt. När det gäller anpassning toolbar finnas öppnat, sidan blir icke-interaktivt. Du kan inte ange data eller expandera eller komprimera sektioner.
 
 ## <a name="explicit-personalization-adding-a-tile-or-list-to-a-workspace"></a>Explicit anpassning: Lägga till en panel eller lista i en arbetsyta
-Några sidor med listor kommer att ha ytterligare en anpassningsfunktion som finns inom dess rutan åtgärd, enligt anpassa grupp på fliken Alternativ. Välj **Lägg till arbetsytan för** att öppna listrutan som ger dig möjlighet att visa informationen i den aktuella listan (filtered och sorterat eller standard) på en arbetsyta som en lista eller en sammanfattning panel (som kan användas för att visa antal objekt i listan). 
+En del sidor med listor har ytterligare anpassningsfunktioner i sitt åtgärdsfönster, under gruppen Anpassa. Välj **Lägg till i arbetsyta** för att öppna listrutan som ger dig möjlighet att visa informationen i aktuell lista (filtrerad och sorterad, eller standard) på en arbetsyta som en lista eller sammanfattningspanel (som kan användas för att visa antalet artiklar i listan). 
 
 [![Lägg till på arbetsyta](./media/personalization-addtoworkspace.png)](./media/personalization-addtoworkspace.png) 
 

@@ -17,12 +17,11 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 2dffb2634701210852b4b146a762434cf6df07e3
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 9c0ae4ed27578301573bead17ff2175bb9042036
 ms.contentlocale: sv-se
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -131,7 +130,7 @@ Du kan ändra prognosbefattningar antingen att tillämpa och ändringar för bud
 
 ### <a name="modifying-forecast-positions"></a>Ändra prognosbefattningar
 
-Ändringar som görs för att beräkna befattningar begränsas till de prognosbefattningar. Ändringarna påverkar inte befattningposterna i Personal. De flesta ändringar begränsas också till prognosbefattningen som redigeras. Med andra ord budgeterar ändringarna är specifika för det budgeterade och planeringsprocessen planscenariot som betalas ut. Undantagen är ändringar av fält som delas mellan processer för befattningen och situationer. Dessa fält innehåller fält på fliken **Allmänt** och fliken **Ekonomisk dimension**. När dessa fält ändras, gäller de nya värden till för planering budget för befattningen i alla scenarierna. Därför dessa fält kan du snabbt uppdatera alla versioner.
+Ändringar som görs för att beräkna befattningar begränsas till de prognosbefattningar. Ändringarna påverkar inte befattningposterna i Personal. De flesta ändringar begränsas också till prognosbefattningen som redigeras. Med andra ord budgeterar ändringarna är specifika för det budgeterade och planeringsprocessen planscenariot som betalas ut. Undantagen är ändringar av fält som delas mellan processer för befattningen och situationer. Dessa fält inkluderar fälten i fliken **Allmänt** och fliken **Ekonomiska dimensioner**. När dessa fält ändras gäller de nya värdena för positionen i samtliga scenarier för budgetplaneringsprocessen. Därför dessa fält kan du snabbt uppdatera alla versioner.
 
 #### <a name="budget-cost-elements"></a>Budgetkostnadselement
 

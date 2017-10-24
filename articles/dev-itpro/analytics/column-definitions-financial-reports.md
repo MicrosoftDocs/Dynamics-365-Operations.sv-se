@@ -16,13 +16,13 @@ ms.custom: 106601
 ms.assetid: 66e72a48-edab-4e9d-815f-596a1623c258
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 770a1681e4fa9974b081d0c63a10eb1961f13014
-ms.openlocfilehash: d976988a599f65de9957c53a2d149576a1a11d83
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 924177f4974358d2283dfd46306d663c27ccd87b
 ms.contentlocale: sv-se
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -49,19 +49,19 @@ En kolumndefinition kan innehålla två till 255 kolumner.
 1.  I Report Designer, i navigeringsfönstret klickar du på **Kolumndefinitioner**.
 2.  Dubbelklicka på en kolumndefinition för att öppna den.
 
-### <a name="add-a-column-to-a-column-definition"></a>Lägg till en kolumn i en kolumndefinition
+### <a name="add-a-column-to-a-column-definition"></a>Lägga till en kolumn i en kolumndefinition
 
 1.  I Rapportdesignern, klicka på **Kolumnddefinitioner** och öppna kolumndefinitionen för att ändra.
 2.  Markera kolumnen där en ny kolumn ska infogas.
-3.  I menyn **Redigera**, klicka på **Infoga kolumn**. Den nya kolumnen visas till vänster om kolumnen som du har valt.
+3.  I menyn **Redigera**, klicka på **Infoga kolumn**. Den nya kolumnen visas till vänster om den kolumn som du markerade.
 
-### <a name="delete-a-column-from-a-column-definition"></a>Ta bort en kolumn från en kolumndefinition
+### <a name="delete-a-column-from-a-column-definition"></a>Ta bort en kolumn ur en kolumndefinition
 
-1.  I Rapportdesignern, klicka på **Kolumnddefinitioner** och öppna kolumndefinitionen för att ändra.
-2.  Markera en kolumn som du vill ta bort.
-3.  I menyn **Redigera**, klicka på **Ta bort kolumn**.
+1.  Klicka på **Kolumndefinitioner** i Report Designer och öppna sedan den kolumndefinition som du vill ändra.
+2.  Markera kolumnen som du vill ta bort.
+3.  Klicka på **Ta bort kolumn** på **Redigera**-menyn.
 
-## <a name="contents-of-a-column-definition"></a>Innehåll i en kolumndefinition
+## <a name="contents-of-a-column-definition"></a>Innehållet i en kolumndefinition
 En kolumndefinition omfattar följande information:
 
 -   En kolumn för beskrivningar av raddefinitionen
@@ -71,7 +71,7 @@ En kolumndefinition omfattar följande information:
 
 Den här informationen visas i följande områden i kolumndefinitionen:
 
--   Kolumndefinitionens huvudområde innehåller den rubriktext och formatering som visas i rapporten. En rubrik kan gälla för en enskild datakolumn, sträcka sig över flera kolumner eller användas på kolumner på villkorsbasis. Kolumndefinitionen kan innehålla så många kolumnrubrikrader som du behöver. **Obs!** Kolumnrubriker gäller för varje datakolumn i rapporten. Rapportrubriker gäller för hela rapporten. Du definierar rapportrubriker på fliken **Sidhuvud och sidfot** i rapportdefinitionen.
+-   Kolumndefinitionens huvudområde innehåller den rubriktext och formatering som visas i rapporten. En rubrik kan gälla en enstaka kolumn med data, sträcka sig över flera kolumner eller användas enligt villkorsstyrning. Du kan ange valfritt antal kolumnrubriksrader i kolumndefinitionen. **Obs!** Kolumnrubriker gäller för varje datakolumn i rapporten. Rapportrubriker gäller för hela rapporten. Du definierar rapportrubriker på fliken **Sidhuvud och sidfot** i rapportdefinitionen.
 -   Kolumndetaljrader är raderna under rubrikraderna i kolumndefinitionen. Kolumndetaljrader definierar informationen som inkluderas i rapporten. Följande tabeller listar och beskriver kolumndetaljraderna.
 
     | Namn på kolumndetaljrad                                                | Beskrivning                                                                                            |
@@ -102,7 +102,7 @@ Cellen **Kolumnbegränsningar** kan inkludera koder som begränsar eller döljer
 2.  Dubbelklicka på cellen **Kolumnbegränsningar** för att begränsa.
 3.  I dialogrutan **Kolumnbegränsningar** markera en eller flera koder i listan och klicka på **OK**.
 
-### <a name="column-restriction-codes"></a>Kolumnbegränsningskoder
+### <a name="column-restriction-codes"></a>Koder för kolumnbegränsning
 
 Följande register beskriver kolumnbegränsningskoderna.
 
@@ -182,7 +182,7 @@ Rapportutformaren kan skapa kolumnrubriker automatiskt baserat på autotextkoder
 
 ### <a name="create-a-conditional-spanning-header"></a>Skapa en villkorsstyrd omfattande rubrik
 
-Villkorsstyrda omfattande rubriker kan omfatta flera kolumner som baseras på specifika perioddatum. Om du till exempel har en budgetrapport för räkenskapsåret och vill visa de verkliga budgetarna för föregående månader tillsammans med de projekterade budgetarna för framtida månader, kan du använda en villkorsstyrd omfattande rubrik för att automatiskt uppdatera rapportrubriken. Var medveten om följande situationer när du skapar en villkorsstyrd omfattande rubrik:
+Villkorsstyrda omfattande rubriker kan omfatta flera kolumner som baseras på specifika perioddatum. Om du till exempel har en budgetrapport för räkenskapsåret och vill visa de verkliga budgetarna för föregående månader tillsammans med de projekterade budgetarna för framtida månader, kan du använda en villkorsstyrd omfattande rubrik för att automatiskt uppdatera rapportrubriken. Var uppmärksam på följande situationer när du skapar villkorsstyrda rubrikomfång:
 
 -   Alla stoppvillkor (fältet **Fördela till**) som matchas innan ett startvillkor (fältet **Fördela Från**) ignoreras. Till exempel kolumn B har det fördelade villkoret angivet som BASE+1 till BASE, BASE i kolumn C, och BASE+1 är i kolumn D. I detta fall ignoreras stoppvillkoret i kolumn C, och utskriften av rubriken startar i kolumn D.
 -   Om du anger kolumnrubriker som överlappar varandra, kommer de att överlappas när de skrivs ut i rapporten. Rapporten genereras, men följande varning visas i fältet **Rapportköstatus**: ""Kolumnrubriker som använder bas (Base) överlappar andra kolumnrubriker och medföra överlappande text." Exempelvis är rubrikdefinitionen i kolumn B lika med B till BASE +1, och rubrikdefinitionen för kolumn D är BASE +1 till F. I det här fallet skrivs rubrikerna ovanpå varandra och är oläsliga. Så snart BAS används i definitionen **Fördela från/fördela till** ska du se till att visa rapporten som skapas, för att se om rubrikerna överlappas.
@@ -209,7 +209,7 @@ Phyllis skapar en rapport för en dynamisk sexmånadersprognos. Hon vill att ord
 | Rubrik 2            |      | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong | @CalMonthLong |
 | Rubrik 3            |      |               |               |               |               |               |               |               |               |               |               |               |               |
 | Kolumntyp         | DESC | FD            | FD            | FD            | FD            | FD            | FD            | FD            | FD            | FD            | FD            | FD            | FD            |
-| Bokkod/attribut |      | AKTUELL        | BUDGET2012    | AKTUELL        | BUDGET2012    | AKTUELL        | BUDGET2012    | AKTUELL        | BUDGET2012    | AKTUELL        | BUDGET2012    | AKTUELL        | BUDGET2012    |
+| Bokkod/attribut |      | Faktisk        | BUDGET2012    | Faktisk        | BUDGET2012    | Faktisk        | BUDGET2012    | Faktisk        | BUDGET2012    | Faktisk        | BUDGET2012    | Faktisk        | BUDGET2012    |
 | Räkenskapsår         |      | BAS          | BAS          | BAS          | BAS          | BAS          | BAS          | BAS          | BAS          | BAS          | BAS          | BAS          | BAS          |
 | Period              |      | 1             | 1             | 2             | 2             | 3             | 3             | 4             | 4             | 5             | 5             | 6             | 6             |
 | Täckta perioder     |      | PERIODISK      | PERIODISK      | PERIODISK      | PERIODISK      | PERIODISK      | PERIODISK      | PERIODISK      | PERIODISK      | PERIODISK      | PERIODISK      | PERIODISK      | PERIODISK      |
@@ -282,10 +282,10 @@ Cellen **Ytterligare blanksteg innan kolumn** anger bredden på avgränsaren mel
 
 Cellen **Åsidosätt format/valuta** anger formateringen av decimaltecken-, valuta- och procentsatsbeloppen i kolumnen. Denna formatering åsidosätter den eventuella formatering som anges i rapportdefinitionen eller systemets standardinställningar.
 
-#### <a name="assign-a-format-currency-override-to-a-report-column"></a>Tilldela en åsidosättning av format eller valuta till en rapportkolumn
+#### <a name="assign-a-format-currency-override-to-a-report-column"></a>Tilldela en format- eller valutaåsidosättning för en rapportkolumn
 
-1.  Öppna kolumndefinitionen för att ändra den i Report Designer.
-2.  Dubbelklicka på cellen **Åsidosätt format/valuta** i en beloppskolumn.
+1.  Öppna den kolumndefinition som ska ändras i Report Designer.
+2.  Dubbelklicka på cellen **Format-/valutaåsidosättning** i en beloppskolumn.
 3.  Välj formateringsalternativ i dialogrutan **Formatåsidosätt**.
 
 ### <a name="add-a-print-control-code"></a>Lägg till en utskriftskontrollkod
@@ -317,10 +317,10 @@ Cellen **Utskriftskontroll** kan innehålla koder som justerar visningen eller u
 
 #### <a name="add-print-control-codes-to-a-report-column"></a>Lägg till utskriftskontrollkoder till en rapportkolumn
 
-1.  Öppna kolumndefinitionen för att ändra den i Report Designer.
+1.  Öppna den kolumndefinition som ska ändras i Report Designer.
 2.  Dubbelklicka på cellen **Utskriftskontroll**.
 3.  I dialogrutan **Utskriftskontroll** väljer du en kod i listan **Välj alternativ för utskriftskontroll** . Håll ned CTRL-tangenten medan du väljer koderna om du vill välja mer än en kod.
-4.  Välj ett alternativ i fältet **Villkorsstyrda utskriftsalternativ**. **(ingen)** är markerad som standard. Du kan bara välja en villkorsstyrd utskriftskod åt gången
+4.  Välj ett alternativ i fältet **Villkorsstyrda utskriftsalternativ**. Förvalt alternativ är **(inga)**. Du kan bara välja en villkorsstyrd utskriftskod åt gången
 5.  Klicka på **OK**.
 
 > [!TIP]
@@ -349,9 +349,9 @@ Typen av information som varje kolumn i en rapport innehåller, anges av värdet
     <tbody>
     <tr class="odd">
     <td>FD</td>
-    <td>Visa ekonomiska data eller data från ett Excel-kalkylblad när du använder kolumnen <strong>Länk till ekonomiska dimensioner</strong> eler kolumnen <strong>Länk till kalkylblad</strong> i raddefinitionen. När du väljer kolumntypen <strong>FD</strong> anges standardinställningen automatiskt för följande rader: <ul>
-    <li><strong>Bokkod/attributkategori:</strong> ACTUAL</li>
-    <li><strong>Bokkod/attributkategori:</strong> ACTUAL</li>
+    <td>Visa ekonomiska data eller data från ett Excel-kalkylblad när du använder en kolumn av typen <strong>Länk till ekonomiska dimensioner</strong> eller en kolumn av typen <strong>Länk till kalkylblad</strong> i raddefinitionen. Om du väljer kolumntypen <strong>FD</strong> anges standardinställningarna automatiskt för följande rader: <ul>
+    <li><strong>Redovisningskod/attributkategori:</strong> ACTUAL</li>
+    <li><strong>Redovisningskod/attributkategori:</strong> ACTUAL</li>
     <li><strong>Räkenskapsår:</strong> BASE</li>
     <li><strong>Period:</strong> BASE</li>
     <li><strong>Täckta perioder:</strong> PERIODIC</li>
@@ -373,19 +373,19 @@ Du kan ändra dessa standardinställningar.</td>
     </tr>
     <tr class="odd">
     <td>ACCT (kontokoder)</td>
-    <td>Visa de ekonomiska datasegmentvärden eller dimensionsvärden som gäller för varje rad. För konto- och transaktiondetaljrapporter skrivs det helt kvalificerade kontot ut (t.ex. <strong>110140-070-0101</strong>). Om intervall har angetts i kolumnen <strong>Länk till ekonomiska dimensioner</strong> i en associerad raddefinition omges intervallet av hakparentes och behandlas som ett enskilt värde (t.ex. <strong>[110140:110700]-070-[0101:0200]</strong>). För ekonomiska rapporter och rapporter på hög nivå som är en kombination av flera konton, skrivs den ekonomiska datalänken ut från raddefinitionen (t.ex. <strong>1100:1200</strong>).</td>
+    <td>Visa de ekonomiska datasegmentvärden eller dimensionsvärden som gäller för varje rad. För konto- och transaktionsdetaljrapporter skrivs det fullständigt kvalificerade kontot ut (till exempel <strong>110140-070-0101</strong>). Om områden har angetts i kolumnen <strong>Länk till ekonomiska dimensioner</strong> i en associerad raddefinition anges området inom hakparenteser och behandlas som om det vore ett enda värde (till exempel <strong>[110140:110700]-070-[0101:0200]</strong>). För ekonomiska rapporter och för rapporter på hög nivå som kan vara en kombination av flera konton skrivs den ekonomiska datalänken från raddefinitionen ut (till exempel <strong>1100:1200</strong>).</td>
     </tr>
     <tr class="even">
     <td>FILL</td>
-    <td>Fyll cellen med ett tecken som du omger med enkla citationstecken. Om du inte anger ett tecken, är kolumnen tom. För att fylla en kolumn med en ellips (...) anger du till exempel <strong>FILL</strong> <strong>"."</strong>.</td>
+    <td>Fyll cellen med ett tecken som du omger med enkla citationstecken. Om du inte anger ett tecken, är kolumnen tom. För att uppfylla en kolumn med en ellips (...) anger du <strong>FILL</strong> <strong>'.'</strong>.</td>
     </tr>
     <tr class="odd">
     <td>SIDA</td>
-    <td>Infoga en lodrät sidbrytning i rapporten. Kolumnerna som är till höger om <strong>PAGE</strong> visas på olika sidor.</td>
+    <td>Infoga en lodrät sidbrytning i rapporten. Kolumnerna som ligger till höger om kolumnen <strong>PAGE</strong> visas på en annan sida.</td>
     </tr>
     <tr class="even">
     <td>WKS</td>
-    <td>Visa data som hämtas från ett Excel-kalkylblad. När du väljer kolumntypen <strong>WKS</strong> anges standardinställningen automatiskt för följande rader: <ul>
+    <td>Visa data som hämtas från ett Excel-kalkylblad. Om du väljer kolumntypen <strong>WKS</strong> anges standardinställningarna automatiskt för följande rader: <ul>
     <li><strong>Räkenskapsår:</strong> PERIODIC</li>
     <li><strong>Period:</strong> BASE</li>
     </ul>
@@ -393,7 +393,7 @@ Du kan ändra dessa standardinställningar.</td>
     </tr>
     <tr class="odd">
     <td>ATTR</td>
-    <td>Om ditt redovisningssystem stöder attribut visas ett konto- eller transaktionsattribut i kolumnen. Ett attribut som ska användas för ett enkelt fulständigt konto, hämtar underliggande konto eller transaktionsinformation från ekonomiska data. Attributen på kontonivå visar data från kontot, och attributen på transaktionsnivå visar data som uppstått vid den tidpunkt då transaktionen bokfördes. Om du väljer <strong>ATTR</strong> som kolumntyp, ange då attributkategorin i detaljraden <strong>Redovisningskod/Attributkategori</strong> för kolumndefinitionen.</td>
+    <td>Om ditt redovisningssystem stöder attribut visas ett konto- eller transaktionsattribut i kolumnen. Ett attribut som ska användas för ett enkelt fulständigt konto, hämtar underliggande konto eller transaktionsinformation från ekonomiska data. Attributen på kontonivå visar data från attributen på konto- och transaktionsnivå som inföll då transaktionen gjordes. Om du väljer <strong>ATTR</strong> som kolumntyp ska du ange attributkategorin på kolumndefinitionens detaljrad <strong>Redovisningskod/attributkategori</strong>.</td>
     </tr>
     </tbody>
     </table>
@@ -435,9 +435,9 @@ Cellen **Period** identifierar de räkenskapperioder som kolumnen ska inkludera.
 
 Du kan gå bakom räkenskapsårets begränsningar i någon av periodspecifikationerna, och du kan blanda år i ett periodintervall. Till exempel anger du perioderna som **BASE-5** (som föregående sex perioder) och kör en rapport med basperiod 2. I det här fallet visar rapporten data för de första två perioderna under angivet räkenskapsår och de sista fyra perioderna under föregående räkenskapsår.
 
-### <a name="specify-the-periods-for-an-fd-column"></a>Ange perioderna för en FD-kolumn
+### <a name="specify-the-periods-for-an-fd-column"></a>Ange perioderna för en FD-kolumn.
 
-1.  Öppna kolumndefinitionen för att ändra den i Report Designer.
+1.  Öppna den kolumndefinition som ska ändras i Report Designer.
 2.  I en **FD**-kolumn, dubbelklicka på raden och välj **Period** och välj sedan ett alternativ i listan.
 3.  Fyll i formeln i formelfältet ovanför navigeringsfönstret eller i cellen **Period**. Byt ut valfritt nummertecken (\#) mot lämpligt värde.
 
@@ -465,7 +465,7 @@ Attribut är ekonomiska datavärden som ytterligare definierar ett konto eller e
 
 1.  Öppna kolumndefinitionen för att ändra den i Report Designer.
 2.  Dubbelklicka på cellen **Attributfilter** för en **FD**-kolumn.
-3.  I dialogrutan **Attributfilter**, dubbelklicka på en cell i kolumnen och välj sedan kolumnen **Attribut** och välj sedan filtertypen.
+3.  Dubbelklicka på en cell i kolumnen **Attribut** i dialogrutan **Attributfilter** och välj sedan filtertyp.
 4.  Ange ett intervall i kolumnerna **Från** och **Till** för att ytterligare begränsa resultaten. Cellen **Från** måste innehålla ett värde.
 5.  Klicka på **OK**.
 
@@ -476,7 +476,7 @@ Följande exempel visar en del av en kolumnbeskrivning som har ett kontoattribut
 |                              | A    | G                    |
 |------------------------------|------|----------------------|
 | Kolumntyp                  | DESC | FD                   |
-| Bokkod/attributkategori |      | AKTUELL               |
+| Redovisningskod/attributkategori |      | Faktisk               |
 | Räkenskapsår                  |      | BASE                 |
 | Period                       |      | 1:BASE               |
 | Täckta perioder              |      | PERIODISK             |
@@ -487,7 +487,7 @@ Följande exempel visar en del av en kolumnbeskrivning som har ett kontoattribut
 
 ### <a name="dimension-filter-in-a-column-definition"></a>Dimensionsfilter i en kolumndefinition
 
-Ett dimensionsfilter används för att begränsa **FD**-kolumnen till specifika dimensionsvärden. Filtret kan innehålla en enda dimension, ett intervall av dimensioner eller en grupp av dimensioner. Filtret kan också inkludera dimensionsvärdeuppsättningar. Eftersom dimensionsvärden kan variera, måste ett inte ...\ekonomiska-dimensioner\dimensionsbaserat system stämma överens med en exakt längd. Filtret används oavsett om rapporten omfattar ett rapportträd. Du kan använda ett jokertecken (\* eller ?) på valfri position. Om du anger flera konton anger ett komma mellan konton, som i följande exempel: + Konto =\[1200\], + Account =\[1100\], Avdelning =\[01? \] För att få alla avdelningar för ett visst konto måste du utesluta avdelningsdimensionen från dimensionsfiltret. Om till exempel båda av följande dimensionfilter hanteras på samma sätt:
+Ett dimensionsfilter används för att begränsa **FD**-kolumnen till specifika dimensionsvärden. Filtret kan innehålla en enda dimension, ett dimensionsintervall, eller en grupp med dimensioner. Filtret kan också inkludera dimensionsvärdeuppsättningar. Eftersom dimensionsvärden kan variera, måste ett inte ...\ekonomiska-dimensioner\dimensionsbaserat system stämma överens med en exakt längd. Filtret används oavsett om rapporten omfattar ett rapportträd. Du kan använda ett jokertecken (\* eller ?) på valfri position. Om du anger flera konton anger ett komma mellan konton, som i följande exempel: + Konto =\[1200\], + Account =\[1100\], Avdelning =\[01? \] För att få alla avdelningar för ett visst konto måste du utesluta avdelningsdimensionen från dimensionsfiltret. Om till exempel båda av följande dimensionfilter hanteras på samma sätt:
 
 -   +Konto=\[1100\],Avdelning
 -   +Konto=\[1100\]

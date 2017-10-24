@@ -1,7 +1,7 @@
 ---
 title: "Beräkningsgrupper för strukturlista"
 description: "Den här artikeln innehåller information om beräkningsgrupper för strukturlistor och hur du ställer in dem. Om du vill köra en strukturlisteberäkning måste du antingen ställa in beräkningsgrupper och tilldela dem till enskilda artiklar eller ställa en standardberäkningsgrupp. Beräkningsinställningarna från beräkningsgruppen används sedan som standardvärden på sidan Strukturlisteberäkning när strukturlistan beräknas."
-author: YuyuScheller
+author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -17,13 +17,13 @@ ms.assetid: 63e1b7dc-c2c5-41b0-81ed-e3e02d1b39e0
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: yuyus
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 3372c22d6ed90e7669f1335fdd3366b8e167ad27
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: c91f7ac3ded942afd5e359b59cee2ff58256622f
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -72,13 +72,21 @@ Kryssrutan **Stoppa nedbrytning** används för att ange när en tillverkad arti
 
 ### <a name="warnings"></a>Varningar
 
-På snabbfliken **Varningar** väljer du alternativ för eventuella varningsmeddelanden som användarna får när de gör strukturlisteberäkningar. Om du till exempel väljer kryssrutan **Ingen strukturlista** får användaren en varning om ingen aktiv strukturlisteversion hittas för en av komponenterna eller den överordnade artikeln som strukturlisteberäkningen ska köras för. Om du väljer kryssrutan **Inget flöde** får användaren en varning om ingen aktiv flödesversion hittas. Om du använder resurser på dina flöden och åtgärder kan du instruera systemet att leta efter de resurserna. Om en resurs sedan inte hittas på varje rad i det aktiva flödet får användaren en varning. Du kan också verifiera och leta efter förbrukning. Förbrukningen är kvantiteten i ett visst flöde. Vanligtvis representerar den tidsåtgången för att utföra en viss åtgärd för en produktionsprocess. Du kan kontrollera om en artikel inte har någon självkostnad. Om det inte finns någon aktiv självkostnad för en artikel läggs ingen kostnad till i strukturlisteberäkningen. Du kan också kontrollera och verifiera självkostnadens ålder. Ange till exempel **60** för att indikera att självkostnaden per enhet måste omvalideras efter 60 dagar. Om den här gränsen nås genereras en varning. Till exempel angavs självkostnaden för en artikel i januari i år. Om det nu är augusti, vilket är mer än 60 dagar efter att självkostnaden angavs, får användaren en varning när en strukturlisteberäkning körs. Du kan ange en procentsats i fältet **Lägsta täckningsbidrag**. Det här värdet anger den punkt vid vilken det lägsta täckningsbidraget inte är uppfyllt. Om täckningsbidraget för en viss komponent inte uppfylls får användaren en varning. Det här fältet kan därför garantera att du inte underskrider kostnaderna och de extra transportkostnaderna som kan krävas för artiklarna.
-Standardinställningar för Parametrar för hantering av lager och lagerstyrning
---------------------------------------------------------------
+På snabbfliken **Varningar** väljer du alternativ för eventuella varningsmeddelanden som användarna får när de gör strukturlisteberäkningar. 
 
-Eftersom beräkningsgrupper krävs för att göra beräkningar måste du ställa in en standardberäkningsgrupp i Parametrar för lagerhantering. Den här inställningen gör att företag kan ha en standardkostnadsgrupp och vinstinställning för alla artiklar. Om en viss artikel sedan har särskilda beräkningskrav kan användaren tilldela en annan beräkningsgrupp för den artikeln. Normalt sett anger du beräkningsgrupper för strukturlistekomponentartiklar i stället för strukturlisteartiklar. När varningsmeddelanden visas tillämpas dock beräkningsgrupper. En beräkningsgrupp som tilldelas artiklarna åsidosätter det standardvärde som har ställts in i Parametrar för lagerhantering. Du kan ställa in förvald parameter på **Kostnadshantering** &gt; **Policyinställningar för lagerredovisning** &gt; **Parametrar** &gt; **Lagerredovisning** &gt; **Beräkningsgrupp**. Genom att ställa in en standardkonfigurationsgrupp kan du även konfigurera varningsvillkor som användarna får under beräkningsprocessen för strukturlistan om de markerade komponenterna kan orsaka beräkningsfel.
-Visa varningsmeddelanden på sidan Slutförd
-------------------------------------------
+Om du till exempel väljer kryssrutan **Ingen strukturlista** får användaren en varning om ingen aktiv strukturlisteversion hittas för en av komponenterna eller den överordnade artikeln som strukturlisteberäkningen ska köras för. Om du väljer kryssrutan **Inget flöde** får användaren en varning om ingen aktiv flödesversion hittas. Om du använder resurser på dina flöden och åtgärder kan du instruera systemet att leta efter de resurserna. Om en resurs sedan inte hittas på varje rad i det aktiva flödet får användaren en varning. 
+
+Du kan också verifiera och leta efter förbrukning. Förbrukningen är kvantiteten i ett visst flöde. Vanligtvis representerar den tidsåtgången för att utföra en viss åtgärd för en produktionsprocess. Du kan kontrollera om en artikel inte har någon självkostnad. Om det inte finns någon aktiv självkostnad för en artikel läggs ingen kostnad till i strukturlisteberäkningen. 
+
+Du kan också kontrollera och verifiera självkostnadens ålder. Ange till exempel **60** för att indikera att självkostnaden per enhet måste omvalideras efter 60 dagar. Om den här gränsen nås genereras en varning. Till exempel angavs självkostnaden för en artikel i januari i år. Om det nu är augusti, vilket är mer än 60 dagar efter att självkostnaden angavs, får användaren en varning när en strukturlisteberäkning körs. Du kan ange en procentsats i fältet **Lägsta täckningsbidrag**. Det här värdet anger den punkt vid vilken det lägsta täckningsbidraget inte är uppfyllt. Om täckningsbidraget för en viss komponent inte uppfylls får användaren en varning. Det här fältet kan därför garantera att du inte underskrider kostnaderna och de extra transportkostnaderna som kan krävas för artiklarna.
+
+### <a name="default-setup-in-inventory-and-warehouse-management-parameters"></a>Standardinställningar för Parametrar för hantering av lager och lagerstyrning
+
+Eftersom beräkningsgrupper krävs för att göra beräkningar måste du ställa in en standardberäkningsgrupp i Parametrar för lagerhantering. Den här inställningen gör att företag kan ha en standardkostnadsgrupp och vinstinställning för alla artiklar. Om en viss artikel sedan har särskilda beräkningskrav kan användaren tilldela en annan beräkningsgrupp för den artikeln. Normalt sett anger du beräkningsgrupper för strukturlistekomponentartiklar i stället för strukturlisteartiklar. När varningsmeddelanden visas tillämpas dock beräkningsgrupper. En beräkningsgrupp som tilldelas artiklarna åsidosätter det standardvärde som har ställts in i Parametrar för lagerhantering. 
+
+Du kan ställa in förvald parameter på **Kostnadshantering** &gt; **Policyinställningar för lagerredovisning** &gt; **Parametrar** &gt; **Lagerredovisning** &gt; **Beräkningsgrupp**. Genom att ställa in en standardkonfigurationsgrupp kan du även konfigurera varningsvillkor som användarna får under beräkningsprocessen för strukturlistan om de markerade komponenterna kan orsaka beräkningsfel.
+
+### <a name="view-warning-messages-on-the-complete-page"></a>Visa varningsmeddelanden på sidan Slutförd
 
 En strukturlisteberäkning genererar varningsmeddelanden. Du kan visa varningar om en vald artikel. Skapa exempelvis en ny försäljningsorder för objektet D0001 i Försäljning och marknadsföring. Klicka sedan på försäljningsorderraden, gå till menyn **Uppdatera rad** och klicka på **Beräkna baserat på strukturlista/formel** för att visa beräkningsinformation och varningar. Du kan också visa resultat för strukturlisteberäkningen på sidan **Slutförd**. För varningsmeddelanden gäller enbart två varningsvillkor för tillverkade artiklar medan fyra varningsvillkor gäller för alla artiklar:
 -   Identifiera när en tillverkad artikel inte har någon aktiv strukturlista.

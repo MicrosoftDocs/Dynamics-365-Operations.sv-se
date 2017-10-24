@@ -19,11 +19,11 @@ ms.search.industry: Manufacturing
 ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 93646e37ee511d433097bb284fccc73c230aee32
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 6e55999dcbc1bb9e569f3ec2374f4efb95323fb8
 ms.contentlocale: sv-se
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -55,7 +55,7 @@ Värdet i fältet **Startdatum för statistisk baslinje prognos** - **Startdatum
 
 Fältet **Startdatum för prognosgrupp** - **Startdatum** kan också anges som ett datum som redan passerat. Med andra ord är det möjligt att generera en efterfrågan i det förflutna. Detta finnas användbart, därför att den låter användarna finjustera prognosen service parametrar så att den statistiska prognosen genererades tidigare matchar den faktiska historiska behov. Användarna kan sedan fortsätta använda dessa parameterinställningar för att generera en statistisk ursprungliga prognosen för framtiden. 
 
-Manuella justeringar som gjorts i tidigare behovsprognoser iterationer kan tillämpas automatiskt på den nya baslinjen prognos om **överföringen manuella justeringar till efterfrågan prognos** är markerad. Om kryssrutan är avmarkerad, manuella justeringar inte läggas till den ursprungliga prognosen – men de tas inte bort. Manuella justeringar av prognosen kan bara tas bort vid prognos importera tid, genom att rentvå **spara den manuella justeringar av baslinjen demand forecast** kryssruta. Manuella inställningar sparas på tillståndet. Om en användare gör manuella justeringar av prognosen men inte auktoriserar prognosen tillbaka till Finance and Operations, kommer ändringarna därför att försvinna. Mer information om manuell justeringar och hur de fungerar, se [Auktorisera justerad prognos](authorize-adjusted-forecast.md). 
+Manuella justeringar som gjorts i tidigare behovsprognoser iterationer kan tillämpas automatiskt på den nya baslinjen prognos om **överföringen manuella justeringar till efterfrågan prognos**är markerad. Om kryssrutan är avmarkerad, manuella justeringar inte läggas till den ursprungliga prognosen – men de tas inte bort. Manuella justeringar av prognosen kan bara tas bort vid prognos importera tid, genom att rentvå **spara den manuella justeringar av baslinjen demand forecast** kryssruta. Manuella inställningar sparas på tillståndet. Om en användare gör manuella justeringar av prognosen men inte auktoriserar prognosen tillbaka till Finance and Operations, kommer ändringarna därför att försvinna. Mer information om manuell justeringar och hur de fungerar, se [Auktorisera justerad prognos](authorize-adjusted-forecast.md). 
 
 En demand forecast generationen kan ha ett namn och kommentarer för att hjälpa användare att identifiera den prognos som har genererats. Dessa värden visas i prognosen generations historia om **statistisk utgångspunkt prognosen generations historia** sida. 
 

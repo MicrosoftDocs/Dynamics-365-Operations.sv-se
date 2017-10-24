@@ -19,11 +19,11 @@ ms.search.industry: Manufacturing
 ms.author: YuyuScheller
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
-ms.openlocfilehash: 74a3033ffbdba2efc6c5ecd6c55019898751a146
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 111ebf578e455408c5b6168e5a7af705f3624d78
 ms.contentlocale: sv-se
-ms.lasthandoff: 06/20/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -209,7 +209,7 @@ Du kan använda dataentiteten importerade statistiska mätningar för att import
 | Räkenskapsdatum | Dimensionsmedlem | Storlek | Identifierare för källa |
 |-----------------|------------------|-----------|-------------------|
 | 31-01-2017      | CC001            | 2,450.00  | Elektricitet       |
-| 31-01-2017      | CC002            | 4,100.00  | Elektricitet       |
+| 2017-01-31      | CC002            | 4,100.00  | Elektricitet       |
 | 31-01-2017      | CC003            | 15,000.00 | Elektricitet       |
 
 När källdata för statistiska mätningar har behandlats, skapas följande poster i kostnadsredovisning.
