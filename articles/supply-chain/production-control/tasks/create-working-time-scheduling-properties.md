@@ -17,30 +17,30 @@ ms.author: sorenand
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
 ms.openlocfilehash: eef5844ade45b0c7fdd38624d842c1a96efcd639
 ms.contentlocale: sv-se
-ms.lasthandoff: 08/29/2017
+ms.lasthandoff: 09/29/2017
 
 ---
-# <a name="create-working-time-scheduling-properties"></a><span data-ttu-id="91ce8-103">Skapa planeringsegenskaper för arbetstider</span><span class="sxs-lookup"><span data-stu-id="91ce8-103">Create working time scheduling properties</span></span>
+# <a name="create-working-time-scheduling-properties"></a><span data-ttu-id="c2b5e-103">Skapa planeringsegenskaper för arbetstider</span><span class="sxs-lookup"><span data-stu-id="c2b5e-103">Create working time scheduling properties</span></span>
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="91ce8-104">Planeringsegenskaper för arbetstider används när du kategoriserar arbetstidsintervall och definierar inställningar som operatörer måste ta med i beräkningen.</span><span class="sxs-lookup"><span data-stu-id="91ce8-104">Working time scheduling properties are used to categorize working time intervals and define the settings that operators must take into account.</span></span> <span data-ttu-id="91ce8-105">I proceduren visas definition av en planeringsegenskap för arbetstid och tillhörande egenskapsvärden.</span><span class="sxs-lookup"><span data-stu-id="91ce8-105">This procedure shows how to define a working time scheduling property and associated property values.</span></span> <span data-ttu-id="91ce8-106">Du kan gå igenom den här proceduren i demonstrationsdataföretaget USMF eller använda dina egna data.</span><span class="sxs-lookup"><span data-stu-id="91ce8-106">You can walk through this procedure in demo data company USMF, or using your own data.</span></span>
+<span data-ttu-id="c2b5e-104">Planeringsegenskaper för arbetstider används när du kategoriserar arbetstidsintervall och definierar inställningar som operatörer måste ta med i beräkningen.</span><span class="sxs-lookup"><span data-stu-id="c2b5e-104">Working time scheduling properties are used to categorize working time intervals and define the settings that operators must take into account.</span></span> <span data-ttu-id="c2b5e-105">I proceduren visas definition av en planeringsegenskap för arbetstid och tillhörande egenskapsvärden.</span><span class="sxs-lookup"><span data-stu-id="c2b5e-105">This procedure shows how to define a working time scheduling property and associated property values.</span></span> <span data-ttu-id="c2b5e-106">Du kan gå igenom den här proceduren i demonstrationsdataföretaget USMF eller använda dina egna data.</span><span class="sxs-lookup"><span data-stu-id="c2b5e-106">You can walk through this procedure in demo data company USMF, or using your own data.</span></span>
 
-1. <span data-ttu-id="91ce8-107">Gå till Alla arbetsytor > Livscykelhantering för resurs.</span><span class="sxs-lookup"><span data-stu-id="91ce8-107">Go to All workspaces > Resource lifecycle management.</span></span>
-2. <span data-ttu-id="91ce8-108">Klicka på Egenskaper.</span><span class="sxs-lookup"><span data-stu-id="91ce8-108">Click Properties.</span></span>
+1. <span data-ttu-id="c2b5e-107">Gå till Alla arbetsytor > Livscykelhantering för resurs.</span><span class="sxs-lookup"><span data-stu-id="c2b5e-107">Go to All workspaces > Resource lifecycle management.</span></span>
+2. <span data-ttu-id="c2b5e-108">Klicka på Egenskaper.</span><span class="sxs-lookup"><span data-stu-id="c2b5e-108">Click Properties.</span></span>
 
-## <a name="create-property"></a><span data-ttu-id="91ce8-109">Skapa egenskap</span><span class="sxs-lookup"><span data-stu-id="91ce8-109">Create property</span></span>
-1. <span data-ttu-id="91ce8-110">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="91ce8-110">Click New.</span></span>
-2. <span data-ttu-id="91ce8-111">Ange ett värde i fältet Egenskap.</span><span class="sxs-lookup"><span data-stu-id="91ce8-111">In the Property field, type a value.</span></span>
-3. <span data-ttu-id="91ce8-112">Skriv ett värde i fältet Namn.</span><span class="sxs-lookup"><span data-stu-id="91ce8-112">In the Name field, type a value.</span></span>
+## <a name="create-property"></a><span data-ttu-id="c2b5e-109">Skapa egenskap</span><span class="sxs-lookup"><span data-stu-id="c2b5e-109">Create property</span></span>
+1. <span data-ttu-id="c2b5e-110">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="c2b5e-110">Click New.</span></span>
+2. <span data-ttu-id="c2b5e-111">Ange ett värde i fältet Egenskap.</span><span class="sxs-lookup"><span data-stu-id="c2b5e-111">In the Property field, type a value.</span></span>
+3. <span data-ttu-id="c2b5e-112">Skriv ett värde i fältet Namn.</span><span class="sxs-lookup"><span data-stu-id="c2b5e-112">In the Name field, type a value.</span></span>
 
-## <a name="create-property-values"></a><span data-ttu-id="91ce8-113">Skapa egenskapsvärden</span><span class="sxs-lookup"><span data-stu-id="91ce8-113">Create property values</span></span>
-1. <span data-ttu-id="91ce8-114">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="91ce8-114">In the list, mark the selected row.</span></span>
-2. <span data-ttu-id="91ce8-115">Skriv ett värde i fältet Namn.</span><span class="sxs-lookup"><span data-stu-id="91ce8-115">In the Name field, type a value.</span></span>
-3. <span data-ttu-id="91ce8-116">Ange ett värde i fältet Värde.</span><span class="sxs-lookup"><span data-stu-id="91ce8-116">In the Value field, type a value.</span></span>
-4. <span data-ttu-id="91ce8-117">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="91ce8-117">Click Save.</span></span>
+## <a name="create-property-values"></a><span data-ttu-id="c2b5e-113">Skapa egenskapsvärden</span><span class="sxs-lookup"><span data-stu-id="c2b5e-113">Create property values</span></span>
+1. <span data-ttu-id="c2b5e-114">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="c2b5e-114">In the list, mark the selected row.</span></span>
+2. <span data-ttu-id="c2b5e-115">Skriv ett värde i fältet Namn.</span><span class="sxs-lookup"><span data-stu-id="c2b5e-115">In the Name field, type a value.</span></span>
+3. <span data-ttu-id="c2b5e-116">Ange ett värde i fältet Värde.</span><span class="sxs-lookup"><span data-stu-id="c2b5e-116">In the Value field, type a value.</span></span>
+4. <span data-ttu-id="c2b5e-117">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="c2b5e-117">Click Save.</span></span>
 
 

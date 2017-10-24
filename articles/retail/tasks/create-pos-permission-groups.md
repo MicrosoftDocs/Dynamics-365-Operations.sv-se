@@ -17,41 +17,41 @@ ms.author: scotttuc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 663da58ef01b705c0c984fbfd3fce8bc31be04c6
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
 ms.openlocfilehash: e924dc59c3e4cb9b6979014852512453dd3d70db
 ms.contentlocale: sv-se
-ms.lasthandoff: 08/29/2017
+ms.lasthandoff: 09/29/2017
 
 ---
-# <a name="create-pos-permission-groups"></a><span data-ttu-id="03616-103"> Skapa kassabehörighetsgrupper</span><span class="sxs-lookup"><span data-stu-id="03616-103">Create POS permission groups</span></span>
+# <a name="create-pos-permission-groups"></a><span data-ttu-id="215c8-103"> Skapa kassabehörighetsgrupper</span><span class="sxs-lookup"><span data-stu-id="215c8-103">Create POS permission groups</span></span>
 
 [!include[task guide banner](../includes/task-guide-banner.md)]
 
-<span data-ttu-id="03616-104">I den här proceduren visas hur du skapar en kassabehörighetsgrupp.</span><span class="sxs-lookup"><span data-stu-id="03616-104">This procedure will show how to create a POS permission group.</span></span> <span data-ttu-id="03616-105">Det demonstrationsdataföretag som används för att skapa den här uppgiften är USRT.</span><span class="sxs-lookup"><span data-stu-id="03616-105">The demo data company used to create this task is USRT.</span></span> <span data-ttu-id="03616-106">Den här uppgiften är avsedd för rollen Driftchef (butik).</span><span class="sxs-lookup"><span data-stu-id="03616-106">This task is intended for the Retail operations manager role.</span></span>
+<span data-ttu-id="215c8-104">I den här proceduren visas hur du skapar en kassabehörighetsgrupp.</span><span class="sxs-lookup"><span data-stu-id="215c8-104">This procedure will show how to create a POS permission group.</span></span> <span data-ttu-id="215c8-105">Det demonstrationsdataföretag som används för att skapa den här uppgiften är USRT.</span><span class="sxs-lookup"><span data-stu-id="215c8-105">The demo data company used to create this task is USRT.</span></span> <span data-ttu-id="215c8-106">Den här uppgiften är avsedd för rollen Driftchef (butik).</span><span class="sxs-lookup"><span data-stu-id="215c8-106">This task is intended for the Retail operations manager role.</span></span>
 
-1. <span data-ttu-id="03616-107">Gå till Behörighetsgrupper.</span><span class="sxs-lookup"><span data-stu-id="03616-107">Go to Permission groups.</span></span>
-2. <span data-ttu-id="03616-108">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="03616-108">Click New.</span></span>
-3. <span data-ttu-id="03616-109">Skriv ett värde i fältet ID för kassabehörighetsgrupp.</span><span class="sxs-lookup"><span data-stu-id="03616-109">In the POS permission group ID field, type a value.</span></span>
-4. <span data-ttu-id="03616-110">Ange ett värde i fältet Beskrivning.</span><span class="sxs-lookup"><span data-stu-id="03616-110">In the Description field, type a value.</span></span>
-5. <span data-ttu-id="03616-111">Välj Ja i fältet Visa stämpelklocksregistreringar.</span><span class="sxs-lookup"><span data-stu-id="03616-111">Select Yes in the View time clock entries field.</span></span>
-    * <span data-ttu-id="03616-112">Nu kan du aktivera eller avaktivera olika behörigheter för din kassabehörighetgrupp.</span><span class="sxs-lookup"><span data-stu-id="03616-112">You can now enable or disable various permissions for your POS Permission group.</span></span> <span data-ttu-id="03616-113">För en del behörigheter kan du ange ett värde som ska användas för att bedöma om kassaanvändaren kan utföra åtgärden.</span><span class="sxs-lookup"><span data-stu-id="03616-113">For some permission you can set a value that will be used to evaluate if the POS user can perform the action.</span></span>  <span data-ttu-id="03616-114">Den här uppgiftsguiden aktiverar några behörigheter som kan tilldelas en kassör.</span><span class="sxs-lookup"><span data-stu-id="03616-114">This task guide enables a few permission that might be given to a cashier.</span></span>  
-6. <span data-ttu-id="03616-115">Välj Ja i fältet Tillåt att skapa order.</span><span class="sxs-lookup"><span data-stu-id="03616-115">Select Yes in the Allow create order field.</span></span>
-7. <span data-ttu-id="03616-116">Välj Ja i fältet Tillåt att redigera order.</span><span class="sxs-lookup"><span data-stu-id="03616-116">Select Yes in the Allow edit order field.</span></span>
-8. <span data-ttu-id="03616-117">Välj Ja i fältet Tillåt att hämta order.</span><span class="sxs-lookup"><span data-stu-id="03616-117">Select Yes in the Allow retrieve order field.</span></span>
-9. <span data-ttu-id="03616-118">Välj Ja i fältet Tillåt att lösenordet ändras.</span><span class="sxs-lookup"><span data-stu-id="03616-118">Select Yes in the Allow password change field.</span></span>
-10. <span data-ttu-id="03616-119">Välj Ja i fältet Tillåt hemlig stängning.</span><span class="sxs-lookup"><span data-stu-id="03616-119">Select Yes in the Allow blind close field.</span></span>
-11. <span data-ttu-id="03616-120">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="03616-120">Click Save.</span></span>
-    * <span data-ttu-id="03616-121">När ändringarna har sparats du behöver köra personalfördelningsschemat för att distribuera ändringarna till butikskanaler.</span><span class="sxs-lookup"><span data-stu-id="03616-121">After your changes are saved you need to run the Staff distribution schedule to push the changes to retail channels.</span></span>  
-12. <span data-ttu-id="03616-122">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="03616-122">Close the page.</span></span>
-13. <span data-ttu-id="03616-123">Gå till Jobb.</span><span class="sxs-lookup"><span data-stu-id="03616-123">Go to Jobs.</span></span>
-    * <span data-ttu-id="03616-124">Nu tilldelar vi kassabehörighetgruppen till ett jobb.</span><span class="sxs-lookup"><span data-stu-id="03616-124">Next we will assign the POS permission group to a Job.</span></span>  
-14. <span data-ttu-id="03616-125">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="03616-125">In the list, find and select the desired record.</span></span>
-15. <span data-ttu-id="03616-126">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="03616-126">In the list, click the link in the selected row.</span></span>
-16. <span data-ttu-id="03616-127">Klicka på Redigera.</span><span class="sxs-lookup"><span data-stu-id="03616-127">Click Edit.</span></span>
-17. <span data-ttu-id="03616-128">Expandera avsnittet Jobbklassificering.</span><span class="sxs-lookup"><span data-stu-id="03616-128">Expand the Job classification section.</span></span>
-18. <span data-ttu-id="03616-129">I fältet Kassabehörighetsgrupp, ange eller välj ett värde.</span><span class="sxs-lookup"><span data-stu-id="03616-129">In the POS permission group field, enter or select a value.</span></span>
-    * <span data-ttu-id="03616-130">Alla arbetare i befattningar för det här jobbet ska använda den här kassabehörighetsgruppens inställningar, om inte arbetarnas kassabehörigheter har åsidosatts på deras befattningsnivå.</span><span class="sxs-lookup"><span data-stu-id="03616-130">All Workers in Positions for this Job will use this POS permission group’s settings unless the workers POS permissions have been overridden at their Position level.</span></span>  
-19. <span data-ttu-id="03616-131">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="03616-131">Click Save.</span></span>
-    * <span data-ttu-id="03616-132">När ändringarna har sparats du behöver köra personalfördelningsschemat för att distribuera ändringarna till butikskanaler.</span><span class="sxs-lookup"><span data-stu-id="03616-132">After your changes are saved you need to run the Staff distribution schedule to push the changes to retail channels.</span></span>  
+1. <span data-ttu-id="215c8-107">Gå till Behörighetsgrupper.</span><span class="sxs-lookup"><span data-stu-id="215c8-107">Go to Permission groups.</span></span>
+2. <span data-ttu-id="215c8-108">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="215c8-108">Click New.</span></span>
+3. <span data-ttu-id="215c8-109">Skriv ett värde i fältet ID för kassabehörighetsgrupp.</span><span class="sxs-lookup"><span data-stu-id="215c8-109">In the POS permission group ID field, type a value.</span></span>
+4. <span data-ttu-id="215c8-110">Ange ett värde i fältet Beskrivning.</span><span class="sxs-lookup"><span data-stu-id="215c8-110">In the Description field, type a value.</span></span>
+5. <span data-ttu-id="215c8-111">Välj Ja i fältet Visa stämpelklocksregistreringar.</span><span class="sxs-lookup"><span data-stu-id="215c8-111">Select Yes in the View time clock entries field.</span></span>
+    * <span data-ttu-id="215c8-112">Nu kan du aktivera eller avaktivera olika behörigheter för din kassabehörighetgrupp.</span><span class="sxs-lookup"><span data-stu-id="215c8-112">You can now enable or disable various permissions for your POS Permission group.</span></span> <span data-ttu-id="215c8-113">För en del behörigheter kan du ange ett värde som ska användas för att bedöma om kassaanvändaren kan utföra åtgärden.</span><span class="sxs-lookup"><span data-stu-id="215c8-113">For some permission you can set a value that will be used to evaluate if the POS user can perform the action.</span></span>  <span data-ttu-id="215c8-114">Den här uppgiftsguiden aktiverar några behörigheter som kan tilldelas en kassör.</span><span class="sxs-lookup"><span data-stu-id="215c8-114">This task guide enables a few permission that might be given to a cashier.</span></span>  
+6. <span data-ttu-id="215c8-115">Välj Ja i fältet Tillåt att skapa order.</span><span class="sxs-lookup"><span data-stu-id="215c8-115">Select Yes in the Allow create order field.</span></span>
+7. <span data-ttu-id="215c8-116">Välj Ja i fältet Tillåt att redigera order.</span><span class="sxs-lookup"><span data-stu-id="215c8-116">Select Yes in the Allow edit order field.</span></span>
+8. <span data-ttu-id="215c8-117">Välj Ja i fältet Tillåt att hämta order.</span><span class="sxs-lookup"><span data-stu-id="215c8-117">Select Yes in the Allow retrieve order field.</span></span>
+9. <span data-ttu-id="215c8-118">Välj Ja i fältet Tillåt att lösenordet ändras.</span><span class="sxs-lookup"><span data-stu-id="215c8-118">Select Yes in the Allow password change field.</span></span>
+10. <span data-ttu-id="215c8-119">Välj Ja i fältet Tillåt hemlig stängning.</span><span class="sxs-lookup"><span data-stu-id="215c8-119">Select Yes in the Allow blind close field.</span></span>
+11. <span data-ttu-id="215c8-120">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="215c8-120">Click Save.</span></span>
+    * <span data-ttu-id="215c8-121">När ändringarna har sparats du behöver köra personalfördelningsschemat för att distribuera ändringarna till butikskanaler.</span><span class="sxs-lookup"><span data-stu-id="215c8-121">After your changes are saved you need to run the Staff distribution schedule to push the changes to retail channels.</span></span>  
+12. <span data-ttu-id="215c8-122">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="215c8-122">Close the page.</span></span>
+13. <span data-ttu-id="215c8-123">Gå till Jobb.</span><span class="sxs-lookup"><span data-stu-id="215c8-123">Go to Jobs.</span></span>
+    * <span data-ttu-id="215c8-124">Nu tilldelar vi kassabehörighetgruppen till ett jobb.</span><span class="sxs-lookup"><span data-stu-id="215c8-124">Next we will assign the POS permission group to a Job.</span></span>  
+14. <span data-ttu-id="215c8-125">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="215c8-125">In the list, find and select the desired record.</span></span>
+15. <span data-ttu-id="215c8-126">Klicka på länken på den valda raden i listan.</span><span class="sxs-lookup"><span data-stu-id="215c8-126">In the list, click the link in the selected row.</span></span>
+16. <span data-ttu-id="215c8-127">Klicka på Redigera.</span><span class="sxs-lookup"><span data-stu-id="215c8-127">Click Edit.</span></span>
+17. <span data-ttu-id="215c8-128">Expandera avsnittet Jobbklassificering.</span><span class="sxs-lookup"><span data-stu-id="215c8-128">Expand the Job classification section.</span></span>
+18. <span data-ttu-id="215c8-129">I fältet Kassabehörighetsgrupp, ange eller välj ett värde.</span><span class="sxs-lookup"><span data-stu-id="215c8-129">In the POS permission group field, enter or select a value.</span></span>
+    * <span data-ttu-id="215c8-130">Alla arbetare i befattningar för det här jobbet ska använda den här kassabehörighetsgruppens inställningar, om inte arbetarnas kassabehörigheter har åsidosatts på deras befattningsnivå.</span><span class="sxs-lookup"><span data-stu-id="215c8-130">All Workers in Positions for this Job will use this POS permission group’s settings unless the workers POS permissions have been overridden at their Position level.</span></span>  
+19. <span data-ttu-id="215c8-131">Klicka på Spara.</span><span class="sxs-lookup"><span data-stu-id="215c8-131">Click Save.</span></span>
+    * <span data-ttu-id="215c8-132">När ändringarna har sparats du behöver köra personalfördelningsschemat för att distribuera ändringarna till butikskanaler.</span><span class="sxs-lookup"><span data-stu-id="215c8-132">After your changes are saved you need to run the Staff distribution schedule to push the changes to retail channels.</span></span>  
 
 
