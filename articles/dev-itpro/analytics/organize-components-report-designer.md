@@ -16,13 +16,13 @@ ms.custom: 59161
 ms.assetid: 32e728c5-3b06-4049-8070-ade01e951d49
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: a8739f426c401aacbab56179bad429a231060f57
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: fade9e2acdb94daa6a908d949c578fd7ed439882
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -42,7 +42,7 @@ I Report Designer kan du ändra namn på mappar, rapportdefinitioner, raddefinit
 
 1.  I Report Designer, använd navigeringsrutan för att hitta mappen eller objektet du vill byta namn på.
 2.  Högerklicka på mappen eller objekt och klicka sedan på **Ändra namn**. Fältet **Namn** i navigeringsfönstret blir tillgängligt.
-3.  Skriv in ett nytt namn och tryck sedan på Retur.
+3.  Skriv in ett nytt namn och tryck sedan på Enter.
 4.  Om byggblocket är en raddefinition, kolumndefinition eller rapportträdsdefinition måste du uppdatera andra byggblock som är kopplade till objektet. Högerklicka på byggblocket du bytte namn i steg 3, välj **Associationer** och välj sedan ett alternativ i listan om du vill uppdatera det.
 5.  Upprepa steg 4 tills alla tillhörande artiklar uppdateras.
 
@@ -53,7 +53,7 @@ Du kan gruppera rapportdefinitioner för att generera flera rapporter samtidigt.
 
 1.  Öppna Report Designer och klicka på **Rapportgrupper** i navigeringsfönstret.
 2.  På menyn **Arkiv** klickar du på **Ny** &gt; **Rapportgruppsdefinition** för att öppna en ny rapportgrupp i visningsfönstret. Du kan även klicka på knappen **Rapportgrupp** ![Rapportgrupp](https://i-technet.sec.s-msft.com/dynimg/IC679515.gif "Rapportgrupp") i verktygsfältet.
-3.  Klicka på **Rapportgrupp** fliken. Om du vill åsidosätta informationen om enskilda rapportdefinitioner för generering av rapporten väljer du **Åsidosätt företaget, detaljer och datuminställningar från enskilda rapportdefinitioner** kryssrutan. Företagets namn, detaljnivå, preliminär inställning och datuminformation fylls i automatiskt, men du kan fortfarande göra uppdateringar.
+3.  Klicka på fliken **Rapportgrupp**. För att åsidosätta informationen om de enskilda rapportdefinitionerna genereringen av denna rapport väljer du kryssrutan **Åsidosätt företags-, informations- och datuminställningar från individuella rapportdefinitioner**. Företagets namn, detaljnivå, preliminär inställning och datuminformation fylls i automatiskt, men du kan fortfarande göra uppdateringar.
 4.  Välj kryssrutan **Inkludera alla rapporteringsvalutor** om du vill skapa fler rapporter som visar vilken valuta som används i rapporten. Du kan komma åt flera vyer genom att klicka på knappen **Valuta** i Web Viewer när du visar rapporten.
 5.  I fältet **Rapporter i grupp** klickar du på **Lägg till** för att välja rapporter som ska ingå i rapportgruppen. Om du vill välja flera rapporter i dialogrutan **Lägg till** kan du hålla ned Ctrl-tangenten samtidigt som du markerar rapporter. När du är klar med att välja rapporter klickar du på **OK**.
 6.  Klicka på **Arkiv** &gt; **Spara** för att spara den nya rapportgruppen.
@@ -106,7 +106,7 @@ I följande tabell hittar du beskrivningar av kontrollerna på fliken **Rapportg
 <td>Detaljnivå</td>
 <td>Ange vilken detaljnivå rapporten ska innehålla.
 <ul>
-<li><strong>Finansiella</strong> – en hög nivå sammanfattande rapport. Du kan inte detaljgranska till konton och dimensioner, förutom i dem som det finns konton och dimensioner tillagda för i rapportträdet.</li>
+<li><strong>Ekonomisk</strong> – En sammanfattningsrapport på hög nivå. Du kan inte detaljgranska till konton och dimensioner, förutom i dem som det finns konton och dimensioner tillagda för i rapportträdet.</li>
 <li><strong>Ekonomisk &amp; Konto</strong> − En rapport som innehåller en sammanfattning på hög nivå och kontodetaljer.</li>
 <li><strong>Ekonomisk, Konto &amp; Transaktion</strong> − En rapport som innehåller en sammanfattning på hög nivå och transaktionsdetaljer.</li>
 </ul></td>
@@ -115,14 +115,14 @@ I följande tabell hittar du beskrivningar av kontrollerna på fliken **Rapportg
 <td>Preliminära</td>
 <td>Ange vilka typer av aktiviteter rapporterna ska innehålla.
 <ul>
-<li><strong>Endast bokförd aktivitet</strong> – Omfattar endast transaktioner och saldon som har bokförs i dina ekonomiska data.</li>
-<li><strong>Bokförd och okonterad aktivitet</strong> – Omfattar alla transaktioner och saldon som registreras och bokförs i dina ekonomiska data.</li>
-<li><strong>Endast okonterad aktivitet</strong> – Omfattar endast transaktioner som registrerats, men som ännu inte har bokförts i dina ekonomiska data.</li>
+<li><strong>Endast bokförd aktivitet</strong> – Inkludera endast bokförda transaktioner och saldon i aktuella ekonomidata.</li>
+<li><strong>Bokförd och icke bokförd aktivitet</strong> – Inkludera alla inmatade och bokförda transaktioner och saldon i aktuella ekonomidata.</li>
+<li><strong>Endast icke bokförd aktivitet</strong> – Inkludera endast inmatade, men ännu ej bokförda, transaktioner i aktuella ekonomidata.</li>
 </ul></td>
 </tr>
 <tr class="odd">
 <td>Inkluderar alla rapporteringsvalutor</td>
-<td>Om ytterligare rapporteringsvalutor som är konfigurerade i ditt Microsoft Dynamics ERP-system kommer att visas här. Välj den här kryssrutan om du vill ha skapa fler rapporter i de valutor som anges. De kan sedan visas i Web Viewer om du klickar på knappen <strong>Valuta</strong> och väljer en valuta.</td>
+<td>Om ytterligare rapporteringsvalutor som är konfigurerade i ditt Microsoft Dynamics ERP-system kommer att visas här. Välj den här kryssrutan om du vill ha skapa fler rapporter i de valutor som anges. Klicka på <strong>Valuta</strong> och välj en valuta om du vill visa rapporterna i Web Viewer.</td>
 </tr>
 <tr class="even">
 <td>Datuminformation sparas inte med rapportdefinition</td>
@@ -144,8 +144,8 @@ Endast standardbasperiodinställningar sparas tillsammans med rapportdefinitione
 <td>Rapporter i grupp</td>
 <td>Lägg till, ta bort och ordna om rapporter i rapporten.
 <ul>
-<li>För att lägga till rapportdefinitioner i rapporten grupp, dubbelklicka på rapportgrupp för att öppna den och klicka sedan på <strong>Lägg till</strong>. Välj de rapporter som ska ingå i rapportgrupp, och klicka sedan på <strong>OK</strong>.</li>
-<li>För att ta bort en rapport från rapportgrupp, välj den och klicka sedan på <strong>Ta bort</strong>.</li>
+<li>Om du vill lägga till rapportdefinitioner i rapportgruppen dubbelklickar du på rapportgruppen för att öppna den och klickar sedan på <strong>Lägg till</strong>. Välj de rapporter som du vill ta med i rapportgruppen och klicka på <strong>OK</strong>.</li>
+<li>Om du vill ta bort en rapport från rapportgruppen väljer du den och klickar på <strong>Ta bort</strong>.</li>
 <li>Om du vill ändra i vilken ordning rapporterna skapas, välj en rapport i listan och sedan klicka på <strong>Flytta upp</strong> eller <strong>Flytta ned</strong>.</li>
 </ul></td>
 </tr>

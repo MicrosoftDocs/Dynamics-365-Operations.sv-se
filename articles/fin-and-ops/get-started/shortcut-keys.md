@@ -1,0 +1,228 @@
+---
+title: Kortkommandon
+description: "Följande kortkommandon gäller i hela Microsoft Dynamics 365 for Finance and Operations, Enterprise edition."
+author: jasongre
+manager: AnnBe
+ms.date: 09/12/2017
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+audience: Application User
+ms.reviewer: sericks
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.custom: 54502
+ms.assetid: d29aac80-e6c7-463c-b7a0-995aac84ea0b
+ms.search.region: Global
+ms.author: jasongre
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 9371e22a6f2139ab28382ef8297cc615d5e167ea
+ms.contentlocale: sv-se
+ms.lasthandoff: 09/29/2017
+
+---
+
+# <a name="keyboard-shortcuts"></a>Kortkommandon
+
+[!include[banner](../includes/banner.md)]
+
+
+Följande kortkommandon gäller i hela Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
+
+**Obs!** Tangentbordsgenvägarna som beskrivs här hänvisar till en amerikansk tangentbordslayout. Knappar på andra tangentbordslayouter kan kanske inte exakt motsvarar tangenterna på ett tangentbord i USA.
+
+## <a name="action-shortcuts"></a>Åtgärdgenvägar
+|                                                   |                                  |
+|---------------------------------------------------|----------------------------------|
+| **Om du vill göra detta**                                    | **Tryck**                        |
+| Öppna åtgärdssökning                                | Ctrl+ eller Alt+Q                  |
+| Flytta till standardåtgärdsfönstret                  | Alt+M,A eller Ctrl+F6               |
+| Öppna en flik i åtgärdsfönstret eller en meny           | Retur eller Blanksteg eller Alt+Nedpil |
+| Flytta till nästa/föregående alternativ i en meny            | Uppåtil/nedåtpil            |
+| Stäng en flik i åtgärdsfönstret eller en meny          | Esc                              |
+| Simulera en högerklickning                            | Skift+F10                        |
+| Öppna kontextmenyn i Finance and Operations      | Ctrl+F10                         |
+| Kör standardknappen i ett formulär/en dialogruta   | Alt+Retur                        |
+| Klicka på en knapp eller en panel                            | Retur eller Blanksteg                   |
+| Visa uppdatering av information för en beräkningspanel         | Alt+uppåtpil                     |
+
+## <a name="date-picker-shortcuts"></a>Genvägar för datumväljare
+|                                       |                                           |
+|---------------------------------------|-------------------------------------------|
+| **Om du vill göra detta**                        | **Tryck**                                 |
+| Öppna datumväljaren                  | Alt+nedåtpil                            |
+| Flytta mellan datumen i datumväljaren | Ctrl+piltangenter                               |
+| Flytta till nästa/föregående månad       | Page Down / Page Up                       |
+| Flytta till nästa/föregående år        | Ctrl+Shift+Page Down/Ctrl+Shift+Page Up |
+| Flytta till idag                         | Ctrl+start                                 |
+| Använd dagens datum                     | T                                         |
+| Radera valt datum               | C                                         |
+| Välj Aldrig (eller maxdatum)          | N                                         |
+
+## <a name="factbox-shortcuts"></a>Genvägar för faktaboxen
+|                                                                                 |                                           |
+|---------------------------------------------------------------------------------|-------------------------------------------|
+| Öppna faktaboxfönstret (eller flytta fokus till faktaboxfönstre om det redan är öppet,) | Alt+M,B eller Ctrl+F2                        |
+| Stäng faktaboxfönstret (med fokus i faktaboxfönstret)                         | Esc                                       |
+| Flytta till nästa/tidigare faktabox (med fokus i faktaboxfönstret)              | Alt+Shift+nedåtpil / Alt+Shift+Uppåtpil |
+| Flytta till faktabox &lt;n&gt; (med fokus på faktaboxfönstret)                | Alt+&lt;n&gt; (&lt;n&gt; = 1-9)           |
+| Expandera en faktabox (med fokus på faktaboxhuvudet)                             | Blanksteg eller Retur                            |
+| Komprimera den aktuella faktaboxen                                                    | Alt+0                                     |
+
+## <a name="filtering-shortcuts"></a>Filtrera genvägar
+|                                    |                          |
+|------------------------------------|--------------------------|
+| **Om du vill göra detta**                     | **Tryck**                |
+| Öppna rutnätsfiltreringen för den aktuella kolumnen                        | Ctrl+G                   |
+| Stäng rutnätsfiltreringen för den aktuella kolumnen                       | Esc                      |
+| Öppna filterfönstret (eller växla fokus mellan filterrutan och huvudformuläret om filterfönstret redan är öppet) | Alt+M,F eller Ctrl+F3       |
+| Stäng filterfönstret (med fokus i filterfönstret)             | Esc                      |
+| Öppna avancerad filtrering/sortering                                      | Ctrl+Skift+F3            | 
+
+## <a name="form-shortcuts"></a>Bilda kortkommandon
+|                                                     |                   |
+|-----------------------------------------------------|-------------------|
+| **Om du vill göra detta**                                      | **Tryck**         |
+| Skapa en ny post                                 | Alt+N             |
+| Ta bort en post                                     | Alt+Del eller Alt+F9 |
+| Spara posten                                         | Alt+S eller Ctrl+S   |
+| Återställa                                    | Ctrl+Skift+F5     |
+| Uppdatera data                                        | Skift+F5          |
+| Flytta till det första fältet som visas i formuläret         | Alt+Skift+F       |
+| Växla redigeringsläge                                    | F2                |
+| Bifoga ett dokument                                   | Ctrl+Skift+A      |
+| Exportera till Excel                                     | Ctrl+Skift+E      |
+| Flytta till föregående post (utanför ett rutnät)        | Ctrl+uppåtpil     |
+| Flytta till nästa post (utanför ett rutnät)            | Ctrl+nedåtpil   |
+| Flytta till första posten (utanför ett rutnät)           | Ctrl+start         |
+| Flytta till sista posten (utanför ett rutnät)            | Ctrl+End          |
+| Stäng formuläret (klicka på Tillbaka)                         | Esc               |
+| Stäng formuläret genom att uttryckligen spara                   | Skift+Esc         |
+| Stäng formuläret och tag bort alla osparade ändringar       | Alt+Skift+Q       |
+
+## <a name="form-navigation-shortcuts"></a>Bilda navigeringsgenvägar
+|                                                     |                                              |
+|-----------------------------------------------------|----------------------------------------------|
+| **Om du vill göra detta**                                      | **Tryck**                                    |
+| Flytta till nästa/föregående fältgrupp.                     | Tab/Skift+Tab                              |
+| Flytta till nästa/föregående flik                       | Alt+Shift+högerpil / Alt+Shift+vänsterpil |
+| Flytta till flik &lt;n&gt;                         | Alt+Shift+&lt;n&gt; (&lt;n&gt; = 1-9)        |
+| Flytta till nästa/föregående snabbflik                   | Alt+Shift+nedåtpil / Alt+Shift+Uppåtpil    |
+| Flytta till snabbflik &lt;n&gt;                     | Alt+&lt;n&gt; (&lt;n&gt; = 1-9)              |
+| Flytta till nästa/föregående blad (lodrät flik)      | Alt+Shift+högerpil / Alt+Shift+vänsterpil |
+| Flytta till blad &lt;n&gt; (lodrät flik)        | Alt+Shift+&lt;n&gt; (&lt;n&gt; = 1-9)        |
+| Expandera en snabbflik (med fokus på snabbflikhuvudet) | Blanksteg eller Retur                               |
+| Komprimera den aktuella snabbfliken                        | Alt+0                                        |
+| Byt till rutnätsvy                                 | Ctrl+Skift+G                                 |
+| Byt till detaljvy                              | Ctrl+Skift+D                                 |
+| Växla till rubrikvy                               | Ctrl+Skift+H                                 |
+| Växla till radvy                                | Ctrl+Skift+L                                 |
+
+## <a name="grid-shortcuts"></a>Genvägar för rutnät
+|                                                                                                                        |                                 |
+|------------------------------------------------------------------------------------------------------------------------|---------------------------------|
+| **Om du vill göra detta**                                                                                                         | **Tryck**                       |
+| Flytta till nästa/föregående kolumn                                                                                       | Tab/Skift+Tab                 |
+| Flytta till nästa/föregående rad                                                                                          | Uppåtil/nedåtpil           |
+| Flytta till nästa/föregående rad utan att markera<br><br>**Obs:** Genvägen gäller endast flervalsscenarier. | Ctrl+uppåtpil / Ctrl+nedåtpil |
+| Markera/rensa aktuell rad<br><br>**Obs:** Genvägen gäller endast flervalsscenarier.                    | Ctrl+Blanksteg/Ctrl+Klick         |
+| Lägg till nästa/föregående rad i den valda uppsättningen<br><br>**Obs:** Genvägen gäller endast flervalsscenarier.   | Shift+Space                     |
+| Lägg till ett antal rader i den valda uppsättningen<br><br>**Obs:** Genvägen gäller endast flervalsscenarier.         | Skift+Klick                     |
+| Gå till näst7föregående sida med data.                                                                                   | Page Up / Page Down             |
+| Skapa en ny rad längst ned i rutnätet                                                                             | Nedåtpil (från sista raden)  |
+| Markera eller rensa alla rader                                                                                               | Ctrl+Skift+M                    |
+| Flytta till första posten                                                                                               | Ctrl+start                       |
+| Flytta till den sista posten                                                                                                | Ctrl+End                        |
+| Utför standardåtgärd i ett rutnät<br><br>**Obs:** Denna genväg aktiveras när fokus ligger på en cell som innehåller en hyperlänk och samtliga celler i den kolumnen har hyperlänkar.                 | Ange                           |
+
+## <a name="input-control-shortcuts"></a>Mata in kontrollgenvägar
+|                                                                              |                               |
+|------------------------------------------------------------------------------|-------------------------------|
+| **Om du vill göra detta**                                                               | **Tryck**                     |
+| Öppna hyperlänk                                                           | Ctrl+Return                    |
+| Ange aktuellt sessionsdatum i ett datumfält                                       | D+Tab                         |
+| Ange aktuellt datum i ett datumfält                                       | T+Tab                         |
+| Öppna sökning, kombinationsruta, datumväljare, dialogruta                         | Alt + nedåtpil                |
+| Stäng sökning, kombinationsruta, datumväljare, dialogruta                        | Esc                           |
+| Flytta fokus till en uppslagning (när uppslagningen redan är öppen,)                   | Alt + nedåtpil                |
+| Öppna kontrollens utökade förhandsgranskning                                          | Alt + uppåtpil                  |
+| Välj text i det aktuella fältet.                                             | Ctrl+A                        |
+| Ange/lämna textområdet i en HTML-redigeringskontroll                          | Alt+nedåtpil / Alt+uppåtpil |
+| Växla mellan text och verktygsfält med en HTML-redigerare | F6                            |
+
+## <a name="messaging-shortcuts"></a>Genvägar för meddelanden
+|                          |               |
+|--------------------------|---------------|
+| **Om du vill göra detta**           | **Tryck**     |
+| Gå till meddelandecenter | Ctrl+Skift+F7 |
+| Gå till meddelandefältet    | Ctrl+F7       |
+
+## <a name="navigation-shortcuts"></a>Navigeringsgenvägar
+|                                                                               |                            |
+|-------------------------------------------------------------------------------|----------------------------|
+| **Om du vill göra detta**                                                                | **Tryck**                  |
+| Öppna instrumentpanelen                                                           | Alt+Skift+Start             |
+| Flytta till navigeringsfältet                                                    | Alt+M,N eller Alt+Shift+F1    |
+| Flytta till företagsväljaren                                                    | Ctrl+Skift+O               |
+| Sök efter en sida                                                             | Ctrl+/ eller Alt+G            |
+| Öppna Hjälp-fönstret                                                            | Ctrl+?                     |
+| Öppna Trace Parser                                                         | Alt+Skift+T                |
+| Flytta till navigeringsfönstret                                                   | Alt + F1                     |
+| Lägg till/ta bort ett formulär som favorit (med fokus på ett formulär i navigeringsfönstret)   | Skift+F                    |
+| Flytta till standardåtgärdsfönstret                                              | Alt+M,A eller Ctrl+F6         |
+| Flytta till filterfönstret (kan inkludera att öppna det)                        | Alt+M,F eller Ctrl+F3         |
+| Flytta fokus till sidoinnehållet (med fokus på navigeringsbalken)            | Alt+M,M eller Ctrl+F3         |
+| Flytta till navigeringslistan i detaljformuläret (som kan inbegripa att öppna det.)    | Alt+M,S eller Ctrl+F8         |
+| Flytta fokus till sidoinnehållet (med fokus på navigeringsbalken)            | Alt+M,M eller Ctrl+F8         |
+| Stäng navigeringlistan på formuläret Detaljer (med fokus i navigeringlistan) | Esc                        |
+| Flytta till huvudsidans innehåll (med fokus i ett annat fönster)                    | Alt+M,M                    |
+| Flytta till faktaboxen (som kan inkludera att öppna den)                       | Alt+M,B eller Ctrl+F2         |
+
+## <a name="personalization-shortcuts"></a>Kortkommandon för anpassning
+|                                                                                                                        |                                     |
+|------------------------------------------------------------------------------------------------------------------------|-------------------------------------|
+| **Om du vill göra detta**                                                                                                         | **Tryck**                           |
+| Låt sidan övergå till anpassningsläge                                                                          | Ctrl+Shift+P                        |
+| Använd markeringsverktyget (i anpassningsläge)                                                                     | S                                   |
+| Öppna dialogrutan för snabbanpassning för den markerade kontrollen (när du använder verktyget Markera)                              | Blanksteg eller Retur                      |
+| Använd verktyget Flytta (i anpassningsläge)                                                                       | M                                   |
+| Välj aktuell kontroll som ska flyttas (när du använder verktyget Flytta och ingen kontroll ännu har valts ut för flytt)  | Blanksteg eller Retur                      |
+| Ta bort kontrollen för att flytta (om du använder verktyget Flytta)                                                                   | Esc                                 |
+| Flytta till nästa position för den markerade kontrollen (när du använder verktyget Flytta)                                          | Tabb eller högerpil eller nedåtpil    |
+| Flytta till föregående position för den markerade kontrollen (när du använder verktyget Flytta)                                      | Shift+Tab eller vänsterpil eller uppåtpil |
+| Använd verktyget Dölj (i anpassningsläge)                                                                       | H                                   |
+| Växla mellan huruvida den aktuella kontrollen är synlig eller dold (när du använder verktyget Dölj)                                     | Blanksteg eller Retur                      |
+| Använd verktyget Hoppa över (i anpassningsläge)                                                                       | k                                   |
+| Växla mellan huruvida den aktuella kontrollen ligger i flikserien (när du använder verktyget Hoppa över)                                   | Blanksteg eller Retur                      |
+| Använd verktyget Redigera (i anpassningsläge)                                                                       | E                                   |
+| Växla mellan huruvida den aktuella kontrollen är skrivskyddad eller kan redigeras (när du använder verktyget Redigera)                                 | Blanksteg eller Retur                      |
+| Använd verktyget Summering (i anpassningsläge)                                                                    | U                                   |
+| Växla mellan huruvida den aktuella kontrollen är ett summeringsfält i den aktuella snabbfliken (när du använder verktyget Summering)            | Blanksteg eller Retur                      |
+| Använd verktyget Lägg till (i anpassningsläge)                                                                        | A                                   |
+| Markera den kontroll vars behållare ska användas för att infoga nya fält (när du använder verktyget Lägg till)                     | Blanksteg eller Retur                      |
+| Importera en anpassning (i anpassningsläge)                                                                | I                                   |
+| Exportera en anpassning (i anpassningsläge)                                                                | X                                   |
+| Rensa anpassningar från den här sidan (i anpassningsläge)                                                      | Ctrl+C                              |
+| Flytta fokus mellan verktygsfältet för anpassning och sidan (i anpassningsläge)                             | T                                   |
+| Lämna anpassningsläget (i anpassningsläge)                                                               | Esc                                 |
+
+## <a name="segmented-entry-shortcuts"></a>Segmenterade postgenvägar
+|                                                                                                                         |                                  |
+|-------------------------------------------------------------------------------------------------------------------------|----------------------------------|
+| **Om du vill göra detta**                                                                                                          | **Tryck**                        |
+| Öppna listrutan (när listrutan är stängd)                                                             | Alt+nedåtpil                   |
+| Flytta fokus till indatafältet för det aktuella segmentet i listrutan (när listrutan redan är öppen) | Alt+nedåtpil                   |
+| Stäng listrutan.                                                                                                | Alt+uppåtpil                     |
+| Stäng/öppna den högra delen av listrutan                                                                      | Alt+vänsterpil / Alt+högerpil |
+| Växla mellan lägena "Visa giltiga" och "Visa alla"                                                                        | Alt+W                            |
+| Välj värdet från listruta och gå till nästa segment                                                       | Ange                            |
+| Flytta till nästa/tidigare kontroll på sidan (när fokus är i indatakontroll)                                          | Tab/Skift+Tab                  |
+| Flytta till nästa/tidigare ange indatafältet i menyn utfällbara (när fokus är i listrutan,)                               | Tab/Skift+Tab                  |
+| Flytta upp/ned en rad i uppslagningen                                                                                        | Uppåtil/nedåtpil            |
+| Flytta upp/ned en sida i uppslagningen                                                                                       | Page Up / Page Down              |
+| Flytta till längst upp/längst ned i uppslagningen                                                                                    | Startsida/slut                       |
+
+

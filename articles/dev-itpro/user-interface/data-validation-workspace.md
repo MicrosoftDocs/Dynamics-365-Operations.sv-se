@@ -14,11 +14,11 @@ ms.search.scope:
 ms.assetid: 
 ms.search.region: Global
 ms.author: bking
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
-ms.openlocfilehash: e105c4b171979a03c20718c1fa9d558c921cd704
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 447fd87cb2f71147d7a9f6476f4ed9e12d75640a
 ms.contentlocale: sv-se
-ms.lasthandoff: 06/20/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -37,7 +37,7 @@ Du måste först markera ett datavalideringsprojekt överst på arbetsytan. Alla
 
 ### <a name="summary-tiles"></a>Sammanfattningsrutor
 
-Rutorna **Sammanfattning** ger en översikt över processen och inkluderar indikatorer som hjälper dig att följa upp datavalideringsprocessen. Du kan se alla återstående uppgifter, slutförda uppgifter, pågående uppgifter och inte påbörjade uppgifter för processen. Denna information används för alla företag som ingår i det markerade, datavalideringsprojektet.
+Panelerna **Sammanfattning** ger dig en översikt över processen, och diverse indikeringar hjälper dig att styra datavalideringsprocessen. Du kan se samtliga återstående uppgifter, slutförda uppgifter, pågående uppgifter och ännu ej startade uppgifter för processen. Denna information används för alla företag som ingår i det markerade, datavalideringsprojektet.
 
 ### <a name="tasks-and-status-section"></a>Avsnittet Uppgifter och status
 

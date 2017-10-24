@@ -18,12 +18,11 @@ ms.search.region: Global
 ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
-ms.openlocfilehash: 5de5e3aad0b7a5853653ae53326dac078ec94fea
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 0bbf8f979aeb8b861164e345f9e46bb396f370ce
 ms.contentlocale: sv-se
-ms.lasthandoff: 06/20/2017
-
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -42,7 +41,7 @@ Du måste först markera ett avslutande schema överst på arbetsytan. Alla data
 
 ### <a name="summary-tiles"></a>Sammanfattningsrutor
 
-Rutorna **Sammanfattning** ger en översikt över processen och indikatorer hjälper dig att följa upp stängningsprocessen. Du kan se aktiviteter som passerat förfallodatum, återstående aktiviteter för idag, uppgifter som förfaller idag men som är spärrade p.g.a. beroenden, samt alla återstående aktiviteter för processen. Denna information används för alla företag som ingår i det markerade, utgående schemat.
+Panelerna **Sammanfattning** ger dig en översikt över processen, och diverse indikeringar hjälper dig att stänga processen som planerat. Du kan se försenade uppgifter, återstående uppgifter för idag, uppgifter som förfaller idag men som blockerats på grund av beroendeförhållanden, samt alla återstående uppgifter för processen. Denna information används för alla företag som ingår i det markerade, utgående schemat.
 
 ### <a name="tasks-and-status-section"></a>Avsnittet Uppgifter och status
 
@@ -82,7 +81,7 @@ Du använder uppgiftområden för att gruppera bokslutsuppgifter i logiska områ
 
 ### <a name="calendars"></a>Kalendrar
 
-Skapa och redigera ekonomiska stängningskalendrar på fliken Kalendrar.  Det är här som du kan definiera arbetsdagar för stängningsprocesser, vilket används för att schemalägga aktiviteter för stängning.  Skapa en ny kalender och ange de arbetsdagar som ska användas för att schemalägga uppgiften.  Det är bäst att skapa en kalender för en lång tidsperiod, till exempel ett år eller flera år, eftersom den kan redigeras när den har skapats.  När du har skapat kalendern, klicka på knappen Redigera för att uppdatera kalendern för särskilda dagar, t.ex. helgdagar.  Stängningsaktiviteter schemaläggs på dagar då kontrollvärdet har angetts som Öppet.  Om stängningsaktiviteter inte ska schemaläggas på en viss dag, bör kontrollvärdet för den dagen vara Stängd.
+Skapa och redigera kalendrar för bokslut med hjälp av kalenderfliken. Det är här som du anger arbetsdagar för stängningsprocesser, samt vilka som används för att schemalägga stängningsuppgifter.  Skapa en ny kalender och ange de arbetsdagar som ska användas för att schemalägga uppgiften.  Det är bäst att skapa en kalender för en lång tidsperiod, till exempel ett år eller flera år, eftersom den kan redigeras när den har skapats.  När du har skapat kalendern, klicka på knappen Redigera för att uppdatera kalendern för särskilda dagar, t.ex. helgdagar.  Stängningsaktiviteter schemaläggs på dagar då kontrollvärdet har angetts som Öppet.  Om stängningsaktiviteter inte ska schemaläggas på en viss dag, bör kontrollvärdet för den dagen vara Stängd.
 
 ### <a name="templates"></a>Mallar
 

@@ -1,6 +1,6 @@
 ---
 title: "Initiera startdata i en ny detaljhandelsmiljö"
-description: "Den här artikeln beskriver de data som skapas under initieringsprocessen för Microsoft Dynamics 365 for Operations."
+description: "Den här artikeln beskriver de data som skapas under initieringsprocessen för Microsoft Dynamics 365 for Retail."
 author: josaw1
 manager: AnnBe
 ms.date: 06/20/2017
@@ -18,11 +18,11 @@ ms.search.industry: Retail
 ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 59b51840c05fe649cf322bfa64737a321728a5aa
-ms.openlocfilehash: 0ee002d733882734c9f5a21e0467cacd1b3ff318
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: ac4f651cd7e5df912ea2535eafd5e54c11377253
 ms.contentlocale: sv-se
-ms.lasthandoff: 06/20/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 06/20/2017
 [!include[banner](includes/banner.md)]
 
 
-Den här artikeln beskriver de data som skapas under initieringsprocessen för Microsoft Dynamics 365 for Operations.
+Den här artikeln beskriver de data som skapas under initieringsprocessen för Microsoft Dynamics 365 for Retail.
 
 Efter återförsäljarlösning har spridits via Microsoft Dynamics Lifecycle Services (LCS), måste du initiera retail konfiguration för att skapa grundläggande konfigurationsuppgifter. **Viktigt!** Innan du initierar butikskonfiguration, kontrollera att du har angett ett språk och en postadress för varje juridisk enhet där du ställer upp butiker. Detta steg måste genomföras för varje juridisk enhet som du använder för butik. För att initiera retail konfiguration, följ dessa steg.
 

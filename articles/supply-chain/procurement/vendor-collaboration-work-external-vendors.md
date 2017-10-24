@@ -18,10 +18,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
-ms.openlocfilehash: cbd099403f48b502ca74bcb38ae12decedb8f2da
+ms.sourcegitcommit: 9036b7f9863871915f9ad39d76bf027ae4c2f4bf
+ms.openlocfilehash: aee8db8ddaeac135ed1f9d8b1b8a621609c6d358
 ms.contentlocale: sv-se
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 10/05/2017
 
 ---
 
@@ -34,9 +34,9 @@ I det här avsnittet beskrivs hur inköpare kan samarbeta med externa leverantö
 
 Modulen **Leverantörssamarbete** vänder sig till leverantörer som inte har elektronisk dataväxling (EDI) med Microsoft Dynamics 365 for Finance and Operations. Med den kan leverantörer arbeta med inköpsorder, faktura och information om försändelselager. I det här avsnittet beskrivs hur du kan samarbeta med externa leverantörer som använder gränssnittet för leverantörssamarbete när de arbetar med inköpsorder och försändelselagret. Det beskriver även hur du låter en viss leverantör använda leverantörssamarbeten, samt hur du definierar den information som alla leverantörer ska få se när de svarar på en inköpsorder. För mer information om vad externa leverantörer kan göra i gränssnittet för leverantörssamarbeten, se [Leverantörssamarbete med kunder](vendor-collaboration-work-customers-dynamics-365-operations.md).  
 
-För mer information om hur leverantörer kan använda leverantörssamarbeten i faktureringsprocessen, se [Arbetsyta för leverantörssamarbetesfakturering](/dynamics365/unified-operations/financials/accounts-payable/vendor-portal-invoicing-workspace). För mer information hur du reserverar nya användare av leverantörssamarbeten, se [Hantera användare av leverantörssamarbete](manage-vendor-collaboration-users.md).
+För mer information om hur leverantörer kan använda leverantörssamarbeten i faktureringsprocessen, se [Arbetsyta för leverantörssamarbetesfakturering](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md). För mer information hur du reserverar nya användare av leverantörssamarbeten, se [Hantera användare av leverantörssamarbete](manage-vendor-collaboration-users.md).
 
-För mer information om hur leverantörer kan använda leverantörssamarbeten i faktureringsprocessen, se [Arbetsyta för leverantörssamarbetesfakturering](/dynamics365/unified-operations/financials/accounts-payable/vendor-portal-invoicing-workspace). 
+För mer information om hur leverantörer kan använda leverantörssamarbeten i faktureringsprocessen, se [Arbetsyta för leverantörssamarbetesfakturering](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md). 
 
 För mer information hur du reserverar nya användare av leverantörssamarbeten, se [Hantera användare av leverantörssamarbete](manage-vendor-collaboration-users.md).
 
@@ -131,7 +131,7 @@ När du behöver ändra en inköpsorder som redan har besvarats måste du skicka
 
 ### <a name="cancelling-a-po"></a>Avbryta en inköpsorder
 
-När du avbryter in inköpsorder ändras statusen till **Approved**. Du måste skicka tillbaka IO:n till säljaren via leverantörsportalen så att leverantören kan bekräfta eller avvisa annulleringen. När annulleringen har bekräftats visas inköpsordern i leverantörens lista över bekräftade inköpsorder som **Annullerat**.
+När du avbryter in inköpsorder ändras statusen till **Approved**. Du måste skicka tillbaka inköpsordern till leverantören så att denne kan bekräfta eller avvisa upphävandet. När annulleringen har bekräftats visas inköpsordern i leverantörens lista över bekräftade inköpsorder som **Annullerat**.
 
 ### <a name="adding-attachments-to-a-po"></a>Lägga till bilagor till en inköpsorder
 

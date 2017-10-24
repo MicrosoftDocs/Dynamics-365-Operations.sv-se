@@ -15,13 +15,13 @@ ms.custom: 195583
 ms.assetid: 836ddd01-cc34-45c3-a4b0-20647357dbc6
 ms.search.region: Global
 ms.author: donaldc
-ms.search.validFrom: 2016-08-30T00:00:00.000Z
+ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 2
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 138cf8d60f5a6e1ec1e46837a516e981c8ff4c19
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 4d57e47fe7f38a43ecfdfbdd701d7e6a7d7800d6
 ms.contentlocale: sv-se
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -63,7 +63,7 @@ Konfigurera varje element som du har dragit till arbetsytan. För information om
 -   [Konfigurera en godkännandeprocess](configure-approval-process-workflow.md)
 -   [Konfigurera ett godkännandesteg](configure-approval-step-workflow.md)
 -   [Konfigurera ett manuellt beslut](configure-manual-decision-workflow.md)
--   [Konfigurera ett villkorsbeslut](configure-conditional-decision-workflow.md)
+-   [Konfigurera ett villkorligt beslut](configure-conditional-decision-workflow.md)
 -   [Konfigurera en parallell aktivitet](configure-parallel-activity-workflow.md)
 -   [Konfigurera en parallell gren](configure-parallel-branch-workflow.md)
 -   [Konfigurera ett arbetsflöde för radartiklar](configure-line-item-workflow.md)

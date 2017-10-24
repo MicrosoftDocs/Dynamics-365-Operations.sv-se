@@ -1,7 +1,7 @@
 ---
 title: "Kostnadskategorier som används i produktionskontroll och projekthanteringsredovisning"
 description: "Vissa typer av produktionsarbete kan gälla för projekttidsuppskattningar och rapportering. Den här artikeln innehåller information om de kostnadskategorier som du måste definiera för dessa typer av produktionsarbete för produktions- och projektändamål."
-author: YuyuScheller
+author: AndersGirke
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -17,13 +17,13 @@ ms.assetid: cfdd58a0-8afa-4a6f-a208-a76e2c162429
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: mguada
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d421b161216d700f7819f1da8c0ca8ad089b5670
-ms.openlocfilehash: 712406f1a47d3b0b6b8302cd7337a594a3818f95
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 1fcc7914f2bb283a746b5e10993f91f949818473
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -34,7 +34,9 @@ ms.lasthandoff: 05/25/2017
 
 Vissa typer av produktionsarbete kan gälla för projekttidsuppskattningar och rapportering. Den här artikeln innehåller information om de kostnadskategorier som du måste definiera för dessa typer av produktionsarbete för produktions- och projektändamål.
 
-Vissa typer av produktionsarbete kan gälla för projekttidsuppskattningar och rapportering. I det här fallet krävs en kostnadskategori för produktions- och projektandamål. Mer projektrelaterad information måste definieras när en kostnadskategori används för produktion och projekt. Timkostnaderna som är kopplade till projekt, skiljer sig t.ex. från timkostnaderna som är kopplade till produktion. På **Kostnadskategorier**-sidan kan du definiera en kostnadskategori som används i redovisningen för produktionskontroll och projekthantering. **Obs!** Kostnadsredovisning har en **Projektkategorier**-sida, men den här sidan har ingen koppling till funktionerna som beskrivs i det här avsnittet. När du använder en kostnadskategori i projekt, sidan **Kostnadskategorier** har ytterligare flikar som visar ytterligare projektrelaterad information. Den här informationen omfattar kategorigrupp, en radegenskap och huvudbokskonton som har tilldelats kostnadskategorin.
+Vissa typer av produktionsarbete kan gälla för projekttidsuppskattningar och rapportering. I det här fallet krävs en kostnadskategori för produktions- och projektandamål. Mer projektrelaterad information måste definieras när en kostnadskategori används för produktion och projekt. Timkostnaderna som är kopplade till projekt, skiljer sig t.ex. från timkostnaderna som är kopplade till produktion. På **Kostnadskategorier**-sidan kan du definiera en kostnadskategori som används i redovisningen för produktionskontroll och projekthantering. 
+
+**Obs!** Kostnadsredovisning har en **Projektkategorier**-sida, men den här sidan har ingen koppling till funktionerna som beskrivs i det här avsnittet. När du använder en kostnadskategori i projekt, sidan **Kostnadskategorier** har ytterligare flikar som visar ytterligare projektrelaterad information. Den här informationen omfattar kategorigrupp, en radegenskap och huvudbokskonton som har tilldelats kostnadskategorin.
 
 -   Kostnadskategorin måste tilldelas en kategorigrupp som stöder transaktionstypen **Timmar**.
 -   Radegenskapen anger standardinformation för hur rapporterad tid kan debiteras för ett projekt.

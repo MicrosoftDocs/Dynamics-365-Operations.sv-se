@@ -16,13 +16,13 @@ ms.custom: 58881
 ms.assetid: 0af492df-a84e-450c-8045-78ef1211abaf
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 770a1681e4fa9974b081d0c63a10eb1961f13014
-ms.openlocfilehash: 40ae4e0774c5752d697baba6c8add8aaf44fbb6d
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: eb09c0bb28c2ba8e7b890854c444cec80fe8277c
 ms.contentlocale: sv-se
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -35,9 +35,9 @@ Den här artikeln innehåller en beskrivning av den information som krävs för 
 
 # <a name="specify-a-row-code-in-a-row-definition"></a>Ange en radkod i en raddefinition
 
-I raddefinitioner identifierar de nummer eller etiketter som finns i cellen **Radkod** varje rad i raddefinitionen. Du kan ange radkoden för att hänvisa till data i beräkningar och summor.
+I raddefinitioner identifierar de nummer eller etiketter som finns i cellen **Radkod** varje rad i raddefinitionen. Du kan ange att radkoden ska referera till data i beräkningar och summor.
 
-### <a name="row-code-requirements"></a>Krav för radkoder
+### <a name="row-code-requirements"></a>Radkodkrav
 
 En radkod krävs för alla rader. Du kan blanda numeriska, alfanumeriska och upphävda (tomma) radkoder i en raddefinition. Radkoden kan vara ett positivt heltal (under 100 000 000) eller en beskrivande etikett som identifierar den raden. En beskrivande etikett måste följa dessa regler:
 
@@ -68,7 +68,7 @@ Följande exempel är giltiga radkoder:
 ## <a name="add-a-description"></a>Lägg till en beskrivning.
 Beskrivningscellen innehåller beskrivningen av de ekonomiska data som finns i raden för rapporten, till exempel "Intäkt” eller "Nettoinkomst". Texten i cellen **Beskrivning** visas i rapporten exakt, som du anger den i raddefinitionen. 
 > [!NOTE]
-> Bredden av kolumnen Beskrivning i rapporten anges i kolumndefinitionen. Om texten i kolumnen **Beskrivning** i raddefinitionen är lång, kontrollera bredden på kolumnen **DESC**. När du använder dialogrutan **Infoga rader från**, är värdena i kolumnen **Beskrivning** segmentvärdena eller dimensionsvärdena från den ekonomiska datan. Du kan infoga rader om du vill lägga till en beskrivande text, till exempel en avsnittsrubrik eller en avsnittssumma och för att lägga till formatering, till exempel en rad innan en summarad. Om rapporten omfattar ett rapporteringsträd, kan du inkludera den ytterligare texten som har definierats för rapportenheterna i rapporteringsträdet. Du kan även begränsa den ytterligare texten till en viss rapporteringsenhet.
+> Bredden av kolumnen Beskrivning i rapporten anges i kolumndefinitionen. Om texten i kolumnen **Beskrivning** i raddefinitionen är lång, kontrollera bredden på kolumnen **DESC**. När du använder dialogrutan **Infoga rader från**, är värdena i kolumnen **Beskrivning** segmentvärdena eller dimensionsvärdena från den ekonomiska datan. Du kan lägga till rader om du vill infoga beskrivande text, till exempel en avsnittsrubrik eller en delsumma, samt om du vill lägga till formatering, till exempel en linje före en summarad. Om rapporten omfattar ett rapporteringsträd, kan du inkludera den ytterligare texten som har definierats för rapportenheterna i rapporteringsträdet. Du kan även begränsa den ytterligare texten till en viss rapporteringsenhet.
 
 ### <a name="add-the-description-for-a-line-on-a-report"></a>Lägg till beskrivningen för en rad i en rapport
 
@@ -112,12 +112,12 @@ Cellen **Formatkod** ger ett urval av förformaterade val för innehållet i den
     | ---                           | Enkel understrykning                   | Sätter en enskild rad under alla beloppskolumner i rapporten.                                                                                                                                                     |
     | ===                           | Dubbel understrykning                   | Sätter en dubbel rad under alla beloppskolumner i rapporten.                                                                                                                                                     |
     | LINE1                         | Tunn rad                          | Drar en enskild tunn rad över sidan.                                                                                                                                                                      |
-    | LINE2                         | Tjock rad                         | Drar en enskild tjock rad över sidan.                                                                                                                                                                     |
-    | LINE3                         | Prickig rad                        | Drar en enskild prickig rad över sidan.                                                                                                                                                                    |
+    | LINE2                         | Tjock linje                         | Rita en enkel tjock linje över sidan.                                                                                                                                                                     |
+    | LINE3                         | Prickad linje                        | Drar en enskild prickig rad över sidan.                                                                                                                                                                    |
     | LINE4                         | Tjock rad och tunn rad           | Drar en dubbel rad över sidan. Den övre raden är tjock och den undre är tunn.                                                                                                                       |
     | LINE5                         | Tunn rad och tjock rad           | Drar en dubbel rad över sidan. Den övre raden är tunn och den undre är tjock.                                                                                                                       |
     | BXB BXC                       | Inrutad rad                          | Drar en ruta runt rappportraden som börjar med **BXB** och avslutas med raden **BXC**.                                                                                                               |
-    | REM                           | Kommentar                             | Identifierar en rad som är en kommentarrad och som inte ska skrivas ut i rapporten. Exempelvis kan en anmärkningrad förklara dina formateringtekniker.                                                            |
+    | REM                           | Kommentar                             | Identifierar en rad som är en kommentarsrad, och därför inte ska skrivas ut på rapporten. En kommentarsrad kan t.ex. innehålla en förklaring av dina formateringsmetoder.                                                            |
     | SORT ASORT SORTDESC ASORTDESC | Sortera                               | Sorteringsutgifter eller intäkter sorterar en aktuell rapport eller en budgetavvikelserapport efter den största avvikelsen eller sorterar radbeskrivningarna i alfabetisk ordning.                                                                   |
 
 ## <a name="specify-related-formulasrowsunits"></a>Ange relaterade formler/rader/enheter
@@ -133,7 +133,7 @@ Cellen **Relaterade formler/rader/enheter** har flera syften. Beroende på vilke
 
 Använd en radsummaformel om du vill lägga till eller dra ifrån belopp i andra rader. En formel för att skapa en radsumma kan inkludera operatorerna + och - som kombinerar enskilda rader och intervall. Intervall anges av ett kolon (:). Formeln kan innehålla upp till 1 024 tecken. Här är ett exempel på en standardsummeringsformel: 400+420+430+450+460LIABILITIES+EQUITY520:546520:546-LIABILITIES
 
-### <a name="components-of-a-row-total-formula"></a>Komponenter för en radsummaformel
+### <a name="components-of-a-row-total-formula"></a>Komponenter i en formel för radsumma
 
 När du skapar en radsummaformel måste du använda radkoder för att ange vilka rader om du vill lägga till eller dra i den aktuella raddefinitionen och du måste använda operatorer för att ange hur raderna kombineras. Summarader beloppsrader kan användas i valfri kombination. **Obs!** Alla summarader som finns i ett intervall exkluderas. Om du vill skapa en totalsumma kan du ange intervallet för rader. Om den första raden i ett intervall är en summarad, ingår den raden i den nya summan. Följande tabell beskriver hur operatorer används i radsummaformler.
 
@@ -145,7 +145,7 @@ När du skapar en radsummaformel måste du använda radkoder för att ange vilka
 
 ### <a name="create-a-row-total"></a>Skapa en radsumma
 
-1.  I Rapportdesignern, klicka på **Raddefinitioner** och öppna raddefinitionen för att ändra.
+1.  Klicka på **Raddefinitioner** i Report Designer och öppna den raddefinition som du vill ändra.
 2.  Dubbelklicka på **Formatkod** i raddefinitionen och välj **TOT**
 3.  Ange cellen **Relaterade formler/rader/enheter** i summaformeln.
 
@@ -177,7 +177,7 @@ En eller flera basrader definieras i raddefinitionen och sedan bestämmer kolumn
 -   **CBR**-rader skrivs inte ut på den slutförda rapporten.
 -   **CBR**-formatkoden och dess tillhörande radkod placeras ovanför raden eller avsnittet som visar relaterade beräkningar.
 
-I en kolumndefinition visar **CALC**-kolumntypen en kolumn som anger en formel i raden **Formel**. Denna formel arbetar med data för den här kolumnen i rapporten och använder nyckelordet Baserow i formatkoderna i raden **CBR**. I raddefinitionen definierar **CBR**-formatkoden basraden för kolumner som beräknar en procentandel av eller multiplicerar med basraden för varje rad i rapporten. Du kan ha flera **CBR**-formatkoder i ett radformat som t.ex. ett för nettoomsättning, ett för bruttoförsäljning och en för totala utgifter. Vanligtvis används **CBR**-formatkoden för att skapa en procentsats för konton som jämförs med en total rad. En basrad används för alla beräkningar tills en annan basrad definieras. Du måste definiera en startande **CBR**-formatkod och en avslutande **CBR**-formatkod. Om du till exempel vill bestämma utgifter som en procentandel av nettoomsättning kan du dela värdet i varje utgiftsrad med värdet i raden för nettoomsättning. I detta fall är raden för nettoomsättning basraden. Du kan definiera en kolumndefinition som rapporterar aktuellt och hittills i år-resultat, tillsammans med basprocentandelen av varje resultat, som visas i följande exempel. Startar med en ingående balans.
+I en kolumndefinition anger kolumntypen **CALC** en kolumn som har en formel i raden **Formel**. Denna formel arbetar med data för den här kolumnen i rapporten och använder nyckelordet Baserow i formatkoderna i raden **CBR**. I raddefinitionen definierar **CBR**-formatkoden basraden för kolumner som beräknar en procentandel av eller multiplicerar med basraden för varje rad i rapporten. Du kan ha flera **CBR**-formatkoder i ett radformat som t.ex. ett för nettoomsättning, ett för bruttoförsäljning och en för totala utgifter. Vanligtvis används **CBR**-formatkoden för att skapa en procentsats för konton som jämförs med en total rad. En basrad används för alla beräkningar tills en annan basrad definieras. Du måste definiera en startande **CBR**-formatkod och en avslutande **CBR**-formatkod. Om du till exempel vill bestämma utgifter som en procentandel av nettoomsättning kan du dela värdet i varje utgiftsrad med värdet i raden för nettoomsättning. I detta fall är raden för nettoomsättning basraden. Du kan definiera en kolumndefinition som rapporterar aktuellt och hittills i år-resultat, tillsammans med basprocentandelen av varje resultat, som visas i följande exempel. Startar med en ingående balans.
 
 ### <a name="select-the-base-row-in-a-row-definition-for-a-column-calculation"></a>Välj basraden i raddefinitionen för en kolumnberäkning
 
@@ -217,7 +217,7 @@ Sorteringskoder, sorteringkonton eller värden sorterar en aktuell eller budgeta
 
 I följande exempel sorteras värdena i rapportkolumnen D i stigande ordning på raderna 160 till 490. Dessutom sorteras de absoluta värdena i rapportkolumnen G i fallande ordning på raderna 610 till 940.
 
-| Radkod | Beskrivning                                         | Formatkod | Relaterade formler/rader/enheter | Normalt saldo | Kolumnbegränsning | Länk till ekonomiska dimensioner |
+| Radkod | Beskrivning                                         | Formatkod | Relaterade formler/rader/enheter | Standardsaldo | Kolumnbegränsning | Länk till ekonomiska dimensioner |
 |----------|-----------------------------------------------------|-------------|-----------------------------|----------------|--------------------|------------------------------|
 | 100      | Sorterat efter månatlig avvikelse i stigande ordning       | DES         |                             |                |                    |                              |
 | 130      |                                                     | SORT        | 160:490                     |                | D                  |                              |
@@ -272,7 +272,7 @@ Cellen **Formatåsidosätt** anger formateringen som används för raden när ra
 
 Valutaformatering gäller för ett räkenskapsbelopp och inkluderar valutasymbolen. Följande alternativ är tillgängliga:
 
--   **Valutasymbol** – Valutasymbolen för rapporten. Det här värdet åsidosätter inställningen **Nationella alternatv** för företagsinformationen.
+-   **Valutasymbol** – Rapportens valutasymbol. Det här värdet åsidosätter inställningen **Nationella alternatv** för företagsinformationen.
 -   **Negativa nummer** - Negativa nummer kan ha ett minustecken (-), de kan visas inom parentes, eller de kan ha en triangel (∆).
 -   **Antal decimaler** – Antal siffror som ska visas efter decimaltecknet.
 -   **Nollvärdeåsidosätttext** – Texten som ska inkluderas i rapporten när beloppet är 0 (noll). Texten visas som sista raden i området **Bildpunkt**. 
@@ -303,7 +303,7 @@ Procentsatsformatering inkluderar procenttecknet (%). Följande alternativ är t
 
 Använd anpassad formateringkategori om du vill skapa en anpassad formatåsidosättning. Följande alternativ är tillgängliga:
 
--   **Typ** – Det anpassade formatet.
+-   **Typ** – De anpassade formatet.
 -   **Nollvärdeåsidosätttext** – Texten som ska inkluderas i rapporten när beloppet är 0 (noll). Texten visas som sista raden i området **Bildpunkt**. 
     > [!NOTE]
     >  Om utskrift ignoreras av nollvärden eller ingen periodaktivitet, ignoreras denna text.
@@ -365,7 +365,7 @@ Du kan begränsa en rad i en befintlig bokkod. Kolumndefinitionen måste innefat
 > [!NOTE]
 > Bokkodbegränsningen för en rad åsidosätter bokkodbegränsningarna i kolumndefinitionen för den raden.
 
-### <a name="account-and-transaction-attributes"></a>Konto och transaktionsattribut
+### <a name="account-and-transaction-attributes"></a>konto- och transaktionsattribut
 
 Vissa redovisningssystem stöder kontoattribut och transaktionattribut i ekonomiska data. Dessa attribut fungerar som virtuella kontosegment och kan ha mer information om kontot eller transaktionen. Denna ytterligare information kan vara konto-ID, batch-ID, postnummer eller andra attribut. Om dina attribut och redovisningssystem stöder kan du använda kontoattribut eller transaktionattribut som radmodifikatorer i raddefinitionen. Mer information om hur du åsidosätter radnformation, se avsnittet "Åsidosätt en kolumndefinition" tidigare i den här artikeln.
 
@@ -378,14 +378,14 @@ Cellen **Länka till ekonomiska dimensioner** innehåller länkar till de ekonom
 |----------------------------------|----------------------------------------------------|
 | Ekonomiska dimensioner             | Länk till ekonomiska dimensioner                       |
 | Externt kalkylblad               | Länk till kalkylblad                                  |
-| Ekonomiska dimensioner + kalkylblad | Länk till Ekonomiska dimensioner + Kalkylblad           |
+| Ekonomiska dimensioner + kalkylblad | Länk till ekonomiska dimensioner + kalkylblad           |
 | Management Reporter-rapport       | Management Reporter-rapport                         |
 
-### <a name="specify-a-dimension-or-range"></a>Ange en dimension eller intervall
+### <a name="specify-a-dimension-or-range"></a>Ange en dimension eller ett intervall
 
-1.  Öppna raddefinitionen i Report Designer för att ändra den.
-2.  Dubbelklicka på en cell i kolumnen **Länk till ekonomiska dimensioner**.
-3.  I dialogrutan **Dimensioner**, dubbelklicka på en cell under dimensionsnamnet.
+1.  Öppna den raddefinition som ska ändras i Report Designer.
+2.  Dubbelklicka på en cell i en kolumn av typen **Länk till ekonomiska dimensioner**.
+3.  I dialogrutan **Dimensioner** dubbelklickar du på en cell under dimensionsnamnet.
 4.  I dialogrutan för dimensionen, välj **Individuella eller intervall**.
 5.  I fältet **Från** anger du startdimensionen eller klickar på ![Bläddra](https://i-technet.sec.s-msft.com/dynimg/IC679490.gif "Bläddra") för att söka efter tillgängliga dimensioner. Om du vill ange ett intervall med dimensioner, anger du den avslutande dimensionen i fältet **Till** .
 6.  Klicka på **OK** för att stänga dialogrutan för dimensionen. Dialogrutan **Dimensioner** visar den uppdaterade dimensionen eller intervallet.
@@ -464,7 +464,7 @@ I tabellen nedan beskrivs fälten i dialogrutan **Dimensioner**.
 | SUmmeringskonton   | I fältet **Namn** anger du eller bläddrar efter en dimension av summeringskonton. Fältet **Formel** fylls i med formeln i cellen **Länka till ekonomiska dimensioner** för detta summeringskonto i rapportdefinitionen.                                                                       |
 
 ## <a name="add-dimension-value-sets-in-a-row-definition"></a>Lägg till definitionvärdeuppsättningar i en raddimension
-En dimensionsvärdeuppsättning är en namngiven grupp av dimensionsvärden. En dimensionsvärdeuppsättning kan bara innehålla värden i en enda dimension, men du kan använda en dimensionsvärdeuppsättning i flera raddefinitioner, kolumndefinitioner, rapportträddefinitioner och rapportdefinitioner. Du kan också kombinera dimensionsvärdeuppsättningar i en rapportdefinition. När en ändring av dina ekonomiska data kräver att du ändrar dimensionsvärdeuppsättningen kan du uppdatera definitionen för dimensionsvärdeuppsättningen och uppdateringen tillämpas på alla områden som använder dimensionsvärdeuppsättning. Om du till exempel ofta anger ett värdeintervall till länken till dina ekonomiska data, till exempel värdena från 5100 till 5600, kan du tilldela detta intervall till en kontouppsättning med namnet Försäljning till l. När du har skapat en uppsättning dimensionsvärden kan du välja den uppsättning som din ekonomiska datalänk. Ett annat exempel är om värdeintervallet 5100 till 5600 har tilldelat till Försäljning och 4175 har tilldelats till Rabatter, kan du bestämma total försäljning genom att subtrahera Rabatter från Försäljning. Den här åtgärden anges som **(5100:5600)-4175**.
+En dimensionsvärdeuppsättning är en namngiven grupp av dimensionsvärden. En dimensionsvärdeuppsättning kan bara innehålla värden i en enda dimension, men du kan använda en dimensionsvärdeuppsättning i flera raddefinitioner, kolumndefinitioner, rapportträddefinitioner och rapportdefinitioner. Du kan också kombinera dimensionsvärdeuppsättningar i en rapportdefinition. När en ändring av dina ekonomiska data kräver att du ändrar dimensionsvärdeuppsättningen kan du uppdatera definitionen för dimensionsvärdeuppsättningen och uppdateringen tillämpas på alla områden som använder dimensionsvärdeuppsättning. Om du till exempel ofta anger ett värdeintervall till länken till dina ekonomiska data, till exempel värdena från 5100 till 5600, kan du tilldela detta intervall till en kontouppsättning med namnet Försäljning till l. När du har skapat en mängd med dimensionsvärden, kan du välja den mängden som din länk till ekonomiska data. Ett annat exempel är att om du har värdeintervallet 5100 till 5600 kopplat till Försäljning, och 4175 kopplat till Rabatter, så kan du avgöra den totala försäljningen genom att subtrahera Rabatter från Försäljning. Den här åtgärden anges som **(5100:5600)-4175**.
 
 ### <a name="create-a-set-of-dimension-values"></a>Skapa en dimensionsvärdeuppsättning.
 
@@ -476,11 +476,11 @@ En dimensionsvärdeuppsättning är en namngiven grupp av dimensionsvärden. En 
 6.  I dialogrutan **Konto**, välj kontonamnet i listan eller sök efter posten i fältet **Sök** . Klicka sedan på **OK**.
 7.  Upprepa steg 5 till 6 i kolumnen **Till** för att utforma en formel för den operatören.
 8.  När formeln när slutförd klickar du på **OK**.
-9.  Klicka på dialogrutan **Hantera dimensionsuppsättningar** och klicka sedan på **Stäng**.
+9.  Klicka på **Stäng** i dialogrutan **Hantera dimensionsgrupper**.
 
-### <a name="update-a-set-of-dimension-values"></a>Uppdatera en dimensionsvärdeuppsättning.
+### <a name="update-a-set-of-dimension-values"></a>Uppdatera en mängd med dimensionsvärden
 
-1.  I Report Designer öppnar du rad-, kolumn- eller träddefinitionen för att ändra.
+1.  Öppna rad-, kolumn- eller träddefinitionen som ska ändras i Report Designer.
 2.  På menyn **Redigera** klickar du opå **Hantera dimensionsvärdeuppsättningar**.
 3.  Välj diaglogrutan **Hantera dimensionsvärdeuppsättningar** och välj dimensionstyp i fältet **Dimension**.
 4.  I listan väljer du den dimensionsvärdeuppsättning som ska uppdateras och klickar sedan på **Ändra**.
@@ -498,9 +498,9 @@ En dimensionsvärdeuppsättning är en namngiven grupp av dimensionsvärden. En 
 4.  I listan markerar du den uppsättning som ska ändras och klickar sedan på **Välj**.
 5.  Ange ett nytt namn för den kopierade uppsättningen och klicka på **OK**.
 
-### <a name="delete-a-dimension-set"></a>Radera en dimensionsuppsättning
+### <a name="delete-a-dimension-set"></a>Ta bort en dimensionsgrupp
 
-1.  I Report Designer öppnar du rad-, kolumn- eller träddefinitionen för att ändra.
+1.  Öppna rad-, kolumn- eller träddefinitionen som ska ändras i Report Designer.
 2.  På menyn **Redigera** klickar du opå **Hantera dimensionsvärdeuppsättningar**.
 3.  Välj diaglogrutan **Hantera dimensionsvärdeuppsättningar** och välj dimensionstyp i fältet **Dimension**.
 4.  Välj de uppsättning som ska tas bort och klicka sedan på **Ta bort**. Klicka på **Ja** om du vill ta bort dimensionsvärdeuppsättningen permanent.

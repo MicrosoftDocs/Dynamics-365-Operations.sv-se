@@ -17,12 +17,11 @@ ms.search.region: Global
 ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: cd024f2bc06fca9c21ea41fbed44efbc519cee94
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 9b9bb0acc6f0dc1722c916f133eed766ffdd4cc8
 ms.contentlocale: sv-se
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -62,7 +61,7 @@ I Finance and Operations måste du ofta veta både på plats och samband för en
 -   Menyn separator (om knappen är placerad inuti en namngiven grupp inuti en meny-knapp)
 -   Grupp eller flik på sidan (t.ex. namnet på en snabbfliken)
 
-Exempelvis du maskinskrev **tot** i **sökfältet** och granskar nu resultat listan. Den första posten, för en knapp vid namn **Summor**, markeras. Knappsökvägen för **Försäljningsorder** &gt; **Visa** visas också. **Försäljningsorder**-delen i sökvägen motsvarar fliken **Försäljningsorder** i åtgärdsfönstret, och **Visa**-delen i sökvägen motsvarar **Visa**-gruppen på den fliken. På samma sätt informerar sökvägen för knappen **Total rabatt** (**Sälj** &gt; **Beräkna**) dig om att den här knappen finns i gruppen **Beräkna** på fliken **Sälj** i åtgärdsfönstret. Därför kan den här informationen hjälpa dig att förstå exakt vilken knapp som utlöses av sökåtgärden (om du väljer knappen i resultatlistan). 
+Exempelvis du maskinskrev **tot** i **sökfältet** och granskar nu resultat listan. Den första posten, för en knapp vid namn **Summor**, markeras. Knappsökvägen för **Försäljningsorder** &gt; **Visa** visas också. **Försäljningsorder**-delen av sökvägen motsvarar fliken **Försäljningsorder** i åtgärdsfönstret, och **Visa**-delen i sökvägen motsvarar **Visa** gruppen på fliken. Dessutom informerar sökvägen till knappen **Totalrabatt** (**Sälj** &gt; **Beräkna**) dig om att den här knappen finns i gruppen **Beräkna** på fliken **Sälj** i åtgärdsfönstret. Därför kan den här informationen hjälpa dig att förstå exakt vilken knapp som utlöses av sökåtgärden (om du väljer knappen i resultatlistan). 
 
 [![fält-för-åtgärdssökning-med-data](./media/action-search-field-with-data.png)](./media/action-search-field-with-data.png) 
 

@@ -18,11 +18,11 @@ ms.search.region: Global
 ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 770a1681e4fa9974b081d0c63a10eb1961f13014
-ms.openlocfilehash: 6d4697af6f7467f25a461fae4e9320402f83b0e3
+ms.translationtype: HT
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 06a75889e62cbba6e47a8543cf663868df5ae2e3
 ms.contentlocale: sv-se
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -68,8 +68,8 @@ En dimension är en skärningspunkt av data och värden. Du kan gruppera data oc
 | Alternativ                | Beskrivning                                                                                                                                                                                                                                                                      |
 |-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Dimension             | Mönstret som identifierar den dimension du vill lägga till raddefinitionen. Detta mönster innehåller ett et-tecken (&) eller nummertecknet (\#) för varje position i dimensionerna. Rent allmänt bör du använda et-tecken för dimensionen Huvudkonto och siffertecken för alla andra dimensioner. |
-| Start för dimensionsintervall | Det första värdet för denna dimension för att lägga till raddefinitionen.                                                                                                                                                                                                                 |
-| Slut för dimensionsintervall   | Det sista värdet för denna dimension för att lägga till raddefinitionen.                                                                                                                                                                                                                  |
+| Dimensionsintervallets början | Dimensionens inledande värde som ska läggas till i raddefinitionen.                                                                                                                                                                                                                 |
+| Dimensionsintervallets slut   | Det sista värdet för denna dimension för att lägga till raddefinitionen.                                                                                                                                                                                                                  |
 
 Gör på följande sätt för att lägga till dimensioner i en raddefinition:
 
@@ -93,7 +93,7 @@ Om du har en balansräkning där beloppen avrundas kan det hända att summorna i
 Gör på följande sätt för att justera avrundningen i en balansräkning.
 
 1.  I Rapportdesignern, klicka på **Raddefinitioner** och öppna raddefinitionen för att ändra.
-2.  I menyn **Redigera**, klicka på **Avrundningsjusteringar**.
+2.  Klicka på **Avrundningsjustering** på **Redigera**-menyn.
 3.  I dialogrutan **Avrundningsjusteringar** anger du följande värden:
     -   **Avrundningsjusteringar** – Radkoden för raden som ska justeras för att balansera balansräkningen.
     -   **Total tillgångsrad** – radkoden för raden i balansräkningen som innehåller de totala tillgångarna.
@@ -121,23 +121,23 @@ Du kan skapa och ändra teckensnitt för din rapport. Du kan sedan tillämpa des
 <td>Skapa ett teckensnitt</td>
 <td><ol>
 <li>I Report Designer i menyn <strong>Format</strong>klickar du på <strong>Utföranden och formatering</strong>.</li>
-<li>Klicka på <strong>Ny</strong> i dialogrutan <strong>Teckensnitt och formatering</strong> och ange sedan ett unikt namn för det nya teckensnittet.</li>
-<li>Gör dina teckensnittsval och klicka på <strong>OK</strong>.</li>
+<li>Klicka på <strong>Ny</strong> i dialogrutan <strong>Format och formatering</strong> och ange ett unikt namn på det nya formatet.</li>
+<li>Välj teckensnitt och klicka sedan på <strong>OK</strong>.</li>
 </ol></td>
 </tr>
 <tr class="even">
 <td>Ändra en teckenstil</td>
 <td><ol>
 <li>I Report Designer i menyn <strong>Format</strong>klickar du på <strong>Utföranden och formatering</strong>.</li>
-<li>Välj ett teckensnitt som ska ändras i dialogrutan <strong>Teckensnitt och formatering</strong> och klicka sedan på <strong>Modifiera</strong>.</li>
-<li>Gör dina teckensnittsval och klicka på <strong>OK</strong>.</li>
+<li>Markera en stil du vill ändra i dialogrutan <strong>Format och formatering</strong> och klicka sedan på <strong>Ändra</strong>.</li>
+<li>Välj teckensnitt och klicka sedan på <strong>OK</strong>.</li>
 </ol></td>
 </tr>
 <tr class="odd">
 <td>Tillämpa ett teckensnitt</td>
 <td><ol>
 <li>Öppna Report Designer och välj definition, kolumndefinition, sidhuvud eller sidfot och välj där sedan en eller flera celler.</li>
-<li>Välj en teckenstil i listan <strong>Utförande</strong> i verktygsfältet.</li>
+<li>Välj en teckenstil från listan <strong>Formatmall</strong> i verktygsfältet.</li>
 </ol></td>
 </tr>
 </tbody>
@@ -164,7 +164,7 @@ För att göra det enklare att se kolumnerna som du arbetar med i raddefinitione
 ### <a name="hide-columns-in-the-view-pane"></a>Dölj kolumner i vyfönstret
 
 1.  Öppna raddefinitionen i Report Designer för att ändra den.
-2.  Markera kolumnen eller kolumnerna för att minimera.
+2.  Markera den kolumn eller de kolumner du vill minimera.
 3.  Högerklicka och klicka sedan på **Dölj**.
 
 ### <a name="show-all-hidden-columns-in-the-view-pane"></a>Visa alla dolda kolumner i vyfönstret

@@ -18,10 +18,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 04f8cb1a6375be9371bca2af7e4044392ce7322b
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
 ms.openlocfilehash: 12fd8e11211b701304f9f4a68ff31f3b42e3e8ee
 ms.contentlocale: sv-se
-ms.lasthandoff: 08/02/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -54,7 +54,7 @@ Om du vill sprida säkerhet på åtkomstnivå till Power BI måste Power BI-inne
 Användare som läggs till i rollen **Kostnadsobjektcontroller** kommer endast att se de data som de får tillstånd att se enligt definitionen i organisationshierarkin på åtkomstnivå för kostnadsredovisning. **Obs!** Säkerhet på radnivå som gäller paneler och rapporter i Microsoft Dynamics 365 for Finance and Operations som är inbäddade från Power BI.
 
 ## <a name="updating-security"></a>Uppdatera säkerhet
-Om uppdateringar görs av säkerhet på åtkomstnivå i kostnadsredovisningen och du vill att Power BI ska återspegla dessa uppdateringarna, måste du uppdatera enhetsbutiken **Kostnadsredovisningsanalys** för Power BI-innehåll. När du har slutfört uppdateringen av enhetsbutiken från Finance and Operations måste du uppdatera artefakterna på PowerBI.com. Mer information om hur du gör en uppdatering av enhetsbutik finns [Uppdatera enhetsbutik](power-bi-integration-entity-store.md#update-entity-store). Ägaren av **Kostnadsredovisningsanalys** för Power BI-innehåll måste också göra en uppdatering av enhetsbutiken om nya användare beviljas åtkomst till organisationshierarkin. Dessutom måste ägaren lägga till nya användare till rollen **Kostnadsobjektcontroller** i PowerBI.com, så att säkerhet på radnivå tillämpas för dem.
+Om uppdateringar görs av säkerhet på åtkomstnivå i kostnadsredovisningen och du vill att Power BI ska återspegla dessa uppdateringarna, måste du uppdatera enhetsbutiken **Kostnadsredovisningsanalys** för Power BI-innehåll. När du har slutfört uppdateringen av enhetsbutiken från Finance and Operations måste du uppdatera artefakter på PowerBI.com. Mer information om hur du gör en uppdatering av en enhetsbutik finns [Uppdatera enhetsbutik](power-bi-integration-entity-store.md#update-entity-store). Ägaren av **Kostnadsredovisningsanalys** för Power BI-innehåll måste också göra en uppdatering av enhetsbutiken om nya användare beviljas åtkomst till organisationshierarkin. Dessutom måste ägaren lägga till nya användare till rollen **Kostnadsobjektcontroller** i PowerBI.com, så att säkerhet på radnivå tillämpas för dem.
 
 ## <a name="disabling-security"></a>Inaktivera säkerhet
 Vi utgår från att din organisation vill begränsa dataåtkomst. Om säkerhetsparametrarna av någon anledning är inaktiverade när du kör kostnadsredovisning måste ägaren istället lägga till rollen **Kostnadsredovisare** i Power BI. Om du ändrar säkerhet från ett aktiverat tillstånd till inaktiverat är det en bra idé att ta bort användare från rolleb **Kostnadsobjektcontroller**. Och tvärtom när du aktiverar säkerhet igen. Användare kan tillhöra båda rollerna. Gemensam åtkomst är unionen av båda rollerna. I fallet **Kostnadsredovisningsanalys** för Power BI-innehåll får användare som har gemensam åtkomst obegränsad dataåtkomst. Om målet är att använda begränsad åtkomst får användarna endast tilldelas rollen **Kostnadsobjektcontroller**. Dessa säkerhetsuppdateringar på radnivå börjar gälla omedelbart. Berörda användare bör uppdatera sina webbläsare.
