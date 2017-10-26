@@ -20,10 +20,10 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: ebcae0e323203a98a9b8ed1113db945fceaaa4af
+ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
+ms.openlocfilehash: e1c29f597b190bd36b6fc64b16913ecdd02daf75
 ms.contentlocale: sv-se
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -68,7 +68,7 @@ När den här konfigurationen används, skapas en inköpsorder för den relatera
 En produktionsorder kan ha många åtgärder, och varje åtgärd kan tilldelas en annan leverantör. Därför kan komplett tillverkningsorder utlösa flera olika inköpsorder.
 
 ## <a name="subcontracting-of-production-flow-activities"></a>Legotillverkning av produktionsflödesaktiviteter
-Lösningsmodellen [lean manufacturing](lean-manufacturing-overview.md)modellerar legotillverkning som en tjänst relaterad till ett [produktionsflöde](/dynamics365/unified-operations/supply-chain/production-control/tasks/create-production-flow-version) (avsnitt i uppgiftsguide). Därför kallas den här typen av legotillverkning också för [verksamhetsbaserad legotillverkning.](activity-based-subcontracting.md) En särskild kostnadsgruppstyp kallad **Direktutkontraktering** har införts, och legotillverkningstjänsterna är inte längre en del av strukturlistan (BOM) för de färdiga produkterna. När du använder lean manufacturing definieras all verksamhet av kanbans som kan vara relaterade till en eller flera produktionsflödesaktiviteter. Denna förklaring låter hittills precis som en förklaring för tillverkningsorder. Medan produktionsorder alltid måste avslutas med en färdig produkt, kan du emellertid skapa kanbans för att förse en halvfärdig produkt. Du behöver inte introducera en ny produkt eller strukturlistenivå.  
+Lösningsmodellen [lean manufacturing](lean-manufacturing-overview.md)modellerar legotillverkning som en tjänst relaterad till ett [produktionsflöde](tasks/create-production-flow-version.md) (avsnitt i uppgiftsguide). Därför kallas den här typen av legotillverkning också för [verksamhetsbaserad legotillverkning.](activity-based-subcontracting.md) En särskild kostnadsgruppstyp kallad **Direktutkontraktering** har införts, och legotillverkningstjänsterna är inte längre en del av strukturlistan (BOM) för de färdiga produkterna. När du använder lean manufacturing definieras all verksamhet av kanbans som kan vara relaterade till en eller flera produktionsflödesaktiviteter. Denna förklaring låter hittills precis som en förklaring för tillverkningsorder. Medan produktionsorder alltid måste avslutas med en färdig produkt, kan du emellertid skapa kanbans för att förse en halvfärdig produkt. Du behöver inte introducera en ny produkt eller strukturlistenivå.  
 
 Eftersom kanban-regler kan vara mycket dynamiska, kan du utforma du olika leveransvarianter för samma produkt i ett produktionsflöde. När du använder resurssnål legotillverkning sker en strikt uppdelning av materialflödet och det ekonomiska flödet. Hela materialflödet representeras av kanban-aktiviteter. Inköpsorder för de tjänsteprodukterna och leveransbokföringarna av dessa tjänster kan utföras automatiskt, baserat på statusen för kanban-jobb i produktionsflödet. Kanban-jobb kan påbörjas och slutföras innan inköpsorderna skapas. Legotillverkningsdokument (inköpsorder och inköpsleveransen av tjänsten) kan aggregeras efter period och tjänst. Därför kan antalet inköpsdokument och rader hållas nere, till och med i mycket repetitiva åtgärder där leverantörer ger legotillverkningstjänster i ett enstycksflöde.
 

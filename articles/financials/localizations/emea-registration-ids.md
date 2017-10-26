@@ -17,12 +17,11 @@ ms.search.region: Global
 ms.author: vlru
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
-ms.openlocfilehash: 55c25b005e9dc73713f3d4a30eab5148b17c2fec
+ms.translationtype: HT
+ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
+ms.openlocfilehash: c2c625e9c4f0df762abd6120201a2623ac756bf9
 ms.contentlocale: sv-se
-ms.lasthandoff: 06/20/2017
-
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -61,7 +60,7 @@ Registreringskategori är registreringsidentifierare för land/region som har go
 
 ## <a name="enter-registration-ids-for-global-address-book-records"></a>Ange registrerings-ID för globala adressboksposter
 
-Den globala adressboken (GAB) i Microsoft Finance and Operations innehåller konsoliderad adressinformation för kunder, leverantörer, kontakter, affärsrelationer och juridiska personer. Mer information finns i [Översikt över Global adressbok](/dynamics365/unified-operations/fin-and-ops/organization-administration/overview-global-address-book). Partposterna som lagras i den globala adressboken kan innehålla en eller flera adressposter. Dessa adresser används för olika ändamål såsom fakturering, eller delleverans. Du kan ställa in registrerings-ID för adressinformation för kunder, leverantörer, personal och juridiska personer. Leta upp den partpost (juridisk person, leverantör, kund, anställd) som du vill ange register-ID för, klicka på **Registrerings-ID** på formulär som berör par, juridisk person, leverantör, kund eller arbetare för att öppna sidan **Hantera adresser**. På fliken **Momsregistrering** klickar du på **Lägg till** och anger följande information om registrerings-ID.
+Den globala adressboken (GAB) i Microsoft Finance and Operations innehåller konsoliderad adressinformation för kunder, leverantörer, kontakter, affärsrelationer och juridiska personer. Mer information finns i [Översikt över Global adressbok](../../fin-and-ops/organization-administration/overview-global-address-book.md). Partposterna som lagras i den globala adressboken kan innehålla en eller flera adressposter. Dessa adresser används för olika ändamål såsom fakturering, eller delleverans. Du kan ställa in registrerings-ID för adressinformation för kunder, leverantörer, personal och juridiska personer. Leta upp den partpost (juridisk person, leverantör, kund, anställd) som du vill ange register-ID för, klicka på **Registrerings-ID** på formulär som berör par, juridisk person, leverantör, kund eller arbetare för att öppna sidan **Hantera adresser**. På fliken **Momsregistrering** klickar du på **Lägg till** och anger följande information om registrerings-ID.
 
 
 |Fält                |beskrivning                                                |

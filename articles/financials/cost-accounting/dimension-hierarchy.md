@@ -19,11 +19,11 @@ ms.search.industry: Manufacturing
 ms.author: YuyuScheller
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 63160b9473c7f45b0eb0ca7139f9ed47c8e1446f
-ms.openlocfilehash: dcbab70d2057a2eb252538a51343fa8bae16873d
+ms.translationtype: HT
+ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
+ms.openlocfilehash: cef54fa8109ebce0f8a6ca67c93afc30ec8a6781
 ms.contentlocale: sv-se
-ms.lasthandoff: 06/20/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -332,6 +332,6 @@ Inställningar för Hierarki för åtkomstlista används för att bestämma vilk
     - Data Power BI-visualiseringar som bäddas in i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, klient
 
 > [!NOTE] 
-> - Innan Hierarki för åtkomstlista kan påverka data i Power BI, måste hierarkiåtkomst och säkerhet på radnivå i Power BI anges. Mer information finns i [ställa in säkerhet för kostnadsredovisningens innehållspaket](/dynamics365/unified-operations/dev-itpro/analytics/setup-security-cost-accounting-content-pack).
+> - Innan Hierarki för åtkomstlista kan påverka data i Power BI, måste hierarkiåtkomst och säkerhet på radnivå i Power BI anges. Mer information finns i [ställa in säkerhet för kostnadsredovisningens innehållspaket](../../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md).
 > - Hierarki för åtkomstlista hjälper inte export av data till Excel. Därför ska detta rapportverktyg bara användas av kostnadsrevisorer och chefer som måste ha fullständig behörighet för att visa data.
 

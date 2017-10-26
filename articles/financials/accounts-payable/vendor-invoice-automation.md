@@ -15,10 +15,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 172d952c79347e7dd563cfda70729750fa0ddde9
-ms.openlocfilehash: c47ca406e2c8be98f26f1c78d6f5e0a3f66690a5
+ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
+ms.openlocfilehash: 75865ece49837e2a8758c4d739d3e29ce9128945
 ms.contentlocale: sv-se
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 # <a name="vendor-invoice-automation"></a>Automation av leverantörsfaktura
@@ -57,7 +57,7 @@ Ett datapaket är den arbetsenhet som måste skickas till Finance and Operations
 
 Dokumentbilagor till leverantörsfakturan är en ny dataenhet som introduceras som en del av den här funktionen. Rubrikenheten för leverantörsfakturan har ändrats så att den stöder bilagor. Radenheten för leverantörsfakturan har inte ändrats för den här funktionen.
 
-Det här avsnittet ger inte en detaljerad definition av ett datapaket. Det ges inte heller någon beskrivning av hur du skapar datapaket. Den här informationen finns i [Ramverk för dataenheter och -paket](/dynamics365/unified-operations/dev-itpro/data-entities/data-entities-data-packages).
+Det här avsnittet ger inte en detaljerad definition av ett datapaket. Det ges inte heller någon beskrivning av hur du skapar datapaket. Den här informationen finns i [Ramverk för dataenheter och -paket](../../dev-itpro/data-entities/data-entities-data-packages.md).
 
 Om du snabbt vill generera testdata som inkluderar fakturor och bilagor ska du följa dessa steg.
 

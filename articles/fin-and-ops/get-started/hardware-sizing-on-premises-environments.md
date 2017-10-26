@@ -15,18 +15,18 @@ ms.custom: 55651
 ms.assetid: 
 ms.search.region: Global
 ms.author: chwolf
-ms.search.validFrom: 2016-08-30T00:00:00.000Z
+ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: 08c38aada355583c5a6872f75b57db95d9b81786
-ms.openlocfilehash: 4a1cab8c126ad063a52827421d2ea1104d0c7287
+ms.sourcegitcommit: c73eeaaf28df8db720431d4bcd317c9721baa99d
+ms.openlocfilehash: 5be9b195754d6c8315342c83451128092f64a241
 ms.contentlocale: sv-se
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
 # <a name="hardware-sizing-for-on-premises-environments"></a>Beräkna maskinvara för lokala miljöer
-Innan du påbörjar beräkningsprocessen för maskinvara och infrastruktur för en lokal miljö bör du bekanta dig med [systemkrav](../get-started/system-requirements.md) och [instruktioner för installation och distribution](../deployment/setup-deploy-on-premises-environments.md) för att få en djupare förståelse av underliggande infrastruktur. 
+Innan du påbörjar beräkningsprocessen för maskinvara och infrastruktur för en lokal miljö bör du bekanta dig med [systemkrav](system-requirements.md) och [instruktioner för installation och distribution](../../dev-itpro/deployment/setup-deploy-on-premises-environments.md) för att få en djupare förståelse av underliggande infrastruktur. 
 
   **Obs!** Var mycket uppmärksam på systeminställninganas bästa metod för optimal prestanda. 
 
@@ -89,7 +89,7 @@ För att förstå dina beräkningskrav måste du veta högsta transaktionsvolyme
 Vi rekommenderar alltid att använda SQL Server i antingen ett kluster eller speglingsinställning. Den sekundära SQL-noden ska ha samma antal kärnor som den primära noden. 
 
 ### <a name="active-directory-federation-services-ad-fs"></a>Active Directory Federation Services (AD FS)
-För beräkning av AD FS, se [AD FS serverkapacitetdokumentation](https://docs.microsoft.com/en-us/windows-server/identity/ad-fs/design/planning-for-ad-fs-server-capacity).
+För beräkning av AD FS, se [AD FS serverkapacitetdokumentation](/windows-server/identity/ad-fs/design/planning-for-ad-fs-server-capacity).
 
 Ett [beräkningskalkylblad](http://adfsdocs.blob.core.windows.net/adfs/ADFSCapacity2016.xlsx) är tillgänglig för att planera antalet instanser i distributionen.
 

@@ -15,13 +15,13 @@ ms.search.scope: Core, Operations, UnifiedOperations
 ms.custom: 266844
 ms.search.region: Austria, Belgium, Czech Republic, Estonia, Finland, Germany, Latvia, Lithuania, Netherlands, Sweden
 ms.author: v-elgolu
-ms.search.validFrom: 2016-11-30T00:00:00.000Z
+ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: f76e431320414b508728cbe9fe20456f107cbe40
-ms.openlocfilehash: 7dc6a32a9babc95cfa4ad031534404cae6fa37ea
+ms.translationtype: HT
+ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
+ms.openlocfilehash: 411f1d9d62ff1e4cedc2f4146a1f4208ee94a383
 ms.contentlocale: sv-se
-ms.lasthandoff: 06/09/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -57,16 +57,16 @@ Om du vill generera en momsrapport måste du konfigurera följande:
 
 ### <a name="sales-tax-authorities-for-vat-reporting"></a>Momsmyndigheter för momsrapportering
 
-<!---For general information about setting up a sales tax authority, see [Set up sales tax authorities](/dynamics365/unified-operations/financials/general-ledger/tasks/set-up-sales-tax-authorities). -->
+<!---For general information about setting up a sales tax authority, see [Set up sales tax authorities](general-ledger/tasks/set-up-sales-tax-authorities). -->
 Innan du kan ställa in momsrapporteringskoder måste du välja rätt rapportlayout för momsmyndigheten. På sidan **Momsmyndigheter**, i avsnittet **Allmänt**, väljer du en **Rapportlayout**. Den här layouten används när du ställer in momsrapporteringskoder.
 
 ### <a name="sales-tax-reporting-codes"></a>Momsrapporteringskoder
 
-Momsrapporteringskoder är rutkoder i momsrapporten eller taggnamn i XML-format. Koderna används för att sammanställa och förbereda beloppen för rapporten. Namnen på resulterande belopp används när du konfigurerar det elektroniska rapporteringsformatet för momsrapporten. Du kan skapa och hantera momsrapporteringskoder på sidan **Momsrapporteringskoder**. Du måste tilldela en rapportlayout åt varje kod. När du har skapat momsrapporteringskoderna kan du välja dem i avsnittet **Rapportinställningar** på sidan **Momskoder**. <!---For more information, see [Set up sales tax reporting codes](/dynamics365/unified-operations/financials/general-ledger/tasks/set-up-sales-tax-reporting-codes).-->
+Momsrapporteringskoder är rutkoder i momsrapporten eller taggnamn i XML-format. Koderna används för att sammanställa och förbereda beloppen för rapporten. Namnen på resulterande belopp används när du konfigurerar det elektroniska rapporteringsformatet för momsrapporten. Du kan skapa och hantera momsrapporteringskoder på sidan **Momsrapporteringskoder**. Du måste tilldela en rapportlayout åt varje kod. När du har skapat momsrapporteringskoderna kan du välja dem i avsnittet **Rapportinställningar** på sidan **Momskoder**. <!---For more information, see [Set up sales tax reporting codes](../general-ledger/tasks/set-up-sales-tax-reporting-codes.md).-->
 
 ### <a name="sales-tax-codes-for-vat-reporting"></a>Momskoder för momsrapportering
 
-<!---For general information about setting up sales tax codes, see [Set up sales tax codes](/dynamics365/unified-operations/financials/general-ledger/tasks/set-up-sales-tax-codes).--> Base amounts and tax amounts of sales tax transactions can be aggregated on reporting codes in the VAT statement (XML tags or declaration boxes). You can set this up by associating sales tax reporting codes for different transaction types for sales tax codes on the **Sales tax codes** page. The following table describes the transaction types in the report setup for sales tax codes. The calculation includes transactions for all types of sources except sales tax.
+<!---For general information about setting up sales tax codes, see [Set up sales tax codes](../general-ledger/tasks/set-up-sales-tax-codes.md).--> Base amounts and tax amounts of sales tax transactions can be aggregated on reporting codes in the VAT statement (XML tags or declaration boxes). You can set this up by associating sales tax reporting codes for different transaction types for sales tax codes on the **Sales tax codes** page. The following table describes the transaction types in the report setup for sales tax codes. The calculation includes transactions for all types of sources except sales tax.
 
 <table>
 <colgroup>
@@ -252,9 +252,9 @@ d<li>Transaktionens <strong>Momsbasbelopp</strong> eller <strong>Momsbelopp</str
 
 Du kan använda elektronisk rapportering (ER) för att konfigurera utdrag och rapporter, samt för att exportera datavarierande elektroniska format utan att ändra X++ -koden. För mer information:
 
--   [Översikt över elektronisk rapportering](/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting)
--   [Hämta konfigurationer för elektronisk rapportering från Lifecycle Services](/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs)
--   [Lokaliseringskrav – Skapa en GER-konfiguration](/dynamics365/unified-operations/dev-itpro/analytics/electronic-reporting-configuration)
+-   [Översikt över elektronisk rapportering](../../dev-itpro/analytics/general-electronic-reporting.md)
+-   [Hämta konfigurationer för elektronisk rapportering från Lifecycle Services](../../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md)
+-   [Lokaliseringskrav – Skapa en GER-konfiguration](../../dev-itpro/analytics/electronic-reporting-configuration.md)
 
 ## <a name="countryspecific-resources-for-vat-statements"></a>Landspecifika resurser för momsrapporter
 Momsrapporten för varje land måste uppfylla kraven i landets lagstiftning. Det finns fördefinierade allmänna modeller och format för momsrapporter för de länder som anges i tabellen nedan.

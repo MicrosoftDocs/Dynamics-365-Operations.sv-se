@@ -19,10 +19,10 @@ ms.author: maertenm
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 9bc4dba3c31e82da2285ef5e339ace634fbd6fde
+ms.sourcegitcommit: d67ad79c068651f32ce7dc776bc460698557bc29
+ms.openlocfilehash: 069af29012f75aa1a15ba9df86fe1fc9e04eaf41
 ms.contentlocale: sv-se
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -45,7 +45,7 @@ Elektroniska signaturer är ett juridiskt krav för flera reglerade branscher so
 ## <a name="electronic-signatures-in-dynamics-365-for-finance-and-operations"></a>Elektroniska signaturer i Dynamics 365 for Finance and Operations
 I Finance and Operations kan du använda elektroniska signaturer för kritiska affärsprocesser. Vissa processer har inbyggda funktioner för elektronisk signatur. Du kan även skapa anpassade signaturkrav för alla databastabeller och fält. 
 
-Elektroniska signaturer har en inbyggd funktion för digital signatur. Alla användare som signerar dokument måste få ett giltigt kryptografiskt certifikat. När ett dokument signeras verifieras den privata nyckeln som är associerad med certifikatet. Finance and Operations registrerar information om elektroniska signaturer i en logg för att tillhandahålla ett redovisningsspår. För att ställa in elektroniska signaturer, se [Ställ in elektroniska signaturer (uppgiftsguide)](/dynamics365/unified-operations/fin-and-ops/organization-administration/tasks/set-up-electronic-signatures).
+Elektroniska signaturer har en inbyggd funktion för digital signatur. Alla användare som signerar dokument måste få ett giltigt kryptografiskt certifikat. När ett dokument signeras verifieras den privata nyckeln som är associerad med certifikatet. Finance and Operations registrerar information om elektroniska signaturer i en logg för att tillhandahålla ett redovisningsspår. För att ställa in elektroniska signaturer, se [Ställ in elektroniska signaturer (uppgiftsguide)](tasks/set-up-electronic-signatures.md).
 
 ## <a name="users-who-require-access-to-electronic-signatures"></a>Användare som behöver åtkomst till elektroniska signaturer
 Tre typer av användare kräver normalt säkerhetsåtkomst till elektroniska signaturer: elektronisk signaturadministratörer, undertecknare och elektronisk signaturrevisorer.

@@ -18,10 +18,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: db41b3873755f93895aea7a32b65f2a8ed6a57fd
-ms.openlocfilehash: 108a4f4ce366d2efd66fc1ed27ffb6b23ff0e933
+ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
+ms.openlocfilehash: 661c5a14d27f3ad9df6088c2977c507ca315a998
 ms.contentlocale: sv-se
-ms.lasthandoff: 08/10/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -37,7 +37,7 @@ Med mobila funktioner i Microsoft Dynamics 365 for Finance and Operations, Enter
 
 | Förutsättning                                                                                            | beskrivning                                                                                                                                                          |
 |---------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Mobil handbok - före läsning                                                                                |[Mobil plattform](/dynamics365/unified-operations/dev-itpro/mobile-apps/platform/mobile-platform-home-page)                                                                                                  |
+| Mobil handbok - före läsning                                                                                |[Mobil plattform](../../dev-itpro/mobile-apps/platform/mobile-platform-home-page.md)                                                                                                  |
 | Dynamics 365 for Finance and Operations                                                                             | En miljö med Microsoft Dynamics 365 for Operations version 1611 och plattformsuppdatering 3 för Microsoft Dynamics for Operations (november 2016)                   |
 | Installera snabbkorrigering KB 3204341.                                                                              | Uppgiftsinspelaren kan felaktigt spela in två Stäng-kommandon för listrutans dialogrutor. Detta ingår i Dynamics 365 for Operation-plattformsuppdatering 3 (uppdatering november 2016) |
 | Installera snabbkorrigering KB 3207800.                                                                              | Denna snabbkorrigering gör att bifogade filer kan visas på mobila klienten. Detta ingår i Dynamics 365 for Operation-plattformsuppdatering 3 (uppdatering november 2016).           |

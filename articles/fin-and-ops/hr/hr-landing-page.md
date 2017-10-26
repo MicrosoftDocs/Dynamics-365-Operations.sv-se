@@ -17,10 +17,10 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 04f8cb1a6375be9371bca2af7e4044392ce7322b
-ms.openlocfilehash: 49f7a8f69729002812e78de757ae889266327ff4
+ms.sourcegitcommit: 04d459a2fd0fdf9c201d9e96b37234846eb9ccf0
+ms.openlocfilehash: e074426f4b863e692b91ce1ebf3b428435dadd94
 ms.contentlocale: sv-se
-ms.lasthandoff: 08/02/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -47,38 +47,38 @@ Personal går att använda till att slutföra följande uppgifter:
 
 När du arbetar med personal bestämmer du hur organisationen struktureras med hjälp av element, till exempel avdelningar, jobb och befattningar. De är de grundläggande elementen som konfigureras under Personal. Enskilda medarbetare tilldelas till befattningar som är associerade med jobb.
 
--   [Organisera arbetsstyrkan med avdelningar, jobb och befattningar](/dynamics365/unified-operations/talent/departments-jobs-positions)
--   [Ställa in företagsspecifika personalparametrar](/dynamics365/unified-operations/talent/set-up-company-specific-hr-parameters)
--   [Ställa in personalparametrar bland juridiska personer](/dynamics365/unified-operations/talent/set-up-hr-parameters-across-legal-entities) 
+-   [Organisera arbetsstyrkan med avdelningar, jobb och befattningar](../../talent/departments-jobs-positions.md)
+-   [Ställa in företagsspecifika personalparametrar](../../talent/set-up-company-specific-hr-parameters.md)
+-   [Ställa in personalparametrar bland juridiska personer](../../talent/set-up-hr-parameters-across-legal-entities.md) 
 
 ## <a name="recruit-hire-and-motivate-employees"></a>Rekrytera, anställa och motivera medarbetare
 
 Rekryteringsprojekt hanterar innehåll som används i annonser om lediga befattningar och hjälper dig att hantera jobbansökningar. Det går att använda till att följa upp svar på jobbannonser för ett visst rekryteringsprojekt eller specifika sökande och uppdatera status för lediga befattningar. Det år även att anställa enstaka sökande eller hantera "massanställningsprojekt" som gör det lättare att anställa flera arbetare för att täcka säsongsbetonade behov.
 
--   [Hantera en rekryteringsprocess](/dynamics365/unified-operations/talent/manage-recruiting-process)
--   [Massanställningsprojekt](/dynamics365/unified-operations/talent/mass-hire-projects) 
+-   [Hantera en rekryteringsprocess](manage-recruiting-process.md)
+-   [Massanställningsprojekt](mass-hire-projects.md) 
 
 När du har anställt personal kan du skapa planer som effektivt och rättvist hanterar såväl kompensation som objekt, såsom datorer eller telefoner som organisationen förser personalen med. Det går att skapa fasta och variabla kompensationsplaner samt definiera regler som använder kompensationsplanen som uppfyller villkoren för planen.
 
--   [Kompensationsplaner](/dynamics365/unified-operations/talent/compensation-plans)
--   [Skapa planer för fast kompensation](/dynamics365/unified-operations/talent/create-fixed-compensation-plans)
--   [Skapa planer för variabel kompensation](/dynamics365/unified-operations/talent/create-variable-compensation-plans)
+-   [Kompensationsplaner](../../talent/compensation-plans.md)
+-   [Skapa planer för fast kompensation](../../talent/create-fixed-compensation-plans.md)
+-   [Skapa planer för variabel kompensation](../../talent/create-variable-compensation-plans.md)
 
 ## <a name="develop-and-train-employees"></a>Utveckla och utbilda medarbetare
 
 För att hjälpa anställda att nå karriärmålen och samtidigt uppfylla viktiga affärsbehov går det att sätta upp mål, skapa prestationsgranskningar och spåra kommentarer. För att hjälpa anställda att skaffa nödvändiga kompetenser, går det även att ställa in lärare, kurstyper, kurser, kursbeskrivningar, agendor, spårningar och sessioner innan du tilldelar en lärare till en kurs eller registrerar någon på en kurs. Lärare måste redan finnas som anställda, sökande eller kontakter.
 
--   [Prestandahantering](/dynamics365/unified-operations/talent/performance-management-overview)
--   [Justera personalens kompetenser och affärsbehov](/dynamics365/unified-operations/talent/skills)
--   [Administrera utbildning genom kurser](/dynamics365/unified-operations/talent/courses)
+-   [Prestandahantering](../../talent/performance-management-overview.md)
+-   [Justera personalens kompetenser och affärsbehov](../../talent/skills.md)
+-   [Administrera utbildning genom kurser](../../talent/courses.md)
 
 ## <a name="create-and-maintain-benefits"></a>Skapa och underhålla förmåner
 
 Utöver att kompensera din personal i form av löner och bonusar går det att utforma ett förmånsprogram där exempelvis sjuk- eller pensionsförsäkring ingår. Det går även att hantera förmåner såsom låneprogram, där företaget lånar ut objekt såsom datorer eller telefoner till sina anställda.
 
--   [Hantera ett förmånsprogram](/dynamics365/unified-operations/talent/manage-benefit-program)
--   [Policyer för förmånsberättigande](/dynamics365/unified-operations/talent/benefit-eligibility-policies)
--   [Hantera artiklar utlånade till arbetare](/dynamics365/unified-operations/talent/loan-items)
+-   [Hantera ett förmånsprogram](../../talent/manage-benefit-program.md)
+-   [Policyer för förmånsberättigande](../../talent/benefit-eligibility-policies.md)
+-   [Hantera artiklar utlånade till arbetare](../../talent/loan-items.md)
 
 ## <a name="maintain-workplace-safety-and-compliance"></a>Underhålla arbetsplatssäkerhet och efterlevnad
 
@@ -92,10 +92,10 @@ Med Microsoft Dynamics AX går det att upprätthålla en säker arbetsmiljö som
 
 Det går att utforma och dela ut enkäter för att samla in information används för olika ändamål. Funktionen Enkät gör det möjligt att utforma och skapa enkäter. När en enkät är klar går den att distribuera till alla eller till en viss svarsgrupp. När de svarande lämnar in svaren går resultaten att granska och analysera.
 
--   [Enkäter](/dynamics365/unified-operations/talent/questionnaires)
--   [Utforma en enkät](/dynamics365/unified-operations/talent/design-questionnaires)
--   [Distribuera och slutföra en enkät](/dynamics365/unified-operations/talent/distribute-questionnaires)
--   [Visa och utvärdera resultaten av en enkät](/dynamics365/unified-operations/talent/evaluate-questionnaire-results)
+-   [Enkäter](../../talent/questionnaires.md)
+-   [Utforma en enkät](../../talent/design-questionnaires.md)
+-   [Distribuera och slutföra en enkät](../../talent/distribute-questionnaires.md)
+-   [Visa och utvärdera resultaten av en enkät](../../talent/evaluate-questionnaire-results.md)
 
 
 

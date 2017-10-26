@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: 5230911e1febc66b294f1331846373a472789adf
-ms.openlocfilehash: 46eacb2a01c3bfcc7144c7d8c39ee0189fd72e16
+ms.sourcegitcommit: d67ad79c068651f32ce7dc776bc460698557bc29
+ms.openlocfilehash: 7fe11966b27eb0793a47835e05e465d809bf3407
 ms.contentlocale: sv-se
-ms.lasthandoff: 08/04/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -42,7 +42,7 @@ Webbprogrammet går att köra i följande webbläsare som körs på de angivna o
 Gå till programtillverkarens startsida för att hitta den senaste versionen för varje webbläsare. 
 
 > [!NOTE]
-> -   Du måste installera en förhandsversion av ett Chrome-tillägg för att aktivera Uppgiftsinspelare för att ta skärmbilder och inkludera dem i genererade Microsoft Word-dokument. <!---For instructions about how to install the extension, see [Screenshot Extension setup](/dynamics365/unified-operations/dev-itpro/user-interface/task-recorder).-->
+> -   Du måste installera en förhandsversion av ett Chrome-tillägg för att aktivera Uppgiftsinspelare för att ta skärmbilder och inkludera dem i genererade Microsoft Word-dokument. <!---For instructions about how to install the extension, see [Screenshot Extension setup](../../dev-itpro/user-interface/task-recorder).-->
 > -   Arbetsflödesredigeraren startas som ett ClickOnce-program. Endast Microsoft Edge och Internet Explorer (på en version som stöds av Microsoft Windows) stöder ClickOnce-program. Arbetsflödesredigeraren ClickOnce-programmet kräver 64-bitars kompatibelt operativsystem.
 > -   Rapportdesignern för ekonomisk rapportering startar som ClickOnce-programmet. Kräver 64-bitars kompatibelt operativsystem. Om du använder Chrome måste du installera tillägget ClickOnce för att hämta rapportdesignerklienten. Om du använder Chrome med osynligt läge, se då till att tillägget ClickOnce har aktiverats för osynligt läge.
 > -   Om du vill förhandsgranska PDF-filer bör du använda moderna webbläsare såsom Microsoft Edge (senaste tillgängliga versionen) på Windows 10 eller Google Chrome (senaste tillgängliga versionen) på Windows 10, Windows 8.1, Windows 7, Windows 8 eller 10 Google Nexus Tablet PC.
@@ -70,7 +70,7 @@ Finance and Operations kräver Microsoft .NET Framework version 4.6.2 för alla 
 ## <a name="supported-microsoft-office-applications"></a>Microsoft Office-program som stöds
 Följande Microsoft Office-program stöds i molnet och i lokala distributioner av Finance and Operations.
 
--   För att kunna köra Microsoft Excel och Word-tillägg måste du ha Microsoft Office 2016 för Windows eller Mac installerat. Mer information om kraven på version finns i [felsökning av Office-integrering](/dynamics365/unified-operations/dev-itpro/office-integration/office-integration-troubleshooting).
+-   För att kunna köra Microsoft Excel och Word-tillägg måste du ha Microsoft Office 2016 för Windows eller Mac installerat. Mer information om kraven på version finns i [felsökning av Office-integrering](../../dev-itpro/office-integration/office-integration-troubleshooting.md).
 -   Om du vill visa dokument som har genererats av Export till Excel eller Export till Word-funktioner måste Microsoft Office 2007 eller senare installeras.
 
 ## <a name="retail-modern-pos-requirements"></a>Krav på Retail Modern POS
@@ -153,10 +153,10 @@ Datorn måste uppfylla alla systemkrav för installation och användning av föl
 -   Minst 10 GB ledigt utrymme (kanaldatabasen kan kräva stora mängder diskutrymme.)
 
 ## <a name="requirements-for-development-on-local-vms"></a>Krav för utveckling av lokala virtuella maskiner
-Information om kraven för utveckling av enskilda virtuella datorerna (VMs) finns i [VM körs lokalt](../dev-tools/access-instances.md).
+Information om kraven för utveckling av enskilda virtuella datorerna (VMs) finns i [VM körs lokalt](../../dev-itpro/dev-tools/access-instances.md).
 
 
 ## <a name="see-also"></a>Se även
 
-[Hämta en utvärderingskopia av Dynamics 365 for Finance and Operations, Enterprise Edition](/dynamics365/unified-operations/dev-itpro/dev-tools/get-evaluation-copy)
+[Hämta en utvärderingskopia av Dynamics 365 for Finance and Operations, Enterprise Edition](../../dev-itpro/dev-tools/get-evaluation-copy.md)
 

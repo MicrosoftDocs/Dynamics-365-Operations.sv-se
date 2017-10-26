@@ -18,11 +18,11 @@ ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 1fed8d162a37736883365fa765a059e5beff06be
+ms.translationtype: HT
+ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
+ms.openlocfilehash: a4f9e2c5203881f3faeebe4d33e72c7b3bcaa591
 ms.contentlocale: sv-se
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -50,7 +50,7 @@ Användarna kan ange och publicera rader för redovisningsjournaler från Micros
 
 När rader har publicerats valideras de för att kontrollera att de uppfyller de regler som anges i de ekonomiska journalerna. När rader publiceras kan användare redigera eller bokföra verifikationerna från Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
 
-Ytterligare ändringar krävs om du vill lägga till ekonomiska dimensioner i en mall. Mer information finns i [Lägga till dimensioner i Microsoft Excel-mallen](/dynamics365/unified-operations/dev-itpro/financial/add-dimensions-excel-templates). När dimensionerna har lagts till i enheten är de tillgängliga i Excel-designern och kan läggas till i mallen.
+Ytterligare ändringar krävs om du vill lägga till ekonomiska dimensioner i en mall. Mer information finns i [Lägga till dimensioner i Microsoft Excel-mallen](../../dev-itpro/financial/add-dimensions-excel-templates.md). När dimensionerna har lagts till i enheten är de tillgängliga i Excel-designern och kan läggas till i mallen.
 
 
 

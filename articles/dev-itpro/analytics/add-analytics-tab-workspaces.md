@@ -13,14 +13,14 @@ ms.reviewer: robinr
 ms.search.scope: Operations, Platform, UnifiedOperations
 ms.search.region: Global
 ms.author: tjvass
-ms.search.validFrom: 2017-06-30T00:00:00.000Z
+ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.intro: Platform update 8
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 20d28e22e4e89d0d864a0cbeaadeb568e73e223e
-ms.openlocfilehash: e819aafbdf55fbc2a6dc996d275244de1e11d89b
+ms.sourcegitcommit: fc8102d945faf9ad533f57ec1a45b0e0dc344963
+ms.openlocfilehash: d36abbf7c08c56d84ed83dbec1bfa33f30b47ef5
 ms.contentlocale: sv-se
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -47,10 +47,10 @@ Oavsett om du utökar en befintlig programarbetsyta eller introducerar en egen a
 4. Valfritt: Lägg till tillägg för att anpassa vyn.
 
 > [!NOTE]
-> Mer information om hur du skapar analytiska rapporter finns i [komma igång med Power BI Desktop](https://powerbi.microsoft.com/documentation/powerbi-desktop-getting-started/). Den här sidan är en bra källa för information som kan hjälpa dig skapa verkningsfulla analytiska rapporteringslösningar.
+> Mer information om hur du skapar analytiska rapporter finns i [komma igång med Power BI Desktop](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-getting-started/). Den här sidan är en bra källa för information som kan hjälpa dig skapa verkningsfulla analytiska rapporteringslösningar.
 
 # <a name="add-a-pbix-file-as-a-resource"></a>Lägga till en .pbix-fil som en resurs
-Innan du börjar måste du skapa eller skaffa Power BI-rapporten som du bäddar in på arbetsytan. Mer information om hur du skapar analytiska rapporter finns i [komma igång med Power BI Desktop](https://powerbi.microsoft.com/documentation/powerbi-desktop-getting-started/).
+Innan du börjar måste du skapa eller skaffa Power BI-rapporten som du bäddar in på arbetsytan. Mer information om hur du skapar analytiska rapporter finns i [komma igång med Power BI Desktop](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-getting-started/).
  
 Följ dessa steg om du vill lägga till en .pbix-fil som en projektartefakt för Visual Studio.
 
