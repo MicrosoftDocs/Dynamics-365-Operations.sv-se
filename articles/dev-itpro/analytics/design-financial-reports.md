@@ -17,12 +17,11 @@ ms.search.region: Global
 ms.author: jcart
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 0dc453ab56a2d381afa6e22d847f0b1eb7a16e7e
+ms.translationtype: HT
+ms.sourcegitcommit: b49cfe39732a450e4723419c50d8bcc3d64b7ec9
+ms.openlocfilehash: d1fbcefd80f1c48fafbbcb6315406856eaae68a0
 ms.contentlocale: sv-se
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -50,7 +49,7 @@ För den här övning ska du generera och undersöka en befintlig standardrappor
 4.  Gå till **Ekonomiska rapporter** under **Förfrågningar och rapporter** i redovisningen.
 5.  Markera raden för rapporten som heter **Huvudbokdetalj – standardinställning**.
 6.  Välj **Redigera**. Obs! Du uppmanas att hämta enklicks-rapportdesignern och att logga in. Använd dina autentiseringsuppgifter när du loggar in.
-7.  Ändra basåret till 2012 och välj **Generera**. När en rapport genereras från rapportdesignern, öppnas den i en ny webbläsarflik. Du kan antingen utforska rapporten på den nya webbläsarfliken, eller att gå till den ursprungliga webbläsarfliken och öppna rapporten därifrån genom att välja **Ekonomiska rapporter** i listan.
+7.  Ändra basåret till 2012 och välj **Generera**. När en rapport genereras via rapportutformaren kommer den at öppnas i en ny webbläsarflik. Du kan antingen granska rapporten i den nya webbläsarfliken eller också gå till din ursprungliga webbläsarfliken och öppna rapporten därifrån genom att välja den i listan **Finansiella rappporter**.
 8.  Välj ett av beloppen i den öppna rapporten för att gå nedåt till kontodetaljeran i rapporten.
 9.  Välj ett konto med data i kontodetaljerna och **gå nedåt till rapporttransaktionsnivån**. På rapporttransaktionsnivån kan du se egenskaperna (attribut )som togs med i designen i den här rapporten. Beroende på transaktionen och kontot, visas några eller alla attribut.
 10. Stäng rapporttransaktionsnivån.
@@ -183,8 +182,8 @@ I den här övning ska du skapa en ny rapport. Rapporten är en resultaträkning
 18. **Spara** ändringarna och **generera**. När rapporten har genererats och öppnats kan du granska den.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
-[Ekonomisk rapportering](/dynamics365/unified-operations/financials/general-ledger/financial-reporting-getting-started) 
-[Visa ekonomiska rapporter](/dynamics365/unified-operations/financials/general-ledger/view-financial-reports) 
+[Ekonomisk rapportering](../../financials/general-ledger/financial-reporting-getting-started.md) 
+[Visa ekonomiska rapporter](../../financials/general-ledger/view-financial-reports.md) 
 [Dynamics blogg för ekonomisk rapportering](http://blogs.msdn.com/b/dynamics_financial_reporting/)
 
 

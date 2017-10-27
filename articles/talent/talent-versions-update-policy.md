@@ -19,10 +19,10 @@ ms.author: shielas
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: c4f5dae90c5fcaaa52a7087d7c20b2de343b7da0
-ms.openlocfilehash: 157cb807a5a5e61b022b3186dfbe67b95c2408ec
+ms.sourcegitcommit: fc8102d945faf9ad533f57ec1a45b0e0dc344963
+ms.openlocfilehash: c5942ecb80047628c863deb878c0959727ab57bb
 ms.contentlocale: sv-se
-ms.lasthandoff: 08/01/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -57,7 +57,7 @@ Nätverkskrav
 
 ## <a name="supported-microsoft-office-applications"></a>Microsoft Office-program som stöds
 
-*   För att kunna köra Microsoft Excel och Word-tillägg måste du ha Microsoft Office 2016 för Windows eller Mac installerat. Se mer information om versionskraven på [felsökning av Office-integrering] (https://docs.microsoft.com/en-us/dynamics365/operations/dev-itpro/office-integration/office-integration-troubleshooting ”felsökning av Office-integrering”).
+*   För att kunna köra Microsoft Excel och Word-tillägg måste du ha Microsoft Office 2016 för Windows eller Mac installerat. Mer information om versionskraven finns i [Felsökning av Office-integrering] (../dev-itpro/office-integration/office-integration-troubleshooting.md ”Felsökning av Office-integrering”).
 *   Om du vill visa dokument som har genererats av Export till Excel eller Export till Word-funktioner måste Microsoft Office 2007 eller senare installeras.
 
 ## <a name="update-policy"></a>Uppdatera policy

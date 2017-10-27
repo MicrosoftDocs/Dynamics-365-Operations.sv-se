@@ -16,13 +16,13 @@ ms.custom: 11534
 ms.assetid: e2795f51-a8a7-4c74-bdb9-b1be93bdd358
 ms.search.region: Global
 ms.author: yuyus
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 7898ff427ede4447a5798d4989ffd3088a776d9c
+ms.translationtype: HT
+ms.sourcegitcommit: 908f854e5ca50f4298110c08c87fefd9427b5cc9
+ms.openlocfilehash: 841c18630a59c3f5a7b51cd005962fa8a7f7163f
 ms.contentlocale: sv-se
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -37,7 +37,7 @@ Microsoft Dynamics 365 for Finance and Operations har beskrivningar för vissa a
 
 Inte alla sidor har fältbeskrivningar. Vi tillhandahåller enbart beskrivningar av de mer komplexa fälten och inte av dem där användningen av fältet är tydligt. Av den anledningen saknas fältbeskrivningar på vissa sidor. Andra sidor innehåller några få beskrivningar och några av de mer komplexa sidorna, till exempel många av parametersidorna, har många beskrivningar. 
 
-Om du har tillgång till utvecklingsmiljön för Finance and Operationskan kan du lägga till egna fältbeskrivningar och anpassa befintliga beskrivningar. Du kan till exempel lägga till företagsspecifik information i en fältbeskrivning. Mer information hittar du i [Hjälp för Anpassa fält](/dynamics365/unified-operations/dev-itpro/user-interface/customize-field-help).
+Om du har tillgång till utvecklingsmiljön för Finance and Operationskan kan du lägga till egna fältbeskrivningar och anpassa befintliga beskrivningar. Du kan till exempel lägga till företagsspecifik information i en fältbeskrivning. Mer information hittar du i [Hjälp för Anpassa fält](../../dev-itpro/user-interface/customize-field-help.md).
 
 ## <a name="see-field-descriptions-in-the-user-interface"></a>Se fältbeskrivningarna i användargränssnittet.
 Du kan visa fältbeskrivningar genom att hovra över ett fält. Om det inte finns någon beskrivning ser du fältnamnet när du för muspekaren över fältet. (Obs! I Dynamics AX 7.0 (February 2016) kan fältbeskrivningarna endast visas på sidan **Fältbeskrivningar**.) Följande illustration visar den fältbeskrivning som visas när du för muspekaren över fältet **Lås artiklar under inventeringen**. 
@@ -101,7 +101,7 @@ Information om olika sätt att hitta sidor hittar du i avsnittet "Söka efter si
 <a name="see-also"></a>Se även
 --------
 
-[Hjälp för Anpassa fält](/dynamics365/unified-operations/dev-itpro/user-interface/customize-field-help)
+[Hjälp för Anpassa fält](../../dev-itpro/user-interface/customize-field-help.md)
 
 
 

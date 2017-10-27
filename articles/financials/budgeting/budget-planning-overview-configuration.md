@@ -17,12 +17,11 @@ ms.search.region: Global
 ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 298ac47e2253f8add1aa3938dda15afe186afbeb
-ms.openlocfilehash: e2c956969626836fadb0a6cac6dbb1d57f169f28
+ms.translationtype: HT
+ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
+ms.openlocfilehash: 64d915a5e039ba242f6d5ae5f43c8e09d6ca282e
 ms.contentlocale: sv-se
-ms.lasthandoff: 06/20/2017
-
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -78,7 +77,7 @@ I följande exempel uppskattar företagets huvudkontor de inledande budgetbelopp
 
 På sidan **Organisationshierarki** kan du välja en organisationshierarki som budgetplaneringshierarki för varje budgetplaneringsprocess. Budgetplaneringshierarkin måste inte matcha den vanliga organisationshierarkin som används för andra ändamål. Eftersom den här hierarkin används för att sammanställa och fördela data, kanske du vill att den ska ha en annan struktur. I exempelschemat är försäljningsavdelningarna under huvudkontorsnivån som innefattar budgetavdelningen och ekonomiavdelningen. Strukturen skiljer sig antagligen från strukturen som används för att hantera driften på försäljningsavdelningarna. Endast en organisationshierarki kan tilldelas varje budgetplaneringsprocess. 
 
-Mer information finns i [Organisationer och organisationens hierarkier](/dynamics365/unified-operations/fin-and-ops/organization-administration/organizations-organizational-hierarchies).
+Mer information finns i [Organisationer och organisationens hierarkier](../../fin-and-ops/organization-administration/organizations-organizational-hierarchies.md).
 
 ### <a name="user-security"></a>Användarsäkerhet
 

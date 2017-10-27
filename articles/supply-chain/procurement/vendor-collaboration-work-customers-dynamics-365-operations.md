@@ -18,11 +18,11 @@ ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 869151f2486b7a481e4694cfb6992d0ee2cfc008
-ms.openlocfilehash: 41436dab710a5fee0fe0800dff1ebefefa841afc
+ms.translationtype: HT
+ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
+ms.openlocfilehash: 6119f1c85b68e6ed5dce01a266c4e681dfc4cd30
 ms.contentlocale: sv-se
-ms.lasthandoff: 06/13/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 06/13/2017
 
 I det här avsnittet beskrivs hur du kan använda leverantörssamarbete i Finance and Operations för att arbeta med inköpsorder och övervaka försändelselager.
 
-I det här avsnittet beskrivs hur du kan använda leverantörssamarbete när du arbetar med kunder i Microsoft Finance and Operations. Det innehåller information om hur du övervakar och svarar på inköpsorder och hur du övervakar försändelselager. Det går också att använda leverantörsamarbete för att arbeta med fakturor. Mer information finns i [Arbetsyta för leverantörssamarbetesfakturering](/dynamics365/unified-operations/financials/accounts-payable/vendor-portal-invoicing-workspace).
+I det här avsnittet beskrivs hur du kan använda leverantörssamarbete när du arbetar med kunder i Microsoft Finance and Operations. Det innehåller information om hur du övervakar och svarar på inköpsorder och hur du övervakar försändelselager. Det går också att använda leverantörsamarbete för att arbeta med fakturor. Mer information finns i [Arbetsyta för leverantörssamarbetesfakturering](../../financials/accounts-payable/vendor-portal-invoicing-workspace.md).
 
 ## <a name="working-with-purchase-orders"></a>Arbeta med inköpsorder
 Arbetsyten **Inköpsorderbekräftelse** låter dig besvara de insköpsorder som har skickats till dig för granskning. Den låter dig också visa information om inköpsorder som inväntar åtgärd från kunden, samt inköpsorder som har bekräftats men som fortfarande är öppna.. Det finns tre listor i arbetsytan **Inköpsorderbekräftelse**:

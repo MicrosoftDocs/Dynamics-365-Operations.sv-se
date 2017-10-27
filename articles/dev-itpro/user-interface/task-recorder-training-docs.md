@@ -19,10 +19,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 529751c09b8f99f986cad23a633bea661929d558
-ms.openlocfilehash: d5e4857081134808b194d3248dd8739f83b57d6e
+ms.sourcegitcommit: b49cfe39732a450e4723419c50d8bcc3d64b7ec9
+ms.openlocfilehash: 297fe730a432e05e1ab490be4802c37f9402b0a7
 ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -116,14 +116,14 @@ Du kan hämta och redigera Microsofts uppgiftsregistreringar för att använda d
 11. Välj hur du vill spara uppgiftsregistreringen.
 
 ## <a name="include-your-task-recordings-in-the-help-pane"></a>Inkludera dina uppgiftsregistreringar i hjälpfönstret
-Om du vill visa dina egna anpassade uppgiftsregistrering i hjälpfönstret så att de kan spelas upp som uppgiftsguider eller visas som text, måste du spara dina uppgiftsregistreringar i ditt eget BPM-bibliotek och sedan uppdatera hjälpsystemparametrarna så att de pekar på ditt BPM bibliotek. Mer information finns i [Ansluta hjälpsystemet](../get-started/help-connect.md).
+Om du vill visa dina egna anpassade uppgiftsregistrering i hjälpfönstret så att de kan spelas upp som uppgiftsguider eller visas som text, måste du spara dina uppgiftsregistreringar i ditt eget BPM-bibliotek och sedan uppdatera hjälpsystemparametrarna så att de pekar på ditt BPM bibliotek. Mer information finns i [Ansluta hjälpsystemet](../../fin-and-ops/get-started/help-connect.md).
 
 <a name="see-also"></a>Se även
 --------
 
-[Hjälp – översikt](..\get-started\help-overview.md)
+[Hjälp – översikt](../../fin-and-ops/get-started/help-overview.md)
 
-[Anslut hjälp](..\get-started\help-connect.md)
+[Anslut hjälp](../../fin-and-ops/get-started/help-connect.md)
 
 [Uppgiftsinspelare](task-recorder.md)
 

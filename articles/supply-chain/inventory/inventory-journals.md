@@ -19,10 +19,10 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: d549f38b9278eed222a1318c51962b248149c569
+ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
+ms.openlocfilehash: 6dfb82acb5dafd365d878949b35d4fe6ff58793d
 ms.contentlocale: sv-se
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -78,7 +78,7 @@ Produktionsinförseljournaler fungerar som artikelinförseljournalerna men anvä
 
 ### <a name="counting"></a>Inventering
 
-Med inventeringsjournaler kan du justera den aktuella lagerbehållningen som är registrerad för artiklar eller grupper av artiklar och sedan bokföra det verkliga fysiska antalet så att du kan göra justeringar som krävs för att stämma av skillnaderna. Du kan koppla inventeringspolicyer med inventeringsgrupper som hjälper dig att gruppera artiklar som har olika egenskaper, så att artiklarna kan inkluderas i en inventeringsjournal. Du kan till exempel ställa in inventeringsgrupper för att räkna artiklar som har en specifik frekvens, eller för att räkna artiklar när lagret faller till en viss nivå. För mer information om hur du definierar inventeringsgrupper, se [Definiera inventeringsprocesser (uppgiftsguide)](/dynamics365/unified-operations/supply-chain/inventory/tasks/define-inventory-counting-processes).
+Med inventeringsjournaler kan du justera den aktuella lagerbehållningen som är registrerad för artiklar eller grupper av artiklar och sedan bokföra det verkliga fysiska antalet så att du kan göra justeringar som krävs för att stämma av skillnaderna. Du kan koppla inventeringspolicyer med inventeringsgrupper som hjälper dig att gruppera artiklar som har olika egenskaper, så att artiklarna kan inkluderas i en inventeringsjournal. Du kan till exempel ställa in inventeringsgrupper för att räkna artiklar som har en specifik frekvens, eller för att räkna artiklar när lagret faller till en viss nivå. För mer information om hur du definierar inventeringsgrupper, se [Definiera inventeringsprocesser (uppgiftsguide)](tasks/define-inventory-counting-processes.md).
 
 ### <a name="tag-counting"></a>Märkesinventering
 

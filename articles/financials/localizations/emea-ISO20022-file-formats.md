@@ -16,10 +16,10 @@ ms.author: v-lenest
 ms.search.validFrom: 2017-06-01
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 77a0d4c2a31128fb7d082238d443f297fd40664f
-ms.openlocfilehash: 90e21bb939bd96a3420decb5f9bc07c017c3e946
+ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
+ms.openlocfilehash: fcab30f03aebf7dbe76d5b3b64260f726f291fb8
 ms.contentlocale: sv-se
-ms.lasthandoff: 07/31/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -118,7 +118,7 @@ När du importerar en formatkonfigurationen från LCS importerar du hela konfigu
  - **Pain.002** – det här formatet ska användas tillsammans med betalningsmodellmappning till destination ISO20022 för att importera filen pain.002 till överföringsjournalen för leverantörsbetalningar
  - **Camt.054** – det här formatet ska användas tillsammans med betalningsmodellmappning till destination ISO20022 för att importera filen camt.054 till överföringsjournalen för leverantörsbetalningar Samma formatkonfiguration används i kundens betalningsimporteringsfunktion men olika mappning ska användas i en betalningsmodellmappning till destinationskonfigurationen ISO20022.
 
-Mer information om elektronisk rapportering finns i [översikt över elektronisk rapportering](/dynamics365/unified-operations/dev-itpro/analytics/general-electronic-reporting).
+Mer information om elektronisk rapportering finns i [översikt över elektronisk rapportering](../../dev-itpro/analytics/general-electronic-reporting.md).
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 - [Skapa och exportera leverantörbetalningar med ett ISO20022-betalningsformat](./tasks/create-export-vendor-payments-iso20022-payment-format.md)

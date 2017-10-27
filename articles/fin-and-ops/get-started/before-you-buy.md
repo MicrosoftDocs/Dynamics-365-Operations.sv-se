@@ -14,13 +14,13 @@ ms.search.scope: AX 7.0.0, Operations, Core
 ms.custom: 21761
 ms.search.region: Global
 ms.author: margoc
-ms.search.validFrom: 2017-06-30T00:00:00.000Z
+ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
 ms.translationtype: HT
-ms.sourcegitcommit: fc446f381850f4f42b6dbc886646d3d32f2d5dd7
-ms.openlocfilehash: 831550256176df6fa8542b9985eba1b9b1282fcb
+ms.sourcegitcommit: c73eeaaf28df8db720431d4bcd317c9721baa99d
+ms.openlocfilehash: 75e2a31f1c0e82c6f0dcf92309d7673243e1bdc9
 ms.contentlocale: sv-se
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 
@@ -35,7 +35,7 @@ Du kan prova en 30 dagars provversion av Dynamics 365 for Finance and Operation
 
 ## <a name="step-two-choose-a-deployment-option"></a>Steg två: Välj ett distributionsalternativ.
 Du kan nu distribuera Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition i molnet eller lokalt. Molndistributioner erbjuder en ERP-tjänst som hanteras fullt ut av Microsoft, medan lokala distributioner installeras lokalt i kundens datacenter.
-Mer information finns i: [Distributionsalternativ](/dynamics365/unified-operations/dev-itpro/deployment/choose-deployment-type) 
+Mer information finns i: [Distributionsalternativ](../../dev-itpro/deployment/choose-deployment-type.md) 
 
 ## <a name="step-three-buy-and-manage-a-subscription"></a>Steg tre: köpa och hantera prenumerationer
 Om du vill utforska prenumerationsalternativ, gå till [Dynamics 365](https://www.microsoft.com/en-us/dynamics365/pricing) prissättningssida. Den här sidan innehåller flera olika planer för att passa ditt företags behov.
@@ -60,7 +60,7 @@ I volymlicensiering finns Finance and Operations med:
 En Microsoft molnbaserad lösningsleverantör kan samarbeta med dig för att förstå behoven i ditt företag eller din organisation. [Använd Microsoft Partner Center-portalen för att hitta en partner som passar dig bäst](https://partnercenter.microsoft.com/en-us/partner/home). 
 
 ### <a name="buy-through-a-dynamics-partner-on-premises"></a>Köp via en Dynamics-partner (lokal)
-Du måste arbeta med en partner för att köpa Finance and Operations lokalt. Mer information finns i [Köp Dynamics 365 for Finance and Operations, Enterprise Edition (lokal)](/dynamics365/unified-operations/dev-itpro/get-started/purchase-on-premises)
+Du måste arbeta med en partner för att köpa Finance and Operations lokalt. Mer information finns i [Köp Dynamics 365 for Finance and Operations, Enterprise Edition (lokal)](purchase-on-premises.md)
 
 ### <a name="choose-your-support-option"></a>Välj ditt stödalternativ
 Microsoft tillhandahåller flexibelt branschledande stöd, tjänster och resurser som gör det möjligt för användarna att snabbt lösa tekniska frågor och maximera avkastningen på investeringen av Dynamics 365. Välj en plan som bäst uppfyller ditt företags behov. 
