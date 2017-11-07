@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: BankAccountTable, CustPaymMode, VendPaymMode
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 267994
 ms.search.region: Belgium, Norway, Sweden, Switzerland
 ms.author: v-lenest
