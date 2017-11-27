@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 256254
 ms.assetid: e1b0a6e3-0c72-4a7d-90e1-20f870c6dbad
 ms.search.region: Global
@@ -18,34 +18,33 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: c4c900d7599b0dc09e97e6a62d5b43971a8c3e33
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 6b2346c635fd16fce99c2813856e0fc9b5b03a44
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
-# <a name="cost-accounting-home-page"></a><span data-ttu-id="fed0a-103">Startsida för Kostnadsredovisning</span><span class="sxs-lookup"><span data-stu-id="fed0a-103">Cost accounting home page</span></span>
+# <a name="cost-accounting-home-page"></a><span data-ttu-id="d0489-103">Startsida för Kostnadsredovisning</span><span class="sxs-lookup"><span data-stu-id="d0489-103">Cost accounting home page</span></span>
 
 [!include[banner](../includes/banner.md)]
 
-## <a name="learning-map"></a><span data-ttu-id="fed0a-104">Inlärningskarta</span><span class="sxs-lookup"><span data-stu-id="fed0a-104">Learning map</span></span> 
+## <a name="learning-map"></a><span data-ttu-id="d0489-104">Inlärningskarta</span><span class="sxs-lookup"><span data-stu-id="d0489-104">Learning map</span></span> 
 
-<span data-ttu-id="fed0a-105">Följande utbildningsöversikt anger de huvudsakliga koncept och uppgifter som utgör ramverket för kostnadsredovisningsmodulen.</span><span class="sxs-lookup"><span data-stu-id="fed0a-105">The following learning map shows the major concepts and tasks that make up the framework of the Cost accounting module.</span></span> <span data-ttu-id="fed0a-106">Klicka på länkarna i avsnittet [Snabblänkar](#quick-links) för information om hur du använder modulen.</span><span class="sxs-lookup"><span data-stu-id="fed0a-106">Click the links in the [Quick links](#quick-links) section to learn how to use the module.</span></span>
+<span data-ttu-id="d0489-105">Följande utbildningsöversikt anger de huvudsakliga koncept och uppgifter som utgör ramverket för kostnadsredovisningsmodulen.</span><span class="sxs-lookup"><span data-stu-id="d0489-105">The following learning map shows the major concepts and tasks that make up the framework of the Cost accounting module.</span></span> <span data-ttu-id="d0489-106">Klicka på länkarna i avsnittet [Snabblänkar](#quick-links) för information om hur du använder modulen.</span><span class="sxs-lookup"><span data-stu-id="d0489-106">Click the links in the [Quick links](#quick-links) section to learn how to use the module.</span></span>
 
-<span data-ttu-id="fed0a-107">[![Inlärningskarta för kostnadsredovisning](./media/cost-accounting-map.png)](./media/cost-accounting-map.png)</span><span class="sxs-lookup"><span data-stu-id="fed0a-107">[![Learning map for cost accounting](./media/cost-accounting-map.png)](./media/cost-accounting-map.png)</span></span>
+<span data-ttu-id="d0489-107">[![Inlärningskarta för kostnadsredovisning](./media/cost-accounting-map.png)](./media/cost-accounting-map.png)</span><span class="sxs-lookup"><span data-stu-id="d0489-107">[![Learning map for cost accounting](./media/cost-accounting-map.png)](./media/cost-accounting-map.png)</span></span>
 
-## <a name="quick-links"></a><span data-ttu-id="fed0a-108">Snabblänkar</span><span class="sxs-lookup"><span data-stu-id="fed0a-108">Quick links</span></span>
+## <a name="quick-links"></a><span data-ttu-id="d0489-108">Snabblänkar</span><span class="sxs-lookup"><span data-stu-id="d0489-108">Quick links</span></span>
 |      |   |
 |------|---|
-|  [<span data-ttu-id="fed0a-109">Kom igång</span><span class="sxs-lookup"><span data-stu-id="fed0a-109">Get started</span></span>](terms-cost-accounting.md)    | [<span data-ttu-id="fed0a-110">Konfigurera källsystemet</span><span class="sxs-lookup"><span data-stu-id="fed0a-110">Configure source system</span></span>](../general-ledger/financial-dimensions.md)  |
-|  [<span data-ttu-id="fed0a-111">Skapa dimensioner och importera dimensionsmedlemmar</span><span class="sxs-lookup"><span data-stu-id="fed0a-111">Create dimensions and import dimension members</span></span>](cost-elements.md)    |[<span data-ttu-id="fed0a-112">Skapa en dimensionshierarki</span><span class="sxs-lookup"><span data-stu-id="fed0a-112">Create dimension hierarchy</span></span>](dimension-hierarchy.md)   |
-|  [<span data-ttu-id="fed0a-113">Skapa basinställningar</span><span class="sxs-lookup"><span data-stu-id="fed0a-113">Create basic setup</span></span>](./tasks/define-cost-control-units.md)    |  [<span data-ttu-id="fed0a-114">Definiera en allokeringsbas</span><span class="sxs-lookup"><span data-stu-id="fed0a-114">Define allocation base</span></span>](allocation-bases.md) |
-|    [<span data-ttu-id="fed0a-115">Definiera policy</span><span class="sxs-lookup"><span data-stu-id="fed0a-115">Define policies</span></span>](./tasks/create-assign-cost-allocation-policy-cost-control-unit.md)  | [<span data-ttu-id="fed0a-116">Datakälla och dataleverantör</span><span class="sxs-lookup"><span data-stu-id="fed0a-116">Data source and data provider</span></span>](./tasks/manage-data-source-cost-accounting-ledger.md)  |
-| [<span data-ttu-id="fed0a-117">Bearbetning av datakälla</span><span class="sxs-lookup"><span data-stu-id="fed0a-117">Data source processing</span></span>](./tasks/process-trace-source-data.md)     | [<span data-ttu-id="fed0a-118">Beräkning av indirekta kostnader</span><span class="sxs-lookup"><span data-stu-id="fed0a-118">Overhead calculation</span></span>](overhead-calculation.md)  |
-|   [<span data-ttu-id="fed0a-119">Analyser och rapportering</span><span class="sxs-lookup"><span data-stu-id="fed0a-119">Analysis and reporting</span></span>](cost-control-workspace.md)   |   |
+|  <span data-ttu-id="d0489-109">[Konfigurera grundläggande enheter (e-utbildning)](https://mbspartner.microsoft.com/Home) (kräver CustomerSource-konto)</span><span class="sxs-lookup"><span data-stu-id="d0489-109">[Configure base entities (eLearning)](https://mbspartner.microsoft.com/Home) (requires CustomerSource account)</span></span>  |[<span data-ttu-id="d0489-110">Skapa dimensioner</span><span class="sxs-lookup"><span data-stu-id="d0489-110">Create dimensions</span></span>](cost-elements.md)  |
+|  [<span data-ttu-id="d0489-111">Skapa en dimensionshierarki</span><span class="sxs-lookup"><span data-stu-id="d0489-111">Create dimension hierarchy</span></span>](dimension-hierarchy.md)  |[<span data-ttu-id="d0489-112">Skapa basinställningar</span><span class="sxs-lookup"><span data-stu-id="d0489-112">Create basic setup</span></span>](./tasks/define-cost-control-units.md)| 
+| [<span data-ttu-id="d0489-113">Definiera en allokeringsbas</span><span class="sxs-lookup"><span data-stu-id="d0489-113">Define allocation base</span></span>](allocation-bases.md)|[<span data-ttu-id="d0489-114">Definiera policy</span><span class="sxs-lookup"><span data-stu-id="d0489-114">Define policies</span></span>](./tasks/create-assign-cost-allocation-policy-cost-control-unit.md) | 
+| [<span data-ttu-id="d0489-115">Datakälla och dataleverantör</span><span class="sxs-lookup"><span data-stu-id="d0489-115">Data source and data provider</span></span>](./tasks/manage-data-source-cost-accounting-ledger.md) |                                           [<span data-ttu-id="d0489-116">Datakälla och dataleverantör</span><span class="sxs-lookup"><span data-stu-id="d0489-116">Data source and data provider</span></span>](./tasks/process-trace-source-data.md)     | 
+|[<span data-ttu-id="d0489-117">Beräkning av indirekta kostnader</span><span class="sxs-lookup"><span data-stu-id="d0489-117">Overhead calculation</span></span>](overhead-calculation.md)  | [<span data-ttu-id="d0489-118">Analyser och rapportering</span><span class="sxs-lookup"><span data-stu-id="d0489-118">Analysis and reporting</span></span>](cost-control-workspace.md)   |
 
-## <a name="get-started-videosbr"></a><span data-ttu-id="fed0a-120">Komma igång-videor</span><span class="sxs-lookup"><span data-stu-id="fed0a-120">Get started videos</span></span><br/>
+## <a name="get-started-videosbr"></a><span data-ttu-id="d0489-119">Komma igång-videor</span><span class="sxs-lookup"><span data-stu-id="d0489-119">Get started videos</span></span><br/>
 
 |  |  |                             |
 |------------------------|--------------------|-----------------------------|
