@@ -1,9 +1,9 @@
 ---
 title: "Frågor och Svar - Beräkningar för produktkonfigurationsmodeller"
-description: "Det här avsnittet beskriver beräkningar för produktkonfigurationsmodeller och förklarar hur du använder beräkningar tillsammans med begränsningar."
+description: "Det här ämnet beskriver beräkningar för produktkonfigurationsmodeller och förklarar hur du använder beräkningar tillsammans med begränsningar."
 author: cvocph
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: fea4e139d32c780769bafe08d603b828d366550c
+ms.sourcegitcommit: 3a1bfd4bd5f396c05277159ac112eaa8197d5818
+ms.openlocfilehash: 0763e5a02e7a14b6ef369103aa25e435559abe19
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-Det här avsnittet beskriver beräkningar för produktkonfigurationsmodeller och förklarar hur du använder beräkningar tillsammans med begränsningar.
+Det här ämnet beskriver beräkningar för produktkonfigurationsmodeller och förklarar hur du använder beräkningar tillsammans med begränsningar.
 
 Beräkningar kan användas för aritmetiska eller logiska operationer. De kompletterar uttryckbegränsningar i produktkonfigurationsmodeller. Du kan definiera beräkningar på sidan **Detaljer för begränsningsbaserad produktkonfigurationsmodell** och sedan skapa uttryck för beräkningar i uttrycksredigeraren. Mer information finns i Skapa beräkningar.
 
@@ -75,7 +75,7 @@ Beräkningar sker när ett värde har angetts för alla indataattribut.
 ## <a name="can-i-overwrite-the-value-that-is-calculated-for-the-target-attribute"></a>Kan jag skriva över värdet som beräknas för målattributet?
 Du kan åsidosätta värdet som beräknas för målattributet, om inte målattributet är inställt som dolt eller skrivskyddat.
 
-## <a name="how-do-i-set-a-target-attribute-as-hidden-or-readonly"></a>Hur kan jag ange ett målattribut som dolt eller skrivskyddat?
+## <a name="how-do-i-set-a-target-attribute-as-hidden-or-read-only"></a>Hur kan jag ange ett målattribut som dolt eller skrivskyddat?
 Om du vill ange ett attribut som dolt eller skrivskyddat, följ dessa steg:
 
 1.  Klicka på **Produktinformationshantering** &gt; **Allmänt** &gt; **Produktkonfigurationsmodeller**.

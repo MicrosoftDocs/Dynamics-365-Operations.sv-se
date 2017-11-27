@@ -1,27 +1,27 @@
 ---
 title: "Arbetsflödeselement"
-description: "Den här artikeln beskriver de olika elementen som utgör ett arbetsflöde."
+description: "Det här ämnet beskriver de olika elementen som utgör ett arbetsflöde."
 author: sericks007
 manager: AnnBe
-ms.date: 08/23/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User, IT Pro
 ms.reviewer: sericks
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 56441
 ms.assetid: de740262-6ffd-42b9-a325-540eae5cec94
 ms.search.region: Global
-ms.author: tjvass
+ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 255777651a45b899850fc870c9da288f65df702c
+ms.sourcegitcommit: 8bbdbf882f6f73d03be0a036cb975109396e4a0d
+ms.openlocfilehash: 15cac09a97305c1b467cbb97da2d4b8a864ccbc7
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/14/2017
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-Den här artikeln beskriver de olika elementen som utgör ett arbetsflöde.
+Det här ämnet beskriver de olika elementen som utgör ett arbetsflöde.
 
 Ett arbetsflöde består av olika element, t.ex. De olika avsnitten som följer beskriver varje typ av element.
 
@@ -59,7 +59,7 @@ En *godkännandeprocess* är en process som består av separata steg. I varje go
 -   Begära en ändring av dokumentet.
 -   Tilldela en annan användare dokumentet för godkännande.
 
-## <a name="lineitem-workflow-elements"></a>Arbetsflödeselement för radartikel
+## <a name="line-item-workflow-elements"></a>Arbetsflödeselement för radartikel
 Ett arbetsflöde kan skapas för att bearbeta antingen dokument eller radartiklarna på ett dokument. Om du till exempel har skapat ett arbetsflöde för godkännande för tidrapporter. (Du refererar till arbetsflödet som *dokumentarbetsflöde*.) Du kan lägga till ett element för *arbetsflöde för radartikel* till det dokumentarbetsflödet. När elementet för radartikeln körs, skickas varje radartikel på dokumentet in för bearbetning. Du kan vilja att alla radartiklar bearbetas av samma radartikelarbetsflöde, eller du kanske vill att varje radartikel kan bearbetas i ett annat arbetsflöde för radartikel. Tänk dig att en medarbetare har skickat in en tidrapport som liknar följande bild.
 
 ![Arbetsflöde med radobjekt](./media/workflow_lineitemworkflow.gif) 
@@ -70,7 +70,7 @@ I det här scenariot vill du kanske skapa följande arbetsflöden för radobjekt
 -   **Arbetsflöde för radartikel 2** – Det här arbetsflödet används för att bearbeta artiklar där projekt-ID är 2222.
 -   **Arbetsflöde för radartikel 3** – Det här arbetsflödet används för att bearbeta artiklar där projekt-ID är 3333.
 
-## <a name="flowcontrol-elements"></a>Flödeskontrollelement
+## <a name="flow-control-elements"></a>Flödeskontrollelement
 Följande element låter dig designa arbetsflöden som har alternativa förgreningar eller förgreningar som körs samtidigt.
 
 ### <a name="manual-decision"></a>Manuellt beslut

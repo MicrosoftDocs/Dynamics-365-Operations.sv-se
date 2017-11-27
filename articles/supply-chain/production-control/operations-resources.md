@@ -3,7 +3,7 @@ title: Operations-resurser
 description: "Verksamhetsresurser utför aktiviteter för ett projekt eller en produktionsprocess. De kan vara av olika typer och kan ha olika förmågor."
 author: sorenva
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: WrkCtrCapability
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 61943
 ms.assetid: a3847f07-fca4-4140-a26f-d83c6ac68dde
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: sorenand
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 7a333c4d9c0e614c513bf3e1a02b943b186fb1e5
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: c4018632e5e20470948ee59e4bb2a1cab905d829
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -63,7 +63,7 @@ Verksamhetsresurser tilldelas till aktiviteter, när ett projekt eller en produk
 
 -   **Kapacitet** – Ange verksamhetsresursens kapacitet per timme när det gäller kapacitetmåttenheten.
 -   **Gruppera kapacitet** – Ange det maximala antalet enheter som verksamhetsresursen kan bearbeta per körning.
--   **Effektivitet i procent** – Ange effektiviteten som du förväntar dig från verksamhetsresursen. Effektivitetsprocentsatsen justerar genomflödet från verksamhetsresursen och påverkar den tid som reserverats för resursen. Produktionstiderna för operationer som använder verksamhetsresursen justeras även efter detta. Denna formel används för beräkningen: Planeringstid = Tid × 100 ÷ Effektivitet i procent i denna formel, *Tid* innefattar både körtiden och ställtider.
+-   **Effektivitet i procent** – Ange effektiviteten som du förväntar dig från verksamhetsresursen. Effektivitetsprocentsatsen justerar genomflödet från verksamhetsresursen och påverkar den tid som reserverats för resursen. Produktionstiderna för operationer som använder verksamhetsresursen justeras även efter detta. Här är formeln som används för beräkningen: planeringstid = tid × 100 ÷ effektivitetsprocenten. *Tid*  innehåller både körtid och ställtid.
 -   **Grovplaneringsprocent** – Ange högsta procentandelen av kapaciteten för verksamhetsresursen som du vill använda i grovplaneringen. Procentsatsen bör vara lägre än 100 procent vilket medger flexibilitet för kapaciteten under finplanering.
 -   **Begränsad kapacitet** – Ange det här alternativet som **Ja** om verksamhetsresursen ska planeras utifrån verklig kapacitet som är tillgänglig och om befintliga kapacitetsreservationer ska inkluderas. Om det här alternativet är **Nej**, antas verksamhetsresursen ha obegränsad kapacitet och resursen kan överbokas.
 -   **Begränsad egenskap** – Ange det här alternativet som **Ja** om du vill att verksamhetsresursen ska tidsplaneras baserat på den aktuella kapaciteten med hänsyn till krävda tidsplaneringsegenskaper för arbetstid.

@@ -1,9 +1,9 @@
 ---
 title: "Översikt över inköpsrekvisition"
-description: "Den här artikeln beskriver arbetsflödet för inköpsrekvisition och de olika statusar en inköpsrekvisition kan ha."
+description: "Det här ämnet beskriver arbetsflödet för inköpsrekvisition och olika statusar en inköpsrekvisition kan ha."
 author: mkirknel
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: PurchReqConsolidation, PurchReqCreate, PurchReqCreatePurchDetails, PurchReqCreatePurchListPage, PurchReqTable, PurchReqTableListPage
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 2174
 ms.assetid: 77d07119-4d9f-4c0e-acbe-d319203571ab
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
-ms.openlocfilehash: 6fb8bbc7340650341618f3a9613f4234ef1e9c04
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: b96a89bcabdaa3e3a3be3786dda15f9725f5a50d
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-Den här artikeln beskriver arbetsflödet för inköpsrekvisition och de olika statusar en inköpsrekvisition kan ha.
+Det här ämnet beskriver arbetsflödet för inköpsrekvisition och olika statusar en inköpsrekvisition kan ha.
 
 Beroende på hur din organisation är inställd kan du skapa inköpsrekvisitioner för produkter som används i organisationen. En inköpsrekvisition är ett internt dokument som ger inköpsavdelningen behörighet att köpa dessa artiklar eller tjänster.  
 
@@ -70,7 +70,7 @@ Den övergripande statusen på inköpsrekvisitionen bestäms av statusen på ink
 <tr class="odd">
 <td>Utkast</td>
 <td>Utkast</td>
-<td>Inköpsrekvisitionen och inköpsorderraden har skapats, men de har inte skickats in för granskning. Inköpsrekvisitioner och inköpsrekvisitionsrader som har statusen <strong>Utkast</strong> kan ändras. En inköpsrekvisition eller en inköpsrekvisitionsrad har också statusen <strong>Utkast</strong> om den har återkallats men inte har skickats tillbaka för granskning.<strong>Obs!</strong> Du kan skicka in eller återkalla en inköpsrekvisition på dokumentnivån. Du kan dock inte skicka in eller återkalla en enskild inköpsrekvisitionsrad.</td>
+<td>Inköpsrekvisitionen och inköpsorderraden har skapats, men de har inte skickats in för granskning. Inköpsrekvisitionen och inköpsrekvisitionsrader som har en status på <strong>Utkast</strong> kan ändras. En inköpsrekvisition eller inköpsrekvisitionsrad har också statusen <strong>utkast</strong> om den har den återkallats men inte har skickats för granskning. <strong>Anmärkning:</strong> Du kan skicka eller återkalla en inköpsrekvisition på dokumentnivå. Du kan dock inte skicka in eller återkalla en enskild inköpsrekvisitionsrad.</td>
 </tr>
 <tr class="even">
 <td>Under granskning</td>
@@ -111,7 +111,7 @@ Om du skickar tillbaka en inköpsrekvisitionsrad som har avvisats, startar grans
 <tr class="odd">
 <td>Annullerad</td>
 <td>Annullerad</td>
-<td>Inköpsrekvisitionen och alla inköpsrekvisitionsrader har annullerats.<strong>Obs!</strong> Om du inte längre behöver en artikel på en inköpsrekvisitionsrad, måste du avbryta inköpsrekvisitionsraden om den redan har godkänts. Endats inköpsrekvisitionsrader, som har godkänts kan avbrytas. Om alla inköpsrekvisitionsrader är under granskning har inköpsrekvisitionen statusvärdet. <strong>Under granskning</strong> Du får återkalla inköpsrekvisitionen och ta bort den lämpliga inköpsrekvisitionsraden.</td>
+<td>Inköpsrekvisitionen och alla inköpsrekvisitionsrader har avbrutits. <strong>Obs!</strong> Om du inte längre behöver en artikel på en inköpsrekvisitionsrad, måste du avbryta inköpsrekvisitionsraden om den redan har godkänts. Endats inköpsrekvisitionsrader, som har godkänts kan avbrytas. Om alla inköpsrekvisitionsrader är under granskning har inköpsrekvisitionen statusvärdet. <strong>Under granskning</strong> Du får återkalla inköpsrekvisitionen och ta bort den lämpliga inköpsrekvisitionsraden.</td>
 </tr>
 <tr class="even">
 <td>Stängt</td>

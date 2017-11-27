@@ -3,7 +3,7 @@ title: "Ställ in en anskaffningskategorihierarki"
 description: "I den här proceduren visas hur du skapar nya noder i en anskaffningskategorihierarki och hur du konfigurerar en anskaffningskategori som ska användas i en anskaffningsprocess."
 author: mkirknel
 manager: AnnBe
-ms.date: 11/11/2016
+ms.date: 11/06/2017
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: b9897b1184e8159b20a45d4cedbba56baef31a3c
+ms.sourcegitcommit: 6ad5c8552a6989e9093d0b1325754bc0f6d19372
+ms.openlocfilehash: 4541d029c9c3be3ee42332e5d8ff183dd503f13e
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/06/2017
 
 ---
 # <a name="set-up-a-procurement-category-hierarchy"></a>Ställ in en anskaffningskategorihierarki
@@ -30,7 +30,7 @@ I den här proceduren visas hur du skapar nya noder i en anskaffningskategorihie
 
 
 ## <a name="add-a-new-procurement-category"></a>Lägg till en ny anskaffningskategori.
-1. Gå till Anskaffning och källa > >Anskaffningskategorier.
+1. Gå till Anskaffning och källa > Anskaffningskategorier.
 2. Klicka på Redigera kategorihierarki.
     * Den aktuella anskaffningskategorihierarkin visas till vänster på sidan. Du är på väg att ändra hierarkin.  
 3. Klicka på Ny kategorinod.
@@ -42,7 +42,7 @@ I den här proceduren visas hur du skapar nya noder i en anskaffningskategorihie
 7. Klicka på Spara.
 
 ## <a name="add-products-to-your-new-procurement-category"></a>Lägg till produkter i den nya anskaffningskategorin
-1. Gå till Anskaffning och källa > >Anskaffningskategorier.
+1. Gå till Anskaffning och källa > Anskaffningskategorier.
     * Välj den nod som du precis lade till. Om du kör den här proceduren som en uppgiftsguide kanske du behöver låsa upp uppgiftsguiden för att välja noden.  
 2. Växla expansionen av avsnittet Produkter.
 3. Klicka på Lägg till i associerade produkter med anskaffningskategorin.

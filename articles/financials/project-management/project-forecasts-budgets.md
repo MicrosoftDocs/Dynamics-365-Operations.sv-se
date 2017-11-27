@@ -1,9 +1,9 @@
 ---
 title: Projektprognoser och projektbudgetar
-description: 
+description: "Microsoft Dynamics 365 for Finance and Operations tillhandahåller projektprognoser och projektbudgetar för att hantera och kontrollera dina projekt."
 author: KimANelson
 manager: AnnBe
-ms.date: 09/14/2017
+ms.date: 10/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: ForecastModel, ProjYearEndProcess
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 23501
 ms.assetid: 4e6d1384-19a2-4232-b3f3-d2590c218bd7
 ms.search.region: Global
@@ -19,18 +19,16 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 32dd89d92a496d6601d1983dbc3c8e7e579ee0b3
+ms.sourcegitcommit: 31abc719a8df7507e74b3bf6823306ba52261bc3
+ms.openlocfilehash: ebb3574b3f5c40b5512c0352c83520558f63879a
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/10/2017
 
 ---
 
 # <a name="project-forecasts-and-budgets"></a>Projektprognoser och projektbudgetar
 
 [!include[banner](../includes/banner.md)]
-
-
 
 
 Du kan hantera och kontrollera dina projekt i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition på två sätt: projektprognoser och projektbudgetar. 
@@ -41,16 +39,16 @@ Både projektprognoser och projektbudgetar använder prognosmodeller för att in
 
 Varje metod har sina fördelar. Du bör beakta följande punkter innan du väljer en metod för din organisation.
 
-|                           |                                                                                                                                                                                                                                                         |                                                                                                                                                                         |
-|---------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                           | **Projektprognoser**                                                                                                                                                                                                                                 | **Projektbudgetar**                                                                                                                                                   |
+|                           |                                          |                                                    |
+|---------------------------|------------------------------------------|----------------------------------------------------|
+|                           | **Projektprognoser**                  | **Projektbudgetar**                              |
 | **Periodallokering**     | Du kan inte uttryckligen fördela transaktioner under en räkenskapsperiod. I stället baseras prognosen och kontrollen av prognosen på livslängden för projektet. Eftersom prognoser baseras på ett visst datum måste du härleda perioden från datumet. | Du kan fördela transaktioner över hela projektet eller en räkenskapsperiod. Om du fördelar över en period, kan du överföra oanvända belopp framåt till nästa räkenskapsperiod. |
 | **Visa transaktioner**  | Du kan visa transaktioner i prognosformulären, där du ser prognoser för hela företaget och för alla projekt, oavsett hierarki. Fokusera på ett visst projekt genom att filtrera data.                                       | Du kan visa budgeterade transaktioner för en enskild projekthierarki. Därför kan du visa transaktionsdetaljer för ett överordnat projekt eller dess delprojekt.                 |
-| **Transaktionsvariabler** | När du anger prognostransaktioner, kan du använda varje attribut som finns för en verklig transaktion. Detta möjliggör större noggrannhet i prognosen. Du kan till exempel ange information om kvantiteter, anställda, artiklar eller radegenskaper.         | När du anger budgetdetaljer, kan du endast använda belopp, kategorier och aktiviteter.                                                                                    |
-| **Säkerhet**              | Prognoser bygger på transaktioner som du anger i prognosformulären och har ingen processtyrningsmekanism. Anställd som har behörighet till ett prognosformulär kan ändra information utan godkännande.                                        | Budgetering använder arbetsflödessystemet, som aktiverar ändringshantering och behåller en historik över ändringarna.                                                       |
-| **Inmatningstyper**           | Prognostransaktionsposter baseras på antalet enheter och på kostnads- och försäljningsenhetspriser.                                                                                                                                                       | Budgetdetaljer baseras på belopp som delas upp mellan kostnader och intäkter.                                                                                        |
-| **Prognosmodeller**       | Eftersom varje prognos måste vara kopplad till en modell, kan du skapa flera prognosmodeller och även ställa in delmodeller.                                                                                                                               | Projektbudgetar begränsar prognosmodellerna som används för budgeteringen. Färre prognosmodeller kan öka följdriktigheten i prognoser.                           |
-| **Överskridna kostnader**         | Du kan endast tillåta eller förbjuda registrering av transaktioner som orsakar kostnadsöverskridande.                                                                                                                                                                | Budgetering för projekt innehåller ytterligare kontrollalternativ för användare. Du kan tillåta varningar och överskridningar.                                                                   |
+| **Transaktionsvariabler** | När du anger prognostransaktioner, kan du använda varje attribut som finns för en verklig transaktion. Detta möjliggör större noggrannhet i prognosen. Du kan till exempel ange information om kvantiteter, anställda, artiklar eller radegenskaper.         | När du anger budgetdetaljer, kan du endast använda belopp, kategorier och aktiviteter.                    |
+| **Säkerhet**              | Prognoser bygger på transaktioner som du anger i prognosformulären och har ingen processtyrningsmekanism. Anställd som har behörighet till ett prognosformulär kan ändra information utan godkännande.                                        | Budgetering använder arbetsflödessystemet, som aktiverar ändringshantering och behåller en historik över ändringarna.         |
+| **Inmatningstyper**           | Prognostransaktionsposter baseras på antalet enheter och på kostnads- och försäljningsenhetspriser.  | Budgetdetaljer baseras på belopp som delas upp mellan kostnader och intäkter.                                          |
+| **Prognosmodeller**       | Eftersom varje prognos måste vara kopplad till en modell, kan du skapa flera prognosmodeller och även ställa in delmodeller.           | Projektbudgetar begränsar prognosmodellerna som används för budgeteringen. Färre prognosmodeller kan öka följdriktigheten i prognoser.                           |
+| **Överskridna kostnader**         | Du kan endast tillåta eller förbjuda registrering av transaktioner som orsakar kostnadsöverskridande.   | Budgetering för projekt innehåller ytterligare kontrollalternativ för användare. Du kan tillåta varningar och överskridningar.                    |
 | **Kontroll**               | Prognoskontroll utförs genom att använda prognosreducering. Verkliga belopp dras från prognostransaktionsaldon utan någon spårning. Detta kan göra det svårare att spåra var de verkliga transaktionerna uppstod.                   | I projektbudgetkontroll dras verkliga belopp från belopp i den resterande budgeten. Detta innebär en klarare spårning.                                   |
 
 ## <a name="project-forecasts"></a>Projektprognoser

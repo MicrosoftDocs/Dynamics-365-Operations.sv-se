@@ -1,9 +1,9 @@
 ---
 title: Strukturlistor och formler
-description: "Denna artikel innehåller information om strukturlistor och formler, som är en central del av definitionen av produkterna och produktvarianterna. Strukturlistor och formler anger nödvändiga material eller komponenter för en viss produkt. Formler kan också ange samprodukter och biprodukter som tas emot i en bestämd produktionskontext."
+description: "Detta ämne innehåller information om strukturlistor och formler, som är en central del av definitionen av produkterna och produktvarianterna."
 author: cvocph
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: BOMConsistOf, BOMDesigner, BOMTable, EcoResProductProcessManufacturingWorkspace
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 19331
 ms.assetid: c19b437a-2de2-4728-9477-2bcb0c2b1f5e
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 3137d93dd91ec3e58937e97bdddb5ca51ec4084c
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 430e2ab0c4438222ceb9102c011940af803acfbc
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-Denna artikel innehåller information om strukturlistor och formler, som är en central del av definitionen av produkterna och produktvarianterna. Strukturlistor och formler anger nödvändiga material eller komponenter för en viss produkt. Formler kan också ange samprodukter och biprodukter som tas emot i en bestämd produktionskontext. 
+Detta ämne innehåller information om strukturlistor och formler, som är en central del av definitionen av produkterna och produktvarianterna. Strukturlistor och formler anger nödvändiga material eller komponenter för en viss produkt. Formler kan också ange samprodukter och biprodukter som tas emot i en bestämd produktionskontext. 
 
 <a name="bills-of-materials"></a>Strukturlistor
 ------------------
@@ -62,7 +62,7 @@ Under produktens livscykel kan många typer av strukturlistor skapas av olika or
 -   **Teknikstrukturlista** – den här strukturlistan används normalt när du utformar produkter som baseras på befintliga produktportföljer. Teknikstrukturlistor är upplagda för att förenkla designprocessen och slå samman sammansatta produkter i teknikmoduler. För enkla produkter kan det vara möjligt till att ta fram teknikstrukturlistor som används i den aktuella produktionsprocessen. För andra produkter måste emellertid teknikstrukturlistan konverteras till en produktionsstrukturlista. Teknikstrukturlistor visas vanligtvis som fiktiva listor i strukturlistehierarkin. Även om teknikstrukturlistorna kan användas för planeringen och till tillverkningsoperationer kan detta tillvägagångssätt leda till ineffektivitet, särskilt i repetitiva operationer där många order skapas.
 -   **Planeringsstrukturlista** – den här strukturlistan används för planeringen av materialbehovet. Behovet av komponenter och ingredienser beräknas baserat på behovet av de färdiga produkterna. På samma sätt som kostnadsredovisningsstrukturlistor, kan planeringsstrukturlistor representera en specifik blandning av material som används under en period.
 -   **Produktionsstrukturlista** – detta är den egentliga strukturlistan som används för en viss produktion. En produktionsstrukturlista måste ta hänsyn till de verkliga resurserna som används för att producera produkten. När en produktionsorder, batchorder eller kanban skapas, komprimeras de olika nivåerna i strukturlistorna som representeras av fiktiva listor till en nivå och fördelas över operationerna för ordern.
--   **Kostnadsredovisningsstrukturlista** – den här strukturlistan används för att kunna beräkna den uppskattade kostnaden för en produkt. Du kan t.ex. använda en kostnadsredovisningsstrukturlista när standardkostnad används eller den beräknade planerade kostnaden för en viss produkt beräknas. Kostnadsredovisningstrukturlistor kan referera till en viss blandning av material och resurser som förväntas användas. Därför kan du använda kostnadsredovisningsstrukturlistan om du vill skapa en representativ uppskattad kostnad för en period och för att undvika avvikelser över tid.
+-   **Kostnadsredovisningsstrukturlista** – den här strukturlistan beräknar den uppskattade kostnaden för en produkt. Du kan t.ex. använda en kostnadsredovisningsstrukturlista när standardkostnad används eller den beräknade planerade kostnaden för en viss produkt beräknas. Kostnadsredovisningstrukturlistor kan referera till en viss blandning av material och resurser som förväntas användas. Därför kan du använda kostnadsredovisningsstrukturlistan om du vill skapa en representativ uppskattad kostnad för en period och för att undvika avvikelser över tid.
 
 Vilka typer av strukturlistor som de facto används i en implementering beror på implementeringen, samt även på affärsscenarier och behov. I enkla implementeringar kan en planeringsstrukturlista, produktionsstrukturlista och en kostnadsredovisningsstrukturlista slås samman till en strukturlista. I tillverkningsmiljöer där det ofta förekommer teknikändringar och flera alternativa flöden krävs det troligen fler strukturlistetyper.
 

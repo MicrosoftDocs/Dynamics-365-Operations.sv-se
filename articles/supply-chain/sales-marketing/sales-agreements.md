@@ -1,9 +1,9 @@
 ---
 title: "Försäljningsavtal"
-description: "Denna artikel innehåller information om försäljningsavtal. Ett försäljningsavtal är ett kontrakt där kunden förbinder sig att köpa produkter i en viss mängd eller för ett visst ett belopp över tid, i utbyte mot specialpriser och rabatter."
+description: "Det här ämnet innehåller information om försäljningsavtal. Ett försäljningsavtal är ett kontrakt där kunden förbinder sig att köpa produkter i en viss mängd eller för ett visst ett belopp över tid, i utbyte mot specialpriser och rabatter."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: SalesAgreement, SalesAgreementGenerateReleaseOrder, SalesAgreementListPage
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 9554
 ms.assetid: c5d55c8d-99f2-44f9-a897-5b0dee85fc81
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 15e3f872e4ded027734ee73081ba7af68be5107d
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 21e9c53f39b0f4def0052bf7f04c77279bfc610b
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-Denna artikel innehåller information om försäljningsavtal. Ett försäljningsavtal är ett kontrakt där kunden förbinder sig att köpa produkter i en viss mängd eller för ett visst ett belopp över tid, i utbyte mot specialpriser och rabatter.
+Det här ämnet innehåller information om försäljningsavtal. Ett försäljningsavtal är ett kontrakt där kunden förbinder sig att köpa produkter i en viss mängd eller för ett visst ett belopp över tid, i utbyte mot specialpriser och rabatter.
 
 En försäljningsavtal är ett kontrakt som binder kunden till att köpa produkter i en viss kvantitet eller för ett specifikt belopp över tid, i utbytet mot speciella särskilda priser, rabatter, och andra särskilda villkor, till exempel betalnings- och leveransvillkor. Priserna och rabatterna i inköpsavtalet åsidosätter eventuella priser och rabatter som anges i andra handelsavtal som kan finnas.  
 

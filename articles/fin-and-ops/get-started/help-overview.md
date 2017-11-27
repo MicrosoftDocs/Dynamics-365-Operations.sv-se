@@ -1,16 +1,16 @@
 ---
-title: "Hjälpöversikt"
-description: "Den här artikeln innehåller en översikt över komponenterna i hjälpsystemet för Microsoft Dynamics 365 for Finance and Operations. Det innehåller beskrivningar av hur du kan skapa anpassad dokumentation och utbildning för din organisation."
+title: "Hjälp – översikt"
+description: "Det här avsnittet innehåller en översikt över komponenterna i hjälpsystemet för Microsoft Dynamics 365 for Finance and Operations. Det innehåller beskrivningar av hur du kan skapa anpassad dokumentation och utbildning för din organisation."
 author: margoc
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 10/31/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, Developer, IT Pro
 ms.reviewer: margoc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 16381
 ms.assetid: 018c148c-9cbd-41e0-8186-d75dbf66288f
 ms.search.region: Global
@@ -18,18 +18,18 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d67ad79c068651f32ce7dc776bc460698557bc29
-ms.openlocfilehash: 2df27a23d31ecde99bb31b4f8a19295c331cae09
+ms.sourcegitcommit: d2063cd0ae592357d57fb3c787450c604fb9be58
+ms.openlocfilehash: 549d059e549ba470eb299753fd7b87920e6dd43d
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/11/2017
 
 ---
 
-# <a name="help-overview"></a>Hjälpöversikt
+# <a name="help-system-overview"></a>Översikt över hjälpsystem
 
 [!include[banner](../includes/banner.md)]
 
-Den här artikeln innehåller en översikt över komponenterna i hjälpsystemet för Microsoft Dynamics 365 for Finance and Operations. Det innehåller beskrivningar av hur du kan skapa anpassad dokumentation och utbildning för din organisation. 
+Det här avsnittet innehåller en översikt över komponenterna i hjälpsystemet för Microsoft Dynamics 365 for Finance and Operations. Det innehåller beskrivningar av hur du kan skapa anpassad dokumentation och utbildning för din organisation. 
 
 > [!NOTE] 
 > Följande produkter är nära relaterade: Dynamics 365 for Finance and Operations, Enterprise edition; Dynamics 365 for Retail; samt Dynamics 365 for Talent. Samma funktioner kan förekomma i samtliga 3 produkter. I avsnitt som huvudsakligen berör Retail blir produktnamnet därför Dynamics 365 for Retail; i avsnitt som främst berör Talent blir produktnamnet Dynamics 365 for Talent; och i avsnitt som berör kärnprodukten blir produktnamnet Dynamics 365 for Finance and Operations. Avsnitt som skrivs för en produkt kan även gälla för samma funktioner i en relaterad produkt.
@@ -69,16 +69,17 @@ Vi får många frågor om hur man söker efter webbplatsens innehåll. Om du sta
 
 Du kan också hitta webbplatsens innehåll via valfri sökmotor. För bästa resultat rekommenderas du använda en webbplatssökning, exempelvis site:docs.microsoft.com dynamics 365 "sökord".  
 
-![Webbplatssökning](./media/site-search-1.png)
-
-![Sökresultat för webbplats](./media/site-search-results-2.png)
-
 ### <a name="the-docsmicrosoftcom-table-of-contents"></a>docs.microsoft.com-innehållsförteckningen
-Alla produkter delar en och samma innehållsförteckning på dokumentwebbplatsen, vilket gör att kunder kan se kontexten för det avsnitt som de befinner sig i. Du kan också använda filterkontrollen för att hitta avsnitt som du letar efter.
+Finance and Operations, Retail och Talent delar en och samma innehållsförteckning på dokumentwebbplatsen, vilket gör att kunder kan se kontexten för det avsnitt som de befinner sig i. Du kan också använda filterkontrollen ovanför innehållsförteckningen för att hitta avsnitt som du letar efter.
 
-### <a name="how-can-i-contribute"></a>Hur kan jag bidra? 
+### <a name="follow-a-topic"></a>Följ ett avsnitt
+Om du vill öppna ett avsnitt klickar du på knappen Följ under kommentarrutan. Du måste logga in för att följa avsnittet. Se [påverkar oss en kommentar](#leave-us-a-comment) information.  
 
-Skriv en kommentar! 
+### <a name="give-feedback"></a>Ge feedback 
+Vi gillar verkligen kundfeedback. Du kan kommentera eller föreslå ändringar till webbplatsens innehåll via GitHub.
+
+##### <a name="leave-us-a-comment"></a>Skriv en kommentar 
+Om du har kommentarer eller frågor om ett ämne lämna kommentarer längst ned på sidan.  
 
 1 Klicka på **Kommentarer** för att komma till kommentarerna längst ned på sidan.
 
@@ -96,6 +97,19 @@ Eller
 Ange en e-postadress och ett nytt lösenord till höger för att skapa ett nytt konto för webbplatsen. 
 
 ![Inloggningsalternativ](./media/signin-options.png)
+
+
+##### <a name="suggest-a-change-or-contribute-content-through-github"></a>Föreslå en ändring eller bidra med innehåll via GitHub
+Om du vill föreslå en ändring måste du ha ett GitHub-konto och registrera ett licensavtal för deltagare.  När du har skickat en pull-begäran granskar dina föreslagna ändringar. Om det behövs ska vi diskutera dem internt och återkomma till dig.  
+
+För att komma igång klickar du på knappen **redigera** (penna) på ett avsnitt eller går till vår rapport på https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public. 
+
+Mer information finns i vår deltagarguide: https://github.com/MicrosoftDocs/dynamics-365-unified-operations-public/blob/live/CONTRIBUTING.md. 
+
+
+> [!NOTE]
+> Vi kommer endast godkänner bidrag till våra engelska databaser just nu.  
+> Vi accepterar inte att problem rapporteras via GitHub--du måste använda en pull-begäran för innehåll sförslag. Produkt- och funktionsfeedback bör hanteras via idéportalen Dynamics 365: https://ideas.dynamics.com/ideas/. 
 
 
 ## <a name="task-guides"></a>Uppgiftsguider
@@ -158,7 +172,7 @@ Gå till sidan **Systemparametrar** och följ dessa steg:
 
 4.  Välj BPM-bibliotekens visningsordning. Detta bestämmer i vilken ordning som uppgiftsregistreringar från biblioteken visas i fönstret Hjälp.
 
-När en systemadministratör har slutfört dessa steg kan du öppna fönstret Hjälp och klicka på fliken **Uppgiftsguider**. Du kan nu se de uppgiftsguider som gäller den sida som du för tillfället befinner dig på i Finance and Operations. Om inga uppgiftsguider hittas kan du ange nyckelord för att begränsa sökningen. Efter att du har klickat på en uppgiftsguide i Hjälp-fönstret visas steg-för-steg-instruktioner och du kan spela upp uppgiftsguiden. 
+När en systemadministratör har slutfört dessa steg kan du öppna fönstret Hjälp och klicka på fliken **Uppgiftsguider** Du ser nu de uppgiftsguider som gäller för sidan du för närvarande befinner dig på i Finance and Operations. Om inga uppgiftsguider hittas kan du ange nyckelord för att begränsa sökningen. Efter att du har klickat på en uppgiftsguide i Hjälp-fönstret visas steg-för-steg-instruktioner och du kan spela upp uppgiftsguiden. 
 
 ![Läsvy för uppgiftsguide](./media/task-guide-ops.png)
 
@@ -196,9 +210,4 @@ I följande register visas våra webbplatser. Våra innehållswebbplatser är or
 [Nya eller uppdaterade uppgiftsguider (augusti 2016)](new-updated-task-guides-available-august-2016.md)
 [Nya eller uppdaterade uppgiftsguider (maj 2016)](new-updated-task-guides-available-may-2016.md)
 [Nya uppgiftsguider (februari 2016)](new-task-guides-available-february-2016.md)
-
-
-
-
-
 

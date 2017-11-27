@@ -1,9 +1,9 @@
 ---
 title: "Tid- och närvaroregistrering"
-description: "Tidsregistreringsarbetare kan ange olika typer av tidregistreringar, till exempel stämpla in, stämpla ut, registrera indirekta aktiviteter och frånvaroregistrering. Den här artikeln beskriver registreringar, deras beräkning, godkännande och användning av arbetsflöde för att lägga till strukturen och godkännande automatiskt till processen för godkännande av tidrapporter."
+description: "Tidsregistreringsarbetare kan ange olika typer av tidregistreringar, till exempel stämpla in, stämpla ut, registrera indirekta aktiviteter och frånvaroregistrering. Det här ämnet beskriver registreringar, deras beräkning, godkännande och användning av arbetsflöde för att lägga till strukturen och godkännande automatiskt till processen för godkännande av tidrapporter."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: HcmWorker, JmgCalcApprovePickDialog, JmgGroupApprove, JmgGroupCalc, JmgGroupSigningTable, JmgRegistration, JmgTimeCalcParmeters, WorkflowTableListPageRnr
 audience: Application User
 ms.reviewer: rschloma
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 53351
 ms.assetid: 885b0cdf-53d7-4cb4-92fe-da1b9e32b39f
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 83603b1f8d20c18b7f10cd7224d491b558ee1b8b
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 29040d0c96183898672bc405364ec59707bff53a
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-Tidsregistreringsarbetare kan ange olika typer av tidregistreringar, till exempel stämpla in, stämpla ut, registrera indirekta aktiviteter och frånvaroregistrering. Den här artikeln beskriver registreringar, deras beräkning, godkännande och användning av arbetsflöde för att lägga till strukturen och godkännande automatiskt till processen för godkännande av tidrapporter. 
+Tidsregistreringsarbetare kan ange olika typer av tidregistreringar, till exempel stämpla in, stämpla ut, registrera indirekta aktiviteter och frånvaroregistrering. Det här ämnet beskriver registreringar, deras beräkning, godkännande och användning av arbetsflöde för att lägga till strukturen och godkännande automatiskt till processen för godkännande av tidrapporter. 
 
 <a name="registrations"></a>Registreringar
 -------------
@@ -66,7 +66,7 @@ När inställningar är klara kan arbetarna ange andra typer av registreringar.
 -   Indirekta aktiviteter, som är ej produktiva aktiviteter som en anställd kan engagera sig i under en arbetsdag. Exempel på dessa aktiviteter omfattar möten eller att städa deras arbetsyta.
 -   Övertid, som kan registreras antingen som ytterligare timmar, flextid eller övertid.
 
-## <a name="adding-clockout-registrations"></a>Lägg till utstämplingsregistreringar
+## <a name="adding-clock-out-registrations"></a>Lägg till en utstämplingsregistrering
 Om en anställd glömmer utstämpling vid slutet av arbetsdagen, kan den saknade registreringen läggas till, genom att köra ett batchjobb. Systemet jämför instämplingstid och utstämplingstid enligt den kopplade profilen för arbetaren och infogar automatiskt den saknade utstämplingen som matchar profilens sluttid. Både in- och utstämplingsregistreringar är flera viktiga för den efterföljande beräkningen och godkännandet av tidregistreringar, innan de kan överföras till lönesystemet.
 
 ## <a name="calculating-registrations"></a>Beräkna registreringar

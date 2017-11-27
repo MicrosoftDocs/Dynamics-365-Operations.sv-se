@@ -3,7 +3,7 @@ title: Definiera diskret tillverkningsresursgrupp
 description: "En resursgrupp är en uppsättning verksamhetsresurser som normalt motsvarar den fysiska organisationen av arbetsgrupper som definieras av gula rader i produktionen."
 author: sorenva
 manager: AnnBe
-ms.date: 02/12/2016
+ms.date: 11/03/2017
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,17 +17,17 @@ ms.author: sorenand
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: c2423fe91d1531a326080e3a584195ea864f2e3e
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: bd9aaf49ab34c21f7c1cb02873d0ad5141b2e5e6
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 # <a name="define-discrete-manufacturing-resource-group"></a>Definiera diskret tillverkningsresursgrupp
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-En resursgrupp är en uppsättning verksamhetsresurser som normalt motsvarar den fysiska organisationen av arbetsgrupper som definieras av gula rader i produktionen. I den här proceduren visas definitionen av en resursgrupp för användning i diskret produktion. Du kan gå igenom den här proceduren i demonstrationsdataföretaget USMF eller använda dina egna data.
+En resursgrupp är en uppsättning verksamhetsresurser som normalt motsvarar den fysiska organisationen av arbetsgrupper som definieras av gula rader i produktionen. Den här proceduren visar hur du definierar en resursgrupp för användning i den diskreta produktionen. Du kan gå igenom den här proceduren i demonstrationsdataföretaget USMF eller använda dina egna data.
 
 1. Gå till Resursgrupper.
 2. Klicka på Ny.

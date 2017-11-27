@@ -16,10 +16,10 @@ ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: f372db3d2e358cde6a5e65b01f4dc499c69fe022
+ms.sourcegitcommit: 809a1466b0f4674f503bc654175d8f94b37a6508
+ms.openlocfilehash: 7ef63151f352b3664bccd7a59e7417dfddc7470b
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/02/2017
 
 ---
 # <a name="look-up-applicable-prices-and-discounts"></a>Slå upp tillämpliga priser och rabatter
@@ -42,7 +42,7 @@ I den här proceduren visas hur du hittar pris och/eller rabatt för en produkt 
     * Om alternativet Visa relaterade produktvarianter har valts innebär det att det finns ytterligare handelsavtal för produktvarianterna.  
 7. Klicka på kryssrutan Visa relaterade produktvarianter.
     * En lista med produktvarianterna visas, med information om dimensionerna för dessa.  
-8. I listan markerar du den rad som motsvarar färgen vit.
+8. Markera raden som representerar färgen Vit i listan.
     * Observera att produktpriset nu skiljer sig från det som tidigare visades när det inte har registrerats per dimension.  
 9. Klicka på Visa försäljningspriser.
     * På sidan Pris (försäljning) visas alla handelsavtal som gäller för produkten, inklusive varianterna för denna.  

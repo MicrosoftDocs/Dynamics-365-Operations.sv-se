@@ -1,9 +1,9 @@
 ---
 title: "Gör manuella justeringar på baslinjeprognosen"
-description: "Denna artikel beskriver hur du kan göra manuella justeringar till en baslinje prognos och visa information om prognosen."
+description: "Detta ämne beskriver hur du kan göra manuella justeringar till en baslinje prognos och visa information om prognosen."
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: ReqDemPlanForecastViewer
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 72704
 ms.assetid: e7c5d44e-07bc-40b1-a4b3-8ba46483ef9e
 ms.search.region: global
@@ -20,10 +20,10 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 218374cdb6b5588648422d97c04fb60f26e47ac7
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: dbc195da36d31e01400fe66a1c02ea49609400eb
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-Denna artikel beskriver hur du kan göra manuella justeringar till en baslinje prognos och visa information om prognosen. 
+Detta ämne beskriver hur du kan göra manuella justeringar till en baslinje prognos och visa information om prognosen. 
 
 Innan du gör manuella justeringar, det är viktigt att du förstår några begrepp på olika sidor.
 
@@ -43,7 +43,7 @@ Det **justerade behovet prognos** sidan innehåller ett rutnät som har följand
 -   Följande kolumnerna representerar prognos hinkar att prognosen har genererats för. Varje kolumnrubrik är den första dagen av den prognostiserade kostnadsslag som visas.
 -   Värdena i cellerna utgör prognosen för ett objekt, objekt fördelningsnyckel, och så vidare, för att särskilda prognostiserade hink.
 
-## <a name="forecast-aggregation-and-deaggregation"></a>Prognosaggregering och deaggregering
+## <a name="forecast-aggregation-and-de-aggregation"></a>Prognossummeringen och aggregering
 Undertiteln på sidan visar prognossummeringen. 
 
 Till exempel, om undertexten på sidan **Företag / Ort / fördelningsnyckel / artikelnummer / Färg / Storlek / Konfiguration / Stil**, det finns ingen prognos aggregering och prognosen visas på objektet och dess dimensioner. För att ändra aggregering, använd **ändra prognosen mått** sida som du kan öppna från programmenyn. 

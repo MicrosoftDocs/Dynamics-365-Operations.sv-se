@@ -3,7 +3,7 @@ title: "Gantt-diagram för jobbplanering"
 description: "Produktionsplanerare kan styra och optimera produktionsplanerna genom att använda Gantt-scheman."
 author: johanhoffmann
 manager: AnnBe
-ms.date: 08/23/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: JmgShopSupervisorWorkspace, ProdTable, ProdTableListPage
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
@@ -20,10 +20,10 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: cc7543305ac634dfed3779bb83806ee4fd97d7fa
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 5a4b0450cc76c8d9307b9b21b78a170afcc298e4
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -39,7 +39,7 @@ Ett Gantt-diagram är en visuell representation av schemalagda aktiviteter inom 
 -   Jobb från planerade tillverkningsorder.
 -   Finplanerade projektaktiviteter av typen timprognoser.
 
-Gantt-diagrammet kan öppnas i två lägen: **Ordervy** och **Resursvy**[.](https://authoring.help.dynamics.com/en/?post_type=incsub_wiki&p=1665154&preview=true)I **Ordervy** är aktiviteter grupperade under tillverkningsorder. Detta kan exempelvis vara användbart om du vill behålla en översikt över de jobb som tillhör samma order. I **Resursvy** grupperas alla jobb under enskilda resurser. Den här vyn kan vara användbar när du optimerar planen på resursnivå, till exempel en dator eller en grupp av datorer. Gantt-diagrammet nedan visar **Ordervy** och **Resursvy** med dessa nyckelelement:
+Gantt-schemat kan öppnas i två olika vyer, **Ordervy** och **Resursvy**[](https://authoring.help.dynamics.com/en/?post_type=incsub_wiki&p=1665154&preview=true). I **Ordervy**, grupperas aktiviteter under tillverkningsorder. Detta kan exempelvis vara användbart om du vill behålla en översikt över de jobb som tillhör samma order. I **Resursvy** grupperas alla jobb under enskilda resurser. Den här vyn kan vara användbar när du optimerar planen på resursnivå, till exempel en dator eller en grupp av datorer. Gantt-diagrammet nedan visar **Ordervy** och **Resursvy** med dessa nyckelelement:
 
 1.  Gantt-diagramaktivitet
 2.  Symbol för materialbrist
@@ -156,5 +156,7 @@ Gantt-schemat kan öppnas från följande sidor:
 | **Produktionsorder som ska frisläppas** (öppnas från arbetsytan **Produktionsgolvsledning**) | Sidan Produktionsorder som ska frisläppas öppnas från arbetsytan **Produktionsgolvsledning**. Den här sidan visar tidsplanerade produktions- och batchorder som väntar på att frisläppas. På den här sidan kan du öppna Gantt-diagrammet för valda produktionsorder.                                                                                                                                                                                                                                                        |
 ## <a name="see-also"></a>Se även  
 [Visuell schemaläggning med Gantt-schema för produktion och batch-order (Video)](https://youtu.be/BtbuShkGj4I)
+
+[Visuell planering för produktion (demo-skrift)](https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/how-to-articles/365finoptvisschep)
 
 
