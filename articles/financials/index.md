@@ -18,10 +18,10 @@ ms.author: twheeloc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 6b576be9986a0c0701792a87422a0865cd3f8e7a
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 02451c702549653ef725b7b5d285a36eabecf3d6
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -37,7 +37,7 @@ Välj ett funktionsområde för att läsa mer om det.
 - [Kassa- och bankhantering](cash-bank-management\cash-bank-management.md)
 - [Kostnadsredovisning](cost-accounting\cost-accounting-home-page.md)
 - [Anläggningstillgångar](fixed-assets\fixed-assets.md)
-- [Huvudbok](general-ledger\general-ledger.md) 
+- [Redovisning](general-ledger\general-ledger.md) 
 - [Projekthantering](project-management\overview-project-management-accounting.md)
 - [Offentlig sektor](public-sector\public-sector-functionality.md) 
 - [Budgetering](budgeting\budgeting-overview.md) 

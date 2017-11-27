@@ -2,12 +2,17 @@
 
 # Kom igång
 ## [Nyheter eller ändringar](get-started/whats-new.md)
+## [Innan du köper Dynamics 365 for Retail](get-started/before-you-buy.md)
+## [Registrera ett abonnemang på förhandsversionen](../dev-itpro/dev-tools/sign-up-preview-subscription.md)
+## [Distribuera en demonstrationsmiljö](../dev-itpro/deployment/deploy-demo-environment.md)
+## [Distribueringsalternativ](dev-itpro/choose-deployment.md)
+
 
 # Betalningar
 ## [Betalningsmetoder](payment-methods.md)
 ## [Inställning, auktorisering och registrering av kreditkort](../financials/accounts-receivable/credit-card-authorizations.md)
-## [Konfigurera betalningsmetoder för kassa](cash-denominations.md)
-## [Frågor och svar om betalningar](dev-itpro/payments-retail.md)
+## [Konfigurera betalningsmetoder för POS](cash-denominations.md)
+## [Vanliga frågor och svar om betalningar](dev-itpro/payments-retail.md)
 
 # Inköpsorder
 ## [Översikt över inköpsorder](../supply-chain/procurement/purchase-order-overview.md)
@@ -32,42 +37,45 @@
 ## [Betalningsalternativ](work-with-payments.md)
 
 # Inställning och hantering av kanaler
-## [Initiera startdata i en butiksmiljö](enable-configure-retail-functionality.md)
+## [Initiera startdata i en Retail-miljö](enable-configure-retail-functionality.md)
 ## [Definiera butikskanaler](define-maintain-retail-channels.md)
 ## [Översikt över onlinebutik](online-stores.md)
-## [Konfigurera och installera en maskinvarustation för Butik](retail-hardware-station-configuration-installation.md)
-## [Tidrapportering för butik](retail-time-attendance.md)
+## [Konfigurera och installera en maskinvarustation för Retail](retail-hardware-station-configuration-installation.md)
+## [Tidrapportering för Retail](retail-time-attendance.md)
 
-# Modern kassa (MPOS) och molnbaserad kassa
+# Modern kassa (MPOS) och Cloud POS
+## [POS-operationer](POS-operations.md)
+## [Demodataskärmlayouter i MPOS/CPOS](demo-data.md)
 ## Kringutrustning
-### [Översikt över butikskringutrustning](retail-peripherals-overview.md)
-### [Microsoft-testad kassakringutrustning](microsoft-tested-pos-hardware-peripherals.md)
-### [Kringutrustningssimulator för butik](dev-itpro/retail-peripheral-simulator.md)
+### [Översikt över Retail-utrustning](retail-peripherals-overview.md)
+### [Microsoft-testad POS-utrustning](microsoft-tested-pos-hardware-peripherals.md)
+### [Kringutrustningssimulator för Retail](dev-itpro/retail-peripheral-simulator.md)
 ### [Definiera och underhåll kanalklienter, kassor och maskinvarustationer](define-maintain-channel-clients-registers-hw-stations.md)
 ## Skärmlayout
-### [Konfigurera skärmlayouter för kassa](pos-screen-layouts.md)
+### [Konfigurera skärmlayouter för POS](pos-screen-layouts.md)
 ### [Installera layoutdesignern Retail POS](install-pos-layout-designer.md)
-### [Kassaprogram och språkinställningar](pos-application-user-language-settings.md)
+### [POS-program och språkinställningar](pos-application-user-language-settings.md)
 ### [Ställa in bilder för MPOS](set-up-manage-images-retail-mpos.md)
 ## [Översikt över infokoder](info-codes-retail.md) 
 ## Produktrekommendationer
 ### [Översikt över anpassade produktrekommendationer](personalized-product-recommendations.md)
-### [Lägga till en rekommendationskontroll i en kassaenhet](add-recommendations-control-pos-screen.md)
-## [Offlinefunktioner för kassa](pos-offline-functionality.md)
+### [Lägga till en rekommendationskontroll i en POS-enhet](add-recommendations-control-pos-screen.md)
+## [Offlinefunktioner för POS](pos-offline-functionality.md)
 ## [Hantering av skift och kassalåda](shift-drawer-management.md)
 ## Kundorder
 ### [Översikt över kundorder](customer-orders-overview.md)
 ### [Kombinerade kundorder](hybrid-customer-orders.md)
 ## Försäljare
-### [Spåra provisioner i kassa med försäljningsgrupper](pos-sales-groups-track-commissions.md)
+### [Spåra provisioner i POS med försäljningsgrupper](pos-sales-groups-track-commissions.md)
+## [Leverera en order från en annan butik](charge-send.md)
 ## Enhetsaktivering
-### [Konfigurera och installera MOPS](retail-modern-pos-device-activation.md)
-### [Ställa in utökad inloggning för molnbaserad kassa och MPOS](extended-logon.md)
-### [Hantera butikskonton och enheter från huvudkontoret](set-up-activation-accounts-validate-devices-hq.md)
+### [Konfigurera och installera MPOS](retail-modern-pos-device-activation.md)
+### [Ställa in utökad inloggning för Cloud POS och MPOS](extended-logon.md)
+### [Hantera Retail-konton och enheter från huvudkontoret](set-up-activation-accounts-validate-devices-hq.md)
 ## Inleveranser
 ### [Ställ in kvittomallar](receipt-templates-printing.md) 
 ### [Skicka e-postkvitton från MPOS](email-receipts.md)
-## [Uppgiftsinspelare och hjälp för kassa](task-recorder-retail-pos.md)
+## [Uppgiftsinspelare och hjälp för POS](task-recorder-retail-pos.md)
 
 # Övervakning och analys
 ## [Övervaka försäljningsresultat och marginaler](monitor-sales-margin-performance.md)
@@ -131,11 +139,11 @@
 ## [ Skapa och associera register](tasks/create-associate-registers.md)
 ## [ Skapa, beräkna och bokföra ett utdrag för en butik](tasks/create-calculate-post-statement-retail-store.md)
 ## [ Skapa kundtjänstorder](tasks/create-call-center-orders.md)
-## [ Skapa ekonomiska dimensioner för kassaregister och konfigurera dimensionsvärden för register](tasks/create-financial-dimensions-pos.md)
+## [ Skapa ekonomiska dimensioner för POS-register och konfigurera dimensionsvärden för register](tasks/create-financial-dimensions-pos.md)
 ## [ Skapa ekonomiska dimensioner för detaljhandelskanaler och konfigurera dimensionsvärden för butiker](tasks/create-financial-dimensions-retail-channels.md)
 ## [ Skapa online-kanaler och definiera kanalattribut](tasks/create-online-channel-define-channel-attributes.md)
-## [ Skapa kassabehörighetsgrupper](tasks/create-pos-permission-groups.md)
-## [ Skapa en visuell kassaprofil ](tasks/create-pos-visual-profile-2016-02.md)
+## [ Skapa POS-behörighetsgrupper](tasks/create-pos-permission-groups.md)
+## [ Skapa en visuell POS-profil ](tasks/create-pos-visual-profile-2016-02.md)
 ## [ Skapa produktförpackningar för inköpsorder](tasks/create-product-packages-purchase-orders.md)
 ## [ Definiera kundtjänst och kanalattribut](tasks/define-call-center-channel-channel-attributes.md)
 ## [ Definiera kanalattribut](tasks/define-channel-attributes.md)
@@ -151,7 +159,7 @@
 ## [ Bokför onlineförsäljningar och -betalningar](tasks/posting-online-sales-payments.md)
 ## [ Bearbeta justeringar av förmånsbelöningspoäng](tasks/process-loyalty-reward-point-adjustments.md)
 ## [ Skjut produkter från distributionscenter till butik med centraliserad distribution](tasks/push-products-distribution-center-store-buyers-push.md)
-## [ Underhåll butiksprisjusteringar](tasks/retail-price-adjustments.md)
+## [ Underhåll Retail-prisjusteringar](tasks/retail-price-adjustments.md)
 ## [ Konfigurera och kör ett jobb för att beräkna utdrag](tasks/run-job-calculate-statements.md)
 ## [ Konfigurera och kör ett jobb för att bokföra utdrag](tasks/run-job-post-statements.md)
 ## [ Generera och kör färdiga rapporter](tasks/run-out-box-reports.md)
@@ -168,15 +176,15 @@
 ### [Kanalkommunikation för Retail](dev-itpro/define-retail-channel-communications-cdx.md)
 ### [MPOS-arkitektur](dev-itpro/retail-modern-pos-architecture.md)
 ### [Publiceringsarkitektur för onlinebutik i Retail](dev-itpro/retail-online-store-publishing-architecture.md)
-### [Innehållspaket för butikskanalprestanda för Power BI](../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md)
+### [Innehållspaket för Retail-kanalprestanda för Power BI](../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md)
 
 ## Distribution och snabbkorrigeringar
-### [Konfiguration och installation av Retail Store Scale Unit](dev-itpro/retail-store-scale-unit-configuration-installation.md)
-#### [Butikssystem i Retail, innan du börjar](dev-itpro/retail-store-system-begin.md)
+### [Översikt av Retail Store Scale Unit](dev-itpro/retail-store-system-begin.md)
+#### [Konfiguration och installation av Retail Store Scale Unit](dev-itpro/retail-store-scale-unit-configuration-installation.md)
 ### [Konfiguration och installation av Retail Modern POS](retail-modern-pos-device-activation.md)
-#### [Hantera butikskonton och enheter från huvudkontoret](set-up-activation-accounts-validate-devices-hq.md)
+#### [Hantera Retail-konton och enheter från huvudkontoret](set-up-activation-accounts-validate-devices-hq.md)
 #### [Enhetsaktivering för Retail POS](dev-itpro/retail-device-activation.md)
-#### [Skydda Retail Cloud POS](dev-itpro/secure-retail-cloud-pos.md)
+#### [Skydda Cloud POS](dev-itpro/secure-retail-cloud-pos.md)
 ### [Konfiguration och installation av Retail Hardware Station](retail-hardware-station-configuration-installation.md)
 ### [Massdistribution av komponenter för självbetjäningspaket för Retail](dev-itpro/retail-mass-deployment.md)
 ### [Retail-komponenthändelser för diagnostik och felsökning](dev-itpro/retail-component-events-diagnostics-troubleshooting.md)
@@ -187,16 +195,18 @@
 ### [Installera N-1-komponenter](dev-itpro/n-1-installation-configuration.md)
 
 ## Miljökonfiguration
+### [Lägg till länkar till organisationens juridiska villkor och sekretesspolicy](../dev-itpro/sysadmin/legal-terms-privacy-statement.md)
 ### [Hantera Bing-kartor](dev-itpro/manage-bing-maps.md)
 
 ## Utbyggbarhet
 ### Kassa
 #### [Skärmlayouter för Retail POS](pos-screen-layouts.md)
-##### [Installera layoutdesignern för kassa](install-pos-layout-designer.md)
+##### [Installera layoutdesignern för POS](install-pos-layout-designer.md)
 #### [Konfigurera MPOS för offlineläge](dev-itpro/retail-modern-pos-offline.md)
-#### [MPOS och molnbaserad kassa, utbyggbarhet för utlösare](dev-itpro/modern-pos-trigger-extensibility.md)
-#### [Lägga till en anpassad kontroll i en kassavy](dev-itpro/pos-custom-control.md)
-#### [Tillägg för kassabetalning](dev-itpro/pos-payment-extension.md)
+#### [MPOS och Cloud POS, utbyggbarhet för utlösare](dev-itpro/modern-pos-trigger-extensibility.md)
+#### [Lägga till en anpassad kontroll i en POS-vy](dev-itpro/pos-custom-control.md)
+#### [Tillägg för POS-betalning](dev-itpro/pos-payment-extension.md)
+#### [Stöd för externa presentkort](dev-itpro/gift-card.md)
 ### [Skapa en Retail-app](dev-itpro/create-retail-experience-app.md)
 ### [Översikt av och utbyggbarhet för Hardware Station](dev-itpro/hardware-station-extensibility.md)
 
@@ -205,7 +215,7 @@
 #### [Styrenheter för webb-API och OData](dev-itpro/odata-controllers-api.md)
 #### [API:er för Retail Server-kund och -konsument](dev-itpro/retail-server-customer-consumer-api.md)
 #### [Utöka metadata](dev-itpro/extend-metadata.md)
-#### [Utöka Commerce Runtime så att det stöder offlineläge för kassa](dev-itpro/call-crt-service-offline.md)
+#### [Utöka Commerce Runtime så att det stöder offlineläge för POS](dev-itpro/call-crt-service-offline.md)
 ### Commerce Runtime
 #### [Översikt över Commerce Runtime](dev-itpro/commerce-runtime-overview.md)
 #### [Utbyggbarhet för Commerce Runtime och Retail Server ](dev-itpro/commerce-runtime-extensibility.md)
@@ -230,10 +240,16 @@
 ### [Exempel på utbyggbarhet: SDK för Retail](dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md)
 ### [Kassaapparater för Sverige](localizations/emea-swe-cash-registers.md)
 ### [Exempel för Retail POS-integration med styrenheter för Sverige](dev-itpro/retail-sdk/retail-sdk-control-unit-sample.md)
+### [Kassaapparater för Norge](localizations/emea-nor-cash-registers.md)
+### [Riktlinjer för distribution av kassaapparater för Norge](localizations/emea-nor-loc-deployment-guidelines.md)
 ### [SDK för Retail, förpackning](dev-itpro/retail-sdk/retail-sdk-packaging.md)
-### [Exempel för SDK för Retail ](dev-itpro/retail-sdk/retail-sdk-samples.md)
+### [SDK-exempel för Retail ](dev-itpro/retail-sdk/retail-sdk-samples.md)
 ### [Tillägg för kanaldatabas](dev-itpro/channel-db-extensions.md)
 ### [CDX-utbyggbarhet](dev-itpro/cdx-extensibility.md)
+### [Orderattribut](dev-itpro/order-attributes.md)
+### [Kundattribut](dev-itpro/customer-attributes.md)
+### [Typescript- och C#-proxy för Retail](dev-itpro/typescript-proxy-retail-pos.md)
+
 
 ## Commerce Runtime
 ### [Lojalitetstillägg](dev-itpro/retail-sdk/loyalty-extension-sample.md)

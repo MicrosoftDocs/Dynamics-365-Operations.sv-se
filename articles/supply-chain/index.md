@@ -1,16 +1,16 @@
 ---
 title: "Startsidan Hantering av underleverantörer"
-description: "Den här sidan hänvisar till resurser som hjälper dig att använda Microsoft Dynamics 365 for Finance and Operations - Hantering av underleverantörer mer effektivt."
+description: "Det här ämnet innehåller en lista med hjälpavsnitt och andra resurser för styrningsfunktionerna för leveranskedjor i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 07/20/2017
+ms.date: 11/02/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 
 ms.assetid: ad2a889a-acfd-4b59-a3b3-4017dd374c7b
 ms.search.region: global
@@ -19,10 +19,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 04d459a2fd0fdf9c201d9e96b37234846eb9ccf0
-ms.openlocfilehash: 6cef449562ba75b03b10b4fe27a436ecff3a6691
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 0ca879fc4b0a43cd3af1e45c78a48f1c942a9a6a
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 09/29/2017
 
 [!include[banner](includes/banner.md)]
 
-Den här sidan hänvisar till resurser som hjälper dig att använda Microsoft Dynamics 365 for Finance and Operations - Hantering av underleverantörer mer effektivt. 
+Det här ämnet innehåller en lista med hjälpavsnitt och andra resurser för styrningsfunktionerna för leveranskedjor i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition. 
 
 ## <a name="whats-new-and-in-development"></a>Vad är nytt och under utveckling
 Öppna <a href="https://roadmap.dynamics.com/">översikten till Dynamics 365</a> för att visa vilka nya funktioner som lanseras och nya funktioner under utveckling. 
@@ -41,7 +41,7 @@ Välj ett funktionsområde för att läsa mer om det.
 
 - [Kostnadsredovisning](../financials/cost-accounting/cost-accounting-home-page.md)
 - [Kostnadshantering](cost-management/costing-sheets.md)  
-- [Lagerhantering](inventory/consignment.md)
+- [Lagerhantering](inventory/inventory-home-page.md)
 - [Huvudplanering](master-planning/introduction-demand-forecasting.md)
 - [Anskaffning och källa](procurement/procurement-sourcing-overview.md)
 - [Produktinformationshantering](pim/product-information.md)
@@ -63,7 +63,7 @@ Med hjälp av videoklippen kommer du snabbt igång med de nya funktionerna i Mic
 -  [Visuell tidsplanering med Gantt-diagram för produktions- och batchorder](https://youtu.be/BtbuShkGj4I)
 
 ### <a name="tech-conference-recordings"></a>Inspelningar från tekniska konferenser
-De flesta av inspelningarna handlar om produktfunktionerna i den föregående versionen av Finance and Operations, men samma begrepp gäller fortfarande och procedurerna är liknande i den aktuella versionen. 
+De flesta av inspelningarna handlar om produktfunktionerna i den föregående versionen av Finance and Operations, men samma begrepp gäller fortfarande och procedurerna är likartade i den aktuella versionen. 
 
 -  <a href="https://youtu.be/zotrj3SbCl4">Produktkonfigureraren i Microsoft Dynamics AX</a>
 -  <a href="https://youtu.be/7v8BPmEs9Dg">Huvudplanering - tips och trick för felsökning av prestandaproblem</a>
@@ -78,7 +78,7 @@ De flesta av inspelningarna handlar om produktfunktionerna i den föregående ve
 -  <a href="https://youtu.be/jgmTgJIgEFQ">Transporthantering i nya Microsoft Dynamics AX</a>
 
 ## <a name="blogs"></a>Bloggar
-Det finns många avsnitt om tillverkning och hantering av underleverantörer i <a href="https://blogs.msdn.microsoft.com/axmfg/">teambloggen Dynamics AX Manufacturing R&D</a> och <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/">teambloggen Supply Chain Management in Dynamics AX R&D</a>. De flesta av inläggen skrevs för den föregående versionen av Finance and Operations, men samma begrepp gäller fortfarande och procedurerna är liknande i den aktuella versionen. 
+Det finns många avsnitt om tillverkning och hantering av underleverantörer i <a href="https://blogs.msdn.microsoft.com/axmfg/">teambloggen Dynamics AX Manufacturing R&D</a> och <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/">teambloggen Supply Chain Management in Dynamics AX R&D</a>. De flesta av inläggen skrevs för den föregående versionen av Finance and Operations, men samma begrepp gäller fortfarande och procedurerna är likartade i den aktuella versionen. 
 
 ## <a name="white-papers"></a>Dokumentation
 -  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc/">Praktiska övningar för kostnadsredovisning</a> 
