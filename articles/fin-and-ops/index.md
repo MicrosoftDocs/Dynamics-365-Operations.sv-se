@@ -3,7 +3,7 @@ title: "Dokumentation för Microsoft Dynamics 365 for Finance and Operations, En
 description: "Dokumentation för Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition."
 author: margoc
 manager: AnnBe
-ms.date: 09/29/2017
+ms.date: 11/13/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,19 +16,19 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: cb040b28078e5072fdb695e7b39e82557219addc
-ms.openlocfilehash: ca1658a9dc7594168476298132274b2c5910b012
+ms.sourcegitcommit: bb258999e072dc280bccfe64fb0dbd41d6577a0e
+ms.openlocfilehash: dbcbd7f7b0c23545eec74de538f1d7ec96ac98b6
 ms.contentlocale: sv-se
-ms.lasthandoff: 10/10/2017
+ms.lasthandoff: 11/14/2017
 
 ---
 
-# <a name="introduction-to-microsoft-dynamics-365-for-finance-and-operations"></a>Introduktion till Microsoft Dynamics 365 for Finance and Operations
+# <a name="introduction-to-microsoft-dynamics-365-for-finance-and-operations"></a><span data-ttu-id="6d387-103">Introduktion till Microsoft Dynamics 365 for Finance and Operations</span><span class="sxs-lookup"><span data-stu-id="6d387-103">Introduction to Microsoft Dynamics 365 for Finance and Operations</span></span>
 [!include[banner](includes/banner.md)]
 
-Lär du hur du drar nytta av Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition i ditt företag. Använd resurserna nedan för att hitta passande innehåll för slutanvändare, utvecklare och IT-proffs. 
+<span data-ttu-id="6d387-104">Lär du hur du drar nytta av Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition i ditt företag. Använd resurserna nedan för att hitta passande innehåll för slutanvändare, utvecklare och IT-proffs.</span><span class="sxs-lookup"><span data-stu-id="6d387-104">Learn how to make Microsoft Dynamics 365 for Finance and Operations, Enterprise edition work for your business, using the resources below to find great content for end users, developers, and IT professionals.</span></span> 
 
-Mycket av innehållet gäller även relaterade produkter: Microsoft Dynamics 365 for Retail och Microsoft Dynamics 365 for Talent. 
+<span data-ttu-id="6d387-105">Mycket av innehållet gäller även relaterade produkter: Microsoft Dynamics 365 for Retail och Microsoft Dynamics 365 for Talent.</span><span class="sxs-lookup"><span data-stu-id="6d387-105">Much of this content also applies to the related products: Microsoft Dynamics 365 for Retail and Microsoft Dynamics 365 for Talent.</span></span> 
 
 <table>
 <colgroup>
@@ -39,81 +39,84 @@ Mycket av innehållet gäller även relaterade produkter: Microsoft Dynamics 365
 <tbody>
 <tr class="odd">
 <td>
-<h3><a href="get-started/before-you-buy.md">Innan du köper</a></h3>
-<p><a href="../dev-itpro/dev-tools/sign-up-preview-subscription.md">Registrera ett abonnemang på förhandsversionen</a></p>
- <p><a href="../dev-itpro/deployment/choose-deployment-type.md">Välj ett distributionsalternativ</a></p>
-  <p><a href="get-started/fasttrack-dynamics-365-overview.md">FastTrack for Dynamics 365</a></p>
-  <p><a href="get-started/purchase-on-premises.md">Köp Finance and Operations (lokal)</a></p>
+<h3><span data-ttu-id="6d387-106"><a href="get-started/before-you-buy.md">Innan du köper</a></span><span class="sxs-lookup"><span data-stu-id="6d387-106"><a href="get-started/before-you-buy.md">Before you buy</a></span></span></h3>
+<p><span data-ttu-id="6d387-107"><a href="../dev-itpro/dev-tools/sign-up-preview-subscription.md">Registrera ett abonnemang på förhandsversionen</a></span><span class="sxs-lookup"><span data-stu-id="6d387-107"><a href="../dev-itpro/dev-tools/sign-up-preview-subscription.md">Sign up for a preview subscription</a></span></span></p>
+ <p><span data-ttu-id="6d387-108"><a href="../dev-itpro/deployment/choose-deployment-type.md">Välj ett distributionsalternativ</a></span><span class="sxs-lookup"><span data-stu-id="6d387-108"><a href="../dev-itpro/deployment/choose-deployment-type.md">Choose a deployment option</a></span></span></p>
+  <p><span data-ttu-id="6d387-109"><a href="get-started/fasttrack-dynamics-365-overview.md">FastTrack for Dynamics 365</a></span><span class="sxs-lookup"><span data-stu-id="6d387-109"><a href="get-started/fasttrack-dynamics-365-overview.md">FastTrack for Dynamics 365</a></span></span></p>
+  <p><span data-ttu-id="6d387-110"><a href="get-started/purchase-on-premises.md">Köp Finance and Operations (lokal)</a></span><span class="sxs-lookup"><span data-stu-id="6d387-110"><a href="get-started/purchase-on-premises.md">Buy Finance and Operations (on-premises)</a></span></span></p>
 
-<h3><a href="../financials/index.md">Ekonomisk styrning</a></h3>
-<p><a href="../financials/accounts-payable/accounts-payable.md">Leverantörsreskontra</a></p>
-<p><a href="../financials/accounts-receivable/accounts-receivable.md">Kundreskontra</a></p>
-<p><a href="../financials/budgeting/budgeting-overview.md">Budgetering</a></p>
-<p><a href="../financials/cash-bank-management/cash-bank-management.md">Kassa- och bankhantering</a></p>
-<p><a href="../financials/general-ledger/audit-policy-rules.md">Regelefterlevnad</a></p>
-<p><a href="../financials/cost-accounting/cost-accounting-home-page.md">Kostnadsredovisning</a></p>
-<p><a href="../financials/fixed-assets/fixed-assets.md">Anläggningstillgångar</a></p>
-<p><a href="../financials/general-ledger/general-ledger.md">Redovisning</a></p>
-<p><a href="../financials/project-management/overview-project-management-accounting.md">Projekthantering</a></p>
-<p><a href="../financials/public-sector/public-sector-functionality.md">Offentlig sektor</a></p>
-<p><a href="../dev-itpro/lcs-solutions/country-region.md">Funktioner för nationella föreskrifter</a></p>
+<h3><span data-ttu-id="6d387-111"><a href="../financials/index.md">Ekonomisk styrning</a></span><span class="sxs-lookup"><span data-stu-id="6d387-111"><a href="../financials/index.md">Financial management</a></span></span></h3>
+<p><span data-ttu-id="6d387-112"><a href="../financials/accounts-payable/accounts-payable.md">Leverantörsreskontra</a></span><span class="sxs-lookup"><span data-stu-id="6d387-112"><a href="../financials/accounts-payable/accounts-payable.md">Accounts payable</a></span></span></p>
+<p><span data-ttu-id="6d387-113"><a href="../financials/accounts-receivable/accounts-receivable.md">Kundreskontra</a></span><span class="sxs-lookup"><span data-stu-id="6d387-113"><a href="../financials/accounts-receivable/accounts-receivable.md">Accounts receivable</a></span></span></p>
+<p><span data-ttu-id="6d387-114"><a href="../financials/budgeting/budgeting-overview.md">Budgetering</a></span><span class="sxs-lookup"><span data-stu-id="6d387-114"><a href="../financials/budgeting/budgeting-overview.md">Budgeting</a></span></span></p>
+<p><span data-ttu-id="6d387-115"><a href="../financials/cash-bank-management/cash-bank-management.md">Kassa- och bankhantering</a></span><span class="sxs-lookup"><span data-stu-id="6d387-115"><a href="../financials/cash-bank-management/cash-bank-management.md">Cash and bank management</a></span></span></p>
+<p><span data-ttu-id="6d387-116"><a href="../financials/general-ledger/audit-policy-rules.md">Regelefterlevnad</a></span><span class="sxs-lookup"><span data-stu-id="6d387-116"><a href="../financials/general-ledger/audit-policy-rules.md">Compliance</a></span></span></p>
+<p><span data-ttu-id="6d387-117"><a href="../financials/cost-accounting/cost-accounting-home-page.md">Kostnadsredovisning</a></span><span class="sxs-lookup"><span data-stu-id="6d387-117"><a href="../financials/cost-accounting/cost-accounting-home-page.md">Cost accounting</a></span></span></p>
+<p><span data-ttu-id="6d387-118"><a href="../financials/fixed-assets/fixed-assets.md">Anläggningstillgångar</a></span><span class="sxs-lookup"><span data-stu-id="6d387-118"><a href="../financials/fixed-assets/fixed-assets.md">Fixed assets</a></span></span></p>
+<p><span data-ttu-id="6d387-119"><a href="../financials/general-ledger/general-ledger.md">Redovisning</a></span><span class="sxs-lookup"><span data-stu-id="6d387-119"><a href="../financials/general-ledger/general-ledger.md">General ledger</a></span></span></p>
+<p><span data-ttu-id="6d387-120"><a href="../financials/project-management/overview-project-management-accounting.md">Projekthantering</a></span><span class="sxs-lookup"><span data-stu-id="6d387-120"><a href="../financials/project-management/overview-project-management-accounting.md">Project management</a></span></span></p>
+<p><span data-ttu-id="6d387-121"><a href="../financials/public-sector/public-sector-functionality.md">Offentlig sektor</a></span><span class="sxs-lookup"><span data-stu-id="6d387-121"><a href="../financials/public-sector/public-sector-functionality.md">Public sector</a></span></span></p>
+<p><span data-ttu-id="6d387-122"><a href="../dev-itpro/lcs-solutions/country-region.md">Funktioner för nationella föreskrifter</a></span><span class="sxs-lookup"><span data-stu-id="6d387-122"><a href="../dev-itpro/lcs-solutions/country-region.md">Regional regulatory features</a></span></span></p>
 
-<H3><a href="hr/hr-landing-page.md">Personal</a></h3>
-<p><a href="../talent/manage-benefit-program.md">Förmåner</a></p>
-<p><a href="../talent/performance-management-overview.md">Medarbetares utveckling och utbildning</a></p>
-<p><a href="../talent/questionnaires.md">Enkät</a></p>
-<p><a href="hr/manage-recruiting-process.md">Rekrytering</a></p>
-<p><a href="hr/localizations/noam-usa-payroll.md">Lön, USA</a></p>
+<H3><span data-ttu-id="6d387-123"><a href="hr/hr-landing-page.md">Personal</a></span><span class="sxs-lookup"><span data-stu-id="6d387-123"><a href="hr/hr-landing-page.md">Human resources</a></span></span></h3>
+<p><span data-ttu-id="6d387-124"><a href="../talent/manage-benefit-program.md">Förmåner</a></span><span class="sxs-lookup"><span data-stu-id="6d387-124"><a href="../talent/manage-benefit-program.md">Benefits</a></span></span></p>
+<p><span data-ttu-id="6d387-125"><a href="../talent/performance-management-overview.md">Medarbetares utveckling och utbildning</a></span><span class="sxs-lookup"><span data-stu-id="6d387-125"><a href="../talent/performance-management-overview.md">Employee development and training</a></span></span></p>
+<p><span data-ttu-id="6d387-126"><a href="../talent/questionnaires.md">Enkät</a></span><span class="sxs-lookup"><span data-stu-id="6d387-126"><a href="../talent/questionnaires.md">Questionnaire</a></span></span></p>
+<p><span data-ttu-id="6d387-127"><a href="hr/manage-recruiting-process.md">Rekrytering</a></span><span class="sxs-lookup"><span data-stu-id="6d387-127"><a href="hr/manage-recruiting-process.md">Recruiting</a></span></span></p>
+<p><span data-ttu-id="6d387-128"><a href="hr/localizations/noam-usa-payroll.md">Lön, USA</a></span><span class="sxs-lookup"><span data-stu-id="6d387-128"><a href="hr/localizations/noam-usa-payroll.md">US payroll</a></span></span></p>
 
-<h3><a href="../supply-chain/index.md">Hantering av underleverantörer</a></h3>
-<p><a href="../supply-chain/cost-management/costing-sheets.md">Kostnadshantering</a></p>
-<p><a href="../supply-chain/inventory/inventory-locations.md">Lagerhantering</a></p>
-<p><a href="../supply-chain/master-planning/master-plans.md">Huvudplanering</a></p>
-<p><a href="../supply-chain/procurement/procurement-sourcing-overview.md">Anskaffning och källa</a></p>
-<p><a href="../supply-chain/pim/product-information.md">Produktinformationshantering</a></p>
-<p><a href="../supply-chain/production-control/production-process-overview.md">Produktionskontroll</a></p>
-<p><a href="../supply-chain/sales-marketing/overview-sales-marketing.md">Försäljning och marknadsföring</a></p>
-<p><a href="../supply-chain/transportation/transportation-management-overview.md">Transporthantering</a></p>
-<p><a href="../supply-chain/warehousing/warehouse-configuration.md">Lagerstyrning</a></p>
+<h3><span data-ttu-id="6d387-129"><a href="../supply-chain/index.md">Hantering av underleverantörer</a></span><span class="sxs-lookup"><span data-stu-id="6d387-129"><a href="../supply-chain/index.md">Supply chain management</a></span></span></h3>
+<p><span data-ttu-id="6d387-130"><a href="../supply-chain/cost-management/costing-sheets.md">Kostnadshantering</a></span><span class="sxs-lookup"><span data-stu-id="6d387-130"><a href="../supply-chain/cost-management/costing-sheets.md">Cost management</a></span></span></p>
+<p><span data-ttu-id="6d387-131"><a href="../supply-chain/inventory/inventory-home-page.md">Lagerhantering</a></span><span class="sxs-lookup"><span data-stu-id="6d387-131"><a href="../supply-chain/inventory/inventory-home-page.md">Inventory management</a></span></span></p>
+<p><span data-ttu-id="6d387-132"><a href="../supply-chain/master-planning/master-plans.md">Huvudplanering</a></span><span class="sxs-lookup"><span data-stu-id="6d387-132"><a href="../supply-chain/master-planning/master-plans.md">Master planning</a></span></span></p>
+<p><span data-ttu-id="6d387-133"><a href="../supply-chain/procurement/procurement-sourcing-overview.md">Anskaffning och källa</a></span><span class="sxs-lookup"><span data-stu-id="6d387-133"><a href="../supply-chain/procurement/procurement-sourcing-overview.md">Procurement and sourcing</a></span></span></p>
+<p><span data-ttu-id="6d387-134"><a href="../supply-chain/pim/product-information.md">Produktinformationshantering</a></span><span class="sxs-lookup"><span data-stu-id="6d387-134"><a href="../supply-chain/pim/product-information.md">Product information management</a></span></span></p>
+<p><span data-ttu-id="6d387-135"><a href="../supply-chain/production-control/production-process-overview.md">Produktionskontroll</a></span><span class="sxs-lookup"><span data-stu-id="6d387-135"><a href="../supply-chain/production-control/production-process-overview.md">Production control</a></span></span></p>
+<p><span data-ttu-id="6d387-136"><a href="../supply-chain/sales-marketing/overview-sales-marketing.md">Försäljning och marknadsföring</a></span><span class="sxs-lookup"><span data-stu-id="6d387-136"><a href="../supply-chain/sales-marketing/overview-sales-marketing.md">Sales and marketing</a></span></span></p>
+<p><span data-ttu-id="6d387-137"><a href="../supply-chain/transportation/transportation-management-overview.md">Transporthantering</a></span><span class="sxs-lookup"><span data-stu-id="6d387-137"><a href="../supply-chain/transportation/transportation-management-overview.md">Transportation management</a></span></span></p>
+<p><span data-ttu-id="6d387-138"><a href="../supply-chain/warehousing/warehouse-configuration.md">Lagerstyrning</a></span><span class="sxs-lookup"><span data-stu-id="6d387-138"><a href="../supply-chain/warehousing/warehouse-configuration.md">Warehouse management</a></span></span></p>
 
 </td>
 <td>
-<h3><a href="../dev-itpro/analytics/bi-reporting-home-page.md">Intelligence</a></h3>
-<p><a href="../dev-itpro/analytics/analytics.md">Analyser</a></p>
- <p><a href="../dev-itpro/analytics/document-reporting-services.md">Affärsdokument</a></p>
-<p><a href="../dev-itpro/analytics/financial-reporting-intro.md">Ekonomisk rapportering</a></p>
-<p><a href="../dev-itpro/analytics/general-electronic-reporting.md">Lagstadgad rapportering</a></p>
+<h3><span data-ttu-id="6d387-139"><a href="../dev-itpro/analytics/bi-reporting-home-page.md">Intelligence</a></span><span class="sxs-lookup"><span data-stu-id="6d387-139"><a href="../dev-itpro/analytics/bi-reporting-home-page.md">Intelligence</a></span></span></h3>
+<p><span data-ttu-id="6d387-140"><a href="../dev-itpro/analytics/analytics.md">Analyser</a></span><span class="sxs-lookup"><span data-stu-id="6d387-140"><a href="../dev-itpro/analytics/analytics.md">Analytics</a></span></span></p>
+ <p><span data-ttu-id="6d387-141"><a href="../dev-itpro/analytics/document-reporting-services.md">Affärsdokument</a></span><span class="sxs-lookup"><span data-stu-id="6d387-141"><a href="../dev-itpro/analytics/document-reporting-services.md">Business documents</a></span></span></p>
+<p><span data-ttu-id="6d387-142"><a href="../dev-itpro/analytics/financial-reporting-intro.md">Ekonomisk rapportering</a></span><span class="sxs-lookup"><span data-stu-id="6d387-142"><a href="../dev-itpro/analytics/financial-reporting-intro.md">Financial reporting</a></span></span></p>
+<p><span data-ttu-id="6d387-143"><a href="../dev-itpro/analytics/general-electronic-reporting.md">Lagstadgad rapportering</a></span><span class="sxs-lookup"><span data-stu-id="6d387-143"><a href="../dev-itpro/analytics/general-electronic-reporting.md">Regulatory reporting</a></span></span></p>
 
 
 
-<h3><a href="../dev-itpro/dev-tools/developer-home-page.md">Utveckling</h3>
-<p><a href="../dev-itpro/extensibility/extensibility-home-page.md">Utbyggbarhet</a></p>
-<p><a href="../dev-itpro/data-entities/data-entities.md">Datahantering och integration</a></p>
-<p><a href="../dev-itpro/office-integration/office-integration.md">Integrering med Office</a></p>
-<p><a href="../dev-itpro/dev-tools/continuous-delivery-home-page.md">Kontinuerlig leverans</a></p>
-<p><a href="../dev-itpro/mobile-apps/platform/mobile-platform-home-page.md">Mobilplattform</a></p>
-<p><a href="get-started/demo-data.md">Demodata</a></p>
+<h3><span data-ttu-id="6d387-144"><a href="../dev-itpro/dev-tools/developer-home-page.md">Utveckling</span><span class="sxs-lookup"><span data-stu-id="6d387-144"><a href="../dev-itpro/dev-tools/developer-home-page.md">Development</span></span></h3>
+<p><span data-ttu-id="6d387-145"><a href="../dev-itpro/extensibility/extensibility-home-page.md">Utbyggbarhet</a></span><span class="sxs-lookup"><span data-stu-id="6d387-145"><a href="../dev-itpro/extensibility/extensibility-home-page.md">Extensibility</a></span></span></p>
 
-<h3><a href="../dev-itpro/sysadmin/system-administration-home-page.md">Administration</h3>
-<p><a href="../dev-itpro/deployment/choose-deployment-type.md">Distribution</a></p>
-<p><a href="../dev-itpro/migration-upgrade/upgrade-home-page.md">Uppgradering</a></p>
-<p><a href="../dev-itpro/dev-tools/developer-home-page.md#service-environments">Behandling</a></p>
-<p><a href="../dev-itpro/data-entities/data-management-integration-data-entity.md">Datahantering</a></p>
-<p><a href="../dev-itpro/lifecycle-services/lcs.md">Lifecycle Services</a></p>
-<p><a href="organization-administration/organization-administration-home-page.md">Organisationsadministration</a></p>
+<p><span data-ttu-id="6d387-146"><a href="../dev-itpro/data-entities/integration-overview.md">Dataintegration</a></span><span class="sxs-lookup"><span data-stu-id="6d387-146"><a href="../dev-itpro/data-entities/integration-overview.md">Data integration</a></span></span></p>
+<p><span data-ttu-id="6d387-147"><a href="../dev-itpro/data-entities/data-entities.md">Datahantering</a></span><span class="sxs-lookup"><span data-stu-id="6d387-147"><a href="../dev-itpro/data-entities/data-entities.md">Data management</a></span></span></p>
+
+<p><span data-ttu-id="6d387-148"><a href="../dev-itpro/office-integration/office-integration.md">Integrering med Office</a></span><span class="sxs-lookup"><span data-stu-id="6d387-148"><a href="../dev-itpro/office-integration/office-integration.md">Office integration</a></span></span></p>
+<p><span data-ttu-id="6d387-149"><a href="../dev-itpro/dev-tools/continuous-delivery-home-page.md">Kontinuerlig leverans</a></span><span class="sxs-lookup"><span data-stu-id="6d387-149"><a href="../dev-itpro/dev-tools/continuous-delivery-home-page.md">Continuous delivery</a></span></span></p>
+<p><span data-ttu-id="6d387-150"><a href="../dev-itpro/mobile-apps/platform/mobile-platform-home-page.md">Mobilplattform</a></span><span class="sxs-lookup"><span data-stu-id="6d387-150"><a href="../dev-itpro/mobile-apps/platform/mobile-platform-home-page.md">Mobile platform</a></span></span></p>
+<p><span data-ttu-id="6d387-151"><a href="get-started/demo-data.md">Demodata</a></span><span class="sxs-lookup"><span data-stu-id="6d387-151"><a href="get-started/demo-data.md">Demo data</a></span></span></p>
+
+<h3><span data-ttu-id="6d387-152"><a href="../dev-itpro/sysadmin/system-administration-home-page.md">Administration</span><span class="sxs-lookup"><span data-stu-id="6d387-152"><a href="../dev-itpro/sysadmin/system-administration-home-page.md">Administration</span></span></h3>
+<p><span data-ttu-id="6d387-153"><a href="../dev-itpro/deployment/choose-deployment-type.md">Distribution</a></span><span class="sxs-lookup"><span data-stu-id="6d387-153"><a href="../dev-itpro/deployment/choose-deployment-type.md">Deployment</a></span></span></p>
+<p><span data-ttu-id="6d387-154"><a href="../dev-itpro/migration-upgrade/upgrade-home-page.md">Uppgradering</a></span><span class="sxs-lookup"><span data-stu-id="6d387-154"><a href="../dev-itpro/migration-upgrade/upgrade-home-page.md">Upgrade</a></span></span></p>
+<p><span data-ttu-id="6d387-155"><a href="../dev-itpro/dev-tools/continuous-delivery-home-page.md#servicing">Behandling</a></span><span class="sxs-lookup"><span data-stu-id="6d387-155"><a href="../dev-itpro/dev-tools/continuous-delivery-home-page.md#servicing">Servicing</a></span></span></p>
+<p><span data-ttu-id="6d387-156"><a href="../dev-itpro/data-entities/data-entities.md">Ramverk för datahantering</a></span><span class="sxs-lookup"><span data-stu-id="6d387-156"><a href="../dev-itpro/data-entities/data-entities.md">Data management framework</a></span></span></p>
+<p><span data-ttu-id="6d387-157"><a href="../dev-itpro/lifecycle-services/lcs.md">Lifecycle Services</a></span><span class="sxs-lookup"><span data-stu-id="6d387-157"><a href="../dev-itpro/lifecycle-services/lcs.md">Lifecycle Services</a></span></span></p>
+<p><span data-ttu-id="6d387-158"><a href="organization-administration/organization-administration-home-page.md">Organisationsadministration</a></span><span class="sxs-lookup"><span data-stu-id="6d387-158"><a href="organization-administration/organization-administration-home-page.md">Organization administration</a></span></span></p>
 </td>
 <td>
-<h3>Relaterade produkter</h3>
-<h4><a href="../talent/index.md">Dynamics 365 for Talent</a></h4>
-<p><a href="../talent/manage-benefit-program.md">Förmåner</a></p>
-<p><a href="../talent/performance-management-overview.md">Medarbetares utveckling och utbildning</a></p>
-<p><a href="../talent/questionnaires.md">Enkät</a></p>
+<h3><span data-ttu-id="6d387-159">Relaterade produkter</span><span class="sxs-lookup"><span data-stu-id="6d387-159">Related products</span></span></h3>
+<h4><span data-ttu-id="6d387-160"><a href="../talent/index.md">Dynamics 365 for Talent</a></span><span class="sxs-lookup"><span data-stu-id="6d387-160"><a href="../talent/index.md">Dynamics 365 for Talent</a></span></span></h4>
+<p><span data-ttu-id="6d387-161"><a href="../talent/manage-benefit-program.md">Förmåner</a></span><span class="sxs-lookup"><span data-stu-id="6d387-161"><a href="../talent/manage-benefit-program.md">Benefits</a></span></span></p>
+<p><span data-ttu-id="6d387-162"><a href="../talent/performance-management-overview.md">Medarbetares utveckling och utbildning</a></span><span class="sxs-lookup"><span data-stu-id="6d387-162"><a href="../talent/performance-management-overview.md">Employee development and training</a></span></span></p>
+<p><span data-ttu-id="6d387-163"><a href="../talent/questionnaires.md">Enkät</a></span><span class="sxs-lookup"><span data-stu-id="6d387-163"><a href="../talent/questionnaires.md">Questionnaire</a></span></span></p>
 
-<h4><a href="../retail/index.md">Dynamics 365 for Retail</a></h4>
-<p><a href="../retail/call-center-functionality.md">Kundtjänst</p>
-<p><a href="../retail/define-maintain-retail-channels.md">Inställning och hantering av kanaler</p>
-<p><a href="../retail/retail-peripherals-overview.md">MPOS och Cloud POS</p>
-<p><a href="../retail/dev-itpro/dev-retail-home-page.md">Utveckling och administration av Retail</p>
+<h4><span data-ttu-id="6d387-164"><a href="../retail/index.md">Dynamics 365 for Retail</a></span><span class="sxs-lookup"><span data-stu-id="6d387-164"><a href="../retail/index.md">Dynamics 365 for Retail</a></span></span></h4>
+<p><span data-ttu-id="6d387-165"><a href="../retail/call-center-functionality.md">Kundtjänst</span><span class="sxs-lookup"><span data-stu-id="6d387-165"><a href="../retail/call-center-functionality.md">Call center</span></span></p>
+<p><span data-ttu-id="6d387-166"><a href="../retail/define-maintain-retail-channels.md">Inställning och hantering av kanaler</span><span class="sxs-lookup"><span data-stu-id="6d387-166"><a href="../retail/define-maintain-retail-channels.md">Channel setup and management</span></span></p>
+<p><span data-ttu-id="6d387-167"><a href="../retail/retail-peripherals-overview.md">MPOS och Cloud POS</span><span class="sxs-lookup"><span data-stu-id="6d387-167"><a href="../retail/retail-peripherals-overview.md">MPOS and Cloud POS</span></span></p>
+<p><span data-ttu-id="6d387-168"><a href="../retail/dev-itpro/dev-retail-home-page.md">Utveckling och administration av Retail</span><span class="sxs-lookup"><span data-stu-id="6d387-168"><a href="../retail/dev-itpro/dev-retail-home-page.md">Retail developer and administration</span></span></p>
 
 </td>
 </tr>

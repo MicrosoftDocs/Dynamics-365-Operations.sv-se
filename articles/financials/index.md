@@ -25,22 +25,22 @@ ms.lasthandoff: 11/03/2017
 
 ---
 
-# <a name="financial-management-home-page"></a>Startsidan Ekonomisk styrning
+# <a name="financial-management-home-page"></a><span data-ttu-id="693da-103">Startsidan Ekonomisk styrning</span><span class="sxs-lookup"><span data-stu-id="693da-103">Financial management home page</span></span>
 
 [!include[banner](includes/banner.md)]
 
-Det här ämnet innehåller en lista med hjälpavsnitt och andra resurser för de ekonomiska styrningsfunktionerna i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition. 
+<span data-ttu-id="693da-104">Det här ämnet innehåller en lista med hjälpavsnitt och andra resurser för de ekonomiska styrningsfunktionerna i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition.</span><span class="sxs-lookup"><span data-stu-id="693da-104">This topic provides a list of the help topics and other resources for the financial management features in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.</span></span> 
 
-Välj ett funktionsområde för att läsa mer om det.
-- [Leverantörsreskontra](accounts-payable\accounts-payable.md) 
-- [Kundreskontra](accounts-receivable\accounts-receivable.md) 
-- [Kassa- och bankhantering](cash-bank-management\cash-bank-management.md)
-- [Kostnadsredovisning](cost-accounting\cost-accounting-home-page.md)
-- [Anläggningstillgångar](fixed-assets\fixed-assets.md)
-- [Huvudbok](general-ledger\general-ledger.md) 
-- [Projekthantering](project-management\overview-project-management-accounting.md)
-- [Offentlig sektor](public-sector\public-sector-functionality.md) 
-- [Budgetering](budgeting\budgeting-overview.md) 
+<span data-ttu-id="693da-105">Välj ett funktionsområde för att läsa mer om det.</span><span class="sxs-lookup"><span data-stu-id="693da-105">Select a feature area to learn more about it.</span></span>
+- [<span data-ttu-id="693da-106">Leverantörsreskontra</span><span class="sxs-lookup"><span data-stu-id="693da-106">Accounts payable</span></span>](accounts-payable\accounts-payable.md) 
+- [<span data-ttu-id="693da-107">Kundreskontra</span><span class="sxs-lookup"><span data-stu-id="693da-107">Accounts receivable</span></span>](accounts-receivable\accounts-receivable.md) 
+- [<span data-ttu-id="693da-108">Kassa- och bankhantering</span><span class="sxs-lookup"><span data-stu-id="693da-108">Cash and bank management</span></span>](cash-bank-management\cash-bank-management.md)
+- [<span data-ttu-id="693da-109">Kostnadsredovisning</span><span class="sxs-lookup"><span data-stu-id="693da-109">Cost accounting</span></span>](cost-accounting\cost-accounting-home-page.md)
+- [<span data-ttu-id="693da-110">Anläggningstillgångar</span><span class="sxs-lookup"><span data-stu-id="693da-110">Fixed assets</span></span>](fixed-assets\fixed-assets.md)
+- [<span data-ttu-id="693da-111">Redovisning</span><span class="sxs-lookup"><span data-stu-id="693da-111">General ledger</span></span>](general-ledger\general-ledger.md) 
+- [<span data-ttu-id="693da-112">Projekthantering</span><span class="sxs-lookup"><span data-stu-id="693da-112">Project management</span></span>](project-management\overview-project-management-accounting.md)
+- [<span data-ttu-id="693da-113">Offentlig sektor</span><span class="sxs-lookup"><span data-stu-id="693da-113">Public sector</span></span>](public-sector\public-sector-functionality.md) 
+- [<span data-ttu-id="693da-114">Budgetering</span><span class="sxs-lookup"><span data-stu-id="693da-114">Budgeting</span></span>](budgeting\budgeting-overview.md) 
 
 
 
