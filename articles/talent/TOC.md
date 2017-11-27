@@ -1,10 +1,9 @@
 # [Välkommen till Dynamics 365 for Talent](index.md)
 
-# Komma igång
+# [Komma igång](talent-get-started.md)
 ## [Systemkrav och uppdateringspolicy](talent-versions-update-policy.md)
 
-# Utveckla en personalstrategi
-## [Organisera arbetsstyrkan med avdelningar, jobb och befattningar](departments-jobs-positions.md)
+# [Utveckla en personalstrategi](departments-jobs-positions.md)
 ## [Ställ in jobbkomponenter](create-job.md)
 ## [Skapa en avdelning och associera den med avdelningshierarkin](create-department-add-department-hierarchy.md)
 ## [Ställa in personalparametrar bland juridiska personer](set-up-hr-parameters-across-legal-entities.md)
@@ -25,16 +24,14 @@
 
 # Utveckla och utbilda medarbetare
 ## [Översikt över prestationshantering](performance-management-overview.md)
-## [Justera personalens kompetenser med affärsbehov](skills.md)
+## [Anpassa personalens kompetenser efter affärsbehov](skills.md)
 ## [Ställ in utbildningar](courses.md)
 
-# Skapa och underhålla förmåner
-## [Hantera ett förmånsprogram](manage-benefit-program.md)
-## [Policyer för förmånsberättigande](benefit-eligibility-policies.md)
+# [Skapa och underhålla förmåner](manage-benefit-program.md)
+# [Policyer för förmånsberättigande](benefit-eligibility-policies.md)
 ## [Hantera artiklar utlånade till arbetare](loan-items.md)
 
-# Samla information med enkäter
-## [Enkäter](questionnaires.md)
+# [Samla information med enkäter](questionnaires.md)
 ## [Utforma en enkät](design-questionnaires.md)
 ## [Distribuera och slutföra en enkät](distribute-questionnaires.md)
 ## [Utvärdera resultaten av en enkät](evaluate-questionnaire-results.md)

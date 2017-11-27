@@ -18,10 +18,10 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 04d459a2fd0fdf9c201d9e96b37234846eb9ccf0
-ms.openlocfilehash: 358f5bf6194f5dd3f1639425e6633aa1a855bdc1
+ms.sourcegitcommit: 64f0a9a44b97a9980f8d1b76ff158f1ac9cbc114
+ms.openlocfilehash: 449643cc34e67388210e0b4e9d04d615d2420610
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/15/2017
 
 ---
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 09/29/2017
 
 [!include[banner](includes/banner.md)]
 
-Microsoft Dynamics 365 for Talent förenklar många rutinartade arkiveringsuppgifter och automatiserar ett antal processer som berör personal i din organisation. Dessa processer rör bland annat personalvård, förmånsadministration, utbildning, prestationsgranskningar och ändringshantering. Den innehåller också ett ramverk för personal för hantering av tillsynsområden.
+Med Microsoft Dynamics 365 for Talent förenklas många vanliga arkiveringsuppgifter och automatiseras ett antal processer som gäller personalen i organisationen. Dessa processer inkluderar personalvård, förmånsadministration, utbildning, prestationsgranskning och ändringshantering. Den innehåller också ett ramverk för personal för hantering av tillsynsområden.
 
 Talent går att använda till att slutföra följande uppgifter:
 

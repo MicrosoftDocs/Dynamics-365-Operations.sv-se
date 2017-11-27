@@ -3,24 +3,24 @@ title: Lokaliserings- och regelfunktioner
 description: "Det här ämnet innehåller listor med resurser som lär dig mer om lands- och regionspecifika funktioner."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/30/2017
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 104173
 ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: c73eeaaf28df8db720431d4bcd317c9721baa99d
-ms.openlocfilehash: fd01d40d3e74503e3e310132882306ed8c23ad1d
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 25c8c6c9bbccf07ce94a909824ecc8096081cd2c
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -34,7 +34,7 @@ Microsoft Dynamics 365 for Finance and Operations innehåller funktioner för l�
 Det här ämnet innehåller listor med resurser som lär dig mer om lands- och regionspecifika lösningar, uppdateringar, notifieringar och funktioner. 
 
 ## <a name="developing-localized-solutions"></a>Utveckla lokaliserade lösningar
-Följande resurser innehåller anvisningar och information som hjälper utvecklare och programvaruleverantörer som skapar lands-/regionspecifika anpassningar eller skapar en lösning för ett land Microsoft inte stöder.
+Följande resurser innehåller anvisningar och information som hjälper utvecklare och ISV som skapar lands-/regionspecifika anpassningar eller skapar en lösning för ett land Microsoft inte stöder.
 -   [Separata lokaliseringsmodeller](separate-localization-models.md)
 -   [Använd sammanhang för land/region](apply-country-context.md)
 -   [Regelcertifieringar](regulatory-certifications.md)
@@ -126,7 +126,7 @@ Följande avsnitt visar resurser efter land/region.
 -   [Jämförelse av strukturlista](../../financials/localizations/apac-chn-bom-comparison.md)
 -   [Kinesiska verifikationer](../../financials/localizations/apac-chn-vouchers.md)
 -   [Konfigurera momsintegrering](../../financials/localizations/apac-chn-tax-integration.md)
-    -   [Vanliga frågor om momskundfakturor](../../financials/localizations/apac-chn-tax-integration-vat-customer-invoices.md)
+    -   [Vanliga frågor och svar om momskundfakturor](../../financials/localizations/apac-chn-tax-integration-vat-customer-invoices.md)
     -   [Avskrivningsregler för anläggningstillgångar](../../financials/localizations/apac-chn-depreciation-methods-fixed-assets.md)
 -   [Importera datatabellen Chinese Golden Tax](../../financials/localizations/apac-chn-import-golden-tax-data-entity.md)
 -   [Månatlig, genomsnittlig kostnadsmodell](../../financials/localizations/apac-chn-monthly-average-cost-model.md)
