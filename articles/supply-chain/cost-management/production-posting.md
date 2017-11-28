@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: f965fd7fc4386665befedd89f33c6d32401c9132
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 413bf76b40ec1e6d00322605900a71f163c9396c
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -37,7 +37,7 @@ Det här avsnittet innehåller information om andra typer av bokföringar i prod
 Produktionsbokföringsaktiviteter följer listor som beskrivs i avsnitten nedan.
 
 ## <a name="material-consumption"></a>Materialförbrukning
-Material registreras som förbrukade under produktionen, när produktionens plocklistejournal bokförs. Den här processen genererar utleveranstransaktioner som drar av lagerbehållningen. I produktionsparametrarna kan du ange om värdet av råmaterial som pågår (produkter i arbete \[PIA\])) ska bokföras i redovisningen. Värdet av råmaterial som pågår (PIA) bokförs sedan på ett dedikerat plocklistekonto och ett dedikerat plocklistemotkonto.
+Material registreras som förbrukade under produktionen, när produktionens plocklistejournal bokförs. Den här processen genererar utleveranstransaktioner som drar av lagerbehållningen. I produktionsparametrarna kan du ange om värdet av råmaterial som pågår (produkter i arbete \[PIA\]) ska bokföras i redovisningen. Värdet av råmaterial som pågår (PIA) bokförs sedan på ett dedikerat plocklistekonto och ett dedikerat plocklistemotkonto.
 
 ## <a name="time-consumption"></a>Tidsförbrukning
 Den tid som arbetare spenderar på produktionsjobb registreras i flödeskortjournalen eller i jobbkortjournalen. När dessa journaler bokförs bearbetas redovisningsbokföringen till ett dedikerat konto för resurser som pågår (PIA). Denna bokföring representerar värdet av den tid som har använts för produktionsordern. När produktionsordern har registrerats som avslutad kvittas PIA-kontona.

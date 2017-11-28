@@ -1,9 +1,9 @@
 ---
 title: "Terminologi för produktvariantnummer och namn"
-description: "Det här avsnittet beskriver hur du ställer in en produktnummerterminologi för att ersätta det fasta formatet [Produktmallsnummer - Konfiguration - Storlek - Färg - Stil]. Den nya terminologin har ett riktat format som innehåller produktmallsnummer, aktiva produktdimensioner och valfria textavgränsare. Du kan också skapa en terminologi för produktnamn. Slutligen kan du också skapa en terminologi för att identifiera konfigurationer som skapas av den begränsningsbaserade produktkonfiguratorn. Dessa nomenklaturer kan innehålla valfria attribut."
+description: "Det här avsnittet beskriver hur du ställer in en produktnummerterminologi för att ersätta det fasta formatet [Produktmallsnummer - Konfiguration - Storlek - Färg - Stil]."
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 05/10/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,10 +20,10 @@ ms.author: roxanad
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
-ms.openlocfilehash: 4ebebc1d287908dbe8ac7557c34fc6693c88bfae
+ms.sourcegitcommit: 3a1bfd4bd5f396c05277159ac112eaa8197d5818
+ms.openlocfilehash: 067e14d8a0ab9cb5b703c1d2596dab3e20487336
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -68,7 +68,7 @@ En T-shirt (TS1234) skapas i tre olika storlekar (S, M, L), fyra olika färger (
 
 I detta fall blir produktvariantnumret för en röd polo-T-shirt i storlek S: TS1234-Red-Small-T-shirt.
 
-## <a name="nomenclature-of-constraintbased-configurations"></a>Nomenklatur för begränsningsbaserade konfigurationer
+## <a name="nomenclature-of-constraint-based-configurations"></a>Nomenklatur för begränsningsbaserade konfigurationer
 För begränsningsbaserade konfigurationer kan du skapa en särskild terminologi för konfigurationsproduktdimensionen. Du kan välja följande segment på sidan **Produktterminologi**:
 
 -   Nummersekvensvärde
@@ -92,7 +92,7 @@ Du kan skapa en nummerterminologi för konfiguration med följande segment:
 
 I detta fall blir konfigurations-ID för trämaterial med en längd på 78 då WoodAAA78.
 
-## <a name="nomenclature-of-dimensionbased-configurations"></a>Nomenklatur för dimensionsbaserade konfigurationer
+## <a name="nomenclature-of-dimension-based-configurations"></a>Nomenklatur för dimensionsbaserade konfigurationer
 För dimensionsbaserade konfigurationer kan du skapa en särskilt avsedd terminologi för konfigurationsproduktdimensionen. Du kan välja följande segment på sidan **Produktterminologi**:
 
 -   Nummersekvensvärde

@@ -3,7 +3,7 @@ title: Kredit och inkasso i Kundreskontra
 description: "Information om kundreskontrasamlingar hanteras i en central vy med hjälp av Microsoft Dynamics 365 for Finance and Operations, Enterprise edition-samlingssidan. Kredit- och inkassoansvariga kan använda denna centrala vy för att hantera inkasseringar. Inkassohandläggare kan börja inkassoprocessen från kundlistor som genereras med hjälp av fördefinierade inkassokriterier eller från sidan Kunder."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 08/22/2017
+ms.date: 10/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: CustAgingSnapshot, CustBankAccounts, CustCollections, CustCollectionsActivitiesListPage, CustCollectionsAgent, CustCollectionsCaseListPage, CustCollectionsPool, CustCollectionsPoolsListPage, CustTable
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 3061
 ms.assetid: fd851520-8d93-434b-845b-be127d6ac3a6
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 62f659d6e4529adce10e6eb2699dfc84a7329143
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: a071d3151fbcc9e29bd138b096b34b88bc405a4f
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -69,7 +69,7 @@ Följande listsidor hjälper dig att ordna information om inkasso.
 -   Inkassoärenden - kolumnerna på listsidan visar information om ärenden som har ärendekategori med ärendetypen Inkasso.
 
 > [!NOTE]
-> En ögonblicksbild av åldersfördelning måste skapas innan du kan visa information om listsidan Inkasso. Informationen visas bara för kunder när en ögonblicksbild av åldersfördelning har skapats. Posterna som visas på listsidan kan dessutom filtreras, enligt följande:
+> En ögonblicksbild av åldersfördelning måste skapas innan du kan visa information om listsidan Inkasso. Information visas bara för kunder som en ögonblicksbild av åldersfördelning har skapats för. De poster som visas på listsidan kan dessutom filtreras, enligt följande:
 <li>Som standard har en Finance and Operations-användare åtkomst till alla kunder som har en ögonblicksbild av åldersfördelning.</li>
 <li>Om kundpooler finns, måste en användare anges som en inkassohandläggare för att använda poolerna till att filtrera information om listsidorna för inkasso. Informationen begränsas till de kunder som ingår i den valda kundpoolen.</li>
 <li>Om en användare har ställts in som en inkassohandläggare, är endast poolerna som har valts för den inkassohandläggaren tillgängliga på listsidan. Om Tillåt handläggare att visa alla kundpooler har valts på sidan Inkassohandläggare för inkassohandläggaren, är alla pooler tillgängliga för den handläggaren.</li>

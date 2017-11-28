@@ -1,9 +1,9 @@
 ---
-title: "Anskaffa tillgångar genom anskaffning"
-description: "Den här artikeln beskriver hur du ställer in integrationen mellan Anläggningstillgångar och Leverantörsreskontra om du automatiskt vill skapa anläggningstillgångar från inköpsorder eller leverantörsfakturor, eller automatiskt bokföra anskaffningar och anskaffningsjusteringar för anläggningstillgångar."
+title: "Skaffa tillgångar genom anskaffning"
+description: "Det här ämnet beskriver hur du ställer in integrationen mellan Anläggningstillgångar och Leverantörsreskontra om du automatiskt vill skapa anläggningstillgångar från inköpsorder eller leverantörsfakturor, eller automatiskt bokföra anskaffningar och anskaffningsjusteringar för anläggningstillgångar."
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: AssetParameters
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 3481
 ms.assetid: d4e73a3f-633b-48b2-b8db-7a4a59a4d7ec
 ms.search.region: Global
@@ -19,19 +19,19 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 84e7e6eb17e5741a2984c570786a495864ffbc74
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 1e9b1dc6297f33ea25ca498895740596ebd020b8
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
-# <a name="acquire-assets-through-procurement"></a>Anskaffa tillgångar genom anskaffning
+# <a name="acquire-assets-through-procurement"></a>Skaffa tillgångar genom anskaffning
 
 [!include[banner](../includes/banner.md)]
 
 
-Den här artikeln beskriver hur du ställer in integrationen mellan Anläggningstillgångar och Leverantörsreskontra om du automatiskt vill skapa anläggningstillgångar från inköpsorder eller leverantörsfakturor, eller automatiskt bokföra anskaffningar och anskaffningsjusteringar för anläggningstillgångar.
+Det här ämnet beskriver hur du ställer in integrationen mellan Anläggningstillgångar och Leverantörsreskontra om du automatiskt vill skapa anläggningstillgångar från inköpsorder eller leverantörsfakturor, eller automatiskt bokföra anskaffningar och anskaffningsjusteringar för anläggningstillgångar.
 
  Följande metoder används för integration av anläggningstillgångar och leverantörsreskontra och du måste använda samma metod för alla anläggningstillgångar:
 -   Du skapar en anläggningstillgång manuellt innan du lägger till anläggningstillgångens nummer på raden i inköpsordern eller leverantörsfakturan. En anskaffningstransaktion bokförs automatiskt för tillgången när du bokför leverantörsfakturan. Det här är standardmetoden.

@@ -3,7 +3,7 @@ title: "Ställ in en extern katalog för PunchOut eProcurement"
 description: "Det här avsnittet beskriver hur en extern katalog eller PunchOut-katalog används för att samla in offertinformation från en leverantör och lägga till den i en rekvisition."
 author: mkirknel
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,18 +11,18 @@ ms.technology:
 ms.search.form: PurchTable, PurchVendorPortalRequests
 audience: Application User
 ms.reviewer: bis
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 30211
 ms.assetid: 3c7e0e1c-703c-4bbf-b90c-84d29a131360
 ms.search.region: Global
 ms.author: mkirknel
-ms.search.validFrom: 2016-02-28T00:00:00.000Z
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f01d88149074b37517d00f03d8f55e1199a5198f
-ms.openlocfilehash: 4c89f6f168825f7767b836be09fa73b8659b00c6
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: a20bb97e451ac59ba23c7f767b5feb336278dcd1
 ms.contentlocale: sv-se
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -40,15 +40,15 @@ Den externa katalogen bör aktivera en medarbetare som registrerar en inköpsrek
 
 ### <a name="to-set-up-an-external-vendor-catalog-complete-the-following-tasks"></a>Om du vill ställa in en extern leverantörskatalog måste du göra följande:
 
-1. Ställa in en kategorihierarki för anskaffning. För mer information, se [Ställ in policyer för anskaffningskategorihierarkier](/dynamics365/unified-operations/supply-chain/procurement/tasks/set-up-policies-procurement-category-hierarchies).
-2. Registrera leverantören i Finance and Operations. Innan du kan ställa in konfigurationerna för åtkomst till en extern leverantörskatalog måste du ställa in leverantören och leverantörskontakten i Microsoft Dynamics 365. Dessutom måste leverantörens externa katalog läggs till i den valda anskaffningkategorin. Mer information om hur du registrerar leverantörer i Microsoft Dynamics 365 finns i [Hantera leverantörssamarbetesanvändare](manage-vendor-collaboration-users.md). Information om hur du tilldelar en leverantörer till en anskaffningskategori finns i [Godkänna leverantörer för specifika anskaffningskategorier](/dynamics365/unified-operations/supply-chain/procurement/tasks/approve-vendors-specific-procurement-categories).
-3. Kontrollera att måttenheterna och valutan som leverantören använder har ställts in. Information om hur du skapar en måttenhet finns i [Hantera måttenheter](/dynamics365/unified-operations/supply-chain/pim/tasks/manage-unit-measure).
-4. Konfigurera den externa leverantörskatalogen med hjälp av kraven för webbplatsen för din externa leverantörskatalog. Mer information om denna uppgift finns i nästa avsnitt.
+1. Ställa in en kategorihierarki för anskaffning. För mer information, se [Ställ in policyer för anskaffningskategorihierarkier](tasks/set-up-policies-procurement-category-hierarchies.md).
+2. Registrera leverantören i Finance and Operations. Innan du kan ställa in konfigurationerna för åtkomst till en extern leverantörskatalog måste du ställa in leverantören och leverantörskontakten i Microsoft Dynamics 365. Dessutom måste leverantörens externa katalog läggs till i den valda anskaffningkategorin. Mer information om hur du registrerar leverantörer i Microsoft Dynamics 365 finns i [Hantera leverantörssamarbetesanvändare](manage-vendor-collaboration-users.md). Information om hur du tilldelar leverantörer till en anskaffningskategori finns i [Godkänna leverantörer för specifika anskaffningskategorier](tasks/approve-vendors-specific-procurement-categories.md).
+3. Kontrollera att måttenheterna och valutan som leverantören använder har ställts in. Information om hur du skapar en måttenhet finns i [Hantera måttenheter](../pim/tasks/manage-unit-measure.md).
+4. Konfigurera den externa leverantörskatalogen med hjälp av kraven för webbplatsen för din externa leverantörskatalog. Mer information om den här uppgiften finns i [Konfigurera externa leverantörskatalogen](#configure-the-external-vendor-catalog).
 5. Testa leverantörens externa katalogkonfigurationer för att bekräfta att inställningarna är korrekta och att du kan komma åt leverantörens externa katalog. Använd åtgärden **Validera inställningar** för att validera meddelandet om begäran om inställning som du har definierat. Det här meddelandet ska åstadkomma att leverantörens externa katalogwebbplats öppnas i ett webbläsarfönster. Vid validering kan du inte beställa artiklar och tjänster från leverantören. Om du vill beställa artiklar och tjänster måste du använda leverantörens katalog från en inköpsrekvisition.
 6. Aktivera den externa katalogen med hjälp av knappen **Aktivera katalog** på sidan **Externa kataloger**. Den externa katalogen måste aktiveras innan anställda kan använda den. Du kan när som helst inaktivera den externa katalogen.
 
 
-## <a name="4-configure-the-external-vendor-catalog"></a>(4) Konfigurera den externa leverantörskatalogen
+## <a name="configure-the-external-vendor-catalog"></a>Konfigurera den externa leverantörskatalogen
 
 Det här avsnittet innehåller mer information om uppgift 4 i föregående avsnitt.
 
@@ -81,7 +81,7 @@ Nedan hittar du en beskrivning av de etiketter som ingår i mallen:
 
 ### <a name="extrinsic-elements"></a>Extrinsic-element
 
-Ett extrinsic-element är ytterligare information, till exempel ett användarnamn som baseras på en användare som loggar ut. Extrinsic-elementet anges när punchout inträffar och kan skickas i begärandemeddelandets inställningar.
+Ett yttre element är ytterligare information, till exempel ett användarnamn som baseras på en användare som stämplar ut. Det yttre elementet anges när utstämplingen inträffar och kan skickas i meddelandet om begärandeinställningar.
 Din leverantör kan ha ett krav för att ta emot ett extrinsic-element i förfrågan om inställningar. I sådana fall bör du lägga till extrinsic-elementet i listan över extrinsic-element i avsnittet **Meddelandeformatet** på sidan **Extern katalog**. Ange ett namn för extrinsic-elementet som leverantören kan känna igen och mappa det till ett värde. Alternativen för värden är: Användarnamn, Användarens e-postadress eller Slumpmässigt värde.
 Mer information om cXML-protokollet finns på: http://cxml.org/
 

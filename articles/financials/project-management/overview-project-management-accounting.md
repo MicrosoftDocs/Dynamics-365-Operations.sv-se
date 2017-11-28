@@ -3,7 +3,7 @@ title: Projekthantering och redovisning
 description: "Funktionen för projekthantering och redovisning kan användas i flera branscher för att tillhandahålla en tjänst, för att tillverka en produkt eller för att uppnå ett resultat."
 author: KimANelson
 manager: AnnBe
-ms.date: 09/14/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: cd30c9278c58f8e0ca9b50f67a999708bd64c0a2
+ms.sourcegitcommit: 3a1bfd4bd5f396c05277159ac112eaa8197d5818
+ms.openlocfilehash: 6a2c51d9ffe288dad2db43ecd0a4c8f717c6379a
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -243,15 +243,15 @@ Finance and Operations minskar inte automatiskt prognosuppskattningarna. Därfö
 > </tr>
 <tr class="odd">
 <td>Resterande budget</td>
-<td>Den här metoden använder en modell för återstående budget för att beräkna kostnaden för projektet. När du använder den här metoden adderas de faktiska kostnaderna och prognosbeloppen i den återstående budgeten. Resultatet är en total kostnad. Innan du använder den här metoden, måste en modell för resterande budget läggas upp där transaktioner dras av baserat på faktiska transaktioner som har registrerats i systemet. På sidan <strong>Prognosmodeller</strong> ser du till att fälten är markerade i gruppen <strong>Automatisk prognosreducering</strong> . Vanligtvis kopieras en en resterande budget från en ursprunglig budget. När transaktioner registreras minskas transaktionerna i den resterande budgeten. När projektet framskrider och om du bestämmer att den återstående budgeten ska justeras debiterar du prognostransaktioner på den resterande budgeten. <strong>Obs!</strong> Metoden kan endast användas om en prognosmodell är kopplad till uppskattningen.</td>
+<td>Den här metoden använder en modell för återstående budget för att beräkna kostnaden för projektet. När du använder den här metoden adderas de faktiska kostnaderna och prognosbeloppen i den återstående budgeten. Resultatet är en totalkostnad. Innan du använder den här metoden, måste en modell för resterande budget läggas upp där transaktioner dras av baserat på faktiska transaktioner som har registrerats i systemet. På sidan <strong>Prognosmodeller</strong> ser du till att fälten är markerade i gruppen <strong>Automatisk prognosreducering</strong> . Vanligtvis kopieras en en resterande budget från en ursprunglig budget. När transaktioner registreras minskas transaktionerna i den resterande budgeten. När projektet framskrider och om du bestämmer att den återstående budgeten ska justeras debiterar du prognostransaktioner på den resterande budgeten. <strong>Obs!</strong> Metoden kan endast användas om en prognosmodell är kopplad till uppskattningen.</td>
 </tr>
 <tr class="even">
 <td>Som föregående uppskattning</td>
-<td>Samma uppskattningsmetoden som användes i den föregående period tillämpas. Den metoden kräver en prognosmodell, om den föregående perioden kräver en prognosmodell.</td>
+<td>Samma uppskattningsmetod som användes i den föregående perioden tillämpas. Den här metoden kräver en prognosmodell om den föregående perioden kräver en prognosmodell.</td>
 </tr>
 <tr class="odd">
 <td>Ställ in den kostnad du vill slutföra till noll</td>
-<td>Vanligtvis används den här metoden innan uppskattningsprojektet elimineras. Den här metoden matchar de totala uppskattningarna med de verkliga transaktionerna som bokfördes och rensar kolumnen <strong>Kostnad för slutförande</strong>. Den resulterande slutförandeprocenten är alltid 100 procent. Fältet <strong>Prognostisering</strong> är inte markerat för varje kostnadsrad du skapar, och den totala uppskattningen kopieras från den föregående kostnadsuppskattningen. Den verkliga förbrukningen för uppskattningsperioden dras från kostnaden för projektets slutförande. Denna metod kräver inte någon prognosmodell.</td>
+<td>Vanligtvis används den här metoden innan uppskattningsprojektet elimineras. Den här metoden matchar de totala uppskattningarna med de verkliga transaktionerna som bokfördes och rensar kolumnen <strong>Kostnad för slutförande</strong>. Den resulterande slutförandeprocenten är alltid 100 procent. Fältet <strong>Prognostisering</strong> är inte markerat för varje kostnadsrad du skapar, och den totala uppskattningen kopieras från den föregående kostnadsuppskattningen. Den faktiska förbrukningen för uppskattningsperioden dras från kostnaden som ska slutföra projektet. Denna metod kräver inte någon prognosmodell.</td>
 </tr>
 <tr class="even">
 <td>Från kostnadsmall</td>

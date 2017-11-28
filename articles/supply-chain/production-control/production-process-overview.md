@@ -1,9 +1,9 @@
 ---
-title: "Översikt över produktionsprocessen"
-description: "Det här avsnittet innehåller en översikt över produktionsprocesserna. Den beskriver de olika stegen i produktionsorder, batchorder och kanbans, från orderns skapande till stängningen av den ekonomiska perioden."
+title: "Översikt över produktionsprocess"
+description: "Det här ämnet innehåller en översikt över produktionsprocesserna. Den beskriver de olika stegen i produktionsorder, batchorder och kanbans, från orderns skapande till stängningen av den ekonomiska perioden."
 author: cvocph
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: JmgProdStatusListPage, JmgShopSupervisorWorkspace, Kanban, ProdTable, ProdTableOverview
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 19832
 ms.assetid: 0e83c7ea-feba-4ed6-8717-8b48a3b8804a
 ms.search.region: Global
@@ -20,19 +20,19 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: e50e64057d19d0e1fbf5645c2abc31fbd19ea43a
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 779b27574a9d6d7e7aa6b71f468ba3cff8d4085a
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
-# <a name="production-process-overview"></a>Översikt över produktionsprocessen
+# <a name="production-process-overview"></a>Översikt över produktionsprocess
 
 [!include[banner](../includes/banner.md)]
 
 
-Det här avsnittet innehåller en översikt över produktionsprocesserna. Den beskriver de olika stegen i produktionsorder, batchorder och kanbans, från orderns skapande till stängningen av den ekonomiska perioden. 
+Det här ämnet innehåller en översikt över produktionsprocesserna. Den beskriver de olika stegen i produktionsorder, batchorder och kanbans, från orderns skapande till stängningen av den ekonomiska perioden. 
 
 Produktionen av produkter, en process som ibland också kallas produktionslivscykeln, följer specifika steg som behövs för att slutföra tillverkningen av en artikel. Livscykeln börjar med genereringen av en produktionsorder, batchorder, eller kanban. Den avslutas med en slutförd, tillverkad artikel som antingen är klar för kunden eller för en annan fas i produktionen. Varje steg i livscykeln kräver olika typer av information för att processen ska kunna slutföras. När varje steg har slutförts visar produktionsordern, batchordern eller kanban en ändring i produktionsstatus. Andra typer av produkter kräver olika tillverkningsprocesser.  
 
@@ -68,7 +68,7 @@ Följande steg i tillverkningslivscykeln kan genereras för alla ordertyper av t
     -   **Finplanering** – Denna planeringsmetod ger en detaljerad plan. Varje operation delas upp i enskilda jobb med specifika datum, tider och tilldelade verksamhetsresurser. Om begränsad kapacitet används tilldelas jobb till verksamhetsresurser baserat på tillgänglighet. Du kan visa och ändra planen i ett Gantt-diagram.
     -   **Kanban-tidsplan** – Kanban-jobb planeras på det kanban-schematavla eller planeras automatiskt baserat på den automatiska planläggningskonfigurationen av kanban-reglerna.
 
-4.  **Frisläppt** – Du kan frisläppa produktionsordern eller batchordern, när tidsplanen är avslutad, och materialet är tillgängligt att plockas eller förberedas. Kontrollera materialtillgänglighet hjälper produktionslagerarbetsledaren att bedöma materialtillgänglighet för produktionsordern eller batchordern. Du kan även skriva ut produktionsorderdokument som plocklistor, jobbkort, flödeskort och flödesjobb. När produktionsordern frisläpps ändras statusen för ordern för att indikera att produktionen kan börja. När lagerstyrning används, frisläpper produktionsordern eller batchordern produktionsstrukturlistaraderna till lagerstyrning. Påfyllnad av lagerstället och lagerställearbete genereras enligt inställningarna för lagerstället.
+4.  **Frisläppt** – Du kan frisläppa produktionsordern eller batchordern, när tidsplanen är avslutad, och materialet är tillgängligt att plockas eller förberedas. Kontrollera materialtillgänglighet hjälper produktionslagerarbetsledaren att bedöma materialtillgänglighet för produktionsordern eller batchordern. Du kan även skriva ut produktionsorderdokument som plocklistor, jobbkort, flödeskort och flödesjobb. När produktionsordern frisläpps ändras statusen för ordern för att indikera att produktionen kan börja. När lagerstyrning används, frisläpper produktionsordern eller batchordern produktionsstrukturlistaraderna till lagerstyrning. Påfyllnad av lagerstället och lagerställearbete genereras enligt inställningarna för lagerstället.
 5.  **Förberedd**/**Plockad** – När alla material och resurser har mellanlagrats på produktionsplatsen, uppdateras produktionsstrukturlisteraderna eller kanbanraderna till statusen **Plockad**. Peggade leveransordrar och relaterat lagerställearbete är vanligtvis på den här fasen. De Kanban-kort eller jobbkort som krävs för att rapportera produktionsförloppet, ska tilldelas och skrivas ut.
 6.  **Startad** – När en produktionsorder, en batchorder eller en kanban har startats, kan du rapportera material- och resursförbrukning mot ordern. Systemet kan konfigureras för att automatiskt bokföra förbrukning av material och resurser som tilldelas ordern när den startas. Denna allokering kallas för föravräkning, framavräkning eller autoförbrukning. Du kan manuellt allokera material till produktionesorder eller batchorder genom att skapa ytterligare plocklistejournaler. Du kan också manuellt allokera arbete och andra flödekostnader till ordern. Om du använder grovplanering kan du allokera dessa kostnader genom att skapa en flödeskortjournal. Om du använder finplanering kan du allokera dessa kostnader genom att skapa en jobbkortsjournal. Produktionsorder eller batchorder kan startas i batchar av den senaste begärda slutkvantiteten. Inom en produktionsorder, en batchorder eller kanban kan jobben som skapas startas och rapporteras separat genom journaler, den tillverkade utförandeterminalen (MES-terminal) eller kanban-tavlor.
 7.  Rapportförlopp **Slutför** jobb - Använd MES-terminal, produktionsjournaler, kanban-tavlor eller mobil skanning för att rapportera produktionsförloppet per jobb eller resurs. Kostnader för material- och resursförbrukning bokförs, och statusvärdet för de relaterade kanbans, produktionsorder och batchorder kan uppdateras till **Inlevererat** eller **Rapporterat som färdigt**. Inlagrat arbete för lagerstället kan skapas, beroende på lagerställekonfigurationen.

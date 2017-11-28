@@ -1,9 +1,9 @@
 ---
 title: Batchattribut
-description: "Den här artikeln innehåller information om batchattribut. Batchattribut är egenskaper för råmaterial och färdiga produkter som utgör lagerbatchar. Artikeln innehåller även information om hur du tilldelar batchattribut och hur du kan söka i dem när du reserverar batchar."
+description: "Den här ämnet innehåller information om batchattribut. Batchattribut är egenskaper för råmaterial och färdiga produkter som utgör lagerbatchar. Ämnet innehåller även information om hur du tilldelar batchattribut och hur du kan söka i dem när du reserverar batchar."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: PdsBatchAttrib, PdsBatchAttribAssociate, PdsBatchAttribByAttribGroup, PdsBatchAttribByItem, PdsBatchAttribByitemCustomer, PdsBatchAttribGroup
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 19271
 ms.assetid: 41de0250-4a96-412e-a412-aa06615b6b1d
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 0c3f5115377178941984e53749c18cc1c9179812
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 6c18b007a72686b1ede69b750e930d72e86f0aba
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-Den här artikeln innehåller information om batchattribut. Batchattribut är egenskaper för råmaterial och färdiga produkter som utgör lagerbatchar. Artikeln innehåller även information om hur du tilldelar batchattribut och hur du kan söka i dem när du reserverar batchar.
+Den här ämnet innehåller information om batchattribut. Batchattribut är egenskaper för råmaterial och färdiga produkter som utgör lagerbatchar. Ämnet innehåller även information om hur du tilldelar batchattribut och hur du kan söka i dem när du reserverar batchar.
 
 Batchattribut är egenskaper för råmaterial och färdiga produkter som utgör lagerbatchar. Batchattribut kan variera, beroende på faktorer som miljöfaktorer, kvaliteten på råmaterial som används för att producera batchen, eller resultatet av den färdiga produkten. Numret och typerna av batchattribut som används, kan variera mycket från en bransch till en annan. Här följer två exempel som visar hur du använder batchattribut:
 
@@ -51,7 +51,7 @@ Du kan tilldela batchattribut till enskilda produkter som hålls i lagerbatchar,
 Du kan öppna sidorna för produkter som du väljer på sidan **Frisläppta produkter** i Produktinformationshantering. När du har tilldelat batchattribut till en produkt, kan du lägga till specifika värden till attributen på sidan **Batchattribut i lager**.
 
 ## <a name="reserve-batches"></a>Reservera batchar 
-Du kan söka i batchattribut när du gör batchreservationer för en försäljningsorder för att fullfölja en kunds order, eller när du plockar och reserverar batchar för en tillverkningsorder. Sökninghjälpen hittar en lagerbatch som innehåller produkten som har det batchattribut som du vill ha. När du har hittat batchen eller batcharna kan du reservera produkten till den ursprungliga lagertransaktionsraden.
+Du kan söka i batchattribut när du gör batchreservationer för en försäljningsorder för att fullfölja en kunds order, eller när du plockar och reserverar batchar för en tillverkningsorder. Sökninghjälpen hittar en lagerbatch som innehåller produkten som har det batchattribut som du vill ha. När du har hittat batchen eller batcharna kan du reservera produkten till den ursprungliga lagertransaktionsraden.
 
 
 

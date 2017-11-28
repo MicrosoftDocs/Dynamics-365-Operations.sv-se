@@ -19,10 +19,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: c222f0d17be6eea0f776f5460c793b82d8b3e0ab
+ms.sourcegitcommit: 64f0a9a44b97a9980f8d1b76ff158f1ac9cbc114
+ms.openlocfilehash: 6b896c28f475a8f827a1db1b6dd684b6ec64e872
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/15/2017
 
 ---
 
@@ -138,7 +138,7 @@ Du kan visa om en frisläppt produkt kan användas som en komponent eller delkom
 </tr>
 <tr class="odd">
 <td>Användarbehov</td>
-<td>Användarkrav representerar en abstraktion mellan användarkrav och specifika komponenter och attribut. Du kan inte koppla ett användarkrav till en artikel. Till exempel en kund shoppar för ett hemmabiosystem. Försäljaren kanske ber om storleken på platsen där kund planerar att installera systemet, som bestämmer hur många watt krävs. I det här exemplet kan platsstorleken vara ett användarkrav som hjälper dig att bestämma lämpligt attributvärde för en viss komponent. Du kan dölja användarkrav så att de inte visas för användaren under en konfigurationssession. Attribut, delkomponenter och användarkrav, som gäller användarkrav, döljs också. Du kan ange ett villkor för att kontrollera om en användarkrav kan döljas. Du måste ange villkoret med hjälp av OML-syntaxen (Optimization Modeling Language).</td>
+<td>Användarkrav representerar en abstraktion mellan användarkrav och specifika komponenter och attribut. Du kan inte koppla ett användarkrav till en artikel. Till exempel en kund shoppar för ett hemmabiosystem. Försäljaren kanske ber om storleken på platsen där kund planerar att installera systemet, som bestämmer hur många watt krävs. I det här exemplet platsstorleken kan vara en användarkrav som hjälper bestämma lämpligt attributvärdet för en viss komponent. Du kan dölja användarkrav, så att de inte visas för användaren under en konfigurationssession. Attribut, delkomponenter och användarkrav, som gäller användarkrav, döljs också. Du kan ange ett villkor för att kontrollera om en användarkrav kan döljas. Du måste ange villkoret med hjälp av OML-syntaxen (Optimization Modeling Language).</td>
 </tr>
 <tr class="even">
 <td>Strukturlisterader</td>

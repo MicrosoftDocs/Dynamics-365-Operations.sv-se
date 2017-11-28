@@ -19,10 +19,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: fbe32e248727912073631f1dfb8ee0a49cbf0a5e
+ms.sourcegitcommit: 64f0a9a44b97a9980f8d1b76ff158f1ac9cbc114
+ms.openlocfilehash: 7563c749d0d2b5747f1b7886def82ba7191499b1
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/15/2017
 
 ---
 
@@ -36,9 +36,8 @@ Konfigurera Kundreskontra och Kredit och inkasso för att följa fakturor och in
 Du kan ställa in kundgrupper, kunder, bokföringsprofiler, olika betalningsalternativ, räntefakturor, kravbrev, provisioner, parametrar angående kunder, avgifter, leveranser och destinationer, växlar och andra typer av kundreskontra- och kredit och inkassoinformation.
 Följande tabell visar sidorna som har stöd för konfiguration och underhåll av kundreskontra och kredit och inkasso. Tabellposterna är ordnade efter uppgift och sedan i bokstavsordning efter sidnamn.
 
-| ![Obs!](https://i-technet.sec.s-msft.com/areas/global/content/clear.gif "Obs!")**Obs!**          |
-|--------------------------------------------------------------------------------------------------|
-| Vissa sidor i den följande tabellen kräver information eller parameterinställningar för att hitta dem. |
+> [!NOTE]
+> Du kan inte gå till vissa sidor i tabellen nedan såvida inte data eller parameter har registrerats på andra sidor.
 
 | Uppgift                                                 | Sidnamn                            | Användning                                                                                                                                                                                                                                                                             |
 |------------------------------------------------------|--------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|

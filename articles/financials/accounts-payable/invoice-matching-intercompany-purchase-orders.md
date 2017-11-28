@@ -3,7 +3,7 @@ title: "Fakturamatchning och koncerninterna inköpsorder"
 description: "Den juridiska personen för inköp som ingår i en koncernintern handelstransaktion kan ställas in för att använda fakturamatchning i leverantörsreskontra. I det här fallet måste bokföringskraven för både koncernintern handel och fakturamatchning i leverantörsreskontra uppfyllas innan koncerninterna leverantörsfakturor kan bokföras."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 08/20/2017
+ms.date: 10/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: PurchLineMatchingPolicy
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 3101
 ms.assetid: 9c7c2e44-45f8-4325-b6de-a09fe790f9cf
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: affdffd5e73958788ed2a5a4959eea71024140ab
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 3d0eb5c19c07313f4d4c0bac1b9c48375446afd9
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -52,7 +52,7 @@ Nettobeloppen för den koncerninterna leverantörsfakturan och den koncernintern
 2.  Registrera att artiklar har inlevererats och bokför en följesedel i Fabrikam Sales. Statusvärdet för KIFO888 ändras till Levererat. Statusvärdet för KIIO222 ändras till Inlevererat.
 3.  Utför en fakturauppdatering för KIFO888 i Fabrikam Sales. Enhetspriset är 0,45 och 100 artiklar uppdateras.
 4.  Skapa en faktura för KIIO222 i Fabrikam Purchase. Du råkade ändra nettopriset från 45,00 till 54,00. En ikon visas som anger att priset överskrider den tillåtna pristoleransen på 2 procent.
-5.  På sidan Fakturamatchningsdetaljer väljer du alternativet för att godkänna bokföring med matchningsavvikelser. På sidan Leverantörsfaktura klickar du på OK. Om leverantörsfakturan inte är en koncernintern leverantörsfaktura lyckas bokföringen. Men eftersom du arbetar med en koncernintern leverantörsfaktura misslyckas bokföringen. För koncernintern handel måste fakturasumman för den koncerninterna försäljningsordern vara samma som fakturasumman för motsvarande koncerninterna inköpsorder. För att lösa detta måste du korrigera nettopriset på fakturan genom att ändra tillbaka nettopriset till standardbeloppet 45,00.
+5.  På sidan Fakturamatchningsdetaljer väljer du alternativet för att godkänna bokföring med matchningsavvikelser. Klicka på OK på sidan Leverantörsfaktura. Om leverantörsfakturan inte är en koncernintern leverantörsfaktura lyckas bokföringen. Men eftersom du arbetar med en koncernintern leverantörsfaktura misslyckas bokföringen. För koncernintern handel måste fakturasumman för den koncerninterna försäljningsordern vara samma som fakturasumman för motsvarande koncerninterna inköpsorder. För att lösa detta måste du korrigera nettopriset på fakturan genom att ändra tillbaka nettopriset till standardbeloppet 45,00.
 
 ## <a name="example-quantity-matching-with-intercompany-trade"></a> Exempel: Kvantitetsmatchning med koncernintern handel
 Kvantiteten på den koncerninterna inköpsordern och den koncerninterna försäljningsordern måste vara samma. Detta krav åsidosätter eventuella godkännanden av fakturamatchning. I detta exempel används följande ytterligare inställningar för koncernintern handel:

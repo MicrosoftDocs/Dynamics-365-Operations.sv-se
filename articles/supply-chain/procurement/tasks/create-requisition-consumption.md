@@ -16,10 +16,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 07fe007005fcbbac1beecadb14dbd752376a0bd4
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 55ef4b1757a6f3c28c8575412d66488fda8608a5
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 # <a name="create-a-requisition-for-consumption"></a>Skapa en rekvisition för förbrukning
@@ -46,17 +46,17 @@ I den här proceduren förklaras processen för att skapa en rekvisition. Den vi
 
 ## <a name="add-a-line-to-the-requisition"></a>Lägga till en rad i rekvisitionen
 1. Klicka på Lägg till rad.
-    * Du kan lägga till rader i inköpsrekvisitionen på två sätt. Om du redan känner till produktnumret eller vet att du begär en produkt som inte finns i produktkatalogen kan du lägga till raden direkt med "Lägg till rad". Det andra sättet är att använda "Lägg till produkter" där du kan använda sökning och filtrering för att hitta artiklar i produktkatalogen.    
+    * Du kan lägga till rader i inköpsrekvisitionen på två sätt. Om du redan känner till produktnumret eller redan vet att du begär en produkt som inte finns i produktkatalogen kan du lägga till raden direkt med "Lägg till raden". Det andra sättet är att använda "Lägg till produkter" där du kan använda sökning och filtrering för att hitta artiklar i produktkatalogen.    
 2. Klicka på den rad som du precis har skapat.
     * Beställaren är den arbetare som har begärt rekvisitionen.   
     * Som standard är det den arbetare som har begärt rekvisitionen som förbereder den. Du måste ges behörighet att förbereda en rekvisitionsrad på uppdrag av en annan arbetare. Om du har sådana behörigheter visas de andra arbetarna i den här sökningen.  
 3. Skriv ett värde i fältet Artikelnummer.
-    * Det antal artiklar som du kan välja begränsas av kategoriåtkomstpolicyn och anskaffningskatalogen för den köpande juridiska personen.    
+    * Det antal artiklar som du kan välja begränsas av kategoriåtkomstpolicyn och anskaffningskatalogen för den köpande juridiska personen.   
 4. Ange ett tal i fältet Kvantitet.
 
 ## <a name="add-more-products-to-the-requisition"></a>Lägg till fler produkter till rekvisitionen
 1. Klicka på Lägg till produkter.
-    * Detta är det alternativ där du kan söka efter produkter i produktkatalogen.      
+    * Detta är det alternativ där du kan söka efter produkter i produktkatalogen.    
 2. I fältet Hitta anskaffningskategorinod skriver du den första delen av namnet på den kategori som du letar efter och klickar sedan på Enter.
     * Skriv till exempel dat.  
 3. Använd genvägen InvokeDefaultButton.

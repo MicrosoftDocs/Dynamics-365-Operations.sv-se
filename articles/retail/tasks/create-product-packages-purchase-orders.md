@@ -3,7 +3,7 @@ title: " Skapa produktförpackningar för inköpsorder"
 description: "Den här proceduren går igenom hur du skapar ett produktpaket och använder det i en inköpsorder."
 author: josaw1
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 11/14/2017
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: a3be1e7aca7f0382aea55fa8a371c33c8b53df95
+ms.sourcegitcommit: 8bbdbf882f6f73d03be0a036cb975109396e4a0d
+ms.openlocfilehash: 9d3ea8702c79d8aa6bb7cf7caa922277697610fa
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/14/2017
 
 ---
 # <a name="create-product-packages-for-purchase-orders"></a> Skapa produktförpackningar för inköpsorder
@@ -53,7 +53,7 @@ Den här proceduren går igenom hur du skapar ett produktpaket och använder det
 20. Klicka på Spara.
 21. Stäng sidan.
 
-## <a name="add-package-to-puchase-order"></a>Lägg till paket i inköpsorder
+## <a name="add-package-to-purchase-order"></a>Lägg till paket i inköpsorder
 1. Gå till leverantörsskulder > inköpsorder > Alla inköpsorder.
 2. Klicka på Ny.
 3. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Leverantörskonto.

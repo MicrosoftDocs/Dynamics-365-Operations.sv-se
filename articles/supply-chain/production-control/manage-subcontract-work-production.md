@@ -3,7 +3,7 @@ title: Hantera legotillverkningsarbete i produktionen
 description: "Det här avsnittet beskriver hur verksamhet på entreprenad (legotillverkning) hanteras i Microsoft Dynamics 365 for Finance and Operations. Med andra ord förklaras hur produktionsåtgärder som tilldelats en resurs hanteras av en leverantör."
 author: cvocph
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/03/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: LeanDocumentServiceCreation, PlanActivity, ProdBOMVendorListPage, ProdRoute, ProdTable, ProdTableListPage, PurchAgreementSubcontractorLookup, RouteTable, WrkCtrResourceGroup
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 268174
 ms.assetid: fe47c498-4f48-42a2-a0cf-5436c19ab3ea
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 69eeb90387ca5765c163c7d482295ea104cc078c
-ms.openlocfilehash: e1c29f597b190bd36b6fc64b16913ecdd02daf75
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 26feea4d86cf8b976f41342c8543594593c4b135
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -34,7 +34,7 @@ ms.lasthandoff: 09/29/2017
 
 Det här avsnittet beskriver hur verksamhet på entreprenad (legotillverkning) hanteras i Microsoft Dynamics 365 for Finance and Operations. Med andra ord förklaras hur produktionsåtgärder som tilldelats en resurs hanteras av en leverantör.
 
-I [produktionsprocesser](production-process-overview.md) kan arbetet utföras av resurser som ägs eller förvaltas av leverantörer. Leverantörsresurser används vanligtvis för att jämna ut periodiskt överdriven efterfrågan som överskrider den tillgängliga kapaciteten hos ett företags egna resurser. Leverantören kan eventuellt också erbjuda särskilda [resurskunskaper](resource-capabilities.md)eller resurser till ett lägre pris.  
+I [produktionsprocesser](production-process-overview.md) kan arbetet utföras av resurser som ägs eller förvaltas av leverantörer. Leverantörsresurser används vanligtvis för att jämna ut periodiskt överdriven efterfrågan som överskrider den tillgängliga kapaciteten hos ett företags egna resurser. Leverantören kan eventuellt också erbjuda särskilda [resurskunskaper](resource-capabilities.md) eller resurser till ett lägre pris.  
 
 Beroende på de leverantörsresurser som används i produktionsprocessen har en viss [väg](routes-operations.md) ofta ytterligare logistiska behov, detta eftersom material och halvfabrikat först måste transporteras till leverantörens plats. Sedan måste resultatet för legotillverkningsverksamheten transporteras antingen till platsen som allokeras till nästa verksamhet eller ett lager för färdiga varor.  
 
@@ -68,7 +68,7 @@ När den här konfigurationen används, skapas en inköpsorder för den relatera
 En produktionsorder kan ha många åtgärder, och varje åtgärd kan tilldelas en annan leverantör. Därför kan komplett tillverkningsorder utlösa flera olika inköpsorder.
 
 ## <a name="subcontracting-of-production-flow-activities"></a>Legotillverkning av produktionsflödesaktiviteter
-Lösningsmodellen [lean manufacturing](lean-manufacturing-overview.md)modellerar legotillverkning som en tjänst relaterad till ett [produktionsflöde](tasks/create-production-flow-version.md) (avsnitt i uppgiftsguide). Därför kallas den här typen av legotillverkning också för [verksamhetsbaserad legotillverkning.](activity-based-subcontracting.md) En särskild kostnadsgruppstyp kallad **Direktutkontraktering** har införts, och legotillverkningstjänsterna är inte längre en del av strukturlistan (BOM) för de färdiga produkterna. När du använder lean manufacturing definieras all verksamhet av kanbans som kan vara relaterade till en eller flera produktionsflödesaktiviteter. Denna förklaring låter hittills precis som en förklaring för tillverkningsorder. Medan produktionsorder alltid måste avslutas med en färdig produkt, kan du emellertid skapa kanbans för att förse en halvfärdig produkt. Du behöver inte introducera en ny produkt eller strukturlistenivå.  
+Lösningsmodellen [lean manufacturing](lean-manufacturing-overview.md) modellerar legotillverkning som en tjänst relaterad till ett [produktionsflöde](tasks/create-production-flow-version.md) (avsnitt i uppgiftsguide). Därför kallas den här typen av legotillverkning också för [verksamhetsbaserad legotillverkning.](activity-based-subcontracting.md) En särskild kostnadsgruppstyp kallad **Direktutkontraktering** har införts, och legotillverkningstjänsterna är inte längre en del av strukturlistan (BOM) för de färdiga produkterna. När du använder lean manufacturing definieras all verksamhet av kanbans som kan vara relaterade till en eller flera produktionsflödesaktiviteter. Denna förklaring låter hittills precis som en förklaring för tillverkningsorder. Medan produktionsorder alltid måste avslutas med en färdig produkt, kan du emellertid skapa kanbans för att förse en halvfärdig produkt. Du behöver inte introducera en ny produkt eller strukturlistenivå.  
 
 Eftersom kanban-regler kan vara mycket dynamiska, kan du utforma du olika leveransvarianter för samma produkt i ett produktionsflöde. När du använder resurssnål legotillverkning sker en strikt uppdelning av materialflödet och det ekonomiska flödet. Hela materialflödet representeras av kanban-aktiviteter. Inköpsorder för de tjänsteprodukterna och leveransbokföringarna av dessa tjänster kan utföras automatiskt, baserat på statusen för kanban-jobb i produktionsflödet. Kanban-jobb kan påbörjas och slutföras innan inköpsorderna skapas. Legotillverkningsdokument (inköpsorder och inköpsleveransen av tjänsten) kan aggregeras efter period och tjänst. Därför kan antalet inköpsdokument och rader hållas nere, till och med i mycket repetitiva åtgärder där leverantörer ger legotillverkningstjänster i ett enstycksflöde.
 

@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.intro: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: 47e70cb1291e390b42b7feff844b2aca141f09b7
-ms.openlocfilehash: 9117b5af3beff7290816586f63091b12e357339c
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: c8cfc484eed02423dbf0c7caaf8ac2337b6ac38d
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -115,7 +115,7 @@ Innan du synkroniserar försäljningsorder är det viktigt att du uppdaterar sys
     - Standardvärdet för mallen **Quotation_Organization_Organization_OrganizationId** är **ORG001**.
 
 - Fältet **begärt leveransdatum** krävs i Finance and Operations och men synkroniseringen misslyckas om fältet lämnas tomt. För att undvika det här problemet om fältet är tomt kan ett standarddatum hämtas från **källa &gt; CDS**. Datumet ska uppdateras till ett önskat värde. För närvarande kan du inte ange ett värde som **idag** för att representera dagens datum. Du måste ange ett specifikt datum. Standardvärdemallen för **begärt leveransdatum** är **1/1/2020**.
-- Du kan lägga till följande mappningar från **CDS &gt; Destination** för att garantera att offertraderna importeras till Finance and Operation om det inte finns någon standardinformation från varken kunden eller produkten:
+- Du kan lägga till följande mappningar från **CDS &gt; Destination** för att garantera att offertraderna importeras till Finance and Operations om det inte finns någon standardinformation från varken kunden eller produkten:
 
     - **SiteId** – en plats måste anges för att skapa offerter och försäljningsorderrader i Finance and Operations. Det finns inget standrdmallvärde för **SiteId**.
     - **WarehouseId** – ett lagerställe måste anges för att skapa offerter och försäljningsorderrader i Finance and Operations. Det finns inget standrdmallvärde för **WarehouseId**.

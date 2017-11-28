@@ -1,7 +1,7 @@
 ---
 title: "BOM-beräkningar"
 description: "Kostnadssummeringen och försäljningsprisberäkningarna kallas för strukturlisteberäkningar och du initierar dem från sidan Beräkningar. Det här ämnet innehåller information om BOM-beräknignar."
-author: YuyuScheller
+author: AndersGirke
 manager: AnnBe
 ms.date: 04/10/2017
 ms.topic: article
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: BOMCalcDialog, BOMCalcTable, CostingVersion, InventItemPrice, SalesQuotationTable, SalesTable, SMAServiceOrderTable
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 273763
 ms.assetid: c6fa3348-eafa-4847-9132-e65c5f55cbf4
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.dyn365.ops.intro: AX 7.0.0
 ms.search.validFrom: 2016-02-28
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: b1bcf11a8f6fc4921e8659fe1d00c093e3ad5b74
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: ad00a3b5e41892aaa705fd8eafa52cc199e1d806
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -87,7 +87,7 @@ När du använder en metod för kostnad plus tillägg återspeglar artikelns ber
 -   **Strukturlisteberäkning för en artikel och angiven kostnadsversion** - Strukturlisteberäkningen genererar en väntande försäljningsprispost i kostnadsversionen. Försäljningsprisposten utgör startpunkten när du visar beräkningsdetaljer, till exempel på sidan **Beräkna artikelkostnad**). Försäljningsprisposten fungerar främst som referensinformation, och ligger inte till grund för ett försäljningspris på försäljningsorder.
 -   **Orderspecifik strukturlisteberäkning** - En variation på sidan **strukturlisteberäkning** som används när det gäller försäljningsorder, försäljningsofferter eller radartiklar på en serviceorder. En orderspecifik strukturlisteberäkning genererar ingen post i en kostnadsversion. Däremot genererar en beräkningspost som visas på sidan **strukturberäkningsresultat**. Beräkningsposten utgör startpunkten när du visar beräkningsdetaljer, till exempel på sidan **Beräkna artikelkostnad**). Information om den valda beräkningsposten kan överföras till den ursprungliga radartikeln. Till exempel kan det beräknade försäljningspriset överföras till en radartikel på försäljningsordern.
 
-## <a name="orderspecific-bom-calculations"></a>Orderspecifika strukturlisteberäkningar
+## <a name="order-specific-bom-calculations"></a>Orderspecifika strukturlisteberäkningar
 En orderspecifik strukturlisteberäkning är en variant på en strukturlisteberäkning för en tillverkad artikel. En orderspecifik strukturlisteberäkning utförs för försäljningsorder, försäljningsofferter och radartiklar på serviceorder. En orderspecifik strukturlisteberäkning genererar en beräkningspost som visas på sidan **resultat från strukturlisteberäkningar**. Beräkningsposten omfattar en beräknad vikt, en beräknad kostnad som baseras på aktiva kostnadsposter och ett beräknat försäljningspris. Beräkningsposten som varje orderspecifik strukturlisteberäkning för en artikel genererar på sidan **Resultat från strukturlisteberäkningar** identifieras unikt med ett beräkningsnummer. Resultatet från en beräkningspost kan överföras till den ursprungliga radartikeln. En orderspecifik strukturlisteberäkning skiljer sig från en strukturlisteberäkning för en tillverkad artikel på två sätt.
 
 -   En orderspecifik strukturlisteberäkning genererar inte någon artikelkostnadspost i en kostnadsversion. Det innebär därför att strukturlisteberäkningsprinciperna inte gäller när en artikelkostnadspost skapas eller när en kostnadspost skrivs över.

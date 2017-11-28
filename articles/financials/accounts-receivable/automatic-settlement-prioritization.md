@@ -1,9 +1,9 @@
 ---
 title: Automatisk kvittning och prioritering
-description: "Den här artikeln beskriver hur transaktioner kvittas om du väljer Automatisk kvittning på sidan Kundreskontraparametrar. Den beskriver även hur automatisk kvittning kan användas i kombination med betalningsprioriteten."
+description: "Det här ämnet beskriver hur transaktioner kvittas om du väljer Automatisk kvittning på sidan Kundreskontraparametrar. Den beskriver även hur automatisk kvittning kan användas i kombination med betalningsprioriteten."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 08/22/2017
+ms.date: 10/26/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: CustOpenTrans, CustParameters, LedgerJournalTransCustPaym
 audience: Application User
 ms.reviewer: twheeloc
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 14531
 ms.assetid: e7837cf6-ec69-44b4-8d47-eba38d5c7b1f
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 7a0f87aca78f1263f1f6ce65e2629b91312716cb
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: fc091e401f84ce2ac425897ad6cbd92fd7399736
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-Den här artikeln beskriver hur transaktioner kvittas om du väljer Automatisk kvittning på sidan Kundreskontraparametrar. Den beskriver även hur automatisk kvittning kan användas i kombination med betalningsprioriteten.
+Det här ämnet beskriver hur transaktioner kvittas om du väljer Automatisk kvittning på sidan Kundreskontraparametrar. Den beskriver även hur automatisk kvittning kan användas i kombination med betalningsprioriteten.
 
 Du har två alternativ när du kvittar fakturor och betalningar mot andra transaktioner. Du kan manuellt välja de transaktioner som du vill kvitta, eller också kan Microsoft Dynamics 365 for Finance and Operations markera transaktionerna automatiskt genom att använda automatisk kvittningsfunktionen. Du kan också anpassa hur automatiska kvittningar bearbetas genom att använda alternativet **Prioritera kvittning**. Alla dessa alternativ ingår i de kvittringsparametrar som definieras på sidan **Parametrar för kundreskontra**. Det sätt på vilket transaktioner automatiskt kvittas kan vara olika, beroende på vilken metod som du använder för automatisk kvittning. Följande metoder finns:
 
@@ -50,7 +50,7 @@ Exemplen på kvittningar senare i den här artikeln baseras på följande transa
 | Faktura 3     | 15 oktober  | 500.00 | 2% 14/Netto 30        | 29 oktober         |                                                                                                                                                                                               |
 | Räntefaktura | 15 oktober  | 07:00   |                     |                    | Den här räntefakturan gäller faktura 1 och 2. Beloppet beräknas som 2 % ränta på belopp som är mer eller 30 dagar efter förfallodatum. T.ex. 0,02 × (100,00 + 250,00) = 7,00. |
 
-## <a name="userdefined-settlement-priority"></a>Användardefinierad kvittningsprioritet
+## <a name="user-defined-settlement-priority"></a>Användardefinierad kvittningsprioritet
 Om du ställer in **Använd prioritet för automatiska betalningar** till **Ja** på sidan **Parametrar för kundreskontra** används den betalningsprioritet som du definierar på sidan **Kvittningprioritet** när transaktioner markeras för automatisk kvittning. För det här exemplet har följande kvittningprioritet definierats:
 
 1.  transaktionstyp

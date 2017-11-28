@@ -3,7 +3,7 @@ title: "Förpackningsmaterial och avgifter"
 description: "Avgifter för förpackningsmaterial betalas i vissa intervaller till ett återvinningsföretag. Ett belopp per viktenhet måste betalas för varje material som en förpackningsenhet består av. Avgifter för förpackningsmaterial beräknas och rapporteras, men inga redovisningstransaktioner bokförs eftersom avgifterna inte räknas som skatter som måste betalas till en myndighet."
 author: MarkusFogelberg
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: InventPackagingGroup, InventPackagingMaterialCode, InventPackagingMaterialFee, InventPackagingMaterialTrans, InventPackagingMaterialTransPurch, InventPackagingUnit
 audience: Application User
 ms.reviewer: bis
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 2194
 ms.assetid: 040b65dc-43c9-4256-b69f-b2d6e736fbe9
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 5d7cd7b3d60e9c265a766695b53d8d27ee2a8d0a
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: b131cdfa2f0e3b6a8f116464323d49eaa4584634
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -56,7 +56,7 @@ När du skapar en försäljningsorderrad görs en kontroll av huruvida förpackn
 ## <a name="packing-units-on-purchase-order-lines"></a>Förpackningsenheter på inköpsorderrader
 Förpackningsmaterialstransaktioner för en inköpsorderrad skapas inte av systemet. Du kan skapa transaktioner för fakturerade inköpsorderrader manuellt på sidan **Förpackningsmaterialtransaktioner**.
 
-## <a name="set-up-customer-packagingmaterialfee-license-numbers"></a>Ställ in kundens licensnummer för förpackningsmaterialavgift
+## <a name="set-up-customer-packaging-material-fee-license-numbers"></a>Ställ in kundens licensnummer för förpackningsmaterialavgift
 Om kunden ska betala förpackningsmaterialavgifterna anger du kundens licensnummer för förpackningsmaterialavgifter på sidan **Kunder**. När kunden har tilldelats ett licensnummer beräknas förpackningsmaterialavgifterna automatiskt när försäljningsorder faktureras. Efter faktureringen avmarkeras kryssrutan **Beräkna avgift** på sidan **Förpackningsmaterialtransaktioner** eftersom du inte behöver beräkna och skriva ut en rapport. Du kan skriva ut vikter för förpackningsmaterial på fakturan och informera kunderna om att de ska betala avgifterna. 
 
 Om ditt företag ska betala förpackningsmaterialavgifterna ska du inte fylla i kundens licensnummer. Efter faktureringen markeras kryssrutan **Beräkna avgift** på sidan **Förpackningsmaterialtransaktioner**. Detta innebär att avgifterna beräknas när en rapport skapas. Du kan skriva ut vikterna på fakturan och informera kunderna om att ditt företag betalar avgifterna.

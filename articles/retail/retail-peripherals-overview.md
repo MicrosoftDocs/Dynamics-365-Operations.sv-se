@@ -1,9 +1,8 @@
 ---
 title: "Översikt över kringutrustning i butik"
-description: "Det här avsnittet förklarar koncepten som är relaterade till kringutrustning i butik. Här beskrivs olika sätt att ansluta kringutrustning till kassan och komponenterna som är ansvariga för anslutning till kassan."
-author: rubencdelgado
+description: "Det här avsnittet förklarar koncepten som är relaterade till kringutrustning i butik."
 manager: AnnBe
-ms.date: 06/19/2017
+ms.date: 11/14/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -18,14 +17,14 @@ ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: e886411421fda17bb67f8ecedc1f7f3420e1fa72
+ms.sourcegitcommit: 52b3e2e78a03ac67507ee65a03e0884e5ed44678
+ms.openlocfilehash: 347100651302bb97806783d00559f2396d031fcc
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/14/2017
 
 ---
 
-# <a name="retail-peripherals-overview"></a>Översikt över kringutrustning i butik
+# <a name="retail-peripherals-overview"></a>Översikt över butikskringutrustning
 
 [!include[banner](includes/banner.md)]
 
@@ -575,7 +574,7 @@ Enligt aktuella säkerhetskrav ska följande inställningar användas i en produ
 ## <a name="peripheral-simulator"></a>Kringutrustningssimulator
 Mer information finns i [Kringutrustningssimulator för butik](dev-itpro/retail-peripheral-simulator.md).
 
-## <a name="microsofttested-peripheral-devices"></a>Kringutrustning för Microsofttested
+## <a name="microsoft-tested-peripheral-devices"></a>Microsoft-testad kringutrustning
 ### <a name="ipc-built-in-hardware-station"></a>IPC (inbyggd) maskinvarustation
 
 Följande kringutrustning som har testats med IPC maskinvarustation som ingår i Modern POS för Windows.

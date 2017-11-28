@@ -1,17 +1,17 @@
 ---
 title: "Komponenter för ekonomisk rapport"
 description: "Den här artikeln innehåller en beskrivning av hur komponenter eller byggblock för rapportdefinitioner används vid ekonomisk rapportering. Dessa byggblock omfattar raddefinitioner, kolumndefinitioner och rapporteringsträddefinitioner. Artikeln innehåller en beskrivning av hur du ordnar och låser byggblock och hur du arbetar med byggblocksgrupper."
-author: ShylaThompson
+author: aolson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: shylaw
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations
 ms.custom: 59071
 ms.assetid: a201cfcb-1672-45f6-897d-2db2dd181d9a
 ms.search.region: Global
@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 074a2f377c16d47e95343dae3ebec6cbba4d5050
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 7b283b8550bd7e5eff969d45c761d0a54d93a33e
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -31,13 +31,13 @@ ms.lasthandoff: 09/29/2017
 [!include[banner](../includes/banner.md)]
 
 
-Den här artikeln innehåller en beskrivning av hur komponenter eller byggblock för rapportdefinitioner används vid ekonomisk rapportering. Dessa byggblock omfattar raddefinitioner, kolumndefinitioner och rapporteringsträddefinitioner. Artikeln innehåller en beskrivning av hur du ordnar och låser byggblock och hur du arbetar med byggblocksgrupper. 
+Den här artikeln innehåller en beskrivning av hur komponenter eller byggblock för rapportdefinitioner används vid ekonomisk rapportering. Dessa byggblock omfattar raddefinitioner, kolumndefinitioner och rapporteringsträddefinitioner. Artikeln förklarar hur du ordnar och låser byggblock. 
 
-Designfilosofin bakom ekonomiska rapporteringsdesigner är att dela upp information i de minsta komponenterna eller byggblocken och sedan mixa och matcha komponenterna efter behov. Därför är formateringen separerad från dina ekonomiska data och du kan ändra en rapports design utan att ändra ekonomiska data i Microsoft Dynamics ERP-system. Med hjälp av den här byggblocksstrategin kan du kombinera text, belopp och beräkningar för att skapa de rapporter du behöver. Dessutom uppmuntrar den här flexibiliteten till kreativitet genom att göra det enklare för dig att visa dina operationer på olika sätt. De enskilda byggblocken i en rapportdefinition liknar ett tredimensionellt kalkylblad, men är mer effektiva. En rapportdefinitionen specificerar raddefinitionen, kolumndefinitionen och en valfri definition av det rapporteringsträd som ska användas för rapporten. Den innehåller också information om var du lagrar den genererade rapporten och hur du öppnar den. För bättre återanvändbarhet och delning kan du skapa en byggblocksgrupp, som är en uppsättning befintliga rapportdefinitioner, raddefinitioner, kolumndefinitioner, rapporteringsträddefinitioner och dimensionsuppsättningar som är kopplade till ett företag.
+Designfilosofin bakom ekonomiska rapporteringsdesigner är att dela upp information i de minsta komponenterna eller byggblocken och sedan mixa och matcha komponenterna efter behov. Därför är formateringen separerad från dina ekonomiska data och du kan ändra en rapports design utan att ändra ekonomiska data i Microsoft Dynamics ERP-system. Med hjälp av den här byggblocksstrategin kan du kombinera text, belopp och beräkningar för att skapa de rapporter du behöver. Dessutom uppmuntrar den här flexibiliteten till kreativitet genom att göra det enklare för dig att visa dina operationer på olika sätt. De enskilda byggblocken i en rapportdefinition liknar ett tredimensionellt kalkylblad, men är mer effektiva. En rapportdefinitionen specificerar raddefinitionen, kolumndefinitionen och en valfri definition av det rapporteringsträd som ska användas för rapporten. Den innehåller också information om var du lagrar den genererade rapporten och hur du öppnar den. 
 
-## <a name="building-blocks-of-a-report"></a> Byggblock av en rapport
-| Byggblock            | Beskrivning                                                                                                                                                                                                                                                                              | Mer information                                                                                                 |
-|---------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
+## <a name="building-blocks-of-a-report"></a>Byggblock i en rapport
+| Byggblock            | beskrivning                     | Mer information                                    |
+|---------------------------|---------------------------------|---------------------------------------------------------|
 | Raddefinition            | En raddefinition definierar de beskrivande raderna (till exempel löner eller försäljning) i en rapport. Den anger också de segmentvärden eller dimensioner som innehåller värdena för varje radartikel och innehåller även radformatering och beräkningar.                                                    | [Raddefinitioner](row-definitions-financial-reporting.md)                       |
 | Kolumndefinition         | En kolumndefinition definierar perioden som ska användas när data hämtas från ekonomiska dimensioner. Den innehåller även kolumnformatering och beräkningar.                                                                                                                                 | [Kolumndefinitioner](column-definitions-financial-reports.md)         |
 | Rapportträddefinition | En rapportträddefinition liknar ett organisationsschema. Den innehåller enskilda rapportenheter som representerar varje ruta i schemat. Enheterna kan vara antingen enskilda avdelningar från ekonomiska data eller på de enheter som sammanfattar data från andra rapportenheter. | [Rapportträddefinitioner](financial-reporting-tree-definitions.md) |
@@ -67,44 +67,20 @@ Du kan skapa ett lösenord för att skydda och låsa ett byggblock. På det här
 
 ## <a name="building-block-groups"></a>Byggblocksgrupper
 
-Byggblock är de raddefinitioner, kolumndefinitioner, rapportträddefinitioner och rapportdefinitioner som du skapar för en rapport. Byggblockgrupp är samlingar med definitioner och dimensionsuppsättningarna som är associerade till ett företag. Byggblocksgrupper kan vara företagsspecifika eller så kan flera företag dela samma uppsättning byggblock. Om några av dina företag har en annan kontoplan kan du använda separata byggblock för varje företag. Alternativt kan du namnge alla dina enskilda byggblock för att återspegla med vilket företag de är kompatibla.
-### <a name="create-a-building-block-group"></a>Skapa en grupp för byggblock
+Byggblock är de raddefinitioner, kolumndefinitioner, rapportträddefinitioner och rapportdefinitioner som du skapar för en rapport. Byggblocksgrupper är samlingar med definitioner och dimensionsgrupper. 
 
-1.  I Report Designer, på menyn **Företag** klicka på **Byggblocksgrupper**.
-2.  Klicka på **Ny** i dialogrutan **Byggblocksgrupper**.
-3.  Ange ett unikt namn och beskrivning för byggblockgruppen. Varje fält kan innehålla högst 256 tecken. (Den här siffran innehåller blanksteg.)
-4.  Klicka på **OK** när du vill skapa en ny byggblocksgrupp.
 
-### <a name="assign-a-building-block-group"></a>Tilldela en byggblockgrupp
+### <a name="view-a-building-block-group"></a>Visa en byggblocksgrupp
 
-När du har skapat en blockgrupp måste du tilldela den till minst ett företag. Du kan sedan skapa rapport-, rad-, kolumn- och rapportträdsdefinitioner och spara dem i byggblocksgruppen. Du måste stänga alla byggblock innan du börjar med följande procedur:
-1.  I Report Designer, på menyn **Företag** klickar du på **Företag**.
-2.  Markera det företag som du vill tilldela en byggblockgrupp till i dialogrutan **Företag**.
-3.  Klicka på **Ändra**.
-4.  I dialogrutan **Ändra företag** i fältet **Byggblockgrupp** väljer du den byggblockgrupp so ska tilldels företaget eller klickar på **Nytt** för att skapa en ny byggblockgrupp.
-5.  Klicka på **OK** för att tilldela byggblockgruppen.
-6.  Klicka på **Stäng** för att stänga dialogrutan **Företag**. Byggblockgruppen som du valde tilldelas nu företaget. Nu är alla nya raddefinitioner, kolumndefinitioner osv. som du skapade en del av byggblocksgruppen som tilldelades till det här företaget. Du kan också importera en .tdbx-fil eller rapporten från ett annat system.
-
-### <a name="view-a-building-block-group"></a> Visa en byggblockgrupp
-
-När en byggblocksgrupp har skapats och används kan du visa alla byggblock som är tilldelade till det. Du kan även exportera eller importera en byggblocksgrupp och utföra ytterligare underhåll på byggblocksgrupper.
-1.  I Report Designer, på menyn **Företag** klicka på **Byggblockgrupper**.
+Du kan visa alla byggblock som tilldelas en byggblockgrupp. Du kan även exportera eller importera en byggblockgrupp.
+1.  Klicka på **Byggblocksgrupper** på **Företag**-menyn i Report Designer.
 2.  I dialogrutan **Byggblockgrupper** väljer du det byggblock som ska visas.
 3.  Klicka på **Visa** för att öppna dialogrutan **Visa byggblocksgrupp** där du kan visa innehållet i byggblocksgruppen.
 4.  Klicka på **Stäng** för att stänga dialogrutan.
 
-### <a name="save-a-building-block-group-under-a-new-name"></a>Spara en byggblocksgrupp med ett nytt namn
+### <a name="export-a-building-block-group"></a>Exportera en byggblocksgrupp
 
-Du kan spara en befintlig byggblocksgrupp med ett nytt namn. Därefter kan du ändra den nya byggblocksgruppen utan att ändra den ursprungliga byggblocksgruppen.
-1.  Klicka på **Byggblocksgrupper** på **Företag**-menyn i Report Designer.
-2.  I dialogrutan **Byggblocksgrupper** väljer du den byggblocksgrupp du vill spara med ett nytt namn.
-3.  Klicka på **Spara som**.
-4.  Ange ett nytt namn och beskrivning för byggblockgruppen.
-5.  Klicka på **OK**. Den nya bygggblockgruppen visas i dialogrutan **Byggblockgrupper**.
-
-### <a name="export-a-building-block-group"></a> Exportera en byggblockgrupp
-
-Du kan exportera en byggblocksgrupp eller rapportbyggblock i en byggblocksgrupp. Du kan använda den exporterade byggblocksgruppen som en säkerhetskopia. Du kan också kopiera exporterade data mellan byggblocksgrupper eller Finance and Operations-installationer. Rapportdesignern inkluderar de refererade teckenstilarna och dimensionsuppsättningarna tillsammans med byggblockgruppen.
+Du kan exportera en byggblocksgrupp eller rapportbyggblock i en byggblocksgrupp. Du kan använda den exporterade byggblocksgruppen som en säkerhetskopia. Du kan också kopiera exporterade data mellan Finance and Operations-installationer. Rapportdesignern inkluderar de refererade teckenstilarna och dimensionsuppsättningarna tillsammans med byggblockgruppen.
 1.  I Report Designer, på menyn **Företag** klicka på **Byggblockgrupper**.
 2.  Markera det byggblock som ska exporteras i dialogrutan **Byggblocksgrupper** och klicka sedan på **Exportera**.
 3.  I dialogrutan **Exportera** väljer du de rapportdefinitioner som du vill exportera:
@@ -118,7 +94,7 @@ Du kan exportera en byggblocksgrupp eller rapportbyggblock i en byggblocksgrupp.
 
 ### <a name="import-a-building-block-group"></a> Importera en byggblockgrupp
 
-Du kan importera en byggblocksgrupp till en befintlig byggblocksgrupp eller skapa en ny byggblocksgrupp för data. Alla importerade byggblocksgrupper behåller sina ursprungliga teckensnittsinställningar och företagsreferenser och inkluderar relevanta dimensionsuppsättningar.
+Du kan importera en byggblockgrupp till en befintlig byggblockgrupp. Alla importerade byggblocksgrupper behåller sina ursprungliga teckensnittsinställningar och företagsreferenser och inkluderar relevanta dimensionsuppsättningar.
 1.  I Report Designer, på menyn **Företag** klicka på **Byggblockgrupper**.
 2.  Markera det byggblock som ska byggblocksgruppen ska importeras till i dialogrutan **Byggblocksgrupper** och klicka sedan på **Importera**.
 3.  Markera den byggblocksgrupp som ska importeras i dialogrutan **Öppna**, och klicka sedan på **Öppna**.

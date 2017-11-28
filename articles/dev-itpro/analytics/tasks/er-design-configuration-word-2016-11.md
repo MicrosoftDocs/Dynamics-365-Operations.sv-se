@@ -16,10 +16,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: d602e07548d22bcdee3f375c3c327c0e8963c3b4
+ms.sourcegitcommit: 7f80dc8411d38d051b01d77e35635a920d8803a6
+ms.openlocfilehash: 300cf6ed1a5a7098e71b812d682c1b51c2cf786c
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/06/2017
 
 ---
 # <a name="design-a-configuration-for-generating-reports-in-microsoft-word-format-for-electronic-reporting-er"></a>Utforma en konfiguration för rapportgenerering i Microsoft Word-format för elektronisk rapportering (ER)
@@ -30,9 +30,9 @@ I följande steg beskrivs hur en användare med systemadministratörsroll eller 
 
 För att slutföra dessa steg måste du först slutföra stegen i uppgiftsguiden "Skapa en ER-konfiguration för att skapa rapporter i OPENXML-format". Du måste också (i förväg) hämta och spara följande mallar lokalt för exempelrapporten:
 
-http://msdynamics.blob.core.windows.net/media/2016/10/SampleVendPaymDocReport.docx
+[Mall för betalningsrapport](https://go.microsoft.com/fwlink/?linkid=862266)
 
-http://msdynamics.blob.core.windows.net/media/2016/10/SampleVendPaymDocReportBounded.docx
+[Bunden mall för betalningsrapport](https://go.microsoft.com/fwlink/?linkid=862266)
 
 Denna procedur är avsedd för en funktion som lades till i Microsoft Dynamics 365 for Operations, version 1611.
 
@@ -49,7 +49,7 @@ Denna procedur är avsedd för en funktion som lades till i Microsoft Dynamics 3
 ## <a name="replace-the-excel-template-with-the-word-template"></a>Byt ut Excel-mallen mot Word-mallen
     * För närvarande används Excel-dokumentet som en mall för att generera utdata i OPENXML-format. Vi kommer att importera rapportmallen i Word-format.  
 1. Klicka på Bilagor.
-    * Ersätt den befintliga Excel-mallen med den Word-mall som du hämtade förut (SampleVendPaymDocReport.docx). Observera att den här mallen endast innehåller layouten i det dokument som vi vill generera som ER-utdata.  
+    * Ersätt den befintliga Excel-mallen med den Word-mall som du hämtade förut, Mall för betalningsrapport. Observera att den här mallen endast innehåller layouten i det dokument som vi vill generera som ER-utdata.  
 2. Klicka på Ta bort.
 3. Klicka på Ja.
 4. Klicka på Ny.

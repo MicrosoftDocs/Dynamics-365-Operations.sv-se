@@ -3,7 +3,7 @@ title: "Införselöversikt"
 description: "Det här avsnittet ger information om funktionen Införselöversikt. Sidan för införselöversikt är en del av den här funktionen och ger en översikt över alla artiklar som förväntas ankomma som inkommande artiklar."
 author: perlynne
 manager: AnnBe
-ms.date: 04/20/2017
+ms.date: 11/02/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: WMSArrivalOverview, WMSArrivalOverviewProfile, WMSJournalTable
 audience: Application User
 ms.reviewer: YuyuScheller
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 274363
 ms.assetid: 375807b2-a426-4f1b-bc1f-2fe00fd48413
 ms.search.region: global
@@ -20,10 +20,10 @@ ms.author: perlynne
 ms.dyn365.ops.intro: AX 7.0.0
 ms.search.validFrom: 2016-02-28
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: d9ebc0ea12de0c97718b565b77d99c3a1fcd6f21
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: 9c174dc7bf61ffab0d20c7685a29007e0b6e2e7e
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -104,7 +104,7 @@ Sammy kan också visa följande information:
 
 ### <a name="update-journals"></a>Uppdatera journaler
 
-För att registrera en eller flera orderrader som förfaller till betalning kan Sammy markera raderna i översiktsrutnätet eller radrutnätet och sedan klicka på **journaler** &gt; **visa införsel från inleveranser**. Artikelinförselrubrikerna som matchar raderna visas. För att uppdatering av produktinleveransens inköpsorder kan Sammy få åtkomst till de journalrubriker för artikelinförsel som är klara för uppdatering. Om du vill öppna dessa journalrubriker för artikelinförsel klickar du på **journaler** &gt; **Klara journaler för produktinleverans**. Alla rubrikrader som är klara för uppdatering av produktinleverans i det angivna lagerstället visas. (Rubrikrader som visas är inte relaterade till dagsintervallet).
+För att registrera en eller flera orderrader som förfaller till betalning kan Sammy markera raderna i översiktsrutnätet eller radrutnätet och sedan klicka på **journaler** &gt; **visa införsel från inleveranser**. Artikelinförselrubrikerna som matchar raderna visas. För att uppdatera produktinleveransens inköpsorder för registrerade artiklear kan Sammy få åtkomst till de journalrubriker för artikelinförsel som är klara för uppdatering. Om du vill öppna dessa journalrubriker för artikelinförsel klickar du på **journaler** &gt; **Klara journaler för produktinleverans**. Alla rubrikrader som är klara för uppdatering av produktinleverans i det angivna lagerstället visas. (Rubrikrader som visas är inte relaterade till dagsintervallet).
 
 ### <a name="start-an-arrival-registration"></a>Starta en införselregistrering
 

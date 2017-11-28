@@ -11,17 +11,17 @@ ms.technology:
 ms.search.form: RetailPosPermissionGroup, RetailFunctionalityProfile, RetailFormLayout, RetailHardwareProfile, RetailFiscalPrinterConfigTable
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Retail, Operations, Core, UnifiedOperations
+ms.search.scope: Retail, Operations, Core
 ms.search.region: Sweden
 ms.search.industry: retail
 ms.author: epopov
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 9f4b007c174961a8e6794ab532d733584f492758
-ms.openlocfilehash: daa172f82424d5b300634d2d329b8ac232901c66
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: c68d84ea0297d954eaf62d36b98b2e305e6be50e
 ms.contentlocale: sv-se
-ms.lasthandoff: 07/27/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 # <a name="cash-registers-for-sweden"></a>Kassaapparater för Sverige
@@ -75,7 +75,7 @@ Retail inkluderar ett exempel för att integrera kassa med Sverige-specifika kvi
 > [!NOTE]
 > För närvarande stöder inte styrenhetens integrationsprov kundorder. Men ett prov som stöder kundorder kommer att bli tillgängligt senare.
 
-Mer information om styrenhetens integrationsprov finns i [Guiden för provanvändning](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/retail-sdk-control-unit-sample).
+Mer information om styrenhetens integrationsprov finns i [Guiden för provanvändning](../dev-itpro/retail-sdk/retail-sdk-control-unit-sample.md).
 
 ## <a name="setting-up-retail-for-sweden"></a>Konfigurera Retail för Sverige
 
@@ -102,7 +102,7 @@ Du måste ange följande allmänna inställningar för Sverige.
     - Artikelmomsgrupper
     - Momsinställningar i artiklar (artikelmomsgrupper för försäljning)
 
-    Mer information om hur du ställer in och använder moms i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, och i Retail finns i [Momsöversikt](/dynamics365/unified-operations/financials/general-ledger/indirect-taxes-overview).
+    Mer information om hur du ställer in och använder moms i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, och i Retail finns i [Momsöversikt](../../financials/general-ledger/indirect-taxes-overview.md).
 
 2. På sidan **Alla butiker** uppdaterar du butiksinformation. Du måste speciellt ställa in följande parametrar:
     
@@ -145,7 +145,7 @@ Du måste ange följande allmänna inställningar för Sverige.
 
 ### <a name="control-unitspecific-settings"></a>Styrenhet - specifika inställningar
 
-Du måste du ange följande inställningar för att aktivera [integrationsprovet](/dynamics365/unified-operations/retail/dev-itpro/retail-sdk/retail-sdk-control-unit-sample) så att Retail POS är integrerat med kontrollenheter för Sverige.
+Du måste du ange följande inställningar för att aktivera [integrationsprovet](../dev-itpro/retail-sdk/retail-sdk-control-unit-sample.md) så att Retail POS är integrerat med kontrollenheter för Sverige.
 
 1. Skapa räkenskapsregisterkonfigurationer och tilldela dem till maskinvaruprofiler:
 

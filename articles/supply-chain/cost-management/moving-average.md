@@ -1,9 +1,9 @@
 ---
 title: "Rörligt genomsnitt"
-description: 
+description: "Glidande medelvärde är en beständig kostnadsredovisning som baseras på principen om medelvärde där kostnaderna för lagerutleveranser inte ändras när inköpskostnaden gör det. Skillnaden kapitaliseras och baseras på en proportionell beräkning. Beloppet som kvarstår kostnadsförs."
 author: AndersGirke
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/25/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: InventModelGroup
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations
+ms.search.scope: Core, Operations
 ms.custom: 65531
 ms.assetid: dfd10099-8f7f-44b1-917e-df37c2fe8773
 ms.search.region: Global
@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: afc8f4922810983a6582558f0577a05aa21cbdbb
+ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
+ms.openlocfilehash: c1f8a8cf4a58177d423709f245760a5ba9ca7e4e
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 11/03/2017
 
 ---
 
@@ -31,8 +31,12 @@ ms.lasthandoff: 09/29/2017
 
 [!include[banner](../includes/banner.md)]
 
+Glidande medelvärde är en beständig kostnadsredovisning som baseras på principen om medelvärde där kostnaderna för lagerutleveranser inte ändras när inköpskostnaden gör det. Skillnaden kapitaliseras och baseras på en proportionell beräkning. Beloppet som kvarstår kostnadsförs. 
+
+När du använder rörligt genomsnitt stöds inte lagerkvittningar och lagermarkering. Lagerstängning påverkar inte produkter som har rörligt genomsnitt som lagermodellgruppen och genererar inte alla kvittningar mellan transaktionerna.
 
 Följande är förutsättningar när du använder rörligt genomsnitt för kostnad som en kostnadsredovisningsmetod.
+
 1.  På sidan **Artikelmodellgrupper** ställer du in en artikelmodellgrupp som har valts i fältet rörligt genomsnitt i fältet **Lagermodell**. **Obs!** Som standard när rörligt genomsnitt väljs, väljs också fälten **Bokför fysiskt lager** och **Bokför ekonomiskt lager**. 
 
 2.  På sidan **Bokföring** tilldelar du konton till kontona **Prisskillnad för glidande medelvärde** och **Kostnadsomberäkning för glidande medelvärde** på fliken **Lager**. Du använder kontot **Prisskillnad för glidande medelvärde** när kostnader ska kostnadsföras proportionerligt. Detta inträffar på grund av en skillnad mellan en kostnad i inköpsinleverans och inköpsfakturan och på grund av en skillnad mellan den ursprungliga lagerkvantitet och kvantiteten för aktuell lagerbehållning. Använd kontot **Kostnadsomvärdering för rörligt genomsnitt** när du vill justera kostnaden för rörligt genomsnitt för en produkt till ett nytt enhetspris.
