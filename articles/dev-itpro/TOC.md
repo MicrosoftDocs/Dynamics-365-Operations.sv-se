@@ -124,6 +124,7 @@
 #### [Registrera en underklass fabriksmetoder](extensibility/register-subclass-factory-methods.md)
 #### [Svara med EventHandlerResult](extensibility/respond-event-handler-result.md)
 #### [Utöka klassen RunBase](extensibility/extend-runbase-class.md)
+#### [Använd ombud för att anpassa programstart](extensibility/startup-customizations.md)
 #### [Ändra ett befintligt fält i ett register](extensibility/modify-existing-field.md)
 #### [Lägg till ett nytt fält i ett befintligt register](extensibility/add-field-extension.md)
 #### [Lägg till ett index i ett befintligt register](extensibility/add-index.md)
@@ -505,10 +506,12 @@
 ### [Ställa in och distribuera lokala miljöer](deployment/setup-deploy-on-premises-environments.md)
 ### [Utveckla och distribuera anpassade modeller i lokala miljöer](deployment/develop-deploy-custom-models-on-premises.md)
 ### [Uppdatera en lokal distribution](deployment/apply-updates-on-premises.md)
+### [Distribuera en lokal distribution](deployment/redeploy-on-prem.md)
+### [Felsöka Dynamics 365 for Finance and Operations, Enterprise edition (lokal)](deployment/troubleshoot-on-prem.md)
 
 ## Distribuera anpassad kod
 ### [Skapa ett driftfärdigt paket](deployment/create-apply-deployable-package.md)
-### [Tillämpa ett distribuerbart paket](deployment/apply-deployable-package-system.md)
+### [Installera uppdateringar av en molnmiljö](deployment/apply-deployable-package-system.md)
 ### [Installera ett distribuerbart paket](deployment/install-deployable-package.md)
 ### [Felsöka problem med paketprogram](deployment/deployable-package-troubleshooting.md)
 
@@ -544,11 +547,13 @@
 ## Uppgradera till den senaste uppdateringen
 ### [Process för flytta till den senaste uppdateringen](migration-upgrade/upgrade-latest-update.md)
 ### [Livscykelpolicy](migration-upgrade/versions-update-policy.md)
-### [Uppgradera till den senaste plattformsuppdateringen](migration-upgrade/upgrade-latest-platform-update.md)
+### [Installera den senaste plattformsuppdateringen i din miljö](migration-upgrade/upgrade-latest-platform-update.md)
 ### [Uppgradera Dynamics-plattformen till augusti 2016-versionen](migration-upgrade/update-platform-each-release.md)
 ### [Uppgradera ett begränsat läge](migration-upgrade/upgrade-sandbox-environment.md)
 ### [Uppgradera data i utvecklings- eller demonstrationsmiljöer](migration-upgrade/upgrade-data-to-latest-update.md)
 ### [Uppdatera utvecklingsverktyg](dev-tools/update-development-tools.md)
+### [Uppdatera en lokal distribution](deployment/apply-updates-on-premises.md)
+### [Distribuera en lokal distribution](deployment/redeploy-on-prem.md)
 
 ## Snabbkorrigeringar och stöd
 ### [Hämta snabbkorrigeringar från Lifecycle Services](migration-upgrade/download-hotfix-lcs.md)
@@ -566,6 +571,7 @@
 ## [Datadelning mellan företag](sysadmin/cross-company-data-sharing.md)
 ## [Underhållsläge](sysadmin/maintenance-mode.md)
 ## [Förkonfigurerade systemkonton](sysadmin/pre-configured-system-accounts.md)
+## [Exportera B2B-användare till Azure AD](sysadmin/implement-b2b.md)
 ## [Rollbaserad säkerhet](sysadmin/role-based-security.md)
 ### [Säkerhetsarkitektur](sysadmin/security-architecture.md)
 ### [Säkerhetsrapporter](sysadmin/security-reports.md)
