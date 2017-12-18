@@ -10,6 +10,7 @@
 ##### [Systemkrav för molndistributioner](get-started/system-requirements.md)
 ##### [Lokal distribution](../dev-itpro/deployment/on-premises-deployment-landing-page.md)
 ##### [Systemkrav för lokala distributioner](get-started/system-requirements-on-prem.md)
+##### [Lagerhållning för lokala distributioner](../dev-itpro/deployment/warehousing-for-on-premise-deployments.md)
 
 #### Köp Finance and Operations
 ##### [Microsoft FastTrack for Dynamics 365](get-started/fasttrack-dynamics-365-overview.md)
@@ -20,8 +21,9 @@
 #### [AX 2012-funktioner som senarelades](get-started/ax-2012-features-not-implemented-but-not-deprecated.md)
 #### [Funktioner som inte implementerats i lokala distributioner](get-started/features-not-implemented-on-prem.md)
 #### [Livscykelpolicy](../dev-itpro/migration-upgrade/versions-update-policy.md)
-#### [Plattform, update 11 (oktober 2017)](get-started/whats-new-platform-update-11.md)
-#### [Plattform, update 10 (augusti 2017)](get-started/whats-new-platform-update-10.md)
+#### [Plattformsuppdatering 12 (november 2017)](get-started/whats-new-platform-update-12.md)
+#### [Plattformsuppdatering 11 (oktober 2017)](get-started/whats-new-platform-update-11.md)
+#### [Plattformsuppdatering 10 (augusti 2017)](get-started/whats-new-platform-update-10.md)
 #### [Finance and Operations, Enterprise Edition (juli 2017)](get-started/whats-new-application-July-2017-update.md)
 #### [Plattformsuppdatering 9 (juli 2017)](get-started/whats-new-platform-update-9.md)
 #### [Plattformsuppdatering 8 (juni 2017)](get-started/whats-new-platform-update-8.md)
@@ -42,6 +44,7 @@
 ##### [Uppgiftsguider februari 2016](get-started/new-task-guides-available-february-2016.md)
 
 ### Utforska användargränssnittet
+#### [Hjälpmedelsfunktioner](get-started/accessibility-features.md)
 #### [Vanliga frågor och svar om klientens användargränssnitt](get-started/client-faq.md)
 #### [Åtgärdssökning](get-started/action-search.md)
 #### [Avancerad filtrerings- och frågesyntax](get-started/advanced-filtering-query-options.md)
@@ -56,7 +59,7 @@
 #### [Ställ in en användares prioriterade tidszon](organization-administration/tasks/set-users-preferred-time-zone.md)
 #### [Förstå Lifecycle Services](../dev-itpro/lifecycle-services/lcs-works-lcs.md)
 
-### Få hjälp och support
+### Läs och kör dokumentationen
 #### [Hjälp – översikt](get-started/help-overview.md)
 #### [Anslut hjälp](get-started/help-connect.md)
 #### [Visa och exportera fältbeskrivningar](get-started/view-export-field-descriptions.md)
@@ -152,17 +155,21 @@
 
 #### [Integrera data med hjälp av Common Data Service](../dev-itpro/data-entities/data-integration-cds.md) 
 ##### [Konfigurera ett scenario för potentiell kund till pengar](../supply-chain/sales-marketing/prospect-to-cash.md)
-###### [Synkronisera produkter från Finance and Operations till produkter i Sales](../supply-chain/sales-marketing/products-template-mapping.md)
-###### [Synkronisera konton från Sales till kunder i Finance and Operations](../supply-chain/sales-marketing/accounts-template-mapping.md)
-###### [Synkronisera kontakter från Sales till kontakter i Finance and Operations](../supply-chain/sales-marketing/contacts-template-mapping.md)
-###### [Synkronisera huvuden och rader i försäljningsofferter från Sales till Finance and Operations](../supply-chain/sales-marketing/sales-quotation-template-mapping.md)
-###### [Synkronisera huvuden och rader i försäljningsorder från Finance and Operations till Sales](../supply-chain/sales-marketing/sales-order-template-mapping.md)
-###### [Synkronisera huvuden och rader i försäljningsfakturor från Finance and Operations till Sales](../supply-chain/sales-marketing/sales-invoice-template-mapping.md)
-###### [Synkronisera konton direkt från Sales till kunder i Finance and Operations](../supply-chain/sales-marketing/accounts-template-mapping-direct.md)
-###### [Synkronisera produkter direkt från Finance and Operations till produkter i Sales](../supply-chain/sales-marketing/products-template-mapping-direct.md)
-###### [Synkronisera kontakter direkt från Sales till kontakter i Finance and Operations](../supply-chain/sales-marketing/contacts-template-mapping-direct.md)
-###### [Synkronisera huvuden och rader i försäljningsorder direkt från Finance and Operations till Sales](../supply-chain/sales-marketing/sales-order-template-mapping-direct.md)
-###### [Synkronisera huvuden och rader i försäljningsfakturor direkt från Finance and Operations till Sales](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
+###### [Underhåll konton i Sales och synkronisera dem direkt från Finance and Operations](../supply-chain/sales-marketing/accounts-template-mapping-direct.md)
+###### [Underhåll produkter i Finance and Operations och synkronisera dem direkt med Sales](../supply-chain/sales-marketing/products-template-mapping-direct.md)
+###### [Behåll kontakter i Sales och synkronisera dem direkt till kontakter i Finance and Operations](../supply-chain/sales-marketing/contacts-template-mapping-direct.md)
+###### [Synkronisera försäljningsofferter direkt från Sales till Finance and Operations](../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md)
+###### [Synkronisera försäljningsorder direkt från Finance and Operations till Sales](../supply-chain/sales-marketing/sales-order-template-mapping-direct.md)
+###### [Synkronisera försäljningsorder direkt mellan Sales och Finance and Operations](../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md)
+###### [Synkronisera försäljningsfakturor direkt från Finance and Operations till Sales](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
+###### [Underhåll konton i Sales och synkronisera dem till Finance and Operations](../supply-chain/sales-marketing/accounts-template-mapping.md)
+###### [Underhåll kontakter i Sales och synkronisera dem till Finance and Operations](../supply-chain/sales-marketing/contacts-template-mapping.md)
+###### [Underhåll produkter i Finance and Operations och synkronisera dem med Sales](../supply-chain/sales-marketing/products-template-mapping.md)
+###### [Skapa försäljningskvoter i Sales och synkronisera dem med Finance and Operations](../supply-chain/sales-marketing/sales-quotation-template-mapping.md)
+###### [Skapa försäljningsorder i Finance and Operations och synkronisera dem med Sales](../supply-chain/sales-marketing/sales-order-template-mapping.md)
+###### [Skapa försäljningsfakturor i Finance and Operations och synkronisera dem med Sales](../supply-chain/sales-marketing/sales-invoice-template-mapping.md)
+
+
 
 #### [Konsumera externa webbtjänster](../dev-itpro/data-entities/consume-external-web-service.md)
 
@@ -894,6 +901,7 @@
 ##### [Rapport med svarta listan](../financials/localizations/emea-ita-black-list-report.md)
 ##### [Bokföringsdatum](../financials/localizations/emea-ita-competence-date.md)
 ##### [Avskrivning av anläggningstillgångar](../financials/localizations/emea-ita-depreciation-of-fixed-assets.md)
+##### [Modello 770](../financials/localizations/emea-ita-modello770.md)
 ##### [Verifieringsdatum för följesedel för fakturor](../financials/localizations/emea-ita-packing-slip-date-verification-on-invoice.md)
 ##### [Momsböcker](../financials/localizations/emea-ita-fiscal-books.md)
 ##### [Delbetalning av fakturor utfärdade till offentlig administration](../financials/localizations/emea-ita-split-payment-invoices-issued-public-administration.md)
@@ -1325,7 +1333,7 @@
 ### [Initiera lagernivåer i lagerstället (uppgiftsguide)](../supply-chain/inventory/tasks/initialize-stock-levels-warehouse.md)
 ### [Överför fysiskt lager i lagerstället (uppgiftsguide)](../supply-chain/inventory/tasks/transfer-physical-inventory-within-warehouse.md)
 ### [Justera lagernivåer i lagerstället (basic warehousing.md) (uppgiftsguide)](../supply-chain/inventory/tasks/adjust-stock-levels-warehouse-basic-warehousing.md)
-### [Lagermärkesinventering)](../supply-chain/inventory/inventory-tag-counting.md)
+### [Lagermärkesinventering](../supply-chain/inventory/inventory-tag-counting.md)
 ### [Inventering i ett lagerställe (uppgiftsguide)](../supply-chain/inventory/tasks/count-inventory-warehouse.md)
 ### [Definiera lagerberäkningsprocesser (uppgiftsguide)](../supply-chain/inventory/tasks/define-inventory-counting-processes.md)
 ### [Ställ in försändelse](../supply-chain/inventory/consignment.md)
@@ -1347,7 +1355,29 @@
 ### [Spåra löpande genomsnittlig kostnad per lagerdimension](../supply-chain/cost-management/track-running-average-cost-per-inventory-dimension.md)
 
 
-## Huvudplanering
+## [Huvudplanering](../supply-chain/master-planning/master-planning-home-page.md)
+### [Huvudplan](../supply-chain/master-planning/master-plans.md)
+#### [Disponeringsinställningar](../supply-chain/master-planning/coverage-settings.md)
+#### [Definiera disponeringsregler för artiklar (uppgiftsguide)](../supply-chain/master-planning/tasks/define-coverage-rules-items.md)
+#### [Generera en begränsad plan (uppgiftsguide)](../supply-chain/master-planning/tasks/constrained-plan.md)
+#### [Skapa en materialplan för samprodukter (uppgiftsguide)](../supply-chain/master-planning/tasks/create-material-plan-co-products.md)
+#### [Underhåll planerade order](../supply-chain/master-planning/maintain-planned-orders.md)
+#### [Hantera förseningar](../supply-chain/master-planning/delays.md)
+#### [Spåra en nedbrytning](../supply-chain/master-planning/trace-explosion.md)
+#### [Åtgärdsmeddelanden](../supply-chain/master-planning/action-messages.md)
+#### [Övervaka en huvudplaneringskörning (uppgiftsguide)](../supply-chain/master-planning/tasks/monitor-master-planning-run.md)
+#### [Skapa en tidsplan för en plats (uppgiftsguide)](../supply-chain/master-planning/tasks/create-schedule-site.md)
+#### [Skapa en plan för en plats (uppgiftsguide)](../supply-chain/master-planning/tasks/create-plan-site.md)
+#### [Huvudplaner och funktioner för flera webbplatser](../supply-chain/master-planning/master-plan-multisite-functionality.md)
+##### [Plan för täckning av webbplats, obligatoriskt lagerställe](../supply-chain/master-planning/master-plan-site-coverage-warehouse-mandatory.md)
+##### [Plan för täckning av webbplats, ej obligatoriskt lagerställe](../supply-chain/master-planning/master-plan-site-coverage-warehouse-not-mandatory.md)
+##### [Plan för täckning av webbplats och lagerplats, obligatoriskt lagerställe](../supply-chain/master-planning/master-plan-site-warehouse-coverage-warehouse-mandatory.md)
+##### [Plan för täckning av webbplats och lagerplats, ej obligatoriskt lagerställe](../supply-chain/master-planning/master-plan-site-warehouse-coverage-warehouse-not-mandatory.md)
+##### [Avgör strukturlisteversion](../supply-chain/master-planning/master-plan-bom-version-determined.md)
+##### [Nedbrytning av strukturlisteversion](../supply-chain/master-planning/master-plan-explosion-bom-version.md)
+#### [Skapa en koncernintern plan (uppgiftsguide)](../supply-chain/master-planning/tasks/create-intercompany-plan.md)
+#### [Visa utgående planerad koncernintern efterfrågan (uppgiftsguide)](../supply-chain/master-planning/tasks/view-outbound-planned-intercompany-demand.md)
+#### [Samarbeta med interna kunder i leveranskedjan (uppgiftsguide)](../supply-chain/master-planning/tasks/collaborate-internal-supply-chain-customers.md)
 ### [Efterfrågeprognosticering](../supply-chain/master-planning/introduction-demand-forecasting.md)
 #### [Ställ in en efterfrågeprognos](../supply-chain/master-planning/demand-forecasting-setup.md)
 #### [Importera historiska data för efterfrågeprognoser](../supply-chain/master-planning/import-historical-data.md)
@@ -1359,29 +1389,6 @@
 #### [Reduceringsnycklar](../supply-chain/master-planning/reduction-keys.md)
 #### [Skapa en baslinjeprognos (uppgiftsguide)](../supply-chain/master-planning/tasks/create-baseline-forecast.md)
 #### [Ändra en efterfrågeprognos manuellt (uppgiftsguide)](../supply-chain/master-planning/tasks/modify-demand-forecast-manually.md)
-
-### [Huvudplan](../supply-chain/master-planning/master-plans.md)
-#### [Disponeringsinställningar](../supply-chain/master-planning/coverage-settings.md)
-#### [Underhåll planerade order](../supply-chain/master-planning/maintain-planned-orders.md)
-#### [Fördröjningar](../supply-chain/master-planning/delays.md)
-#### [Åtgärdsmeddelanden](../supply-chain/master-planning/action-messages.md)
-#### [Spåra en nedbrytning](../supply-chain/master-planning/trace-explosion.md)
-#### [Huvudplaner och funktioner för flera webbplatser](../supply-chain/master-planning/master-plan-multisite-functionality.md)
-##### [Plan för täckning av webbplats, obligatoriskt lagerställe](../supply-chain/master-planning/master-plan-site-coverage-warehouse-mandatory.md)
-##### [Plan för täckning av webbplats, ej obligatoriskt lagerställe](../supply-chain/master-planning/master-plan-site-coverage-warehouse-not-mandatory.md)
-##### [Plan för täckning av webbplats och lagerplats, obligatoriskt lagerställe](../supply-chain/master-planning/master-plan-site-warehouse-coverage-warehouse-mandatory.md)
-##### [Plan för täckning av webbplats och lagerplats, ej obligatoriskt lagerställe](../supply-chain/master-planning/master-plan-site-warehouse-coverage-warehouse-not-mandatory.md)
-##### [Avgör strukturlisteversion](../supply-chain/master-planning/master-plan-bom-version-determined.md)
-##### [Nedbrytning av strukturlisteversion](../supply-chain/master-planning/master-plan-explosion-bom-version.md)
-#### [Övervaka en huvudplaneringskörning (uppgiftsguide)](../supply-chain/master-planning/tasks/monitor-master-planning-run.md)
-#### [Definiera disponeringsregler för artiklar (uppgiftsguide)](../supply-chain/master-planning/tasks/define-coverage-rules-items.md)
-#### [Skapa en plan för en plats (uppgiftsguide)](../supply-chain/master-planning/tasks/create-plan-site.md)
-#### [Skapa en tidsplan för en plats (uppgiftsguide)](../supply-chain/master-planning/tasks/create-schedule-site.md)
-#### [Generera en begränsad plan (uppgiftsguide)](../supply-chain/master-planning/tasks/constrained-plan.md)
-#### [Skapa en koncernintern plan (uppgiftsguide)](../supply-chain/master-planning/tasks/create-intercompany-plan.md)
-#### [Skapa en materialplan för samprodukter (uppgiftsguide)](../supply-chain/master-planning/tasks/create-material-plan-co-products.md)
-#### [Visa utgående planerad koncernintern efterfrågan (uppgiftsguide)](../supply-chain/master-planning/tasks/view-outbound-planned-intercompany-demand.md)
-#### [Samarbeta med interna kunder i leveranskedjan (uppgiftsguide)](../supply-chain/master-planning/tasks/collaborate-internal-supply-chain-customers.md)
 
 
 ## [Mobilapp](../dev-itpro/mobile-apps/Mobile-app-home-page.md)
@@ -1853,7 +1860,7 @@
 #### [Ställ in en arbetsmall för inköpsorder](../supply-chain/warehousing/tasks/set-up-work-template-purchase-orders.md)
 #### [Planera laster och utleveranser med workbench för lastplanering](../supply-chain/warehousing/tasks/use-load-planning-workbench-plan-loads-shipments.md)
 
-# [Utveckling och administration](../dev-itpro/toc.md)
+# [Utveckling och administration för Finance and Operations](../dev-itpro/toc.md)
 
 # [Dynamics 365 for Retail](../retail/toc.md)
 

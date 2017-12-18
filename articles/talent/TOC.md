@@ -2,6 +2,8 @@
 
 # [Komma igång](talent-get-started.md)
 ## [Systemkrav och uppdateringspolicy](talent-versions-update-policy.md)
+## [Reservera Microsoft Dynamics 365 for Talent](provisioning-talent.md)
+## [Utöka funktionaliteten i Talent](extend-talent-functionality.md)
 
 # [Utveckla en personalstrategi](departments-jobs-positions.md)
 ## [Ställ in jobbkomponenter](create-job.md)
