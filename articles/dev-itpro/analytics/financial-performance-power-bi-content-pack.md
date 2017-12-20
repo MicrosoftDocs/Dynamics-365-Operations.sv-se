@@ -3,7 +3,7 @@ title: "Innehållspaket för ekonomiska resultat för Power BI"
 description: "Det här avsnittet beskriver Power BI-innehåll för finansiellt resultat. Det beskriver instrumentpanelen och de rapporter som är inkluderade, samt ger dig information om den datamodell och de enheter som användes för att skapa innehållet."
 author: kweekley
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f111698315cd42c0c1c0d470b94688b548375bee
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: 3638f5acf6a05ec419dc4308e861d95f0d7b2cea
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -38,7 +38,7 @@ Du kan använda **ekonomiska resultat** Power BI från Microsoft Dynamics Lifecy
 ### <a name="available-from-lcs"></a>Tillgänglig från LCS
 Det Power BI-innehåll för **ekonomiska resultat** som är tillgängligt från LCS stödjer följande versioner:
 
-- Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (juli-uppdateringen 2017)
+- Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition-versionerna
 - Microsoft Dynamics 365 for Operations version 1611 
 
 Du hittar  Power BI-innehållet i det delade resursbiblioteket i LCS. Mer information om hur du laddar ned innehållspaket och använder det i din organisation finns i [Power BI-innehåll i LCS från Microsoft och dina partner](power-bi-content-microsoft-partners.md). Om du vill se en demonstration som visar hur du implementerar Power BI-innehållet, se [Power BI-innehåll från Microsoft och dina samarbetspartners i Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office mix.

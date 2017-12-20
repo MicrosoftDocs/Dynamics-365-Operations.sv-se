@@ -3,7 +3,7 @@ title: "Innehållspaket för försäljnings- och lönsamhetsprestanda för Power
 description: "Det här avsnittet beskriver vad som ingår i Microsoft Power BI-innehållet Försäljnings- och lönsamhetsresultat. Det förklarar hur du öppnar Power BI-rapporter och ger information datamodellen och de enheter som används för att skapa innehållet."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: omulvad
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 3692b9be0fb93e0e2de743775a54bb9c9dbf5809
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: c065eb2f19bbbd553e070f06c29f73114e3efad5
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -49,7 +49,7 @@ Lönsamhet kan analyseras på följande sätt:
 -   Kundlönsamhet (efter intäkt jämfört med bruttomarginal)
 
 ## <a name="accessing-the-power-bi-content"></a>Åtkomst till Power BI-innehåll
-Om du använder Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (juli-uppdateringen 2017) visas Power BI-innehållet **Försäljnings- och lönsamhetsresultat** på sidan **Försäljnings- och lönsamhetsresultat** (**Försäljning och marknadsföring** > **Förfrågningar och rapporter** > **Säljprestandaanalys** > **Försäljnings- och lönsamhetsresultat**). 
+Power BI-innehållet **Försäljnings- och lönsamhetsprestanda** visas på sidan **Försäljnings- och lönsamhetsprestanda** (**Försäljnings- och marknadsföring** > **Förfrågningar och rapporter** > **Analys av försäljningsprestanda** > **Försäljnings- och lönsamhetsprestanda**). 
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mått som ingår i Power BI-innehållet
 Power BI-innehållet **Försäljnings- och lönsamhetsresultat** omfattar en rapport som består av en uppsättning mått. De här måtten visas som diagram, paneler och tabeller. Nedanstående tabell ger en översikt över de visualiseringar som används i innehållet.

@@ -3,7 +3,7 @@ title: "Mobil arbetsyta för utgiftshantering"
 description: "Det här avsnittet innehåller information om mobil arbetsyta för Utläggshantering. Den här arbetsytan låter användarna hämta och skicka ett kvitto så att de kan bifogas till en utgiftsrapport senare. Användare kan snabbt skapa en utgiftsrad med en kopplad inleverans och skapa och hantera sina utgiftsrapporter."
 author: KimANelson
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: knelson
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4880c74047f53704f5f4d8efb19b6f8c6b04d479
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: bbbe37330e16a079b817dfe04f4a47f046263e88
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -46,7 +46,7 @@ Särskilt den mobila arbetsytan **Utgiftshantering** låter användarna utföra 
 - Överför en fil som ett insamlat kvitto. En användare kan sedan bifoga den filen i en utgiftsrapport senare.
 - Skapa en ny utgiftsrad med en kopplad inleverans. En användare kan sedan lägga till artikeln i en utgiftsrapport senare och skicka det för godkännande och återbetalning.
 
-Om du använder Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (juli-uppdateringen 2017), kan du även använda dessa funktioner:
+Om du använder Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition kan du även använda följande funktioner:
 
 - Skapa en ny utgiftsrapport.
 - Koppla kreditkortstransaktioner och andra tidigare skapade utgifter i en utgiftsrapport.
@@ -60,8 +60,8 @@ Om du använder Microsoft Dynamics 365 for Finance and Operations, Enterprise ed
 ## <a name="prerequisites"></a>Förutsättningar
 Kraven varierar baserat på versionen av Microsoft Dynamics 365 som har distribuerats i organisationen.
 
-### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017"></a>Förutsättningar om du använder Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (juli-uppdateringen 2017) 
-Om Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (juli-uppdateringen 2017) används inom din organisation, måste systemadministratören publicera den mobila arbetsytan **Utgiftshantering**. Instruktioner finns i [Publicera en mobil arbetsyta](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
+### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-finance-and-operations-enterprise-edition"></a>Förutsättningar om du använder Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 
+Om Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition används inom din organisation måste systemadministratören publicera den mobila arbetsytan **Utgiftshantering**. Instruktioner finns i [Publicera en mobil arbetsyta](../../dev-itpro/mobile-apps/publish-mobile-workspace.md).
 
 ### <a name="prerequisites-if-you-use-microsoft-dynamics-365-for-operations-version-1611-with-platform-update-3-or-later"></a>Krav om du använder Microsoft Dynamics 365 for Operations version 1611 med plattformsuppdatering 3 eller senare
 Om Microsoft Dynamics 365 for Operations version 1611 med plattformsuppdatering 3 eller senare har använts i organisationen måste systemadministratören uppfylla följande krav. 

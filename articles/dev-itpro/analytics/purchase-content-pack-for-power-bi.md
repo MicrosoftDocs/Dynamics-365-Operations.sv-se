@@ -3,7 +3,7 @@ title: "Analys av inköpsutgift – Power BI-innehåll"
 description: "Det här avsnittet beskriver vad som ingår i Power BI-innehållet Inköps- och utgiftsanalys. Det förklarar hur du kommer åt rapporterna som är inkluderade i innehållet, samt ger dig information om den datamodell och de enheter som användes för att skapa innehållet."
 author: FrankDahl
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: fdahl
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 6485f36802fc4e327e223f47d65c4bdca11c1609
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: f38f82b4275599a6b958c495f32b72778b400024
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -41,7 +41,7 @@ Power BI-innehållet **Inköps- och utgiftsanalys** har utvecklats för att ink�
 Innehållet använder inköpstransaktionsdata och ger både en sammanfattning av de företagsomspännande inköpsuppgifterna och en fördelning av inköpsutgifter efter leverantör och produkt. Rapporter visar ändringar i inköpsutgifter över tiden. Rapporterna kan därför användas för att uppmärksamma chefer på positiva och negativa utgiftstrender för enskilda leverantörer och produkter. Diagram visar dessutom inköpsutgifter för olika anskaffningskategorier och leverantörsgrupper. Kategorichefer och regionala chefer kan använda diagrammen för att identifiera ändringar i utgiftsbeteende.
 
 ## <a name="accessing-the-power-bi-content"></a>Åtkomst till Power BI-innehåll
-Om du använder Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (juli-uppdateringen 2017), visas Power BI-innehållet **Utgiftsanalys för inköp** på sidan **Inköps- och utgiftsanalys** (**Anskaffning och inköp** > **Förfrågningar och rapporter** > **Analys av inköpsprestanda** > **Inköps- och utgiftsanalys**). 
+Power BI-innehållet **Analys av inköpsutgift** visas på sidan **Analys av inköp och utgifter** (**Anskaffning och källa** > **Förfrågningar och rapporter** > **Analys av köpprestanda** > **Analys av inköp och utgifter**). 
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mått som ingår i Power BI-innehållet
 Power BI-innehållet **Inköps- och utgiftsanalys** innehåller en rapport som består av en uppsättning mått. De här måtten visas som diagram, paneler och tabeller. Nedanstående tabell ger en översikt över visualiseringarna.

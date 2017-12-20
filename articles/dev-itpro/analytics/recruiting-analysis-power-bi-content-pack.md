@@ -3,7 +3,7 @@ title: "Power BI-innehåll för rekrytering"
 description: "Det här avsnittet beskriver Power BI-innehållet Rekrytering. Det förklarar hur du öppnar rapporter, och ger information om den datamodell och de enheter som användes för att skapa innehållet."
 author: jcart1106
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 42d7b94e655799596f478e7592a17437b336099e
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: 22138ab34243aa5f8c74f785ce3aaf68b27b9622
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 11/03/2017
 Det här avsnittet beskriver Microsoft Power BI-innehållet **Rekrytering**. Det förklarar hur du öppnar Power BI-rapporter, och ger information om den datamodell och de enheter som användes för att skapa innehållet.
 
 ## <a name="accessing-the-power-bi-content"></a>Åtkomst till Power BI-innehåll
-Om du använder Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (juli-uppdateringen 2017) visas Power BI-innehållet **Rekrytering** i arbetsytan **Rekryteringshantering**. 
+Power BI-innehållet **Rekrytering** visas i arbetsytan **Rekryteringshantering**. 
 
 ## <a name="reports-and-visuals-in-the-recruitment-management-workspace"></a>Rapporter och modeller i arbetsytan Rekryteringshantering
 Arbetsytan **Rekryteringshantering** innehåller fliken **Analys**. Denna flik innehåller det inbäddade Power BI-innehållet för rekrytering. Innehållet består av en översiktsflik och ytterligare flikar som innehåller information. Följande register beskriver rapporterna på varje flik.

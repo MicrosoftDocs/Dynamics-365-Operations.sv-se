@@ -3,7 +3,7 @@ title: "Utveckling av medarbetare Power BI-innehåll"
 description: "Det här avsnittet beskriver Power BI-innehåll för medarbetarutveckling. Det förklarar hur du öppnar rapporter, och ger information om den datamodell och de enheter som användes för att skapa innehållet."
 author: jcart1106
 manager: AnnBe
-ms.date: 05/24/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: c6a1125d56239f4370d6219a93988d50d402045e
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: f8ba7a968a1a5b376bac52106671607247f061d9
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -31,7 +31,7 @@ Det här avsnittet beskriver Power BI-innehåll för **medarbetarutveckling**. D
 
 ## <a name="accessing-the-power-bi-content"></a>Åtkomst till Power BI-innehåll
 
-Om du använder Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (juli-uppdateringen 2017) hittar du innehållspaketet **Personalutveckling** i biblioteket för delade tillgångar i Microsoft Dynamics Lifecycle Services (LCS). Mer information om hur du laddar ned innehållspaket och ansluter det till dina data finns i [Power BI-innehåll i LCS från Microsoft och dina partner](power-bi-content-microsoft-partners.md).
+Du hittar innehållspaketet **Medarbetarutveckling** i biblioteket för gemensamma tillgångar i Microsoft Dynamics Lifecycle Services (LCS). Mer information om hur du laddar ned innehållspaket och ansluter det till dina data finns i [Power BI-innehåll i LCS från Microsoft och dina partner](power-bi-content-microsoft-partners.md).
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Rapporter som ingår i Power BI-innehållet
 Rapporter som ingår i Power BI-innehållspaketet **Medarbetarutveckling** har både diagram och tabeller med ytterligare information. Följande register beskriver rapporterna.

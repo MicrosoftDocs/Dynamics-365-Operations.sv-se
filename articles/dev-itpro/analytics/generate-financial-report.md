@@ -1,16 +1,16 @@
 ---
 title: Generera ekonomisk rapport
 description: "Det här avsnittet innehåller allmän information om att skapa en ekonomisk rapport."
-author: ShylaThompson
+author: aprilolson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
 ms.custom: 68843
 ms.assetid: 271df6f4-12b7-4b3e-b2d7-36ea98ef1871
@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 64f0a9a44b97a9980f8d1b76ff158f1ac9cbc114
-ms.openlocfilehash: 2986d218318951b7e46cb5dfafcbd17f2d513755
+ms.sourcegitcommit: 81c09c551dfa4238782c3796f5d08990b30ca575
+ms.openlocfilehash: 95669d83fdf69a6d55dd7ee1e4e33a67108e0371
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -40,12 +40,28 @@ Det här avsnittet innehåller allmän information om att skapa en ekonomisk rap
 
 I följande tabell beskrivs de alternativ som är tillgängliga när du skapar rapporter.
 
-| Alternativ                                                                                | Mer information |
-|---------------------------------------------------------------------------------------|----------------------|
-| Ställa in ett schema för att generera en rapport eller en grupp av rapporter automatiskt              |                      |
-| Kontrollera om det saknas konton eller data i en rapport och validera riktigheten i en rapport |                      |
+| Alternativ                                                                                | 
+|---------------------------------------------------------------------------------------|
+| Ställa in ett schema för att generera en rapport eller en grupp av rapporter automatiskt              |   
+| Kontrollera om det saknas konton eller data i en rapport och validera riktigheten i en rapport |   
 
 När du skapar en rapport används de alternativ du har angett på fliken Rapportdefinition. På fliken Fördelning och distribution kan du ange en plats för rapportbiblioteket. Detta är en enkel metod för att dela rapporten.
+
+## <a name="generate-a-financial-report"></a>Generera ekonomisk rapport
+
+Om du vill skapa en ekonomisk rapport med Microsoft Dynamics 365 for Finance and Operations, gå till **Redovisning** > **Förfrågningar och rapporter** > **Ekonomirapporter**. 
+ - Välj en rapport att generera och klicka på **Generera**. 
+ - Fyll i fältet **Rapportdatum** och klicka på **OK**.
+ 
+ När rapporten har skapats blir den tillgänglig i avsnittet **Rapporter**.
+ Du kan välja att **Visa** eller **Ta bort** rapporten.
+ 
+ 
+Öppna rapportdefinitionen och klicka sedan på knappen Generera i verktygsfältet om du vill generera en rapport med **Report designer**. Fönstret Rapportköstatus öppnas och visar platsen för rapporten i kön. Som standard öppnas rapporten i Web Viewer.
+
+> [!NOTE]
+> Du kan bara generera rapporter till mappar och platser som du har åtkomstbehörighet för.
+
 
 ## <a name="schedule-report-generation"></a>Schemalägga rapporter
 Många företag har en serie grundläggande rapporter som körs regelbundet vid schemalagda tidpunkter som en del av affärsprocesserna. Du kan schemalägga en rapport som ska genereras en gång om dagen, en gång i veckan eller månaden eller årligen. Det kan vara en enstaka rapport eller en grupp rapporter som inbegriper flera företag. Du måste ange dina autentiseringsuppgifter för vart och ett av företagen du anger, t.ex. sådana i en rapportträdsdefinition. Om autentiseringsuppgifterna är ogiltiga visas endast den information du har behörighet att komma åt i rapporterna, t.ex. det aktuella företag du är inloggad i för tillfället. Utdatainformationen läses först från rapportgruppen och sedan från de enskilda rapporterna.

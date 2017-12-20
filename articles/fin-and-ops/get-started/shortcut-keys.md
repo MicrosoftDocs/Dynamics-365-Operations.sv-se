@@ -3,7 +3,7 @@ title: Kortkommandon
 description: "Följande kortkommandon gäller i hela Microsoft Dynamics 365 for Finance and Operations, Enterprise edition."
 author: jasongre
 manager: AnnBe
-ms.date: 09/12/2017
+ms.date: 10/10/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 39ffbe81c0cc9ecb3f91f791442bfd27231a0516
+ms.sourcegitcommit: 7a828090fa34eb96d2b557eb06e48ad05b421ae8
+ms.openlocfilehash: 8e87721af34e1527d1d8eb254f0443e37d137730
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 11/20/2017
 
 ---
 
@@ -33,6 +33,10 @@ ms.lasthandoff: 11/03/2017
 Följande kortkommandon gäller i hela Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
 
 **Obs!** Tangentbordsgenvägarna som beskrivs här hänvisar till en amerikansk tangentbordslayout. Knappar på andra tangentbordslayouter kan kanske inte exakt motsvarar tangenterna på ett tangentbord i USA.
+
+## <a name="finding-a-shorcut"></a>Söka efter en genväg
+I och med plattformsuppdatering 11 kan användarna kan upptäcka tillgängliga genvägar direkt via användargränssnittet. Högerklicka på en kontroll och välj **Visa genvägar**. Då öppnas en dialogruta som visar de kortkommandon som du kan använda baserat på var du befinner dig på sidan. 
+
 
 ## <a name="action-shortcuts"></a>Åtgärdgenvägar
 |                                                   |                                  |
@@ -47,14 +51,15 @@ Följande kortkommandon gäller i hela Microsoft Dynamics 365 for Finance and Op
 | Öppna kontextmenyn i Finance and Operations      | Ctrl+F10                         |
 | Kör standardknappen i ett formulär/en dialogruta   | Alt+Retur                        |
 | Klicka på en knapp eller en panel                            | Retur eller Blanksteg                   |
-| Visa uppdatering av information för en beräkningspanel         | Alt+uppåtpil                     |
+| Visa uppdatering av information för en beräkningspanel         | Alt + uppåtpil                     |
+| Visa aktuella tillgängliga genvägar                | Alt+Shift+K                      |                              
 
 ## <a name="date-picker-shortcuts"></a>Genvägar för datumväljare
 |                                       |                                           |
 |---------------------------------------|-------------------------------------------|
 | **Om du vill göra detta**                        | **Tryck**                                 |
-| Öppna datumväljaren                  | Alt+nedåtpil                            |
-| Flytta mellan datumen i datumväljaren | Ctrl+piltangenter                               |
+| Öppna datumväljaren                  | Alt + nedåtpil                            |
+| Flytta mellan datumen i datumväljaren | Ctrl+piltangenter                           |
 | Flytta till nästa/föregående månad       | Page Down / Page Up                       |
 | Flytta till nästa/föregående år        | Ctrl+Shift+Page Down/Ctrl+Shift+Page Up |
 | Flytta till idag                         | Ctrl+start                                 |
@@ -65,6 +70,7 @@ Följande kortkommandon gäller i hela Microsoft Dynamics 365 for Finance and Op
 ## <a name="factbox-shortcuts"></a>Genvägar för faktaboxen
 |                                                                                 |                                           |
 |---------------------------------------------------------------------------------|-------------------------------------------|
+| **Om du vill göra detta**                                                                  | **Tryck**                                 |
 | Öppna faktaboxfönstret (eller flytta fokus till faktaboxfönstre om det redan är öppet,) | Alt+M,B eller Ctrl+F2                        |
 | Stäng faktaboxfönstret (med fokus i faktaboxfönstret)                         | Esc                                       |
 | Flytta till nästa/tidigare faktabox (med fokus i faktaboxfönstret)              | Alt+Shift+nedåtpil / Alt+Shift+Uppåtpil |

@@ -1,6 +1,6 @@
 ---
 title: "Synkronisering av försäljningsorder direkt mellan Sales och Finance and Operations"
-description: "Det här avsnittet beskriver vilka mallar och underliggande uppgifter som används för att köra tvåvägssynkronisering av huvuden och rader i försäljningsorder direkt mellan Microsoft Dynamics 365 for Sales och Microsoft Dynamics 365 for Finance and Operations, Enterprise edition."
+description: "Det här avsnittet beskriver vilka mallar och underliggande uppgifter som används för att direktsynkronisera försäljningsorder mellan Microsoft Dynamics 365 for Sales och Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition."
 author: ChristianRytt
 manager: AnnBe
 ms.date: 10/31/2017
@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.intro: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: 568c33a63efdc58a179dadcb617634dcf533fd4b
-ms.openlocfilehash: c31d65328250539fbe172f220272eec9d8b59bbf
+ms.sourcegitcommit: 7a828090fa34eb96d2b557eb06e48ad05b421ae8
+ms.openlocfilehash: 9aa8c78f5aea5a818d517c2baa9051750b132fc6
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/13/2017
+ms.lasthandoff: 11/20/2017
 
 ---
 
@@ -31,13 +31,13 @@ ms.lasthandoff: 11/13/2017
 
 [!include[banner](../includes/banner.md)]
 
-Det här avsnittet beskriver vilka mallar och underliggande uppgifter som används för att köra tvåvägssynkronisering av huvuden och rader i försäljningsorder direkt mellan Microsoft Dynamics 365 for Sales och Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+Det här avsnittet beskriver vilka mallar och underliggande uppgifter som används för att direktsynkronisera försäljningsorder mellan Microsoft Dynamics 365 for Sales och Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition.
 
 ## <a name="templates-and-tasks"></a>Mallar och uppgifter
 
 För att gå till tillgängliga mallar, öppna [PowerApps administratörscenter](https://preview.admin.powerapps.com/dataintegration). Välj **projekt** och i det övre högra hörnet väljer du **nytt projekt** för att välja allmänna mallar.
 
-Följande mallar och underliggande uppgifter används för att köra tvåvägssynkronisering av huvuden och rader i försäljningsorder direkt från Sales till Finance and Operations:
+Följande mallar och underliggande uppgifter används för att direktsynkronisera försäljningsorder mellan Sales och Finance and Operations:
 
 - **Namn på mallar i dataintegrering:** 
 

@@ -18,10 +18,10 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: ef58898a6822224e44873afdd7c55800215c37a0
+ms.sourcegitcommit: ff0d19a2d712ccb17762803e2fe4ab2ed5aa024e
+ms.openlocfilehash: bd5f055ef816f050ed99390c455a613d46dd6323
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/06/2017
 
 ---
 
@@ -74,7 +74,7 @@ I **direktutleveranspolicy** definierar du vilka dokumenttyper som är tillämpl
 ### <a name="cross-docking-policy-name-transfer-order"></a>Direktleveranspolicynamn: överföringsorder
 
 -   Löpnummer: 10
--   Typ av arbetsorder: Överför leverans
+ -   Typ av arbetsorder: Överför leverans
 -   Direktleverans kräver plats : Falskt
 -   Direktutleveransstrategi: datum och tid
 
@@ -102,10 +102,9 @@ När en produkt som har rapporterats som avslutat på produktionsraden överför
 6.  Skapa en internprisorder. Skapa överföringsordern för artikel nummer L0101. Kvantitet = 20
 7.  Frisläpp överföringsorder från workbench för lastplanering. På fliken **transport** väljer du menyalternativet för workbench för lastplanering och på menyn för lastraden **frisläpp** , väljer **frisläpp till lagerställe**. En öppen påfyllnadsrad av typen **överför problem** finns nu för överföringsordern.
 8.  Skapa en produktionsorder. Gå till listsidan **tillverkningsorder** och skapa en produktionsorder för produkten L0101. Kvantitet = 20 Uppskatta och starta produktionsordern. Observera att fältet **Bokför plocklista nu** är inställt på **Nej**.
-9.  Rapportera som färdigt från den mobila enheten. Gå till portalen för den mobila enheten och välj menyalternativet **Rapportera som färdig och inlagrad**. Rapportera nu som färdig L0101 från den handhållna enheten. Observera att platsen är **BAYDOOR**. Den här platsen finns på platsdirektivet **Överför leverans** för arbetsordertypen **placera**. Lägg också märke till att arbete av typen **överför leverans** har skapats och slutförts. Gå till överföringsorderdetaljerna för att kontrollera arbetet.
-10. Försök att starta 20 stycken fler på tillverkningsordern och försök sedan att rapportera 20 ea som färdig genom att använda handenheter. Denna tid, plats **LP-001** föreslås som platsen. Denna plats hittas i platsdirektivet för **Plats för slutförda varor**. Detta platsdirektiv används, eftersom det inte finns någon möjlighet för direktutleverans. Överföringsorder för LP-001 uppfylldes helt efter den första aktiviteten för direktutleverans.
-
-Arbete av typen **Plats för slutförda varor** har skapats och bearbetats.
+9.  Rapportera som färdigt från den mobila enheten. Gå till portalen för den mobila enheten och välj menyalternativet **Rapportera som färdig och inlagrad**. Rapportera nu som färdig L0101 från den handhållna enheten. Kvantitet = 10 Observera att platsen är **BAYDOOR**. Den här platsen finns på platsdirektivet **Överför leverans** för arbetsordertypen **placera**. Lägg också märke till att arbete av typen **överför leverans** har skapats och slutförts. Gå till överföringsorderdetaljerna för att kontrollera arbetet.
+10. Nu kan du rapportera ytterligare 10 enheter från den mobila enheten. Observera att platsen återigen är **BAYDOOR**. Notera också att en ny arbetstyp kallad **Överför leverans** har skapats för de 10 enheterna.
+11. Försök att starta 20 stycken fler på tillverkningsordern och försök sedan att rapportera 20 ea som färdig genom att använda handenheter. Denna tid, plats **LP-001** föreslås som platsen. Denna plats hittas i platsdirektivet för **Plats för slutförda varor**. Detta platsdirektiv används, eftersom det inte finns någon möjlighet för direktutleverans. Överföringsordern för LP-001 uppfylldes helt efter de två aktiviteterna för direktutleverans i steg 9 och 10. Notera att arbete av typen **Plats för färdiga varor** har skapats och bearbetats.
 
 #### <a name="scenario-2---cross-docking-from-production-to-transfer-orders-with-an-appointment-schedule"></a>Scenario 2: direktutleverans från produktion till överföringsorder med ett mötesschema
 
@@ -123,7 +122,7 @@ När en produkt har rapporterats som avslutad på produktionsraden överförs de
 
 ### <a name="additional-information"></a>Ytterligare information
 
--   Direktutleverans scenario stöds för batch- och seriekontrollerade element, både för batch- och serienummerdimensioner definierade ovan och under platsen i reservationshierarkin.
+-   Direktutleverans scenario stöds för batch- och seriekontrollerade element, både för batch- och serienummerdimensioner definierade ovan och under platsen i reservationshierarkin. 
 
 
 
