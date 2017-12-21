@@ -57,8 +57,9 @@ Om du vill generera en momsrapport måste du konfigurera följande:
 
 ### <a name="sales-tax-authorities-for-vat-reporting"></a>Momsmyndigheter för momsrapportering
 
-<!---For general information about setting up a sales tax authority, see [Set up sales tax authorities](general-ledger/tasks/set-up-sales-tax-authorities). -->
 Innan du kan ställa in momsrapporteringskoder måste du välja rätt rapportlayout för momsmyndigheten. På sidan **Momsmyndigheter**, i avsnittet **Allmänt**, väljer du en **Rapportlayout**. Den här layouten används när du ställer in momsrapporteringskoder.
+
+<!---For general information about setting up a sales tax authority, see [Set up sales tax authorities](../general-ledger/tasks/set-up-sales-tax-authorities.md). -->
 
 ### <a name="sales-tax-reporting-codes"></a>Momsrapporteringskoder
 
