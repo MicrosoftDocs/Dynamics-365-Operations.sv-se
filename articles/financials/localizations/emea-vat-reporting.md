@@ -18,10 +18,10 @@ ms.author: v-elgolu
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: dd66ced17dbb63280a30ea9154e5176321da94ee
+ms.sourcegitcommit: 7ce3c0397986ba2281aae7b71d579f3fe5f488ae
+ms.openlocfilehash: 415e23190c6d7d12e824a42dec3916a4c3f5bc92
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/21/2017
 
 ---
 
@@ -57,8 +57,9 @@ ms.lasthandoff: 11/03/2017
 
 ### <a name="sales-tax-authorities-for-vat-reporting"></a><span data-ttu-id="6b87d-135">Momsmyndigheter för momsrapportering</span><span class="sxs-lookup"><span data-stu-id="6b87d-135">Sales tax authorities for VAT reporting</span></span>
 
-<!---For general information about setting up a sales tax authority, see [Set up sales tax authorities](general-ledger/tasks/set-up-sales-tax-authorities). -->
 <span data-ttu-id="6b87d-136">Innan du kan ställa in momsrapporteringskoder måste du välja rätt rapportlayout för momsmyndigheten.</span><span class="sxs-lookup"><span data-stu-id="6b87d-136">Before you can set up sales tax reporting codes, you must select the correct report layout for the sales tax authority.</span></span> <span data-ttu-id="6b87d-137">På sidan **Momsmyndigheter**, i avsnittet **Allmänt**, väljer du en **Rapportlayout**.</span><span class="sxs-lookup"><span data-stu-id="6b87d-137">On the **Sales tax authorities** page, in the **General** section, select a **Report layout**.</span></span> <span data-ttu-id="6b87d-138">Den här layouten används när du ställer in momsrapporteringskoder.</span><span class="sxs-lookup"><span data-stu-id="6b87d-138">This layout will be used when you set up sales tax reporting codes.</span></span>
+
+<!---For general information about setting up a sales tax authority, see [Set up sales tax authorities](../general-ledger/tasks/set-up-sales-tax-authorities.md). -->
 
 ### <a name="sales-tax-reporting-codes"></a><span data-ttu-id="6b87d-139">Momsrapporteringskoder</span><span class="sxs-lookup"><span data-stu-id="6b87d-139">Sales tax reporting codes</span></span>
 
