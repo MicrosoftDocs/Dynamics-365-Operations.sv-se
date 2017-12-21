@@ -3,7 +3,7 @@ title: "Power BI-innehåll för översikt över ekonomichef"
 description: "Det här avsnittet beskriver Microsoft Power BI-innehåll för översikt över ekonomichef"
 author: kweekley
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: kweekley
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: e08277850d36804e3d4508b87547d2c819e2faf3
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: fcc93daf96f65cd340d6be766c6ef83a74d62cc5
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -32,7 +32,7 @@ Det här avsnittet beskriver **Översikt över ekonomichef** för Microsoft Powe
 
 ## <a name="accessing-the-power-bi-content"></a>Åtkomst till Power BI-innehåll
 
-Om du använder Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (juli-uppdateringen 2017) visas rapporter från Power BI-innehållet **Ekonomichefsöversikt** i arbetsytan **Ekonomichefsöversikt**.
+Rapporter från Power BI-innehållet **Ekonomichefsöversikt** visas i den arbetsytan **Ekonomichefsöversikt**.
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Rapporter som ingår i Power BI-innehållet
 Power BI-innehåll för **Ekonomichef översikt** är sammansatt av rapporter utifrån annat Power BI-innehåll, tillsammans med vissa budgeterade och faktiska saldon från redovisningen. Därför ger detta Power BI -innehåll ekonomichefen (Ekonomichef) en översikt över organisationen.

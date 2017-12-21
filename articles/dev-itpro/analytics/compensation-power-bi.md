@@ -3,7 +3,7 @@ title: "Power BI-innehållspaket för kompensationer"
 description: "Det här avsnittet beskriver Power BI-innehåll för kompensationer. Det förklarar hur du öppnar rapporter, och ger information om den datamodell och de enheter som användes för att skapa innehållet."
 author: jcart1106
 manager: AnnBe
-ms.date: 05/24/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f97b1323e739196ae58369a3d66de6a65df94f83
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: 7143a2750d284080609c884ce15bc2b2e8943394
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -32,7 +32,7 @@ Det här avsnittet beskriver Microsoft Power BI-innehåll för **Kompensation**.
 ## <a name="accessing-the-power-bi-content"></a>Åtkomst till Power BI-innehåll
 Power BI-innehåll för **kompensation** visas i arbetsytan **kompensationshantering** om du använder någon av följande produkter:
 
-- Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (juli-uppdateringen 2017)
+- Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition
 - Microsoft Dynamics 365 for Talent
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Rapporter som ingår i Power BI-innehållet

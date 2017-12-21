@@ -3,7 +3,7 @@ title: "Power BI-innehåll"
 description: "Det här avsnittet beskriver Power BI-innehåll som är tillgängligt och hänvisar till resurser där du kan lära dig mer om det."
 author: sericks007
 manager: AnnBe
-ms.date: 08/07/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: ffae237693ebf0b0feedf7c60230590d95eed3d4
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: ae19b4afa9e36800988b790398e46d8861ba432d
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -31,8 +31,8 @@ ms.lasthandoff: 11/03/2017
 
 Det här avsnittet beskriver Microsoft Power BI-innehåll som är tillgängligt och hänvisar till resurser där du kan lära dig mer om det.
 
-## <a name="power-bi-content-for-dynamics-365-for-finance-and-operations-enterprise-edition-july-2017"></a>Power BI-innehåll för Dynamics 365 for Finance and Operations, Enterprise edition (juli-uppdateringen 2017)
-Om du använder Microsoft Dynamics 365 for Operations, Enterprise edition (juli-uppdateringen 2017) finns följande Power BI-innehåll:
+## <a name="power-bi-content-for-dynamics-365-for-finance-and-operations-enterprise-edition"></a>Power BI-innehåll för Dynamics 365 for Finance and Operations, Enterprise Edition
+Om du använder Microsoft Dynamics 365 for Finance and Operations, Enterprise edition finns följande Power BI-innehåll:
 
 - [Faktiskt kontra Power BI-innehåll för budget](ledger-budgets-power-bi.md)
 - [Power BI-innehåll med förmåner](benefits-power-bi.md)

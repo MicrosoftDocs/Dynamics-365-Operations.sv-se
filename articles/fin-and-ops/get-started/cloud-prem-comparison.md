@@ -3,7 +3,7 @@ title: "Jämförelse mellan molnet och lokala funktioner"
 description: "Detta avsnitt anger vilka funktioner stöds i molnet och på plats."
 author: robinarh
 manager: AnnBe
-ms.date: 07/13/2017
+ms.date: 11/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -15,13 +15,13 @@ ms.custom: 89563
 ms.assetid: 
 ms.search.region: Global
 ms.author: robinr
-ms.search.validFrom: 2017-07-13
+ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
 ms.translationtype: HT
-ms.sourcegitcommit: 9ee81bbdd22fed4ef6ea97080fe1f6b3d82bcaf5
-ms.openlocfilehash: efe06929db414475f6457dfe49ff1791a3d609d5
+ms.sourcegitcommit: cfd3b475b113fdab4ceeb3e636fea6c9134ab982
+ms.openlocfilehash: 32cc0c01a096cd678c605f57e0cccfe42d0479aa
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -59,6 +59,9 @@ Följande tabell anger produktområdena. Lokalt stöd och molnstöd anges för f
 | | Integrering med PowerBI.com| Ja | Nr |
 | | Analytiska arbetsytor | Ja | Nr |
 | | Intelligent affärsprocess: Rekommendationer| Ja | Nr |
+| | Skapa Power BI-rapporter med OData med hjälp av stationära Power BI- eller Excel PowerQuery-verktyg | Ja | Nr |
+| | SQL Server Reporting Services (SSRS) har stöd för skalning  | Ja | Nr |
+| | Telemetri överförs till molnet | Ja | Nr |
 | Lagerhantering| | Ja | Ja |
 | Livscykeltjänster| | Ja | Ja |
 | | Konfigurerbara affärsprocesser | Ja | Nr |
@@ -86,7 +89,7 @@ Följande tabell anger produktområdena. Lokalt stöd och molnstöd anges för f
 | Transporthantering| | Ja | Ja |
 | Leverantörssamarbete| | Ja | Ja|
 | Lagerstyrning| | Ja | Ja |
-| | Lagerapp för mobil| Ja | Nr |
+| | Lagerapp för mobil| Ja | Ja |
 | | Power BI-lagerrapporter| Ja | Nr |
 | Webbklient | | Ja | Ja |
 | | Uppgiftsregistrerare - Spara eller ladda uppgiftsregistreringar från BPM-biblioteket| Ja | Nr |
@@ -103,6 +106,7 @@ Följande tabell anger produktområdena. Lokalt stöd och molnstöd anges för f
 | Plattformskompatibilitet  || Ja | Ja |
 | Behandling | | Ja | Ja |
 | | Servicemiljöer | Ja | Nr |
+| Trace Parser och PerfTimer | | Ja | Nr |
 | Uppgradera | | Ja | Ja |
 | | Uppgradera | Ja | Nr |
 | | Uppgradering och stöd för tidigare versioner | Ja | Nr |
@@ -121,6 +125,8 @@ Följande tabell anger produktområdena. Lokalt stöd och molnstöd anges för f
 |---|---|---|---|
 | Alla Talent-områden | Alla Talent-funktioner | Ja | Nr |
 
+## <a name="see-also"></a>Se även
 
+- [Funktioner som inte implementerats i lokala distributioner](features-not-implemented-on-prem.md)
 
 

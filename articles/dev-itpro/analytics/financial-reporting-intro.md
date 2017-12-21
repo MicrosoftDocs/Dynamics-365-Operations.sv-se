@@ -1,15 +1,15 @@
 ---
 title: "Ekonomisk rapportering för Finance and Operations"
 description: "Ekonomisk rapportering för Finance and Operations kan användas av finans- och affärsmän för att skapa, underhålla, distribuera och visa bokslut. Den går utanför traditionella rapporteringsbegränsningar för att hjälpa dig att skapa olika typer av rapporter på ett effektivt sätt."
-author: ShylaThompson
+author: aprilolson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User
-ms.reviewer: shylaw
+ms.reviewer: twheeloc
 ms.search.scope: Operations
 ms.custom: 68813
 ms.assetid: fe8b27e7-a40a-4689-ac6a-7f7401c387f5
@@ -18,10 +18,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d1e1ec9fff9f1a41fd8a219c9fbbf8a26ad3d7b6
+ms.sourcegitcommit: 81c09c551dfa4238782c3796f5d08990b30ca575
+ms.openlocfilehash: b23883c1f66cda8a719db64a2f50e00605f6bfe9
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -33,6 +33,17 @@ ms.lasthandoff: 11/03/2017
 Ekonomisk rapportering för Finance and Operations kan användas av finans- och affärsmän för att skapa, underhålla, distribuera och visa bokslut. Den går utanför traditionella rapporteringsbegränsningar för att hjälpa dig att skapa olika typer av rapporter på ett effektivt sätt.
 
 Ekonomisk rapportering innehåller stöd för dimension. Därför är kontosegment eller dimensioner tillgängliga direkt. Det krävs inga ytterligare verktyg eller konfigurationssteg.
+
+## <a name="financial-reporting-setup"></a>Inställning av ekonomisk rapportering
+Sidan **Inställningar för Financial reporting** innehåller en lista över alla ekonomiska dimensioner i systemet. **Redovisning** > **Redovisningsinställningar** > **Inställningar för Financial reporting**. 
+
+Sidan **Inställningar för Financial reporting** har två avsnitt som avgör vilka data du rapportera om i Financial reporting:
+
+•   **Fliken Dimensioner** - Eftersom olika företag använder olika dimensioner och kontostrukturer går det inte att bestämma i vilken ordning användarna vill visa alla ekonomiska dimensioner i rapporter. Den här sidan låter dig ange i vilken ordning du vill att ekonomiska dimensioner ska visas när du skapar och visar en rapport i Financial reporting.
+
+•   **Fliken Attribut** låter dig välja om du vill kunna använda **Leverantörer** och **Kunder** som attribut för filtrering och rapportutformning. Rapportering om leverantörer och kunder är bara av vikt om du inte anger flera olika leverantörer eller kunder i en enda verifikation vid bokföring av transaktioner. Val av leveranörer och/eller kunder tillför ytterligare tid till integrationen.
+
+
 
 ## <a name="financial-reporting-components"></a>Komponenter för ekonomisk rapportering
 Följande komponenter för ekonomisk rapportering gör det lättare att skapa, visa och tidsplanera rapporter.

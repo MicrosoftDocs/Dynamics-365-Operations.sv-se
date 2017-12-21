@@ -3,7 +3,7 @@ title: "Power BI innehållspaket för kredit- och inkassohantering"
 description: "Det här avsnittet beskriver vad som ingår i Power BI-innehållet för kredit- och inkassohantering. Det förklarar hur du öppnar Power BI-rapporter och ger information datamodellen och de enheter som används för att skapa innehållet."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 08/22/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 5f08df6cb8549e87e123b10c5a771ae1c60ff39c
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: 536ebae3ec44954aba314a966c9b0d2dabef45d1
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -41,7 +41,7 @@ Alla belopp i visas i systemvalutan. Du kan ange systemvalutan på sidan **Syste
 Som standard visas kredit- och inkassodata för det aktuella företaget. Om du vill visa data för alla företag, tilldelar du programbehörigheten **CustCollectionsBICrossCompany** till rollen.
 
 ## <a name="accessing-the-power-bi-content"></a>Åtkomst till Power BI-innehåll
-Om du använder Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (juli-uppdateringen 2017) visas Power BI-innehållet **Kredit- och inkasseringshantering** i arbetsytan **Kundkredit och -inkassering**.
+Power BI-innehållet **Kredit- och inkassohantering** visas i arbetsytan **Kundkredit och kundinkasso**.
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Rapporter som ingår i Power BI-innehållet
 

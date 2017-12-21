@@ -3,7 +3,7 @@ title: "Power BI-innehåll för lagerställets prestanda"
 description: "Det här avsnittet beskriver vad som ingår i Power BI-innehållet för lagerställets prestanda. Det förklarar hur du öppnar Power BI-rapporter och ger information datamodellen och de enheter som används för att skapa innehållet."
 author: Mirzaab
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: mirzaab
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d30a14e78e35c94b9f8945d2fcc973f921698953
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: ea53e2bcd01cd06ccdd836ead1671b54aa9e9750
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -42,7 +42,7 @@ Lagerställechefer kan använda Power BI-innehåll för **lagerställets prestan
 -   **Platslagerprecision** – lagerprecision är en viktigt intern Business Intelligence för lagerställe (BI). Det är mycket viktigt att du avgör hur exakt du i allmänhet räknar. Det är dock också viktigt att fastställa hur exakt du artiklarna lagras på rätt plats och att markera avvikelsedata så att du kan hitta bättre befattningar för artiklar eller initiera totala positioner om ett visst objekt. (För närvarande levereras nya artikelbaserade cykliska funktioner som en snabbkorrigering). Om du använder Power BI-innehållet för att avgöra korrekt lagerbehållningsdata per lagerställe kan du även identifiera stöld i dina butiker. Du kan bestämma om några platser har lagerbehållningskvantiteter som avviker från företagets resursplaneringsdata (ERP). Dessa platser kan vara för stora eller omöjligt att räkna. Alternativt kan bland annat fysisk placering vara dålig, så att det är svårt att synkronisera en enstaka objekttyp med behållningsdata.
 
 ## <a name="accessing-the-power-bi-content-pack"></a>Åtkomst till Power BI-innehållspaket
-Om du använder Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (juli-uppdateringen 2017) visas Power BI-innehållet **Lagerställeprestanda** på sidan **Lagerställeprestanda** (**Lagerstyrning** > **Förfrågningar och rapporter** > **Lagerprestandaanalyser** > **Lagerställeprestanda**). 
+Power BI-innehållet **Lagerprestanda** visas på sidan **Lagerprestanda** (**Lagerhantering** > **Förfrågningar och rapporter** > **Analys av lagerprestanda** > **Lagerprestanda**). 
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mått som ingår i Power BI-innehållet
 Power BI-innehållet för **Prestanda för lagerställe** innehåller ofta en rapport. Denna rapport består av en uppsättning mått som visualiseras som diagram, brickor och tabeller. Följande register ger en översikt över de visuella effekterna i Power BI-innehållet **Prestanda för lagerställe**.

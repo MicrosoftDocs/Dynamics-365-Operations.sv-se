@@ -3,7 +3,7 @@ title: "Power BI-innehåll för produktionsprestanda"
 description: "Det här avsnittet beskriver vad som ingår i Power BI-innehållet för produktionsprestanda. Det förklarar hur du öppnar Power BI-rapporter, och ger information om den datamodell och de enheter som användes för att skapa innehållet."
 author: AndersGirke
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/01/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -16,10 +16,10 @@ ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: baa0343713e8f75e1c9637a903b9008db0968fd4
+ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
+ms.openlocfilehash: 898a1a513850024fd0164955bdd204ee4b08c632
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/01/2017
 
 ---
 
@@ -42,7 +42,7 @@ Power BI-innehållet låter dig även analysera produktionsavvikelser. Produktio
 Den **Produktionsprestanda** som Power BI-innehållet omfattar inkluderar data som har hämtats från produktionsorder och batchorder. Rapporterna innehåller inte data som är relaterade till kanban-produktioner.
 
 ## <a name="accessing-the-power-bi-content"></a>Åtkomst till Power BI-innehåll
-Om du använder Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (juli-uppdateringen 2017) visas Power BI-innehållet **Produktionsprestanda** på sidan **Produktionsprestanda** (**Produktionsstyrning** > **Förfrågningar och rapporter** > **Produktionsprestandaanalyser** > **Produktionsprestanda**). 
+Power BI-innehållet **Produktionsprestanda** visas på sidan **Produktionsprestanda** (**Produktionskontroll** > **Förfrågningar och rapporter** > **Analys av produktionsprestanda** > **Produktionsprestanda**). 
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mått som ingår i Power BI-innehållet
 

@@ -3,7 +3,7 @@ title: "Arbetsyta för räkenskapsperiodens stängning"
 description: "Det här avsnittet innehåller en översikt över arbetsytan Räkenskapsperiodens stängning och den associerade konfigurationen."
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 11/29/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,10 +19,10 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b5dbefc953c0f1608b6f5b5676850a0e9aba36cc
+ms.sourcegitcommit: 6a03274da9b81bf71b32a62f4ebba2a374688ae5
+ms.openlocfilehash: 8b6c14d41cac13e7c1fb5a580759514d46d776ee
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 11/29/2017
 
 ---
 
@@ -91,7 +91,8 @@ Du kan tilldela en uppgift i mallen till ett eller flera företag där uppgiften
 
 Menyobjektet **Uppgiftslänk** är associerat med uppgiftens arbetsinsats, och kan användas för att gå direkt till motsvarande sida från aktivitetslänken på arbetsytan. En avslutningsaktivitet i syfte att köra valutaomvärderingsprocessen för leverantörsreskontra kan exempelvis kopplas i till tillhörande sida för **Omvärdering i utländsk valuta** i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Du kan även länka till en extern URL-adress. 
 
-> [Tips] Om du vill länka en viss Management Reporter-rapport till en bokslutsuppgift, kan du använda rapportwebbadressen. För att öppna rapportwebbadressen öppnar du rapporten i rapportdesignern och klickar på **Fil** &gt; **Visa rapport** för att öppna rapporten i en webbläsare. Du kan sedan kopiera URL:n i webbläsarens adressfält och klistra in den i **uppgiftlänkens** **URL**-fält. 
+> [!TIP]
+> Om du vill länka en viss rapport från en hanteringsrapportör till en bokslutsuppgift, kan du använda rapportwebbadressen. För att öppna rapportwebbadressen öppnar du rapporten i rapportdesignern och klickar på **Fil** &gt; **Visa rapport** för att öppna rapporten i en webbläsare. Du kan sedan kopiera URL:n i webbläsarens adressfält och klistra in den i **uppgiftlänkens** **URL**-fält. 
 
 Du kan definiera samband i mallen. Om en uppgift har ställts in så att den är beroende av en eller flera uppgifter, kan uppgiften inte markeras som slutförd förrän alla beroenden har slutförts. 
 

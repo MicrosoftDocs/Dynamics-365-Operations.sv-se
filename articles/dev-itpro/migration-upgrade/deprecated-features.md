@@ -3,7 +3,7 @@ title: "Äldre funktioner"
 description: "I det här avsnittet beskrivs funktioner som har tagits bort, eller har planerats för borttagning."
 author: sericks007
 manager: AnnBe
-ms.date: 10/23/2017
+ms.date: 11/27/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 6
 ms.translationtype: HT
-ms.sourcegitcommit: 9ee81bbdd22fed4ef6ea97080fe1f6b3d82bcaf5
-ms.openlocfilehash: ee051bbf50a6124fe1700a244b36b5f9c599e714
+ms.sourcegitcommit: 408854737847590841814ed74209618bbf22ec23
+ms.openlocfilehash: b0eb041ee1a4309b010e510e1f7428d6c930e4a0
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 11/27/2017
 
 ---
 
@@ -490,8 +490,8 @@ Datapartitioner tillhandahåller en logisk separering av data i Microsoft Dynami
 
 |   |   |
 |---|---|
-| **Orsak till avskrivning**       | Datapartitioner introducerades i Microsoft Dynamics AX 2012 R2 för möjliggöra isolering av data. I ett vanligt scenario har ett företag ett dotterbolag och data från ett dotterbolag ska inte vara synliga för ett annat dotterföretag, även om båda dotterbolagen hanteras av samma IT-avdelning. Det behövdes dock extra skript och hantering av information i hela programmet för att skapa nya partitioner och förse dem med data och att säkerhetskopiera partitionsdata. I molnet, där vi har tillgång till plattform som en tjänst (PaaS) databas-tjänster (Microsoft Azure SQL-databasen), är det mycket effektivare att använda en databas som isolerade behållare än att utföra isolering i programmet. Oavsett om datapartition är nödvändig för dotterbolag, för flera innehavare eller för skalning tror vi att scenarier kan hanteras bättre via flera olika databaser eller flera Dynamics AX-instanser. |
-| **Ersatt av en annan funktion?** | Datapartitioner ersätts med stöd för flera databaser eller Dynamics AX-instanser i en framtida version.    |
+| **Orsak till avskrivning**       | Datapartitioner introducerades i Microsoft Dynamics AX 2012 R2 för möjliggöra isolering av data. I ett vanligt scenario har ett företag ett dotterbolag och data från ett dotterbolag ska inte vara synliga för ett annat dotterföretag, även om båda dotterbolagen hanteras av samma IT-avdelning. Det behövdes dock extra skript och hantering av information i hela programmet för att skapa nya partitioner och förse dem med data och att säkerhetskopiera partitionsdata. I molnet, där vi har tillgång till plattform som en tjänst (PaaS) databas-tjänster (Microsoft Azure SQL-databasen), är det mycket effektivare att använda en databas som isolerade behållare än att utföra isolering i programmet. Oavsett om datapartition är nödvändig för dotterbolag, för flera innehavare eller bara för skalning, anser vi att scenarier kan hanteras bättre via flera olika Finance and Operations-instanser. |
+| **Ersatt av en annan funktion?** | Kunder som använder datapartitioner måste använda flera instanser av Finance and Operations om separering av databaser är en vital faktor.    |
 | **Påverkade moduler**             | Allt  |
 
 ### <a name="database-and-file-share-storage-for-attachments"></a>Databas- och fildelningslagring för bifogade filer
