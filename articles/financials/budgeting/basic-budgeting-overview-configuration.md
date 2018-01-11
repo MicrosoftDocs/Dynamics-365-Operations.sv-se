@@ -3,7 +3,7 @@ title: "Budgetöversikt"
 description: "I stort sett alla företag som använder funktionen ekonomi i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition måste kunna skapa rapporter över budget kontra faktiska värden. Den här artikeln beskriver den minimikonfiguration som krävs för att skapa budgetar i Finance and Operations, Enterprise edition eller läsa in dem från ett tredjepartsprogram."
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Översikt över budgetkontroll"
 description: "Det här avsnittet innehåller en presentation av budgetkontroll och information som hjälper dig att konfigurera budgetkontrollen i Finance and Operations, Enterprise edition så att du kan hantera ekonomiska resurser."
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

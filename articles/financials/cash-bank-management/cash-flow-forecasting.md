@@ -3,7 +3,7 @@ title: "Kassaflödesprognoser"
 description: "Det här avsnittet innehåller en översikt över kassaflödeprognosprocess. Dessutom beskrivs hur kassaflödesprognos är integrerad med andra moduler i systemet."
 author: saraschi
 manager: AnnBe
-ms.date: 05/15/2017
+ms.date: 01/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
