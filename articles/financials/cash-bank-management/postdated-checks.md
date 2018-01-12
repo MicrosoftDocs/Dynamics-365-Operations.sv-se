@@ -3,7 +3,7 @@ title: Efterdaterade checkar
 description: "Den här artikeln innehåller information om stöd för efterdaterade checkar i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Postdaterade checkar är checkar som har utfärdats för att skapa och ta emot betalningar vid ett framtida datum. Därför kan checken inte lösas in förrän på angivet datum."
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

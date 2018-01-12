@@ -3,7 +3,7 @@ title: "Ställa in räntesatser för en räntekod"
 description: "Räntekoder innehåller inställningar som bestämmer när ränta debiteras och hur den beräknas på förfallna konton."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 08/22/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications

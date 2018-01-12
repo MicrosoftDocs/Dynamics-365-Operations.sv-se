@@ -3,7 +3,7 @@ title: "Arbetsyta för hantering av anläggningstillgångar"
 description: "Det här ämnet innehåller information om arbetsyta för anläggningstillgångar. Den här arbetsytan visar information som är relaterad till anläggningstillgångar som har registrerats i systemet. Den innehåller en sammanfattningsvy och en analysvy."
 author: saraschi
 manager: AnnBe
-ms.date: 10/27/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
