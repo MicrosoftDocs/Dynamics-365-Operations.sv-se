@@ -3,7 +3,7 @@ title: "Budgetplaneringsmallar för Excel"
 description: "Det här avsnittet beskriver hur du skapar Microsoft Excel-mallar som kan användas med budgetplaner."
 author: ryansandness
 manager: AnnBe
-ms.date: 07/27/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: ryansand
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 96df6bbfe5c9e158b616230c2b061762a5edda08
+ms.sourcegitcommit: 63bf043124797b328116fd7951913eaeda6ff97b
+ms.openlocfilehash: 747e57b11c13f71c672d43531255751ff273f57c
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/12/2018
 
 ---
 
@@ -92,7 +92,7 @@ ms.lasthandoff: 11/03/2017
 > [!NOTE] 
 > <span data-ttu-id="b9344-154">Ange formeln genom att skapa den i kalkylbladet och kopiera den sedan till fönstret **Design**.</span><span class="sxs-lookup"><span data-stu-id="b9344-154">To define the formula, create the formula in the spreadsheet, and then copy it to the **Design** window.</span></span> <span data-ttu-id="b9344-155">Ett register avsett för Finance and Operations namnges vanligtvis "AXTable1".</span><span class="sxs-lookup"><span data-stu-id="b9344-155">A Finance and Operations bound table will typically be named "AXTable1".</span></span> <span data-ttu-id="b9344-156">För att till exempel summera Begäran K1 : Begäran K4-kolumner i kalkylbladet blir formeln = AxRegister1\[Begäran K1\]+ AxRegister1\[Begäran K2\]+ AxRegister1\[Begäran K3\]+ AxRegister1\[Begäran K4\].</span><span class="sxs-lookup"><span data-stu-id="b9344-156">For example, to summarize Request Q1 : Request Q4 columns in the spreadsheet, the formula = AxTable1\[Request Q1\]+AxTable1\[Request Q2\]+AxTable1\[Request Q3\]+AxTable1\[Request Q4\].</span></span>
 
-<span data-ttu-id="b9344-157">Upprepa dessa steg för att infoga kolumnen **Justering**.</span><span class="sxs-lookup"><span data-stu-id="b9344-157">Repeat these steps to insert the **Adjustment** column.</span></span> <span data-ttu-id="b9344-158">Använd formeln = AxRegister1\[Total begäran\]\*$I$ 1 för den här kolumnen.</span><span class="sxs-lookup"><span data-stu-id="b9344-158">Use formula = AxTable1\[Total request\]\*$I$1 for this column.</span></span> <span data-ttu-id="b9344-159">Detta kommer ta värdet i cell I1 och multiplicera värdena i kolumnen **Total begäran** för att beräkna justeringsbeloppen.</span><span class="sxs-lookup"><span data-stu-id="b9344-159">This will take the value in cell I1 and multiply the values in the **Total request** column to calculate adjustment amounts.</span></span>
+<span data-ttu-id="b9344-157">Upprepa dessa steg för att infoga kolumnen **Justering**.</span><span class="sxs-lookup"><span data-stu-id="b9344-157">Repeat these steps to insert the **Adjustment** column.</span></span> <span data-ttu-id="b9344-158">Använd formeln = AxRegister1\[Total begäran\]\\*$I$ 1 för den här kolumnen.</span><span class="sxs-lookup"><span data-stu-id="b9344-158">Use formula = AxTable1\[Total request\]\\*$I$1 for this column.</span></span> <span data-ttu-id="b9344-159">Detta kommer ta värdet i cell I1 och multiplicera värdena i kolumnen **Total begäran** för att beräkna justeringsbeloppen.</span><span class="sxs-lookup"><span data-stu-id="b9344-159">This will take the value in cell I1 and multiply the values in the **Total request** column to calculate adjustment amounts.</span></span>
 
 <span data-ttu-id="b9344-160">Spara och stäng Excel-filen.</span><span class="sxs-lookup"><span data-stu-id="b9344-160">Save and close the Excel file.</span></span> <span data-ttu-id="b9344-161">Återgå till Finance and Operations. I **Layout** klickar du på **Mall &gt; Överför** för att överföra den sparade Excel-mallen som ska användas för budgetplanen.</span><span class="sxs-lookup"><span data-stu-id="b9344-161">Return to Finance and Operations, and in **Layouts**, click **Template &gt; Upload** to upload the saved Excel template to be used for the budget plan.</span></span> 
 
