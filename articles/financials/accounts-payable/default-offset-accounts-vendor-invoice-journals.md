@@ -3,7 +3,7 @@ title: "Standardmotkonton för leverantörsfakturajournaler och fakturagodkänna
 description: "Det här ämnet hjälper dig att bestämma var du bör tilldela standardkonton och motkonton för fakturajournaler."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 10/25/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
