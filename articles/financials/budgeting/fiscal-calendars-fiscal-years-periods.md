@@ -3,14 +3,14 @@ title: "Räkenskapskalendrar, räkenskapsår och perioder"
 description: "Det här avsnittet behandlar räkenskapskalendrar, räkenskapsår och perioder och hur du använder dem för juridiska personer, anläggningstillgångar och budgetering."
 author: aprilolson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: FiscalCalendars
 audience: Application User
-ms.reviewer: robinr
+ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
 ms.custom: 25851
 ms.assetid: a968a5e5-585e-4389-aa4e-c885a7e23413
