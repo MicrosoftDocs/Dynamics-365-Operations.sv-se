@@ -17,25 +17,26 @@
 ##### [Köp Finance and Operations (lokal)](get-started/purchase-on-premises.md)
 
 ### [Nyheter eller ändringar](get-started/whats-new-changed.md)
-#### [Inaktuella funktioner](../dev-itpro/migration-upgrade/deprecated-features.md)
+#### [Borttagna och inaktuella funktioner](../dev-itpro/migration-upgrade/deprecated-features.md)
 #### [AX 2012-funktioner som senarelades](get-started/ax-2012-features-not-implemented-but-not-deprecated.md)
 #### [Funktioner som inte implementerats i lokala distributioner](get-started/features-not-implemented-on-prem.md)
-#### [Livscykelpolicy](../dev-itpro/migration-upgrade/versions-update-policy.md)
-#### [Plattformsuppdatering 12 (november 2017)](get-started/whats-new-platform-update-12.md)
-#### [Plattformsuppdatering 11 (oktober 2017)](get-started/whats-new-platform-update-11.md)
-#### [Plattformsuppdatering 10 (augusti 2017)](get-started/whats-new-platform-update-10.md)
-#### [Finance and Operations, Enterprise Edition (juli 2017)](get-started/whats-new-application-July-2017-update.md)
-#### [Plattformsuppdatering 9 (juli 2017)](get-started/whats-new-platform-update-9.md)
-#### [Plattformsuppdatering 8 (juni 2017)](get-started/whats-new-platform-update-8.md)
-#### [Plattformsuppdatering 7 (maj 2017)](get-started/whats-new-platform-update-7.md)
-#### [Plattformsuppdatering 6 (april 2017)](get-started/whats-new-platform-update-6.md)
-#### [Plattformsuppdatering 5 (mars 2017)](get-started/whats-new-platform-update-5.md)
-#### [Plattformsuppdatering 4 (februari 2017)](get-started/whats-new-platform-update-4.md)
+#### [Versioner och livscykelpolicy](../dev-itpro/migration-upgrade/versions-update-policy.md)
+#### [Finance and Operations, Enterprise-utgåvan 7.3](get-started/whats-new-application-7.3-update.md)
+#### [Platform-uppdatering 12 (november 2017)](get-started/whats-new-platform-update-12.md)
+#### [Platform-uppdatering 11 (oktober 2017)](get-started/whats-new-platform-update-11.md)
+#### [Platform-uppdatering 10 (augusti 2017)](get-started/whats-new-platform-update-10.md)
+#### [Finance and Operations, Enterprise-utgåvan (juli 2017)](get-started/whats-new-application-July-2017-update.md)
+#### [Platform-uppdatering 9 (juli 2017)](get-started/whats-new-platform-update-9.md)
+#### [Platform-uppdatering 8 (juni 2017)](get-started/whats-new-platform-update-8.md)
+#### [Platform-uppdatering 7 (maj 2017)](get-started/whats-new-platform-update-7.md)
+#### [Platform-uppdatering 6 (april 2017)](get-started/whats-new-platform-update-6.md)
+#### [Platform-uppdatering 5 (mars 2017)](get-started/whats-new-platform-update-5.md)
+#### [Platform-uppdatering 4 (februari 2017)](get-started/whats-new-platform-update-4.md)
 #### [Operations-version 1611 (november 2016)](get-started/whats-new-dynamics-365-operations-1611.md)
-#### [Plattformsuppdatering 3 (november 2016)](get-started/whats-new-platform-update-3.md)
-#### [Plattformsuppdatering 2 (augusti 2016)](get-started/whats-new-platform-update-2.md) 
+#### [Platform-uppdatering 3 (november 2016)](get-started/whats-new-platform-update-3.md)
+#### [Platform-uppdatering 2 (augusti 2016)](get-started/whats-new-platform-update-2.md) 
 #### [Dynamics AX-programversion 7.0.1 (maj 2016)](get-started/whats-new-changed-application-version-7-0-1-may-2016.md)
-#### [Plattformsuppdatering 1 (maj 2016)](get-started/whats-new-changed-platform-version-7-1-may-2016.md)
+#### [Platform-uppdatering 1 (maj 2016)](get-started/whats-new-changed-platform-version-7-1-may-2016.md)
 #### [Dynamics AX 7.0 (februari 2016)](get-started/whats-new-changed-7-0-february-2016.md)
 #### Uppdaterade uppgiftsguider
 ##### [Uppgiftsguider november 2016](get-started/new-task-guides-november-2016.md)
@@ -141,7 +142,7 @@
 #### [API:er för datahanteringspaket](../dev-itpro/data-entities/data-management-api.md)
 #### [Tjänsteslutpunkter](../dev-itpro/data-entities/services-home-page.md)
 ##### [Felsökning av tjänsteautentisering](../dev-itpro/data-entities/troubleshoot-service-authentication.md)
-#### [OData](../dev-itpro//data-entities/odata.md)
+#### [OData](../dev-itpro/data-entities/odata.md)
 #### [Anpassade tjänster](../dev-itpro/data-entities/custom-services.md)
 #### [Återkommande integrationer](../dev-itpro/data-entities/recurring-integrations.md)
 
@@ -179,9 +180,10 @@
 ### [Datatabeller](../dev-itpro/data-entities/data-entities.md)
 
 #### [Konfigurationsdataprojekt](../dev-itpro/data-entities/configuration-data-projects.md)
-#### [Konfigurationsdatapaket](../dev-itpro/data-entities/configuration-data-packages.md)
 #### [Kopiera konfigurationsdata mellan företag](../dev-itpro/data-entities/copy-configuration.md)
+##### [Konfigurationsdatapaket (endast utgåvan från juli 2017)](../dev-itpro/data-entities/configuration-data-packages.md)
 #### [Konfigurationsdatamallar](../dev-itpro/data-entities/configuration-data-templates.md)
+
 #### [Spåra ändringar av en enhet](../dev-itpro/data-entities/entity-change-track.md)
 
 ### Standarddatatabeller
@@ -646,6 +648,11 @@
 ##### [Ställ in negativa debiteringar krediteringar ](../financials/localizations/apac-chn-negative-debits-credits.md)
 ##### [Användaråtgärdslogg efter kinesiska arbetsregler](../financials/localizations/tasks/user-operation-log-china-working-rule.md)
 ##### [Vanliga frågor och svar om momskundfakturor](../financials/localizations/apac-chn-tax-integration-vat-customer-invoices.md)
+
+#### Indien
+##### [Översikt över skattemotor](../financials/general-ledger/tax-engine.md)
+##### [Integrering av skattemotor](../financials/general-ledger/tax-engine-integration.md)
+##### [Bygg ut skattemotorn](../financials/general-ledger/extend-tax-engine-configurations.md)
 
 #### Japan
 ##### [Anskaffa en anläggningstillgång och begär statsbidragssubvention](../financials/localizations/tasks/acquire-fixed-asset-claim-government-grant-subsidy.md)
@@ -1214,7 +1221,8 @@
 #### [Personalmätningar](../dev-itpro/analytics/workforce-analysis-power-bi-content-pack.md)
 
 ### Rapportera och skriva ut dokument
-#### [Översikt över dokumentrapporteringstjänster](../dev-itpro/analytics/document-reporting-services.md)
+#### [Översikt över Document Reporting Services](../dev-itpro/analytics/document-reporting-services.md)
+#### [Installera nätverksskrivare i lokala miljöer](../dev-itpro/analytics/install-network-printer-onprem.md)
 #### [Konfigurera SSRS för en lokal distribution](../dev-itpro/analytics/configure-ssrs-on-premises.md)
 #### [Skriva ut](../dev-itpro/analytics/print-documents.md)
 ##### [Installera dokumentflödesagenten för att aktivera nätverksskrivarenheter](../dev-itpro/analytics/install-document-routing-agent.md)
@@ -1285,30 +1293,28 @@
 ##### [Välja en datamodelldefinition när du skapar format för elektronisk rapportering](../dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md)
 ##### [Uppgradera ett format genom att anpassa den nya basversionen för det formatet för elektronisk rapportering](../dev-itpro/analytics/tasks/er-upgrade-format.md)
 ##### [Överföra en konfiguration till Lifecycle Services för elektronisk rapportering](../dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md)
+##### [Ändringar av API:et för ramverket för elektronisk rapportering för programuppdatering 7.3](../dev-itpro/analytics/er-apis-app73.md)
 
-### Analysverktyg och visualiseringar
+### Inbäddade analyslösningar
+#### [Inbäddad Power BI i arbetsytor](../dev-itpro/analytics/embed-power-bi-workspaces.md)
+#### [Power BI Embedded-integration](../dev-itpro/analytics/power-bi-embedded-integration.md)
+
+### Anpassningsalternativ med PowerBI.com
+#### [Power BI-integration](../dev-itpro/analytics/power-bi-integration.md)
+#### [Fäst Power BI-rapporter vid arbetsytor](../dev-itpro/analytics/pin-power-bi-reports.md)
+
+### Verktyg för att skapa och bygga ut lösningar
 #### [Analys, aggregerade mått och KPI-modellering](../dev-itpro/analytics/analytics.md)
+#### [Författa analytiska rapporter genom att använda Power BI Desktop](../dev-itpro/analytics/author-distribute-power-bi-reports.md)
 #### [Modellera och aggregera data](../dev-itpro/analytics/model-aggregate-data.md)
 #### [Lägg till ekonomiska dimensioner i aggregerade mått](../dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md)
-#### [Lägg till sammanhangsbaserad BI i formulär](../dev-itpro/analytics/add-contextual-bi-forms.md)
-#### [Rapport med aggregerade mått](../dev-itpro/analytics/aggregate-measurements-report.md)
-#### [Rapport med aggregerad datatabell](../dev-itpro/analytics/aggregate-data-entities-report.md)
-#### [KPI-rapport (KPI.md)](../dev-itpro/analytics/key-performance-indicators-report.md)
-#### [Power BI-integration](../dev-itpro/analytics/power-bi-integration.md)
-#### [Komma åt Power BI-innehållspaket](../dev-itpro/analytics/power-bi-content-microsoft-partners.md)
-#### [Skapa en Power BI-rapport och instrumentpanel](../dev-itpro/analytics/create-powerbi-report-dashboard.md)
-#### [Skapa en Power BI-rapport med Finance and Operations-data](../dev-itpro/analytics/create-powerbi-report-data.md)
-#### [Konfigurera Power BI-integrering för arbetsytor](../dev-itpro/analytics/configure-power-bi-integration.md)
-#### [Power BI Embedded-integration](../dev-itpro/analytics/power-bi-embedded-integration.md)
-#### [Inbäddad Power BI i arbetsytor](../dev-itpro/analytics/embed-power-bi-workspaces.md)
-#### [Lägg till analys i arbetsytor med Power BI Embedded](../dev-itpro/analytics/add-analytics-tab-workspaces.md)
+#### [Lägg till analyser i arbetsytor med Power BI Embedded](../dev-itpro/analytics/add-analytics-tab-workspaces.md)
 #### [Hjälp för säkra analytiska arbetsytor och rapporter med Power BI Embedded](../dev-itpro/analytics/secure-analytical-workspaces.md)
-#### [Lägg till Power BI i arbetsytor](../dev-itpro/analytics/add-bi-workspaces.md)
-#### [Fäst Power BI-rapporter vid arbetsytor](../dev-itpro/analytics/pin-power-bi-reports.md)
-#### [Power BI-integration med Enhetslagring](../dev-itpro/analytics/power-bi-integration-entity-store.md)
+
+### Hanteringsverktyg för priviligierade användare
+#### [Power BI-integrering med Enhetslagring](../dev-itpro/analytics/power-bi-integration-entity-store.md)
+#### [Konfigurera Power BI-integrering för arbetsytor](../dev-itpro/analytics/configure-power-bi-integration.md)
 #### [Ta med din egen databas](../dev-itpro/analytics/export-entities-to-your-own-database.md)
-#### [Författa analytiska rapporter genom att använda Power BI Desktop](../dev-itpro/analytics/author-distribute-power-bi-reports.md)
-#### [Publicera analytiska program i Power BI](../dev-itpro/analytics/publish-apps-powerbi.md)
 
 
 ## [Lagerhantering](../supply-chain/inventory/inventory-home-page.md)
@@ -1362,6 +1368,7 @@
 #### [Generera en begränsad plan (uppgiftsguide)](../supply-chain/master-planning/tasks/constrained-plan.md)
 #### [Skapa en materialplan för samprodukter (uppgiftsguide)](../supply-chain/master-planning/tasks/create-material-plan-co-products.md)
 #### [Underhåll planerade order](../supply-chain/master-planning/maintain-planned-orders.md)
+#### [Hantera säkerhetslager](../supply-chain/master-planning/safety-stock-replenishment.md)
 #### [Hantera förseningar](../supply-chain/master-planning/delays.md)
 #### [Spåra en nedbrytning](../supply-chain/master-planning/trace-explosion.md)
 #### [Åtgärdsmeddelanden](../supply-chain/master-planning/action-messages.md)
@@ -1438,6 +1445,8 @@
 #### [Skapa och underhåll leverantörssamarbete](../supply-chain/procurement/set-up-maintain-vendor-collaboration.md)
 #### [Hantera användare av leverantörssamarbete](../supply-chain/procurement/manage-vendor-collaboration-users.md)
 #### [Ställ in leverantörskonton](../supply-chain/procurement/set-up-vendor-accounts.md)
+#### [Konfigurationer för leverantörsförfrågan](../supply-chain/procurement/vendor-request-configurations.md)
+#### [Integration av leverantör](../supply-chain/procurement/vendor-onboarding.md)
 #### [Leverantörssamarbete med externa leverantörer](../supply-chain/procurement/vendor-collaboration-work-external-vendors.md)
 #### [Leverantörssamarbete med kunder](../supply-chain/procurement/vendor-collaboration-work-customers-dynamics-365-operations.md)
 #### [Ställ in en extern katalog för PunchOut eProcurement](../supply-chain/procurement/set-up-external-catalog-for-punchout.md)
@@ -1550,7 +1559,9 @@
 #### Köra produktionsjobb
 ##### [Skapa produktionsorder](../supply-chain/production-control/create-production-orders.md)
 ##### [Frisläpp produktionsorder](../supply-chain/production-control/release-production-orders.md)
-##### [Återför produktionsorderstatus](../supply-chain/production-control/reverse-production-order-status.md)
+##### [Insyn i materialundantag](../supply-chain/production-control/improved-visibility-into-material-exceptions.md)
+##### [Frisläpp strukturliste- och formelrader till lagerstället](../supply-chain/production-control/releasing-bom-and-formula-lines-to-warehouse.md)
+#####[Återför produktionsorderstatus](../supply-chain/production-control/reverse-production-order-status.md)
 ##### [Registrera materialförbrukning med en mobil enhet](../supply-chain/production-control/register-material-consumption-hand-held-device.md)
 ##### [Styr råmaterialförbrukning med avräkningsprinciper](../supply-chain/production-control/flushing-principles.md) 
 ##### [Direktleverans från produktionsorder till utlastningsplatser](../supply-chain/production-control/cross-docking-opportunities.md)
@@ -1561,7 +1572,7 @@
 ##### [Registrering för tillverkningskörning](../supply-chain/production-control/registration-manufacturing-execution.md)
 ##### [Produktionsåterrapportering](../supply-chain/production-control/production-feedback.md)
 ##### [Tid- och närvaroregistrering](../supply-chain/production-control/time-attendance-registrations.md)
-##### [Frånvaroregistrering i Tid och närvaro](..//supply-chain/production-control/absence-registration-in-time-and-attendance.md)
+##### [Frånvaroregistrering i Tid och närvaro](../supply-chain/production-control/absence-registration-in-time-and-attendance.md)
 #### Hantera ekonomi i produktionen
 ##### [Fördela tid till jobb i en jobbunt](../supply-chain/production-control/allocate-time-jobs-job-bundle.md)
 ##### [Beräkna materialförbrukning](../supply-chain/production-control/consumption.md)
@@ -1686,6 +1697,7 @@
 #### [Skapa en ny produktmall (uppgiftsguide)](../supply-chain/pim/tasks/create-product-master.md)
 #### [Skapa fördefinierade produktvarianter (uppgiftsguide)](../supply-chain/pim/tasks/create-predefined-product-variants.md)
 #### [Skapa en frisläppt produkt för ett enskilt företag (uppgiftsguide)](../supply-chain/pim/tasks/create-released-product-single-company.md)
+#### [Produktens livscykeltillstånd](../supply-chain/pim/product-lifecycle.md)
 #### [Skapa en streckkod för en produkt (uppgiftsguide)](../supply-chain/pim/tasks/create-bar-code-product.md)
 #### [Ange GTIN-koden för en produkt (uppgiftsguide)](../supply-chain/pim/tasks/enter-gtin-code-product.md)
 #### [Skapa batchattribut för en produkt (uppgiftsguide)](../supply-chain/pim/tasks/create-batch-attributes-product.md)
@@ -1800,7 +1812,8 @@
 ### [Ställ in transportbegränsningar för en artikel](../supply-chain/transportation/tasks/set-up-transportation-constraints-item.md)
 
 ## [Lagerstyrning](../supply-chain/warehousing/warehouse-management-overview.md)
-### [Konfiguration av lagerställe](../supply-chain/warehousing/warehouse-configuration.md) 
+### [Konfiguration av lagerställe](../supply-chain/warehousing/warehouse-configuration.md)
+#### [Konfigurera ett lagerställe med hjälp av en konfigurationsmall](../supply-chain/inventory/warehouse-template.md)
 #### [Styr arbetsuppgifter genom att använda arbetsmallar och platsdirektiv](../supply-chain/warehousing/control-warehouse-location-directives.md)
 #### [Måttenhet och lagerpolicyer](../supply-chain/warehousing/unit-measure-stocking-policies.md)
 #### [Power BI-innehållspaket för lagerställe](../dev-itpro/analytics/warehouse-power-bi-content.md)
