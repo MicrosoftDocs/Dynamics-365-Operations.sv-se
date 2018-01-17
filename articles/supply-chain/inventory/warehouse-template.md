@@ -1,0 +1,100 @@
+---
+title: "Konfigurera ett lagerställe med hjälp av en konfigurationsmall"
+description: "Det här avsnittet innehåller information om hur du konfigurera ett lagerställe med hjälp av en konfigurationsmall."
+author: perlynne
+manager: AnnBe
+ms.date: 11/16/2017
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+ms.search.form: DataManagementWorkspace, DMFQuickImportExportEnhanced, DMFDefinitionGroupTemplate, DMFEntityTemplateDefinitionLoadDialog
+audience: Application User
+ms.reviewer: YuyuScheller
+ms.search.scope: Core, Operations
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+ms.search.industry: Distribution
+ms.author: perlynne
+ms.search.validFrom: 2017-12-31
+ms.dyn365.ops.version: AX 7.3
+ms.translationtype: HT
+ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
+ms.openlocfilehash: 87ade03ec2ba78c4d7f5832bfa6dc1b7eabd8d94
+ms.contentlocale: sv-se
+ms.lasthandoff: 12/14/2017
+
+---
+
+# <a name="set-up-a-warehouse-by-using-a-warehouse-configuration-template"></a><span data-ttu-id="f0618-103">Konfigurera ett lagerställe med hjälp av en konfigurationsmall</span><span class="sxs-lookup"><span data-stu-id="f0618-103">Set up a warehouse by using a warehouse configuration template</span></span>
+
+[!include[banner](../includes/banner.md)]
+
+<span data-ttu-id="f0618-104">Det här avsnittet innehåller information om hur du konfigurera ett lagerställe med hjälp av en konfigurationsmall.</span><span class="sxs-lookup"><span data-stu-id="f0618-104">This topic explains how to set up a warehouse by using a warehouse configuration template.</span></span> <span data-ttu-id="f0618-105">Det finns flera fördefinierade konfigurationsmallar som du kan använda.</span><span class="sxs-lookup"><span data-stu-id="f0618-105">There are several predefined configuration templates that you can use.</span></span> <span data-ttu-id="f0618-106">Information om hur du använder dessa mallar finns i [Konfigurationsdatamallar](../../dev-itpro/data-entities/configuration-data-templates.md).</span><span class="sxs-lookup"><span data-stu-id="f0618-106">For information about how to use these templates, see [Configuration data templates](../../dev-itpro/data-entities/configuration-data-templates.md).</span></span>
+
+## <a name="scenarios-where-configuration-templates-can-be-helpful"></a><span data-ttu-id="f0618-107">Scenarier där konfigurationsmallar kan vara till hjälp</span><span class="sxs-lookup"><span data-stu-id="f0618-107">Scenarios where configuration templates can be helpful</span></span>
+
+<span data-ttu-id="f0618-108">Konfigurationsmallar kan vara användbar i många situationer.</span><span class="sxs-lookup"><span data-stu-id="f0618-108">Configuration templates can be helpful in many scenarios.</span></span> <span data-ttu-id="f0618-109">Nedan följer några exempel:</span><span class="sxs-lookup"><span data-stu-id="f0618-109">Here are some examples:</span></span>
+
+- <span data-ttu-id="f0618-110">Du har slutfört och testat en konfigurationsinställning i en testmiljö och nu vill du kopiera inställningen till en produktionsmiljö.</span><span class="sxs-lookup"><span data-stu-id="f0618-110">You've completed and tested a configuration setup in a test environment, and you now want to copy the setup to a production environment.</span></span>
+- <span data-ttu-id="f0618-111">Du vill distribuera lagerstyrningsinställningar för flera juridiska personer eller skapa ett nytt lagerställe i samma juridiska person.</span><span class="sxs-lookup"><span data-stu-id="f0618-111">You want to roll the warehouse setup out to several legal entities or create a new warehouse in the same legal entity.</span></span>
+- <span data-ttu-id="f0618-112">Du vill snabbt förbereda dig för en demonstration av funktionerna för lagerstället.</span><span class="sxs-lookup"><span data-stu-id="f0618-112">You want to quickly prepare for a demo of the warehouse functionality.</span></span>
+- <span data-ttu-id="f0618-113">Du vill att befintliga objekt och lager ska använda funktionerna i lagerstyrning i stället för funktionen i Lagerhantering.</span><span class="sxs-lookup"><span data-stu-id="f0618-113">You want existing items and warehouses to use the functionality in Warehouse management instead of the functionality in Inventory management.</span></span>
+
+<span data-ttu-id="f0618-114">I det här avsnittet gäller det första av dessa scenarier.</span><span class="sxs-lookup"><span data-stu-id="f0618-114">This topic focuses on the first of these scenarios.</span></span> <span data-ttu-id="f0618-115">Det visar hur du kan använda en konfigurationsmall för att kopiera en konfigurationsinställning från en testmiljö till en produktionsmiljö.</span><span class="sxs-lookup"><span data-stu-id="f0618-115">It shows how you can use a configuration template to copy a configuration setup from a test environment to a production environment.</span></span>
+
+## <a name="copy-a-configuration-setup-from-a-test-environment-to-a-production-environment"></a><span data-ttu-id="f0618-116">Kopiera en konfigurationsinställning från en testmiljö till en produktionsmiljö</span><span class="sxs-lookup"><span data-stu-id="f0618-116">Copy a configuration setup from a test environment to a production environment</span></span>
+
+<span data-ttu-id="f0618-117">För det här scenariot existerar redan konfigurationsinställningarna för ett lagerställe och vissa transaktionsprocesser finns redan i en testmiljö.</span><span class="sxs-lookup"><span data-stu-id="f0618-117">For this scenario, the configuration setup for a warehouse and some transaction processes already exist in a test environment.</span></span> <span data-ttu-id="f0618-118">Du vill nu kopiera konfigurationsinställningarna för lagerstället från testmiljön till en produktionsmiljö.</span><span class="sxs-lookup"><span data-stu-id="f0618-118">You now want to copy the configuration setup for the warehouse from the test environment to a production environment.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="f0618-119">Det är viktigt att du inkluderar andra inställningsdata när du kopierar en konfigurationsinställning.</span><span class="sxs-lookup"><span data-stu-id="f0618-119">It's important that you include other related setup data when you copy a configuration setup.</span></span> <span data-ttu-id="f0618-120">Du vill till exempel ställa in produkter genom att kopiera inställningarna från en testmiljö.</span><span class="sxs-lookup"><span data-stu-id="f0618-120">For example, you want to set up products by copying the setup from a test environment.</span></span> <span data-ttu-id="f0618-121">Men du kan inte ställa in en fast plockplats för en produkt innan den produkten skapas.</span><span class="sxs-lookup"><span data-stu-id="f0618-121">However, you can't set up a fixed picking location for a product before that product is created.</span></span> <span data-ttu-id="f0618-122">Även om enskilda konfigurationsmallar inte stöder den här typen av beroenden, finns det standarddatamallar som stöder den.</span><span class="sxs-lookup"><span data-stu-id="f0618-122">Although individual configuration templates don't support this type of dependency, there are default data templates that support it.</span></span> <span data-ttu-id="f0618-123">Du kan enkelt inkludera dessa standarddatamallar i konfigureringsprocessen.</span><span class="sxs-lookup"><span data-stu-id="f0618-123">You can easily include these default data templates in a configuration process.</span></span>
+
+### <a name="export-a-default-warehouse-template"></a><span data-ttu-id="f0618-124">Exportera en standardlagermall</span><span class="sxs-lookup"><span data-stu-id="f0618-124">Export a default warehouse template</span></span> 
+
+1. <span data-ttu-id="f0618-125">Öppna arbetsytan **Datahantering**.</span><span class="sxs-lookup"><span data-stu-id="f0618-125">Open the **Data management** workspace.</span></span>
+
+    > [!NOTE]
+    > <span data-ttu-id="f0618-126">Om du använder den här arbetsytan för första gången måste du läsa in alla dataetabellerna innan du fortsätter.</span><span class="sxs-lookup"><span data-stu-id="f0618-126">If you're using this workspace for the first time, you must load all the data entities before you continue.</span></span>
+
+2. <span data-ttu-id="f0618-127">Välj panelen **mallar** och markera sedan **läsa in standardmallar** för att läsa in standardmallarna.</span><span class="sxs-lookup"><span data-stu-id="f0618-127">Select the **Templates** tile, and then select **Load default templates** to load the default templates.</span></span>
+
+    > [!NOTE]
+    > <span data-ttu-id="f0618-128">**Läsa in standardmallar** är endast tillgängligt i vyn **utökat**.</span><span class="sxs-lookup"><span data-stu-id="f0618-128">**Load default templates** is available only in the **Enhanced** view.</span></span> <span data-ttu-id="f0618-129">Välj **ramverksparametrar** och sedan, i vyn **Visa standard** väljer du **utökad vy**.</span><span class="sxs-lookup"><span data-stu-id="f0618-129">Select **Framework parameters**, and then, in the **View defaults** field, select **Enhanced view**.</span></span>
+
+3. <span data-ttu-id="f0618-130">När standardmallarna läses in kan du ändra dem så att de uppfyller dina affärsbehov.</span><span class="sxs-lookup"><span data-stu-id="f0618-130">After the default templates are loaded, you can change them so that they meet your business requirements.</span></span>
+
+    > [!NOTE]
+    > <span data-ttu-id="f0618-131">Om du vill läsa in standardmallar och importera mallar måste du ha systemadministratörsbehörighet.</span><span class="sxs-lookup"><span data-stu-id="f0618-131">To load default templates and import templates, you must have system administrator access.</span></span> <span data-ttu-id="f0618-132">Detta krav bidrar till att garantera att alla enheter läses in korrekt i mallen.</span><span class="sxs-lookup"><span data-stu-id="f0618-132">This requirement helps guarantee that all entities are correctly loaded into the template.</span></span>
+
+4. <span data-ttu-id="f0618-133">Kontrollera att du är i den juridiska persona som du vill exportera företagsspecifika data från.</span><span class="sxs-lookup"><span data-stu-id="f0618-133">Make sure that you're in the legal entity that you want to export the company-specific data from.</span></span>
+5. <span data-ttu-id="f0618-134">Markera **exportera** i arbetsytan.</span><span class="sxs-lookup"><span data-stu-id="f0618-134">In the workspace, select **Export**.</span></span>
+6. <span data-ttu-id="f0618-135">Skapa ett nytt exportprojekt.</span><span class="sxs-lookup"><span data-stu-id="f0618-135">Create a new export project.</span></span>
+7. <span data-ttu-id="f0618-136">Välj **+ Lägg till mall** och hitta **400 - Lagerstyrningssystem** standardmall för lagerstället.</span><span class="sxs-lookup"><span data-stu-id="f0618-136">Select **+ Add template**, and find the **400 - WMS** default warehouse template.</span></span> <span data-ttu-id="f0618-137">Den här mallen lägger till datatabeller för lagerkonfiguration.</span><span class="sxs-lookup"><span data-stu-id="f0618-137">This template adds data entities for warehouse configuration.</span></span>
+
+    > [!NOTE]
+    > <span data-ttu-id="f0618-138">Om den data du vill exportera måste filtreras (om du till exempel vill exportera data som hör till ett visst lagerställe), måste du utvärdera varje datatabell och lägga till filtrering via en fråga.</span><span class="sxs-lookup"><span data-stu-id="f0618-138">If the data that you're exporting must be filtered (for example, you want to export only the data that is related to a specific warehouse), you must evaluate each data entity and add filtering via a query.</span></span> <span data-ttu-id="f0618-139">Alternativt kan du exportera alla data och ta bort de poster som inte krävs i målfilerna.</span><span class="sxs-lookup"><span data-stu-id="f0618-139">Alternatively, you can export all data and then delete the records that aren't required in the destination files.</span></span>
+
+8. <span data-ttu-id="f0618-140">Välj **Exportera**.</span><span class="sxs-lookup"><span data-stu-id="f0618-140">Select **Export**.</span></span> <span data-ttu-id="f0618-141">Data som är relaterad till alla datatabellerna i projektet exporteras.</span><span class="sxs-lookup"><span data-stu-id="f0618-141">Data that is related to all the data entities in the project is exported.</span></span>
+
+<span data-ttu-id="f0618-142">Du kan hämta en zip-fil för datapaketet.</span><span class="sxs-lookup"><span data-stu-id="f0618-142">You can download a zip file for the data package.</span></span> <span data-ttu-id="f0618-143">Den här filen innehåller alla data i det markerade formatet (till exempel Excel-format).</span><span class="sxs-lookup"><span data-stu-id="f0618-143">This file contains all the data in the selected format (for example, Excel format).</span></span> <span data-ttu-id="f0618-144">Som tidigare nämnts, kanske några av posterna i datapaketfilerna behöver uppdateras innan du kan importera dem till produktionsmiljön.</span><span class="sxs-lookup"><span data-stu-id="f0618-144">As has been mentioned, some records in the data package files might have to be updated before you can import them into the production environment.</span></span> <span data-ttu-id="f0618-145">Kontrollera att du inte ändrar filnamnet om du uppdaterar en post.</span><span class="sxs-lookup"><span data-stu-id="f0618-145">If you update a record, make sure that you don't change the file name.</span></span>
+
+### <a name="import-a-warehouse-configuration-setup"></a><span data-ttu-id="f0618-146">Importera en konfiguration för lagerställe</span><span class="sxs-lookup"><span data-stu-id="f0618-146">Import a warehouse configuration setup</span></span>
+
+1. <span data-ttu-id="f0618-147">I målmiljön ser du till att du är i företaget som du vill importera lagerställets data till.</span><span class="sxs-lookup"><span data-stu-id="f0618-147">In the destination environment, make sure that you're in the company that you want to import the warehouse data into.</span></span>
+
+    > [!NOTE]
+    > <span data-ttu-id="f0618-148">Identifiera eventuella databeroenden innan du utför importen.</span><span class="sxs-lookup"><span data-stu-id="f0618-148">Before you do the import, you should identify any data dependencies.</span></span> <span data-ttu-id="f0618-149">Till exempel mallen **lagerstyrning** innehåller en datatabell som heter **lagerdispositionskoder**.</span><span class="sxs-lookup"><span data-stu-id="f0618-149">For example, the **Warehouse management** template includes a data entity that is named **Warehouse disposition codes**.</span></span> <span data-ttu-id="f0618-150">Entiteten innehåller data som hör till installationssidan **dispositionskoder** (**lagerstyrning** > **inställningar** > **mobiltelefon** > **dispositionskoder**).</span><span class="sxs-lookup"><span data-stu-id="f0618-150">This entity contains data that is related to the **Disposition codes** setup page (**Warehouse management** > **Setup** > **Mobile device** > **Disposition codes**).</span></span> <span data-ttu-id="f0618-151">Om en befintlig installation redan hanterar returprocess för försäljningsorder, innehåller fältet **returdispositionskod** ett värde.</span><span class="sxs-lookup"><span data-stu-id="f0618-151">If an existing setup already handles the return process for sales orders, the **Return disposition code** field contains a value.</span></span> <span data-ttu-id="f0618-152">Dispositionskoden i det här fältet hör till datatabellen **dispositionskod** som är en del av mallen **försäljning och marknadsföring**.</span><span class="sxs-lookup"><span data-stu-id="f0618-152">The disposition code in this field is related to the **Disposition code** data entity, which is part of the **Sales and marketing** template.</span></span> <span data-ttu-id="f0618-153">Om data från datatabellen **dispositionskod** inte importeras före data från fältet **lagerdispositionskoder** misslyckas importen.</span><span class="sxs-lookup"><span data-stu-id="f0618-153">If the data from the **Disposition code** data entity isn't imported before the data from the **Warehouse disposition codes** field, the import will fail.</span></span>
+
+2. <span data-ttu-id="f0618-154">I arbetsytan **datahantering**, välj **Import**.</span><span class="sxs-lookup"><span data-stu-id="f0618-154">In the **Data management** workspace, select **Import**.</span></span>
+3. <span data-ttu-id="f0618-155">Skapa ett nytt importprojekt.</span><span class="sxs-lookup"><span data-stu-id="f0618-155">Create a new import project.</span></span>
+4. <span data-ttu-id="f0618-156">Välj **+ Lägg till fil** och överför zip-filen för datapaketet.</span><span class="sxs-lookup"><span data-stu-id="f0618-156">Select **+ Add file**, and upload the zip file for the data package.</span></span>
+5. <span data-ttu-id="f0618-157">Välj **Importera**.</span><span class="sxs-lookup"><span data-stu-id="f0618-157">Select **Import**.</span></span> <span data-ttu-id="f0618-158">I vyn **utökat** kan du använda alternativet **Filter** för att snabbt få en översikt över problem som kan uppstå under importen.</span><span class="sxs-lookup"><span data-stu-id="f0618-158">In the **Enhanced** view, you can use the **Filter** option to quickly get an overview of issues that might occur during the import.</span></span>
+
+<span data-ttu-id="f0618-159">Loggen **Visa körning** ger detaljerad information om varje dataenhet som importeras.</span><span class="sxs-lookup"><span data-stu-id="f0618-159">The **View execution** log provides detailed information about each data entity that is imported.</span></span> <span data-ttu-id="f0618-160">Du kan använda mellanlagringsdatavyn för att snabbt komma till måldata.</span><span class="sxs-lookup"><span data-stu-id="f0618-160">You can use the staging data view to quickly get to the target data.</span></span> <span data-ttu-id="f0618-161">På så sätt visas hur de importerade data ser ut på tillhörande sidor i programmet.</span><span class="sxs-lookup"><span data-stu-id="f0618-161">In this way, you can see what the imported data looks like on the related pages in the application.</span></span> <span data-ttu-id="f0618-162">När du använder standarddatamallar fungerar importsekvensen för varje datatabell på fördefinierade sätt, för att garantera att alla beroende data importeras först.</span><span class="sxs-lookup"><span data-stu-id="f0618-162">When you use the default data templates, the import sequence for each data entity works in the predefined manner, to help guarantee that all dependent data is imported first.</span></span> <span data-ttu-id="f0618-163">Om anpassade datatabeller ingår i projektet, måste du kontrollera att du angett rätt sekvens.</span><span class="sxs-lookup"><span data-stu-id="f0618-163">If custom data entities are part of the project, you must make sure that the correct sequence is defined.</span></span> <span data-ttu-id="f0618-164">Mer information finns i [Konfigurationsdatamallar](../../dev-itpro/data-entities/configuration-data-templates.md).</span><span class="sxs-lookup"><span data-stu-id="f0618-164">For more information, see [Configuration data templates](../../dev-itpro/data-entities/configuration-data-templates.md).</span></span>
+
+## <a name="related-topic"></a><span data-ttu-id="f0618-165">Relaterat ämne</span><span class="sxs-lookup"><span data-stu-id="f0618-165">Related topic</span></span>
+
+[<span data-ttu-id="f0618-166">Konfigurationsdatamallar</span><span class="sxs-lookup"><span data-stu-id="f0618-166">Configuration data templates</span></span>](../../dev-itpro/data-entities/configuration-data-templates.md)
+
