@@ -1,6 +1,6 @@
 ---
 title: Intelligence
-description: "Det här avsnittet hänvisar till resurser som du kan använda för att lära dig mer om Business Intelligence och rapporteringsverktygen som finns i Microsoft Dynamics 365 for Finance and Operations, Enterprise-utgåvan."
+description: "Det här avsnittet hänvisar till resurser som du kan använda för att lära dig mer om Business Intelligence och rapporteringsverktygen som finns i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition."
 author: sericks007
 manager: AnnBe
 ms.date: 12/18/2017
@@ -29,7 +29,7 @@ ms.lasthandoff: 12/18/2017
 
 [!include[banner](../includes/banner.md)]
 
-Det här avsnittet hänvisar till resurser som du kan använda för att lära dig mer om Business Intelligence (BI) och rapporteringsverktygen som finns i Microsoft Dynamics 365 for Finance and Operations, Enterprise-utgåvan.
+Det här avsnittet hänvisar till resurser som du kan använda för att lära dig mer om Business Intelligence (BI) och rapporteringsverktygen som finns i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
 
 ## <a name="get-started"></a>Kom igång
 - [Åtkomst till information och rapportering](information-access-reporting.md)

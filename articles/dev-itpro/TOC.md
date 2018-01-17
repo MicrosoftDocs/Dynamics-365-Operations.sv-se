@@ -29,7 +29,7 @@
 ### [Exportera och importera en modell](dev-tools/models-export-import.md)
 ### [Sök efter metadata i Visual Studio](dev-tools/metadata-search-visual-studio.md)
 ### [Modeller](dev-tools/models.md)
-### [Projekt i Dynamics 365 for Finance and Operations, Enterprise-utgåvan](dev-tools/projects.md)
+### [Projekt i Dynamics 365 for Finance and Operations, Enterprise edition](dev-tools/projects.md)
 ### [Verktygstillägg för Visual Studio](dev-tools/developer-tools-add-ins.md)
 ### [Inaktivera modellanpassning och avskrivningsfunktioner](dev-tools/lock-models.md)
 ### [Uppdatera utvecklingsverktyg för Visual Studio](dev-tools/update-development-tools.md)
@@ -161,8 +161,8 @@
 ### [Skapa navigering](user-interface/build-navigation.md)
 ### [Skapa en arbetsyta](user-interface/build-workspace.md)
 ## Formulär
-### [Navigera i Dynamics 365 for Finance and Operations, Enterprise-utgåvan](user-interface/page-navigation.md)
-### [Layout i Dynamics 365 for Finance and Operations, Enterprise-utgåvan](user-interface/page-layout.md)
+### [Navigera i Dynamics 365 for Finance and Operations, Enterprise edition](user-interface/page-navigation.md)
+### [Layout i Dynamics 365 for Finance and Operations, Enterprise edition](user-interface/page-layout.md)
 ### [Symbolteckensnitt](user-interface/symbol-font.md)
 ### [Testa formulär med egna mönster](user-interface/testing-forms-custom-patterns.md)
 ### [Skapa och använd djuplänkar](user-interface/create-deep-links.md)
@@ -500,7 +500,7 @@
 
 ## Molndistribution
 ### [Integration av Azure Resource Manager](deployment/arm-onboarding.md)
-### [Azure ExpressRoute och Dynamics 365 for Finance and Operations, Enterprise-utgåvan](deployment/expressroute.md)
+### [Azure ExpressRoute och Dynamics 365 for Finance and Operations, Enterprise edition](deployment/expressroute.md)
 
 ## [Lokal distribution](deployment/on-premises-deployment-landing-page.md)
 ### [Översikt – lokal](deployment/on-premises-overview.md)
@@ -513,7 +513,7 @@
 ### [Distribuera en lokal distribution](deployment/redeploy-on-prem.md)
 ### [Uppdatera den lokala agenten](lifecycle-services/update-local-agent.md)
 ### [Konfigurera om miljön](lifecycle-services/reconfigure-environment.md)
-### [Felsöka Dynamics 365 for Finance and Operations, Enterprise-utgåvan (lokal)](deployment/troubleshoot-on-prem.md)
+### [Felsöka Dynamics 365 for Finance and Operations, Enterprise edition (lokal)](deployment/troubleshoot-on-prem.md)
 
 ## Distribuera anpassad kod
 ### [Skapa ett driftfärdigt paket](deployment/create-apply-deployable-package.md)
@@ -701,10 +701,10 @@
 ## [Begär en uppdatering av sandbox-databasen](database/database-refresh.md)
 
 # Support
-## [Få hjälp med Dynamics 365 for Finance and Operations, Enterprise-utgåvan och Lifecycle Services](lifecycle-services/lcs-support.md)
+## [Få hjälp med Dynamics 365 for Finance and Operations, Enterprise edition och Lifecycle Services](lifecycle-services/lcs-support.md)
 ## [Logga ett Premier-supportärende](lifecycle-services/premier-support.md)
 ## [Skicka en begäran till serviceteknikerteamet för Dynamics](lifecycle-services/submit-request-dynamics-service-engineering-team.md)
-## [Konfigurera teknisk support för Dynamics 365 for Finance and Operations, Enterprise-utgåvan](lifecycle-services/support-experience.md) 
+## [Konfigurera teknisk support för Dynamics 365 for Finance and Operations, Enterprise edition](lifecycle-services/support-experience.md) 
 ## [Vanliga frågor och svar om fönster för planerat underhåll](lifecycle-services/planned-maintenance-window-faq.md) 
 ## [Molnåtgärder och underhåll](lifecycle-services/cloud-operations-servicing.md)
 ## [Hantera support för Finance and Operations](lifecycle-services/cloud-powered-support-lcs.md)
