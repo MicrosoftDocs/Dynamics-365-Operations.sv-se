@@ -19,10 +19,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 3bf244786e308ebcaee27a16fae378f41086f963
+ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
+ms.openlocfilehash: ce9bc42751cf0f537a0ddb5069aca7c9779a6bb1
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/14/2017
 
 ---
 
@@ -44,10 +44,11 @@ Följande arbetsflödestyper är tillgängliga för Anskaffning och källa.
 |                                  |                                                               |
 |----------------------------------|---------------------------------------------------------------|
 | **Typ**                         | **Använd den här typen för att**                                          |
-| Granskning av inköpsrekvisition      | Skapa granskningsarbetsflöden för inköpsrekvisitioner.            |
-| Granskning av inköpsrekvisitionsrad | Skapa granskningsarbetsflöden för inköpsrekvisitionsrader.       |
+| Granskning av inköpsrekvisition      | Skapa gransknings- och godkännandearbetsflöden för inköpsrekvisitioner.            |
+| Granskning av inköpsrekvisitionsrad | Skapa gransknings- och godkännandearbetsflöden för inköpsrekvisitionsrader.       |
 | Arbetsflöde för inköpsorder          | Skapa granskning- och godkännandearbetsflöden för inköpsorder.     |
 | Arbetsflöde för inköpsorderrad     | Skapa granskning- och godkännandearbetsflöden för orderrader. |
+| Ansökningsarbetsflöde för leverantörstillägg  | Att granska och godkänna arbetsflöden för att lägga till nya leverantörer via leverantörsförfrågningar. |
 
 ## <a name="creating-a-workflow"></a>Skapa ett arbetsflöde
 Om du vill skapa ett arbetsflöde, gå till Anskaffning och källa &gt; Inställningar &gt; Anskaffnings- och källarbetsflöden och skapa ett nytt arbetsflöde genom att välja vilken typ av arbetsflöden som du vill skapa.  
@@ -75,6 +76,6 @@ Du kan tilldela ett godkännandesteg till följande grupper för deltagare.
 
 [Arbetsflöde för inköpsrekvisitioner](purchase-requisitions-workflow.md)
 
-
+[Integration av leverantörer](vendor-onboarding.md)
 
 

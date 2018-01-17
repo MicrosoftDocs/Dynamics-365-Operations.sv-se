@@ -1,9 +1,9 @@
 ---
 title: "Learning Power BI-innehåll"
-description: "Det här avsnittet beskriver Learning Power BI-innehållet. Det förklarar hur du öppnar rapporter, och ger information om den datamodell och de enheter som användes för att skapa innehållet."
+description: "Det här avsnittet beskriver Learning Power BI-innehållet."
 author: jcart1106
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 12/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
-ms.openlocfilehash: bb4a2d6d725f79fe3f095a37b8a37d47339a7966
+ms.sourcegitcommit: cb43245afe578341251b140383a3b03ba2abd962
+ms.openlocfilehash: e5a78812aabaa5c835fe23787a9cbb57d1a7770e
 ms.contentlocale: sv-se
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/19/2017
 
 ---
 
@@ -27,11 +27,7 @@ ms.lasthandoff: 12/01/2017
 
 [!include[banner](../includes/banner.md)]
 
-Det här avsnittet beskriver Microsoft Power BI-innehållet för **utbildning (Learning)**. Det förklarar hur du öppnar innehållspaketet, och beskriver den datamodell och de enheter som användes för att skapa paketet.
-
-## <a name="accessing-the-power-bi-content"></a>Åtkomst till Power BI-innehåll
-
-Du kan hitta Power BI-innehållspaketet **Learning** i biblioteket för gemensamma tillgångar i Microsoft Dynamics Lifecycle Services (LCS). Mer information om hur du laddar ned innehållspaket och använder det i din organisation finns i [Power BI-innehåll i LCS från Microsoft och dina partner](power-bi-content-microsoft-partners.md). Om du vill se en demonstration som visar hur du implementerar Power BI-innehållet, se [Power BI-innehåll från Microsoft och dina samarbetspartners i Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office mix.
+Det här avsnittet beskriver Microsoft Power BI-innehållet för **utbildning (Learning)**.
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Rapporter som ingår i Power BI-innehållet
 
@@ -69,5 +65,5 @@ Följande data används för att fylla i rapporterna i Power-Bi-innehållet för
 | Namn på medarbetare    | Förnamn, efternamn och fullständiga namn                             | Kursdeltagare |
 | Medarbetartitel   | Titel och tjänsteålder                                         | Kursdeltagare |
 
-Dessa enheter används för att skapa beräknade mått i datamodellen. Beräknade åtgärder används sedan för att beräkna huvudindikatorerna för prestanda (KPI) samt de rapporter som används i innehåll. Om du vill inkludera ytterligare beräkningar i rapporterna och instrumentpanelerna kan du ladda ned och ändra filen .pbix från LCS. Filen är den standarddatamodell som använts för att skapa innehållet. När du är klar med ändringarna kan du skapa ett innehållspaket för organisationen samt en instrumentpanel som innehåller den information som du har lagt till.
+
 

@@ -1,9 +1,9 @@
 ---
 title: "Innehåll i Power BI-kostnadshanteringen"
-description: "Det här avsnittet beskriver vad som ingår i Power BI-innehållet för kostnadshantering. Det förklarar hur du öppnar Power BI-rapporter och ger information datamodellen och de enheter som används för att skapa innehållet."
+description: "Det här avsnittet beskriver vad som ingår i Power BI-innehållet för kostnadshantering."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 12/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,10 +19,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f509852f15b9518d0a01be1f89d4f07c76caf341
+ms.sourcegitcommit: cb43245afe578341251b140383a3b03ba2abd962
+ms.openlocfilehash: e0f9042b2647a484a70670d1d29e8036401b39f1
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/19/2017
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 11/03/2017
 [!include[banner](../includes/banner.md)]
 
 
-Det här avsnittet beskriver vad som ingår i Power BI-innehållet för kostnadshantering. Det förklarar hur du öppnar Power BI-rapporter och ger information datamodellen och de enheter som används för att skapa innehållet.
+Det här avsnittet beskriver vad som ingår i Power BI-innehållet för kostnadshantering. 
 
 # <a name="overview"></a>Översikt
 
@@ -51,8 +51,6 @@ Microsoft Power BI-innegållet **Kostnadshantering** riktar sig till lagerreviso
 
 Den primära datakällan för CostAggregatedCostStatementEntryEntity är registret CostStatementCache. Det här registret hanteras av cacheramverket Datauppsättning. Registret uppdateras var 24: e timme som standard, men du kan aktivera manuella uppdateringar i cachkonfigurationen för data. Du kan sedan göra en manuell uppdatering i arbetsytan **Kostnadshantering** eller **Kostnadsanalys**. När uppdateringen av CostStatementCache har körts måste du uppdatera OData-anslutningen på Power BI.com för att visa uppdaterade data på webbplatsen. Avvikelseåtgärderna (inköp, produktion) i Power BI-innehållet gäller endast artiklar som bedömts av lagermetoden Standardkostnad. Produktionsavvikelsen beräknas som skillnaden mellan aktiv och verklig kostnad. Produktionsavvikelsen beräknas när produktionsordern har statusen **Avslutad**. Mer information om olika produktionsavvikelser och hur varje typ beräknas finns i [Analysera avvikelser för en avslutad tillverkningsorder](https://technet.microsoft.com/en-us/library/gg242850.aspx).
 
-## <a name="accessing-the-power-bi-content"></a>Åtkomst till Power BI-innehåll
-Power BI-innehållet **Kostnadshantering** finns tillgängligt via PowerBI.com. Mer information om hur du ansluter och laddar dina Microsoft Dynamics 365 for Finance and Operations-data, se [Åtkomst till Power BI-innehåll från PowerBI.com](power-bi-home-page.md).
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mått som ingår i Power BI-innehållet
 Innehållet omfattar en uppsättning rapportsidor. Sidorna består av en uppsättning mått som visualiseras som diagram, brickor och tabeller. Följande register ger en översikt över de visuella effekterna i Power BI-innehållet **Kostnadshantering**.
@@ -134,15 +132,8 @@ Följande huvuddimensioner används som filter för att dela upp de sammanlagda 
 | Räkenskapskalendrar | Kalender, månad, period, kvartal, år       |
 | KPI-mål        | Mål för lagerexakthet, lageromsättningsmål |
 | Redovisningar          | Valuta, namn, beskrivning                  |
-| Platser            | ID, namn, land, ort                      |
+| Sites            | ID, namn, land, ort                      |
 
-## <a name="additional-resources"></a>Ytterligare resurser
-Nedan följer några användbara länkar som är relaterade till enheter och till att skapa innehåll för Power BI:
-
--   [Datatabeller](..\data-entities\data-entities.md)
--   [Skapa innehållspaket för organisationer](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
--   [Datamodeller med hjälp av Power BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
--   [Lägga till Power BI-rutor till arbetsytor](configure-power-bi-integration.md)
 
 
 

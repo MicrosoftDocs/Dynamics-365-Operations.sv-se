@@ -3,7 +3,7 @@ title: "Power BI-innehåll för lagerställets prestanda"
 description: "Det här avsnittet beskriver vad som ingår i Power BI-innehållet för lagerställets prestanda. Det förklarar hur du öppnar Power BI-rapporter och ger information datamodellen och de enheter som används för att skapa innehållet."
 author: Mirzaab
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 12/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: mirzaab
 ms.dyn365.ops.intro: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
-ms.openlocfilehash: ea53e2bcd01cd06ccdd836ead1671b54aa9e9750
+ms.sourcegitcommit: aac6439bb54b3b9cab066b06c01763e880efef8e
+ms.openlocfilehash: e5a900000286b5f076c377f7b1a9a260cc40621a
 ms.contentlocale: sv-se
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/18/2017
 
 ---
 
@@ -76,15 +76,6 @@ Power BI-innehållet för **Prestanda för lagerställe** innehåller ofta en ra
 | Leveransprestanda        | Leverans efter produkt                       | Den procentandel som levererades tidigt, i tid eller sent per artikel eller artikelgrupp.                                                                                                                                                                                                                                                                                                                                   |
 | Leveransprestanda        | Levererade av kunder                      | Den procentandel som levererades tidigt, i tid eller sent per kund eller kundgrupp.                                                                                                                                                                                                                                                                                                                           |
 | Leveransprestanda        | Levererat per site/lagerställe              | Den procentandel som levererades tidigt, i tid eller sent per site eller lagerställe.                                                                                                                                                                                                                                                                                                                                    |
-## <a name="extending-the-power-bi-content"></a>Utöka Power BI-innehåll
-Genom att använda innehållspaket som är tillgängliga i Microsoft Dynamics Lifecycle Services (LCS) kan du ge bra analyser till människor som inte är inloggade i Microsoft Dynamics 365. Du kan ändra dessa innehållspaket så att de innehåller andra rapporter och modeller och publicera innehållspaket till din Power BI.com-innehavare för analys. 
-
-Du hittar Power BI-innehåll för **Lagerställeprestanda** i biblioteket för gemensamma tillgångar i LCS. Mer information om hur du laddar ned innehållspaket och använder det i din organisation finns i [Power BI-innehåll i LCS från Microsoft och dina partner](power-bi-content-microsoft-partners.md). Om du vill se en demonstration som visar hur du implementerar Power BI-innehållet, se [Power BI-innehåll från Microsoft och dina samarbetspartners i Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office mix.
-
-Hämta innehållet för **Lagerprestanda** som avser versionen av Dynamics 365 som du använder.
-
-> [!NOTE]
-> Om du använder Microsoft Dynamics 365 for Operations version 1611 krävs KB 4011327 för detta Power BI-innehåll. När du loggar in på LCS får du åtkomst till KB här: https://fix.lcs.dynamics.com/issue/results/?q=kb4011327.
 
 ## <a name="understanding-the-data-model-and-calculations"></a>Förstå datamodellen och beräkningar
 Följande data används för att fylla i rapportsidorna Power-Bi-innehållet **Lagerställeprestanda**. Informationen visas som sammansatta mått som mellanlagras i Enhetslagring. Enhetslagring är en Microsoft SQL Server-databas som är optimerad för analys. Mer information finns i [Översikt för Power BI-integrering med enhetsarkiv](power-bi-integration-entity-store.md). 

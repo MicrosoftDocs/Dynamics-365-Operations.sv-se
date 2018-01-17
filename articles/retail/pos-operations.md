@@ -19,10 +19,10 @@ ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 02d777da3b97706f9e63478a1978ac9b230a591e
+ms.sourcegitcommit: 8e294f71355219890ac6f807094a930ac2acc279
+ms.openlocfilehash: 41dc188138436947c4bf7eaf074ef704c201e0cf
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/18/2017
 
 ---
 
@@ -104,6 +104,7 @@ Följande kolumner anger var operationerna kan startas:
 | 521 | Förmånskortspoäng saldo | Visa poängsaldot på det angivna bonuskortet. | Ja | Ja | Nr | Nr | Nr |
 | 914 | Minimera kassafönstret | Den här operationen stöds inte. | Inte tillämpligt | Inte tillämpligt | Inte tillämpligt | Inte tillämpligt | Nr |
 | 1000 | Öppna kassalåda | Utför en "ingen försäljning"-operation och öppna den valda kassalådan. | Ja | Ja | Ja | Ja | Nr |
+| 928 | Orderuppfyllelse | Den här åtgärden låter användare plocka, packa, skicka eller återkalla order för hämtade i butik. | Ja | Ja | Ja | Nr | Nr |
 | 129 | Åsidosätt radproduktskatt | Åsidosätt momsen på den valda radartikeln och använd en annan angiven moms. | Ja | Ja | Nr | Ja | Nr |
 | 130 | Åsidosätt radproduktskatt från lista | Åsidosätt momsen på den valda radartikeln och använd en moms som användaren väljer i en lista. | Ja | Ja | Nr | Ja | Nr |
 | 127 | Åsidosätt transaktionsskatt | Åsidosätt momsen på en transaktion med en annan angiven moms. | Ja | Ja | Nr | Ja | Nr |

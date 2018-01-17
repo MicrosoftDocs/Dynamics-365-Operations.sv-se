@@ -3,7 +3,7 @@ title: "Kostnadsredovisningsanalys för Power BI-innehåll"
 description: "Det här avsnittet beskriver vad som ingår i Power BI-innehållet för kostnadsredovisning. Det förklarar hur du öppnar Power BI-rapporter, och ger information om den datamodell och de enheter som användes för att skapa innehållet."
 author: AndersGirke
 manager: AnnBe
-ms.date: 06/16/2017
+ms.date: 12/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4d2966954ccb9df03227edab1fe7c471ddd20f32
+ms.sourcegitcommit: aac6439bb54b3b9cab066b06c01763e880efef8e
+ms.openlocfilehash: 2d0fb4de84838f1778625d977bdd2ceeaac61f8c
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/18/2017
 
 ---
 
@@ -44,7 +44,7 @@ Mer information om kostnadsredovisning finns [Startsida för kostnadsredovisning
 Genom att definiera säkerhetsnivån för åtkomst inom kostnadsredovisningen och kombinera den med säkerheten på radnivå i Power BI, beviljar du alla ägare av kostnadsobjekt åtkomst till Power BI-innehållet **Kostnadsredovisningsanalys**. Alla data i de visuella effekterna filtreras sedan baserat på den åtkomstnivå som kontrolleras i kostnadsredovisningen. Mer information om säkerhetsnivån för åtkomst och säkerhet på radnivå, se [Ange säkerhetsinställningar för kostnadsredovisningsinnehåll för Power BI](setup-security-cost-accounting-content-pack.md).
 
 ## <a name="accessing-the-power-bi-content"></a>Åtkomst till Power BI-innehåll
-Du kan hitta Power BI-innehållet **Kostnadsredovisningsanalys** i biblioteket för gemensamma tillgångar i Microsoft Dynamics Lifecycle Services (LCS). Mer information om hur du laddar ned innehållspaket och använder det i din organisation finns i [Power BI-innehåll i LCS från Microsoft och dina partner](power-bi-content-microsoft-partners.md). Om du vill se en demonstration som visar hur du implementerar Power BI-innehållet, se [Power BI-innehåll från Microsoft och dina samarbetspartners i Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office mix.
+Du kan hitta Power BI-innehållet **Kostnadsredovisningsanalys** i biblioteket för gemensamma tillgångar i Microsoft Dynamics Lifecycle Services (LCS). Mer information om hur du laddar ned innehållspaket och använder det i din organisation finns i [Power BI-innehåll i LCS från Microsoft och dina partner](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/12/12/power-bi-content-from-microsoft-and-your-partners/). Om du vill se en demonstration som visar hur du implementerar Power BI-innehållet, se [Power BI-innehåll från Microsoft och dina samarbetspartners i Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office mix.
 
 Hämta innehållet **Kostnadsredovisningsanalys** innehåll som avser versionen av Microsoft Dynamics 365 som du använder.
 

@@ -1,9 +1,9 @@
 ---
 title: Kortkommandon
-description: "Följande kortkommandon gäller i hela Microsoft Dynamics 365 for Finance and Operations, Enterprise edition."
+description: "Följande kortkommandon gäller i hela Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition."
 author: jasongre
 manager: AnnBe
-ms.date: 10/10/2017
+ms.date: 12/12/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7a828090fa34eb96d2b557eb06e48ad05b421ae8
-ms.openlocfilehash: 8e87721af34e1527d1d8eb254f0443e37d137730
+ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
+ms.openlocfilehash: 8bf0f44583d183d992547c773f2cf7a8ac1db5fc
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/20/2017
+ms.lasthandoff: 12/14/2017
 
 ---
 
@@ -30,11 +30,11 @@ ms.lasthandoff: 11/20/2017
 [!include[banner](../includes/banner.md)]
 
 
-Följande kortkommandon gäller i hela Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
+Följande kortkommandon gäller i hela Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition. 
 
 **Obs!** Tangentbordsgenvägarna som beskrivs här hänvisar till en amerikansk tangentbordslayout. Knappar på andra tangentbordslayouter kan kanske inte exakt motsvarar tangenterna på ett tangentbord i USA.
 
-## <a name="finding-a-shorcut"></a>Söka efter en genväg
+## <a name="finding-a-shortcut"></a>Söka efter en genväg
 I och med plattformsuppdatering 11 kan användarna kan upptäcka tillgängliga genvägar direkt via användargränssnittet. Högerklicka på en kontroll och välj **Visa genvägar**. Då öppnas en dialogruta som visar de kortkommandon som du kan använda baserat på var du befinner dig på sidan. 
 
 
@@ -143,6 +143,9 @@ I och med plattformsuppdatering 11 kan användarna kan upptäcka tillgängliga g
 | Flytta till första posten                                                                                               | Ctrl+start                       |
 | Flytta till den sista posten                                                                                                | Ctrl+End                        |
 | Utför standardåtgärd i ett rutnät<br><br>**Obs:** Denna genväg aktiveras när fokus ligger på en cell som innehåller en hyperlänk och samtliga celler i den kolumnen har hyperlänkar.                 | Ange                           |
+| Växla fokus mellan den markerade raden och rubrikraden                                                               | Alt+Skift+H                     |
+| Gör den aktuella kolumnen större/mindre (med fokus i rubrikraden)                                                  | Högerpil/vänsterpil        |
+| Öppna rutnätsfiltrering för den aktuella kolumnen (med fokus i rubrikraden)                                              | Ange                           |
 
 ## <a name="input-control-shortcuts"></a>Mata in kontrollgenvägar
 |                                                                              |                               |

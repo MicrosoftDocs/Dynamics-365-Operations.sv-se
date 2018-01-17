@@ -17,10 +17,10 @@ ms.author: shajain
 ms.search.validFrom: 2017-08-01
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 9eb962e903ac9ee359134cae35ebd399e23cc4e1
+ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
+ms.openlocfilehash: 83c2ce79f5bef058f55af0ecf498b207efc0507a
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/14/2017
 
 ---
 
@@ -41,4 +41,5 @@ Baserat på inställningarna i detaljhandelns huvudkontor kan produkterna klassi
     
 - **Inga serienummer krävs för att lägga kundorder** – Kundorder kan läggas i en butik och utföras från en annan. En kassör som lägger en kundorder behöver inte ange något serienummer. Serienumret anges i samband med plock eller hämtning. Ett serienummer måste emellertid anges för samtliga radobjekt som leveranstypen **Utkörning** väljs för. I annat fall kan transaktionen inte slutföras.    
 - **Serialiserade produkter sammanställs inte på transaktionsskärmen** – Inställningen **Sammanställda produkter** i fältgruppen **Terminal** på sidan **Funktionalitetsprofil** låter dig sammanställa samma icke-serialiserade produkter på transaktionsskärmen. När samma produkter sammanställs blir de lättare att se i transaktionsrutnätet. Eftersom serienummer som regel är unika och försäljningsmedarbetare inte behöver ange serienummer före kassan, gäller inställningen **Sammanställda produkter** emellertid inte serialiserade produkter. Därför kommer serialiserade produkter inte att sammanställas på transaktionsskärmen om inställningen **Sammanställ produkter** väljs.
+- **Möjlighet att söka efter journalerna med serienummer** - Journalerna går nu dessutom att söka med serienummer. Öppna åtgärden Journaler och tryck på knappen Avancerad sökning i appfältet. Knappen Lägg till filter gör det möjligt att även använda ett filter vid sökning efter serienummer.
 

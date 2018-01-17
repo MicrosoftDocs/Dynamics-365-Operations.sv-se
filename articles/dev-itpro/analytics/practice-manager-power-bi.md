@@ -3,7 +3,7 @@ title: "Power BI-innehåll för praxischef"
 description: "Det här avsnittet beskriver vad som ingår i innehållet för praxischef för Power BI. Det förklarar hur du kommer åt rapporterna som är inkluderade i innehållet, samt ger dig information om den datamodell och de enheter som användes för att skapa innehållet."
 author: KimANelson
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 12/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,10 +17,10 @@ ms.author: knelson
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
-ms.openlocfilehash: 836997f9f5b146ff48252c3f06153791ec1aabed
+ms.sourcegitcommit: aac6439bb54b3b9cab066b06c01763e880efef8e
+ms.openlocfilehash: 44f017fc3460b83b730f2f7c909c6b88480dd918
 ms.contentlocale: sv-se
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/18/2017
 
 ---
 
@@ -39,7 +39,9 @@ Power BI-innehållet för **Praxischef** innehåller fem rapportsidor: en övers
 Alla belopp i innehållet visas i systemvalutan. Du kan ange systemvalutan på sidan **Systemparametrar**.
 
 ## <a name="accessing-the-power-bi-content"></a>Åtkomst till Power BI-innehåll
+
 Power BI-innehållet **Praxischef** visas i arbetsytan **Projekthantering**.
+
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Rapporter som ingår i Power BI-innehållet
 
@@ -47,7 +49,7 @@ I följande tabell finns information om mått som finns på varje enskild rappor
 
 | Rapportsida       | Mätvärden |
 |-------------------|---------|
-| Projektöversikt | <ul><li>Skapade projekt</li><li>Uppskattade projekt</li><li>Pågående projekt</li><li>Antal projekt efter stadium</li><li>Antal projekt efter stad</li><li>Faktiskt intäkt efter kund</li><li>Budget-bruttomarginal efter projekt</li><li>Översikt - Hantering av intjänat värde</li></ul> |
+| Projektöversikt | <ul><li>Skapade projekt</li><li>Uppskattade projekt</li><li>Pågående projekt</li><li>Faktiskt intäkt efter kund</li><li>Budget-bruttomarginal efter projekt</li><li>Översikt - Hantering av intjänat värde</li></ul> |
 | Kostnad              | <ul><li>Faktiskt kostnad jämförd med budgetkostnad efter månad</li><li>Faktiskt kostnad jämförd med budgetkostnad efter år</li><li>Faktisk kostnad jämförd med budgetkostnad efter kategori</li><li>Faktisk kostnad efter transaktionstyp</li></ul> |
 | Intäkt           | <ul><li>Faktiskt intäkt efter månad</li><li>Faktisk intäkt efter postnummer</li><li>Faktisk intäkt jämförd med budgetintäkt efter kategori</li><li>Faktiskt intäkt efter kundbransch</li></ul> |
 | EVM               | Index för kostnad och schemaprestanda efter projekt |
@@ -55,74 +57,67 @@ I följande tabell finns information om mått som finns på varje enskild rappor
 
 Diagrammen och rutorna i samtliga dessa rapporter kan filtreras och fästas på instrumentpanelen. Mer information om hur du filtrerar och fäster i Power BI finns i [Skapa och konfigurera en instrumentpanel](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards/). Du kan också använda funktionen Exportera underliggande data för att exportera underliggande data som summerats i en visualisering.
 
-## <a name="extending-the-power-bi-content"></a>Utöka Power BI-innehåll
-Genom att använda innehållspaket som är tillgängliga i Microsoft Dynamics Lifecycle Services (LCS) kan du ge bra analyser till människor som inte är inloggade i Microsoft Dynamics 365. Du kan ändra dessa innehållspaket så att de innehåller andra rapporter eller modeller och sedan publicera dem till din Power BI.com-innehavare för analys. 
-
-Du hittar Power BI-innehåll för **Praxischef** i biblioteket Gemensamma tillgångar i LCS. Mer information om hur du laddar ned innehållspaket och använder det i din organisation finns i [Power BI-innehåll i LCS från Microsoft och dina partner](power-bi-content-microsoft-partners.md). Om du vill se en demonstration som visar hur du implementerar Power BI-innehållet, se [Power BI-innehåll från Microsoft och dina samarbetspartners i Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office mix.
-
-Hämta innehållet för **Praxischef** som gäller för den version av Dynamics 365 som du använder.
-
 ## <a name="understanding-the-data-model-and-entities"></a>Förstå datamodellen och enheterna
 
 Följande data används för att fylla i rapportsidorna i Power-Bi-innehållet **Praxischef**. Informationen visas som sammansatta mått som mellanlagras i Enhetslagring. Enhetslagring är en Microsoft SQL Server-databas som är optimerad för analys. Mer information finns i [Översikt för Power BI-integrering med enhetsarkiv](power-bi-integration-entity-store.md).
 
 Nedanstående avsnitt beskriver de sammanlagda mått som används i respektive enhet.
 
-### <a name="entity-projectaccountingcubeactualhourutilization"></a>Enhet: ProjectAccountingCube_ActualHourUtilization
+### <a name="entity-projectaccountingcubeactualhourutilization"></a>Enhet: ProjectAccountingCube\_ActualHourUtilization
 **Datakälla:** ProjEmplTrans
 
-| Sammanlagda huvudmått      | Fält                              | beskrivning | 
+| Sammanlagda huvudmått      | Fält                              | beskrivning |
 |--------------------------------|------------------------------------|-------------|
 | Faktiska fakturerbara utnyttjade timmar | Sum(ActualUtilizationBillableRate) | Summan av faktiska fakturerbara utnyttjade timmar. |
 | Faktiska fakturerbara ej fakturerbara timmar   | Sum(ActualBurdenBillableRate)      | Summan av de faktiska omkostnaderna. |
 
-### <a name="entity-projectaccountingcubeactuals"></a>Enhet: ProjectAccountingCube_Actuals
+### <a name="entity-projectaccountingcubeactuals"></a>Enhet: ProjectAccountingCube\_Actuals
 **Datakälla:** ProjTransPosting
 
-| Sammanlagda huvudmått | Fält              | beskrivning | 
+| Sammanlagda huvudmått | Fält              | beskrivning |
 |---------------------------|--------------------|-------------|
-| Faktisk intäkt            | Sum(ActualRevenue) | Summan av bokförda intäkter för alla transaktioner. |   
+| Faktisk intäkt            | Sum(ActualRevenue) | Summan av bokförda intäkter för alla transaktioner. |
 | Faktisk kostnad               | Sum(ActualCost)    | Summan av bokförda kostnader för alla transaktionstyper. |
 
-### <a name="entity-projectaccountingcubecustomer"></a>Enhet: ProjectAccountingCube_Customer
+### <a name="entity-projectaccountingcubecustomer"></a>Enhet: ProjectAccountingCube\_Customer
 **Datakälla:** CustTable
 
-| Sammanlagda huvudmått | Fält                                            | beskrivning | 
-|---------------------------|--------------------------------------------------|-------------|
-| Antal projekt        | COUNTA(ProjectAccountingCube_Projects[PROJECTS]) | Antal tillgängliga projekt. |
+| Sammanlagda huvudmått | Fält                                             | beskrivning |
+|---------------------------|---------------------------------------------------|-------------|
+| Antal projekt        | COUNTA(ProjectAccountingCube\_Projects[PROJECTS]) | Antal tillgängliga projekt. |
 
 
-### <a name="entity-projectaccountingcubeforecasts"></a>Enhet: ProjectAccountingCube_Forecasts
+### <a name="entity-projectaccountingcubeforecasts"></a>Enhet: ProjectAccountingCube\_Forecasts
 **Datakälla:** ProjTransBudget
 
-| Sammanlagda huvudmått | Fält                  | beskrivning | 
+| Sammanlagda huvudmått | Fält                  | beskrivning |
 |---------------------------|------------------------|-------------|
 | Budgeterad kostnad               | Sum(BudgetCost)        | Summan av prognosticerade kostnader för alla transaktionstyper. |
-| Budgeterad intäkt            | Sum(BudgetRevenue)     | Summan av upplupen prognos/fakturerad intäkt.  |
+| Budgeterad intäkt            | Sum(BudgetRevenue)     | Summan av upplupen prognos/fakturerad intäkt. |
 | Budgeterad bruttomarginal       | Sum(BudgetGrossMargin) | Skillnaden mellan summan av den totala prognosticerade intäkten och summan av den totala prognoskostnaden. |
 
-### <a name="entity-projectaccountingcubeprojectplancostsview"></a>Enhet: ProjectAccountingCube_ProjectPlanCostsView
+### <a name="entity-projectaccountingcubeprojectplancostsview"></a>Enhet: ProjectAccountingCube\_ProjectPlanCostsView
 **Datakälla:** Projekt
 
-| Sammanlagda huvudmått | Fält                    | beskrivning | 
+| Sammanlagda huvudmått | Fält                    | beskrivning |
 |---------------------------|--------------------------|-------------|
 | Planerad kostnad              | Sum(SumOfTotalCostPrice) | Total självkostnad i uppskattningar för alla projekttransaktionstyper med planerade uppgifter. |
 
-### <a name="entity-projectaccountingcubeprojects"></a>Enhet: ProjectAccountingCube_Projects
+### <a name="entity-projectaccountingcubeprojects"></a>Enhet: ProjectAccountingCube\_Projects
 **Datakälla:** Projekt
 
-| Sammanlagda huvudmått    | Fält | beskrivning | 
+| Sammanlagda huvudmått    | Fält | beskrivning |
 |------------------------------|-------|-------------|
-| Index för kostnadsresultat       | ProjectAccountingCube_Projects [upparbetat värde] / ProjectAccountingCube_Projects [faktisk totalkostnad för slutförda uppgifter] | Beräkningen av det totala upparbetade värdet delat med den totala faktiska kostnaden. |
-| Index för tidsplansresultat   | ProjectAccountingCube_Projects [upparbetat värde] / ProjectAccountingCube_Projects [planerad totalkostnad för slutförda uppgifter] | Beräkningen av det totala upparbetade värdet delat med den totala planerade kostnaden. |
-| Procent av slutfört arbete | Procent av slutfört arbete = ProjectAccountingCube_Project[faktisk totalkostnad för slutförda uppgifter] / (ProjectAccountingCube_Projects [faktisk totalkostnad för slutförda uppgifter] + ProjectAccountingCube_Projects [total planerad kostnad för projekt] - ProjectAccountingCube_Projects [total planerad kostnad för slutförda uppgifter]) | Total procentandel färdigt arbete baserat på faktisk totalkostnad för slutförda uppgifter och den planerade projektkostnaden. |
-| Kvot för faktiska fakturerbara timmar  | ProjectAccountingCube_Projects [totala faktiska fakturerbara utnyttjade projekttimmar] / (ProjectAccountingCube_Projects [totala faktiska fakturerbara utnyttjade projekttimmar] + ProjectAccountingCube_Projects [projektets totala faktiska fakturerbara ej fakturerbara timmar] | Totala faktiska fakturerbara timmar, baserat på utnyttjad timmar och ej fakturerbara timmar. |
-| Intjänat värde                 | ProjectAccountingCube_Projects [total planerad projektkostnad] * ProjectAccountingCube_Projects [procentandel av slutfört arbete] | Planerad totalkostnad multiplicerad med procentandelen slutfört arbete. |
+| Index för kostnadsresultat       | ProjectAccountingCube\_Projects[Intjänat värde] ÷ ProjectAccountingCube\_Projects[Faktisk totalkostnad för slutförda uppgifter] | Beräkningen av det totala upparbetade värdet delat med den totala faktiska kostnaden. |
+| Index för tidsplansresultat   | ProjectAccountingCube\_Projects[Intjänat värde] ÷ ProjectAccountingCube\_Projects[Planerad totalkostnad för slutförda uppgifter] | Beräkningen av det totala upparbetade värdet delat med den totala planerade kostnaden. |
+| Procent av slutfört arbete | Procent av slutfört arbete = ProjectAccountingCube\_Projects[Faktisk totalkostnad för slutförda uppgifter] ÷ (ProjectAccountingCube\_Projects[Faktisk totalkostnad för slutförda uppgifter] + ProjectAccountingCube\_Projects[Total planerad kostnad för projekt] – ProjectAccountingCube\_Projects[Planerad totalkostnad för slutförda uppgifter]) | Total procentandel färdigt arbete baserat på faktisk totalkostnad för slutförda uppgifter och den planerade projektkostnaden. |
+| Kvot för faktiska fakturerbara timmar  | ProjectAccountingCube\_Projects[Totala faktiska fakturerbara utnyttjade projekttimmar] ÷ (ProjectAccountingCube\_Projects[Totala faktiska fakturerbara utnyttjade projekttimmar] + ProjectAccountingCube\_Projects[projektets totala faktiska fakturerbara ej fakturerbara timmar]) | Totala faktiska fakturerbara timmar, baserat på utnyttjad timmar och ej fakturerbara timmar. |
+| Intjänat värde                 | ProjectAccountingCube\_Projects[total planerad projektkostnad] × ProjectAccountingCube\_Projects[procentandel av slutfört arbete] | Planerad totalkostnad multiplicerad med procentandelen slutfört arbete. |
 
-### <a name="entity-projectaccountingcubetotalestimatedcosts"></a>Enhet: ProjectAccountingCube_TotalEstimatedCosts 
+### <a name="entity-projectaccountingcubetotalestimatedcosts"></a>Enhet: ProjectAccountingCube\_TotalEstimatedCosts 
 **Datakälla:** ProjTable
 
-| Sammanlagda huvudmått       | Fält               | beskrivning | 
+| Sammanlagda huvudmått       | Fält               | beskrivning |
 |---------------------------------|---------------------|-------------|
 | Planerad kostnad för slutförd aktivitet | Sum(TotalCostPrice) | Uppskattad total självkostnad för alla projekttransaktionstyper som har slutförda uppgifter. |
 

@@ -18,10 +18,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 28a8c7b739ecd991c6dc4934e379e3a2810f0240
+ms.sourcegitcommit: cb5a674472936a52b624c548fd37079d57eb6cb7
+ms.openlocfilehash: 9a36b3e7a8e496632ca7041018abe8176a2e4f25
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/14/2017
 
 ---
 
@@ -35,7 +35,7 @@ Den här artikeln innehåller information om hur du ställer och genererar betal
 Ställa in betalningskontroll för att generera en elektrisk lista med checkar som ges till banken. När checken sedan visas för banken, jämför banken checken med listan med checkar. Om checken matchar en check i listan behandlar banken checken. Om checken inte matchar en check in listan kvarhåller banken checken för granskning.
 
 ## <a name="security-for-positive-pay-files"></a>Säkerhet för betalningskontrollfiler
-Betalningskontrollfiler kan innehålla känslig information om betalningsmottagare och checkbelopp. Se därför till att du använder lämpliga säkerhetsåtgärder från det att filerna skapas tills det att de tas emot av banken. Betalningskontrollfiler hämtas till den plats som anges av din webbläsare. Eftersom betalningskontrollfiler kan innehålla känslig information är det viktigt att endast auktoriserade användare har åtkomst för att generera eller visa den här informationen i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Använd följande tabell som hjälper dig att bestämma behörigheterna som krävs.
+Betalningskontrollfiler kan innehålla känslig information om betalningsmottagare och checkbelopp. Se därför till att du använder lämpliga säkerhetsåtgärder från det att filerna skapas tills det att de tas emot av banken. Betalningskontrollfiler hämtas till den plats som anges av din webbläsare. Eftersom betalningskontrollfiler kan innehålla känslig information är det viktigt att endast auktoriserade användare har åtkomst för att generera eller visa den här informationen i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition. Använd följande tabell som hjälper dig att bestämma behörigheterna som krävs.
 
 <table>
 <colgroup>
