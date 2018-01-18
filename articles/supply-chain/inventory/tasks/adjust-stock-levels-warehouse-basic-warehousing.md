@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: YuyuScheller
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
@@ -23,14 +23,14 @@ ms.contentlocale: sv-se
 ms.lasthandoff: 09/29/2017
 
 ---
-# Justera lagernivåer i lagerstället (grundläggande lagerstyrning)
+# <a name="adjust-stock-levels-in-the-warehouse-basic-warehousing"></a>Justera lagernivåer i lagerstället (grundläggande lagerstyrning)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
 Den här proceduren beskriver hur du kan skapa och bokför en lagerjusteringsjournal för att justera lagernivåer för produkter på lagerstället. Du måste ha ett lagerjournalnamn konfigurerat för lagerjusteringarna innan du sätter igång. Du kan gå igenom den här proceduren i demonstrationsdataföretaget USMF eller använda dina egna data. Dessa uppgifter utförs vanligtvis av en lagerarbetare.
 
 
-## Skapa en lagerjusteringsjournal
+## <a name="create-an-inventory-adjustment-journal"></a>Skapa en lagerjusteringsjournal
 1. Gå till Lagerhantering > Journalposter > Artiklar > Lagerjustering.
 2. Klicka på Ny.
 3. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Namn.
@@ -38,7 +38,7 @@ Den här proceduren beskriver hur du kan skapa och bokför en lagerjusteringsjou
     * Vissa fält kommer att fyllas i baserat på inställningarna för journalnamnet för lagerjustering som du väljer.  
 5. Klicka på OK.
 
-## Skapa journalrader
+## <a name="create-journal-lines"></a>Skapa journalrader
 1. Klicka på Ny.
 2. Markera fältet för artikelnummer i listan.
 3. Välj en artikel i fältet Artikelnummer. Om du använder demonstrationsdataföretaget USMF skriver du "D0001".
@@ -50,7 +50,7 @@ Den här proceduren beskriver hur du kan skapa och bokför en lagerjusteringsjou
 8. Ange ett tal i fältet Kvantitet.
     * Fältet Självkostnad anger kostnaden per enhet för lagerinleveranser. Om kostnaden inte har angetts för artikelnumret eller om du vill ändra det manuellt gör du det här.  
 
-## Validera och bokför lagerjusteringsjournalen
+## <a name="validate-and-post-the-inventory-adjustment-journal"></a>Validera och bokför lagerjusteringsjournalen
 1. Klicka på Validera.
 2. Klicka på OK.
 3. Klicka på Bokför.

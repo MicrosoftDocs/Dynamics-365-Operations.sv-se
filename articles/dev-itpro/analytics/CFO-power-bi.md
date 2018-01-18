@@ -3,7 +3,7 @@ title: "Power BI-innehåll för översikt över ekonomichef"
 description: "Det här avsnittet beskriver Microsoft Power BI-innehåll för översikt över ekonomichef"
 author: kweekley
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 12/18/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,10 +16,10 @@ ms.author: kweekley
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
-ms.openlocfilehash: fcc93daf96f65cd340d6be766c6ef83a74d62cc5
+ms.sourcegitcommit: aac6439bb54b3b9cab066b06c01763e880efef8e
+ms.openlocfilehash: fd3696321598267a2acd3ad61f533641c2cc2e77
 ms.contentlocale: sv-se
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/18/2017
 
 ---
 
@@ -47,8 +47,5 @@ Följande tabell visar Power BI-innehållet som rapporten kopieras från och de 
 | [Hantering av kredit och inkasso](../../financials/accounts-receivable/credit-collections-power-bi.md) | <ul><li>Förfallna kunder</li><li>Kundens över kreditgräns</li><li>Åldersfördelade saldon</li></ul> |
 | [Inköps- och utgiftsanalys](../../financials/accounts-receivable/credit-collections-power-bi.md) | <ul><li>Inköp per månad/dag</li><li>Främsta 10 leverantörerna per inköp</li><li>Främsta 10 produkterna per inköp</li></ul> |
 
-## <a name="extending-the-power-bi-content"></a>Utöka Power BI-innehåll
-Genom att använda innehållspaket som är tillgängliga i Microsoft Dynamics Lifecycle Services (LCS) kan du ge bra analyser till människor som inte är inloggade i Microsoft Dynamics 365. Du kan ändra dessa innehållspaket så att de innehåller andra rapporter och modeller och publicera innehållspaket till din Power BI.com-innehavare för analys.
 
-Du hittar Power BI-innehåll för **Ekonomichef översikt** i det delade resursbiblioteket i LCS. Mer information om hur du laddar ned innehållspaket och använder det i din organisation finns i [Power BI-innehåll i LCS från Microsoft och dina partner](power-bi-content-microsoft-partners.md). Om du vill se en demonstration som visar hur du implementerar Power BI-innehållet, se [Power BI-innehåll från Microsoft och dina samarbetspartners i Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office mix.
 

@@ -3,11 +3,12 @@ title: Projekthantering och redovisning
 description: "Funktionen för projekthantering och redovisning kan användas i flera branscher för att tillhandahålla en tjänst, för att tillverka en produkt eller för att uppnå ett resultat."
 author: KimANelson
 manager: AnnBe
-ms.date: 11/03/2017
+ms.date: 01/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: ProjTable
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations

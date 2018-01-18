@@ -3,7 +3,7 @@ title: "Power BI-innehåll för produktionsprestanda"
 description: "Det här avsnittet beskriver vad som ingår i Power BI-innehållet för produktionsprestanda. Det förklarar hur du öppnar Power BI-rapporter, och ger information om den datamodell och de enheter som användes för att skapa innehållet."
 author: AndersGirke
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 12/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -16,10 +16,10 @@ ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
-ms.openlocfilehash: 898a1a513850024fd0164955bdd204ee4b08c632
+ms.sourcegitcommit: cb43245afe578341251b140383a3b03ba2abd962
+ms.openlocfilehash: 592514e9ef8b0ec1e3bacda0f26d5991da88449e
 ms.contentlocale: sv-se
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/19/2017
 
 ---
 
@@ -59,15 +59,6 @@ Följande register ger en översikt över visualiseringar som ingår.
 | Feltrend efter resurs                  | Defektgrad (ppm) efter processad kvantitet | |
 | Produktionsavvikelser för kostnadsberäkning av jobborder | <ul><li>Produktionsavvikelse efter datum och kostnadsgruppstyp</li><li>Produktionsavvikelse efter plats och kostnadsgruppstyp</li><li>Topp 10-produkter med negativ produktionsavvikelse</li><li>Topp 10-produkter med produktionsavvikelse efter resurs</li></ul> | <ul><li>Realiserad kostnad</li><li>Produktionsavvikelse</li><li>Produktionsavvikelse i procent</li></ul> |
 
-## <a name="extending-the-power-bi-content"></a>Utöka Power BI-innehåll
-Genom att använda innehållspaket som är tillgängliga i Microsoft Dynamics Lifecycle Services (LCS) kan du ge bra analyser till människor som inte är inloggade i Microsoft Dynamics 365. Du kan ändra dessa innehållspaket så att de innehåller andra rapporter och modeller och publicera innehållspaket till din Power BI.com-innehavare för analys.
-
-Du hittar Power BI-innehållet **Produktionsprestanda** i biblioteket Gemensamma tillgångar i LCS. Mer information om hur du laddar ned innehållspaket och använder det i din organisation finns i [Power BI-innehåll i LCS från Microsoft och dina partner](power-bi-content-microsoft-partners.md). Om du vill se en demonstration som visar hur du implementerar Power BI-innehållet, se [Power BI-innehåll från Microsoft och dina samarbetspartners i Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office mix.
-
-Hämta innehållet för **Produktionsprestanda** som avser versionen av Dynamics 365 som du använder.
-
-> [!NOTE]
-> Om du använder Microsoft Dynamics 365 for Operations version 1611 krävs KB 4011327 för detta Power BI-innehåll. När du loggar in på LCS får du åtkomst till KB här: https://fix.lcs.dynamics.com/issue/results/?q=kb4011327.
 
 ## <a name="understanding-the-data-model-and-entities"></a>Förstå datamodellen och enheterna
 
@@ -139,12 +130,5 @@ Följande tabell visar nyckeldimensionerna som används som filter för att dela
 | Resurser                 | Resurs-ID, resursnamn, resurstyp och resursgrupp |
 | Produkter                  | Produktnummer, produktnamn, artikel-ID och artikelgrupp         |
 
-## <a name="additional-resources"></a>Ytterligare resurser
 
-Nedan följer några användbara länkar som är relaterade till enheter och till att skapa innehåll för Power BI:
-
-- [Datatabeller](../data-entities/data-entities.md)
-- [Skapa innehållspaket för organisationer](https://powerbi.microsoft.com/en-us/documentation/powerbi-service-organizational-content-packs-introduction/)
-- [Datamodeller med hjälp av Power BI](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-2-1-intro-modeling-data)
-- [Lägga till Power BI-rutor till arbetsytor](configure-power-bi-integration.md)
 

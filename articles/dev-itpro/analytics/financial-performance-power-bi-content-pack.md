@@ -1,9 +1,9 @@
 ---
 title: "Innehållspaket för ekonomiska resultat för Power BI"
-description: "Det här avsnittet beskriver Power BI-innehåll för finansiellt resultat. Det beskriver instrumentpanelen och de rapporter som är inkluderade, samt ger dig information om den datamodell och de enheter som användes för att skapa innehållet."
+description: "Det här avsnittet beskriver Power BI-innehåll för finansiellt resultat."
 author: kweekley
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 12/19/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 6e64337f19600b18320550d91c134949c33af7b0
-ms.openlocfilehash: 3638f5acf6a05ec419dc4308e861d95f0d7b2cea
+ms.sourcegitcommit: cb43245afe578341251b140383a3b03ba2abd962
+ms.openlocfilehash: 83ea868e7612f30afa1b99f374878f4ba415113f
 ms.contentlocale: sv-se
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 12/19/2017
 
 ---
 
@@ -30,21 +30,6 @@ ms.lasthandoff: 12/01/2017
 [!include[banner](../includes/banner.md)]
 
 Det här avsnittet beskriver Microsoft Power BI-innehåll för **finansiellt resultat**. Det beskriver instrumentpanelen och de rapporter som är inkluderade, samt ger dig information om den datamodell och de enheter som användes för att skapa innehållet.
-
-## <a name="accessing-the-power-bi-content"></a>Åtkomst till Power BI-innehåll
-
-Du kan använda **ekonomiska resultat** Power BI från Microsoft Dynamics Lifecycle Services (LCS) och PowerBI.com.
-
-### <a name="available-from-lcs"></a>Tillgänglig från LCS
-Det Power BI-innehåll för **ekonomiska resultat** som är tillgängligt från LCS stödjer följande versioner:
-
-- Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition-versionerna
-- Microsoft Dynamics 365 for Operations version 1611 
-
-Du hittar  Power BI-innehållet i det delade resursbiblioteket i LCS. Mer information om hur du laddar ned innehållspaket och använder det i din organisation finns i [Power BI-innehåll i LCS från Microsoft och dina partner](power-bi-content-microsoft-partners.md). Om du vill se en demonstration som visar hur du implementerar Power BI-innehållet, se [Power BI-innehåll från Microsoft och dina samarbetspartners i Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office mix.
-
-### <a name="available-from-powerbicom"></a>Från PowerBI.com
-Power BI-innehållet för **exkomnomiska resultat** som finns på PowerBI.com stöder Microsoft Dynamics 7.0 AX, versioner 7.0 och 7.0.1. Mer information om hur du ansluter och laddar dina Dynamics AX, se [Åtkomst till Power BI-innehåll från PowerBI.com](power-bi-home-page.md).
 
 ## <a name="main-account-setup"></a>Huvudkontoinställningar
 Konfigurationen av huvudkonton är viktig eftersom organisationer vill att skuld- och intäktsbelopp ska anges som positiva belopp i rapporter. Huvudkontotypen måste anges som **Skuld** eller **Intäkt** för att huvudkontona ska anges som positiva belopp. När dessa kontotyper används, kommer rapporteringen via Power BI att vända på tecknen och ange beloppen som positiva.
@@ -101,5 +86,5 @@ Följande enheter användes till grund för Power BI-innehållspaket för **ekon
 - Redovisningar
 - ChartofAccounts
 
-Dessa enheter används för att skapa beräknade mått i datamodellen. Beräknade åtgärder används för att beräkna huvudindikatorerna för prestanda (KPI) samt de rapporter som används i innehåll. Som standard kommer innehållspaketet med data för de senaste tre åren och ett framtida år. Om du vill ta med ytterligare beräkningar i dina rapporter och din instrumentpanel, kan du ändra arbetsboken [Microsoft Excel-arbetsboken](https://mbs.microsoft.com/customersource/global/AX/downloads/reports/msdaxfinpercontentpowerbi). Denna arbetsbok är den standarddatamodell som använts för att skapa innehållet. När du är klar med ändringarna kan du skapa ett innehållspaket för organisationen samt en instrumentpanel som innehåller den information som du har lagt till.
+Dessa enheter används för att skapa beräknade mått i datamodellen. Beräknade åtgärder används för att beräkna huvudindikatorerna för prestanda (KPI) samt de rapporter som används i innehåll. Som standard kommer innehållspaketet med data för de senaste tre åren och ett framtida år. Om du vill ta med ytterligare beräkningar i dina rapporter och din instrumentpanel, kan du ändra arbetsboken [Microsoft Excel-arbetsboken](https://mbs.microsoft.com/customersource/global/AX/downloads/reports/msdaxfinpercontentpowerbi). Denna arbetsbok är den standarddatamodell som använts för att skapa innehållet. 
 

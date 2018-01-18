@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: BankPositivePaySummary
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
@@ -18,10 +19,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: e562416ab1c6da81a553f4751137ee26e495d107
+ms.sourcegitcommit: cb5a674472936a52b624c548fd37079d57eb6cb7
+ms.openlocfilehash: 70e0249ccf317a5a59afd97899187ee58409de22
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/14/2017
 
 ---
 
@@ -42,7 +43,7 @@ Betalningskontrollfiler skapas genom att använda dataentiteter. Innan du skapar
 
 För varje bankkonto som du vill skapa information om betalningskontroll för måste du tilldela betalningskontrollformatet. När du har genererat betalningarna kan du generera en betalningskontrollfil för en enda juridisk person och ett enskilt bankkonto. Du kan även generera betalningskontrollfiler för flera juridiska personer och bankkonton samtidigt. 
 
-När checkarna som anges i en betalningskontrollfil har betalats får du ett bekräftelsenummer från banken. Du kan sedan bekräfta betalningskontrollfilen i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
+När checkarna som anges i en betalningskontrollfil har betalats får du ett bekräftelsenummer från banken. Du kan sedan bekräfta betalningskontrollfilen i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition. 
 
 Om du måste ändra en betalningskontrollfil kan du sedan återkalla den. Sedan, för varje check i betalningskontrollfilen återställs fältet som anger om denna check har inkluderats i en betalningskontrollfil.
 

@@ -3,7 +3,7 @@ title: "Återställa datatorget för Financial reporting"
 description: "Det här avsnittet beskriver hur du återställer datatorget för Financial reporting."
 author: aolson
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 12/11/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -17,10 +17,10 @@ ms.author: aloson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 0786d3377b914791106ef30455d676e5ab2ae03d
-ms.openlocfilehash: c708fa18b8676d8ff57c26b3176a36d86df29387
+ms.sourcegitcommit: 5b956dcc5a4a93033396ae0ffcf8b7aeba2cf3f2
+ms.openlocfilehash: a07e8b5bae2c4f71e9212cd2f8080d2481769818
 ms.contentlocale: sv-se
-ms.lasthandoff: 12/07/2017
+ms.lasthandoff: 12/14/2017
 
 ---
 
@@ -34,7 +34,7 @@ Det här avsnittet beskriver hur du återställer datatorget för Financial repo
 - Microsoft Dynamics 365 for Finance and Operations Financial Reporting, version 7.0.10000.4 och senare
 - Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (lokal)
 
-Om du vill ha Finance and Operations Financial reporting i version 7.2.6.0 kan du ladda ned KB 4052514 från <https://support.microsoft.com/en-us/help/4052514>.
+Om du vill ha Finance and Operations Financial reporting i version 7.2.6.0 kan du ladda ned KB 4052514 från <https://fix.lcs.dynamics.com/Issue/Resolved?kb=4052514>.
 
 ## <a name="reset-the-financial-reporting-data-mart-for-finance-and-operations-financial-reporting-release-7260-and-later"></a>Återställ datatorget för Financial reporting för Finance and Operations Financial reporting version 7.2.6.0 och senare
 
@@ -55,7 +55,7 @@ I vissa fall kan behöva du återställa datatorget för Financial reporting. Du
 
 För att återställa datatorget öppnar du menyn **Verktyg** i Report designer och väljer sedan **Återställ datatorg**. Dialogrutan som visas har två avsnitt: **Statistik** och **Återställ**.
 
-[![Dialogrutan Återställ datatorg](./media/Statistics.png)](./media/Statistics.png)
+[![Dialogrutan Återställ datatorg](./media/Reset-72.jpg)](./media/Reset-72.jpg)
 
 ##### <a name="integration-attempts"></a>Integrationsförsök
 
@@ -83,8 +83,10 @@ Om du upptäcker att en återställning av datatorg krävs väljer du kryssrutan
 - **Återställ databas** – Databasen för Finance and Operations har återställts, men databasen för Financial reporting återställdes inte.
 - **Övrigt** – Du återställer datatorget av något annat skäl. Om du misstänker att det finns ett problem kan du kontakta supporten för att identifiera det.
 
+[![Återställ datatorg](./media/Integration.png)](./media/Integration.png)
+
 > [!NOTE]
-> Kontrollera att alla befintliga uppgifter är färdigintegrerade innan du slutför stegen. Du kan visa integrationens status genom att välja **Verktyg** &gt; **Integrationsstatus**.
+> Verifiera att alla återställningsuppgifter för datatorg har slutfört en inledande inläsning innan du påbörjar återställningen. Du kan bekräfta detta genom att leta efter ett värde i kolumnen Senaste körning genom att markera **verktyg**&gt;**integrationsstatus**.
 
 #### <a name="clear-users-and-companies"></a>Rensa användare och företag
 
@@ -94,7 +96,10 @@ Markera **OK** när du vill starta återställningen. Du uppmanas att bekräfta 
 
 Välj **Verktyg** &gt; **Integrationsstatus** för att se när integrering senast kördes, samt dess status.
 
-[![Visa installationsstatus för integrationen](./media/Integration.png)](./media/Integration.png)
+[![Visa installationsstatus för integrationen](./media/New-integration.PNG)](./media/New-integration.PNG)
+
+> [!NOTE]
+> Återställningen är klar när alla mappningar visar status för RanToCompletion och fönstret Integrationsstatus säger ”fullständig Integration” i det nedre vänstra hörnet.
 
 ## <a name="reset-the-financial-reporting-data-mart-for-finance-and-operations-financial-reporting-release-70100004-and-later"></a>Återställ datatorget för Financial reporting för Finance and Operations Financial reporting version 7.0.10000.4 och senare
 
@@ -142,7 +147,9 @@ Följande Microsoft Windows-tjänster har öppna anslutningar till Finance and O
 
 #### <a name="download-the-latest-minorversiondataupgradezip-package"></a>Hämta det senaste MinorVersionDataUpgrade.zip-paketet
 
-Hämta det senaste MinorVersionDataUpgrade.zip-paketet. Instruktioner om hur du hittar och hämtar rätt version av datauppgraderingspaketet finns på[Hämta senaste distribuerbara datauppgraderingspaket](..\migration-upgrade\upgrade-data-to-latest-update.md#download-the-latest-data-upgrade-deployable-packages). En uppgradering krävs inte för att hämta MinorVersionDataUpgrade.zip-paketet. Därför måste du helt enkelt följa stegen i avsnittet ”Hämta senaste distribuerbara datauppgraderingspaketet”. Du kan hoppa över de övriga stegen i avsnittet.
+Hämta det senaste MinorVersionDataUpgrade.zip-paketet. Instruktioner om hur du hittar och hämtar rätt version av datauppgraderingspaketet finns på[Hämta senaste distribuerbara datauppgraderingspaket](..\migration-upgrade\upgrade-data-to-latest-update.md#download-the-latest-data-upgrade-deployable-package). 
+
+En uppgradering krävs inte för att hämta MinorVersionDataUpgrade.zip-paketet. Därför måste du helt enkelt följa stegen i avsnittet ”Hämta senaste distribuerbara datauppgraderingspaketet”. Du kan hoppa över de övriga stegen i avsnittet.
 
 #### <a name="run-scripts-against-the-finance-and-operations-database"></a>Kör skript mot Finance and Operations-databasen
 

@@ -3,11 +3,12 @@ title: "Stämma av bankutdrag med hjälp av avancerad bankavstämning"
 description: "Med hjälp av den avancerade bankavstämningen kan du importera elektroniska bankutdrag och utföra automatiskt avstämning mot banktransaktioner i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Det här ämnet innehåller en beskrivning av avstämningsprocessen."
 author: saraschi2
 manager: AnnBe
-ms.date: 09/11/2017
+ms.date: 01/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: BankReconciliationWorksheet
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations

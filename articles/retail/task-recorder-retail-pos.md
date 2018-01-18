@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
 ms.technology: 
+ms.search.form: RetailTerminalTable, SystemParameters
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
@@ -19,10 +20,10 @@ ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: a527136f77b65ef5a43576291e38cb168dbbd322
+ms.sourcegitcommit: e66208ccceb4c248c2704bb7358d77447e032205
+ms.openlocfilehash: 43360ea18ccc0fc4622f6da70ff10f2aca8b56c8
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 12/14/2017
 
 ---
 
@@ -98,10 +99,10 @@ Klicka på **Fortsätt** om du vill återuppta inspelningssessionen när du har 
 
 ### <a name="capture-screenshots"></a>Ta skärmbilder
 
-Uppgiftsinspelaren kan läsa in skärmdumpar på Modern Retail POS-användargränssnittet när du spelar in en affärsprocess. Uppgiftsinspelaren använder skärmbilderna om du hämtar inspelningen som ett Word-dokument. För att aktivera inspelningsfunktionen för skärmbild, ange alternativet **Fånga skärmbild** som **Ja**. 
+Uppgiftsinspelaren kan läsa in skärmdumpar på Modern Retail POS-användargränssnittet när du spelar in en affärsprocess. Aktivera inspelningsfunktionen för skärmbild genom att ange alternativet **Fånga skärmbild** på **Ja** och registrera den. När registreringen är klar klickar du på **Stopp** och hämta Word-dokumentet. Dokumentet innehåller steg med relevanta skärmdumpar.
 
-#### <a name="note"></a>Sedel
-> Funktionen för att fånga skärmbild stöds inte i Cloud POS.
+#### <a name="note"></a>Kommentar
+> Funktionen för att registrera skärmbild stöds inte i Modern POS.
 
 ### <a name="start-task-and-end-task"></a>Startuppgift och slutuppgift
 

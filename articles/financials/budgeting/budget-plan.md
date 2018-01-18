@@ -3,11 +3,12 @@ title: Budgetplanering
 description: "Målet med den här övningen är att ge en guidad översikt över funktionsuppdateringarna inom området Budgetplanering i Finance and Operations, Enterprise edition Syftet med övningen är att illustrera ett kort konfigureringsexempel av budgetplaneringsmodulen och visa hur budgetplaneringen kan utföras med hjälp av den här konfigurationen.  Den här övningen fokuserar på följande verksamhetsprocesser eller -uppgifter: – Skapa organisationshierarki för budgetplanering och konfigurera användarsäkerhet – Definiera budgetplanscenarion, budgetplankolumner, layouter och Excel-mallar – Skapa och aktivera budgetplaneringsprocessen – Skapa budgetplandokument genom att hämta resultat från redovisningen – Använda allokeringar för att justera budgetplandokumentdata – Redigera budgetplandokumentdata i Excel"
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: BudgetPlanningConfiguration
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations

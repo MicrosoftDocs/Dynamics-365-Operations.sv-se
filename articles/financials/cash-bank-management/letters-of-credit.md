@@ -3,11 +3,12 @@ title: Remburser
 description: "Remburser är bankdokument som vanligtvis används för inköp och försäljning av varor över internationella gränser."
 author: twheeloc
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: BankLCImport
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations

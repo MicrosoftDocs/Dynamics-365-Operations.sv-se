@@ -44,7 +44,8 @@
 ## [Tidrapportering för Retail](retail-time-attendance.md)
 
 # Modern kassa (MPOS) och Cloud POS
-## [POS-operationer](POS-operations.md)
+## [Välj mellan Modern POS och Cloud POS](MPOS-or-CPOS.md)
+## [Kassaoperationer](POS-operations.md)
 ## [Demodataskärmlayouter i MPOS/CPOS](demo-data.md)
 ## Kringutrustning
 ### [Översikt över Retail-utrustning](retail-peripherals-overview.md)
@@ -75,7 +76,12 @@
 ## Inleveranser
 ### [Ställ in kvittomallar](receipt-templates-printing.md) 
 ### [Skicka e-postkvitton från MPOS](email-receipts.md)
-## [Uppgiftsinspelare och hjälp för POS](task-recorder-retail-pos.md)
+## [Uppgiftsinspelare och hjälp för kassa](task-recorder-retail-pos.md)
+
+# Orderuppfyllelse
+## [Översikt över butikens orderuppfyllelse](Order-fulfillment-overview.md)
+## [Ställ in uppfyllelse i butiken](Order-fulfillment-POS-setup.md)
+## [Aktivera meddelanden för kassan](Notifications-POS.md)
 
 # Övervakning och analys
 ## [Övervaka försäljningsresultat och marginaler](monitor-sales-margin-performance.md)
@@ -171,7 +177,7 @@
 # [Utveckling och administration i Retail](dev-itpro/dev-retail-home-page.md)
 
 ## Arkitektur
-### [Komponenter i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition - Retail](retail-components.md)
+### [Komponenter i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition - Retail](retail-components.md)
 ### [Arkitektur för Retail Server](dev-itpro/retail-server-architecture.md)
 ### [Kanalkommunikation för Retail](dev-itpro/define-retail-channel-communications-cdx.md)
 ### [MPOS-arkitektur](dev-itpro/retail-modern-pos-architecture.md)
@@ -256,10 +262,12 @@
 ### [Kör exempel för Retail POS](dev-itpro/pos-run-samples.md)
 ### [Utöka befintliga POS-vyer om du vill lägga till egna kolumner och knappar i appfältet](dev-itpro/pos-view-extension.md)
 ### [Lägg till egna kontroller på transaktionssidor för Modern Retail POS](dev-itpro/pos-custom-transaction.md)
-### [Lägg till egna kolumner i transaktionsrutnätet för POS](dev-itpro/pos-custom-transaction-column.md)
-### [Anropa ett POS-API eller en åtgärd från ett POS-tillägg](dev-itpro/pos-api-extension.md)
-### [Utöka befintliga POS-vyer om du vill lägga till egna kolumner och knappar i appfältet](dev-itpro/pos-view-extension.md)
+### [Lägg till egna kolumner i transaktionsrutnätet för kassa](dev-itpro/pos-custom-transaction-column.md)
+### [Anropa ett kassa-API eller en åtgärd från ett kassatillägg](dev-itpro/pos-api-extension.md)
 ### [Utlösare och utskrift för Retail Modern POS](dev-itpro/pos-trigger-printing.md)
+### [Lägg till en anpassad kontroll i en designerbaserad vy (ej skärm) för Retail Modern POS](dev-itpro/pos-control-non-screen.md)
+### [Generera Retail-proxy för kassa och e-handel](dev-itpro/pos-generate-retail-proxy.md)
+### [Konfigurationssteg för Retail-utvecklare som arbetar med molnstyrda utvecklingsrutor](dev-itpro/cloud-dev-box.md)
 
 ## Commerce Runtime
 ### [Lojalitetstillägg](dev-itpro/retail-sdk/loyalty-extension-sample.md)

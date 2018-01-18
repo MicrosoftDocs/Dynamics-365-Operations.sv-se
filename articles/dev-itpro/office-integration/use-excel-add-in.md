@@ -3,7 +3,7 @@ title: "Använd Excel-tillägget"
 description: "Det här avsnittet beskriver hur du öppnar enhetsdata i Microsoft Excel och sedan visar, uppdaterar och redigerar data med Microsoft Dynamics Office-tillägget för Excel."
 author: ChrisGarty
 manager: AnnBe
-ms.date: 11/27/2017
+ms.date: 11/30/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: bf2607596993d01abaf5e8a66f14f8c091791d4a
-ms.openlocfilehash: b4151ca929d0dbe073c1a8444cf63a90ac74e20c
+ms.sourcegitcommit: 9b1f25f3630ad5126edd20c5508b83a9811a65f8
+ms.openlocfilehash: dd986d8f82c42c4e229e6e60bdfe8d15a273e149
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/27/2017
+ms.lasthandoff: 11/07/2017
 
 ---
 
@@ -104,6 +104,18 @@ Du kan använda designern för att justera att kolumnerna läggs till automatisk
 
 4. Gör ändringarna till datakällan genom att klicka på **uppdatering**. Klicka på **Klart** för att stänga designverktyget.
 5. Om du har lagt till ett fält (kolumn) klickar du på **uppdatera** för att ta emot en uppdaterad uppsättning data.
+
+## <a name="copy-environment-data"></a>Kopiera miljödata
+
+De data som läses in i arbetsboken från en miljö kan kopieras till en annan miljö. Du kan inte bara ändra anslutnings-URL eftersom datacachen i arbetsboken fortsätter att hantera informationen som befintliga data. I stället måste du använda funktionen Kopiera miljödata och publicera data till en ny miljö som nya data.
+
+1. Välj knappen **alternativ** (växelsymbol) och sedan på snabbfliken **dataanslutning** väljer du **Kopiera miljödata**. 
+2. Ange serverns URL för den nya miljön. 
+3. Klicka på **OK**, och sedan på **Ja** för att bekräfta åtgärden. Excel-tillägget startas om och ansluts till den nya miljön. Befintliga data i arbetsboken behandlas som nya data.
+
+    När Excel-tillägget startas om anger en meddelanderuta att arbetsboken är i läget Miljökopia.
+
+4. För att kopiera data till den nya miljön som nya data väljer du **publicera**. Om du vill avbryta kopieringen och granska befintliga data i den nya miljön väljer du **uppdatera**.
 
 ## <a name="troubleshooting"></a>Felsökning
 Det finns några problem som kan lösas genom några enkla steg.
