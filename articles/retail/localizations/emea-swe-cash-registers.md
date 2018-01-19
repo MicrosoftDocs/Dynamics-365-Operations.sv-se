@@ -11,17 +11,17 @@ ms.technology:
 ms.search.form: RetailPosPermissionGroup, RetailFunctionalityProfile, RetailFormLayout, RetailHardwareProfile, RetailFiscalPrinterConfigTable
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Retail, Operations, Core
+ms.search.scope: Core, Operations, Retail
 ms.search.region: Sweden
 ms.search.industry: retail
 ms.author: epopov
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: c68d84ea0297d954eaf62d36b98b2e305e6be50e
+ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
+ms.openlocfilehash: 4dd25b02b49437dd9cf4a4702ef66bf396eb5046
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/19/2018
 
 ---
 # <a name="cash-registers-for-sweden"></a><span data-ttu-id="65f61-103">Kassaapparater för Sverige</span><span class="sxs-lookup"><span data-stu-id="65f61-103">Cash registers for Sweden</span></span>

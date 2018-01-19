@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: CAMDimensionHierarchy,
 audience: Application User
 ms.reviewer: yuyus
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: d55e9a520b1f895d130f24834626429e19b4b939
+ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
+ms.openlocfilehash: ee931a46524a8f0f79f53b8371765118caf5f1f8
 ms.contentlocale: sv-se
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 01/19/2018
 
 ---
 
@@ -255,10 +255,10 @@ ms.lasthandoff: 01/17/2018
 |---------------------------------------|--------------------------------------|------------------|--------------|------------|----------|
 | <span data-ttu-id="0a11c-340">Fast kostnad</span><span class="sxs-lookup"><span data-stu-id="0a11c-340">Fixed cost</span></span>                            | <span data-ttu-id="0a11c-341">Organisation</span><span class="sxs-lookup"><span data-stu-id="0a11c-341">Organization</span></span>                         | <span data-ttu-id="0a11c-342">100,00</span><span class="sxs-lookup"><span data-stu-id="0a11c-342">100.00</span></span>           | <span data-ttu-id="0a11c-343">0,00</span><span class="sxs-lookup"><span data-stu-id="0a11c-343">0.00</span></span>         | <span data-ttu-id="0a11c-344">1/1/2017</span><span class="sxs-lookup"><span data-stu-id="0a11c-344">1/1/2017</span></span>   | <span data-ttu-id="0a11c-345">Aldrig</span><span class="sxs-lookup"><span data-stu-id="0a11c-345">Never</span></span>    |
 | <span data-ttu-id="0a11c-346">10001</span><span class="sxs-lookup"><span data-stu-id="0a11c-346">10001</span></span>                                 | <span data-ttu-id="0a11c-347">Organisation</span><span class="sxs-lookup"><span data-stu-id="0a11c-347">Organization</span></span>                         | <span data-ttu-id="0a11c-348">0,00</span><span class="sxs-lookup"><span data-stu-id="0a11c-348">0.00</span></span>             | <span data-ttu-id="0a11c-349">150.00</span><span class="sxs-lookup"><span data-stu-id="0a11c-349">150.00</span></span>       | <span data-ttu-id="0a11c-350">1/1/2017</span><span class="sxs-lookup"><span data-stu-id="0a11c-350">1/1/2017</span></span>   | <span data-ttu-id="0a11c-351">Aldrig</span><span class="sxs-lookup"><span data-stu-id="0a11c-351">Never</span></span>    |
-| <span data-ttu-id="0a11c-352">10001 (\\*)</span><span class="sxs-lookup"><span data-stu-id="0a11c-352">10001 (\\*)</span></span>                             | <span data-ttu-id="0a11c-353">Finansiellt</span><span class="sxs-lookup"><span data-stu-id="0a11c-353">Finance</span></span>                              |                  | <span data-ttu-id="0a11c-354">50,00</span><span class="sxs-lookup"><span data-stu-id="0a11c-354">50.00</span></span>        | <span data-ttu-id="0a11c-355">1/1/2017</span><span class="sxs-lookup"><span data-stu-id="0a11c-355">1/1/2017</span></span>   | <span data-ttu-id="0a11c-356">Aldrig</span><span class="sxs-lookup"><span data-stu-id="0a11c-356">Never</span></span>    |
+| <span data-ttu-id="0a11c-352">10001 (\*)</span><span class="sxs-lookup"><span data-stu-id="0a11c-352">10001 (\*)</span></span>                             | <span data-ttu-id="0a11c-353">Finansiellt</span><span class="sxs-lookup"><span data-stu-id="0a11c-353">Finance</span></span>                              |                  | <span data-ttu-id="0a11c-354">50,00</span><span class="sxs-lookup"><span data-stu-id="0a11c-354">50.00</span></span>        | <span data-ttu-id="0a11c-355">1/1/2017</span><span class="sxs-lookup"><span data-stu-id="0a11c-355">1/1/2017</span></span>   | <span data-ttu-id="0a11c-356">Aldrig</span><span class="sxs-lookup"><span data-stu-id="0a11c-356">Never</span></span>    |
 | <span data-ttu-id="0a11c-357">Kostnadsbeteende eller variabel kostnad (\*\*)</span><span class="sxs-lookup"><span data-stu-id="0a11c-357">Cost behavior or Variable cost (\*\*)</span></span>   | <span data-ttu-id="0a11c-358">Organisation</span><span class="sxs-lookup"><span data-stu-id="0a11c-358">Organization</span></span>                         | <span data-ttu-id="0a11c-359">0,00</span><span class="sxs-lookup"><span data-stu-id="0a11c-359">0.00</span></span>             | <span data-ttu-id="0a11c-360">0,00</span><span class="sxs-lookup"><span data-stu-id="0a11c-360">0.00</span></span>         | <span data-ttu-id="0a11c-361">1/1/2017</span><span class="sxs-lookup"><span data-stu-id="0a11c-361">1/1/2017</span></span>   | <span data-ttu-id="0a11c-362">Aldrig</span><span class="sxs-lookup"><span data-stu-id="0a11c-362">Never</span></span>    |
 
-<span data-ttu-id="0a11c-363">\\* Den variabla kostnadsnoden behövs inte.</span><span class="sxs-lookup"><span data-stu-id="0a11c-363">\\* The variable cost node isn't required.</span></span> <span data-ttu-id="0a11c-364">Om en kostnad inte klassificeras som fasta kostnader, måste det vara en variabel kostnad.</span><span class="sxs-lookup"><span data-stu-id="0a11c-364">If a cost isn't classified as a fixed cost, it must be a variable cost.</span></span>
+<span data-ttu-id="0a11c-363">\* Den variabla kostnadsnoden behövs inte.</span><span class="sxs-lookup"><span data-stu-id="0a11c-363">\* The variable cost node isn't required.</span></span> <span data-ttu-id="0a11c-364">Om en kostnad inte klassificeras som fasta kostnader, måste det vara en variabel kostnad.</span><span class="sxs-lookup"><span data-stu-id="0a11c-364">If a cost isn't classified as a fixed cost, it must be a variable cost.</span></span>
 
 <span data-ttu-id="0a11c-365">\*\* En detaljerad regel skapas för kombinationen av kostnadselementmedlem 10001 och alla kostnadsobjektmedlemmar som sammanställs i hierarkinivån Ekonomi (CC002, CC003, CC007).</span><span class="sxs-lookup"><span data-stu-id="0a11c-365">\*\* A detailed rule is created for the combination of cost element member 10001 and all cost object members that are aggregated under the Finance hierarchy level (CC002, CC003, CC007).</span></span>
 
