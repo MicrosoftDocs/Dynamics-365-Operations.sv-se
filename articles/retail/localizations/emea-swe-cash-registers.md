@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: RetailPosPermissionGroup, RetailFunctionalityProfile, RetailFormLayout, RetailHardwareProfile, RetailFiscalPrinterConfigTable
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Retail, Operations, Core
+ms.search.scope: Core, Operations, Retail
 ms.search.region: Sweden
 ms.search.industry: retail
 ms.author: epopov
