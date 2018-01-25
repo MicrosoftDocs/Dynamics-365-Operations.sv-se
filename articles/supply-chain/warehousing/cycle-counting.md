@@ -137,7 +137,7 @@ En avvikelse för rullande inventering inträffar i följande scenarier om alter
 
 Du kan justera avvikelser i det beräknade värdet och sedan acceptera det beräknade värdet på sidan **Granskning av väntande rullande inventering**. Du kan verifiera det modifierade antalet för artikelkvantiteten på sidan **Behållning efter plats**. Värdet från den rullande inventeringen åsidosätts om skillnaden inte kan godkännas.
 
-# <a name="see-also"></a>Se även
+## <a name="see-also"></a>Se även
 [Konfigurera mobila enheter för lagerarbete](configure-mobile-devices-warehouse.md)
 
 

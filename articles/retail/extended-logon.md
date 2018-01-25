@@ -34,8 +34,7 @@ ms.lasthandoff: 11/03/2017
 
 Detta avsnitt täcker dina alternativ för att ställa in utökad inloggning för molnbaserad kassa och Retail Modern POS (MPOS).
 
-<a name="setting-up-extended-logon"></a>Ställa in utökade inloggning
-=========================
+## <a name="setting-up-extended-logon"></a>Ställa in utökade inloggning
 
 Du hittar inställningarna för streckkodsmasker på **Butik** &gt; **Kanalinställning** &gt; **Kassainställning** &gt; **Kassaprofiler** &gt; **Funktionsprofiler**. **Funktionerna** snabbfliken innehåller följande alternativ som är relaterade till utökad inloggning.
 
@@ -55,23 +54,19 @@ När **personalen kort inloggning** är aktiverad, arbetstagare som har en utök
 
 När **personalen kort inloggning kräver lösenord** alternativ är aktiverat personal kort inloggning väljer endast de arbetstagare som har tilldelats utökade inloggning att presenteras. Arbetstagare måste ange sitt lösenord när det här alternativet är aktiverat.
 
-<a name="assigning-an-extended-logon"></a>Tilldela en utökad inloggning
-===========================
+## <a name="assigning-an-extended-logon"></a>Tilldela en utökad inloggning
 
 Som standard är endast chefer kan tilldela utökade inloggning till arbetstagarna. Tilldela utökad inloggning genom att navigera till **Utökad inloggning** i kassan. Sök sedan efter en anställd genom att ange hans eller hennes operatörs-ID i sökfältet. Välj anställd och klicka sedan på **Tilldela**. På nästa sida, nallar eller skanna utökade inloggning tilldelas arbetaren. Om nallar eller skanna finnas framgångsrikt lydde, **OK-** knappen blir tillgänglig. Klicka på **OK för** att spara det utökade inloggning för arbetstagaren.
 
-<a name="deleting-an-extended-logon"></a>Ta bort en utökad inloggning
-==========================
+## <a name="deleting-an-extended-logon"></a>Ta bort en utökad inloggning
 
 Ta bort den utökade inloggning som är tilldelad till en arbetstagare, sökningen för arbetstagaren med **utökad logga på** . Välj anställd och klicka sedan på **Ta bort**. Alla utökade inloggningsbehörighet som associeras med att arbetstagaren är borttagen.
 
-<a name="extending-extended-logon"></a>Utvidga utökade inloggning
-========================
+## <a name="extending-extended-logon"></a>Utvidga utökade inloggning
 
 Inloggning tjänsten kan utökas för att stödja ytterligare utökade inloggning enheter, t.ex. palm scannrar. För mer information, se POS extensibility dokumentation.
 
-<a name="using-extended-logon"></a>Med hjälp av utökade inloggning
-====================
+## <a name="using-extended-logon"></a>Med hjälp av utökade inloggning
 
 När utökad inloggning är konfigurerad, och arbetstagaren har tilldelats en streckkod eller den magnetiska stripen, arbetaren bara nallar eller skanna hans eller hennes kort medan POS inloggningssidan visas. Om ett lösenord krävs också före inloggning kan fortsätta, arbetstagaren uppmanas du att ange sitt lösenord.
 

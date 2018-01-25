@@ -112,7 +112,7 @@ När du öppnar ett byggblock kan andra användare bara komma åt byggblocket i 
 3.  Välj ett byggblock och klicka sedan på **Ångra utcheckningen**
 4.  Klicka på **Ja** för att check in byggblocket.
 
-# <a name="see-also"></a>Se även
+## <a name="see-also"></a>Se även
 
 [Ekonomisk rapportering](financial-reporting-intro.md)
 

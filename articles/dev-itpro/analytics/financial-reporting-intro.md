@@ -98,7 +98,7 @@ Följande komponenter för ekonomisk rapportering gör det lättare att skapa, v
 </tbody>
 </table>
 
-#<a name="see-also"></a>Se även
+## <a name="see-also"></a>Se även
 [Generera ekonomisk rapport](generate-financial-report.md)
 
 

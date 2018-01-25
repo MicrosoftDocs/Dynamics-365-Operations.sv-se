@@ -31,14 +31,14 @@ ms.lasthandoff: 12/18/2017
 
 Detta avsnitt beskriver **Faktiskt kontra budget**-Microsoft Power BI-innehåll. Det förklarar hur du öppnar Power BI-rapporter, och ger information om den datamodell och de enheter som användes för att skapa innehållet. 
 
-# <a name="overview"></a>Översikt
+## <a name="overview"></a>Översikt
 
 **Faktiskt kontra budget**-Power BI-innehållet skapades för personer som ansvarar att övervaka faktiskt kontra budget-prestanda i sina respektive organisationer. **Faktiskt kontra budget**-Power BI-innehåll ger insyn i dina budgetavvikelser. Du kan analysera budgeten för aktuellt år efter kontokategori, budgetkod, huvudkonto, huvudkontobeskrivningar eller räkenskapsperiod för att få en bättre förståelse för orsaken till eventuella avvikelser. 
 
-# <a name="accessing-the-power-bi-content"></a>Åtkomst till Power BI-innehåll
+## <a name="accessing-the-power-bi-content"></a>Åtkomst till Power BI-innehåll
 Rapporter från Power BI-innehållet **Utfall kontra budget** visas i arbetsytorna **Redovisningsbudget och prognoser** samt **Ekonomichef**.
 
-# <a name="reports-that-are-included-in-the-power-bi-content"></a>Rapporter som ingår i Power BI-innehållet
+## <a name="reports-that-are-included-in-the-power-bi-content"></a>Rapporter som ingår i Power BI-innehållet
 I följande tabell finns information om mått som finns på varje enskild rapportsida i Power BI-innehållet för **Faktiskt kontra budget**.
 
 | Rapport                      | Mätvärden |
@@ -50,7 +50,7 @@ I följande tabell finns information om mått som finns på varje enskild rappor
 | Nettoinkomst                  | <ul><li>Nettoinkomst i år</li><li>Målet för nettoutgifter som baseras på budgeten </li><ul> |
 
 
-# <a name="understanding-the-data-model-and-entities"></a>Förstå datamodellen och enheterna
+## <a name="understanding-the-data-model-and-entities"></a>Förstå datamodellen och enheterna
 
 | Enhet                    | Innehåll |
 |---------------------------|----------|

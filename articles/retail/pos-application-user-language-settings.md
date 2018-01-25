@@ -34,9 +34,7 @@ ms.lasthandoff: 11/03/2017
 
 Det här avsnittet beskriver hur du ändrar språkinställningarna i Retail Modern POS (MPOS) och Cloud POS.
 
-<a name="overview"></a>Översikt
-========
-
+## <a name="overview"></a>Översikt
 Retail Modern POS (MPOS) och Cloud POS stöder miljöer där språkinställningar och översättningar kan variera mellan butiks- och användarinställningar. Exempelvis kan butiken finnas i ett område där engelska är vanligast för kunderna, men vissa arbetare föredrar att använda programmet med fransk översättning.
 
 ## <a name="data-language"></a>Data språk
