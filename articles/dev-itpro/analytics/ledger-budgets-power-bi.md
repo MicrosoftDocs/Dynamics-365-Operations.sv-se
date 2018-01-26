@@ -17,10 +17,10 @@ ms.author: ryansand
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: a351418583ee29ad57bd2586121bb92d24635fb8
+ms.sourcegitcommit: 8075abccdcdde21df967dcc9948a738895f35cef
+ms.openlocfilehash: 13f7cfa8776436ed2c73fc588948ce88fee93326
 ms.contentlocale: sv-se
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 01/25/2018
 
 ---
 
@@ -31,14 +31,14 @@ ms.lasthandoff: 01/17/2018
 
 <span data-ttu-id="0ccba-105">Detta avsnitt beskriver **Faktiskt kontra budget**-Microsoft Power BI-innehåll.</span><span class="sxs-lookup"><span data-stu-id="0ccba-105">This topic describes the **Actual vs budget** Microsoft Power BI content.</span></span> <span data-ttu-id="0ccba-106">Det förklarar hur du öppnar Power BI-rapporter, och ger information om den datamodell och de enheter som användes för att skapa innehållet.</span><span class="sxs-lookup"><span data-stu-id="0ccba-106">It explains how to access the Power BI reports, and provides information about the data model and entities that were used to build the content.</span></span> 
 
-# <a name="overview"></a><span data-ttu-id="0ccba-107">Översikt</span><span class="sxs-lookup"><span data-stu-id="0ccba-107">Overview</span></span>
+## <a name="overview"></a><span data-ttu-id="0ccba-107">Översikt</span><span class="sxs-lookup"><span data-stu-id="0ccba-107">Overview</span></span>
 
 <span data-ttu-id="0ccba-108">**Faktiskt kontra budget**-Power BI-innehållet skapades för personer som ansvarar att övervaka faktiskt kontra budget-prestanda i sina respektive organisationer.</span><span class="sxs-lookup"><span data-stu-id="0ccba-108">The **Actual vs budget** Power BI content was created for individuals who are responsible for monitoring actual versus budget performance in their organization.</span></span> <span data-ttu-id="0ccba-109">**Faktiskt kontra budget**-Power BI-innehåll ger insyn i dina budgetavvikelser.</span><span class="sxs-lookup"><span data-stu-id="0ccba-109">The **Actual vs budget** Power BI content provides visibility into your budget variances.</span></span> <span data-ttu-id="0ccba-110">Du kan analysera budgeten för aktuellt år efter kontokategori, budgetkod, huvudkonto, huvudkontobeskrivningar eller räkenskapsperiod för att få en bättre förståelse för orsaken till eventuella avvikelser.</span><span class="sxs-lookup"><span data-stu-id="0ccba-110">You can analyze budget for the current year by account category, budget code, main account, main account descriptions, or fiscal period to get a better understanding of the cause of any variances.</span></span> 
 
-# <a name="accessing-the-power-bi-content"></a><span data-ttu-id="0ccba-111">Åtkomst till Power BI-innehåll</span><span class="sxs-lookup"><span data-stu-id="0ccba-111">Accessing the Power BI content</span></span>
+## <a name="accessing-the-power-bi-content"></a><span data-ttu-id="0ccba-111">Åtkomst till Power BI-innehåll</span><span class="sxs-lookup"><span data-stu-id="0ccba-111">Accessing the Power BI content</span></span>
 <span data-ttu-id="0ccba-112">Rapporter från Power BI-innehållet **Utfall kontra budget** visas i arbetsytorna **Redovisningsbudget och prognoser** samt **Ekonomichef**.</span><span class="sxs-lookup"><span data-stu-id="0ccba-112">Reports from the **Actual vs budget** Power BI content are shown in the **Ledger budget and forecasts** and **CFO** workspaces.</span></span>
 
-# <a name="reports-that-are-included-in-the-power-bi-content"></a><span data-ttu-id="0ccba-113">Rapporter som ingår i Power BI-innehållet</span><span class="sxs-lookup"><span data-stu-id="0ccba-113">Reports that are included in the Power BI content</span></span>
+## <a name="reports-that-are-included-in-the-power-bi-content"></a><span data-ttu-id="0ccba-113">Rapporter som ingår i Power BI-innehållet</span><span class="sxs-lookup"><span data-stu-id="0ccba-113">Reports that are included in the Power BI content</span></span>
 <span data-ttu-id="0ccba-114">I följande tabell finns information om mått som finns på varje enskild rapportsida i Power BI-innehållet för **Faktiskt kontra budget**.</span><span class="sxs-lookup"><span data-stu-id="0ccba-114">The following table provides details about the metrics that are found on each report page in the **Actual vs budget** Power BI content.</span></span>
 
 | <span data-ttu-id="0ccba-115">Rapport</span><span class="sxs-lookup"><span data-stu-id="0ccba-115">Report</span></span>                      | <span data-ttu-id="0ccba-116">Mätvärden</span><span class="sxs-lookup"><span data-stu-id="0ccba-116">Metrics</span></span> |
@@ -50,7 +50,7 @@ ms.lasthandoff: 01/17/2018
 | <span data-ttu-id="0ccba-129">Nettoinkomst</span><span class="sxs-lookup"><span data-stu-id="0ccba-129">Net income</span></span>                  | <ul><li><span data-ttu-id="0ccba-130">Nettoinkomst i år</span><span class="sxs-lookup"><span data-stu-id="0ccba-130">Net income this year</span></span></li><li><span data-ttu-id="0ccba-131">Målet för nettoutgifter som baseras på budgeten</span><span class="sxs-lookup"><span data-stu-id="0ccba-131">Goal for net income based on budget</span></span> </li><ul> |
 
 
-# <a name="understanding-the-data-model-and-entities"></a><span data-ttu-id="0ccba-132">Förstå datamodellen och enheterna</span><span class="sxs-lookup"><span data-stu-id="0ccba-132">Understanding the data model and entities</span></span>
+## <a name="understanding-the-data-model-and-entities"></a><span data-ttu-id="0ccba-132">Förstå datamodellen och enheterna</span><span class="sxs-lookup"><span data-stu-id="0ccba-132">Understanding the data model and entities</span></span>
 
 | <span data-ttu-id="0ccba-133">Enhet</span><span class="sxs-lookup"><span data-stu-id="0ccba-133">Entity</span></span>                    | <span data-ttu-id="0ccba-134">Innehåll</span><span class="sxs-lookup"><span data-stu-id="0ccba-134">Contents</span></span> |
 |---------------------------|----------|

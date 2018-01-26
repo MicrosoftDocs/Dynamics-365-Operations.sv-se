@@ -19,10 +19,10 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: 09266e28c0fec4200e1644049e4a7f2880ebdcc4
+ms.sourcegitcommit: 8075abccdcdde21df967dcc9948a738895f35cef
+ms.openlocfilehash: b28d3abb31fe2b54bd207b3dbdd26b26edb31695
 ms.contentlocale: sv-se
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 01/25/2018
 
 ---
 
@@ -53,10 +53,9 @@ ms.lasthandoff: 01/17/2018
 
 <span data-ttu-id="15e10-128">[![Excel-mall](./media/screenshot2-1024x352.png)](./media/screenshot2.png)</span><span class="sxs-lookup"><span data-stu-id="15e10-128">[![Excel template](./media/screenshot2-1024x352.png)](./media/screenshot2.png)</span></span>
 
-<a name="exercise-1-configuration"></a><span data-ttu-id="15e10-129">Övning 1: Konfiguration</span><span class="sxs-lookup"><span data-stu-id="15e10-129">Exercise 1: Configuration</span></span>
-=========================
+## <a name="exercise-1-configuration"></a><span data-ttu-id="15e10-129">Övning 1: Konfiguration</span><span class="sxs-lookup"><span data-stu-id="15e10-129">Exercise 1: Configuration</span></span>
 
-## <a name="task-1-create-organizational-hierarchy"></a><span data-ttu-id="15e10-130">**Uppgift 1: Skapa en organisationshierarki**</span><span class="sxs-lookup"><span data-stu-id="15e10-130">**Task 1: Create organizational hierarchy**</span></span>
+### <a name="task-1-create-organizational-hierarchy"></a><span data-ttu-id="15e10-130">**Uppgift 1: Skapa en organisationshierarki**</span><span class="sxs-lookup"><span data-stu-id="15e10-130">**Task 1: Create organizational hierarchy**</span></span>
 <span data-ttu-id="15e10-131">Eftersom all budgetbearbetning bara görs på finansavdelningen, skapar Julia en mycket enkel hierarki som bara består av finansavdelningen.</span><span class="sxs-lookup"><span data-stu-id="15e10-131">As all the budgeting process happens in the Finance department, therefore Julia needs to create a very simple organizational hierarchy – consisting of Finance department only.</span></span> <span data-ttu-id="15e10-132">1.1.</span><span class="sxs-lookup"><span data-stu-id="15e10-132">1.1.</span></span> <span data-ttu-id="15e10-133">Navigera till organisationshierarkier (Organisationsadministration &gt; Organisationer &gt; Organisationshierarkier) och klickar på knappen Nytt</span><span class="sxs-lookup"><span data-stu-id="15e10-133">Navigate to Organization hierarchies (Organization administration &gt; Organizations &gt; Organization hierarchies) and click New button</span></span>
 
 ![Organisationshierarki](./media/screenshot3.png) 
@@ -85,7 +84,7 @@ ms.lasthandoff: 01/17/2018
 
 <span data-ttu-id="15e10-155">[![Giltighetsdatum](./media/screenshot9.png)](./media/screenshot9.png)</span><span class="sxs-lookup"><span data-stu-id="15e10-155">[![Effective date](./media/screenshot9.png)](./media/screenshot9.png)</span></span>
 
-## <a name="task-2-configure-user-security"></a><span data-ttu-id="15e10-156">Uppgift 2: Konfigurera användarsäkerhet</span><span class="sxs-lookup"><span data-stu-id="15e10-156">Task 2: Configure user security</span></span>
+### <a name="task-2-configure-user-security"></a><span data-ttu-id="15e10-156">Uppgift 2: Konfigurera användarsäkerhet</span><span class="sxs-lookup"><span data-stu-id="15e10-156">Task 2: Configure user security</span></span>
 <span data-ttu-id="15e10-157">Budgetplaneringen använder särskilda säkerhetsprinciper för att kunna konfigurera åtkomst till budgetplandata.</span><span class="sxs-lookup"><span data-stu-id="15e10-157">Budget planning uses special security policies to configure access to budget plans data.</span></span> <span data-ttu-id="15e10-158">Julia måste ge åtkomst till finansbudgetplaner till sig själv.</span><span class="sxs-lookup"><span data-stu-id="15e10-158">Julia needs to give access to Finance budget plans for herself.</span></span> 
 
 <span data-ttu-id="15e10-159">2.1.</span><span class="sxs-lookup"><span data-stu-id="15e10-159">2.1.</span></span> <span data-ttu-id="15e10-160">Växla till kontexten för juridisk person DEMF.</span><span class="sxs-lookup"><span data-stu-id="15e10-160">Switch to DEMF legal entity context.</span></span> 
@@ -109,7 +108,7 @@ ms.lasthandoff: 01/17/2018
 
 <span data-ttu-id="15e10-178">[![Ge tillgång till](./media/screenshot14.png)](./media/screenshot14.png)</span><span class="sxs-lookup"><span data-stu-id="15e10-178">[![Grant access](./media/screenshot14.png)](./media/screenshot14.png)</span></span>
 
-## <a name="task-3-create-scenarios"></a><span data-ttu-id="15e10-179">Uppgift 3: Skapa scenarier</span><span class="sxs-lookup"><span data-stu-id="15e10-179">Task 3: Create scenarios</span></span>
+### <a name="task-3-create-scenarios"></a><span data-ttu-id="15e10-179">Uppgift 3: Skapa scenarier</span><span class="sxs-lookup"><span data-stu-id="15e10-179">Task 3: Create scenarios</span></span>
 <span data-ttu-id="15e10-180">3.1.</span><span class="sxs-lookup"><span data-stu-id="15e10-180">3.1.</span></span> <span data-ttu-id="15e10-181">Navigera till Budgetering&gt;Inställningar &gt; Budgetplanering &gt; Budgetplaneringskonfiguration.</span><span class="sxs-lookup"><span data-stu-id="15e10-181">Navigate to Budgeting&gt;Setup &gt; Budget planning &gt; Budget planning configuration.</span></span> <span data-ttu-id="15e10-182">På scenariosidan kan du se scenarierna som vi ska använda i den här labbövningen: Utfall föregående år och Budgeterat.</span><span class="sxs-lookup"><span data-stu-id="15e10-182">In the Scenarios page note the scenarios we are going to use further in this lab: Previous year actuals and Budgeted.</span></span> 
 
 <span data-ttu-id="15e10-183">*Obs! Du kan skapa nya scenarier för den här övningen och använda dem istället.*</span><span class="sxs-lookup"><span data-stu-id="15e10-183">*Note: You can create new scenarios for this exercise if desired and use those instead.*</span></span> 
@@ -118,7 +117,7 @@ ms.lasthandoff: 01/17/2018
 
 <span data-ttu-id="15e10-185">*Obs! Eftersom Julia inte använder den formella godkännandeprocessen för budgetförberedelser hoppar vi över inställningsstegen för arbetsflöden, faser och arbetsflödesfaser i övningen. I stället använder vi den befintliga inställningen för automatiskt godkända arbetsflöden. Se appendix för denna arbetsflödeskonfiguration.*</span><span class="sxs-lookup"><span data-stu-id="15e10-185">*Note: as Julia is not using formal approval process for budget preparation, we will skip Workflows, Stages and Workflow stages setup in this lab and will use existing setup for Auto – approve workflow. See appendix for this workflow configuration.*</span></span>
 
-## <a name="task-4-create-budget-plan-columns"></a><span data-ttu-id="15e10-186">Uppgift 4: Skapa budgetplankolumner</span><span class="sxs-lookup"><span data-stu-id="15e10-186">Task 4: Create budget plan columns</span></span>
+### <a name="task-4-create-budget-plan-columns"></a><span data-ttu-id="15e10-186">Uppgift 4: Skapa budgetplankolumner</span><span class="sxs-lookup"><span data-stu-id="15e10-186">Task 4: Create budget plan columns</span></span>
 <span data-ttu-id="15e10-187">Budgetplankolumner är antingen monetära eller kvantitetsbaserade och kan användas i budgetplandokumentlayouten.</span><span class="sxs-lookup"><span data-stu-id="15e10-187">Budget plan columns are either Monetary or quantity based columns that can be used in budget plan document layout.</span></span> <span data-ttu-id="15e10-188">I vårt exempel måste du skapa en kolumn för utfall föregående år och tolv kolumner som ska representera varje månad i ett budgeterat år.</span><span class="sxs-lookup"><span data-stu-id="15e10-188">In our example we need to create a column for Previous year actuals and 12 columns to represent each month in a budgeted year.</span></span> <span data-ttu-id="15e10-189">Kolumner kan skapas antingen genom att klicka på knappen Lägg till och sedan ange värden eller med hjälp av Datatabell.</span><span class="sxs-lookup"><span data-stu-id="15e10-189">Columns can be created either by simply clicking Add button and filling in the values, or with a help of Data entity.</span></span> <span data-ttu-id="15e10-190">I den här övningen ska vi använda datatabellen för att fylla i värdena.</span><span class="sxs-lookup"><span data-stu-id="15e10-190">In this lab we will use Data entity to fill in the values.</span></span> 
 
 <span data-ttu-id="15e10-191">4.1.</span><span class="sxs-lookup"><span data-stu-id="15e10-191">4.1.</span></span> <span data-ttu-id="15e10-192">Öppna sidan Kolumner under Budgetering&gt;Inställningar &gt; Budgetplanering &gt; Budgetplaneringskonfiguration.</span><span class="sxs-lookup"><span data-stu-id="15e10-192">In Budgeting&gt;Setup &gt; Budget planning &gt; Budget planning configuration open Columns page.</span></span> <span data-ttu-id="15e10-193">Klicka på Office-knappen överst till höger i formuläret och välj Kolumner (ofiltrerade)</span><span class="sxs-lookup"><span data-stu-id="15e10-193">Click Office button on the top right corner of the form and pick Columns (unfiltered)</span></span> 
@@ -151,7 +150,7 @@ ms.lasthandoff: 01/17/2018
 
 <span data-ttu-id="15e10-219">[![Förnya](./media/screenshot23.png)](./media/screenshot23.png)</span><span class="sxs-lookup"><span data-stu-id="15e10-219">[![Refresh](./media/screenshot23.png)](./media/screenshot23.png)</span></span>
 
-## <a name="task-5-create-budget-plan-document-layouts-and-templates"></a><span data-ttu-id="15e10-220">Uppgift 5: Skapa mallar och dokumentlayouter för budgetplanen</span><span class="sxs-lookup"><span data-stu-id="15e10-220">Task 5: Create budget plan document layouts and templates</span></span>
+### <a name="task-5-create-budget-plan-document-layouts-and-templates"></a><span data-ttu-id="15e10-220">Uppgift 5: Skapa mallar och dokumentlayouter för budgetplanen</span><span class="sxs-lookup"><span data-stu-id="15e10-220">Task 5: Create budget plan document layouts and templates</span></span>
 <span data-ttu-id="15e10-221">Layout definierar hur rutnätet med budgetplanens dokumentrader ser ut när du öppnar budgetplansdokumentet.</span><span class="sxs-lookup"><span data-stu-id="15e10-221">Layout defines how budget plan document lines grid is going to look like when user opens budget plan document.</span></span> <span data-ttu-id="15e10-222">Det går också att ändra layouten för budgetplandokumentet för att se samma uppgifter ur olika vinklar.</span><span class="sxs-lookup"><span data-stu-id="15e10-222">It is also possible to switch the layout for budget plan document to see the same data in different angles.</span></span> <span data-ttu-id="15e10-223">Nu när Julia har definierat kolumnerna som ska användas i budgetplandokumentet, ska hon skapa en dokumentlayout för budgetplanen. Den ska se ut om Excel-tabellen hon använde när hon skapade budgetdata (se avsnittet Översikt över scenario i övningen)</span><span class="sxs-lookup"><span data-stu-id="15e10-223">Now, as she’s got columns defined to be used with our budget plan document, Julia needs to create a budget plan document layout, that would look similar to the Excel table she uses to create budget data (see section Scenario overview in this lab)</span></span> 
 
 <span data-ttu-id="15e10-224">5.1.</span><span class="sxs-lookup"><span data-stu-id="15e10-224">5.1.</span></span> <span data-ttu-id="15e10-225">Öppna sidan Layouter i Budgetering&gt;Inställningar &gt; Budgetplanering &gt; Budgetplaneringskonfiguration.</span><span class="sxs-lookup"><span data-stu-id="15e10-225">In Budgeting&gt;Setup &gt; Budget planning &gt; Budget planning configuration open Layouts page.</span></span> <span data-ttu-id="15e10-226">Skapa en ny layout för den månatliga budgetpost:</span><span class="sxs-lookup"><span data-stu-id="15e10-226">Create a new layout for Monthly budget entry:</span></span>
@@ -172,7 +171,7 @@ ms.lasthandoff: 01/17/2018
 
 <span data-ttu-id="15e10-240">5.3.</span><span class="sxs-lookup"><span data-stu-id="15e10-240">5.3.</span></span> <span data-ttu-id="15e10-241">&lt; Valfritt steg&gt; Ändra Excel-mallen för att göra den mer användarvänlig – lägg till formler för summor, rubrikfält, formatering osv. Spara ändringarna och skicka filen till budgetplanlayouten genom att klicka på Layout &gt; Överför [![Överför](./media/screenshot26.png)](./media/screenshot26.png)</span><span class="sxs-lookup"><span data-stu-id="15e10-241">&lt; Optional step&gt; Modify Excel template to make it look more user friendly – add total formulas, header fields, formatting, etc. Save the changes and upload the file to budget plan layout by clicking Layout &gt; Upload [![Upload](./media/screenshot26.png)](./media/screenshot26.png)</span></span>
 
-## <a name="task-6-create-a-budget-planning-process"></a><span data-ttu-id="15e10-242">Uppgift 6: Skapa en budgetplaneringsprocess</span><span class="sxs-lookup"><span data-stu-id="15e10-242">Task 6: Create a budget planning process</span></span>
+### <a name="task-6-create-a-budget-planning-process"></a><span data-ttu-id="15e10-242">Uppgift 6: Skapa en budgetplaneringsprocess</span><span class="sxs-lookup"><span data-stu-id="15e10-242">Task 6: Create a budget planning process</span></span>
 <span data-ttu-id="15e10-243">Julia behöver skapa och aktivera en ny budgetplaneringsprocess som kombinerar alla inställningar ovan för att börja registrera budgetplaner.</span><span class="sxs-lookup"><span data-stu-id="15e10-243">Julia needs to create and activate a new budget planning process combining all the setup above to start entering budget plans.</span></span> <span data-ttu-id="15e10-244">Budgetplaneringsprocessen definiera vilka budgeteringsorganisationer, arbetsflöden, layouter och mallar som ska användas för att skapa budgetplaner.</span><span class="sxs-lookup"><span data-stu-id="15e10-244">Budget planning process defines what budgeting organizations, workflow, layouts and templates will be used for creating budget plans.</span></span> 
 
 <span data-ttu-id="15e10-245">6.1.</span><span class="sxs-lookup"><span data-stu-id="15e10-245">6.1.</span></span> <span data-ttu-id="15e10-246">Navigera till Budgetering &gt; Inställningar &gt; Budgetplanering &gt; Budgetplaneringsprocess och skapa en ny post.</span><span class="sxs-lookup"><span data-stu-id="15e10-246">Navigate to Budgeting &gt; Setup &gt; Budget planning &gt; Budget planning process and create a new record.</span></span>
@@ -193,10 +192,9 @@ ms.lasthandoff: 01/17/2018
 
 <span data-ttu-id="15e10-258">[![Aktivera](./media/screenshot28.png)](./media/screenshot28.png)</span><span class="sxs-lookup"><span data-stu-id="15e10-258">[![Activate](./media/screenshot28.png)](./media/screenshot28.png)</span></span>
 
-<a name="exercise-2-process-simulation"></a><span data-ttu-id="15e10-259">Övning 2: Processimulering</span><span class="sxs-lookup"><span data-stu-id="15e10-259">Exercise 2: Process simulation</span></span>
-==============================
+## <a name="exercise-2-process-simulation"></a><span data-ttu-id="15e10-259">Övning 2: Processimulering</span><span class="sxs-lookup"><span data-stu-id="15e10-259">Exercise 2: Process simulation</span></span>
 
-## <a name="task-7-generate-initial-data-for-budget-plan-from-general-ledger"></a><span data-ttu-id="15e10-260">Uppgift 7: Generera initiala data för budgetplan från redovisning</span><span class="sxs-lookup"><span data-stu-id="15e10-260">Task 7: Generate initial data for budget plan from General ledger</span></span>
+### <a name="task-7-generate-initial-data-for-budget-plan-from-general-ledger"></a><span data-ttu-id="15e10-260">Uppgift 7: Generera initiala data för budgetplan från redovisning</span><span class="sxs-lookup"><span data-stu-id="15e10-260">Task 7: Generate initial data for budget plan from General ledger</span></span>
 <span data-ttu-id="15e10-261">7.1.</span><span class="sxs-lookup"><span data-stu-id="15e10-261">7.1.</span></span> <span data-ttu-id="15e10-262">Navigera till Budgetering &gt; Periodisk &gt; Generera budgetplan från huvudbok.</span><span class="sxs-lookup"><span data-stu-id="15e10-262">Navigate to Budgeting &gt; Periodic &gt; Generate budget plan from General ledger.</span></span> <span data-ttu-id="15e10-263">Fyll i de periodiska processparametrarna och klicka på Generera.</span><span class="sxs-lookup"><span data-stu-id="15e10-263">Fill in the periodic process parameters and click button Generate.</span></span> 
 
 <span data-ttu-id="15e10-264">[![Generera](./media/screenshot29.png)](./media/screenshot29.png)</span><span class="sxs-lookup"><span data-stu-id="15e10-264">[![Generate](./media/screenshot29.png)](./media/screenshot29.png)</span></span> 
@@ -209,7 +207,7 @@ ms.lasthandoff: 01/17/2018
 
 <span data-ttu-id="15e10-271">[![Budgetplandokument](./media/screenshot31.png)](./media/screenshot31.png)</span><span class="sxs-lookup"><span data-stu-id="15e10-271">[![Budget plan display](./media/screenshot31.png)](./media/screenshot31.png)</span></span>
 
-## <a name="task-8-create-current-year-budget-based-on-previous-year-actuals"></a><span data-ttu-id="15e10-272">Uppgift 8: Skapa innevarande års budget baserad på utfall för tidigare år</span><span class="sxs-lookup"><span data-stu-id="15e10-272">Task 8: Create current year budget based on previous year actuals</span></span>
+### <a name="task-8-create-current-year-budget-based-on-previous-year-actuals"></a><span data-ttu-id="15e10-272">Uppgift 8: Skapa innevarande års budget baserad på utfall för tidigare år</span><span class="sxs-lookup"><span data-stu-id="15e10-272">Task 8: Create current year budget based on previous year actuals</span></span>
 <span data-ttu-id="15e10-273">Allokeringsmetoder kan användas i budgetplaner för att enkelt kopiera information för budgetplaner från ett scenario till ett annat eller fördela dem över perioder eller allokera till dimensioner.</span><span class="sxs-lookup"><span data-stu-id="15e10-273">Allocation methods can be used in budget plan to easily copy information for budget plans from one scenario to another/ spread them across periods/ allocate to dimensions.</span></span> <span data-ttu-id="15e10-274">Vi använder allokeringar för att skapa innevarande års budget från tidigare års utfall.</span><span class="sxs-lookup"><span data-stu-id="15e10-274">We will use allocations to create current year budget from previous year actuals.</span></span> 
 
 <span data-ttu-id="15e10-275">8.1.</span><span class="sxs-lookup"><span data-stu-id="15e10-275">8.1.</span></span> <span data-ttu-id="15e10-276">Välj alla rader i rutnätet i budgetplandokumentet och klicka på knappen för allokering av budget</span><span class="sxs-lookup"><span data-stu-id="15e10-276">Pick all lines in the budget plan document grid and click button allocate budget</span></span> 
@@ -224,7 +222,7 @@ ms.lasthandoff: 01/17/2018
 
 <span data-ttu-id="15e10-282">[![Försäljningskurva](./media/screenshot34.png)](./media/screenshot34.png)</span><span class="sxs-lookup"><span data-stu-id="15e10-282">[![Sales curve](./media/screenshot34.png)](./media/screenshot34.png)</span></span>
 
-## <a name="task-9-adjust-budget-plan-document-using-excel-and-finalize-the-document"></a><span data-ttu-id="15e10-283">Uppgift 9: Justera budgetplandokumentet med hjälp av Excel och slutför dokumentet</span><span class="sxs-lookup"><span data-stu-id="15e10-283">Task 9: Adjust budget plan document using Excel and finalize the document</span></span>
+### <a name="task-9-adjust-budget-plan-document-using-excel-and-finalize-the-document"></a><span data-ttu-id="15e10-283">Uppgift 9: Justera budgetplandokumentet med hjälp av Excel och slutför dokumentet</span><span class="sxs-lookup"><span data-stu-id="15e10-283">Task 9: Adjust budget plan document using Excel and finalize the document</span></span>
 <span data-ttu-id="15e10-284">9.1.</span><span class="sxs-lookup"><span data-stu-id="15e10-284">9.1.</span></span> <span data-ttu-id="15e10-285">Klicka på knappen för kalkylbladet för att öppna dokumentinnehållet i Excel</span><span class="sxs-lookup"><span data-stu-id="15e10-285">Click Button worksheet to open document contents in Excel</span></span>
 
 <span data-ttu-id="15e10-286">[![Excel](./media/screenshot35.png)](./media/screenshot35.png)</span><span class="sxs-lookup"><span data-stu-id="15e10-286">[![Excel](./media/screenshot35.png)](./media/screenshot35.png)</span></span>
@@ -239,8 +237,7 @@ ms.lasthandoff: 01/17/2018
 
 <span data-ttu-id="15e10-294">När arbetsflödet har slutförts, ändras steget för budgetplandokument till Godkänt.</span><span class="sxs-lookup"><span data-stu-id="15e10-294">Once workflow completes, budget plan document stage changes to Approved.</span></span> <span data-ttu-id="15e10-295">[![Godkänd](./media/screenshot38.png)](./media/screenshot38.png)</span><span class="sxs-lookup"><span data-stu-id="15e10-295">[![Approved](./media/screenshot38.png)](./media/screenshot38.png)</span></span>
 
-<a name="appendix"></a><span data-ttu-id="15e10-296">Bilaga</span><span class="sxs-lookup"><span data-stu-id="15e10-296">Appendix</span></span>
-========
+## <a name="appendix"></a><span data-ttu-id="15e10-296">Bilaga</span><span class="sxs-lookup"><span data-stu-id="15e10-296">Appendix</span></span>
 
 ### <a name="auto-approve-workflow-configuration"></a><span data-ttu-id="15e10-297">Konfiguration för automatiskt godkännande arbetsflöde</span><span class="sxs-lookup"><span data-stu-id="15e10-297">Auto-Approve workflow configuration</span></span>
 
