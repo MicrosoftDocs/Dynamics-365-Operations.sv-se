@@ -1,4 +1,4 @@
---- 
+---
 title: Skapa en produktionsorder
 description: "Den här proceduren visar hur du skapar en produktionsorder."
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -69,5 +69,4 @@ Den här proceduren visar hur du skapar en produktionsorder. Det demonstrationsd
     * När du ändrar processtiden påverkas den beräknade flödesförbrukningen och kostnaden för tillverkningsordern.  
 6. Klicka på Spara.
 7. Stäng sidan.
-
 

@@ -1,4 +1,4 @@
---- 
+---
 title: Starta en produktionsorder
 description: "Den här proceduren visar hur du startar en produktionsorder i fabriken."
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -70,5 +70,4 @@ Den här proceduren visar hur du startar en produktionsorder i fabriken. Tids- o
 7. Klicka på Bokför.
 8. Klicka på OK.
     * I flödeskortjournalen registreras tidsåtgången för enskilda åtgärder. Varu- och felkvantiteten kan också rapporteras.  
-
 

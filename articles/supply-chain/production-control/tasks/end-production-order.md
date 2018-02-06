@@ -1,4 +1,4 @@
---- 
+---
 title: Avsluta en produktionsorder
 description: "Den här proceduren visar hur du avslutar en produktionsorder."
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -46,5 +46,4 @@ Den här proceduren visar hur du avslutar en produktionsorder. Det demonstration
 1. Klicka på Hantera kostnader i åtgärdsfönstret.
 2. Klicka på Visa kostnadsjämförelse.
     * När du har avslutat produktionsordern kan du jämföra den uppskattade självkostnaden med den verkliga självkostnaden för att få en överblick över produktionsavvikelserna.  
-
 

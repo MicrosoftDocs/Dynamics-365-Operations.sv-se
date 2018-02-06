@@ -1,4 +1,4 @@
---- 
+---
 title: "Frisläpp en produktionsorder"
 description: "I den här proceduren visas hur du frisläpper en produktionsorder."
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: johanho
@@ -39,5 +39,4 @@ I den här proceduren visas hur du frisläpper en produktionsorder. Det demonstr
 5. Klicka på kryssrutan Skriv ut ruttkort.
 6. Klicka på OK.
 7. Stäng sidan.
-
 

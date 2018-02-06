@@ -1,4 +1,4 @@
---- 
+---
 title: "Förbered ett kanban-processjobb när material är tillgängliga för arbetsgruppen"
 description: "Den här uppgiften fokuseras på att förbereda ett kanban-processjobb när alla material är tillgängliga för arbetsgruppen."
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -40,5 +40,4 @@ Den här uppgiften fokuseras på att förbereda ett kanban-processjobb när alla
     * Om flera jobb väljs kommer plocklistan att visa summan av alla artiklar som behövs för de valda jobben.  
 6. Klicka på Förbered.
     * Förberedelseprocessen är nu slutförd. Den markerade kryssrutan för alla rader i plocklistan anger att tillförselstatusen plockas.  
-
 

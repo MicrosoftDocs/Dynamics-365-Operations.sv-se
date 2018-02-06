@@ -1,4 +1,4 @@
---- 
+---
 title: Uppskatta en produktionsorder
 description: "Du kan köra den här proceduren med demonstrationsdataföretaget USMF eller använda dina egna data."
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -42,5 +42,4 @@ Du kan köra den här proceduren med demonstrationsdataföretaget USMF eller anv
 1. Klicka på Hantera kostnader i åtgärdsfönstret.
 2. Klicka på Visa beräkningsuppgifter.
     * Den här sidan visar kostnadsuppdelningen. Du kan till exempel visa den totala självkostnaden per enhet för den färdiga produkten på den första raden. De efterföljande raderna innehåller kostnader i enlighet med strukturlistan, produktionsflödet och de indirekta kostnaderna.  
-
 
