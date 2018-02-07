@@ -1,7 +1,7 @@
 ---
 title: "Förhindra rabatter för butiksprodukter"
 description: "Det finns olika skäl varför återförsäljare kan vilja förhindra att vissa produkter rabatteras från ett erbjudande eller vid försäljningen i kassan."
-author: jeffbl
+author: jblucher
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
