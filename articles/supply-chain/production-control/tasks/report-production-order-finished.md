@@ -1,4 +1,4 @@
---- 
+---
 title: "Rapportera en produktionsorder som färdig"
 description: "I den här proceduren visas hur du rapporterar en produktionsorder som färdig."
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -50,5 +50,4 @@ I den här proceduren visas hur du rapporterar en produktionsorder som färdig. 
 3. Markera vald rad i listan.
 4. Klicka på länken på den valda raden i listan.
     * Journalen för rapportering som slutfört bokförs. Om du vill göra justeringar i journalen, kan du manuellt skapa en ny journal där du kan göra ändringar.  
-
 

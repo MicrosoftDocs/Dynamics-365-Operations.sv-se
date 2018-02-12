@@ -1,6 +1,7 @@
 ---
 title: "Översikt över kringutrustning i butik"
 description: "Det här avsnittet förklarar koncepten som är relaterade till kringutrustning i butik."
+author: rubencdelgado
 manager: AnnBe
 ms.date: 11/14/2017
 ms.topic: article

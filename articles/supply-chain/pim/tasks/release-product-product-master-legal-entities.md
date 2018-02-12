@@ -1,7 +1,7 @@
 --- 
 title: "Frisläpp en produkt/produktmall till juridiska personer"
 description: "Den här proceduren går igenom hur du frisläpper en produkt eller en produktmall till en eller flera juridiska personer."
-author: josaw1
+author: BibiSp
 manager: AnnBe
 ms.date: 11/14/2016
 ms.topic: business-process

@@ -1,7 +1,7 @@
 ---
 title: "Komponenter för ekonomisk rapport"
 description: "Den här artikeln innehåller en beskrivning av hur komponenter eller byggblock för rapportdefinitioner används vid ekonomisk rapportering. Dessa byggblock omfattar raddefinitioner, kolumndefinitioner och rapporteringsträddefinitioner. Artikeln innehåller en beskrivning av hur du ordnar och låser byggblock och hur du arbetar med byggblocksgrupper."
-author: aolson
+author: aprilolson
 manager: AnnBe
 ms.date: 10/27/2017
 ms.topic: article
@@ -112,7 +112,7 @@ När du öppnar ett byggblock kan andra användare bara komma åt byggblocket i 
 3.  Välj ett byggblock och klicka sedan på **Ångra utcheckningen**
 4.  Klicka på **Ja** för att check in byggblocket.
 
-# <a name="see-also"></a>Se även
+## <a name="see-also"></a>Se även
 
 [Ekonomisk rapportering](financial-reporting-intro.md)
 

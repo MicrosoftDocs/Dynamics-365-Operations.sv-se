@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application user, IT Pro
 ms.reviewer: robinr
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: tjvass
 ms.search.validFrom: 2017-06-30
@@ -30,14 +30,14 @@ ms.lasthandoff: 11/06/2017
 > [!NOTE]
 > Den här funktionen stöds i Dynamics 365 for Finance and Operations (version 7.2 och senare).
 
-# <a name="introduction"></a>Introduktion
+## <a name="introduction"></a>Introduktion
 Det här avsnittet beskriver hur du bäddar in en Microsoft Power BI-rapport på fliken **Analys** i en arbetsyta. För det exempel som anges här utökar vi arbetsytan **Reservationshantering** i programmet Hantering av vagnpark att bädda in en analytisk arbetsyta på fliken **analys**.
 
-# <a name="prerequisites"></a>Förutsättningar
+## <a name="prerequisites"></a>Förutsättningar
 + Åtkomst till en utvecklarmiljö som kör plattformsuppdatering 8 eller senare.
 + En analysrapport (.pbix-filen) som skapades med Microsoft Power BI Desktop och som har en datamodell som har ursprung i databasen för Enhetslagring.
 
-# <a name="overview"></a>Översikt
+## <a name="overview"></a>Översikt
 Oavsett om du utökar en befintlig programarbetsyta eller introducerar en egen arbetsyta kan du använda inbäddade analytiska vyer för att ge insiktsfulla och interaktiva visningar av dina företagsuppgifter. Processen för att lägga till en flik för analytiska arbetsytan finns fyra steg.
 
 1. Lägga till en .pbix-fil som en resurs i Dynamics 365.
@@ -48,7 +48,7 @@ Oavsett om du utökar en befintlig programarbetsyta eller introducerar en egen a
 > [!NOTE]
 > Mer information om hur du skapar analytiska rapporter finns i [komma igång med Power BI Desktop](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-getting-started/). Den här sidan är en bra källa för information som kan hjälpa dig skapa verkningsfulla analytiska rapporteringslösningar.
 
-# <a name="add-a-pbix-file-as-a-resource"></a>Lägga till en .pbix-fil som en resurs
+## <a name="add-a-pbix-file-as-a-resource"></a>Lägga till en .pbix-fil som en resurs
 Innan du börjar måste du skapa eller skaffa Power BI-rapporten som du bäddar in på arbetsytan. Mer information om hur du skapar analytiska rapporter finns i [komma igång med Power BI Desktop](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-getting-started/).
  
 Följ dessa steg om du vill lägga till en .pbix-fil som en projektartefakt för Visual Studio.
@@ -66,7 +66,7 @@ Följ dessa steg om du vill lägga till en .pbix-fil som en projektartefakt för
   
 Nu när du har lagt till .pbix-filen som en resurs i Dynamics 365, kan du bädda in rapporter i arbetsytor och lägga till direkta länkar med hjälp av menyalternativ.
 
-# <a name="add-a-tab-control-to-an-application-workspace"></a>Lägga till en flikkontroll till en programarbetsyta
+## <a name="add-a-tab-control-to-an-application-workspace"></a>Lägga till en flikkontroll till en programarbetsyta
 I det här exemplet ska vi utöka arbetsytan **Hantering av reservationer** i modellen uthyrning av vagnpark genom att lägga till fliken **analys** till definitionen av formuläret **FMClerkWorkspace**.
  
 Följande bild visar hur formuläret **FMClerkWorkspace** ser ut i designern i Microsoft Visual Studio.
@@ -105,7 +105,7 @@ Nu när du har lagt till formulärkontroller som används för att bädda in arb
  
 Du har nu slutfört uppgiften att utöka definitionen för ansökningsformulär. Mer information om hur du använder tillägg om du vill göra anpassningar finns [anpassning: överlagring och tillägg](../extensibility/customization-overlayering-extensions.md).
 
-# <a name="add-x-business-logic-to-embed-a-viewer-control"></a>Lägg till X ++-affärslogik om du vill inkludera visningskontrollen
+## <a name="add-x-business-logic-to-embed-a-viewer-control"></a>Lägg till X ++-affärslogik om du vill inkludera visningskontrollen
 Så här lägger du till affärslogik som initierar rapportvisningskontrollen som är inbäddad i arbetsytan **Reservationshantering**.
 
 1. Öppna formulärdesignern **FMClerkWorkspace** för att utöka designdefinitionen.
@@ -151,12 +151,12 @@ Du har nu slutfört uppgiften att lägga till inbäddad affärslogik för att in
 > [!NOTE]
 > Du kommer åt den befintliga vyn med hjälp av flikarna för arbetsyta under en rubrik.
 
-# <a name="reference"></a>Referens
+## <a name="reference"></a>Referens
 
-## <a name="pbireporthelperinitializereportcontrol-method"></a>PBIReportHelper.initializeReportControl-metoden
+### <a name="pbireporthelperinitializereportcontrol-method"></a>PBIReportHelper.initializeReportControl-metoden
 Det här avsnittet innehåller information om den hjälpklass som används för att bädda in en Power BI-rapport (.pbix resurs) i formulärgruppkontroll.
 
-### <a name="syntax"></a>Syntax
+#### <a name="syntax"></a>Syntax
 ```
 public static void initializeReportControl(
      str                 _resourceName,
@@ -167,7 +167,7 @@ public static void initializeReportControl(
      List                _defaultFilters = new List(Types::Class))
 ```
 
-### <a name="parameters"></a>Parametrar
+#### <a name="parameters"></a>Parametrar
 
 | Namn | beskrivning |
 |---|---|

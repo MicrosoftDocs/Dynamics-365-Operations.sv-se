@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: FinancialReports
 audience: Application User
 ms.reviewer: shylaw
-ms.search.scope: Operations, Core
+ms.search.scope: Core, Operations
 ms.custom: 58881
 ms.assetid: 0af492df-a84e-450c-8045-78ef1211abaf
 ms.search.region: Global
@@ -33,7 +33,7 @@ ms.lasthandoff: 11/03/2017
 
 Den här artikeln innehåller en beskrivning av den information som krävs för varje cell i en raddefinition för en ekonomisk rapport och av hur du anger den informationen. 
 
-# <a name="specify-a-row-code-in-a-row-definition"></a>Ange en radkod i en raddefinition
+## <a name="specify-a-row-code-in-a-row-definition"></a>Ange en radkod i en raddefinition
 
 I raddefinitioner identifierar de nummer eller etiketter som finns i cellen **Radkod** varje rad i raddefinitionen. Du kan ange att radkoden ska referera till data i beräkningar och summor.
 
@@ -506,8 +506,7 @@ En dimensionsvärdeuppsättning är en namngiven grupp av dimensionsvärden. En 
 4.  Välj de uppsättning som ska tas bort och klicka sedan på **Ta bort**. Klicka på **Ja** om du vill ta bort dimensionsvärdeuppsättningen permanent.
 
 
-<a name="see-also"></a>Se även
---------
+## <a name="see-also"></a>Se även
 
 [Ekonomisk rapportering](financial-reporting-intro.md)
 

@@ -1,4 +1,4 @@
---- 
+---
 title: "Aktivera löneprocessen för tid och närvaro"
 description: "I den här proceduren visas hur du aktiverar lönelistprocessen för tid och närvaro."
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -68,5 +68,4 @@ I den här proceduren visas hur du aktiverar lönelistprocessen för tid och nä
 6. Expandera tidsregistreringsavsnittet.
 7. Klicka på Redigera.
 8. Ange eller välj ett värde i fältet Löneavtal.
-
 

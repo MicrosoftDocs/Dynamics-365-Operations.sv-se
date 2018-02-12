@@ -1,4 +1,4 @@
---- 
+---
 title: Tidsplanera en produktionsorder
 description: "I den här proceduren visas hur du tidsplanerar en produktionsorder."
 author: johanhoffmann
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
@@ -53,5 +53,4 @@ I den här proceduren visas hur du tidsplanerar en produktionsorder. Det demonst
     * Sidan Kapacitetsbeläggning visar den kapacitet som reserverats genom finplanering, det totala antalet timmar som är reserverat för närvarande för resursen och antalet timmar som återstår för finplanering för resursen.  
 6. Stäng sidan.
 7. Stäng sidan.
-
 

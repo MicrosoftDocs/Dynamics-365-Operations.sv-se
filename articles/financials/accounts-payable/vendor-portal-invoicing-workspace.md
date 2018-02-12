@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: VendInvoiceWorkspace
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
@@ -47,10 +48,12 @@ Arbetsytan **Fakturera leverantörssamarbeten** kan användas för att visa info
 -   Betalda fakturor är de fakturor som har betalats till fullo i Finance and Operations.
 
 Om du klickar på en ruta öppnas en filtrerad vy av listsidan **Fakturor**.
+
 ### <a name="tabular-lists"></a>Tabellistor
 
 I avsnittet **Tabellistor** är status för faktureringen uppdelad på liknande sätt som sammanfattningsrutorna: Utkast och Skickad, ej godkända listor. En faktura kan skickas till arbetsflödet eller tas bort när den befinner sig läget Utkast. Den sista tabellistan är ett alternativ för att hitta fakturor. Du kan filtrera medan du söker för att tillåta snabbare sökningar.
-Alla listsidor med leverantörsfakturor
+
+<a name="all-vendor-invoices-list-page"></a>Alla listsidor med leverantörsfakturor
 -----------------------------
 
 Du kan visa alla bokförda och ej bokförda leverantörsfakturor på listsidan **Leverantörssamarbetesfakturor**. Du kan använda den här listsidan för att visa betalningsstatus för fakturor. Betalningsstatus omfattar Ej bokförd, Obetald, Delvis betald och Helt betald.

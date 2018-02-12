@@ -114,6 +114,7 @@
 #### [Anpassning: överlägg och tillägg](extensibility/customization-overlayering-extensions.md)
 ### Nyheter
 #### [Ändringar av utbyggbarhet juli 2017](extensibility/changes-july-2017.md)
+#### [Ändringar av utbyggbarhet i Dynamics 365 for Finance and Operations, Enterprise edition 7.3](extensibility/extensibility-changes-73.md)
 ### Grunderna
 #### [Inkräktande anpassningar](extensibility/intrusive-customizations.md)
 #### [Klasstillägg](extensibility/class-extensions.md)
@@ -138,6 +139,11 @@
 #### [Ändra egenskaper för formulärkontroll](extensibility/modify-control-properties.md)
 #### [Ändra en etikett](extensibility/change-label.md)
 #### [Utöka nummersekvensens omfattning](extensibility/extend-number-sequence-scope.md)
+#### [Lägg till en ny lagerdimension](extensibility/inventory-dimensions.md)
+#### [Ändringar av pris- och rabattillägg](extensibility/pricing-app73.md)
+#### [Tillägg för registermappning](extensibility/map-extensions.md)
+#### [Utöka registermappningar som används som gränssnitt](extensibility/maps-as-interfaces.md)
+#### [Utöka registermappningar som används för versionshantering](extensibility/maps-with-versioning.md)
 
 
 
@@ -523,16 +529,16 @@
 
 # [Uppgradering och migrering](migration-upgrade/upgrade-home-page.md)
 ## [Uppgradera från AX 2012 till Dynamics 365 for Finance and Operations](migration-upgrade/upgrade-overview-2012.md)
-### [Analysera - Använd verktyget Uppgraderingsanalys för att planera uppgraderingen](migration-upgrade/upgrade-analyzer-tool.md)
-### [Analysera – Använd tjänsten Koduppgradering för att beräkna insatsen för att uppgradera koden](migration-upgrade/analyze-code-upgrade.md)
-### [Analysera – Distribuera en sandbox-miljö](migration-upgrade/analysis-sandbox.md)
-### [Uppgradera - Datauppgradering i en utvecklingsmiljö](migration-upgrade/data-upgrade-2012.md)
-### [Uppgradera - Uppgifter för uppgradering av AX 2012-data](migration-upgrade/prepare-data-upgrade.md)
-### [Uppgradera - Datauppgradering i begränsat läge](migration-upgrade/upgrade-data-sandbox.md)
-### [Validera - Övergångstest](migration-upgrade/upgrade-cutover-testing.md)
-### [Validera - Uppgifter som måste utföras efter uppgraderingen](migration-upgrade/app-validation-process.md)
-### [Validera - Funktionstestning](migration-upgrade/upgrade-functional-validation.md)
-### [Validera - Förbered publicering](migration-upgrade/upgrade-go-live-prep.md)
+### [AX 2012-uppgradering - Använd verktyget Uppgraderingsanalys för att planera](migration-upgrade/upgrade-analyzer-tool.md)
+### [AX 2012-uppgradering – Använd tjänsten Koduppgradering för att beräkna insatsen](migration-upgrade/analyze-code-upgrade.md)
+### [AX 2012-uppgradering – Distribuera ett begränsat läge](migration-upgrade/analysis-sandbox.md)
+### [AX 2012-uppgradering - Datauppgradering i en utvecklingsmiljö](migration-upgrade/data-upgrade-2012.md)
+### [AX 2012-uppgradering - Uppgifter för uppgradering av AX 2012-data](migration-upgrade/prepare-data-upgrade.md)
+### [AX 2012-uppgradering - Datauppgradering i begränsat läge](migration-upgrade/upgrade-data-sandbox.md)
+### [AX 2012-uppgradering - Övergångstest](migration-upgrade/upgrade-cutover-testing.md)
+### [AX 2012-uppgradering - Uppgifter som ska utföras efter uppgradering](migration-upgrade/app-validation-process.md)
+### [AX 2012-uppgradering - Funktionstest har genomförts](migration-upgrade/upgrade-functional-validation.md)
+### [AX 2012-uppgradering - Förbered publicering](migration-upgrade/upgrade-go-live-prep.md)
 
 
 ### Ändringar som påverkar uppgradering från AX 2012
@@ -590,6 +596,8 @@
 ## [Batchbearbetning](sysadmin/batch-processing-overview.md)
 ### [Översikt över batchserver](sysadmin/batch-server-overview.md)
 ### [Skapa ett batchjobb](sysadmin/tasks/create-batch-job.md)
+
+## [Skapa regler för optimerings-advisor](sysadmin/optimization-advisor.md)
 
 # Lifecycle Services
 ## [Översikt över Lifecycle Services](lifecycle-services/lcs.md)

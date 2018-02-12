@@ -1,7 +1,7 @@
 ---
 title: Betalningsmetoder
 description: "Varje betalningstyp som en återförsäljare godtar, måste konfigureras när systemet installeras. Det här avsnittet ger en beskrivning av betalningstyperna som du kan ställa in och processen för hur du ställer in dem."
-author: MargoC
+author: sericks007
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

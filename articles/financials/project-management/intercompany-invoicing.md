@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: LedgerInterCompany
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
@@ -59,9 +60,9 @@ I det här exemplet måste FRSI vara en kund till den juridiska personen USSI oc
 
 1.  Ställ in FRSI som en kund till den juridiska personen USSI och ställ in USSI som en leverantör till den juridiska personen FRSI. Det finns tre startpunkter för de steg som krävs för uppgiften.
     | Steg | Startpunkt                                                                       | beskrivning   |
-    |------|-----------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-    | A    | I USSI klickar du på **Kundreskontra** &gt; **Kunder** &gt; **Alla kunder**. | Skapa en ny kundpost för FRSI och välj kundgrupp.                                                                                                                                                                                                                           |
-    | B    | I FRSI klickar du på **Leverantörsreskontra** &gt; **Leverantörer** &gt; **Alla leverantörer**.        | Skapa en ny leverantörspost för USSI och välj leverantörsgrupp.                                                                                                                                                                                                                               |
+    |------|-----------------------------------------------------------------------------------|------------------|
+    | A    | I USSI klickar du på **Kundreskontra** &gt; **Kunder** &gt; **Alla kunder**. | Skapa en ny kundpost för FRSI och välj kundgrupp.                                                                                  |
+    | B    | I FRSI klickar du på **Leverantörsreskontra** &gt; **Leverantörer** &gt; **Alla leverantörer**.        | Skapa en ny leverantörspost för USSI och välj leverantörsgrupp.                                                                                    |
     | C    | I FRSI, öppna leverantörsposten du just skapade.                            | I åtgärdsfönstret, på fliken **Allmänt**, i gruppen **Ställ in**, klicka på **Koncernintern**. På sidan **Koncernintern**, fliken **Handelsrelation**, ställ in skjutreglaget **Aktiv** på **Ja**. I fältet **Kundföretag**, markera kundposten som du skapade i steg A. |
 
 2.  Klicka på **Projekthantering och redovisning** &gt; **Inställningar** &gt; **Redovisningsparametrar för projekthantering** och klicka sedan på fliken **Företagsinternt**. Hur du anger parametrarna vilar på om du utgör utlånande juridisk person eller lånande juridisk person.

@@ -8,6 +8,7 @@ ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: ERWorkspace
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -17,10 +18,10 @@ ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 3d3ad89f80c3e3f42e117109f4a76232795b7d64
-ms.openlocfilehash: 9322b970eea9ab5ac01ae8461285b4dbcc1624a3
+ms.sourcegitcommit: a523ff097eedf9a4a2cb0341b3be9d05abfa09fa
+ms.openlocfilehash: 1cb4305b3ef425ec19ae63c8186bffef212b9890
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/28/2017
+ms.lasthandoff: 01/23/2018
 
 ---
 
@@ -267,7 +268,7 @@ Följande avsnitt visar resurser efter land/region.
    
 ### <a name="malaysia"></a>Malaysia
 
--   [Moms på varor och tjänster](../../financials/localizations/apac-mys-gst.md)
+-   [Moms för varor och tjänster](../../financials/localizations/apac-mys-gst.md)
 
 ### <a name="netherlands"></a>Nederländerna
 
@@ -275,6 +276,8 @@ Följande avsnitt visar resurser efter land/region.
 
 ### <a name="norway"></a>Norge
 
+-   [Kassaapparater för Norge](../../retail/localizations/emea-nor-cash-registers.md)
+-   [Riktlinjer för distribution av kassaapparater för Norge](../../retail/localizations/emea-nor-loc-deployment-guidelines.md)
 -   [Nets-importformat](../../financials/localizations/emea-nor-nets-import-format.md)
 -   [Momsutdrag](../../financials/localizations/emea-nor-sales-tax-payment-report.md)
 

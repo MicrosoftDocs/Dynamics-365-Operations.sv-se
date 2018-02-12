@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: GeneralJournalEntryWorkspace
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
@@ -43,7 +44,7 @@ Du kan allokera, eller fördela, monetära belopp på ett eller flera konton ell
 
 [![Affärsprocess](./media/GL-process.PNG)](./media/GL-process.PNG)
 
-# <a name="sales-tax"></a>Moms
+## <a name="sales-tax"></a>Moms
 Alla företag samlar in och betalar moms till olika skattemyndigheter. Reglerna och satserna varierar efter land/region, delstat, kommun och ort.
 Dessutom måste reglerna uppdateras regelbundet när skattemyndigheter ändrar sina krav. Momskoderna innehåller grundläggande information om hur mycket du samlar in och betalar till myndigheterna. När du ställer in momskoder, definierar du de belopp eller procentsatser som ska samlas in. Du anger även olika metod med de belopp eller procentsatser av tillämpas på transaktionsbelopp. Det här avsnittet innehåller information om hur du ställer in momskoder för de metoder och satser som skattemyndigheterna kräver.
 
@@ -52,13 +53,13 @@ Dessutom måste reglerna uppdateras regelbundet när skattemyndigheter ändrar s
  - [Momsbetalningar och avrundningsregler](round-sales-tax-payments.md)
 
 
-### <a name="additional-resources"></a>Ytterligare resurser
+## <a name="additional-resources"></a>Ytterligare resurser
 
-#### <a name="whats-new-and-in-development"></a>Vad är nytt och under utveckling
+### <a name="whats-new-and-in-development"></a>Vad är nytt och under utveckling
 
 Öppna [översikten till Microsoft Dynamics 365](https://roadmap.dynamics.com/) för att visa vilka nya funktioner som har lanserats och nya funktioner under utveckling. 
 
-#### <a name="blogs"></a>Bloggar
+### <a name="blogs"></a>Bloggar
 
 Det finns åsikter, nyheter och annan information om leverantörsreskontra och andra lösningar i [bloggen Microsoft Dynamics 365](https://community.dynamics.com/b/msftdynamicsblog?c=Enterprise).
 
@@ -66,10 +67,10 @@ Det finns många poster om redovisningen i [Microsoft Dynamics AX-produktteamets
 
 I [bloggen Microsoft Dynamics Operations Partner Community](https://community.dynamics.com/partner/b/operationspartnercommunityblog) får Microsoft Dynamics Partners en resurs där de kan få mer information om vad som är nytt och trendar i MBS Operations.
 
-#### <a name="task-guides"></a>Uppgiftsguider
+### <a name="task-guides"></a>Uppgiftsguider
 Mer hjälp är tillgänglig som uppgiftsguider i Finance and Operations. Klicka på knappen Hjälp på valfri sida för att få åtkomst till uppgiftsguiderna.
 
-#### <a name="videos"></a>Videoklipp
+### <a name="videos"></a>Videoklipp
 
 Ta en titt på instruktionsfilmerna som finns på [YouTube-kanalen för Microsoft Dynamics 365](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
 

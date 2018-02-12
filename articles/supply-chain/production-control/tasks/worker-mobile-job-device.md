@@ -69,4 +69,3 @@ I den här proceduren visas hur du tilldelar de korrekta rollerna till användar
 6. I fältet Produktionsenhet kan du ställa in standardfiltret för arbetaren. Då säkerställs att endast produktionsjobb för den valda produktionsenheten visas när arbetaren loggar in på enheten.
 7. Stäng sidan.
 
-

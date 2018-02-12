@@ -1,7 +1,7 @@
 ---
 title: Sammanfoga lagerbatchar
 description: "Den här artikeln innehåller information om hur du konsoliderar två eller flera lagerbatchar till en sammanfogad batch."
-author: perlynne
+author: pjacobse
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
