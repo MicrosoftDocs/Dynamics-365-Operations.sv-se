@@ -1,0 +1,77 @@
+---
+title: "Lösarstrategi för produktkonfiguration"
+description: "Det här avsnittet beskriver hur du kan använda problemlösarstrategin för att förbättra prestandan för produktkonfiguration."
+author: cvocph
+manager: AnnBe
+ms.date: 01/02/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+ms.search.form: PCCreateProductConfigurationModel, PCProductConfigurationModelListPage
+audience: Application User
+ms.reviewer: yuyus
+ms.search.scope: Core, Operations
+ms.custom: 
+ms.assetid: 
+ms.search.region: Global
+ms.search.industry: 
+ms.author: conradv
+ms.search.validFrom: 2016-02-28
+ms.dyn365.ops.version: AX 7.0.0
+ms.translationtype: HT
+ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
+ms.openlocfilehash: 4544128e580b30b14a6236a9a6147ff0a8641d72
+ms.contentlocale: sv-se
+ms.lasthandoff: 02/07/2018
+
+---
+
+# <a name="solver-strategy-for-product-configuration"></a><span data-ttu-id="851cd-103">Lösarstrategi för produktkonfiguration</span><span class="sxs-lookup"><span data-stu-id="851cd-103">Solver strategy for product configuration</span></span>
+
+[!include[banner](../includes/banner.md)]
+
+<span data-ttu-id="851cd-104">Det här avsnittet beskriver hur du kan använda problemlösarstrategin för att förbättra prestandan för produktkonfiguration.</span><span class="sxs-lookup"><span data-stu-id="851cd-104">This topic describes how you can use the solver strategy to improve the performance of product configuration.</span></span>
+
+<span data-ttu-id="851cd-105">Konceptet för problemlösarstrategier infördes i kumulativ uppdatering 7 (CU7) för Microsoft Dynamics AX 2012 R2.</span><span class="sxs-lookup"><span data-stu-id="851cd-105">The concept of solver strategies was first introduced in Cumulative update 7 (CU7) for Microsoft Dynamics AX 2012 R2.</span></span> <span data-ttu-id="851cd-106">Den förlängdes i kumulativ uppdatering 8 (CU8) för Microsoft Dynamics AX 2012 R3 och Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 7.3.</span><span class="sxs-lookup"><span data-stu-id="851cd-106">It was extended in Cumulative update 8 (CU8) for Microsoft Dynamics AX 2012 R3 and Microsoft Dynamics 365 for Finance and Operations, Enterprise edition 7.3.</span></span>
+
+<span data-ttu-id="851cd-107">Konceptet problemlösarstrategi består nu av följande strategier:</span><span class="sxs-lookup"><span data-stu-id="851cd-107">The solver strategy concept now consists of the following strategies:</span></span>
+
+- <span data-ttu-id="851cd-108">Standard</span><span class="sxs-lookup"><span data-stu-id="851cd-108">Default</span></span>
+- <span data-ttu-id="851cd-109">Minimala domäner först</span><span class="sxs-lookup"><span data-stu-id="851cd-109">Minimal domains first</span></span>
+- <span data-ttu-id="851cd-110">Uppifrån och ned</span><span class="sxs-lookup"><span data-stu-id="851cd-110">Top-down</span></span>
+- <span data-ttu-id="851cd-111">Z3</span><span class="sxs-lookup"><span data-stu-id="851cd-111">Z3</span></span>
+
+## <a name="solver-strategy"></a><span data-ttu-id="851cd-112">Lösarstrategi</span><span class="sxs-lookup"><span data-stu-id="851cd-112">Solver strategy</span></span> 
+
+<span data-ttu-id="851cd-113">En modell för produktkonfiguration kan formuleras som ett [begränsningsbaserad problem (CSP)](http://aima.cs.berkeley.edu/2nd-ed/newchap05.pdf).</span><span class="sxs-lookup"><span data-stu-id="851cd-113">A product configuration model can be formulated as a [constraint satisfaction problem (CSP)](http://aima.cs.berkeley.edu/2nd-ed/newchap05.pdf).</span></span> <span data-ttu-id="851cd-114">Microsoft Solver Foundation (MSF) erbjuder två typer av problemlösarstrategier för att lösa de CSPer som kan användas från produktkonfigurationsmodeller.</span><span class="sxs-lookup"><span data-stu-id="851cd-114">Microsoft Solver Foundation (MSF) provides two types of solver strategies to solve the CSPs that can be used from product configuration models.</span></span> <span data-ttu-id="851cd-115">Dessa problemlösarstrategier är beroende av [heuristik](https://techterms.com/definition/heuristic), som används för att bestämma den ordning som variabler av CSPer beaktas när problem löses.</span><span class="sxs-lookup"><span data-stu-id="851cd-115">These solver strategies rely on [heuristics](https://techterms.com/definition/heuristic), which are used to determine the order that the variables of the CSPs are considered in when the problem is being solved.</span></span> <span data-ttu-id="851cd-116">Heuristik kan påverka prestanda betydligt när ett problem eller en problemklass löses.</span><span class="sxs-lookup"><span data-stu-id="851cd-116">Heuristics can significantly affect performance when a problem or class of problems is being solved.</span></span>
+
+<span data-ttu-id="851cd-117">I Finance and Operations avgör problemlösarstrategin för produktkonfigurationsmodeller vilka problemlösare som används med heuristik.</span><span class="sxs-lookup"><span data-stu-id="851cd-117">In Finance and Operations, the solver strategy for product configuration models determines which solver is used with heuristics.</span></span> <span data-ttu-id="851cd-118">**Standardstrategierna**, **Minsta domän första**, och **uppifrån och ned** använder två problemlösare från MSF medan **Z3**-strategin använder problemlösaren Z3.</span><span class="sxs-lookup"><span data-stu-id="851cd-118">The **Default**, **Minimal domains first**, and **Top-down** strategies use the two solvers from MSF, whereas the **Z3** strategy uses the Z3 solver.</span></span> 
+
+<span data-ttu-id="851cd-119">Studier av verkliga kundimplementationer har visat att en ändring i problemlösarstrategin för produktkonfigurationsmodellen kan minska svarstiden från minuter till millisekunder.</span><span class="sxs-lookup"><span data-stu-id="851cd-119">Real customer implementation studies have shown that a change in the solver strategy for a product configuration model can reduce the response time from minutes to milliseconds.</span></span> <span data-ttu-id="851cd-120">Det är därför värt att prova olika problemlösarstrategier för att hitta den mest effektiva strategin för din produktkonfigurationsmodell.</span><span class="sxs-lookup"><span data-stu-id="851cd-120">Therefore, it's worth the effort to try different solver strategies to find the most efficient strategy for your product configuration model.</span></span>
+
+## <a name="change-the-settings-for-the-solver-strategy"></a><span data-ttu-id="851cd-121">Ändra inställningarna för problemlösarstrategin</span><span class="sxs-lookup"><span data-stu-id="851cd-121">Change the settings for the solver strategy</span></span>
+
+<span data-ttu-id="851cd-122">För att ändra problemlösarstrategin på sidan **produktkonfigurationsmodeller** i åtgärdsfönstret, välj **modellegenskaper**.</span><span class="sxs-lookup"><span data-stu-id="851cd-122">To change the solver strategy, on the **Product configuration models** page, on the Action Pane, select **Model properties**.</span></span> <span data-ttu-id="851cd-123">Därefter väljer du problemlösarstrategi i dialogrutan **redigera modelluppgifter**.</span><span class="sxs-lookup"><span data-stu-id="851cd-123">Then, in the **Edit the model details** dialog box, select a solver strategy.</span></span>
+
+<span data-ttu-id="851cd-124">[![Att ändra problemlösarstrategi.](./media/solver-strategy.png)](./media/solver-strategy.png)</span><span class="sxs-lookup"><span data-stu-id="851cd-124">[![Changing the solver strategy](./media/solver-strategy.png)](./media/solver-strategy.png)</span></span>
+
+<span data-ttu-id="851cd-125">Det finns för närvarande ingen logik som automatiskt identifierar den mest effektiva strategin för begränsningsbaserad konfiguration.</span><span class="sxs-lookup"><span data-stu-id="851cd-125">Currently, there is no logic that automatically detects which solver strategy will be the most efficient strategy for constraint-based product configuration.</span></span> <span data-ttu-id="851cd-126">Därför måste du prova en problemlösarstrategi i taget.</span><span class="sxs-lookup"><span data-stu-id="851cd-126">Therefore, you must try the solver strategies one by one.</span></span>
+
+<span data-ttu-id="851cd-127">Följande tabell innehåller rekommendationer om problemlösarstrategin i olika scenarier.</span><span class="sxs-lookup"><span data-stu-id="851cd-127">The following table provides recommendations about the solver strategy to use in various scenarios.</span></span>
+
+| <span data-ttu-id="851cd-128">Lösarstrategi</span><span class="sxs-lookup"><span data-stu-id="851cd-128">Solver strategy</span></span>      | <span data-ttu-id="851cd-129">Använd strategin i det här scenariot</span><span class="sxs-lookup"><span data-stu-id="851cd-129">Use the strategy in this scenario</span></span> |
+|----------------------|-----------------------------------|
+| <span data-ttu-id="851cd-130">Standard</span><span class="sxs-lookup"><span data-stu-id="851cd-130">Default</span></span>              | <span data-ttu-id="851cd-131">**Standard**strategin har optimerats för att lösa modeller som utnyttjar registerbegränsningar.</span><span class="sxs-lookup"><span data-stu-id="851cd-131">The **Default** strategy has been optimized to solve models that rely on table constraints.</span></span> <span data-ttu-id="851cd-132">Studier av kundimplementation har visat att det här alternativet är den mest effektiva strategin i scenarier där registerbegränsningar är mycket vanliga.</span><span class="sxs-lookup"><span data-stu-id="851cd-132">Customer implementation studies have shown that this strategy is the most efficient strategy in scenarios where table constraints are used extensively.</span></span> |
+| <span data-ttu-id="851cd-133">Minsta domän först</span><span class="sxs-lookup"><span data-stu-id="851cd-133">Minimal domain first</span></span> | <span data-ttu-id="851cd-134">Strategierna **Minsta domänen först** och **uppifrån och ned** hör nära samman.</span><span class="sxs-lookup"><span data-stu-id="851cd-134">The **Minimal domain first** and **Top-down** strategies are closely related.</span></span> <span data-ttu-id="851cd-135">Studier av kundimplementation har visat att strategin **uppifrån och ned**, som introducerades i CU8, är bättre än strategin **Minsta domän först**.</span><span class="sxs-lookup"><span data-stu-id="851cd-135">Customer implementation studies have shown that the **Top-down** strategy, which was introduced in CU8, outperforms the **Minimal domain first** strategy.</span></span> <span data-ttu-id="851cd-136">Men strategin **Minsta domän först** behålls i produkten för bakåtkompatibilitet.</span><span class="sxs-lookup"><span data-stu-id="851cd-136">However, the **Minimal domain first** strategy is kept in the product for backward compatibility.</span></span> <span data-ttu-id="851cd-137">Båda dessa problemlösarstrategier för har visat sig vara effektivare på att lösa modeller som innehåller flera aritmetiska uttryck och där ingen registerbegränsningar används.</span><span class="sxs-lookup"><span data-stu-id="851cd-137">Both these solver strategies have been shown to be more efficient at solving models that contain several arithmetic expressions where no table constraints are used.</span></span> <span data-ttu-id="851cd-138">I vissa fall kan **standard** strategin vara bättre än båda de andra strategierna.</span><span class="sxs-lookup"><span data-stu-id="851cd-138">However, in some cases, the **Default** strategy outperforms these two strategies.</span></span> <span data-ttu-id="851cd-139">Kom alltså ihåg att prova alla strategier.</span><span class="sxs-lookup"><span data-stu-id="851cd-139">Therefore, remember to try each strategy.</span></span> |
+| <span data-ttu-id="851cd-140">Uppifrån och ned</span><span class="sxs-lookup"><span data-stu-id="851cd-140">Top-down</span></span>             | <span data-ttu-id="851cd-141">Strategierna **Minsta domänen först** och **uppifrån och ned** hör nära samman.</span><span class="sxs-lookup"><span data-stu-id="851cd-141">The **Minimal domain first** and **Top-down** strategies are closely related.</span></span> <span data-ttu-id="851cd-142">Studier av kundimplementation har visat att strategin **uppifrån och ned**, som introducerades i CU8, är bättre än strategin **Minsta domän först**.</span><span class="sxs-lookup"><span data-stu-id="851cd-142">Customer implementation studies have shown that the **Top-down** strategy, which was introduced in CU8, outperforms the **Minimal domain first** strategy.</span></span> <span data-ttu-id="851cd-143">Men strategin **Minsta domän först** behålls i produkten för bakåtkompatibilitet.</span><span class="sxs-lookup"><span data-stu-id="851cd-143">However, the **Minimal domain first** strategy is kept in the product for backward compatibility.</span></span> <span data-ttu-id="851cd-144">Båda dessa problemlösarstrategier för har visat sig vara effektivare på att lösa modeller som innehåller flera aritmetiska uttryck och där ingen registerbegränsningar används.</span><span class="sxs-lookup"><span data-stu-id="851cd-144">Both these solver strategies have been shown to be more efficient at solving models that contain several arithmetic expressions where no table constraints are used.</span></span> <span data-ttu-id="851cd-145">I vissa fall kan **standard** strategin vara bättre än båda de andra strategierna.</span><span class="sxs-lookup"><span data-stu-id="851cd-145">However, in some cases, the **Default** strategy outperforms these two strategies.</span></span> <span data-ttu-id="851cd-146">Kom alltså ihåg att prova alla strategier.</span><span class="sxs-lookup"><span data-stu-id="851cd-146">Therefore, remember to try each strategy.</span></span> |
+| <span data-ttu-id="851cd-147">Z3</span><span class="sxs-lookup"><span data-stu-id="851cd-147">Z3</span></span>                   | <span data-ttu-id="851cd-148">Vi rekommenderar att du använder strategin **Z3** som standardstrategin.</span><span class="sxs-lookup"><span data-stu-id="851cd-148">We recommend that you use the **Z3** strategy as the default solver strategy.</span></span> <span data-ttu-id="851cd-149">Om du oroar dig för prestanda och skalbarhet kan du utvärdera andra strategier.</span><span class="sxs-lookup"><span data-stu-id="851cd-149">If you're concerned about performance and scalability, you can evaluate the other strategies.</span></span> |
+
+## <a name="additional-resources"></a><span data-ttu-id="851cd-150">Ytterligare resurser</span><span class="sxs-lookup"><span data-stu-id="851cd-150">Additional resources</span></span>
+
+[<span data-ttu-id="851cd-151">Skapa produktkonfigurationsmodell</span><span class="sxs-lookup"><span data-stu-id="851cd-151">Build product configuration model</span></span>](build-product-configuration-model.md)
+
+[<span data-ttu-id="851cd-152">Heuristik</span><span class="sxs-lookup"><span data-stu-id="851cd-152">Heuristics</span></span>](https://techterms.com/definition/heuristic)
+
+[<span data-ttu-id="851cd-153">Begränsningsbaserad problem</span><span class="sxs-lookup"><span data-stu-id="851cd-153">Constraint Satisfaction Problem</span></span>](http://aima.cs.berkeley.edu/2nd-ed/newchap05.pdf)
+
