@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
+ms.search.form: SystemParameters
 audience: Application User, Developer, IT Pro
 ms.reviewer: margoc
 ms.search.scope: Core, Operations
@@ -18,10 +19,10 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d2063cd0ae592357d57fb3c787450c604fb9be58
-ms.openlocfilehash: 549d059e549ba470eb299753fd7b87920e6dd43d
+ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
+ms.openlocfilehash: 221ce80cb7520f372f38859aa392b1d559448c81
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/11/2017
+ms.lasthandoff: 01/19/2018
 
 ---
 
@@ -74,6 +75,11 @@ Finance and Operations, Retail och Talent delar en och samma innehållsförteckn
 
 ### <a name="follow-a-topic"></a>Följ ett avsnitt
 Om du vill öppna ett avsnitt klickar du på knappen Följ under kommentarrutan. Du måste logga in för att följa avsnittet. Se [påverkar oss en kommentar](#leave-us-a-comment) information.  
+
+### <a name="use-an-rss-feed"></a>Använd ett RSS-flöde
+Om du vill prenumerera på ett RSS-flöde för att gå alla uppdateringar Unified Operations, använder du följande länk i en webbläsare som stöder RSS-feeds, t ex Internet Explorer, eller ett program för RSS-feed: 
+
+[RSS-feed](https://docs.microsoft.com/api/search/rss?locale=en-us&$filter=scopes%2Fany(t%3A%20t%20eq%20%27Unified%20Operations%27))
 
 ### <a name="give-feedback"></a>Ge feedback 
 Vi gillar verkligen kundfeedback. Du kan kommentera eller föreslå ändringar till webbplatsens innehåll via GitHub.

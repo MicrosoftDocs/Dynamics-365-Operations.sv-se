@@ -1,9 +1,9 @@
 --- 
-title: "Skapa rapporter i Microsoft Office-format med inbäddade bilder för elektronisk rapportering (ER) (Del 1)"
-description: "I följande steg beskrivs hur en användare som har rollen Systemadministratör eller Utvecklare för elektronisk rapportering kan skapa konfigurationer för Elektronisk rapportering (ER) för att generera elektroniska dokument i MS Office-format (Excel och Word) som innehåller inbäddade bilder."
+title: "Utforma konfigurationer för att generera rapporter i Microsoft Office-format med inbäddade bilder för elektronisk rapportering (ER) (Del 1)"
+description: "I detta avsnitt finns information steg för steg om hur du skapar konfigurationer för elektronisk rapportering (ER) som genererar elektroniska dokument i Microsof Office-format (Excel och Word) och som innehåller inbäddade bilder."
 author: NickSelin
 manager: AnnBe
-ms.date: 06/13/2017
+ms.date: 01/23/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,108 +16,79 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 809a1466b0f4674f503bc654175d8f94b37a6508
-ms.openlocfilehash: f610fe4b7f265c4fc38db89938d5c208b4f7661a
+ms.sourcegitcommit: 9cb9343028acacc387370e1cdd2202b84919185e
+ms.openlocfilehash: 844d8de1d5a1958457eaab1d434bef015f92e33c
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 01/23/2018
 
 ---
-# <a name="make-reports-in-microsoft-office-formats-with-embedded-images-for-electronic-reporting-er--part-1"></a>Skapa rapporter i Microsoft Office-format med inbäddade bilder för elektronisk rapportering (ER) (Del 1) 
+# <a name="design-configurations-to-generate-reports-in-microsoft-office-formats-with-embedded-images-for-electronic-reporting-er-part-1"></a>Utforma konfigurationer för att generera rapporter i Microsoft Office-format med inbäddade bilder för elektronisk rapportering (ER) (Del 1) 
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-I följande steg beskrivs hur en användare som har rollen Systemadministratör eller Utvecklare för elektronisk rapportering kan skapa konfigurationer för Elektronisk rapportering (ER) för att generera elektroniska dokument i MS Office-format (Excel och Word) som innehåller inbäddade bilder.
+För att slutföra stegen i den här proceduren ska du först slutföra stegen i proceduren "ER Skapa en konfigurationsleverantör och markera den som aktiv". Den här proceduren förklarar hur du skapar konfigurationer för elektronisk rapportering (ER) för att generera elektroniska dokument som innehåller inbäddade bilder i Microsoft Excel eller Microsoft Word-dokument. I den här proceduren skapar du de nödvändiga ER-konfigurationerna för exempelföretaget Litware, Inc. Dessa steg kan slutföras med hjälp av USMF-datauppsättning. Den här proceduren har skapats för användare med rollen Systemadministratör eller Utvecklare för elektronisk rapportering. Innan du börjar ska du hämta och spara filerna i hjälpavsnittet [bädda in bilder och former i affärsdokument som skapas med verktyget elektronisk rapportering](../electronic-reporting-embed-images-shapes.md). Filerna är: modell för checkar.xml, utskriftsformat för checkar.xml, företagslogotyp.png, signatur.png, signaturbild 2.png och checkmall för Word.docx.
 
-I det här exemplet ska du använda skapade ER-konfigurationer för exempelföretaget, "Litware, Inc.".  För att kunna genomföra stegen måste du först slutföra stegen i uppgiftsguiden "ER Skapa rapporter i MS Office-format med inbäddade bilder (Del 2: Granska konfigurationer)". Dessa steg kan utföras i USMF-företaget.
+## <a name="verify-prerequisites"></a>Verifiera förutsättningar  
+ 1. Gå till Organisationsadministration > Arbetsytor > Elektronisk rapportering.  
+ 2. Kontrollera att konfigurationsleverantören för exempelföretaget "Litware, Inc." är markerad som aktiv och är tillgänglig. Om du inte ser den här konfigurationsleverantören ska du först slutföra stegen i proceduren "Skapa en konfigurationsleverantör och välj den som aktiv".   
+ 3. Klicka på Reporting configurations.  
+ 
+## <a name="add-a-new-er-model-configuration"></a>Lägg till en ny konfiguration för ER-modell  
+ 1. Du kan läsa in konfigurationsfilen för ER-modell (modell för cheques.xml) som du sparat tidigare istället för att skapa en ny modell. Den här filen innehåller exempeldatamodellen för betalningscheckar och mappning av datamodellen till datakomponenterna i Dynamics 365 for Operations-programmet .   
+ 2. Klicka på Utbyte på snabbfliken Versioner.   
+ 3. Klicka på Läs in från XML-fil.  
+ 4. Klicka på Bläddra och välj Modell för cheques.xml.   
+ 5. Klicka på OK.  
+ 6. Den inlästa modellen ska användas som en datakälla för information för att skapa dokument som innehåller bilder i Excel och Word.  
 
+## <a name="add-a-new-er-format-configuration"></a>Lägg till en ny konfiguration för ER-format  
+ 1. Du kan läsa in konfigurationsfilen för ER-format (Checkutskrift för format.xml) som du sparat tidigare istället för att skapa ett nytt format. Den här filen innehåller exempellayouten på formatet för att skriva ut checkar med det förtryckta formuläret och mappning av detta format till datamodellen ”modell för checkar”.   
+ 2. Klicka på Byt.  
+ 3. Klicka på Läs in från XML-fil.  
+ 4. Klicka på Bläddra och välj checkutskriftsformat (format).xml.   
+ 5. Klicka på OK.  
+ 6. Expandera "Modell för checkar" i trädet.  
+ 7. Välj Model for cheques\Cheques printing format i trädet.  
+ 8. Det inlästa formatet ska användas för att skapa dokument som innehåller bilder i Excel och Word.   
 
-## <a name="run-format-with-initial-model-mapping"></a>Kör format med inledande modellmappning
-1. Gå till Kassa- och bankhantering > Bankkonton > Bankkonton.
-2. Använd snabbfiltret för att filtrera efter fältet Bankkonto med värdet "USMF OPER".
-3. Klicka på Ställ in i åtgärdsfönstret.
-4. Klicka på Kontrollera.
-5. Klicka på Testutskrift
-    * Kör formatet i testsyfte.  
-6. Välj Ja i fältet Överlåtbart checkformat.
-7. Klicka på OK.
-    * Granska den skapade utleveransen. Observera att företagets logotyp visas i rapporten samt den behöriga personens underskrift. Signaturbilden hämtas från fältet för datatypen Behållare i checklayoutposten som associeras med det valda bankkontot.  
-8. Expandera avsnittet Kopior.
-9. Klicka på Redigera.
-10. Ange "Skriv ut vattenstämpel som annullerad" i fältet Vattenstämpel.
-    * Ändra layoutinställningarna för vattenstämpel för att visa vattenstämpeln när dokument skapas i ett formatelement för Excel-kalkylblad.  
-11. Klicka på Testutskrift
-12. Klicka på OK.
-    * Granska den skapade utleveransen. Kontrollera att vattenstämpeln visas i rapporten i enlighet med det valda alternativet.  
-13. Stäng sidan.
-14. Klicka på Hantera betalningar i åtgärdsfönstret.
-15. Klicka på Checkar.
-16. Klicka på Visa filter.
-17. Använd följande filter: Ange filtervärdet 381, 385, 389 i fältet Checknummer med filteroperatorn "är någon av".
-18. Markera alla rader i listan.
-19. Klicka på Skriv ut checkkopia.
-    * Kör formatet om du vill skriva ut valda checkar igen.  
-    * Granska den skapade utleveransen. Observera att valda checkar har skrivits ut igen. Företagets logotyp och etiketter skrivs inte ut eftersom de visas på den förtryckta blanketten.  
+## <a name="configure-er-user-parameters"></a>Konfigurera ER-användarparametrar  
+ 1. Klicka på Configurations i åtgärdsfönstret.  
+ 2. Klicka på User parameters.  
+ 3. Välj Yes i fältet Run settings.  
+  Aktivera flaggan ”kör utkast" för att starta utkastversionen av det markerade formatet i stället för den slutfördaslutfört.  
+ 4. Klicka på OK.  
 
-## <a name="modify-the-mapping-of-the-imported-data-model"></a>Ändra mappning av den importerade datamodellen
-1. Stäng sidan.
-2. Stäng sidan.
-3. Gå till Organisationsadministration > Elektronisk rapportering > Konfigurationer.
-4. Välj "Modell för checkar".
-5. Klicka på Designer.
-6. Klicka på Mappa modell till datakälla.
-7. Klicka på Designer.
-    * Vi vill ändra bindningen för datamodellens signaturobjekt för att hämta signaturbilden från filen som har kopplats till checklayoutposten som associeras med det valda bankkontot.  
-8. Inaktivera Visa detaljer.
-9. Expandera "layout" i trädet.
-10. Expandera "layout\signature" i trädet.
-11. Välj layout\signature\image = chequesaccount.'<Relations'.BankChequeLayout.Signature1Bmp i trädet.
-12. Expandera chequesaccount i trädet.
-13. Expandera "chequesaccount\<Relations" i trädet.
-14. Expandera "chequesaccount\<Relations\BankChequeLayout" i trädet.
-15. Expandera "chequesaccount\<Relations\BankChequeLayout\<Relations" i trädet.
-16. Expandera chequesaccount\<Relations\BankChequeLayout\<Relations\<Documents i trädet.
-17. Välj "chequesaccount\<Relations\BankChequeLayout\<Relations\<Documents\getFileContentAsContainer()" i trädet.
-18. Klicka på Bind.
-19. Klicka på Spara.
-20. Stäng sidan.
-21. Stäng sidan.
-22. Stäng sidan.
-23. Stäng sidan.
-
-## <a name="run-format-using-the-adjusted-model-mapping"></a>Kör formatet med den justerade modellmappningen
-1. Gå till Kassa- och bankhantering > Bankkonton > Bankkonton.
-2. Använd snabbfiltret för att söka efter poster. Filtrera till exempel fältet Bankkonto med värdet på USMF OPER.
-3. Klicka på Ställ in i åtgärdsfönstret.
-4. Klicka på Kontrollera.
-5. Klicka på Testutskrift
-6. Klicka på OK.
-    * Granska den skapade utleveransen. Observera att bilden från dokumenthanteringsbilagan visas som underskriften för en behörig person.  
-
-## <a name="use-ms-word-document-as-a-template-in-the-imported-format"></a>Använd Microsoft Word-dokument som en mall i det importerade formatet
-1. Stäng sidan.
-2. Stäng sidan.
-3. Gå till Organisationsadministration > Elektronisk rapportering > Konfigurationer.
-4. Expandera "Modell för checkar" i trädet.
-5. Välj Model for cheques\Cheques printing format i trädet.
-6. Klicka på Designer.
-7. Klicka på Bilagor.
-8. Klicka på Ta bort.
-9. Klicka på Ja.
-10. Klicka på Ny.
-11. Klicka på Arkiv.
-    * Klicka på Bläddra och välj den i förväg hämtade Word.docx-filen för checkmall.  
-12. Stäng sidan.
-13. Ange eller välj ett värde i fältet Template.
-14. Klicka på Spara.
-15. Stäng sidan.
-16. Klicka på Redigera.
-17. Välj Yes i fältet Run Draft.
-18. Stäng sidan.
-19. Gå till Kassa- och bankhantering > Bankkonton > Bankkonton.
-20. Använd snabbfiltret för att filtrera efter fältet Bankkonto med värdet "USMF OPER".
-21. Klicka på Kontrollera.
-22. Klicka på Testutskrift
-23. Klicka på OK.
-    * Granska den skapade utleveransen. Observera att utdata har skapats som ett Microsoft Word-dokument med inbäddade bilder som innehåller företagslogotypen, underskrift av en behörig person och den markerade texten i vattenstämpeln.  
-
+## <a name="configure-cash--bank-management-parameters"></a>Konfigurera parametrar för kassa och bankhantering  
+ 1. Gå till Kassa- och bankhantering > Bankkonton > Bankkonton.  
+ 2. Använd snabbfiltret för att filtrera efter fältet Bankkonto med värdet "USMF OPER".  
+ 3. Klicka på Ställ in i åtgärdsfönstret.  
+ 4. Klicka på Kontrollera.  
+ 5. Expandera avsnittet Inställningar.  
+ 6. Klicka på Redigera.  
+ 7. Välj Ja i fältet Företagslogo.  
+ 8. Klicka på Företagslogo.  
+ 9. Klicka på Ändra.  
+ 10. Klicka på Bläddra och välj filen som du hämtade förut, Company logo.png.   
+ 11. Klicka på Spara.  
+ 12. Stäng sidan.  
+ 13. Expandera avsnittet Signatur.  
+ 14. Välj Ja i fältet Skriv ut första signatur.  
+ 15. Klicka på Ändra.  
+ 16. Klicka på Bläddra och välj filen som du hämtade förut, Signature image.png.   
+ 17. Expandera avsnittet Kopior.  
+ 18. Markera ett alternativ i fältet Vattenstämpel.  
+ 19. Välj Ja i fältet Allmänt elektroniskt exportformat.  
+ 20. Välj konfigurationen "checkutskriftsformat".  
+ 21. Nu kommer det valda ER-formatet att användas för utskrift av checkar.  
+ 22. Klicka på Koppla.  
+ 23. Klicka på Ny.  
+ 24. Klicka på Arkiv.  
+ 25. Klicka på Bläddra och välj filen som du hämtade förut, Signature image 2.png.   
+ 26. Stäng sidan.  
+ 27. Stäng sidan.  
+ 28. Stäng sidan.  
+ 29. Gå till Kassa- och bankhantering > Inställningar > Parametrar för kassa- och bankhantering.  
+ 30. Välj Ja i fältet Tillåt att reservationer skapas för inaktiva bankkonton:  
+ 31. Klicka på Spara.  
+ 32. Stäng sidan.  
 

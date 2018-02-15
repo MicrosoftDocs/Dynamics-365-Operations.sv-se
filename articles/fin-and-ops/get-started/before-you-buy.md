@@ -1,7 +1,7 @@
 ---
 title: "Innan du köper"
 description: "Steg-för-steg-instruktioner som ska användas när du funderar på att köpa Dynamics 365 for Finance and Operations, Enterprise edition."
-author: margoc
+author: kfend
 manager: AnnBe
 ms.date: 07/10/2017
 ms.topic: article
@@ -13,14 +13,14 @@ ms.reviewer: margoc
 ms.search.scope: Core, Operations
 ms.custom: 21761
 ms.search.region: Global
-ms.author: margoc
+ms.author: kfend
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: AX 7.0.0, Operations
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: c4bd67b15e893613bed14d2bdc1d9a07da81dc26
+ms.sourcegitcommit: 98740e5b992283b924adab34f291b9c1f2703457
+ms.openlocfilehash: d6c4e475925cdc94be614822ffb242eb7ac8cfa7
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/31/2018
 
 ---
 
@@ -35,7 +35,17 @@ Du kan prova en 30 dagars provversion av Dynamics 365 for Finance and Operation
 
 ## <a name="step-two-choose-a-deployment-option"></a>Steg två: Välj ett distributionsalternativ.
 Du kan nu distribuera Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition i molnet eller lokalt. Molndistributioner erbjuder en ERP-tjänst som hanteras fullt ut av Microsoft, medan lokala distributioner installeras lokalt i kundens datacenter.
-Mer information finns i: [Distributionsalternativ](../../dev-itpro/deployment/choose-deployment-type.md) 
+
+Följande beaktanden skall vidtas om du väljer ett lokalt distributionsalternativ:
+- Krav på efterlevnad och regler som inte är tillgängliga i [molncertifikat](https://explore.dynamics.com/operations/microsoft-dynamics-365-for-operations-certification-priorities)
+- Frånkopplad affärsprocess med återkommande Internetanslutning för åtkomst av Microsoft Dynamics Lifecycle Services (LCS) för livscykelhantering av program
+- [Funktioner som inte har implementerats vid lokala distributioner](features-not-implemented-on-prem.md)
+- [Minsta infrastrukturkrav](system-requirements-on-prem.md#minimum-infrastructure-requirements)
+
+> [!IMPORTANT]
+> Lokal distribution av Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition stöds inte av någon offentlig molnbaserad infrastruktur, inklusive Azure. 
+
+Mer information finns i [Distributionsalternativ](../../dev-itpro/deployment/choose-deployment-type.md)
 
 ## <a name="step-three-buy-and-manage-a-subscription"></a>Steg tre: köpa och hantera prenumerationer
 Om du vill utforska prenumerationsalternativ, gå till [Dynamics 365](https://www.microsoft.com/en-us/dynamics365/pricing) prissättningssida. Den här sidan innehåller flera olika planer för att passa ditt företags behov.

@@ -3,12 +3,12 @@ title: Potentiell kund till kontanter
 description: "Detta avsnitt ger en översikt över lösningen Potentiell kund till pengar mellan Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition och Microsoft Dynamics 365 for Sales."
 author: ChristianRytt
 manager: AnnBe
-ms.date: 12/20/2017
+ms.date: 02/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
-ms.search.form: 
+ms.search.form: CustTable, SalesTable, EcoResProductListPage
 audience: Application User, IT Pro
 ms.reviewer: yuyus
 ms.search.scope: Core, Operations
@@ -17,13 +17,13 @@ ms.assetid:
 ms.search.region: global
 ms.search.industry: 
 ms.author: crytt
-ms.dyn365.ops.intro: July 2017 update
+ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: f169b0ee20a7ca0c8d05c8bdcf2c04d411722f01
-ms.openlocfilehash: ff166f89d13acbc3aefcbdb39f485881c81cb42c
+ms.sourcegitcommit: 602873e8af976c57f27ce53b76391516351755e3
+ms.openlocfilehash: 29d33d3ecf97c15fed0247d172ff6fb3bbdaa018
 ms.contentlocale: sv-se
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 01/25/2018
 
 ---
 
@@ -31,16 +31,20 @@ ms.lasthandoff: 12/21/2017
 
 [!include[banner](../includes/banner.md)]
 
-Denna Potentiell kund till pengar-lösning erbjuder direktsynkronisering mellan Dynamics 365 for Finance and Operations, Enterprise Edition och Dynamics 365 for Sales. Potentiell kund till pengar-mallarna med funktion för dataintegrering möjliggör ett dataflöde för konton, produkter, kontakter, produkter, försäljningskvoter, försäljningsorder samt försäljningsfakturor Finance and Operations och Sales. Samtidigt som datan flödar mellan Finance and Operations och Sales kan du genomföra försäljnings- och marknadsföringsaktiviteter i Sales, samt hantera orderutförande genom att utnyttja lagerhantering i Finance and Operations.
+Denna Potentiell kund till pengar-lösning erbjuder direktsynkronisering mellan Dynamics 365 for Finance and Operations, Enterprise Edition och Dynamics 365 for Sales. Potentiell kund till pengar-mallarna med funktion för dataintegrering möjliggör ett dataflöde för konton, produkter, kontakter, produkter, försäljningskvoter, försäljningsorder samt försäljningsfakturor Finance and Operations och Sales. Samtidigt som datan flödar mellan Finance and Operations och Sales kan du genomföra försäljnings- och marknadsföringsaktiviteter i Sales, samt hantera orderutförande genom att utnyttja lagerhantering i Finance and Operations. 
+
+Mer information om integration av funktionen potentiell kund till kontanter se en kort YouTube-video:
+
+> [!Video https://www.youtube.com/embed/AVV9x5x-XCg]
 
 I den aktuella versionen innehåller lösningen Potentiell kund till pengar följande typer av direktsynkronisering:
 
 - [Underhåll konton i Sales och synkronisera dem direkt från Finance and Operations](accounts-template-mapping-direct.md)
 - [Underhåll produkter i Finance and Operations och synkronisera dem direkt med Sales](products-template-mapping-direct.md)
 - [Behåll kontakter i Sales och synkronisera dem direkt till kontakter i Finance and Operations](contacts-template-mapping-direct.md)
-- [Synkronisera försäljningsofferter direkt från Sales till Finance and Operations](sales-quotation-template-mapping-sales-fin.md)
+- [Synkronisera försäljningsofferter direkt från Sales till Finance and Operations (mall väntar på release)](sales-quotation-template-mapping-sales-fin.md)
 - [Synkronisera försäljningsorder direkt från Finance and Operations till Sales](sales-order-template-mapping-direct.md)
-- [Synkronisera försäljningsorder direkt mellan Sales och Finance and Operations](sales-order-template-mapping-direct-two-ways.md)
+- [Synkronisera försäljningsorder direkt mellan Sales och Finance and Operations (mall väntar på release)](sales-order-template-mapping-direct-two-ways.md)
 - [Synkronisera försäljningsfakturor direkt från Finance and Operations till Sales](sales-invoice-template-mapping-direct.md)
 
 I tidigare versioner innehåller lösningen Potentiell kund till pengar följande typer av icke-direkt synkronisering:
@@ -54,11 +58,15 @@ I tidigare versioner innehåller lösningen Potentiell kund till pengar följand
 
 ## <a name="system-requirements-for-finance-and-operations"></a>Systemkrav för Finance and Operations
 
-Om du vill använda lösningen Potentiell kund till kontanter måste du installera följande komponenter:
+Potentiell kund till kontanter-integrering stöds på följande versioner:
+
+### <a name="microsoft-dynamics-365-for-finance-and-operations-enterprise-edition-73-december-2017"></a>Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 7.3 (December 2017)
+
+- Dynamics 365 for Finance and Operations, Enterprise Edition (December 2017) - Application build 7.3.11971.56116 med med plattformsuppdatering 12 (7.0.4709.41129)
 
 ### <a name="dynamics-365-for-finance-and-operations-enterprise-edition-july-2017"></a>Dynamics 365 for Finance and Operations, Enterprise Edition (juli 2017)
 
-- Dynamics 365 for Finance and Operations, Enterprise Edition (juli 2017) med plattformsuppdatering 8 (programversion 7.2.11792.56024 med plattform 7.0.4565.16212)
+- Dynamics 365 for Finance and Operations, Enterprise Edition (July 2017) - med plattformsuppdatering 8 (programversion 7.2.11792.56024 med plattform 7.0.4565.16212).
 - Följande snabbkorrigeringar är nödvändiga:
 
     - **[KB4045570](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4045570&bugId=3851320&qc=ac1145034fd04ab71ccc4d14aa012f245176712c9af7c36bb77a118726d46160)** – Denna snabbkorrigering möjliggör synkronisering av försäljningsorder med funktionen för dataintegrering mellan Finance and Operations och Sales. Den innehåller även flera förbättringar.
@@ -68,7 +76,7 @@ Om du vill använda lösningen Potentiell kund till kontanter måste du installe
     > [!NOTE]
     > Du måste bara installera KB4045570 eftersom installationen inkluderar ändringarna från andra snabbkorrigeringar. 
 
-### <a name="dynamics-365-for-finance-and-operations-version-1611-november-2016"></a>Dynamics 365 for Finance and Operations version 1611 (november 2016) 
+### <a name="dynamics-365-for-finance-and-operations-version-1611-november-2016"></a>Dynamics 365 for Finance and Operations version 1611 (november 2016)
 
 - Dynamics 365 for Finance and Operations version 1611 (november 2016) med plattformsuppdatering 8 eller senare
 
@@ -106,4 +114,6 @@ Om du vill använda lösningen Potentiell kund till kontanter måste du installe
     2. Välj **Visa avancerade**.
     3. Välj en region för att köra en snabbinstallation. Om du väljer **Vet inte** kommer systemet att söka efter samtliga regioner, och installationen kommer att ta längre tid.
     4. Ange användarnamn och lösenord för en administratörsanvändare med installationsbehörighet.
+
+
 

@@ -1,0 +1,68 @@
+---
+title: "Uppdateringsrapport över anläggningstillgångar"
+description: "Det här avsnittet beskriver hur du använder uppdateringsrapporten för anläggningstillgångar."
+author: saraschi2
+manager: 
+ms.date: 01/08/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+ms.search.form: 
+audience: Application User
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations
+ms.custom: 23021
+ms.assetid: d7e86f72-95db-4423-9b04-761e9536a959
+ms.search.region: Global
+ms.author: saraschi
+ms.search.validFrom: 2017-12-20
+ms.dyn365.ops.version: 7.3
+ms.translationtype: HT
+ms.sourcegitcommit: 8075abccdcdde21df967dcc9948a738895f35cef
+ms.openlocfilehash: 0a78df4ede8fd57afbc3e9a7e5a38b840f479cdf
+ms.contentlocale: sv-se
+ms.lasthandoff: 01/25/2018
+
+---
+# <a name="fixed-assets-roll-forward-report"></a>Uppdateringsrapport över anläggningstillgångar
+
+[!include[banner](../includes/banner.md)]
+
+**Uppdateringsrapporten för anläggningstillgångar** ger detaljerade data, i ett lättläst Microsoft Excel-format, för periodens stängning, bokslut och momsrapportering. Rapporten innehåller start- och slutsaldon för anläggningstillgångar, samt en värderingen av rörelser för perioden, och ny anskaffning och avyttring som uppstått under perioden. Data rapporteras för enskilda anläggningstillgångar och sammanfattas även för grupper av anläggningstillgångar och juridisk person.
+
+**Uppdateringsrapporten för anläggningstillgångar** använder ramverket för elektronisk rapportering (ER). Innan du kan köra rapporten måste konfigurationen för modellen för anläggningstillgångar och uppdateringsrapporten för anläggningstillgångar importeras från Microsoft Dynamics Lifecycle Services (LCS). Instruktioner finns i [Hämta elektroniska rapporteringskonfigurationer från Lifecycle Services](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/analytics/download-electronic-reporting-configuration-lcs)
+
+Den här rapporten finns i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 7.3, eller som en snabbkorrigering för Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (juli 2017). Tre snabbkorrigeringar måste implementeras för miljöer som har versionen från juli 2017:
+
+- **KB 4041754:** konfigurationen för elektronisk rapportering (ER) kan inte hämtas från LCS eftersom den inte gäller för den aktuella versionen av programmet efter implementation av plattformens uppdateringspaket
+- **KB 4056107:** elektronisk rapportering (ER) ackumulerad uppdatering 5
+- **KB 4056353:** rapporterna anläggningstillgångsutdrag och anteckningar uppfyller inte kraven i GAAP och IFRS
+
+Följande register beskriver de fält som är tillgängliga i rapporten.
+
+| Fält                                       | beskrivning |
+|---------------------------------------------|-------------|
+| Balans: Ingående                           | Det bokförda nettovärdet av fasta tillgångar per det ”från” datum som anges i rapporten. |
+| Balans: Utgående                           | Det bokförda nettovärdet av fasta tillgångar per det ”till” datum som anges i rapporten. |
+| Anskaffningar: IB                 | Summan av alla transaktioner av typen **anskaffning** och **anskaffningsjustering** till det ”från” datum som anges i rapporten. |
+| Anskaffning: Periodens förvärv           | Summan av alla transaktioner av typen **anskaffning** och **anskaffningsjustering** som registrerats under rapportens datumintervall. |
+| Anskaffningar: Avyttringar              | Summan av alla transaktioner av typen återföring av anskaffning registrerade som avyttringstransaktioner under rapportens datumintervall. |
+| Anskaffningar: UB                 | Summan av alla transaktioner av typen **anskaffning** och **anskaffningsjustering** till det ”till” datum som anges i rapporten. |
+| Avskrivningar: IB                | Summan av alla transaktioner av typen **avskrivning**, **avskrivningsjustering**, **särskild avskrivning**, och **extraordinär avskrivning** fram till det ”från” datum som anges i rapporten. |
+| Avskrivningar: Periodens avskrivningar         | Summan av alla transaktioner av typen **avskrivning**, **avskrivningsjustering** och **extraordinär avskrivning** som registrerats under rapportens datumintervall. |
+| Avskrivningar: Periodens särskilda avskrivningar | Summan av alla transaktioner av typen **särskild avskrivning** som registrerats under rapportens datumintervall. |
+| Avskrivningar: Periodens avyttringar             | Summan av alla transaktioner av typen återföring av avskrivning registrerade som avyttringstransaktioner under rapportens datumintervall. |
+| Avskrivningar: UB                | Summan av alla transaktioner av typen **avskrivning**, **avskrivningsjustering**, **särskild avskrivning**, och **extraordinär avskrivning** fram till det ”till” datum som anges i rapporten. |
+| Upp-/nedskrivning: IB        | Summan av alla transaktioner av typen **uppskrivning**, **uppskrivningsjustering**och **omvärdering** till det "från" datum som anges i rapporten. |
+| Uppskrivningar/Nedskrivningar: Periodiska uppskrivningar     | Summan av alla transaktioner av typen **uppskrivningsjustering** som registrerats under rapportens datumintervall. |
+| Uppskrivningar/Nedskrivningar: Periodiska nedskrivningar   | Summan av alla transaktioner av typen **nedskrivningsjustering** som registrerats under rapportens datumintervall. |
+| Uppskrivningar/Nedskrivningar: Periodiska omvärderingar  | Summan av alla transaktioner av typen **omvärderingar** som registrerats under rapportens datumintervall. |
+| Uppskrivningar/Nedskrivningar: Periodiska avyttranden     | Summan av alla återföringar av typen uppskrivningar, nedskrivningar och omvärderingar som registrerat en avyttringstransaktion under rapportens datumintervall. |
+| Upp-/nedskrivning: UB        | Summan av alla transaktioner av typen **uppskrivning**, **uppskrivningsjustering**och **omvärdering** till det "till" datum som anges i rapporten. |
+| Avyttring: Datum för avyttrande                    | Datum för avyttrande av förteckning över anläggningstillgångar. |
+| Avyttring: Bokfört nettovärde vid avyttring       | Bokfört nettovärde för förteckning över anläggningstillgångar vid tidpunkten för avyttrande . |
+| Avyttring: Försäljningsvärde                       | Försäljningsvärde för förteckning över anläggningstillgångar med avyttring - försäljningstransaktion. |
+| Avyttring: Kassationsvärde                      | Kassationsvärde för förteckning över anläggningstillgångar med avyttring - kassationstransaktion. |
+| Avyttring: Vinst/förlust                      | Vinst- eller förlustvärdet som beräknas som en del av avyttringstransaktionen för förteckning över anläggningstillgångar. |
+

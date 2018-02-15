@@ -3,14 +3,14 @@ title: Planera din kontoplan
 description: "Det här avsnittet innehåller information som hjälper dig att planera kontoplanen för din organisation."
 author: aprilolson
 manager: AnnBe
-ms.date: 08/01/2017
+ms.date: 01/04/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: DimensionConfigureAccountStructure, LedgerChartOfAccounts
 audience: Application User
-ms.reviewer: robinr
+ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
 ms.custom: 14051
 ms.assetid: 10edb129-33f0-4cf9-b2a7-4b7ffa09b229
@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 038886f0a6e1c133a33ee34725eb20352e64341a
+ms.sourcegitcommit: ad55dd57483de4351c8501c5e226180fc73606aa
+ms.openlocfilehash: 3d2cdeaf2fdeb2f587f82c97249886fb8db49154
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/11/2018
 
 ---
 
@@ -45,12 +45,12 @@ Här är några av faktorerna du måste ta hänsyn till när du lägger upp kont
 -   Rapporteringskraven för en juridisk person
 -   Specificeringsgraden som behövs, både för externa organisationer och för din organisation
 
-Skapa kontoplanen på sidan **Kontoplan**. Huvudkonton kan skapas på sidan **Kontoplan** eller **Huvudkonton**. I dina huvudkonton ska inte användas specialtecken som används som kontoplanavgränsare. Om du har ett specialtecken som är samma som din kontoplanavgränsare, kan du få instabilitet eller också måste du alltid använda uppslagningar eller den utfällbara menyn när du anger konto- och dimensionskombinationer. Mer information finns i [Skapa ett huvudkonto](tasks/create-account-structures.md).
+Skapa kontoplanen på sidan **Kontoplan**. Huvudkonton kan skapas på sidan **Kontoplan** eller **Huvudkonton**. I dina huvudkonton ska inte användas specialtecken som används som kontoplanavgränsare. Om du har ett specialtecken som är samma som din kontoplanavgränsare, kan du få instabilitet eller också måste du alltid använda uppslagningar eller den utfällbara menyn när du anger konto- och dimensionskombinationer. Mer information finns i [Skapa ett huvudkonto](tasks/create-main-account.md).
 
 
 Det är en bra idé att länka huvudkontona till huvudkontokategorier, så att du kan använda ekonomiska standardrapporterna utan att behöva göra några ändringar. Därför kan du snabbt och enkelt designa och underhålla rapporter. 
 
-Använd sidan **Konfigurera kontostrukturer** för att konfigurera kontostrukturer. Kontostrukturer definierar giltiga kombinationer. Kombinationerna, tillsammans med huvudkontona, bildar en kontoplan.  Mer information finns i [Skapa en kontostruktur](tasks/create-main-account.md).
+Använd sidan **Konfigurera kontostrukturer** för att konfigurera kontostrukturer. Kontostrukturer definierar giltiga kombinationer. Kombinationerna, tillsammans med huvudkontona, bildar en kontoplan.  Mer information finns i [Skapa en kontostruktur](tasks/create-account-structures.md).
 
 **Juridisk person åsidosätter** 
 

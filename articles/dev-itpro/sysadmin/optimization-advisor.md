@@ -1,0 +1,199 @@
+---
+title: "Skapa regler för Optimization advisor"
+description: "Det här avsnittet beskriver hur du lägger till nya regler Optimization advisor."
+author: roxanadiaconu
+manager: AnnBe
+ms.date: 01/23/2018
+ms.topic: article
+ms.prod: 
+ms.service: dynamics-ax-applications
+ms.technology: 
+ms.search.form: SelfHealingWorkspace
+audience: Application User, IT Pro
+ms.reviewer: yuyus
+ms.search.scope: Core (Operations, Core)
+ms.custom: 
+ms.assetid: 
+ms.search.region: global
+ms.search.industry: 
+ms.author: roxanad
+ms.search.validFrom: 2017-12-01
+ms.dyn365.ops.version: 7.3
+ms.translationtype: HT
+ms.sourcegitcommit: 9cb9343028acacc387370e1cdd2202b84919185e
+ms.openlocfilehash: 88739298405343a36ae5bc11f51c666c414e7157
+ms.contentlocale: sv-se
+ms.lasthandoff: 01/23/2018
+
+---
+
+# <a name="create-rules-for-optimization-advisor"></a>Skapa regler för Optimization advisor
+
+[!include[banner](../includes/banner.md)]
+
+Det här avsnittet beskriver hur du lägger till nya regler i **Optimization advisor**. Du kan till exempel skapa en ny regel som identifierar vilka anbudsförfrågningar (RFQ) som har en tom rubrik. Att använda titlar på ärenden gör dem lätta att känna igen och sökbara. Även om exemplet är ganska enkelt visar det vad som kan uppnås med optimeringsregler. 
+
+A *regel* är en kontroll av programdata. Om villkoret som regeln beräknar uppfylls skapas möjligheter att optimera processer och förbättra data. Möjligheterna kan utnyttjas och, vid behov, kan inverkan av åtgärderna mätas. 
+
+Så här skapar du en ny regel för **Optimization advisor**. Lägg till en ny klass som utökar den abstrakta klassen **SelfHealingRule** och implementera gränssnittet **IDiagnosticsRule** som dekoreras med attributet **DiagnosticRule**. Klassen måste också ha en metod som dekoreras med attributet **DiagnosticsRuleSubscription**. Enligt praxis görs detta i metoden **opportunityTitle**, som beskrivs senare. Denna nya klass kan läggas till en anpassad modell med ett beroende av modellen **SelfHealingRules**. I följande exempel kallas den regel som implementeras **RFQTitleSelfHealingRule**.
+
+```
+[DiagnosticsRule] 
+public final class RFQTitleSelfHealingRule extends SelfHealingRule implements IDiagnosticsRule 
+{ 
+… 
+} 
+```
+
+Den abstrakta klassen **SelfHealingRule** har metoder som måste implementeras i ärvda klasser. Kärnan är **utvärderingsmetoden** som returnerar en lista över de affärsmöjligheter som har identifierats av regeln. Affärsmöjligheter kan vara per juridisk person eller kan gälla för hela systemet.
+
+```
+protected List evaluate() 
+{ 
+    List results = new List(Types::Record); 
+    
+    DataArea dataArea; 
+
+    while select id from dataArea 
+        where !dataArea.isVirtual 
+    { 
+        changecompany(dataArea.id) 
+        { 
+            container result = this.findRFQCasesWithEmptyTitle(); 
+
+            if (conLen(result) > 0) 
+            { 
+                SelfHealingOpportunity opportunity = this.getOpportunityForCompany(dataArea.Id); 
+                opportunity.EvaluationState = SelfHealingEvaluationState::Evaluated; 
+                opportunity.Data = result; 
+                opportunity.OpportunityDate = DateTimeUtil::utcNow(); 
+                
+                results.addEnd(opportunity); 
+            } 
+        } 
+    } 
+    
+    return results; 
+} 
+```
+
+Metoden ovan loopar över företag och väljer anbudsförfrågningar med tom rubrik i metoden **findRFQCasesWithEmptyTitle**. Om minst ett sådant fall hittas, skapas en företagsspecifik affärsmöjlighet med metoden **getOpportunityForCompany**. Lägg märke till att fältet **Data** i tabellen **SelfHealingOpportunity** är av typen **behållare** och därför kan innehålla all information som berör logiken för regeln. Att ställa in **OpportunityDate** med aktuell tidsstämpel registrerar tidpunkten för den senaste utvärderingen av affärsmöjligheten.  
+
+Affärsmöjligheter kan också vara mellan företag. I detta fall behövs inte loopen över företag och affärsmöjligheten måste skapas med metoden **getOpportunityAcrossCompanies**. 
+
+Följande kod visar metoden **findRFQCasesWithEmptyTitle** som returnerar ID för de anbudsförfrågor som har tomma titlar.
+
+```
+private container findRFQCasesWithEmptyTitle() 
+{ 
+    container result; 
+
+    PurchRFQCaseTable rfqCase; 
+    while select RFQCaseId from rfqCase 
+        where rfqCase.Name == '' 
+    { 
+        result += rfqCase.RFQCaseId; 
+    } 
+    
+    return result; 
+} 
+```
+
+Två ytterligare metoder som måste implementeras är **opportunityTitle** och **opportunityDetails**. Det förra returnerar en kort rubrik för affärsmöjligheten, den senare returnerar en detaljerad beskrivning av affärsmöjligheten, som även kan innehålla data.
+
+Den rubrik som returneras av **opportunityTitle** visas i kolumnen **Optimeringsmöjlighet** i arbetsytan **Optimerings-advisor**. Den visas också som rubrik i det sidofönster som visar mer information om affärsmöjligheten. Enligt praxis dekoreras den här metoden med attributet **DiagnosticRuleSubscription** som har följande argument: 
+
+* **Diagnostic area** – en uppräkning av typen **DiagnosticArea** som beskriver vilket tillämpningsområde regeln tillhör, t ex **DiagnosticArea::SCM**. 
+
+* **Regelnamn** – en sträng med regelnamn. Namnet visas i kolumnen **Regelnamn** i formuläret **Diagnostikregel – validering** (**DiagnosticsValidationRuleMaintain**). 
+
+* **Körningsfrekvens** – en uppräkning av typen **DiagnosticRunFrequency** som beskriver hur ofta regeln ska köras, t ex **DiagnosticRunFrequency::Daily**. 
+
+* **Regelbeskrivning** – en sträng med en mer detaljerad beskrivning av regeln. Namnet visas i kolumnen **Regelbeskrivning** i formuläret **Diagnostikregel – validering** (**DiagnosticsValidationRuleMaintain**). 
+
+> [!NOTE]
+> Attributet **DiagnosticRuleSubscription** krävs för att reglerna ska fungera. Det används vanligtvis i **opportunityTitle** men kan dekorera alla metoder i klassen.
+
+Nedan finns ett exempel på implementering. Råa strängar används för enkel hantering, men en korrekt implementering kräver etiketter. 
+
+```
+[DiagnosticsRuleSubscription(DiagnosticsArea::SCM, 
+                             'Assign titles to Request for Quotation cases', 
+                             DiagnosticsRunFrequency::Daily,  
+                             'This rule detects Requests for Quotation with empty titles.')] 
+public str opportunityTitle() 
+{ 
+    return 'Assign titles to Request for Quotation cases'; 
+} 
+```
+
+Beskrivningen som returneras av **opportunityDetails** visas i det sidofönster som visar mer information om affärsmöjligheten. Detta tar argumentet **SelfHealingOpportunity**, som är fältet **Data** och som kan användas för att ge mer information om affärsmöjligheten. I exemplet returnerar metoden ID på de anbudsförfrågor som har en tom rubrik. 
+
+```
+public str opportunityDetails(SelfHealingOpportunity _opportunity) 
+{ 
+    str details = ''; 
+    container opportunityData = _opportunity.Data; 
+    int affectedRFQCasesCount = conLen(opportunityData); 
+
+    if (affectedRFQCasesCount != 0) 
+    { 
+        details = 'The following Request for Quotation cases have an empty title:\n'; 
+        for (int i = 1; i <= affectedRFQCasesCount ; i++) 
+        { 
+            PurchRFQCaseId rfqCaseId = conPeek(opportunityData, i); 
+            details += rfqCaseId + '\n'; 
+        } 
+    } 
+
+    return details; 
+}
+```
+
+De två återstående abstrakta metoder att implementera är **provideHealingAction** och **securityMenuItem**. 
+
+**provideHealingAction** returnerar ett sant värde om en självläkande åtgärd tillhandahålls, annars returneras ett falskt värde. Om ett sant värde returneras måste metoden **performAction** implementeras, annars uppstår ett fel. Metoden **performAction** tar argumentet **SelfHealingOpportunity** i vilken data kan användas för åtgärden. I exemplet öppnar åtgärden **PurchRFQCaseTableListPage** för manuell korrigering. 
+
+```
+public boolean providesHealingAction() 
+{ 
+    return true; 
+} 
+
+protected void performAction(SelfHealingOpportunity _opportunity) 
+{ 
+    new MenuFunction(menuItemDisplayStr(PurchRFQCaseTableListPage), MenuItemType::Display).run(); 
+} 
+```
+
+Beroende på specifik regel, kan det vara möjligt att anta en automatisk åtgärd med affärsmöjligheten. I det här exemplet skulle systemet kunna generera rubriker för anbudsförfrågan automatiskt. 
+
+**securityMenuItem** returnerar namnet på ett menyalternativ så att regeln endast är synlig för användare som har åtkomst till menyalternativet. För säkerhets skulls krävs kanske att särskilda regler och affärsmöjligheter endast är tillgängliga för auktoriserade användare. I exemplet kan endast användare med tillgång till **PurchRFQCaseTitleAction** se affärsmöjligheten. Observera att det här menyalternativet för åtgärd skapades för det här exemplet och har lagts till som en startpunkt för säkerhetsprivilegiet **PurchRFQCaseTableMaintain**. 
+
+```
+public MenuName securityMenuItem() 
+{ 
+    return menuItemActionStr(PurchRFQCaseTitleAction); 
+}
+```
+
+När regeln har kompilerats körs följande jobb för att se den i användargränssnittet (UI).
+
+```
+class ScanNewRulesJob 
+{         
+    public static void main(Args _args) 
+    {         
+        SysExtensionCache::clearAllScopes(); 
+        var controller = new DiagnosticsRuleController(); 
+        controller.runOperation(); 
+    } 
+} 
+```
+
+Regeln visas i formuläret **diagnostikregel validering** från **systemadministration** > **periodiska uppgifter** > **Underhåll diagnostikregel – validering**. För att utvärdera den gå till **systemadministration** > **periodiska uppgifter** > **Diagnostikregel – validering av tidsplan**. Välj frekvens för regeln, till exempel **daglig**. Klicka på **OK**. Gå till **systemadministration** > **Optimization advisor** för att se den nya affärsmöjligheten. 
+
+Titta på den korta YouTube-videon för mer information:
+
+> [!Video https://www.youtube.com/embed/MRsAzgFCUSQ]
+
