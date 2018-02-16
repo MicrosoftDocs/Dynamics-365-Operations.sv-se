@@ -1,6 +1,6 @@
 ---
 title: Redovisning journaltyper
-description: "Det här avsnittet ger en beskrivning av de journaltyper du kan ställa in för ekonomiska journaler. Använd sidan Journalnamn för att ställa in journaler som du kan använda i hela Microsoft Dynamics 365 for Finance and Operations, Enterprise edition."
+description: "Det här avsnittet ger en beskrivning av de journaltyper du kan ställa in för ekonomiska journaler. Använd sidan för **journalnamn** för att ställa in journaler som du kan använda i hela Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition."
 author: twheeloc
 manager: AnnBe
 ms.date: 06/20/2017
@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: LedgerJournalSetup
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
@@ -18,10 +19,10 @@ ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: c05b199104af2c367266e3cd15937425e6457397
+ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
+ms.openlocfilehash: ccd1b9056f8c18de1b2ef706f70f53bac6cc43a1
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/19/2018
 
 ---
 
@@ -30,23 +31,23 @@ ms.lasthandoff: 11/03/2017
 [!include[banner](../includes/banner.md)]
 
 
-Det här avsnittet ger en beskrivning av de journaltyper du kan ställa in för ekonomiska journaler. Använd sidan Journalnamn för att ställa in journaler som du kan använda i hela Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+Det här avsnittet ger en beskrivning av de journaltyper du kan ställa in för ekonomiska journaler. Använd sidan för **journalnamn** för att ställa in journaler som du kan använda i hela Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition.
 
-| Journaltyp                      | Syfte                                                                                                                                                                                                                                                                                                                                                     | Registrera transaktioner på denna sida                                |
-|-----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------|
-| Allokering                        | Skapa allokeringstransaktioner i en allokeringsjournal. Innan du kan skapa en fördelning journal, måste du skapa en periodiseringsregeln på **redovisning periodiseringsregeln** sida.                                                                                                                                                                           | Bearbeta allokeringsbegäran                                     |
-| Godkännande                          | Bokföra leverantörsfakturor som har godkänts för lämpliga redovisningskonton.                                                                                                                                                                                                                                                                            | Fakturagodkännandejournal                                       |
-| Återföring av bankcheck               | Återför en bokförd check. För att använda denna typ av journal, välj **Använd granskningsprocessen för betalningsåterföringar** på **Kassa och bank hanteringsparametrarna** sidan.                                                                                                                                                                                       | Kontrollera återföringar, betalningsåterföring                              |
-| Annullering av insättningskvitto    | Annullera ett insättningskvitto. För att använda denna typ av journal, välj **Använd granskningsprocessen för insättningsblanketten betalning avbokning** på **Kassa och bank hanteringsparametrarna** sidan.                                                                                                                                                                       | Betalningsannulleringar för insättningskvitto                             |
+| Journaltyp                      | Syfte                       | Registrera transaktioner på denna sida                                |
+|-----------------------------------|-------------------------------|----------------------------------------------------------------|
+| Allokering                        | Skapa allokeringstransaktioner i en allokeringsjournal. Innan du kan skapa en fördelning journal, måste du skapa en periodiseringsregeln på **redovisning periodiseringsregeln** sida.      | Bearbeta allokeringsbegäran             |
+| Godkännande                          | Bokföra leverantörsfakturor som har godkänts för lämpliga redovisningskonton.  | Fakturagodkännandejournal                                       |
+| Återföring av bankcheck               | Återför en bokförd check. För att använda denna typ av journal, välj **Använd granskningsprocessen för betalningsåterföringar** på **Kassa och bank hanteringsparametrarna** sidan.   | Kontrollera återföringar, betalningsåterföring                   |
+| Annullering av insättningskvitto    | Annullera ett insättningskvitto. För att använda denna typ av journal, välj **Använd granskningsprocessen för insättningsblanketten betalning avbokning** på **Kassa och bank hanteringsparametrarna** sidan.   | Betalningsannulleringar för insättningskvitto            |
 | Budget                            | Bearbeta budgetanslag. För att använda denna typ av journal, välj **Aktivera anslag** på **redovisning parametrar sidan** . Budgeten journalanteckningar kommer att innehålla information som är baserad på reskontraförda konton som definierats i **konteringstypen definitioner** sidan.                                                        |                                                                |
-| Kund accepterar växel  | Skapa kundgodkännandetransaktioner för växlar.                                                                                                                                                                                                                                                                                              | Journal för utställda växlar, Journal för återutställda växlar |
-| Kundbankremissa          | Skapa en växelremissafil som kan skickas till din organisations bank. För att använda denna typ av journal, radera **automatisk kvittning** på **kundfordringar** **parametrar sidan** .                                                                                                                                             | Remittering                                                     |
-| Kund ställer ut växel    | Skapa transaktioner för när kund ställer ut växel. För att använda denna typ av journal, **Skapa och kontera rita journalen automatiskt när man konterar fakturor** på **betalningssätt – kunder** sidan.                                                                                                                                         | Journal för utställda växlar                                  |
-| Kundbetalning                  | Skapa kundbetalningstransaktioner.                                                                                                                                                                                                                                                                                                                       | Betalningsjournal                                                |
-| Kund protesterar växel | Skapa transaktioner för när kund bestrider växel.                                                                                                                                                                                                                                                                                                      | Journal för växelprotester                               |
-| Kund ställer ut ny växel  | Skapa transaktioner för när kund ställer ut ny växel.                                                                                                                                                                                                                                                                                                       | Journal för återutställda växlar                                |
-| Kund löser in växeln  | Skapa transaktioner för när kund löser in växel.                                                                                                                                                                                                                                                                                                       | Journal för inlösta växlar                                |
-| Dagligen                             | Skapa dagliga transaktioner i en allmän journal.                                                                                                                                                                                                                                                                                                             | Allmän journal                                                |
+| Kund accepterar växel  | Skapa kundgodkännandetransaktioner för växlar.             | Journal för utställda växlar, Journal för återutställda växlar |
+| Kundbankremissa          | Skapa en växelremissafil som kan skickas till din organisations bank. För att använda denna typ av journal, radera **automatisk kvittning** på **kundfordringar** **parametrar sidan** .            | Remittering                                                     |
+| Kund ställer ut växel    | Skapa transaktioner för när kund ställer ut växel. För att använda denna typ av journal, **Skapa och kontera rita journalen automatiskt när man konterar fakturor** på **betalningssätt – kunder** sidan.   | Journal för utställda växlar                                  |
+| Kundbetalning                  | Skapa kundbetalningstransaktioner.                             | Betalningsjournal             |
+| Kund protesterar växel | Skapa transaktioner för när kund bestrider växel.                    | Journal för växelprotester                               |
+| Kund ställer ut ny växel  | Skapa transaktioner för när kund ställer ut ny växel.                     | Journal för återutställda växlar                                |
+| Kund löser in växeln  | Skapa transaktioner för när kund löser in växel.                       | Journal för inlösta växlar                                |
+| Dagligen                             | Skapa dagliga transaktioner i en allmän journal.                          | Allmän journal                                                |
 | Eliminering                       | Skapa elimineringstransaktioner i en elimineringsjournal. För att använda denna typ av journal, välj att **använda för finansiella uteslutningsmetoden** och **använda för ekonomisk konsolideringsprocessen** alternativ på **juridiska personer** sidan. Innan du kan använda denna journaltyp, måste du skapa en redovisningselimineringsregel på **redovisningselimineringsregel** sidan. | Eliminering                                                    |
 | Budget för anläggningstillgång                | Skapa budgetregisterposter för anläggningstillgångar.                                                                                                                                                                                                                                                                                                                 | Budget för anläggningstillgång                                             |
 | Fakturaregister                  | Registrera basinformation om leverantörsfakturor.                                                                                                                                                                                                                                                                                                           | Fakturaregister                                               |

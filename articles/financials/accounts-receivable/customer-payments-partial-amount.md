@@ -3,11 +3,12 @@ title: "Kundbetalningar för ett delbelopp"
 description: "Ibland kan kunder betala ett belopp som är mindre än beloppet i en faktura. Det här avsnittet innehåller en beskrivning av de olika alternativen för att hantera den här situationen. Vilka alternativ som är tillgängliga för dig beror på dina affärskrav och konfigurationer."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 08/22/2017
+ms.date: 01/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: CustPaymEntry
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
@@ -18,10 +19,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: c2ba17b97bf7a00ff111e72314e98f5af7aaed80
+ms.sourcegitcommit: d9b080ff46a0fbc73ed4f8fa3f03d71e9d758cc2
+ms.openlocfilehash: 6b7494a05392cbee70e6d5883bae0295e8b55ac9
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/18/2018
 
 ---
 
@@ -41,7 +42,7 @@ Kunder kan göra en delbetalning eftersom de inte bara har tillräckligt med kon
 Du kan erbjuda kunderna en kassarabatt för att betala en faktura före förfallodatumet. Till exempel anger du en faktura på 100,00 som anger en kassarabatt 2 procent, om fakturan betalas inom 10 dagar. Förfallodatumtermerna är 30 dagar. Om du tar emot en betalning på 98,00 inom 10 dagar, registrerar du betalningen på 98,00. Därefter när fakturan har markerats för kvittning, utnyttjas kassarabatten automatiskt.
 
 ## <a name="partial-payments-with-cash-discounts"></a>Delbetalningar med kassarabatter
-När kunder gör en delbetalning, kan de planera att göra en ytterligare delbetalning för att helt kvitta fakturan. För att få kassarabatt för en delbetalning måste du ange alternativet **Beräkna kassarabatter för delbetalningar**som **Ja** på sidan **Parametrar för kundreskontra**. 
+När kunder gör en delbetalning, kan de planera att göra en ytterligare delbetalning för att helt kvitta fakturan. För att få kassarabatt för en delbetalning måste du ange alternativet **Beräkna kassarabatter för delbetalningar** till **Ja** på sidan **Parametrar för kundreskontra**. 
 
 Om du till exempel erbjuder 2 procent kassarabatt om fakturan betalas inom 10 dagar, efter att den har utfärdats. En faktura på 100,00 bokförs. Om du tar emot en betalning på 49,00 dagar inom 10 dagar, anger du ett kreditbelopp på 49,00 i en betalningsjournal. När du kvittar delbetalningen på sidan **Kvitta transaktioner** visas **1,00** i fältet **Kassarabattbelopp att utnyttja**. Rabattbeloppet bokförs på ett kassarabattkonto. 
 

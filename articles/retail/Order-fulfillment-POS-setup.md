@@ -6,19 +6,22 @@ manager: AnnBe
 ms.date: 10/30/2017
 ms.topic: article
 ms.prod: 
-ms.service: dynamics-ax-applications
+ms.service: dynamics-365-retail
 ms.technology: 
+ms.search.form: RetailStoreTable, RetailTillLayout
 audience: Application User
-ms.search.scope: 
+ms.reviewer: josaw
+ms.search.scope: Core, Operations, Retail
 ms.search.region: Global
+ms.search.industry: retail
 ms.author: rubencdelgado
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: 346f5b7a5fbbe2c41aaa54e0b36fe0c46baec0af
-ms.openlocfilehash: bb4d8fae432eca7fe9163dcb0763fff5c8d465f0
+ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
+ms.openlocfilehash: 2fa843aee8927a1cb4f642c31d6f5683098d3c74
 ms.contentlocale: sv-se
-ms.lasthandoff: 12/20/2017
+ms.lasthandoff: 01/19/2018
 
 ---
 
@@ -49,9 +52,9 @@ På butiksnivå finns en konfigurationsinställning tillgänglig för att bestä
 
 Som standard är orderrader som tilldelats en butik markerade som **accepterade**. Detta innebär att det antas att de uppfylls från den tilldelade butiken och omfattas inte av ytterligare tilldelning. I vissa fall behöver återförsäljare acceptera order manuellt innan de kan uppfyllas. Om till exempel en butik har brist på personal och inte kan uppfylla order kommer butikschefen endast att acceptera så många order för bearbetning som enligt deras uppfattning kan behandlas på ett tillfredsställande sätt en viss dag. Till dess att en order har accepteras kan den omtilldelas av backoffice till en annan butik. På så sätt ger dessutom ordergodkännande ett sätt att ange att en order redan har godkänts av en butik och kommer att uppfyllas. 
 
-Orderrader för butiksupphämtning markeras alltid som **väntande** och är inte föremål för godkännande.
+Orderrader för butiksupphämtning markeras som **pågående** och är inte föremål för godkännande.
 
-Om du vill aktivera manuellt godkännande eller orderrader, gå till **Butik** > **Kanaler** > **Butiker** > **Alla butiker**. Välj butiken och klicka i butiks-ID för att visa information om butiken. Klicka på **Redigera**. På snabbfliken **Allmän**, sök efter underrubriken **orderuppfyllande** och ändra **Manuellt godkännande** från **Nej** till **Ja**. 
+Om du vill aktivera manuellt godkännande för orderrader, gå till **Butik** > **Kanaler** > **Butiker** > **Alla butiker**. Välj butiken och klicka i butiks-ID för att visa information om butiken. Klicka på **Redigera**. På snabbfliken **Allmän**, sök efter underrubriken **orderuppfyllande** och ändra **Manuellt godkännande** från **Nej** till **Ja**. 
 
 ### <a name="enable-reject-order-line-capability"></a>Aktivera funktionen för avvisa orderrad
 
@@ -114,7 +117,7 @@ Som standard har ordern statusen **accepterad**. Orderstatus kan visas som en ko
 
 **Packa** - Alternativet packa stöder två åtgärder: **Skriv ut följesedel** skriver ut en följesedel för de valda raderna och **markerad som packad** kommer att markera raderna som du packade och markerar raderna som levereras i backoffice. Endast orderrader som tillhör samma order och har samma leveranssätt kan packas samtidigt. Följesedelformat styrs som en del av kvittoformat. Mer information om hur du ställer in kvittoformat finns i [Kvittomallar och utskrift](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/receipt-templates-printing).
 
-**Leverera** Åtgärden leverera markerar de valda raderna som **levereradr** i backoffice. När en rad har levererats visas den inte längre i butiksuppfyllelsevyn.
+**Leverera** Åtgärden leverera markerar de valda raderna som **levereradr** i backoffice. När en rad har levererats visas den inte längre i orderuppfyllelsevyn.
 
 **Upphämtning** - Åtgärden för upphämtning lägger till rader i transaktionsvyn för upphämtning. Om det inte finns andra rader för order som för närvarande inte tas upp kommer de att läggas till i transaktionsvyn med kvantiteten noll. När en rad har hämtats helt visas den inte längre i orderuppfyllelsevyn. 
 

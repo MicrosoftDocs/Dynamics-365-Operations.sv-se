@@ -3,11 +3,12 @@ title: Integrering av budgetplanering med andra moduler
 description: "Budget planer kan skapas från flera olika resurser: De grundläggande elementen i den återkommande process är samma för alla resurser."
 author: twheeloc
 manager: AnnBe
-ms.date: 10/30/2017
+ms.date: 01/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: BudgetPlanGenerate
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
@@ -18,10 +19,10 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 7663453ddf87bcb43d2f19ebec3c9bda90eda884
+ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
+ms.openlocfilehash: f50e58d63a9db4d6a8b5390174e2c7b87970717d
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/17/2018
 
 ---
 
@@ -51,7 +52,7 @@ De grundläggande elementen i den återkommande process är samma för alla proc
 
 För varje generation, tre åtgärder är tillgängliga:
 
--   **Skapa en ny budgetplan** skapar en ny plan som besitter de attribut som valdes i avsnittet **Mål **. Dessa attribut måste inte vara unikt. Därför två planer kan ha samma namn och andra värden.
+-   **Skapa en ny budget plan** skapar en ny plan som har attribut som väljs i **målet**. Dessa attribut måste inte vara unikt. Därför två planer kan ha samma namn och andra värden.
 -   **Byt ut den befintliga budgeten scenario** raderar alla data i målet budget i den valda budget plan scenario och skapar nya rader som använder den valda källdata.
 -   **Uppdatera den befintliga budgeten scenario, och fästa nya data** uppdaterar befintliga rader i målplan som matchar källa rader och lägger till nya rader för nya uppgifter. Matchningen baseras på reskontra, datum, budget klass och diverse andra områden. Till exempel, när du genererar budget planer från prognos positioner, antalet är ett viktigt område. Alla rader som har en position som stämmer överens med källan positionsnummer ersätts med nya rader från källan.
 
@@ -65,7 +66,7 @@ Det **historiska** alternativet på **fliken Mål** låter dig använda datum fr
 
 Den **sammanlagda genom** fältet överst på sidan bestämmer också datum som används. Det här fältet summa belopp och eventuellt sätter datumet till den första dagen i räkenskapsåret eller fiskal period. 
 
-Många av fälten på **fliken mål** blir redigerbart eller skrivskyddat, beroende på vilken åtgärd du väljer. När du ändrar från att skapa en ny budget planerar att uppdatera en befintlig plan, **Budget plan namn** blir otillgänglig och de fält som är relaterade till att välja en befintlig plan blir tillgängliga. På såväl fliken **Mål** som fliken **Källa ** är fältet **Redovisning** aldrig tillgängligt, detta eftersom värdet avgörs av vald budgetplaneringsprocess. 
+Många av fälten på **fliken mål** blir redigerbart eller skrivskyddat, beroende på vilken åtgärd du väljer. När du ändrar från att skapa en ny budget planerar att uppdatera en befintlig plan, **Budget plan namn** blir otillgänglig och de fält som är relaterade till att välja en befintlig plan blir tillgängliga. På såväl fliken **Mål** som fliken **Källa** är fältet **Redovisning** aldrig tillgängligt, detta eftersom värdet avgörs av vald budgetplaneringsprocess. 
 
 **Budgeten klass** låter dig ställa in budget plan rader som antingen utgiftstransaktioner inkomster eller transaktioner. Vanligen intäkt transaktioner är krediter till ett reskontrakonto och därför lagras som negativa belopp. Vanligen används dessa transaktioner visas även som negativa belopp i budgeten. Men genom att lägga budgeten klass som ett fält i planen layout kan du aktivera intäkt visas som positiva belopp.
 
@@ -110,7 +111,7 @@ Det finns ingen **budget klass** , eftersom budgeten klass (**kostnad** eller **
 
 Du kan använda projektbudgetar som källa genom att välja den prognosmodell som innehåller projektets budget belopp. Kom ihåg att projektbudgetar skapa projektprognos posterna som de är godkända.
 
-Välj endast kostnader eller intäkter för budgetrader, använd filter för att välja **Budgetuppdateringar: Beloppstyp = Kostnad**. Om du vill välja endast en typ av prognos, använd filter för att välja **Budget uppdateringar: Transaktionstyp = *xxx***. 
+Välj endast kostnader eller intäkter för budgetrader, använd filter för att välja **Budgetuppdateringar: Beloppstyp = Kostnad**. Om du vill välja endast en typ av prognos, använd filter för att välja **Budgetuppdateringar: Transaktionstyp = *xxx***. 
 
 Endast en prognosmodell kan användas för att generera en budget scenario. Om du kör processen för en prognosmodell och sedan göra en uppdatering och försöka ange en annan modell, den första modellen kommer att skrivas över om samma projekt och reskontraförda konton. För att generera en budget scenario från mer än en prognosmodell, genererar olika budget plan scenarier och använda fördelningen alternativ till adderar dem tillsammans i ett annat scenario. 
 

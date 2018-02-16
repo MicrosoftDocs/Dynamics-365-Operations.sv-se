@@ -18,10 +18,10 @@ ms.author: rschloma
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 6ffb97b53f522cfe8ccd8e89df854cbc557e4f1f
-ms.openlocfilehash: fadc373b2c1c06987f22d4d9c20a9ab07b0c85d5
+ms.sourcegitcommit: a53c1997f74ebe572b17cc3090d2e236b6fe78f6
+ms.openlocfilehash: 8a84cfe9b73f0c72f3cb0c3843749754c6b3d538
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/20/2017
+ms.lasthandoff: 01/31/2018
 
 ---
 # <a name="provision-microsoft-dynamics-365-for-talent"></a>Reservera Microsoft Dynamics 365 for Talent
@@ -60,6 +60,9 @@ När du har skapat ett LCS-projekt kan du införa Talent i en miljö.
 > Om du ännu inte har uppfyllt de slutgiltiga kraven kan du implementera en testinstans av Talent i projektet. Du kan sedan använda den här instansen för att testa din lösning tills du loggar ut. Om du använder den nya miljön för testning måste du upprepa denna procedur för att skapa en produktionsmiljö.
 
 ## <a name="create-a-new-powerapps-environment-if-required"></a>Skapa en ny PowerApps-miljö (vid behov)
+
+Visionen bakom integrationen av Talent med PowerApps miljöer är att möjliggöra dataintegration och tillägg av flöden med hjälp av verktyg för PowerApps ovanpå data från Talent. Det är därför viktigt att förstå syftet med PowerApps miljöer vid val av miljön för användare av Talent. Mer information om PowerApps-miljöer, såsom omfattning, åtkomst och att skapa och välja miljö finns i [om PowerApps miljöer](https://powerapps.microsoft.com/en-us/blog/powerapps-environments/).  När varje innehavare automatiskt skapas i en standardmiljö för PowerApps är kanske inte detta den bästa miljön för distribution av Talent. Dataintegration och strategitester bör beaktas i det här skedet, varför vi rekommenderar att du överväger olika konsekvenser för distribution, eftersom det är svårt att ändra senare.
+
 1. Välj **Hantera miljöer** i LCS. Du förflyttas till [PowerApps administratörscenter](https://preview.admin.powerapps.com/environments), där du kan visa befintliga miljöer och skapa nya miljöer.
 2. Välj knappen (**+**) **Ny miljö**.
 3. Ange ett unikt namn för miljön och välj den plats du vill implementera på.
@@ -74,9 +77,20 @@ När du har skapat ett LCS-projekt kan du införa Talent i en miljö.
     > [!IMPORTANT]
     > Om du tidigare skapat en CDS-databas och angett någon form av företagets produktionsdata i denna, notera då att dessa steg tar bort **alla** data i den valda databasen, även uppgifter om företagets produktion.
 
-    1. Logga in i [PowerApps](https://preview.web.powerapps.com/home) och gå till den miljö som du skapade i steg 2.
-    2. Välj **Enheter**. Markera ellipsknapen till höger på sidan (**...**) och välj sedan **Rensa alla data**.
-    3. Välj **Ta bort data** för att bekräfta att du vill ta bort dina data. Denna åtgärd tar bort alla demodata som ingår i CDS som standard. Den tar också bort alla andra data som har angetts i den valda databasen.
-
+    1. Logga in i [PowerApps](https://preview.web.powerapps.com/home), och välj den miljö som du skapade i steg 2 från listrutan till höger på sidan.
+    2. Expandera **Common Data Service** i det vänstra navigeringsfönstret och välj **enheter**.
+    3. Markera ellipsknapen till höger på sidan (**...**) och välj sedan **Rensa alla data**.
+    4. Välj **Ta bort data** för att bekräfta att du vill ta bort dina data. Denna åtgärd tar bort alla demodata som ingår i CDS som standard. Den tar också bort alla andra data som har angetts i den valda databasen.
+    
 Du kan nu använda den nya miljön.
+
+## <a name="granting-access-to-the-environment"></a>Beviljar åtkomst till miljön.
+Den globala administratören som skapade miljön har åtkomst som standard, men andra användare måste särskilt beviljas detta. Detta gör du genom att [att lägga till användare](../dev-itpro/sysadmin/tasks/create-new-users.md) och [tilldela dem lämpliga roller](../dev-itpro/sysadmin/tasks/assign-users-security-roles.md) i den grundläggande HR-miljön. Dessutom är det också nödvändigt att lägga till dessa användare i PowerApps-miljön så att de kan komma åt Attract- och Onboard-program.  Blogginlägget [introduktion till administratörscentret PowerApps](https://powerapps.microsoft.com/en-us/blog/introducing-admin-center-for-powerapps/) kan hjälpa dig att utföra de steg som beskrivs här:
+
+> 1.    Den globala administratören som distribuerade miljön för Talent ska navigera till [PowerApps Admin center](https://preview.admin.powerapps.com/environments).   
+> 2.    Välj de miljöer som behövs.
+> 3.    Ge nödvändiga användare rollen ”Environment Maker” på fliken Säkerhet.
+
+Observera att det sista steget för att lägga till användare i en PowerApps-miljö är tillfälligt. Vi lägger slutligen till funktioner för att aktivera detta automatiskt när användaren har lagts till i grundläggande personal.
+
 

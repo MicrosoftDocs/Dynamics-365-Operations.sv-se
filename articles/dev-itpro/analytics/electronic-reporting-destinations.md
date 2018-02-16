@@ -19,10 +19,10 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 211442c7bd0d3079a5eb4f6d01944c0eddf533af
+ms.sourcegitcommit: 8075abccdcdde21df967dcc9948a738895f35cef
+ms.openlocfilehash: cbe0374ff21ff39ed2bbc8d647bd933ced9dcff6
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 01/25/2018
 
 ---
 
@@ -52,7 +52,7 @@ När du har skapat en referens kan du skapa en fildestination för varje mapp el
 
 [![Skapa en fildestination](./media/ger-destinations-1611-1024x586.jpg)](./media/ger-destinations-1611.jpg)
 
-**Obs!** Du kan skapa en fildestination för varje utdatakomponent av samma format såsom en mapp eller en fil som väljs i fältet **Filnamn**. Du kan sedan aktivera och inaktivera enskilda destinationer för fildestinationen i dialogrutan **Destinationsinställningar**. Knappen **Inställningar** används för att styra alla destinationer för en markerad fildestination. I dialogrutan **Destinationsinställningar** kan du styra varje destination separat genom att ställa inte alternativet **Aktiverad** för den.
+> Obs! Du kan skapa en fildestination för varje utdatakomponent av samma format, såsom en mapp eller en fil som väljs i fältet **Filnamn**. Du kan sedan aktivera och inaktivera enskilda destinationer för fildestinationen i dialogrutan **Destinationsinställningar**. Knappen **Inställningar** används för att styra alla destinationer för en markerad fildestination. I dialogrutan **Destinationsinställningar** kan du styra varje destination separat genom att ställa inte alternativet **Aktiverad** för den.
 
 [![Dialogruta för destinationsinställningar](./media/ger-destinations-settings-1611-1024x589.jpg)](./media/ger-destinations-settings-1611.jpg)
 
@@ -71,7 +71,7 @@ När du klickar på **Redigera** för fältet **Till** eller **Cc**, visas dialo
 
 #### <a name="print-management"></a>Utskriftshantering
 
-Om du väljer typen **Utskriftshantering för e-postmeddelanden** kan du ange fasta e-postadresser i fältet **Till**. Du måste välja källtyp för e-postmeddelanden till en fildestination om du vill använda e-postadresser som inte är fasta. Följande värden kan användas: **Kund**, **Leverantör**, **Potentiell kund**, **Kontakt**, **Konkurrent**, **Arbetare**, **Sökande**, **Potentiell leverantör** samt **Otillåten leverantör**. När du har valt en e-posttyp klickar du på knappen bredvid fältet **Källkonto för e-post** för att öppna formuläret **Formeldesigner **. Du kan använda det här formuläret för att bifoga en formel som representerar det markerade kontot till målet för e-post.
+Om du väljer typen **Utskriftshantering för e-postmeddelanden** kan du ange fasta e-postadresser i fältet **Till**. Du måste välja källtyp för e-postmeddelanden till en fildestination om du vill använda e-postadresser som inte är fasta. Följande värden kan användas: **Kund**, **Leverantör**, **Potentiell kund**, **Kontakt**, **Konkurrent**, **Arbetare**, **Sökande**, **Potentiell leverantör** samt **Otillåten leverantör**. När du har valt en e-posttyp klickar du på knappen bredvid fältet **Källkonto för e-post** för att öppna formuläret **Formeldesigner**. Du kan använda det här formuläret för att bifoga en formel som representerar det markerade kontot till målet för e-post.
 
 [![Konfigurera e-posttyp för utskriftshantering](./media/ger-destinations-email-2-1611-1024x588.jpg)](./media/ger-destinations-email-2-1611.jpg) 
 
@@ -131,7 +131,7 @@ Två typer av behörigheter och uppgifter används för ER-destinationer. En typ
 | PaymAccountsPayablePaymentsClerk    | Ansvarig för leverantörsreskontrabetalningar            | ERFormatDestinationRuntimeConfigure | Konfigurera formatmål för elektronisk rapportering under körning |
 | PaymAccountsReceivablePaymentsClerk | Ansvarig för kundreskontrabetalningar         | ERFormatDestinationRuntimeConfigure | Konfigurera formatmål för elektronisk rapportering under körning |
 
-**Obs!** Två privilegier används i föregående uppgifter. De här privilegierna har samma namn som motsvarande uppgifter: **ERFormatDestinationConfigure** och **ERFormatDestinationRuntimeConfigure**.
+> Obs! Två privilegier används i föregående programbehörigheter. De här privilegierna har samma namn som motsvarande uppgifter: **ERFormatDestinationConfigure** och **ERFormatDestinationRuntimeConfigure**.
 
 ## <a name="frequently-asked-questions"></a>Vanliga frågor
 ### <a name="i-have-imported-electronic-configurations-and-i-see-them-on-the-electronic-reporting-configurations-page-but-why-dont-i-see-them-on-the-electronic-reporting-destinations-page"></a>Jag har importerat elektroniska konfigurationer och jag ser dem på sidan Konfigurationer för elektronisk rapportering. Varför ser jag dem då inte på sidan Destinationer för elektronisk rapportering?
@@ -154,7 +154,7 @@ Formeln är specifik för ER-konfigurationen. Till exempel, om du använder ISO 
 
 Förutsättningen är att formatet är tillgängligt i ER-konfigurationerna. Om du har ett format kan du öppna sidan **Destination för elektronisk rapportering** och skapa en ny referens till den här konfigurationen. Du måste ha fyra fildestinationer, ett för varje utdatakomponent. Skapa den första fildestinationen, ge den ett namn såsom **Mapp** och välj ett filnamn som representerar en mapp i din konfiguration. Klicka på **Inställningar** och se till att alla destinationer är inaktiverade. För den här fildestinationen kommer mappen inte att skapas. På grund av hierarkiska beroenden mellan filer och överordnade mappar kommer filerna som standard att uppföra sig på samma sätt. Med andra ord skickas de inte någonstans. Om du vill åsidosätta standardbeteendet måste du skapa tre fildestinationer till, en för varje fil. I destinationsinställningarna för varje destination måste du aktivera destinationen som filen ska skickas till.
 
-# <a name="see-also"></a>Se även
+## <a name="see-also"></a>Se även
 
 [Översikt över elektronisk rapportering](general-electronic-reporting.md)
 

@@ -3,7 +3,7 @@ title: "Innehållspaket för ekonomiska resultat för Power BI"
 description: "Det här avsnittet beskriver Power BI-innehåll för finansiellt resultat."
 author: kweekley
 manager: AnnBe
-ms.date: 12/19/2017
+ms.date: 02/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,16 +18,18 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: cb43245afe578341251b140383a3b03ba2abd962
-ms.openlocfilehash: 83ea868e7612f30afa1b99f374878f4ba415113f
+ms.sourcegitcommit: b167d7577823bbc88d8e64952333110f9a652b64
+ms.openlocfilehash: 53d0654608e99aa85a5911d76397fbc7fadbf26e
 ms.contentlocale: sv-se
-ms.lasthandoff: 12/19/2017
+ms.lasthandoff: 02/02/2018
 
 ---
 
 # <a name="financial-performance-power-bi-content"></a>Innehållspaket för ekonomiska resultat för Power BI
 
 [!include[banner](../includes/banner.md)]
+
+> [Obs!] Det här innehållet har ersatts enligt beskrivningen i [Power BI innehållspaket publicerade på PowerBI.com](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features#power-bi-content-packs-published-to-powerbicom).
 
 Det här avsnittet beskriver Microsoft Power BI-innehåll för **finansiellt resultat**. Det beskriver instrumentpanelen och de rapporter som är inkluderade, samt ger dig information om den datamodell och de enheter som användes för att skapa innehållet.
 

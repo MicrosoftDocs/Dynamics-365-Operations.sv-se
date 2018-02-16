@@ -20,10 +20,10 @@ ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: e66208ccceb4c248c2704bb7358d77447e032205
-ms.openlocfilehash: 43360ea18ccc0fc4622f6da70ff10f2aca8b56c8
+ms.sourcegitcommit: 867c9952eb323a4c0566ec98c1a871041c0fd400
+ms.openlocfilehash: da749dec273be2afd8b6d24f4139746cebf5d741
 ms.contentlocale: sv-se
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 02/01/2018
 
 ---
 
@@ -102,7 +102,7 @@ Klicka på **Fortsätt** om du vill återuppta inspelningssessionen när du har 
 Uppgiftsinspelaren kan läsa in skärmdumpar på Modern Retail POS-användargränssnittet när du spelar in en affärsprocess. Aktivera inspelningsfunktionen för skärmbild genom att ange alternativet **Fånga skärmbild** på **Ja** och registrera den. När registreringen är klar klickar du på **Stopp** och hämta Word-dokumentet. Dokumentet innehåller steg med relevanta skärmdumpar.
 
 #### <a name="note"></a>Kommentar
-> Funktionen för att registrera skärmbild stöds inte i Modern POS.
+> Funktionen för att fånga skärmbild stöds inte i Cloud POS.
 
 ### <a name="start-task-and-end-task"></a>Startuppgift och slutuppgift
 
