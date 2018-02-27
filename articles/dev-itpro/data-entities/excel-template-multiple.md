@@ -18,14 +18,16 @@ ms.author: sunilg
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
 ms.translationtype: HT
-ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
-ms.openlocfilehash: 84b9e9128d7ea6cdf9949549f4ab7a1c6c01691b
+ms.sourcegitcommit: af7f9a373496eee4df354d5dd9e5a25c51317c43
+ms.openlocfilehash: b314a649829dd14a525923802e19b847dc5a115e
 ms.contentlocale: sv-se
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 02/27/2018
 
 ---
 
 # <a name="excel-templates-with-multiple-worksheets"></a><span data-ttu-id="287ff-103">Excelmallar med flera kalkylblad</span><span class="sxs-lookup"><span data-stu-id="287ff-103">Excel templates with multiple worksheets</span></span>
+
+[!include[banner](../includes/banner.md)]
 
 <span data-ttu-id="287ff-104">Datahantering i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition har stöd för Microsoft Excel-mallar för datatabeller.</span><span class="sxs-lookup"><span data-stu-id="287ff-104">Data management in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition supports Microsoft Excel-based templates for data entities.</span></span> <span data-ttu-id="287ff-105">Mallarna kan innehålla ett eller flera kalkylblad.</span><span class="sxs-lookup"><span data-stu-id="287ff-105">These templates can contain one or more worksheets.</span></span> <span data-ttu-id="287ff-106">Mallar med flera kalkylblad används ofta när det är lämpligt att hantera data i en fil och importera den till flera datatabeller.</span><span class="sxs-lookup"><span data-stu-id="287ff-106">Templates with multiple worksheets are often used when it is convenient to manage data in a single file and import it to multiple data entities.</span></span> <span data-ttu-id="287ff-107">Ett exempel är platser och lagerställen.</span><span class="sxs-lookup"><span data-stu-id="287ff-107">An example would be sites and warehouses.</span></span>
 
