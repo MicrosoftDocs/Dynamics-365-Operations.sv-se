@@ -26,6 +26,9 @@ ms.lasthandoff: 01/19/2018
 ---
 
 # <a name="configuration-keys-and-data-entities"></a>Konfigurationsnycklar och datatabeller
+
+[!include[banner](../includes/banner.md)]
+
 Innan du använder datatabeller för att importera och exportera data bör du först fastställa vilken inverkan konfigurationsnycklarna kommer att ha på de datatabeller som du planerar att använda . 
 
 Mer information om konfigurationsnycklar i Finance and Operations finns i [rapporten för licenskoder och konfigurationsnycklar](../sysadmin/license-codes-configuration-keys-report.md).
