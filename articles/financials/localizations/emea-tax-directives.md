@@ -24,6 +24,9 @@ ms.lasthandoff: 11/03/2017
 ---
 
 # <a name="tax-directives-for-europe"></a>Skattdirektiv för Europa
+
+[!include[banner](../includes/banner.md)]
+
 EU-direktiv innehåller bestämmelser som ska följas av alla medlemsstater angående fakturaregler och information som måste inkluderas när du skapar fakturor. EU-direktivet innehåller den information som krävs av leverantörer för sina kunder inom EU. En faktura kan till exempel innefatta en referens som beskriver rättsliga grunder för nollmoms eller ett undantag. Om en faktura justerar en tidigare utfärdad faktura, t.ex. en kreditfaktura ska en entydig referens göras till den ursprungliga fakturan.
 
 - För att skriva ut en beskrivning av momskoder på en försäljningsfaktura, en fritextfaktura eller en rapport för projektfaktura, ställer du in momsdirektivets referenstext på momskoderna.

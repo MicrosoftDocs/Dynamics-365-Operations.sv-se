@@ -25,6 +25,8 @@ ms.lasthandoff: 11/03/2017
 ---
 # <a name="bank-management-workspace"></a>Arbetsyta för bankhantering
 
+[!include[banner](../includes/banner.md)]
+
 Arbetsytan **Bankhantering** visar information som hör till företagets bankkonton. Den här arbetsytan innehåller en **sammanfattningsvy** och en **analyssida**. **Sammanfattningsvyn** innehåller sammanfattningsrutor, bankkontoinformation, saldodiagram och relaterad information. Sidan **analys** använder funktionerna i Microsoft Power BI för att visa visuella som är relaterade till bankkontosaldon.
 
 ## <a name="summary-view"></a>Sammanfattningsvy
