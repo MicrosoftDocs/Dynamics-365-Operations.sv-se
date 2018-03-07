@@ -16,14 +16,17 @@ ms.author: epodkolz
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 1019b0f60673e158de1257ba7f5efe77e3a4aaa5
+ms.sourcegitcommit: 6ce0b7b35264c05555d8b3a18e70484202a289d6
+ms.openlocfilehash: 64a9381224ebe9dfeac8a3fab0211937a8df733c
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/07/2018
 
 ---
 
 # <a name="reverse-charge-vat"></a><span data-ttu-id="0ca3f-103">Omvänd moms</span><span class="sxs-lookup"><span data-stu-id="0ca3f-103">Reverse charge VAT</span></span>
+
+[!include[banner](../includes/banner.md)]
+
 <span data-ttu-id="0ca3f-104">Det här avsnittet beskriver en allmän metod för att ställa in omvänd moms (VAT) för europeiska länder.</span><span class="sxs-lookup"><span data-stu-id="0ca3f-104">This topic describes a generic approach for setting up the reverse charge value-added tax (VAT) for European countries.</span></span>
 
 <span data-ttu-id="0ca3f-105">Omvänd moms är ett skatteschema som har ansvaret för redovisning och rapportering av moms från säljaren till köparen av varor eller tjänster.</span><span class="sxs-lookup"><span data-stu-id="0ca3f-105">Reverse Charge is a tax schema that moves the responsibility for the accounting and reporting of VAT from the seller to the buyer of goods and/or services.</span></span> <span data-ttu-id="0ca3f-106">Därför rapporterar mottagaren av varor eller tjänster både utgående moms (i rollen som säljare) och ingående moms (i rollen som inköpare) i deras momsrapport.</span><span class="sxs-lookup"><span data-stu-id="0ca3f-106">Therefore, recipients of goods and/or services report both the output VAT (in the role of a seller) and the input VAT (in the role of a purchaser) in their VAT statement.</span></span>
