@@ -26,6 +26,8 @@ ms.lasthandoff: 12/18/2017
 
 # <a name="credit-and-collections-management-power-bi-content"></a>Power BI innehållspaket för kredit- och inkassohantering
 
+[!include[banner](../includes/banner.md)]
+
 Det här avsnittet beskriver vad som ingår i Power BI-innehållet för **kredit- och inkassohantering**. Det förklarar hur du öppnar Power BI-rapporter, och ger information om den datamodell och de enheter som användes för att skapa innehållet.
 
 ## <a name="overview"></a>Översikt
