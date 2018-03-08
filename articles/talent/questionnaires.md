@@ -19,14 +19,16 @@ ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
-ms.openlocfilehash: a892b53b555c29b1fc3928bb24eff98128d648f3
+ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
+ms.openlocfilehash: 84d5f60cdce4cd667c408d17d9892d7079947f58
 ms.contentlocale: sv-se
-ms.lasthandoff: 01/31/2018
+ms.lasthandoff: 03/08/2018
 
 ---
 
 # <a name="questionnaires"></a><span data-ttu-id="d5ff9-105">Enkäter</span><span class="sxs-lookup"><span data-stu-id="d5ff9-105">Questionnaires</span></span>
+
+[!include[banner](includes/banner.md)]
 
 <span data-ttu-id="d5ff9-106">Det här ämnet innehåller allmän information om enkäter och länkar till mer detaljerad information.</span><span class="sxs-lookup"><span data-stu-id="d5ff9-106">This topic provides general information about questionnaires, and links to more detailed information.</span></span> <span data-ttu-id="d5ff9-107">En enkät är en uppsättning frågor som används för att samla in information för olika ändamål.</span><span class="sxs-lookup"><span data-stu-id="d5ff9-107">A questionnaire is a set of questions that is used to collect information for various purposes.</span></span> <span data-ttu-id="d5ff9-108">Det går att utforma, skapa, distribuera och fylla i enkäter och sedan analysera resultaten.</span><span class="sxs-lookup"><span data-stu-id="d5ff9-108">You can design, create, distribute, and complete questionnaires, and then analyze the results.</span></span> 
 

@@ -18,14 +18,17 @@ ms.author: shielas
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: abc52192848649672cbcb8c770d74ba2aef139be
-ms.openlocfilehash: e3f0f79df73cce4a54c7e6abbc38381c708af690
+ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
+ms.openlocfilehash: 58089418ac233d31a2a4f0298af5e884d77a67d3
 ms.contentlocale: sv-se
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 03/08/2018
 
 ---
 
 # <a name="personnel-actions-faq"></a><span data-ttu-id="e08cc-104">Personalåtgärder [Frågor och Svar]</span><span class="sxs-lookup"><span data-stu-id="e08cc-104">Personnel actions [FAQ]</span></span>
+
+[!include[banner](includes/banner.md)]
+
 <span data-ttu-id="e08cc-105">Det här avsnittet innehåller svar på frågor som du kan ha om din organisation använder personalåtgärder.</span><span class="sxs-lookup"><span data-stu-id="e08cc-105">This topic contains answers to questions that you might have if your organization uses personnel actions.</span></span> <span data-ttu-id="e08cc-106">Personalåtgärder är ytterligare steg du måste vidta när du utför personalrelaterade uppgifter.</span><span class="sxs-lookup"><span data-stu-id="e08cc-106">Personnel actions are additional steps that you must complete when you perform certain personnel-related tasks.</span></span> <span data-ttu-id="e08cc-107">Exempel på uppgifter som kan kräva personalåtgärder är när du skapar nya befattningar, ändrar befintliga befattningsvärden, anställer nya arbetstagare, överför arbetstagare, ändrar arbetstagares kompensation, ändrar befattningstilldelningar eller säger upp arbetstagare.</span><span class="sxs-lookup"><span data-stu-id="e08cc-107">Examples of tasks that might require personnel actions are when you create new positions, modify existing position values, hire new workers, transfer workers, change worker compensation, change position assignments, or terminate workers.</span></span>
 
 <span data-ttu-id="e08cc-108">**Obs:** Personalåtgärder finns tillgängliga endast om fälten **Aktivera arbetaråtgärder** och **Aktivera positionsåtgärder** har angetts som **Ja** på fliken **Personalåtgärder** på sidan **Personalparametrar**.</span><span class="sxs-lookup"><span data-stu-id="e08cc-108">**Note:** Personnel actions are available only if the **Enable worker actions** and **Enable position actions** fields have been set to **Yes**, in the **Personnel actions** tab on the **Human resources shared parameters** page.</span></span> 

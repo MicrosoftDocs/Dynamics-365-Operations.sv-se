@@ -19,14 +19,16 @@ ms.author: josaw
 ms.search.validFrom: 2017-6-19
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 35b574e24e721e80ca1469878697aba4c1699dff
+ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
+ms.openlocfilehash: 40d54a9a2920e87caba62c92b5ca6465fa68e3d4
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/08/2018
 
 ---
 
 # <a name="welcome-to-dynamics-365-for-retail"></a><span data-ttu-id="bdbfa-103">Välkommen till Dynamics 365 for Retail</span><span class="sxs-lookup"><span data-stu-id="bdbfa-103">Welcome to Dynamics 365 for Retail</span></span>
+
+[!include[banner](includes/banner.md)]
 
 <span data-ttu-id="bdbfa-104">Microsoft Dynamics 365 for Retail är en komplett lösning för enhetlig handel i alla kanaler.</span><span class="sxs-lookup"><span data-stu-id="bdbfa-104">Microsoft Dynamics 365 for Retail is an end-to-end retail solution that delivers unified commerce across all channels.</span></span> <span data-ttu-id="bdbfa-105">Den omfattar försäljning, mobilitet, intelligence och produktivitet som hjälper detaljhandlare och arbetare att uppnå mer i molnet och på mobila enheter.</span><span class="sxs-lookup"><span data-stu-id="bdbfa-105">It encompasses sales, mobility, intelligence, and productivity to help retailers and workers achieve more in a cloud-first, mobile-first manner.</span></span> <span data-ttu-id="bdbfa-106">Retail har ett omfattande stöd för en mängd olika affärsprocesser, till exempel funktioner för hantering av marknadsföring, lager och kanaler.</span><span class="sxs-lookup"><span data-stu-id="bdbfa-106">Retail offers comprehensive support to operate a wide range of business processes, such as merchandising, inventory, and channel management capabilities.</span></span> <span data-ttu-id="bdbfa-107">Den ger också en integrerad kundupplevelse i alla beröringspunkter.</span><span class="sxs-lookup"><span data-stu-id="bdbfa-107">It also provides immersive customer experiences across all touchpoints.</span></span>
 

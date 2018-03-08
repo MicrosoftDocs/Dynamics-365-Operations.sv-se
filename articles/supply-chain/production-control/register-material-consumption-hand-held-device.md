@@ -19,14 +19,17 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 3c43a42822f291607fbc9708dd07ebf99b9d7ec4
-ms.openlocfilehash: 33e880107588b80c0944f166ff999b117356731b
+ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
+ms.openlocfilehash: b84b63ec519ae686b55905170c956fcb2b08334a
 ms.contentlocale: sv-se
-ms.lasthandoff: 01/26/2018
+ms.lasthandoff: 03/08/2018
 
 ---
 
 # <a name="register-material-consumption-using-a-mobile-device"></a><span data-ttu-id="e4a91-103">Registrera materialförbrukning med en mobil enhet</span><span class="sxs-lookup"><span data-stu-id="e4a91-103">Register material consumption using a mobile device</span></span>
+
+[!include[banner](../includes/banner.md)]
+
 <span data-ttu-id="e4a91-104">Det här avsnittet beskriver ett arbetsflöde som möjliggör registrering av förbrukningen av råmaterial i produktionen med hjälp av en bärbar enhet.</span><span class="sxs-lookup"><span data-stu-id="e4a91-104">This topic describes a workflow that enables registration of raw material consumption in production by using a handheld device.</span></span>
 
 <a name="introduction"></a><span data-ttu-id="e4a91-105">Introduktion</span><span class="sxs-lookup"><span data-stu-id="e4a91-105">Introduction</span></span>

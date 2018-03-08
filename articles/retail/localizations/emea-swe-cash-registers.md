@@ -18,13 +18,15 @@ ms.author: epopov
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
-ms.openlocfilehash: 4dd25b02b49437dd9cf4a4702ef66bf396eb5046
+ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
+ms.openlocfilehash: 1c0621aa5e4670ea86a155514ea09abbd9f1873e
 ms.contentlocale: sv-se
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 03/08/2018
 
 ---
 # <a name="cash-registers-for-sweden"></a><span data-ttu-id="65f61-103">Kassaapparater för Sverige</span><span class="sxs-lookup"><span data-stu-id="65f61-103">Cash registers for Sweden</span></span>
+
+[!include[banner](../includes/banner.md)]
 
 <span data-ttu-id="65f61-104">Det här avsnittet innehåller en översikt över kassaapparatfunktioner för Sverige i Microsoft Dynamics 365 for Retail.</span><span class="sxs-lookup"><span data-stu-id="65f61-104">This topic provides an overview of the cash register functionality that is available for Sweden in Microsoft Dynamics 365 for Retail.</span></span> <span data-ttu-id="65f61-105">Den innehåller även riktlinjer för att ställa in funktionen.</span><span class="sxs-lookup"><span data-stu-id="65f61-105">It also provides guidelines for setting up the functionality.</span></span> <span data-ttu-id="65f61-106">Funktionen innehåller följande delar:</span><span class="sxs-lookup"><span data-stu-id="65f61-106">The functionality consists of the following parts:</span></span>
 

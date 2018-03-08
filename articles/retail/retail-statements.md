@@ -20,14 +20,17 @@ ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: f9ea6190823a5af951538e0da2760f05896ee993
+ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
+ms.openlocfilehash: ddceadb797af98f85670df72a335b2714fe2f01e
 ms.contentlocale: sv-se
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 03/08/2018
 
 ---
 
 # <a name="retail-statements"></a><span data-ttu-id="e3188-103">Butiksutdrag</span><span class="sxs-lookup"><span data-stu-id="e3188-103">Retail statements</span></span>
+
+[!include[banner](includes/banner.md)]
+
 <span data-ttu-id="e3188-104">I Microsoft Dynamics 365 for Retail är bokföringsprocessen för utdraget att ta hänsyn till de transaktioner som sker i molnbaserad kassa (PO) eller Modern POS (MOPS).</span><span class="sxs-lookup"><span data-stu-id="e3188-104">In Microsoft Dynamics 365 for Retail, the statement posting process is used to account for the transactions that occur in Cloud point of sale (POS) or Modern POS (MPOS).</span></span> <span data-ttu-id="e3188-105">Bokföringsprocessen för utdrag använder distributionsschemat för att hämra en uppsättning kassatransaktioner till klientens huvudkontor (HQ).</span><span class="sxs-lookup"><span data-stu-id="e3188-105">The statement posting process uses the distribution schedule to pull a set of POS transactions into the headquarters (HQ) client.</span></span> <span data-ttu-id="e3188-106">De parametrar som definieras på sidorna **Butiksparametrar** och **Butiker** används för att välja vilka transaktioner som hämtas till enskilda rapporter.</span><span class="sxs-lookup"><span data-stu-id="e3188-106">The parameters that are defined on the **Retail parameters** and **Stores** pages are used to select the transactions that are pulled into individual statements.</span></span>  
 
 <span data-ttu-id="e3188-107">Utdragsbokföringsprocessen illustreras i följande diagram.</span><span class="sxs-lookup"><span data-stu-id="e3188-107">The following illustration shows the statement posting process.</span></span> <span data-ttu-id="e3188-108">I denna process överförs transaktioner som är registrerade i kassan till klienten, genom att Butik schemaläggare används.</span><span class="sxs-lookup"><span data-stu-id="e3188-108">In this process, transactions that are recorded in the POS are transmitted to the client by using the Retail scheduler.</span></span> <span data-ttu-id="e3188-109">När klienten har tagit emot transaktionerna kan du skapa, beräkna och bokföra transaktionsutdraget för butiken.</span><span class="sxs-lookup"><span data-stu-id="e3188-109">After the client receives the transactions, you can create, calculate, and post the transaction statement for the store.</span></span> 

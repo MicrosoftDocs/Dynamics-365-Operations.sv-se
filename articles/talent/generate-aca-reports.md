@@ -18,13 +18,16 @@ ms.author: kherr
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: abc52192848649672cbcb8c770d74ba2aef139be
-ms.openlocfilehash: 978870d36f6019845fd62c267ac66ca7c45d34a1
+ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
+ms.openlocfilehash: 1994edc5d6c932be3a285f9bb328a05504c90f07
 ms.contentlocale: sv-se
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 03/08/2018
 
 ---
 # <a name="generate-affordable-care-act-reports"></a><span data-ttu-id="afc69-103">Generera Affordable Care Act-rapporter</span><span class="sxs-lookup"><span data-stu-id="afc69-103">Generate Affordable Care Act reports</span></span>
+
+[!include[banner](includes/banner.md)]
+
 <span data-ttu-id="afc69-104">Funktioner finns på plats med syfte att bistå arbetsgivare som måste spåra information som rapporterats i formulären 1095-B och 1095-C gällande delen för **arbetsgivarmandat** i Affordable Care Act (hälsovårdslagen, eller "Obama-Care"). Notera att denna funktion endast är aktiverad för juridiska personer i USA.</span><span class="sxs-lookup"><span data-stu-id="afc69-104">Functionality is available to assist employers that need to track the information reported on forms 1095-B and 1095-C in support of the **Employer Mandate** portion of the Affordable Care Act. Note this functionality is only enabled for legal entities in the United States.</span></span>
 
 ## <a name="getting-started"></a><span data-ttu-id="afc69-105">Komma igång</span><span class="sxs-lookup"><span data-stu-id="afc69-105">Getting started</span></span>
