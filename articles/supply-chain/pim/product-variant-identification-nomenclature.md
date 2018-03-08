@@ -29,6 +29,8 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="nomenclature-of-product-variant-numbers-and-names"></a>Terminologi för produktvariantnummer och namn
 
+[!include[banner](../includes/banner.md)]
+
 Det här avsnittet beskriver hur du ställer in en produktnummerterminologi för att ersätta det fasta formatet [Produktmallsnummer - Konfiguration - Storlek - Färg - Stil]. Den nya terminologin har ett riktat format som innehåller produktmallsnummer, aktiva produktdimensioner och valfria textavgränsare. Du kan också skapa en terminologi för produktnamn. Slutligen kan du också skapa en terminologi för att identifiera konfigurationer som skapas av den begränsningsbaserade produktkonfiguratorn. Dessa nomenklaturer kan innehålla valfria attribut.
 
 Med nya terminologier för produktvariantnummer och produktvariantnamn kan du inkludera segment i identifierarna för produktvarianter. Dessa segment kan innehålla produktmallsnummer och -namn, ID för produktdimensioner, nummerserier, textkonstanter och attribut. Med denna funktion kan du snabbt hitta en specifik produktvariant när du skapar en försäljningsorder eller inköpsorder. Du skapar terminologier för både produktvariantnummer och produktvariantnamn via sidan **Produktterminologi**. För att öppna denna sida klickar du på **Produktinformationshantering** &gt; **Inställningar**.

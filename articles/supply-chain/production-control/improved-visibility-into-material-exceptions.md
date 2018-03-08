@@ -26,6 +26,8 @@ ms.lasthandoff: 12/14/2017
 ---
 # <a name="visibility-into-material-exceptions"></a>Insyn i materialundantag
 
+[!include[banner](../includes/banner.md)]
+
 I arbetsytan **Produktionsgolvsledning** ger tre paneler bättre insyn i undantagen för råmaterial för tillverkningsorder och batchorder:
 
 - Ej frisläppta materialrader som behöver åtgärdas

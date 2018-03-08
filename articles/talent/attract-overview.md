@@ -25,6 +25,9 @@ ms.lasthandoff: 11/03/2017
 
 ---
 # <a name="attract-overview"></a>Översikt över Attract
+
+[!include[banner](includes/banner.md)]
+
 Attract ger dig möjlighet att hantera processen med att anställa nya användare. Kandidater kan läggas till i öppna jobb och avancera steg för steg tills ett erbjudande förlängs eller ansökan avslås. I varje steg genomgår kandidaterna olika aktiviteter som till exempel utreda samtal, genomföra bedömningar eller schemalägga intervjuer. Efter att ha ansökt får de sökande ett mail där de uppmanas att logga in på Attract, där de kan följa jobbets status, ansökningen svara på alla aktiviteter som har tilldelats dem.
 
 Attract innehåller följande funktioner:

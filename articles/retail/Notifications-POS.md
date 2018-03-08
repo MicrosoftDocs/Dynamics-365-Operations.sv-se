@@ -27,6 +27,8 @@ ms.lasthandoff: 12/20/2017
 
 # <a name="display-notifications-in-point-of-sale"></a>Visa meddelanden i kassan
 
+[!include[banner](includes/banner.md)]
+
 I dagens moderna butiksmiljö tilldelas butikens personal olika uppgifter, till exempel att hjälpa kunder, registrera transaktioner, lagerinventeringar och ta emot order i butiken. Kassaklienten gör det möjligt för butikens personal att utföra dessa uppgifter och mycket mer, allt i ett enda program. Med olika aktiviteter som ska utföras under en dag kan personalen behöva meddelas när något kräver deras uppmärksamhet. Ramverket för meddelanden i kassan löser detta problem genom att låta återförsäljarna konfigurera rollbaserade meddelanden. Med Dynamics 365 for Retail med programuppdatering 5, kan dessa meddelanden bara konfigureras för kassaåtgärder.
 
 För närvarande ger systemet möjligheten att visa meddelanden för utförande av orderuppfyllelse, men ramverket är utformat att kunna utökas så att utvecklare i framtiden kan skriva en meddelandehanterare för någon åtgärd och visa meddelanden i kassan.  
