@@ -25,6 +25,9 @@ ms.lasthandoff: 09/29/2017
 ---
 
 # <a name="expense-management-parameters"></a>Parametrar för utläggshantering
+
+[!include[banner](../includes/banner.md)]
+
 -----------------------------
 
 Följande parametrar styr det allmänna beteendet i utgiftshanteringen.

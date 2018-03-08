@@ -29,6 +29,8 @@ ms.lasthandoff: 02/01/2018
 
 # <a name="task-recorder-and-help-for-pos"></a>Uppgiftsinspelare och hjälp för kassa
 
+[!include[banner](includes/banner.md)]
+
 Det här avsnittet beskriver hur du använder uppgiftsinspelaren i Retail Modern POS och molnbaserad kassa.
 
 <a name="overview"></a>Översikt

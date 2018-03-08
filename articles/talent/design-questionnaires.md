@@ -28,6 +28,8 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="design-a-questionnaire"></a>Utforma en enkät
 
+[!include[banner](includes/banner.md)]
+
 Det här avsnittet beskriver processen för att skapa en enkät. Det första steget är att utforma enkäten. Om du utformar en enkät skapar du inte bara frågorna och svaren, utan även strukturen som gör det möjligt att registrera och ordna svar i tabeller. 
 
 En noggrant utformad enkät ökar kvaliteten på informationen som du samlar in. Med noggrann utformning är det lättare att du välja lämpliga alternativ vid en lämplig tidpunkt för en enkät. Följande punkter kan hjälpa dig att planera en effektiv enkät:

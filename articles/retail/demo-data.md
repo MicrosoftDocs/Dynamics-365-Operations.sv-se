@@ -29,6 +29,8 @@ ms.lasthandoff: 10/17/2017
 
 # <a name="demo-data-screen-layouts-in-mposcpos"></a>Demonstrationsdataskärmens layout i MOPS/CPOS
 
+[!include[banner](includes/banner.md)]
+
 Det här avsnittet innehåller information om skärmlayouterna som medföljer datauppsättningsdemo för butikupplevelser i Microsoft Dynamics 365 for Retail.
 
 ## <a name="overview"></a>Översikt

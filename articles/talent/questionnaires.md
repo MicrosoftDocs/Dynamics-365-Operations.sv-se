@@ -28,6 +28,8 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="questionnaires"></a>Enkäter
 
+[!include[banner](includes/banner.md)]
+
 Det här ämnet innehåller allmän information om enkäter och länkar till mer detaljerad information. En enkät är en uppsättning frågor som används för att samla in information för olika ändamål. Det går att utforma, skapa, distribuera och fylla i enkäter och sedan analysera resultaten. 
 
 Du kan anpassa en enkät så att den passar dina specifika krav genom att använda olika funktioner som är tillgängliga i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition. Nedan följer några exempel på hur enkäter kan användas:

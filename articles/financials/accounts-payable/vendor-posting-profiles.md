@@ -54,10 +54,6 @@ Ange vilka redovisningskonton som används vid bokföring av transaktioner som a
 Om du vill att alla leverantörstransaktioner ska ha samma bokföringsprofil skapar du bara en bokföringsprofil genom att välja Alla i fältet Kontokod. Ange följande värden om du vill ställa in din bokföringsprofil:
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
 <thead>
 <tr class="header">
 <th>Fält</th>

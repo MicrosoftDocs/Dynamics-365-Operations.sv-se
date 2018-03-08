@@ -62,7 +62,7 @@ Följande steg beskriver processen för att skapa ett anpassat fält och placera
 10.   Klicka på **infoga** för att infoga markerade fält i det utvalda området på formuläret. 
 11.   **Valfritt:** Aktivera läget **flytta** från verktygsfältet för anpassning för att flytta de nya fälten till önskad plats i det markerade området. Se [anpassa användarupplevelsen](personalize-user-experience.md) för mer information om hur du använder olika funktioner för anpassning om du vill optimera ett formulär för din personliga användning.  
 
-### <a name="sharing-custom-fields-with-other-users"></a>Dela anpassade fält med andra användare
+## <a name="sharing-custom-fields-with-other-users"></a>Dela anpassade fält med andra användare
 När du har skapat ett anpassat fält och det visas i ett formulär, vill du kanske tillhandahålla denna uppdaterade sida som innehåller det nya fältet för andra användare i systemet. Det kan du göra på två olika sätt genom att använda funktionerna för anpassning av produkten:
 
 -   Det rekommenderade flödet är via den systemadministratör som kan skicka en anpassning till alla användare eller en grupp användare. Mer information i [Anpassa användarupplevelsen](personalize-user-experience.md). 

@@ -25,6 +25,8 @@ ms.lasthandoff: 11/03/2017
 ---
 # <a name="vendor-invoice-automation"></a>Automation av leverantörsfaktura
 
+[!include[banner](../includes/banner.md)]
+
 Det här avsnittet beskriver de funktioner som är tillgängliga för slutpunkt till slutpunkt-automatisering av leverantörsfakturor, även fakturor som innehåller bilagor.
 
 Organisationer som vill förenkla sina processer för leverantörsreskontra (AP) identifierar ofta behandlingen av fakturan som ett av det viktigaste behandlingsområdet att effektivisera. I många fall kan dessa organisationer avlasta behandlingen av pappersfakturor till en tredjeparts tjänstleverantör av optisk teckenläsning (OCR). De får sedan metadata för en maskinläsbar faktura tillsammans med en skannad bild av varje faktura. Som en hjälp för automatiseringen byggs sedan en ”slut”-lösning för att möjliggöra förbrukning av dessa artefakter i faktureringssystemet. Microsoft Dynamics 365 for Finance and Operations, Enterprise edition möjliggör nu ”slut”-automatisering via en färdig lösning för automatisering av fakturan.

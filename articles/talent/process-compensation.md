@@ -26,6 +26,9 @@ ms.lasthandoff: 11/03/2017
 ---
 
 # <a name="process-compensation"></a>Bearbeta kompensation
+
+[!include[banner](includes/banner.md)]
+
 Kompensationsbearbetning gör att du kan beräkna nya baskompensationsbelopp för personalen utifrån justeringar av eget kapital, meritökningsmål och prestanda. Det här ämnet beskriver det grundläggande flödet för kompensationsbearbetning för fasta kompensationsplaner utan att räkna med en medarbetares prestanda.
 
 ## <a name="plan-the-new-compensation-amounts-and-budgets"></a>Planera det nya kompensationsbeloppet och budgetar

@@ -24,6 +24,9 @@ ms.lasthandoff: 11/03/2017
 ---
 
 # <a name="reverse-charge-vat"></a>Omvänd moms
+
+[!include[banner](../includes/banner.md)]
+
 Det här avsnittet beskriver en allmän metod för att ställa in omvänd moms (VAT) för europeiska länder.
 
 Omvänd moms är ett skatteschema som har ansvaret för redovisning och rapportering av moms från säljaren till köparen av varor eller tjänster. Därför rapporterar mottagaren av varor eller tjänster både utgående moms (i rollen som säljare) och ingående moms (i rollen som inköpare) i deras momsrapport.

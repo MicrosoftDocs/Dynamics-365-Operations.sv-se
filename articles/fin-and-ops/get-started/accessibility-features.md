@@ -25,6 +25,8 @@ ms.lasthandoff: 01/23/2018
 
 # <a name="accessibility-features"></a>Hjälpmedelsfunktioner
 
+[!include[banner](../includes/banner.md)]
+
 Det här avsnittet beskriver de funktioner som hjälper användare med olika funktionsnedsättningar att använda Dynamics 365 for Finance and Operations, Enterprise Edition, Dynamics 365 for Retail och Dynamics 365 for Talent. Till exempel finns funktioner för användare som använder hjälpmedel som skärmläsaren i Microsoft Windows.
 
 ## <a name="windows-narrator-and-keyboard-only-access"></a>Windows skärmläsare och tangentbordsexklusiv åtkomst

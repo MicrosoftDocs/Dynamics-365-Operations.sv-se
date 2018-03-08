@@ -27,6 +27,8 @@ ms.lasthandoff: 12/01/2017
 
 # <a name="cloud-and-on-premises-feature-comparison"></a>Jämförelse mellan molnet och lokala funktioner
 
+[!include[banner](../includes/banner.md)]
+
 Detta avsnitt anger huruvida respektive funktion finns i dessa produkter:
 
 + Dynamics 365 for Finance and Operations, Enterprise edition (moln)

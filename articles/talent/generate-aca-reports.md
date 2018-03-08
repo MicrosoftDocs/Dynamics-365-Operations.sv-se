@@ -25,6 +25,9 @@ ms.lasthandoff: 11/03/2017
 
 ---
 # <a name="generate-affordable-care-act-reports"></a>Generera Affordable Care Act-rapporter
+
+[!include[banner](includes/banner.md)]
+
 Funktioner finns på plats med syfte att bistå arbetsgivare som måste spåra information som rapporterats i formulären 1095-B och 1095-C gällande delen för **arbetsgivarmandat** i Affordable Care Act (hälsovårdslagen, eller "Obama-Care"). Notera att denna funktion endast är aktiverad för juridiska personer i USA.
 
 ## <a name="getting-started"></a>Komma igång

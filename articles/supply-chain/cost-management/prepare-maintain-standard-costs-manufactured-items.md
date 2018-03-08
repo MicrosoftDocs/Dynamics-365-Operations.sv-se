@@ -30,6 +30,8 @@ ms.lasthandoff: 01/19/2018
 
 # <a name="prepare-to-maintain-standard-costs-for-manufactured-items"></a>Förbereda underhåll av standardkostnader för tillverkade artiklar
 
+[!include[banner](../includes/banner.md)]
+
 Det här avsnittet beskriver hur du förbereder för underhåll av kostnader för tillverkade artiklar. Hur du gör för tillverkade artiklar skiljer sig något från hur du gör för inköpta artiklar.
 
 De principer som tilldelas tillverkade artiklar kan påverka kostnadsberäkningarna för de överordnade tillverkade artiklarna. För att förbereda underhåll av kostnader för tillverkade artiklar följ dessa steg:
