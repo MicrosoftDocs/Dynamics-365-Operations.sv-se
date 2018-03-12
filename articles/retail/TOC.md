@@ -182,7 +182,8 @@
 ### [Kanalkommunikation för Retail](dev-itpro/define-retail-channel-communications-cdx.md)
 ### [MPOS-arkitektur](dev-itpro/retail-modern-pos-architecture.md)
 ### [Publiceringsarkitektur för onlinebutik i Retail](dev-itpro/retail-online-store-publishing-architecture.md)
-### [Innehållspaket för Retail-kanalprestanda för Power BI](../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md)
+### [Power BI-innehåll för Retail-kanalprestanda](../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md)
+### [PA-DSS-certifiering (Payment Application Data Security Standards)](dev-itpro/PA-DSS-Certification.md)
 
 ## Distribution och snabbkorrigeringar
 ### [Översikt av Retail Store Scale Unit](dev-itpro/retail-store-system-begin.md)
