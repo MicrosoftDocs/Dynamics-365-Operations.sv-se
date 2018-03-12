@@ -9,7 +9,7 @@
 ## [Programstack och serverarkitektur](dev-tools/application-stack-server-architecture.md)
 ## [Hämta en utvärderingskopia](dev-tools/get-evaluation-copy.md)
 ## [Registrera ett abonnemang](dev-tools/sign-up-preview-subscription.md)
-## [Komma åt instanser](dev-tools/access-instances.md)
+## [Distribuera och få tillgång till en utvecklingsmiljö](dev-tools/access-instances.md)
 ## [Systemkrav för utveckling](dev-tools/development-system-requirements.md)
 ## Hantering av vagnpark – exempel på ansökning
 ### [Hantering av vagnpark – exempel på ansökning](dev-tools/fleet-management-sample.md)
@@ -355,12 +355,12 @@
 #### [PartDesign, typ](mobile-apps/platform/client-apis/interfaces/view-model-control-part-ipart-ipartdesign.md)
 #### [PartMetadata, typ](mobile-apps/platform/client-apis/interfaces/view-model-control-part-ipart-ipartmetadata.md)
 #### [Row, typ](mobile-apps/platform/client-apis/interfaces/view-model-control-list-ilist-irow.md)
-#### [Value, typ](mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivalue.md)
+#### [Value, type](mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivalue.md)
 #### [ValueDesign, typ](mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluedesign.md)
 #### [ValueMetadata, typ](mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluemetadata.md)
 
 # Dataintegration
-## [Integrationsmönster](data-entities/integration-overview.md)
+## [Välj en strategi för dataintegrering (importera/exportera)](data-entities/integration-overview.md)
 
 ## API:er för dataintegration
 ### [API:er för datahanteringspaket](data-entities/data-management-api.md)
@@ -381,12 +381,12 @@
 
 ### [Integrera data med hjälp av Common Data Service](data-entities/data-integration-cds.md) 
 #### [Konfigurera ett scenario för potentiell kund till pengar](../supply-chain/sales-marketing/prospect-to-cash.md)
-##### [Synkronisera produkter från Finance and Operations till produkter i Sales](../supply-chain/sales-marketing/products-template-mapping.md)
-##### [Synkronisera konton från Sales till kunder i Finance and Operations](../supply-chain/sales-marketing/accounts-template-mapping.md)
-##### [Synkronisera kontakter från Sales till kontakter i Finance and Operations](../supply-chain/sales-marketing/contacts-template-mapping.md)
-##### [Synkronisera huvuden och rader i försäljningsofferter från Sales till Finance and Operations](../supply-chain/sales-marketing/sales-quotation-template-mapping.md)
-##### [Synkronisera huvuden och rader i försäljningsorder från Finance and Operations till Sales](../supply-chain/sales-marketing/sales-order-template-mapping.md)
-##### [Synkronisera huvuden och rader i försäljningsfakturor från Finance and Operations till Sales](../supply-chain/sales-marketing/sales-invoice-template-mapping.md)
+##### [Synkronisera produkter från Finance and Operations till produkter i Sales](../supply-chain/sales-marketing/products-template-mapping-direct.md)
+##### [Synkronisera konton från Sales till kunder i Finance and Operations](../supply-chain/sales-marketing/accounts-template-mapping-direct.md)
+##### [Synkronisera kontakter från Sales till kontakter i Finance and Operations](../supply-chain/sales-marketing/contacts-template-mapping-direct.md)
+##### [Synkronisera huvuden och rader i försäljningsofferter från Sales till Finance and Operations](../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md)
+##### [Synkronisera huvuden och rader i försäljningsorder från Finance and Operations till Sales](../supply-chain/sales-marketing/sales-order-template-mapping-direct.md)
+##### [Synkronisera huvuden och rader i försäljningsfakturor från Finance and Operations till Sales](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
 ##### [Synkronisera konton direkt från Sales till kunder i Finance and Operations](../supply-chain/sales-marketing/accounts-template-mapping-direct.md)
 ##### [Synkronisera produkter direkt från Finance and Operations till produkter i Sales](../supply-chain/sales-marketing/products-template-mapping-direct.md)
 ##### [Synkronisera kontakter direkt från Sales till kontakter i Finance and Operations](../supply-chain/sales-marketing/contacts-template-mapping-direct.md)
@@ -452,6 +452,8 @@
 
 ## [Ta med din egen databas](analytics/export-entities-to-your-own-database.md)
 
+## [Resurser för att svara på en databegäran enligt GDPR](gdpr/gdpr-home-page.md)
+
 # [Startsidan Kontinuerlig leverans](dev-tools/continuous-delivery-home-page.md)
 ## [Vanliga frågor och svar för utveckling och kontinuerlig leverans](dev-tools/continuous-delivery-faq.md)
 ## [Exkludera testpaket från skapandet](dev-tools/exclude-test-packages.md)
@@ -515,6 +517,7 @@
 ### [Skapa ett lokalt projekt](lifecycle-services/lbd-create-lcs-on-prem-project.md)
 ### [Ställa in och distribuera lokala miljöer](deployment/setup-deploy-on-premises-environments.md)
 ### [Utveckla och distribuera anpassade modeller i lokala miljöer](deployment/develop-deploy-custom-models-on-premises.md)
+### [Konfigurera omvänd proxy för lokal-miljö](deployment/onprem-reverseproxy.md)
 ### [Uppdatera en lokal distribution](deployment/apply-updates-on-premises.md)
 ### [Distribuera en lokal distribution](deployment/redeploy-on-prem.md)
 ### [Uppdatera den lokala agenten](lifecycle-services/update-local-agent.md)
@@ -527,7 +530,7 @@
 ### [Installera ett distribuerbart paket](deployment/install-deployable-package.md)
 ### [Felsöka problem med paketprogram](deployment/deployable-package-troubleshooting.md)
 
-# [Uppgradering och migrering](migration-upgrade/upgrade-home-page.md)
+# [Uppgraderingar, uppdateringar och snabbkorrigeringar](migration-upgrade/upgrade-home-page.md)
 ## [Uppgradera från AX 2012 till Dynamics 365 for Finance and Operations](migration-upgrade/upgrade-overview-2012.md)
 ### [AX 2012-uppgradering - Använd verktyget Uppgraderingsanalys för att planera](migration-upgrade/upgrade-analyzer-tool.md)
 ### [AX 2012-uppgradering – Använd tjänsten Koduppgradering för att beräkna insatsen](migration-upgrade/analyze-code-upgrade.md)
@@ -555,8 +558,7 @@
 ### [Dela modeller](dev-tools/model-split.md)
 ### [Använd ombud för att lösa beroenden mellan modeller](migration-upgrade/delegates-migration.md)
 
-
-## Uppgradera till den senaste uppdateringen
+## Uppgradera till den senaste uppdateringen (moln)
 ### [Process för flytta till den senaste uppdateringen](migration-upgrade/upgrade-latest-update.md)
 ### [Livscykelpolicy](migration-upgrade/versions-update-policy.md)
 ### [Installera den senaste plattformsuppdateringen i din miljö](migration-upgrade/upgrade-latest-platform-update.md)
@@ -564,13 +566,17 @@
 ### [Uppgradera ett begränsat läge](migration-upgrade/upgrade-sandbox-environment.md)
 ### [Uppgradera data i utvecklings- eller demonstrationsmiljöer](migration-upgrade/upgrade-data-to-latest-update.md)
 ### [Uppdatera utvecklingsverktyg](dev-tools/update-development-tools.md)
+
+## Uppgradera till den senaste uppdateringen (lokal)
 ### [Uppdatera en lokal distribution](deployment/apply-updates-on-premises.md)
 ### [Distribuera en lokal distribution](deployment/redeploy-on-prem.md)
 
-## Snabbkorrigeringar och stöd
+## Snabbkorrigeringar
 ### [Hämta snabbkorrigeringar från Lifecycle Services](migration-upgrade/download-hotfix-lcs.md)
+### [Installera uppdateringar av en molnmiljö](deployment/apply-deployable-package-system.md)
 ### [Installera en snabbkorrigering av metadata](migration-upgrade/install-metadata-hotfix-package.md)
 ### [Korrigera Reporting Services i en enskild miljö](migration-upgrade/patch-reporting-service-environment.md)
+### [Uppdatera utvecklingsverktyg för Visual Studio](dev-tools/update-development-tools.md)
 
 ## Inaktuellt
 ### [Inaktuella API:er](migration-upgrade/deprecated-apis.md)

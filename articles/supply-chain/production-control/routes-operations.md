@@ -1,7 +1,7 @@
 ---
 title: "Flöden och operationer"
 description: "Det här avsnittet innehåller information om Flöden och operationer."
-author: YuyuScheller
+author: sorenva
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article

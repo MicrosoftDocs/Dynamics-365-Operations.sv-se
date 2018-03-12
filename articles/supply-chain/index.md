@@ -1,9 +1,9 @@
 ---
 title: "Startsidan Hantering av underleverantörer"
-description: "Det här ämnet innehåller en lista med hjälpavsnitt och andra resurser för styrningsfunktionerna för leveranskedjor i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition."
+description: "Den här sidan innehåller en lista med hjälpavsnitt och andra resurser för styrningsfunktionerna för leveranskedjor i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 01/10/2018
+ms.date: 02/15/2018
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,10 +19,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 6c193a3a9deba215d4374ccffc3bf2d854fbd0f2
-ms.openlocfilehash: 9314a129b85cf6cb2d2ca379eafc142ce234d535
+ms.sourcegitcommit: cab2f165a70e5ce8f09f0391282e055e51afb225
+ms.openlocfilehash: bf3192a5189a3b18ad28f3c5cb0dd6d402824ed5
 ms.contentlocale: sv-se
-ms.lasthandoff: 01/22/2018
+ms.lasthandoff: 02/21/2018
 
 ---
 
@@ -40,7 +40,7 @@ Det här ämnet innehåller en lista med hjälpavsnitt och andra resurser för s
 Välj ett funktionsområde för att läsa mer om det.
 
 - [Kostnadsredovisning](../financials/cost-accounting/cost-accounting-home-page.md)
-- [Kostnadshantering](cost-management/costing-sheets.md)  
+- [Kostnadshantering](cost-management/cost-management-home-page.md)  
 - [Lagerhantering](inventory/inventory-home-page.md)
 - [Huvudplanering](master-planning/master-planning-home-page.md)
 - [Anskaffning och källa](procurement/procurement-sourcing-overview.md)
@@ -56,6 +56,7 @@ Med hjälp av videoklippen får du lära dig mer om de nya funktionerna i Micros
 
 -  [Integrering av potentiell kund till pengar](https://youtu.be/AVV9x5x-XCg) 
 -  [Optimerings-advisor](https://www.youtube.com/watch?v=MRsAzgFCUSQ&t=4s)
+-  [Använd lagerställemall för att kopiera konfiguration](https://www.youtube.com/watch?v=K2WIfFlqJYs&feature=youtu.be)
 
 Med hjälp av videoklippen får du lära dig mer om de nya funktionerna i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (juli 2017).
 
@@ -67,17 +68,36 @@ Med hjälp av videoklippen får du lära dig mer om de nya funktionerna i Micros
 
 Dessa inspelningar från teknikkonferenser handlar om produktfunktionerna i den föregående versionen av Finance and Operations, men samma begrepp gäller fortfarande och procedurerna är likartade i den aktuella versionen. 
 
--  <a href="https://youtu.be/zotrj3SbCl4">Produktkonfigureraren i Microsoft Dynamics AX</a>
--  <a href="https://youtu.be/7v8BPmEs9Dg">Huvudplanering - tips och trick för felsökning av prestandaproblem</a>
--  <a href="https://youtu.be/RLXybx20B5o">Hjälp! MPS går långsamt!</a>
--  <a href="https://mix.office.com/watch/wpf78tr7rjuh/">Bearbeta inkommande ASN:er i Lagerstyrning</a> 
--  <a href="https://www.youtube.com/watch?v=--_didmZKHo&t=10s">Få ut mesta möjliga av lagerstyrningssystemet</a>
--  <a href="https://www.youtube.com/watch?v=z5_V5Eqlf5M&t=48s">Avancerad lagerstyrning i R3 - inkommande bearbetning och minsta/största lagerpåfyllnad</a>
--  <a href="https://youtu.be/Og0gLlVp7jA">Avancerad lagerstyrning i R3 - en arbetsdag med utgående bearbetning och efterfrågan av lagerpåfyllnad</a>
--  <a href="https://youtu.be/5w1MngVchBA">Etiketter i nya lagerstyrningssystemet i Microsoft Dynamics AX 2012 R3</a>
--  <a href="https://www.youtube.com/embed/QUxXUrN-7n4">Dynamics AX 2012 R3: Avancerad lagerstyrning - en arbetsdag med processtillverkning</a>
--  <a href="https://youtu.be/y1jrd3A_k70">Legotillverkningsåtgärder och aktiviteter inom tillverkning</a>
--  <a href="https://youtu.be/jgmTgJIgEFQ">Transporthantering i nya Microsoft Dynamics AX</a>
+**Kostnadshantering**
+
+-  [Översikt över kostnadshantering](https://www.youtube.com/watch?v=vXzlC-mOBcg&feature=youtu.be)
+
+**Huvudplanering**
+
+-  [Utöka funktionen för efterfrågeprognosticering](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
+-  [Huvudplanering - tips och trick för felsökning av prestandaproblem](https://youtu.be/7v8BPmEs9Dg)
+-  [Hjälp! MPS går långsamt!](https://youtu.be/RLXybx20B5o)
+
+**Produktinformationshantering**
+
+-  [Produktkonfigureraren i Microsoft Dynamics AX](https://youtu.be/zotrj3SbCl4)
+
+**Lagerstyrning** 
+
+-  [Bearbeta inkommande ASN:er i Lagerstyrning](https://mix.office.com/watch/wpf78tr7rjuh)  
+-  [Få ut mesta möjliga av lagerstyrningssystemet](https://www.youtube.com/watch?v=--_didmZKHo&t=10s)
+-  [Avancerad lagerstyrning i R3 - inkommande bearbetning och minsta/största lagerpåfyllnad](https://www.youtube.com/watch?v=z5_V5Eqlf5M&t=48s)
+-  [Avancerad lagerstyrning i R3 - en arbetsdag med utgående bearbetning och efterfrågan av lagerpåfyllnad](https://youtu.be/Og0gLlVp7jA)
+-  [Etiketter i nya lagerstyrningssystemet i Microsoft Dynamics AX 2012 R3](https://youtu.be/5w1MngVchBA)
+-  [Dynamics AX 2012 R3: Avancerad lagerstyrning - en arbetsdag med processtillverkning](https://www.youtube.com/embed/QUxXUrN-7n4)
+
+**Produktionskontroll**
+
+-  [Legotillverkningsåtgärder och aktiviteter inom tillverkning](https://youtu.be/y1jrd3A_k70)
+
+**Transporthantering**
+
+-  [Transporthantering i nya Microsoft Dynamics AX](https://youtu.be/jgmTgJIgEFQ)
 
 ## <a name="blogs"></a>Bloggar
 Det finns många avsnitt om tillverkning och hantering av underleverantörer i <a href="https://blogs.msdn.microsoft.com/axmfg/">teambloggen Dynamics AX Manufacturing R&D</a> och <a href="https://blogs.msdn.microsoft.com/dynamicsaxscm/">teambloggen Supply Chain Management in Dynamics AX R&D</a>. De flesta av inläggen skrevs för den föregående versionen av Finance and Operations, men samma begrepp gäller fortfarande och procedurerna är likartade i den aktuella versionen. 
