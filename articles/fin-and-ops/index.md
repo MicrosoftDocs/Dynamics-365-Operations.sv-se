@@ -3,7 +3,7 @@ title: "Dokumentation för Microsoft Dynamics 365 for Finance and Operations, En
 description: "Dokumentation för Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition."
 author: margoc
 manager: AnnBe
-ms.date: 11/13/2017
+ms.date: 03/02/2018
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: bb258999e072dc280bccfe64fb0dbd41d6577a0e
-ms.openlocfilehash: dbcbd7f7b0c23545eec74de538f1d7ec96ac98b6
+ms.sourcegitcommit: 7142c6bcb6e98929afdb8bb982a17efc7223ab12
+ms.openlocfilehash: 0d12082a2b10ae8e83217c5451627239e6ec640b
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 03/05/2018
 
 ---
 
@@ -43,9 +43,13 @@ Mycket av innehållet gäller även relaterade produkter: Microsoft Dynamics 365
 <h3><a href="get-started/before-you-buy.md">Innan du köper</a></h3>
 <p><a href="../dev-itpro/dev-tools/sign-up-preview-subscription.md">Registrera ett abonnemang på förhandsversionen</a></p>
  <p><a href="../dev-itpro/deployment/choose-deployment-type.md">Välj ett distributionsalternativ</a></p>
-  <p><a href="get-started/fasttrack-dynamics-365-overview.md">FastTrack for Dynamics 365</a></p>
-  <p><a href="get-started/purchase-on-premises.md">Köp Finance and Operations (lokal)</a></p>
+ <p><a href="get-started/purchase-on-premises.md">Köp Finance and Operations (lokal)</a></p>
 
+<h3><a href="imp-lifecycle/implementation-lifecycle.md">Implementera livscykel</a></h3>
+<p><a href="get-started/fasttrack-dynamics-365-overview.md">FastTrack for Dynamics 365</a></p>
+<p><a href="imp-lifecycle/onboard.md">Introducera ett projekt</a></p>
+<p><a href="imp-lifecycle/prepare-go-live.md">Förbereder för go-live</a></p>
+  
 <h3><a href="../financials/index.md">Ekonomisk styrning</a></h3>
 <p><a href="../financials/accounts-payable/accounts-payable.md">Leverantörsreskontra</a></p>
 <p><a href="../financials/accounts-receivable/accounts-receivable.md">Kundreskontra</a></p>
@@ -99,7 +103,8 @@ Mycket av innehållet gäller även relaterade produkter: Microsoft Dynamics 365
 <p><a href="get-started/demo-data.md">Demodata</a></p>
 
 <h3><a href="../dev-itpro/sysadmin/system-administration-home-page.md">Administration</h3>
-<p><a href="../dev-itpro/deployment/choose-deployment-type.md">Distribution</a></p>
+<p><a href="../dev-itpro/deployment/cloud-deployment-overview.md">Molndistribution</a></p>
+<p><a href="../dev-itpro/deployment/on-premises-deployment-landing-page.md">Lokal distribution</a></p>
 <p><a href="../dev-itpro/migration-upgrade/upgrade-home-page.md">Uppgradering</a></p>
 <p><a href="../dev-itpro/dev-tools/continuous-delivery-home-page.md#servicing">Behandling</a></p>
 <p><a href="../dev-itpro/data-entities/data-entities.md">Ramverk för datahantering</a></p>
