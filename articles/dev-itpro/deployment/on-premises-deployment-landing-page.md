@@ -3,14 +3,14 @@ title: Lokal distribution
 description: "Det här avsnittet innehåller information och länkar till innehåll om lokal distribution."
 author: kfend
 manager: AnnBe
-ms.date: 12/11/2017
+ms.date: 03/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User, Developer, IT Pro
 ms.reviewer: kfend
-ms.search.scope: Core
+ms.search.scope: Core, Operations
 ms.custom: 55651
 ms.assetid: 
 ms.search.region: Global
@@ -18,10 +18,10 @@ ms.author: kfend
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: 346f5b7a5fbbe2c41aaa54e0b36fe0c46baec0af
-ms.openlocfilehash: 697f5a43124aace645e0cc8c6df98a4f986ab852
+ms.sourcegitcommit: 797058bdbbdb63a08eb35034ffe3c913307f38df
+ms.openlocfilehash: 12b8a6e8f28501bce76d5a1d58b39e4711b75330
 ms.contentlocale: sv-se
-ms.lasthandoff: 12/20/2017
+ms.lasthandoff: 03/06/2018
 
 ---
 # <a name="on-premises-deployment-landing-page"></a>Landningssida för lokal distribution
@@ -31,6 +31,7 @@ ms.lasthandoff: 12/20/2017
 Du kan distribuera Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (lokalt). När du väljer en lokal distributionstyp skiljer sig systemkrav, maskinvarustorlek och funktionalitet sig åt från en molnbaserad distribution. Det här avsnittet innehåller länkar till specifik innehåll om lokal distribution.
 
 ## <a name="get-started"></a>Kom igång
+- [Vad är nytt eller ändrat i lokala distributioner av Dynamics 365 for Finance and Operations, Enterprise edition 7.2 med plattformsuppdatering 12 (mars 2018)](../../fin-and-ops/get-started/whats-new-LBD-PU12-App72.md)
 - [Översikt över Dynamics 365 for Finance and Operations, Enterprise Edition (lokal)](on-premises-overview.md)
 - [Planera inför lokal distribution](plan-onprem-deployment.md)
 - [Systemkrav för lokala distributioner](../../fin-and-ops/get-started/system-requirements-on-prem.md)
@@ -50,6 +51,7 @@ Du kan distribuera Microsoft Dynamics 365 for Finance and Operations, Enterprise
 - [Konfigurera dokumenthantering](../../fin-and-ops/organization-administration/configure-document-management.md)
 - [Importera konfigurationer för elektronisk rapportering](../analytics/electronic-reporting-import-ger-configurations.md)
 - [Funktioner för att skapa, publicera och skriva ut dokument i lokala distributioner](../analytics/printing-capabilities-on-premises.md)
+- [Konfigurera omvänd proxy för lokal miljö](onprem-reverseproxy.md)
 - [Ställa in teknisk support](../lifecycle-services/support-experience.md)
 - [Felsökning av klientens Internetanslutning](../user-interface/client-disconnected.md)
 - [Uppdatera en lokal distribution](apply-updates-on-premises.md)

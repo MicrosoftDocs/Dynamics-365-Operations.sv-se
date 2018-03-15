@@ -3,7 +3,7 @@ title: "Skapa regler för Optimization advisor"
 description: "Det här avsnittet beskriver hur du lägger till nya regler Optimization advisor."
 author: roxanadiaconu
 manager: AnnBe
-ms.date: 01/23/2018
+ms.date: 02/04/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -11,7 +11,7 @@ ms.technology:
 ms.search.form: SelfHealingWorkspace
 audience: Application User, IT Pro
 ms.reviewer: yuyus
-ms.search.scope: Core (Operations, Core)
+ms.search.scope: Operations, Core
 ms.custom: 
 ms.assetid: 
 ms.search.region: global
@@ -20,10 +20,10 @@ ms.author: roxanad
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: 9cb9343028acacc387370e1cdd2202b84919185e
-ms.openlocfilehash: 88739298405343a36ae5bc11f51c666c414e7157
+ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
+ms.openlocfilehash: e64d4fc1a7425d38d728b11e503d3e7289312495
 ms.contentlocale: sv-se
-ms.lasthandoff: 01/23/2018
+ms.lasthandoff: 02/07/2018
 
 ---
 
@@ -170,6 +170,9 @@ Beroende på specifik regel, kan det vara möjligt att anta en automatisk åtgä
 
 **securityMenuItem** returnerar namnet på ett menyalternativ så att regeln endast är synlig för användare som har åtkomst till menyalternativet. För säkerhets skulls krävs kanske att särskilda regler och affärsmöjligheter endast är tillgängliga för auktoriserade användare. I exemplet kan endast användare med tillgång till **PurchRFQCaseTitleAction** se affärsmöjligheten. Observera att det här menyalternativet för åtgärd skapades för det här exemplet och har lagts till som en startpunkt för säkerhetsprivilegiet **PurchRFQCaseTableMaintain**. 
 
+> [!NOTE]
+> Menyalternativet måste vara ett åtgärdsalternativ för säkerhet för att fungera korrekt. Andra typer av menyalternativ, som **visa menyalternativ** kommer inte att fungera.
+
 ```
 public MenuName securityMenuItem() 
 { 
@@ -192,6 +195,65 @@ class ScanNewRulesJob
 ```
 
 Regeln visas i formuläret **diagnostikregel validering** från **systemadministration** > **periodiska uppgifter** > **Underhåll diagnostikregel – validering**. För att utvärdera den gå till **systemadministration** > **periodiska uppgifter** > **Diagnostikregel – validering av tidsplan**. Välj frekvens för regeln, till exempel **daglig**. Klicka på **OK**. Gå till **systemadministration** > **Optimization advisor** för att se den nya affärsmöjligheten. 
+
+Följande exempel är ett kodstycke med basen för en regel som inkluderar alla metoder och attribut som behövs. Det hjälper dig att komma igång med att skriva nya regler. Etiketter och åtgärdsalternativ som används i exemplet är endast i demonstrationssyfte.
+
+```
+[DiagnosticsRuleAttribute]
+public final class SkeletonSelfHealingRule extends SelfHealingRule implements IDiagnosticsRule
+{
+    [DiagnosticsRuleSubscription(DiagnosticsArea::SCM,
+                                 "@SkeletonRuleLabels:SkeletonRuleTitle", // Label with the title of the rule
+                                 DiagnosticsRunFrequency::Monthly,
+                                 "@SkeletonRuleLabels:SkeletonRuleDescription")] // Label with a description of the rule
+    public str opportunityTitle()
+    {
+        // Return a label with the title of the opportunity
+        return "@SkeletonRuleLabels:SkeletonOpportunityTitle";
+    }
+
+    public str opportunityDetails(SelfHealingOpportunity _opportunity)
+    {
+        str details = "";
+
+        // Use _opportunity.data to provide details on the opportunity
+
+        return details;
+    }
+
+    protected List evaluate()
+    {
+        List results = new List(Types::Record);
+
+        // Write here the core logic of the rule
+
+        // When creating an opportunity, use:
+        //     * this.getOpportunityForCompany() for company specific opportunities
+        //     * this.getOpportunityAcrossCompanies() for cross-company opportunities
+
+        return results;
+    }
+
+    public boolean providesHealingAction()
+    {
+        return true;
+    }
+
+    protected void performAction(SelfHealingOpportunity _opportunity)
+    {
+        // Place here the code that performs the healing action
+
+        // To open a form, use the following:
+        // new MenuFunction(menuItemDisplayStr(SkeletonRuleDisplayMenuItem), MenuItemType::Display).run();
+    }
+
+    public MenuName securityMenuItem()
+    {
+        return menuItemActionStr(SkeletonRuleActionMenuItem);
+    }
+
+}
+```
 
 Titta på den korta YouTube-videon för mer information:
 

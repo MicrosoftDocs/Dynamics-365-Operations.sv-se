@@ -20,10 +20,10 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 3a1bfd4bd5f396c05277159ac112eaa8197d5818
-ms.openlocfilehash: 2c58e3e2f60c00d8d834c1d80b347e2e7087809d
+ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
+ms.openlocfilehash: 87dfdf7085e185b3e0467088118838eb832546d7
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 02/07/2018
 
 ---
 
@@ -117,8 +117,8 @@ Ett dimensionsvärde som är associerat med en produkt via en dimensionsvariantg
 Gör så här om du vill skapa dimensionsvärdegrupp:
 1.  Klicka på **Produktinformationshantering** &gt; **Inställning** &gt; **Variantgrupper**.
 2.  Välj **Storlek** **grupper**, **Färggrupper** eller **Utförandegrupper**.
-3.  Klicka på **Ny** och ange sedan ett namn för gruppen i fälten**Storleks****grupp**, **Färggrupp**, eller **Formatgrupp**. Klicka på **Sizes**, **Colors** eller **Styles** för att skapa rader för grupper.
-4.  I **Format****grupp**rader, **Färg****grupp****rader**, eller sidan **Utförandegrupprader** klickar du på **Ny** och skapar sedan storlekar, färger och utföranden för grupperna.
+3.  Klicka på **Ny** och ange sedan ett namn för gruppen i fälten **Storleks** **grupp**, **Färggrupp**, eller **Formatgrupp**. Klicka på **Sizes**, **Colors** eller **Styles** för att skapa rader för grupper.
+4.  I **Format** **grupp** rader, **Färg** **grupp** **rader**, eller sidan **Utförandegrupprader** klickar du på **Ny** och skapar sedan storlekar, färger och utföranden för grupperna.
 
 Om du vill hantera översättningar för värden i ett dimensionsvärdegrupp, följ dessa steg:
 1.  Följ stegen i den föregående proceduren för att skapa en dimensionsvärdesgrupp som ska öppna sidan **Storleksgrupprader**, **Färggrupprader** eller **Utförandegruppsrader**.

@@ -19,10 +19,10 @@ ms.author: rubendel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 52b3e2e78a03ac67507ee65a03e0884e5ed44678
-ms.openlocfilehash: 347100651302bb97806783d00559f2396d031fcc
+ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
+ms.openlocfilehash: ba9c828efc39d45a78500d30295e5d1d6c770c99
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 02/07/2018
 
 ---
 
@@ -155,7 +155,7 @@ Enhetstypen **Windows** används endast för skrivare. När en Windows-skrivare 
 Nätverkets adresserbara kassalådor, kvittoskrivare och betalningsterminaler kan användas i ett nätverk direkt antingen via maskinvarustationen Interprocess Communications (IPC) som ingår i Modern POS för Windows-program eller maskinvarustationen IIS för andra Modern POS-klienter.
 
 ## <a name="hardware-station-deployment-options"></a>Distributionsalternativ för maskinvarustation
-### <a name="ipc-built-in"></a>IPC (inbyggd))
+### <a name="ipc-built-in"></a>IPC (inbyggd)
 
 Maskinvarustationen Interprocess Communications (IPC) är inbyggd i Modern POS för Windows-programmet. Om du vill använda maskinvarustationen IPC tilldelar du en maskinvaruprofil till en kassa som kommer att använda Modern POS för Windows-program. Skapa en maskinvarustation av typen **Dedikerad** för butiken som kassan ska användas i. När du startar Modern POS kommer maskinvarustationen IPC att vara aktiv och den kringutrustning för kassa som har konfigurerats är klar att användas. Om du tillfälligt inte kräver lokal maskinvara av någon anledning använder du åtgärden **hantera maskinvarustationer** för att inaktivera maskinvarustationkapaciteterna. Modern POS kan också använda IPC maskinvarustation till att kommunicera direkt med kringutrustning i nätverket.
 

@@ -20,10 +20,10 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a24f75bf7e27702505d8a61ae3db83d03fe4a933
-ms.openlocfilehash: a2e91cd2b72ffed78669fe3cc83b141db6f26aa2
+ms.sourcegitcommit: 18ed011fa1c1aa35b4a401d51bffc6af19395577
+ms.openlocfilehash: 030579ac73d6333ac4ed55433b9679a58247c088
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 02/13/2018
 
 ---
 
@@ -80,6 +80,10 @@ Mer hjälp är tillgänglig som uppgiftsguider i Finance and Operations. Klicka 
 ### <a name="webinars"></a>Webbseminarier
 [Använd Azure-maskininlärning för efterfrågeprognosticering](https://www.youtube.com/watch?v=4nQsccdFFDA&feature=youtu.be)
 
+### <a name="tech-conference-recordings"></a>Inspelningar från tekniska konferenser
+-  [Utöka funktionen prognos för efterfrågan](https://www.youtube.com/watch?v=4OIKIXLiNjI&feature=youtu.be)
+-  [Huvudplanering - tips och trick för felsökning av prestandaproblem](https://youtu.be/7v8BPmEs9Dg)
+-  [Hjälp! MPS går långsamt!](https://youtu.be/RLXybx20B5o)
 
 
 

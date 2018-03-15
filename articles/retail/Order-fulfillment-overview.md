@@ -18,14 +18,16 @@ ms.author: rubencdelgado
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: ec6cb212766dd90fa9db7719a2119419ecb935c7
-ms.openlocfilehash: e0aa0e576f88fd497472aa4141704a66d51605c3
+ms.sourcegitcommit: 997b6843fb729ed204e4e8ec5369c5a380efc25e
+ms.openlocfilehash: fb36f6ce81c5e781e3c98132f18ecbd84d0d4089
 ms.contentlocale: sv-se
-ms.lasthandoff: 12/20/2017
+ms.lasthandoff: 02/12/2018
 
 ---
 
 # <a name="store-order-fulfillment"></a>Orderuppfyllelse i butik
+
+[!include[banner](includes/banner.md)]
 
 Många återförsäljare vill optimera orderuppfyllelse genom att låta butiker fylla i order. Orderuppfyllelse på butiksnivå hjälper dig att förenkla scenarier med överlager för en specifik butik eller kan behövas från en logistisk synvinkel i de fall som en butik har extra kapacitet eller ligger inom närmare avstånd för leverans till kunden. För att tillgodose detta behov är ett enhetligt utförande av orderuppfyllelse tillgängligt i kassan.
 
@@ -56,7 +58,7 @@ Raderna kan väljas som funktionen **Välj** i åtgärdsfönstret. När **Välj*
 
 ## <a name="line-details"></a>Radinformation
 
-Raddetaljer visas med den utfällda menyn med radinformation. När den här menyn används ges två flikar som innehåller ytterligare information för den valda raden. Den första fliken **Radinformation** visar information om själva raden såsom beställd kvantitet och återstående. Mer information finns inklusive plockad kvantitet, förpackad och fakturerad samt leveranssätt och leveransadress. Fliken **Orderinformation** ger information om orderrubrik inklusive kund, kund-ID, ordernummer, ordertotal och saldo.
+Raddetaljer visas med den utfällda menyn med radinformation. När den här menyn används ges tre flikar som innehåller ytterligare information för den valda raden. Den första fliken **Radinformation** visar information om själva raden såsom beställd kvantitet och återstående. Mer information finns inklusive plockad kvantitet, förpackad och fakturerad samt leveranssätt och leveransadress. Fliken **Orderinformation** ger information om orderrubrik inklusive kund, kund-ID, ordernummer, ordertotal och saldo. Fliken för **lager** visar information om den valda raden när det gäller fysiska inleveranser, reserverat lager och beställt lager.
 
 Om flera rader är markerade indikerar utfällda menyn för orderraddetaljer endast att flera rader är markerade. Rensa raderna om du vill visa detaljer för en enskild rad tills bara en rad återstår. 
 

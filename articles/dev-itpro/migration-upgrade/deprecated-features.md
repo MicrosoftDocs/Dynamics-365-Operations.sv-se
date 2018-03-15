@@ -3,7 +3,7 @@ title: "Äldre funktioner"
 description: "I det här avsnittet beskrivs funktioner som har tagits bort, eller har planerats för borttagning."
 author: sericks007
 manager: AnnBe
-ms.date: 11/28/2017
+ms.date: 02/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
-ms.openlocfilehash: addd8c62ba034b47d8abbec29fa8682deb9698b1
+ms.sourcegitcommit: 16bdf2176869e5822ddf8732c829b65f1e60632c
+ms.openlocfilehash: 03b79816ffea649cf226408ed4660c3419103a7a
 ms.contentlocale: sv-se
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 02/07/2018
 
 ---
 
@@ -40,6 +40,17 @@ Den här listan är avsedd att hjälpa dig att ta hänsyn till dessa borttagna o
 > Från och med  Dynamics 365 for Finance and Operations, Enterprise Edition juli 2017 med plattformsuppdatering 8 noteras typen av implementeringar för varje borttagen eller inaktuell funktion. Alla de tidigare versioner som beskrivs i det här ämnet använde endast molndistributioner.
 
 ## <a name="dynamics-365-for-finance-and-operations-enterprise-edition-73-with-platform-update-12"></a>Dynamics 365 for Finance and Operations, Enterprise Edition 7.3. med plattformsuppdatering 12
+
+### <a name="personalized-product-recommendations"></a>Anpassade produktrekommendationer 
+Med start den 15 februari 2018 kommer återförsäljare inte längre kunna visa anpassade produktrekommendationer på en butikskassa (POS). Mer information i [anpassade produktrekommendationer](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/personalized-product-recommendations)..  
+
+|   |  |
+|------------|--------------------|
+| **Orsak till inaktuell/borttagning** | Vi tar bort den nuvarande versionen av tjänsten produktrekommendation eftersom vi designar om funktionen med en bättre algoritm och nya butiksorienterade funktioner.  |
+| **Ersatt av en annan funktion?**   | Nr. Men vi planerar att återinföra denna funktion senare under 2018 för att ge förbättrat service vid rekommendationer.   |
+| **Produktområden som påverkas**         | Anpassade produktrekommendationer i butikskassa.                                                    |
+| **Distribueringsalternativ**              | Allt                                                                                      |
+| **Status**                         |Borttagen från den 15 februari 2018. Detta påverkar kunder som kör Dynamics 365 for Operations 1611 och senare.  |
 
 ### <a name="extension-of-the-list-of-electronic-reporting-er-functions"></a>Utökning av listan över elektronisk rapportering (ER)
 Möjligheten att införa anpassade funktioner som ska användas i ER uttrycksverktyget (mer information finns i [utöka listan med elektroniska rapportfunktioner](../../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md)) stöds inte längre. På grund av förändringar av ER API:er, blev API:n för att anropa inbyggda funktioner från ER uttrycksverktyget intern och kan inte längre utökas.
@@ -132,6 +143,19 @@ Användare kan hämta denna från myndighetsportalen.
 | **Distribueringsalternativ**                       | Alla moduler                                                                    |
 | **Status**                                  | Inaktuell: Borttagningsdatum har inte ställts in för den här funktionen.  |    
 
+
+## <a name="dynamics-365-for-retail-72"></a>Dynamics 365 for Retail 7.2
+
+### <a name="personalized-product-recommendations"></a>Anpassade produktrekommendationer 
+Med start den 15 februari 2018 kommer återförsäljare inte längre kunna visa anpassade produktrekommendationer på en butikskassa (POS). Mer information i [anpassade produktrekommendationer](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/personalized-product-recommendations)..  
+
+|   |  |
+|------------|--------------------|
+| **Orsak till inaktuell/borttagning** | Vi tar bort den nuvarande versionen av tjänsten produktrekommendation eftersom vi designar om funktionen med en bättre algoritm och nya butiksorienterade funktioner.  |
+| **Ersatt av en annan funktion?**   | Nr. Men vi planerar att återinföra denna funktion senare under 2018 för att ge förbättrat service vid rekommendationer.   |
+| **Produktområden som påverkas**         | Anpassade produktrekommendationer i butikskassa.                                                    |
+| **Distribueringsalternativ**              | Allt                                                                                      |
+| **Status**                         |Borttagen från den 15 februari 2018. Detta påverkar kunder som kör Dynamics 365 for Retail 7.2 och senare. |
 
 
 ## <a name="dynamics-365-for-finance-and-operations-enterprise-edition-july-2017-with-platform-update-8"></a>Dynamics 365 for Finance and Operations, Enterprise Edition juli 2017 med plattformsuppdatering 8

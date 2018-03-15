@@ -20,10 +20,10 @@ ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 5737d9c52727077d34c6f5553c9788bf07032914
-ms.openlocfilehash: 0521f0b443efb761e7d3f63182728dd836dbf8a0
+ms.sourcegitcommit: af7f9a373496eee4df354d5dd9e5a25c51317c43
+ms.openlocfilehash: 0f83735ec42e945c5e0abf8d72b83936e076e60e
 ms.contentlocale: sv-se
-ms.lasthandoff: 01/15/2018
+ms.lasthandoff: 02/27/2018
 
 ---
 
@@ -33,7 +33,9 @@ ms.lasthandoff: 01/15/2018
 
 
 > [!NOTE]
-> Det här ämnet beskriver hur man konfigurerar lagerstyrning för molndistribution. Om du letar efter hur du konfigurerar lagerstyrning för lokal distribution kan du läsa på denna länk om [lokal distribution](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/deployment/warehousing-for-on-premise-deployments).
+
+> Det här ämnet beskriver hur man konfigurerar lagerstyrning för molndistribution. Om du letar efter hur du konfigurerar lagerstyrning för lokal distribution kan du läsa på denna länk om [lokal distribution](../../dev-itpro/deployment/warehousing-for-on-premise-deployments.md).
+
 
 Det här avsnittet beskriver hur du installerar och konfigurerar Microsoft Dynamics 365 for Finance and Operations - Lagerstyrning.
 
@@ -42,9 +44,9 @@ Finance and Operations - Lagerstyrning är ett program som finns att tillgå via
 ## <a name="prerequisites"></a>Förutsättningar
 Programmet är tillgängligt för operativsystemen Android och Windows. Om du vill använda det här programmet måste du ha något av följande operativsystem som stöds installerade på dina enheter. Du måste också ha någon av följande versioner av Finance and Operation. Följ instruktionerna i följande tabell för att utvärdera om din maskin- och programvarumiljö är redo att stödja installationen.
 
-| Plattform                    | version                                                                                                                                                                     |
+| Plattform                    | Version                                                                                                                                                                     |
 |-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Android                     | 4.4, 5.0, 6.0                                                                                                                                                               |
+| Android                     | 4.4, 5.0, 6.0, 7.0, 8.0                                                                                                                                                     |
 | Windows (UWP)               | Windows 10 (all versioner)                                                                                                                                                   |
 | Finance and Operations | Microsoft Dynamics 365 for Operations, version 1611 <br>- eller - <br>Microsoft Dynamics AX version 7.0/7.0.1 och Microsoft Dynamics AX, plattformsuppdatering 2 med snabbkorrigering KB 3210014 |
 
@@ -58,7 +60,7 @@ Programmet är tillgängligt för operativsystemen Android och Windows. Om du vi
 ## <a name="create-a-web-service-application-in-azure-active-directory"></a>Skapa ett webbtjänstprogram i Azure Active Directory
 Om du vill att programmet ska interagera med en viss Finance and Operations-server, måste du registrera ett webbtjänstprogram i en Azure Active-katalog för Finance and Operations-innehavaren. Av säkerhetsskäl rekommenderar vi att du skapar ett webbtjänstprogram för varje enhet som du använder. Gör följande om du vill skapa ett webbtjänstprogram i Azure Active Directory (Azure AD):
 
-1.  Navigera till <https://portal.azure.com> i webbläsaren.
+1.  I en webbläsare går du till <https://portal.azure.com>.
 2.  Ange namn och lösenord för den användare som har tillgång till Azure-abonnemanget.
 3.  Klicka på **Azure Active Directory**.[](./media/WMA-01-active-directory-example.png)[![WMA-01-exempel-aktiv-katalog](./media/WMA-01-active-directory-example.png )](./media/WMA-01-active-directory-example.png) i Azure-portalen.
 4.  Säkerställ att instansen för Active Directory är den som används av Finance and Operations.
@@ -93,7 +95,7 @@ Du måste konfigurera programmet på enheten för att ansluta till Finance and O
     + **Klient-ID för Azure Active-katalog** - Klient-ID erhålls i steg 9 i "Skapa ett webbtjänstprogram i Active Directory". 
     + **Klienthemlighet för Azure Active-katalog** - Klienthemligheten erhålls i steg 11 i "Skapa ett webbtjänstprogram i Active Directory". 
     + **Azure Active-katalogresurs** - Azure AD-katalogresursen beskriver rot-webbadressen (URL) för Finance and Operations. **Obs!** Avsluta inte detta fält med ett snedstreck (/). 
-    + **Azure Active-kataloginnehavare** - Den Azure AD-kataloginnehavare som används med Finance and Operations-servern: https://login.windows.net/your-AD-tenant-ID. Till exempel: https://login.windows.net/contosooperations.onmicrosoft.com.
+    + **Azure Active-kataloginnehavare** - Den Azure AD-kataloginnehavare som används med Finance and Operations-servern: `https://login.windows.net/your-AD-tenant-ID`. Exempel: `https://login.windows.net/contosooperations.onmicrosoft.com.` 
     <br>**Obs!** Avsluta inte detta fält med ett snedstreck (/). 
     + **Företag** - Ange den juridiska person i Finance and Operations som du vill att programmet ansluter till. <br>[![wh-12-inställningar-för-programanslutningar](./media/wh-12-app-connection-settings-169x300.png)](./media/wh-12-app-connection-settings.png)
 4.  Välj knappen **Tillbaka** i programmets övre vänstra hörn. Programmet kommer nu att ansluta till din Finance and Operations-server, och inloggningsskärmen för lagermedarbetaren visas. <br>[![wh-13-inloggningsskärm](./media/wh-13-log-in-screen-180x300.png)](./media/wh-13-log-in-screen.png)
@@ -103,7 +105,7 @@ Om en enhet går förlorad eller drabbas av fel, måste du ta bort åtkomsten ti
 
 1.  I Finance and Operations, navigera till **Systemadministration** &gt; **Inställningar** &gt; **Azure Active Directory-program**.
 2.  Ta bort den rad som motsvarar den enhet för vilken du vill ta bort åtkomsten. Kom ihåg det **klient-ID** som används för den borttagna enheten, du behöver det senare.
-3.  Logga in på Azures portal på <https://portal.azure.com>.
+3.  Logga in på Azure portal på <https://portal.azure.com>.
 4.  Klicka på ikonen **Active Directory** i den vänstra menyn och se till att du befinner dig i rätt katalog.
 5.  I listan klickar du på **App registreringar** och sedan på det program som du vill konfigurera. Sidan **Settings** visas och innehåller konfigurationsinformation.
 6.  Se till att **klient-ID** för programmet är detsamma här som i steg 2 i det här avsnittet.

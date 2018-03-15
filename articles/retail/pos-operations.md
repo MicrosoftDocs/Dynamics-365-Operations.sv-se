@@ -1,5 +1,5 @@
 ---
-title: POS-operationer
+title: POS-operationer, online och offline
 description: "Det här avsnittet innehåller information om kassaoperation i Microsoft Dynamics 365 for Retail. Det anger var i programmet somoperationerna kan anropas och om de är tillgängliga i offlineläge."
 author: jblucher
 manager: AnnBe
@@ -19,14 +19,17 @@ ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 8e294f71355219890ac6f807094a930ac2acc279
-ms.openlocfilehash: 41dc188138436947c4bf7eaf074ef704c201e0cf
+ms.sourcegitcommit: edfed83d4703c081d857faad0771dc1010be41b4
+ms.openlocfilehash: edd6dd23066eca782b8fd510dabab612241e480a
 ms.contentlocale: sv-se
-ms.lasthandoff: 12/18/2017
+ms.lasthandoff: 02/13/2018
 
 ---
 
-# <a name="pos-operations"></a>POS-operationer
+# <a name="pos-operations-online-and-offline"></a>POS-operationer, online och offline
+
+[!include[banner](includes/banner.md)]
+
 De flesta åtgärder som användaren vidtar i kassan anses vara operationer. Operationer konfigureras och hanteras i Microsoft Dynamics 365 for Retail back office. Många operationer kan läggas till i knapparna i kassaknappsatsen. Användarna kan sedan välja knappar för att starta operationer och utföra deras funktioner. Andra åtgärder som ingår i kassahuvudprogrammet och startas från knappar på skärmen eller tillsammans med andra arbetsflöden eller processer.
 
 Tabellen nedan visar detaljerad information om operationer i Retail Modern POS och Cloud POS for Dynamics 365 for Retail. Tabellen aner också var i programmet som operationerna kan anropas och om de är tillgängliga när kassan är i offlineläge.

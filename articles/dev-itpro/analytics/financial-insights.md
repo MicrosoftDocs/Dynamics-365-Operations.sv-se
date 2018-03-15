@@ -3,7 +3,7 @@ title: Ekonomiska insikter
 description: "Ekonomiska insikter använder Microsoft Power BI för att sammanföra bokslut, diagram och ekonomiska nyckeltal (KPI)."
 author: kweekley
 manager: AnnBe
-ms.date: 01/09/2018
+ms.date: 02/28/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: 8075abccdcdde21df967dcc9948a738895f35cef
-ms.openlocfilehash: 3da5344ec6edec0af28aa21d45af962307231e67
+ms.sourcegitcommit: d527df21e791978b41527c01c2e6b68b393861ac
+ms.openlocfilehash: 90dc6214f1eb31440a3ec78a58c6a07394245cd2
 ms.contentlocale: sv-se
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/28/2018
 
 ---
 
@@ -102,10 +102,15 @@ För närvarande kan inte data i inbäddade Power BI-rapporter begränsas till d
 | Visa korsföretag för ekonomiska insikter   | •   I Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition 7.3, är denna behörighet inte tilldelad en roll. • I nästa utgåva kommer behörigheten att tilldelas rollen ekonomichef. | •    Behörigheten ger åtkomst till menyn för arbetsytan Översikt över ekonomichef. •    Normalt används det aktiva företaget som ett filter. Du kan emellertid lägga till alla juridiska personer, oavsett om användaren har åtkomst till de övriga juridiska personerna.             |
 
 
-## <a name="how-financial-statements-work"></a>Hur bokslut fungerar
-Även om **Ekonomiska insikter** innehåller bokslut är det inte en ersättning för ekonomisk rapportering i Finance and Operations. Standardbokslut i **Ekonomiska insikter** är begränsade och innehåller inte alla typer av bokslut. Ekonomiska rapporter är fortfarande huvudverktyget för att utforma, skapa och generera lagstadgade bokslut.
+## <a name="financial-reporting-vs-finanical-insights"></a>Ekonomisk rapportering jämfört med finansiell information
+Även om **ekonomiska insikter** innehåller bokslut ersätter det inte ekonomisk rapportering i Finance and Operations. Standardbokslut i **ekonomiska insikter** är begränsade och innehåller inte alla typer av bokslut. Ekonomiska rapporter är fortfarande huvudverktyget för att utforma, skapa och generera lagstadgade bokslut.
 
-Utöver de visuella elementen från den ursprungliga arbetsytan **Översikt över ekonomichef** är diagram, nya KPI: er och bokslut nu också tillgängliga. Följande bokslut är tillgängliga:
+Jämförelsediagrammet nedan hjälper dig att skilja de två alternativen:
+
+| | **Ekonomisk rapportering**                            | **finansiell information** | | torrsubstanshalt | torrsubstanshalt |---torrsubstanshalt |}] |}] **Redigera standardrapporter** | Ja |}] Nej. **Skapa nya rapporter** | Ja |}] Nej. **Ut rapporter** | Ja |}] Nej. **Exportera till Excel** | Ja |}] Begränsad rådata för export till Excel, inte en formaterad rapport. **Stöder rapportering hierarki/organisationshierarkin** | Ja |}] Nej. **Rapporter med redovisningsjournal data** | Ja Begränsat till en enda leverantör, kund |}] Ja Leverantör, kund, leverantör eller kundgrupper, adresser för leverantörs-/ kundgruppen osv. | | **Rapporteringsvaluta** | Ja Redovisningsvaluta och översätt till rapporteringsvaluta |}] Nej Endast redovisningsvalutan. **Säkerhet** | Ja Följer säkerheten för trädrapportering i Fincance and Operations |}] Begränsad vy Rapporter för alla företag (oavsett säkerhet i Finance and Operations) eller endast aktiva företag. **Stöd olika kontoplaner och räkenskapsår** | Ja |}] Nej. **Rapport på externa data** | Nej |}] Nej. **Stöd konsolideringar** | Ja |}] Limited kan rapportera för flera företag men använder endast redovisningsvaluta |}]
+
+
+Utöver användargränssnittet i den ursprungliga arbetsytan **Översikt för ekonomichef** är diagram, nya KPI: er och bokslut nu också tillgängliga. Följande bokslut är tillgängliga:
 
 •   Råbalans
 

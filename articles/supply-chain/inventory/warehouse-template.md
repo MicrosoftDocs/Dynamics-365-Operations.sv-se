@@ -20,10 +20,10 @@ ms.author: perlynne
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
-ms.openlocfilehash: 87ade03ec2ba78c4d7f5832bfa6dc1b7eabd8d94
+ms.sourcegitcommit: a05fec7b79003d5b98470d85644d70bd1dbac285
+ms.openlocfilehash: 9e0c61505a8af864d7ff38655e7e896c4f6ccb65
 ms.contentlocale: sv-se
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 02/06/2018
 
 ---
 
@@ -93,6 +93,11 @@ Du kan hämta en zip-fil för datapaketet. Den här filen innehåller alla data 
 5. Välj **Importera**. I vyn **utökat** kan du använda alternativet **Filter** för att snabbt få en översikt över problem som kan uppstå under importen.
 
 Loggen **Visa körning** ger detaljerad information om varje dataenhet som importeras. Du kan använda mellanlagringsdatavyn för att snabbt komma till måldata. På så sätt visas hur de importerade data ser ut på tillhörande sidor i programmet. När du använder standarddatamallar fungerar importsekvensen för varje datatabell på fördefinierade sätt, för att garantera att alla beroende data importeras först. Om anpassade datatabeller ingår i projektet, måste du kontrollera att du angett rätt sekvens. Mer information finns i [Konfigurationsdatamallar](../../dev-itpro/data-entities/configuration-data-templates.md).
+
+Om du vill veta mer om hur du använder lagermallar för att kopiera konfigurationen för ett lagerställe från ett företag till ett nytt företag inom samma instans kan du titta på den här 3-minuters videon på YouTube.
+
+> [!Video https://www.youtube.com/embed/K2WIfFlqJYs]
+
 
 ## <a name="related-topic"></a>Relaterat ämne
 

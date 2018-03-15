@@ -8,6 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: CustPaymMode, CustBankAccounts, VendPaymMode, VendBankAccounts
 audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
@@ -16,16 +17,17 @@ ms.author: v-lenest
 ms.search.validFrom: 2017-06-01
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 599440449f1e8c8dcc3762ce9f6da7a37beb358f
+ms.sourcegitcommit: 07d09512ef612b41bf527b74496fa440f23851fc
+ms.openlocfilehash: 1492e4d8220a3d515145d97ef8dad048727d97c8
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 02/14/2018
 
 ---
 
 # <a name="import-iso20022-files"></a>Importera ISO20022-filer
 
-## <a name="overview"></a>Översikt
+[!include[banner](../includes/banner.md)]
+
 Du kan importera betalningsfiler som har följande format:
 
  - **ISO20022 camt.054 kreditföreslag** – importera inkommande betalningar från en fil i det här formatet till kundbetalningsjournalen.
@@ -40,7 +42,7 @@ Du måste slutföra följande förutsättningar för att importera bankmeddeland
 4. På sidan **Bbankkonton** skapar du ett bankkonto för juridisk person genom att ange följande information: IBAN eller bankkontonummer och SWIFT-kod eller organisationsnummer, valuta och adress.
 
     > [!NOTE]
-    > Om du planerar att använda avancerad bankavstämning, på snabbfliken **avstämning** ange alternativet **avancerad bankavstämning** till **Ja**. Om du planerar att synkronisera importerade ej bokförda betalningar, ange **Använd bankutdrag som en bekräftelse på elektroniska betalningar** till **Ja**.
+        > Om du planerar att använda avancerad bankavstämning, på snabbfliken **avstämning** ange alternativet **avancerad bankavstämning** till **Ja**. Om du planerar att synkronisera importerade ej bokförda betalningar, ange **Använd bankutdrag som en bekräftelse på elektroniska betalningar** till **Ja**.
 
 5. Valfritt: På sdian **Transaktionskodsmappning** anger du mappningen mellan banktransaktionskoder i filen och banktransaktionstyper.
 6. Om filen innehåller transaktionskostnader som du vill bokföra tillsammans med inkommande betalning, skapa en betalningsavgift på sidan **Kundbetalningsavgift**. Klicka sedan på sidan **betalningsmetoder**, koppla betalningsavgiften till bankkontot i betalningsavgiftsinställningarna.
@@ -53,9 +55,7 @@ Du måste slutföra följande förutsättningar för att importera bankmeddeland
 ## <a name="import-the-camt054-credit-advice-file-into-the-customer-payment-journal"></a>Importera filen camt.054 kreditavi till kundbetalningsjournalen
 1. På sidan **Rader i kundbetalningsjournal** klickar du på **funktioner** > **Importera betalningar**.
 2. Välj betalningsmetod med de obligatoriska inställningarna för ISO20022 camt.054-format.
-3. Ange nödvändiga parametrar och sökvägen till filen och klicka sedan på **OK**.
-
-Filen har importerats.
+3. Ange nödvändiga parametrar och sökvägen till filen och klicka sedan på **OK**. Filen har importerats.
 
 ## <a name="prerequisites-for-importing-files-in-the-pain002-status-return-and-camt054-debit-advice-formats-into-the-ap-payment-transfer-journal"></a>Förutsättningar för importering av fil i pain.002 statusretur och camt.054 debetavi till AP-betalningsöverföringsjournaler.
 Du måste utföra följande förutsättningar för att importera bankmeddelanden i följande ISO20022-format till sidan **leverantörsbetalning** sida: pain.002.001.003 status returmeddelanden och camt.054.001.002 debetavi.
