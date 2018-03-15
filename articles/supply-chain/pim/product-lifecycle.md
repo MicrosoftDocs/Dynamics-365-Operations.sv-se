@@ -20,10 +20,10 @@ ms.author: conradv
 ms.dyn365.ops.version: 7.3
 ms.search.validFrom: 2017-12-31
 ms.translationtype: HT
-ms.sourcegitcommit: 33130a4061f22335aeeffa69c478b693604393a9
-ms.openlocfilehash: a57f306ba02c5758c39c4bd29d9a4fa0d7efbcd3
+ms.sourcegitcommit: 236b0253f20330f09f07dbcfa19257350fb5d37f
+ms.openlocfilehash: 8ef72de3f226a3270ac0145a20e4da7dfe64f4ba
 ms.contentlocale: sv-se
-ms.lasthandoff: 12/20/2017
+ms.lasthandoff: 02/08/2018
 
 ---
 
@@ -109,10 +109,10 @@ Använd följande kriterier för att välja och uppdatera frisläppta produkter 
 
 ## <a name="related-topics"></a>Relaterade ämnen
 
--  Skapa ett nytt produktlivscykeltillstånd
--  Skapa ett nytt standardproduktlivscykeltillstånd
--  Associera ett produktlivscykeltillstånd till en frisläppt produktmall
--  Associera ett produktlivscykeltillstånd till en frisläppt produkt
--  Söka efter föråldrade produktvarianter och tilldela ett produktlivscykeltillstånd
--  Skapa ett produktlivscykeltillstånd för att utesluta produkter från huvudplanering
+-  [Skapa ett nytt produktlivscykeltillstånd (Uppgiftsguide)](tasks/new-product-lifecycle-state.md)
+-  [Skapa ett standardiserat produktlivscykeltillstånd (Uppgiftsguide)](tasks/default-product-lifecycle-state.md)
+-  [Associera ett produktlivscykeltillstånd till en frisläppt produktmall (Uppgiftsguide)](tasks/product-lifecycle-state-released-product-master.md)
+-  [Associera ett produktlivscykeltillstånd till en frisläppt produkt (Uppgiftsguide)](tasks/product-lifecycle-state-released-product.md)
+-  [Sök efter inaktuella produktvarianter och tilldela ett produktlivscykeltillstånd (Uppgiftsguide)](tasks/obsolete-product-variants.md)
+-  [Skapa ett produktlivscykeltillstånd för att utesluta produkter från huvudplanering (Uppgiftsguide)](tasks/exclude-products-master-planning.md)
 

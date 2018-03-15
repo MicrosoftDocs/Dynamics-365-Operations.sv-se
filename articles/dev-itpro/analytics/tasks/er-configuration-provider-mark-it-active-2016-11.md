@@ -16,10 +16,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 809a1466b0f4674f503bc654175d8f94b37a6508
-ms.openlocfilehash: 2dfa04f280249884af2a237807fb283059444a6c
+ms.sourcegitcommit: 95d5bf26c22238753586cf4a7aaf5c26f061a705
+ms.openlocfilehash: 018aee917c13f576759ebd812d31cbc9d83e2d1a
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 02/23/2018
 
 ---
 # <a name="create-a-configuration-provider-and-mark-it-as-active-for-electronic-reporting-er"></a>Skapa en konfigurationsleverantör och markera den som aktiv för elektronisk rapportering (ER)
@@ -33,11 +33,10 @@ I följande steg förklaras hur en användare som är tilldelad rollen som syste
 1. Gå till Organisationsadministration > Arbetsytor > Elektronisk rapportering.
 2. Klicka på konfigurationsleverantörer.
 3. Klicka på Ny.
-    * En leverantörspost har ett unikt namn och en unik webbadress. Granska innehållet på den här sidan och hoppa över den här proceduren om det redan finns en post för Litware, Inc (http://www.litware.com).  
+    * En leverantörspost har ett unikt namn och en unik webbadress. Granska innehållet på den här sidan och hoppa över den här proceduren om en post för Litware, Inc (`http://www.litware.com`) redan finns.  
 4. Skriv "Litware, Inc." i fältet Namn.
     * Litware Inc.  
-5. Skriv "http://www.litware.com" i fältet Internetadress.
-    * http://www.litware.com  
+5. Skriv in `http://www.litware.com` i fältet för Internetadress.
 6. Klicka på Spara.
 7. Stäng sidan.
 

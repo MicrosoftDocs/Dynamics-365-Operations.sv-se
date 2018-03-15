@@ -3,7 +3,7 @@ title: "Jämförelse mellan molnet och lokala funktioner"
 description: "Detta avsnitt anger vilka funktioner stöds i molnet och på plats."
 author: robinarh
 manager: AnnBe
-ms.date: 11/29/2017
+ms.date: 03/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: robinr
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
 ms.translationtype: HT
-ms.sourcegitcommit: cfd3b475b113fdab4ceeb3e636fea6c9134ab982
-ms.openlocfilehash: 32cc0c01a096cd678c605f57e0cccfe42d0479aa
+ms.sourcegitcommit: 4ffdc5dd54f8a069676f62c8b43f2892764dc046
+ms.openlocfilehash: 88640007ec54ed0c566e163e3dd701faeebc50ce
 ms.contentlocale: sv-se
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 03/05/2018
 
 ---
 
@@ -49,8 +49,9 @@ Följande tabell anger produktområdena. Lokalt stöd och molnstöd anges för f
 | | Innehållspaket för kostnadshantering för Power BI | Ja | Nr |
 | Datahantering och integration| | Ja | Ja |
 | | Konfigurationsdrivet tillägg| Ja | Nr |
-| | Exportera data till ditt eget datalager| Ja | Nr |
+| | Exportera data till ditt eget datalager| Ja | Ja |
 | | Aktivera export av stegvisa uppdateringar till en dataentitet | Ja | Nr |
+| | Återkommande integrationer                 |Ja | Nr|
 | Dokumenthantering| | Ja| Ja |
 | Ekonomisk styrning|  | Ja | Ja |
 | Hjälp| | Ja | Nr |

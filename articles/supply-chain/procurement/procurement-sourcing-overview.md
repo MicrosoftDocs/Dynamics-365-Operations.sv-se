@@ -19,10 +19,10 @@ ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 0692518afc5c8b385773dad3c44dc4e3c978362b
+ms.sourcegitcommit: ba426692e2e404ab75e5730b8205115fc59e402f
+ms.openlocfilehash: 91881ca3999b4937d20161b8beab8e80c2675eb6
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 02/08/2018
 
 ---
 
@@ -62,7 +62,7 @@ När du skapar en inköpsorder fylls många av fälten i med förvalda värden f
 
 ### <a name="prices-and-discounts"></a>Priser och rabatter
 
-Priser och rabatter innehåller information om priser, rabatter och avdrag som de erbjuder. Priser och rabatter kan representeras som *handels**avtal*. Handelsavtal representera säljaren prislistor med priser eller rabatter, och har en viss uppsättning datum som avtalet är giltigt. Priser och rabatter kan förhandlas och representeras genom *köpeavtal* med villkor som att köpa vissa kvantiteter eller belopp som en förutsättning för förhandling. *Rabatt avtal* kan skapas med leverantörer där upphandling av specifika produkter eller grupper av produkter kan utlösa en rabatt från leverantören beroende på köpeskillingen eller volym.
+Priser och rabatter innehåller information om priser, rabatter och avdrag som de erbjuder. Priser och rabatter kan representeras som *handels* *avtal*. Handelsavtal representera säljaren prislistor med priser eller rabatter, och har en viss uppsättning datum som avtalet är giltigt. Priser och rabatter kan förhandlas och representeras genom *köpeavtal* med villkor som att köpa vissa kvantiteter eller belopp som en förutsättning för förhandling. *Rabatt avtal* kan skapas med leverantörer där upphandling av specifika produkter eller grupper av produkter kan utlösa en rabatt från leverantören beroende på köpeskillingen eller volym.
 
 ### <a name="delivery-options"></a>Leveransalternativ
 

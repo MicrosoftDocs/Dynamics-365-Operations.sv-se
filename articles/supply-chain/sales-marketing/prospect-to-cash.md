@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: 602873e8af976c57f27ce53b76391516351755e3
-ms.openlocfilehash: 29d33d3ecf97c15fed0247d172ff6fb3bbdaa018
+ms.sourcegitcommit: 95d5bf26c22238753586cf4a7aaf5c26f061a705
+ms.openlocfilehash: 62f328c5a6bf5343c97de0b7d907bbcfe2fcde4d
 ms.contentlocale: sv-se
-ms.lasthandoff: 01/25/2018
+ms.lasthandoff: 02/23/2018
 
 ---
 
@@ -46,15 +46,6 @@ I den aktuella versionen innehåller lösningen Potentiell kund till pengar föl
 - [Synkronisera försäljningsorder direkt från Finance and Operations till Sales](sales-order-template-mapping-direct.md)
 - [Synkronisera försäljningsorder direkt mellan Sales och Finance and Operations (mall väntar på release)](sales-order-template-mapping-direct-two-ways.md)
 - [Synkronisera försäljningsfakturor direkt från Finance and Operations till Sales](sales-invoice-template-mapping-direct.md)
-
-I tidigare versioner innehåller lösningen Potentiell kund till pengar följande typer av icke-direkt synkronisering:
-
-- [Underhåll konton i Sales och synkronisera dem med Finance and Operations](accounts-template-mapping.md)
-- [Underhåll kontakter i Sales och synkronisera dem till Finance and Operations](contacts-template-mapping.md)
-- [Underhåll produkter i Finance and Operations och synkronisera dem med Sales](products-template-mapping.md)
-- [Skapa försäljningskvoter i Sales och synkronisera dem med Finance and Operations](sales-quotation-template-mapping.md)
-- [Skapa försäljningsorder i Finance and Operations och synkronisera dem med Sales](sales-order-template-mapping.md)
-- [Skapa försäljningsfakturor i Finance and Operations och synkronisera dem med Sales](sales-invoice-template-mapping.md)
 
 ## <a name="system-requirements-for-finance-and-operations"></a>Systemkrav för Finance and Operations
 
@@ -87,7 +78,7 @@ Potentiell kund till kontanter-integrering stöds på följande versioner:
     - **[KB4033093](https://fix.lcs.dynamics.com/Issue/Resolved?kb=4033093&bugId=3824604&qc=bd7e15e1fb56066b3a82ce48b691cf1ffbc934a7473fa888545b2211a8d416c5)** - Stöd för Potentiell kund till pengar-integrering via datatabeller krävs.
     
     > [!NOTE]
-    > Du måste initiera följande batchjobb från formuläret **SalesPopulateProspectToCash** när du har installerat snabbkorrigeringarna. Detta formulär är dolt eftersom du bara behöver det en gång. För att öppna formuläret loggar du in i miljön och lägger till följande webbadress i din webbläsaradress: &mi=action:SalesPopulateProspectToCash, for example, https://ax123456.cloud.test.dynamics.com/?cmp=USMF&mi=action:SalesPopulateProspectToCash. När formuläret öppnas klickar du på OK. Då fylls ett nytt fält för **LineCreationSequnceNumber** i tabellerna **SalesLine**, **SalesQuotationLine** och **CustInvoiceTrans** med unika värden och produktraden uppdateras. Detta är nödvändigt för att integrationen Potentiell kund till kontanter ska fungera.
+    > Du måste initiera följande batchjobb från formuläret **SalesPopulateProspectToCash** när du har installerat snabbkorrigeringarna. Detta formulär är dolt eftersom du bara behöver det en gång. För att komma åt formuläret loggar du in och lägger till följande i din webbläsaradress : & mi = åtgärd: SalesPopulateProspectToCash, t.ex `https://ax123456.cloud.test.dynamics.com/?cmp=USMF&mi=action:SalesPopulateProspectToCash`. När formuläret öppnas klickar du på OK. Då fylls ett nytt fält för **LineCreationSequnceNumber** i tabellerna **SalesLine**, **SalesQuotationLine** och **CustInvoiceTrans** med unika värden och produktraden uppdateras. Detta är nödvändigt för att integrationen Potentiell kund till kontanter ska fungera.
 
 
 ## <a name="system-requirements-for-sales"></a>Systemkrav för Sales
@@ -96,12 +87,6 @@ Om du vill använda lösningen Potentiell kund till kontanter måste du installe
 
 - Dynamics 365 for Sales, version 1612 (8.2.1.207) (DB 8.2.1.207) online
 - Lösningen Potentiell kund till pengar för Dynamics 365 for Sales, version 1.15.0.0 (v15) 
-
-   > [!NOTE]
-   >
-   > Mallar med version 1.0.0.0 och 1.0.0.1 stöds för lösningen Potentiell kund till pengar för Dynamics 365 for Sales, version 1.14.1.0
-   >
-   > Mallar med version 2.0.0.0 och 2.1.0.0 stöds för lösningen Potentiell kund till pengar för Dynamics 365 for Sales, version 1.15.0.0
 
 ### <a name="install-the-prospect-to-cash-solution-for-sales"></a>Installera Potentiell kund till kontanter-lösningen för Sales
 
