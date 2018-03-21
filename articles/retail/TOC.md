@@ -39,8 +39,9 @@
 # Inställning och hantering av kanaler
 ## [Initiera startdata i en Retail-miljö](enable-configure-retail-functionality.md)
 ## [Definiera butikskanaler](define-maintain-retail-channels.md)
+## [Sortimenthantering](assortments.md)
 ## [Översikt över onlinebutik](online-stores.md)
-## [Konfigurera och installera en maskinvarustation för Retail](retail-hardware-station-configuration-installation.md)
+## [Konfigurera och installera Retail hardware station](retail-hardware-station-configuration-installation.md)
 ## [Tidrapportering för Retail](retail-time-attendance.md)
 
 # Modern kassa (MPOS) och Cloud POS
@@ -54,8 +55,9 @@
 ### [Definiera och underhåll kanalklienter, kassor och maskinvarustationer](define-maintain-channel-clients-registers-hw-stations.md)
 ## Skärmlayout
 ### [Konfigurera skärmlayouter för POS](pos-screen-layouts.md)
-### [Installera layoutdesignern Retail POS](install-pos-layout-designer.md)
-### [POS-program och språkinställningar](pos-application-user-language-settings.md)
+### [Installera layoutdesignern för Retail POS](install-pos-layout-designer.md)
+### [Välj meddelandeinställningar](Notifications-POS.md)
+### [Kassaprogram och språkinställningar](pos-application-user-language-settings.md)
 ### [Ställa in bilder för MPOS](set-up-manage-images-retail-mpos.md)
 ## [Översikt över infokoder](info-codes-retail.md) 
 ## Produktrekommendationer
@@ -99,7 +101,8 @@
 
 # Produkter och marknadsföring
 ## [Översikt över produktinformation](../supply-chain/pim/product-information.md)
-## [Retail-hierarkier](retail-hierarchies.md)
+## [Butik-hierarkier](retail-hierarchies.md)
+## [Översikt över attribut och attributgrupper](attribute-attributegroups-lifecycle.md)
 ## [Skapa och hantera attribut](create-manage-attributes.md)
 ## [Ställa in butiksprodukter](set-up-retail-products.md)
 ## [Produktdimensioner](../supply-chain/pim/product-dimensions.md)
@@ -130,6 +133,16 @@
 # Personal
 ## [Organisera arbetsstyrkan med avdelningar, jobb och befattningar](../talent/departments-jobs-positions.md)
 ## [Installera komponenter för ett jobb](../talent/create-job.md)
+
+# Lokaliserings- och regelfunktioner
+## Indien
+### [GST-integration för kassaapparater för Indien](localizations/apac-ind-cash-registers.md)
+### [Riktlinjer för distribution av kassaapparater för Indien](localizations/apac-ind-loc-deployment-guidelines.md)
+## Norge
+### [Kassaapparater för Norge](localizations/emea-nor-cash-registers.md)
+### [Riktlinjer för distribution av kassaapparater för Norge](localizations/emea-nor-loc-deployment-guidelines.md)
+## Sverige
+### [Kassaapparater för Sverige](localizations/emea-swe-cash-registers.md)
 
 # Retail-uppgifter
 ## [Skapa en produkt](../supply-chain/pim/tasks/create-product.md)
@@ -249,10 +262,6 @@
 ## [Retail SDK](dev-itpro/retail-sdk/retail-sdk-overview.md)
 ### [Integrera Retail SDK med kontinuerligt byggsystem](dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md)
 ### [Exempel på utbyggbarhet: Retail SDK](dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md)
-### [Kassaapparater för Sverige](localizations/emea-swe-cash-registers.md)
-### [Exempel för Retail POS-integration med styrenheter för Sverige](dev-itpro/retail-sdk/retail-sdk-control-unit-sample.md)
-### [Kassaapparater för Norge](localizations/emea-nor-cash-registers.md)
-### [Riktlinjer för distribution av kassaapparater för Norge](localizations/emea-nor-loc-deployment-guidelines.md)
 ### [Retail SDK, förpackning](dev-itpro/retail-sdk/retail-sdk-packaging.md)
 ### [Retail SDK-exempel ](dev-itpro/retail-sdk/retail-sdk-samples.md)
 ### [Tillägg för kanaldatabas](dev-itpro/channel-db-extensions.md)
