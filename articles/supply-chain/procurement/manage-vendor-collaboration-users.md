@@ -19,10 +19,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 6e83f46df30d13a8bffa5c2b0bd05f456b67e6ec
+ms.sourcegitcommit: 80374d6dce8aa5d5f2e5afc0656b42236ac974ec
+ms.openlocfilehash: 036e8079bd976087514a074529dd4593c5a2b0a5
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/13/2018
 
 ---
 
@@ -62,12 +62,12 @@ När en begäran skickas in läggs den till i listan **Användarbegäran från l
 Innan du kan begära att en ny användare reserveras, måste den personen ställas in som en kontakt för en eller flera leverantörskonton. För att skapa en begäran för en ny leverantörssamarbetesanvändare:
 
 1.  På sidan **Alla kontakter** klickar du på **Reservera leverantörsanvändare**.
-2.  Ange en e-postadress för användare. Denna adress används av användaren för att logga in på Finance and Operations. Om e-postadressen tillhör en domän som registrerats som en innehavare i Microsoft Azure, så måste e-postadressen vara ett befintligt Azure Active Directory (ADD)-konto för att reservationsprocessen ska slutföras. Om e-postadressen inte tillhör någon domän som har registrerats för Microsoft Azure, kommer ett ADD-konto att skapas som ett led i reserveringsprocessen, och den nya användaren kommer att få en inbjudan via mail. E-postadresser för konsumenter med domäner som exempelvis @hotmail.com, @gmail.com och @comcast.net kan inte användas för att registrera en Finance and Operations-användare.
+2.  Ange en e-postadress för användare. Denna adress används av användaren för att logga in på Finance and Operations. Om e-postadressen tillhör en domän som registrerats som en innehavare i Microsoft Azure, så måste e-postadressen vara ett befintligt Azure Active Directory (AAD)-konto för att reservationsprocessen ska slutföras. Om e-postadressen inte tillhör någon domän som har registrerats för Microsoft Azure, kommer ett ADD-konto att skapas som ett led i reserveringsprocessen, och den nya användaren kommer att få en inbjudan via mail. E-postadresser för konsumenter med domäner som exempelvis @hotmail.com, @gmail.com och @comcast.net kan inte användas för att registrera en Finance and Operations-användare.
 3.  Ange alternativet **Åtkomst till leverantörssamarbete tillåten** som **Ja** för alla juridiska personer som användaren behöver åtkomst till.
 4.  I avsnittet **Tilldela användarroller** väljer du kryssrutan **Tilldela** för de säkerhetsroller som den nya användaren ska få.
 5.  Klicka på **Skicka**.
 
-När begäran om leverantörsanvändare skickas in, anges fältet **Åtkomst för leverantörssamarbete medges** som **Ja** för valt leverantörskonto, och ett nytt arbetsflöde för användarbegäran startas. Som en del av arbetsflödet skapas en ny användare i Finance and Operations, och säkerhetsroller tilldelas. Dessutom aktiveras en Azure B2B-tjänst som initierar en interaktion med Azure-portalen samt associerar ett nytt eller befintligt AAD-konto med Finance and Operations-användarkontot.
+När begäran om leverantörsanvändare skickas in, anges fältet **Åtkomst för leverantörssamarbete medges** som **Ja** för valt leverantörskonto, och ett nytt arbetsflöde för användarbegäran startas. Som en del av arbetsflödet skapas en ny användare i Finance and Operations, och säkerhetsroller tilldelas. Dessutom aktiveras en Azure B2B-tjänst som initierar en interaktion med Azure-portalen samt associerar ett nytt eller befintligt AAD-konto med Finance and Operations-användarkontot. Mer information finns i [vad är Azure AD B2B-samarbete?](https://docs.microsoft.com/en-us/azure/active-directory/active-directory-b2b-what-is-azure-ad-b2b).
 
 ### <a name="inactivate-a-user"></a>Inaktivera en användare
 

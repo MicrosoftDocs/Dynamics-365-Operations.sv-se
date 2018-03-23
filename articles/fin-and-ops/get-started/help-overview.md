@@ -19,10 +19,10 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
-ms.openlocfilehash: 221ce80cb7520f372f38859aa392b1d559448c81
+ms.sourcegitcommit: 7be3e9970e2599c159e7c9d414b54876d0116350
+ms.openlocfilehash: 9c68cd0e1c214e22b8831e4f4a0c5d545387f982
 ms.contentlocale: sv-se
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 03/09/2018
 
 ---
 
@@ -52,7 +52,7 @@ Du får åtkomst till både hjälp och uppgiftsguider från hjälpfönstret oavs
 Det här avsnittet beskriver hjälpsystemet och förklarar hur du kan skapa anpassad dokumentation och anpassade utbildningsresurser för din organisation.
 
 > [!IMPORTANT]
-> Fliken **Uppgiftsguider** finns för närvarande inte i Microsoft Dynamics 365 for Talent eller Microsoft Dynamics 365 for Retail. Vi arbetar för närvarande med att aktivera den här funktionen i framtida versioner. Uppgiftsguiderna i Komma igång i Talent täcker fortsatt basfunktionerna. Procedurhjälp finns även att få via webbplatsen docs.microsoft.com site ([docs.microsoft.com/dynamics365/unified-operations](../../index.md) för såväl Retail som Talent.
+> Fliken **Uppgiftsguider** finns för närvarande inte i Microsoft Dynamics 365 for Talent eller Microsoft Dynamics 365 for Retail. Vi arbetar för närvarande med att aktivera den här funktionen i framtida versioner. Uppgiftsguiderna i Komma igång i Talent täcker fortsatt basfunktionerna. Procedurhjälp finns även att få via webbplatsen docs.microsoft.com site ([docs.microsoft.com/dynamics365/unified-operations](../../index.md)) för såväl Retail som Talent.
 
 ## <a name="help-on-docsmicrosoftcom"></a>Hjälp om docs.microsoft.com
 
@@ -115,7 +115,7 @@ Mer information finns i vår deltagarguide: https://github.com/MicrosoftDocs/dyn
 
 > [!NOTE]
 > Vi kommer endast godkänner bidrag till våra engelska databaser just nu.  
-> Vi accepterar inte att problem rapporteras via GitHub--du måste använda en pull-begäran för innehåll sförslag. Produkt- och funktionsfeedback bör hanteras via idéportalen Dynamics 365: https://ideas.dynamics.com/ideas/. 
+> Vi accepterar inte att problem rapporteras via GitHub--du måste använda en pull-begäran för innehåll sförslag. Produkt- och funktionsfeedback bör hanteras via idéportalen Dynamics 365: https://experience.dynamics.com/ideas/. 
 
 
 ## <a name="task-guides"></a>Uppgiftsguider

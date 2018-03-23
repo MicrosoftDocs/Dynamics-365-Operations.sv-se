@@ -19,10 +19,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: a20bb97e451ac59ba23c7f767b5feb336278dcd1
+ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
+ms.openlocfilehash: 2c37f0253454a23d90904dd6b000b955146ad121
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/08/2018
 
 ---
 
@@ -71,15 +71,15 @@ Nedan hittar du en beskrivning av de etiketter som ingår i mallen:
 
 | Fält | beskrivning | 
 |---------|---------|
-|< Rubrik >< Från >< Autentiseringdomän = ”” >|Domänen för köparens företag.|
-|< Huvud >< Från >< Autentiseringsuppgifter >< Identitet >< /Identitet > | Identiteten för köparens företag.|
-|< Rubrik >< Till >< Autentiseringdomän = ”” > | Domänen för leverantören företag.|
-|< Huvud >< Till >< Autentiseringsuppgifter >< Identitet >< /Identitet > | Identiteten för leverantörens företag.|
-|< Rubrik >< Avsändare >< Autentiseringdomän = ”” > | Domänen för köparens företag.|
-|< Huvud >< Avsändare >< Autentiseringsuppgifter >< Identitet >< /Identitet > | Identiteten för köparens företag.|
-|< Rubrik >< Avsändare > < Autentiseringsuppgifter >< SharedSecret >< /SharedSecret >|Den delade hemligheten för köparens företag.|
-|< Begära deploymentMode = ”” >|Distributionstest eller -produktion.|
-|< Begäran >< PunchOutSetupRequest >< SupplierSetup >< URL >< /URL>|URL för leverantörens PunchOut-slutpunkt.|
+|< Header >< From >< Credential domain=”” >|Domänen för köparens företag.|
+|< Header >< From >< Credential>< Identity >< /Identity > | Identiteten för köparens företag.|
+|< Header >< To >< Credential domain=”” > | Domänen för leverantören företag.|
+|< Header >< To >< Credential>< Identity >< /Identity> | Identiteten för leverantörens företag.|
+|< Header >< Sender >< Credential domain=”” > | Domänen för köparens företag.|
+|< Header >< Sender >< Credential >< Identity >< /Identity> | Identiteten för köparens företag.|
+|< Header >< Sender >< Credential >< SharedSecret >< /SharedSecret >|Den delade hemligheten för köparens företag.|
+|< Request deploymentMode=”” >|Distributionstest eller -produktion.|
+|< Request >< PunchOutSetupRequest >< SupplierSetup >< URL >< /URL>|URL för leverantörens PunchOut-slutpunkt.|
 
 ### <a name="extrinsic-elements"></a>Extrinsic-element
 
@@ -94,13 +94,13 @@ Det retroaktiva meddelandet är det meddelande som tas emot från leverantören 
 |------------------------------|----------------------------------------------------------|
 |< ItemIn quantity=”” > |Kvantitet|
 |< ItemIn>< ItemID >< SupplierPartID >< /SupplierPartID >|Externt artikel-ID|
-|< ItemDetail >< Enhetspris >< Valuta = ”” >| Valuta|
+|< ItemDetail>< UnitPrice >< Money currency=”” >| Valuta|
 |< ItemDetail >< UnitPrice >< Valuta >< /Valuta >| Pris per enhet|
-|< ItemDetail >< Beskrivning ShortName=”” >|Produktnamn|
-|< ItemDetail >< Beskrivning >< /Beskrivning >|Ingår i artikelbeskrivningen: Produktnamn om ShortName inte har angetts.|
+|< ItemDetail >< Description ShortName=”” >|Produktnamn|
+|< ItemDetail >< Description >< /Description >|Ingår i artikelbeskrivningen: Produktnamn om ShortName inte har angetts.|
 |< ItemDetail >< UnitOfMeasure >< /UnitOfMeasure >|Enhet|
-|< ItemDetail >< Klassificering >< /Klassificering >|Ingår i artikebeskrivningen|
-|< ItemDetail >< Klassificeringsdomän = ”” >|Ingår i artikebeskrivningen|
+|< ItemDetail >< Classification >< /Classification >|Ingår i artikebeskrivningen|
+|< ItemDetail >< Classification domain=”” >|Ingår i artikebeskrivningen|
 
 ## <a name="delete-an-external-catalog"></a>Ta bort en extern katalog
 Ta bort en extern katalog med åtgärden Ta bort på sidan.

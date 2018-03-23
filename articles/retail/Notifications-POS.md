@@ -1,9 +1,9 @@
 ---
-title: Visa ordermeddelanden i kassan
-description: "Det här avsnittet beskriver hur du aktiverar ordermeddelanden i kassan och ramverket för meddelanden som kan utökas till att omfatta andra åtgärder."
+title: "Visa ordermeddelanden för kassan"
+description: "Det här avsnittet beskriver hur du aktiverar ordermeddelanden i kassan och ramverket för meddelanden. Så småningom ska utvecklare kunna utöka dessa funktioner till andra åtgärder utöver orderuppföljningsåtgärder."
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 10/30/2017
+ms.date: 03/13/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -18,49 +18,58 @@ ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2017-10-30
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: a1206aea3f78246951581c1dc6338e39a0942ea2
+ms.sourcegitcommit: 0d409b3b7f19ca31d9c720bca191f1ddba81caa3
+ms.openlocfilehash: a55af4c26d74cc392d3c53aacb66e0a8bc97abf2
 ms.contentlocale: sv-se
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 03/13/2018
 
 ---
 
-# <a name="display-notifications-in-point-of-sale"></a>Visa meddelanden i kassan
+# <a name="show-order-notifications-in-the-point-of-sale"></a>Visa ordermeddelanden för kassan
 
 [!include[banner](includes/banner.md)]
 
-I dagens moderna butiksmiljö tilldelas butikens personal olika uppgifter, till exempel att hjälpa kunder, registrera transaktioner, lagerinventeringar och ta emot order i butiken. Kassaklienten gör det möjligt för butikens personal att utföra dessa uppgifter och mycket mer, allt i ett enda program. Med olika aktiviteter som ska utföras under en dag kan personalen behöva meddelas när något kräver deras uppmärksamhet. Ramverket för meddelanden i kassan löser detta problem genom att låta återförsäljarna konfigurera rollbaserade meddelanden. Med Dynamics 365 for Retail med programuppdatering 5, kan dessa meddelanden bara konfigureras för kassaåtgärder.
+I dagens moderna butiksmiljö tilldelas butikens personal olika uppgifter, till exempel att hjälpa kunder, registrera transaktioner, lagerinventeringar och ta emot order i butiken. Kassaklienten ger en enda applikation där medarbetare kan utföra alla dessa uppgifter och många andra. Eftersom olika aktiviteter måste utföras under dagen kan personalen behöva meddelas när något kräver deras uppmärksamhet. Ramverket för meddelanden i kassan hjälper till genom att låta återförsäljarna konfigurera rollbaserade meddelanden. I Microsoft Dynamics 365 for Retail med programuppdatering 5, kan dessa meddelanden bara konfigureras för kassaåtgärder.
 
-För närvarande ger systemet möjligheten att visa meddelanden för utförande av orderuppfyllelse, men ramverket är utformat att kunna utökas så att utvecklare i framtiden kan skriva en meddelandehanterare för någon åtgärd och visa meddelanden i kassan.  
+Systemet kan för närvarande endast visa meddelanden för orderuppföljningsåtgärder. Men eftersom ramverket är utformat till att vara utbyggbart kommer utvecklare så småningom kunna skriva en meddelandehanterare för alla åtgärder och visa meddelanden för den åtgärden i kassan.
 
 ## <a name="enable-notifications-for-order-fulfillment-operations"></a>Aktivera meddelanden för utförande av orderuppfyllelse
 
 Om du vill aktivera meddelanden för utförande av orderuppfyllelse, se följande steg:
 
- - Gå till sidan **Åtgärder** (**Butik** > **Kanalinställningar** > **Kassainställningar** > **Kassa** > **Åtgärder**).
- - Sök efter utförande av orderuppfyllelse och markera kryssrutan **Aktivera meddelanden** för åtgärden. Detta indikerar att ramverket för meddelanden lyssnar på hanteraren för utförande av orderuppfyllelse. Om hanteraren är implementerad visas meddelanden i kassan, annars visas inte meddelanden för den här åtgärden.
-- Gå till kassabehörigheterna som är kopplade till personalen under snabbfliken **meddelanden**, lägg till utförande av orderuppfyllelse med ”visningsordningen” 1. Om det finns fler än ett meddelande konfigurerats, används visningsordningen för att ordna meddelandet uppifrån och ned där 1 är högst upp. Endast dessa åtgärder kan läggas till för vilka kryssrutan **Aktivera meddelanden** har markerats. Dessutom visas meddelanden endast för de operationer som har lagts till här och enbart till operationer som har lagt till motsvarande kassabehörigheter. 
+1. Navigera till **Butik** &gt; **Kanalinställningar** &gt; **Kassainställningar** &gt; **Kassa** &gt; **Åtgärder**.
+2. Sök efter åtgärden **Orderuppfyllelse** och markera kryssrutan **Aktivera meddelanden** för att ange att ramverket för meddelanden ska lyssna på hanteraren för den här åtgärden. Om hanteraren implementeras visas meddelanden för den här åtgärden i kassan.
+3. Gå till **Butik**&gt;**Medarbetare**&gt;**Medarbetare**&gt;, under fliken Butik, öppna de kassabehörigheter som är kopplade till medarbetaren. Expandera snabbfliken **meddelanden**, lägg till åtgärden **orderuppfyllande** och ange fältet **visningsordning** till **1**. Om fler än ett meddelande har konfigurerats används det här fältet för att ordna meddelanden. Meddelanden som har ett lägre värde för **visningsordning** visas ovanför de meddelanden som har ett högre värde. Meddelanden som har ett värde för **visningsordning** av **1** visas överst.
+
+    Meddelandena visas endast för åtgärder som läggs till på snabbfliken **meddelanden** och du kan bara lägga till åtgärder där om kryssrutan **Aktivera meddelanden** för dessa åtgärder är markerad på sidan **Kassaåtgärder**. Dessutom visas meddelanden för en åtgärd för medarbetare endast om åtgärden läggs till i kassabehörigheterna för dessa medarbetare.
+
+    > [!NOTE]
+    > Meddelanden kan åsidosättas på användarnivå. Öppna medarbetarens post, markera **Kassabehörigheter** och redigera sedan användarens meddelandeabonnemang.
+
+4. Gå till **Butik** &gt; **Kanalinställningar** &gt; **Kassainställningar** &gt; **Kassaprofiler** &gt; **Funktionsprofiler**. I fältet **meddelandeintervall**, anger du hur ofta meddelanden ska dras. För vissa meddelanden måste kassan ringa samtal i realtid till backoffice-programmet. Dessa samtal tar upp datorkapacitet i backoffice-programmets. Därför när du anger meddelandeintervallet bör du både beakta ditt företags behov och effekten av samtal i realtid till backoffice-programmet. Värdet **0** (noll) stänger av meddelandefunktionen.
+5. Gå till **Butik** &gt; **Butik-IT** &gt; **Distributionsschema**. Välj schemat **1060** (**Personal**) för att synkronisera inställningar av meddelandeabonnemang och välj sedan **Kör nu**. Välj sedan schemat **1070** (**kanalkonfiguration**) för att synkronisera behörighetsintervallet och välj sedan **Kör nu**.
+
+## <a name="view-notifications-in-the-pos"></a>Visa meddelanden i kassan
+
+När du har slutfört föregående steg ska medarbetare kunna visa meddelanden i kassan. För att visa meddelanden, tryck på meddelandeikonen i det övre högra hörnet av kassan. Ett meddelandecenter visas och visar meddelanden för utförandet av orderuppfyllelse. Meddelancecentret ska visa följande grupper inom utförandet av orderuppfyllelse:
+
+- **Upphämtning i butik** Den här gruppen visar antalet order som har leveransläget **upphämtning** och upphämtning kommer från den aktuella butiken. Du kan trycka på numret i gruppen så öppnas sidan **orderuppfyllelse**. I det här fallet filtreras sidan så att den endast visar de aktiva order som har ställts in för upphämtning från den aktuella butiken.
+- **Leverera från butik** Den här gruppen visar antalet order som har leveransläget **Leverans** och leverans är planerad från den aktuella butiken. Du kan trycka på numret i gruppen så öppnas sidan **orderuppfyllelse**. I det här fallet filtreras sidan så att den endast visar de aktiva order som har ställts in för försändelse från den aktuella butiken.
+
+När nya order tilldelats butiken för uppfyllelse kommer meddelandeikonen att ändras för att indikera att det finns nya meddelanden och antalet för lämpliga grupper uppdateras. Även om grupperna uppdateras med jämna mellanrum kan kassaanvändare uppdatera grupperna manuellt när som helst genom att välja knappen **uppdatera** bredvid gruppen. Slutligen, om en grupp har en ny artikel som den aktuella medarbetaren inte har sett visar gruppen en explosionsikon som indikerar nytt innehåll.
+
+## <a name="enable-live-content-on-pos-buttons"></a>Aktivera levande innehåll på kassaknappar
+
+Kassaknapparna kan nu visa ett antal för att hjälpa medarbetarna att bestämma vilka aktiviteter som kräver deras omedelbara uppmärksamhet. För att visa detta nummer på en kassaknapp måste du slutföra de meddelandeinställningar som beskrivs tidigare i det här avsnittet (det vill säga du måste aktivera meddelanden för en åtgärd, konfigurera intervall för ett meddelande och uppdatera kassabehörighetsgrupp för medarbetaren). Dessutom måste du öppna knappsatsen för designern, visa knappens egenskaper och markera kryssrutan **Aktivera levande innehåll**. I fältet **Innehållsjustering** kan du välja om numret ska visas i det övre högra hörnet på knappen (**Högst upp till höger**) eller i mitten (**Mitten**).
 
 > [!NOTE]
-> Meddelanden kan åsidosättas på användarnivå genom att navigera till medarbetarens post och markera **kassabehörigheter** och sedan redigera användarens meddelandeprenumeration.
+> Det levande innehållet kan endast aktiveras för åtgärder om kryssrutan **Aktivera meddelanden** har markerats för dem på sidan **Kassaåtgärder** som beskrivs tidigare i detta avsnitt.
 
- - Gå till sidan **funktionsprofil** (**butik** > **kanalinställningar** > **kassainställningar** > **kassaprofiler** > **funktionsprofiler**). Uppdatera egenskapen **meddelandeintervall** för att ange intervallet i minuter som meddelanden ska hämtas. Vi rekommenderar att du anger värdet till 10 minuter för att undvika onödig kommunikation till huvudkontoret. Om du anger meddelandeintervallet till ”0” inaktiveras meddelanden.  
+Följande bild visar inställningarna för levande innehåll i knappsatsen för designern,
 
- - Gå till **Butik** > **Butiks-IT** > **Distributionsschema**. Välj schemalägg ”1060 medarbetarna” för att synkronisera inställningar av meddelandeabonnemang och klicka sedan på **kör nu**. Synkronisera sedan behörighetsintervallet genom att välja ”1070 kanalkonfiguration” och välj sedan **kör nu**. 
+![Inställningar för levande innehåll i knappsatsen för designern](./media/ButtonGridDesigner.png "Inställningar för levande innehåll i knappsatsen för designern")
 
-## <a name="view-notifications-in-pos"></a>Visa meddelanden i kassan
+Följande bild visar effekterna av att välja **Högst upp till höger** jämfört med **Mitten** i fältet **Innehållsjustering** för knappar med olika storlekar.
 
-När stegen är slutförda kan medarbetarna som meddelanden ställs in för se meddelandena i kassan. För att visa meddelanden, klicka på meddelandeikonen i kassans namnlist. Detta visar ett meddelandecenter med meddelanden för utförandet av orderuppfyllelse. Meddelancecentret ska visa följande grupper inom utförandet av orderuppfyllelse: 
-
-- **Väntande order** Den här gruppen visar antalet order som har väntande status, som t.ex. order som måste godkännas av en kassaarbetare som har behörighet för uppfyllelse i butik. Om du klickar på numret på gruppen öppnas sidan **orderuppfyllande**, filtrerad för att endast visa de väntande order som tilldelats butiken för uppfyllelse. Om order accepteras automatiskt för butiken, ska antalet för den här gruppen vara noll.
-
-- **Upphämtning i butik** Den här gruppen visar antalet order som har leveransläget **upphämtning** och upphämtning kommer från den aktuella butiken. Om du klickar på numret på gruppen öppnas sidan **orderuppfyllande**, filtrerad för att endast visa de aktiva order som är inställda på att hämtas från den aktuella butiken.
-
-- **Leverera från butik** Den här gruppen visar antalet order som har leveransläget **Leverans** och leverans är planerad från den aktuella butiken. Om du klickar på numret på gruppen öppnas sidan **orderuppfyllande**, filtrerad för att endast visa de aktiva order som är inställda på att levereras från den aktuella butiken.
-
-När nya order tilldelats butiken för uppfyllelse kommer meddelandeikonen att ändras för att indikera nya meddelanden och antalet för motsvarande grupper uppdateras. Användaren kan också klicka på uppdateringsikonen bredvid åtgärdsnamnet för att omedelbart uppdatera antal grupper. Antalet uppdateras också med fördefinierade intervall. En grupp med en ny artikel som inte ses av den aktuella arbetaren kommer att visa en explosionsikon som visar att den här gruppen har en ny artikel. Om du klickar på panelerna inne i meddelanden öppnas den särskilda åtgärden som det meddelandet är konfigurerat för. I de ovan nämnda scenarierna om du klickar på meddelanden öppnas sidan **orderuppfyllande** och skickar lämpliga parametrar: väntande order, butiksupphämtning och levereras från butik. 
-
-> [!NOTE]
-> Meddelanden om väntande order aktiveras i en kommande uppdatering för Dynamics 365 for Retail. 
-
+![Levande innehåll på kassaknappar](./media/ButtonsWithLiveContent.png "Levande innehåll på kassaknappar")
 

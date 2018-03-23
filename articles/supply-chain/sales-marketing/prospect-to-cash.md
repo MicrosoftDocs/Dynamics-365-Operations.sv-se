@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: 95d5bf26c22238753586cf4a7aaf5c26f061a705
-ms.openlocfilehash: 62f328c5a6bf5343c97de0b7d907bbcfe2fcde4d
+ms.sourcegitcommit: e342c67f53828c77f77d99a2c3f909a23ced8989
+ms.openlocfilehash: 5d9bc41c92258f9856088b04ec5af123c8e915e5
 ms.contentlocale: sv-se
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 03/13/2018
 
 ---
 
@@ -42,9 +42,8 @@ I den aktuella versionen innehåller lösningen Potentiell kund till pengar föl
 - [Underhåll konton i Sales och synkronisera dem direkt från Finance and Operations](accounts-template-mapping-direct.md)
 - [Underhåll produkter i Finance and Operations och synkronisera dem direkt med Sales](products-template-mapping-direct.md)
 - [Behåll kontakter i Sales och synkronisera dem direkt till kontakter i Finance and Operations](contacts-template-mapping-direct.md)
-- [Synkronisera försäljningsofferter direkt från Sales till Finance and Operations (mall väntar på release)](sales-quotation-template-mapping-sales-fin.md)
-- [Synkronisera försäljningsorder direkt från Finance and Operations till Sales](sales-order-template-mapping-direct.md)
-- [Synkronisera försäljningsorder direkt mellan Sales och Finance and Operations (mall väntar på release)](sales-order-template-mapping-direct-two-ways.md)
+- [Synkronisera försäljningsofferter direkt från Sales till Finance and Operations](sales-quotation-template-mapping-sales-fin.md)
+- [Synkronisera försäljningsorder direkt mellan Sales och Finance and Operations](sales-order-template-mapping-direct-two-ways.md)
 - [Synkronisera försäljningsfakturor direkt från Finance and Operations till Sales](sales-invoice-template-mapping-direct.md)
 
 ## <a name="system-requirements-for-finance-and-operations"></a>Systemkrav för Finance and Operations
@@ -85,7 +84,7 @@ Potentiell kund till kontanter-integrering stöds på följande versioner:
 
 Om du vill använda lösningen Potentiell kund till kontanter måste du installera följande komponenter:
 
-- Dynamics 365 for Sales, version 1612 (8.2.1.207) (DB 8.2.1.207) online
+- Dynamics 365 for Sales, version 1612 (8.2.1.207) (DB 8.2.1.207) online eller en senare version.
 - Lösningen Potentiell kund till pengar för Dynamics 365 for Sales, version 1.15.0.0 (v15) 
 
 ### <a name="install-the-prospect-to-cash-solution-for-sales"></a>Installera Potentiell kund till kontanter-lösningen för Sales

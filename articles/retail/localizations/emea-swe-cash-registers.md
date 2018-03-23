@@ -18,10 +18,10 @@ ms.author: epopov
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: c68d84ea0297d954eaf62d36b98b2e305e6be50e
+ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
+ms.openlocfilehash: 1c0621aa5e4670ea86a155514ea09abbd9f1873e
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/08/2018
 
 ---
 # <a name="cash-registers-for-sweden"></a>Kassaapparater för Sverige
@@ -177,12 +177,12 @@ Du måste du ange följande inställningar för att aktivera [integrationsprovet
 
         - Kontrollkod:
 
-            - **Namn:****FiscalRegisterControlCode**
+            - **Namn:** **FiscalRegisterControlCode**
             - **Beskrivning av text-ID:** text-ID som du angav för kodfältet kontrollen (**900001** i föregående exempel)
             
         - Tillverkningsnummer för kontrollenheten:
 
-            - **Namn:****FiscalRegisterId**
+            - **Namn:** **FiscalRegisterId**
             - **Beskrivning av text-ID:** text-ID som du angav för fältet kontrollenhets-ID (**900002** i föregående exempel)
             
     3. För försäljningskvittoformat, kvittorformatdesignern i avsnittet **sidfot** på kvittolayouten, lägger du till fälten för de angivna rubrikerna (**kontrollkod** och **kontrollenhets-ID** i föregående exempel).

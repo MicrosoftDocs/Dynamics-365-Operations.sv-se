@@ -3,7 +3,7 @@ title: Lokal distribution
 description: "Det här avsnittet innehåller information och länkar till innehåll om lokal distribution."
 author: kfend
 manager: AnnBe
-ms.date: 03/05/2018
+ms.date: 03/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,13 +18,13 @@ ms.author: kfend
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: 797058bdbbdb63a08eb35034ffe3c913307f38df
-ms.openlocfilehash: 12b8a6e8f28501bce76d5a1d58b39e4711b75330
+ms.sourcegitcommit: 0d551818c8d352af96f6e64613cfbbc4aec5bf5b
+ms.openlocfilehash: e35769e45b1017eef2ee5a5b6c2baa35ae13d90c
 ms.contentlocale: sv-se
-ms.lasthandoff: 03/06/2018
+ms.lasthandoff: 03/15/2018
 
 ---
-# <a name="on-premises-deployment-landing-page"></a>Landningssida för lokal distribution
+# <a name="on-premises-deployment-home-page"></a>Hemsida för lokal distribution
 
 [!include[banner](../includes/banner.md)]
 
@@ -36,13 +36,13 @@ Du kan distribuera Microsoft Dynamics 365 for Finance and Operations, Enterprise
 - [Planera inför lokal distribution](plan-onprem-deployment.md)
 - [Systemkrav för lokala distributioner](../../fin-and-ops/get-started/system-requirements-on-prem.md)
 - [Beräkna maskinvara för lokala miljöer](../../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md)
-- [Livscykelpolicy för onlinetjänst och lokal programvara](../migration-upgrade/versions-update-policy.md)
 - [Köp Dynamics 365 for Finance and Operations, Enterprise Edition (lokal)](../../fin-and-ops/get-started/purchase-on-premises.md)
 - [Jämförelse mellan molnet och lokala funktioner](../../fin-and-ops/get-started/cloud-prem-comparison.md)
 
 ## <a name="onboard"></a>Onboard
 - [Skapa ett lokalt projekt i Lifecycle Services](../lifecycle-services/lbd-create-lcs-on-prem-project.md)
-- [Ställa in och distribuera lokala miljöer](setup-deploy-on-premises-environments.md)
+- [Ställa in och distribuera lokala miljöer (plattformsuppdatering 12)](setup-deploy-on-premises-pu12.md)
+- [Ställa in och distribuera lokala miljöer (plattformsuppdatering 8 och 11)](setup-deploy-on-premises-pu8-pu11.md)
 - [Installera nätverksskrivare i lokala miljöer](../analytics/install-network-printer-onprem.md)
 - [Konfigurera SQL Server Reporting Services för en lokal distribution](../analytics/configure-ssrs-on-premises.md)
 - [Utveckla och distribuera anpassade modeller i lokala miljöer](develop-deploy-custom-models-on-premises.md)

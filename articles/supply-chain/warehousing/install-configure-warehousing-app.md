@@ -20,10 +20,10 @@ ms.author: mafoge
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: af7f9a373496eee4df354d5dd9e5a25c51317c43
-ms.openlocfilehash: 0f83735ec42e945c5e0abf8d72b83936e076e60e
+ms.sourcegitcommit: 608543c9cfd93c4772e93089e1d174312d8b23a6
+ms.openlocfilehash: 411bb28668f5aa9d07774211814da4e9757ac43c
 ms.contentlocale: sv-se
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/06/2018
 
 ---
 
@@ -99,6 +99,8 @@ Du måste konfigurera programmet på enheten för att ansluta till Finance and O
     <br>**Obs!** Avsluta inte detta fält med ett snedstreck (/). 
     + **Företag** - Ange den juridiska person i Finance and Operations som du vill att programmet ansluter till. <br>[![wh-12-inställningar-för-programanslutningar](./media/wh-12-app-connection-settings-169x300.png)](./media/wh-12-app-connection-settings.png)
 4.  Välj knappen **Tillbaka** i programmets övre vänstra hörn. Programmet kommer nu att ansluta till din Finance and Operations-server, och inloggningsskärmen för lagermedarbetaren visas. <br>[![wh-13-inloggningsskärm](./media/wh-13-log-in-screen-180x300.png)](./media/wh-13-log-in-screen.png)
+
+Mer information om hur du ställer in Dynamics 365 for Finance and Operations – Warehousing för att skanna streckkoder på en mobil enhet med hjälp av en kamera finns i [Skanna streckkoder med en kamera i Dynamics 365 for Finance and Operations – Warehousing](scan-bar-codes-using-a-camera.md)
 
 ## <a name="remove-access-for-a-device"></a>Ta bort åtkomsten för en enhet
 Om en enhet går förlorad eller drabbas av fel, måste du ta bort åtkomsten till Finance and Operations för enheten. Följande steg beskriver den rekommenderade processen när du tar bort åtkomst.
