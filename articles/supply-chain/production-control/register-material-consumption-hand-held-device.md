@@ -19,10 +19,10 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 525b5a21047f0f39b9cd15448c4096d17c0e2dbd
+ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
+ms.openlocfilehash: b84b63ec519ae686b55905170c956fcb2b08334a
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/08/2018
 
 ---
 
@@ -69,7 +69,7 @@ Detta överför materialet från bulkplatsen till produktionsinleveransplatsen P
 
 När produktionsordern har startat kan du registrera materialförbrukning i arbetsflödet för handenheter. Vi börjar med att registrera förbrukning på 25 kg från batch B1.
 
-6.  Välj menyartikeln **Registrera material****förbrukning**. I menyn för handhållen enhet anger du följande information: 
+6.  Välj menyartikeln **Registrera material** **förbrukning**. I menyn för handhållen enhet anger du följande information: 
 
 -    Tillverkningsordernumret. 
 -    Platsen där materialet ska förbrukas är i det här fallet PIL-01. 

@@ -249,7 +249,7 @@ Du kan inte använda reserverade nyckelord som solvernamn för attribut, kompone
 <a name="see-also"></a>Se även
 --------
 
-[Skapa en uttrycksbegränsning (uppgiftsguide)](uppgifter/lägg-till-uttrycksbegränsning-produktkonfigurationsmodell.md)
+[Skapa en uttrycksbegränsning (uppgiftsguide)](tasks/add-expression-constraint-product-configuration-model.md)
 
 [Lägg till en beräkning i en produktkonfigurationsmodell (uppgiftsguide)](tasks/add-calculation-product-configuration-model.md)
 

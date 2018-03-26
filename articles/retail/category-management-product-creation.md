@@ -1,47 +1,63 @@
 ---
-title: Hantering och skapande av produktkategorier
-description: "Detta avsnitt beskriver de förbättringar som gjorts inom hanteringsupplevelsen för produktkategorier inom detaljhandel. Dessa förbättringar gör det möjligt för marknadsföringschefer att skapa en korrelation mellan hierarkin bland detaljhandelsprodukter och frisläppt produktinformation."
+title: Produktkategorihantering
+description: "Det här avsnittet beskriver hur marknadsföringschefer kan använda produktkategorier (butik) för att hantera relationer mellan butiksprodukthierarki och information om frisläppt produkt."
 author: ashishmsft
 manager: AnnBe
-ms.date: 09/01/2017
+ms.date: 10/23/2017
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
 ms.technology: 
-ms.search.form: RetailCategoryAndProductWorkspace, RetailCategory
+ms.search.form: 
 audience: Application User
 ms.reviewer: josaw
-ms.search.scope: Core, Operations, Retail
-ms.search.region: Global
-ms.search.industry: retail
+ms.search.scope: Core, AX 7.0.0, Operations, UnifiedOperations, Retail
+ms.custom: 
+ms.assetid: c7ed2ba5-87c6-4d99-9728-2a83e6d95ca9
+ms.search.region: global
+ms.search.industry: Retail
 ms.author: asharchw
 ms.search.validFrom: 2017-09-01
-ms.dyn365.ops.version: 
+ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 74a8fa863736177bcf8cb4b3d90911c78122252b
+ms.sourcegitcommit: 25fa39dc81fc721d7593a25a102ce47041ebc5f0
+ms.openlocfilehash: 4b7ef962b777a31e1da238a8ec1be9a42ec5bb5f
 ms.contentlocale: sv-se
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 03/13/2018
 
 ---
 
-# <a name="product-category-management-and-creation"></a>Hantering och skapande av produktkategorier
+
+# <a name="enhanced-product-and-category-management"></a>Förbättrad produkt- och kategorihantering
 
 [!include[banner](./includes/banner.md)]
 
-De förbättringar som har gjorts inom hanteringsupplevelsen för produktkategorier inom detaljhandeln gör det möjligt för marknadsföringschefer att skapa en korrelation mellan hierarkin bland detaljhandelsprodukter och frisläppt produktinformation. I arbetsytan **Kategori- och produkthantering** väljer du **Hierarki för detaljhandelsprodukt** för att öppna sidan **Ny struktur för produktkategori inom detaljhandel** om du vill visa dessa förbättringar. 
+Det här avsnittet beskriver ett bättre sätt att hantera produktkategorier (butik) och produkter i Dynamics 365 for Retail. Dessa förbättringar gör det möjligt för marknadsföringschefer att visa en gemensam struktur för produktegenskaper bland detaljhandelsprodukter och information om frisläppt produkt.
 
-I tidigare versioner delades produktegenskaperna upp i grundläggande produktegenskaper och produktegenskaper för detaljhandel, baserat på omfattningen av deras tillämpbarhet. Produktegenskaperna inom detaljhandel var *globala*. Med andra ord delades samma värde för en viss produktegenskap av samtliga juridiska personer. Grundläggande produktegenskaper var *specifika för juridisk person*. Med andra ord kunde en viss produktegenskap variera mellan olika juridiska personer baserat på individuella affärskrav.
+Om du vill ha mer information om hur du hanterar produktkategorier (butik), gå till **Produkthierarki (butik)** från arbetsytan **Kategori- och produkthantering** och notera förbättrad struktur för sidan **Produkthierarki (butik)**.
 
-I och med dessa förbättringar för produktkategorier i kategorin Detaljhandelsprodukter fortsätter vi att separera olika fält. Detta sker baserat på dessas tillämpbarhet inom en viss grupp i syfte att reflektera formstrukturen i den frisläppta produktinformationen.
+![Arbetsytan Kategori- och produkthantering](media/LaunchRetailProductHierarchy.png)
 
-Du kan växla mellan att hantera egenskaper specifika för den juridiska personen över samtliga juridiska personer och att hantera dem för en specifik juridisk person. Välj helt enkelt **Visa/redigera för samtliga juridiska personer** eller **Visa/redigera för en specifik juridisk person** efter behov.
+I tidigare versioner delades produktegenskaperna upp i **Grundläggande produktegenskaper** och **Produktegenskaper för detaljhandel**, baserat på deras tillämpningsområde. **Produktegenskaper för detaljhandel** var *global* efter tillämpningsområde vilket innebär att en given **Produktegenskap för detaljhandel**, delas lika mellan alla juridiska personer. **Grundläggande produktegenskaper** är *specifika för juridisk person*. Med andra ord kunde en viss **Grundläggande produktegenskap** variera mellan olika juridiska personer baserat på individuella affärskrav.
 
-Marknadsföringschefer kan även definiera standardvärden för en ytterligare uppsättning produktegenskaper på individuell kategorinivå. Dessa egenskapsvärden går i arv till en produkt baserat på produktens koppling till en kategori när produkten skapas.
+I den förbättrade produktkategoristrukturen separeras produktegenskaper logiskt baserat på deras tillämpbarhet inom en viss grupp i syfte att reflektera formstrukturen i informationen om den frisläppta produkten.
 
-## <a name="select-properties-to-update-products-from-the-retail-product-category-form"></a>Välj egenskaper i kategoriformuläret för detaljhandelsprodukt om du vill uppdatera produkter
+![Gruppering av fält baserat på deras tillämpningsområde](media/NoticeGroupingOfFieldsBasedOnTheirScope.PNG)
 
-Du kan använda logiska gruppegenskaper för att välja vilka uppdaterade produktegenskaper som ska appliceras på associerade produkter.
+Du kan växla mellan att hantera egenskaper specifika för den juridiska personen över samtliga juridiska personer och att hantera dem för en specifik juridisk person. För att göra detta, välj antingen **Visa/redigera för samtliga juridiska personer** eller **Visa/redigera för en specifik juridisk person**.
+
+![Växla vy mellan en person och alla juridiska personer](media/ToggleBackToEditForSpecificLegalEntity.PNG)
+
+![Växla vy mellan en person och alla juridiska personer](media/ToggleToEditForAllLegalEntities.PNG)  
+
+Jämfört med tidigare versioner i den nya produktkategoristrukturen (butik) kan en marknadsföringschef också definiera standardvärden för ytterligare en uppsättning produktegenskaper på en enskild kategorinivå. När produkten skapas kommer dessa standardinställda produktegenskapvärden att ärvas av en produkt baserat på deras koppling till en enskild kategori från produkthierarkin (butik). Dessa ärvda produktegenskaper kan också ändras för respektive produkt så att dessa motsvarar individuella affärskrav.
+
+## <a name="select-properties-to-update-products-from-the-retail-product-category-form"></a>Välj egenskaper i kategoriformuläret för detaljhandelsprodukt om du vill uppdatera produkter 
+ 
+Du kan använda den här nya förbättrade strukturen för produktegenskaper för att välja vilka uppdaterade produktegenskaper som måste skickas till associerade produkter. 
+
+![Ny utökad vy över Uppdatera produkter](media/NewUpdateProductsEnhancedView.PNG) 
 
 Marknadsföringschefer kan modifiera dessa ärvda produktegenskaper för respektive produkt så att dessa motsvarar individuella affärskrav.
+
 
