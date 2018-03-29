@@ -1,7 +1,7 @@
 --- 
 title: "Skapa flöden (enbart februari 2016)"
 description: "Den här uppgiften fokuserar på att skapa produktionsrutter för en färdig produkt och en halvfärdig produkt."
-author: BibiSp
+author: YuyuScheller
 manager: AnnBe
 ms.date: 02/07/2017
 ms.topic: business-process
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: yuyus
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: bis
