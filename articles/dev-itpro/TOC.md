@@ -1,7 +1,7 @@
 # [Utveckling och administration för Dynamics 365 for Finance and Operations](index.md)
-# [Systemkrav för molndistributioner](../fin-and-ops/get-started/system-requirements.md)
-# [Systemkrav för lokala distributioner](../fin-and-ops/get-started/system-requirements-on-prem.md)
-# [Demodata](../fin-and-ops/get-started/demo-data.md)
+# [Systemkrav för molndistributioner](../fin-and-ops/get-started/system-requirements.md?toc=/dev-itpro/toc.json)
+# [Systemkrav för lokala distributioner](../fin-and-ops/get-started/system-requirements-on-prem.md?toc=/dev-itpro/toc.json)
+# [Demodata](../fin-and-ops/get-started/demo-data.md?toc=/dev-itpro/toc.json)
 ## [Generera demodata med paket](data-entities/generate-demo-data-packages.md)
 
 
@@ -29,7 +29,7 @@
 ### [Exportera och importera en modell](dev-tools/models-export-import.md)
 ### [Sök efter metadata i Visual Studio](dev-tools/metadata-search-visual-studio.md)
 ### [Modeller](dev-tools/models.md)
-### [Projekt i Dynamics 365 for Finance and Operations, Enterprise edition](dev-tools/projects.md)
+### [Projekt i Dynamics 365 for Finance and Operations](dev-tools/projects.md)
 ### [Verktygstillägg för Visual Studio](dev-tools/developer-tools-add-ins.md)
 ### [Inaktivera modellanpassning och avskrivningsfunktioner](dev-tools/lock-models.md)
 ### [Uppdatera utvecklingsverktyg för Visual Studio](dev-tools/update-development-tools.md)
@@ -114,7 +114,7 @@
 #### [Anpassning: överlägg och tillägg](extensibility/customization-overlayering-extensions.md)
 ### Nyheter
 #### [Ändringar av utbyggbarhet juli 2017](extensibility/changes-july-2017.md)
-#### [Ändringar av utbyggbarhet i Dynamics 365 for Finance and Operations, Enterprise edition 7.3](extensibility/extensibility-changes-73.md)
+#### [Ändringar av utbyggbarhet version 7.3](extensibility/extensibility-changes-73.md)
 ### Grunderna
 #### [Inkräktande anpassningar](extensibility/intrusive-customizations.md)
 #### [Klasstillägg](extensibility/class-extensions.md)
@@ -168,8 +168,8 @@
 ### [Skapa navigering](user-interface/build-navigation.md)
 ### [Skapa en arbetsyta](user-interface/build-workspace.md)
 ## Formulär
-### [Navigera i Dynamics 365 for Finance and Operations, Enterprise edition](user-interface/page-navigation.md)
-### [Layout i Dynamics 365 for Finance and Operations, Enterprise edition](user-interface/page-layout.md)
+### [Navigering i Dynamics 365 for Finance and Operations](user-interface/page-navigation.md)
+### [Layout i Dynamics 365 for Finance and Operations](user-interface/page-layout.md)
 ### [Symbolteckensnitt](user-interface/symbol-font.md)
 ### [Testa formulär med egna mönster](user-interface/testing-forms-custom-patterns.md)
 ### [Skapa och använd djuplänkar](user-interface/create-deep-links.md)
@@ -489,12 +489,12 @@
 
 ## Molndistribution
 ### [Integration av Azure Resource Manager](deployment/arm-onboarding.md)
-### [Azure ExpressRoute och Dynamics 365 for Finance and Operations, Enterprise edition](deployment/expressroute.md)
+### [Azure ExpressRoute och Dynamics 365 for Finance and Operations](deployment/expressroute.md)
 
 ## [Lokal distribution](deployment/on-premises-deployment-landing-page.md)
 ### [Översikt – lokal](deployment/on-premises-overview.md)
 ### [Planera inför lokal distribution](deployment/plan-onprem-deployment.md)
-### [Anpassa storlek på maskinvara](../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md)
+### [Anpassa storlek på maskinvara](../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json)
 ### [Skapa ett lokalt projekt](lifecycle-services/lbd-create-lcs-on-prem-project.md)
 ### [Ställa in och distribuera lokala miljöer](deployment/setup-deploy-on-premises-environments.md)
 #### [Distribuera lokala miljöer med Platform update 12](deployment/setup-deploy-on-premises-pu12.md)
@@ -507,7 +507,7 @@
 ### [Uppdatera den lokala agenten](lifecycle-services/update-local-agent.md)
 ### [Konfigurera om miljön](lifecycle-services/reconfigure-environment.md)
 ### [Internetanslutning för klient](user-interface/client-disconnected.md)
-### [Felsöka Dynamics 365 for Finance and Operations, Enterprise edition (lokal)](deployment/troubleshoot-on-prem.md)
+### [Felsöka Dynamics 365 for Finance and Operations (lokal)](deployment/troubleshoot-on-prem.md)
 
 ## Distribuera anpassad kod
 ### [Skapa ett driftfärdigt paket](deployment/create-apply-deployable-package.md)
@@ -527,7 +527,7 @@
 ### [AX 2012-uppgradering - Uppgifter som ska utföras efter uppgradering](migration-upgrade/app-validation-process.md)
 ### [AX 2012-uppgradering - Funktionstest har genomförts](migration-upgrade/upgrade-functional-validation.md)
 ### [AX 2012-uppgradering - Förbered publicering](migration-upgrade/upgrade-go-live-prep.md)
-
+### [AX 2012-uppgradering - Go live](migration-upgrade/2012-upgrade-cutover.md)
 
 ### Ändringar som påverkar uppgradering från AX 2012
 #### [Uppgradering av enstaka verifikations- och valutaomvärdering ](migration-upgrade/single-voucher-and-currency-revaluation-upgrade.md)
@@ -588,7 +588,9 @@
 ### [Översikt över batchserver](sysadmin/batch-server-overview.md)
 ### [Skapa ett batchjobb](sysadmin/tasks/create-batch-job.md)
 
-## [Skapa regler för optimerings-advisor](sysadmin/optimization-advisor.md)
+##  [Översikt över optimerings-advisor](sysadmin/optimization-advisor-overview.md)
+### [Skapa regler för optimerings-advisor](sysadmin/create-rules-optimization-advisor.md)
+
 
 # Lifecycle Services
 ## [Översikt över Lifecycle Services](lifecycle-services/lcs.md)
@@ -701,10 +703,10 @@
 ## [Begär en uppdatering av sandbox-databasen](database/database-refresh.md)
 
 # Support
-## [Få hjälp med Dynamics 365 for Finance and Operations, Enterprise edition och Lifecycle Services](lifecycle-services/lcs-support.md)
+## [Få hjälp med Dynamics 365 for Finance and Operations och Lifecycle Services](lifecycle-services/lcs-support.md)
 ## [Logga ett Premier-supportärende](lifecycle-services/premier-support.md)
 ## [Skicka en begäran till serviceteknikerteamet för Dynamics](lifecycle-services/submit-request-dynamics-service-engineering-team.md)
-## [Konfigurera teknisk support för Dynamics 365 for Finance and Operations, Enterprise edition](lifecycle-services/support-experience.md) 
+## [Konfigurera teknisk support för Dynamics 365 for Finance and Operations](lifecycle-services/support-experience.md) 
 ## [Vanliga frågor och svar om fönster för planerat underhåll](lifecycle-services/planned-maintenance-window-faq.md) 
 ## [Molnåtgärder och underhåll](lifecycle-services/cloud-operations-servicing.md)
 ## [Hantera support för Finance and Operations](lifecycle-services/cloud-powered-support-lcs.md)

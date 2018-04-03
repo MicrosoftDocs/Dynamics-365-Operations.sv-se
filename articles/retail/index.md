@@ -19,10 +19,10 @@ ms.author: josaw
 ms.search.validFrom: 2017-6-19
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 40d54a9a2920e87caba62c92b5ca6465fa68e3d4
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 164932ac3bc701696f5c0b08c5e2d585d9a8ba6a
 ms.contentlocale: sv-se
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 03/08/2018
 Microsoft Dynamics 365 for Retail är en komplett lösning för enhetlig handel i alla kanaler. Den omfattar försäljning, mobilitet, intelligence och produktivitet som hjälper detaljhandlare och arbetare att uppnå mer i molnet och på mobila enheter. Retail har ett omfattande stöd för en mängd olika affärsprocesser, till exempel funktioner för hantering av marknadsföring, lager och kanaler. Den ger också en integrerad kundupplevelse i alla beröringspunkter.
 
 > [!NOTE] 
-> Dynamics 365 for Retail är nära besläktat med Dynamics 365 for Finance and Operations, Enterprise Edition samt Dynamics 365 for Talent. Samma funktioner kan visas i alla tre produkter. I avsnitt som huvudsakligen berör Retail blir produktnamnet därför Microsoft Dynamics 365 for Retail; i avsnitt som främst berör huvudprodukten (Finance and Operations) blir produktnamnet Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition. I avsnitt som huvudsakligen berör personalfrågor blir produktnamnet Dynamics 365 for Talent. 
+> Dynamics 365 for Retail är nära besläktat med Dynamics 365 for Finance and Operations samt Dynamics 365 for Talent. Samma funktioner kan visas i alla tre produkter. I avsnitt som huvudsakligen berör Retail blir produktnamnet därför Microsoft Dynamics 365 for Retail; i avsnitt som främst berör huvudprodukten (Finance and Operations) blir produktnamnet Microsoft Dynamics 365 for Finance and Operations. I avsnitt som huvudsakligen berör personalfrågor blir produktnamnet Dynamics 365 for Talent. 
 
 Välj ett funktionsområde som du vill veta mer om i det vänstra fönstret.
 
