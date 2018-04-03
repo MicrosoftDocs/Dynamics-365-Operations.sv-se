@@ -3,6 +3,8 @@
 # [Komma igång](talent-get-started.md)
 ## [Systemkrav och uppdateringspolicy](talent-versions-update-policy.md)
 ## [Reservera Microsoft Dynamics 365 for Talent](provisioning-talent.md)
+## [Ta bort en Talent-miljö](remove-test-environment.md)
+## [Reservera modulära appar för Microsoft Dynamics 365 for Talent](modular-app-tech-faq.md)
 ## [Utöka funktionaliteten i Talent](extend-talent-functionality.md)
 
 # [Utveckla en personalstrategi](departments-jobs-positions.md)
@@ -39,5 +41,5 @@
 ## [Utvärdera resultaten av en enkät](evaluate-questionnaire-results.md)
 
 # Arbetsplatssäkerhet och efterlevnad (USA)
-## [Verifiering av I–9-anställningsformulär](../fin-and-ops/hr/localizations/noam-usa-form-i-9-verification.md)
-## [Uppfylla ADA](../fin-and-ops/hr/localizations/noam-usa-comply-ada.md)
+## [Verifiering av I–9-anställningsformulär](../fin-and-ops/hr/localizations/noam-usa-form-i-9-verification.md?toc=/talent/toc.json)
+## [Uppfylla ADA](../fin-and-ops/hr/localizations/noam-usa-comply-ada.md?toc=/talent/toc.json)
