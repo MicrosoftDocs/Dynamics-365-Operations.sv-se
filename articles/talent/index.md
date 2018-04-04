@@ -18,10 +18,10 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: abc52192848649672cbcb8c770d74ba2aef139be
-ms.openlocfilehash: 199a8961f782816c71e47f9e76e097c069fbf686
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: db8b2e87ad020dac16ec74f2fea62e445c38e116
 ms.contentlocale: sv-se
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -43,7 +43,7 @@ Talent går att använda till att slutföra följande uppgifter:
 + Ställa in, leverera och analysera kurser som innehåller agendor, sessioner och spårningar.
 
 > [!NOTE] 
-> Dynamics 365 for Talent är nära besläktat med Human Resources i Dynamics 365 for Finance and Operations, Enterprise Edition. Samma funktioner kan visas i båda produkterna. I de avsnitt som i första hand berör Human Resources används produktnamnet Dynamics 365 for Finance and Operations, Enterprise Edition och i de avsnitt som i första hand berör Talent används produktnamnet Dynamics 365 for Talent. Avsnitt som skrivs för en produkt kan även gälla för samma funktioner i en relaterad produkt.
+> Dynamics 365 for Talent är nära besläktat med Human Resources i Dynamics 365 for Finance and Operations. Samma funktioner kan visas i båda produkterna. I de avsnitt som i första hand berör Human Resources används produktnamnet Dynamics 365 for Finance and Operations och i de avsnitt som i första hand berör Talent används produktnamnet Dynamics 365 for Talent. Avsnitt som skrivs för en produkt kan även gälla för samma funktioner i en relaterad produkt.
 
 <a name="develop-a-strategy-for-managing-your-human-resources"></a>Utveckla en strategi för personalhantering
 ---------------------------------------------------------

@@ -3,8 +3,8 @@
 # Kom igång
 ## [Nyheter eller ändringar](get-started/whats-new.md)
 ## [Innan du köper Dynamics 365 for Retail](get-started/before-you-buy.md)
-## [Registrera ett abonnemang på förhandsversionen](../dev-itpro/dev-tools/sign-up-preview-subscription.md)
-## [Distribuera en demonstrationsmiljö](../dev-itpro/deployment/deploy-demo-environment.md)
+## [Registrera ett abonnemang på förhandsversionen](../dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/retail/toc.json)
+## [Distribuera en demonstrationsmiljö](../dev-itpro/deployment/deploy-demo-environment.md?toc=/retail/toc.json)
 ## [Distribueringsalternativ](dev-itpro/choose-deployment.md)
 
 
@@ -44,10 +44,11 @@
 ## [Konfigurera och installera Retail hardware station](retail-hardware-station-configuration-installation.md)
 ## [Tidrapportering för Retail](retail-time-attendance.md)
 
-# Modern kassa (MPOS) och Cloud POS
+# Modern Point of Sale (MPOS) och Cloud POS
 ## [Välj mellan Modern POS och Cloud POS](MPOS-or-CPOS.md)
-## [Kassaoperationer](POS-operations.md)
+## [POS-operationer, online och offline](pos-operations.md)
 ## [Demodataskärmlayouter i MPOS/CPOS](demo-data.md)
+## [Översikt över produkt- och kundsök i kassan](POS-search-improvements.md)
 ## Kringutrustning
 ### [Översikt över Retail-utrustning](retail-peripherals-overview.md)
 ### [Microsoft-testad POS-utrustning](microsoft-tested-pos-hardware-peripherals.md)
@@ -60,6 +61,7 @@
 ### [Kassaprogram och språkinställningar](pos-application-user-language-settings.md)
 ### [Ställa in bilder för MPOS](set-up-manage-images-retail-mpos.md)
 ## [Översikt över infokoder](info-codes-retail.md) 
+## [Kassaförbättringar för serialiserade produkter](serialized-inventory.md)
 ## Produktrekommendationer
 ### [Översikt över anpassade produktrekommendationer](personalized-product-recommendations.md)
 ### [Lägga till en rekommendationskontroll i en POS-enhet](add-recommendations-control-pos-screen.md)
@@ -97,6 +99,7 @@
 ## [Prisjusteringar och rabatter](price-adjustments-discounts.md)
 ## [Avgöra optimal kombination av överlappande rabatter](optimal-combination-overlapping-discounts.md)
 ## [Definiera kanalspecifika rabatter](define-channel-specific-discounts.md)
+## [Förhindra rabatter för butiksprodukter](prevent-discounts.md)
 ## [Skapa kuponger för butiksförsäljning](retail-coupons.md)
 
 # Produkter och marknadsföring
@@ -105,10 +108,11 @@
 ## [Översikt över attribut och attributgrupper](attribute-attributegroups-lifecycle.md)
 ## [Skapa och hantera attribut](create-manage-attributes.md)
 ## [Ställa in butiksprodukter](set-up-retail-products.md)
+## [Förbättrad produkt- och kategorihantering](category-management-product-creation.md)
 ## [Produktdimensioner](../supply-chain/pim/product-dimensions.md)
 ## [Ställa in streckkoder](set-up-bar-codes.md)
 ## [Ställa in streckkodsmasker](set-up-bar-code-masks.md)
-## [Lägga upp sortiment](set-up-assortments.md)
+## [Lägg upp sortiment](set-up-assortments.md)
 ## [Sälja och returnera produkter utanför ett sortiment](sell-return-outside-assortments.md)
 ## [Standardorderinställningar för dimensioner och produktvarianter](../supply-chain/production-control/default-order-settings.md)
 ## [Sök efter produkter och produktvarianter under orderregistrering](../supply-chain/pim/search-products-product-variants.md)
@@ -190,13 +194,14 @@
 # [Utveckling och administration i Retail](dev-itpro/dev-retail-home-page.md)
 
 ## Arkitektur
-### [Komponenter i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition - Retail](retail-components.md)
+### [Komponenter i Microsoft Dynamics 365 for Finance and Operations - Retail](retail-components.md)
 ### [Arkitektur för Retail Server](dev-itpro/retail-server-architecture.md)
 ### [Kanalkommunikation för Retail](dev-itpro/define-retail-channel-communications-cdx.md)
 ### [MPOS-arkitektur](dev-itpro/retail-modern-pos-architecture.md)
 ### [Publiceringsarkitektur för onlinebutik i Retail](dev-itpro/retail-online-store-publishing-architecture.md)
-### [Power BI-innehåll för Retail-kanalprestanda](../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md)
+### [Power BI-innehåll för Retail-kanalprestanda](../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/retail/toc.json)
 ### [PA-DSS-certifiering (Payment Application Data Security Standards)](dev-itpro/PA-DSS-Certification.md)
+### [Retail-funktionerna i lokala distributioner](retail-onprem.md)
 
 ## Distribution och snabbkorrigeringar
 ### [Översikt av Retail Store Scale Unit](dev-itpro/retail-store-system-begin.md)
@@ -208,7 +213,7 @@
 ### [Konfiguration och installation av Retail Hardware Station](retail-hardware-station-configuration-installation.md)
 ### [Massdistribution av komponenter för självbetjäningspaket för Retail](dev-itpro/retail-mass-deployment.md)
 ### [Retail-komponenthändelser för diagnostik och felsökning](dev-itpro/retail-component-events-diagnostics-troubleshooting.md)
-### [Tillämpa ett distribuerbart paket](../dev-itpro/deployment/apply-deployable-package-system.md)
+### [Tillämpa ett distribuerbart paket](../dev-itpro/deployment/apply-deployable-package-system.md?toc=/retail/toc.json)
 
 ## Uppgraderings- och N-1-stöd
 ### [Översikt över uppgradering och N-1-stöd](dev-itpro/overview-upgrade-n-minus1.md)
@@ -218,7 +223,7 @@
 ### [Riktlinjer för implementering vid enhetshantering](implementation-considerations-devices.md)
 
 ## Miljökonfiguration
-### [Lägg till länkar till organisationens juridiska villkor och sekretesspolicy](../dev-itpro/sysadmin/legal-terms-privacy-statement.md)
+### [Lägg till länkar till organisationens juridiska villkor och sekretesspolicy](../dev-itpro/sysadmin/legal-terms-privacy-statement.md?toc=/retail/toc.json)
 ### [Hantera Bing-kartor](dev-itpro/manage-bing-maps.md)
 
 ## Utbyggbarhet för kassa

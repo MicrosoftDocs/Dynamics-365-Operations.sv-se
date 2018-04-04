@@ -1,6 +1,6 @@
 ---
 title: "Startsidan Hantering av underleverantörer"
-description: "Den här sidan innehåller en lista med hjälpavsnitt och andra resurser för styrningsfunktionerna för leveranskedjor i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition."
+description: "Den här sidan innehåller en lista med hjälpavsnitt och andra resurser för styrningsfunktionerna för leveranskedjor i Microsoft Dynamics 365 for Finance and Operations."
 author: YuyuScheller
 manager: AnnBe
 ms.date: 02/15/2018
@@ -19,10 +19,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: cab2f165a70e5ce8f09f0391282e055e51afb225
-ms.openlocfilehash: bf3192a5189a3b18ad28f3c5cb0dd6d402824ed5
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 9e3551580cc03ebf62ec42283c5a9a885d8c8d8f
 ms.contentlocale: sv-se
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 02/21/2018
 
 [!include[banner](includes/banner.md)]
 
-Det här ämnet innehåller en lista med hjälpavsnitt och andra resurser för styrningsfunktionerna för leveranskedjor i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. 
+Det här avsnittet innehåller en lista med hjälpavsnitt och andra resurser för styrningsfunktionerna för leveranskedjor i Microsoft Dynamics 365 for Finance and Operations. 
 
 ## <a name="whats-new-and-in-development"></a>Vad är nytt och under utveckling
 Öppna <a href="https://roadmap.dynamics.com/">översikten till Dynamics 365</a> för att visa vilka nya funktioner som lanseras och nya funktioner under utveckling. 
@@ -106,7 +106,7 @@ Det finns många avsnitt om tillverkning och hantering av underleverantörer i <
 -  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/msd365optgtstcostacc/">Praktiska övningar för kostnadsredovisning</a> 
 -  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/leanmanufkanban365opt/">Lean Manufacturing: CTP (Capable To Promise) och tidsplanering av kanban-jobb</a> 
 -  <a href="https://mbs.microsoft.com/customersource/northamerica/AX/learning/documentation/white-papers/365operationsbomcalsheet/">Strukturlisteberäkning med hjälp av kostnadsredovisningsblad</a>
--  <a href="https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/white-papers/MobilityWarehouse/">Rörligheten på lagerstället underlättas av Microsoft Dynamics 365 for Finance and Operations, Enterprise edition</a>
+-  <a href="https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/white-papers/MobilityWarehouse/">Rörligheten på lagerstället underlättas av Microsoft Dynamics 365 for Finance and Operations</a>
 
 ## <a name="elearning-courses"></a>E-utbildningskurser
 Mer information om utbildning för Microsoft Dynamics 365 for Finance and Operations finns på <a href="https://mbspartner.microsoft.com/AX/LearningPlans/"> utbildningsportalen för Microsoft Dynamics</a>. (kräver CustomerSource-konto) 
