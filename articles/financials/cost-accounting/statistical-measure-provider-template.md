@@ -20,10 +20,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 2c0a00b6a1956f1f22a50951308c434c3f0eefc4
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: baefad4efd51661c236459493b7f02747593bbab
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -73,7 +73,7 @@ Här följer några exempel på vanliga statistiska dimensionsmedlemmar.
 
 ## <a name="statistical-measure-provider-template"></a>Providermall för statistisk mätning
 
-Statistiska mätningar kan ha sitt ursprung i många typer av källor. Microsoft Dynamics 365 for Finance and Operations, Enterprise edition är en stor källa för att extrahera statistiska mätningar från. Du kan använda en providermall för statistisk mätning för att enkelt konfigurera de statistiska mätningar du vill extrahera.
+Statistiska mätningar kan ha sitt ursprung i många typer av källor. Microsoft Dynamics 365 for Finance and Operations är en stor källa för att extrahera statistiska mätningar från. Du kan använda en providermall för statistisk mätning för att enkelt konfigurera de statistiska mätningar du vill extrahera.
 
 Definitionen av en providermall för statistisk mätning kan återanvändas i flera statistiska dimensionsmedlemmar.
 
@@ -132,13 +132,13 @@ Innan du kan hämta statistiska mätningar till kostnadsredovisningen måste du 
 > [!NOTE]
 > I det här exemplet skapar vi en relation för en **Faktisk version**.
 
-Gå till **Huvudbok för kostnadsredovisning** \> **Faktisk version** \> **Hantera** \> **Statistiska mätningar** för att upprätta relationen. I det här scenariot markerar du datakopplingen **Dynamics 365 for Finance and Operations, Enterprise edition – statistiska mätningar**, eftersom vi vill hämta data från Finance and Operations.
+Gå till **Huvudbok för kostnadsredovisning** \> **Faktisk version** \> **Hantera** \> **Statistiska mätningar** för att upprätta relationen. I det här scenariot markerar du datakopplingen **Dynamics 365 for Finance and Operations – statistiska mätningar**, eftersom vi vill hämta data från Finance and Operations.
 
 **Datakälla**
 
 | Namn        | Datakoppling                                                                     | Statistikdimensionsmedlem |
 |-------------|------------------------------------------------------------------------------------|------------------------------|
-| Heltidsanställda D365FO | Dynamics 365 for Finance and Operations, Enterprise edition – statistiska mätningar | Heltidsanställda                         |
+| Heltidsanställda D365FO | Dynamics 365 for Finance and Operations – Statistiska åtgärder | Heltidsanställda                         |
 
 **Dataproviderkonfiguration**
 
@@ -220,13 +220,13 @@ Innan du kan hämta statistiska mätningar till kostnadsredovisningen måste du 
 > [!NOTE]
 > I det här exemplet skapar vi en relation för en **Faktisk version**.
 
-Gå till **Huvudbok för kostnadsredovisning** \> **Faktisk version** \> **Hantera** \> **Statistiska mätningar** för att upprätta relationen. I det här scenariot markerar du datakopplingen **Dynamics 365 for Finance and Operations, Enterprise edition – statistiska mätningar**, eftersom vi vill hämta data från Finance and Operations.
+Gå till **Huvudbok för kostnadsredovisning** \> **Faktisk version** \> **Hantera** \> **Statistiska mätningar** för att upprätta relationen. I det här scenariot markerar du datakopplingen **Dynamics 365 for Finance and Operations – statistiska mätningar**, eftersom vi vill hämta data från Finance and Operations.
 
 **Datakälla**
 
 | Namn           | Datakoppling                                                                     | Statistikdimensionsmedlem |
 |----------------|------------------------------------------------------------------------------------|------------------------------|
-| Packkopia D365FO | Dynamics 365 for Finance and Operations, Enterprise edition – statistiska mätningar | Packkopia                      |
+| Packkopia D365FO | Dynamics 365 for Finance and Operations – Statistiska åtgärder | Packkopia                      |
 
 Systemet känner igen att ProdRouteTrans är ett register där varje post tillhör en separat juridisk person. Därför uppmanas du att välja den juridiska person som transaktionerna ska importeras från.
 

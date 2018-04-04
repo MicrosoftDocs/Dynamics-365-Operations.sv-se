@@ -19,10 +19,10 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 1212a46cc937b9ccc6ebfa9cc4b89b931f144130
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: c7de1d7e57a2a32c339bc576f929958b9de91fcc
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 11/03/2017
 
 Det här avsnittet innehåller en presentation av begreppet projektofferter, som du kan använda för att skapa ett attraktivt erbjudande för en kund som ett första steg i projektfasen. En projektoffert kan inkludera många artiklar och tjänster som ska offereras, grundläggande kontaktuppgifter, särskilda handelsavtal och rabatter samt eventuella skatter och tilläggsavgifter. 
 
-Förmågan att övervaka, granska och kontrollera försäljningsförloppet för projektofferter och order är en viktig del av projekthanteringen. I Microsoft Dynamics 365 for Finance and Operations, Enterprise edition finns olika verktyg som hjälper dig med detta. Exempelvis korrekta referensdatadefinitioner (offerttyper, offertens ursprung och prognos och sannolikhet) hjälper dig att analysera försäljningsförloppet. Dessa verktyg kan du använda för att kategorisera anledningarna till varför en projektoffert accepterades eller avslogs och avgöra offertens potentiella värde. 
+Förmågan att övervaka, granska och kontrollera försäljningsförloppet för projektofferter och order är en viktig del av projekthanteringen. I Microsoft Dynamics 365 for Finance and Operations finns olika verktyg som hjälper dig med detta. Exempelvis korrekta referensdatadefinitioner (offerttyper, offertens ursprung och prognos och sannolikhet) hjälper dig att analysera försäljningsförloppet. Dessa verktyg kan du använda för att kategorisera anledningarna till varför en projektoffert accepterades eller avslogs och avgöra offertens potentiella värde. 
 
 I en projektoffert anger du tjänster, grundläggande kontaktinformation, särskilda handelsavtal och rabatter samt uppskattade skatter och tillägg för ett projekt. Du kan också välja aktiviteter eller uppgifter för ett projekt och skapa en hierarki med uppgifter och underaktiviteter. För varje aktivitet kan du ange detaljer om timingen och tidslängd på aktiviteten, samt kompetenser och erfarenhet som krävs för arbetstagare som utför aktiviteten. 
 

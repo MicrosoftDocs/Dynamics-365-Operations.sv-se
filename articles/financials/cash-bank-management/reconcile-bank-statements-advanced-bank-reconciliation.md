@@ -1,6 +1,6 @@
 ---
 title: "Stämma av bankutdrag med hjälp av avancerad bankavstämning"
-description: "Med hjälp av den avancerade bankavstämningen kan du importera elektroniska bankutdrag och utföra automatiskt avstämning mot banktransaktioner i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Det här ämnet innehåller en beskrivning av avstämningsprocessen."
+description: "Med hjälp av funktionen Avancerad bankavstämning kan du importera elektroniska bankutdrag och stämma av dem automatiskt mot transaktioner i Microsoft Dynamics 365 for Finance and Operations. Det här ämnet innehåller en beskrivning av avstämningsprocessen."
 author: saraschi2
 manager: AnnBe
 ms.date: 01/11/2018
@@ -19,19 +19,19 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b6c1b89256ab4b258f2901e47009a0eed573bd53
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: ed3a1fae6ca30b9411fde47e7ef8a08150d7d748
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
-# <a name="reconcile-bank-statements-by-using-advanced-bank-reconciliation"></a>Stäm av bankutdrag med hjälp av avancerad bankavstämning
+# <a name="reconcile-bank-statements-by-using-advanced-bank-reconciliation"></a>Stämma av bankutdrag med hjälp av avancerad bankavstämning
 
 [!include[banner](../includes/banner.md)]
 
 
-Med hjälp av den avancerade bankavstämningen kan du importera elektroniska bankutdrag och utföra automatiskt avstämning mot banktransaktioner i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Det här ämnet innehåller en beskrivning av avstämningsprocessen.  
+Med hjälp av funktionen Avancerad bankavstämning kan du importera elektroniska bankutdrag och stämma av dem automatiskt mot transaktioner i Microsoft Dynamics 365 for Finance and Operations. Det här ämnet innehåller en beskrivning av avstämningsprocessen.  
 
 <a name="import-an-electronic-bank-statement"></a>Importera ett elektronisk bankutdrag
 -----------------------------------

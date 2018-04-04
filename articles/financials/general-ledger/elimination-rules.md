@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 818572a8d1f790aaa7c6e4befc1d2222a1c35c50
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 882b8f21be94b8cbb0c162c965ffc129b47d7edf
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -132,7 +132,7 @@ Din juridiska person, juridisk person A, säljer prylar till en annan juridisk p
 Alla dessa transaktioner skapar koncerninterna transaktioner som bokförs på förfaller till- och förfaller från-konton. Dessutom kan dessa transaktioner kanske omfatta påläggs- och nedsättningsbelopp när beloppet för den koncerninterna försäljningen inte är lika med kostnaden för de varor som sålts.
 
 ## <a name="set-up-elimination-rules"></a>Ställ in elimineringsregler
-När du ställer in elimineringsregler i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition rekommenderar vi att du skapar en ekonomisk dimension som särskilt avser eliminering. De flesta kunder kallar den Handelspartner eller något liknande. Om du inte vill använda en ekonomisk dimension, se då till att ha huvudkonton som gäller endast för koncerninterna transaktioner. 
+När du ställer in elimineringsregler i Microsoft Dynamics 365 for Finance and Operations rekommenderar vi att du skapar en ekonomisk dimension som särskilt avser eliminering. De flesta kunder kallar den Handelspartner eller något liknande. Om du inte vill använda en ekonomisk dimension, se då till att ha huvudkonton som gäller endast för koncerninterna transaktioner. 
 
 Inställningar för elimineringar finns i området Inställningar i modulen Konsolideringar. När du anger en beskrivning för regeln måste du välja det företag som elimineringsjournalen ska bokföra till. Detta bör vara ett företag som har **Använd för ekonomisk elimineringsprocess** markerat i inställningarna för juridisk enhet. 
 

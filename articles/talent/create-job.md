@@ -19,10 +19,10 @@ ms.search.region: Global
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 962b3084c5340813d1697cab680621350510d4b9
+ms.sourcegitcommit: 812db9f1d319e4d16f83700a7153a0a3b318963e
+ms.openlocfilehash: aaa8bdedc31ee03e96a0f7a5e78f25f888913e71
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/23/2018
 
 ---
 
@@ -42,7 +42,7 @@ Viss jobbinformation, exempelvis befattning, typ och funktion, har giltighetsdat
 ## <a name="job-titles"></a>jobbtitlar
 Innan du skapar jobb måste du ställa in titlar för jobben. Befattningar ärver jobbtitlar från jobben som befattningarna är kopplade till. 
 
-Underhåll jobbtitlar med hjälp av sidan **Titlar**, som du kan öppna genom att använda sökfunktionen. På sidan **Titlar ** anger du de rubriker som du vill använda för dina jobb.
+Underhåll jobbtitlar med hjälp av sidan **Titlar**, som du kan öppna genom att använda sökfunktionen. På sidan **Titlar** anger du de rubriker som du vill använda för dina jobb.
 
 ## <a name="job-types"></a>Jobbtyper
 Du använder jobbtyper för att gruppera liknande jobb i kategorier. Jobbtyper krävs inte. Om du tänker använda jobbtyper när du ställer in berättiganderegler för kompensationshantering bör du ställa in jobbtyper innan du ställer in jobb. Några exempel på jobbtyper är heltid och deltid, eller lön och timpenning. Du kan underhålla jobbtyper med hjälp av sidan **Jobbtyper**. På sidan **Jobbtyper** anger du ett namn och en kort beskrivning för jobbtypen. I fältet **Befrielsestatus** väljer du ett av följande alternativ för att ange befrielsestatusen Fair Labor Standards Act (FLSA) befrielsestatus för jobb som har den här jobbtypen:
@@ -91,6 +91,6 @@ Du kan underhålla jobbuppgifter med hjälp av sidan **Jobbuppgifter**. På sida
 ## <a name="areas-of-responsibility"></a>Ansvarsområden
 Använd ansvarsområden för att indikera arbetsroller, processer och produkter som en arbetare i en befattning bär ansvar för. Till exempel: För ett jobb vid namn "Revisor" kan ett ansvarsområde vara "Ekonomisk rapporteringen för produkt A”. Du underhåller ansvarsområden med hjälp av sidan **Ansvarsområden**, som du hittar genom att använda sökfunktionen. På sidan **Ansvarsområden** anger du ett namn och en beskrivning för ansvarsområdet. Om du vill kan du ange ytterligare information i fältet **Anteckningar**. Anteckningarna kan uppdateras för ett specifikt projekt utan att ändra de anteckningar som du har angett.
 
-
-
+## <a name="steps-for-creating-a-job"></a>Steg för att skapa ett jobb
+Hänvisa till ämnet [Definiera nya jobb](../fin-and-ops/hr/tasks/define-new-jobs.md) för stegvisa anvisningar om hur du skapar ett nytt jobb. 
 

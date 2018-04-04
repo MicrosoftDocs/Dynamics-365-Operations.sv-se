@@ -18,10 +18,10 @@ ms.author: v-lenest
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: db48eec38185692f5d3f67503feba64bcdd71035
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 3dc0b968fdf217554b350a152195a4b3d235fdf0
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 11/03/2017
 
 Det här avsnittet innehåller en översikt över funktioner med vilka du kan stämma av betalningsinformation från banker i format som används av europeiska länder.
 
-Du kan importera transaktioner från banker och kvitta dessa transaktioner mot befintliga transaktioner i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. I Europa kan du göra detta i följande fall:
+Du kan importera transaktioner från banker och kvitta dessa transaktioner mot befintliga transaktioner i Microsoft Dynamics 365 for Finance and Operations. I Europa kan du göra detta i följande fall:
 
 -   Importera bankutdrag
 -   Importera betalningar

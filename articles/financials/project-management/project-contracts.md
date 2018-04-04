@@ -1,6 +1,6 @@
 ---
 title: Projektkontrakt
-description: "Det här ämnet ger exempel på projektkontrakten som går att skapa för olika typer av projekt och finansieringskällor och hur du hanterar avtal och fakturaprojektkunder i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition."
+description: "Det här ämnet beskriver och ger exempel på projektkontrakten som går att skapa för olika typer av projekt och finansieringskällor och hur du hanterar avtal och fakturaprojektkunder i Microsoft Dynamics 365 for Finance and Operations."
 author: KimANelson
 manager: AnnBe
 ms.date: 11/03/2017
@@ -19,10 +19,10 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 3a1bfd4bd5f396c05277159ac112eaa8197d5818
-ms.openlocfilehash: c8328bd2d93bbe763e629248edc1b7b4576005ae
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: e46393b9ac8797bf12cca12099d177980b75ba38
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 11/03/2017
 [!include[banner](../includes/banner.md)]
 
 
-Den här artikeln ger exempel på projektkontrakten som går att skapa för olika typer av projekt och finansieringskällor och hur du hanterar avtal och fakturaprojektkunder i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition.
+Den här artikeln beskriver och ger exempel på projektkontrakten som går att skapa för olika typer av projekt och finansieringskällor och hur du hanterar avtal och fakturaprojektkunder i Microsoft Dynamics 365 for Finance and Operations.
 
 Typen av projektet som du skapar för ett projektavtal bestämmer vilken metod som används för att faktura projektkunderna. Du kan ändra ett projektavtal och det relaterade projektet, men du kan inte ändra projekttypen. 
 

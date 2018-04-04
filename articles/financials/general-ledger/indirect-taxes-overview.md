@@ -19,10 +19,10 @@ ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 1eb30ccbaa51bf794c7b3ea2be3fe749fb8ff88d
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 02d28aef2316d7cfe5ad4eb45272dc1a22c96789
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -74,7 +74,7 @@ På varje transaktion (försäljnings-/inköpsdokumentrader, journaler och så v
 På varje transaktion kan du slå upp den beräknade momsen genom att öppna sidan **Momstransaktion**. Du kan slå upp momsen för en dokumentrad eller för hela dokumentet. För vissa dokument (exempelvis,leverantörsfaktura och allmänna journaler) kan du justera den beräknade momsen om originaldokumentet visar avvikande belopp.
 
 ## <a name="sales-tax-settlement-and-reporting"></a>Momskvittning och rapportering
-Moms måste rapporteras och betalas till skattemyndigheten med regelbundna intervall (månad, kvartal och så vidare). Microsoft Dynamics 365 for Finance and Operations, Enterprise edition innehåller de funktioner som gör att du kan kvitta momskonton för intervallet och förskjuta saldon till momskvittningskontot, enligt uppgifterna i redovisningsbokföringsgrupperna. Du kan använda den här funktionen på sidan **Kvitta och bokföra moms**. Du måste ange en momskvittningsperiod för vilken moms ska kvittas. 
+Moms måste rapporteras och betalas till skattemyndigheten med regelbundna intervall (månad, kvartal och så vidare). Microsoft Dynamics 365 for Finance and Operations innehåller de funktioner som gör att du kan kvitta momskonton för intervallet, och förskjuta saldon till momskvittningskontot, enligt uppgifterna i redovisningsbokföringsgrupperna. Du kan använda den här funktionen på sidan **Kvitta och bokföra moms**. Du måste ange en momskvittningsperiod för vilken moms ska kvittas. 
 
 När momsen har betalats, ska saldot för momskvittningskontot balanseras mot bankkontot. Om skattemyndigheten som anges i momskvittningsperioden hör till ett annat leverantörskonto, bokförs momssaldot som en öppen leverantörsfaktura och inkluderas i det vanliga betalningsförslaget.
 

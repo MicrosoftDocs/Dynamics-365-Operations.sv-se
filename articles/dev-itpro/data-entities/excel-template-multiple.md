@@ -1,6 +1,6 @@
 ---
 title: "Importera data från Excel datatabellmallar med flera kalkylblad"
-description: "Det här avsnittet beskriver hur du importerar data med hjälp av Excel datatabellmallar i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition."
+description: "Det här avsnittet beskriver hur du importerar data med hjälp av Excel datatabellmallar i Microsoft Dynamics 365 for Finance and Operations."
 author: Sunil-Garg
 manager: AnnBe
 ms.date: 01/01/2018
@@ -18,10 +18,10 @@ ms.author: sunilg
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
 ms.translationtype: HT
-ms.sourcegitcommit: af7f9a373496eee4df354d5dd9e5a25c51317c43
-ms.openlocfilehash: b314a649829dd14a525923802e19b847dc5a115e
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 2aefea9373df20bd3e99026e30aed096dcea9814
 ms.contentlocale: sv-se
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 02/27/2018
 
 [!include[banner](../includes/banner.md)]
 
-Datahantering i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition har stöd för Microsoft Excel-mallar för datatabeller. Mallarna kan innehålla ett eller flera kalkylblad. Mallar med flera kalkylblad används ofta när det är lämpligt att hantera data i en fil och importera den till flera datatabeller. Ett exempel är platser och lagerställen.
+Datahantering i Microsoft Dynamics 365 for Finance and Operations har stöd för Microsoft Excel-mallar för datatabeller. Mallarna kan innehålla ett eller flera kalkylblad. Mallar med flera kalkylblad används ofta när det är lämpligt att hantera data i en fil och importera den till flera datatabeller. Ett exempel är platser och lagerställen.
 
 ## <a name="upload-a-file-once-and-map-it-to-all-entities"></a>Överför en fil en gång och koppla den till alla entiteter
 Låt oss ta ett exempel där det finns en Excel-fil med kalkylblad kallat **Platser** och **Lagerställen**. Om du vill installera dataimportprojektet ska du lägga till den första datatabellen **platser** och överföra filen. Du kan välja **platser** som kalkylblad som ska användas för den här entiteten.

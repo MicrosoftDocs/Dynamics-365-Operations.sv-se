@@ -19,10 +19,10 @@ ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 82c2fab72923cfec135e207dfe194fda7d16e8e9
+ms.sourcegitcommit: 8a24f8adc4f7886a1f942d83f7a4eb12e7034fcd
+ms.openlocfilehash: d8cf283321b81c377498cd449b098f8fac1fe01f
 ms.contentlocale: sv-se
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/22/2018
 
 ---
 
@@ -41,6 +41,8 @@ Följande kolumner anger var operationerna kan startas:
 - **Knappsats** – operationen kan tilldelas till knappar i kassaknappsatser som ingår i en kassaskärmlayout.
 - **Transaktionsskärmen** – operationen kan startas från kassaknappsatser som har konfigurerats på kassatransaktionsskärmen.
 - **Välkomstskärmen** – operationen kan startas från kassaknappsatser som har konfigurerats på kassavälkomstskärmen.
+
+Obs! Åtgärderna i listan nedan gäller den senaste versionen av Dynamics 365 for Retail. Vissa operationer kan ha ändrats eller kanske inte är tillgängliga i tidigare versioner.
 
 | ID | Åtgärd | beskrivning | Knappsats | Transaktionsskärm | Välkomstskärm | Tillgänglig offline | Språkspecifik  |
 |----|-----------|-------------|-------------|--------------------|----------------|-------------------|-----------------|
@@ -105,6 +107,7 @@ Följande kolumner anger var operationerna kan startas:
 | 703 | Lås kassa | Lås det aktuella registret så att det inte kan användas, men logga inte ut den aktuella användaren. | Nr | Nr | Nr | Ja | Nr |
 | 701 | Logga ut | Logga ut den aktuella användaren från registret. | Ja | Ja | Ja | Ja | Nr |
 | 521 | Förmånskortspoäng saldo | Visa poängsaldot på det angivna bonuskortet. | Ja | Ja | Nr | Nr | Nr |
+| 918 | Hantera skift | Visa en lista över aktiva, uppskjutna och skift som har stängts dolt. | Ja | Ja | Ja | Nr | Nr |
 | 914 | Minimera kassafönstret | Den här operationen stöds inte. | Inte tillämpligt | Inte tillämpligt | Inte tillämpligt | Inte tillämpligt | Nr |
 | 1000 | Öppna kassalåda | Utför en "ingen försäljning"-operation och öppna den valda kassalådan. | Ja | Ja | Ja | Ja | Nr |
 | 928 | Orderuppfyllelse | Den här åtgärden låter användare plocka, packa, skicka eller återkalla order för hämtade i butik. | Ja | Ja | Ja | Nr | Nr |
@@ -162,7 +165,6 @@ Följande kolumner anger var operationerna kan startas:
 | 638 | Ange säljare på rad | Den här operationen låter användaren välja ett av de berättigade provisionssäljgrupperna (säljare) för den nuvarande valda raden. | Ja | Ja | Nr | Ja | Nr |
 | 630 | Leverera alla produkter | Anger uppfyllelseläget till **leverans** för alla radartiklar. | Ja | Ja | Nr | Ja\* | Nr |
 | 629 | Leverera valda produkter | Ange uppfyllelseläget till **Leverans** för valda rader. | Ja | Ja | Nr | Ja\* | Nr |
-| 918 | Visa skift som har stängts dolt | Visa en lista över skift som är hemligt stängt. | Ja | Ja | Ja | Nr | Nr |
 | 115 | Visa journal | Visa butikens journal. Du kan visa transaktioner, skriva ut kvitton och presentkvitton och återkalla för retur. | Ja | Ja | Ja | Ja\*\* | Nr |
 | 802 | Lagerinventering | Den här operationen låter användaren skapa eller ändra lagrets inventeringsjournaler för fysiskt lager eller rullande inventeringar. | Ja | Ja | Ja | Nr | Nr |
 | 401 | Undermeny | Denna operation tar användaren till en annan länkad knappsats. | Ja | Ja | Ja | Ja | Nr |

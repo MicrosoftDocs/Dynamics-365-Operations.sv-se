@@ -19,10 +19,10 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 0069246a60f1db6297df45fa57cd52d90cdb4ab5
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 89a13ad5a1d3cb7f93a469d33530ec99b39160da
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -33,7 +33,7 @@ ms.lasthandoff: 11/03/2017
 
 Hur och när transaktioner kvittas kan vara komplexa ämnen så det är nödvändigt att du förstår och definierar parametrarna korrekt så att de uppfyller dina verksamhetskrav. Det här avsnittet ger en beskrivning av de parametrar som används för kvittning av både Leverantörsreskontra och Kundreskontra. 
 
-Följande parametrar påverkar hur kvittningar bearbetas i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Kvittningen är en process som kvittar en faktura mot en betalning eller kreditfaktura. Dessa parametrar finns i området **Kvittning** på sidorna **Parametrar för leverantörsreskontra** och **Parametrar för leverantörsreskontra**.
+Följande parametrar påverkar hur kvittningar bearbetas i Microsoft Dynamics 365 for Finance and Operations. Kvittningen är en process som kvittar en faktura mot en betalning eller kreditfaktura. Dessa parametrar finns i området **Kvittning** på sidorna **Parametrar för leverantörsreskontra** och **Parametrar för leverantörsreskontra**.
 
 -   **Automatisk kvittning** – Ställ in det här alternativet på **Ja** om en transaktion ska kvittas automatiskt mot andra öppna transaktioner när den bokförs. Om det här alternativet ställs in på **Nej**, kan användarna manuellt kvitta transaktioner när de anger betalningar eller senare, via sidan **Kvitta transaktioner**.
 -   **Administration av kassarabatt** – Ange hur en [kassarabatt ska hanteras när en faktura överbetalas](cash-discount-handling-overpayments.md). För överbetalningar kan kassarabatten minskas, behandlas som en differens eller kvarstå på kontot för leverantören eller kunden.

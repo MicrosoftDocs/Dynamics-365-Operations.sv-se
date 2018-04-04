@@ -16,10 +16,10 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 2e269ef7b33b4d7e171d284d68d28c825c2fe86c
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 799dd89433ff561fd8a5cc5c082165ef9bb74923
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 # <a name="modify-a-demand-forecast-manually"></a>Ändra en efterfrågeprognos manuellt
@@ -44,6 +44,6 @@ I den här proceduren visas hur du ändrar prognosen för en artikel. Det demons
 ## <a name="modify-the-forecast-in-excel"></a>Ändra prognosen i Excel
 1. Klicka på Öppna i Microsoft Office.
 2. Klicka på Redigera en efterfrågeprognos i Excel.
-    * I Excel kan du lägga till, ta bort och redigera efterfrågeprognosrader. Om du inte kan se data i Excel måste du logga in i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition med alternativet "Håll mig inloggad" aktiverat och du måste lita på dataanslutningsappen.  
+    * I Excel kan du lägga till, ta bort och redigera efterfrågeprognosrader. Om du inte kan se data i Excel måste du logga in i Microsoft Dynamics 365 for Finance and Operations med alternativet "Håll mig inloggad" aktiverat och du måste lita på dataanslutningsappen.  
 
 

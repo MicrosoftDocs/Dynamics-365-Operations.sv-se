@@ -18,10 +18,10 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: ad76f286d16b149affa110aef75874a52b66798f
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 34dac634e09a8daa8a22b9f1efbc18ca44444e21
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -54,7 +54,7 @@ Använd sidan **Ställ in beräkning för förfallodatum för fakturautfärdande
 Du kan ställa in kontrollparametrar som används för att se till att kundfakturor och kreditnotor för kundtransaktioner genereras inom den angivna tidsperioden efter att leveransen har gjorts. Du kan hitta dessa parametrar i området **Datumkontroll för faktura** på sidan **Parametrar för kundreskontra**.
 
 ## <a name="example"></a>Exempel
-Skapa en datumintervallkod och en beräkningsregel med följande inställningar för att ställa in Microsoft Dynamics 365 for Finance and Operations, Enterprise edition för att beräkna förfallodatum för fakturautfärdande på inomeuropeiska (EU) leveranser planerade på den 15:e dagen i månaden efter det att artiklarna har levererats.
+Skapa en datumintervallkod och en beräkningsregel med följande inställningar för att ställa in Microsoft Dynamics 365 for Finance and Operations för att beräkna förfallodatum för fakturautfärdande på inomeuropeiska (EU) leveranser planerade på den 15:e dagen i månaden efter det att artiklarna har levererats.
 
 ### <a name="date-interval-code"></a>Datumintervallkod
 

@@ -1,6 +1,6 @@
 ---
 title: Startsidan Organisationsadministration
-description: "Detta avsnitt presenterar resurser som hjälper dig att använda Microsoft Dynamics 365 for Finance and Operations, Enterprise edition i din organisation."
+description: "Det här avsnittet hänvisar till resurser som hjälper dig att använda Microsoft Dynamics 365 for Finance and Operations, Enterprise edition i organisationen."
 author: sericks007
 manager: AnnBe
 ms.date: 08/18/2017
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f1cff2388b02ff6dfd52a39b7f3ea90f10807096
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: a2c1d846527eac4db0a043c7f1c51da0e73bd796
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 11/03/2017
 [!include[banner](../includes/banner.md)]
 
 
-Detta avsnitt presenterar innehåll som hjälper avancerade användare och administratörer att konfigurera Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Innehållet hjälper dem att konfigurera systemet så att det arbetar snabbt och effektivt inom din organisation eller företag.
+Detta avsnitt presenterar innehåll som hjälper avancerade användare och administratörer att konfigurera Microsoft Dynamics 365 for Finance and Operations. Innehållet hjälper dem att konfigurera systemet så att det arbetar snabbt och effektivt inom din organisation eller företag.
 
 Stora delar av det innehåll som anges här avser funktioner i modulen **Organisationsadministration**. Det finns emellertid ett antal uppgifter, exempelvis att skapa och använda en bokföringsmall, som kan utföras i valfri modul i syfte att hjälpa din organisation att arbeta mer effektivt. 
 

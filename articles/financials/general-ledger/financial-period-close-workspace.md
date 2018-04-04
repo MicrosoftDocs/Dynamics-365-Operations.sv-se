@@ -19,10 +19,10 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 6a03274da9b81bf71b32a62f4ebba2a374688ae5
-ms.openlocfilehash: 8b6c14d41cac13e7c1fb5a580759514d46d776ee
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: b999fd3c26304b81f24389a83faf73e1658c39b3
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/29/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -89,7 +89,7 @@ Du använder en mall för ekonomisk stängning för att definiera alla aktivitet
 
 Du kan tilldela en uppgift i mallen till ett eller flera företag där uppgiften tillämpas. Om en annan person tilldelas att slutföra arbetsinsatsen i respektive företag, kan det vara en god idé att skapa flera åtgärder för samma arbetsinsats. Skapa en uppgift för varje företag. 
 
-Menyobjektet **Uppgiftslänk** är associerat med uppgiftens arbetsinsats, och kan användas för att gå direkt till motsvarande sida från aktivitetslänken på arbetsytan. En avslutningsaktivitet i syfte att köra valutaomvärderingsprocessen för leverantörsreskontra kan exempelvis kopplas i till tillhörande sida för **Omvärdering i utländsk valuta** i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Du kan även länka till en extern URL-adress. 
+Menyobjektet **Uppgiftslänk** är associerat med uppgiftens arbetsinsats, och kan användas för att gå direkt till motsvarande sida från aktivitetslänken på arbetsytan. En avslutningsaktivitet i syfte att köra valutaomvärderingsprocessen för leverantörsreskontra kan exempelvis kopplas i till tillhörande sida för **Omvärdering i utländsk valuta** i Microsoft Dynamics 365 for Finance and Operations. Du kan även länka till en extern URL-adress. 
 
 > [!TIP]
 > Om du vill länka en viss rapport från en hanteringsrapportör till en bokslutsuppgift, kan du använda rapportwebbadressen. För att öppna rapportwebbadressen öppnar du rapporten i rapportdesignern och klickar på **Fil** &gt; **Visa rapport** för att öppna rapporten i en webbläsare. Du kan sedan kopiera URL:n i webbläsarens adressfält och klistra in den i **uppgiftlänkens** **URL**-fält. 

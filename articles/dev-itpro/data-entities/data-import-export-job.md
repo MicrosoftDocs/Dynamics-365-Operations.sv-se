@@ -16,10 +16,10 @@ ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e444168f249e798fa68b9b082556aa8e5e7d8113
-ms.openlocfilehash: 0e1c5120bf8558b955b66e059a8be8bbec2c2ce1
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: bd26ac6fd8376fd42467c7a3d2ecd2ec035a4479
 ms.contentlocale: sv-se
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 02/13/2018
 
 [!include[banner](../includes/banner.md)]
 
-Om du vill skapa och hantera dataimport- och dataexportjobb i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, använd då arbetsytan **Datahantering**. Som standard skapar processen för dataimport och -export ett mellanlagringsregister för varje enhet i måldatabasen. Med tillfälliga register kan du kontrollera, rensa eller konvertera data innan du flyttar den.
+Om du vill skapa och hantera dataimport- och dataexportjobb i Microsoft Dynamics 365 for Finance and Operations, använd då arbetsytan **Datahantering**. Som standard skapar processen för dataimport och -export ett mellanlagringsregister för varje enhet i måldatabasen. Med tillfälliga register kan du kontrollera, rensa eller konvertera data innan du flyttar den.
 
 > [!NOTE]
 > I det här avsnittet förutsätts att du känner till [datatabeller](data-entities.md).
@@ -66,7 +66,7 @@ Du kan lägga till specifika enheter i import- eller exportjobb eller välja den
 ### <a name="set-the-data-format-for-the-job"></a>Ange dataformat för jobbet
 När du väljer en enhet markerar du format för de data som ska exporteras eller importeras. Du definierar format via panelen **Inställningar för datakälla**. Många organisationer utgår från de format som ingår som standard i demonstrationsdatauppsättningen. Här följer en lista över några av dessa format:
 
-- AX (för data som måste importeras eller exporteras i samma format som används för Microsoft Dynamics 365 for Finance and Operations, Enterprise edition)
+- AX (för data som måste importeras eller exporteras i samma format som används för Microsoft Dynamics 365 for Finance and Operations)
 - Kolonseparerade
 - CSV
 - Excel

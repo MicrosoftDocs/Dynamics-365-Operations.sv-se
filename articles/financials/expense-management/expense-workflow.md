@@ -1,6 +1,6 @@
 ---
 title: "Arbetsflöde för utgifter"
-description: "Detta avsnitt förklarar hur du kan använda arbetsflödessystemet i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition för att skapa en granskningsprocess för utgiftsrapporter i utgiftshanteraren."
+description: "Detta avsnitt förklarar hur du kan använda arbetsflödessystemet i Microsoft Dynamics 365 for Finance and Operations för att skapa en granskningsprocess för utgiftsrapporter i utgiftshanteraren."
 author: saraschi2
 manager: AnnBe
 ms.date: 09/13/2017
@@ -19,10 +19,10 @@ ms.search.validFrom:
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d60d2f462a1fd27d4655e68aab7f96fb28a34b77
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 6ee607f723659a5b6ecd655ba4fdfca35a4c582d
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 11/03/2017
 
 [!include[banner](../includes/banner.md)]
 
-Du kan använda arbetsflödessystemet i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition för att skapa en granskningsprocess för utgiftsrapporter i utgiftshanteraren. Du kan skapa ett arbetsflöde som utnyttjar följande kriterier i syfte att avgöra vem som får godkänna utgiftsrapporter:
+Du kan använda arbetsflödessystemet i Microsoft Dynamics 365 for Finance and Operations för att skapa en granskningsprocess för utgiftsrapporter i utgiftshanteraren. Du kan skapa ett arbetsflöde som utnyttjar följande kriterier i syfte att avgöra vem som får godkänna utgiftsrapporter:
 
 - Rapporteringshierarki och fördefinierade godkännandenivåer för medarbetare
 - Godkännande på flera nivåer som stöder provisoriska godkännare samt en slutgiltig godkännare

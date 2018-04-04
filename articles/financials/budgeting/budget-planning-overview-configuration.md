@@ -19,10 +19,10 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d904a2fe9411da1fd1a4e5810f7dcea782f1c2f7
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: e874d7353e0d9561ca55f313bfb5209299298169
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -38,7 +38,7 @@ Det här avsnittet introducerar budgetplanering och innehåller information om h
 
 Du gör budgetplanering när du förbereder budgetar som ska implementeras av en organisation. En organisation kan konfigurera budgetplanering och sedan ställa in budgetplaneringsprocesser för att uppfylla organisationens policyer, procedurer och krav för budgetförberedelse. 
 
-När du förstår de begrepp och den terminologi som används i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition blir det enklare att genomföra budgetplaneringen inom din organisation.
+När du förstår de begrepp och den terminologi som används i Microsoft Dynamics 365 for Finance and Operations, blir det enklare att genomföra budgetplaneringen inom din organisation.
 
 ### <a name="key-terms"></a>Nyckeltermer
 

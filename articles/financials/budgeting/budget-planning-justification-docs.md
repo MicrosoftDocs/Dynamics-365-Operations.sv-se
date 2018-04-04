@@ -19,10 +19,10 @@ ms.author: ryansand
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b033f6197e61a6030e12081a9e4f1d820bac458f
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: c4ac839e69440c8d3f1e86007a074999189e391d
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -47,7 +47,7 @@ En budgetplansmall skapas av den budgetansvarige i Microsoft Word och tilldelas 
 
 1.  Klicka på **Design** i Microsoft Dynamics Office-tillägget när du loggar in.
 2.  Använd knappen **Lägg till fält** för rubrikinformation.
-3.  Markera enhetsdatakälla för BudgetPlanJustification och klicka på **Nästa**. **Obs!** Denna enhet krävs för samtliga motiveringsdokument. Andra enheter kan användas, men överföringen tillbaka till Microsoft Dynamics 365 for Finance and Operations, Enterprise edition misslyckas om inte denna enhet ingår.
+3.  Markera enhetsdatakälla för BudgetPlanJustification och klicka på **Nästa**. **Obs!** Denna enhet krävs för samtliga motiveringsdokument. Andra enheter kan användas, men överföringen tillbaka till Microsoft Dynamics 365 for Finance and Operations misslyckas om inte denna enhet ingår.
 4.  Lägg till etiketterna och värdena BudgetPlanName, BudgetPlanPreparer, ResponsibilityCenter och DocumentNumber i Word-dokumentet. **Obs!** Du kan använda dina egna etiketter i stället för standardetiketter vid behov.
 5.  Klicka på **Klart** för att slutföra rubrikavsnittet.
 6.  Klicka på **Lägg till tabell** för att se information på radnivå om budgetplanbelopp.
@@ -61,7 +61,7 @@ En budgetplansmall skapas av den budgetansvarige i Microsoft Word och tilldelas 
 1.  Navigera till **Budgetering** &gt; **Inställningar** &gt; **Budgetplanering** &gt; **Malla för motiveringsdokument** i Finance and Operations.
 2.  Klicka på **Ny** och bläddra till det nya Microsoft Word-dokumentet.
 3.  Ange ett visningsnamn och en beskrivning för mallen. Klicka på **OK**.
-4.  Navigera till **Budgetering** &gt; **Inställningar** &gt; **Budget****planering** &gt; **Budgetplaneringsprocess**.
+4.  Navigera till **Budgetering** &gt; **Inställningar** &gt; **Budget** **planering** &gt; **Budgetplaneringsprocess**.
 5.  Välj den process där justeringsmallen ska användas, och klicka på **Redigera**.
 6.  I fältet **Mall för motiveringsdokument** markerar du önskad mall och sparar.
 

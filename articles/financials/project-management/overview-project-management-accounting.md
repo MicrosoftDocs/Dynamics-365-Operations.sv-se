@@ -19,10 +19,10 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 3a1bfd4bd5f396c05277159ac112eaa8197d5818
-ms.openlocfilehash: 6a2c51d9ffe288dad2db43ecd0a4c8f717c6379a
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 3c4720795313180ba7ad784ea39484d6ffb9ac2f
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -38,7 +38,7 @@ Ett projekt är en grupp aktiviteter som har utformats för att tillhandahålla 
 ## <a name="projects-across-industries"></a>Projekt i flera branscher
 Funktionen för projekthantering och redovisning kan användas i flera branscher, som illustreras nedan. [![Projekt i flera branscher](./media/projects-accross-industries.jpg)](./media/projects-accross-industries.jpg) 
 
-Hos en kundtjänst kan en biljett användas för att beskriva åtgärderna som krävs för att lösa ett ärende. Konsultföretag, till exempel management eller tekniska konsultorganisationer eller reklambyråer kallar sina aktiviteter för projekt. I marknadsföring representerar en kampanj en uppsättning med arbete som måste levereras. I projektbaserad tillverkning innehåller en produktionsorder de olika arbetsmomenten som måste göras för att tillverka en färdig produkt. Oavsett vilket namn som används, ingår det resurser, scheman och kostnader i projekten, och funktionen för projekthantering och redovisning i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition kan hjälpa dig med planeringen, utförandet, och analysen av dessa projekt.
+Hos en kundtjänst kan en biljett användas för att beskriva åtgärderna som krävs för att lösa ett ärende. Konsultföretag, till exempel management eller tekniska konsultorganisationer eller reklambyråer kallar sina aktiviteter för projekt. I marknadsföring representerar en kampanj en uppsättning med arbete som måste levereras. I projektbaserad tillverkning innehåller en produktionsorder de olika arbetsmomenten som måste göras för att tillverka en färdig produkt. Oavsett vilket namn som används, ingår det resurser, scheman och kostnader i projekten, och funktionen för projekthantering och redovisning i Microsoft Dynamics 365 for Finance and Operations kan hjälpa dig med planeringen, utförandet, och analysen av dessa projekt.
 
 ## <a name="project-phases"></a>Projektfaser
 Även om projektflödet nedan gäller externa projekt eller projekt som slutförs för en eller flera kunder, gäller funktionerna även interna projekt med enbart kostnader. 
