@@ -18,10 +18,10 @@ ms.author: rschloma
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: e4459e8be4bfab8e0789744eacd533286b6c05e0
+ms.sourcegitcommit: ba1a3a78d59f3aec91473ba9bb20bda4804ec92e
+ms.openlocfilehash: 0a43f5ff0987ede9f0cb80e5b4854f78e19e329b
 ms.contentlocale: sv-se
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/23/2018
 
 ---
 # <a name="provision-microsoft-dynamics-365-for-talent"></a>Reservera Microsoft Dynamics 365 for Talent
@@ -47,13 +47,14 @@ Mer information om hur du kommer igång med Talent finns i metoden för **Talent
 När du har skapat ett LCS-projekt kan du införa Talent i en miljö.
 
 1. I LCS-projektet väljer du fliken **App-hantering for Talent**.
-2. Talent etableras alltid i en Microsoft PowerApps-miljö, detta i syfte att möjliggöra PowerApps-integrering och -utbyggnad. Om du inte redan har en PowerApps-miljö, följ då stegen i avsnittet ”Skapa en ny PowerApps-miljö (vid behov)” i det här avsnittet innan du fortsätter.
+2. Talent etableras alltid i en Microsoft PowerApps-miljö, detta i syfte att möjliggöra PowerApps-integrering och -utbyggnad. Läs avsnittet ”Välja en PowerApps-miljö” i det här ämnet innan du fortsätter. 
+3. Om du inte redan har en PowerApps-miljö, följ då stegen i avsnittet ”Skapa en ny PowerApps-miljö (vid behov)” i det här avsnittet innan du fortsätter.
 
     > [!NOTE]
     > Om du vill visa befintliga miljöer eller skapa nya miljöer måste den innehavaradministratören som tillhandahåller Talent inneha en PowerApps P2-licens. Om din organisation inte har en licens för PowerApps P2 kan du skaffa en från din CSP eller [Prissättningssidan för PowerApps](https://powerapps.microsoft.com/en-us/pricing/).
 
-3. Välj **Lägg till** och välj sedan den miljö du vill etablera Talent i.
-4. Välj **Ja** för att acceptera villkoren och börja implementeringen.
+4. Välj **Lägg till** och välj sedan den miljö du vill etablera Talent i.
+5. Välj **Ja** för att acceptera villkoren och börja implementeringen.
 
     Den nya miljön visas i listan över miljöer i navigeringsfönstret till vänster. Du kan emellertid inte börja att använda miljön förrän objektets implementeringsstatus uppdateras till **Implementera**. Den här processen tar normalt bara några minuter. Om försörjningprocessen misslyckas måste du kontakta Support.
 
@@ -65,32 +66,64 @@ När du har skapat ett LCS-projekt kan du införa Talent i en miljö.
 > [!NOTE]
 > Miljöer som etableras i Talent genom LCS innehåller inte demodata som är konfigurerade för personaluppgifter (HR) eller som är specifika för Talent. Om du behöver en miljö som innehåller demodata rekommenderar vi att du registrerar dig för den kostnadsfria 60-dagars [utvärderingsmiljön för Talent](https://dynamics.microsoft.com/en-us/talent/overview/). Även om utvärderingsmiljön ägs av den användare som har begärt den, kan andra användare bjudas in via systemets administrationserfarenhet för personalfrågor. Utvärderingsmiljöer innehåller fiktiva data som kan användas för att utforska programmet på ett säkert sätt. De är inte avsedda att användas som produktionsmiljöer. Observera att alla data i miljön tas bort och kan inte återställas när utvärderingstiden upphör att gälla efter 60 dagar. Du kan registrera dig för en ny utvärderingsmiljö när den befintliga miljön har gått ut.
 
+## <a name="select-a-powerapps-environment"></a>Välj en PowerApps-miljö
+
+Integreringen mellan Talent och PowerApps-miljöer låter dig integrera och utöka användningen av Talent-data med verktyg för PowerApps. Att förstå syftet med PowerApps-miljöer kan inte bara hjälpa dig att skapa appar för att utöka Talent, utan kan även hjälpa dig att välja rätt miljö vid tillhandahållande av Talent. Mer information om PowerApps-miljöer, såsom omfattning, åtkomst och att skapa och välja miljö finns i [Vi presenterar PowerApps-miljöer](https://powerapps.microsoft.com/en-us/blog/powerapps-environments/). 
+
+Använd följande riktlinjer när du bestämmer vilka PowerApps-miljöer som ska användas för att distribuera Talent: 
+1. I LCS, välj Hantera miljöer eller gå direkt till PowerApps Administratörscenter, där du kan visa befintliga miljöer och skapa nya miljöer.
+2. En enskild Talent-miljö mappas till en enda PowerApps-miljö.
+3. En PowerApps-miljö "innehåller" Talent-programmet tillsammans med motsvarande PowerApps, Flow och CDS-program. Om PowerApps-miljön tas bort tas även apparna bort.
+4. Dataintegration och teststrategier ska beaktas, till exempel: begränsat läge, UAT, produktion. Därför rekommenderar vi att du noggrant överväger de olika konsekvenserna för distribution, eftersom det inte är lätt att senare ändra vilken Talent-miljö som är mappad till en PowerApps-miljö.
+5. Följande PowerApps-miljöer kan inte användas för Talent och filtreras i urvalslistan i LCS:
+ 
+    **CDS 2.0-miljöer** CDS 2.0 görs offentligt tillgänglig 21 mars 2018, Talent stöder ännu inte CDS 2.0. Du kan visa och skapa CDS 2.0-databaser i PowerApps administratörscenter, men de kan inte användas i Talent. Alternativet att använda CDS 2.0-miljöer i Talent-distributioner kan användas vid en senare tidpunkt.
+   
+ > [!Note]
+ > För att särskilja mellan CDS 1.0- och 2.0-miljöer i administrationsportalen, välj en miljö och leta efter **Uppgifter**. CDS 2.0-miljöer refererar till faktum att ”du kan hantera dessa inställningar i Dynamics 365 administrationscenter” pekar på en instansversion och har ingen flik som för Databas. 
+ 
+   **Standardinställda PowerApps- miljöer** Även om varje innehavare konfigureras automatiskt med en standardmiljö för PowerApps, rekommenderar vi inte att använda dem med Talent eftersom alla innehavare har tillgång till PowerApps-miljön och kanske oavsiktligt förstör produktionsdata när de testar och utforskar integrering med PowerApps eller Flow.
+   
+   **Testkörningsmiljöer** Miljöer med ett namn som ”TestDrive- alias@domain" skapas med en 60 dagars förfalloperiod och upphör att gälla efter den tiden vilket kan orsaka att miljön tas bort automatiskt.
+   
+   **Regioner som inte stöds** För närvarande stöds bara Talent i följande regioner: USA, Europa och Australien.
+  
+6. Det finns inga specifika åtgärder som ska vidtas när du har fastställt den korrekta miljön att använda. Fortsätt försörjningsprocessen. 
+ 
 ## <a name="create-a-new-powerapps-environment-if-required"></a>Skapa en ny PowerApps-miljö (vid behov)
-Integreringen mellan Talent och PowerApps-miljöer låter dig integrera och utöka användningen av Talent-data med verktyg för PowerApps. Att förstå syftet med PowerApps-miljöer hjälper dig skapa appar som uppfyller de krav har du för att utöka Talent. Mer information om PowerApps-miljöer, såsom omfattning, åtkomst och att skapa och välja miljö finns i [Vi presenterar PowerApps-miljöer](https://powerapps.microsoft.com/en-us/blog/powerapps-environments/). När varje innehavare automatiskt skapas i en standardmiljö för PowerApps är kanske inte detta den bästa miljön för distribution av Talent. Dataintegration och strategitester bör beaktas i det här skedet, varför vi rekommenderar att du överväger olika konsekvenser för distribution, eftersom det är svårt att ändra senare. 
 
-Även om varje innehavare automatiskt skapas i en standardmiljö för PowerApps är kanske inte detta den bästa miljön för distribution av Talent. Dataintegration och teststrategier bör beaktas under det här steget. Därför rekommenderar vi att du noggrant överväger de olika konsekvenserna för distribution, eftersom det inte är lätt att senare ändra PowerApps-miljö.
+Kör ett PowerShell-skript om du vill skapa en ny PowerApps-miljö för Talent inom ramen för innehavaradministrationen som har PowerApps Plan 2-licens. Skriptet automatiserar följande steg:
 
-1. I LCS välj **Hantera miljöer**. Du förflyttas till [PowerApps administratörscenter](https://preview.admin.powerapps.com/environments), där du kan visa befintliga miljöer och skapa nya miljöer.
-2. Välj **ny miljö**.
-3. Ange ett unikt namn för miljön och välj den plats du vill implementera på.
 
-    > [!NOTE]
-    > Talent är inte tillgängligt överallt. Därför bör du kontrollera tillgängligheten innan du väljer platsen för din miljö.
+ + Skapande av en PowerApps-miljö
+ + Skapandet av en CDS 1.0-databas
+ + Avmarkera alla exempeldata i CDS 1.0-databasen
 
-4. När du tillfrågas om du vill skapa en databas, markera **Skapa databas** för att skapa databasen Common Data Service (CDS) där delar av dina Talent-data kommer att lagras. Genom att skapa en databas kan du också integrera PowerApps-program i Talent.
-5. Du tillfrågas om vilken åtkomstnivå du vill använda för databasen. Vi rekommenderar att du väljer **Begränsa åtkomst** eftersom detta alternativ hindrar Talent-användare från att få direkt tillgång till känsliga data genom att använda ett PowerApps-program.
-6. Den CDS-databas som skapas innehåller demonstrationsdata som tillför inaktiva anställda och fiktiva adresser (bland annat) i din produktionsmiljö. För att ta bort demonstrationsdatan, följ dessa steg när du är klar med CDS-databasen:
 
-    > [!IMPORTANT]
-    > Om du tidigare skapat en CDS-databas och angett något av företagets produktionsdata i denna, kommer dessa steg att ta bort **alla** data i den valda databasen, även uppgifter om företagets produktion.
+Slutför följande instruktioner för att köra skriptet:
 
-    1. Logga in på [PowerApps](https://preview.web.powerapps.com/home).
-    2. Välj den miljö som du skapade i steg 2 i rullgardinsmenyn i det övre högra hörnet.
-    3. Expandera **Common Data Service** i det vänstra navigeringsfönstret och välj sedan **enheter**.
-    4. Markera ellipsknapen till höger på sidan (**...**) och välj sedan **Rensa alla data**.
-    5. Välj **Ta bort data** för att bekräfta att du vill ta bort dina data. Denna åtgärd tar bort alla demodata som ingår i CDS som standard. Den tar också bort alla andra data som har angetts i den valda databasen.
+1. Hämta filen ProvisionCDSEnvironment.zip från följande plats: [ProvisionCDSEnvironment-skript](https://go.microsoft.com/fwlink/?linkid=870436)  
 
-Du kan nu använda den nya miljön.
+2. Packa upp hela innehållet av filen ProvisionCDSEnviroinment.zip i en mapp.
+
+3. Kör programmet Windows PowerShell eller Windows PowerShell ISE som administratör.
+
+   Besök avsnittet [Ange körningspolicyn](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-6) om du vill veta mer om hur du anger körningspolicy så att skript ska kunna köras.
+  
+4. Navigera inom PowerShell till mappen där du packade upp filen och kör följande kommando och ersätt värden enligt anvisningarna nedan:
+ 
+   ```.\ProvisionCDSEnvironment -EnvironmentName MyNewEnvironment -Location YourLocation```
+
+    
+   **EnvironmentName** bör ersättas med ditt namn på miljön. Detta namn visas i LCS och kommer att visas när användare väljer vilken Talent-miljö som ska användas. 
+
+   **YourLocation** ska ersättas med någon av regionerna som stöds för Talent: USA, Europa, Australien. 
+
+   **– Utförligt** är valfri och ger detaljerad information för att skicka till support om det uppstår problem.
+
+5. Fortsätt försörjningsprocessen.
+ 
+
 
 ## <a name="grant-access-to-the-environment"></a>Bevilja åtkomst till miljön.
 Som standard har den globala administratör som skapade miljön åtkomst till den. Ytterligare användare måste beviljas explicit åtkomst. För att bevilja åtkomst lägger du [till användare](../dev-itpro/sysadmin/tasks/create-new-users.md) och [tilldela dem lämpliga roller](../dev-itpro/sysadmin/tasks/assign-users-security-roles.md) i bas-miljön för HR. Du måste också lägga till dessa användare i PowerApps-miljön så att de kan komma åt Attract- och Onboard-program. Proceduren beskrivs här. Om du behöver hjälp att slutföra stegen läs [introduktion till PowerApps administratörscenter ](https://powerapps.microsoft.com/en-us/blog/introducing-admin-center-for-powerapps/), som är ett blogginlägg.
@@ -101,5 +134,5 @@ Den här proceduren slutförs av den globala administratören som distribuerat T
 2. Markera de relevanta miljöerna.
 3. Tilldela berörda användare rollen **Environment Maker** i fliken **Säkerhet**.
 
-Observera att det sista steget, där du manuellt lägger till användare i en PowerApps-miljö är tillfälligt. Så småningom infogas det automatiskt när du lägger till användare i basprogrammet för personal (Core HR).
+    Observera att det sista steget, där du manuellt lägger till användare i en PowerApps-miljö är tillfälligt. Så småningom infogas det automatiskt när du lägger till användare i basprogrammet för personal (Core HR).
 

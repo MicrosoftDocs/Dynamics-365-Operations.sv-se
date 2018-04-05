@@ -3,7 +3,7 @@ title: "Hantering av skift och kassalåda"
 description: "Den här artikeln innehåller en beskrivning av hur du ställer in och använder de två typerna av skift för butikskassor: delat och fristående. Delade skift kan användas av flera användare på flera ställen, medan fristående skift enbart kan användas av en medarbetare åt gången."
 author: rubencdelgado
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 02/15/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -20,10 +20,10 @@ ms.author: rubendel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b8e12f3f4c2f8f5a596c8994f2a4571d8a907062
+ms.sourcegitcommit: 8a24f8adc4f7886a1f942d83f7a4eb12e7034fcd
+ms.openlocfilehash: c1483d3240d266845cea7789b70c038cb98fdfcc
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/22/2018
 
 ---
 
@@ -99,7 +99,60 @@ Delade skift används i en miljö där flera kassörer delar en kassalåda eller
 9.  Använd åtgärden **Stäm av betalningsmedel** för att ange det totala kontantbeloppet från alla kassalådor som ingår i det delade skiftet.
 10. Använd åtgärden **Avsluta skift** för att avsluta delade skift.
 
+## <a name="shift-operations"></a>Skiftoperationer
+Olika åtgärder kan utföras för att ändra status för ett skift eller för att öka eller minska penningbeloppet i kassalådan. I avsnittet nedan beskrivs dessa skiftåtgärder för Dynamics 365 for Retail Modern POS och Cloud POS.
 
+**Öppna skift**
 
+POS kräver att en användare har ett aktivt, öppet skift för att utföra alla åtgärder som leder till en finansiell transaktion, t.ex en försäljning, retur eller kundorder.  
 
+Vid inloggning i POS kontrollerar systemet först om användaren har ett aktivt skift tillgänglig på den aktuella journalen. Om inte kan användaren sedan välja att öppna ett nytt skift, återuppta ett befintligt skift eller fortsätta att logga in i läget ”utan låda”, beroende på systemkonfigurationen och deras behörigheter.
+
+**Stäm av startbelopp**
+
+Den här åtgärden är ofta den första åtgärden som vidtas i ett nyligen öppnat skift. Användare anger startbeloppet i kassalådan för skiftet. Detta är viktigt eftersom över/underberäkningen som uppstår när du avslutar ett skift tar hänsyn till detta belopp.
+
+**Växelpost**
+
+Växelposter är ej försäljningstransaktioner som utförs i ett aktivt skift och de ökar kontantbeloppet i kassalådan. Ett vanligt exempel på en växelpost är om du vill lägga till ytterligare växel i kassalådan när det börjar ta slut.
+
+**Borttagning av betalningsmedel**
+
+Borttagning av betalningsmedel är ej försäljningstransaktioner som utförs i ett aktivt skift för att minska kontantbeloppet i kassalådan. Detta används oftast tillsammans med en växelpost i ett annat skift. Till exempel Kassa 1 börjar få slut på växel så användaren av Kassa 2 utför en borttagning av betalningsmedel för att minska beloppet i kassalådan. Användaren av Kassa 1 utför sedan en växelpost för att öka sitt belopp:
+
+**Skjut upp skift**
+
+Användare kan skjuta upp sina aktiva skift för att frigöra den aktuella kassan till en annan användare eller flytta sitt skift till en annan kassa (detta kallas ofta för ”flytande kassalåda”). 
+
+Att skjuta upp skift förhindrar eventuella nya transaktioner eller ändringar av skiftet tills det återupptas.
+
+**Återuppta ett skift**
+
+Den här åtgärden tillåter en användare att återuppta ett tidigare avbrutet skift i en kassa som inte redan har ett aktivt skift.
+
+**Kassaavstämning**
+
+Kassaavstämning är åtgärden som användaren utför för att ange det totala beloppet som för närvarande finns i kassalådan, oftast innan skiftet stängs. Detta är det värde som jämförs med det förväntade skiftet om du vill beräkna för högt/för lågt belopp.
+
+**Lämna pengar i kassaskåp**
+
+Säkra insättningar kan utföras när som helst under ett aktivt skift. Den här åtgärden tar bort pengar från kassalådan, så att de kan överföras till en säkrare plats, till exempel ett kassaskåp i ett enskilt rum. Det totala beloppet som registrerats för säkra insättningar finns fortfarande i summorna för skift, men behöver inte räknas som en del av kassaavstämningen.
+
+**Bankinsättning**
+
+Som säkra insättningar utförs bankinsättningar även under aktiva skift. Den här åtgärden tar bort pengar från skiftet för att förbereda för bankinsättningar.
+
+**Stäng skift dolt**
+
+Ett skift som har stängts dolt är ett skift som inte längre aktivt men som inte har stängts helt. Ett skift som har stängts dolt kan inte fortsätta som ett uppskjutet skift, men procedurer som att deklarera utgångsbelopp och kassaavstämning kan göras vid ett senare tillfälle eller från en annan kassa.
+
+Ett skift som har stängts dolt används ofta för att frigöra en kassa för en ny användare eller skift, utan att behöva helt räkna, stämma av eller stänga skiftet först. 
+
+**Stäng skift**
+
+Denna åtgärd beräknar summor för skift, för högt/för lågt belopp och slutför sedan ett aktivt skift eller skift som har stängts dolt. Skift som har stängts dolt kan inte återupptas eller ändras.  
+
+**Hantera skift**
+
+Den här åtgärden låter användare visa alla skift som är aktiva, uppskjutna och som har stängts dolt för butiken. Beroende på vilka behörigheter användarna har kan de utföra åtgärder för deras slutgiltiga stängningsprocedurerna, till exempel kassaavstämning och stängning av skift för skift som har stängts dolt. Åtgärden kommer även att låta användare visa och ta bort ogiltiga skift i det sällsynta fallet att ett skift är kvar i ett dåligt tillstånd efter att ha växlat mellan offline- och online-lägen. Dessa ogiltiga skift innehåller inte någon ekonomisk information eller transaktionsdata för avstämning. 
 

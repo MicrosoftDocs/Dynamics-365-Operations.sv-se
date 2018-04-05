@@ -19,10 +19,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
-ms.openlocfilehash: 42ab7beb8a269cd37fd9100385bd302e4945c1e0
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: b86363004b8702d1a654f2a1da49bba82fc8ff2a
 ms.contentlocale: sv-se
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -46,7 +46,7 @@ Du kan skapa en anbudsförfrågan från planerade order, från en inköpsrekvisi
 
 När du förbereder anbudsförfrågansärendet och lägger till leverantörer väljer du **skicka** på anbudsförfrågansärendet. En journal för anbudsförfrågan skapas för varje leverantör som du har skickat anbudsförfrågan till. Du kan konfigurera utskriftsinställningarna för Skicka-åtgärden om du vill skriva ut en rapport för varje leverantör till ett arkiv, eller skicka en rapport varje leverantörs e-postadress. Dessutom kan du använda anbudsförfråganjournalen för varje leverantör för att generera en rapport som du kan skicka eller skicka om till en leverantör senare. Du kan även konfigurera åtgärden Skicka till att skapa ett svarsblad som leverantören kan fylla i.
 
-Nedan beskrivs processen för hantering av anbudsförfrågningar när leverantörsamarbete inte används. Om datorn är inställd för leverantörssamarbete kan leverantörer antingen ange bud direkt i Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition. Mer information finns i [Samarbeten med kunder](vendor-collaboration-work-customers-dynamics-365-operations.md)
+Nedan beskrivs processen för hantering av anbudsförfrågningar när leverantörsamarbete inte används. Om datorn är inställd för leverantörssamarbete kan leverantörer antingen ange bud direkt i Microsoft Dynamics 365 for Finance and Operations. Mer information finns i [Samarbeten med kunder](vendor-collaboration-work-customers-dynamics-365-operations.md)
  
 Om du måste ändra en anbudsförfrågan när du har skickat den, kan du skicka anbudsförfrågan igen till leverantörer när du är klar med ändringen av två åtgärder: skapa och färdigställ.
 

@@ -19,10 +19,10 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: fa11f1775017dd9bada61340b4bed70ea66a4137
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: a44b3d2ee6e47e71103c7be04b731d4faa79c448
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -61,7 +61,7 @@ Du kan skapa ytterligare prognosbefattningsversioner, som budgetplaner revideras
 
 Är kostnader för budget för definiering kostnadsdetaljer en prognos för befattningen. Dessa uppgifter omfattar den typ av kostnader, hur kostnaden beräknas, och om kostnaden fördelas till flera data, när prognosbefattningen ingår i en budgetrapport plan. 
 
-Specifika här fältet definierar beteendet för det budgeterade kostnader elementet. Varje element budgeterade kostnader tilldelas en kostnadsredovisning av **Tjäna** typen för budget **Förmån****Skatter**, eller **Annat**. Budgetkostnadstyperna är främst avsedd för att beräkna summor. **Prognosbefattningsåsidosättning** värdet anger om belopp på elementet kan ändras på prognosbefattningen. **Allokeringsmetod** Fältet används när en prognos, befattning anges till en budgetrapport plan. Du kan dela upp kostnadsbeloppet till separata budgettransaktioner planrader, som har olika datum, på ett månatligt som sker kvartalsvis, vecka eller som inträffar varannan vecka kvartal. Genom att välja ett startdatum, kostnaden som du tilldelar ett enskilt belopp på startdatumet som anges på prognosbefattningen. 
+Specifika här fältet definierar beteendet för det budgeterade kostnader elementet. Varje element budgeterade kostnader tilldelas en kostnadsredovisning av **Tjäna** typen för budget **Förmån**, **Skatter**, eller **Annat**. Budgetkostnadstyperna är främst avsedd för att beräkna summor. **Prognosbefattningsåsidosättning** värdet anger om belopp på elementet kan ändras på prognosbefattningen. **Allokeringsmetod** Fältet används när en prognos, befattning anges till en budgetrapport plan. Du kan dela upp kostnadsbeloppet till separata budgettransaktioner planrader, som har olika datum, på ett månatligt som sker kvartalsvis, vecka eller som inträffar varannan vecka kvartal. Genom att välja ett startdatum, kostnaden som du tilldelar ett enskilt belopp på startdatumet som anges på prognosbefattningen. 
 
 Beräkningen av budgeterade kostnader elementets kostnadsbelopp använder giltighetsdatum för att aktivera samma kostnadsredovisning det element som ska användas i olika perioder. En enskild huvudkonto tilldelas i varje period, tillsammans med en procentsats eller ett årligt belopp som anger kostnadsbeloppet. Ett element budgeterade kostnader kan använda en procentsats för kostnadsredovisning andra element eller ett årligt belopp, men inte båda. Du kan även ange en årlig gräns. 
 
@@ -96,7 +96,7 @@ Det kostnader för elementet förtjänsten, som valts på kompensationsgruppen, 
 
 ### <a name="creating-forecast-positions-for-existing-positions"></a>Skapa befattningar en befintlig prognos för befattningar
 
-För den mest exakta budgetplaneringen kan du skapa prognosbefattningar med hjälp av information från befintliga befattningar i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, oavsett om befattningen för närvarande är tillsatt eller inte. 
+För den här exaktaste planeringen kan du skapa prognosbefattningar, med hjälp av information från befintliga befattningar i Microsoft Dynamics 365 for Finance and Operations, oavsett om befattningen för närvarande är fylld eller ofylld. 
 
 **Lägga till befintliga befattningar** Funktionen visas alla befattningar för en organisation. Genom att **Fr o m** ange datum, kan du ändra listan med befattningar, så att den innehåller befattningarna som hittats vid ett datum i det förflutna, eller mer allmän, i framtiden (till exempel, början på nästa budgettransaktioner cykeln). Välj en budgetrapport planeringsprocess och budgetering planscenariot, valda befattningar i listan och klicka på om **OK** du vill skapa prognosbefattningar för de valda befattningar. Observera att du kan bara skapa en förväntad befattning för varje befintlig position i en budgetrapport och planeringsprocess situationer. Du kan dock skapa ytterligare versioner, genom att tilldela olika budgettransaktioner planscenarion. 
 

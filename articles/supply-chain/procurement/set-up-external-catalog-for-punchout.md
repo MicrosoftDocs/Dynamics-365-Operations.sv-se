@@ -19,10 +19,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 2c37f0253454a23d90904dd6b000b955146ad121
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 2892feff0ab8845515543af1a71d8f9642113726
 ms.contentlocale: sv-se
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 03/08/2018
 
 [!include[banner](../includes/banner.md)]
 
-Genom att använda den externa katalogen kan du säkerställa att produkt- och prisinformationen som du därefter bearbetar i Dynamics 365 for Finance and Operations, Enterprise edition, juli 2017 är korrekt och aktuell. Rekvisitionen kan sedan godkännas och konverteras till en inköpsorder och en order kan läggas hos leverantören.
+Genom att använda den externa katalogen kan du säkerställa att produkt- och prisinformationen som du därefter bearbetar i Dynamics 365 for Finance and Operations, juli 2017 är korrekt och aktuell. Rekvisitionen kan sedan godkännas och konverteras till en inköpsorder och en order kan läggas hos leverantören.
 
 När den externa katalogen har ställts in och anställd förbereder en rekvisition finns det ett alternativ för att omdirigera till en extern plats, den externa katalogen, och återgå till varukorgen som skapades på den externa platsen. Detta meddelande är baserat på cXML-protokollet och måste ställas in mellan systemen för den köpande och den säljande organisationen
 
@@ -85,7 +85,7 @@ Nedan hittar du en beskrivning av de etiketter som ingår i mallen:
 
 Ett yttre element är ytterligare information, till exempel ett användarnamn som baseras på en användare som stämplar ut. Det yttre elementet anges när utstämplingen inträffar och kan skickas i meddelandet om begärandeinställningar.
 Din leverantör kan ha ett krav för att ta emot ett extrinsic-element i förfrågan om inställningar. I sådana fall bör du lägga till extrinsic-elementet i listan över extrinsic-element i avsnittet **Meddelandeformatet** på sidan **Extern katalog**. Ange ett namn för extrinsic-elementet som leverantören kan känna igen och mappa det till ett värde. Alternativen för värden är: Användarnamn, Användarens e-postadress eller Slumpmässigt värde.
-Mer information om cXML-protokollet finns på: http://cxml.org/
+Mer information om cXML-protokoll hittar du i: http://cxml.org/
 
 ## <a name="post-back-message"></a>Retroaktivt meddelande
 Det retroaktiva meddelandet är det meddelande som tas emot från leverantören när användaren checkar ut från den externa webbplatsen och återgår till Finance and Operations. Retroaktiva meddelanden kan inte konfigureras. Meddelandena är baserade på cXML-protokolldefinitionen. Här finns all information som kan ingå i det retroaktiva meddelandet som tas emot på en rekvisitionsrad:

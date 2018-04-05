@@ -18,10 +18,10 @@ ms.author: robinr
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
 ms.translationtype: HT
-ms.sourcegitcommit: 4ffdc5dd54f8a069676f62c8b43f2892764dc046
-ms.openlocfilehash: 88640007ec54ed0c566e163e3dd701faeebc50ce
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: cd267f6e5623bd83bfbd21a49a72dd216259167a
 ms.contentlocale: sv-se
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -31,8 +31,8 @@ ms.lasthandoff: 03/05/2018
 
 Detta avsnitt anger huruvida respektive funktion finns i dessa produkter:
 
-+ Dynamics 365 for Finance and Operations, Enterprise edition (moln)
-+ Dynamics 365 for Finance and Operations, Enterprise edition (lokalt)
++ Dynamics 365 for Finance and Operations (moln)
++ Dynamics 365 for Finance and Operations (lokal)
 
 Följande tabell anger produktområdena. Lokalt stöd och molnstöd anges för funktionen som helhet. Funktionerna listas på en separat rad i kolumnen Funktion i de fall där specifika funktioner varierar från området som helhet.
 

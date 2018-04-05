@@ -20,10 +20,10 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: c858cc24cbba961024a67a2477d7271f64f9a0d4
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: c8e24234cfa54dcbbf3638c31ced7fb83881bb9f
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -41,7 +41,7 @@ I produktionsscenarier baserade på produktionsorder tilldelas material till en 
 
 Lean manufacturing stöder kanban-lagerpåfyllnad och storlager för tillverknings- och lagerpåfyllnad för att minska de leveransledtider och överskottslager mellan resurser som orsakas av batchproduktion. De här funktionerna stör vanligtvis produktionen av delvis oberoende kanban-cykler. Lagerpåfyllnad av en kanban för en halvfärdig produkt utlöses inte längre av en order för en färdig produkt. 
 
-Aktivitetsbaserade produktionsflöden utgör nu en grund för lean manufacturing, och används för att återupprätta ett produktions- och kostnadssammanhang för de olika kanban-scenarier som föreslås i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Alla kanbankort regler se här fördefinierade struktur. Den aktivitetsbaserade modellen stöder inställning av ett bredare spektrum av scenarier än tidigare versioner av lean manufacturing för Dynamics AX gav stöd för. Den här modellen försvårar dock inte arbetet för medarbetarna i butiken eftersom alla scenarier använder samma aktivitetsbaserade användargränssnittet.
+Aktivitetsbaserade produktionsflöden utgör nu en grund för lean manufacturing, och används för att återupprätta ett produktions- och kostnadssammanhang för de olika kanban-scenarier som föreslås i Microsoft Dynamics 365 for Finance and Operations. Alla kanbankort regler se här fördefinierade struktur. Den aktivitetsbaserade modellen stöder inställning av ett bredare spektrum av scenarier än tidigare versioner av lean manufacturing för Dynamics AX gav stöd för. Den här modellen försvårar dock inte arbetet för medarbetarna i butiken eftersom alla scenarier använder samma aktivitetsbaserade användargränssnittet.
 
 ## <a name="semi-finished-products-non-bom-levels"></a>Halvfabrikat (icke-BOM-nivåer)
 Lean manufacturing för Microsoft Dynamics AX integrerar kanban för inventerade och halvfärdiga produkter inom ett och samma ramverk och ger därför en enhetlig användarupplevelse för samtliga fall. Tack vare denna arkitektur behöver inga ytterligare strukturlistenivåer längre införas för att kanban ska kunna användas för halvfärdiga produkter. Arkitektur bidrar även till att minska lagertransaktionerna till ett minimum.

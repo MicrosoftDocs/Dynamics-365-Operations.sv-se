@@ -16,10 +16,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: d24679a380ec824fe08c56aacb4bc348ff40440a
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 3d9c2192bac8477e9c9376aab3e3b561da777569
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 # <a name="upload-a-configuration-into-lifecycle-services-for-electronic-reporting-er"></a>Överföra en konfiguration till Lifecycle Services för elektronisk rapportering (ER)
@@ -92,6 +92,6 @@ I det här exemplet ska du skapa en konfigurering för bildpunktföretaget, Litw
 10. Klicka på Öppna.
     * Välj LCS-databasen och öppna den.  
     * Observera att den valda konfigurationen visas som en tillgång för det valda LCS-projektet.  
-    * Öppna LCS via https://lcs.dynamics.com. Öppna ett projekt som använts tidigare för förvaringsregistrering, öppna projektets "Tillgångsbibliotek" och expandera innehållet i tillgångstypen "GER-konfiguration" – den uppladdade ER-konfigurationen blir tillgänglig. Observera att den överförda LCS-konfigurationen kan importeras till en annan Microsoft Dynamics 365 for Finance and Operations, Enterprise edition-instans, om leverantörerna har tillgång till det LCS-projektet.  
+    * Öppna LCS med https://lcs.dynamics.com. Öppna ett projekt som användes tidigare till databasregistrering, öppna "Tillgångbiblioteket" för det här projektet och visa innehållet av tillgångstypen "GER-konfiguration" - den överförda ER-konfigurationen kommer att vara tillgänglig. Observera att den överförda LCS-konfigurationen kan importeras till en annan Microsoft Dynamics 365 for Finance and Operations-instans, om leverantörerna har tillgång till det LCS-projektet.  
 
 

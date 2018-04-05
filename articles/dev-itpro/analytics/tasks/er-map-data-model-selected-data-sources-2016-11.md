@@ -1,6 +1,6 @@
 --- 
 title: "Mappa en datamodell till valda datakällor för elektronisk rapportering (ER)"
-description: "I följande steg beskrivs hur en användare i rollen Systemadministratör eller Utvecklare för elektronisk rapportering kan mappa en datamodell för elektronisk rapportering (ER) till valda datakällor i Dynamics 365 for Finance and Operations, Enterprise Edition."
+description: "I följande steg beskrivs hur en användare i rollen Systemadministratör eller Utvecklare för elektronisk rapportering kan mappa en datamodell för elektronisk rapportering (ER) till valda datakällor i Dynamics 365 for Finance and Operations, Enterprise Edition (november 2016)."
 author: NickSelin
 manager: AnnBe
 ms.date: 01/16/2017
@@ -16,17 +16,17 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 96974d7c1597db4ac31168be40cecbc7e12d6edd
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 13b7fe7f7bfe24bd275428e931993aa46ecb9945
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 # <a name="map-a-data-model-to-selected-data-sources-for-electronic-reporting-er"></a>Mappa en datamodell till valda datakällor för elektronisk rapportering (ER)
 
 [!include[task guide banner](../../includes/task-guide-banner.md)]
 
-I följande steg beskrivs hur en användare i rollen Systemadministratör eller Utvecklare för elektronisk rapportering kan mappa en datamodell för elektronisk rapportering (ER) till valda datakällor i Dynamics 365 for Finance and Operations, Enterprise Edition. Den här modellmappningen kommer senare att användas som en datakälla i en formatkonfiguration som ska användas för att hantera elektroniska betalningsdokument. I det här exemplet mappar du en datamodell för exempelföretaget Litware, Inc. till datakällor. Om du vill slutföra dessa steg måste du först slutföra stegen i proceduren "Välj datakällor för modellmappning".
+I följande steg beskrivs hur en användare i rollen Systemadministratör eller Utvecklare för elektronisk rapportering kan mappa en datamodell för elektronisk rapportering (ER) till valda datakällor i Dynamics 365 for Finance and Operations. Den här modellmappningen kommer senare att användas som en datakälla i en formatkonfiguration som ska användas för att hantera elektroniska betalningsdokument. I det här exemplet mappar du en datamodell för exempelföretaget Litware, Inc. till datakällor. Om du vill slutföra dessa steg måste du först slutföra stegen i proceduren "Välj datakällor för modellmappning".
 
 
 ## <a name="open-er-configurations-tree"></a>Öppna ER-konfigurationsträdet
@@ -92,7 +92,7 @@ I följande steg beskrivs hur en användare i rollen Systemadministratör eller 
 48. Expandera "Bankkonto(BankAccount)" i trädet.
 49. Välj "Bankkonto(BankAccount)\Valuta(CurrencyCode)" i trädet.
 50. Klicka på Bind.
-51. Välj "Bankkonto(BankAccount))\IBAN" i trädet.
+51. Välj "Bankkonto(BankAccount)\IBAN" i trädet.
 52. Välj "Betalningar= Transaktioner\Betalare\Konto\IBAN-kod(IBAN)" i trädet.
 53. Klicka på Bind.
 54. Välj "Betalningar= Transaktioner\Betalare\Konto\Nummer" i trädet.
@@ -100,7 +100,7 @@ I följande steg beskrivs hur en användare i rollen Systemadministratör eller 
 56. Klicka på Bind.
 57. Expandera "Betalningar= Transaktioner\Betalare\Agent" i trädet.
 58. Välj "Betalningar= Transaktioner\Betalare\Agent\Namn" i trädet.
-59. Välj "Bankkonto(BankAccount))\Namn" i trädet.
+59. Välj "Bankkonto(BankAccount)\Namn" i trädet.
 60. Klicka på Bind.
 61. Välj "Betalningar= Transaktioner\Betalare\Agent\Organisationsnummer(RoutingNumber)" i trädet.
 62. Välj "Bankkonto(BankAccount)\Organisationsnummer(RegistrationNum)" i trädet.

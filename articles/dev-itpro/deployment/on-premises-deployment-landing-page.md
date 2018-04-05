@@ -18,25 +18,25 @@ ms.author: kfend
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: 0d551818c8d352af96f6e64613cfbbc4aec5bf5b
-ms.openlocfilehash: e35769e45b1017eef2ee5a5b6c2baa35ae13d90c
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: fa43f6683d43dfb62e8dc2c194ff2b82fe629fe3
 ms.contentlocale: sv-se
-ms.lasthandoff: 03/15/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 # <a name="on-premises-deployment-home-page"></a>Hemsida för lokal distribution
 
 [!include[banner](../includes/banner.md)]
 
-Du kan distribuera Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition (lokalt). När du väljer en lokal distributionstyp skiljer sig systemkrav, maskinvarustorlek och funktionalitet sig åt från en molnbaserad distribution. Det här avsnittet innehåller länkar till specifik innehåll om lokal distribution.
+Du kan distribuera Microsoft Dynamics 365 for Finance and Operations (lokal). När du väljer en lokal distributionstyp skiljer sig systemkrav, maskinvarustorlek och funktionalitet sig åt från en molnbaserad distribution. Det här avsnittet innehåller länkar till specifik innehåll om lokal distribution.
 
 ## <a name="get-started"></a>Kom igång
 - [Vad är nytt eller ändrat i lokala distributioner av Dynamics 365 for Finance and Operations, Enterprise edition 7.2 med plattformsuppdatering 12 (mars 2018)](../../fin-and-ops/get-started/whats-new-LBD-PU12-App72.md)
-- [Översikt över Dynamics 365 for Finance and Operations, Enterprise Edition (lokal)](on-premises-overview.md)
+- [Översikt över Dynamics 365 for Finance and Operations (lokal)](on-premises-overview.md)
 - [Planera inför lokal distribution](plan-onprem-deployment.md)
 - [Systemkrav för lokala distributioner](../../fin-and-ops/get-started/system-requirements-on-prem.md)
 - [Beräkna maskinvara för lokala miljöer](../../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md)
-- [Köp Dynamics 365 for Finance and Operations, Enterprise Edition (lokal)](../../fin-and-ops/get-started/purchase-on-premises.md)
+- [Köpa Dynamics 365 for Finance and Operations (lokal)](../../fin-and-ops/get-started/purchase-on-premises.md)
 - [Jämförelse mellan molnet och lokala funktioner](../../fin-and-ops/get-started/cloud-prem-comparison.md)
 
 ## <a name="onboard"></a>Onboard
@@ -58,7 +58,7 @@ Du kan distribuera Microsoft Dynamics 365 for Finance and Operations, Enterprise
 - [Distribuera en lokal distribution](redeploy-on-prem.md)
 
 ## <a name="other-resources"></a>Andra resurser
-- [Felsöka Dynamics 365 for Finance and Operations, Enterprise Edition (lokal)](troubleshoot-on-prem.md)
+- [Felsöka Dynamics 365 for Finance and Operations (lokal)](troubleshoot-on-prem.md)
 - [Funktioner som inte implementerats i lokala distributioner](../../fin-and-ops/get-started/features-not-implemented-on-prem.md)
 - [Inaktuella funktioner](../migration-upgrade/deprecated-features.md)
 - [Policy för programvarulivscykel och versionslista](../migration-upgrade/versions-update-policy.md)

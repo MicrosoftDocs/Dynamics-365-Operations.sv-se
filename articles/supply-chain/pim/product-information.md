@@ -20,10 +20,10 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: ef108fb7be65b91c531db750018f00f7fdd67da1
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 72dbc5d383352d4d6444d07495fdef00137b1c7f
 ms.contentlocale: sv-se
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -58,7 +58,7 @@ En produkt definieras i första hand med hjälp av ett produktnummer, ett namn o
 
 ## <a name="distribution-export-and-import-of-product-data"></a>Distribution, export och import av produktdata
 
-Produktdefinitionen kan skapas i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition. Den går också att importera från system för hantering av produktlivscykel (PLM), hantering av produktdata (PDM) eller hantering av produktinformation (PIM). När du använder flera instanser av Finance and Operations används vanligtvis en instans som en mall för produktdata för alla andra instanser. Den här metoden stöds genom ett stort antal datatabeller som aktiverar exporten och importen av definitionen för produktdata från en förekomst till en annan.
+Produktdefinitionen kan skapas i Microsoft Dynamics 365 for Finance and Operations. Den går också att importera från system för hantering av produktlivscykel (PLM), hantering av produktdata (PDM) eller hantering av produktinformation (PIM). När du använder flera instanser av Finance and Operations används vanligtvis en instans som en mall för produktdata för alla andra instanser. Den här metoden stöds genom ett stort antal datatabeller som aktiverar exporten och importen av definitionen för produktdata från en förekomst till en annan.
 
 För att stödja distributionen av produktdata till många instanser tillåter Finance and Operations användning av Common Data Service. Definitioner av produkter kan exporteras från en förekomst i Finance and Operations till Common Data Service. Definitioner av produkter kan sedan användas för att förse andra företagsprogram såsom Microsoft Dynamics 365 for Sales med produktdata.
 

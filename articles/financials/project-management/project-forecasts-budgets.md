@@ -19,10 +19,10 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 31abc719a8df7507e74b3bf6823306ba52261bc3
-ms.openlocfilehash: ebb3574b3f5c40b5512c0352c83520558f63879a
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: e31a013d6bf33b92b02bd9645a19380ba07f4a05
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/10/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -31,7 +31,7 @@ ms.lasthandoff: 11/10/2017
 [!include[banner](../includes/banner.md)]
 
 
-Du kan hantera och kontrollera dina projekt i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition på två sätt: projektprognoser och projektbudgetar. 
+Microsoft Dynamics 365 for Finance and Operations tillhandahåller två sätt för att hantera och kontrollera dina projekt: projektprognoser och projektbudgetar. 
 
 Använda projektprognoser om organisationen har ett driftperspektiv och fokuserar på intäkter och kostnader som härleds från specifika transaktioner. Om din organisation fokuserar mer på ekonomiska belopp, kan du använda budgetering. 
 

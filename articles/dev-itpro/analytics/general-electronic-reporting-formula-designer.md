@@ -19,10 +19,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 946584d8afa8937afc7a26835e05b0eecebaad35
-ms.openlocfilehash: 67558889dea03738a665d8f1e2f30833b96c4656
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 41d5671d180bae039d873419352d52afe90e386b
 ms.contentlocale: sv-se
-ms.lasthandoff: 12/23/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -36,7 +36,7 @@ Detta avsnitt avslutar hur du använder formeldesignern inom Elektronisk rapport
 
 ER stöder formeldesignern. Därför kan du vid designtillfället konfigurera uttryck som kan användas för följande uppgifter under körning:
 
-- Omvandla data från en Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition-databas som ska användas i en ER-datamodell utformad som en datakälla för ER- format. (Till exempel kan dessa omvandlingar omfatta konvertering, filtrering och gruppering av datatyp.)
+- Omvandla data från en Microsoft Dynamics 365 for Finance and Operations-databas som ska användas i en ER-datamodell utformad som en datakälla för ER- format. (Till exempel kan dessa omvandlingar omfatta konvertering, filtrering och gruppering av datatyp.)
 - Formatera data som ska skickas till ett genererande elektroniskt dokument i enlighet med layout och villkor för ett specifikt ER-format. (Till exempel kan formateringen göras i enlighet med det begärda språket eller kulturen, eller i enlighet med kodning).
 - Kontrollera processen för generering av elektroniska dokument. (Till exempel kan uttryck aktivera eller inaktivera utdata från specifika element av formatet, beroende på bearbetade data. De kan också avbryta processen att skapa dokument eller skicka meddelanden till användare.)
 
@@ -217,11 +217,11 @@ I följande tabeller finns beskrivningar av datamanipuleringsfunktioner kan anv�
 | NULLDATE () | Returnerar date-värdet **null**. | |
 | NULLDATETIME () | Returnerar värdet för datum/tid som **noll**. | |
 | DATETIMEFORMAT (datetime, format) | Konverterar det definierade värdet för datum/tid till en sträng i det angivna formatet. (Om du vill ha mer information om format som stöds, se [Standard](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) och [Anpassat](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx).) | **DATETIMEFORMAT (NOW(), "dd-MM-yyyy")** returnerar det aktuella datumet för Finance and Operations-serverprogrammet, 2015-12-24, som **"2015-12-24"** baserat på det definierade och anpassade formatet. |
-| DATETIMEFORMAT (datetime, format, culture) | Konverterar det definierade värdet för datum/tid till en sträng i det angivna formatet och [kulturen](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx). (Om du vill ha mer information om format som stöds, se [Standard](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) och [Anpassat](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx).) | **DATETIMEFORMAT (NOW(), "s", "sv")** returnerar det aktuella datumet för Finance and Operations-programservern, 2015-12-24, som **"2015-12-24"** baserat på den valda svenska kulturen. |
+| DATETIMEFORMAT (datetime, format, culture) | Konverterar det definierade värdet för datum/tid till en sträng i det angivna formatet och [kulturen](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx). (Om du vill ha mer information om format som stöds, se [Standard](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) och [Anpassat](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx)). | **DATETIMEFORMAT (NOW(), "s", "sv")** returnerar det aktuella datumet för Finance and Operations-programservern, 2015-12-24, som **"2015-12-24"** baserat på den valda svenska kulturen. |
 | SESSIONTODAY () | Returnera aktuellt datum för Finance and Operations-sessionen som ett datumvärde. | |
 | SESSIONNOW () | Returnera aktuellt datum och aktuell tid för Finance and Operations-sessionen som ett värde datum/tid. | |
 | DATEFORMAT (datum, format) | Returnera en sträng som representerar det definierade datumet i det angivna formatet. | **DATEFORMAT (SESSIONTODAY () "dd-MM-yyyy")** returnerar det aktuella datumet för Finance and Operations-sessionen, 2015-12-24, som **"2015-12-24"** baserat på det definierade och anpassade formatet. |
-| DATEFORMAT (datum, format, kultur) | Konverterar det angivna datumvärdet till en sträng i det definierade formatet och den definierade [kulturen](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx). (Om du vill ha mer information om format som stöds, se [Standard](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) och [Anpassat](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx).) | **DATETIMEFORMAT (SESSIONNOW (), "d", "de")** returnerar det aktuella datumet för Finance and Operations-sessionen, 2015-12-24, som **"2015-12-24"** baserat på den valda tyska kulturen. |
+| DATEFORMAT (datum, format, kultur) | Konverterar det angivna datumvärdet till en sträng i det definierade formatet och den definierade [kulturen](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx). (Om du vill ha mer information om format som stöds, se [Standard](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) och [Anpassat](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx)). | **DATETIMEFORMAT (SESSIONNOW (), "d", "de")** returnerar det aktuella datumet för Finance and Operations-sessionen, 2015-12-24, som **"2015-12-24"** baserat på den valda tyska kulturen. |
 | DAYOFYEAR (datum) | Returnera en heltalsrepresentation av antalet dagar mellan 1 januari och det angivna datumet. | **DAYOFYEAR (DATEVALUE (”01-03-2016”, ”dd-MM-åååå”))** returnerar **61**. **DAYOFYEAR (DATEVALUE (”01-01-2016”, ”dd-MM-åååå”))** returnerar **1**. |
 | DAGAR (datum 1, datum 2) | Returnera antalet dagar mellan första och andra angivna datum. Returnerar ett positivt värde när det första datumet är senare än det andra, returnerar **0** (noll) när det första datumet är lika med det andra, annars ett negativt värde. | **DAYS (TODAY (), DATUMVÄRDE (DATETIMEFORMAT (ADDDAYS(NOW() 1), ”yyyyMMdd”), ”yyyyMMdd”))** returnerar **-1**. |
 

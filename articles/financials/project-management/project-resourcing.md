@@ -19,10 +19,10 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4dbcfd31030db8e40f89f86a76cdc666ac433749
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 2d31a5dfd16a4404e19c6c9693dacecff6f2f064
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 11/03/2017
 
 Det här avsnittet innehåller information om resurshantering för projekt.
 
-En utmaning för projektledare och resurschefer under projektplanläggningsfasen är resursallokeringen, där de måste bestämma och reservera rätt resurser för arbetet i ett projekt. I Microsoft Dynamics 365 for Finance and Operations, Enterprise edition gör resurshanteringsfunktioner för projekt att du kan definiera roller som behandlas som tillfälliga resurser och som kan reserveras för ett specifikt engagemang eller delar av ett engagemang. Den här typen av resurshantering låter projektledare och resurschefer slutföra följande uppgifter:
+En utmaning för projektledare och resurschefer under projektplanläggningsfasen är resursallokeringen, där de måste bestämma och reservera rätt resurser för arbetet i ett projekt. I Microsoft Dynamics 365 for Finance and Operations resurshanteringsfunktioner för projekt kan du definiera roller som behandlas som tillfälliga resurser, som kan reserveras för ett visst engagemang eller delar av ett engagemang. Den här typen av resurshantering låter projektledare och resurschefer slutföra följande uppgifter:
 
 - Definiera en roll som har begärt kompetenserna, så blir det enkelt att matcha resurser.
 - Använd roller för att definiera en ursprunglig engagemangstidsplan som baseras på reserverade resurser.

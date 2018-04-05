@@ -18,10 +18,10 @@ ms.author: epopov
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 1c0621aa5e4670ea86a155514ea09abbd9f1873e
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: 5a9dab05d70b9955ebd98fce61d6ed12e7eaa5c5
 ms.contentlocale: sv-se
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 03/26/2018
 
 ---
 # <a name="cash-registers-for-sweden"></a>Kassaapparater för Sverige
@@ -104,7 +104,7 @@ Du måste ange följande allmänna inställningar för Sverige.
     - Artikelmomsgrupper
     - Momsinställningar i artiklar (artikelmomsgrupper för försäljning)
 
-    Mer information om hur du ställer in och använder moms i Microsoft Dynamics 365 for Finance and Operations, Enterprise edition, och i Retail finns i [Momsöversikt](../../financials/general-ledger/indirect-taxes-overview.md).
+    Mer information om hur du ställer in och använder moms i Microsoft Dynamics 365 for Finance and Operations och i Retail finns i [Momsöversikt](../../financials/general-ledger/indirect-taxes-overview.md).
 
 2. På sidan **Alla butiker** uppdaterar du butiksinformation. Du måste speciellt ställa in följande parametrar:
     

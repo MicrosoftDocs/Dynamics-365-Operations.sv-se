@@ -1,6 +1,6 @@
 ---
 title: Kortkommandon
-description: "Följande kortkommandon gäller i hela Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition."
+description: "Följande kortkommandon gäller i hela Dynamics 365 for Finance and Operations."
 author: jasongre
 manager: AnnBe
 ms.date: 12/12/2017
@@ -18,10 +18,10 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 0ca19ab9ed7a52328c5dd5252c418bb9343bdc2b
-ms.openlocfilehash: 8bf0f44583d183d992547c773f2cf7a8ac1db5fc
+ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
+ms.openlocfilehash: c4446a04cd01645b3b79f2d952622daf60953331
 ms.contentlocale: sv-se
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 03/26/2018
 
 ---
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 12/14/2017
 [!include[banner](../includes/banner.md)]
 
 
-Följande kortkommandon gäller i hela Microsoft Dynamics 365 for Finance and Operations, Enterprise Edition. 
+Följande kortkommandon gäller i hela Dynamics 365 for Finance and Operations. 
 
 **Obs!** Tangentbordsgenvägarna som beskrivs här hänvisar till en amerikansk tangentbordslayout. Knappar på andra tangentbordslayouter kan kanske inte exakt motsvarar tangenterna på ett tangentbord i USA.
 
@@ -74,7 +74,7 @@ I och med plattformsuppdatering 11 kan användarna kan upptäcka tillgängliga g
 | Öppna faktaboxfönstret (eller flytta fokus till faktaboxfönstre om det redan är öppet,) | Alt+M,B eller Ctrl+F2                        |
 | Stäng faktaboxfönstret (med fokus i faktaboxfönstret)                         | Esc                                       |
 | Flytta till nästa/tidigare faktabox (med fokus i faktaboxfönstret)              | Alt+Shift+nedåtpil / Alt+Shift+Uppåtpil |
-| Flytta till faktabox &lt;n&gt; (med fokus på faktaboxfönstret)                | Alt+&lt;n&gt; (&lt;n&gt; = 1-9)           |
+| Flytta till &lt;n&gt;th FactBox (med fokus i faktaboxfönstret)                | Alt+&lt;n&gt; (&lt;n&gt; = 1-9)           |
 | Expandera en faktabox (med fokus på faktaboxhuvudet)                             | Blanksteg eller Retur                            |
 | Komprimera den aktuella faktaboxen                                                    | Alt+0                                     |
 
@@ -115,11 +115,11 @@ I och med plattformsuppdatering 11 kan användarna kan upptäcka tillgängliga g
 | **Om du vill göra detta**                                      | **Tryck**                                    |
 | Flytta till nästa/föregående fältgrupp.                     | Tab/Skift+Tab                              |
 | Flytta till nästa/föregående flik                       | Alt+Shift+högerpil / Alt+Shift+vänsterpil |
-| Flytta till flik &lt;n&gt;                         | Alt+Shift+&lt;n&gt; (&lt;n&gt; = 1-9)        |
+| Flytta till fliken &lt;n&gt;th                         | Alt+Skift+&lt;n&gt; (&lt;n&gt; = 1-9)        |
 | Flytta till nästa/föregående snabbflik                   | Alt+Shift+nedåtpil / Alt+Shift+Uppåtpil    |
-| Flytta till snabbflik &lt;n&gt;                     | Alt+&lt;n&gt; (&lt;n&gt; = 1-9)              |
+| Flytta till snabbfliken &lt;n&gt;th FastTab                     | Alt+&lt;n&gt; (&lt;n&gt; = 1-9)              |
 | Flytta till nästa/föregående blad (lodrät flik)      | Alt+Shift+högerpil / Alt+Shift+vänsterpil |
-| Flytta till blad &lt;n&gt; (lodrät flik)        | Alt+Shift+&lt;n&gt; (&lt;n&gt; = 1-9)        |
+| Flytta till blad &lt;n&gt; (lodrät flik)        | Alt+Skift+&lt;n&gt; (&lt;n&gt; = 1-9)        |
 | Expandera en snabbflik (med fokus på snabbflikhuvudet) | Blanksteg eller Retur                               |
 | Komprimera den aktuella snabbfliken                        | Alt+0                                        |
 | Byt till rutnätsvy                                 | Ctrl+Skift+G                                 |
