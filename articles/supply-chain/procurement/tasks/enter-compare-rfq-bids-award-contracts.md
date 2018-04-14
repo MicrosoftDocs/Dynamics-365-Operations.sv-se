@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="enter-and-compare-rfq-bids-and-award-contracts"></a>Ange och jämför anbudsförfråganbud och tilldela kontrakt
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Den här proceduren visar dig hur du anger svar på en anbudsförfrågan, poäng och jämför bud, och sedan tilldelar budet till en av leverantörerna. Du kan köra den här proceduren i demonstrationsdataföretaget USMF. Innan du startar måste du ha en anbudsförfrågan med två rader som har skickats till minst två leverantörer. Du kan köra proceduren ”Skapa en anbudsförfrågan” som en förutsättning för att skapa detta. Du måste ha ställt in ett poängkriterium innan du kan köra den här proceduren.
 

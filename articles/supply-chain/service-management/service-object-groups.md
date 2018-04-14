@@ -28,7 +28,7 @@ ms.lasthandoff: 02/21/2018
 
 # <a name="service-object-groups"></a>Serviceobjektgrupper 
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Objektgrupper är användbara för att sortera och filtrera data om objekt för rapporter och statistik. Du kan exempelvis gruppera objekt efter geografisk placering eller typ.
 

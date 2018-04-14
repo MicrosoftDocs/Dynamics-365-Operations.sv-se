@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="configure-a-line-item-workflow"></a>Konfigurera ett arbetsflöde för radartiklar
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 I det här avsnittet beskrivs hur du konfigurerar ett arbetsflödeselement för radartiklar.
 

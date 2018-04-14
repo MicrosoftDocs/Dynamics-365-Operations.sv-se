@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="maintain-employee-injury-and-illness-information"></a>Underhålla information om medarbetares skador och sjukdomar
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Vi rekommenderar att du slutför uppgiftsguiden Ställ in skador och sjukdomar först eftersom en del av inställningsinformationen används här. 
 

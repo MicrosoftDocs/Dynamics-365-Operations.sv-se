@@ -27,8 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="invoice-issue-deadline"></a>Tidsgräns för fakturautfärdande
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Den här artikeln innehåller information om hur du ställer in parametrar för att beräkna förfallodatum för utfärdande av kundfakturor och leverantörsfakturor i EU.
 

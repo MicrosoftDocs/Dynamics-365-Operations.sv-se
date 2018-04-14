@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="nonconformance-management"></a>Avvikelsehantering
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Det här avsnittet ger en beskrivning av grundläggande inställningar som krävs för att använda avvikelser. Ytterligare inställningar krävs om du vill använda kvalitetsorder.
 

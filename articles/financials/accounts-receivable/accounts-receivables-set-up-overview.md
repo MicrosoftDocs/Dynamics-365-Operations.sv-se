@@ -28,8 +28,7 @@ ms.lasthandoff: 11/15/2017
 
 # <a name="configure-accounts-receivables-and-credit-and-collections"></a>Konfigurera Kundreskontra och Kredit och inkasso
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Konfigurera Kundreskontra och Kredit och inkasso för att följa fakturor och inkommande betalningar från kunder.
 
@@ -107,7 +106,7 @@ Följande tabell visar sidorna som har stöd för konfiguration och underhåll a
 |                                                      | Information om NSF.                     | Ställ in information om NSF för bankkontot som ska användas när en betalning markeras som en NSF-transaktion på sidan Inkasso.                                                                                                                                              |
 |                                                      | Information om säljare              | Ställ in e-postadress för säljare. Dessa adresser visas på sidan Inkasso och används för att skicka e-post till en säljare från den sidan.                                                                                                                |
 
- 
+
 Mer information finns i [Kredit och inkasso i kundreskontra](collections-credit-accounts-receivable.md).
 
 

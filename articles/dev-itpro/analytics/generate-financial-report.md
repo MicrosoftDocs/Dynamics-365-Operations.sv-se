@@ -28,8 +28,7 @@ ms.lasthandoff: 12/01/2017
 
 # <a name="generate-a-financial-report"></a>Generera ekonomisk rapport
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Det här avsnittet innehåller allmän information om att skapa en ekonomisk rapport. 
 
@@ -50,13 +49,13 @@ När du skapar en rapport används de alternativ du har angett på fliken Rappor
 ## <a name="generate-a-financial-report"></a>Generera ekonomisk rapport
 
 Om du vill skapa en ekonomisk rapport med Microsoft Dynamics 365 for Finance and Operations, gå till **Redovisning** > **Förfrågningar och rapporter** > **Ekonomirapporter**. 
- - Välj en rapport att generera och klicka på **Generera**. 
- - Fyll i fältet **Rapportdatum** och klicka på **OK**.
- 
- När rapporten har skapats blir den tillgänglig i avsnittet **Rapporter**.
- Du kan välja att **Visa** eller **Ta bort** rapporten.
- 
- 
+- Välj en rapport att generera och klicka på **Generera**. 
+- Fyll i fältet **Rapportdatum** och klicka på **OK**.
+
+  När rapporten har skapats blir den tillgänglig i avsnittet **Rapporter**.
+  Du kan välja att **Visa** eller **Ta bort** rapporten.
+
+
 Öppna rapportdefinitionen och klicka sedan på knappen Generera i verktygsfältet om du vill generera en rapport med **Report designer**. Fönstret Rapportköstatus öppnas och visar platsen för rapporten i kön. Som standard öppnas rapporten i Web Viewer.
 
 > [!NOTE]
@@ -159,7 +158,7 @@ Du kan använda följande tangentbordsgenvägar när du kör en analys av saknad
 | Öppna den markerade rapportdefinitionen  | Ctrl+R                     |
 | Öppna den markerade raddefinitionen     | Ctrl+O                     |
 
- 
+
 <a name="see-also"></a>Se även
 --------
 

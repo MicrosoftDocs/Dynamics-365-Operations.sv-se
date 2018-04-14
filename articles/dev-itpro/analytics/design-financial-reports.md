@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="view-and-design-financial-reports"></a>Visa och utforma ekonomiska rapporter
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denna artikel innehåller övningar som förklarar hur du visar och skapar ekonomiska rapporter för Microsoft Dynamics 365 for Finance and Operations. Ekonomisk rapportering består av en visningsupplevelse i Finance and Operations och en enklicks-rapportdesigner där du kan skapa och redigera ekonomiska rapporter.  
 

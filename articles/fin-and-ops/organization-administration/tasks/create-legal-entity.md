@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-legal-entity"></a>Skapa en juridisk person
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 En juridisk person är en organisation som identifieras genom registrering med en juridisk myndighet. Juridiska personer kan ingå kontrakt och behövs för att förbereda utdrag som rapporterar på deras resultat. Följande procedur förklarar hur du skapar en juridisk person. Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.
 

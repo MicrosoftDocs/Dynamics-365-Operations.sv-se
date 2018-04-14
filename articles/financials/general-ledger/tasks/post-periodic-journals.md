@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="post-periodic-journals"></a>Bokför periodiska journaler
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Periodiska journaler kallas ibland återkommande journaler eftersom beloppet, texten och informationen upprepas varje gång som den periodisk journalen hämtas. När du skapar och bokför en periodisk journal anger du periodintervallet för upprepningen, till exempel dagar eller månader. I den här uppgiftsguiden skapas en periodisk journal med månadsvis upprepningar.
 

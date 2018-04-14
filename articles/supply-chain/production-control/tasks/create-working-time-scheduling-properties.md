@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-working-time-scheduling-properties"></a>Skapa planeringsegenskaper för arbetstider
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Planeringsegenskaper för arbetstider används när du kategoriserar arbetstidsintervall och definierar inställningar som operatörer måste ta med i beräkningen. I proceduren visas definition av en planeringsegenskap för arbetstid och tillhörande egenskapsvärden. Du kan gå igenom den här proceduren i demonstrationsdataföretaget USMF eller använda dina egna data.
 

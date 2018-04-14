@@ -26,7 +26,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="expense-policies"></a>Utgiftspolicy
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Du kan definiera policyer som dina medarbetare måste följa i samband med att de anger och skickar in utgiftsrapporter och reserekvisitioner.         
 Om du använder utgiftsprinciper kan det hjälpa dig att hantera dina utgifter på ett effektivt sätt.         
@@ -39,14 +39,14 @@ definierar policyn.
 Du kan definiera tre olika typer av policy:         
         
 - Varnings – Tillåter medarbetaren att skicka in en utgiftsrapport eller en reserekvisition, men utgiften markeras för samtliga godkännare samt        
-för senare rapportering.        
+  för senare rapportering.        
 
 - Fel – Kräver att medarbetaren reviderar utgiften så att denna uppfyller policykraven innan utgiftsrapporten eller reserekvisitionen lämnas in.       
  
- - Motivering – Kräver att medarbetaren eller en chef anger en motivering för att policybeloppet har överskridits innan utgiftsrapporten eller reserekvisitionen lämnas in.        
+  - Motivering – Kräver att medarbetaren eller en chef anger en motivering för att policybeloppet har överskridits innan utgiftsrapporten eller reserekvisitionen lämnas in.        
  
- Du kan också ange ett datumintervall för när utgiftspolicyerna är giltiga. Exempelvis flygpriserna mellan Danmark      
- och New York kan vara höga under semestertider. Du kan definiera en regel för flygpriser som begränsar      
- kostnaden för flygbiljetter till New York till 5000 DKK och du kan ange att regeln ska gälla mellan 15 mars och      
- 15 september.
+  Du kan också ange ett datumintervall för när utgiftspolicyerna är giltiga. Exempelvis flygpriserna mellan Danmark      
+  och New York kan vara höga under semestertider. Du kan definiera en regel för flygpriser som begränsar      
+  kostnaden för flygbiljetter till New York till 5000 DKK och du kan ange att regeln ska gälla mellan 15 mars och      
+  15 september.
 

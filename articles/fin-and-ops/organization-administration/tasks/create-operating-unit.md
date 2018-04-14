@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-an-operating-unit"></a>Skapa en driftenhet
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 En driftenhet är en organisation som används för skilja kontrollen av ekonomiska resurser och processer kunskap i ett företag. Personer i en driftenhet har en skyldighet att maximera användningen av knappa resurser, att förbättra processer och att redovisa deras resultat. Typerna av driftenheter är bland andra kostnadsställen, affärsenheter, avdelningar och värdeströmmar. Använd följande procedur för att skapa en driftenhet. Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.
 

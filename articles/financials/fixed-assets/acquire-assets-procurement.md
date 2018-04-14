@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="acquire-assets-through-procurement"></a>Skaffa tillgångar genom anskaffning
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Det här ämnet beskriver hur du ställer in integrationen mellan Anläggningstillgångar och Leverantörsreskontra om du automatiskt vill skapa anläggningstillgångar från inköpsorder eller leverantörsfakturor, eller automatiskt bokföra anskaffningar och anskaffningsjusteringar för anläggningstillgångar.
 

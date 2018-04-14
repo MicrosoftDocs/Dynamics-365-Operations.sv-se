@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-positions"></a>Ställ in befattningar
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Befattningar är ett viktigt element i den lägre nivån i en organisationshierarki. En befattning är ett exempel på ett enskilt jobb. Befattningen "Försäljningschef (öst)" är exempelvis bara en de befattningar som associeras med jobbet "Försäljningschef." En befattning finns på en avdelning och kan ha endast har en arbetare associerad med den. I den här uppgiften ska du gå igenom de steg som behövs för att skapa en befattning. Uppgiften är avsedd för en personalresursspecialist.
 

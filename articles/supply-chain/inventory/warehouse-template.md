@@ -29,7 +29,7 @@ ms.lasthandoff: 02/06/2018
 
 # <a name="set-up-a-warehouse-by-using-a-warehouse-configuration-template"></a>Konfigurera ett lagerställe med hjälp av en konfigurationsmall
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Det här avsnittet innehåller information om hur du konfigurera ett lagerställe med hjälp av en konfigurationsmall. Det finns flera fördefinierade konfigurationsmallar som du kan använda. Information om hur du använder dessa mallar finns i [Konfigurationsdatamallar](../../dev-itpro/data-entities/configuration-data-templates.md).
 

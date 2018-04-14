@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="define-new-departments"></a>Definiera nya avdelningar
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Avdelningar är driftenheter som motsvarar ett funktionellt område i ett företag, till exempel försäljning eller redovisning. Många företag har organisationshierarkier som visar de olika avdelningarna inom ett företag. Den här proceduren går igenom processen med att skapa avdelningar och att lägga till dessa avdelningar i avdelningshierarkin för en organisation. Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.
 

@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="absence-registration-in-time-and-attendance"></a>Frånvaroregistrering i Tid och närvaro
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Det här avsnittet beskriver begreppen för frånvaro och hur du hanterar frånvaro i Tid och närvaro.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="define-new-jobs"></a>Definiera nya jobb
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denna uppgift är avsedd för generering av ett nytt jobb. Detta ska utföras med den manuella registreringen och Kopiera från mallfunktion. Det demonstrationsdataföretag som används för att skapa den här uppgiften är USMF. Uppgiften är avsedd för en personalresursspecialist.
 

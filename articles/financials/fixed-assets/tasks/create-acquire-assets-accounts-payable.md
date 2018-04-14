@@ -24,7 +24,7 @@ ms.lasthandoff: 10/05/2017
 ---
 # <a name="create-and-acquire-assets-from-accounts-payable"></a>Skapa och anskaffa tillgångar från leverantörsreskontra
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Den här uppgifthandboken går igenom skapande och anskaffning av en anläggningstillgång med inköpsprocessen. Här används redovisnings- och leverantörsreskontraansvariga och demonstrationföretaget USMF.
 

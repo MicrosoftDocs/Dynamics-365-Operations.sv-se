@@ -28,9 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="position-forecasting"></a>Befattningsprognos
 
-[!include[banner](../includes/banner.md)]
-
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Utgifter relateradr till att kompensera för arbetare är ofta en stor del av ett företags kostnader. Med befattningsprognoser kan du planera dessa utgifter och inkludera dem i planeringen av budgetar.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="loan-items-to-a-worker"></a>Låna ut artiklar till en arbetare
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 I den här proceduren visas hur du lånar ut en artikel till en arbetare och registrerar den arbetare som returnerar en artikel. Arbetare kan också begära låneartiklar via sina självbetjäningssidor för medarbetare. Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.
 

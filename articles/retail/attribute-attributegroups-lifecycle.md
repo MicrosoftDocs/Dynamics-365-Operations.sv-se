@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="attributes-attribute-groups-and-their-associations-with-various-retail-entities-in-finance-and-operations"></a>Attribut och attributgrupper och deras associationer med olika butiksenheter i Finance and Operations
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 *Attribut* ger ett sätt att ytterligare beskriva en produkt och dess egenskaper med hjälp av anpassade fält (t.ex **minnesstorlek**, **hårddiskkapacitet**, **är Energy star-kompatibel**och så vidare). I Microsoft Dynamics 365 for Finance and Operations kan attribut förknippas med olika Retailsenheter, såsom produktkategorier och butikskanaler och standardvärden kan ställas in för dem. Produkter ärva deras attribut och värden för de attribut som när de är associerade med produktkategorier eller butik. Standardvärdena kan åsidosättas på den enskilda produkten, vid butik nivå eller i en återförsäljare katalog.
  
@@ -227,13 +227,13 @@ Standardvärden för attribut kan åsidosättas för enskilda produkter på prod
 5. På snabbfliken **Produkter** väljer du den produktkvalitet som behövs och väljer sedan **Attribut** ovanför produktrutnätet.
 6. Uppdatera värden för de attribut som krävs på följande snabbflikar:
 
-    - Delad produktmedia
-    - Delade produktattribut
-    - Kanalmedia
-    - Kanalproduktattribut
+   - Delad produktmedia
+   - Delade produktattribut
+   - Kanalmedia
+   - Kanalproduktattribut
 
-    > [!NOTE]
-    > Om delad produktmedia och delade produktattribut skapas i Finance and Operations gäller de för alla återförsäljarprodukter.
+     > [!NOTE]
+     > Om delad produktmedia och delade produktattribut skapas i Finance and Operations gäller de för alla återförsäljarprodukter.
 
 ![Katalogens produktattributgrupper](media/CatalogProdAttrValues.png)
 
@@ -249,11 +249,11 @@ Standardvärden för attribut kan åsidosättas för enskilda produkter på prod
 
 5. Uppdatera värden för de attribut som krävs på följande snabbflikar:
 
-    - Delad produktmedia
-    - Delade produktattribut
-    - Kanalmedia
-    - Kanalproduktattribut
+   - Delad produktmedia
+   - Delade produktattribut
+   - Kanalmedia
+   - Kanalproduktattribut
 
-    > [!NOTE]
-    > Om delad produktmedia och delade produktattribut skapas i Finance and Operations gäller de för alla återförsäljarprodukter.
+     > [!NOTE]
+     > Om delad produktmedia och delade produktattribut skapas i Finance and Operations gäller de för alla återförsäljarprodukter.
 

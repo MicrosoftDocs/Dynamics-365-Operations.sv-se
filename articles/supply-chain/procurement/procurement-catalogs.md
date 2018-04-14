@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="procurement-catalogs"></a>Anskaffningskataloger
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Den här artikeln beskriver, på en hög nivå, hur professionella inköpare kan ställa in och underhålla anskaffningskataloger. Anskaffningskataloger definierar de artiklar och tjänster som anställda i företaget kan beställa för intern användning.
 

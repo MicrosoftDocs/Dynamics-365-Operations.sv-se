@@ -28,8 +28,7 @@ ms.lasthandoff: 02/19/2018
 
 # <a name="service-agreements"></a>Serviceavtal
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ett serviceavtal låter dig definiera de resurser som används vid ett vanligt servicebesök och hur resurserna kan faktureras kunden.
 

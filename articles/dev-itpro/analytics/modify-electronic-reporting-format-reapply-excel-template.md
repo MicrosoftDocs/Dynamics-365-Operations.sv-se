@@ -27,7 +27,7 @@ ms.lasthandoff: 02/27/2018
 ---
 # <a name="modify-an-electronic-reporting-format-by-reapplying-a-microsoft-excel-template"></a>Ändra ett format för elektronisk rapportering genom att tillämpa en Microsoft Excel-mall
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Verktyget för elektronisk rapportering (ER) används för att generera affärsdokument i elektroniskt format. Om du vill generera ett affärsdokument måste du skapa ett ER-format, och sedan använda ER-designer för att definiera utseendet på affärsdokumentet och ange de data som ska inkluderas i den. Kör sedan ER-formatet för att generera affärsdokumentet.
 

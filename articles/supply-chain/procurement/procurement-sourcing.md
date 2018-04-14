@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="procurement-and-sourcing-home-page"></a>Startsidan för Anskaffning och källa
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Det här ämnet innehåller en lista med hjälpavsnitt och andra resurser som är tillgängliga för anskaffning och inköp.
 

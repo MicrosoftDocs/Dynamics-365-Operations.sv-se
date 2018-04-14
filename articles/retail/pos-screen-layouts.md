@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="configure-screen-layouts-for-pos"></a>Konfigurera skärmlayouter för kassa
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Det här avsnittet innehåller information om skärmlayouter för Microsoft Dynamics 365 for Retail point of sale (POS) experiences.
 

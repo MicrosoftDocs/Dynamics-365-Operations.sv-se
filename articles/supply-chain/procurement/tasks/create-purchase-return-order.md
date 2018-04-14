@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-purchase-return-order"></a>Skapa en inköpsreturorder
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 I den här proceduren visas hur du skapar en inköpsreturorder med hjälp av åtgärden Kreditfaktura om du vill kopiera rader från ett leverantörsfakturadokument till en ny inköpsorder. Den visar också hur du bekräftar ordern och bearbetar leveransen av varorna tillbaka till leverantören. De exempel som visas i den här proceduren kan användas i demoföretaget USMF. Denna uppgift utförs vanligtvis av en inköpsagent.
 

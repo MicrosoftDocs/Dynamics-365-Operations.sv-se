@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-fraud-alerts"></a>Ställ in bedrägerivarningar
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Det här avsnittet beskriver hur du ställer in kriterier och regler för att spärra misstänkt bedrägliga försäljningsorder för vidare undersökning. Funktionen för bedrägerigranskning används för att avgöra informationens giltighet i en försäljningsorder. Om informationen i försäljningsordern verkar vara tveksam utifrån organisationens regler och kriterier för bedrägeri, ordern kan spärras för vidare undersökning av en administratör.
 

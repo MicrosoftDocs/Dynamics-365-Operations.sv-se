@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="enter-worker-information"></a>Ange arbetarinformation
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 När en rekryterare har skapat ett massanställningsprojekt och genererat befattningar, är nästa steg att ange arbetarinformation för de personer som anställs. Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF. Demonstrationsdata innehåller ett öppet massanställningsprojekt. Gå till Personal > Rekrytering > Massanställningsprojekt för att starta proceduren.
 

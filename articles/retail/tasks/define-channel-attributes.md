@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="define-channel-attributes"></a> Definiera kanalattribut
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 Berika kanalen genom att lägga till kanal- och produktattribut. Du måste lägga till kanalen till organisationsstandardhierarkin innan du kan definiera attributen.
 

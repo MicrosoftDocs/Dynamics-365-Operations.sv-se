@@ -26,7 +26,7 @@ ms.lasthandoff: 03/26/2018
 ---
 # <a name="configure-sql-server-reporting-services-for-an-on-premises-deployment"></a>Konfigurera SQL Server Reporting Services för en lokal distribution
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Använd stegen i det här avsnittet för att konfigurera SQL Server Reporting Services (SSRS) för distribution av Microsoft Dynamics 365 for Finance and Operations (lokal).
 
@@ -52,13 +52,13 @@ Använd stegen i det här avsnittet för att konfigurera SQL Server Reporting Se
 
     [![Fliken Webbportal-URL](./media/ssrs-config-manager-05.png)](./media/ssrs-config-manager-05.png)
     
-  När portalen har konfigurerats kommer fliken **webbportal** att matcha följande bild.
+   När portalen har konfigurerats kommer fliken **webbportal** att matcha följande bild.
     [![Fliken Webbportal](./media/ssrs-config-manager-06.png)](./media/ssrs-config-manager-06.png)
     
 8. Klicka på rapport-URL om du vill visa webbportalen SQL Server Reporting Services. 
-9.  När du är på portalen kan du skapa en ny mapp med namnet **Dynamics**.
+9. När du är på portalen kan du skapa en ny mapp med namnet **Dynamics**.
 
-    [![Mappen Dynamics](./media/ssrs-config-manager-07.png)](./media/ssrs-config-manager-07.png)
+   [![Mappen Dynamics](./media/ssrs-config-manager-07.png)](./media/ssrs-config-manager-07.png)
     
 10. I **Reporting Services Configuration Manager** klickar du på fliken **E-postinställningar** och verifierar att inställningarna stämmer med bilden nedan.
 
@@ -68,15 +68,15 @@ Använd stegen i det här avsnittet för att konfigurera SQL Server Reporting Se
 
     [![Fliken Körningskonto](./media/ssrs-config-manager-09.png)](./media/ssrs-config-manager-09.png)
     
-  Ändra inte förvalda inställningar i fliken **Krypteringsnycklar**. [![flik för krypteringsnycklar](./media/ssrs-config-manager-10.png)](./media/ssrs-config-manager-10.png)
+    Ändra inte förvalda inställningar i fliken **Krypteringsnycklar**. [![flik för krypteringsnycklar](./media/ssrs-config-manager-10.png)](./media/ssrs-config-manager-10.png)
     
 12. Klicka på fliken **Abonnemangsinställningar** och verifiera att inställningarna stämmer med bilden nedan.
 
     [![Fliken Abonnemangsinställningar](./media/ssrs-config-manager-11.png)](./media/ssrs-config-manager-11.png)
     
-  Ändra inte förvalda inställningar i fliken **Distribution av arbetsbelastning**. [![flik för distribution av arbetsbelastning](./media/ssrs-config-manager-12.png)](./media/ssrs-config-manager-12.png)
+    Ändra inte förvalda inställningar i fliken **Distribution av arbetsbelastning**. [![flik för distribution av arbetsbelastning](./media/ssrs-config-manager-12.png)](./media/ssrs-config-manager-12.png)
     
-  Ändra inte förvalda inställningar i fliken **Power BI-integrering**. [![flik för power bi-integrering](./media/ssrs-config-manager-13.png)](./media/ssrs-config-manager-13.png) 
+    Ändra inte förvalda inställningar i fliken **Power BI-integrering**. [![flik för power bi-integrering](./media/ssrs-config-manager-13.png)](./media/ssrs-config-manager-13.png) 
     
 13. Klicka på **Avsluta** för att stänga **Reporting Services Configuration Manager**.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-sales-tax-groups-and-item-sales-tax-groups"></a>Ställ in momsgrupper och artikelmomsgrupper
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Registreringen av den här uppgiften omfattar inställningarna för moms och artikelmomsgrupper. Momsgrupper är grupper av momskoder som är kopplade till kunder och leverantörer. De kopplas även till redovisningskonton för transaktioner som inte har bokförts för en viss leverantör eller kund.  Artikelmomsgrupper är grupper av momskoder som är kopplade till resurser som produkter.  De momsgrupper som gäller för en viss transaktion fastställs av momskoderna som är inkluderade i både momsgruppen och artikelmomsgruppen för transaktionen.  Moms kan bara beräknas om en momsgrupp och en artikelmomsgrupp väljs för samtliga transaktioner där moms måste beräknas eller registreras.  
 

@@ -27,7 +27,7 @@ ms.lasthandoff: 03/08/2018
 ---
 # <a name="leave-and-absence-management-overview"></a>Översikt över tjänstledighets- och frånvarohantering
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Modulen **Tjänstledighet- och frånvarohantering** erbjuder ett flexibelt ramverk för att definiera processen av frånvarohantering. Tjänstledighets- och frånvaroplaner kan skapas för att avgöra hur medarbetare ackumulerar eller beviljas ledighet. När medarbetarna är anmälda till en plan, kan de skicka in ledighetsansökningar till cheferna för godkännande. Med ledighetsuppföljning kan både chefer på första nivån och personalchefer se hur mycket ledig tid som tagits ut, och hur mycket som finns kvar.  
 

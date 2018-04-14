@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="reduction-keys"></a>Reduceringsnycklar
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Den här artikeln ger exempel som visar hur du ställer in en reduceringsnyckel. Den innehåller information om de olika reduceringsnyckelinställningarna och resultaten av varje nyckel. Du kan använda en reduceringsnyckel om du vill ange hur du ska minska prognosbehoven.
 
@@ -39,17 +38,19 @@ Den här artikeln ger exempel som visar hur du ställer in en reduceringsnyckel.
 
 Detta exempel visar hur en reduceringsnyckel reducerar behoven av efterfrågeprognos enligt procentsatserna och de perioder som definieras av reduceringsnyckeln.
 
-1.  Ange följande rader på sidan **Reduceringsnycklar**.
-    | Växel | Enhet  | Procent |
-    |--------|-------|---------|
-    | 1      | Månad | 100     |
-    | 2      | Månad | 75      |
-    | 3      | Månad | 50      |
-    | 4      | Månad | 25      |
+1. Ange följande rader på sidan **Reduceringsnycklar**.
 
-2.  Länka reduceringsnyckeln till artikelns täckningsgrupp.
-3.  På sidan **Huvudplaner** i fältet **Reduceringsprincip** väljer du **Procent - reduceringsnyckel**.
-4.  Skapa en efterfrågeprognos på 1 000 enheter per månad.
+   | Växel | Enhet  | Procent |
+   |--------|-------|---------|
+   |   1    | Månad |   100   |
+   |   2    | Månad |   75    |
+   |   3    | Månad |   50    |
+   |   4    | Månad |   25    |
+
+
+2. Länka reduceringsnyckeln till artikelns täckningsgrupp.
+3. På sidan **Huvudplaner** i fältet **Reduceringsprincip** väljer du **Procent - reduceringsnyckel**.
+4. Skapa en efterfrågeprognos på 1 000 enheter per månad.
 
 Om du kör prognosplanering den 1 januari förbrukas kraven på efterfrågeprognos enligt de procentsatser som du ställer in på sidan **Reduceringsnycklar**. Följande behovskvantiteter överförs till huvudplanen.
 
@@ -88,20 +89,21 @@ Med samma försäljningsprognos på 1 000 enheter per månad överförs följand
 ## <a name="example-3-transactions--dynamic-period-forecast-reduction-principle"></a>Exempel 3: Transaktioner - dynamisk period för prognosreduceringsprincip
 I de flesta fall ställs systemen in så att transaktioner minskar efterfrågeprognosen inom specifika detaljprognosperioder: veckor, månader och så vidare. Dessa perioder definieras i reduceringsnyckeln. Men tiden mellan två efterfrågeprognosrader kan också *antyda* en period.
 
-1.  Skapa en efterfrågeprognos för följande datum och kvantiteter.
-    | Datum       | Efterfrågeprognos |
-    |------------|-----------------|
-    | 1 januari  | 1 000           |
-    | 5 januari  | 500             |
-    | 12 januari | 1 000           |
+1. Skapa en efterfrågeprognos för följande datum och kvantiteter.
 
-    I denna prognos finns det inte en tydlig period mellan prognosdata: mellan de första och andra data finns det endast en tidsperiod på 4 dagar, och mellan de andra och tredje data finns det endast en tidsperiod på 1 dag. Dessa olika tidsperioder är de dynamiska perioderna.
-2.  Skapa försäljningsorderrader enligt följande.
-    | Datum                             | Försäljningsorderns kvantitet |
-    |----------------------------------|----------------------|
-    | 15 december föregående år | 500                  |
-    | 3 januari                        | 100                  |
-    | 10 januari                       | 200                  |
+   | Datum       | Efterfrågeprognos |
+   |------------|-----------------|
+   | 1 januari  | 1 000           |
+   | 5 januari  | 500             |
+   | 12 januari | 1 000           |
+
+   I denna prognos finns det inte en tydlig period mellan prognosdata: mellan de första och andra data finns det endast en tidsperiod på 4 dagar, och mellan de andra och tredje data finns det endast en tidsperiod på 1 dag. Dessa olika tidsperioder är de dynamiska perioderna.
+2. Skapa försäljningsorderrader enligt följande.
+   | Datum                             | Försäljningsorderns kvantitet |
+   |----------------------------------|----------------------|
+   | 15 december föregående år | 500                  |
+   | 3 januari                        | 100                  |
+   | 10 januari                       | 200                  |
 
 Prognosen reduceras enligt följande:
 

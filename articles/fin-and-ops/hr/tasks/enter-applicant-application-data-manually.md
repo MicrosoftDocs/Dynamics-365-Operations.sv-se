@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="enter-applicant-and-application-data-manually"></a>Ange sökanden och ansökningsdata manuellt
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 I den här proceduren visas hur du manuellt hanterar information om sökanden och hans/hennes ansökning.   Du kan ange och hantera personuppgifter, intervjudata och tider, referenser, kompetenser och logiförfrågningar för sökande. Du kan även uppdatera statusen för sökandens platsansökningar och skapa brev eller e-postmeddelande för att kommunicera med sökanden. När du skapar en sökandepost, skapas en personpost för den sökanden i den globala adressboken.       Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.
 

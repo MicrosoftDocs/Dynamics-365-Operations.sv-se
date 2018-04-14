@@ -28,8 +28,7 @@ ms.lasthandoff: 02/23/2018
 
 # <a name="set-up-training-courses"></a>Ställa in utbildningskurser
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Personalresursadministratörer och chefer kan använda kursfunktionerna för att underhålla information om utbildningen som ges till arbetare.
 
@@ -81,15 +80,15 @@ Följande tabell listar de tre inställningstyperna för kurser. Inställningsty
 
 ## <a name="course-tasks"></a>Kursuppgifter
 Du kan utföra följande uppgifter för varje kurs.
--   Registrera deltagare
--   Ange en deadline för registreringen
--   Ange lägsta och högsta antal deltagare
--   Tilldela en plats och ett klassrum för kursen
--   Rekommendera hotell för kursdeltagare
--   Skapa en kursbeskrivning som du sedan kan annonsera på Självbetjäning för medarbetare
+- Registrera deltagare
+- Ange en deadline för registreringen
+- Ange lägsta och högsta antal deltagare
+- Tilldela en plats och ett klassrum för kursen
+- Rekommendera hotell för kursdeltagare
+- Skapa en kursbeskrivning som du sedan kan annonsera på Självbetjäning för medarbetare
 
   >**Obs!** Du kan bara ta bort en kurs om ingen har registrerat sig för den. 
-    
+
 ## <a name="course-statuses"></a>Kursstatus
 Följande tabell listar möjliga kursstatusvärden och de åtgärder som du kan utföra när kursen har en viss status.
 

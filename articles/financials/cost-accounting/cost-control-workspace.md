@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="cost-control-overview"></a>Kostnadskontrollöversikt 
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Arbetsytan **Kostnadskontroll** är en central plats där chefer, som ansvarar för kontroll av ett kostnadsobjekt eller en uppsättning kostnadsobjekt i en dimension eller i flera dimensioner (t.ex. kostnadscenter och produktgrupper) har åtkomst till rapporter. Rapporterna i arbetsytan hanteras helt av kostnadsrevisorer, så att den layout och data som används för rapportering kan vara konsekvent över hela organisationen.
 

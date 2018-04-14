@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="budget-planning-templates-for-excel"></a>Budgetplaneringsmallar för Excel
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Det här avsnittet beskriver hur du skapar Microsoft Excel-mallar som kan användas med budgetplaner.
 
@@ -42,11 +41,11 @@ Budgetplandokument kan visas och redigeras med hjälp av en eller flera av layou
 1. Öppna **Budgetplanlista** (**Budgetering** &gt; **Budgetplaner**). 
 2. Klicka på **Ny** om du vill skapa en ny budgetplan. 
 
-  [![Budgetplanslista](./media/bpt11-1024x552.png)](./media/bpt11.png) 
+   [![Budgetplanslista](./media/bpt11-1024x552.png)](./media/bpt11.png) 
 
 3. Använd radalternativet **Lägg till** för att lägga till rader. Klicka på **Layout** för att visa dokumentlayoutens konfiguration för budgetplanen. 
 
-  [![Lägg till budgetplaner](./media/bpt2-1024x274.png)](./media/bpt2.png) 
+   [![Lägg till budgetplaner](./media/bpt2-1024x274.png)](./media/bpt2.png) 
 
 Du kan granska layoutkonfigurationen och justera den efter behov. 
 1. Navigera till **Mall** &gt; **Generera** för att skapa en Excel-fil för den här layouten. 

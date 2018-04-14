@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-mass-hire-project"></a>Skapa ett massanställningsprojekt
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 I den här proceduren beskrivs processen för att ställa in ett massanställningsprojekt. En rekryterare kan använda massanställningsprojekt för att skapa flera befattningar och anställa ett antal arbetare till dessa befattningar på ett enkelt sätt. Gå till Personal > Rekrytering > Massanställningsprojekt för att starta proceduren. Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.
 

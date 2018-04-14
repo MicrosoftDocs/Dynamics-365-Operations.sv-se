@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="activity-based-subcontracting"></a>Aktivitetsbaserad legotillverkning
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Det här avsnittet beskriver i detalj hur du använder legotillverkningsaktiviteter i ett produktionsflöde för lean manufacturing.
 

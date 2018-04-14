@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="create-fixed-compensation-plans"></a>Skapa planer för fast kompensation
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Fast kompensation refererar till en medarbetares vanliga bruttolön eller löner. Det här avsnittet beskriver de komponenter som måste ställas in innan du kan skapa en fast kompensationsplan och anmäla medarbetare.
 

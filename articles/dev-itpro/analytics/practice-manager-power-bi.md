@@ -27,7 +27,7 @@ ms.lasthandoff: 12/18/2017
 
 # <a name="practice-manager-power-bi-content"></a>Power BI-innehåll för praxischef
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Det här avsnittet beskriver vad som ingår i Microsoft Power BI-innehållet för **Praxischef**. Det förklarar hur du öppnar Power BI-rapporter och ger information datamodellen och de enheter som används för att skapa innehållet.
 
@@ -118,7 +118,9 @@ Nedanstående avsnitt beskriver de sammanlagda mått som används i respektive e
 ### <a name="entity-projectaccountingcubetotalestimatedcosts"></a>Enhet: ProjectAccountingCube\_TotalEstimatedCosts 
 **Datakälla:** ProjTable
 
-| Sammanlagda huvudmått       | Fält               | beskrivning |
-|---------------------------------|---------------------|-------------|
+
+|    Sammanlagda huvudmått    |        Fält        |                                          beskrivning                                           |
+|---------------------------------|---------------------|------------------------------------------------------------------------------------------------|
 | Planerad kostnad för slutförd aktivitet | Sum(TotalCostPrice) | Uppskattad total självkostnad för alla projekttransaktionstyper som har slutförda uppgifter. |
+
 

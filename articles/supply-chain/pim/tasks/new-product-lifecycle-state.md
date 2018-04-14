@@ -24,7 +24,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="create-a-new-product-lifecycle-state"></a>Skapa ett nytt produktlivscykeltillstånd
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 I den här proceduren visas hur du skapar ett nytt livscykeltillstånd för en produkt. Ett livscykeltillstånd för produkt beskriver livscykelstatusen för en frisläppt produkt eller produktvariant. Produktens livscykeltillstånd definieras av användaren, vanligtvis en produktchef eller en produktmallchef. Specifika affärsprocesser, t.ex. huvudplanering kan påverkas av ett visst livscykeltillstånd.
 

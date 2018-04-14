@@ -27,7 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="excel-templates-with-multiple-worksheets"></a>Excelmallar med flera kalkylblad
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Datahantering i Microsoft Dynamics 365 for Finance and Operations har stöd för Microsoft Excel-mallar för datatabeller. Mallarna kan innehålla ett eller flera kalkylblad. Mallar med flera kalkylblad används ofta när det är lämpligt att hantera data i en fil och importera den till flera datatabeller. Ett exempel är platser och lagerställen.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="ship-orders-as-direct-deliveries"></a>Leverera order som direktleveranser
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Den här proceduren visar hur du kan skapa en direktleverans för en försäljningsorder. Du använder direktleverans när du vill leverera varor direkt till kunden från leverantören, i stället för att skicka dem till ditt lagerställe först. Du kan köra den här proceduren i demonstrationsföretaget USMF eller på dina egna data. Om du vill slutföra den andra deluppgiften ”Skapa direktleveranser från arbetsbänken” ska du se till att artikeln du väljer på försäljningsordern har en standardleverantör angiven på inköpsnabbfliken för den frisläppta produktmallen.
 

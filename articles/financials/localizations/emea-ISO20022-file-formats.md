@@ -26,7 +26,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="import-iso20022-files"></a>Importera ISO20022-filer
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Du kan importera betalningsfiler som har följande format:
 
@@ -41,8 +41,8 @@ Du måste slutföra följande förutsättningar för att importera bankmeddeland
 3. På sidan **kundbankkonto** skapar du en kundbankkontopost genom att ange följande information: IBAN eller bankkontonummer och SWIFT-kod eller organisationsnummer.
 4. På sidan **Bbankkonton** skapar du ett bankkonto för juridisk person genom att ange följande information: IBAN eller bankkontonummer och SWIFT-kod eller organisationsnummer, valuta och adress.
 
-    > [!NOTE]
-        > Om du planerar att använda avancerad bankavstämning, på snabbfliken **avstämning** ange alternativet **avancerad bankavstämning** till **Ja**. Om du planerar att synkronisera importerade ej bokförda betalningar, ange **Använd bankutdrag som en bekräftelse på elektroniska betalningar** till **Ja**.
+   > [!NOTE]
+   > Om du planerar att använda avancerad bankavstämning, på snabbfliken **avstämning** ange alternativet **avancerad bankavstämning** till **Ja**. Om du planerar att synkronisera importerade ej bokförda betalningar, ange **Använd bankutdrag som en bekräftelse på elektroniska betalningar** till **Ja**.
 
 5. Valfritt: På sdian **Transaktionskodsmappning** anger du mappningen mellan banktransaktionskoder i filen och banktransaktionstyper.
 6. Om filen innehåller transaktionskostnader som du vill bokföra tillsammans med inkommande betalning, skapa en betalningsavgift på sidan **Kundbetalningsavgift**. Klicka sedan på sidan **betalningsmetoder**, koppla betalningsavgiften till bankkontot i betalningsavgiftsinställningarna.

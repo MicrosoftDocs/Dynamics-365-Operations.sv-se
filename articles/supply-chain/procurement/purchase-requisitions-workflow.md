@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="purchase-requisition-workflow"></a>Arbetsflöde för inköpsrekvisitioner
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Arbetsflödesprocessen flyttar inköpsrekvisitionerna genom granskningsprocessen, från en ursprunglig status för Utkast till statusen Godkänd. När en inköpsrekvisition skickas in för granskning, startas arbetsflödesprocessen. När en inköpsrekvisition har godkänts, kan en inköpsorder skapas för inköpsrekvisitionsraderna och skickas till leverantören för uppfyllelse av ordern.
 

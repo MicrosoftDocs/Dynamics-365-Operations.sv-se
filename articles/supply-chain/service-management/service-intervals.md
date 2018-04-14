@@ -28,8 +28,7 @@ ms.lasthandoff: 02/20/2018
 
 # <a name="service-intervals"></a>Serviceintervall
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Serviceavtalsintervallet anger den frekvens med vilken serviceorderrader skapas för serviceavtalsrader när du skapar serviceorder automatiskt.
 

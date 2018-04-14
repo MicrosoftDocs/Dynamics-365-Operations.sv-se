@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-predefined-product-variants"></a>Skapa fördefinierade produktvarianter
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Den här proceduren går igenom hur du skapar produktvarianter för en produktmall med kombinationer av produktdimensioner. Demonstrationsdataföretaget som används för att skapa den här proceduren är USMF.
 

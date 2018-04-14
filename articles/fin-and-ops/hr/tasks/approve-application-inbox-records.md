@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="approve-application-inbox-records"></a>Godkänn poster för ansökningsinkorg
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 I den här proceduren visas hur du granskar ansökningar som mottagits via medarbetarnas självbetjäningssidor. Förutom att granska ansökningar kan du godkänna ansökan i de rutposter som du väljer. Godkänn poster för inkorg för ansökningar representerar jobbansökningar som har skickats in till företaget för att tas i beaktande. När du har godkänt en post skapas en sökandepost för den person som skickade in ansökningen. Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.
 

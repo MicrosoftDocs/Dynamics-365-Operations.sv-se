@@ -28,7 +28,7 @@ ms.lasthandoff: 02/21/2018
 
 # <a name="create-service-objects"></a>Skapa serviceobjekt  
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
    
 Serviceobjekt är en kunds tillgångar och produkter som du kan utföra en tjänst för. 
 

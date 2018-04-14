@@ -28,8 +28,7 @@ ms.lasthandoff: 02/05/2018
 
 # <a name="warehouse-mobile-device-display-settings"></a>Visningsinställningar för mobil lagerställeenhet
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 I det här avsnittet beskrivs hur du ställer in utseendet på skärmen på en mobil enhet och hur du mappar kortkommandon till kontroller såsom knappar. 
 

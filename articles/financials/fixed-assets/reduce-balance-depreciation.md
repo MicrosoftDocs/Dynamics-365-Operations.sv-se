@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="reduce-balance-depreciation"></a>Degressiv avskrivning
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Den här avsnittet ger en översikt över metoden för degressiv avskrivning.
 
@@ -80,7 +79,7 @@ Med metoden för degressiv avskrivning beräknas 30 procent av avskrivningsbasen
 | År 2 | (7 000 - 1 000) \* 30% = 1 800            | (7 000 -1 800) = 5 200                |
 | År 3 | (5 200 - 1 000) \* 30% = 1 260            | (5 200 - 1 260) = 3 940               |
 
- 
+
 -
 
 

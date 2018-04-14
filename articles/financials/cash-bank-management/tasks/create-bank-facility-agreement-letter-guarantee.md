@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-bank-facility-agreement-for-the-letter-of-guarantee"></a>Skapa ett kreditlimitavtal för en garanti
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denna uppgift skapar ett bankkreditlimitavtal för att bearbeta en garanti. I den här uppgiften används demonstrationsföretaget USMF. 
 

@@ -28,8 +28,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="fixed-assets-home-page"></a>Startsidan Anläggningstillgångar
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Anläggningstillgångar är artiklar av värde, t.ex. fastigheter, fordon, mark eller utrustning, som ägs av en privatperson eller en organisation. 
 

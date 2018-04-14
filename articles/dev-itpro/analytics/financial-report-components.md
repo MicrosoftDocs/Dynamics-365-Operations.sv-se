@@ -28,14 +28,14 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="financial-report-components"></a>Komponenter för ekonomisk rapport
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Den här artikeln innehåller en beskrivning av hur komponenter eller byggblock för rapportdefinitioner används vid ekonomisk rapportering. Dessa byggblock omfattar raddefinitioner, kolumndefinitioner och rapporteringsträddefinitioner. Artikeln förklarar hur du ordnar och låser byggblock. 
 
 Designfilosofin bakom ekonomiska rapporteringsdesigner är att dela upp information i de minsta komponenterna eller byggblocken och sedan mixa och matcha komponenterna efter behov. Därför är formateringen separerad från dina ekonomiska data och du kan ändra en rapports design utan att ändra ekonomiska data i Microsoft Dynamics ERP-system. Med hjälp av den här byggblocksstrategin kan du kombinera text, belopp och beräkningar för att skapa de rapporter du behöver. Dessutom uppmuntrar den här flexibiliteten till kreativitet genom att göra det enklare för dig att visa dina operationer på olika sätt. De enskilda byggblocken i en rapportdefinition liknar ett tredimensionellt kalkylblad, men är mer effektiva. En rapportdefinitionen specificerar raddefinitionen, kolumndefinitionen och en valfri definition av det rapporteringsträd som ska användas för rapporten. Den innehåller också information om var du lagrar den genererade rapporten och hur du öppnar den. 
 
 ## <a name="building-blocks-of-a-report"></a>Byggblock i en rapport
+
 | Byggblock            | beskrivning                     | Mer information                                    |
 |---------------------------|---------------------------------|---------------------------------------------------------|
 | Raddefinition            | En raddefinition definierar de beskrivande raderna (till exempel löner eller försäljning) i en rapport. Den anger också de segmentvärden eller dimensioner som innehåller värdena för varje radartikel och innehåller även radformatering och beräkningar.                                                    | [Raddefinitioner](row-definitions-financial-reporting.md)                       |

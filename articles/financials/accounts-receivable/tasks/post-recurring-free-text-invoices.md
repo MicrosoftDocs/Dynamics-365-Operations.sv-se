@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="generate-and-post-recurring-free-text-invoices"></a>Generera och bokför återkommande fritextfakturor
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Återkommande fakturor används för att fakturakunder regelbundet för samma belopp. I den här registreringen används demonstrationsföretaget USMF. Inspelningen är avsedd för den användare som ansvarar för hantering och bearbetning av kundreskontrafakturor.
 

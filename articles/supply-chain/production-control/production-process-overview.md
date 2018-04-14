@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="production-process-overview"></a>Översikt över produktionsprocess
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Det här ämnet innehåller en översikt över produktionsprocesserna. Den beskriver de olika stegen i produktionsorder, batchorder och kanbans, från orderns skapande till stängningen av den ekonomiska perioden. 
 

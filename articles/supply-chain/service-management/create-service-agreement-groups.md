@@ -28,7 +28,7 @@ ms.lasthandoff: 02/19/2018
 
 # <a name="create-service-agreement-groups"></a>Skapa serviceavtalsgrupper 
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Serviceavtalsgrupper är användbara för att sortera och filtrera serviceavtal.
 

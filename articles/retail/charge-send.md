@@ -28,7 +28,7 @@ ms.lasthandoff: 03/06/2018
 
 # <a name="ship-an-order-from-a-different-store"></a>Leverera en order från en annan butik
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Med sändningsfunktionen Tillägg i Dynamics 365 for Retail kan kundorder placeras i en butik och levereras från en annan butik. Kundorder i butik klientstöd med flera utförandealternativ. Exempel på utförandealternativ är:
 -   Hämta från samma butik ett annat datum.

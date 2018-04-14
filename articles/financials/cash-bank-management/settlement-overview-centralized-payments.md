@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="settlement-overview-for-centralized-payments"></a>Kvittningsöversikt för centraliserade betalningar
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Organisationer som omfattar flera juridiska personer kan skapa och hantera betalningar genom att använda en enda juridisk person som hanterar alla betalningar. Detta undanröjer behovet av att registrera samma transaktion i flera juridiska personer, och man sparar tid genom att betalningsförslagsprocessen, kvittningsprocessen, redigeringen av öppna och stängda transaktioner för centraliserade betalningar förenklas. 
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 02/21/2018
 
 # <a name="service-tasks"></a>Serviceuppgifter  
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Använd serviceuppgifter om du vill beskriva den aktivitet som utförs under en serviceorder.
 Den här informationen är tillgänglig för både tekniker och kunder.

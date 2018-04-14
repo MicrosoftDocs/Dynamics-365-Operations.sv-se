@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="settle-a-partial-customer-payment-that-has-multiple-discount-periods"></a>Kvitta en delkundsbetalning som har flera rabattperioder
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Det inlägg visar hur delvisa kundbetalningar kvittas om det finns flera rabattperioder.
 

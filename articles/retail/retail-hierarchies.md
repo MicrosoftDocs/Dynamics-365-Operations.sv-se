@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="retail-hierarchies"></a>Butikshierarkier
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Den här artikeln beskriver butikshierarkierna i Microsoft Dynamics 365 for Retail.
 

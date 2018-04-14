@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-calendar-and-generate-working-times"></a>Skapa en kalender och generera arbetstider
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Kalendrar beskriver kapaciteten och arbetstider för verksamhetsresurser. Den här proceduren gör att du kan definiera en arbetskalender som baseras på en arbetstidsmall. Du kan gå igenom den här proceduren i demonstrationsdataföretaget USMF eller använda dina egna data.
 

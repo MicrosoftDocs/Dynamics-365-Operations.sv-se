@@ -25,7 +25,7 @@ ms.lasthandoff: 11/03/2017
 ---
 # <a name="create-a-production-flow-version"></a>Skapa en produktionsflödesversion
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Den här proceduren fokuserar på att skapa en ny produktionsflödesversion. För den här proceduren måste produktionsparametrarna för lean manufacturing och måttenheterna för klasstid definieras. Du måste också definiera en värdeström och en produktionsgrupp. Mer information om produktionsflöden och aktiviteter i lean manufacturing finns i dokumentationen om lean manufacturing för Microsoft Dynamics AX. Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.
 

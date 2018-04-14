@@ -27,7 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="expense-management-mobile-workspace"></a>Mobil arbetsyta för utläggshantering
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Det här avsnittet innehåller information om mobil arbetsyta för **Utläggshantering**. Den här arbetsytan låter användarna hämta och skicka ett kvitto så att de kan bifogas till en utgiftsrapport senare. Användare kan snabbt skapa en utgiftsrad med en kopplad inleverans och skapa och hantera sina utgiftsrapporter. Godkännare kan dessutom använda den mobila arbetsytan **utgiftshantering** för att visa kostnadsrapporter som har tilldelats till dem och antingen godkänna eller avvisa de utgiftsrapporterna.
 

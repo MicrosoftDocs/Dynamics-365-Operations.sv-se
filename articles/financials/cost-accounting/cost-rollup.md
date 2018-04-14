@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="cost-rollup-policy-and-overhead-calculation"></a>Policy för samlade kostnader och omkostnadsberäkning 
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Kostnadsredovisning låter dig få en inblick i hur kostnadsflödet relaterar till produkter och tjänster som levereras inom en organisation. För att se kostnadstransparens är det viktigt att uppnå kostnadsfördelning mellan kostnadsobjekt utifrån en lämplig allokeringsbas. Kostnadsfördelning uppnås som standard för det primära kostndselementet vilket önskas i vissa situationer, men har några konsekvenser som du bör överväga.
 

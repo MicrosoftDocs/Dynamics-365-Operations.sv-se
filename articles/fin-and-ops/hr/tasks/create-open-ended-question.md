@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-an-open-ended-question"></a>Skapa en öppen fråga
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Öppna frågor gör det möjligt för svarande att skriva ett eget svar. Du kan kontrollera om att svaret är ett nummer, ett decimaltecken, ett datum, en kommentarer och så vidare. I den här proceduren går vi igenom processen för att skapa en viss typ av fråga, en öppen fråga. Gå till Enkät > Design > Frågor för att initiera den här proceduren. Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.
 

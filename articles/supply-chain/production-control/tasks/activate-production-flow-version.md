@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="activate-a-production-flow-version"></a>Aktivera en produktionsflödesversion
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Innan kanban-jobb kan skapas och aktiviteter bearbetas för en produktionsflödesversion måste du aktivera versionen. Vi rekommenderar att du aktiverar versionen före dess effektiva startdatum och starttid. För att slutföra uppgiften måste du ha en produktionsflödesversion som har Utkaststatus om du vill att aktivera versionen. 
 

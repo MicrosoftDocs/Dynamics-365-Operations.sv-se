@@ -29,8 +29,7 @@ ms.lasthandoff: 03/08/2018
 
 # <a name="personalized-product-recommendations-overview"></a>Översikt över anpassade produktrekommendationer
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 > [!NOTE]
 > Vi tar bort den nuvarande versionen av tjänsten produktrekommendation eftersom vi designar om funktionen med en bättre algoritm och nya butiksorienterade funktioner. Mer information finns i beskrivningen av [borttagna eller gamla funktioner](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features). Gå längst ned på sidan om du står inför problem med redan aktiverade produktrekommendationer för din miljö. 
@@ -86,9 +85,9 @@ När du har aktiverat **Aktivera rekommendationer** och kör konfigurationsjobb,
 -   Modellautentiseringsuppgifter och -ID görs tillgängliga för CRT så att anrop för produktrekommendationer från Cloud POS och MOPS i onlineläge kan utföras.
 
 > ## <a name="troubleshoot-issues-where-you-have-product-recommendations-already-enabled"></a>Felsök problem där du redan produktrekommendationer aktiverade 
->- Gå till **butiksparametrar** > **datorinlärning** > **inaktivera produktrekommendationer** och kör **Globalt konfigurationsjobb [1110]**. Om du inte kan hitta fliken **datorinlärning** kontaktar du Dynamics Support. 
-
->- Om du har lagt till **rekommendationskontroll** till din transaktionsskärm med **Layoutdesigner för skärm**, ta även bort den. 
+> - Gå till **butiksparametrar** > **datorinlärning** > **inaktivera produktrekommendationer** och kör **Globalt konfigurationsjobb [1110]**. Om du inte kan hitta fliken **datorinlärning** kontaktar du Dynamics Support. 
+> 
+> - Om du har lagt till **rekommendationskontroll** till din transaktionsskärm med **Layoutdesigner för skärm**, ta även bort den. 
 
 
 

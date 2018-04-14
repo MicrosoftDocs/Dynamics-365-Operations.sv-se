@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-injury-and-illness-information"></a>Ställ in information om skador och sjukdomar
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Arbetsgivare behöver veta när deras medarbetare skadas eller blir sjuka på grund av faror på arbetsplatsen. Du kan använda sidan för skador och sjukdom för att ställa in information som underlättar rapporteringen av skador eller sjukdom på arbetsplatsen. Du kan ställa in typer av skador och sjukdom, inklusive typer av behandlingar, kostnader och resultat. Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.
 

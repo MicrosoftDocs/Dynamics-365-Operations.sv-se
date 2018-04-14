@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-sales-orders"></a>Skapa försäljningsorder
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Den här proceduren visar hur du skapar en försäljningsorder. Du kan köra den här proceduren i demonstrationsdataföretaget USMF. Försäljningsorder skapas vanligtvis av en försäljningsorderprocessor. 
 

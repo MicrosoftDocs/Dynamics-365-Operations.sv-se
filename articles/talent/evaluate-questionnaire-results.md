@@ -28,7 +28,7 @@ ms.lasthandoff: 03/08/2018
 
 # <a name="view-and-evaluate-the-results-of-a-questionnaire"></a>Visa och utvärdera resultaten för en enkät
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Detta hjälpavsnitt förklarar hur visar och utvärderar resultaten för enkäter som svarande slutför. 
 

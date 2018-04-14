@@ -25,7 +25,7 @@ ms.lasthandoff: 11/03/2017
 ---
 # <a name="define-lean-manufacturing-work-cells"></a>Definiera arbetsgrupper för lean manufacturing
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 En arbetsgrupp är en viss form av resursgrupp som går att använda i lean manufacturing-aktiviteter. Arbetsgrupper har platser för inleverans och utleverans och en kapacitetsdefinition som baseras på en produktionsflödesmodell. Mer grundläggande information om arbetsgrupper och kapacitetsberäkningar i lean manufacturing finns i dokumentationen om lean manufacturing. I proceduren används demonstrationsföretag USMF.
 

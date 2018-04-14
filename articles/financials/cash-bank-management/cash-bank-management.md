@@ -28,7 +28,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="cash-and-bank-management-home-page"></a>Startsidan för kassa- och bankhantering
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Använd Kassa- och bankhantering till att underhålla den juridiska personens bankkonton och de finansiella instrument som är associerade med dessa bankkonton. 
 

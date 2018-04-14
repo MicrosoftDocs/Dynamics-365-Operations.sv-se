@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="credit-and-collections-in-accounts-receivable"></a>Kredit och inkasso i Kundreskontra
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Information om kundreskontrasamlingar hanteras i en central vy med hjälp av Finance and Operations-samlingssidan. Kredit- och inkassoansvariga kan använda denna centrala vy för att hantera inkasseringar. Inkassohandläggare kan börja inkassoprocessen från kundlistor som genereras med hjälp av fördefinierade inkassokriterier eller från sidan Kunder.
 
@@ -70,9 +69,9 @@ Följande listsidor hjälper dig att ordna information om inkasso.
 
 > [!NOTE]
 > En ögonblicksbild av åldersfördelning måste skapas innan du kan visa information om listsidan Inkasso. Information visas bara för kunder som en ögonblicksbild av åldersfördelning har skapats för. De poster som visas på listsidan kan dessutom filtreras, enligt följande:
-<li>Som standard har en Finance and Operations-användare åtkomst till alla kunder som har en ögonblicksbild av åldersfördelning.</li>
-<li>Om kundpooler finns, måste en användare anges som en inkassohandläggare för att använda poolerna till att filtrera information om listsidorna för inkasso. Informationen begränsas till de kunder som ingår i den valda kundpoolen.</li>
-<li>Om en användare har ställts in som en inkassohandläggare, är endast poolerna som har valts för den inkassohandläggaren tillgängliga på listsidan. Om Tillåt handläggare att visa alla kundpooler har valts på sidan Inkassohandläggare för inkassohandläggaren, är alla pooler tillgängliga för den handläggaren.</li>
+> <li>Som standard har en Finance and Operations-användare åtkomst till alla kunder som har en ögonblicksbild av åldersfördelning.</li>
+> <li>Om kundpooler finns, måste en användare anges som en inkassohandläggare för att använda poolerna till att filtrera information om listsidorna för inkasso. Informationen begränsas till de kunder som ingår i den valda kundpoolen.</li>
+> <li>Om en användare har ställts in som en inkassohandläggare, är endast poolerna som har valts för den inkassohandläggaren tillgängliga på listsidan. Om Tillåt handläggare att visa alla kundpooler har valts på sidan Inkassohandläggare för inkassohandläggaren, är alla pooler tillgängliga för den handläggaren.</li>
 
 
 ## <a name="collections-page"></a> Sidan Inkasso

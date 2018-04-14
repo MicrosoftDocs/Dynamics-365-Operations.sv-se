@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="accounting-distributions-and-subledger-journal-entries-for-vendor-invoices"></a>Redovisningsfördelningar och redovisningsjournalposter för leverantörsfakturor
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Redovisningsfördelningar används för att definiera hur ett belopp ska redovisas, till exempel hur utgiften, momsen eller avgifterna ska redovisas på en leverantörsfaktura. Varje belopp som måste redovisas när leverantörsfakturan journalförs ska ha en eller flera redovisningsfördelningar. 
 
@@ -231,7 +230,7 @@ När du registrerar en leverantörsfaktura, kommer varje belopp fördelas på f�
 </tbody>
 </table>
 
- 
+
 <a name="distributing-taxes"></a>Fördela moms
 ------------------
 

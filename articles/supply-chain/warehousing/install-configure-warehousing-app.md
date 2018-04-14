@@ -29,11 +29,10 @@ ms.lasthandoff: 03/06/2018
 
 # <a name="install-and-configure-microsoft-dynamics-365-for-finance-and-operations-8211-warehousing"></a>Installera och konfigurera Microsoft Dynamics 365 for Finance and Operations &#8211; Lagerstyrning
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 > [!NOTE]
-
+> 
 > Det här ämnet beskriver hur man konfigurerar lagerstyrning för molndistribution. Om du letar efter hur du konfigurerar lagerstyrning för lokal distribution kan du läsa på denna länk om [lokal distribution](../../dev-itpro/deployment/warehousing-for-on-premise-deployments.md).
 
 

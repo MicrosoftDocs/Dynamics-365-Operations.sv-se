@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-an-interest-code-with-a-range"></a>Skapa en räntekod med ett intervall
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Räntekoder kan ställas in för att beräkna olika räntebelopp baserat på ett värdeintervall. I den här proceduren visas hur du lägger till en räntekod och lägger till ett intervall i den.
 

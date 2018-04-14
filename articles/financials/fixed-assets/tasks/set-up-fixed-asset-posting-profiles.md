@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-fixed-asset-posting-profiles"></a>Ställ in bokföringsprofiler för anläggningstillgångar
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 I den här uppgiftsguiden ställer vi in bokföringsprofiler för anläggningstillgångar.  Här används revisorrollen och demonstrationdata för den juridiska personen USMF.  Exempel som angetts i uppgifthandboken, gäller en grundläggande bokföringsprofil, fast bokföringsprofiler måste skapas för dina specifika krav för kontoplanen och om den ekonomiska rapporteringen.
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="copy-a-formula"></a>Kopiera en formel
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Den här proceduren fokuserar på att skapa en formel som innehåller samma ingredienser som en befintlig formel, men med mindre skillnader. Om du vill skapa formelraderna kan du använda kopieringsfunktionen för att kopiera en befintlig formel som har innehåller de flesta av de ingredienser som du behöver. Du kan sedan göra nödvändiga ändringar på enskilda rader i den nya versionen. Genom att använda kopieringsfunktionen behöver du inte skapa flera formler som är nästan identiska. Det demonstrationsdataföretag som används för att skapa den här uppgiften är USP2.
 

@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-company-specific-hr-parameters"></a>Ställa in företagsspecifika HR parametrar
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Inställningarna för vissa HR-parametrar delas av alla företag, medan inställningarna för andra parametrar är företagsspecifika. Den här artikeln innehåller information om hur du ställer in företagsspecifika HR-parametrar.
 

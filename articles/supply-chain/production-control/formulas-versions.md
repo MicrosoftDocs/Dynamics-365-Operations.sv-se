@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="formulas-and-formula-versions"></a>Formler och formelversioner
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 En formel definierar material, komponenter och resultat för en viss process i processtillverkning. Tillsammans med motsvarande väg definierar formeln hela processen inom processtillverkning. Formler används för att planera och framställa produkter i processtillverkning.
 

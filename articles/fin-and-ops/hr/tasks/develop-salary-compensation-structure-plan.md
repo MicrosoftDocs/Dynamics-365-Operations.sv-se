@@ -24,7 +24,7 @@ ms.lasthandoff: 11/01/2017
 ---
 # <a name="develop-salarycompensation-structure-and-plans"></a>Utveckla struktur och planer för lön/kompensation
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Den här uppgiftsguiden är en genomgång av processen att skapa en fast kompensationsplan och låta medarbetare anmäla sig till planen med hjälp av berättiganderegler. Demonstrationdataföretaget som används för att skapa den här uppgiften är USMF, och uppgiften är avsedd för kompensations- och förmånsansvariga.
 

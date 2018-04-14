@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-closed-ended-question"></a>Skapa en stängd avslutad fråga
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Med stängda frågor kan du ange alternativ som den svarande kan välja mellan. Först måste du skapa svarsgruppen med svaren och sedan skapa frågan som använder svarsgruppen. Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.
 

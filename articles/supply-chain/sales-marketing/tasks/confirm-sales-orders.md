@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="confirm-sales-orders"></a>Bekräfta försäljningsorder
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 I den här proceduren visas hur du bekräftar försäljningsorder. Du får reda på hur du bekräftar en enstaka order och hur du bekräftar flera order på en gång. Dessa uppgifter utförs vanligtvis via en försäljningsorderbehandlare. Du kan använda den här proceduren i demonstrationsföretaget USMF eller på dina egna data. Kontrollera att det finns flera öppna försäljningsorder för samma kund innan du börjar. Om du använder USMF kan du använda kunden US-027.
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 12/19/2017
 
 # <a name="employee-development-power-bi-content"></a>Utveckling av medarbetare Power BI-innehåll
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Det här avsnittet beskriver Power BI-innehåll för **medarbetarutveckling**.
 
@@ -45,6 +45,7 @@ Rapporter som ingår i Power BI-innehållspaketet **Medarbetarutveckling** har b
 Diagrammen och rutorna i samtliga dessa rapporter kan filtreras och fästas på instrumentpanelen. Mer information om hur du filtrerar och fäster i Power BI finns i [Skapa och konfigurera en intrumentpanel](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## <a name="understanding-the-data-model-and-entities"></a>Förstå datamodellen och enheterna
+
 | Enhet                   | Innehåll                                                                                                   | Relationer med andra entiteter |
 |--------------------------|------------------------------------------------------------------------------------------------------------|-----------------------------------|
 | Kalenderförskjutning          | Kalenderförskjutningar till uppdela rapporter                                                                          | Tidigare befattningstilldelning, befattningsutveckling, uppsagd medarbetare 

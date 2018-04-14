@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="financial-dimensions-and-posting"></a>Ekonomiska dimensioner och bokföring 
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 När du planerar och ställer in kontoplanen måste du bestämma hur komponenterna fungerar tillsammans när du bokför ett dokument eller en journal. Dessa komponenter inkluderar kontostrukturer, avancerade regler och balansering och fasta dimensioner. Det här avsnittet beskriver vad varje komponent är och hur komponenterna fungerar tillsammans.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-purchase-order-governed-by-budget"></a>Skapa en inköpsorder som omfattas av budget
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Använd den här proceduren för att skapa en inköpsorder som ska kontrolleras med avseende budget. I den här inspelningen används demonstrationsföretaget USMF.
 

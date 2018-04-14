@@ -27,8 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="keyboard-shortcuts"></a>Kortkommandon
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Följande kortkommandon gäller i hela Dynamics 365 for Finance and Operations. 
 
@@ -39,6 +38,7 @@ I och med plattformsuppdatering 11 kan användarna kan upptäcka tillgängliga g
 
 
 ## <a name="action-shortcuts"></a>Åtgärdgenvägar
+
 |                                                   |                                  |
 |---------------------------------------------------|----------------------------------|
 | **Om du vill göra detta**                                    | **Tryck**                        |
@@ -55,6 +55,7 @@ I och med plattformsuppdatering 11 kan användarna kan upptäcka tillgängliga g
 | Visa aktuella tillgängliga genvägar                | Alt+Shift+K                      |                              
 
 ## <a name="date-picker-shortcuts"></a>Genvägar för datumväljare
+
 |                                       |                                           |
 |---------------------------------------|-------------------------------------------|
 | **Om du vill göra detta**                        | **Tryck**                                 |
@@ -68,6 +69,7 @@ I och med plattformsuppdatering 11 kan användarna kan upptäcka tillgängliga g
 | Välj Aldrig (eller maxdatum)          | N                                         |
 
 ## <a name="factbox-shortcuts"></a>Genvägar för faktaboxen
+
 |                                                                                 |                                           |
 |---------------------------------------------------------------------------------|-------------------------------------------|
 | **Om du vill göra detta**                                                                  | **Tryck**                                 |
@@ -79,6 +81,7 @@ I och med plattformsuppdatering 11 kan användarna kan upptäcka tillgängliga g
 | Komprimera den aktuella faktaboxen                                                    | Alt+0                                     |
 
 ## <a name="filtering-shortcuts"></a>Filtrera genvägar
+
 |                                    |                          |
 |------------------------------------|--------------------------|
 | **Om du vill göra detta**                     | **Tryck**                |
@@ -89,6 +92,7 @@ I och med plattformsuppdatering 11 kan användarna kan upptäcka tillgängliga g
 | Öppna avancerad filtrering/sortering                                      | Ctrl+Skift+F3            | 
 
 ## <a name="form-shortcuts"></a>Bilda kortkommandon
+
 |                                                     |                   |
 |-----------------------------------------------------|-------------------|
 | **Om du vill göra detta**                                      | **Tryck**         |
@@ -110,6 +114,7 @@ I och med plattformsuppdatering 11 kan användarna kan upptäcka tillgängliga g
 | Stäng formuläret och tag bort alla osparade ändringar       | Alt+Skift+Q       |
 
 ## <a name="form-navigation-shortcuts"></a>Bilda navigeringsgenvägar
+
 |                                                     |                                              |
 |-----------------------------------------------------|----------------------------------------------|
 | **Om du vill göra detta**                                      | **Tryck**                                    |
@@ -128,6 +133,7 @@ I och med plattformsuppdatering 11 kan användarna kan upptäcka tillgängliga g
 | Växla till radvy                                | Ctrl+Skift+L                                 |
 
 ## <a name="grid-shortcuts"></a>Genvägar för rutnät
+
 |                                                                                                                        |                                 |
 |------------------------------------------------------------------------------------------------------------------------|---------------------------------|
 | **Om du vill göra detta**                                                                                                         | **Tryck**                       |
@@ -148,6 +154,7 @@ I och med plattformsuppdatering 11 kan användarna kan upptäcka tillgängliga g
 | Öppna rutnätsfiltrering för den aktuella kolumnen (med fokus i rubrikraden)                                              | Ange                           |
 
 ## <a name="input-control-shortcuts"></a>Mata in kontrollgenvägar
+
 |                                                                              |                               |
 |------------------------------------------------------------------------------|-------------------------------|
 | **Om du vill göra detta**                                                               | **Tryck**                     |
@@ -163,6 +170,7 @@ I och med plattformsuppdatering 11 kan användarna kan upptäcka tillgängliga g
 | Växla mellan text och verktygsfält med en HTML-redigerare | F6                            |
 
 ## <a name="messaging-shortcuts"></a>Genvägar för meddelanden
+
 |                          |               |
 |--------------------------|---------------|
 | **Om du vill göra detta**           | **Tryck**     |
@@ -170,6 +178,7 @@ I och med plattformsuppdatering 11 kan användarna kan upptäcka tillgängliga g
 | Gå till meddelandefältet    | Ctrl+F7       |
 
 ## <a name="navigation-shortcuts"></a>Navigeringsgenvägar
+
 |                                                                               |                            |
 |-------------------------------------------------------------------------------|----------------------------|
 | **Om du vill göra detta**                                                                | **Tryck**                  |
@@ -191,6 +200,7 @@ I och med plattformsuppdatering 11 kan användarna kan upptäcka tillgängliga g
 | Flytta till faktaboxen (som kan inkludera att öppna den)                       | Alt+M,B eller Ctrl+F2         |
 
 ## <a name="personalization-shortcuts"></a>Kortkommandon för anpassning
+
 |                                                                                                                        |                                     |
 |------------------------------------------------------------------------------------------------------------------------|-------------------------------------|
 | **Om du vill göra detta**                                                                                                         | **Tryck**                           |
@@ -219,6 +229,7 @@ I och med plattformsuppdatering 11 kan användarna kan upptäcka tillgängliga g
 | Lämna anpassningsläget (i anpassningsläge)                                                               | Esc                                 |
 
 ## <a name="segmented-entry-shortcuts"></a>Segmenterade postgenvägar
+
 |                                                                                                                         |                                  |
 |-------------------------------------------------------------------------------------------------------------------------|----------------------------------|
 | **Om du vill göra detta**                                                                                                          | **Tryck**                        |

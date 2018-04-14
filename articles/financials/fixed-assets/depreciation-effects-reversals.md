@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="depreciation-effects-with-reversals"></a>Avskrivningseffekter med återföringar
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Det här avsnittet behandlar potentiella konsekvenser vid återföring av en Anläggningstillgångstransaktion. 
 

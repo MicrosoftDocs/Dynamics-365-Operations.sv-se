@@ -24,7 +24,7 @@ ms.lasthandoff: 10/30/2017
 ---
 # <a name="vendor-payment-overview"></a>Översikt över leverantörsbetalning
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Den här uppgiftsguiden går igenom vilka olika metoder som används för att skapa leverantörsbetalningar, till exempel hur du använder ett betalningsförslag eller manuellt anger en enstaka betalning. I den här proceduren används demonstrationsföretaget USMF.
 

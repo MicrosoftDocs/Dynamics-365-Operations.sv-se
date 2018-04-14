@@ -27,7 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="welcome-to-microsoft-dynamics-365-for-talent"></a>Välkommen till Microsoft Dynamics 365 for Talent
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Med Microsoft Dynamics 365 for Talent förenklas många vanliga arkiveringsuppgifter och automatiseras ett antal processer som gäller personalen i organisationen. Dessa processer inkluderar personalvård, förmånsadministration, utbildning, prestationsgranskning och ändringshantering. Den innehåller också ett ramverk för personal för hantering av tillsynsområden.
 

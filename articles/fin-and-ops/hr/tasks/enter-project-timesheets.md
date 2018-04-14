@@ -25,7 +25,7 @@ ms.lasthandoff: 11/02/2017
 ---
 # <a name="enter-project-timesheets"></a>Ange projekttidrapporter
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Den här proceduren låter dig skapa en tidrapport genom att använda ett tomt tidrapportformulär. Den nya tidrapporten kan baseras på information från en tidigare tidrapport eller från projekt- och aktivitetstilldelningar på sidan Mina favoriter. Som standard visas listsidan Alla tidrapporter där alla dina tidrapporter för den aktuella perioden visas. Du kan använda listrutan för fältet Visa på sidan Mina tidrapporter för att filtrera tidrapportlistan per tidsperiod eller projekt eller visa tidrapporter som har skapats på uppdrag av andra arbetare. Det demonstrationsdataföretag som används för att skapa den här proceduren är USSI. Börja den här proceduren genom att gå till Projekthantering och redovisning > Tidrapporter > Mina tidrapporter
 

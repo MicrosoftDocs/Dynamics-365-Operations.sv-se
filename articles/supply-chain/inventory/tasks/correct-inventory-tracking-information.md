@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="correct-inventory-tracking-information"></a>Korrekt information om lagerspårning
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Den här proceduren går igenom processen med att skapa och bokföra en lageröverföringsjournal för att korrigera information om lagerspårning. I det här exemplet ska du uppdatera informationen för en batchkontrollerad artikel genom att ändra en felaktigt bokförd batch till en annan batch. Du kan gå igenom den här proceduren i demonstrationsdataföretaget USPI eller använda dina egna data. Om du använder dina egna data måste du ha en artikel som är batchaktiverad och den få inte vara platskontrollerad. Du måste även ha ett lagerjournalnamn inställt för lageröverföringar. Dessa uppgifter utförs vanligtvis av en lagerarbetare.
 

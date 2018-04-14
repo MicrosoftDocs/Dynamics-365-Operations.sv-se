@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="manage-items-lent-to-workers"></a>Hantera artiklar som lånas till arbetare
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Låneartiklar är poster som gör det enklare för chefer att spåra fysiska artiklar som företaget lånar ut till arbetare. 
 
@@ -51,7 +50,7 @@ Chefer kan visa lånade artiklar för deras underställda. De kan också bevilja
 
 Om en artikel skadas eller tappas bort anger du ett fiktivt återlämnande. Sedan raderar du artikeln eller behåller den i översikten och ändrar beskrivningen så att det framgår att den inte är tillgänglig.
 
- 
+
 <a name="see-also"></a>Se även
 --------
 

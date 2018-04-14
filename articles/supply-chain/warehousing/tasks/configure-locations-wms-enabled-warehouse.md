@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="configure-locations-in-a-wms-enabled-warehouse"></a>Konfigurera platser i ett WMS-aktiverat lagerställe
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Den här guiden visar hur du konfigurerar platsinställningar för ett nytt WMS-aktiverat lagerställe (ett lagerställe som använder avancerade lagerstyrningsprocesser). Processen normalt utförs av en lagerchef. Du kan köra den här guiden för demonstrationsföretaget USMF eller på dina egna data. En förutsättning är att du har konfigurerat minst en webbplats.
 

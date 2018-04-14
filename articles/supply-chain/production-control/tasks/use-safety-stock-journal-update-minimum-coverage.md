@@ -23,21 +23,21 @@ ms.contentlocale: sv-se
 ms.lasthandoff: 09/29/2017
 
 ---
-# Använd säkerhetslagerjournalen för att uppdatera minimumdisponering
+# <a name="use-the-safety-stock-journal-to-update-minimum-coverage"></a>Använd säkerhetslagerjournalen för att uppdatera minimumdisponering
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 I den här proceduren visas hur du beräknar minsta disponeringsförslag som baseras på historiska transaktioner och uppdaterar sedan med artikeldisponeringen med förslagen. Detta görs med hjälp av säkerhetslagerjournalen. Det demonstrationsdataföretag som används för att skapa den här uppgiften är USMF. Denna uppgift är avsedd för produktionsplaneraren för att hjälpa till att bibehålla minsta disponering.
 
 
-## Skapa ett nytt namn på säkerhetslagerjournal.
+## <a name="create-a-new-safety-stock-journal-name"></a>Skapa ett nytt namn på säkerhetslagerjournal.
 1. Gå till Namn på säkerhetslagerjournal.
 2. Klicka på Ny.
 3. Ange "Material" i fältet Namn.
 4. Ange "Material" i fältet Beskrivning.
 5. Stäng sidan.
 
-## Skapa en säkerhetslagerjournal
+## <a name="create-a-safety-stock-journal"></a>Skapa en säkerhetslagerjournal
 1. Gå till Beräkning av säkerhetslager.
 2. Klicka på Ny.
 3. Ange eller välj ett värde i fältet Namn.
@@ -50,7 +50,7 @@ I den här proceduren visas hur du beräknar minsta disponeringsförslag som bas
 7. Klicka på OK.
     * Detta skapar rader för dimensionerna som har lagertransaktioner.  
 
-## Beräkna förslag
+## <a name="calculate-proposal"></a>Beräkna förslag
 1. Klicka på Beräkna förslag.
 2. Välj alternativet Use average issue during lead time.
 3. Ange Multiplikationsfaktorn till "10".
@@ -58,7 +58,7 @@ I den här proceduren visas hur du beräknar minsta disponeringsförslag som bas
 4. Klicka på OK.
     * Bläddra ned för att hitta M0002 och M0003. Visa kolumnen Beräknad minsta kvantitet.   
 
-## Uppdatera minsta kvantitet
+## <a name="update-minimum-quantity"></a>Uppdatera minsta kvantitet
 1. Ange ett nummer i fältet Ny minsta kvantitet.
     * Uppdatera den Nya minsta kvantiteten till att matcha värdet i Beräknad minsta kvantitet. Om det beräknade minimivärdet är noll, kan du ange önskat framtida värde. Du kan till exempel ange den beräknade minimikvantiteten i det här fältet för M0002 som har lagerställe 12.  
 2. Hitta och markera önskad post i listan.
@@ -66,7 +66,7 @@ I den här proceduren visas hur du beräknar minsta disponeringsförslag som bas
 3. Ange ett nummer i fältet Ny minsta kvantitet.
     * Uppdatera den Nya minsta kvantiteten till att matcha värdet i Beräknad minsta kvantitet. Om det beräknade minimivärdet är noll, kan du ange önskat framtida värde.  
 
-## Bokför den nya minsta kvantiteten och verifiera resultatet
+## <a name="post-the-new-minimum-quantity-and-validate-the-result"></a>Bokför den nya minsta kvantiteten och verifiera resultatet
 1. Klicka på Bokför.
 2. Klicka på OK.
 3. Klicka för att följa länken i fältet Artikelnummer.

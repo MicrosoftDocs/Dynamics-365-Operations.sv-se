@@ -28,8 +28,7 @@ ms.lasthandoff: 12/14/2017
 
 # <a name="vendor-invoices-overview"></a>Översikt över leverantörsfakturor
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Det här avsnittet innehåller allmän information om leverantörsfakturor. Leverantörsfakturor är förfrågningar för betalning av varor och tjänster som togs emot. Leverantörsfakturor kan representera en faktura för pågående tjänster eller baseras på inköpsorder för vissa varor och tjänster. 
 
@@ -87,11 +86,11 @@ Mer information finns i
  - [Ställ in leverantörsfakturapolicyer](../accounts-receivable/tasks/set-up-vendor-invoice-policies.md) 
 
  - [Mata in fakturadata i leverantörsreskontra genom att använda en leverantörsfaktura](tasks/key-invoice-data-ap-system-vendor-invoice.md)
- 
+
  - [Mata in fakturadata i leverantörsreskontra genom att använda en godkänd journal](tasks/key-invoice-data-into-ap-system-approval-journal.md)
-  
+
  - [Mata in fakturadata i LR-systemet genom att använda fakturapool](tasks/key-invoice-data-into-ap-system-invoice-pool.md)
- 
+
  - [Registrera en leverantörsfaktura i fakturajournalen](tasks/record-vendor-invoice-invoice-journal.md)
 
 

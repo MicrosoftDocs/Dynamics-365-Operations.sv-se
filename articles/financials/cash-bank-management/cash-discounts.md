@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="cash-discounts"></a>Kassarabatter
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Kassarabatter ställs in och delas för Leverantörsreskontra och Kundreskontra.  Den tillgängliga kassarabatten kan definieras på kundfakturan eller leverantörsfakturan och dras av om fakturan betalas innan kassarabattsdatumet har förfallit. 
 
@@ -65,6 +64,7 @@ Din juridisk persons redovisningsvaluta är EUR och följande valutakurser anges
 -   1 mars = 80
 
 En faktura på 1000 USD med villkor för kassarabatt på 20D2% bokförs den 15 februari. Fakturans belopp i redovisningsvalutan är 1 100 EUR. En betalning på 980 USD kvittas mot fakturan den 1 mars. Kassarabattbeloppet är 20 USD. Redovisningsvalutabeloppet för betalningen är 784 EUR. Redovisningsvalutabeloppet för kassarabatten beräknas med hjälp av valutakursen för den 1 mars 1: 20 \* 80 / 100 = 16 EUR.
+
 | **Obs!**                                                                                                                                                                                                                             |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Om alternativet Beräkna kassarabatter för delbetalningar har valt på sidan Parametrar för kundreskontra eller sidan Parametrar för leverantörsreskontra används valutakursen som gäller på datumet för varje delbetalning. |

@@ -28,10 +28,9 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="purchase-order-overview"></a>Översikt över inköpsorder
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
-
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
 Den här artikeln innehåller allmän information om inköpsorder (PO) och länkar till fler artiklar som är relaterade till de olika stegen som en inköpsorder geomgår.
 

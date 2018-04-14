@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="depreciation-methods-and-conventions"></a>Avskrivningsmetoder och praxis
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Den här artikeln ger en översikt över avskrivningspraxis och avskrivningsmetoder som stöds av Microsoft Dynamics 365 for Finance and Operations.
 
@@ -62,7 +61,7 @@ Du kan välja mellan följande avskrivningsmetoder.
 -   150 % degressiv avskrivning
 -   125 % degressiv avskrivning
 
- 
+
 
 
 

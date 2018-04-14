@@ -24,7 +24,7 @@ ms.lasthandoff: 10/27/2017
 ---
 # <a name="create-and-assign-advanced-rule-structures"></a>Skapa och tilldela avancerade regelstrukturer
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Den här uppgiften beskriver steg för steg hur du skapar och tilldelar en avancerad regelstruktur till en kontostruktur. Den här guiden använder demoföretaget USMF.
 

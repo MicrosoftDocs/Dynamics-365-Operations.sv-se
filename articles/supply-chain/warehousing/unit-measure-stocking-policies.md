@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="unit-of-measure-and-stocking-policies"></a>Måttenheten och lagerpolicyer
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Den här artikeln beskriver hur standardenheter, enhetssekvenser och enhetskonverteringar används i lagerprocesser.
 

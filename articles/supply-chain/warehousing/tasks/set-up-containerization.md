@@ -25,7 +25,7 @@ ms.lasthandoff: 11/02/2017
 ---
 # <a name="set-up-containerization"></a>Definiera skapande av behållare
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 I den här proceduren beskrivs hur du automatiserar skapandet av behållare för last Lagerstyrning. Automatiskt skapande av behållare skapar behållare och plockarbetet för leveranser när en påfyllnad bearbetas och arbetsrader kan delas i kvantiteter som passar behållarna. Detta hjälper lagerarbetare att plocka artiklarna direkt till den valda behållaren. Jämfört med den manuella förpackningsprocessen automatiseras uppgifter som till exempel att skapa behållare, tilldela artiklar och stänga behållare av systemet. I den här proceduren används USMF-demonstrationsföretaget och utförs av en lagerchef.
 

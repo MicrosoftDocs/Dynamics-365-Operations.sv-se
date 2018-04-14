@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="allocate-time-to-jobs-in-a-job-bundle"></a>Fördela tid till jobb i en jobbunt
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 I tillverkningskörning kan du bunta jobb. Du kan sedan starta fler jobb på en gång på jobblistsidan.
 

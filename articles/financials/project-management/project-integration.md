@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="microsoft-project-client-integration"></a>Integrering av Microsoft Project-klient
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Att planera och underhålla en projekttidsplan kan vara komplext, därför behöver projektledare verktyg som hjälper dem att hantera uppgiften. Integration med Microsoft Project-klienten ger stöd för att öppna och hantera en uppdelad arbetsstruktur för projekt. Projektledaren kan publicera alla ändringar tillbaka till den uppdelade arbetsstrukturen för projekt i Finance and Operations.
 

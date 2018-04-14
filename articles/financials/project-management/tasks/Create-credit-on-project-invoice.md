@@ -25,7 +25,7 @@ ms.lasthandoff: 11/06/2017
 ---
 # <a name="create-a-credit-note-on-project-invoices"></a>Skapa en kreditfaktura för projektfakturor
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 1. Gå till Projekthantering och redovisning > Projekt > Alla projekt. 
 2. Hitta och markera önskad post i listan. 

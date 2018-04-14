@@ -23,14 +23,14 @@ ms.contentlocale: sv-se
 ms.lasthandoff: 09/29/2017
 
 ---
-# Skapa en kanban-regel med en minsta lagerhändelse
+# <a name="create-a-kanban-rule-using-a-minimum-stock-event"></a>Skapa en kanban-regel med en minsta lagerhändelse
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Den här proceduren fokuserar på inställningarna som krävs för att skapa en kanban-regel med hjälp av en minsta lagerhändelse för att se till att en specifik produkt alltid är tillgänglig på en viss plats. En kanban-regel skapas för att överföra material till platsen när lagernivån sjunker under 200 enheter. Genom att köra bearbetning av pegging-händelse skapas de nödvändiga kanbans. Det demonstrationsdataföretag som används för att skapa den här uppgiften är USMF. Den här uppgiften är avsedd för processingenjören eller värdeströmansvarig när de förbereder tillverkningen av en ny eller ändrad produkt i en resurssnål miljö.
 
 
-## Skapa en ny kanban-regel
+## <a name="create-a-new-kanban-rule"></a>Skapa en ny kanban-regel
 1. Gå till Produktinformationshantering > Lean manufacturing > Kanban-regler.
 2. Klicka på Ny.
 3. Välj "Uttag" i fältet Typ.
@@ -46,7 +46,7 @@ Den här proceduren fokuserar på inställningarna som krävs för att skapa en 
 9. Välj "Batch" i fältet Lagerpåfyllnadshändelse.
     * Då skapas kanban för att uppfylla materialbehoven på den relaterade platsen under bearbetning av pegging-händelse.  
 
-## Ange minsta kvantitet för artikeln
+## <a name="set-the-minimum-quantity-for-the-item"></a>Ange minsta kvantitet för artikeln
 1. Klicka för att följa länken i fältet Produkt.
 2. Klicka för att följa länken i fältet Artikelnummer.
 3. Expandera faktaboxen för produktbilden.
@@ -58,7 +58,7 @@ Den här proceduren fokuserar på inställningarna som krävs för att skapa en 
     * Ange lagerstället till 12.  
 9. Ange minsta till "200".
 
-## Kör jobbet för att skapa batch-händelse.
+## <a name="run-the-batch-event-creation-job"></a>Kör jobbet för att skapa batch-händelse.
 1. Gå till Produktionskontroll > Periodiska uppgifter > Batchbearbetning av kanban-jobb > Bearbetning av pegging-händelse.
 2. Klicka på OK.
 3. Gå till Produktinformationshantering > Lean manufacturing > Kanban-regler.

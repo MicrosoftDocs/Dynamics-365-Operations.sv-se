@@ -27,7 +27,7 @@ ms.lasthandoff: 03/08/2018
 
 # <a name="personnel-actions-faq"></a>Personalåtgärder [Frågor och Svar]
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Det här avsnittet innehåller svar på frågor som du kan ha om din organisation använder personalåtgärder. Personalåtgärder är ytterligare steg du måste vidta när du utför personalrelaterade uppgifter. Exempel på uppgifter som kan kräva personalåtgärder är när du skapar nya befattningar, ändrar befintliga befattningsvärden, anställer nya arbetstagare, överför arbetstagare, ändrar arbetstagares kompensation, ändrar befattningstilldelningar eller säger upp arbetstagare.
 
@@ -64,9 +64,9 @@ Ja, du kan ta bort personalåtgärder som har statusen **Utkast**, **Fel**, **Mi
 Om en personalåtgärdsbegäran misslyckas följer du dessa steg för att lösa felet och skicka om begäran:
 
 > 1. Klicka på knappen **Feltext** i **Åtgärdsfönstret** om du vill visa meddelandetexten som beskriver problemet.
-
+> 
 > 2. Klicka på **Återaktivera** i **Åtgärdsfönstret** om du vill läsa in den senaste informationen och återställa statusen för personalåtgärden till **Utkast**.
-
+> 
 > 3. Lös felet och klicka sedan på **Slutför** eller **Skicka in**.
 
 ## <a name="what-happens-to-a-personnel-action-that-uses-workflow-when-the-final-approval-is-completed"></a>Vad händer med en personalåtgärd som använder arbetsflödet, om det sista godkännandet är slutfört?

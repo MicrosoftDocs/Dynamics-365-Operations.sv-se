@@ -27,7 +27,7 @@ ms.lasthandoff: 03/05/2018
 
 # <a name="websearchax-retired"></a>WebSearchAX dras in
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Vi har varit tvugna att dra in WebSearchAX-sidan. Vi rekommenderar att du använder webbplatssökning från din favoritsökmotor för att ersätta den.  Exempel: 
 

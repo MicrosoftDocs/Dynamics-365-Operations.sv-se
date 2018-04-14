@@ -26,7 +26,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="define-loyalty-schemes"></a> Definiera förmånsscheman
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 Den här proceduren går igenom hur du definierar ett bonusprogram. Bonusplaner är regler för intjänande och inlösen av belöningar i ett bonusprogram. I proceduren används demonstrationsföretaget USRT.
 

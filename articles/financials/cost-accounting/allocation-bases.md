@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="allocation-bases"></a>Allokeringsunderlag 
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ett allokeringsunderlag är baseen som redovisning fördelar omkostnader på. Ett allokeringsunderlag kan vara en kvantitet som t.ex. maskintimmar som används, kilowattimmar (kWh) som förbrukas eller kvadratmeteryta som ockuperas. Allokeringsunderlag används oftast för att tilldela omkostnader till lager som produceras. Till exempel fördelar IT-avdelningen sina utgifter enligt antalet datorer som varje avdelning använder.
 
@@ -424,9 +424,11 @@ Det är en nrmare titt på formeln CC003 (IT):
 
 Här är ett exempel på en kostnadsfördelningsregel om formelallokeringsunderlaget för Fast el tilldelas som allokeringsunderlage i det.
 
-| Kostnadsobjekt |  beskrivning  | Storlek | Allokeringsfaktor                |
-|-------------|----|-----------|----------------------------------|
-| CC001       | Personal | 1,837.50  | (1 837,50 ÷ 18 162,50) × belopp  |
-| CC002       | FI | 3,075.00  | (3 075,00 ÷ 18 162,50) × belopp  |
-| CC003       | LÖ | 13,250.00 | (13 250,00 ÷ 18 162,50) × belopp |
+
+| Kostnadsobjekt | beskrivning | Storlek |        Allokeringsfaktor         |
+|-------------|-------------|-----------|----------------------------------|
+|    CC001    |     Personal      | 1,837.50  | (1 837,50 ÷ 18 162,50) × belopp  |
+|    CC002    |     FI      | 3,075.00  | (3 075,00 ÷ 18 162,50) × belopp  |
+|    CC003    |     LÖ      | 13,250.00 | (13 250,00 ÷ 18 162,50) × belopp |
+
 

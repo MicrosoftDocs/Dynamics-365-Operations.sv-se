@@ -27,8 +27,7 @@ ms.lasthandoff: 02/23/2018
 
 # <a name="configure-electronic-reporting-to-pull-data-into-power-bi"></a>Konfigurera elektronisk rapportering för att hämta data till Power BI
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 I det här avsnittet beskrivs hur du kan använda konfigurationen för Elektronisk rapportering (ER) om du vill ordna överföringen av data från Finance and Operations till Power BI-tjänster. Som exempel använder det här avsnittet Intrastat-transaktioner som affärsdata som ska överföras. Power BI-kartvisualiseringen använder dessa Intrastat-transaktionsdata för att presentera en vy för analys av företagsimport-/exportaktiviteter på Power BI-rapporten.
 
@@ -118,9 +117,9 @@ Klicka på knappen **Inställningar** för den nya målposten. Följ sedan dessa
 ## <a name="create-a-power-bi-report-by-using-the-new-dataset"></a>Skapa en Power BI-rapport genom att använda den nya datauppsättningen
 1. Klicka på den Power BI-uppsättning för **Importera och exportera detaljer** som du skapade. 
 2. Konfigurera visualiseringen. Välj till exempel visualiseringen **Ifylld karta** och konfigurera den enligt följande:
- -   Tilldela datauppsättningsfältet **CountryOrigin** till fältet **Plats** på kartvisualiseringen.
- -   Tilldela datauppsättningsfältet **Belopp** till fältet **Färgmättnad** på kartvisualiseringen.
- -   Lägg till datauppsättningsfältet **Aktivitet** och **År** till fältsamlingen **Filter** på kartvisualiseringen.
+   -   Tilldela datauppsättningsfältet **CountryOrigin** till fältet **Plats** på kartvisualiseringen.
+   -   Tilldela datauppsättningsfältet **Belopp** till fältet **Färgmättnad** på kartvisualiseringen.
+   -   Lägg till datauppsättningsfältet **Aktivitet** och **År** till fältsamlingen **Filter** på kartvisualiseringen.
 
 3. Spara Power BI-rapporten som **Importera och exportera detaljer-rapport**. [![Importera och exportera detaljer-rapport](./media/ger-power-bi-added-report-1024x498.png)](./media/ger-power-bi-added-report.png) Observera att kartan visar de länder/regioner som nämns i Excel-filen (Österrike och Schweiz i det här exemplet). Dessa länder/regioner färgas för att visa andelen av fakturerade belopp för varje. 
 4. Uppdatera listan över Intrastat-transaktioner. Exporttransaktionen som kommer från Italien läggs till. [![Visa Intrastat-lista](./media/ger-power-bi-new-run-new-transaction-1024x321.png)](./media/ger-power-bi-new-run-new-transaction.png) 

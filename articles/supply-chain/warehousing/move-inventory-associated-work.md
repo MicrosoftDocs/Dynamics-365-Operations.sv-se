@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="movement-of-inventory-with-associated-work-in-warehouse-management"></a>Lagerrörelse med tillhörande arbete i lagerstyrning
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Med hjälp av rörligt lager kan du bestämma vilka lagerarbetare som ska kunna flytta reserverat lager. Detta ger en flexibilitet i reglerade lagerställen där du kan välja att inte tillåta en arbetare kan välja en ny plockningsplats för plockningsarbete som redan har skapats. Det gör det också möjligt för en lagerchef att kontrollera vilka funktioner som ska mer ovana arbetare bör ha.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 02/15/2018
 ---
 # <a name="benefit-eligibility-process"></a>Bearbeta förmånsberättigande
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Den här proceduren visar hur förmånsberättigandeprocessen fungerar. När processen är klar kan du visa resultaten. Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.
 

@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="display-pages-side-by-side-using-the-open-in-new-window-icon"></a>Visa sidor sida vid sida med ikonen Öppna i nytt fönster
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denna artikel förklarar hur du visar sidor sida vid sida i Microsoft Dynamics 365 for Finance and Operations.
 

@@ -27,7 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="financial-dimensions"></a>Ekonomiska dimensioner
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Den här ämnet beskriver de olika typerna av ekonomiska dimensioner och hur de ställs in.
 

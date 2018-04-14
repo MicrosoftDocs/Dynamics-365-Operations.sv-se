@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="change-a-fixed-asset-group"></a>Ändra en anläggningstillgångsgrupp
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Anläggningstillgångar bör tilldelas till korrekt anläggningstillgångsgrupp. Anläggningstillgångsgruppen används när du:
 

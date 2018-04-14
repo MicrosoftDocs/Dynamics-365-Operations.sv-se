@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="piece-picking-confirmation"></a>Enhetsplockningsbekräftelse
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Med enhetsplockning kan du bekräfta varje lagerenhet via plocknings- eller inventeringsarbete på en mobil enhet. För plockning, kan du bekräfta mängden arbete ska hanteras upp till den kvantitet som anges på det arbete som ska plockas. För inventeringsarbete kan du skanna lagret du inventerar och spåra det totala antalet.
 
@@ -46,8 +46,10 @@ Enhetsplockning fungerar för allt inventeringsarbete och för den ursprungliga 
 
 Följande alternativ blir tillgängliga när arbetstypen är Plockning eller Inventering.
 
-| Alternativ        | beskrivning   | 
-| ------------- | ------------- |
-| Enhetsplockningsbekräftelse   | Tillgängliga för arbetstyperna Plockning och Inventering. Bekräftelse av produkten väljs automatiskt. Låter dig bekräfta varje lagerenhet från den mobila enheten. | 
-| Maximalt antal enheter     | Tillgänglig för plockningsarbete om enhetsplockningsbekräftelse är aktiverad. Sätter en gräns för hur många enheter du måste bekräfta. |  
+
+|           Alternativ           |                                                                            beskrivning                                                                            |
+|----------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Enhetsplockningsbekräftelse | Tillgängliga för arbetstyperna Plockning och Inventering. Bekräftelse av produkten väljs automatiskt. Låter dig bekräfta varje lagerenhet från den mobila enheten. |
+|  Maximalt antal enheter  |                   Tillgänglig för plockningsarbete om enhetsplockningsbekräftelse är aktiverad. Sätter en gräns för hur många enheter du måste bekräfta.                   |
+
 

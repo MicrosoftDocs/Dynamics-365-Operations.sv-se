@@ -25,7 +25,7 @@ ms.lasthandoff: 03/26/2018
 ---
 
 # <a name="introduction-to-microsoft-dynamics-365-for-finance-and-operations"></a>Introduktion till Microsoft Dynamics 365 for Finance and Operations
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Lär du hur du drar nytta av Microsoft Dynamics 365 for Finance and Operations i ditt företag. Använd resurserna nedan för att hitta passande innehåll för slutanvändare, utvecklare och IT-proffs. 
 

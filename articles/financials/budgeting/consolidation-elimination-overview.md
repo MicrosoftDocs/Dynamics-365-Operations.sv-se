@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="consolidation-and-elimination-overview"></a>Översikt över konsolidering och eliminering
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Det här avsnittet innehåller allmän information om konsoliderings- och kvittningsprocessen. Avsnittet innehåller alla svar på vanliga frågor och svar.
 

@@ -27,7 +27,7 @@ ms.lasthandoff: 03/08/2018
 
 # <a name="release-bom-and-formula-lines-to-the-warehouse"></a>Frisläpp strukturliste- och formelrader till lagerstället
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Det här avsnittet beskriver processen för att frisläppa råmaterial för strukturlisterader och formelrader till lagret. När du frisläpper en strukturlista eller formelrad till lagret fastställer systemet först om material redan finns på platsen för produktionsinleverans i fabriken där materialet ska förbrukas i produktionsprocessen.
 
@@ -44,7 +44,7 @@ Den metod som används för att frisläppa strukturlista och formelrader styrs a
 - **Frisläpp strukturliste- och formelrader via ett batchjobb eller som en manuell åtgärd** – med den här metoden kan strukturlista och formelrader endast frisläppas genom batchjobbet **automatisk version av strukturliste- och formelrader** eller som en manuell åtgärd. För att manuellt frisläppa strukturliste- och formelrader på sidan för produktionorderlista eller produktionsorderinformationssidan i åtgärdsfönstret, väljer du **Frisläpp till lagerställe**.
 
 Titta på det här korta videoklippet på YouTube för en snabb demonstration av hur du kan frigöra Strukturlista och formelrader till produktion med hjälp av ett batch-jobb:
-[!Video https://www.youtube.com/embed/8urAJn50dQ8]
+[!Video <https://www.youtube.com/embed/8urAJn50dQ8>]
 
 ## <a name="releasing-the-bom-and-formula-lines-by-using-a-batch-job"></a>Att frisläppa strukturliste- och formelrader med hjälp av ett batchjobb
 
@@ -86,7 +86,7 @@ Följande bild visar en produktionsorder som använder två åtgärder 10 och 20
 ![Exempel på frisläppning av material per operationsnummer](media/two-operations.PNG)
 
 Titta på det här korta videoklippet på YouTube för en snabb demonstration av hur du kan frigöra material i förhållande till mängden färdiga varor:
-[!Video https://www.youtube.com/embed/Rm3ojAz6Zu0]
+[!Video <https://www.youtube.com/embed/Rm3ojAz6Zu0>]
 
 ### <a name="release-material-in-proportion-to-the-amount-of-finished-goods"></a>Frisläpp material i förhållande till mängden färdiga varor.
 

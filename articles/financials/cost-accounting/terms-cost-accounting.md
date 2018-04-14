@@ -29,8 +29,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="cost-accounting-terminology"></a>Kostnadsredovisningsterminologi
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Detta ämne definierar de grundläggande villkoren som används i kostnadsredovisning.
 
@@ -150,14 +149,14 @@ Formelallokeringsunderlag låter dig definiera avancerade formler för att uppn�
 |  + |  Tillägg |
 |  – |  Subtraktion |
 | *  | Multiplikation  |
-    
+
 Traditionella IF-utlåtanden stöds inte. Du kan emellertid skapa rapporter och kontrollera om de är sanna.
 
 |  **Utdragsvalidering** | **Resultat**  |
 |---|---|
 |  a > b| Sant  |
 |  a > b |  Falskt |
-    
+
 **Indirekt kostnad**
 
 Indirekta kostnader refererar till de pågående utgifterna för att driva en verksamhet. De är kostnader som inte kan länkas direkt till specifika företagsaktiviteter. Här följer några exempel på indirekta kostnader:

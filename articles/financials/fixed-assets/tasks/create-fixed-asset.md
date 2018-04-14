@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-fixed-asset"></a>Skapa en anläggningstillgång
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 I den här uppgiftsguiden används demonstrationsföretaget USMF.  En ny anläggningstillgång skapas med hjälp av listsidan Anläggningstillgångar.
 

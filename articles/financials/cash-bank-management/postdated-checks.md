@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="postdated-checks"></a>Efterdaterade checkar
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Den här artikeln innehåller information om stöd för efterdaterade checkar i Microsoft Dynamics 365 for Finance and Operations. Postdaterade checkar är checkar som har utfärdats för att skapa och ta emot betalningar vid ett framtida datum. Därför kan checken inte lösas in förrän på angivet datum.
 
@@ -76,14 +75,14 @@ Om din ursprungliga check till en leverantör eller från en kund förloras elle
 <td>Du kan avbryta en bokförd efterdaterad check i sådana fall: - Checken returneras av banken.
 - Checken har tillämpats på fel faktura.
 - En kontantbetalning görs mot checken.
-</td>
-</tr>
-<tr class="even">
-<td>Stoppa betalning för en efterdaterad check</td>
-<td>Du kan stoppa en efterdaterad checkbetalning som utfärdades till en leverantör av orsaker såsom otillräckliga medel, ändringar av villkoren för avtalet med leverantören, leverans av defekta varor från leverantören eller returnering av varor till leverantören. Du kan enbart stoppa betalning på checkar som inte har reglerats.</td>
-</tr>
-</tbody>
-</table>
+  </td>
+  </tr>
+  <tr class="even">
+  <td>Stoppa betalning för en efterdaterad check</td>
+  <td>Du kan stoppa en efterdaterad checkbetalning som utfärdades till en leverantör av orsaker såsom otillräckliga medel, ändringar av villkoren för avtalet med leverantören, leverans av defekta varor från leverantören eller returnering av varor till leverantören. Du kan enbart stoppa betalning på checkar som inte har reglerats.</td>
+  </tr>
+  </tbody>
+  </table>
 
 
 

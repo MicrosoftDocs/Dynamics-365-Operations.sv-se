@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-automatic-freight-reconciliation"></a>Ställ in automatisk fraktavstämning
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denna procedur visar hur du ställer in data för automatisk fraktavstämning. Detta utförs normalt av en lagerchef. Du kan köra den här proceduren i demonstrationsdataföretaget USMF.
 

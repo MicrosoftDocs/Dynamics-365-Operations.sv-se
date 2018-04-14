@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="create-online-channels-and-define-channel-attributes"></a> Skapa online-kanaler och definiera kanalattribut
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 I den här proceduren skapar du en ny onlinekanal och lägger till den i organisationshierarkin. Du måste skapa organisationshierarkin innan du kan skapa en ny onlinekanal. I proceduren används demonstrationsföretaget USRT.
 

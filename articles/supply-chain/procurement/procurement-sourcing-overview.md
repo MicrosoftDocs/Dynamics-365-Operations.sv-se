@@ -28,8 +28,7 @@ ms.lasthandoff: 02/08/2018
 
 # <a name="procurement-and-sourcing-overview"></a>Upphandling och inköp – översikt
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Det här avsnittet ger en översikt över de funktioner som är tillgängliga i modulen Anskaffning och källa.
 
@@ -39,7 +38,7 @@ Upphandling och inköp omfattar alla steg från att identifiera ett behov av pro
 Behovet av produkter eller tjänster som kan uppstå från *anmodan*, till exempel när en anställd behöver en produkt. *Produktkataloger* kan ställas in för att styra urvalet av tillgängliga produkter att välja mellan, eller förfrågningar kan göras för produkter som ännu inte är tillgängliga i en katalog, så att inköpsavdelningen att överväga hur produkten kan levereras.  
 
 *Utgiftsramen* kan användas för att begränsa utgifterna för anmodan och*inköp arbetsflöde* ger möjlighet att kräva godkännande innan beställning sker. Det är också möjligt att ange budget anslag, om det behövs.  
-  
+
 Upphandling avdelningen identifierar leverantörer för varor och tjänster, och detta kan innebära en*offertförfrågan* som skickas ut till flera potentiella leverantörer. Det är möjligt att dela specifikationer för produkten som begärts och potentiella leverantörer kan visa dessa för att se om de kan leverera en produkt som uppfyller dem. Säljare tillbaka sina anbud som sedan granskas av inköpsavdelning innan de väljer den leverantör som de vill anskaffa från.  
 
 Inköpsorder har ett alternativ för att skicka en *inköpsorder* till leverantören som ett alternativ till en mer omfattande offertförfrågan. Köp undersökning kan användas för att bidra till att skapa villkor som priser, rabatter och leveransdatum. Om leverantörer är inställda för användning av **Leverantör**portalen kommer inköpsförfrågan funktionen att inaktiveras. I stället delas på**säljaren** portal, och när en*begäran om bekräftelse* skickas säljaren kan direkt bekräfta ordern.  

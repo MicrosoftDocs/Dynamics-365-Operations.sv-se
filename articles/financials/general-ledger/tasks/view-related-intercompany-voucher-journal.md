@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="view-a-related-intercompany-voucher-from-a-journal"></a>Visa en relaterad koncernintern verifikation från en journal
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Fönstret Relaterad verifikation visar verifikationen från motkontots företag när du bokför en koncernintern transaktion från den allmänna journalen.
 

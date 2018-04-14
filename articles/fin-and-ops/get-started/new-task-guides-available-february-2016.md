@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="new-task-guides-february-2016"></a>Nya uppgiftguider (februari 2016)
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Detta avsnitt visar uppgiftsguiderna som publicerades till Microsoft BPM-bibliotek från och med februari 2016.  De publicerade biblioteken innehåller APQC Unified Library for Microsoft Dynamics AX (februari 2016) samt Komma igång (februari 2016).
 
@@ -50,8 +49,8 @@ APQC Unified-biblioteket (februari 2016) innehåller de uppgiftsguider som är a
 | Ställ in validering av Fakturamatchning för leverantörsreskontra       | Globalt             |
 | Ställ in leverantörsfakturapolicyer                            | Globalt             |
 
- 
 
+ 
 ### <a name="accounts-receivable"></a>Kundreskontra
 
 |                                                             |                    |
@@ -71,8 +70,8 @@ APQC Unified-biblioteket (februari 2016) innehåller de uppgiftsguider som är a
 | Granska inkasseringsinformation                              | Globalt             |
 | Ställ in och generera åldersfördelningsinformation för kundreskontra   | Globalt             |
 
- 
 
+ 
 ### <a name="cash-and-bank-management"></a>Kassa- och bankhantering
 
 |                                                                      |                    |
@@ -99,8 +98,8 @@ APQC Unified-biblioteket (februari 2016) innehåller de uppgiftsguider som är a
 | Betala en efterdaterad check från en kund                             | Globalt             |
 | Översikt över leverantörsbetalning                                              | Globalt             |
 
- 
 
+ 
 ### <a name="compliance"></a>Regelefterlevnad
 
 |                                            |                    |
@@ -108,8 +107,8 @@ APQC Unified-biblioteket (februari 2016) innehåller de uppgiftsguider som är a
 | **BPM-rad**                               | **Land/region** |
 | Definiera granskningsprinciper för källdokument | Globalt             |
 
- 
 
+ 
 ### <a name="cost-management"></a>Kostnadshantering
 
 |                                                                     |                    |
@@ -121,8 +120,8 @@ APQC Unified-biblioteket (februari 2016) innehåller de uppgiftsguider som är a
 | Visa aktuell PIA-status för en produktionsorder                       | Globalt             |
 | Visa lagerutdrag och KPI efter kostnadsobjekt                     | Globalt             |
 
- 
 
+ 
 ### <a name="countryregion-functionality"></a>Funktionen Land/region
 
 |                                                                                                        |                                 |
@@ -263,8 +262,8 @@ APQC Unified-biblioteket (februari 2016) innehåller de uppgiftsguider som är a
 | GB-00009 Skapa en kreditfaktura för kvittningsrabatten.                                               | Storbritannien                  |
 | GB-00009 Inställningsparametrar för kreditfaktura för snabb betalningsrabatt                                   | Storbritannien                  |
 
- 
 
+ 
 ### <a name="develop-vision-and-strategy"></a>Utveckla vision och strategi
 
 |                                                                                          |                    |
@@ -276,8 +275,8 @@ APQC Unified-biblioteket (februari 2016) innehåller de uppgiftsguider som är a
 | Göra en fråga beroende av svaret på den föregående frågan (villkorsfrågor) | Globalt             |
 | Betygsätt en enkät baserat på procent                                                   | Globalt             |
 
- 
 
+ 
 ### <a name="electronic-reporting"></a>Elektronisk rapportering
 
 |                                                 |                    |
@@ -289,8 +288,8 @@ APQC Unified-biblioteket (februari 2016) innehåller de uppgiftsguider som är a
 | ER mappar datamodeller till utvalda datakällor      | Globalt             |
 | ER väljer tjänsteleverantör                      | Globalt             |
 
- 
 
+ 
 ### <a name="expense-management"></a>Utläggshantering
 
 |                              |                    |
@@ -298,8 +297,8 @@ APQC Unified-biblioteket (februari 2016) innehåller de uppgiftsguider som är a
 | **BPM-rad**                 | **Land/region** |
 | Konfigurera utgiftshantering | Globalt             |
 
- 
 
+ 
 ### <a name="fixed-assets"></a>Anläggningstillgångar
 
 |                                                           |                    |
@@ -321,8 +320,8 @@ APQC Unified-biblioteket (februari 2016) innehåller de uppgiftsguider som är a
 | Dela en anläggningstillgång                                       | Globalt             |
 | Överför en anläggningstillgång                                    | Globalt             |
 
- 
 
+ 
 ### <a name="general-ledger"></a>Huvudbok
 
 |                                                                   |                    |
@@ -354,8 +353,8 @@ APQC Unified-biblioteket (februari 2016) innehåller de uppgiftsguider som är a
 | Visa journalposter eller transaktioner                              | Globalt             |
 | Visa relaterad koncernintern verifikation från journal                    | Globalt             |
 
- 
 
+ 
 ### <a name="human-capital-management"></a>HR
 
 |                                                                  |                    |
@@ -398,8 +397,8 @@ APQC Unified-biblioteket (februari 2016) innehåller de uppgiftsguider som är a
 | Ställa in policyer för förmånsberättigande                             | Globalt             |
 | Ställ in i9-dokumenttyper                                     | Globalt             |
 
- 
 
+ 
 ### <a name="inventory-management"></a>Lagerhantering
 
 |                                                                                   |                    |
@@ -422,8 +421,8 @@ APQC Unified-biblioteket (februari 2016) innehåller de uppgiftsguider som är a
 | Spåra en artikel eller råmaterial                                                     | Globalt             |
 | Överför fysiskt lager i lagerstället                                  | Globalt             |
 
- 
 
+ 
 ### <a name="manufacturing"></a>Tillverkning
 
 |                                                               |                    |
@@ -474,8 +473,8 @@ APQC Unified-biblioteket (februari 2016) innehåller de uppgiftsguider som är a
 | Överföra material med kanban-jobb                            | Globalt             |
 | Validera produktionsflöde och version                          | Globalt             |
 
- 
 
+ 
 ### <a name="master-planning"></a>Huvudplanering
 
 |                                                   |                    |
@@ -487,8 +486,8 @@ APQC Unified-biblioteket (februari 2016) innehåller de uppgiftsguider som är a
 | Identifiera kritiskt material och leverantörskapacitet | Globalt             |
 | Ändra en efterfrågeprognos manuellt                 | Globalt             |
 
- 
 
+ 
 ### <a name="organization-administration"></a>Organisationsadministration
 
 |                                           |                    |
@@ -501,8 +500,8 @@ APQC Unified-biblioteket (februari 2016) innehåller de uppgiftsguider som är a
 | Ställ in elektroniska signaturer              | Globalt             |
 | Ställa in nummerserier med hjälp av en guide | Globalt             |
 
- 
 
+ 
 ### <a name="planning"></a>Planering
 
 |                        |                    |
@@ -510,8 +509,8 @@ APQC Unified-biblioteket (februari 2016) innehåller de uppgiftsguider som är a
 | **BPM-rad**           | **Land/region** |
 | Fastställa tillgänglighet | Globalt             |
 
- 
 
+ 
 ### <a name="procurement-and-sourcing"></a>Anskaffning och källa
 
 |                                                                  |                    |
@@ -525,8 +524,8 @@ APQC Unified-biblioteket (februari 2016) innehåller de uppgiftsguider som är a
 | Sök efter leverantörer                                               | Globalt             |
 | Ställa in en kategorihierarki för anskaffning                          | Globalt             |
 
- 
 
+ 
 ### <a name="product-information-and-configuration"></a>Produktinformation och konfiguration
 
 |                                                       |                    |
@@ -551,8 +550,8 @@ APQC Unified-biblioteket (februari 2016) innehåller de uppgiftsguider som är a
 | Frisläpp en... \financial-dimensions\dimension-baserad produktmall              | Globalt             |
 | Överför data för produktmodeller                      | Globalt             |
 
- 
 
+ 
 ### <a name="public-sector"></a>Offentlig sektor
 
 |                                                                                         |                    |
@@ -577,8 +576,8 @@ APQC Unified-biblioteket (februari 2016) innehåller de uppgiftsguider som är a
 | Ställa in en fond för offentliga sektorn                                                         | Globalt             |
 | Ställ in inköpsavtalsklassificeringar för offentlig sektor                             | Globalt             |
 
- 
 
+ 
 ### <a name="retail-and-commerce"></a>Butik och handel
 
 |                                                                                           |                    |
@@ -619,8 +618,8 @@ APQC Unified-biblioteket (februari 2016) innehåller de uppgiftsguider som är a
 | Butiksprisjusteringar                                                                  | Globalt             |
 | Butikskonfigurationer för butiksutdrag                                                | Globalt             |
 
- 
 
+ 
 ### <a name="sales"></a>Försäljning
 
 |                                            |                    |
@@ -642,8 +641,8 @@ APQC Unified-biblioteket (februari 2016) innehåller de uppgiftsguider som är a
 | Skicka order som direktleveranser           | Globalt             |
 | Skicka försäljningsorder utan lagerstyrning      | Globalt             |
 
- 
 
+ 
 ### <a name="sales-tax"></a>Moms
 
 |                                                    |                    |
@@ -661,8 +660,8 @@ APQC Unified-biblioteket (februari 2016) innehåller de uppgiftsguider som är a
 | Ställa in källskatt                             | Globalt             |
 | Visa bokförda momstransaktioner                 | Globalt             |
 
- 
 
+ 
 ### <a name="security"></a>Säkerhet
 
 |                                                         |                    |
@@ -672,8 +671,8 @@ APQC Unified-biblioteket (februari 2016) innehåller de uppgiftsguider som är a
 | Identifiera och lösa konflikter vid ansvarsfördelning | Globalt             |
 | Ställ in ansvarsfördelning                            | Globalt             |
 
- 
 
+ 
 ### <a name="warehouse-and-transportation"></a>Lager- och transport
 
 |                                                                                   |                    |
@@ -697,9 +696,10 @@ APQC Unified-biblioteket (februari 2016) innehåller de uppgiftsguider som är a
 | Konfigurera transportföretag                                                          | Globalt             |
 | Använd workbench för lastplanering för att planera laster och försändelser                       | Globalt             |
 
- 
 
+ 
 ## <a name="task-guides-in-the-february-2016-getting-started-library"></a>Uppgiftsguider i (februari 2016) Komma igång-bibliotek
+
 |                                                    |                    |
 |----------------------------------------------------|--------------------|
 | **BPM-rad**                                       | **Land/region** |

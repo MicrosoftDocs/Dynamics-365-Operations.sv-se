@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="mobile-bar-code-support"></a>Stöd för streckkod för mobil
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Eftersom Android är ett projekt med öppen källakan varje tillverkare av maskinvara för radkodskannrar för lager skapa en enhet för att köra operativsystemet Android. En enhet är bara Android-kompatibel om den kan köra appar som skrivits för Android körningsmiljö.
 En maskinvaruleverantören kan dock ändra och skapa överlappning för den Android-version som körs på dess maskinvara. Microsoft kan inte ta något ansvar för att säkerställa att en streckkodsapp för mobil för Android är kompatibel med tillverkarens streckkodsskanningsmaskinvara och den Android-version som körs på den. 

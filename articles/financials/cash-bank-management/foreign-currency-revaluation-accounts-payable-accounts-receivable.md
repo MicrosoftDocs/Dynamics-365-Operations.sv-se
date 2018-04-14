@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="foreign-currency-revaluation-for-accounts-payable-and-accounts-receivable"></a>Omräkning i utländsk valuta för Leverantörsreskontra och Kundreskontra
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Variationer i valutakurser gör att det teoretiska värdet (bokförda värdet) för öppna kundtransaktioner i utländska valutor varierar över tiden. Den här artikeln innehåller information om den process för omräkning i utländsk valuta som du kör om du vill uppdatera värdet för öppna transaktioner i Leverantörsreskontra och Kundreskontra. 
 

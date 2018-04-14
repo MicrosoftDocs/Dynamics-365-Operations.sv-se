@@ -29,7 +29,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="dimension-hierarchy"></a>Dimensionshierarki
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Det här ämnet innehåller information om dimensionshierarkier. Du använder en hierarki för att definiera rapporteringsstruktur, kostnadspolicyer och säkerhetsinställningar i kostnadsredovisning.  
 

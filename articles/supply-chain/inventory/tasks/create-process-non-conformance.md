@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-and-process-a-conformance"></a>Skapa och bearbeta en överensstämmelse
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Använd den här proceduren för att utföra avvikelsehantering baserat på en befintlig kvalitetsorder. Du kan köra denna registrering i USMF-demonstrationsföretaget och kan använda det föreslagna värdet. Vanligtvis utförs den här proceduren av en kontorist.  Kör uppgiftsregistreringen "kontrollera kvaliteten på varor" först. För att bearbeta godkännandet av en avvikelse måste användaren som utför uppgiftsregistreringen ha ett "namn"-värde tilldelat på användarsidan. För att använda dokumentanteckningar måste användaren även ha Dokumenthantering aktiverat i användaralternativen.
 

@@ -29,9 +29,9 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="register-serial-numbers-in-the-sales-process"></a>Registrera serienummer i försäljningsprocessen
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
 Det här ämnet beskriver hur du kan registrera serienummer på följesedlar eller fakturor under försäljningsprocessen. Den här funktionen är användbar om ett företag vill hämta in serienummer för service- och garantiändamål men inte måste underhålla serienummer i lager från inleverans till utleverans.
 

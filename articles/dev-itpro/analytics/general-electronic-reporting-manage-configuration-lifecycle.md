@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="manage-the-electronic-reporting-configuration-lifecycle"></a>Hantera livscykeln för konfiguration av elektronisk rapportering
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Det här avsnittet beskriver hur du hanterar livscykeln för elektroniska rapporteringskonfigurationer (ER) för Microsoft Dynamics 365 for Finance and Operations-lösningen.
 

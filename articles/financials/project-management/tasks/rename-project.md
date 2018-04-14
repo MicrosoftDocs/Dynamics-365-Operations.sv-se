@@ -25,7 +25,7 @@ ms.lasthandoff: 11/08/2017
 ---
 # <a name="rename-or-modify-a-project-stage"></a>Ändra namn på eller ändra en projektfas
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Projektfaser kan användas som en guide till projektets livscykel. Du kan definiera de projektfaser som du vill inkludera i dina projekt på fliken Projektfas på sidan Projekthantering och redovisningsparametrar. Dynamics 365 för Finance and Operations fem fördefinierade projektfaser och tre användardefinierade faser. Du kan uppdatera namn på en projektfas som du använder för att följa utvecklingen av projekt. Du kan också ange namn på användardefinierade statusnamn. Den här uppgiften visar hur du ändrar namn eller ändrar en projektfas och använder datauppsättningen USSI.
 

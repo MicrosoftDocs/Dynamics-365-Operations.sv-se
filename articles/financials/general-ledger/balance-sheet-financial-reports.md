@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="balance-sheet-financial-reports"></a>Balansräkning
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Den här artikeln beskriver standardrapporter för balansräkningar. Den beskrivs också de byggstenar som associeras med dessa rapporter. 
 
@@ -71,7 +70,7 @@ Dessa kolumndefinitioner innehåller olika typer av kolumner för att tillhandah
     -   **DESC** – beskrivningen från raddefinitionen.
     -   **FD** – ackumulerat för året för innevarande år
 
- 
+
 
 <a name="see-also"></a>Se även
 --------

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-purchase-order"></a>Skapa en inköpsorder
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Den här proceduren visar hur du skapar en inköpsorder manuellt. Den är vanligare att inköpsorder skapas automatiskt som resultat av huvudplaneringen, en direktleverans och andra processer. Inköpsorder används vanligtvis av inköpsagenter. De exempel som visas här, kan användas i demonstrationsföretaget USMF som använder de värden som föreslås i anteckningarna för olika steg.
 

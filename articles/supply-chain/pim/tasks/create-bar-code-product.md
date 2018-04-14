@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-bar-code-for-a-product"></a>Skapa en streckkod för en produkt
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 I den här proceduren visas hur du skapar en streckkod manuellt med hjälp av artikelnumret M0001 som exempel. Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.
 

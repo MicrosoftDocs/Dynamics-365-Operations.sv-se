@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="lean-pegging-from-sales-orders"></a>Lean-pegging från försäljningsorder
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Den här proceduren är avsedd för att validera peggingträdet från en försäljningsrad där artikeln produceras med kanban. När du har validerat pegging-trädet planeras alla kanban-jobb. Detta är användbart för orderscenarier där ordermottagaren behöver se till att produktion kan starta omedelbart. Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF. Den här proceduren är avsedd för den avancerade ordermottagaren som arbetar på ett lean-företag.
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="create-and-associate-a-device"></a> Skapa och associera en enhet
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 Den här proceduren går igenom hur du skapar en ny enhet och kopplar den till ett register. Det antas att registret redan har skapats.  Den här uppgiften använder sig av demonstrationsföretaget USRT. Denna uppgift är avsedd för administratörer, IT-proffs eller Butikens IT och rollen butikschef.
 

@@ -29,7 +29,7 @@ ms.lasthandoff: 02/21/2018
 
 # <a name="cost-management-home-page"></a>Startsida för kostnadshantering
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Med [kostnadshantering (video)](https://www.youtube.com/watch?v=vXzlC-mOBcg&feature=youtu.be) kan du hantera värdering och redovisning av råmaterial, färdiga varor, delvis färdiga varor och tillgångar i pågående arbete. Det är processen för att definiera, hantera och rapportera [lagerredovisning](cost-object.md) och [tillverkningsredovisning](bom-calculations.md).
 

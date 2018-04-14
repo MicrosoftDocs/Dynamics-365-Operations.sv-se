@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="cycle-counting"></a>Rullande inventering
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Den här artikeln beskriver hur du kan använda rullande inventering tillsammans med den lagerställelösning som är tillgänglig i Lagerstyrning. Den här artikeln gäller inte för den lagerställelösning som är tillgänglig i Lagerhantering.
 

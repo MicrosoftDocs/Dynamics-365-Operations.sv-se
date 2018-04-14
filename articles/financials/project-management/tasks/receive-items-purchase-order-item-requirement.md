@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="receive-items-on-purchase-order-from-item-requirement"></a>Ta emot artiklar i inköpsorder från artikelbehov
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Nedan beskrivs proceduren för att ta emot artiklar i en inköpsorder från ett artikelbehov.
 

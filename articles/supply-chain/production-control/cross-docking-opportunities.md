@@ -28,7 +28,7 @@ ms.lasthandoff: 03/08/2018
 
 # <a name="cross-docking-from-production-orders-to-outbound-docks"></a>Direktleverans från produktionsorder till utlastningsplatser
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Det här avsnittet beskriver hur du hanterar processen för direktutleveransmaterial som rapporteras som färdiga från en produktionsrad till en plats med utgående transporter.
 
@@ -76,10 +76,10 @@ I **direktutleveranspolicy** definierar du vilka dokumenttyper som är tillämpl
 
 ### <a name="cross-docking-policy-name-transfer-order"></a>Direktleveranspolicynamn: överföringsorder
 
--   Löpnummer: 10
- -   Typ av arbetsorder: Överför leverans
--   Direktleverans kräver plats : Falskt
--   Direktutleveransstrategi: datum och tid
+- Löpnummer: 10
+  -   Typ av arbetsorder: Överför leverans
+- Direktleverans kräver plats : Falskt
+- Direktutleveransstrategi: datum och tid
 
 ### <a name="sequence-number"></a>Löpnummer
 

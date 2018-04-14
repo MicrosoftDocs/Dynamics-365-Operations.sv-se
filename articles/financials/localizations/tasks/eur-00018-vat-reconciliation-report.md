@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="vat-reconciliation-report"></a>Momsavstämningsrapport
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 I den här proceduren visas hur du skapar momsavstämningrapporten som är tillgänglig för isländska och norska juridiska personer. Den här uppgiften skapades med hjälp av demonstrationsföretaget DEMF, med Norge som land/region för den juridiska personens primära adress.
 

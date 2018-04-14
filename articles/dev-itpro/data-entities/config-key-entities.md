@@ -27,7 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="configuration-keys-and-data-entities"></a>Konfigurationsnycklar och datatabeller
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Innan du använder datatabeller för att importera och exportera data bör du först fastställa vilken inverkan konfigurationsnycklarna kommer att ha på de datatabeller som du planerar att använda . 
 

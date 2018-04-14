@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="kanban-job-scheduling-for-lean-manufacturing"></a>Lean manufacturing – Kanban-jobbplanering
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Det här avsnittet innehåller information om visuell kontroll över kanban-jobbplanering och olika sätt för att schemalägga kanban-jobb.  
 

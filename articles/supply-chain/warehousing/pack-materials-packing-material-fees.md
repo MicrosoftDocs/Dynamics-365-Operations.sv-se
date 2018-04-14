@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="packing-materials-and-fees"></a>Förpackningsmaterial och avgifter
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Avgifter för förpackningsmaterial betalas i vissa intervaller till ett återvinningsföretag. Ett belopp per viktenhet måste betalas för varje material som en förpackningsenhet består av. Avgifter för förpackningsmaterial beräknas och rapporteras, men inga redovisningstransaktioner bokförs eftersom avgifterna inte räknas som skatter som måste betalas till en myndighet.
 
@@ -63,7 +62,7 @@ Om ditt företag ska betala förpackningsmaterialavgifterna ska du inte fylla i 
 
 ## <a name="print-packaging-material-weights-on-invoices"></a>Skriv ut vikter på förpackningsmaterial på fakturor
 Du kan skriva ut vikter för förpackningsmaterial på fakturan och ange vem som betalar förpackningsmaterialavgifterna. Vikterna sammanställs efter förpackningsmaterialkod.
- 
+
 
 
 

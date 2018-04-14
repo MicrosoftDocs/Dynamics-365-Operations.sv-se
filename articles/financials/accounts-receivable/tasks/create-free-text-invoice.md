@@ -24,7 +24,7 @@ ms.lasthandoff: 10/26/2017
 ---
 # <a name="create-a-free-text-invoice"></a>Skapa en fritextfaktura
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Den här uppgifthandboken visar hur du skapar en fritextfaktura. I den här uppgiften används demonstrationsföretaget USMF.
 

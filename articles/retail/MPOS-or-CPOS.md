@@ -28,7 +28,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="choose-between-modern-pos-and-cloud-pos"></a>Välj mellan Modern POS och molnbaserad kassa
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Detta avsnitt ger implementerarna ytterligare bakgrund, tips och riktlinjer för de faktorer som bör de överväga när de distribuerar Microsoft Dynamics 365 for Retail. Genom att granska och följa dessa riktlinjer som ett led i distributionsprocessen kan implementerare undvika problem som kan påverka användarnas tillfredsställelse eller prestanda.
 
@@ -92,8 +92,8 @@ Tänk på följande när du planerar kassaimplementeringen i dina butiker:
 
     Om inte anslutningen för en viss enhet är mycket pålitlig och flexibel, eller antalet driftstopp är acceptabel för återförsäljaren, rekommenderas ett av följande alternativ:
 
-    - Använd MPOS i Windows och aktivera offline-läget.
-    - Distribuera en lokal RSSU.
+  - Använd MPOS i Windows och aktivera offline-läget.
+  - Distribuera en lokal RSSU.
 
     Dessa alternativ inte är ömsesidigt uteslutande. För en maximalt pålitlig topologi kan återförsäljare distribuera en lokal RSSU i syfte att minska beroendet av en internetanslutning eller Azure-tillgänglighet, och kan också distribuera kassaapparater där offline-läget aktiveras om det uppstår problem med den lokala servern eller det lokala nätverket.
 

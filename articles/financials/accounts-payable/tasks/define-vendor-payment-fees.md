@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="define-vendor-payment-fees"></a>Definiera leverantörsbetalningsavgifter
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Ställ in avgifter för leverantörsbetalningar. I den här uppgiften används demonstrationsföretaget USMF.
 

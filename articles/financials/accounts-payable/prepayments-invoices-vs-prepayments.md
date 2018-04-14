@@ -28,14 +28,14 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="prepayment-invoices-vs-prepayments"></a>Förskottsfakturor kontra förskottsbetalningar
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Den här ämnet beskriver och kontrasterar de två metoderna som organisationer kan använda för förskottsbetalningar. I den ena metoden måste du skapa en förskottsfaktura som är kopplad till en inköpsorder. I den andra metoden skapar du verifikationer för förskottsbetalningsjournal genom att skapa journalposter och välja dem som verifikationer för förskottsbetalningsjournal.
 
 Organisationer kan utfärda förskottsbetalningar till leverantörer för varor och tjänster, innan dessa varor eller tjänster är uppfyllda. Två metoder kan användas för att utfärda förskottsbetalningar till leverantörer. För att minimera risk kan du följa förskottsbetalningar, genom att definiera förskottsbetalningen i en inköpsorder. För den här metoden måste du skapa en förskottsfaktura som är kopplad till en inköpsorder. Denna metod kallas för förskottsbetalningsfakturering. Organisationer som inte vill följa förskottsbetalningar lika nära eller inte får en förskottsfaktura från deras leverantör, kan använda verifikationer för förskottsbetalningsjournal i stället för metoden förskottsbetalningsfakturering. Du kan skapa verifikationer för förskottsbetalningsjournal, genom att skapa journalposter och välja dem som verifikationer för förskottsbetalningsjournal. För den här metoden kan du inte följa vilka förskottsbetalningar till en leverantör som görs mot inköpsorder. Du kan dock välja en bokförd förskottsbetalning för kvittning mot en inköpsorder.
 
 ## <a name="when-to-use-prepayment-invoicing-vs-prepayments"></a>När ska du använda förskottsbetalningsfakturering kontra förskottsbetalningar.
+
 | Förskottsfaktura                                                                | Förskottsbetalningar                                                              |
 |-------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
 | Definiera förskottsbetalningsvärde på inköpsordern.                                    | Inget förskottsbetalningsvärde är definierat på inköpsordern.                    |

@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="master-planning-and-multisite-functionality"></a>Huvudplanering och multisitefunktioner
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Huvudplanering tar hänsyn till inställningarna för lagerdimensionerna för site och lagerställe. 
 

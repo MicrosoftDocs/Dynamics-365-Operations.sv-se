@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="sales-agreements"></a>Försäljningsavtal
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Det här ämnet innehåller information om försäljningsavtal. Ett försäljningsavtal är ett kontrakt där kunden förbinder sig att köpa produkter i en viss mängd eller för ett visst ett belopp över tid, i utbyte mot specialpriser och rabatter.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-sales-tax-authorities"></a>Ställ in momsmyndigheter
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Skattemyndigheter är enheter dit den insamlade momsen måste rapporteras och betalas. Du kan betala moms direkt till myndigheten eller via ett leverantörskonto som du skapar för skattemyndigheten. Om du gör detta kan företaget använda sina vanliga betalningsrutiner för att betala skattemyndigheten i tid. Om du inte registrerar skattemyndigheten som en leverantör måste någon förbereda en manuell betalning till skattemyndigheten på relevant förfallodatum. I den här uppgiften används demonstrationsföretaget USMF.
 
