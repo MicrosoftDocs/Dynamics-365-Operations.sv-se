@@ -18,15 +18,15 @@ ms.author: epopov
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 5a9dab05d70b9955ebd98fce61d6ed12e7eaa5c5
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 729e1baeefdfa143f9632e0ac0164b9db9510070
 ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="cash-registers-for-sweden"></a><span data-ttu-id="47a09-103">Kassaapparater för Sverige</span><span class="sxs-lookup"><span data-stu-id="47a09-103">Cash registers for Sweden</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="47a09-104">Det här avsnittet innehåller en översikt över kassaapparatfunktioner för Sverige i Microsoft Dynamics 365 for Retail.</span><span class="sxs-lookup"><span data-stu-id="47a09-104">This topic provides an overview of the cash register functionality that is available for Sweden in Microsoft Dynamics 365 for Retail.</span></span> <span data-ttu-id="47a09-105">Den innehåller även riktlinjer för att ställa in funktionen.</span><span class="sxs-lookup"><span data-stu-id="47a09-105">It also provides guidelines for setting up the functionality.</span></span> <span data-ttu-id="47a09-106">Funktionen innehåller följande delar:</span><span class="sxs-lookup"><span data-stu-id="47a09-106">The functionality consists of the following parts:</span></span>
 
@@ -99,12 +99,12 @@ ms.lasthandoff: 03/26/2018
 
 1. <span data-ttu-id="47a09-166">Ange följande parametrar för moms (VAT) enligt svenska krav:</span><span class="sxs-lookup"><span data-stu-id="47a09-166">Set up the following parameters for value-added tax (VAT) per Swedish requirements:</span></span>
 
-    - <span data-ttu-id="47a09-167">Momskoder</span><span class="sxs-lookup"><span data-stu-id="47a09-167">Sales tax codes</span></span>
-    - <span data-ttu-id="47a09-168">Momsgrupper</span><span class="sxs-lookup"><span data-stu-id="47a09-168">Sales tax groups</span></span>
-    - <span data-ttu-id="47a09-169">Artikelmomsgrupper</span><span class="sxs-lookup"><span data-stu-id="47a09-169">Item sales tax groups</span></span>
-    - <span data-ttu-id="47a09-170">Momsinställningar i artiklar (artikelmomsgrupper för försäljning)</span><span class="sxs-lookup"><span data-stu-id="47a09-170">Sales tax settings in items (item sales tax groups for sales)</span></span>
+   - <span data-ttu-id="47a09-167">Momskoder</span><span class="sxs-lookup"><span data-stu-id="47a09-167">Sales tax codes</span></span>
+   - <span data-ttu-id="47a09-168">Momsgrupper</span><span class="sxs-lookup"><span data-stu-id="47a09-168">Sales tax groups</span></span>
+   - <span data-ttu-id="47a09-169">Artikelmomsgrupper</span><span class="sxs-lookup"><span data-stu-id="47a09-169">Item sales tax groups</span></span>
+   - <span data-ttu-id="47a09-170">Momsinställningar i artiklar (artikelmomsgrupper för försäljning)</span><span class="sxs-lookup"><span data-stu-id="47a09-170">Sales tax settings in items (item sales tax groups for sales)</span></span>
 
-    <span data-ttu-id="47a09-171">Mer information om hur du ställer in och använder moms i Microsoft Dynamics 365 for Finance and Operations och i Retail finns i [Momsöversikt](../../financials/general-ledger/indirect-taxes-overview.md).</span><span class="sxs-lookup"><span data-stu-id="47a09-171">For more information about how to set up and use sales tax in Microsoft Dynamics 365 for Finance and Operations, and in Retail, see [Sales tax overview](../../financials/general-ledger/indirect-taxes-overview.md).</span></span>
+     <span data-ttu-id="47a09-171">Mer information om hur du ställer in och använder moms i Microsoft Dynamics 365 for Finance and Operations och i Retail finns i [Momsöversikt](../../financials/general-ledger/indirect-taxes-overview.md).</span><span class="sxs-lookup"><span data-stu-id="47a09-171">For more information about how to set up and use sales tax in Microsoft Dynamics 365 for Finance and Operations, and in Retail, see [Sales tax overview](../../financials/general-ledger/indirect-taxes-overview.md).</span></span>
 
 2. <span data-ttu-id="47a09-172">På sidan **Alla butiker** uppdaterar du butiksinformation.</span><span class="sxs-lookup"><span data-stu-id="47a09-172">On the **All retail stores** page, update retail store details.</span></span> <span data-ttu-id="47a09-173">Du måste speciellt ställa in följande parametrar:</span><span class="sxs-lookup"><span data-stu-id="47a09-173">Specifically, set the following parameters:</span></span>
     

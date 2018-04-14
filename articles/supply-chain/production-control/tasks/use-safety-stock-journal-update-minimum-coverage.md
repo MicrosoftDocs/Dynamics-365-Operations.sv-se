@@ -17,62 +17,62 @@ ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: d278b20724006ec3b3aa557738e8b130ca2bba15
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: b9e3245af746b120117a23b3859e03bd4216e1cd
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
-# Använd säkerhetslagerjournalen för att uppdatera minimumdisponering
+# <a name="use-the-safety-stock-journal-to-update-minimum-coverage"></a><span data-ttu-id="25c3d-103">Använd säkerhetslagerjournalen för att uppdatera minimumdisponering</span><span class="sxs-lookup"><span data-stu-id="25c3d-103">Use the safety stock journal to update minimum coverage</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
-I den här proceduren visas hur du beräknar minsta disponeringsförslag som baseras på historiska transaktioner och uppdaterar sedan med artikeldisponeringen med förslagen. Detta görs med hjälp av säkerhetslagerjournalen. Det demonstrationsdataföretag som används för att skapa den här uppgiften är USMF. Denna uppgift är avsedd för produktionsplaneraren för att hjälpa till att bibehålla minsta disponering.
+<span data-ttu-id="25c3d-104">I den här proceduren visas hur du beräknar minsta disponeringsförslag som baseras på historiska transaktioner och uppdaterar sedan med artikeldisponeringen med förslagen.</span><span class="sxs-lookup"><span data-stu-id="25c3d-104">This procedure shows how to calculate minimum coverage proposals based on historical transactions and then update the item coverage with the proposals.</span></span> <span data-ttu-id="25c3d-105">Detta görs med hjälp av säkerhetslagerjournalen.</span><span class="sxs-lookup"><span data-stu-id="25c3d-105">This is done using the safety stock journal.</span></span> <span data-ttu-id="25c3d-106">Det demonstrationsdataföretag som används för att skapa den här uppgiften är USMF.</span><span class="sxs-lookup"><span data-stu-id="25c3d-106">The demo data company used to create this task is USMF.</span></span> <span data-ttu-id="25c3d-107">Denna uppgift är avsedd för produktionsplaneraren för att hjälpa till att bibehålla minsta disponering.</span><span class="sxs-lookup"><span data-stu-id="25c3d-107">This task is intended for the production planner, to help maintain minimum coverage.</span></span>
 
 
-## Skapa ett nytt namn på säkerhetslagerjournal.
-1. Gå till Namn på säkerhetslagerjournal.
-2. Klicka på Ny.
-3. Ange "Material" i fältet Namn.
-4. Ange "Material" i fältet Beskrivning.
-5. Stäng sidan.
+## <a name="create-a-new-safety-stock-journal-name"></a><span data-ttu-id="25c3d-108">Skapa ett nytt namn på säkerhetslagerjournal.</span><span class="sxs-lookup"><span data-stu-id="25c3d-108">Create a new safety stock journal name</span></span>
+1. <span data-ttu-id="25c3d-109">Gå till Namn på säkerhetslagerjournal.</span><span class="sxs-lookup"><span data-stu-id="25c3d-109">Go to Safety stock journal names.</span></span>
+2. <span data-ttu-id="25c3d-110">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="25c3d-110">Click New.</span></span>
+3. <span data-ttu-id="25c3d-111">Ange "Material" i fältet Namn.</span><span class="sxs-lookup"><span data-stu-id="25c3d-111">In the Name field, type 'Material'.</span></span>
+4. <span data-ttu-id="25c3d-112">Ange "Material" i fältet Beskrivning.</span><span class="sxs-lookup"><span data-stu-id="25c3d-112">In the Description field, type 'Material'.</span></span>
+5. <span data-ttu-id="25c3d-113">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="25c3d-113">Close the page.</span></span>
 
-## Skapa en säkerhetslagerjournal
-1. Gå till Beräkning av säkerhetslager.
-2. Klicka på Ny.
-3. Ange eller välj ett värde i fältet Namn.
-    * Välj det säkerhetslagerjournalnamn som du har skapaat, t.ex. Material.  
-4. Klicka på Skapa rader.
-5. Ange ett datum i fältet Från datum.
-    * Ange datumet till "2015-01-02".  
-6. Ange ett datum i fältet Till datum.
-    * Ange datumet till "2015-12-30".  
-7. Klicka på OK.
-    * Detta skapar rader för dimensionerna som har lagertransaktioner.  
+## <a name="create-a-safety-stock-journal"></a><span data-ttu-id="25c3d-114">Skapa en säkerhetslagerjournal</span><span class="sxs-lookup"><span data-stu-id="25c3d-114">Create a safety stock journal</span></span>
+1. <span data-ttu-id="25c3d-115">Gå till Beräkning av säkerhetslager.</span><span class="sxs-lookup"><span data-stu-id="25c3d-115">Go to Safety stock calculation.</span></span>
+2. <span data-ttu-id="25c3d-116">Klicka på Ny.</span><span class="sxs-lookup"><span data-stu-id="25c3d-116">Click New.</span></span>
+3. <span data-ttu-id="25c3d-117">Ange eller välj ett värde i fältet Namn.</span><span class="sxs-lookup"><span data-stu-id="25c3d-117">In the Name field, enter or select a value.</span></span>
+    * <span data-ttu-id="25c3d-118">Välj det säkerhetslagerjournalnamn som du har skapaat, t.ex. Material.</span><span class="sxs-lookup"><span data-stu-id="25c3d-118">Select the safety stock journal name that you created, for example, Material.</span></span>  
+4. <span data-ttu-id="25c3d-119">Klicka på Skapa rader.</span><span class="sxs-lookup"><span data-stu-id="25c3d-119">Click Create lines.</span></span>
+5. <span data-ttu-id="25c3d-120">Ange ett datum i fältet Från datum.</span><span class="sxs-lookup"><span data-stu-id="25c3d-120">In the From date field, enter a date.</span></span>
+    * <span data-ttu-id="25c3d-121">Ange datumet till "2015-01-02".</span><span class="sxs-lookup"><span data-stu-id="25c3d-121">Set the date to '2015-01-02'.</span></span>  
+6. <span data-ttu-id="25c3d-122">Ange ett datum i fältet Till datum.</span><span class="sxs-lookup"><span data-stu-id="25c3d-122">In the To date field, enter a date.</span></span>
+    * <span data-ttu-id="25c3d-123">Ange datumet till "2015-12-30".</span><span class="sxs-lookup"><span data-stu-id="25c3d-123">Set the date to '2015-12-30'.</span></span>  
+7. <span data-ttu-id="25c3d-124">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="25c3d-124">Click OK.</span></span>
+    * <span data-ttu-id="25c3d-125">Detta skapar rader för dimensionerna som har lagertransaktioner.</span><span class="sxs-lookup"><span data-stu-id="25c3d-125">This will create lines for the dimensions that have inventory transactions.</span></span>  
 
-## Beräkna förslag
-1. Klicka på Beräkna förslag.
-2. Välj alternativet Use average issue during lead time.
-3. Ange Multiplikationsfaktorn till "10".
-    * Multiplikationsfaktorn används för att justera förslaget. Eftersom demodata bara har några transaktioner, måste du ange faktorn för att få ett realistiskt förslag.  
-4. Klicka på OK.
-    * Bläddra ned för att hitta M0002 och M0003. Visa kolumnen Beräknad minsta kvantitet.   
+## <a name="calculate-proposal"></a><span data-ttu-id="25c3d-126">Beräkna förslag</span><span class="sxs-lookup"><span data-stu-id="25c3d-126">Calculate proposal</span></span>
+1. <span data-ttu-id="25c3d-127">Klicka på Beräkna förslag.</span><span class="sxs-lookup"><span data-stu-id="25c3d-127">Click Calculate proposal.</span></span>
+2. <span data-ttu-id="25c3d-128">Välj alternativet Use average issue during lead time.</span><span class="sxs-lookup"><span data-stu-id="25c3d-128">Select the Use average issue during lead time option.</span></span>
+3. <span data-ttu-id="25c3d-129">Ange Multiplikationsfaktorn till "10".</span><span class="sxs-lookup"><span data-stu-id="25c3d-129">Set Multiplication factor to '10'.</span></span>
+    * <span data-ttu-id="25c3d-130">Multiplikationsfaktorn används för att justera förslaget.</span><span class="sxs-lookup"><span data-stu-id="25c3d-130">The Multiply factor is used to adjust the proposal.</span></span> <span data-ttu-id="25c3d-131">Eftersom demodata bara har några transaktioner, måste du ange faktorn för att få ett realistiskt förslag.</span><span class="sxs-lookup"><span data-stu-id="25c3d-131">Because demo data only has a few transactions, you will need to set the factor to get a realistic proposal.</span></span>  
+4. <span data-ttu-id="25c3d-132">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="25c3d-132">Click OK.</span></span>
+    * <span data-ttu-id="25c3d-133">Bläddra ned för att hitta M0002 och M0003.</span><span class="sxs-lookup"><span data-stu-id="25c3d-133">Scroll down to find M0002 and M0003.</span></span> <span data-ttu-id="25c3d-134">Visa kolumnen Beräknad minsta kvantitet.</span><span class="sxs-lookup"><span data-stu-id="25c3d-134">View the Calculated minimum quantity column.</span></span>   
 
-## Uppdatera minsta kvantitet
-1. Ange ett nummer i fältet Ny minsta kvantitet.
-    * Uppdatera den Nya minsta kvantiteten till att matcha värdet i Beräknad minsta kvantitet. Om det beräknade minimivärdet är noll, kan du ange önskat framtida värde. Du kan till exempel ange den beräknade minimikvantiteten i det här fältet för M0002 som har lagerställe 12.  
-2. Hitta och markera önskad post i listan.
-    * Du kan till exempel välja M0002 som har lagerstället 12.  
-3. Ange ett nummer i fältet Ny minsta kvantitet.
-    * Uppdatera den Nya minsta kvantiteten till att matcha värdet i Beräknad minsta kvantitet. Om det beräknade minimivärdet är noll, kan du ange önskat framtida värde.  
+## <a name="update-minimum-quantity"></a><span data-ttu-id="25c3d-135">Uppdatera minsta kvantitet</span><span class="sxs-lookup"><span data-stu-id="25c3d-135">Update minimum quantity</span></span>
+1. <span data-ttu-id="25c3d-136">Ange ett nummer i fältet Ny minsta kvantitet.</span><span class="sxs-lookup"><span data-stu-id="25c3d-136">In the New minimum quantity field, enter a number.</span></span>
+    * <span data-ttu-id="25c3d-137">Uppdatera den Nya minsta kvantiteten till att matcha värdet i Beräknad minsta kvantitet.</span><span class="sxs-lookup"><span data-stu-id="25c3d-137">Update the New minimum quantity to match the value in the Calculated minimum quantity.</span></span> <span data-ttu-id="25c3d-138">Om det beräknade minimivärdet är noll, kan du ange önskat framtida värde.</span><span class="sxs-lookup"><span data-stu-id="25c3d-138">If the Calculated minimum is zero,  you can enter the desired future value.</span></span> <span data-ttu-id="25c3d-139">Du kan till exempel ange den beräknade minimikvantiteten i det här fältet för M0002 som har lagerställe 12.</span><span class="sxs-lookup"><span data-stu-id="25c3d-139">For example, you can enter the Calculated minimum quantity in this field for M0002 that has warehouse 12.</span></span>  
+2. <span data-ttu-id="25c3d-140">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="25c3d-140">In the list, find and select the desired record.</span></span>
+    * <span data-ttu-id="25c3d-141">Du kan till exempel välja M0002 som har lagerstället 12.</span><span class="sxs-lookup"><span data-stu-id="25c3d-141">For example, you can select M0002 that has warehouse 12.</span></span>  
+3. <span data-ttu-id="25c3d-142">Ange ett nummer i fältet Ny minsta kvantitet.</span><span class="sxs-lookup"><span data-stu-id="25c3d-142">In the New minimum quantity field, enter a number.</span></span>
+    * <span data-ttu-id="25c3d-143">Uppdatera den Nya minsta kvantiteten till att matcha värdet i Beräknad minsta kvantitet.</span><span class="sxs-lookup"><span data-stu-id="25c3d-143">Update the New minimum quantity to match the value in the Calculated minimum quantity.</span></span> <span data-ttu-id="25c3d-144">Om det beräknade minimivärdet är noll, kan du ange önskat framtida värde.</span><span class="sxs-lookup"><span data-stu-id="25c3d-144">If the Calculated minimum is zero you can enter the desired future value.</span></span>  
 
-## Bokför den nya minsta kvantiteten och verifiera resultatet
-1. Klicka på Bokför.
-2. Klicka på OK.
-3. Klicka för att följa länken i fältet Artikelnummer.
-4. Klicka för att följa länken i fältet Artikelnummer.
-5. Klicka på Plan i åtgärdsfönstret.
-6. Klicka på Artikeldisponering.
-    * Observera att den minsta kvantiteten har uppdaterats med den nya minsta kvantiteten från säkerhetslagerjournalen.  
+## <a name="post-the-new-minimum-quantity-and-validate-the-result"></a><span data-ttu-id="25c3d-145">Bokför den nya minsta kvantiteten och verifiera resultatet</span><span class="sxs-lookup"><span data-stu-id="25c3d-145">Post the new minimum quantity and validate the result</span></span>
+1. <span data-ttu-id="25c3d-146">Klicka på Bokför.</span><span class="sxs-lookup"><span data-stu-id="25c3d-146">Click Post.</span></span>
+2. <span data-ttu-id="25c3d-147">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="25c3d-147">Click OK.</span></span>
+3. <span data-ttu-id="25c3d-148">Klicka för att följa länken i fältet Artikelnummer.</span><span class="sxs-lookup"><span data-stu-id="25c3d-148">Click to follow the link in the Item number field.</span></span>
+4. <span data-ttu-id="25c3d-149">Klicka för att följa länken i fältet Artikelnummer.</span><span class="sxs-lookup"><span data-stu-id="25c3d-149">Click to follow the link in the Item number field.</span></span>
+5. <span data-ttu-id="25c3d-150">Klicka på Plan i åtgärdsfönstret.</span><span class="sxs-lookup"><span data-stu-id="25c3d-150">On the Action Pane, click Plan.</span></span>
+6. <span data-ttu-id="25c3d-151">Klicka på Artikeldisponering.</span><span class="sxs-lookup"><span data-stu-id="25c3d-151">Click Item coverage.</span></span>
+    * <span data-ttu-id="25c3d-152">Observera att den minsta kvantiteten har uppdaterats med den nya minsta kvantiteten från säkerhetslagerjournalen.</span><span class="sxs-lookup"><span data-stu-id="25c3d-152">Notice that the Minimum quantity has been updated with the new minimum quantity from the safety stock journal.</span></span>  
 
 

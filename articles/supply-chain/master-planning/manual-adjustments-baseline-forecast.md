@@ -20,17 +20,16 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: dbc195da36d31e01400fe66a1c02ea49609400eb
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: aa7a6cc48b4c02872666e7f43ca38d999ad820d9
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="make-manual-adjustments-to-the-baseline-forecast"></a><span data-ttu-id="4a02b-103">Gör manuella justeringar på baslinjeprognosen</span><span class="sxs-lookup"><span data-stu-id="4a02b-103">Make manual adjustments to the baseline forecast</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="4a02b-104">Detta ämne beskriver hur du kan göra manuella justeringar till en baslinje prognos och visa information om prognosen.</span><span class="sxs-lookup"><span data-stu-id="4a02b-104">This topic explains how you can make manual adjustments to a baseline forecast and view details of the forecast.</span></span> 
 

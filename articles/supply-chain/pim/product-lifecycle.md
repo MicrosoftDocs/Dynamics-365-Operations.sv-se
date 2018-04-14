@@ -20,24 +20,23 @@ ms.author: conradv
 ms.dyn365.ops.version: 7.3
 ms.search.validFrom: 2017-12-31
 ms.translationtype: HT
-ms.sourcegitcommit: 236b0253f20330f09f07dbcfa19257350fb5d37f
-ms.openlocfilehash: 8ef72de3f226a3270ac0145a20e4da7dfe64f4ba
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 8625e9c9b91acee52e2207d462f38286cafeb773
 ms.contentlocale: sv-se
-ms.lasthandoff: 02/08/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="product-lifecycle-state"></a><span data-ttu-id="984f8-103">Produktens livscykeltillstånd</span><span class="sxs-lookup"><span data-stu-id="984f8-103">Product lifecycle state</span></span> 
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="984f8-104">Ett livscykeltillstånd för produkt beskriver livscykelstatusen för en frisläppt produkt eller produktvariant.</span><span class="sxs-lookup"><span data-stu-id="984f8-104">A product lifecycle state documents the lifecycle state of a released product or product variant.</span></span> <span data-ttu-id="984f8-105">Produktens livscykeltillstånd definieras av användaren, vanligtvis en produktchef eller en produktmallchef.</span><span class="sxs-lookup"><span data-stu-id="984f8-105">Product lifecycle states are defined by the user, typically a product manager or a product master data manager.</span></span> <span data-ttu-id="984f8-106">Specifika affärsprocesser, t.ex. huvudplanering kan påverkas av ett visst livscykeltillstånd.</span><span class="sxs-lookup"><span data-stu-id="984f8-106">Specific business processes, such as master planning, can be affected by a specific lifecycle state.</span></span>   
- 
+
 <span data-ttu-id="984f8-107">En frisläppt produkt eller produktvariant kan vara kopplade till ett livscykeltillstånd för produkten som dokumenterar med vilket livscykeltillstånd för en viss produkt eller variant används för närvarande.</span><span class="sxs-lookup"><span data-stu-id="984f8-107">A released product or product variant can be associated with a product lifecycle state that documents in which lifecycle state a specific product or variant is currently in.</span></span> <span data-ttu-id="984f8-108">Du kan definiera valfritt antal produktlivscykeltillstånd genom att tilldela ett tillståndsnamn och beskrivning.</span><span class="sxs-lookup"><span data-stu-id="984f8-108">You can define any number of product lifecycle states by assigning a state name and description.</span></span> <span data-ttu-id="984f8-109">Du kan välja ett livscykeltillstånd som standardläge för nya frisläppta produkter.</span><span class="sxs-lookup"><span data-stu-id="984f8-109">You can select one lifecycle state as the default state for new released products.</span></span> <span data-ttu-id="984f8-110">Frisläppta produktvarianter ärver deras produktlivscykeltillstånd från deras frisläppa produktmallar när de skapas.</span><span class="sxs-lookup"><span data-stu-id="984f8-110">Released product variants inherit their product lifecycle state from their released product master on creation.</span></span> <span data-ttu-id="984f8-111">När du ändrar livscykeltillståndet i en frisläppt produktmall kan du välja att uppdatera alla befintliga varianter som har samma ursprungliga tillstånd.</span><span class="sxs-lookup"><span data-stu-id="984f8-111">When changing the lifecycle state on a released product master, you can choose to update all existing variants that have the same original state.</span></span>  
 
 ## <a name="create-a-new-product-lifecycle-state"></a><span data-ttu-id="984f8-112">Skapa ett nytt produktlivscykeltillstånd</span><span class="sxs-lookup"><span data-stu-id="984f8-112">Create a new product lifecycle state</span></span> 
- 
+
 - <span data-ttu-id="984f8-113">För att skapa ett nytt produktlivscykeltillstånd spelar du upp eller läser uppgiftsguiden **Skapa ett nytt produktlivscykeltillstånd**.</span><span class="sxs-lookup"><span data-stu-id="984f8-113">To create a new product lifecycle state, play or read the task guide **Create a new product lifecycle state**.</span></span> 
 
 -  <span data-ttu-id="984f8-114">För att skapa ett standardproduktlivscykeltillstånd spelar du upp eller läser uppgiftsguiden **Skapa ett standardproduktlivscykeltillstånd**.</span><span class="sxs-lookup"><span data-stu-id="984f8-114">To create a default product lifecycle state, play or read the task guide **Create a default product lifecycle state**.</span></span>   
@@ -73,7 +72,7 @@ ms.lasthandoff: 02/08/2018
 
 > [!NOTE]
 > <span data-ttu-id="984f8-134">Av prestandaskäl rekommenderas att koppla alla föråldrade frisläppta produkter eller produktvarianter, särskilt när du arbetar med icke-återanvändningsbara produktkonfigurationsvarianter med produktlivscykeltillstånd som inaktiveras för huvudplanering.</span><span class="sxs-lookup"><span data-stu-id="984f8-134">For performance reasons, it is highly recommended to associate all obsolete released products or product variants, especially when working with non-reusable product configuration variants, with a product lifecycle state that is deactivated for master planning.</span></span>  
- 
+
 ## <a name="default-migration-import-and-export"></a><span data-ttu-id="984f8-135">Standardmigrering, import och export</span><span class="sxs-lookup"><span data-stu-id="984f8-135">Default migration, import, and export</span></span> 
 
 <span data-ttu-id="984f8-136">Produktlivscykeltillstånd stöds inte av datatabeller och livscykeltillståndet kan inte anges till ett variabelläge via de frisläppta produktdatatabellerna.</span><span class="sxs-lookup"><span data-stu-id="984f8-136">The product lifecycle states are not supported by data entities, and the lifecycle state cannot be set to a variable state through the released product data entities.</span></span>
@@ -81,18 +80,18 @@ ms.lasthandoff: 02/08/2018
 -  <span data-ttu-id="984f8-137">Vid migration från tidigare frisläppningar är livscykeltillståndet för alla produkter och produktvarianter tomt.</span><span class="sxs-lookup"><span data-stu-id="984f8-137">On migration from previous releases, the lifecycle state of all products and product variants will be blank.</span></span>  
 -  <span data-ttu-id="984f8-138">När du importerar frisläppta produkter via en datatabell, används standard livscykeltillståndet när de skapas.</span><span class="sxs-lookup"><span data-stu-id="984f8-138">When importing released products through a data entity, the default lifecycle state will be applied on creation.</span></span>  
 -  <span data-ttu-id="984f8-139">När du importerar frisläppta produktvarianter via en datatabell, importeras livscykeltillstånd för den frisläppta produktmallen.</span><span class="sxs-lookup"><span data-stu-id="984f8-139">When importing released product variants through a data entity, the product lifecycle state of the released product master will be imported.</span></span>   
- 
+
 ## <a name="find-obsolete-products-and-products-variants"></a><span data-ttu-id="984f8-140">Söka efter föråldrade produkter och produktvarianter</span><span class="sxs-lookup"><span data-stu-id="984f8-140">Find obsolete products and products variants</span></span> 
- 
+
 <span data-ttu-id="984f8-141">Du kan köra en simuleringsanalys om du vill söka efter föråldrade frisläppta produkter eller produktvarianter och sedan uppdatera deras status för produktlivscykeltillstånd.</span><span class="sxs-lookup"><span data-stu-id="984f8-141">You can run a simulation analysis to find the obsolete released products or product variants and then update their product lifecycle status.</span></span> <span data-ttu-id="984f8-142">Om du vill hitta föråldrade produkter, spela upp och läs uppgiftsguiden **Sök föråldrade produktvarianter och tilldela ett produktlivscykeltillstånd**.</span><span class="sxs-lookup"><span data-stu-id="984f8-142">To find obsolete products, play and read the task guide **Find obsolete product variants and assign a product lifecycle state**.</span></span> <span data-ttu-id="984f8-143">Den här uppgiftsguiden visar hur du hittar föråldrade frisläppta produkter eller produktvarianter och hur du associerar ett produktlivscykeltillstånd till de föråldrade produkterna.</span><span class="sxs-lookup"><span data-stu-id="984f8-143">This task guide shows how to find obsolete released products or product variants and how to associate a product lifecycle state to the obsolete products.</span></span> <span data-ttu-id="984f8-144">Här visas också hur du visar resultaten för simulering och bedömer hur många produkter och produktvarianter som ska kopplas till ett nytt produktlivscykeltillstånd när du kör uppdateringen utan simulering.</span><span class="sxs-lookup"><span data-stu-id="984f8-144">It also shows hot to view the simulation results and assess how many products and product variants will be associated with a new product lifecycle state when running the update without simulation.</span></span>  
- 
+
 <span data-ttu-id="984f8-145">Genom att köra analysen i ett simuleringsläge, identifieras produkterna och produktvarianterna som föråldrade och visas i en specifik form där de enkelt kan granskas.</span><span class="sxs-lookup"><span data-stu-id="984f8-145">By running the analysis in a simulation mode, the products and product variants identified as obsolete are displayed in a specific form, where they can easily be reviewed.</span></span> <span data-ttu-id="984f8-146">Analysen söker efter transaktioner och specifika huvuddata för att identifiera produkter som inte har några behov inom variabel period och inga huvuddata som kan leda till efterfrågan.</span><span class="sxs-lookup"><span data-stu-id="984f8-146">The analysis searches for transactions and specific master data to identify products that have no demand within a variable period and no master data that can result in demand.</span></span> <span data-ttu-id="984f8-147">Nya frisläppta produkter inom variabelperiod kan uteslutas från analysen.</span><span class="sxs-lookup"><span data-stu-id="984f8-147">New released products within a variable period can be excluded from the analysis.</span></span> <span data-ttu-id="984f8-148">När analysissimuleringen returnerar det förväntade resultatet kan användaren köra analysen och ange ett nytt produktlivscykeltillstånd för alla produkter som identifieras som föråldrade av analysen.</span><span class="sxs-lookup"><span data-stu-id="984f8-148">When the analysis simulation returns the expected result, the user can run the analysis and set a new product lifecycle state to all products identified as obsolete by the analysis.</span></span>  
- 
+
 > [!NOTE]
 > <span data-ttu-id="984f8-149">Observera att alla analyser och uppdateringar måste utföras inom samma juridiska person.</span><span class="sxs-lookup"><span data-stu-id="984f8-149">Note that all analysis and updates must be done within the same legal entity.</span></span>  
- 
+
 ## <a name="criteria-to-select-and-update-released-products-or-product-variants"></a><span data-ttu-id="984f8-150">Kriterier för att välja och uppdatera frisläppta produkter eller produktvarianter</span><span class="sxs-lookup"><span data-stu-id="984f8-150">Criteria to select and update released products or product variants</span></span> 
- 
+
 <span data-ttu-id="984f8-151">Använd följande kriterier för att välja och uppdatera frisläppta produkter och produktvarianter:</span><span class="sxs-lookup"><span data-stu-id="984f8-151">Use the following criteria to select and update the released products and product variants:</span></span> 
 
 -    <span data-ttu-id="984f8-152">Produktlivscykeltillstånd för produkten eller produktvarianten måste skilja sig från det önskade tillståndet.</span><span class="sxs-lookup"><span data-stu-id="984f8-152">The product lifecycle state of the product or product variant must be different from the new desired state.</span></span> 

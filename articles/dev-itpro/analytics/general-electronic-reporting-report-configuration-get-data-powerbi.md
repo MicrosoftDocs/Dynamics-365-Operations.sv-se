@@ -18,17 +18,16 @@ ms.author: nselin
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 95d5bf26c22238753586cf4a7aaf5c26f061a705
-ms.openlocfilehash: 8f89d0740098fbd5af9d838f1f4b7ddf47ee7e10
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 6587189fe2a366caebd0dbaf34487d578815bb94
 ms.contentlocale: sv-se
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="configure-electronic-reporting-to-pull-data-into-power-bi"></a><span data-ttu-id="ed90a-103">Konfigurera elektronisk rapportering för att hämta data till Power BI</span><span class="sxs-lookup"><span data-stu-id="ed90a-103">Configure Electronic reporting to pull data into Power BI</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="ed90a-104">I det här avsnittet beskrivs hur du kan använda konfigurationen för Elektronisk rapportering (ER) om du vill ordna överföringen av data från Finance and Operations till Power BI-tjänster.</span><span class="sxs-lookup"><span data-stu-id="ed90a-104">This topic explains how you can use your Electronic reporting (ER) configuration to arrange the transfer of data from your instance of Finance and Operations to Power BI services.</span></span> <span data-ttu-id="ed90a-105">Som exempel använder det här avsnittet Intrastat-transaktioner som affärsdata som ska överföras.</span><span class="sxs-lookup"><span data-stu-id="ed90a-105">As an example, this topic uses Intrastat transactions as business data that must be transferred.</span></span> <span data-ttu-id="ed90a-106">Power BI-kartvisualiseringen använder dessa Intrastat-transaktionsdata för att presentera en vy för analys av företagsimport-/exportaktiviteter på Power BI-rapporten.</span><span class="sxs-lookup"><span data-stu-id="ed90a-106">The Power BI map visualization uses this Intrastat transaction data to present a view for analysis of company import/export activities on the Power BI report.</span></span>
 
@@ -118,9 +117,9 @@ ms.lasthandoff: 02/23/2018
 ## <a name="create-a-power-bi-report-by-using-the-new-dataset"></a><span data-ttu-id="ed90a-217">Skapa en Power BI-rapport genom att använda den nya datauppsättningen</span><span class="sxs-lookup"><span data-stu-id="ed90a-217">Create a Power BI report by using the new dataset</span></span>
 1. <span data-ttu-id="ed90a-218">Klicka på den Power BI-uppsättning för **Importera och exportera detaljer** som du skapade.</span><span class="sxs-lookup"><span data-stu-id="ed90a-218">Click the **Import and export details** Power BI dataset that you created.</span></span> 
 2. <span data-ttu-id="ed90a-219">Konfigurera visualiseringen.</span><span class="sxs-lookup"><span data-stu-id="ed90a-219">Configure the visualization.</span></span> <span data-ttu-id="ed90a-220">Välj till exempel visualiseringen **Ifylld karta** och konfigurera den enligt följande:</span><span class="sxs-lookup"><span data-stu-id="ed90a-220">For example, select the **Filled map** visualization, and configure it as follows:</span></span>
- -   <span data-ttu-id="ed90a-221">Tilldela datauppsättningsfältet **CountryOrigin** till fältet **Plats** på kartvisualiseringen.</span><span class="sxs-lookup"><span data-stu-id="ed90a-221">Assign the **CountryOrigin** dataset field to the **Location** field of the map visualization.</span></span>
- -   <span data-ttu-id="ed90a-222">Tilldela datauppsättningsfältet **Belopp** till fältet **Färgmättnad** på kartvisualiseringen.</span><span class="sxs-lookup"><span data-stu-id="ed90a-222">Assign the **Amount** dataset field to the **Color saturation** field of the map visualization.</span></span>
- -   <span data-ttu-id="ed90a-223">Lägg till datauppsättningsfältet **Aktivitet** och **År** till fältsamlingen **Filter** på kartvisualiseringen.</span><span class="sxs-lookup"><span data-stu-id="ed90a-223">Add the **Activity** and **Year** dataset fields to the **Filters** fields collection of the map visualization.</span></span>
+   -   <span data-ttu-id="ed90a-221">Tilldela datauppsättningsfältet **CountryOrigin** till fältet **Plats** på kartvisualiseringen.</span><span class="sxs-lookup"><span data-stu-id="ed90a-221">Assign the **CountryOrigin** dataset field to the **Location** field of the map visualization.</span></span>
+   -   <span data-ttu-id="ed90a-222">Tilldela datauppsättningsfältet **Belopp** till fältet **Färgmättnad** på kartvisualiseringen.</span><span class="sxs-lookup"><span data-stu-id="ed90a-222">Assign the **Amount** dataset field to the **Color saturation** field of the map visualization.</span></span>
+   -   <span data-ttu-id="ed90a-223">Lägg till datauppsättningsfältet **Aktivitet** och **År** till fältsamlingen **Filter** på kartvisualiseringen.</span><span class="sxs-lookup"><span data-stu-id="ed90a-223">Add the **Activity** and **Year** dataset fields to the **Filters** fields collection of the map visualization.</span></span>
 
 3. <span data-ttu-id="ed90a-224">Spara Power BI-rapporten som **Importera och exportera detaljer-rapport**.</span><span class="sxs-lookup"><span data-stu-id="ed90a-224">Save the Power BI report as **Import and export details report**.</span></span> <span data-ttu-id="ed90a-225">[![Importera och exportera detaljer-rapport](./media/ger-power-bi-added-report-1024x498.png)](./media/ger-power-bi-added-report.png) Observera att kartan visar de länder/regioner som nämns i Excel-filen (Österrike och Schweiz i det här exemplet).</span><span class="sxs-lookup"><span data-stu-id="ed90a-225">[![Import and export details report](./media/ger-power-bi-added-report-1024x498.png)](./media/ger-power-bi-added-report.png) Note that the map shows the countries/regions that are mentioned in the Excel file (Austria and Switzerland in this example).</span></span> <span data-ttu-id="ed90a-226">Dessa länder/regioner färgas för att visa andelen av fakturerade belopp för varje.</span><span class="sxs-lookup"><span data-stu-id="ed90a-226">These countries/regions are colored to show the proportion of invoiced amounts for each.</span></span> 
 4. <span data-ttu-id="ed90a-227">Uppdatera listan över Intrastat-transaktioner.</span><span class="sxs-lookup"><span data-stu-id="ed90a-227">Update the list of Intrastat transactions.</span></span> <span data-ttu-id="ed90a-228">Exporttransaktionen som kommer från Italien läggs till.</span><span class="sxs-lookup"><span data-stu-id="ed90a-228">The export transaction that originated from Italy is added.</span></span> <span data-ttu-id="ed90a-229">[![Visa Intrastat-lista](./media/ger-power-bi-new-run-new-transaction-1024x321.png)](./media/ger-power-bi-new-run-new-transaction.png)</span><span class="sxs-lookup"><span data-stu-id="ed90a-229">[![Intrastat transactions list](./media/ger-power-bi-new-run-new-transaction-1024x321.png)](./media/ger-power-bi-new-run-new-transaction.png)</span></span> 

@@ -19,16 +19,16 @@ ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 17b42ae7e177a42b732654f2952ec5fe35acb1a9
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 5d06f8afd7b7c777062a1e114309154b956a2355
 ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="workforce-metrics-power-bi-content"></a><span data-ttu-id="13d9d-104">Power BI-innehåll för personalmätningar</span><span class="sxs-lookup"><span data-stu-id="13d9d-104">Workforce metrics Power BI content</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="13d9d-105">Det här avsnittet beskriver **Microsoft Power BI-innehåll för personalmätningar**.</span><span class="sxs-lookup"><span data-stu-id="13d9d-105">This topic describes the **Workforce metrics** Microsoft Power BI content.</span></span> <span data-ttu-id="13d9d-106">Det förklarar hur du öppnar Power BI-rapporter, och ger information om den datamodell och de enheter som användes för att skapa innehållet.</span><span class="sxs-lookup"><span data-stu-id="13d9d-106">It explains how to access the Power BI reports, and provides information about the data model and entities that were used to build the content.</span></span>
 

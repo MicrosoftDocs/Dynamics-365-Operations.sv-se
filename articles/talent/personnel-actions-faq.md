@@ -18,16 +18,16 @@ ms.author: shielas
 ms.search.validFrom: 2017-06-16
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 58089418ac233d31a2a4f0298af5e884d77a67d3
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: f3abbb2d124ee6c11e46e3680a342ecb12a12ec3
 ms.contentlocale: sv-se
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="personnel-actions-faq"></a><span data-ttu-id="23bc5-104">Personalåtgärder [Frågor och Svar]</span><span class="sxs-lookup"><span data-stu-id="23bc5-104">Personnel actions [FAQ]</span></span>
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 <span data-ttu-id="23bc5-105">Det här avsnittet innehåller svar på frågor som du kan ha om din organisation använder personalåtgärder.</span><span class="sxs-lookup"><span data-stu-id="23bc5-105">This topic contains answers to questions that you might have if your organization uses personnel actions.</span></span> <span data-ttu-id="23bc5-106">Personalåtgärder är ytterligare steg du måste vidta när du utför personalrelaterade uppgifter.</span><span class="sxs-lookup"><span data-stu-id="23bc5-106">Personnel actions are additional steps that you must complete when you perform certain personnel-related tasks.</span></span> <span data-ttu-id="23bc5-107">Exempel på uppgifter som kan kräva personalåtgärder är när du skapar nya befattningar, ändrar befintliga befattningsvärden, anställer nya arbetstagare, överför arbetstagare, ändrar arbetstagares kompensation, ändrar befattningstilldelningar eller säger upp arbetstagare.</span><span class="sxs-lookup"><span data-stu-id="23bc5-107">Examples of tasks that might require personnel actions are when you create new positions, modify existing position values, hire new workers, transfer workers, change worker compensation, change position assignments, or terminate workers.</span></span>
 
@@ -64,9 +64,9 @@ ms.lasthandoff: 03/08/2018
 <span data-ttu-id="23bc5-140">Om en personalåtgärdsbegäran misslyckas följer du dessa steg för att lösa felet och skicka om begäran:</span><span class="sxs-lookup"><span data-stu-id="23bc5-140">If a personnel action request fails, follow these steps to resolve the error and resubmit the request:</span></span>
 
 > 1. <span data-ttu-id="23bc5-141">Klicka på knappen **Feltext** i **Åtgärdsfönstret** om du vill visa meddelandetexten som beskriver problemet.</span><span class="sxs-lookup"><span data-stu-id="23bc5-141">On the **Action Pane**, click the **Error text** button to view the message text that describes the problem.</span></span>
-
+> 
 > 2. <span data-ttu-id="23bc5-142">Klicka på **Återaktivera** i **Åtgärdsfönstret** om du vill läsa in den senaste informationen och återställa statusen för personalåtgärden till **Utkast**.</span><span class="sxs-lookup"><span data-stu-id="23bc5-142">On the **Action Pane**, click **Reactivate** to load the latest information and set the status of the personnel action back to **Draft**.</span></span>
-
+> 
 > 3. <span data-ttu-id="23bc5-143">Lös felet och klicka sedan på **Slutför** eller **Skicka in**.</span><span class="sxs-lookup"><span data-stu-id="23bc5-143">Resolve the error, and then click **Complete** or **Submit**.</span></span>
 
 ## <a name="what-happens-to-a-personnel-action-that-uses-workflow-when-the-final-approval-is-completed"></a><span data-ttu-id="23bc5-144">Vad händer med en personalåtgärd som använder arbetsflödet, om det sista godkännandet är slutfört?</span><span class="sxs-lookup"><span data-stu-id="23bc5-144">What happens to a personnel action that uses workflow when the final approval is completed?</span></span>

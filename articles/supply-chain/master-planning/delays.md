@@ -20,17 +20,16 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: ed0df1abbf4f70ea70046eff7b91a25fdd59016c
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 7fa14939c19b7680f2cbf6571516bf0081cce497
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="delays"></a><span data-ttu-id="5bf93-104">Fördröjningar</span><span class="sxs-lookup"><span data-stu-id="5bf93-104">Delays</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="5bf93-105">Det här avsnittet innehåller information om fördröjda data i huvudplaneringen.</span><span class="sxs-lookup"><span data-stu-id="5bf93-105">This article provides information about delayed dates in master planning.</span></span> <span data-ttu-id="5bf93-106">Ett fördröjt datum är ett realistiskt förfallodatum som en transaktion får om det tidigaste uppfyllelsedatumet som huvudplaneringen beräknar infaller efter begärt datum.</span><span class="sxs-lookup"><span data-stu-id="5bf93-106">A delayed date is a realistic due date that a transaction receives if the earliest fulfillment date that master planning calculates is later than the requested date.</span></span>
 

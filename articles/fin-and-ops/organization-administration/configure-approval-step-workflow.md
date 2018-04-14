@@ -18,17 +18,16 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: d2fc157b54401463bbabf1e3f6d5dddc6bda9631
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: c142534e9e5b5f154f478889d13540dc3d47ad18
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="configure-an-approval-step-in-a-workflow"></a><span data-ttu-id="69b3a-103">Konfigurera ett godkännandesteg i ett arbetsflöde</span><span class="sxs-lookup"><span data-stu-id="69b3a-103">Configure an approval step in a workflow</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="69b3a-104">I det här avsnittet beskrivs hur du konfigurerar egenskaperna för ett godkännandesteg.</span><span class="sxs-lookup"><span data-stu-id="69b3a-104">This topic explains how to configure the properties of an approval step.</span></span>
 
@@ -145,9 +144,9 @@ ms.lasthandoff: 11/03/2017
     <span data-ttu-id="69b3a-192">Om användaren inte vidtar åtgärder för dokumentet inom den tilldelade tiden, är dokumentet försenat.</span><span class="sxs-lookup"><span data-stu-id="69b3a-192">If the user doesn't take action on the document in the allotted time, the document is overdue.</span></span> <span data-ttu-id="69b3a-193">Ett dokument som försenas eskaleras, baserat på de alternativ som du väljer i avsnittet **Eskalering** på sidan.</span><span class="sxs-lookup"><span data-stu-id="69b3a-193">A document that is overdue is escalated, based on the options that you select in the **Escalation** area of the page.</span></span>
 4.  <span data-ttu-id="69b3a-194">Om du har tilldelat godkännandesteget till flera användare eller grupper av användare, välj då ett av följande alternativ i fliken **Slutförandepolicy**:</span><span class="sxs-lookup"><span data-stu-id="69b3a-194">If you assigned the approval step to multiple users or a group of users, on the **Completion policy** tab, select one of the following options:</span></span>
     -   <span data-ttu-id="69b3a-195">**Enskild godkännare** – Den åtgärd som tillämpas på dokumentet avgörs av den första personen som svarar.</span><span class="sxs-lookup"><span data-stu-id="69b3a-195">**Single approver** – The action that is applied to the document is determined by the first person who responds.</span></span> <span data-ttu-id="69b3a-196">Till exempel har Sam skickat in en utgiftsrapport på 15 000 dollar.</span><span class="sxs-lookup"><span data-stu-id="69b3a-196">For example, Sam has submitted an expense report for USD 15,000.</span></span> <span data-ttu-id="69b3a-197">Utgiftsrapporten tilldelas för närvarande Sue, Jo och Bill.</span><span class="sxs-lookup"><span data-stu-id="69b3a-197">The expense report is currently assigned to Sue, Jo, and Bill.</span></span> <span data-ttu-id="69b3a-198">Om Sue är den första personen som svarar på dokumentet, är det hon som bestämmer vilken åtgärd som ska vidtas.</span><span class="sxs-lookup"><span data-stu-id="69b3a-198">If Sue is the first person who responds to the document, the action that she takes is applied to the document.</span></span> <span data-ttu-id="69b3a-199">Om Sue avvisar dokumentet, avslås det och skickas tillbaka till Sam.</span><span class="sxs-lookup"><span data-stu-id="69b3a-199">If Sue rejects the document, it's rejected and sent back to Sam.</span></span> <span data-ttu-id="69b3a-200">Om Sue godkänner dokumentet, skickas det vidare till Ann för godkännande.</span><span class="sxs-lookup"><span data-stu-id="69b3a-200">If Sue approves the document, it's sent to Ann for approval.</span></span> 
-    
+
     ![Arbetsflöde med en godkännandeprocess](./media/workflow_multipleusersinstep.gif)
-    
+
     -   <span data-ttu-id="69b3a-202">**Majoritet av godkännare** – Den åtgärd som tillämpas på dokumentet avgörs när majoriteten av godkännarna har svarat.</span><span class="sxs-lookup"><span data-stu-id="69b3a-202">**Majority of approvers** – The action that is applied to the document is determined when most of the approvers respond.</span></span> <span data-ttu-id="69b3a-203">Till exempel har Sam skickat in en utgiftsrapport på 15 000 dollar.</span><span class="sxs-lookup"><span data-stu-id="69b3a-203">For example, Sam has submitted an expense report for USD 15,000.</span></span> <span data-ttu-id="69b3a-204">Utgiftsrapporten tilldelas för närvarande Sue, Jo och Bill.</span><span class="sxs-lookup"><span data-stu-id="69b3a-204">The expense report is currently assigned to Sue, Jo, and Bill.</span></span> <span data-ttu-id="69b3a-205">Om Sue och Jo är de första två godkännarna som svarar, tillämpas den åtgärd de vidtar på dokumentet.</span><span class="sxs-lookup"><span data-stu-id="69b3a-205">If Sue and Jo are the first two approvers who respond, the action that they take is applied to the document.</span></span>
         -   <span data-ttu-id="69b3a-206">Om Sue godkänner dokumentet men Jo avvisar det, avslås dokumentet och skickas tillbaka till Sam.</span><span class="sxs-lookup"><span data-stu-id="69b3a-206">If Sue approves the document, but Jo rejects it, the document is rejected and sent back to Sam.</span></span>
         -   <span data-ttu-id="69b3a-207">Om både Sue och Jo godkänner dokumentet, skickas det till Ann för godkännande.</span><span class="sxs-lookup"><span data-stu-id="69b3a-207">If both Sue and Jo approve the document, it's sent to Ann for approval.</span></span>

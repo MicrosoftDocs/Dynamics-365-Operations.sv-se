@@ -16,15 +16,15 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 816e00e4238cb0d90a2aea9b2bc070d31504c2ce
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 8b3dc0beec17d80f7bbbcf234656a537a445789f
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="sales-tax-assignment-and-overrides"></a><span data-ttu-id="b794b-103">Momstilldelning och åsidosättningar</span><span class="sxs-lookup"><span data-stu-id="b794b-103">Sales tax assignment and overrides</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="b794b-104">I den här proceduren visas hur du tilldelar momsgrupper till butikskanaler.</span><span class="sxs-lookup"><span data-stu-id="b794b-104">This procedure demonstrates how to assign sales tax groups to retail channels.</span></span> <span data-ttu-id="b794b-105">Den går också igenom processen att skapa en ny momsåsidosättning och tilldela den till en befintlig momsåsidosättningsgrupp.</span><span class="sxs-lookup"><span data-stu-id="b794b-105">It also walks through the process of creating a new sales tax override and assigning it to an existing sales tax override group.</span></span> <span data-ttu-id="b794b-106">Den här uppgiften</span><span class="sxs-lookup"><span data-stu-id="b794b-106">This procedure</span></span>
 

@@ -20,17 +20,16 @@ ms.author: yuyus
 ms.dyn365.ops.version: AX 7.0.0
 ms.search.validFrom: 2016-02-28
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: 9a5fff747e0725b39ecd8d54b69f2fd03524f37e
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 43979414ee049dab05042b9949ae5316e626f9d5
 ms.contentlocale: sv-se
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="bom-calculations"></a><span data-ttu-id="b36a0-104">BOM-beräkningar</span><span class="sxs-lookup"><span data-stu-id="b36a0-104">BOM calculations</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="b36a0-105">Kostnadssummeringen och försäljningsprisberäkningarna kallas för strukturlisteberäkningar och du initierar dem från sidan Beräkningar.</span><span class="sxs-lookup"><span data-stu-id="b36a0-105">The cost roll-up and sales price calculations are known as bill of materials (BOM) calculations, and you initiate them from the Calculations page.</span></span> <span data-ttu-id="b36a0-106">Det här ämnet innehåller information om BOM-beräknignar.</span><span class="sxs-lookup"><span data-stu-id="b36a0-106">This topic provides information about BOM calculations.</span></span>
 

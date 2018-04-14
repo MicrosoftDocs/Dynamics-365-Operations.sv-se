@@ -20,19 +20,18 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 9cb4bded4b8d841c6d164e6b8ded2cb3fb4d0978
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 9ba0c5d44d58faac47b6a44265431a48c49874df
 ms.contentlocale: sv-se
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="product-dimensions"></a><span data-ttu-id="c63ea-105">Produktdimensioner</span><span class="sxs-lookup"><span data-stu-id="c63ea-105">Product dimensions</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[Retail name](../includes/retail-name.md)]
-
+[!INCLUDE [Retail name](../includes/retail-name.md)]
 
 <span data-ttu-id="c63ea-106">Det finns fyra produktdimensioner: färg, konfiguration, storlek och utförande.</span><span class="sxs-lookup"><span data-stu-id="c63ea-106">There are four product dimensions -  Color, Configuration, Size and Style.</span></span> <span data-ttu-id="c63ea-107">Du kombinerar produktdimensioner i dimensionsgrupper och tilldelar dimensionsgrupper till produktmallar.</span><span class="sxs-lookup"><span data-stu-id="c63ea-107">You combine product dimensions in dimension groups and assign dimension groups to product masters.</span></span> <span data-ttu-id="c63ea-108">Kombinationerna av produktdimensioner bestämmer hur produktvarianter definieras.</span><span class="sxs-lookup"><span data-stu-id="c63ea-108">The combinations of product dimensions determine how product variants are defined.</span></span>
 
@@ -51,6 +50,7 @@ ms.lasthandoff: 02/07/2018
 -   <span data-ttu-id="c63ea-129">Klicka på **Produktinformationshantering** &gt; **Frisläppta produkter**.</span><span class="sxs-lookup"><span data-stu-id="c63ea-129">Click **Product information management** &gt; **Released products**.</span></span> <span data-ttu-id="c63ea-130">Välj en produktmall.</span><span class="sxs-lookup"><span data-stu-id="c63ea-130">Select a product master.</span></span> <span data-ttu-id="c63ea-131">I **Åtgärdsfönstret**, klicka på **Produkt**.</span><span class="sxs-lookup"><span data-stu-id="c63ea-131">On the **Action Pane**, click **Product**.</span></span> <span data-ttu-id="c63ea-132">I gruppen **Produktmall**, klicka på **Produktdimensioner**.</span><span class="sxs-lookup"><span data-stu-id="c63ea-132">In the **Product master** group, click **Product dimensions**.</span></span>
 
 <span data-ttu-id="c63ea-133">Antalet varianter som du kan skapa för en artikel begränsas av antalet möjliga produktdimensionskombinationer.</span><span class="sxs-lookup"><span data-stu-id="c63ea-133">The number of variants that you can create for an item is limited by the number of possible product dimension combinations.</span></span>
+
 | <span data-ttu-id="c63ea-134">**Tips!**</span><span class="sxs-lookup"><span data-stu-id="c63ea-134">**Tip**</span></span>                                                                                                                                              |
 |------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span data-ttu-id="c63ea-135">När du använder en produkt på till exempel en orderrad väljer du produktdimensioner för att identifiera produktvarianten du vill arbeta med.</span><span class="sxs-lookup"><span data-stu-id="c63ea-135">When you use a product on, for example, an order line, you select the product dimensions to identify the product variant that you want to work with.</span></span> |

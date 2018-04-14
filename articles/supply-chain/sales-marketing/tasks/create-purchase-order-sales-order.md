@@ -16,15 +16,15 @@ ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 412a8c7acca06fc1be073019f91144e2a3f1c94b
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 1a840324862a7d3e279fce49288771d202527b77
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="create-a-purchase-order-from-a-sales-order"></a><span data-ttu-id="dcee4-103">Skapa en inköpsorder från en försäljningsorder</span><span class="sxs-lookup"><span data-stu-id="dcee4-103">Create a purchase order from a sales order</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="dcee4-104">Proceduren visar hur du kan skapa en inköpsorder som baseras på en försäljningsorder.</span><span class="sxs-lookup"><span data-stu-id="dcee4-104">This procedure shows you how to create a purchase order that is based on a sales order.</span></span> <span data-ttu-id="dcee4-105">Produktens kvantiteter på inköpsordern är angivna för att uppfylla kravet från den ursprungliga försäljningsordern.</span><span class="sxs-lookup"><span data-stu-id="dcee4-105">The product's quantities on the purchase order are then designated to fulfill the demand of the originating sales order.</span></span> <span data-ttu-id="dcee4-106">Att uppfylla säljkravet så här är ett alternativ till den mer omfattande och optimerade planeringsmetoden för fördelningsbehov.</span><span class="sxs-lookup"><span data-stu-id="dcee4-106">Fulfilling sales demand this way is an alternative to a more comprehensive and optimized method of Distribution Requirements Planning.</span></span> <span data-ttu-id="dcee4-107">Du kan köra den här proceduren i demonstrationsföretaget USMF eller på dina egna data.</span><span class="sxs-lookup"><span data-stu-id="dcee4-107">You can run this procedure in demo data company USMF or on your own data.</span></span>
 

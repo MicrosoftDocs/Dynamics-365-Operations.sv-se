@@ -20,17 +20,16 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: cb8e8193b3312a63042a44cb082a33a196cbc1be
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: f83c495ba7f8ebcdf282d0fe1aa73ad878acac2c
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="costing-versions"></a><span data-ttu-id="42ae4-104">Kostnadsredovisningsversioner</span><span class="sxs-lookup"><span data-stu-id="42ae4-104">Costing versions</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="42ae4-105">Det här avsnittet innehåller information om kostnadsversioner, hur du underhåller dem och datatyperna som du kan inkludera i dem.</span><span class="sxs-lookup"><span data-stu-id="42ae4-105">This article provides information about costing versions, how to maintain them, and the types of data that you can include in them.</span></span> <span data-ttu-id="42ae4-106">Det primära syftet med en kostnadsredovisningsversion är att den innehåller kostnadsposter om artiklar, kostnadskategorier och beräkningsformler för indirekta kostnader.</span><span class="sxs-lookup"><span data-stu-id="42ae4-106">The primary purpose of a costing version is to contain cost records about items, cost categories, and calculation formulas for indirect costs.</span></span>
 

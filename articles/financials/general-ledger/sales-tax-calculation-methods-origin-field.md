@@ -19,19 +19,18 @@ ms.author: vstehman
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b36b290026f384109ccd710a9979892dd5268307
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 4c1e1a588e07b9f60880dcf1c34139c5c1ceba35
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="sales-tax-calculation-methods-in-the-origin-field"></a><span data-ttu-id="0a1ee-103">Beräkningsmetod för moms i fältet Ursprung</span><span class="sxs-lookup"><span data-stu-id="0a1ee-103">Sales tax calculation methods in the Origin field</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
-
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
 <span data-ttu-id="0a1ee-104">Den här artikeln beskriver alternativen i fältet Ursprung på momskodsidan och hur moms beräknas utifrån det markerade alternativet för en momskod.</span><span class="sxs-lookup"><span data-stu-id="0a1ee-104">This article explains the options in the Origin field on the sales tax codes page and how sales tax is calculated based on the selected option for a sales tax code.</span></span>
 
@@ -53,11 +52,12 @@ ms.lasthandoff: 11/03/2017
 -   <span data-ttu-id="0a1ee-122">MOMS = 25 % med beräkningsmetoden Procent av bruttobelopp.</span><span class="sxs-lookup"><span data-stu-id="0a1ee-122">SALESTAX = 25%, using the Percentage of gross amount calculation method</span></span>
 
 <span data-ttu-id="0a1ee-123">Om nettobeloppet är 10,00, är AVGIFT 1 1,00 (10,00 x 10 %) och AVGIFT 2 = 2,00 (10,00 x 20 %).</span><span class="sxs-lookup"><span data-stu-id="0a1ee-123">If the net amount is 10.00, then DUTY 1 is 1.00 (10.00 x 10%) and DUTY 2 = 2.00 (10.00 x 20%).</span></span> <span data-ttu-id="0a1ee-124">Beloppen blir som följer: Bruttobelopp: Nettobelopp + AVGIFT 1 belopp + 2 AVGIFT belopp (10,00 + 1,00 + 2,00) = 13,00 MOMS = 13,00 × 25 % = 3,25 totala AVGIFTER och MOMS: 1,00 + 2,00 + 3,25 = 6,25 totalbelopp: 10,00 + 6,25 = 16,25</span><span class="sxs-lookup"><span data-stu-id="0a1ee-124">The amounts would be as follows: Gross amount: Net amount + DUTY 1 amount + DUTY 2 amount (10.00 + 1.00 + 2.00) = 13.00 SALESTAX = 13.00 x 25% = 3.25 Total DUTIES and SALESTAX: 1.00 + 2.00 + 3.25 = 6.25 Total amount: 10.00 + 6.25 = 16.25</span></span>
+
 | <span data-ttu-id="0a1ee-125">**Obs!**</span><span class="sxs-lookup"><span data-stu-id="0a1ee-125">**Note**</span></span>                                                                                                                                                                                                                 |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span data-ttu-id="0a1ee-126">Endast en momskod med Ursprung = procentandel av bruttobeloppet kan användas för en transaktion.</span><span class="sxs-lookup"><span data-stu-id="0a1ee-126">Only one tax code with Origin = Percentage of gross amount can be used for a transaction.</span></span> <span data-ttu-id="0a1ee-127">Om mer än en sådan momskod bestäms av en transaktion, visas ett fel att moms inte kan beräknas.</span><span class="sxs-lookup"><span data-stu-id="0a1ee-127">If more than one such tax code is determined for a transaction an error will be displayed that sales tax cannot be calculated.</span></span> |
 
- 
+
 <a name="percentage-of-sales-tax"></a><span data-ttu-id="0a1ee-128">Procent av moms</span><span class="sxs-lookup"><span data-stu-id="0a1ee-128">Percentage of sales tax</span></span>
 -----------------------
 
@@ -70,6 +70,7 @@ ms.lasthandoff: 11/03/2017
 -   <span data-ttu-id="0a1ee-136">MOMS = 25 % med metoden Procent av bruttobelopp.</span><span class="sxs-lookup"><span data-stu-id="0a1ee-136">SALESTAX = 25%, using the Percentage of gross amount method</span></span>
 
 <span data-ttu-id="0a1ee-137">Nettobelopp: 10,00 AVGIFT 1: 10,00 x 10 % = 1,00 AVGIFT 2: 1,00 x 20 % = 0,20 Bruttobelopp: 10,00 + 1,00 + 0,20 = 11,20 MOMS: 11,20 x 25 % = 2,80 Totala AVGIFTER och MOMS: 1,00 + 0,20 + 2,80 = 4,00 Totalt belopp: 10,00 + 4,00 = 14,00</span><span class="sxs-lookup"><span data-stu-id="0a1ee-137">Net amount: 10.00 DUTY 1: 10.00 x 10% = 1.00 DUTY 2: 1.00 x 20% = 0.20 Gross amount: 10.00 + 1.00 + 0.20 = 11.20 SALESTAX: 11.20 x 25% = 2.80 Total DUTIES and SALESTAX: 1.00 + 0.20 + 2.80 = 4.00 Total amount: 10.00 + 4.00 = 14.00</span></span>
+
 | <span data-ttu-id="0a1ee-138">**Obs!**</span><span class="sxs-lookup"><span data-stu-id="0a1ee-138">**Note**</span></span>                                                                                                                                                                                                                    |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span data-ttu-id="0a1ee-139">Moms på flera nivåer är inte möjlig.</span><span class="sxs-lookup"><span data-stu-id="0a1ee-139">Multilevel tax on tax calculations are not possible.</span></span> <span data-ttu-id="0a1ee-140">Moms kan inte beräknas baserat på moms som redan har beräknats på en annan moms.</span><span class="sxs-lookup"><span data-stu-id="0a1ee-140">A tax cannot be calculated based on a tax which already is calculated based on another tax.</span></span> <span data-ttu-id="0a1ee-141">Moms på flera nivåer på momskoder kan beräknas för en transaktion.</span><span class="sxs-lookup"><span data-stu-id="0a1ee-141">Multiple single level tax on tax codes can be calculated on a transaction.</span></span> |
@@ -79,6 +80,7 @@ ms.lasthandoff: 11/03/2017
 ### <a name="example"></a><span data-ttu-id="0a1ee-146">Exempel</span><span class="sxs-lookup"><span data-stu-id="0a1ee-146">Example</span></span>
 
 <span data-ttu-id="0a1ee-147">Momskoden är inställt som: 1,20 Kronor per enhet = rutan på en försäljningsfakturarad 25 rutor av en artikel är såld Moms beräknas som 25 x 1,20 = 30,00</span><span class="sxs-lookup"><span data-stu-id="0a1ee-147">Sales tax code is set up as: USD 1.20 per unit = box On a sales invoice line 25 boxes of an item are sold Sales tax is calculated as 25 x 1.20 = 30.00</span></span>
+
 | <span data-ttu-id="0a1ee-148">**Obs!**</span><span class="sxs-lookup"><span data-stu-id="0a1ee-148">**Note**</span></span>                                                                                                                                                                                                 |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span data-ttu-id="0a1ee-149">Om transaktionen anges i en annan enhet än de enheter som anges på momskoden, konverteras den automatiskt baserat på enhetskonverteringarna som ställs in i enhetskonverteringsidan.</span><span class="sxs-lookup"><span data-stu-id="0a1ee-149">If the transaction is entered in different unit than the unit specified on the sales tax code, it is converted automatically based on the unit conversions that are set up in the Unit conversions page.</span></span> |
@@ -115,7 +117,7 @@ ms.lasthandoff: 11/03/2017
 <span data-ttu-id="0a1ee-171">Den beräknade procentandelen av nettobeloppet hanterar momsberäkningen annorlunda beroende på inställningen av parametern Moms ingår i beloppen för dokumentet eller journalen.</span><span class="sxs-lookup"><span data-stu-id="0a1ee-171">The Calculated percentage of net amount handles tax calculation differently depending on the setting of the Amounts include sales tax parameter for the document or journal.</span></span>
 ### <a name="example-1"></a><span data-ttu-id="0a1ee-172">Exempel 1</span><span class="sxs-lookup"><span data-stu-id="0a1ee-172">Example 1</span></span>
 
-<span data-ttu-id="0a1ee-173">Dokumentet/journalen ställs in på Moms ingår i beloppen = Ja, Transaktionens radbelopp: 10,00 Momssats 25 % Moms: Transaktionens radbelopp * (10,00 × 25 %) = 2,50 basbelopp för moms (ursprungsbelopp): Transaktionens radbelopp - moms (10,00 - 2,50) = 7,50</span><span class="sxs-lookup"><span data-stu-id="0a1ee-173">Document / journal is set to Amounts include sales tax = Yes Transaction line amount: 10.00 Tax rate: 25% Sales tax: Transaction line amount x tax rate (10.00 x 25%) = 2.50 Tax base amount (origin amount): Transaction line amount - Sales tax (10.00 - 2.50) = 7.50</span></span>
+<span data-ttu-id="0a1ee-173">Dokumentet/journalen ställs in på Moms ingår i beloppen = Ja, Transaktionens radbelopp: 10,00 Momssats 25 % Moms: Transaktionens radbelopp \* (10,00 × 25 %) = 2,50 basbelopp för moms (ursprungsbelopp): Transaktionens radbelopp - moms (10,00 - 2,50) = 7,50</span><span class="sxs-lookup"><span data-stu-id="0a1ee-173">Document / journal is set to Amounts include sales tax = Yes Transaction line amount: 10.00 Tax rate: 25% Sales tax: Transaction line amount x tax rate (10.00 x 25%) = 2.50 Tax base amount (origin amount): Transaction line amount - Sales tax (10.00 - 2.50) = 7.50</span></span>
 
 ### <a name="example-2"></a><span data-ttu-id="0a1ee-174">Exempel 2</span><span class="sxs-lookup"><span data-stu-id="0a1ee-174">Example 2</span></span>
 

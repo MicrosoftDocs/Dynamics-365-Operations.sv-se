@@ -16,15 +16,15 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 6b61495342b18d6dbadb36d8ca146f5a68ba9f6c
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: dd3f9bda36b9aa5e019c597fe6b439332559ccaf
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="set-up-company-bank-accounts-for-iso20022-direct-debits"></a><span data-ttu-id="7fca6-103">Ställ in företagets bankkonton för ISO20022-autogiron</span><span class="sxs-lookup"><span data-stu-id="7fca6-103">Set up company bank accounts for ISO20022 direct debits</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="7fca6-104">I den här uppgiften går du igenom hur du ställer in den företagsspecifika bankkontoinformation som krävs för att generera kund-betalningsfiler.</span><span class="sxs-lookup"><span data-stu-id="7fca6-104">This task walks you through setting up the company specific bank account information that is required for generating customer payment files.</span></span> <span data-ttu-id="7fca6-105">I den här proceduren används formatet ISO 20022 för autogiro som exempel.</span><span class="sxs-lookup"><span data-stu-id="7fca6-105">This procedure uses the ISO 20022 direct debit format as an example.</span></span> <span data-ttu-id="7fca6-106">Andra format kanske kräver ytterligare inställningsinformation som exempelvis företagets ID eller sorteringskod.</span><span class="sxs-lookup"><span data-stu-id="7fca6-106">Other formats might require additional setup information like the Company ID or the Sort code.</span></span>
 

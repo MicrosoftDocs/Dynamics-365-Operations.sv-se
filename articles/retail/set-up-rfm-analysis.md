@@ -20,17 +20,16 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: d9b080ff46a0fbc73ed4f8fa3f03d71e9d758cc2
-ms.openlocfilehash: e7c815cc5b660b505cb06560efc3e7501645c350
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: ec804559d6514b4443bd295ec9d9b8b192f45ec0
 ms.contentlocale: sv-se
-ms.lasthandoff: 01/18/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="set-up-rfm-analysis"></a><span data-ttu-id="39a60-103">Ställa in RFM-analys</span><span class="sxs-lookup"><span data-stu-id="39a60-103">Set up RFM analysis</span></span>
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 <span data-ttu-id="39a60-104">Det här avsnittet innehåller information om hur du ställer in recency, frekvens och monetär analys (RFM) för dina kunder.</span><span class="sxs-lookup"><span data-stu-id="39a60-104">This topic explains how to set up a Recency, Frequency, and Monetary (RFM) analysis of your customers.</span></span>
 
@@ -60,25 +59,25 @@ ms.lasthandoff: 01/18/2018
     - <span data-ttu-id="39a60-126">Om varje del av RFM-poängen måste innehålla ett likvärdigt antal kunder markerar du kryssrutan **Jämn distribution**.</span><span class="sxs-lookup"><span data-stu-id="39a60-126">If each section of the RFM score must contain an equal count of customers, select the **Even distribution** check box.</span></span> 
     - <span data-ttu-id="39a60-127">Markera kryssrutan **Lägg till poäng** om du vill lägga samman de tre poängen.</span><span class="sxs-lookup"><span data-stu-id="39a60-127">Select the **Add scores** check box to aggregate the three scores.</span></span> <span data-ttu-id="39a60-128">Detta ger till exempel en kund en RFM-poäng på 13 istället för 535.</span><span class="sxs-lookup"><span data-stu-id="39a60-128">For example, this would give a customer an RFM score of 13 instead of 535.</span></span> 
     - <span data-ttu-id="39a60-129">Markera kryssrutan **Spara historik** om du vill att systemet ska spara statistiska uppgifter för kunder, så att dessa kan användas för att beräkna RFM-poäng.</span><span class="sxs-lookup"><span data-stu-id="39a60-129">Select the **Save history** check box to require the system to save the statistical data for customers so that the data can be used to calculate the RFM score.</span></span>
-  
+
 5.  <span data-ttu-id="39a60-130">Gör följande på snabbfliken **Aktualitet**:</span><span class="sxs-lookup"><span data-stu-id="39a60-130">On the **Recency** FastTab, do the following:</span></span> 
     - <span data-ttu-id="39a60-131">Ange antalet avdelningar, eller grupper, som ska användas för att beräkna poängen recency för kunder i fältet **Indelningar**.</span><span class="sxs-lookup"><span data-stu-id="39a60-131">In the **Divisions** field, enter the number of divisions, or groups, which will be used to calculate the recency score for customers.</span></span> <span data-ttu-id="39a60-132">Om du till exempel har 100 kunder innebär en indelning i 5 att det finns 20 kunder för varje poäng.</span><span class="sxs-lookup"><span data-stu-id="39a60-132">For example, if you have 100 customers, a division of 5 means that there are 20 customers for each score.</span></span> <span data-ttu-id="39a60-133">20 kunder som har gjort inköp helt nyligen har aktualitetspoäng 5.</span><span class="sxs-lookup"><span data-stu-id="39a60-133">The 20 customers who have made purchases most recently have a recency score of 5.</span></span> <span data-ttu-id="39a60-134">Nästa 20 kunder har en aktualitetspoäng på 4 osv.</span><span class="sxs-lookup"><span data-stu-id="39a60-134">The next 20 customers have a recency score of 4, and so on.</span></span> <span data-ttu-id="39a60-135">Om du har 50 kunder, har 10 kunder en recencyställning på 5, 10 har en recencyställning på 4, och så vidare.</span><span class="sxs-lookup"><span data-stu-id="39a60-135">If you have 50 customers, 10 customers have a recency score of 5, 10 have a recency score of 4, and so on.</span></span> 
     - <span data-ttu-id="39a60-136">I fältet **Prioritet** väljer du hur stor viktning parametern recency ska ha i förhållande till de andra parametrarna när RFM-poängen beräknas för en kund.</span><span class="sxs-lookup"><span data-stu-id="39a60-136">In the **Priority** field, select how much weight to give the recency parameter in relation to the other parameters when the RFM score is calculated for a customer.</span></span> <span data-ttu-id="39a60-137">Du kan till exempel lägga mer värde på recencypoängen än på den monetära poängen.</span><span class="sxs-lookup"><span data-stu-id="39a60-137">For example, you might place more value on the recency score than the monetary score.</span></span> 
     - <span data-ttu-id="39a60-138">I fältet **Multiplikator** anger du det värde som aktualitetspoängen ska multipliceras med.</span><span class="sxs-lookup"><span data-stu-id="39a60-138">In the **Multiplier** field, enter the value by which to multiply the recency score.</span></span> <span data-ttu-id="39a60-139">Om du inte anger något värde kommer poängen inte att multipliceras.</span><span class="sxs-lookup"><span data-stu-id="39a60-139">If you do not enter a value, the score will not be multiplied.</span></span> 
     - <span data-ttu-id="39a60-140">Välj den tidsperiod för vilken aktualitetspoängen beräknas i fältet **Period**.</span><span class="sxs-lookup"><span data-stu-id="39a60-140">In the **Period** field, select the time period by which the recency score is calculated.</span></span> <span data-ttu-id="39a60-141">Till exempel per vecka eller per månad.</span><span class="sxs-lookup"><span data-stu-id="39a60-141">For example, by week or by month.</span></span>
-   
+
 6.  <span data-ttu-id="39a60-142">Gör följande på snabbfliken **Frekvens**:</span><span class="sxs-lookup"><span data-stu-id="39a60-142">On the **Frequency** FastTab, do the following:</span></span> 
     - <span data-ttu-id="39a60-143">Ange antalet avdelningar, eller grupper, som ska användas för att beräkna frekvenspoängen för kunder i fältet **Indelningar**.</span><span class="sxs-lookup"><span data-stu-id="39a60-143">In the **Divisions** field, enter the number of divisions, or groups, which will be used to calculate the frequency score for customers.</span></span> 
     - <span data-ttu-id="39a60-144">I fältet **Prioritet** väljer du hur stor viktning frekvensparametern ska ha i förhållande till de andra när RFM-poängen beräknas för en kund.</span><span class="sxs-lookup"><span data-stu-id="39a60-144">In the **Priority** field, select how much weight to give the frequency parameter in relation to the others when the RFM score is calculated for a customer.</span></span> 
     - <span data-ttu-id="39a60-145">I fältet **Multiplikator** anger du det värde som frekvenspoängen ska multipliceras med.</span><span class="sxs-lookup"><span data-stu-id="39a60-145">In the **Multiplier** field, enter the value by which to multiply the frequency score.</span></span> <span data-ttu-id="39a60-146">Om du inte anger något värde kommer poängen inte att multipliceras.</span><span class="sxs-lookup"><span data-stu-id="39a60-146">If you do not enter a value, the score will not be multiplied.</span></span>
-   
+
 7.  <span data-ttu-id="39a60-147">Gör följande på snabbfliken **Monetär**:</span><span class="sxs-lookup"><span data-stu-id="39a60-147">On the **Monetary** FastTab, do the following:</span></span> 
     - <span data-ttu-id="39a60-148">Ange antalet avdelningar, eller grupper, som ska användas för att beräkna monetär poäng för kunder i fältet **Indelningar**.</span><span class="sxs-lookup"><span data-stu-id="39a60-148">In the **Divisions** field, enter the number of divisions, or groups, which will be used to calculate the monetary score for customers.</span></span> 
     - <span data-ttu-id="39a60-149">I fältet **Prioritet** väljer du hur stor viktning monetärparametern ska ha i förhållande till de andra när RFM-poängen beräknas för en kund.</span><span class="sxs-lookup"><span data-stu-id="39a60-149">In the **Priority** field, select how much weight to give the monetary parameter in relation to the others when the RFM score is calculated for a customer.</span></span> 
     - <span data-ttu-id="39a60-150">I fältet **Multiplikator** anger du det värde som monetära poäng ska multipliceras med.</span><span class="sxs-lookup"><span data-stu-id="39a60-150">In the **Multiplier** field, enter the value by which to multiply the monetary score.</span></span> <span data-ttu-id="39a60-151">Om du inte anger något värde kommer poängen inte att multipliceras.</span><span class="sxs-lookup"><span data-stu-id="39a60-151">If you do not enter a value, the score will not be multiplied.</span></span> 
     - <span data-ttu-id="39a60-152">I fältet **Brutto/netto** anger du om kundens monetära poäng ska beräknas genom att använda brutto- eller nettofakturabeloppet.</span><span class="sxs-lookup"><span data-stu-id="39a60-152">In the **Gross/net** field, select whether the customer’s monetary score should be calculated by using the gross or net invoice amount.</span></span> 
     - <span data-ttu-id="39a60-153">Om en kunds returbelopp ska dras från kundens totala fakturaberäkning markerar du kryssrutan **Subtrahera returer**.</span><span class="sxs-lookup"><span data-stu-id="39a60-153">If a customer’s return amounts should be subtracted from the customer’s total invoice calculation, select the **Subtract returns** check box.</span></span> 
- 
+
 ## <a name="view-a-customers-rfm-score"></a><span data-ttu-id="39a60-154">Visa en kunds RFM-poäng</span><span class="sxs-lookup"><span data-stu-id="39a60-154">View a customer’s RFM score</span></span>
 <span data-ttu-id="39a60-155">Använd den här proceduren när du vill visa en kunds RFM-poäng.</span><span class="sxs-lookup"><span data-stu-id="39a60-155">Use this procedure to view a customer’s RFM score.</span></span> 
 

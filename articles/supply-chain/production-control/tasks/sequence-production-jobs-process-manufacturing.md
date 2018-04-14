@@ -16,15 +16,15 @@ ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 87e35de4744a0728cd41192b4afc750b575a1324
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 0cf90ff7be59150e20d61a831e57062f9d9996d5
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="sequence-production-jobs-for-process-manufacturing"></a><span data-ttu-id="bfc5f-103">Ordningsföljd för produktionsjobb för processtillverkning</span><span class="sxs-lookup"><span data-stu-id="bfc5f-103">Sequence production jobs for process manufacturing</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="bfc5f-104">Den här proceduren använder målarfärgprodukter som ett exempel för att visa hur du ordnar planerade order enligt prioritet för färg och paketstorlek.</span><span class="sxs-lookup"><span data-stu-id="bfc5f-104">This procedure uses paint products as an example to show how to sequence planned orders according to the priority of color and package size.</span></span> <span data-ttu-id="bfc5f-105">Det demonstrationsdataföretag som används för att skapa den här proceduren är USPI.</span><span class="sxs-lookup"><span data-stu-id="bfc5f-105">The demo data company used to create this procedure is USPI.</span></span> <span data-ttu-id="bfc5f-106">Den här proceduren är avsedd för produktionsplaneraren.</span><span class="sxs-lookup"><span data-stu-id="bfc5f-106">This procedure is intended for the production planner.</span></span>
 

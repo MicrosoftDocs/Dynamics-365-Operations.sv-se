@@ -18,16 +18,16 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: 48fbbf8f16facd2c364f34c4d6dee765da2b5594
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 47587664c0c3ed553c724920168782a64fdaf9de
 ms.contentlocale: sv-se
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="mixed-license-plate-receiving"></a><span data-ttu-id="5f4d1-103">Inleverans av blandad registreringsskylt</span><span class="sxs-lookup"><span data-stu-id="5f4d1-103">Mixed license plate receiving</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="5f4d1-104">Mottagning av blandade registreringsskyltar låter dig skapa en registreringsskylt som består av flera artiklar innan du registrerar och skapar arbetsuppgifter med plats.</span><span class="sxs-lookup"><span data-stu-id="5f4d1-104">Mixed license plate receiving allows you to build a license plate consisting of multiple items before you register and create put-away work.</span></span> 
 

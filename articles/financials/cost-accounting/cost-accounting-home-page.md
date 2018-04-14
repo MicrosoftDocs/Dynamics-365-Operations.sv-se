@@ -19,16 +19,16 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 6f9c338216fe13a020c92f05ae113676c4fb09e7
-ms.openlocfilehash: 2b150a3d847e81bf758cf91f011583242c85f97d
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 547163da868cce1b81a70075554ef519201b18bc
 ms.contentlocale: sv-se
-ms.lasthandoff: 01/16/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="cost-accounting-home-page"></a><span data-ttu-id="d0489-103">Startsida för Kostnadsredovisning</span><span class="sxs-lookup"><span data-stu-id="d0489-103">Cost accounting home page</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## <a name="learning-map"></a><span data-ttu-id="d0489-104">Inlärningskarta</span><span class="sxs-lookup"><span data-stu-id="d0489-104">Learning map</span></span> 
 
@@ -37,6 +37,7 @@ ms.lasthandoff: 01/16/2018
 <span data-ttu-id="d0489-107">[![Inlärningskarta för kostnadsredovisning](./media/cost-accounting-map.png)](./media/cost-accounting-map.png)</span><span class="sxs-lookup"><span data-stu-id="d0489-107">[![Learning map for cost accounting](./media/cost-accounting-map.png)](./media/cost-accounting-map.png)</span></span>
 
 ## <a name="quick-links"></a><span data-ttu-id="d0489-108">Snabblänkar</span><span class="sxs-lookup"><span data-stu-id="d0489-108">Quick links</span></span>
+
 |      |   |
 |------|---|
 |  <span data-ttu-id="d0489-109">[Konfigurera grundläggande enheter (e-utbildning)](https://mbspartner.microsoft.com/Home) (kräver CustomerSource-konto)</span><span class="sxs-lookup"><span data-stu-id="d0489-109">[Configure base entities (eLearning)](https://mbspartner.microsoft.com/Home) (requires CustomerSource account)</span></span>  |[<span data-ttu-id="d0489-110">Skapa dimensioner</span><span class="sxs-lookup"><span data-stu-id="d0489-110">Create dimensions</span></span>](cost-elements.md)  |

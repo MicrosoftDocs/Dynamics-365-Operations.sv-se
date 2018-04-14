@@ -20,17 +20,16 @@ ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b64d9e53736fd3b81ee997ed28ccfa62ed7e9ce6
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: b001d1010fe526458f2e0fce712a2b737e8b53bb
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="manage-standard-cost-updates"></a><span data-ttu-id="fc476-103">Hantera standardkostnadsuppdateringar</span><span class="sxs-lookup"><span data-stu-id="fc476-103">Manage standard cost updates</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="fc476-104">Uppdateringar för standardkostnadsdata kan hanteras genom att använda två olika sätt - med en version eller två versioner.</span><span class="sxs-lookup"><span data-stu-id="fc476-104">Updates to standard cost data can be managed by using two different approaches - the one-version approach or the two-version approach.</span></span> 
 

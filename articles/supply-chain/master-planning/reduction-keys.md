@@ -20,17 +20,16 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 506ca3aac7ad271ca7472f3b74627e94d97a74ee
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 6ca65d3c12abd64bef23954b45f73af1bf62f9f3
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="reduction-keys"></a><span data-ttu-id="8f730-105">Reduceringsnycklar</span><span class="sxs-lookup"><span data-stu-id="8f730-105">Reduction keys</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="8f730-106">Den här artikeln ger exempel som visar hur du ställer in en reduceringsnyckel.</span><span class="sxs-lookup"><span data-stu-id="8f730-106">This articles provides examples that show how to set up a reduction key.</span></span> <span data-ttu-id="8f730-107">Den innehåller information om de olika reduceringsnyckelinställningarna och resultaten av varje nyckel.</span><span class="sxs-lookup"><span data-stu-id="8f730-107">It includes information about the various reduction key settings and the results of each.</span></span> <span data-ttu-id="8f730-108">Du kan använda en reduceringsnyckel om du vill ange hur du ska minska prognosbehoven.</span><span class="sxs-lookup"><span data-stu-id="8f730-108">You can use a reduction key to define how to reduce forecast requirements.</span></span>
 
@@ -39,17 +38,19 @@ ms.lasthandoff: 11/03/2017
 
 <span data-ttu-id="8f730-110">Detta exempel visar hur en reduceringsnyckel reducerar behoven av efterfrågeprognos enligt procentsatserna och de perioder som definieras av reduceringsnyckeln.</span><span class="sxs-lookup"><span data-stu-id="8f730-110">This example shows how a reduction key reduces demand forecast requirements according to the percentages and periods that are defined by the reduction key.</span></span>
 
-1.  <span data-ttu-id="8f730-111">Ange följande rader på sidan **Reduceringsnycklar**.</span><span class="sxs-lookup"><span data-stu-id="8f730-111">On the **Reduction keys** page, set up the following lines.</span></span>
-    | <span data-ttu-id="8f730-112">Växel</span><span class="sxs-lookup"><span data-stu-id="8f730-112">Change</span></span> | <span data-ttu-id="8f730-113">Enhet</span><span class="sxs-lookup"><span data-stu-id="8f730-113">Unit</span></span>  | <span data-ttu-id="8f730-114">Procent</span><span class="sxs-lookup"><span data-stu-id="8f730-114">Percent</span></span> |
-    |--------|-------|---------|
-    | <span data-ttu-id="8f730-115">1</span><span class="sxs-lookup"><span data-stu-id="8f730-115">1</span></span>      | <span data-ttu-id="8f730-116">Månad</span><span class="sxs-lookup"><span data-stu-id="8f730-116">Month</span></span> | <span data-ttu-id="8f730-117">100</span><span class="sxs-lookup"><span data-stu-id="8f730-117">100</span></span>     |
-    | <span data-ttu-id="8f730-118">2</span><span class="sxs-lookup"><span data-stu-id="8f730-118">2</span></span>      | <span data-ttu-id="8f730-119">Månad</span><span class="sxs-lookup"><span data-stu-id="8f730-119">Month</span></span> | <span data-ttu-id="8f730-120">75</span><span class="sxs-lookup"><span data-stu-id="8f730-120">75</span></span>      |
-    | <span data-ttu-id="8f730-121">3</span><span class="sxs-lookup"><span data-stu-id="8f730-121">3</span></span>      | <span data-ttu-id="8f730-122">Månad</span><span class="sxs-lookup"><span data-stu-id="8f730-122">Month</span></span> | <span data-ttu-id="8f730-123">50</span><span class="sxs-lookup"><span data-stu-id="8f730-123">50</span></span>      |
-    | <span data-ttu-id="8f730-124">4</span><span class="sxs-lookup"><span data-stu-id="8f730-124">4</span></span>      | <span data-ttu-id="8f730-125">Månad</span><span class="sxs-lookup"><span data-stu-id="8f730-125">Month</span></span> | <span data-ttu-id="8f730-126">25</span><span class="sxs-lookup"><span data-stu-id="8f730-126">25</span></span>      |
+1. <span data-ttu-id="8f730-111">Ange följande rader på sidan **Reduceringsnycklar**.</span><span class="sxs-lookup"><span data-stu-id="8f730-111">On the **Reduction keys** page, set up the following lines.</span></span>
 
-2.  <span data-ttu-id="8f730-127">Länka reduceringsnyckeln till artikelns täckningsgrupp.</span><span class="sxs-lookup"><span data-stu-id="8f730-127">Link the reduction key to the item's coverage group.</span></span>
-3.  <span data-ttu-id="8f730-128">På sidan **Huvudplaner** i fältet **Reduceringsprincip** väljer du **Procent - reduceringsnyckel**.</span><span class="sxs-lookup"><span data-stu-id="8f730-128">On the **Master plans** page, in the **Reduction principle** field, select **Percent - reduction key**.</span></span>
-4.  <span data-ttu-id="8f730-129">Skapa en efterfrågeprognos på 1 000 enheter per månad.</span><span class="sxs-lookup"><span data-stu-id="8f730-129">Create a demand forecast of 1,000 pieces per month.</span></span>
+   | <span data-ttu-id="8f730-112">Växel</span><span class="sxs-lookup"><span data-stu-id="8f730-112">Change</span></span> | <span data-ttu-id="8f730-113">Enhet</span><span class="sxs-lookup"><span data-stu-id="8f730-113">Unit</span></span>  | <span data-ttu-id="8f730-114">Procent</span><span class="sxs-lookup"><span data-stu-id="8f730-114">Percent</span></span> |
+   |--------|-------|---------|
+   |   <span data-ttu-id="8f730-115">1</span><span class="sxs-lookup"><span data-stu-id="8f730-115">1</span></span>    | <span data-ttu-id="8f730-116">Månad</span><span class="sxs-lookup"><span data-stu-id="8f730-116">Month</span></span> |   <span data-ttu-id="8f730-117">100</span><span class="sxs-lookup"><span data-stu-id="8f730-117">100</span></span>   |
+   |   <span data-ttu-id="8f730-118">2</span><span class="sxs-lookup"><span data-stu-id="8f730-118">2</span></span>    | <span data-ttu-id="8f730-119">Månad</span><span class="sxs-lookup"><span data-stu-id="8f730-119">Month</span></span> |   <span data-ttu-id="8f730-120">75</span><span class="sxs-lookup"><span data-stu-id="8f730-120">75</span></span>    |
+   |   <span data-ttu-id="8f730-121">3</span><span class="sxs-lookup"><span data-stu-id="8f730-121">3</span></span>    | <span data-ttu-id="8f730-122">Månad</span><span class="sxs-lookup"><span data-stu-id="8f730-122">Month</span></span> |   <span data-ttu-id="8f730-123">50</span><span class="sxs-lookup"><span data-stu-id="8f730-123">50</span></span>    |
+   |   <span data-ttu-id="8f730-124">4</span><span class="sxs-lookup"><span data-stu-id="8f730-124">4</span></span>    | <span data-ttu-id="8f730-125">Månad</span><span class="sxs-lookup"><span data-stu-id="8f730-125">Month</span></span> |   <span data-ttu-id="8f730-126">25</span><span class="sxs-lookup"><span data-stu-id="8f730-126">25</span></span>    |
+
+
+2. <span data-ttu-id="8f730-127">Länka reduceringsnyckeln till artikelns täckningsgrupp.</span><span class="sxs-lookup"><span data-stu-id="8f730-127">Link the reduction key to the item's coverage group.</span></span>
+3. <span data-ttu-id="8f730-128">På sidan **Huvudplaner** i fältet **Reduceringsprincip** väljer du **Procent - reduceringsnyckel**.</span><span class="sxs-lookup"><span data-stu-id="8f730-128">On the **Master plans** page, in the **Reduction principle** field, select **Percent - reduction key**.</span></span>
+4. <span data-ttu-id="8f730-129">Skapa en efterfrågeprognos på 1 000 enheter per månad.</span><span class="sxs-lookup"><span data-stu-id="8f730-129">Create a demand forecast of 1,000 pieces per month.</span></span>
 
 <span data-ttu-id="8f730-130">Om du kör prognosplanering den 1 januari förbrukas kraven på efterfrågeprognos enligt de procentsatser som du ställer in på sidan **Reduceringsnycklar**.</span><span class="sxs-lookup"><span data-stu-id="8f730-130">If you run forecast scheduling on January 1, the demand forecast requirements are consumed according to the percentages that you set up on the **Reduction keys** page.</span></span> <span data-ttu-id="8f730-131">Följande behovskvantiteter överförs till huvudplanen.</span><span class="sxs-lookup"><span data-stu-id="8f730-131">The following requirement quantities are transferred to the master plan.</span></span>
 
@@ -88,20 +89,21 @@ ms.lasthandoff: 11/03/2017
 ## <a name="example-3-transactions--dynamic-period-forecast-reduction-principle"></a><span data-ttu-id="8f730-171">Exempel 3: Transaktioner - dynamisk period för prognosreduceringsprincip</span><span class="sxs-lookup"><span data-stu-id="8f730-171">Example 3: Transactions  dynamic period forecast reduction principle</span></span>
 <span data-ttu-id="8f730-172">I de flesta fall ställs systemen in så att transaktioner minskar efterfrågeprognosen inom specifika detaljprognosperioder: veckor, månader och så vidare.</span><span class="sxs-lookup"><span data-stu-id="8f730-172">In most cases, systems are set up so that transactions reduce demand forecast within specific forecast periods: weeks, months, and so on.</span></span> <span data-ttu-id="8f730-173">Dessa perioder definieras i reduceringsnyckeln.</span><span class="sxs-lookup"><span data-stu-id="8f730-173">These periods are defined in the reduction key.</span></span> <span data-ttu-id="8f730-174">Men tiden mellan två efterfrågeprognosrader kan också *antyda* en period.</span><span class="sxs-lookup"><span data-stu-id="8f730-174">However, the time between two demand forecast lines can also *imply* a period.</span></span>
 
-1.  <span data-ttu-id="8f730-175">Skapa en efterfrågeprognos för följande datum och kvantiteter.</span><span class="sxs-lookup"><span data-stu-id="8f730-175">Create a demand forecast for the following dates and quantities.</span></span>
-    | <span data-ttu-id="8f730-176">Datum</span><span class="sxs-lookup"><span data-stu-id="8f730-176">Date</span></span>       | <span data-ttu-id="8f730-177">Efterfrågeprognos</span><span class="sxs-lookup"><span data-stu-id="8f730-177">Demand forecast</span></span> |
-    |------------|-----------------|
-    | <span data-ttu-id="8f730-178">1 januari</span><span class="sxs-lookup"><span data-stu-id="8f730-178">January 1</span></span>  | <span data-ttu-id="8f730-179">1 000</span><span class="sxs-lookup"><span data-stu-id="8f730-179">1,000</span></span>           |
-    | <span data-ttu-id="8f730-180">5 januari</span><span class="sxs-lookup"><span data-stu-id="8f730-180">January 5</span></span>  | <span data-ttu-id="8f730-181">500</span><span class="sxs-lookup"><span data-stu-id="8f730-181">500</span></span>             |
-    | <span data-ttu-id="8f730-182">12 januari</span><span class="sxs-lookup"><span data-stu-id="8f730-182">January 12</span></span> | <span data-ttu-id="8f730-183">1 000</span><span class="sxs-lookup"><span data-stu-id="8f730-183">1,000</span></span>           |
+1. <span data-ttu-id="8f730-175">Skapa en efterfrågeprognos för följande datum och kvantiteter.</span><span class="sxs-lookup"><span data-stu-id="8f730-175">Create a demand forecast for the following dates and quantities.</span></span>
 
-    <span data-ttu-id="8f730-184">I denna prognos finns det inte en tydlig period mellan prognosdata: mellan de första och andra data finns det endast en tidsperiod på 4 dagar, och mellan de andra och tredje data finns det endast en tidsperiod på 1 dag.</span><span class="sxs-lookup"><span data-stu-id="8f730-184">In this forecast, there isn't a clear period between the forecast dates: between the first and second dates there is a four-day span, and between the second and third dates there is a seven-day span.</span></span> <span data-ttu-id="8f730-185">Dessa olika tidsperioder är de dynamiska perioderna.</span><span class="sxs-lookup"><span data-stu-id="8f730-185">These various spans are the dynamic periods.</span></span>
-2.  <span data-ttu-id="8f730-186">Skapa försäljningsorderrader enligt följande.</span><span class="sxs-lookup"><span data-stu-id="8f730-186">Create sales order lines as follows.</span></span>
-    | <span data-ttu-id="8f730-187">Datum</span><span class="sxs-lookup"><span data-stu-id="8f730-187">Date</span></span>                             | <span data-ttu-id="8f730-188">Försäljningsorderns kvantitet</span><span class="sxs-lookup"><span data-stu-id="8f730-188">Sales order quantity</span></span> |
-    |----------------------------------|----------------------|
-    | <span data-ttu-id="8f730-189">15 december föregående år</span><span class="sxs-lookup"><span data-stu-id="8f730-189">December 15 in the previous year</span></span> | <span data-ttu-id="8f730-190">500</span><span class="sxs-lookup"><span data-stu-id="8f730-190">500</span></span>                  |
-    | <span data-ttu-id="8f730-191">3 januari</span><span class="sxs-lookup"><span data-stu-id="8f730-191">January 3</span></span>                        | <span data-ttu-id="8f730-192">100</span><span class="sxs-lookup"><span data-stu-id="8f730-192">100</span></span>                  |
-    | <span data-ttu-id="8f730-193">10 januari</span><span class="sxs-lookup"><span data-stu-id="8f730-193">January 10</span></span>                       | <span data-ttu-id="8f730-194">200</span><span class="sxs-lookup"><span data-stu-id="8f730-194">200</span></span>                  |
+   | <span data-ttu-id="8f730-176">Datum</span><span class="sxs-lookup"><span data-stu-id="8f730-176">Date</span></span>       | <span data-ttu-id="8f730-177">Efterfrågeprognos</span><span class="sxs-lookup"><span data-stu-id="8f730-177">Demand forecast</span></span> |
+   |------------|-----------------|
+   | <span data-ttu-id="8f730-178">1 januari</span><span class="sxs-lookup"><span data-stu-id="8f730-178">January 1</span></span>  | <span data-ttu-id="8f730-179">1 000</span><span class="sxs-lookup"><span data-stu-id="8f730-179">1,000</span></span>           |
+   | <span data-ttu-id="8f730-180">5 januari</span><span class="sxs-lookup"><span data-stu-id="8f730-180">January 5</span></span>  | <span data-ttu-id="8f730-181">500</span><span class="sxs-lookup"><span data-stu-id="8f730-181">500</span></span>             |
+   | <span data-ttu-id="8f730-182">12 januari</span><span class="sxs-lookup"><span data-stu-id="8f730-182">January 12</span></span> | <span data-ttu-id="8f730-183">1 000</span><span class="sxs-lookup"><span data-stu-id="8f730-183">1,000</span></span>           |
+
+   <span data-ttu-id="8f730-184">I denna prognos finns det inte en tydlig period mellan prognosdata: mellan de första och andra data finns det endast en tidsperiod på 4 dagar, och mellan de andra och tredje data finns det endast en tidsperiod på 1 dag.</span><span class="sxs-lookup"><span data-stu-id="8f730-184">In this forecast, there isn't a clear period between the forecast dates: between the first and second dates there is a four-day span, and between the second and third dates there is a seven-day span.</span></span> <span data-ttu-id="8f730-185">Dessa olika tidsperioder är de dynamiska perioderna.</span><span class="sxs-lookup"><span data-stu-id="8f730-185">These various spans are the dynamic periods.</span></span>
+2. <span data-ttu-id="8f730-186">Skapa försäljningsorderrader enligt följande.</span><span class="sxs-lookup"><span data-stu-id="8f730-186">Create sales order lines as follows.</span></span>
+   | <span data-ttu-id="8f730-187">Datum</span><span class="sxs-lookup"><span data-stu-id="8f730-187">Date</span></span>                             | <span data-ttu-id="8f730-188">Försäljningsorderns kvantitet</span><span class="sxs-lookup"><span data-stu-id="8f730-188">Sales order quantity</span></span> |
+   |----------------------------------|----------------------|
+   | <span data-ttu-id="8f730-189">15 december föregående år</span><span class="sxs-lookup"><span data-stu-id="8f730-189">December 15 in the previous year</span></span> | <span data-ttu-id="8f730-190">500</span><span class="sxs-lookup"><span data-stu-id="8f730-190">500</span></span>                  |
+   | <span data-ttu-id="8f730-191">3 januari</span><span class="sxs-lookup"><span data-stu-id="8f730-191">January 3</span></span>                        | <span data-ttu-id="8f730-192">100</span><span class="sxs-lookup"><span data-stu-id="8f730-192">100</span></span>                  |
+   | <span data-ttu-id="8f730-193">10 januari</span><span class="sxs-lookup"><span data-stu-id="8f730-193">January 10</span></span>                       | <span data-ttu-id="8f730-194">200</span><span class="sxs-lookup"><span data-stu-id="8f730-194">200</span></span>                  |
 
 <span data-ttu-id="8f730-195">Prognosen reduceras enligt följande:</span><span class="sxs-lookup"><span data-stu-id="8f730-195">The forecast will be reduced as follows:</span></span>
 

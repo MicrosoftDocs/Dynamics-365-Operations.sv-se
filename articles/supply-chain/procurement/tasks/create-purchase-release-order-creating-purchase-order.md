@@ -16,15 +16,15 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 194d811da09c746167bd9489ce39ae6a6f810ec0
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: bc133306fccd747f15e6a0c6eb347d04a80df0fb
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="create-a-purchase-release-order-when-creating-the-purchase-order"></a><span data-ttu-id="f490f-103">Skapa en inköpsfrisläppningsorder när inköpsordern skapas</span><span class="sxs-lookup"><span data-stu-id="f490f-103">Create a purchase release order when creating the purchase order</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="f490f-104">I den här proceduren visas hur du använder en inköpsavtal när du skapar en inköpsorder.</span><span class="sxs-lookup"><span data-stu-id="f490f-104">This procedure shows how to use a purchase agreement when you create a purchase order.</span></span> <span data-ttu-id="f490f-105">Inköpsavtalet måste tillämpas när du skapar inköpsordern eftersom det finns allmänna villkor som ska kopieras till inköpsorderhuvudet.</span><span class="sxs-lookup"><span data-stu-id="f490f-105">The purchase agreement has to be applied when you create the purchase order because there are general terms that should be copied to the purchase order header.</span></span> <span data-ttu-id="f490f-106">Uppgiften utförs vanligtvis av en inköpsagent.</span><span class="sxs-lookup"><span data-stu-id="f490f-106">Typically this task would be carried out by a purchasing agent.</span></span> <span data-ttu-id="f490f-107">Som en förutsättning för den här guiden måste du ha ett giltigt inköpsavtal med en produktkvantitetsutfästelse för en leverantör och artiklar.</span><span class="sxs-lookup"><span data-stu-id="f490f-107">As a prerequisite for this guide, you must have an effective purchase agreement with a product quantity commitment for a vendor and items.</span></span> <span data-ttu-id="f490f-108">Samma procedur kan användas om du har en inköpsavtal med andra typer av utfästelser.</span><span class="sxs-lookup"><span data-stu-id="f490f-108">The same procedure can be used if you have a purchase agreement with other types of commitments.</span></span> <span data-ttu-id="f490f-109">Du kan köra den här handboken i demonstrationsdataföretaget USMF.</span><span class="sxs-lookup"><span data-stu-id="f490f-109">You can run this guide in demo data company USMF.</span></span> <span data-ttu-id="f490f-110">Om du använder USMF kan du köra guiden "Skapa ett inköpsavtal" först när du vill ställa in de nödvändiga förutsättningarna för den här guiden.</span><span class="sxs-lookup"><span data-stu-id="f490f-110">If you’re using USMF, you can run the “Create a purchase agreement” guide first to set up the necessary preconditions for this guide.</span></span>
 

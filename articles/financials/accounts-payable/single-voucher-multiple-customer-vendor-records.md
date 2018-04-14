@@ -18,17 +18,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 4c499e31fb42a69dff6ac41faac0c78f7f4d1876
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 7348706006dd5baec207ed8ef1d208b032a8e16a
 ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="single-voucher-with-multiple-customer-or-vendor-records"></a><span data-ttu-id="f4811-104">En verifikation med flera kund- eller leverantörsposter</span><span class="sxs-lookup"><span data-stu-id="f4811-104">Single voucher with multiple customer or vendor records</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="f4811-105">Det här avsnittet innehåller en översikt över vad som händer när du bokför en enskild verifikation med flera kund- eller leverantörsposter.</span><span class="sxs-lookup"><span data-stu-id="f4811-105">This topic provides an overview of what happens when you post a single voucher with multiple customer or vendor records.</span></span> <span data-ttu-id="f4811-106">Den här funktionen ska annulleras i kommande versioner av Microsoft Dynamics 365 for Finance and Operations och därför rekommenderar vi att inte använda denna metod för bokföring på grund av redovisningens inverkan på kvittningsbehandling.</span><span class="sxs-lookup"><span data-stu-id="f4811-106">This functionality will be discontinued in future versions of Microsoft Dynamics 365 for Finance and Operations, as a result, we do not recommend using this method of posting because of the accounting impact to settlement processing.</span></span> 
 
@@ -251,7 +250,7 @@ ms.lasthandoff: 03/26/2018
 | <span data-ttu-id="f4811-616">001</span><span class="sxs-lookup"><span data-stu-id="f4811-616">001</span></span>         | <span data-ttu-id="f4811-617">Kund</span><span class="sxs-lookup"><span data-stu-id="f4811-617">Customer</span></span>         | <span data-ttu-id="f4811-618">US-008</span><span class="sxs-lookup"><span data-stu-id="f4811-618">US-008</span></span>      |                 |           |  <span data-ttu-id="f4811-619">75,00</span><span class="sxs-lookup"><span data-stu-id="f4811-619">75.00</span></span>     | <span data-ttu-id="f4811-620">Redovisning</span><span class="sxs-lookup"><span data-stu-id="f4811-620">Ledger</span></span>          | <span data-ttu-id="f4811-621">999999---</span><span class="sxs-lookup"><span data-stu-id="f4811-621">999999---</span></span>          |
 | <span data-ttu-id="f4811-622">002</span><span class="sxs-lookup"><span data-stu-id="f4811-622">002</span></span>         | <span data-ttu-id="f4811-623">Leverantör</span><span class="sxs-lookup"><span data-stu-id="f4811-623">Vendor</span></span>           | <span data-ttu-id="f4811-624">1001</span><span class="sxs-lookup"><span data-stu-id="f4811-624">1001</span></span>        |                 |  <span data-ttu-id="f4811-625">75,00</span><span class="sxs-lookup"><span data-stu-id="f4811-625">75.00</span></span>    |            | <span data-ttu-id="f4811-626">Redovisning</span><span class="sxs-lookup"><span data-stu-id="f4811-626">Ledger</span></span>          | <span data-ttu-id="f4811-627">999999---</span><span class="sxs-lookup"><span data-stu-id="f4811-627">999999---</span></span>          |
 
- 
+
 
 
 

@@ -20,17 +20,16 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 47fe11168ad2ddea2a7033eda8d8bd8220efea32
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: bcca20889fa0b79a289175ab901167509a908f3f
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="production-setup-requirements"></a><span data-ttu-id="ee105-103">Inställningskrav för produktion</span><span class="sxs-lookup"><span data-stu-id="ee105-103">Production setup requirements</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="ee105-104">Det här avsnittet innehåller information om inställningar som måste göras innan du kan arbeta med produktionsstyrningen.</span><span class="sxs-lookup"><span data-stu-id="ee105-104">This article provides information about setup requirements before you can work with Production control.</span></span> 
 

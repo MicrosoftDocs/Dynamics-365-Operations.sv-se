@@ -17,15 +17,15 @@ ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: 5f8499f53c785170fa1ec13b0a34a306ac6c45b5
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: a33a5c9feec99737804949f29befa03bf56eea24
 ms.contentlocale: sv-se
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="set-up-prerequisites-for-management"></a><span data-ttu-id="09324-103">Ställ in förutsättningar för hantering</span><span class="sxs-lookup"><span data-stu-id="09324-103">Set up prerequisites for management</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="09324-104">Använd den här proceduren för att aktivera avvikelsehanteringsprocesser.</span><span class="sxs-lookup"><span data-stu-id="09324-104">Use this procedure to enable nonconformance management processes.</span></span> <span data-ttu-id="09324-105">En avvikelse beskriver en procedur eller artikel med kvalitetsproblem, där beskrivningen innehåller problemets källa och typ.</span><span class="sxs-lookup"><span data-stu-id="09324-105">A nonconformance describes a procedure or item that has a quality problem, where the descriptive information includes the source and type of problem.</span></span> <span data-ttu-id="09324-106">I proceduren används demonstrationsföretag USMF.</span><span class="sxs-lookup"><span data-stu-id="09324-106">This procedure uses the USMF demo data company.</span></span> <span data-ttu-id="09324-107">Vanligtvis utförs den här proceduren av en Kvalitetschef.</span><span class="sxs-lookup"><span data-stu-id="09324-107">This procedure is typically performed by a quality manager.</span></span>
 

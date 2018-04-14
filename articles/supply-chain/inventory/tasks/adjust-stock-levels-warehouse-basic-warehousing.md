@@ -17,15 +17,15 @@ ms.author: mafoge
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: 0694ba1c69697e745f75db856bdc5b38454a68dc
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 84ed2bfa708664674af781c575cfab35640e7079
 ms.contentlocale: sv-se
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="adjust-stock-levels-in-the-warehouse-basic-warehousing"></a><span data-ttu-id="ad518-103">Justera lagernivåer i lagerstället (grundläggande lagerstyrning)</span><span class="sxs-lookup"><span data-stu-id="ad518-103">Adjust stock levels in the warehouse (basic warehousing)</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="ad518-104">Den här proceduren beskriver hur du kan skapa och bokför en lagerjusteringsjournal för att justera lagernivåer för produkter på lagerstället.</span><span class="sxs-lookup"><span data-stu-id="ad518-104">This procedure walks you through the process of creating and posting an inventory adjustment journal in order to adjust stock levels of products in the warehouse.</span></span> <span data-ttu-id="ad518-105">Du måste ha ett lagerjournalnamn konfigurerat för lagerjusteringarna innan du sätter igång.</span><span class="sxs-lookup"><span data-stu-id="ad518-105">You need to have an inventory journal name set up for inventory adjustments before you start this.</span></span> <span data-ttu-id="ad518-106">Du kan gå igenom den här proceduren i demonstrationsdataföretaget USMF eller använda dina egna data.</span><span class="sxs-lookup"><span data-stu-id="ad518-106">You can walk through this procedure in demo data company USMF, or using your own data.</span></span> <span data-ttu-id="ad518-107">Dessa uppgifter utförs vanligtvis av en lagerarbetare.</span><span class="sxs-lookup"><span data-stu-id="ad518-107">These tasks would normally be carried out by a warehouse employee.</span></span>
 

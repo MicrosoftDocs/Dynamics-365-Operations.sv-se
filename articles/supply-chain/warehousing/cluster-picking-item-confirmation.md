@@ -18,14 +18,14 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a1c4b7623f3409d4474adcd04fb1331b944b9fbb
-ms.openlocfilehash: 530082a23163cf348bcbb133175e3af963d55f2b
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 8f9d287f5d2134d26296c1302a9c18505c426db3
 ms.contentlocale: sv-se
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 # <a name="product-confirmation-for-cluster-picking"></a><span data-ttu-id="deae3-103">Produktbekräftelse för klusterplockning</span><span class="sxs-lookup"><span data-stu-id="deae3-103">Product confirmation for cluster picking</span></span>
 <span data-ttu-id="deae3-104">Klusterplockning kan du plockar artiklar för flera order samtidigt.</span><span class="sxs-lookup"><span data-stu-id="deae3-104">Cluster picking allows you to pick items for several orders at the same time.</span></span> <span data-ttu-id="deae3-105">När klusterplockning används, är objektbekräftelse avgörande för att kontrollera de objekt som läggs till ett kluster.</span><span class="sxs-lookup"><span data-stu-id="deae3-105">When cluster picking is applied, item confirmation is crucial to verify the items that are added to clusters.</span></span> <span data-ttu-id="deae3-106">Du kan kontrollera objekt i klusterplockning vid klusterplockningsprocessen.</span><span class="sxs-lookup"><span data-stu-id="deae3-106">You can verify items in cluster picking during the cluster picking process.</span></span>
@@ -37,7 +37,8 @@ ms.lasthandoff: 02/13/2018
 1.  <span data-ttu-id="deae3-111">På den mobila enhetens menyalternativ öppnar du inställningsformuläret för arbetsbekräftelse: **lagerstyrning** > **lagerstyrning** > **inställningar** > **mobil enhet** > **mobila enhetens menyalternativ**.</span><span class="sxs-lookup"><span data-stu-id="deae3-111">On a mobile device menu item, open the setup form for work confirmation: **Warehouse management** > **Warehouse management** > **Setup** > **Mobile device** > **Mobile device menu items**.</span></span>
 2.  <span data-ttu-id="deae3-112">Från mobila enhetens menyalternativ öppnar du **Inställning av arbetsbekräftelse**.</span><span class="sxs-lookup"><span data-stu-id="deae3-112">From the mobile device menu item, open **Work confirmation setup**.</span></span>
 
-| <span data-ttu-id="deae3-113">Alternativ</span><span class="sxs-lookup"><span data-stu-id="deae3-113">Option</span></span>        | <span data-ttu-id="deae3-114">beskrivning</span><span class="sxs-lookup"><span data-stu-id="deae3-114">Description</span></span>   | 
-| ------------- | ------------- |
-|<span data-ttu-id="deae3-115">Produktbekräftelse</span><span class="sxs-lookup"><span data-stu-id="deae3-115">Product confirmation</span></span> | <span data-ttu-id="deae3-116">Låter dig kontrollera varje lagerenhet från den mobila enheten när du har skannat.</span><span class="sxs-lookup"><span data-stu-id="deae3-116">Allows you to verify each piece of inventory from the mobile device when scanned.</span></span>|
+|        <span data-ttu-id="deae3-113">Alternativ</span><span class="sxs-lookup"><span data-stu-id="deae3-113">Option</span></span>        |                                    <span data-ttu-id="deae3-114">beskrivning</span><span class="sxs-lookup"><span data-stu-id="deae3-114">Description</span></span>                                    |
+|----------------------|-----------------------------------------------------------------------------------|
+| <span data-ttu-id="deae3-115">Produktbekräftelse</span><span class="sxs-lookup"><span data-stu-id="deae3-115">Product confirmation</span></span> | <span data-ttu-id="deae3-116">Låter dig kontrollera varje lagerenhet från den mobila enheten när du har skannat.</span><span class="sxs-lookup"><span data-stu-id="deae3-116">Allows you to verify each piece of inventory from the mobile device when scanned.</span></span> |
+
 

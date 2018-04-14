@@ -18,16 +18,16 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ceea24519d641c676521771cee274feb64ca7783
-ms.openlocfilehash: fedb9162c81b9fa115b63402fe80cd4c857e8deb
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 4f2dc9221b72600c928db9fd306038725c7af305
 ms.contentlocale: sv-se
-ms.lasthandoff: 01/19/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="configure-display-older-batches-within-warehouse-on-a-mobile-device"></a><span data-ttu-id="54487-103">Konfigurera visning av äldre batcher inom lagerstället på en mobil enhet</span><span class="sxs-lookup"><span data-stu-id="54487-103">Configure Display older batches within warehouse on a mobile device</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="54487-104">Konfigurationen **visning av äldre batcher inom lagerstället på en mobil enhet** låter dig visa en lista över platser med batchar som är äldre än den aktuella platsen för arbetsraden.</span><span class="sxs-lookup"><span data-stu-id="54487-104">The **Display older batches within warehouse** configuration lets you display a list of locations with batches older than the current location of the work line.</span></span> <span data-ttu-id="54487-105">Listan över platser som visas innehåller information om äldre batchar på platsen med utgångsdatum och inventering av varje batch.</span><span class="sxs-lookup"><span data-stu-id="54487-105">The list of locations that are displayed includes information about the older batches in the location with the expiration date and the physical inventory of each batch.</span></span> <span data-ttu-id="54487-106">Du kan välja från en ny plats eller att fortsätta plocka från den aktuella platsen.</span><span class="sxs-lookup"><span data-stu-id="54487-106">You can choose to pick from a new location or to continue picking from the current location.</span></span> 
 - <span data-ttu-id="54487-107">Plocka från en ny plats - om du väljer en ny plats att plocka från, kommer den aktuella arbetsraden att uppdateras för att använda den nya platsen och arbete fortsätter som vanligt med den nya platsen.</span><span class="sxs-lookup"><span data-stu-id="54487-107">Pick from a new location - If you select a new location to pick from, the  current work line will be updated to use the new location and work will continue as usual with the new location.</span></span> <span data-ttu-id="54487-108">Det måste ha tillräckligt med tillgänglig kvantitet för hela arbetsraden för att den nya platsen ska gälla.</span><span class="sxs-lookup"><span data-stu-id="54487-108">For the new location to be valid, it must have enough available quantity for the whole work line.</span></span> <span data-ttu-id="54487-109">Om den begärda kvantiteten inte är tillgänglig kommer arbetsraden inte att uppdateras och listan visas.</span><span class="sxs-lookup"><span data-stu-id="54487-109">If the required quantity is not available, the work line will not be updated, and the list will display.</span></span> 

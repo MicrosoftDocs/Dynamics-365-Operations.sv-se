@@ -19,17 +19,16 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 95d5bf26c22238753586cf4a7aaf5c26f061a705
-ms.openlocfilehash: 27fbc54afca384b804f2b0468206242ff89d4031
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: a86709bc222339531a21997510a65c138024256c
 ms.contentlocale: sv-se
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="set-up-training-courses"></a><span data-ttu-id="44cfc-103">Ställa in utbildningskurser</span><span class="sxs-lookup"><span data-stu-id="44cfc-103">Set up training courses</span></span>
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 <span data-ttu-id="44cfc-104">Personalresursadministratörer och chefer kan använda kursfunktionerna för att underhålla information om utbildningen som ges till arbetare.</span><span class="sxs-lookup"><span data-stu-id="44cfc-104">Human resources administrators and managers can use the courses features to maintain information about the training that's offered to workers.</span></span>
 
@@ -81,15 +80,15 @@ ms.lasthandoff: 02/23/2018
 
 ## <a name="course-tasks"></a><span data-ttu-id="44cfc-134">Kursuppgifter</span><span class="sxs-lookup"><span data-stu-id="44cfc-134">Course tasks</span></span>
 <span data-ttu-id="44cfc-135">Du kan utföra följande uppgifter för varje kurs.</span><span class="sxs-lookup"><span data-stu-id="44cfc-135">For each course, you can complete the following tasks.</span></span>
--   <span data-ttu-id="44cfc-136">Registrera deltagare</span><span class="sxs-lookup"><span data-stu-id="44cfc-136">Register participants</span></span>
--   <span data-ttu-id="44cfc-137">Ange en deadline för registreringen</span><span class="sxs-lookup"><span data-stu-id="44cfc-137">Specify a registration deadline</span></span>
--   <span data-ttu-id="44cfc-138">Ange lägsta och högsta antal deltagare</span><span class="sxs-lookup"><span data-stu-id="44cfc-138">Define the minimum and maximum number of participants</span></span>
--   <span data-ttu-id="44cfc-139">Tilldela en plats och ett klassrum för kursen</span><span class="sxs-lookup"><span data-stu-id="44cfc-139">Assign a course location and classroom</span></span>
--   <span data-ttu-id="44cfc-140">Rekommendera hotell för kursdeltagare</span><span class="sxs-lookup"><span data-stu-id="44cfc-140">Recommend hotels to course participants</span></span>
--   <span data-ttu-id="44cfc-141">Skapa en kursbeskrivning som du sedan kan annonsera på Självbetjäning för medarbetare</span><span class="sxs-lookup"><span data-stu-id="44cfc-141">Create a course description, which you can then advertise on Employee self service</span></span>
+- <span data-ttu-id="44cfc-136">Registrera deltagare</span><span class="sxs-lookup"><span data-stu-id="44cfc-136">Register participants</span></span>
+- <span data-ttu-id="44cfc-137">Ange en deadline för registreringen</span><span class="sxs-lookup"><span data-stu-id="44cfc-137">Specify a registration deadline</span></span>
+- <span data-ttu-id="44cfc-138">Ange lägsta och högsta antal deltagare</span><span class="sxs-lookup"><span data-stu-id="44cfc-138">Define the minimum and maximum number of participants</span></span>
+- <span data-ttu-id="44cfc-139">Tilldela en plats och ett klassrum för kursen</span><span class="sxs-lookup"><span data-stu-id="44cfc-139">Assign a course location and classroom</span></span>
+- <span data-ttu-id="44cfc-140">Rekommendera hotell för kursdeltagare</span><span class="sxs-lookup"><span data-stu-id="44cfc-140">Recommend hotels to course participants</span></span>
+- <span data-ttu-id="44cfc-141">Skapa en kursbeskrivning som du sedan kan annonsera på Självbetjäning för medarbetare</span><span class="sxs-lookup"><span data-stu-id="44cfc-141">Create a course description, which you can then advertise on Employee self service</span></span>
 
   ><span data-ttu-id="44cfc-142">**Obs!** Du kan bara ta bort en kurs om ingen har registrerat sig för den.</span><span class="sxs-lookup"><span data-stu-id="44cfc-142">**Note** You can delete a course only if no one has registered for it.</span></span> 
-    
+
 ## <a name="course-statuses"></a><span data-ttu-id="44cfc-143">Kursstatus</span><span class="sxs-lookup"><span data-stu-id="44cfc-143">Course statuses</span></span>
 <span data-ttu-id="44cfc-144">Följande tabell listar möjliga kursstatusvärden och de åtgärder som du kan utföra när kursen har en viss status.</span><span class="sxs-lookup"><span data-stu-id="44cfc-144">The following table lists the possible course statuses and the actions that you can complete when the course has a specific status.</span></span>
 

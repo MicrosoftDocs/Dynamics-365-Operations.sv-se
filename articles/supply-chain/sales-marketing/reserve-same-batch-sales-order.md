@@ -20,17 +20,16 @@ ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 577204b49355a470769237eb46ad74e7f319a55e
-ms.openlocfilehash: e51e7e26a1834e67a8e14ca978a85423a70e2ddb
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 59d5beb92ed762f57b930c44894f40549024fcc5
 ms.contentlocale: sv-se
-ms.lasthandoff: 01/15/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="reserve-the-same-batch-for-a-sales-order"></a><span data-ttu-id="2d715-103">Reservera samma batch för en försäljningsorder</span><span class="sxs-lookup"><span data-stu-id="2d715-103">Reserve the same batch for a sales order</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="2d715-104">Det här avsnittet innehåller en beskrivning av hur du ställer in en produkt om du vill tillåta lagerreservation mot en enda lagerbatch.</span><span class="sxs-lookup"><span data-stu-id="2d715-104">This article explains how to set up a product to allow reservation of inventory against a single batch of inventory.</span></span>
 

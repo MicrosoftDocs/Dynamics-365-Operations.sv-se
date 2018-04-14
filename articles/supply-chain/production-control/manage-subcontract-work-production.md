@@ -20,17 +20,16 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 26feea4d86cf8b976f41342c8543594593c4b135
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 67c0ebb47cc24b2d47add00eac07101abf596266
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="manage-subcontracting-work-in-production"></a><span data-ttu-id="1ffee-104">Hantera legotillverkningsarbete i produktionen</span><span class="sxs-lookup"><span data-stu-id="1ffee-104">Manage subcontracting work in production</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="1ffee-105">Det här avsnittet beskriver hur verksamhet på entreprenad (legotillverkning) hanteras i Microsoft Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="1ffee-105">This topic explains how subcontracted operations are managed in Microsoft Dynamics 365 for Finance and Operations.</span></span> <span data-ttu-id="1ffee-106">Med andra ord förklaras hur produktionsåtgärder som tilldelats en resurs hanteras av en leverantör.</span><span class="sxs-lookup"><span data-stu-id="1ffee-106">In other words, it explains how production operations that are allocated to a resource are managed by a vendor.</span></span>
 

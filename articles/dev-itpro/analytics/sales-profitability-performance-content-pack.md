@@ -19,16 +19,16 @@ ms.author: omulvad
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: 6084ddb1c5b8fae9111ea1459f6e94b14930bfc5
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 9ec77585e259bc759b422b97f4f3b10271a02b02
 ms.contentlocale: sv-se
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="sales-and-profitability-performance-power-bi-content"></a><span data-ttu-id="cd23d-104">Innehållspaket för försäljnings- och lönsamhetsprestanda för Power BI</span><span class="sxs-lookup"><span data-stu-id="cd23d-104">Sales and profitability performance Power BI content</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="cd23d-105">Det här avsnittet beskriver vad som ingår i Microsoft Power BI-innehållet **Försäljnings- och lönsamhetsresultat**.</span><span class="sxs-lookup"><span data-stu-id="cd23d-105">This topic describes what is included in the **Sales and profitability performance** Microsoft Power BI content.</span></span> <span data-ttu-id="cd23d-106">Det förklarar hur du öppnar Power BI-rapporter och ger information datamodellen och de enheter som används för att skapa innehållet.</span><span class="sxs-lookup"><span data-stu-id="cd23d-106">It explains how to access the Power BI reports, and provides information about the data model and entities that are used to build the content.</span></span>
 
@@ -64,7 +64,7 @@ ms.lasthandoff: 01/17/2018
 | <span data-ttu-id="cd23d-140">Intäkt per produkt</span><span class="sxs-lookup"><span data-stu-id="cd23d-140">Revenue by product</span></span>     | <span data-ttu-id="cd23d-141">Intäkt- och bruttomarginal per försäljningskategori</span><span class="sxs-lookup"><span data-stu-id="cd23d-141">Revenue & gross profit by sales category</span></span>   | <span data-ttu-id="cd23d-142">Totalt \# produkter</span><span class="sxs-lookup"><span data-stu-id="cd23d-142">Total \# of products</span></span>                                    |
 |                        | <span data-ttu-id="cd23d-143">Bästa 10 produkterna per intäkt</span><span class="sxs-lookup"><span data-stu-id="cd23d-143">Top 10 products by revenue</span></span>                 | <span data-ttu-id="cd23d-144">Totalt antal aktiva produkter och procentuell andel av total</span><span class="sxs-lookup"><span data-stu-id="cd23d-144">Total number of active products and percentage of total</span></span> |
 |                        | <span data-ttu-id="cd23d-145">Total intäkt per försäljningskategori</span><span class="sxs-lookup"><span data-stu-id="cd23d-145">Total revenue by sales category</span></span>            | <span data-ttu-id="cd23d-146">Antal produkter som redovisas för 80 % av intäkter</span><span class="sxs-lookup"><span data-stu-id="cd23d-146">Number of products accounting for 80% revenue</span></span>           |
-| <span data-ttu-id="cd23d-147">Intäkter per period\\*</span><span class="sxs-lookup"><span data-stu-id="cd23d-147">Revenue by period\\*</span></span>    | <span data-ttu-id="cd23d-148">Intäkter per månad</span><span class="sxs-lookup"><span data-stu-id="cd23d-148">Revenue by month</span></span>                           | <span data-ttu-id="cd23d-149">YOY vinstökning</span><span class="sxs-lookup"><span data-stu-id="cd23d-149">YOY revenue growth</span></span>                                      |
+| <span data-ttu-id="cd23d-147">Intäkter per period\*</span><span class="sxs-lookup"><span data-stu-id="cd23d-147">Revenue by period\*</span></span>    | <span data-ttu-id="cd23d-148">Intäkter per månad</span><span class="sxs-lookup"><span data-stu-id="cd23d-148">Revenue by month</span></span>                           | <span data-ttu-id="cd23d-149">YOY vinstökning</span><span class="sxs-lookup"><span data-stu-id="cd23d-149">YOY revenue growth</span></span>                                      |
 |                        | <span data-ttu-id="cd23d-150">Ränteinkomstvariation, YOY</span><span class="sxs-lookup"><span data-stu-id="cd23d-150">Trailing revenue variance, YOY</span></span>             | <span data-ttu-id="cd23d-151">YOY vinstökning %</span><span class="sxs-lookup"><span data-stu-id="cd23d-151">YOY revenue growth %</span></span>                                    |
 |                        | <span data-ttu-id="cd23d-152">Total försäljningsavvikelse per kundregion</span><span class="sxs-lookup"><span data-stu-id="cd23d-152">Total sales variance by customer region</span></span>    |                                                         |
 | <span data-ttu-id="cd23d-153">Intäkt per plats</span><span class="sxs-lookup"><span data-stu-id="cd23d-153">Revenue by location</span></span>    | <span data-ttu-id="cd23d-154">Försäljningsintäkter per ort</span><span class="sxs-lookup"><span data-stu-id="cd23d-154">Sales revenue by city</span></span>                      |                                                         |
@@ -75,7 +75,7 @@ ms.lasthandoff: 01/17/2018
 |                        | <span data-ttu-id="cd23d-162">Bästa 15 kunderna per bruttomarginal</span><span class="sxs-lookup"><span data-stu-id="cd23d-162">Top 15 customers by gross margin</span></span>           |                                                         |
 |                        | <span data-ttu-id="cd23d-163">Bruttomarginal per månad, YOY</span><span class="sxs-lookup"><span data-stu-id="cd23d-163">Gross profit by month, YOY</span></span>                 |                                                         |
 
-<span data-ttu-id="cd23d-164">\\*Intäkter detta och förra året och tillväxt per försäljningskategori.</span><span class="sxs-lookup"><span data-stu-id="cd23d-164">\\* Revenue this and last year, and growth by sales category.</span></span>
+<span data-ttu-id="cd23d-164">\*Intäkter detta och förra året och tillväxt per försäljningskategori.</span><span class="sxs-lookup"><span data-stu-id="cd23d-164">\* Revenue this and last year, and growth by sales category.</span></span>
 
 
 ## <a name="understanding-the-data-model-and-entities"></a><span data-ttu-id="cd23d-165">Förstå datamodellen och enheterna</span><span class="sxs-lookup"><span data-stu-id="cd23d-165">Understanding the data model and entities</span></span>

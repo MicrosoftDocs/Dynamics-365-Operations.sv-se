@@ -20,17 +20,16 @@ ms.author: mguada
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4f3d75411e8c99365f1aba8214c78e93b4741871
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 7900f7404152dd982b825d25ec6c557c74dc5cd3
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="total-cost-allocation-method"></a><span data-ttu-id="794d8-104">Metod för total kostnadsallokering</span><span class="sxs-lookup"><span data-stu-id="794d8-104">Total cost allocation method</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="794d8-105">Den här ämnet ger riktlinjer för att använda total kostnadsallokering (TCA).</span><span class="sxs-lookup"><span data-stu-id="794d8-105">This topic provides guidelines for using total cost allocation (TCA).</span></span> <span data-ttu-id="794d8-106">TCA är en metod för att beräkna kostnaden mellan den huvudsakliga receptartikeln för en batchorder och samprodukterna som definieras för receptet.</span><span class="sxs-lookup"><span data-stu-id="794d8-106">TCA is a method of calculating the cost between the main formula item for a batch order and the co-products that are defined for the formula.</span></span>
 

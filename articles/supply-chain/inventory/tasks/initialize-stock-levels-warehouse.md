@@ -17,15 +17,15 @@ ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: 5baea2a0f194012406d378effbc0ae5d4062fd65
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 4ad9ab54fbe84c8ec47aa2bebcca44656124a73e
 ms.contentlocale: sv-se
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="initialize-stock-levels-in-the-warehouse"></a><span data-ttu-id="c0039-103">Initiera lagernivåer i lagerstället</span><span class="sxs-lookup"><span data-stu-id="c0039-103">Initialize stock levels in the warehouse</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="c0039-104">Den här proceduren visar hur du kan uppdatera lagerbehållningen manuellt genom att använda en journal för lagerrörelse.</span><span class="sxs-lookup"><span data-stu-id="c0039-104">This procedure shows you how to get the on-hand inventory updated manually using an Inventory movement journal.</span></span> <span data-ttu-id="c0039-105">(Det går också att uppdatera lagerbehållningen genom att importera transaktioner i dataenheter.) Du kan köra den här guiden i demonstrationsdataföretaget USMF där alla förutsättningar som journalnamn, artikelinställningar, bokföringsprofiler och konton är tillgängliga.</span><span class="sxs-lookup"><span data-stu-id="c0039-105">(It’s also possible to update on-hand inventory by importing transactions in data entities.) You can run this guide in demo data company USMF where all the prerequisites like journal name, item setup, posting profiles, and accounts are available.</span></span> <span data-ttu-id="c0039-106">Guiden föreslår specifika värden för artikeln och dimensioner som används.</span><span class="sxs-lookup"><span data-stu-id="c0039-106">The guide suggests specific values for the item and dimensions that are used.</span></span> <span data-ttu-id="c0039-107">Om du väljer en annan artikel kan du behöva ange värden för olika dimensioner.</span><span class="sxs-lookup"><span data-stu-id="c0039-107">If you choose a different item, you may need to enter values for different dimensions.</span></span>
 

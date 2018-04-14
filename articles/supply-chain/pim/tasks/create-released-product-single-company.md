@@ -16,15 +16,15 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 042eafc29e377e0ad6fb8dc1499daf8eb105b7ed
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: ced48377f8f6cfdf416bcaf5e2b5e6473998ea91
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="create-a-released-product-for-a-single-company"></a><span data-ttu-id="2ac35-103">Skapa en frisläppt produkt för ett enskilt företag</span><span class="sxs-lookup"><span data-stu-id="2ac35-103">Create a released product for a single company</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="2ac35-104">I den här proceduren beskrivs hur du skapar en enskild frisläppt produkt i sammanhanget för en enskild juridisk enhet.</span><span class="sxs-lookup"><span data-stu-id="2ac35-104">This procedure walks through how to create a single released product in the context of a single legal unit.</span></span> <span data-ttu-id="2ac35-105">När en frisläppt den produkten har skapats, är den endast direkt tillgänglig i den här enheten.</span><span class="sxs-lookup"><span data-stu-id="2ac35-105">After the released product is created,  it's immediately available in this unit only.</span></span> <span data-ttu-id="2ac35-106">Du kan gå igenom den här proceduren i demonstrationsföretaget USMF.</span><span class="sxs-lookup"><span data-stu-id="2ac35-106">You can walk through this procedure in demo data company USMF.</span></span> <span data-ttu-id="2ac35-107">Denna uppgift utförs vanligtvis av en produktdesigner.</span><span class="sxs-lookup"><span data-stu-id="2ac35-107">This task is usually performed by a product designer.</span></span>
 

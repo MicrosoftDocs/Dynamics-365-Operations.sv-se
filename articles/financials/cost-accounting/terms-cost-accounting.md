@@ -20,17 +20,16 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 1ec2f4a407c705fb37681f5593d0f7ea31f4cf0f
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 3c493ab60952e60e6816ebdc3decb1ebe670806f
 ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="cost-accounting-terminology"></a><span data-ttu-id="f159e-103">Kostnadsredovisningsterminologi</span><span class="sxs-lookup"><span data-stu-id="f159e-103">Cost accounting terminology</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="f159e-104">Detta ämne definierar de grundläggande villkoren som används i kostnadsredovisning.</span><span class="sxs-lookup"><span data-stu-id="f159e-104">This topic defines the key terms that are used in Cost accounting.</span></span>
 
@@ -150,14 +149,14 @@ ms.lasthandoff: 03/26/2018
 |  + |  <span data-ttu-id="f159e-241">Tillägg</span><span class="sxs-lookup"><span data-stu-id="f159e-241">Addition</span></span> |
 |  <span data-ttu-id="f159e-242">–</span><span class="sxs-lookup"><span data-stu-id="f159e-242">–</span></span> |  <span data-ttu-id="f159e-243">Subtraktion</span><span class="sxs-lookup"><span data-stu-id="f159e-243">Subtraction</span></span> |
 | *  | <span data-ttu-id="f159e-244">Multiplikation</span><span class="sxs-lookup"><span data-stu-id="f159e-244">Multiplication</span></span>  |
-    
+
 <span data-ttu-id="f159e-245">Traditionella IF-utlåtanden stöds inte.</span><span class="sxs-lookup"><span data-stu-id="f159e-245">Traditional IF statements are not supported.</span></span> <span data-ttu-id="f159e-246">Du kan emellertid skapa rapporter och kontrollera om de är sanna.</span><span class="sxs-lookup"><span data-stu-id="f159e-246">However, you can create statements and validate whether they are true.</span></span>
 
 |  <span data-ttu-id="f159e-247">**Utdragsvalidering**</span><span class="sxs-lookup"><span data-stu-id="f159e-247">**Statement  Validation**</span></span> | <span data-ttu-id="f159e-248">**Resultat**</span><span class="sxs-lookup"><span data-stu-id="f159e-248">**Result**</span></span>  |
 |---|---|
 |  <span data-ttu-id="f159e-249">a > b</span><span class="sxs-lookup"><span data-stu-id="f159e-249">a > b</span></span>| <span data-ttu-id="f159e-250">Sant</span><span class="sxs-lookup"><span data-stu-id="f159e-250">True</span></span>  |
 |  <span data-ttu-id="f159e-251">a > b</span><span class="sxs-lookup"><span data-stu-id="f159e-251">a > b</span></span> |  <span data-ttu-id="f159e-252">Falskt</span><span class="sxs-lookup"><span data-stu-id="f159e-252">False</span></span> |
-    
+
 <span data-ttu-id="f159e-253">**Indirekt kostnad**</span><span class="sxs-lookup"><span data-stu-id="f159e-253">**Overhead cost**</span></span>
 
 <span data-ttu-id="f159e-254">Indirekta kostnader refererar till de pågående utgifterna för att driva en verksamhet.</span><span class="sxs-lookup"><span data-stu-id="f159e-254">Overhead costs refer to the ongoing expenses of operating a business.</span></span> <span data-ttu-id="f159e-255">De är kostnader som inte kan länkas direkt till specifika företagsaktiviteter.</span><span class="sxs-lookup"><span data-stu-id="f159e-255">They are the costs that can’t be linked directly to specific business activities.</span></span> <span data-ttu-id="f159e-256">Här följer några exempel på indirekta kostnader:</span><span class="sxs-lookup"><span data-stu-id="f159e-256">Here are some examples of overhead costs:</span></span>

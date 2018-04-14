@@ -19,17 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 64f0a9a44b97a9980f8d1b76ff158f1ac9cbc114
-ms.openlocfilehash: 7563c749d0d2b5747f1b7886def82ba7191499b1
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 43c8d0db28fb0a845c4520b279f16d7c20c6da88
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/15/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="configure-accounts-receivables-and-credit-and-collections"></a><span data-ttu-id="3cbdd-103">Konfigurera Kundreskontra och Kredit och inkasso</span><span class="sxs-lookup"><span data-stu-id="3cbdd-103">Configure Accounts receivables and Credit and collections</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="3cbdd-104">Konfigurera Kundreskontra och Kredit och inkasso för att följa fakturor och inkommande betalningar från kunder.</span><span class="sxs-lookup"><span data-stu-id="3cbdd-104">Configure Accounts receivable and Credit and Collections to track invoices and incoming payments from customers.</span></span>
 
@@ -107,7 +106,7 @@ ms.lasthandoff: 11/15/2017
 |                                                      | <span data-ttu-id="3cbdd-251">Information om NSF.</span><span class="sxs-lookup"><span data-stu-id="3cbdd-251">NSF information.</span></span>                     | <span data-ttu-id="3cbdd-252">Ställ in information om NSF för bankkontot som ska användas när en betalning markeras som en NSF-transaktion på sidan Inkasso.</span><span class="sxs-lookup"><span data-stu-id="3cbdd-252">Set up NSF information on the bank account that will be used when a payment is marked as an NSF transaction on the Collections page.</span></span>                                                                                                                                              |
 |                                                      | <span data-ttu-id="3cbdd-253">Information om säljare</span><span class="sxs-lookup"><span data-stu-id="3cbdd-253">Salesperson information</span></span>              | <span data-ttu-id="3cbdd-254">Ställ in e-postadress för säljare.</span><span class="sxs-lookup"><span data-stu-id="3cbdd-254">Set up the email address for salespersons.</span></span> <span data-ttu-id="3cbdd-255">Dessa adresser visas på sidan Inkasso och används för att skicka e-post till en säljare från den sidan.</span><span class="sxs-lookup"><span data-stu-id="3cbdd-255">These addresses will appear on the Collections page and you can use them to send email to a salesperson from that page.</span></span>                                                                                                                |
 
- 
+
 <span data-ttu-id="3cbdd-256">Mer information finns i [Kredit och inkasso i kundreskontra](collections-credit-accounts-receivable.md).</span><span class="sxs-lookup"><span data-stu-id="3cbdd-256">For more information, see [Credit and collections in Accounts receivable](collections-credit-accounts-receivable.md).</span></span>
 
 

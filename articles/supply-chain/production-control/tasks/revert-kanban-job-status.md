@@ -17,15 +17,15 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 55d359232da5f3087b1e6baed182a20da09aeff7
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 2bcc83c0a422ed1480f2ed41460fd710bc51ff3d
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="revert-kanban-job-status"></a><span data-ttu-id="25039-103">Återställ kanban-jobbstatus</span><span class="sxs-lookup"><span data-stu-id="25039-103">Revert kanban job status</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="25039-104">Den här proceduren är avsedd för att återställa en felaktig kanban-jobbstatus.</span><span class="sxs-lookup"><span data-stu-id="25039-104">This procedure focuses on reverting an incorrect kanban job status.</span></span> <span data-ttu-id="25039-105">Detta är användbart om maskinoperatören uppdaterar fel jobb eller ställer in fel status av misstag.</span><span class="sxs-lookup"><span data-stu-id="25039-105">This is useful in case the machine operator updates the wrong job, or sets the wrong status by mistake.</span></span> <span data-ttu-id="25039-106">I den här proceduren registreras ett kanban-jobb som förberett av misstag och statusvärdet återställas.</span><span class="sxs-lookup"><span data-stu-id="25039-106">In this procedure, a kanban job is registered as prepared by mistake, and the status is reverted.</span></span> <span data-ttu-id="25039-107">Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.</span><span class="sxs-lookup"><span data-stu-id="25039-107">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="25039-108">Den här proceduren är avsedd för den arbetsansvarige eller maskinoperatören som arbetar i ett lean manufacturing-företag.</span><span class="sxs-lookup"><span data-stu-id="25039-108">This procedure is intended for the shop supervisor or machine operator working in a lean manufacturing company.</span></span>
 

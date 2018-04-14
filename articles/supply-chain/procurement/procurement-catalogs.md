@@ -19,17 +19,16 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f51fb41e19a47a9db02166de91b9e027154d6a7d
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 8dc038a4e0a3fd1b37c05dd02f594a8ac9796e7f
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="procurement-catalogs"></a><span data-ttu-id="fae4b-104">Anskaffningskataloger</span><span class="sxs-lookup"><span data-stu-id="fae4b-104">Procurement catalogs</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="fae4b-105">Den här artikeln beskriver, på en hög nivå, hur professionella inköpare kan ställa in och underhålla anskaffningskataloger.</span><span class="sxs-lookup"><span data-stu-id="fae4b-105">This article describes, at a high level, how purchasing professionals can set up and maintain procurement catalogs.</span></span> <span data-ttu-id="fae4b-106">Anskaffningskataloger definierar de artiklar och tjänster som anställda i företaget kan beställa för intern användning.</span><span class="sxs-lookup"><span data-stu-id="fae4b-106">Procurement catalogs define the items and services that company employees can order for internal use.</span></span>
 

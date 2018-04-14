@@ -20,17 +20,16 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b131cdfa2f0e3b6a8f116464323d49eaa4584634
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 46178d9da5464d8cb74b1d52142d6ad08a293349
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="packing-materials-and-fees"></a><span data-ttu-id="4cfd0-105">Förpackningsmaterial och avgifter</span><span class="sxs-lookup"><span data-stu-id="4cfd0-105">Packing materials and fees</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="4cfd0-106">Avgifter för förpackningsmaterial betalas i vissa intervaller till ett återvinningsföretag.</span><span class="sxs-lookup"><span data-stu-id="4cfd0-106">Packing material fees are paid to a recycling company at certain intervals.</span></span> <span data-ttu-id="4cfd0-107">Ett belopp per viktenhet måste betalas för varje material som en förpackningsenhet består av.</span><span class="sxs-lookup"><span data-stu-id="4cfd0-107">An amount is paid, per unit of weight, for each material that a packing unit consists of.</span></span> <span data-ttu-id="4cfd0-108">Avgifter för förpackningsmaterial beräknas och rapporteras, men inga redovisningstransaktioner bokförs eftersom avgifterna inte räknas som skatter som måste betalas till en myndighet.</span><span class="sxs-lookup"><span data-stu-id="4cfd0-108">Packing material fees are calculated and reported, but no ledger transactions are posted because the fees are not regarded as taxes to be paid to an authority.</span></span>
 
@@ -63,7 +62,7 @@ ms.lasthandoff: 11/03/2017
 
 ## <a name="print-packaging-material-weights-on-invoices"></a><span data-ttu-id="4cfd0-147">Skriv ut vikter på förpackningsmaterial på fakturor</span><span class="sxs-lookup"><span data-stu-id="4cfd0-147">Print packaging material weights on invoices</span></span>
 <span data-ttu-id="4cfd0-148">Du kan skriva ut vikter för förpackningsmaterial på fakturan och ange vem som betalar förpackningsmaterialavgifterna.</span><span class="sxs-lookup"><span data-stu-id="4cfd0-148">You can print the packaging material weights on the invoice, and indicate who pays the packaging material fees.</span></span> <span data-ttu-id="4cfd0-149">Vikterna sammanställs efter förpackningsmaterialkod.</span><span class="sxs-lookup"><span data-stu-id="4cfd0-149">The weights are summarized by packaging code.</span></span>
- 
+
 
 
 

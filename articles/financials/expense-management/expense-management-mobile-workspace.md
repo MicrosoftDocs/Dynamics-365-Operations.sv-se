@@ -18,16 +18,16 @@ ms.author: knelson
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 6f6add07a2426b1846cbeb9dee149a63f66f779e
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 93e45257dec65dee0d20f4a6b14a7cc682fa0ab5
 ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="expense-management-mobile-workspace"></a><span data-ttu-id="2c9c7-105">Mobil arbetsyta för utläggshantering</span><span class="sxs-lookup"><span data-stu-id="2c9c7-105">Expense management mobile workspace</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="2c9c7-106">Det här avsnittet innehåller information om mobil arbetsyta för **Utläggshantering**.</span><span class="sxs-lookup"><span data-stu-id="2c9c7-106">This topic provides information about the **Expense management** mobile workspace.</span></span> <span data-ttu-id="2c9c7-107">Den här arbetsytan låter användarna hämta och skicka ett kvitto så att de kan bifogas till en utgiftsrapport senare.</span><span class="sxs-lookup"><span data-stu-id="2c9c7-107">This workspace lets users capture and upload a receipt, so that they can attach it to an expense report later.</span></span> <span data-ttu-id="2c9c7-108">Användare kan snabbt skapa en utgiftsrad med en kopplad inleverans och skapa och hantera sina utgiftsrapporter.</span><span class="sxs-lookup"><span data-stu-id="2c9c7-108">Users can also quickly create an expense line by using an attached receipt, and create and manage their expense reports.</span></span> <span data-ttu-id="2c9c7-109">Godkännare kan dessutom använda den mobila arbetsytan **utgiftshantering** för att visa kostnadsrapporter som har tilldelats till dem och antingen godkänna eller avvisa de utgiftsrapporterna.</span><span class="sxs-lookup"><span data-stu-id="2c9c7-109">Additionally, approvers can use the **Expense management** mobile workspace to view expense reports that are assigned to them, and either approve or reject those expense reports.</span></span>
 

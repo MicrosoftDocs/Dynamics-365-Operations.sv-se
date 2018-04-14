@@ -16,15 +16,15 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: e27dc0623f27ee21408d14aefb93ca13c40be672
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: beed4c261b887ce545d431bbd9a413bd1745bc0c
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="hire-a-candidate-through-recruiting"></a><span data-ttu-id="6b3b4-103">Anställa en kandidat genom att rekrytera</span><span class="sxs-lookup"><span data-stu-id="6b3b4-103">Hire a candidate through recruiting</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="6b3b4-104">I den här proceduren aktiveras en rekryterare när du anställer en sökande som har skickat in en ansökning via ett visst rekryteringsprojekt.</span><span class="sxs-lookup"><span data-stu-id="6b3b4-104">This procedure enables a recruiter to hire an applicant who submitted an application through a specific recruitment project.</span></span> <span data-ttu-id="6b3b4-105">När du anställer en sökande via ett rekryteringsprojekt skapas en ny arbetarpost och sökandens post har statusen Anställd.</span><span class="sxs-lookup"><span data-stu-id="6b3b4-105">When you hire an applicant through a recruiting project, a new worker record will be created and the applicant’s record will have a status of Employed.</span></span> <span data-ttu-id="6b3b4-106">Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.</span><span class="sxs-lookup"><span data-stu-id="6b3b4-106">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="6b3b4-107">Gå till Personal > Rekrytering > Ansökningar > Ansökningar för att slutföra proceduren</span><span class="sxs-lookup"><span data-stu-id="6b3b4-107">To complete this procedure, navigate to Human resources > Recruitment > Applications >Applications</span></span> 
 

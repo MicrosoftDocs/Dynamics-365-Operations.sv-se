@@ -20,17 +20,16 @@ ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 99030966587a2784f61cecbfc7f9985f75f6d779
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 0feb75e728517d24602025e3ceb12cb6ab1840f4
 ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="lean-manufacturing-overview"></a><span data-ttu-id="650ea-103">Lean manufacturing – översikt</span><span class="sxs-lookup"><span data-stu-id="650ea-103">Lean manufacturing overview</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="650ea-104">Denna artikel ger en översikt och beskrivning av lean manufacturing-funktioner i Microsoft Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="650ea-104">This article provides an overview and description of the lean manufacturing features in Microsoft Dynamics 365 for Finance and Operations.</span></span>
 
@@ -40,6 +39,7 @@ ms.lasthandoff: 03/26/2018
 -   <span data-ttu-id="650ea-109">Övervaka och underhåll kanban-jobb.</span><span class="sxs-lookup"><span data-stu-id="650ea-109">Monitor and maintain kanban jobs.</span></span>
 
 <span data-ttu-id="650ea-110">Lean manufacturing-arkitekturen i Finance and Operations består av produktionsflöden, aktiviteter och kanban-regler.</span><span class="sxs-lookup"><span data-stu-id="650ea-110">The lean manufacturing architecture in Finance and Operations consists of production flows, activities, and kanban rules.</span></span> <span data-ttu-id="650ea-111">Dessa strukturer är helt integrerade med processerna i Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="650ea-111">These structures are fully integrated with Finance and Operations processes.</span></span> <span data-ttu-id="650ea-112">Du kan använda lean manufacturing i en tillverkningsmiljö för blandat läge som kombinerar olika leverans-, produktion- och sourcing-strategier.</span><span class="sxs-lookup"><span data-stu-id="650ea-112">You can use lean manufacturing in a mixed-mode manufacturing environment that combines various supply, production, and sourcing strategies.</span></span> <span data-ttu-id="650ea-113">Dessa strategier inkluderar tillverkningsorder, batchorder för processbranscher, inköpsorder och överföringsorder.</span><span class="sxs-lookup"><span data-stu-id="650ea-113">These strategies include production orders, batch orders for process industries, purchase orders, and transfer orders.</span></span>
+
 | <span data-ttu-id="650ea-114">**Viktigt**</span><span class="sxs-lookup"><span data-stu-id="650ea-114">**Important**</span></span>                                                                                                                                                                                                                                                                |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <span data-ttu-id="650ea-115">Du kan använda Finance and Operations för att stödja implementeringen av lean manufacturing med kanban.</span><span class="sxs-lookup"><span data-stu-id="650ea-115">You can use Finance and Operations to support the implementation of lean manufacturing with kanbans.</span></span> <span data-ttu-id="650ea-116">En lyckad implementering av resurssnåla principer beror dock på vilka interna affärsprocesser du använder, och på själva produktionsvillkoren och produktionsmiljön.</span><span class="sxs-lookup"><span data-stu-id="650ea-116">However, a successful implementation of lean principles depends on the internal business processes that you use, and the actual production conditions and environment.</span></span> |

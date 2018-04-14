@@ -16,15 +16,15 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: abc52192848649672cbcb8c770d74ba2aef139be
-ms.openlocfilehash: fe773bd2375b2dea8e13a57918ad584f83f61073
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 5a3be54d336b5a0e4e85844307c3c7d60c1aef69
 ms.contentlocale: sv-se
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="benefit-eligibility-process"></a><span data-ttu-id="c7939-103">Bearbeta förmånsberättigande</span><span class="sxs-lookup"><span data-stu-id="c7939-103">Benefit eligibility process</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="c7939-104">Den här proceduren visar hur förmånsberättigandeprocessen fungerar.</span><span class="sxs-lookup"><span data-stu-id="c7939-104">This procedure shows how the benefit eligibility process works.</span></span> <span data-ttu-id="c7939-105">När processen är klar kan du visa resultaten.</span><span class="sxs-lookup"><span data-stu-id="c7939-105">When the process is complete you can view the results.</span></span> <span data-ttu-id="c7939-106">Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.</span><span class="sxs-lookup"><span data-stu-id="c7939-106">The demo data company used to create this procedure is USMF.</span></span>
 

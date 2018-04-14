@@ -19,17 +19,16 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 7292767f48e94f01c50e12ab02a4483c53046ae9
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 3806dafa6ca6ea8355db3d6a8c2432ad67cd69c2
 ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="set-up-the-advanced-bank-reconciliation-import-process"></a><span data-ttu-id="afdd6-104">Ställa in importprocessen för avancerad bankavstämning</span><span class="sxs-lookup"><span data-stu-id="afdd6-104">Set up the advanced bank reconciliation import process</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="afdd6-105">Med hjälp av funktionen Avancerad bankavstämning kan du importera elektroniska bankutdrag och stämma av dem automatiskt mot transaktioner i Microsoft Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="afdd6-105">The Advanced bank reconciliation feature lets you import electronic bank statements and automatically reconcile them with bank transactions in Microsoft Dynamics 365 for Finance and Operations.</span></span> <span data-ttu-id="afdd6-106">Den här artikeln innehåller en beskrivning av hur du ställer in importfunktionen för bankutdrag.</span><span class="sxs-lookup"><span data-stu-id="afdd6-106">This article explains how to set up the import functionality for your bank statements.</span></span> 
 
@@ -57,7 +56,7 @@ ms.lasthandoff: 03/26/2018
 | <span data-ttu-id="afdd6-135">DynamicsAXISO20022Layout</span><span class="sxs-lookup"><span data-stu-id="afdd6-135">DynamicsAXISO20022Layout</span></span>                                | <span data-ttu-id="afdd6-136">ISO20022StatementExample</span><span class="sxs-lookup"><span data-stu-id="afdd6-136">ISO20022StatementExample</span></span>             |
 | <span data-ttu-id="afdd6-137">DynamicsAXBAI2Layout</span><span class="sxs-lookup"><span data-stu-id="afdd6-137">DynamicsAXBAI2Layout</span></span>                                    | <span data-ttu-id="afdd6-138">BAI2StatementExample</span><span class="sxs-lookup"><span data-stu-id="afdd6-138">BAI2StatementExample</span></span>                 |
 
- 
+
 
 ## <a name="set-up-the-import-of-iso20022-bank-statements"></a><span data-ttu-id="afdd6-139">Ställa in import av ISO20022-bankutdrag</span><span class="sxs-lookup"><span data-stu-id="afdd6-139">Set up the import of ISO20022 bank statements</span></span>
 <span data-ttu-id="afdd6-140">Först måste du definiera bankutdragets formatbearbetningsgrupp för ISO20022-bankutdrag med hjälp av ramverket för datatabellen.</span><span class="sxs-lookup"><span data-stu-id="afdd6-140">First, you must define the bank statement format processing group for ISO20022 bank statements by using the data entity framework.</span></span>

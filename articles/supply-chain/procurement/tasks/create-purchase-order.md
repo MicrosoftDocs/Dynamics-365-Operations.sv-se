@@ -16,15 +16,15 @@ ms.author: fdahl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 27ed15e6d9a376c4203e5446d056f221bd3eb730
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 165f29ceaabe4d09785e5f1edfe57db525264c15
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="create-a-purchase-order"></a><span data-ttu-id="3f8d3-103">Skapa en inköpsorder</span><span class="sxs-lookup"><span data-stu-id="3f8d3-103">Create a purchase order</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="3f8d3-104">Den här proceduren visar hur du skapar en inköpsorder manuellt.</span><span class="sxs-lookup"><span data-stu-id="3f8d3-104">This procedure shows you how to create a purchase order manually.</span></span> <span data-ttu-id="3f8d3-105">Den är vanligare att inköpsorder skapas automatiskt som resultat av huvudplaneringen, en direktleverans och andra processer.</span><span class="sxs-lookup"><span data-stu-id="3f8d3-105">It’s more typical for purchase orders to be created automatically as result of master planning, direct delivery, and other processes.</span></span> <span data-ttu-id="3f8d3-106">Inköpsorder används vanligtvis av inköpsagenter.</span><span class="sxs-lookup"><span data-stu-id="3f8d3-106">Purchase orders are typically created by a purchasing agent.</span></span> <span data-ttu-id="3f8d3-107">De exempel som visas här, kan användas i demonstrationsföretaget USMF som använder de värden som föreslås i anteckningarna för olika steg.</span><span class="sxs-lookup"><span data-stu-id="3f8d3-107">The example shown here can be used in the USMF demo data company using the values that are suggested in the notes for various steps.</span></span>
 

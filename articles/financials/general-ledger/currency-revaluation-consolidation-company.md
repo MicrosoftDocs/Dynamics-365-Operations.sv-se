@@ -19,19 +19,16 @@ ms.author: hminzner
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: 06490f14ed01c3061b20a0e6977746e9fd2a6ffa
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 2330939ddd7ccf4555cf1eff1e264c51f779c4eb
 ms.contentlocale: sv-se
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="currency-revaluation-in-a-consolidation-company"></a><span data-ttu-id="8112c-103">Valutaomvärdering i ett konsolideringsföretag</span><span class="sxs-lookup"><span data-stu-id="8112c-103">Currency revaluation in a consolidation company</span></span>
 
-[!include[banner](../includes/banner.md)]
-
-
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="8112c-104">När du konsolidera data från en redovisningsvaluta till en annan måste du fortfarande köra valutaomvärdering om det sker en förändring i valutakurser, så att ditt konto saldo är korrekt omvärderas.</span><span class="sxs-lookup"><span data-stu-id="8112c-104">When you consolidate data from one accounting currency to another, you must still run currency revaluation if there is a change in exchange rates, so that your account balances  are correctly revalued.</span></span> <span data-ttu-id="8112c-105">När du ursprungligen konsolidera data, använd **valutakursdifferens** flik för att välja den första växelkurser för översättning under konsolideringsprocessen.</span><span class="sxs-lookup"><span data-stu-id="8112c-105">When you originally consolidate the data, use the **Currency translation** tab to select the initial exchange rates to for translation during the consolidation process.</span></span> <span data-ttu-id="8112c-106">Efter en ny valutakurs registreras (t.ex. i nästa månad), du måste omvärdera den kontosaldon.</span><span class="sxs-lookup"><span data-stu-id="8112c-106">After a new exchange rate is entered (for example, in the next month), you must revalue the account balances.</span></span> <span data-ttu-id="8112c-107">Den orealiserade vinster eller förluster som sedan uppdateras baserat på den nya växelkursen och datum.</span><span class="sxs-lookup"><span data-stu-id="8112c-107">The unrealized gains or losses are then updated accordingly, based on the new exchange rate and date.</span></span> <span data-ttu-id="8112c-108">Följande exempel illustrerar bokföringsposter som skapas under processen.</span><span class="sxs-lookup"><span data-stu-id="8112c-108">The following example illustrates the accounting entries that are created during the process.</span></span>
 
@@ -52,6 +49,7 @@ ms.lasthandoff: 01/17/2018
 | <span data-ttu-id="8112c-126">10/11/2015</span><span class="sxs-lookup"><span data-stu-id="8112c-126">10/11/2015</span></span> | <span data-ttu-id="8112c-127">130100 – Kundfordringar</span><span class="sxs-lookup"><span data-stu-id="8112c-127">130100 – Accounts Receivable</span></span> | <span data-ttu-id="8112c-128">USD</span><span class="sxs-lookup"><span data-stu-id="8112c-128">USD</span></span>      | <span data-ttu-id="8112c-129">-500</span><span class="sxs-lookup"><span data-stu-id="8112c-129">-500</span></span>   |
 
 ## <a name="exchange-rates"></a><span data-ttu-id="8112c-130">Valutakurser</span><span class="sxs-lookup"><span data-stu-id="8112c-130">Exchange rates</span></span>
+
 | <span data-ttu-id="8112c-131">Från valuta</span><span class="sxs-lookup"><span data-stu-id="8112c-131">From currency</span></span> | <span data-ttu-id="8112c-132">Till valuta</span><span class="sxs-lookup"><span data-stu-id="8112c-132">To currency</span></span> | <span data-ttu-id="8112c-133">Startdatum</span><span class="sxs-lookup"><span data-stu-id="8112c-133">Start date</span></span> | <span data-ttu-id="8112c-134">Valutakurs</span><span class="sxs-lookup"><span data-stu-id="8112c-134">Exchange rate</span></span> |
 |---------------|-------------|------------|---------------|
 | <span data-ttu-id="8112c-135">Euro</span><span class="sxs-lookup"><span data-stu-id="8112c-135">EUR</span></span>           | <span data-ttu-id="8112c-136">USD</span><span class="sxs-lookup"><span data-stu-id="8112c-136">USD</span></span>         | <span data-ttu-id="8112c-137">10/1/2015</span><span class="sxs-lookup"><span data-stu-id="8112c-137">10/1/2015</span></span>  | <span data-ttu-id="8112c-138">200</span><span class="sxs-lookup"><span data-stu-id="8112c-138">200</span></span>           |

@@ -19,17 +19,16 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: a598a562b35a8bb1e0ede6bb8f3dc0515c162a06
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 93764a8eb116924df7c887cfd8d36f60a2a89c81
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="fixed-assets-integration"></a><span data-ttu-id="1644f-104">Integrering av anläggningstillgångar</span><span class="sxs-lookup"><span data-stu-id="1644f-104">Fixed assets integration</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="1644f-105">Anläggningstillgångar kan integreras med Redovisning, Lagerhantering, Kundreskontra och Leverantörsreskontra.</span><span class="sxs-lookup"><span data-stu-id="1644f-105">Fixed assets can be integrated with General ledger, Inventory management, Accounts receivable, and Accounts payable.</span></span> <span data-ttu-id="1644f-106">Du kan också ställa in anläggningstillgångar så att detta integreras med inköpsorder.</span><span class="sxs-lookup"><span data-stu-id="1644f-106">You can also set up Fixed assets so that it is integrated with purchase orders.</span></span>
 

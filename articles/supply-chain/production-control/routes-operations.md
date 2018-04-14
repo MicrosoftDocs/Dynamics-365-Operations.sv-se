@@ -20,17 +20,16 @@ ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7af00d0c66f70aa41cfab0ffccef39ba4c115803
-ms.openlocfilehash: 4026fa937ddf88f006cdcd13a8eda10c326ada62
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 90a12b501b55bc6406ea13c2e643cd58f8128390
 ms.contentlocale: sv-se
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="routes-and-operations"></a><span data-ttu-id="46861-103">Flöden och operationer</span><span class="sxs-lookup"><span data-stu-id="46861-103">Routes and operations</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="46861-104">Det här avsnittet innehåller information om Flöden och operationer.</span><span class="sxs-lookup"><span data-stu-id="46861-104">This topic provides information about routes and operations.</span></span> <span data-ttu-id="46861-105">Ett flöde definierar processen för tillverkning av en produkt eller produktvariant.</span><span class="sxs-lookup"><span data-stu-id="46861-105">A route defines the process for producing a product or product variant.</span></span> <span data-ttu-id="46861-106">Det beskriver varje steg (operation) i produktionsprocessen och den ordning som dessa steg måste utföras i.</span><span class="sxs-lookup"><span data-stu-id="46861-106">It describes each step (operation) in the production process and the order that these steps must be performed in.</span></span> <span data-ttu-id="46861-107">För varje steg definierar också flödet de operationsresurser krävs, ställtid och körtid som krävs och hur kostnaden ska beräknas.</span><span class="sxs-lookup"><span data-stu-id="46861-107">For each step, the route also defines the required operations resources, the required setup time and run time, and how the cost should be calculated.</span></span>
 

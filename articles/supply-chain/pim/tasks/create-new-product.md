@@ -16,15 +16,15 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: 0ea85775e7be86eead716e88ef9d51cae9c007f3
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: dc10459d3b15f274da964700d785549942c91a4a
 ms.contentlocale: sv-se
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="create-a-new-product"></a><span data-ttu-id="b4e27-103">Skapa en ny produkt</span><span class="sxs-lookup"><span data-stu-id="b4e27-103">Create a new product</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="b4e27-104">Den här uppgiften visar hur du skapar en ny delad produkt.</span><span class="sxs-lookup"><span data-stu-id="b4e27-104">This task shows how to create a new shared product.</span></span> <span data-ttu-id="b4e27-105">Den utförs vanligtvis av en produktdesigner.</span><span class="sxs-lookup"><span data-stu-id="b4e27-105">It is usually carried out by a product designer.</span></span> <span data-ttu-id="b4e27-106">Det demonstrationsdataföretag som används för att skapa den här uppgiften är USMF.</span><span class="sxs-lookup"><span data-stu-id="b4e27-106">The demo data company used to create this task is USMF.</span></span>
 

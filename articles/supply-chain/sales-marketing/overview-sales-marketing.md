@@ -18,17 +18,16 @@ ms.author: kfend
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: da48a9eef118a7a369343c986e4b67f53266f7e1
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 84d7cf4e0d0f1e66a8ce6ddf2822e5ca6d2899ab
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="sales-and-marketing"></a><span data-ttu-id="f738c-104">Försäljning och marknadsföring</span><span class="sxs-lookup"><span data-stu-id="f738c-104">Sales and marketing</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="f738c-105">Du kan använda Försäljning och marknadsföring för att hämta, spara och använda olika typer av data i försäljningsflödet.</span><span class="sxs-lookup"><span data-stu-id="f738c-105">You can use Sales and marketing to obtain, store, and use various types of data in the sales flow.</span></span> <span data-ttu-id="f738c-106">Informationen inkluderar den ursprungliga försäljningsinsatsen, framtida uppföljningsåtgärder och ytterligare försäljning.</span><span class="sxs-lookup"><span data-stu-id="f738c-106">This data includes the original sales initiative, future follow-up action, and additional sales.</span></span>
 

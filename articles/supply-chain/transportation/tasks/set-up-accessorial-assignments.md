@@ -17,15 +17,15 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 31787aa180639b934b837b98dc170070d33fd56f
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 29b39ad74c064da88154a77299cedc9babe3786b
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="set-up-accessorial-assignments"></a><span data-ttu-id="a2df2-103">Ställ in tilläggstilldelningar</span><span class="sxs-lookup"><span data-stu-id="a2df2-103">Set up accessorial assignments</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="a2df2-104">I den här proceduren visas hur du ställer in en tilldelning av tillägg.</span><span class="sxs-lookup"><span data-stu-id="a2df2-104">This procedure shows how to set up an accessorial assignment.</span></span> <span data-ttu-id="a2df2-105">Detta görs normalt av en transportkoordinator.</span><span class="sxs-lookup"><span data-stu-id="a2df2-105">This is typically done by a transportation coordinator.</span></span> <span data-ttu-id="a2df2-106">Innan du använder den här guiden måste du köra guiden "Ställ in hubbens tilläggsavgifter och tilläggsmallar".</span><span class="sxs-lookup"><span data-stu-id="a2df2-106">Before you use this guide you need to run the "Set up hub accessorial charges and accessorial masters" guide.</span></span>
 

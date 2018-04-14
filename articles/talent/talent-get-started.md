@@ -18,15 +18,15 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 3eb642944a31aad983758fc28bc692800bb6b4d2
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: a8c2d097626fad905741c35ffa8c13336f8735b9
 ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="getting-started-with-microsoft-dynamics-365-for-talent"></a><span data-ttu-id="62e64-103">Kom igång med Microsoft Dynamics 365 for Talent</span><span class="sxs-lookup"><span data-stu-id="62e64-103">Getting started with Microsoft Dynamics 365 for Talent</span></span>
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 <span data-ttu-id="62e64-104">I Microsoft Dynamics 365 for Talent är det enkelt att ändra användargränssnittet och ange alternativ som gör programmet enklare för dina behov.</span><span class="sxs-lookup"><span data-stu-id="62e64-104">In Microsoft Dynamics 365 for Talent it's easy to modify the user interface and set options that make the software more intuitive for your needs.</span></span> <span data-ttu-id="62e64-105">Det här avsnittet innehåller länkar till avsnitt med information om hur du anpassar användargränssnittet enligt dina önskemål.</span><span class="sxs-lookup"><span data-stu-id="62e64-105">This topic includes links to topics that provide information on how to adapt the user interface to your preferences.</span></span> <span data-ttu-id="62e64-106">Avsnittet innehåller också länkar till information som hjälper dig att hitta information i systemet effektivt och korrekt.</span><span class="sxs-lookup"><span data-stu-id="62e64-106">The topic also includes links to information that can help you find information in the system efficiently and accurately.</span></span> 
 

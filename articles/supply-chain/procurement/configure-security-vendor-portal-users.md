@@ -19,17 +19,16 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f79f686720d615da6996f854a9e4cc18f840337f
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 30836b1851d124abcbc515db3cea696c3c04a203
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="vendor-portal-user-security"></a><span data-ttu-id="0f6ef-104">Användarsäkerhet för leverantörportal</span><span class="sxs-lookup"><span data-stu-id="0f6ef-104">Vendor portal user security</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="0f6ef-105">Den här artikeln innehåller information om hur du konfigurerar säkerhet för externa leverantörer som använder leverantörsportalen.</span><span class="sxs-lookup"><span data-stu-id="0f6ef-105">This article explains how to set up security for external vendors who use the Vendor portal.</span></span> <span data-ttu-id="0f6ef-106">Denna information gäller endast Dynamics AX-versionerna från februari 2016 &amp; maj 2016.</span><span class="sxs-lookup"><span data-stu-id="0f6ef-106">This information applies only to the February 2016 &amp; May 2016 versions of Dynamics AX.</span></span>
 

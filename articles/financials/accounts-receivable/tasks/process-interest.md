@@ -16,15 +16,15 @@ ms.author: shpandey
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 543ac29ac1b1cbad52f1c155ac90b04d0c122a1f
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 214e12132557c12d19575f04ce69101b7457f37a
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="process-interest"></a><span data-ttu-id="50c70-103">Beräkna ränta</span><span class="sxs-lookup"><span data-stu-id="50c70-103">Process interest</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="50c70-104">I den här proceduren visas hur du skapar, skriver ut och bokför räntefakturor.</span><span class="sxs-lookup"><span data-stu-id="50c70-104">This procedure shows how to create, print, and post interest notes.</span></span> <span data-ttu-id="50c70-105">I den här uppgiften används demonstrationsföretaget USMF.</span><span class="sxs-lookup"><span data-stu-id="50c70-105">This task uses the USMF demo company.</span></span>
 

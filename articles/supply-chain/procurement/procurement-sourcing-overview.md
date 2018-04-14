@@ -19,17 +19,16 @@ ms.author: fdahl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ba426692e2e404ab75e5730b8205115fc59e402f
-ms.openlocfilehash: 91881ca3999b4937d20161b8beab8e80c2675eb6
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 7c738d888b7177a26b28438c820ce18312947318
 ms.contentlocale: sv-se
-ms.lasthandoff: 02/08/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="procurement-and-sourcing-overview"></a><span data-ttu-id="6b75f-103">Upphandling och inköp – översikt</span><span class="sxs-lookup"><span data-stu-id="6b75f-103">Procurement and sourcing overview</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="6b75f-104">Det här avsnittet ger en översikt över de funktioner som är tillgängliga i modulen Anskaffning och källa.</span><span class="sxs-lookup"><span data-stu-id="6b75f-104">This article gives an overview of the functionality that's available in the Procurement and sourcing module.</span></span>
 
@@ -39,7 +38,7 @@ ms.lasthandoff: 02/08/2018
 <span data-ttu-id="6b75f-108">Behovet av produkter eller tjänster som kan uppstå från *anmodan*, till exempel när en anställd behöver en produkt.</span><span class="sxs-lookup"><span data-stu-id="6b75f-108">The need for products or services may arise from *requisitions*, for example, when an employee requires a product.</span></span> <span data-ttu-id="6b75f-109">*Produktkataloger* kan ställas in för att styra urvalet av tillgängliga produkter att välja mellan, eller förfrågningar kan göras för produkter som ännu inte är tillgängliga i en katalog, så att inköpsavdelningen att överväga hur produkten kan levereras.</span><span class="sxs-lookup"><span data-stu-id="6b75f-109">*Product catalogs* can be set up to guide the selection of available products to select from, or requests can be made for products that are not yet made available in a catalog, allowing the purchasing department to consider how the product can be supplied.</span></span>  
 
 <span data-ttu-id="6b75f-110">*Utgiftsramen* kan användas för att begränsa utgifterna för anmodan och*inköp arbetsflöde* ger möjlighet att kräva godkännande innan beställning sker.</span><span class="sxs-lookup"><span data-stu-id="6b75f-110">*Spending limits* can be used to constrain requisition spending, and the *purchasing workflow* adds the option of requiring approval before ordering happen.</span></span> <span data-ttu-id="6b75f-111">Det är också möjligt att ange budget anslag, om det behövs.</span><span class="sxs-lookup"><span data-stu-id="6b75f-111">It's also possible to specify budget fund allocation, if required.</span></span>  
-  
+
 <span data-ttu-id="6b75f-112">Upphandling avdelningen identifierar leverantörer för varor och tjänster, och detta kan innebära en*offertförfrågan* som skickas ut till flera potentiella leverantörer.</span><span class="sxs-lookup"><span data-stu-id="6b75f-112">The procurement department identifies suppliers for required products and services, and this can involve a *request for quotation* being sent out to multiple potential suppliers.</span></span> <span data-ttu-id="6b75f-113">Det är möjligt att dela specifikationer för produkten som begärts och potentiella leverantörer kan visa dessa för att se om de kan leverera en produkt som uppfyller dem.</span><span class="sxs-lookup"><span data-stu-id="6b75f-113">It's possible to share the specifications of the product that's being requested and potential vendors can view these to see if they can deliver a product that conforms with them.</span></span> <span data-ttu-id="6b75f-114">Säljare tillbaka sina anbud som sedan granskas av inköpsavdelning innan de väljer den leverantör som de vill anskaffa från.</span><span class="sxs-lookup"><span data-stu-id="6b75f-114">Vendors return their bids which are then reviewed by the procurement department before they select the supplier that they want to procure from.</span></span>  
 
 <span data-ttu-id="6b75f-115">Inköpsorder har ett alternativ för att skicka en *inköpsorder* till leverantören som ett alternativ till en mer omfattande offertförfrågan.</span><span class="sxs-lookup"><span data-stu-id="6b75f-115">Purchase orders include an option to send out a *purchase inquiry* to the vendor as an alternative to a more comprehensive request for quotation process.</span></span> <span data-ttu-id="6b75f-116">Köp undersökning kan användas för att bidra till att skapa villkor som priser, rabatter och leveransdatum.</span><span class="sxs-lookup"><span data-stu-id="6b75f-116">The purchase inquiry can be used to help establish terms like prices, discounts, and delivery date for the order.</span></span> <span data-ttu-id="6b75f-117">Om leverantörer är inställda för användning av **Leverantör**portalen kommer inköpsförfrågan funktionen att inaktiveras.</span><span class="sxs-lookup"><span data-stu-id="6b75f-117">If vendors are set up to use the **Vendor** portal, purchase inquiry functionality is disabled.</span></span> <span data-ttu-id="6b75f-118">I stället delas på**säljaren** portal, och när en*begäran om bekräftelse* skickas säljaren kan direkt bekräfta ordern.</span><span class="sxs-lookup"><span data-stu-id="6b75f-118">Instead the order is shared on the **Vendor** portal, and when a *confirmation request* is sent the vendor can directly confirm the order.</span></span>  

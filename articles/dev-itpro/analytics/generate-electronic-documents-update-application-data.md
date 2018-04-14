@@ -19,16 +19,16 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: af7f9a373496eee4df354d5dd9e5a25c51317c43
-ms.openlocfilehash: e2447274016f517db3ec0eb8f55c6b3163822f50
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 1b49dd7f4cfa0da68337554f21008bd41f9bdda1
 ms.contentlocale: sv-se
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="generate-electronic-documents-and-update-application-data-using-the-electronic-reporting-tool"></a><span data-ttu-id="54d3a-104">Skapa elektroniska dokument och uppdatera programdata med hjälp av verktyget för elektronisk rapportering</span><span class="sxs-lookup"><span data-stu-id="54d3a-104">Generate electronic documents and update application data using the Electronic reporting tool</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="54d3a-105">Du kan utforma format för elektronisk rapportering (ER) som kan användas i programmet Finance and Operations för att generera utgående elektroniska dokument.</span><span class="sxs-lookup"><span data-stu-id="54d3a-105">You can design Electronic reporting (ER) formats that can be used in the Finance and Operations application to generate outgoing electronic documents.</span></span> <span data-ttu-id="54d3a-106">Du kan också utforma ER-format som tolkar inkommande elektroniska dokument och som använder innehållet i dokumenten för att uppdatera programdata.</span><span class="sxs-lookup"><span data-stu-id="54d3a-106">You can also design ER formats that parse incoming electronic documents and use the content in those documents to update application data.</span></span> 
 

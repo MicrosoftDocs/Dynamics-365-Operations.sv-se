@@ -20,17 +20,16 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: bb8fa816d48ee808b92a5bf80c2c39c51f33a195
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: a28879586a8af3f98d6864ecc009822e8a29cf1d
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="mixed-mode-planning---combine-discrete-process-and-lean-sourcing"></a><span data-ttu-id="eadd7-103">Blandad planering - Kombinera diskret, process- och lean-försörjning</span><span class="sxs-lookup"><span data-stu-id="eadd7-103">Mixed mode planning - Combine discrete, process, and lean sourcing</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="eadd7-104">Detta ämne innehåller information om läget för blandad planering.</span><span class="sxs-lookup"><span data-stu-id="eadd7-104">This topic provides information about mixed mode planning.</span></span> <span data-ttu-id="eadd7-105">I läget för blandad planering kan du utforma din leveranskedja baserat på materialflödet.</span><span class="sxs-lookup"><span data-stu-id="eadd7-105">In mixed mode planning, you can model your supply chain based on the material flow.</span></span> <span data-ttu-id="eadd7-106">Microsoft Dynamics 365 for Finance and Operations ser till att materialflödet följer dina modeller, oavsett vald leveranspolicy (kanban, produktionsorder, inköpsorder, batchorder eller överföringsorder).</span><span class="sxs-lookup"><span data-stu-id="eadd7-106">Microsoft Dynamics 365 for Finance and Operations makes sure that the material flow follows your models, regardless of the supply policy that is selected (kanbans, production orders, purchase orders, batch orders, or transfer orders).</span></span> 
 

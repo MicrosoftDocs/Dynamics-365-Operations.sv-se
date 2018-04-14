@@ -19,17 +19,16 @@ ms.author: leguo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 8fd721dc3166dcd981b749c673d3c625b4e5ae36
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: ad4212584b0f9062edbd5c13f4c75eaa03c853f7
 ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="postdated-checks"></a><span data-ttu-id="0acf5-105">Efterdaterade checkar</span><span class="sxs-lookup"><span data-stu-id="0acf5-105">Postdated checks</span></span>
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="0acf5-106">Den här artikeln innehåller information om stöd för efterdaterade checkar i Microsoft Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="0acf5-106">This article provides information about support for postdated checks in Microsoft Dynamics 365 for Finance and Operations.</span></span> <span data-ttu-id="0acf5-107">Postdaterade checkar är checkar som har utfärdats för att skapa och ta emot betalningar vid ett framtida datum.</span><span class="sxs-lookup"><span data-stu-id="0acf5-107">Postdated checks are checks that are issued to make and receive payments on a future date.</span></span> <span data-ttu-id="0acf5-108">Därför kan checken inte lösas in förrän på angivet datum.</span><span class="sxs-lookup"><span data-stu-id="0acf5-108">Therefore, the check can't be cashed until the specified date.</span></span>
 
@@ -76,14 +75,14 @@ ms.lasthandoff: 03/26/2018
 <td><span data-ttu-id="0acf5-132">Du kan avbryta en bokförd efterdaterad check i sådana fall: - Checken returneras av banken.</span><span class="sxs-lookup"><span data-stu-id="0acf5-132">You can cancel a posted postdated check in these situations: - The check is returned by the bank.</span></span>
 <span data-ttu-id="0acf5-133">- Checken har tillämpats på fel faktura.</span><span class="sxs-lookup"><span data-stu-id="0acf5-133">- The check is applied to an incorrect invoice.</span></span>
 <span data-ttu-id="0acf5-134">- En kontantbetalning görs mot checken.</span><span class="sxs-lookup"><span data-stu-id="0acf5-134">- A cash payment is made against the check.</span></span>
-</td>
-</tr>
-<tr class="even">
-<td><span data-ttu-id="0acf5-135">Stoppa betalning för en efterdaterad check</span><span class="sxs-lookup"><span data-stu-id="0acf5-135">Stop payment for a postdated check</span></span></td>
-<td><span data-ttu-id="0acf5-136">Du kan stoppa en efterdaterad checkbetalning som utfärdades till en leverantör av orsaker såsom otillräckliga medel, ändringar av villkoren för avtalet med leverantören, leverans av defekta varor från leverantören eller returnering av varor till leverantören.</span><span class="sxs-lookup"><span data-stu-id="0acf5-136">You can stop payment on a postdated check that was issued to a vendor, for reasons such as not sufficient funds, changes in the terms of the agreement with the vendor, supply of defective goods by the vendor, or return of goods to the vendor.</span></span> <span data-ttu-id="0acf5-137">Du kan enbart stoppa betalning på checkar som inte har reglerats.</span><span class="sxs-lookup"><span data-stu-id="0acf5-137">You can stop payment only on checks that haven’t cleared.</span></span></td>
-</tr>
-</tbody>
-</table>
+  </td>
+  </tr>
+  <tr class="even">
+  <td><span data-ttu-id="0acf5-135">Stoppa betalning för en efterdaterad check</span><span class="sxs-lookup"><span data-stu-id="0acf5-135">Stop payment for a postdated check</span></span></td>
+  <td><span data-ttu-id="0acf5-136">Du kan stoppa en efterdaterad checkbetalning som utfärdades till en leverantör av orsaker såsom otillräckliga medel, ändringar av villkoren för avtalet med leverantören, leverans av defekta varor från leverantören eller returnering av varor till leverantören.</span><span class="sxs-lookup"><span data-stu-id="0acf5-136">You can stop payment on a postdated check that was issued to a vendor, for reasons such as not sufficient funds, changes in the terms of the agreement with the vendor, supply of defective goods by the vendor, or return of goods to the vendor.</span></span> <span data-ttu-id="0acf5-137">Du kan enbart stoppa betalning på checkar som inte har reglerats.</span><span class="sxs-lookup"><span data-stu-id="0acf5-137">You can stop payment only on checks that haven’t cleared.</span></span></td>
+  </tr>
+  </tbody>
+  </table>
 
 
 

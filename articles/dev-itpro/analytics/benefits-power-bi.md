@@ -17,16 +17,16 @@ ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 532834b377cfb8eda4902c387a850314302b22d8
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: c6ea6769b28158f8686a139903073337646c88bd
 ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="benefits-power-bi-content"></a><span data-ttu-id="e8c73-104">Power BI-innehåll med förmåner</span><span class="sxs-lookup"><span data-stu-id="e8c73-104">Benefits Power BI content</span></span>
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 <span data-ttu-id="e8c73-105">Det här avsnittet beskriver Microsoft Power BI-innehåll för **Förmåner**.</span><span class="sxs-lookup"><span data-stu-id="e8c73-105">This topic describes the **Benefits** Microsoft Power BI content.</span></span> <span data-ttu-id="e8c73-106">Det beskriver hur du får åtkomst till de rapporter som är inkluderade, samt ger dig information om den datamodell och de enheter som användes för att skapa innehållet.</span><span class="sxs-lookup"><span data-stu-id="e8c73-106">It explains how to access the reports that are included, and provides information about the data model and entities that were used to build the content.</span></span>
 

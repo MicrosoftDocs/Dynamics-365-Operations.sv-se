@@ -16,15 +16,15 @@ ms.author: maertenm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 754f28cd2831d8a9a57c408518d240de460b732b
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: ea94570ca23761195ed93bbab6c51f5df02c28bb
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="set-up-segregation-of-duties"></a><span data-ttu-id="1341a-103">Ställ in ansvarsfördelning</span><span class="sxs-lookup"><span data-stu-id="1341a-103">Set up segregation of duties</span></span>
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="1341a-104">Du kan ställa in regler för att separera uppgifter som måste utföras av andra användare.</span><span class="sxs-lookup"><span data-stu-id="1341a-104">You can set up rules to separate tasks that must be performed by different users.</span></span> <span data-ttu-id="1341a-105">Detta koncept kallas ansvarsfördelning.</span><span class="sxs-lookup"><span data-stu-id="1341a-105">This concept is named segregation of duties.</span></span> <span data-ttu-id="1341a-106">Du kan till exempel välja att inte samma person både ska bekräfta inleveransen av varor och bearbeta betalningar till leverantören.</span><span class="sxs-lookup"><span data-stu-id="1341a-106">For example, you might not want the same person both to acknowledge the receipt of goods and to process payment to the vendor.</span></span> <span data-ttu-id="1341a-107">Ansvarsfördelning minskar risken för bedrägeri och hjälper även till att identifiera fel eller oriktigheter.</span><span class="sxs-lookup"><span data-stu-id="1341a-107">Segregation of duties helps you reduce the risk of fraud, and it also helps you detect errors or irregularities.</span></span> <span data-ttu-id="1341a-108">Du kan också använda ansvarsfördelning för att framtvinga interna kontrollpolicyer.</span><span class="sxs-lookup"><span data-stu-id="1341a-108">You can also use segregation of duties to enforce internal control policies.</span></span> <span data-ttu-id="1341a-109">Slutför följande procedur för att skapa en regel.</span><span class="sxs-lookup"><span data-stu-id="1341a-109">Complete the following procedure to create a rule.</span></span> <span data-ttu-id="1341a-110">Du måste vara systemadministratör för att slutföra den här proceduren.</span><span class="sxs-lookup"><span data-stu-id="1341a-110">You must be a system administrator to complete the procedure.</span></span> <span data-ttu-id="1341a-111">Det demonstrationsdataföretag som används för att skapa den här proceduren är DAT.</span><span class="sxs-lookup"><span data-stu-id="1341a-111">The demo data company used to create this procedure is DAT.</span></span> 
 
