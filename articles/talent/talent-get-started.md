@@ -33,7 +33,7 @@ I Microsoft Dynamics 365 for Talent är det enkelt att ändra användargränssni
 > [!NOTE] 
 > Följande produkter är nära relaterade: Dynamics 365 for Finance and Operations; Dynamics 365 for Retail; samt Dynamics 365 for Talent. Samma funktioner kan förekomma i samtliga 3 produkter. I avsnitt som huvudsakligen berör Retail blir produktnamnet därför Dynamics 365 for Retail; i avsnitt som främst berör Talent blir produktnamnet Dynamics 365 for Talent; och i avsnitt som berör kärnprodukten blir produktnamnet Dynamics 365 for Finance and Operations. Avsnitt som skrivs för en produkt kan även gälla för samma funktioner i en relaterad produkt.
 
-### <a name="personalizing-talent"></a>Anpassa Talent 
+## <a name="personalizing-talent"></a>Anpassa Talent 
 Följande avsnitt beskriver hur du ställer in många funktioner som gör det enklare för dig att få arbetet gjort i tid i Dynamics 365 for Talent. 
 
 -   [Anpassa användarupplevelsen](../fin-and-ops/get-started/personalize-user-experience.md) - det här avsnittet beskriver olika sätt att anpassa Talent och anpassa delar av produkten för att passa dina inställningar bättre.
@@ -44,7 +44,7 @@ Följande avsnitt beskriver hur du ställer in många funktioner som gör det en
 
 -   [Kortkommandon](../fin-and-ops/get-started/shortcut-keys.md) - det här avsnittet innehåller kortkommandon för amerikansk tangentbordslayout. 
 
-### <a name="accessing-information"></a>Åtkomst till information
+## <a name="accessing-information"></a>Åtkomst till information
 I följande avsnitt beskrivs hur du använder sökningar och funktionerna för sökning och filtrering för att snabbt hitta information. 
 
 -   [Använd sökningar för att hitta information](../fin-and-ops/get-started/use-lookups-to-find-information.md) - det här avsnittet visar hur sökningar kan hjälpa dig att snabbt hitta rätt eller önskat värde. Avsnittet beskriver hur sökningar fungerar och omfattar tips som hjälper dig att optimera användningen av dem.
