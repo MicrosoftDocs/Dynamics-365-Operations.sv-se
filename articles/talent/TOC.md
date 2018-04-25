@@ -3,7 +3,7 @@
 # [Komma igång](talent-get-started.md)
 ## [Systemkrav och uppdateringspolicy](talent-versions-update-policy.md)
 ## [Reservera Microsoft Dynamics 365 for Talent](provisioning-talent.md)
-## [Ta bort en Talent-miljö](remove-test-environment.md)
+## [Ta bort en Talent-miljö](remove-talent-environment.md)
 ## [Reservera modulära appar för Microsoft Dynamics 365 for Talent](modular-app-tech-faq.md)
 ## [Utöka funktionaliteten i Talent](extend-talent-functionality.md)
 
@@ -13,6 +13,7 @@
 ## [Ställa in personalparametrar bland juridiska personer](set-up-hr-parameters-across-legal-entities.md)
 ## [Ställa in företagsspecifika personalparametrar](set-up-company-specific-hr-parameters.md)
 ## [Vanliga frågor och svar om personalåtgärder](personnel-actions-faq.md)
+## [Formalisera affärsprocesser](formalize-business-processes.md)
 ## [Använd arbetsflöde för att hantera medarbetarinformation](workflow-manage-employee-information.md)
 ## [Översikt över tjänstledighet och frånvaro](leave-absence-overview.md)
 
