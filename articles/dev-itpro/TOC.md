@@ -115,6 +115,7 @@
 ### Nyheter
 #### [Ändringar av utbyggbarhet juli 2017](extensibility/changes-july-2017.md)
 #### [Ändringar av utbyggbarhet version 7.3](extensibility/extensibility-changes-73.md)
+#### [Ändringar av utbyggbarhet version 8.0](extensibility/changes-80.md)
 ### Grunderna
 #### [Inkräktande anpassningar](extensibility/intrusive-customizations.md)
 #### [Klasstillägg](extensibility/class-extensions.md)
@@ -382,17 +383,18 @@
 
 ### [Integrera data med hjälp av Common Data Service](data-entities/data-integration-cds.md) 
 #### [Konfigurera ett scenario för potentiell kund till pengar](../supply-chain/sales-marketing/prospect-to-cash.md)
-##### [Synkronisera produkter från Finance and Operations till produkter i Sales](../supply-chain/sales-marketing/products-template-mapping-direct.md)
-##### [Synkronisera konton från Sales till kunder i Finance and Operations](../supply-chain/sales-marketing/accounts-template-mapping-direct.md)
-##### [Synkronisera kontakter från Sales till kontakter i Finance and Operations](../supply-chain/sales-marketing/contacts-template-mapping-direct.md)
-##### [Synkronisera huvuden och rader i försäljningsofferter från Sales till Finance and Operations](../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md)
-##### [Synkronisera huvuden och rader i försäljningsorder från Finance and Operations till Sales](../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md)
-##### [Synkronisera huvuden och rader i försäljningsfakturor från Finance and Operations till Sales](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
 ##### [Synkronisera konton direkt från Sales till kunder i Finance and Operations](../supply-chain/sales-marketing/accounts-template-mapping-direct.md)
 ##### [Synkronisera produkter direkt från Finance and Operations till produkter i Sales](../supply-chain/sales-marketing/products-template-mapping-direct.md)
 ##### [Synkronisera kontakter direkt från Sales till kontakter i Finance and Operations](../supply-chain/sales-marketing/contacts-template-mapping-direct.md)
-##### [Synkronisera huvuden och rader i försäljningsorder direkt från Finance and Operations till Sales](../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md)
+##### [Synkronisera huvuden och rader i försäljningsofferter direkt från Sales till Finance and Operations](../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md)
+##### [Synkronisering av försäljningsorder direkt mellan Sales och Finance and Operations](../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md)
 ##### [Synkronisera huvuden och rader i försäljningsfakturor direkt från Finance and Operations till Sales](../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md)
+#### [Konfigurera integration med Field Service](../supply-chain/sales-marketing/field-service.md)
+##### [Synkronisera produkter i Finance and Operations till produkter i Field Service](../supply-chain/sales-marketing/field-service-product.md)
+##### [Synkronisera arbetsorder i Field Service till försäljningsorder i Finance and Operations](../supply-chain/sales-marketing/field-service-work-order.md)
+##### [Synkronisera avtalsfakturor i Field Service till fristextfakturor i Finance and Operations](../supply-chain/sales-marketing/field-service-invoice.md)
+
+
 
 ### [Konsumera externa webbtjänster](data-entities/consume-external-web-service.md)
 
@@ -407,7 +409,9 @@
 ### [Konfigurationsdatamallar](data-entities/configuration-data-templates.md)
 ### [Datamallar med flera kalkylblad](data-entities/excel-template-multiple.md)
 ### [Spåra ändringar av en enhet](data-entities/entity-change-track.md)
+
 ### [Söka efter information om standarddatatabeller](data-entities/data-entities-report.md)
+
 
 ## [Jobb för import och export av data](data-entities/data-import-export-job.md)
 
@@ -422,18 +426,23 @@
 ### [Arvmönster](data-entities/support-super-type-sub-type.md)
 ### [Guideregler för datatabell](data-entities/data-entity-wizard-rules.md)
 ### [Metadataegenskaper](data-entities/behavioral-properties-data-entities.md)
-### [Valideringar, standarder och omappade fält](data-entities/validations-defaults-unmapped-fields.md)
+### [Valideringar, standardvärden och omappade fält](data-entities/validations-defaults-unmapped-fields.md)
 ### [Säkerhet och datatabeller](data-entities/security-data-entities.md)
 
 ## [Ta med din egen databas](analytics/export-entities-to-your-own-database.md)
 
+
+## [Automatisering av datauppgift](data-entities/data-task-automation.md)
+
 ## [Resurser för att svara på en databegäran enligt GDPR](gdpr/gdpr-home-page.md)
 ### [Guide till GDPR för Microsoft Dynamics 365 for Finance and Operations](gdpr/gdpr-auditing-sensitive-data.md)
+### [Tillgångsklassificeringar](gdpr/gdpr-asset-classification-values.md)
 ### [Använda rapporten för personsökning](gdpr/gdpr-person-search-report.md)
 ### [Utöka rapporten för personsökning](gdpr/gdpr-extend-person-search-report.md)
 ### [Hantera åtkomst till känsliga data](gdpr/gdpr-auditing-sensitive-data.md)
 ### [Svara på en begäran om personuppgifter med hjälp av Talent](gdpr/respond-dsr-request-talent.md)
 ### [Svara på en begäran om personuppgifter med hjälp av Microsoft Dynamics AX 2012](gdpr/gdpr-ax2012.md)
+
 
 # [Startsidan Kontinuerlig leverans](dev-tools/continuous-delivery-home-page.md)
 ## [Vanliga frågor och svar om utveckling och kontinuerlig leverans](dev-tools/continuous-delivery-faq.md)
@@ -527,10 +536,11 @@
 ### [AX 2012-uppgradering - Uppgifter som ska utföras efter uppgradering](migration-upgrade/app-validation-process.md)
 ### [AX 2012-uppgradering - Funktionstest har genomförts](migration-upgrade/upgrade-functional-validation.md)
 ### [AX 2012-uppgradering - Förbered publicering](migration-upgrade/upgrade-go-live-prep.md)
-### [AX 2012-uppgradering - Go live](migration-upgrade/2012-upgrade-cutover.md)
+### [AX 2012 uppgradering - Go live](migration-upgrade/2012-upgrade-cutover.md)
 
 ### Ändringar som påverkar uppgradering från AX 2012
-#### [Uppgradering av enstaka verifikations- och valutaomvärdering ](migration-upgrade/single-voucher-and-currency-revaluation-upgrade.md)
+#### [Kontoplansavgränsare måste vara unika](migration-upgrade/chart-accounts-delimiter-unique.md)
+#### [Uppgradering av enstaka verifikation och valutaomräkning](migration-upgrade/single-voucher-and-currency-revaluation-upgrade.md)
 #### [Datamodell för tidsplanering av projektresurser](migration-upgrade/data-model-changes-resource-management.md)
 #### [Ändringar av arbetsflödets delsystem](migration-upgrade/workflow-subsystem.md)
 #### [Därför har vi flyttat från kuber till aggregerade modeller](migration-upgrade/in-memory-real-time-aggregate-models.md)
@@ -568,7 +578,8 @@
 ### [Inaktuella funktioner](migration-upgrade/deprecated-features.md)
 
 # [Systemadministration](sysadmin/system-administration-home-page.md)
-## [Vanliga frågor och svar om månadsuppdateringar av plattformen](sysadmin/faq-platform-monthly-updates.md)
+## [Frågor och svar om månadsuppdateringar av plattformen](sysadmin/faq-platform-monthly-updates.md)
+## [Frågor och svar om virtuella datorer som inte tillåter administratörsåtkomst](sysadmin/VMs-no-admin-access.md)
 ## [Lägg till länkar till organisationens juridiska villkor och sekretesspolicy](sysadmin/legal-terms-privacy-statement.md)
 ## [Rapport med licenskoder och konfigurationsnycklar](sysadmin/license-codes-configuration-keys-report.md)
 ## [Datadelning mellan företag](sysadmin/cross-company-data-sharing.md)
@@ -612,6 +623,7 @@
 ## [Utför uppgifter i ett BPM-bibliotek](lifecycle-services/complete-tasks-bpm.md)
 ## [Använda aktivitetsdiagram](lifecycle-services/using-activity-diagrams.md)
 ## [Synkronisera ett BPM-bibliotek med Visual Studio Team Services (VSTS)](lifecycle-services/synchronize-bpm-vsts.md)
+## [Skapa ett acceptanstestpaket med hjälp av uppgiftsguider och BPM](lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md)
 ## [Flödesscheman i affärsprocessmodelleraren](lifecycle-services/flowcharts-business-process-modeler.md)
 ## [Överför anpassade affärsprocesser](lifecycle-services/upload-business-processes-bpm-task-recorder.md)
 ## [Övervakning och diagnostik ](lifecycle-services/monitoring-diagnostics.md)
@@ -620,8 +632,10 @@
 ## [Tillgångsbibliotek](lifecycle-services/asset-library.md)
 ## [Microsoft Dynamics 365 – översikt av översättningstjänst](lifecycle-services/translation-service-overview.md)
 ### [Användarhandbok för Microsoft Dynamics 365 - översättningstjänst](lifecycle-services/use-translation-service.md)
+### [Översättning av dokumentationsfil för Microsoft Dynamics 365 - översättningstjänst](lifecycle-services/use-translation-service-ua.md)
+### [Översättningsminne för Microsoft Dynamics 365 - översättningstjänst](lifecycle-services/use-translation-service-tm.md)
 
-## Funktioner i Dynamics AX 2012 Lifecycle Services
+## Dynamics AX 2012 Lifecycle Services-funktioner
 ### Distribution
 #### [Molnstyrda miljöer](lifecycle-services/ax-2012/cloud-hosted-environments-lcs.md)
 #### [Kopiera en konfiguration](lifecycle-services/copy-configuration-lcs.md)

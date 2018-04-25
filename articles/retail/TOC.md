@@ -31,7 +31,7 @@
 ## [Kundtjänstkataloger](call-center-catalogs.md)
 ## [Skapa en kundtjänstkatalog](create-call-center-catalogs.md)
 ## [Ställ in bedrägerivarningar](set-up-fraud-alerts.md)
-## [Ställ in alternativ för orderbearbetning](set-up-order-processing-options.md)
+## [Ställa in en kundtjänst](set-up-order-processing-options.md)
 ## [Ställ in ett kontinuitetsprogram för en kundtjänst](set-up-continuity-program.md)
 ## [Orderspärrar](work-with-order-holds.md)
 ## [Betalningsalternativ](work-with-payments.md)
@@ -47,10 +47,11 @@
 # Modern Point of Sale (MPOS) och Cloud POS
 ## [Välj mellan Modern POS och Cloud POS](MPOS-or-CPOS.md)
 ## [POS-operationer, online och offline](pos-operations.md)
-## [Demodataskärmlayouter i MPOS/CPOS](demo-data.md)
+## [Demonstrationsdataskärmens layout i MOPS/CPOS](demo-data.md)
 ## [Översikt över produkt- och kundsök i kassan](POS-search-improvements.md)
+## [Lagersökning i kassan](product-variants-POS.md)
 ## Kringutrustning
-### [Översikt över Retail-utrustning](retail-peripherals-overview.md)
+### [Översikt över butikskringutrustning](retail-peripherals-overview.md)
 ### [Microsoft-testad POS-utrustning](microsoft-tested-pos-hardware-peripherals.md)
 ### [Kringutrustningssimulator för Retail](dev-itpro/retail-peripheral-simulator.md)
 ### [Definiera och underhåll kanalklienter, kassor och maskinvarustationer](define-maintain-channel-clients-registers-hw-stations.md)
@@ -96,6 +97,7 @@
 ## [Ställa in RFM-analys](set-up-rfm-analysis.md)
 
 # Rabatter och prisjusteringar
+## [Prishantering för butiksförsäljning](price-management.md)
 ## [Prisjusteringar och rabatter](price-adjustments-discounts.md)
 ## [Avgöra optimal kombination av överlappande rabatter](optimal-combination-overlapping-discounts.md)
 ## [Definiera kanalspecifika rabatter](define-channel-specific-discounts.md)
@@ -139,19 +141,23 @@
 ## [Installera komponenter för ett jobb](../talent/create-job.md)
 
 # Lokaliserings- och regelfunktioner
+## Frankrike
+### [Kassaapparater för Frankrike](localizations/emea-fra-cash-registers.md)
+### [Riktlinjer för distribution av kassaapparater i Frankrike](localizations/emea-fra-deployment.md)
 ## Indien
-### [GST-integration för kassaapparater för Indien](localizations/apac-ind-cash-registers.md)
-### [Riktlinjer för distribution av kassaapparater för Indien](localizations/apac-ind-loc-deployment-guidelines.md)
+### [GST-integration (moms) för kassaapparater](localizations/apac-ind-cash-registers.md)
+### [Riktlinjer för distribution av kassaapparater i Indien](localizations/apac-ind-loc-deployment-guidelines.md)
 ## Norge
 ### [Kassaapparater för Norge](localizations/emea-nor-cash-registers.md)
-### [Riktlinjer för distribution av kassaapparater för Norge](localizations/emea-nor-loc-deployment-guidelines.md)
+### [Riktlinjer för distribution av kassaapparater i Norge](localizations/emea-nor-loc-deployment-guidelines.md)
 ## Sverige
 ### [Kassaapparater för Sverige](localizations/emea-swe-cash-registers.md)
+### [Exempel för Retail POS-integration med styrenheter](dev-itpro/retail-sdk/retail-sdk-control-unit-sample.md)
 
 # Retail-uppgifter
 ## [Skapa en produkt](../supply-chain/pim/tasks/create-product.md)
 ## [Konfigurera länkade produkter](../supply-chain/pim/tasks/configure-linked-products.md)
-## [Frisläppa en produkt/produktmall till juridiska personer](../supply-chain/pim/tasks/release-product-product-master-legal-entities.md)
+## [Frisläpp en produkt/produktmall till juridiska personer](../supply-chain/pim/tasks/release-product-product-master-legal-entities.md)
 ## [Baspris och handelsavtal](tasks/base-price-trade-agreements.md)
 ## [Kategoriprissättningsregler för att skapa handelsavtal](tasks/category-pricing-rules-trade-agreements.md)
 ## [ Konfigurera kreditkortsbearbetning](tasks/configure-credit-card-processing.md)
@@ -260,15 +266,17 @@
 ### [SDK för e-handelsplattform](dev-itpro/ecommerce-platform-sdk.md)
 
 ## Utbyggbarhet för betalningskoppling
+### [Betalningsintegration med en betalningsterminal](dev-itpro/end-to-end-payment-extension.md)
 ### [Implementera en betalningskoppling och betalningsenhet (vitbok)](http://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx)
 ### [Distribuera en betalningskoppling](dev-itpro/deploy-payment-connector.md)
 ### [Skapa en Windows Installer för en betalningskoppling](dev-itpro/create-windows-installer-payment-connector.md)
 
 ## [Retail SDK](dev-itpro/retail-sdk/retail-sdk-overview.md)
 ### [Integrera Retail SDK med kontinuerligt byggsystem](dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md)
-### [Exempel på utbyggbarhet: Retail SDK](dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md)
-### [Retail SDK, förpackning](dev-itpro/retail-sdk/retail-sdk-packaging.md)
-### [Retail SDK-exempel ](dev-itpro/retail-sdk/retail-sdk-samples.md)
+### [Exempel på utbyggbarhet: SDK för Retail](dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md)
+### [SDK för Retail, förpackning](dev-itpro/retail-sdk/retail-sdk-packaging.md)
+### [Exempel för SDK för Retail ](dev-itpro/retail-sdk/retail-sdk-samples.md)
+#### [Tilläggspunkter för följesedlar](dev-itpro/extensions-shipping-carrier-integration.md)
 ### [Tillägg för kanaldatabas](dev-itpro/channel-db-extensions.md)
 ### [CDX-utbyggbarhet](dev-itpro/cdx-extensibility.md)
 ### [Orderattribut](dev-itpro/order-attributes.md)
