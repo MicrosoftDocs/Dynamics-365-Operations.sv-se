@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="define-production-flow-models"></a>Definiera produktionsflödesmodeller
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Produktionsflödesmodeller beskriver hur kapaciteten i lean manufacturing-arbetsgrupper beräknas och hanteras. Därför är definitionen av en produktionsflödesmodell en förutsättning för definitionen av arbetsgrupper. Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.
 

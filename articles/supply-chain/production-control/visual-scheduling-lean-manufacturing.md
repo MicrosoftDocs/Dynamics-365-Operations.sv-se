@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="visual-scheduling-for-lean-manufacturing"></a>Visuell tidsplanering för lean manufacturing
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Det här avsnittet innehåller information om kanban-schematavlan som produktionsplaneraren kan använda för att styra och optimera produktionsplanen för kanban-jobb.
 

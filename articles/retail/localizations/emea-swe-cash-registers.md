@@ -26,7 +26,7 @@ ms.lasthandoff: 03/26/2018
 ---
 # <a name="cash-registers-for-sweden"></a>Kassaapparater för Sverige
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Det här avsnittet innehåller en översikt över kassaapparatfunktioner för Sverige i Microsoft Dynamics 365 for Retail. Den innehåller även riktlinjer för att ställa in funktionen. Funktionen innehåller följande delar:
 
@@ -99,12 +99,12 @@ Du måste ange följande allmänna inställningar för Sverige.
 
 1. Ange följande parametrar för moms (VAT) enligt svenska krav:
 
-    - Momskoder
-    - Momsgrupper
-    - Artikelmomsgrupper
-    - Momsinställningar i artiklar (artikelmomsgrupper för försäljning)
+   - Momskoder
+   - Momsgrupper
+   - Artikelmomsgrupper
+   - Momsinställningar i artiklar (artikelmomsgrupper för försäljning)
 
-    Mer information om hur du ställer in och använder moms i Microsoft Dynamics 365 for Finance and Operations och i Retail finns i [Momsöversikt](../../financials/general-ledger/indirect-taxes-overview.md).
+     Mer information om hur du ställer in och använder moms i Microsoft Dynamics 365 for Finance and Operations och i Retail finns i [Momsöversikt](../../financials/general-ledger/indirect-taxes-overview.md).
 
 2. På sidan **Alla butiker** uppdaterar du butiksinformation. Du måste speciellt ställa in följande parametrar:
     

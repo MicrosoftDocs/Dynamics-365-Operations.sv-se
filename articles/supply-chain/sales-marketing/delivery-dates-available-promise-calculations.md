@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="order-promising"></a>Orderlöfte
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denna artikel innehåller information om orderlöften. Orderlöften hjälper dig att ge dina kunder pålitliga löften om leveransdatum, och ger dig flexibilitet att hålla dessa datum.
 

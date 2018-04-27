@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-quality-orders"></a>Ställ in kvalitetsorder
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 I den här proceduren visas om hur du aktiverar en kvalitetshantering process där det inkommande lager måste kontrolleras omedelbart efter fakturaregister. Proceduren ska ske ut vanligtvis av en chef kvalitetsnormerna. Processen omfattar att en kvalitetsgrupp, om du vill definiera artiklar, som ska tas prov, och en grupp test om du vill gruppera de tester som ska utföras på artiklarna i kvalitetsgruppen. Du kan köra den här handboken i demoföretaget USMF.
 

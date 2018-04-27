@@ -20,18 +20,18 @@ ms.author: conradv
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 08715b4c31c42dfa23d72b1035a1e7cc737c13a2
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 2441f7cbf95512677f62eb862be99af90f3c4b17
 ms.contentlocale: sv-se
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="search-for-products-and-product-variants-during-order-entry"></a>Sök efter produkter och produktvarianter under orderregistrering
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[Retail name](../includes/retail-name.md)]
+[!INCLUDE [Retail name](../includes/retail-name.md)]
 
 Använd fältet <strong>Artikelnummer </strong>om du vill söka efter produkter och produktvarianter när du manuellt skapar en försäljningsorderrad eller en inköpsorderrad.  På så sätt kan du snabbt hitta produktvarianter, när du har endast har konfigurationsträngen eller en av produktdimensionerna tillgänglig.
 
@@ -72,7 +72,7 @@ Exempel på produkt- och produktvariantidentifierare och dimensioner som du kan 
 
 Gå till sidan **Försäljning och marknadsföring &gt; Inställningar &gt; Sök &gt; Sökvillkor**. Sidan **Sökkriterier** låter dig definiera kriterier för kund, potentiell kund och produktsökning. Se till att filtrera sidan genom att använda produktsökvillkor. Detta kan du göra genom att växla till **Produkt** på sidans meny.  
 
-Om du vill lägga till produktvisningsnumret till sökvillkoren klickar du på **Ny** på sidans meny. Då läggs en ny post till i rutnätet **Sökvillkor**. Öppna kolumnen **Fältnamn**-sökningen och välj **DisplayProductNumber**. För att lägga till produktens konfiguration till sökkriterierna skapar du en ny post i rutnätet **Sökkriterier** och väljer **configId** i kolumnen **Fältnamn**. På samma sätt skapar du en post med **Fältnamn** **InventColorId** för färgdimensionen, **InventSizeId** för storleksdimensionen och **InventStyleId** för utförandedimensionen.
+Om du vill lägga till produktvisningsnumret till sökvillkoren klickar du på <strong>Ny</strong> på sidans meny. Då läggs en ny post till i rutnätet <strong>Sökvillkor</strong>. Öppna kolumnen <strong>Fältnamn</strong>-sökningen och välj <strong>DisplayProductNumber</strong>. För att lägga till produktens konfiguration till sökkriterierna skapar du en ny post i rutnätet <strong>Sökkriterier **och väljer **configId</strong> i kolumnen <strong>Fältnamn</strong>. På samma sätt skapar du en post med <strong>Fältnamn</strong> <strong>InventColorId</strong> för färgdimensionen, <strong>InventSizeId</strong> för storleksdimensionen och <strong>InventStyleId</strong> för utförandedimensionen.
 
 ### <a name="step-2-populate-the-database-table-that-is-used-for-product-search"></a>Steg 2: Fyll i databasregistret som används för produktsökning
 

@@ -29,8 +29,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="inventory-blocking"></a>Lagerspärr
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Den här artikeln ger en översikt över lagerspärren, som är en del av kvalitetsinspektionsprocessen i Microsoft Dynamics 365 for Finance and Operations. Du kan använda lagerspärr för att förhindra att artiklar bearbetas eller förbrukas.
 

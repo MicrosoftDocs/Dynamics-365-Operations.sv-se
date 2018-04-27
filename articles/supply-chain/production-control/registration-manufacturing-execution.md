@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="registration-for-manufacturing-execution"></a>Registrering för tillverkningskörning
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 I det här avsnittet beskrivs viktiga begrepp och termer som du behöver känna till när du konfigurerar och använder tillverkningskörning. 
 

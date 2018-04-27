@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="trace-an-item-or-raw-material"></a>Spåra en artikel eller råmaterial
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 I den här proceduren visas hur du använder artikelspårning för att identifiera var artiklar eller råmaterial har använts eller används. Med den här proceduren kan identifiera en artikel, spåra den tillbaka till källan och sedan spåra framåt igenom produktionen och försäljningen av den färdiga produkten. Processen kan användas för att undersöka berörda kunder, försäljningsorder och annat. I proceduren används demonstrationsföretag USP2.
 

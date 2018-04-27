@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="project-time-entry-mobile-workspace"></a>Mobil arbetsyta för projekttidangivelse
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Det här avsnittet innehåller information om den mobila arbetsytan **Projekttidsangivelse**. Den här arbetsytan låter användarna ange och spara tid för ett projekt genom att använda sin mobilenhet.
 

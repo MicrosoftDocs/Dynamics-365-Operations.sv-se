@@ -27,8 +27,7 @@ ms.lasthandoff: 11/06/2017
 
 # <a name="new-or-updated-task-guides-august-2016"></a>Nya eller uppdaterade uppgiftsguider (augusti 2016)
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Detta avsnitt anger nya eller uppdaterade uppgiftsguider som släpptes för Microsoft APQC Unified Library för Microsoft Dynamics AX (augusti 2016 - alla språk). Inge nytt Komma igång-biblioteket gavs ut.
 

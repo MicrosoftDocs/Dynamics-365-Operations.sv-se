@@ -29,8 +29,7 @@ ms.lasthandoff: 11/14/2017
 
 # <a name="define-and-maintain-retail-channels"></a>Definiera och underhåll butikskanaler
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Det här ämnet innehåller en översikt över processen för att ställa in fysiska butiker, som kallas för "detaljhandelsbutiker" i Microsoft Dynamics 365 for Retail. Här finns information om de uppgifter du måste utföra båda före och efter att du ställer in en butik.
 

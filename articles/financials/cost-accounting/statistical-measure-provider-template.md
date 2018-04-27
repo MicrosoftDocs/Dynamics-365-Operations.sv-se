@@ -29,7 +29,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="statistical-dimension-members-and-statistical-measure-provider-templates"></a>Providermallar för statistiska dimensionsmedlemmar och statistiska mätningar
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 En statistisk dimension och dess medlemmar används för att registrera och kontrollera icke-monetära poster i kostnadsredovisning. Statistiska dimensionsmedlemmar kan användas för två syften:
 

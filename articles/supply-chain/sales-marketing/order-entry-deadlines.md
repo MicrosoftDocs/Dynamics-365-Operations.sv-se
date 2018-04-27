@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="order-entry-deadlines"></a>Deadlines för orderregistrering
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Den här artikeln innehåller information om deadlines för orderregistrering. En deadline för orderregistrering är en sluttid som bestämmer om en kundorder behandlas (och genomförs) som om det togs emot den aktuella dagen eller nästa dag.
 

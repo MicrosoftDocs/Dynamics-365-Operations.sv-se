@@ -23,7 +23,7 @@ ms.lasthandoff: 03/12/2018
 ---
 
 # <a name="assortment-management"></a>Sortimenthantering
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## <a name="overview"></a>Översikt
 Microsoft Dynamics 365 for Retail ger *sortiment* som gör att du kan hantera produkttillgänglighet genom olika kanaler. Sortiment avgör vilka produkter som är tillgängliga i vissa butiker och under en viss period.

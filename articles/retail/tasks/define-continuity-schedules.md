@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="define-continuity-schedules"></a> Definiera kontinuitetstidsplaner
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 I detta avsnitt beskrivs hur du skapar ett kontinuitetsprogram (även känt som en återkommande order). Detta ämne använder företaget USRT för demonstrationsdatan.
 

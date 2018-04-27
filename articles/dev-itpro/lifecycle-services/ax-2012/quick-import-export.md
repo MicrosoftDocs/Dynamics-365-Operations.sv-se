@@ -27,17 +27,16 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="run-the-test-data-transfer-tool-beta-for-dynamics-ax-ax-2012"></a>Kör Test Data Transfer Tool (beta) för Dynamics AX (AX 2012)
 
-[!include[banner](../../includes/banner.md)]
-
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Syftet med funktionen Snabb import/export är att du ska kunna importera och exportera med färre steg.
 
 Vi har lagt till funktionen Snabb import/export så att användarna kan importera eller exportera enkla jobb som de vill köra snabbt. Den här funktionen används bäst i scenarier där en fil mappas automatiskt till systemet och där användaren inte behöver gå via Avancerad mappning eller Skapa återkommande import- eller exportjobb.
 
--   Den här funktionen stöder arbete med både OOB- och anpassade entiteter.
--   Du kan importera från filer och om du använder en ODBC-datakälla kan du välja en fråga som du använder för att definiera importen.
--   Du måste tidigare har definierat källdataformat för antingen AX eller Fil och veta var de finns.
--   Du behöver inte skapa en bearbetningsgrupp för att använda funktionen Snabb import/export. Det skapas en automatiskt av systemet när du kör import- eller exportjobbet. Du kan också välja spara historiken över de data som importerats med hjälp av funktionen Snabb import/export.
+- Den här funktionen stöder arbete med både OOB- och anpassade entiteter.
+- Du kan importera från filer och om du använder en ODBC-datakälla kan du välja en fråga som du använder för att definiera importen.
+- Du måste tidigare har definierat källdataformat för antingen AX eller Fil och veta var de finns.
+- Du behöver inte skapa en bearbetningsgrupp för att använda funktionen Snabb import/export. Det skapas en automatiskt av systemet när du kör import- eller exportjobbet. Du kan också välja spara historiken över de data som importerats med hjälp av funktionen Snabb import/export.
 
   Observera att funktionen Snabb import/export förutsätter att du känner till DIXF-begrepp.
 

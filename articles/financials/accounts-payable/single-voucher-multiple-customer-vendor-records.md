@@ -27,8 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="single-voucher-with-multiple-customer-or-vendor-records"></a>En verifikation med flera kund- eller leverantörsposter
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Det här avsnittet innehåller en översikt över vad som händer när du bokför en enskild verifikation med flera kund- eller leverantörsposter. Den här funktionen ska annulleras i kommande versioner av Microsoft Dynamics 365 for Finance and Operations och därför rekommenderar vi att inte använda denna metod för bokföring på grund av redovisningens inverkan på kvittningsbehandling. 
 
@@ -251,7 +250,7 @@ För att undvika oönskade problem med framtida kvittningar för denna transakti
 | 001         | Kund         | US-008      |                 |           |  75,00     | Redovisning          | 999999---          |
 | 002         | Leverantör           | 1001        |                 |  75,00    |            | Redovisning          | 999999---          |
 
- 
+
 
 
 

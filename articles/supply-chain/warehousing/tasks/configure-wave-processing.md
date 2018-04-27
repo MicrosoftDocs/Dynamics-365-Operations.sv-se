@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="configure-wave-processing"></a>Konfigurera påfyllnadsbearbetning
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 I den här guiden beskrivs hur du ställer in villkoren som avgör vilket arbete som genereras för ett lagerställe när en påfyllnad bearbetas och om påfyllnad bearbetas manuellt eller automatiskt. Du anger villkor genom att ställa in påfyllnadsmallar och frågor som matchar en påfyllnad mot frisläppta rader i försäljningsorder, tillverkningsorder eller kanban-ordrar. Påfyllnadsbearbetning används i lagerställen som använder funktionen i modulen Lagerstyrning och inte de som använder funktionen i modulen Lagerhantering. Du kan köra den här proceduren i demonstrationsdataföretaget USMF.
 

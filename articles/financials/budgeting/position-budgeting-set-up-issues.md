@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="position-budgeting-troubleshooting"></a>Felsöka befattningsbudgetering
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Den här artikeln innehåller svar på frågor som du kan ha när du konfigurerar befattningsbudgetering. Det handlar om vanliga frågor och svar om hur du skapar budgetkostnadselement, kompensationsgrupper och kompensationsrutnät. 
 

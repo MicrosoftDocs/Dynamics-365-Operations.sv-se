@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="configure-linked-products"></a>Konfigurera länkade produkter
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Den här proceduren beskriver hur du konfigurerar länkade produkter. Den här proceduren använder USRT-demonstrationsdata och förutsätter att både produkterna redan har skapats och frisläppts.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-collection-letter-sequence"></a>Skapa in en kravbrevsserie
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Använd den här uppgifthandbok om du vill skapa ett kravbrev sekvens. I den här uppgiften används demonstrationsföretaget USMF.
 

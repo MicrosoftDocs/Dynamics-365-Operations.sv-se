@@ -29,7 +29,7 @@ ms.lasthandoff: 03/08/2018
 
 # <a name="retail-statements"></a>Butiksutdrag
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 I Microsoft Dynamics 365 for Retail är bokföringsprocessen för utdraget att ta hänsyn till de transaktioner som sker i molnbaserad kassa (PO) eller Modern POS (MOPS). Bokföringsprocessen för utdrag använder distributionsschemat för att hämra en uppsättning kassatransaktioner till klientens huvudkontor (HQ). De parametrar som definieras på sidorna **Butiksparametrar** och **Butiker** används för att välja vilka transaktioner som hämtas till enskilda rapporter.  
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="maintain-a-route-for-a-product-model"></a>Underhåll ett flöde för en produktmodell
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 När du kör den här proceduren krävs det att det finns en modell för produktkonfiguration. I den här proceduren använder högtalarmodellen i demonstrationsföretaget USMF.
 

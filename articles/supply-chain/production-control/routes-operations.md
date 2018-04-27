@@ -29,8 +29,7 @@ ms.lasthandoff: 03/09/2018
 
 # <a name="routes-and-operations"></a>Flöden och operationer
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Det här avsnittet innehåller information om Flöden och operationer. Ett flöde definierar processen för tillverkning av en produkt eller produktvariant. Det beskriver varje steg (operation) i produktionsprocessen och den ordning som dessa steg måste utföras i. För varje steg definierar också flödet de operationsresurser krävs, ställtid och körtid som krävs och hur kostnaden ska beräknas.
 

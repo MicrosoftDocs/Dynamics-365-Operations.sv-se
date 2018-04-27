@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="search-for-vendors"></a>Sök efter leverantörer
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Läs hur du vill söka efter leverantörer baserat på specifika kriterier. I det här exemplet visas hur du söker efter leverantörer som har godkänts för en viss anskaffningskategori och har sin primära adress i ett visst land. Du kan köra den här proceduren i demonstrationsföretaget USMF eller på dina egna data. Den här uppgiften utförs vanligtvis av ett anskaffningsproffs.
 

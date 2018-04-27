@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="reserve-inventory-quantities"></a>Reservera lagerkvantiteter
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 I det här avsnittet beskrivs de olika alternativ som är tillgängliga för att reservera lager.
 
@@ -50,6 +49,7 @@ Policyer för lagerreservation anges på sidan **Artikelmodellgrupper**, sidan *
 ### <a name="policies-on-the-item-model-groups-page"></a>Policyer på sidan Artikelmodellgrupper
 
 Avsnittet **Lagerpolicyer** innehåller följande reservationspolicyer.
+
 |                         |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 |-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Reservationspolicy**  | **Beskrivning**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
@@ -63,6 +63,7 @@ Avsnittet **Lagerpolicyer** innehåller följande reservationspolicyer.
 #### <a name="example-for-fifo-date-controlled-and-backward-from-ship-date"></a>Exempel för FIFO-datumkontroll och bakåt från leveransdatum
 
 I det här exemplet finns lagerbehållningen för artikelnummer A för tre olika batchnummer.
+
 | Artikelnummer | Batchnummer | Kvantitet | Datum             |
 |-------------|--------------|----------|------------------|
 | A           | 1 000         | 5        | 2 februari 2016 |

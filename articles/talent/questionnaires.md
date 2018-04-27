@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="questionnaires"></a>Enkäter
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Det här ämnet innehåller allmän information om enkäter och länkar till mer detaljerad information. En enkät är en uppsättning frågor som används för att samla in information för olika ändamål. Det går att utforma, skapa, distribuera och fylla i enkäter och sedan analysera resultaten. 
 

@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="manage-store-inventory"></a>Hantera butikslager
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Den här artikeln beskriver vilka typer av dokument som du kan använda för att hantera lager.
 

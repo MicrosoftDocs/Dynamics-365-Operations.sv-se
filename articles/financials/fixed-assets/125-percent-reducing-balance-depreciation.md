@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="125-percent-reducing-balance-depreciation"></a>125 procent degressiv avskrivning
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Den här avsnittet ger en översikt över 125-procentsmetoden för degressiv avskrivning.
 
@@ -68,6 +67,7 @@ Om du väljer **Räkenskapsår** som avskrivningsår finns följande alternativ 
 -   **Räkenskapsperiod** bokför det totala avskrivningsbeloppet som beräknas för räkenskapsåret. Detta belopp periodiseras till de räkenskapsperioder som har definierats på **Räkenskapskalendrar**.
 
 ## <a name="example-of-125-reducing-balance-depreciation"></a>Exempel på en degressiv avskrivning på 125 %
+
 |                                |        |
 |--------------------------------|--------|
 | Anskaffningskostnad               | 11 000 |

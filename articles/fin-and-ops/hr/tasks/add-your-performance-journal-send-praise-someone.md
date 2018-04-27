@@ -16,15 +16,15 @@ ms.author: shielas
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: e232ba1f5803f6dee148f23098563c99c1622cdf
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 9b898a5ab5ad2837ef1d9ef8ebf88aaa05f56b3a
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="add-to-your-performance-journal-and-send-praise-to-someone"></a>Lägg till i din resultatjournal och skicka beröm till någon
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Resultatjournalen innehåller information som är relaterad till hur du uppfyller dina mål eller hur du har presterat under en period. Du kan också lovorda en medarbetares åtgärder från journalen. Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF. Denna procedur är avsedd för en funktion som lades till i Dynamics 365 for Operations version 1611.
 
@@ -42,7 +42,7 @@ Resultatjournalen innehåller information som är relaterad till hur du uppfylle
 9. Ange ett värde i fältet Keywords.
 10. Klicka på Add external link.
 11. Ange "Envision" i fältet Description.
-12. Ange "https://www.microsoft.com/en/envision/default" i fältet för internetadress.
+12. Skriv in "<https://www.microsoft.com/en/envision/default>" i fältet för Internetadress.
 13. Klicka på bilden vid namn "Performance journal" under Save-knappen när du vill återgå till rutnätet.
     * Du kan lägga till den valda journalen/de valda journalerna i ett mål så att den/de visas när du öppnar målet. En länk läggs till i snabbfliken för länkar. Om du lägger till en journal i ett mål och sedan lägger till målet i en granskning, kommer journalen att visas automatiskt i granskningen.  
     * Du kan lägga till den valda journalen/de valda journalerna i en granskning så att den/de visas när du öppnar granskningen.    En länk läggs till i snabbfliken Links.  

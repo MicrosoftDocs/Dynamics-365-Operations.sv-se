@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="cost-element-dimensions"></a>Dimensioner för kostnadselement
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Som en av kärnapelarna i kostnadsredovisning, används kostnadselementen för att kategorisera och spåra var kostnaderna flödar till. 
 

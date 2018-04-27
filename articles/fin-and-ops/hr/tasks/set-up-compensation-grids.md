@@ -16,15 +16,15 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 258149dbd610dafb8daacaf54c61e69898ca35d6
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: d507224004bdf319f9bf13ba07ed07ef29cc85dc
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="set-up-compensation-grids"></a>Ställ in kompensationsrutnät
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Kompensationsrutnät används för att definiera och underhålla lönstrukturerna för fasta kompensationsplaner. Kompensationsrutnät kan delas mellan flera planer och kopieras när du skapar en ny kompensationsplan.  Innan du skapar ett kompensationsrutnät måste nivåer och referenspunkter ställas in. I det här exemplet skapas en ny typ av kompensationsrutnät med hjälp av demodata för nivåer och referenspunkter. Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.
 

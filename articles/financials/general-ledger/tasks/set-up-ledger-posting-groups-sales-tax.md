@@ -24,7 +24,7 @@ ms.lasthandoff: 10/26/2017
 ---
 # <a name="set-up-ledger-posting-groups-for-sales-tax"></a>Ställ in redovisningsbokföringsgrupper för moms
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Moms beräknas och bokförs på huvudkontona som anges i redovisningsbokföringsgrupperna. Redovisningbokföringsgrupper kopplas till varje momskod. Du kan ställa in enskilda redovisningsbokföringsgrupper för varje momskod, och du kan använda en redovisningsbokföringsgrupp för alla momskoder eller tilldela flera redovisningsbokföringsgrupper till momskoderna. I den här registreringen används demonstrationsföretaget DEMF. 
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="fulfill-sales-agreements"></a>Uppfyll försäljningsavtal
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 I den här proceduren visas hur du uppfyller ett försäljningsavtal genom att koppla försäljningsorder med det. Du kan köra den här proceduren i demonstrationsföretaget USMF eller på dina egna data. Innan du startar guiden ser du till att du har ett gällande försäljningsavtal av typen Utfästelse för produktvärde. Alternativt kan du köra den guiden som heter ”Skapa försäljningsavtal".  
 

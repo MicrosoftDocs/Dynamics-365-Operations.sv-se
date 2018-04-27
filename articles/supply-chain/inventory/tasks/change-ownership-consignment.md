@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="change-the-ownership-of-consignment-inventory-based-on-production-demand"></a>Ändra ägarskapet för försändelselagret baserat på produktionsbegäran
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 I den här proceduren visas hur du ändrar ägaren till försändelselagret, från leverantören till din juridiska person, om det finns en efterfrågan på lagret i produktionen. Den här ändringen i ägarskap görs genom att skapa och bokföra en ändringsjournal för lagerägarskap. Ändringsjournalraderna för ägarskap kan skapas manuellt eller, som visas i denna registrering, baseras på befintliga produktionsbegäran. Vanligtvis utför en produktionslagerarbetsledare denna uppgift. Du kan använda den här proceduren i demonstrationsföretaget USMF eller på dina egna data. Om du använder dina egna data, kontrollera då att du har följande förutsättningar: ett journalnamn för lager som har skapats för lageräganderättsändring, fysiskt registrerade leverantörsägda behållningsartiklar, samt en eller flera produktionsorderrader för materialet. Denna procedur är avsedd för en funktion som lades till i Dynamics 365 for Operations, version 1611.
 

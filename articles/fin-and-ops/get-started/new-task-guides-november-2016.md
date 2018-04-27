@@ -18,21 +18,20 @@ ms.author: josaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 7c3ecbfaa4e45401b8c4fffe7e7639da9e0474e6
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 3db07708df55c24108c66797885318486b2b1003
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="new-or-updated-task-guides-november-2016"></a>Nya eller uppdaterade uppgiftsguider (november 2016)
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Detta avsnitt anger nya eller uppdaterade uppgiftsguider som släpptes för Microsoft (november 2016 - alla språk) APQC Unified Library för Microsoft Dynamics 365 for Operations. Inge nytt Komma igång-biblioteket gavs ut.
 
-APQC Unified Library (November 2016 -- alla språk) innehåller uppgiftsguiderna som ska användas om du behöver hjälp med Microsoft Dynamics 365 for Operations, Microsoft Dynamics 365 for Operations plattformsuppdatering 3, Microsoft Dynamics AX plattformsuppdatering 2, Dynamics AX May 2016-uppdateringen och Microsoft Dynamics AX februari 2016-utgåvan. Mer information om dessa utgåvor finns i [Vad är nytt eller ändrat](whats-new-changed.md). Lokaliserade versioner av uppgiftsguiderna finns tillgängliga i detta bibliotek. Mer information om hur du ansluter Hjälp-systemet till ett uppgiftsguidebibliotek hittar du i [Komma igång med Hjälp](help-overview.md). **Obs!** En asterisk (**\***) bredvid rubriken för en affärsprocessmodellerar (BPM)-rad visar att uppgiftsguiden för den affärsprocessen skapades för Dynamics AX 365 for Operations november 2016-uppdateringen och stöds inte i tidigare versioner av Microsoft Dynamics AX.
+APQC Unified Library (November 2016 -- alla språk) innehåller uppgiftsguiderna som ska användas om du behöver hjälp med Microsoft Dynamics 365 for Operations, Microsoft Dynamics 365 for Operations plattformsuppdatering 3, Microsoft Dynamics AX plattformsuppdatering 2, Dynamics AX May 2016-uppdateringen och Microsoft Dynamics AX februari 2016-utgåvan. Mer information om dessa utgåvor finns i [Vad är nytt eller ändrat](whats-new-changed.md). Lokaliserade versioner av uppgiftsguiderna finns tillgängliga i detta bibliotek. Mer information om hur du ansluter Hjälp-systemet till ett uppgiftsguidebibliotek hittar du i [Komma igång med Hjälp](help-overview.md). <strong>Obs!</strong> En asterisk (<strong>\</strong>*) bredvid rubriken för en affärsprocessmodellerar (BPM)-rad visar att uppgiftsguiden för den affärsprocessen skapades för Dynamics AX 365 for Operations november 2016-uppdateringen och stöds inte i tidigare versioner av Microsoft Dynamics AX.
 
 ### <a name="accounts-payable"></a>Leverantörsreskontra
 
@@ -139,192 +138,192 @@ APQC Unified Library (November 2016 -- alla språk) innehåller uppgiftsguiderna
 
 ### <a name="countryregion-functionality"></a>Funktionsland/-region
 
-| BPM-rad                                                                                                                             | Land/region                    |
-|--------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------|
-| Lägga till BAS-rapportrutor och generera den australiska affärsaktivitetsrapporten (BAS)                                                    | Australien och Nya Zeeland         |
-| Ställ in orsakskoder för BAS för Australien                                                                                                | Australien och Nya Zeeland         |
-| **\***Kontinuitetskontroll för kinesisk verifikation                                                                                               | Kina                             |
-| **\***CN-00010 Kinesisk hierarki för kontoplan                                                                                  | Kina                             |
-| **\***CN-00016 Användaråtgärdslogg efter kinesiska arbetsregler                                                                              | Kina                             |
-| **\***Inställningar för export av Golden Tax-integrering                                                                                            | Kina                             |
-| **\***Bokför verifikationer från andra moduler, som försäljningsfakturor                                                                          | Kina                             |
-| **\***Bokför verifikationer från den allmänna journalen                                                                                         | Kina                             |
-| **\***Skapa grundläggande momsintegrationsprofil för Kina                                                                                 | Kina                             |
-| **\***Skapa kinesiska verifikationer                                                                                                        | Kina                             |
-| Skapa och bokföra en kundfaktura för en kund inom offentlig sektor                                                                      | Danmark                           |
-| Skapa och bokföra en fritextfaktura för en kund inom offentlig sektor                                                                     | Danmark                           |
-| Skapa och bokföra en projektfaktura för en kund inom offentlig sektor                                                                       | Danmark                           |
-| DK-00007 FIK 752 gireringsblankett/Bokför fritextfaktura med en betalningsblankett                                               | Danmark                           |
-| DK-00007 FIK 752 gireringsblankett/Bokför projektfaktura med en betalningsblankett                                                 | Danmark                           |
-| Importera elektronisk OIOUBL-faktureringskonfiguration                                                                                    | Danmark                           |
-| Ställ in kundkonton för elektroniska OIOUBL-fakturor                                                                             | Danmark                           |
-| Ställ in elektroniska OIOUBL-fakturor                                                                                                   | Danmark                           |
-| Ställ in format för betalningsblankett                                                                                                           | Danmark                           |
-| **\***EEU-00047 Förskottsbetalning till medarbetare                                                                                          | Östeuropa                    |
-| Skapa och exportera leverantörbetalningar med ett ISO20022-betalningsformat                                                                      | Europa                            |
-| Skapa betalningar för kunder som har autogiromedgivanden                                                                          | Europa                            |
-| **\***EE-00015 Verktyg för generering av betalningsreferens                                                                                     | Europa                            |
-| EUR-00002 Generera en Intrastat-deklaration för EU                                                                                       | Europa                            |
-| **\***EUR-00002 Ange en fraktadress för en inomeuropeisk transaktion                                                          | Europa                            |
-| EUR-00002 Överföra transaktioner till Intrastat                                                                                     | Europa                            |
-| EUR-00011 Generera rapport med lista över försäljning inom EU                                                                                          | Europa                            |
-| EUR-00011 Konfigurera rapportering av EU-säljlista                                                                                             | Europa                            |
-| EUR-00012 Utfärda ett EU-mottagningskvitto                                                                                              | Europa                            |
-| EUR-00012 Ta emot ett EU-mottagningscertifikat                                                                                            | Europa                            |
-| **\***EUR-00015 Partsökning via moms-ID                                                                                            | Europa                            |
-| **\***EUR-00015 Registrering av moms-ID för leverantör                                                                                        | Europa                            |
-| **\***EUR-00015 Skapa moms-ID                                                                                                        | Europa                            |
-| **\***HU-00001 Beräkning av valutakurs                                                                                             | Europa                            |
-| Importera konfiguration av ISO20022-kreditöverföring                                                                                        | Europa                            |
-| Importera konfiguration för ISO20022-autogiro                                                                                           | Europa                            |
-| **\***LT-00003 Överföringsdokumentet för transport av varor inom företaget/Generera ett dokument för överföring för en intern lageröverföring   | Europa                            |
-| **\***LT-00003 Överföringsdokumentet för transport av varor inom företaget/Ställ in överföringsdokumenten för transport av varor inom ett företag | Europa                            |
-| **\***NO-00002 Kundbetalning baserat på betalnings-ID                                                                                  | Europa                            |
-| Ställ in företagets bankkonton för ISO20022-kreditöverföringar                                                                           | Europa                            |
-| Ställ in företagets bankkonton för ISO20022-autogiron                                                                              | Europa                            |
-| Ställ in kunder och kundbankkonton för ISO20022-autogiron                                                               | Europa                            |
-| Ställ in en betalningsmetod för ISO20022-kreditöverföringar                                                                                | Europa                            |
-| Ställ in en betalningsmetod för ISO20022-autogiro                                                                                   | Europa                            |
-| Ställ in leverantörer och leverantörsbankkonton för ISO20022-krediteringsöverföringar                                                                | Europa                            |
-| Upprätta betalningsmetoder för kunder                                                                                                | Frankrike                            |
-| FR-00002 Kund- och leverantörskonto                                                                                                 | Frankrike                            |
-| FR-00003 NAF-koder och SIRET-nummer                                                                                                 | Frankrike                            |
-| FR-00004 Godkänna och bokföra utställda växlar                                                                                      | Frankrike                            |
-| FR-00004 Franska växlar och skuldsedlar                                                                               | Frankrike                            |
-| FR-00004 Bokföra journal för utställda växelprotester                                                                                  | Frankrike                            |
-| FR-00004 Bokföra journalen för återutställda växlar                                                                                       | Frankrike                            |
-| FR-00004 Ställa in betalningsmetod                                                                                                     | Frankrike                            |
-| FR-00004 Uppdatera betalningsmetod för kund                                                                                        | Frankrike                            |
-| FR-00018 Daglig ränteberäkning för sen betalning och engångsbelopp på fakturan och kravbrevet                               | Frankrike                            |
-| Anpassa den tyska verifieringsfilkonfigurationen                                                                                            | Tyskland                           |
-| DE-00002 Avskrivningsjusteringar för ytterligare anskaffningar under det andra året                                                     | Tyskland                           |
-| DE-00003 Överföring av elektronisk momsdeklaration (ELSTER)                                                                         | Tyskland                           |
-| ER konfigurera destinationer                                                                                                            | Tyskland                           |
-| ER Konfigurera format för inventering och summering (Del 1: Skapa format)                                                               | Tyskland                           |
-| ER Konfigurera format för att utföra inventering och summering (Del 2: Konfigurera beräkningar)                                                      | Tyskland                           |
-| ER Konfigurera format för att utföra inventering och summering (Del 3: Använd beräkningar för att generera utmatningen)                                         | Tyskland                           |
-| ER Konfigurera format för inventering och summering (Del 4: Köra format)                                                                  | Tyskland                           |
-| ER Skapa en konfigurationsleverantör och välj den som aktiv                                                                             | Tyskland                           |
-| ER Designa en konfiguration för rapportgenerering i OPENXML-format (november 2016)                                            | Tyskland                           |
-| ER Designa domänspecifik datamodell (november 2016)                                                                                 | Tyskland                           |
-| ER importera en konfiguration från Lifecycle Services                                                                                    | Tyskland                           |
-| ER överför en konfiguration till Lifecycle Services                                                                                    | Tyskland                           |
-| ER Använd dokumenthanteringsfiler i formatutmatningar (Del 1: Förbered datamodellen)                                                      | Tyskland                           |
-| ER Använd dokumenthanteringsfiler i formatutmatningar (Del 2: Utöka datamodellen)                                                       | Tyskland                           |
-| ER Använd dokumenthanteringsfiler i formatutmatningar (Del 3: Skapa format)                                                           | Tyskland                           |
-| ER Använd dokumenthanteringsfiler i formatutmatningar (Del 4: Kör format)                                                              | Tyskland                           |
-| ER Använd dokumenthanteringsfiler i formatutmatningar (Del 5: ändra och kör format)                                                   | Tyskland                           |
-| ER Använd ekonomiska dimensioner som en datakälla (Del 1: Designa datamodell)                                                             | Tyskland                           |
-| ER Använd ekonomiska dimensioner som en datakälla (Del 2: Modellmappning)                                                                 | Tyskland                           |
-| ER Använd ekonomiska dimensioner som en datakälla (Del 3: Designa rapporten)                                                             | Tyskland                           |
-| ER Använd ekonomiska dimensioner som en datakälla (Del 4: Kör rapporten)                                                                | Tyskland                           |
-| ER Använd horisontellt expanderbara intervall för att dynamiskt lägga till kolumner i Excel-rapporter (Del 1: Designformat)                            | Tyskland                           |
-| ER Använd horisontellt expanderbara intervall för att dynamiskt lägga till kolumner i Excel-rapporter (Del 2: Kör format)                               | Tyskland                           |
-| Generera tysk verifieringsfil                                                                                                           | Tyskland                           |
-| Importera den tyska verifieringsfilkonfigurationen                                                                                               | Tyskland                           |
-| **\***EUR-00018 Momsavstämningsrapport                                                                                            | Island                           |
-| IS-00006 Leverantörsfakturadeklaration/Skapa ett leverantörskonto och koppla fakturadeklarationen                                       | Island                           |
-| IS-00006 Leverantörsfakturadeklaration/Ställ in en fakturadeklaration för leverantörer                                                        | Island                           |
-| IS-00006 Leverantörsfakturadeklaration/Uppdatera leverantörsfakturadeklarationer och generera rapporten                                       | Island                           |
-| Underhåll kontoplan/Konfigurera obligatoriska betalningsreferenser                                                                       | Island                           |
-| Anskaffa en anläggningstillgång med skyldigheter vid utrangering av tillgång                                                                              | Japan                             |
-| Anskaffa anläggningstillgångar, begär statsbidragssubvention                                                                                 | Japan                             |
-| Justering av uppskattningen av utrangering av tillgångar                                                                               | Japan                             |
-| Fördela det bärande beloppet med delad tillgång och goodwill till kassagenererande enheter                                                   | Japan                             |
-| Ändra avskrivningsmetoden under tillgångens livstid för en tillgång                                                                   | Japan                             |
-| Ändra avskrivningsmetoden under tillgångens livstid för räkenskapsboken                                                                        | Japan                             |
-| Konfigurera accelererade avskrivningparametrar och bokföringsprofiler                                                                   | Japan                             |
-| CN-00004 Avskrivningsallokering för anläggningstillgång (JP-)                                                                                   | Japan                             |
-| Konfigurera en avskrivningsprofil och en bokföringsprofil för ytterligare avskrivning                                                   | Japan                             |
-| Konfigurera en avskrivningsprofil och en bokföringsprofil för specialavskrivning                                                      | Japan                             |
-| Konfigurera konsoliderade fakturaparametrar och inställningar för leverantörsreskontra                                                             | Japan                             |
-| Konfigurera huvudkonton för bokföring av utrangering av anläggningstillgångar och marknadsdiskonteringsränta                                            | Japan                             |
-| Skapa en anläggningstillgång med ytterligare avskrivning                                                                                    | Japan                             |
-| Skapa en profil för särskild avskrivning för anläggningstillgång                                                                               | Japan                             |
-| Skapa accelererad avskrivningsprofil och tilldela den till räkenskapsboken                                                                        | Japan                             |
-| Skapa ett accelererat avskrivningsdokument och ange användningsdata                                                                     | Japan                             |
-| Skapa och tilldela en utrustningsgrupp                                                                                                 | Japan                             |
-| Skapa och tilldela förminskningspostdokumentet                                                                                           | Japan                             |
-| Öppna och bekräfta en leverantörskonsoliderad faktura på nytt                                                                                     | Japan                             |
-| Skapa och bekräfta erkännandetest                                                                                                  | Japan                             |
-| Skapa CGU-grupper och kassagenererande enheter                                                                                          | Japan                             |
-| Skapa engångsbeloppavskrivningtillgångar med hjälp av metoden dela lika                                                                     | Japan                             |
-| Definiera den overksamma perioden för anläggningstillgångar och validera avskrivningprocessen                                                                           | Japan                             |
-| Skriva av och periodisera ränteutgiften för skyldigheter vid utrangering av tillgång                                                          | Japan                             |
-| Avskrivning av anläggningstillgångar med den bokförda förminskningsposten                                                                             | Japan                             |
-| Avyttra en anläggningstillgång med avdragsregistrering                                                                                        | Japan                             |
-| Aktivera JBA betalningsfilformat                                                                                                       | Japan                             |
-| Ange tidsplan för avskrivning och koppla till den här avskrivningsprofilen                                                               | Japan                             |
-| Generera och bokföra betalningsavgift                                                                                                        | Japan                             |
-| Generera en EFT-betalningsfil i JBA-format                                                                                     | Japan                             |
-| Generera rapport för japansk konsumtionsskatt                                                                                                | Japan                             |
-| Importera en kundbetalning med ett JBA-filformat                                                                                     | Japan                             |
-| Fråga om betalningsavgift i journalen                                                                                                  | Japan                             |
-| Fråga om relaterade transaktioner till utrangering av tillgångar                                                                    | Japan                             |
-| Fråga om avdragsgilla utgifter                                                                                                       | Japan                             |
-| JP-00005 Inleveransjournal i T-kontoformulär (Japan)                                                                                     | Japan                             |
-| JP-00011 Konsoliderad faktura - KR – Skapa och bekräfta konsoliderad kundfaktura                                              | Japan                             |
-| JP-00027 Formulär 26 för avskrivbar momsdeklaration                                                                                     | Japan                             |
-| Underhålla avdragsgilla anläggningstillgångar huvuddatafiler för utgifter                                                                       | Japan                             |
-| Underhålla försämringsindikatorer för enskilda tillgångar                                                                                  | Japan                             |
-| Betala en leverantörstransaktion genom att skriva på en kundväxel                                                                    | Japan                             |
-| Periodisk kvittning av över- eller underavskrivning                                                                                   | Japan                             |
-| Föreslå ytterligare avskrivning                                                                                                      | Japan                             |
-| Föreslå och bokföra accelererad avskrivning                                                                                        | Japan                             |
-| Föreslå och bokföra nedskrivningsbeloppet efter batch                                                                                      | Japan                             |
-| Föreslå och bokföra nedskrivningsbeloppet genom att använda journal för anläggningstillgångar                                                                  | Japan                             |
-| Föreslå och bokföra nedskrivningsbeloppet på en kassagenererande enhet                                                                     | Japan                             |
-| Föreslå särskild avskrivning                                                                                                         | Japan                             |
-| Öppna och redigera en kundkonsoliderad faktura på nytt                                                                                      | Japan                             |
-| Öppna och redigera en leverantörskonsoliderad faktura på nytt                                                                                        | Japan                             |
-| Återför en signerad växel                                                                                                 | Japan                             |
-| Kör redovisningstext och beräkna nedskrivningsbeloppet för enskilda tillgångar                                                    | Japan                             |
-| Kvitta en signerad växel                                                                                                  | Japan                             |
-| Kvitta kundkonsoliderade fakturor med hjälp av en betalningsjournal                                                                     | Japan                             |
-| Kvitta leverantörkonsoliderade fakturor med hjälp av en betalningsjournal                                                                       | Japan                             |
-| Kvitta leverantörkonsoliderade fakturor med hjälp av kvitteringstransaktioner                                                                     | Japan                             |
-| Kvitta leverantörkonsoliderade fakturor med hjälp av kvitteringstransaktioner                                                                     | Japan                             |
-| Ställ in en kund och en försäljningsorder som mål för konsoliderad faktura                                                               | Japan                             |
-| Ställ in dokument om skyldighet till utrangering av tillgångar och ange ARO-belopp för en anläggningstillgång                                                   | Japan                             |
-| Ställa in konsoliderade fakturor                                                                                                         | Japan                             |
-| Ställ in vanliga parametrar för nedskrivningsredovisning och bokföringsprofil                                                                    | Japan                             |
-| Ställ in betalning för Japan genom att skriva på en kundväxel                                                                         | Japan                             |
-| Ställ in huvuddata för inkludering av avdragsgilla utgifter för flera bokföringsskikt                                                  | Japan                             |
-| Ställ in rapport för japansk konsumtionsskatt                                                                                                   | Japan                             |
-| Ställ in betalningsavgift för Japan                                                                                                          | Japan                             |
-| Ställ in leverantörsunderlag och inköpsorder som mål för konsoliderad faktura                                                          | Japan                             |
-| Använd monteringslistan för en anläggningstillgång                                                                                                   | Japan                             |
-| Använd demonteringslistan för anläggningstillgångar                                                                                                | Japan                             |
-| MX-00006 Ställa in momskod                                                                                                       | Mexiko                            |
-| MX-00007 Kundregistrerings-ID och annan information                                                                             | Mexiko                            |
-| MX-00008: Leverantörsregistrerings-ID                                                                                                    | Mexiko                            |
-| MX-00010 Annullera en e-faktura                                                                                                | Mexiko                            |
-| MX-00010 E-fakturering CFDI                                                                                                            | Mexiko                            |
-| MX-00010 Ange momsregistrerings-ID för mexikanska juridiska personer                                                                       | Mexiko                            |
-| MX-00010 Begära och skriva ut en e-faktura                                                                                     | Mexiko                            |
-| MX-00010 Bokföra en fritextfaktura                                                                                                    | Mexiko                            |
-| MX-00010 Inställningsparametrar för en e-faktura                                                                                    | Mexiko                            |
-| MX-00020: Producera mexikansk elektronisk redovisningsrapport version 1.1                                                            | Mexiko                            |
-| MX-00020 Ställa in kontoplaner för en juridisk person i Mexiko                                                                   | Mexiko                            |
-| MX-00020 - Ange RFC-registrerings-ID för mexikanska bankkonton                                                                 | Mexiko                            |
-| NL-00003 Semansys XBRL-integrering                                                                                                   | Nederländerna                       |
-| NL-00010 Elektronisk momsdeklaration (EVAT)                                                                                          | Nederländerna                       |
-| MY-00003 Hantera kunds debet- och kreditfaktura för GST (moms)                                                                          | Singapore, Malaysia och Thailand |
-| MY-00004 Hantera leverantörs debet- och kreditfaktura för GST                                                                            | Singapore, Malaysia och Thailand |
-| MY-00005 Skriva ut GST-momsfakturor                                                                                                      | Singapore, Malaysia och Thailand |
-| MY-00006 01 Inställning av GST-lättnadssatser                                                                                                | Singapore, Malaysia och Thailand |
-| MY-00006 02 Skriva ut GST-kundfakturor med en lättnadssats                                                                         | Singapore, Malaysia och Thailand |
-| MY-00007 Självfakturerade fakturor                                                                                                        | Singapore, Malaysia och Thailand |
-| MY-00010 GST - Generera GAF-filer i krävt format                                                                             | Singapore, Malaysia och Thailand |
-| MY-00011 02 Generera kunds debetfaktura för projektförsäljningar                                                                           | Singapore, Malaysia och Thailand |
-| MY-00011 03 Generera kunds kreditfaktura för projektförsäljningar                                                                          | Singapore, Malaysia och Thailand |
-|  Skapa en inköpsorder som omfattar artiklar där moms ska återföras                                                            | Storbritannien                    |
-|  Skapa en försäljningsorder som omfattar artiklar där moms ska återföras                                                               | Storbritannien                    |
-| GB-00002 Ställa in artikelmomsgrupper, regler och parametrar för återfört tillägg                                                                | Storbritannien                    |
-| GB-00009 Skapa en kreditfaktura för kvittningsrabatten.                                                                             | Storbritannien                    |
-| GB-00009 Inställningsparametrar för kreditfaktura för snabb betalningsrabatt                                                                 | Storbritannien                    |
-|  Ställa in en artikelmomsgrupp för omvänd moms                                                                                  | Storbritannien                    |
-|  Ställa in momsgrupper för omvänd moms                                                                                       | Storbritannien                    |
+|                                                                     BPM-rad                                                                      |          Land/region           |
+|---------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------|
+|                                 Lägga till BAS-rapportrutor och generera den australiska affärsaktivitetsrapporten (BAS)                                 |     Australien och Nya Zeeland     |
+|                                                       Ställ in orsakskoder för BAS för Australien                                                       |     Australien och Nya Zeeland     |
+|                                                <strong>\</strong>*Kontinuitetskontroll för kinesisk verifikation                                                |               Kina               |
+|                                         <strong>\</strong>*CN-00010 Kinesisk hierarki för kontoplan                                          |               Kina               |
+|                                       <strong>\</strong>*CN-00016 Användaråtgärdslogg efter kinesiska arbetsregler                                        |               Kina               |
+|                                              <strong>\</strong>*Inställningar för export av Golden Tax-integrering                                               |               Kina               |
+|                                     <strong>\</strong>*Bokför verifikationer från andra moduler, som försäljningsfakturor                                      |               Kina               |
+|                                             <strong>\</strong>*Bokför verifikationer från den allmänna journalen                                             |               Kina               |
+|                                         <strong>\</strong>*Skapa grundläggande momsintegrationsprofil för Kina                                         |               Kina               |
+|                                                    <strong>\</strong>*Skapa kinesiska verifikationer                                                     |               Kina               |
+|                                          Skapa och bokför en kundfaktura för en kund inom offentlig sektor                                          |              Danmark              |
+|                                         Skapa och bokföra en fritextfaktura för en kund inom offentlig sektor                                          |              Danmark              |
+|                                          Skapa och bokföra en projektfaktura för en kund inom offentlig sektor                                           |              Danmark              |
+|                              DK-00007 FIK 752 gireringsblankett/Bokför fritextfaktura med en betalningsblankett                               |              Danmark              |
+|                               DK-00007 FIK 752 gireringsblankett/Bokför projektfaktura med en betalningsblankett                                |              Danmark              |
+|                                                 Importera elektronisk OIOUBL-faktureringskonfiguration                                                 |              Danmark              |
+|                                             Ställ in kundkonton för elektroniska OIOUBL-fakturor                                              |              Danmark              |
+|                                                        Ställ in elektroniska OIOUBL-fakturor                                                         |              Danmark              |
+|                                                            Ställ in format för betalningsblankett                                                             |              Danmark              |
+|                                             <strong>\</strong>*EEU-00047 Förskottsbetalning till medarbetare                                              |          Östeuropa           |
+|                                          Skapa och exportera leverantörbetalningar med ett ISO20022-betalningsformat                                          |              Europa               |
+|                                            Skapa betalningar för kunder som har autogiromedgivanden                                            |              Europa               |
+|                                           <strong>\</strong>*EE-00015 Verktyg för generering av betalningsreferens                                           |              Europa               |
+|                                                  EUR-00002 Generera en Intrastat-deklaration för EU                                                   |              Europa               |
+|                             <strong>\</strong>*EUR-00002 Ange en fraktadress för en inomeuropeisk transaktion                              |              Europa               |
+|                                                 EUR-00002 Överföra transaktioner till Intrastat                                                  |              Europa               |
+|                                                    EUR-00011 Generera rapport med lista över försäljning inom EU                                                    |              Europa               |
+|                                                     EUR-00011 Konfigurera rapportering av EU-säljlista                                                      |              Europa               |
+|                                                      EUR-00012 Utfärda ett EU-mottagningskvitto                                                      |              Europa               |
+|                                                     EUR-00012 Ta emot ett EU-mottagningscertifikat                                                     |              Europa               |
+|                                              <strong>\</strong>*EUR-00015 Partsökning via moms-ID                                               |              Europa               |
+|                                            <strong>\</strong>*EUR-00015 Registrering av moms-ID för leverantör                                             |              Europa               |
+|                                                    <strong>\</strong>*EUR-00015 Skapa moms-ID                                                     |              Europa               |
+|                                               <strong>\</strong>*HU-00001 Beräkning av valutakurs                                               |              Europa               |
+|                                                   Importera konfiguration av ISO20022-kreditöverföring                                                   |              Europa               |
+|                                                    Importera konfiguration för ISO20022-autogiro                                                     |              Europa               |
+|  <strong>\</strong>*LT-00003 Överföringsdokumentet för transport av varor inom företaget/Generera ett dokument för överföring för en intern lageröverföring  |              Europa               |
+| <strong>\</strong>*LT-00003 Överföringsdokumentet för transport av varor inom företaget/Ställ in överföringsdokumenten för transport av varor inom ett företag |              Europa               |
+|                                         <strong>\</strong>*NO-00002 Kundbetalning baserat på betalnings-ID                                          |              Europa               |
+|                                            Ställ in företagets bankkonton för ISO20022-kreditöverföringar                                             |              Europa               |
+|                                              Ställ in företagets bankkonton för ISO20022-autogiron                                              |              Europa               |
+|                                      Ställ in kunder och kundbankkonton för ISO20022-autogiron                                       |              Europa               |
+|                                               Ställ in en betalningsmetod för ISO20022-kreditöverföringar                                               |              Europa               |
+|                                                Ställ in en betalningsmetod för ISO20022-autogiro                                                 |              Europa               |
+|                                       Ställ in leverantörer och leverantörsbankkonton för ISO20022-krediteringsöverföringar                                       |              Europa               |
+|                                                       Upprätta betalningsmetoder för kunder                                                       |              Frankrike               |
+|                                                       FR-00002 Kund- och leverantörskonto                                                        |              Frankrike               |
+|                                                       FR-00003 NAF-koder och SIRET-nummer                                                        |              Frankrike               |
+|                                                  FR-00004 Godkänna och bokföra utställda växlar                                                  |              Frankrike               |
+|                                              FR-00004 Franska växlar och skuldsedlar                                               |              Frankrike               |
+|                                                FR-00004 Bokföra journal för utställda växelprotester                                                |              Frankrike               |
+|                                                  FR-00004 Bokföra journalen för återutställda växlar                                                   |              Frankrike               |
+|                                                         FR-00004 Ställa in betalningsmetod                                                          |              Frankrike               |
+|                                                   FR-00004 Uppdatera betalningsmetod för kund                                                   |              Frankrike               |
+|                      FR-00018 Daglig ränteberäkning för sen betalning och engångsbelopp på fakturan och kravbrevet                       |              Frankrike               |
+|                                                     Anpassa den tyska verifieringsfilkonfigurationen                                                     |              Tyskland              |
+|                                 DE-00002 Avskrivningsjusteringar för ytterligare anskaffningar under det andra året                                  |              Tyskland              |
+|                                           DE-00003 Överföring av elektronisk momsdeklaration (ELSTER)                                            |              Tyskland              |
+|                                                             ER konfigurera destinationer                                                             |              Tyskland              |
+|                                      ER Konfigurera format för inventering och summering (Del 1: Skapa format)                                       |              Tyskland              |
+|                                  ER Konfigurera format för att utföra inventering och summering (Del 2: Konfigurera beräkningar)                                  |              Tyskland              |
+|                           ER Konfigurera format för att utföra inventering och summering (Del 3: Använd beräkningar för att generera utmatningen)                            |              Tyskland              |
+|                                        ER Konfigurera format för inventering och summering (Del 4: Köra format)                                        |              Tyskland              |
+|                                             ER Skapa en konfigurationsleverantör och välj den som aktiv                                              |              Tyskland              |
+|                             ER Designa en konfiguration för rapportgenerering i OPENXML-format (november 2016)                             |              Tyskland              |
+|                                               ER Designa domänspecifik datamodell (november 2016)                                                |              Tyskland              |
+|                                                 ER importera en konfiguration från Lifecycle Services                                                 |              Tyskland              |
+|                                                 ER överför en konfiguration till Lifecycle Services                                                 |              Tyskland              |
+|                                  ER Använd dokumenthanteringsfiler i formatutmatningar (Del 1: Förbered datamodellen)                                  |              Tyskland              |
+|                                  ER Använd dokumenthanteringsfiler i formatutmatningar (Del 2: Utöka datamodellen)                                   |              Tyskland              |
+|                                    ER Använd dokumenthanteringsfiler i formatutmatningar (Del 3: Skapa format)                                     |              Tyskland              |
+|                                      ER Använd dokumenthanteringsfiler i formatutmatningar (Del 4: Kör format)                                      |              Tyskland              |
+|                                ER Använd dokumenthanteringsfiler i formatutmatningar (Del 5: ändra och kör format)                                 |              Tyskland              |
+|                                     ER Använd ekonomiska dimensioner som en datakälla (Del 1: Designa datamodell)                                      |              Tyskland              |
+|                                       ER Använd ekonomiska dimensioner som en datakälla (Del 2: Modellmappning)                                        |              Tyskland              |
+|                                     ER Använd ekonomiska dimensioner som en datakälla (Del 3: Designa rapporten)                                      |              Tyskland              |
+|                                       ER Använd ekonomiska dimensioner som en datakälla (Del 4: Kör rapporten)                                       |              Tyskland              |
+|                     ER Använd horisontellt expanderbara intervall för att dynamiskt lägga till kolumner i Excel-rapporter (Del 1: Designformat)                     |              Tyskland              |
+|                      ER Använd horisontellt expanderbara intervall för att dynamiskt lägga till kolumner i Excel-rapporter (Del 2: Kör format)                       |              Tyskland              |
+|                                                            Generera tysk verifieringsfil                                                             |              Tyskland              |
+|                                                      Importera den tyska verifieringsfilkonfigurationen                                                       |              Tyskland              |
+|                                              <strong>\</strong>*EUR-00018 Momsavstämningsrapport                                               |              Island              |
+|                          IS-00006 Leverantörsfakturadeklaration/Skapa ett leverantörskonto och koppla fakturadeklarationen                           |              Island              |
+|                                   IS-00006 Leverantörsfakturadeklaration/Ställ in en fakturadeklaration för leverantörer                                   |              Island              |
+|                          IS-00006 Leverantörsfakturadeklaration/Uppdatera leverantörsfakturadeklarationer och generera rapporten                           |              Island              |
+|                                          Underhåll kontoplan/Konfigurera obligatoriska betalningsreferenser                                           |              Island              |
+|                                              Anskaffa en anläggningstillgång med skyldigheter vid utrangering av tillgång                                              |               Japan               |
+|                                               Anskaffa anläggningstillgångar, begär statsbidragssubvention                                                |               Japan               |
+|                                              Justering av uppskattningen av utrangering av tillgångar                                               |               Japan               |
+|                                Fördela det bärande beloppet med delad tillgång och goodwill till kassagenererande enheter                                 |               Japan               |
+|                                        Ändra avskrivningsmetoden under tillgångens livstid för en tillgång                                         |               Japan               |
+|                                           Ändra avskrivningsmetoden under tillgångens livstid för räkenskapsboken                                           |               Japan               |
+|                                        Konfigurera accelererade avskrivningparametrar och bokföringsprofiler                                         |               Japan               |
+|                                                CN-00004 Avskrivningsallokering för anläggningstillgång (JP-)                                                 |               Japan               |
+|                                Konfigurera en avskrivningsprofil och en bokföringsprofil för ytterligare avskrivning                                 |               Japan               |
+|                                  Konfigurera en avskrivningsprofil och en bokföringsprofil för specialavskrivning                                  |               Japan               |
+|                                     Konfigurera konsoliderade fakturaparametrar och inställningar för leverantörsreskontra                                      |               Japan               |
+|                             Konfigurera huvudkonton för bokföring av utrangering av anläggningstillgångar och marknadsdiskonteringsränta                             |               Japan               |
+|                                                 Skapa en anläggningstillgång med ytterligare avskrivning                                                 |               Japan               |
+|                                              Skapa en profil för särskild avskrivning för anläggningstillgång                                               |               Japan               |
+|                                           Skapa accelererad avskrivningsprofil och tilldela den till räkenskapsboken                                           |               Japan               |
+|                                         Skapa ett accelererat avskrivningsdokument och ange användningsdata                                          |               Japan               |
+|                                                       Skapa och tilldela en utrustningsgrupp                                                        |               Japan               |
+|                                                    Skapa och tilldela förminskningspostdokumentet                                                     |               Japan               |
+|                                                 Öppna och bekräfta en leverantörskonsoliderad faktura på nytt                                                  |               Japan               |
+|                                                        Skapa och bekräfta erkännandetest                                                        |               Japan               |
+|                                                    Skapa CGU-grupper och kassagenererande enheter                                                    |               Japan               |
+|                                         Skapa engångsbeloppavskrivningtillgångar med hjälp av metoden dela lika                                          |               Japan               |
+|                                            Definiera den overksamma perioden för anläggningstillgångar och validera avskrivningprocessen                                             |               Japan               |
+|                                    Skriva av och periodisera ränteutgiften för skyldigheter vid utrangering av tillgång                                    |               Japan               |
+|                                             Avskrivning av anläggningstillgångar med den bokförda förminskningsposten                                              |               Japan               |
+|                                                   Avyttra en anläggningstillgång med avdragsregistrering                                                   |               Japan               |
+|                                                          Aktivera JBA betalningsfilformat                                                           |               Japan               |
+|                                      Ange tidsplan för avskrivning och koppla till den här avskrivningsprofilen                                       |               Japan               |
+|                                                           Generera och bokföra betalningsavgift                                                           |               Japan               |
+|                                                 Generera en EFT-betalningsfil i JBA-format                                                  |               Japan               |
+|                                                       Generera rapport för japansk konsumtionsskatt                                                       |               Japan               |
+|                                                 Importera en kundbetalning med ett JBA-filformat                                                  |               Japan               |
+|                                                        Fråga om betalningsavgift i journalen                                                        |               Japan               |
+|                                         Fråga om relaterade transaktioner till utrangering av tillgångar                                         |               Japan               |
+|                                                          Fråga om avdragsgilla utgifter                                                           |               Japan               |
+|                                                 JP-00005 Inleveransjournal i T-kontoformulär (Japan)                                                  |               Japan               |
+|                              JP-00011 Konsoliderad faktura - KR – Skapa och bekräfta konsoliderad kundfaktura                              |               Japan               |
+|                                                 JP-00027 Formulär 26 för avskrivbar momsdeklaration                                                  |               Japan               |
+|                                          Underhålla avdragsgilla anläggningstillgångar huvuddatafiler för utgifter                                           |               Japan               |
+|                                                Underhålla försämringsindikatorer för enskilda tillgångar                                                |               Japan               |
+|                                         Betala en leverantörstransaktion genom att skriva på en kundväxel                                         |               Japan               |
+|                                                Periodisk kvittning av över- eller underavskrivning                                                 |               Japan               |
+|                                                          Föreslå ytterligare avskrivning                                                          |               Japan               |
+|                                                   Föreslå och bokföra accelererad avskrivning                                                   |               Japan               |
+|                                                  Föreslå och bokföra nedskrivningsbeloppet efter batch                                                  |               Japan               |
+|                                        Föreslå och bokföra nedskrivningsbeloppet genom att använda journal för anläggningstillgångar                                        |               Japan               |
+|                                         Föreslå och bokföra nedskrivningsbeloppet på en kassagenererande enhet                                          |               Japan               |
+|                                                           Föreslå särskild avskrivning                                                            |               Japan               |
+|                                                  Öppna och redigera en kundkonsoliderad faktura på nytt                                                  |               Japan               |
+|                                                   Öppna och redigera en leverantörskonsoliderad faktura på nytt                                                   |               Japan               |
+|                                                       Återför en signerad växel                                                        |               Japan               |
+|                                 Kör redovisningstext och beräkna nedskrivningsbeloppet för enskilda tillgångar                                 |               Japan               |
+|                                                        Kvitta en signerad växel                                                        |               Japan               |
+|                                         Kvitta kundkonsoliderade fakturor med hjälp av en betalningsjournal                                          |               Japan               |
+|                                          Kvitta leverantörkonsoliderade fakturor med hjälp av en betalningsjournal                                           |               Japan               |
+|                                         Kvitta leverantörkonsoliderade fakturor med hjälp av kvitteringstransaktioner                                          |               Japan               |
+|                                         Kvitta leverantörkonsoliderade fakturor med hjälp av kvitteringstransaktioner                                          |               Japan               |
+|                                      Ställ in en kund och en försäljningsorder som mål för konsoliderad faktura                                       |               Japan               |
+|                                Ställ in dokument om skyldighet till utrangering av tillgångar och ange ARO-belopp för en anläggningstillgång                                 |               Japan               |
+|                                                           Ställa in konsoliderade fakturor                                                            |               Japan               |
+|                                         Ställ in vanliga parametrar för nedskrivningsredovisning och bokföringsprofil                                         |               Japan               |
+|                                           Ställ in betalning för Japan genom att skriva på en kundväxel                                            |               Japan               |
+|                                Ställ in huvuddata för inkludering av avdragsgilla utgifter för flera bokföringsskikt                                |               Japan               |
+|                                                        Ställ in rapport för japansk konsumtionsskatt                                                         |               Japan               |
+|                                                            Ställ in betalningsavgift för Japan                                                            |               Japan               |
+|                                    Ställ in leverantörsunderlag och inköpsorder som mål för konsoliderad faktura                                    |               Japan               |
+|                                                        Använd monteringslistan för en anläggningstillgång                                                         |               Japan               |
+|                                                       Använd demonteringslistan för anläggningstillgångar                                                       |               Japan               |
+|                                                          MX-00006 Ställa in momskod                                                           |              Mexiko               |
+|                                             MX-00007 Kundregistrerings-ID och annan information                                              |              Mexiko               |
+|                                                         MX-00008: Leverantörsregistrerings-ID                                                         |              Mexiko               |
+|                                                       MX-00010 Annullera en e-faktura                                                       |              Mexiko               |
+|                                                             MX-00010 E-fakturering CFDI                                                             |              Mexiko               |
+|                                          MX-00010 Ange momsregistrerings-ID för mexikanska juridiska personer                                           |              Mexiko               |
+|                                                 MX-00010 Begära och skriva ut en e-faktura                                                  |              Mexiko               |
+|                                                         MX-00010 Bokföra en fritextfaktura                                                         |              Mexiko               |
+|                                                 MX-00010 Inställningsparametrar för en e-faktura                                                 |              Mexiko               |
+|                                     MX-00020: Producera mexikansk elektronisk redovisningsrapport version 1.1                                     |              Mexiko               |
+|                                        MX-00020 Ställa in kontoplaner för en juridisk person i Mexiko                                         |              Mexiko               |
+|                                       MX-00020 - Ange RFC-registrerings-ID för mexikanska bankkonton                                        |              Mexiko               |
+|                                                        NL-00003 Semansys XBRL-integrering                                                         |            Nederländerna            |
+|                                                    NL-00010 Elektronisk momsdeklaration (EVAT)                                                    |            Nederländerna            |
+|                                            MY-00003 Hantera kunds debet- och kreditfaktura för GST (moms)                                            | Singapore, Malaysia och Thailand |
+|                                             MY-00004 Hantera leverantörs debet- och kreditfaktura för GST                                             | Singapore, Malaysia och Thailand |
+|                                                          MY-00005 Skriva ut GST-momsfakturor                                                          | Singapore, Malaysia och Thailand |
+|                                                       MY-00006 01 Inställning av GST-lättnadssatser                                                       | Singapore, Malaysia och Thailand |
+|                                           MY-00006 02 Skriva ut GST-kundfakturor med en lättnadssats                                            | Singapore, Malaysia och Thailand |
+|                                                           MY-00007 Självfakturerade fakturor                                                           | Singapore, Malaysia och Thailand |
+|                                             MY-00010 GST - Generera GAF-filer i krävt format                                              | Singapore, Malaysia och Thailand |
+|                                            MY-00011 02 Generera kunds debetfaktura för projektförsäljningar                                             | Singapore, Malaysia och Thailand |
+|                                            MY-00011 03 Generera kunds kreditfaktura för projektförsäljningar                                            | Singapore, Malaysia och Thailand |
+|                                      Skapa en inköpsorder som omfattar artiklar där moms ska återföras                                     |          Storbritannien           |
+|                                       Skapa en försäljningsorder som omfattar artiklar där moms ska återföras                                       |          Storbritannien           |
+|                                       GB-00002 Ställa in artikelmomsgrupper, regler och parametrar för återfört tillägg                                       |          Storbritannien           |
+|                                             GB-00009 Skapa en kreditfaktura för kvittningsrabatten.                                              |          Storbritannien           |
+|                                       GB-00009 Inställningsparametrar för kreditfaktura för snabb betalningsrabatt                                        |          Storbritannien           |
+|                                                 Ställa in en artikelmomsgrupp för omvänd moms                                                |          Storbritannien           |
+|                                                   Ställa in momsgrupper för omvänd moms                                                   |          Storbritannien           |
 
 ### 
 
@@ -389,11 +388,11 @@ APQC Unified Library (November 2016 -- alla språk) innehåller uppgiftsguiderna
 
 ### <a name="inbound-consignment"></a>Inkommande försändelse
 
-| BPM-rad                                                                       | Land/region |
-|--------------------------------------------------------------------------------|----------------|
-| **\***Ändra ägarskapet för försändelselagret baserat på produktionsbegäran | Globalt         |
-| **\***Skapa en order för lagerpåfyllnad för försändelse                                 | Globalt         |
-| **\***Övervaka försändelselagret med hjälp av leverantörssamarbete                 | Globalt         |
+|                                          BPM-rad                                           | Land/region |
+|---------------------------------------------------------------------------------------------|----------------|
+| <strong>\</strong>*Ändra ägarskapet för försändelselagret baserat på produktionsbegäran |     Globalt     |
+|                 <strong>\</strong>*Skapa en ny order för lagerpåfyllnad för försändelse                 |     Globalt     |
+|         <strong>\</strong>*Övervaka försändelselagret med hjälp av leverantörssamarbete         |     Globalt     |
 
 ### 
 
@@ -416,13 +415,13 @@ APQC Unified Library (November 2016 -- alla språk) innehåller uppgiftsguiderna
 
 ### 
 
-### <a name="performance-management"></a>Prestationshantering
+### <a name="performance-management"></a>Prestandahantering
 
-| BPM-rad                                                         | Land/region |
-|------------------------------------------------------------------|----------------|
-| **\***Lägg till i din resultatjournal och skicka beröm till någon | Globalt         |
-| **\***Skapa ett mål                                              | Globalt         |
-| **\***Skapa en resultatöversyn                                | Globalt         |
+|                                   BPM-rad                                    | Land/region |
+|-------------------------------------------------------------------------------|----------------|
+| <strong>\</strong>*Lägg till i din resultatjournal och skicka beröm till någon |     Globalt     |
+|                       <strong>\</strong>*Skapa ett nytt mål                        |     Globalt     |
+|                <strong>\</strong>*Skapa en resultatöversyn                 |     Globalt     |
 
 ### 
 
@@ -494,25 +493,25 @@ APQC Unified Library (November 2016 -- alla språk) innehåller uppgiftsguiderna
 
 ### <a name="retail-and-commerce"></a>Butik och handel
 
-| BPM-rad                                                         | Land/region |
-|------------------------------------------------------------------|----------------|
-| Konfigurera en arbetare                                               | Globalt         |
-| **\***Konfigurera inlärningsdrivna produktrekommendationer för maskin | Globalt         |
-| Konfigurera funktionsprofilen för en säljare   | Globalt         |
-| **\***Skapa en visuell kassaprofil (november 2016)                | Globalt         |
-| Skapa och associera register                                   | Globalt         |
-| Skapa kundtjänstorder                                        | Globalt         |
-| Skapa handelsavtal med hjälp av en kategoriprissättningsregel            | Globalt         |
-| Skapa, beräkna och bokföra ett utdrag för en butik              | Globalt         |
-| Definiera en anknytning och tilldela en rabatt                      | Globalt         |
-| Definiera och hantera kassabehörighetsgrupper                          | Globalt         |
-| Definiera kontinuitetstidsplan                                       | Globalt         |
-| **\***Definiera butikskanalkommunikationer (CDX)                 | Globalt         |
-| Justeringar av lojalitetsbelöningar                                      | Globalt         |
-| Hantera butikssortiment                                               | Globalt         |
-| Momstilldelning och åsidosättning                                | Globalt         |
-| Ställ in regler och parametrar för direktleverans och centraliserad distribution   | Globalt         |
-| Använda kontinuitetsprogram                                         | Globalt         |
+|                                   BPM-rad                                    | Land/region |
+|-------------------------------------------------------------------------------|----------------|
+|                               Konfigurera en arbetare                               |     Globalt     |
+| <strong>\</strong>*Konfigurera maskininlärningsdrivna produktrekommendationer |     Globalt     |
+|         Konfigurera funktionsprofilen för en säljare         |     Globalt     |
+|        <strong>\</strong>*Skapa en visuell butiksprofil (november 2016)         |     Globalt     |
+|                         Skapa och associera register                         |     Globalt     |
+|                           Skapa kundtjänstorder                           |     Globalt     |
+|             Skapa handelsavtal med hjälp av en kategoriprissättningsregel             |     Globalt     |
+|              Skapa, beräkna och bokföra ett utdrag för en butik              |     Globalt     |
+|                  Definiera en anknytning och tilldela en rabatt                  |     Globalt     |
+|                    Definiera och hantera kassabehörighetsgrupper                    |     Globalt     |
+|                          Definiera kontinuitetstidsplan                           |     Globalt     |
+|         <strong>\</strong>*Definiera butikskanalkommunikationer (CDX)         |     Globalt     |
+|                          Justeringar av lojalitetsbelöningar                          |     Globalt     |
+|                              Hantera butikssortiment                               |     Globalt     |
+|                       Momstilldelning och åsidosättning                       |     Globalt     |
+|        Ställ in regler och parametrar för direktleverans och centraliserad distribution         |     Globalt     |
+|                           Använda kontinuitetsprogram                            |     Globalt     |
 
 ### 
 
@@ -576,19 +575,17 @@ APQC Unified Library (November 2016 -- alla språk) innehåller uppgiftsguiderna
 
 ### <a name="warehouse-and-transportation"></a>Lager- och transport
 
-| BPM-rad                                                                    | Land/region |
-|-----------------------------------------------------------------------------|----------------|
-| Skapa en platsprofil                                                   | Globalt         |
-| **\***Skapa ett nytt menyalternativ för avstämning av registreringsskylt      | Globalt         |
-| Stäm av fraktsedel manuellt                                                  | Globalt         |
-| Registrera en förares incheckning och utcheckning för ett möte                   | Globalt         |
-| Ställ in ett menyalternativ för mobila enheter för att utföra arbete av typen Inköpsorder | Globalt         |
-| Skapa ett möte för en beläggning                                            | Globalt         |
-| Ställa in ett transportanbud                                              | Globalt         |
-| Skapa in automatisk fraktavstämning                                     | Globalt         |
-| **\***Skapa omallokering av artiklar för kort plockning                                | Globalt         |
-
-
+|                                      BPM-rad                                       | Land/region |
+|-------------------------------------------------------------------------------------|----------------|
+|                              Skapa en platsprofil                              |     Globalt     |
+| <strong>\</strong>*Skapa ett nytt menyalternativ för mobila enheter för avstämning av ID-nummer |     Globalt     |
+|                             Stäm av fraktsedel manuellt                              |     Globalt     |
+|              Registrera en förares incheckning och utcheckning för ett möte              |     Globalt     |
+|     Ställ in ett menyalternativ för mobila enheter för att utföra arbete av typen Inköpsorder     |     Globalt     |
+|                          Skapa ett möte för en beläggning                           |     Globalt     |
+|                           Ställ in ett transportanbud                            |     Globalt     |
+|                       Ställ in automatisk fraktavstämning                       |     Globalt     |
+|              <strong>\</strong>*Skapa omallokering av artiklar för kort plockning              |     Globalt     |
 
 <a name="see-also"></a>Se även
 --------

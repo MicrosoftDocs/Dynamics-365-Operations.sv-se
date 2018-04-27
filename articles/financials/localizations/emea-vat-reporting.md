@@ -18,17 +18,16 @@ ms.author: v-elgolu
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 7ce3c0397986ba2281aae7b71d579f3fe5f488ae
-ms.openlocfilehash: 415e23190c6d7d12e824a42dec3916a4c3f5bc92
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: afcc2ea8c0ca3a5877b44fd758aec9d2caf92d92
 ms.contentlocale: sv-se
-ms.lasthandoff: 12/21/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="vat-reporting-for-europe"></a>Momsrapporter för Europa
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Det här avsnittet innehåller allmän information om inställning och skapande av mervärdesskattutdrag (moms) för vissa europeiska länder.
 
@@ -67,7 +66,7 @@ Momsrapporteringskoder är rutkoder i momsrapporten eller taggnamn i XML-format.
 
 ### <a name="sales-tax-codes-for-vat-reporting"></a>Momskoder för momsrapportering
 
-<!---For general information about setting up sales tax codes, see [Set up sales tax codes](../general-ledger/tasks/set-up-sales-tax-codes.md).--> Base amounts and tax amounts of sales tax transactions can be aggregated on reporting codes in the VAT statement (XML tags or declaration boxes). You can set this up by associating sales tax reporting codes for different transaction types for sales tax codes on the **Sales tax codes** page. The following table describes the transaction types in the report setup for sales tax codes. The calculation includes transactions for all types of sources except sales tax.
+<!---For general information about setting up sales tax codes, see [Set up sales tax codes](../general-ledger/tasks/set-up-sales-tax-codes.md).--> Base amounts and tax amounts of sales tax transactions can be aggregated on reporting codes in the VAT statement (XML tags or declaration boxes). You can set this up by associating sales tax reporting codes for different transaction types for sales tax codes on the <strong>sidan Momskoder</strong> Följande tabell beskriver transaktionstyperna i rapportinställningarna för momskoder. Beräkningen innefattar transaktioner för alla typer av källor utom moms.
 
 <table>
 <colgroup>

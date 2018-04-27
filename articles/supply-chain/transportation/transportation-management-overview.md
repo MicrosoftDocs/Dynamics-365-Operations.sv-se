@@ -19,17 +19,16 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ba426692e2e404ab75e5730b8205115fc59e402f
-ms.openlocfilehash: 0ec45fcf7cebf530b3a5889a857214b97b3fffbb
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: f4dc2c15d35d93d1563c866b20ad7f2bbb5c8457
 ms.contentlocale: sv-se
-ms.lasthandoff: 02/08/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="transportation-management-overview"></a>Transporthanteringsöversikt
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 I det här avsnittet finns en översikt över transporthanteringsfunktionen i Microsoft Dynamics 365 for Finance and Operations.
 
@@ -52,12 +51,12 @@ Transporthantering låter dig använda företagets transporter och även identif
 <td>Använd transporthantering för ingående och/eller utgående transporter.</td>
 </tr>
 <tr class="even">
-<td>Företagets egen flotta är tillgänglig för leverans/upphämtning och leveransavgifter skickas till kunder.</td>
+<td>Företagets egen flotta är tillgänglig för leverans/upphämtning och leveransavgifter skickas till kunder.</td>
 <td>För utgående processer kan du använda transporthantering för att bestämma transportkostnaderna och skicka dem vidare till kunderna. Processen för avstämning av transportföretagets faktura krävs inte.</td>
 </tr>
 <tr class="odd">
 <td>Företagets egen flotta är tillgänglig för leverans/upphämtning men leveransavgifter skickas inte till kunder, eftersom produktpriser inkluderar transport.</td>
-<td>Många av transporthanteringsfunktionerna krävs inte. Du kan däremot använda transporthantering för att bestämma transporttarifferna och anpassa försäljningspriset efter detta.</td>
+<td>Många av transporthanteringsfunktionerna krävs inte. Du kan däremot använda transporthantering för att bestämma transporttarifferna och anpassa försäljningspriset efter detta.</td>
 </tr>
 <tr class="even">
 <td>Logistiktjänst tillhandahålls av en annan juridisk person inom samma företag.</td>

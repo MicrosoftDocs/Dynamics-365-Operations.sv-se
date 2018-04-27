@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="display-charges-for-a-manufactured-item"></a>Visa avgifter för en tillverkad artikel
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 En tillverkad artikels konstanta kostnader återspeglar driftställtiderna och komponenterna med en konstant kvantitet eller ett konstant kassationsbelopp.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="release-a-dimension-based-product-master"></a>Frisläpp en dimensionsbaserad produktmall
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 I den här proceduren visas hur du frisläpper en produktmall som ska användas för dimensionsbaserade konfigurationer. Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF. Det är en förutsättning att du har skapat en produktmall med den dimensionsbaserade konfigurationstekniken. Detta är den andra proceduren utav åtta som förklarar hur du ställer upp kombinationer för dimensionsbaserad konfiguration.
 

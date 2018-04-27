@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="configure-an-approval-process-in-a-workflow"></a>Konfigurera en godkännandeprocess i ett arbetsflöde
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Använd följande procedur när du vill konfigurera egenskaperna för godkännandeprocessen.
 
@@ -136,6 +135,7 @@ Du kan eventuellt tilldela en slutlig godkännare för situationer där godkänn
 
 ## <a name="set-a-time-limit"></a>Ange en tidsgräns
 Följ dessa steg om den manuella processen måste slutföras inom en viss tid.
+
 | **Obs!**                                                                                                                                                |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------|
 | De alternativ som du väljer i dessa steg åsidosätter alternativen som du valde i områdena **Assignment** och **Escalation** för respektive godkännandesteg. |

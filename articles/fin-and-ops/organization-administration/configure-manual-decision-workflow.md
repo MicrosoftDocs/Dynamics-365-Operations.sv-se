@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="configure-a-manual-decision-in-a-workflow"></a>Konfigurera ett manuellt beslut i ett arbetsflöde
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 I det här avsnittet beskrivs hur du konfigurerar olika egenskaper för ett manuellt beslut.
 
@@ -252,73 +251,74 @@ Följ dessa steg för att ange vem som ska tilldelas ett manuellt beslut.
 ## <a name="specify-what-happens-when-a-decision-is-overdue"></a>Ange vad som ska hända när ett beslut är försenat
 Om en användare inte fattar beslutet inom den tilldelade tiden, är beslutet försenat. Ett beslut som är försenat kan eskaleras eller automatiskt tilldelas en annan användare. Följ dessa steg för att eskalera beslutet om det är försenat.
 
-1.  Klicka på **Eskalering** i det vänstra fönstret.
-2.  Markera kryssrutan **Använd eskaleringsväg** om du vill skapa en eskaleringsväg. Systemet tilldelar automatiskt beslutet till de användare som listats i eskaleringsvägen. Till exempel representerar följande register en eskaleringsväg.
-    | Sekvens | Eskaleringsväg            |
-    |----------|----------------------------|
-    | 1        | Tilldela till: Donna           |
-    | 2        | Tilldela till: Erin            |
-    | 3        | Slutgiltig åtgärd; \[Val 1\] |
+1. Klicka på **Eskalering** i det vänstra fönstret.
+2. Markera kryssrutan **Använd eskaleringsväg** om du vill skapa en eskaleringsväg. Systemet tilldelar automatiskt beslutet till de användare som listats i eskaleringsvägen. Till exempel representerar följande register en eskaleringsväg.
 
-    I detta scenario tilldelar systemet det försenade beslutet till Donna. Om Donna inte fattar beslutet inom angiven tidsperiod, tilldelar systemet beslutet till Erin. Om Erin inte fattar beslutet inom angiven tidsperiod, väljer systemet **\[Val 1\]** som beslut.
-3.  Klicka på **Lägg till eskalering** för att lägga till en användare i eskaleringsvägen. I följande register väljer du ett av alternativen och följer sedan de ytterligare stegen för detta alternativ innan du går vidare till steg 4.
-    <table>
-    <colgroup>
-    <col width="33%" />
-    <col width="33%" />
-    <col width="33%" />
-    </colgroup>
-    <thead>
-    <tr class="header">
-    <th>Alternativ</th>
-    <th>Användare som beslutet eskaleras till</th>
-    <th>Ytterligare steg</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr class="odd">
-    <td>Hierarki</td>
-    <td>Användare i en specifik organisationshierarki</td>
-    <td><ol>
-    <li>Välj <strong>Hierarki</strong> innan du går vidare och väljer fliken <strong>Hierarkival</strong> och, i listan <strong>Hierarkityp</strong>, den hierarkityp som du vill eskalera beslutet till.</li>
-    <li>Systemet måste hämta ett intervall med användarnamn i hierarkin. Dessa namn representerar användare som beslutet kan eskaleras till. Följ dessa steg för att ange start- och slutpunkt för det intervall användarnamn som systemet hämtar: <ol>
-    <li>Markera en person i listan <strong>Starta från</strong> för att ange startpunkten.</li>
-    <li>Klicka på <strong>Lägg till villkor</strong> för att ange slutpunkten. Ange därefter ett villkor som avgör var någonstans i hierarkin som systemet slutar att hämta namn.</li>
-    </ol></li>
-    <li>I fliken <strong>Hierarkialternativ</strong> väljer du de användare i intervallet som ska tilldelas beslutet: <ul>
-    <li><strong>Tilldela till samtliga hämtade användare</strong> – Beslutet eskaleras till alla användare i intervallet.</li>
-    <li><strong>Tilldela endast till senast hämtade användare</strong> – Beslutet eskaleras endast till den senaste användaren i intervallet.</li>
-    <li><strong>Exkludera användare med följande villkor:</strong> – Beslutet eskaleras inte till någon användare i intervallet som uppfyller ett visst villkor. Klicka på <strong>Lägg till villkor</strong> för att ange villkoret.</li>
-    </ul></li>
-    </ol></td>
-    </tr>
-    <tr class="even">
-    <td>Användare av arbetsflöde</td>
-    <td>Användarna i det aktuella arbetsflödet</td>
-    <td><ul>
-    <li>När du har valt <strong>Användare av arbetsflöde</strong> i fliken <strong>Användare av arbetsflöde</strong> väljer du en användare som deltar i arbetsflödet i listan <strong>Användare av arbetsflöde</strong>.</li>
-    </ul></td>
-    </tr>
-    <tr class="odd">
-    <td>Användare</td>
-    <td>Specifika Finance and Operations-användare.</td>
-    <td><ol>
-    <li>Klicka på fliken <strong>Användare</strong> när du har valt <strong>Användare</strong>.</li>
-    <li>Listan <strong>Tillgängliga användare</strong> innehåller alla Finance and Operations-användare. Markera de användare som beslutet ska eskaleras till, och flytta sedan dessa till listan <strong>Markerade användare</strong>.</li>
-    </ol></td>
-    </tr>
-    </tbody>
-    </table>
+   | Sekvens | Eskaleringsväg            |
+   |----------|----------------------------|
+   | 1        | Tilldela till: Donna           |
+   | 2        | Tilldela till: Erin            |
+   | 3        | Slutgiltig åtgärd; \[Val 1\] |
 
-4.  I fliken **Tidsgräns**, i fältet **Tidslängd**, anger du hur mycket tid som användaren har på sig att fatta beslutet. Välj ett av följande alternativ:
-    -   **Timmar** – Ange antalet timmar som användaren har på sig att fatta beslutet. Välj sedan den kalender som används inom din organisation, och ange information om organisationens arbetsvecka.
-    -   **Dagar** – Ange antalet dagar som användaren har på sig att fatta beslutet. Välj sedan den kalender som används inom din organisation, och ange information om organisationens arbetsvecka.
-    -   **Veckor** – Ange antalet veckor som användaren har på sig att fatta beslutet.
-    -   **Månader –** – Välj dag och vecka då användaren senast måste svara. Du kanske till exempel vill att användaren ska fatta beslutet senast på fredagen i den tredje veckan i månaden.
-    -   **År –** – Välj dag, vecka och månad då användaren senast måste svara. Du kanske till exempel vill att användaren ska fatta beslutet senast på fredagen i den tredje veckan i december.
+   I detta scenario tilldelar systemet det försenade beslutet till Donna. Om Donna inte fattar beslutet inom angiven tidsperiod, tilldelar systemet beslutet till Erin. Om Erin inte fattar beslutet inom angiven tidsperiod, väljer systemet **\[Val 1\]** som beslut.
+3. Klicka på **Lägg till eskalering** för att lägga till en användare i eskaleringsvägen. I följande register väljer du ett av alternativen och följer sedan de ytterligare stegen för detta alternativ innan du går vidare till steg 4.
+   <table>
+   <colgroup>
+   <col width="33%" />
+   <col width="33%" />
+   <col width="33%" />
+   </colgroup>
+   <thead>
+   <tr class="header">
+   <th>Alternativ</th>
+   <th>Användare som beslutet eskaleras till</th>
+   <th>Ytterligare steg</th>
+   </tr>
+   </thead>
+   <tbody>
+   <tr class="odd">
+   <td>Hierarki</td>
+   <td>Användare i en specifik organisationshierarki</td>
+   <td><ol>
+   <li>Välj <strong>Hierarki</strong> innan du går vidare och väljer fliken <strong>Hierarkival</strong> och, i listan <strong>Hierarkityp</strong>, den hierarkityp som du vill eskalera beslutet till.</li>
+   <li>Systemet måste hämta ett intervall med användarnamn i hierarkin. Dessa namn representerar användare som beslutet kan eskaleras till. Följ dessa steg för att ange start- och slutpunkt för det intervall användarnamn som systemet hämtar: <ol>
+   <li>Markera en person i listan <strong>Starta från</strong> för att ange startpunkten.</li>
+   <li>Klicka på <strong>Lägg till villkor</strong> för att ange slutpunkten. Ange därefter ett villkor som avgör var någonstans i hierarkin som systemet slutar att hämta namn.</li>
+   </ol></li>
+   <li>I fliken <strong>Hierarkialternativ</strong> väljer du de användare i intervallet som ska tilldelas beslutet: <ul>
+   <li><strong>Tilldela till samtliga hämtade användare</strong> – Beslutet eskaleras till alla användare i intervallet.</li>
+   <li><strong>Tilldela endast till senast hämtade användare</strong> – Beslutet eskaleras endast till den senaste användaren i intervallet.</li>
+   <li><strong>Exkludera användare med följande villkor:</strong> – Beslutet eskaleras inte till någon användare i intervallet som uppfyller ett visst villkor. Klicka på <strong>Lägg till villkor</strong> för att ange villkoret.</li>
+   </ul></li>
+   </ol></td>
+   </tr>
+   <tr class="even">
+   <td>Användare av arbetsflöde</td>
+   <td>Användarna i det aktuella arbetsflödet</td>
+   <td><ul>
+   <li>När du har valt <strong>Användare av arbetsflöde</strong> i fliken <strong>Användare av arbetsflöde</strong> väljer du en användare som deltar i arbetsflödet i listan <strong>Användare av arbetsflöde</strong>.</li>
+   </ul></td>
+   </tr>
+   <tr class="odd">
+   <td>Användare</td>
+   <td>Specifika Finance and Operations-användare.</td>
+   <td><ol>
+   <li>Klicka på fliken <strong>Användare</strong> när du har valt <strong>Användare</strong>.</li>
+   <li>Listan <strong>Tillgängliga användare</strong> innehåller alla Finance and Operations-användare. Markera de användare som beslutet ska eskaleras till, och flytta sedan dessa till listan <strong>Markerade användare</strong>.</li>
+   </ol></td>
+   </tr>
+   </tbody>
+   </table>
 
-5.  Upprepa steg 3 och 4 för varje användare som ska läggas till i eskaleringsvägen. Du kan ändra alla användarnas ordningsföljd.
-6.  Om användarna i eskaleringsvägen inte fattar beslutet inom den tillåtna tidsperioden, kommer systemet att fatta beslutet. Om du vill ange vilket alternativ som systemet väljer, välj då raden **Åtgärd** och sedan en åtgärd i fliken **Slutåtgärd**.
+4. I fliken **Tidsgräns**, i fältet **Tidslängd**, anger du hur mycket tid som användaren har på sig att fatta beslutet. Välj ett av följande alternativ:
+   -   **Timmar** – Ange antalet timmar som användaren har på sig att fatta beslutet. Välj sedan den kalender som används inom din organisation, och ange information om organisationens arbetsvecka.
+   -   **Dagar** – Ange antalet dagar som användaren har på sig att fatta beslutet. Välj sedan den kalender som används inom din organisation, och ange information om organisationens arbetsvecka.
+   -   **Veckor** – Ange antalet veckor som användaren har på sig att fatta beslutet.
+   -   **Månader –** – Välj dag och vecka då användaren senast måste svara. Du kanske till exempel vill att användaren ska fatta beslutet senast på fredagen i den tredje veckan i månaden.
+   -   **År –** – Välj dag, vecka och månad då användaren senast måste svara. Du kanske till exempel vill att användaren ska fatta beslutet senast på fredagen i den tredje veckan i december.
+
+5. Upprepa steg 3 och 4 för varje användare som ska läggas till i eskaleringsvägen. Du kan ändra alla användarnas ordningsföljd.
+6. Om användarna i eskaleringsvägen inte fattar beslutet inom den tillåtna tidsperioden, kommer systemet att fatta beslutet. Om du vill ange vilket alternativ som systemet väljer, välj då raden **Åtgärd** och sedan en åtgärd i fliken **Slutåtgärd**.
 
 ## <a name="set-a-time-limit"></a>Ange en tidsgräns
 Följ dessa steg om beslutet måste fattas inom en viss tid. **Obs!** De alternativ som du väljer i denna procedur åsidosätter alternativen som du valde i avsnitten **Tilldelning** och **Eskalering** på sidan.

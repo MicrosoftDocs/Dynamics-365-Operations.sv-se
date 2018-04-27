@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="warehouse-configuration"></a>Konfiguration av lagerställe
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Det här avsnittet innehåller information om hur du konfigurerar ett lagerställe. Det inkluderar information om att aktivera ett lagerställes layout och lagerställeprocesser.
 

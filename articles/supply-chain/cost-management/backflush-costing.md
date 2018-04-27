@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="backflush-costing"></a>Kostnadskalkylering med automatisk lageravräkning
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Det här avsnittet förklarar kostnadsredovisning med bakåtavräkning som används för Lean manufacturing. 
 

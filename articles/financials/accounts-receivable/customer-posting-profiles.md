@@ -19,17 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 95d5bf26c22238753586cf4a7aaf5c26f061a705
-ms.openlocfilehash: d0795a9cb1839c45cf264b0d0f7cffacdc01ea9d
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: f246780a320f9a5e25ca423a099669a4f7e57bab
 ms.contentlocale: sv-se
-ms.lasthandoff: 02/23/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="customer-posting-profiles"></a>Kundbokföringsprofiler
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Bokföringsprofiler för kund styr bokföringen av kundtransaktionerna i redovisningen.kundpool
 
@@ -97,7 +96,7 @@ Om du vill att alla kundtransaktioner ska ha samma bokföringsprofil skapar du b
 <table>
 <thead>
 <tr class="header">
-<th><img src="https://i-technet.sec.s-msft.com/areas/global/content/clear.gif" title="Obs!" alt="Note" id="alert_note" class="cl_IC101471" /><strong>Obs!</strong></th>
+<th><img src="https://i-technet.sec.s-msft.com/areas/global/content/clear.gif" title="Kommentar" alt="Note" id="alert_note" class="cl_IC101471" /><strong>Obs!</strong></th>
 </tr>
 </thead>
 <tbody>

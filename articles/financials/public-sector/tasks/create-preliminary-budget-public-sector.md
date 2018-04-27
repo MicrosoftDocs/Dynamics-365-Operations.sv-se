@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-preliminary-budget-for-public-sector"></a>Skapa en preliminär budget för offentliga sektorn
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Du kan skapa preliminära budgetregisterposter för en specifik budgetmodell och dimensionsvärden. När den verkliga budgeten har godkänts kan du skapa registerposter för ursprunglig budget. Den här proceduren har skapats med hjälp av data för demoföretaget PSUS i partitionen för den offentliga sektorn.
 

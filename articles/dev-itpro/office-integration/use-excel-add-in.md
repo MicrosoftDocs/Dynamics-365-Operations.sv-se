@@ -3,7 +3,7 @@ title: "Använd Excel-tillägget"
 description: "Det här avsnittet beskriver hur du öppnar enhetsdata i Microsoft Excel och sedan visar, uppdaterar och redigerar data med Microsoft Dynamics Office-tillägget för Excel."
 author: ChrisGarty
 manager: AnnBe
-ms.date: 11/30/2017
+ms.date: 04/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,16 +18,16 @@ ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: f3ed06dbbce21ac093107953d3a72d8ab086af2a
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: e0e3e86820e0857b320d832c3bf3c94757667919
 ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="use-the-excel-add-in"></a>Använd Excel-tillägget
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Det här avsnittet beskriver hur du öppnar enhetsdata i Microsoft Excel och sedan visar, uppdaterar och redigerar data med Microsoft Dynamics Office-tillägget för Excel. För att öppna enhetsdata kan du starta från Excel eller Microsoft Dynamics 365 for Finance and Operations.
 
@@ -35,6 +35,11 @@ Genom att öppna enhetsdata i Excel kan du snabbt och enkelt visa, uppdatera och
 
 > [!NOTE]
 > Om din Microsoft Azure Active Directory (Azure AD)-innehavare har konfigurerats för att använda Active Directory Federation Services (ADFS), måste du se till att uppdateringen för Office från maj 2016 har installerats, så att Excel-tilläggen logga in dig korrekt.
+
+Om du vill veta mer om hur du använder Excel-tillägg, titta på den korta videon [Skapa en Excel-mall för rubriker och mönster i Dynamics 365 for Finance and Operations](https://youtu.be/RTicLb-6dbI).
+
+> [!Video https://www.youtube.com/embed/RTicLb-6dbI]
+
 
 ## <a name="open-entity-data-in-excel-when-you-start-from-finance-and-operations"></a>Öppna enhetsdata i Excel när du startar från Finance and Operations
 1. På en sida i Finance and Operations väljer du **Öppna i Microsoft Office**.

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-free-text-invoice-template"></a>Skapa en mall för fritextfaktura
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 I den här registreringen används demonstrationsföretaget USMF. Inspelningen är avsedd för den användare som ansvarar för hantering och bearbetning av kundreskontrafakturor.
 

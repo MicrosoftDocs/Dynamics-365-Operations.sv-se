@@ -26,7 +26,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="cash-flow-forecasting"></a>Kassaflödesprognoser
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Du kan använda verktygen för kassaflödesprognostisering för att analysera kommande kassaflöde för att uppskatta företagets framtida behov av kontanter. Om du vill ha en prognos av kassaflödet måste du göra följande:
 

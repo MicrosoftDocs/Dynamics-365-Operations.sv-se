@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="whats-new-or-changed-in-dynamics-ax-application-version-701-may-2016"></a>Nyheter och ändringar i Microsoft Dynamics AX, programvaruversion 7.0.1 (maj 2016)
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Den här artikeln innehåller en beskrivning av nya eller ändrade funktioner i Microsoft Dynamics AX, programvaruversion 7.0.1. Den här versionen släpptes i maj 2016 och har en versionsnummer 7.0.1265.23014.
 
@@ -44,12 +43,14 @@ Den här artikeln innehåller en beskrivning av nya eller ändrade funktioner i 
 | Konfigurera ER-mål så att resultatet av ett utdataformat dirigeras till specifika mål: fil, E-post eller arkiv (Microsoft SharePoint-mapp eller Microsoft Azure Storage). | Tidigare visades en meddelanderuta som krävde en användaråtgärd för att spara eller öppna en fil när du körde en ER-konfiguration. Nu kan du förkonfigurera ett mål för varje formatkonfiguration och utdatakomponent (en mapp eller en fil) separat. Användare med rätt behörighet kan även ändra inställningar för mål vid körning. |
 
 ## <a name="pos--microsoft-dynamics-ax-retail"></a>Kassa – Microsoft Dynamics AX Retail
+
 |                                |                                                                                                                                                                                         |
 |--------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Vad kan du göra?**           | **Varför är detta viktigt?**                                                                                                                                                              |
 | Använd Google Chrome-webbläsare. | Återförsäljare kan nu starta molnbaserade kassor från Chrome-webbläsaren och utnyttja alla funktioner som finns i Microsoft Edge- och Internet Explorer-versionen av den molnbaserade kassan. |
 
 ## <a name="financial-reporting"></a>Ekonomisk rapportering
+
 |                                                                     |                                                                                                                                                                                                                                                                                                                    |
 |---------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Vad kan du göra?**                                                | **Varför är detta viktigt?**                                                                                                                                                                                                                                                                                         |
@@ -57,12 +58,14 @@ Den här artikeln innehåller en beskrivning av nya eller ändrade funktioner i 
 | Du kan inte längre välja alternativ för rapportdesigner som inte är giltiga. | Flera rapportdesigneralternativ som användes i marknadsversionerna av Management Reporter gäller inte i den här versionen av Dynamics AX. De här alternativen har relaterats till ekonomisk rapportdesign, utleverans och länkning. De här alternativen har tagits bort från den ekonomiska rapportdesignen för att förhindra användarfel. |
 
 ## <a name="financial-management"></a>Ekonomisk styrning
+
 |                                                            |                                                                  |
 |------------------------------------------------------------|------------------------------------------------------------------|
 | **Vad kan du göra?**                                       | **Varför är detta viktigt?**                                       |
 | Generera betalningskontrollfiler för leverantörsreskontrabetalningar. | Betalningskontrollfiler kan genereras för att förhindra checkbedrägerier. |
 
 ## <a name="warehouse-and-production"></a>Lagerställe och produktion
+
 |                                                                                                                                                                                                                                                                                                                                                                                         |                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Vad kan du göra?**                                                                                                                                                                                                                                                                                                                                                                    | **Varför är detta viktigt?**                                                                                                                                                                                                                                                                                                                                                                                                              |
@@ -72,7 +75,7 @@ Den här artikeln innehåller en beskrivning av nya eller ändrade funktioner i 
 | Produktionsorder med cirkulära strukturer på den första nivån av deras strukturer är undantagna från strukturlistenivåberäkning för materialresursplanering.                                                                                                                                                                                                                                     | Det går inte att tilldela rätt strukturlistenivåer till produktvarianter för produktionsorder som orsaka loopar i strukturlistehierarkin.                                                                                                                                                                                                                                                                                                  |
 | Beräkna separata strukturlistenivåer för materialresursplanering och kostnadsberäkning: • För materialresursplanering beräknas strukturlistenivåer i den nya **ReqItemLevel**-tabellen. Avslutade tillverkningsorder ignoreras i beräkningen. • För beräkning av produktionskostnaden beräknas strukturlistenivåer i **InventTable**. Avslutade tillverkningsorder inkluderas i beräkningen. | • När du kör materialresursplanering, till exempel huvudplaneringsplanläggning och explosion, behöver enbart strukturlistenivåer som används för materialresursplanering beräknas. Det finns med andra ord ingen anledning att beräkna strukturlistenivåer som används för beräkning av produktionskostnader • När du kör kostnadsoperationer, till exempel lagerstängning, behöver enbart strukturlistenivåer som används för beräkning för produktionskostnader beräknas om. |
 
- 
+
 
 <a name="see-also"></a>Se även
 --------

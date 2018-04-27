@@ -28,8 +28,7 @@ ms.lasthandoff: 01/18/2018
 
 # <a name="customer-payments-for-a-partial-amount"></a>Kundbetalningar för ett delbelopp
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Ibland kan kunder betala ett belopp som är mindre än beloppet i en faktura. Det här avsnittet innehåller en beskrivning av de olika alternativen för att hantera den här situationen. Vilka alternativ som är tillgängliga för dig beror på dina affärskrav och konfigurationer.
 

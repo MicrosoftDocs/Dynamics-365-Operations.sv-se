@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-journal-entry-using-a-template"></a>Skapa en post i en redovisningsjournal med hjälp av en mall
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Bokförda journalverifikationer kan sparas som verifikationsmallar och tillämpas vid en ny bokföringsorder. I den här proceduren används demonstrationsföretaget USMF.
 

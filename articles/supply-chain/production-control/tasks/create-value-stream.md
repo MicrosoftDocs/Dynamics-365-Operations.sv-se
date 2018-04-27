@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-value-stream"></a>Skapa en värdeström
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Värdeströmmar är driftenheter som grupperar ett eller flera produktionsflöden. Om du vill definiera ett produktionsflöde måste du först definiera en värdeström.
 

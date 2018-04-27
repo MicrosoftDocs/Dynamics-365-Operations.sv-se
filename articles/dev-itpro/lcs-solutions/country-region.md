@@ -3,7 +3,7 @@ title: Lokaliserings- och regelfunktioner
 description: "Det här ämnet innehåller listor med resurser som lär dig mer om lands- och regionspecifika funktioner."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 10/30/2017
+ms.date: 04/12/2018
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,17 +18,16 @@ ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 1f76359878d162e93d8f8b7c11be529c43c94455
-ms.openlocfilehash: c1c180432e014c69b43612693790a1cac6e54c34
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 389efbe1853264c1503737b55dd7767fdcb966ca
 ms.contentlocale: sv-se
-ms.lasthandoff: 02/08/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="localization-and-regulatory-features"></a>Lokaliserings- och regelfunktioner
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Microsoft Dynamics 365 for Finance and Operations innehåller funktioner för länder/regioner dokumenterade i den [internationella produkttillgänglighetsguiden](http://download.microsoft.com/documents/en-us/dynamics/Microsoft%20Dynamics%20AX%20Product%20Availability%20Guide.pdf). Den här funktionen aktiveras grundad på den aktiva juridiska personens primära adress. 
 
@@ -53,8 +52,8 @@ Följande resurser innehåller information om planerade och nya lokaliseringsfun
 -   [Regelbevakning och meddelanden om regeluppdatering](regulatory-watch-communication.md)
 -   [Informera Microsoft om regelaviseringar för land/region och spåra status för regelfunktioner](submit-localization-alerts.md)
 
-### <a name="dynamics-365-roadmap"></a>Översikt över Dynamics 365
-[Översikt över Dynamics 365](https://roadmap.dynamics.com/) ger en överblick över vad vi arbetar med. Använd den här översikten om du vill ta reda på vad som är allmänt tillgängligt och vad som är under utveckling. Alla datum och funktioner som är under utveckling är preliminära och baseras på aktuella prognoser, och kan komma att ändras utan föregående meddelande.
+### <a name="dynamics-365-release-notes"></a>Viktig information om Dynamics 365
+[Viktig information om Dynamics 365 (hämtningsbar PDF-fil)](https://aka.ms/businessappsreleasenotes) innehåller beskrivningar av förbättrade funktioner i affärsprogrammen och programplattformarna i Dynamics 365. 
 
 ## <a name="electronic-reporting"></a>Elektronisk rapportering
 Verktyget Elektronisk rapportering (ER) gör det möjligt att konfigurera elektroniska dokumentformat i enligt rättsliga krav i olika länder/regioner. Med ER går det att hantera formaten under deras livscykel. Mer information finns i följande ämnen:
@@ -77,27 +76,11 @@ Mer information finns i [Uppgiftsguider](../../fin-and-ops/get-started/help-over
 
 
 ## <a name="countryregion-specific-help-topics"></a>Land-/regionspecifika hjälpavsnitt
-Följande avsnitt visar resurser efter land/region.
+Följande avsnitt listar resurser efter land/region.
 
-### <a name="australia"></a>Australien
-
--   [Bankfilformat](../../financials/localizations/apac-aus-method-of-payment-pay-vendors-banks.md)
--   [Affärsaktivitetsrapport](../../financials/localizations/apac-aus-business-activity-statement.md)
--   [Avskrivning för lågvärdespool](../../financials/localizations/apac-aus-low-value-pool-depreciation.md)
-
-### <a name="austria"></a>Österrike
-
-- [Halvårsavskrivning](../../financials/localizations/emea-aut-half-year-depreciation.md)
-- [Avgifter för förpackningsmaterial](../../financials/localizations/emea-aut-packing-material-fee-calculation.md)
-- [Inköpsavgifter](../../financials/localizations/emea-aut-purchase-duties.md)
-- [Momsutdrag](../../financials/localizations/emea-aut-vat-statement-details.md)
-
-### <a name="belgium"></a>Belgien
-
--   [CODA-bankutdrag](../../financials/localizations/emea-bel-coda-bank-statement-import.md)
--   [Intervat momsdeklaration](../../financials/localizations/emea-bel-intervat-tax-declaration.md)
--   [Inställning av PRODCOM-rapport](../../financials/localizations/emea-bel-prodcom-report.md)
--   [Avstämningsrapporter](../../financials/localizations/emea-bel-reconciliation-reports.md)
+### <a name="australiafinancialslocalizationsaustraliamd"></a>[Australien](../../financials/localizations/australia.md)
+### <a name="austriafinancialslocalizationsaustriamd"></a>[Österrike](../../financials/localizations/austria.md)
+### <a name="belgiumfinancialslocalizationsbelgiummd"></a>[Belgien](../../financials/localizations/belgium.md)
 
 ### <a name="brazil"></a>Brasilien
 
@@ -132,24 +115,11 @@ Följande avsnitt visar resurser efter land/region.
 -   [Importera datatabellen Chinese Golden Tax](../../financials/localizations/apac-chn-import-golden-tax-data-entity.md)
 -   [Månatlig, genomsnittlig kostnadsmodell](../../financials/localizations/apac-chn-monthly-average-cost-model.md)
 -   [Bokför lagerhuvudkonton efter plats](../../financials/localizations/apac-chn-post-inventory-main-accounts-by-site.md)
--   [Visa debet- och kreditbelopp för redovisning](../../financials/localizations/apac-chn-negative-debits-credits.md)
+-   [Visa debet- och kreditbelopp för huvudbokskonton](../../financials/localizations/apac-chn-negative-debits-credits.md)
 
-### <a name="the-czech-republic"></a>Tjeckien
-
--   [Kassarabatt på kreditfaktura](../../financials/localizations/emea-cze-credit-note-cash-discount.md)
--   [Avrundning av avskrivning](../../financials/localizations/emea-cze-depreciation-rounding.md)
--   [Halvårs avskrivning för avyttrande av anläggningstillgångar i Tjeckien](../../financials/localizations/emea-cze-half-depreciation-fixed-asset-disposal.md)
--   [Avskrivningsuppskjutning (holidays.md)](../../financials/localizations/emea-cze-depreciation-suspension-holidays.md)
--   [Avskrivningsmetoder för anläggningstillgångar i Tjeckien](../../financials/localizations/emea-cze-fixed-assets-depreciation.md)
--   [Bokför anläggningstillgången före anskaffning](../../financials/localizations/emea-pre-acquisition-acquisition-fixed-asset.md)
--   [Momsutdrag för Tjeckien](../../financials/localizations/emea-cze-vat-statement-details.md)
--   [Momsrapportering ](../../financials/localizations/emea-cze-intra-community-vat-transactions.md)
--   [Dela perioder i periodiska journaler](../../financials/localizations/emea-create-post-periodic-journals.md)
--   [Ställ in undertecknare för utskriftsformulär](../../financials/localizations/emea-set-up-signers-for-printing-forms.md)
--   [Uppdatera hur belopp visas i rapporter och dokument](../../financials/localizations/emea-amount-printing-forms.md)
+### <a name="the-czech-republicfinancialslocalizationsczech-republicmd"></a>[Tjeckien](../../financials/localizations/czech-republic.md)
 
 ### <a name="estonia"></a>Estland
-
 -   [Momsutdragsinformation för Estland](../../financials/localizations/emea-est-vat-statement-details.md)
 -   [Avyttrande av anläggningstillgångar](../../financials/localizations/emea-credit-note-reverse-fixed-asset-sale.md)
 
@@ -280,7 +250,7 @@ Följande avsnitt visar resurser efter land/region.
 -   [Rapport för inflationsjusteringsdeklaration](../../financials/localizations/latam-mex-adjustment-inflation-declaration-report.md)
 -   [ISR-deklarationsrapport](../../financials/localizations/latam-mex-isr-declaration-report-supporting-processes.md)
 -   [Elektroniska fakturor (CFDI)](../../financials/localizations/latam-mex-CFDI-electronic-invoices.md)
-   
+
 ### <a name="malaysia"></a>Malaysia
 
 -   [Moms för varor och tjänster](../../financials/localizations/apac-mys-gst.md)
@@ -326,14 +296,14 @@ Följande avsnitt visar resurser efter land/region.
 -   [Engångskunder](../../financials/localizations/emea-esp-no-one-time-customer-for-project-contracts.md)
 -   [Skriv ut checkar med spansk layout](../../financials/localizations/emea-esp-print-checks-with-spanish-layout.md)
 -   [Alternativ för spansk skuldsedel](../../financials/localizations/emea-esp-promissory-note-options.md)
--   [Inköps- och försäljningscykler](../../financials/localizations/emea-esp-sales-purchase-cycle.md)
+-   [Försäljnings- och inköpscykler](../../financials/localizations/emea-esp-sales-purchase-cycle.md)
 -   [Särskilda poster och ingående ark](../../financials/localizations/emea-esp-opening-sheets-spain.md)
 -   [Använd räkenskapsdata från fakturakontot](../../financials/localizations/emea-esp-fiscal-data-invoice-account.md)
 
 ### <a name="sweden"></a>Sverige
 
 -   [Importera betalningsformat för Sverige](../../financials/localizations/emea-swe-payment-formats-import.md)
--   [Kassaapparat för Sverige](../../retail/localizations/emea-swe-cash-registers.md)
+-   [Kassaapparater för Sverige](../../retail/localizations/emea-swe-cash-registers.md)
 
 ### <a name="switzerland"></a>Schweiz
 

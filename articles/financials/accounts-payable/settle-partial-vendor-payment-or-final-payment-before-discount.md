@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="settle-a-partial-vendor-payment-and-the-final-payment-in-full-before-the-discount-date"></a>Kvitta en leverantörsbetalning och hela slutbetalningen före rabattdatumet
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Det här avsnittet innehåller en genomgång av ett scenario där flera delbetalningar görs för en leverantörsfaktura i vilken en kassarabatt har utnyttjats.
 

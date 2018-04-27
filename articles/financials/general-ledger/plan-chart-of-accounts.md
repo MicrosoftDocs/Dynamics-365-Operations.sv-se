@@ -1,9 +1,9 @@
 ---
-title: Planera din kontoplan
-description: "Det här avsnittet innehåller information som hjälper dig att planera kontoplanen för din organisation."
+title: Planera kontoplanen
+description: "De här ämnena innehåller information som hjälper dig att planera kontoplanen för din organisation."
 author: aprilolson
 manager: AnnBe
-ms.date: 01/04/2018
+ms.date: 04/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,46 +19,46 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ad55dd57483de4351c8501c5e226180fc73606aa
-ms.openlocfilehash: 3d2cdeaf2fdeb2f587f82c97249886fb8db49154
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 3f8d97fc42cde9053b0552fc1dfe8e6de0f5e03b
 ms.contentlocale: sv-se
-ms.lasthandoff: 01/11/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
-# <a name="plan-your-chart-of-accounts"></a>Planera din kontoplan
+# <a name="plan-your-chart-of-accounts"></a>Planera kontoplanen
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
+Det här ämnet innehåller information som hjälper dig att planera kontoplanen för din organisation.
 
-Det här avsnittet innehåller information som hjälper dig att planera kontoplanen för din organisation.
+Följ och underhålla ekonomisk information i en organisation genom att lägga upp en kontoplan. En kontoplan är en samling av konton som definierar ett ekonomisk ramverk. För att ytterligare spåra transaktionerna i kontona, kan du lägga till segment. Dessa segment kallas för ekonomiska dimensioner. Ett utgiftskonto kan till exempel inkludera ekonomiska dimensioner som kallas avdelning, kostnadsställe och syfte. Användardefinierade regler anger sambandet mellan dessa ekonomiska dimensioner och huvudkontona och andra ekonomiska dimensioner, och även hur transaktioner kan registreras. Dessa användardefinierade regler är kallas kontostrukturer och avancerade regler.
 
-Följ och underhålla ekonomisk information i en organisation genom att lägga upp en kontoplan. En kontoplan är en samling av konton som definierar ett ekonomisk ramverk. För att följa transaktionerna i dessa konton kan du lägga till segment, som kallas ekonomiska dimensioner. Ett utgiftskonto kan till exempel inkludera ekonomiska dimensioner som kallas avdelning, kostnadsställe och syfte. Användardefinierade regler, som kallas kontostrukturer och avancerade regler, anger sambandet mellan dessa ekonomiska dimensioner och huvudkontona och andra ekonomiska dimensioner, och även hur transaktioner kan registreras. 
+Kontoplanen är en strukturerad lista över en juridisk persons huvudbokskonton. Listan används för att förbereda ekonomiska rapporter för myndigheter och ägare. Kontona grupperas först i kontotyper och sedan i större kategorier. På den allmännaste nivån grupperas kontona som kostnader och intäkter (rörelsekonton) samt tillgångar och skulder (balanskonton).
 
-Kontoplanen är en strukturerad lista över en juridisk persons huvudbokskonton. Listan används för att förbereda ekonomiska rapporter för myndigheter och ägare. Kontona grupperas i kontotyper och sedan i större kategorier. På den allmännaste nivån grupperas kontona som kostnader och intäkter (rörelsekonton) samt tillgångar och skulder (balanskonton). 
-
-En kontoplan kan delas och användas av alla juridiska personer i organisationen. Kontoplanen som används av en juridisk person definieras på sidan **Redovisning**. 
+En kontoplan kan delas och användas av alla juridiska personer i organisationen. Kontoplanen som används av en juridisk person definieras på sidan **Redovisning**.
 
 Här är några av faktorerna du måste ta hänsyn till när du lägger upp kontoplanen för organisationen:
 
--   Rapporteringskraven i det land eller den region där organisationen har sin bas
--   Rapporteringskraven för en juridisk person
--   Specificeringsgraden som behövs, både för externa organisationer och för din organisation
+- Rapporteringskraven i det land eller den region där organisationen har sin bas
+- Rapporteringskraven för en juridisk person
+- Specificeringsgraden som behövs, både för externa organisationer och för din organisation
 
-Skapa kontoplanen på sidan **Kontoplan**. Huvudkonton kan skapas på sidan **Kontoplan** eller **Huvudkonton**. I dina huvudkonton ska inte användas specialtecken som används som kontoplanavgränsare. Om du har ett specialtecken som är samma som din kontoplanavgränsare, kan du få instabilitet eller också måste du alltid använda uppslagningar eller den utfällbara menyn när du anger konto- och dimensionskombinationer. Mer information finns i [Skapa ett huvudkonto](tasks/create-main-account.md).
+Du skapar kontoplanen på sidan **Kontoplan**. Du kan skapa huvudkonton från sidan **Kontoplan** eller **Huvudkonton**. I dina huvudkonton ska inte användas specialtecken som används som kontoplanavgränsare. Annars kan det uppstå instabilitet eller du kanske alltid måste använda sökningar eller dialogrutan när du anger kombinationer av konton och dimensioner. Mer information finns i [Skapa ett huvudkonto](tasks/create-main-account.md).
 
+> [!NOTE]
+> I Microsoft Dynamics for Finance and Operations version 8.0 (april 2018), kan du ändra kontoplansavgränsare från sidan **Allmänna redovisningsparametrar**.
 
-Det är en bra idé att länka huvudkontona till huvudkontokategorier, så att du kan använda ekonomiska standardrapporterna utan att behöva göra några ändringar. Därför kan du snabbt och enkelt designa och underhålla rapporter. 
+Det är en bra idé att länka huvudkontona till huvudkontokategorier, så att du kan använda ekonomiska standardrapporterna utan att behöva göra några ändringar. Därför kan du snabbt och enkelt designa och underhålla rapporter.
 
-Använd sidan **Konfigurera kontostrukturer** för att konfigurera kontostrukturer. Kontostrukturer definierar giltiga kombinationer. Kombinationerna, tillsammans med huvudkontona, bildar en kontoplan.  Mer information finns i [Skapa en kontostruktur](tasks/create-account-structures.md).
+Du skapar kontostrukturer på sidan **Konfigurera kontostrukturer**. Kontostrukturer definierar giltiga kombinationer. Dessa kombinationer, tillsammans med huvudkontona, bildar en kontoplan. Mer information finns i [Skapa en kontostruktur](tasks/create-account-structures.md).
 
-**Juridisk person åsidosätter** 
+**Juridisk person åsidosätter**
 
-Alla huvudkonton är inte giltiga för alla juridiska personer, och några kanske bara är relevanta under en viss tidsperiod. I det här scenariot kan åsidosättandet av juridisk person användas för att identifiera vilka företag huvudkontot ska uppskjutas för, vem ägaren är och tidsperioden dimensionen är aktiv i. Åsidosättandet på den delade nivån kan inte vara restriktivare än åsidosättandet på nivån för juridisk person.
+Alla huvudkonton är inte giltiga för alla juridiska personer, och några huvudkonton kanske bara är relevanta under en viss period. I detta scenario kan du använda avsnittet **Juridisk person åsidosätter** för att identifiera vilka företag som huvudkontot ska uppskjutas för, vem ägaren är och tidsperioden dimensionen är aktiv i. Åsidosättandet på den delade nivån kan inte vara restriktivare än åsidosättandet på nivån för juridisk person.
 
-Mer information finns i följande avsnitt: [Ekonomiska dimensioner](financial-dimensions.md)
-[SKapa och tilldela avancerade regelstrukturer](tasks/create-assign-advanced-rule-structures.md)
+Mer information finns i följande avsnitt:
 
-
-
+- [Ekonomiska dimensioner](financial-dimensions.md)
+- [Skapa och tilldela avancerade regelstrukturer](tasks/create-assign-advanced-rule-structures.md)
 

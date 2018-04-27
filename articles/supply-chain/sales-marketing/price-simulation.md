@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="price-simulation"></a>Prissimulering
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Det här avsnittet innehåller information om prissimulering för offerter. Prissimulering hjälper dig att utvärdera effekten av avdrag på det framtida försäljningspriset under offertprocessen innan du på fastställer ett specifikt pris.
 

@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="vendor-collaboration-invoicing-workspace"></a>Faktureringsarbetsyta för leverantörssamarbeten
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Det här avsnittet beskriver hur du kan visa leverantörsfakturor och skicka fakturor från arbetsytan för leverantörssamarbetesfakturering.
 
@@ -53,16 +52,12 @@ Om du klickar på en ruta öppnas en filtrerad vy av listsidan **Fakturor**.
 
 I avsnittet **Tabellistor** är status för faktureringen uppdelad på liknande sätt som sammanfattningsrutorna: Utkast och Skickad, ej godkända listor. En faktura kan skickas till arbetsflödet eller tas bort när den befinner sig läget Utkast. Den sista tabellistan är ett alternativ för att hitta fakturor. Du kan filtrera medan du söker för att tillåta snabbare sökningar.
 
-<a name="all-vendor-invoices-list-page"></a>Alla listsidor med leverantörsfakturor
------------------------------
+### <a name="all-vendor-invoices-list-page"></a>Alla listsidor med leverantörsfakturor
 
 Du kan visa alla bokförda och ej bokförda leverantörsfakturor på listsidan **Leverantörssamarbetesfakturor**. Du kan använda den här listsidan för att visa betalningsstatus för fakturor. Betalningsstatus omfattar Ej bokförd, Obetald, Delvis betald och Helt betald.
 Skapa en ny leverantörsfaktura från en inköpsorder
---------------------------------------------
 
 Du kan skapa en ny leverantörsfaktura, genom att välja åtgärden **Ny** på **Faktureringsarbetsyta för leverantörssamarbete**. Inköpsordernumret och fakturanumret måste anges av leverantören. Som standard visas alla rader från leverantörens inköpsorder på den nya fakturan. Informationen om kvantitet och kostnad kan redigeras innan leverantörsfakturan skickas till arbetsflödet. Du kan bifoga filer, anteckningar, bilder och URL-adresser till en faktura, innan du skickar in den.
-
-
 
 Mer information finns i [Samarbeten med externa leverantörer](../../supply-chain/procurement/vendor-collaboration-work-external-vendors.md)
 

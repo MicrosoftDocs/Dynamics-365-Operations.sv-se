@@ -25,7 +25,7 @@ ms.lasthandoff: 11/02/2017
 ---
 # <a name="set-up-a-min-max-replenishment-process"></a>Ställ in en min-max-process för lagerpåfyllnad
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Den här proceduren visar hur du ställer in en ny process för lagerpåfyllnad som använder den minsta/största lagerpåfyllnadsstrategin. När lager faller under den lägsta nivån kommer arbete att skapas för att fylla på platsen. Proceduren visar även hur du använder fasta plockplatser om du vill tillåta att fylla på lager även om lager faller under den lägsta nivån, och hur du aktiverar processen för lagerpåfyllnad att köras regelbundet med hjälp av ett batchjobb. Dessa uppgifter utförs vanligtvis av en lagerchef. Du kan köra den här proceduren i demonstrationsdataföretaget USMF som använder exempelvärdena i anteckningar eller så kan du köra det på dina egna data. Om du använder dina egna data ska du kontrollera att du har ett lagerställe som aktiveras för Lagerstyrningsprocesser.
 

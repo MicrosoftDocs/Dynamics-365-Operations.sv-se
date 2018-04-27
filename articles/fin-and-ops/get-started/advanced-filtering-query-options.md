@@ -19,17 +19,16 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 1fe940d2d282a5b4468b3ba572626b5c87839e6d
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 4361311be0cf5c33c9b2fa4700b084a7b43f5b65
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="advanced-filtering-and-query-syntax"></a>Avancerade filtrerings- och frågesyntax
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denna artikel beskriver filterings- och frågealternativ som är tillgängliga, när du använder operatorn ”matchar" i den avancerade filtrerings-/sorteringsdialogen.
 
@@ -68,7 +67,7 @@ Denna artikel beskriver filterings- och frågealternativ som är tillgängliga, 
 <td><em>värdet Från</em>.<em>värdet Till</em> (dubbla punkter)</td>
 <td>Mellan de två värdena som angavs åtskilda med dubbla punkter</td>
 <td>Skriv in värdet Från, sedan två punkter och sist värdet Till.</td>
-<td><strong>1..10</strong> hittar alla värden från 1 till 10. I ett strängfält hittar dock <strong>A..C</strong> alla värden som börjar med &quot;A&quot; och &quot;B&quot; och värden som exakt motsvarar &quot;C&quot;. Till exempel kommer denna fråga inte att hitta &quot;Ca&quot;. Om du vill hitta alla värden från &quot;A*&quot; till &quot;C*&quot;, skriv då <strong>A..D</strong>.</td>
+<td><strong>1..10</strong> hittar alla värden från 1 till 10. I ett strängfält hittar dock <strong>A..C</strong> alla värden som börjar med &quot;A&quot; och &quot;B&quot; och värden som exakt motsvarar &quot;C&quot;. Till exempel kommer denna fråga inte att hitta &quot;Ca&quot;. Om du vill hitta alla värden från &quot;A<em>&quot; till &quot;C</em>&quot;, skriv då <strong>A..D</strong>.</td>
 </tr>
 <tr class="even">
 <td>..<em>värde</em> (dubbla punkter)</td>
@@ -97,20 +96,20 @@ Denna artikel beskriver filterings- och frågealternativ som är tillgängliga, 
 <tr class="even">
 <td><em>värde</em>* (asterisk)</td>
 <td>Startar från värdet som angavs</td>
-<td>Skriv in startvärdet och sedan en asterisk (<strong>*</strong>).</td>
-<td><strong>S*</strong> hittar alla strängar som börjar med &quot;S&quot;, t.ex. &quot;Stockholm&quot;, &quot;Sydney&quot; eller &quot;San Francisco&quot;.</td>
+<td>Skriv in startvärdet och sedan en asterisk (<strong><em></strong>).</td>
+<td><strong>S</em></strong> hittar alla strängar som börjar med &quot;S&quot; som till exempel &quot;Stockholm&quot;, &quot;Sydney&quot; och &quot;San Francisco&quot;.</td>
 </tr>
 <tr class="odd">
-<td>*<em>värde</em> (asterisk)</td>
+<td><em><em>värde</em> (asterisk)</td>
 <td>Slutar med värdet som angavs.</td>
 <td>Skriv in en asterisk och sedan slutvärdet.</td>
-<td><strong>*öst</strong> hittar alla strängar som slutar med &quot;öst&quot;, t.ex. &quot;Nordöst&quot; och &quot;Sydöst&quot;.</td>
+<td><strong></em>öst</strong>  hittar alla strängar som slutar med &quot;öst&quot; som till exempel &quot;nordöst&quot; och &quot;sydöst&quot;.</td>
 </tr>
 <tr class="even">
-<td>*<em>värde</em>* (asterisk)</td>
+<td><em><em>värde</em></em> (asterisk)</td>
 <td>Innehåller värdet som angavs.</td>
 <td>Skriv in en asterisk, sedan ett värde och slutligen en till asterisk.</td>
-<td><strong>*st*</strong> hittar alla strängar som innehåller &quot;st&quot;, t.ex. &quot;Nordöst&quot; och &quot;Sydöst&quot;.</td>
+<td><strong><em>st</em></strong> hittar alla strängar som innehåller &quot;st&quot;, t.ex. &quot;Nordöst&quot; och &quot;Sydöst&quot;.</td>
 </tr>
 <tr class="odd">
 <td>? (frågetecken)</td>

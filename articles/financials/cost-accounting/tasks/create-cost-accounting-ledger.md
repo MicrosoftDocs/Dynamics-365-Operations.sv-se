@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-cost-accounting-ledger"></a>Skapa en redovisning för kostnadsredovisning
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 En huvudbok för kostnadsredovisning utgör den övergripande rapporteringsenheten. Den definieras av en kostnadselementdimension, statistisk dimension, räkenskapskalender och valuta. Den är oberoende av begreppet juridiska personer. En juridisk person och dess data kan associeras med många huvudböcker för kostnadsredovisning. I den här inspelningen används demonstrationsföretaget USP2.
 

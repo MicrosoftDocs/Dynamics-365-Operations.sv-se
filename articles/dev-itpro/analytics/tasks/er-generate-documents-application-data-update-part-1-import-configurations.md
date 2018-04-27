@@ -1,5 +1,5 @@
 --- 
-title: "Importera konfigurationer för att skapa dokument med programdatauppdatering för elektronisk rapportering (ER)"
+title: "Importera konfigurationer för att generera dokument med programdata"
 description: "För att slutföra stegen i den här proceduren måste du först slutföra stegen i proceduren ER Skapa en konfigurationsleverantör och markera den som aktiv."
 author: NickSelin
 manager: AnnBe
@@ -16,15 +16,15 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 5d4f57ae2a309d9e15c1afe60c3e91d7d7eb3870
-ms.openlocfilehash: 6a945eb6c733d760cc723bfa7135d73bdf502724
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 87352293a78d6a356db49deffb930016a1bf836c
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 04/13/2018
 
 ---
-# <a name="import-configurations-to-generate-documents-with-application-data-update-for-electronic-reporting-er"></a>Importera konfigurationer för att skapa dokument med programdatauppdatering för elektronisk rapportering (ER)
+# <a name="import-configurations-to-generate-documents-with-application-data"></a>Importera konfigurationer för att generera dokument med programdata
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 För att slutföra stegen i den här proceduren måste du först slutföra stegen i proceduren ER Skapa en konfigurationsleverantör och markera den som aktiv.
 

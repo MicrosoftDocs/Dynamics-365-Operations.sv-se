@@ -29,10 +29,9 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="product-dimensions"></a>Produktdimensioner
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[Retail name](../includes/retail-name.md)]
-
+[!INCLUDE [Retail name](../includes/retail-name.md)]
 
 Det finns fyra produktdimensioner: färg, konfiguration, storlek och utförande. Du kombinerar produktdimensioner i dimensionsgrupper och tilldelar dimensionsgrupper till produktmallar. Kombinationerna av produktdimensioner bestämmer hur produktvarianter definieras.
 
@@ -51,6 +50,7 @@ Produktdimensionvärden som till exempel Storlek, Färg och Utförande kan ska
 -   Klicka på **Produktinformationshantering** &gt; **Frisläppta produkter**. Välj en produktmall. I **Åtgärdsfönstret**, klicka på **Produkt**. I gruppen **Produktmall**, klicka på **Produktdimensioner**.
 
 Antalet varianter som du kan skapa för en artikel begränsas av antalet möjliga produktdimensionskombinationer.
+
 | **Tips!**                                                                                                                                              |
 |------------------------------------------------------------------------------------------------------------------------------------------------------|
 | När du använder en produkt på till exempel en orderrad väljer du produktdimensioner för att identifiera produktvarianten du vill arbeta med. |

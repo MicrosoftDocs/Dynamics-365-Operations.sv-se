@@ -28,8 +28,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="general-ledger"></a>Huvudbok 
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Använd redovisningen när du vill definiera och hantera den juridiska personens ekonomiska poster. Redovisningen är ett register för debet- och kreditposter. Dessa poster är klassificerade med hjälp av de konton som listas i en kontoplan. 
 

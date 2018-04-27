@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="connect-the-help-system"></a>Ansluta hjälpsystemet
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Det här avsnittet innehåller komponenten för hjälpsystemet för Microsoft Dynamics 365 for Finance and Operations. Det ger en översikt över hur du skapar ansluter dessa komponenter en sammanfattning av hur du skapar anpassad hjälp. 
 
@@ -42,7 +41,7 @@ Följande bild visar delarna i hjälpsystemet för Finance and Operations. Produ
 ## <a name="connecting-the-help-system"></a>Ansluta hjälpsystemet
 > [!NOTE]
 > Fliken **Uppgiftsguider** finns för närvarande inte i Microsoft Dynamics 365 for Talent eller Microsoft Dynamics 365 for Retail. Vi arbetar för närvarande med att aktivera den här funktionen i framtida versioner. Uppgiftsguiderna i Komma igång i Talent täcker fortsatt basfunktionerna. Procedurhjälp finns även att få via webbplatsen docs.microsoft.com site ([docs.microsoft.com/dynamics365/unified-operations](../../index.md)) för såväl Retail som Talent.
- 
+
 
 Med hjälp av sidan **Systemparametrar** ansluter systemadministratörer delar av hjälpsystemet för en implementering [![Formulär för systemparametrar med hjälpinställningar](./media/system-parameters_ops-1024x437.png)](./media/system-parameters_ops.png) Gå till sidan **Systemparametrar** och följ dessa steg:
 

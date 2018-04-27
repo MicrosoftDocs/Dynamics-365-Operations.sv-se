@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="trial-balance-financial-reports"></a>Ekonomiska råbalansrapporter
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Den här artikeln beskriver standardrapporter för råbalanser. Det beskriver även de byggstenar som är associerade med dessa rapporter och hur du kan ändra rapporterna så att de passar ditt företags behov. 
 
@@ -99,7 +98,7 @@ Alla råbalansrapporter använder olika kolumndefinitioner. Dessa kolumndefiniti
     -   **FD** – ekonomisk data som bara innehåller debet för det senaste året
     -   **FD** – ekonomisk data som bara innehåller kredit för det senaste året
 
- 
+
 
 <a name="see-also"></a>Se även
 --------

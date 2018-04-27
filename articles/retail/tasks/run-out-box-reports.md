@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="generate-and-run-out-of-box-reports"></a> Generera och kör färdiga rapporter
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 Använd den här uppgiftsguiden för att köra färdiga rapporter på huvudkontoret från olika arbetsytor och förfrågningar och försäljningsrapporter som finns under Butik och handel
 

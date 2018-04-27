@@ -25,8 +25,7 @@ ms.lasthandoff: 02/23/2018
 
 # <a name="cfo-overview-power-bi-content"></a>Power BI-innehåll för översikt över ekonomichef
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)] 
 
 Det här avsnittet beskriver **Översikt över ekonomichef** för Microsoft Power BI-innehåll. Detta Power BI-innehåll gäller för dem som använder Microsoft Dynamics 365 for Finance and Operations version 7.2. Om du använder version 7.3 eller senare läs [Ekonomiska insikter](financial-insights.md).
 

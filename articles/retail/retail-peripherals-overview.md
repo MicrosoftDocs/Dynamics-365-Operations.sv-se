@@ -28,8 +28,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="retail-peripherals-overview"></a>Översikt över butikskringutrustning
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Det här avsnittet förklarar koncepten som är relaterade till kringutrustning i butik. Här beskrivs olika sätt att ansluta kringutrustning till kassan och komponenterna som är ansvariga för anslutning till kassan.
 

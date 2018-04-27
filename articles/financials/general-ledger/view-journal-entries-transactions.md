@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="view-journal-entries-and-transactions"></a>Visa journalposter och transaktioner
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Det här avsnittet innehåller information om de olika sätten att visa journalposter och transaktioner. 
 
@@ -55,7 +54,7 @@ Förutom ekonomiska rapporter kan du använda följande redovisningsrapporter om
 -   **Transaktionsursprung** – Den här transaktionsrapporten visar konto efter journal och efter transaktionsvalutan, kontovalutan och rapporteringsvalutan. Den visar också varje rad i journalen som användes som avräkning.
 
 
-##<a name="see-also"></a>Se även
+## <a name="see-also"></a>Se även
 - [Kontosaldon i redovisningskontot](general-ledger-account-balances.md) 
 - [Utforskare för redovisningskälla](..\accounts-payable\accounting-source-explorer.md)
 - [Ekonomisk rapportering](financial-reporting-getting-started.md)

@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="demand-forecasting-setup"></a>Behovsprognoser inställning
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Detta avsnitt beskriver de uppgifter som du måste utföra för att förbereda behovsprognoser.  
 

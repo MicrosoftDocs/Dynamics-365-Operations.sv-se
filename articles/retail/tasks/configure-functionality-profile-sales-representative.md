@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="configure-the-functionality-profile-for-a-sales-representative"></a> Konfigurera funktionsprofilen för en säljare
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 I den här proceduren visas hur du konfigurerar en butiks funktionsprofilinställningar som gäller för säljare. Denna procedur använder demonstrationsföretaget USRT.
 

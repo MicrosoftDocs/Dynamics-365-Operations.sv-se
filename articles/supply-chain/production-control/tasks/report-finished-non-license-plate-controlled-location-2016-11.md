@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="report-as-finished-to-a-plate-controlled-location"></a>Rapportera som färdig till en plats som styrs av ID-nummer  
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Den här uppgiftsguiden visar ett exempel på rapporteringen som slutförd till en plats som inte är ID-nummertyrd. En tillämplig arbetspolicy är förutsättningen är den här uppgiften. En tidigare uppgiftsguide visade inställningarna för arbetspolicyn. Den här uppgiftsguiden kräver Dynamics AX program 7.0.1 eller senare.
 

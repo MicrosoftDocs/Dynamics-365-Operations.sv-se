@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="plan-freight-transportation-routes-with-multiple-stops"></a>Planera frakttransportvägar med flera stopp
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Den här artikeln ger en beskrivning av de olika element som du använder för att planera transportrutter i Microsoft Dynamics 365 for Finance and Operations.
 

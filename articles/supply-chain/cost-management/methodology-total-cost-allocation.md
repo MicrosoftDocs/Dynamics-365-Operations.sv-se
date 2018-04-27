@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="total-cost-allocation-method"></a>Metod för total kostnadsallokering
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Den här ämnet ger riktlinjer för att använda total kostnadsallokering (TCA). TCA är en metod för att beräkna kostnaden mellan den huvudsakliga receptartikeln för en batchorder och samprodukterna som definieras för receptet.
 

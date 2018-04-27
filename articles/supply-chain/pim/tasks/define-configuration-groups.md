@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="define-configuration-groups"></a>Definiera konfigurationsgrupper
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 I den här proceduren visas hur du definierar produktkonfigurationsgrupper genom att skapa två grupper i demonstrationsdataföretaget USMF. Detta är den fjärde proceduren utav åtta som förklarar hur du ställer upp kombinationer för dimensionsbaserad konfiguration.
 

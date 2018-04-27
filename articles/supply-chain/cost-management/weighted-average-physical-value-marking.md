@@ -20,18 +20,18 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 69876a9d1daec4e6980728527c784a5404239cc2
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: ec7f1ef643d864a2729642d78d19fc43d5f6a7fb
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="weighted-average-with-physical-value-and-marking"></a>Viktat genomsnitt med fysiskt värde och markering
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
 Viktat medelvärde är en lagermodell som baseras på principen om viktat medelvärde, där utleveranser från lagret värderas till medelvärdet av de artiklar som inlevereras till lagret under lagerstängningsperioden, plus all lagerbehållning från föregående period.
 
@@ -74,16 +74,16 @@ I bilden nedan visas hur den här serien med transaktioner påverkas när du vä
 ![Direktkvittning av viktat medeldatum utan Inkludera fysiskt värde](./media/weightedaveragedirectsettlementwithoutincludephysicalvalue.gif) 
 
 **Förklaringar till bilden**
--   Lagertransaktioner visas som lodräta pilar.
--   Inleveranser till lagret visas som lodräta pilar ovanför tidslinjen.
--   Utleveranser från lagret visas som lodräta pilar under tidslinjen.
--   Ovanför (eller under) respektive lodrät pil anges värdet på lagertransaktionen i formatet Quantity@Unitprice.
--   Ett lagertransaktionsvärde inom hakparentes anger att lagertransaktionen har bokförts fysiskt i lagret.
--   Ett lagertransaktionsvärde utan hakparentes anger att lagertransaktionen har bokförts ekonomiskt i lagret.
--   Varje ny inleverans- eller utleveranstransaktion betecknas med en ny etikett.
--   Varje lodrät pil har en etikett med ett ordnings-ID, till exempel *1a*. Dessa ID:n anger ordningen på lagertransaktionsbokningarna utmed tidslinjen.
--   Lagerstängningar visas som en röd lodrät streckad linje och etiketten Lagerstängning.
--   Kvittningar som utförs av en lagerstängning visas som prickade röda pilar som löper diagonalt från en inleverans till en utleverans.
+- Lagertransaktioner visas som lodräta pilar.
+- Inleveranser till lagret visas som lodräta pilar ovanför tidslinjen.
+- Utleveranser från lagret visas som lodräta pilar under tidslinjen.
+- Ovanför (eller under) respektive lodrät pil anges värdet på lagertransaktionen i formatet Quantity@Unitprice.
+- Ett lagertransaktionsvärde inom hakparentes anger att lagertransaktionen har bokförts fysiskt i lagret.
+- Ett lagertransaktionsvärde utan hakparentes anger att lagertransaktionen har bokförts ekonomiskt i lagret.
+- Varje ny inleverans- eller utleveranstransaktion betecknas med en ny etikett.
+- Varje lodrät pil har en etikett med ett ordnings-ID, till exempel *1a*. Dessa ID:n anger ordningen på lagertransaktionsbokningarna utmed tidslinjen.
+- Lagerstängningar visas som en röd lodrät streckad linje och etiketten Lagerstängning.
+- Kvittningar som utförs av en lagerstängning visas som prickade röda pilar som löper diagonalt från en inleverans till en utleverans.
 
 ## <a name="weighted-average-summarized-settlement-without-the-include-physical-value-option"></a>Viktat medelvärde med summerad kvittning utan alternativet Inkludera fysiskt värde
 Viktat medelvärde kvittning baserat på principen att alla inleveranser inom en stängningsperiod summeras till en ny lageröverföringstransaktion som kallas Viktat medelvärde för stängning av lager. Alla inleveranser för den perioden kvittas mot utleveransen för den nya lageröverföringstransaktionen. Alla utleveranser för perioden kvittas mot inleveransen för den nya lageröverföringstransaktionen. Om lagerbehållningen är positiv efter lagerstängningen summeras den lagerbehållningen och värdet på lagret i den nya lageröverföringstransaktionen (utleverans). Om lagerbehållningen är negativ efter lagerstängningen är lagerbehållningen och värdet på lagret summan av enskilda utleveranser som inte har kvittats helt. I scenariot nedan har flera ekonomiskt uppdaterade inleveranser och en utleverans bokförts. 
@@ -108,18 +108,18 @@ I bilden nedan visas hur den här serien med transaktioner påverkas när du vä
 ![Summerad kvittning av viktat medeldatum utan Inkludera fysiskt värde](./media/weightedaveragesummarizedsettlementwithoutincludephysicalvalue.gif) 
 
 **Förklaringar till bilden**
--   Lagertransaktioner visas som lodräta pilar.
--   Inleveranser till lagret visas som lodräta pilar ovanför tidslinjen.
--   Utleveranser från lagret visas som lodräta pilar under tidslinjen.
--   Ovanför (eller under) respektive lodrät pil anges värdet på lagertransaktionen i formatet Quantity@Unitprice.
--   Ett lagertransaktionsvärde inom hakparentes anger att lagertransaktionen har bokförts fysiskt i lagret.
--   Ett lagertransaktionsvärde utan hakparentes anger att lagertransaktionen har bokförts ekonomiskt i lagret.
--   Varje ny inleverans- eller utleveranstransaktion betecknas med en ny etikett.
--   Varje lodrät pil har en etikett med ett ordnings-ID, till exempel *1a*. Dessa ID:n anger ordningen på lagertransaktionsbokningarna utmed tidslinjen.
--   Lagerstängningar visas som en röd lodrät streckad linje och etiketten Lagerstängning.
--   Kvittningar som utförs av en lagerstängning visas som prickade röda pilar som löper diagonalt från en inleverans till en utleverans.
--   Röda pilar illustrerar inleveranstransaktioner som kvittas mot utleveranstransaktioner som skapas i systemet.
--   Den gröna pilen visar motbokning av den systemgenererade inleveranstransaktionen som den ursprungliga bokförda utleveranstransaktionen kvittas mot.
+- Lagertransaktioner visas som lodräta pilar.
+- Inleveranser till lagret visas som lodräta pilar ovanför tidslinjen.
+- Utleveranser från lagret visas som lodräta pilar under tidslinjen.
+- Ovanför (eller under) respektive lodrät pil anges värdet på lagertransaktionen i formatet Quantity@Unitprice.
+- Ett lagertransaktionsvärde inom hakparentes anger att lagertransaktionen har bokförts fysiskt i lagret.
+- Ett lagertransaktionsvärde utan hakparentes anger att lagertransaktionen har bokförts ekonomiskt i lagret.
+- Varje ny inleverans- eller utleveranstransaktion betecknas med en ny etikett.
+- Varje lodrät pil har en etikett med ett ordnings-ID, till exempel *1a*. Dessa ID:n anger ordningen på lagertransaktionsbokningarna utmed tidslinjen.
+- Lagerstängningar visas som en röd lodrät streckad linje och etiketten Lagerstängning.
+- Kvittningar som utförs av en lagerstängning visas som prickade röda pilar som löper diagonalt från en inleverans till en utleverans.
+- Röda pilar illustrerar inleveranstransaktioner som kvittas mot utleveranstransaktioner som skapas i systemet.
+- Den gröna pilen visar motbokning av den systemgenererade inleveranstransaktionen som den ursprungliga bokförda utleveranstransaktionen kvittas mot.
 
 ## <a name="weighted-average-direct-settlement-with-the-include-physical-value-option"></a>Viktad medelvärde med direkt kvittning med alternativet Inkludera fysiskt värde
 Parametern som omfattar fysiskt värde fungerar på ett annat sätt med lagermodellen för viktat medelvärde än i tidigare versioner av produkten. Markera kryssrutan Inkludera fysiskt värde för en artikel i formuläret Artikelmodellgrupper. Sedan använder systemet fysiskt uppdaterade inleveranser vid beräkning av den uppskattade självkostnaden, eller det löpande medelvärdet. Utleveranser bokförs utifrån denna uppskattade självkostnad under perioden. Vid lagerstängningen tas det bara hänsyn till ekonomiskt uppdaterade inleveranser i beräkningen av det viktade medelvärdet. Vi rekommenderar en månadsvis lagerstängning när du använder lagermodellen för viktat medelvärde. I detta exempel på viktat medelvärde med direkt kvittning markeras artikelmodellgruppen till att inkludera fysiskt värde. 
@@ -137,16 +137,16 @@ I bilden nedan visas hur den här serien med transaktioner påverkas när du vä
 ![Viktat medeldatum med Inkludera fysiskt värde](./media/weightedaveragedirectsettlementwithincludephysicalvalue.gif) 
 
 **Förklaringar till bilden**
--   Lagertransaktioner visas som lodräta pilar.
--   Inleveranser till lagret visas som lodräta pilar ovanför tidslinjen.
--   Utleveranser från lagret visas som lodräta pilar under tidslinjen.
--   Ovanför (eller under) respektive lodrät pil anges värdet på lagertransaktionen i formatet Quantity@Unitprice.
--   Ett lagertransaktionsvärde inom hakparentes anger att lagertransaktionen har bokförts fysiskt i lagret.
--   Ett lagertransaktionsvärde utan hakparentes anger att lagertransaktionen har bokförts ekonomiskt i lagret.
--   Varje ny inleverans- eller utleveranstransaktion betecknas med en ny etikett.
--   Varje lodrät pil har en etikett med ett ordnings-ID, till exempel *1a*. Dessa ID:n anger ordningen på lagertransaktionsbokningarna utmed tidslinjen.
--   Lagerstängningar visas som en röd lodrät streckad linje och etiketten Lagerstängning.
--   Kvittningar som utförs av en lagerstängning visas som prickade röda pilar som löper diagonalt från en inleverans till en utleverans.
+- Lagertransaktioner visas som lodräta pilar.
+- Inleveranser till lagret visas som lodräta pilar ovanför tidslinjen.
+- Utleveranser från lagret visas som lodräta pilar under tidslinjen.
+- Ovanför (eller under) respektive lodrät pil anges värdet på lagertransaktionen i formatet Quantity@Unitprice.
+- Ett lagertransaktionsvärde inom hakparentes anger att lagertransaktionen har bokförts fysiskt i lagret.
+- Ett lagertransaktionsvärde utan hakparentes anger att lagertransaktionen har bokförts ekonomiskt i lagret.
+- Varje ny inleverans- eller utleveranstransaktion betecknas med en ny etikett.
+- Varje lodrät pil har en etikett med ett ordnings-ID, till exempel *1a*. Dessa ID:n anger ordningen på lagertransaktionsbokningarna utmed tidslinjen.
+- Lagerstängningar visas som en röd lodrät streckad linje och etiketten Lagerstängning.
+- Kvittningar som utförs av en lagerstängning visas som prickade röda pilar som löper diagonalt från en inleverans till en utleverans.
 
 ## <a name="weighted-average-summarized-settlement-with-the-include-physical-value-option"></a>Viktad medelvärde med summerad kvittning med alternativet Inkludera fysiskt värde
 Parametern Inkludera fysiskt värde fungerar på ett annat sätt med viktat medelvärde än i tidigare versioner. Markera kryssrutan Inkludera fysiskt värde för en artikel på sidan Artikelmodellgrupp. Sedan använder systemet fysiskt uppdaterade inleveranser vid beräkning av den uppskattade självkostnaden, eller det löpande medelvärdet. Utleveranser bokförs utifrån denna uppskattade självkostnad under perioden. Vid lagerstängningen tas det bara hänsyn till ekonomiskt uppdaterade inleveranser i beräkningen av det viktade medelvärdet. Vi rekommenderar en månadsvis lagerstängning när du använder lagermodellen för viktat medelvärde. I detta exempel på viktat medelvärde med summerad kvittning markeras lagermodellgruppen till att inkludera fysiskt värde. 
@@ -170,18 +170,18 @@ I bilden nedan visas hur den här serien med transaktioner påverkas när du vä
 ![Summerad kvittning av viktat medeldatum med Inkludera fysiskt värde](./media/weightedaveragesummarizedsettlementwithincludephysicalvalue.gif) 
 
 **Förklaringar till bilden**
--   Lagertransaktioner visas som lodräta pilar.
--   Inleveranser till lagret visas som lodräta pilar ovanför tidslinjen.
--   Utleveranser från lagret visas som lodräta pilar under tidslinjen.
--   Ovanför (eller under) respektive lodrät pil anges värdet på lagertransaktionen i formatet Quantity@Unitprice.
--   Ett lagertransaktionsvärde inom hakparentes anger att lagertransaktionen har bokförts fysiskt i lagret.
--   Ett lagertransaktionsvärde utan hakparentes anger att lagertransaktionen har bokförts ekonomiskt i lagret.
--   Varje ny inleverans- eller utleveranstransaktion betecknas med en ny etikett.
--   Varje lodrät pil har en etikett med ett ordnings-ID, till exempel 1a. Dessa ID:n anger ordningen på lagertransaktionsbokningarna utmed tidslinjen.
--   Lagerstängningar visas som en röd lodrät streckad linje och etiketten Lagerstängning.
--   Kvittningar som utförs av en lagerstängning visas som prickade röda pilar som löper diagonalt från en inleverans till en utleverans.
--   Röda pilar illustrerar inleveranstransaktioner som kvittas mot utleveranstransaktioner som skapas i systemet.
--   Den gröna pilen visar motbokning av den systemgenererade inleveranstransaktionen som den ursprungliga bokförda utleveranstransaktionen kvittas mot.
+- Lagertransaktioner visas som lodräta pilar.
+- Inleveranser till lagret visas som lodräta pilar ovanför tidslinjen.
+- Utleveranser från lagret visas som lodräta pilar under tidslinjen.
+- Ovanför (eller under) respektive lodrät pil anges värdet på lagertransaktionen i formatet Quantity@Unitprice.
+- Ett lagertransaktionsvärde inom hakparentes anger att lagertransaktionen har bokförts fysiskt i lagret.
+- Ett lagertransaktionsvärde utan hakparentes anger att lagertransaktionen har bokförts ekonomiskt i lagret.
+- Varje ny inleverans- eller utleveranstransaktion betecknas med en ny etikett.
+- Varje lodrät pil har en etikett med ett ordnings-ID, till exempel 1a. Dessa ID:n anger ordningen på lagertransaktionsbokningarna utmed tidslinjen.
+- Lagerstängningar visas som en röd lodrät streckad linje och etiketten Lagerstängning.
+- Kvittningar som utförs av en lagerstängning visas som prickade röda pilar som löper diagonalt från en inleverans till en utleverans.
+- Röda pilar illustrerar inleveranstransaktioner som kvittas mot utleveranstransaktioner som skapas i systemet.
+- Den gröna pilen visar motbokning av den systemgenererade inleveranstransaktionen som den ursprungliga bokförda utleveranstransaktionen kvittas mot.
 
 ## <a name="weighted-average-with-marking"></a>Viktat medelvärde med länkning
 Märkning är en process som gör det möjligt att länka, eller markera, en utleveranstransaktion till en inleveranstransaktion. Länkning kan göras antingen före eller efter att en transaktion bokförs. Du kan använda länkning när du vill vara säker på den exakta kostnaden för lagret när transaktionen bokförs eller när lagerstängningen utförs. 
@@ -218,16 +218,16 @@ I bilden nedan visas hur den här serien med transaktioner påverkas om du välj
 ![Viktat medelvärde med Markering](./media/weightedaveragewithmarking.gif) 
 
 **Förklaringar till bilden**
--   Lagertransaktioner visas som lodräta pilar.
--   Inleveranser till lagret visas som lodräta pilar ovanför tidslinjen.
--   Utleveranser från lagret visas som lodräta pilar under tidslinjen.
--   Ovanför (eller under) respektive lodrät pil anges värdet på lagertransaktionen i formatet Quantity@Unitprice.
--   Ett lagertransaktionsvärde inom hakparentes anger att lagertransaktionen har bokförts fysiskt i lagret.
--   Ett lagertransaktionsvärde utan hakparentes anger att lagertransaktionen har bokförts ekonomiskt i lagret.
--   Varje ny inleverans- eller utleveranstransaktion betecknas med en ny etikett.
--   Varje lodrät pil har en etikett med ett ordnings-ID, till exempel *1a*. Dessa ID:n anger ordningen på lagertransaktionsbokningarna utmed tidslinjen.
--   Lagerstängningar visas som en röd lodrät streckad linje och etiketten Lagerstängning.
--   Kvittningar som utförs av en lagerstängning visas som prickade röda pilar som löper diagonalt från en inleverans till en utleverans.
+- Lagertransaktioner visas som lodräta pilar.
+- Inleveranser till lagret visas som lodräta pilar ovanför tidslinjen.
+- Utleveranser från lagret visas som lodräta pilar under tidslinjen.
+- Ovanför (eller under) respektive lodrät pil anges värdet på lagertransaktionen i formatet Kvantitet@"Unitprice".
+- Ett lagertransaktionsvärde inom hakparentes anger att lagertransaktionen har bokförts fysiskt i lagret.
+- Ett lagertransaktionsvärde utan hakparentes anger att lagertransaktionen har bokförts ekonomiskt i lagret.
+- Varje ny inleverans- eller utleveranstransaktion betecknas med en ny etikett.
+- Varje lodrät pil har en etikett med ett ordnings-ID, till exempel *1a*. Dessa ID:n anger ordningen på lagertransaktionsbokningarna utmed tidslinjen.
+- Lagerstängningar visas som en röd lodrät streckad linje och etiketten Lagerstängning.
+- Kvittningar som utförs av en lagerstängning visas som prickade röda pilar som löper diagonalt från en inleverans till en utleverans.
 
 
 

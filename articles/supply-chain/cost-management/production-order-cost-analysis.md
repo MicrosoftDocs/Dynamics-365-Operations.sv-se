@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="production-order-cost-analysis"></a>Analys av kostnad för produktionsorder
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Den här artikeln innehåller information om den kostnadsanalys som du kan göra för slutförda och aktuella tillverkningsorder. Du kan analysera de uppskattade och faktiska kostnaderna med hjälp av prisberäkningssidan eller rapporten Kostnadsuppskattningar och kostnadsredovisningar. Information om uppskattade och faktiska kostnader (och kvantitet) visas för varje komponentartikel, flödesoperationen och den indirekta kostnaden.
 

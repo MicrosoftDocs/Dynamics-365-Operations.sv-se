@@ -3,12 +3,12 @@ title: "Startsida för kostnadshantering"
 description: "Med kostnadshantering kan du hantera värdering och redovisning av råmaterial, färdiga varor, delvis färdiga varor och tillgångar i pågående arbete."
 author: AndersGirke
 manager: AnnBe
-ms.date: 02/14/2017
+ms.date: 04/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
-ms.search.form: 
+ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace
 audience: Application User
 ms.reviewer: yuyus
 ms.search.scope: Core, Operations
@@ -29,7 +29,7 @@ ms.lasthandoff: 02/21/2018
 
 # <a name="cost-management-home-page"></a>Startsida för kostnadshantering
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Med [kostnadshantering (video)](https://www.youtube.com/watch?v=vXzlC-mOBcg&feature=youtu.be) kan du hantera värdering och redovisning av råmaterial, färdiga varor, delvis färdiga varor och tillgångar i pågående arbete. Det är processen för att definiera, hantera och rapportera [lagerredovisning](cost-object.md) och [tillverkningsredovisning](bom-calculations.md).
 

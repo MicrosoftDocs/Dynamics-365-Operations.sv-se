@@ -24,7 +24,7 @@ ms.lasthandoff: 10/26/2017
 ---
 # <a name="establish-customer-method-of-payment"></a>Upprätta en betalningsmetod för kund
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Skapa en betalningsmetod för kundbetalningar. I den här uppgiften används demonstrationsföretaget USMF.
 

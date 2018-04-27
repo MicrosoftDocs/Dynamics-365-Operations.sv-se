@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="ledger-journal-types"></a>Redovisningsjournaltyper
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Det här avsnittet ger en beskrivning av de journaltyper du kan ställa in för ekonomiska journaler. Använd sidan för **journalnamn** för att ställa in journaler som du kan använda i hela Microsoft Dynamics 365 for Finance and Operations.
 

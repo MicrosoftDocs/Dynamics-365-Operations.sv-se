@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="configure-a-conditional-decision-in-a-workflow"></a>Konfigurera ett villkorsbeslut i ett arbetsflöde
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Använd följande procedur om du vill konfigurera egenskaperna för ett villkorsbeslut.
 

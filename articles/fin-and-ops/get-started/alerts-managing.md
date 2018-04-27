@@ -24,9 +24,9 @@ ms.lasthandoff: 03/23/2018
 ---
 
 # <a name="batch-processing-for-alerts"></a>Batchbearbetning för notifieringar
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[banner](../includes/pre-release.md)] 
+[!INCLUDE [banner](../includes/pre-release.md)]
 
 Notifieringar bearbetas med funktionen för batchbearbetning i Microsoft Dynamics 365 for Finance and Operations. Du måste ställa in batchbearbetning innan notifieringar ska kunna skickas.
 

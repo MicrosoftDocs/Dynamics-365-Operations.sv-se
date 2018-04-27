@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-repeat-purchase-order"></a>Skapa en upprepad inköpsorder
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 I den här proceduren visas hur du skapar en upprepad inköpsorder (IO) genom att kopiera rader från ett tidigare inköpsorderdokument till en ny IO eller till en befintlig IO. Det finns två sätt att skapa upprepade order. Du kan använda tillgängliga åtgärder på dokumentnivån från åtgärdsfönstret, eller använda raddetaljåtgärderna. Dokumentnivååtgärderna är huvudsakligen avsedda för att skapa en ny inköpsorder, genom att lägga till rader och rubrikinformation från en annan order, medan raddetaljåtgärden är huvudsakligen för att lägga till rader i en befintlig order. De exempel som visas i den här handboken kan användas i demoföretaget USMF. Denna uppgift utförs vanligtvis av en inköpsagent.
 

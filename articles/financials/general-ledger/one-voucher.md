@@ -3,7 +3,7 @@ title: En verifikation
 description: "En verifikation för redovisningsjournaler (allmän journal, journal för anläggningstillgångar, leverantörsbetalningsjournal och så vidare) låter dig ange flera redovisningsjournaltransaktioner i samband med en enda verifikation."
 author: kweekley
 manager: AnnBe
-ms.date: 03/19/2018
+ms.date: 04/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,16 +19,16 @@ ms.author: kweekley
 ms.search.validFrom: 2018-03-16
 ms.dyn365.ops.version: 
 ms.translationtype: HT
-ms.sourcegitcommit: 3831a6b5ec458495134b4b490d33a9acd76b6d2e
-ms.openlocfilehash: 76ea8470786bd50896400a65564d698d96119d6f
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 9f996131830f9bd4efd534143b3fb761c5ccc756
 ms.contentlocale: sv-se
-ms.lasthandoff: 03/20/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="one-voucher"></a>En verifikation
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 > [!NOTE]
 >  Den här funktionen blir tillgänglig i Dynamics 365 for Finance and Operations version 8.0, som kommer att vara tillgänglig i versionen som kommer våren 2018.   
@@ -39,9 +39,12 @@ ms.lasthandoff: 03/20/2018
 Den befintliga funktionaliteten för redovisningsjournaler (allmän journal, journal för anläggningstillgångar, leverantörsbetalningsjournal och så vidare) låter dig ange flera redovisningsjournaltransaktioner i samband med en enda verifikation. Vi r
 efererar till den här funktionen som ”en verifikation” Du kan skapa en verifikation med en av följande metoder:
 
--   Ställ in journalnamnet (**Redovisning**\>**Journalinställning**\>**Journalnamn**) så att fältet **Ny verifikation** anges till **Bara ett verifikationsnummer**. Varje rad som du lägger till journalen finns nu på samma verifikation. Eftersom alla rader läggs till samma verifikation, kan verifikationen anges som en verifikation med flera rader, som ett konto eller motkonto på samma rad, eller en kombination.
+-   Ställ in journalnamnet (**Redovisning**\>**Journalinställning**\>**Journalnamn**) så att fältet **Ny verifikation** anges till **Bara ett verifikationsnummer**. * Varje rad som du lägger till journalen finns nu på samma verifikation. Eftersom alla rader läggs till samma verifikation, kan verifikationen anges som en verifikation med flera rader, som ett konto eller motkonto på samma rad, eller en kombination.
 
 [![Enstaka rad](./media/same-line.png)](./media/same-line.png)
+ 
+> [!IMPORTANT] 
+> *  Observera att definitionen av ”En verifikation" INTE innehåller journalnamn som är inställda som endast **Ett verifikationsnummer** och användaren anger sedan en verifikation som endast omfattar typer av redovisningskonton.  I det här dokumentet betyder "En verifikation" en verifikation som innehåller mer än en leverantör, kund, bank, anläggningstillgångar eller projekt. 
 
 -   Ange en verifikation med flera rader om det inte finns något motkonto.
 
@@ -69,13 +72,16 @@ Sedan skapar du rapporten **Utgifter per leverantör** i arbetsytan **Ekonomiska
 
 På grund av de problem som har angetts tidigare används inte längre funktionen för en verifikation. Men eftersom det finns funktionsluckor som är beroende av den här funktionen kan funktionen inte föråldras samtidigt. I stället använder vi följande schema: 
 
--   **Version våren 2018** - Funktionen inaktiveras som standard via en parameter i redovisningen. Men kan du aktivera funktionen om ditt företag har ett scenario som faller inom luckorna för affärsscenario som nämns senare i detta avsnitt.
+- **Version våren 2018** - Funktionen inaktiveras som standard via en parameter i redovisningen. Men kan du aktivera funktionen om ditt företag har ett scenario som faller inom luckorna för affärsscenario som nämns senare i detta avsnitt.
 
-    -   Om en kund har ett affärsscenario som inte kräver en verifikation ska funktionen inte aktiveras. Vi åtgärdar inte ”fel” i områden som identifierades senare i det här avsnittet om den här funktionen används även om det finns en annan lösning.
+  -   Om en kund har ett affärsscenario som inte kräver en verifikation ska funktionen inte aktiveras. Vi åtgärdar inte ”fel” i områden som identifierades senare i det här avsnittet om den här funktionen används även om det finns en annan lösning.
 
-    -   Sluta använda en verifikation för integrering i Microsoft Dynamics 365 Finance and Operations om funktionen krävs för en av de fungerande luckorna.
+  -   Sluta använda en verifikation för integrering i Microsoft Dynamics 365 Finance and Operations om funktionen krävs för en av de fungerande luckorna.
 
--   **Höst 2018 och senare versioner** – De funktionella luckorna fylls. När funktionella luckor fylls inaktiveras funktionen med en verifikation permanent.
+- **Höst 2018 och senare versioner** – De funktionella luckorna fylls. När funktionella luckor fylls inaktiveras funktionen med en verifikation permanent.
+
+- > [!IMPORTANT]
+  > Observera att alternativet **Bara ett verifikationsnummer** inte har tagits bort från journalnamnsinställningen.  Det här alternativet stöds fortfarande när verifikationen endast innehåller typer av redovisningskonton.  Kunder måste vara försiktiga när de använder den här inställningen eftersom verifikationen inte bokförs om de använder **Bara ett verifikationsnummer** utan att ange mer än en kund, leverantör, bank, anläggningstillgångar eller projekt.  Kunder kan fortfarande ange en blandning av typer av redovisningskontotyper för underordnad bok, såsom betalning inom en enda verifikation med kontotyperna för leverantör/bankkonto.  
 
 <a name="why-use-one-voucher"></a>Varför använda en verifikation?
 ====================
@@ -103,13 +109,13 @@ Följande scenarier kan endast uppnås genom att använda funktionen för en ver
 
 >   Om en organisation måste visa redovisningsposter från en affärshändelse tillsammans måste den använda en verifikation. 
 
--   **Landsspecifika funktioner**
+- **Landsspecifika funktioner**
 
- -   Funktionen för SAD (Single Administrative Document) för Polen kräver att en enda verifikation används. Tills ett grupperingsalternativ är tillgängligt för den här funktionen måste du fortsätta att använda funktionen för en verifikation. Det kan finnas ytterligare landsspecifika funktioner som kräver funktionen för en verifikation.
+  -   Funktionen för SAD (Single Administrative Document) för Polen kräver att en enda verifikation används. Tills ett grupperingsalternativ är tillgängligt för den här funktionen måste du fortsätta att använda funktionen för en verifikation. Det kan finnas ytterligare landsspecifika funktioner som kräver funktionen för en verifikation.
 
--   **Betalningsjournal för förskottsbetalning som har skatter på flera "rader"”**
+- **Betalningsjournal för förskottsbetalning som har skatter på flera "rader"”**
 
- -   En kund gör en förskottsbetalning för en order och raderna på ordern har olika skatter som måste bokföras för förskottsbetalningen. Kundens förskottsbetalning är en transaktion som simulerar raderna på ordern, så att lämplig skatt kan registreras för beloppet på varje rad.
+  -   En kund gör en förskottsbetalning för en order och raderna på ordern har olika skatter som måste bokföras för förskottsbetalningen. Kundens förskottsbetalning är en transaktion som simulerar raderna på ordern, så att lämplig skatt kan registreras för beloppet på varje rad.
 
 I det här scenariot är kunder i en verifikation samma kund eftersom transaktionen simulerar raderna i en kundorder. Förskottsbetalningen måste anges i en verifikation eftersom momsberäkningen måste göras på "raderna" för en betalning som kunden har gjort.
 

@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="settlement-overview"></a>Kvittningöversikt
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Den här artikeln innehåller allmän information om kvittningsprocessen. Den beskriver de olika typer av transaktioner som kan kvittas, när och hur transaktioner kan kvittas, och resultatet av kvittningsprocessen.
 

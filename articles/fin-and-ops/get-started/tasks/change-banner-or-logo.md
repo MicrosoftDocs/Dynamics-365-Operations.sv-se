@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="change-the-banner-or-logo"></a>Ändra webbannonsen eller logotypen
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Följande procedur visar de steg som systemadministratörer kan använda för att uppdatera webbannons- eller logotypbilden som visas för en juridisk person. Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="supply-chain-management-home-page"></a>Startsidan Hantering av underleverantörer
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Det här avsnittet innehåller en lista med hjälpavsnitt och andra resurser för styrningsfunktionerna för leveranskedjor i Microsoft Dynamics 365 for Finance and Operations. 
 

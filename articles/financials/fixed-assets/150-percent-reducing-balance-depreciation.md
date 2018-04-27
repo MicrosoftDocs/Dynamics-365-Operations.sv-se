@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="150-percent-reducing-balance-depreciation"></a>150 procent degressiv avskrivning
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Det här avsnittet ger en översikt över 150-procentsmetoden för degressiv avskrivning.
 
@@ -68,6 +67,7 @@ Om du väljer **Räkenskapsår** som avskrivningsår finns följande alternativ 
 -   **Räkenskapsperiod** bokför det totala avskrivningsbeloppet som beräknas för räkenskapsåret. Detta belopp periodiseras till de räkenskapsperioder som har definierats på **Räkenskapskalendrar**.
 
 ## <a name="example-of-150-reducing-balance-depreciation"></a>Exempel på 150 % degressiv avskrivning
+
 |                                |        |
 |--------------------------------|--------|
 | Anskaffningskostnad               | 11 000 |

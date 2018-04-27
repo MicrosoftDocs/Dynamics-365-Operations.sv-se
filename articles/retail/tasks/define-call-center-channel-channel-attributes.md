@@ -24,7 +24,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="define-call-center-channel-and-channel-attributes"></a> Definiera kundtjänst och kanalattribut
 
-[!include[task guide banner](../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
 
 Den här proceduren beskriver hur du skapar en ny butikskanal och definierar kanalattribut. Det demonstrationsdataföretag som används för att skapa den här uppgiften är USRT. Den här proceduren är avsedd för rollen Butik-IT.
 

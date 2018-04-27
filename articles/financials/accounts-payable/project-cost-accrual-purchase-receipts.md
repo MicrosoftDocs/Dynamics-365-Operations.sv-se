@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="project-cost-accrual-on-purchase-receipts"></a>Periodisering av projektkostnad på inköpsinleveranser
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 I det här avsnittet beskrivs hur upplupna projektkostnader från inköpsinleveranser kan spåras i Microsoft Dynamics 365 for Finance and Operations. 
 

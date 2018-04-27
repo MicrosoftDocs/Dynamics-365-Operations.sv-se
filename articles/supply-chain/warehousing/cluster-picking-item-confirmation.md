@@ -25,7 +25,7 @@ ms.lasthandoff: 02/13/2018
 
 ---
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 # <a name="product-confirmation-for-cluster-picking"></a>Produktbekräftelse för klusterplockning
 Klusterplockning kan du plockar artiklar för flera order samtidigt. När klusterplockning används, är objektbekräftelse avgörande för att kontrollera de objekt som läggs till ett kluster. Du kan kontrollera objekt i klusterplockning vid klusterplockningsprocessen.
@@ -37,7 +37,8 @@ Objektverifiering för klusterplockning fungerar på samma sätt som när du kon
 1.  På den mobila enhetens menyalternativ öppnar du inställningsformuläret för arbetsbekräftelse: **lagerstyrning** > **lagerstyrning** > **inställningar** > **mobil enhet** > **mobila enhetens menyalternativ**.
 2.  Från mobila enhetens menyalternativ öppnar du **Inställning av arbetsbekräftelse**.
 
-| Alternativ        | beskrivning   | 
-| ------------- | ------------- |
-|Produktbekräftelse | Låter dig kontrollera varje lagerenhet från den mobila enheten när du har skannat.|
+|        Alternativ        |                                    beskrivning                                    |
+|----------------------|-----------------------------------------------------------------------------------|
+| Produktbekräftelse | Låter dig kontrollera varje lagerenhet från den mobila enheten när du har skannat. |
+
 

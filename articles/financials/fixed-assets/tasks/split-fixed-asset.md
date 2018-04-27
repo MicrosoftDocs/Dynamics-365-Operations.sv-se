@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="split-a-fixed-asset"></a>Dela en anläggningstillgång
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Den här uppgiftsguiden delar en procentsats för en tillgångsförteckning till en ny tillgångsförteckning.  Här används revisorrollen och USMF-demonstrationdata.
 

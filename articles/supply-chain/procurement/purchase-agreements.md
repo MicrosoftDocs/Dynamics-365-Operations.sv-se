@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="purchase-agreements"></a>Inköpsavtal
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Det här avsnittet innehåller information om inköpsavtal. Ett inköpsavtal är ett kontrakt som ålägger en organisation att köpa en angiven kvantitet eller ett visst belopp via flera framtida inköpsorder. I utbyte mot detta åtagande får köparen särskilda priser och rabatter. 
 

@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="accounting-distributions-and-subledger-journal-entries-for-free-text-invoices"></a>Redovisningsfördelningar och redovisningsjournalposter för fritextfakturor
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Redovisningsfördelningar används för att definiera hur ett belopp ska redovisas. Exempelvis hur intäkten, momsen eller avgifterna ska redovisas på en fritextfaktura. Varje belopp som måste redovisas när leverantörsfakturan journalförs ska ha en eller flera redovisningsfördelningar.
 

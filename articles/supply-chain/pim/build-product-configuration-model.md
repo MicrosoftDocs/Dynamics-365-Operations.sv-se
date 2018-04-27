@@ -29,8 +29,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="build-a-product-configuration-model"></a>Bygg en produktkonfigurationsmodell
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 De behöver konfigurera produkter för att uppfylla särskilda krav blir regel snarare än undantag, både i business-to-business och business-to-consumer relationer.
 

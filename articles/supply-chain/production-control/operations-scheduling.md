@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="operations-scheduling"></a>Grovplanering
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Det här avsnittet innehåller information om grovplanering. Du kan använda grovplaneringen för att ange en allmän uppskattning av produktionsprocessen över en viss tid.
 

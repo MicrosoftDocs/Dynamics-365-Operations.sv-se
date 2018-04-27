@@ -16,15 +16,15 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 665dd5868b9a731caf9c847b7ca33f039fe083e3
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: aff5ca3a6f3de4d90955e803917d352a21877244
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="loan-items-to-a-worker"></a>Låna ut artiklar till en arbetare
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 I den här proceduren visas hur du lånar ut en artikel till en arbetare och registrerar den arbetare som returnerar en artikel. Arbetare kan också begära låneartiklar via sina självbetjäningssidor för medarbetare. Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.
 

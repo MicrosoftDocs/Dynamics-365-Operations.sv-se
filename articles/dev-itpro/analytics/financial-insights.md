@@ -18,16 +18,16 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 33a8bc78006ae9e7d5ca905a98886fd7af706604
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 6679215a664ddf938a204196b00f3bc28bf65f8f
 ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="financial-insights"></a>Ekonomiska insikter
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 **Ekonomiska insikter** använder Microsoft Power BI för att sammanföra bokslut, diagram och ekonomiska nyckeltal (KPI). Power BI är inbäddat i Microsoft Dynamics 365 Finance and Operations.
 Tyngdpunkten i **Ekonomiska insikter** är analytisk rapportering. All personal i organisationen kan läsa, undersöka, förstå och agera. 
@@ -107,8 +107,20 @@ För närvarande kan inte data i inbäddade Power BI-rapporter begränsas till d
 
 Jämförelsediagrammet nedan hjälper dig att skilja de två alternativen:
 
-| | **Ekonomisk rapportering**                            | **finansiell information** | | torrsubstanshalt | torrsubstanshalt |---torrsubstanshalt |}] |}] **Redigera standardrapporter** | Ja |}] Nej. **Skapa nya rapporter** | Ja |}] Nej. **Ut rapporter** | Ja |}] Nej. **Exportera till Excel** | Ja |}] Begränsad rådata för export till Excel, inte en formaterad rapport. **Stöder rapportering hierarki/organisationshierarkin** | Ja |}] Nej. **Rapporter med redovisningsjournal data** | Ja Begränsat till en enda leverantör, kund |}] Ja Leverantör, kund, leverantör eller kundgrupper, adresser för leverantörs-/ kundgruppen osv. | | **Rapporteringsvaluta** | Ja Redovisningsvaluta och översätt till rapporteringsvaluta |}] Nej Endast redovisningsvalutan. **Säkerhet** | Ja Följer säkerheten för trädrapportering i Fincance and Operations |}] Begränsad vy Rapporter för alla företag (oavsett säkerhet i Finance and Operations) eller endast aktiva företag. **Stöd olika kontoplaner och räkenskapsår** | Ja |}] Nej. **Rapport på externa data** | Nej |}] Nej. **Stöd konsolideringar** | Ja |}] Limited kan rapportera för flera företag men använder endast redovisningsvaluta |}]
 
+|                                                                       |               <strong>Ekonomisk rapportering</strong>                |                                      <strong>Ekonomiska insikter</strong>                                      |
+|-----------------------------------------------------------------------|-------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
+|                 <strong>Redigera standardrapporter</strong>                 |                                Ja                                |                                                      Nr                                                       |
+|                  <strong>Skapa nya rapporter</strong>                  |                                Ja                                |                                                      Nr                                                       |
+|                    <strong>Skriv ut rapporter</strong>                     |                                Ja                                |                                                      Nr                                                       |
+|                   <strong>Exportera till Excel</strong>                    |                                Ja                                |                           Begränsade exporter av rådata till Excel, inte en formaterad rapport                           |
+|  <strong>Stöd för rapportering av hierarki/organisationshierarki</strong>  |                                Ja                                |                                                      Nr                                                       |
+|               <strong>Rapport för redovisningsjournal</strong>               |               Ja Begränsat till en enda leverantör, kund                |                 Ja Leverantör, kund, leverantör/kundgrupper, adresser för leverantör/kundgrupp osv.                 |
+|                  <strong>Rapporteringsvaluta</strong>                  |    Ja Redovisningsvaluta och översätt till rapporteringsvaluta    |                                          Nej Endast redovisningsvaluta                                          |
+|                       <strong>Säkerhet</strong>                       | Ja Ansluter sig till Finance and Operations och rapportträdsäkerhet | Begränsad Visa rapporter för alla företag (oavsett Finance and Operations-säkerhet) eller endast aktiva företag |
+| <strong>Stöd för olika kontoplaner och räkenskapsår</strong> |                                Ja                                |                                                      Nr                                                       |
+|               <strong>rapport för externa data</strong>                |                                Nr                                 |                                                      Nr                                                       |
+|                <strong>Ge stöd till konsolideringar</strong>                |                                Ja                                |                   Begränsad Kan rapportera om flera företag men endast använda redovisningsvalutan                   |
 
 Utöver användargränssnittet i den ursprungliga arbetsytan **Översikt för ekonomichef** är diagram, nya KPI: er och bokslut nu också tillgängliga. Följande bokslut är tillgängliga:
 

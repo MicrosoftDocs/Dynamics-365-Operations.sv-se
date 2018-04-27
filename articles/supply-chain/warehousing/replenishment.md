@@ -20,16 +20,16 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 1b6086f7769086a9cdbb61c03882ea21d908ab4a
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 41f77a837f446e0ef263f1554a333d6e48248a0e
 ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="replenishment"></a>Lagerpåfyllnad
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Detta avsnitt beskriver de påfyllnadsstrategier som erbjuds för lager som använder funktionerna i lagerhanteringen. Informationen i detta avsnitt gäller ej den lagerlösning som erbjuds i lagerhanteringen.
 
@@ -67,13 +67,15 @@ Lagerpåfyllnad för lastefterfrågan summerar behovet av flera laster och skapa
 Du kan applicera en omedelbar påfyllnadsstrategi istället för att behöva sammanställa behovet i slutet av en allokeringsprocess och sedan fylla på baserat på den sammanställda kvantiteten. När du använder denna teknik kan lagret fyllas på omedelbart efter det att en direktivrad för plats misslyckas. Du kan därför konfigurera påfyllnaden som att den begränsas av specifika enheter, samt på så sätt att den använder kvantiteter angivna för specifika platser.
 
 ## <a name="replenishment-prerequisites"></a>Förutsättningar för lagerpåfyllnad
-| Förutsättning            | beskrivning |
-|-------------------------|-------------|
-| Artikel                    | Artikeln måste aktiveras för lagerhanteringsprocesser. |
-| Lagerställe               | Lagerstället måste aktiveras för lagerhanteringsprocesser. Välj lager på sidan **Warehouses** och sedan alternativet **Använd hanteringsprocesser för lager** om du vill aktivera ett lager för lagerhanteringsprocesser. |
-| Mallar för lagerpåfyllnad | Minst en lagerpåfyllnadsmall måste markeras för Minsta/största lagerpåfyllnad, Lagerpåfyllnad baserad på efterfrågan eller Lagerpåfyllnad för lastefterfrågan. |
-| Platser               | Platser måste skapas och anslutas till en platsprofil. |
-| Platsprofiler       | Platsprofiler krävs för att skapa platser. |
-| Platsdirektiv     | Platsdirektiv krävs för att dirigera arbete till de platser där påfyllnad krävs, samt till de platser lager hämtas ifrån. |
-| Arbetsmallar          | Arbetsmallar av typen **Lagerpåfyllnad** krävs för att skapa lagerpåfyllnadsarbete så att lagret kan flyttas till valfria platser. |
+
+|      Förutsättning       |                                                                                                                                beskrivning                                                                                                                                 |
+|-------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|          Artikel           |                                                                                                        Artikeln måste aktiveras för lagerhanteringsprocesser.                                                                                                        |
+|        Lagerställe        | Lagerstället måste aktiveras för lagerhanteringsprocesser. Välj lager på sidan <strong>Warehouses</strong> och sedan alternativet <strong>Använd hanteringsprocesser för lager</strong> om du vill aktivera ett lager för lagerhanteringsprocesser. |
+| Mallar för lagerpåfyllnad |                                                                   Minst en lagerpåfyllnadsmall måste markeras för Minsta/största lagerpåfyllnad, Lagerpåfyllnad baserad på efterfrågan eller Lagerpåfyllnad för lastefterfrågan.                                                                   |
+|        Platser        |                                                                                                       Platser måste skapas och anslutas till en platsprofil.                                                                                                       |
+|    Platsprofiler    |                                                                                                        Platsprofiler krävs för att skapa platser.                                                                                                        |
+|   Platsdirektiv   |                                                       Platsdirektiv krävs för att dirigera arbete till de platser där påfyllnad krävs, samt till de platser lager hämtas ifrån.                                                        |
+|     Arbetsmallar      |                                                   Arbetsmallar av typen <strong>Lagerpåfyllnad</strong> krävs för att skapa lagerpåfyllnadsarbete så att lagret kan flyttas till valfria platser.                                                    |
+
 

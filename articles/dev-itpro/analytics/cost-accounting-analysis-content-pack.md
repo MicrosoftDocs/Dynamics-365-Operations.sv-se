@@ -27,7 +27,7 @@ ms.lasthandoff: 12/18/2017
 
 # <a name="cost-accounting-analysis-power-bi-content"></a>Kostnadsredovisningsanalys för Power BI-innehåll
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Det här avsnittet beskriver vad som ingår i Microsoft Power BI-innehållet **Kostnadsredovisningsanalys**. Det förklarar hur du öppnar Power BI-rapporter, och ger information om den datamodell och de enheter som användes för att skapa innehållet.
 
@@ -111,18 +111,20 @@ Följande tabell visar hur viktiga sammanlagda mått används för att skapa fle
 
 Följande huvuddimensioner används som filter för att dela upp de sammanlagda måtten i syfte att uppnå en förbättrad nivå och ge djupare analysinsikter.
 
-| Enhet                             | Exempel på attribut                                                                                               |
+
+|               Enhet               |                                                Exempel på attribut                                                |
 |------------------------------------|----------------------------------------------------------------------------------------------------------------------|
-| Huvudböcker för kostnadsredovisning            | Huvudbok för kostnadsredovisning                                                                                               |
-| Kostnadsstyrenheter                 | Namn på kostnadsstyrenhet                                                                                               |
-| Dimensioner för kostnadselement            | Måttnamn för kostnadselement, Medlemsnamn för kostnadselementdimension, Medlemsbeskrivning för kostnadselementdimension          |
-| Kostnadsobjektdimensioner             | Måttnamn för kostnadsobjekt, Medlemsnamn för kostnadsobjektsdimension, Medlemsbeskrivning för kostnadsobjektdimension              |
-| Statistikdimensioner             | Statistiskt dimensionsnamn, Namn för statistisk dimensionsmedlem, Beskrivning av statistisk dimensionsmedlem              |
-| Dimensionshierarkier för kostnadsobjekt  | Hierarkinamn för kostnadsobjektdimension, Hierarkinivå för kostnadsobjektdimension, Hierarkiträd för kostnadsobjektdimension    |
+|      Huvudböcker för kostnadsredovisning       |                                                Huvudbok för kostnadsredovisning                                                |
+|         Kostnadsstyrenheter         |                                                Namn på kostnadsstyrenhet                                                |
+|      Dimensioner för kostnadselement       |     Måttnamn för kostnadselement, Medlemsnamn för kostnadselementdimension, Medlemsbeskrivning för kostnadselementdimension      |
+|       Kostnadsobjektdimensioner       |       Måttnamn för kostnadsobjekt, Medlemsnamn för kostnadsobjektsdimension, Medlemsbeskrivning för kostnadsobjektdimension        |
+|       Statistikdimensioner       |       Statistiskt dimensionsnamn, Namn för statistisk dimensionsmedlem, Beskrivning av statistisk dimensionsmedlem        |
+| Dimensionshierarkier för kostnadsobjekt  |  Hierarkinamn för kostnadsobjektdimension, Hierarkinivå för kostnadsobjektdimension, Hierarkiträd för kostnadsobjektdimension   |
 | Dimensionshierarkier för kostnadselement | Hierarkinamn för kostnadselementdimension, Hierarkinivå för kostnadselementdimension, Hierarkiträd för kostnadselementdimension |
-| Statistiska dimensionshierarkier  | Hierarkinamn för statistisk dimension, Hierarkinivå för statistisk dimension, Hierarkiträd för statistisk dimension    |
-| Transaktionsversioner               | Versionsnamn                                                                                                         |
-| Räkenskapskalendrar                   | Kalender, kalenderbeskrivning                                                                                       |
-| Räkenskapsår                       | Kalenderår                                                                                                        |
-| Räkenskapsperioder                     | Kalenderårsperioder                                                                                                 |
+| Statistiska dimensionshierarkier  |  Hierarkinamn för statistisk dimension, Hierarkinivå för statistisk dimension, Hierarkiträd för statistisk dimension   |
+|        Transaktionsversioner        |                                                     Versionsnamn                                                     |
+|          Räkenskapskalendrar          |                                            Kalender, kalenderbeskrivning                                            |
+|            Räkenskapsår            |                                                    Kalenderår                                                     |
+|           Räkenskapsperioder           |                                                 Kalenderårsperioder                                                 |
+
 

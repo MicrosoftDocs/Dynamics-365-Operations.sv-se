@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-delivery-schedule"></a>Skapa en leveransplan
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Den här proceduren visas hur du kan skapa en leveransplan för en försäljningsorder. En leveransplan används när en kvantitet på en order eller en offert begärs för att levereras i flera försändelser. Du kan köra den här proceduren i demonstrationsföretaget USMF eller på dina egna data.
 

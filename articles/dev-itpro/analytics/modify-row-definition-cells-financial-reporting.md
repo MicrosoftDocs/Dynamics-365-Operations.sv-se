@@ -19,17 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: dd34fb71f7a5d31a075c6475c2fe6627193d891f
-ms.openlocfilehash: 6bb405937288b46f49420a1735c32b5b7c16248e
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 3131173e10ff7eefeaca18285054ce2312d7ab57
 ms.contentlocale: sv-se
-ms.lasthandoff: 02/02/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="modify-row-definition-cells"></a>Ändra raddefinitionceller
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Den här artikeln innehåller en beskrivning av den information som krävs för varje cell i en raddefinition för en ekonomisk rapport och av hur du anger den informationen. 
 
@@ -104,26 +103,26 @@ Cellen **Formatkod** ger ett urval av förformaterade val för innehållet i den
 2.  Dubbelklicka på cellen **Formatera kod**.
 3.  Välj en formatkod i listan . Följande tabell beskriver formatkoder och deras åtgärder.
 
-| **Formatkod**               | **Tolkning av formatkod** | **Åtgärd**                                                                                                                                                                                                     |
-|-------------------------------|---------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| (Ingen)                        |                                       | Rensar cellen **Formatkod**.                                                                                                                                                                               |
-| TOT                           | Summa                                 |  Identifierar en rad som använder matematiska operatorer i kolumnen **Relaterade formler/rader/enheter**. Summor innehåller enkla operatorer som t.ex. **+** eller **-**.                                                     |
-| CAL                           | Beräkning                           | Identifierar en rad som använder matematiska operatorer i kolumnen **Relaterade formler/rader/enheter**. Beräkningar innehåller komplexa operatorer, t.ex. **+**, **-**, **\***, **/** och uttrycken **IF/THEN/ELSE**. |
-| DES                           | beskrivning                           | Identifierar en rubrikrad eller en tom rad i en rapport.                                                                                                                                                        |
-| LFT RGT CEN                   | Vänster Höger Centrera                     |  Justerar radbeskrivningstexten på rapportsidan, oavsett textens placering i kolumndefinitionen.                                                                                              |
-| CBR                           | Ändra basrad                       | Identifierar en rad som anger basraden för kolumnberäkningar.                                                                                                                                               |
-| KOLUMN                        | Kolumnavbrott                          | Startar en ny kolumn i rapporten.                                                                                                                                                                             |
-| SIDA                          | Sidbrytning                            | Startar en ny sida i rapporten.                                                                                                                                                                               |
-| \---                          | Enkel understrykning                      | Sätter en enskild rad under alla beloppskolumner i rapporten.                                                                                                                                                     |
-|  ===                          | Dubbel understrykning                      | Sätter en dubbel rad under alla beloppskolumner i rapporten.                                                                                                                                                     |
-| LINE1                         | Tunn rad                             | Drar en enskild tunn rad över sidan.                                                                                                                                                                      |
-| LINE2                         | Tjock linje                            | Rita en enkel tjock linje över sidan.                                                                                                                                                                     |
-| LINE3                         | Prickad linje                           | Drar en enskild prickig rad över sidan.                                                                                                                                                                    |
-| LINE4                         | Tjock rad och tunn rad              | Drar en dubbel rad över sidan. Den övre raden är tjock och den undre är tunn.                                                                                                                       |
-| LINE5                         | Tunn rad och tjock rad              | Drar en dubbel rad över sidan. Den övre raden är tunn och den undre är tjock.                                                                                                                       |
-| BXB BXC                       | Inrutad rad                             | Drar en ruta runt rappportraden som börjar med **BXB** och avslutas med raden **BXC**.                                                                                                               |
-| REM                           | Kommentar                                | Identifierar en rad som är en kommentarsrad, och därför inte ska skrivas ut på rapporten. En kommentarsrad kan t.ex. innehålla en förklaring av dina formateringsmetoder.                                                            |
-| SORT ASORT SORTDESC ASORTDESC | Sortera                                  | Sorteringsutgifter eller intäkter sorterar en aktuell rapport eller en budgetavvikelserapport efter den största avvikelsen eller sorterar radbeskrivningarna i alfabetisk ordning.                                                                   |
+| <strong>Formatkod</strong>  | <strong>Tolkning av formatkod</strong> |                                                                                                                             <strong>Åtgärd</strong>                                                                                                                              |
+|-------------------------------|----------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|            (Ingen)             |                                                    |                                                                                                                  Cellen <strong>Formatkod</strong> rensas.                                                                                                                   |
+|              TOT              |                       Summa                        |                                         Identifierar en rad som använder matematiska operatorer i kolumnen <strong>Relaterade formler/rader/enheter</strong>. Summor innehåller enkla operatorer som t.ex. <strong>+</strong> eller <strong>-</strong>.                                         |
+|              CAL              |                    Beräkning                     | Identifiera en rad där matematiska operatorer används i cellen <strong>Relaterade formler, rader eller enheter</strong>. Beräkningar innehåller komplexa operatorer, t.ex. <strong>+</strong>, <strong>-</strong>, <strong>\</strong><em>, **/</em><em> och uttrycken **IF/THEN/ELSE</em>*. |
+|              DES              |                    beskrivning                     |                                                                                                             Identifierar en rubrikrad eller en tom rad i en rapport.                                                                                                              |
+|          LFT RGT CEN          |                 Vänster Höger Centrera                  |                                                                                 Justerar radbeskrivningstexten på rapportsidan, oavsett textens placering i kolumndefinitionen.                                                                                 |
+|              CBR              |                  Ändra basrad                   |                                                                                                         Identifierar en rad som anger basraden för kolumnberäkningar.                                                                                                         |
+|            KOLUMN             |                    Kolumnavbrott                    |                                                                                                                        Startar en ny kolumn i rapporten.                                                                                                                        |
+|             SIDA              |                     Sidbrytning                     |                                                                                                                         Startar en ny sida i rapporten.                                                                                                                         |
+|             \---              |                  Enkel understrykning                  |                                                                                                            Sätter en enskild rad under alla beloppskolumner i rapporten.                                                                                                            |
+|              ===              |                  Dubbel understrykning                  |                                                                                                            Sätter en dubbel rad under alla beloppskolumner i rapporten.                                                                                                            |
+|             LINE1             |                     Tunn rad                      |                                                                                                                    Drar en enskild tunn rad över sidan.                                                                                                                     |
+|             LINE2             |                     Tjock linje                     |                                                                                                                    Rita en enkel tjock linje över sidan.                                                                                                                    |
+|             LINE3             |                    Prickad linje                     |                                                                                                                   Drar en enskild prickig rad över sidan.                                                                                                                    |
+|             LINE4             |              Tjock rad och tunn rad              |                                                                                             Drar en dubbel rad över sidan. Den övre raden är tjock och den undre är tunn.                                                                                             |
+|             LINE5             |              Tunn rad och tjock rad              |                                                                                             Drar en dubbel rad över sidan. Den övre raden är tunn och den undre är tjock.                                                                                             |
+|            BXB BXC            |                     Inrutad rad                      |                                                                            Ritar en ruta runt rapportraden som börjar raden <strong>BXB</strong> och slutar med raden <strong>BXC</strong>.                                                                            |
+|              REM              |                       Kommentar                       |                                                               Identifierar en rad som är en kommentarsrad, och därför inte ska skrivas ut på rapporten. En kommentarsrad kan t.ex. innehålla en förklaring av dina formateringsmetoder.                                                                |
+| SORT ASORT SORTDESC ASORTDESC |                        Sortera                        |                                                                   Sorteringsutgifter eller intäkter sorterar en aktuell rapport eller en budgetavvikelserapport efter den största avvikelsen eller sorterar radbeskrivningarna i alfabetisk ordning.                                                                   |
 
 ## <a name="specify-related-formulasrowsunits"></a>Ange relaterade formler/rader/enheter
 Cellen **Relaterade formler/rader/enheter** har flera syften. Beroende på vilken typ av rad kan **Relaterade formler/rader/enheter** utföra någon av följande funktioner:
@@ -211,12 +210,12 @@ Sorteringskoder, sorteringkonton eller värden sorterar en aktuell eller budgeta
 
 ### <a name="select-a-sorting-code"></a>Välj en sorteringskod
 
-1.  I Rapportdesignern, klicka på **Raddefinitioner** och öppna raddefinitionen för att ändra.
-2.  Dubbelklicka på cellen **Formatkod** och välj sedan en sorteringskod.
-3.  I cellen **Relaterade formler/rader/enheter** anger du intervallet för radkoderna som ska sorteras. Ange den första radkoden, ett kolon (:) och sedan den senaste radenkod om du vill ange ett intervall. Ange t.ex. **160:490** om vill ange att intervallet är rad 160 genom rad 490.
-4.  Ange cellen **Kolumnbegränsning**, ange bokstaven på rapportkolumnen som ska användas för sorteringen. 
-> [!Note] 
-> Inkludera endast beloppsrader i sorteringsberäkningen.
+1. I Rapportdesignern, klicka på **Raddefinitioner** och öppna raddefinitionen för att ändra.
+2. Dubbelklicka på cellen **Formatkod** och välj sedan en sorteringskod.
+3. I cellen **Relaterade formler/rader/enheter** anger du intervallet för radkoderna som ska sorteras. Ange den första radkoden, ett kolon (:) och sedan den senaste radenkod om du vill ange ett intervall. Ange t.ex. **160:490** om vill ange att intervallet är rad 160 genom rad 490.
+4. Ange cellen **Kolumnbegränsning**, ange bokstaven på rapportkolumnen som ska användas för sorteringen. 
+   > [!Note] 
+   > Inkludera endast beloppsrader i sorteringsberäkningen.
 
 ### <a name="examples-of-ascending-and-descending-column-values"></a>Exempel på stigande och fallande kolumnvärden
 
@@ -258,41 +257,41 @@ Cellen **Formatåsidosätt** anger formateringen som används för raden när ra
 
 Valutaformatering gäller för ett räkenskapsbelopp och inkluderar valutasymbolen. Följande alternativ är tillgängliga:
 
--   **Valutasymbol** – Rapportens valutasymbol. Det här värdet åsidosätter inställningen **Nationella alternatv** för företagsinformationen.
--   **Negativa nummer** - Negativa nummer kan ha ett minustecken (-), de kan visas inom parentes, eller de kan ha en triangel (∆).
--   **Antal decimaler** – Antal siffror som ska visas efter decimaltecknet.
--   **Nollvärdeåsidosätttext** – Texten som ska inkluderas i rapporten när beloppet är 0 (noll). Texten visas som sista raden i området **Bildpunkt**. 
-> [!Note] 
-> Om utskrift ignoreras av nollvärden eller ingen periodaktivitet, ignoreras denna text.
+- **Valutasymbol** – Rapportens valutasymbol. Det här värdet åsidosätter inställningen **Nationella alternatv** för företagsinformationen.
+- **Negativa nummer** - Negativa nummer kan ha ett minustecken (-), de kan visas inom parentes, eller de kan ha en triangel (∆).
+- **Antal decimaler** – Antal siffror som ska visas efter decimaltecknet.
+- **Nollvärdeåsidosätttext** – Texten som ska inkluderas i rapporten när beloppet är 0 (noll). Texten visas som sista raden i området **Bildpunkt**. 
+  > [!Note] 
+  > Om utskrift ignoreras av nollvärden eller ingen periodaktivitet, ignoreras denna text.
 
 ### <a name="numeric-formatting"></a>Numeriskt formatering
 
 Numerisk formatering gäller för alla belopp och inkluderar inte en valutasymbol. Följande alternativ är tillgängliga:
 
--   **Negativa nummer** - Negativa nummer kan ha ett minustecken (-), de kan visas inom parentes, eller de kan ha en triangel (∆).
--   **Antal decimaler** – Antal siffror som ska visas efter decimaltecknet.
--   **Nollvärdeåsidosätttext** – Texten som ska inkluderas i rapporten när beloppet är 0 (noll). Texten visas som sista raden i området **Bildpunkt**. 
-> [!Note] 
-> Om utskrift ignoreras av nollvärden eller ingen periodaktivitet, ignoreras denna text.
+- **Negativa nummer** - Negativa nummer kan ha ett minustecken (-), de kan visas inom parentes, eller de kan ha en triangel (∆).
+- **Antal decimaler** – Antal siffror som ska visas efter decimaltecknet.
+- **Nollvärdeåsidosätttext** – Texten som ska inkluderas i rapporten när beloppet är 0 (noll). Texten visas som sista raden i området **Bildpunkt**. 
+  > [!Note] 
+  > Om utskrift ignoreras av nollvärden eller ingen periodaktivitet, ignoreras denna text.
 
 ### <a name="percentage-formatting"></a>Procentsatsformatering
 
 Procentsatsformatering inkluderar procenttecknet (%). Följande alternativ är tillgängliga:
 
--   **Negativa nummer** - Negativa nummer kan ha ett minustecken (-), de kan visas inom parentes, eller de kan ha en triangel (∆).
--   **Antal decimaler** – Antal siffror som ska visas efter decimaltecknet.
--   **Nollvärdeåsidosätttext** – Texten som ska inkluderas i rapporten när beloppet är 0 (noll). Texten visas som sista raden i området **Bildpunkt**. 
-> [!Note] 
-> Om utskrift ignoreras av nollvärden eller ingen periodaktivitet, ignoreras denna text.
+- **Negativa nummer** - Negativa nummer kan ha ett minustecken (-), de kan visas inom parentes, eller de kan ha en triangel (∆).
+- **Antal decimaler** – Antal siffror som ska visas efter decimaltecknet.
+- **Nollvärdeåsidosätttext** – Texten som ska inkluderas i rapporten när beloppet är 0 (noll). Texten visas som sista raden i området **Bildpunkt**. 
+  > [!Note] 
+  > Om utskrift ignoreras av nollvärden eller ingen periodaktivitet, ignoreras denna text.
 
 ### <a name="custom-formatting"></a>Anpassad formatering
 
 Använd anpassad formateringkategori om du vill skapa en anpassad formatåsidosättning. Följande alternativ är tillgängliga:
 
--   **Typ** – De anpassade formatet.
--   **Nollvärdeåsidosätttext** – Texten som ska inkluderas i rapporten när beloppet är 0 (noll). Texten visas som sista raden i området **Bildpunkt**. 
-> [!Note] 
-> Om utskrift ignoreras av nollvärden eller ingen periodaktivitet, ignoreras denna text.
+- **Typ** – De anpassade formatet.
+- **Nollvärdeåsidosätttext** – Texten som ska inkluderas i rapporten när beloppet är 0 (noll). Texten visas som sista raden i området **Bildpunkt**. 
+  > [!Note] 
+  > Om utskrift ignoreras av nollvärden eller ingen periodaktivitet, ignoreras denna text.
 
 Typen ska representera det positiva värdet och sedan det negativa värdet. Vanligtvis anger du ett liknande format som särskiljer positiva och negativa värden. Om du t.ex. vill ange att både positiva och negativa värden har två decimaler, men negativa värden visas inom parentes anger du **0.00;(0.00)**. Följande tabell visar anpassade format som du kan använda för att kontrollera formatet för dina värden. Alla exempel startar från värdet 1234.56.
 
@@ -387,7 +386,7 @@ Som standard skriver rapportdesignern inte ut en rad som inte har något motsvar
 3.  Klicka på **Spara** på menyn **Arkiv** om du vill spara dina ändringar.
 
 ## <a name="use-wildcard-characters-and-ranges-in-a-row-definition"></a>Använd jokertecken och intervall i en raddefinition
-När du anger ett typsegmentvärde i dialogrutan **Dimensioner** kan du placera ett jokertecken (? eller \*) i vilken position som helst i ett segment. Report designer hämtar alla värden för de definierade positioner utan att beakta jokertecknen. Om raddefinitionen t.ex. bara innehåller typsegmentvärden, och typsegment har fyra tecken. Genom att ange **6???** på en rad instruerar du rapportdesignern att inkludera alla konton som ett naturligt segmentvärde som börjar med 6. Om du anger **6\***, returneras samma resultat, men resultatet inkluderar också variabelbreddvärden som **60** och **600000**. Rapportdesignern ersätter varje jokertecken (?) med hela intervallet av möjliga värden, inklusive bokstäver och specialtecken. T.ex. i intervallet från **PKCS? 0** till **PKCS? 4** ersätter jokertecknet i **PKCS? 0** det lägsta värdet på teckenuppsättningen, och jokertecknet i **PKCS? 4** ersätter det högsta värdet i teckenuppsättningen. 
+När du anger ett typsegmentvärde i dialogrutan <strong>Dimensioner</strong> kan du placera ett jokertecken (? eller \*) i vilken position som helst i ett segment. Report designer hämtar alla värden för de definierade positioner utan att beakta jokertecknen. Om raddefinitionen t.ex. bara innehåller typsegmentvärden, och typsegment har fyra tecken. Genom att ange <strong>6???</strong> på en rad instruerar du rapportdesignern att inkludera alla konton som ett naturligt segmentvärde som börjar med 6. Om du anger <strong>6\</strong><em> kommer samma resultat returneras, men resultatet inkluderar också variabelbreddvärden såsom **60</em>* och <strong>600000</strong>. Rapportdesignern ersätter varje jokertecken (?) med hela intervallet av möjliga värden, inklusive bokstäver och specialtecken. T.ex. i intervallet från <strong>PKCS? 0</strong> till <strong>PKCS? 4</strong> ersätter jokertecknet i <strong>PKCS? 0</strong> det lägsta värdet på teckenuppsättningen, och jokertecknet i <strong>PKCS? 4</strong> ersätter det högsta värdet i teckenuppsättningen. 
 > [!Note] 
 > Du bör undvika att använda jokertecken för start- och slutkonton i intervallet. Om du använder jokertecken i antingen startkontot eller slutkontot kan du få oväntade resultat.
 
@@ -466,15 +465,15 @@ En dimensionsvärdeuppsättning är en namngiven grupp av dimensionsvärden. En 
 
 ### <a name="update-a-set-of-dimension-values"></a>Uppdatera en mängd med dimensionsvärden
 
-1.  Öppna rad-, kolumn- eller träddefinitionen som ska ändras i Report Designer.
-2.  På menyn **Redigera** klickar du opå **Hantera dimensionsvärdeuppsättningar**.
-3.  Välj diaglogrutan **Hantera dimensionsvärdeuppsättningar** och välj dimensionstyp i fältet **Dimension**.
-4.  I listan väljer du den dimensionsvärdeuppsättning som ska uppdateras och klickar sedan på **Ändra**.
-5.  I dialogrutan **Ändra** ändrar du formelvärdena som du vill inkludera i uppsättningen. 
-> [!Note] 
-> Om du lägger till nya konton eller dimensioner, se till att du ändrar befintliga dimensionsvärdeuppsättningar om du vill föra in ändringarna.
-6.  Dubbelklicka på cellen och välj lämplig operatör **Från**-konto och **Till**-konto.
-7.  Klicka på **OK** för att stänga dialogrutan **Ändra** och spara ändringarna.
+1. Öppna rad-, kolumn- eller träddefinitionen som ska ändras i Report Designer.
+2. På menyn **Redigera** klickar du opå **Hantera dimensionsvärdeuppsättningar**.
+3. Välj diaglogrutan **Hantera dimensionsvärdeuppsättningar** och välj dimensionstyp i fältet **Dimension**.
+4. I listan väljer du den dimensionsvärdeuppsättning som ska uppdateras och klickar sedan på **Ändra**.
+5. I dialogrutan **Ändra** ändrar du formelvärdena som du vill inkludera i uppsättningen. 
+   > [!Note] 
+   > Om du lägger till nya konton eller dimensioner, se till att du ändrar befintliga dimensionsvärdeuppsättningar om du vill föra in ändringarna.
+6. Dubbelklicka på cellen och välj lämplig operatör **Från**-konto och **Till**-konto.
+7. Klicka på **OK** för att stänga dialogrutan **Ändra** och spara ändringarna.
 
 ### <a name="copy-a-dimension-set"></a>Kopiera en dimensionsuppsättning
 

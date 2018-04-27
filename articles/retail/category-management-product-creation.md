@@ -20,44 +20,43 @@ ms.author: asharchw
 ms.search.validFrom: 2017-09-01
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 25fa39dc81fc721d7593a25a102ce47041ebc5f0
-ms.openlocfilehash: 4b7ef962b777a31e1da238a8ec1be9a42ec5bb5f
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 2246024d7d70947690173f3d0768292abe43efd7
 ms.contentlocale: sv-se
-ms.lasthandoff: 03/13/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
+# <a name="manage-retail-product-categories-and-products"></a>Hantera produktkategorier (butik) och produkter
 
-# <a name="enhanced-product-and-category-management"></a>Förbättrad produkt- och kategorihantering
+[!INCLUDE [banner](./includes/banner.md)]
 
-[!include[banner](./includes/banner.md)]
+Det här avsnittet beskriver ett bättre sätt att hantera produktkategorier (butik) och produkter i Microsoft Dynamics 365 for Retail. Dessa förbättringar gör det möjligt för marknadsföringschefer att visa en struktur som delas mellan produktegenskaper bland detaljhandelsprodukter och information om frisläppt produkt.
 
-Det här avsnittet beskriver ett bättre sätt att hantera produktkategorier (butik) och produkter i Dynamics 365 for Retail. Dessa förbättringar gör det möjligt för marknadsföringschefer att visa en gemensam struktur för produktegenskaper bland detaljhandelsprodukter och information om frisläppt produkt.
+För mer information om hur du hanterar produktkategorier (butik) på arbetsytan **Kategori- och produkthantering**, välj panelen **Produkthierarki (butik)**.
 
-Om du vill ha mer information om hur du hanterar produktkategorier (butik), gå till **Produkthierarki (butik)** från arbetsytan **Kategori- och produkthantering** och notera förbättrad struktur för sidan **Produkthierarki (butik)**.
+Lägg märke till den förbättrade struktur för sidan **Produkthierarki (butik)**. I tidigare versioner av Retail delades produktegenskaperna upp i *Grundläggande produktegenskaper* och *Produktegenskaper för detaljhandel*, baserat på deras tillämpningsområde. Produktegenskaper (butik) är *globala* i sitt tillämpningsområde. Med andra ord delades samma värde för en viss produktegenskap (butik) av samtliga juridiska personer. Däremot är grundläggande produktegenskaper specifika *juridisk person*. Med andra ord kunde en viss grundläggande produktegenskap variera mellan olika juridiska personer beroende på individuella affärskrav för varje juridisk person.
 
-![Arbetsytan Kategori- och produkthantering](media/LaunchRetailProductHierarchy.png)
+I den förbättrade produktkategoristrukturen separeras produktegenskaper logiskt baserat på deras tillämpbarhet inom en viss grupp i syfte att reflektera strukturen i informationen om den frisläppta produkten.
 
-I tidigare versioner delades produktegenskaperna upp i **Grundläggande produktegenskaper** och **Produktegenskaper för detaljhandel**, baserat på deras tillämpningsområde. **Produktegenskaper för detaljhandel** var *global* efter tillämpningsområde vilket innebär att en given **Produktegenskap för detaljhandel**, delas lika mellan alla juridiska personer. **Grundläggande produktegenskaper** är *specifika för juridisk person*. Med andra ord kunde en viss **Grundläggande produktegenskap** variera mellan olika juridiska personer baserat på individuella affärskrav.
+![Fältgruppering baserat på egenskapens tillämpningsområde](media/NoticeGroupingOfFieldsBasedOnTheirScope.PNG)
 
-I den förbättrade produktkategoristrukturen separeras produktegenskaper logiskt baserat på deras tillämpbarhet inom en viss grupp i syfte att reflektera formstrukturen i informationen om den frisläppta produkten.
+Du kan växla mellan att hantera egenskaper specifika för den juridiska personen över samtliga juridiska personer och att hantera dem för en specifik juridisk person.
 
-![Gruppering av fält baserat på deras tillämpningsområde](media/NoticeGroupingOfFieldsBasedOnTheirScope.PNG)
+Om du vill hantera egenskaper i alla juridiska personer, välj **Visa för alla juridiska personer** (eller **Redigera för alla juridiska personer**).
 
-Du kan växla mellan att hantera egenskaper specifika för den juridiska personen över samtliga juridiska personer och att hantera dem för en specifik juridisk person. För att göra detta, välj antingen **Visa/redigera för samtliga juridiska personer** eller **Visa/redigera för en specifik juridisk person**.
+![Visa/redigera för alla juridiska personer](media/ToggleBackToEditForSpecificLegalEntity.PNG)
 
-![Växla vy mellan en person och alla juridiska personer](media/ToggleBackToEditForSpecificLegalEntity.PNG)
+Om du vill hantera egenskaper för en viss juridisk person **Visa för en viss juridisk person** (eller **Redigera för en viss juridisk person**).
 
-![Växla vy mellan en person och alla juridiska personer](media/ToggleToEditForAllLegalEntities.PNG)  
+![Visa/redigera för en viss juridisk person](media/ToggleToEditForAllLegalEntities.PNG)
 
-Jämfört med tidigare versioner i den nya produktkategoristrukturen (butik) kan en marknadsföringschef också definiera standardvärden för ytterligare en uppsättning produktegenskaper på en enskild kategorinivå. När produkten skapas kommer dessa standardinställda produktegenskapvärden att ärvas av en produkt baserat på deras koppling till en enskild kategori från produkthierarkin (butik). Dessa ärvda produktegenskaper kan också ändras för respektive produkt så att dessa motsvarar individuella affärskrav.
+Dessutom, i den förbättrade produktkategoristrukturen (butik) kan en marknadsföringschef nu också definiera standardvärden för ytterligare en uppsättning produktegenskaper på en enskild kategorinivå. Sedan när produkter skapas ärver de standardvärden för sina produktegenskaper baserat på kopplingen av de här egenskaperna med en enskild kategori från produkthierarkin (butik). Dessa ärvda produktegenskaper kan också ändras för respektive produkt så att dessa motsvarar individuella affärskrav.
 
-## <a name="select-properties-to-update-products-from-the-retail-product-category-form"></a>Välj egenskaper i kategoriformuläret för detaljhandelsprodukt om du vill uppdatera produkter 
- 
-Du kan använda den här nya förbättrade strukturen för produktegenskaper för att välja vilka uppdaterade produktegenskaper som måste skickas till associerade produkter. 
+## <a name="selecting-properties-to-update-products-on-the-retail-product-hierarchy-page"></a>Välja egenskaper på sidan Produkthierarki (butik) om du vill uppdatera produkter
 
-![Ny utökad vy över Uppdatera produkter](media/NewUpdateProductsEnhancedView.PNG) 
+Du kan använda den här nya förbättrade strukturen för produktegenskaper för att välja vilka uppdaterade produktegenskaper som måste skickas till associerade produkter. På sidan **Produkthierarki (butik)** på åtgärdsfönstret, välj **Kategori** och välj sedan **Uppdatera produkter** för att öppna dialogrutan **Uppdatera produkter**.
 
-Marknadsföringschefer kan modifiera dessa ärvda produktegenskaper för respektive produkt så att dessa motsvarar individuella affärskrav.
+![Dialogrutan Uppdatera produkter](media/NewUpdateProductsEnhancedView.PNG)
 
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-bom-line-event-kanban-rule"></a>Skapa en kanban-regel för strukturlistehändelse
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denna uppgift fokuserar på inställningen som krävs för att skapa en kanban-regel för händelse för att säkerställa leverans till produktionsstrukturlisterader i ett blandat resurssnål och klassisk produktionsmiljö. Det demonstrationsdataföretag som används för att skapa den här uppgiften är USMF. Den här uppgiften är avsedd för processingenjören eller värdeströmansvarig när de förbereder tillverkningen av en ny eller ändrad produkt.
 

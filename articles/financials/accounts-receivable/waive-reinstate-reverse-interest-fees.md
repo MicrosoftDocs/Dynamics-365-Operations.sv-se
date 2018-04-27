@@ -28,8 +28,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="waive-reinstate-or-reverse-interest-fees"></a>Avstå, återinföra eller återföra ränta
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Det här avsnittet innehåller information om hur du efterskänker, återinför och omvänder kostnader för ränta och avgifter.
 

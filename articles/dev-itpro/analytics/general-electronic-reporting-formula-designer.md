@@ -19,16 +19,16 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 41d5671d180bae039d873419352d52afe90e386b
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: adbbb36da2bc1e9a2211c703823370571105ecab
 ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="formula-designer-in-electronic-reporting"></a>Formeldesigner i elektronisk rapportering
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Detta avsnitt avslutar hur du använder formeldesignern inom Elektronisk rapportering (ER). Om du utformar ett format för ett visst elektroniskt dokument i ER kan du använda formler för datatransformering för att uppfylla kraven för dokumentets uppfyllelse och formatering. Dessa formler liknar formler i Microsoft Excel. Formulären ger stöd åt olika typer av funktioner: text, datum och tid, matematik, logik, information, datatypskonvertering och andra (företagsdomänspecifika funktioner).
 
@@ -70,7 +70,7 @@ Bilden nedan visar hur ett uttryck av den här typen kan användas. I det här e
 
 [![Databindning används](./media/picture-expression-binding2.jpg)](./media/picture-expression-binding2.jpg)
 
-Vid körning avrundar den designade formeln **ROUND (Intrastat.AmountMST 2)**värdet av fältet **AmountMST** för varje post i tabellen Intrastat till två decimaler. Därefter skrivs det avrundade värdet in i komponenten **Transaction.InvoicedAmount** i datamodellen **Tax reporting**.
+Vid körning avrundar den designade formeln **ROUND (Intrastat.AmountMST 2)** värdet av fältet **AmountMST** för varje post i tabellen Intrastat till två decimaler. Därefter skrivs det avrundade värdet in i komponenten **Transaction.InvoicedAmount** i datamodellen **Tax reporting**.
 
 ### <a name="data-formatting"></a>Data formatering
 
@@ -395,7 +395,9 @@ I det här fallet kan du använda följande uttryck för att få etiketten på u
 <tr class="even">
 <td>STRINGJOIN (lista, fältnamn, avgränsare)</td>
 <td>Returnera en sträng som består av de konkatenerade värdena från det definierade fältet från den angivna listan. Värdena avgränsas med angivna avgränsare.</td>
-<td>Om du anger <strong>SPLIT(&quot;abc&quot; , 1)</strong> som en datakälla (DS), kommer uttrycket <strong>STRINGJOIN (DS, DS.Value, &quot;:&quot;)</strong> returnera <strong>&quot;a:b:c&quot;</strong>.</td>
+
+<td>Om du anger <strong>SPLIT(&quot;abc&quot; , 1)</strong>  som en datakälla (DS), kommer uttrycket <strong>STRINGJOIN (DS, DS.Value, &quot;:&quot;)</strong> returnera <strong>&quot;a</strong><strong>:b</strong><strong>:c&quot;</strong>.</td>
+
 </tr>
 <tr class="odd">
 <td>SPLITLISTBYLIMIT (lista, gränsvärde, gränskälla)</td>
@@ -540,7 +542,7 @@ Uttrycket <strong>&quot;abc&quot; &amp; &quot;def&quot;</strong> returnerar ocks
 </tr>
 <tr class="even">
 <td>FORMAT (string 1, string 2[, string 3, …])</td>
-<td>Returnera den definierade strängen efter att den har formaterats genom att byta ut alla förekomster av <strong>%N</strong> med argumentet <em>n</em>. Argumenten är strängar. Om ett argument inte har angetts för en parameter, returneras parametern som <strong>&quot;%N&quot;</strong> i strängen. För värden av typen <strong>real</strong> är strängkonverteringen begränsad till två decimaler.</td>
+<td>Returnera den definierade strängen efter att den har formaterats genom att byta ut alla förekomster av <strong>%N</strong> med argumentet <em>n</em>. Argumenten är strängar. Om ett argument inte har angetts för en parameter returneras parametern som <strong>&quot;%N&quot;</strong> i strängen. För värden av typen <strong>real</strong> är strängkonverteringen begränsad till två decimaler.</td>
 <td>I det här exemplet returnerar datakällan <strong>PaymentModel</strong> listan över kundposter via komponenten <strong>Customer</strong> och bearbetar datumvärdet via fältet <strong>ProcessingDate</strong>.
 <p><a href="./media/picture-format-datasource.jpg"><img src="./media/picture-format-datasource.jpg" alt="PaymentModel data source" class="alignnone wp-image-290751 size-full" width="293" height="143" /></a></p>
 <p>I ER-formatet, som har utformats för att generera en elektronisk fil för utvalda kunder, väljs <strong>PaymentModel</strong> som en datakälla och styr processflödet. Ett undantag meddelas användaren när en vald kund stoppas för det datum då rapporten bearbetas. Formeln, som utformats för denna typ av bearbetningsstyrning, kan endast använda följande resurser:</p>
@@ -553,7 +555,7 @@ Uttrycket <strong>&quot;abc&quot; &amp; &quot;def&quot;</strong> returnerar ocks
 <li>Finance and Operations-etikett SYS18389, som har följande text:
 <ul>
 <li><strong>För språket EN-US:</strong> &quot;Customer %1 is stopped for %2.&quot;</li>
-<li><strong>För språket SV-SE:</strong> &quot;Gäldenären "%1" spärras för %2.&quot;</li>
+<li><strong>För språket SV-SE:</strong> &quot;Gäldenären &#39;%1&#39; spärras för %2.&quot;</li>
 </ul></li>
 </ul>
 <p>Här följer formeln som kan utformas:</p>

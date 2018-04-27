@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="call-center-catalogs"></a>Kundtjänstkataloger
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Det här avsnittet innehåller en beskrivning av den callcenterspecifika funktionen för kataloger i Microsoft Dynamics 365 for Retail.
 

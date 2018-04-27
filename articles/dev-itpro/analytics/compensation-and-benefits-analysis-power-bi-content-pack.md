@@ -27,8 +27,7 @@ ms.lasthandoff: 12/19/2017
 
 # <a name="compensation-and-benefits-power-bi-content"></a>Power BI-innehåll om kompensationer och förmåner
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Det här avsnittet beskriver Finance and Operations - Power BI-innehåll för kompensationer och förmåner. 
 

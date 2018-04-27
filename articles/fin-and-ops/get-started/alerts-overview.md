@@ -17,18 +17,18 @@ ms.author: tjvass
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
 ms.translationtype: HT
-ms.sourcegitcommit: 454368ab5a467002ebf973db97fd98e31885dfe0
-ms.openlocfilehash: 1f0b5ff383c8bb2d1ac892ef771e15f0afec2655
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: ad9373faa19761cccca2b5d581de05f0ac9dd165
 ms.contentlocale: sv-se
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="alerts-overview"></a>Översikt över notifieringar
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[banner](../includes/pre-release.md)] 
+[!INCLUDE [banner](../includes/pre-release.md)]
 
 ## <a name="about-alerts"></a>Om notifieringar
 Notifieringar utgör ett meddelandesystem för kritiska händelser i Microsoft Dynamics 365 for Finance and Operations. Du kan använda notifieringar för att hålla dig informerad om händelser som du vill spåra under arbetsdagen. Du kan enkelt skapa din egen uppsättning regler så att du meddelas om försenade leveranser, raderade order, ändrade priser eller andra händelser som du behöver reagera på.
@@ -71,4 +71,7 @@ Komponenter för en notifieringsregel
 
     > [!NOTE]
     > Det här alternativet är begränsat till administratörer i organisationen.
+
+## <a name="email-notifications-from-alerts"></a>E-postmeddelanden från aviseringar
+E-postmeddelanden från aviseringar har inte aktiverats ännu. Detta aktiveras i en kommande uppdatering.
 

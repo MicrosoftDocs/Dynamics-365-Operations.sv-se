@@ -27,7 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="financial-management-home-page"></a>Startsidan Ekonomisk styrning
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 Det här ämnet innehåller en lista med hjälpavsnitt och andra resurser för de ekonomiska styrningsfunktionerna i Microsoft Dynamics 365 for Finance and Operations. 
 

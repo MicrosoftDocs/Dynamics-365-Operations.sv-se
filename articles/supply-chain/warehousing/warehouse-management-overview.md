@@ -25,7 +25,7 @@ ms.lasthandoff: 03/26/2018
 ---
 # <a name="warehouse-management"></a>Lagerstyrning
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Modulen för lagerhantering för Dynamics 365 for Finance and Operations gör att du kan hantera lagerprocesser inom tillverknings-, distributions- och detaljhandelsföretag. Denna modul har ett stort antal funktioner som stöder lagerlokalen på en optimal nivå och utan avbrott. Lagerhanteringen är helt integrerad med andra affärsprocesser i Finance and Operations, till exempel transport, tillverkning, kvalitetskontroll, inköp, överföringar, försäljning och returer.
 

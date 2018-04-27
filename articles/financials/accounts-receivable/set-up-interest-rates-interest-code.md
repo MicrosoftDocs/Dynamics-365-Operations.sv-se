@@ -19,17 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 7ae0bfdc157a7e2e5b9f871dae487a6f85e889b9
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: c0e80bae4716d2b12f515f38d3b641de24680571
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="set-up-interest-rates-for-an-interest-code"></a>Ställa in räntesatser för en räntekod
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Räntekoder innehåller inställningar som bestämmer när ränta debiteras och hur den beräknas på förfallna konton.
 
@@ -47,17 +46,17 @@ När en räntekod används för beräkning av räntan skapas en separat räntefa
 ## <a name="interest-rates-based-on-a-percentage"></a>Räntesatser baserat på procentsats
 Du kan ställa in räntesatser för att beräkna en viss procent.
 
--   Räntebeloppet gäller för alla valutor.
--   Valfria räntebeloppsgränser kan anges.
--   **Procent** väljs** **i fältet **Beräkna ränta baserat på** på sidan **Ställ in räntekoder**.
+- Räntebeloppet gäller för alla valutor.
+- Valfria räntebeloppsgränser kan anges.
+- <strong>Procent</strong> väljs** <strong>i fältet **Beräkna ränta baserat på </strong> på sidan <strong>Ställ in räntekoder</strong>.
 
 Om du till exempel vill ställa in en räntekod som värderas med 5 procent ränta för varje tvåmånadersperiod som överskrider fakturans förfallodatum för transaktionen, ska du ange 2 i fältet **Beräkna ränta var** och välja **Månad**.
 
 ## <a name="interest-rates-based-on-amounts"></a>Räntesatser baserade på belopp
 Du kan ställa in räntesatser för att beräkna ett angivet belopp per valuta.
--   Ett räntebelopp anges för varje valuta i räntekoden.
--   Valfria räntebeloppsgränser kan anges.
--   **Belopp **väljs i fältet **Beräkna ränta baserat på** på sidan **Ställ in räntekoder**.
+- Ett räntebelopp anges för varje valuta i räntekoden.
+- Valfria räntebeloppsgränser kan anges.
+- <strong>Belopp **väljs i fältet **Beräkna ränta baserat på</strong> på sidan <strong>Ställ in räntekoder</strong>.
 
 Om du till exempel vill ställa in en räntekod som värderas med 25,00 ränta för varje 20-dagarsperiod som överskrider fakturans förfallodatum för transaktionen, ska du ange 20 i fältet **Beräkna ränta var** och välj **Dag**.
 
@@ -84,7 +83,7 @@ Du ställer in information om intervall så här.
 | 1,001          | 2                  |
 | 5,001          | 3                  |
 
- 
+
 ## <a name="example-2-interest-by-range--days"></a>Exempel 2: Ränta efter period = Dagar
 --------------------------------------------------
 
@@ -105,7 +104,7 @@ Du ställer in information om intervall så här.
 | 61             | 15                 |
 | 91             | 20                 |
 
- 
+
 ## <a name="example-3-interest-by-range--months"></a>Exempel 3: Ränta efter period = Månader
 ----------------------------------------------------
 

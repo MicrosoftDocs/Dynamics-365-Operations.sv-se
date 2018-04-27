@@ -27,8 +27,7 @@ ms.lasthandoff: 02/15/2018
 
 # <a name="use-workflows-to-manage-employee-information"></a>Använda arbetsflöden för att hantera medarbetarinformation
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Det här avsnittet beskriver hur du kan använda arbetsflödeskapacitet för personal får att hantera medarbetarinformation. Exempelvis kan du koppla ett arbetsflöde till en befattning och konfigurera ett godkännandearbetsflöde som startas när en medarbetare har ändrat deras post.
 

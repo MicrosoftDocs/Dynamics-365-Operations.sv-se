@@ -29,8 +29,7 @@ ms.lasthandoff: 03/22/2018
 
 # <a name="shift-and-cash-drawer-management"></a>Hantering av skift och kassalåda
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Den här artikeln innehåller en beskrivning av hur du ställer in och använder de två typerna av skift för butikskassor: delat och fristående. Delade skift kan användas av flera användare på flera ställen, medan fristående skift enbart kan användas av en medarbetare åt gången.
 

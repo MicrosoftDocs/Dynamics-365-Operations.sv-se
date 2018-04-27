@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="job-scheduling"></a>Finplanering
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Det här avsnittet innehåller information om Jobbplanering, som är ett mer detaljerat formulär för att schemaläggning än Grovplanering. Du kan använda finplaneringen för att planera individuella jobb eller arbetsorder och för att styra din tillverkningsmiljö.
 

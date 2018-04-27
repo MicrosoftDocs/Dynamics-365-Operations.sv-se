@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-electronic-signatures"></a>Ställ in elektroniska signaturer
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Använd den här proceduren för att konfigurera elektroniska signaturer. En elektronisk signatur bekräftar identiteten hos en person som ska påbörja eller godkänna en dataprocess. Det demonstrationsdataföretag som används för att skapa den här proceduren är DAT.
 

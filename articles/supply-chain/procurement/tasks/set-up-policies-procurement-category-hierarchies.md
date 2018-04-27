@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-policies-for-procurement-category-hierarchies"></a>Ställ in policyer för hierarkier för anskaffningskategorier
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Använd den här proceduren för att ställa in regler för att beställa produkter i en kategori. Policyreglerna definieras för en specifik inköpspolicy. Åtkomstregeldata kontrollerar vilka anskaffningskategorier som anställda har åtkomst till när de skapar en rekvisition. När en rekvisition skapas fastställs den inköpspolicy och den kategoriåtkomstregel som ska användas av den juridiska person och den driftenhet som medarbetaren tillhör. Du kan köra den här proceduren i demonstrationsdataföretaget USMF. Denna uppgift utförs vanligtvis av en inköpschef.
 

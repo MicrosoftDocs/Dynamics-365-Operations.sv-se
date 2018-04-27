@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="budget-planning-data-allocation"></a>Dataallokering för budgetplanering
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Det här avsnittet beskriver de olika allokeringsmetoder som är tillgängliga i Microsoft Dynamics 365 for Finance and Operations och hur de kan användas.  
 

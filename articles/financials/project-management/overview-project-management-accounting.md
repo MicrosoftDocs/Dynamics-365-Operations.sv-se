@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
-ms.search.form: ProjTable
+ms.search.form: ProjTable; ProjProjectManagementWorkspace
 audience: Application User
 ms.reviewer: twheeloc
 ms.search.scope: Core, Operations
@@ -19,17 +19,16 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 3c4720795313180ba7ad784ea39484d6ffb9ac2f
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 404f7d2b050aba1532cae0955a9579e1c2f174e3
 ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="project-management-and-accounting"></a>Projekthantering och redovisning
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Funktionen för projekthantering och redovisning kan användas i flera branscher för att tillhandahålla en tjänst, för att tillverka en produkt eller för att uppnå ett resultat.  
 
@@ -83,6 +82,7 @@ Du kan använda prognostisering om organisationen har ett driftperspektiv och fo
 Du kan skapa sex typer av projekt i Microsoft Finance and Operations. Varje projekttyp konfigureras på olika sätt för kostnader och intäktsredovisning. Vilken projekttyp du väljer beror på syftet med projektet. I tabellen nedan beskrivs det vanliga användandet av varje projekttyp.
 
                                                                                                                                                                          |
+
 | Projekttyp      | Beskrivning                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 |-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Tid och material | I Tids- och materialprojekt faktureras kunden för alla kostnader som uppstår i ett projekt. Dessa kostnader inkluderar kostnader för timmar, utgifter, artiklar och avgifter.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
@@ -127,10 +127,10 @@ En projektrelaterad tillverkningsorder kan kopplas till en försäljningsorder e
 
 Använd en av följande metoder, på grundval av kombinationen av dessa faktorer:
 
--   **Slutförd artikel/länk till order** – Koppla projektet till en försäljningsorder eller ett artikelbehov. När du använder den här metoden bokförs de faktiska projektkostnaderna när försäljningsordern faktureras eller när följesedeln uppdateras för artikelbehovet. Kostnaden bokförs som en slutförd artikel.
--   **Slutförd artikel/ingen länk till order** – faktiska kostnader kan inte har bokföras förrän produktionscykeln för en artikel har statusen **Avslutat**. Kostnaden för den slutförda artikeln bokförs som en enda transaktion.
--   **Förbrukad artikel/länk till order** – koppla projektet till ett artikelbehov. Med den här metoden kan du visa de faktiska projektkostnaderna när produktionen har statusen **Startad** eller har rapporterats som avslutad. Kostnaderna bokförs som flera projektartikeltransaktioner för råmaterial och timmar som förbrukats för produktionen. När följesedeln uppdateras för artikelbehovet bokförs inte några projektkostnader. Du kan också definiera på vilken nivå i strukturlistehierarkin som projekten i produktionen ska spåras.
--   ****Förbrukad artikel/ingen länk till order**** – koppla projektet till ett artikelbehov. Med den här metoden kan du visa de faktiska projektkostnaderna när produktionen har statusen **Startad** eller har rapporterats som avslutad. Kostnaderna bokförs som flera projektartikeltransaktioner för råmaterial och timmar som förbrukats för produktionen. Du kan också definiera på vilken nivå i strukturlistehierarkin som projekten i produktionen ska spåras.
+- **Slutförd artikel/länk till order** – Koppla projektet till en försäljningsorder eller ett artikelbehov. När du använder den här metoden bokförs de faktiska projektkostnaderna när försäljningsordern faktureras eller när följesedeln uppdateras för artikelbehovet. Kostnaden bokförs som en slutförd artikel.
+- **Slutförd artikel/ingen länk till order** – faktiska kostnader kan inte har bokföras förrän produktionscykeln för en artikel har statusen **Avslutat**. Kostnaden för den slutförda artikeln bokförs som en enda transaktion.
+- **Förbrukad artikel/länk till order** – koppla projektet till ett artikelbehov. Med den här metoden kan du visa de faktiska projektkostnaderna när produktionen har statusen **Startad** eller har rapporterats som avslutad. Kostnaderna bokförs som flera projektartikeltransaktioner för råmaterial och timmar som förbrukats för produktionen. När följesedeln uppdateras för artikelbehovet bokförs inte några projektkostnader. Du kan också definiera på vilken nivå i strukturlistehierarkin som projekten i produktionen ska spåras.
+- *<strong><em>Förbrukad artikel/ingen länk till order</em></strong>* – koppla projektet till ett artikelbehov. Med den här metoden kan du visa de faktiska projektkostnaderna när produktionen har statusen <strong>Startad</strong> eller har rapporterats som avslutad. Kostnaderna bokförs som flera projektartikeltransaktioner för råmaterial och timmar som förbrukats för produktionen. Du kan också definiera på vilken nivå i strukturlistehierarkin som projekten i produktionen ska spåras.
 
 ### <a name="procure-products-and-services"></a>Anskaffa produkter och tjänster
 
@@ -239,9 +239,8 @@ I tabellen nedan beskrivs metoderna för beräkning av kostnaden för att slutf�
 <li>Jämför prognostransaktioner med verkligt transaktioner.</li>
 <li>Underhåll, minska eller öka uppskattningarna för nästa period.</li>
 </ol>
-Finance and Operations minskar inte automatiskt prognosuppskattningarna. Därför är det en bra idé att upprätthålla en originalprognosmodell i fastprisprojektet för att ha en något att jämföra med när projektet är avslutat. 
-> [!NOTE] När du väljer den här metoden ska du använda minst två prognosmodeller. En modell ska innehålla originalprognosen. Till den andra modellen ska du kopiera prognostransaktionerna från en annan modell. Den här metoden gäller bara för fastprisprojekt och investeringsprojekt.</td>
-> </tr>
+Finance and Operations minskar inte automatiskt prognosuppskattningarna. Därför är det en bra idé att upprätthålla en originalprognosmodell i fastprisprojektet för att ha en något att jämföra med när projektet är avslutat. &gt; [!NOTE] &gt; När du väljer den här metoden ska du använda minst två prognosmodeller. En modell ska innehålla originalprognosen. Till den andra modellen ska du kopiera prognostransaktionerna från en annan modell. Den här metoden gäller bara för fastprisprojekt och investeringsprojekt.</td>
+</tr>
 <tr class="odd">
 <td>Resterande budget</td>
 <td>Den här metoden använder en modell för återstående budget för att beräkna kostnaden för projektet. När du använder den här metoden adderas de faktiska kostnaderna och prognosbeloppen i den återstående budgeten. Resultatet är en totalkostnad. Innan du använder den här metoden, måste en modell för resterande budget läggas upp där transaktioner dras av baserat på faktiska transaktioner som har registrerats i systemet. På sidan <strong>Prognosmodeller</strong> ser du till att fälten är markerade i gruppen <strong>Automatisk prognosreducering</strong> . Vanligtvis kopieras en en resterande budget från en ursprunglig budget. När transaktioner registreras minskas transaktionerna i den resterande budgeten. När projektet framskrider och om du bestämmer att den återstående budgeten ska justeras debiterar du prognostransaktioner på den resterande budgeten. <strong>Obs!</strong> Metoden kan endast användas om en prognosmodell är kopplad till uppskattningen.</td>

@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="price-adjustments-and-discounts"></a>Prisjusteringar och rabatter
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Den här artikeln innehåller information om prisjusteringar och rabatter i Microsoft Dynamics 365 for Retail.
 

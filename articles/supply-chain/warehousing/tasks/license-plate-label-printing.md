@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="enable-license-plate-label-printing"></a>Aktivera utskrift av ID-nummer
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 I den här proceduren aktiveras automatisk utskrift av ett EAN-kollinummer (SSCC) efter den sista artikeln som plockas från lagret i arbetsprocessen för försäljningsplocklistan. Du kan köra den här proceduren i demonstrationsdataföretaget USMF. Om du kör med dina egna data måste du ha en nummerserie som har ställts in för ID-nummer. Du måste konfigurera en etikettskrivare innan du börjar med den här uppgiften. Gå till Organisationsadministration > Inställningar > Nätverksskrivare. I åtgärdsfönstret klickar du på Alternativ och sedan på knappen Hämta installationsprogram för dokumentflödesagent. Kör installationsprogrammet och kontrollera att du har en nätverkskrivare som är inställd på Aktiv innan du fortsätter med proceduren.
 

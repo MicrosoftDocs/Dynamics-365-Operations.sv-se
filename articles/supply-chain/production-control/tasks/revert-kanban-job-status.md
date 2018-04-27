@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="revert-kanban-job-status"></a>Återställ kanban-jobbstatus
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Den här proceduren är avsedd för att återställa en felaktig kanban-jobbstatus. Detta är användbart om maskinoperatören uppdaterar fel jobb eller ställer in fel status av misstag. I den här proceduren registreras ett kanban-jobb som förberett av misstag och statusvärdet återställas. Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF. Den här proceduren är avsedd för den arbetsansvarige eller maskinoperatören som arbetar i ett lean manufacturing-företag.
 

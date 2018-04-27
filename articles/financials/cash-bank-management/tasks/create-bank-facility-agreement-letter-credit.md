@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-bank-facility-agreement-for-a-letter-of-credit"></a>Skapa ett kreditlimitavtal för en remburs
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Denna uppgift är en genomgång av hur du skapar ett bankkreditlimitavtal om du vill bearbeta en remburs. Du kanske vill ställa in bankkreditlimiter och bokföringsprofiler före detta.  I den här uppgiften används demonstrationsföretaget "USMF".  
 

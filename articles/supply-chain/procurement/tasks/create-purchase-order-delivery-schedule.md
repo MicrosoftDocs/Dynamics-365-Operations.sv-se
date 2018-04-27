@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-purchase-order-with-a-delivery-schedule"></a>Skapa en inköpsorder med en leveransplan
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Den här proceduren visas hur du kan skapa en leveransplan för en inköpsorder. En leveransplan används när en kvantitet på en order eller en journal begärs för att levereras i flera försändelser. De exempel som visas i den här handboken kan användas i demoföretaget USMF. Denna procedur görs normalt av en inköpsagent.
 

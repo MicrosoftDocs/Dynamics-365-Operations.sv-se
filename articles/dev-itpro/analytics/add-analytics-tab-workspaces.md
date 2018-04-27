@@ -16,16 +16,16 @@ ms.author: tjvass
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 9ee81bbdd22fed4ef6ea97080fe1f6b3d82bcaf5
-ms.openlocfilehash: ee95c3d79f7f401c767b9bc8415b21369c14478b
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: d8cd3a6b3cbfa1219f0ebcf9d4d2132197167220
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="add-analytics-to-workspaces-by-using-power-bi-embedded"></a>Lägg till analys i arbetsytor med Power BI Embedded
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 > [!NOTE]
 > Den här funktionen stöds i Dynamics 365 for Finance and Operations (version 7.2 och senare).
@@ -50,7 +50,7 @@ Oavsett om du utökar en befintlig programarbetsyta eller introducerar en egen a
 
 ## <a name="add-a-pbix-file-as-a-resource"></a>Lägga till en .pbix-fil som en resurs
 Innan du börjar måste du skapa eller skaffa Power BI-rapporten som du bäddar in på arbetsytan. Mer information om hur du skapar analytiska rapporter finns i [komma igång med Power BI Desktop](https://powerbi.microsoft.com/en-us/documentation/powerbi-desktop-getting-started/).
- 
+
 Följ dessa steg om du vill lägga till en .pbix-fil som en projektartefakt för Visual Studio.
 
 1. Skapa ett nytt projekt i lämplig modell.
@@ -63,12 +63,12 @@ Följ dessa steg om du vill lägga till en .pbix-fil som en projektartefakt för
 5. Leta upp filen .pbix som innehåller definitionen av analytisk rapport och klicka sedan på **öppna**.
 
     ![Välj dialogrutan Resursfil](media/analytical-workspace-select-resource.png)
-  
+
 Nu när du har lagt till .pbix-filen som en resurs i Dynamics 365, kan du bädda in rapporter i arbetsytor och lägga till direkta länkar med hjälp av menyalternativ.
 
 ## <a name="add-a-tab-control-to-an-application-workspace"></a>Lägga till en flikkontroll till en programarbetsyta
 I det här exemplet ska vi utöka arbetsytan **Hantering av reservationer** i modellen uthyrning av vagnpark genom att lägga till fliken **analys** till definitionen av formuläret **FMClerkWorkspace**.
- 
+
 Följande bild visar hur formuläret **FMClerkWorkspace** ser ut i designern i Microsoft Visual Studio.
 
 ![FMClerkWorkspace-formuläret innan ändringar](media/analytical-workspace-definition-before.png)
@@ -93,16 +93,16 @@ Följ dessa steg för att utöka formulärets definition för arbetsytan **Reser
 16. Högerklicka och markera sedan **Ta bort mönster**.
 17. Högerklicka igen och välj **Lägg till mönster** > **Arbetsytan tabbad**.
 18. Utföra en version för att kontrollera ändringarna.
- 
+
 Följande illustration visar hur designen ser ut efter ändringarna har tillämpats.
 
 ![FMClerkWorkspace efter ändringar](media/analytical-workspace-definition-after.png)
 
 Nu när du har lagt till formulärkontroller som används för att bädda in arbetsytrapporten måste du ange storleken på den överordnade kontrollen så att layouten sparas. Som standard visas både sidan **filterruta** och **flik** i rapporten. Du kan dock ändra synligheten för dessa kontroller efter målkonsumenten för rapporten.
- 
+
 > [!NOTE]
 > Vi rekommenderar att du använder tillägg för att dölja både sidan **filterruta** och **flik** för konsekvens.
- 
+
 Du har nu slutfört uppgiften att utöka definitionen för ansökningsformulär. Mer information om hur du använder tillägg om du vill göra anpassningar finns [anpassning: överlagring och tillägg](../extensibility/customization-overlayering-extensions.md).
 
 ## <a name="add-x-business-logic-to-embed-a-viewer-control"></a>Lägg till X ++-affärslogik om du vill inkludera visningskontrollen
@@ -169,12 +169,13 @@ public static void initializeReportControl(
 
 #### <a name="parameters"></a>Parametrar
 
-| Namn | beskrivning |
-|---|---|
-| resourceName | Namnet på .pbix-resursen |
-| formGroupControl | Formulärgruppkontrollen som Power BI-rapportkontrollen ska tillämpas till. |
-| defaultPageName | Standardsidnamnet. |
-| showFilterPane | Ett booleskt värde som anger om filterrutan ska visas (**sant**) eller döljas (**falsk**). |
-| showNavPane | Ett booleskt värde som anger om navigeringsrutan ska visas (**sant**) eller döljas (**falsk**). |
-| defaultFilters | Standardfilter för Power BI-rapporten. |
+|       Namn       |                                                              beskrivning                                                               |
+|------------------|----------------------------------------------------------------------------------------------------------------------------------------|
+|   resourceName   |                                                    Namnet på .pbix-resursen                                                     |
+| formGroupControl |                                    Formulärgruppkontrollen som Power BI-rapportkontrollen ska tillämpas till.                                     |
+| defaultPageName  |                                                         Standardsidnamnet.                                                         |
+|  showFilterPane  |   Ett booleskt värde som anger om filterrutan ska visas (<strong>sant</strong>) eller döljas (<strong>falsk</strong>).   |
+|   showNavPane    | Ett booleskt värde som anger om navigeringsrutan ska visas (<strong>sant</strong>) eller döljas (<strong>falsk</strong>). |
+|  defaultFilters  |                                              Standardfilter för Power BI-rapporten.                                              |
+
 

@@ -18,15 +18,15 @@ ms.author: rschloma
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: ba1a3a78d59f3aec91473ba9bb20bda4804ec92e
-ms.openlocfilehash: 0a43f5ff0987ede9f0cb80e5b4854f78e19e329b
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: b4b54e97bdebc158adc3bc6d57a6661cd536f5fb
 ms.contentlocale: sv-se
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="provision-microsoft-dynamics-365-for-talent"></a>Reservera Microsoft Dynamics 365 for Talent
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
 I det här avsnittet får du veta hur du skapar en ny produktionsmiljö för Microsoft Dynamics 365 for Talent. Det här avsnittet förutsätter att du har köpt Talent via en molnbaserad lösningsleverantör (CSP) eller ett arkitekturavtal för företag (EA). Om du har en befintlig Microsoft Dynamics 365-licens som redan innehåller tjänsteplanen for Talent och du inte kan utföra stegen i det här avsnittet, kontakta då supporten.
 
@@ -79,12 +79,12 @@ Använd följande riktlinjer när du bestämmer vilka PowerApps-miljöer som ska
  
     **CDS 2.0-miljöer** CDS 2.0 görs offentligt tillgänglig 21 mars 2018, Talent stöder ännu inte CDS 2.0. Du kan visa och skapa CDS 2.0-databaser i PowerApps administratörscenter, men de kan inte användas i Talent. Alternativet att använda CDS 2.0-miljöer i Talent-distributioner kan användas vid en senare tidpunkt.
    
- > [!Note]
- > För att särskilja mellan CDS 1.0- och 2.0-miljöer i administrationsportalen, välj en miljö och leta efter **Uppgifter**. CDS 2.0-miljöer refererar till faktum att ”du kan hantera dessa inställningar i Dynamics 365 administrationscenter” pekar på en instansversion och har ingen flik som för Databas. 
+   > [!Note]
+   > För att särskilja mellan CDS 1.0- och 2.0-miljöer i administrationsportalen, välj en miljö och leta efter **Uppgifter**. CDS 2.0-miljöer refererar till faktum att ”du kan hantera dessa inställningar i Dynamics 365 administrationscenter” pekar på en instansversion och har ingen flik som för Databas. 
  
    **Standardinställda PowerApps- miljöer** Även om varje innehavare konfigureras automatiskt med en standardmiljö för PowerApps, rekommenderar vi inte att använda dem med Talent eftersom alla innehavare har tillgång till PowerApps-miljön och kanske oavsiktligt förstör produktionsdata när de testar och utforskar integrering med PowerApps eller Flow.
    
-   **Testkörningsmiljöer** Miljöer med ett namn som ”TestDrive- alias@domain" skapas med en 60 dagars förfalloperiod och upphör att gälla efter den tiden vilket kan orsaka att miljön tas bort automatiskt.
+   <strong>Testkörningsmiljöer</strong> Miljöer med ett namn som ”TestDrive- alias@domain" skapas med en 60 dagars förfalloperiod och upphör att gälla efter den tiden vilket kan orsaka att miljön tas bort automatiskt.
    
    **Regioner som inte stöds** För närvarande stöds bara Talent i följande regioner: USA, Europa och Australien.
   
@@ -115,7 +115,7 @@ Slutför följande instruktioner för att köra skriptet:
    ```.\ProvisionCDSEnvironment -EnvironmentName MyNewEnvironment -Location YourLocation```
 
     
-   **EnvironmentName** bör ersättas med ditt namn på miljön. Detta namn visas i LCS och kommer att visas när användare väljer vilken Talent-miljö som ska användas. 
+   **MyNewEnvironment** bör ersättas med ditt namn på miljön. Detta namn visas i LCS och kommer att visas när användare väljer vilken Talent-miljö som ska användas. 
 
    **YourLocation** ska ersättas med någon av regionerna som stöds för Talent: USA, Europa, Australien. 
 

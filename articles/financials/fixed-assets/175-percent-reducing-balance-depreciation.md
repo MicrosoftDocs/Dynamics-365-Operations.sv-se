@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="175-percent-reducing-balance-depreciation"></a>175 procent degressiv avskrivning
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Det här ämnet ger en översikt över 175-procentsmetoden för degressiv avskrivning.
 
@@ -68,6 +67,7 @@ Om du väljer **Räkenskapsår** som avskrivningsår finns följande alternativ 
 -   **Räkenskapsperiod** beräknar det totala avskrivningsbeloppet för räkenskapsåret. Detta belopp periodiseras till de räkenskapsperioder som har definierats på **Räkenskapskalendrar**.
 
 ## <a name="example-of-175-reducing-balance-depreciation"></a>Exempel på en degressiv avskrivning på 175 %
+
 |                                |        |
 |--------------------------------|--------|
 | Anskaffningskostnad               | 11 000 |

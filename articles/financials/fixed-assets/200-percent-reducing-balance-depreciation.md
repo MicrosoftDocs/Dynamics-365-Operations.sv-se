@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="200-percent-reducing-balance-depreciation"></a>200 procent degressiv avskrivning
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Den här artikeln ger en översikt över 200-procentsmetoden för degressiv avskrivning.
 
@@ -70,6 +69,7 @@ Om du väljer **Skatt** som avskrivningsår finns följande alternativ i fältet
 -   **Räkenskapsperiod** bokför det totala avskrivningsbeloppet som beräknas för räkenskapsåret. Detta belopp periodiseras till de räkenskapsperioder som har definierats på **Räkenskapskalendrar**.
 
 ## <a name="example-of-200-reducing-balance-depreciation"></a>Exempel på en degressiv avskrivning på 200 %
+
 |                                |        |
 |--------------------------------|--------|
 | Anskaffningskostnad               | 11 000 |

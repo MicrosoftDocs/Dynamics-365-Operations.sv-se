@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-bar-codes"></a>Ställ in streckkoder
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Denna artikel beskriver hur du använder streckkoder i Microsoft Dynamics 365 for Retail.
 

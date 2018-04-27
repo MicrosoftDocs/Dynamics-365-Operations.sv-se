@@ -29,8 +29,7 @@ ms.lasthandoff: 12/14/2017
 
 # <a name="set-up-rfm-analysis"></a>Ställa in RFM-analys
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Det här avsnittet innehåller information om hur du ställer in recency, frekvens och monetär analys (RFM) för dina kunder.
 
@@ -60,25 +59,25 @@ Om din organisation använder en sammanlagd siffra för tjoget, den individuella
     - Om varje del av RFM-poängen måste innehålla ett likvärdigt antal kunder markerar du kryssrutan **Jämn distribution**. 
     - Markera kryssrutan **Lägg till poäng** om du vill lägga samman de tre poängen. Detta ger till exempel en kund en RFM-poäng på 13 istället för 535. 
     - Markera kryssrutan **Spara historik** om du vill att systemet ska spara statistiska uppgifter för kunder, så att dessa kan användas för att beräkna RFM-poäng.
-  
+
 5.  Gör följande på snabbfliken **Aktualitet**: 
     - Ange antalet avdelningar, eller grupper, som ska användas för att beräkna poängen recency för kunder i fältet **Indelningar**. Om du till exempel har 100 kunder innebär en indelning i 5 att det finns 20 kunder för varje poäng. 20 kunder som har gjort inköp helt nyligen har aktualitetspoäng 5. Nästa 20 kunder har en aktualitetspoäng på 4 osv. Om du har 50 kunder, har 10 kunder en recencyställning på 5, 10 har en recencyställning på 4, och så vidare. 
     - I fältet **Prioritet** väljer du hur stor viktning parametern recency ska ha i förhållande till de andra parametrarna när RFM-poängen beräknas för en kund. Du kan till exempel lägga mer värde på recencypoängen än på den monetära poängen. 
     - I fältet **Multiplikator** anger du det värde som aktualitetspoängen ska multipliceras med. Om du inte anger något värde kommer poängen inte att multipliceras. 
     - Välj den tidsperiod för vilken aktualitetspoängen beräknas i fältet **Period**. Till exempel per vecka eller per månad.
-   
+
 6.  Gör följande på snabbfliken **Frekvens**: 
     - Ange antalet avdelningar, eller grupper, som ska användas för att beräkna frekvenspoängen för kunder i fältet **Indelningar**. 
     - I fältet **Prioritet** väljer du hur stor viktning frekvensparametern ska ha i förhållande till de andra när RFM-poängen beräknas för en kund. 
     - I fältet **Multiplikator** anger du det värde som frekvenspoängen ska multipliceras med. Om du inte anger något värde kommer poängen inte att multipliceras.
-   
+
 7.  Gör följande på snabbfliken **Monetär**: 
     - Ange antalet avdelningar, eller grupper, som ska användas för att beräkna monetär poäng för kunder i fältet **Indelningar**. 
     - I fältet **Prioritet** väljer du hur stor viktning monetärparametern ska ha i förhållande till de andra när RFM-poängen beräknas för en kund. 
     - I fältet **Multiplikator** anger du det värde som monetära poäng ska multipliceras med. Om du inte anger något värde kommer poängen inte att multipliceras. 
     - I fältet **Brutto/netto** anger du om kundens monetära poäng ska beräknas genom att använda brutto- eller nettofakturabeloppet. 
     - Om en kunds returbelopp ska dras från kundens totala fakturaberäkning markerar du kryssrutan **Subtrahera returer**. 
- 
+
 ## <a name="view-a-customers-rfm-score"></a>Visa en kunds RFM-poäng
 Använd den här proceduren när du vill visa en kunds RFM-poäng. 
 

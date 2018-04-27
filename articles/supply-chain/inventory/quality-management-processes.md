@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="quality-management-processes"></a>Kvalitetshanteringsprocesser
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Det här avsnittet innehåller information om kvalitetshanteringprocessen för avvikande produkter. Det beskriver användning av kvalitetskontrollfunktionen, om att definiera och underhålla avvikelser och hantering av korrigeringar.
 

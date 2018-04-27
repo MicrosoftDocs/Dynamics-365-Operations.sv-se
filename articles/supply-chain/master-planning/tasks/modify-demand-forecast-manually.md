@@ -24,7 +24,7 @@ ms.lasthandoff: 03/26/2018
 ---
 # <a name="modify-a-demand-forecast-manually"></a>Ändra en efterfrågeprognos manuellt
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 I den här proceduren visas hur du ändrar prognosen för en artikel. Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF. Registreringen är avsedd för produktionsplaneraren. 
 

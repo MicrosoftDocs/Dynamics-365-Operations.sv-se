@@ -20,17 +20,16 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 3206e53c4f2659c6d9b9be64b01ac28cdd17bc88
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 0235cf112b59ee86f77d26044e47eb9bff8f67db
 ms.contentlocale: sv-se
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="expression-constraints-and-table-constraints-in-product-configuration-models"></a>Uttryckbegränsningar och tabellbegränsningar i produktkonfigurationsmodeller.
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 I det här avsnittet beskrivs hur du använder uttrycksbegränsningar och registerbegränsningar. Med begränsningar kontrolleras vilka attributvärden som du kan välja när du konfigurerar produkter för en försäljningsorder, försäljningsoffert, inköpsorder eller produktionsorder. Du kan använda uttrycksbegränsningar eller registerbegränsningar, beroende på hur du föredrar att skapa begränsningar. 
 
@@ -204,23 +203,24 @@ I följande tabeller visas operatorerna och infixnotationerna som du kan använd
 
 Exemplen i följande tabell visar hur du skriver en infixnotation.
 
-| Infixnotation    | beskrivning                                                                                   |
+
+|  Infixnotation   |                                          beskrivning                                          |
 |-------------------|-----------------------------------------------------------------------------------------------|
-| x + y + z         | Tillägg                                                                                      |
-| x \* y \* z       | Multiplikation                                                                                |
-| x - y             | Binär subtraktion översätts liksom binär addition med negerad andra term. |
-| x ^ y ^ z         | Högerassociativ exponentiering                                                   |
-| !x                | Booleskt inte                                                                                   |
-| x -: y            | Boolesk implikation                                                                           |
-| §x | y | z         | Booleskt eller                                                                                    |
-| x & y & z         | Booleskt och                                                                                   |
-| x == y == z       | Likhet                                                                                      |
-| x != y != z       | Distinkt                                                                                      |
-| x &lt; y &lt; z   | Mindre än                                                                                     |
-| x &gt; y &gt; z   | Större än                                                                                  |
-| x &lt;= y &lt;= z | Mindre än eller lika med                                                                         |
-| x &gt;= y &gt;= z | Större än eller lika med                                                                      |
-| (x)               | Standardprioritet för åsidosättande av parenteser.                                                      |
+|     x + y + z     |                                           Tillägg                                            |
+|    x \* y \* z    |                                        Multiplikation                                         |
+|       x - y       | Binär subtraktion översätts liksom binär addition med negerad andra term. |
+|     x ^ y ^ z     |                          Högerassociativ exponentiering                          |
+|        !x         |                                          Booleskt inte                                          |
+|      x -: y       |                                      Boolesk implikation                                      |
+|         x         |                                               y                                               |
+|     x & y & z     |                                          Booleskt och                                          |
+|    x == y == z    |                                           Likhet                                            |
+|    x != y != z    |                                           Distinkt                                            |
+|  x &lt; y &lt; z  |                                           Mindre än                                           |
+|  x &gt; y &gt; z  |                                         Större än                                          |
+| x &lt;= y &lt;= z |                                     Mindre än eller lika med                                     |
+| x &gt;= y &gt;= z |                                   Större än eller lika med                                    |
+|        (x)        |                           Standardprioritet för åsidosättande av parenteser.                            |
 
 ## <a name="why-arent-my-expression-constraints-validated-correctly"></a>Varför kan inte mina uttryckbegränsningar verifieras korrekt?
 Du kan inte använda reserverade nyckelord som solvernamn för attribut, komponenter eller delkomponenter i produktkonfigurationsmodell. Följande lista innehåller de reserverade nyckelord som du inte kan använda:

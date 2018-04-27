@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-a-mobile-device-menu-item-for-completing-work-in-a-purchase-order"></a>Ställ in ett menyalternativ för mobil enhet för att slutföra arbetet i en inköpsorder
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 I den här proceduren visas hur du ställer in ett menyalternativet för mobila enheter. I det här exemplet används menyalternativet för att utföra arbete av typen Inköpsorder. Arbetsklassen som associeras med menyalternativet bestämmer vilket arbete som är giltigt. Du kan använda den här guiden i demonstrationsföretaget USMF. Vanligtvis utförs den här proceduren av en lagerchef.
 

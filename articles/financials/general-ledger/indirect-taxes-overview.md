@@ -28,10 +28,9 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="sales-tax-overview"></a>Momsöversikt
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
-
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
 Det här ämnet innehåller en översikt över momssystemet. Det ger en beskrivning av komponenterna för inställning av moms och hur de arbetar tillsammans.
 

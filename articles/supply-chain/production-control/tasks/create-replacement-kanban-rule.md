@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-replacement-kanban-rule"></a>Skapa en kanban-regel för ersättning
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Den här proceduren fokuserar på att ersätta en befintlig kanban-regel med en ny kanban-regel vid ett visst datum. Detta är användbart när ändringar i produktionsflödet eller påfyllnadsregler behöver koordineras och tidsplaneras. I proceduren används demonstrationsföretag USMF. Den här proceduren är avsedd för processingenjören eller värdeströmansvarig när de förbereder tillverkningen för ett modifierat produktionsflöde eller en ny återanskaffningsregel. Denna uppgift ersätter kanban-regel 000022 med en ny regel och ökar den högsta kvantiteten från 48 till 100 för den nya regeln.
 

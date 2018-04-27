@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-credit-and-collections"></a>Konfigurera kredit och inkasso
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denna artikel förklarar hur du ställer in samlingsfunktionen.
 
@@ -97,9 +96,9 @@ Om en säljare inte har angetts används den primära säljaren för kundorganis
 Mer information finns i följande avsnitt:
 
  - [Skapa in en kravbrevsserie](tasks/create-collection-letter-sequence.md)
- 
+
  - [Bearbeta kravbrev](tasks/process-collection-letters.md)
- 
+
  - [Granska inkasseringsinformation](tasks/review-collections-information.md)
 
 

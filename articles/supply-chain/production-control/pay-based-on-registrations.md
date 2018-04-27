@@ -19,16 +19,16 @@ ms.author: johanho
 ms.search.validFrom: 2018-03-20
 ms.dyn365.ops.version: AX 8.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 6cd1e3a1f6b5c979a4f60d97cc2203cdcd32bbbe
-ms.openlocfilehash: 6de88b82c9a663bfe6d2756fde6f1a7412a44b1e
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 1ae0f142ebd2252b1df414998c153d32127bc1b7
 ms.contentlocale: sv-se
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="pay-based-on-registrations"></a>Lön baserat på registreringar
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Det här avsnittet beskriver i detalj hur lön beräknas utifrån arbetarregistreringar. Det innehåller exempel som visar hur resultatet påverkas av de olika kombinationerna av de inställningsalternativ som är tillgängliga för beräkningen. Nedan följer några av de områden som omfattas:
 
@@ -446,7 +446,7 @@ Du kan skapa planerad frånvaro för anställda på sidan **Skapa planerad från
 Jobbet baseras på en fråga. Du kan därför skapa planerad frånvaro för flera arbetare, t.ex. arbetare som tillhör samma beräkningsgrupp. Om den planerade frånvaron är för en enskild arbetare kan registreringen anges antingen från sidan **Närvaro** eller sidan **Tidsregistreringsarbetare**.
 
 - För att ange en frånvaroregistrering från sidan **Närvaro**, välj **Tid och närvaro** &gt; **Förfrågningar och rapporter** &gt; **Närvaro** &gt; **Närvaro** och välj sedan **Frånvaroregistrering**.
-- Ange en frånvaroregistrering från sidan ***Tidsregistreringsarbetare***, välj **Tid och närvaro**&gt;**Inställningar**&gt;**Tidsregistreringsarbetare**, och klicka sedan på **Tid**och **Tidstilldelning**och välj **Frånvaroregistreringar**.
+- Ange en frånvaroregistrering från sidan *<strong><em>Tidsregistreringsarbetare</em></strong>*, välj <strong>Tidsregistreringsarbetare</strong> &gt; <strong>Inställningar</strong> &gt; <strong>Tidsregistreringsarbetare</strong>, välj fliken <strong>Tid</strong> under <strong>Tidstilldelning</strong> och välj <strong>Frånvaroregistreringar</strong>.
 
 Du kan använda rapporten **Planerad frånvaro** för att visa en översikt över planerad frånvaro för anställda. Om du vill öppna rapporten, välj **Tid och närvaro**&gt;**Förfrågningar och rapporter**&gt;**Frånvarorapporter**&gt;**Planerad frånvaro**.
 

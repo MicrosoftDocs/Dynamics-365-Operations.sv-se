@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-a-ledger-account-alias"></a>Ställ in alias för huvudbokskonto
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Den här proceduren visar hur du skapar ett kontoalias som innehåller en genväg för att ange ett kontonummer. I proceduren används demonstrationsdataföretaget USMF.
 

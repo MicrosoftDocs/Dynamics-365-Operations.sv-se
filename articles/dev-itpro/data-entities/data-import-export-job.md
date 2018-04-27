@@ -16,16 +16,16 @@ ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: bd26ac6fd8376fd42467c7a3d2ecd2ec035a4479
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: fc47f6cd9cfe4a850e0959bf89da086ca82f3b69
 ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="data-import-and-export-jobs"></a>Jobb för import och export av data
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Om du vill skapa och hantera dataimport- och dataexportjobb i Microsoft Dynamics 365 for Finance and Operations, använd då arbetsytan **Datahantering**. Som standard skapar processen för dataimport och -export ett mellanlagringsregister för varje enhet i måldatabasen. Med tillfälliga register kan du kontrollera, rensa eller konvertera data innan du flyttar den.
 
@@ -64,13 +64,15 @@ Vi rekommenderar att du lägger tid på att välja en lämplig projektkategori f
 Du kan lägga till specifika enheter i import- eller exportjobb eller välja den mall som ska användas. Mallar fyller ett projekt med en lista över enheter. Alternativet **Tillämpa mall** blir tillgängligt när du namnger ett jobb och spara det.
 
 ### <a name="set-the-data-format-for-the-job"></a>Ange dataformat för jobbet
-När du väljer en enhet markerar du format för de data som ska exporteras eller importeras. Du definierar format via panelen **Inställningar för datakälla**. Många organisationer utgår från de format som ingår som standard i demonstrationsdatauppsättningen. Här följer en lista över några av dessa format:
+När du väljer en enhet markerar du format för de data som ska exporteras eller importeras. Du definierar format via panelen **Inställningar för datakälla**. Ett dataformat för källan är en kombination av **typ**, **filformat**, **radavgränsare** och **kolumnavgränsare**. Det finns även andra attribut, men dessa är viktiga att förstå. I tabellen här nedanför listas giltiga kombinationer.
 
-- AX (för data som måste importeras eller exporteras i samma format som används för Microsoft Dynamics 365 for Finance and Operations)
-- Kolonseparerade
-- CSV
-- Excel
-- Paket
+| **Filformat**        | **Rad/kolumnavgränsare**                   | **XML-format**             |
+|------------------------|--------------------------------------------|---------------------------|
+| Excel                  | Excel                                      | \-Inte tillämpligt                     |
+| XML                    | \-Inte tillämpligt                                      | XML-element XML-attribut |
+| Avgränsad, fast bredd | Komma, semikolon, flik, lodrätt streck, kolon | \-Inte tillämpligt                     |
+
+
 
 ### <a name="sequence-the-entities"></a>Ordna enheterna
 Enheter kan ordnas i en datamall eller i import- och exportjobb. När du kör ett jobb som innehåller mer än en datatabell måste du kontrollera att datatabellerna har ordnats korrekt. Du ordnar entiteter i första hand så att du kan lösa eventuella funktionella samband mellan olika enheter. Om enheterna inte har några funktionella samband kan de schemaläggas parallell import eller export.

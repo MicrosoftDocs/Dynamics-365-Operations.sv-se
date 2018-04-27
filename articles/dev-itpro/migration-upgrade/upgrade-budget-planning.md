@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="upgrade-budget-planning"></a>Uppgradera budgetplanering
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Det finns viktiga skillnader i budgetplanering mellan Microsoft Dynamics AX 2012 och Microsoft Dynamics 365 for Finance and Operations. Vissa funktioner har inte uppgraderats och kräver därför omkonfigurering. Det här avsnittet beskriver vad som måste konfigureras om och beskriver även nya funktioner som du bör överväga när uppgraderingen är klar.  
 
@@ -70,26 +69,27 @@ För att hjälpa dig att avgöra hur du konfigurerar det uppgraderade systemet, 
 
 ### <a name="define-columns-and-layouts"></a>Definiera kolumner och layout
 
-1.  På sidan **Budgetplaneringskonfiguration** klickar du på fliken **Kolumner**. Under uppgraderingen skapas automatiskt nya kolumner utifrån dina budgetplansrader. Kolumner använder nu dynamiska datum där tiden och året förskjuts från räkenskapsåret som definieras i budgetplaneringsprocessen. **Obs:** Av prestandaskäl under uppgraderingen förutsätts att alla budgetcykler representerar kalenderår, inte räkenskapsår. Om du använder räkenskapsår måste du utföra ändringar för att mappa kolumnerna till deras räkenskapsår. Exempelvis följande element fanns i AX 2012:
-    -   Budgetplanscenarier: verkliga, baslinje, Budgetförfrågan, budget godkänd
-    -   Budgetplansrader för alla scenarier i 2017 och utfall för både 2017 och 2016
+1. På sidan **Budgetplaneringskonfiguration** klickar du på fliken **Kolumner**. Under uppgraderingen skapas automatiskt nya kolumner utifrån dina budgetplansrader. Kolumner använder nu dynamiska datum där tiden och året förskjuts från räkenskapsåret som definieras i budgetplaneringsprocessen. **Obs:** Av prestandaskäl under uppgraderingen förutsätts att alla budgetcykler representerar kalenderår, inte räkenskapsår. Om du använder räkenskapsår måste du utföra ändringar för att mappa kolumnerna till deras räkenskapsår. Exempelvis följande element fanns i AX 2012:
+   -   Budgetplanscenarier: verkliga, baslinje, Budgetförfrågan, budget godkänd
+   -   Budgetplansrader för alla scenarier i 2017 och utfall för både 2017 och 2016
 
-    Följande kolumner skapas Finance and Operations:
-    | Kolumnnamn    | Budgetplanscenario | Kolumntidsperiod | Förskjutning för år |
-    |----------------|----------------------|--------------------|-------------|
-    | Jan Scenario 1 | Utfall              | 1                  | 0           |
-    | Jan Scenario 2 | Baslinje             | 1                  | 0           |
-    | Jan Scenario 3 | Budgetförfrågan       | 1                  | 0           |
-    | Jan Scenario 4 | budget godkänd      | 1                  | 0           |
-    | Jan Scenario 5 | Utfall              | 1                  | -1          |
-    | Feb Scenario 1 | Utfall              | 1                  | 0           |
-    | ...            | ...                  | ...                | ...         |
+   Följande kolumner skapas Finance and Operations:
 
-    I det här exemplet skapas en kolumn som heter **Jan Scenario 1** för den senaste transaktionsdatan för budgetplan som finns där det finns transaktioner i januari. En liknande kolumn skapas för varje scenario som innehåller data. Kolumnerna skapas för alla perioder det året, kolumner skapas för tidigare år.
-2.  Ändra kolumnnamn och beskrivningar och övriga detaljer, antingen manuellt på klienten eller genom att göra bulkuppdateringar via Excel-tillägget som refererar till budgetplankolumnernas dataentitet. Alla filter som har tidigare angetts för matrisfält anges nu inne i kolumnerna.
-3.  Skapa en ny budgetplanlayout. En layout pekar på flera kolumner för att definiera vyn som visas i Excel och klienten. Layouten kräver först att du anger en redovisningsdimension som är konfigurerad för att avgöra vilka ekonomiska dimensioner som kan anges. När du har nagett dimensionsuppsättningen klickar du på **beskrivningar** för att välja vilka dimensionsbeskrivningar som ska ingå i layouten.
-4.  På snabbfliken **layoutelement** klickar du på **Lägg till** för att lägga till metadata för varje rad som en valuta, en kommentar eller en budgetklass som bestämmer intäktsrader jämfört med utgiftsrader. Lägg sedan till kolumner för tidsperioden och scenarier som gäller för den här budgetcykeln och fasen. Du kan göra dessa ändringar manuellt i klienten eller via Excel-tillägget som refererar till dataentiteten för layoutelement för budgetplan.
-5.  För varje layoutelement anger du om kolumnen ska kunna redigeras och om kolumnen även visas i Excel-arbetsboken för den här layouten. **Obs!** För våra historiska planer kanske du vill ha en layout som visar 12 månatliga kolumner för alla budgetplanscenarier för den processen.
+   | Kolumnnamn    | Budgetplanscenario | Kolumntidsperiod | Förskjutning för år |
+   |----------------|----------------------|--------------------|-------------|
+   | Jan Scenario 1 | Utfall              | 1                  | 0           |
+   | Jan Scenario 2 | Baslinje             | 1                  | 0           |
+   | Jan Scenario 3 | Budgetförfrågan       | 1                  | 0           |
+   | Jan Scenario 4 | budget godkänd      | 1                  | 0           |
+   | Jan Scenario 5 | Utfall              | 1                  | -1          |
+   | Feb Scenario 1 | Utfall              | 1                  | 0           |
+   | ...            | ...                  | ...                | ...         |
+
+   I det här exemplet skapas en kolumn som heter **Jan Scenario 1** för den senaste transaktionsdatan för budgetplan som finns där det finns transaktioner i januari. En liknande kolumn skapas för varje scenario som innehåller data. Kolumnerna skapas för alla perioder det året, kolumner skapas för tidigare år.
+2. Ändra kolumnnamn och beskrivningar och övriga detaljer, antingen manuellt på klienten eller genom att göra bulkuppdateringar via Excel-tillägget som refererar till budgetplankolumnernas dataentitet. Alla filter som har tidigare angetts för matrisfält anges nu inne i kolumnerna.
+3. Skapa en ny budgetplanlayout. En layout pekar på flera kolumner för att definiera vyn som visas i Excel och klienten. Layouten kräver först att du anger en redovisningsdimension som är konfigurerad för att avgöra vilka ekonomiska dimensioner som kan anges. När du har nagett dimensionsuppsättningen klickar du på **beskrivningar** för att välja vilka dimensionsbeskrivningar som ska ingå i layouten.
+4. På snabbfliken **layoutelement** klickar du på **Lägg till** för att lägga till metadata för varje rad som en valuta, en kommentar eller en budgetklass som bestämmer intäktsrader jämfört med utgiftsrader. Lägg sedan till kolumner för tidsperioden och scenarier som gäller för den här budgetcykeln och fasen. Du kan göra dessa ändringar manuellt i klienten eller via Excel-tillägget som refererar till dataentiteten för layoutelement för budgetplan.
+5. För varje layoutelement anger du om kolumnen ska kunna redigeras och om kolumnen även visas i Excel-arbetsboken för den här layouten. **Obs!** För våra historiska planer kanske du vill ha en layout som visar 12 månatliga kolumner för alla budgetplanscenarier för den processen.
 
 ### <a name="update-budget-planning-processes-to-use-the-appropriate-layout-for-each-budget-stage"></a>Uppdatera budgetplaneringsprocesser för att använda passande layout för varje budgetfas
 

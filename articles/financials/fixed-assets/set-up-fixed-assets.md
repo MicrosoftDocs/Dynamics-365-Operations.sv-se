@@ -28,7 +28,7 @@ ms.lasthandoff: 01/17/2018
 
 # <a name="set-up-fixed-assets"></a>Ställ in anläggningstillgångar
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Detta avsnitt ger en översikt över inställningen av modulen för **anläggningstillgångar**.
 

@@ -18,29 +18,29 @@ ms.author: kherr
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: abc52192848649672cbcb8c770d74ba2aef139be
-ms.openlocfilehash: 27c03f7bd61ee7d4cb1d01f04af2f1821e9988e1
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 93333757995c874c2cf03514acff28a54ae7f787
 ms.contentlocale: sv-se
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="enter-payroll-beginning-balances"></a>Ange initiala lönesaldon
 
-[!include[banner](../../includes/banner.md)]
+[!INCLUDE [banner](../../includes/banner.md)]
 
 Avsnittet beskriver stegen för att ange initiala saldon för lönekoder, förmåner, avdrag och moms. Denna information är viktig för partnerföretag som överför data för en ny implementering av lönelistor från ett annat system. Vi bekräftar följande information när du förbereder inmatningen av initiala lönesaldon:
 
 > * Medarbetarposter anges och finns tillgängliga i systemet
 > * Följande uppgifter har konfigurerats och tilldelats medarbetare:
-
+> 
 > > * Lönecykler och löneperioder
 > > * Inkomstkoder
 > > * Moms
 > > * Förmåner och avdrag
-
+> 
 > * Företaget bör har valt ett datum där initiala lönesaldon kan ställas in.
-
+> 
 > * Informationen har samlats in för alla inkomster och förmåner/avdrag, förmånsbidrag, medarbetar- och arbetsgivarmoms deras hittillsvarande belopp under hittillsvarande år från det äldre systemet.
 
 När du planerar att ange initiala balanser, överväg då hur pass detaljerade datan måste vara. De flesta företag anger ett enda, konsoliderat belopp under hittillsvarande år till dags dato. Om mer detaljerad information skulle krävas kan saldon emellertid anges kvartalsvis. Valet av erforderlig detaljnivå avgör hur många manuella löneutdrag som måste skapas för varje arbetstagare. För ett enstaka belopp till dags dato behövs endast ett manuellt utdrag för respektive medarbetare. För att göra detta använder du hittillsvarande belopp under året till dags dato, från det slutliga löneutdraget från det tidigare systemet som det belopp som bokförs i det nya lönesystemet.
@@ -128,22 +128,22 @@ Du måste kontrollera att betalningsutdrag korrekt återspeglar lönedatan när 
 
 4. Öppna fliken **Förmånsavdrag** och ange följande:
 
-| Fält                           | Värde            |
-|---------------------------------|------------------|
-| Förmån                         | Avdragsbelopp |
-| 401K | Delta              | 3000.00          |
-| Tandvård | SubSp                  | 495.00           |
-| Utgifter för beroendevård | Delta | 2500.00          |
-| Vision | SupSp                  | 500.00           |
+|       Fält       |      Värde       |
+|-------------------|------------------|
+|      Förmån      | Avdragsbelopp |
+|       401K        |   Delta    |
+|      Tandvård       |      SubSp       |
+| Utgifter för beroendevård |   Delta    |
+|      Vision       |      SupSp       |
 
 5. I fliken **Förmånsbidrag** anger du följande:
 
-| Fält              | Värde               |
-|--------------------|---------------------|
-| Förmån            | Förmånsbelopp |
-| 401K | Delta | 3000,00             |
-| Tandvård | SubSp     | 495.00              |
-| Vision | SubSp     | 500.00              |
+|  Fält  |        Värde        |
+|---------|---------------------|
+| Förmån | Förmånsbelopp |
+|  401K   |     Delta     |
+| Tandvård  |        SubSp        |
+| Vision  |        SubSp        |
 
 6. I fliken **Skatteavdrag** anger du följande:
 
@@ -156,8 +156,8 @@ Du måste kontrollera att betalningsutdrag korrekt återspeglar lönedatan när 
 7. I fliken **Skattebidrag** anger du följande:
 
 8. Klicka på **Beräkna**.
-> [!IMPORTANT] 
-> Validera summorna i löneutdraget så att de matchar saldot till dags dato det äldre systemet för arbetstagaren. Du kanske vill avstå från att slutföra i nästa steg för att istället validera samtliga löneutdrag sammanlagt. Kör igenom alla löneutdrag och slutför dem när de väl har validerats.
+   > [!IMPORTANT] 
+   > Validera summorna i löneutdraget så att de matchar saldot till dags dato det äldre systemet för arbetstagaren. Du kanske vill avstå från att slutföra i nästa steg för att istället validera samtliga löneutdrag sammanlagt. Kör igenom alla löneutdrag och slutför dem när de väl har validerats.
 
 Samma tillvägagångssätt kan vid behov göras kvartalsvis för alla föregående kvartal under varje år. Detta behövs bara om kunden behöver visa data kvartalsvis utan att gå tillbaka till det äldre systemet.
 

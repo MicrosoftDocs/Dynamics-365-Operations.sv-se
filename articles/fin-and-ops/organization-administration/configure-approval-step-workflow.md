@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="configure-an-approval-step-in-a-workflow"></a>Konfigurera ett godkännandesteg i ett arbetsflöde
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 I det här avsnittet beskrivs hur du konfigurerar egenskaperna för ett godkännandesteg.
 
@@ -145,9 +144,9 @@ Gör på följande sätt när du vill ange vem som ska tilldelas godkännandeste
     Om användaren inte vidtar åtgärder för dokumentet inom den tilldelade tiden, är dokumentet försenat. Ett dokument som försenas eskaleras, baserat på de alternativ som du väljer i avsnittet **Eskalering** på sidan.
 4.  Om du har tilldelat godkännandesteget till flera användare eller grupper av användare, välj då ett av följande alternativ i fliken **Slutförandepolicy**:
     -   **Enskild godkännare** – Den åtgärd som tillämpas på dokumentet avgörs av den första personen som svarar. Till exempel har Sam skickat in en utgiftsrapport på 15 000 dollar. Utgiftsrapporten tilldelas för närvarande Sue, Jo och Bill. Om Sue är den första personen som svarar på dokumentet, är det hon som bestämmer vilken åtgärd som ska vidtas. Om Sue avvisar dokumentet, avslås det och skickas tillbaka till Sam. Om Sue godkänner dokumentet, skickas det vidare till Ann för godkännande. 
-    
+
     ![Arbetsflöde med en godkännandeprocess](./media/workflow_multipleusersinstep.gif)
-    
+
     -   **Majoritet av godkännare** – Den åtgärd som tillämpas på dokumentet avgörs när majoriteten av godkännarna har svarat. Till exempel har Sam skickat in en utgiftsrapport på 15 000 dollar. Utgiftsrapporten tilldelas för närvarande Sue, Jo och Bill. Om Sue och Jo är de första två godkännarna som svarar, tillämpas den åtgärd de vidtar på dokumentet.
         -   Om Sue godkänner dokumentet men Jo avvisar det, avslås dokumentet och skickas tillbaka till Sam.
         -   Om både Sue och Jo godkänner dokumentet, skickas det till Ann för godkännande.

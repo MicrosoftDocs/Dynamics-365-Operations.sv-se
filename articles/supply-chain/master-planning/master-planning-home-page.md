@@ -29,8 +29,7 @@ ms.lasthandoff: 02/13/2018
 
 # <a name="master-planning-home-page"></a>Startsida för Huvudplanering
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Det huvudplanering i grund och botten gör är att låta företag fastställa och balansera sitt framtida behov av råmaterial och sin kapacitet att uppfylla företagets mål. Huvudplanering utvärderar följande: 
 
@@ -58,6 +57,7 @@ Följande utbildningsöversikt anger de huvudsakliga koncept och uppgifter som u
 [![Utbildningsöversikt för huvudplanering](./media/master-planning-learning-map.png)](./media/master-planning-learning-map.png)
 
 ## <a name="quick-links"></a>Snabblänkar
+
 |      |   |
 |------|---|
 |        [Huvudplaner](master-plans.md)       |     [Generera en begränsad plan](./tasks/constrained-plan.md)  |

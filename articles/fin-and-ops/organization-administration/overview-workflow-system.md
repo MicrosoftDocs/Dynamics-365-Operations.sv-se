@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="workflow-overview"></a>Översikt över arbetsflöden
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Det här ämnet beskriver arbetsflödessystemet i Microsoft Dynamics 365 for Finance and Operations.
 

@@ -29,10 +29,9 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="default-order-settings-for-dimensions-and-product-variants"></a>Standardorderinställningar för dimensioner och produktvarianter
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
-
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
 Standardorderinställningar i Microsoft Dynamics 365 for Finance and Operations definierar site och lagerställe som artiklar kommer att anskaffas från eller lagras, och de minimum-, maximum-, multipla- och standardkvantiteter som ska användas för handel eller lagerhantering, ledtider, stoppflagga och orderlöftesmetod. Standardorderinställningar används när du skapar inköpsorder, försäljningsorder, överföringsorder, lagerjournaler och genom huvudplanering att skapa planerade order. Standardorderinställningar kan vara artikelspecifika, sitespecifika, produktvariantspecifika eller produktdimensionspecifika.
 

@@ -3,12 +3,12 @@ title: "Startsida för kostnadsredovisning"
 description: "Det här avsnittet innehåller en lista med hjälpavsnitt och andra resurser som är tillgängliga för kostnadsredovisningen."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 08/20/2017
+ms.date: 04/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
-ms.search.form: CAMCostControlWorkspace, CAMCostControlWorkspaceConfiguration
+ms.search.form: CAMCostControlWorkspace, CAMCostControlWorkspaceConfiguration, CAMCostAccountingLedgerAdminWorkspace
 audience: Application User
 ms.reviewer: yuyus
 ms.search.scope: Core, Operations
@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="cost-accounting-home-page"></a>Startsida för Kostnadsredovisning
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 ## <a name="learning-map"></a>Inlärningskarta 
 
@@ -37,6 +37,7 @@ Följande utbildningsöversikt anger de huvudsakliga koncept och uppgifter som u
 [![Inlärningskarta för kostnadsredovisning](./media/cost-accounting-map.png)](./media/cost-accounting-map.png)
 
 ## <a name="quick-links"></a>Snabblänkar
+
 |      |   |
 |------|---|
 |  [Konfigurera grundläggande enheter (e-utbildning)](https://mbspartner.microsoft.com/Home) (kräver CustomerSource-konto)  |[Skapa dimensioner](cost-elements.md)  |

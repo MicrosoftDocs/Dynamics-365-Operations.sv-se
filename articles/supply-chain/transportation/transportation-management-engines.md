@@ -19,17 +19,16 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b5472d69f6d0bb7a60fb417a0d1bdc3fbc6a5e18
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 813d13738171969b48d16a5ed52f2b04a8beaeef
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="transportation-management-engines"></a>Transporthanteringsmotorer
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Transporthanteringsmotorer definierar logiken som används för att generera och bearbeta transporttariffer i Transporthantering. 
 
@@ -47,7 +46,7 @@ Följande tabell visar de transporthanteringsmotorer som är tillgängliga i Mic
 | **Zonmotor**                  | Beräknar zon baserat på aktuell adress och beräknar antalet zoner som måste passeras för att resa från adress A till adress B.                                                                                                                                                                    |
 | **Fraktsedelstyp**            | Standardiserar fraktfakturan och frakträkningsraderna och används för automatisk fraktfakturamatchning.                                                                                                                                                                                                                |
 
- 
+
 <a name="what-engines-must-be-configured-to-rate-a-shipment"></a>Vilka motorer måste konfigureras att utvärdera en försändelse?
 ---------------------------------------------------
 
@@ -60,13 +59,13 @@ En transporthanteringsmotor kräver att du ställer in initieringsdata för att 
 -   Enkla konfigurationsdata.
 
 I de flesta fall kan du klicka på knappen **Parametrar** i transporthanteringsmotorns inställningsformulär för att konfigurera initieringsdatan. **Exempel på konfigurationen för en tariffmotor som refererar till en milkostnadsmotor** Följande exempel visar de inställningar som krävs för en tariffmotor som baseras på .NET-motortypen Microsoft.Dynamics.Ax.Tms.Bll.MileageRateEngine och som refererar till en milkostnadsmotor.
-| Parameter             | Beskrivning                                                                                                                                                                                                                                                                                                                                                                      |
-|-----------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| *RateBaseAssigner*    | Den .NET-typ som tolkar tariffbastilldelningsdata för ett visst schema. Syntaxen av parametervärdet består av två segment avgränsade med ett vertikalstreck (|). Det första segmentet innehåller det sammansättningsnamn som definierar assignertypen. Det andra segmentet definierar det kvalificerade namnet på assignertypen. Detta inkluderar namnområdet för typen. |
-| *MileageEngineCode*   | Kod för milkostnadsmotor som identifierar milkostnadsmotorposten i Microsoft Dynamics 365 for Finance and Operations-databasen.                                                                                                                                                                                                                                                             |
-| *ApportionmentEngine* | Kod för allmän motor som identifierar fördelningsmotorn i Microsoft Dynamics 365 for Finance and Operations-databasen.                                                                                                                                                                                                                                                              |
 
- 
+|          Parameter           |                                                                                  Beskrivning                                                                                  |
+|------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  <em>RateBaseAssigner</em>   | Den .NET-typ som tolkar tariffbastilldelningsdata för ett visst schema. Syntaxen av parametervärdet består av två segment avgränsade med ett vertikalstreck ( |
+|  <em>MileageEngineCode</em>  |                       Kod för milkostnadsmotor som identifierar milkostnadsmotorposten i Microsoft Dynamics 365 for Finance and Operations-databasen.                        |
+| <em>ApportionmentEngine</em> |                        Kod för allmän motor som identifierar fördelningsmotorn i Microsoft Dynamics 365 for Finance and Operations-databasen.                        |
+
 <a name="how-is-metadata-used-in-transportation-management-engines"></a>Hur används metadata i transportledningsmotorer?
 ----------------------------------------------------------
 
@@ -77,6 +76,7 @@ De data som du använder när du beräknar tariffer i Microsoft Dynamics 365 for
 
 ## <a name="do-all-engine-configurations-require-metadata"></a>Kräver alla motorkonfigurationer metadata?
 Nej, transporthanteringsmotorer som används för att hämta data som krävs för tariffberäkningen från externa system behöver inte metadata. Tariffdata för dessa motorer kan hämtas från externa transportföretags system, vanligen via en webbtjänst. Du kan till exempel använda en milkostnadsmotor som kan hämta data direkt från Bing-kartor, så att du inte behöver metadata för denna motor.
+
 | **Obs!**                                                                                                                                                                                                                                                                                                                                                                     |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | De transportledningsmotorer som levereras med Finance and Operations är beroende av data som hämtas från programmet. Motorer som ansluter till externa system inkluderas inte i Operations. Med den motorbaserade utvidgningsmodellen kan du dock bygga tillägg med hjälp av Microsoft Dynamics 365 for Finance and Operations Visual Studio Tools. |

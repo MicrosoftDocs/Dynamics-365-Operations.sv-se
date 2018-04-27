@@ -29,9 +29,9 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="product-information-overview"></a>Översikt över produktinformation
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
 Det här avsnittet innehåller information om hur du hanterar produktinformation. Produktinformationshantering fungerar med en delad produktdefinition, kategorisering och identifierare för alla juridiska personer och även särskilda konfigurationer för en produkt så att den passar i affärsprocesserna. 
 

@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="plan-loads-using-hub-consolidation"></a>Planera laster med hjälp av navkonsolidering
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Den här artikeln beskriver funktionen för att konsolidera försändelser i ett nav när du levererar varor från olika lagerställen till samma kund eller när du tar emot varor från flera leverantörer på samma lagerställe.
 

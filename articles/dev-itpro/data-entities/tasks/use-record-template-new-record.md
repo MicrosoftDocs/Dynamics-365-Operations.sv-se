@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="use-a-record-template-to-create-a-new-record"></a>Använd en postmall för att skapa en ny post
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Den här proceduren visar hur du använder en tidigare definierad postmall för att skapa en ny post. Innan du kan slutföra denna procedur måste du först slutföra proceduren "Skapa en postmall för en förenklad datainmatning".
 

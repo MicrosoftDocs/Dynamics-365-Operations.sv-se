@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="kanban-transfer-board-support-for-barcode-scanners"></a>Stöd för kanban-överföringstavla för streckkodsskanner
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Kanban-överföringstavlan stöder skannerindata från en widgetstreckkodsskanner för att välja, starta, slutföra och tömma ett kanban-jobb.
 
@@ -38,6 +37,7 @@ Kanban-överföringstavlan stöder skannerindata från en widgetstreckkodsskanne
 ------------------
 
 På snabbfliken **Skannerregistrering** kan du välja det registreringsläge som styr åtgärden när du skannar ett kanban-kortnummer eller skriver in numret manuellt numret i fältet för kanban-kortnumret.
+
 | Ange registreringsläge | Beskrivning                                                                                     |
 |-----------------------|-------------------------------------------------------------------------------------------------|
 | Starta                 | Registrera ett kanban-överföringsjobb som pågående.                                                 |

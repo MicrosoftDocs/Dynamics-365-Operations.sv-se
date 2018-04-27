@@ -27,8 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="import-or-manually-create-postal-codes"></a>Importera eller skapa postnummer manuellt
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Det här ämnet beskriver hur du importerar och manuellt skapar postnummer i rätt format. Det här avsnittet innehåller information om funktioner som har lagts till för Microsoft Dynamics 365 for Finance and Operations. 
 

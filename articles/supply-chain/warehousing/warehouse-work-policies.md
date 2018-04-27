@@ -20,17 +20,16 @@ ms.author: johanho
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: a0c900dc208736f1823be50e8522061406c9f126
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: c2d72509b0dc4d0cea5b4f2478ae7f8fc163e78c
 ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="warehouse-work-policies"></a>Policyer för lagerarbete
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Policyer för lagerställearbete i Microsoft Dynamics 365 for Finance and Operations styr om lagerställearbete skapas av lagerprocesser i produktionen, baserat på arbetsordertyp, lagerställe och produkt.
 
@@ -68,14 +67,15 @@ När du planerar att konfigurera en arbetspolicy för detta scenario på lagerst
 
 Här följer ett exempel på en arbetspolicy som du kan ställa in, baserat på dessa överväganden.
 
-|                                         |                                                       |
-|-----------------------------------------|-------------------------------------------------------|
-|**Namn på arbetspolicy**<br>                 |**Typer av arbetsorder**<br>                               |
-| Lagringsfri 01                    |- Lagring av färdig vara<br>                           |
-|                                         |**Platser**<br>                                      |
-|                                         |- O1   |                                               |
-|                                         |**Produkter** <br>                                      |
-|                                         |- SC1                                                  |
+
+|                                       |                                       |
+|---------------------------------------|---------------------------------------|
+| <strong>Namn på arbetspolicy</strong><br> | <strong>Typer av arbetsorder</strong><br> |
+|         Lagringsfri 01          |     - Lagring av färdig vara<br>      |
+|                                       |    <strong>Platser</strong><br>     |
+|                                       |                 - O1                  |
+|                                       |    <strong>Produkter</strong> <br>     |
+|                                       |                 - SC1                 |
 
 Följande procedurer innehåller steg-för-steg-instruktioner om hur du ställer in arbetspolicyn för lagerstället för detta scenario. En exempelinställning som visar hur du rapporterar en produktionsorder som slutförd till en plats som inte kontrolleras via registreringsskylt beskrivs också.
 
@@ -214,7 +214,7 @@ STEG (25)
 <tr>
 <td></td>
 <td>13.</td>
-<td>Klicka på Rapportera som färdigt.</td>
+<td>Klicka på Rapportera som färdig.</td>
 </tr>
 <tr>
 <td></td>

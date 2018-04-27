@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="fiscal-calendars-fiscal-years-and-periods"></a>Räkenskapskalendrar, räkenskapsår och perioder
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Det här avsnittet behandlar räkenskapskalendrar, räkenskapsår och perioder och hur du använder dem för juridiska personer, anläggningstillgångar och budgetering.
 

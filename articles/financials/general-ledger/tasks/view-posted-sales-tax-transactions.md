@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="view-posted-sales-tax-transactions"></a>Visa bokförda momstransaktioner
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Du kan visa bokförda momstransaktioner från olika sidor beroende på vad du behöver visa. I den här uppgiften används demonstrationsföretaget USMF.
 

@@ -28,8 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="income-statement-financial-report"></a>Resultaträkning
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Den här artikeln beskriver standardrapporten för inkomstredovisning. Här beskrivs också de byggstenar som associeras med den här rapporten. 
 
@@ -60,7 +59,7 @@ Dessa kolumndefinitioner innehåller olika typer av kolumner för att tillhandah
     -   **FD** – ekonomiska data för den aktuella perioden
     -   **FD** – ekonomiska data hittills i år
 
- 
+
 
 <a name="see-also"></a>Se även
 --------

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="maintain-financial-dimension-default-templates"></a>Underhåll standardmallar för ekonomisk dimension
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 Den här proceduren visar hur du ställer in standardmallar för ekonomiska dimensioner. Mallarna kan användas för att snabbt fördela belopp på källdokument.
 

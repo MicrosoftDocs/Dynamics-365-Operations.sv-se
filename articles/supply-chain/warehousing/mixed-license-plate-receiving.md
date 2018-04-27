@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="mixed-license-plate-receiving"></a>Inleverans av blandad registreringsskylt
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Mottagning av blandade registreringsskyltar låter dig skapa en registreringsskylt som består av flera artiklar innan du registrerar och skapar arbetsuppgifter med plats. 
 

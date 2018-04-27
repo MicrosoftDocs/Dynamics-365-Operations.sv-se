@@ -1,9 +1,9 @@
 ---
 title: Lagerjournaler.
-description: "Det här avsnittet ger en beskrivning av hur du kan använda lagerjournaler för att bokföra olika typer av fysiska lagertransaktioner."
-author: MarkusFogelberg
+description: "Det här ämnet ger en beskrivning av hur du kan använda lagerjournaler för att bokföra olika typer av fysiska lagertransaktioner."
+author: perlynne
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 04/05/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,21 +19,20 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 968bf9a243d0c0cc9f0dfec474cb207ca32f9eeb
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 7e6ac46cc4d4961cdd76f6127d8900a9b3d13a39
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="inventory-journals"></a>Lagerjournaler.
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
-
-Det här avsnittet ger en beskrivning av hur du kan använda lagerjournaler för att bokföra olika typer av fysiska lagertransaktioner.
+Det här ämnet ger en beskrivning av hur du kan använda lagerjournaler för att bokföra olika typer av fysiska lagertransaktioner.
 
 Lagerjournalerna i Microsoft Dynamics 365 for Finance and Operations används för att bokföra fysiska lagertransaktioner av olika typer, till exempel bokföringen av problem och kvitton, lagerrörelser, genereringen av strukturlistor (BOM) och avstämningen av fysiskt lager. Alla dessa lagerjournaler används på liknande sätt, men de delas in i olika typer.
 
@@ -51,7 +50,7 @@ Följande typer av lagerjournal finns:
 
 ### <a name="movement"></a>Rörelse
 
-När du använder en lagerflyttningsjournal kan du lägga till kostnad för en artikel när du lägger till lagret, men du måste manuellt allokera merkostnaden till ett visst redovisningskonto genom att ange ett redovisningsmotkonto när du skapar journalen. Den här lagerjournaltypen är användbar om du vill skapa en utgift för en artikel mot en annan avdelning, eller om du vill ta bort artiklar från lager för utgiftsändamål.
+När du använder en lagerflyttningsjournal kan du lägga till kostnad för en artikel när du lägger till lagret, men du måste manuellt allokera merkostnaden till ett visst redovisningskonto genom att ange ett redovisningsmotkonto när du skapar journalen. Den här lagerjournaltypen är användbart om du vill skriva över standardbokföringskontona.
 
 ### <a name="inventory-adjustment"></a>Lagerjustering
 
@@ -95,4 +94,30 @@ En journal kan endast öppnas av en användare åt gången. Om flera användare 
 
 ## <a name="posting-journal-lines"></a>Bokföringsjournalrader
 Du kan bokföra journalraderna som du skapar när som helst, tills du har låst en artikel från ytterligare transaktioner. Data som du anger i en journal finns kvar i journalen även om du stänger den utan att bokföra raderna.
+
+## <a name="data-entity-support-for-inventory-journals"></a>Dataenhetsstöd för lagerjournaler
+
+Dataenheter stöder följande typer av integrationsscenarier:
+-    Synkron service (OData)
+-  Asynkron integration
+
+Mer information finns i [Dataenheter](../../dev-itpro/data-entities/data-entities.md).
+
+> [!NOTE]
+> Alla lagerjournaler är inte OData-aktiverade, därför kan du inte använda Excel-dataanslutning för att hämta data som publiceras, uppdateras och importeras tillbaka till Dynamics 365 for Finance and Operations. 
+
+En annan skillnad mellan journaldataenheter är möjligheten att använda sammansatta enheter som innehåller både rubrik- och radinformation. För närvarande kan du använda de sammansatta enheterna för:
+-   Lagerjusteringsjournal
+-   Lagerrörelsejournal
+
+Dessa två lagerjournaler stöder endast scenariot *initiera lager* som en del av ett datahanteringsimportprojekt:
+-  När ett journalrubriknummer inte har angetts, men en nummerserie har angetts för journaltypen skapar automatiskt importjobbet journalrubriker per 1000 rader. Till exempel medför import av 2020 rader följande tre journalrubriker
+    -  Rubrik 1: innehåller 1000 rader
+    -  Rubrik 2: innehåller 1000 rader
+    -  Rubrik 3: innehåller 20 rader
+-  Det antas att det finns en unik radinformationen per lagerdimension som kan vara produkt-, lagrings- och spårningsdimension. Därför går det inte att importera journalrader där ett datumfält skiljer sig på raderna i samma importprojekt.
+
+## <a name="additional-resources"></a>Ytterligare resurser
+
+[Datatabeller](../../dev-itpro/data-entities/data-entities.md)
 

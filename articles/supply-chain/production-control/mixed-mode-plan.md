@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="mixed-mode-planning---combine-discrete-process-and-lean-sourcing"></a>Blandad planering - Kombinera diskret, process- och lean-försörjning
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Detta ämne innehåller information om läget för blandad planering. I läget för blandad planering kan du utforma din leveranskedja baserat på materialflödet. Microsoft Dynamics 365 for Finance and Operations ser till att materialflödet följer dina modeller, oavsett vald leveranspolicy (kanban, produktionsorder, inköpsorder, batchorder eller överföringsorder). 
 

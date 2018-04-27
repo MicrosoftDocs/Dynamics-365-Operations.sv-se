@@ -17,15 +17,16 @@ ms.author: mkirknel
 ms.search.validFrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 7265e119a8b59399db1fa35373a7b6aba52ba8e0
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 325cf12345afcf531181f65a41d0e5262798c14f
 ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="onboard-vendors"></a>Integrera leverantörer
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
+
 ---
 
 Nya leverantörer kan integreras och registreras som leverantörer i Microsoft Dynamics 365 for Finance and Operations baserat på information som samlas in från någon som representerar leverantören.
@@ -164,13 +165,15 @@ Olika status för en registreringsbegäran för en potentiell leverantör ger en
 
 Genom att tillämpa åtgärden **Ta bort** på registreringsbegäran för en potentiell leverantör kan du rensa och ta bort den uppsättning poster som har skapats, samt även inaktivera användarkontot. Resultatet av åtgärden **Ta bort** varierar beroende på statusen för registreringsbegäran för potentiell leverantör enligt följande tabell.
 
-| Status                   | Statusbeskrivning | Resultat av åtgärden Ta bort |
-|--------------------------|--------------------|-----------------------------------|
-| Ny                      | Inga åtgärder har vidtagits på begäran. | Registreringsbegäran för potentiell leverantör tas bort. |
-| Begärd användare           | När du väljer **Bjud in användare** ändras statusen till **Användarförfrågan**, och en begäran om potentiell användare skapas och skickas till ett arbetsflöde för användare. | Du kan inte radera en registreringsbegäran med denna status för en potentiell användare eftersom arbetsflödet inte har avslutats. |
-| Inbjuden användare             | Arbetsflödet för användarbegäran godkänns, och användaren skapas. | En begäran om att inaktivera användaren skapas, och registreringsbegäran för potentiell leverantör tas bort. |
-| Registrering pågår | Den nya användaren har loggat in och har startat registreringsguiden för leverantör. | En begäran om att inaktivera användaren skapas, och registreringsbegäran för potentiell leverantör och de data som angavs i registreringsguiden för leverantör tas bort. |
-| Leverantörsförfrågan har skapats   | Registreringsguiden för leverantör har slutförts. | En begäran om att inaktivera användaren skapas, och registreringsbegäran för potentiell leverantör, de data som angavs i registreringsguiden för leverantör samt leverantörsbegäran tas bort.<blockquote>[!NOTE]<br>Du kan inte använda åtgärden **Ta bort** när leverantörsförfrågan befinner sig i en granskningsprocess i arbetsflödet.</blockquote> |
-| Godkänt                 | Leverantörsförfrågan godkänns. | Begäran om registrering av potentiell leverantör, de data som angavs i registreringsguiden för leverantör samt leverantörsförfrågan tas bort. |
-| Avvisat                 | Leverantörsförfrågan avvisas. | Begäran om registrering av potentiell leverantör, de data som angavs i registreringsguiden för leverantör samt leverantörsförfrågan tas bort. |
+
+|          Status          |                                                                                     Statusbeskrivning                                                                                      |                                                                                                                                                            Resultat av åtgärden Ta bort                                                                                                                                                             |
+|--------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|           Ny            |                                                                         Inga åtgärder har vidtagits på begäran.                                                                          |                                                                                                                                              Registreringsbegäran för potentiell leverantör tas bort.                                                                                                                                               |
+|      Begärd användare      | När du väljer <strong>Bjud in användare</strong> ändras statusen till <strong>Användarförfrågan</strong>, och en begäran om potentiell användare skapas och skickas till ett arbetsflöde för användare. |                                                                                                          Du kan inte radera en registreringsbegäran med denna status för en potentiell användare eftersom arbetsflödet inte har avslutats.                                                                                                          |
+|       Inbjuden användare       |                                                               Arbetsflödet för användarbegäran godkänns, och användaren skapas.                                                               |                                                                                                                      En begäran om att inaktivera användaren skapas, och registreringsbegäran för potentiell leverantör tas bort.                                                                                                                      |
+| Registrering pågår |                                                         Den nya användaren har loggat in och har startat registreringsguiden för leverantör.                                                          |                                                                                     En begäran om att inaktivera användaren skapas, och registreringsbegäran för potentiell leverantör och de data som angavs i registreringsguiden för leverantör tas bort.                                                                                      |
+|  Leverantörsförfrågan har skapats  |                                                                     Registreringsguiden för leverantör har slutförts.                                                                      | En begäran om att inaktivera användaren skapas, och registreringsbegäran för potentiell leverantör, de data som angavs i registreringsguiden för leverantör samt leverantörsbegäran tas bort.<blockquote>[!NOTE]<br>Du kan inte använda åtgärden <strong>Ta bort</strong> när leverantörsförfrågan befinner sig i en granskningsprocess i arbetsflödet.</blockquote> |
+|         Godkänt         |                                                                               Leverantörsförfrågan godkänns.                                                                               |                                                                                                   Begäran om registrering av potentiell leverantör, de data som angavs i registreringsguiden för leverantör samt leverantörsförfrågan tas bort.                                                                                                    |
+|         Avvisat         |                                                                               Leverantörsförfrågan avvisas.                                                                               |                                                                                                   Begäran om registrering av potentiell leverantör, de data som angavs i registreringsguiden för leverantör samt leverantörsförfrågan tas bort.                                                                                                    |
+
 

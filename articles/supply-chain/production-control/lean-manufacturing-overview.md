@@ -29,8 +29,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="lean-manufacturing-overview"></a>Lean manufacturing – översikt
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denna artikel ger en översikt och beskrivning av lean manufacturing-funktioner i Microsoft Dynamics 365 for Finance and Operations.
 
@@ -40,6 +39,7 @@ Lean manufacturing erbjuder verktyg som du kan använda för att modellera resur
 -   Övervaka och underhåll kanban-jobb.
 
 Lean manufacturing-arkitekturen i Finance and Operations består av produktionsflöden, aktiviteter och kanban-regler. Dessa strukturer är helt integrerade med processerna i Finance and Operations. Du kan använda lean manufacturing i en tillverkningsmiljö för blandat läge som kombinerar olika leverans-, produktion- och sourcing-strategier. Dessa strategier inkluderar tillverkningsorder, batchorder för processbranscher, inköpsorder och överföringsorder.
+
 | **Viktigt**                                                                                                                                                                                                                                                                |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Du kan använda Finance and Operations för att stödja implementeringen av lean manufacturing med kanban. En lyckad implementering av resurssnåla principer beror dock på vilka interna affärsprocesser du använder, och på själva produktionsvillkoren och produktionsmiljön. |

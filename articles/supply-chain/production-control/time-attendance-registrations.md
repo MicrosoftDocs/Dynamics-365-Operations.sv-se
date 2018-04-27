@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="time-and-attendance-registration"></a>Tid- och närvaroregistrering
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Tidsregistreringsarbetare kan ange olika typer av tidregistreringar, till exempel stämpla in, stämpla ut, registrera indirekta aktiviteter och frånvaroregistrering. Det här ämnet beskriver registreringar, deras beräkning, godkännande och användning av arbetsflöde för att lägga till strukturen och godkännande automatiskt till processen för godkännande av tidrapporter. 
 
@@ -95,7 +94,7 @@ Du kan ställa in en godkännandeprocess för arbetsflöde som automatiskt godk�
 | Totalt antal dagars tid och närvaro            | Arbetsflödet valideras mot registreringar, till exempel det förväntade antalet arbetstimmar för dagen. |                                                                                                                                                                                                                                                       |
 | Journalregistreringar för tid och närvaro | Arbetsflödet validerar registreringstypen för varje datum för registreringen.                           | Tid och närvaro •, Instämpling •, Utstämpling •, Frånvaro •, Rast •, Växlingskod •, Projekt •, Projektaktivitet •, Indirekta aktivitetproduktionsjobb •, Kö före •, Inställningar •, Bearbeta •, Överlappa •, Transport •, Kö efter •, Starta hjälpen •, Stoppa hjälpen |
 
- 
+
 
 ## <a name="transferring-approved-registrations"></a>Överför godkända registreringar.
 Efter godkännande av registreringarna kan du överföra dem till ett periodiskt lönelistejobb. En överförd registrering bokförs på en aktivitet eller ett jobb som den kopplas till, till exempel en produktionsorder eller ett projekt. Lönetransaktioner skapas för varje arbetare baserat på registreringarna.  

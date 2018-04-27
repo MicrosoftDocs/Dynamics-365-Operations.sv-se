@@ -27,8 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="best-practices-for-importing-vouchers-using-the-general-journal-entity"></a>Regelverk för att importera verifikationer med hjälp av enheten Allmän journal
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Det här ämnet innehåller tips för import av data till den allmänna journalen med hjälp av enheten Allmän journal.  
 

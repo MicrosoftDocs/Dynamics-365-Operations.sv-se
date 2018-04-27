@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="resource-capabilities"></a>Resurskunskaper
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Det här avsnittet innehåller information om resurskapaciteter. En kapacitet är möjligheten hos en verksamhetsresurs att utföra en viss aktivitet. Det här avsnittet ger en beskrivning av hur kapaciteter och relaterade koncept såsom kompetensnivå och prioritet kan används för att välja lämpliga resurser för en aktivitet.
 

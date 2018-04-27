@@ -26,7 +26,7 @@ ms.lasthandoff: 03/13/2018
 
 # <a name="view-an-expense-report"></a>Visa en utgiftsrapport
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 När du kör en fråga för att visa transaktioner i redovisningen eller anskaffning och källa kan frågan returnera alltför mycket information. Därför kanske du vill begränsa sökningen. För att få den information du behöver kan du rulla ned till en transaktion för att se utgiftsrapporten den visades på.
 

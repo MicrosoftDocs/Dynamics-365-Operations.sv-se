@@ -29,8 +29,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="product-related-translations-faq"></a>Vanliga frågor för produktrelaterade översättningar
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 I det här avsnittet beskrivs hur du hanterar översättningar för produkter, produktdimensionvärden och produktattribut. 
 
@@ -95,8 +94,7 @@ En kund vill köpa några små röda t-shirts och namnet på t-shirten måste vi
 <tbody>
 <tr class="odd">
 <td>Om du vill ange önskat språk för en kund, följ dessa steg:
-<ol>  
-<li>Klicka på <strong>Försäljning och marknadsföring</strong> &gt; <strong>Allmänt</strong> &gt; <strong>Kunder</strong> &gt; <strong>Alla</strong> <strong>kunder</strong>.</li>
+<ol><br/><li>Klicka på <strong>Försäljning och marknadsföring</strong> &gt; <strong>Allmänt</strong> &gt; <strong>Kunder</strong> &gt; <strong>Alla</strong> <strong>kunder</strong>.</li>
 <li>Dubbelklicka på en kund för att öppna sidan <strong>Customers</strong>. På fliken <strong>Allmänt</strong>, i fältet <strong>Språk</strong> väljer du <strong>språk</strong>.</li>
 </ol></td>
 </tr>

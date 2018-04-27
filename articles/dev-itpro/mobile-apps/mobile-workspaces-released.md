@@ -25,7 +25,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="mobile-workspaces"></a>Mobila arbetsytor
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Detta avsnitt visar de mobila arbetsytor som är tillgängliga för användning med mobilappen Dynamics 365 for Unified Operations.
 

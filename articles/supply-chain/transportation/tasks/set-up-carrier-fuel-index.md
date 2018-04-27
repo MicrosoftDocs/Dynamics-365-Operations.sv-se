@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-a-carrier-fuel-index"></a>Ställ in bränsleindex för transportföretag
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 I den här handboken visas hur du skapar en bränsleindexregion, ett bränsleindex och ett transportföretags bränsleindex. Bränsleindexregionen anger vilken region som bränsleindexet ska gälla för och bränsleindexet anger ett bränslepris för en viss tidsperiod. För att återspegla ändringen i bränslepriser över tid kan du associera flera bränsleindex med en transportör.  Dessa uppgifter utförs normalt av en transportkoordinator. Du kan använda den här proceduren i demonstrationsdataföretaget USMF eller använda dina egna data.
 

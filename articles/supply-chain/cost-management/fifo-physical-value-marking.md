@@ -29,10 +29,9 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="fifo-with-physical-value-and-marking"></a>FIFO med fysiskt värde och markering
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
-[!include[retail name](../includes/retail-name.md)]
-
+[!INCLUDE [retail name](../includes/retail-name.md)]
 
 Först in, först ut (FIFO) är en lagermodell där de första (äldsta) inleveranserna utlevereras först. Ekonomiskt uppdaterade utleveranser från lagret kvittas mot de första ekonomiskt uppdaterade inleveranserna i lagret baserat på lagertransaktionens ekonomiska datum. 
 
@@ -60,16 +59,16 @@ Det nya löpande medelvärdet för självkostnaden återspeglar medelvärdet fö
 
 **Förklaringar till bilden**
 
--   Lagertransaktioner visas som lodräta pilar.
--   Inleveranser till lagret visas som lodräta pilar ovanför tidslinjen.
--   Utleveranser från lagret visas som lodräta pilar under tidslinjen.
--   Ovanför (eller under) respektive lodrät pil anges värdet på lagertransaktionen i formatet Quantity@Unitprice.
--   Ett lagertransaktionsvärde inom parentes anger att lagertransaktionen har bokförts fysiskt i lagret.
--   Ett lagertransaktionsvärde som inte är inom parentes anger att lagertransaktionen har bokförts finansiellt i lagret.
--   Varje ny inleverans- eller utleveranstransaktion betecknas av en ny etikett.
--   Varje lodrät pil har en etikett med ett ordnings-ID, till exempel *1a*. Dessa ID:n anger ordningen på lagertransaktionsbokningarna utmed tidslinjen.
--   Lagerstängningar visas som en röd lodrät streckad linje och etiketten *Lagerstängning*.
--   Kvittningar som utförs av en lagerstängning visas som prickade röda pilar som löper diagonalt från en inleverans till en utleverans.
+- Lagertransaktioner visas som lodräta pilar.
+- Inleveranser till lagret visas som lodräta pilar ovanför tidslinjen.
+- Utleveranser från lagret visas som lodräta pilar under tidslinjen.
+- Ovanför (eller under) respektive lodrät pil anges värdet på lagertransaktionen i formatet Quantity@Unitprice.
+- Ett lagertransaktionsvärde inom parentes anger att lagertransaktionen har bokförts fysiskt i lagret.
+- Ett lagertransaktionsvärde som inte är inom parentes anger att lagertransaktionen har bokförts finansiellt i lagret.
+- Varje ny inleverans- eller utleveranstransaktion betecknas av en ny etikett.
+- Varje lodrät pil har en etikett med ett ordnings-ID, till exempel *1a*. Dessa ID:n anger ordningen på lagertransaktionsbokningarna utmed tidslinjen.
+- Lagerstängningar visas som en röd lodrät streckad linje och etiketten *Lagerstängning*.
+- Kvittningar som utförs av en lagerstängning visas som prickade röda pilar som löper diagonalt från en inleverans till en utleverans.
 
 ## <a name="fifo-with-the-include-physical-value-option"></a>FIFO med alternativet Inkludera fysiskt värde
 Om kryssrutan **Inkludera fysiskt värde** markeras för en artikel på sidan **Artikelmodellgrupp** använder systemet både fysiska och ekonomiska inleveranstransaktioner vid beräkning av löpande genomsnittlig självkostnad. Där det går görs också justeringar av den fysiskt uppdaterade inleveranstransaktionen. Om kryssrutan **Inkludera fysiskt värde** avmarkeras skapar lagerstängningen med FIFO-lagermodellen kvittningar enbart för transaktioner som är ekonomiskt uppdaterade. Illustrationen som följer visar dessa transaktioner:
@@ -90,16 +89,16 @@ Transaktion 5b kvittas mot inleveranstransaktion 1b. En negativ justering på 11
 
 **Förklaringar till bilden**
 
--   Lagertransaktioner visas som lodräta pilar.
--   Inleveranser till lagret visas som lodräta pilar ovanför tidslinjen.
--   Utleveranser från lagret visas som lodräta pilar under tidslinjen.
--   Ovanför (eller under) respektive lodrät pil anges värdet på lagertransaktionen i formatet Quantity@Unitprice.
--   Ett lagertransaktionsvärde inom parentes anger att lagertransaktionen har bokförts fysiskt i lagret.
--   Ett lagertransaktionsvärde som inte är inom parentes anger att lagertransaktionen har bokförts finansiellt i lagret.
--   Varje ny inleverans- eller utleveranstransaktion betecknas av en ny etikett.
--   Varje lodrät pil har en etikett med ett ordnings-ID, till exempel *1a*. Dessa ID:n anger ordningen på lagertransaktionsbokningarna utmed tidslinjen.
--   Lagerstängningar visas som en röd lodrät streckad linje och etiketten *Lagerstängning*.
--   Kvittningar som utförs av en lagerstängning visas som prickade röda pilar som löper diagonalt från en inleverans till en utleverans.
+- Lagertransaktioner visas som lodräta pilar.
+- Inleveranser till lagret visas som lodräta pilar ovanför tidslinjen.
+- Utleveranser från lagret visas som lodräta pilar under tidslinjen.
+- Ovanför (eller under) respektive lodrät pil anges värdet på lagertransaktionen i formatet Quantity@Unitprice.
+- Ett lagertransaktionsvärde inom parentes anger att lagertransaktionen har bokförts fysiskt i lagret.
+- Ett lagertransaktionsvärde som inte är inom parentes anger att lagertransaktionen har bokförts finansiellt i lagret.
+- Varje ny inleverans- eller utleveranstransaktion betecknas av en ny etikett.
+- Varje lodrät pil har en etikett med ett ordnings-ID, till exempel *1a*. Dessa ID:n anger ordningen på lagertransaktionsbokningarna utmed tidslinjen.
+- Lagerstängningar visas som en röd lodrät streckad linje och etiketten *Lagerstängning*.
+- Kvittningar som utförs av en lagerstängning visas som prickade röda pilar som löper diagonalt från en inleverans till en utleverans.
 
 ## <a name="fifo-with-marking"></a>FIFO med länkning
 Märkning är en process som gör det möjligt att länka, eller markera, en utleveranstransaktion till en inleveranstransaktion. Länkning kan göras antingen före eller efter att en transaktion bokförs. Du kan använda länkning när du vill vara säker på den exakta kostnaden för lagret när transaktionen bokförs eller när lagerstängningen utförs. Din kundtjänstavdelning har till exempel accepterat en snabborder från en viktig kund. Eftersom det är en snabborder måste du betala mer för den här artikeln för att kunna tillgodose kundens krav. Du måste vara säker på att kostnaden för den här lagerartikeln återspeglas i marginalen, eller kostnaderna för sålda varor (KSV), för den här försäljningsorderfakturan. När inköpsordern bokförs inlevereras lagret till en kostnad på 1200,000 kronor. Om detta försäljningsorderdokument länkas till inköpsordern innan följesedeln eller fakturan bokförs, blir kostnaden för sålda varor 1200,00 kronor i stället för den aktuella löpande genomsnittliga kostnaden för artikeln. Om försäljningsorderns följesedel eller fakturan bokförs innan markeringen görs, bokförs kostnaden för sålda varor till den löpande genomsnittliga självkostnaden. Innan lagerstängningen utförs kan dessa två transaktioner fortfarande länkas till varandra. När en inleveranstransaktion matchar en utleveranstransaktion ignoreras den definierade värderingsmetod för artikelmodellgruppen, och systemet kvittar dessa transaktioner mot varandra. Du kan markera ett problem transaktion till en inleverans innan en transaktion bokförs. Du kan göra detta från en försäljningsorderrad på sidan **Försäljningsorderdetaljer**. Du kan visa de öppna inleveranstransaktionerna på sidan **Markering**. Du kan också markera ett problem transaktion till en inleverans efter en transaktion bokförs. Du kan matcha eller markera en utleveranstransaktion för en öppen inleveranstransaktion för en inventerad artikel från en bokförd lagerjusteringsjournal. Illustrationen som följer visar dessa transaktioner:
@@ -120,16 +119,16 @@ Den nya löpande genomsnittliga självkostnaden återspeglar genomsnittet av eko
 
 **Förklaringar till bilden**
 
--   Lagertransaktioner visas som lodräta pilar.
--   Inleveranser till lagret visas som lodräta pilar ovanför tidslinjen.
--   Utleveranser från lagret visas som lodräta pilar under tidslinjen.
--   Ovanför (eller under) respektive lodrät pil anges värdet på lagertransaktionen i formatet Quantity@Unitprice.
--   Ett lagertransaktionsvärde inom parentes anger att lagertransaktionen har bokförts fysiskt i lagret.
--   Ett lagertransaktionsvärde som inte är inom parentes anger att lagertransaktionen har bokförts finansiellt i lagret.
--   Varje ny inleverans- eller utleveranstransaktion betecknas av en ny etikett.
--   Varje lodrät pil har en etikett med ett ordnings-ID, till exempel *1a*. Dessa ID:n anger ordningen på lagertransaktionsbokningarna utmed tidslinjen.
--   Lagerstängningar visas som en röd lodrät streckad linje och etiketten *Lagerstängning*.
--   Kvittningar som utförs av en lagerstängning visas som prickade röda pilar som löper diagonalt från en inleverans till en utleverans.
+- Lagertransaktioner visas som lodräta pilar.
+- Inleveranser till lagret visas som lodräta pilar ovanför tidslinjen.
+- Utleveranser från lagret visas som lodräta pilar under tidslinjen.
+- Ovanför (eller under) respektive lodrät pil anges värdet på lagertransaktionen i formatet Quantity@Unitprice.
+- Ett lagertransaktionsvärde inom parentes anger att lagertransaktionen har bokförts fysiskt i lagret.
+- Ett lagertransaktionsvärde som inte är inom parentes anger att lagertransaktionen har bokförts finansiellt i lagret.
+- Varje ny inleverans- eller utleveranstransaktion betecknas av en ny etikett.
+- Varje lodrät pil har en etikett med ett ordnings-ID, till exempel *1a*. Dessa ID:n anger ordningen på lagertransaktionsbokningarna utmed tidslinjen.
+- Lagerstängningar visas som en röd lodrät streckad linje och etiketten *Lagerstängning*.
+- Kvittningar som utförs av en lagerstängning visas som prickade röda pilar som löper diagonalt från en inleverans till en utleverans.
 
 
 

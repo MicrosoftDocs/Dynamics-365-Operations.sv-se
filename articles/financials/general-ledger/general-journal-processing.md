@@ -28,8 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="general-journal-processing"></a>Hantering av redovisningsjournaler
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Det här avsnittet innehåller en beskrivning av de funktioner i Microsoft Dynamics 365 for Finance and Operations som kan underlätta processen för allmänna journaler, och som även kan göra det enklare att garantera att rätt data hämtas in samt att interna kontroller inte påverkas.  
 

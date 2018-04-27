@@ -27,13 +27,14 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="configure-an-online-store"></a>Konfigurera en onlinebutik
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Denna artikel innehåller länkar till avsnitt som hjälper dig att centralt konfigurera och hantera en onlinebutik.
 
 Avsnitten nedan hjälper dig att konfigurera butikskomponenter och onlinebutiken i klienten.
 
 ## <a name="configure-an-online-store"></a>Konfigurera en onlinebutik
+
 | Uppgift                                                | Detaljer                                                                                                                                                                                                                                                                                                                                                   | Ämnen                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 |-----------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Konfigurera handelskomponenter.                        | Skapa och underhåll information för detaljhandeln. Denna information omfattar butiker, skatter, produkter, presentkort, kampanjer och rabatter.                                                                                                                                                                                                          | [Skapa och underhålla butik](https://technet.microsoft.com/en-us/library/hh597201.aspx) (TechNet-innehåll för Microsoft Dynamics AX 2012)                                                                                                                                                                                                                                                                                          |
@@ -43,6 +44,7 @@ Avsnitten nedan hjälper dig att konfigurera butikskomponenter och onlinebutiken
 | Mappa attribut och lägg till metadata.                   | Välj de alternativ som anger hur attributen för respektive kategori eller kanalprodukt ska fungera i nätbutiken på Microsoft SharePoint-webbplatsen.                                                                                                                                                                                              | [Skapa en nätbutik](https://technet.microsoft.com/en-us/library/jj682095.aspx) (TechNet-innehåll för AX 2012)                                                                                                                                                                                                                                                                                                     |
 
 ## <a name="configure-online-store-products"></a>Konfigurera produkter för nätbutik
+
 | Uppgift                                 | Detaljer                                                                                                                                           | Ämnen                                                                                                                                                                                                                                                                            |
 |--------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Lägg till sortiment i nätbutiken. | Lägg till de sortiment som innehåller de produkter som du erbjuder i nätbutiken.                                                                  | [Skapa en nätbutik](https://technet.microsoft.com/en-us/library/jj682095.aspx) (TechNet-innehåll för AX 2012)                                                                                                                                              |
@@ -53,11 +55,12 @@ Avsnitten nedan hjälper dig att konfigurera butikskomponenter och onlinebutiken
 | Hantera leveranssätt.            | Hantera de leveranslägen som är tillgängliga i nätbutiken.                                                                                        | [Ange leveranssätt](https://technet.microsoft.com/en-us/library/jj728719.aspx) (TechNet-innehåll för AX 2012)                                                                                                                                            |
 
 ## <a name="set-up-data-exchange-between-microsoft-dynamics-365-for-retail-and-the-online-store"></a>Ställ in utbyte av data mellan Microsoft Dynamics 365 for Retail och nätbutiken
+
 | Uppgift                                 | Detaljer                                                                                                                               | Ämnen                                                                                                                                                                                                                                                                                  |
 |--------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Ställ in profiler för kanalintegration. | Profiler gör att komponenterna inom Butik kan kommunicera med varandra. Skapa profiler innan du konfigurerar inställningar för utbyte av data. | [Skapa en serviceprofil för realtid](https://technet.microsoft.com/en-us/library/hh580631.aspx) (TechNet-innehåll för AX 2012) [Skapa en kanalprofil](https://technet.microsoft.com/en-us/library/jj677402.aspx) (TechNet-innehåll för AX 2012) |
 
- 
+
 
 
 

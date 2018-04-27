@@ -19,17 +19,16 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 6426f208a51ffbf72c6faa8cb281aba2984052d7
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 0164d64b8c37c19a3b8b13970dbda5927073eca8
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="view-and-export-field-descriptions"></a>Visa och exportera fältbeskrivningar
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Den här artikeln innehåller en beskrivning av hur du visar fältbeskrivningar och hur du använder sidan Fältbeskrivningar vid export av beskrivningar.
 
@@ -77,7 +76,7 @@ Det finns flera sätt att söka efter en sida i fältet **Välj en sida**. I må
     -   Om det finns fler än en exakt matchning visas inga beskrivningar. Du måste öppna listrutan och välja sida.
     -   Om namnet du angav är en del av namnet på en annan sida ser du beskrivningarna av sidan. Om du öppnar listrutan kan du se ytterligare sidor som innehåller det aktuella namnet.
 
-Inga beskrivningar visas om du exempelvis skriver **Inventering** i fältet ****Välj en sida****. Om du öppnar listrutan och ser du att det finns två sidor med namnet **Inventering** och flera sidor som innehåller ordet "Inventering". Om du väljer sidan med AOT-namnet **InventJournalCount** visas fältbeskrivningarna för den sidan. Om du öppnar listrutan igen ser du att listan nu innehåller alla sidor som har "InventJournalCount" som en del i AOT-sidans namn.
+Inga beskrivningar visas om du exempelvis skriver <strong>Inventering</strong> i fältet *<strong><em>Välj en sida</em></strong>*. Om du öppnar listrutan och ser du att det finns två sidor med namnet <strong>Inventering</strong> och flera sidor som innehåller ordet "Inventering". Om du väljer sidan med AOT-namnet <strong>InventJournalCount</strong> visas fältbeskrivningarna för den sidan. Om du öppnar listrutan igen ser du att listan nu innehåller alla sidor som har "InventJournalCount" som en del i AOT-sidans namn.
 
 ## <a name="troubleshooting"></a>Felsökning
 Det här avsnittet innehåller information som hjälper dig att felsöka problem som kan uppstå när du använder fältbeskrivningar.

@@ -29,8 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="manage-standard-cost-updates"></a>Hantera standardkostnadsuppdateringar
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Uppdateringar för standardkostnadsdata kan hanteras genom att använda två olika sätt - med en version eller två versioner. 
 
