@@ -20,16 +20,16 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: d9b61e545067db592545d5fbce7b4315c51a8bf8
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: a4cfd017fe10bbda6eda0e3a9a045e0832b08753
 ms.contentlocale: sv-se
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="formula-designer"></a>Receptdesigner
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Det här avsnittet beskriver hur du använder formeldesignern för att analysera och underhålla formler i en trädvy.
 
@@ -88,7 +88,7 @@ Filtret som används för formeln och flödet visas i formeldesignerns rubrik. D
 </tr>
 <tr class="odd">
 <td>Från-kvantitet</td>
-<td>Filtrera versionerna genom att välja från en viss "från"-kvantitet. Om du ställer in ett värde kan en annan formel och andra flödesversioner markeras.</td>
+<td>Filtrera versionerna genom att välja från en viss &quot;från&quot;-kvantitet. Om du ställer in ett värde kan en annan formel och andra flödesversioner markeras.</td>
 </tr>
 <tr class="even">
 <td>Visa bara giltiga</td>
@@ -116,8 +116,10 @@ Använd funktionerna **Strukturlisterader** eller **Formel** för att ändra for
 ## <a name="configuring-the-tree-view"></a>Konfigurera trädvy
 Klicka på **Inställningar** om du vill anpassa informationen som visas i trädvyn för formeldesignern.
 
-| Fältgrupp | beskrivning |
-|-------------|-------------|
-| Strukturlista         | Använd kryssrutorna för att välja de kriterier som visas i trädstrukturen. I formeldesignern visas det valda villkoret längst ned på båda flikarna. |
-| Flöde       | Använd kryssrutorna för att välja de kriterier som visas för flödena. |
+
+| Fältgrupp |                                                                          beskrivning                                                                          |
+|-------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|     Strukturlista     | Använd kryssrutorna för att välja de kriterier som visas i trädstrukturen. I formeldesignern visas det valda villkoret längst ned på båda flikarna. |
+|    Flöde    |                                           Använd kryssrutorna för att välja de kriterier som visas för flödena.                                           |
+
 

@@ -3,7 +3,7 @@ title: "Äldre funktioner"
 description: "I det här avsnittet beskrivs funktioner som har tagits bort, eller har planerats för borttagning."
 author: sericks007
 manager: AnnBe
-ms.date: 02/05/2018
+ms.date: 03/22/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,16 +18,16 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 0618d71fdb4b29bfdacd6b9e1a8ed47e03abe00d
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: e629673c3a923ec74809e276ec39464bfacda124
 ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="removed-or-deprecated-features"></a>Borttagna och inaktuella funktioner
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Det här ämnet beskriver funktioner som är borttagna eller inaktuella för Dynamics 365 for Finance and Operations.
 
@@ -37,7 +37,10 @@ Det här ämnet beskriver funktioner som är borttagna eller inaktuella för Dyn
 Den här listan är avsedd att hjälpa dig att ta hänsyn till dessa borttagna och inaktuella funktioner för din planerings skull. 
 
 > [!Note]
-> Från och med  Dynamics 365 for Finance and Operations, Enterprise Edition juli 2017 med plattformsuppdatering 8 noteras typen av implementeringar för varje borttagen eller inaktuell funktion. Alla de tidigare versioner som beskrivs i det här ämnet använde endast molndistributioner.
+> Från och med  Dynamics 365 for Finance and Operations, juli 2017 med plattformsuppdatering 8 noteras typen av implementeringar för varje borttagen eller inaktuell funktion. Alla de tidigare versioner som beskrivs i det här ämnet använde endast molndistributioner.
+
+## <a name="dynamics-365-for-finance-and-operations-80-with-platform-update-15"></a>Dynamics 365 for Finance and Operations 8.0. med plattformsuppdatering 15
+Inga funktioner har tagit bort eller ersatts med den här versionen. Plattformsuppdatering 15 är kumulativ och innehåller nya eller ändrade funktioner från plattformsuppdatering 13, plattformsuppdatering 14 och plattformsuppdatering 15.
 
 ## <a name="dynamics-365-for-finance-and-operations-enterprise-edition-73-with-platform-update-12"></a>Dynamics 365 for Finance and Operations, Enterprise Edition 7.3. med plattformsuppdatering 12
 
@@ -96,7 +99,7 @@ Standardgränssnittet i datahantering är det är äldre användargränssnittet 
 | **Ersatt av en annan funktion?**   | Det nya användargränssnittet som heter *förbättrade vyer* ersätter det gamla användargränssnittet.            |
 | **Produktområden som påverkas**         | Arbetsyta för datahantering                                                     |
 | **Distribueringsalternativ**              | Allt                                                                           |
-| **Status**                         | Inaktuell: Måltidsramen för att ta bort funktioner är Q1 2018. |
+| **Status**                         | Inaktuell: Måltidsramen för att ta bort funktioner är Q2 2018. |
 
 ### <a name="excise-sales-tax-service-tax-for-india"></a>Punktskatt, moms, tjänstemoms för Indien
 
@@ -1033,10 +1036,11 @@ Windows 8 surfplatteapp gav funktion för utgiftsregistrering och godkännande.
 
 ### <a name="x-financial-statements"></a>X++-bokslut
 
-|   |  |
-|------------|--------------------|
-| **Orsak till inaktuell/borttagning** | Funktionen har ersatts med en annan funktion.                                    |
-| **Ersatt av en annan funktion?**   | Management Reporter (med etiketten **Ekonomisk rapportering** i den aktuella versionen av Dynamics AX) |
-| **Produktområden som påverkas**         | Huvudbok                                                                              |
-| **Status**                         | Borttagen från och med Dynamics AX 2012.                                                              |
+|                                                 |                                                                                                          |
+|-------------------------------------------------|----------------------------------------------------------------------------------------------------------|
+| <strong>Orsak till inaktuell/borttagning</strong> |                         Funktionen har ersatts med en annan funktion.                         |
+|  <strong>Ersatt av en annan funktion?</strong>  | Management Reporter (med etiketten <strong>Ekonomisk rapportering</strong> i den aktuella versionen av Dynamics AX) |
+|     <strong>Produktområden som påverkas</strong>     |                                              Huvudbok                                              |
+|             <strong>Status</strong>             |                                      Borttagen från och med Dynamics AX 2012.                                      |
+
 

@@ -18,16 +18,16 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7b5c4428c8610a7b2d4cf1a28287ba2bb1f9c2ea
-ms.openlocfilehash: b7cb5f2096f0be5211024fc6ecbfaa61d6c48c9a
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 1fc3ab4f2a4b4604126ff72c570fc9d85e209f3c
 ms.contentlocale: sv-se
-ms.lasthandoff: 02/06/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="financial-performance-power-bi-content"></a>Innehållspaket för ekonomiska resultat för Power BI
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 > [!Note]
 > Det här innehållspaketet är inaktuellt enligt beskrivningen i [Power BI innehållspaket publicerade på PowerBI.com](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features#power-bi-content-packs-published-to-powerbicom).
@@ -58,7 +58,7 @@ Var och en av dessa paneler backas upp av en underliggande rapport. Dessa rappor
 
 | Rapport                      | Information som rapporten innehåller |
 |-----------------------------|--------------------------------------|
-| Kassaanalys               | Kassa efter juridisk person, kassa per kvartal, kassa totalt och kassa efter konto<blockquote>[!NOTE]<br>Informationen kassa per kvartal innehåller inga ingående saldon i totalsumman för det första kvartalet. Summan av nya transaktioner som bokförs under varje kvartal visas.</blockquote> |
+| Kassaanalys               | Kassa efter juridisk person, kassa per kvartal, kassa totalt och kassa efter konto<br><br>**Obs!** Informationen kassa per kvartal innehåller inga ingående saldon i totalsumman för det första kvartalet. Summan av nya transaktioner som bokförs under varje kvartal visas.|
 | Aktuell kvotanalys      | Aktuell kvot per juridisk person, aktuell kvot per kvartal och saldon för omsättningstillgångar och kortfristiga skulder |
 | Snabb kvotanalys        | Snabbkvot per juridisk person, snabbkvot per kvartal och saldon för kassa, kundreskontra och kortfristiga skulder |
 | Kostnadsanalys för sålda varor | Kostnad för sålda varor (COGS) efter juridisk person, kostnad för sålda varor i år och förra året per kvartal, kostnaden för sålda varor till försäljning per juridisk person, total kostnad för sålda varor samt kostnad för sålda varor till försäljningprocentsatsen |
@@ -69,7 +69,7 @@ Var och en av dessa paneler backas upp av en underliggande rapport. Dessa rappor
 | Intäktsanalys           | Verkliga intäkter och budgetintäkter före ränta och moms (EBIT) efter juridisk person, EBIT i år och förra året, utgifter till intäktsprocentsatsen, samt verkliga och budgeterade utgifter till intäkt |
 | Intäktsanalys            | Totala intäkter, verkliga och budgeterade totala intäkter efter juridisk person, totala intäkter i år och förra året, budgetkostnadsavvikelse efter juridisk person och totala intäkter under denna period och den sista perioden |
 | Utgiftsanalys            | Totala utgifter, faktiska utgifter i jämförelse med totala budgeterade utgifter efter juridisk person, faktiska och budgeterade totala utgifter efter kvartal, totala utgifter efter kontokategori och kvot för verksamhetsutgifter |
-| Fakturerad intäktsanalys     | Total kundreskontra, totala kundreskontra efter juridisk person, totala kundreskontra efter kvartal och saldon för kundreskontra-konton<blockquote>[!NOTE]<br>Informationen innehåller inga ingående saldon för redovisningskonton för kundreskontra. Den visar summan av nya transaktioner som bokförs under kundreskontra.</blockquote> |
+| Fakturerad intäktsanalys     | Total kundreskontra, totala kundreskontra efter juridisk person, totala kundreskontra efter kvartal och saldon för kundreskontra-konton<br><br>**Obs!** Informationen innehåller inga ingående saldon för redovisningskonton för kundreskontra. Den visar summan av nya transaktioner som bokförs under kundreskontra. |
 
 Diagrammen och rutorna i samtliga dessa rapporter kan filtreras och fästas på instrumentpanelen. Mer information om hur du filtrerar och fäster i Power BI finns i [Skapa och konfigurera en intrumentpanel](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 

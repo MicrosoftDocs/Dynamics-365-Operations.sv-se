@@ -19,17 +19,16 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: e874d7353e0d9561ca55f313bfb5209299298169
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: b008e70c7d834c6aacad7aef4987e60b12ed8a6d
 ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="budget-planning-overview"></a>Översikt över budgetplanering
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Det här avsnittet introducerar budgetplanering och innehåller information om hur du konfigurerar budgetplanering och ställer in budgetplaneringsprocessen.
 
@@ -116,18 +115,18 @@ I budgetplaneringen kan du allokera beloppen eller kvantiteterna på budgetplans
 
 Allokeringsplaner fördelar automatiskt budgetplansrader under bearbetning i arbetsflödet. Du kan utföra allokeringar genom att använda någon av följande metoder i listan **Allokeringsmetod**:
 
--   **Allokera över perioder** – Använd en periodallokeringsnyckel när du vill allokera budgetplansrader från källbudgetplanscenariot över perioder i målscenariot. **Obs!** Innan du kan allokera över perioder, måste du ställa in periodallokeringsnycklar på sidan ****Kategorier för periodallokering****.
--   **Fördela på dimensioner** – Budgetplanraderna allokeras från källbudgetplanscenariot över ekonomiska dimensioner i målscenariot. **Obs!** Innan du kan tilldela till dimensioner, måste du ställa in budgetallokeringsvillkor på sidan ****Budgetallokeringsvillkor****.
--   **Sammansättning** – Budgetplanraderna sammanställs av källbudgetplansscenariot i associerade budgetplaner till målscenariot i den överordnade budgetplanen.
--   **Fördela** – Budgetplanraderna distribueras från källbudgetplansscenariot i den överordnade budgetplanen till målscenariot i de associerade budgetplanerna.
--   **Använd allokeringsregler för redovisning** – Budgetplanraderna distribueras från källbudgetplaneringsscenariot till målscenariot baserat på vald allokeringsregel för redovisning.
--   **Kopiera från budgetplan** – Du kan välja en annan budgetplan som ska användas som allokeringens källa.
+- <strong>Allokera över perioder</strong> – Använd en periodallokeringsnyckel när du vill allokera budgetplansrader från källbudgetplanscenariot över perioder i målscenariot. <strong>Obs!</strong> Innan du kan allokera över perioder, måste du ställa in periodallokeringsnycklar på sidan *<strong><em>Kategorier för periodallokering</em></strong>*.
+- <strong>Fördela på dimensioner</strong> – Budgetplanraderna allokeras från källbudgetplanscenariot över ekonomiska dimensioner i målscenariot. <strong>Obs!</strong> Innan du kan tilldela till dimensioner, måste du ställa in budgetallokeringsvillkor på sidan *<strong><em>Budgetallokeringsvillkor</em></strong>*.
+- **Sammansättning** – Budgetplanraderna sammanställs av källbudgetplansscenariot i associerade budgetplaner till målscenariot i den överordnade budgetplanen.
+- **Fördela** – Budgetplanraderna distribueras från källbudgetplansscenariot i den överordnade budgetplanen till målscenariot i de associerade budgetplanerna.
+- **Använd allokeringsregler för redovisning** – Budgetplanraderna distribueras från källbudgetplaneringsscenariot till målscenariot baserat på vald allokeringsregel för redovisning.
+- **Kopiera från budgetplan** – Du kan välja en annan budgetplan som ska användas som allokeringens källa.
 
 ### <a name="stage-allocations"></a>Fasallokeringar
 
 Fasallokeringsscheman och fasallokeringar används för att automatiskt allokera budgetplansrader under arbetsflödesprocessen. När fasallokeringar används kan budgetplanrader i målscenariot kan skapas och ändras utan ingripande av budgetplanförberedaren eller granskaren.
 
-När du ställer in en fasallokering kopplar du budgetplaneringsarbetsflödet och fasen med allokeringstidsplanen. Budgetplaneringsarbetsflödet måste vara kopplat till ett budgeteringsarbetsflöde som använder den automatiserade arbetsflödesuppgiften ****Fasallokering för budgetplanering****. När arbetsflödet når den angivna fasen, sker allokeringen automatiskt. Denna automatiska uppgift kan användas för att skapa rader för budgetplaner i ett nytt scenario. 
+När du ställer in en fasallokering kopplar du budgetplaneringsarbetsflödet och fasen med allokeringstidsplanen. Budgetplaneringsarbetsflödet måste vara kopplat till ett budgeteringsarbetsflöde som använder den automatiserade arbetsflödesuppgiften *<strong><em>Fasallokering för budgetplanering</em></strong>*. När arbetsflödet når den angivna fasen, sker allokeringen automatiskt. Denna automatiska uppgift kan användas för att skapa rader för budgetplaner i ett nytt scenario. 
 
 I exempelschemat som visas tidigare i den här artikeln utförs en allokering för att överföra belopp från en budgetplan och scenarier i huvudkontorsfasen till en annan budgetplan och andra scenarier i försäljningsavdelningsfasen. Illustrationen visar den relevanta delen av exempelschemat.
 

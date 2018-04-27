@@ -20,17 +20,16 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 41f629401731920a9cb6443ada8b1a34a70e8da9
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: b7d4530ecccf18d9370d84ff2b61be1514b80192
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="bom-designer-functionality"></a>Funktionen Strukturlistedesigner
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Det här ämnet ger en beskrivning av hur du kan använda sidan för strukturlistan för att designa och arbeta med trädstrukturer för strukturlistor (BOMs). Du kan klicka på Inställningar för att välja olika konfigureringar och ange vilken information som ska visas på raderna i trädstrukturen.
 
@@ -66,7 +65,7 @@ Filtret som används för strukturlistan och flödet, visas i strukturlistedesig
 <tbody>
 <tr class="odd">
 <td>Produktdimensioner</td>
-<td>Du kan definiera aktiva produktdimensioner för huvudurvalet om vald slutprodukt är en produktmall. <strong>Observera!</strong> Om du öppnar strukturlistedesignern för en produkt som inte är en produktmall, så kan inga produktdimensioner väljas i dialogrutan <strong>Filter</strong> dialog box.</td>
+<td>Du kan definiera aktiva produktdimensioner för huvudurvalet om vald slutprodukt är en produktmall. <strong>Observera!</strong> Om du öppnar strukturlistedesignern för en produkt som inte är en produktmall, så kan inga produktdimensioner väljas i dialogrutan <strong>Filter</strong>.</td>
 </tr>
 <tr class="even">
 <td>Plats</td>

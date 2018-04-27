@@ -17,16 +17,16 @@ ms.author: knelson
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 92a52646063c145d733b9d2960253004e8eab80a
-ms.openlocfilehash: 2b3a384a3b9be686b10ce1f181664b0b9bbe9969
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 22f766b780d10d4fc615660990729f008007787a
 ms.contentlocale: sv-se
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="expense-management-parameters"></a>Parametrar för utläggshantering
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 -----------------------------
 
@@ -87,9 +87,10 @@ Följande parametrar styr det allmänna beteendet i utgiftshanteringen.
 
 ### <a name="anti-corruption"></a>Antikorruption
 
-| **Fält**                             | **Beskrivning**      |
-|---------------------------------------|------------------------------------------------------------------------|
-|**Visa antikorruptionsattestering**   | Välj detta alternativ om du vill visa antikorruptionstexten när du skapar en ny utgiftsrapport. Särskilda kostnadskategorier kan aktiveras som kräver att antikorruptionsattestering väljs i utgiftsrapporten. Exempelvis kan en gåvokategori relaterad till officiella offentliga utgifter kräva att medarbetare bekräftar att utgiften uppfyller företagets policy relaterat till statliga tjänstemän. |
-|**Antikorruptionsmeddelande till insändare** | Ange den text som ska visas för medarbetaren när du skapar en ny utgiftsrapport. Klicka på knappen **översättningar** för att ange språkspecifik text som ska visas baserat på användarens språk.         |
-|**Antikorruptionsmeddelande till godkännare**  | Ange den text som ska visas för godkännaren när du skapar en ny utgiftsrapport. Klicka på knappen **översättningar** för att ange språkspecifik text som ska visas baserat på användarens språk.        |
+|                 <strong>Fält</strong>                 |                                                                                                                                                                                            <strong>Beskrivning</strong>                                                                                                                                                                                             |
+|--------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|  <strong>Visa antikorruptionsattestering</strong>  | Välj detta alternativ om du vill visa antikorruptionstexten när du skapar en ny utgiftsrapport. Särskilda kostnadskategorier kan aktiveras som kräver att antikorruptionsattestering väljs i utgiftsrapporten. Exempelvis kan en gåvokategori relaterad till officiella offentliga utgifter kräva att medarbetare bekräftar att utgiften uppfyller företagets policy relaterat till statliga tjänstemän. |
+| <strong>Antikorruptionsmeddelande till insändare</strong> |                                                                                             Ange den text som ska visas för medarbetaren när du skapar en ny utgiftsrapport. Klicka på knappen <strong>översättningar</strong> för att ange språkspecifik text som ska visas baserat på användarens språk.                                                                                             |
+| <strong>Antikorruptionsmeddelande till godkännare</strong>  |                                                                                             Ange den text som ska visas för godkännaren när du skapar en ny utgiftsrapport. Klicka på knappen <strong>översättningar</strong> för att ange språkspecifik text som ska visas baserat på användarens språk.                                                                                             |
+
 

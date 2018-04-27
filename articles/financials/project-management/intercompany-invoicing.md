@@ -19,17 +19,16 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 7cd19340c913fcda3fb537162dfbae52b5c8e922
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 3d4354316d0c37c6556c0ec3d27a3c62c5afb7b0
 ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="intercompany-invoicing"></a>Koncernintern fakturering
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Den här artikeln innehåller information om och exempel på koncernintern fakturering för projekt i Microsoft Dynamics 365 for Finance and Operations.
 
@@ -58,20 +57,22 @@ I det här exemplet är US SI en utlånande juridisk person och dess resurser ra
 
 I det här exemplet måste FRSI vara en kund till den juridiska personen USSI och USSI måste vara en leverantör till den juridiska personen FRSI. Du kan ställa in en koncernintern relation mellan två juridiska personer. I följande procedur beskrivs hur du ställer in parametrarna så att båda de juridiska personerna kan delta i koncernintern fakturering.
 
-1.  Ställ in FRSI som en kund till den juridiska personen USSI och ställ in USSI som en leverantör till den juridiska personen FRSI. Det finns tre startpunkter för de steg som krävs för uppgiften.
-    | Steg | Startpunkt                                                                       | beskrivning   |
-    |------|-----------------------------------------------------------------------------------|------------------|
-    | A    | I USSI klickar du på **Kundreskontra** &gt; **Kunder** &gt; **Alla kunder**. | Skapa en ny kundpost för FRSI och välj kundgrupp.                                                                                  |
-    | B    | I FRSI klickar du på **Leverantörsreskontra** &gt; **Leverantörer** &gt; **Alla leverantörer**.        | Skapa en ny leverantörspost för USSI och välj leverantörsgrupp.                                                                                    |
-    | C    | I FRSI, öppna leverantörsposten du just skapade.                            | I åtgärdsfönstret, på fliken **Allmänt**, i gruppen **Ställ in**, klicka på **Koncernintern**. På sidan **Koncernintern**, fliken **Handelsrelation**, ställ in skjutreglaget **Aktiv** på **Ja**. I fältet **Kundföretag**, markera kundposten som du skapade i steg A. |
+1. Ställ in FRSI som en kund till den juridiska personen USSI och ställ in USSI som en leverantör till den juridiska personen FRSI. Det finns tre startpunkter för de steg som krävs för uppgiften.
 
-2.  Klicka på **Projekthantering och redovisning** &gt; **Inställningar** &gt; **Redovisningsparametrar för projekthantering** och klicka sedan på fliken **Företagsinternt**. Hur du anger parametrarna vilar på om du utgör utlånande juridisk person eller lånande juridisk person.
-    -   Om du är den lånande juridiska personen, välj anskaffningskategorin som ska användas för att matcha leverantörsfakturor och som genereras automatiskt.
-    -   Om du är den utlånande juridiska personen markerar du en standardprojektkategori för varje transaktionstyp för varje lånande juridisk person. Projektkategorier används för konfigurering av skatt när den fakturerade kategorin i koncerninterna transaktioner endast finns för den lånande juridiska personen. Du kan välja om du vill periodisera intäkt för koncerninterna transaktioner. Den här periodiseringen utförs när transaktionerna bokförs och återförs sedan när den koncerninterna fakturan bokförs.
+   | Steg |                                                       Startpunkt                                                        |                                                                                                                                                                                               beskrivning                                                                                                                                                                                               |
+   |------|--------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+   |  A   | I USSI klickar du på <strong>Kundreskontra</strong> &gt; <strong>Kunder</strong> &gt; <strong>Alla kunder</strong>. |                                                                                                                                                                  Skapa en ny kundpost för FRSI och välj kundgrupp.                                                                                                                                                                  |
+   |  B   |    I FRSI klickar du på <strong>Leverantörsreskontra</strong> &gt; <strong>Leverantörer</strong> &gt; <strong>Alla leverantörer</strong>.     |                                                                                                                                                                    Skapa en ny leverantörspost för USSI och välj leverantörsgrupp.                                                                                                                                                                    |
+   |  C   |                                  I FRSI, öppna leverantörsposten du just skapade.                                  | I åtgärdsfönstret, på fliken <strong>Allmänt</strong>, i gruppen <strong>Ställ in</strong>, klicka på <strong>Koncernintern</strong>. På sidan <strong>Koncernintern</strong>, fliken <strong>Handelsrelation</strong>, ställ in skjutreglaget <strong>Aktiv</strong> på <strong>Ja</strong>. I fältet <strong>Kundföretag</strong>, markera kundposten som du skapade i steg A. |
 
-3.  Klicka på **Projekthantering och redovisning** &gt; **Inställningar** &gt; **Priser** &gt; **Överföringspris**.
-4.  Välj en valuta, transaktionstyp och överföringsprismodell. Den valuta som används på fakturan är den valuta som är konfigurerad i kundposten för den lånande juridiska personen hos den utlånande juridiska personen. Valutan används för att matcha poster i överföringsprislistan.
-5.  Klicka på **Redovisning** &gt; **Bokföringsinställningar** &gt; **Koncernintern redovisning** och skapa en relation för USSI och FRSI.
+
+2. Klicka på **Projekthantering och redovisning** &gt; **Inställningar** &gt; **Redovisningsparametrar för projekthantering** och klicka sedan på fliken **Företagsinternt**. Hur du anger parametrarna vilar på om du utgör utlånande juridisk person eller lånande juridisk person.
+   -   Om du är den lånande juridiska personen, välj anskaffningskategorin som ska användas för att matcha leverantörsfakturor och som genereras automatiskt.
+   -   Om du är den utlånande juridiska personen markerar du en standardprojektkategori för varje transaktionstyp för varje lånande juridisk person. Projektkategorier används för konfigurering av skatt när den fakturerade kategorin i koncerninterna transaktioner endast finns för den lånande juridiska personen. Du kan välja om du vill periodisera intäkt för koncerninterna transaktioner. Den här periodiseringen utförs när transaktionerna bokförs och återförs sedan när den koncerninterna fakturan bokförs.
+
+3. Klicka på **Projekthantering och redovisning** &gt; **Inställningar** &gt; **Priser** &gt; **Överföringspris**.
+4. Välj en valuta, transaktionstyp och överföringsprismodell. Den valuta som används på fakturan är den valuta som är konfigurerad i kundposten för den lånande juridiska personen hos den utlånande juridiska personen. Valutan används för att matcha poster i överföringsprislistan.
+5. Klicka på **Redovisning** &gt; **Bokföringsinställningar** &gt; **Koncernintern redovisning** och skapa en relation för USSI och FRSI.
 
 ## <a name="example-2-create-and-post-an-intercompany-timesheet"></a>Exempel 2: Skapa och bokföra en koncernintern tidrapport
 USSI, den utlånande juridiska personen måste skapa och bokföra tidrapporten för ett projekt från FRSI, den lånande juridiska personen. Det finns två startpunkter för de steg som krävs för uppgiften.

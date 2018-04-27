@@ -20,17 +20,16 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: bd85f89917659ac9c94590bace765b2123d6e556
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 591b1cd739bb3be61299f33f180ca7c264d21a35
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="coverage-settings"></a>Disponeringsinställningar
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Under huvudplanering används disponeringsinställningar för att beräkna artikelbehov. 
 
@@ -46,7 +45,7 @@ Du kan ange disponeringsinställningar på flera sätt:
 
 <!-- -->
 
--   Ange disponeringsinställningar för en dimensionsgrupp. Klicka på **Produktinformationshantering &gt; Allmänt &gt; Frisläppta produkter**. På sidan **Frisläppt produktdetalj **, på fliken **Allmänt**, i gruppen **Administration** klickar du på länken **Lagringsdimensionsgrupp**. På fältet **Lagringsdimensionsgrupp** väljer du fältet **Disponera per dimension** om du vill skapa disponeringsinställningar för en dimension i lagringsdimensiongruppen. Alla produktdimensioner, till exempel konfiguration, färg, storlek, och utförande, måste ha fältet **Disponera per dimension** markerat.
+- Ange disponeringsinställningar för en dimensionsgrupp. Klicka på <strong>Produktinformationshantering &gt; Allmänt &gt; Frisläppta produkter</strong>. På sidan <strong>Frisläppt produktdetalj **, på fliken **Allmänt</strong> i gruppen <strong>Administration</strong>, klicka på länken <strong>Lagringsdimensionsgrupp</strong>. På fältet <strong>Lagringsdimensionsgrupp</strong> väljer du fältet <strong>Disponera per dimension</strong> om du vill skapa disponeringsinställningar för en dimension i lagringsdimensiongruppen. Alla produktdimensioner, till exempel konfiguration, färg, storlek, och utförande, måste ha fältet <strong>Disponera per dimension</strong> markerat.
 
 
 

@@ -1,9 +1,9 @@
 ---
-title: "Ställ upp för bearbetningsalternativ"
+title: "Ställa in en kundtjänstkanal"
 description: "Det här avsnittet innehåller information om hur du bearbetar beställningar för kundtjänst med Microsoft Dynamics 365 for Retail."
 author: josaw1
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 04/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -20,33 +20,64 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 144bee2102b8d1901d1b4964f6c92501c1cd573d
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 0d64a27aa8aed10c210ca3c2956dce67f8d634b8
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
-# <a name="set-up-order-processing-options"></a>Ställ in alternativ för orderbearbetning
+# <a name="set-up-a-call-center-channel"></a>Ställa in en kundtjänstkanal
 
-[!include[banner](includes/banner.md)]
+[!INCLUDE [banner](includes/banner.md)]
 
+Ett företag kan definiera flera kundtjänstkanaler i Microsoft Dynamics 365 for Retail. Kundtjänstkanaler konfigureras i **Butik**\>**Kanaler**\>**Kundtjänst**\>**Alla kundtjänster**, och de är specifika för en juridisk person.
 
-Det här avsnittet innehåller information om hur du bearbetar beställningar för kundtjänst med Microsoft Dynamics 365 for Retail. 
+När en ny kundtjänstkanal skapas tilldelas systematiskt ett driftenhetsnummer. Eftersom kundtjänst skapas som driftenheter, kan användare koppla kundtjänstkanalen till olika Retail-funktioner, t.ex. sortiment, kataloger och specifika leveranssätt.
 
-Retail stöder flera butikskanaler, till exempel onlinebutiker, onlinemarknadsplatser, fysiska butiker och kundtjänst. I kundtjänster tar anställda emot kundorder per telefon och skapar försäljningsorder. I det här avsnittet beskrivs hur du skapar en kundtjänst och konfigurerar kundtjänstalternativ. Varje kundtjänst kan ha sina egna användare, betalningsmetoder, prisgrupper, ekonomiska dimensioner och leveranssätt. Du kan konfigurera dessa alternativ, när du skapar kundtjänst. **Viktigt!** Innan call center-arbetsflöden kan användas när användaren skapar försäljningsorder måste användaren tilldelas call center som en call center-användare. Du kan använda **Call center-** sidan för att aktivera eller inaktivera grupper av funktioner som är unika för call centers. Följande grupper av funktioner kan aktiveras:
+Ett standardlagerställe kan konfigureras på kundtjänstkanalen. Sedan när försäljningsordern skapas i den kanalen anges standardlagerstället automatiskt på försäljningsorderns rubrik, såvida inget annat lagerställe har definierats på den kund som har valts för försäljningsordern. I det fallet anges kundens lager som standard.
 
--   **Orderns färdigdatum** – Denna grupp omfattar funktioner som är relaterade till betalningar och beställningen slutförs på **försäljningen** .
--   **Riktad försäljning** – Denna grupp omfattar funktioner som är relaterade till källkoder, manuskript, och katalog.
+Användarna måste kopplas till en kundtjänstkanal för att kunna använda funktionerna för kundtjänst. Alla försäljningsorder som skapas av en användare i Retail kopplas automatiskt till användarens kundtjänstkanal. En användare kan för närvarande inte kopplas till flera kundtjänstkanaler samtidigt.
 
-När du aktiverar funktionerna i call center-inställningarna, de finns på **Sales beställningssida** för användare som är associerade med call center. De flesta av dessa funktioner kräver ytterligare inställningar innan de kan användas. Bilder och skript är aktiverat som en del av det riktade försäljning för specifika call center. Om funktionen är aktiverad, manuskript och bilder visas i rutan faktaruta av **försäljningsorder** sida. Standard-bild som är inställd för en produkt visas. Manuskript kan konfigureras för ett objekt, katalog, kund eller i samband med en katalog. Call center-order kan visa ytterligare detaljer om hur priset för en specifik orderrad härleddes. Exempelvis order visa vilka rabatter som tillämpades. Du aktiverar funktionen på **Kundfordringar** &gt; **Installationer** &gt; **Kundfordrings parametrar** &gt; **Priser** &gt; **Prisuppgifter**. Du kan få tillgång till **prisuppgifter** från **försäljningsorderrad** listrutan. Du kan använda vid tracking för granskningsändamål, att granska åtgärder som vidtas på en beställning under dess livstid, eller spåra en specifik användare. Du kan till exempel spela in varje gång som en användare skapar en försäljningsorder, lägger ned på en order, åsidosätter en avgift, eller uppdaterar en orderrad. Du kan ställa in ordning händelser händelser för specifika användare, grupper av användare eller för alla användare under en viss period. Du kan visa de åtgärder som vidtagits på ett dokument genom att öppna **för sidan händelser** i rutan Åtgärd på sidan för dokumentet. Du kan konfigurera för händelser vid **Försäljning och marknadsföring** &gt; **Inställningar** &gt; **Händelser** &gt; **Orderhändelser**. När en kunds beställning inte kan levereras i tid, ett företag kan automatiskt skicka e-post meddelanden till kunden att förklara orderstatus och ge kunden en möjlighet att avbryta ordern. Om en fördröjning sträcker sig efter en angiven tröskel kan ordern annulleras automatiskt. Upp till tre e-postmeddelanden kan skickas vid specificerade intervall:
+En e-postmeddelandeprofil kan också konfigureras på kundtjänstkanalen. Profilen definierar de e-postmallar som används när e-postmeddelanden skickas till kunder som gör beställningar via kundtjänstkanalen. E-postutlösare kan konfigureras mot systemhändelser, till exempel att skicka beställningen eller orderförsändelse.
 
-1.  **Första uppsägning** – Kunden kan makulera ordern.
-2.  **Andra uppsägning** – Kunden kan makulera ordern.
-3.  **Sista uppsägning** – systemet avbryts beställningen och kunden informeras om uppsägning.
+Innan försäljning kan behandlas korrekt via en kundtjänstkanal måste korrekta [betalningsmetoder](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/work-with-payments) och leveranssätt definieras för kanalen.
 
-Du kan undanta enskilda kunder och produkter från den automatiska meddelande- och annulleringsprocessen. En marginalnotifiering utlöses när du lägger till en artikel i en order. Alert innehåller viktig information om objektet, t.ex. priset marginal och lönsamhet. Du kan använda den här informationen för att avgöra om en prisåsidosättning är lämplig när du lägger till en artikel till försäljningsordern. Till exempel kan du ställa in tröskelvärden för handelsmarginaler, för att ange att en tröskel på 40 procent eller mer ovanför kostnaden är acceptabel för ett objekt, men en tröskel på 20 till 39 procent högre kostnad kan ifrågasättas. I det här fallet, något som har en tröskel mellan 20 och 39 procent utlöser en varning. Alla objekt som har en tröskel på mindre än 20 procent högre kostnad kan inte säljas, och priset kan inte justeras. Du kan konfigurera marginal varnar på **Kundfordringar** &gt; **Installationer** &gt; **Kundfordringsparametrar** &gt; **Marginalvarningar**. När du ställer in momstilldelningen baserat på standardregeln, kan du definiera en matchande prioritet för adresselement. Du kan till exempel ange att matcha en momsgrupp med postnummer har högre prioritet än motsvarande en momsgrupp av staten. Såsom dig träda in den nya kundens adress register momsgrupp tilldelas automatiskt, baserat på hur kundens adress matchar med standard regler och prioriterade matchande som du definierade. Du kan konfigurera den här funktionen på **redovisningsparametrar** sidan.
+Du kan definiera andra standardvärden som är relaterade till de ekonomiska dimensioner som ska kopplas till order som skapas med den kanalen på nivån för kundtjänstkanalen.
 
+## <a name="options-for-order-processing-behavior"></a>Alternativ för orderhanteringsbeteende
 
+Tre inställningar av en kundtjänst i har en betydande inverkan på funktionerna som är tillgängliga för försäljningsorder som skapas mot den kundtjänst: **aktivera slutförande av order**, **aktivera direkt försäljning**, och **aktivera orderpriskontroll**.
 
+### <a name="enable-order-completion"></a>Aktivera slutförande av order
+
+Inställningen **aktiverar slutförande av order** på kundtjänstkanalen har större påverkan på orderhanteringsflödet för försäljningsorder som har angetts för den kanalen. När den här inställningen aktiveras måste alla försäljningsorder genomgå en uppsättning valideringsregler innan den kan bekräftas. Du kan köra dessa regler genom att välja knappen **Slutför** som har lagts till i åtgärdsfönstret på sidan för försäljningsorder. Alla försäljningsorder som skapas när inställningen **aktivera slutförande av order** är aktiv måste genomgå orderslutförandeprocessen. Den här processen tvingar insamling av betalning och betalningsvalideringslogik. Utöver tvingad betalning kan orderinskickningsprocesse utlösa [bedrägericheckar](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/set-up-fraud-alerts) som konfigureras i systemet. Order som misslyckas att betalas eller bedrägerivalideringar spärras och kan inte frisläppas till ytterligare behandling (t.ex. plockning eller transport) tills du har löst problemet som orsakade spärrningen.
+
+När inställningen **aktivera slutförande av order** har aktiverats för kundtjänstkanalen, om artikelrader registreras på en försäljningsorder och kanalanvändaren försöker stänga eller navigera bort från försäljningsorderformuläret utan att först välja **slutförd**, tvingar systemet orderslutföringsprocessen genom att öppna sidan för sammanfattning av försäljningsorder och som kräver att användaren skickar ordern. Om ordern inte kan skickas korrekt tillsammans med betalning, kan användaren använda [orderspärrar](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/work-with-order-holds) för att spärra ordern. Om användaren vill annullera ordern måste han eller hon korrekt annullera den med hjälp av Avbryt eller Ta bort, beroende på vilken funktion som användarens säkerhets tillåter.
+
+Om inställningen **aktivera slutförande av order** är aktiv för kundtjänstkanalen kommer fältet **betalningsstatus** att spåras på ordern. Systemet beräknar **betalningsstatus** när försäljningsordern skickas. Endast order som har godkänd betalningsstatusen kan flytta genom systemet för ytterligare bearbetningssteg, t.ex. att plocka och leverera ordern. Om en betalning är avvisad kommer flaggan **bearbeta inte** att aktiveras för detaljerad orderstatus, detta sätter ordern i avvaktan tills du har löst betalningsproblemet.
+
+Dessutom om inställningen **aktivera slutförande av order** är aktiv när användare skapar försäljningsorder och arbetar i läget för registrering av radartikel kommer fältet **källa** att vara tillgängligt på den huvudsakliga försäljningsorderrubriken. Fältet **källa** används för att hämta en [katalogkällkod](https://docs.microsoft.com/en-us/dynamics365/unified-operations/retail/call-center-catalogs) i ett försäljningsscenario med direkt marknadsföring. Den här koden kan sedan ge särskilda priser och kampanjer.
+
+Även om inställningen **aktiverar slutförande av order** är inaktiverad, kan användare fortfarande tillämpa en källkod till en försäljningsorder. Men de måste öppna rubriken för försäljningsorderinformation för åtkomst till fältet **källa**. Med andra ord krävs vissa ytterligare klick. Samma sak gäller för funktioner som slutför transport och expedierade order. Dessa funktioner är tillgängliga för alla order som har skapats i till en kundtjänst. Men när inställningen **aktivera slutförande av order** aktiveras kan användare visa konfigurationen av funktionerna i försäljningsrubriken medan de finns i radpostvyn. De behöver inte gå ner till rubrikinformationen för försäljningsorder för att hitta lämpliga inställningar och fält.
+
+### <a name="enable-direct-selling"></a>Aktivera direkt försäljning
+
+Om inställningen **aktivera direkt försäljning** är aktiv för kundtjänstkanalen kan användarna utnyttja funktionerna för merförsäljning och korsförsäljning. I det här fallet visas popup-fönster under orderregistreringen som föreslår andra produkter som användaren av kundtjänst kan erbjuda kunden. Produkterna som föreslås baseras på produkten som precis beställdes i försäljningsorderraden. För närvarande kan merförsäljning och korsförsäljning konfigureras på artikelnivå på produkter eller kataloger. Om inställning **aktivera direkt försäljning** är inaktiverad för kundtjänstkanalen visas inte popup-fönster under orderregistreringen, även om en giltig merförsäljning och korsförsäljning har definierats för en artikel som beställts.
+
+När inställningen **aktivera direkt försäljning** är aktiv, aktiveras även skript och funktioner för bilder för försäljningsorderns startsida. I det här fallet finns en informationspanel på höger sida under orderregistreringen. Här kan du visa skript relaterade till den allmänna orderregistrerinsprocessen, katalogkällkod som kopplades eller skript som rör artiklarna som beställs. Dessutom kan bildpaneler visa en produktbild för artiklarna som beställs, om en bild har definierats för artikeln i inställningarna för produkten.
+
+### <a name="enable-order-price-control"></a>Aktivera orderpriskontroll
+
+När inställningen **Aktivera orderpriskontroll** är aktiv, kan endast behöriga användare ändra försäljningspriset för en artikel under orderregistreringen. Ändringarna måste ligga inom angivna toleranser. Användare som inte har rätt behörighet måste ansöka om en prisförändring i stället. Begäran bearbetas sedan igenom systemarbetsflöden för granskning och godkännande.
+
+## <a name="channel-users"></a>Kanalanvändare
+
+När du definierar kundstjänstkanal måste du koppla användare till kundstjänstkanalen. I annat fall kan inte till en kundstjänstkanal användas i systemet. När användare loggar in Retail och registrerar försäljningsorder eller returorder på en sida relaterad till orderregistrering, valideras användaridentitet mot konfigurationen av kundstjänstkanal. Om en användare kopplas till en specifik kundtjänstkanal, ärver den användaren egenskaper och standardvärden för kanalen.
+
+Som standard är flaggan **butiksförsäljning** i rubriken på försäljningsordern aktiverad för alla order som kundtjänstanvändaren skapar. Dessa order kan sedan utnyttja systemets butikspecifika pris- och kampanjegenskaper.
+
+Användare som inte är länkade till en kundtjänstkanal använder funktionerna för standardorderkvantitet i Microsoft Dynamics 365 for Finance and Operations. Order som användarna anger via försäljningsorderformuläret identifieras inte systematiskt som butiksorder. Dessutom är dessa order som dessa användare anger kanske inte föremål för några orderbearbetningsregler, butikprissättningslogik eller andra ordervalideringar som kan definieras i konfigurationen för kundtjänstkanalen eller kundtjänstsystemparametrar.
+
+När du är klar med att konfigurera kundtjänstkanalen och definiera kanalanvändare, för att garantera önskad systemfunktion, se till att alla nödvändiga kundtjänstparametrar definieras i **butik**\>**kanalinställningar**\>**kundtjänstinställningar**\>**kundtjänstparametrar**. Se till att relaterade nummerserier definieras också.
 

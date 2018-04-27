@@ -1,5 +1,5 @@
 --- 
-title: "Definiera beroendet av konfigurationer från andra komponenter för elektronisk rapportering (ER)"
+title: "Definiera beroendet av konfigurationer från andra komponenter"
 description: "För att kunna genomföra stegen måste du först slutföra stegen i uppgiftsguiden ER Hantera modellmappningskonfigurationer, och ha åtkomst till Microsoft Dynamics Lifecycle Services (LCS)."
 author: NickSelin
 manager: AnnBe
@@ -16,15 +16,15 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: a1ccd440353e986d296de370506fb1951331e2cf
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: cbd65f0734f54ed497758faffb452e4f61ab2089
 ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
-# <a name="define-the-dependency-of-configurations-from-other-components-for-electronic-reporting-er"></a>Definiera beroendet av konfigurationer från andra komponenter för elektronisk rapportering (ER)
+# <a name="define-the-dependency-of-configurations-from-other-components"></a>Definiera beroendet av konfigurationer från andra komponenter 
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 För att kunna genomföra stegen måste du först slutföra stegen i uppgiftsguiden ER Hantera modellmappningskonfigurationer, och ha åtkomst till Microsoft Dynamics Lifecycle Services (LCS).
 

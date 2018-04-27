@@ -3,11 +3,12 @@ title: "Innehåll i Power BI-kostnadshanteringen"
 description: "Det här avsnittet beskriver vad som ingår i Power BI-innehållet för kostnadshantering."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 02/02/2018
+ms.date: 03/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
+ms.search.form: CostAdminWorkspace, CostAnalysisWorkspace
 audience: Application User, IT Pro
 ms.reviewer: sericks
 ms.search.scope: Operations
@@ -19,124 +20,195 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7b5c4428c8610a7b2d4cf1a28287ba2bb1f9c2ea
-ms.openlocfilehash: 6739d769c3f7876f67d80554743458b0abd5aae5
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: a4eacafdf9b9e0eabe7fe599e679fca18c749733
 ms.contentlocale: sv-se
-ms.lasthandoff: 02/06/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="cost-management-power-bi-content"></a>Innehåll i Power BI-kostnadshanteringen
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
+
+## <a name="overview"></a>Översikt
+
+Microsoft Power BI-innehållet **Kostnadshantering** riktar sig till lagerredovisare eller personer i organisationen som är ansvarig för eller i intresserad av status för lager eller resurser i arbete (PIA) eller som är ansvarig för eller vill analysera standardkostnadsavvikelser.
 
 > [!Note]
-> Det här innehållspaketet är inaktuellt enligt beskrivningen i [Power BI innehållspaket publicerade på PowerBI.com](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features#power-bi-content-packs-published-to-powerbicom).
+> Power BI-innehållet **Kostnadshantering** som beskrivs i detta avsnitt avser Dynamics 365 for Finance and Operations 8.0.
+> 
+> Power BI-innehållspaketet **Kostnadshantering** som publicerats på webbplatsen PowerBI.com har tagits bort. Mer information om denna borttagning finns i [Power BI innehållspaket publiceras på PowerBI.com](../migration-upgrade/deprecated-features.md#power-bi-content-packs-published-to-powerbicom).
 
 
-Det här avsnittet beskriver vad som ingår i Power BI-innehållet för kostnadshantering. 
+Detta Power BI-innehållet ger ett kategoriserat format som hjälper dig att övervaka prestanda för lager och visualisera hur kostnadsflödet går mellan dem. Du kan få ledarskapsinsikt som t.ex. omsättningshastighet, antalet dagar som lager finns, exakthet och ”ABC-klassificeringen” på din föredragna aggregerade nivå (företag, artikel, artikelgrupp eller site) Informationen som görs tillgänglig kan också användas som ett detaljerat komplement till bokslutet.
 
-Microsoft Power BI-innegållet **Kostnadshantering** riktar sig till lagerrevisorer eller personer inom organisationen med ansvar för lagret. Power BI-innehållet **Kostnadshantering** ger ledarskapsinblick i lager och PIA-lager (projekt i arbete), samt hur kostnadsflöden passerar genom dem per kategori och över tid. Informationen kan också användas som ett detaljerat komplement till bokslutet.
+Power BI-innehåll bygger på de sammanlagda måtten **CostObjectStatementCacheMonthly** som har en **CostObjectStatementCache**-tabell som primär datakälla. Det här registret hanteras av cacheramverket Datauppsättning. Registret uppdateras var 24: e timme som standard, men du kan ändra uppdateringsfrekvensen eller aktivera manuella uppdateringar i konfigurationen av cachedatamängd. Manuella uppdateringar kan köras antingen i arbetsytan **Kostnadsredovisning** eller **Kostnadsanalys**.
 
-## <a name="key-measures"></a>Huvudmått
+Efter varje uppdatering av tabellen **CostObjectStatementCache** måste den sammanlagda mätningen **CostObjectStatementCacheMonthly** uppdateras innan data i Power BI-visualiseringarna uppdateras.
 
-+ Ingående saldo
-+ Slutsaldo
-+ Nettoändring
-+ Nettoändring i procent
-+ Åldersfördelning
+## <a name="accessing-the-power-bi-content"></a>Åtkomst till Power BI-innehåll
 
-## <a name="key-performance-indicators"></a>Prestationsindikatorer
-+ Lageromsättning
-+ Lagerprecision
+Power BI innehållet **kostnadshantering** visas i arbetsytorna **Kostnadsredovisning** och **Kostnadsanalys**.
 
-Den primära datakällan för CostAggregatedCostStatementEntryEntity är registret CostStatementCache. Det här registret hanteras av cacheramverket Datauppsättning. Registret uppdateras var 24: e timme som standard, men du kan aktivera manuella uppdateringar i cachkonfigurationen för data. Du kan sedan göra en manuell uppdatering i arbetsytan **Kostnadshantering** eller **Kostnadsanalys**. När uppdateringen av CostStatementCache har körts måste du uppdatera OData-anslutningen på Power BI.com för att visa uppdaterade data på webbplatsen. Avvikelseåtgärderna (inköp, produktion) i Power BI-innehållet gäller endast artiklar som bedömts av lagermetoden Standardkostnad. Produktionsavvikelsen beräknas som skillnaden mellan aktiv och verklig kostnad. Produktionsavvikelsen beräknas när produktionsordern har statusen **Avslutad**. Mer information om olika produktionsavvikelser och hur varje typ beräknas finns i [Analysera avvikelser för en avslutad tillverkningsorder](https://technet.microsoft.com/en-us/library/gg242850.aspx).
+Arbetsytan **Kostnadsredovisning** innehåller följande flikar:
+
+- **Översikt** – den här fliken visar programdata.
+- **Lagrets redovisningsstatus** – den här fliken visar Power BI innehåll.
+- **Status för tillverkningsredovisning** – den här fliken visar Power BI innehåll.
+
+Arbetsytan **Kostnadsanalys** innehåller följande flikar:
+
+- **Översikt** – den här fliken visar programdata.
+- **Lagrets redovisningsanalys** – den här fliken visar Power BI innehåll.
+- **Analys av tillverkningsredovisning** – den här fliken visar Power BI innehåll.
+- **Analys av standardkostnadsavvikelse** – den här fliken visar Power BI innehåll.
+
+## <a name="report-pages-that-are-included-in-the-power-bi-content"></a>Rapportsidor som ingår i Power BI-innehållet
+
+Power BI-innehållet **Kostnadshantering** omfattar en uppsättning rapportsidor som består av en uppsättning mått. De här måtten visas som diagram, paneler och tabeller. 
+
+Följande register ger en översikt över de visuella effekterna i Power BI-innehållet **Kostnadshantering**.
+
+### <a name="inventory-accounting-status"></a>Status för lagerredovisning
+
+| Rapportsida                               | Visualisering                                   |
+|-------------------------------------------|-------------------------------------------------|
+| Lager – översikt                        | Ingående saldo                               |
+|                                           | Nettoändring                                      |
+|                                           | Nettoändring %                                    |
+|                                           | Slutsaldo                                  |
+|                                           | Lagerprecision                              |
+|                                           | Lageromsättningshastighet                        |
+|                                           | Lagerbehållning räknat i dagar                          |
+|                                           | Aktiv produkt i period                        |
+|                                           | Aktiva kostnadsobjekt i period                   |
+|                                           | Saldo per artikelgrupp                           |
+|                                           | Saldo per plats                                 |
+|                                           | Utdrag per kategori                           |
+|                                           | Nettoändring per kvartal                           |
+| Lager – Översikt per site- och artikelgrupp | Lagerprecision per site                      |
+|                                           | Lageromsättningshastighet per site                |
+|                                           | Avslutande lagersaldo per site                |
+|                                           | Lagerprecision per artikelgrupp                |
+|                                           | Lageromsättningshastighet per artikelgrupp          |
+|                                           | Utgående lagersaldo per site eller artikelgrupp |
+| Lagerutdrag                       | Lagerutdrag                             |
+| Lagerutdrag per plats               | Lagerutdrag per plats                     |
+| Lagerutdrag per produkthierarki  | Lagerutdrag                             |
+| Lagerutdrag per produkthierarki  | Lagerutdrag per plats                     |
+
+### <a name="manufacturing-accounting-status"></a>Status för tillverkningsredovisning
+
+| Rapportsida                | Visualisering                       |
+|----------------------------|-------------------------------------|
+| WIP översikt YTD           | Ingående saldo                   |
+|                            | Nettoändring                          |
+|                            | Nettoändring %                        |
+|                            | Slutsaldo                      |
+|                            | PIA omsättningshastighet                  |
+|                            | PIA räknat i dagar                    |
+|                            | Aktiva kostnadsobjekt i period        |
+|                            | Nettoändring per resursgrupp        |
+|                            | Saldo per plats                     |
+|                            | Utdrag per kategori               |
+|                            | Nettoändring per kvartal               |
+| PIA-utdrag              | Ingående saldo                   |
+|                            | Slutsaldo                      |
+|                            | PIA-utdrag per kategori           |
+| PIA-utdrag per site      | Ingående saldo                   |
+|                            | Slutsaldo                      |
+|                            | PIA-utdrag per kategori och site  |
+| PIA-utdrag per hierarki | Ingående saldo                   |
+|                            | Slutsaldo                      |
+|                            | PIA-utdrag per kategorihierarki |
+
+### <a name="inventory-accounting-analysis"></a>Analys av lagerredovisning
+
+| Rapportsida        | Visualisering                                                                |
+|--------------------|------------------------------------------------------------------------------|
+| Lagerdetaljer  | 10 högsta resurser efter utgående balans                                           |
+|                    | 10 högsta resurser efter ökad nettoförändring                                      |
+|                    | 10 högsta resurser efter minskad nettoförändring                                      |
+|                    | 10 högsta resurser efter omsättningshastighet för lager                                 |
+|                    | Resurser efter låg omsättningshastighet för lager och utgående balans över tröskelvärdet |
+|                    | 10 högsta resurser efter sämre precision                                             |
+| ABC-klassificering | Avslutande lagersaldo                                                     |
+|                    | Förbrukat material                                                            |
+|                    | Såld (COGS)                                                                  |
+| Lager trender   | Avslutande lagersaldo                                                     |
+|                    | Nettoändring av lagerstatus                                                         |
+|                    | Lageromsättningshastighet                                                     |
+|                    | Lagerprecision                                                           |
+
+### <a name="manufacturing-accounting-analysis"></a>Analys av tillverkningsredovisning
+
+| Rapportsida | Visualisering      |
+|-------------|--------------------|
+| PIA-trender  | Slutsaldo för PIA |
+|             | Nettoändring för PIA     |
+|             | PIA-omsättningshastighet |
+
+### <a name="std-cost-variance-analysis"></a>Analys av standardkostnadsavvikelse
+
+| Rapportsida                             | Visualisering                                        |
+|-----------------------------------------|------------------------------------------------------|
+| Inköpsprisavvikelse (standardkostnad) YTD | Upphandlat saldo                                     |
+|                                         | Inköpsprisavvikelse                              |
+|                                         | Inköpsprisavvikelseförhållande                        |
+|                                         | Avvikelse per artikelgrupp                               |
+|                                         | Avvikelse per site                                     |
+|                                         | Inköpspris per kvartal                            |
+|                                         | Inköpspris per kvartal och artikelgrupp             |
+|                                         | 10 främsta resurser per ofördelaktigt inköpsprisförhållande |
+|                                         | 10 främsta resurser per fördelaktigt inköpsprisförhållande   |
+| Produktionsavvikelse (standardkostnad) YTD     | Tillverkningskostnad                                    |
+|                                         | Produktionsavvikelse                                  |
+|                                         | Produktionsavvikelseförhållande                            |
+|                                         | Avvikelse per artikelgrupp                               |
+|                                         | Avvikelse per site                                     |
+|                                         | Produktionsavvikelse per kvartal                       |
+|                                         | Produktionsavvikelse per kvartal och avvikelsetyp     |
+|                                         | 10 främsta resurser per ofördelaktiga produktionsavvikelse  |
+|                                         | 10 främsta resurser per fördelaktiga produktionsavvikelse    |
+
+### <a name="understanding-the-data-model-and-entities"></a>Förstå datamodellen och enheterna
+
+Data från Microsoft Dynamics 365 for Finance and Operations används för att fylla rapportsidorna i Power BI-innehållet **Kostnadshantering**. Informationen visas som sammansatta mått som mellanlagras i enhetsarkivet, som är en Microsoft SQL Server-databas som är optimerad för analys. Mer information finns i [Power BI-integrering med enhetsarkiv](power-bi-integration-entity-store.md).
+
+Huvudaggregatmått för följande objekt ligger till grund för Power BI-innehållet.
+
+| Objekt                          | Sammanlagda huvudmått | Datakällan för Finance and Operations | Fält               |
+|---------------------------------|----------------------------|----------------------------------------|---------------------|
+| CostObjectStatementCacheMonthly | Tid                     | CostObjectStatementCache               | Tid              |
+| CostObjectStatementCacheMonthly | Kvantitet                   | CostObjectStatementCache               | Kvt                 |
+| CostInventoryAccountingKPIGoal  | AnnualInventoryTurn        | CostInventoryAccountingKPIGoal         | AnnualInventoryTurn |
+| CostInventoryAccountingKPIGoal  | InventoryAccuracy          | CostInventoryAccountingKPIGoal         | InventoryAccuracy   |
+
+Nedan visas de viktigaste beräknade måtten i Power BI-innehållet.
+
+| Mått                            | Beräkning |
+|------------------------------------|-------------|
+| Ingående saldo                  | Ingående saldo = [Slutsaldo]-[Nettoförändring] |
+| Ingående saldokvantitet             | Ingående saldokvantitet = [Slutsaldokvantitet]-[Nettoförändringskvantitet] |
+| Slutsaldo                     | Utgående saldo = (CALCULATE(SUM([Amount]), FILTER(ALL(FiscalCalendar) ,FiscalCalendar[MONTHSTARTDATE] \<= MAX(FiscalCalendar[MONTHSTARTDATE])))) |
+| Slutsaldokvantitet                | Slutsaldokvantitet = CALCULATE(SUM([QTY]), FILTER(ALL(FiscalCalendar),FiscalCalendar[MONTHSTARTDATE] \<= MAX(FiscalCalendar[MONTHSTARTDATE]))) |
+| Nettoändring                         | Nettoändring = SUM([AMOUNT]) |
+| Nettoändringskvantitet                    | Nettoändringskvantitet = SUM([QTY]) |
+| Lageromsättningshastighet per belopp | Lageromsättningshastighet per belopp = om(ELLER([Genomsnittligt lagersaldo] \<= 0, [Sålt lager eller förbrukad utleverans] \>= 0), 0, ABS([Sålt lager eller förbrukad utleverans])/[Genomsnittligt lagersaldo]) |
+| Genomsnittligt lagersaldo          | Genomsnittligt lagersaldo = (([Utgående saldo] + [Ingående saldo]) / 2) |
+| Lagerbehållning räknat i dagar             | Lagerbehållning räknat i dagar = 365 / CostObjectStatementEntries [Lageromsättningshastighet per belopp] |
+| Lagerprecision                 | Lagerexakthet efter belopp = IF([Slutsaldo] \<= 0, IF(OR([Inventerat lagerbelopp] \<\> 0, [Slutsaldo] \< 0), 0, 1), MAX(0, ([Slutsaldo] - ABS([Inventerat lagerbelopp]))/[Slutsaldo])) |
+
+Följande tabell visar nyckeldimensionerna används som filter för att dela upp de sammanlagda måtten så att du kan uppnå bättre nivåer och få djupare analysinsikter.
 
 
-## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mått som ingår i Power BI-innehållet
-Innehållet omfattar en uppsättning rapportsidor. Sidorna består av en uppsättning mått som visualiseras som diagram, brickor och tabeller. Följande register ger en översikt över de visuella effekterna i Power BI-innehållet **Kostnadshantering**.
-
-| Rapportsida | Diagram | Titlar |
-|---|---|---|
-|Övergripande lager (standard efter aktuell period) |Precision |Lageråtgärder:<br>Avslutande lagersaldo<br>Nettoändring av lagerstatus<br>Nettoändring av lagerstatus i procent<br>|
-| |Lageromsättning | |
-| |Utgående lagersaldo efter resursgrupp | |
-| |Lagrets nettoändring efter kategorinamn (nivå 1) och kategorinamn (nivå 2)| |
-| |Inköpsavvikelser efter resursgrupp och kategorinamn (nivå 3) | |
-|Lager efter plats (standard efter aktuell period) |Utgående lagersaldo efter platsnamn och resursgrupp | |
-| |Lageromsättning efter platsnamn och resursgrupp | |
-| |Utgående lagersaldo efter stad och resursgrupp | |
-|Lager efter resursgrupp (standard efter aktuell period) |Lageråtgärder | |
-| |Lagerexakthet efter belopp efter resursgrupp | |
-| |Lageromsättning efter belopp efter resursgrupp | |
-|Lager-YOY (standard för innevarande år kontra föregående år) |Lageråtgärder | |
-| |Lager-KPI:er<br>Lageromsättning<br>Lagerprecision | |
-| |Utgående lagersaldo efter år och resursgrupp | |
-| |Inköpsavvikelser efter år och kategorinamn (nivå 3) | |
-|Lagerföråldring (standard efter innevarande år) |Lagerföråldring efter kvartal och resursgrupp | |
-| |Lagerföråldring efter kvartal och platsnamn | |
-|Övergripande PIA (standard efter aktuell period) |Nettoändring för PIA efter kategorinamn (nivå 1) och kategorinamn (nivå 2) |PIA-åtgärder för pågående arbete:<br>Slutsaldo för PIA<br>Nettoändring för PIA<br>Nettoändring för PIA i procent<br> |
-| |Produktionsavvikelser efter resursgrupp och kategorinamn (nivå 3) | |
-| |Nettoändring för PIA per resursgrupp | |
-|PIA efter plats (standard efter aktuell period) |PIA-åtgärder för pågående arbete | |
-| |Nettoändring för PIA efter platsnamn och kategorinamn (nivå 2) | |
-| |Produktionsavvikelser efter platsnamn och kategorinamn (nivå 3) | |
-
-## <a name="understanding-the-data-model-and-entities"></a>Förstå datamodellen och enheterna
-Finance and Operations-data används för att fylla i rapportsidorna Power-Bi-innehållet **Kostnadshantering**. Informationen visas som sammansatta mått som mellanlagras i enhetsarkivet, som är en Microsoft SQL-databas som är optimerad för analys. Mer information finns i [Översikt för Power BI-integrering med enhetsarkiv](power-bi-integration-entity-store.md). Följande sammanlagda huvudmått används till grund för innehållet:
-
-| Enhet            | Sammanlagda huvudmått | Datakällan för Finance and Operations | Fält             | beskrivning                       |
-|-------------------|---------------------------|---------------------------------------------|-------------------|-----------------------------------|
-| Utdragsposter | Nettoändring                | CostAggregatedCostStatementEntryEntity      | summa(\[Belopp\])   | Belopp i redovisningsvalutan |
-| Utdragsposter | Kvantitet för nettoändring       | CostAggregatedCostStatementEntryEntity      | summa(\[Kvantitet\]) |                                   |
-
-Följande tabell visar hur viktiga sammanlagda mått används för att skapa flera beräknade mått i innehållets datauppsättning.
-
-| Mått                                 | Hur åtgärden beräknas                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-|-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Ingående saldo                       | \[Utgående saldo\]-\[Nettoförändring\]                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| Ingående saldokvantitet              | \[Slutsaldokvantitet\]-\[Nettoförändring kvantitet\]                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| Slutsaldo                          | BERÄKNA(SUM (\[Belopp\]), FILTER(ALLEXCEPT ("Räkenskapskalendrar", "Räkenskapskalendrar"\[LedgerRecId\], "personer"\[ID\], "personer"\[Namn\], "Kundreskontra"\[Valuta\], "Kundreskontra"\[Beskrivning\], "Kundreskontra"\[Namn\]), "Räkenskapskalendrar"\[Datum\] &lt;= MAX ("Räkenskapskalendrar"\[Datum\])))                                                                                                                                                                                           |
-| Slutsaldokvantitet                 | BERÄKNA(SUM (\[Kvantitet\]), FILTER(ALLEXCEPT ("Räkenskapskalendrar", "Räkenskapskalendrar"\[LedgerRecId\], "personer"\[ID\], "personer"\[Namn\], "Kundreskontra"\[Valuta\], "Kundreskontra"\[Beskrivning\], "Kundreskontra"\[Namn\]), "Räkenskapskalendrar"\[Datum\] &lt;= MAX ("Räkenskapskalendrar"\[Datum\])))                                                                                                                                                                                         |
-| Ingående saldo för lager             | BERÄKNA(\[Ingående saldo\], "Utdragsposter"\[Utdragstyp\] = "Lager")                                                                                                                                                                                                                                                                                                                                                                                      |
-| Avslutande lagersaldo                | BERÄKNA(\[Slutsaldo\], "Utdragsposter"\[Utdragstyp\] = "Lager")                                                                                                                                                                                                                                                                                                                                                                                         |
-| Nettoändring av lagerstatus                    | BERÄKNA(\[Nettoändring\], "Utdragsposter"\[Utdragstyp\] = "Lager")                                                                                                                                                                                                                                                                                                                                                                                             |
-| Nettoändring av lagerstatus (kvantitet)           | BERÄKNA(\[Nettoändringskvantitet\], "Utdragsposter"\[Utdragstyp\] = "Lager")                                                                                                                                                                                                                                                                                                                                                                                    |
-| Nettoändring av lagerstatus i procent                  | OM(\[Slutsaldo för lager\] = 0, 0, \[Nettoförändring för lager\] / \[Lagrets slutsaldo\])                                                                                                                                                                                                                                                                                                                                                                           |
-| Lageromsättning efter belopp                | Om(ELLER(\[Genomsnittligt lagersaldo\] &lt;= 0, \[Sålt lager eller förbrukad utleverans\] &gt;= 0), 0 ABS (\[Sålt lager eller förbrukad utleverans\]) /\[Genomsnittligt lagersaldo\])                                                                                                                                                                                                                                                                                                  |
-| Genomsnittligt lagersaldo               | (\[Slutsaldo för lager\] + \[Startsaldo för lager\]) / 2                                                                                                                                                                                                                                                                                                                                                                                                       |
-| Sålt lager eller förbrukad utleverans       | \[Såldt lager\] + \[Förbrukad materialkostnad för lager\]                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| Förbrukad materialkostnad för lager        | BERÄKNA(\[Nettoförändring för lager\], "Utdragsposter"\[Kategorinamn - nivå 2\_\] = "ConsumedMaterialsCost")                                                                                                                                                                                                                                                                                                                                                            |
-| Sålt lager                          | BERÄKNA(\[Nettoförändring för lager\], "Utdragsposter"\[Kategorinamn - nivå 2\_\] = "Såld")                                                                                                                                                                                                                                                                                                                                                                             |
-| Lagerexakthet efter belopp            | OM(\[Lagrets slutsaldo\] &lt;= 0, OM(ELLER(\[Inventerat lagerbelopp\] &lt;&gt; 0, \[Lagrets slutsaldo\] &lt; 0), 0, 1), MAX (0, (\[Lagrets slutsaldo\] -ABS (\[Inventerat lagerbelopp\])) /\[Lagrets slutsaldo\]))                                                                                                                                                                                                                              |
-| Inventerat lagerbelopp                | BERÄKNA(\[Nettoförändring för lager\], "Utdragsposter"\[Kategorinamn - nivå 3\_\] = "Inventering")                                                                                                                                                                                                                                                                                                                                                                         |
-| Lagerföråldring                         | Om(ÄRTOM(max("Räkenskapskalendrar"\[Datum\])), blank(), MAX(0, MIN (\[Kvantitet, lagerföråldring inleverans\], \[Kvantitet, lagerföråldring slutsaldo\] - \[Framtida kvantitet, lagerföråldring inleverans\]))) \* \[Lager, genomsn. enhetskostnad\]                                                                                                                                                                                                                                |
-| Kvantitet, lageröråldring inleverans       | OM(\[minDate\] = \[minDateAllSelected\], BERÄKNA(\[Kvantitet, lagrets nettoförändring\], "Utsragsposter"\[Kvantitet\] &gt; 0, FILTER(ALLEXCEPT ('Räkenskapskalendrar", "Räkenskapskalendrar"\[LedgerRecId\], "personer"\[ID\], "personer"\[namn\], "Redovisning"\[valuta\], "Redovisning"\[beskrivning\], "Redovisning"\[namn\]), 'Räkenskapskalendrar'\[Datum\] &lt;= MAX("Räkenskapskalendrar"\[datum\]))), BERÄKNA (\[Kvantitet, lagrets nettoförändring\], "Utdragsposter"\[kvantitet\] &gt; 0)) |
-| Slutsaldo, kvantitet för lagerföråldring | \[Slutsaldo för lagerkvantitet\] + BERÄKNA\[Nettosaldo för lagerkvantitet\], FILTER(ALLEXCEPT("Räkenskapskalendrar", "Räkenskapskalendrar"'\[LedgerRecId\], "Enheter"\[ID\], "enheter"\[Namn\], "Redovisning"\[Valuta\], "Redovisning"\[Beskrivning\], "Redovisning"\[Namn\]), "Räkenskapskalendrar"\[Datum\] &gt; max("Räkenskapskalendrar"\[Datum\]) ))                                                                                                                                 |
-| Framtida lagerföråldring bland inleveranser  | BERÄKNA\[Nettoändring av lagerstatus\], "Utdragningsposter"\[Belopp\] &gt; 0, FILTER(ALLEXCEPT("Räkenskapskalendrar", "Räkenskapskalendrar"\[LedgerRecId\], "enheter"\[ID\], "enheter"\[Namn\], "Redovisning"\[Valuta\], "Redovisning"\[Beskrivning\], "Redovisning"\[Namn\]), "Räkenskapskalendrar"\[Datum\] &gt; MAX("Räkenskapskalendrar"\[Datum\])))                                                                                                                                             |
-| Genomsnittlig enhetskostnad för lager                 | BERÄKNA\[Avslutande lagersaldo\] / \[Kvantitet, avslutande lagersaldo\],ALLEXCEPT("Räkenskapskalendrar", "Räkenskapskalendrar"\[LedgerRecId\], "enheter"\[ID\], "entities"\[Namn\], "Redovisning"\[Valuta\], "Redovisning"\[Beskrivning"\], "Redovisning"\[Namn\]))                                                                                                                                                                                                                 |
-| Inköpsprisavvikelser                      | BERÄKNA(SUMMA(\[Belopp\]), "Utdragsposter"\[Kategorinamn - nivå 2\_\] = "Inköpt", "Utdragsposter"\[Utdragstyp\] = "Avvikelse")                                                                                                                                                                                                                                                                                                                              |
-| Ingående saldo för PIA                   | BERÄKNA(\[Ingående saldo\], "Utdragsposter"\[Utdragstyp\] = "PIA")                                                                                                                                                                                                                                                                                                                                                                                            |
-| Slutsaldo för PIA                      | BERÄKNA(\[Slutsaldo\], "Utdragsposter"\[Utdragstyp\] = "PIA")                                                                                                                                                                                                                                                                                                                                                                                               |
-| Nettoändring för PIA                          | BERÄKNA(\[Nettoändring\], "Utdragsposter"\[Utdragstyp\] = "PIA")                                                                                                                                                                                                                                                                                                                                                                                                   |
-| Nettoändring för PIA i procent                        | OM(\[Slutsaldo för PIA\] = 0, 0, \[Nettoförändring för PIA-\] / \[Slutsaldo för PIA\])                                                                                                                                                                                                                                                                                                                                                                                             |
-| Produktionsavvikelser                    | BERÄKNA(SUMMA(\[Belopp\]), "Utdragsposter"\[Kategorinamn - nivå 2\_\] = "ManufacturedCost", "Utdragsposter"\[Utdragstyp\] = "Avvikelse")                                                                                                                                                                                                                                                                                                                      |
-| Kategorinamn - nivå 1                 | växla(\[Kategorinamn - nivå 1\_\], "Ingen", "Ingen", "NetSourcing" "Nettoanskaffning", "NetUsage", "Nettoanvändning", "NetConversionCost", "Netto-konverteringskostnad", "NetCostOfGoodsManufactured", "Nettokostnad för tillverkade varor", "BeginningBalance", "Ingående balans")                                                                                                                                                                                                         |
-| Kategorinamn - nivå 2                 | växla (\[Kategorinamn - nivå 2\_\], "Ingen", "Ingen", "Inköpt", "Inköpt", "Avyttrad", "Avyttrad", "Överförd", "Överförd", "Såld", "Såld", "ConsumedMaterialsCost", "Kostnad för förbrukade material", "ConsumedManufacturingCost", "Förbrukad tillverkningskostnad", "ConsumedOutsourcingCost", "Förbrukad outsourcingkostnad", "ConsumedIndirectCost", "Förbrukad indirekt kostnad", "ManufacturedCost", "Tillverkningskostnad", "Avvikelser", "Avvikelser")                            |
-| Kategorinamn - nivå 3                 | växla(\[Kategorinamn - nivå 3\_\], "Ingen", "Ingen", "Inventering" "Ingen", "ProductionPriceVariance", "Produktionspris", "QuantityVariance", "Kvantitet", "SubstitutionVariance", "Ersättning", "ScrapVariance", "Kassation", "LotSizeVariance", "Partistorlek", "RevaluationVariance", "Omvärdering", "PurchasePriceVariance", "Inköpspris" "CostChangeVariance" "Kostnadsändring", "RoundingVariance" "Avrundningsavvikelse")                                                   |
-
-Följande huvuddimensioner används som filter för att dela upp de sammanlagda måtten i syfte att uppnå en förbättrad nivå och ge djupare analysinsikter.
-
-| Enhet           | Exempel på attribut                       |
-|------------------|----------------------------------------------|
-| Enheter         | ID, namn                                     |
-| Räkenskapskalendrar | Kalender, månad, period, kvartal, år       |
-| KPI-mål        | Mål för lagerexakthet, lageromsättningsmål |
-| Redovisningar          | Valuta, namn, beskrivning                  |
-| Sites            | ID, namn, land, ort                      |
-
-
-
-
+|                         Enhet                          |             Exempel på attribut              |
+|---------------------------------------------------------|-------------------------------------------------|
+|                        Produkter                         | Produktnummer, produktnamn, enhet, artikelgrupper |
+| Kategorihierarkier (tilldelad rollen kostnadshantering) |       Kategorihierarki, kategorinivå        |
+|                     Juridiska personer                      |               Namn på juridisk person                |
+|                    Räkenskapskalendrar                     |  Räkenskapskalender, år, kvartal, period, månad  |
+|                          Webbplats                           |        ID, namn, adress, delstat, land        |
 
 

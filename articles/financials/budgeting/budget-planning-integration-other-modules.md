@@ -19,16 +19,18 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: f50e58d63a9db4d6a8b5390174e2c7b87970717d
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 6db51f9fa180f0b8ce203fd2812c562b0201afa8
 ms.contentlocale: sv-se
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="budget-planning-integration-with-other-modules"></a>Integrering av budgetplanering med andra moduler
 
-[!include[banner](../includes/banner.md)] Budgetplaner kan skapas från flera olika resurser. De grundläggande elementen i den återkommande process är samma för alla resurser. 
+[!INCLUDE [banner](../includes/banner.md)]
+
+ Budgetplaner kan skapas från flera olika resurser. De grundläggande elementen i den återkommande process är samma för alla resurser. 
 
 
 
@@ -66,7 +68,7 @@ Det **historiska** alternativet på **fliken Mål** låter dig använda datum fr
 
 Den **sammanlagda genom** fältet överst på sidan bestämmer också datum som används. Det här fältet summa belopp och eventuellt sätter datumet till den första dagen i räkenskapsåret eller fiskal period. 
 
-Många av fälten på **fliken mål** blir redigerbart eller skrivskyddat, beroende på vilken åtgärd du väljer. När du ändrar från att skapa en ny budget planerar att uppdatera en befintlig plan, **Budget plan namn** blir otillgänglig och de fält som är relaterade till att välja en befintlig plan blir tillgängliga. På såväl fliken **Mål** som fliken **Källa** är fältet **Redovisning** aldrig tillgängligt, detta eftersom värdet avgörs av vald budgetplaneringsprocess. 
+Många av fälten på <strong>fliken mål</strong> blir redigerbart eller skrivskyddat, beroende på vilken åtgärd du väljer. När du ändrar från att skapa en ny budget planerar att uppdatera en befintlig plan, <strong>Budget plan namn</strong> blir otillgänglig och de fält som är relaterade till att välja en befintlig plan blir tillgängliga. På både fliken <strong>Mål</strong>och fliken <strong>Källa ** är föltet **Huvudbok</strong> alltid otillgänglig, eftersom värdet bestäms av den valda budgetplaneringsprocessen. 
 
 **Budgeten klass** låter dig ställa in budget plan rader som antingen utgiftstransaktioner inkomster eller transaktioner. Vanligen intäkt transaktioner är krediter till ett reskontrakonto och därför lagras som negativa belopp. Vanligen används dessa transaktioner visas även som negativa belopp i budgeten. Men genom att lägga budgeten klass som ett fält i planen layout kan du aktivera intäkt visas som positiva belopp.
 
@@ -111,7 +113,7 @@ Det finns ingen **budget klass** , eftersom budgeten klass (**kostnad** eller **
 
 Du kan använda projektbudgetar som källa genom att välja den prognosmodell som innehåller projektets budget belopp. Kom ihåg att projektbudgetar skapa projektprognos posterna som de är godkända.
 
-Välj endast kostnader eller intäkter för budgetrader, använd filter för att välja **Budgetuppdateringar: Beloppstyp = Kostnad**. Om du vill välja endast en typ av prognos, använd filter för att välja **Budgetuppdateringar: Transaktionstyp = *xxx***. 
+Välj endast kostnader eller intäkter för budgetrader, använd filter för att välja <strong>Budgetuppdateringar: Beloppstyp = Kostnad</strong>. Om du vill välja endast en typ av prognos, använd filter för att välja <strong>Budget uppdateringar: Transaktionstyp = *xxx</strong>*. 
 
 Endast en prognosmodell kan användas för att generera en budget scenario. Om du kör processen för en prognosmodell och sedan göra en uppdatering och försöka ange en annan modell, den första modellen kommer att skrivas över om samma projekt och reskontraförda konton. För att generera en budget scenario från mer än en prognosmodell, genererar olika budget plan scenarier och använda fördelningen alternativ till adderar dem tillsammans i ett annat scenario. 
 

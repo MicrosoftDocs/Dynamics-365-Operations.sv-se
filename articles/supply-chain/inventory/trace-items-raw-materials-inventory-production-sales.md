@@ -19,17 +19,16 @@ ms.author: pjacobse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7af00d0c66f70aa41cfab0ffccef39ba4c115803
-ms.openlocfilehash: 98f5696cd6a279bdf0f8d9026a74e5a9bccd2f13
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 60edc05bb45db973eb2e16dd833015c9a4873918
 ms.contentlocale: sv-se
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="item-and-raw-material-tracing-in-inventory-production-and-sales"></a>Spåra artiklar och råmaterial i lager, produktion och försäljning
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 I det här avsnittet beskrivs hur du kan använda artikelspårning för att identifiera var artiklar och råmaterial har använts, används eller ska användas i produktionen och försäljningsprocessen.
 
@@ -129,7 +128,7 @@ När du har kört spårningen kan du använda följande alternativ på knappen *
 Om du vill använda alternativen **Ny bakåt** eller **Ny framåt** måste du använda funktionen **Öppnar i ett nytt fönster** för att ett nytt spår ska visas i ett nytt fönster.
 
 ## <a name="can-i-save-the-trace-details"></a>Kan jag spara spårningsdetaljerna?
-Du kan spara informationen på fliken **Detaljer** som en XML-fil genom att klicka på **Exportera** under åtgärden ****Spårning**** i åtgärdsfönstret. Förutom spårningsdetaljerna, XML-filen innehåller även spårningskriterier, överordnad nod och lagerbehållning. Möjligheten att spara information om en spårning är användbar, till exempel om du vill bekräfta informationen till en kvalitetsorder eller annan efterlevnadsdokumentation. Du kan ange där filen sparas. Markera alternativet **Visa dokument** om du vill visa filen direkt. **Obs!** Filen sparas alltid, även om du endast vill visa den. Som standard öppnas XML-filen i ett webbläsarfönster. Du kan dock högerklicka på filen, välja **Öppna med** och sedan välja programmet som ska användas för att visa innehållet.
+Du kan spara informationen på fliken <strong>Detaljer</strong> som en XML-fil genom att klicka på <strong>Exportera</strong> under åtgärden *<strong><em>Spårning</em></strong>* i åtgärdsfönstret. Förutom spårningsdetaljerna, XML-filen innehåller även spårningskriterier, överordnad nod och lagerbehållning. Möjligheten att spara information om en spårning är användbar, till exempel om du vill bekräfta informationen till en kvalitetsorder eller annan efterlevnadsdokumentation. Du kan ange där filen sparas. Markera alternativet <strong>Visa dokument</strong> om du vill visa filen direkt. <strong>Obs!</strong> Filen sparas alltid, även om du endast vill visa den. Som standard öppnas XML-filen i ett webbläsarfönster. Du kan dock högerklicka på filen, välja <strong>Öppna med</strong> och sedan välja programmet som ska användas för att visa innehållet.
 
 ## <a name="can-i-calculate-a-balance-for-a-particular-item-or-ingredient"></a>Kan jag beräkna saldo för en viss artikel eller ingrediens?
 Du kan exportera informationen från sammanfattningssidorna till Microsoft Excel. Öppna den aktuella sidan, klicka på **Öppna i Microsoft Office**-ikonen och välj sedan **Exportera till Microsoft Excel**. Den här funktionen är särskilt användbar när du vill beräkna ett klumpsaldo för en artikel eller ingrediens från sidan **Transaktioner**. På sidan **Sammanfattning av transaktioner** kan du filtrera på artikeln eller ingrediensen, och alternativt även på batchen, och sedan exportera informationen till Excel. I Excel kan du till exempel isolera lagerbehållningen, kvantiteten som sålts och den mängd som användes i produktionen.

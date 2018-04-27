@@ -1,5 +1,5 @@
 --- 
-title: "Använd beräkningar för att skapa utdata för inventering och summering för elektronisk rapportering (ER)"
+title: "Använd beräkningar för att skapa utdata för inventering och summering"
 description: "I följande steg beskrivs hur en användare som tilldelats en roll som systemadministratör eller utvecklare för elektronisk rapportering kan konfigurera ett format för elektronisk rapportering (ER) att utföra inventering och summering baserat på data tillhörande redan genererad textutmatning."
 author: NickSelin
 manager: AnnBe
@@ -16,15 +16,15 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 143856f65eaf1d6d667f4f7dfb229807da6f4ad8
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 5b7f0cc5b94ab7be11a013ef3e5909d84847e885
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
-# <a name="use-computations-to-make-the-output-for-counting-and-summing-for-electronic-reporting-er"></a>Använd beräkningar för att skapa utdata för inventering och summering för elektronisk rapportering (ER)
+# <a name="use-computations-to-make-the-output-for-counting-and-summing"></a>Använd beräkningar för att skapa utdata för inventering och summering 
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 I följande steg beskrivs hur en användare som tilldelats en roll som systemadministratör eller utvecklare för elektronisk rapportering kan konfigurera ett format för elektronisk rapportering (ER) att utföra inventering och summering baserat på data tillhörande redan genererad textutmatning. Dessa steg kan utföras på valfritt företag.
 

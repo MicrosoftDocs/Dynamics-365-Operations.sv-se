@@ -19,17 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 09a182b50917bff449f76598d61c38ae18160dd1
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 8652766766a557d8399e6a94088a6f9bc82ff018
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="advanced-formatting-options-in-financial-reporting"></a>Avancerade formateringsalternativ i ekonomiska rapporter
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 När du skapar en rapport inom ekonomisk rapportering blir ytterligare formateringsfunktioner tillgängliga, inklusive filter för dimensioner, begränsningar för kolumner och rapportenheter, icke-utskriftsrader samt IF/THEN/ELSE-utdrag i beräkningar. 
 
@@ -66,12 +65,13 @@ Följande exempel visar hur du öppnar raddefinitionen och kolumndefinition om d
 
 Följande tabell visar ett exempel på en raddefinition som använder grundläggande framtvingning.
 
-| Radkod | beskrivning                      | Formatkod | Relaterade formler, rader eller enheter | Radmodifieringscell | Länk till ekonomiska dimensioner |
-|----------|----------------------------------|-------------|-----------------------------|----------------|----|
-| 100      | Likvida medel vid periodens början (NP) |             |                             | Kontomodifierare = \[/BB\] | +Segment 2 = \[1100\]         |
-| 130      | Likvida medel vid periodens början      | CAL         | C=C.100 F=D.100             |               |     |   |
-| 160      |                                  |             |                             |              |     |   |
-| 190      |                                  |             |                             |                 |     |   |
+
+| Radkod |           beskrivning            | Formatkod | Relaterade formler, rader eller enheter |        Radmodifieringscell        | Länk till ekonomiska dimensioner |
+|----------|----------------------------------|-------------|-----------------------------|----------------------------|------------------------------|
+|   100    | Likvida medel vid periodens början (NP) |             |                             | Kontomodifierare = \[/BB\] |     +Segment 2 = \[1100\]     |
+|   130    |   Likvida medel vid periodens början    |     CAL     |       C=C.100 F=D.100       |                            |                              |
+|   160    |                                  |             |                             |                            |                              |
+|   190    |                                  |             |                             |                            |                              |
 
 > [!NOTE] 
 > Tomma kolumner har tagits bort från föregående tabell i presentationssyfte: kolumnerna Ersätt format, Normalt saldo, Utskriftskontroll och Kolumnbegränsning visas inte.
@@ -180,11 +180,11 @@ Cellen **Kolumnbegränsning** i en raddefinition har flera syften. Beroende på 
 -   Cellen kan ange kolumnen med belopp att sortera.
 
 ## <a name="using-a-calculation-formula-in-a-row-definition"></a>Använda en beräkningsformel i en raddefinition
-En beräkningsformel i en raddefinition kan innehålla operatorerna **+**, **-**, **\*** och **/**, samt även uttrycket **IF/THEN/ELSE**. Dessutom kan gälla en beräkning omfatta enskilda celler och absoluta belopp (faktiska nummer som är inkluderade i formeln). Formeln kan innehålla upp till 1 024 tecken. Beräkningar kan inte tillämpas på de rader som innehåller celler av typen **Länk till ekonomiska dimensioner** (FD). Du kan emellertid inkludera beräkningar för varandra följande rader, undertrycka utskrift av dessa rader och sedan summera beräkningsraderna.
+En beräkningsformel i en raddefinition kan innehålla operatorerna <strong>+</strong>, <strong>-</strong>, <strong>\\</strong> och **/**, samt även uttrycket <strong>IF/THEN/ELSE</strong>. Dessutom kan gälla en beräkning omfatta enskilda celler och absoluta belopp (faktiska nummer som är inkluderade i formeln). Formeln kan innehålla upp till 1 024 tecken. Beräkningar kan inte tillämpas på de rader som innehåller celler av typen <strong>Länk till ekonomiska dimensioner</strong> (FD). Du kan emellertid inkludera beräkningar för varandra följande rader, undertrycka utskrift av dessa rader och sedan summera beräkningsraderna.
 
 ### <a name="operators-in-a-calculation-formula"></a>Operatorer i en beräkningsformel
 
-En beräkningsformel använder mer komplexa operatorer än en radsummaformel. Du kan däremot använda operatorerna **\*** och **/** tillsammans med de ytterligare operatorerna som ska multiplicera (\*) och dividera (/) belopp. Om du vill använda ett intervall eller en summa i en beräkningsformel måste du använda ett @-tecken (@) framför alla radkoder om du inte använder en kolumn i raddefinitionen. Om du till exempel vill lägga till beloppet i rad 100 till beloppet i rad 330, kan du använda radsummeformeln **100+330** eller beräkningsformeln **@100+@330**. **Obs!** Du måste använda ett @-tecken för varje radkod som du använder i en beräkningsformel. Annars kan numret läsas som ett absolut belopp. Formeln **@100+330** lägger exempelvis till 330 dollar till beloppet i rad 100. När du refererar till en kolumn i en beräkningsformel krävs inget tecken (@).
+En beräkningsformel använder mer komplexa operatorer än en radsummaformel. Du kan däremot använda operatorerna <strong>\\</strong>* och <strong>/</strong> tillsammans med ytterligare operatorerna som ska multiplicera (\*) och dividera (/) belopp. Om du vill använda ett intervall eller en summa i en beräkningsformel måste du använda ett @-tecken (@) framför alla radkoder om du inte använder en kolumn i raddefinitionen. Om du till exempel vill lägga till beloppet i rad 100 till beloppet i rad 330, kan du använda radsummeformeln <strong>100+330</strong> eller beräkningsformeln <strong>@100+@330</strong>. <strong>Obs!</strong> Du måste använda ett @-tecken för varje radkod som du använder i en beräkningsformel. Annars kan numret läsas som ett absolut belopp. Formeln <strong>@100+330</strong> lägger exempelvis till 330 dollar till beloppet i rad 100. När du refererar till en kolumn i en beräkningsformel krävs inget tecken (@).
 
 ### <a name="create-a-calculation-formula"></a>Skapa en beräkningsformel
 
@@ -202,7 +202,7 @@ I det här exemplet betyder beräkningsformeln **@100+@330** att beloppet på ra
 | 370      | Likvida medel vid årets början   | CAL         | @100+@330                  | NP            |              |                              |
 | 400      | Likvida medel vid periodens början | TOT         | 340+370                    |               |              |                              |
 
-När definitionen för raden har en formatkod på **CAL**, och du anger en matematisk beräkning i cellen **Relaterade formler/rader/enheter** måste du även ange bokstaven för associerade kolumnen och raden i rapporten. Ange till exempel **A.120** för att representera kolumn A, rad 120. Alternativt kan du också använda ett snabel-a (@) för att visa alla kolumner. Ange till exempel **@120** för att representera alla kolumner i rad 120. En matematisk beräkning som inte har någon kolumnbokstav eller ett snabel-a (@) antas vara ett reellt tal. **Obs!** Om du använder en etikettradkod för att referera till en rad, måste du använda en punkt (.) som avgränsare mellan kolumnbokstaven och etiketten (t.ex. **A.GROSS\_MARGIN/A.SALES**). Om du använder ett snabel-a (@) krävs ingen avgränsare (till exempel **@GROSS\_MARGIN/@SALES**).
+När definitionen för raden har en formatkod på <strong>CAL</strong>, och du anger en matematisk beräkning i cellen <strong>Relaterade formler/rader/enheter</strong> måste du även ange bokstaven för associerade kolumnen och raden i rapporten. Ange till exempel <strong>A.120</strong> för att representera kolumn A, rad 120. Alternativt kan du också använda ett snabel-a (@) för att visa alla kolumner. Ange till exempel <strong>@120</strong> för att representera alla kolumner i rad 120. En matematisk beräkning som inte har någon kolumnbokstav eller ett snabel-a (@) antas vara ett reellt tal. <strong>Obs!</strong> Om du använder en etikettradkod för att referera till en rad, måste du använda en punkt (.) som avgränsare mellan kolumnbokstaven och etiketten (t.ex. <strong>A.GROSS\_MARGIN/A.SALES</strong>). Om du använder ett snabel-a (@) krävs ingen avgränsare (till exempel <strong>@GROSS\_MARGIN/@SALES</strong>).
 
 ### <a name="example-of-a-calculation-formula-for-a-specific-column"></a>Exempel på en beräkningsformel för en specifik kolumn
 
@@ -255,17 +255,17 @@ Formlerna **THEN** och **ELSE** kan vara en giltig beräkning, från mycket enkl
 
 ### <a name="restricting-a-calculation-to-a-reporting-unit-in-a-row-definition"></a>Begränsa en beräkning till en rapportenhet i en raddefinition
 
-Om du vill begränsa en beräkning för en enskild rapporteringsenhet i ett rapportträd, så att det resulterande beloppet inte ackumuleras till en högre nivåenhet, kan du använda koden **@Unit** i cellen **Relaterade formler/rader/enheter** i raddefinitionen. Koden **@Unit** anges i kolumn B i rapportträdet, **Enhetsnamn**. När du använder koden **@Unit** ackumuleras inte värdena, men beräkningen utvärderas i varje nivå i rapportträdet. **Obs!** Om du vill använda denna funktion, måste ett rapportträd associeras till raddefinitionen. Beräkningsraden kan referera till en beräkningsrad eller till en ekonomisk datarad. Beräkningen registreras i cellen **Relaterade formler/rader/enheter** i raddefinitionen och den ekonomiska data-typbegränsningen. Beräkningen måste använda en villkorsstyrd beräkning som inleds med en **IF @Unit**-konstruktion. Här följer ett exempel: IF @Unit(SALES) THEN @100 ELSE 0 Denna beräkning innehåller beloppet från rad 100 i varje kolumn av rapporten, men bara för försäljningsenheten (SALES). Om flera enheter kallas FÖRSÄLJNING kommer beloppet att visas i var och en av dessa enheter. Eventuellt kan rad 100 vara en ekonomisk datarad och kan definieras som icke utskriftsbar. I detta fall förhindras beloppet från att visas i alla enheter i trädet. Du kan även begränsa beloppet till en viss kolumn i rapporten, till exempel kolumn H, med hjälp av en kolumnbegränsning om du bara vill skriva ut värdet i den kolumnen i rapporten. Du kan inkludera **OR**-kombinationer i ett **IF**-utdrag. Här följer ett exempel: IF @Unit(SALES) OR @Unit(SALESWEST) THEN 5 ELSE @100 Du kan ange en enhet i en begränsning av beräkningstyp på något av följande sätt:
+Om du vill begränsa en beräkning för en enskild rapporteringsenhet i ett rapportträd, så att det resulterande beloppet inte ackumuleras till en högre nivåenhet, kan du använda koden <strong>@Unit</strong> i cellen <strong>Relaterade formler/rader/enheter</strong> i raddefinitionen. Koden <strong>@Unit</strong> anges i kolumn B i rapportträdet, <strong>Enhetsnamn</strong>. När du använder koden <strong>@Unit</strong> ackumuleras inte värdena, men beräkningen utvärderas i varje nivå i rapportträdet. <strong>Obs!</strong> Om du vill använda denna funktion, måste ett rapportträd associeras till raddefinitionen. Beräkningsraden kan referera till en beräkningsrad eller till en ekonomisk datarad. Beräkningen registreras i cellen <strong>Relaterade formler/rader/enheter</strong> i raddefinitionen och den ekonomiska data-typbegränsningen. Beräkningen måste använda en villkorsstyrd beräkning som inleds med en <strong>IF @Unit</strong>-konstruktion. Här följer ett exempel: IF @Unit(SALES) THEN @100 ELSE 0 Denna beräkning innehåller beloppet från rad 100 i varje kolumn av rapporten, men bara för försäljningsenheten (SALES). Om flera enheter kallas FÖRSÄLJNING kommer beloppet att visas i var och en av dessa enheter. Eventuellt kan rad 100 vara en ekonomisk datarad och kan definieras som icke utskriftsbar. I detta fall förhindras beloppet från att visas i alla enheter i trädet. Du kan även begränsa beloppet till en viss kolumn i rapporten, till exempel kolumn H, med hjälp av en kolumnbegränsning om du bara vill skriva ut värdet i den kolumnen i rapporten. Du kan inkludera <strong>OR</strong>-kombinationer i ett <strong>IF</strong>-utdrag. Här följer ett exempel: IF @Unit(SALES) OR @Unit(SALESWEST) THEN 5 ELSE @100 Du kan ange en enhet i en begränsning av beräkningstyp på något av följande sätt:
 
--   Ange ett enhetsnamn om du vill inkludera enheter som matchar. **IF @Unit(SALES)**  möjliggör exempelvis beräkningen för alla enheter som bär namnet SALES, även om det finns flera SALES-enheter i rapportträdet.
--   Ange företags- och enhetsnamn för att begränsa beräkningen till specifika enheter i ett visst företag. Ange t.ex. **IF @Unit(ACME:SALES**) för att begränsa beräkningen till försäljningsenheter (SALES) i ACME-företag.
--   Ange fullständig hierarkikod från rapportträdet för att begränsa beräkningen till en viss enhet. Ange till exempel **IF @Unit(SUMMARY^ACME^WEST COAST^SALES)**. **Obs!** För att hitta den fullständiga hierarkikoden högerklickar du i rapportträddefinitionen och väljer sedan **Kopiera rapportenhetsidentifierare (H-kod)**.
+- Ange ett enhetsnamn om du vill inkludera enheter som matchar. <strong>IF @Unit(SALES)</strong>  möjliggör exempelvis beräkningen för alla enheter som bär namnet SALES, även om det finns flera SALES-enheter i rapportträdet.
+- Ange företags- och enhetsnamn för att begränsa beräkningen till specifika enheter i ett visst företag. Ange t.ex. <strong>IF @Unit(ACME:SALES</strong>) för att begränsa beräkningen till försäljningsenheter (SALES) i ACME-företag.
+- Ange fullständig hierarkikod från rapportträdet för att begränsa beräkningen till en viss enhet. Ange till exempel <strong>IF @Unit(SUMMARY^ACME^WEST COAST^SALES)</strong>. <strong>Obs!</strong> För att hitta den fullständiga hierarkikoden högerklickar du i rapportträddefinitionen och väljer sedan <strong>Kopiera rapportenhetsidentifierare (H-kod)</strong>.
 
 #### <a name="restrict-a-calculation-to-a-reporting-unit"></a>Begränsa en beräkning till en rapportenhet
 
-1.  Klicka på **Raddefinitioner** i Report Designer och öppna den raddefinition som du vill ändra.
-2.  Dubbelklicka på cellen **Formatkod** och markera sedan **CAL**.
-3.  Klicka på cellen **Relaterade formler/rader/enheter** och ange sedan en villkorsstyrd beräkning som inleds med en **OM @Unit**-konstruktion.
+1. Klicka på **Raddefinitioner** i Report Designer och öppna den raddefinition som du vill ändra.
+2. Dubbelklicka på cellen **Formatkod** och markera sedan **CAL**.
+3. Klicka på cellen <strong>Relaterade formler/rader/enheter</strong> och ange sedan en villkorsstyrd beräkning som inleds med en <strong>OM @Unit</strong>-konstruktion.
 
 ### <a name="ifthenelse-statements-in-a-column-definition"></a>IF/THEN/ELSE-utdrag i en kolumndefinition
 

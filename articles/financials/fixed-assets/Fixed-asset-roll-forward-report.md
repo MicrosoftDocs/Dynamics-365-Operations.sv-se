@@ -19,15 +19,15 @@ ms.author: saraschi
 ms.search.validFrom: 2017-12-20
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 7a81697a8e90fb6b0695a02db0868f5708fdbddf
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 16f7c199fb4c9905c465e5d4596d3eaa90104b83
 ms.contentlocale: sv-se
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 # <a name="fixed-assets-roll-forward-report"></a>Uppdateringsrapport över anläggningstillgångar
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 **Uppdateringsrapporten för anläggningstillgångar** ger detaljerade data, i ett lättläst Microsoft Excel-format, för periodens stängning, bokslut och momsrapportering. Rapporten innehåller start- och slutsaldon för anläggningstillgångar, samt en värderingen av rörelser för perioden, och ny anskaffning och avyttring som uppstått under perioden. Data rapporteras för enskilda anläggningstillgångar och sammanfattas även för grupper av anläggningstillgångar och juridisk person.
 
@@ -41,28 +41,30 @@ Den här rapporten finns i Microsoft Dynamics 365 for Finance and Operations, En
 
 Följande register beskriver de fält som är tillgängliga i rapporten.
 
-| Fält                                       | beskrivning |
-|---------------------------------------------|-------------|
-| Balans: Ingående                           | Det bokförda nettovärdet av fasta tillgångar per det ”från” datum som anges i rapporten. |
-| Balans: Utgående                           | Det bokförda nettovärdet av fasta tillgångar per det ”till” datum som anges i rapporten. |
-| Anskaffningar: IB                 | Summan av alla transaktioner av typen **anskaffning** och **anskaffningsjustering** till det ”från” datum som anges i rapporten. |
-| Anskaffning: Periodens förvärv           | Summan av alla transaktioner av typen **anskaffning** och **anskaffningsjustering** som registrerats under rapportens datumintervall. |
-| Anskaffningar: Avyttringar              | Summan av alla transaktioner av typen återföring av anskaffning registrerade som avyttringstransaktioner under rapportens datumintervall. |
-| Anskaffningar: UB                 | Summan av alla transaktioner av typen **anskaffning** och **anskaffningsjustering** till det ”till” datum som anges i rapporten. |
-| Avskrivningar: IB                | Summan av alla transaktioner av typen **avskrivning**, **avskrivningsjustering**, **särskild avskrivning**, och **extraordinär avskrivning** fram till det ”från” datum som anges i rapporten. |
-| Avskrivningar: Periodens avskrivningar         | Summan av alla transaktioner av typen **avskrivning**, **avskrivningsjustering** och **extraordinär avskrivning** som registrerats under rapportens datumintervall. |
-| Avskrivningar: Periodens särskilda avskrivningar | Summan av alla transaktioner av typen **särskild avskrivning** som registrerats under rapportens datumintervall. |
-| Avskrivningar: Periodens avyttringar             | Summan av alla transaktioner av typen återföring av avskrivning registrerade som avyttringstransaktioner under rapportens datumintervall. |
-| Avskrivningar: UB                | Summan av alla transaktioner av typen **avskrivning**, **avskrivningsjustering**, **särskild avskrivning**, och **extraordinär avskrivning** fram till det ”till” datum som anges i rapporten. |
-| Upp-/nedskrivning: IB        | Summan av alla transaktioner av typen **uppskrivning**, **uppskrivningsjustering**och **omvärdering** till det "från" datum som anges i rapporten. |
-| Uppskrivningar/Nedskrivningar: Periodiska uppskrivningar     | Summan av alla transaktioner av typen **uppskrivningsjustering** som registrerats under rapportens datumintervall. |
-| Uppskrivningar/Nedskrivningar: Periodiska nedskrivningar   | Summan av alla transaktioner av typen **nedskrivningsjustering** som registrerats under rapportens datumintervall. |
-| Uppskrivningar/Nedskrivningar: Periodiska omvärderingar  | Summan av alla transaktioner av typen **omvärderingar** som registrerats under rapportens datumintervall. |
-| Uppskrivningar/Nedskrivningar: Periodiska avyttranden     | Summan av alla återföringar av typen uppskrivningar, nedskrivningar och omvärderingar som registrerat en avyttringstransaktion under rapportens datumintervall. |
-| Upp-/nedskrivning: UB        | Summan av alla transaktioner av typen **uppskrivning**, **uppskrivningsjustering**och **omvärdering** till det "till" datum som anges i rapporten. |
-| Avyttring: Datum för avyttrande                    | Datum för avyttrande av förteckning över anläggningstillgångar. |
-| Avyttring: Bokfört nettovärde vid avyttring       | Bokfört nettovärde för förteckning över anläggningstillgångar vid tidpunkten för avyttrande . |
-| Avyttring: Försäljningsvärde                       | Försäljningsvärde för förteckning över anläggningstillgångar med avyttring - försäljningstransaktion. |
-| Avyttring: Kassationsvärde                      | Kassationsvärde för förteckning över anläggningstillgångar med avyttring - kassationstransaktion. |
-| Avyttring: Vinst/förlust                      | Vinst- eller förlustvärdet som beräknas som en del av avyttringstransaktionen för förteckning över anläggningstillgångar. |
+
+|                    Fält                    |                                                                                                                                beskrivning                                                                                                                                |
+|---------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|              Balans: Ingående              |                                                                                           Det bokförda nettovärdet av fasta tillgångar per det ”från” datum som anges i rapporten.                                                                                           |
+|              Balans: Utgående              |                                                                                            Det bokförda nettovärdet av fasta tillgångar per det ”till” datum som anges i rapporten.                                                                                            |
+|         Anskaffningar: IB         |                                                 Summan av alla transaktioner av typen <strong>anskaffning</strong> och <strong>anskaffningsjustering</strong> till det ”från” datum som anges i rapporten.                                                  |
+|      Anskaffning: Periodens förvärv      |                                                 Summan av alla transaktioner av typen <strong>anskaffning</strong> och <strong>anskaffningsjustering</strong> som registrerats under rapportens datumintervall.                                                  |
+|       Anskaffningar: Avyttringar        |                                                                        Summan av alla transaktioner av typen återföring av anskaffning registrerade som avyttringstransaktioner under rapportens datumintervall.                                                                        |
+|         Anskaffningar: UB         |                                                  Summan av alla transaktioner av typen <strong>anskaffning</strong> och <strong>anskaffningsjustering</strong> till det ”till” datum som anges i rapporten.                                                   |
+|        Avskrivningar: IB         | Summan av alla transaktioner av typen <strong>avskrivning</strong>, <strong>avskrivningsjustering</strong>, <strong>särskild avskrivning</strong>, och <strong>extraordinär avskrivning</strong> fram till det ”från” datum som anges i rapporten. |
+|     Avskrivningar: Periodens avskrivningar     |                         Summan av alla transaktioner av typen <strong>avskrivning</strong>, <strong>avskrivningsjustering</strong> och <strong>extraordinär avskrivning</strong> som registrerats under rapportens datumintervall.                          |
+| Avskrivningar: Periodens särskilda avskrivningar |                                                              Summan av alla transaktioner av typen <strong>särskild avskrivning</strong> som registrerats under rapportens datumintervall.                                                               |
+|       Avskrivningar: Periodens avyttringar       |                                                                       Summan av alla transaktioner av typen återföring av avskrivning registrerade som avyttringstransaktioner under rapportens datumintervall.                                                                        |
+|        Avskrivningar: UB         |  Summan av alla transaktioner av typen <strong>avskrivning</strong>, <strong>avskrivningsjustering</strong>, <strong>särskild avskrivning</strong>, och <strong>extraordinär avskrivning</strong> fram till det ”till” datum som anges i rapporten.  |
+|    Upp-/nedskrivning: IB     |                              Summan av alla transaktioner av typen <strong>uppskrivning</strong>, <strong>uppskrivningsjustering</strong>och <strong>omvärdering</strong> till det "från" datum som anges i rapporten.                               |
+|   Uppskrivningar/Nedskrivningar: Periodiska uppskrivningar   |                                                                    Summan av alla transaktioner av typen <strong>uppskrivningsjustering</strong> som registrerats under rapportens datumintervall.                                                                    |
+|  Uppskrivningar/Nedskrivningar: Periodiska nedskrivningar  |                                                                   Summan av alla transaktioner av typen <strong>nedskrivningsjustering</strong> som registrerats under rapportens datumintervall.                                                                   |
+| Uppskrivningar/Nedskrivningar: Periodiska omvärderingar  |                                                                        Summan av alla transaktioner av typen <strong>omvärderingar</strong> som registrerats under rapportens datumintervall.                                                                        |
+|   Uppskrivningar/Nedskrivningar: Periodiska avyttranden   |                                                           Summan av alla återföringar av typen uppskrivningar, nedskrivningar och omvärderingar som registrerat en avyttringstransaktion under rapportens datumintervall.                                                           |
+|    Upp-/nedskrivning: UB     |                               Summan av alla transaktioner av typen <strong>uppskrivning</strong>, <strong>uppskrivningsjustering</strong>och <strong>omvärdering</strong> till det "till" datum som anges i rapporten.                                |
+|          Avyttring: Datum för avyttrande           |                                                                                                                Datum för avyttrande av förteckning över anläggningstillgångar.                                                                                                                |
+|    Avyttring: Bokfört nettovärde vid avyttring    |                                                                                                    Bokfört nettovärde för förteckning över anläggningstillgångar vid tidpunkten för avyttrande .                                                                                                    |
+|            Avyttring: Försäljningsvärde            |                                                                                               Försäljningsvärde för förteckning över anläggningstillgångar med avyttring - försäljningstransaktion.                                                                                                |
+|           Avyttring: Kassationsvärde            |                                                                                               Kassationsvärde för förteckning över anläggningstillgångar med avyttring - kassationstransaktion.                                                                                               |
+|           Avyttring: Vinst/förlust            |                                                                                 Vinst- eller förlustvärdet som beräknas som en del av avyttringstransaktionen för förteckning över anläggningstillgångar.                                                                                 |
+
 

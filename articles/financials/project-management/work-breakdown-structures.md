@@ -19,16 +19,16 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: fc2fa16a44b6421d56e9cb662cfaa26da5b1c5d1
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 8bc3d23fac6112622e722e57b61fdb686f5a98ed
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="work-breakdown-structures"></a>Uppdelade arbetsstrukturer
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 En uppdelad arbetsstruktur (WBS) är en beskrivning av det arbete som utförs för ett projekt. Det är en hierarki med uppgifter som representerar projektteamets kännedom om sammansättningen av arbete och storleken, kostnaden och tidslängden för varje komponent eller uppgift. En WBS har tre viktiga syften:
 
@@ -115,7 +115,7 @@ Tidsplanuppskattning är vanligtvis det andra steget i att skapa en WBS. Som bä
 
 Startdatumet för en lövnoduppgift som inte har företrädare ställs automatiskt in på projektets startdatum. Tidslängden för en lövnoduppgift beräknas alltid som antalet arbetsdagar mellan dess start - och slutdatum. 
 
-****Tidsplaneringsregler**** När automatisk hjälp för tidsplanering aktiveras gäller följande regler för uppgiftsplanering för lövnoduppgifter:
+*<strong><em>Tidsplaneringsregler</em></strong>* När automatisk hjälp för tidsplanering aktiveras gäller följande regler för uppgiftsplanering för lövnoduppgifter:
 
 -   Start- och slutdatum för en uppgift måste vara arbetsdagar enligt projektets planeringskalender.
 -   Startdatum för uppgiften ställs automatiskt in på det senaste slutdatumet för dess företrädare.

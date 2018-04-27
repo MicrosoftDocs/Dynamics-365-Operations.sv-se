@@ -19,17 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 0e5605b65b6203a50ef2fef81d032a887da32bf9
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: f08131e01fddb259d3bb537b1625ea2615a1e958
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="create-a-customer-invoice"></a>Skapa en kundfaktura
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 En **kundfaktura för en försäljningsorder** är en faktura som är relaterad till en försäljning och som en organisation skickar till en kund. Den här typen av kundfaktura skapas baserad på en försäljningsorder, vilken inkluderar orderrader och artikelnummer. Artikelnummer specificeras och bokförs i redovisningen. Poster i redovisningsjournalen är inte tillgängliga för en kundfaktura för en försäljningsorder. Mer information finns i [Skapa försäljningsorderfakturor](tasks/create-sales-order-invoices.md).
 
@@ -98,7 +97,7 @@ Följande fält ändrar beteendet för bokföringsprocessen.
 </ul></td>
 </tr>
 <tr class="even">
-<td>Bokför</td>
+<td>Bokföring</td>
 <td><ul>
 <li>Välj det här alternativet för att journalföra försäljningsordern.</li>
 <li>Avmarkera det här alternativet om du vill skriva ut en proformasäljorder. <strong>Anm.:</strong> Om du har ingått ett avtal om en betalningsplan visas inte betalningsplanen på proformasäljordern. Betalningsplanen visas bara på en faktisk försäljningsorder.</li>

@@ -19,17 +19,16 @@ ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4ced76315bb4667f84be532a703e7e9b134b829b
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 6d11e772cfbcd8ab7a0d4a08ccd71049723f9e32
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="create-variable-compensation-plans"></a>Skapa planer för variabel kompensation
 
-[!include[banner](includes/banner.md)]
-
+[!INCLUDE [banner](includes/banner.md)]
 
 Variabel kompensation utgör en medarbetares oregelbundna lön såsom bonusar och aktieutdelning. Det här avsnittet beskriver komponenterna som måste ställas in innan du kan använda variabel kompensation och anmäla en medarbetare i planen för variabel kompensation.
 
@@ -78,12 +77,12 @@ När du ska anmäla medarbetare till en plan för variabel kompensation är det 
 
 **Obs!** Berättiganderegler används till planer för både fast och variabel kompensation. Berättiganderegler använder följande fält i posterna för jobb, befattning och anställd för att fastställa om en medarbetare är berättigad till en kompensationsplan.
 
--   På sidan **Jobb**:
-    -   Fältet **Jobb**.
-    -   Fälten **Funktion** och **Jobbtyp** på fliken **Jobbklassificering**.
-    -   Fältet **Nivå** på fliken **Kompensation**.
--   På sidan **Befattningar**: fälten **Avdelning** och **Kompensationsregion**.
--   På sidan **Medarbetare**: Informationen om fackföreningar som är associerad med medarbetaren **Personlig information** &gt; **Fackföreningar** på fliken ****Medarbetare****.
+- På sidan **Jobb**:
+  -   Fältet **Jobb**.
+  -   Fälten **Funktion** och **Jobbtyp** på fliken **Jobbklassificering**.
+  -   Fältet **Nivå** på fliken **Kompensation**.
+- På sidan **Befattningar**: fälten **Avdelning** och **Kompensationsregion**.
+- På sidan <strong>Medarbetare</strong>: uppgifterna om fackföreningar som är kopplade till medarbetaren under <strong>Personuppgifter</strong> &gt; <strong>Fackföreningar</strong> på fliken *<strong><em>Arbetare</em></strong>*.
 
 ### <a name="enable-enrollment-for-the-variable-compensation-plan"></a>Aktivera anmälan till plan för variabel kompensation
 

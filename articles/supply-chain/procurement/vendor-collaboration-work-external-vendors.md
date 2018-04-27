@@ -19,16 +19,16 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 76c2b078b583a1f8f2235eef15dbba514e57b0f8
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 961f0bbc4bb66536d953fa5103f98fcd6924adba
 ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="vendor-collaboration-with-external-vendors"></a>Leverantörssamarbete med externa leverantörer
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Modulen **Leverantörssamarbete** vänder sig till leverantörer som inte har elektronisk dataväxling (EDI) med Microsoft Dynamics 365 for Finance and Operations. Här kan leverantörer arbeta med inköpsorder, fakturor, information för försändelselager och anbudsförfrågningar och även få tillgång till delar av sina huvuddata. I det här avsnittet förklaras hur du kan samarbeta med externa leverantörer som använder gränssnittet för leverantörssamarbete när de arbetar med inköpsorder, anbudsförfrågningar och försändelselager. Det förklaras även hur du låter en viss leverantör använda leverantörssamarbeten, samt hur du definierar den information som alla leverantörer ser när de svarar på en inköpsorder.
 
@@ -116,7 +116,7 @@ Inköpsordern som skickades till leverantören och har statusen <strong>I extern
 <li>Byt ut en artikel.</li>
 </ul>
 Leverantören kan inte ändra prisinformation och avgifter. Leverantören kan föreslå dessa ändringar med hjälp av anteckningar.</td>
-<td>Leverantörens svar registreras som <strong>Accepterad med ändringar</strong> och inköpsorderns status förblir <strong>I extern granskning</strong>. Statusen visar vilka typer av ändringar som leverantören har föreslagit. Information om automatisk förbrukning av ändringarna finns "Uppdatera inköpsordern när en leverantör föreslår ändringar" senare i det här avsnittet. </td>
+<td>Leverantörens svar registreras som <strong>Accepterad med ändringar</strong> och inköpsorderns status förblir <strong>I extern granskning</strong>. Statusen visar vilka typer av ändringar som leverantören har föreslagit. Information om automatisk förbrukning av ändringarna finns i avsnittet &quot;Uppdatera inköpsordern när en leverantör föreslår ändringar&quot; senare i det här ämnet. </td>
 </tr>
 </tbody>
 </table>

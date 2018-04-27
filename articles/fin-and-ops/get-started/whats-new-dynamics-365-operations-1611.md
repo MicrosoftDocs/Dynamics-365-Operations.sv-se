@@ -18,17 +18,16 @@ ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 09addfd9e4a5c601970b5c8c24a3d39b041e07e6
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: be69aff98b1a3a8304461af0f38760988ac28d42
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="whats-new-or-changed-in-dynamics-365-for-operations-version-1611-november-2016"></a>Nyheter och ändringar i Dynamics 365 for Operations-programvaruversion 1611 (november 2016)
 
-[!include[banner](../includes/banner.md)]
-
+[!INCLUDE [banner](../includes/banner.md)]
 
 Den här artikeln innehåller en beskrivning av nya eller ändrade funktioner i Dynamics 365 for Operations version 1611.
 
@@ -113,6 +112,7 @@ Den här artikeln innehåller en beskrivning av nya eller ändrade funktioner i 
 </table>
 
 ## <a name="expense-management"></a>Utläggshantering
+
 | Vad du kan göra                                                            | Varför detta är viktigt                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 |----------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Omtilldela uppsagda medarbetares kreditkortstransaktioner.                     | Ibland avaktiveras en uppsagd medarbetares Active Directory DS (AD DS)-konto vid import av aktiva kreditkortstransaktioner som måste kostnadsföras. Tidigare kunde du inte tilldela ett ombud för utgiftsposten eller koppla kreditkortstransaktionerna till en utgiftsrapport. Nu kan du använda sidan **Kreditkortstransaktioner** för att omtilldela medarbetaren för en kreditkortstransaktion där den associerade medarbetaren har sagts upp. När du har omtilldelat kreditkortstransaktionen, kan transaktionerna väljas för en utgiftsrapport och betalas via den vanliga processen för återbetalning av utgiftsrapport. |
@@ -225,6 +225,7 @@ Den här artikeln innehåller en beskrivning av nya eller ändrade funktioner i 
 </table>
 
 ## <a name="human-capital-management"></a>Administration av humankapital
+
 | Vad du kan göra                                                                                | Varför detta är viktigt                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
 |------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Skapa en prestationsjournal.                                                                  | Innan du slutför granskningen samlar du som medarbetare ofta in information om aktiviteter eller händelser som bidragit till framgångarna under granskningsperioden. Du kan lägga till en post in din prestationsjournal för att dokumentera dessa aktiviteter och händelser. Du kan även koppla dessa aktiviteter och händelser till ett mål eller en prestationsgranskning för att tillhandahålla mer information till granskaren.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
@@ -579,6 +580,7 @@ Följande länder kräver också Butikslokalisering. Butikslokaliseringen för d
 </table>
 
 ## <a name="planning-and-scheduling"></a>Planering och schemaläggning
+
 | Vad du kan göra                                                                                                                                                                                                      | Varför detta är viktigt                                                                                                                                                                                                                                                                                                                                                                                                                 |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Ställa in standardorderinställningar för försäljning och inköp baserat på aktiva produktdimensioner på produktmallen. Därför kan du definiera standardorderinställningar för lagerhållningsenhet (SKU) eller en delvis lagerhållningsenhet. | Du kan ange standardorderinställningar som gäller för alla produktdimensioner eller en kombination av produktdimensioner. **Exempel** Du säljer en produkt med namnet Polo T-shirt. Denna produkt är tillgängliga i två färger: grönt och blått. Den är också tillgänglig i två storlekar: small och medium. Färg och storlek är aktiva produktdimensioner för Polo T-shirt. Du kan spärra inköp av alla gröna Polo T-shirt oavsett deras storlek. |
@@ -624,6 +626,7 @@ Följande länder kräver också Butikslokalisering. Butikslokaliseringen för d
 </table>
 
 ## <a name="project-management-and-accounting"></a>Projekthantering och redovisning
+
 | Vad du kan göra                                                                                                           | Varför detta är viktigt                                                                                                                                                                                                                                                                                                             |
 |---------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Använd sent val när du bokför fakturaförslag i en batch.                                                            | Projektrevisorer kan ställa in ett batchjobb automatiskt till att plocka upp fakturaförslag för bokföring, om dessa förslag uppfyller de villkor som anges i batchjobbet. Den här funktionen förbättrar automationen för fakturabokföring, eftersom batchjobbet kan köras kontinuerlig och automatiskt plocka in förslag för bokföring. |

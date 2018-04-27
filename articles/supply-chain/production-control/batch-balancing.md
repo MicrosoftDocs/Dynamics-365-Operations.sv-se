@@ -19,19 +19,20 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 8.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 84e00ef62a995d37878de6b2786dbc2ee2277070
-ms.openlocfilehash: 8a1ec5a3b19d1022232527f4960617bd985bc2b3
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: 7d00df6263530ba9fff4c246cb3593cd607f6719
 ms.contentlocale: sv-se
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="batch-balancing"></a>Batchbalansering
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
+Det här avsnittet beskriver hur processen för batchbalansering stöds. 
 
-Det här avsnittet beskriver hur processen för batchbalansering stöds.
+Titta på en [video om batchbalansering i Microsoft Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=4SNLWsU9KyI&feature=youtu.be).
 
 I processen för batchbalansering beräknas mängden ingredienser som ska användas i ett produktionsparti utifrån koncentrationen av aktiva substanser valda produktionsbatchar.
 
@@ -179,7 +180,7 @@ När beståndsdelkvantiteterna har beräknats kan du bekräfta och frisläppa fo
 
 -   Om en produkt är aktiverad för lagerstyrningsprocesser frisläpps receptraden till lagret enligt principerna för lagerstyrningsprocesser. Receptraden frisläpps i kvantiteter som motsvarar balanserade kvantiteter och frisläpps för speciella batcher som väljs för den aktiva komponenten.
 
->   [!NOTE]
+> [!NOTE]
 >   Receptrader kan frisläppas till lagerstället som en del av batchbalanseringsprocessen. Även om det finns andra alternativ för att frisläppa material för tillverkning på lagerstället, kan inte dessa alternativ användas för receptrader.
 
 -   Om en produkt inte har aktiverats för lagerstyrningsprocesser skapas en produktionsplocklista för produkten när du bekräftar och frisläpper formeln.

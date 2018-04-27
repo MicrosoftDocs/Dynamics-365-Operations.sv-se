@@ -1,5 +1,5 @@
 --- 
-title: "Mappa modeller som använder ekonomiska dimensioner som datakälla för elektronisk rapportering (ER)"
+title: "Mappa modeller för att använda ekonomiska dimensioner som en datakälla"
 description: "I följande steg beskrivs hur en användare som tilldelats en roll som systemadministratör eller utvecklare för elektronisk rapportering kan konfigurera en modell för elektronisk rapportering (ER) för att använda ekonomiska dimensioner som datakällor för ER-rapporter."
 author: NickSelin
 manager: AnnBe
@@ -16,15 +16,15 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7be3e9970e2599c159e7c9d414b54876d0116350
-ms.openlocfilehash: a5fa6fb07fb2ba08812826acba748b38738bb468
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: c26713a8a391f9f10a6e24f6619c24c1615d4560
 ms.contentlocale: sv-se
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 04/13/2018
 
 ---
-# <a name="map-models--to-use-financial-dimensions-as-a-data-source-for-electronic-reporting-er"></a>Mappa modeller som använder ekonomiska dimensioner som datakälla för elektronisk rapportering (ER)
+# <a name="map-models--to-use-financial-dimensions-as-a-data-source"></a>Mappa modeller för att använda ekonomiska dimensioner som en datakälla 
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 I följande steg beskrivs hur en användare som tilldelats en roll som systemadministratör eller utvecklare för elektronisk rapportering kan konfigurera en modell för elektronisk rapportering (ER) för att använda ekonomiska dimensioner som datakällor för ER-rapporter. Dessa steg kan utföras på valfritt företag.
 

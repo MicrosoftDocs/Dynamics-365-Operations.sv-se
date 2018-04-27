@@ -1,5 +1,5 @@
 --- 
-title: "Granska konfigurationer för att skapa rapporter i Microsoft Office-format med inbäddade bilder för elektronisk rapportering (ER)"
+title: "Granska konfigurationer för att göra rapporter i Microsoft Office-format med inbäddade bilder"
 description: "För att kunna genomföra stegen måste du först slutföra stegen i uppgiftsguiden \"ER Skapa rapporter i MS Office-format med inbäddade bilder (Del 1: Ställ in parametrar)\"."
 author: NickSelin
 manager: AnnBe
@@ -16,15 +16,15 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: dcc162a4c0ba81079eefb7564ab037c1287acd92
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: fe58809c60fa27a605d84a61893ff569ded058ef
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 04/13/2018
 
 ---
-# <a name="review-configurations-to-make-reports-in-microsoft-office-formats-with-embedded-images-for-electronic-reporting-er"></a>Granska konfigurationer för att skapa rapporter i Microsoft Office-format med inbäddade bilder för elektronisk rapportering (ER)
+# <a name="review-configurations-to-make-reports-in-microsoft-office-formats-with-embedded-images"></a>Granska konfigurationer för att göra rapporter i Microsoft Office-format med inbäddade bilder
 
-[!include[task guide banner](../../includes/task-guide-banner.md)]
+[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
 
 För att kunna genomföra stegen måste du först slutföra stegen i uppgiftsguiden "ER Skapa rapporter i MS Office-format med inbäddade bilder (Del 1: Ställ in parametrar)".
 

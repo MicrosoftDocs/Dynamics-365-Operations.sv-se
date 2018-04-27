@@ -20,16 +20,16 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 468227e40165fa37e9ce80d5f52ded8e9094e5d1
+ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
+ms.openlocfilehash: a0a28ba5072d55b8133f5458f75befa752a3dcdf
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 04/13/2018
 
 ---
 
 # <a name="production-parameters-in-manufacturing-execution"></a>Produktionsparametrar i Tillverkningskörning
 
-[!include[banner](../includes/banner.md)]
+[!INCLUDE [banner](../includes/banner.md)]
 
 Det här avsnittet innehåller information om inställningar av produktionsparametrar i Tillverkningskörning.
 
@@ -69,17 +69,17 @@ För varje steg i fältet **Automatisk förbrukning av strukturlista** kan du v�
 
 - **Avräkningsprincip** – Det här alternativet används i kombination med ett alternativ som definieras för strukturlistan i modulen **Produktion**. Klicka på **Produktionskontroll** &gt; **Allmänt** &gt; **Produktionsorder** &gt; **Alla produktionsorder**. På sidan **Alla produktionsorder**, välj en produktionsorder i listan och klicka sedan på **Strukturlista** i åtgärdsfönstret. På sidan **Strukturlista** på fliken **Inställningar** i fältet **Avräkningsprincip** ska du välja ett av följande alternativ:
 
-    - **Starta**
-    - **Avsluta**
-    - **Manuell**
-    - Tom (inget alternativ har valts).
-    - **Tillgänglig på plats**
+  - **Starta**
+  - **Avsluta**
+  - **Manuell**
+  - Tom (inget alternativ har valts).
+  - **Tillgänglig på plats**
 
     Vid Tillverkningskörning, om **Avräkningsprincip** väljs i fältet **Automatisk förbrukning av strukturlista** på fliken **Starta**, dras allt material som är inställt på **Starta** i Strukturlista från lagret när operationen startas. Alternativet **Finns på plats** används för produkter som är aktiverade för avancerade lagerprocesser. Om du väljer denna avräkningsprincip töms material när lagerställearbete för plockning av råmaterial har slutförts. Material töms även när en strukturlisterad som använder denna avräkningsprincip frisläpps till ett lagerställe och material finns på platsen för produktionsinleverans.
-    
+
     > [!NOTE]
     > Om fältet **Avräkningsprincip** ställs in på flien **Starta** vid tillverkningskörning måste du välja samma princip antingen på fliken **Åtgärder** eller fliken **Rapportera som färdig**. Detta krav bidrar till att säkerställa att material dras från lagret på strukturlistor med **Slutför** som en avräkningsprincip på tillverkningsordern. Om samma avräkningsprincip väljs, antingen på fliken **Operationer** eller fliken **Rapportera som färdig**, kan material dras av från lagret två gånger.
- 
+
 - **Alltid** – Om du väljer det här alternativet för en fas dras materialen alltid från lagret i den fasen. Exempelvis dras material för produktionen när tillverkningsordern startas. Den här inställningen kräver att **Aldrig** väljs på flikarna **Operationer** och **Rapportera som färdig**. Detta krav förhindrar att artiklar som dras från lagret två gånger.
 - **Aldrig** – Om du markerar det här alternativet för en fas sker ingen strukturlisteförbrukning i den fasen. Om du exempelvis väljer **Aldrig** på alla de tre flikarna (**Starta**, **Operationer** och **Rapportera som färdig**) måste material dras manuellt från lagret.
 
@@ -146,11 +146,13 @@ Baserat på de val som beskrivits tidigare i det här avsnittet bokförs plockli
 
 Du kan använda följande inställningar om materialen alltid ska dras av manuellt från lagret. I det här fallet bokförs plocklistejournalerna inte.
 
-| Flik                | Fält                          | Inställning    |
-|--------------------|--------------------------------|------------|
-| Starta              | Uppdatera start online           | **Status** |
-| Starta              | Automatisk strukturlisteförbrukning      | **Aldrig**  |
-| Operations         | Automatisk strukturlisteförbrukning      | **Aldrig**  |
-| Rapportera som färdig | Automatisk strukturlisteförbrukning      | **Aldrig**  |
-| Rapportera som färdig | Uppdatera färdig rapport online | **Status** |
+
+|        Flik         |             Fält              |         Inställning         |
+|--------------------|--------------------------------|-------------------------|
+|       Starta        |      Uppdatera start online      | <strong>Status</strong> |
+|       Starta        |   Automatisk strukturlisteförbrukning    | <strong>Aldrig</strong>  |
+|     Operations     |   Automatisk strukturlisteförbrukning    | <strong>Aldrig</strong>  |
+| Rapportera som färdig |   Automatisk strukturlisteförbrukning    | <strong>Aldrig</strong>  |
+| Rapportera som färdig | Uppdatera färdig rapport online | <strong>Status</strong> |
+
 
