@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="immediate-replenishment"></a>Omedelbar lagerpåfyllnad
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Omedelbar lagerpåfyllnad gör det möjligt att fylla på lagret direkt efter att ett platsdirektiv för lagerställe misslyckas att tilldela lager. Påfyllningen baseras på en enkel rad i inställningarna av platsdirektivet. Om lagerbehållning inte finns är måttenheten som anges av den raden sker lagerpåfyllnad av den måttenheten omedelbart.
 

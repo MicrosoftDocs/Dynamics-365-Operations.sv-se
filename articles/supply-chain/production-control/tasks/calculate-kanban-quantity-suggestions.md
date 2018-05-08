@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="calculate-kanban-quantity-suggestions"></a>Beräkna förslag till kanban-kvantitet
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Den här proceduren fokuserar på att optimera kanban-storleken och kvantiteterna för en specifik kanban-regel med hjälp av kanban-kvantitetsberäkningen. Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF. Den här proceduren är avsedd för den värdeströmsansvarige. Det är en förutsättning att du har slutfört proceduren Lägg till en beräkningspolicy för kanban-kvantitet till en kanban-regel.
 

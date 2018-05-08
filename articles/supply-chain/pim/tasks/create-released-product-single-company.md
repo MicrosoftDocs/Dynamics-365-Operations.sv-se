@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-released-product-for-a-single-company"></a>Skapa en frisläppt produkt för ett enskilt företag
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 I den här proceduren beskrivs hur du skapar en enskild frisläppt produkt i sammanhanget för en enskild juridisk enhet. När en frisläppt den produkten har skapats, är den endast direkt tillgänglig i den här enheten. Du kan gå igenom den här proceduren i demonstrationsföretaget USMF. Denna uppgift utförs vanligtvis av en produktdesigner.
 

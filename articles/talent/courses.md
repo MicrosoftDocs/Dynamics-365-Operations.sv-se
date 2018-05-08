@@ -28,7 +28,7 @@ ms.lasthandoff: 02/23/2018
 
 # <a name="set-up-training-courses"></a>Ställa in utbildningskurser
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Personalresursadministratörer och chefer kan använda kursfunktionerna för att underhålla information om utbildningen som ges till arbetare.
 

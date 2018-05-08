@@ -26,7 +26,7 @@ ms.lasthandoff: 03/08/2018
 
 # <a name="create-an-engaging-onboarding-experience"></a>Skapa en bra integreringsupplevelse
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Om integreringen sker på ett effektivt sätt hjälper den nya medarbetare att arbeta mer effektivt, samtidigt som de även får en känsla av att de har hittat rätt i sin nya roll. Integreringen kan hjälpa nya medarbetare att förstå sina nya roller snabbare och bättre än de annars hade gjort, och de får dessutom ett försprång i fråga om att skapa relationer som kan hjälpa dem att lyckas. Omvänt kan en ineffektiv integreringsupplevelse få medarbetaren att känna tvivel över sitt beslut att gå med i din organisation. En undersökning som genomförts av Gartner år 2014 fann att nästan en tredjedel av de 1 005 svarande som lämnat ett jobb under de första sex månaderna gjorde detta efter de riktlinjer man fick från ledningen var oklara, utbildningen ineffektiv, eller på grund av att man inte lyckades skapa effektiva relationer i sin nya miljö.
 

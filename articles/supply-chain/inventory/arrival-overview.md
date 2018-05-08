@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="arrival-overview"></a>Införselöversikt
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Det här avsnittet ger information om funktionen Införselöversikt. Sidan för införselöversikt är en del av den här funktionen och ger en översikt över alla artiklar som förväntas ankomma som inkommande artiklar.
 

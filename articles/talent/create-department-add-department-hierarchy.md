@@ -28,7 +28,7 @@ ms.lasthandoff: 03/23/2018
 
 # <a name="create-a-department-and-associate-it-with-the-department-hierarchy"></a>Skapa en avdelning och associera den med avdelningens hierarki
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 En avdelning är en driftenhet som representerar en kategori eller verksamhetsområde inom en organisation. En avdelning är ansvarig för en viss del av organisationen, såsom försäljning, bokföring eller mänskliga resurser. Du kan använda avdelningar att rapportera om funktionella områden. Avdelningar kan ha vinst och förlust.
 

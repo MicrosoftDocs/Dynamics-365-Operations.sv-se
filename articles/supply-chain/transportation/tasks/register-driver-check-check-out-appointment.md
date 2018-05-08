@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="register-driver-check-in-and-check-out-for-an-appointment"></a>Registrera en förares incheckning och utcheckning för ett möte
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Den här proceduren visar hur du registrerar en in- och utcheckning av förare. Detta görs vanligtvis av transportsamordnaren. Du kan använda den här proceduren i demonstrationsdataföretaget USMF. Innan du startar måste en tidpunkt reserveras för en beläggning. Om du vill skapa en tidpunkt kan du köra proceduren ”Set up an appointment for a load" som en förutsättning.
 

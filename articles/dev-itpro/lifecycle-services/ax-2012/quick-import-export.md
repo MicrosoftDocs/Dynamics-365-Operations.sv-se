@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="run-the-test-data-transfer-tool-beta-for-dynamics-ax-ax-2012"></a>Kör Test Data Transfer Tool (beta) för Dynamics AX (AX 2012)
 
-[!INCLUDE [banner](../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Syftet med funktionen Snabb import/export är att du ska kunna importera och exportera med färre steg.
 

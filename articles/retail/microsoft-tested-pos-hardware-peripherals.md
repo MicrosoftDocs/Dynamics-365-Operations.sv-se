@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="pos-hardware-peripherals"></a>Kringutrustning för kassa
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Retail Modern point of sale (POS) och Cloud POS kan använda en mängd olika kassakringutrustning, med flera olika gränssnitt och tillämpningsalternativ för att uppfylla en återförsäljares olika verksamhetsscenarier. 
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="action-messages"></a>Åtgärdsmeddelanden
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ett åtgärdsmeddelande är ett systemgenererat förslag om att ändra en befintlig planerad eller bekräftad order.
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="requests-for-quotation-rfqs"></a>Anbudsförfrågningar (RFQ)
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Det här ämnet ger en översikt över anbudsförfrågningar (RFQ). Organisationer utfärdar anbudsförfrågan (RFQ) när de vill ta emot konkurrenskraftiga erbjudanden för de artiklar eller tjänster som de måste köpa. I en anbudsförfrågan ber du leverantörer att ge priser och leveranstiderna för de kvantiteter av artiklar du anger.
 Du kan också be leverantörerna att ange om det finns några tillfälliga avgifter, till exempel fraktkostnader, eller om leverantören erbjuder rabatter för stora order eller tidig betalning av leverantörsfakturan.

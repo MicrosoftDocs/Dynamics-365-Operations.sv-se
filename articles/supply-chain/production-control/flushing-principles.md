@@ -28,7 +28,7 @@ ms.lasthandoff: 02/08/2018
 
 # <a name="controlling-raw-material-consumption-by-using-flushing-principles"></a>Styr råmaterialförbrukning med avräkningsprinciper
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Avräkningsprinciper återspeglar olika förbrukningsstrategier för råmaterial som används i produktionsprocessen. Förbrukningen är den process som drar av material från lagerbehållningen och anger värdet för det förbrukade materialet till **Pågående arbete** (PIA) för produktionsorder och batchorder. Vanligen förbrukas råmaterial från en plats som har konfigurerats för processen som förbrukar materialet. Den här platsen kallas produktionsinleveransplatsen.
 

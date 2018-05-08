@@ -27,7 +27,7 @@ ms.lasthandoff: 03/05/2018
 
 # <a name="hardware-sizing-for-on-premises-environments"></a>Beräkna maskinvara för lokala miljöer
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Innan du påbörjar beräkningsprocessen för maskinvara och infrastruktur för en lokal miljö bör du bekanta dig med [systemkrav](system-requirements.md) och [instruktioner för installation och distribution](../../dev-itpro/deployment/setup-deploy-on-premises-environments.md) för att få en djupare förståelse av underliggande infrastruktur. 
 

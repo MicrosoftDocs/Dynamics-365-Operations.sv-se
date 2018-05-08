@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="work-breakdown-structures"></a>Uppdelade arbetsstrukturer
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 En uppdelad arbetsstruktur (WBS) är en beskrivning av det arbete som utförs för ett projekt. Det är en hierarki med uppgifter som representerar projektteamets kännedom om sammansättningen av arbete och storleken, kostnaden och tidslängden för varje komponent eller uppgift. En WBS har tre viktiga syften:
 

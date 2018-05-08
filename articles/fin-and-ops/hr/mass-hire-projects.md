@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="mass-hire-projects"></a>Massanställningsprojekt
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Massanställningsprojekt låter personalresursspecialister skapa flera befattningar och anställa ett antal arbetare till dessa befattningar på ett effektivt sätt.
 

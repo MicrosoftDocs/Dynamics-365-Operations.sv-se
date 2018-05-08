@@ -28,9 +28,9 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="whole-amount-and-interval-calculation-options-for-sales-tax-codes"></a>Alternativ för hela belopp och intervallberäkning för momskoder
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 Den här artikeln beskriver alternativen för fältet Beräkningsmetod för momskoder och hur moms beräknas för intervall och hela belopp.
 

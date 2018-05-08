@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="vat-reporting-for-europe"></a>Momsrapporter för Europa
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Det här avsnittet innehåller allmän information om inställning och skapande av mervärdesskattutdrag (moms) för vissa europeiska länder.
 

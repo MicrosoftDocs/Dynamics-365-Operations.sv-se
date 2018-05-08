@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="take-a-cash-discount-outside-the-cash-discount-period"></a>Ta en kassarabatt utanför kassarabattperioden
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Den här artikeln tillhandahåller två scenarier som visar hur en kassarabatt kan utnyttjas även om betalningen görs utanför kassarabattperioden.
 

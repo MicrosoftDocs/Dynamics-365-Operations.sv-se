@@ -25,7 +25,7 @@ ms.lasthandoff: 02/08/2018
 ---
 
 # <a name="vendor-request-configurations"></a>Konfigurationer för leverantörsförfrågan
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Om du vill slutföra en leverantörsförfrågan måste en kontaktperson för leverantören slutföra registreringsguiden för potentiell leverantör.
 

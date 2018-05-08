@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-subcontracted-work-cell-for-lean-manufacturing"></a>Skapa en arbetsgrupp för legotillverkning för lean manufacturing
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Om du vill modellera legotillverkningsarbete för lean manufacturing måste du skapa en arbetsgrupp som är kopplad till den leverantör som tillhandahåller arbetet. En arbetsgrupp för legotillverkning är kopplad till leverantören genom associationen med en resurs av typen Leverantör. Om du spelar upp den här inspelningen i demonstrationsföretaget USMF kan du välja leverantörskonto-ID 1002 och plats 1.
 

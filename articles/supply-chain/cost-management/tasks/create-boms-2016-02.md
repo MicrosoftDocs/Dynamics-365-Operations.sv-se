@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="create-boms-february-2016-only"></a>Skapa strukturlistor (enbart februari 2016)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Den här uppgiften fokuserar på att skapa strukturlistestrukturen för en färdig produkt och en halvfärdig produkt. Detta är den fjärde uppgiften i beräkningsserien för strukturlista. Det demonstrationsdataföretag som används för att skapa den här uppgiften är USMF.
 

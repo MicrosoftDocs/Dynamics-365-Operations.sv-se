@@ -24,7 +24,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="design-configurations-to-parse-incoming-documents-for-application-data-updates-er"></a>Utforma konfigurationer för att tolka inkommande dokument för uppdatering av programdata (ER)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denna procedur visar hur du utformar ER-konfigurationer (elektronisk rapportering) för att tolka ett inkommande elektroniskt dokument. I den här proceduren ska du importera erforderliga ER-konfigurationer som har skapats för exempelföretaget Litware, Inc. och använda dem för att tolka inkommande elektroniska dokument. För att slutföra stegen i den här proceduren måste du först slutföra stegen i proceduren "ER Skapa en konfigurationsleverantör och markera den som aktiv."
 

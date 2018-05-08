@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="balanced-journals-for-interunit-accounting"></a>Balanserade journaler för internredovisning
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Den här artikeln visar hur en journal automatiskt balanseras när en balanserande ekonomisk dimension har valts på sidan Redovisning. 
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="adjust-stock-levels-in-the-warehouse-basic-warehousing"></a>Justera lagernivåer i lagerstället (grundläggande lagerstyrning)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Den här proceduren beskriver hur du kan skapa och bokför en lagerjusteringsjournal för att justera lagernivåer för produkter på lagerstället. Du måste ha ett lagerjournalnamn konfigurerat för lagerjusteringarna innan du sätter igång. Du kan gå igenom den här proceduren i demonstrationsdataföretaget USMF eller använda dina egna data. Dessa uppgifter utförs vanligtvis av en lagerarbetare.
 

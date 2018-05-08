@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-solicitation-types-and-scoring-criteria-for-rfqs"></a>Skapa begäranstyper och göra poängvillkor för anbudsförfrågan
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 I den här handboken visas hur du skapar en typ av begäran och associerar med en poängmetod. Den visar även hur du använder typen av begäran på en anbudsförfrågan som sedan anger standardpoängmetoden. Dessa uppgifter utförs vanligtvis av en inköpschef. Du kan använda den här proceduren i demonstrationsföretaget USMF eller på dina egna data. Du behöver ha en tillgänglig poängmetod innan du börjar.
 

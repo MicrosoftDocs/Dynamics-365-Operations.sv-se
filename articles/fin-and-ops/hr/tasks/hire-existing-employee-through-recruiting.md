@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="hire-an-existing-employee-through-recruiting"></a>Anställ en befintlig medarbetare genom att rekrytera
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ibland kan lediga befattningar fyllas av kandidater som redan är medarbetare i organisationen. Den här proceduren går igenom stegen för att anställa en befintlig medarbetare via rekryteringsprocessen. I den här proceduren har ett rekryteringsprojekt redan ställts in och en befintlig medarbetare har redan skickat in en ansökning för rekryteringsprojektet. Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="create-a-bill-of-lading"></a>Skapa en fraktsedel
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 I det här avsnittet beskrivs hur du skapar en fraktsedel när du använder lagerstyrningsprocesser.  
 

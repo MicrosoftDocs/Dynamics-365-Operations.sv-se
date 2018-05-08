@@ -28,7 +28,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="accounts-receivable-home-page"></a>Startsida för Kundreskontra
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Använd Kundreskontra när du vill spåra kundfakturor och inkommande betalningar. 
 

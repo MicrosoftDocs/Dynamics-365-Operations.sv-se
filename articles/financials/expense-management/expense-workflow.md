@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="expense-workflow"></a>Arbetsflöde för utgifter
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Du kan använda arbetsflödessystemet i Microsoft Dynamics 365 for Finance and Operations för att skapa en granskningsprocess för utgiftsrapporter i utgiftshanteraren. Du kan skapa ett arbetsflöde som utnyttjar följande kriterier i syfte att avgöra vem som får godkänna utgiftsrapporter:
 

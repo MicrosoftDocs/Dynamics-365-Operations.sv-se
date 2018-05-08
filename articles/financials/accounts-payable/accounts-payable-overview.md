@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="configure-accounts-payable"></a>Konfigurera leverantörsreskontra
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Det här avsnittet innehåller en beskrivning av de sidor som används för att ställa in grundläggande och valfria funktion för Leverantörsreskontra i Microsoft Dynamics 365 for Finance and Operations. Även inställningsstegen som du måste vidta innan du börjar ställa in Leverantörsreskontra beskrivs.
 

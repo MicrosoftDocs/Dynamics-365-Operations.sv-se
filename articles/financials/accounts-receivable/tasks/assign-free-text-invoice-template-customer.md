@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="assign-a-free-text-invoice-template-to-a-customer"></a>Tilldela en mall för fritextfaktura till en kund
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denna uppgift visar hur du tilldelar en fritextfakturamall till en kund. I denna uppgift används USMF-demonstrationsföretaget och är avsett för den användare som ansvarar för hantering och bearbetning av kundreskontrafakturor.
 

@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="configure-a-parallel-activity-in-a-workflow"></a>Konfigurera en parallell aktivitet i ett arbetsflöde
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Slutför följande procedurer i arbetsflödesredigeraren om du vill konfigurera en parallell aktivitet.
 

@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="eu-sales-list-reporting"></a>EU-säljlistrapportering
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Det här avsnittet innehåller information om rapportering av försäljningslista för Europeiska unionen (EU).
 

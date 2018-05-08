@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="derived-books"></a>Härledda räkenskapsböcker
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Den här artikeln ger en översikt över funktionerna för härledda böcker.
 

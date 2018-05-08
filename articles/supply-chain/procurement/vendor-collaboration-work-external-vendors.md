@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="vendor-collaboration-with-external-vendors"></a>Leverantörssamarbete med externa leverantörer
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Modulen **Leverantörssamarbete** vänder sig till leverantörer som inte har elektronisk dataväxling (EDI) med Microsoft Dynamics 365 for Finance and Operations. Här kan leverantörer arbeta med inköpsorder, fakturor, information för försändelselager och anbudsförfrågningar och även få tillgång till delar av sina huvuddata. I det här avsnittet förklaras hur du kan samarbeta med externa leverantörer som använder gränssnittet för leverantörssamarbete när de arbetar med inköpsorder, anbudsförfrågningar och försändelselager. Det förklaras även hur du låter en viss leverantör använda leverantörssamarbeten, samt hur du definierar den information som alla leverantörer ser när de svarar på en inköpsorder.
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="posting-definition-examples"></a>Exempel: bokföringsdefinitioner
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denna artikel innehåller exempel som visar hur du använder bokföringsdefinitioner för inköpsorderinteckningar och budgetanslag.
 

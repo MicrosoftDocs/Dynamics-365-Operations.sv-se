@@ -29,7 +29,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="cost-accounting-terminology"></a>Kostnadsredovisningsterminologi
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Detta ämne definierar de grundläggande villkoren som används i kostnadsredovisning.
 

@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="order-holds"></a>Orderspärrar
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 I det här avsnittet beskrivs spärrar på order i Dynamics 365 for Retail.
 

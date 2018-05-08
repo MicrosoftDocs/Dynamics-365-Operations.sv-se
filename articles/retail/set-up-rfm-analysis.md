@@ -29,7 +29,7 @@ ms.lasthandoff: 12/14/2017
 
 # <a name="set-up-rfm-analysis"></a>Ställa in RFM-analys
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Det här avsnittet innehåller information om hur du ställer in recency, frekvens och monetär analys (RFM) för dina kunder.
 

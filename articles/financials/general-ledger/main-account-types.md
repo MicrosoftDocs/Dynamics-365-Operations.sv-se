@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="main-account-types"></a>Huvudkontotyper
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Huvudkontotyperna bestämmer hur ett huvudkonto används i kontoplanen.
 

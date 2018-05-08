@@ -29,7 +29,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="create-rules-for-optimization-advisor"></a>Skapa regler för Optimization advisor
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Det här avsnittet beskriver hur du lägger till nya regler i **Optimization advisor**. Du kan till exempel skapa en ny regel som identifierar vilka anbudsförfrågningar (RFQ) som har en tom rubrik. Att använda titlar på ärenden gör dem lätta att känna igen och sökbara. Även om exemplet är ganska enkelt visar det vad som kan uppnås med optimeringsregler. 
 

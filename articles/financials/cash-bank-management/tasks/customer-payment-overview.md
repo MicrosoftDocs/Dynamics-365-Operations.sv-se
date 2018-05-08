@@ -24,7 +24,7 @@ ms.lasthandoff: 10/26/2017
 ---
 # <a name="customer-payment-overview"></a>Översikt över kundbetalning
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Den här guiden går igenom olika metoder som används för att ange kundbetalningar. I den här uppgiften används demonstrationsföretaget USMF.
 

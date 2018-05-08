@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="settle-a-partial-vendor-payment-before-the-discount-date-with-a-final-payment-after-the-discount-date"></a>Kvitta en leverantörsdelbetalning före rabattdatumet med en slutbetalning efter rabattdatumet
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Det här avsnittet innehåller en genomgång av ett scenario där flera delbetalningar görs. Vissa av dem inom kassarabattperioden och andra utanför den.
 

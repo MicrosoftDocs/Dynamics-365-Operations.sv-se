@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="straight-line-service-life-depreciation"></a>Linjär avskrivning av tjänstelivstid
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Det här avsnittet ger en översikt över metoden för linjär tjänstelivstid för avskrivning.
 

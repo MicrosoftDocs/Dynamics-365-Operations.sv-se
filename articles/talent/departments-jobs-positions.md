@@ -28,9 +28,9 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="organize-your-workforce-using-departments-jobs-and-positions"></a>Organisera dina medarbetare med hjälp av avdelningar, jobb och befattningar
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
-[!INCLUDE [retail name](includes/retail-name.md)]
+[!include [retail name](includes/retail-name.md)]
 
 Avdelningar, jobb och befattningar är organisationselement som underhålls i Personal. Det här avsnittet beskriver begreppsmässig information om dessa element. 
 

@@ -26,7 +26,7 @@ ms.lasthandoff: 04/13/2018
 # <a name="reverse-charge-vat"></a>Omvänd moms
 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 
 Det här avsnittet beskriver en allmän metod för att ställa in omvänd moms (VAT) för Saudiarabien och europeiska länder.

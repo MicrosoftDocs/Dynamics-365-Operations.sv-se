@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-cost-rollup-policy"></a>Skapa en policy för samlade kostnader
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Nedan beskrivs proceduren att skapa en policy för samlad kostnad och skapa regler för den policyn. De demonstrationsdata som används för att skapa den här proceduren är USP2.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="receive-an-eu-entry-certificate"></a>Ta emot ett EU-mottagningskvitto
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Den här proceduren visar hur du registrerar ett EU-mottagningskvitto som har utfärdats av en tredje part och tagits emot från din kund.
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="execute-kanban-process-jobs"></a>Kör kanban-processjobb
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Den här proceduren är avsedd för att köra kanban-processjobb. Det första jobbet är slutfört med den förväntade kvantiteten och har inga fel. Det andra jobbet slutförs med fel. Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF. Den här proceduren är avsedd för maskinoperatören.
 

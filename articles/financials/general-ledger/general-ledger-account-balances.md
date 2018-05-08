@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="general-ledger-account-balances"></a>Kontosaldon i redovisningen
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Det här avsnittet beskriver två sätt att visa redovisningkontosaldon - sidan Råbalanslista och ekonomiska rapporter. Avsnittet beskriver även upp hur du uppdaterar dimensionsuppsättningsaldon.
 

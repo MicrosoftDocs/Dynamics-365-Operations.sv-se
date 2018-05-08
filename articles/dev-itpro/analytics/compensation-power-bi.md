@@ -26,7 +26,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="compensation-power-bi-content"></a>Power BI-innehållspaket för kompensationer
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Det här avsnittet beskriver Microsoft Power BI-innehåll för **Kompensation**. Det förklarar hur du öppnar rapporter, och ger information om den datamodell och de enheter som användes för att skapa innehållet.
 

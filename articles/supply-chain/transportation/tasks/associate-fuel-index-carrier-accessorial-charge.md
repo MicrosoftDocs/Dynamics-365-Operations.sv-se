@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="associate-a-fuel-index-with-a-carrier-as-an-accessorial-charge"></a>Associera ett bränsleindex med ett transportföretag som ett tillägg
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 I den här guiden visas hur du skapar en tilldelning av tillägg, en tilläggsavgift för transportföretag, en tilläggsmall för bränsletillägg och associerar ett transportföretags bränsleindex med ett transportföretag. Du måste ha ställt in ett transportföretags bränsleindex innan du kör den här guiden. Du kan använda guiden "Ställa in bränsleindex för transportföretag" för att göra detta. Dessa inställningsuppgifter utförs normalt av en logistikansvarig. De demonstrationsdata som används för att skapa den här proceduren är USMF.
 

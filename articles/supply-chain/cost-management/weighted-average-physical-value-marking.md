@@ -29,9 +29,9 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="weighted-average-with-physical-value-and-marking"></a>Viktat genomsnitt med fysiskt värde och markering
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 Viktat medelvärde är en lagermodell som baseras på principen om viktat medelvärde, där utleveranser från lagret värderas till medelvärdet av de artiklar som inlevereras till lagret under lagerstängningsperioden, plus all lagerbehållning från föregående period.
 

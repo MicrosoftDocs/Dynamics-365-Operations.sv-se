@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="fixed-assets-roll-forward-report"></a>Uppdateringsrapport över anläggningstillgångar
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 **Uppdateringsrapporten för anläggningstillgångar** ger detaljerade data, i ett lättläst Microsoft Excel-format, för periodens stängning, bokslut och momsrapportering. Rapporten innehåller start- och slutsaldon för anläggningstillgångar, samt en värderingen av rörelser för perioden, och ny anskaffning och avyttring som uppstått under perioden. Data rapporteras för enskilda anläggningstillgångar och sammanfattas även för grupper av anläggningstillgångar och juridisk person.
 

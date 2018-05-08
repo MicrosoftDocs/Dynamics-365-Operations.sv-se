@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="financial-insights"></a>Ekonomiska insikter
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 **Ekonomiska insikter** använder Microsoft Power BI för att sammanföra bokslut, diagram och ekonomiska nyckeltal (KPI). Power BI är inbäddat i Microsoft Dynamics 365 Finance and Operations.
 Tyngdpunkten i **Ekonomiska insikter** är analytisk rapportering. All personal i organisationen kan läsa, undersöka, förstå och agera. 

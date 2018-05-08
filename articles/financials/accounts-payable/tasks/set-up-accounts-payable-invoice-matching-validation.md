@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 
 # <a name="set-up-accounts-payable-invoice-matching-validation"></a>Konfigurera validering av fakturamatchning för leverantörsreskontra
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 I den här registreringen används demonstrationsföretaget USMF. Leverantörsreskontrachefsrollen eller redovisningschefsrollen ska utföra stegen nedan. Innan du börjar kontrollerar du att konfigurationsnyckeln för fakturamatchning har valts. Om din juridiska person spårar utgifter, till exempel frakt, genom att använda avgifter, se till att Konfigurationsnycklar för Tillägg har valts.  Fakturamatchning i leverantörsreskontra är den process där information om leverantörsfaktura, inköpsorder och produktinleverans matchas. Skillnader mellan dessa dokument kallas för matchningsavvikelser. Matchningsavvikelser jämförs med toleranserna som ställts in. Om en matchningsavvikelse överskrider toleransprocenten eller toleransmängden visas matchningsavvikelseikoner på sidan Leverantörsfaktura och på sidan Fakturahistorik och matchningsuppgifter.
 

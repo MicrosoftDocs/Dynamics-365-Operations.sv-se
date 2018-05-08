@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="distributions-on-an-expense-report"></a>Fördelningar på en utgiftsrapport
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
  När du för in utgifter i en utgiftsrapport kan du fördela utgiften över flera olika projekt, finansiella dimensioner eller konton i din organisation.
 

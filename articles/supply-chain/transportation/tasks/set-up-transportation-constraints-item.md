@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-transportation-constraints-for-an-item"></a>Ställ in transportbegränsningar för en artikel
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Den här proceduren ställer in en transportbegränsning för att förhindra att en vald artikel ska transporteras genom ett valt nav. Den här uppgiften utförs vanligtvis av en Transportkoordinator. Du kan använda den här proceduren i demonstrationsföretaget USMF eller på dina egna data.
 

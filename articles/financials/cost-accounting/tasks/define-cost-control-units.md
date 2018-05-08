@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="define-cost-control-units"></a>Definiera kostnadsstyrenheter
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 I den här proceduren beskrivs hur du definierar kostnadsstyrenheter i huvudboken för kostnadsredovisning. Du väljer kostnadsobjektdimensionen som du vill kontrollera kostnader för i huvudboken. Kostnadsobjektdimensionsmedlemmarna omvandlas till kostnadsobjekt för kostnadsstyrenheterna. Det demonstrationsdataföretag som används för att skapa den här proceduren är USP2.
 

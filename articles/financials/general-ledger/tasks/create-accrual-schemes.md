@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-accrual-schemes"></a>Skapa periodiseringsscheman
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Den här uppgiften leder dig genom stegen för att skapa ett periodiseringsschema. I den här uppgiften används demonstrationsföretaget USMF.
 

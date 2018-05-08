@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="use-a-customer-payment-to-settle-multiple-invoices-that-span-multiple-discount-periods"></a>Använda en kundbetalning för att kvitta flera fakturor som omfattar flera rabattperioder
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Det här ämnet visar hur flera fakturor betalas när varje faktura är kvalificerad för en kassarabatt. Scenarierna i den här artikeln visar hur de utnyttjade kassarabatterna varierar beroende på när betalningen görs.
 

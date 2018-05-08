@@ -26,7 +26,7 @@ ms.lasthandoff: 03/26/2018
 ---
 # <a name="configure-sql-server-reporting-services-for-an-on-premises-deployment"></a>Konfigurera SQL Server Reporting Services för en lokal distribution
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Använd stegen i det här avsnittet för att konfigurera SQL Server Reporting Services (SSRS) för distribution av Microsoft Dynamics 365 for Finance and Operations (lokal).
 

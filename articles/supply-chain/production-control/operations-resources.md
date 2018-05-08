@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="operations-resources"></a>Operations-resurser
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Verksamhetsresurser utför aktiviteter för ett projekt eller en produktionsprocess. De kan vara av olika typer och kan ha olika förmågor. 
 

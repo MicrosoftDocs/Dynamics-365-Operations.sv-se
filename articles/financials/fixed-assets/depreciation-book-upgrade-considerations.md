@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="depreciation-book-upgrade-overview"></a>Uppgraderingsöversikt för avskrivningsregler
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 I tidigare versioner fanns två värderingsbegrepp för anläggningstillgångar: värdemodeller och avskrivningsregler. I Microsoft Dynamics 365 for Operations, version 1611, har värdemodellfunktionen och funktionen för avskrivningsregel slagits ihop till ett enda begrepp som kallas för "bok". Detta avsnitt listar några saker att beakta i samband med uppgraderingen. 
 
@@ -62,17 +62,17 @@ Alternativ 2: **Befintlig användardefinierad nummerserie** - Detta alternativ l
 Parametrarna finns i början av klassen ReleaseUpdateDB70\_FixedAssetJournalDepBookRemovalDepBookJournalTrans class. 
 
 *// Ange en bättre metod för allokering av verifikationer* 
-*// sant,om du vill använda en befintlig nummerseriekod* 
-*// falskt, om du tänker använda systemdefinierad nummerserie (standard)* const boolean NumberSequenceUseExistingCode = falskt;  
+ *// sant,om du vill använda en befintlig nummerseriekod* 
+ *// falskt, om du tänker använda systemdefinierad nummerserie (standard)* const boolean NumberSequenceUseExistingCode = falskt;  
 
 *// Om du använder metoden systemdefinierad nummersekvens, ange parametrarna för nummerserien*
-*// En ny nummerserie skapas med följande parametrar.* const str NumberSequenceDefaultCode = 'FADBUpgr'; const str NumberSequenceDefaultParameterPrefix = 'FADBUpgr'; const int NumberSequenceDefaultParameterAlpanumericLength = 9; const int NumberSequenceDefaultParameterStartNumber = 1;   
+ *// En ny nummerserie skapas med följande parametrar.* const str NumberSequenceDefaultCode = 'FADBUpgr'; const str NumberSequenceDefaultParameterPrefix = 'FADBUpgr'; const int NumberSequenceDefaultParameterAlpanumericLength = 9; const int NumberSequenceDefaultParameterStartNumber = 1;   
 
 *// Om du använder metoden med befintliga nummerserier, ange befintlig nummerseriekod.* 
-*// Allokering av verifikation sker rad för rad för befintliga nummerserier.* const str NumberSequenceExistingCode = ''; *// Ange intervallet för den befintliga nummerseriekoden* 
-*// sant, om den angivna nummerserien delas* 
-*// falskt, om den angivna nummerserien är per företag* 
-*// Den systemdefinierade standardnummerserien används om det inte finns någon nummerseriekod med angivet intervall.* const boolean NumberSequenceExistingIsShared = sant; 
+ *// Allokering av verifikation sker rad för rad för befintliga nummerserier.* const str NumberSequenceExistingCode = ''; *// Ange intervallet för den befintliga nummerseriekoden* 
+ *// sant, om den angivna nummerserien delas* 
+ *// falskt, om den angivna nummerserien är per företag* 
+ *// Den systemdefinierade standardnummerserien används om det inte finns någon nummerseriekod med angivet intervall.* const boolean NumberSequenceExistingIsShared = sant; 
 
 Skapa om projektet som innehåller klassen efter det att konstanterna har ändrats. 
 

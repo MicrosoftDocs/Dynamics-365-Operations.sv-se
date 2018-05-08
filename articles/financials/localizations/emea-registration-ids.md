@@ -27,7 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="registration-ids"></a>Registrerings-ID
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Det här avsnittet innehåller information om hur du konfigurerar och använder registrerings-ID.
 

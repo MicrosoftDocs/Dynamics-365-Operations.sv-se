@@ -29,7 +29,7 @@ ms.lasthandoff: 02/13/2018
 
 # <a name="master-planning-home-page"></a>Startsida för Huvudplanering
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Det huvudplanering i grund och botten gör är att låta företag fastställa och balansera sitt framtida behov av råmaterial och sin kapacitet att uppfylla företagets mål. Huvudplanering utvärderar följande: 
 

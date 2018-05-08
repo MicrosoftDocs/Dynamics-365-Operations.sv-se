@@ -25,7 +25,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="my-team-mobile-workspace"></a>Mobil arbetsyta för mitt team
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Det här avsnittet innehåller information om den mobila arbetsytan **Mitt team**. Den här arbetsytan låter chefer visa sina underställda och utökade personal. De kan också skicka beröm till enskilda personer i sin rapporteringskedja.
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-project-resource-information"></a>Ställ in information om projektresurs
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 I den här proceduren visas hur du skapar en projektresurs. I den här uppgiften används datauppsättningen USMF.
 

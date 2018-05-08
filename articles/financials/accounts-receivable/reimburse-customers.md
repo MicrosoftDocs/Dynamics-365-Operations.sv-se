@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="reimburse-customers"></a>Återbetala kunder
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Det här avsnittet innehåller en beskrivning av hur du skapar återbetalningstransaktioner för en kundgrupp. Om en kund har ett kreditsaldo, kan du återbetala kunden för beloppet för saldot. 
 

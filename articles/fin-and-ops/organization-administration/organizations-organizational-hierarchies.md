@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="organizations-and-organizational-hierarchies"></a>Organisationer och organisationshierarkier
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 En organisation är en grupp personer som arbetar tillsammans för att utföra ett arbete eller uppnå ett mål. Organisationshierarkier representerar relationerna mellan de organisationer som finns i företaget.
 

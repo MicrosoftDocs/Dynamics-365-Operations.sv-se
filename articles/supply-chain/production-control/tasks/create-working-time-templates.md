@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-working-time-templates"></a>Skapa operationstidsmallar
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Arbetstidsmallar definierar arbetstiden under en vecka och används för att generera arbetstider för en tidsperiod. I den här proceduren visas om hur du definierar en arbetstidsmall med hjälp av arbetstidsplaneringsegenskaper för att kategorisera arbetstidintervall. Du kan gå igenom den här proceduren i demonstrationsdataföretaget USMF eller använda dina egna data.
 

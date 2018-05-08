@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="create-product-packages-for-purchase-orders"></a> Skapa produktförpackningar för inköpsorder
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 Den här proceduren går igenom hur du skapar ett produktpaket och använder det i en inköpsorder. Inköpsordern ska användas för att skapa en order för en fördefinierad uppsättning av produkter. I proceduren används demonstrationsföretaget USRT.
 

@@ -27,7 +27,7 @@ ms.lasthandoff: 03/23/2018
 
 # <a name="configure-workflow-properties"></a>Konfigurera arbetsflödesegenskaper
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 I det här avsnittet beskrivs hur du konfigurerar olika egenskaper för ett arbetsflöde.
 

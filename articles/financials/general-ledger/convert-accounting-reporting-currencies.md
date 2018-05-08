@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="convert-accounting-or-reporting-currencies"></a>Konvertera redovisnings- eller rapporteringsvalutor
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ett företag som måste ändra sin redovisningsvaluta eller rapportvaluta har två alternativ. Det första alternativet är för att skapa ett nytt företag och starta på nytt. Det andra alternativet är att köra konverteringsprocessen för redovisnings- och rapporteringsvaluta. Detta är mycket en avancerad process som ändrar varje transaktion i systemet. En del inställningar krävs också innan du kan köra processen.
 

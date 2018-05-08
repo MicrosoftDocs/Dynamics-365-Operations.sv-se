@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="project-invoicing"></a>Projektfakturering
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Det här avsnittet ger en översikt över projektfakturering för Tids - och materialprojekt samt Fastprisprojekt. Här finns information om fakturaförslag (preliminära fakturor), fakturakontroll, à conto-fakturering, leverantörfakturering och kreditfakturor.
 

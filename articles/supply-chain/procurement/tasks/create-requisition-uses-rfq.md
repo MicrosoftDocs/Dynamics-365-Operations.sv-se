@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-requisition-that-uses-an-rfq"></a>Skapa en rekvisition som använder en anbudsförfrågan
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Den här handboken visar hur du lägger till pris- och leverantörsinformation till en inköpsrekvisition från en anbudsförfråganprocess. De exempel som visas i den här handboken kan användas i demoföretaget USMF och du måste vara inloggad som administratör för att utföra alla steg. Uppgifterna i den här handboken utförs normalt av anskaffningsproffs.
 

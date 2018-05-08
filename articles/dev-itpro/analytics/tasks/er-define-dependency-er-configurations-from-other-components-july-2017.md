@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="define-the-dependency-of-configurations-from-other-components"></a>Definiera beroendet av konfigurationer från andra komponenter 
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 För att kunna genomföra stegen måste du först slutföra stegen i uppgiftsguiden ER Hantera modellmappningskonfigurationer, och ha åtkomst till Microsoft Dynamics Lifecycle Services (LCS).
 

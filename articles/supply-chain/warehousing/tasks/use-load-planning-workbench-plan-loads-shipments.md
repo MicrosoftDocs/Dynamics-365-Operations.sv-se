@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="plan-loads-and-shipments-using-the-load-planning-workbench"></a>Planera laster och utleveranser med workbench för lastplanering
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 I den här proceduren visas hur du använder workbench för lastplanering om för att skapa en beläggning för en försäljningsorder. Som en förutsättning skapar vi försäljningsordern först. Den här proceduren utgör en del av det dagliga arbetet för transportkoordinatorn. Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.
 

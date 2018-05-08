@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="create-a-customer-invoice"></a>Skapa en kundfaktura
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 En **kundfaktura för en försäljningsorder** är en faktura som är relaterad till en försäljning och som en organisation skickar till en kund. Den här typen av kundfaktura skapas baserad på en försäljningsorder, vilken inkluderar orderrader och artikelnummer. Artikelnummer specificeras och bokförs i redovisningen. Poster i redovisningsjournalen är inte tillgängliga för en kundfaktura för en försäljningsorder. Mer information finns i [Skapa försäljningsorderfakturor](tasks/create-sales-order-invoices.md).
 

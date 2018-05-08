@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="merge-inventory-batches"></a>Sammanfoga lagerbatchar
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Den här artikeln innehåller information om hur du konsoliderar två eller flera lagerbatchar till en sammanfogad batch.
 

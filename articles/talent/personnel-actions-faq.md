@@ -27,7 +27,7 @@ ms.lasthandoff: 03/08/2018
 
 # <a name="personnel-actions-faq"></a>Personalåtgärder [Frågor och Svar]
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Det här avsnittet innehåller svar på frågor som du kan ha om din organisation använder personalåtgärder. Personalåtgärder är ytterligare steg du måste vidta när du utför personalrelaterade uppgifter. Exempel på uppgifter som kan kräva personalåtgärder är när du skapar nya befattningar, ändrar befintliga befattningsvärden, anställer nya arbetstagare, överför arbetstagare, ändrar arbetstagares kompensation, ändrar befattningstilldelningar eller säger upp arbetstagare.
 

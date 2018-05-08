@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="push-products-from-distribution-center-to-store-using-buyers-push"></a> Skjut produkter från distributionscenter till butik med centraliserad distribution
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 Den här proceduren går igenom stegen för att skapa och bearbeta en centraliserad distribution för att distribuera produkter från en plats till en eller flera butiker. Användaren kan definiera flera konfigurationer och låta systemet att föreslå hur du fördelar produkterna, eller ange manuellt var produkterna fördelas till och hur mycket som distribueras till varje butik. Den här proceduren inkluderar inte inställningen av data som kan användas i centraliserad distribution, till exempel påfyllnadsregler, organisationshierarkier och butikvikter. I den här proceduren används demonstrationsföretaget USRT.
 

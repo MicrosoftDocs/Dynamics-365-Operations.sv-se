@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="foreign-currency-revaluation-for-general-ledger"></a>Omvärdering i utländsk valuta för huvudbok
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Den här artikeln innehåller en översikt över följande för redovisningsomräkningsprocessen i utländsk valuta: ställa in, köra processen, beräkningen för processen, samt hur du återför omvärderingtransaktionerna vid behov. 
 

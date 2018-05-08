@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-an-organization-hierarchy"></a>Skapa en organisationshierarki.
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Använd följande procedur för att skapa en organisationshierarki. Du kan använda organisationens hierarkier för att visa och skapa en rapport från olika perspektiv av din verksamhet. Du kan till exempel skapa en hierarki för momsrapportering, juridisk rapportering eller lagstadgad rapportering. Du kan ställa in en annan hierarki om du vill rapportera ekonomisk information som inte krävs lagligen, men som används för intern rapportering. 
 

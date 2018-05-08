@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="review-collections-information"></a>Granska inkasseringsinformation
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 I den här proceduren du går igenom hur du granskar inkassoinformation samt olika inställningsalternativ och inkassotransaktioner. I den här proceduren används demonstrationsföretaget USMF.
 

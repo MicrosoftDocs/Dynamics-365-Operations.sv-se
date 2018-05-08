@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="bom-calculations"></a>BOM-beräkningar
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Kostnadssummeringen och försäljningsprisberäkningarna kallas för strukturlisteberäkningar och du initierar dem från sidan Beräkningar. Det här ämnet innehåller information om BOM-beräknignar.
 

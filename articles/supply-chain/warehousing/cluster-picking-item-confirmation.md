@@ -25,7 +25,7 @@ ms.lasthandoff: 02/13/2018
 
 ---
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 # <a name="product-confirmation-for-cluster-picking"></a>Produktbekräftelse för klusterplockning
 Klusterplockning kan du plockar artiklar för flera order samtidigt. När klusterplockning används, är objektbekräftelse avgörande för att kontrollera de objekt som läggs till ett kluster. Du kan kontrollera objekt i klusterplockning vid klusterplockningsprocessen.

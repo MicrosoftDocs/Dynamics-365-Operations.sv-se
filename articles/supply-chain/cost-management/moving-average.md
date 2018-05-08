@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="moving-average"></a>Rörligt genomsnitt
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Glidande medelvärde är en beständig kostnadsredovisning som baseras på principen om medelvärde där kostnaderna för lagerutleveranser inte ändras när inköpskostnaden gör det. Skillnaden kapitaliseras och baseras på en proportionell beräkning. Beloppet som kvarstår kostnadsförs. 
 

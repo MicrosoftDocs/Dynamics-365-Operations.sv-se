@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="advanced-filtering-and-query-syntax"></a>Avancerade filtrerings- och frågesyntax
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denna artikel beskriver filterings- och frågealternativ som är tillgängliga, när du använder operatorn ”matchar" i den avancerade filtrerings-/sorteringsdialogen.
 

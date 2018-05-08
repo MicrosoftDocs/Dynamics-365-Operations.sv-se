@@ -28,7 +28,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="choose-between-modern-pos-and-cloud-pos"></a>Välj mellan Modern POS och molnbaserad kassa
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Detta avsnitt ger implementerarna ytterligare bakgrund, tips och riktlinjer för de faktorer som bör de överväga när de distribuerar Microsoft Dynamics 365 for Retail. Genom att granska och följa dessa riktlinjer som ett led i distributionsprocessen kan implementerare undvika problem som kan påverka användarnas tillfredsställelse eller prestanda.
 

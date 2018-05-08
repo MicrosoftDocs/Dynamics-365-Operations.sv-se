@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="initialize-seed-data-in-a-new-retail-environment"></a>Initiera startdata i en ny detaljhandelsmiljö
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Den här artikeln beskriver de data som skapas under initieringsprocessen för Microsoft Dynamics 365 for Retail.
 

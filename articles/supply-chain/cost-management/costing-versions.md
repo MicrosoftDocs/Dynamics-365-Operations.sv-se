@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="costing-versions"></a>Kostnadsredovisningsversioner
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Det här avsnittet innehåller information om kostnadsversioner, hur du underhåller dem och datatyperna som du kan inkludera i dem. Det primära syftet med en kostnadsredovisningsversion är att den innehåller kostnadsposter om artiklar, kostnadskategorier och beräkningsformler för indirekta kostnader.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="manage-leave-of-absence"></a>Hantera ledighet och frånvaro
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 I den här proceduren går vi igenom genereringen av medarbetarnas tjänstledighetsposter. Du kan spåra tjänstledighetstid av skäl som sjukvård, utbildning eller föräldraaktiviteter. Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.
 

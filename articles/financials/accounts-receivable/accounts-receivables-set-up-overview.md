@@ -28,7 +28,7 @@ ms.lasthandoff: 11/15/2017
 
 # <a name="configure-accounts-receivables-and-credit-and-collections"></a>Konfigurera Kundreskontra och Kredit och inkasso
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Konfigurera Kundreskontra och Kredit och inkasso för att följa fakturor och inkommande betalningar från kunder.
 

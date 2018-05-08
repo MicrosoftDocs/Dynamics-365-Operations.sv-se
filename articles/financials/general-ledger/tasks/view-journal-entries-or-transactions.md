@@ -24,7 +24,7 @@ ms.lasthandoff: 10/26/2017
 ---
 # <a name="view-journal-entries-or-transactions"></a>Visa poster eller transaktioner i redovisningsjournal
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Detta förfarande anger hur du använder verifikationstransaktionförfrågan för att söka efter poster i redovisningsjournaler eller transaktioner.
 

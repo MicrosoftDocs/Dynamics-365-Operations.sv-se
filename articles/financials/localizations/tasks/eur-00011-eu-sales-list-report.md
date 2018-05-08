@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="generate-an-eu-sales-list-report"></a>Generera en rapport med lista över försäljning inom EU
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Den här proceduren går igenom hur du kan skapa en EU-försäljningslisterapport. Detta inkluderar överföring av transaktioner för inomeuropeisk handel till EU-försäljningslistan och körning av rapporten. Proceduren innehåller även generering av en transaktion för inomeuropeisk handel för demonstration. Mer information om rapportering av EU-säljlista, inklusive nödvändiga krav, finns i hjälpen till Dynamics 365 for Finance and Operations.
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="150-percent-reducing-balance-depreciation"></a>150 procent degressiv avskrivning
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Det här avsnittet ger en översikt över 150-procentsmetoden för degressiv avskrivning.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-and-submit-vat-report"></a>Skapa och skicka en momsrapport
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 I den här proceduren får du hjälp att skapa och skicka in en momsrapport till tyska myndigheter.
 

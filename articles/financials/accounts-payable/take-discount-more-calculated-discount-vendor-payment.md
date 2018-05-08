@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="take-a-discount-that-is-more-than-the-calculated-discount-for-a-vendor-payment"></a>Ta en rabatt som är högre än den beräknade rabatten för en leverantörsbetalning
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Den här artikeln går igenom ett scenario där en kassarabatt utnyttjas för ett belopp som är större än den rabatt som ursprungligen var tillgänglig för fakturan. Det här scenariot kan inträffa om en organisation sluter ett avtal med leverantören om att betala ett lägre belopp på fakturan. 
 

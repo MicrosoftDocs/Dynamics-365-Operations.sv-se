@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="manage-assortments"></a> Hantera butikssortiment  
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 Den här proceduren visar hur du skapar och publicerar ett nytt produktsortiment samt hur du använder demonstrationsdataföretaget USRT. Denna procedur kräver programmet Dynamics AX 7.0.1 eller senare, samt plattformen Dynamics AX 7.1.  
 

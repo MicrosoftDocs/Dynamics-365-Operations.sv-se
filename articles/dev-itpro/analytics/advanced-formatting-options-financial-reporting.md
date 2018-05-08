@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="advanced-formatting-options-in-financial-reporting"></a>Avancerade formateringsalternativ i ekonomiska rapporter
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 När du skapar en rapport inom ekonomisk rapportering blir ytterligare formateringsfunktioner tillgängliga, inklusive filter för dimensioner, begränsningar för kolumner och rapportenheter, icke-utskriftsrader samt IF/THEN/ELSE-utdrag i beräkningar. 
 

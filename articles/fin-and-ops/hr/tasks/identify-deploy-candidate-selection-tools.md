@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="identify-and-deploy-candidate-selection-tools"></a>Identifiera och distribuera kandidaturvalsverktyg
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Om du vill hitta en kvalificerad pool av kandidater kan det vara svårt att fylla vakanser, särskilt för en befattning kräver en unik kompetenskombination.  Det kan dock hända att kandidater med de färdigheter som du behöver redan arbetar i din organisation. Du kan söka efter en viss kompetensuppsättning bland befintliga medarbetare eller nya sökande. Det gör att en rekryterare snabbt kan samla in och gå igenom sökande som har ansökt till en vakans, nu eller tidigare, eller hitta potentiella sökande från sin befintliga pool av medarbetare. Använd den här uppgiftsregistreringen om du vill veta hur kompetensmappningsfunktionen kan hjälpa dig att hitta rätt person för en vakans. Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.
 

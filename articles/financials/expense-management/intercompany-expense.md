@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="intercompany-expenses"></a>Koncerninterna utgifter
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 En medarbetare som anställts av en juridisk entitet i en organisation kan utföra arbete för en annan juridisk person inom samma organisation. I denna situation kan du använda funktionen för företagsinterna utgifter för att tilldela medarbetarens utgifter till den juridiska person som arbetet utförts för. Den juridiska entiteten som anställer medarbetaren kallas för "utlånande juridisk person". Den juridiska entiteten som medarbetaren genererar utgifter för kallas "lånande juridisk person". 
 

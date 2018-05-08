@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="view-outbound-planned-intercompany-demand"></a>Visa utgående planerad koncernintern efterfrågan
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 I den här proceduren anges hur du visar alla planerade beställningar som ska genomföras av en koncernintern leverantör. Det demonstrationsdataföretag som används för att skapa den här proceduren är DEMF.
 

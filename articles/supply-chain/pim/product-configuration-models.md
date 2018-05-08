@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="product-configuration-models-overview"></a>Översikt över produktkonfigurationsmodeller
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 I den här artikeln definieras termer och begrepp som avser produktkonfigurationsmodeller. Med produktkonfigurationsmodeller kan du bygga en allmän produktstruktur som kan användas för att konfigurera många produktvarianter för en och samma produkt.
 

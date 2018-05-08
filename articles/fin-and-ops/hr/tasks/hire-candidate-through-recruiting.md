@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="hire-a-candidate-through-recruiting"></a>Anställa en kandidat genom att rekrytera
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 I den här proceduren aktiveras en rekryterare när du anställer en sökande som har skickat in en ansökning via ett visst rekryteringsprojekt. När du anställer en sökande via ett rekryteringsprojekt skapas en ny arbetarpost och sökandens post har statusen Anställd. Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF. Gå till Personal > Rekrytering > Ansökningar > Ansökningar för att slutföra proceduren 
 

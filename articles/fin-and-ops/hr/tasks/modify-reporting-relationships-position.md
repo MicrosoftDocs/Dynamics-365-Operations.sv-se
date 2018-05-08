@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="modify-reporting-relationships-for-a-position"></a>Ändra rapporteringsrelationer för en befattning
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 I den här proceduren visas hur du ändrar rapporteringsrelationen för en medarbetare. Rapporteringsrelationen kan användas för att dirigera dokument genom arbetsflödet. Proceduren visar även hur du tilldelar medarbetaren till ytterligare hierarkier. En medarbetare kan till exempel vara en del av en projektteam med en informell rapporteringsrelation till en projektansvarig. Fler rapporteringsrelationer kan definieras för befattningen för att kunna hantera olika projekt eller matrisscenarier. Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.
 

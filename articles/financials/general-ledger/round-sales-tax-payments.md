@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="sales-tax-payments-and-rounding-rules"></a>Momsbetalningar och avrundningregler
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Den här artikeln beskriver hur avrundningsregelinställningar på skattemyndigheter fungerar och avrundning av momssaldot under jobbet Kvitta och bokför moms.
 

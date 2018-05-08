@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="import-payment-formats-for-sweden"></a>Importformat för betalning för Sverige
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Det här avsnittet innehåller information om BankGirot MAX, importera via BankGirot OCR och BankGirot-returformat för Sverige.
 

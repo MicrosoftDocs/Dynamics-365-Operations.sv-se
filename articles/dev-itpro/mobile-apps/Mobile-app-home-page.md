@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="mobile-app-home-page"></a>Startsida för mobilapp
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Det här avsnittet beskriver mobilappen Microsoft Dynamics 365 for Unified Operations och ger länkar till resurser som kan hjälpa dig att implementera den i din organisation.
 

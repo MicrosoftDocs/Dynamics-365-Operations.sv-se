@@ -28,7 +28,7 @@ ms.lasthandoff: 02/08/2018
 
 # <a name="procurement-and-sourcing-overview"></a>Upphandling och inköp – översikt
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Det här avsnittet ger en översikt över de funktioner som är tillgängliga i modulen Anskaffning och källa.
 

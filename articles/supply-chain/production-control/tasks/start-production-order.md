@@ -25,7 +25,7 @@ ms.lasthandoff: 02/06/2018
 ---
 # <a name="start-a-production-order"></a>Starta en produktionsorder
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Den här proceduren visar hur du startar en produktionsorder i fabriken. Tids- och materialförbrukning rapporteras i den här processen. Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF. Detta är den femte proceduren av sju som förklarar produktionsorderns livscykel.
 

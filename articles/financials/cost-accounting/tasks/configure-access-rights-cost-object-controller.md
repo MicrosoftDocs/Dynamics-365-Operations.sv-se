@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="configure-access-rights-for-a-cost-object-controller"></a>Konfigurera åtkomsträttigheter för en kostnadsobjektcontroller
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Använd den är proceduren för att konfigurera åtkomsträttigheter för en kostnadsobjektcontroller. I den här inspelningen används demonstrationsföretaget USP2.
 

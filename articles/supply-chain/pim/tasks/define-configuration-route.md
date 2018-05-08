@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="define-configuration-routes"></a>Definiera konfigurationsflöden
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Den här proceduren visar hur du kan definiera ett konfigureringsflöde som fastställer frekvensen för hur konfigurationsgrupperna ska visas. Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF. Detta är den första proceduren utav sex som förklarar hur du ställer upp kombinationer för dimensionsbaserad konfiguration.
 

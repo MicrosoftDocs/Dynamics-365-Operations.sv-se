@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="year-end-close"></a>Årsbokslut
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 I det här avsnittet beskrivs den nödvändiga inställningen och stegen för att köra årsslutsprocessen i redovisningen. 
 

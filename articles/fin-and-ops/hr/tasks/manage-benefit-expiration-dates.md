@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="manage-benefit-expiration-dates"></a>Hantera utgångsdatum för förmån
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 I den här proceduren visas hur du kan säga upp eller förlänga en förmån och hantera registreringdatum för arbetare som är anmälda till förmånen. Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.
 

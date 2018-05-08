@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="credit-and-collections-in-accounts-receivable"></a>Kredit och inkasso i Kundreskontra
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Information om kundreskontrasamlingar hanteras i en central vy med hjälp av Finance and Operations-samlingssidan. Kredit- och inkassoansvariga kan använda denna centrala vy för att hantera inkasseringar. Inkassohandläggare kan börja inkassoprocessen från kundlistor som genereras med hjälp av fördefinierade inkassokriterier eller från sidan Kunder.
 

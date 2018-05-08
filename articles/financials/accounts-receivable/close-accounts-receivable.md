@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="close-accounts-receivable"></a>Stäng kundreskontra
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 I följande tabell beskrivs sidorna som stöder affärsprocesskomponenten Stäng kundreskontra.
 

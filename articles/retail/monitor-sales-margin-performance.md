@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="monitor-sales-and-margin-performance"></a>Övervaka försäljningsresultat och marginaler
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Du kan övervaka försäljning och marginalprestanda i realtid med hjälp av Microsoft Dynamics 365 for Retail.
 

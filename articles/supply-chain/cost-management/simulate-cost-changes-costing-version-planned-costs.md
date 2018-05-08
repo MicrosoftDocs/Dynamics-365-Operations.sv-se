@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="simulate-cost-changes-by-using-a-costing-version-for-planned-costs"></a>Simulera kostnadsändringar med hjälp av en kostnadsversion för planerade kostnader
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Det här avsnittet innehåller en beskrivning av hur du kan simulera effekterna av kostnadsändringar för en tillverkad artikels beräknade kostnader med hjälp av en separat kostnadsversion för planerade kostnader.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="analyze-questionnaire-results"></a>Analysera enkätresultat
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Enkätstatistiken kan användas för att beräkna medelvärde, summor och procentsatser som baseras på en uppsättning demografiska data. Gå till Enkät > Visa och analysera resultat > Enkätstatistik om du vill starta proceduren. Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.
 

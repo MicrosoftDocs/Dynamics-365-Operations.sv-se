@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="validate-a-production-flow-and-version"></a>Validera produktionsflöde och version
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Den här proceduren visar hur du skapar ett nytt produktionsflöde och en första version för lean manufacturing. Förutsättningar: Produktionsparametrarna för lean manufacturing och måttenheterna för klasstid måste definieras. Du måste definiera en värdeström och en produktionsgrupp. Läs vitböckerna om lean manufacturing och bekanta dig med begreppen i produktionsflöden och aktiviteter. Den här proceduren refererar till den juridiska personen USMF i demodata. Men, under antagandet att den juridiska personen har konfigurerats för lean manufacturing, kan andra juridiska personer användas.
 

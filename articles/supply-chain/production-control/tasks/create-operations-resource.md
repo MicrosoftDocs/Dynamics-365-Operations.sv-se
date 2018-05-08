@@ -25,7 +25,7 @@ ms.lasthandoff: 11/03/2017
 ---
 # <a name="create-an-operations-resource"></a>Skapa en verksamhetsresurs
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 En verksamhetsresurs utför aktiviteter för ett projekt eller en produktionsprocess. Proceduren visar hur du definierar en verksamhetsresurs. Du kan gå igenom den här proceduren i demonstrationsdataföretaget USMF eller använda dina egna data.
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="set-up-and-generate-positive-pay-files"></a>Ställa in och generera betalningskontrollfiler
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Den här artikeln innehåller information om hur du ställer och genererar betalningskontrollfiler. 
 

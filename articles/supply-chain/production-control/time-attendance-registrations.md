@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="time-and-attendance-registration"></a>Tid- och närvaroregistrering
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Tidsregistreringsarbetare kan ange olika typer av tidregistreringar, till exempel stämpla in, stämpla ut, registrera indirekta aktiviteter och frånvaroregistrering. Det här ämnet beskriver registreringar, deras beräkning, godkännande och användning av arbetsflöde för att lägga till strukturen och godkännande automatiskt till processen för godkännande av tidrapporter. 
 

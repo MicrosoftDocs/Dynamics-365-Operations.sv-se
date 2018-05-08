@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="automatic-settlement-and-prioritization"></a>Automatisk kvittning och prioritering
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Det här ämnet beskriver hur transaktioner kvittas om du väljer Automatisk kvittning på sidan Kundreskontraparametrar. Den beskriver även hur automatisk kvittning kan användas i kombination med betalningsprioriteten.
 

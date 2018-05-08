@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="budget-planning-templates-for-excel"></a>Budgetplaneringsmallar för Excel
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Det här avsnittet beskriver hur du skapar Microsoft Excel-mallar som kan användas med budgetplaner.
 

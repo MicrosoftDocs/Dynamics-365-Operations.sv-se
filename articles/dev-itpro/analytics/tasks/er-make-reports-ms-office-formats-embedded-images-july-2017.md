@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="design-configurations-to-generate-reports-in-microsoft-office-formats-with-embedded-images"></a>Designa konfigurationer för att generera rapporter i Microsoft Office-format med inbäddade bilder
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 För att slutföra stegen i den här proceduren ska du först slutföra stegen i proceduren "ER Skapa en konfigurationsleverantör och markera den som aktiv". Den här proceduren förklarar hur du skapar konfigurationer för elektronisk rapportering (ER) för att generera elektroniska dokument som innehåller inbäddade bilder i Microsoft Excel eller Microsoft Word-dokument. I den här proceduren skapar du de nödvändiga ER-konfigurationerna för exempelföretaget Litware, Inc. Dessa steg kan slutföras med hjälp av USMF-datauppsättning. Den här proceduren har skapats för användare med rollen Systemadministratör eller Utvecklare för elektronisk rapportering. Innan du börjar ska du hämta och spara filerna i hjälpavsnittet [bädda in bilder och former i affärsdokument som skapas med verktyget elektronisk rapportering](../electronic-reporting-embed-images-shapes.md). Filerna är: modell för checkar.xml, utskriftsformat för checkar.xml, företagslogotyp.png, signatur.png, signaturbild 2.png och checkmall för Word.docx.
 

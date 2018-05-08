@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-credit-and-collections"></a>Konfigurera kredit och inkasso
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denna artikel förklarar hur du ställer in samlingsfunktionen.
 

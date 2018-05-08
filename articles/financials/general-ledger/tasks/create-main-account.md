@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-main-account"></a>Skapa ett huvudkonto
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Den här uppgiften vägleder dig genom stegen för att lägga till en huvudkonto till en befintlig kontoplan. I den här registreringen används demonstrationsföretaget USMF.  
 

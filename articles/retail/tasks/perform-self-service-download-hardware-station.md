@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="perform-self-service-to-download-hardware-station"></a> Utför självbetjäning för att hämta maskinvarustation
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 Den här proceduren visar hur du laddar ned en fördefinierad maskinvarustation. Det demonstrationsdataföretag som används för den här proceduren är USRT. Du måste ha skapat en ny maskinvarustationsprofil och maskinvarustation innan du startar den här uppgiften.
 

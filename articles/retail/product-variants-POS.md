@@ -29,7 +29,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="inventory-lookup-in-the-point-of-sale"></a>Lagersökning i kassan 
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Lagersökning i kassan hjälper återförsäljare att effektivisera verksamheten i realtid och få inblick genom att ansluta butiker, kassor och backoffice. Den här funktionen ger en korrekt produktinformation i realtid genom butiker och distributionscenter. Den underlättar också för återförsäljare att skapa ytterligare effektivitet och kostnadsbesparingar genom att förbättra lagerplanering i realtid.
 

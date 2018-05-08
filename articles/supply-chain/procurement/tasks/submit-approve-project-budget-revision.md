@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="submit-and-approve-project-budget-revisions"></a>Skicka och godkänn projektbudgetändringar
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denna procedur ger information om hur du ändrar en projektbudget. Du kan ändra en projektbudget hur många gånger som helst, men du inte kan se beloppet för en enskild ändring om budgeten har ändrats mer än en gång. 
 

@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="material-substitution-in-manufacturing"></a>Materiell ersättning i tillverkning
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 I det här avsnittet beskrivs hur du ersätter material under produktionsprocessen. 
 

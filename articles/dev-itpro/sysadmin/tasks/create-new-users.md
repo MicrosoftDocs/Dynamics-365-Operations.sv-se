@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-new-users"></a>Skapa nya användare
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Användare är interna medarbetare i organisationen, eller externa kunder och leverantörer, som behöver åtkomst till systemet för att utföra sitt arbete. Systemadministratörer kan slutföra den här proceduren för att lägga till användare i systemet. Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF. 
 

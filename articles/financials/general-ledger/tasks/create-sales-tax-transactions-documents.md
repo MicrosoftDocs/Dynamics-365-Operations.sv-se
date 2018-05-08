@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-sales-tax-transactions-on-documents"></a>Skapa momstransaktioner i dokument
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Moms på dokument beräknas genom att ange en momsgrupp, och en artikelmomsgrupp på dokument. Dessa får sin standard från huvuddata men kan ändras manuellt om det behövs. Den beräknade momsen kan kontrolleras på en rad och dokumentnivå. I den här uppgiften används demonstrationsföretaget USMF.
 

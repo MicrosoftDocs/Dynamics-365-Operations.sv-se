@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="audit-policy-violations-and-cases"></a>Överträdelser av granskningspolicyn
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Det här avsnittet innehåller en beskrivning av hur revisionsfall genereras från regelbrott för granskningspolicyregler. Här finns även information om hur olika granskningspolicyer använder datumintervallet för dokumenturval.
 

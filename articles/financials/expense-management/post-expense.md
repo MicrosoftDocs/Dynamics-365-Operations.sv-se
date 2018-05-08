@@ -26,7 +26,7 @@ ms.lasthandoff: 03/13/2018
 
 # <a name="post-an-expense-report"></a>Bokföra en utgiftsrapport
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 När en utgiftsrapport har godkänts och överförts till den allmänna journalen kan rapporten bokföras i redovisningen. När du bokför en utgiftsrapport identifieras utgifter som berättigar till återbetalning av moms. Uppgiften att kontrollera och återställa momsbetalningar tilldelas den medarbetare som är ansvarig för att verifiera utgiftsrapporten.
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 11/03/2017
 ---
 # <a name="report-progress-on-a-mobile-job-device"></a>Rapportera framsteg på en mobil jobbenhet
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 I den här proceduren visas hur du startar och rapporterar utvecklingen för ett produktionsjobb i registreringsformuläret för jobbenheten.
 

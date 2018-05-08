@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="handling-cash-discounts-for-overpayments"></a>Hantera kassarabatter för överbetalningar
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Det här avsnittet tillhandahåller scenarier om hur en betalning hanteras när kunden får en kassarabatt, men även betalar för mycket. 
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="mass-create-sales-quotations"></a>Masskapa försäljningsofferter
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 I den här proceduren visas hur du skapar offerter med en uppsättning produkter eller tjänster som ska skickas till flera kunder. Den här genereringen av massofferter baseras på offertmallar. Du kan köra den här proceduren med dina egna uppgifter i demonstrationsföretaget USMF.
 

@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="receipt-templates-and-printing"></a>Mottagandemallar och utskrift
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Den här artikeln beskriver hur du ändrar formulärlayouter om du vill styra hur kvitton, fakturor och andra dokument skrivs ut. I Microsoft Dynamics 365 for Retail finns en layoutdesigner för formulär som du kan använda för att enkelt skapa och ändra olika typer av formulärlayouter.
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="allocate-a-project-budget-or-budget-revision-across-periods"></a>Fördela en projektbudget eller budgetändring över perioder
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
  När du har angett en projektbudget eller ändring av projektbudget, och innan du skickar den för godkännande, kan du allokera beloppen i perioder. Om budgetvärden eller budgetändringen avvisas, kan du också tilldela belopp om du skickar det på nytt. 
 

@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-security-for-the-cost-accounting-analysis-power-bi-content"></a>Ställ in säkerhet för kostnadsredovisningsanalys för Power BI
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Det här avsnittet beskriver hur du kan sprida säkerhet för åtkomstnivå i kostnadsredovisning till säkerhet för radnivå i Microsoft Power BI. Dessa funktioner hjälper till att säkerställa att användare bara ser Power BI-data som de har beviljats åtkomst till.
 

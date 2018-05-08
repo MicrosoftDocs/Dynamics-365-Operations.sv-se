@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="define-inventory-counting-processes"></a>Definiera lagerberäkningsprocesser
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 I den här proceduren om du vill gå du hjälp med konfigurationen för ifyllda processer för det grundläggande lager, genom att skapa en beräkningsgrupp och en inventeringsjournal. Det visar också om hur du aktiverar du vill beräkna principer för ett lagerställe och artikelnivå. Dessa uppgifter utförs vanligtvis av en lagerchef. Det är en förutsättning som har några befintliga frisläppning produkter och lagerställen. Om du använder ett demonstrationsdataföretag kan du köra denna procedur i USMF-företaget med en valfri lagerförd artikel.
 

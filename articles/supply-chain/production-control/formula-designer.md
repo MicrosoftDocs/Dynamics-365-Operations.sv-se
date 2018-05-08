@@ -29,7 +29,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="formula-designer"></a>Receptdesigner
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Det här avsnittet beskriver hur du använder formeldesignern för att analysera och underhålla formler i en trädvy.
 

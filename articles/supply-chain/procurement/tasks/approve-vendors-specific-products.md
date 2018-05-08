@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="approve-vendors-for-specific-products"></a>Godkänn leverantörer för specifika produkter
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 I den här proceduren visas hur du godkänner leverantörer för specifika produkter. På så sätt kan du kontrollera vilka leverantörer som kan användas när produkten läggs till en inköpsorder. Du kan använda den här proceduren i demonstrationsföretaget USMF eller med dina egna data. Uppgiften utförs vanligtvis av en inköpschef.
 

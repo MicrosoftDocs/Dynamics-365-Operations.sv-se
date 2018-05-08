@@ -27,7 +27,7 @@ ms.lasthandoff: 12/14/2017
 
 # <a name="vendor-payments-workspace"></a>Arbetsyta för leverantörsbetalningar
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Arbetsytan **Leverantörsbetalningar** visar information kopplad till behandling av leverantörsbetalningar. Den här arbetsytan innehåller vyn **Mitt arbete** och sidan **Analyser**. Vyn **Mitt arbete** visar sammanfattningsrutor, rutnät för leverantörstransaktioner och relaterad leverantörsinformation. Sidan **Analyser** använder funktionerna i Microsoft Power BI för att visa modeller relaterade till leverantörsbetalningar.
 

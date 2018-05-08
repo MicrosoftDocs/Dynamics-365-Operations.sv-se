@@ -25,7 +25,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="employee-development-power-bi-content"></a>Utveckling av medarbetare Power BI-innehåll
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Det här avsnittet beskriver Power BI-innehåll för **medarbetarutveckling**.
 

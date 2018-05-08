@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="budgeting-overview"></a>Budgetöversikt
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 I stort sett alla företag som använder funktionen ekonomi i Microsoft Dynamics 365 for Finance and Operations måste kunna skapa rapporter över budget kontra faktiska värden. Den här artikeln beskriver den minimikonfiguration som krävs för att skapa budgetar i Finance and Operations eller läsa in dem från ett tredjepartsprogram.
 

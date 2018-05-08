@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="determine-the-bom-version"></a>Avgöra strukturlisteversionen
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Om en artikel har Tillverkning som förvald ordertyp söker planeringsmotorn under en efterfrågenedbrytning efter en giltig strukturlisteversion baserat på siten. 
 

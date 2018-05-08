@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-sales-event-kanban-rule"></a>Skapa en kanban-regel för försäljningshändelse
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Den här proceduren fokuserar på inställningarna som krävs för att skapa en kanban-regel som utlöses under genereringen av försäljningsorder. Den händelsebaserade kanban-regeln fyller på behov som har sitt ursprung i försäljningsorderrader. Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF. Proceduren är avsedd för processingenjören eller värdeströmansvarig när de förbereder tillverkningen av en ny eller ändrad produkt.
 

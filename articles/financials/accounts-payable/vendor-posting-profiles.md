@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="vendor-posting-profiles"></a>Bokföringsprofiler för leverantörer
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Leverantörsbokföringsprofiler styr bokföringen av leverantörstransaktioner i redovisningen.
 

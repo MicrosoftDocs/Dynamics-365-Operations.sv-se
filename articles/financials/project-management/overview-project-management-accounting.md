@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="project-management-and-accounting"></a>Projekthantering och redovisning
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Funktionen för projekthantering och redovisning kan användas i flera branscher för att tillhandahålla en tjänst, för att tillverka en produkt eller för att uppnå ett resultat.  
 

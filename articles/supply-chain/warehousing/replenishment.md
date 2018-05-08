@@ -29,7 +29,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="replenishment"></a>Lagerpåfyllnad
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Detta avsnitt beskriver de påfyllnadsstrategier som erbjuds för lager som använder funktionerna i lagerhanteringen. Informationen i detta avsnitt gäller ej den lagerlösning som erbjuds i lagerhanteringen.
 

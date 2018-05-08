@@ -25,7 +25,7 @@ ms.lasthandoff: 02/13/2018
 ---
 # <a name="enter-sales-agreements"></a>Ange försäljningsavtal
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 I den här proceduren visas hur du skapar en försäljningsavtal där en av dina kunder åtar sig att köpa en produkt för ett avtalat belopp över tid i utbyte mot speciella rabatter. Du kan köra den här proceduren i demonstrationsföretaget USMF eller på dina egna data.
 

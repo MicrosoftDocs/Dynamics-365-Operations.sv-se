@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="change-the-date-for-the-session"></a>Ändra datumet för sessionen
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Som standard används aktuellt datum vid registrering och bokföring av journalposter eller källdokument. Du kan ändra det datum som används för din aktuella session. Använd denna funktion för att antedatera journalposter eller källdokument vid behov.
 

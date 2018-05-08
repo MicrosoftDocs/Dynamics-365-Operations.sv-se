@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="add-financial-dimensions-to-the-cfo-workspace"></a>Lägg till ekonomiska dimensioner i arbetsyta för ekonomichef
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Det här avsnittet beskriver hur du lägger till ekonomiska dimensioner till arbetsytan för ekonomichef så att den kan användas för redovisnings- och budgettransaktionerna. Arbetsytan CFO har en flik kallad **Översikt** och en flik kallad **Ekonomi**. Rapporterna på dessa båda flikar backas upp av två åtgärder: MåttFör Redovisningsaktivitet och MåttFörBudgetaktivitet. I Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (juli-uppdateringen 2017) finns ingen koppling mellan dessa två mått och entiteten EntitetFörDimensionskombination. Därför kan du välja dimensioner.
 

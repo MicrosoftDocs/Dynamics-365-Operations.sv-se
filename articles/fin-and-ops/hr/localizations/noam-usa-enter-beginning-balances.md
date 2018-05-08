@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="enter-payroll-beginning-balances"></a>Ange initiala lönesaldon
 
-[!INCLUDE [banner](../../includes/banner.md)]
+[!include [banner](../../includes/banner.md)]
 
 Avsnittet beskriver stegen för att ange initiala saldon för lönekoder, förmåner, avdrag och moms. Denna information är viktig för partnerföretag som överför data för en ny implementering av lönelistor från ett annat system. Vi bekräftar följande information när du förbereder inmatningen av initiala lönesaldon:
 

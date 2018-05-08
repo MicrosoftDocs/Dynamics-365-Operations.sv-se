@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="bills-of-materials-and-formulas"></a>Strukturlistor och formler
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Detta ämne innehåller information om strukturlistor och formler, som är en central del av definitionen av produkterna och produktvarianterna. Strukturlistor och formler anger nödvändiga material eller komponenter för en viss produkt. Formler kan också ange samprodukter och biprodukter som tas emot i en bestämd produktionskontext. 
 

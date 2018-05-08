@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-process-activities-for-lean-manufacturing"></a>Skapa processaktiviteter för lean manufacturing
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Skapa en processaktivitet för lean manufacturing. 
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 02/20/2018
 
 # <a name="create-a-service-template-group"></a>Skapa en servicemallgrupp  
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Du kan sortera och filtrera servicemallar genom att använda servicemallgrupper.
 

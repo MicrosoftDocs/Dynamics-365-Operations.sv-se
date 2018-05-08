@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="settle-a-partial-vendor-payment-that-has-discounts-on-vendor-credit-notes"></a>Kvitta en delleverantörsbetalning som har rabatter på leverantörkreditfakturor.
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Det här avsnittet innehåller genomgång av ett scenario där en kreditnota kvittas mot en faktura.
 

@@ -29,7 +29,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="payment-methods-in-a-call-center"></a>Betalningsmetoder i ett kundcenter
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 I Microsoft Dynamics 365 for Retail innehåller konfigurationen av kundtjänst en inställning som heter **Aktivera slutförande av order**. Den här inställningen hjälper till att garantera att alla order som användare av kanalen skapar endast släpps till orderbearbetning om de har en förauktoriserad betalning inom godkända toleranser. Om inställningen **Aktivera slutförande av order** är aktiv, kan kundtjänstanvändarna ange betalningar mot försäljningsorder för kunder genom att använda kundtjänsts funktioner för betalningsprocess. Om inställningen är inaktiverad kan kundtjänstanvändare inte använda kundtjänsts funktioner för betalningsprocessen, men de kan fortfarande använda förskottsbetalningar på försäljningsorder med hjälp av standardfunktionen för Kundreskontra.
 

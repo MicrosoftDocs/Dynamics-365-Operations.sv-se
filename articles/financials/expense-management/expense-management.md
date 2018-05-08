@@ -28,7 +28,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="expense-management"></a>Utläggshantering
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Använd utgiftshanteraren för att skapa ett integrerat arbetsflöde där du kan lagra information om betalsätt, importera kreditkortstransaktioner och spåra de pengar som medarbetarna ger ut när de ådrar sig utgifter för ditt företag. Du kan även definiera utgiftsprinciper och automatisera ersättningen av reskostnader. 
 

@@ -29,7 +29,7 @@ ms.lasthandoff: 12/14/2017
 
 # <a name="safety-stock-fulfillment-for-items"></a>Säkerhet för artiklar i lageruppfyllelse
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Säkerhetslager anger en ytterligare kvantitet för en artikel i lagret för att minska risken för att artikeln är slut på lagret. Säkerhetslager används som ett buffertlager om försäljningsorder kommer in och leverantören inte kan leverera ytterligare artiklar för att uppfylla kundens begärda leveransdatum. När säkerhetslager används för att uppfylla en försäljningsorder, reduceras säkerhetslagret. Du kan använda huvudplanering för att automatiskt föra tillbaka lagret till säkerhetsnivån.    
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-a-mobile-device-menu-item-to-register-received-items"></a>Ställ in ett menyalternativ för mobila enheter för att registrera mottagna artiklar
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denna uppgift är avsedd för inställningar av ett menykommando för mobila enheter. Menykommandot används för registrering av inleverans av artiklar som har beställts via inköpsorder. 
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="default-offset-accounts-for-vendor-invoice-journals-and-invoice-approval-journals"></a>Standardmotkonton för leverantörsfakturajournaler och fakturagodkännandejournaler
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Standardmotkonton används på följande sidor för leverantörsfakturajournaler:
 

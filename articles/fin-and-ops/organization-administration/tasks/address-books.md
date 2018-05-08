@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="configure-address-books"></a>Konfigurera adressböcker
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Använd den här proceduren och besluten, som du har gjort i planeringen av konfigurationen för den globala adressboken och det ytterligare adressbokavsnittet för att ställa in ytterligare adressböcker för din organisation.
 

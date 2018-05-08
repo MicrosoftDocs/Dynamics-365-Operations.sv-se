@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="inventory-management"></a>Lagerhantering 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Du kan använda Lagerhantering när du slutför följande uppgifter:
 

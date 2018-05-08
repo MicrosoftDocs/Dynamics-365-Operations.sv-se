@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="budget-planning-overview"></a>Översikt över budgetplanering
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Det här avsnittet introducerar budgetplanering och innehåller information om hur du konfigurerar budgetplanering och ställer in budgetplaneringsprocessen.
 

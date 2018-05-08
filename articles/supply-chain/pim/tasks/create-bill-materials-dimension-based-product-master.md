@@ -24,7 +24,7 @@ ms.lasthandoff: 11/04/2017
 ---
 # <a name="create-a-bill-of-materials-for-a-dimension-based-product-master"></a>Skapa en strukturlista för en dimensionsbaserad produktmall
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 För den här proceduren bör du ha slutfört de tidigare 4 guiderna i denna sekvens av åtta inspelningar. De första 4 inspelningarna anger de data som krävs för att slutföra den här proceduren. Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF. Denna uppgift utförs vanligtvis av produktdesignern.
 

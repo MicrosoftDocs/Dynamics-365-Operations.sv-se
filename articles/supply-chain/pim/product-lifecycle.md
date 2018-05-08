@@ -29,7 +29,7 @@ ms.lasthandoff: 02/08/2018
 
 # <a name="product-lifecycle-state"></a>Produktens livscykeltillstånd 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ett livscykeltillstånd för produkt beskriver livscykelstatusen för en frisläppt produkt eller produktvariant. Produktens livscykeltillstånd definieras av användaren, vanligtvis en produktchef eller en produktmallchef. Specifika affärsprocesser, t.ex. huvudplanering kan påverkas av ett visst livscykeltillstånd.   
 

@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="define-and-maintain-channel-clients-registers-and-hardware-stations"></a>Definiera och underhålla kanalklienter, kassor och maskinvarustationer
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Detta avsnitt innehåller information om hur du ansluter kringutrustning till Retail POS.
 

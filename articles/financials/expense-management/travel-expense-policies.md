@@ -26,7 +26,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="expense-policies"></a>Utgiftspolicy
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Du kan definiera policyer som dina medarbetare måste följa i samband med att de anger och skickar in utgiftsrapporter och reserekvisitioner.         
 Om du använder utgiftsprinciper kan det hjälpa dig att hantera dina utgifter på ett effektivt sätt.         

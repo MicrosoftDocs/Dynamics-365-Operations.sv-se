@@ -24,7 +24,7 @@ ms.lasthandoff: 11/20/2017
 ---
 # <a name="create-a-requisition-for-consumption"></a>Skapa en rekvisition för förbrukning
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 I den här proceduren förklaras processen för att skapa en rekvisition. Den visar olika metoder för att söka efter produkter i din anskaffningskatalog och hur du lägger till en produkt som inte finns i din katalog. Innan du startar den här proceduren måste du ha en inköpspolicy inställd med Förbrukning som standardinställningstyp för rekvisitionen. Du kan gå igenom den här proceduren i demonstrationsdataföretaget USMF eller använda dina egna data. Proceduren kan bara utföras av en användarprofil som har ställts in som arbetare.  Uppgiften utförs vanligtvis av en medarbetare. Den säkerhetsroll som medarbetaren använder gör det möjligt för dig att utföra uppgifterna. Om du använder USMF kan du även logga in som Alicia.
 

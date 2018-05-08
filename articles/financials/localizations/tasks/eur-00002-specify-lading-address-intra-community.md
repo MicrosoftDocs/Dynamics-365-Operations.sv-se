@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="specify-a-lading-address-for-an-intra-community-transaction"></a>Ange en fraktadress för en inomeuropeisk transaktion
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 I den här proceduren visas hur du anger en fraktadress för en transaktion för inomeuropeisk handel. Till exempel: Ett företag i Tyskland beställer artiklar från en leverantör med tysk företagsadress. Denna leverantör har ett lager i Italien och skickar artiklarna därifrån. Denna leverans måste visas i Intrastat. Samma förfarande gäller för kundreturer.
 Den här proceduren gäller för alla europeiska länder/regioner. Uppgiften skapades med hjälp av demonstrationsdataföretaget DEMF, med primär adress i Tyskland. Innan du kan slutföra proceduren måste du konfigurera Intrastat-rapporteringen. Proceduren är avsedd för kamrerer. Denna procedur är avsedd för en funktion som lades till i Dynamics 365 for Operations version 1611.

@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="create-a-performance-review"></a>Skapa en resultatöversyn
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 I den här proceduren visas hur du skapar en resultatgranskning och beskriver syftet för varje del av granskningen. Denna procedur skapades med demodataföretaget USMF. Denna procedur är avsedd för en funktion som lades till i Dynamics 365 for Operations version 1611.
 

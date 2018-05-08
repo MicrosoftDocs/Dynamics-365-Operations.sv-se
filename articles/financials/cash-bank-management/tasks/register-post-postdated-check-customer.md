@@ -24,7 +24,7 @@ ms.lasthandoff: 10/26/2017
 ---
 # <a name="register-and-post-a-postdated-check-for-a-customer"></a>Registrera och bokför en efterdaterad check för en kund
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Du kan registrera information om en efterdaterad check som tas emot från en kund. Du kan även bokföra den efterdaterade checken och generera ekonomiska transaktioner.   Slutför följande uppgifter innan du registrerar och bokför en efterdaterad check som tas emot från en kund:   • Ställ in efterdaterade checkar på sidan Kassa- och bankhantering • Ställ in en betalningsmetod för efterdaterade checkar   Rollen för den här proceduren är Kassaförvaltare. I den här proceduren används demonstrationsföretaget USMF.
 

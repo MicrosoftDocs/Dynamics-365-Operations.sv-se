@@ -26,7 +26,7 @@ ms.lasthandoff: 03/13/2018
 
 # <a name="travel-requisitions"></a>Reserekvisitioner
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 En *reserekvisition* är ett källdokument som dokumenterar de utgifter som påförs för resor. En reserekvisition skickas för granskning och kan användas för att godkänna utgifter.
 

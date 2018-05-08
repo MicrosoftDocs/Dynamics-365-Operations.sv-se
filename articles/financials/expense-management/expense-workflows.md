@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="set-up-workflows-for-expense"></a>Konfigurera arbetsflöden för utgifter
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
  Du kan skapa ett arbetsflöde för att granska och godkänna rese- och utgiftsdokument. De dokument för vilka arbetsflöden kan definieras inkluderar utgiftsrapporter, reserekvisitioner samt begäranden om förskott.
 

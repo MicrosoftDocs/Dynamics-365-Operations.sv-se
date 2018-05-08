@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="sales-tax-rates-based-on-the-marginal-base-and-calculation-methods"></a>Momssatser baserade på fälten Bidragsunderlag och Beräkningsmetoder
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Det här ämnet innehåller en beskrivning av hur värdena i fälten Bidragsunderlag och Beräkningsmetod fastställer momssats(er) i försäljnings- och inköpstransaktioner.
 

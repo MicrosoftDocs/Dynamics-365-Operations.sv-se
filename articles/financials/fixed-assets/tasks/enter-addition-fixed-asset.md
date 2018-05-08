@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="enter-an-addition-to-a-fixed-asset"></a>Ange ett tillägg till en anläggningstillgång
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 I den här proceduren visas hur du lägger till ett tillägg till en befintlig anläggningstillgång. Syftet med tillägg till anläggningstillgång ska följa efter Artikeltillägg, underhåll eller förbättringar av en tillgång och är endast till för information. Ändringar i anläggningstillgångens värde eller tjänstelivstid ska göras separat.   
 

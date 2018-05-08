@@ -28,7 +28,7 @@ ms.lasthandoff: 03/13/2018
 
 # <a name="manage-vendor-collaboration-users"></a>Hantera leverantörssamarbetesanvändare
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 I det här avsnittet beskrivs hur du kan begära reservation av nya leverantörssamarbetesanvändare, samt hur du lägger till nya leverantörssamarbeteskontakter. 
 

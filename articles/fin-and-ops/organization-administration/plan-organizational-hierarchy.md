@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="plan-your-organizational-hierarchy"></a>Planera en organisationshierarki
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Innan du ställer in organisationer och organisationshierarkier i Microsoft Dynamics 365 for Finance and Operations måste du planera hur din verksamhet ska utformas. Organisationsmodellen har en avsevärd effekt på implementeringen av Finance and Operations och på affärsprocesser. 
 

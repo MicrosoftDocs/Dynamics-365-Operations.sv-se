@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="inspect-the-quality-of-goods"></a>Kontrollera kvaliteten på varor
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 I den här proceduren visas hur du bearbetar en kvalitetsorder. Du kan köra den här handboken i demonstrationsdataföretaget USMF. Innan du startar den här exempelproceduren måste du bekräfta inköpsorder ”000016” och bokföra en produktinleverans. Då skapas en kvalitetsorder automatiskt. Kvalitets-inspektioner utförs vanligtvis av en kvalitetsansvarig.
 

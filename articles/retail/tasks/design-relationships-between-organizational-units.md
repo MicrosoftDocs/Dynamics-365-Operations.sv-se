@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="design-the-relationships-between-organizational-units"></a> Utforma relationerna mellan organisationsenheter
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 I den här proceduren går vi igenom hur du utformar relationen mellan organisationsenheter. Du måste skapa ett nytt organisationsyfte innan du definierar relationen, eller använda det befintliga organisationsyftet. Demonstrationsdataföretaget som används för att utföra den här proceduren är USRT. Den här uppgiften är avsedd för administratörsrollen.
 

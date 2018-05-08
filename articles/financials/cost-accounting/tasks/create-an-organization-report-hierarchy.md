@@ -24,7 +24,7 @@ ms.lasthandoff: 10/30/2017
 ---
 # <a name="create-an-organization-report-hierarchy"></a>Skapa en organisationsrapporthierarki
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Använd den här proceduren för att skapa en rapporthierarki för organisationsrapportering. Syftet med den här inspelningen är att guida dig genom dimensionshierarkin så att du kan fortsätta tills hela organisationens rapportstruktur har skapats. I den här inspelningen används demonstrationsföretaget USP2.
 

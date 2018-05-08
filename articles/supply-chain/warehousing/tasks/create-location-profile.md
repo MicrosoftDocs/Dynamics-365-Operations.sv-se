@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-location-profile"></a>Skapa en platsprofil
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Varje plats på lagerstället måste ha en platsprofil associerad som beskriver egenskaperna för platsen, till exempel om blandade artiklar tillåts för platsen. I den här proceduren skapar vi en profil för en plats som inte kräver kontroll av registreringsskylt. Vi ska aktivera blandade artiklar och blandad lagerstatus, samt tillåta rullande inventering. Du kan använda den här proceduren i demonstrationsdataföretaget USMF.
 

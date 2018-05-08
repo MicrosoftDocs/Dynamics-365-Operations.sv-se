@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="manage-subcontracting-work-in-production"></a>Hantera legotillverkningsarbete i produktionen
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Det här avsnittet beskriver hur verksamhet på entreprenad (legotillverkning) hanteras i Microsoft Dynamics 365 for Finance and Operations. Med andra ord förklaras hur produktionsåtgärder som tilldelats en resurs hanteras av en leverantör.
 
