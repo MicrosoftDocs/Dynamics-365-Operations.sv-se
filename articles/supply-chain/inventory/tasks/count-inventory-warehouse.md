@@ -17,15 +17,15 @@ ms.author: mafoge
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 9832a60ee703878701927b66b0b4b63cb7efb985
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: e7813f9add1c8cf3c2f22aff826daf22f54f348e
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="count-inventory-in-a-warehouse"></a><span data-ttu-id="13739-103">Inventering i ett lagerställe</span><span class="sxs-lookup"><span data-stu-id="13739-103">Count inventory in a warehouse</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="13739-104">I den här proceduren beskrivs hur du kan skapa och bokföra en lagerinventeringsjournal för att kunna räkna en viss artikel på en plats på lagerstället.</span><span class="sxs-lookup"><span data-stu-id="13739-104">This procedure walks you through the process of creating and posting an inventory counting journal in order to count a specific item at a location in the warehouse.</span></span> <span data-ttu-id="13739-105">Proceduren gäller grundläggande lagerstyrningsfunktioner som är tillgängliga i lagerhanteringmodulen, inte de lagerfunktioner som finns i lagerstyrningsmodulen.</span><span class="sxs-lookup"><span data-stu-id="13739-105">The procedure applies to “basic warehousing” functionality, available in the Inventory management module, not to the warehousing functionality that’s available in the Warehouse management module.</span></span> <span data-ttu-id="13739-106">Du kan gå igenom den här proceduren i demonstrationsdataföretaget USMF eller använda dina egna data.</span><span class="sxs-lookup"><span data-stu-id="13739-106">You can walk through this procedure in demo data company USMF, or using your own data.</span></span> <span data-ttu-id="13739-107">Om du använder dina egna data, kontrollera att du har konfigurerat produkter och platser och att du har skapat ett lagerjournalnamn för inventeringsjournaler.</span><span class="sxs-lookup"><span data-stu-id="13739-107">If you’re using your own data, make sure that you have products and locations set up, and that you’ve created an inventory journal name for counting journals.</span></span> <span data-ttu-id="13739-108">Lagerinventering utförs normalt av en lagerarbetare.</span><span class="sxs-lookup"><span data-stu-id="13739-108">Inventory counting is normally carried out by a warehouse employee.</span></span>
 

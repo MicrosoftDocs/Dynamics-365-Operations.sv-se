@@ -16,15 +16,15 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: e92b5cd4d903a68d30f7c25fd7e3df8989bb82d1
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: da8b6c4ec7643ffd84713b4098b4ff35ab95a6b4
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="define-partial-location-cycle-counting-process"></a><span data-ttu-id="0b682-103">Definiera rullande inventering av del av platser </span><span class="sxs-lookup"><span data-stu-id="0b682-103">Define partial location cycle counting process</span></span> 
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="0b682-104">När du använder planer för rullande inventering för att skapa inventeringsarbete kan du styra den faktiska inventeringen genom att begära att enbart vissa produkter eller produktvarianter inventeras i stället för all lagerbehållning på platsen.</span><span class="sxs-lookup"><span data-stu-id="0b682-104">When you use cycle count plans to create counting work, you can guide the actual counting operations by requesting that only specific products and product variants be counted instead of all on-hand inventory at the location.</span></span> <span data-ttu-id="0b682-105">Genom att filtrera efter specifika produkter kan lagerchefen minska granskningsomkostnaderna, undvika konsolideringsmisstag och spara tid.</span><span class="sxs-lookup"><span data-stu-id="0b682-105">By filtering on specific products, the warehouse manager can reduce review overhead, help prevent consolidation mistakes, and save time.</span></span> <span data-ttu-id="0b682-106">Vanligtvis utför en lagerchef inställningsuppgifterna.</span><span class="sxs-lookup"><span data-stu-id="0b682-106">Typically, a warehouse manager performs the setup tasks.</span></span> <span data-ttu-id="0b682-107">Du kan gå igenom den här proceduren i demonstrationsdataföretaget USMF eller i dina egna data.</span><span class="sxs-lookup"><span data-stu-id="0b682-107">You can go through this procedure in the USMF demo data company or in your own data.</span></span>
 

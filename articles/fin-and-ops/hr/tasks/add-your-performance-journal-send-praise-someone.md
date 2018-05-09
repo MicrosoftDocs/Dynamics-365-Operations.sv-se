@@ -16,15 +16,15 @@ ms.author: shielas
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 9b898a5ab5ad2837ef1d9ef8ebf88aaa05f56b3a
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 24efc88414e33b421a7bed32c90d3aaf81af612c
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="add-to-your-performance-journal-and-send-praise-to-someone"></a><span data-ttu-id="170ec-103">Lägg till i din resultatjournal och skicka beröm till någon</span><span class="sxs-lookup"><span data-stu-id="170ec-103">Add to your performance journal and send praise to someone</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="170ec-104">Resultatjournalen innehåller information som är relaterad till hur du uppfyller dina mål eller hur du har presterat under en period.</span><span class="sxs-lookup"><span data-stu-id="170ec-104">The performance journal holds information that relates to how you met your goals or how you performed during a period.</span></span> <span data-ttu-id="170ec-105">Du kan också lovorda en medarbetares åtgärder från journalen.</span><span class="sxs-lookup"><span data-stu-id="170ec-105">You can also praise the actions of a co-worker from the journal.</span></span> <span data-ttu-id="170ec-106">Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.</span><span class="sxs-lookup"><span data-stu-id="170ec-106">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="170ec-107">Denna procedur är avsedd för en funktion som lades till i Dynamics 365 for Operations version 1611.</span><span class="sxs-lookup"><span data-stu-id="170ec-107">This procedure is for a feature that was added in Dynamics 365 for Operations version 1611.</span></span>
 

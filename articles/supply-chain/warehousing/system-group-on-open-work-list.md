@@ -18,16 +18,16 @@ ms.author: mirzaab
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: d9ca6b0d4a9909d419d6241a044336d7a02aea02
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: c9ff5df219c5e8b52e3d64d340fd55be7f51919a
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="system-grouping-on-an-open-work-list"></a><span data-ttu-id="2199d-103">Systemgruppering i en öppen arbetslista</span><span class="sxs-lookup"><span data-stu-id="2199d-103">System grouping on an open work list</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="2199d-104">Genom att använda ett systemgrupperingsfält kan de filtrera en öppen arbetslista utan att behöva redigera menyalternativet mobil enhet.</span><span class="sxs-lookup"><span data-stu-id="2199d-104">By using a system grouping field, you can filter an open work list without having to edit the mobile device menu item.</span></span>
 <span data-ttu-id="2199d-105">Där det går att tillämpa fungerar systemgrupperingen för att filtrera en arbetslista i ett fält för en enskild arbetsrubrik.</span><span class="sxs-lookup"><span data-stu-id="2199d-105">Where it applies, system grouping works for filtering a work list on a single work header field.</span></span> <span data-ttu-id="2199d-106">Du kan inte använda systemgruppering för att filtrera på radnivåfält.</span><span class="sxs-lookup"><span data-stu-id="2199d-106">You cannot use system grouping to filter on line level fields.</span></span>

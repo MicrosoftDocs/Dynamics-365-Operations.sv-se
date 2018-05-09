@@ -17,15 +17,15 @@ ms.author: jeffbl
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: cc42a3d43914dd62b97e1be1f9eb7f9c4f01ea09
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 031b35b729af51e60baf7a5b00779b436da748a7
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="configure-the-functionality-profile-for-a-sales-representative"></a><span data-ttu-id="ae1af-103"> Konfigurera funktionsprofilen för en säljare</span><span class="sxs-lookup"><span data-stu-id="ae1af-103">Configure the functionality profile for a sales representative</span></span>
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 <span data-ttu-id="ae1af-104">I den här proceduren visas hur du konfigurerar en butiks funktionsprofilinställningar som gäller för säljare.</span><span class="sxs-lookup"><span data-stu-id="ae1af-104">This procedure demonstrates how to configure a store's functionality profile settings that apply to sales representatives.</span></span> <span data-ttu-id="ae1af-105">Denna procedur använder demonstrationsföretaget USRT.</span><span class="sxs-lookup"><span data-stu-id="ae1af-105">This procedures uses the USRT demo data company.</span></span>
 

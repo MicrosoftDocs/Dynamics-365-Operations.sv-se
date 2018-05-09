@@ -17,15 +17,15 @@ ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: fb48914491597f2eb7cc08db99ed548764213709
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 7a920ae932cb38f70d06b33ccf688dc713fcb16c
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="configure-locations-in-a-wms-enabled-warehouse"></a><span data-ttu-id="1d85a-103">Konfigurera platser i ett WMS-aktiverat lagerställe</span><span class="sxs-lookup"><span data-stu-id="1d85a-103">Configure locations in a WMS-enabled warehouse</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="1d85a-104">Den här guiden visar hur du konfigurerar platsinställningar för ett nytt WMS-aktiverat lagerställe (ett lagerställe som använder avancerade lagerstyrningsprocesser).</span><span class="sxs-lookup"><span data-stu-id="1d85a-104">This guide shows you how to configure the location setup for a new WMS-enabled warehouse (a warehouse that uses advanced warehouse management processes).</span></span> <span data-ttu-id="1d85a-105">Processen normalt utförs av en lagerchef.</span><span class="sxs-lookup"><span data-stu-id="1d85a-105">The process is typically done by a warehouse manager.</span></span> <span data-ttu-id="1d85a-106">Du kan köra den här guiden för demonstrationsföretaget USMF eller på dina egna data.</span><span class="sxs-lookup"><span data-stu-id="1d85a-106">You can run this guide in demo data company USMF or on your own data.</span></span> <span data-ttu-id="1d85a-107">En förutsättning är att du har konfigurerat minst en webbplats.</span><span class="sxs-lookup"><span data-stu-id="1d85a-107">A precondition is that you have at least one site configured.</span></span>
 

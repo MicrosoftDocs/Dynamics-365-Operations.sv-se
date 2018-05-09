@@ -16,15 +16,15 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 8c44579df2f844bcd4668a218df2ebdca37fa0cc
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: d123dac767a8985f6c1a5fef64a9814160f76a8d
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-a-plan-for-a-site"></a><span data-ttu-id="473be-103">Skapa en plan för en plats</span><span class="sxs-lookup"><span data-stu-id="473be-103">Create a plan for a site</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="473be-104">Produktionstadsplaneraren beräknar material- och kapacitetsbehov för att producera en specifik artikel.</span><span class="sxs-lookup"><span data-stu-id="473be-104">The production planner calculates the material and capacity requirements for the production of a specific item.</span></span> <span data-ttu-id="473be-105">När anskaffningsförslagen har skapats, hittar han order på siten för vilken han planerar och bekräftar order med start från de mest brådskande.</span><span class="sxs-lookup"><span data-stu-id="473be-105">After the sourcing suggestions are created, he finds the orders at the site for which he is planning and firms the orders, starting from the urgent ones.</span></span> <span data-ttu-id="473be-106">De mest brådskande order är de som måste bekräftas på det aktuella datumet.</span><span class="sxs-lookup"><span data-stu-id="473be-106">The most urgent orders are the ones that need to be firmed on the current date.</span></span> <span data-ttu-id="473be-107">Använd demonstrationdataföretaget USMF för att utföra dessa uppgifter.</span><span class="sxs-lookup"><span data-stu-id="473be-107">Use the demo data company USMF to perform these tasks.</span></span>
 

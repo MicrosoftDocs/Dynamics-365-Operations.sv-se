@@ -17,15 +17,15 @@ ms.author: jashanno
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 58df4768f33bc4a98c5a229b698754692ce6edbb
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: ca1a96e83b29c2d782ae5c4daceeaddbc461de7a
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="perform-self-service-to-download-hardware-station"></a><span data-ttu-id="a7256-103"> Utför självbetjäning för att hämta maskinvarustation</span><span class="sxs-lookup"><span data-stu-id="a7256-103">Perform self-service to download hardware station</span></span>
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 <span data-ttu-id="a7256-104">Den här proceduren visar hur du laddar ned en fördefinierad maskinvarustation.</span><span class="sxs-lookup"><span data-stu-id="a7256-104">This procedure walks through how to download a pre-defined hardware station.</span></span> <span data-ttu-id="a7256-105">Det demonstrationsdataföretag som används för den här proceduren är USRT.</span><span class="sxs-lookup"><span data-stu-id="a7256-105">The demo data company used for this procedure is USRT.</span></span> <span data-ttu-id="a7256-106">Du måste ha skapat en ny maskinvarustationsprofil och maskinvarustation innan du startar den här uppgiften.</span><span class="sxs-lookup"><span data-stu-id="a7256-106">You must have created a new hardware station profile and hardware station before starting this task.</span></span>
 

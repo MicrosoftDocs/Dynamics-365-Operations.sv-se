@@ -18,16 +18,16 @@ ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: d4fb8251afad657d76f4b7b1de0a53ca584477a9
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 211a64162c52377a7643004416d90029a3d17ee7
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="vendor-payments-workspace"></a><span data-ttu-id="fefd0-104">Arbetsyta för leverantörsbetalningar</span><span class="sxs-lookup"><span data-stu-id="fefd0-104">Vendor payments workspace</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="fefd0-105">Arbetsytan **Leverantörsbetalningar** visar information kopplad till behandling av leverantörsbetalningar.</span><span class="sxs-lookup"><span data-stu-id="fefd0-105">The **Vendor payments** workspace shows information that is related to the processing of vendor payments.</span></span> <span data-ttu-id="fefd0-106">Den här arbetsytan innehåller vyn **Mitt arbete** och sidan **Analyser**.</span><span class="sxs-lookup"><span data-stu-id="fefd0-106">This workspace includes a **My work** view and an **Analytics** page.</span></span> <span data-ttu-id="fefd0-107">Vyn **Mitt arbete** visar sammanfattningsrutor, rutnät för leverantörstransaktioner och relaterad leverantörsinformation.</span><span class="sxs-lookup"><span data-stu-id="fefd0-107">The **My work** view shows summary tiles, vendor transaction grids, and related vendor information.</span></span> <span data-ttu-id="fefd0-108">Sidan **Analyser** använder funktionerna i Microsoft Power BI för att visa modeller relaterade till leverantörsbetalningar.</span><span class="sxs-lookup"><span data-stu-id="fefd0-108">The **Analytics** page uses the capabilities of Microsoft Power BI to show visuals that are related to vendor payments.</span></span>
 

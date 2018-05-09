@@ -17,15 +17,15 @@ ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 9ba09bfba52cd576782e61802e44fa4b80f4711f
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 8c9a7d7e4e2d751722dac8089bc2056334fa96a3
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="calculate-kanban-quantity-suggestions"></a><span data-ttu-id="b4e71-103">Beräkna förslag till kanban-kvantitet</span><span class="sxs-lookup"><span data-stu-id="b4e71-103">Calculate kanban quantity suggestions</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="b4e71-104">Den här proceduren fokuserar på att optimera kanban-storleken och kvantiteterna för en specifik kanban-regel med hjälp av kanban-kvantitetsberäkningen.</span><span class="sxs-lookup"><span data-stu-id="b4e71-104">This procedure focuses on optimizing the kanban size and quantities for a specific kanban rule by using the kanban quantity calculation.</span></span> <span data-ttu-id="b4e71-105">Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.</span><span class="sxs-lookup"><span data-stu-id="b4e71-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="b4e71-106">Den här proceduren är avsedd för den värdeströmsansvarige.</span><span class="sxs-lookup"><span data-stu-id="b4e71-106">This procedure is intended for the value stream manager.</span></span> <span data-ttu-id="b4e71-107">Det är en förutsättning att du har slutfört proceduren Lägg till en beräkningspolicy för kanban-kvantitet till en kanban-regel.</span><span class="sxs-lookup"><span data-stu-id="b4e71-107">It is a prerequisite that you have completed the procedure Add a new kanban quantity calculation policy to a kanban rule.</span></span>
 

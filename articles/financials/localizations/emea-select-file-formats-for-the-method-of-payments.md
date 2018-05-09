@@ -18,16 +18,16 @@ ms.author: v-lenest
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 477a67835ef6613810333c8e1a1345311783f8c9
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 350bea3e4a698e5e7c71fe4fcbb7e7386939511e
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="file-formats-for-methods-of-payment"></a><span data-ttu-id="96e79-103">Filformat för betalningsmetod</span><span class="sxs-lookup"><span data-stu-id="96e79-103">File formats for methods of payment</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="96e79-104">Det här avsnittet beskriver två metoder för att hämta de filformat som du kan använda för betalningsmetoder.</span><span class="sxs-lookup"><span data-stu-id="96e79-104">This topic describes the two methods for getting file formats that you can use for methods of payment.</span></span>
 

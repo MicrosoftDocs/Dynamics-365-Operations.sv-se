@@ -19,16 +19,16 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 69b9c5590e6f9311696bbbed2e63a6eeba2a90bf
-ms.openlocfilehash: 3f527911183a6e9b335f30d472ff57144e6a5aff
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: c376273f901f0c860aea92db587a1b156ab079b5
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/03/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="requests-for-quotation-rfqs"></a><span data-ttu-id="bd4e6-104">Anbudsförfrågningar (RFQ)</span><span class="sxs-lookup"><span data-stu-id="bd4e6-104">Requests for quotation (RFQs)</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="bd4e6-105">Det här ämnet ger en översikt över anbudsförfrågningar (RFQ).</span><span class="sxs-lookup"><span data-stu-id="bd4e6-105">This topic provides an overview of requests for quotation (RFQs).</span></span> <span data-ttu-id="bd4e6-106">Organisationer utfärdar anbudsförfrågan (RFQ) när de vill ta emot konkurrenskraftiga erbjudanden för de artiklar eller tjänster som de måste köpa.</span><span class="sxs-lookup"><span data-stu-id="bd4e6-106">Organizations issue RFQs when they want to receive competitive offers from several vendors for the items or services that they must purchase.</span></span> <span data-ttu-id="bd4e6-107">I en anbudsförfrågan ber du leverantörer att ge priser och leveranstiderna för de kvantiteter av artiklar du anger.</span><span class="sxs-lookup"><span data-stu-id="bd4e6-107">In an RFQ, you ask vendors to provide the prices and delivery times for the item quantities that you specify.</span></span>
 <span data-ttu-id="bd4e6-108">Du kan också be leverantörerna att ange om det finns några tillfälliga avgifter, till exempel fraktkostnader, eller om leverantören erbjuder rabatter för stora order eller tidig betalning av leverantörsfakturan.</span><span class="sxs-lookup"><span data-stu-id="bd4e6-108">You can also ask vendors to specify whether there are any incidental charges, such as shipping costs, or any discounts for large orders or early payment of the vendor invoice.</span></span>

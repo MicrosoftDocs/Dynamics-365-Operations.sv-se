@@ -16,15 +16,15 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 767fbe69eb918b6e37842ad1c393d08d11346e71
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 5c48bdc1446b1555f76562afb7ecc3bdb0c5914c
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="set-up-a-procurement-category-hierarchy"></a><span data-ttu-id="e776b-103">Ställ in en anskaffningskategorihierarki</span><span class="sxs-lookup"><span data-stu-id="e776b-103">Set up a procurement category hierarchy</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="e776b-104">I den här proceduren visas hur du skapar nya noder i en anskaffningskategorihierarki och hur du konfigurerar en anskaffningskategori som ska användas i en anskaffningsprocess.</span><span class="sxs-lookup"><span data-stu-id="e776b-104">This procedure shows you how to create new nodes in a procurement category hierarchy and how to configure a procurement category to be used in a procurement process.</span></span> <span data-ttu-id="e776b-105">Dessa uppgifter utförs vanligtvis av en inköpschef.</span><span class="sxs-lookup"><span data-stu-id="e776b-105">These tasks would typically be carried out by a Purchasing manager.</span></span> <span data-ttu-id="e776b-106">Innan du kan starta den här proceduren måste det finnas en kategorihierarki av typen anskaffning.</span><span class="sxs-lookup"><span data-stu-id="e776b-106">Before you can start this procedure, there must be a category hierarchy of type Procurement.</span></span> <span data-ttu-id="e776b-107">Om du använder ett demonstrationsdataföretag kan du köra denna procedur i USMF-företaget.</span><span class="sxs-lookup"><span data-stu-id="e776b-107">If you're using a demo data company, you can run this procedure in the USMF company.</span></span>
 

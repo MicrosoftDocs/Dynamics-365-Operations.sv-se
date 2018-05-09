@@ -16,15 +16,15 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 1cf621b0fad72ad8785a0c9cb35fbf1964ee3b0d
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: fa2ea0f36f059b582b5e8658ffacde527425fcba
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-a-product-master"></a><span data-ttu-id="c9fbe-103">Skapa en produktmall</span><span class="sxs-lookup"><span data-stu-id="c9fbe-103">Create a product master</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="c9fbe-104">Skapa en produktmall för de fördefinierade varianterna.</span><span class="sxs-lookup"><span data-stu-id="c9fbe-104">Create a product master for the predefined variants.</span></span> <span data-ttu-id="c9fbe-105">Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.</span><span class="sxs-lookup"><span data-stu-id="c9fbe-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="c9fbe-106">Den här proceduren är avsedd för produktplaneraren.</span><span class="sxs-lookup"><span data-stu-id="c9fbe-106">This procedure is intended for the product designer.</span></span>
 

@@ -17,15 +17,15 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 37010003ad638e068ed7650532da29c6dbc033cb
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: c3c048a18ee8150880ed9df139cd498f2ec52852
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="set-up-a-mobile-device-menu-item-for-completing-work-in-a-purchase-order"></a><span data-ttu-id="ee6c4-103">Ställ in ett menyalternativ för mobil enhet för att slutföra arbetet i en inköpsorder</span><span class="sxs-lookup"><span data-stu-id="ee6c4-103">Set up a mobile device menu item for completing work in a purchase order</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="ee6c4-104">I den här proceduren visas hur du ställer in ett menyalternativet för mobila enheter.</span><span class="sxs-lookup"><span data-stu-id="ee6c4-104">This procedure shows how to set up a Mobile device menu item.</span></span> <span data-ttu-id="ee6c4-105">I det här exemplet används menyalternativet för att utföra arbete av typen Inköpsorder.</span><span class="sxs-lookup"><span data-stu-id="ee6c4-105">In this example, the menu item is used for performing work of type Purchase order.</span></span> <span data-ttu-id="ee6c4-106">Arbetsklassen som associeras med menyalternativet bestämmer vilket arbete som är giltigt.</span><span class="sxs-lookup"><span data-stu-id="ee6c4-106">The work class that’s associated with the menu item determines which work is valid.</span></span> <span data-ttu-id="ee6c4-107">Du kan använda den här guiden i demonstrationsföretaget USMF.</span><span class="sxs-lookup"><span data-stu-id="ee6c4-107">You can use this guide in demo data company USMF.</span></span> <span data-ttu-id="ee6c4-108">Vanligtvis utförs den här proceduren av en lagerchef.</span><span class="sxs-lookup"><span data-stu-id="ee6c4-108">This procedure is typically carried out by a warehouse manager.</span></span>
 

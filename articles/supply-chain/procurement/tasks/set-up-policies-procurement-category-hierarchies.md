@@ -16,15 +16,15 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: a773675b858a196e795ad54cc534ef5eb98ef484
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: f98f5b578c1d01463d196b6018e9f47a9d924be7
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="set-up-policies-for-procurement-category-hierarchies"></a><span data-ttu-id="9da3a-103">Ställ in policyer för hierarkier för anskaffningskategorier</span><span class="sxs-lookup"><span data-stu-id="9da3a-103">Set up policies for procurement category hierarchies</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="9da3a-104">Använd den här proceduren för att ställa in regler för att beställa produkter i en kategori.</span><span class="sxs-lookup"><span data-stu-id="9da3a-104">Use this procedure to set up rules for ordering products in a category.</span></span> <span data-ttu-id="9da3a-105">Policyreglerna definieras för en specifik inköpspolicy.</span><span class="sxs-lookup"><span data-stu-id="9da3a-105">The rules are defined for a specific purchasing policy.</span></span> <span data-ttu-id="9da3a-106">Åtkomstregeldata kontrollerar vilka anskaffningskategorier som anställda har åtkomst till när de skapar en rekvisition.</span><span class="sxs-lookup"><span data-stu-id="9da3a-106">The category access rule controls which procurement categories employees have access to when they create a requisition.</span></span> <span data-ttu-id="9da3a-107">När en rekvisition skapas fastställs den inköpspolicy och den kategoriåtkomstregel som ska användas av den juridiska person och den driftenhet som medarbetaren tillhör.</span><span class="sxs-lookup"><span data-stu-id="9da3a-107">When a requisition is being created, the purchasing policy and category access rule that should be applied are determined by the legal entity and the operational unit that the employee belongs to.</span></span> <span data-ttu-id="9da3a-108">Du kan köra den här proceduren i demonstrationsdataföretaget USMF.</span><span class="sxs-lookup"><span data-stu-id="9da3a-108">You can use this procedure in demo data company USMF.</span></span> <span data-ttu-id="9da3a-109">Denna uppgift utförs vanligtvis av en inköpschef.</span><span class="sxs-lookup"><span data-stu-id="9da3a-109">This task would typically be carried out by a purchasing manager.</span></span>
 

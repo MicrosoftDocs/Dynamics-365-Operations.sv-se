@@ -17,15 +17,15 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: e12a2ac565bb8a8383044bd76a97f01e0434c739
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: dc014e499d5705b8ad72bc502969a6102d89ae36
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="set-up-dispositions-codes"></a><span data-ttu-id="91d36-103">Ställ in dispositionskoder</span><span class="sxs-lookup"><span data-stu-id="91d36-103">Set up dispositions codes</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="91d36-104">I den här proceduren läggs fokus på inställningen av en dispositionskod som kan användas på en mobil enhet för inleveransprocessen för returorder.</span><span class="sxs-lookup"><span data-stu-id="91d36-104">This procedure focuses on the setup of a disposition code that can be used on a mobile device for the return order receiving process.</span></span> <span data-ttu-id="91d36-105">Dispositionskoder är en grupp regler som kan användas när artiklar tas emot.</span><span class="sxs-lookup"><span data-stu-id="91d36-105">Disposition codes are a collection of rules that can be used when items are received.</span></span> <span data-ttu-id="91d36-106">När till exempel en arbetare använder en mobil enhet för att ta emot artiklar som är skadade, måste användaren skanna en dispositionskod för skadade artiklar.</span><span class="sxs-lookup"><span data-stu-id="91d36-106">For example, when a work user uses a mobile device to receive items that were damaged, the user must scan a disposition code for damaged items.</span></span> <span data-ttu-id="91d36-107">Lagerstatusen för de mottagna varorna, arbetsmallen och platsdirektivet kan fastställas från den skannade dispositionskoden.</span><span class="sxs-lookup"><span data-stu-id="91d36-107">The inventory status of the goods received, the work template, and the location directive can be determined from the scanned disposition code.</span></span> <span data-ttu-id="91d36-108">För inleveransprocessen för inköpsorder och produktionsorderrapporten som slutförd process är användningen av en dispositionskod valfritt.</span><span class="sxs-lookup"><span data-stu-id="91d36-108">For the purchase order receiving process and the production order report as finished process, the use of a disposition code is optional.</span></span> <span data-ttu-id="91d36-109">För inleveransprocessen för försäljningsorder där artiklarna registreras med hjälp av en mobil enhet, är användning av dispositionskoden obligatorisk.</span><span class="sxs-lookup"><span data-stu-id="91d36-109">For the sales order return receiving process, if the items are registered using a mobile device, the use of disposition code is mandatory.</span></span>  <span data-ttu-id="91d36-110">Guiden har skapats med demodataföretaget USMF.</span><span class="sxs-lookup"><span data-stu-id="91d36-110">This guide was created using the demo data company USMF.</span></span> <span data-ttu-id="91d36-111">Den här proceduren är avsedd för lagerchefen.</span><span class="sxs-lookup"><span data-stu-id="91d36-111">This procedure is intended for the warehouse manager.</span></span> 
 

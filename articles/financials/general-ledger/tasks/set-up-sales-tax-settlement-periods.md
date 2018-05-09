@@ -16,15 +16,15 @@ ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 6de8dbd33a02183ee8bafca720c3738e8eac44e8
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: fcf4ebcb8a9c27961e250177d4254f28aaefc883
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="set-up-sales-tax-settlement-periods"></a><span data-ttu-id="6e8f7-103">Ställ in momskvittningsperioder</span><span class="sxs-lookup"><span data-stu-id="6e8f7-103">Set up sales tax settlement periods</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="6e8f7-104">Momskvittningsperioder innehåller information om periodintervall för rapportering och betalning av moms.</span><span class="sxs-lookup"><span data-stu-id="6e8f7-104">Sales tax settlement periods contain information about the period intervals for which sales tax needs to be reported and paid.</span></span> <span data-ttu-id="6e8f7-105">En kvittningprocess kan köras för en kvittningsperiod för ett specifikt datumintervall.</span><span class="sxs-lookup"><span data-stu-id="6e8f7-105">A settlement process can be run for a settlement period for a specific date interval.</span></span> <span data-ttu-id="6e8f7-106">Alla momskoder som är kopplade till kvittningsperioden kvittas.</span><span class="sxs-lookup"><span data-stu-id="6e8f7-106">All tax codes associated with the settlement period will be settled.</span></span> <span data-ttu-id="6e8f7-107">Beroende på inställningen av den relaterade skattemyndigheten bokförs skatteskulden antingen till en leverantör eller ett redovisningskonto.</span><span class="sxs-lookup"><span data-stu-id="6e8f7-107">Depending on the set up of the related Sales tax authority, the tax liability is posted either to a vendor or a General ledger account.</span></span>
 

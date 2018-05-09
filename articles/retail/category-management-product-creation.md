@@ -20,16 +20,16 @@ ms.author: asharchw
 ms.search.validFrom: 2017-09-01
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 2246024d7d70947690173f3d0768292abe43efd7
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 106beb8c2c69f8cef2abf0db9015b079248e0a66
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="manage-retail-product-categories-and-products"></a><span data-ttu-id="83b1f-103">Hantera produktkategorier (butik) och produkter</span><span class="sxs-lookup"><span data-stu-id="83b1f-103">Manage Retail product categories and products</span></span>
 
-[!INCLUDE [banner](./includes/banner.md)]
+[!include [banner](./includes/banner.md)]
 
 <span data-ttu-id="83b1f-104">Det här avsnittet beskriver ett bättre sätt att hantera produktkategorier (butik) och produkter i Microsoft Dynamics 365 for Retail.</span><span class="sxs-lookup"><span data-stu-id="83b1f-104">This topic describes an enhanced way to manage Retail product categories and products in Microsoft Dynamics 365 for Retail.</span></span> <span data-ttu-id="83b1f-105">Dessa förbättringar gör det möjligt för marknadsföringschefer att visa en struktur som delas mellan produktegenskaper bland detaljhandelsprodukter och information om frisläppt produkt.</span><span class="sxs-lookup"><span data-stu-id="83b1f-105">The enhancements let merchandising managers view a structure of product properties that is shared between the Retail product hierarchy and released product details.</span></span>
 

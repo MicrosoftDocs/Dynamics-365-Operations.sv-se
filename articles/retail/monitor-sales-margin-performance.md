@@ -20,16 +20,16 @@ ms.author: asharchw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 4b90d7a9290fb7485fffe959057516795226d99b
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 13e99ba3a706d49affa4fd8d0f63b7c2f51b24bc
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="monitor-sales-and-margin-performance"></a><span data-ttu-id="f61d5-103">Övervaka försäljningsresultat och marginaler</span><span class="sxs-lookup"><span data-stu-id="f61d5-103">Monitor sales and margin performance</span></span>
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 <span data-ttu-id="f61d5-104">Du kan övervaka försäljning och marginalprestanda i realtid med hjälp av Microsoft Dynamics 365 for Retail.</span><span class="sxs-lookup"><span data-stu-id="f61d5-104">You can monitor sales and margin performance in real time using Microsoft Dynamics 365 for Retail.</span></span>
 

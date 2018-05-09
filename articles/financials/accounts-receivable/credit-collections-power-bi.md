@@ -17,16 +17,16 @@ ms.author: shpandey
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: c21e1d7e40d03bbf08c54e90009bc3671b6f14c2
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: a80a180623d1cca77c633f12bcd92a088e089ee5
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="credit-and-collections-management-power-bi-content"></a><span data-ttu-id="1bc53-104">Power BI innehållspaket för kredit- och inkassohantering</span><span class="sxs-lookup"><span data-stu-id="1bc53-104">Credit and collections management Power BI content</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="1bc53-105">Det här avsnittet beskriver vad som ingår i Power BI-innehållet för **kredit- och inkassohantering**.</span><span class="sxs-lookup"><span data-stu-id="1bc53-105">This topic describes what is included in the **Credit and collections management** Microsoft Power BI content.</span></span> <span data-ttu-id="1bc53-106">Det förklarar hur du öppnar Power BI-rapporter, och ger information om den datamodell och de enheter som användes för att skapa innehållet.</span><span class="sxs-lookup"><span data-stu-id="1bc53-106">It explains how to access the Power BI reports, and provides information about the data model and entities that were used to build the content.</span></span>
 

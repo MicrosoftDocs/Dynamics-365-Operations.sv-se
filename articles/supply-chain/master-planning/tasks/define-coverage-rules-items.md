@@ -16,15 +16,15 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 4d28abe06cb7bfd43fd95af8cd88e022a51f5380
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 3205fe6a10ce714073334c7ccd25acb755e0aebf
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="define-coverage-rules-for-items"></a><span data-ttu-id="94da1-103">Definiera disponeringsregler för artiklar</span><span class="sxs-lookup"><span data-stu-id="94da1-103">Define coverage rules for items</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="94da1-104">Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.</span><span class="sxs-lookup"><span data-stu-id="94da1-104">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="94da1-105">Den här proceduren visar hur du skapar disponeringsregler och åsidosätter disponeringsinställningar för en specifik artikel.</span><span class="sxs-lookup"><span data-stu-id="94da1-105">This procedure shows how to create coverage rules and override coverage settings for a specific item.</span></span> <span data-ttu-id="94da1-106">Du ser även hur du anger standardlagerinställningar.</span><span class="sxs-lookup"><span data-stu-id="94da1-106">It also shows how to specify default inventory settings.</span></span>
 

@@ -16,15 +16,15 @@ ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: d21f9047dcea0af59c24339ebb57e8eabe3950d4
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 0fad3c62f926e508e09a265a600194b7ea595bf0
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="register-sales-commissions"></a><span data-ttu-id="70b62-103">Registrera försäljningsprovisioner</span><span class="sxs-lookup"><span data-stu-id="70b62-103">Register sales commissions</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="70b62-104">I den här proceduren visas hur försäljningsprovisioner beräknas och registreras.</span><span class="sxs-lookup"><span data-stu-id="70b62-104">This procedure shows you how sales commissions are calculated and registered.</span></span> <span data-ttu-id="70b62-105">Du kan köra den här proceduren i demonstrationsföretaget USMF eller på dina egna data.</span><span class="sxs-lookup"><span data-stu-id="70b62-105">You can run this procedure in demo data company USMF or on your own data.</span></span> <span data-ttu-id="70b62-106">Innan du startar guiden kör du guiden ”Ställ in regler för försäljningsprovision” för att vara säker på att alla nödvändiga inställningar för provisionsberäkningen har gjorts.</span><span class="sxs-lookup"><span data-stu-id="70b62-106">Before starting this guide, run the guide called "Set up sales commission rules" to make sure that you have all the necessary commission calculation setup.</span></span>
 

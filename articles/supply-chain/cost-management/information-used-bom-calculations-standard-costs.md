@@ -20,16 +20,16 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 80e12de7a4da36ee6a8f54d9f6eeae52e94fb856
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: d76d54e6123789c0710764b34a7c9ee50342fcbd
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="information-used-in-bom-calculations-with-standard-costs"></a><span data-ttu-id="3709d-104">Information som används i strukturlisteberäkningar med standardkostnader</span><span class="sxs-lookup"><span data-stu-id="3709d-104">Information used in BOM calculations with standard costs</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="3709d-105">I strukturlisteberäkningar används data från flera källor för att beräkna standardkostnaderna för en tillverkad artikel.</span><span class="sxs-lookup"><span data-stu-id="3709d-105">Bills of material (BOM) calculations use data from several sources to calculate the standard costs of a manufactured item.</span></span> <span data-ttu-id="3709d-106">Källorna kan till exempel vara information om artiklar, flöden, beräkningsformler för indirekta kostnader och kostnadsversionen.</span><span class="sxs-lookup"><span data-stu-id="3709d-106">The sources include information about items, bills routings, indirect cost calculation formulas, and the costing version.</span></span>
 

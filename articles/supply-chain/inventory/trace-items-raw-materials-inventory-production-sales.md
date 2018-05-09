@@ -19,16 +19,16 @@ ms.author: pjacobse
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 60edc05bb45db973eb2e16dd833015c9a4873918
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 417f134ca18a0b7c57c2e03cdb457ba151bbd16b
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="item-and-raw-material-tracing-in-inventory-production-and-sales"></a><span data-ttu-id="ac522-103">Spåra artiklar och råmaterial i lager, produktion och försäljning</span><span class="sxs-lookup"><span data-stu-id="ac522-103">Item and raw material tracing in inventory, production, and sales</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="ac522-104">I det här avsnittet beskrivs hur du kan använda artikelspårning för att identifiera var artiklar och råmaterial har använts, används eller ska användas i produktionen och försäljningsprocessen.</span><span class="sxs-lookup"><span data-stu-id="ac522-104">This topic describes how you can use item tracing to identify where items or raw materials have been used, are being used, or will be used in production and sales processes.</span></span>
 

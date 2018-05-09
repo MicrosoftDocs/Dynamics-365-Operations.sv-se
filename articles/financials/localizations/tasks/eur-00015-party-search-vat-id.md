@@ -16,15 +16,15 @@ ms.author: v-oloski
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: b5dba9bab003dfc0156e5453da46fef3f7844dbb
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 2056f1a1d62e37e8ebf0e9381e61e24b9d64f652
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="party-search-using-vat-id"></a><span data-ttu-id="7f0f2-103">Partsökning via moms-ID</span><span class="sxs-lookup"><span data-stu-id="7f0f2-103">Party search using VAT ID</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="7f0f2-104">I den här proceduren visas hur du utför en partsökning part med hjälp av ett registrerings-ID.</span><span class="sxs-lookup"><span data-stu-id="7f0f2-104">This procedure shows how to complete a party search using a registration ID.</span></span> <span data-ttu-id="7f0f2-105">Innan du kan slutföra proceduren måste du skapa moms-ID och ange moms-ID för leverantörer, kunder eller juridiska personer.</span><span class="sxs-lookup"><span data-stu-id="7f0f2-105">Before you can complete this procedure, you must set up VAT IDs and enter any VAT IDs for vendors, customers, or legal entities.</span></span>
 

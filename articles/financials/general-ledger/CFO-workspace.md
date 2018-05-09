@@ -19,16 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 04643d4d9e3c0a21f2dac3ce27a7398f7be4f775
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: ebe2766976f2c7a88f9b919c8c13e05e36576e45
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="add-financial-dimensions-to-the-cfo-workspace"></a><span data-ttu-id="3ee85-103">Lägg till ekonomiska dimensioner i arbetsyta för ekonomichef</span><span class="sxs-lookup"><span data-stu-id="3ee85-103">Add financial dimensions to the CFO workspace</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="3ee85-104">Det här avsnittet beskriver hur du lägger till ekonomiska dimensioner till arbetsytan för ekonomichef så att den kan användas för redovisnings- och budgettransaktionerna.</span><span class="sxs-lookup"><span data-stu-id="3ee85-104">This topic explains how to add financial dimensions to the Chief Financial Officer (CFO) workspace, so that they can be used for the ledger and budget reports.</span></span> <span data-ttu-id="3ee85-105">Arbetsytan CFO har en flik kallad **Översikt** och en flik kallad **Ekonomi**. Rapporterna på dessa båda flikar backas upp av två åtgärder: MåttFör Redovisningsaktivitet och MåttFörBudgetaktivitet.</span><span class="sxs-lookup"><span data-stu-id="3ee85-105">The CFO workspace has an **Overview** tab and a **Financial** tab. The reports on these two tabs are backed by two measures: LedgerActivityMeasure and BudgetActivityMeasure.</span></span> <span data-ttu-id="3ee85-106">I Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (juli-uppdateringen 2017) finns ingen koppling mellan dessa två mått och entiteten EntitetFörDimensionskombination.</span><span class="sxs-lookup"><span data-stu-id="3ee85-106">In Microsoft Dynamics 365 for Finance and Operations, Enterprise edition (July 2017), there is a relation between those two measures and the DimensionCombinationEntity entity.</span></span> <span data-ttu-id="3ee85-107">Därför kan du välja dimensioner.</span><span class="sxs-lookup"><span data-stu-id="3ee85-107">Therefore, you can select dimensions.</span></span>
 

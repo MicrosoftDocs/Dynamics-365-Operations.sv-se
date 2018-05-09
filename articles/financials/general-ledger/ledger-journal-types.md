@@ -19,16 +19,16 @@ ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 60c7d291760ee5b8e597dbb42e10436279efd0c5
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 2260fcbeca5b8368960e788b0536c66ea84bfa0b
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="ledger-journal-types"></a><span data-ttu-id="614d8-104">Redovisningsjournaltyper</span><span class="sxs-lookup"><span data-stu-id="614d8-104">Ledger journal types</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="614d8-105">Det här avsnittet ger en beskrivning av de journaltyper du kan ställa in för ekonomiska journaler.</span><span class="sxs-lookup"><span data-stu-id="614d8-105">This article describes the journal types that you can set up for financial journals.</span></span> <span data-ttu-id="614d8-106">Använd sidan för **journalnamn** för att ställa in journaler som du kan använda i hela Microsoft Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="614d8-106">Use the **Journal names** page to set up journals that you can use throughout Microsoft Dynamics 365 for Finance and Operations.</span></span>
 

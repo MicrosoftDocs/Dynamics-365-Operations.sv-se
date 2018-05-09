@@ -17,15 +17,15 @@ ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: a84927f0abdbe822f71db9088217c8ac4143fba6
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 1083f42395284d2fceefd4a620828d1caea89174
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-a-bom-line-event-kanban-rule"></a><span data-ttu-id="7c967-103">Skapa en kanban-regel för strukturlistehändelse</span><span class="sxs-lookup"><span data-stu-id="7c967-103">Create a BOM line event kanban rule</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="7c967-104">Denna uppgift fokuserar på inställningen som krävs för att skapa en kanban-regel för händelse för att säkerställa leverans till produktionsstrukturlisterader i ett blandat resurssnål och klassisk produktionsmiljö.</span><span class="sxs-lookup"><span data-stu-id="7c967-104">This task focuses on the setup needed to create an event kanban rule to ensure supply for production BOM lines in a mixed lean and classic production environment.</span></span> <span data-ttu-id="7c967-105">Det demonstrationsdataföretag som används för att skapa den här uppgiften är USMF.</span><span class="sxs-lookup"><span data-stu-id="7c967-105">The demo data company used to create this task is USMF.</span></span> <span data-ttu-id="7c967-106">Den här uppgiften är avsedd för processingenjören eller värdeströmansvarig när de förbereder tillverkningen av en ny eller ändrad produkt.</span><span class="sxs-lookup"><span data-stu-id="7c967-106">This task is intended for the process engineer or the value stream manager, as they prepare production of a new or modified product.</span></span>
 

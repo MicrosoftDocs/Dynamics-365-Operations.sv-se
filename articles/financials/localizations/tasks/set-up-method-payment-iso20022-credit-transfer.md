@@ -16,15 +16,15 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 6c45324b1523e29aa5c6274b289fa823bf66ea12
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 6d1eb6a8fc7ad0a7f1902bc705e6d0152a113c0e
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="set-up-method-of-payment-for-iso20022-credit-transfer"></a><span data-ttu-id="57bdb-103">Ställ in en betalningsmetod för ISO20022-kreditöverföringar</span><span class="sxs-lookup"><span data-stu-id="57bdb-103">Set up method of payment for ISO20022 credit transfer</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="57bdb-104">I denna procedur visas hur du ställer in leverantörbetalningsmetoden för ISO20022-kreditöverföring eller någon annan betalningstyp med hjälp av elektronisk rapportering, om du vill skapa en fil.</span><span class="sxs-lookup"><span data-stu-id="57bdb-104">This procedure shows how to set up the vendor method of payment for ISO20022 credit transfer or any other payment type using electronic reporting to generate a file.</span></span> 
 

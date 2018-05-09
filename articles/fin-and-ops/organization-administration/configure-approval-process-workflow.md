@@ -18,16 +18,16 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 8e35b99a07d4c5eee9fae882b9d7f47ff6d63040
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 7a7770abf84d8f3c77e348c6aedb785dcb8ea28b
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="configure-an-approval-process-in-a-workflow"></a><span data-ttu-id="ed8ce-103">Konfigurera en godkännandeprocess i ett arbetsflöde</span><span class="sxs-lookup"><span data-stu-id="ed8ce-103">Configure an approval process in a workflow</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="ed8ce-104">Använd följande procedur när du vill konfigurera egenskaperna för godkännandeprocessen.</span><span class="sxs-lookup"><span data-stu-id="ed8ce-104">Use the following procedure to configure the properties of the approval process.</span></span>
 

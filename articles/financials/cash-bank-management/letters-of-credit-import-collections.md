@@ -19,16 +19,16 @@ ms.author: leguo
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 3bab4b9981f58c133e8c5ed693e6ed345248809d
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: effaffe8b5fbfc79713501973ece49db0517e30d
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="letters-of-credit-and-import-collections"></a><span data-ttu-id="0a10b-104">Remburs och importinkasso</span><span class="sxs-lookup"><span data-stu-id="0a10b-104">Letters of credit and import collections</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="0a10b-105">Det här avsnittet innehåller allmän information om remburser och importsamlingar.</span><span class="sxs-lookup"><span data-stu-id="0a10b-105">This article provides general information about letters of credit and import collections.</span></span> <span data-ttu-id="0a10b-106">Båda typerna av bankdokument används ofta för inköp och försäljning av varor över internationella gränser.</span><span class="sxs-lookup"><span data-stu-id="0a10b-106">Both types of bank document are often used for the purchase and sale of goods across international borders.</span></span>
 

@@ -18,16 +18,16 @@ ms.author: cgarty
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: e0e3e86820e0857b320d832c3bf3c94757667919
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 0b839a4b16095cf5d357b8405baf1a695b1bb955
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="use-the-excel-add-in"></a><span data-ttu-id="c01e1-103">Använd Excel-tillägget</span><span class="sxs-lookup"><span data-stu-id="c01e1-103">Use the Excel add-in</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="c01e1-104">Det här avsnittet beskriver hur du öppnar enhetsdata i Microsoft Excel och sedan visar, uppdaterar och redigerar data med Microsoft Dynamics Office-tillägget för Excel.</span><span class="sxs-lookup"><span data-stu-id="c01e1-104">This topic explains how to open entity data in Microsoft Excel, and then view, update, and edit the data by using the Microsoft Dynamics Office add-in for Excel.</span></span> <span data-ttu-id="c01e1-105">För att öppna enhetsdata kan du starta från Excel eller Microsoft Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="c01e1-105">To open the entity data, you can start from either Excel or Microsoft Dynamics 365 for Finance and Operations.</span></span>
 

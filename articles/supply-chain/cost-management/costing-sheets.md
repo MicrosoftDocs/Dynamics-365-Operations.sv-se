@@ -20,16 +20,16 @@ ms.author: yuyus
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 6ddba210ced7c7ed5fad818945765528e5b1c1d1
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 36b92b7dfacb781c559e3ab39406b709e7ce5c9a
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="costing-sheets"></a><span data-ttu-id="b3025-108">Kostnadsredovisningar</span><span class="sxs-lookup"><span data-stu-id="b3025-108">Costing sheets</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="b3025-109">När du ställer in kostnadsredovisning har du två mål.</span><span class="sxs-lookup"><span data-stu-id="b3025-109">Setting up the costing sheet involves two objectives.</span></span> <span data-ttu-id="b3025-110">För det första ska du definiera visningsformatet för information om kostnader för sålda varor för en tillverkad artikel eller tillverkningsorder.</span><span class="sxs-lookup"><span data-stu-id="b3025-110">As the first objective, you define the format for displaying cost of goods sold information about a manufactured item or production order.</span></span> <span data-ttu-id="b3025-111">Den formaterade visningen kallas för kostnadsredovisning.</span><span class="sxs-lookup"><span data-stu-id="b3025-111">The formatted display is termed a costing sheet.</span></span> <span data-ttu-id="b3025-112">För det andra ska du definiera grunden för hur indirekta kostnader beräknas.</span><span class="sxs-lookup"><span data-stu-id="b3025-112">As the second objective, you define the basis for calculating indirect costs.</span></span> <span data-ttu-id="b3025-113">Inställningarna för kostnadsredovisningen bygger på kostnadsgruppsfunktionen för visningsinformation och på beräkningsformler för indirekta kostnader.</span><span class="sxs-lookup"><span data-stu-id="b3025-113">The costing sheet setup builds on the cost group feature for displaying information and for the indirect cost calculation formulas.</span></span> <span data-ttu-id="b3025-114">De två målen med inställningarna för kostnadsredovisning beskrivs i den här artikeln.</span><span class="sxs-lookup"><span data-stu-id="b3025-114">The two objectives of costing sheet setup are described in this article.</span></span> 
 

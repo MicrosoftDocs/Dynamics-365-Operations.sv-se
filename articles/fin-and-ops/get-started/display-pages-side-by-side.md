@@ -18,16 +18,16 @@ ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: f19ca5e9642b5a8222ee7bf23fdd228ab75d2ed1
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: b0ffd313e0f1d50f35235d3a48f8715bb6c8de7b
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="display-pages-side-by-side-using-the-open-in-new-window-icon"></a><span data-ttu-id="52664-103">Visa sidor sida vid sida med ikonen Öppna i nytt fönster</span><span class="sxs-lookup"><span data-stu-id="52664-103">Display pages side-by-side using the Open in New Window icon</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="52664-104">Denna artikel förklarar hur du visar sidor sida vid sida i Microsoft Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="52664-104">This article explains how to display pages side-by-side in Microsoft Dynamics 365 for Finance and Operations.</span></span>
 

@@ -17,16 +17,16 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 4c0975cf36d87125b8184a7be8a6a8696eef2d3e
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: eb2c5317e5ac386bebfd7262eb9a98d559de3023
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="post-an-expense-report"></a><span data-ttu-id="f063f-103">Bokföra en utgiftsrapport</span><span class="sxs-lookup"><span data-stu-id="f063f-103">Post an expense report</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="f063f-104">När en utgiftsrapport har godkänts och överförts till den allmänna journalen kan rapporten bokföras i redovisningen.</span><span class="sxs-lookup"><span data-stu-id="f063f-104">After an expense report has been approved and transferred to the general journal, it can be posted to the general ledger.</span></span> <span data-ttu-id="f063f-105">När du bokför en utgiftsrapport identifieras utgifter som berättigar till återbetalning av moms.</span><span class="sxs-lookup"><span data-stu-id="f063f-105">When you post an expense report, expenses that are eligible for recovery of value-added tax (VAT) are identified.</span></span> <span data-ttu-id="f063f-106">Uppgiften att kontrollera och återställa momsbetalningar tilldelas den medarbetare som är ansvarig för att verifiera utgiftsrapporten.</span><span class="sxs-lookup"><span data-stu-id="f063f-106">The task of verifying and recovering VAT payments is assigned to the employee who is responsible for verifying the expense report.</span></span>
 

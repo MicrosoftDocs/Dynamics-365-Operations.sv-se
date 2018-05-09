@@ -16,15 +16,15 @@ ms.author: omulvad
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: d0ad0869907b23ce5e0b44e3e9ecee3f2cd34ede
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 16feadb3a2e30e3400d85829c73f6f20780e7b71
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="ship-sales-orders-without-warehousing"></a><span data-ttu-id="13bd1-103">Leverera försäljningsorder utan lagerstyrning</span><span class="sxs-lookup"><span data-stu-id="13bd1-103">Ship sales orders without warehousing</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="13bd1-104">I den här handboken visas hur du uppdaterar en försäljningsorder när produkter skickas till kunden.</span><span class="sxs-lookup"><span data-stu-id="13bd1-104">This guide demonstrates how to update a sales order when products are shipped to the customer.</span></span> <span data-ttu-id="13bd1-105">Guiden gäller uppfyllelseflödet som inte ställs in för lagerstyrning (varken grundläggande eller avancerad lagerstyrning) och därför inte kräver att produktplockningen ska registreras före leverans.</span><span class="sxs-lookup"><span data-stu-id="13bd1-105">The guide is applicable to the fulfillment flow that is not set up for warehouse management (neither basic or advanced warehousing), and therefore does not require product picking to be registered before shipment.</span></span> <span data-ttu-id="13bd1-106">Du kan köra den här proceduren med dina egna uppgifter i demonstrationsföretaget USMF.</span><span class="sxs-lookup"><span data-stu-id="13bd1-106">You can run this procedure on your own data or in demo data company USMF.</span></span> <span data-ttu-id="13bd1-107">I båda fallen innan du startar den här uppgiften, skapa en försäljningsorder för inventerad produkt med samma mängd större än 1.</span><span class="sxs-lookup"><span data-stu-id="13bd1-107">In both cases, before you start this task, create a sales order for an inventoried product with a quantity of greater than 1.</span></span> <span data-ttu-id="13bd1-108">För att undvika bokföringsfelt måste du kontrollera att produktens lagerbehållning på plats och lagerställe som du har valt på ordern omfattar orderkvantiteten.</span><span class="sxs-lookup"><span data-stu-id="13bd1-108">To avoid a posting error, you need to check that the product's on-hand quantity in the site and warehouse that you’ve selected on the order covers the order quantity.</span></span>
 

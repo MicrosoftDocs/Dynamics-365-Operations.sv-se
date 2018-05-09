@@ -19,16 +19,16 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 826484bdd3e2960e5888617191a69f8da6ce8525
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 569989bd85c7768cef55c849199d5950f66d16b4
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="advanced-bank-reconciliation-setup-process"></a><span data-ttu-id="e1ad4-104">Avancerad inställningsprocess för bankavstämning</span><span class="sxs-lookup"><span data-stu-id="e1ad4-104">Advanced bank reconciliation setup process</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="e1ad4-105">Med hjälp av en avancerad bankavstämning kan du importera elektroniska bankutdrag och utföra en automatiskt avstämning mot banktransaktioner i Microsoft Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="e1ad4-105">Advanced bank reconciliation allows you to import electronic bank statements and automatically reconcile with bank transactions in Microsoft Dynamics 365 for Finance and Operations.</span></span>  <span data-ttu-id="e1ad4-106">Den här artikeln innehåller en beskrivning av hur du ställer in processer för avstämning.</span><span class="sxs-lookup"><span data-stu-id="e1ad4-106">This article will explain the set up processes for reconciliation.</span></span>  
 

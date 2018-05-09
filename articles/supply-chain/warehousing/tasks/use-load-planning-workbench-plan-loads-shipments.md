@@ -17,15 +17,15 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: e948861920897cae7570984f97e3ff3893924a28
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 3f08049ad8d670be808c3a51bb8735ac489eda94
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="plan-loads-and-shipments-using-the-load-planning-workbench"></a><span data-ttu-id="35d98-103">Planera laster och utleveranser med workbench för lastplanering</span><span class="sxs-lookup"><span data-stu-id="35d98-103">Plan loads and shipments using the Load planning workbench</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="35d98-104">I den här proceduren visas hur du använder workbench för lastplanering om för att skapa en beläggning för en försäljningsorder.</span><span class="sxs-lookup"><span data-stu-id="35d98-104">This procedure shows how to use the load planning workbench to create a load for a sales order.</span></span> <span data-ttu-id="35d98-105">Som en förutsättning skapar vi försäljningsordern först.</span><span class="sxs-lookup"><span data-stu-id="35d98-105">As a prerequisite we'll create the sales order first.</span></span> <span data-ttu-id="35d98-106">Den här proceduren utgör en del av det dagliga arbetet för transportkoordinatorn.</span><span class="sxs-lookup"><span data-stu-id="35d98-106">This procedure is part of the daily work for the transportation coordinator.</span></span> <span data-ttu-id="35d98-107">Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.</span><span class="sxs-lookup"><span data-stu-id="35d98-107">The demo data company used to create this procedure is USMF.</span></span>
 

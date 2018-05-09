@@ -16,15 +16,15 @@ ms.author: mfalkner
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: ca7c0f46f0cab298580e37c236bd10e4325e011b
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 16fd3c6459389d20c59047d37ec8ca40424c62d2
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-a-free-text-invoice"></a><span data-ttu-id="a6755-103">Skapa en fritextfaktura</span><span class="sxs-lookup"><span data-stu-id="a6755-103">Create a free text invoice</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="a6755-104">Den här uppgifthandboken visar hur du skapar en fritextfaktura.</span><span class="sxs-lookup"><span data-stu-id="a6755-104">This task guide demonstrates creating a free text invoice.</span></span> <span data-ttu-id="a6755-105">I den här uppgiften används demonstrationsföretaget USMF.</span><span class="sxs-lookup"><span data-stu-id="a6755-105">This task uses the USMF demo company.</span></span>
 

@@ -16,15 +16,15 @@ ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 692a867eae15ac02f7042c69b9dde4f1fcbd0d54
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: fd6349c0da71a7fcf4429e7f6a2ef366afda6678
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="schedule-kanban-jobs"></a><span data-ttu-id="b5000-103">Tidsplanera kanban-jobb</span><span class="sxs-lookup"><span data-stu-id="b5000-103">Schedule kanban jobs</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="b5000-104">Den här proceduren fokuserar på att tidsplanera kanban-processjobb för en specifik arbetsgrupp.</span><span class="sxs-lookup"><span data-stu-id="b5000-104">This procedure focuses on scheduling process kanban jobs for a specific work cell.</span></span> <span data-ttu-id="b5000-105">Proceduren "Förbered ett kanban-processjobb när material inte är tillgängliga" är en förutsättning när du skapar den här proceduren.</span><span class="sxs-lookup"><span data-stu-id="b5000-105">The procedure "Prepare a process kanban job when materials are not available" is a prerequisite for creating this procedure.</span></span> <span data-ttu-id="b5000-106">Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.</span><span class="sxs-lookup"><span data-stu-id="b5000-106">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="b5000-107">Denna uppgift är avsedd för produktionslagerarbetsledaren och produktionsplaneraren som arbetar med kanbans.</span><span class="sxs-lookup"><span data-stu-id="b5000-107">This task is intended for the shop floor supervisor and production planner working with kanbans.</span></span>
 

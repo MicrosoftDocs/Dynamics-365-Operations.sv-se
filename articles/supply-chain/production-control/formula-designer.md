@@ -20,16 +20,16 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: a4cfd017fe10bbda6eda0e3a9a045e0832b08753
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: baf7a3fa0cce7a6e2521b07169a99aa7d0999bb1
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="formula-designer"></a><span data-ttu-id="05e1e-103">Receptdesigner</span><span class="sxs-lookup"><span data-stu-id="05e1e-103">Formula designer</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="05e1e-104">Det här avsnittet beskriver hur du använder formeldesignern för att analysera och underhålla formler i en trädvy.</span><span class="sxs-lookup"><span data-stu-id="05e1e-104">This topic explains how to use the formula designer to analyze and maintain formulas in a tree view.</span></span>
 

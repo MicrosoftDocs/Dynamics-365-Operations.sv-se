@@ -19,16 +19,16 @@ ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 70e6c17b5c7e38c2f9f7a5087175e7cfd2e5542a
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 51a2820231583f0936d1a9d5e92003adbb0c342d
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="process-allocations"></a><span data-ttu-id="43028-105">Bearbeta allokeringar</span><span class="sxs-lookup"><span data-stu-id="43028-105">Process allocations</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="43028-106">Det här avsnittet innehåller information om allokeringar, alternativen för att bearbeta dem i Microsoft Dynamics 365 for Finance and Operations och hur de kan användas vid budgetplanering.</span><span class="sxs-lookup"><span data-stu-id="43028-106">This article provides information about allocations, the options for processing them in Microsoft Dynamics 365 for Finance and Operations, and how they can be used in budget planning.</span></span> <span data-ttu-id="43028-107">Allokeringar används för att fördela belopp mellan flera redovisningskontokombinationer.</span><span class="sxs-lookup"><span data-stu-id="43028-107">Allocations are used to distribute amounts across multiple ledger account combinations.</span></span> <span data-ttu-id="43028-108">De hjälper till att garantera att utgifter eller intäkter debiteras för rätt objekt i redovisningen.</span><span class="sxs-lookup"><span data-stu-id="43028-108">They help guarantee that expenses or revenue is charged to the correct object in accounting.</span></span>
 

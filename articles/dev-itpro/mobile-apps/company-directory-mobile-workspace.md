@@ -16,16 +16,16 @@ ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 0b27c5c0ed2cd380819c5208c57fa2a3de1d5aaa
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 9487656cae69a20ee8218e039a501506a470730d
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="company-directory-mobile-workspace"></a><span data-ttu-id="bb861-103">Mobila arbetsytan för företagskatalog</span><span class="sxs-lookup"><span data-stu-id="bb861-103">Company directory mobile workspace</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="bb861-104">Det här avsnittet innehåller information om den mobila arbetsytan för **företagskatalog**.</span><span class="sxs-lookup"><span data-stu-id="bb861-104">This topic provides information about the **Company directory** mobile workspace.</span></span> <span data-ttu-id="bb861-105">Den här arbetsytan låter användare visa och kontakta andra medarbetare i din organisation.</span><span class="sxs-lookup"><span data-stu-id="bb861-105">This workspace lets users view and contact other employees in their organization.</span></span>
 

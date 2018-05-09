@@ -19,16 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 591c71cccc5ec5f00734bef21dc9551325432020
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: f8437797f107ca00ca642e56330d58eeeb00ed0f
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="configure-accounts-payable"></a><span data-ttu-id="23801-104">Konfigurera leverantörsreskontra</span><span class="sxs-lookup"><span data-stu-id="23801-104">Configure Accounts payable</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="23801-105">Det här avsnittet innehåller en beskrivning av de sidor som används för att ställa in grundläggande och valfria funktion för Leverantörsreskontra i Microsoft Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="23801-105">This article describes the pages that you use to set up basic and optional functionality for Accounts payable in Microsoft Dynamics 365 for Finance and Operations.</span></span> <span data-ttu-id="23801-106">Även inställningsstegen som du måste vidta innan du börjar ställa in Leverantörsreskontra beskrivs.</span><span class="sxs-lookup"><span data-stu-id="23801-106">It also describes setup steps that you must complete before you start to set up Accounts payable.</span></span>
 

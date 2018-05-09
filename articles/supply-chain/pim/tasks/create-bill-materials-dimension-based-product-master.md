@@ -16,15 +16,15 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 18324fe65a78b3a55baff82a43f5326204558aca
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 3a3aeae7e8012282ec9e57314a128a60c1a80a68
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-a-bill-of-materials-for-a-dimension-based-product-master"></a><span data-ttu-id="eefb3-103">Skapa en strukturlista för en dimensionsbaserad produktmall</span><span class="sxs-lookup"><span data-stu-id="eefb3-103">Create a bill of materials for a dimension-based product master</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="eefb3-104">För den här proceduren bör du ha slutfört de tidigare 4 guiderna i denna sekvens av åtta inspelningar.</span><span class="sxs-lookup"><span data-stu-id="eefb3-104">For this procedure you should have completed the previous 4 guides in this sequence of eight recordings.</span></span> <span data-ttu-id="eefb3-105">De första 4 inspelningarna anger de data som krävs för att slutföra den här proceduren.</span><span class="sxs-lookup"><span data-stu-id="eefb3-105">The first 4 recordings set up data that is required to complete this procedure.</span></span> <span data-ttu-id="eefb3-106">Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.</span><span class="sxs-lookup"><span data-stu-id="eefb3-106">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="eefb3-107">Denna uppgift utförs vanligtvis av produktdesignern.</span><span class="sxs-lookup"><span data-stu-id="eefb3-107">This task is typically handled by the product designer.</span></span>
 

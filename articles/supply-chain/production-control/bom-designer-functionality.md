@@ -20,16 +20,16 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: b7d4530ecccf18d9370d84ff2b61be1514b80192
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: ab6edcdb9dece5c6a5ac8cdb5f978477430c9cea
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="bom-designer-functionality"></a><span data-ttu-id="ff40a-103">Funktionen Strukturlistedesigner</span><span class="sxs-lookup"><span data-stu-id="ff40a-103">BOM designer functionality</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="ff40a-104">Det här ämnet ger en beskrivning av hur du kan använda sidan för strukturlistan för att designa och arbeta med trädstrukturer för strukturlistor (BOMs).</span><span class="sxs-lookup"><span data-stu-id="ff40a-104">This topic describes how you can use the BOM designer page to design and work with tree structures for bills of materials (BOMs).</span></span> <span data-ttu-id="ff40a-105">Du kan klicka på Inställningar för att välja olika konfigureringar och ange vilken information som ska visas på raderna i trädstrukturen.</span><span class="sxs-lookup"><span data-stu-id="ff40a-105">You can click Setup to select different configurations and specify what information appears on the lines of the tree.</span></span>
 

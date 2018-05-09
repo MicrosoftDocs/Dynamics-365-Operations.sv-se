@@ -17,16 +17,16 @@ ms.author: tbisaacs
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 8db1044d125820319827103182cc29808c60ee5c
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 0dbc3247e1a5a8134184c8fe98fa8692fbf27c94
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="create-an-engaging-onboarding-experience"></a><span data-ttu-id="14e96-103">Skapa en bra integreringsupplevelse</span><span class="sxs-lookup"><span data-stu-id="14e96-103">Create an engaging onboarding experience</span></span>
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 <span data-ttu-id="14e96-104">Om integreringen sker på ett effektivt sätt hjälper den nya medarbetare att arbeta mer effektivt, samtidigt som de även får en känsla av att de har hittat rätt i sin nya roll.</span><span class="sxs-lookup"><span data-stu-id="14e96-104">When done effectively, onboarding helps new employees perform more effectively while also gaining a sense of belonging in their new role.</span></span> <span data-ttu-id="14e96-105">Integreringen kan hjälpa nya medarbetare att förstå sina nya roller snabbare och bättre än de annars hade gjort, och de får dessutom ett försprång i fråga om att skapa relationer som kan hjälpa dem att lyckas.</span><span class="sxs-lookup"><span data-stu-id="14e96-105">Onboarding can help new employees understand their new role more quickly and accurately than they would have otherwise, and they get a head start on establishing relationships that can help them succeed.</span></span> <span data-ttu-id="14e96-106">Omvänt kan en ineffektiv integreringsupplevelse få medarbetaren att känna tvivel över sitt beslut att gå med i din organisation.</span><span class="sxs-lookup"><span data-stu-id="14e96-106">Alternatively, an ineffective onboarding experience might leave employees questioning their decision to join your organization.</span></span> <span data-ttu-id="14e96-107">En undersökning som genomförts av Gartner år 2014 fann att nästan en tredjedel av de 1 005 svarande som lämnat ett jobb under de första sex månaderna gjorde detta efter de riktlinjer man fick från ledningen var oklara, utbildningen ineffektiv, eller på grund av att man inte lyckades skapa effektiva relationer i sin nya miljö.</span><span class="sxs-lookup"><span data-stu-id="14e96-107">A study conducted by Gartner in 2014 found that nearly one third of the 1,005 respondents who quit a job within the first six months, did so because the guidelines they were given by their leadership weren't clear, their training wasn't effective, or because they didn't establish effective relationships in their new environment.</span></span>
 

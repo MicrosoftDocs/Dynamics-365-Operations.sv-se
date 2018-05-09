@@ -20,16 +20,16 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: af51b6997db39cbeb5cf09bfbe577a8db648cee3
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: ba362cb595ed13c582eea16ebca0f382694b632b
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="dimension-hierarchy"></a><span data-ttu-id="96491-104">Dimensionshierarki</span><span class="sxs-lookup"><span data-stu-id="96491-104">Dimension hierarchy</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="96491-105">Det här ämnet innehåller information om dimensionshierarkier.</span><span class="sxs-lookup"><span data-stu-id="96491-105">This topic provides information about dimension hierarchies.</span></span> <span data-ttu-id="96491-106">Du använder en hierarki för att definiera rapporteringsstruktur, kostnadspolicyer och säkerhetsinställningar i kostnadsredovisning.</span><span class="sxs-lookup"><span data-stu-id="96491-106">You use a dimension hierarchy to define the reporting structure, cost policies, and security setup in Cost accounting.</span></span>  
 

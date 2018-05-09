@@ -16,18 +16,18 @@ ms.author: jasongre
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 07224faabcf2b183d4c8da0ba4588c33ec140d03
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 0754b4361f2fe940f6c6d4168ac44f234fd363f8
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="embed-powerapps"></a><span data-ttu-id="ad771-103">Bädda in PowerApps</span><span class="sxs-lookup"><span data-stu-id="ad771-103">Embed PowerApps</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [banner](../includes/pre-release.md)]
+[!include [banner](../includes/pre-release.md)]
 
 <span data-ttu-id="ad771-104">I plattformsuppdatering 14 stöder Microsoft Dynamics 365 for Finance and Operations integrering med Microsoft PowerApps, en tjänst för utvecklare och icke-tekniska användare för att skapa anpassade affärsappar för mobila enheter, surfplattor och webb utan att skriva kod.</span><span class="sxs-lookup"><span data-stu-id="ad771-104">In Platform update 14, Microsoft Dynamics 365 for Finance and Operations supports integration with Microsoft PowerApps, a service for developers and non-technical users to build custom business apps for mobile devices, tablets, and the web without writing code.</span></span> <span data-ttu-id="ad771-105">PowerApps utvecklats av dig, ditt företag eller det bredare ekosystemet och kan sedan bäddas in i Finance and Operations-klienten utöka produktens funktioner.</span><span class="sxs-lookup"><span data-stu-id="ad771-105">PowerApps developed by you, your organization, or the broader ecosystem can then be embedded in the Finance and Operations client to augment the product's functionality.</span></span> <span data-ttu-id="ad771-106">Exempelvis kan du skapa en PowerApp för att komplettera Finance and Operations med information som hämtas från ett annat system.</span><span class="sxs-lookup"><span data-stu-id="ad771-106">For example, you might build a PowerApp to supplement Finance and Operations with information retrieved from another system.</span></span> 
 

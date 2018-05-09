@@ -19,16 +19,16 @@ ms.search.validFrom:
 - in format yyyy-mm-dd
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 861230dd08de570c451c8495bad91f9a4aef3691
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: dfd956826b847539cdfa84d93700dbf5ebfa465a
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="intercompany-expenses"></a><span data-ttu-id="9ade4-104">Koncerninterna utgifter</span><span class="sxs-lookup"><span data-stu-id="9ade4-104">Intercompany expenses</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="9ade4-105">En medarbetare som anställts av en juridisk entitet i en organisation kan utföra arbete för en annan juridisk person inom samma organisation.</span><span class="sxs-lookup"><span data-stu-id="9ade4-105">A worker who is employed by one legal entity in an organization might perform work for another legal entity in the same organization.</span></span> <span data-ttu-id="9ade4-106">I denna situation kan du använda funktionen för företagsinterna utgifter för att tilldela medarbetarens utgifter till den juridiska person som arbetet utförts för.</span><span class="sxs-lookup"><span data-stu-id="9ade4-106">In this situation, you can use the intercompany expense feature to assign the worker’s expenses to the legal entity for which the work was performed.</span></span> <span data-ttu-id="9ade4-107">Den juridiska entiteten som anställer medarbetaren kallas för "utlånande juridisk person".</span><span class="sxs-lookup"><span data-stu-id="9ade4-107">The legal entity that employs the worker is called the loaning legal entity.</span></span> <span data-ttu-id="9ade4-108">Den juridiska entiteten som medarbetaren genererar utgifter för kallas "lånande juridisk person".</span><span class="sxs-lookup"><span data-stu-id="9ade4-108">The legal entity for which the worker incurs expenses is called the borrowing legal entity.</span></span> 
 

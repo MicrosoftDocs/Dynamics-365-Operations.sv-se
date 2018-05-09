@@ -18,16 +18,16 @@ ms.author: epopov
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: b678867724ae74f62bb8107c5f04d872e4d5a77d
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: db7090e47301aad9ab56a62efd807140db62ab3b
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="import-or-manually-create-postal-codes"></a><span data-ttu-id="c0eac-104">Importera eller skapa postnummer manuellt</span><span class="sxs-lookup"><span data-stu-id="c0eac-104">Import or manually create postal codes</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="c0eac-105">Det här ämnet beskriver hur du importerar och manuellt skapar postnummer i rätt format.</span><span class="sxs-lookup"><span data-stu-id="c0eac-105">This topic explains how to import and manually create postal codes in the correct format.</span></span> <span data-ttu-id="c0eac-106">Det här avsnittet innehåller information om funktioner som har lagts till för Microsoft Dynamics 365 for Finance and Operations.</span><span class="sxs-lookup"><span data-stu-id="c0eac-106">This topic includes information about feature that was added for Microsoft Dynamics 365 for Finance and Operations.</span></span> 
 

@@ -17,15 +17,15 @@ ms.author: knelson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 41db5fa77c020c0929868593fec16223676e5e31
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 3106412f24826febb934a728a1810534680061be
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="rename-or-modify-a-project-stage"></a><span data-ttu-id="15bcc-103">Ändra namn på eller ändra en projektfas</span><span class="sxs-lookup"><span data-stu-id="15bcc-103">Rename or modify a project stage</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="15bcc-104">Projektfaser kan användas som en guide till projektets livscykel.</span><span class="sxs-lookup"><span data-stu-id="15bcc-104">Project stages can serve as a guide to the project life cycle.</span></span> <span data-ttu-id="15bcc-105">Du kan definiera de projektfaser som du vill inkludera i dina projekt på fliken Projektfas på sidan Projekthantering och redovisningsparametrar.</span><span class="sxs-lookup"><span data-stu-id="15bcc-105">You can define the project stages that you want to include in your projects in the Project stage area in the Project management and accounting parameters page.</span></span> <span data-ttu-id="15bcc-106">Dynamics 365 för Finance and Operations fem fördefinierade projektfaser och tre användardefinierade faser.</span><span class="sxs-lookup"><span data-stu-id="15bcc-106">Dynamics 365 for Finance and Operations provides five predefined project stages and three user-defined stages.</span></span> <span data-ttu-id="15bcc-107">Du kan uppdatera namn på en projektfas som du använder för att följa utvecklingen av projekt.</span><span class="sxs-lookup"><span data-stu-id="15bcc-107">You can update the name of a project stage that you are using to track the progress of projects.</span></span> <span data-ttu-id="15bcc-108">Du kan också ange namn på användardefinierade statusnamn.</span><span class="sxs-lookup"><span data-stu-id="15bcc-108">You can also provide names for user-defined status names.</span></span> <span data-ttu-id="15bcc-109">Den här uppgiften visar hur du ändrar namn eller ändrar en projektfas och använder datauppsättningen USSI.</span><span class="sxs-lookup"><span data-stu-id="15bcc-109">This task shows how to rename or modify a project stage and uses the USSI data set.</span></span>
 

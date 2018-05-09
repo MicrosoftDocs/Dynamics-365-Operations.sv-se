@@ -16,15 +16,15 @@ ms.author: yuyus
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: ddd725df4e06caf36be0e8913b556469421fa1af
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 2c0c7b058885ca7299b858a62b279985ba66e7c6
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-a-purchase-order-governed-by-budget"></a><span data-ttu-id="50f28-103">Skapa en inköpsorder som omfattas av budget</span><span class="sxs-lookup"><span data-stu-id="50f28-103">Create a purchase order governed by budget</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="50f28-104">Använd den här proceduren för att skapa en inköpsorder som ska kontrolleras med avseende budget.</span><span class="sxs-lookup"><span data-stu-id="50f28-104">Use this procedure to create a purchase order that is checked for available budget.</span></span> <span data-ttu-id="50f28-105">I den här inspelningen används demonstrationsföretaget USMF.</span><span class="sxs-lookup"><span data-stu-id="50f28-105">This recording uses the USMF demo data company.</span></span>
 

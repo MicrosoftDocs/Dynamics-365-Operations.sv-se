@@ -17,15 +17,15 @@ ms.author: bis
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 69e2a11d3a8c51d11c4c53e76359e07be1ec5402
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 8483ff0264ea04777c118b80cc6372b882655394
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="set-up-automatic-freight-reconciliation"></a><span data-ttu-id="d4895-103">Ställ in automatisk fraktavstämning</span><span class="sxs-lookup"><span data-stu-id="d4895-103">Set up automatic freight reconciliation</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="d4895-104">Denna procedur visar hur du ställer in data för automatisk fraktavstämning.</span><span class="sxs-lookup"><span data-stu-id="d4895-104">This procedure shows how to set up data for automatic freight reconciliation.</span></span> <span data-ttu-id="d4895-105">Detta utförs normalt av en lagerchef.</span><span class="sxs-lookup"><span data-stu-id="d4895-105">This is typically done by a warehouse manager.</span></span> <span data-ttu-id="d4895-106">Du kan köra den här proceduren i demonstrationsdataföretaget USMF.</span><span class="sxs-lookup"><span data-stu-id="d4895-106">You can use this procedure in demo data company USMF.</span></span>
 

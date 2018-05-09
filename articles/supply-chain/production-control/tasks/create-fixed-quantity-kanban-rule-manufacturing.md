@@ -17,15 +17,15 @@ ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: a4ee8161803fc64e254b165ab8b8baac5dbaf0a2
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 7b84c4351834658537868445403835137c57db23
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-a-fixed-quantity-kanban-rule-for-manufacturing"></a><span data-ttu-id="5f70e-103">Skapa en kanban-regel för fast kvantitet för tillverkning</span><span class="sxs-lookup"><span data-stu-id="5f70e-103">Create a fixed quantity kanban rule for manufacturing</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="5f70e-104">Den här proceduren fokuserar på inställningarna som krävs för att skapa en fast kanban-regel för tillverkning som utlöser omvandlingsaktiviteter, i en arbetsgrupp, i en resurssnål miljö.</span><span class="sxs-lookup"><span data-stu-id="5f70e-104">This procedure focuses on the setup needed to create a fixed manufacturing kanban rule for triggering transforming activities, at a work cell, in a lean environment.</span></span> <span data-ttu-id="5f70e-105">Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.</span><span class="sxs-lookup"><span data-stu-id="5f70e-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="5f70e-106">Den här proceduren är avsedd för processingenjören eller värdeströmansvarig när de förbereder tillverkningen av en ny eller ändrad produkt.</span><span class="sxs-lookup"><span data-stu-id="5f70e-106">This procedure is intended for the Process Engineer or the Value Stream Manager, as they prepare production of a new or modified product.</span></span>
 

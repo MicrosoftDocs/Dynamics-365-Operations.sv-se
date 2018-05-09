@@ -20,16 +20,16 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 27097eccd3d3c2db03b62b27d793c3410afe276b
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 6fd8fa935a868ec72f33088d0479d1c42b3fc926
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="formulas-and-formula-versions"></a><span data-ttu-id="41a02-105">Formler och formelversioner</span><span class="sxs-lookup"><span data-stu-id="41a02-105">Formulas and formula versions</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="41a02-106">En formel definierar material, komponenter och resultat för en viss process i processtillverkning.</span><span class="sxs-lookup"><span data-stu-id="41a02-106">A formula defines the materials, ingredients, and outcomes of a specific process in process manufacturing.</span></span> <span data-ttu-id="41a02-107">Tillsammans med motsvarande väg definierar formeln hela processen inom processtillverkning.</span><span class="sxs-lookup"><span data-stu-id="41a02-107">Together with the corresponding route, the formula defines the whole process in process manufacturing.</span></span> <span data-ttu-id="41a02-108">Formler används för att planera och framställa produkter i processtillverkning.</span><span class="sxs-lookup"><span data-stu-id="41a02-108">Formulas are used to plan and produce products in process manufacturing.</span></span>
 

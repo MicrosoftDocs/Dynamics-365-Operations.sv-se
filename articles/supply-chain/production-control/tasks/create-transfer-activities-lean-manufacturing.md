@@ -17,15 +17,15 @@ ms.author: conradv
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 7fed5129a963d4c911ffe0b007dce342837ebb65
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 11e37d5a2da33d14d691fa8408aac443fb7a6dfa
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="create-transfer-activities-for-lean-manufacturing"></a><span data-ttu-id="f927c-103">Skapa överföringsaktiviteter för lean manufacturing</span><span class="sxs-lookup"><span data-stu-id="f927c-103">Create transfer activities for lean manufacturing</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="f927c-104">Skapa en överföringsaktivitet för lean manufacturing.</span><span class="sxs-lookup"><span data-stu-id="f927c-104">Create a transfer activity for lean manufacturing.</span></span> 
 

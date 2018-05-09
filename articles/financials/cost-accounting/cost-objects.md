@@ -20,16 +20,16 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: a6c93252f95e3c07e1929d70467f6aa8d43af593
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: aec5393c956007a88671f111f90c16f9545633e4
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="cost-object-dimensions"></a><span data-ttu-id="12642-105">Kostnadsobjektdimensioner</span><span class="sxs-lookup"><span data-stu-id="12642-105">Cost object dimensions</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="12642-106">När du analyserar kostnader använder du kostnadselementdimensioner för att definiera var kostnader flödar.</span><span class="sxs-lookup"><span data-stu-id="12642-106">When you analyze costs, you use cost element dimensions to determine where costs flow to.</span></span> <span data-ttu-id="12642-107">Du använder kostnadsobjektdimensioner för att fastställa var du bör tilldela kostnader.</span><span class="sxs-lookup"><span data-stu-id="12642-107">You use cost object dimensions to determine where you should assign costs.</span></span> <span data-ttu-id="12642-108">Det här ämnet innehåller information om kostnadsobjektdimensioner.</span><span class="sxs-lookup"><span data-stu-id="12642-108">This topic provides information about cost object dimensions.</span></span>
 

@@ -18,16 +18,16 @@ ms.author: saraschi
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 2b07f9d971dc152e9168b9867e70c59481325284
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 70c7f7a9ca119abbfedf8e09e9994b2a904dc421
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="fixed-asset-management-workspace"></a><span data-ttu-id="e0753-105">Arbetsyta för hantering av anläggningstillgångar</span><span class="sxs-lookup"><span data-stu-id="e0753-105">Fixed asset management workspace</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="e0753-106">Arbetsytan **anläggningstillgångar** visar information som är relaterad till anläggningstillgångar som har registrerats i systemet.</span><span class="sxs-lookup"><span data-stu-id="e0753-106">The **Fixed asset management** workspace shows information that is related to fixed assets that are entered in the system.</span></span> <span data-ttu-id="e0753-107">Den här arbetsytan innehåller en sammanfattningsvy och en analysvy.</span><span class="sxs-lookup"><span data-stu-id="e0753-107">This workspace includes a summary view and an analytics view.</span></span> <span data-ttu-id="e0753-108">Fliken **Mitt arbete** visar sammanfattningsrutor, information om anläggningstillgångar och information om anläggningstillgångar i det aktuella företaget.</span><span class="sxs-lookup"><span data-stu-id="e0753-108">The **My work** tab shows summary tiles, fixed asset details, and related information about fixed assets in the current company.</span></span> <span data-ttu-id="e0753-109">Du kan också lägga till analys till Power BI analysavsnittet direkt på arbetsytan.</span><span class="sxs-lookup"><span data-stu-id="e0753-109">You can also add analytics to the Power BI analytics section directly in the workspace.</span></span> <span data-ttu-id="e0753-110">Fliken **Analys – alla företag** använder funktionerna i Microsoft Power BI för att visa visuella som är relaterade till anläggningstillgångar i alla företag.</span><span class="sxs-lookup"><span data-stu-id="e0753-110">The **Analytics – all companies** tab uses capabilities of Microsoft Power BI to show visuals that are related to fixed assets in all companies.</span></span>
 

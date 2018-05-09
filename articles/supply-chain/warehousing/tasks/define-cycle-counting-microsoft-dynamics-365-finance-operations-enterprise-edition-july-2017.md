@@ -16,15 +16,15 @@ ms.author: mafoge
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 5a95f63efe3d78dc371cacdc09734490a601b1b8
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 1ef3fedaf17e25b077842491bbca0094453c1761
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="define-cycle-counting"></a><span data-ttu-id="a3fe1-103">Definiera rullande inventering </span><span class="sxs-lookup"><span data-stu-id="a3fe1-103">Define cycle counting</span></span> 
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="a3fe1-104">Rullande inventering är en lagerställesprocess som du kan använda för att kontrollera lagerbehållningsartiklar.</span><span class="sxs-lookup"><span data-stu-id="a3fe1-104">Cycle counting is a warehouse process that you can use to audit on-hand inventory items.</span></span> <span data-ttu-id="a3fe1-105">Den här uppgiftsinspelningen visar hur du kan ställa in standardarbetsprioriteten för inventering; aktivera ett menykommando för mobila enheter för att bearbeta både plocknings- och inventeringsåtgärder; aktivera en utlösare för inventeringströskeln när en plats blir tom; aktivera en plan för rullande inventering för en viss artikel i ett bestämt lagerställe.</span><span class="sxs-lookup"><span data-stu-id="a3fe1-105">This task recording shows how to set up the default counting work priority, enable a mobile device menu item to process both picking and counting operations, enable a counting threshold trigger when a location becomes empty, and enable a cycle counting plan for a specific item in a specific warehouse.</span></span> <span data-ttu-id="a3fe1-106">Dessa inställningsuppgifter utförs normalt av en lagerchef.</span><span class="sxs-lookup"><span data-stu-id="a3fe1-106">Typically, these tasks are performed by a warehouse manager.</span></span> <span data-ttu-id="a3fe1-107">Du kan gå igenom den här proceduren i demonstrationsdataföretaget USMF eller i dina egna data.</span><span class="sxs-lookup"><span data-stu-id="a3fe1-107">You can go through this procedure in the USMF demo data company or in your own data.</span></span>
 

@@ -18,16 +18,16 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 0919cdeb54b0dade68a9caba89b172c0663381da
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 9b3346a5229d0cc9e7af74f17ea6a327e5ba253a
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="eu-entry-certificates"></a><span data-ttu-id="e414f-103">Mottagningskvitton för EU</span><span class="sxs-lookup"><span data-stu-id="e414f-103">EU entry certificates</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="e414f-104">Det här avsnittet innehåller information om mottagningskvitton för Europeiska unionen (EU).</span><span class="sxs-lookup"><span data-stu-id="e414f-104">This article provides information about European Union (EU) entry certificates.</span></span>
 

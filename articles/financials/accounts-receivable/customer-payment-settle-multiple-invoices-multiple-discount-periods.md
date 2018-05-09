@@ -19,16 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: df8c74697251fa762520d62f7d87d82179390f80
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: b7ca1ca030463ae08759accda8f77c0a0df1d384
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="use-a-customer-payment-to-settle-multiple-invoices-that-span-multiple-discount-periods"></a><span data-ttu-id="20c81-104">Använda en kundbetalning för att kvitta flera fakturor som omfattar flera rabattperioder</span><span class="sxs-lookup"><span data-stu-id="20c81-104">Use a customer payment to settle multiple invoices that span multiple discount periods</span></span>
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 <span data-ttu-id="20c81-105">Det här ämnet visar hur flera fakturor betalas när varje faktura är kvalificerad för en kassarabatt.</span><span class="sxs-lookup"><span data-stu-id="20c81-105">This topic shows how multiple invoices are paid when each invoice qualifies for a cash discount.</span></span> <span data-ttu-id="20c81-106">Scenarierna i den här artikeln visar hur de utnyttjade kassarabatterna varierar beroende på när betalningen görs.</span><span class="sxs-lookup"><span data-stu-id="20c81-106">The scenarios in his article highlight how the cash discounts that are taken vary, depending on when the payment is made.</span></span>
 

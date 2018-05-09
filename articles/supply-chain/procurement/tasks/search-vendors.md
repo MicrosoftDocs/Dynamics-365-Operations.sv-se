@@ -16,15 +16,15 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 7fd7a839f5b9b3a80ad944a66cc75232a336c48f
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: df5d4b3d19dd2765c5bd60036970cdd9b4fa6567
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="search-for-vendors"></a><span data-ttu-id="ebb08-103">Sök efter leverantörer</span><span class="sxs-lookup"><span data-stu-id="ebb08-103">Search for vendors</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="ebb08-104">Läs hur du vill söka efter leverantörer baserat på specifika kriterier.</span><span class="sxs-lookup"><span data-stu-id="ebb08-104">Learn how to search for vendors based on specific criteria.</span></span> <span data-ttu-id="ebb08-105">I det här exemplet visas hur du söker efter leverantörer som har godkänts för en viss anskaffningskategori och har sin primära adress i ett visst land.</span><span class="sxs-lookup"><span data-stu-id="ebb08-105">This example shows you how to search for vendors that are approved for a particular procurement category and have their primary address in a specific country.</span></span> <span data-ttu-id="ebb08-106">Du kan köra den här proceduren i demonstrationsföretaget USMF eller på dina egna data.</span><span class="sxs-lookup"><span data-stu-id="ebb08-106">You can run this procedure in demo data company USMF, or on your own data.</span></span> <span data-ttu-id="ebb08-107">Den här uppgiften utförs vanligtvis av ett anskaffningsproffs.</span><span class="sxs-lookup"><span data-stu-id="ebb08-107">This task would usually be carried out by a procurement professional.</span></span>
 

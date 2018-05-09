@@ -17,15 +17,15 @@ ms.author: perlynne
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 30bff74da8399ddc15f2bc84e83887c8b5e60570
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 09a5bbe7601248fd2635fda4a0d87973a6e1ceba
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="set-up-a-min-max-replenishment-process"></a><span data-ttu-id="d6d8b-103">Ställ in en min-max-process för lagerpåfyllnad</span><span class="sxs-lookup"><span data-stu-id="d6d8b-103">Set up a min-max replenishment process</span></span>
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 <span data-ttu-id="d6d8b-104">Den här proceduren visar hur du ställer in en ny process för lagerpåfyllnad som använder den minsta/största lagerpåfyllnadsstrategin.</span><span class="sxs-lookup"><span data-stu-id="d6d8b-104">This procedure shows you how to set up a new replenishment process which uses the minimum/maximum replenishment strategy.</span></span> <span data-ttu-id="d6d8b-105">När lager faller under den lägsta nivån kommer arbete att skapas för att fylla på platsen.</span><span class="sxs-lookup"><span data-stu-id="d6d8b-105">When inventory falls below the minimum level, work will be created to replenish the location.</span></span> <span data-ttu-id="d6d8b-106">Proceduren visar även hur du använder fasta plockplatser om du vill tillåta att fylla på lager även om lager faller under den lägsta nivån, och hur du aktiverar processen för lagerpåfyllnad att köras regelbundet med hjälp av ett batchjobb.</span><span class="sxs-lookup"><span data-stu-id="d6d8b-106">The procedure also shows how to use fixed picking locations to allow restocking even if inventory falls below the minimum level, and how to enable the replenishment process to run regularly using a batch job.</span></span> <span data-ttu-id="d6d8b-107">Dessa uppgifter utförs vanligtvis av en lagerchef.</span><span class="sxs-lookup"><span data-stu-id="d6d8b-107">These tasks would typically be carried out by a warehouse manager.</span></span> <span data-ttu-id="d6d8b-108">Du kan köra den här proceduren i demonstrationsdataföretaget USMF som använder exempelvärdena i anteckningar eller så kan du köra det på dina egna data.</span><span class="sxs-lookup"><span data-stu-id="d6d8b-108">You can run this procedure in the USMF demo data company using the example values in the notes, or can run it on your own data.</span></span> <span data-ttu-id="d6d8b-109">Om du använder dina egna data ska du kontrollera att du har ett lagerställe som aktiveras för Lagerstyrningsprocesser.</span><span class="sxs-lookup"><span data-stu-id="d6d8b-109">If you’re using your own data, make sure that you have a warehouse that’s enabled for Warehouse management processes.</span></span>
 
