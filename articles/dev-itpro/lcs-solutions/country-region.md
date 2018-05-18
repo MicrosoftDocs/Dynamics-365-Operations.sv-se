@@ -18,18 +18,18 @@ ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 389efbe1853264c1503737b55dd7767fdcb966ca
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: c925b2e996f51b8c5d5332217643c3155cfc03c0
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="localization-and-regulatory-features"></a>Lokaliserings- och regelfunktioner
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-Microsoft Dynamics 365 for Finance and Operations innehåller funktioner för länder/regioner dokumenterade i den [internationella produkttillgänglighetsguiden](http://download.microsoft.com/documents/en-us/dynamics/Microsoft%20Dynamics%20AX%20Product%20Availability%20Guide.pdf). Den här funktionen aktiveras grundad på den aktiva juridiska personens primära adress. 
+Microsoft Dynamics 365 for Finance and Operations innehåller funktioner för länder/regioner dokumenterade i den [internationella produkttillgänglighetsguiden](http://download.microsoft.com/documents/dynamics/Microsoft%20Dynamics%20AX%20Product%20Availability%20Guide.pdf). Den här funktionen aktiveras grundad på den aktiva juridiska personens primära adress. 
 
 Det här ämnet innehåller listor med resurser som lär dig mer om lands- och regionspecifika lösningar, uppdateringar, notifieringar och funktioner. 
 

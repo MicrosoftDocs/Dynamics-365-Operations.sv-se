@@ -24,6 +24,7 @@
 # Moms
 ## [Momsöversikt](../financials/general-ledger/indirect-taxes-overview.md)
 ## [Momsberäkningsmetoder i fältet Ursprung](../financials/general-ledger/sales-tax-calculation-methods-origin-field.md)
+## #### [Momstilldelning och åsidosättningar](../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md)
 ## [Beräkningsalternativ för hela beloppet och intervall för momskoder](../financials/general-ledger/whole-amount-interval-options-sales-tax-codes.md)
 
 # Kundtjänst
@@ -165,10 +166,11 @@
 ## [ Konfigurera maskininlärningsdrivna produktrekommendationer](tasks/configure-machine-learning-product-recommendations.md)
 ## [ Skapa och associera en enhet](tasks/create-associate-device.md)
 ## [ Skapa och associera en maskinvarustation](tasks/create-associate-hardware-station.md)
-## [ Skapa och associera register](tasks/create-associate-registers.md)
-## [ Skapa, beräkna och bokföra ett utdrag för en butik](tasks/create-calculate-post-statement-retail-store.md)
-## [ Skapa kundtjänstorder](tasks/create-call-center-orders.md)
-## [ Skapa ekonomiska dimensioner för POS-register och konfigurera dimensionsvärden för register](tasks/create-financial-dimensions-pos.md)
+## [Skapa och associera register](tasks/create-associate-registers.md)
+## [Skapa, beräkna och bokföra ett utdrag för en butik](tasks/create-calculate-post-statement-retail-store.md)
+## [Förbättringar av bokföring av utdrag](statement-posting-EOD.md)
+## [Skapa kundtjänstorder](tasks/create-call-center-orders.md)
+## [Skapa ekonomiska dimensioner för kassaregister och konfigurera dimensionsvärden för register](tasks/create-financial-dimensions-pos.md)
 ## [ Skapa ekonomiska dimensioner för detaljhandelskanaler och konfigurera dimensionsvärden för butiker](tasks/create-financial-dimensions-retail-channels.md)
 ## [ Skapa online-kanaler och definiera kanalattribut](tasks/create-online-channel-define-channel-attributes.md)
 ## [ Skapa POS-behörighetsgrupper](tasks/create-pos-permission-groups.md)
@@ -289,7 +291,6 @@
 ### [Anropa ett kassa-API eller en åtgärd från ett kassatillägg](dev-itpro/pos-api-extension.md)
 ### [Utlösare och utskrift för Retail Modern POS](dev-itpro/pos-trigger-printing.md)
 ### [Lägg till en anpassad kontroll i en designerbaserad vy (ej skärm) för Retail Modern POS](dev-itpro/pos-control-non-screen.md)
-### [Generera Retail-proxy för kassa och e-handel](dev-itpro/pos-generate-retail-proxy.md)
 ### [Konfigurationssteg för Retail-utvecklare som arbetar med molnstyrda utvecklingsrutor](dev-itpro/cloud-dev-box.md)
 
 ## Commerce Runtime
