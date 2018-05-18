@@ -10,7 +10,12 @@
 ## [Hämta en utvärderingskopia](dev-tools/get-evaluation-copy.md)
 ## [Registrera ett abonnemang](dev-tools/sign-up-preview-subscription.md)
 ## [Distribuera och få tillgång till en utvecklingsmiljö](dev-tools/access-instances.md)
-## [Systemkrav för utveckling](dev-tools/development-system-requirements.md)
+### [Konfigurera VM för utvecklare](dev-tools/configure-developer-vm.md)
+### [Skapa en ny användare på en utvecklingsdator](dev-tools/enable-development-machine.md)
+### [Frågor och svar om hur du utvecklar och skapar virtuella maskiner som inte tillåter administratörsbehörighet](sysadmin/VMs-no-admin-access.md)
+### [Byta namn på en lokal miljö för att ge åtkomst till Visual Studio Team Services](migration-upgrade/vso-machine-renaming.md)
+### [Systemkrav för utveckling](dev-tools/development-system-requirements.md)
+## [Versionskontroll, sökning efter metadata och navigering](dev-tools/version-control-metadata-navigation.md)
 ## Hantering av vagnpark – exempel på ansökning
 ### [Hantering av vagnpark – exempel på ansökning](dev-tools/fleet-management-sample.md)
 ### [Hantering av vagnpark – översikt över exempel på ansökning](dev-tools/introduction-fleet-management-sample.md)
@@ -22,7 +27,8 @@
 ### [Versionsoperationer](dev-tools/build-operations.md)
 ### [Kodredigeraren](dev-tools/code-editor.md)
 ### [Skapa en modell och datamodellelement](dev-tools/create-data-model-elements.md)
-### [Skapa en ny användare på en utvecklingsdator](dev-tools/enable-development-machine.md)
+#### [Riktlinjer för namngivning](extensibility/NamingGuidelines.md)
+#### [Inaktivera modellanpassning och avskrivningsfunktioner](dev-tools/lock-models.md)
 ### [Rapport med anpassningsanalys](dev-tools/customization-analysis-report.md)
 ### [Elementdesigners](dev-tools/element-designers.md)
 ### [Elementanvändning](dev-tools/element-usage.md)
@@ -31,7 +37,6 @@
 ### [Modeller](dev-tools/models.md)
 ### [Projekt i Dynamics 365 for Finance and Operations](dev-tools/projects.md)
 ### [Verktygstillägg för Visual Studio](dev-tools/developer-tools-add-ins.md)
-### [Inaktivera modellanpassning och avskrivningsfunktioner](dev-tools/lock-models.md)
 ### [Uppdatera utvecklingsverktyg för Visual Studio](dev-tools/update-development-tools.md)
 ## X++, programmeringsspråk
 ### [X++ och felsökningsfunktioner ](dev-tools/new-x-debugger-features.md)
@@ -104,7 +109,7 @@
 #### [W-klasser](dev-ref/w-classes.md)
 #### [X-klasser](dev-ref/x-classes.md)
 
-## [Startsida för utbyggbarhet](extensibility/extensibility-home-page.md)
+## [Utbyggbarhet](extensibility/extensibility-home-page.md)
 ### Introduktion och kom igång
 #### [Planer för programs utbyggbarhet](extensibility/extensibility-roadmap.md)
 #### [Begäranden om utbyggbarhet](extensibility/extensibility-requests.md) 
@@ -261,9 +266,9 @@
 ### [Skapa dokumentation eller utbildning med Uppgiftsinspelare](user-interface/task-recorder-training-docs.md)
 
 # [Mobilplattform](mobile-apps/platform/mobile-platform-home-page.md)
-## Komma igång
-### [Komma igång](mobile-apps/platform/mobile-platform-getting-started.md)
+## [Komma igång](mobile-apps/platform/mobile-platform-getting-started.md)
 ### [Arkitektur](mobile-apps/platform/mobile-platform-architecture.md)
+### [Händelseöversikt för affärslogik](mobile-apps/platform/business-logic-events-overview.md)
 ### [Riktlinjer för siddesign](mobile-apps/platform/page-design-guidelines.md)
 ### [Riktlinjer för åtgärdsdesign](mobile-apps/platform/action-design-guidelines.md)
 ### [Krav för fomulärdesign](mobile-apps/platform/form-design-requirements.md)
@@ -409,15 +414,16 @@
 ### [Konfigurationsdatamallar](data-entities/configuration-data-templates.md)
 ### [Datamallar med flera kalkylblad](data-entities/excel-template-multiple.md)
 ### [Spåra ändringar av en enhet](data-entities/entity-change-track.md)
-
+### [Konfigurationsnycklar och datatabeller](data-entities/config-key-entities.md)
 ### [Söka efter information om standarddatatabeller](data-entities/data-entities-report.md)
 
 
 ## [Jobb för import och export av data](data-entities/data-import-export-job.md)
 
-### [Bästa praxis för att importera verifikationer med hjälp av enheten Allmän journal](data-entities/tips-tricks-import-general-journal-entity.md)
+### [Regelverk för att importera verifikationer med hjälp av enheten Allmän journal](data-entities/tips-tricks-import-general-journal-entity.md)
 
 ## Utveckling för datatabeller
+### [Designprinciper och metodtips för datatabeller](dev-tools/design-best-practices.md)
 ### [Skapa nya datatabeller](data-entities/build-consuming-data-entities.md)
 ### [Egenskaper för datatabell](data-entities/behavioral-properties-data-entities.md)
 ### [Skapa beräkningskolumner och virtuella fält](data-entities/data-entity-computed-columns-virtual-fields.md)
@@ -428,6 +434,9 @@
 ### [Metadataegenskaper](data-entities/behavioral-properties-data-entities.md)
 ### [Valideringar, standardvärden och omappade fält](data-entities/validations-defaults-unmapped-fields.md)
 ### [Säkerhet och datatabeller](data-entities/security-data-entities.md)
+### [Skapa en skrivskyddad enhet som visar ekonomiska dimensioner](financial/read-only-entity-financial.md)
+ 
+
 
 ## [Ta med din egen databas](analytics/export-entities-to-your-own-database.md)
 
@@ -435,7 +444,7 @@
 ## [Automatisering av datauppgift](data-entities/data-task-automation.md)
 
 ## [Resurser för att svara på en databegäran enligt GDPR](gdpr/gdpr-home-page.md)
-### [Guide till GDPR för Microsoft Dynamics 365 for Finance and Operations](gdpr/gdpr-auditing-sensitive-data.md)
+### [Guide till GDPR för Microsoft Dynamics 365 for Finance and Operations](gdpr/gdpr-guide.md)
 ### [Tillgångsklassificeringar](gdpr/gdpr-asset-classification-values.md)
 ### [Använda rapporten för personsökning](gdpr/gdpr-person-search-report.md)
 ### [Utöka rapporten för personsökning](gdpr/gdpr-extend-person-search-report.md)
@@ -443,8 +452,9 @@
 ### [Svara på en begäran om personuppgifter med hjälp av Talent](gdpr/respond-dsr-request-talent.md)
 ### [Svara på en begäran om personuppgifter med hjälp av Microsoft Dynamics AX 2012](gdpr/gdpr-ax2012.md)
 
+## [Arbetsyta för datavalidering](user-interface/data-validation-workspace.md)
 
-# [Startsidan Kontinuerlig leverans](dev-tools/continuous-delivery-home-page.md)
+# [Kontinuerlig leverans](dev-tools/continuous-delivery-home-page.md)
 ## [Vanliga frågor och svar om utveckling och kontinuerlig leverans](dev-tools/continuous-delivery-faq.md)
 ## [Exkludera testpaket från skapandet](dev-tools/exclude-test-packages.md)
 ## [Hantera tredjepartsmodeller och körningspaket med hjälp av källkontroll](dev-tools/manage-runtime-packages.md)
@@ -487,6 +497,7 @@
 ## [Parm-metod för kontroll av segmenterade poster](financial/segmented-entry-control-parm-method-specification.md)
 ## [Lägg till möjligheten att söka efter värden för ekonomiska dimensioner i Microsoft Excel-mallar](financial/add-dimensions-excel-templates.md)
 ## [Skapa valutakursleverantörer](financial/create-exchange-rate-providers.md)
+## [Skapa valutakursleverantörer i Microsoft Dynamics Finance and Operations version 8.0](financial/create-exchange-rate-8.md)
 
 # Logistikutveckling
 ## [Guide för Gantt-utveckling](user-interface/gantt-development-guide.md)
@@ -578,8 +589,7 @@
 ### [Inaktuella funktioner](migration-upgrade/deprecated-features.md)
 
 # [Systemadministration](sysadmin/system-administration-home-page.md)
-## [Frågor och svar om månadsuppdateringar av plattformen](sysadmin/faq-platform-monthly-updates.md)
-## [Frågor och svar om virtuella datorer som inte tillåter administratörsåtkomst](sysadmin/VMs-no-admin-access.md)
+## [Vanliga frågor och svar om månadsuppdateringar av plattformen](sysadmin/faq-platform-monthly-updates.md)
 ## [Lägg till länkar till organisationens juridiska villkor och sekretesspolicy](sysadmin/legal-terms-privacy-statement.md)
 ## [Rapport med licenskoder och konfigurationsnycklar](sysadmin/license-codes-configuration-keys-report.md)
 ## [Datadelning mellan företag](sysadmin/cross-company-data-sharing.md)
