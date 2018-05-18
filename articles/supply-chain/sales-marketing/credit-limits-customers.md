@@ -26,7 +26,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="credit-limits-for-customers"></a>Kreditgränser för kunder
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Med en kreditgräns kan du ange maxgränsen för den kredit du beviljar dina kunder. Om en kreditgräns har angetts, kommer denna att kontrolleras automatiskt när en användare försöker uppdatera ett dokument. Om kreditgränsen överskrids visas ett meddelande för användaren. Den här varan innehåller en översikt över hur kreditgränser fungerar och besvarar följande frågor:
 

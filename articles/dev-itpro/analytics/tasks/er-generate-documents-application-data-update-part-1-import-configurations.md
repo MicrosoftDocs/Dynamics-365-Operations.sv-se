@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="import-configurations-to-generate-documents-with-application-data"></a>Importera konfigurationer för att generera dokument med programdata
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 För att slutföra stegen i den här proceduren måste du först slutföra stegen i proceduren ER Skapa en konfigurationsleverantör och markera den som aktiv.
 

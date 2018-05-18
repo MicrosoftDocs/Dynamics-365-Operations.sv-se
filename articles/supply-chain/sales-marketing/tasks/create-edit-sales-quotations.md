@@ -24,7 +24,7 @@ ms.lasthandoff: 11/03/2017
 ---
 # <a name="create-and-edit-sales-quotations"></a>Skapa och redigera försäljningsofferter
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 I den här proceduren visas hur du kan skapa och uppdatera en försäljningsoffert. Du kan köra den här proceduren med dina egna uppgifter i demonstrationsföretaget USMF.
 

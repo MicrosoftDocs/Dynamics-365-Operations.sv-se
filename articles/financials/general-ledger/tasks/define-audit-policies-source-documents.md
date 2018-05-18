@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="define-audit-policies-for-source-documents"></a>Definiera granskningspolicyer för källdokument
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 I den här proceduren visar vi hur du ställer in och kör granskningsprincipregler. I exemplet används utgiftsrapporter av typen hotellutgift. I den här proceduren används demonstrationsföretaget USMF. Revisorrollen har rätt behörighet för att utföra dessa uppgifter.
 

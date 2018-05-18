@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="generate-a-transfer-document-for-an-internal-inventory-transfer"></a>Generera ett överföringsdokument för en intern lageröverföring
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 I den här proceduren visas hur du skapar överföringsdokument för varurörelser i ett företag. Denna procedur är bara tillgänglig för juridiska personer med en primär adress i Litauen. Proceduren skapades med hjälp av demonstrationsdataföretaget DEMF, med primär adress i Litauen. Innan du kan slutföra denna procedur måste du först slutföra proceduren "Set up transfer documents for goods movement inside a company". Proceduren är avsedd för lagerredovisare. Denna procedur är avsedd för en funktion som lades till i Dynamics 365 for Operations version 1611.
 

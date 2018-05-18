@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="add-to-your-performance-journal-and-send-praise-to-someone"></a>Lägg till i din resultatjournal och skicka beröm till någon
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Resultatjournalen innehåller information som är relaterad till hur du uppfyller dina mål eller hur du har presterat under en period. Du kan också lovorda en medarbetares åtgärder från journalen. Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF. Denna procedur är avsedd för en funktion som lades till i Dynamics 365 for Operations version 1611.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 03/26/2018
 ---
 # <a name="assign-users-to-security-roles"></a>Tilldela användare till säkerhetsroller
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Om du vill komma åt Microsoft Dynamics 365 for Finance and Operations, måste användarna ha tilldelats säkerhetsroller. I den här proceduren förklaras hur systemadministratörer kan tilldela användarna roller automatiskt, baserat på affärsdata. Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="set-up-compensation-grids"></a>Ställ in kompensationsrutnät
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Kompensationsrutnät används för att definiera och underhålla lönstrukturerna för fasta kompensationsplaner. Kompensationsrutnät kan delas mellan flera planer och kopieras när du skapar en ny kompensationsplan.  Innan du skapar ett kompensationsrutnät måste nivåer och referenspunkter ställas in. I det här exemplet skapas en ny typ av kompensationsrutnät med hjälp av demodata för nivåer och referenspunkter. Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.
 

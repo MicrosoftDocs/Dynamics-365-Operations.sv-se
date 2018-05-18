@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="base-price-and-trade-agreements"></a> Baspris och handelsavtal
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 Den här proceduren går igenom hur du skapar kanalspecifika handelsavtal för försäljningspriset. I proceduren används demonstrationsföretaget USRT.
 

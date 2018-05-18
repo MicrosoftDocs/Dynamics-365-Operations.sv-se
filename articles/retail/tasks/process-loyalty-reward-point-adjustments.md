@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="process-loyalty-reward-point-adjustments"></a> Bearbeta justeringar av förmånsbelöningspoäng
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 Den här proceduren visar hur du söker efter information om lojalitetskort och justerar förmånsbelöningspoäng. Det demonstrationsdataföretag som används för att skapa den här uppgiften är USRT. Denna uppgift är avsedd för rollen driftchef (butik) eller kundtjänstchef.
 

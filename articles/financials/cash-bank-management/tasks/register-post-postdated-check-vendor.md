@@ -24,7 +24,7 @@ ms.lasthandoff: 11/01/2017
 ---
 # <a name="register-and-post-a-postdated-check-for-a-vendor"></a>Registrera och bokför en efterdaterad check för en leverantör
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Du kan registrera informationen om en efterdaterad check innan du utfärdar checken till en leverantör genom att använda bokföringsordern. Du kan även bokföra den efterdaterade checken och generera ekonomiska transaktioner. Slutför följande uppgift innan du registrerar och bokför en efterdaterad check från en leverantör: 
 

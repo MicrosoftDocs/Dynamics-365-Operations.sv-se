@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="define-vendor-payment-terms"></a>Definiera villkor för leverantörsbetalning
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Ställ in betalningsvillkor för leverantörsfakturor. I den här uppgiften används demonstrationsföretaget USMF.
 

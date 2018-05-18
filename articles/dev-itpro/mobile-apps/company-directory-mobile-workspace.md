@@ -25,7 +25,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="company-directory-mobile-workspace"></a>Mobila arbetsytan för företagskatalog
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Det här avsnittet innehåller information om den mobila arbetsytan för **företagskatalog**. Den här arbetsytan låter användare visa och kontakta andra medarbetare i din organisation.
 

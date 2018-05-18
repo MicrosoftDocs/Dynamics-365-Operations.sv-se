@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="inventory-close"></a>Lagerstängning
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Som en del av processen för att kvitta utleveranstransaktioner med inleveranstransaktioner, kan du också välja att uppdatera redovisningen med justeringarna som har gjorts.
 

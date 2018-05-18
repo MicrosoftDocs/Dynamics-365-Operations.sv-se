@@ -25,7 +25,7 @@ ms.lasthandoff: 11/02/2017
 ---
 # <a name="set-up-prerequisites-for-management"></a>Ställ in förutsättningar för hantering
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Använd den här proceduren för att aktivera avvikelsehanteringsprocesser. En avvikelse beskriver en procedur eller artikel med kvalitetsproblem, där beskrivningen innehåller problemets källa och typ. I proceduren används demonstrationsföretag USMF. Vanligtvis utförs den här proceduren av en Kvalitetschef.
 

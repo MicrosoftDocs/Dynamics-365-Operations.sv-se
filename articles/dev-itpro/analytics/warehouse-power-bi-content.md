@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="warehouse-performance-power-bi-content"></a>Power BI-innehåll för lagerställets prestanda
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Det här avsnittet beskriver vad som ingår i Microsoft Power BI-innehållet för **Lagerställets prestanda**. Det förklarar hur du öppnar Power BI-rapporter och ger information datamodellen och de enheter som används för att skapa innehållet.
 

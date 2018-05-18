@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="update-standard-costs-in-a-manufacturing-environment"></a>Uppdatera standardkostnader i en tillverkningsmiljö
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Det här avsnittet ger vägledning om hur du uppdaterar standardkostnader i en tillverkningsmiljö. 
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="develop-a-succession-plan"></a>Utveckla en successionsplan
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 I takt med att organisationen växer och du börjar planera successioner kan du vilja hitta någon som har liknande kompetens som en annan person.  Med kompetensmappning kan du analysera dina befintliga medarbetare och sökande för att se om de matchar kompetensuppsättningen hos en värderad medarbetare. Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.
 

@@ -29,7 +29,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="manage-retail-product-categories-and-products"></a>Hantera produktkategorier (butik) och produkter
 
-[!INCLUDE [banner](./includes/banner.md)]
+[!include [banner](./includes/banner.md)]
 
 Det här avsnittet beskriver ett bättre sätt att hantera produktkategorier (butik) och produkter i Microsoft Dynamics 365 for Retail. Dessa förbättringar gör det möjligt för marknadsföringschefer att visa en struktur som delas mellan produktegenskaper bland detaljhandelsprodukter och information om frisläppt produkt.
 

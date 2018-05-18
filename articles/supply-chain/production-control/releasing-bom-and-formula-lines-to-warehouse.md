@@ -27,7 +27,7 @@ ms.lasthandoff: 03/08/2018
 
 # <a name="release-bom-and-formula-lines-to-the-warehouse"></a>Frisläpp strukturliste- och formelrader till lagerstället
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Det här avsnittet beskriver processen för att frisläppa råmaterial för strukturlisterader och formelrader till lagret. När du frisläpper en strukturlista eller formelrad till lagret fastställer systemet först om material redan finns på platsen för produktionsinleverans i fabriken där materialet ska förbrukas i produktionsprocessen.
 

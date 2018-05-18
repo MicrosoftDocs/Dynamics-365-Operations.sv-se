@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="budgeting-home-page"></a>Startsidan Budgetering
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Det här ämnet innehåller en översikt med komponenter för budgeteringsfunktioner, budgeteringsverktyg och rapportering i Finance and Operations. 
 

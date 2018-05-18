@@ -26,7 +26,7 @@ ms.lasthandoff: 02/15/2018
 
 # <a name="welcome-to-human-resources"></a>Välkommen till personal
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Personal förenklar många vanliga arkiveringsaktiviteter och automatiserar ett antal processer relaterade till personalen i organisationen. Den innehåller också ett ramverk för personal för hantering av tillsynsområden. Dessa områden inkluderar rekrytering och personalvård, förmånsadministration, utbildning, prestationsgranskning och ändringshantering.
 

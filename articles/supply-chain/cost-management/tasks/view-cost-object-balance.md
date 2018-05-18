@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="view-cost-object-balance"></a>Visa saldo för kostnadsobjekt
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF. Den här proceduren är avsedd för kostnadscontrollern.
 

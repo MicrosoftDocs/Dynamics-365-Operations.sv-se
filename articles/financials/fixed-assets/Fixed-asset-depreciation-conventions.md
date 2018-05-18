@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="fixed-asset-depreciation-conventions"></a>Avskrivningspraxis för anläggningstillgångar
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Avskrivningspraxis används för att bestämma när och hur avskrivning beräknas för både året när anläggningstillgången anskaffades och året när anläggningstillgången avyttrades.
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="import-currency-exchange-rates"></a>Importera valutakurser
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Om en juridisk person har fått fakturor i utländsk valuta, måste den utländska valutan konverteras till lokal valuta. Detta innebär att aktuella valutakurser krävs för olika valutor. Det här avsnittet innehåller en översikt över de inställningar och den bearbetning som krävs för att importera utländska referensvalutakurser som publiceras online av valutakursleverantörer som exempelvis Europeiska centralbanken och Ryska centralbanken.
 

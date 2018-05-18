@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="requests-for-quotation-rfqs"></a>Anbudsförfrågningar (RFQ)
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Det här ämnet ger en översikt över anbudsförfrågningar (RFQ). Organisationer utfärdar anbudsförfrågan (RFQ) när de vill ta emot konkurrenskraftiga erbjudanden för de artiklar eller tjänster som de måste köpa. I en anbudsförfrågan ber du leverantörer att ge priser och leveranstiderna för de kvantiteter av artiklar du anger.
 Du kan också be leverantörerna att ange om det finns några tillfälliga avgifter, till exempel fraktkostnader, eller om leverantören erbjuder rabatter för stora order eller tidig betalning av leverantörsfakturan.
@@ -57,8 +57,8 @@ När du tar emot bud via e-post kan du hantera desssa bud från sidan **Anbudsf�
 
 Om en andra iteration av ett svar från en leverantör krävs, välj **Retur** på sidan **Anbudsförfrågan**. Returåtgärden skapar en ny journal och en rapport som ska skrivas ut, arkiveras och skickas enligt dina inställningar för utskrift.
 
-[!NOTE]
-Namn på sidan **Anbudsförfrågan** har ändrats. I tidigare versioner av Dynamics 365 for Finance and Operations kallas denna sida för **Svar på anbudsförfrågningar**.
+> [!NOTE]
+> Namn på sidan **Anbudsförfrågan** har ändrats. I tidigare versioner av Dynamics 365 for Finance and Operations kallas denna sida för **Svar på anbudsförfrågningar**.
 
 Om du har lagt till poängkriterier i ditt anbudsförfrågansärende kommer anbudsförfrågan att ha en poängpanel där du kan ange poängen. Det totala resultatet visas på anbudsförfrågan när du jämför svar på sidan **Jämför svar**. På sidan **Jämför svar** kan du jämföra andra svarsinformation som t.ex. radpris, leveransdatum och totalpris.
 
@@ -126,8 +126,8 @@ Om du vill använda orsakskoder för ett anbud för att ange varför det accepte
 
 Du kan konfigurera utseendet på dina utskrivna eller lagrade anbudsförfrågandokument på sidan **Formulärinställningar** i anskaffning och källa.
 
-[!NOTE]
-För en konfiguration av offentliga sektorn i en anbudsförfrågan som redan har skickats kräver användning av en ändringsprocessen. När en anbudsförfrågan har skickats är fälten låsta.
+> [!NOTE]
+> För en konfiguration av offentliga sektorn i en anbudsförfrågan som redan har skickats kräver användning av en ändringsprocessen. När en anbudsförfrågan har skickats är fälten låsta.
 Om du vill ändra anbudsförfrågan måste du därför välja **Skapa** för att starta ändringsprocessen, enligt beskrivningen ovan. Låsningssättet kontrolleras av alternativet **Lås anbudsförfrågan när de har skickats** på sidan **Anskaffnings- och källparametrar**. Denna parameter är som standarad inställd på **Ja** och för en konfiguration av offentlig sektor kan standardinställningen inte ändras. Därför, även om ändringsprocessen kan hanteras manuellt i en konfiguration av icke offentlig sektor måste den användas för en konfiguration av offentlig sektor.
 
 När du skapar ett anbudsförfrågansärende av typen inköpsorder och lägger till en lagerartikel för anbudsförfrågan, skapas en lagertransaktion som har inleveransstatusen **Offert inleverans**. Endast rader i ett anbudsförfrågansärende som har denna status beaktas när du använder en huvudplan för att beräkna varor. Om du vill att huvudplanen inkluderar rader i ett anbudsförfrågansärende som förväntad inleverans, måste du konfigurera detta beteende i inställningarna av huvudplaneringen.

@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="straight-line-life-remaining-depreciation"></a>Linjär avskrivning kvarstående livstid
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Det här avsnittet ger en översikt över metoden för linjär återstående livstid för avskrivning.
 

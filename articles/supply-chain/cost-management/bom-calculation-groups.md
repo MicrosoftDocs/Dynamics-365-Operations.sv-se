@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="bom-calculations-groups"></a>Beräkningsgrupper för strukturlista
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Den här artikeln innehåller information om beräkningsgrupper för strukturlistor och hur du ställer in dem. Om du vill köra en strukturlisteberäkning måste du antingen ställa in beräkningsgrupper och tilldela dem till enskilda artiklar eller ställa en standardberäkningsgrupp. Beräkningsinställningarna från beräkningsgruppen används sedan som standardvärden på sidan Strukturlisteberäkning när strukturlistan beräknas. 
 

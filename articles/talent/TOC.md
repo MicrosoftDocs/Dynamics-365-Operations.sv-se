@@ -6,6 +6,7 @@
 ## [Ta bort en Talent-miljö](remove-talent-environment.md)
 ## [Reservera modulära appar för Microsoft Dynamics 365 for Talent](modular-app-tech-faq.md)
 ## [Utöka funktionaliteten i Talent](extend-talent-functionality.md)
+## [Åtkomst till förhandsfunktioner i Dynamics 365 for Talent: Attract](access-preview-feature.md)
 
 # [Utveckla en personalstrategi](departments-jobs-positions.md)
 ## [Ställ in jobbkomponenter](create-job.md)

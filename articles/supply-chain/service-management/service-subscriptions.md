@@ -28,7 +28,7 @@ ms.lasthandoff: 02/19/2018
 
 # <a name="service-subscriptions"></a>Serviceabonnemang
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Abonnemang är baserade på ett tids- och materialprojekt. Du kan skapa abonnemang från ett projekt, från sidan **serviceabonnemang**, eller med hjälp av en grupp för serviceabonnemang.
 

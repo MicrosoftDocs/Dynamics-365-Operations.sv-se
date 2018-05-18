@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="project-quotations"></a>Projektofferter
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Det här avsnittet innehåller en presentation av begreppet projektofferter, som du kan använda för att skapa ett attraktivt erbjudande för en kund som ett första steg i projektfasen. En projektoffert kan inkludera många artiklar och tjänster som ska offereras, grundläggande kontaktuppgifter, särskilda handelsavtal och rabatter samt eventuella skatter och tilläggsavgifter. 
 

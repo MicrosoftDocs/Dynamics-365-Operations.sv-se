@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="create-financial-dimensions-for-pos-registers-and-configure-dimension-values-on-registers"></a> Skapa ekonomiska dimensioner för kassaregister och konfigurera dimensionsvärden för register
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 Den här proceduren går igenom hur du skapar ekonomiska dimensioner för kassaregister (POS) och visar hur du konfigurerar värden för ekonomiska dimension i kassor. Detta förfarande inte omfattar andra åtgärder, såsom att skapa dimensionen ställer och strukturer. Dessa uppgifter hittar du i andra avsnitt. I den här registreringen används demonstrationsföretaget USRT.
 

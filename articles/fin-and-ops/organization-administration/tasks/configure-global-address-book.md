@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="configure-the-global-address-book"></a>Konfigurera den globala adressboken
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Använd den här proceduren för att ange de förvalda värdena och säkerhetpolicyerna för globala adressboken. 
 

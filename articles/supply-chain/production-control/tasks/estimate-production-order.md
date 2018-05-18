@@ -25,7 +25,7 @@ ms.lasthandoff: 02/06/2018
 ---
 # <a name="estimate-a-production-order"></a>Uppskatta en produktionsorder
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Du kan köra den här proceduren med demonstrationsdataföretaget USMF eller använda dina egna data. I båda fall måste du ha en öppen produktionsorder som har statusen Skapad. Detta är den andra proceduren av sju som förklarar produktionsorderns livscykel.
 

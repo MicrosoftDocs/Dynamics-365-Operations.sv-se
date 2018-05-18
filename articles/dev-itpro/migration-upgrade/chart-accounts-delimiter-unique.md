@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="chart-of-accounts-delimiter-must-be-unique"></a>Avgränsare för kontoplan måste vara unik.
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Du kan använda samma avgränsare i diagrammet över konton och dimensionsvärden i Microsoft Dynamics AX 2012. I Dynamics 365 for Finance and Operations kan du inte ha samma avgränsare för kontoplanen och dimensionsvärden. Om det finns dubbla avgränsare kan du ändra den efter uppgraderingen. 
 

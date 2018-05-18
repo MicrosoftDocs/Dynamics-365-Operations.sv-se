@@ -28,7 +28,7 @@ ms.lasthandoff: 03/08/2018
 
 # <a name="set-up-order-fulfillment-for-stores"></a>Ställ in orderuppfyllande för butiker
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 ## <a name="overview"></a>Översikt
 Många återförsäljare vill optimera orderuppfyllelse genom att låta butiker fylla i order. Orderuppfyllelse på butiksnivå hjälper dig att förenkla scenarier med överlager för en specifik butik eller kan behövas från en logistisk synvinkel i de fall som en butik har extra kapacitet eller ligger inom närmare avstånd för leverans till kunden. För att tillgodose detta behov är ett enhetligt utförande av orderuppfyllelse tillgängligt i kassan.

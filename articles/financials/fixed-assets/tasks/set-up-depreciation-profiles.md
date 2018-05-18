@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-and-create-depreciation-profiles"></a>Ställ in och skapa avskrivningsprofiler
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Avskrivningsprofiler bestämmer typ och frekvens av avskrivning för en tillgång.   I den här registreringen används USMF-demonstrationföretaget och revisorrollen.
 

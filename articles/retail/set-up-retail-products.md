@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="set-up-retail-products"></a>Ställ in butiksprodukter
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Denna artikel beskriver hur du ställer in butiksprodukter i Microsoft Dynamics 365 for Retail.
 

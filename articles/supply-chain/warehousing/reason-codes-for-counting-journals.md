@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="reason-codes-for-inventory-counting"></a>Orsakskoder för lagerinventering
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Orsakskoder låter dig analysera resultatet från en inventeringsprocess och eventuella avvikelser som inträffar under den här processen. Du kan ange en orsak till att göra inventeringen, t.ex. en trasig lastpall eller en lagerjustering som baseras på lagerexempel.
 

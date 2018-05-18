@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="define-loyalty-programs"></a> Definiera bonusprogram
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 Den här proceduren visar hur du ställer in ett bonusprogram med två lojalitetnivåer. I proceduren används demonstrationsföretaget USRT.
 

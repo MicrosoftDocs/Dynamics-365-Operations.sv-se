@@ -3,12 +3,12 @@ title: "BOM-beräkningar"
 description: "Kostnadssummeringen och försäljningsprisberäkningarna kallas för strukturlisteberäkningar och du initierar dem från sidan Beräkningar. Det här ämnet innehåller information om BOM-beräknignar."
 author: AndersGirke
 manager: AnnBe
-ms.date: 04/10/2017
+ms.date: 05/01/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
-ms.search.form: BOMCalcDialog, BOMCalcTable, CostingVersion, InventItemPrice, SalesQuotationTable, SalesTable, SMAServiceOrderTable
+ms.search.form: BOMCalcDialog, BOMCalcTable, CostingVersion, InventItemPrice
 audience: Application User
 ms.reviewer: yuyus
 ms.search.scope: Core, Operations
@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="bom-calculations"></a>BOM-beräkningar
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Kostnadssummeringen och försäljningsprisberäkningarna kallas för strukturlisteberäkningar och du initierar dem från sidan Beräkningar. Det här ämnet innehåller information om BOM-beräknignar.
 

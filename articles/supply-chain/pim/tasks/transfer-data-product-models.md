@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="transfer-data-for-product-models"></a>Överför data för produktmodeller
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 När du exporterar data för en produktkonfigurationsmodell krävs det att du har minst en produktmodell. I den här proceduren används för högtalarmodellen i demonstrationsföretaget USMF för att visa hur du exporterar data för den här modellen.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 10/26/2017
 ---
 # <a name="establish-customer-payment-terms"></a>Upprätta villkor för kundbetalning
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 I den här proceduren definieras kassarabatt- och förfallodatuminställningar. I den här uppgiftsguiden används demonstrationsföretaget USMF.
 

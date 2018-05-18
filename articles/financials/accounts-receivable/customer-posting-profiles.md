@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="customer-posting-profiles"></a>Kundbokföringsprofiler
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Bokföringsprofiler för kund styr bokföringen av kundtransaktionerna i redovisningen.kundpool
 

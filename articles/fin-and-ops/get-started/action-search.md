@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="action-search"></a>Åtgärdssökning
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denna artikel beskriver åtgärdssökfunktionen i Microsoft Dynamics 365 for Finance and Operations. Funktionen för åtgärdssökning hjälper dig att hitta och köra åtgärder på en sida.
 

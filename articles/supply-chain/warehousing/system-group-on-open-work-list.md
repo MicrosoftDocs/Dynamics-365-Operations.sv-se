@@ -27,7 +27,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="system-grouping-on-an-open-work-list"></a>Systemgruppering i en öppen arbetslista
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Genom att använda ett systemgrupperingsfält kan de filtrera en öppen arbetslista utan att behöva redigera menyalternativet mobil enhet.
 Där det går att tillämpa fungerar systemgrupperingen för att filtrera en arbetslista i ett fält för en enskild arbetsrubrik. Du kan inte använda systemgruppering för att filtrera på radnivåfält.

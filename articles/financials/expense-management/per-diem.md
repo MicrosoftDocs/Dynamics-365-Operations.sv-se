@@ -26,7 +26,7 @@ ms.lasthandoff: 03/13/2018
 
 # <a name="per-diem-rules"></a>Traktamentsregler
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ett *traktamente* är ett tillägg som betalas till en anställd som reser i tjänsten. I Utgiftshantering kan du skapa traktamentsregler för olika resesituationer. Traktamentstariffer kan anges utifrån tid på året, resmål eller båda. När du skapar en traktamentsregel kan du ange att hålla inne en procentandel av traktamentstariffen om medarbetaren bjuds på måltider eller tjänster. Du kan också ställa in minsta eller högsta antal timmar som en traktamentstariff kan gälla vid en tjänsteresa.
 

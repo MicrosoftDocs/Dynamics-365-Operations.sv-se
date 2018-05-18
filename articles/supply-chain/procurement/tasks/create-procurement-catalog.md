@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-procurement-catalog"></a>Skapa en anskaffningskatalog
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Den här guiden visar hur du skapar en anskaffningskatalog. Den här uppgiften utförs vanligtvis av ett anskaffningsproffs. Du kan också lära dig om hur medarbetare kan använda katalogen när de skapar en rekvisition. Innan du kan skapa en katalog måste det finnas en anskaffningskategorihierarki i systemet. Hierarkin ärvs från den nya katalogen, tillsammans med alla produkter som finns i hierarkin. Du kan använda den här handboken i demonstrationdataföretaget USMF, där anskaffningskategorihierarkin är tillgänglig, samt i exemplen som används i procedurstegen.
 

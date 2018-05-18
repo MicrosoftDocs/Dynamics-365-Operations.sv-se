@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="use-the-safety-stock-journal-to-update-minimum-coverage"></a>Använd säkerhetslagerjournalen för att uppdatera minimumdisponering
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 I den här proceduren visas hur du beräknar minsta disponeringsförslag som baseras på historiska transaktioner och uppdaterar sedan med artikeldisponeringen med förslagen. Detta görs med hjälp av säkerhetslagerjournalen. Det demonstrationsdataföretag som används för att skapa den här uppgiften är USMF. Denna uppgift är avsedd för produktionsplaneraren för att hjälpa till att bibehålla minsta disponering.
 

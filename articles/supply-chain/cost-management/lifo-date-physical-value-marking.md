@@ -29,9 +29,9 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="lifo-date-with-physical-value-and-marking"></a>LIFO-datum med fysiskt värde och markering
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 Sist in, först ut-datum (LIFO-datum) är en lagermodell baserat på LIFO-principen. Utleveranser från lagret kvittas mot de senaste inleveranserna till lagret, baserat på datumet för lagertransaktionen. Genom att använda LIFO-datum, om det inte finns någon inleverans före utleveransen, kvittas utleveransen mot alla eventuella inleveranser som sker efter utleveransen. Flera utleveranser på samma datum kan kvittas i ordningen senaste utleverans - senaste inleverans. 
 

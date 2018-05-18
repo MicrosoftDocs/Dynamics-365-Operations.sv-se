@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="import-and-maintain-credit-card-transactions"></a>Importera och underhålla kreditkortstransaktioner
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Utgiftsrelaterade kreditkortstransaktioner kan konfigureras att importeras automatiskt enligt ett återkommande schema. Alternativt kan transaktionerna även importeras manuellt efter behov. Kreditkortstransaktionerna importeras via dataentiteten för kreditkortstransaktioner.
 

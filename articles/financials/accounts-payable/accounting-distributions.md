@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="accounting-distributions"></a>Redovisningsfördelningar
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Det här avsnittet innehåller information om redovisningsfördelningar och beskriver de alternativ som är tillgängliga för att bearbeta dem. Redovisningsfördelningar används för att fördela penningbelopp för ett källdokument till specifika redovisningskonton. 
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="deposit-customer-payments"></a>Sätta in kundbetalningar
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Insättning av kundbetalningar. I den här uppgiften används demonstrationsföretaget USMF.
 

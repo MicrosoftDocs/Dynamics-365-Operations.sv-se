@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="distribute-questionnaires-using-scheduling"></a>Distribuera en enkät med hjälp av tidsplanering
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Enkättidsplanering gör att du kan planera och distribuera enkäter till flera svaranden. Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.
 

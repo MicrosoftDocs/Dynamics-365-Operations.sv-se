@@ -29,9 +29,9 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="fifo-with-physical-value-and-marking"></a>FIFO med fysiskt värde och markering
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 Först in, först ut (FIFO) är en lagermodell där de första (äldsta) inleveranserna utlevereras först. Ekonomiskt uppdaterade utleveranser från lagret kvittas mot de första ekonomiskt uppdaterade inleveranserna i lagret baserat på lagertransaktionens ekonomiska datum. 
 

@@ -26,7 +26,7 @@ ms.lasthandoff: 02/07/2018
 
 # <a name="pos-improvements-for-serialized-products"></a>Kassaförbättringar för serialiserade produkter
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 ## <a name="overview"></a>Översikt 
 Baserat på inställningarna i detaljhandelns huvudkontor kan produkterna klassificeras som antingen serialiserade eller icke-serialiserade. När produkterna serialiseras kan respektive vara tilldelas ett unikt nummer som hjälper dig att spåra garantier och artiklar, samt bekräfta ägarskap. Även om möjligheten att tillhandahålla serienummer för serialiserade produkter redan fanns i vårt moderna kassasystem/kassasystem via moln har vissa förbättringar införts i syfte att hjälpa kassapersonalen att spara tid och vara mer produktiv.  

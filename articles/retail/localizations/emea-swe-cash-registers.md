@@ -26,7 +26,7 @@ ms.lasthandoff: 03/26/2018
 ---
 # <a name="cash-registers-for-sweden"></a>Kassaapparater för Sverige
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Det här avsnittet innehåller en översikt över kassaapparatfunktioner för Sverige i Microsoft Dynamics 365 for Retail. Den innehåller även riktlinjer för att ställa in funktionen. Funktionen innehåller följande delar:
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-and-assign-a-cost-behavior-policy-to-a-cost-control-unit"></a>Skapa och tilldela en kostnadsbeteendepolicy till en kostnadsstyrenhet
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Kostnadsbeteende är klassificeringen av kostnader som fasta eller rörliga. En policy och motsvarande regler måste tilldelas till en kostnadsstyrenhet för att policyn ska börja gälla. Använd den här proceduren när du vill skapa en policy och sedan tilldela den till en kostnadsstyrenhet.
 

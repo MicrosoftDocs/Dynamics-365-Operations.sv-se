@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="manage-email-templates"></a>Hantera e-postmallar
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Du kan överföra information från organisationens databas till bokmärkena i ett nytt dokument och använda den i mallarna som hjälper dig att kommunicera på ett effektivt sätt med sökande och kandidater. Om du vill göra detta skapar du en mall som innehåller standardtext och några bokmärken där systemdata ska infogas. Du kan till exempel infoga adress- och kontaktinformation för en sökande i ett Microsoft Word-dokument som du kan använda när du kommunicerar med den sökande. Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.
 

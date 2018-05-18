@@ -29,7 +29,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="set-up-a-call-center-channel"></a>Ställa in en kundtjänstkanal
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Ett företag kan definiera flera kundtjänstkanaler i Microsoft Dynamics 365 for Retail. Kundtjänstkanaler konfigureras i **Butik**\>**Kanaler**\>**Kundtjänst**\>**Alla kundtjänster**, och de är specifika för en juridisk person.
 

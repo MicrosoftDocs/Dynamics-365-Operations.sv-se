@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="close-the-general-ledger-at-period-end"></a>Stäng redovisningen vid periodslutet
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Det här avsnittet beskriver de uppgifter som normalt slutförs vid en periodstängning av redovisningen. 
 

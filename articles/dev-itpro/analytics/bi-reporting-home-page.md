@@ -27,7 +27,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="intelligence"></a>Intelligence
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Det här avsnittet hänvisar till resurser som du kan använda för att lära dig mer om Business Intelligence (BI) och rapporteringsverktygen som finns i Microsoft Dynamics 365 for Finance and Operations.
 

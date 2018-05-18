@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="configure-an-approval-process-in-a-workflow"></a>Konfigurera en godkännandeprocess i ett arbetsflöde
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Använd följande procedur när du vill konfigurera egenskaperna för godkännandeprocessen.
 

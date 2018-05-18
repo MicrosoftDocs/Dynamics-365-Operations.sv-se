@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-rate-masters"></a>Ställ in tariffhuvuden
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 I den här proceduren visas hur du ställer in ett tariffhuvud. Den logistikansvarige ställer vanligtvis in tariffhuvuden, beroende på vilka kontrakt som har signerats med transportföretagen. I detta scenario ställer du in ett tariffhuvud för ett flygtransportföretag. Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.
 

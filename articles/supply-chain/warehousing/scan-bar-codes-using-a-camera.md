@@ -27,7 +27,7 @@ ms.lasthandoff: 03/09/2018
 
 # <a name="scan-bar-codes-using-a-camera-in-dynamics-365-for-finance-and-operations--warehousing"></a>Skanna streckkoder med en kamera i Dynamics 365 for Finance and Operations – Warehousing
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Det här avsnittet beskriver hur du ställer in Dynamics 365 for Finance and Operations – Warehousing för att skanna streckkoder med en kamera på en mobil enhet. 
 

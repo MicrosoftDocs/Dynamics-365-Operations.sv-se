@@ -24,7 +24,7 @@ ms.lasthandoff: 03/26/2018
 ---
 # <a name="design-expressions-to-call-application-class-methods-er"></a>Skapa uttryck för att anropa programklassmetoder (ER)
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Denna guide ger information om hur du återanvänder befintlig programlogik i konfigurationer för elektronisk rapportering (ER) genom att anropa metoder för programklasser i ER-uttryck. Argument för att anropa klasser kan definieras dynamiskt vid körning: exempelvis utifrån information i parsningdokumentet för att säkerställa att de är korrekta. I den här handboken skapas de ER-konfigurationer som krävs för exempelföretaget Litware, Inc. Proceduren är till för användare med rollen systemadministratör eller utvecklare av elektronisk rapportering. 
 

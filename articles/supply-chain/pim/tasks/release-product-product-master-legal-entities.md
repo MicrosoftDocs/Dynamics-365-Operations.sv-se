@@ -24,7 +24,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="release-a-productproduct-master-to-legal-entities"></a>Frisläpp en produkt/produktmall till juridiska personer
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Den här proceduren går igenom hur du frisläpper en produkt eller en produktmall till en eller flera juridiska personer. Demonstrationsdataföretaget som används för att skapa den här uppgiften är USRT, och uppgiften är avsedd för rollerna Marknadsföringschef och Produktdesigner.
 

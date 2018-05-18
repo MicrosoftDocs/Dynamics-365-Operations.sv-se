@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="create-a-call-center-catalog"></a>Skapa en kundtjänstkatalog
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Den här artikeln ger en översikt över processen för att skapa en katalog för ett callcenter. 
 

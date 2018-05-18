@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="advanced-bank-reconciliation-mt940-import--composite-data-entity-upgrade"></a>Avancerad MT940-import för bankavstämning - uppgradering för sammansatt dataenhet
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ett sekvensnummer måste läggas till bankutdragimportenheten för att stödja MT940-formatet. 
 

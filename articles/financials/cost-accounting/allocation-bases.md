@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="allocation-bases"></a>Allokeringsunderlag 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Ett allokeringsunderlag är baseen som redovisning fördelar omkostnader på. Ett allokeringsunderlag kan vara en kvantitet som t.ex. maskintimmar som används, kilowattimmar (kWh) som förbrukas eller kvadratmeteryta som ockuperas. Allokeringsunderlag används oftast för att tilldela omkostnader till lager som produceras. Till exempel fördelar IT-avdelningen sina utgifter enligt antalet datorer som varje avdelning använder.
 

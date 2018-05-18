@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="change-depreciation-conventions-for-multiple-fixed-assets"></a>Ändra avskrivningspraxis för flera anläggningstillgångar
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Uppgiften uppdaterar avskrivningspraxis för en viss grupp av anläggningstillgångar. I den här uppgiftsguiden används demonstrationsföretaget USMF.
 

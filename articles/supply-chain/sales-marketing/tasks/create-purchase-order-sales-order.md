@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-purchase-order-from-a-sales-order"></a>Skapa en inköpsorder från en försäljningsorder
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Proceduren visar hur du kan skapa en inköpsorder som baseras på en försäljningsorder. Produktens kvantiteter på inköpsordern är angivna för att uppfylla kravet från den ursprungliga försäljningsordern. Att uppfylla säljkravet så här är ett alternativ till den mer omfattande och optimerade planeringsmetoden för fördelningsbehov. Du kan köra den här proceduren i demonstrationsföretaget USMF eller på dina egna data.
 

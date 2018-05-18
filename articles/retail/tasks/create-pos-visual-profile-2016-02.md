@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="create-a-pos-visual-profile"></a> Skapa en visuell kassaprofil  
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 Den här proceduren går igenom hur du skapar en ny visuell kassaprofil. En visuell profil innehåller grundläggande information som bestämmer utseendet på kassaregistren. Du kan skapa flera visuella profiler och tilldela specifika profiler som ska användas på specifika kassaapparater. I proceduren används demonstrationsföretaget USRT.
 

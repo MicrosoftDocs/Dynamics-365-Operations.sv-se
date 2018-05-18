@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="use-lookups-to-find-information"></a>Använda sökningar för att söka efter information
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 I Microsoft Dynamics 365 for Finance and Operations har många fält sökningar som hjälper dig att enkelt hitta rätt eller önskat värde. Flera förbättringar har lagts till sökningar för att göra dessa kontroller mer användbara och göra användarna mer produktiva. I det här avsnittet lär du dig om dessa nya sökningsfunktionerna och du får några användbara tips för att få optimal användning av sökningar i systemet.  
 

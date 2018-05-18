@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="define-cycle-counting"></a>Definiera rullande inventering  
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Rullande inventering är en lagerställesprocess som du kan använda för att kontrollera lagerbehållningsartiklar. Den här uppgiftsinspelningen visar hur du kan ställa in standardarbetsprioriteten för inventering; aktivera ett menykommando för mobila enheter för att bearbeta både plocknings- och inventeringsåtgärder; aktivera en utlösare för inventeringströskeln när en plats blir tom; aktivera en plan för rullande inventering för en viss artikel i ett bestämt lagerställe. Dessa inställningsuppgifter utförs normalt av en lagerchef. Du kan gå igenom den här proceduren i demonstrationsdataföretaget USMF eller i dina egna data.
 

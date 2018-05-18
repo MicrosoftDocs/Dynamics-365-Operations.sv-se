@@ -29,7 +29,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="bom-designer-functionality"></a>Funktionen Strukturlistedesigner
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Det här ämnet ger en beskrivning av hur du kan använda sidan för strukturlistan för att designa och arbeta med trädstrukturer för strukturlistor (BOMs). Du kan klicka på Inställningar för att välja olika konfigureringar och ange vilken information som ska visas på raderna i trädstrukturen.
 

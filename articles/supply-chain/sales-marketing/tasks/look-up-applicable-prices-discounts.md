@@ -24,7 +24,7 @@ ms.lasthandoff: 11/02/2017
 ---
 # <a name="look-up-applicable-prices-and-discounts"></a>Slå upp tillämpliga priser och rabatter
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 I den här proceduren visas hur du hittar pris och/eller rabatt för en produkt som för närvarande är giltig för en viss kund, utan att skapa en försäljningsorder. I proceduren går vi igenom ett visst exempel och du måste följa exemplet med hjälp av USMF-demonstrationsföretaget för att välja de nödvändiga värdena.
 

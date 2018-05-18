@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="manage-a-data-source-for-the-cost-accounting-ledger"></a>Hantera en datakälla för huvudbok för kostnadsredovisning
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Använd den här proceduren för att hantera datakällan för redovisning för en huvudbok för kostnadsredovisning. Innan du utför den här uppgiften måste du spela upp uppgiftsguiderna "Skapa en huvudbok för kostnadsredovisning" och "Definiera kostnadsstyrenheter". I den här inspelningen används demonstrationsföretaget USP2.
 

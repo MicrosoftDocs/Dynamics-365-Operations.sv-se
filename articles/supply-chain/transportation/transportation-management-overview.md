@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="transportation-management-overview"></a>Transporthanteringsöversikt
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 I det här avsnittet finns en översikt över transporthanteringsfunktionen i Microsoft Dynamics 365 for Finance and Operations.
 

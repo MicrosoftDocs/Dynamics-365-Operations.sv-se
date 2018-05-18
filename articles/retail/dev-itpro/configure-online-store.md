@@ -27,7 +27,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="configure-an-online-store"></a>Konfigurera en onlinebutik
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denna artikel innehåller länkar till avsnitt som hjälper dig att centralt konfigurera och hantera en onlinebutik.
 

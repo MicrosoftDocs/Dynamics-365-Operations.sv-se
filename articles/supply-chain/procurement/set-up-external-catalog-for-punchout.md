@@ -28,7 +28,7 @@ ms.lasthandoff: 03/26/2018
 
 # <a name="set-up-an-external-catalog-for-punchout-eprocurement"></a>Ställ in en extern katalog för PunchOut eProcurement
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Genom att använda den externa katalogen kan du säkerställa att produkt- och prisinformationen som du därefter bearbetar i Dynamics 365 for Finance and Operations, juli 2017 är korrekt och aktuell. Rekvisitionen kan sedan godkännas och konverteras till en inköpsorder och en order kan läggas hos leverantören.
 

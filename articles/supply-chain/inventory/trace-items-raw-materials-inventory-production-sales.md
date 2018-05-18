@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="item-and-raw-material-tracing-in-inventory-production-and-sales"></a>Spåra artiklar och råmaterial i lager, produktion och försäljning
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 I det här avsnittet beskrivs hur du kan använda artikelspårning för att identifiera var artiklar och råmaterial har använts, används eller ska användas i produktionen och försäljningsprocessen.
 

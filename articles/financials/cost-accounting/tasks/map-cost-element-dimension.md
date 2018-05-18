@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="map-a-cost-element-dimension"></a>Mappa dimension för kostnadselement
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 En kostnadscontroller kan använda den här proceduren för att mappa en kostnadselementdimension till en kostnadselementdimension i den juridiska personen MXMF. I den här inspelningen används demonstrationsföretaget USP2.
 

@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-request-for-quotation"></a>Skapa en anbudsförfrågan
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Den här proceduren visar hur du skapar en anbudsförfrågan. Detta görs normalt av en inköpsagent. Du kan använda den här proceduren i demonstrationsföretaget USMF eller på dina egna data. Du måste ha ställt in begäranstyper innan du börjar. När du har slutfört den här uppgiften och du har skapat och har skickat en anbudsförfrågan kan du sedan ange svarstyper per leverantör, jämföra dem och tilldela kontraktet.
 

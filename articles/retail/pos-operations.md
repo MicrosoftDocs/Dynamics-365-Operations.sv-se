@@ -28,7 +28,7 @@ ms.lasthandoff: 03/22/2018
 
 # <a name="pos-operations-online-and-offline"></a>POS-operationer, online och offline
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 De flesta åtgärder som användaren vidtar i kassan anses vara operationer. Operationer konfigureras och hanteras i Microsoft Dynamics 365 for Retail back office. Många operationer kan läggas till i knapparna i kassaknappsatsen. Användarna kan sedan välja knappar för att starta operationer och utföra deras funktioner. Andra åtgärder som ingår i kassahuvudprogrammet och startas från knappar på skärmen eller tillsammans med andra arbetsflöden eller processer.
 

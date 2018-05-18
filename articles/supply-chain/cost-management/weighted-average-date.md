@@ -29,9 +29,9 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="weighted-average-date"></a>Datum för viktat medelvärde
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 Viktat genomsnittligt datum är en lagermodell som baseras på principen om viktat medelvärde. För principen om viktat medelvärde värderas utleveranser från lagret till medelvärdet av artiklarna som inlevereras till lagret för varje enskild dag i lagerstängningsperioden. 
 
@@ -54,7 +54,7 @@ Lagertransaktioner som lämnar lagerinleveranserna, bland anat försäljningsord
 
 Kvittningar är lagerstängningstransaktioner som justerar utleveranser till rätt viktat medelvärde vid stängningsdatumet. 
 
-**Obs!** Mer information om kvittning i Dynamics AX finns i artikeln om lagerstängning. I följande exempel visas effekten av att använda viktat medelvärde med fem olika konfigurationer:
+**Obs!**  Mer information om kvittning i Dynamics AX finns i artikeln om lagerstängning. I följande exempel visas effekten av att använda viktat medelvärde med fem olika konfigurationer:
 
 -   Viktat genomsnittligt datum med direkt kvittning när alternativet **Inkludera fysiskt värde** inte används.
 -   Viktat genomsnittligt datum med summerad kvittning när **Inkludera fysiskt värde** inte används

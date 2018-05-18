@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="information-used-in-bom-calculations-with-standard-costs"></a>Information som används i strukturlisteberäkningar med standardkostnader
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 I strukturlisteberäkningar används data från flera källor för att beräkna standardkostnaderna för en tillverkad artikel. Källorna kan till exempel vara information om artiklar, flöden, beräkningsformler för indirekta kostnader och kostnadsversionen.
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="configure-settlement"></a>Konfigurera kvittning
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Hur och när transaktioner kvittas kan vara komplexa ämnen så det är nödvändigt att du förstår och definierar parametrarna korrekt så att de uppfyller dina verksamhetskrav. Det här avsnittet ger en beskrivning av de parametrar som används för kvittning av både Leverantörsreskontra och Kundreskontra. 
 

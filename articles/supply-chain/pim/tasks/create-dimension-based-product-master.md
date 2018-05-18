@@ -24,7 +24,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="create-a-dimension-based-product-master"></a>Skapa en dimensionsbaserad produktmall
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 I den här proceduren visas hur du skapar en ny produktmall med dimensionsbaserad konfigurationsteknik. Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF. Detta är den första proceduren utav åtta som förklarar hur du ställer upp kombinationer för dimensionsbaserad konfiguration.
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="one-voucher"></a>En verifikation
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 > [!NOTE]
 >  Den här funktionen blir tillgänglig i Dynamics 365 for Finance and Operations version 8.0, som kommer att vara tillgänglig i versionen som kommer våren 2018.   

@@ -29,7 +29,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="warehouse-work-policies"></a>Policyer för lagerarbete
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Policyer för lagerställearbete i Microsoft Dynamics 365 for Finance and Operations styr om lagerställearbete skapas av lagerprocesser i produktionen, baserat på arbetsordertyp, lagerställe och produkt.
 

@@ -25,7 +25,7 @@ ms.lasthandoff: 09/29/2017
 ---
 # <a name="set-up-an-appointment-for-a-load"></a>Skapa en tidpunkt för en beläggning
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 I den här proceduren visas hur du ställer in och planerar en lastkajstidpunkt för en beläggning. Detta görs normalt av en transportkoordinator. Du kan använda den här proceduren i demonstrationsdataföretaget USMF.
 

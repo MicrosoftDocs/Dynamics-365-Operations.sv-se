@@ -24,7 +24,7 @@ ms.lasthandoff: 04/13/2018
 ---
 # <a name="design-configurations-to-generate-documents-with-application-data"></a>Designa konfigurationer för att generera dokument med programdata
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 Om du vill utföra stegen i den här proceduren måste du först slutföra proceduren ER Generera dokument med uppdatering av programdata (Del 1: Importera konfigurationer).
 

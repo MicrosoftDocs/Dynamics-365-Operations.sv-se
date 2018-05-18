@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="batch-attributes"></a>Batchattribut
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Den här ämnet innehåller information om batchattribut. Batchattribut är egenskaper för råmaterial och färdiga produkter som utgör lagerbatchar. Ämnet innehåller även information om hur du tilldelar batchattribut och hur du kan söka i dem när du reserverar batchar.
 

@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="letters-of-credit-and-import-collections"></a>Remburs och importinkasso
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Det här avsnittet innehåller allmän information om remburser och importsamlingar. Båda typerna av bankdokument används ofta för inköp och försäljning av varor över internationella gränser.
 

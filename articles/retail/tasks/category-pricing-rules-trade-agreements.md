@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="category-pricing-rules-to-create-trade-agreements"></a> Kategoriprissättningsregler för att skapa handelsavtal
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 I den här proceduren visas hur du skapar handelsavtal för försäljningspris med hjälp av en kategoriprissättningsregel. Det demonstrationsdataföretag som används för att skapa den här uppgiften är USRT. Denna uppgift är avsedd för rollen marknadsföringschef (butik).
 

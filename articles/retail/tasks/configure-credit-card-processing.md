@@ -25,7 +25,7 @@ ms.lasthandoff: 02/07/2018
 ---
 # <a name="configure-credit-card-processing"></a> Konfigurera kreditkortsbearbetning
 
-[!INCLUDE [task guide banner](../includes/task-guide-banner.md)]
+[!include [task guide banner](../includes/task-guide-banner.md)]
 
 Den här proceduren går igenom hur du visar en lista med betalningsförmedlare och hur du konfigurerar ett betalningskonto för kundreskontra. I den här proceduren används i USRT-företaget med demodata och är avsedda för administratörer och IT-ansvariga.
 

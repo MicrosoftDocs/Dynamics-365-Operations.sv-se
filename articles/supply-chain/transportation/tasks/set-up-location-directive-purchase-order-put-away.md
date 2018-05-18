@@ -25,7 +25,7 @@ ms.lasthandoff: 11/02/2017
 ---
 # <a name="set-up-a-location-directive-for-purchase-order-put-away"></a>Ställ in ett platsdirektiv för inlagring av inköpsorder
 
-[!INCLUDE [task guide banner](../../includes/task-guide-banner.md)]
+[!include [task guide banner](../../includes/task-guide-banner.md)]
 
 I den här proceduren visas hur du ställer in ett enkelt platsdirektiv. I exemplet som visas skapas ett platsdirektiv som ska användas för att fastställa var du vill placera artiklar som har tagits emot för en inköpsorder. Du kan spela upp den här uppgiftsguiden med nämnda data med hjälp av demonstrationsdataföretaget USMF. Förutsättningar: Du måste skapa en dispositionskod. I den här proceduren använder vi dispositionskoden Relabel. Om du skapar ett platsdirektiv i dina egna data måste du ha ställt in avancerad lagerhantering för dina lagerställen och artiklar.  Den här proceduren är avsedd för lagerchefen.
 

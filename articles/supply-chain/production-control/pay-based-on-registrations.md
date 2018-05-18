@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="pay-based-on-registrations"></a>Lön baserat på registreringar
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Det här avsnittet beskriver i detalj hur lön beräknas utifrån arbetarregistreringar. Det innehåller exempel som visar hur resultatet påverkas av de olika kombinationerna av de inställningsalternativ som är tillgängliga för beräkningen. Nedan följer några av de områden som omfattas:
 

@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="cost-groups"></a>Kostnadsgrupper
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Kostnadsgrupper utgör grunden för segmentering och analysering av kostnadsbidraget i en tillverkad artikels beräknade kostnad, till exempel kostnadsbidragen för material, arbete och omkostnader. Kostnadsgruppssegmentering har flera synonymer inom tillverkningen, till exempel kostnadsuppdelning eller kostnadsklassificering. 
 

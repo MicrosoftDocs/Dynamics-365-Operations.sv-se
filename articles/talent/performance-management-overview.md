@@ -27,7 +27,7 @@ ms.lasthandoff: 02/15/2018
 
 # <a name="performance-management-overview"></a>Översikt över prestationshantering
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Genom prestationshanteringsprocessen kan medarbetare dokumentera och diskutera sin prestation med chefen. Chefer kan i sin tur ge återkoppling och vägledning till medarbetarna.  
 

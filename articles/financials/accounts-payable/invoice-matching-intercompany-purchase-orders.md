@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="invoice-matching-and-intercompany-purchase-orders"></a>Fakturamatchning och koncerninterna inköpsorder
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Den juridiska personen för inköp som ingår i en koncernintern handelstransaktion kan ställas in för att använda fakturamatchning i leverantörsreskontra. I det här fallet måste bokföringskraven för både koncernintern handel och fakturamatchning i leverantörsreskontra uppfyllas innan koncerninterna leverantörsfakturor kan bokföras.
 

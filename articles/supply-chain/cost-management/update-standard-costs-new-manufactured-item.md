@@ -29,7 +29,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="update-standard-costs-for-a-new-manufactured-item"></a>Uppdatera standardkostnader för en ny tillverkad artikel
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Det här avsnittet ger vägledning om hur du uppdaterar standardkostnader för en ny tillverkad artikel. 
 

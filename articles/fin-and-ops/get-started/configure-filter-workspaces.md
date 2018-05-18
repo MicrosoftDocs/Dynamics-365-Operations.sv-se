@@ -28,7 +28,7 @@ ms.lasthandoff: 11/03/2017
 
 # <a name="configure-and-filter-workspaces"></a>Konfigurera och filtrera arbetsytor
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Det här avsnittet innehåller en översikt över hur du konfigurerar och filtrerar arbetsytor.
 

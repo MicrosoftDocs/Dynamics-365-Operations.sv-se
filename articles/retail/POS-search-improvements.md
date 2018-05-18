@@ -28,7 +28,7 @@ ms.lasthandoff: 04/13/2018
 
 # <a name="overview-of-product-and-customer-search-in-point-of-sale"></a>Översikt över produkt- och kundsök i kassan
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Modern kassa (Modern Point Of Sale, eller MOPS) samt molnbaserad kassa (Cloud Point Of Sale, eller CPOS) ger en lättanvänd sökfunktion för att snabbt söka efter produkter och kunder. Eftersom sökfältet alltid finns överst i fönstrena MOPS och CPOS kan personalen snabbt söka produkter och kunder.
 
