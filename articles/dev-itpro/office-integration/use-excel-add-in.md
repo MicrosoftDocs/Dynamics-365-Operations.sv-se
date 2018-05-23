@@ -38,9 +38,6 @@ Genom att öppna enhetsdata i Excel kan du snabbt och enkelt visa, uppdatera och
 
 Om du vill veta mer om hur du använder Excel-tillägg, titta på den korta videon [Skapa en Excel-mall för rubriker och mönster i Dynamics 365 for Finance and Operations](https://youtu.be/RTicLb-6dbI).
 
-> [!Video https://www.youtube.com/embed/RTicLb-6dbI]
-
-
 ## <a name="open-entity-data-in-excel-when-you-start-from-finance-and-operations"></a>Öppna enhetsdata i Excel när du startar från Finance and Operations
 1. På en sida i Finance and Operations väljer du **Öppna i Microsoft Office**.
 
