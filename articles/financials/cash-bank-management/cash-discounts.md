@@ -19,25 +19,24 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 9960af8c4961a42e7e829077da40bcbbf3bc71c2
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 5ccf41d1184280d3c4a000db13847733fd2cf4d2
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="cash-discounts"></a>Kassarabatter
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Kassarabatter ställs in och delas för Leverantörsreskontra och Kundreskontra.  Den tillgängliga kassarabatten kan definieras på kundfakturan eller leverantörsfakturan och dras av om fakturan betalas innan kassarabattsdatumet har förfallit. 
 
-<a name="cash-discounts"></a>Kassarabatter
---------------
+## <a name="cash-discounts"></a>Kassarabatter
 
 Kassarabatter för både kunder eller leverantörer kan skapas på sidan Kassarabatter. Du kan också definiera, genom att använda fältet Nästa rabattkod, en serie kassarabatter som följer efter varandra när tidigare kassarabattdatum förfaller. Mer information finns i ”Exempel: Serie med kassarabatter” senare i det här avsnittet. Om fakturan, kredittransaktionen (antingen en betalning eller en kreditfaktura) eller båda anges i en annan valuta än redovisningsvalutan för den juridiska personen beräknas kassarabatten med hjälp av valutakursen för datumet för betalningen eller kreditfakturan. Om faktura- och kreditdokumentet anges i olika juridiska personer, och om redovisningsvalutorna förde juridiska personerna skiljer sig, hämtas valutakursen från den juridiska personen på fakturan, från datumet för kreditdokumentet. Mer information finns i ”Exempel: Valutakurser för kassarabatter” senare i det här avsnittet.
-Ange standardordning för kassarabatthuvudkontot
-----------------------------------------------
+
+## <a name="defaulting-order-of-cash-discount-main-account"></a>Ange standardordning för kassarabatthuvudkontot
 
 Om en faktura betalas i tid för en kassarabatt bokförs rabatten automatiskt på ett huvudkonto för kassarabatter enligt följande standardprioritet:
 1.  Huvudkontot som angetts i fältet Alternativt kassarabattskonto på sidan Kvitta öppna transaktioner för kunden eller på sidan Kvitta öppna transaktioner.
@@ -65,15 +64,7 @@ Din juridisk persons redovisningsvaluta är EUR och följande valutakurser anges
 
 En faktura på 1000 USD med villkor för kassarabatt på 20D2% bokförs den 15 februari. Fakturans belopp i redovisningsvalutan är 1 100 EUR. En betalning på 980 USD kvittas mot fakturan den 1 mars. Kassarabattbeloppet är 20 USD. Redovisningsvalutabeloppet för betalningen är 784 EUR. Redovisningsvalutabeloppet för kassarabatten beräknas med hjälp av valutakursen för den 1 mars 1: 20 \* 80 / 100 = 16 EUR.
 
-| **Obs!**                                                                                                                                                                                                                             |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Om alternativet Beräkna kassarabatter för delbetalningar har valt på sidan Parametrar för kundreskontra eller sidan Parametrar för leverantörsreskontra används valutakursen som gäller på datumet för varje delbetalning. |
-
- 
-=
-
- 
-
-
+> [!NOTE]
+> Om alternativet Beräkna kassarabatter för delbetalningar har valt på sidan Parametrar för kundreskontra eller sidan Parametrar för leverantörsreskontra används valutakursen som gäller på datumet för varje delbetalning. 
 
 

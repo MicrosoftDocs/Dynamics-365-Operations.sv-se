@@ -19,16 +19,16 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 0164d64b8c37c19a3b8b13970dbda5927073eca8
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: d1ee87dbe9dab089a893d9c69d2573a4c4b11b58
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="view-and-export-field-descriptions"></a>Visa och exportera fältbeskrivningar
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Den här artikeln innehåller en beskrivning av hur du visar fältbeskrivningar och hur du använder sidan Fältbeskrivningar vid export av beskrivningar.
 
@@ -97,7 +97,7 @@ Ställ in alternativet **Inkludera fält utan en beskrivning** på **Ja** om du 
 
 Information om olika sätt att hitta sidor hittar du i avsnittet "Söka efter sidor" tidigare i den här artikeln. Om du har skrivit in sidans exakta namn kan det hända att fältbeskrivningarna inte visas om det finns fler än en sida med samma namn. Klicka på pilen i fältet **Välj en sida** om du vill öppna en filtrerad lista över de sidor som är tillgängliga.
 
-<a name="see-also"></a>Se även
+<a name="additional-resources"></a>Ytterligare resurser
 --------
 
 [Hjälp för Anpassa fält](../../dev-itpro/user-interface/customize-field-help.md)

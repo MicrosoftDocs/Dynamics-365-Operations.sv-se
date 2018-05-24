@@ -19,16 +19,16 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 28037713a51a83f4b792adef8a26f02960fa6b07
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 93a7ed31dcad19a29a85352a2bf200915766036c
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="nonconformance-management"></a>Avvikelsehantering
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Det här avsnittet ger en beskrivning av grundläggande inställningar som krävs för att använda avvikelser. Ytterligare inställningar krävs om du vill använda kvalitetsorder.
 
@@ -47,7 +47,7 @@ Gör så här om du vill aktivera avvikelsehantering:
 6.  Definiera de relaterade operationer som ska tilldelas till avvikelser. Använd sidan **Åtgärder** för att definiera klassificeringen av det arbete som kan utföras vid en godkänd avvikelse. När en relaterad operation tilldelas till en avvikelse kan du definiera detaljerad information om material, arbetstid och tillägg som krävs för att operationen ska kunna genomföras. Den här informationen används för att beräkna en uppskattad kostnad för operationen. Den detaljerade informationen och de uppskattade kostnaderna anges i referenssyfte. Relaterade kvalitetsoperationer skiljer sig från de operationer som kan definieras för ett produktionsflöde.
 
 
-<a name="see-also"></a>Se även
+<a name="additional-resources"></a>Ytterligare resurser
 --------
 
 [Skapa och bearbeta en avvikelse (uppgiftsguide)](tasks/create-process-non-conformance.md)

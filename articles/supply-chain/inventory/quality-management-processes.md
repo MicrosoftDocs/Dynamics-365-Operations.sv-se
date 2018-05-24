@@ -19,16 +19,16 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 75508af6d6f746b56fc3df3b6b0d730f429161c5
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 18920dd3490b69e9668e2d023c5ca1cc094c8126
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="quality-management-processes"></a>Kvalitetshanteringsprocesser
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Det här avsnittet innehåller information om kvalitetshanteringprocessen för avvikande produkter. Det beskriver användning av kvalitetskontrollfunktionen, om att definiera och underhålla avvikelser och hantering av korrigeringar.
 
@@ -88,7 +88,7 @@ Sidan **Korrigeringar** gör det möjligt att skapa en lista över avvikelser so
 
 Det är en bra idé att definiera en unik dokumenttyp för avvikelser på sidan **Dokumenttyp**. Du kan sedan använda sidan **Rapportinställningar** för att definiera om kommentarer för denna dokumenttyp skrivs ut på korrigeringsrapporten. En utskriven korrigeringsrapport innehåller information om avvikelsen och tillhörande avvikelseanteckningar. Rapporten innehåller också information om korrigering, till exempel diagnostypen och relaterade korrigeringsanteckningar.
 
-<a name="see-also"></a>Se även
+<a name="additional-resources"></a>Ytterligare resurser
 --------
 
 [Aktivera kvalitetshantering](enable-quality-management.md)

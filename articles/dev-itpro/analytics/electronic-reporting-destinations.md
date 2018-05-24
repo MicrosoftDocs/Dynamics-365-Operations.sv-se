@@ -19,16 +19,16 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 5c92c1ca3f46d80a58ca315f1f695f082d1929ca
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: fb7d0dc8b3ff9e8f1e4ade5cacfeed8f1a6871ab
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="electronic-reporting-destinations"></a>Destinationer för elektronisk rapportering
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Du kan konfigurera en destination för varje elektronisk rapportering (ER) formatkonfiguration för elektronisk rapportering (ER) (en mapp eller en fil). Användare med rätt behörighet kan även ändra destinationsinställningarna vid körning. Den här artikeln innehåller en beskrivning av hur ER-destinationer, typer av destinationer som stöds och säkerhetsaspekter hanteras.
 
@@ -51,7 +51,8 @@ När du har skapat en referens kan du skapa en fildestination för varje mapp el
 
 [![Skapa en fildestination](./media/ger-destinations-1611-1024x586.jpg)](./media/ger-destinations-1611.jpg)
 
-> Obs! Du kan skapa en fildestination för varje utdatakomponent av samma format, såsom en mapp eller en fil som väljs i fältet **Filnamn**. Du kan sedan aktivera och inaktivera enskilda destinationer för fildestinationen i dialogrutan **Destinationsinställningar**. Knappen **Inställningar** används för att styra alla destinationer för en markerad fildestination. I dialogrutan **Destinationsinställningar** kan du styra varje destination separat genom att ställa inte alternativet **Aktiverad** för den.
+> [!NOTE] 
+> Du kan skapa en fildestination för varje utdatakomponent av samma format, såsom en mapp eller en fil som väljs i fältet **Filnamn**. Du kan sedan aktivera och inaktivera enskilda destinationer för fildestinationen i dialogrutan **Destinationsinställningar**. Knappen **Inställningar** används för att styra alla destinationer för en markerad fildestination. I dialogrutan **Destinationsinställningar** kan du styra varje destination separat genom att ställa inte alternativet **Aktiverad** för den.
 
 [![Dialogruta för destinationsinställningar](./media/ger-destinations-settings-1611-1024x589.jpg)](./media/ger-destinations-settings-1611.jpg)
 
@@ -130,7 +131,8 @@ Två typer av behörigheter och uppgifter används för ER-destinationer. En typ
 | PaymAccountsPayablePaymentsClerk    | Ansvarig för leverantörsreskontrabetalningar            | ERFormatDestinationRuntimeConfigure | Konfigurera formatmål för elektronisk rapportering under körning |
 | PaymAccountsReceivablePaymentsClerk | Ansvarig för kundreskontrabetalningar         | ERFormatDestinationRuntimeConfigure | Konfigurera formatmål för elektronisk rapportering under körning |
 
-> Obs! Två privilegier används i föregående programbehörigheter. De här privilegierna har samma namn som motsvarande uppgifter: **ERFormatDestinationConfigure** och **ERFormatDestinationRuntimeConfigure**.
+> [!NOTE]
+> Två privilegier används i föregående programbehörigheter. De här privilegierna har samma namn som motsvarande uppgifter: **ERFormatDestinationConfigure** och **ERFormatDestinationRuntimeConfigure**.
 
 ## <a name="frequently-asked-questions"></a>Vanliga frågor
 ### <a name="i-have-imported-electronic-configurations-and-i-see-them-on-the-electronic-reporting-configurations-page-but-why-dont-i-see-them-on-the-electronic-reporting-destinations-page"></a>Jag har importerat elektroniska konfigurationer och jag ser dem på sidan Konfigurationer för elektronisk rapportering. Varför ser jag dem då inte på sidan Destinationer för elektronisk rapportering?
@@ -153,7 +155,7 @@ Formeln är specifik för ER-konfigurationen. Till exempel, om du använder ISO 
 
 Förutsättningen är att formatet är tillgängligt i ER-konfigurationerna. Om du har ett format kan du öppna sidan **Destination för elektronisk rapportering** och skapa en ny referens till den här konfigurationen. Du måste ha fyra fildestinationer, ett för varje utdatakomponent. Skapa den första fildestinationen, ge den ett namn såsom **Mapp** och välj ett filnamn som representerar en mapp i din konfiguration. Klicka på **Inställningar** och se till att alla destinationer är inaktiverade. För den här fildestinationen kommer mappen inte att skapas. På grund av hierarkiska beroenden mellan filer och överordnade mappar kommer filerna som standard att uppföra sig på samma sätt. Med andra ord skickas de inte någonstans. Om du vill åsidosätta standardbeteendet måste du skapa tre fildestinationer till, en för varje fil. I destinationsinställningarna för varje destination måste du aktivera destinationen som filen ska skickas till.
 
-## <a name="see-also"></a>Se även
+## <a name="additional-resources"></a>Ytterligare resurser
 
 [Översikt över elektronisk rapportering](general-electronic-reporting.md)
 

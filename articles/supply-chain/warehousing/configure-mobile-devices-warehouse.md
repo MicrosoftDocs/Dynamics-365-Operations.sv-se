@@ -19,16 +19,16 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: e0033461e7cd2601993c006aba2ec7c8f6ac0c89
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: bb0d6af3a17653ea33e3f84a416bda244a27507c
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="set-up-mobile-devices-for-warehouse-work"></a>Konfigurera mobila enheter för lagerarbete
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Den här artikeln beskriver hur du konfigurerar menyalternativ som lagerarbetare använder för att utföra arbete på en mobil enhet.
 
@@ -407,10 +407,10 @@ I tabellen nedan beskrivs de olika arbetstyperna som du kan använda arbetsbekr�
 
 **Obs!** Det går bara att begäran produktbekräftelse för plock- och placeringsarbetstyper.
 
-<a name="see-also"></a>Se även
+<a name="additional-resources"></a>Ytterligare resurser
 --------
 
-[Visningsinställningar för mobil lagerställeenhet](change-warehouse-mobile-device-displays.md)
+[Visningsinställningar för mobil enhet på lagerställe](change-warehouse-mobile-device-displays.md)
 
 [Ställ in ett menyalternativ för mobila enheter för att utföra arbete av typen Inköpsorder (uppgiftsguide)](tasks/set-up-mobile-device-menu.md)
 

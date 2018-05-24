@@ -19,16 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 69766e1bf37955bfd4d7253c1b7881780d491d1c
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 683d3de59a427df296bb0d3d644f0ec23b3a8e5e
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="report-designer-interface"></a>Gränssnitt för Report Designer
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Den här artikeln innehåller en beskrivning av hur du navigerar på Report Designer och hur du använder de olika alternativen för att uppfylla dina krav. 
 
@@ -220,16 +220,16 @@ Verktygsfältet för rapportdesignern ger snabb åtkomst till kommandon navigeri
 | [![Knappen Kolumndefinition](./media/columnc130389.png)](./media/columnc130389.png)                 | Visa den kolumndefinition som har tilldelats den aktiva rapportdefinitionen.                                                                                                 |
 | [![Knappen Rapportträddefinition](./media/treec130389.png)](./media/treec130389.png)             | Visa den rapportträddefinition som har tilldelats den aktiva rapportdefinitionen.                                                                                         |
 | [![Knappen Report Viewer](./media/reportviewerc130389.png)](./media/reportviewerc130389.png)         | Starta Report Viewer och visa den senaste versionen av den skapade rapporten. Denna knapp är tillgänglig från en rapportdefinition, om du har genererat minst en rapport. |
-| [![Knappen Skapa rapport](./media/generate-to-ddvc130389.png)](./media/generate-to-ddvc130389.png) | Skapa en rapport från den aktiva rapportdefinitionen. Denna knapp är tillgänglig från en rapportdefinition.                                                                      |
+| [![Knappen Skapa rapport](./media/generate-to-ddvc130389.png)](./media/generate-to-ddvc130389.png) | Generera en rapport från den aktiva rapportdefinitionen. Den här knappen är tillgänglig från en rapportdefinition.                                                                      |
 
 
 
-<a name="see-also"></a>Se även
+<a name="additional-resources"></a>Ytterligare resurser
 --------
 
 [Ekonomisk rapportering](financial-reporting-intro.md)
 
-[Generera ekonomisk rapport](generate-financial-report.md)
+[Generera en ekonomisk rapport](generate-financial-report.md)
 
 
 

@@ -19,16 +19,16 @@ ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 1db68ea5728cc417f0e70675d9074d5b054883da
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 6df840de688975b9fa11b866361d88a730426bd0
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="price-simulation"></a>Prissimulering
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Det här avsnittet innehåller information om prissimulering för offerter. Prissimulering hjälper dig att utvärdera effekten av avdrag på det framtida försäljningspriset under offertprocessen innan du på fastställer ett specifikt pris.
 
@@ -36,7 +36,7 @@ En prissimulering för en offert visar ett nytt totalbelopp baserat på ett för
 
 En prissimulering ändrar inte priset i offerten. Om prissimuleringen används på en hel offert behandlas den som en särskild rabatt i offerthuvudet. Om prissimuleringen används på specifika artiklar behandlas den som en särskild rabatt på offertraderna. Enhetsförsäljningspriset på offertraden som skapas ändrar inte när en prissimulering används. I stället används en rabattprocent som motsvarar prisminskningen för offertraden. När en prissimulering används överförs enhetsförsäljningspriset och rabattprocenten till offertraden eller offerthuvudet.  
 
-**Obs!** När du kör en prissimulering används bara den aktuella försäljningsvalutan för att skapa simuleringen. Du kan emellertid visa en kombination av företagsvalutan och försäljningsvalutan när du visar offertsummorna.  
+>Obs! När du kör en prissimulering används bara den aktuella försäljningsvalutan för att skapa simuleringen. Du kan emellertid visa en kombination av företagsvalutan och försäljningsvalutan när du visar offertsummorna.  
 
 Fyllnadsartiklar som läggs till på offertrader kan utlösa radrabatter och flerradsrabatter. De kan också utlösa totala rabatter som ändrar täckningsbidraget och täckningsgraden på offertraderna och hela rabatten.  
 

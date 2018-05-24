@@ -8,7 +8,7 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
-ms.search.form: JmgProdStatusListPage, JmgShopSupervisorWorkspace, Kanban, ProdTable, ProdTableOverview
+ms.search.form: JmgShopSupervisorWorkspace, Kanban, ProdTable, ProdTableOverview, EcoResProductDiscreteManufacturingWorkspace, KanbanPrepareProductForLeanWorkspace, EcoResProductProcessManufacturingWorkspace, OpResLifecycleManagementWorkspace
 audience: Application User
 ms.reviewer: yuyus
 ms.search.scope: Core, Operations
@@ -20,16 +20,16 @@ ms.author: conradv
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 779b27574a9d6d7e7aa6b71f468ba3cff8d4085a
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 8a12627db93b131450015539bb92ea4780518ed3
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="production-process-overview"></a>Översikt över produktionsprocess
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Det här ämnet innehåller en översikt över produktionsprocesserna. Den beskriver de olika stegen i produktionsorder, batchorder och kanbans, från orderns skapande till stängningen av den ekonomiska perioden. 
 
@@ -78,7 +78,7 @@ Följande steg i tillverkningslivscykeln kan genereras för alla ordertyper av t
 12. **Stängning av period** - En del kostnadsredovisningprinciper som periodiskt genomsnitt, kostnadsredovisning med bakåtavräkning, FIFO eller LIFO, kräver periodiska aktiviteter för att stänga lagret eller den finansiella perioden. Vanligtvis försöker systemet att rapportera all material- och resursförbrukning och även korrigeringar av lagret och kassering innan perioderna stängs. Detta görs normalt genom att använda lagerrörelsejournaler, eller justering av journaler. Målet är att bedöma ekonomisk prestanda för driftenheter per period. I vissa fall används när avancerade produktionsorder används som sträcker sig över perioder för ekonomisk rapportering, används produktionsjournaler för att rapportera produktionsförlopp och resursförbrukning i slutet av perioden.
 
 
-<a name="see-also"></a>Se även
+<a name="additional-resources"></a>Ytterligare resurser
 --------
 
 [Produktionsåterrapportering](production-feedback.md)

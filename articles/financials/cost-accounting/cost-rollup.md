@@ -20,16 +20,16 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 044a943eeba91f5dbebd4dcd70bc8152c4109037
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 1150a63fe7c9d51c5fa83f4b0295cfdca7b998dc
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="cost-rollup-policy-and-overhead-calculation"></a>Policy för samlade kostnader och omkostnadsberäkning 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Kostnadsredovisning låter dig få en inblick i hur kostnadsflödet relaterar till produkter och tjänster som levereras inom en organisation. För att se kostnadstransparens är det viktigt att uppnå kostnadsfördelning mellan kostnadsobjekt utifrån en lämplig allokeringsbas. Kostnadsfördelning uppnås som standard för det primära kostndselementet vilket önskas i vissa situationer, men har några konsekvenser som du bör överväga.
 
@@ -297,7 +297,7 @@ Den tydliga avgränsningen mellan **kostnadsallokering** och **Policyer för sam
 
 
 
-## <a name="see-also"></a>Se även
+## <a name="additional-resources"></a>Ytterligare resurser
 -  [Kostnadsobjektdimensioner](cost-objects.md)
 -  [Dimensioner för kostnadselement](cost-elements.md)
 -  [Dimensionshierarkier](dimension-hierarchy.md)

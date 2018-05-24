@@ -20,16 +20,16 @@ ms.author: roxanad
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 6a620f2a0105d578d419d3aac816c7d78fbf3e46
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 3baf1d7313d8ff03ae5ece035b6f3641c0f1d707
 ms.contentlocale: sv-se
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="nomenclature-of-product-variant-numbers-and-names"></a>Terminologi för produktvariantnummer och namn
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Det här avsnittet beskriver hur du ställer in en produktnummerterminologi för att ersätta det fasta formatet [Produktmallsnummer - Konfiguration - Storlek - Färg - Stil]. Den nya terminologin har ett riktat format som innehåller produktmallsnummer, aktiva produktdimensioner och valfria textavgränsare. Du kan också skapa en terminologi för produktnamn. Slutligen kan du också skapa en terminologi för att identifiera konfigurationer som skapas av den begränsningsbaserade produktkonfiguratorn. Dessa nomenklaturer kan innehålla valfria attribut.
 
@@ -192,10 +192,10 @@ Beroende på terminologin kan systemet komma att försöka tilldela ett icke-uni
 
 Under ett steg under konfigurationsprocessen föreslår systemet ett konfigurationsvärde enligt terminologin. I detta steg kan du ändra konfigurationsvärdet manuellt. När du sparar konfigurationen kommer systemet att bekräfta att konfigurationsvärdet är unikt. Du får ett felmeddelande om värdet som du angett inte är unikt. Du måste ange ett unikt konfigurationsvärde för att spara konfigurationen.
 
-<a name="see-also"></a>Se även
+<a name="additional-resources"></a>Ytterligare resurser
 --------
 
-[Skapa en produktnummerterminologi för fördefinierade produktvarianter](tasks/create-product-number-nomenclature-predefined-variants-2016-11.md)
+[Skapa en produktnummernomenklatur för fördefinierade produktvarianter](tasks/create-product-number-nomenclature-predefined-variants-2016-11.md)
 
 [Skapa en produktnummerterminologi för konfigurerade produktvarianter](tasks/create-product-number-nomenclature-product-variants_2016_11.md)
 

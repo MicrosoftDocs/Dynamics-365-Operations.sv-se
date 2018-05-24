@@ -20,24 +20,22 @@ ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 23683ff3b232d485d0e4386963b3dcf37cd96c6f
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 62f59c857980932f4cf75d928deb0f89fae2f8eb
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="register-serial-numbers-in-the-sales-process"></a>Registrera serienummer i försäljningsprocessen
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-[!INCLUDE [retail name](../includes/retail-name.md)]
+[!include [retail name](../includes/retail-name.md)]
 
 Det här ämnet beskriver hur du kan registrera serienummer på följesedlar eller fakturor under försäljningsprocessen. Den här funktionen är användbar om ett företag vill hämta in serienummer för service- och garantiändamål men inte måste underhålla serienummer i lager från inleverans till utleverans.
 
 Många företag vill bara hämta in serienummer för uppfylla tjänste- och garantikrav och måste inte underhålla serienummer i lager från inleverans till utleverans. I dessa situationer kan Microsoft Dynamics 365 for Finance and Operations låta dig registrera serienumren på följesedlar eller fakturor när produkter säljs. Om produkter lämnas tillbaka senare kan du spåra varje produkt till en faktura för att avgöra om du har sålt produkten, och om service- eller garantiskyldigheterna gäller.
-Finns det några förutsättningar?
-----------------------------
 
 Du måste aktivera serienummer för försäljningsprocessen med alternativet **Aktiv i försäljningsprocess** på sidan **Spårningsdimensionsgrupper**. Följande händelser inträffar då i Microsoft Dynamics 365 for Finance and Operations:
 -   På snabbfliken **Serienummer** markeras alternativet **Serienummerkontroll**. Om det här alternativet är markerat, måste du registrera ett serienummer för varje artikel på följesedeln eller fakturan.
@@ -71,8 +69,8 @@ Nej, du kan inte visa de serialiserade artiklarna som du har i lager, eftersom s
 
 ## <a name="can-i-register-serial-numbers-for-catchweight-items"></a>Kan jag registrera serienummer för fångstviktartiklar?
 Nej, under en försäljningsprocess kan du inte registrera serienummer för fångstviktartiklar. Dessutom, om en produkt har ställts in som en fångstviktartikel, kan du inte tilldela produkten till en spårningsdimensionsgrupp som är inställd på att endast använda serienummer under försäljningsprocessen.
-Kan jag registrera serienummer i Kassa?
-------------------------------------------------
+
+## <a name="can-i-register-serial-numbers-at-the-retail-pos"></a>Kan jag registrera serienummer i Kassa?
 
 Ja, kassan kommer att uppmana användaren att ange ett serienummer, där användaren säljer en artikel som har tilldelats en spårningsdimensionsgrupp som har ställts in för att endast använda serienummer under försäljningsprocessen.
 

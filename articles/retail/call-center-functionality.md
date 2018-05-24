@@ -3,7 +3,7 @@ title: "Kundtjänstfunktioner"
 description: "Det här ämnet innehåller en översikt över funktionen för callcenterförsäljning i Microsoft Dynamics 365 for Retail."
 author: josaw1
 manager: AnnBe
-ms.date: 11/14/2017
+ms.date: 04/03/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -20,35 +20,43 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 52b3e2e78a03ac67507ee65a03e0884e5ed44678
-ms.openlocfilehash: 75dc09ffc84ef8ec48f50ea410974c99aabc212e
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: e85b65e116b32adca09e46252d7d3bbe5101e1cf
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
-# <a name="call-center-functionality"></a>Kundtjänstfunktioner
+# <a name="call-center"></a>Kundtjänst 
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
-Det här avsnittet innehåller en översikt över funktionen för callcenterförsäljning i Microsoft Dynamics 365 for Retail.
+I Dynamics 365 for Retail är kundtjänst en typ av butikskanal som kan definieras i programmet. Definiera en viss kanal för dina kundtjänstenheter låter systemet koppla specifika datastandarder och orderhantering är som standard försäljningsorder som har skapats av en användare av kundtjänst.
 
-Dynamics 365 for Retail stöder också kundtjänst som en typ av butikskanal. I kundtjänsten tar anställda emot beställningar från kunder per telefon och skapar försäljningsorder. Kundtjänst innehåller funktioner som gör det enklare att ta emot telefonbeställningar och hantera kundtjänst genom hela orderbehandlingsprocessen. Callcentermedarbetare kan registrera betalningsinformation direkt till försäljningsordern och visa en detaljerad sammanfattning över avgifter och betalningar innan de skickar ordern. Arbetstagarna har också alternativ för att styra prissättningen, och kan nå olika data om kunder, produkter och priser från **försäljning** . Dessutom callcenter har förbättrade funktioner för spårning av kundens historia och beställningsstatus. Varje kundtjänst kan ha sina egna användare, betalningsmetoder, prisgrupper, ekonomiska dimensioner och leveranssätt. Du kan konfigurera dessa alternativ, när du skapar kundtjänst. Du kan dessutom använda **Call center-** sidan för att aktivera eller inaktivera följande grupper av funktioner som är unika för call center:
+Kundtjänst omfattar avancerat butikspris och erbjudanden, kataloger, presentkort, bonusprogram och kuponger. Kundtjänstorder utnyttjas också av kassaprogrammet för att ge stöd för scenarier för orderuppfyllelse mellan kanaler.
 
--   **Orderns färdigdatum** – Denna grupp omfattar funktioner som är relaterade till betalningar och beställningen slutförs på **försäljningen** .
--   **Riktad försäljning** – Denna grupp omfattar funktioner som är relaterade till källkoder, manuskript, och katalog.
+Det är viktigt att komma ihåg att medan modulen för kundtjänst kan användas inom andra branscher utanför Retail, har den aktuella versionen av kundtjänstprogrammet för Dynamics 365 for Retail inte optimerats för användning i B2B-orderbehandlingsscenarier och scenarier där order har ett stort antal försäljningsrader. Vi rekommenderar att användare som vill använda kundtjänstfunktioner för orderhantering utanför normal transaktionsbearbetning direkt till konsument, ta tillräcklig tid för att testa och verifiera att kundtjänstfunktionerna uppfyller funktionella och prestandabehov.
 
-När du aktiverar funktionerna i call center-inställningarna, de finns på **Försäljningsorder** till användare som är associerade med call center. De flesta av dessa funktioner kräver ytterligare inställningar innan de kan användas. Innan användare kan skapa call center-order måste du lägga till användarna till call center som call center-användare. Det här steget gör att call center kanal-specifika konfigurationer och funktionalitet. Här är några exempel på funktioner som blir tillgängliga:
+Förutom att stödja skapande av order ger kundtjänstmodulen även ett användarvänligt kundtjänstprogram som gör det enklare för användare att hitta kundkonton och granska alla relaterade kundorderdata och attribut. Skärmen för kundtjänst har utformats så att användare snabbt får tillgång till orderrelaterade data för att besvara vanliga orderrelaterade frågor som tagits emot från kunder.
 
--   Guidad försäljning tillhandahåller konfigurationsalternativ för telefonförsäljning manuskript och bilder för att hjälpa och vägleda försäljning clerks medan de tar order.
--   Beställningar kan inte slutföras förrän försäljningen i butiken har fångat minst ett betalningssätt.
--   Merförsäljning och korsförsäljning av reglerna kan konfigureras att försäljningen i butiken för att främja särskilda produkter till kunden.
--   Försäljningen i butiken kan fånga källkoden för den katalog som en kund beställer från.
--   Försäljningen i butiken kan lägga till detaljhandlarens kuponger till ordern.
--   Försäljningen i butiken kan sälja förbindelse program.
--   Beställningar kan parkeras automatiskt eller manuellt, för att indikera att ytterligare utredning krävs innan den kan bearbetas.
+Den här sidan innehåller länkar till relevanta handlingar som är relaterade till installation, konfiguration och funktionell användning av kundtjänstfunktionerna i Dynamics 365 for Retail.
 
+## <a name="configure-the-call-center"></a>Konfigurera kundtjänst.
+[Ställ in alternativ för orderbearbetning](set-up-order-processing-options.md)
 
+## <a name="configure-order-processing"></a>Konfigurera orderbearbetning
+[Ställa in notifieringar för bedrägeri](set-up-fraud-alerts.md)
+[manuell orderspärr](work-with-order-holds.md)
 
+## <a name="configure-payment-processing"></a>Konfigurera betalningsbearbetning
+[Betalningsmetoder i ett kundcenter](work-with-payments.md)
+
+## <a name="configure-direct-marketing"></a>Konfigurera direkt marknadsföring
+[Kundtjänstkataloger](call-center-catalogs.md)
+
+[Ställa in RFM-analys](set-up-rfm-analysis.md)
+
+## <a name="configure-continuity-programs"></a>Konfigurera kontinuitetsprogram
+[Ställ in ett kontinuitetsprogram för en kundtjänst](set-up-continuity-program.md)
 
 

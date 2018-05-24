@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: 08cfd2cfa24bef0f0c92126f5d1052a12ceba37a
-ms.openlocfilehash: 854240bef9d6193c8f0f608687b68e6842fe272c
+ms.sourcegitcommit: ace66c037953f4b1b2e8b93a315faefdb090b1eb
+ms.openlocfilehash: 933d9755085d507310dd46d96a492d2124647ec3
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/11/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
@@ -230,7 +230,47 @@ Integrationen av arbetsorder kräver att du ställer in försäljningsursprunget
 6. Ange fältet **Typ av försäljningsursprung** till **Integration av arbetsorder**.
 7. Välj **Spara**.
 
-### <a name="template-mapping-in-data-integration"></a>Mallmappning i dataintegrering
 
-(Kommer snart)
+### <a name="setup-in-data-integration"></a>Konfigurera i dataintegration
+
+Kontrollera att **integreringsnyckel** finns i **msdyn_workorders**
+1. Gå till dataintegration
+2. Välj fliken **Anslutningsinställning**
+3. Välj anslutningsinställning som används för arbetsordersynkronisering
+4. Välj fliken **Integreringsnyckel**
+5. Söka efter msdyn_workorders och kontrollera att nyckeln **msdyn_name (ordernummer arbete)** läggs till. Om den inte visas lägger du till den genom att klicka på **Lägg till nyckel** och på **spara** längst upp på sidan
+
+## <a name="template-mapping-in-data-integration"></a>Mallmappning i dataintegrering
+
+I följande illustrationer visas en mallmappning i dataintegrering.
+
+### <a name="work-orders-to-sales-orders-field-service-to-fin-and-ops-workorderheader"></a>Arbetsorder till försäljningsorder (Field Service till Fin and Ops): WorkOrderHeader
+
+Filter: (msdyn_systemstatus ne 690970005) och (msdyn_systemstatus ne 690970000) och (msdynce_hasexternallymaintainedproductsonly eq true)
+
+[![Mallmappning i dataintegrering](./media/FSWorkOrder1.png )](./media/FSWorkOrder1.png)
+
+### <a name="work-orders-to-sales-orders-field-service-to-fin-and-ops-workorderservicelineestimate"></a>Arbetsorder till försäljningsorder (Field Service till Fin and Ops): WorkOrderServiceLineEstimate
+
+Filter: (msdynce_headersystemstatus ne 690970005) och (msdynce_headersystemstatus ne 690970000) och (msdynce_orderhasexternalmaintainedproductsonly eq true) och (msdyn_linestatus eq 690970000) och (msdynce_headersystemstatus ne 690970004)
+
+[![Mallmappning i dataintegrering](./media/FSWorkOrder2.png )](./media/FSWorkOrder2.png)
+
+### <a name="work-orders-to-sales-orders-field-service-to-fin-and-ops-workorderservicelineused"></a>Arbetsorder till försäljningsorder (Field Service till Fin and Ops): WorkOrderServiceLineUsed
+
+Filter: (msdynce_headersystemstatus ne 690970005) och (msdynce_headersystemstatus ne 690970000) och (msdynce_orderhasexternalmaintainedproductsonly eq true) och ((msdyn_linestatus eq 690970001) eller (msdynce_headersystemstatus eq 690970004))
+
+[![Mallmappning i dataintegrering](./media/FSWorkOrder3.png )](./media/FSWorkOrder3.png)
+
+### <a name="work-orders-to-sales-orders-field-service-to-fin-and-ops-workorderproductlineestimate"></a>Arbetsorder till försäljningsorder (Field Service till Fin and Ops): WorkOrderProductLineEstimate
+
+Filter: (msdynce_headersystemstatus ne 690970005) och (msdynce_headersystemstatus ne 690970000) och (msdynce_orderhasexternalmaintainedproductsonly eq true) och (msdyn_linestatus eq 690970000) och (msdynce_headersystemstatus ne 690970004) och (msdyn_allocated eq true)
+
+[![Mallmappning i dataintegrering](./media/FSWorkOrder4.png )](./media/FSWorkOrder4.png)
+
+### <a name="work-orders-to-sales-orders-field-service-to-fin-and-ops-workorderproductlineused"></a>Arbetsorder till försäljningsorder (Field Service till Fin and Ops): WorkOrderProductLineUsed
+
+Filter: (msdynce_headersystemstatus ne 690970005) och (msdynce_headersystemstatus ne 690970000) och (msdynce_orderhasexternalmaintainedproductsonly eq true) och ((msdyn_linestatus eq 690970001) eller (msdynce_headersystemstatus eq 690970004) eller (msdyn_allocated ne true))
+
+[![Mallmappning i dataintegrering](./media/FSWorkOrder5.png )](./media/FSWorkOrder5.png)
 

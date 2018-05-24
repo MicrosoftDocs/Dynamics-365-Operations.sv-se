@@ -19,16 +19,16 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f51fb41e19a47a9db02166de91b9e027154d6a7d
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: d667f2abbc7bd00d46f40178b9f6e9d21c6f79f3
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="procurement-catalogs"></a>Anskaffningskataloger
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Den här artikeln beskriver, på en hög nivå, hur professionella inköpare kan ställa in och underhålla anskaffningskataloger. Anskaffningskataloger definierar de artiklar och tjänster som anställda i företaget kan beställa för intern användning.
 
@@ -70,7 +70,7 @@ Uppdateringar publiceras automatiskt eller fylls i manuellt, beroende på det al
 -   **Båda** – Om katalogen som inkluderar produktkategorier har standarduppdateringtypen **Statisk** måste den uppdateras manuellt när dessa kategorier uppdateras. Om katalogen inkluderar produktkategorier har standarduppdateringstypen **Dynamiskt**, uppdateras den automatiskt när som helst den har ändrats.
 
 
-<a name="see-also"></a>Se även
+<a name="additional-resources"></a>Ytterligare resurser
 --------
 
 [Ställa in en kategorihierarki för anskaffning (uppgiftsguide)](tasks/set-up-procurement-category-hierarchy.md)

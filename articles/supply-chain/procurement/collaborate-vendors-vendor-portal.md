@@ -19,16 +19,16 @@ ms.author: mkirknel
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 25dd62081e4a6e196bffaa6cc72ff40ed68c736c
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 2fa152c5586a1122a109762780d23fd8c2240702
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="collaborate-with-vendors-by-using-the-vendor-portal"></a>Samarbeta med leverantörer med hjälp av leverantörsportalen
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Denna artikel beskriver hur inköpsagenter kan använda leverantörsportalen för samarbete med externa leverantörer under bekräftelseprocessen för inköpsorder. Denna information gäller endast Dynamics AX-versionerna från februari 2016 &amp; maj 2016.
 
@@ -96,7 +96,7 @@ Tabellen nedan visar ett exempel på förändringar i statusen och versionen som
 |                           Du skickar den nya versionen av IO:n till leverantörsportalen.                            |                                                                                                                                                                    Den nya versionen registreras på leverantörsportalen och statusen ändras till <strong>I extern granskning</strong>.                                                                                                                                                                     |
 |                                Leverantören godkänner den nya versionen av IO:n.                                 |                                                                                                                                                     Statusen ändras till <strong>Bekräftad</strong> antingen automatiskt eller när du får svar från leverantören och sedan bekräftar IO:n.                                                                                                                                                     |
 
-<a name="see-also"></a>Se även
+<a name="additional-resources"></a>Ytterligare resurser
 --------
 
 [Konfigurering av säkerhet för leverantörssamarbetesanvändare](configure-security-vendor-portal-users.md)

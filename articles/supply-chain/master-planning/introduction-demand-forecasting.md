@@ -20,16 +20,16 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 18ed011fa1c1aa35b4a401d51bffc6af19395577
-ms.openlocfilehash: 6a0455c5d86f953e270501a7f1648f7700f717d0
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 20eb67a341f462328bc73907fb3052b3405190d4
 ms.contentlocale: sv-se
-ms.lasthandoff: 02/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="demand-forecasting-overview"></a>Översikt för efterfrågeprognosticering
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Behovsprognoser används för att förutsäga oberoende efterfrågan från beställningar och beroende efterfrågan på någon frikoppling för kundorder. De förbättrade minskningsreglerna för efterfrågeprognosticering ger en perfekt lösning för massanpassning.
 
@@ -53,7 +53,7 @@ Tre stora teman genomförs i behovsprognoser:
     -   Du kan hämta Finance and Operations experiment för efterfrågeprognosticering , ändra dessa för att uppfylla dina affärsbehov, publicera dem som en webbtjänst på Azure och använda dem för att skapa efterfrågeprognoser. Experimenten är tillgängliga för nedladdning om du har köpt en Finance and Operations-prenumeration för en produktionsplanerare som användare på företagsnivå.
     -   Du kan hämta några av de för närvarande tillgängliga efterfrågan prediction experiment från [Cortana Analytics galleri](https://gallery.cortanaanalytics.com/). Medan experimenten för efterfrågeprognos i Finance and Operations automatiskt integreras med Finance and Operations, måste kunder och partner hantera integreringen av experiment som de hämtar från [Cortana Analytics-galleriet](https://gallery.cortanaanalytics.com/). Experiment från [Cortana Analytics-galleriet](https://gallery.cortanaanalytics.com/) kan därför inte användas lika enkelt som experimenten för efterfrågeprognosticering för Finance and Operations. Du måste modifiera koden för experimenten så att de använder programmeringsgränssnittet (API) för Finance and Operations-program.
     -   Du kan skapar dina egna experiment i Microsoft Azure maskinen lärande Studio, publicerar dem som tjänster på Azure, och använda dem för att skapa prognoser.
-    -   Om du inte kräver höga prestanda, eller om du inte kräver att en stor mängd data som bearbetas kan du använda den fria Machine Learning-nivån. Vi rekommenderar att du alltid börja från denna planet, särskilt under implementering och testning faser. Om du behöver högre prestanda och ytterligare lagringsutrymme kan du använda maskinen lärande standard nivå. Denna nivå kräver en prenumeration på Azure och innebär ytterligare kostnader. För mer information om maskinen lärande prissättning, se <Http://aka.ms/machine-learning-price-info>.
+    -   Om du inte kräver höga prestanda, eller om du inte kräver att en stor mängd data som bearbetas kan du använda den fria Machine Learning-nivån. Vi rekommenderar att du alltid börja från denna planet, särskilt under implementering och testning faser. Om du behöver högre prestanda och ytterligare lagringsutrymme kan du använda maskinen lärande standard nivå. Denna nivå kräver en prenumeration på Azure och innebär ytterligare kostnader. Mer information om prissättning för Machine Learning finns på <http://aka.ms/machine-learning-price-info>.
 -   **Prognostiserad minskning vid någon frikoppling** – Efterfrågeprognosticering i Finance and Operations bygger på denna funktion, som låter dig prognosticera såväl beroende som oberoende behov hos någon frikoppling.
 
 ## <a name="basic-flow-in-demand-forecasting"></a>Grundflöde i behovsprognoser
@@ -72,10 +72,10 @@ Du kan använda Finance and Operations för att visualisera och modifiera baslin
 ## <a name="limitations"></a>Begränsningar
 Efterfrågeprognosticering i Finance and Operations är ett verktyg som hjälper kunder inom tillverkningsindustrin att skapa prognosprocesser. Det erbjuder kärnfunktionen hos efterfrågeprognosticeringslösningen, och har utformats så att det enkelt kan utökas. Efterfrågeprognosticering är kanske inte det bästa valet för kunder inom exempelvis återförsäljning, grossist, lagring, transport eller andra professionella tjänster.
 
-<a name="see-also"></a>Se även
+<a name="additional-resources"></a>Ytterligare resurser
 --------
 
-[Inställningar för behovsprognosticering](demand-forecasting-setup.md)
+[Inställning av efterfrågeprognosticering](demand-forecasting-setup.md)
 
 [Generera en statistisk baslinjeprognos](generate-statistical-baseline-forecast.md)
 

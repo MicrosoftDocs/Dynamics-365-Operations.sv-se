@@ -19,16 +19,16 @@ ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 6d11e772cfbcd8ab7a0d4a08ccd71049723f9e32
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 338e58522f9b9fba3ce22b22488affbab24b1315
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="create-variable-compensation-plans"></a>Skapa planer för variabel kompensation
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Variabel kompensation utgör en medarbetares oregelbundna lön såsom bonusar och aktieutdelning. Det här avsnittet beskriver komponenterna som måste ställas in innan du kan använda variabel kompensation och anmäla en medarbetare i planen för variabel kompensation.
 
@@ -100,7 +100,7 @@ Du kan använda fliken **Åsidosättning** för att åsidosätta specifika värd
 
 **Åsidosättningar inom organisationen** används för att basera en medarbetares belöning på resultatet för en eller flera avdelningar. Den procentsats som ska fördelas på avdelningarna bör uppgå till 100 procent. Medarbetarens enskilda resultat beaktas också. Dessa inställningar används bara om **Resultatlön** har valts när kompensationsprocessen körs.
 
-<a name="see-also"></a>Se även
+<a name="additional-resources"></a>Ytterligare resurser
 --------
 
 [Kompensationsplaner](compensation-plans.md)
