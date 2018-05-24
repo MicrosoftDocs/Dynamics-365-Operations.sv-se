@@ -3,7 +3,7 @@ title: "Äldre funktioner"
 description: "I det här avsnittet beskrivs funktioner som har tagits bort, eller har planerats för borttagning."
 author: sericks007
 manager: AnnBe
-ms.date: 03/22/2018
+ms.date: 05/09/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: e629673c3a923ec74809e276ec39464bfacda124
+ms.sourcegitcommit: 88bbc54721f5da94dd811ef155e8d3bcf8c2b53c
+ms.openlocfilehash: c935b0c14f09b0a3a738266e4c9c577c96f0ea77
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/09/2018
 
 ---
 
@@ -78,13 +78,13 @@ Dessa två rapporter stöds inte längre i Finance and Operations. I stället ka
 | **Distribueringsalternativ**        | Allt|
 | **Status**                       | Inaktuell: Menyalternativen för de två rapporterna har tagits bort i version 7.3. Koden för rapporterna finns emellertid kvar i produkten Planen är att ta bort koden i framtida versioner. |
 
-### <a name="power-bi-content-packs-published-to-powerbicom"></a>Power BI innehållspaket publiceras på PowerBI.com
-Innehållspaketen **Kostnadshantering**, **Ekonomiska resultat**, och **Resultat för butikskanal** som publicerades på webbplatsen PowerBI.com är inaktuella till följd av produktuppdateringar i Microsoft Power BI. Systemadministrationformulär som brukade användas för att distribuera dessa innehållspaket till PowerBI.com används även i Finance and Operations.
+### <a name="power-bi-content-packs-available-on-appsource"></a>Power BI innehållspaket finns på AppSource
+Innehållspaketen **Kostnadshantering**, **Ekonomiska resultat** och **Resultat för butikskanal**  som publicerades på webbplatsen [Microsoft AppSource](https://appsource.microsoft.com), är inaktuella till följd av produktuppdateringar i Microsoft Power BI. Systemadministrationformulär som brukade användas för att distribuera dessa innehållspaket till PowerBI.com används även i Finance and Operations.
 
 |   |  |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Produktuppdateringar i Microsoft Power BI. |
-| **Ersatt av en annan funktion?**   | Power BI innehållspaket (publiceras på PowerBI.com) ersätts av analytiska program som gör det möjligt för lösningsintegrering på databasnivå. Läs mer om analytiska program i [Inbäddad Power BI i arbetsytor](../../dev-itpro/analytics/embed-power-bi-workspaces.md).    |
+| **Ersatt av en annan funktion?**   | Innehållspaketen **Kostnadshantering**, **Ekonomiska resultat**, och **Resultat för butikskanal** som finns på webbplatsen [AppSource](https://appsource.microsoft.com), ersätts med analytiska applikationer som möjliggör lösningsintegrering på databasnivå. Läs mer om analytiska program i [Inbäddad Power BI i arbetsytor](../../dev-itpro/analytics/embed-power-bi-workspaces.md).    |
 | **Produktområden som påverkas**         | Kostnadshantering, Ekonomi och Butik                                                                                               |
 | **Distribueringsalternativ**              | Endast molnet (integrering med PowerBI.com stöds inte i lokala distributioner.)                                                                                                            |
 | **Status**                         | Inaktuell: Måltidsramen för att ta bort funktioner är K2 2018.    |

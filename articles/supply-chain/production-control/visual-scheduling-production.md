@@ -20,16 +20,16 @@ ms.author: johanho
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: f7001158a498aa28028167a0f76ad610ec09b43c
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: c3726038d9782891988e16cb98cf04cf47b7e66c
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="gantt-chart-for-job-scheduling"></a>Gantt-diagram för jobbplanering
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Gantt-diagrammet har utformats för att tillåta produktionsplanerare att kontrollera och optimera produktionsplanen. Gantt-diagrammet gör arbetsflödet transparent och gör det enkelt att justera produktionsplanen med hänsyn tagen till brist på material eller resurser. På så vis kan planerare använda tillgängliga resurser på bästa sätt, minimera pågående arbete och optimera genomflödestiderna för produktionsorder.
 
@@ -156,7 +156,7 @@ Gantt-schemat kan öppnas från följande sidor:
 |           <strong>Jobb att slutföra</strong> (lista i arbetsytan <strong>Produktionsgolvsledning</strong>)            |                                                                                               Listan <strong>Jobb att slutföra i arbetsytan Produktionsgolvsledning</strong> visar jobb från produktions- och batchorder som pågår på de markerade resurserna på arbetsytan. Via menyalternativet <strong>Gantt-diagram</strong> kan du öppna ett Gantt-diagram där alla markerade jobb i listan läses in i diagrammet.                                                                                               |
 | <strong>Produktionsorder som ska frisläppas</strong> (öppnas från arbetsytan <strong>Produktionsgolvsledning</strong>) |                                                                                                                                         Sidan Produktionsorder som ska frisläppas öppnas från arbetsytan <strong>Produktionsgolvsledning</strong>. Den här sidan visar tidsplanerade produktions- och batchorder som väntar på att frisläppas. På den här sidan kan du öppna Gantt-diagrammet för valda produktionsorder.                                                                                                                                          |
 
-## <a name="see-also"></a>Se även  
+## <a name="additional-resources"></a>Ytterligare resurser  
 [Visuell schemaläggning med Gantt-schema för produktion och batch-order (Video)](https://youtu.be/BtbuShkGj4I)
 
 [Visuell planering för produktion (demo-skrift)](https://mbs.microsoft.com/customersource/northamerica/365Enterprise/learning/documentation/how-to-articles/365finoptvisschep)

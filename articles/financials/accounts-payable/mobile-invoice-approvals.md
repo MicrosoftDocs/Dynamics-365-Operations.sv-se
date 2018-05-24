@@ -18,16 +18,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: a44e5d04edf327da2b3ba4676c8b823291801abe
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: fc1483285d6ec675637c013af4949b9c7acf92b3
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="mobile-invoice-approvals"></a>Mobila fakturagodkännanden
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Med mobila funktioner i Microsoft Dynamics 365 for Finance and Operations kan en affärsanvändare skapa mobila upplevelser. För avancerade scenarier gör plattformen också att utvecklare kan utöka användningsområdena som de önskar. Det mest effektiva sättet att lära sig nya koncept på mobilen är att gå igenom processen att skapa några scenarier. Det här avsnittet är avsett att ge en praktisk metod för att skapa mobila scenarier genom att ta leverantörsfakturagodkännanden för mobila enheter som ett användningsfall. Det här avsnittet hjälper dig att skapa varianter på scenarier och kan även tillämpas på andra scenarier som inte är relaterade till leverantörsfakturor.
 
@@ -175,9 +175,9 @@ Använd sidan **VendMobileInvoiceHeaderDetails** i Finance and Operations när d
 1. I URL:en för Finance and Operations ersätter du namnet på menyalternativet med **VendMobileInvoiceHeaderDetails** för att öppna formuläret
 2. Öppna mobildesignern med knappen **Inställningar** (kugghjul).
 3. Klicka på knappen **Redigera** för att starta redigeringsläget i arbetsytan.
-4. Välj sidan <strong>Mina leverantörsfakturor **som du skapade tidigare och klicka sedan på **Redigera</strong>.
+4. Välj sidan **Mina leverantörsfakturor** som du skapade tidigare och klicka sedan på **Redigera**.
 5. På fliken **Fält** klickar du på kolumnrubriken **Rutnät**.
-6. Klicka på **Egenskaper** &gt; **Lägg till sida**. **Anmärkning:** När du klickar på rubriken **Rutnät** och lägger till en sida, etableras relationen med detaljsidan automatiskt.
+6. Klicka på **Egenskaper &gt;Lägg till sida**. **Anmärkning:** När du klickar på rubriken **Rutnät** och lägger till en sida, etableras relationen med detaljsidan automatiskt.
 7. Ange en sidrubrik, till exempel **Fakturadetaljer**, och en beskrivning, till exempel **Visa fakturahuvud och raddetaljer**.
 8. Klicka på **Välj fält**. Observera att den ordning som du lägger till i är den ordning i vilken fälten visas för slutanvändaren. Det enda sättet att ändra ordningen på fälten blir genom att välja alla fält igen. 
 9. Lägg till följande fält från huvudet, baserat på förutsättningarna för det här scenariot:

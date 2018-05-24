@@ -19,16 +19,16 @@ ms.author: saraschi
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: a61e743898e3e65c0012a7aeb9837e55e9143d01
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 8f78eb06930eab26d300fba6fd28333a5ce39cf8
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="175-percent-reducing-balance-depreciation"></a>175 procent degressiv avskrivning
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Det här ämnet ger en översikt över 175-procentsmetoden för degressiv avskrivning.
 
@@ -57,7 +57,7 @@ Om du väljer **Kalender** som avskrivningsår finns följande alternativ i fäl
 
 ### <a name="fiscal"></a>Skatt
 
-Om du väljer **Räkenskapsår** i fältet **Avskrivningsår**, beräknas 175 % degressiv avskrivning baserat på räkenskapsåret för räkenskapskalendern som angetts för boken, eller för den räkenskapskalender som har valts på sidan **Huvudbok**. Räkenskapskalendrar ställs in på sidan **Räkenskapskalendrar**. Mer information finns i [Räkenskapskalendrar, räkenskapsår och perioder](..\budgeting\fiscal-calendars-fiscal-years-periods.md)
+Om du väljer **Räkenskapsår** i fältet **Avskrivningsår**, beräknas 175 % degressiv avskrivning baserat på räkenskapsåret för räkenskapskalendern som angetts för boken, eller för den räkenskapskalender som har valts på sidan **Huvudbok**. Räkenskapskalendrar ställs in på sidan **Räkenskapskalendrar**. Mer information finns i [Räkenskapskalendrar, räkenskapsår och perioder](../budgeting/fiscal-calendars-fiscal-years-periods.md)
 
 För räkenskapsåret 1 juli - 30 juni startar alltså avskrivningsberäkningen den 1 juli. Räkenskapsåret kan vara längre eller kortare än 12 månader. Avskrivningen justeras automatiskt för varje period och längden på nästa räkenskapsår bestäms av perioderna som ställs in på sidan **Räkenskapskalendrar**. 
 

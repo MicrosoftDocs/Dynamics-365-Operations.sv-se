@@ -19,16 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 88570a8dc9da6f6a2b4d3a9499e1ea406f681451
-ms.openlocfilehash: 4608f43a3db9308881d4737e49df949190e3ede2
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 18ae41c3c1b19edc2d56a7e3480890c8aea28054
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/14/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="column-definitions-in-financial-reports"></a>Kolumndefinitioner i ekonomiska rapporter
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Den här artikeln innehåller information om kolumndefinitioner. En kolumndefinition är en rapportkomponent eller ett byggblock som definierar innehållet i kolumner i en rapport. Precis som raddefinitioner kan grundläggande kolumndefinitioner användas för flera rapporter.
 
@@ -583,7 +583,7 @@ Du kan skapa en kolumn som visar alla värden i en viss kolumn som en procentand
 
 Du kan dela beloppet i en kolumn med ett specifik antalet perioder. Till exempel delar formeln **B/Periods** värdet i kolumn B med antalet perioder i kolumn B. Om beräkningen omfattar flera kolumner, anger du antalet perioder som ska användas i beräkningen. Om du till exempel adderar formeln **(B+C)/Periods** beloppen i kolumn B och C kolumn och sedan delar resultatet med periodvärdet.
 
-<a name="see-also"></a>Se även
+<a name="additional-resources"></a>Ytterligare resurser
 --------
 
 [Rapportdefinitioner i ekonomiska rapporter](row-definitions-financial-reporting.md)

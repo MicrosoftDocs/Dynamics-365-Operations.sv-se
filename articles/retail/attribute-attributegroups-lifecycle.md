@@ -1,8 +1,9 @@
 ---
 title: Attribut och attributgrupper och deras associationer med olika butiksenheter i Finance and Operations
+description: "Det här avsnittet beskriver hur du använder attribut för att tillhandahålla ett sätt att beskriva en produkt och dess egenskaper med hjälp av anpassade fält."
 author: ashishmsft
 manager: AnnBe
-ms.date: 03/12/2018
+ms.date: 04/28/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -19,16 +20,16 @@ ms.author: asharchw
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: Application pdate 5, AX 8.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 53af4335146be6c163a6d84b60155e1a741c0be4
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 5e04b1f6ef58836eeac85be074e295e6d1f42c52
 ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="attributes-attribute-groups-and-their-associations-with-various-retail-entities-in-finance-and-operations"></a>Attribut och attributgrupper och deras associationer med olika butiksenheter i Finance and Operations
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 *Attribut* ger ett sätt att ytterligare beskriva en produkt och dess egenskaper med hjälp av anpassade fält (t.ex **minnesstorlek**, **hårddiskkapacitet**, **är Energy star-kompatibel**och så vidare). I Microsoft Dynamics 365 for Finance and Operations kan attribut förknippas med olika Retailsenheter, såsom produktkategorier och butikskanaler och standardvärden kan ställas in för dem. Produkter ärva deras attribut och värden för de attribut som när de är associerade med produktkategorier eller butik. Standardvärdena kan åsidosättas på den enskilda produkten, vid butik nivå eller i en återförsäljare katalog.
  

@@ -19,10 +19,10 @@ ms.author: mkirknel
 ms.search.validFrom: 2018-04-20
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: a56e6ea0a8470f205b1c74379c887c0cac85a6b4
-ms.openlocfilehash: c290bcd4787144fb4dd4232c06d2fb9e1e67ca3e
+ms.sourcegitcommit: ac7754bd6361ad74f7ab4d564ae3114dd4b9f165
+ms.openlocfilehash: caf801ea27ade63c24bb0907313e7f8294c50702
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 04/26/2018
 
 ---
 
@@ -59,7 +59,7 @@ Godkända produkter läggs till i produktmallen och frisläpps för de valda jur
 
 ## <a name="generate-a-catalog-import-file-template"></a>Skapa mall för katalogfil för import
 
-En filmall för katalogimport är en branschstandard-XSD-fil som du använder för att skapa en CMR-fil för en leverantörs produkter. Du kan använda CMR-filen om du vill skapa en ny katalog, ersätta en existerande katalog eller ändra en existerande katalog.
+En filmall för katalogimport är en XSD-fil som du använder för att skapa en CMR-fil för en leverantörs produkter. Du kan använda CMR-filen om du vill skapa en ny katalog, ersätta en existerande katalog eller ändra en existerande katalog.
 
 1.  Välj **Anskaffning och källa**\>**Kataloger**\>**Leverantörskataloger** och dubbelklicka på den katalog som du vill arbeta med.
 

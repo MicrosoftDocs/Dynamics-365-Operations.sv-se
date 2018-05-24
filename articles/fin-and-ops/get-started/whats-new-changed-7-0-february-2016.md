@@ -18,16 +18,16 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: ab12a55e41cd32c2479eb46796de57926652942f
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 3ba9025aa5394b29bdba80e589c77fa4bd2bd47f
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="whats-new-or-changed-in-dynamics-ax-70-february-2016"></a>Nyheter och ändringar i Microsoft Dynamics AX 7.0 (februari 2016)
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Den här artikeln innehåller en beskrivning av nya eller ändrade funktioner i Microsoft Dynamics AX 7.0. Den här versionen innehåller både plattform och programfunktioner och gavs ut i februari 2016.
 
@@ -536,7 +536,7 @@ Inga nya funktioner har lagts till.
 </tr>
 <tr class="odd">
 <td>(EU) Rapportera kvantitet i ytterligare enheter för Intrastat med hjälp av inställningen för enhetskonvertering.</td>
-<td>Intrastat-varukoden har ett textfält för att identifiera ytterligare enheter och kortet **Produkt** har ett fält för att identifiera antalet ytterligare enheter i kg.</td>
+<td>Intrastat-varukoden har ett textfält för att identifiera ytterligare enheter och kortet <strong>Produkt</strong> har ett fält för att identifiera antalet ytterligare enheter i kg.</td>
 <td>Ytterligare enheter för Intrastat-varukoden väljs i listan Enheter. Kvantiteten för ytterligare enheter beräknas genom inställningar för enhetskonverteringar.</td>
 <td>Detta förenar tillvägagångssätt för omräkning från enheter för transaktionen till ytterligare enheter.</td>
 </tr>
@@ -1081,7 +1081,7 @@ Inga nya funktioner har lagts till.
 
 
 
-<a name="see-also"></a>Se även
+<a name="additional-resources"></a>Ytterligare resurser
 --------
 
 [Vad är nya eller ändrade](whats-new-changed.md)

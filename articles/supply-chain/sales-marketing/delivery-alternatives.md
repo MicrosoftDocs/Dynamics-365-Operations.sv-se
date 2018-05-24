@@ -20,23 +20,23 @@ ms.author: crytt
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 58c083b2fa76e90d10ec8a197a4743a9e315db46
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 855fdd0e57a7001628b715038785379d5a986789
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="delivery-alternatives"></a>Leveransalternativ
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
-Försäljningsordertagare kan använda sidan Leveransalternativ för att upptäcka alternativa orderuppfyllelsealternativ.
+Försäljningsordertagare kan använda sidan **Leveransalternativ** för att upptäcka alternativa orderuppfyllelsealternativ.
 
-I Microsoft Dynamics 365 for Operations version 1611 (november 2016), kan försäljningsordertagare använda sidan **leveransalternativ** för att upptäcka alternativa orderuppfyllelsealternativ. Den nya sidlayouten ger en bättre översikt över alla alternativ. Den gör även att ordertagare kan leta utanför det det aktuella företaget för orderuppfyllelsemöjligheter. De kan nu visa både koncerninterna affärsmöjligheter och affärsmöjligheter från externa leverantörer. Genom sorteringsalternativ per leveransdatum, kan försäljningsordertagare visa en intelligent lista med leveransalternativ. Dessutom hjälper parametrar dem att bättre hantera föreslagna leveranser. Eftersom transporttiden kan påverka leveransdatum, kan försäljningsordertagare utforska de olika transportvalen som transportföretag erbjuder. Eftersom detaljerad information visas för varje förslag kan ordertagare fatta välgrundade beslut direkt från sidan **leveransalternativ**.
+Sidlayouten **Leveransalternativ** ger en bättre översikt över alla alternativ. Den gör även att ordertagare kan leta utanför det det aktuella företaget för orderuppfyllelsemöjligheter. De kan nu visa både koncerninterna affärsmöjligheter och affärsmöjligheter från externa leverantörer. Genom sorteringsalternativ per leveransdatum, kan försäljningsordertagare visa en intelligent lista med leveransalternativ. Dessutom hjälper parametrar dem att bättre hantera föreslagna leveranser. Eftersom transporttiden kan påverka leveransdatum, kan försäljningsordertagare utforska de olika transportvalen som transportföretag erbjuder. Eftersom detaljerad information visas för varje förslag kan ordertagare fatta välgrundade beslut direkt från sidan **leveransalternativ**.
 
 ## <a name="open-the-delivery-alternatives-page"></a>Öppna sidan leveransalternativ
-Du kan öppna sidan **leverans** **alternativ** från försäljningsorderraden.
+Du kan öppna sidan **Leveransalternativ** från försäljningsorderraden.
 
 1.  Klicka på **produkter och leverans** &gt; **leveransalternativ**.
 2.  Klicka på **raddetaljer** &gt; **leverans** &gt; **leveransalternativ.**
@@ -146,7 +146,7 @@ Information om denna flik som rör den valda leveransalternativraden. Följande 
 
 Den här fliken markerar effekten av valt alternativ. Om du klickar på **OK**, uppdateras försäljningsraden med de markerade värdena i markerade kolumner. Observera att, om kvantiteten på valt alternativ är mindre än kvantiteten på försäljningsraden har en leveransplan skapats och orderraden delas upp på två rader: en rad för den valda kvantiteten och en rad för den återstående kvantiteten. Du kan också uppdatera den kommersiella raden så att den matchar planens rader och påverkar priserna.
 
-<a name="see-also"></a>Se även
+<a name="additional-resources"></a>Ytterligare resurser
 --------
 
 [Orderlöfte](delivery-dates-available-promise-calculations.md)

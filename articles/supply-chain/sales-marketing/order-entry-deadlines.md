@@ -19,16 +19,16 @@ ms.author: omulvad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 31308e64d4871a4d09540df16fdcd02cc83bd0be
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 4f3905f364ea67eab226323fd3450ebed30e4735
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="order-entry-deadlines"></a>Deadlines för orderregistrering
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Den här artikeln innehåller information om deadlines för orderregistrering. En deadline för orderregistrering är en sluttid som bestämmer om en kundorder behandlas (och genomförs) som om det togs emot den aktuella dagen eller nästa dag.
 
@@ -103,7 +103,7 @@ Följande tabeller visar deadline för order för site A och B konverterat till 
 
 **Obs!** Om justering av sommartid gäller, kommer deadline för order att justeras i enlighet därmed.
 
-<a name="see-also"></a>Se även
+<a name="additional-resources"></a>Ytterligare resurser
 --------
 
 [Leveransplaner](delivery-schedules.md)

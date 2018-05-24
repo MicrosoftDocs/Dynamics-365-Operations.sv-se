@@ -20,16 +20,16 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: dbc195da36d31e01400fe66a1c02ea49609400eb
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 543a88a8df4252e5bf1b6b27b5209650c1ceca0b
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="make-manual-adjustments-to-the-baseline-forecast"></a>Gör manuella justeringar på baslinjeprognosen
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Detta ämne beskriver hur du kan göra manuella justeringar till en baslinje prognos och visa information om prognosen. 
 
@@ -76,10 +76,10 @@ Du kan öppna **Demand forecast sidan detaljer för** att se mer information om 
 
 Du kan också göra manuella justeringar av prognosen på **efterfrågan sidan detaljer** genom att ändra värdena i **prognosen** raden i **prognos** .
 
-<a name="see-also"></a>Se även
+<a name="additional-resources"></a>Ytterligare resurser
 --------
 
-[Övervaka prognosprecisionen](monitor-forecast-accuracy.md)
+[Övervaka prognosprecision](monitor-forecast-accuracy.md)
 
 [Generera en statistisk baslinjeprognos](generate-statistical-baseline-forecast.md)
 

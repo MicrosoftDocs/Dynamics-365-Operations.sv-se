@@ -18,15 +18,15 @@ ms.author: rschloma
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: b4b54e97bdebc158adc3bc6d57a6661cd536f5fb
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 343e372ad9e29372649e975a5bee16e8913b66c8
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 # <a name="provision-microsoft-dynamics-365-for-talent"></a>Reservera Microsoft Dynamics 365 for Talent
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 I det här avsnittet får du veta hur du skapar en ny produktionsmiljö för Microsoft Dynamics 365 for Talent. Det här avsnittet förutsätter att du har köpt Talent via en molnbaserad lösningsleverantör (CSP) eller ett arkitekturavtal för företag (EA). Om du har en befintlig Microsoft Dynamics 365-licens som redan innehåller tjänsteplanen for Talent och du inte kan utföra stegen i det här avsnittet, kontakta då supporten.
 
@@ -54,17 +54,18 @@ När du har skapat ett LCS-projekt kan du införa Talent i en miljö.
     > Om du vill visa befintliga miljöer eller skapa nya miljöer måste den innehavaradministratören som tillhandahåller Talent inneha en PowerApps P2-licens. Om din organisation inte har en licens för PowerApps P2 kan du skaffa en från din CSP eller [Prissättningssidan för PowerApps](https://powerapps.microsoft.com/en-us/pricing/).
 
 4. Välj **Lägg till** och välj sedan den miljö du vill etablera Talent i.
-5. Välj **Ja** för att acceptera villkoren och börja implementeringen.
+5. Markera alternativet ”Inkludera demodata" om du vill att din miljö med samma demodatauppsättning används i Talent testkörning.  Detta är praktiskt för långsiktig demonstrations- och utbildningsmiljöer och ska aldrig användas i produktionsmiljöer.  Observera att du måste välja det här alternativet vid den första implementeringen och det går inte att uppdatera en befintlig distribution senare.
+6. Välj **Ja** för att acceptera villkoren och börja implementeringen.
 
     Den nya miljön visas i listan över miljöer i navigeringsfönstret till vänster. Du kan emellertid inte börja att använda miljön förrän objektets implementeringsstatus uppdateras till **Implementera**. Den här processen tar normalt bara några minuter. Om försörjningprocessen misslyckas måste du kontakta Support.
 
-6. Välj **Logga in på Talent** för att använda den nya miljön.
+7. Välj **Logga in på Talent** för att använda den nya miljön.
 
 > [!NOTE]
 > Om du ännu inte har uppfyllt de slutgiltiga kraven kan du implementera en testinstans av Talent i projektet. Du kan sedan använda den här instansen för att testa din lösning tills du loggar ut. Om du använder den nya miljön för testning måste du upprepa denna procedur för att skapa en produktionsmiljö.
 
 > [!NOTE]
-> Miljöer som etableras i Talent genom LCS innehåller inte demodata som är konfigurerade för personaluppgifter (HR) eller som är specifika för Talent. Om du behöver en miljö som innehåller demodata rekommenderar vi att du registrerar dig för den kostnadsfria 60-dagars [utvärderingsmiljön för Talent](https://dynamics.microsoft.com/en-us/talent/overview/). Även om utvärderingsmiljön ägs av den användare som har begärt den, kan andra användare bjudas in via systemets administrationserfarenhet för personalfrågor. Utvärderingsmiljöer innehåller fiktiva data som kan användas för att utforska programmet på ett säkert sätt. De är inte avsedda att användas som produktionsmiljöer. Observera att alla data i miljön tas bort och kan inte återställas när utvärderingstiden upphör att gälla efter 60 dagar. Du kan registrera dig för en ny utvärderingsmiljö när den befintliga miljön har gått ut.
+> Eftersom bara två LCS-miljöer tillåts tillsammans med Talent-abonnemanget kan du även försöka utnyttja den kostnadsfria 60-dagars [utvärderingsmiljön för Talent](https://dynamics.microsoft.com/en-us/talent/overview/). Även om utvärderingsmiljön ägs av den användare som har begärt den, kan andra användare bjudas in via systemets administrationserfarenhet för personalfrågor. Utvärderingsmiljöer innehåller fiktiva data som kan användas för att utforska programmet på ett säkert sätt. De är inte avsedda att användas som produktionsmiljöer. Observera att alla data i miljön tas bort och kan inte återställas när utvärderingstiden upphör att gälla efter 60 dagar. Du kan registrera dig för en ny utvärderingsmiljö när den befintliga miljön har gått ut.
 
 ## <a name="select-a-powerapps-environment"></a>Välj en PowerApps-miljö
 
@@ -104,13 +105,15 @@ Slutför följande instruktioner för att köra skriptet:
 
 1. Hämta filen ProvisionCDSEnvironment.zip från följande plats: [ProvisionCDSEnvironment-skript](https://go.microsoft.com/fwlink/?linkid=870436)  
 
-2. Packa upp hela innehållet av filen ProvisionCDSEnviroinment.zip i en mapp.
+2. Från din hämtningsmapp högerklickar du på filen ProvisionCDSEnvironment.zip precis hämtade och markera **egenskaper**.  Om det finns ett säkerhetsmeddelande längst ned i dialogrutan som visar ”den här filen kommer från en annan dator och kan ha blockerats för att skydda datorn”, markera kryssrutan om du vill **Avblockera**, klicka på **Använd** och sedan **OK**.
 
-3. Kör programmet Windows PowerShell eller Windows PowerShell ISE som administratör.
+3. Packa upp hela innehållet av filen ProvisionCDSEnviroinment.zip i en annan mapp än din rotmapp.
 
-   Besök avsnittet [Ange körningspolicyn](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-6) om du vill veta mer om hur du anger körningspolicy så att skript ska kunna köras.
+4. Kör programmet Windows PowerShell eller Windows PowerShell ISE som administratör.
+
+   Besök avsnittet [Ange körningspolicyn](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-6) om du vill veta mer om hur du anger körningspolicy så att skript ska kunna köras. Vi föreslår att du använder följande ”Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process”, men kom ihåg att följa ditt företags säkerhetsprinciper och stäng PowerShell-fönstret när du är klar. 
   
-4. Navigera inom PowerShell till mappen där du packade upp filen och kör följande kommando och ersätt värden enligt anvisningarna nedan:
+5. Navigera inom PowerShell till mappen där du packade upp filen och kör följande kommando och ersätt värden enligt anvisningarna nedan:
  
    ```.\ProvisionCDSEnvironment -EnvironmentName MyNewEnvironment -Location YourLocation```
 
@@ -121,18 +124,10 @@ Slutför följande instruktioner för att köra skriptet:
 
    **– Utförligt** är valfri och ger detaljerad information för att skicka till support om det uppstår problem.
 
-5. Fortsätt försörjningsprocessen.
+6. Fortsätt försörjningsprocessen.
  
 
-
 ## <a name="grant-access-to-the-environment"></a>Bevilja åtkomst till miljön.
-Som standard har den globala administratör som skapade miljön åtkomst till den. Ytterligare användare måste beviljas explicit åtkomst. För att bevilja åtkomst lägger du [till användare](../dev-itpro/sysadmin/tasks/create-new-users.md) och [tilldela dem lämpliga roller](../dev-itpro/sysadmin/tasks/assign-users-security-roles.md) i bas-miljön för HR. Du måste också lägga till dessa användare i PowerApps-miljön så att de kan komma åt Attract- och Onboard-program. Proceduren beskrivs här. Om du behöver hjälp att slutföra stegen läs [introduktion till PowerApps administratörscenter ](https://powerapps.microsoft.com/en-us/blog/introducing-admin-center-for-powerapps/), som är ett blogginlägg.
+Som standard har den globala administratör som skapade miljön åtkomst till den. Ytterligare användare måste beviljas explicit åtkomst. För att bevilja åtkomst lägger du [till användare](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) och [tilldela dem lämpliga roller](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles) i bas-miljön för HR. Global administratör som har distribuerat Talent måste också starta både Attract- och Onboard-programmen för att slutföra initieringen och aktivera åtkomst för andra innehavare.  Tills detta inträffar kan andra användare inte komma åt Onboard- och Attract-programmen och får åtkomstfel.
 
-Den här proceduren slutförs av den globala administratören som distribuerat Talent-miljön.
-
-1. Öppna [PowerApps Admin center](https://preview.admin.powerapps.com/environments).
-2. Markera de relevanta miljöerna.
-3. Tilldela berörda användare rollen **Environment Maker** i fliken **Säkerhet**.
-
-    Observera att det sista steget, där du manuellt lägger till användare i en PowerApps-miljö är tillfälligt. Så småningom infogas det automatiskt när du lägger till användare i basprogrammet för personal (Core HR).
 

@@ -1,6 +1,6 @@
 ---
 title: "Skapa leverantörsbetalningar med ett betalningsförslag"
-description: "Detta avsnitt ger en översikt över alternativen för betalningsförslag och inkluderar några exempel som visar hur betalningsförslag fungerar. Betalningsförslag används ofta för att skapa leverantörsbetalningar eftersom frågan kan användas för att snabbt välja leverantörsfakturor för betalning, baserat på kriterier som förfallodatum och kassarabatt."
+description: "Detta avsnitt ger en översikt över alternativen för betalningsförslag och inkluderar några exempel som visar hur betalningsförslag fungerar."
 author: ShivamPandey-msft
 manager: AnnBe
 ms.date: 04/04/2018
@@ -19,16 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 1199329f7d669a291249e22e393842673a8907c3
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 5afdace14d1db4b36027634b3af3df1029ae12a2
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="create-vendor-payments-by-using-a-payment-proposal"></a>Skapa leverantörsbetalningar med ett betalningsförslag
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Detta avsnitt ger en översikt över alternativen för betalningsförslag och inkluderar några exempel som visar hur betalningsförslag fungerar. Betalningsförslag används ofta för att skapa leverantörsbetalningar eftersom frågan kan användas för att snabbt välja leverantörsfakturor för betalning, baserat på kriterier som förfallodatum och kassarabatt. 
 
@@ -47,7 +47,7 @@ Betalningsförslagfrågan innehåller olika flikar, som var och en har olika alt
 - **Kontrollera leverantörssaldo** – Om det här alternativet anges till **Ja**, kontrollerar systemet att ingen leverantör har ett debetsaldo innan någon faktura betalas. Om en leverantör har ett debetsaldo, skapas ingen betalning. Leverantören kan till exempel ha kreditnotor och betalningar som har bokförts men ännu inte har betalats. I så fall bör inte leverantören betalas. Istället ska kreditnotor eller betalningarna kvittas mot de utestående fakturorna.
 - **Radera negativa betalningar** - Detta alternativ fungerar annorlunda beroende på om betalningar görs för enskilda fakturor eller för summan av fakturor som uppfyller betalningsvillkoren. Detta beteende har definierats på betalningsmetoden.
 - **Betalning för varje faktura** – Om alternativet **Radera negativa betalningar** anges till **Ja**, och en oreglerade faktura och betalning finns för en leverantör, kommer endast fakturan att väljas för betalning. Den befintliga betalningen kvittas inte mot fakturan. Om alternativet **Radera negativa betalningar** anges till **Nej**, och en faktura och en betalning inte kvittas, kommer både betalningen och fakturan att väljas för betalning. En betalning skapas för betalningen, och en återbetalning (negativ betalning) skapas för betalningen.
-- <strong>Betalning för totala antalet fakturor</strong> – Om alternativet <strong>Radera negativa betalningar</strong> anges till <strong>Ja</strong>, och en oreglerad faktura och betalning finns för en leverantör, väljs både den oreglerade betalningen och fakturan för betalning och beloppet anges till tillsammans för att producera det totala betalningsbeloppet. Det enda undantaget förekommer, om summan leder till en återbetalning. I det här fallet varken fakturan eller betalningen har valts. Om alternativet <strong>Radera negativa betalningar ** är inställt på **Nej</strong> och en oreglerad faktura och betalning inte kvittas, väljs både betalningen och fakturan för betalning och beloppen anges till tillsammans för att producera det totala betalningsbeloppet.
+- **Betalning för totala antalet fakturor** – Om alternativet **Radera negativa betalningar** anges till **Ja**, och en oreglerad faktura och betalning finns för en leverantör, väljs både den oreglerade betalningen och fakturan för betalning och beloppet anges till tillsammans för att producera det totala betalningsbeloppet. Det enda undantaget förekommer, om summan leder till en återbetalning. I det här fallet varken fakturan eller betalningen har valts. Om alternativet **Radera negativa betalningar** anges till **No**, och en oreglerad faktura och betalning inte kvittas, väljs både betalningen och fakturan för betalning och beloppen anges till tillsammans för att producera det totala betalningsbeloppet.
 - **Skriv endast ut rapport** Ange det här alternativet till **Ja** för att se resultaten av betalningsförslaget i en rapport, men, utan att skapa eventuella betalningar.
 - **Inkludera leverantörsfakturor från andra juridiska personer** - Om din organisation har en centraliserad process för betalning, och betalningsförslaget skulle innehålla fakturor från andra juridiska personer som inkluderas i sökkriteriet, anger du detta alternativ till **Ja**.
 - **Föreslå leverantörsbetalning per separat juridisk person** – Om det här alternativet anges till **Ja**, skapas en separat betalning för varje juridisk person per leverantör. Leverantören för betalningen är leverantören från fakturan från varje juridisk person. Om det här alternativet anges till **Nej**, och en leverantör har fakturor som ska betalas i flera juridiska personer skapas en betalning för det totala beloppet på de markerade fakturorna. Leverantören för betalningen är leverantören i den aktuella juridiska personen. Om leverantörskontot inte finns i den aktuella juridiska personen används leverantörskontot för den första fakturan som måste betalas.
@@ -115,7 +115,8 @@ Med dimensionskontroll kan du kontrollera grupperingen av genererade rader efter
 -   Fältet **Dimensions control** aktiveras utan att ytterligare definiera dimensionerna. Betalningsförslaget skapas utan att ta hänsyn till dimensioner. Den skapade transaktionen ärver inga dimensioner från den använda posten.
 -   Fältet **Dimensionskontroll** aktiveras och ytterligare dimensioner aktiveras. Nu kan du definiera hur dimensionerna ska kopieras till journalen. Till exempel: • Välj kryssrutan **BusinessUnit** kryssrutan om du vill skapa ett betalningsförslag per affärsenhet för betalningsmetoden • Välj kryssrutan **CostCenter** för att skapa ett betalningsförslag per kostnadsställe för betalningsmetoden
 
-**Obs!** Om du väljer fler än en dimension i det tredje alternativet skapas ett betalningsförslag för dimensionskombinationen.
+> [[!NOTE]
+> Om du väljer fler än en dimension i det tredje alternativet skapas ett betalningsförslag för dimensionskombinationen.
 
 #### <a name="bank-account-selection"></a>Val av bankkonto
 

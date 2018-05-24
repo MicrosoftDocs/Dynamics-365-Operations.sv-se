@@ -19,16 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 3131173e10ff7eefeaca18285054ce2312d7ab57
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 23b8e0b51f63ecabc704a2fc5b3ebafe657b52f6
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="modify-row-definition-cells"></a>Ändra raddefinitionceller
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Den här artikeln innehåller en beskrivning av den information som krävs för varje cell i en raddefinition för en ekonomisk rapport och av hur du anger den informationen. 
 
@@ -488,10 +488,10 @@ En dimensionsvärdeuppsättning är en namngiven grupp av dimensionsvärden. En 
 1.  Öppna rad-, kolumn- eller träddefinitionen som ska ändras i Report Designer.
 2.  På menyn **Redigera** klickar du opå **Hantera dimensionsvärdeuppsättningar**.
 3.  Välj diaglogrutan **Hantera dimensionsvärdeuppsättningar** och välj dimensionstyp i fältet **Dimension**.
-4.  Välj de uppsättning som ska tas bort och klicka sedan på **Ta bort**. Klicka på **Ja** om du vill ta bort dimensionsvärdeuppsättningen permanent.
+4.  Markera den grupp som ska raderas och klicka på **Ta bort**. Klicka på **Ja** om du vill ta bort dimensionsvärdemängden permanent.
 
 
-## <a name="see-also"></a>Se även
+## <a name="additional-resources"></a>Ytterligare resurser
 
 [Ekonomisk rapportering](financial-reporting-intro.md)
 

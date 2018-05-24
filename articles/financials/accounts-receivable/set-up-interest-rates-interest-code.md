@@ -19,16 +19,16 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: c0e80bae4716d2b12f515f38d3b641de24680571
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 1c19cb68df5be5245722da43f3ef9c2072873a34
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="set-up-interest-rates-for-an-interest-code"></a>Ställa in räntesatser för en räntekod
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Räntekoder innehåller inställningar som bestämmer när ränta debiteras och hur den beräknas på förfallna konton.
 
@@ -56,7 +56,7 @@ Om du till exempel vill ställa in en räntekod som värderas med 5 procent rän
 Du kan ställa in räntesatser för att beräkna ett angivet belopp per valuta.
 - Ett räntebelopp anges för varje valuta i räntekoden.
 - Valfria räntebeloppsgränser kan anges.
-- <strong>Belopp **väljs i fältet **Beräkna ränta baserat på</strong> på sidan <strong>Ställ in räntekoder</strong>.
+- **Belopp** väljs i fältet **Beräkna ränta baserat på** på sidan **Ställ in räntekoder**.
 
 Om du till exempel vill ställa in en räntekod som värderas med 25,00 ränta för varje 20-dagarsperiod som överskrider fakturans förfallodatum för transaktionen, ska du ange 20 i fältet **Beräkna ränta var** och välj **Dag**.
 

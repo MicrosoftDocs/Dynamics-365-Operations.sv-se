@@ -33,8 +33,6 @@ I plattformsuppdatering 14 stöder Microsoft Dynamics 365 for Finance and Operat
 
 Om du vill veta mer om inbäddning av PowerApps kan du titta på den korta videon [Så här bäddar du in PowerApps i Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=x3qyA1bH-NY).
 
-> [!Video https://www.youtube.com/embed/x3qyA1bH-NY]
-
 ## <a name="adding-an-embedded-powerapp-to-a-page"></a>Lägger till en inbäddad PowerApp på en sida
 ### <a name="overview"></a>Översikt
 När du infogar en PowerApp till Finance and Operations-klienten måste du först hitta eller skapa en PowerApp med önskade bilder och/eller funktioner. Vi kommer inte att beskriva den detaljerade processen för att bygga en PowerApp här. Ämnet [Introduktion till PowerApps](https://docs.microsoft.com/en-us/powerapps/getting-started) är en bra utgångspunkt om du inte har använt PowerApps förut.

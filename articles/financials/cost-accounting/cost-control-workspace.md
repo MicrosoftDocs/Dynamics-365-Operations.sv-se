@@ -20,16 +20,16 @@ ms.author: yuyus
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 7cc6ba50b8df54eadc9a23990a58d1d37365cb6a
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 934ab83d45aad32c067e8422c5415d4a0a6481b4
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="cost-control-overview"></a>Kostnadskontrollöversikt 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Arbetsytan **Kostnadskontroll** är en central plats där chefer, som ansvarar för kontroll av ett kostnadsobjekt eller en uppsättning kostnadsobjekt i en dimension eller i flera dimensioner (t.ex. kostnadscenter och produktgrupper) har åtkomst till rapporter. Rapporterna i arbetsytan hanteras helt av kostnadsrevisorer, så att den layout och data som används för rapportering kan vara konsekvent över hela organisationen.
 
@@ -154,7 +154,7 @@ I följande exempel är allokeringsunderlaget av typen **Formelallokeringsunderl
 
 ![Beräkningar per kostnadsobjekt](./media/cost-entries-allocation-base.png)
 
-Se även 
+Ytterligare resurser 
 
 [Definiera åtkomsträttigheter för kostnadsobjektcontroller](access-rights-cost-object-controller.md)
 

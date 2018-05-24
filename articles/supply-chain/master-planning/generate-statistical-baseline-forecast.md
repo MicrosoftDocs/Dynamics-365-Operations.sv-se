@@ -20,16 +20,16 @@ ms.author: roxanad
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: c71d7632cfdafe48eee49c848982dfa85116df75
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 42ea3a6cf85802fc42c53111d17afbce042a6d44
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="generate-a-statistical-baseline-forecast"></a>Generera en statistisk baslinjeprognos
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Den här artikeln innehåller information om parametrar och filter som används i beräkningen av behovsprognoser. 
 
@@ -64,10 +64,10 @@ Den företagsinterna planering grupp, objekt fördelningsnycklar, och andra kan 
 
 Om prognosen inte skapas för en stor grupp objekt, utan (till exempel) för en enda artikel eller en artikelallokeringsnyckel åt gången, kan du markera kryssrutan **Använd svarsläge för begäran** på fliken **Huvudplanering - Inställningar - Efterfrågeprognosticering** - **Parametrar för efterfrågeprognosticering** för att få en bättre prestanda.
 
-<a name="see-also"></a>Se även
+<a name="additional-resources"></a>Ytterligare resurser
 --------
 
-[Inställningar för efterfrågeprognosticering](demand-forecasting-setup.md)
+[Inställning av efterfrågeprognosticering](demand-forecasting-setup.md)
 
 [Gör manuella justeringar till den ursprungliga prognosen](manual-adjustments-baseline-forecast.md)
 

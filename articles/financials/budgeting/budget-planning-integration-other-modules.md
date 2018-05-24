@@ -19,16 +19,16 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 6db51f9fa180f0b8ce203fd2812c562b0201afa8
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 4a18190152b6e5ea520a81f1db2cf67ded652bbe
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="budget-planning-integration-with-other-modules"></a>Integrering av budgetplanering med andra moduler
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
  Budgetplaner kan skapas från flera olika resurser. De grundläggande elementen i den återkommande process är samma för alla resurser. 
 
@@ -68,7 +68,7 @@ Det **historiska** alternativet på **fliken Mål** låter dig använda datum fr
 
 Den **sammanlagda genom** fältet överst på sidan bestämmer också datum som används. Det här fältet summa belopp och eventuellt sätter datumet till den första dagen i räkenskapsåret eller fiskal period. 
 
-Många av fälten på <strong>fliken mål</strong> blir redigerbart eller skrivskyddat, beroende på vilken åtgärd du väljer. När du ändrar från att skapa en ny budget planerar att uppdatera en befintlig plan, <strong>Budget plan namn</strong> blir otillgänglig och de fält som är relaterade till att välja en befintlig plan blir tillgängliga. På både fliken <strong>Mål</strong>och fliken <strong>Källa ** är föltet **Huvudbok</strong> alltid otillgänglig, eftersom värdet bestäms av den valda budgetplaneringsprocessen. 
+Många av fälten på <strong>fliken mål</strong> blir redigerbart eller skrivskyddat, beroende på vilken åtgärd du väljer. När du ändrar från att skapa en ny budget planerar att uppdatera en befintlig plan, **Budget plan namn** blir otillgänglig och de fält som är relaterade till att välja en befintlig plan blir tillgängliga. På både **mål** och **källa**, fliken **reskontra** är alltid tillgänglig, eftersom värdet bestäms av det valda budgetplanering. 
 
 **Budgeten klass** låter dig ställa in budget plan rader som antingen utgiftstransaktioner inkomster eller transaktioner. Vanligen intäkt transaktioner är krediter till ett reskontrakonto och därför lagras som negativa belopp. Vanligen används dessa transaktioner visas även som negativa belopp i budgeten. Men genom att lägga budgeten klass som ett fält i planen layout kan du aktivera intäkt visas som positiva belopp.
 

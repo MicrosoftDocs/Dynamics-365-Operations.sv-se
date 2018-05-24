@@ -19,16 +19,16 @@ ms.author: perlynne
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: b16f4ea27f406f3d5d5957670bd32a73d2d55529
-ms.openlocfilehash: bb616f8102c67db3f8c3e872101d61657b6b64d1
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: a1413337888c8e2da95e33ebee6528f228ad3972
 ms.contentlocale: sv-se
-ms.lasthandoff: 02/05/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="warehouse-mobile-device-display-settings"></a>Visningsinställningar för mobil lagerställeenhet
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 I det här avsnittet beskrivs hur du ställer in utseendet på skärmen på en mobil enhet och hur du mappar kortkommandon till kontroller såsom knappar. 
 
@@ -89,7 +89,7 @@ För att välja färg, **välj färg** , klicka i paletten eller typ en hexadeci
 ## <a name="define-the-date-format-to-use-on-mobile-devices"></a>Definiera det datumformat som ska användas i mobila enheter
 Du kan även utöka listan över godkända datumformat för varje installationen. Denna funktion kan vara användbar om du t.ex. vill ge ett format som gör det lättare för en arbetstagare att ange datum på en mobil enhet. Standardformat bestäms av användarens språk, som anges i fältet **språk** på sidan **Användaralternativ**. (Samma sida används också för att koppla en medarbetare till en specifik lagerarbetare.) **Obs!** Lagerställets portal för mobila enheter använder inte inställningen för fältet **Format för datum/tid och nummer** på sidan **Inställningar för språk och region**. Om du vill ändra datumformat, du måste vara bekant med regelbundna uttryck i den Microsoft .NET ramen. För mer information, se [.NET Framework regelbundna uttryck](http://go.microsoft.com/fwlink/?LinkId=391260). För att definiera datumformat, redigera filen datum.ini som finns på Innehåll\\Inställningar\\Dates.ini på portalservern för lagerställets mobila enheter. Denna fil använder .NET reguljära uttryck för att ange datumformat. Den regelbundna uttryck måste innehålla deluttryck att skapa namngivna grupper för dag, månad och år (ddmmåå), vilket visas i följande exempel:
 
-^(?&lt;dag&gt;\\d{2})(?&lt;månad&gt;\\d{2})(?&lt;år&gt;\\d{2})$
+^(? &lt;dag&gt;\\d{2})(?&lt;månad&gt;\\d{2})(?&lt;år&gt;\\d{2}) $
 
 Varje deluttrycket kräver en till två siffror för månad och dag, och en till fyra siffror för året. I följande exempel deluttrycket definierar en namngiven grupp under ett år, och kräver ett minimum av två siffror eller högst fyra siffror:
 
@@ -97,7 +97,7 @@ Varje deluttrycket kräver en till två siffror för månad och dag, och en till
 
 Du kan ange mer än ett uttryck i samma fil. Varje uttryck måste vara på en separat rad. Det första uttrycket som matchas används för att parsa datum.
 
-<a name="see-also"></a>Se även
+<a name="additional-resources"></a>Ytterligare resurser
 --------
 
 [Konfiguration av mobila enheter för lagerarbete](configure-mobile-devices-warehouse.md)

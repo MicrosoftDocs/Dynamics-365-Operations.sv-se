@@ -20,16 +20,16 @@ ms.author: crytt
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 81dec9d988b22959df5421b7b84ef532a28e1228
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 660d6b2dfb5fbed58a5c28b77aac3bb4604c7d8d
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="operations-scheduling"></a>Grovplanering
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Det här avsnittet innehåller information om grovplanering. Du kan använda grovplaneringen för att ange en allmän uppskattning av produktionsprocessen över en viss tid.
 
@@ -75,7 +75,7 @@ När du kör grovplanering kan du avbryta specifika delar av rutten. Dessa inklu
 ## <a name="finite-materials"></a>Begränsat material
 Om du arbetar med begränsade material vilar planeringen dessutom på tillgängligheten för de material som krävs för produktionen. Om det inte finns tillräckligt med tillgängliga komponenter för tillverkning, kan produktionen senareläggas. Du kan basera tidsplaneringen på användning av material genom att ange de material som måste vara tillgängliga för produktion. När optimeringen sker både för resurskapaciteten och materialtillgängligheten, beräknas produktionen efter dessa begränsningar. En produktionsorder kan inte planeras att inledas förrän kapacitet och material är tillgängliga samtidigt och i erforderliga kvantiteter.
 
-<a name="see-also"></a>Se även
+<a name="additional-resources"></a>Ytterligare resurser
 --------
 
 [Alternativ för grovplanering](operation-scheduling-options.md)

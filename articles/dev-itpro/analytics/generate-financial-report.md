@@ -19,16 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 81c09c551dfa4238782c3796f5d08990b30ca575
-ms.openlocfilehash: 95669d83fdf69a6d55dd7ee1e4e33a67108e0371
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 73d1a3316db7589d114c70a4dbf847dc67aa077b
 ms.contentlocale: sv-se
-ms.lasthandoff: 12/01/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="generate-a-financial-report"></a>Generera ekonomisk rapport
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Det här avsnittet innehåller allmän information om att skapa en ekonomisk rapport. 
 
@@ -159,12 +159,12 @@ Du kan använda följande tangentbordsgenvägar när du kör en analys av saknad
 | Öppna den markerade raddefinitionen     | Ctrl+O                     |
 
 
-<a name="see-also"></a>Se även
+<a name="additional-resources"></a>Ytterligare resurser
 --------
 
 [Ekonomisk rapportering](financial-reporting-intro.md)
 
-[Gränssnitt för Report Designer](report-designer-interface.md)
+[Användargränssnitt i Report Designer](report-designer-interface.md)
 
 
 

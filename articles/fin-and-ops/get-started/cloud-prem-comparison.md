@@ -18,16 +18,16 @@ ms.author: robinr
 ms.search.validFrom: 2017-11-29
 ms.dyn365.ops.version: Platform update 9
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 911996f9d1854f027f5085725538bd87ba307c25
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 7bb152334b3b06c86dff024d0e99aea9bb452deb
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="cloud-and-on-premises-feature-comparison"></a>Jämförelse mellan molnet och lokala funktioner
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Detta avsnitt anger huruvida respektive funktion finns i dessa produkter:
 
@@ -128,7 +128,7 @@ Följande tabell anger produktområdena. Lokalt stöd och molnstöd anges för f
 |---|---|---|---|
 | Alla Talent-områden | Alla Talent-funktioner | Ja | Nr |
 
-## <a name="see-also"></a>Se även
+## <a name="additional-resources"></a>Ytterligare resurser
 
 - [Funktioner som inte implementerats i lokala distributioner](features-not-implemented-on-prem.md)
 

@@ -19,16 +19,16 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 3679ccf304a32385c162ba3663eba2300f028817
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 5599135eebfcffdedaaadec86beb214c5c04cbaf
 ms.contentlocale: sv-se
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="financial-report-components"></a>Komponenter för ekonomisk rapport
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Den här artikeln innehåller en beskrivning av hur komponenter eller byggblock för rapportdefinitioner används vid ekonomisk rapportering. Dessa byggblock omfattar raddefinitioner, kolumndefinitioner och rapporteringsträddefinitioner. Artikeln förklarar hur du ordnar och låser byggblock. 
 
@@ -109,10 +109,10 @@ Du kan importera en byggblockgrupp till en befintlig byggblockgrupp. Alla import
 När du öppnar ett byggblock kan andra användare bara komma åt byggblocket i skrivskyddat läge. Ibland kan en användare glömma att stänga ett byggblock eller stänger av sitt system utan att stänga byggblocket. Därför förblir byggblocket utcheckat och ingen annan användare kan öppna det. I dessa situationer kan en ekonomisk rapporteringsadministratör använda dialogrutan **Utcheckade artiklar** för att checka in byggblock som användare kvarlämnat som utcheckade. **Obs:** Du måste inneha rollen som administratör för att checka in byggblock via dialogrutan **Utcheckade artiklar**.
 1.  I Report Designer på menyn **Verktyg** klickar du på **Utcheckade artiklar**.
 2.  Markera **Visa objekt från alla användare** i dialogrutan **Utcheckade objekt**. Listan uppdateras så att alla byggblock som är utcheckade och de användare som har checkat ut byggblocken visas.
-3.  Välj ett byggblock och klicka sedan på **Ångra utcheckningen**
-4.  Klicka på **Ja** för att check in byggblocket.
+3.  Markera ett byggblock och klicka på **Ångra utcheckning**.
+4.  Klicka på **Ja** för att checka in byggblocket.
 
-## <a name="see-also"></a>Se även
+## <a name="additional-resources"></a>Ytterligare resurser
 
 [Ekonomisk rapportering](financial-reporting-intro.md)
 

@@ -3,7 +3,7 @@ title: Serviceobjektgrupper
 description: "Objektgrupper är användbara för att sortera och filtrera data om objekt för rapporter och statistik."
 author: YuyuScheller
 manager: AnnBe
-ms.date: 02/21/2018
+ms.date: 05/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,16 +19,16 @@ ms.author: YuyuScheller
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 221b9dae7e83e7f4a535ac60f2a2011533d7861c
-ms.openlocfilehash: fa503ac82286099a0eafc7034d169e165b538e2c
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 2ab3ed8a8f36f980473b17b5dfed8cb3d0054253
 ms.contentlocale: sv-se
-ms.lasthandoff: 02/21/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="service-object-groups"></a>Serviceobjektgrupper 
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Objektgrupper är användbara för att sortera och filtrera data om objekt för rapporter och statistik. Du kan exempelvis gruppera objekt efter geografisk placering eller typ.
 
@@ -48,6 +48,23 @@ Du kan använda den här grupperingsmetoden för att visa vilka typer av objekt 
 
 En kund ringer och vill skapa ett serviceavtal för en luftkonditioneringsmaskin, HIJ. Du har inte en post för den här maskinen ännu. Men du har ställt in en objektgrupp som heter luftkonditioneringsapparater och du har kopplat den här gruppen till alla sådana objekt. Därför kan du snabbt söka efter och identifiera alla andra luftkonditioneringsapparater och använda mallinformationen från de här objekten för att skapa serviceavtalsrader för HIJ. Genom att använda objektgrupper på det här sättet sparar du tid när du skapar nya objekt och avgör vilka serviceuppgifter som ska utföras på dem. 
 
+## <a name="create-service-object-groups"></a>Skapa en serviceobjektgrupp
+
+Skapa grupper som du kan tilldela till serviceobjekt till. Serviceobjekt är lagerartiklar andra produkter som tjänster utförs för. Genom att gruppera serviceobjekt kan du skapa rapporter för liknande och relaterade serviceobjekt. En serviceobjektgrupp kan till exempel bestå av två serviceobjekt: Ett serviceobjekt är ett paket och det andra serviceobjektet är tjänsten för att installera paketet.
+
+Om du vill skapa serviceobjektgrupper, följ dessa steg:
+
+1. Klicka på **servicehantering > inställningar > serviceobjekt > serviceobjektgrupper**.
+
+2. Klicka på **Ny** om du vill skapa en ny serviceobjektgrupp.
+
+3. Ange ett unikt namn på serviceobjektgruppen och eventuellt en beskrivning.
+
+Du kan tilldela serviceobjekt till gruppen med hjälp av formuläret **Serviceobjekt**. 
+
+## <a name="see-also"></a>Se även
+
+[Skapa serviceobjekt](create-service-objects.md)
 
 
 

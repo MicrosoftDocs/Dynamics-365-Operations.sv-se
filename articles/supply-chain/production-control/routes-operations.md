@@ -20,16 +20,16 @@ ms.search.industry: Manufacturing
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7af00d0c66f70aa41cfab0ffccef39ba4c115803
-ms.openlocfilehash: 4026fa937ddf88f006cdcd13a8eda10c326ada62
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 95e7f5179ac88c0cd6b2336a914c2c527d37d57f
 ms.contentlocale: sv-se
-ms.lasthandoff: 03/09/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="routes-and-operations"></a>Flöden och operationer
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Det här avsnittet innehåller information om Flöden och operationer. Ett flöde definierar processen för tillverkning av en produkt eller produktvariant. Det beskriver varje steg (operation) i produktionsprocessen och den ordning som dessa steg måste utföras i. För varje steg definierar också flödet de operationsresurser krävs, ställtid och körtid som krävs och hur kostnaden ska beräknas.
 
@@ -230,12 +230,12 @@ Om du inte anger en operationsresurs eller resursgrupp som en del av resurskrave
 -   **Resursbatch** – det här alternativet är ungefär densamma som alternativet **Batch**. Men innefattar fältet **Batchkapacitet** från operationsresursen. Därför är tiden resursenberoende.
 
 
-<a name="see-also"></a>Se även
+<a name="additional-resources"></a>Ytterligare resurser
 --------
 
 [Strukturlistor och formler](bill-of-material-bom.md)
 
-[Kostnadskategorier som används i produktionsflöden](../cost-management/cost-categories-used-production-routings.md)
+[Kostnadskategorier som används i produktionsflöde](../cost-management/cost-categories-used-production-routings.md)
 
 [Resurskunskaper](resource-capabilities.md)
 

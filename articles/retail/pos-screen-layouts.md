@@ -20,16 +20,16 @@ ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: ad425ab0848ab04003b7378cb5c488650f01c441
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 9082c156fde52aa0c822f8e4753de816f8cc0558
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="configure-screen-layouts-for-pos"></a>Konfigurera skärmlayouter för kassa
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Det här avsnittet innehåller information om skärmlayouter för Microsoft Dynamics 365 for Retail point of sale (POS) experiences.
 
@@ -89,12 +89,12 @@ Varje layoutstorlek inom en skärmlayout måste konfigureras med skärmlayoutdes
 
 **Bild** - Bildkontrollen kan användas för att visa butikens logotyp eller annat varumärke på transaktionsskärmen. Bildkontrollen är bara tillgänglig för fullständiga layouter. 
 
-**Rekommenderade produkter** - Om det är konfigurerat för miljön, visar kontrollen för rekommenderade produkter produktförslag baserade på maskininlärning. Den rekommenderade kontrollen av produkter är bara tillgänglig för fullständiga layouter i Dynamics 365 for Retail version 1611. **Anpassad kontroll **- Den anpassade kontrollen fungerar som platshållare i skärmlayouten så att du kan reservera utrymme för anpassat innehåll. Den anpassade kontrollen är bara tillgänglig för fullständiga layouter.
+**Rekommenderade produkter** - Om det är konfigurerat för miljön, visar kontrollen för rekommenderade produkter produktförslag baserade på maskininlärning. Den rekommenderade kontrollen av produkter är bara tillgänglig för fullständiga layouter i Dynamics 365 for Retail version 1611. **Anpassad kontroll**- Den anpassade kontrollen fungerar som platshållare i skärmlayouten så att du kan reservera utrymme för anpassat innehåll. Den anpassade kontrollen är bara tillgänglig för fullständiga layouter.
 
-<a name="see-also"></a>Se även
+<a name="additional-resources"></a>Ytterligare resurser
 --------
 
-[Installera layoutdesignern Retail POS](install-pos-layout-designer.md)
+[Installera layoutdesignern för Retail POS](install-pos-layout-designer.md)
 
 
 

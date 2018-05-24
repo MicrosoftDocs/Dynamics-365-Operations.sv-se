@@ -3,7 +3,7 @@ title: "Hantering av försäljningspris (butik)"
 description: "Det här avsnittet beskriver begreppen för att skapa och hantera försäljningspriser i Microsoft Dynamics 365 for Retail."
 author: ShalabhjainMSFT
 manager: AnnBe
-ms.date: 03/27/2018
+ms.date: 04/20/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-retail
@@ -18,16 +18,16 @@ ms.author: ShalabhjainMSFT
 ms.search.validFrom: 2018-03-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: a7e6babe1bfec60ece4f84a77bbd838faf7274e0
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 6da38f69abe72665fc79a43e0e163a856f9ee34d
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="retail-sales-price-management"></a>Hantering av försäljningspris (butik)
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Det här avsnittet ger information om processen för att skapa och hantera försäljningspriser i Microsoft Dynamics 365 for Retail. Det fokuserar på begreppen som ingår i den här processen och på effekterna av olika konfigurationsalternativ för försäljningspriser.
 
@@ -198,32 +198,6 @@ Microsoft SQL Server Express används ofta för kanaldatabaser på grund av kost
 När du anger försäljningspriser i Microsoft Dynamics 365, anger du inte om prisvärdet du anger inkluderar eller exkluderar moms. Värdet är bara priset. Men inställningen **pris inkluderar moms** på butikskanaler låter dig konfigurera butikskanaler så att de inkluderar eller exkluderar moms från priser. Inställningen är inställd på kanalen och ändra även i ett enskilt företag.
 
 Om du arbetar med både inkluderad och exkluderad moms är det viktigt att du har korrekt inställda priser, eftersom totalbeloppet som kunden betalar ändras om inställningen **pris inkluderar moms** ändras för kanalen.
-
-### <a name="effect-of-the-price-includes-sales-tax-setting-on-financial-postings"></a>Effekten av inställningen för Pris inkluderar moms på finansiella bokföringar
-De belopp som har bokförts i redovisningen för inkomst- rabattkonton påverkas av inställningen **pris inkluderar moms**. I följande exempel visas hur den här inställningen påverkar finansiella bokföringar.
-
-I exemplet beskrivs endast försäljningsbokföring, eftersom inställningen **pris inkluderar moms** inte påverkar bokföring av lagerkostnad.
-
-#### <a name="example"></a>Exempel
-I det här exemplet konfigureras rabattbelopp så att de bokförs separat från intäkter.
-
-Du säljer en $100 produkt med en momssats på 10 procent och en rabatt på 5 procent används. Följande konton från demodata USRT används:
-
-- **Intäkt:** 401100
-- **Rabatt:** 403200
-- **Moms:** 202100
-
-**Fall 1: exklusive moms (kallas även moms)**
-
-- **Intäkt:** $100
-- **Rabatt:** $5
-- **Moms:** $9,5 (= 10 procent av $95)
-
-**Fall 2: Inklusive moms (så kallad mervärdesskatt \[moms\])**
-
-- **Intäkt:** $90
-- **Rabatt:** $4,5 (= 5 procent av $90)
-- **Moms:** $10
 
 ## <a name="differences-between-retail-pricing-and-non-retail-pricing"></a>Skillnader mellan butiksprissättning och icke-butiksprissättning
 En enda prissättningsmotor används för att beräkna detaljhandelspriserna i alla kanaler: kundtjänst, butiker och onlinebutiker. Detta bidrar till att möjliggöra de enhetliga handelsscenarierna. 

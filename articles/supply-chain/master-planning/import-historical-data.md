@@ -19,16 +19,16 @@ ms.author: roxanad
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 02daa312d74311432c0c468e3e691637dcf94157
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: e7975003620d951717c66144c8d0521de0f69158
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="import-historical-data-for-demand-forecasts"></a>Importera historikdata för efterfrågeprognoser
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 För att garantera att efterfrågeprognoserna blir korrekt måste du ha lika mycket historiska efterfrågeuppgifter som du kan för varje artikel eller artikelallokeringsnyckel. Om den historiska begärandedatan inte redan har importerats, använd då dataenheten **Historisk extern begäran** (ReqDemPlanHistoricalExternalDemandEntity) i Microsoft Dynamics 365 for Finance and Operations för att importera den.
 
@@ -57,7 +57,7 @@ Du kan använda följande fil som exempel. Hämta [HistoricalDemandData](https:/
 
 När du har importerat efterfrågehistoriken kan du skapa en efterfrågeprognos.
 
-## <a name="see-also"></a>Se även
+## <a name="additional-resources"></a>Ytterligare resurser
 
 [Generera en statistisk baslinjeprognos](generate-statistical-baseline-forecast.md)
 

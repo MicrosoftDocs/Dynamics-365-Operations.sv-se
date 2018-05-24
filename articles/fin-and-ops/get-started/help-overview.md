@@ -19,16 +19,16 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 5adf73c1316f701b3b5e9b9a22fa5743ba1cc419
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 2c02af887e662fd346d5e3e09cce755bfb58d520
 ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="help-system-overview"></a>Översikt över hjälpsystem
 
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 Det här avsnittet innehåller en översikt över komponenterna i hjälpsystemet för Microsoft Dynamics 365 for Finance and Operations. Det innehåller beskrivningar av hur du kan skapa anpassad dokumentation och utbildning för din organisation. 
 
@@ -60,7 +60,7 @@ Webbplatsen docs.microsoft.com ([docs.microsoft.com/dynamics365/unified-operatio
 
 -   **Åtkomst till det senaste innehållet**– Webbplatsen ger oss ett snabbare och mer flexibelt sätt att skapa, leverera och uppdatera produktdokumentation. Därför hjälper den till att säkerställa att du har tillgång till den senaste tekniska informationen.
 -   **Innehåll skrivet av experter**– Webbplatsen ger en större mängd produktdokumentation som kan förbättras av community-medlemmar både inom och utanför Microsoft.
--   **Åtkomst till andra typer av innehåll** – Webbplatsen ger dig snabb åtkomst till olika typer av innehåll om Finance and Operations, till exempel Microsoft Office Mix-presentationer, uppgiftsguider, videor och avsnitt.
+-   **Åtkomst till andra typer av innehåll** – Webbplatsen ger dig snabb åtkomst till olika typer av innehåll om Finance and Operations, till exempel uppgiftsguider, videor och avsnitt.
 -   **Innehåll som stöder dina affärsprocesser**– Webbplatsen innehåller affärsprocessfokuserat innehåll som använder affärsprocessmodelleraren (Business Process Modeler, BPM) i Microsoft Dynamics Lifecycle Services (LCS).
 
 ### <a name="searching-on-docsmicrosoftcom"></a>Söka på docs.microsoft.com
@@ -204,7 +204,7 @@ I följande register visas våra webbplatser. Våra innehållswebbplatser är or
 
 
 
-<a name="see-also"></a>Se även
+<a name="additional-resources"></a>Ytterligare resurser
 --------
 [Hjälpsystem för Finance and Operations (hämtningsbart faktablad)](https://mbs.microsoft.com/customersource/global/AX/learning/fact-sheets/msdaxhelpsystemfactsheet)
 

@@ -19,16 +19,16 @@ ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: c5d13024ba15744f81406c4c8f5d5d33de658d63
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: cea4aec80bc0b519a6b393724835555b4d0937a8
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="create-fixed-compensation-plans"></a>Skapa planer för fast kompensation
 
-[!INCLUDE [banner](includes/banner.md)]
+[!include [banner](includes/banner.md)]
 
 Fast kompensation refererar till en medarbetares vanliga bruttolön eller löner. Det här avsnittet beskriver de komponenter som måste ställas in innan du kan skapa en fast kompensationsplan och anmäla medarbetare.
 
@@ -101,7 +101,7 @@ Nu kan du koppla en medarbetare till en plan för fast kompensation. Öppna sida
 
 Systemet kontrollerar att kompensationsbeloppet som anges för en kompensationsplan av typen grad eller band ligger mellan minimi- och maximireferenspunkterna för en viss kompensationsnivå på medarbetarens jobb. Om kompensationsbeloppet ligger utanför det tillåtna intervallet, visas ett felmeddelande eller varningsmeddela, beroende på den toleransnivå som anges i planen för fast kompensation.
 
-<a name="see-also"></a>Se även
+<a name="additional-resources"></a>Ytterligare resurser
 --------
 
 [Kompensationsplaner](compensation-plans.md)

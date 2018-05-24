@@ -3,27 +3,28 @@ title: Sortimenthantering
 description: "Det här avsnittet beskriver de grundläggande begreppen för sortimenthantering i Microsoft Dynamics 365 for Retail och ger överväganden för genomförande av projektet."
 author: jblucher
 manager: AnnBe
-ms.date: 3/12/2018
+ms.date: 03/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
 ms.technology: 
 audience: Application user
+ms.reviewer: josaw
 ms.search.scope: Retail, Operations
 ms.search.region: Global
 ms.author: jeffbl
 ms.search.validFrom: 2017-11-21
 ms.dyn365.ops.version: Application update 5
 ms.translationtype: HT
-ms.sourcegitcommit: 44b0c4e39ac7410d27ce531c898bb8c423af334a
-ms.openlocfilehash: 303f86d6a57e039cb51700744697949845239b10
+ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
+ms.openlocfilehash: 033968667048faf475b13f8fb95e693dc26935ca
 ms.contentlocale: sv-se
-ms.lasthandoff: 03/12/2018
+ms.lasthandoff: 05/08/2018
 
 ---
 
 # <a name="assortment-management"></a>Sortimenthantering
-[!INCLUDE [banner](../includes/banner.md)]
+[!include [banner](../includes/banner.md)]
 
 ## <a name="overview"></a>Översikt
 Microsoft Dynamics 365 for Retail ger *sortiment* som gör att du kan hantera produkttillgänglighet genom olika kanaler. Sortiment avgör vilka produkter som är tillgängliga i vissa butiker och under en viss period.
@@ -35,25 +36,25 @@ Den övergripande produktblandningen för en kanal bestäms av det publicerade s
 ### <a name="basic-assortment-setup"></a>Grundläggande sortimentinställning
 I följande exempel konfigureras ett unikt sortiment för varje butik. I det här fallet är endast produkt 1 tillgänglig i butiken 1 och endast produkt 2 är tillgänglig i butik 2.
 
-![Varje produkt är tillgänglig i en butik](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jblucher-manage-assortments/articles/retail/media/Managing-assortments-figure1.png?raw=true "Varje produkt är tillgänglig i en butik")
+![Varje produkt är tillgänglig i en butik](./media/Managing-assortments-figure1.png)
 
 För att göra produkt 2 tillgänglig i butik 1 lägger du till produkten sortimentet 1.
 
-![Produkt 2 läggs till sortiment 1](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jblucher-manage-assortments/articles/retail/media/Managing-assortments-figure2.png?raw=true "Produkt 2 läggs till sortiment 1")
+![Produkt 2 läggs till i sortiment 1](./media/Managing-assortments-figure2.png)
 
 Alternativt kan du lägga till butik 1 sortiment 2.
 
-![Butik 1 läggs till sortiment 2](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jblucher-manage-assortments/articles/retail/media/Managing-assortments-figure3.png?raw=true "Butik 1 läggs till sortiment 2")
+![Lagra 1 läggs till i sortiment 2](./media/Managing-assortments-figure3.png)
 
 ### <a name="organization-hierarchies"></a>Organisationshierarkier
 I situationer där flera kanaler delar samma produktsortiment kan du konfigurera sortimentet med hjälp av organisationshierarkin för butikssortiment. När du lägger till noder från hierarkin inkluderas alla kanaler i den noden och dess underordnade noder.
 
-![Organisationshierarki](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jblucher-manage-assortments/articles/retail/media/Managing-assortments-figure4.png?raw=true "Organisationshierarki")
+![Organisationshierarki](./media/Managing-assortments-figure4.png)
 
 ### <a name="product-categories"></a>Produktkategorier
 På samma sätt på produktsidan kan du inkludera produktgrupper genom att använda produktkategorihierarkier. Du kan konfigurera sortiment genom att lägga till en eller flera kategorihierarkinoder. I det här fallet inkluderar sortimentet alla produkter i kategorinoden och de underordnade noderna.
 
-![Produktkategorier](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jblucher-manage-assortments/articles/retail/media/Managing-assortments-figure5.png?raw=true "Produktkategorier")
+![Produktkategorier](./media/Managing-assortments-figure5.png)
 
 ### <a name="excluded-products-or-categories"></a>Exkluderade produkter eller kategorier
 Förutom att inkludera produkter eller kategorier i sortiment kan du använda alternativet Undanta för att definiera specifika produkter och kategorier som ska uteslutas från sortimentet. I följande exempel vill du inkludera alla produkter i en specifik kategori förutom produkt 2. I detta fall behöver du inte definiera sortimentens produkt efter produkt eller skapa ytterligare kategorinoder. Du kan istället bara inkludera kategorin men exkludera produkten.
@@ -61,7 +62,7 @@ Förutom att inkludera produkter eller kategorier i sortiment kan du använda al
 > [!NOTE]
 > Om en produkt är både inkluderad och exkluderad i ett eller flera sortiment per definition kommer produkten alltid att betraktas som exkluderad.
 
-![Exkluderad produkt](https://github.com/MicrosoftDocs/Dynamics-365-Operations/blob/jblucher-manage-assortments/articles/retail/media/Managing-assortments-figure6.png?raw=true "Exkluderad produkt")
+![Exkluderad produkter ](./media/Managing-assortments-figure6.png)
 
 ### <a name="global-and-released-products"></a>Globala och frisläppta produkter
 Sortiment definieras på global nivå och kan innehålla kanaler från flera juridiska personer. Produkter och kategorier som ingår i sortiment delas också mellan juridiska personer. En produkt måste emellertid frisläppas innan den kan säljas, beställas, räknas eller tas emot i kanalen (till exempel i försäljningsstället \[kassa\]). Även om två butiker i olika juridiska personer kan dela ett sortiment med samma produkter, är produkterna endast tillgängliga om de har frisläppts till dessa juridiska personer.
