@@ -3,7 +3,7 @@ title: Skapa notifieringar
 description: "Det här avsnittet innehåller information om notifieringar och förklarar hur du skapar en notifieringsregel så att du meddelas om händelser, t.ex. ett datum som anländer eller en viss händelse som inträffar."
 author: tjvass
 manager: AnnBe
-ms.date: 03/20/2018
+ms.date: 06/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,18 +17,16 @@ ms.author: tjvass
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: fbec520054ab41e3b2d92e422d1b5f5276d44e2c
+ms.sourcegitcommit: aa5eab6dbf2cc604239cac199817ead6bef6f3de
+ms.openlocfilehash: ee4e39b37da32507303ae53389c7a8bcee4ab4c7
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 06/08/2018
 
 ---
 
 # <a name="create-alerts"></a><span data-ttu-id="50d22-103">Skapa notifieringar</span><span class="sxs-lookup"><span data-stu-id="50d22-103">Create alerts</span></span>
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/pre-release.md)]
 
 ## <a name="getting-started"></a><span data-ttu-id="50d22-104">Komma igång</span><span class="sxs-lookup"><span data-stu-id="50d22-104">Getting started</span></span>
 <span data-ttu-id="50d22-105">Innan du ställer in en notifieringsregel måste du bestämma när eller i vilka situationer du vill få notifieringar.</span><span class="sxs-lookup"><span data-stu-id="50d22-105">Before you set up an alert rule, decide when or in what situations you want to receive alerts.</span></span> <span data-ttu-id="50d22-106">När du vet vilka händelser du vill meddelas om, går du till sidan i Microsoft Dynamics 365 for Finance and Operations där de data som orsakar händelsen visas.</span><span class="sxs-lookup"><span data-stu-id="50d22-106">When you know which event you want to be notified about, in Microsoft Dynamics 365 for Finance and Operations find the page where the data that causes that event appears.</span></span> <span data-ttu-id="50d22-107">Händelsen kan vara ett datum eller en viss händelse som inträffar.</span><span class="sxs-lookup"><span data-stu-id="50d22-107">The event can be a date that arrives or a specific change that occurs.</span></span> <span data-ttu-id="50d22-108">Därför måste du hitta sidan där datumet anges eller där fältet ändras eller den nya posten som har skapats visas.</span><span class="sxs-lookup"><span data-stu-id="50d22-108">Therefore, you must find the page where the date is specified, or where the field that changes or the new record that is created appears.</span></span> <span data-ttu-id="50d22-109">När du har den här informationen kan du skapa notifieringsregeln.</span><span class="sxs-lookup"><span data-stu-id="50d22-109">After you have this information, you can create the alert rule.</span></span>

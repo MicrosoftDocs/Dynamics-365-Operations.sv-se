@@ -3,7 +3,7 @@ title: "Bädda in PowerApps"
 description: "Det här avsnittet beskriver hur du bäddar in PowerApps till Finance and Operations-klienten för att utöka produktens funktionalitet."
 author: jasongre
 manager: AnnBe
-ms.date: 04/12/2018
+ms.date: 06/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -16,18 +16,16 @@ ms.author: jasongre
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
 ms.translationtype: HT
-ms.sourcegitcommit: 83648a93f367510d7b04bbd04a9f37689ecfaa59
-ms.openlocfilehash: 58b6b934c2cf65ff1f9362ce948474e374892999
+ms.sourcegitcommit: aa5eab6dbf2cc604239cac199817ead6bef6f3de
+ms.openlocfilehash: ad9fa08d22b949a61dabbb2abf5d87a612a1db7c
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 06/08/2018
 
 ---
 
 # <a name="embed-powerapps"></a><span data-ttu-id="ad771-103">Bädda in PowerApps</span><span class="sxs-lookup"><span data-stu-id="ad771-103">Embed PowerApps</span></span>
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/pre-release.md)]
 
 <span data-ttu-id="ad771-104">I plattformsuppdatering 14 stöder Microsoft Dynamics 365 for Finance and Operations integrering med Microsoft PowerApps, en tjänst för utvecklare och icke-tekniska användare för att skapa anpassade affärsappar för mobila enheter, surfplattor och webb utan att skriva kod.</span><span class="sxs-lookup"><span data-stu-id="ad771-104">In Platform update 14, Microsoft Dynamics 365 for Finance and Operations supports integration with Microsoft PowerApps, a service for developers and non-technical users to build custom business apps for mobile devices, tablets, and the web without writing code.</span></span> <span data-ttu-id="ad771-105">PowerApps utvecklats av dig, ditt företag eller det bredare ekosystemet och kan sedan bäddas in i Finance and Operations-klienten utöka produktens funktioner.</span><span class="sxs-lookup"><span data-stu-id="ad771-105">PowerApps developed by you, your organization, or the broader ecosystem can then be embedded in the Finance and Operations client to augment the product's functionality.</span></span> <span data-ttu-id="ad771-106">Exempelvis kan du skapa en PowerApp för att komplettera Finance and Operations med information som hämtas från ett annat system.</span><span class="sxs-lookup"><span data-stu-id="ad771-106">For example, you might build a PowerApp to supplement Finance and Operations with information retrieved from another system.</span></span> 
 
