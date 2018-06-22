@@ -19,10 +19,10 @@ ms.author: rschloma
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2e5dd8f852ac1a6c2997a50a60f03db6adfd218c
-ms.openlocfilehash: 5500bfc1cdd1949d301ae82fad5506dfdbeb59f3
+ms.sourcegitcommit: dc2ab66bf6e3195e1ebf394f99182f59c3ee2125
+ms.openlocfilehash: 63e0a52919e12c1f497e6809244939c6047826a7
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/01/2018
+ms.lasthandoff: 05/15/2018
 
 ---
 
@@ -72,8 +72,6 @@ Du kan använda inställningrn **förhandsgranskningsfunktioner** i administrat�
     > Jobb som har publicerats visas bara för kunder som prenumererar på en eller flera LinkedIn-jobblistor. Annars ser kunder endast ett jobb om de uttryckligen söker efter det. Det uppstår en fördröjning när jobb publiceras på LinkedIn. Ett jobb kan ta flera timmar visas när det har publiceras från Attract.
 
 - **Kandidatsökning** – både interna och externa kandidater kan nu söka direkt från jobbsidan på karriärwebbplatsen.
-- **Bedömningar** – som en del av den konfigurerbara anställningsprocessen för ett visst jobb eller när en jobbmall används har nu användarna tillgång till en ny aktivitetstyp för **bedömning**. De kan sedan använda projektet: ”Gauge” appen i Talent för att skapa grundläggande bedömningar som du kan skicka till sökande. Projekt: ”Gauge” är också i förhandsversion. Ytterligare providers läggs till i framtiden.
-- **Projekt: ”Gauge”** – projekt: ”Gauge” är ett program i Talent där användarna kan skapa enkla bedömningar och undersökningar.
 - **Erbjudandehantering** – användarna kan nu skapa erbjudanden från mallar som inkluderar platshållare. När ansökande avancerar framåt till erbjudandefasen, kan rekryterare och anställande chefer använda erbjudandeverktyget för att förbereda ansökandes formella erbjudande via mallar, skicka erbjudande för internt godkännande och slutligen skicka erbjudandet till ansökande för underskrift. Många nya funktioner läggs till erbjudandeverktyget med tiden och förhandsgranskningsfunktionen uppdateras med de här funktionerna när vi är klara att släppas för att förhandsgranska.
 
 ### <a name="core-hr"></a>Grundläggande personal
@@ -90,7 +88,7 @@ Oavsett om feedback är positiv eller negativ vill vi gärna höra från dig om 
     - [Ge dig idéer](https://powerusers.microsoft.com/t5/Ideas-for-Attract/idb-p/Attract)
     - [Grundläggande personal](https://powerusers.microsoft.com/t5/Ideas-for-Human-Resources/idb-p/HumanResources)
 
-Inkludera inte personuppgifter (all information som kan identifiera dig) i feedback eller produktomdömen. Information som samlas in kan analyseras ytterligare och den används inte för att besvara frågor under tillämplig sekretesslagstiftning. Personuppgifter som samlas in separat under programmen som ingår i den [sekretesspolicyn för Microsoft ](https://privacy.microsoft.com/en-us/privacystatement).
+Inkludera inte personuppgifter (all information som kan identifiera dig) i feedback eller produktomdömen. Information som samlas in kan analyseras ytterligare och den används inte för att besvara frågor under tillämplig sekretesslagstiftning. Personuppgifter som samlas in separat under programmen som ingår i den [sekretesspolicyn för Microsoft ](https://privacy.microsoft.com/privacystatement).
 
 > [!TIP]
 > Sätt ett bokmärke i detta ämne och gå tillbaka ofta för att hålla dig uppdaterad om nya funktioner för förhandsgranskning som vi släpper.

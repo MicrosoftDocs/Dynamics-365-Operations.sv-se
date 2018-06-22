@@ -20,10 +20,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: e85b65e116b32adca09e46252d7d3bbe5101e1cf
+ms.sourcegitcommit: 6e4f89d86b64e0c8c76c15d3c2c1c00af353e9ca
+ms.openlocfilehash: e76b29cf6312959ee84c251d582310ce4822945f
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 05/17/2018
 
 ---
 
@@ -45,11 +45,15 @@ Den här sidan innehåller länkar till relevanta handlingar som är relaterade 
 [Ställ in alternativ för orderbearbetning](set-up-order-processing-options.md)
 
 ## <a name="configure-order-processing"></a>Konfigurera orderbearbetning
-[Ställa in notifieringar för bedrägeri](set-up-fraud-alerts.md)
-[manuell orderspärr](work-with-order-holds.md)
+[Ställ in bedrägerivarningar](set-up-fraud-alerts.md)
+
+[Manuella orderspärrar](work-with-order-holds.md)
 
 ## <a name="configure-payment-processing"></a>Konfigurera betalningsbearbetning
 [Betalningsmetoder i ett kundcenter](work-with-payments.md)
+
+## <a name="configure-delivery-modes"></a>Konfigurera leveranslägen
+[Konfigurera leveranslägen och avgifter för kundtjänst](configure-call-center-delivery.md)
 
 ## <a name="configure-direct-marketing"></a>Konfigurera direkt marknadsföring
 [Kundtjänstkataloger](call-center-catalogs.md)

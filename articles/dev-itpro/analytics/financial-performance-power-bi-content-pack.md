@@ -1,6 +1,6 @@
 ---
-title: "Innehållspaket för ekonomiska resultat för Power BI"
-description: "Det här avsnittet beskriver Power BI-innehåll för finansiellt resultat."
+title: "Innehållspaket för ekonomiska resultat för PowerBI.com"
+description: "Det här avsnittet beskriver PowerBI.com-lösning för finansiellt resultat."
 author: kweekley
 manager: AnnBe
 ms.date: 05/09/2018
@@ -18,26 +18,26 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 88bbc54721f5da94dd811ef155e8d3bcf8c2b53c
-ms.openlocfilehash: d062937d8d1cb7d8e4f4cc055eb4514fa56b4eab
+ms.sourcegitcommit: cf531c3a8f3bdb17314d1de436b98249169f82a3
+ms.openlocfilehash: b70d470da2160670848d2dca9c97f6d7a2d6cf60
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 05/22/2018
 
 ---
 
-# <a name="financial-performance-power-bi-content"></a>Innehållspaket för ekonomiska resultat för Power BI
+# <a name="financial-performance-powerbicom-solution"></a>Innehållspaket för ekonomiska resultat för PowerBI.com
 
 [!include [banner](../includes/banner.md)]
 
 > [!Note]
-> Det här innehållspaketet är inaktuellt enligt beskrivningen i [Power BI innehållspaket som finns på AppSource](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
+> Den här PowerBI.com-lösningen är inaktuellt enligt beskrivningen i [Power BI innehållspaket som finns på AppSource](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
 
-Det här avsnittet beskriver Microsoft Power BI-innehåll för **finansiellt resultat**. Det beskriver instrumentpanelen och de rapporter som är inkluderade, samt ger dig information om den datamodell och de enheter som användes för att skapa innehållet.
+Det här avsnittet beskriver PowerBI.com-lösning för **finansiellt resultat**. Det beskriver instrumentpanelen och de rapporter som är inkluderade, samt ger dig information om den datamodell och de enheter som användes för att skapa lösningen.
 
 ## <a name="main-account-setup"></a>Huvudkontoinställningar
 Konfigurationen av huvudkonton är viktig eftersom organisationer vill att skuld- och intäktsbelopp ska anges som positiva belopp i rapporter. Huvudkontotypen måste anges som **Skuld** eller **Intäkt** för att huvudkontona ska anges som positiva belopp. När dessa kontotyper används, kommer rapporteringen via Power BI att vända på tecknen och ange beloppen som positiva.
 
-## <a name="dashboard-and-reports-that-are-included-in-the-power-bi-content"></a>Instrumentpanelen och rapporterna som ingår i Power BI-innehåll
+## <a name="dashboard-and-reports-that-are-included-in-the-powerbicom-solution"></a>Instrumentpanelen och rapporterna som ingår i PowerBI.com-lösning
 Instrumentpanelen innehåller summerade datarutor baserade på underliggande rapporter. Varje ruta innehåller sammanfattad information för innevarande år för alla företag i en organisation. Här följer några exempel på paneler:
 
 - Kontant
@@ -74,7 +74,7 @@ Var och en av dessa paneler backas upp av en underliggande rapport. Dessa rappor
 Diagrammen och rutorna i samtliga dessa rapporter kan filtreras och fästas på instrumentpanelen. Mer information om hur du filtrerar och fäster i Power BI finns i [Skapa och konfigurera en intrumentpanel](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## <a name="understanding-the-data-model-and-entities"></a>Förstå datamodellen och enheterna
-Följande enheter användes till grund för Power BI-innehållspaket för **ekonomiska resultat**
+Följande enheter användes till grund för PowerBI.com-lösningen för **ekonomiska resultat**
 
 **Enheter för aggregerade data**
 

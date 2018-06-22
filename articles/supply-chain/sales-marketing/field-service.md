@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: 03a932652cdd93b2a5917d0fca72809d1648b678
-ms.openlocfilehash: b1acf0b64914a3199fcf44f8377e32b26f0af99e
+ms.sourcegitcommit: a57e23691a6b4d48c6b8dd6d1f61fc9730365b39
+ms.openlocfilehash: 0c1268d2fddcf7b28ecfc3197f21e9d30a5a5855
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/25/2018
+ms.lasthandoff: 05/31/2018
 
 ---
 
@@ -44,11 +44,9 @@ Den första fasen av integrationen mellan Field Service och Finance and Operatio
 - [Arbetsorder i Field Service till försäljningsorder i Finance and Operations](field-service-work-order.md)
 - [Fakturor i Field Service till fritextfakturor i Finance and Operations](field-service-invoice.md)
 
-Om du vill se ett exempel på hur du synkroniserar en arbetsorder mellan Field Service och Finance and Operations titta på kort YouTube videon:
+Titta på den korta YouTube-videon om du vill se ett exempel på hur du synkroniserar en arbetsorder mellan Field Service och Finance and Operations [synkronisera en arbetsorder mellan Dynamics 365 for Field Service och Finance and Operations](https://www.youtube.com/watch?v=hAB4TDVMjxU).
 
-> [!Video https://www.youtube.com/embed/hAB4TDVMjxU]
-
-[Synkronisera en arbetsorder mellan Field Service och Finance and Operations (YouTube video)](https://youtu.be/hAB4TDVMjxU)
+[![](https://img.youtube.com/vi/hAB4TDVMjxU/0.jpg)](https://www.youtube.com/watch?v=hAB4TDVMjxU)
 
 ## <a name="system-requirements-for-finance-and-operations"></a>Systemkrav för Finance and Operations
 Field Service-integration stöder följande versioner:

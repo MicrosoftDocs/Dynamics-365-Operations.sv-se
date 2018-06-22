@@ -3,7 +3,7 @@ title: "Anpassa användarupplevelsen"
 description: "Det här ämnet beskriver hur du kan anpassa Microsoft Dynamics 365 for Finance and Operations."
 author: TLeforMicrosoft
 manager: AnnBe
-ms.date: 10/10/2017
+ms.date: 05/24/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,10 +19,10 @@ ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7a828090fa34eb96d2b557eb06e48ad05b421ae8
-ms.openlocfilehash: 3d969069dd5f447b449df84b097527d3814aa338
+ms.sourcegitcommit: 862bbf4d1d9b0dc2b6dc418ee766ed4dedef49fe
+ms.openlocfilehash: 8ad5bd607f08d4e0b266d86a96a0b7f3e352c4cd
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/20/2017
+ms.lasthandoff: 05/24/2018
 
 ---
 
@@ -32,105 +32,122 @@ ms.lasthandoff: 11/20/2017
 
 Det här ämnet beskriver hur du kan anpassa Microsoft Dynamics 365 for Finance and Operations.
 
-Det finns många typer av anpassningsalternativ i Dynamics 365 for Finance and Operations. Vissa anpassningsalternativ är val som du gör i en lista över alternativ på en inställningssida. Vissa anpassningsalternativ är implicita, exempelvis håller Finance and Operations koll på bredderna på rutnätskolumner om du justerar dem, och på det expanderade/komprimerade läget för snabbflikar. Andra anpassningsalternativ är tydlig. För explicita anpassningsalternativ anger du en interaktiv anpassningsläget och ändra utseende på en sida genom att direkt administrera så att element eller agera på sidan. 
+Det finns tre grundläggande klasser anpassningar i Finance and Operations. 
+- Anpassningar som har gjorts på sidan Inställningar. Exempel omfattar färgtema och tidszon.
+- Anpassningar relaterade till sidanvändning kallas *implicita* anpassningar. Exempelvis håller Finance and Operations koll på bredden på rutnätskolumner om du justerar dem, och på det expanderade/komprimerade läget för snabbflikar. 
+- Anpassningar som en användare gör för att ändra utseendet på en sida genom att ändra hur ett element visas eller fungerar på den sidan, ofta genom ett interaktivt anpassningsläge. Dessa anpassningsalternativ kallas *uttryckliga* anpassningar. Användaren kan till exempel lägga till, dölja eller ordna om element på sidan.
 
-Alla anpassningsalternativ, oavsett slag, som en användare gör i Finance and Operations gäller endast för den användaren, oavsett vilket företag som användaren interagerar med. Ändringar som en användare gör att en sida inte påverka andra användare i systemet.
+Alla anpassningsalternativ som en användare gör i Finance and Operations gäller endast för den användaren, oavsett typen av anpassning eller vilket företag som användaren för närvarande interagerar med. Ändringar som en användare gör att en sida inte påverka andra användare i systemet.
 
 ## <a name="system-wide-options-for-the-current-user"></a>System-wide alternativ för aktuell användare
-I navigeringsfältet hittar du en växel bilden som heter **Inställningar**knappen meny. Öppna **menyn Inställningar** visas ett antal val. Val av **Alternativ** öppnar användarens **Alternativ** sida. Det finns fyra alternativflikar: 
+Sidan **användaralternativ** innehåller flera systeminställningar för den aktuella användaren. För att öppna sidan **användaralternativ**, välj menyn **inställningar** (växel-symbol) i navigeringsfältet, och välj sedan **användaralternativ**. Sidan **användaralternativ** har fyra flikar med olika användarinställningar:
 
--   **Visuellt:** - Används för att välja ett färgtema och standardstorleken för element på dina sidor.
--   **Inställningar:** - Här kan du välja standardinställningar för varje gång du öppnar Finance and Operations, inklusive företag, startsida, och standardläge för visning/redigering (som avgör om en sida är låst för visning eller öppnas för redigering varje gång du öppnar den). Du skar finner dessutom språk, tidszon och datum, tid och antal formatalternativ. Slutligen den här sidan innehåller ett antal diverse inställningar som varierar från version till version.
--   **Konto:** - Används för att ange ditt användar-ID och andra kontorelaterade inställningar.
--   **Arbetsflöde:** - Här kan du välja arbetsflödesrelaterade alternativ.
+- **Visuellt** - Välj en färg för att välja ett färgtema och standardstorleken för element på dina sidor.
+- **Inställningar** – Välj standardvärden som används varje gång du öppnar Finance and Operations. Dessa värden inkluderar företaget, den första sidan och standardläget visa/redigera. (Det/redigeringsläget bestämmer om en sida är låst för visning eller öppnas för redigering i varje gång du öppnar den.) Den här fliken innehåller också alternativ för språk, tidszon, och datum, tid och nummerformat. Den här fliken innehåller dessutom flera diverse inställningar som kan variera från version till version.
+- **Konto:** - Justera ditt användarnamn och andra kontorelaterade inställningar.
+- **Arbetsflöde** – Välj arbetsflöderelaterade alternativ.
 
 ## <a name="implicit-personalizations"></a>Uttryckliga anpassningsalternativ
-Uttryckliga anpassningsalternativ är de anpassningsalternativ som du utför enkelt genom att interagera med vissa kontroller som kommer ihåg deras aktuella synliga. 
+Uttryckliga anpassningsalternativ är de anpassningsalternativ som du utför enkelt genom att interagera med vissa kontroller som kommer ihåg deras aktuella synliga.
 
-- **Rutnätskolumner:** - Du kan justera bredden på en kolumn i en lista genom att välja storlekssortering bar till vänster eller till höger om kolumnrubriken och skjuta den åt vänster eller höger till önskad bredd. Finance and Operations kommer att lagra bredden som du vill ha, och visa den kolumnen med den bredden varje gång du öppnar sidan med den listan. 
+- **Rutnätskolumner:** - Du kan justera bredden på en kolumn i ett rutnät genom att välja storleksfältet till vänster eller till höger om kolumnrubriken och skjuta det åt vänster eller höger tills kolumnen har önskad bredd. Finance and Operations lagrar den bredd som du anger för en kolumn. Sedan ändras storleken på kolumnen till den bredden varje gång du öppnar sidan med det rutnätet.
+- **Snabbflikar** - Vissa sidor har expanderbara avsnitt som kallas *snabbflikar*. Finance and Operations lagrar information om snabbflikar som du har utökat och komprimerat. Varje gång du kommer tillbaka till sidan kommer samma snabbflikar att visas eller döljs, utifrån din senaste interaktion med sidan. I vissa fall kan du hjälpa till att förbättra systemet genom att komprimera en snabbflik eftersom Finance and Operations inte behöver hämta informationen för snabbfliken förrän snabbfliken expanderas. Såsom beskrivs senare i det här avsnittet kan du också ändra ordning på snabbflikarna på en sida.
+- **Faktarutor** - Vissa sidor har ett fönster som kallas *Faktaruta*. Den här rutan innehåller skrivskyddad information relaterad till det aktuella ämnet på sidan. Varje avsnitt i faktaruta rutan kallas en *faktaruta*. Du kan dölja eller visa hela faktarutan och du kan också visa eller dölja enskilda faktarutor. Finance and Operations sparar dina inställningar. Sedan utifrån varje gång du kommer tillbaka till sidan kommer faktarutans fönster och de enskilda faktarutorna att återställas baserat på din senaste interaktion med sidan. I vissa fall kan du hjälpa till att förbättra systemet genom att komprimera en faktaruta eftersom Finance and Operations inte behöver hämta informationen för den faktarutan förrän faktarutan expanderas.
+- **Åtgärdsfönster** – Ett *åtgärdsfönstret* visas längst upp på de flesta sidor. Åtgärdsfönstret innehåller knappar för många av de åtgärder som du kan utföra på den aktuella sidan. Knapparna ordnas ofta på flikarna. Du kan öppna hela åtgärdsfönstret och du kan konfigurera den så att den komprimeras som standard. Nästa gång du öppnar sidan kommer Finance and Operations att återställa det fästa tillståndet för åtgärdsfönstret. Om åtgärdsfönstret är fäst öppen, visar Finance and Operations även fliken med åtgärder som användes senast.
+- **Snabbfilter** – Ett *snabbfilter* visas ovanför många rutnät. Snabbfilter låter dig filtrera rutnät, baserat på en kolumn som du väljer. Finance and Operations lagrar den kolumn som du filtrerade på. Nästa gång som du öppnar sidan med det rutnätet kommer rutnätet att filtreras på samma kolumn. Du kan sedan filtrera rutnätet i en annan kolumn.
+- **Kolumnrubrikfilter** – när du filtrerar ett rutnät med hjälp av *Kolumnrubrikfilter*, kan du ändra filteroperatör för att hitta de data som du vill. Du kan exempelvis ändra operatorn från **börjar med** till **exakt**. Varje gång du använder ett kolumnrubrikfilter och ändrar filteroperatör kommer Finance and Operations att spara ändringen. Det återställer sedan filteroperatör nästa gång du filtrerar efter den kolumnen.
+- **Navigeringsfönstret** – du kan öppna *navigeringsfönstret* genom att välja knappen **meny** till vänster på en sida. (Knappen **meny** kallas ibland *hamburgare*, *hamburgarmeny*, eller *hamburgarknappen*.) Du kan fästa det öppna navigeringsfönstret eller du kan hålla det komprimerat som standard. När du fäster navigeringsfönstret håller Finance and Operations det öppet tills du komprimera det.
 
-- **Snabbflikar**: - Vissa sidor har expanderbara avsnitt som kallas *snabbflikar*. Finance and Operations kommer att lagra de snabbflikar som du har expanderat samt de snabbflikar som du har komprimerat. Varje gång du kommer tillbaka till sidan, samma snabbflikens kommer att utökas eller krympas baserat på den senaste gången du använde dem. I denna artikel beskriver vi hur du vill ändra ordning på snabbfliken sektioner. I vissa fall gör komprimering av en snabbflik att prestandan förbättras, detta eftersom Finance and Operations inte behöver hämta informationen för snabbfliken förrän snabbfliken expanderas. 
+## <a name="explicit-personalizations"></a>Uttryckliga anpassningsalternativ
+Olika personer och företag har ett annorlunda perspektiv på de viktigaste data eller data som inte behövs för hur de sköta verksamheten. I Finance and Operations kan du skräddarsy hur informationen beställs och interageras med. Du kan också ange att viss information ska döljas. Dessa funktioner är viktiga för en personlig och produktiv upplevelse och är exempel på uttryckliga anpassningar. Uttryckliga anpassningar är de anpassningar som du uttryckligen utför med avsikt att ändra utseende eller funktion för ett element eller en sida.
 
-- **Faktarutor** - Vissa sidor har ett fönster som kallas *Faktaruta*. Den här rutan innehåller skrivskyddad information relaterad till det aktuella ämnet på sidan. Varje avsnitt i faktaruta rutan kallas en faktaruta. Du kan expandera eller komprimera en faktaruta, så kommer Finance and Operations att spara inställningarna. I vissa fall gör komprimering av en faktaruta att prestanda förbättras, detta eftersom Finance and Operations inte behöver hämta informationen för faktarutan förrän faktarutan expanderas.
+### <a name="shortcut-menu-options"></a>Alternativ för snabbmeny
+Snabbmenyer innehåller några sätt för att uttryckligen ändra en sida så att den passar bättre till dina behov eller ditt företags behov. (EN snabbmeny kallas också en *högerklicksmeny* eller *kontextmenyn*.)
 
-## <a name="explicit-personalizations-using-the-personalization-toolbar"></a>Explicit anpassningsalternativ med anpassning toolbar
-Varje person och företag har olika perspektiv på vilka data som är viktigast för dem, eller vilka data finnas inte nödvändigt för det sätt de sköter sina affärer. Möjligheten att skräddarsy hur din information beställs, samverkas med eller till och med döljs, är nyckeln till att göra Finance and Operations till en personlig och givande upplevelse. 
+Några av de vanligaste och mest viktiga ändringar som kan göras till en sida visas direkt som ett alternativ på en snabbmeny. Om du till exempel vill lägga till eller dölja kolumner i ett rutnät, bara högerklicka på en kolumnrubrik och markera **lägg till kolumner** eller **dölj denna kolumn**.
 
-Explicita anpassningar är de anpassningar som du uttryckligen utför med avsikt att ändra utseende och funktion för ett element eller en sida, genom att välja en meny för anpassning. Den vanligaste typen av explicit anpassning är när du högerklickar på ett element och väljer **Anpassa**. (Observera att inte alla element på sidan kan anpassas). När du väljer den här metoden för anpassning visas elementets egenskapsfönster. 
+Dessutom är de vanligaste typerna av uttrycklig anpassning tillgängliga genom att högerklicka på ett element och sedan välja **anpassa**. (Observera att inte alla element på sidan kan anpassas). När du använder den här metoden för anpassning visas elementets egenskapsfönster.
 
-[![Anpassa egenskaper för ett element](./media/personalization-element-properties.jpg)](./media/personalization-element-properties.jpg) 
+[![Anpassa egenskaper för ett element](./media/personalization-element-properties.jpg)](./media/personalization-element-properties.jpg)
 
-Anpassa ett elements egenskaper på din sida på detta sätt om du bara vill ändra elementets etikett, dölja element så att det inte visas på sidan (detta ändrar inte några uppgifter, det visar helt enkelt ingen information för dig), inkludera informationen i snabbflikens sammanfattningsavsnitt (om elementet är i en snabbflik), hoppa över det här fältet om du gör fel eller gör det så att data inte kan ändras genom att markera det som "redigera inte". 
+Du kan använda egenskapsfönstret för att anpassa ett element på följande sätt:
 
-När du vill flytta eller dölja delar eller göra flera ändringar, kan du med hjälp av anpassningsfönstret toolbar, tillgänglig från elementen egenskapsfönstret genom att välja **anpassa formuläret**. Verktygsfältet för personlig anpassning finns även att tillgå via formulärets åtgärdsfönster, under gruppen **Anpassa** på fliken **Alternativ**. Välj **Anpassa detta formulär** för att visa verktygsfältet Anpassa. 
+- Ändra elementets etikett.
+- Dölj elementet så att den inte visas på sidan. Informationen i det här fältet tas inte bort eller ändras. Informationen visas bara inte på sidan längre.
+- Inkludera informationen i sammanfattningsavsnittet på snabbfliken (om elementet på en snabbflik).
+- Hoppa över fältet när du trycker på TABB för att flytta mellan fälten på sidan.
+- Förhindra att data i fältet (en post) inte kan redigeras.
 
-[![Verktygsfältet Anpassning](./media/personalization-personalizationtoolbar.jpg)](./media/personalization-personalizationtoolbar.jpg)
+Egenskapsfönstret kan omfatta andra anpassningsfunktioner, beroende på vilket element. Exempelvis egenskapsfönstret för en panel kan låta dig flytta upp den panelen till en instrumentpanel och egenskapsfönster för en instrumentpanel låter dig skapa en ny arbetsyta på den här instrumentpanelen.
 
-Verktygsfältet Anpassning har ett antal anpassningsåtgärder. 
+### <a name="the-personalization-toolbar"></a>Verktygsfält för anpassning
+När du vill flytta eller dölja element eller göra flera ändringar till en sida använder du verktygsfältet **anpassning**. För att öppna verktygsfältet **anpassning**, välj **anpassa formuläret** i ett elements egenskapsfönster. Du kan också välja **anpassa det här formuläret** i gruppen **anpassa** på fliken **alternativ** för varje sidas åtgärdsfönster.
 
-- **Verktyget Välj** när du vill välja och ändra egenskaperna för många element, ett i taget. Först genom att klicka på verktyget Välj och klicka sedan på element vars egenskaper du vill redigera. När du väljer ett element, elementet egendom fönster öppnas och du kan ändra egenskaperna för det elementet. Du kan upprepa processen för andra element på din blankett som personanpassning. I vissa fall kan du välja ett element och se att vissa egenskaper inte ändras. Detta innebär att Finance and Operations - baserat på det sätt det nuvarande elementet används - inte kan låta dig ändra egenskapen. Exempelvis du kan skinnet en fält som krävs. 
+[![Verktygsfält för anpassning](./media/personalization-personalizationtoolbar.jpg)](./media/personalization-personalizationtoolbar.jpg)
 
-- Välj **verktyget Flytta** när du vill välja och flytta en del till en annan plats inom aktuell grupp av element. (Du kan inte flytta ett inslag utanför dess överordnade grupp). Klicka först flytta verktyget och klicka sedan på det element som du vill flytta. När du klickar på det element som du vill flytta, kommer Finance and Operations att skanna formuläret för att avgöra vart detta element kan flyttas, och skapar sedan en serie "släppzoner" som visas som en färgad, fet linje bredvid det område där elementet kan släppas när du drar det inom den aktuella gruppen. 
+När värktygsfältet **anpassning** är öppet blir sidan icke-interaktiv. Därför kan du inte ange data eller expandera eller komprimera sektioner. Du kan bara ändra de element som utgör sidan.
 
-- Välj **Dölj** verktyg att välja och döljer en del. För att dölja en del, välj helt enkelt dölja verktyg och klicka på de element som du vill dölja. När du väljer att dölja verktyg, alla dolda element kommer att göras synliga och visas i en skuggig behållare så att du kan välja elementet för att visa det igen. 
+Följande verktyg är tillgängliga i fältet verktygsfältet **anpassning**:
 
-- Välj verktyget **Välj** för att se hur sidan kommer att se ut med de valda elementen dolda. 
+- Använd verktyget **Välj** för att välja och öppna ett elements egenskaper. Välj verktyget **Välj** och välj sedan elementet som egenskaperna ska ändras för. När du väljer ett element, öppnas elementets egenskapsfönster och du kan ändra egenskaperna för det elementet. Du kan upprepa processen för andra element som kan anpassas på den sidan. Men eftersom vissa element används på ett visst sätt låter Finance and Operations dig inte ändra en del av deras egenskaper. Därför när du väljer ett element kan du se att vissa av egenskaperna inte kan ändras. Exempelvis du kan skinnet en fält som krävs.
+- Använd verktyget **Flytta** för att flytta ett element till en annan plats inom aktuell grupp av element. (Du kan inte flytta ett element utanför dess överordnade grupp). Välj verktyget **flytta** och välj sedan elementet du vill flytta. När du markerar ett element kommer Finance and Operations att söka igenom för att avgöra om elementet kan flyttas eller inte. Det skapar sedan ett antal ”släppzoner”. När du drar runt elementet inom den aktuella gruppen visas varje ”släppzon” med färgade rader i fetstil bredvid området där elementet kan släppas.
+- Använd verktyget **Dölj** verktyg för att dölja ett element på sidan. Välj verktyget **Göm** och välj sedan elementet du vill gömma. När du väljer verktyget **Dölj** kommer alla element som döljs för närvarande vara synliga och visas i en skuggad behållare. Du kan sedan göra dem synliga. Genom att välja verktyget **Välj** kan du se hur sidan kommer att se ut med de valda elementen dolda.
+- Använd verktyget **sammanfattning** när du vill att ett element ska visas i sammanfattningen på snabbfliken. Sammanfattningsverktyget gäller endast fält som är på snabbfliken. När du väljer verktyget **Sammanfattning** har alla fält som har valts som sammanfattningsfält visas i en skuggad behållare. Du kan interaktivt lägga till fält på snabbfliken sammanfattning och ta bort fält från snabbfliken sammanfattning genom att markera fälten.
+- Använd **Hoppa över** för att ta bort ett element från sidan tangentbordstabbsekvens. När du väljer verktyget **Hoppa över** kommer alla element som för närvarande hoppas över att visas i en skuggad behållare. Du kan sedan göra delar av fliksekvensen igen.
+- Använd verktyget **Redigera** för att markera ett element som antingen redigerbart eller inte redigerbart. När du väljer verktyget **Redigera** kommer alla element som för närvarande inte är redigerbara att visas i en skuggad behållare. Du kan sedan göra dem redigerbara igen. Observera att vissa fält är obligatoriska och kan göras icke redigerbara. Ett hänglåssymbol visas bredvid dessa fält.
+- Använd knappen **infoga** för att visa en lista med element som kan infogas på en sida.
 
-- Välj **sammanfattning** verktyg när du vill ha en numeriskt värde eller sträng att visa i snabbfliken sammanfattning området. Sammanfattningen verktyg kommer endast att gälla områden som är inneslutna i en snabbfliken avsnitt. När du väljer sammanfattningsverktyget visar Finance and Operations alla fält som har valts som sammanfattningsfält genom att innesluta dem i ett nedtonad behållare. Du kan interaktivt lägga till och ta bort fält från ett snabbfliken sammanfattning genom att klicka på fältet. 
+    - Välj verktyget **fält** under **infoga** för att lägga till ett fält till sidan. När du använder verktyget **fält**, du kan lägga till fält som ingår i definitionen för sidan, men som för tillfället visas inte på sidan. Information om hur du skapar nya fält som inte ingår i definitionen av sidan finns [anpassade fält](user-defined-fields.md). När du har valt verktyget **fält** måste du först välja den grupp eller det område där du vill lägga till ett fält. En dialogruta visar en lista med fält som är relaterade till den valda gruppen eller området. Välj ett eller flera fält i dialogrutan och välj sedan **Infoga**. Om du vill ta bort ett fält som du tidigare lade du upprepar hela processen och ta bort markeringen i fältet i dialogrutan.
+    - Välj verktyget **PowerApp** under **infoga** i ett program som har skapats med hjälp av Microsoft PowerApps på sidan. För detaljerad information om hur du bäddar in en PowerApps-app på en sida finns i [bädda in PowerApps](embed-power-apps.md).
 
-- Välj verktyget **Hoppa över** för att ta bort ett element från sidan tangentbordstabbsekvens. När du väljer verktyget Hoppa över visas alla tillfället överhoppade element i en nedtonad behållare, så att du kan välja dem igen för att göra dem till en del av tabbsekvensen genom att välja ett överhoppat element. 
+- Välj knappen **Hantera** för att visa en lista över hanteringsalternativ som är relaterade till alla anpassningar för den aktuella sidan.
 
-- Välj verktyget **Redigera** när du vill markera ett element som *Redigerbart* eller *Ej redigerbart*. När du väljer Redigera verktyg, alla icke-redigerbara element visas i en skuggig behållare så att du kan välja att göra dem redigerbart. Observera att vissa fält är obligatoriska och kan göras icke redigerbara. Dessa fält visas med ett hänglås-ikonen bredvid dem. 
+    - Välj **Rensa** för att återställa sidan till dess installerade standardtillstånd. Alla anpassningar på den aktuella sidan kommer att rensas. Det finns ingen ångra-åtgärd. Använd därför endast detta alternativ om du är säker på att du vill återställa sidan.
+    - Välj **Importera** för att ladda en anpassning från en fil som du eller någon annan tidigare skapade för denna sida. Alla aktuella anpassningar för sidan ersätts med anpassningar från den valda filen.
+    - Välj **exportera** om du vill spara dina anpassningar för sidan till en fil. Du kan dela dina anpassningar med andra användare. Användarna behöver bara importera filen med dina anpassningar för sidan.
 
-- Välj **Lägg till** för att lägga till ett fält till din sida. Med Lägg till verktyg, du kan inte skapa ett nytt fält, men du kan lägga till fält som är en del av den aktuella sidan definition, men visas inte på sidan. När du väljer Lägg till verktyg, måste du först markera den grupp eller det område där du vill lägga till ett fält. En dialogruta visas en lista med fält som är relaterade till det avsnitt som du har valt. I dialogrutan kan du välja ett eller flera fält och klicka på **Infoga**. Om du senare vill ta bort ett fält som du tidigare har lagts till, upprepa processen, utan helt enkelt rensa fältet som du tidigare angett. 
+- Välj knappen **Stäng** för att stänga verktygsfältet **Anpassning** och återställa sidan till sin tidigare interaktiva status.
 
-- Välj knappen **Hantera** för att visa en lista över hanteringsalternativ som är relaterade till alla anpassningar för den aktuella sidan. 
+När verktygsfältet **anpassning** används, är det implicit att spara åtgärder. Dina anpassningar börjar gälla så fort du gör dem och du behöver inte välja en **spara**-knapp. I vissa fall visas en hänglåssymbol bredvid ett element när du väljer ett verktyg. Den här symbolen visar att du inte kan ändra egenskaperna för elementet som är relaterade till det valda verktyget eftersom ändringar i de egenskaperna som förhindrar att sidan fungerar som den ska.
 
-- Välj **Rensa** för att återställa sidan till dess installerade standardtillstånd. Alla anpassningar på den aktuella sidan kommer att rensas. Det finns ingen Ångra-åtgärd, så använd bara det här alternativet om du är säker på att du vill återställa sidan. 
+### <a name="adding-a-tile-list-or-link-to-a-workspace"></a>Lägga till en panel, lista eller länk till en arbetsyta
+En ytterligare anpassningsfunktion är tillgänglig för vissa sidor med listor. Knappen **lägga till arbetsyta** i gruppen **anpassa** på fliken **alternativ** i åtgärdsfönstret låter dig visa informationen från den aktuella listan i en viss arbetsyta. Du kan visa en filtrerad och sorterad informationen på arbetsytan eller också kan visa standardvyn. Du kan också ange om informationen ska visas på arbetsytan som en lista, en sammanfattande sida som kan visa antalet objekt i listan eller en länk.
 
-- Välj **Importera** en anpassning från en anpassning som du eller någon annan tidigare skapade för denna sida. Importera en anpassning kommer att rensa bort varje anpassningsalternativ som du har utfört på hela sidan och i stället använda alla anpassningsalternativ från den valda filen. Om du vill spara eller dela en anpassning, då får du välja **alternativet Exportera för** att spara anpassningsalternativ till en fil. 
+[![Lägg till på arbetsyta](./media/personalization-addtoworkspace.png)](./media/personalization-addtoworkspace.png)
 
-- Välj knappen **Stäng** för att stänga verktygsfältet och återställa sidan till sin tidigare interaktiva status. 
+- Lägg till en lista i en arbetsyta, sortera först eller filtrera listan på sidan så att den visar information som du vill ska visas på arbetsytan. Välj sedan **lägg till arbetsytan**. Välj en arbetsyta och sedan i fältet **Presentation** väljer du **Lista**. När du har valt **konfigurera**, visas en dialogruta, där du kan välja vilka kolumner som ska visas i listan i arbetsytan. Du kan också ange etiketten som ska användas för i listan i arbetsytan.
+- För att lägga till en panel till en arbetsyta, filtrera först listan på sidan så att den visar de data som du vill sammanfatta eller som vill ha snabb tillgång till. Välj sedan **lägg till arbetsytan**. Välj en arbetsyta och sedan i fältet **Presentation** väljer du **Panel**. När du har valt **konfigurera**, visas en dialogruta där du kan ange etiketten som ska användas för panelen på arbetsytan. Du kan också ange om panelen ska visa ett antal. När panelen har lagts till på arbetsytan kan du välja att öppna den aktuella sidan från arbetsytan och visa den filtrerade listan som associeras med panelen.
+- Om du vill lägga till en länk till en arbetsyta filtrerar du först listan så att den visar de data du är intresserad av. Välj sedan **lägg till arbetsytan**. Välj en arbetsyta och sedan i fältet **Presentation** väljer du **Länk**. När du har valt **konfigurera**, visas en dialogruta där du kan ange etiketten som ska användas för länken. Du kan också ange en etikett för ett nytt avsnitt som innehåller länken.
 
-Med anpassning toolbar, spara är implicit. Din anpassningsalternativ träder i kraft omedelbart när du gör dem och det finns inget behov av att klicka på **knappen Save** . I vissa fall visas en hänglåsikon bredvid ett element när du väljer ett verktyg. Detta innebär att du inte kan ändra egenskaperna som hör till det valda verktyget om sidan ska fungera korrekt. När det gäller anpassning toolbar finnas öppnat, sidan blir icke-interaktivt. Du kan inte ange data eller expandera eller komprimera sektioner.
+När din lista, panel eller länk har lagts till en arbetsyta kan du öppna den arbetsytan och beställa om elementen i den som du vill.
 
-## <a name="explicit-personalization-adding-a-tile-or-list-to-a-workspace"></a>Explicit anpassning: Lägga till en panel eller lista i en arbetsyta
-En del sidor med listor har ytterligare anpassningsfunktioner i sitt åtgärdsfönster, under gruppen **Anpassa** i fliken **Alternativ**. Välj **Lägg till i arbetsyta** för att öppna listrutan som ger dig möjlighet att visa informationen i aktuell lista (filtrerad och sorterad, eller standard) på en arbetsyta som en lista eller sammanfattningspanel (som kan användas för att visa antalet artiklar i listan). 
+### <a name="adding-a-summary-from-a-workspace-to-a-dashboard"></a>Lägga till en sammanfattning från en arbetsyta till en panel
+En del arbetsytor innehåller antalet paneler (detta är paneler som har nummer på dem) och vill kanske vill att dessa paneler ska visas på instrumentpanelen. På en arbetsyta, högerklicka på en räknepanel och välj **Anpassa**. I den andra panelens egenskapsfönster, markera **fäst på instrumentpanelen**. Nästa gång som du öppnar (och uppdaterar) den valda instrumentpanelen kommer antalet att visas under navigeringspanelen för den arbetsytan. Du kan välja att gå direkt till de data som representerar antalet.
 
-[![Lägg till på arbetsyta](./media/personalization-addtoworkspace.png)](./media/personalization-addtoworkspace.png) 
+### <a name="personalizing-your-dashboard"></a>Anpassa instrumentpanelen
+Instrumentpanelen är ofta den första sida som du ser när du öppnar Finance and Operations. Du kan anpassa instrumentpanelen så att den bara visar arbetsytans paneler som du vill visa. Du kan också ordna om panelerna så att de är i samma ordning som du föredrar att visa dem i, byta namn på din arbetsytas navigeringspaneler eller lägga till en helt ny panel i arbetsytan.
 
-Om du vill lägga till en arbetsyta ska du först sortera eller filtrera listan med den information du vill se på din arbetsyta och sedan välja dialogrutan **Lägg till i arbetsyta**. Välj därefter önskad arbetsyta och välj **Lista** i listrutan **Presentation**. När du väljer **Lista** öppnas en dialogruta där du kan välja vilka kolumner du vill se i listan samt etiketten för listan så som den visas på arbetsytan. 
+För att anpassa instrumentpanelen högerklickar du på en kakel och väljer sedan **anpassa** för att öppna panelens egenskapsfönster.
 
-Lägg till en sida till en arbetsyta, första filtrera listan för att representera data du vill summerade (eller vill ha snabb tillgång till). Öppna sedan listrutemenyn **Lägg till i arbetsyta**. Välj därefter önskad arbetsyta och välj **Panel** i listrutemenyn **Presentation**. När du väljer **Panel** öppnas en dialogruta där du kan ange en paneletikett och besluta om panelen ska visa ett räkneverk. När den placeras på en arbetsyta, låter panelen dig öppna den aktuella sidan från arbetsytan, och visa en lista över information som är relaterad till panelen. 
-
-När din lista eller panel läggs till en arbetsyta kan du sedan öppna arbetsytan och re-order i listan eller panel inom gruppen placerades.
-
-## <a name="explicit-personalization-adding-a-summary-from-a-workspace-to-a-dashboard"></a>Explicit anpassning: Lägga till en sammanfattning från en arbetsyta till en panel
-Vissa arbetsytor innehåller räknepaneler (paneler med siffror på) som också ska visas på instrumentpanelen. I arbetsytan högerklickar du på en räkneverkspanel, väljer **Anpassa** och sedan **Fäst på instrumentpanelen**. Nästa gång du navigerar till (och uppdatera de valda instrumentpanelen ser du att räkna under arbetsytan navigeringsmeny panel på instrumentpanelen.
-
-## <a name="explicit-personalization-personalizing-your-dashboard"></a>Explicit anpassning: Anpassa din instrumentpanel
-Instrumentpanelen är ofta den första sida som du ser när du öppnar Finance and Operations. Du kan anpassa instrumentpanelen för att döpa din arbetsyta navigation paneler, för att endast visa panelerna som du skulle vilja se, byta panel, eller arrangerar panelerna i den ordning du föredrar att se dem. 
-
-För att anpassa instrumentpanelen, välj någon panel och högerklicka för att öppna en snabbmeny. På snabbmenyn, välj **Anpassa**. Om den valda panelen är samma som du vill dölja eller ändra namn på eller hoppa över, du kan göra ändringar direkt i fönstret med egenskaper som har visats. Om du vill ordna paneler, välj sedan **anpassa denna form** i fastigheten för att öppna verktygsfältet anpassning. Du kan sedan använda verktyget **Flytta** för att arrangera panelerna.
+- Om du vill dölja eller byta namn på den valda färgen kan du ändra direkt i egenskapsfönstret.
+- Om du vill omorganisera arbetsytans paneler, välj i egenskapsfönstret **Anpassa det här formuläret** för att öppna verktygsfältet **Anpassning**. Du kan sedan använda verktyget **Flytta** för att arrangera panelerna som du vill.
+- Om du vill skapa en ny panel i arbetsytans egenskapsfönster, välj **lägg till en arbetsyta**. En ny panel i arbetsytan skapas längst ned på instrumentpanelen. Du kan byta namn på denna nya arbetsytapanel som helst. Du kan också lägga till listor, rutor och länkar till arbetsytan enligt avsnittet [Lägga till listor, rubriker eller länkar till arbetsytor](personalize-user-experience.md#adding-a-tile-list-or-link-to-a-workspace) i det här ämnet.
 
 ## <a name="administration-of-personalization"></a>Administration av anpassning
-När du anpassar en sida kan du dela dina anpassningar med andra användare genom att exportera den anpassade sidan. Du kan sedan be andra användare att gå till den anpassade sidan och importera den anpassningsfil som du har skapat, eller också kan du skicka dina anpassningar till en användare med administratörsbehörighet som sedan kan använda din anpassningsfil för många användare samtidigt.
+När du anpassar en sida kan du dela dina anpassningar med andra användare genom att exportera den anpassade sidan. Du kan sedan be andra användare att öppna den anpassade sidan och importera anpassningsfilen som du har skapat. Alternativt kan du ge dina anpassningar till en användare med administratörsbehörighet. Användaren kan sedan använda den anpassade filen till många användare samtidigt.
 
-Användare med administratörsbehörighet kan även hantera anpassningsalternativ för andra användare på sidan **Anpassning** . Den här sidan innehåller fyra flikar: 
+Användare med administratörsbehörighet kan även hantera anpassningsalternativ för andra användare på sidan **Anpassning** . Den här sidan innehåller fyra flikar:
 
-- **Tillämpa** – Du kan importera eller välja en anpassning för en eller flera användare. För att tillämpa en anpassning på en eller flera användare, välj en roll och användare med den rollen. Därefter markerar du en befintlig anpassning eller importerar en anpassningsfil som du vill använda på de användare som du har valt. Anpassningen valideras och gäller för de alla valda användare nästa gång de öppnar den markerade sidan.
-
-- **Rensa** – Du kan rensa en sida eller anpassningar för arbetsyta för en eller flera användare. Välj en sida för att se en lista över användare som har anpassat sidan. Sedan väljer du de användare vars anpassningar för den aktuella sidan ska avmarkeras och välj **Rensa**. Alla anpassningar som de valda användarna har kopplat till den valda sidan eller arbetsytan tas bort. Denna åtgärd kan inte ångras. Om sidan eller arbetsytan emellertid har en sparad anpassning, kan den anpassningen återimporteras.
-
-- **Manager per användare** – Välj en användare för att visa listan över sidor som personen har anpassat.  Du kan sedan välja att aktivera eller inaktivera personens förmåga att använda anpassning för specifika sidor eller för hela systemet.  D kan också importera, exportera eller rensa anpassningar för denna användare.
-
-- **System** – Du kan temporärt inaktivera alla anpassningar för samtliga användare i systemet. Detta tar inte bort anpassningarna utan återställer helt enkelt alla sidor till deras standardläge för alla användare. Om du senare återaktiverar anpassningen kommer alla anpassningar att återappliceras. Du kan också ta bort alla anpassningar permanent för samtliga användare i systemet. Glöm inte att exportera alla anpassningar som du kanske behöver senare innan du utför detta steg, detta då det är omöjligt att återställa raderade anpassningar senare. 
+- **Tillämpa** – Du kan importera eller välja en anpassning för en eller flera användare. Om du vill använda en anpassning till en eller flera användare, markerar du först en roll och användare som har rollen. Välj sedan en befintlig anpassning som gäller för de valda användare eller importera en anpassningsfil. Anpassningen valideras och gäller för de alla valda användare nästa gång de öppnar den markerade sidan.
+- **Rensa** – Du kan rensa alla anpassningar för arbetsyta för en eller flera användare. Välj först en sida eller arbetsyta för att se en lista över de användare som har anpassat den. Sedan väljer du de användare vars anpassningar för den aktuella sidan eller arbetsytan ska avmarkeras och välj **Rensa**. Alla anpassningar som de valda användarna har kopplat till den valda sidan eller arbetsytan tas bort. Denna åtgärd kan inte ångras. Om en anpassning sparades för sidan eller arbetsytan, kan den anpassningen emellertid återimporteras.
+- **Manager per användare** – Välj en användare för att visa listan över sidor som personen har anpassat. Du kan sedan aktivera eller inaktivera den valda användarens förmåga att använda anpassningar för specifika sidor eller för hela systemet. D kan också importera, exportera eller rensa anpassningar för denna användare.
+- **System** – Du kan temporärt inaktivera alla anpassningar för samtliga användare i systemet. I detta fall tas anpassningarna bort. Alla sidor återställs bara till standardinställningarna för alla användare. Om du senare återaktiverar anpassningen kommer alla anpassningar att återappliceras. Du kan också ta bort alla anpassningar permanent för samtliga användare i systemet. Det går inte att återställa anpassningar som har tagits bort. Se därför till att du har exporterat den här uppgiften för att exportera alla anpassningar som du kanske vill ha senare.
 
 ## <a name="personalization-of-inventory-dimensions"></a>Anpassning av lagerdimensioner
 
-När du anpassar inställningarna för lagerdimensionerna på en sida, beakta inställningarna som har skapats med hjälp av alternativet **Visa dimension**. Om du exempelvis använder anpassning för att dölja en kolumn för lagerdimensionens batchnummer och kolumnen visas nästa gång sidan öppnas, kan det bero på att dimensionsvisningsinställningen kontrollerar vilka lagerdimensionskolumner som visas. 
+När du anpassar inställningarna för lagerdimensionerna på en sida, beakta inställningarna som har skapats med hjälp av alternativet **Visa dimension**. Du använder till exempel anpassning om du vill dölja en kolumn för batchnummerdimensionen men kolumnen visas nästa gång som sidan öppnas. Detta händer på grund av att inställningarna för **Dimensionsvisning** kontrollerar de lagerdimensionskolumner som visas.
 
-Dimensionsvisningsinställningar tillämpas på alla sidor och dessa inställningar åsidosätter eventuella anpassade inställningar av lagerdimensionsfälten på enskilda sidor. 
+Inställningarna för **Dimensionsvisning** tillämpas på alla sidor och åsidosätter eventuella anpassade inställningar av lagerdimensionsfälten på enskilda sidor.
 
-För till exempel batchnumrets lagerdimension måste denna dimension tas bort som en del av alternativet **Visa dimensioner** för att tabellen inte ska visa den här kolumnen. Slutligen används ändringen inte bara på en specifik sida utan på alla sidor.
+Därför i det föregående exemplet om du inte vill att kolumnen för batchnummerlagerdimensionen ska visas, måste du avmarkera dimensionen som en del av alternativet **visa mått** för tabellen. Slutligen används ändringen inte bara på en specifik sida utan på alla sidor.
 
