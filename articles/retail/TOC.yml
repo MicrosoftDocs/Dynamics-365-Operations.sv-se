@@ -1,0 +1,553 @@
+- name: Välkommen till Dynamics 365 for Retail
+  href: index.md
+- name: Kom igång
+  items:
+    - name: Nyheter eller ändringar
+      href: get-started/whats-new.md
+    - name: Innan du köper Dynamics 365 for Retail
+      href: get-started/before-you-buy.md
+    - name: Registrera ett abonnemang på förhandsversionen
+      href: ../dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/retail/toc.json
+    - name: Distribuera en demonstrationsmiljö
+      href: ../dev-itpro/deployment/deploy-demo-environment.md?toc=/retail/toc.json
+    - name: Distribueringsalternativ
+      href: dev-itpro/choose-deployment.md
+- name: Betalningar
+  items:
+    - name: Betalningsmetoder
+      href: payment-methods.md
+    - name: 'Inställning, auktorisering och registrering av kreditkort'
+      href: ../financials/accounts-receivable/credit-card-authorizations.md
+    - name: Konfigurera betalningsmetoder för POS
+      href: cash-denominations.md
+    - name: Frågor och svar om betalningar
+      href: dev-itpro/payments-retail.md
+- name: Inköpsorder
+  items:
+    - name: Översikt över inköpsorder
+      href: ../supply-chain/procurement/purchase-order-overview.md
+    - name: Skapa inköpsorder
+      href: ../supply-chain/procurement/purchase-order-creation.md
+    - name: Produktinleverans mot inköpsorder
+      href: ../supply-chain/procurement/product-receipt-against-purchase-orders.md
+    - name: Godkänn och bekräfta inköpsorder
+      href: ../supply-chain/procurement/purchase-order-approval-confirmation.md
+    - name: Mobil arbetsyta för inköpsordergodkännande
+      href: ../supply-chain/procurement/purchase-order-mobile-workspace.md
+- name: Utdrag
+  items:
+    - name: Översikt över butiksutdrag
+      href: retail-statements.md
+    - name: 'Skapa, beräkna och bokföra ett utdrag för en butik'
+      href: tasks/create-calculate-post-statement-retail-store.md
+    - name: Förbättringar av bokföring av utdrag
+      href: statement-posting-EOD.md
+    - name: Parameterkonfigurationer för Retail-utdrag
+      href: tasks/parameter-configurations-retail-statements.md
+    - name: Betalningskonfigurationer för Retail-utdrag
+      href: tasks/payment-configurations-retail-statements.md
+    - name: Konfigurera och kör ett jobb för att beräkna utdrag
+      href: tasks/run-job-calculate-statements.md
+    - name: Konfigurera och kör ett jobb för att bokföra utdrag
+      href: tasks/run-job-post-statements.md
+    - name: Butikskonfigurationer för Retail-utdrag
+      href: tasks/store-configurations-retail-statements.md
+- name: Moms
+  items:
+    - name: Momsöversikt
+      href: ../financials/general-ledger/indirect-taxes-overview.md
+    - name: Momsberäkningsmetoder i fältet Ursprung
+      href: ../financials/general-ledger/sales-tax-calculation-methods-origin-field.md
+    - name: ' Momstilldelning och åsidosättningar'
+      href: ../supply-chain/procurement/tasks/sales-tax-assignment-overrides.md
+    - name: Beräkningsalternativ för hela beloppet och intervall för momskoder
+      href: ../financials/general-ledger/whole-amount-interval-options-sales-tax-codes.md
+- name: Kundtjänst
+  items:
+    - name: Översikt över kundtjänst
+      href: call-center-functionality.md
+    - name: Kundtjänstkataloger
+      href: call-center-catalogs.md
+    - name: Skapa en kundtjänstkatalog
+      href: create-call-center-catalogs.md
+    - name: Konfigurera leveranslägen och avgifter
+      href: configure-call-center-delivery.md
+    - name: Ställ in bedrägerivarningar
+      href: set-up-fraud-alerts.md
+    - name: Konfigurera kundtjänst
+      href: set-up-order-processing-options.md
+    - name: Ställ in ett kontinuitetsprogram för en kundtjänst
+      href: set-up-continuity-program.md
+    - name: Orderspärrar för kundtjänst
+      href: work-with-order-holds.md
+    - name: Betalningsalternativ
+      href: work-with-payments.md
+- name: Inställning och hantering av kanaler
+  items:
+    - name: Initiera startdata i en Retail-miljö
+      href: enable-configure-retail-functionality.md
+    - name: Definiera butikskanaler
+      href: define-maintain-retail-channels.md
+    - name: Sortimenthantering
+      href: assortments.md
+    - name: Översikt över onlinebutik
+      href: online-stores.md
+    - name: Konfigurera och installera Retail hardware station
+      href: retail-hardware-station-configuration-installation.md
+    - name: Tidrapportering för Retail
+      href: retail-time-attendance.md
+- name: Modern Point of Sale (MPOS) och Cloud POS
+  items:
+    - name: Välj mellan Modern POS och Cloud POS
+      href: MPOS-or-CPOS.md
+    - name: 'POS-operationer, online och offline'
+      href: pos-operations.md
+    - name: Demonstrationsdataskärmens layout i MOPS/CPOS
+      href: demo-data.md
+    - name: Översikt över produkt- och kundsök i kassan
+      href: POS-search-improvements.md
+    - name: Lagersökning i kassan
+      href: product-variants-POS.md
+    - name: Kringutrustning
+      items:
+        - name: Översikt över butikskringutrustning
+          href: retail-peripherals-overview.md
+        - name: Microsoft-testad POS-utrustning
+          href: microsoft-tested-pos-hardware-peripherals.md
+        - name: Kringutrustningssimulator för butik
+          href: dev-itpro/retail-peripheral-simulator.md
+        - name: 'Definiera och underhåll kanalklienter, kassor och maskinvarustationer'
+          href: define-maintain-channel-clients-registers-hw-stations.md
+    - name: Skärmlayout
+      items:
+        - name: Konfigurera skärmlayouter för POS
+          href: pos-screen-layouts.md
+        - name: Installera layoutdesignern för Retail POS
+          href: install-pos-layout-designer.md
+        - name: Välj meddelandeinställningar
+          href: Notifications-POS.md
+        - name: Kassaprogram och språkinställningar
+          href: pos-application-user-language-settings.md
+        - name: Ställa in bilder för MPOS
+          href: set-up-manage-images-retail-mpos.md
+    - name: Översikt över infokoder
+      href: info-codes-retail.md
+    - name: Kassaförbättringar för serialiserade produkter
+      href: serialized-inventory.md
+    - name: Produktrekommendationer
+      items:
+        - name: Översikt över anpassade produktrekommendationer
+          href: personalized-product-recommendations.md
+        - name: Lägga till en rekommendationskontroll i en POS-enhet
+          href: add-recommendations-control-pos-screen.md
+    - name: Offlinefunktioner för POS
+      href: pos-offline-functionality.md
+    - name: Hantering av skift och kassalåda
+      href: shift-drawer-management.md
+    - name: Kundorder
+      items:
+        - name: Översikt över kundorder
+          href: customer-orders-overview.md
+        - name: Kombinerade kundorder
+          href: hybrid-customer-orders.md
+    - name: Försäljare
+      items:
+        - name: Spåra provisioner i POS med försäljningsgrupper
+          href: pos-sales-groups-track-commissions.md
+    - name: Leverera en order från en annan butik
+      href: charge-send.md
+    - name: Enhetsaktivering
+      items:
+        - name: Konfigurera och installera MPOS
+          href: retail-modern-pos-device-activation.md
+        - name: Ställa in utökad inloggning för Cloud POS och MPOS
+          href: extended-logon.md
+        - name: Hantera Retail-konton och enheter från huvudkontoret
+          href: set-up-activation-accounts-validate-devices-hq.md
+    - name: Inleveranser
+      items:
+        - name: Ställ in kvittomallar
+          href: receipt-templates-printing.md
+        - name: Skicka e-postkvitton från MPOS
+          href: email-receipts.md
+    - name: Uppgiftsinspelare och hjälp för kassa
+      href: task-recorder-retail-pos.md
+- name: Orderuppfyllelse
+  items:
+    - name: Översikt över butikens orderuppfyllelse
+      href: Order-fulfillment-overview.md
+    - name: Ställ in uppfyllelse i butiken
+      href: Order-fulfillment-POS-setup.md
+    - name: Aktivera meddelanden för kassan
+      href: Notifications-POS.md
+- name: Övervakning och analys
+  items:
+    - name: Övervaka försäljningsresultat och marginaler
+      href: monitor-sales-margin-performance.md
+    - name: Analysera försäljningstrender och försäljningsmönster
+      href: analyze-sales-trends-patterns.md
+    - name: Utvärdera försäljningsresultat per produkt
+      href: sales-performance-products.md
+    - name: Utvärdera lönsamhet för kunder och produkter
+      href: assess-customer-product-profitability.md
+    - name: Analysera butiksresultat
+      href: store-performance-information.md
+    - name: Ställa in RFM-analys
+      href: set-up-rfm-analysis.md
+- name: Rabatter och prisjusteringar
+  items:
+    - name: Prishantering för butiksförsäljning
+      href: price-management.md
+    - name: Prisjusteringar och rabatter
+      href: price-adjustments-discounts.md
+    - name: Avgöra optimal kombination av överlappande rabatter
+      href: optimal-combination-overlapping-discounts.md
+    - name: Definiera kanalspecifika rabatter
+      href: define-channel-specific-discounts.md
+    - name: Förhindra rabatter för butiksprodukter
+      href: prevent-discounts.md
+    - name: Skapa kuponger för butiksförsäljning
+      href: retail-coupons.md
+- name: Produkter och marknadsföring
+  items:
+    - name: Översikt över produktinformation
+      href: ../supply-chain/pim/product-information.md
+    - name: Butik-hierarkier
+      href: retail-hierarchies.md
+    - name: Översikt över attribut och attributgrupper
+      href: attribute-attributegroups-lifecycle.md
+    - name: Skapa och hantera attribut
+      href: create-manage-attributes.md
+    - name: Ställa in butiksprodukter
+      href: set-up-retail-products.md
+    - name: Förbättrad produkt- och kategorihantering
+      href: category-management-product-creation.md
+    - name: Produktdimensioner
+      href: ../supply-chain/pim/product-dimensions.md
+    - name: Ställa in streckkoder
+      href: set-up-bar-codes.md
+    - name: Ställa in streckkodsmasker
+      href: set-up-bar-code-masks.md
+    - name: Lägg upp sortiment
+      href: set-up-assortments.md
+    - name: Sälja och returnera produkter utanför ett sortiment
+      href: sell-return-outside-assortments.md
+    - name: Standardorderinställningar för dimensioner och produktvarianter
+      href: ../supply-chain/production-control/default-order-settings.md
+    - name: Sök efter produkter och produktvarianter under orderregistrering
+      href: ../supply-chain/pim/search-products-product-variants.md
+- name: Lojalitet
+  items:
+    - name: Ställa in ett kundbonusprogram
+      href: set-up-customer-loyalty-program.md
+- name: Lager
+  items:
+    - name: Hantera butikslager
+      href: work-with-store-inventory.md
+    - name: Registrera serienummer i försäljningsprocessen
+      href: ../supply-chain/sales-marketing/register-serial-numbers-sales-process.md
+    - name: Lagerjournaler
+      href: ../supply-chain/inventory/inventory-journals.md
+    - name: Lagermärkesinventering
+      href: ../supply-chain/inventory/inventory-tag-counting.md
+    - name: FIFO med fysiskt värde och markering
+      href: ../supply-chain/cost-management/fifo-physical-value-marking.md
+    - name: LIFO-datum med fysiskt värde och markering
+      href: ../supply-chain/cost-management/lifo-date-physical-value-marking.md
+    - name: LIFO med fysiskt värde och markering
+      href: ../supply-chain/cost-management/lifo-physical-value-marking.md
+    - name: Datum för viktat medelvärde
+      href: ../supply-chain/cost-management/weighted-average-date.md
+    - name: Viktat genomsnitt med fysiskt värde och markering
+      href: ../supply-chain/cost-management/weighted-average-physical-value-marking.md
+    - name: Karantänorder
+      href: ../supply-chain/inventory/quarantine-orders.md
+    - name: Löpande genomsnittlig självkostnad
+      href: ../supply-chain/cost-management/running-average-cost-price.md
+    - name: Spåra löpande genomsnittlig kostnad per lagerdimension
+      href: ../supply-chain/cost-management/track-running-average-cost-per-inventory-dimension.md
+- name: Personal
+  items:
+    - name: 'Organisera arbetsstyrkan med avdelningar, jobb och befattningar'
+      href: ../talent/departments-jobs-positions.md
+    - name: Installera komponenter för ett jobb
+      href: ../talent/create-job.md
+- name: Lokaliserings- och regelfunktioner
+  items:
+    - name: Frankrike
+      items:
+        - name: Kassaapparater för Frankrike
+          href: localizations/emea-fra-cash-registers.md
+        - name: Riktlinjer för distribution av kassaapparater i Frankrike
+          href: localizations/emea-fra-deployment.md
+    - name: Indien
+      items:
+        - name: GST-integration (moms) för kassaapparater
+          href: localizations/apac-ind-cash-registers.md
+        - name: Riktlinjer för distribution av kassaapparater i Indien
+          href: localizations/apac-ind-loc-deployment-guidelines.md
+    - name: Norge
+      items:
+        - name: Kassaapparater för Norge
+          href: localizations/emea-nor-cash-registers.md
+        - name: Riktlinjer för distribution av kassaapparater i Norge
+          href: localizations/emea-nor-loc-deployment-guidelines.md
+    - name: Sverige
+      items:
+        - name: Kassaapparater för Sverige
+          href: localizations/emea-swe-cash-registers.md
+        - name: Exempel för Retail POS-integration med styrenheter
+          href: dev-itpro/retail-sdk/retail-sdk-control-unit-sample.md
+- name: Retail-uppgifter
+  items:
+    - name: Skapa en produkt
+      href: ../supply-chain/pim/tasks/create-product.md
+    - name: Konfigurera länkade produkter
+      href: ../supply-chain/pim/tasks/configure-linked-products.md
+    - name: Frisläpp en produkt/produktmall till juridiska personer
+      href: ../supply-chain/pim/tasks/release-product-product-master-legal-entities.md
+    - name: Baspris och handelsavtal
+      href: tasks/base-price-trade-agreements.md
+    - name: Kategoriprissättningsregler för att skapa handelsavtal
+      href: tasks/category-pricing-rules-trade-agreements.md
+    - name: ' Konfigurera kreditkortsbearbetning'
+      href: tasks/configure-credit-card-processing.md
+    - name: ' Konfigurera funktionsprofilen för en säljare'
+      href: tasks/configure-functionality-profile-sales-representative.md
+    - name: ' Konfigurera maskininlärningsdrivna produktrekommendationer'
+      href: tasks/configure-machine-learning-product-recommendations.md
+    - name: ' Skapa och associera en enhet'
+      href: tasks/create-associate-device.md
+    - name: Skapa och associera en maskinvarustation
+      href: tasks/create-associate-hardware-station.md
+    - name: Skapa och associera register
+      href: tasks/create-associate-registers.md
+    - name: Skapa kundtjänstorder
+      href: tasks/create-call-center-orders.md
+    - name: Skapa ekonomiska dimensioner för kassaregister och konfigurera dimensionsvärden för register
+      href: tasks/create-financial-dimensions-pos.md
+    - name: ' Skapa ekonomiska dimensioner för detaljhandelskanaler och konfigurera dimensionsvärden för butiker'
+      href: tasks/create-financial-dimensions-retail-channels.md
+    - name: ' Skapa online-kanaler och definiera kanalattribut'
+      href: tasks/create-online-channel-define-channel-attributes.md
+    - name: ' Skapa POS-behörighetsgrupper'
+      href: tasks/create-pos-permission-groups.md
+    - name: ' Skapa en visuell POS-profil  '
+      href: tasks/create-pos-visual-profile-2016-02.md
+    - name: ' Skapa produktförpackningar för inköpsorder'
+      href: tasks/create-product-packages-purchase-orders.md
+    - name: ' Definiera kundtjänst och kanalattribut'
+      href: tasks/define-call-center-channel-channel-attributes.md
+    - name: ' Definiera kanalattribut'
+      href: tasks/define-channel-attributes.md
+    - name: ' Definiera kontinuitetstidsplaner'
+      href: tasks/define-continuity-schedules.md
+    - name: ' Definiera bonusprogram'
+      href: tasks/define-loyalty-programs.md
+    - name: ' Definiera förmånsbelöningspoäng'
+      href: tasks/define-loyalty-reward-points.md
+    - name: ' Definiera förmånsscheman'
+      href: tasks/define-loyalty-schemes.md
+    - name: Utforma relationerna mellan organisationsenheter
+      href: tasks/design-relationships-between-organizational-units.md
+    - name: Hantera butikssortiment
+      href: tasks/manage-assortments-2016-11.md
+    - name: Utför självbetjäning för att hämta maskinvarustation
+      href: tasks/perform-self-service-download-hardware-station.md
+    - name: Bokför onlineförsäljningar och -betalningar
+      href: tasks/posting-online-sales-payments.md
+    - name: ' Bearbeta justeringar av förmånsbelöningspoäng'
+      href: tasks/process-loyalty-reward-point-adjustments.md
+    - name: Skjut produkter från distributionscenter till butik med centraliserad distribution
+      href: tasks/push-products-distribution-center-store-buyers-push.md
+    - name: Underhåll butiksprisjusteringar
+      href: tasks/retail-price-adjustments.md
+    - name: Generera och kör färdiga rapporter
+      href: tasks/run-out-box-reports.md
+    - name: Ställ in regler och parametrar för direktleverans och centraliserad distribution
+      href: tasks/set-up-rules-parameters-cross-docking-buyers-push.md
+    - name: Använd ett kontinuitetsprogram
+      href: tasks/use-continuity-program.md
+    - name: Konfigurera en arbetare
+      href: tasks/worker.md
+- name: Utveckling och administration i Retail
+  href: dev-itpro/dev-retail-home-page.md
+  items:
+    - name: Arkitektur
+      items:
+        - name: Komponenter i Microsoft Dynamics 365 for Finance and Operations - Retail
+          href: retail-components.md
+        - name: Arkitektur för Retail Server
+          href: dev-itpro/retail-server-architecture.md
+        - name: Kanalkommunikation för Retail
+          href: dev-itpro/define-retail-channel-communications-cdx.md
+        - name: MPOS-arkitektur
+          href: dev-itpro/retail-modern-pos-architecture.md
+        - name: Publiceringsarkitektur för onlinebutik i Retail
+          href: dev-itpro/retail-online-store-publishing-architecture.md
+        - name: Power BI-innehåll för Retail-kanalprestanda
+          href: ../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/retail/toc.json
+        - name: PA-DSS-certifiering (Payment Application Data Security Standards)
+          href: dev-itpro/PA-DSS-Certification.md
+        - name: Retail-funktionerna i lokala distributioner
+          href: retail-onprem.md
+    - name: Distribution och snabbkorrigeringar
+      items:
+        - name: Översikt av Retail Store Scale Unit
+          href: dev-itpro/retail-store-system-begin.md
+        - name: Konfiguration och installation av Retail Store Scale Unit
+          href: dev-itpro/retail-store-scale-unit-configuration-installation.md
+        - name: Konfiguration och installation av Retail Modern POS
+          href: retail-modern-pos-device-activation.md
+        - name: Hantera Retail-konton och enheter från huvudkontoret
+          href: set-up-activation-accounts-validate-devices-hq.md
+        - name: Enhetsaktivering för Retail POS
+          href: dev-itpro/retail-device-activation.md
+        - name: Säker Cloud POS för butik
+          href: dev-itpro/secure-retail-cloud-pos.md
+        - name: Konfiguration och installation av Retail Hardware Station
+          href: retail-hardware-station-configuration-installation.md
+        - name: Massdistribution av komponenter för självbetjäningspaket för Retail
+          href: dev-itpro/retail-mass-deployment.md
+        - name: Retail-komponenthändelser för diagnostik och felsökning
+          href: dev-itpro/retail-component-events-diagnostics-troubleshooting.md
+        - name: Tillämpa ett distribuerbart paket
+          href: ../dev-itpro/deployment/apply-deployable-package-system.md?toc=/retail/toc.json
+    - name: Uppgraderings- och N-1-stöd
+      items:
+        - name: Översikt över uppgradering och N-1-stöd
+          href: dev-itpro/overview-upgrade-n-minus1.md
+        - name: Installera N-1-komponenter
+          href: dev-itpro/n-1-installation-configuration.md
+    - name: Riktlinjer för implementering
+      items:
+        - name: Riktlinjer för implementering vid enhetshantering
+          href: implementation-considerations-devices.md
+    - name: Miljökonfiguration
+      items:
+        - name: Lägg till länkar till organisationens juridiska villkor och sekretesspolicy
+          href: ../dev-itpro/sysadmin/legal-terms-privacy-statement.md?toc=/retail/toc.json
+        - name: Hantera Bing-kartor
+          href: dev-itpro/manage-bing-maps.md
+    - name: Lokalisera resurser för Retail-tillägg och etikettfiler
+      href: dev-itpro/extension-resource-localization.md
+    - name: Utbyggbarhet för kassa
+      items:
+        - name: Skärmlayouter för Retail POS
+          href: pos-screen-layouts.md
+        - name: Installera layoutdesignern för kassa
+          href: install-pos-layout-designer.md
+        - name: Konfigurera MPOS för offlineläge
+          href: dev-itpro/retail-modern-pos-offline.md
+        - name: Utöka visningsvy för POS Dual
+          href: dev-itpro/pos-dual-display-extension.md
+        - name: 'MPOS och Cloud POS, utbyggbarhet för utlösare'
+          href: dev-itpro/modern-pos-trigger-extensibility.md
+        - name: Lägg till en anpassad kontroll i en POS-vy
+          href: dev-itpro/pos-custom-control.md
+        - name: Lägg till en ny POS-åtgärd i POS-layouten
+          href: dev-itpro/add-POS-operations.md
+        - name: Tillägg för POS-betalning
+          href: dev-itpro/pos-payment-extension.md
+        - name: Stöd för externa presentkort
+          href: dev-itpro/gift-card.md
+        - name: Skapa en Retail Experience-app
+          href: dev-itpro/create-retail-experience-app.md
+    - name: Översikt av och utbyggbarhet för Hardware Station
+      href: dev-itpro/hardware-station-extensibility.md
+    - name: Utbyggbarhet för Retail Server
+      items:
+        - name: Utöka en Retail Server OData-styrenhet
+          href: dev-itpro/extend-retail-server-odata-controller.md
+        - name: Styrenheter för webb-API och OData
+          href: dev-itpro/odata-controllers-api.md
+        - name: 'API:er för Retail Server-kund och -konsument'
+          href: dev-itpro/retail-server-customer-consumer-api.md
+        - name: Utöka metadata
+          href: dev-itpro/extend-metadata.md
+        - name: Utöka Commerce Runtime så att det stöder offlineläge för kassa
+          href: dev-itpro/call-crt-service-offline.md
+    - name: Utbyggbarhet för Commerce Runtime
+      items:
+        - name: Översikt över Commerce Runtime
+          href: dev-itpro/commerce-runtime-overview.md
+        - name: Commerce Runtime-tjänster
+          href: dev-itpro/crt-services.md
+        - name: Utbyggbarhet för Commerce Runtime och Retail Server
+          href: dev-itpro/commerce-runtime-extensibility.md
+        - name: Lägg till kundpreferensdata i en kanaldatabas
+          href: dev-itpro/add-customer-preference-channel.md
+        - name: Lägg till egenskaper i en försäljningsorder
+          href: dev-itpro/add-properties-sales-order.md
+        - name: Utbyggbarhet och utlösare för Commerce Runtime
+          href: dev-itpro/commerce-runtime-extensibility-trigger.md
+        - name: 'Exempel på utlösare: Spärra transaktionen'
+          href: dev-itpro/trigger-example-blocking-transaction.md
+        - name: 'Exempel på utlösare: Returpolicy'
+          href: dev-itpro/trigger-example-return-policy.md
+    - name: Utbyggbarhet för e-handel
+      items:
+        - name: Konfigurera en onlinebutik
+          href: dev-itpro/configure-online-store.md
+        - name: Konfigurera autentiseringsproviders
+          href: dev-itpro/configure-authentication-providers.md
+        - name: E-handelsplattform
+          href: dev-itpro/ecommerce-platform.md
+        - name: SDK för e-handelsplattform
+          href: dev-itpro/ecommerce-platform-sdk.md
+    - name: Utbyggbarhet för betalningskoppling
+      items:
+        - name: Betalningsintegration med en betalningsterminal
+          href: dev-itpro/end-to-end-payment-extension.md
+        - name: Implementera en betalningskoppling och betalningsenhet (vitbok)
+          href: 'http://download.microsoft.com/download/4/D/7/4D7C6B05-0C23-4C6C-BA13-AB62ED08AA61/The%20Guide%20to%20Implementing%20Payment%20Connector%20and%20Payment%20Device.docx'
+        - name: Distribuera en betalningskoppling
+          href: dev-itpro/deploy-payment-connector.md
+        - name: Skapa en Windows Installer för en betalningskoppling
+          href: dev-itpro/create-windows-installer-payment-connector.md
+    - name: SDK för Retail
+      href: dev-itpro/retail-sdk/retail-sdk-overview.md
+      items:
+        - name: Integrera SDK för Retail med kontinuerligt byggsystem
+          href: dev-itpro/retail-sdk/integrate-retail-sdk-continuous-build.md
+        - name: 'Exempel på utbyggbarhet: SDK för Retail'
+          href: dev-itpro/retail-sdk/retail-sdk-extensibility-samples.md
+        - name: Förpackning för SDK för Retail
+          href: dev-itpro/retail-sdk/retail-sdk-packaging.md
+        - name: 'Exempel för SDK för Retail '
+          href: dev-itpro/retail-sdk/retail-sdk-samples.md
+          items:
+            - name: Tilläggspunkter för följesedlar
+              href: dev-itpro/extensions-shipping-carrier-integration.md
+        - name: Tillägg för kanaldatabas
+          href: dev-itpro/channel-db-extensions.md
+        - name: CDX-utbyggbarhet
+          href: dev-itpro/cdx-extensibility.md
+        - name: Lägg till anpassade fält i POS-panelen
+          href: dev-itpro/custom-field-pos-totals.md
+        - name: Orderattribut
+          href: dev-itpro/order-attributes.md
+        - name: Kundattribut
+          href: dev-itpro/customer-attributes.md
+        - name: 'Retail Typescript och C# proxy'
+          href: dev-itpro/typescript-proxy-retail-pos.md
+        - name: Kör exempel för Retail POS
+          href: dev-itpro/pos-run-samples.md
+        - name: Utöka befintliga POS-vyer om du vill lägga till egna kolumner och knappar i appfältet
+          href: dev-itpro/pos-view-extension.md
+        - name: Lägg till egna kontroller på transaktionssidor för Retail Modern POS
+          href: dev-itpro/pos-custom-transaction.md
+        - name: Lägg till egna kolumner i transaktionsrutnätet för kassa
+          href: dev-itpro/pos-custom-transaction-column.md
+        - name: Anropa ett kassa-API eller en åtgärd från ett kassatillägg
+          href: dev-itpro/pos-api-extension.md
+        - name: Utlösare och utskrift för Retail Modern POS
+          href: dev-itpro/pos-trigger-printing.md
+        - name: Lägg till en anpassad kontroll i en designerbaserad vy (ej skärm) för Retail Modern POS
+          href: dev-itpro/pos-control-non-screen.md
+        - name: Konfigurationssteg för Retail-utvecklare som arbetar med molnstyrda utvecklingsrutor
+          href: dev-itpro/cloud-dev-box.md
+    - name: Commerce Runtime
+      items:
+        - name: Lojalitetstillägg
+          href: dev-itpro/retail-sdk/loyalty-extension-sample.md
