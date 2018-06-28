@@ -3,14 +3,14 @@ title: Konfigurera kvittning
 description: "Hur och när transaktioner kvittas kan vara komplexa ämnen så det är nödvändigt att du förstår och definierar parametrarna korrekt så att de uppfyller dina verksamhetskrav. Det här avsnittet ger en beskrivning av de parametrar som används för kvittning av både Leverantörsreskontra och Kundreskontra."
 author: kweekley
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 05/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: CustOpenTrans, CustParameters, VendOpenTrans, VendParameters
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 14601
 ms.assetid: 6b61e08c-aa8b-40c0-b904-9bca4e8096e7
@@ -19,10 +19,10 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 0ed520ce3a67fab81da24b36b042152f530d75dd
+ms.sourcegitcommit: 66e2fdbf7038a2c15fb373d4f96cd6e6c4c87ea0
+ms.openlocfilehash: 1361bce94f6542112cf29e369f2238f211d0647e
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/23/2018
 
 ---
 
@@ -58,7 +58,14 @@ Följande parametrar påverkar hur kvittningar bearbetas i Microsoft Dynamics 36
 - **Prioritera betalning (endast KR)** – Ställ in alternativet på **Ja** för att aktivera knappen **Markera efter prioritet** på sidorna **Ange kundbetalningar** och **Kvitta transaktioner**. Den här knappen låter användare tilldela fördefinierade kvittningsorder till transaktioner.  När kvittningsordern har tillämpats på en transaktion kan ordern och betalningsallokeringen ändras innan du bokför.
 - **Använd prioritering för automatiska kvittningar** – Ange detta alternativ som **Ja** för att använda angiven prioritetsordning när transaktionerna har kvittats automatiskt. Det här fältet visas endast om alternativen **Prioritera kvittning** och **Automatisk kvittning** ställs in på **Ja**.
 
+## <a name="fixed-dimensions-on-accounts-receivableaccounts-payable-main-accounts"></a>Fasta dimensioner för huvudkontona kundreskontra/leverantörsreskontra
 
+När fasta dimensioner används på det huvudkontona kundreskontra/leverantörsreskontra ska ytterligare redovisningsposter och två ytterligare leverantörstransaktioner bokföras av kvittningsprocessen. Kvittning jämför kontona för kundreskontra/leverantörsreskontra från faktura och betalning.  När betalning och kvittning slutförs tillsammans, vilket är ett vanligt scenario, bokförs betalningens redovisningpost inte i huvudboken förrän kvittningsprocessen också har slutförts. På grund av händelser för bearbetning går inte kvittning att fastställa det faktiska huvudbokskontot för kundreskontra/leverantörsreskontra från betalningens redovisningspost. Kvittning återskapar vad redovisningskontot ska vara för betalningen. Detta är ett problem när en fast dimension används för huvudkontot för kundreskontra/leverantörsreskontra.
 
+Om du vill återskapa redovisningskontot huvudkontot för kundreskontra/leverantörsreskontra hämtas från bokföringsprofilen och ekonomiska dimensioner hämtas från betalningens leverantörstransaktionspost enligt definitionen i betalningsjournalen. Fasta dimensioner är inte är standard för betalningsjournaler, men tillämpas i stället på huvudkontot som ett sista steg i bokföringsprocessen. Därför är det sannolikt att det fasta dimensionsvärdet inte ingår i leverantörstransaktionen, såvida det inte hämtas som standard från en annan källa, t.ex. leverantören. Det återskapade kontot inkluderar inte fast dimension. Kvittningsbearbetning bestämmer att en justerande post måste skapas, eftersom fakturan bokförs med det fasta dimensionsvärdet och det återskapade kontot gör inte detta.  När kvittningen fortsätter med bokföring av justerande post, är det sista steget i bokföringen att använda fast dimension. Genom att lägga till fast dimension till justeringsposten bokförs den med en debet och kredit till samma redovisningskonto. Kvittning kan inte återställa redovisningsposten.
 
+För att undvika ytterligare redovisningsposter, debet och kredit till samma redovisningskonto, bör följande lösningar övervägas beroende på företagets behov. 
+
+-   Organisationer använder ofta fasta dimensioner som fylls i med nollvärden en finansiell dimension som inte krävs. Detta är ofta fallet för balansräkningskonton, till exempel Kundreskontra/Leverantörsreskontra. Kontostrukturer kan användas för att spåra ekonomiska dimensioner som vanligtvis fylls i med nollvärden.  Du kan ta bort den ekonomiska dimensionen för balansräkningskonton, utan att behöva använda fasta dimensioner.
+-   Om din organisation kräver fasta dimensioner på huvudkontot för Kundreskontra/Leverantörsreskontra, hitta ett sätt att ställa in fast dimension till betalning som standard så att fasta dimensionsvärdet lagras på leverantörstransaktionen för betalningen. På så sätt kan systemet återställa huvudkontona för Kundreskontra/Leverantörsreskontra att inkludera de fasta dimensionsvärdena. Fast dimensionsvärden kan definieras som standard på antingen leverantörer eller journalnamnet för betalningsjournalen.
 

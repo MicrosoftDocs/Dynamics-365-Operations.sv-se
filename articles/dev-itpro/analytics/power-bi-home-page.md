@@ -1,9 +1,9 @@
 ---
-title: "Power BI-innehåll"
-description: "Det här avsnittet beskriver Power BI-innehåll som är tillgängligt och hänvisar till resurser där du kan lära dig mer om det."
+title: "PowerBI.com-lösningar"
+description: "Det här avsnittet listar PowerBI.com-lösningar som är tillgängliga och hänvisar till resurser där du kan lära dig mer om lösningen."
 author: sericks007
 manager: AnnBe
-ms.date: 04/02/2018
+ms.date: 05/08/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,69 +19,49 @@ ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 2473fa408ae8884b8713198debfff489ff6e6c46
+ms.sourcegitcommit: cf531c3a8f3bdb17314d1de436b98249169f82a3
+ms.openlocfilehash: 0aa9971226e5aa79cab85f098e098dbb789a1e2d
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 05/22/2018
 
 ---
 
-# <a name="power-bi-content"></a>Power BI-innehåll
-[!include [banner](../includes/banner.md)]
+# <a name="powerbicom-solutions"></a>PowerBI.com-lösningar
+Följande PowerBI.com-lösningar är tillgängliga för Dynamics 365 för Finance and Operations-miljöer. 
 
-Det här avsnittet beskriver Microsoft Power BI-innehåll som är tillgängligt och hänvisar till resurser där du kan lära dig mer om det.
+## <a name="powerbicom-solutions-available-from-lifecycle-services-lcs"></a>PowerBI.com-lösningar tillgängliga från Lifecycle Services (LCS)
 
-## <a name="power-bi-content-for-dynamics-365-for-finance-and-operations"></a>Power BI-innehåll för Dynamics 365 for Finance and Operations
-Om du använder Microsoft Dynamics 365 for Finance and Operations finns följande Power BI-innehåll:
-
-- [Faktiskt kontra Power BI-innehåll för budget](ledger-budgets-power-bi.md)
-- [Power BI-innehåll med förmåner](benefits-power-bi.md)
-- [Power BI-innehåll för kassaöversikt](../../financials/cash-bank-management/Cash-Overview-Power-BI-content.md)
-- [Power BI-innehåll för översikt över ekonomichef](CFO-power-bi.md)
-- [Power BI-innehållspaket för kompensationer](compensation-power-bi.md)
-- [Kostnadsredovisningsanalys Power BI-innehåll](cost-accounting-analysis-content-pack.md) 
-- [Power BI-innehåll om kostnadshantering](cost-management-content-pack.md)    
-- [Power BI innehållspaket för kredit- och inkassohantering](../../financials/accounts-receivable/credit-collections-power-bi.md)
-- [Utveckling av medarbetare Power BI-innehåll](employee-development-PBI.md) 
-- [Power BI - ekonomisk information](financial-insights.md)
-- [Innehållspaket för ekonomiska resultat för Power BI](financial-performance-power-bi-content-pack.md)
-- [Power BI-innehåll för hantering av anläggningstillgång](../../financials/fixed-assets/Fixed-asset-management-workspace.md)
-- [Learning Power BI-innehåll](learning-power-bi.md)
-- [Power BI-innehåll för praxischef](practice-manager-power-bi.md)
-- [Power BI-innehåll för produktionsprestanda](production-performance-power-bi.md)
-- [Analys av inköpsutgift – Power BI-innehåll](purchase-content-pack-for-power-bi.md) 
-- [Power BI-innehåll för rekrytering](recruiting-analysis-power-bi-content-pack.md) 
-- [Innehållspaket för försäljnings- och lönsamhetsprestanda för Power BI](sales-profitability-performance-content-pack.md)
-- [Power BI-innehåll för leverantörsbetalningar](../../financials/accounts-payable/Vendor-payments-workspace.md)
-- [Power BI-innehåll för lagerställets prestanda](warehouse-power-bi-content.md)
-- [Power BI-innehåll för personalmätningar](workforce-analysis-power-bi-content-pack.md)  
-
-## <a name="power-bi-content-for-dynamics-365-for-operations-version-1611"></a>Power BI-innehåll för Dynamics 365 for Operations version 1611
-Om du använder Microsoft Dynamics 365 for Operations version 1611 finns följande Power BI-innehåll:
-
-- [Power BI-innehåll om kompensationer och förmåner](compensation-and-benefits-analysis-power-bi-content-pack.md)   
-- [Kostnadsredovisningsanalys Power BI-innehåll](cost-accounting-analysis-content-pack.md) 
-- [Power BI innehållspaket för kredit- och inkassohantering](../../financials/accounts-receivable/credit-collections-power-bi.md)
-- [Power BI-innehåll för medarbetares kompetenser och utveckling](employee-competencies-and-development-analysis-power-bi-content-pack.md) 
-- [Innehållspaket för ekonomiska resultat för Power BI](financial-performance-power-bi-content-pack.md)
-- [Power BI-innehåll för organisationsutbildning](organizational-training-analysis-power-bi-content-pack.md) 
-- [Power BI-innehåll för praxischef](practice-manager-power-bi.md)
-- [Power BI-innehåll för produktionsprestanda](production-performance-power-bi.md)
-- [Analys av inköpsutgift – Power BI-innehåll](purchase-content-pack-for-power-bi.md) 
-- [Power BI-innehåll för rekrytering](recruiting-analysis-power-bi-content-pack.md) 
-- [Innehållspaket för försäljnings- och lönsamhetsprestanda för Power BI](sales-profitability-performance-content-pack.md)
-- [Power BI-innehåll för lagerställets prestanda](warehouse-power-bi-content.md)
-- [Power BI-innehåll för personalmätningar](workforce-analysis-power-bi-content-pack.md)  
-
-## <a name="power-bi-content-for-microsoft-dynamics-ax"></a>Power BI-innehåll för Microsoft Dynamics AX
-Om du använder Microsoft Dynamics AX 7.0 or Microsoft Dynamics AX 7.0.1 finns följande Power BI-innehåll:
+Följande PowerBI.com-lösningar är tillgängliga i det delade resursbiblioteket för LCS. Hänvisa till versionsinformationen i det delade resursbiblioteket för att hämta rätt version för din miljö. 
 
 > [!Note]
-> Dessa innehållspaket är inaktuella enligt beskrivningen i [Power BI innehållspaket publicerade på PowerBI.com](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/migration-upgrade/deprecated-features#power-bi-content-packs-published-to-powerbicom).
+> De flesta av PowerBI.com-lösningarna i listan nedan har bäddats in i analytiska arbetsytor i tidigare versioner av Dynamics 365 for Finance and Operations. Genom att använda analytiska arbetsytor tas behovet att hämta dessa lösningar från ett delat resursbibliotek i LCS bort. Avsnitten i den här listan anger var dessa PowerBI.com-lösningar har bäddats i Finance and Operations, där så är tillämpligt. 
 
-- [Power BI-innehåll om kostnadshantering](cost-management-content-pack.md)    
-- [Innehållspaket för ekonomiska resultat för Power BI](financial-performance-power-bi-content-pack.md)
-- [Power BI-innehåll för Resultat för butikskanal](retail-channel-performance-dashboard-power-bi-data.md) 
+- [Utfall kontra budget](ledger-budgets-power-bi.md)
+- [Kassaöversikt](../../financials/cash-bank-management/Cash-Overview-Power-BI-content.md)
+- [Kompensation och förmåner](compensation-and-benefits-analysis-power-bi-content-pack.md)   
+- [Kostnadsredovisningsanalys](cost-accounting-analysis-content-pack.md) 
+- [Hantering av kredit och inkasso](../../financials/accounts-receivable/credit-collections-power-bi.md)
+- [Medarbetares kompetenser och utveckling](employee-competencies-and-development-analysis-power-bi-content-pack.md) 
+- [Finansiellt resultat](financial-performance-power-bi-content-pack.md)
+- [Hantering av anläggningstillgångar](../../financials/fixed-assets/Fixed-asset-management-workspace.md)
+- [Organisationsutbildning](organizational-training-analysis-power-bi-content-pack.md) 
+- [Praxischef](practice-manager-power-bi.md)
+- [Produktionsprestanda](production-performance-power-bi.md)
+- [Inköps- och utgiftsanalys](purchase-content-pack-for-power-bi.md) 
+- [Rekrytering](recruiting-analysis-power-bi-content-pack.md)
+- [Försäljnings- och lönsamhetsresultat](sales-profitability-performance-content-pack.md)
+- [Leverantörsbetalningar](../../financials/accounts-payable/Vendor-payments-workspace.md)
+- [Resultat för lagerställe](warehouse-power-bi-content.md)
+- [Personalmätningar](workforce-analysis-power-bi-content-pack.md)  
 
+## <a name="powerbicom-solutions-available-from-appsource"></a>PowerBI.com-lösningar är tillgängliga från AppSource
 
+Följande PowerBI.com-lösningar finns på [Microsoft AppSource](https://appsource.microsoft.com).
+
+> [!Note]
+> Dessa lösningar är inaktuella enligt beskrivningen i [Power BI innehållspaket som finns på AppSource](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
+
+- Kostnadshantering    
+- [Finansiellt resultat](financial-performance-power-bi-content-pack.md)
+- [Resultat för butikskanal ](retail-channel-performance-dashboard-power-bi-data.md) 
 

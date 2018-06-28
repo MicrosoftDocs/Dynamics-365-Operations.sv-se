@@ -18,10 +18,10 @@ ms.author: johanho
 ms.search.validfrom: 2017-12-31
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 838dc1e5867b8380823275aba5fc425003a54523
+ms.sourcegitcommit: 83648a93f367510d7b04bbd04a9f37689ecfaa59
+ms.openlocfilehash: 2bccabb033f5ba142b145e69930ce516aad596f2
 ms.contentlocale: sv-se
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 05/23/2018
 
 ---
 
@@ -43,8 +43,7 @@ Den metod som används för att frisläppa strukturlista och formelrader styrs a
 - **Frisläpp strukturliste- och formelrader som en del av frisläppningen av produktion eller batchorder** – med den här metoden frisläpps strukturlista och formelrader för en produktions- eller batchorder som en del av processen med att frisläppa ordern. Vanligtvis under frisläppning av produktions- eller batchorder kommer produktionsjobb att frisläppas till verkstadsarbetare och produktionspapper skrivs ut. Under denna process kommer status för ordern att ändras till **frisläppt**.
 - **Frisläpp strukturliste- och formelrader via ett batchjobb eller som en manuell åtgärd** – med den här metoden kan strukturlista och formelrader endast frisläppas genom batchjobbet **automatisk version av strukturliste- och formelrader** eller som en manuell åtgärd. För att manuellt frisläppa strukturliste- och formelrader på sidan för produktionorderlista eller produktionsorderinformationssidan i åtgärdsfönstret, väljer du **Frisläpp till lagerställe**.
 
-Titta på det här korta videoklippet på YouTube för en snabb demonstration av hur du kan frigöra Strukturlista och formelrader till produktion med hjälp av ett batch-jobb:
-[!Video <https://www.youtube.com/embed/8urAJn50dQ8>]
+För en snabb demonstration av hur du frisläpper strukturlistor och formlrader till produktion genom att använda ett batchjobb kan du titta på den här korta YouTube-videon: [Frisläppa produktionsplockning till lagerstället i batch](https://www.youtube.com/watch?v=8urAJn50dQ8).
 
 ## <a name="releasing-the-bom-and-formula-lines-by-using-a-batch-job"></a>Att frisläppa strukturliste- och formelrader med hjälp av ett batchjobb
 
@@ -85,8 +84,7 @@ Följande bild visar en produktionsorder som använder två åtgärder 10 och 20
 
 ![Exempel på frisläppning av material per operationsnummer](media/two-operations.PNG)
 
-Titta på det här korta videoklippet på YouTube för en snabb demonstration av hur du kan frigöra material i förhållande till mängden färdiga varor:
-[!Video <https://www.youtube.com/embed/Rm3ojAz6Zu0>]
+Titta på den här korta YouTube-videon för en snabb demonstration av hur du frisläpper material i förhållande till mängden färdiga varor: [Förbättringar av tillverkningsorderns leveransprocess i Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=Rm3ojAz6Zu0)
 
 ### <a name="release-material-in-proportion-to-the-amount-of-finished-goods"></a>Frisläpp material i förhållande till mängden färdiga varor.
 

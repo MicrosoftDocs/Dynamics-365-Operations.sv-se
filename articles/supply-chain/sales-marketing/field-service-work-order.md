@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: ace66c037953f4b1b2e8b93a315faefdb090b1eb
-ms.openlocfilehash: 933d9755085d507310dd46d96a492d2124647ec3
+ms.sourcegitcommit: 8914723f6ef436bfc9e3a98cc82d5486042b0761
+ms.openlocfilehash: 250b7caa1e1495140d0d4f688ecae4acb8814467
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 06/07/2018
 
 ---
 
@@ -158,7 +158,7 @@ Synkronisering av värdet **uppskattad** jämfört med värdet **använd** hante
     - **Produktrad:** uppskattad kvantitet = 5ea, använd kvantitet = 6ea, radstatus = använd, tilldelad = Ja
     - **Servicerad:** uppskattad kvantitet = 2 tim, använd kvantitet = 1,5 tim, radstatus = använd
 
-    I detta exempel synkroniseras produktens värde för**Använd kvantitet** **6** och tjänstens värde för **Uppskattad kvantitet** är **1,5 tim** till Finance and Operations.
+    I detta exempel synkroniseras produktens värde för**Använd kvantitet** **6** och tjänstens värde för **Använd kvantitet** är **1,5 tim** till Finance and Operations.
 
 ## <a name="sales-order-origin-and-status"></a>Försäljningorderns ursprung och status
 

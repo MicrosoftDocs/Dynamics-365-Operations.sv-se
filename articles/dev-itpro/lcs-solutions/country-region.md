@@ -18,10 +18,10 @@ ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: c925b2e996f51b8c5d5332217643c3155cfc03c0
+ms.sourcegitcommit: 4c61cb81368251540e0015e155b1cc932bf7b948
+ms.openlocfilehash: 6360bbc8e5abd94cfd1c2853bc384598047eec39
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 05/16/2018
 
 ---
 
@@ -106,22 +106,9 @@ Följande avsnitt listar resurser efter land/region.
 -   [Momsbetalningar](../../financials/localizations/latam-bra-tax-payments.md)
 -   [Skatter](../../financials/localizations/latam-bra-calculate-taxes.md)
 
-### <a name="china"></a>Kina
--   [Jämförelse av strukturlista](../../financials/localizations/apac-chn-bom-comparison.md)
--   [Kinesiska verifikationer](../../financials/localizations/apac-chn-vouchers.md)
--   [Konfigurera momsintegrering](../../financials/localizations/apac-chn-tax-integration.md)
-    -   [Vanliga frågor och svar om momskundfakturor](../../financials/localizations/apac-chn-tax-integration-vat-customer-invoices.md)
-    -   [Avskrivningsregler för anläggningstillgångar](../../financials/localizations/apac-chn-depreciation-methods-fixed-assets.md)
--   [Importera datatabellen Chinese Golden Tax](../../financials/localizations/apac-chn-import-golden-tax-data-entity.md)
--   [Månatlig, genomsnittlig kostnadsmodell](../../financials/localizations/apac-chn-monthly-average-cost-model.md)
--   [Bokför lagerhuvudkonton efter plats](../../financials/localizations/apac-chn-post-inventory-main-accounts-by-site.md)
--   [Visa debet- och kreditbelopp för huvudbokskonton](../../financials/localizations/apac-chn-negative-debits-credits.md)
-
+### <a name="chinafinancialslocalizationschinamd"></a>[Kina](../../financials/localizations/china.md)
 ### <a name="the-czech-republicfinancialslocalizationsczech-republicmd"></a>[Tjeckien](../../financials/localizations/czech-republic.md)
-
-### <a name="estonia"></a>Estland
--   [Momsutdragsinformation för Estland](../../financials/localizations/emea-est-vat-statement-details.md)
--   [Avyttrande av anläggningstillgångar](../../financials/localizations/emea-credit-note-reverse-fixed-asset-sale.md)
+### <a name="estoniafinancialslocalizationsestoniamd"></a>[Estland](../../financials/localizations/estonia.md)
 
 ### <a name="europe"></a>Europa
 - [Förskottsmottagare](../../financials/localizations/emea-advance-holders.md)

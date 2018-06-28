@@ -3,7 +3,7 @@ title: Formeldesigner i elektronisk rapportering
 description: "Detta avsnitt avslutar hur du använder formeldesignern inom Elektronisk rapportering (ER)."
 author: NickSelin
 manager: AnnBe
-ms.date: 11/27/2017
+ms.date: 04/04/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,10 +19,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 3988c437afda3d57e56a03264d3c1588af497920
+ms.sourcegitcommit: 2fc887668171175d436b9eb281a35c1c9d089591
+ms.openlocfilehash: 8d8ab61b7aea84332120e6de9fc29a2a4c9598ca
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 05/25/2018
 
 ---
 
@@ -217,13 +217,13 @@ I följande tabeller finns beskrivningar av datamanipuleringsfunktioner kan anv�
 | NULLDATE () | Returnerar date-värdet **null**. | |
 | NULLDATETIME () | Returnerar värdet för datum/tid som **noll**. | |
 | DATETIMEFORMAT (datetime, format) | Konverterar det definierade värdet för datum/tid till en sträng i det angivna formatet. (Om du vill ha mer information om format som stöds, se [Standard](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) och [Anpassat](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx).) | **DATETIMEFORMAT (NOW(), "dd-MM-yyyy")** returnerar det aktuella datumet för Finance and Operations-serverprogrammet, 2015-12-24, som **"2015-12-24"** baserat på det definierade och anpassade formatet. |
-| DATETIMEFORMAT (datetime, format, culture) | Konverterar det definierade värdet för datum/tid till en sträng i det angivna formatet och [kulturen](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx). (Om du vill ha mer information om format som stöds, se [Standard](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) och [Anpassat](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx)). | **DATETIMEFORMAT (NOW(), "s", "sv")** returnerar det aktuella datumet för Finance and Operations-programservern, 2015-12-24, som **"2015-12-24"** baserat på den valda svenska kulturen. |
+| DATETIMEFORMAT (datetime, format, culture) | Konverterar det definierade värdet för datum/tid till en sträng i det angivna formatet och [kulturen](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx). (Om du vill ha mer information om format som stöds, se [Standard](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) och [Anpassat](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx).) | **DATETIMEFORMAT (NOW(), "s", "sv")** returnerar det aktuella datumet för Finance and Operations-programservern, 2015-12-24, som **"2015-12-24"** baserat på den valda svenska kulturen. |
 | SESSIONTODAY () | Returnera aktuellt datum för Finance and Operations-sessionen som ett datumvärde. | |
 | SESSIONNOW () | Returnera aktuellt datum och aktuell tid för Finance and Operations-sessionen som ett värde datum/tid. | |
 | DATEFORMAT (datum, format) | Returnera en sträng som representerar det definierade datumet i det angivna formatet. | **DATEFORMAT (SESSIONTODAY () "dd-MM-yyyy")** returnerar det aktuella datumet för Finance and Operations-sessionen, 2015-12-24, som **"2015-12-24"** baserat på det definierade och anpassade formatet. |
-| DATEFORMAT (datum, format, kultur) | Konverterar det angivna datumvärdet till en sträng i det definierade formatet och den definierade [kulturen](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx). (Om du vill ha mer information om format som stöds, se [Standard](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) och [Anpassat](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx)). | **DATETIMEFORMAT (SESSIONNOW (), "d", "de")** returnerar det aktuella datumet för Finance and Operations-sessionen, 2015-12-24, som **"2015-12-24"** baserat på den valda tyska kulturen. |
+| DATEFORMAT (datum, format, kultur) | Konverterar det angivna datumvärdet till en sträng i det definierade formatet och den definierade [kulturen](https://msdn.microsoft.com/en-us/goglobal/bb896001.aspx). (Om du vill ha mer information om format som stöds, se [Standard](https://msdn.microsoft.com/en-us/library/az4se3k1(v=vs.110).aspx) och [Anpassat](https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx).) | **DATETIMEFORMAT (SESSIONNOW (), "d", "de")** returnerar det aktuella datumet för Finance and Operations-sessionen, 2015-12-24, som **"2015-12-24"** baserat på den valda tyska kulturen. |
 | DAYOFYEAR (datum) | Returnera en heltalsrepresentation av antalet dagar mellan 1 januari och det angivna datumet. | **DAYOFYEAR (DATEVALUE (”01-03-2016”, ”dd-MM-åååå”))** returnerar **61**. **DAYOFYEAR (DATEVALUE (”01-01-2016”, ”dd-MM-åååå”))** returnerar **1**. |
-| DAGAR (datum 1, datum 2) | Returnera antalet dagar mellan första och andra angivna datum. Returnerar ett positivt värde när det första datumet är senare än det andra, returnerar **0** (noll) när det första datumet är lika med det andra, annars ett negativt värde. | **DAYS (TODAY (), DATUMVÄRDE (DATETIMEFORMAT (ADDDAYS(NOW() 1), ”yyyyMMdd”), ”yyyyMMdd”))** returnerar **-1**. |
+| DAGAR (datum 1, datum 2) | Returnera antalet dagar mellan första och andra angivna datum. Returnerar ett positivt värde när det första datumet är senare än det andra, returnerar **0** (noll) när det första datumet är lika med det andra, annars ett negativt värde när det första datumet är tidigare än det andra datumet. | **DAYS (TODAY (), DATUMVÄRDE (DATETIMEFORMAT (ADDDAYS(NOW() 1), ”yyyyMMdd”), ”yyyyMMdd”))** returnerar **-1**. |
 
 ### <a name="data-conversion-functions"></a>Funktioner för datakonvertering
 
@@ -238,113 +238,125 @@ I följande tabeller finns beskrivningar av datamanipuleringsfunktioner kan anv�
 ### <a name="list-functions"></a>Lista över funktioner
 
 <table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
 <thead>
-<tr class="header">
+<tr>
 <th>Funktion</th>
 <th>beskrivning</th>
 <th>Exempel</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>SPLIT (input, length)</td>
 <td>Delar upp den definierade indatasträngen i delsträngar som var och en är av den definierade längden. Returnerar resultatet som en ny lista.</td>
 <td><strong>SPLIT (&quot;abcd&quot;, 3)</strong> returnerar en ny lista som består av två poster som har ett <strong>STRING</strong>-fält. Fältet i den första posten innehåller texten <strong>&quot;abc&quot;</strong>, och fältet i den andra posten innehåller texten <strong>&quot;d&quot;</strong>.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>SPLITLIST (list, number)</td>
 <td>Delar upp den angivna listan i batchar som var och en innehåller det definierade antalet poster. Returnerar resultatet som en ny lista med batchar som innehåller följande element:
 <ul>
 <li>Batchar som vanliga listor (<strong>Värde</strong> komponent)</li>
 <li>Det aktuella batchnumret (<strong>Batchnummer</strong> component)</li>
-</ul></td>
+</ul>
+</td>
 <td>Följande bild visar hur en datakälla på en <strong>rad</strong> skapas av tre poster. Den här listan är indelad i batchar som innehåller högst två poster.
 <p><a href="./media/picture-splitlist-datasource.jpg"><img src="./media/picture-splitlist-datasource.jpg" alt="Data source that is divided into batches" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a></p>
 <p>Följande illustration visar layouten på det designade formatet. I den här formatlayouten skapas bindningar till datakällans <strong>rader</strong> för att generera utdata i XML-format. Dessa utdata visar enskilda noder för varje batch och poster i den.</p>
 <p><a href="./media/picture-splitlist-format.jpg"><img src="./media/picture-splitlist-format.jpg" alt="Format layout that has bindings to a data source" class="alignnone wp-image-290691 size-full" width="374" height="161" /></a></p>
 <p>Följande illustration visar resultatet när det designade formatet har körts.</p>
-<a href="./media/picture-splitlist-result.jpg"><img src="./media/picture-splitlist-result.jpg" alt="Result of running the format" class="alignnone wp-image-290701 size-full" width="358" height="191" /></a></td>
+<a href="./media/picture-splitlist-result.jpg"><img src="./media/picture-splitlist-result.jpg" alt="Result of running the format" class="alignnone wp-image-290701 size-full" width="358" height="191" /></a>
+</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>LIST (post 1 [, post 2, ...])</td>
 <td>Returnerar en ny lista som skapas från de definierade argumenten.</td>
 <td><strong>LIST (model.MainData, model.OtherData)</strong> returnerar en tom post där fältlistan innehåller alla fält i postlistorna <strong>MainData</strong> och <strong>OtherData</strong>.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>LISTJOIN (list 1, list 2, ...)</td>
 <td>Returnerar en konkatenerad lista som skapas från listor med definierade argument.</td>
 <td><strong>LISTJOIN (SPLIT (&quot;abc&quot;, 1), SPLIT (&quot;def&quot;, 1))</strong> returnerar en lista över sex poster där ett fält i datatypen <strong>STRING</strong> innehåller enskilda bokstäver.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>ISEMPTY (list)</td>
 <td>Returnerar <strong>TRUE</strong> om den definierade listan inte innehåller några element. Annars returneras <strong>FALSKT</strong>.</td>
 <td></td>
 </tr>
-<tr class="even">
+<tr>
 <td>EMPTYLIST (list)</td>
 <td>Returnerar en tom lista genom att använda den definierade en lista som källa för liststrukturen.</td>
 <td><strong>EMPTYLIST (SPLIT (&quot;abc&quot;, 1))</strong> returnerar en ny tom lista som har samma struktur som listan som returneras av funktionen <strong>SPLIT</strong>.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>FIRST (list)</td>
 <td>Returnerar den första posten i den definierade listan, om posten inte är tom. I annat fall kastas ett undantag.</td>
 <td></td>
 </tr>
-<tr class="even">
+<tr>
 <td>FIRSTORNULL (list)</td>
 <td>Returnerar den första posten i den definierade listan, om posten inte är tom. I annat fall returneras en <strong>null</strong>-post.</td>
 <td></td>
 </tr>
-<tr class="odd">
+<tr>
 <td>LISTOFFIRSTITEM (list)</td>
 <td>Returnerar en lista som endast innehåller det första objektet i den definierade listan.</td>
 <td></td>
 </tr>
-<tr class="even">
+<tr>
 <td>ALLITEMS (path)</td>
-<td>Returnerar en ny platt lista som representerar alla artiklar som matchar den definierade sökvägen. Sökvägen måste anges som en giltig datakällsökväg för ett datakällselement av datatypen ”postlista”. Dataelement som sökväg och datum bör generera ett fel i ER-uttrycksgeneratorn vid designtidpunkten.</td>
+<td>Den här funktionen körs som ett urval i minnet. Returnerar en ny platt lista som representerar alla artiklar som matchar den definierade sökvägen. Sökvägen måste anges som en giltig datakällsökväg för ett datakällselement av datatypen ”postlista”. Dataelement som sökväg och datum bör generera ett fel i ER-uttrycksgeneratorn vid designtidpunkten.</td>
 <td>Om du anger <strong>SPLIT(&quot;abcdef&quot; , 2)</strong> som en datakälla (DS), returnerar <strong>COUNT( ALLITEMS (DS.Value))</strong> <strong>3</strong>.</td>
 </tr>
-<tr class="odd">
+<tr>
+<td>ALLITEMSQUERY (sökväg)</td>
+<td>Den här funktionen körs som en sammanslagen SQL-fråga. Returnerar en ny platt lista som representerar alla artiklar som matchar den definierade sökvägen. De angivna sökvägen måste anges som en giltig datakällsökväg för ett datakällselement av datatypen ”postlista” och den måste innehålla minst en relation. Dataelement som sökväg och datum bör generera ett fel i ER-uttrycksgeneratorn vid designtidpunkten.</td>
+<td>Definiera följande datakällor i din modellmappning:
+<ul>
+<li><strong>CustInv</strong> (typen <strong>Registerposter</strong>), som refererar till tabellen CustInvoiceTable</li> 
+<li><strong>FilteredInv</strong> (typen <strong>beräknat fält</strong>), som innehåller uttrycket <strong>FILTER (CustInv, CustInv.InvoiceAccount = &quot;US-001&quot;)</strong></li>
+<li><strong>JourLines</strong> (typen <strong>beräknat fält</strong> ), som innehåller uttrycket <strong>ALLITEMSQUERY (FilteredInv.'&lt;Relations'.CustInvoiceJour.'&lt;Relations'.CustInvoiceTrans)</strong></li>
+</ul>
+<p>När du kör en modellmappning att anropa datakällan <strong>JourLines</strong>, kör följande SQL-sats:</p>
+VÄLJ ... FRÅN CUSTINVOICETABLE T1 KORSKOPPLA CUSTINVOICEJOUR T2 KORSKOPPLA CUSTINVOICETRANS T3 DÄR...
+</td>
+</tr>
+<tr>
 <td>ORDERBY (list [, expression 1, expression 2, …])</td>
 <td>Returnera den angivna listan efter att den sorterats enligt de angivna argumenten. Du kan definiera följande argument som uttryck.</td>
 <td>Om <strong>Vendor</strong> konfigureras som en ER-datakälla som refererar till tabellen VendTable, <strong>ORDERBY (Vendors, Vendors.'name()')</strong> returneras en lista med leverantörerna sorterade efter namn i stigande ordning.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>REVERSE (list)</td>
 <td>Returnerar den definierade listan i omvänd sorteringsordning.</td>
 <td>Om <strong>Vendor</strong> konfigureras som en ER-datakälla som refererar till tabellen VendTable, <strong>REVERSE (ORDERBY (Vendors, Vendors.'name()')) )</strong> returneras en lista med leverantörerna sorterade efter namn i fallande ordning.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>WHERE (list, condition)</td>
 <td>Returnera den angivna listan efter att den filtrerats enligt de angivna argumenten. Det angivna villkoret används i listan i minnet. På så sätt kan funktionen <strong>WHERE</strong> skilja sig från funktionen <strong>FILTER</strong>.</td>
 <td>Om <strong>Vendor</strong> konfigureras som en ER-datakälla som refererar till registret VendTable, returnerar <strong>WHERE(Vendors, Vendors.VendGroup = &quot;40&quot;)</strong> en lista över just de leverantörer som ingår i leverantörsgrupp 40.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>ENUMERATE (list)</td>
 <td>Returnerar en ny lista som består av fasta poster i den definierade listan och som visar följande element:
 <ul>
 <li>Definierade listposter som vanliga listor (<strong>Värde</strong> komponent)</li>
 <li>Den aktuella postens index (<strong>Nummer</strong> komponent)</li>
-</ul></td>
+</ul>
+</td>
 <td>I följande illustration har datakällan <strong>Enumerated</strong> skapat en numrerad lista över leverantörsposter från datakällan <strong>Vendors</strong> som refererar till tabellen VendTable.
 <p><a href="./media/picture-enumerate-datasource.jpg"><img src="./media/picture-enumerate-datasource.jpg" alt="Enumerated data source" class="alignnone wp-image-290711 size-full" width="387" height="136" /></a></p>
 <p>På bilden nedan visas formatet. I den här formatlayouten skapas bindningar för att generera utdata i XML-format. Dessa utdata visar enskilda leverantörer som fasta noder.</p>
 <p><a href="./media/picture-enumerate-format.jpg"><img src="./media/picture-enumerate-format.jpg" alt="Format that has data bindings" class="alignnone wp-image-290721 size-full" width="414" height="138" /></a></p>
 <p>Följande illustration visar resultatet när det designade formatet har körts.</p>
-<a href="./media/picture-enumerate-result.jpg"><img src="./media/picture-enumerate-result.jpg" alt="Result of running the format" class="alignnone wp-image-290731 size-full" width="567" height="176" /></a></td>
+<a href="./media/picture-enumerate-result.jpg"><img src="./media/picture-enumerate-result.jpg" alt="Result of running the format" class="alignnone wp-image-290731 size-full" width="567" height="176" /></a>
+</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>COUNT (list)</td>
 <td>Returnerar det antalet poster i den definierade i listan, om listan inte är tom. Annars returneras <strong>0</strong> (noll).</td>
 <td><strong>COUNT (SPLIT(&quot;abcd&quot; , 3))</strong> returnerar <strong>2</strong> eftersom funktionen <strong>SPLIT</strong> skapar en lista som består av två poster.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>LISTOFFIELDS (sökväg)</td>
 <td>Returnera en postlista som har skapats av ett argument tillhörande en av följande typer:
 <ul>
@@ -358,7 +370,8 @@ I följande tabeller finns beskrivningar av datamanipuleringsfunktioner kan anv�
 <li>Etikett</li>
 <li>beskrivning</li>
 </ul>
-I samband med körning returnerar fälten <strong>Label</strong> och <strong>Description</strong> värden baserade på formatets språkinställningar.</td>
+I samband med körning returnerar fälten <strong>Label</strong> och <strong>Description</strong> värden baserade på formatets språkinställningar.
+</td>
 <td>I följande illustration introduceras en uppräkning i datamodellen.
 <p><a href="./media/ger-listoffields-function-model-enumeration.png"><img src="./media/ger-listoffields-function-model-enumeration-e1474545790761.png" alt="Enumeration in a model" class="alignnone wp-image-1203943 size-full" width="514" height="155" /></a></p>
 <p>Illustrationen som följer visar dessa detaljer:</p>
@@ -372,10 +385,10 @@ I samband med körning returnerar fälten <strong>Label</strong> och <strong>Des
 <p><a href="./media/ger-listoffields-function-format-design.png"><img src="./media/ger-listoffields-function-format-design.png" alt="Format design" class="alignnone size-full wp-image-1204043" width="466" height="221" /></a></p>
 <p>Följande illustration visar resultatet när det designade formatet har körts.</p>
 <p><a href="./media/ger-listoffields-function-format-output.png"><img src="./media/ger-listoffields-function-format-output.png" alt="Format output" class="alignnone size-full wp-image-1204053" width="585" height="158" /></a></p>
-<blockquote>[!NOTE]<br>
-Baserat på språkinställningarna i de överordnade FILE- och FOLDER-elementen infogas översatt text för etiketter och beskrivningar i utdata till ER-formatet.</blockquote></td>
+<blockquote>[!NOTE]<br>Baserat på språkinställningarna i de överordnade FILE- och FOLDER-elementen infogas översatt text för etiketter och beskrivningar i utdata till ER-formatet.</blockquote>
+</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>LISTOFFIELDS (sökvägen, språk)</td>
 <td>Returnera en postlista som skapas från ett argument, t ex en modelluppräkning, en formatuppräkning eller en behållare. Listan som skapas består av poster som innehåller följande fält:
 <ul>
@@ -384,26 +397,27 @@ Baserat på språkinställningarna i de överordnade FILE- och FOLDER-elementen 
 <li>beskrivning</li>
 <li>Är översatt</li>
 </ul>
-<p>I samband med körning returnerar fälten <strong>Label</strong> och <strong>Description</strong> värden baserade på formatets språkinställningar och angivet språk. Fältet <strong>Is translated</strong> anger att fältet <strong>Label</strong> har översatts till det angivna språket.</td>
+I samband med körning returnerar fälten <strong>Label</strong> och <strong>Description</strong> värden baserade på formatets språkinställningar och angivet språk. Fältet <strong>Is translated</strong> anger att fältet <strong>Label</strong> har översatts till det angivna språket.
+</td>
 <td>Till exempel kan du använda datakälltypen <strong>Calculated field</strong> för att konfigurera datakällor för <strong>enumType_de</strong> och <strong>enumType_deCH</strong> till uppräkning av datamodell <strong>enumType</strong>:
 <ul>
 <li>enumType_de = <strong>LISTOFFIELDS</strong> (enumType, &quot;de&quot;)</li>
 <li>enumType_deCH = <strong>LISTOFFIELDS</strong> (enumType, &quot;de-CH&quot;)</li>
 </ul>
-I det här fallet kan du använda följande uttryck för att få etiketten på uppräkningsvärdet på tyska (Schweiz), om denna översättning är tillgänglig. Om tyska Schweiz inte är tillgänglig blir etiketten på tyska (Tyskland): <strong>IF (inte (enumType_deCH.IsTranslated) enumType_de. Etikett, enumType_deCH.Label)</strong>.</td>
+I det här fallet kan du använda följande uttryck för att få etiketten på uppräkningsvärdet på tyska (Schweiz), om denna översättning är tillgänglig. Om tyska Schweiz inte är tillgänglig blir etiketten på tyska (Tyskland): <strong>IF (inte (enumType_deCH.IsTranslated) enumType_de. Etikett, enumType_deCH.Label)</strong>.
+</td>
 </tr>
-<tr class="even">
+<tr>
 <td>STRINGJOIN (lista, fältnamn, avgränsare)</td>
 <td>Returnera en sträng som består av de konkatenerade värdena från det definierade fältet från den angivna listan. Värdena avgränsas med angivna avgränsare.</td>
-
-<td>Om du anger <strong>SPLIT(&quot;abc&quot; , 1)</strong>  som en datakälla (DS), kommer uttrycket <strong>STRINGJOIN (DS, DS.Value, &quot;:&quot;)</strong> returnera <strong>&quot;a</strong><strong>:b</strong><strong>:c&quot;</strong>.</td>
-
+<td>Om du anger <strong>SPLIT(&quot;abc&quot; , 1)</strong> som datakälla (DS), <strong>STRINGJOIN (DS, DS.Value, &quot;-&quot;)</strong> returnerar <strong>&quot;a-b-c&quot;</strong>.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>SPLITLISTBYLIMIT (lista, gränsvärde, gränskälla)</td>
-<td>Dela angiven lista i en ny lista bestående av underlistor och returnera resultatet i form av innehåll i en postlista. Parametern för gränsvärde definierar värdet på den gräns som delar ursprungslistan. Gränskälleparametern definierar det steg med vilket totalsumman höjs. Gränsen tillämpas inte på en enskild artikel i ursprungslistan när gränskällan överskrider angiven gräns.</td>
-<td>I följande illustrationer visas ett format och de datakällor som används för den. 
+<td>Dela angiven lista i en ny lista bestående av underlistor och returnera resultatet i form av innehåll i en postlista. Parametern <strong>gränsvärde</strong> definierar värdet på den gräns som delar ursprungslistan. Parametern <strong>gränsvärde</strong> definierar värdet på den gräns som delar ursprungslistan. Gränsen tillämpas inte på en enskild artikel i ursprungslistan när gränskällan överskrider angiven gräns.</td>
+<td>På bilden nedan visas ett format. 
 <p><a href="./media/ger-splitlistbylimit-format.png"><img src="./media/ger-splitlistbylimit-format.png" alt="Format" class="alignnone size-full wp-image-1204063" width="396" height="195" /></a></p>
+<p>I följande illustrationer visar de datakällor som används för det formatet.</p>
 <p><a href="./media/ger-splitlistbylimit-datasources.png"><img src="./media/ger-splitlistbylimit-datasources.png" alt="Data sources" class="alignnone size-full wp-image-1204073" width="320" height="208" /></a></p>
 <p>Följande illustration visar resultatet när formatet har körts. I det här fallet är resultatet en förenklad lista över varuartiklar.</p>
 <p><a href="./media/ger-splitlistbylimit-output.png"><img src="./media/ger-splitlistbylimit-output.png" alt="Output" class="alignnone size-full wp-image-1204083" width="462" height="204" /></a></p>
@@ -412,13 +426,13 @@ I det här fallet kan du använda följande uttryck för att få etiketten på u
 <p><a href="./media/ger-splitlistbylimit-datasources-1.png"><img src="./media/ger-splitlistbylimit-datasources-1.png" alt="Data sources for the adjusted format" class="alignnone size-full wp-image-1204093" width="645" height="507" /></a></p>
 <p>Följande illustration visar resultatet när det anpassade formatet har körts.</p>
 <p><a href="./media/ger-splitlistbylimit-output-1.png"><img src="./media/ger-splitlistbylimit-output-1.png" alt="Output of the adjusted format" class="alignnone size-full wp-image-1204113" width="676" height="611" /></a></p>
-<blockquote>[!NOTE]<br>
-Gränsen tillämpas inte på den sista artikeln i den ursprungliga listan eftersom värdet (11) i gränskällan (vikt) överskrider angiven gräns (9). Använd antingen funktionen <strong>WHERE</strong> eller uttrycket <strong>Enabled</strong> för respektive formatelement för att ignorera (hoppa över) underlistor i samband med rapportgenerering, efter behov.</blockquote></td>
+<blockquote>[!NOTE]<br>Gränsen tillämpas inte på den sista artikeln i den ursprungliga listan eftersom värdet (11) i gränskällan (vikt) överskrider angiven gräns (9). Använd antingen funktionen <strong>WHERE</strong> eller uttrycket <strong>Enabled</strong> för respektive formatelement för att ignorera (hoppa över) underlistor i samband med rapportgenerering, efter behov.</blockquote>
+</td>
 </tr>
-<tr class="even">
+<tr>
 <td>FILTER (list, villkor)</td>
 <td>Returnera den angivna listan efter att frågan har ändrats för att filtrerats enligt de angivna villkoren. Till skillnad från funktionen <strong>WHERE</strong> tillämpas angivet villkor på alla ER-datakällor av typen <strong>Table records</strong> på databasnivå. Listan och villkoret kan definieras med hjälp av tabeller och relationer.</td>
-  <td>Om <strong>Vendor</strong> konfigureras som en ER-datakälla som refererar till registret VendTable, returnerar <strong>FILTER(Vendors, Vendors.VendGroup = &quot;40&quot;)</strong> en lista över just de leverantörer som ingår i leverantörsgrupp 40. Om <strong>Vendor</strong> är konfigurerad som en datakälla för ER som refererar till tabellen <strong>VendTable</strong> och <strong>parmVendorBankGroup</strong>, som är konfigurerad som datakälla för ER, returnerar värdet i strängdatatypen <strong>FILTER (Vendor.'&lt;Relations'.VendBankAccount, Vendor.'&lt;Relations'.VendBankAccount.BankGroupID = parmVendorBankGroup)</strong> skapas en lista över just de leverantörskonton som tillhör en viss bankgrupp.</td>
+<td>Om <strong>Vendor</strong> konfigureras som en ER-datakälla som refererar till registret VendTable, returnerar <strong>FILTER(Vendors, Vendors.VendGroup = &quot;40&quot;)</strong> en lista över just de leverantörer som ingår i leverantörsgrupp 40. Om <strong>Leverantör</strong> konfigureras som en ER-datakälla som hänvisar till registret <strong>VendTable</strong> och om <strong>parmVendorBankGroup</strong> konfigureras som en ER-datakälla som returnerar ett värde av datatypen <strong>Sträng</strong>, <strong>FILTER (Vendor.'&lt;Relations'.VendBankAccount, Vendor.'&lt;Relations'.VendBankAccount.BankGroupID = parmVendorBankGroup)</strong> returnerar en lista över just de leverantörskonton som tillhör en viss bankgrupp.</td>
 </tr>
 </tbody>
 </table>
@@ -441,9 +455,9 @@ Gränsen tillämpas inte på den sista artikeln i den ursprungliga listan efters
 | POWER (number, power) | Returnerar resultatet av en ökning av det definierade positiva talet till den definierade kraften. | **POWER (10, 2)** returnerar **100**. |
 | NUMBERVALUE (string, decimal separator, digit grouping separator) | Konverterar den definierade strängen till ett tal. Den angivna decimalavgränsaren används mellan heltal och decimaler i ett decimaltal. Den angivna gruppavgränsaren används som tusentalsavgränsare. | **NUMBERVALUE("1 234,56", ",", " ")** returnerar värdet **1234.56**. |
 | VALUE (string) | Konverterar den definierade strängen till ett tal. Kommatecken och punkter (.) betraktas som decimalavgränsare och ett inledande bindestreck (-) används som ett negativt tecken. Meddela att ett undantag inträffat om den specificerade strängen innehåller andra icke-numeriska tecken. | **VALUE ("1 234,56")** kastar ett undantag. |
-| ROUND (number, decimals) | Returnera det specificerade numret efter att det avrundats till det angivna antalet decimaler:<ul><li>Om decimalvärdet är större än 0 (noll) avrundas det specificerade numret till det angivna antalet decimaler.</li><li>Om decimalvärdet är **0** (noll) avrundas det specificerade numret till närmaste heltal.</li><li>Om decimalvärdet är mindre än 0 (noll) avrundas det specificerade numret till vänster om decimaltecknet.</li></ul> | **ROUND (1200.767, 2)** avrundar till två decimaler och returnerar **1200.77**. **ROUND (1200.767, -3)** avrundar till närmaste multipel av 1 000 och returnerar **1000**. |
-| ROUNDDOWN (number, decimals) | Returnera det specificerade numret efter att det avrundats ned till det angivna antalet decimaler.<blockquote>[!NOTE]<br>Den här funktionen fungerar som <strong>ROUND</strong> men avrundar alltid det specificerade numret nedåt (mot noll).</blockquote> | **ROUNDDOWN (1200.767, 2)** avrundar nedåt till två decimaler och returnerar **1200.76**. **ROUNDDOWN (1700.767, -3)** avrundar nedåt till närmaste multipel av 1 000 och returnerar **1000**. |
-| ROUNDUP (number, decimals) | Returnera det specificerade numret efter att det avrundats upp till det angivna antalet decimaler.<blockquote>[!NOTE]<br>Den här funktionen fungerar som <strong>ROUND</strong> men avrundar alltid det specificerade numret uppåt (från noll).</blockquote> | **ROUNDUP (1200.763, 2)** avrundar uppåt till två decimaler och returnerar **1200.77**. **ROUNDUP (1200.767, -3)** avrundar uppåt till närmaste multipel av 1 000 och returnerar **2000**. |
+| ROUND (number, decimals) | Returnera det specificerade numret efter att det avrundats till det angivna antalet decimaler:<ul><li>Om värdet för parametern **decimaler** är större än 0 (noll) avrundas det specificerade numret till det angivna antalet decimaler.</li><li>Om värdet för parametern **decimaler** är **0** (noll) avrundas det specificerade numret till det angivna antalet decimaler.</li><li>Om värdet för parametern **decimaler** är mindre än 0 (noll) avrundas det specificerade numret till vänster om decimaltecknet.</li></ul> | **ROUND (1200.767, 2)** avrundar till två decimaler och returnerar **1200.77**. **ROUND (1200.767, -3)** avrundar till närmaste multipel av 1 000 och returnerar **1000**. |
+| ROUNDDOWN (number, decimals) | Returnera det specificerade numret efter att det avrundats ned till det angivna antalet decimaler.<blockquote>[!NOTE]<br>Den här funktionen fungerar som **ROUND** men avrundar alltid det specificerade numret nedåt (mot noll).</blockquote> | **ROUNDDOWN (1200.767, 2)** avrundar nedåt till två decimaler och returnerar **1200.76**. **ROUNDDOWN (1700.767, -3)** avrundar nedåt till närmaste multipel av 1 000 och returnerar **1000**. |
+| ROUNDUP (number, decimals) | Returnera det specificerade numret efter att det avrundats upp till det angivna antalet decimaler.<blockquote>[!NOTE]<br>Den här funktionen fungerar som **ROUND** men avrundar alltid det specificerade numret uppåt (från noll).</blockquote> | **ROUNDUP (1200.763, 2)** avrundar uppåt till två decimaler och returnerar **1200.77**. **ROUNDUP (1200.767, -3)** avrundar uppåt till närmaste multipel av 1 000 och returnerar **2000**. |
 
 ### <a name="data-conversion-functions"></a>Funktioner för datakonvertering
 
@@ -460,87 +474,80 @@ Gränsen tillämpas inte på den sista artikeln i den ursprungliga listan efters
 
 | Funktion | beskrivning | Exempel |
 |----------|-------------|---------|
-| NULLCONTAINER (list) | Returnerar en **null**-post som har samma struktur som den definierade postlistan eller posten.<blockquote>[!NOTE]<br>Den här funktionen är föråldrad. Använd <strong>EMPTYRECORD</strong> i stället.</blockquote> | **NULLCONTAINER (SPLIT ("abc", 1))** returnerar en ny tom post som har samma struktur som listan som returneras från **SPLIT**-funktionen. |
-| EMPTYRECORD (record) | Returnerar en **null**-post som har samma struktur som den definierade postlistan eller posten.<blockquote>[!NOTE]<br>En <strong>noll</strong> post är en post där alla fält innehåller ett tomt värde. Ett tomt värde är <strong>0</strong> (noll) för tal, en tom sträng för strängar, osv.</blockquote> | **EMPTYRECORD (SPLIT ("abc", 1))** returnerar en ny tom post som har samma struktur som listan som returneras från **SPLIT**-funktionen. |
+| NULLCONTAINER (list) | Returnerar en **null**-post som har samma struktur som den definierade postlistan eller posten.<blockquote>[!NOTE]<br>Den här funktionen är föråldrad. Använd **EMPTYRECORD** i stället.</blockquote> | **NULLCONTAINER (SPLIT ("abc", 1))** returnerar en ny tom post som har samma struktur som listan som returneras från **SPLIT**-funktionen. |
+| EMPTYRECORD (record) | Returnerar en **null**-post som har samma struktur som den definierade postlistan eller posten.<blockquote>[!NOTE]<br>En **noll** post är en post där alla fält innehåller ett tomt värde. Ett tomt värde är **0** (noll) för tal, en tom sträng för strängar, osv.</blockquote> | **EMPTYRECORD (SPLIT ("abc", 1))** returnerar en ny tom post som har samma struktur som listan som returneras från **SPLIT**-funktionen. |
 
 ### <a name="text-functions"></a>Textfunktioner
 
 <table>
-<colgroup>
-<col width="33%" />
-<col width="33%" />
-<col width="33%" />
-</colgroup>
 <thead>
-<tr class="header">
+<tr>
 <th>Funktion</th>
 <th>beskrivning</th>
 <th>Exempel</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>UPPER (string)</td>
 <td>Returnera den specificerade strängen efter att den konverterats till versaler.</td>
 <td><strong>ÖVRE(&quot;prov&quot;)</strong> returnerar <strong>&quot;PROV&quot;</strong>.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>LOWER (string)</td>
 <td>Returnera den specificerade strängen efter att den konverterats till gemener.</td>
 <td><strong>LÄGRE (&quot;Prov&quot;)</strong> returnerar <strong>&quot;prov&quot;</strong>.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>LEFT (string, number of characters)</td>
 <td>Returnerar det definierade antalet tecken från början av den definierade strängen.</td>
 <td><strong>VÄNSTER (&quot;prov&quot;, 3)</strong> returnerar <strong>&quot;Pr&quot;</strong>.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>RIGHT (string, number of characters)</td>
 <td>Returnerar det definierade antalet tecken från slutet av den definierade strängen.</td>
 <td><strong>HÖGER (&quot;Prov&quot;, 3)</strong> returnerar <strong>&quot;ov&quot;</strong>.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>MID (string, starting position, number of characters)</td>
 <td>Returnerar det definierade antalet tecken från den definierade strängen, med start från den definierade positionen.</td>
 <td><strong>MEL (&quot;Prov&quot;, 2, 3)</strong> returnerar <strong>&quot;ro&quot;</strong>.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>LEN (string)</td>
 <td>Returnerar antalet tecken i den definierade strängen.</td>
 <td><strong>LEN (&quot;Prov&quot;)</strong> returnerar <strong>6</strong>.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>CHAR (number)</td>
 <td>Returnerar teckensträngen som har en referens till det definierade Unicode-numret.</td>
 <td><strong>CHAR (255)</strong> returnerar <strong>&quot;ÿ&quot;</strong>.
-<blockquote>[!NOTE]<br>
-Den sträng som returneras beror på viken kodning som har valts i det överordnade formatelementet FILE. För listan över vilka koder som stöds se <a href="https://msdn.microsoft.com/en-us/library/system.text.encoding(v=vs.110).aspx">Encoding class</a>.</blockquote>
+<blockquote>[!NOTE]<br>Den sträng som returneras beror på viken kodning som har valts i det överordnade formatelementet FILE. För listan över vilka koder som stöds se <a href="https://msdn.microsoft.com/en-us/library/system.text.encoding(v=vs.110).aspx">Encoding class</a>.</blockquote>
 </td>
 </tr>
-<tr class="even">
+<tr>
 <td>CONCATENATE (string 1 [, string 2, …])</td>
 <td>Returnera alla specificerade textsträngar efter att de har sammanfogats till en sträng.</td>
 <td><strong>CONCATENATE (&quot;abc&quot;, &quot;def&quot;)</strong> returnerar <strong>&quot;abcdef&quot;</strong>.
-<blockquote>[!NOTE]<br>
-Uttrycket <strong>&quot;abc&quot; &amp; &quot;def&quot;</strong> returnerar också <strong>&quot;abcdef&quot;</strong>.</blockquote>
+<blockquote>[!NOTE]<br>Uttrycket <strong>&quot;abc&quot; &amp; &quot;def&quot;</strong> returnerar också <strong>&quot;abcdef&quot;</strong>.</blockquote>
 </td>
 </tr>
-<tr class="odd">
+<tr>
 <td>ÖVERSÄTT (string, pattern, replacement)</td>
 <td>Returnerar den definierade strängen efter att alla förekomster av tecknen i den definierade mönstersträngen har ersätts av tecknen på motsvarande position i den definierade utbytessträngen.</td>
 <td><strong>ÖVERSÄTT (&quot;abcdef&quot;, &quot;cd&quot;, &quot;GH&quot;)</strong> ersätter mönstret <strong>&quot;cd&quot;</strong> med strängen <strong>&quot;GH&quot;</strong> och returnerar <strong>&quot;abGHef&quot;</strong>.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>REPLACE (string, pattern, replacement, regular expression flag)</td>
 <td>Om flaggan för det definierade reguljära uttrycket har värdet <strong>sant</strong> returneras den definierade strängen efter att ett reguljärt uttryck som definierats som ett mönsterargument för den här funktionen har tillämpats. Uttrycket används för att hitta tecken som måste ersättas. Tecknen i det definierade utbytesargumentet används för att ersätta tecken som hittas. Om flaggan för det definierade reguljära uttrycket har värdet <strong>falskt</strong>uppför sig den här funktionen på samma sätt som <strong>ÖVERSÄTT</strong>.</td>
 <td><strong>REPLACE (&quot;+1 923 456 4971&quot;, &quot;[^0-9]&quot;, &quot;&quot;, sant)</strong> tillämpar ett standarduttryck som avlägsnar alla icke-numeriska symboler och returnerar <strong>&quot;19234564971&quot;</strong>. <strong>REPLACE (&quot;abcdef&quot;, &quot;cd&quot;, &quot;GH&quot;, falskt)</strong> ersätter mönstret <strong>&quot;cd&quot;</strong> med strängen <strong>&quot;GH&quot;</strong> och returnerar <strong>&quot;abGHef&quot;</strong>.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>TEXT (input)</td>
 <td>Returnera den specificerade indatan efter att den har konverteras till en textsträng formaterad enligt serverns lokala inställningar för den aktuella instansen av Finance and Operations. För värden av typen <strong>real</strong> är strängkonverteringen begränsad till två decimaler.</td>
 <td>Om serverns lokala inställningar för Finance and Operations anges som <strong>EN-US</strong>, returnerar <strong>TEXT (NOW ())</strong> aktuellt Finance and Operations-sessionsdatum, December 17, 2015, som textsträngen <strong>&quot;12/17/2015 07:59:23 AM&quot;</strong>. <strong>TEXT (1/3)</strong> returnerar <strong>&quot;0.33&quot;</strong>.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>FORMAT (string 1, string 2[, string 3, …])</td>
 <td>Returnera den definierade strängen efter att den har formaterats genom att byta ut alla förekomster av <strong>%N</strong> med argumentet <em>n</em>. Argumenten är strängar. Om ett argument inte har angetts för en parameter returneras parametern som <strong>&quot;%N&quot;</strong> i strängen. För värden av typen <strong>real</strong> är strängkonverteringen begränsad till två decimaler.</td>
 <td>I det här exemplet returnerar datakällan <strong>PaymentModel</strong> listan över kundposter via komponenten <strong>Customer</strong> och bearbetar datumvärdet via fältet <strong>ProcessingDate</strong>.
@@ -564,36 +571,37 @@ Uttrycket <strong>&quot;abc&quot; &amp; &quot;def&quot;</strong> returnerar ocks
 <p>&quot;Inget att skriva ut. Customer Litware Retail is stopped for 12/17/2015."&quot;</p>
 <p>Om samma rapport bearbetas för <strong>Litware-butikskunden</strong> den 17 december 2015, i kulturen <strong>DE</strong> och på språket <strong>DE</strong>, kommer denna formel att returnera följande text som använder ett annat datumformat:</p>
 <p>&quot;Nichts zu drucken. Gäldenären 'Litware Butik' stoppad 2015-12-17.".&quot;</p>
-<blockquote>[!NOTE]<br>
-Följande syntax tillämpas i ER-formler för etiketter:
+<blockquote>[!NOTE]<br>Följande syntax tillämpas i ER-formler för etiketter:
 <ul>
 <li><strong>För etiketter från Finance and Operations-resurser:</strong> <strong>@&quot;X&quot;</strong>, där X är etikettens ID i programobjektträdet (Application Object Tree, AOT)</li>
 <li><strong>För etiketter i ER-konfigurationer:</strong> <strong>@&quot;GER_LABEL:X&quot;</strong>, där X är etikettens ID i ER-konfigurationen</li>
-</ul></blockquote></td>
+</ul>
+</blockquote>
+</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>NUMBERFORMAT (number, format)</td>
 <td>Returnera en sträng som representerar det specificerade numret i det angivna formatet. (Information om format som stöds finns i <a href="https://msdn.microsoft.com/en-us/library/dwhawy9k(v=vs.110).aspx">standard</a> och <a href="https://msdn.microsoft.com/en-us/library/0c899ak8(v=vs.110).aspx">anpassade</a>.) Den kontext som denna funktion körs i avgör den kultur som används för att formatera tal.</td>
 <td>För kulturen EN-US returnerar <strong>NUMBERFORMAT (0.45, &quot;p&quot;)</strong> <strong>&quot;45.00 %&quot;</strong>. <strong>NUMBERFORMAT (10.45, &quot;#&quot;)</strong> returnerar <strong>&quot;10&quot;</strong>.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>NUMERALSTOTEXT (nummer, språk, valuta, skriv ut flagga för valutanamn, decimaler)</td>
 <td>Returnera det specificerade numret efter att det har skrivits ut (konverterats) till textsträngar på det angivna språket. Språkkod är valfritt. När den är definierad som en tom sträng används istället språkkoden för löpande kontext. (Språkkoden för löpande kontext definieras för en genererande mapp eller fil.) Valutakoden är också valfri. När den definieras som en tom sträng, används företagsvalutan.
-<blockquote>[!NOTE]<br>
-Flaggan för att skriva ut valuta och parametrarna för decimaltecken analyseras endast för följande språkkoder: <strong>CS</strong>, <strong>ET</strong>, <strong>HU</strong>, <strong>LT</strong>, <strong>LV</strong>, <strong>PL</strong> och <strong>RU</strong>. I tillägg analyseras endast flaggan för valutautskrift för Finance and Operations-företag vars länder eller regioner stöder valutanamnnedgång.</blockquote></td>
+<blockquote>[!NOTE]<br>Parametrarna för <strong>den utskrivna flaggan för valutanamn</strong> och <strong>decimalpunkter</strong> analyseras endast för följande språkkoder: <strong>CS</strong>, <strong>ET</strong>, <strong>HU</strong>, <strong>LT</strong>, <strong>LV</strong>, <strong>PL</strong>, och <strong>RU</strong>. I tillägg analyseras endast parametern <strong>utskriven flagga för valutanamn</strong> för Finance and Operations-företag vars länder eller regioner stöder valutanamnnedgång.</blockquote>
+</td>
 <td><strong>NUMERALSTOTEXT (1234.56, &quot;EN&quot;, &quot;&quot;, false, 2)</strong> returnerar <strong>&quot;One Thousand Two Hundred Thirty Four and 56&quot;</strong>. <strong>NUMERALSTOTEXT (120, &quot;PL&quot;, &quot;&quot;, false, 0)</strong> returnerar <strong>&quot;Sto dwadzieścia&quot;</strong>. <strong>NUMERALSTOTEXT (120.21, &quot;RU&quot;, &quot;EUR&quot;, true, 2)</strong> returnerar <strong>&quot;Сто двадцать евро 21 евроцент&quot;</strong>.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>PADLEFT (sträng, längd, teckenutfyllnad)</td>
 <td>Returnera en sträng med angiven längd i de fall den aktuella strängens början är utfylld med de angivna tecknen.</td>
 <td><strong>PADLEFT (&quot;1234&quot;, 10, &quot;&nbsp;&quot;)</strong> returnerar textsträngen <strong>&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1234&quot;</strong>.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>TRIM (string)</td>
 <td>Returnera den angivna textsträngen efter att inledande och efterföljande blanksteg har trunkerats och multipla blanksteg mellan ord har tagits bort.</td>
 <td><strong>TRIM (&quot;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sample&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;text&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&quot;)</strong> returnerar <strong>&quot;Sample text&quot;</strong>.</td>
 </tr>
-<tr class="odd">
+<tr>
 <td>GETENUMVALUEBYNAME (uppräkning av sökväg för datakälla, uppräkning av etikettext för värde)</td>
 <td>Returnera ett värde för den specificerade fasta datakällan baserat på den angivna texten för uppräkningsetiketten.</td>
 <td>I följande illustration introduceras uppräkningen <strong>ReportDirection</strong> i en datamodell. Observera att etiketter definieras för uppräkningsvärden.
@@ -603,7 +611,24 @@ Flaggan för att skriva ut valuta och parametrarna för decimaltecken analyseras
 <li>Modelluppräkningen <strong>ReportDirection</strong> infogas i en rapport som en datakälla <strong>$Direction</strong>.</li>
 <li>ER-uttrycket <strong>$IsArrivals</strong> är utformat för att använda modelluppräkning som en parameter för denna funktion. Värdet för detta uttryck är <strong>TRUE</strong>.</li>
 </ul>
-<a href="./media/ER-data-model-enumeration-usage.PNG"><img src="./media/ER-data-model-enumeration-usage.PNG" alt="Example of data model enumeration" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a></td>
+<a href="./media/ER-data-model-enumeration-usage.PNG"><img src="./media/ER-data-model-enumeration-usage.PNG" alt="Example of data model enumeration" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a>
+</td>
+</tr>
+<tr>
+<td>GUIDVALUE (indata)</td>
+<td>Konvertera angivna indata för datatypen <strong>sträng</strong> till ett dataobjekt i datatypen <strong>GUID</strong>.</td>
+<td>Du definierar följande datakällor i din modellmappning:
+<ul>
+<li><strong>myID</strong> (typen <strong>beräknat fält</strong>), som innehåller uttrycket <strong>GUIDVALUE (&quot;AF5CCDAC F728-4609-8C8B-A4B30B0C0AA0&quot;)</strong></li>
+<li><strong>Användare</strong> (typen <strong>Registerposter</strong>), som refererar till tabellen UserInfo</li>
+</ul>
+När du har definierat dessa datakällor kan du använda ett uttryck såsom <strong>FILTER (Users, Users.objectId = myID)</strong> för att filtrera registret UserInfo genom <strong>objectId</strong> i datatypen <strong>GUID</strong>.
+</td>
+</tr>
+<tr>
+<td>JSONVALUE (id, sökväg)</td>
+<td>Tolka data i JSON-format (JavaScript Object Notation) som används av den angivna sökvägen för att ta fram ett skalärvärde som baseras på angivet-ID.</td>
+<td>Datakällan <strong>$JsonField</strong> innehåller följande data i JSON-format: <strong>{&quot;nummer&quot;:&quot;7.3.1234.1&quot;, &quot;KeyThumbprint&quot;:&quot;7366E&quot;}</strong>. För den här datakällan returnerar </strong>JSONVALUE ( &quot;BuildNumber&quot;, $JsonField)</strong> värdet <strong>7.3.1234.1</strong> av datatypen <strong>sträng</strong>.</td>
 </tr>
 </tbody>
 </table>
@@ -613,7 +638,7 @@ Flaggan för att skriva ut valuta och parametrarna för decimaltecken analyseras
 | Funktion | beskrivning | Exempel |
 |----------|-------------|---------|
 | TEXT (input) | Returnera den specificerade indatan efter att den har konverteras till en textsträng formaterad enligt serverns lokala inställningar för den aktuella instansen av Finance and Operations. För värden av typen **real** är strängkonverteringen begränsad till två decimaler. | Om serverns lokala inställningar för Finance and Operations anges som **EN-US**, returnerar **TEXT (NOW ())** aktuellt Finance and Operations-sessionsdatum, December 17, 2015, som textsträngen **12/17/2015 07:59:23 AM**. **TEXT (1/3)** returnerar **"0.33"**. |
-| QRCODE (sträng) | Returnera en QR-kodbild i binärt base64-format för den specificerade strängen. | **QRCODE ("Sample text")** returnerar **U2FtcGxlIHRleHQ =**. |
+| QRCODE (sträng) | Returnera en QR-kod (Quick Response Code ) i binärt base64-format för den specificerade strängen. | **QRCODE ("Sample text")** returnerar **U2FtcGxlIHRleHQ =**. |
 
 ### <a name="data-collection-functions"></a>Datainsamlingsfunktioner
 
@@ -631,11 +656,11 @@ Flaggan för att skriva ut valuta och parametrarna för decimaltecken analyseras
 | Funktion | beskrivning | Exempel |
 |----------|-------------|---------|
 | CONVERTCURRENCY (amount, source currency, target currency, date, company) | Konvertera det angivna penningbeloppet från den specificerade källvalutan till den specificerade målvalutan genom att använda inställningarna för det specificerade Finance and Operations-företaget på angivet datum. | **CONVERTCURRENCY (1, "EUR", "USD", TODAY(), "DEMF")** returnerar motsvarigheten för en euro i US-dollar för det aktuella sessionsdatumet baserat på inställningarna för DEMF-företaget. |
-| ROUNDAMOUNT (number, decimals, round rule) | Avrunda det angivna beloppet enligt den definierade avrundningsregeln och det angivna antalet decimaler.<blockquote>[!NOTE]<br>Avrundningsregeln måste anges som ett värde för Finance and Operations-uppräkningen för <strong>RoundOffType</strong>.</blockquote> | Om parametern **model.RoundOff** anges som **Downward**, returnerar **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** värdet **1000.78**. Om **model.RoundOff**-parametern är inställd på **Normal** eller **Rounding-up** returnerar **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** värdet **1000.79**. |
+| ROUNDAMOUNT (number, decimals, round rule) | Avrunda det angivna beloppet enligt den definierade avrundningsregeln och det angivna antalet decimaler.<blockquote>[!NOTE]<br>Avrundningsregeln måste anges som ett värde för Finance and Operations-uppräkningen för **RoundOffType**.</blockquote> | Om parametern **model.RoundOff** anges som **Downward**, returnerar **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** värdet **1000.78**. Om **model.RoundOff**-parametern är inställd på **Normal** eller **Rounding-up** returnerar **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** värdet **1000.79**. |
 | CURCredRef (digits) | Returnerar en betalningsmottagarreferens baserad på siffrorna i det angivna fakturanumret. | **CURCredRef ("VEND-200002")** returnerar **"2200002"**. |
 | MOD\_97 (siffror) | Returnerar en betalningsmottagarreferens som ett MOD97-uttryck baserat på siffrorna i det angivna fakturanumret. | **MOD\_97 ("VEND-200002")** returnerar **"20000285"**. |
 | ISOCredRef (digits) | Returnera en International Organization for Standardization (ISO)-betalningsmottagarreferens baserad på siffror och bokstäver i det angivna fakturanumret.<blockquote>[!NOTE]<br>Om du vill ta bort symboler som inte överensstämmer med ISO-standarden från alfabetet måste indataparametern översättas innan den skickas till den här funktionen.</blockquote> | **ISOCredRef ("VEND-200002")** returnerar **"RF23VEND-200002"**. |
-| CN\_GBT\_AdditionalDimensionID (sträng, nummer) | Hämta ID för ytterligare ekonomisk dimension Dimensioner representeras i denna sträng som ID åtskilda med kommatecken. Nummer definierar den begärda dimensionens seriekod i denna sträng. | **CN\_GBT\_AdditionalDimensionID ("AA,BB,CC,DD,EE,FF,GG,HH",3)** returnerar **"CC"**. |
+| CN\_GBT\_AdditionalDimensionID (sträng, nummer) | Hämta angiven ID för ytterligare ekonomisk dimension I parametern **sträng** representeras dimensioner som ID åtskilda med kommatecken. Parametern **nummer** definierar den begärda dimensionens seriekod i strängen. | **CN\_GBT\_AdditionalDimensionID ("AA,BB,CC,DD,EE,FF,GG,HH",3)** returnerar **"CC"**. |
 | GetCurrentCompany () | Returnera en textrepresentation av den kod för juridisk person (företag) som en användare för tillfället är inloggad till. | **GETCURRENTCOMPANY ()** returnerar **USMF** för en användare som är inloggad på Finance and Operations-företaget **Contoso Entertainment System USA**. |
 | CH\_BANK\_MOD\_10 (siffror) | Returnera en betalningsmottagarreferens som ett MOD10-uttryck baserat på siffrorna i det angivna fakturanumret. | **CH\_BANK\_MOD\_10 ("VEND-200002")** returnerar **3**. |
 | FA\_SUM (Anläggningstillgångskod, värdemodellkod, startdatum, slutdatum) | Returnera den förberedda databehållaren med anläggningstillgångsbelopp för angiven period. | **FA\_SUM ("COMP-000001", "Current", Date1, Date2)** returnerar den förberedda databehållaren för anläggningstillgången **"COMP-000001"** som har värdemodellen **"Current"** i en period mellan **Date1** och **Date2**. |

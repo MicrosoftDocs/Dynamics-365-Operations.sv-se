@@ -28,6 +28,7 @@ ms.lasthandoff: 05/08/2018
 
 # <a name="upgrade-warehouse-management-from-microsoft-dynamics-ax-2012-to-finance-and-operations"></a>Uppgradera lagerstyrning från Microsoft Dynamics AX 2012 till Finance and Operations
 
+
 [!include [banner](../includes/banner.md)]
 
 Det här avsnittet innehåller en översikt över hur du uppgraderar från Microsoft Dynamics AX 2012 R3, kör WMSII-modulen, till Microsoft Dynamics 365 for Finance and Operations.

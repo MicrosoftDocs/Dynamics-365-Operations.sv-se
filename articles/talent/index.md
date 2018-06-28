@@ -1,9 +1,9 @@
 ---
 title: Microsoft Dynamics 365 for Talent
 description: "Talent förenklar många vanliga arkiveringsuppgifter och automatiserar ett antal processer relaterade till personalen i organisationen. Dessa processer inkluderar personalvård, förmånsadministration, utbildning, prestationsgranskning och ändringshantering."
-author: rschloma
+author: josaw
 manager: AnnBe
-ms.date: 09/19/2017
+ms.date: 06/04/2018
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-365-talent
@@ -18,10 +18,10 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: db8b2e87ad020dac16ec74f2fea62e445c38e116
+ms.sourcegitcommit: bde68c9167e18cae6be4988865123d20274753c0
+ms.openlocfilehash: 9bc09a822f78b9792c2afdb0d297809edea7551a
 ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 06/06/2018
 
 ---
 
@@ -42,6 +42,9 @@ Talent går att använda till att slutföra följande uppgifter:
 + Granska prestanda och implementera mål för arbetare.
 + Ställa in, leverera och analysera kurser som innehåller agendor, sessioner och spårningar.
 
+Utforska Dynamics 365 för Talent genom att titta på videon [Hur du kommer igång med Dynamics 365 för Talent.](https://www.youtube.com/watch?v=6rg2ByadbN0)
+
+
 > [!NOTE] 
 > Dynamics 365 for Talent är nära besläktat med Human Resources i Dynamics 365 for Finance and Operations. Samma funktioner kan visas i båda produkterna. I de avsnitt som i första hand berör Human Resources används produktnamnet Dynamics 365 for Finance and Operations och i de avsnitt som i första hand berör Talent används produktnamnet Dynamics 365 for Talent. Avsnitt som skrivs för en produkt kan även gälla för samma funktioner i en relaterad produkt.
 
@@ -55,6 +58,8 @@ När du arbetar med Talent bestämmer du hur organisationen struktureras med hj�
 -   [Ställa in personalparametrar bland juridiska personer](set-up-hr-parameters-across-legal-entities.md) 
 -   [Vanliga frågor och svar om personalåtgärder](personnel-actions-faq.md)
 -   [Översikt över tjänstledighet och frånvaro](leave-absence-overview.md)
+-   [Hur du använder Dynamics 365 for Talent: Tjänstledighet och frånvaro (video)](https://www.youtube.com/watch?v=1q1UhKmO4tw)
+-   [Hur du hanterar personal i Dynamics 365 for Talent (video)](https://www.youtube.com/watch?v=h1T5IjKKAuA)
 
 ## <a name="staffing-your-organization"></a>Bemanna organisationen
 
@@ -71,14 +76,16 @@ Du kan skapa planer som effektivt och rättvist hanterar såväl kompensation so
 -   [Bearbeta kompensation](process-compensation.md)
 -   [Skapa planer för fast kompensation](create-fixed-compensation-plans.md)
 -   [Skapa planer för variabel kompensation](create-variable-compensation-plans.md)
+-   [Hur du hanterar kompensation i Dynamics 365 for Talent (video)](https://www.youtube.com/watch?v=lEw5oKopHDk)
 
 ## <a name="develop-and-train-employees"></a>Utveckla och utbilda medarbetare
 
-För att hjälpa anställda att nå karriärmålen och samtidigt uppfylla viktiga affärsbehov går det att sätta upp mål, skapa prestationsgranskningar och spåra kommentarer. För att hjälpa anställda att skaffa nödvändiga kompetenser, går det även att ställa in lärare, kurstyper, kurser, kursbeskrivningar, agendor, spårningar och sessioner innan du tilldelar en lärare till en kurs eller registrerar någon på en kurs. Lärare måste redan finnas som anställda, sökande eller kontakter.
+För att hjälpa medarbetare att nå karriärmålen och samtidigt uppfylla viktiga affärsbehov går det att sätta upp mål, skapa prestationsgranskningar och spåra kommentarer. För att hjälpa medarbetare att skaffa nödvändiga kompetenser, går det även att ställa in lärare, kurstyper, kurser, kursbeskrivningar, agendor, spårningar och sessioner innan du tilldelar en lärare till en kurs eller registrerar någon på en kurs. Lärare måste redan finnas som anställda, sökande eller kontakter.
 
 -   [Prestandahantering](performance-management-overview.md)
 -   [Justera personalens kompetenser och affärsbehov](skills.md)
 -   [Administrera utbildning genom kurser](courses.md)
+-   [Hur du hanterar medarbetarnas utveckling i Dynamics 365 for Talent (video)](https://www.youtube.com/watch?v=xB8SU7fqBOQ)
 
 ## <a name="create-and-maintain-benefits"></a>Skapa och underhålla förmåner
 
@@ -87,6 +94,7 @@ Utöver att kompensera din personal i form av löner och bonusar går det att ut
 -   [Hantera ett förmånsprogram](manage-benefit-program.md)
 -   [Policyer för förmånsberättigande](benefit-eligibility-policies.md)
 -   [Hantera artiklar utlånade till arbetare](loan-items.md)
+-   [Hur du hanterar medarbetarnas förmåner i Dynamics 365 for Talent (video)](https://www.youtube.com/watch?v=nUWkeJTad1o)
 
 ## <a name="maintain-workplace-safety-and-compliance"></a>Underhålla arbetsplatssäkerhet och efterlevnad
 
