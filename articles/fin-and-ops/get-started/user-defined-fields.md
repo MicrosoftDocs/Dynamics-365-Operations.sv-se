@@ -3,7 +3,7 @@ title: "Anpassade fält"
 description: "Det här avsnittet visar hur Microsoft Dynamics 365 for Finance and Operations tillåter vissa användare att skapa egna fält för att anpassa programmet så att det passar verksamheten."
 author: jasongre
 manager: AnnBe
-ms.date: 04/18/2018
+ms.date: 07/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -27,8 +27,6 @@ ms.lasthandoff: 05/23/2018
 # <a name="custom-fields"></a>Anpassade fält
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/pre-release.md)]
 
 Trots att Microsoft Dynamics 365 for Finance and Operations ger en omfattande uppsättning av färdiga fält för hantering av en mängd olika affärsprocesser, kan ibland företag ha behov av att söka ytterligare information i systemet. För att tillgodose detta behov tillåter Finance and Operations dig att skapa egna fält för att anpassa programmet så att det passar ditt företag, förutsatt att du har behörighet till funktionen. 
 

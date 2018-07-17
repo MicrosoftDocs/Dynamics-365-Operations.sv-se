@@ -3,7 +3,7 @@ title: "Översikt över notifieringar"
 description: "Det här avsnittet innehåller allmän information om notifieringar i Microsoft Dynamics 365 for Finance and Operations. Du kan använda notifieringar för att hålla dig informerad om händelser som du vill spåra under arbetsdagen."
 author: tjvass
 manager: AnnBe
-ms.date: 03/20/2018
+ms.date: 07/16/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -27,8 +27,6 @@ ms.lasthandoff: 04/13/2018
 # <a name="alerts-overview"></a>Översikt över notifieringar
 
 [!include [banner](../includes/banner.md)]
-
-[!include [banner](../includes/pre-release.md)]
 
 ## <a name="about-alerts"></a>Om notifieringar
 Notifieringar utgör ett meddelandesystem för kritiska händelser i Microsoft Dynamics 365 for Finance and Operations. Du kan använda notifieringar för att hålla dig informerad om händelser som du vill spåra under arbetsdagen. Du kan enkelt skapa din egen uppsättning regler så att du meddelas om försenade leveranser, raderade order, ändrade priser eller andra händelser som du behöver reagera på.
