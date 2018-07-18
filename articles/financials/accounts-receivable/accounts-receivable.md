@@ -43,17 +43,17 @@ Det går att skapa kundfakturor baserade på försäljningsorder eller följesed
 
 Använd Kundreskontra när du vill spåra kundfakturor och inkommande betalningar från kunder. Du kan ställa in kundgrupper, kunder, bokföringsprofiler, räntefakturor, kravbrev, provisioner och parametrar angående kunder, avgifter, leveranser och destinationer, växlar och andra typer av kundreskontrainformation. 
 
-:::rad::: :::kolumn::: - [Redovisningsfördelningar och poster i reskontrajournal för fritextfakturor](accounting-distributions-subledger-journal-entries-free-text-invoices.md)
+:::row::: :::column::: - [Redovisningsfördelningar och poster i reskontrajournal för fritextfakturor](accounting-distributions-subledger-journal-entries-free-text-invoices.md)
         - [Bokföringsprofiler för kund](customer-posting-profiles.md)
         - [Inställning, auktorisering och registrering av kreditkort](credit-card-authorizations.md)
         - [Skapa en kundfaktura](configure-customer-invoices.md)
         - [Ställ in och bearbeta återkommande fakturor](set-up-process-recurring-invoices.md)
-        - [Korrigera en fritextfaktura](correct-free-text-invoice.md) :::kolumnslut::: :::kolumn::: - [Ställ in växlar](set-up-bills-exchange.md)
+        - [Korrigera en fritextfaktura](correct-free-text-invoice.md) :::column-end::: :::column::: - [Ställ in växlar](set-up-bills-exchange.md)
         - [Ställa in räntesatser för en räntekod](set-up-interest-rates-interest-code.md)
         - [Avstå, återinföra eller återföra ränteavgifter](waive-reinstate-reverse-interest-fees.md)
         - [Översikt över SEPA-direktdebitering](sepa-direct-debit-overview.md)
         - [Ställ in fullmakt för SEPA-direktdebitering](sepa-direct-debit-mandate.md)
-        - [Stäng kundreskontra](close-accounts-receivable.md) :::kolumnslut::: :::radslut:::
+        - [Stäng kundreskontra](close-accounts-receivable.md) :::column-end::: :::row-end:::
 
 
 ## <a name="set-up-credit-and-collections"></a>Ställa in kredit och inkasso
@@ -70,13 +70,13 @@ Inkassoinformation för kundreskontra hanteras i en central vy, sidan Inkasso. K
 
 Acceptera andra typer av betalningar från kunder, till exempel växlar, kontanter, checkar, kreditkort och elektroniska betalningar. 
 
-:::rad::: :::kolumn::: - [Använda en kundbetalning för att kvitta flera fakturor som omfattar flera rabattperioder](customer-payment-settle-multiple-invoices-multiple-discount-periods.md)
+:::row::: :::column::: - [Använda en kundbetalning för att kvitta flera fakturor som omfattar flera rabattperioder](customer-payment-settle-multiple-invoices-multiple-discount-periods.md)
         - [Centraliserade kundreskontrabetalningar](centralized-payments-accounts-receivable.md)
         - [Kvitta en kunddelbetalning med hela slutbetalningen före rabattdatumet](../accounts-payable/settle-partial-customer-payment-or-final-payment-before-discount.md)
-        - [Kvitta en kunddelbetalning före rabattdatumet med en slutbetalning efter rabattdatumet](settle-partial-customer-payment-before-discount-or-final-payment-after.md) :::kolumnslut::: :::kolumn::: - [Kvitta en kunddelbetalning som har rabatter på kreditfakturor](settle-partial-customer-payment-discounts-credit-notes.md)
+        - [Kvitta en kunddelbetalning före rabattdatumet med en slutbetalning efter rabattdatumet](settle-partial-customer-payment-before-discount-or-final-payment-after.md) :::column-end::: :::column::: - [Kvitta en kunddelbetalning som har rabatter på kreditfakturor](settle-partial-customer-payment-discounts-credit-notes.md)
         - [Kvitta en kunddelbetalning som har flera rabattperioder](settle-partial-customer-payment-multiple-discount-periods.md)
         - [Återbetala kunder](reimburse-customers.md)
-        - [Kundbetalningar för ett delbelopp](customer-payments-partial-amount.md) :::kolumnslut::: :::radslut:::
+        - [Kundbetalningar för ett delbelopp](customer-payments-partial-amount.md) :::column-end::: :::row-end:::
 
 
 ### <a name="additional-resources"></a>Ytterligare resurser

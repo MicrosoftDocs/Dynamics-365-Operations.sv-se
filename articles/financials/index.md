@@ -33,16 +33,16 @@ Det här ämnet innehåller en lista med hjälpavsnitt och andra resurser för d
 
 Välj ett funktionsområde för att läsa mer om det.
 
-:::rad::: :::kolumn::: - [Leverantörsreskontra](accounts-payable/accounts-payable.md) 
+:::row::: :::column::: - [Leverantörsreskontra](accounts-payable/accounts-payable.md) 
         - [Kundreskontra](accounts-receivable/accounts-receivable.md)
         - [Budgetering](budgeting/budgeting-overview.md) 
         - [Kassa- och bankhantering](cash-bank-management/cash-bank-management.md)
-        - [Kostnadsredovisning](cost-accounting/cost-accounting-home-page.md) :::kolumnslut::: :::kolumn::: - [Utläggshantering](expense-management/expense-management.md)
+        - [Kostnadsredovisning](cost-accounting/cost-accounting-home-page.md) :::column-end::: :::column::: - [Utläggshantering](expense-management/expense-management.md)
         - [Ekonomisk rapportering](../dev-itpro/analytics/financial-reporting-intro.md?toc=/fin-and-ops/toc.json)
         - [Anläggningstillgångar](fixed-assets/fixed-assets.md)
         - [Redovisning](general-ledger/general-ledger.md) 
         - [Projekthantering](project-management/overview-project-management-accounting.md)
-        - [Offentlig sektor](public-sector/public-sector-functionality.md) :::kolumnslut::: :::radslut:::
+        - [Offentlig sektor](public-sector/public-sector-functionality.md) :::column-end::: :::row-end:::
 
 
 ## <a name="additional-resources"></a>Ytterligare resurser
