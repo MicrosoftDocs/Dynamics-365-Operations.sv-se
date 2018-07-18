@@ -18,10 +18,10 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: d1307729945494ee78c0ca6089b384d666fe5f20
+ms.sourcegitcommit: e7e10768dd1e0a441842d5b13964f49153c35be3
+ms.openlocfilehash: cced03d29bb04182a3f5bae86c3bec6d3c086cde
 ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 07/10/2018
 
 ---
 
@@ -114,16 +114,16 @@ Mycket av innehållet gäller även relaterade produkter: Microsoft Dynamics 365
 </td>
 <td>
 <h3>Relaterade produkter</h3>
-<h4><a href="../talent/index.md">Dynamics 365 for Talent</a></h4>
-<p><a href="../talent/manage-benefit-program.md">Förmåner</a></p>
-<p><a href="../talent/performance-management-overview.md">Medarbetares utveckling och utbildning</a></p>
-<p><a href="../talent/questionnaires.md">Enkät</a></p>
-
 <h4><a href="../retail/index.md">Dynamics 365 for Retail</a></h4>
 <p><a href="../retail/call-center-functionality.md">Kundtjänst</p>
 <p><a href="../retail/define-maintain-retail-channels.md">Inställning och hantering av kanaler</p>
 <p><a href="../retail/retail-peripherals-overview.md">MPOS och Cloud POS</p>
 <p><a href="../retail/dev-itpro/dev-retail-home-page.md">Utveckling och administration av Retail</p>
+
+<h4><a href="../talent/index.md">Dynamics 365 for Talent</a></h4>
+<p><a href="../talent/manage-benefit-program.md">Förmåner</a></p>
+<p><a href="../talent/performance-management-overview.md">Medarbetares utveckling och utbildning</a></p>
+<p><a href="../talent/questionnaires.md">Enkät</a></p>
 
 </td>
 </tr>
