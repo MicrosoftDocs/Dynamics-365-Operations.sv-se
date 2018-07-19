@@ -1653,6 +1653,7 @@
                 - name: Årsbokslut
                   href: ../financials/localizations/emea-cze-hun-year-end.md
             - name: Danmark
+              href: ../financials/localizations/denmark.md
               items:
                 - name: Tilldela ett betalningsblankettformat till ett kundkonto
                   href: ../financials/localizations/tasks/assign-payment-slip-format-customer-account.md
@@ -1684,6 +1685,7 @@
                 - name: Momsutdrag
                   href: ../financials/localizations/emea-est-vat-statement-details.md
             - name: Frankrike
+              href: ../financials/localizations/france.md
               items:
                 - name: Offentlig sektor
                   items:
@@ -1760,6 +1762,7 @@
                 - name: Ställ in elektronisk momsdeklaration
                   href: ../dev-itpro/analytics/tasks/setup-electronic-tax-declaration-germany.md?toc=/fin-and-ops/toc.json
             - name: Ungern
+              href: ../financials/localizations/hungary.md
               items:
                 - name: Beräkning av valutakurs
                   href: ../financials/localizations/tasks/hu-00001-exchange-rate-calculation.md
@@ -1774,6 +1777,7 @@
                 - name: Årsbokslut
                   href: ../financials/localizations/emea-cze-hun-year-end.md
             - name: Island
+              href: ../financials/localizations/iceland.md
               items:
                 - name: Skapa ett leverantörskonto och bifoga fakturadeklarationskategorin
                   href: ../financials/localizations/tasks/create-vendor-account-attach-invoice-declaration-category.md
@@ -1784,6 +1788,7 @@
                 - name: Uppdatera leverantörsfakturadeklarationer och generera rapporten
                   href: ../financials/localizations/tasks/update-vendor-invoice-declarations-report.md
             - name: Italien
+              href: ../financials/localizations/italy.md
               items:
                 - name: Momsutdragsinformation
                   href: ../financials/localizations/emea-ita-vat-statements-details.md
@@ -1806,6 +1811,7 @@
                 - name: Källskatt
                   href: ../financials/localizations/emea-ita-withholding-tax.md
             - name: Lettland
+              href: ../financials/localizations/latvia.md
               items:
                 - name: Redovisning av anläggningstillgångar
                   href: ../financials/localizations/emea-lva-fixed-assets-accounting.md
@@ -1818,6 +1824,7 @@
                 - name: Momsutdragsinformation
                   href: ../financials/localizations/emea-lva-vat-statement-details.md
             - name: Litauen
+              href: ../financials/localizations/lithuania.md
               items:
                 - name: Utdrag reparation av anläggningstillgångar
                   href: ../financials/localizations/emea-ltu-fixed-asset-repair-statement.md
@@ -1828,12 +1835,14 @@
                 - name: Momsutdragsinformation
                   href: ../financials/localizations/emea-ltu-vat-statement-details.md
             - name: Nederländerna
+              href: ../financials/localizations/netherlands.md
               items:
                 - name: Elektroniska momsdeklarationer (EVAT)
                   href: ../financials/localizations/tasks/nl-00010-electronic-tax-declarations-evat.md
                 - name: Semansys XBRL-integration
                   href: ../financials/localizations/tasks/nl-00003-semansys-xbrl-integration.md
             - name: Norge
+              href: ../financials/localizations/norway.md
               items:
                 - name: Kund- och leverantörsbetalningsformat
                   href: ../financials/localizations/tasks/no-00003-customer-vendor-payment-formats.md
@@ -1848,6 +1857,7 @@
                 - name: Riktlinjer för distribution av kassaapparater
                   href: ../retail/localizations/emea-nor-loc-deployment-guidelines.md?toc=/fin-and-ops/toc.json
             - name: Polen
+              href: ../financials/localizations/poland.md
               items:
                 - name: Beräkna radrabatter från enhetspris
                   href: ../financials/localizations/emea-pol-line-discount-calculation-from-unit-price.md
@@ -1870,6 +1880,7 @@
                 - name: Omsättnings- och saldoutdrag
                   href: ../financials/localizations/emea-pol-turnover-balances-statement.md
             - name: Spanien
+              href: ../financials/localizations/spain.md
               items:
                 - name: Tillämpa kassarabatt på fakturan
                   href: ../financials/localizations/emea-esp-cash-discount-applied-invoice.md
@@ -1898,6 +1909,7 @@
                 - name: Särskilda poster och ingående ark
                   href: ../financials/localizations/emea-esp-opening-sheets-spain.md
             - name: Sverige
+              href: ../financials/localizations/sweden.md
               items:
                 - name: Exportera ekonomisk information för revisorer i Sverige
                   href: ../financials/localizations/emea-swe-sie-standard-report.md
@@ -1906,10 +1918,12 @@
                 - name: Kassaapparater
                   href: ../retail/localizations/emea-swe-cash-registers.md?toc=/fin-and-ops/toc.json
             - name: Schweiz
+              href: ../financials/localizations/switzerland.md
               items:
                 - name: Importera kundbetalningar i ESR
                   href: ../financials/localizations/emea-che-esr-customer-payments-import.md
             - name: Storbritannien
+              href: ../financials/localizations/united-kingdom.md
               items:
                 - name: 'Konstruktionsbranschschema '
                   href: ../financials/localizations/emea-gbr-cis-construction-industry-scheme.md
