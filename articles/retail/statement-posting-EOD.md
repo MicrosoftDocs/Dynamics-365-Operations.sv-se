@@ -17,10 +17,10 @@ ms.author: anpurush
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 86b301833f3655f7172e2d38ddca4239be71760c
-ms.openlocfilehash: bcb4af426e5967643a1c438bb19495576ce51b63
+ms.sourcegitcommit: 4961ee7fcc56af0646e421c9e040e2129cc322c4
+ms.openlocfilehash: e6d6ede65764c0b35c9ce0985af0d9f2cd6653c0
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/26/2018
+ms.lasthandoff: 06/12/2018
 
 ---
 
@@ -58,6 +58,8 @@ Som del av förbättringarna av funktionerna för bokföring av utdrag har tre n
 - **Inaktivera att inventering krävs** – när det här alternativet ställs in på **Ja**, fortsätter bokföringsprocessen för ett utdrag, även om skillnaden mellan det beräknade beloppet och transaktionsbeloppet för utdraget är utanför det tröskelvärde som är definieras på snabbfliken **Utdrag** för butiker.
 
 Dessutom har fältet **Maximalt antal parallella utdragsbokföringar** införts på snabbfliken **batchbearbetning**. Det här fältet anger antalet batchuppgifter som ska köras samtidigt. För närvarande måste du manuellt ange värdet i det här fältet.
+
+Dessutom med nya bokföringsprocessen är du skyldig att definiera en **Presentkortsprodukt** på snabbfliken **presentkort** på fliken **bokföring** på sidan **butiksparametrar** Detta gäller även om ingen presentkort används i organisationen. 
 
 Observera att alla inställningar och parametrar som relateras till bokföring av utdrag och som definieras i butiker och på sidan **Butiksparametrar**, gäller för den förbättrade funktionen för bokföring av utdrag.
 

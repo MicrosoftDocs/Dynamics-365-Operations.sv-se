@@ -20,10 +20,10 @@ ms.author: aevengir
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e63f2b4289b640e601492425331ea8f3804d139a
-ms.openlocfilehash: 4f505a2de89863d1a12d415795fdfb82b3557bc0
+ms.sourcegitcommit: 338e0847ea91ee2582df0aab3e31a97c4f24113e
+ms.openlocfilehash: 016eec12c31398beede7fdddc4548ec196ebd704
 ms.contentlocale: sv-se
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 06/25/2018
 
 ---
 
@@ -51,7 +51,7 @@ Använd sidan **Transaktionskombinationer** om vill du göra det möjligt att an
 
 **4. Definiera lagerparametrar som hör till standardkostnader.** 
 
--  Använd fliken **Strukturlistor** på sidan **Lagerparametrar** om du vill definiera två kontrollparametrar som hör till standardkostnader. 
+-  Använd fliken **Lagerredovisning** på sidan **Lagerredovisningsparametrar** om du vill definiera två kontrollparametrar som hör till standardkostnader.
 
     -  I fältet **Kostnadsuppdelning** välj **Inga** eller **Delredovisning**. Om du väljer **Delredovisning**är kostnadsuppdelningen *aktiv*. En aktiv kostnadsuppdelning har stor betydelse när du beräknar, behåller och visar kostnadsgruppssegmentering över en produktstruktur i flera nivåer för standardkostnadsartiklar. När kostnadsuppdelningen är aktiv kan du rapportera och analysera lager, produkter i arbete (PIA) och kostnader för sålda varor (COGS) per kostnadsgrupp på en enda nivå, flera nivåer eller i totalformat. Om kostnadsuppdelningen är aktiv och du också aktiverar en tillverkad artikels kostnad kommer kostnadsgruppssegmenteringen att lagras i artikelns kostnadspost. 
 
