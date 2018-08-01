@@ -1,16 +1,16 @@
 ---
 title: Budgetplanering
-description: "Målet med den här övningen är att ge en guidad översikt över funktionsuppdateringarna inom området Budgetplanering i Microsoft Dynamics 365 for Finance and Operations. Syftet med övningen är att illustrera ett kort konfigureringsexempel av budgetplaneringsmodulen och visa hur budgetplaneringen kan utföras med hjälp av den här konfigurationen.  Den här övningen fokuserar på följande verksamhetsprocesser eller -uppgifter: – Skapa organisationshierarki för budgetplanering och konfigurera användarsäkerhet – Definiera budgetplanscenarion, budgetplankolumner, layouter och Excel-mallar – Skapa och aktivera budgetplaneringsprocessen – Skapa budgetplandokument genom att hämta resultat från redovisningen – Använda allokeringar för att justera budgetplandokumentdata – Redigera budgetplandokumentdata i Excel"
-author: twheeloc
+description: "Målet med den här övningen är att ge en guidad översikt över funktionsuppdateringarna inom området Budgetplanering i Microsoft Dynamics 365 for Finance and Operations. Syftet med övningen är att illustrera ett kort konfigureringsexempel av budgetplaneringsmodulen och visa hur budgetplaneringen kan utföras med hjälp av den här konfigurationen."
+author: ShylaThompson
 manager: AnnBe
-ms.date: 01/12/2018
+ms.date: 06/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: BudgetPlanningConfiguration
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 10763
 ms.assetid: 0f2ba752-1f6d-4f28-b9e9-b2e97d10b6d1
@@ -19,10 +19,10 @@ ms.author: sigitac
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 59781da7681ece1c0c013f59e0d1a5d7efc51c3a
+ms.sourcegitcommit: b8f2f3a33dc19c2ebc941d1a504eae0c276f3cdf
+ms.openlocfilehash: ac2e98dbbd45becf06e28b6ea4eb9d0ec15e30f6
 ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 06/25/2018
 
 ---
 
@@ -30,9 +30,15 @@ ms.lasthandoff: 03/26/2018
 
 [!include [banner](../includes/banner.md)]
 
-Målet med den här övningen är att ge en guidad översikt över funktionsuppdateringarna inom området Budgetplanering i Microsoft Dynamics 365 for Finance and Operations. Syftet med övningen är att illustrera ett kort konfigureringsexempel av budgetplaneringsmodulen och visa hur budgetplaneringen kan utföras med hjälp av den här konfigurationen.  Den här övningen fokuserar på följande verksamhetsprocesser eller -uppgifter: – Skapa organisationshierarki för budgetplanering och konfigurera användarsäkerhet – Definiera budgetplanscenarion, budgetplankolumner, layouter och Excel-mallar – Skapa och aktivera budgetplaneringsprocessen – Skapa budgetplandokument genom att hämta resultat från redovisningen – Använda allokeringar för att justera budgetplandokumentdata – Redigera budgetplandokumentdata i Excel 
+Målet med den här övningen är att ge en guidad översikt över funktionsuppdateringarna inom området Budgetplanering i Microsoft Dynamics 365 for Finance and Operations. Syftet med övningen är att illustrera ett kort konfigureringsexempel av budgetplaneringsmodulen och visa hur budgetplaneringen kan utföras med hjälp av den här konfigurationen.  I det här övningen fokuseras på följande processer och uppgifter:
+- Skapa organisationshierarki för budgetplanering och säkerhetsinställningar för användare
+- Definiera budgetplanscenarier, budgetplankolumner, layouter och Excel-mallar
+- Skapa och aktivera en budgetplaneringsprocess
+- Skapa budgetplandokument genom att dra i verkliga värden från redovisningen
+- Använda allokeringar för att justera dokumentdata för budgetplanen
+- Redigera dokumentdata för budgetplan i Excel 
 
-<a name="prerequisites"></a>Förutsättningar 
+<a name="prerequisites"></a>Krav 
 ------------------
 
 I den här självstudien måste du ha tillgång till Finance and Operations-miljön med Contoso-demonstrationsdata och vara administratör för instansen. Använd inte i webbläsaren i privat läge under övningen – logga ut från alla andra konton i webbläsaren och logga sedan in med administratörsautentiseringsuppgifter för Finance and Operations. När du loggar in i Finance and Operations **MÅSTE** du markera kryssrutan Håll mig inloggad. Då skapas en beständig cookie som Excel-appen behöver. Om du loggar in i Finance and Operations med en annan webbläsare än IE, uppmanas du att logga in via Excel-appen. När du klickar på Logga in i Excel-appen visas ett IE-popup-fönster och när du loggar in **MÅSTE** du markera kryssrutan Håll mig inloggad. Om det inte händer något när du klickar på logga in i Excel-appen rensar du cookiecachen i IE.
@@ -104,8 +110,6 @@ Budgetplaneringen använder särskilda säkerhetsprinciper för att kunna konfig
 2.5. Välj Ge tillgång till vissa organisationer. Välj organisationshierarkin som skapades i det första steget. Välj finansnoden och klicka på knappen Bevilja med underordnad knapp 
 
 ***Viktigt!*** *Se till att du är i kontexten för den juridiska personen DEMF när du genomför den här uppgiften, eftersom organisationssäkerhet tilldelas efter juridisk person* 
-
-[![Ge tillgång till](./media/screenshot14.png)](./media/screenshot14.png)
 
 ### <a name="task-3-create-scenarios"></a>Uppgift 3: Skapa scenarier
 3.1. Navigera till Budgetering&gt;Inställningar &gt; Budgetplanering &gt; Budgetplaneringskonfiguration. På scenariosidan kan du se scenarierna som vi ska använda i den här labbövningen: Utfall föregående år och Budgeterat. 

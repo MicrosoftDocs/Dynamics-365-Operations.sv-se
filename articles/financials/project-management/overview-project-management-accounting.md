@@ -19,10 +19,10 @@ ms.author: knelson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 404f7d2b050aba1532cae0955a9579e1c2f174e3
+ms.sourcegitcommit: b8f2f3a33dc19c2ebc941d1a504eae0c276f3cdf
+ms.openlocfilehash: 46c8ecf8a6988c32d0202c631bef6901f467bb89
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 06/25/2018
 
 ---
 
@@ -80,17 +80,37 @@ Du kan använda prognostisering om organisationen har ett driftperspektiv och fo
 ### <a name="create-projects"></a>Skapa projekt
 
 Du kan skapa sex typer av projekt i Microsoft Finance and Operations. Varje projekttyp konfigureras på olika sätt för kostnader och intäktsredovisning. Vilken projekttyp du väljer beror på syftet med projektet. I tabellen nedan beskrivs det vanliga användandet av varje projekttyp.
-
-                                                                                                                                                                         |
-
-| Projekttyp      | Beskrivning                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-|-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Tid och material | I Tids- och materialprojekt faktureras kunden för alla kostnader som uppstår i ett projekt. Dessa kostnader inkluderar kostnader för timmar, utgifter, artiklar och avgifter.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| Fast pris       | Fakturorna i fastprisprojekt består av a conto-transaktioner. Fasprisprojekt faktureras enligt ett faktureringsschema baserat på ett projektkontrakt. Intäkt för ett fastprisprojekt kan beräknas och bokföras i hela projektet genom att använda metoden för slutförd procent. Alternativt kan intäkt beräknas och bokförs när projektet är avslutat genom att använda moden för slutfört kontrakt. Företag kan ofta använda värdet för produkter i arbete (WIP) för att beräkna graden av slutförandet för ett projekt eller en grupp av projekt.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| Investering        | Investeringsprojekt är projekt som inte ger omedelbara intäkter. De används vanligtvis för långa interna projekt vars kostnader måste kapitaliseras. Bara kostnader för artiklar, timmar och utgifter kan registreras för ett investeringsprojekt. Kostnader i ett investeringsprojekt spåras och kontrolleras med hjälp av uppskattningsfunktionen. Investeringsprojekt kan ställas in med maximal kapitalisering (valfritt). Under investeringsprojektets gång registrerar du dess kostnader i PIA-konton, där kostnaderna förvaras tills projektet är avslutat. När projektet har eliminerats överför du PIA-värdet till en anläggningstillgång, ett redovisningskonto eller ett nytt projekt. Obs! Transaktioner för investeringsprojekt visas inte på sidorna **Bokför kostnader**, **Periodisera intäkter**, eller **Skapa fakturaförslag**.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| Kostnadsprojekt      | Likt investeringsprojekt används kostnadsprojekt vanligtvis för att spåra interna projekt, och bara timmar, utgifter och artiklar kan registreras i dem. Kostnadsprojekt är dock normalt kortare än investeringsprojekt. Dessutom kan inte kostnadsprojekt, till skillnad från investeringsprojekt, inte kapitaliseras mot balansräkningskonton. I stället bokförs deras projekttransaktioner bara på vinst- och förlustkonton. **OBS!** Transaktioner för kostnadsprojekt visas inte på sidorna **Bokför kostnader**, **Periodisera intäkter**, eller **Skapa fakturaförslag**. Eftersom kostnadsprojekt vanligtvis används för att spåra interna projekt, är de vanligtvis inte associerade med ett kundkonto. Om din installation däremot kräver att artikelbehov skapas för inköpsorder måste du koppla kostnadsprojektet till en kund. Kopplingen är ett krav eftersom artikelbehoven hanteras som försäljningsorderrader och systemet kräver att en kund specificeras. Dessa inställningar kommer dock inte att resultera i att artikelbehov skapas automatiskt från en inköpsorder. I kostnadsprojekt ignoreras inställningen **Skapa artikelbehov**. Om du behöver ett artikelbehov i ett kostnadsprojekt, kan du skapa ett manuellt, under förutsättning att en kund är kopplad till projektet. |
-| Intern          | Interna projekt används för att spåra kostnader i ett projekt som är internt för din organisation. Interna projekt kan tillhandahålla ett planläggningsverktyg för hantering av resursförbrukning. **Obs!** Transaktioner för interna projekt visas inte på sidorna **Periodisera intäkter** eller **Skapa fakturaförslag**.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-| Tid              | Tidsprojekt används för att spåra tid som är kopplad till icke-debiteringsbara och icke produktiva aktiviteter, till exempel ett projekt att spåra sjukfrånvaro för arbetare. Transaktioner i tidsprojekt bokförs inte i redovisningen. I stället är de inkluderade i rbetarutnyttjanderapporter. Endast timtransaktioner kan registreras för ett tidsprojekt. Du använder en timjournal eller tidrapport för att registrera dessa timmar till projektet. När timmarna har registrerats visas de som projekttransaktioner, men har inte motsvarande verifikationstransaktion. **Obs!** Transaktioner för tidsprojekt visas inte på sidorna **Bokför kostnader**, **Periodisera intäkter**, eller **Skapa fakturaförslag**.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+                                                                                                            
+<table>
+  <tr>
+    <td>Projekttyp</th>
+    <td>Beskrivning</th>
+  </tr>
+  <tr>
+    <td>Tid och material</td>
+    <td>I Tids- och materialprojekt faktureras kunden för alla kostnader som uppstår i ett projekt. Dessa kostnader inkluderar kostnader för timmar, utgifter, artiklar och avgifter.</td>
+  </tr>
+  <tr>
+    <td>Fast pris</td>
+    <td>Fakturorna i fastprisprojekt består av a conto-transaktioner. Fasprisprojekt faktureras enligt ett faktureringsschema baserat på ett projektkontrakt. Intäkt för ett fastprisprojekt kan beräknas och bokföras i hela projektet genom att använda metoden för slutförd procent. Alternativt kan intäkt beräknas och bokförs när projektet är avslutat genom att använda moden för slutfört kontrakt. Företag kan ofta använda värdet för produkter i arbete (WIP) för att beräkna graden av slutförandet för ett projekt eller en grupp av projekt.</td>
+  </tr>
+  <tr>
+    <td>Investering</td>
+    <td>Investeringsprojekt är projekt som inte ger omedelbara intäkter. De används vanligtvis för långa interna projekt vars kostnader måste kapitaliseras. Bara kostnader för artiklar, timmar och utgifter kan registreras för ett investeringsprojekt. Kostnader i ett investeringsprojekt spåras och kontrolleras med hjälp av uppskattningsfunktionen. Investeringsprojekt kan ställas in med maximal kapitalisering (valfritt). Under investeringsprojektets gång registrerar du dess kostnader i PIA-konton, där kostnaderna förvaras tills projektet är avslutat. När projektet har eliminerats överför du PIA-värdet till en anläggningstillgång, ett redovisningskonto eller ett nytt projekt. <br></br> <strong>OBS!</strong> Transaktioner för investeringsprojekt visas inte på sidorna <strong>Bokför kostnader<strong>, <strong>Periodisera intäkter</strong>, eller <strong>Skapa fakturaförslag</strong>.</td>
+  </tr>
+  <tr>
+    <td>Kostnadsprojekt</td>
+    <td>Likt investeringsprojekt används kostnadsprojekt vanligtvis för att spåra interna projekt, och bara timmar, utgifter och artiklar kan registreras i dem. Kostnadsprojekt är dock normalt kortare än investeringsprojekt. Dessutom kan inte kostnadsprojekt, till skillnad från investeringsprojekt, inte kapitaliseras mot balansräkningskonton. I stället bokförs deras projekttransaktioner bara på vinst- och förlustkonton. <br></br> <strong>OBS!</strong> Transaktioner för kostnadsprojekt visas inte på sidorna <strong>Bokför kostnader</strong>, <strong>Periodisera intäkter</strong>, eller <strong>Skapa fakturaförslag</strong>. Eftersom kostnadsprojekt vanligtvis används för att spåra interna projekt, är de vanligtvis inte associerade med ett kundkonto. Om din installation däremot kräver att artikelbehov skapas för inköpsorder måste du koppla kostnadsprojektet till en kund. Kopplingen är ett krav eftersom artikelbehoven hanteras som försäljningsorderrader och systemet kräver att en kund specificeras. Dessa inställningar kommer dock inte att resultera i att artikelbehov skapas automatiskt från en inköpsorder. I kostnadsprojekt ignoreras inställningen <strong>Skapa artikelbehov</strong>. Om du behöver ett artikelbehov i ett kostnadsprojekt, kan du skapa ett manuellt, under förutsättning att en kund är kopplad till projektet.</td>
+  </tr>
+  <tr>
+    <td>Intern</td>
+    <td>Interna projekt används för att spåra kostnader i ett projekt som är internt för din organisation. Interna projekt kan tillhandahålla ett planläggningsverktyg för hantering av resursförbrukning. <br></br><strong>OBS!<strong> Transaktioner för interna projekt visas inte på sidorna <strong>Periodisera intäkter</strong> eller <strong>Skapa fakturaförslag</strong>.</td>
+  </tr>
+  <tr>
+    <td>Tid</td>
+    <td>Tidsprojekt används för att spåra tid som är kopplad till icke-debiteringsbara och icke produktiva aktiviteter, till exempel ett projekt att spåra sjukfrånvaro för arbetare. Transaktioner i tidsprojekt bokförs inte i redovisningen. I stället är de inkluderade i rbetarutnyttjanderapporter. Endast timtransaktioner kan registreras för ett tidsprojekt. Du använder en timjournal eller tidrapport för att registrera dessa timmar till projektet. När timmarna har registrerats visas de som projekttransaktioner, men har inte motsvarande verifikationstransaktion. <br></br><strong>OBS!</strong> Transaktioner för tidsprojekt visas inte på sidorna<strong>Bokför kostnader</strong>, <strong>Periodisera intäkter</strong>, eller <strong>Skapa fakturaförslag</strong></td>
+  </tr>
+</table>
 
 
 ### <a name="assign-workers-categories-and-resources"></a>Tilldela anställda, kategorier och resurser
@@ -239,11 +259,12 @@ I tabellen nedan beskrivs metoderna för beräkning av kostnaden för att slutf�
 <li>Jämför prognostransaktioner med verkligt transaktioner.</li>
 <li>Underhåll, minska eller öka uppskattningarna för nästa period.</li>
 </ol>
-Finance and Operations minskar inte automatiskt prognosuppskattningarna. Därför är det en bra idé att upprätthålla en originalprognosmodell i fastprisprojektet för att ha en något att jämföra med när projektet är avslutat. &gt; [!NOTE] &gt; När du väljer den här metoden ska du använda minst två prognosmodeller. En modell ska innehålla originalprognosen. Till den andra modellen ska du kopiera prognostransaktionerna från en annan modell. Den här metoden gäller bara för fastprisprojekt och investeringsprojekt.</td>
+Finance and Operations minskar inte automatiskt prognosuppskattningarna. Därför är det en bra idé att upprätthålla en originalprognosmodell i fastprisprojektet för att ha en något att jämföra med när projektet är avslutat. 
+<br></br> <strong>OBS!</strong> När du väljer den här metoden ska du använda minst två prognosmodeller. En modell ska innehålla originalprognosen. Till den andra modellen ska du kopiera prognostransaktionerna från en annan modell. Den här metoden gäller bara för fastprisprojekt och investeringsprojekt.</td>
 </tr>
 <tr class="odd">
 <td>Resterande budget</td>
-<td>Den här metoden använder en modell för återstående budget för att beräkna kostnaden för projektet. När du använder den här metoden adderas de faktiska kostnaderna och prognosbeloppen i den återstående budgeten. Resultatet är en totalkostnad. Innan du använder den här metoden, måste en modell för resterande budget läggas upp där transaktioner dras av baserat på faktiska transaktioner som har registrerats i systemet. På sidan <strong>Prognosmodeller</strong> ser du till att fälten är markerade i gruppen <strong>Automatisk prognosreducering</strong> . Vanligtvis kopieras en en resterande budget från en ursprunglig budget. När transaktioner registreras minskas transaktionerna i den resterande budgeten. När projektet framskrider och om du bestämmer att den återstående budgeten ska justeras debiterar du prognostransaktioner på den resterande budgeten. <strong>Obs!</strong> Metoden kan endast användas om en prognosmodell är kopplad till uppskattningen.</td>
+<td>Den här metoden använder en modell för återstående budget för att beräkna kostnaden för projektet. När du använder den här metoden adderas de faktiska kostnaderna och prognosbeloppen i den återstående budgeten. Resultatet är en totalkostnad. Innan du använder den här metoden, måste en modell för resterande budget läggas upp där transaktioner dras av baserat på faktiska transaktioner som har registrerats i systemet. På sidan <strong>Prognosmodeller</strong> ser du till att fälten är markerade i gruppen <strong>Automatisk prognosreducering</strong> . Vanligtvis kopieras en en resterande budget från en ursprunglig budget. När transaktioner registreras minskas transaktionerna i den resterande budgeten. När projektet framskrider och om du bestämmer att den återstående budgeten ska justeras debiterar du prognostransaktioner på den resterande budgeten. <br></br> <strong>OBS!</strong> Metoden kan endast användas om en prognosmodell är kopplad till uppskattningen.</td>
 </tr>
 <tr class="even">
 <td>Som föregående uppskattning</td>
@@ -318,11 +339,19 @@ Betalningsdatumet beräknas inte på buffertdagar. När ett projekt är klart oc
 
 När all försäljning och alla leverantörsfakturor har slutförts kan du visa relationen mellan fälten på sidan **Kassaflöde** och fälten på sidan **Projektutdrag**.
 
-| Sidan Kassaflöde | Sidan Projektutdrag |
-|----------------|-------------------------|
-| Kassainflöden   | Intäkt                 |
-| Kassautflöden  | Totalkostnad              |
-| Nettokassaflöden | Bruttomarginal            |
+:::row::: :::column:::
+        #### Cash flow page
+        - Cash inflows 
+        - Cash outflows
+        - Net cash flows
+    :::column-end:::
+    :::column:::
+        #### Project statements page
+        - Revenue
+        - Total cost
+        - Gross margin
+    :::column-end:::
+:::row-end:::
 
 ### <a name="review-costs"></a>Granska kostnader
 
@@ -409,8 +438,4 @@ När utdraget har beräknats, kan du visa följande information på de olika fli
 -   **Förbrukning** – information om förbrukning av timmar, artiklar, utgifter och lönetransaktioner.
 -   **Faktura** – information om fakturor och a conto-fakturering.
 -   **Timtariff** – timpriset på timmarna som bokförs på vinst- och förlustkonton.
-
-
-
-
 

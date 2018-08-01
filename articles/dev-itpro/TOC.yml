@@ -1014,6 +1014,8 @@
           href: deployment/apply-deployable-package-system.md
         - name: Installera ett distribuerbart paket
           href: deployment/install-deployable-package.md
+        - name: Avinstallera ett paket
+          href: deployment/uninstall-deployable-package.md
         - name: Felsöka problem med paketprogram
           href: deployment/deployable-package-troubleshooting.md
 - name: 'Uppgraderingar, uppdateringar och snabbkorrigeringar'

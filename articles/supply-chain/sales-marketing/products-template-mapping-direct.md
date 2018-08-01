@@ -3,7 +3,7 @@ title: "Synkronisera produkter direkt från Finance and Operations till produkte
 description: "Det här avsnittet beskriver vilka mallar och underliggande uppgifter som används för att synkronisera produkter från Microsoft Dynamics 365 for Finance and Operations, till Microsoft Dynamics 365 for Sales."
 author: ChristianRytt
 manager: AnnBe
-ms.date: 10/25/2017
+ms.date: 06/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,10 +20,10 @@ ms.author: crytt
 ms.dyn365.ops.version: July 2017 update
 ms.search.validFrom: 2017-07-8
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 3ae50372edcd473f2288f8172b71eac33e24b636
+ms.sourcegitcommit: 03bab1d03be71c0e23a6ea93f542d6a52a212a1f
+ms.openlocfilehash: 66506953790fd77c2105591d3211c76991eced08
 ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 06/25/2018
 
 ---
 
@@ -78,7 +78,8 @@ Fältet **Hanteras externt** hjälper till att säkerställa att endast offerter
 Externt underhållna produkter läggs automatiskt till den första giltiga prislistan med samma valuta. Prislistor är sorterade i alfabetisk ordning efter namn. Produktens försäljningspris från Finance and Operations används som pris i prislista. Därför måste det finnas en prislista i Sales för varje produktförsäljningsvaluta i Finance and Operations. Valutan för frisläppta säljbara produkter har tilldelats redovisningsvalutan hos den juridiska personen som produkten exporteras från.
 
 > [!NOTE]
-> Produktsynkronisering lyckas inte, såvida det inte finns en prislista som har en matchande valuta.
+> - Produktsynkronisering lyckas inte, såvida det inte finns en prislista som har en matchande valuta.
+> - Du kan kontrollera den använda prislistan genom att mappa pricelevelid.name [standardprislista (namn)] i dataintegreringsprojektet. Inmatningen måste vara i gemener. Standardvärdet för en prislista i försäljning med namnet ”Standard” är till exempel: målfält: pricelevelid.name [standardprislista (namn)] och mapptyp: [ { ”transformType”: ”standard” ”defaultValue”: ”standard” } ].
 
 ## <a name="preconditions-and-mapping-setup"></a>Ställa in mappning och förutsättningar
 

@@ -1,6 +1,6 @@
 ---
 title: "Formalisera affärsprocesser"
-description: "Funktionen affärsprocess låter dig skapa affärsprocessmallar för processer som behöver slutföras inom organisationen."
+description: "Det här avsnittet förklarar hur du använder funktionen affärsprocess för att skapa affärsprocessmallar för processer som behöver slutföras inom organisationen."
 author: ShielaSogge
 manager: AnnBe
 ms.date: 01/09/2018
@@ -19,47 +19,60 @@ ms.author: ShielaS
 ms.search.validFrom: 2018-01-09
 ms.dyn365.ops.version: AX 7.1.0, Talent October 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 1b50a97f5e2fc94255ff71702faf91ab36e68eb4
+ms.sourcegitcommit: ee4035f3156a91faecdecba45289dbb1ca6e947a
+ms.openlocfilehash: fd538677d897c1e7d3103cd714c688373aab8d29
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 06/19/2018
 
 ---
 # <a name="formalize-business-processes"></a>Formalisera affärsprocesser
-Funktionen affärsprocess låter dig skapa affärsprocessmallar för processer som behöver slutföras inom organisationen. Företaget kan exempelvis göra en personalgranskning per år. En mall kan skapas för att spåra alla uppgifter som granskningen omfattar för att garantera att alla uppgifter görs varje gång som processen har slutförts och om så krävs för att säkerställa att uppgifterna utförs i rätt ordning. Mallar kan återanvändas för återkommande processer eller kopieras om du vill använda dem som utgångspunkt för att skapa nya.
 
-När du har skapat en mall kan en process startas och spåras i arbetsytan Affärsprocess.  När en affärsprocess startas kommer uppgifterna tilldelas till rätt personer och innehålla ett förfallodatum. Vi täcker dessa komponenter i detalj nedan.
+[!include[banner](includes/banner.md)]
 
-## <a name="business-process-template"></a>Affärsprocessmall
-En affärsprocessmall visar en grupp med aktiviteter som utgör en affärsprocess. Personalchefer och medhjälpare kan skapa affärsprocesser som standard.  Detta kan dock ändras i säkerhetskonfigurationen genom att redigera Underhåll allmänna affärsprocesser.
+Funktionen affärsprocess låter dig skapa affärsprocessmallar för processer som behöver slutföras inom organisationen. Exempelvis slutför ditt företag en årligen återkommande personalgranskning (HR). I det här fallet kan du skapa en mall som spårar uppgifter som revisionen består av. Den här mallen kan hjälpa till att garantera att alla uppgifter utförs varje gång revisionen utförs. Dessutom om uppgifterna som måste slutföras i en viss ordning kan mallen garantera att de görs i rätt ordning.
 
-En processägare kan definieras för varje process. Processägaren kommer att ha insyn i alla uppgifter för processen kan tilldela om uppgifter eller ändra förfallodatum.  T.ex. personalchefen kan till skapa en affärsprocessmall för en förmånsgranskning.  Chefen över kompensationer och förmåner kan anges som processägare så att han eller hon kan få inblick i de uppgifter som måste slutföras som en del av granskningen.  En processägare kan inte skapa eller ta bort aktiva affärsprocesser eller affärsprocessmallar.
+Mallar kan återanvändas för återkommande processer. De kan också kopieras och användas som utgångspunkt för att skapa nya mallar.
 
-## <a name="task"></a>Uppgift
-En affärsprocess består ofta av flera uppgifter. Vissa uppgifter kan slutföras i Dynamics 365 for Talent, såsom att granska interna kurserbjudanden. I detta fall markeras ett menyalternativ i fältet Uppgiftslänk. Andra uppgifter kan omfatta granska eller komplettera formulär på en webbplats. Genom att markerar URL:en i fältet Uppgiftslänk kan webbadressen anges. Du kan ange URL:er för både externa och interna webbplatser i det här fältet. Du kan också skapa uppgifter för aktiviteter som du slutför manuellt, till exempel granska tillgänglighet av alla strukturer. I detta fall krävs inte en uppgiftslänk. Denna flexibilitet låter dig spåra flera typer av uppgifter i en omfattande process.
+När du har skapat en mall kan en process startas och spåras i arbetsytan **Affärsprocess** När en affärsprocess startas kommer uppgifterna tilldelas till rätt personer och innehålla ett förfallodatum.
 
-Uppgifter kan tilldelas till en särskild arbetare eller till en befattning. Exempelvis ska en chef över kompensationer och förmåner alltid vara den person som utför en granskning av försäkringspremier.   När du skapar denna uppgift, välj befattning för tilldelningstypen och välj sedan chef över kompensationer och förmåner från listan. När processen startar tilldelas uppgiften till den anställde som har befattningen chef över kompensationer och förmåner. Du kan också tilldela en uppgift till en särskild arbetare genom att välja arbetare i fältet Tilldelningstyp och sedan välja rätt person.
+## <a name="business-process-templates"></a>Affärsprocessmallar
+En affärsprocessmall visar en grupp med aktiviteter som utgör en affärsprocess. Personalchefer och medhjälpare kan skapa affärsprocesser som standard. Du kan emellertid ändra de roller som kan skapa affärsprocesser genom att ändra **upprätthålla allmänna affärsprocesser** i säkerhetskonfigurationen.
 
-Uppgiftens förfallodatum datum beror på måldatumet som anges i början av processen. Vissa uppgifter måste slutföras före måldatumet och vissa kan slutföras efter måldatumet.  När du definierar en uppgift anger du ett förfallodatum som är i relation till datumet i fältet Förfallodatum förskjutet från måldatum. Anta till exempel att chefen över kompensationer och förmåner måste utföra en granskning av försäkringspremier 10 dagar innan personalgranskningen är klar. Den skapade uppgiften kommer att ha ett förfallodatum i relation till måldatumet på -10. Om processen har startat 13 maj kommer uppgiften därför att förfalla 3 maj. Obs! Förfallodatum kan också justeras när processen startas.
+En processägare kan definieras för varje affärsprocess. Processägaren kommer att ha insyn i alla uppgifter för processen kan tilldela om uppgifter eller ändra förfallodatum. T.ex. personalchefen skapar affärsprocessmallar för att granska förmåner och kompensationer och anger kompensation- och förmånschef som processägare. Kompensation- och förmånschef har sedan insyn i de uppgifter som måste slutföras som en del av granskningen.
 
-Komplicerade uppgifter kanske kräver flera steg eller kräver att personen som utför uppgifter tillhandahåller ytterligare information. Du kan lägga till instruktioner till uppgiften och inkluderar RTF även för anvisningarna. Instruktionerna kan ge ytterligare information om hur du slutför uppgiften till den person som har tilldelats för att slutföra den.
+En processägare kan inte skapa nya affärsprocesser eller affärsprocessmallar eller ta bort aktiva processer eller affärsprocessmallar.
 
-## <a name="starting-a-process"></a>Starta en process
-En process kan startas inom en affärsprocessmall genom att välja Starta process.  När en process startas skapas uppgifter för valda arbetare och/eller befattningar som definierats i de uppgifter som ingår i affärsprocessmallen. Ett förfallodatum kommer också att tilldelas varje uppgift genom att addera eller subtrahera förskjutningsdagar från måldatumet (se information om förskjutningsdagar under uppgiftsavsnittet). De aktiva affärsprocesserna kan visas på arbetsytan Affärsprocesser. 
+## <a name="tasks"></a>Uppgifter
+En affärsprocess består ofta av flera uppgifter. Vissa uppgifter, till exempel en granskning av interna kursutbud, kan slutföras i Microsoft Dynamics 365 for Talent [?]. I det här fallet välj sett alternativ i fältet **aktivitetslänk**. Andra uppgifter kan omfatta granska eller komplettera sidor på en webbplats. I det här fallet väljs **URL** i fältet **aktivitetslänk** och webbadressen kan anges. Du kan ange URL:er för både externa och interna webbplatser i det här fältet. Du kan också skapa uppgifter för aktiviteter som du slutför manuellt, till exempel granska tillgänglighet av alla strukturer. I detta fall krävs inte en uppgiftslänk. Denna flexibilitet låter dig spåra flera typer av uppgifter i en omfattande process.
+
+Uppgifter kan tilldelas till en särskild arbetare eller till en befattning. Exempelvis ska en chef över kompensationer och förmåner alltid vara den person som utför en granskning av försäkringspremier. När du skapar denna uppgift, välj **Befattning** i fältet **Uppgiftstyp** och välj sedan **Chef över kompensationer och förmåner** i listan **Befattning** När processen startar tilldelas uppgiften till den anställde som har befattningen **chef över kompensationer och förmåner**. Du kan också tilldela en uppgift till en särskild **arbetare** i fältet **Tilldelningstyp** och sedan välja rätt person.
+
+Uppgiftens förfallodatum datum beror på måldatumet som anges i början av affärsprocessen. Vissa uppgifter måste slutföras före måldatumet och vissa kan slutföras efter måldatumet. När du definierar en uppgift anger du ett förfallodatum som är i relation till datumet i fältet **Förfallodatum förskjutet från måldatum**. Anta till exempel att chefen över kompensationer och förmåner måste utföra en granskning av försäkringspremier 10 dagar innan personalgranskningen är klar. Då aktiviteten som skapas för granskningen har en **Förfallodatum förskjutet från måldatum** värdet av **-10**. Om affärsprocessen har startat 13 maj kommer uppgiften därför att förfalla 3 maj.
+
+> [!NOTE]
+> Förfallodatum kan också justeras när affärsprocessen startas.
+
+Komplicerade uppgifter kanske kräver flera steg eller kräver att personen som utför uppgifter tillhandahåller ytterligare information. För dessa scenarion kan du lägga till instruktioner till en uppgift. Instruktionerna kan ge ytterligare information om hur du slutför uppgiften till den person som har tilldelats för att slutföra den. Du kan även inkludera RTF-formatering i instruktionerna.
+
+## <a name="starting-a-business-process"></a>Starta en affärsprocess
+I en affärsprocessmall kan du starta en affärsprocess genom att välja **Starta process**. När en process startas skapas uppgifter för valda arbetare och/eller befattningar som definierats i de uppgifter som ingår i mallen. Ett förfallodatum kommer också att tilldelas varje uppgift genom att addera eller subtrahera förskjutningsdagar från måldatumet, enligt avsnittet "Uppgifter". De aktiva affärsprocesserna kan visas på arbetsytan **Affärsprocesser**
 
 ## <a name="employee-self-service"></a>Anställd self-service
-När en uppgift tilldelas en medarbetare, kan deras tilldelade uppgifter visas på sidan Självbetjäning för medarbetare. Medarbetare som har en affärsprocessuppgift tilldelad kan se uppgiften, dess beskrivning, anvisningar för att slutföra den och namnet på en kontaktperson och de kan öppna motsvarande Dynamics 365-sida eller webbsida från sidan Självbetjäning för medarbetare. Uppgifter kan markeras som pågår, annullerad eller slutförd.
+När en uppgift tilldelas en medarbetare, kan medarbetaren se denna och hans eller hennes andra tilldelade uppgifter på sidan **Självbetjäning för medarbetare** För varje affärsprocessuppgift som tilldelats honom eller henne, visas namn och beskrivning av uppgiften, anvisningar och namnet på en kontaktperson. Från sidan **Självbetjäning för medarbetare** kan medarbetaren också öppna den associerade sidan i Microsoft Dynamics 365 eller tillhörande webbsida och märka uppgifter som pågår, annullerats eller slutförts.
 
 ## <a name="business-process-workspace"></a>Arbetsytan Affärsprocess
-Personalansvariga kan visa de aktiva affärsprocesserna från arbetsytan Affärsprocesser. Arbetsytan visar alla aktiva processer och uppgifter som är kopplade till varandra. Den omfattande uppgiftslistan kan filtreras efter datum. Sidan innehåller även förfallna uppgifter och uppgifter som tilldelats personalansvariga. De kan också uppdatera statusen för alla uppgifter och vid behov tilldela om uppgifter för att låta den övergripande affärsprocessen gå vidare.
+Personalansvariga kan visa de aktiva affärsprocesserna från arbetsytan **Affärsprocesser** Arbetsytan visar alla aktiva processer och uppgifter som är kopplade till varandra. Den omfattande uppgiftslistan kan filtreras efter datum. Arbetsytan innehåller även förfallna uppgifter och uppgifter som tilldelats personalansvariga. Personalansvariga kan också uppdatera statusen för alla uppgifter och vid behov tilldela om uppgifter för att låta den övergripande affärsprocessen gå vidare.
 
 ## <a name="my-business-processes-workspace"></a>Arbetsytan Mina affärsprocesser
-Processägare kan visa aktiva affärsprocesser som tilldelas dem från arbetsytan Mina affärsprocesser. Arbetsytan visar alla aktiva processer och kopplade uppgifter som den användaren äger.  Den omfattande uppgiftslistan kan filtreras efter datum. Sidan innehåller även uppgifter som specifikt har tilldelats processägare. Processägaren kan även uppdatera statusen för alla uppgifter, samt tilldela om eventuella uppgifter.
+Processägare kan visa aktiva affärsprocesser som tilldelas dem från arbetsytan **Mina affärsprocesser** Arbetsytan visar alla aktiva processer och kopplade uppgifter som användaren äger. Den omfattande uppgiftslistan kan filtreras efter datum. Arbetsytan innehåller även uppgifter som specifikt tilldelats processägaren. Processägaren kan även uppdatera statusen för alla uppgifter, samt tilldela om eventuella uppgifter.
 
 ## <a name="navigating-business-processes"></a>Navigerar till affärsprocesser
-1. För att lägga till en affärsprocessmall, navigera till Affärsprocesser - Länkar - Administration av affärsprocesser.
-   - a.   Ny kommer att skapa en ny mall.
-   - b.   Kopiera från mall kopierar den valda mallen till en ny.
-   - c.   Starta processen kommer starta den valda affärsprocessen, tilldela uppgifter och beräkna förfallodatum.  
-2. Om du vill visa aktiva processer och tillhörande uppgifter, gå till arbetsytan Affärsprocesser.
+För att skapa eller kopiera en mall för företagsprocessen, eller för att starta en affärsprocess, navigerar du till affärsprocesser - länkar - Administration av affärsprocesser. Du kan sedan följande åtgärder:
+
+- Välj **Ny** om du vill skapa en ny affärsprocessmall.
+- Välj **Kopiera från mall** för att kopiera den valda mallen till en ny.
+- Välj **Starta process** för att starta den valda affärsprocessen, tilldela uppgifter och beräkna förfallodatum.
+
+Om du vill visa aktiva processer och tillhörande uppgifter, gå till arbetsytan **Affärsprocesser**
+
 
