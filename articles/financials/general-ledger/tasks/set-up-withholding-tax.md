@@ -1,7 +1,7 @@
 --- 
 title: "Ställ in källskatt"
 description: "Källskatt är en skatt på leverantörer som inte skapar momstransaktioner."
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 11/14/2016
 ms.topic: business-process
@@ -9,17 +9,17 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Operations
 ms.search.region: Global
 ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 39ebd6a1a326b0ff2943957c9606e91852d524ce
+ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
+ms.openlocfilehash: 362df7c97adae2526cb61b07e3022dc3b63fc59e
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/07/2018
 
 ---
 # <a name="set-up-withholding-tax"></a><span data-ttu-id="b45f4-103">Ställ in källskatt</span><span class="sxs-lookup"><span data-stu-id="b45f4-103">Set up withholding tax</span></span>

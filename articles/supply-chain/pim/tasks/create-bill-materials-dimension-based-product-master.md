@@ -1,7 +1,7 @@
 --- 
 title: "Skapa en strukturlista för en dimensionsbaserad produktmall"
 description: "För den här proceduren bör du ha slutfört de tidigare 4 guiderna i denna sekvens av åtta inspelningar."
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe
 ms.date: 11/03/2017
 ms.topic: business-process
@@ -9,17 +9,17 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Operations
 ms.search.region: Global
-ms.author: yuyus
+ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 3a3aeae7e8012282ec9e57314a128a60c1a80a68
+ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
+ms.openlocfilehash: d6d98b33d819fd7c68af7d0d5df8eaeb381853b1
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/07/2018
 
 ---
 # <a name="create-a-bill-of-materials-for-a-dimension-based-product-master"></a><span data-ttu-id="eefb3-103">Skapa en strukturlista för en dimensionsbaserad produktmall</span><span class="sxs-lookup"><span data-stu-id="eefb3-103">Create a bill of materials for a dimension-based product master</span></span>
