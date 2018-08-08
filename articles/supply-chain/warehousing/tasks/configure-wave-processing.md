@@ -1,7 +1,7 @@
 --- 
 title: "Konfigurera påfyllnadsbearbetning"
 description: "I den här guiden beskrivs hur du ställer in villkoren som avgör vilket arbete som genereras för ett lagerställe när en påfyllnad bearbetas och om påfyllnad bearbetas manuellt eller automatiskt."
-author: YuyuScheller
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/07/2016
 ms.topic: business-process
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: bis
+ms.reviewer: josaw
 ms.search.scope: Operations
 ms.search.region: Global
 ms.search.industry: Distribution
