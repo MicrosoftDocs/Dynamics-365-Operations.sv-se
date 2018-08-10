@@ -1,7 +1,7 @@
 ---
 title: "Översikt över budgetkontroll"
 description: "Det här avsnittet innehåller en presentation av budgetkontroll och information som hjälper dig att konfigurera budgetkontrollen i Microsoft Dynamics 365 for Finance and Operations så att du kan hantera ekonomiska resurser."
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 01/11/2018
 ms.topic: article
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: BudgetControlConfiguration
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 60493
 ms.assetid: be964167-43bc-431d-9adb-48bff32d68d5
