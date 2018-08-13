@@ -21,7 +21,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: 2fc887668171175d436b9eb281a35c1c9d089591
 ms.openlocfilehash: 1a598d0bd053c60c3f8df6b05ecb7ff15addfaa3
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 05/25/2018
 Du kan spåra resultatet av ER-format som genererar utgående elektroniska dokument. När genereringen av spårning är aktiverad (ER-användarparametrar **Kör i felsökningsläge**), genereras en ny spårningspost i körningslogg för ER-format varje gång en ER-rapport körs. Följande information lagras i respektive spår som genereras:
 
 - Alla varningar som genererades av valideringsregler
-- Alla fel som genererades av valideringsregler 
+- Alla fel som genererades av valideringsregler
 - Alla genererade filer som lagras som bilagor till spårningsposten
 
 Du kan lagra enskilda baslinjeprogramfiler för alla ER-format. Filer betraktas som baslinjefiler när de beskriver de förväntade resultaten av rapporterna som körs. Om det finns en baslinjefil för ett ER-format som kördes när spårgenereringen aktiverades, kommer spårningen, utöver informationen som nämndes tidigare, att lagra resultatet av jämförelsen av det genererade elektroniska dokumentet tillbaslinjefilen. Med ett klick kan du också få det genererade elektroniska dokumentet och dess baslinjefil i en enda zip-fil. Sedan kan du göra detaljerad jämförelse med hjälp av ett externt verktyg såsom Windiff.exe.

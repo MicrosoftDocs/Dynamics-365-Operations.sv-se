@@ -19,7 +19,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: cf531c3a8f3bdb17314d1de436b98249169f82a3
 ms.openlocfilehash: 7e2a9297a417fb25384341dcabcafa41c50f8c84
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
@@ -32,7 +32,7 @@ ms.lasthandoff: 05/22/2018
 - [Power BI-innehåll för översikt över ekonomichef](CFO-power-bi.md)
 - [Power BI-innehållspaket för kompensationer](compensation-power-bi.md)
 - [Kostnadsredovisningsanalys Power BI-innehåll](cost-accounting-analysis-content-pack.md) 
-- [Power BI-innehåll om kostnadshantering](cost-management-content-pack.md)    
+- [Power BI-innehåll om kostnadshantering](cost-management-content-pack.md)
 - [Power BI innehållspaket för kredit- och inkassohantering](../../financials/accounts-receivable/credit-collections-power-bi.md)
 - [Utveckling av medarbetare Power BI-innehåll](employee-development-PBI.md) 
 - [Power BI - ekonomisk information](financial-insights.md)
@@ -46,5 +46,5 @@ ms.lasthandoff: 05/22/2018
 - [Innehållspaket för försäljnings- och lönsamhetsprestanda för Power BI](sales-profitability-performance-content-pack.md)
 - [Power BI-innehåll för leverantörsbetalningar](../../financials/accounts-payable/Vendor-payments-workspace.md)
 - [Power BI-innehåll för lagerställets prestanda](warehouse-power-bi-content.md)
-- [Power BI-innehåll för personalmätningar](workforce-analysis-power-bi-content-pack.md)  
+- [Power BI-innehåll för personalmätningar](workforce-analysis-power-bi-content-pack.md)
 

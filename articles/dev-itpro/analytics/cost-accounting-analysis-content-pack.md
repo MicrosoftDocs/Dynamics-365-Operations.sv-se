@@ -21,7 +21,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
 ms.openlocfilehash: af87f3f7c3fab9b6baecefbedcd855a764f31cbe
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
@@ -33,18 +33,18 @@ Det här avsnittet beskriver vad som ingår i Microsoft Power BI-innehållet **K
 
 ## <a name="overview"></a>Översikt
 
-Power BI-innehållet **Kostnadsredovisningsanalys** är avsett för kostnadskontrollanter eller annan som med ansvar för att utföra kostnadskontroll inom en organisation. Det innehåller viktiga mätvärden såsom kostnad, omfattning och kostnadstariff efter verklig kostnad, budgeterad kostnad och kostnad för flexibel budget. Det använder transaktionsdata från modulen **kostnadsredovisning** och visar totala kostnader för hela organisationen i en rapporteringsvaluta. Chefer kan filtrera data efter kostnadsobjekt för kostnadskontroll av organisationsenheter, även om organisationen kan ha flera juridiska personer. 
+Power BI-innehållet **Kostnadsredovisningsanalys** är avsett för kostnadskontrollanter eller annan som med ansvar för att utföra kostnadskontroll inom en organisation. Det innehåller viktiga mätvärden såsom kostnad, omfattning och kostnadstariff efter verklig kostnad, budgeterad kostnad och kostnad för flexibel budget. Det använder transaktionsdata från modulen **kostnadsredovisning** och visar totala kostnader för hela organisationen i en rapporteringsvaluta. Chefer kan filtrera data efter kostnadsobjekt för kostnadskontroll av organisationsenheter, även om organisationen kan ha flera juridiska personer.
 
-Eftersom innehållet **Kostnadsredovisningsanalys** markerar avvikelser mellan faktiska och budgeterade kostnader, kan chefer meddelas om positiva och negativa trender för deras operativa enheter. Chefer kan bläddra ner till kostnadselementhierarkierna eller enskilda kostnadselement. På så sätt kan kan chefer få detaljerad information om hur kostnadsavvikelser har inträffat och vidta effektiva åtgärder. 
+Eftersom innehållet **Kostnadsredovisningsanalys** markerar avvikelser mellan faktiska och budgeterade kostnader, kan chefer meddelas om positiva och negativa trender för deras operativa enheter. Chefer kan bläddra ner till kostnadselementhierarkierna eller enskilda kostnadselement. På så sätt kan kan chefer få detaljerad information om hur kostnadsavvikelser har inträffat och vidta effektiva åtgärder.
 
-Innehållet **Kostnadsredovisningsanalys** låter kostnadsredovisare analysera kostnadsflödet genom kostnadsobjekt inom hela organisationen. 
+Innehållet **Kostnadsredovisningsanalys** låter kostnadsredovisare analysera kostnadsflödet genom kostnadsobjekt inom hela organisationen.
 
-Mer information om kostnadsredovisning finns [Startsida för kostnadsredovisning](../../financials/cost-accounting/cost-accounting-home-page.md). 
+Mer information om kostnadsredovisning finns [Startsida för kostnadsredovisning](../../financials/cost-accounting/cost-accounting-home-page.md).
 
 Genom att definiera säkerhetsnivån för åtkomst inom kostnadsredovisningen och kombinera den med säkerheten på radnivå i Power BI, beviljar du alla ägare av kostnadsobjekt åtkomst till Power BI-innehållet **Kostnadsredovisningsanalys**. Alla data i de visuella effekterna filtreras sedan baserat på den åtkomstnivå som kontrolleras i kostnadsredovisningen. Mer information om säkerhetsnivån för åtkomst och säkerhet på radnivå, se [Ange säkerhetsinställningar för kostnadsredovisningsinnehåll för Power BI](setup-security-cost-accounting-content-pack.md).
 
 ## <a name="accessing-the-power-bi-content"></a>Åtkomst till Power BI-innehåll
-Du kan hitta Power BI-innehållet **Kostnadsredovisningsanalys** i biblioteket för gemensamma tillgångar i Microsoft Dynamics Lifecycle Services (LCS). Mer information om hur du laddar ned innehållspaket och använder det i din organisation finns i [Power BI-innehåll i LCS från Microsoft och dina partner](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/12/12/power-bi-content-from-microsoft-and-your-partners/). 
+Du kan hitta Power BI-innehållet **Kostnadsredovisningsanalys** i biblioteket för gemensamma tillgångar i Microsoft Dynamics Lifecycle Services (LCS). Mer information om hur du laddar ned innehållspaket och använder det i din organisation finns i [Power BI-innehåll i LCS från Microsoft och dina partner](https://blogs.msdn.microsoft.com/dynamicsaxbi/2016/12/12/power-bi-content-from-microsoft-and-your-partners/).
 
 <!--To watch a demo that shows how to implement the Power BI content, see the [Power BI content from Microsoft and your partners in Dynamics Lifecycle Services](https://mix.office.com/watch/9puyb1b2xs1w) Office Mix.-->
 
@@ -75,7 +75,7 @@ Innehållet omfattar en uppsättning rapportsidor. Sidorna består av en uppsät
 |                                  | Faktisk kostnad efter medlemsnamn för kostnadsobjektdimension samt medlemsnamn för kostnadselemetdimension                                       |                                               |
 
 ## <a name="understanding-the-data-model-and-entities"></a>Förstå datamodellen och enheterna
-Följande data används för att fylla i rapportsidorna Power-Bi-innehållet **Kostnadsredovisningsanalys**. Informationen visas som sammansatta mått som mellanlagras i Enhetslagring. Enhetslagring är en Microsoft SQL Server-databas som är optimerad för analys. Mer information finns i [Översikt för Power BI-integrering med enhetsarkiv](power-bi-integration-entity-store.md). 
+Följande data används för att fylla i rapportsidorna Power-Bi-innehållet **Kostnadsredovisningsanalys**. Informationen visas som sammansatta mått som mellanlagras i Enhetslagring. Enhetslagring är en Microsoft SQL Server-databas som är optimerad för analys. Mer information finns i [Översikt för Power BI-integrering med enhetsarkiv](power-bi-integration-entity-store.md).
 
 Följande sammanlagda huvudmått används till grund för innehållet:
 
@@ -113,20 +113,18 @@ Följande tabell visar hur viktiga sammanlagda mått används för att skapa fle
 
 Följande huvuddimensioner används som filter för att dela upp de sammanlagda måtten i syfte att uppnå en förbättrad nivå och ge djupare analysinsikter.
 
-
-|               Enhet               |                                                Exempel på attribut                                                |
+| Enhet                             | Exempel på attribut                                                                                               |
 |------------------------------------|----------------------------------------------------------------------------------------------------------------------|
-|      Huvudböcker för kostnadsredovisning       |                                                Huvudbok för kostnadsredovisning                                                |
-|         Kostnadsstyrenheter         |                                                Namn på kostnadsstyrenhet                                                |
-|      Dimensioner för kostnadselement       |     Måttnamn för kostnadselement, Medlemsnamn för kostnadselementdimension, Medlemsbeskrivning för kostnadselementdimension      |
-|       Kostnadsobjektdimensioner       |       Måttnamn för kostnadsobjekt, Medlemsnamn för kostnadsobjektsdimension, Medlemsbeskrivning för kostnadsobjektdimension        |
-|       Statistikdimensioner       |       Statistiskt dimensionsnamn, Namn för statistisk dimensionsmedlem, Beskrivning av statistisk dimensionsmedlem        |
-| Dimensionshierarkier för kostnadsobjekt  |  Hierarkinamn för kostnadsobjektdimension, Hierarkinivå för kostnadsobjektdimension, Hierarkiträd för kostnadsobjektdimension   |
+| Huvudböcker för kostnadsredovisning            | Huvudbok för kostnadsredovisning                                                                                               |
+| Kostnadsstyrenheter                 | Namn på kostnadsstyrenhet                                                                                               |
+| Dimensioner för kostnadselement            | Måttnamn för kostnadselement, Medlemsnamn för kostnadselementdimension, Medlemsbeskrivning för kostnadselementdimension          |
+| Kostnadsobjektdimensioner             | Måttnamn för kostnadsobjekt, Medlemsnamn för kostnadsobjektsdimension, Medlemsbeskrivning för kostnadsobjektdimension              |
+| Statistikdimensioner             | Statistiskt dimensionsnamn, Namn för statistisk dimensionsmedlem, Beskrivning av statistisk dimensionsmedlem              |
+| Dimensionshierarkier för kostnadsobjekt  | Hierarkinamn för kostnadsobjektdimension, Hierarkinivå för kostnadsobjektdimension, Hierarkiträd för kostnadsobjektdimension    |
 | Dimensionshierarkier för kostnadselement | Hierarkinamn för kostnadselementdimension, Hierarkinivå för kostnadselementdimension, Hierarkiträd för kostnadselementdimension |
-| Statistiska dimensionshierarkier  |  Hierarkinamn för statistisk dimension, Hierarkinivå för statistisk dimension, Hierarkiträd för statistisk dimension   |
-|        Transaktionsversioner        |                                                     Versionsnamn                                                     |
-|          Räkenskapskalendrar          |                                            Kalender, kalenderbeskrivning                                            |
-|            Räkenskapsår            |                                                    Kalenderår                                                     |
-|           Räkenskapsperioder           |                                                 Kalenderårsperioder                                                 |
-
+| Statistiska dimensionshierarkier  | Hierarkinamn för statistisk dimension, Hierarkinivå för statistisk dimension, Hierarkiträd för statistisk dimension    |
+| Transaktionsversioner               | Versionsnamn                                                                                                         |
+| Räkenskapskalendrar                   | Kalender, kalenderbeskrivning                                                                                       |
+| Räkenskapsår                       | Kalenderår                                                                                                        |
+| Räkenskapsperioder                     | Kalenderårsperioder                                                                                                 |
 

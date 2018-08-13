@@ -33,7 +33,7 @@ ms.lasthandoff: 12/19/2017
 Det här avsnittet beskriver Microsoft Power BI-innehållet **Rekrytering**. Det förklarar hur du öppnar Power BI-rapporter, och ger information om den datamodell och de enheter som användes för att skapa innehållet.
 
 ## <a name="accessing-the-power-bi-content"></a>Åtkomst till Power BI-innehåll
-Power BI-innehållet **Rekrytering** visas i arbetsytan **Rekryteringshantering**. 
+Power BI-innehållet **Rekrytering** visas i arbetsytan **Rekryteringshantering**.
 
 ## <a name="reports-and-visuals-in-the-recruitment-management-workspace"></a>Rapporter och modeller i arbetsytan Rekryteringshantering
 Arbetsytan **Rekryteringshantering** innehåller fliken **Analys**. Denna flik innehåller det inbäddade Power BI-innehållet för rekrytering. Innehållet består av en översiktsflik och ytterligare flikar som innehåller information. Följande register beskriver rapporterna på varje flik.
@@ -66,6 +66,4 @@ Följande tabell visar enheterna som Power BI-innehållet **Rekrytering** basera
 | Resultat          | Värdering, beskrivning och bedömningsmodellen                            | Sökande, anställd sökande, uppsagd sökande |
 | Rekryteringsprojekt  | Projektbeskrivning, projektstatus och lediga jobb                | Sökande, anställd sökande, uppsagd sökande |
 | Uppsagd sökande | Uppsagda sökande, orsak, prestanda och uppsägningsdatum | Företag, kalenderförskjutning, datum, geografisk placering, resultat, befolkning, anställning, media, rekryteringsprojekt, sökandes namn |
-
-
 
