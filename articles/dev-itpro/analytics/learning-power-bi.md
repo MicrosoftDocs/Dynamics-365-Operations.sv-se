@@ -16,10 +16,10 @@ ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 6a0c1459da8770a8cc880a48483102494feb38bf
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: a4ea4606f9987bc08565d43a1f05243acf88883c
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -64,6 +64,4 @@ ms.lasthandoff: 05/08/2018
 | <span data-ttu-id="6aa46-162">Befattning</span><span class="sxs-lookup"><span data-stu-id="6aa46-162">Position</span></span>         | <span data-ttu-id="6aa46-163">Befattning, titel och heltidsanställning (FTE)</span><span class="sxs-lookup"><span data-stu-id="6aa46-163">Position, title, and full-time equivalent (FTE)</span></span>                  | <span data-ttu-id="6aa46-164">Kursagenda, kursdeltagare</span><span class="sxs-lookup"><span data-stu-id="6aa46-164">Course Agenda, Course Attendees</span></span> |
 | <span data-ttu-id="6aa46-165">Namn på medarbetare</span><span class="sxs-lookup"><span data-stu-id="6aa46-165">Employee Name</span></span>    | <span data-ttu-id="6aa46-166">Förnamn, efternamn och fullständiga namn</span><span class="sxs-lookup"><span data-stu-id="6aa46-166">First name, last name, and full name</span></span>                             | <span data-ttu-id="6aa46-167">Kursdeltagare</span><span class="sxs-lookup"><span data-stu-id="6aa46-167">Course Attendees</span></span> |
 | <span data-ttu-id="6aa46-168">Medarbetartitel</span><span class="sxs-lookup"><span data-stu-id="6aa46-168">Employee Title</span></span>   | <span data-ttu-id="6aa46-169">Titel och tjänsteålder</span><span class="sxs-lookup"><span data-stu-id="6aa46-169">Title and seniority date</span></span>                                         | <span data-ttu-id="6aa46-170">Kursdeltagare</span><span class="sxs-lookup"><span data-stu-id="6aa46-170">Course Attendees</span></span> |
-
-
 
