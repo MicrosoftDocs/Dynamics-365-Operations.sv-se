@@ -1,5 +1,5 @@
 ---
-title: "Ställ upp bedrägerivarningar"
+title: "Ställa in och arbeta med bedrägerivarningar för kundtjänst"
 description: "Det här avsnittet innehåller information om hur du ställer in regler för att varna kundtjänstrepresentanter om eventuell falsk information när order bearbetas. Du kan definiera särskilda koder som används automatiskt eller manuellt för att spärra misstänkta order."
 author: josaw1
 manager: AnnBe
@@ -20,10 +20,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 6e4f89d86b64e0c8c76c15d3c2c1c00af353e9ca
-ms.openlocfilehash: 2534e687623ab750f349287a762a354bc0fcf12b
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 6cca9e5b606f298d000354f6aeb01fbe2c8f2141
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/17/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 

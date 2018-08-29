@@ -1,5 +1,5 @@
 --- 
-title: "Ändra dokument med programdata"
+title: Skapa dokument som omfattar programdata
 description: "Om du vill utföra stegen i den här proceduren måste du först slutföra proceduren \"ER Generera dokument med uppdatering av programdata (Del 4: Ändra format)\"."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 5001adbc1c7fae96e94e7b31a64a5a04ba886dc8
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 90c6ebc456d3e137e43022fad7d59ce3ca2cdcab
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="generate-documents-with-application-data"></a>Ändra dokument med programdata
+# <a name="generate-documents-that-have-application-data"></a>Skapa dokument som omfattar programdata
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

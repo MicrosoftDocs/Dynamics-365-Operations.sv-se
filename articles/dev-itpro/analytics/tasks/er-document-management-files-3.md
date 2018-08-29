@@ -1,5 +1,5 @@
 --- 
-title: "Skapa format för att använda dokumenthanteringsfiler i formatutmatningar"
+title: "Skapa format som ska använda dokumenthanteringsfiler i ER-utdata"
 description: "I följande steg beskrivs hur en användare som tilldelats en roll som systemadministratör eller utvecklare för elektronisk rapportering kan konfigurera ett format för elektronisk rapportering (ER) för att använda dokumenthanteringsfiler (bilagor) i ER-utmatningar."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 6d5df842dbbf89f5df72c63919fc0bcbf811a09c
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 934775bbdda13238e16fba91dcb90d6d3249e812
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="create-format-to-use-document-management-files-in-format-outputs"></a>Skapa format för att använda dokumenthanteringsfiler i formatutmatningar
+# <a name="create-formats-to-use-document-management-files-in-er-output"></a>Skapa format som ska använda dokumenthanteringsfiler i ER-utdata
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
@@ -38,7 +38,7 @@ Denna procedur är avsedd för en funktion som lades till i Dynamics 365 for Ope
 2. Klicka på Reporting configurations.
 3. Expandera "Customer invoice model" i trädet.
 4. Välj "Customer invoice model\Customer invoice model (custom)" i trädet.
-    * Du kan skapa ett format för att generera elektroniska meddelanden med information om de filer som har kopplats till en försäljningsorder och som gäller en faktura för elektronisk bearbetning.  
+    * Du kan skapa ett format för att skapa elektroniska meddelanden med information om de filer som har kopplats till en försäljningsorder och som gäller en faktura för elektronisk bearbetning.  
 5. Klicka på Skapa konfiguration om du vill öppna dialogrutan.
 6. Ange "Format based on data model Customer invoice model (custom)" i fältet New.
 7. Ange "Electronic invoice sample message" i namnfältet.
@@ -47,7 +47,7 @@ Denna procedur är avsedd för en funktion som lades till i Dynamics 365 for Ope
     * InvoiceCustomer  
 9. Klicka på Skapa konfiguration.
 
-## <a name="design-a-format-to-populate-attachments-into-generating-a-message-in-mime-format"></a>Utforma ett format för att fylla i bilagor så att dessa genererar meddelanden i MIME-format
+## <a name="design-a-format-to-populate-attachments-into-generating-a-message-in-mime-format"></a>Utforma ett format för att fylla i bilagor så att dessa skapar meddelanden i MIME-format
 1. Klicka på Designer.
 2. Klicka på Lägg till rot för att öppna dialogrutan.
 3. Välj "XML\Element" i trädet.

@@ -1,6 +1,6 @@
 ---
-title: Intelligence
-description: "Det här avsnittet hänvisar till resurser som du kan använda för att lära dig mer om Business Intelligence och rapporteringsverktygen som finns i Microsoft Dynamics 365 for Finance and Operations."
+title: "Startsida för Business Intelligence (BI) och rapportering"
+description: "Det här avsnittet hänvisar till resurser som du kan använda för att lära dig mer om Business Intelligence- och rapporteringsverktygen som finns i Microsoft Dynamics 365 for Finance and Operations."
 author: sericks007
 manager: AnnBe
 ms.date: 12/18/2017
@@ -18,18 +18,18 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 14a18681a98a2efbf6e3cfdbe77d282e74374c71
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: bd3704f3b51aad7292571e5c4e6de7b93cf9529f
 ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="intelligence"></a>Intelligence
+# <a name="business-intelligence-bi-and-reporting-home-page"></a>Startsida för Business Intelligence (BI) och rapportering
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet hänvisar till resurser som du kan använda för att lära dig mer om Business Intelligence (BI) och rapporteringsverktygen som finns i Microsoft Dynamics 365 for Finance and Operations.
+Det här avsnittet hänvisar till resurser som du kan använda för att lära dig mer om Business Intelligence- (BI) och rapporteringsverktygen som finns i Microsoft Dynamics 365 for Finance and Operations.
 
 ## <a name="get-started"></a>Kom igång
 - [Åtkomst till information och rapportering](information-access-reporting.md)
@@ -43,13 +43,13 @@ Användarna kan interagera med data genom att klicka eller trycka på visuella e
 
 ![Exempel på Power BI på en arbetsyta](./media/Power-BI-in-D365-Workspace.png)
 
- Mer information finns i följande avsnitt:
+Mer information finns i följande avsnitt:
 
- - [Inbäddad Power BI i arbetsytor](embed-power-bi-workspaces.md)
- - [Power BI Embedded-integration](power-bi-embedded-integration.md)
- - [Lägga till analyser i arbetsytor med Power BI Embedded](add-analytics-tab-workspaces.md)
- - [Hjälp för säkra analytiska arbetsytor och rapporter med Power BI Embedded](secure-analytical-workspaces.md)
- - [Power BI-innehåll för Finance and Operations](power-bi-home-page.md)
+- [Inbäddad Power BI i arbetsytor](embed-power-bi-workspaces.md)
+- [Power BI Embedded-integration](power-bi-embedded-integration.md)
+- [Lägga till analyser i arbetsytor med Power BI Embedded](add-analytics-tab-workspaces.md)
+- [Hjälp för säkra analytiska arbetsytor och rapporter med Power BI Embedded](secure-analytical-workspaces.md)
+- [Power BI-innehåll för Finance and Operations](power-bi-home-page.md)
 
 ## <a name="business-documents-and-printing"></a>Affärsdokument och utskrift
 Rapporteringslösningar används ofta för att samla in och kommunicera information om affärstransaktioner. En rapporteringslösning måste därför kunna producera fysiska yttringar av affärsdata med hjälp av befintliga enheter, till exempel nätverksskrivare. Exempel på affärsdokument är försäljningsfakturor, kundutdrag och checkar.
@@ -58,7 +58,7 @@ Rapporteringslösningar används ofta för att samla in och kommunicera informat
 
 Mer information finns i följande avsnitt:
 
-- [Översikt över Document Reporting Services](document-reporting-services.md)
+- [Översikt över dokumentrapporteringstjänster](document-reporting-services.md)
 - [Skriva ut i Finance and Operations-program](print-documents.md)
 - [Installera dokumentflödesagenten för att aktivera nätverksskrivarenheter](install-document-routing-agent.md)
 

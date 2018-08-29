@@ -1,6 +1,6 @@
 ---
-title: "Ändra ett format för elektronisk rapportering genom att tillämpa en Microsoft Excel-mall"
-description: "Det här ämnet innehåller information om hur du ändrar formatet för elektronisk rapportering (ER) som används för att generera affärsdokument genom att tillämpa en ändrad Excel-mall."
+title: "Ändra format för elektronisk rapportering genom att återtillämpa Microsoft Excel-mall"
+description: "Det här ämnet innehåller information om hur du ändrar formatet för elektronisk rapportering (ER) som används för att skapa affärsdokument genom att tillämpa en ändrad Excel-mall."
 author: NickSelin
 manager: AnnBe
 ms.date: 06/01/2017
@@ -19,19 +19,19 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: af7f9a373496eee4df354d5dd9e5a25c51317c43
-ms.openlocfilehash: fca7fb75b965886c2ebc06b12940434f2ffc2543
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 8707f7b184bb66648edd0e48672c5514a0a5caf1
 ms.contentlocale: sv-se
-ms.lasthandoff: 02/27/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="modify-an-electronic-reporting-format-by-reapplying-a-microsoft-excel-template"></a>Ändra ett format för elektronisk rapportering genom att tillämpa en Microsoft Excel-mall
+# <a name="modify-electronic-reporting-formats-by-reapplying-excel-templates"></a>Ändra format för elektronisk rapportering genom att återtillämpa Microsoft Excel-mall
 
 [!include [banner](../includes/banner.md)]
 
-Verktyget för elektronisk rapportering (ER) används för att generera affärsdokument i elektroniskt format. Om du vill generera ett affärsdokument måste du skapa ett ER-format, och sedan använda ER-designer för att definiera utseendet på affärsdokumentet och ange de data som ska inkluderas i den. Kör sedan ER-formatet för att generera affärsdokumentet.
+Verktyget för elektronisk rapportering (ER) används för att skapa affärsdokument i elektroniskt format. Om du vill skapa ett affärsdokument måste du skapa ett ER-format, och sedan använda ER-designer för att definiera utseendet på affärsdokumentet och ange de data som ska inkluderas i den. Kör sedan ER-formatet för att skapa affärsdokumentet.
 
-ER-verktyget kan användas för att generera affärsdokument som Microsoft Excel-filer. Du kan använda Excel-dokument som en mall för dessa dokument. Om du vill ange dokumentets layout i ER-designer kan du importera innehållet i Excel-dokument som du vill använda som mall i det definierade formatet för ER. För mer detaljer, och för att träna detta scenario, spela upp arbetsguiden **ER utformar en konfiguration för rapportgenerering i OPENXML-format** (del av 7.5.4.3 affärsprocessen skaffa/utveckla komponenter för IT-tjänster eller -lösningar (10677).
+ER-verktyget kan användas för att skapa affärsdokument som Microsoft Excel-filer. Du kan använda Excel-dokument som en mall för dessa dokument. Om du vill ange dokumentets layout i ER-designer kan du importera innehållet i Excel-dokument som du vill använda som mall i det definierade formatet för ER. För mer detaljer, och för att träna detta scenario, spela upp arbetsguiden **ER utformar en konfiguration för rapportgenerering i OPENXML-format** (del av 7.5.4.3 affärsprocessen skaffa/utveckla komponenter för IT-tjänster eller -lösningar (10677).
 
 Om du redigerar Excel-dokument som används som en mall för ett affärsdokument gör ny ER-funktion att du kan återanvända den uppdaterade mallen till ER-format. Då uppdateras ER-formatet så att det följer den uppdaterade mallen. För mer information om den här funktionen, spela uppgiftsguiden **ER ändra formatet genom att använda en Excel-mall** (del av 7.5.5.3 affärsprocessen skaffa/utveckla komponenter för IT-tjänster eller IT-lösningar (10683). I uppgiftsguiden där du importerar en uppdaterad mall använder du en ändrad mall av betalningsrapportens Excel-fil, SampleVendPaymWsReport2 som en mall.
 

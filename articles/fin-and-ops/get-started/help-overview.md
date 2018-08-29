@@ -1,9 +1,9 @@
 ---
-title: "Hjälp – översikt"
+title: "Hjälpsystem för Finance and Operations"
 description: "Det här avsnittet innehåller en översikt över komponenterna i hjälpsystemet för Microsoft Dynamics 365 for Finance and Operations. Det innehåller beskrivningar av hur du kan skapa anpassad dokumentation och utbildning för din organisation."
 author: margoc
 manager: AnnBe
-ms.date: 10/31/2017
+ms.date: 07/12/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,14 +19,14 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 2c02af887e662fd346d5e3e09cce755bfb58d520
+ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
+ms.openlocfilehash: e1ffd9cb90b2ffac8f89885aac2f614e2ae3cb71
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="help-system-overview"></a>Översikt över hjälpsystem
+# <a name="finance-and-operations-help-system"></a>Hjälpsystem för Finance and Operations
 
 [!include [banner](../includes/banner.md)]
 
@@ -82,27 +82,19 @@ Om du vill prenumerera på ett RSS-flöde för att gå alla uppdateringar Unifie
 [RSS-feed](https://docs.microsoft.com/api/search/rss?locale=en-us&$filter=scopes%2Fany(t%3A%20t%20eq%20%27Unified%20Operations%27))
 
 ### <a name="give-feedback"></a>Ge feedback 
-Vi gillar verkligen kundfeedback. Du kan kommentera eller föreslå ändringar till webbplatsens innehåll via GitHub.
+Vi gillar verkligen kundfeedback. Du kan antignen kommentera eller föreslå ändringar till vårt innehåll via GitHub. Läs mer om vårt feedbacksystem i [detta blogginlägg](https://docs.microsoft.com/teamblog/a-new-feedback-system-is-coming-to-docs).
 
-##### <a name="leave-us-a-comment"></a>Skriv en kommentar 
+##### <a name="leave-us-feedback"></a>Skicka feedback till oss 
 Om du har kommentarer eller frågor om ett ämne lämna kommentarer längst ned på sidan.  
 
-1 Klicka på **Kommentarer** för att komma till kommentarerna längst ned på sidan.
+1. Klicka på **Feedback** för att nå kommentarerna längst ner på sidan och klicka sedan på antingen **Produktfeedback** eller **Logga in för att skicka detaljerad feedback**.
 
-![Kommentarer](./media/comments.png)
+![Feedback](./media/comments.png)
 
-2 Skriv dina kommentarer och klicka sedan på **Publicera kommentarer**.
+2. Skriv dina kommentarer och klicka sedan på **Publicera feedback**.
 
-![Publicera kommentar](./media/before-signin.png)
+![Publicera kommentar](./media/feedback.png)
 
-3 Välj den typ av konto som du vill logga in med:  
-Klicka på en av ikonerna till vänster för att associera denna webbplats till ett befintligt konto, till exempel ett Twitter-, Facebook- eller Microsoft-konto. 
-
-Eller 
-
-Ange en e-postadress och ett nytt lösenord till höger för att skapa ett nytt konto för webbplatsen. 
-
-![Inloggningsalternativ](./media/signin-options.png)
 
 
 ##### <a name="suggest-a-change-or-contribute-content-through-github"></a>Föreslå en ändring eller bidra med innehåll via GitHub
@@ -115,7 +107,6 @@ Mer information finns i vår deltagarguide: https://github.com/MicrosoftDocs/dyn
 
 > [!NOTE]
 > Vi kommer endast godkänner bidrag till våra engelska databaser just nu.  
-> Vi accepterar inte att problem rapporteras via GitHub--du måste använda en pull-begäran för innehåll sförslag. Produkt- och funktionsfeedback bör hanteras via idéportalen Dynamics 365: https://experience.dynamics.com/ideas/. 
 
 
 ## <a name="task-guides"></a>Uppgiftsguider
@@ -135,7 +126,7 @@ Om du vill starta en guidad, interaktiv tur ska du klicka på **Starta uppgiftsg
 
 Uppgiftsguider skapas genom med uppgiftsregistreraren. När du använder uppgiftsinspelaren registreras alla åtgärder du utför i användargränssnittet för Finance and Operations (som att klicka på menyer, ändra inställningar eller ange data). Stegen som du registrerar kallas gemensamt för en uppgiftsregistrering Som vi förklarade i det föregående avsnittet, kan uppgiftsregistreringar visas i fönstret Hjälp och spelas som uppgiftsguider. Det finns dock andra sätt att använda uppgiftsregistrering:
 
--   **Spara uppgiftsregistrering i BPM** – Du kan spara en uppgiftsregistrering på en rad i en hierarki i ett BPM-bibliotek i LCS. När du sparar en uppgiftsregistrering i BPM, genereras och visas ett flödesschema tillsammans med stegen för inspelningen. **Obs!** Om du vill visa en uppgiftsinspelning i hjälpfönstret för Finance and Operations och spela upp den som en uppgiftsguide, måste du spara inspelningen i ett BPM-bibliotek.
+-   **Spara uppgiftsregistrering i BPM** – Du kan spara en uppgiftsregistrering på en rad i en hierarki i ett BPM-bibliotek i LCS. När du sparar en uppgiftsregistrering i BPM, skapas och visas ett flödesschema tillsammans med stegen för inspelningen. **Obs!** Om du vill visa en uppgiftsinspelning i hjälpfönstret för Finance and Operations och spela upp den som en uppgiftsguide, måste du spara inspelningen i ett BPM-bibliotek.
 -   **Spara uppgiftsregistrering som Word-dokument** – Genom att spara en uppgiftsregistrering som ett Microsoft Word-dokument kan du enkelt producera utskrivbara utbildningsguider för din organisation.
 
 För mer information om uppgiftsinspelaren, se [Uppgiftsinspelaren i Finance and Operations](../../dev-itpro/user-interface/task-recorder.md).

@@ -1,5 +1,5 @@
 ---
-title: "PowerBI.com-lösningar"
+title: "PowerBI.com-startsida för lösningar"
 description: "Det här avsnittet listar PowerBI.com-lösningar som är tillgängliga och hänvisar till resurser där du kan lära dig mer om lösningen."
 author: sericks007
 manager: AnnBe
@@ -19,49 +19,49 @@ ms.author: sericks
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: cf531c3a8f3bdb17314d1de436b98249169f82a3
-ms.openlocfilehash: 0aa9971226e5aa79cab85f098e098dbb789a1e2d
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 1a391c0111ad39cb8c4ec809eccb3eb7cfb18687
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="powerbicom-solutions"></a>PowerBI.com-lösningar
-Följande PowerBI.com-lösningar är tillgängliga för Dynamics 365 för Finance and Operations-miljöer. 
+# <a name="powerbicom-solutions-home-page"></a>PowerBI.com-startsida för lösningar
+Följande PowerBI.com-lösningar är tillgängliga för Dynamics 365 för Finance and Operations-miljöer.
 
 ## <a name="powerbicom-solutions-available-from-lifecycle-services-lcs"></a>PowerBI.com-lösningar tillgängliga från Lifecycle Services (LCS)
 
-Följande PowerBI.com-lösningar är tillgängliga i det delade resursbiblioteket för LCS. Hänvisa till versionsinformationen i det delade resursbiblioteket för att hämta rätt version för din miljö. 
+Följande PowerBI.com-lösningar är tillgängliga i det delade resursbiblioteket för LCS. Hänvisa till versionsinformationen i det delade resursbiblioteket för att hämta rätt version för din miljö.
 
-> [!Note]
-> De flesta av PowerBI.com-lösningarna i listan nedan har bäddats in i analytiska arbetsytor i tidigare versioner av Dynamics 365 for Finance and Operations. Genom att använda analytiska arbetsytor tas behovet att hämta dessa lösningar från ett delat resursbibliotek i LCS bort. Avsnitten i den här listan anger var dessa PowerBI.com-lösningar har bäddats i Finance and Operations, där så är tillämpligt. 
+> [!NOTE]
+> De flesta av PowerBI.com-lösningarna i listan nedan har bäddats in i analytiska arbetsytor i tidigare versioner av Dynamics 365 for Finance and Operations. Genom att använda analytiska arbetsytor tas behovet att hämta dessa lösningar från ett delat resursbibliotek i LCS bort. Avsnitten i den här listan anger var dessa PowerBI.com-lösningar har bäddats i Finance and Operations, där så är tillämpligt.
 
 - [Utfall kontra budget](ledger-budgets-power-bi.md)
 - [Kassaöversikt](../../financials/cash-bank-management/Cash-Overview-Power-BI-content.md)
-- [Kompensation och förmåner](compensation-and-benefits-analysis-power-bi-content-pack.md)   
-- [Kostnadsredovisningsanalys](cost-accounting-analysis-content-pack.md) 
+- [Kompensation och förmåner](compensation-and-benefits-analysis-power-bi-content-pack.md)
+- [Kostnadsredovisningsanalys](cost-accounting-analysis-content-pack.md)
 - [Hantering av kredit och inkasso](../../financials/accounts-receivable/credit-collections-power-bi.md)
-- [Medarbetares kompetenser och utveckling](employee-competencies-and-development-analysis-power-bi-content-pack.md) 
+- [Medarbetares kompetenser och utveckling](employee-competencies-and-development-analysis-power-bi-content-pack.md)
 - [Finansiellt resultat](financial-performance-power-bi-content-pack.md)
 - [Hantering av anläggningstillgångar](../../financials/fixed-assets/Fixed-asset-management-workspace.md)
-- [Organisationsutbildning](organizational-training-analysis-power-bi-content-pack.md) 
+- [Organisationsutbildning](organizational-training-analysis-power-bi-content-pack.md)
 - [Praxischef](practice-manager-power-bi.md)
 - [Produktionsprestanda](production-performance-power-bi.md)
-- [Inköps- och utgiftsanalys](purchase-content-pack-for-power-bi.md) 
+- [Inköps- och utgiftsanalys](purchase-content-pack-for-power-bi.md)
 - [Rekrytering](recruiting-analysis-power-bi-content-pack.md)
 - [Försäljnings- och lönsamhetsresultat](sales-profitability-performance-content-pack.md)
 - [Leverantörsbetalningar](../../financials/accounts-payable/Vendor-payments-workspace.md)
 - [Resultat för lagerställe](warehouse-power-bi-content.md)
-- [Personalmätningar](workforce-analysis-power-bi-content-pack.md)  
+- [Personalmätningar](workforce-analysis-power-bi-content-pack.md)
 
 ## <a name="powerbicom-solutions-available-from-appsource"></a>PowerBI.com-lösningar är tillgängliga från AppSource
 
 Följande PowerBI.com-lösningar finns på [Microsoft AppSource](https://appsource.microsoft.com).
 
-> [!Note]
+> [!NOTE]
 > Dessa lösningar är inaktuella enligt beskrivningen i [Power BI innehållspaket som finns på AppSource](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
 
-- Kostnadshantering    
+- Kostnadshantering
 - [Finansiellt resultat](financial-performance-power-bi-content-pack.md)
-- [Resultat för butikskanal ](retail-channel-performance-dashboard-power-bi-data.md) 
+- [Resultat för butikskanal ](retail-channel-performance-dashboard-power-bi-data.md)
 

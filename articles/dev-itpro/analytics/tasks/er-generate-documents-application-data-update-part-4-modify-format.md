@@ -1,6 +1,6 @@
 --- 
-title: "Ändra format för att generera dokument med programdata"
-description: "Om du vill utföra stegen i den här proceduren måste du först slutföra proceduren \"ER Generera dokument med uppdatering av programdata (Del 3: Ändra modell och mappning)\"."
+title: "Ändra format för att generera dokument som omfattar programdata"
+description: "Om du vill utföra stegen i den här proceduren måste du först slutföra proceduren \"ER Skapa dokument med uppdatering av programdata (Del 3: Ändra modell och mappning)\"."
 author: NickSelin
 manager: AnnBe
 ms.date: 06/19/2017
@@ -16,19 +16,19 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 6c7455e4293993f297aeede4d9d6a50f25ca6c07
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: a095d0326835b0ae7322d5d58307216ee828649e
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="modify-format-to-generate-documents-with-application-data"></a>Ändra format för att generera dokument med programdata
+# <a name="modify-formats-to-generate-documents-that-have-application-data"></a>Ändra format för att generera dokument som omfattar programdata
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Om du vill utföra stegen i den här proceduren måste du först slutföra proceduren "ER Generera dokument med uppdatering av programdata (Del 3: Ändra modell och mappning)".
+Om du vill utföra stegen i den här proceduren måste du först slutföra proceduren "ER Skapa dokument med uppdatering av programdata (Del 3: Ändra modell och mappning)".
 
-Stegen i den här proceduren beskriver hur du utformar ER-konfigurationer (elektronisk rapportering) för att generera ett elektroniskt dokument och uppdatera programdata. I den här proceduren ska du ändra ER-konfigurationerna inte bara för att använda dem för att skapa elektroniska dokument, utan även för att uppdatera programdata. Den här proceduren har skapats för användare med rollen Systemadministratör eller Utvecklare för elektronisk rapportering. Stegen kan utföras med hjälp av datauppsättningen DEMF.
+Stegen i den här proceduren beskriver hur du utformar ER-konfigurationer (elektronisk rapportering) för att skapa ett elektroniskt dokument och uppdatera programdata. I den här proceduren ska du ändra ER-konfigurationerna inte bara för att använda dem för att skapa elektroniska dokument, utan även för att uppdatera programdata. Den här proceduren har skapats för användare med rollen Systemadministratör eller Utvecklare för elektronisk rapportering. Stegen kan utföras med hjälp av datauppsättningen DEMF.
 
 
 ## <a name="modify-format-to-collect-details-of-reporting"></a>Ändra format för att samla in information om rapportering
@@ -70,7 +70,7 @@ Stegen i den här proceduren beskriver hur du utformar ER-konfigurationer (elekt
 31. Skriv "Artikel" i fältet Namn.
     * Artikel  
 32. Välj Exakt ett i fältet Sammansatt.
-    * Förutom designformatelementen måste följande information för Intrastat-rapportering arkiveras: unik postidentifiering för varje rapporterad vara och namnet på den genererade filen. Eftersom dessa data inte att fylls i i Intrastat-rapporten, måste du lägga till det format som hör till dessa informationselement som datakällsartiklar.  
+    * Förutom designformatelementen måste följande information för Intrastat-rapportering arkiveras: unik postidentifiering för varje rapporterad vara och namnet på den skapade filen. Eftersom dessa data inte att fylls i i Intrastat-rapporten, måste du lägga till det format som hör till dessa informationselement som datakällsartiklar.  
 33. Välj File\Declaration\Data i trädet.
 34. Klicka på Lägg till för att öppna dialogrutan.
 35. Välj Data source\Item i trädet.
@@ -102,7 +102,7 @@ Stegen i den här proceduren beskriver hur du utformar ER-konfigurationer (elekt
 4. Skriv "Mapping to update data" i namnfältet.
     * Mappning för att uppdatera data  
 5. Klicka på Spara.
-    * Den här mappningen avgör hur information om Intrastat-rapporten samlas in i datamodellen, strukturen som anges av det valda rotobjektet "For application data update". Dessa uppgifter, modellmappningen med samma rotobjekt "For application data update" och riktningen "To destination" används för uppdatering av programdata. Uppdateringen av programdata inleds omedelbart efter att den utgående Intrastat-rapporten har genererats. Observera att uppdateringen av programdata kan hoppas över under körning, men datamodellen måste vara tom (innehåller en tom postlista).   
+    * Den här mappningen avgör hur information om Intrastat-rapporten samlas in i datamodellen, strukturen som anges av det valda rotobjektet "For application data update". Dessa uppgifter, modellmappningen med samma rotobjekt "For application data update" och riktningen "To mål" används för uppdatering av programdata. Uppdateringen av programdata inleds omedelbart efter att den utgående Intrastat-rapporten har skapats. Observera att uppdateringen av programdata kan hoppas över under körning, men datamodellen måste vara tom (innehåller en tom postlista).   
 6. Klicka på Designer.
     * Observera att formatet för den utgående Intrastat-rapporten läggs till som standard som datakälla för den här modellmappningen.  
     * Bind elementen i den utformade rapporten (visas som datakälla) till elementen i datamodellen, som filtreras utifrån den valda modellens rotobjekt.  

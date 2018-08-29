@@ -1,5 +1,5 @@
 ---
-title: "Ställa in RFM-analys"
+title: "Ställ in aktualitets-, frekvens- och monetär (RFM) analys"
 description: "Det här avsnittet innehåller information om hur du ställer in recency, frekvens och monetär analys (RFM) för dina kunder."
 author: josaw1
 manager: AnnBe
@@ -20,20 +20,20 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: e66208ccceb4c248c2704bb7358d77447e032205
-ms.openlocfilehash: c59d12c54563b883ae6d8ea8594f423f02797f4f
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 161e526260503d7b91b4695b7c4297cf89327ea2
 ms.contentlocale: sv-se
-ms.lasthandoff: 12/14/2017
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="set-up-rfm-analysis"></a>Ställa in RFM-analys
+# <a name="set-up-recency-frequency-and-monetary-rfm-analysis"></a>Ställ in aktualitets-, frekvens- och monetär (RFM) analys
 
 [!include [banner](includes/banner.md)]
 
 Det här avsnittet innehåller information om hur du ställer in recency, frekvens och monetär analys (RFM) för dina kunder.
 
-Aktualitet, frekvens och monetär (RFM) analys är ett marknadsföringsverktyg som din organisation kan använda för att utvärdera de data som genereras av kundens inköp. När du har ställt in RFM-analys tilldelas kunderna en beräknad RFM-poäng när de gör inköp. RFM-poängen kan vara en tresiffrig klassificering eller ett aggregerat tal, beroende på hur din organisation har konfigurerat RFM-analysen. Så här fungerar värderingen om organisationen använder en tresiffrig klassificering för poängresultat:
+Aktualitet, frekvens och monetär (RFM) analys är ett marknadsföringsverktyg som din organisation kan använda för att utvärdera de data som skapas av kundens inköp. När du har ställt in RFM-analys tilldelas kunderna en beräknad RFM-poäng när de gör inköp. RFM-poängen kan vara en tresiffrig klassificering eller ett aggregerat tal, beroende på hur din organisation har konfigurerat RFM-analysen. Så här fungerar värderingen om organisationen använder en tresiffrig klassificering för poängresultat:
 
 - Den första siffran är kundens aktualitetsklassificering, d.v.s. hur nyligen kunden gjorde ett inköp från din organisation. 
 - Den andra siffran är kundens frekvensbedömning, d.v.s. hur ofta kunden gör inköp från din organisation. 

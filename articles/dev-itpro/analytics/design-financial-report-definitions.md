@@ -61,7 +61,7 @@ I följande register finns beskrivningar av flikarna i en rapportdefinition och 
 </tr>
 <tr>
 <td>Utleverans och fördelning</td>
-<td>Ändra rappportens utleveranstyp och destination.</td>
+<td>Ändra rapportens utleveranstyp och mål.</td>
 </tr>
 <tr>
 <td>Huvud och sidfot</td>

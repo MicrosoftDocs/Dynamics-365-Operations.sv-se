@@ -21,7 +21,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
 ms.openlocfilehash: 6da38f69abe72665fc79a43e0e163a856f9ee34d
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
@@ -194,10 +194,10 @@ Microsoft SQL Server Express används ofta för kanaldatabaser på grund av kost
 
     Om inte alla värden för en dimensionshierarki leder till ett annat pris, kan du också definiera ett handelsavtal för produktmallen och lämna alla produktdimensioner tomma. Definiera sedan ett separat handelsavtal för varje dimensionsvärde som leder till ett annat pris. Exempelvis om storleken XXL har ett högre pris, men alla storlekar har samma pris, kräver du två handelsavtal: en för produktmallen och en XXL storleken.
 
-## <a name="prices-that-include-tax-vs-prices-that-exclude-tax"></a>Priser som omfattar moms jämfört med priser exklusive moms
-När du anger försäljningspriser i Microsoft Dynamics 365, anger du inte om prisvärdet du anger inkluderar eller exkluderar moms. Värdet är bara priset. Men inställningen **pris inkluderar moms** på butikskanaler låter dig konfigurera butikskanaler så att de inkluderar eller exkluderar moms från priser. Inställningen är inställd på kanalen och ändra även i ett enskilt företag.
+## <a name="prices-that-include-tax-vs-prices-that-exclude-tax"></a>Priser som omfattar skatt jämfört med priser exklusive skatt
+När du anger försäljningspriser i Microsoft Dynamics 365, anger du inte om prisvärdet du anger inkluderar eller exkluderar skatt. Värdet är bara priset. Men inställningen **Pris inkluderar moms** på butikskanaler låter dig konfigurera butikskanaler så att de inkluderar eller exkluderar skatt från priser. Inställningen är inställd på kanalen och ändra även i ett enskilt företag.
 
-Om du arbetar med både inkluderad och exkluderad moms är det viktigt att du har korrekt inställda priser, eftersom totalbeloppet som kunden betalar ändras om inställningen **pris inkluderar moms** ändras för kanalen.
+Om du arbetar med både inkluderad och exkluderad skatt är det viktigt att du har korrekt inställda priser, eftersom totalbeloppet som kunden betalar ändras om inställningen **Pris inkluderar moms** ändras för kanalen.
 
 ## <a name="differences-between-retail-pricing-and-non-retail-pricing"></a>Skillnader mellan butiksprissättning och icke-butiksprissättning
 En enda prissättningsmotor används för att beräkna detaljhandelspriserna i alla kanaler: kundtjänst, butiker och onlinebutiker. Detta bidrar till att möjliggöra de enhetliga handelsscenarierna. 

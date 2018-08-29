@@ -1,5 +1,5 @@
 --- 
-title: "Utforma en konfiguration för rapportgenerering i Microsoft Word-format för elektronisk rapportering (ER)"
+title: "Utforma ER-konfigurationer för rapportgenerering i Word-format"
 description: "I följande steg beskrivs hur en användare med systemadministratörsroll eller roll som utvecklare för elektronisk rapportering kan konfigurera ett format för elektronisk rapportering (ER) så att detta skapar rapporter som Microsoft Word-filer."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7f80dc8411d38d051b01d77e35635a920d8803a6
-ms.openlocfilehash: 300cf6ed1a5a7098e71b812d682c1b51c2cf786c
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 615ab4a4f932478b8b847112d4fed8310187f03b
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/06/2017
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="design-a-configuration-for-generating-reports-in-microsoft-word-format-for-electronic-reporting-er"></a>Utforma en konfiguration för rapportgenerering i Microsoft Word-format för elektronisk rapportering (ER)
+# <a name="design-er-configurations-to-generate-reports-in-word-format"></a>Utforma ER-konfigurationer för rapportgenerering i Word-format
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
@@ -41,15 +41,15 @@ Denna procedur är avsedd för en funktion som lades till i Microsoft Dynamics 3
 1. Gå till Organisationsadministration > Arbetsytor > Elektronisk rapportering.
     * Kontrollera att konfigurationsleverantören "Litware, Inc." är markerad som aktiv.  
 2. Klicka på Reporting configurations.
-    * Vi kommer att återanvända den befintliga ER-konfigurationen som ursprungligen har skapats för att generera rapportutdata i OPENXML-format.  
+    * Vi kommer att återanvända den befintliga ER-konfigurationen som ursprungligen har skapats för att skapa rapportutdata i OPENXML-format.  
 3. Expandera "Betalningsmodell" i trädet.
 4. Välj ”Betalningmodell\rapport över exempelkalkylblad" i trädet.
 5. Klicka på Designer.
 
 ## <a name="replace-the-excel-template-with-the-word-template"></a>Byt ut Excel-mallen mot Word-mallen
-    * För närvarande används Excel-dokumentet som en mall för att generera utdata i OPENXML-format. Vi kommer att importera rapportmallen i Word-format.  
+    * För närvarande används Excel-dokumentet som en mall för att skapa utdata i OPENXML-format. Vi kommer att importera rapportmallen i Word-format.  
 1. Klicka på Bilagor.
-    * Ersätt den befintliga Excel-mallen med den Word-mall som du hämtade förut, Mall för betalningsrapport. Observera att den här mallen endast innehåller layouten i det dokument som vi vill generera som ER-utdata.  
+    * Ersätt den befintliga Excel-mallen med den Word-mall som du hämtade förut, Mall för betalningsrapport. Observera att den här mallen endast innehåller layouten i det dokument som vi vill skapa som ER-utdata.  
 2. Klicka på Ta bort.
 3. Klicka på Ja.
 4. Klicka på Ny.
@@ -60,10 +60,10 @@ Denna procedur är avsedd för en funktion som lades till i Microsoft Dynamics 3
 
 ## <a name="extend-the-word-template-by-adding-a-custom-xml-part"></a>Utöka Word-mallen genom att lägga till en anpassad XML-kod
 1. Klicka på Spara.
-    * Förutom att spara konfigurationsändringar, uppdaterar åtgärden Spara även den bifogade Word-mallen. Strukturen hos det designade formatet portas till det bifogade Word-dokumentet som en ny, anpassad XML-kod med namnet "Rapport". Lägg märke till att den bifogade Word-mallen inte bara innehåller layouten i det dokument som vi vill generera som ER-utdata, utan även den datastruktur som ER fyller den här mallen med under körning.  
+    * Förutom att spara konfigurationsändringar, uppdaterar åtgärden Spara även den bifogade Word-mallen. Strukturen hos det designade formatet portas till det bifogade Word-dokumentet som en ny, anpassad XML-kod med namnet "Rapport". Lägg märke till att den bifogade Word-mallen inte bara innehåller layouten i det dokument som vi vill skapa som ER-utdata, utan även den datastruktur som ER fyller den här mallen med under körning.  
 2. Klicka på Bilagor.
     * Nu måste du binda elementen i den anpassade XML-koden "Rapport" till Word-dokumentets delar.  
-    * Om du är bekant med Word-dokument som kan utformas som formulär med innehåll som avgränsas med elementen i anpassade XML-delar, spela då upp alla stegen i nästa underordnade uppgift för att skapa dessa dokument. Mer information finns via länken https://support.office.com/en-us/article/Create-forms-that-users-complete-or-print-in-Word-040c5cc1-e309-445b-94ac-542f732c8c8b?ui=en-US&rs=en-US&ad=US. Annars hoppar du över alla steg i nästa underuppgift.  
+    * Om du är bekant med Word-dokument som kan utformas som formulär med innehåll som avgränsas med elementen i anpassade XML-delar, spela då upp alla stegen i nästa underordnade uppgift för att skapa dessa dokument. Mer information finns via följande länk: https://support.office.com/en-us/article/Create-forms-that-users-complete-or-print-in-Word-040c5cc1-e309-445b-94ac-542f732c8c8b?ui=en-US&rs=en-US&ad=US. Annars hoppar du över alla steg i nästa underuppgift.  
 
 ## <a name="get-word-with-custom-xml-part-to-do-data-bindings"></a>Få Word med anpassad XML-kod att utföra databindningar
     * Öppna detta dokument i Word och gör följande: - Öppna fliken Word-utvecklare (anpassa menyfliken om denna inte har aktiverats än).  - Välj fönstret för XML-mappning.  - Välj den anpassade XML-koden "Rapport" i sökningen.  - Utför mappningen av elementen i den markerade, anpassade XML-koden och Word-dokumentets innehållskontroller.  - Spara det uppdaterade Word-dokumentet på en lokal enhet.  
@@ -94,9 +94,9 @@ Denna procedur är avsedd för en funktion som lades till i Microsoft Dynamics 3
 12. Markera eller avmarkera alla rader i listan.
 13. Klicka på Betalningsstatus.
 14. Klicka på Ingen.
-15. Klicka på Generera betalningar.
+15. Klicka på Skapa betalningar.
 16. Klicka på OK.
 17. Klicka på OK.
-    * Analysera den genererade utleveransen. Observera att skapade utdata visas i Word-format och innehåller information om de behandlade betalningarna.  
+    * Analysera den skapade utleveransen. Observera att skapade utdata visas i Word-format och innehåller information om de behandlade betalningarna.  
 
 

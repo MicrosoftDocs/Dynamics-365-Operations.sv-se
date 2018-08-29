@@ -1,5 +1,5 @@
 ---
-title: "Kassaapparater för Sverige"
+title: "Kassaapparatfunktioner för Sverige"
 description: "Det här avsnittet innehåller en översikt över kassaapparatfunktioner för Sverige."
 author: EvgenyPopovMBS
 manager: annbe
@@ -18,13 +18,13 @@ ms.author: epopov
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 5a9dab05d70b9955ebd98fce61d6ed12e7eaa5c5
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: acf52c3a878af75618f77986af9470f2c8b7c5a6
 ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="cash-registers-for-sweden"></a>Kassaapparater för Sverige
+# <a name="cash-register-functionality-for-sweden"></a>Kassaapparatfunktioner för Sverige
 
 [!include [banner](../includes/banner.md)]
 
@@ -56,7 +56,7 @@ Följande Sverige-specifika kassafunktioner aktiveras när parametern **ISO-kod*
     - Antal kvittokopior och totalt belopp
     - Momsbelopp per momssats
     - Totala kvantiteter för artiklar och tjänster som säljs
-    - Total försäljning exklusive och inklusive moms
+    - Total försäljning exklusive och inklusive skatt
     - Totalförsäljning, returer och netto
 
 - En kanalrapport för **elektronisk journal (Sverige)** som listar användningshändelser i kassan, till exempel försäljning, returer, kvittokopior, kassalådöppningar och prisåsidosättningar.
@@ -97,7 +97,7 @@ Sverige-specifika inställningar kan delas in i två grupper:
 
 Du måste ange följande allmänna inställningar för Sverige.
 
-1. Ange följande parametrar för moms (VAT) enligt svenska krav:
+1. Ange följande parametrar för skatt (VAT) enligt svenska krav:
 
    - Momskoder
    - Momsgrupper
@@ -108,7 +108,7 @@ Du måste ange följande allmänna inställningar för Sverige.
 
 2. På sidan **Alla butiker** uppdaterar du butiksinformation. Du måste speciellt ställa in följande parametrar:
     
-    - I fältet **momsgrupp** anger du en momsgrupp som ska användas för försäljning till butikskund.
+    - I fältet **Momsgrupp** anger du en momsgrupp som ska användas för försäljning till butikskund.
     - Markera kryssrutan **Moms ingår i priserna**.
     - Ange fältet **Butiksnamn** till att inkludera företagets namn. Den här ändringen hjälper till att garantera att företagsnamnet visas på ett försäljningskvittot. Alternativt kan du kan lägga till företagsnamnet på layouten av försäljningskvittot i fritt format.
     - Ange fältet **Skatteidentifieringsnummer (TIN)** så att det inkluderar företagets identifieringnummer. Den här ändringen hjälper till att garantera att företagets identifieringnummer visas på ett försäljningskvittot. Alternativt kan du kan lägga till företagets identifieringnummer på försäljningskvittot i fritt format.
@@ -136,7 +136,7 @@ Du måste ange följande allmänna inställningar för Sverige.
             - Fälten **Butiksadress**, **datum**, **Tid, 24 h**, **kvittonummer**, och **registreringsnummer**.
             - Fältet **Skriv ut meddelande på nytt** så att indikatorn ”kopia” skrivs ut på kvittokopior. Ange fältet **Teckenstorlek** för fältet **Skriv ut meddelande på nytt** till **Stor**.
     
-        - Lägger till minst i följande fält på **rader**-delen av kvittolayouten: **artikelnamn**, **kvantitet**, och **totalpris inkl. moms**.
+        - Lägger till minst i följande fält på **rader**-delen av kvittolayouten: **artikelnamn**, **kvantitet**, och **totalpris inkl. skatt**.
 
         - Lägg till minst följande fält till **Sidfot**-delen på kvittolayouten:
 

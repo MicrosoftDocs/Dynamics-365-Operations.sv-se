@@ -21,7 +21,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
 ms.openlocfilehash: eeb56ec9697447ebd2385f3a0a516fcc9dc1bd3e
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
@@ -64,11 +64,11 @@ APQC Unified-biblioteket (februari 2016) innehåller de uppgiftsguider som är a
 | Skapa en räntekod med ett intervall                        | Globalt             |
 | Skapa och bearbeta fritextfakturor                       | Globalt             |
 | Skapa försäljningsorderfakturor                                 | Globalt             |
-| Generera och bokföra återkommande fritextfakturor.              | Globalt             |
+| Skapa och bokföra återkommande fritextfakturor.              | Globalt             |
 | Bearbeta kravbrev                                  | Globalt             |
 | Beräkna ränta                                            | Globalt             |
 | Granska inkasseringsinformation                              | Globalt             |
-| Ställ in och generera åldersfördelningsinformation för kundreskontra   | Globalt             |
+| Ställ in och skapa åldersfördelningsinformation för kundreskontra   | Globalt             |
 
 
  
@@ -127,7 +127,7 @@ APQC Unified-biblioteket (februari 2016) innehåller de uppgiftsguider som är a
 |                                                                                                        |                                 |
 |--------------------------------------------------------------------------------------------------------|---------------------------------|
 | **BPM-rad**                                                                                           | **Land/region**              |
-| Lägga till BAS-rapportrutor och generera den australiska affärsaktivitetsrapporten BAS                        | Australien och Nya Zeeland       |
+| Lägga till BAS-rapportrutor och skapa den australiska affärsaktivitetsrapporten BAS                        | Australien och Nya Zeeland       |
 | Ställ in orsakskoder för BAS för Australien                                                                  | Australien och Nya Zeeland       |
 | Tilldela ett betalningsblankettformat till ett kundkonto                                                     | Danmark                         |
 | Skapa och bokföra en kundfaktura för en kund inom offentlig sektor                                        | Danmark                         |
@@ -142,7 +142,7 @@ APQC Unified-biblioteket (februari 2016) innehåller de uppgiftsguider som är a
 | Ställ in betalningsblankettformat för projektfakturor                                                         | Danmark                         |
 | Skapa och exportera leverantörsbetalningar med hjälp av ett SEPA-betalningsformat                                          | Europa                          |
 | Skapa betalningar för kunder som har autogiromedgivanden                                            | Europa                          |
-| EUR-00011 Generera rapport med lista över försäljning inom EU                                                            | Europa                          |
+| EUR-00011 Skapa rapport med lista över försäljning inom EU                                                            | Europa                          |
 | EUR-00011 Konfigurera rapportering av EU-säljlista                                                               | Europa                          |
 | EUR-00012 Utfärda ett EU-mottagningskvitto                                                                | Europa                          |
 | EUR-00012 Ta emot ett EU-mottagningscertifikat                                                              | Europa                          |
@@ -162,17 +162,17 @@ APQC Unified-biblioteket (februari 2016) innehåller de uppgiftsguider som är a
 | Anpassa den tyska verifieringsfilkonfigurationen                                                              | Tyskland                         |
 | DE-00002 Avskrivningsjusteringar för ytterligare anskaffningar under det andra året                       | Tyskland                         |
 | DE-00003 Överföring av elektronisk momsdeklaration (ELSTER)                                           | Tyskland                         |
-| Generera tysk verifieringsfil                                                                             | Tyskland                         |
+| Skapa tysk verifieringsfil                                                                             | Tyskland                         |
 | Importera den tyska verifieringsfilkonfigurationen                                                                 | Tyskland                         |
 | Skapa ett leverantörskonto och bifoga fakturadeklarationen                                             | Island                         |
 | IS-00005 Momsavstämningsrapport                                                                     | Island                         |
 | Ställ in en fakturadeklaration för leverantörer                                                              | Island                         |
 | Ställ in obligatoriska betalningsreferenser                                                                    | Island                         |
-| Uppdatera leverantörsfakturadeklarationer och generera rapporten                                             | Island                         |
+| Uppdatera leverantörsfakturadeklarationer och skapa rapporten                                             | Island                         |
 | Anskaffa en anläggningstillgång med skyldigheter vid utrangering av tillgång                                                | Japan                           |
 | Anskaffa anläggningstillgångar, fordra statsbidrag och tillämpa förminskningspost                         | Japan                           |
 | Justering av uppskattningen av utrangering av tillgångar                                                 | Japan                           |
-| Fördela bärande belopp med delad tillgång och goodwill till kassagenererande enheter                         | Japan                           |
+| Fördela bärande belopp med delad tillgång och goodwill till kassaskapande enheter                         | Japan                           |
 | Ändra avskrivningsmetoden under tillgångens livstid för en tillgång                                     | Japan                           |
 | Ändra avskrivningsmetoden under tillgångens livstid för värdemodell                                   | Japan                           |
 | CN-00004 Avskrivningsallokering för anläggningstillgång (JP-)                                                     | Japan                           |
@@ -188,15 +188,15 @@ APQC Unified-biblioteket (februari 2016) innehåller de uppgiftsguider som är a
 | Öppna och bekräfta en kundkonsoliderad faktura på nytt                                                     | Japan                           |
 | Öppna och bekräfta en leverantörskonsoliderad faktura på nytt                                                       | Japan                           |
 | Skapa och bekräfta erkännandetest                                                                    | Japan                           |
-| Skapa CGU-grupper och kassagenererande enheter                                                            | Japan                           |
+| Skapa CGU-grupper och kassaskapande enheter                                                            | Japan                           |
 | Skapa engångsbeloppavskrivningtillgångar med hjälp av metoden dela lika                                       | Japan                           |
 | Skriva av och periodisera ränteutgiften för skyldigheter vid utrangering av tillgång                            | Japan                           |
 | Avskrivning av anläggningstillgångar med den bokförda förminskningsposten                                               | Japan                           |
 | Aktivera JBA betalningsfilformat                                                                         | Japan                           |
 | Ange tidsplan för avskrivning och koppla till den här avskrivningsprofilen                                 | Japan                           |
-| Generera och bokföra betalningsavgift                                                                          | Japan                           |
-| Generera EFT-betalningfil med JBA-format                                                              | Japan                           |
-| Generera rapport för japansk konsumtionsskatt                                                                  | Japan                           |
+| Skapa och bokföra betalningsavgift                                                                          | Japan                           |
+| Skapa EFT-betalningfil med JBA-format                                                              | Japan                           |
+| Skapa rapport för japansk konsumtionsskatt                                                                  | Japan                           |
 | Importera kundbetalning med JBA-filformat                                                           | Japan                           |
 | Fråga om betalningsavgift i journalen                                                                    | Japan                           |
 | Fråga om relaterade transaktioner till utrangering av tillgångar                                      | Japan                           |
@@ -210,7 +210,7 @@ APQC Unified-biblioteket (februari 2016) innehåller de uppgiftsguider som är a
 | Föreslå och bokföra accelererad avskrivning                                                              | Japan                           |
 | Föreslå och bokföra nedskrivningsbeloppet efter batch                                                        | Japan                           |
 | Föreslå och bokföra nedskrivningsbeloppet genom att använda journal för anläggningstillgångar                                    | Japan                           |
-| Föreslå och bokföra nedskrivningsbeloppet på en kassagenererande enhet                                       | Japan                           |
+| Föreslå och bokföra nedskrivningsbeloppet på en kassaskapande enhet                                       | Japan                           |
 | Föreslå särskild avskrivning                                                                           | Japan                           |
 | Öppna och redigera en kundkonsoliderad faktura på nytt                                                        | Japan                           |
 | Öppna och redigera en leverantörskonsoliderad faktura på nytt                                                          | Japan                           |
@@ -251,10 +251,10 @@ APQC Unified-biblioteket (februari 2016) innehåller de uppgiftsguider som är a
 | MY-00006 01 Inställning av GST-lättnadssatser                                                                  | Singapore, Malaysia och Thailand |
 | MY-00006 02 Skriva ut GST-kundfakturor med en lättnadssats                                           | Singapore, Malaysia och Thailand |
 | MY-00007 Självfakturerade fakturor                                                                          | Singapore, Malaysia och Thailand |
-| MY-00010 GST – Generera GAF-filer i krävt format                                               | Singapore, Malaysia och Thailand |
-| MY-00011 02 Generera kunds debetfaktura för projektförsäljningar                                             | Singapore, Malaysia och Thailand |
-| MY-00011 03 Generera kunds kreditfaktura för projektförsäljningar                                            | Singapore, Malaysia och Thailand |
-| GB-00002 Skapa en inköpsorder som omfattar artiklar där moms ska återföras                     | Storbritannien                  |
+| MY-00010 GST – Skapa GAF-filer i krävt format                                               | Singapore, Malaysia och Thailand |
+| MY-00011 02 Skapa kunds debetfaktura för projektförsäljningar                                             | Singapore, Malaysia och Thailand |
+| MY-00011 03 Skapa kunds kreditfaktura för projektförsäljningar                                            | Singapore, Malaysia och Thailand |
+| GB-00002 Skapa en inköpsorder som omfattar artiklar där skatt ska återföras                     | Storbritannien                  |
 | GB-00002 Skapa en försäljningsorder som omfattar artiklar som är föremål för återfört tillägg                        | Storbritannien                  |
 | GB-00002 Ställa in en artikelmomsgrupp för återfört tillägg                                           | Storbritannien                  |
 | GB-00002 Ställa in artikelmomsgrupper, regler och parametrar för återfört tillägg                                  | Storbritannien                  |
@@ -482,7 +482,7 @@ APQC Unified-biblioteket (februari 2016) innehåller de uppgiftsguider som är a
 | **BPM-rad**                                      | **Land/region** |
 | Definiera disponeringregler för artiklar                   | Globalt             |
 | Utveckla baslinjeprognos                         | Globalt             |
-| Generera en begränsad plan                       | Globalt             |
+| Skapa en begränsad plan                       | Globalt             |
 | Identifiera kritiskt material och leverantörskapacitet | Globalt             |
 | Ändra en efterfrågeprognos manuellt                 | Globalt             |
 
@@ -606,7 +606,7 @@ APQC Unified-biblioteket (februari 2016) innehåller de uppgiftsguider som är a
 | Definiera förmånsbelöningspoäng                                                              | Globalt             |
 | Definiera bonusprogram                                                                    | Globalt             |
 | Utforma relationerna mellan organisationsenheter                                     | Globalt             |
-| Generera och köra färdiga rapporter                                                       | Globalt             |
+| Skapa och köra färdiga rapporter                                                       | Globalt             |
 | Hantera handelsrabatter för kunder                                                      | Globalt             |
 | Parameterkonfigurationer för butiksutdrag                                            | Globalt             |
 | Betalningskonfigurationer för butiksutdrag                                              | Globalt             |
@@ -632,7 +632,7 @@ APQC Unified-biblioteket (februari 2016) innehåller de uppgiftsguider som är a
 | Skapa leveransplaner                   | Globalt             |
 | Ange försäljningsavtal                     | Globalt             |
 | Uppfylla försäljningsavtal                   | Globalt             |
-| Generera och bearbeta kundrabatter      | Globalt             |
+| Skapa och bearbeta kundrabatter      | Globalt             |
 | Slå upp tillämpliga priser och rabatter    | Globalt             |
 | Masskapa försäljningsofferter               | Globalt             |
 | Bearbeta rabatter för betalning                | Globalt             |

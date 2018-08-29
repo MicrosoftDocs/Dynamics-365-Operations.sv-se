@@ -1,5 +1,5 @@
 ---
-title: "Uppgiftsinspelare och hjälp för kassa"
+title: "Uppgiftsinspelare och hjälp för Retail Modern POS (MPOS) och molnbaserad kassa"
 description: "Det här avsnittet beskriver hur du använder uppgiftsinspelaren i Retail Modern POS och molnbaserad kassa."
 author: mugunthanm
 manager: AnnBe
@@ -20,14 +20,14 @@ ms.author: mumani
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 12aa71843fa8b22eb7ae688ed3600168760d90da
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 0077bac6eef5c4b4925c9464d47a1297aa1177e4
 ms.contentlocale: sv-se
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="task-recorder-and-help-for-pos"></a>Uppgiftsinspelare och hjälp för kassa
+# <a name="task-recorder-and-help-for-retail-modern-pos-mpos-and-cloud-pos"></a>Uppgiftsinspelare och hjälp för Retail Modern POS (MPOS) och molnbaserad kassa
 
 [!include [banner](includes/banner.md)]
 
@@ -36,7 +36,7 @@ Det här avsnittet beskriver hur du använder uppgiftsinspelaren i Retail Modern
 <a name="overview"></a>Översikt
 --------
 
-Uppgiftsinspelning i Retail Modern POS eller Cloud POS är en ny lösning som har skapats med fokus på hög tillgänglighet. Det ger ett flexibelt gränssnitt för programprogrammering (API) för utökningsbarhet och sömlös integrering med företagsprocessinspelningar. Dessutom har uppgiftsinspelarintegrering med affärsprocessmodellerarverktyget (BPM) i Microsoft Dynamics Lifecycle Services ([https://bpm.lcs.dynamics.com](https://bpm.lcs.dynamics.com/)) framhävts. Användare kan därför fortsätta framställa detaljerade affärsprocessdiagram från inspelningar i syfte att analysera och utforma sina program.
+Uppgiftsinspelning i Retail Modern POS eller Cloud POS är en ny lösning som har skapats med fokus på hög tillgänglighet. Det ger ett flexibelt gränssnitt för programprogrammering (API) för utökningsbarhet och sömlös integrering med företagsprocessinspelningar. Dessutom har uppgiftsinspelarintegrering med affärsprocessmodellerarverktyget (BPM) i Microsoft Dynamics Lifecycle Services ([https://bpm.lcs.dynamics.com](https://bpm.lcs.dynamics.com/)) tillhandahållits. Användare kan därför fortsätta framställa detaljerade affärsprocessdiagram från inspelningar i syfte att analysera och utforma sina program.
 
 ## <a name="architecture"></a>Arkitektur
 Uppgiftsinspelningen kan registrera användaråtgärder i klienten med exakt återgivning. Varje kontroll har utrustats för att meddela utförandet av en användaråtgärd till uppgiftsinspelaren. Kontrollen meddelar uppgiftsinspelaren att en händelse har inträffat och vidarebefordrar all relevant information om motsvarande användaråtgärd i realtid. Utifrån denna information kan uppgiftsinspelaren registrera typen av användaråtgärd (till exempel klick, värde eller navigering) och all information som är relaterad till användaråtgärden (t.ex. indata-värde och typ, formulärssammanhang eller postsammanhang). Uppgiftsinspelaren förser informationen med tillräckligt mycket detaljer för att garantera att en uppspelning av inspelningen kan utföra de inspelade åtgärderna precis så som användaren har utfört dem. (Uppspelningsfunktionen har ännu inte implementerats i Retail modern POS eller Cloud POS.)

@@ -1,5 +1,5 @@
 --- 
-title: "Utforma en konfiguration för att importera data från en extern fil i CSV-format (ER)"
+title: "Utforma ER-konfigurationer för att importera data från externa CSV-filer"
 description: "Använd den här guiden för att designa ER-konfigurationer för elektronisk rapportering som importerar data till programmet Dynamics 365 for Finance and Operations från en extern fil i CSV-format."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: f6bfa9f7c0638b0eaacf1a49bcd7d84ffab3acbf
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 8d3ea3d797de154979eae112658cf05d1914feeb
 ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="design-a-configuration-to-import-data-from-an-external-file-in-csv-format-er"></a>Utforma en konfiguration för att importera data från en extern fil i CSV-format (ER)
+# <a name="design-er-configurations-to-import-data-from-external-csv-files"></a>Utforma ER-konfigurationer för att importera data från externa CSV-filer
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
@@ -107,11 +107,11 @@ Du måste också hämta och spara följande filer lokalt: (https://go.microsoft.
 15. Klicka på Sök.
 16. Ange "Vend" i fältet Sök.
 17. Klicka på Sök nästa.
-    * Denna formatmappning kan innehålla användardefinierad logik för att validera korrektheten i den importerade datan ur ett företagsperspektiv. Till exempel, baserat på inställningen, för varje rad i importfilen, vars struktur inte matchar varken strukturen hos rubriklinjen eller transaktionslinjen, kommer ett varningsmeddelande att genereras i Infolog för att informera användaren om detta fall, vilket indikerar transaktionens sekvensnummer i filen.   
+    * Denna formatmappning kan innehålla användardefinierad logik för att validera korrektheten i den importerade datan ur ett företagsperspektiv. Till exempel, baserat på inställningen, för varje rad i importfilen, vars struktur inte matchar varken strukturen hos rubriklinjen eller transaktionslinjen, kommer ett varningsmeddelande att skapas i Infolog för att informera användaren om detta fall, vilket indikerar transaktionens sekvensnummer i filen.   
 18. Stäng sidan.
 
 ## <a name="run-the-format-mapping"></a>Kör mappning av filformat
-För testningsändamål, utför formatmappning med den 1099entriescsv.csv-fil som du tidigare hämtade. Genererade utdata kommer att presentera data som importeras från den valda CSV-filen och fyller i den anpassade datamodellen när den verkliga importen sker.   
+För testningsändamål, utför formatmappning med den 1099entriescsv.csv-fil som du tidigare hämtade. Skapade utdata kommer att presentera data som importeras från den valda CSV-filen och fyller i den anpassade datamodellen när den verkliga importen sker.   
 1. Klicka på Kör.
     * Klicka på Bläddra och navigera till filen 1099entriescsv.csv som du hämtade tidigare.  
 2. Klicka på OK.

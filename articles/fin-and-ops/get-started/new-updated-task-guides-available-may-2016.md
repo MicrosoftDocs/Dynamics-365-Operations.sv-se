@@ -21,7 +21,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
 ms.openlocfilehash: 237ff2935ab8e2dee90bd716179b45c5fca455c3
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
@@ -41,7 +41,7 @@ Den har artikeln anger nya eller uppdaterade uppgiftsguider som släpptes för M
 | BPM-rad                                                                 | Land/region                    |
 |--------------------------------------------------------------------------|-----------------------------------|
 | Ställ in elektroniska OIOUBL-fakturor                                       | Danmark                           |
-| EUR-00002 Generera en Intrastat-deklaration för EU                           | Europa                            |
+| EUR-00002 Skapa en Intrastat-deklaration för EU                           | Europa                            |
 | EUR-00002 Överföra transaktioner till Intrastat                         | Europa                            |
 | FR-00004 Uppdatera betalningsmetod för kund                            | Europa                            |
 | Upprätta betalningsmetoder för kunder                                    | Frankrike                            |
@@ -50,7 +50,7 @@ Den har artikeln anger nya eller uppdaterade uppgiftsguider som släpptes för M
 | Konfigurera accelererade avskrivningparametrar och bokföringsprofiler       | Japan                             |
 | Konfigurera konsoliderade fakturaparametrar och inställningar för leverantörsreskontra | Japan                             |
 | Skapa ett accelererat avskrivningsdokument och ange användningsdata         | Japan                             |
-| Skapa CGU-grupp och kassagenererande enheter                               | Japan                             |
+| Skapa CGU-grupp och kassaskapande enheter                               | Japan                             |
 | Avyttra en anläggningstillgång med avdragsregistrering                            | Japan                             |
 | MY-00004 Hantera leverantörs debet- och kreditfaktura för GST                | Singapore, Malaysia och Thailand |
 
@@ -64,9 +64,9 @@ Den har artikeln anger nya eller uppdaterade uppgiftsguider som släpptes för M
 
 |                                  BPM-rad                                  | Land/region |
 |----------------------------------------------------------------------------|----------------|
-|                         ER konfigurera destinationer                          |     Globalt     |
+|                         ER konfigurera mål                          |     Globalt     |
 |     ER utformar en konfiguration för rapportgenerering i OPENXML-format     |     Globalt     |
-| ER generera elektroniska handlingar för betalningar med en formatkonfiguration |     Globalt     |
+| ER skapa elektroniska handlingar för betalningar med en formatkonfiguration |     Globalt     |
 |             ER importera en konfiguration från Lifecycle Services              |     Globalt     |
 |               <strong>\</strong>*ER väljer tjänsteleverantör                |     Globalt     |
 |   ER uppgraderar ditt format genom att anta den nya basversionen för det formatet    |     Globalt     |

@@ -22,7 +22,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: b8f2f3a33dc19c2ebc941d1a504eae0c276f3cdf
 ms.openlocfilehash: ac2e98dbbd45becf06e28b6ea4eb9d0ec15e30f6
 ms.contentlocale: sv-se
-ms.lasthandoff: 06/25/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
@@ -166,7 +166,7 @@ Layout definierar hur rutnätet med budgetplanens dokumentrader ser ut när du �
 
 Baserat på layoutdefinitionen av budgetplanen kan vi skapa en Excel-mall som ska användas som en alternativ väg för att redigera budgetdata. Eftersom Excel-mallen måste matcha budgetplanens layoutdefinition, kan du inte redigera layouten efter genereringen av Excel-mallen. Därför ska uppgiften göras när alla layoutkomponenter har definierats. 
 
-5.2. För layout skapad i steg 5.1. , klicka på knappen Mall &gt; Generera. Bekräfta varningsmeddelandet. Visa mallen genom att klicka på Mall &gt; Visa. 
+5.2. För layout skapad i steg 5.1. , klicka på knappen Mall &gt; Skapa. Bekräfta varningsmeddelandet. Visa mallen genom att klicka på Mall &gt; Visa. 
 
 *Obs: Se till att välja "Spara som" och välj den plats där mallen ska sparas, om du vill redigera. Om användaren väljer "Öppna" i dialogrutan utan att spara, behålls inte ändringar som gjorts i filen när filen stängs.* 
 [![Mallvy](./media/screenshot25.png)](./media/screenshot25.png) 
@@ -196,10 +196,10 @@ Julia behöver skapa och aktivera en ny budgetplaneringsprocess som kombinerar a
 
 ## <a name="exercise-2-process-simulation"></a>Övning 2: Processimulering
 
-### <a name="task-7-generate-initial-data-for-budget-plan-from-general-ledger"></a>Uppgift 7: Generera initiala data för budgetplan från redovisning
-7.1. Navigera till Budgetering &gt; Periodisk &gt; Generera budgetplan från huvudbok. Fyll i de periodiska processparametrarna och klicka på Generera. 
+### <a name="task-7-generate-initial-data-for-budget-plan-from-general-ledger"></a>Uppgift 7: Skapa initiala data för budgetplan från redovisning
+7.1. Navigera till Budgetering &gt; Periodisk &gt; Skapa budgetplan från huvudbok. Fyll i de periodiska processparametrarna och klicka på Skapa. 
 
-[![Generera](./media/screenshot29.png)](./media/screenshot29.png) 
+[![Skapa](./media/screenshot29.png)](./media/screenshot29.png) 
 
 7.2. Navigera till Budgetering &gt; Budgetplaner för att hitta en budgetplan som har skapats av genereringsprocessen. 
 

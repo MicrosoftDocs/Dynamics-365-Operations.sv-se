@@ -1,5 +1,5 @@
 --- 
-title: "Utveckla struktur och planer för lön/kompensation"
+title: "Utveckla strukturer och planer för lön/kompensation"
 description: "Den här uppgiftsguiden är en genomgång av processen att skapa en fast kompensationsplan och låta medarbetare anmäla sig till planen med hjälp av berättiganderegler."
 author: kherr75
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: d2a4a0b2bf2d33530dedc7ce3974ee558d063878
+ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
+ms.openlocfilehash: 0514cd485c8fa0026390a22be350ff23933afd7b
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="develop-salarycompensation-structure-and-plans"></a>Utveckla struktur och planer för lön/kompensation
+# <a name="develop-salarycompensation-structures-and-plans"></a>Utveckla strukturer och planer för lön/kompensation
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
@@ -38,7 +38,7 @@ Den här uppgiftsguiden är en genomgång av processen att skapa en fast kompens
 6. Ange ett datum i fältet Giltighetsdatum.
 7. Välj om den fasta kompensationsplanen är en band-, grad- eller stegplan i fältet Typ.
 8. Kryssrutan Rekommendation tillåts fungerar som ett standardvärde för de åtgärder som läggs till i den här planen i en processhändelse.  Om du tillåter rekommendationer kan du åsidosätta det beräknade riktlinjebeloppet när du bearbetar kompensation.
-9. Med Tolerans utanför intervallet kan du ange hur du vill hantera kompensationbelopp som ligger utanför det angivna kompensationsstrukturintervallet för den angivna nivån.  Om Tolerans utanför intervallet är Ingen tillåts alla kompensationbelopp.  En Mjuk tolerans varnar användaren om kompensationbeloppet är mindre än det lägsta referenspunktbeloppet för nivån eller större än det högsta beloppet för nivån. Användaren kan ignorera varningen och fortsätta.  En Hård tolerans genererar ett fel om en medarbetares kompensation anges utanför den minsta och högsta nivån för referenspunkten och justerar automatiskt en medarbetares kompensation så att den är inom intervallet.
+9. Med Tolerans utanför intervallet kan du ange hur du vill hantera kompensationbelopp som ligger utanför det angivna kompensationsstrukturintervallet för den angivna nivån.  Om Tolerans utanför intervallet är Ingen tillåts alla kompensationbelopp.  En Mjuk tolerans varnar användaren om kompensationbeloppet är mindre än det lägsta referenspunktbeloppet för nivån eller större än det högsta beloppet för nivån. Användaren kan ignorera varningen och fortsätta.  En Hård tolerans skapar ett fel om en medarbetares kompensation anges utanför den minsta och högsta nivån för referenspunkten och justerar automatiskt en medarbetares kompensation så att den är inom intervallet.
 10. Fältet Anställningsregel används när en kompensationsprocesshändelse körs för att beräkna medarbetarens kompensation.  Om Anställningsregel är Procent beräknas en ökning som är proportionell mot tidslängden som arbetaren har varit anställd i cykeln.
 11. Ange ett värde i fältet Valuta.
 12. Ange eller välj ett värde i fältet Lönesatskonvertering.

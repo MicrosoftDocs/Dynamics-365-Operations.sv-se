@@ -1,5 +1,5 @@
 --- 
-title: " Kategoriprissättningsregler för att skapa handelsavtal"
+title: "Skapa handelsavtal genom att använda prissättningsregler för kategori"
 description: "I den här proceduren visas hur du skapar handelsavtal för försäljningspris med hjälp av en kategoriprissättningsregel."
 author: scott-tucker
 manager: AnnBe
@@ -17,13 +17,13 @@ ms.author: scotttuc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ea07d8e91c94d9fdad4c2d05533981e254420188
-ms.openlocfilehash: 133ca34a0e85454dc40d4e1d36fbe8278019c7e4
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 20393f80c8f4aa12e3103cb7df214367aa35ab16
 ms.contentlocale: sv-se
-ms.lasthandoff: 02/07/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="category-pricing-rules-to-create-trade-agreements"></a> Kategoriprissättningsregler för att skapa handelsavtal
+# <a name="create-trade-agreements-by-using-category-pricing-rules"></a>Skapa handelsavtal genom att använda prissättningsregler för kategori
 
 [!include [task guide banner](../includes/task-guide-banner.md)]
 
@@ -39,7 +39,7 @@ I den här proceduren visas hur du skapar handelsavtal för försäljningspris m
 7. I fältet Kategori, ange eller välj ett värde.
 8. I fältet Belopp/procent, ange ett tal.
 9. I fältet Avrundningsversion, ange eller välj ett värde.
-10. Klicka på Generera handelsavtal.
+10. Klicka på Skapa handelsavtal.
 11. Klicka på Nästa.
 12. Ange ett datum i fältet Från datum.
 13. Ange ett datum i fältet Till datum.
@@ -48,7 +48,7 @@ I den här proceduren visas hur du skapar handelsavtal för försäljningspris m
 16. Klicka på Avsluta.
     * Då skapas en handelsavtalsjournal som öppnas för granskning.  
 17. Hitta och markera önskad post i listan.
-    * Handelsavtalsjournalerna som skapas från kategoriprissättningsreglerna bokförs inte. Du kan granska och redigera priserna som genereras innan du bokför dem.  
+    * Handelsavtalsjournalerna som skapas från kategoriprissättningsreglerna bokförs inte. Du kan granska och redigera priserna som skapas innan du bokför dem.  
 18. Klicka på Redigera.
 19. Ange ett nummer i fältet Belopp i valuta.
 20. Klicka på Bokför.

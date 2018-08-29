@@ -1,6 +1,6 @@
 --- 
-title: "Konfigurera mål för elektronisk rapportering (ER)"
-description: "Den här proceduren visar hur du ställer in och använder olika destinationer för utdatakomponenter för elektronisk rapportering (ER) som till exempel en mapp eller en fil."
+title: "Konfigurera mål för generering av elektronisk rapportering (ER)"
+description: "Den här proceduren visar hur du ställer in och använder olika mål för utdatakomponenter för elektronisk rapportering (ER) som till exempel en mapp eller en fil."
 author: NickSelin
 manager: AnnBe
 ms.date: 10/14/2016
@@ -16,32 +16,32 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: afe9d397872b9328b59f4036049ab53b3bba2aec
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 7c84464f426d6bedff092fd918fcabbc35600f3c
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="configure-destinations-for-electronic-reporting-er"></a>Konfigurera mål för elektronisk rapportering (ER)
+# <a name="configure-destinations-for-electronic-reporting-er-output"></a>Konfigurera mål för generering av elektronisk rapportering (ER)
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Den här proceduren visar hur du ställer in och använder olika destinationer för utdatakomponenter för elektronisk rapportering (ER) som till exempel en mapp eller en fil. Det demonstrationsdataföretag som används för att skapa den här proceduren är DEMF. Tyskland är land/region för den juridiska personens primära adress, men du kan använda valfri juridisk person för denna procedur. 
+Den här proceduren visar hur du ställer in och använder olika mål för utdatakomponenter för elektronisk rapportering (ER) som till exempel en mapp eller en fil. Det demonstrationsdataföretag som används för att skapa den här proceduren är DEMF. Tyskland är land/region för den juridiska personens primära adress, men du kan använda valfri juridisk person för denna procedur. 
 
-Formatet som används i det här exemplet är kreditöverföringen ISO20022, men du kan använda valfritt format som du redan har importerat. Observera att den här proceduren är ett exempel på en enda fil och en enda destinationsinställning. Mer information om Destinationshantering för elektronisk rapportering hittar du i hjälpwikin för Dynamics 365 for Finance and Operations.
+Formatet som används i det här exemplet är kreditöverföringen ISO20022, men du kan använda valfritt format som du redan har importerat. Observera att den här proceduren är ett exempel på en enda fil och en enda målsinställning. Mer information om målshantering för elektronisk rapportering hittar du i hjälpwikin för Dynamics 365 for Finance and Operations.
 
-1. Gå till Organisationsadministration > Elektronisk rapportering > Elektroniska rapporteringsdestination.
-2. Klicka på Ny för att skapa en ny uppsättning destinationer för ett format.
-3. Välj ett format som du vill konfigurera för destinationer i fältet Referenser.
-    * Om du inte har ett värde som ska markeras, innebär det att du inte har importerat några elektroniska rapporteringformatkonfigurationer. Du måste importera en formatkonfiguration innan du ställer in destinationer.  
-4. Klicka på New om du vill skapa en ny fildestination.
-    * Observera att du kan skapa en fildestination för varje utleveranskomponent av samma format, till exempel en mapp eller en fil. Du kommer att kunna aktivera och avaktivera destinationer separat i inställningarna.  
+1. Gå till Organisationsadministration > Elektronisk rapportering > Elektroniska rapporteringsmål.
+2. Klicka på Ny för att skapa en ny uppsättning mål för ett format.
+3. Välj ett format som du vill konfigurera för mål i fältet Referenser.
+    * Om du inte har ett värde som ska markeras, innebär det att du inte har importerat några elektroniska rapporteringformatkonfigurationer. Du måste importera en formatkonfiguration innan du ställer in mål.  
+4. Klicka på New om du vill skapa en ny filmål.
+    * Observera att du kan skapa en filmål för varje utleveranskomponent av samma format, till exempel en mapp eller en fil. Du kommer att kunna aktivera och avaktivera mål separat i inställningarna.  
 5. Ange det användarvänliga namnet på utleveranskomponenten i namnfältet.
-    * Vi rekommenderar att du använder meningsfulla namn, till exempel ”betalningsfil” eller” kontrollrapport ". Dessa namn ska visas för användarna i konfigurationkörning tillsammans med destinationsinställningarna.  
+    * Vi rekommenderar att du använder meningsfulla namn, till exempel ”betalningsfil” eller” kontrollrapport ". Dessa namn ska visas för användarna i konfigurationkörning tillsammans med målsinställningarna.  
 6. Välj en fil eller en mapp som är specifik för formatet i Filnamn.
 7. Klicka på Inställningar.
 8. Välj Ja i fältet Aktiverad.
-    * Kryssrutan Aktiverad på varje flik aktiverar och avaktiverar varje destination separat. I det här exemplet kan du aktivera att skicka en utdatafil till en e-postmottagare när filen genereras.  
+    * Kryssrutan Aktiverad på varje flik aktiverar och avaktiverar varje mål separat. I det här exemplet kan du aktivera att skicka en utdatafil till en e-postmottagare när filen skapas.  
 9. Klicka på Edit för att konfigurera e-postmottagare.
 10. Klicka på Lägg till.
 11. Klicka på Print Management email.

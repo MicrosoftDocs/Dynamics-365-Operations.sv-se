@@ -1,5 +1,5 @@
 --- 
-title: "Importera konfigurationer för att generera dokument med programdata"
+title: "Importera konfigurationer för att skapa dokument som omfattar programdata"
 description: "För att slutföra stegen i den här proceduren måste du först slutföra stegen i proceduren ER Skapa en konfigurationsleverantör och markera den som aktiv."
 author: NickSelin
 manager: AnnBe
@@ -16,19 +16,19 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 87352293a78d6a356db49deffb930016a1bf836c
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 1637ba59525f5f8bd9fe41a00c34eca90f7a2751
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="import-configurations-to-generate-documents-with-application-data"></a>Importera konfigurationer för att generera dokument med programdata
+# <a name="import-configurations-to-generate-documents-that-have-application-data"></a>Importera konfigurationer för att skapa dokument som omfattar programdata
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
 För att slutföra stegen i den här proceduren måste du först slutföra stegen i proceduren ER Skapa en konfigurationsleverantör och markera den som aktiv.
 
-Stegen i den här proceduren beskriver hur du utformar ER-konfigurationer (elektronisk rapportering) för att generera ett elektroniskt dokument. I den här proceduren ska du importera erforderliga ER-konfigurationer som har skapats för exempelföretaget Litware, Inc. och använd dem för att generera elektroniska dokument. Den här proceduren har skapats för användare med rollen Systemadministratör eller Utvecklare för elektronisk rapportering. Stegen kan utföras med hjälp av datauppsättningen DEMF. Innan du börjar, se till att ladda ner och spara de filer som anges i hjälpavsnittet "Generera elektroniska dokument och uppdatera data med ER-verktyget" (generera-elektroniska-dokument-uppdatera-programdata/). Filerna är Intrastat (model).xml, Intrastat (mapping).xml och Intrastat (format).xml.
+Stegen i den här proceduren beskriver hur du utformar ER-konfigurationer (elektronisk rapportering) för att skapa ett elektroniskt dokument. I den här proceduren ska du importera erforderliga ER-konfigurationer som har skapats för exempelföretaget Litware, Inc. och använd dem för att skapa elektroniska dokument. Den här proceduren har skapats för användare med rollen Systemadministratör eller Utvecklare för elektronisk rapportering. Stegen kan utföras med hjälp av datauppsättningen DEMF. Innan du börjar, se till att ladda ner och spara de filer som anges i hjälpavsnittet "Skapa elektroniska dokument och uppdatera data med ER-verktyget" (skapa-elektroniska-dokument-uppdatera-programdata/). Filerna är Intrastat (model).xml, Intrastat (mapping).xml och Intrastat (format).xml.
 
 1. Gå till Organisationsadministration > Arbetsytor > Elektronisk rapportering.
     * Kontrollera att konfigurationsleverantören för exempelföretaget "Litware, Inc." är markerad som aktiv och är tillgänglig. Om du inte ser den här konfigurationsleverantören ska du först slutföra stegen i proceduren Skapa en konfigurationsleverantör och välj den som aktiv.  
@@ -45,11 +45,11 @@ Stegen i den här proceduren beskriver hur du utformar ER-konfigurationer (elekt
 6. Klicka på Designer.
 7. Expandera For outgoing document i trädet.
 8. Expandera For outgoing document\Transactions i trädet.
-    * Granska strukturen i den importerade datamodellen. Observera att rotobjektet "For outgoing document" har definierats för att ange dataflödet för att hämta data från programmet och använda dem som datakälla för att generera Intrastat-rapporten. "Transactions (Record list)" används för att representera en lista över Intrastat-transaktioner som ska rapporteras. Eftersom du ska arkivera rapporterade artikelkoder behövs den unika identifieraren för en enskild artikelkod "Commodity rec id (Int64)" i det här dataflödet.   
+    * Granska strukturen i den importerade datamodellen. Observera att rotobjektet "For outgoing document" har definierats för att ange dataflödet för att hämta data från programmet och använda dem som datakälla för att skapa Intrastat-rapporten. "Transactions (Record list)" används för att representera en lista över Intrastat-transaktioner som ska rapporteras. Eftersom du ska arkivera rapporterade artikelkoder behövs den unika identifieraren för en enskild artikelkod "Commodity rec id (Int64)" i det här dataflödet.   
 9. Stäng sidan.
 10. Klicka på Byt.
 11. Klicka på Läs in från XML-fil.
-    * Importera ER-mappningskonfigurationen som anger dataflödet för att hämta data från programmet som sedan ska användas för att generera Intrastat-rapporten. Senare ska du utvidga den här datamappningsdefinitionen till att hämta data från Intrastat-rapporten och använda den för en uppdatering av programdata för att arkivera information om Intrastat-rapporteringen.   
+    * Importera ER-mappningskonfigurationen som anger dataflödet för att hämta data från programmet som sedan ska användas för att skapa Intrastat-rapporten. Senare ska du utvidga den här datamappningsdefinitionen till att hämta data från Intrastat-rapporten och använda den för en uppdatering av programdata för att arkivera information om Intrastat-rapporteringen.   
     * Klicka på Bläddra och välj filen Intrastat (mapping).xml.  
 12. Klicka på OK.
 13. Expandera Intrastat (model) i trädet.
@@ -73,7 +73,7 @@ Stegen i den här proceduren beskriver hur du utformar ER-konfigurationer (elekt
 27. Välj File\Declaration i trädet.
 28. Klicka på fliken Mappning.
 29. Välj File i trädet.
-    * Granska strukturen i det format som användes för att generera Intrastat-rapporten. Observera att det är till för att generera en XML-fil genom att fylla i data från datamodellen, som baseras på rotobjektet "For outgoing document". Kontrollera att namnet på den genererade filen har definierats i dialogruteformuläret (datakällan "fn" används för det).   
+    * Granska strukturen i det format som användes för att skapa Intrastat-rapporten. Observera att det är till för att skapa en XML-fil genom att fylla i data från datamodellen, som baseras på rotobjektet "For outgoing document". Kontrollera att namnet på den skapade filen har definierats i dialogruteformuläret (datakällan "fn" används för det).   
 30. Stäng sidan.
 
 

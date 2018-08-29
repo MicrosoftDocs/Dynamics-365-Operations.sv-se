@@ -1,6 +1,6 @@
 ---
-title: "Spåra genererade rapportresultat och jämföra dem med baslinjevärden"
-description: "Det här avsnittet innehåller information om hur du kan jämföra resultaten av genererade ER-rapporter med baslinjerapportvärden."
+title: "Spåra skapade rapportresultat och jämföra dem med baslinjevärden"
+description: "Det här avsnittet innehåller information om hur du kan jämföra resultaten av skapade ER-rapporter med baslinjerapportvärden."
 author: NickSelin
 manager: AnnBe
 ms.date: 05/25/2018
@@ -25,19 +25,19 @@ ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="trace-generated-report-results-and-compare-them-with-baseline-values"></a>Spåra genererade rapportresultat och jämföra dem med baslinjevärden
+# <a name="trace-generated-report-results-and-compare-them-with-baseline-values"></a>Spåra skapade rapportresultat och jämföra dem med baslinjevärden
 
 [!include[banner](../includes/banner.md)]
 
-Du kan spåra resultatet av ER-format som genererar utgående elektroniska dokument. När genereringen av spårning är aktiverad (ER-användarparametrar **Kör i felsökningsläge**), genereras en ny spårningspost i körningslogg för ER-format varje gång en ER-rapport körs. Följande information lagras i respektive spår som genereras:
+Du kan spåra resultatet av ER-format som skapar utgående elektroniska dokument. När genereringen av spårning är aktiverad (ER-användarparametrar **Kör i felsökningsläge**), skapas en ny spårningspost i körningslogg för ER-format varje gång en ER-rapport körs. Följande information lagras i respektive spår som skapas:
 
-- Alla varningar som genererades av valideringsregler
-- Alla fel som genererades av valideringsregler
-- Alla genererade filer som lagras som bilagor till spårningsposten
+- Alla varningar som skapades av valideringsregler
+- Alla fel som skapades av valideringsregler
+- Alla skapade filer som lagras som bilagor till spårningsposten
 
-Du kan lagra enskilda baslinjeprogramfiler för alla ER-format. Filer betraktas som baslinjefiler när de beskriver de förväntade resultaten av rapporterna som körs. Om det finns en baslinjefil för ett ER-format som kördes när spårgenereringen aktiverades, kommer spårningen, utöver informationen som nämndes tidigare, att lagra resultatet av jämförelsen av det genererade elektroniska dokumentet tillbaslinjefilen. Med ett klick kan du också få det genererade elektroniska dokumentet och dess baslinjefil i en enda zip-fil. Sedan kan du göra detaljerad jämförelse med hjälp av ett externt verktyg såsom Windiff.exe.
+Du kan lagra enskilda baslinjeprogramfiler för alla ER-format. Filer betraktas som baslinjefiler när de beskriver de förväntade resultaten av rapporterna som körs. Om det finns en baslinjefil för ett ER-format som kördes när spårgenereringen aktiverades, kommer spårningen, utöver informationen som nämndes tidigare, att lagra resultatet av jämförelsen av det skapade elektroniska dokumentet tillbaslinjefilen. Med ett klick kan du också få det skapade elektroniska dokumentet och dess baslinjefil i en enda zip-fil. Sedan kan du göra detaljerad jämförelse med hjälp av ett externt verktyg såsom Windiff.exe.
 
 Du kan utvärdera spårningen för att analysera om elektroniska dokument som skapas innehåller förväntade innehåll. Du kan göra en sådan utvärdering i ett acceptanstestet för användare (UAT) – när kodbasen har ändrats (till exempel när du migrerar till en ny instans av programmet, installerar snabbkorrigeringspaket eller distribuerar kodändringar). På så sätt kan se du till att utvärderingen inte påverkar genomförandet av ER-rapporter som används. Utvärderingen för många ER rapporter kan göras i obevakat läge.
 
-Om du vill veta mer om den här funktionen kan du spela upp ER-uppgiftsguiderna **ER Generera rapporter och jämföra resultat (del 1)** och **ER Generera rapporter och jämföra resultat (del 2)** som ingår i affärsprocessen **7.5.4.3 Testa IT-lösningar och tjänster (10679)** och kan hämtas från [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=874684). Dessa uppgiftsguider går igenom processen att konfigurera ER-ramverket för att använda basfiler till att utvärdera genererade elektroniska dokument.
+Om du vill veta mer om den här funktionen kan du spela upp ER-uppgiftsguiderna **ER Skapa rapporter och jämföra resultat (del 1)** och **ER Skapa rapporter och jämföra resultat (del 2)** som ingår i affärsprocessen **7.5.4.3 Testa IT-lösningar och tjänster (10679)** och kan hämtas från [Microsoft Download Center](https://go.microsoft.com/fwlink/?linkid=874684). Dessa uppgiftsguider går igenom processen att konfigurera ER-ramverket för att använda basfiler till att utvärdera skapade elektroniska dokument.
 

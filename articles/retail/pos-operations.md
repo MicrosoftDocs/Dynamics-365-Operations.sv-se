@@ -1,5 +1,5 @@
 ---
-title: POS-operationer, online och offline
+title: "Verksamhet för online- och offlinekassor (POS)"
 description: "Det här avsnittet innehåller information om kassaoperation i Microsoft Dynamics 365 for Retail. Det anger var i programmet somoperationerna kan anropas och om de är tillgängliga i offlineläge."
 author: jblucher
 manager: AnnBe
@@ -19,14 +19,14 @@ ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 8a24f8adc4f7886a1f942d83f7a4eb12e7034fcd
-ms.openlocfilehash: d8cf283321b81c377498cd449b098f8fac1fe01f
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 58653d6e991f1896673a07e3057bd516c74edd76
 ms.contentlocale: sv-se
-ms.lasthandoff: 03/22/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="pos-operations-online-and-offline"></a>POS-operationer, online och offline
+# <a name="online-and-offline-point-of-sale-pos-operations"></a>Verksamhet för online- och offlinekassor (POS)
 
 [!include [banner](includes/banner.md)]
 
@@ -111,10 +111,10 @@ Obs! Åtgärderna i listan nedan gäller den senaste versionen av Dynamics 365 f
 | 914 | Minimera kassafönstret | Den här operationen stöds inte. | Inte tillämpligt | Inte tillämpligt | Inte tillämpligt | Inte tillämpligt | Nr |
 | 1000 | Öppna kassalåda | Utför en "ingen försäljning"-operation och öppna den valda kassalådan. | Ja | Ja | Ja | Ja | Nr |
 | 928 | Orderuppfyllelse | Den här åtgärden låter användare plocka, packa, skicka eller återkalla order för hämtade i butik. | Ja | Ja | Ja | Nr | Nr |
-| 129 | Åsidosätt radproduktskatt | Åsidosätt momsen på den valda radartikeln och använd en annan angiven moms. | Ja | Ja | Nr | Ja | Nr |
-| 130 | Åsidosätt radproduktskatt från lista | Åsidosätt momsen på den valda radartikeln och använd en moms som användaren väljer i en lista. | Ja | Ja | Nr | Ja | Nr |
-| 127 | Åsidosätt transaktionsskatt | Åsidosätt momsen på en transaktion med en annan angiven moms. | Ja | Ja | Nr | Ja | Nr |
-| 128 | Åsidosätt transaktionsskatt från lista | Åsidosätt momsen på en transaktion med en moms som användaren väljer i en lista. | Ja | Ja | Nr | Ja | Nr |
+| 129 | Åsidosätt radproduktskatt | Åsidosätt momsen på den valda radartikeln och använd en annan angiven skatt. | Ja | Ja | Nr | Ja | Nr |
+| 130 | Åsidosätt radproduktskatt från lista | Åsidosätt momsen på den valda radartikeln och använd en skatt som användaren väljer i en lista. | Ja | Ja | Nr | Ja | Nr |
+| 127 | Åsidosätt transaktionsskatt | Åsidosätt momsen på en transaktion med en annan angiven skatt. | Ja | Ja | Nr | Ja | Nr |
+| 128 | Åsidosätt transaktionsskatt från lista | Åsidosätt momsen på en transaktion med en skatt som användaren väljer i en lista. | Ja | Ja | Nr | Ja | Nr |
 | 131 | Följesedel | Skapa en följesedel för den valda försäljningsordern. | Nr | Nr | Nr | Nr | Nr |
 | 710 | Parkoppla maskinvarustation | Den här operationen stöds inte. | Inte tillämpligt | Inte tillämpligt | Inte tillämpligt | Inte tillämpligt | Nr |
 | 201 | Kortbetalning | Acceptera ett kort såsom ett kreditkort eller betalkort som betalning. | Ja | Ja | Nr | Ja | Nr |

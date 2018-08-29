@@ -1,5 +1,5 @@
 ---
-title: "Onlinebutiksöversikt"
+title: Skapa onlinebutiker
 description: "Den här artikeln innehåller information om onlinebutiker för detaljhandel och hur du ställer in dem i Microsoft Dynamics 365 for Retail."
 author: kfend
 manager: AnnBe
@@ -20,14 +20,14 @@ ms.author: meeram
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 3814e5a4a88f439c89981f191e8896afb2ced68b
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: 640f134dff19b60c2b14259f8a6c838e44c8926e
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="online-store-overview"></a>Översikt över onlinebutik
+# <a name="set-up-online-stores"></a>Skapa onlinebutiker
 
 [!include [banner](includes/banner.md)]
 
@@ -45,9 +45,9 @@ Om du vill ställa in en onlinebutik måste du göra följande.
 5.  Ställa in leveranssätt som är tillgängliga i onlinebutiken.
 6.  Tilldela de betalningsmetoder som har godkänts för onlinebutiken.
 7.  Om du tillåter shoppare att beställa produkter online och sedan plocka upp dem i en lokal butik, tilldela butikslokaliserargrupper till onlinebutiken.
-8.  Tilldela attribut för kanaler, produkter och försäljningsorder till onlinebutiken. Kanalattribut gäller för hela onlinebutiken, produktattribut gäller för de produkter som erbjuds i onlinebutiken och försäljningsorderattribut gäller för försäljningsorder som genereras från onlinebutiken.
+8.  Tilldela attribut för kanaler, produkter och försäljningsorder till onlinebutiken. Kanalattribut gäller för hela onlinebutiken, produktattribut gäller för de produkter som erbjuds i onlinebutiken och försäljningsorderattribut gäller för försäljningsorder som skapas från onlinebutiken.
 9.  Mappa attribut när du vill definiera de egenskaper som bestämmer hur dessa attributen uppför sig i onlinekanalen. Du kan till exempel definiera attribut som ska vara obligatoriska eller sökbara.
-10. Publicera onlinebutiken för att generera butikstrukturen på ditt val av tredje parts onlinebutik. **Viktigt:** Innan du publicerar onlinebutiken måste du ställa in en distributionsplats för onlinebutiken.
+10. Publicera onlinebutiken för att skapa butikstrukturen på ditt val av tredje parts onlinebutik. **Viktigt:** Innan du publicerar onlinebutiken måste du ställa in en distributionsplats för onlinebutiken.
 
 ## <a name="retail-channel-navigation-hierarchies"></a>Navigeringshierarkier för butikskanal
 Innan du kan skapa en onlinebutik måste du skapa en navigeringshierarki för butikskanal som du vill använda för den. Navigeringshierarkin för butikskanaler representerar kategorihierarkin som visas i onlinebutiken efter att den har publicerats. När du publicerar butiksproduktkataloger för onlinebutiken kommer produkter i katalogen att mappas till kategorier i navigeringshierarkin för butikskanalen. Shoppare kan sedan använda hierarkin när de navigerar i onlinebutiken.

@@ -17,14 +17,14 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: abc52192848649672cbcb8c770d74ba2aef139be
-ms.openlocfilehash: 4ded4aee8f7cb15960bcecd30ec30b812b086d92
+ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
+ms.openlocfilehash: fdf139fc5b4227c91f6430fad8752b9fc3027119
 ms.contentlocale: sv-se
-ms.lasthandoff: 02/15/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="welcome-to-human-resources"></a>Välkommen till personal
+# <a name="human-resources"></a>Personal
 
 [!include [banner](../includes/banner.md)]
 
@@ -36,7 +36,7 @@ Personal går att använda till att slutföra följande uppgifter:
 > + Underhålla omfattande information om arbetare från anställningsdag till pension.
 > + Definiera och administrera förmånsplaner, anmäla arbetare, tilldela medförsäkringsskydd och ange förmånsmottagare.
 > + Upprätta och övervaka frånvaropolicyer.
-> + Genomföra och spåra profilbaserad tidshantering och generera lömeinformation för export till ett lönesystem.
+> + Genomföra och spåra profilbaserad tidshantering och skapa lömeinformation för export till ett lönesystem.
 > + Hantera arbetarnas kompetenser.
 > + Granska prestanda och implementera mål för arbetare.
 > + Ställa in, leverera och analysera kurser som innehåller agendor, sessioner och spårningar.

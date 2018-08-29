@@ -1,5 +1,5 @@
 ---
-title: "Batchkörning för notifieringar"
+title: Batchbearbetning av notifieringar
 description: "Det här avsnittet innehåller information om batchbearbetning av notifieringar i Microsoft Dynamics 365 for Finance and Operations."
 author: tjvass
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.author: tjvass
 ms.search.validFrom: 2018-3-30
 ms.dyn365.ops.version: Platform update 15
 ms.translationtype: HT
-ms.sourcegitcommit: 454368ab5a467002ebf973db97fd98e31885dfe0
-ms.openlocfilehash: f4c874c148dc10ac658f659896009981962a5802
+ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
+ms.openlocfilehash: 74db212b2086bd7c94825d8a52d9a8b86ea7b739
 ms.contentlocale: sv-se
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="batch-processing-for-alerts"></a>Batchbearbetning för notifieringar
+# <a name="batch-processing-of-alerts"></a>Batchbearbetning av notifieringar
 [!include [banner](../includes/banner.md)]
 
 Notifieringar bearbetas med funktionen för batchbearbetning i Microsoft Dynamics 365 for Finance and Operations. Du måste ställa in batchbearbetning innan notifieringar ska kunna skickas.
@@ -36,7 +36,7 @@ Finance and Operations stöder två typer av händelser:
 Du kan ställa in batchprocesser för varje typ av händelser.
         
 ## <a name="batch-processing-for-change-based-events"></a>Batchbearbetning för ändringsbaserade händelser
-Finance and Operations läser alla ändringsbaserade händelser som har inträffat sedan batchbearbetningen senast kördes. Ändringsbaserade händelser innefattar uppdateringar av fält, borttagning av poster och skapande av poster. Händelserna jämförs med de villkor som har ställts in i notifieringsreglerna. Batchprocessen genererar en notifiering när en händelse matchar regelvillkoren.
+Finance and Operations läser alla ändringsbaserade händelser som har inträffat sedan batchbearbetningen senast kördes. Ändringsbaserade händelser innefattar uppdateringar av fält, borttagning av poster och skapande av poster. Händelserna jämförs med de villkor som har ställts in i notifieringsreglerna. Batchprocessen skapar en notifiering när en händelse matchar regelvillkoren.
 
 ### <a name="frequency-for-change-based-events"></a>Frekvens för ändringsbaserade händelser
 För ändringsbaserade händelser kan du ställa in ett batchjobb som utlöser beabetningen av en händelse en kort tid efter det att händelsen loggats av systemet. Om du ställer in batchjobbet till att återkomma oftare får användare notifieringarna tidigare efter utförda ändringar. En hög frekvens för batchbearbetning kan påverka systemets prestanda allvarligt.
@@ -48,22 +48,22 @@ När du ställer in frekvensen för av batchbearbetning för ändringsbaserade h
 #### <a name="the-risks-of-low-batch-frequency"></a>Riskerna med låg batchfrekvens
 Om du ställer in en låg frekvens för batchbearbetning för ändringsbaserade händelser kan data som är relevanta för villkoren i notifieringsreglerna ändras innan batchen behandlas. Därför kanske du förlorar notifieringar.
 
-En notifieringsregel ställs till exempel in på att utlösa en notifiering när händelsen **kundkontakten ändras** och villkoret är **kund = BB**. Med andra ord, om kundkontakten för kund BB ändras kommer händelsen att loggas. Emellertid ställs batchbearbetningssystemet in så att batchbearbetning uppstår mer sällan än datainmatning. Om kundens namn ändras från **BB** till **AA** innan händelsen bearbetas kommer data i databasen inte längre att matcha data i regeln **kund = BB**. Därför när händelsen slutligen bearbetas genereras ingen notifiering.
+En notifieringsregel ställs till exempel in på att utlösa en notifiering när händelsen **kundkontakten ändras** och villkoret är **kund = BB**. Med andra ord, om kundkontakten för kund BB ändras kommer händelsen att loggas. Emellertid ställs batchbearbetningssystemet in så att batchbearbetning uppstår mer sällan än datainmatning. Om kundens namn ändras från **BB** till **AA** innan händelsen bearbetas kommer data i databasen inte längre att matcha data i regeln **kund = BB**. Därför när händelsen slutligen bearbetas skapas ingen notifiering.
 
 ### <a name="set-up-processing-for-change-based-alerts"></a>Ställa in bearbetning för ändringsbaserade notifieringar
 1. Gå till **Systemadministration**&gt;**Periodiska uppgifter**&gt;**Notifieringar**&gt;**Ändringsbaserade notifieringar**.
 2. I dialogrutan **Ändringsbaserade notifieringar**, ange lämplig information.
 
 ## <a name="batch-processing-for-due-date-events"></a>Batchbearbetning för händelser med förfallodatum
-Finance and Operations hittar alla händelser som orsakas av förfallodatum och dessa händelser jämförs med de villkor som har ställts in i notifieringsreglerna. Batchprocessen genererar en notifiering när en händelse matchar regelvillkoren.
+Finance and Operations hittar alla händelser som orsakas av förfallodatum och dessa händelser jämförs med de villkor som har ställts in i notifieringsreglerna. Batchprocessen skapar en notifiering när en händelse matchar regelvillkoren.
 
 ### <a name="frequency-for-due-date-events"></a>Frekvens för händelser med förfallodatum
-För händelser med förfallodatum vill du kanske ställa in batchjobb som körs under natten eller vid specifika tidpunkter på dagen för att balansera systembelastningen. Vi rekommenderar att du ställer in batchjobbet så att det körs minst en gång per dag. Om notifieringar ska skickas så tidigt som möjligt, ställer du in batchbearbetningen till att utföras omedelbart efter att systemdatumet ändras. Om du vill generera notifieringar för händelser för förfallodatum som inträffar efter att ett batchjobb har bearbetat notifieringar, kan du köra batchjobbet igen samma dag.
+För händelser med förfallodatum vill du kanske ställa in batchjobb som körs under natten eller vid specifika tidpunkter på dagen för att balansera systembelastningen. Vi rekommenderar att du ställer in batchjobbet så att det körs minst en gång per dag. Om notifieringar ska skickas så tidigt som möjligt, ställer du in batchbearbetningen till att utföras omedelbart efter att systemdatumet ändras. Om du vill skapa notifieringar för händelser för förfallodatum som inträffar efter att ett batchjobb har bearbetat notifieringar, kan du köra batchjobbet igen samma dag.
 
 Till exempel har ett batchjobb körts under en viss dag. Du kan sedan skapa en inköpsorder som har ett förfallodatum som ska utlösa en notifiering samma dag. Om du vill få notifieringen den dagen, måste du köra batchjobbet igen när inköpsordern skapas. Om du inte kör batchjobbet en gång till den dagen, hittar följande dags batchjobb eventuella händelser med förfallodatum som inte bearbetade under föregående dagar.
 
 > [!NOTE]
-> Även när batchprocessen körs mer än en gång per dag, genereras notifieringarna inte två gånger för samma händelse för förfallodatum och villkor. Notifieringar genereras endast för datum som förfallit på grund av ändringar i systemet som efter det att den senaste batchjobbet kördes.
+> Även när batchprocessen körs mer än en gång per dag, skapas notifieringarna inte två gånger för samma händelse för förfallodatum och villkor. Notifieringar skapas endast för datum som förfallit på grund av ändringar i systemet som efter det att den senaste batchjobbet kördes.
 
 ### <a name="batch-processing-window"></a>Batchbearbetningsfönster
 Bearbetningen av notifieringsregler i ett företag kan stoppas av flera skäl. Dessa orsaker omfattar semester, systemfel eller andra problem som förhindrar att batchjobb körs under en viss tid.

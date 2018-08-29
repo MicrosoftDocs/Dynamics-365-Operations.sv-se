@@ -1,5 +1,5 @@
 ---
-title: "Datakällor mellan företag i elektronisk rapportering"
+title: "Företagsövergripande datakällor i elektronisk rapportering (ER)"
 description: "Det här avsnittet beskriver hur du kan använda datakällor mellan företag i elektronisk rapportering (ER)."
 author: NickSelin
 manager: AnnBe
@@ -18,18 +18,18 @@ ms.author: nselin
 ms.search.validFrom: 2018-04-01
 ms.dyn365.ops.version: Release 8.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2fc887668171175d436b9eb281a35c1c9d089591
-ms.openlocfilehash: 7f0f78d15e99397d61c3abace197cf1281d3769f
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 201d0f1e3fddd662748008c7304d67ef6003ef02
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="cross-company-data-sources-in-electronic-reporting"></a>Datakällor mellan företag i elektronisk rapportering
+# <a name="cross-company-data-sources-in-electronic-reporting-er"></a>Företagsövergripande datakällor i elektronisk rapportering (ER)
 
 [!include[banner](../includes/banner.md)]
 
-Du kan utforma elektronisk rapportering (ER)-format som genererar utgående dokument i olika format. När ett dokument skapas anropar ett ER-format datakällor som har konfigurerats i en motsvarande ER-modellmappning. Om du vill konfigurera åtkomst till programregister för att hämta poster kan du använda ER-datakällor av typen **Registerposter**. När åtkomst till registret är ett delat register (det vill säga ett register där data sparas utan företags-ID), returnerar denna datakälla alla poster. När åtkomst till registret är ett företagsberoende register (det vill säga en tabell där data sparas per företag) returnerar denna data enbart de poster som har sparats för det aktuella företaget (det vill säga företagssammanhanget som ER-formatet körs under).
+Du kan utforma elektronisk rapportering (ER)-format som skapar utgående dokument i olika format. När ett dokument skapas anropar ett ER-format datakällor som har konfigurerats i en motsvarande ER-modellmappning. Om du vill konfigurera åtkomst till programregister för att hämta poster kan du använda ER-datakällor av typen **Registerposter**. När åtkomst till registret är ett delat register (det vill säga ett register där data sparas utan företags-ID), returnerar denna datakälla alla poster. När åtkomst till registret är ett företagsberoende register (det vill säga en tabell där data sparas per företag) returnerar denna data enbart de poster som har sparats för det aktuella företaget (det vill säga företagssammanhanget som ER-formatet körs under).
 
 Varje datakälla av typen **Registerposter** i en modellmappning kan nu markeras som ett korsföretags datakälla. Därför kan du använda datakällor av typen **Registerposter** för att få tillgång till data mellan företag i programregistren. 
 

@@ -1,9 +1,9 @@
 ---
-title: "Äldre funktioner"
+title: Borttagna och inaktuella funktioner
 description: "I det här avsnittet beskrivs funktioner som har tagits bort, eller har planerats för borttagning."
 author: sericks007
 manager: AnnBe
-ms.date: 05/09/2018
+ms.date: 08/07/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 65101b5f0030a25973a584b68ec9697506868294
-ms.openlocfilehash: 6b954d1eedb7c7af1c9a5eda92aa1dd6132a19fa
+ms.sourcegitcommit: 884a1372c6ebdcc665a812090d75c158c1fef895
+ms.openlocfilehash: cd620dcdeb1cd5fd3a89be9ae31c4d35e29a03d0
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/30/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
@@ -38,6 +38,9 @@ Den här listan är avsedd att hjälpa dig att ta hänsyn till dessa borttagna o
 
 > [!Note]
 > Från och med  Dynamics 365 for Finance and Operations, juli 2017 med plattformsuppdatering 8 noteras typen av implementeringar för varje borttagen eller inaktuell funktion. Alla de tidigare versioner som beskrivs i det här ämnet använde endast molndistributioner.
+
+> [!Note]
+> Detaljerad information om objekt i Finance and Operations finns i [Tekniska referensrapporter](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Du kan jämföra olika versioner av rapporterna för mer information om objekt som har ändrats eller tagits bort i varje version av Finance and Operations.
 
 ## <a name="dynamics-365-for-finance-and-operations-80-with-platform-update-15"></a>Dynamics 365 for Finance and Operations 8.0. med plattformsuppdatering 15
 Inga funktioner har tagit bort eller ersatts med den här versionen. Plattformsuppdatering 15 är kumulativ och innehåller nya eller ändrade funktioner från plattformsuppdatering 13, plattformsuppdatering 14 och plattformsuppdatering 15.
@@ -230,7 +233,7 @@ BBS Direkte Remittering betalningsformat inkluderar exportinkasso för kundbetal
 |   |  |
 |------------|--------------------|
 | **Orsak till inaktuell/borttagning** | Betalningformaten används inte längre.  |
-| **Ersatt av en annan funktion?**   | Kundbetalningsformatet för AvtaleGiro för Norge kan användas för att generera autogiro-meddelanden. Import av returmeddelande kommer att implementeras i kommande versioner. |
+| **Ersatt av en annan funktion?**   | Kundbetalningsformatet för AvtaleGiro för Norge kan användas för att skapa autogiro-meddelanden. Import av returmeddelande kommer att implementeras i kommande versioner. |
 | **Produktområden som påverkas**         | Leverantörsreskontra, Kundreskontra   |
 | **Status**                         | Inaktuell: Borttagningsdatum har inte ställts in för den här funktionen.                                                                                                 |
 
@@ -390,7 +393,7 @@ Formaten Telehansa och Teleservice används för bankbetalningsexport.
 
 ### <a name="payment-file-archive-for-norway"></a>Betalningsfilarkiv för Norge
 
-När betalningsfiler genereras arkiverar filarkivet automatiskt alla filer som skapas, även filer som tidigare skrevs eller lästes.
+När betalningsfiler skapas arkiverar filarkivet automatiskt alla filer som skapas, även filer som tidigare skrevs eller lästes.
 
 |   |  |
 |------------|--------------------|
@@ -585,7 +588,7 @@ Specifik betalningsmetod för brasilianska företag
 
 ### <a name="brazilian-sintegra-statement"></a>Brazilian Sintegra-utdrag
 
-Federala skatteutdrag för ICMS-moms
+Federala skatteutdrag för ICMS-skatt
 
 |   |  |
 |------------|--------------------|
@@ -596,7 +599,7 @@ Federala skatteutdrag för ICMS-moms
 
 ### <a name="brazilian-scan-contingency-mode-for-nf-e"></a>Brasiliansk SCAN eventualitetläge för NF-e
 
-(SCAN) eventualitetmiljön används för att generera, exportera och importera status för Nota Fiscal eletrônica (NF-e) när miljön för Secretaria da Fazenda (SEFAZ) inte är tillgänglig.
+(SCAN) eventualitetmiljön används för att skapa, exportera och importera status för Nota Fiscal eletrônica (NF-e) när miljön för Secretaria da Fazenda (SEFAZ) inte är tillgänglig.
 
 |   |  |
 |------------|--------------------|
@@ -802,14 +805,14 @@ Den här funktionen ger eXtensible Business Reporting Language (XBRL)-utdata som
 | **Produktområden som påverkas**         | Alla moduler     |
 | **Status**                         | Borttagen från och med Dynamics AX 7.0.       |
 
-### <a name="generate-prenotes-by-using-a-batch"></a>Generera förauktoriseringar genom att använda en batch
+### <a name="generate-prenotes-by-using-a-batch"></a>Skapa förauktoriseringar genom att använda en batch
 
 Genereringen av förauktoriseringar kan inte utföras med hjälp av en batch men kan fortfarande utföras av en användare.
 
 |   |  |
 |------------|--------------------|
-| **Orsak till inaktuell/borttagning** | Inget formulär finns för att bevara och visa den resulterande filen med förauktoriseringar när den genererats med hjälp av en batch. |
-| **Ersatt av en annan funktion?**   | Förauktoriseringar kan fortfarande genereras och användaren har kontroll över var filen sparas.   |
+| **Orsak till inaktuell/borttagning** | Inget formulär finns för att bevara och visa den resulterande filen med förauktoriseringar när den skapats med hjälp av en batch. |
+| **Ersatt av en annan funktion?**   | Förauktoriseringar kan fortfarande skapas och användaren har kontroll över var filen sparas.   |
 | **Produktområden som påverkas**         | Leverantörsreskontra, Kundreskontra och Kassa- och bankhantering  |
 | **Status**                         | Borttagen från och med AX 7.0.    |
 
@@ -902,9 +905,9 @@ Den här funktionen möjliggjorde genereringen av mexikanska e-fakturor med hjä
 | **Produktområden som påverkas**         | Kundfordringar, Projekt   |
 | **Status**                         | Inaktuell: Borttagningsdatum har inte ställts in för den här funktionen. |
 
-### <a name="mexico-realized-and-unrealized-vat"></a>Realiserad och orealiserad moms för Mexiko
+### <a name="mexico-realized-and-unrealized-vat"></a>Realiserad och orealiserad skatt för Mexiko
 
-Microsoft Dynamics AX 2012 hanterade orealiserad mervärdesskatt (VAT) genom att använda funktioner specifika för Mexiko för ”orealiserad moms”.
+Microsoft Dynamics AX 2012 hanterade orealiserad mervärdesskatt (VAT) genom att använda funktioner specifika för Mexiko för ”orealiserad skatt”.
 
 |   |  |
 |------------|--------------------|
@@ -976,7 +979,7 @@ I Dynamics AX 2012 R3 kan Retail Server med hjälp av HTTP-kommunikation (icke-s
 | **Produktområden som påverkas**         | Alla moduler    |
 | **Status**                         | Borttagen från och med Dynamics AX 7.0.   |
 
-### <a name="sales-tax-jurisdictions"></a>Skattemyndigheter
+### <a name="sales-tax-jurisdictions"></a>Momsmyndigheter
 
 |   |  |
 |------------|--------------------|

@@ -1,5 +1,5 @@
 ---
-title: "Visa sidor sida vid sida med ikonen Öppna i nytt fönster"
+title: "Visa sidor sida vid sida med hjälp av funktionen Öppna i nytt fönster"
 description: "Denna artikel förklarar hur du visar sidor sida vid sida i Microsoft Dynamics 365 for Finance and Operations."
 author: aneesmsft
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: aneesa
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 4a575665a2b893745a2f2044cd97177917ee1a33
+ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
+ms.openlocfilehash: 8e3ef29618f11b0f247999e3a24e54bff44bf51a
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="display-pages-side-by-side-using-the-open-in-new-window-icon"></a>Visa sidor sida vid sida med ikonen Öppna i nytt fönster
+# <a name="show-pages-side-by-side-by-using-the-open-in-new-window-feature"></a>Visa sidor sida vid sida med hjälp av funktionen Öppna i nytt fönster
 
 [!include [banner](../includes/banner.md)]
 

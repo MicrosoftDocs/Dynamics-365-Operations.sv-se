@@ -1,5 +1,5 @@
 ---
-title: "Distribuera och slutföra en enkät"
+title: "Schemalägg och skicka ut enkäter"
 description: "Den här artikeln beskriver hur du fördelar de enkäter som du utformar så att de blir tillgängliga för den person eller grupp som ska fylla i dem."
 author: kherr75
 manager: AnnBe
@@ -19,14 +19,14 @@ ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 61aebf9190bd7f76a8d4d3e80c06adae1d27f7a3
+ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
+ms.openlocfilehash: eafcb047117eab73fddbd93c4c1d0aafb0023ebd
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="distribute-and-complete-a-questionnaire"></a>Distribuera och slutföra en enkät
+# <a name="distribute-and-schedule-questionnaires"></a>Schemalägg och skicka ut enkäter
 
 [!include [banner](includes/banner.md)]
 
@@ -90,9 +90,9 @@ Om du till exempel väljer tabellen Kurser kan du bestämma vilken specifik kurs
 
 ### <a name="questionnaire-schedules"></a>Tidsplaner för enkäter
 
-Du kan använda enkättidsplaner för att generera flera planerade svarsomgångar för ett antal användare, baserat på en referenstyp. Skapa ett schema på sidan **Enkättidsplaner**. Välj planeringstyp för att kategorisera schemat, och välj även den referenstyp som ska användas för att ställa frågor i systemet för enskilda användare. Om du anger referenstypen som tabellen Kurser, kan du exempelvis välja en viss kurs i fältet **Referens**. 
+Du kan använda enkättidsplaner för att skapa flera planerade svarsomgångar för ett antal användare, baserat på en referenstyp. Skapa ett schema på sidan **Enkättidsplaner**. Välj planeringstyp för att kategorisera schemat, och välj även den referenstyp som ska användas för att ställa frågor i systemet för enskilda användare. Om du anger referenstypen som tabellen Kurser, kan du exempelvis välja en viss kurs i fältet **Referens**. 
 
-Klicka på **Inställningsdetaljer** om du vill välja enkäten och andra kriterier. Ange exempelvis namnet på läraren som ett kriterium om enkäten utgör en utvärdering av instruktören. När du är klar med att ange inställningsinformationen, genererar systemet planerade svarsomgångar för de användare som deltar i enkäten. 
+Klicka på **Inställningsdetaljer** om du vill välja enkäten och andra kriterier. Ange exempelvis namnet på läraren som ett kriterium om enkäten utgör en utvärdering av instruktören. När du är klar med att ange inställningsinformationen, skapar systemet planerade svarsomgångar för de användare som deltar i enkäten. 
 
 Klicka på **Planerade svarsomgångar** om du vill visa svarsomgången för tidsplanen. Därefter kan du manuellt skapa ytterligare planerade svarsomgångar eller ta bort planerade svarsomgångar som inte har besvarats. 
 
@@ -107,7 +107,7 @@ Om du använder en planerad svarsomgång måste du meddela personen direkt, till
 
 ### <a name="notifying-respondents-about-a-scheduling"></a>Meddela svarande om en planering
 
-Använd sidan **Tidsplaner för enkäter** för att förbereda och skicka ett e-postmeddelande till alla svarande som är kopplade till enkäten. Ange e-posttexten på fliken **E-postadress för självbetjäning för medarbetare**. När schemat har startats klickar du på **Funktioner** &gt; **Skicka e-post** för att generera och skicka mailet till mottagarna. De svarande kan sedan logga in på webbplatsen och fylla i enkäten. 
+Använd sidan **Tidsplaner för enkäter** för att förbereda och skicka ett e-postmeddelande till alla svarande som är kopplade till enkäten. Ange e-posttexten på fliken **E-postadress för självbetjäning för medarbetare**. När schemat har startats klickar du på **Funktioner** &gt; **Skicka e-post** för att skapa och skicka mailet till mottagarna. De svarande kan sedan logga in på webbplatsen och fylla i enkäten. 
 
 > **Anm.:** Innan du kan använda e-postfunktionen måste din IT-administratör ange e-postinställningarna på sidan **E-postparametrar**.
 

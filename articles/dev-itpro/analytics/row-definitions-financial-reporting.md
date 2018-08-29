@@ -22,7 +22,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
 ms.openlocfilehash: ea1386bc06c0e91a2d1f23dd05794ca6ff99106a
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
@@ -47,7 +47,7 @@ En raddefinition är en rapportkomponent eller byggblock som anger innehållet p
 En raddefinition kan innehålla upp till 20 000 rader för ekonomiska dimensioner och kan innehålla följande information:
 
 -   Beskrivande text som tillför något till rapporten genom att skapa avsnittsrubriker, rader och mellanslag såsom **Kontant** eller **Total intäkt**
--   Länkar till ekonomiska data, vilket kan inkludera dimensionsvärden i Microsoft Dynamics 365 for Finance and Operations **Obs!** Du kan ställa in en raddefinition för att hämta data från systemet för ekonomiska dimensioner varje gång rapporten genereras.
+-   Länkar till ekonomiska data, vilket kan inkludera dimensionsvärden i Microsoft Dynamics 365 for Finance and Operations **Obs!** Du kan ställa in en raddefinition för att hämta data från systemet för ekonomiska dimensioner varje gång rapporten skapas.
 -   Radsummor och formler som baseras på kopplade ekonomiska data.
 
 Vanligtvis innehåller alla raddefinition innehåller en av följande typer av information:

@@ -1,5 +1,5 @@
 --- 
-title: Skapa ett batchjobb
+title: Skapa batchjobb
 description: "Ett batchjobb är en grupp med uppgifter som skickas till en AOS-instans (Application Object Server) för automatisk bearbetning."
 author: maertenm
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: maertenm
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 31c8e2ba87ef8c17a3147e1159104585258d4164
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: b32c16a0c0045e22128746f81c6e9fd03370ac1f
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="create-a-batch-job"></a>Skapa ett batchjobb
+# <a name="create-batch-jobs"></a>Skapa batchjobb
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

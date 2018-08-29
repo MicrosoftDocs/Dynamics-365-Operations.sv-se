@@ -1,5 +1,5 @@
 ---
-title: Generera Affordable Care Act-rapporter
+title: Generera Affordable Care Act (ACA)-rapporter
 description: "Funktioner finns på plats med syfte att bistå arbetsgivare som måste spåra information som rapporterats i formulären 1095-B och 1095-C gällande delen för arbetsgivarmandat i Affordable Care Act (hälsovårdslagen, eller \"Obama-Care\"). Notera att denna funktion endast är aktiverad för juridiska personer i USA."
 author: kherr75
 manager: AnnBe
@@ -18,13 +18,13 @@ ms.author: kherr
 ms.search.validFrom: 2017-07-01
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 72d4ff5e1311005d3bf43a13e28208cd9b3d1457
-ms.openlocfilehash: 1994edc5d6c932be3a285f9bb328a05504c90f07
+ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
+ms.openlocfilehash: 25d2b8326bba69ac627f3fa7e05a6c850bd04c91
 ms.contentlocale: sv-se
-ms.lasthandoff: 03/08/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="generate-affordable-care-act-reports"></a>Generera Affordable Care Act-rapporter
+# <a name="generate-affordable-care-act-aca-reports"></a>Generera Affordable Care Act (ACA)-rapporter
 
 [!include [banner](includes/banner.md)]
 
@@ -51,10 +51,10 @@ Om medarbetare har valt att låta någon beroende saka omfattas av en förmån s
 
 På sidan **Datumhanterare för beroendetäckning** anger du de datum då beroenden omfattades av förmånen. Om du anger datum på den här sidan kommer kryssrutan **Täckning** automatiskt att markeras på sidan **Bibehåll förmåner**.
 
-## <a name="generate-1095b-and-1095c-forms"></a>Generera 1095B- och 1095C-formulär
-Du kan också generera 109-B- och 1095-C-formulär i själva produkten och distribuera dessa till var och en av dina medarbetare. Elektroniskt genererade 1095-C- och motsvarande 1094-C-överföringsfiler som kan användas för att skicka till IRS kan också genereras från systemet.  
+## <a name="generate-1095b-and-1095c-forms"></a>Skapa 1095B- och 1095C-formulär
+Du kan också skapa 109-B- och 1095-C-formulär i själva produkten och distribuera dessa till var och en av dina medarbetare. Elektroniskt skapade 1095-C- och motsvarande 1094-C-överföringsfiler som kan användas för att skicka till IRS kan också skapas från systemet.  
 
-När formuläret 1095-C genereras, ange då i lämplig kalender eller lämpligt beskattningsår om du vill skriva ut formuläret med två eller tre sidor. Det tresidiga formuläret behövs bara om arbetsgivaren tillhandahöll självförsäkrad täckning och en medarbetare har fler än sex omfattade beroenden, inklusive sig själva. När du genererar tvåsidorsformuläret kommer systemet automatiskt att identifiera om en medarbetare har mer än 6 täckta beroenden, och inkluderar inte denna anställde vid generering av formuläret. Systemet kommer dessutom endast att omfatta de medarbetare som har fler än sex dolda beroenden när det genererar det tresidiga formuläret.
+När formuläret 1095-C skapas, ange då i lämplig kalender eller lämpligt beskattningsår om du vill skriva ut formuläret med två eller tre sidor. Det tresidiga formuläret behövs bara om arbetsgivaren tillhandahöll självförsäkrad täckning och en medarbetare har fler än sex omfattade beroenden, inklusive sig själva. När du skapar tvåsidorsformuläret kommer systemet automatiskt att identifiera om en medarbetare har mer än 6 täckta beroenden, och inkluderar inte denna anställde vid generering av formuläret. Systemet kommer dessutom endast att omfatta de medarbetare som har fler än sex dolda beroenden när det skapar det tresidiga formuläret.
 
 ## <a name="viewing-information"></a>Visa information
 Du kan använda sidan **Affordable Care-täckning för arbetstagare** om du vill se vilka medarbetare som har tilldelats respektive försäkringsskyddsgrupp, vilka medarbetare som inte behöver ingå i en rapport, samt vilka medarbetare som inte har tilldelats.

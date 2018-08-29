@@ -1,5 +1,5 @@
 ---
-title: "Få support för Finance and Operations och Dynamics Lifecycle Services"
+title: "Få hjälp med Finance and Operations eller Lifecycle Services (LCS)"
 description: "I den här artikeln beskrivs hur du kan få hjälp med Microsoft Dynamics 365 for Finance and Operations eller Microsoft Dynamics Lifecycle Services (LCS)."
 author: kfend
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: a078631d1661d7d61156b9d85c18172abd79827d
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 716c747957471ce2c4c919196b4fc2f9061ce6b6
 ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="find-support-for-microsoft-dynamics-365-for-finance-and-operations-and-dynamics-lifecycle-services"></a>Få support för Microsoft Dynamics 365 for Finance and Operations och Dynamics Lifecycle Services
+# <a name="get-support-for-finance-and-operations-or-lifecycle-services-lcs"></a>Få hjälp med Finance and Operations eller Lifecycle Services (LCS)
 
 [!include [banner](../includes/banner.md)]
 

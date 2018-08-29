@@ -1,5 +1,5 @@
 --- 
-title: "Hantera modellmappningskonfigurationer för elektronisk rapportering (ER)"
+title: Hantera ER-modellmappning i separata ER-konfigurationer
 description: "I följande steg förklaras hur en användare som är tilldelad rollen som systemadministratör eller utvecklare för elektronisk rapportering kan hantera ER-modellmappningar (elektronisk rapportering) i separata ER-konfigurationer."
 author: NickSelin
 manager: AnnBe
@@ -16,19 +16,19 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 35fdc1e98897d449ce18fe38cc6b7896ca5c5278
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 24ca4124d190df94e7ca9ac31c2ea757fe9ff242
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="manage-model-mapping-configurations-for-electronic-reporting-er"></a>Hantera modellmappningskonfigurationer för elektronisk rapportering (ER)
+# <a name="manage-er-model-mapping-in-separate-er-configurations"></a>Hantera ER-modellmappning i separata ER-konfigurationer
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
 I följande steg förklaras hur en användare som är tilldelad rollen som systemadministratör eller utvecklare för elektronisk rapportering kan hantera ER-modellmappningar (elektronisk rapportering) i separata ER-konfigurationer. I den här uppgiftsguide skapar du de ER-konfigurationer som krävs för exempelföretaget Litware, Inc. För att slutföra uppgiftsguiden måste du först slutföra stegen i uppgiftsguiden ”ER skapa en konfigurationsleverantör” och markera den som aktiv. 
 
-Eftersom ER-konfigurationer delas mellan företag kan du genomföra den här uppgiftsguiden med valfri företagsdatauppsättning. Funktionerna för den här uppgiften är tillgängliga om du har installerat någon av följande snabbkorrigeringar: https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012872 för Dynamics AX 7.0 eller https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871 för Dynamics 365 for Operations-versionen.
+Eftersom ER-konfigurationer delas mellan företag kan du genomföra den här uppgiftsguiden med valfri företagsdatauppsättning. Funktionen för den här uppgiften är tillgänglig om du har installerat någon av följande snabbkorrigeringar: https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012872 för Dynamics AX 7.0-versionen eller https://fix.lcs.dynamics.com/Issue/Resolved?kb=4012871 för Dynamics 365 for Operations-versionen.
 
 1. Gå till Organisationsadministration > Arbetsytor > Elektronisk rapportering.
     * Kontrollera att konfigurationsleverantören för provföretaget "Litware, Inc." är markerad som aktiv och tillgänglig. Om du inte ser den här konfigurationsleverantören måste du först slutföra stegen i uppgiftsguiden Skapa en konfigurationsleverantör och välj den som aktiv.   
@@ -96,7 +96,7 @@ Eftersom ER-konfigurationer delas mellan företag kan du genomföra den här upp
 2. Klicka på Skapa konfiguration om du vill öppna dialogrutan.
 3. Skriv "Format based on data model Sample data model" i fältet Ny.
 4. Skriv "Sample format" i namnfältet.
-    * Exempelformat  
+    * provformat  
 5. Klicka på Skapa konfiguration.
 6. Klicka på Designer.
 7. Klicka på Lägg till rot för att öppna dialogrutan.
@@ -160,6 +160,6 @@ Eftersom ER-konfigurationer delas mellan företag kan du genomföra den här upp
 5. Välj Sample data model\Sample format i trädet.
 6. Klicka på Kör.
 7. Klicka på OK.
-    * Observera att standardmodellmappningskonfigurationen används i den här formatkonfigurationen för att generera det elektroniska dokumentet (de utdata som skapas innehåller företagskoden).  
+    * Observera att standardmodellmappningskonfigurationen används i den här formatkonfigurationen för att skapa det elektroniska dokumentet (de utdata som skapas innehåller företagskoden).  
 
 

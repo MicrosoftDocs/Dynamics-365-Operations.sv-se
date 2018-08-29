@@ -1,6 +1,6 @@
 --- 
-title: "Kör formatet för att utföra inventering och summering"
-description: "I följande steg beskrivs hur en användare som tilldelats en roll som systemadministratör eller utvecklare för elektronisk rapportering kan konfigurera ett format för elektronisk rapportering (ER) att utföra inventering och summering baserat på data tillhörande redan genererad textutmatning."
+title: "Kör format för elektronisk rapportering (ER) för att utföra inventering och summering"
+description: "I följande steg beskrivs hur en användare som tilldelats en roll som systemadministratör eller utvecklare för elektronisk rapportering kan konfigurera ett format för elektronisk rapportering (ER) att utföra inventering och summering baserat på data tillhörande redan skapad textutmatning."
 author: NickSelin
 manager: AnnBe
 ms.date: 10/28/2016
@@ -16,24 +16,24 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: e3569e48bcc063b2423a60038732e8e53dbea2cb
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: c6d309416a3a0c4da07a76c90246f492585deef5
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="run-the-format-to-do-counting-and-summing"></a>Kör formatet för att utföra inventering och summering
+# <a name="run-electronic-reporting-er-formats-to-do-counting-and-summing"></a>Kör format för elektronisk rapportering (ER) för att utföra inventering och summering
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-I följande steg beskrivs hur en användare som tilldelats en roll som systemadministratör eller utvecklare för elektronisk rapportering kan konfigurera ett format för elektronisk rapportering (ER) att utföra inventering och summering baserat på data tillhörande redan genererad textutmatning. Dessa steg kan utföras i DEMF-företaget.
+I följande steg beskrivs hur en användare som tilldelats en roll som systemadministratör eller utvecklare för elektronisk rapportering kan konfigurera ett format för elektronisk rapportering (ER) att utföra inventering och summering baserat på data tillhörande redan skapad textutmatning. Dessa steg kan utföras i DEMF-företaget.
 
 För att slutföra dessa steg måste du först avsluta stegen i proceduren ”ER Configure format to do counting and summing (Part 3: Use computations to make the output)".
 
 Denna procedur är avsedd för en funktion som lades till i Dynamics 365 for Operations version 1611.
 
 
-## <a name="test-this-configuration-for-generation-of-the-intrastat-reports"></a>Testa denna konfiguration för att generera Intrastat-rapporterna
+## <a name="test-this-configuration-for-generation-of-the-intrastat-reports"></a>Testa denna konfiguration för att skapa Intrastat-rapporterna
 1. Gå till Organisationsadministration > Arbetsytor > Elektronisk rapportering.
 2. Klicka på Reporting configurations.
 3. Expandera "Intrastat model" i trädet.
@@ -46,13 +46,13 @@ Denna procedur är avsedd för en funktion som lades till i Dynamics 365 for Ope
 10. Klicka på Redigera.
 11. Välj Yes i fältet Run Draft.
 12. Klicka på Spara.
-13. Gå till Moms > Inställningar > Utländsk handel > Utländska handelsparametrar.
+13. Gå till Skatt > Inställningar > Utländsk handel > Utländska handelsparametrar.
 14. Expandera avsnittet Elektronisk rapportering.
 15. Välj konfigurationen "Intrastat (DE) with counting & summing".
 16. Välj konfigurationen "Intrastat (DE) with counting & summing".
 17. Klicka på Spara.
 18. Stäng sidan.
-19. Gå till Moms > Deklarationer > Utländsk handel > Intrastat.
+19. Gå till Skatt > Deklarationer > Utländsk handel > Intrastat.
 20. Klicka på Utdata.
 21. Klicka på Rapport.
     * Kör rapportgenereringsprocessen för Intrastat.  
@@ -61,7 +61,7 @@ Denna procedur är avsedd för en funktion som lades till i Dynamics 365 for Ope
 23. Ange datumet till "2022-12-31" i fältet Till datum.
     * Definiera start- och slutdatum för den rapporteringsperiod som innehåller befintliga formulärtransaktioner.  
 24. Välj "Arrivals" i fältet Directions.
-25. Välj Ja i fältet Generera fil.
+25. Välj Ja i fältet Skapa fil.
 26. Klicka på OK.
     * Granska den skapade utleveransen med sammanfattningsraderna i slutet.  
 27. Klicka på Ny.
@@ -88,7 +88,7 @@ Denna procedur är avsedd för en funktion som lades till i Dynamics 365 for Ope
 7. Välj Yes i fältet Run in debug mode.
 8. Klicka på OK.
 9. Stäng sidan.
-10. Gå till Moms > Deklarationer > Utländsk handel > Intrastat.
+10. Gå till Skatt > Deklarationer > Utländsk handel > Intrastat.
 11. Klicka på Utdata.
 12. Klicka på Rapport.
 13. Klicka på OK.

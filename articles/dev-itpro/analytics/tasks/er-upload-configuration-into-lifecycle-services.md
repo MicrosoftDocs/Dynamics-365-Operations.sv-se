@@ -1,5 +1,5 @@
 --- 
-title: "Överföra en konfiguration till Lifecycle Services för elektronisk rapportering (ER)"
+title: "Överför konfigurationer för elektronisk rapportering till Lifecycle Services"
 description: "I följande steg förklaras hur en användare i rollen Systemadministratör eller Utvecklare för elektronisk rapportering kan skapa en ny formatkonfiguration för elektronisk rapportering (ER) och överföra den till Microsoft Lifecycle Services (LCS)."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 3d9c2192bac8477e9c9376aab3e3b561da777569
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 6aa6bf7e08285d18210741ba6618878955009280
 ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="upload-a-configuration-into-lifecycle-services-for-electronic-reporting-er"></a>Överföra en konfiguration till Lifecycle Services för elektronisk rapportering (ER)
+# <a name="upload-electronic-reporting-configurations-into-lifecycle-services"></a>Överför konfigurationer för elektronisk rapportering till Lifecycle Services
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

@@ -21,7 +21,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: cf531c3a8f3bdb17314d1de436b98249169f82a3
 ms.openlocfilehash: b70d470da2160670848d2dca9c97f6d7a2d6cf60
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
@@ -66,7 +66,7 @@ Var och en av dessa paneler backas upp av en underliggande rapport. Dessa rappor
 | Tillgångs- och skuldanalys     | Avkastning på totala tillgångar och skuld till totala tillgångar efter juridisk person, skuld till totala tillgångar och avkastning på totala tillgångar (kvartal till dags dato), tillgångar och skulder |
 | Analys av vinstmarginal      | Verklig vinstmarginal och budgetvinstmarginal efter juridisk person, vinstmarkering efter kvartal, vinstmarginalprocentsats och vinstmarginal |
 | Analys av nettoinkomst         | Verkliga och budgeterade nettointäkter efter juridisk person, nettointäkter i år och förra året, samt utgifter till nettoinkomstprocentsatsen |
-| Intäktsanalys           | Verkliga intäkter och budgetintäkter före ränta och moms (EBIT) efter juridisk person, EBIT i år och förra året, utgifter till intäktsprocentsatsen, samt verkliga och budgeterade utgifter till intäkt |
+| Intäktsanalys           | Verkliga intäkter och budgetintäkter före ränta och skatt (EBIT) efter juridisk person, EBIT i år och förra året, utgifter till intäktsprocentsatsen, samt verkliga och budgeterade utgifter till intäkt |
 | Intäktsanalys            | Totala intäkter, verkliga och budgeterade totala intäkter efter juridisk person, totala intäkter i år och förra året, budgetkostnadsavvikelse efter juridisk person och totala intäkter under denna period och den sista perioden |
 | Utgiftsanalys            | Totala utgifter, faktiska utgifter i jämförelse med totala budgeterade utgifter efter juridisk person, faktiska och budgeterade totala utgifter efter kvartal, totala utgifter efter kontokategori och kvot för verksamhetsutgifter |
 | Fakturerad intäktsanalys     | Total kundreskontra, totala kundreskontra efter juridisk person, totala kundreskontra efter kvartal och saldon för kundreskontra-konton<br><br>**Obs!** Informationen innehåller inga ingående saldon för redovisningskonton för kundreskontra. Den visar summan av nya transaktioner som bokförs under kundreskontra. |

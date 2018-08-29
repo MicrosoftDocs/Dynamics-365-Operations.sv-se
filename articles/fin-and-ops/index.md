@@ -18,17 +18,17 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e7e10768dd1e0a441842d5b13964f49153c35be3
-ms.openlocfilehash: cced03d29bb04182a3f5bae86c3bec6d3c086cde
+ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
+ms.openlocfilehash: edacf76866cf3e078e08dd6e5a69132d0eb15176
 ms.contentlocale: sv-se
-ms.lasthandoff: 07/10/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="introduction-to-microsoft-dynamics-365-for-finance-and-operations"></a>Introduktion till Microsoft Dynamics 365 for Finance and Operations
+# <a name="microsoft-dynamics-365-for-finance-and-operations-documentation"></a>Dokumentation för Microsoft Dynamics 365 for Finance and Operations
 [!include [banner](includes/banner.md)]
 
-Lär du hur du drar nytta av Microsoft Dynamics 365 for Finance and Operations i ditt företag. Använd resurserna nedan för att hitta passande innehåll för slutanvändare, utvecklare och IT-proffs. 
+Lär dig hur du drar nytta av Microsoft Dynamics 365 for Finance and Operations i ditt företag. Använd resurserna nedan för att hitta passande innehåll för slutanvändare, utvecklare och IT-proffs. 
 
 Mycket av innehållet gäller även relaterade produkter: Microsoft Dynamics 365 for Retail och Microsoft Dynamics 365 for Talent. 
 
@@ -49,7 +49,7 @@ Mycket av innehållet gäller även relaterade produkter: Microsoft Dynamics 365
 <h3><a href="imp-lifecycle/implementation-lifecycle.md">Implementera livscykel</a></h3>
 <p><a href="get-started/fasttrack-dynamics-365-overview.md">FastTrack for Dynamics 365</a></p>
 <p><a href="imp-lifecycle/onboard.md">Introducera ett projekt</a></p>
-<p><a href="imp-lifecycle/prepare-go-live.md">Förbereder för go-live</a></p>
+<p><a href="imp-lifecycle/prepare-go-live.md">Förbereda publicering</a></p>
   
 <h3><a href="../financials/index.md">Ekonomisk styrning</a></h3>
 <p><a href="../financials/accounts-payable/accounts-payable.md">Leverantörsreskontra</a></p>

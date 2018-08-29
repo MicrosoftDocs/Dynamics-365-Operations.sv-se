@@ -6,13 +6,13 @@
         - name: Innan du köper
           href: get-started/before-you-buy.md
           items:
-            - name: Registrera ett abonnemang på förhandsversionen
+            - name: Registrera en prenumeration på förhandsversionen
               href: ../dev-itpro/dev-tools/sign-up-preview-subscription.md?toc=/fin-and-ops/toc.json
             - name: Distribuera en demonstrationsmiljö
               href: ../dev-itpro/deployment/deploy-demo-environment.md?toc=/fin-and-ops/toc.json
-            - name: Jämförelse mellan molnet och lokala funktioner
+            - name: Jämförelse mellan funktioner i molnet och lokalt
               href: get-started/cloud-prem-comparison.md
-            - name: Välj ett distributionsalternativ
+            - name: Distribueringsalternativ
               href: ../dev-itpro/deployment/choose-deployment-type.md?toc=/fin-and-ops/toc.json
               items:
                 - name: Molndistribution
@@ -23,7 +23,7 @@
                   href: ../dev-itpro/deployment/on-premises-deployment-landing-page.md?toc=/fin-and-ops/toc.json
                 - name: Systemkrav för lokala distributioner
                   href: get-started/system-requirements-on-prem.md
-                - name: Lagerhållning för lokala distributioner
+                - name: Konfigurera Warehousing för lokala distributioner
                   href: ../dev-itpro/deployment/warehousing-for-on-premise-deployments.md?toc=/fin-and-ops/toc.json
             - name: Standardiserade och målinriktade plattformsversioner
               href: get-started/public-preview-releases.md
@@ -31,10 +31,10 @@
               items:
                 - name: Köp Finance and Operations (lokal)
                   href: get-started/purchase-on-premises.md
-        - name: Nyheter eller ändringar
+        - name: Nyheter och ändringar
           href: get-started/whats-new-changed.md
           items:
-            - name: Livscykelpolicy för molnbaserade versioner av programmet
+            - name: Livscykelpolicy och molnbaserade versioner av programmet
               href: ../dev-itpro/migration-upgrade/versions-update-policy.md?toc=/fin-and-ops/toc.json
             - name: Livscykelpolicy lokala versioner av programmet
               href: ../dev-itpro/migration-upgrade/on-prem-version-update-policy.md?toc=/fin-and-ops/toc.json
@@ -44,11 +44,11 @@
               href: get-started/ax-2012-features-not-implemented-but-not-deprecated.md
             - name: Funktioner som inte implementerats i lokala distributioner
               href: get-started/features-not-implemented-on-prem.md
-            - name: Finance and Operations 8.0 (april 2018)
+            - name: Finance and Operations version 8.0 (april 2018)
               href: get-started/whats-new-changed-8-0-April-2018.md
             - name: Platform update 15 (mars 2018)
               href: get-started/whats-new-platform-update-15.md
-            - name: Lokala distributioner av 7.2 med platform update 12 (mars 2018)
+            - name: 'Lokala distributioner av Finance and Operations, Enterprise edition 7.2 med platform update 12 (mars 2018)'
               href: get-started/whats-new-LBD-PU12-App72.md
             - name: 'Finance and Operations, Enterprise edition 7.3'
               href: get-started/whats-new-application-7.3-update.md
@@ -82,7 +82,7 @@
               href: get-started/whats-new-changed-application-version-7-0-1-may-2016.md
             - name: Platform update 1 (maj 2016)
               href: get-started/whats-new-changed-platform-version-7-1-may-2016.md
-            - name: Dynamics AX 7.0 (februari 2016)
+            - name: AX 7.0 (februari 2016)
               href: get-started/whats-new-changed-7-0-february-2016.md
             - name: Uppdaterade uppgiftsguider
               items:
@@ -100,7 +100,7 @@
           items:
             - name: Hjälpmedelsfunktioner
               href: get-started/accessibility-features.md
-            - name: Frågor och svar om klientens användargränssnitt
+            - name: Frågor och svar för klient
               href: get-started/client-faq.md
             - name: Åtgärdssökning
               href: get-started/action-search.md
@@ -108,33 +108,33 @@
               href: get-started/advanced-filtering-query-options.md
             - name: Konfigurera och filtrera arbetsytor
               href: get-started/configure-filter-workspaces.md
-            - name: Visa sidor sida vid sida med ikonen Öppna i nytt fönster
+            - name: Visa sidor sida vid sida med funktionen Öppna i nytt fönster
               href: get-started/display-pages-side-by-side.md
             - name: Kortkommandon
               href: get-started/shortcut-keys.md
-            - name: Ändra webbannonsen eller logotypen
+            - name: Ändra banderoller eller logotyper för juridiska personer
               href: get-started/tasks/change-banner-or-logo.md
             - name: Navigeringsökning
               href: get-started/navigation-search.md
             - name: Anpassa användarupplevelsen
               href: get-started/personalize-user-experience.md
-            - name: Anpassade fält
+            - name: Skapa och arbeta med anpassade fält
               href: get-started/user-defined-fields.md
-            - name: Bädda in PowerApps
+            - name: Bädda in PowerApps-appar
               href: get-started/embed-power-apps.md
-            - name: Använda sökningar för att söka efter information
+            - name: Hitta information med hjälp av sökningar
               href: get-started/use-lookups-to-find-information.md
-            - name: Ändra datumet för sessionen
+            - name: Ändra datumet för en session
               href: organization-administration/tasks/change-date-session.md
-            - name: Ställ in en användares prioriterade tidszon
+            - name: Ställa in en användares prioriterade tidszon
               href: organization-administration/tasks/set-users-preferred-time-zone.md
             - name: Förstå Lifecycle Services
               href: ../dev-itpro/lifecycle-services/lcs-works-lcs.md?toc=/fin-and-ops/toc.json
-        - name: Läs och kör dokumentationen
+        - name: Läsa och köra dokumentationen
           items:
-            - name: Hjälp – översikt
+            - name: Hjälpsystem
               href: get-started/help-overview.md
-            - name: Anslut hjälp
+            - name: "Ansluta\_hjälpsystemet"
               href: get-started/help-connect.md
             - name: Visa och exportera fältbeskrivningar
               href: get-started/view-export-field-descriptions.md
@@ -146,38 +146,38 @@
                   href: ../dev-itpro/user-interface/task-recorder-training-docs.md?toc=/fin-and-ops/toc.json
             - name: Ordlista
               href: get-started/glossary.md
-        - name: Videor för Dynamics 365 for Finance and Operations
+        - name: Videor för Finance and Operations
           href: get-started/videos.md
-    - name: Förstå implementering av livscykel
+    - name: Livscykelhantering för implementering
       href: imp-lifecycle/implementation-lifecycle.md
       items:
         - name: Arkitektur för Finance and Operations
           href: imp-lifecycle/architecture-overview.md
-        - name: Microsoft FastTrack for Dynamics 365
+        - name: Microsoft FastTrack för Finance and Operations
           href: get-started/fasttrack-dynamics-365-overview.md
-        - name: Onboarding
+        - name: Integrera ett implementeringsprojekt
           href: imp-lifecycle/onboard.md
-        - name: Förbereder publicering
+        - name: Förbereda publicering
           href: imp-lifecycle/prepare-go-live.md
         - name: Frågor och svar om publicering
           href: imp-lifecycle/go-live-faq.md
         - name: Skicka en serviceförfrågan
           href: ../dev-itpro/lifecycle-services/submit-request-dynamics-service-engineering-team.md?toc=/fin-and-ops/toc.json
-        - name: 'Frågor och svar om abonnemang, LCS-projekt och Azure Active Directory-klientorganisationer'
+        - name: 'Frågor och svar om prenumerationer, LCS-projekt och Azure AD-klienter'
           href: get-started/subscription-overview.md
         - name: Flytta miljöer mellan datacenter
           href: get-started/move-environments-data-center.md
         - name: Flytta licenser mellan avtalstyper
           href: get-started/move-licenses-between-agreement-types.md
-        - name: Flytta ett LCS-implementeringsprojekt till en annan Azure Active Directory-klientorganisation
+        - name: Flytta LCS-implementeringsprojekt till olika Azure AD-klienter
           href: get-started/move-lcs-implementation-project-tenant.md
-        - name: Implementera flera LCS-projekt och produktionsmiljöer i samma Azure Active Directory-klientorganisation
+        - name: Flera LCS-projekt och produktionsmiljöer i en Azure AD-klient
           href: get-started/implement-multiple-projects-aad-tenant.md
     - name: Regelefterlevnad
       items:
         - name: Granskningspolicyregler
           href: ../financials/general-ledger/audit-policy-rules.md
-        - name: Överträdelser av granskningspolicyn och ärenden
+        - name: Granska policyöverträdelser och ärenden
           href: ../financials/general-ledger/audit-policy-violations-cases.md
         - name: Definiera granskningspolicyer för källdokument
           href: ../financials/general-ledger/tasks/define-audit-policies-source-documents.md
@@ -288,7 +288,7 @@
           href: ../dev-itpro/analytics/cost-management-content-pack.md?toc=/fin-and-ops/toc.json
     - name: Dataintegration
       items:
-        - name: Välj en strategi för dataintegrering (importera/exportera)
+        - name: Välja en strategi för dataintegrering (importera/exportera)
           href: ../dev-itpro/data-entities/integration-overview.md?toc=/fin-and-ops/toc.json
         - name: 'API:er för dataintegration'
           items:
@@ -345,10 +345,25 @@
                       href: ../supply-chain/sales-marketing/field-service-product.md
                     - name: Synkronisera arbetsorder i Field Service till försäljningsorder i Finance and Operations
                       href: ../supply-chain/sales-marketing/field-service-work-order.md
-                    - name: Synkronisera avtalsfakturor i Field Service till fristextfakturor i Finance and Operations
+                    - name: Synkronisera avtalsfakturor i Field Service till fritextfakturor i Finance and Operations
                       href: ../supply-chain/sales-marketing/field-service-invoice.md
-            - name: Konsumera externa webbtjänster
-              href: ../dev-itpro/data-entities/consume-external-web-service.md?toc=/fin-and-ops/toc.json
+                - name: Konfigurera Project Service Automation-integration
+                  href: ../financials/project-management/PSA-integration.md?toc=/fin-and-ops/toc.json
+                  items:
+                    - name: Parametrar för Project Service Automation-integration
+                      href: ../financials/project-management/PSA-parameters.md?toc=/fin-and-ops/toc.json
+                    - name: Synkronisera projektkontrakt och projekt
+                      href: ../financials/project-management/project-contracts-templates.md?toc=/fin-and-ops/toc.json
+                    - name: Synkronisera projektuppgifter
+                      href: ../financials/project-management/project-tasks-template.md?toc=/fin-and-ops/toc.json
+                    - name: Synkronisera utgiftskategorier för projekt
+                      href: ../financials/project-management/project-categories-templates.md?toc=/fin-and-ops/toc.json
+                    - name: Synkronisera projektuppskattningar med projektprognoser
+                      href: ../financials/project-management/project-estimates-templates.md?toc=/fin-and-ops/toc.json
+                    - name: Synkronisera projektutfall med projektets integrationsjournal
+                      href: ../financials/project-management/project-actuals-templates.md?toc=/fin-and-ops/toc.json
+                - name: Konsumera externa webbtjänster
+                  href: ../dev-itpro/data-entities/consume-external-web-service.md?toc=/fin-and-ops/toc.json
     - name: Datahantering
       href: ../dev-itpro/data-entities/data-entities-data-packages.md?toc=/fin-and-ops/toc.json
       items:
@@ -357,7 +372,7 @@
           items:
             - name: Konfigurationsdataprojekt
               href: ../dev-itpro/data-entities/configuration-data-projects.md?toc=/fin-and-ops/toc.json
-            - name: Kopiera konfigurationsdata mellan företag
+            - name: Kopiera konfigurationsdata mellan företag eller juridiska personer
               href: ../dev-itpro/data-entities/copy-configuration.md?toc=/fin-and-ops/toc.json
               items:
                 - name: Konfigurationsdatapaket (endast utgåvan från juli 2017)
@@ -383,7 +398,7 @@
               href: ../dev-itpro/data-entities/build-consuming-data-entities.md?toc=/fin-and-ops/toc.json
             - name: Egenskaper för datatabell
               href: ../dev-itpro/data-entities/behavioral-properties-data-entities.md?toc=/fin-and-ops/toc.json
-            - name: Skapa beräkningskolumner och virtuella fält
+            - name: Skapa beräknade kolumner och virtuella fält
               href: ../dev-itpro/data-entities/data-entity-computed-columns-virtual-fields.md?toc=/fin-and-ops/toc.json
             - name: Korsföretagsbeteende
               href: ../dev-itpro/data-entities/cross-company-behavior.md?toc=/fin-and-ops/toc.json
@@ -468,11 +483,13 @@
                   href: ../financials/cash-bank-management/configure-settlement.md
                 - name: Arbetsyta för leverantörsbetalningar
                   href: ../financials/accounts-payable/vendor-payments-workspace.md
+                - name: Ange en växlingskurs
+                  href: ../financials/accounts-payable/specify-cross-rate.md
                 - name: Definiera leverantörsbetalningsavgifter
                   href: ../financials/accounts-payable/tasks/define-vendor-payment-fees.md
                 - name: Definiera villkor för leverantörsbetalning
                   href: ../financials/accounts-payable/tasks/define-vendor-payment-terms.md
-                - name: Skapa leverantörsbetalningar med ett betalningsförslag
+                - name: Skapa leverantörsbetalningar genom att använda ett betalningsförslag
                   href: ../financials/accounts-payable/create-vendor-payments-payment-proposal.md
                 - name: Återför en leverantörsbetalning
                   href: ../financials/accounts-payable/reverse-vendor-payment.md
@@ -588,11 +605,11 @@
         - name: Budgetering
           href: ../financials/budgeting/budgeting-overview.md
           items:
-            - name: 'Översikt över budgetplanering '
+            - name: Översikt över budgetplanering
               href: ../financials/budgeting/budget-planning-overview-configuration.md
-            - name: 'Översikt över budgetkontroll '
+            - name: Översikt över budgetkontroll
               href: ../financials/budgeting/budget-control-overview-configuration.md
-            - name: 'Budgetöversikt '
+            - name: Budgetöversikt
               href: ../financials/budgeting/basic-budgeting-overview-configuration.md
             - name: Befattningsprognos
               href: ../financials/budgeting/position-forecasting.md
@@ -622,7 +639,7 @@
             - name: Kassarabatter för överbetalningar
               href: ../financials/cash-bank-management/cash-discount-handling-overpayments.md
             - name: Kvittningsöversikt
-              href: ../financials/cash-bank-management/settlement-overview-centralized-payments.md
+              href: ../financials/cash-bank-management/settlement-overview.md
             - name: Kvittningsöversikt för centraliserade betalningar
               href: ../financials/cash-bank-management/settlement-overview-centralized-payments.md
             - name: Remburser
@@ -700,6 +717,8 @@
               href: ../financials/general-ledger/financial-dimensions.md
             - name: Kontostrukturer
               href: ../financials/general-ledger/Default-dimensions.md
+            - name: Lägga till ekonomiska dimensioner i arbetsyta för ekonomichef
+              href: ../financials/general-ledger/CFO-workspace.md
             - name: Skapa kontostrukturer
               href: ../financials/general-ledger/tasks/create-account-structures.md
             - name: Budgetöversikt
@@ -824,12 +843,14 @@
               href: ../financials/fixed-assets/acquire-assets-procurement.md
             - name: Inställning och integrering
               items:
-                - name: Ställ in anläggningstillgångar
+                - name: Ställa in anläggningstillgångar
                   href: ../financials/fixed-assets/set-up-fixed-assets.md
                 - name: Integrering av anläggningstillgångar
                   href: ../financials/fixed-assets/fixed-asset-integration.md
             - name: Avskrivningsmetoder
               items:
+                - name: Avskrivningspraxis
+                  href: ../financials/fixed-assets/Fixed-asset-depreciation-conventions.md
                 - name: 125 procent degressiv avskrivning
                   href: ../financials/fixed-assets/125-percent-reducing-balance-depreciation.md
                 - name: 150 procent degressiv avskrivning
@@ -886,7 +907,7 @@
                   href: ../financials/fixed-assets/tasks/reclassify-fixed-assets.md
                 - name: Ställ in bonusavskrivning
                   href: ../financials/fixed-assets/tasks/set-up-bonus-depreciation.md
-                - name: 'Ställ in avskrivningsregler  '
+                - name: 'Ställ in avskrivningsregler '
                   href: ../financials/fixed-assets/tasks/set-up-depreciation-books-2016-05.md
                 - name: Ställ in och skapa avskrivningsprofiler
                   href: ../financials/fixed-assets/tasks/set-up-depreciation-profiles.md
@@ -911,11 +932,11 @@
                   href: ../financials/general-ledger/elimination-rules.md
                 - name: Kombinationer av konton och dimensioner
                   href: ../financials/general-ledger/enter-account-dimension-combinations-segmented-entry-control.md
-                - name: Balanserade journaler för internredovisning
+                - name: Balanserade journaler för interunit-redovisning
                   href: ../financials/general-ledger/example-balanced-journals-interunit-accounting.md
                 - name: Bokföringsdefinitioner
                   href: ../financials/general-ledger/posting-definitions.md
-                - name: 'Exempel på bokföringsdefinitioner '
+                - name: Exempel på bokföringsdefinitioner
                   href: ../financials/general-ledger/example-posting-definitions.md
                 - name: Balanser på huvudbokskonto
                   href: ../financials/general-ledger/general-ledger-account-balances.md
@@ -999,9 +1020,11 @@
                   href: ../financials/general-ledger/foreign-currency-revaluation-general-ledger.md
                 - name: Importera valutakurser
                   href: ../financials/general-ledger/import-currency-exchange-rates.md
+                - name: En verifikation
+                  href: ../financials/general-ledger/one-voucher.md
             - name: Stängning vid periodslut
               items:
-                - name: Stäng redovisningen vid periodslutet
+                - name: Stänga redovisningen vid periodslutet
                   href: ../financials/general-ledger/close-general-ledger-at-period-end.md
                 - name: Arbetsyta för räkenskapsperiodens stängning
                   href: ../financials/general-ledger/financial-period-close-workspace.md
@@ -1141,7 +1164,7 @@
               href: ../dev-itpro/analytics/financial-report-components.md?toc=/fin-and-ops/toc.json
             - name: Ekonomiska rapporter för balansräkning
               href: ../financials/general-ledger/balance-sheet-financial-reports.md
-            - name: Generera en ekonomisk rapport
+            - name: Generera ekonomiska rapporter
               href: ../dev-itpro/analytics/generate-financial-report.md?toc=/fin-and-ops/toc.json
             - name: Ekonomisk rapport för inkomstutdrag
               href: ../financials/general-ledger/income-statement-financial-report.md
@@ -1149,13 +1172,13 @@
               href: ../financials/general-ledger/trial-balance-financial-reports.md
             - name: Visa ekonomiska rapporter
               href: ../financials/general-ledger/view-financial-reports.md
-            - name: Rapportdesigner
+            - name: Användargränssnitt i Rapportdesignern
               href: ../dev-itpro/analytics/report-designer-interface.md?toc=/fin-and-ops/toc.json
-            - name: Användarinställningar
+            - name: Användarinställningar i designer för ekonomiska rapporter
               href: ../dev-itpro/analytics/user-preferences-financial-report-designer.md?toc=/fin-and-ops/toc.json
             - name: Avancerade formateringsalternativ
               href: ../dev-itpro/analytics/advanced-formatting-options-financial-reporting.md?toc=/fin-and-ops/toc.json
-            - name: Ordna rapportkomponenter
+            - name: Organisera rapportdelar i rapportdesignern
               href: ../dev-itpro/analytics/organize-components-report-designer.md?toc=/fin-and-ops/toc.json
             - name: Rapportdefinitioner
               href: ../dev-itpro/analytics/design-financial-report-definitions.md?toc=/fin-and-ops/toc.json
@@ -1163,9 +1186,9 @@
               href: ../dev-itpro/analytics/row-definitions-financial-reporting.md?toc=/fin-and-ops/toc.json
             - name: Kolumndefinitioner
               href: ../dev-itpro/analytics/column-definitions-financial-reports.md?toc=/fin-and-ops/toc.json
-            - name: Ändra raddefinitionceller
+            - name: Ändra raddefinitionsceller
               href: ../dev-itpro/analytics/modify-row-definition-cells-financial-reporting.md?toc=/fin-and-ops/toc.json
-            - name: Återställ datamart med ekonomisk rapportering när du återställer en databas
+            - name: Återställa datatorget för ekonomisk rapportering
               href: ../dev-itpro/analytics/reset-financial-reporting-datamart-after-restore.md?toc=/fin-and-ops/toc.json
     - name: Lokaliserings- och regelfunktioner
       href: ../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json
@@ -1223,6 +1246,7 @@
                 - name: Vanliga frågor om momskundfakturor
                   href: ../financials/localizations/apac-chn-tax-integration-vat-customer-invoices.md
             - name: Indien
+              href: ../financials/localizations/india.md
               items:
                 - name: Anläggningstillgångar
                   href: ../financials/localizations/apac-ind-fixed-assets.md
@@ -1268,6 +1292,7 @@
                 - name: Vanliga frågor och svar om tröskelvärden för moms
                   href: ../financials/localizations/apac-ind-tax-thresholds.md
             - name: Japan
+              href: ../financials/localizations/japan.md
               items:
                 - name: Anskaffa en anläggningstillgång och begär statsbidragssubvention
                   href: ../financials/localizations/tasks/acquire-fixed-asset-claim-government-grant-subsidy.md
@@ -1426,12 +1451,13 @@
                 - name: Använd demonteringslista för anläggningstillgångar
                   href: ../financials/localizations/tasks/use-disassemble-list-fixed-assets.md
             - name: Malaysia
+              href: ../financials/localizations/malaysia.md
               items:
                 - name: Generera kundkredit för projektförsäljning
                   href: ../financials/localizations/tasks/my-00011-03-customer-credit-note-project-sales.md
                 - name: Generera kunddebet för projektförsäljning
                   href: ../financials/localizations/tasks/my-00011-02-customer-debit-note-project-sales-2016-11.md
-                - name: Moms för varor och tjänster
+                - name: Moms för varor och tjänster (GST)
                   href: ../financials/localizations/apac-mys-gst.md
                 - name: GST (moms) – Generera GAF-filer i nödvändigt format
                   href: ../financials/localizations/tasks/my-00010-gst-gaf-files-required-format.md
@@ -1448,10 +1474,12 @@
                 - name: Inställning av GST-lättnadssatser (moms)
                   href: ../financials/localizations/tasks/my-00006-01-gst-relief-clauses.md
             - name: Singapore
+              href: ../financials/localizations/singapore.md
               items:
                 - name: Skapa GST-05-rapport (moms)
                   href: ../financials/localizations/apac-sgp-generate-gst-05-report.md
             - name: Thailand
+              href: ../financials/localizations/thailand.md
               items:
                 - name: Lagerkortsrapporter
                   href: ../financials/localizations/apac-tha-stock-card-reports.md
@@ -1619,7 +1647,7 @@
                   href: ../financials/localizations/emea-bel-intervat-tax-declaration.md
                 - name: Avstämningsrapporter
                   href: ../financials/localizations/emea-bel-reconciliation-reports.md
-                - name: 'Ställ in rapportering av betalningsbalans  '
+                - name: 'Ställ in rapportering av betalningsbalans '
                   href: ../financials/localizations/tasks/be-00011-set-up-payment-balance-reporting.md
                 - name: Ställ in och underhåll PRODCOM
                   href: ../financials/localizations/emea-bel-prodcom-report.md
@@ -1715,7 +1743,7 @@
                   href: ../financials/localizations/emea-fra-derogatory-depreciation.md
                 - name: Franska växlar och skuldsedlar
                   href: ../financials/localizations/tasks/fr-00004-french-bills-exchange-promissory-notes.md
-                - name: NAF-koder och SIRET-nummer
+                - name: NAF-koder och siret-nummer
                   href: ../financials/localizations/emea-fra-naf-codes-siret-numbers.md
                 - name: Ställa in NAF-koder och Siret-nummer
                   href: ../financials/localizations/tasks/fr-00003-naf-codes-siret-numbers.md
@@ -1744,7 +1772,7 @@
               items:
                 - name: Ytterligare förvärvsavskrivning
                   href: ../financials/localizations/emea-deu-additional-acquisition-depreciation.md
-                - name: 'Verifieringsfil '
+                - name: Verifieringsfil
                   href: ../financials/localizations/emea-deu-gdpdu-audit-data-export.md
                   items:
                     - name: Anpassa konfiguration av verifieringsfil
@@ -1759,7 +1787,7 @@
                   href: ../financials/localizations/tasks/de-00003-electronic-transmission-elster.md
                 - name: Journallisterapport
                   href: ../financials/localizations/emea-deu-journal-list-report.md
-                - name: Ställ in elektronisk momsdeklaration
+                - name: Ställa in elektroniska momsdeklarationer
                   href: ../dev-itpro/analytics/tasks/setup-electronic-tax-declaration-germany.md?toc=/fin-and-ops/toc.json
             - name: Ungern
               href: ../financials/localizations/hungary.md
@@ -1925,7 +1953,7 @@
             - name: Storbritannien
               href: ../financials/localizations/united-kingdom.md
               items:
-                - name: 'Konstruktionsbranschschema '
+                - name: Konstruktionsbranschschema
                   href: ../financials/localizations/emea-gbr-cis-construction-industry-scheme.md
                 - name: Skapa en kredit för kvittningsrabatt
                   href: ../financials/localizations/tasks/gb-00009-credit-note-settlement-discount.md
@@ -1937,12 +1965,15 @@
                   href: ../financials/localizations/tasks/gb-00002-item-sales-tax-groups-reverse-charge-vat.md
                 - name: 'Ställa in artikelgrupper, regler och parametrar för återfört tillägg'
                   href: ../financials/localizations/tasks/gb-00002-reverse-charge-vat-item-groups.md
-                - name: Ställ in momsgrupper för återfört tillägg
+                - name: Ställa in momsgrupper för återfört tillägg
                   href: ../financials/localizations/tasks/gb-00002-sales-tax-groups-reverse-charge-vat.md
         - name: Latinamerika
           items:
             - name: Brasilien
+              href: ../financials/localizations/brazil.md
               items:
+                - name: Lokaliseringens omfattning
+                  href: ../financials/localizations/latam-bra-scope.md
                 - name: Skatteböcker
                   href: ../financials/localizations/latam-bra-fiscal-books.md
                   items:
@@ -2032,7 +2063,7 @@
                       href: ../financials/localizations/latam-bra-tax-payments.md
                     - name: Moms på försäljningsofferter
                       href: ../financials/localizations/tasks/br-00057-brazilian-taxes-sales-quotation.md
-                    - name: 'Källskatter  '
+                    - name: 'Källskatter '
                       href: ../financials/localizations/tasks/br-00009-brazilian-withholding-taxes.md
                     - name: Källskatter på kundbetalningar
                       href: ../financials/localizations/tasks/br-00042-withholding-taxes-customers-payments.md
@@ -2105,6 +2136,7 @@
                     - name: PIS- och COFINS-anläggningstillgångar
                       href: ../financials/localizations/tasks/br-10020-4-pis-cofins-fixed-assets.md
             - name: Mexiko
+              href: ../financials/localizations/mexico.md
               items:
                 - name: Lokaliseringens omfattning
                   href: ../financials/localizations/latam-mex-scope.md
@@ -2120,7 +2152,7 @@
                   href: ../financials/localizations/latam-mex-diot-declaration-statement.md
                 - name: E-fakturering CFDI
                   href: ../financials/localizations/tasks/mx-00010-e-invoicing-cfdi.md
-                - name: 'Elektroniska fakturor '
+                - name: Elektroniska fakturor
                   href: ../financials/localizations/latam-mex-CFDI-electronic-invoices.md
                 - name: Elektroniska redovisningsutdrag
                   href: ../financials/localizations/latam-mex-electronic-ledger-accounting-statements.md
@@ -2144,13 +2176,15 @@
                   href: ../financials/localizations/tasks/mx-00020-specify-rfc-registration-id-mexican-bank-accounts.md
                 - name: ID för leverantörsregistrering
                   href: ../financials/localizations/tasks/mx-00008-vendor-registration-ids.md
-        - name: Mellanöstern
+        - name: Saudiarabien
+          href: ../financials/localizations/saudi-arabia.md
           items:
             - name: Moms
               href: ../financials/localizations/apac-sau-sales-tax.md
             - name: Zakat-rapportering för Saudiarabien
               href: ../financials/localizations/emea-sau-zakat-reporting.md
-        - name: Nordamerika
+        - name: USA
+          href: ../financials/localizations/united-states.md
           items:
             - name: 1099-rapport vid årsslut för USA
               href: ../financials/localizations/noam-usa-year-end-1099-reporting.md
@@ -2167,7 +2201,7 @@
               href: ../talent/create-job.md
             - name: Skapa en avdelning och associera den med avdelningshierarkin
               href: ../talent/create-department-add-department-hierarchy.md
-            - name: Ställa in personalparametrar bland juridiska personer
+            - name: Ställa in personalparametrar hos juridiska personer
               href: ../talent/set-up-hr-parameters-across-legal-entities.md
             - name: Ställa in företagsspecifika personalparametrar
               href: ../talent/set-up-company-specific-hr-parameters.md
@@ -2177,7 +2211,7 @@
               href: ../talent/workflow-manage-employee-information.md
         - name: Rekrytering
           items:
-            - name: Hantera en rekryteringsprocess
+            - name: Hantera rekryteringsprocesser
               href: hr/manage-recruiting-process.md
             - name: Massanställningsprojekt
               href: hr/mass-hire-projects.md
@@ -2195,9 +2229,9 @@
           items:
             - name: Översikt över prestationshantering
               href: ../talent/performance-management-overview.md
-            - name: Justera personalens kompetenser med affärsbehov
+            - name: Anpassa personalens kompetenser efter affärsbehov
               href: ../talent/skills.md
-            - name: Ställ in utbildningar
+            - name: Skapa utbildningar
               href: ../talent/courses.md
         - name: Skapa och underhålla förmåner
           items:
@@ -2219,13 +2253,13 @@
               href: ../talent/evaluate-questionnaire-results.md
         - name: Arbetsplatssäkerhet och efterlevnad (USA)
           items:
-            - name: Verifiering av I–9-anställningsformulär
+            - name: Verifiering av I–9-formulär
               href: hr/localizations/noam-usa-form-i-9-verification.md
-            - name: Verifiera anställda med I–9-formulär
+            - name: Verifiera anställningskvalifikationer med formuläret I-9
               href: hr/localizations/tasks/employment-verification-i9-verification.md
-            - name: Ställ in 1-9-dokumenttyper
+            - name: Ställa in dokumenttyper för 1-9-formulär
               href: hr/localizations/tasks/set-up-i9-document-types.md
-            - name: Uppfylla ADA
+            - name: Efterleva Americans with Disabilities Act
               href: hr/localizations/noam-usa-comply-ada.md
             - name: Hantera arbetstagarnas logi
               href: hr/localizations/tasks/manage-worker-accommodations.md
@@ -2234,46 +2268,52 @@
           items:
             - name: Löneinställningar
               items:
-                - name: Ställ in löner för arbetstagare
+                - name: Ställa in löner för arbetstagare
                   href: hr/localizations/noam-usa-worker-position-payroll-tasks.md
                 - name: Skapa arbetsuppgiftscykler och arbetsuppgiftsperioder
                   href: hr/localizations/noam-usa-work-cycle-work-period-tasks.md
-                - name: 'Ställ in förmånsperiodiseringsplaner '
+                - name: Ställa in förmånsperiodiseringsplaner
                   href: hr/localizations/noam-usa-benefit-accrual-plan-tasks.md
-                - name: Ställ in förmåner
+                - name: Ställa in förmåner
                   href: hr/localizations/noam-usa-benefit-set-up-tasks.md
             - name: Frekvenser och cykler
-            - name: Lönecykler och löneperiodsuppgifter
+            - name: Ställa in lönecykler och löneperioder
               href: hr/localizations/noam-usa-pay-cycle-pay-period-tasks-sample.md
-            - name: Löneberäknings- och frekvensuppgifter
+            - name: Ställa in frekvenser i löneberäkning
               href: hr/localizations/noam-usa-payroll-calculation-frequencies-tasks.md
-            - name: Arbetsschema och tjänstledighetsuppgifter
+            - name: Ställa in arbetsscheman och ledighet
               href: hr/localizations/noam-usa-work-schedule-leave-tasks.md
             - name: Koder och skatter
               items:
-                - name: Uppgifter för inkomstkod och inkomstkodgrupp
+                - name: Ställa in inkomstkoder och inkomstkodgrupper
                   href: hr/localizations/noam-usa-earning-code-group-tasks.md
-                - name: Skatteinformationsuppgifter
+                - name: 'Ställa in moms, momsregioner, momskoder och momsgrupper'
                   href: hr/localizations/noam-usa-tax-information-tasks.md
+                - name: 'Frågor och svar om momskoder, momsgrupper och bokföringsdefinitioner'
+                  href: hr/localizations/noam-usa-tax-codes-tax-groups-definitions.md
+                - name: Ange initiala lönesaldon
+                  href: hr/localizations/noam-usa-enter-beginning-balances.md
             - name: 'Utmätningar, momsuttaxeringar och lönebonus'
               items:
-                - name: Ställ in utmätningar och momsuttaxeringar
+                - name: Ställa in utmätningar och momsuttaxeringar
                   href: hr/localizations/noam-usa-garnishment-tax-levy-set-up-tasks.md
-                - name: Anmäl arbetare i utmätningar och momsuttaxeringar
+                - name: Anmäla arbetare i utmätningar och momsuttaxeringar
                   href: hr/localizations/noam-usa-garnishment-tax-levy-enrollment-tasks.md
-                - name: 'Ställ in bonusinkomster '
+                - name: Ställa in bonusinkomster
                   href: hr/localizations/noam-usa-premium-earning-setup-tasks.md
                 - name: 'Vanliga frågor om utmätningar, momsuttaxeringar och administrativa avgifter'
                   href: hr/localizations/noam-usa-garnishment-tax-levy-administrative-fees.md
-            - name: Spåra ledig tid för FMLA
+            - name: Spåra ledig tid för FMLA (Family and Medical Leave Act)
               href: hr/localizations/noam-usa-track-time-for-fmla.md
             - name: Lönebearbetningsuppgifter
               items:
-                - name: Generera inkomster
+                - name: Frågor och svar om intäkter och generering av intäkter
                   href: hr/localizations/noam-usa-earnings-generation-process.md
+                - name: Generera intäkter för arbetare
+                  href: hr/localizations/noam-usa-generate-earnings.md
                 - name: Utfärda betalningar till arbetare
                   href: hr/localizations/noam-usa-issue-worker-payments.md
-                - name: Bokför lön och generera leverantörsfakturor
+                - name: Bokför lönefördelningar och generera leverantörsfakturor
                   href: hr/localizations/noam-usa-post-payroll-generate-vendor-invoices.md
                 - name: Vanliga frågor om löneutdrag och betalningsgenerering
                   href: hr/localizations/noam-usa-pay-statements-payment-generation-process.md
@@ -2283,43 +2323,43 @@
                   href: hr/localizations/noam-usa-existing-payroll-payments.md
                 - name: Bearbeta befintliga intäkter
                   href: hr/localizations/noam-usa-existing-earnings.md
-                - name: Bearbeta löneutdrag
+                - name: Skapa och arbeta med löneutdrag
                   href: hr/localizations/noam-usa-pay-statements.md
             - name: Underhåll och rapportering
               items:
                 - name: Vanliga frågor om uppdatering av lönedata
                   href: hr/localizations/noam-usa-payroll-data-updates.md
-                - name: Generera lönerapporter
+                - name: Standardrapporter för lön
                   href: hr/localizations/noam-usa-generate-payroll-reports.md
         - name: Uppgifter för Personal
           items:
-            - name: Lägg till i din resultatjournal och skicka beröm till någon
+            - name: Lägga till information i din resultatjournal och skicka beröm
               href: hr/tasks/add-your-performance-journal-send-praise-someone.md
             - name: Analysera enkätresultat
               href: hr/tasks/analyze-questionnaire-results.md
-            - name: Godkänn poster för ansökningsinkorg
+            - name: Godkänna poster för ansökningsinkorg
               href: hr/tasks/approve-application-inbox-records.md
-            - name: Bearbeta förmånsberättigande
+            - name: Process för förmånsberättigande
               href: hr/tasks/benefit-eligibility-process.md
-            - name: Skapa en kalender och generera arbetstider
+            - name: Skapa kalendrar och generera arbetstider
               href: hr/tasks/create-calendar-working-times.md
-            - name: Skapa en stängd avslutad fråga
+            - name: Skapa stängda avslutade frågor
               href: hr/tasks/create-closed-ended-question.md
-            - name: Skapa ett mål
+            - name: Skapa mål
               href: hr/tasks/create-goal.md
             - name: Skapa låneartiklar
               href: hr/tasks/create-loan-items.md
-            - name: Skapa ett massanställningsprojekt
+            - name: Skapa massanställningsprojekt
               href: hr/tasks/create-mass-hire-project.md
-            - name: Skapa en ny förmån
+            - name: Skapa nya förmåner
               href: hr/tasks/create-new-benefit.md
-            - name: Skapa en öppen fråga
+            - name: Skapa öppna frågor
               href: hr/tasks/create-open-ended-question.md
-            - name: Skapa en resultatöversyn
+            - name: Skapa resultatöversyner
               href: hr/tasks/create-performance-review.md
             - name: Definiera förmånsberättiganderegler och policyer
               href: hr/tasks/define-benefit-eligibility-rules-policies.md
-            - name: Definiera kompensationsprocessen och beräkna resultat
+            - name: Definiera kompensationsprocesser och beräkna resultat
               href: hr/tasks/define-compensation-process-calculate-results.md
             - name: Definiera nya avdelningar
               href: hr/tasks/define-new-departments.md
@@ -2327,19 +2367,19 @@
               href: hr/tasks/define-new-jobs.md
             - name: Utveckla ett förmånsprogram för medarbetare
               href: hr/tasks/deliver-employee-benefits-program.md
-            - name: Utveckla och öppna en jobbrekvisition
+            - name: Utveckla och öppna jobbrekvisitioner
               href: hr/tasks/develop-open-job-requisition.md
-            - name: Utveckla struktur och planer för lön/kompensation
+            - name: Utveckla strukturer och planer för lön/kompensation
               href: hr/tasks/develop-salary-compensation-structure-plan.md
             - name: Utveckla en successionsplan
               href: hr/tasks/develop-succession-plan.md
-            - name: Distribuera en enkät med hjälp av tidsplanering
+            - name: Distribuera enkäter med hjälp av tidsplanering
               href: hr/tasks/distribute-questionnaires-scheduling.md
-            - name: Registrera en medarbetare i en fast kompensationsplan
+            - name: Registrera medarbetare i en fast kompensationsplan
               href: hr/tasks/enroll-employee-fixed-compensation-plan.md
-            - name: Registrera en medarbetare i en variabel kompensationsplan
+            - name: Registrera medarbetare i en variabel kompensationsplan
               href: hr/tasks/enroll-employee-variable-compensation-plan.md
-            - name: Registrera och ta bort förmåner för arbetare
+            - name: Registrera arbetare för förmåner och ta bort förmåner från arbetare
               href: hr/tasks/enroll-remove-benefits-workers.md
             - name: Ange sökanden och ansökningsdata manuellt
               href: hr/tasks/enter-applicant-application-data-manually.md
@@ -2347,17 +2387,17 @@
               href: hr/tasks/enter-project-timesheets.md
             - name: Ange arbetarinformation
               href: hr/tasks/enter-worker-information.md
-            - name: Anställa en kandidat genom att rekrytera
+            - name: Anställa kandidater via rekrytering
               href: hr/tasks/hire-candidate-through-recruiting.md
-            - name: Anställa en befintlig medarbetare genom att rekrytera
+            - name: Anställa befintliga medarbetare via rekrytering
               href: hr/tasks/hire-existing-employee-through-recruiting.md
             - name: Identifiera och distribuera kandidaturvalsverktyg
               href: hr/tasks/identify-deploy-candidate-selection-tools.md
-            - name: Låna ut artiklar till en arbetare
+            - name: Låna ut artiklar till arbetare
               href: hr/tasks/loan-item-worker.md
             - name: Underhålla information om medarbetares skador och sjukdomar
               href: hr/tasks/maintain-employee-injury-illness-information.md
-            - name: Skapa en fråga beroende av svaret på den föregående frågan
+            - name: Skapa frågor beroende av svaret på den föregående frågan
               href: hr/tasks/make-question-dependent-answer-previous-question.md
             - name: Hantera utgångsdatum för förmån
               href: hr/tasks/manage-benefit-expiration-dates.md
@@ -2365,11 +2405,11 @@
               href: hr/tasks/manage-email-templates.md
             - name: Hantera ledighet och frånvaro
               href: hr/tasks/manage-leave-absence.md
-            - name: Ändra rapporteringsrelationer för en befattning
+            - name: Ändra rapporteringsrelationerna för befattningar
               href: hr/tasks/modify-reporting-relationships-position.md
-            - name: Ställ in kompensationsrutnät
+            - name: Ställa in kompensationsrutnät
               href: hr/tasks/set-up-compensation-grids.md
-            - name: Ställ in information om skador och sjukdomar
+            - name: Ställa in information om skador och sjukdomar
               href: hr/tasks/set-up-injury-illness-information.md
             - name: Ställ in befattningar
               href: hr/tasks/set-up-positions.md
@@ -2396,7 +2436,7 @@
             - name: Kostnadsredovisningsanalys
               href: ../dev-itpro/analytics/cost-accounting-analysis-content-pack.md?toc=/fin-and-ops/toc.json
               items:
-                - name: Säkerhet för Kostnadsredovisningsanalys
+                - name: Ställa in säkerhet för Kostnadsredovisningsanalys Power BI-innehåll
                   href: ../dev-itpro/analytics/setup-security-cost-accounting-content-pack.md?toc=/fin-and-ops/toc.json
             - name: Kostnadshantering
               href: ../dev-itpro/analytics/cost-management-content-pack.md?toc=/fin-and-ops/toc.json
@@ -2424,7 +2464,7 @@
               href: ../dev-itpro/analytics/purchase-content-pack-for-power-bi.md?toc=/fin-and-ops/toc.json
             - name: Rekrytering
               href: ../dev-itpro/analytics/recruiting-analysis-power-bi-content-pack.md?toc=/fin-and-ops/toc.json
-            - name: 'Resultat för butikskanal  '
+            - name: 'Resultat för butikskanal '
               href: ../dev-itpro/analytics/retail-channel-performance-dashboard-power-bi-data.md?toc=/fin-and-ops/toc.json
             - name: Försäljnings- och lönsamhetsresultat
               href: ../dev-itpro/analytics/sales-profitability-performance-content-pack.md?toc=/fin-and-ops/toc.json
@@ -2438,24 +2478,24 @@
           items:
             - name: Översikt över dokumentrapporteringstjänster
               href: ../dev-itpro/analytics/document-reporting-services.md?toc=/fin-and-ops/toc.json
-            - name: Konfigurera SSRS för en lokal distribution
+            - name: Konfigurera SSRS för lokala distributioner
               href: ../dev-itpro/analytics/configure-ssrs-on-premises.md?toc=/fin-and-ops/toc.json
-            - name: Utskrift
+            - name: Skriver ut
               href: ../dev-itpro/analytics/print-documents.md?toc=/fin-and-ops/toc.json
               items:
-                - name: Installera dokumentflödesagenten för att aktivera nätverksskrivarenheter
+                - name: Installera dokumentflödesagenten för att aktivera nätverksutskrift
                   href: ../dev-itpro/analytics/install-document-routing-agent.md?toc=/fin-and-ops/toc.json
                 - name: Uppgradera Dokumentflödesagenten
                   href: ../dev-itpro/analytics/upgrade-document-routing-agent.md
                 - name: Installera nätverksskrivare i lokala miljöer
                   href: ../dev-itpro/analytics/install-network-printer-onprem.md?toc=/fin-and-ops/toc.json
-                - name: 'Funktioner för att skapa, publicera och skriva ut dokument i lokala distributioner'
+                - name: 'Skapa, publicera och skriva ut dokument i lokala distributioner'
                   href: ../dev-itpro/analytics/printing-capabilities-on-premises.md?toc=/fin-and-ops/toc.json
-                - name: Kör dokumentflödesagenten som en Windows-tjänst
+                - name: Köra Dokumentflödesagenten som en Windows-tjänst
                   href: ../dev-itpro/analytics/run-document-routing-agent-as-windows-service.md?toc=/fin-and-ops/toc.json
-            - name: Hjälp med hur du förhindrar att tidsgränsen för långvariga rapporter löper ut
+            - name: Hjälp med att förhindra att tidsgränsen för långvariga rapporter löper ut
               href: ../dev-itpro/analytics/prevent-long-running-reports-timing-out.md?toc=/fin-and-ops/toc.json
-            - name: Lista med SQL Server Reporting Services-rapporter
+            - name: Tillgängliga SQL Server Reporting Services-rapporter
               href: ../dev-itpro/analytics/SSRS-report.md?toc=/fin-and-ops/toc.json
             - name: Skapa rapporteringslösningar
               href: ../dev-itpro/analytics/create-nextgen-reporting-solutions.md?toc=/fin-and-ops/toc.json
@@ -2465,139 +2505,141 @@
               href: ../dev-itpro/analytics/customize-app-suite-reports-with-extensions.md?toc=/fin-and-ops/toc.json
             - name: Utöka programsvitens rapportdatauppsättningar
               href: ../dev-itpro/analytics/expand-app-suite-report-data-sets.md?toc=/fin-and-ops/toc.json
-            - name: Utöka rapportmenyalternativen
+            - name: Utöka rapportmenyobjekt för att omdirigera användares navigering
               href: ../dev-itpro/analytics/extend-report-menu-items.md?toc=/fin-and-ops/toc.json
-            - name: Affärsdokument med anpassad utformning
+            - name: Skapa anpassade utformningar för affärsdokument
               href: ../dev-itpro/analytics/custom-designs-business-docs.md?toc=/fin-and-ops/toc.json
         - name: Elektronisk rapportering
           href: ../dev-itpro/analytics/general-electronic-reporting.md?toc=/fin-and-ops/toc.json
           items:
             - name: Konfigurera ramverket för elektronisk rapportering
               href: ../dev-itpro/analytics/electronic-reporting-er-configure-parameters.md?toc=/fin-and-ops/toc.json
-            - name: Skapa en konfiguration
+            - name: Skapa konfigurationer
               href: ../dev-itpro/analytics/electronic-reporting-configuration.md?toc=/fin-and-ops/toc.json
               items:
-                - name: Skapa en konfigurationsleverantör och markera den som aktiv för elektronisk rapportering
+                - name: Skapa konfigurationsleverantörer och markera dem som aktiva
                   href: ../dev-itpro/analytics/tasks/er-configuration-provider-mark-it-active-2016-11.md?toc=/fin-and-ops/toc.json
-                - name: Utforma en domänspecifik datamodell för elektronisk rapportering
+                - name: Utforma domänspecifika datamodeller
                   href: ../dev-itpro/analytics/tasks/er-design-domain-specific-data-model-2016-11.md?toc=/fin-and-ops/toc.json
-                - name: Definiera modellmappning och välj datakällor för elektronisk rapportering
+                - name: Definiera modellmappningar och välja datakällor
                   href: ../dev-itpro/analytics/tasks/er-define-model-mapping-select-data-sources-2016-11.md?toc=/fin-and-ops/toc.json
-                - name: Mappa en datamodell till valda datakällor för elektronisk rapportering
+                - name: Mappa datamodeller till utvalda datakällor
                   href: ../dev-itpro/analytics/tasks/er-map-data-model-selected-data-sources-2016-11.md?toc=/fin-and-ops/toc.json
-                - name: Skapa en formatkonfiguration för elektronisk rapportering
+                - name: Skapa formatkonfigurationer
                   href: ../dev-itpro/analytics/tasks/er-format-configuration-2016-11.md?toc=/fin-and-ops/toc.json
-                - name: Mappa komponenter för det skapade formatet till datamodellelement för elektronisk rapportering
+                - name: Mappa formatkomponenterna till datamodellelement
                   href: ../dev-itpro/analytics/tasks/er-map-components-data-model-elements--2016-11.md?toc=/fin-and-ops/toc.json
-                - name: Generera elektroniska dokument för betalningar med en formatkonfiguration för elektronisk rapportering
+                - name: Generera elektroniska dokument för betalningar med en formatkonfigurationer
                   href: ../dev-itpro/analytics/tasks/er-electronic-payments.md?toc=/fin-and-ops/toc.json
-                - name: Uppgradera ett format genom att anpassa den nya basversionen för det formatet för elektronisk rapportering
+                - name: Uppgradera format genom att implementera nya versioner
                   href: ../dev-itpro/analytics/tasks/er-upgrade-format.md?toc=/fin-and-ops/toc.json
             - name: Formeldesigner i elektronisk rapportering
               href: ../dev-itpro/analytics/general-electronic-reporting-formula-designer.md?toc=/fin-and-ops/toc.json
-            - name: Ställ in elektronisk rapportering med Power BI
+            - name: Konfigurera elektronisk rapportering för att hämta data till Power BI
               href: ../dev-itpro/analytics/general-electronic-reporting-report-configuration-get-data-powerbi.md?toc=/fin-and-ops/toc.json
             - name: Destinationer
               href: ../dev-itpro/analytics/electronic-reporting-destinations.md?toc=/fin-and-ops/toc.json
               items:
-                - name: Konfigurera mål för elektronisk rapportering
+                - name: Konfigurera destinationer
                   href: ../dev-itpro/analytics/tasks/er-destinations-2016-11.md?toc=/fin-and-ops/toc.json
-            - name: Utforma en konfiguration för rapportgenerering i Microsoft Word-format för elektronisk rapportering
+            - name: Utforma konfigurationer för att generera rapporter i Word-format
               href: ../dev-itpro/analytics/tasks/er-design-configuration-word-2016-11.md?toc=/fin-and-ops/toc.json
-            - name: Utforma en konfiguration för rapportgenerering i OpenXML-format för elektronisk rapportering
+            - name: Utforma konfigurationer för att generera rapporter i OpenXML-format
               href: ../dev-itpro/analytics/tasks/er-design-reports-openxml-2016-11.md?toc=/fin-and-ops/toc.json
-            - name: Ändra ett format för elektronisk rapportering genom att tillämpa en Microsoft Excel-mall
+            - name: Ändra format för elektronisk rapportering genom att tillämpa Excel-mallar igen
               href: ../dev-itpro/analytics/modify-electronic-reporting-format-reapply-excel-template.md?toc=/fin-and-ops/toc.json
-            - name: Välja en datamodelldefinition när du skapar format för elektronisk rapportering
+            - name: Välja datamodelldefinitionen när du skapar format
               href: ../dev-itpro/analytics/tasks/er-select-data-model-definition-creating-er-format-july-2017.md?toc=/fin-and-ops/toc.json
-            - name: Definiera beroendet av konfigurationer från andra komponenter för elektronisk rapportering
+            - name: Definiera konfigurationers beroende av andra komponenter
               href: ../dev-itpro/analytics/tasks/er-define-dependency-er-configurations-from-other-components-july-2017.md?toc=/fin-and-ops/toc.json
               items:
-                - name: Utforma en datamodell som använder ekonomiska dimensioner som datakälla
+                - name: Utforma datamodeller som använder ekonomiska dimensioner som datakällor
                   href: ../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-1.md?toc=/fin-and-ops/toc.json
-                - name: Mappa modeller som använder ekonomiska dimensioner som datakälla
+                - name: Mappa modeller som använder ekonomiska dimensioner som datakällor
                   href: ../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-2.md?toc=/fin-and-ops/toc.json
-                - name: Utforma en rapport som använder ekonomiska dimensioner som datakälla
+                - name: Utforma rapporter som använder ekonomiska dimensioner som datakällor
                   href: ../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-3.md?toc=/fin-and-ops/toc.json
-                - name: Kör en rapport som använder ekonomiska dimensioner som datakälla
+                - name: Köra rapporter som använder ekonomiska dimensioner som datakällor
                   href: ../dev-itpro/analytics/tasks/er-financial-dimensions-data-source-4.md?toc=/fin-and-ops/toc.json
-                - name: Skapa format för inventering och summering
+                - name: Skapa format för att utföra inventering och summering
                   href: ../dev-itpro/analytics/tasks/er-format-counting-summing-1.md?toc=/fin-and-ops/toc.json
                 - name: Konfigurera beräkningar för att utföra inventering och summering
                   href: ../dev-itpro/analytics/tasks/er-format-counting-summing-2.md?toc=/fin-and-ops/toc.json
-                - name: Använd beräkningar för att skapa utdata för inventering och summering
+                - name: Använda beräkningar för att skapa utdata för inventering och summering
                   href: ../dev-itpro/analytics/tasks/er-format-counting-summing-3.md?toc=/fin-and-ops/toc.json
-                - name: Kör formatet för att utföra inventering och summering
+                - name: Köra format för att utföra inventering och summering
                   href: ../dev-itpro/analytics/tasks/er-format-counting-summing-4.md?toc=/fin-and-ops/toc.json
-                - name: Utforma ett format som använder horisontellt expanderbara intervall för att lägga till kolumner dynamiskt i Excel-rapporter
+                - name: Utforma format som dynamiskt lägger till kolumner som horisontellt expanderbara intervall
                   href: ../dev-itpro/analytics/tasks/er-horizontal-1.md?toc=/fin-and-ops/toc.json
-                - name: Kör ett format som använder horisontellt expanderbara intervall för att lägga till kolumner dynamiskt i Excel-rapporter
+                - name: Köra format som dynamiskt lägger till kolumner som horisontellt expanderbara intervall
                   href: ../dev-itpro/analytics/tasks/er-horizontal-2.md?toc=/fin-and-ops/toc.json
-                - name: Förbered datamodell för att använda dokumenthanteringsfiler i formatutdata
+                - name: Förbered datamodeller för att använda dokumenthanteringsfiler i utdata
                   href: ../dev-itpro/analytics/tasks/er-document-management-files-1.md?toc=/fin-and-ops/toc.json
-                - name: Utöka datamodell för att använda dokumenthanteringsfiler i formatutdata
+                - name: Utöka datamodeller för att använda dokumenthanteringsfiler i utdata
                   href: ../dev-itpro/analytics/tasks/er-document-management-files-2.md?toc=/fin-and-ops/toc.json
-                - name: Skapa format som ska använda dokumenthanteringsfiler i formatutdata
+                - name: Skapa format som ska använda dokumenthanteringsfiler i utdata
                   href: ../dev-itpro/analytics/tasks/er-document-management-files-3.md?toc=/fin-and-ops/toc.json
-                - name: Kör format som ska använda dokumenthanteringsfiler i formatutdata
+                - name: Köra format som ska använda dokumenthanteringsfiler i utdata
                   href: ../dev-itpro/analytics/tasks/er-document-management-files-4.md?toc=/fin-and-ops/toc.json
-                - name: Ändra och kör format som ska använda dokumenthanteringsfiler i formatutdata
+                - name: Ändra och köra format som ska använda dokumenthanteringsfiler i utdata
                   href: ../dev-itpro/analytics/tasks/er-document-management-files-5.md?toc=/fin-and-ops/toc.json
-                - name: Utforma konfigurationer för att generera rapporter i Microsoft Office-format med inbäddade bilder
+                - name: Utforma konfigurationer för att generera rapporter i Office-format med inbäddade bilder
                   href: ../dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-july-2017.md?toc=/fin-and-ops/toc.json
-                - name: Granska konfigurationer för att skapa rapporter i Microsoft Office-format med inbäddade bilder
+                - name: Granska konfigurationer för att generera rapporter i Office-format med inbäddade bilder
                   href: ../dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-2-review-configurations.md?toc=/fin-and-ops/toc.json
-                - name: Skapa rapporter i Microsoft Office-format med inbäddade bilder
+                - name: Skapa rapporter i Office-format med inbäddade bilder
                   href: ../dev-itpro/analytics/tasks/er-make-reports-ms-office-formats-embedded-images-part-3-generate-reports.md?toc=/fin-and-ops/toc.json
-            - name: Skapa elektroniska dokument och uppdatera programdata med hjälp av verktyget Elektronisk rapportering
+            - name: Generera elektroniska dokument och uppdatera programdata
               href: ../dev-itpro/analytics/generate-electronic-documents-update-application-data.md?toc=/fin-and-ops/toc.json
               items:
                 - name: Importera konfigurationer för att skapa dokument med programdata
                   href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-1-import-configurations.md?toc=/fin-and-ops/toc.json
                 - name: Utforma konfigurationer för att skapa dokument med programdata
                   href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-2-generate-documents.md?toc=/fin-and-ops/toc.json
-                - name: Ändra modell och mappning för att skapa dokument med programdata
+                - name: Ändra modeller och mappningar för att skapa dokument med programdata
                   href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-3-modify-model-mapping.md?toc=/fin-and-ops/toc.json
                 - name: Ändra format för att skapa dokument med programdata
                   href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-4-modify-format.md?toc=/fin-and-ops/toc.json
                 - name: Skapa dokument med programdata
                   href: ../dev-itpro/analytics/tasks/er-generate-documents-application-data-update-part-5-generate-documents-application-data-update.md?toc=/fin-and-ops/toc.json
+            - name: Skapa utskrivbara FTI-formulär
+              href: ../dev-itpro/analytics/er-generate-printable-fti-forms.md?toc=/fin-and-ops/toc.json
             - name: Generera rapporter genom att lägga till innehåll som råa XML-data
               href: ../dev-itpro/analytics/er-generate-reports-raw-xml.md?toc=/fin-and-ops/toc.json
             - name: Spåra genererade rapportresultat och jämföra dem med baslinjevärden
               href: ../dev-itpro/analytics/er-trace-reports-compare-baseline.md?toc=/fin-and-ops/toc.json
             - name: Korsföretags datakällor i elektronisk rapportering
               href: ../dev-itpro/analytics/er-cross-company-data-sources.md?toc=/fin-and-ops/toc.json
-            - name: Bädda in bilder och former i affärsdokument som genereras med hjälp av verktyget Elektronisk rapportering
+            - name: Bädda in bilder och former i dokument som du skapar
               href: ../dev-itpro/analytics/electronic-reporting-embed-images-shapes.md?toc=/fin-and-ops/toc.json
             - name: Hantera livscykeln för konfiguration
               href: ../dev-itpro/analytics/general-electronic-reporting-manage-configuration-lifecycle.md?toc=/fin-and-ops/toc.json
               items:
-                - name: Överföra en konfiguration till Lifecycle Services för elektronisk rapportering
+                - name: Ladda upp konfigurationer till Lifecycle Services
                   href: ../dev-itpro/analytics/tasks/er-upload-configuration-into-lifecycle-services.md?toc=/fin-and-ops/toc.json
-                - name: Importera en konfiguration från Lifecycle Services för elektronisk rapportering
+                - name: Importera konfigurationer från Lifecycle Services
                   href: ../dev-itpro/analytics/tasks/er-import-configuration-lifecycle-services.md?toc=/fin-and-ops/toc.json
-                - name: Hämta konfigurationer från Lifecycle Services
+                - name: Ladda ned konfigurationer från Lifecycle Services
                   href: ../dev-itpro/analytics/download-electronic-reporting-configuration-lcs.md?toc=/fin-and-ops/toc.json
-                - name: Importera konfigurationer för elektronisk rapportering
+                - name: Importera konfigurationer
                   href: ../dev-itpro/analytics/electronic-reporting-import-ger-configurations.md?toc=/fin-and-ops/toc.json
-            - name: Hantera modellmappningskonfigurationer för elektronisk rapportering
+            - name: Hantera modellmappningskonfigurationer
               href: ../dev-itpro/analytics/tasks/er-manage-model-mapping-configurations-july-2017.md?toc=/fin-and-ops/toc.json
               items:
-                - name: Skapa erforderliga konfigurationer för att importera data från en extern fil för elektronisk rapportering
+                - name: Skapa konfigurationer för att importera data från externa filer
                   href: ../dev-itpro/analytics/tasks/er-required-configurations-import-data.md?toc=/fin-and-ops/toc.json
                 - name: Konfigurera dataimport från SharePoint
                   href: ../dev-itpro/analytics/er-configure-data-import-sharepoint.md?toc=/fin-and-ops/toc.json
-            - name: Tolka inkommande dokument i Microsoft Excel
+            - name: Tolka inkommande dokument i Excel-format
               href: ../dev-itpro/analytics/parse-incoming-documents-excel.md?toc=/fin-and-ops/toc.json
             - name: Tolka inkommande dokument för att uppdatera programdata
               href: ../dev-itpro/analytics/parse-incoming-electronic-documents.md?toc=/fin-and-ops/toc.json
             - name: Tolka inkommande dokument i CSV-format
               href: ../dev-itpro/analytics/parse-incoming-electronic-documents-csv-format.md?toc=/fin-and-ops/toc.json
-            - name: Dela upp genererade filer utifrån filstorlek och innehållskvantitet
+            - name: Dela upp genererade XML-filer utifrån filstorlek och innehållskvantitet
               href: ../dev-itpro/analytics/er-split-files.md?toc=/fin-and-ops/toc.json
               items:
-                - name: Utöka funktioner för elektronisk rapportering
+                - name: Utöka listan med funktioner för elektronisk rapportering
                   href: ../dev-itpro/analytics/general-electronic-reporting-formulas-list-extension.md?toc=/fin-and-ops/toc.json
                 - name: 'Ändringar av API:et för ramverket för elektronisk rapportering för Application update 7.3'
                   href: ../dev-itpro/analytics/er-apis-app73.md?toc=/fin-and-ops/toc.json
@@ -2609,29 +2651,29 @@
               href: ../dev-itpro/analytics/power-bi-embedded-integration.md?toc=/fin-and-ops/toc.json
         - name: Anpassningsalternativ med PowerBI.com
           items:
-            - name: Power BI-integration
+            - name: Funktioner och tjänster som är tillgängliga via Power BI-integration
               href: ../dev-itpro/analytics/power-bi-integration.md?toc=/fin-and-ops/toc.json
-            - name: Fäst Power BI-rapporter vid arbetsytor
+            - name: Fästa Power BI-rapporter vid arbetsytor
               href: ../dev-itpro/analytics/pin-power-bi-reports.md?toc=/fin-and-ops/toc.json
         - name: Verktyg för att skapa och bygga ut lösningar
           items:
             - name: 'Analys, aggregerade mått och KPI-modellering'
               href: ../dev-itpro/analytics/analytics.md?toc=/fin-and-ops/toc.json
-            - name: Författa analytiska rapporter genom att använda Power BI Desktop
+            - name: Skapa analytiska rapporter med Power BI Desktop
               href: ../dev-itpro/analytics/author-distribute-power-bi-reports.md?toc=/fin-and-ops/toc.json
             - name: Modellera och aggregera data
               href: ../dev-itpro/analytics/model-aggregate-data.md?toc=/fin-and-ops/toc.json
-            - name: Lägg till ekonomiska dimensioner i aggregerade mått
+            - name: Lägga till ekonomiska dimensioner i aggregerade mått
               href: ../dev-itpro/analytics/add-financial-dimensions-aggregate-measurements.md?toc=/fin-and-ops/toc.json
-            - name: Lägg till analys i arbetsytor med Power BI Embedded
+            - name: Lägga till analyser i arbetsytor med Power BI Embedded
               href: ../dev-itpro/analytics/add-analytics-tab-workspaces.md?toc=/fin-and-ops/toc.json
-            - name: Hjälp för säkra analytiska arbetsytor och rapporter med Power BI Embedded
+            - name: Hjälp till att säkra analytiska arbetsytor och rapporter med Power BI Embedded
               href: ../dev-itpro/analytics/secure-analytical-workspaces.md?toc=/fin-and-ops/toc.json
         - name: Hanteringsverktyg för priviligierade användare
           items:
-            - name: Power BI-integration med enheten butik
+            - name: Power BI-integration med enhetslagring
               href: ../dev-itpro/analytics/power-bi-integration-entity-store.md?toc=/fin-and-ops/toc.json
-            - name: Underhåll enheten butik
+            - name: Lösa problem efter underhålla av enhetslagring
               href: ../dev-itpro/analytics/entity-store-maintenance.md
             - name: Konfigurera Power BI-integrering för arbetsytor
               href: ../dev-itpro/analytics/configure-power-bi-integration.md?toc=/fin-and-ops/toc.json
@@ -2803,10 +2845,10 @@
               href: ../supply-chain/master-planning/tasks/create-baseline-forecast.md
             - name: Ändra en efterfrågeprognos manuellt
               href: ../supply-chain/master-planning/tasks/modify-demand-forecast-manually.md
-    - name: Mobilapp
+    - name: Dynamics 365 for Unified Operations – mobilapp
       href: ../dev-itpro/mobile-apps/Mobile-app-home-page.md?toc=/fin-and-ops/toc.json
       items:
-        - name: Mobila arbetsytor
+        - name: Tillgängliga mobila arbetsytor
           href: ../dev-itpro/mobile-apps/mobile-workspaces-released.md?toc=/fin-and-ops/toc.json
           items:
             - name: Företagskatalog
@@ -2829,18 +2871,18 @@
               href: ../supply-chain/sales-marketing/sales-orders-mobile-workspace.md
             - name: Leverantörssamarbete
               href: ../supply-chain/procurement/vendor-collaboration-mobile-workspace.md
-        - name: Publicera en mobil arbetsyta
+        - name: Publicera mobila arbetsytor
           href: ../dev-itpro/mobile-apps/publish-mobile-workspace.md?toc=/fin-and-ops/toc.json
     - name: Integrering med Office
       href: ../dev-itpro/office-integration/office-integration.md?toc=/fin-and-ops/toc.json
       items:
         - name: 'Integrering med Office, självstudier'
           href: ../dev-itpro/office-integration/office-integration-tutorial.md?toc=/fin-and-ops/toc.json
-        - name: Använd Excel-tillägget
+        - name: Öppna enhetsdata i Excel och uppdatera dem med hjälp av Excel-tillägg
           href: ../dev-itpro/office-integration/use-excel-add-in.md?toc=/fin-and-ops/toc.json
         - name: Skapa Öppna i Excel-upplevelse
           href: ../dev-itpro/office-integration/office-integration-edit-excel.md?toc=/fin-and-ops/toc.json
-        - name: Lägg till mallar på menyn Öppna rader i Excel
+        - name: Lägga till mallar på menyn Öppna rader i Excel
           href: ../dev-itpro/user-interface/add-templates-open-lines-excel-menu.md?toc=/fin-and-ops/toc.json
         - name: Anpassa menyn Öppna i Microsoft Office
           href: ../dev-itpro/office-integration/customize-open-office-menu.md?toc=/fin-and-ops/toc.json
@@ -2985,9 +3027,9 @@
         - name: Nummerserier
           href: organization-administration/number-sequence-overview.md
           items:
-            - name: Ställ in enskilda nummerserier
+            - name: Ställa in enskilda nummerserier
               href: organization-administration/tasks/set-up-number-sequences-individual-basis.md
-            - name: Ställ in nummerserier med hjälp av en guide
+            - name: Ställa in nummerserier med hjälp av en guide
               href: organization-administration/tasks/set-up-number-sequences-wizard.md
         - name: Organisationer och organisationshierarkier
           href: organization-administration/organizations-organizational-hierarchies.md
@@ -2996,20 +3038,22 @@
               href: organization-administration/plan-organizational-hierarchy.md
             - name: Skapa en organisationshierarki
               href: organization-administration/tasks/create-organization-hierarchy.md
-            - name: Skapa en juridisk person
+            - name: Skapa juridiska personer
               href: organization-administration/tasks/create-legal-entity.md
-            - name: Skapa en driftenhet
+            - name: Skapa driftenheter
               href: organization-administration/tasks/create-operating-unit.md
         - name: Global adressbok
           href: organization-administration/overview-global-address-book.md
           items:
-            - name: Planera att konfigurera den globala adressboken
+            - name: Planera för den globala adressboken och andra adressböcker
               href: organization-administration/plan-configuration-global-address-book-additional-address-books.md
             - name: Konfigurera den globala adressboken
               href: organization-administration/tasks/configure-global-address-book.md
             - name: Vanliga frågor och svar om adressböcker
               href: organization-administration/qa-address-books.md
-        - name: Arbetsflöde
+            - name: Konfigurera adressböcker
+              href: organization-administration/tasks/address-books.md
+        - name: Arbetsflödessystem
           href: organization-administration/overview-workflow-system.md
           items:
             - name: Arbetsflödessystemets arkitektur
@@ -3018,55 +3062,55 @@
               href: organization-administration/workflow-elements.md
             - name: Arbetsflödesåtgärder
               href: organization-administration/workflow-actions.md
-            - name: Skapa ett arbetsflöde
+            - name: Skapa arbetsflöden
               href: organization-administration/create-workflow.md
               items:
                 - name: Konfigurera arbetsflödesegenskaper
                   href: organization-administration/configure-workflow-properties.md
-                - name: Konfigurera en manuell uppgift
+                - name: Konfigurera manuella uppgifter
                   href: organization-administration/configure-manual-task-workflow.md
-                - name: Konfigurera en automatisk uppgift
+                - name: Konfigurera automatiska uppgifter
                   href: organization-administration/configure-automated-task-workflow.md
-                - name: Konfigurera en godkännandeprocess
+                - name: Konfigurera godkännandeprocesser
                   href: organization-administration/configure-approval-process-workflow.md
-                - name: Konfigurera ett godkännandesteg
+                - name: Konfigurera godkännandesteg
                   href: organization-administration/configure-approval-step-workflow.md
-                - name: Konfigurera ett manuellt beslut
+                - name: Konfigurera manuella beslut
                   href: organization-administration/configure-manual-decision-workflow.md
-                - name: Konfigurera ett villkorligt beslut
+                - name: Konfigurera villkorliga beslut
                   href: organization-administration/configure-conditional-decision-workflow.md
-                - name: Konfigurera en parallell aktivitet
+                - name: Konfigurera parallella aktiviteter
                   href: organization-administration/configure-parallel-activity-workflow.md
-                - name: Konfigurera en parallell gren
+                - name: Konfigurera parallella grenar
                   href: organization-administration/configure-parallel-branch-workflow.md
-                - name: Konfigurera ett arbetsflöde för radartiklar
+                - name: Konfigurera arbetsflöden för radartiklar
                   href: organization-administration/configure-line-item-workflow.md
-            - name: Konfigurera batchjobbet för bearbetning av meddelandet
+            - name: Konfigurera batchjobbet Meddelandebehandling i arbetsflöde som kritiskt
               href: organization-administration/workflow-batch-job-critical.md
             - name: Delegera arbetsuppgifter i ett arbetsflöde
               href: organization-administration/tasks/delegate-work-items-workflow.md
             - name: Visa arbetsflödeshistorik
               href: organization-administration/tasks/view-workflow-history.md
-            - name: Göra det möjligt för användare att ta emot arbetsflödesrelaterade e-postmeddelanden
+            - name: Konfigurera systemet för att skicka arbetsflödesrelaterad e-post till användare
               href: organization-administration/tasks/users-receive-workflow-related-email-messages.md
-            - name: Rapporten Arbetsflödestyper
+            - name: Rapport för arbetsflödestyper
               href: organization-administration/workflow-types-report.md
         - name: Notifieringar
           href: get-started/alerts-overview.md
           items:
-            - name: Skapa notifieringar
+            - name: Skapa notifieringsregler
               href: get-started/create-alerts.md
-            - name: Batchbearbetning för notifieringar
+            - name: Batchbearbetning av notifieringar
               href: get-started/alerts-managing.md
         - name: Elektroniska signaturer
           href: organization-administration/electronic-signature-overview.md
           items:
-            - name: Ställ in elektroniska signaturer
+            - name: Ställa in elektroniska signaturer
               href: organization-administration/tasks/set-up-electronic-signatures.md
         - name: Ärendehantering
           href: organization-administration/cases.md
           items:
-            - name: 'Konfigurera ärendesäkerhet, processer och kategorier'
+            - name: 'Planera säkerhet, processer och kategorier för ärenden'
               href: organization-administration/plan-case-management.md
         - name: Postmallar
           href: organization-administration/record-templates.md
@@ -3792,7 +3836,7 @@
                       href: ../supply-chain/service-management/reverse-changes-in-a-dispatch-board.md
                     - name: Visa ej skickade serviceorder
                       href: ../supply-chain/service-management/view-undispatched-service-orders.md
-                    - name: 'Ändra en servicestrukturlista  '
+                    - name: 'Ändra en servicestrukturlista '
                       href: ../supply-chain/service-management/modify-service-bom.md
                 - name: Leverera service
                   items:
@@ -3893,7 +3937,7 @@
         - name: Policyer för lagerarbete
           href: ../supply-chain/warehousing/warehouse-work-policies.md
           items:
-            - name: 'Ställ in policyer för lagerarbete  '
+            - name: 'Ställ in policyer för lagerarbete '
               href: ../supply-chain/warehousing/tasks/set-up-warehouse-work-policies-2016-05.md
             - name: Lagerrörelse med tillhörande arbete i Lagerstyrning
               href: ../supply-chain/warehousing/move-inventory-associated-work.md
@@ -3935,11 +3979,11 @@
               href: ../supply-chain/inventory/inventory-blocking.md
             - name: Rullande inventering
               href: ../supply-chain/warehousing/cycle-counting.md
-            - name: 'Definiera rullande inventering  '
+            - name: 'Definiera rullande inventering '
               href: ../supply-chain/warehousing/tasks/define-cycle-counting-microsoft-dynamics-365-finance-operations-enterprise-edition-july-2017.md
             - name: Rullande inventering av del av platser
               href: ../supply-chain/warehousing/partial-location-cycle-counting.md
-            - name: 'Definiera rullande inventering av del av platser  '
+            - name: 'Definiera rullande inventering av del av platser '
               href: ../supply-chain/warehousing/tasks/define-partial-location-cycle-counting-process-microsoft-dynamics-365-finance-operations-enterprise-edition-july-2017-update.md
             - name: Lagerjournal
               href: ../supply-chain/inventory/inventory-journals.md
@@ -3958,7 +4002,7 @@
               href: ../supply-chain/warehousing/material-replenishment-withdrawal-kanban.md
             - name: Ställ in en min-max-process för lagerpåfyllnad
               href: ../supply-chain/warehousing/tasks/set-up-min-max-replenishment-process.md
-        - name: 'Installera och konfigurera lagerstyrningsappen '
+        - name: Installera och konfigurera lagerstyrningsappen
           href: ../supply-chain/warehousing/install-configure-warehousing-app.md
           items:
             - name: Konfigurera fältnamn i lagerstyrningsapp

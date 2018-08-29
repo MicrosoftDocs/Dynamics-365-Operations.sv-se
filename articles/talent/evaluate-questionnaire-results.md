@@ -1,5 +1,5 @@
 ---
-title: "Visa och utvärdera resultaten för en enkät"
+title: "Visa och utvärdera resultaten av enkäter"
 description: "Detta hjälpavsnitt förklarar hur visar och utvärderar resultaten för enkäter som svarande slutför."
 author: kherr75
 manager: AnnBe
@@ -19,14 +19,14 @@ ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: f87238b3b2f6e7cc68bf2f1a7cd3a21254f3599a
+ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
+ms.openlocfilehash: 9fd4af5589cfab2a92c913639f1192029eb7c592
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="view-and-evaluate-the-results-of-a-questionnaire"></a>Visa och utvärdera resultaten för en enkät
+# <a name="view-and-evaluate-the-results-of-questionnaires"></a>Visa och utvärdera resultaten av enkäter
 
 [!include [banner](includes/banner.md)]
 
@@ -34,11 +34,11 @@ Detta hjälpavsnitt förklarar hur visar och utvärderar resultaten för enkäte
 
 Efter att svaranden har slutfört en enkät går det att visa och utvärdera enkätresultaten på följande sätt:
 
--   **Slutförda svarssessioner** – Visa information om de enkäter som svarande har slutfört och generera rapporter om du vill summera svar och eventuella poäng.
+-   **Slutförda svarssessioner** – Visa information om de enkäter som svarande har slutfört och skapa rapporter om du vill summera svar och eventuella poäng.
 -   **Resultatgrupper** – Visa information om resultatgrupper för statistik för enkäter. Resultatgruppsstatistiken kan skapas för antingen en enskild svarssession för en enkät eller för alla svarssessioner.
 -   **Enkätstatistik** – Ange villkor för att beräkna statistik för en viss grupp svarande.
 
-Du kan även generera olika rapporter om du vill visa resultat sorterade efter person, svarssession eller resultatgrupp. Följande rapporter som är relaterad till ifyllda enkäter är tillgängliga:
+Du kan även skapa olika rapporter om du vill visa resultat sorterade efter person, svarssession eller resultatgrupp. Följande rapporter som är relaterad till ifyllda enkäter är tillgängliga:
 
 -   Svar
 -   Svar per enkät
@@ -52,7 +52,7 @@ Efter att svarande slutför en enkät kan du visa resultaten för slutförda sva
 -   En viss enkät
 -   En viss person
 
-På sidan **Svar** kan du visa information om svar, poäng, den svarandes svar i varje resultatgrupp och frågehierarkin som användes på den valda enkäten, om en frågehierarki användes. Du kan även generera och skriva ut följande rapporter:
+På sidan **Svar** kan du visa information om svar, poäng, den svarandes svar i varje resultatgrupp och frågehierarkin som användes på den valda enkäten, om en frågehierarki användes. Du kan även skapa och skriva ut följande rapporter:
 
 -   **Resultatrapport** – Den här rapporten visar en grafisk representation av poäng per resultatgrupp för den valda svarssessionen.
 -   **Svarsrapport** – Rapporten visar de svaren som svarande valde för varje fråga i enkäten.

@@ -22,7 +22,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: 66e2fdbf7038a2c15fb373d4f96cd6e6c4c87ea0
 ms.openlocfilehash: 1361bce94f6542112cf29e369f2238f211d0647e
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/23/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
@@ -39,7 +39,7 @@ Följande parametrar påverkar hur kvittningar bearbetas i Microsoft Dynamics 36
   -   **Ospecifikt** – Kassarabattbeloppet reduceras med överbetalningsbeloppet. Det här beteendet används alltid oavsett om överbetalningsbeloppet är större än eller mindre än det belopp som angetts i fältet **Maximal över- och underbetalning** .
   -   **Specifikt** – Överbetalningsbeloppet bokförs antingen till ett redovisningskonto för kassarabattskillnad eller återstår som ett saldo på kundens konto. Det specifika beteendet beror på om överbetalningsbeloppet är mellan 0,00 och det belopp som angetts i fältet **Maximal över- och underbetalning**, eller om överbetalningsbeloppet är större än beloppet **Maximal över- och underbetalning** .
 - **Maximal öresdifferens** – Ange den tillåtna maximala öresdifferensen för kvittningstransaktioner. Om öresdifferensen är lika med eller mindre än skillnaden som angetts i det här fältet, bokförs skillnaden på det redovisningskonto för öresdifferenser som är angivet på sidan **Konton för automatiska transaktioner**.
-- **Maximal över- och underbetalning** – Ange accepterat belopp för över- och underbetalning. Om du vill beräkna moms på över- och underbetalningar markerar du kryssrutan **Moms på över-/underbetalning** på fliken **Moms** i formuläret **Allmänna redovisningsparametrar**.
+- **Maximal över- och underbetalning** – Ange accepterat belopp för över- och underbetalning. Om du vill beräkna skatt på över- och underbetalningar markerar du kryssrutan **Moms på över-/underbetalning** på fliken **Moms** i formuläret **Allmänna redovisningsparametrar**.
   -   Om över-/underbetalningen leder till en differens som är mindre än skillnaden som är definierad i fältet **Maximal öresdifferens**, bokförs öresdifferensbeloppet på öresdifferenskontot.
   -   Om över-/underbetalningen leder till en differens som är större än skillnaden som har definierats i fältet **Maximal öresdifferens**, bokförs öresdifferensbeloppet på skillnadskontot som är valt för bokföringstypen **Kundkassarabatt** eller **Leverantörskassarabatt** på sidan **Konton för automatiska transaktioner**.
 - **Beräkna kassarabatter för delvisa betalningar** – Ställ in alternativet på **Ja** för att aktivera kassarabatter som automatiskt ska beräknas för delvisa betalningar.

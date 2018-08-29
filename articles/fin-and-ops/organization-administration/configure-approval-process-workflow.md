@@ -1,5 +1,5 @@
 ---
-title: "Konfigurera en godkännandeprocess i ett arbetsflöde"
+title: "Konfigurera godkännandeprocesser i ett arbetsflöde"
 description: "Använd följande procedur när du vill konfigurera egenskaperna för godkännandeprocessen."
 author: sericks007
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: bf3523b2768b197b3c75b9a8490f621eced91a7a
+ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
+ms.openlocfilehash: 212e9c32c7bb22b0ee0450e04b4090c540df7b54
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="configure-an-approval-process-in-a-workflow"></a>Konfigurera en godkännandeprocess i ett arbetsflöde
+# <a name="configure-approval-processes-in-a-workflow"></a>Konfigurera godkännandeprocesser i ett arbetsflöde
 
 [!include [banner](../includes/banner.md)]
 
