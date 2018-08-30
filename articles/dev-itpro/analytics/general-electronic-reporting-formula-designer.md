@@ -1,5 +1,5 @@
 ---
-title: Formeldesigner i elektronisk rapportering
+title: Formeldesigner i elektronisk rapportering (ER)
 description: "Detta avsnitt avslutar hur du använder formeldesignern inom Elektronisk rapportering (ER)."
 author: NickSelin
 manager: AnnBe
@@ -19,14 +19,14 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2fc887668171175d436b9eb281a35c1c9d089591
-ms.openlocfilehash: 8d8ab61b7aea84332120e6de9fc29a2a4c9598ca
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: d3ac6ea7b104428f364385e1fd3ed221cae8498d
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/25/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="formula-designer-in-electronic-reporting"></a>Formeldesigner i elektronisk rapportering
+# <a name="formula-designer-in-electronic-reporting-er"></a>Formeldesigner i elektronisk rapportering (ER)
 
 [!include [banner](../includes/banner.md)]
 
@@ -37,7 +37,7 @@ Detta avsnitt avslutar hur du använder formeldesignern inom Elektronisk rapport
 ER stöder formeldesignern. Därför kan du vid designtillfället konfigurera uttryck som kan användas för följande uppgifter under körning:
 
 - Omvandla data från en Microsoft Dynamics 365 for Finance and Operations-databas som ska användas i en ER-datamodell utformad som en datakälla för ER- format. (Till exempel kan dessa omvandlingar omfatta konvertering, filtrering och gruppering av datatyp.)
-- Formatera data som ska skickas till ett genererande elektroniskt dokument i enlighet med layout och villkor för ett specifikt ER-format. (Till exempel kan formateringen göras i enlighet med det begärda språket eller kulturen, eller i enlighet med kodning).
+- Formatera data som ska skickas till ett skapande elektroniskt dokument i enlighet med layout och villkor för ett specifikt ER-format. (Till exempel kan formateringen göras i enlighet med det begärda språket eller kulturen, eller i enlighet med kodning).
 - Kontrollera processen för generering av elektroniska dokument. (Till exempel kan uttryck aktivera eller inaktivera utdata från specifika element av formatet, beroende på bearbetade data. De kan också avbryta processen att skapa dokument eller skicka meddelanden till användare.)
 
 Du kan öppna sidan **Formula designer** när du utför någon av följande åtgärder:
@@ -74,17 +74,17 @@ Vid körning avrundar den designade formeln **ROUND (Intrastat.AmountMST 2)** v�
 
 ### <a name="data-formatting"></a>Data formatering
 
-ER-formeldesignern kan användas för att definiera uttryck som formaterar data som tagits emot från datakällor, så att dessa data kan skickas som en del av det genererade elektroniska dokumentet. Du har kanske en formatering som måste användas som en typisk regel och som ska återanvändas för ett format. Då kan du ange den formateringen en gång för alla i formatkonfigurationen, som en namngiven omvandling som innehåller ett uttryck med formatering. Den namngivna transformeringen kan sedan länkas till flera formatkomponenter, där utdata måste vara formaterade enligt det uttryck du skapade.
+ER-formeldesignern kan användas för att definiera uttryck som formaterar data som tagits emot från datakällor, så att dessa data kan skickas som en del av det skapade elektroniska dokumentet. Du har kanske en formatering som måste användas som en typisk regel och som ska återanvändas för ett format. Då kan du ange den formateringen en gång för alla i formatkonfigurationen, som en namngiven omvandling som innehåller ett uttryck med formatering. Den namngivna transformeringen kan sedan länkas till flera formatkomponenter, där utdata måste vara formaterade enligt det uttryck du skapade.
 
 Bilden nedan visar hur du skapar en transformering av den här typen. I det här exemplet trunkerar **TrimmedString**-transformeringen inkommande data för datatypen **String** genom att ta bort inledande och avslutande blanksteg. Därefter returneras det trunkerade strängvärdet.
 
 [![Transformering](./media/picture-transformation-design.jpg)](./media/picture-transformation-design.jpg)
 
-Bilden nedan visar hur en transformering av den här typen kan användas. I det här exemplet skickar flera formatkomponenter text som utdata till det genererande elektroniska dokumentet vid körning. Dessa formatkomponenter hänvisar till **TrimmedString**-transformationen med namn.
+Bilden nedan visar hur en transformering av den här typen kan användas. I det här exemplet skickar flera formatkomponenter text som utdata till det skapande elektroniska dokumentet vid körning. Dessa formatkomponenter hänvisar till **TrimmedString**-transformationen med namn.
 
 [![Transformering används](./media/picture-transformation-usage.jpg)](./media/picture-transformation-usage.jpg)
 
-När formatkomponenter, såsom komponenten **partyName** i föregående illustration, hänvisar till transformeringen **TrimmedString** sänds text som utdata till det genererande elektroniska dokumentet. Denna text inkluderar inte inledande eller avslutande blanksteg.
+När formatkomponenter, såsom komponenten **partyName** i föregående illustration, hänvisar till transformeringen **TrimmedString** sänds text som utdata till det skapande elektroniska dokumentet. Denna text inkluderar inte inledande eller avslutande blanksteg.
 
 Om du har en formatering som måste tillämpas separat kan du införa den formateringen som ett individuellt uttryck för en bindning av en särskild formatkomponent. Bilden visar ett uttryck av den här typen. I det här exemplet är **partyType**-formatkomponenten bunden till datakällan via ett uttryck som omvandlar inkommande data från fältet **Model.Company.RegistrationType** i datakällan till versal text. Uttrycket skickar sedan texten som utdata till det elektroniska dokumentet.
 
@@ -92,11 +92,11 @@ Om du har en formatering som måste tillämpas separat kan du införa den format
 
 ### <a name="process-flow-control"></a>Processen flödeskontroll
 
-ER-formeldesignern kan användas för att definiera uttryck som styr processflödet för genererande elektroniska dokument. Du kan utföra följande uppgifter:
+ER-formeldesignern kan användas för att definiera uttryck som styr processflödet för skapande elektroniska dokument. Du kan utföra följande uppgifter:
 
 - Definiera villkor som fastställer när processen för att skapa ett dokument måste stoppas.
 - Definiera uttryck som antingen skapar meddelanden till användaren om stoppade processer eller sänder körningsloggmeddelanden om den pågående processen att skapa en rapport.
-- Definiera filnamnen på de genererande elektroniska dokumenten och styr villkoren för hur de skapas.
+- Definiera filnamnen på de skapande elektroniska dokumenten och styr villkoren för hur de skapas.
 
 Varje regel i processen flödeskontroll är utformad som en individuell validering. Bilden nedan visar en validering av den här typen. Här följer en förklaring av konfigureringen i det här exemplet:
 
@@ -106,11 +106,11 @@ Varje regel i processen flödeskontroll är utformad som en individuell valideri
 
 [![Validering](./media/picture-validation.jpg)](./media/picture-validation.jpg)
 
-ER-formeldesignern kan även användas för att generera ett filnamn för ett genererande elektroniskt dokument och styra processen för hur en fil skapas. Bilden nedan visar utformningen av en styrning av ett processflöde av den här typen. Här följer en förklaring av konfigureringen i det här exemplet:
+ER-formeldesignern kan även användas för att skapa ett filnamn för ett skapande elektroniskt dokument och styra processen för hur en fil skapas. Bilden nedan visar utformningen av en styrning av ett processflöde av den här typen. Här följer en förklaring av konfigureringen i det här exemplet:
 
 - Listan med poster från datakällan **modell. Intrastat-** är uppdelat i batchar. Varje batch innehåller upp till 1 000 poster.
 - Utdata skapar en zip-fil som innehåller en fil i XML-format för varje skapad batch.
-- Ett uttryck returnerar ett filnamn för genererande elektroniska dokument genom att konkatenera filnamnet och filnamnstillägget. För den andra batchen och alla efterföljande batchar innehåller filnamnet batchens ID som ett suffix.
+- Ett uttryck returnerar ett filnamn för skapande elektroniska dokument genom att konkatenera filnamnet och filnamnstillägget. För den andra batchen och alla efterföljande batchar innehåller filnamnet batchens ID som ett suffix.
 - Ett uttryck möjliggör (genom att returnera **TRUE**) processen för att skapa en fil för batchar som innehåller minst en post.
 
 [![Filkontroll](./media/picture-file-control.jpg)](./media/picture-file-control.jpg)
@@ -175,7 +175,7 @@ Om ett uttryck omfattar flera på varandra följande operatorer med samma rangor
 
 #### <a name="references"></a>Referenser
 
-Alla datakällor för den aktuella ER-komponenten som är tillgängliga under utformningen av ett uttryck kan användas som namngivna referenser. (Den aktuella komponenten ER kan vara antingen en modell eller ett format.) Aktuell ER-datamodell innehåller exempelvis datakällan **ReportingDate** och denna datakälla returnerar ett värde av datatypen **DATETIME**. I syfte att korrekt formatera värdet i genererande dokument kan du referera datakällan i uttrycket på följande sätt: **DATETIMEFORMAT (ReportingDate, "dd-mm-yyyy")**.
+Alla datakällor för den aktuella ER-komponenten som är tillgängliga under utformningen av ett uttryck kan användas som namngivna referenser. (Den aktuella komponenten ER kan vara antingen en modell eller ett format.) Aktuell ER-datamodell innehåller exempelvis datakällan **ReportingDate** och denna datakälla returnerar ett värde av datatypen **DATETIME**. I syfte att korrekt formatera värdet i skapande dokument kan du referera datakällan i uttrycket på följande sätt: **DATETIMEFORMAT (ReportingDate, "dd-mm-yyyy")**.
 
 Alla tecken i referenser till en datakälla som inte representerar en bokstav i alfabetet måste föregås av en apostrof ('). Om namnet på en refererad datakälla innehåller minst en symbol som inte representerar inte en bokstav i alfabetet måste namnet visas inom enkla citattecken. (Dessa icke-alfabetiska symboler kan till exempel vara skiljetecken eller andra skrivna symboler.) Här följer några exempel:
 
@@ -261,7 +261,7 @@ I följande tabeller finns beskrivningar av datamanipuleringsfunktioner kan anv�
 </td>
 <td>Följande bild visar hur en datakälla på en <strong>rad</strong> skapas av tre poster. Den här listan är indelad i batchar som innehåller högst två poster.
 <p><a href="./media/picture-splitlist-datasource.jpg"><img src="./media/picture-splitlist-datasource.jpg" alt="Data source that is divided into batches" class="alignnone wp-image-290681 size-full" width="397" height="136" /></a></p>
-<p>Följande illustration visar layouten på det designade formatet. I den här formatlayouten skapas bindningar till datakällans <strong>rader</strong> för att generera utdata i XML-format. Dessa utdata visar enskilda noder för varje batch och poster i den.</p>
+<p>Följande illustration visar layouten på det designade formatet. I den här formatlayouten skapas bindningar till datakällans <strong>rader</strong> för att skapa utdata i XML-format. Dessa utdata visar enskilda noder för varje batch och poster i den.</p>
 <p><a href="./media/picture-splitlist-format.jpg"><img src="./media/picture-splitlist-format.jpg" alt="Format layout that has bindings to a data source" class="alignnone wp-image-290691 size-full" width="374" height="161" /></a></p>
 <p>Följande illustration visar resultatet när det designade formatet har körts.</p>
 <a href="./media/picture-splitlist-result.jpg"><img src="./media/picture-splitlist-result.jpg" alt="Result of running the format" class="alignnone wp-image-290701 size-full" width="358" height="191" /></a>
@@ -304,12 +304,12 @@ I följande tabeller finns beskrivningar av datamanipuleringsfunktioner kan anv�
 </tr>
 <tr>
 <td>ALLITEMS (path)</td>
-<td>Den här funktionen körs som ett urval i minnet. Returnerar en ny platt lista som representerar alla artiklar som matchar den definierade sökvägen. Sökvägen måste anges som en giltig datakällsökväg för ett datakällselement av datatypen ”postlista”. Dataelement som sökväg och datum bör generera ett fel i ER-uttrycksgeneratorn vid designtidpunkten.</td>
+<td>Den här funktionen körs som ett urval i minnet. Returnerar en ny platt lista som representerar alla artiklar som matchar den definierade sökvägen. Sökvägen måste anges som en giltig datakällsökväg för ett datakällselement av datatypen ”postlista”. Dataelement som sökväg och datum bör skapa ett fel i ER-uttrycksgeneratorn vid designtidpunkten.</td>
 <td>Om du anger <strong>SPLIT(&quot;abcdef&quot; , 2)</strong> som en datakälla (DS), returnerar <strong>COUNT( ALLITEMS (DS.Value))</strong> <strong>3</strong>.</td>
 </tr>
 <tr>
 <td>ALLITEMSQUERY (sökväg)</td>
-<td>Den här funktionen körs som en sammanslagen SQL-fråga. Returnerar en ny platt lista som representerar alla artiklar som matchar den definierade sökvägen. De angivna sökvägen måste anges som en giltig datakällsökväg för ett datakällselement av datatypen ”postlista” och den måste innehålla minst en relation. Dataelement som sökväg och datum bör generera ett fel i ER-uttrycksgeneratorn vid designtidpunkten.</td>
+<td>Den här funktionen körs som en sammanslagen SQL-fråga. Returnerar en ny platt lista som representerar alla artiklar som matchar den definierade sökvägen. De angivna sökvägen måste anges som en giltig datakällsökväg för ett datakällselement av datatypen ”postlista” och den måste innehålla minst en relation. Dataelement som sökväg och datum bör skapa ett fel i ER-uttrycksgeneratorn vid designtidpunkten.</td>
 <td>Definiera följande datakällor i din modellmappning:
 <ul>
 <li><strong>CustInv</strong> (typen <strong>Registerposter</strong>), som refererar till tabellen CustInvoiceTable</li> 
@@ -345,7 +345,7 @@ VÄLJ ... FRÅN CUSTINVOICETABLE T1 KORSKOPPLA CUSTINVOICEJOUR T2 KORSKOPPLA CUS
 </td>
 <td>I följande illustration har datakällan <strong>Enumerated</strong> skapat en numrerad lista över leverantörsposter från datakällan <strong>Vendors</strong> som refererar till tabellen VendTable.
 <p><a href="./media/picture-enumerate-datasource.jpg"><img src="./media/picture-enumerate-datasource.jpg" alt="Enumerated data source" class="alignnone wp-image-290711 size-full" width="387" height="136" /></a></p>
-<p>På bilden nedan visas formatet. I den här formatlayouten skapas bindningar för att generera utdata i XML-format. Dessa utdata visar enskilda leverantörer som fasta noder.</p>
+<p>På bilden nedan visas formatet. I den här formatlayouten skapas bindningar för att skapa utdata i XML-format. Dessa utdata visar enskilda leverantörer som fasta noder.</p>
 <p><a href="./media/picture-enumerate-format.jpg"><img src="./media/picture-enumerate-format.jpg" alt="Format that has data bindings" class="alignnone wp-image-290721 size-full" width="414" height="138" /></a></p>
 <p>Följande illustration visar resultatet när det designade formatet har körts.</p>
 <a href="./media/picture-enumerate-result.jpg"><img src="./media/picture-enumerate-result.jpg" alt="Result of running the format" class="alignnone wp-image-290731 size-full" width="567" height="176" /></a>
@@ -385,7 +385,7 @@ I samband med körning returnerar fälten <strong>Label</strong> och <strong>Des
 <p><a href="./media/ger-listoffields-function-format-design.png"><img src="./media/ger-listoffields-function-format-design.png" alt="Format design" class="alignnone size-full wp-image-1204043" width="466" height="221" /></a></p>
 <p>Följande illustration visar resultatet när det designade formatet har körts.</p>
 <p><a href="./media/ger-listoffields-function-format-output.png"><img src="./media/ger-listoffields-function-format-output.png" alt="Format output" class="alignnone size-full wp-image-1204053" width="585" height="158" /></a></p>
-<blockquote>[!NOTE]<br>Baserat på språkinställningarna i de överordnade FILE- och FOLDER-elementen infogas översatt text för etiketter och beskrivningar i utdata till ER-formatet.</blockquote>
+<blockquote>[!NOTE] Baserat på språkinställningarna i de överordnade FILE- och FOLDER-elementen infogas översatt text för etiketter och beskrivningar i utdata till ER-formatet.</blockquote>
 </td>
 </tr>
 <tr>
@@ -426,7 +426,7 @@ I det här fallet kan du använda följande uttryck för att få etiketten på u
 <p><a href="./media/ger-splitlistbylimit-datasources-1.png"><img src="./media/ger-splitlistbylimit-datasources-1.png" alt="Data sources for the adjusted format" class="alignnone size-full wp-image-1204093" width="645" height="507" /></a></p>
 <p>Följande illustration visar resultatet när det anpassade formatet har körts.</p>
 <p><a href="./media/ger-splitlistbylimit-output-1.png"><img src="./media/ger-splitlistbylimit-output-1.png" alt="Output of the adjusted format" class="alignnone size-full wp-image-1204113" width="676" height="611" /></a></p>
-<blockquote>[!NOTE]<br>Gränsen tillämpas inte på den sista artikeln i den ursprungliga listan eftersom värdet (11) i gränskällan (vikt) överskrider angiven gräns (9). Använd antingen funktionen <strong>WHERE</strong> eller uttrycket <strong>Enabled</strong> för respektive formatelement för att ignorera (hoppa över) underlistor i samband med rapportgenerering, efter behov.</blockquote>
+<blockquote>[!NOTE] Gränsen tillämpas inte på den sista artikeln i den ursprungliga listan eftersom värdet (11) i gränskällan (vikt) överskrider angiven gräns (9). Använd antingen funktionen <strong>WHERE</strong> eller uttrycket <strong>Enabled</strong> för respektive formatelement för att ignorera (hoppa över) underlistor i samband med rapportgenerering, efter behov.</blockquote>
 </td>
 </tr>
 <tr>
@@ -456,8 +456,8 @@ I det här fallet kan du använda följande uttryck för att få etiketten på u
 | NUMBERVALUE (string, decimal separator, digit grouping separator) | Konverterar den definierade strängen till ett tal. Den angivna decimalavgränsaren används mellan heltal och decimaler i ett decimaltal. Den angivna gruppavgränsaren används som tusentalsavgränsare. | **NUMBERVALUE("1 234,56", ",", " ")** returnerar värdet **1234.56**. |
 | VALUE (string) | Konverterar den definierade strängen till ett tal. Kommatecken och punkter (.) betraktas som decimalavgränsare och ett inledande bindestreck (-) används som ett negativt tecken. Meddela att ett undantag inträffat om den specificerade strängen innehåller andra icke-numeriska tecken. | **VALUE ("1 234,56")** kastar ett undantag. |
 | ROUND (number, decimals) | Returnera det specificerade numret efter att det avrundats till det angivna antalet decimaler:<ul><li>Om värdet för parametern **decimaler** är större än 0 (noll) avrundas det specificerade numret till det angivna antalet decimaler.</li><li>Om värdet för parametern **decimaler** är **0** (noll) avrundas det specificerade numret till det angivna antalet decimaler.</li><li>Om värdet för parametern **decimaler** är mindre än 0 (noll) avrundas det specificerade numret till vänster om decimaltecknet.</li></ul> | **ROUND (1200.767, 2)** avrundar till två decimaler och returnerar **1200.77**. **ROUND (1200.767, -3)** avrundar till närmaste multipel av 1 000 och returnerar **1000**. |
-| ROUNDDOWN (number, decimals) | Returnera det specificerade numret efter att det avrundats ned till det angivna antalet decimaler.<blockquote>[!NOTE]<br>Den här funktionen fungerar som **ROUND** men avrundar alltid det specificerade numret nedåt (mot noll).</blockquote> | **ROUNDDOWN (1200.767, 2)** avrundar nedåt till två decimaler och returnerar **1200.76**. **ROUNDDOWN (1700.767, -3)** avrundar nedåt till närmaste multipel av 1 000 och returnerar **1000**. |
-| ROUNDUP (number, decimals) | Returnera det specificerade numret efter att det avrundats upp till det angivna antalet decimaler.<blockquote>[!NOTE]<br>Den här funktionen fungerar som **ROUND** men avrundar alltid det specificerade numret uppåt (från noll).</blockquote> | **ROUNDUP (1200.763, 2)** avrundar uppåt till två decimaler och returnerar **1200.77**. **ROUNDUP (1200.767, -3)** avrundar uppåt till närmaste multipel av 1 000 och returnerar **2000**. |
+| ROUNDDOWN (number, decimals) | Returnera det specificerade numret efter att det avrundats ned till det angivna antalet decimaler.<blockquote>[!NOTE] Den här funktionen fungerar som **ROUND** men avrundar alltid det specificerade numret nedåt (mot noll).</blockquote> | **ROUNDDOWN (1200.767, 2)** avrundar nedåt till två decimaler och returnerar **1200.76**. **ROUNDDOWN (1700.767, -3)** avrundar nedåt till närmaste multipel av 1 000 och returnerar **1000**. |
+| ROUNDUP (number, decimals) | Returnera det specificerade numret efter att det avrundats upp till det angivna antalet decimaler.<blockquote>[!NOTE] Den här funktionen fungerar som **ROUND** men avrundar alltid det specificerade numret uppåt (från noll).</blockquote> | **ROUNDUP (1200.763, 2)** avrundar uppåt till två decimaler och returnerar **1200.77**. **ROUNDUP (1200.767, -3)** avrundar uppåt till närmaste multipel av 1 000 och returnerar **2000**. |
 
 ### <a name="data-conversion-functions"></a>Funktioner för datakonvertering
 
@@ -474,8 +474,8 @@ I det här fallet kan du använda följande uttryck för att få etiketten på u
 
 | Funktion | beskrivning | Exempel |
 |----------|-------------|---------|
-| NULLCONTAINER (list) | Returnerar en **null**-post som har samma struktur som den definierade postlistan eller posten.<blockquote>[!NOTE]<br>Den här funktionen är föråldrad. Använd **EMPTYRECORD** i stället.</blockquote> | **NULLCONTAINER (SPLIT ("abc", 1))** returnerar en ny tom post som har samma struktur som listan som returneras från **SPLIT**-funktionen. |
-| EMPTYRECORD (record) | Returnerar en **null**-post som har samma struktur som den definierade postlistan eller posten.<blockquote>[!NOTE]<br>En **noll** post är en post där alla fält innehåller ett tomt värde. Ett tomt värde är **0** (noll) för tal, en tom sträng för strängar, osv.</blockquote> | **EMPTYRECORD (SPLIT ("abc", 1))** returnerar en ny tom post som har samma struktur som listan som returneras från **SPLIT**-funktionen. |
+| NULLCONTAINER (list) | Returnerar en **null**-post som har samma struktur som den definierade postlistan eller posten.<blockquote>[!NOTE] Den här funktionen är föråldrad. Använd **EMPTYRECORD** i stället.</blockquote> | **NULLCONTAINER (SPLIT ("abc", 1))** returnerar en ny tom post som har samma struktur som listan som returneras från **SPLIT**-funktionen. |
+| EMPTYRECORD (record) | Returnerar en **null**-post som har samma struktur som den definierade postlistan eller posten.<blockquote>[!NOTE] En **noll** post är en post där alla fält innehåller ett tomt värde. Ett tomt värde är **0** (noll) för tal, en tom sträng för strängar, osv.</blockquote> | **EMPTYRECORD (SPLIT ("abc", 1))** returnerar en ny tom post som har samma struktur som listan som returneras från **SPLIT**-funktionen. |
 
 ### <a name="text-functions"></a>Textfunktioner
 
@@ -522,14 +522,14 @@ I det här fallet kan du använda följande uttryck för att få etiketten på u
 <td>CHAR (number)</td>
 <td>Returnerar teckensträngen som har en referens till det definierade Unicode-numret.</td>
 <td><strong>CHAR (255)</strong> returnerar <strong>&quot;ÿ&quot;</strong>.
-<blockquote>[!NOTE]<br>Den sträng som returneras beror på viken kodning som har valts i det överordnade formatelementet FILE. För listan över vilka koder som stöds se <a href="https://msdn.microsoft.com/en-us/library/system.text.encoding(v=vs.110).aspx">Encoding class</a>.</blockquote>
+<blockquote>[!NOTE] Den sträng som returneras beror på viken kodning som har valts i det överordnade formatelementet FILE. För listan över vilka koder som stöds se <a href="https://msdn.microsoft.com/en-us/library/system.text.encoding(v=vs.110).aspx">Encoding class</a>.</blockquote>
 </td>
 </tr>
 <tr>
 <td>CONCATENATE (string 1 [, string 2, …])</td>
 <td>Returnera alla specificerade textsträngar efter att de har sammanfogats till en sträng.</td>
 <td><strong>CONCATENATE (&quot;abc&quot;, &quot;def&quot;)</strong> returnerar <strong>&quot;abcdef&quot;</strong>.
-<blockquote>[!NOTE]<br>Uttrycket <strong>&quot;abc&quot; &amp; &quot;def&quot;</strong> returnerar också <strong>&quot;abcdef&quot;</strong>.</blockquote>
+<blockquote>[!NOTE] Uttrycket <strong>&quot;abc&quot; &amp; &quot;def&quot;</strong> returnerar också <strong>&quot;abcdef&quot;</strong>.</blockquote>
 </td>
 </tr>
 <tr>
@@ -552,7 +552,7 @@ I det här fallet kan du använda följande uttryck för att få etiketten på u
 <td>Returnera den definierade strängen efter att den har formaterats genom att byta ut alla förekomster av <strong>%N</strong> med argumentet <em>n</em>. Argumenten är strängar. Om ett argument inte har angetts för en parameter returneras parametern som <strong>&quot;%N&quot;</strong> i strängen. För värden av typen <strong>real</strong> är strängkonverteringen begränsad till två decimaler.</td>
 <td>I det här exemplet returnerar datakällan <strong>PaymentModel</strong> listan över kundposter via komponenten <strong>Customer</strong> och bearbetar datumvärdet via fältet <strong>ProcessingDate</strong>.
 <p><a href="./media/picture-format-datasource.jpg"><img src="./media/picture-format-datasource.jpg" alt="PaymentModel data source" class="alignnone wp-image-290751 size-full" width="293" height="143" /></a></p>
-<p>I ER-formatet, som har utformats för att generera en elektronisk fil för utvalda kunder, väljs <strong>PaymentModel</strong> som en datakälla och styr processflödet. Ett undantag meddelas användaren när en vald kund stoppas för det datum då rapporten bearbetas. Formeln, som utformats för denna typ av bearbetningsstyrning, kan endast använda följande resurser:</p>
+<p>I ER-formatet, som har utformats för att skapa en elektronisk fil för utvalda kunder, väljs <strong>PaymentModel</strong> som en datakälla och styr processflödet. Ett undantag meddelas användaren när en vald kund stoppas för det datum då rapporten bearbetas. Formeln, som utformats för denna typ av bearbetningsstyrning, kan endast använda följande resurser:</p>
 <ul>
 <li>Finance and Operations-etikett SYS70894, som har följande text:
 <ul>
@@ -571,7 +571,7 @@ I det här fallet kan du använda följande uttryck för att få etiketten på u
 <p>&quot;Inget att skriva ut. Customer Litware Retail is stopped for 12/17/2015."&quot;</p>
 <p>Om samma rapport bearbetas för <strong>Litware-butikskunden</strong> den 17 december 2015, i kulturen <strong>DE</strong> och på språket <strong>DE</strong>, kommer denna formel att returnera följande text som använder ett annat datumformat:</p>
 <p>&quot;Nichts zu drucken. Gäldenären 'Litware Butik' stoppad 2015-12-17.".&quot;</p>
-<blockquote>[!NOTE]<br>Följande syntax tillämpas i ER-formler för etiketter:
+<blockquote>[!NOTE] Följande syntax tillämpas i ER-formler för etiketter:
 <ul>
 <li><strong>För etiketter från Finance and Operations-resurser:</strong> <strong>@&quot;X&quot;</strong>, där X är etikettens ID i programobjektträdet (Application Object Tree, AOT)</li>
 <li><strong>För etiketter i ER-konfigurationer:</strong> <strong>@&quot;GER_LABEL:X&quot;</strong>, där X är etikettens ID i ER-konfigurationen</li>
@@ -586,8 +586,8 @@ I det här fallet kan du använda följande uttryck för att få etiketten på u
 </tr>
 <tr>
 <td>NUMERALSTOTEXT (nummer, språk, valuta, skriv ut flagga för valutanamn, decimaler)</td>
-<td>Returnera det specificerade numret efter att det har skrivits ut (konverterats) till textsträngar på det angivna språket. Språkkod är valfritt. När den är definierad som en tom sträng används istället språkkoden för löpande kontext. (Språkkoden för löpande kontext definieras för en genererande mapp eller fil.) Valutakoden är också valfri. När den definieras som en tom sträng, används företagsvalutan.
-<blockquote>[!NOTE]<br>Parametrarna för <strong>den utskrivna flaggan för valutanamn</strong> och <strong>decimalpunkter</strong> analyseras endast för följande språkkoder: <strong>CS</strong>, <strong>ET</strong>, <strong>HU</strong>, <strong>LT</strong>, <strong>LV</strong>, <strong>PL</strong>, och <strong>RU</strong>. I tillägg analyseras endast parametern <strong>utskriven flagga för valutanamn</strong> för Finance and Operations-företag vars länder eller regioner stöder valutanamnnedgång.</blockquote>
+<td>Returnera det specificerade numret efter att det har skrivits ut (konverterats) till textsträngar på det angivna språket. Språkkod är valfritt. När den är definierad som en tom sträng används istället språkkoden för löpande kontext. (Språkkoden för löpande kontext definieras för en skapande mapp eller fil.) Valutakoden är också valfri. När den definieras som en tom sträng, används företagsvalutan.
+<blockquote>[!NOTE] Parametrarna för <strong>den utskrivna flaggan för valutanamn</strong> och <strong>decimalpunkter</strong> analyseras endast för följande språkkoder: <strong>CS</strong>, <strong>ET</strong>, <strong>HU</strong>, <strong>LT</strong>, <strong>LV</strong>, <strong>PL</strong>, och <strong>RU</strong>. I tillägg analyseras endast parametern <strong>utskriven flagga för valutanamn</strong> för Finance and Operations-företag vars länder eller regioner stöder valutanamnnedgång.</blockquote>
 </td>
 <td><strong>NUMERALSTOTEXT (1234.56, &quot;EN&quot;, &quot;&quot;, false, 2)</strong> returnerar <strong>&quot;One Thousand Two Hundred Thirty Four and 56&quot;</strong>. <strong>NUMERALSTOTEXT (120, &quot;PL&quot;, &quot;&quot;, false, 0)</strong> returnerar <strong>&quot;Sto dwadzieścia&quot;</strong>. <strong>NUMERALSTOTEXT (120.21, &quot;RU&quot;, &quot;EUR&quot;, true, 2)</strong> returnerar <strong>&quot;Сто двадцать евро 21 евроцент&quot;</strong>.</td>
 </tr>
@@ -656,10 +656,10 @@ När du har definierat dessa datakällor kan du använda ett uttryck såsom <str
 | Funktion | beskrivning | Exempel |
 |----------|-------------|---------|
 | CONVERTCURRENCY (amount, source currency, target currency, date, company) | Konvertera det angivna penningbeloppet från den specificerade källvalutan till den specificerade målvalutan genom att använda inställningarna för det specificerade Finance and Operations-företaget på angivet datum. | **CONVERTCURRENCY (1, "EUR", "USD", TODAY(), "DEMF")** returnerar motsvarigheten för en euro i US-dollar för det aktuella sessionsdatumet baserat på inställningarna för DEMF-företaget. |
-| ROUNDAMOUNT (number, decimals, round rule) | Avrunda det angivna beloppet enligt den definierade avrundningsregeln och det angivna antalet decimaler.<blockquote>[!NOTE]<br>Avrundningsregeln måste anges som ett värde för Finance and Operations-uppräkningen för **RoundOffType**.</blockquote> | Om parametern **model.RoundOff** anges som **Downward**, returnerar **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** värdet **1000.78**. Om **model.RoundOff**-parametern är inställd på **Normal** eller **Rounding-up** returnerar **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** värdet **1000.79**. |
+| ROUNDAMOUNT (number, decimals, round rule) | Avrunda det angivna beloppet enligt den definierade avrundningsregeln och det angivna antalet decimaler.<blockquote>[!NOTE] Avrundningsregeln måste anges som ett värde för Finance and Operations-uppräkningen för **RoundOffType**.</blockquote> | Om parametern **model.RoundOff** anges som **Downward**, returnerar **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** värdet **1000.78**. Om **model.RoundOff**-parametern är inställd på **Normal** eller **Rounding-up** returnerar **ROUNDAMOUNT (1000.787, 2, model.RoundOff)** värdet **1000.79**. |
 | CURCredRef (digits) | Returnerar en betalningsmottagarreferens baserad på siffrorna i det angivna fakturanumret. | **CURCredRef ("VEND-200002")** returnerar **"2200002"**. |
 | MOD\_97 (siffror) | Returnerar en betalningsmottagarreferens som ett MOD97-uttryck baserat på siffrorna i det angivna fakturanumret. | **MOD\_97 ("VEND-200002")** returnerar **"20000285"**. |
-| ISOCredRef (digits) | Returnera en International Organization for Standardization (ISO)-betalningsmottagarreferens baserad på siffror och bokstäver i det angivna fakturanumret.<blockquote>[!NOTE]<br>Om du vill ta bort symboler som inte överensstämmer med ISO-standarden från alfabetet måste indataparametern översättas innan den skickas till den här funktionen.</blockquote> | **ISOCredRef ("VEND-200002")** returnerar **"RF23VEND-200002"**. |
+| ISOCredRef (digits) | Returnera en International Organization for Standardization (ISO)-betalningsmottagarreferens baserad på siffror och bokstäver i det angivna fakturanumret.<blockquote>[!NOTE] Om du vill ta bort symboler som inte överensstämmer med ISO-standarden från alfabetet måste indataparametern översättas innan den skickas till den här funktionen.</blockquote> | **ISOCredRef ("VEND-200002")** returnerar **"RF23VEND-200002"**. |
 | CN\_GBT\_AdditionalDimensionID (sträng, nummer) | Hämta angiven ID för ytterligare ekonomisk dimension I parametern **sträng** representeras dimensioner som ID åtskilda med kommatecken. Parametern **nummer** definierar den begärda dimensionens seriekod i strängen. | **CN\_GBT\_AdditionalDimensionID ("AA,BB,CC,DD,EE,FF,GG,HH",3)** returnerar **"CC"**. |
 | GetCurrentCompany () | Returnera en textrepresentation av den kod för juridisk person (företag) som en användare för tillfället är inloggad till. | **GETCURRENTCOMPANY ()** returnerar **USMF** för en användare som är inloggad på Finance and Operations-företaget **Contoso Entertainment System USA**. |
 | CH\_BANK\_MOD\_10 (siffror) | Returnera en betalningsmottagarreferens som ett MOD10-uttryck baserat på siffrorna i det angivna fakturanumret. | **CH\_BANK\_MOD\_10 ("VEND-200002")** returnerar **3**. |

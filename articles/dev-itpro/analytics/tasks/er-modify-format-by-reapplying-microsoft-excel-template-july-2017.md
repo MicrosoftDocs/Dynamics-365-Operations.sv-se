@@ -1,5 +1,5 @@
 --- 
-title: "Ändra ett format genom att tillämpa en Microsoft Excel-mall för elektronisk rapportering (ER)"
+title: "Ändra format genom att återanvända Excel-mallar"
 description: "För att slutföra dessa steg i denna procedur måste du först slutföra proceduren ER - designa en konfiguration för att skapa rapporter i OPENXML-format\"."
 author: NickSelin
 manager: AnnBe
@@ -16,19 +16,19 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: b49cfe39732a450e4723419c50d8bcc3d64b7ec9
-ms.openlocfilehash: 2f35727376812b0de428ce929ebe0d33bc497984
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 3d5752caba9327475bb28c7bc6b0ee7e072f44f3
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="modify-a-format-by-reapplying-a-microsoft-excel-template-for-electronic-reporting-er"></a>Ändra ett format genom att tillämpa en Microsoft Excel-mall för elektronisk rapportering (ER)
+# <a name="modify-formats-by-reapplying-excel-templates"></a>Ändra format genom att återanvända Excel-mallar
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
 För att slutföra dessa steg i denna procedur måste du först slutföra proceduren ER - designa en konfiguration för att skapa rapporter i OPENXML-format".
 
-Den här proceduren beskriver hur du ändrar formatkonfigurationen i en elektronisk rapportering (ER) genom att omtillämpa en Microsoft Excel-mall som har ändrats. I den här proceduren ska du importera en modifierad Excel-mall i ER-formatkonfigurationer som har skapats för exempelföretaget Litware, Inc. och använd dem för att generera elektroniska dokument. Den här proceduren är avsedd för användare med rollen Systemadministratör eller Utvecklare för elektronisk rapportering. Stegen kan utföras med hjälp av datauppsättningen GBSI. Innan du börjar, se till att ladda ner och spara filen SampleVendPaymWsReport2.xlsx som listas i hjälpavsnittet Ändra elektroniskt rapporteringsformat genom att återapplicera en Excel-mall (ändra-elektroniskt-rapporteringsformat-återapplicera-excel-mall/).
+Den här proceduren beskriver hur du ändrar formatkonfigurationen i en elektronisk rapportering (ER) genom att omtillämpa en Microsoft Excel-mall som har ändrats. I den här proceduren ska du importera en modifierad Excel-mall i ER-formatkonfigurationer som har skapats för exempelföretaget Litware, Inc. och använd dem för att skapa elektroniska dokument. Den här proceduren är avsedd för användare med rollen Systemadministratör eller Utvecklare för elektronisk rapportering. Stegen kan utföras med hjälp av datauppsättningen GBSI. Innan du börjar, se till att ladda ner och spara filen SampleVendPaymWsReport2.xlsx som listas i hjälpavsnittet Ändra elektroniskt rapporteringsformat genom att återapplicera en Excel-mall (ändra-elektroniskt-rapporteringsformat-återapplicera-excel-mall/).
 
 1. Gå till Organisationsadministration > Arbetsytor > Elektronisk rapportering.
     * Kontrollera att konfigurationsleverantören för exempelföretaget "Litware, Inc." är markerad som aktiv och är tillgänglig. Om du inte ser den här konfigurationsleverantören ska du först slutföra stegen i proceduren Skapa en konfigurationsleverantör och välj den som aktiv.  

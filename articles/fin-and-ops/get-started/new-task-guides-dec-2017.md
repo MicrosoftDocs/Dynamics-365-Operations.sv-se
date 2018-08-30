@@ -16,10 +16,10 @@ ms.author: josaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: a6bec9c0e9b591f99a0c00e554c18a5ebe440859
-ms.openlocfilehash: 25ee17c98d1071129e212512d75883dccd32791f
+ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
+ms.openlocfilehash: fbf99e6c01101209bf9e2a213c8008f50e67ad68
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/24/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
@@ -267,7 +267,7 @@ Detta avsnitt anger nya eller uppdaterade uppgiftsguider som släpptes för Micr
 <td align="left">Hantera ledighet och frånvaro (februari 2016)</td>
 </tr>
 <tr class="even">
-<td align="left">Generera en begränsad plan (februari 2016)</td>
+<td align="left">Skapa en begränsad plan (februari 2016)</td>
 </tr>
 <tr class="odd">
 <td align="left">Skapa en verksamhetsresurs (februari 2016)</td>
@@ -357,10 +357,10 @@ Detta avsnitt anger nya eller uppdaterade uppgiftsguider som släpptes för Micr
 <td align="left">CN-00016 Användaråtgärdslogg efter kinesiska arbetsregler (november 2016)</td>
 </tr>
 <tr class="even">
-<td align="left">BR-00057 Brasiliansk moms i försäljningsofferter (juli 2017)</td>
+<td align="left">BR-00057 Brasiliansk skatt i försäljningsofferter (juli 2017)</td>
 </tr>
 <tr class="odd">
-<td align="left">BR-00031 Beräkna moms på inköpsrekvisitioner (juli 2017)</td>
+<td align="left">BR-00031 Beräkna skatt på inköpsrekvisitioner (juli 2017)</td>
 </tr>
 <tr class="even">
 <td align="left">BR-00080 Hantera text i skattedokument i anskaffningsdokument (juli 2017)</td>
@@ -426,7 +426,7 @@ Detta avsnitt anger nya eller uppdaterade uppgiftsguider som släpptes för Micr
 <td align="left">BR-00009 Källskatter (juli 2017)</td>
 </tr>
 <tr class="odd">
-<td align="left">BR-10005 Momsvärdering för ISS-moms (juli 2017)</td>
+<td align="left">BR-10005 Momsvärdering för ISS-skatt (juli 2017)</td>
 </tr>
 <tr class="even">
 <td align="left">BR-00071 Utfärda skattedokument för överföring av ICMS-momskrediter (juli 2017)</td>
@@ -465,16 +465,16 @@ Detta avsnitt anger nya eller uppdaterade uppgiftsguider som släpptes för Micr
 <td align="left">Avyttra en anläggningstillgång med avdragsregistrering (februari 2016)</td>
 </tr>
 <tr class="even">
-<td align="left">Skapa CGU-grupper och kassagenererande enheter (februari 2016)</td>
+<td align="left">Skapa CGU-grupper och kassaskapande enheter (februari 2016)</td>
 </tr>
 <tr class="odd">
-<td align="left">Fördela bärande belopp med gemensam tillgång och goodwill till kassagenererande enheter (februari 2016)</td>
+<td align="left">Fördela bärande belopp med gemensam tillgång och goodwill till kassaskapande enheter (februari 2016)</td>
 </tr>
 <tr class="even">
 <td align="left">Skapa och bekräfta ett erkännandetest (februari 2016)</td>
 </tr>
 <tr class="odd">
-<td align="left">Föreslå och bokför nedskrivningsbeloppet på en kassagenererande enhet (februari 2016)</td>
+<td align="left">Föreslå och bokför nedskrivningsbeloppet på en kassaskapande enhet (februari 2016)</td>
 </tr>
 <tr class="even">
 <td align="left">Skapa och tilldela en utrustningsgrupp (februari 2016)</td>
@@ -510,7 +510,7 @@ Detta avsnitt anger nya eller uppdaterade uppgiftsguider som släpptes för Micr
 <td align="left"> Bokför onlineförsäljningar och -betalningar (februari 2016)</td>
 </tr>
 <tr class="odd">
-<td align="left">Ställ in och generera åldersfördelningsinformation för kundreskontra (februari 2016)</td>
+<td align="left">Ställ in och skapa åldersfördelningsinformation för kundreskontra (februari 2016)</td>
 </tr>
 <tr class="even">
 <td align="left">Mata in fakturadata i leverantörsreskontra genom att använda en leverantörsfaktura (februari 2016)</td>
@@ -519,7 +519,7 @@ Detta avsnitt anger nya eller uppdaterade uppgiftsguider som släpptes för Micr
 <td align="left">Skapa en ny anläggningstillgång (februari 2016)</td>
 </tr>
 <tr class="even">
-<td align="left">Ställa in skattemyndigheter (februari 2016)</td>
+<td align="left">Ställa in momsmyndigheter (februari 2016)</td>
 </tr>
 <tr class="odd">
 <td align="left">Ställ in momskvittningsperioder (februari 2016)</td>
@@ -573,7 +573,7 @@ Detta avsnitt anger nya eller uppdaterade uppgiftsguider som släpptes för Micr
 <td align="left">MX-00010 Bokför fritextfaktura (februari 2016)</td>
 </tr>
 <tr class="even">
-<td align="left">MY-00010 GST – Generera GAF-filer i krävt format (februari 2016)</td>
+<td align="left">MY-00010 GST – Skapa GAF-filer i krävt format (februari 2016)</td>
 </tr>
 <tr class="odd">
 <td align="left">Visa bokförda momskomponenttransaktioner (februari 2016)</td>
@@ -600,7 +600,7 @@ Detta avsnitt anger nya eller uppdaterade uppgiftsguider som släpptes för Micr
 <td align="left">Aktivera JBA-betalningsfilformat (november 2016)</td>
 </tr>
 <tr class="odd">
-<td align="left">Generera en EFT-betalningsfil i JBA-format (februari 2016)</td>
+<td align="left">Skapa en EFT-betalningsfil i JBA-format (februari 2016)</td>
 </tr>
 <tr class="even">
 <td align="left">Importera en kundbetalning med JBA-filformat (februari 2016)</td>
@@ -642,7 +642,7 @@ Detta avsnitt anger nya eller uppdaterade uppgiftsguider som släpptes för Micr
 <td align="left">JP-00011 Öppna och redigera en kundkonsoliderad faktura på nytt (februari 2016)</td>
 </tr>
 <tr class="odd">
-<td align="left">MY-00011 02 Generera kunds debetfaktura för projektförsäljningar (endast november 2016)</td>
+<td align="left">MY-00011 02 Skapa kunds debetfaktura för projektförsäljningar (endast november 2016)</td>
 </tr>
 <tr class="even">
 <td align="left">Ändra avskrivningspraxis för flera anläggningstillgångar (februari 2016)</td>
@@ -690,10 +690,10 @@ Detta avsnitt anger nya eller uppdaterade uppgiftsguider som släpptes för Micr
 <td align="left">Ställ in anläggningstillgångsgrupper (februari 2016)</td>
 </tr>
 <tr class="odd">
-<td align="left">GB-00002 Skapa en inköpsorder som omfattar artiklar där moms ska återföras (februari 2016)</td>
+<td align="left">GB-00002 Skapa en inköpsorder som omfattar artiklar där skatt ska återföras (februari 2016)</td>
 </tr>
 <tr class="even">
-<td align="left">GB-00002 Skapa en försäljningsorder som omfattar artiklar där moms ska återföras (februari 2016)</td>
+<td align="left">GB-00002 Skapa en försäljningsorder som omfattar artiklar där skatt ska återföras (februari 2016)</td>
 </tr>
 <tr class="odd">
 <td align="left">MY-00006 01 Inställning av GST-lättnadssatser (februari 2016)</td>
@@ -780,7 +780,7 @@ Detta avsnitt anger nya eller uppdaterade uppgiftsguider som släpptes för Micr
 <td align="left">Skapa en mall för fritextfaktura (februari 2016)</td>
 </tr>
 <tr class="odd">
-<td align="left">Generera och bokför återkommande fritextfakturor (februari 2016)</td>
+<td align="left">Skapa och bokför återkommande fritextfakturor (februari 2016)</td>
 </tr>
 <tr class="even">
 <td align="left">Skapa ett autogiromedgivande för en kund (februari 2016)</td>
@@ -846,7 +846,7 @@ Detta avsnitt anger nya eller uppdaterade uppgiftsguider som släpptes för Micr
 <td align="left">Skapa ett leverantörskonto och bifoga fakturadeklarationskategorin (februari 2016)</td>
 </tr>
 <tr class="odd">
-<td align="left">Uppdatera leverantörsfakturadeklarationer och generera rapporten (februari 2016)</td>
+<td align="left">Uppdatera leverantörsfakturadeklarationer och skapa rapporten (februari 2016)</td>
 </tr>
 <tr class="even">
 <td align="left">Skapa en konfigurationsleverantör och markera den som aktiv för elektronisk rapportering (ER) (endast februari 2016)</td>
@@ -927,7 +927,7 @@ Detta avsnitt anger nya eller uppdaterade uppgiftsguider som släpptes för Micr
 <td align="left">MX-00010 Ange momsregistrerings-ID för mexikanska juridiska personer (februari 2016)</td>
 </tr>
 <tr class="even">
-<td align="left">AU-00006 Lägg till rapportrutor och generera BAS (februari 2016)</td>
+<td align="left">AU-00006 Lägg till rapportrutor och skapa BAS (februari 2016)</td>
 </tr>
 <tr class="odd">
 <td align="left">AU-00006 Ställ in orsakskoder för BAS (februari 2016)</td>
@@ -987,7 +987,7 @@ Detta avsnitt anger nya eller uppdaterade uppgiftsguider som släpptes för Micr
 <td align="left">JP-00004 ställa in momsrapporten förbrukning (februari 2016)</td>
 </tr>
 <tr class="even">
-<td align="left">JP-00004 generera momsrapport för förbrukning (februari 2016)</td>
+<td align="left">JP-00004 skapa momsrapport för förbrukning (februari 2016)</td>
 </tr>
 <tr class="odd">
 <td align="left">EUR-00011 Ställ in grupp för rapportering av EU-säljlista (februari 2016)</td>

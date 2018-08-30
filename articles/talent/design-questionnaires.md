@@ -1,5 +1,5 @@
 ---
-title: "Utforma en enkät"
+title: "Utforma enkäter"
 description: "Det här avsnittet beskriver processen för att skapa en enkät. Det första steget är att utforma enkäten. Om du utformar en enkät skapar du inte bara frågorna och svaren, utan även strukturen som gör det möjligt att registrera och ordna svar i tabeller."
 author: kherr75
 manager: AnnBe
@@ -19,14 +19,14 @@ ms.author: kherr
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: cc25f4fde93df03145baedafb9c6b093659594d0
+ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
+ms.openlocfilehash: cd13fa1c424d1769b356d90012b187a77473473d
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="design-a-questionnaire"></a>Utforma en enkät
+# <a name="design-questionnaires"></a>Utforma enkäter
 
 [!include [banner](includes/banner.md)]
 
@@ -175,7 +175,7 @@ En resultatgrupp används för att beräkna poäng och kategorisera resultaten f
 
 -   Utvärdera enkätresultat baserat på poängstatistik.
 -   Utvärdera den svarandes poäng för varje den resultatgrupp du ställer in.
--   Generera statistik för varje resultatgrupp som hjälper dig att analysera resultaten.
+-   Skapa statistik för varje resultatgrupp som hjälper dig att analysera resultaten.
 -   Skriv ut en rapport som visar resultat för varje resultatgrupp och valfria poäng/texter som baseras på poäng som erhållits i varje resultatgrupp.
 
 **Anm.:** Innan du kan ställa in resultatgrupper måste du utföra följande uppgifter:

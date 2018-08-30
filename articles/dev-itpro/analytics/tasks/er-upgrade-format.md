@@ -1,5 +1,5 @@
 --- 
-title: "Uppgradera ett format genom att anpassa den nya basversionen för det formatet för elektronisk rapportering (ER)"
+title: Uppgradera format genom att implementera nya basversioner
 description: "I följande steg förklaras hur en användare i rollen Systemadministratör eller Utvecklare för elektronisk rapportering kan behålla en formatkonfiguration för elektronisk rapportering (ER)."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: cfc68c1d0810cbc296b35c09176dde2c948a50d0
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 7a14299c3bdcc33a4441d1cc096b198af4d4ae4c
 ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="upgrade-your-format-by-adopting-of-new-base-version-of-that-format-for-electronic-reporting-er"></a>Uppgradera ett format genom att anpassa den nya basversionen för det formatet för elektronisk rapportering (ER)
+# <a name="upgrade-formats-by-adopting-new-base-versions"></a>Uppgradera format genom att implementera nya basversioner
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
@@ -30,7 +30,7 @@ I följande steg förklaras hur en användare i rollen Systemadministratör elle
 
 
 
-För att slutföra dessa steg måste du först avsluta stegen i procedurerna ”Skapa en konfigurationsleverantör och markera den som aktiv" och "Använd skapade format för att generera elektroniska handlingar för betalningar". Dessa steg kan utföras i GBSI-företaget.
+För att slutföra dessa steg måste du först avsluta stegen i procedurerna ”Skapa en konfigurationsleverantör och markera den som aktiv" och "Använd skapade format för att skapa elektroniska handlingar för betalningar". Dessa steg kan utföras i GBSI-företaget.
 
 
 ## <a name="select-format-configuration-for-customization"></a>Välj formatkonfigurationen för anpassning
@@ -46,7 +46,7 @@ För att slutföra dessa steg måste du först avsluta stegen i procedurerna ”
     * Versionen av formatet med statusen avslutad ska användas av Proseware, Inc. för anpassning.  
 
 ## <a name="create-a-new-configuration-for-your-custom-format-of-electronic-document"></a>Skapa en ny konfiguration för ditt anpassade format för elektroniskt dokument
-Proseware, Inc. tog emot version 1.1 av BACS-konfigurationen (fiktiv från Storbritannien) som innehåller det initiala formatet för att generera elektroniska betalningsdokument från Litware, Inc. i enlighet med deras serviceabonnemang. Proseware, Inc. vill börja använda detta som standard för deras land, men det krävs en del anpassning för att stödja specifika regionala krav. Proseware, Inc. vill behålla förmågan att uppgradera ett allmänt format så snart som en ny version av den (med ändringar som stöder nya landsspecifika behov) kommer från Litware, Inc. och de vill utföra denna uppgradering med den lägsta kostnaden.  För att göra detta måste Prosewares, Inc. skapa en konfiguration med Litware Inc. konfiguration BACS (fiktiva UK) som bas.  
+Proseware, Inc. tog emot version 1.1 av BACS-konfigurationen (fiktiv från Storbritannien) som innehåller det initiala formatet för att skapa elektroniska betalningsdokument från Litware, Inc. i enlighet med deras serviceabonnemang. Proseware, Inc. vill börja använda detta som standard för deras land, men det krävs en del anpassning för att stödja specifika regionala krav. Proseware, Inc. vill behålla förmågan att uppgradera ett allmänt format så snart som en ny version av den (med ändringar som stöder nya landsspecifika behov) kommer från Litware, Inc. och de vill utföra denna uppgradering med den lägsta kostnaden.  För att göra detta måste Prosewares, Inc. skapa en konfiguration med Litware Inc. konfiguration BACS (fiktiva UK) som bas.  
 1. Stäng sidan.
 2. Välj Prosewares Inc. för att göra den till en aktiv leverantör.
 3. Klicka på Ställ in aktiv.
@@ -106,8 +106,8 @@ Proseware, Inc. tog emot version 1.1 av BACS-konfigurationen (fiktiv från Storb
 5. Hitta och markera önskad post i listan.
     * Observera att den skapade konfigurationen sparas som slutförd version 1.1.1. Det innebär att det är version 1 av det anpassade BACS-formatet (fiktiv kund från Storbritannien) baserat på version 1 av BACS-formatet (fiktiv från Storbritannien) baserat på version 1 av datamodellen Betalningar (förenklad modell).  
 
-## <a name="test-the-customized-format-to-generate-payment-files"></a>Testa det anpassade formatet för att generera betalningsfiler
-Slutför stegen i sessionen "Använd skapade format för att generera elektroniska dokument för betalningar" i en parallell session för Dynamics 365 for Finance and Operations. Välj det BACS-formatet (fiktiv kund från Storbritannien) i parametrar för elektronisk betalningsmetod. Kontrollera att den skapade betalningsfilen innehåller den för en tid eftersom introducerade XML-noden som innehåller IBANkod i korrespondens till regionala kraven.  
+## <a name="test-the-customized-format-to-generate-payment-files"></a>Testa det anpassade formatet för att skapa betalningsfiler
+Slutför stegen i sessionen "Använd skapade format för att skapa elektroniska dokument för betalningar" i en parallell session för Dynamics 365 for Finance and Operations. Välj det BACS-formatet (fiktiv kund från Storbritannien) i parametrar för elektronisk betalningsmetod. Kontrollera att den skapade betalningsfilen innehåller den för en tid eftersom introducerade XML-noden som innehåller IBANkod i korrespondens till regionala kraven.  
 
 ## <a name="update-the-existing-country-specific-configuration"></a>Uppdatera den befintliga landsspecifika konfigurationen
 Litware, Inc. behöver uppdatera BACS-konfigurationen (fiktivt UK) och anta nya landskrav för hantering av formatet för elektroniskt dokument. Senare kommer detta att bifogas i en ny version av den här konfigurationen som ska erbjudas abonnenter, inklusive Proseware, Inc.  
@@ -168,7 +168,7 @@ Välj utkastversionen av önskad konfiguration för att införa nödvändiga än
 5. Hitta och markera önskad post i listan.
 
 ## <a name="change-the-base-version-for-the-custom-format-configuration"></a>Ändra basversionen för anpassad formatkonfiguration
-Proseware, Inc. informeras att en ny version 1.2 av BACS-konfigurationen (fiktivt UK) är tillgänglig om du vill generera elektroniska betalningsdokument i enlighet med tillkännagivna landsspecifika krav. Proseware, Inc. vill börja använda den som standard för landet.  För att göra detta måste Proseware, Inc. ändra baskonfigurationversionen för den anpassade BACS-konfigurationen för (fiktiv UK kund). I stället för version 1.1 för BACS (fiktivt UK), använd version 1.2.  
+Proseware, Inc. informeras att en ny version 1.2 av BACS-konfigurationen (fiktivt UK) är tillgänglig om du vill skapa elektroniska betalningsdokument i enlighet med tillkännagivna landsspecifika krav. Proseware, Inc. vill börja använda den som standard för landet.  För att göra detta måste Proseware, Inc. ändra baskonfigurationversionen för den anpassade BACS-konfigurationen för (fiktiv UK kund). I stället för version 1.1 för BACS (fiktivt UK), använd version 1.2.  
 
 1. Gå till Organisationsadministration > Arbetsytor > Elektronisk rapportering.
 2. Välj Prosewares Inc. leverantör för att markera den som aktiv.
@@ -196,13 +196,13 @@ Proseware, Inc. informeras att en ny version 1.2 av BACS-konfigurationen (fiktiv
 
 ## <a name="change-the-status-of-the-new-version-of-the-custom-format-configuration"></a>Ändra statusen för den nya versionen av den anpassade formatkonfigurationen
 1. Klicka på Ändra status.
-    * Ändra status för den uppdaterade anpassade formatkonfigurationen från Utkast till Slutförd. Detta kommer att göra formatkonfigurationen tillgänglig för att generera betalningsdokument. Observera att den aktuella versionen av den valda konfigurationen finns i utkastläge.  
+    * Ändra status för den uppdaterade anpassade formatkonfigurationen från Utkast till Slutförd. Detta kommer att göra formatkonfigurationen tillgänglig för att skapa betalningsdokument. Observera att den aktuella versionen av den valda konfigurationen finns i utkastläge.  
 2. Klicka på Slutför.
 3. Ange ett värde i fältet Beskrivning.
 4. Klicka på OK.
     * Observera att den skapade konfigurationen sparas som slutförd version 1.2.2: version 2 av BACS-basformatet (fiktiv UK kund) baserat på version 2 av BACS-basformatet (UK fiktivt) som baseras på version 1 av datamodellen Betalningar (förenklad modell).  
 
-## <a name="test-the-customized-format-for-payment-files-generation"></a>Testa det anpassade formatet för att generera betalningsfiler
-Slutför stegen i sessionen "Använd skapade format för att generera elektroniska dokument för betalningar" i en parallell session för Dynamics 365 for Finance and Operations. Välj det skapade BACS-formatet (fiktiv kund från Storbritannien) i parametrar för elektronisk betalningsmetod. Kontrollera att den skapade betalningsfilen innehåller den för en tid eftersom Proseware, Inc. introducerade XML-noden som innehåller IBAN-kontokoden i korrespondens till regionala kraven. Filen ska också innehålla nyligen introducerade genom Litware Inc. XML-noden som presenterar SWIFT-bankkoden i enlighet med kraven i landet.  
+## <a name="test-the-customized-format-for-payment-files-generation"></a>Testa det anpassade formatet för att skapa betalningsfiler
+Slutför stegen i sessionen "Använd skapade format för att skapa elektroniska dokument för betalningar" i en parallell session för Dynamics 365 for Finance and Operations. Välj det skapade BACS-formatet (fiktiv kund från Storbritannien) i parametrar för elektronisk betalningsmetod. Kontrollera att den skapade betalningsfilen innehåller den för en tid eftersom Proseware, Inc. introducerade XML-noden som innehåller IBAN-kontokoden i korrespondens till regionala kraven. Filen ska också innehålla nyligen introducerade genom Litware Inc. XML-noden som presenterar SWIFT-bankkoden i enlighet med kraven i landet.  
 
 

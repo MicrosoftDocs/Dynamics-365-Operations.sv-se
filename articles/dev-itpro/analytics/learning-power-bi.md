@@ -65,5 +65,3 @@ Följande data används för att fylla i rapporterna i Power-Bi-innehållet för
 | Namn på medarbetare    | Förnamn, efternamn och fullständiga namn                             | Kursdeltagare |
 | Medarbetartitel   | Titel och tjänsteålder                                         | Kursdeltagare |
 
-
-

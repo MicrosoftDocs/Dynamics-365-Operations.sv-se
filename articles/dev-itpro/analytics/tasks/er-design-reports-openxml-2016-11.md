@@ -1,6 +1,6 @@
 --- 
-title: "Utforma en konfiguration för rapportgenerering i OpenXML-format för elektronisk rapportering (ER)"
-description: "I följande steg beskrivs hur en användare som har rollen Systemadministratör eller Utvecklare för elektronisk rapportering kan skapa en ny konfiguration för Elektronisk rapportering (ER) som innehåller en mall för att generera elektroniska betalningsdokument i OPENXML-format."
+title: "Utforma ER-konfigurationer för rapportgenerering i OPENXML-format"
+description: "I följande steg beskrivs hur en användare som har rollen Systemadministratör eller Utvecklare för elektronisk rapportering kan skapa en ny konfiguration för Elektronisk rapportering (ER) som innehåller en mall för att skapa elektroniska betalningsdokument i OPENXML-format."
 author: NickSelin
 manager: AnnBe
 ms.date: 01/16/2017
@@ -16,17 +16,17 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 8bbdbf882f6f73d03be0a036cb975109396e4a0d
-ms.openlocfilehash: 09789957839097ba2898544102af908c198090c7
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: b42cfe36c57a9526e585bbad0fcd31ff60b90397
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/14/2017
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="design-a-configuration-for-generating-reports-in-openxml-format-for-electronic-reporting-er"></a>Utforma en konfiguration för rapportgenerering i OpenXML-format för elektronisk rapportering (ER)
+# <a name="design-er-configurations-to-generate-reports-in-openxml-format"></a>Utforma ER-konfigurationer för rapportgenerering i OPENXML-format
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-I följande steg beskrivs hur en användare som har rollen Systemadministratör eller Utvecklare för elektronisk rapportering kan skapa en ny konfiguration för Elektronisk rapportering (ER) som innehåller en mall för att generera elektroniska betalningsdokument i OPENXML-format. Denna konfiguration kommer att användas för att bearbeta leverantörsbetalningar.
+I följande steg beskrivs hur en användare som har rollen Systemadministratör eller Utvecklare för elektronisk rapportering kan skapa en ny konfiguration för Elektronisk rapportering (ER) som innehåller en mall för att skapa elektroniska betalningsdokument i OPENXML-format. Denna konfiguration kommer att användas för att bearbeta leverantörsbetalningar.
 
 
 
@@ -206,7 +206,7 @@ För att slutföra dessa steg måste du först slutföra stegen i proceduren "Sk
 12. Skriv ett värde i fältet "Elektonisk".
     * Elektronisk  
 13. Klicka på Spara.
-14. Klicka på Generera betalningar.
+14. Klicka på Skapa betalningar.
 15. Skriv ett värde i fältet "Elektonisk".
     * Elektronisk  
 16. Ange "Betalningar" i fältet för filnamn.

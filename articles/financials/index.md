@@ -21,7 +21,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: b8f2f3a33dc19c2ebc941d1a504eae0c276f3cdf
 ms.openlocfilehash: a64621c5310e5f68b9d6f1545bb39ce1519d71cf
 ms.contentlocale: sv-se
-ms.lasthandoff: 06/25/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
@@ -33,16 +33,23 @@ Det här ämnet innehåller en lista med hjälpavsnitt och andra resurser för d
 
 Välj ett funktionsområde för att läsa mer om det.
 
-:::row::: :::column::: - [Leverantörsreskontra](accounts-payable/accounts-payable.md) 
+:::row:::
+    :::column:::
+        - [Leverantörsreskontra](accounts-payable/accounts-payable.md) 
         - [Kundreskontra](accounts-receivable/accounts-receivable.md)
         - [Budgetering](budgeting/budgeting-overview.md) 
         - [Kassa- och bankhantering](cash-bank-management/cash-bank-management.md)
-        - [Kostnadsredovisning](cost-accounting/cost-accounting-home-page.md) :::column-end::: :::column::: - [Utläggshantering](expense-management/expense-management.md)
+        - [Kostnadsredovisning](cost-accounting/cost-accounting-home-page.md)
+    :::column-end:::
+    :::column:::
+        - [Utgiftshantering](expense-management/expense-management.md)
         - [Ekonomisk rapportering](../dev-itpro/analytics/financial-reporting-intro.md?toc=/fin-and-ops/toc.json)
         - [Anläggningstillgångar](fixed-assets/fixed-assets.md)
         - [Redovisning](general-ledger/general-ledger.md) 
-        - [Projekthantering](project-management/overview-project-management-accounting.md)
-        - [Offentlig sektor](public-sector/public-sector-functionality.md) :::column-end::: :::row-end:::
+        - [Projektledning](project-management/overview-project-management-accounting.md)
+        - [Offentlig sektor](public-sector/public-sector-functionality.md) 
+    :::column-end:::
+:::row-end:::
 
 
 ## <a name="additional-resources"></a>Ytterligare resurser
@@ -60,7 +67,7 @@ Mer hjälp är tillgänglig som uppgiftsguider i Finance and Operations. Klicka 
 
 ### <a name="videos"></a>Videoklipp
 
-Ta en titt på instruktionsfilmerna som finns på [YouTube-kanalen för Microsoft Dynamics 365](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
+Ta en titt på instruktionsfilmerna som finns på [kanalen Microsoft Dynamics 365 YouTube](https://www.youtube.com/channel/UCJGCg4rB3QSs8y_1FquelBQ).
 
 ### <a name="countryregion-functionality"></a>Funktionsland/-region
 

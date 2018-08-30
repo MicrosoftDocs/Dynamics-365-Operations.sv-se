@@ -1,7 +1,7 @@
 ---
 title: Produktidentifierare
 description: "Det här avsnittet innehåller information om de olika typerna av produktidentifierare och förklarar hur du infogar produktidentifierare i dina produktdata."
-auhor: cvocph
+author: cvocph
 manager: AnnBe
 ms.date: 03/23/2018
 ms.topic: article

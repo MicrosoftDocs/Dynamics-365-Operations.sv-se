@@ -1,7 +1,7 @@
 ---
-title: "Regelverk för att importera verifikationer med hjälp av enheten Allmän journal"
+title: "Bästa praxis för att importera verifikationer med hjälp av enheten Allmän journal"
 description: "Det här ämnet innehåller tips för import av data till den allmänna journalen med hjälp av enheten Allmän journal."
-author: twheeloc
+author: ShylaThompson
 manager: AnnBe
 ms.date: 06/20/2017
 ms.topic: article
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 94363
 ms.assetid: 0b8149b5-32c5-4518-9ebd-09c9fd7f4cfc
@@ -18,14 +18,14 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: eea226fae902c19d66aff83b7ee2786d1586ef39
+ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
+ms.openlocfilehash: 7bc24b5e3bc13d6dbb4313f25ff44d8fae0998cc
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="best-practices-for-importing-vouchers-using-the-general-journal-entity"></a>Regelverk för att importera verifikationer med hjälp av enheten Allmän journal
+# <a name="best-practices-for-importing-vouchers-by-using-the-general-journal-entity"></a>Bästa praxis för att importera verifikationer med hjälp av enheten Allmän journal
 
 [!include [banner](../includes/banner.md)]
 
@@ -43,15 +43,15 @@ Innan du genomför en import med hjälp av enheten Allmän journal ska du verifi
 Två inställningar i datahantering påverkar hur standardjournalens batchnummer eller verifikationsnummer används:
 
 -   **Uppsättningsbaserad bearbetning** (på dataenheten)
--   **Automatiskt genererad** (på fältmappning)
+-   **Automatiskt skapad** (på fältmappning)
 
-Följande avsnitt innehåller en beskrivning av effekten av dessa inställningar och hur journalbatchnummer och verifikationsnummer genereras.
+Följande avsnitt innehåller en beskrivning av effekten av dessa inställningar och hur journalbatchnummer och verifikationsnummer skapas.
 
 ### <a name="journal-batch-number"></a>Journalbatchnummer
 
--   Inställningen för **Uppsättningsbaserad bearbetning** i enheten Allmän journal påverkar inte hur att journalbatchnummer genereras.
--   Om fältet **Journalbatchnummer** är inställt på **Automatiskt genererad** skapas ett nytt journalbatchnummer för varje rad som importeras. Detta beteende rekommenderas inte. Inställningen **Automatiskt genererade** hittas i importprojektet under **Visa karta** i fliken **Mappningsdetaljer**.
--   Om fältet **Journalbatchnummer** inte är inställt på **Automatiskt genererad** skapas ett nytt journalbatchnummer enligt följande:
+-   Inställningen för **Uppsättningsbaserad bearbetning** i enheten Allmän journal påverkar inte hur att journalbatchnummer skapas.
+-   Om fältet **Journalbatchnummer** är inställt på **Automatiskt skapad** skapas ett nytt journalbatchnummer för varje rad som importeras. Detta beteende rekommenderas inte. Inställningen **Automatiskt skapade** hittas i importprojektet under **Visa karta** i fliken **Mappningsdetaljer**.
+-   Om fältet **Journalbatchnummer** inte är inställt på **Automatiskt skapad** skapas ett nytt journalbatchnummer enligt följande:
     -   Om journalbatchnumret som definieras i den importerade filen matchar en befintlig, ej bokförd daglig journal importeras alla rader som har ett matchande journalbatchnummer till den befintliga journalen. Raderna importeras aldrig in i ett bokfört journalbatchnummer. I stället skapas ett nytt nummer.
     -   Om journalbatchnumret som definieras i den importerade filen inte matchar en befintlig, ej bokförd daglig journal grupperas alla rader som har samma journalbatchnummer under en ny journal. Alla rader som till exempel har journalbatchnummer 1 importeras till en ny journal och alla rader som har journalbatchnummer 2 importeras till en andra ny journal. Journalbatchnumret skapas med hjälp av den nummerserie som definierats i Allmänna huvudboksparametrar.
 
@@ -64,7 +64,7 @@ Följande avsnitt innehåller en beskrivning av effekten av dessa inställningar
 <!-- -->
 
 -   Om du inte använder inställningen **Uppsättningsbaserad bearbetning** behöver inget verifikationsnummer anges i den importerade filen. Verifikationsnumren skapas under importen baserat på inställningen för journalnamn (**endast en verifikation**, **ihop med saldo** och så vidare). Om journalnamnet exempelvis definieras som **Ihop med saldo** får den första raden ett nytt standardverifikationsnummer. Systemet utvärderar sedan raden för att fastställa om debet överensstämmer med kredit. Om det finns ett motkonto på raden får nästa rad som importeras ett nytt verifikationsnummer. Om det inte finns något motkonto utvärderar systemet om debet är lika med kredit allt eftersom varje ny rad importeras.
--   Om fältet **Verifikationsnummer** är inställt på **Automatiskt genererad** misslyckas importen. Inställningen **Automatiskt genererad** för fältet **Verifikationsnummer** stöds inte.
+-   Om fältet **Verifikationsnummer** är inställt på **Automatiskt skapad** misslyckas importen. Inställningen **Automatiskt skapad** för fältet **Verifikationsnummer** stöds inte.
 
 Enheten Allmän journal använder uppsättningsbaserad bearbetning. När du utvärderar affärskraven för din organisation kan du ändra inställningen **Uppsättningsbaserad bearbetning** genom att klicka på **Datatabeller** i arbetsytan **Datahantering**. Uppsättningsbaserad bearbetning används för att påskynda importprocessen. Om du inte använder uppsättningsbaserad bearbetning går importen av enheten Allmän journal långsammare.
 

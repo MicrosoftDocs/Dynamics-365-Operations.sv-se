@@ -18,14 +18,14 @@ ms.author: chwolf
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: 92a52646063c145d733b9d2960253004e8eab80a
-ms.openlocfilehash: 32b0d71d98c64ce998acbf5cdc03645401a2be7b
+ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
+ms.openlocfilehash: 269eb1f1c59ef52ce14da11c99fd6d292b9c0b4f
 ms.contentlocale: sv-se
-ms.lasthandoff: 03/05/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="hardware-sizing-for-on-premises-environments"></a>Beräkna maskinvara för lokala miljöer
+# <a name="hardware-sizing-requirements-for-on-premises-environments"></a>Krav för beräkning av maskinvara för lokala miljöer
 
 [!include [banner](../includes/banner.md)]
 
@@ -40,7 +40,7 @@ De faktorer som visas i följande illustration bidrar till beräkning. Ju mer de
 
 [![Beräkna maskinvara för lokala miljöer](./media/lbd-sizing-01.png)](./media/lbd-sizing-01.png)
 
-Sett från vänster till höger, är den första och viktigaste faktorn som krävs för att uppskatta beräkning en transaktionsprofil eller transaktionsbeskrivning. Det är viktigt att alltid hitta den högsta transaktionella volymen per timme. Om det finns flera toppperioder, måste dessa perioder fastställas noggrant. 
+Sett från vänster till höger, är den första och viktigaste faktorn som krävs för att uppskatta beräkning en transaktionsprofil eller transaktionsbeskrivning. Det är viktigt att alltid hitta den högsta transaktionella volymen per timme. Om det finns flera topperioder, måste dessa perioder fastställas noggrant. 
 
 När du förstår den belastning som påverkar din infrastruktur måste du också ta reda mer om dessa faktorer: 
 

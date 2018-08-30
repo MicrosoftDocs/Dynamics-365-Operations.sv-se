@@ -1,4 +1,4 @@
-- name: Utveckling och administration för Dynamics 365 for Finance and Operations
+- name: Utveckling och administration för Finance and Operations
   href: index.md
 - name: Systemkrav för molndistributioner
   href: ../fin-and-ops/get-started/system-requirements.md?toc=/dev-itpro/toc.json
@@ -7,56 +7,56 @@
 - name: Demodata
   href: ../fin-and-ops/get-started/demo-data.md?toc=/dev-itpro/toc.json
   items:
-    - name: Generera demodata med paket
+    - name: Generera demodata med hjälp av datapaket
       href: data-entities/generate-demo-data-packages.md
 - name: Utveckla och anpassa med hjälp av Visual Studio
   href: dev-tools/developer-home-page.md
   items:
     - name: Programstack och serverarkitektur
       href: dev-tools/application-stack-server-architecture.md
-    - name: Hämta en utvärderingskopia
+    - name: Hämta utvärderingskopior
       href: dev-tools/get-evaluation-copy.md
-    - name: Registrera ett abonnemang
+    - name: Registrera abonnemang på förhandsversioner
       href: dev-tools/sign-up-preview-subscription.md
-    - name: Distribuera och få tillgång till en utvecklingsmiljö
+    - name: Distribuera och få tillgång till utvecklingsmiljöer
       href: dev-tools/access-instances.md
       items:
-        - name: Konfigurera VM för utvecklare
+        - name: Konfigurera enskilda utvecklingsmiljöer
           href: dev-tools/configure-developer-vm.md
-        - name: Skapa en ny användare på en utvecklingsdator
+        - name: Skapa nya användare på utvecklingsdatorer
           href: dev-tools/enable-development-machine.md
-        - name: Frågor och svar om hur du utvecklar och skapar virtuella maskiner som inte tillåter administratörsbehörighet
+        - name: Frågor och svar om hur du utvecklar och skapar virtuella maskiner som inte tillåter administratörsåtkomst
           href: sysadmin/VMs-no-admin-access.md
-        - name: Byta namn på en lokal miljö för att ge åtkomst till Visual Studio Team Services
+        - name: Byta namn på lokala miljöer för att få åtkomst till Visual Studio Team Services
           href: migration-upgrade/vso-machine-renaming.md
         - name: Systemkrav för utveckling
           href: dev-tools/development-system-requirements.md
-    - name: 'Versionskontroll, sökning efter metadata och navigering'
+    - name: 'Versionskontroll, metadatasökning och navigering'
       href: dev-tools/version-control-metadata-navigation.md
-    - name: Hantering av vagnpark – exempel på ansökning
+    - name: Hantering av vagnpark – exempelprogram
       items:
-        - name: Hantering av vagnpark – exempel på ansökning
+        - name: Slutpunkt till slutpunkt-scenario för exempelprogrammet Hantering av vagnpark
           href: dev-tools/fleet-management-sample.md
-        - name: Hantering av vagnpark – översikt över exempel på ansökning
+        - name: Hantering av vagnpark – exempelprogram
           href: dev-tools/introduction-fleet-management-sample.md
     - name: Visual Studio-verktyg
       items:
-        - name: Utvecklingsverktyg – översikt
+        - name: Utvecklingsverktyg
           href: dev-tools/development-tools-overview.md
         - name: Utvecklingsverktyg – självstudier
           href: dev-tools/introduction-visual-studio.md
         - name: Programutforskaren
           href: dev-tools/application-explorer.md
-        - name: Skapa och felsök ett projekt
+        - name: Skapa och felsöka projekt
           href: dev-tools/build-debug-project.md
         - name: Versionsoperationer
           href: dev-tools/build-operations.md
-        - name: Kodredigeraren
+        - name: Kodredigerare – funktioner
           href: dev-tools/code-editor.md
-        - name: Skapa en modell och datamodellelement
+        - name: Skapa modeller och datamodellelement
           href: dev-tools/create-data-model-elements.md
           items:
-            - name: Riktlinjer för namngivning
+            - name: Riktlinjer för namngivning av tillägg
               href: extensibility/NamingGuidelines.md
             - name: Inaktivera modellanpassning och avskrivningsfunktioner
               href: dev-tools/lock-models.md
@@ -64,43 +64,43 @@
           href: dev-tools/customization-analysis-report.md
         - name: Elementdesigners
           href: dev-tools/element-designers.md
-        - name: Elementanvändning
+        - name: Kommandon för att fastställa användning av element
           href: dev-tools/element-usage.md
-        - name: Exportera och importera en modell
+        - name: Exportera och importera modeller
           href: dev-tools/models-export-import.md
-        - name: Sök efter metadata i Visual Studio
+        - name: Metadatasökning i Visual Studio
           href: dev-tools/metadata-search-visual-studio.md
-        - name: Modeller
+        - name: Modeller och paket
           href: dev-tools/models.md
-        - name: Projekt i Dynamics 365 for Finance and Operations
+        - name: Projekttypen Finance and Operations
           href: dev-tools/projects.md
         - name: Verktygstillägg för Visual Studio
           href: dev-tools/developer-tools-add-ins.md
-        - name: Uppdatera utvecklingsverktyg för Visual Studio
+        - name: Uppdatera utvecklingsverktygen för Visual Studio
           href: dev-tools/update-development-tools.md
     - name: 'X++, programmeringsspråk'
       items:
-        - name: 'X++ och felsökningsfunktioner  '
+        - name: X++ och felsökningsfunktioner
           href: dev-tools/new-x-debugger-features.md
-        - name: Felsök X ++ mot en kopia av en produktionsdatabas
+        - name: Felsöka X ++ mot kopior av produktionsdatabaser
           href: dev-tools/debug-x-issue-against-copy-of-production.md
-        - name: Felsök kod av typen X++
+        - name: Felsöka kod av typen X++
           href: dev-tools/debug-xpp.md
-        - name: EventHandlerResult-klasser i scenarier med begäran och svar
+        - name: EventHandlerResult-klasser i scenarier med begäran eller svar
           href: dev-tools/event-handler-result-class.md
-        - name: 'Skriv affärslogik med källkod av typen C\# och X++'
+        - name: 'Skriva affärslogik med källkod av typen C# och X++'
           href: dev-tools/write-business-logic.md
-        - name: Stöd för programmeringsspråk
+        - name: Ändringar i X++ och kompileraren för X++
           href: dev-tools/programming-language-support.md
-        - name: 'LINQ-provider för C\#'
+        - name: 'LINQ-provider för C#'
           href: dev-tools/linq-provider-c.md
-        - name: Bästa praxis för redigering
+        - name: Skriva regelverksregler
           href: dev-tools/author-best-practice-rules.md
         - name: Egenskaper för Programutforskaren
           href: dev-ref/application-explorer-aot-properties.md
         - name: Språkreferens för X++
           items:
-            - name: Språkreferens X++
+            - name: Språkreferens för X++
               href: dev-ref/xpp-language-reference.md
             - name: Variabler och datatyper för X ++
               href: dev-ref/xpp-variables-data-types.md
@@ -118,9 +118,9 @@
               href: dev-ref/xpp-macros.md
             - name: Attributklasser för X ++
               href: dev-ref/xpp-attribute-classes.md
-            - name: 'Jämförelse mellan X++ och C\#'
+            - name: 'Jämförelse mellan X++ och C#'
               href: dev-ref/xpp-cs-comparison.md
-            - name: X++-syntax
+            - name: Syntax för X++
               href: dev-ref/xpp-syntax.md
     - name: 'API-, klass- och registerreferens'
       href: dev-ref/api-reference.md
@@ -160,29 +160,29 @@
               href: dev-ref/d-classes.md
             - name: E-klasser
               href: dev-ref/e-classes.md
-            - name: 'F-klasser: FieldBinding till FormBuildAnimateControl'
+            - name: F-klasser (FieldBinding to FormBuildAnimateControl)
               href: dev-ref/fieldbinding-classes.md
-            - name: 'F-klasser: FormBuildButtonControl till FormBuildFastTabSummarySeparator'
+            - name: F-klasser (FormBuildButtonControl to FormBuildFastTabSummarySeparator)
               href: dev-ref/formbuildbuttoncontrol-classes.md
-            - name: 'F-klasser: FormBuildFilterPaneControl till FormBuildRealControl'
+            - name: F-klasser (FormBuildFilterPaneControl to FormBuildRealControl)
               href: dev-ref/formbuildfilterpanecontrol-classes.md
-            - name: 'F-klasser: FormBuildReferenceControl till FormButtonSeparatorControl'
+            - name: F-klasser (FormBuildReferenceControl to FormButtonSeparatorControl)
               href: dev-ref/formbuildreferencecontrol-classes.md
-            - name: 'F-klasser: FormChangeTracker till FormControlEventArgs'
+            - name: F-klasser (FormChangeTracker to FormControlEventArgs)
               href: dev-ref/formchangetracker-classes.md
-            - name: 'F-klasser: FormDataObject till FormFastTabHeaderControl'
+            - name: F-klasser (FormDataObject to FormFastTabHeaderControl)
               href: dev-ref/formdataobject-classes.md
-            - name: 'F-klasser: FormFastTabSummarySeparator till FormGridControl'
+            - name: F-klasser (FormFastTabSummarySeparator to FormGridControl)
               href: dev-ref/formfasttabsummaryseparator-classes.md
-            - name: 'F-klasser: FormGroupControl till FormIntControl'
+            - name: F-klasser (FormGroupControl to FormIntControl
               href: dev-ref/formgroupcontrol-classes.md
-            - name: 'F-klasser: FormListBoxControl till FormNotifyEventArgs'
+            - name: F-klasser (FormListBoxControl to FormNotifyEventArgs)
               href: dev-ref/formlistboxcontrol-classes.md
-            - name: 'F-klasser: FormObject till FormRealControl'
+            - name: F-klasser (FormObject to FormRealControl)
               href: dev-ref/formobject-classes.md
-            - name: 'F-klasser: FormReferenceControl till FormStringControl'
+            - name: F-klasser (FormReferenceControl to FormStringControl)
               href: dev-ref/formreferencecontrol-classes.md
-            - name: 'F-klasser: FormTabControl till FormWindowControl'
+            - name: F-klasser (FormTabControl to FormWindowControl)
               href: dev-ref/formtabcontrol-classes.md
             - name: G-klasser
               href: dev-ref/g-classes.md
@@ -223,81 +223,87 @@
     - name: Utbyggbarhet
       href: extensibility/extensibility-home-page.md
       items:
-        - name: Introduktion och kom igång
+        - name: Introduktion och komma igång
           items:
-            - name: Planer för programs utbyggbarhet
+            - name: Plan för programs utbyggbarhet
               href: extensibility/extensibility-roadmap.md
             - name: Begäranden om utbyggbarhet
               href: extensibility/extensibility-requests.md
-            - name: Vanliga frågor och svar
+            - name: Frågor och svar om utbyggbarhet
               href: extensibility/app-sealing-faq.md
             - name: Migrera från överlägg till tillägg
               href: extensibility/migrate-overlayer-extension.md
             - name: Anpassa modellelement med tillägg (självstudiekurs)
               href: extensibility/customize-model-elements-extensions.md
-            - name: 'Anpassning: överlägg och tillägg'
+            - name: Anpassa med tillägg och överlägg
               href: extensibility/customization-overlayering-extensions.md
         - name: Nyheter
           items:
             - name: Ändringar av utbyggbarhet juli 2017
               href: extensibility/changes-july-2017.md
-            - name: Ändringar av utbyggbarhet version 7.3
+            - name: Ändringar av utbyggbarhet i version 7.3
               href: extensibility/extensibility-changes-73.md
-            - name: Ändringar av utbyggbarhet version 8.0
+            - name: Ändringar av utbyggbarhet i version 8.0
               href: extensibility/changes-80.md
+            - name: Ändringar av utbyggbarhet version 8.0.1
+              href: extensibility/extensibility-changes-801.md
+            - name: Ändringar av utbyggbarhet version 8.0.2
+              href: extensibility/extensibility-changes-802.md
+            - name: Ändringar av utbyggbarhet version 8.0.3
+              href: extensibility/extensibility-changes-803.md
         - name: Grunderna
           items:
             - name: Inkräktande anpassningar
               href: extensibility/intrusive-customizations.md
-            - name: Klasstillägg
+            - name: Klasstillägg – modell
               href: extensibility/class-extensions.md
-            - name: 'Klasstillägg: Metodradbyte och beslutskedja'
+            - name: Klasstillägg via metodradbyte och beslutskedja
               href: extensibility/method-wrapping-coc.md
-            - name: Riktlinjer för namngivning
+            - name: Riktlinjer för namngivning av modelltillägg
               href: extensibility/naming-guidelines-extensions.md
-            - name: Släpp på modellbegränsningar så att överlägg till tillägg refaktoreras
+            - name: Släppa på modellbegränsningar för att omstrukturera överlägg till tillägg
               href: extensibility/refactoring-over-layering.md
         - name: Hur gör jag?
           items:
-            - name: Lägg till ett enum-värde
+            - name: Lägga till värden i enums
               href: extensibility/add-enum-value.md
-            - name: Ändra en utökad datatyp
+            - name: Ändra utökade datatyper
               href: extensibility/modify-edt.md
-            - name: Registrera en underklass fabriksmetoder
+            - name: Registrera underklasser för fabriksmetoder
               href: extensibility/register-subclass-factory-methods.md
             - name: Svara med EventHandlerResult
               href: extensibility/respond-event-handler-result.md
             - name: Utöka klassen RunBase
               href: extensibility/extend-runbase-class.md
-            - name: Använd ombud för att anpassa programstart
+            - name: Anpassa programstart med ombud
               href: extensibility/startup-customizations.md
-            - name: Ändra ett befintligt fält i ett register
+            - name: Ändra befintliga fält i ett register
               href: extensibility/modify-existing-field.md
-            - name: Lägg till ett nytt fält i ett befintligt register
+            - name: Lägga till fält i register
               href: extensibility/add-field-extension.md
-            - name: Lägg till ett index i ett befintligt register
+            - name: Lägga till index i register
               href: extensibility/add-index.md
-            - name: Lägg till en relation i ett befintligt register
+            - name: Lägga till relationer i register
               href: extensibility/add-relation.md
-            - name: Ändra egenskaper för ett befintligt register
+            - name: Ändra registeregenskaper
               href: extensibility/modify-properties.md
-            - name: Lägg till en metod i ett register
+            - name: Lägga till metoder i register
               href: extensibility/add-method-table.md
-            - name: Utför verksamhetsåtgärder under en registerposts livscykel
+            - name: Utföra verksamhetsåtgärder under registerposters livscykel
               href: extensibility/subscribe-table-events.md
-            - name: Lägg till en ny datakälla i ett formulär
+            - name: Lägga till datakällor i formulär
               href: extensibility/add-datasource.md
-            - name: Ändra rubrik i ett formulär
+            - name: Ändra formulärrubrik
               href: extensibility/change-caption-form.md
             - name: Ändra egenskaper för formulärkontroll
               href: extensibility/modify-control-properties.md
-            - name: Ändra en etikett
+            - name: Ändra etiketter med tilläggsfiler för etikett
               href: extensibility/change-label.md
-            - name: Utöka nummersekvensens omfattning
+            - name: Utöka nummerseriers omfattning
               href: extensibility/extend-number-sequence-scope.md
-            - name: Lägg till en ny lagerdimension
+            - name: Lägga till nya lagerdimensioner
               href: extensibility/inventory-dimensions.md
-            - name: Ändringar av pris- och rabattillägg
+            - name: Utbyggbarhet för pris och rabatt
               href: extensibility/pricing-app73.md
             - name: Tillägg för registermappning
               href: extensibility/map-extensions.md
@@ -309,19 +315,21 @@
       items:
         - name: Börja spåra med Trace Parser
           href: perf-test/trace-trace-tutorial.md
-        - name: PerfSDK och fleranvändartester med Visual Studio Team Services
+        - name: Performance SDK och fleranvändartester via Visual Studio Online
           href: perf-test/perfsdk-tutorial.md
-        - name: Diagnostisera problem och analysera prestandaproblem med Trace Parser
+        - name: Performance SDK och fleranvändartestning i lokala miljöer
+          href: perf-test/perfsdk-tutorial-lbd.md
+        - name: Diagnostisera problem och analysera prestanda med Trace Parser
           href: perf-test/trace-parser.md
-        - name: Prestandatidtagare
+        - name: Prestandatimer
           href: perf-test/performance-timer.md
-    - name: Testa stöd i Visual Studio
+    - name: Teststöd i Visual Studio
       items:
         - name: Testning och valideringar
           href: perf-test/testing-validation.md
         - name: Testa projekt i Visual Studio
           href: perf-test/testing-support.md
-        - name: Distribution med kontinuerlig bygg- och testautomatisering
+        - name: Distribuera topologier som har stöd för kontinuerlig bygg- och testautomatisering
           href: perf-test/continuous-build-test-automation.md
     - name: Gäller från
       href: dev-tools/date-effectivity.md
@@ -340,33 +348,33 @@
           href: user-interface/build-customer-form.md
         - name: Skapa navigering
           href: user-interface/build-navigation.md
-        - name: Skapa en arbetsyta
+        - name: Skapa arbetsytor
           href: user-interface/build-workspace.md
     - name: Formulär
       items:
-        - name: Navigering i Dynamics 365 for Finance and Operations
+        - name: Navigeringsbegrepp
           href: user-interface/page-navigation.md
-        - name: Layout i Dynamics 365 for Finance and Operations
+        - name: Sidlayout i webbklienten
           href: user-interface/page-layout.md
-        - name: Symbolteckensnitt
+        - name: Dynamics Symbol-teckensnitt
           href: user-interface/symbol-font.md
-        - name: Testa formulär med egna mönster
+        - name: Testa formulär som använder egna mönster
           href: user-interface/testing-forms-custom-patterns.md
-        - name: Skapa och använd djuplänkar
+        - name: 'Skapa delbara, säkrade URL:er (djuplänkar)'
           href: user-interface/create-deep-links.md
         - name: 'Hjälpmedel i formulär, produkter och kontroller'
           href: user-interface/enable-accessibility.md
-        - name: Anpassa fälthjälp
+        - name: Anpassa fältbeskrivningar
           href: user-interface/customize-field-help.md
     - name: Kontroller
       items:
         - name: Åtgärdskontroller
           href: user-interface/action-controls.md
-        - name: Indatakontroller och storlek på rutnätskolumner
+        - name: Storlek på indatakontroller och rutnätskolumner
           href: user-interface/sizing-input-controls-grid-columns.md
         - name: Stöd för kryssrutor i trädkontroller
           href: user-interface/check-box-tree-controls.md
-        - name: Filter
+        - name: Filtreringsalternativ
           href: user-interface/filtering.md
         - name: Värdbaserad PowerApps-kontroll
           href: user-interface/powerapps-host-control.md
@@ -374,7 +382,7 @@
       items:
         - name: Migrera kod för snabbmeny
           href: migration-upgrade/code-migration-context-menus.md
-        - name: Migrering av kod för dubbelklickning med mus
+        - name: Migrera logik för dubbelklickning med mus
           href: migration-upgrade/code-migration-double-click.md
         - name: Sammanhangsberoende datainmatning för sökningar
           href: user-interface/contextual-data-entry-lookups.md
@@ -382,11 +390,11 @@
           href: user-interface/hierarchy-viewer-control.md
         - name: Sökningskontroller
           href: user-interface/lookups-controls.md
-        - name: Kontroller för filöverföring
+        - name: Kontroller för filuppladdning
           href: user-interface/file-upload-control.md
         - name: Systemdefinierade knappar
           href: user-interface/system-defined-buttons.md
-        - name: Bilder
+        - name: Bilder på en sida eller i ett rutnät
           href: user-interface/images-form-grid.md
         - name: 'Teckensnitts- och bakgrundsfärger för indata-, register- och rutnätskontroller'
           href: user-interface/specify-color-font-background-controls.md
@@ -394,13 +402,13 @@
           href: user-interface/bidirectional-support.md
         - name: Skapa ikoner för paneler i arbetsytan
           href: user-interface/create-icons-workspace-tiles.md
-        - name: 'Utbyggbara kontroller – offentliga JavaScript-API:er'
+        - name: 'Offentliga JavaScript-API:er för utbyggbara kontroller'
           href: user-interface/public-javascript-apis.md
         - name: Checklista för kontroll
           href: user-interface/control-checklist.md
     - name: Meddelanden
       items:
-        - name: Skjutreglage och MessageBox
+        - name: Skjutreglage och MessageBox – dialogrutor
           href: user-interface/slider-messagebox.md
         - name: 'API för meddelandecenter, meddelandefält och meddelandeinformation'
           href: user-interface/messaging-api-center-bar-details.md
@@ -408,11 +416,11 @@
           href: user-interface/messaging-user.md
     - name: Riktlinjer för primärt formulärmönster
       items:
-        - name: Välj ett formulärmönster
+        - name: Formulärmönster för migrerade formulär
           href: user-interface/select-form-pattern.md
         - name: Formulärformat och -mönster
           href: user-interface/form-styles-patterns.md
-        - name: Tillägg för formulärmönster
+        - name: Visual Studio-tillägg som stöder formulärmönster
           href: user-interface/form-pattern-add-ins.md
     - name: Formulärmönster
       items:
@@ -450,7 +458,7 @@
           href: user-interface/dialog-form-pattern.md
         - name: Formulärmönster för listruta
           href: user-interface/drop-dialog-form-pattern.md
-        - name: Formulärmönster sökning
+        - name: Formulärmönster för sökning
           href: user-interface/lookup-form-pattern.md
         - name: Formulärmönster för faktabox
           href: user-interface/factbox-form-patterns.md
@@ -498,7 +506,7 @@
           href: user-interface/workspace-filter-group-subpattern.md
     - name: Utbyggbarhet för kontroll
       items:
-        - name: Skapa en utbyggbar kontroll
+        - name: Skapa aextensible-kontroller
           href: user-interface/build-extensible-control.md
         - name: Kortkommandon för utbyggbara kontroller
           href: user-interface/keyboard-shortcuts-controls.md
@@ -523,37 +531,37 @@
       items:
         - name: Snabbreferens för Uppgiftsinspelare
           href: user-interface/task-recorder-quick-reference.md
-        - name: Skapa dokumentation eller utbildning med Uppgiftsinspelare
+        - name: Skapa dokumentation eller utbildning med uppgiftsinspelning
           href: user-interface/task-recorder-training-docs.md
 - name: Mobilplattform
   href: mobile-apps/platform/mobile-platform-home-page.md
   items:
-    - name: Komma igång
+    - name: Kom igång
       href: mobile-apps/platform/mobile-platform-getting-started.md
       items:
-        - name: Arkitektur
+        - name: Överväganden vid arkitektur och design
           href: mobile-apps/platform/mobile-platform-architecture.md
-        - name: Händelseöversikt för affärslogik
+        - name: Affärslogikhändelser
           href: mobile-apps/platform/business-logic-events-overview.md
         - name: Riktlinjer för siddesign
           href: mobile-apps/platform/page-design-guidelines.md
         - name: Riktlinjer för åtgärdsdesign
           href: mobile-apps/platform/action-design-guidelines.md
-        - name: Krav för fomulärdesign
+        - name: Krav för formulärdesign
           href: mobile-apps/platform/form-design-requirements.md
     - name: Vanliga uppgifter
       items:
-        - name: Konfigurera en arbetsyta genom att använda klassen SysAppWorkspace
+        - name: Konfigurera arbetsytor genom att använda klassen SysAppWorkspace
           href: mobile-apps/platform/scenarios/mobile-workspace-configuration.md
-        - name: Anpassa hur ett fält visas så att det går att klicka i det
+        - name: Göra fält på mobilappars sidor klickbara
           href: mobile-apps/platform/scenarios/make-workspace-field-clickable.md
-        - name: Visa ett antal i ett fält
+        - name: Visa antal i fält
           href: mobile-apps/platform/scenarios/display-count-workspace.md
-        - name: Skydda en arbetsyta för en mobilapp
+        - name: Skydda mobila arbetsytor
           href: mobile-apps/platform/scenarios/secure-mobile-workspace.md
-        - name: Lokalisera arbetsytor på servern
+        - name: Lokalisera mobila arbetsytor
           href: mobile-apps/platform/scenarios/localize-workspaces-on-server.md
-        - name: Göra ett fält obligatoriskt genom att använda klasser för arbetsytor
+        - name: Göra fält obligatoriska genom att använda klasser för arbetsytor
           href: mobile-apps/platform/scenarios/make-field-mandatory.md
     - name: Utvecklingsreferens för servern
       items:
@@ -561,7 +569,7 @@
           href: mobile-apps/platform/mobile-workspace-server-apis.md
     - name: Utvecklingsreferens för klienten
       items:
-        - name: 'Översikt över design-API:er för klienten'
+        - name: 'Design-API:er för klienten'
           href: mobile-apps/platform/scenarios/client-api-design-overview.md
         - name: 'Klient-API:er'
           href: mobile-apps/platform/client-apis/client-apis-reference.md
@@ -598,7 +606,7 @@
               href: mobile-apps/platform/client-apis/modules/view-model-control-lookup-imultilookup.md
             - name: Sidmodul
               href: mobile-apps/platform/client-apis/modules/view-model-ipage.md
-            - name: Sidlänksmodul
+            - name: Pagelink-modul
               href: mobile-apps/platform/client-apis/modules/view-model-control-pagelink-ipagelink.md
             - name: Delmodul
               href: mobile-apps/platform/client-apis/modules/view-model-control-part-ipart.md
@@ -606,7 +614,7 @@
               href: mobile-apps/platform/client-apis/modules/services-business-logic-services.md
             - name: Värdemodul
               href: mobile-apps/platform/client-apis/modules/view-model-control-value-ivalue.md
-            - name: 'Application, typ'
+            - name: Programtyp
               href: mobile-apps/platform/client-apis/interfaces/services-application-iapplication.md
             - name: 'ApplicationMetadata, typ'
               href: mobile-apps/platform/client-apis/interfaces/services-application-iapplicationmetadata.md
@@ -626,13 +634,13 @@
               href: mobile-apps/platform/client-apis/interfaces/view-model-control-basecontrol-icontrol-icontrolmetadata.md
             - name: 'DataService, typ'
               href: mobile-apps/platform/client-apis/interfaces/services-business-logic-services-idataservice.md
-            - name: 'Deferred, typ'
+            - name: 'Deferred, typ<T>'
               href: mobile-apps/platform/client-apis/interfaces/defer-ideferred.md
             - name: 'Design, typ'
               href: mobile-apps/platform/client-apis/interfaces/view-model-ipage-idesign.md
-            - name: 'EventHook, typ'
+            - name: 'EventHook, typ<T>'
               href: mobile-apps/platform/client-apis/interfaces/event-ievent-ieventhook.md
-            - name: 'Field, typ'
+            - name: Fälttyp
               href: mobile-apps/platform/client-apis/interfaces/view-model-control-field-ifield-ifield.md
             - name: 'FieldDesign, typ'
               href: mobile-apps/platform/client-apis/interfaces/view-model-control-field-ifield-ifielddesign.md
@@ -648,7 +656,7 @@
               href: mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-igenericvalue.md
             - name: 'getDataSource, typ'
               href: mobile-apps/platform/client-apis/interfaces/view-model-control-basecontrol-icontrol-icontrol.md
-            - name: 'Group, typ'
+            - name: Grupptyp
               href: mobile-apps/platform/client-apis/interfaces/view-model-control-group-igroup-igroup.md
             - name: 'GroupDesign, typ'
               href: mobile-apps/platform/client-apis/interfaces/view-model-control-group-igroup-igroupdesign.md
@@ -660,7 +668,7 @@
               href: mobile-apps/platform/client-apis/interfaces/view-model-control-hyperlink-ihyperlink-ihyperlinkdesign.md
             - name: 'HyperLinkMetadata, typ'
               href: mobile-apps/platform/client-apis/interfaces/view-model-control-hyperlink-ihyperlink-ihyperlinkmetadata.md
-            - name: 'Image, typ'
+            - name: Bildtyp
               href: mobile-apps/platform/client-apis/interfaces/view-model-control-image-iimage-iimage.md
             - name: 'ImageDesign, typ'
               href: mobile-apps/platform/client-apis/interfaces/view-model-control-image-iimage-iimagedesign.md
@@ -672,13 +680,13 @@
               href: mobile-apps/platform/client-apis/interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontroldesign.md
             - name: 'InputControlMetadata, typ'
               href: mobile-apps/platform/client-apis/interfaces/view-model-control-basecontrol-iinputcontrol-iinputcontrolmetadata.md
-            - name: 'List, typ'
+            - name: Listtyp
               href: mobile-apps/platform/client-apis/interfaces/view-model-control-list-ilist-ilist.md
             - name: 'ListDesign, typ'
               href: mobile-apps/platform/client-apis/interfaces/view-model-control-list-ilist-ilistdesign.md
             - name: 'ListMetadata, typ'
               href: mobile-apps/platform/client-apis/interfaces/view-model-control-list-ilist-ilistmetadata.md
-            - name: 'Lookup, typ'
+            - name: Uppslagstyp
               href: mobile-apps/platform/client-apis/interfaces/view-model-control-lookup-ilookup-ilookup.md
             - name: 'LookupDesign, typ'
               href: mobile-apps/platform/client-apis/interfaces/view-model-control-lookup-ilookup-ilookupdesign.md
@@ -696,7 +704,7 @@
               href: mobile-apps/platform/client-apis/interfaces/view-model-ipage-inavigationargs.md
             - name: 'NumberSequenceConfig, typ'
               href: mobile-apps/platform/client-apis/interfaces/view-model-control-basecontrol-iinputcontrol-inumbersequenceconfig.md
-            - name: 'Page, typ'
+            - name: Sidtyp
               href: mobile-apps/platform/client-apis/interfaces/view-model-ipage-ipage.md
             - name: 'PageData, typ'
               href: mobile-apps/platform/client-apis/interfaces/services-business-logic-services-ipagedata.md
@@ -714,15 +722,15 @@
               href: mobile-apps/platform/client-apis/interfaces/view-model-ipage-ipagesubmitargs.md
             - name: 'PageTarget, typ'
               href: mobile-apps/platform/client-apis/interfaces/view-model-ipage-ipagetarget.md
-            - name: 'Part, typ'
+            - name: Deltyp
               href: mobile-apps/platform/client-apis/interfaces/view-model-control-part-ipart-ipart.md
             - name: 'PartDesign, typ'
               href: mobile-apps/platform/client-apis/interfaces/view-model-control-part-ipart-ipartdesign.md
             - name: 'PartMetadata, typ'
               href: mobile-apps/platform/client-apis/interfaces/view-model-control-part-ipart-ipartmetadata.md
-            - name: 'Row, typ'
+            - name: Radtyp
               href: mobile-apps/platform/client-apis/interfaces/view-model-control-list-ilist-irow.md
-            - name: 'Value, type'
+            - name: Värdetyp
               href: mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivalue.md
             - name: 'ValueDesign, typ'
               href: mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluedesign.md
@@ -730,39 +738,39 @@
               href: mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluemetadata.md
 - name: Dataintegration
   items:
-    - name: Välj en strategi för dataintegrering (importera/exportera)
+    - name: Välja en strategi för dataintegrering (importera/exportera)
       href: data-entities/integration-overview.md
     - name: 'API:er för dataintegration'
       items:
-        - name: 'API:er för datahanteringspaket'
+        - name: 'REST API:er för datahanteringspaket'
           href: data-entities/data-management-api.md
         - name: Tjänsteslutpunkter
           href: data-entities/services-home-page.md
           items:
-            - name: Felsökning av tjänsteautentisering
+            - name: Felsöka tjänsteautentisering
               href: data-entities/troubleshoot-service-authentication.md
         - name: OData
           href: data-entities/odata.md
-        - name: Anpassade tjänster
+        - name: Utveckling av anpassade tjänster
           href: data-entities/custom-services.md
         - name: Återkommande integrationer
           href: data-entities/recurring-integrations.md
-        - name: Använda testverktyg från tredje part med tjänster
+        - name: Testtjänster som använder verktyg från tredje part
           href: data-entities/third-party-service-test.md
     - name: Utveckling för integration
       items:
-        - name: Dataintegrering med datatabeller
+        - name: Datahantering och integrering med datatabeller
           href: data-entities/data-management-integration-data-entity.md
           items:
-            - name: Utveckla en enhet för migrering av data
+            - name: Utveckla enheter för migrering av data
               href: data-entities/develop-entity-for-data-migration.md
             - name: Utveckla sammansatta datatabeller
               href: data-entities/develop-composite-data-entities.md
-            - name: Konfigurera delning ekonomiska data mellan företag
+            - name: Konfigurera delning av ekonomiska data mellan företag
               href: data-entities/tasks/configure-financial-cross-company-data-sharing.md
-            - name: Skapa en postmall för att förenkla datainmatning
+            - name: Skapa postmallar för att förenkla datainmatning
               href: data-entities/tasks/create-record-template-facilitate-data-entry.md
-            - name: Använda en postmall för att skapa en ny post
+            - name: Skapa poster med postmallar
               href: data-entities/tasks/use-record-template-new-record.md
         - name: Integrera data med hjälp av Common Data Service
           href: data-entities/data-integration-cds.md
@@ -789,8 +797,23 @@
                   href: ../supply-chain/sales-marketing/field-service-product.md
                 - name: Synkronisera arbetsorder i Field Service till försäljningsorder i Finance and Operations
                   href: ../supply-chain/sales-marketing/field-service-work-order.md
-                - name: Synkronisera avtalsfakturor i Field Service till fristextfakturor i Finance and Operations
+                - name: Synkronisera avtalsfakturor i Field Service till fritextfakturor i Finance and Operations
                   href: ../supply-chain/sales-marketing/field-service-invoice.md
+            - name: Konfigurera Project Service Automation-integration
+              href: ../financials/project-management/PSA-integration.md?toc=/dev-itpro/toc.json
+              items:
+                - name: Parametrar för Project Service Automation-integration
+                  href: ../financials/project-management/PSA-parameters.md?toc=/dev-itpro/toc.json
+                - name: Synkronisera projektkontrakt och projekt
+                  href: ../financials/project-management/project-contracts-templates.md?toc=/dev-itpro/toc.json
+                - name: Synkronisera projektuppgifter
+                  href: ../financials/project-management/project-tasks-template.md?toc=/dev-itpro/toc.json
+                - name: Synkronisera utgiftskategorier för projekt
+                  href: ../financials/project-management/project-categories-templates.md?toc=/dev-itpro/toc.json
+                - name: Synkronisera projektuppskattningar med projektprognoser
+                  href: ../financials/project-management/project-estimates-templates.md?toc=/dev-itpro/toc.json
+                - name: Synkronisera projektutfall med projektets integrationsjournal
+                  href: ../financials/project-management/project-actuals-templates.md?toc=/dev-itpro/toc.json
         - name: Konsumera externa webbtjänster
           href: data-entities/consume-external-web-service.md
 - name: Datahantering
@@ -809,7 +832,7 @@
           href: data-entities/configuration-data-templates.md
         - name: Datamallar med flera kalkylblad
           href: data-entities/excel-template-multiple.md
-        - name: Spåra ändringar av en enhet
+        - name: Aktivera ändringsspårning för enheter
           href: data-entities/entity-change-track.md
         - name: Konfigurationsnycklar och datatabeller
           href: data-entities/config-key-entities.md
@@ -826,13 +849,13 @@
           href: dev-tools/design-best-practices.md
         - name: Skapa nya datatabeller
           href: data-entities/build-consuming-data-entities.md
-        - name: Egenskaper för datatabell
+        - name: Beteendemässiga egenskaper för datatabell
           href: data-entities/behavioral-properties-data-entities.md
-        - name: Skapa beräkningskolumner och virtuella fält
+        - name: Skapa beräknade kolumner och virtuella fält
           href: data-entities/data-entity-computed-columns-virtual-fields.md
         - name: Korsföretagsbeteende
           href: data-entities/cross-company-behavior.md
-        - name: Hantera lands-/regionkoder
+        - name: Koder för land/region och konfigurationsnycklar
           href: data-entities/countryregion-codes-configuration-keys.md
         - name: Arvmönster
           href: data-entities/support-super-type-sub-type.md
@@ -840,179 +863,181 @@
           href: data-entities/data-entity-wizard-rules.md
         - name: Metadataegenskaper
           href: data-entities/behavioral-properties-data-entities.md
-        - name: 'Valideringar, standarder och omappade fält'
+        - name: 'Valideringar, standardvärden och omappade fält'
           href: data-entities/validations-defaults-unmapped-fields.md
         - name: Säkerhet och datatabeller
           href: data-entities/security-data-entities.md
-        - name: Skapa en skrivskyddad enhet som visar ekonomiska dimensioner
+        - name: Skapa skrivskyddade enheter som visar ekonomiska dimensioner
           href: financial/read-only-entity-financial.md
     - name: Ta med din egen databas
       href: analytics/export-entities-to-your-own-database.md
     - name: Automatisering av datauppgift
       href: data-entities/data-task-automation.md
-    - name: Resurser för att svara på en databegäran enligt GDPR
+    - name: Resurser för att svara på databegäranden enligt GDPR
       href: gdpr/gdpr-home-page.md
       items:
-        - name: Guide till GDPR för Microsoft Dynamics 365 for Finance and Operations
+        - name: Guide till GDPR för Finance and Operations
           href: gdpr/gdpr-guide.md
         - name: Tillgångsklassificeringar
           href: gdpr/gdpr-asset-classification-values.md
-        - name: Använda rapporten för personsökning
+        - name: Rapport för personsökning
           href: gdpr/gdpr-person-search-report.md
         - name: Utöka rapporten för personsökning
           href: gdpr/gdpr-extend-person-search-report.md
         - name: Hantera åtkomst till känsliga data
           href: gdpr/gdpr-auditing-sensitive-data.md
-        - name: Svara på en begäran om personuppgifter med hjälp av Talent
+        - name: Svara på begäranden om personuppgifter med hjälp av Talent
           href: gdpr/respond-dsr-request-talent.md
-        - name: Svara på en begäran om personuppgifter med hjälp av Microsoft Dynamics AX 2012
+        - name: Svara på begäranden om personuppgifter i AX 2012
           href: gdpr/gdpr-ax2012.md
         - name: Uppgiftsbegäranden enligt GDPR för LCS
           href: gdpr/gdpr-lcs.md
-    - name: Arbetsyta för datavalidering
+    - name: Arbetsyta för checklista för datavalidering
       href: user-interface/data-validation-workspace.md
 - name: Kontinuerlig leverans
   href: dev-tools/continuous-delivery-home-page.md
   items:
-    - name: Frågor och svar för utveckling och kontinuerlig leverans
+    - name: Frågor och svar om utveckling och kontinuerlig leverans
       href: dev-tools/continuous-delivery-faq.md
     - name: Exkludera testpaket från skapandet
       href: dev-tools/exclude-test-packages.md
     - name: Hantera tredjepartsmodeller och körningspaket med hjälp av källkontroll
       href: dev-tools/manage-runtime-packages.md
-    - name: Versionsmodeller i automatiskt skapande
+    - name: Uppdatera modellversioner i automatiskt skapande
       href: dev-tools/version-models-build.md
 - name: Släpp lösningar med hjälp av Lifecycle Services
   items:
-    - name: Utveckla och släpp
+    - name: Utveckla och släppa
       href: lcs-solutions/lcs-solutions-app-source.md
     - name: Mellanlagra och publicera
       href: lcs-solutions/marketing-content-lcs-solutions.md
-    - name: Lägg till en metod
+    - name: Lägga till metoder
       href: lcs-solutions/methodologies-lcs-solutions.md
     - name: Konfigurera bibliotek för affärsprocessmodelleraren
       href: lcs-solutions/business-process-modeler-libraries-lcs-solutions.md
     - name: Migrera kod
       href: lcs-solutions/code-migration-lcs-solutions.md
-    - name: Validera ett program
+    - name: Validera program
       href: lcs-solutions/app-validation-lcs-solutions.md
-    - name: Bearbeta och använd datapaket
+    - name: Bearbeta och använda datapaket
       href: lcs-solutions/process-data-packages-lcs-solutions.md
-    - name: Säkerhetskopiera en lösningsdatabas
+    - name: Säkerhetskopiera lösningsdatabaser
       href: lcs-solutions/database-backup-lcs-solutions.md
-    - name: Lokaliseringar
+    - name: Lokaliserings- och regelfunktioner
       href: lcs-solutions/country-region.md
       items:
-        - name: Klassificera lokaliseringsfunktioner
+        - name: Klassificering av lokaliseringsfunktioner
           href: lcs-solutions/classify-localization-features.md
-        - name: Sammanhang för land/region
+        - name: Använd sammanhang för land/region
           href: lcs-solutions/apply-country-context.md
-        - name: Regelcertifieringar
+        - name: Information om regelcertifiering i funktionstitlar
           href: lcs-solutions/regulatory-certifications.md
         - name: Regeluppdateringar
           href: lcs-solutions/regulatory-watch-communication.md
-        - name: Separata lokaliseringsmodeller
+        - name: Separation av lokaliseringsmodeller
           href: lcs-solutions/separate-localization-models.md
-        - name: Skicka en regelnotifiering
+        - name: Skicka regelnotifieringar
           href: lcs-solutions/submit-localization-alerts.md
 - name: Utveckling av Financials
   href: financial/financial-dev-home-page.md
   items:
-    - name: Dimensioner
+    - name: Stöd för olika dimensionsmönster
       href: financial/dimensions.md
-    - name: Lägg till dimensioner i en Excel-mall
+    - name: Lägga till dimensioner i Excel-mallar
       href: financial/dimensions-overview.md
-    - name: Stöd för dialogrutekontrollen Dimensionspost
+    - name: Stöd för dimensionspostkontroller i dialogrutor
       href: financial/dimension-entry-control-dialog-support.md
-    - name: 'Migrering av dimensionspostkontroll  '
+    - name: Migrera standarddimensionskontroller till dimensionspostkontroller
       href: financial/dimension-entry-control-migration.md
-    - name: Upptag av dimensionspostkontroll
+    - name: Upptag av dimensionspostkontroller
       href: financial/dimension-entry-control-uptake.md
     - name: Delmönster för dimensionsuttrycksverktyg
       href: financial/dimension-expression-builder-subpattern.md
-    - name: Konfiguration av ekonomisk dimension för integrering av program
+    - name: Konfiguration av ekonomiska dimensioner
       href: financial/financial-dimension-configuration-integration.md
-    - name: Aktivera ekonomiska dimensioner
+    - name: Aktivering av ekonomiska dimensioner
       href: financial/activate-financial-dimensions.md
-    - name: Ekonomiska dimensioner och huvudkonton i ett språk som skrivs från höger till vänster
+    - name: Ekonomiska dimensioner och huvudkonton i språk som skrivs från höger till vänster
       href: financial/financial-dimensions-main-accounts-right-left-language.md
-    - name: Skapa ett bakomliggande register som ska användas som en ekonomisk dimension
+    - name: Skapa bakomliggande register som ska användas som ekonomiska dimensioner
       href: financial/dimensionable-entities.md
-    - name: 'Migrering av kontroll av segmenterade poster  '
+    - name: Migrera kontroller av segmenterade poster
       href: financial/segmented-entry-control-conversion.md
-    - name: Stöd för dialogruta för kontroll av segmenterade poster
+    - name: Stöd för kontroller av segmenterade poster i dialogrutor
       href: financial/segmented-entry-control-dialog-support.md
-    - name: Metadata för kontroll av segmenterade poster
+    - name: Metadata för designtid för kontrollera av segmenterade poster
       href: financial/segmented-entry-control-metadata-specification.md
-    - name: Vägledning för kontroll av segmenterade poster
+    - name: Migreringsvägledning för kontroll av segmenterade poster
       href: financial/segmented-entry-control-migration-guidance.md
-    - name: Parm-metod för kontroll av segmenterade poster
+    - name: Parm-metoder för kontroll av segmenterade poster
       href: financial/segmented-entry-control-parm-method-specification.md
-    - name: Lägg till möjligheten att söka efter värden för ekonomiska dimensioner i Microsoft Excel-mallar
+    - name: Lägga till sökvärden för ekonomiska dimensioner i Excel-mallar
       href: financial/add-dimensions-excel-templates.md
     - name: Skapa valutakursleverantörer
       href: financial/create-exchange-rate-providers.md
-    - name: Skapa valutakursleverantörer i Microsoft Dynamics Finance and Operations version 8.0
+    - name: Skapa valutakursleverantörer i Finance and Operations version 8.0
       href: financial/create-exchange-rate-8.md
 - name: Logistikutveckling
   items:
-    - name: Guide för Gantt-utveckling
+    - name: Guide för utveckling av Gantt-kontroll
       href: user-interface/gantt-development-guide.md
     - name: Skapa en ny transporthanteringsmotor
       href: ../supply-chain/transportation/create-new-transportation-management-engine.md
 - name: Distribution
   items:
-    - name: Distribuera en demonstrationsmiljö
+    - name: Distribuera demonstrationsmiljöer
       href: deployment/deploy-demo-environment.md
     - name: Molndistribution
       items:
-        - name: Integration av Azure Resource Manager
+        - name: Slutför integration av Azure Resource Manager
           href: deployment/arm-onboarding.md
-        - name: Azure ExpressRoute och Dynamics 365 for Finance and Operations
+        - name: Azure ExpressRoute och Finance and Operations
           href: deployment/expressroute.md
         - name: Arkitektur för Finance and Operations
           href: ../fin-and-ops/imp-lifecycle/architecture-overview.md
     - name: Lokal distribution
       href: deployment/on-premises-deployment-landing-page.md
       items:
-        - name: Översikt – lokal
+        - name: Alternativ för lokal distribution
           href: deployment/on-premises-overview.md
-        - name: Planera inför lokal distribution
+        - name: Planera och förbereda för lokala distributioner
           href: deployment/plan-onprem-deployment.md
-        - name: Anpassa storlek på maskinvara
+        - name: Storlekskrav för maskinvara
           href: ../fin-and-ops/get-started/hardware-sizing-on-premises-environments.md?toc=/dev-itpro/toc.json
-        - name: Skapa ett lokalt projekt
+        - name: Konfigurera lokala projekt
           href: lifecycle-services/lbd-create-lcs-on-prem-project.md
-        - name: Ställa in och distribuera lokala miljöer
+        - name: Konfigurera och distribuera lokala miljöer
           href: deployment/setup-deploy-on-premises-environments.md
           items:
-            - name: Distribuera lokala miljöer med Platform update 12
+            - name: Distribuera lokala miljöer på Platform update 12
               href: deployment/setup-deploy-on-premises-pu12.md
-            - name: Distribuera lokala miljöer med Platform update 8 och 11
+            - name: Distribuera lokala miljöer på Platform update 8 och 11
               href: deployment/setup-deploy-on-premises-pu8-pu11.md
         - name: Utveckla och distribuera anpassade modeller i lokala miljöer
           href: deployment/develop-deploy-custom-models-on-premises.md
-        - name: Konfigurera omvänd proxy för lokal-miljö
+        - name: Konfigurera omvända proxyservrar för lokala miljöer
           href: deployment/onprem-reverseproxy.md
         - name: Uppdatera en lokal distribution
           href: deployment/apply-updates-on-premises.md
-        - name: Distribuera en lokal distribution
+        - name: Lokal diagnostik
+          href: deployment/on-premises-diagnostics.md
+        - name: Distribuera om lokala distributioner
           href: deployment/redeploy-on-prem.md
         - name: Uppdatera den lokala agenten
           href: lifecycle-services/update-local-agent.md
-        - name: Konfigurera om miljön
+        - name: Konfigurera om miljöer
           href: lifecycle-services/reconfigure-environment.md
         - name: Internetanslutning för klient
           href: user-interface/client-disconnected.md
-        - name: Felsöka Dynamics 365 for Finance and Operations (lokal)
+        - name: Felsöka lokala distributioner
           href: deployment/troubleshoot-on-prem.md
     - name: Distribuera anpassad kod
       items:
-        - name: Skapa ett driftfärdigt paket
+        - name: Skapa modellpaket som kan distribueras
           href: deployment/create-apply-deployable-package.md
-        - name: Installera uppdateringar av en molnmiljö
+        - name: Tillämpa uppdateringar i molnmiljöer
           href: deployment/apply-deployable-package-system.md
-        - name: Installera ett distribuerbart paket
+        - name: Installera distribuerbara paket från kommandoraden
           href: deployment/install-deployable-package.md
         - name: Avinstallera ett paket
           href: deployment/uninstall-deployable-package.md
@@ -1021,89 +1046,89 @@
 - name: 'Uppgraderingar, uppdateringar och snabbkorrigeringar'
   href: migration-upgrade/upgrade-home-page.md
   items:
-    - name: Uppgradera från AX 2012 till Dynamics 365 for Finance and Operations
+    - name: Uppgradera från AX 2012 till Finance and Operations
       href: migration-upgrade/upgrade-overview-2012.md
       items:
-        - name: AX 2012-uppgradering - Använd verktyget Uppgraderingsanalys för att planera
+        - name: AX 2012-uppgradering – Planera med verktyget Uppgraderingsanalys
           href: migration-upgrade/upgrade-analyzer-tool.md
-        - name: AX 2012-uppgradering – Använd tjänsten Koduppgradering för att beräkna insatsen
+        - name: AX 2012-uppgradering – Beräkna insatsen med tjänsten Koduppgradering
           href: migration-upgrade/analyze-code-upgrade.md
-        - name: AX 2012-uppgradering – Distribuera ett begränsat läge
+        - name: AX 2012-uppgradering – Distribuera en demonstrationsmiljö för analys
           href: migration-upgrade/analysis-sandbox.md
-        - name: AX 2012-uppgradering - Datauppgradering i en utvecklingsmiljö
+        - name: AX 2012-uppgradering – Datauppgradering i utvecklingsmiljöer
           href: migration-upgrade/data-upgrade-2012.md
-        - name: AX 2012-uppgradering - Uppgifter för uppgradering av AX 2012-data
+        - name: AX 2012-uppgradering – Checklista för föruppgradering för datauppgradering
           href: migration-upgrade/prepare-data-upgrade.md
-        - name: AX 2012-uppgradering - Datauppgradering i begränsat läge
+        - name: AX 2012-uppgradering – Datauppgradering i begränsade lägen
           href: migration-upgrade/upgrade-data-sandbox.md
-        - name: AX 2012-uppgradering - Övergångstest
+        - name: AX 2012-uppgradering – Övergångstest
           href: migration-upgrade/upgrade-cutover-testing.md
-        - name: AX 2012-uppgradering - Uppgifter som ska utföras efter uppgradering
+        - name: AX 2012-uppgradering – Uppgifter efter uppgradering
           href: migration-upgrade/app-validation-process.md
-        - name: AX 2012-uppgradering - Funktionstest har genomförts
+        - name: AX 2012-uppgradering – Funktionstest har genomförts
           href: migration-upgrade/upgrade-functional-validation.md
-        - name: AX 2012-uppgradering - Förbered publicering
+        - name: AX 2012-uppgradering – Förbered publicering
           href: migration-upgrade/upgrade-go-live-prep.md
-        - name: AX 2012 uppgradering - Go live
+        - name: AX 2012-uppgradering – Publicera
           href: migration-upgrade/2012-upgrade-cutover.md
         - name: Ändringar som påverkar uppgradering från AX 2012
           items:
-            - name: Kontoplansavgränsare måste vara unika
+            - name: Gör kontoplansavgränsare unika
               href: migration-upgrade/chart-accounts-delimiter-unique.md
-            - name: Uppgradering av enstaka verifikations- och valutaomvärdering
+            - name: Uppgradera journaler med enstaka verifikationer och valutaomvärderingar
               href: migration-upgrade/single-voucher-and-currency-revaluation-upgrade.md
             - name: Datamodell för tidsplanering av projektresurser
               href: migration-upgrade/data-model-changes-resource-management.md
             - name: Ändringar av arbetsflödets delsystem
               href: migration-upgrade/workflow-subsystem.md
-            - name: Därför har vi flyttat från kuber till aggregerade modeller
+            - name: Aggregerade modeller används i stället för kuber för analys
               href: migration-upgrade/in-memory-real-time-aggregate-models.md
-            - name: Migrera en uppgraderad försäljningskub till enhetslagringen
+            - name: Migrera uppgraderade försäljningskuber till enhetslagringen
               href: migration-upgrade/migrate-upgraded-cube-entity-store.md
             - name: Uppgradera budgetplanering
               href: migration-upgrade/upgrade-budget-planning.md
-    - name: Kodmigrering och -uppgradering
+    - name: Migrering och uppgradering av kod
       href: migration-upgrade/code-migration-home-page.md
       items:
-        - name: Förbered att migrera koden
+        - name: Förbereda migrering av kod
           href: migration-upgrade/prepare-migration.md
-        - name: Konfigurera mappning av Visual Studio Team Services under kodmigrering
+        - name: Konfigurera Visual Studio Team Services-mappning
           href: migration-upgrade/configure-vso-solution.md
-        - name: Dela modeller
+        - name: Delning av modell
           href: dev-tools/model-split.md
-        - name: Använd ombud för att lösa beroenden mellan modeller
+        - name: Lösa beroenden mellan modeller med hjälp av ombud
           href: migration-upgrade/delegates-migration.md
     - name: Uppgradera till den senaste uppdateringen (moln)
       items:
         - name: Process för flytta till den senaste uppdateringen
           href: migration-upgrade/upgrade-latest-update.md
-        - name: Livscykelpolicy
+        - name: Livscykelpolicy och molnbaserade versioner av programmet
           href: migration-upgrade/versions-update-policy.md
-        - name: Installera den senaste plattformsuppdateringen i din miljö
+        - name: Installera den senaste plattformsuppdateringen i miljöer
           href: migration-upgrade/upgrade-latest-platform-update.md
-        - name: Uppgradera Dynamics-plattformen till augusti 2016-versionen
+        - name: Uppgradera Dynamics AX-plattformen till augusti 2016-versionen
           href: migration-upgrade/update-platform-each-release.md
-        - name: Uppgradera ett begränsat läge
+        - name: Uppgradera begränsade lägen
           href: migration-upgrade/upgrade-sandbox-environment.md
-        - name: Uppgradera data i utvecklings- eller demonstrationsmiljöer
+        - name: Uppgradera data i utvecklings- eller demonstrationsmiljöer eller begränsade miljöer
           href: migration-upgrade/upgrade-data-to-latest-update.md
         - name: Uppdatera utvecklingsverktyg
           href: dev-tools/update-development-tools.md
     - name: Uppgradera till den senaste uppdateringen (lokal)
       items:
-        - name: Uppdatera en lokal distribution
+        - name: Uppdatera lokala distributioner
           href: deployment/apply-updates-on-premises.md
-        - name: Distribuera en lokal distribution
+        - name: Distribuera om en lokal distribution
           href: deployment/redeploy-on-prem.md
     - name: Snabbkorrigeringar
       items:
-        - name: Hämta snabbkorrigeringar från Lifecycle Services
+        - name: Ladda ned snabbkorrigeringar från Lifecycle Services
           href: migration-upgrade/download-hotfix-lcs.md
-        - name: Installera uppdateringar av en molnmiljö
+        - name: Tillämpa uppdateringar i molnmiljöer
           href: deployment/apply-deployable-package-system.md
-        - name: Installera en snabbkorrigering av metadata
+        - name: Installera snabbkorrigeringar av metadata i utvecklingsmiljöer
           href: migration-upgrade/install-metadata-hotfix-package.md
-        - name: Korrigera Reporting Services i en enskild miljö
+        - name: Korrigera Reporting Services i enskilda miljöer
           href: migration-upgrade/patch-reporting-service-environment.md
         - name: Uppdatera utvecklingsverktyg för Visual Studio
           href: dev-tools/update-development-tools.md
@@ -1116,9 +1141,9 @@
 - name: Systemadministration
   href: sysadmin/system-administration-home-page.md
   items:
-    - name: Frågor och svar om månadsuppdateringar av plattformen
+    - name: Frågor och svar om månadsuppdateringar av molnplattformen
       href: sysadmin/faq-platform-monthly-updates.md
-    - name: Lägg till länkar till organisationens juridiska villkor och sekretesspolicy
+    - name: Lägga till länkar till juridiska villkor och sekretesspolicy
       href: sysadmin/legal-terms-privacy-statement.md
     - name: Rapport med licenskoder och konfigurationsnycklar
       href: sysadmin/license-codes-configuration-keys-report.md
@@ -1135,7 +1160,7 @@
       items:
         - name: Säkerhetsarkitektur
           href: sysadmin/security-architecture.md
-        - name: Säkerhetsrapporter
+        - name: Färdiga säkerhetsrapporter
           href: sysadmin/security-reports.md
         - name: Skapa nya användare
           href: sysadmin/tasks/create-new-users.md
@@ -1150,18 +1175,18 @@
     - name: Batchbearbetning
       href: sysadmin/batch-processing-overview.md
       items:
-        - name: Översikt över batchserver
+        - name: Batchbearbetning och batchservrar
           href: sysadmin/batch-server-overview.md
-        - name: Skapa ett batchjobb
+        - name: Skapa batchjobb
           href: sysadmin/tasks/create-batch-job.md
-    - name: Översikt över optimerings-advisor
+    - name: Optimerings-advisor
       href: sysadmin/optimization-advisor-overview.md
       items:
         - name: Skapa regler för optimerings-advisor
           href: sysadmin/create-rules-optimization-advisor.md
 - name: Lifecycle Services
   items:
-    - name: Översikt över Lifecycle Services
+    - name: Resurser för Lifecycle Services
       href: lifecycle-services/lcs.md
       items:
         - name: LCS för kunder
@@ -1172,7 +1197,7 @@
           href: lifecycle-services/whats-new-lcs.md
         - name: Kända problem
           href: lifecycle-services/known-issues.md
-    - name: Användarhandbok för Dynamics Lifecycle Services
+    - name: Användarhandbok för Lifecycle Services
       href: lifecycle-services/lcs-user-guide.md
     - name: Prenumerationsberäkning
       href: lifecycle-services/subscription-estimator.md
@@ -1183,31 +1208,31 @@
     - name: Konfigurationshanteraren
       href: lifecycle-services/configuration-manager-lcs.md
       items:
-        - name: Ställ in Konfigurationshanteraren
+        - name: Ställa in Konfigurationshanteraren
           href: lifecycle-services/set-up-configuration-manager-lcs.md
     - name: Konfigurera tjänsten för koduppgradering
       href: lifecycle-services/configure-execute-code-upgrade.md
-    - name: 'Skapa en metod  '
+    - name: Skapa eller uppdatera metoder
       href: lifecycle-services/create-methodology.md
     - name: Affärsprocessmodelleraren
       href: lifecycle-services/bpm-overview.md
     - name: Affärsprocessbibliotek i affärsprocessmodelleraren
       href: lifecycle-services/business-process-libraries-business-process-modeler.md
-    - name: 'Skapa, redigera eller söka i BPM-bibliotek'
+    - name: 'Skapa, redigera och bläddra i affärsprocessmodellerarens bibliotek'
       href: lifecycle-services/creating-editing-browsing.md
-    - name: Utför uppgifter i ett BPM-bibliotek
+    - name: Slutföra uppgifter i affärsprocessmodelleraren
       href: lifecycle-services/complete-tasks-bpm.md
-    - name: Använda aktivitetsdiagram
+    - name: Arbeta med aktivitetsdiagram i BPM-bibliotek
       href: lifecycle-services/using-activity-diagrams.md
-    - name: Synkronisera ett BPM-bibliotek med Visual Studio Team Services (VSTS)
+    - name: Synkronisera BPM-bibliotek med Visual Studio Team Services
       href: lifecycle-services/synchronize-bpm-vsts.md
-    - name: Skapa ett acceptanstestpaket med hjälp av uppgiftsguider och BPM
+    - name: Skapa bibliotek med acceptanstest för användare med hjälp av uppgiftsguider och BPM
       href: lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md
     - name: Flödesscheman i affärsprocessmodelleraren
       href: lifecycle-services/flowcharts-business-process-modeler.md
-    - name: Överför anpassade affärsprocesser
+    - name: Överföra anpassade affärsprocesser till affärsprocessmodelleraren
       href: lifecycle-services/upload-business-processes-bpm-task-recorder.md
-    - name: 'Övervakning och diagnostik '
+    - name: Övervakning och diagnostik
       href: lifecycle-services/monitoring-diagnostics.md
     - name: Starta om miljötjänster
       href: lifecycle-services/restart-environment-services.md
@@ -1215,191 +1240,40 @@
       href: lifecycle-services/user-logins.md
     - name: Tillgångsbibliotek
       href: lifecycle-services/asset-library.md
-    - name: Microsoft Dynamics 365 – översikt av översättningstjänst
+    - name: Översättningstjänst för Microsoft Dynamics 365
       href: lifecycle-services/translation-service-overview.md
       items:
-        - name: 'Användarhandbok för Microsoft Dynamics 365 - översättningstjänst  '
+        - name: Översätta användargränssnittsfiler
           href: lifecycle-services/use-translation-service.md
-        - name: Översättning av dokumentationsfil för Microsoft Dynamics 365 - översättningstjänst
+        - name: Översätta dokumentationsfiler
           href: lifecycle-services/use-translation-service-ua.md
-        - name: Översättningsminne för Microsoft Dynamics 365 - översättningstjänst
+        - name: Filer för översättningsminne
           href: lifecycle-services/use-translation-service-tm.md
-    - name: Dynamics AX 2012 Lifecycle Services-funktioner
-      items:
-        - name: Distribution
-          items:
-            - name: Molnstyrda miljöer
-              href: lifecycle-services/ax-2012/cloud-hosted-environments-lcs.md
-            - name: Kopiera en konfiguration
-              href: lifecycle-services/copy-configuration-lcs.md
-            - name: Planera en Dynamics AX 2012 R3-distribution i Azure
-              href: lifecycle-services/ax-2012/plan-2012-r3-deployment-azure.md
-            - name: Distribuera Dynamics AX 2012 R3 i Azure
-              href: lifecycle-services/ax-2012/deploy-2012-r3-azure-lcs.md
-            - name: Distribuera en demonstrationsmiljö av Dynamics AX 2012 R3
-              href: lifecycle-services/ax-2012/deploy-ax-2012-r3-ax-2012-r3-cu8-demo-environment-azure.md
-            - name: Distribuera en utvecklingsmiljö i Azure
-              href: lifecycle-services/ax-2012/deploy-development-environment-azure.md
-            - name: Distribuera en utvecklingsmiljö med hög tillgänglighet i Azure
-              href: lifecycle-services/ax-2012/deploy-high-availability-environment-azure.md
-            - name: Distribuera en testmiljö i Azure
-              href: lifecycle-services/ax-2012/deploy-test-environment-azure.md
-            - name: Hantera en Dynamics AX 2012 R3-distribution i Azure
-              href: lifecycle-services/ax-2012/manage-2012-r3-deployment-azure.md
-            - name: Anslut Enterprise Portal-servrar till en enda servergrupp
-              href: lifecycle-services/ax-2012/join-enterprise-portal-servers-single-server-farm.md
-            - name: Registrera startpunkter i Dynamics AX Enterprise Portal
-              href: lifecycle-services/ax-2012/record-entry-points-enterprise-portal.md
-            - name: Distribuera en utvecklings-/testmiljö för Retail E-commerce i Azure
-              href: lifecycle-services/ax-2012/deploy-retail-ecommerce-devtest-environment-azure.md
-            - name: Distribuera demonstrationsmiljö för Retail Essentials i Azure
-              href: lifecycle-services/ax-2012/deploy-retail-essentials-demo-environment-azure.md
-            - name: Distribuera en utvecklings-/testmiljö för Retail Essentials i Azure
-              href: lifecycle-services/ax-2012/deploy-retail-essentials-devtest-environment-azure.md
-            - name: Distribuera en utvecklings-/testmiljö för Retail Mobility i Azure
-              href: lifecycle-services/ax-2012/deploy-retail-mobility-devtest-environment-azure.md
-            - name: Felsök en Dynamics AX 2012 R3-distribution i Azure
-              href: lifecycle-services/ax-2012/troubleshoot-2012-r3-deployment-azure.md
-            - name: Uppdateringar för Dynamics AX 2012 R3
-              href: lifecycle-services/ax-2012/update-2012-r3-lcs.md
-        - name: Användarhandbok för ramverk för import/export av data
-          href: lifecycle-services/ax-2012/user-guide-dixf.md
-          items:
-            - name: Installera
-              href: lifecycle-services/ax-2012/install-dixf.md
-              items:
-                - name: Installera för AX 2012 R3
-                  href: lifecycle-services/ax-2012/install-ax-2012-r3.md
-                - name: Installera Dynamics AX 2012 R2 CU7-versionen för SQL Server 2014
-                  href: lifecycle-services/ax-2012/install-dixf-ax-2012-r2-cu7-ss-2014.md
-            - name: Migrera data
-              href: lifecycle-services/ax-2012/migrate-data-dixf.md
-            - name: Konfigurera versionen av SSIS
-              href: lifecycle-services/ax-2012/configure-sql-server-integration-services-multiple-versions-dixf.md
-            - name: Kopiera och jämför enhetsdata mellan företag
-              href: lifecycle-services/ax-2012/copy-compare-entity-data-between-companies-dixf.md
-            - name: Kopiera data mellan Dynamics AX-företag
-              href: lifecycle-services/ax-2012/copy-data-between-companies-dixf.md
-            - name: Kopiera data mellan Dynamics AX-instanser
-              href: lifecycle-services/ax-2012/copy-data-between-instances-dixf.md
-            - name: Skapa en anpassad målenhet
-              href: lifecycle-services/ax-2012/create-custom-target-entity-dixf.md
-            - name: Enheter för ramverk för import/export av data
-              href: lifecycle-services/ax-2012/entities-dixf.md
-            - name: Importera data från en CSV-datakälla
-              href: lifecycle-services/ax-2012/import-data-csv-data-source-dixf.md
-            - name: Importera data från en ODBC-datakälla
-              href: lifecycle-services/ax-2012/import-data-odbc-data-source-dixf.md
-            - name: Demonstrationsfiler
-              href: lifecycle-services/ax-2012/demo-files-dixf.md
-            - name: Snabb import/export
-              href: lifecycle-services/ax-2012/quick-import-export.md
-        - name: Register
-          items:
-            - name: Skapa register
-              href: lifecycle-services/ax-2012/create-tables.md
-            - name: Registeregenskaper
-              href: lifecycle-services/ax-2012/table-properties.md
-        - name: Verktyg i Dynamics AX 2012 LCS
-          items:
-            - name: Projekt
-              href: lifecycle-services/ax-2012/projects-lcs.md
-            - name: Metoder
-              href: lifecycle-services/ax-2012/methodologies-lcs.md
-            - name: 'Anpassningsanalys  '
-              href: lifecycle-services/ax-2012/customization-analysis-lcs.md
-            - name: Infrastrukturberäknaren
-              href: lifecycle-services/ax-2012/infrastructure-estimator-lcs.md
-            - name: Licensberäknaren
-              href: lifecycle-services/ax-2012/license-sizing-estimator-lcs.md
-            - name: Begäran om förslagssvar (lifecycle-services/RFP.md)
-              href: lifecycle-services/ax-2012/rfp-responses-lcs.md
-            - name: Systemdiagnostik
-              href: lifecycle-services/ax-2012/system-diagnostics-lcs.md
-            - name: Installera och kör Systemdiagnostik
-              href: lifecycle-services/ax-2012/install-run-system-diagnostics-lcs.md
-            - name: Uppgraderingsanalys
-              href: lifecycle-services/ax-2012/upgrade-analysis-lcs.md
-            - name: Användningsprofileraren
-              href: lifecycle-services/ax-2012/usage-profiler-lcs.md
-        - name: Nedladdningsbara verktyg i Dynamics AX 2012
-          items:
-            - name: Användarhandbok för koduppgraderingsverktyget (inaktuell)
-              href: lifecycle-services/ax-2012/code-upgrade-tool-user-guide.md
-            - name: Hämtningsbara Lifecycle Services-verktyg
-              href: lifecycle-services/ax-2012/lcs-downloadable-tools-formerly-informationsource.md
-            - name: Testverktyg för dataöverföring (beta)
-              href: lifecycle-services/ax-2012/test-data-transfer-tool-beta-2012.md
-              items:
-                - name: Installera
-                  href: lifecycle-services/ax-2012/install-test-data-transfer-tool-beta.md
-                - name: Kör
-                  href: lifecycle-services/ax-2012/run-test-data-transfer-tool-beta.md
-                - name: Importera demonstrationsdata för AX 2012 R3
-                  href: lifecycle-services/ax-2012/import-demo-data-ax-2012-r3-test-data-transfer-tool.md
-            - name: Utvecklingsverktyg för säkerhet
-              href: lifecycle-services/ax-2012/overview-security-development-tool-user-interface.md
-              items:
-                - name: Installera
-                  href: lifecycle-services/ax-2012/install-security-development-tool.md
-                - name: Användarhandbok
-                  href: lifecycle-services/ax-2012/security-development-tool-user-guide.md
-                - name: Definiera eller redigera behörigheter till startpunkten
-                  href: lifecycle-services/ax-2012/define-edit-entry-point-permissions.md
-            - name: Performance Benchmark Software Development Toolkit
-              href: lifecycle-services/ax-2012/performance-benchmark-software-development-toolkit-sdk-2012.md
-            - name: Security Upgrade Advisor Tool
-              href: lifecycle-services/ax-2012/security-upgrade-advisor-tool-user-guide.md
-            - name: Intelligent Data Management Framework (IDMF)
-              href: lifecycle-services/ax-2012/microsoft-idmf.md
-              items:
-                - name: Översikt
-                  href: lifecycle-services/ax-2012/overview-idmf.md
-                - name: Installationsguide
-                  href: lifecycle-services/ax-2012/installation-guide-idmf.md
-                - name: Konfiguration
-                  href: lifecycle-services/ax-2012/configuration-functionality-idmf-workspace.md
-                - name: Analys
-                  href: lifecycle-services/ax-2012/analysis-functionality-idmf-workspace.md
-                - name: Rensa och arkivera objekt
-                  href: lifecycle-services/ax-2012/work-with-purge-objects-archive-objects.md
-                - name: Skapa arkivobjekt
-                  href: lifecycle-services/ax-2012/create-archive-objects.md
-                - name: Skapa rensningsobjekt
-                  href: lifecycle-services/ax-2012/create-purge-objects.md
-                - name: Tidsplanera rensnings- och analysuppgifter
-                  href: lifecycle-services/ax-2012/schedule-purge-analysis-tasks.md
-                - name: Visa rensning- eller arkiveringsprojekt
-                  href: lifecycle-services/ax-2012/view-status-purge-archive-jobs.md
-                - name: Underhåll
-                  href: lifecycle-services/ax-2012/maintain-idmf.md
-                - name: Felsök
-                  href: lifecycle-services/ax-2012/troubleshoot-idmf.md
 - name: Databashantering
   items:
-    - name: Kopiera en databas från SQL Azure-databas till en SQL Server-miljö
+    - name: Kopiera databaser från Azure SQL Database till SQL Server-miljöer
       href: database/copy-database-from-azure-sql-to-sql-server.md
-    - name: Kopiera en databas från SQL Server till en produktionsmiljö för en Azure SQL-databas
+    - name: Kopiera databaser från SQL Server till produktionsmiljöer för Azure SQL Database
       href: database/copy-database-from-sql-server-to-azure-sql.md
-    - name: Återställ en databas i en miljö för icke-produktion
+    - name: Återställa databaser i miljöer för icke-produktion
       href: database/request-point-in-time-restore.md
-    - name: Exportera en kopia av en databas som ska återställas senare
+    - name: Exportera kopior av databaser som ska återställas senare
       href: database/copy-operations-database.md
-    - name: Begär en uppdatering av sandbox-databasen
+    - name: Begära uppdateringar av sandbox-databas
       href: database/database-refresh.md
 - name: Support
   items:
-    - name: Få hjälp med Dynamics 365 for Finance and Operations och Lifecycle Services
+    - name: Får hjälp med Finance and Operations och Lifecycle Services
       href: lifecycle-services/lcs-support.md
     - name: Logga ett Premier-supportärende
       href: lifecycle-services/premier-support.md
-    - name: Skicka en begäran till serviceteknikerteamet för Dynamics
+    - name: Skicka begäranden till serviceteknikerteamet för Dynamics
       href: lifecycle-services/submit-request-dynamics-service-engineering-team.md
-    - name: Konfigurera teknisk support för Dynamics 365 for Finance and Operations
+    - name: Konfigurera teknisk support för Finance and Operations
       href: lifecycle-services/support-experience.md
     - name: Vanliga frågor och svar om fönster för planerat underhåll
       href: lifecycle-services/planned-maintenance-window-faq.md
     - name: Molnåtgärder och underhåll
       href: lifecycle-services/cloud-operations-servicing.md
-    - name: Hantera support för Finance and Operations
+    - name: Hantera upplevelser av support för Finance and Operations
       href: lifecycle-services/cloud-powered-support-lcs.md

@@ -23,7 +23,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: da5519eb0746347905e3b3d3d81161850c429f57
 ms.openlocfilehash: f0856a3a36ff97773c0fadbe94fe680762c5206b
 ms.contentlocale: sv-se
-ms.lasthandoff: 06/22/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
@@ -35,7 +35,7 @@ Det här avsnittet beskriver hur du ställer in och använder shift i butikskass
 
 I Microsoft Dynamics 365 for Retail, beskriver termen *skift* kassatransaktionsdata och aktiviteter mellan två tidpunkter. För varje skift jämförs belopp som förväntas mot det belopp som har räknats och deklareras.
 
-Vanligtvis öppnas skift i början av arbetsdagen. Då deklarerar en användare startbeloppet som kassalådan innehåller. Försäljningstransaktioner ska sedan genomföras under dagen. Slutligen räknas kassalådan i slutet av dagen och de avslutande beloppen deklareras. Skiftet har avslutats och en Z-rapport genereras. Z-rapport anger om det finns något över- eller underskott.
+Vanligtvis öppnas skift i början av arbetsdagen. Då deklarerar en användare startbeloppet som kassalådan innehåller. Försäljningstransaktioner ska sedan genomföras under dagen. Slutligen räknas kassalådan i slutet av dagen och de avslutande beloppen deklareras. Skiftet har avslutats och en Z-rapport skapas. Z-rapport anger om det finns något över- eller underskott.
 
 ## <a name="typical-shift-scenarios"></a>Typiska skiftscenarier
 Retail innehåller flera konfigurationsalternativ och kassaåtgärder som stöder en mängd olika affärsprocesser i slutet av dagen för kassan. Det här avsnittet beskriver några vanliga skiftscenarier.
@@ -105,7 +105,7 @@ Ett skift som har stängts dolt används ofta för att frigöra en kassa för en
 Denna åtgärd beräknar summor för skift, för högt/för lågt belopp och slutför sedan ett aktivt skift eller skift som har stängts dolt. Beroende på användarens behörighet skrivs också en Z-rapport för skiftet. Skift som har stängts dolt kan inte återupptas eller ändras.
 
 ### <a name="print-x"></a>Skriv ut X
-Åtgärden som genererar och skriver ut en X-rapport för aktuella aktiva skiftet.
+Åtgärden som skapar och skriver ut en X-rapport för aktuella aktiva skiftet.
 
 ### <a name="reprint-z"></a>Skriv ut Z igen
 Åtgärden skriver ut den senaste Z-rapporten igen som systemet skapade när ett skift stängdes.

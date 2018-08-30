@@ -1,5 +1,5 @@
 ---
-title: Dynamics 365 for Talent, systemkrav och uppdateringspolicy
+title: "Systemkrav och uppdateringspolicy för Talent"
 description: "Det här avsnittet beskriver kraven för Dynamics 365 for Talent. Det beskriver även uppdateringspolicyn."
 author: rschloma
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: shielas
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 954f6237739defe14aaa13b19641f9f9d27b5fac
+ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
+ms.openlocfilehash: 85318332b802aace7d705289e6a298b49799b847
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="microsoft-dynamics-365-for-talent-system-requirements-and-update-policy"></a>Microsoft Dynamics 365 for Talent, systemkrav och uppdateringspolicy
+# <a name="talent-system-requirements-and-update-policy"></a>Systemkrav och uppdateringspolicy för Talent
 
 [!include [banner](includes/banner.md)]
 
@@ -43,7 +43,7 @@ Microsoft Dynamics 365 for Talent webbprogram går att köra i följande webblä
 Gå till programtillverkarens startsida för att hitta den senaste versionen för varje webbläsare. 
 
 > [!NOTE]
-> * Om du vill hämta bilder som har genererats från uppgiftsregistrering och inkludera dem i Microsoft Word-dokument måste du ha installerat ett Chrome-tillägg. 
+> * Om du vill hämta bilder som har skapats från uppgiftsregistrering och inkludera dem i Microsoft Word-dokument måste du ha installerat ett Chrome-tillägg. 
 > * Arbetsflödesredigeraren startas som ett ClickOnce-program. Endast Microsoft Edge och Internet Explorer (på en version som stöds av Microsoft Windows) stöder ClickOnce-program. Arbetsflödesredigeraren ClickOnce-programmet kräver 64-bitars kompatibelt operativsystem.
 > * Om du vill förhandsgranska PDF-filer, bör du använda moderna webbläsare som t.ex. Microsoft Edge (senaste tillgängliga versionen) på Windows 10 eller Google Chrome (senaste tillgängliga versionen) på Windows 10, Windows 8.1, Windows 7, Windows 8 eller 10 Google Nexus Tablet PC.
 >   Nätverkskrav
@@ -56,7 +56,7 @@ Gå till programtillverkarens startsida för att hitta den senaste versionen fö
 ## <a name="supported-microsoft-office-applications"></a>Microsoft Office-program som stöds
 
 * För att kunna köra Microsoft Excel och Word-tillägg måste du ha Microsoft Office 2016 för Windows eller Mac installerat. För mer information om versionskrav läs [felsökning av Office-integrering](../dev-itpro/office-integration/office-integration-troubleshooting.md "felsökning av Office-integrering+").
-* Om du vill visa dokument som har genererats av Export till Excel eller Export till Word-funktioner måste Microsoft Office 2007 eller senare installeras.
+* Om du vill visa dokument som har skapats av Export till Excel eller Export till Word-funktioner måste Microsoft Office 2007 eller senare installeras.
 
 ## <a name="update-policy"></a>Uppdatera policy
 

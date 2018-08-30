@@ -1,5 +1,5 @@
 --- 
-title: "Välja en datamodelldefinition när du skapar format för elektronisk rapportering (ER)"
+title: "Välj datamodelldefinitioner när du skapar format"
 description: "För att slutföra stegen i den här proceduren måste du först slutföra stegen i proceduren \"ER Skapa en konfigurationsleverantör och markera den som aktiv\"."
 author: NickSelin
 manager: AnnBe
@@ -16,19 +16,19 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: 70d928b0f0807731a5f96ef5497fb6060fbfebf5
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: dc357db8acbdb98741a694a8a9d3c0c0625c50e4
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="select-data-model-definition-while-creating-format-for-electronic-reporting-er"></a>Välja en datamodelldefinition när du skapar format för elektronisk rapportering (ER)
+# <a name="select-data-model-definitions-when-you-create-formats"></a>Välj datamodelldefinitioner när du skapar format
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
 För att slutföra stegen i den här proceduren måste du först slutföra stegen i proceduren "ER Skapa en konfigurationsleverantör och markera den som aktiv". 
 
-Den här proceduren visar hur en modells rotobjekt kan väljas som en datamodelldefinition för att infoga en ER-formatkonfiguration (elektronisk rapportering) som syftar till att generera elektroniska dokument. I den här proceduren ska du skapa en ER-formatkonfiguration för exempelföretaget Litware, Inc. 
+Den här proceduren visar hur en modells rotobjekt kan väljas som en datamodelldefinition för att infoga en ER-formatkonfiguration (elektronisk rapportering) som syftar till att skapa elektroniska dokument. I den här proceduren ska du skapa en ER-formatkonfiguration för exempelföretaget Litware, Inc. 
 
 Den här proceduren är avsedd för användare med rollen Systemadministratör eller Utvecklare för elektronisk rapportering. Stegen kan utföras med hjälp av valfri datauppsättning.
 

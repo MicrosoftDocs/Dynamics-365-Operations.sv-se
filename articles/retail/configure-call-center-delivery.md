@@ -8,12 +8,10 @@ ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
 ms.technology: 
-ms.search.: RetailMCRChannelDetailPage, MCROrderParameters
+ms.search.form: RetailMCRChannelDetailPage, MCROrderParameters
 audience: Application User
 ms.reviewer: josaw
 ms.search.scope: Core, Operations, Retail
-ms.custom: 
-ms.assetid: 
 ms.search.region: global
 ms.search.industry: Retail
 ms.author: josaw
@@ -23,7 +21,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: dc2ab66bf6e3195e1ebf394f99182f59c3ee2125
 ms.openlocfilehash: ebc8ee52da7d10ca18147684a0190e52a495ad5a
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/15/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
@@ -64,7 +62,7 @@ Avgifter kan definieras för en specifik kund, en grupp med kunder eller alla ku
 
 Avgifter kan konfigureras så att de tillämpas för ett visst leveranssätt, en leveranssättgrupp eller alla leveranssätt. Om du väljer **Tabell** i fältet **kod för leveranssätt** måste du välja ett visst leveranssätt i fältet **relation för leveranssätt**. Om du väljer **grupp**, måste du välja en grupp med leveranssätt i fältet **relation för leveranssätt**. Leveransättgrupperna definieras vid **butik \>kanalinställning \>tillägg \>leveransavgiftsgrupp**. De kan sedan länkas till en eller flera leveranssätt på sidan **leveranssätt**. Om du väljer en grupp när du definierar avgifter använder varje leveranssätt som är kopplad till vald grupp dessa avgifter. Slutligen, om du väljer **alla** i fältet **kod för leveranssätt** använder alla leveranssätt avgifterna. Därför ska du inte välja ett värde i fältet **relation för leveranssätt**.
 
-I avsnittet **rader** kan du definiera en eller flera avgifter med valuta, enligt behov. Avgifter måste kopplas till en avgiftskod som definierar ekonomiska bokföringsreglerna för avgiften. Fältet **kategori** används för att definiera hur kostnader ska beräknas. Till exempel om kunder ska debiteras ett schablonbelopp på 9,95 $ för att ha en order som levererats från ett visst leveranssätt, använda kategorin **fast**. Om företaget beslutar att debitera kunder procent av orderns totala summa för att täcka leveransavgifterna, använd kategorin **Procent**. Den faktiska avgiften till kunder som har definierats i fältet **Avgiftsvärde**.
+I avsnittet **rader** kan du definiera en eller flera avgifter med valuta, enligt behov. Avgifter måste kopplas till en avgiftskod som definierar ekonomiska bokföringsreglerna för avgiften. Fältet **kategori** används för att definiera hur kostnader ska beräknas. Till exempel om kunder ska debiteras ett schablonbelopp på 9,95 $ för att ha en order som levererats från ett visst leveranssätt, använda kategorin **fast**. Om företaget beslutar att debitera kunder procent av orderns totala summa för att täcka leveransavgifterna, använd kategorin **Procent**. Den verkliga avgiften till kunder som har definierats i fältet **Avgiftsvärde**.
 
 Detaljhandelsföretag konfigurerar ofta skiftindelade avgifter. I detta fall baseras det belopp som kunden ska betala för leveransen på ordervärdet. Om du vill konfigurera skiftindelade avgifter fyller du i fältet **Från belopp** och **Till belopp** förutom att definiera själva avgiften i fältet **Avgiftsvärde**. Exempelvis för order som har ett värde som är mindre än 50 $ debiterar en återförsäljare avgifter på 5,95 $ för markleverans. Order som har ett värde som är lika med eller större än 50 $, men mindre än 100 $, återförsäljaren debiterar 7,95 $. Order som har ett värde som är lika med eller större än 100 $, ger återförsäljaren gratis leverans. Följande bild visar konfigurationen av dessa avgifter.
 

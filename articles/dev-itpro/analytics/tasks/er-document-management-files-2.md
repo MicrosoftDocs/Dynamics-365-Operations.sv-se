@@ -1,5 +1,5 @@
 --- 
-title: "Utöka datamodellen för att använda dokumenthanteringsfiler i formatutmatningar"
+title: "Utöka datamodeller för att använda dokumenthanteringsfiler i ER-utdata"
 description: "I följande steg beskrivs hur en användare som tilldelats en roll som systemadministratör eller utvecklare för elektronisk rapportering kan konfigurera ett format för elektronisk rapportering (ER) för att använda dokumenthanteringsfiler (bilagor) i ER-utmatningar."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: bde8c612af22ba6bf4561732399fcf2cb1b5c9b3
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 8363dd2af728577175a620d7b645d90cea84803a
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="extend-data-model-to-use-document-management-files-in-format-outputs"></a>Utöka datamodellen för att använda dokumenthanteringsfiler i formatutmatningar
+# <a name="extend-data-models-to-use-document-management-files-in-er-output"></a>Utöka datamodeller för att använda dokumenthanteringsfiler i ER-utdata
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

@@ -1,5 +1,5 @@
 --- 
-title: "Skapa erforderliga konfigurationer för att importera data från en extern fil för elektronisk rapportering (ER)"
+title: "Skapa ER-konfigurationer för att importera data från externa filer"
 description: "I följande steg beskrivs hur en användare som har rollen Systemadministratör eller Utvecklare för elektronisk rapportering kan designa konfigurationer för Elektronisk rapportering (ER) så att dessa importerar data till programmet Dynamics 365 for Finance and Operations från en extern fil."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 999c6da306ff713521ce3bb5750bd7e65dc5daaf
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 70bf788b5924e382ab927fcff4c86908923e09d7
 ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="create-required-configurations-to-import-data-from-an-external-file-for-electronic-reporting-er"></a>Skapa erforderliga konfigurationer för att importera data från en extern fil för elektronisk rapportering (ER)
+# <a name="create-er-configurations-to-import-data-from-external-files"></a>Skapa ER-konfigurationer för att importera data från externa filer
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
@@ -93,7 +93,7 @@ I följande steg beskrivs hur en användare som har rollen Systemadministratör 
 13. Stäng sidan.
 
 ## <a name="run-the-format-mapping-to-the-data-model"></a>Kör formatmappningen till datamodellen
-    * Kör denna formatmappning i testsyfte. Använd filen 1099entries.xml som du tidigare hämtade. Du kan exportera denna fil från arbetsboken 1099entries.xlsx, som används för att hantera leverantörstransaktioner. Genererade utdata kommer att importeras från den valda XML-filen och anges i den anpassade datamodellen när den verkliga importen sker.  
+    * Kör denna formatmappning i testsyfte. Använd filen 1099entries.xml som du tidigare hämtade. Du kan exportera denna fil från arbetsboken 1099entries.xlsx, som används för att hantera leverantörstransaktioner. Skapade utdata kommer att importeras från den valda XML-filen och anges i den anpassade datamodellen när den verkliga importen sker.  
 1. Klicka på Kör.
     * Klicka på Bläddra och navigera till filen 1099entries.xml som du hämtade tidigare.  
 2. Klicka på OK.
@@ -118,9 +118,9 @@ I följande steg beskrivs hur en användare som har rollen Systemadministratör 
 10. Stäng sidan.
 11. Klicka på Avbryt.
 12. Välj "tax1099trans: Table 'VendSettlementTax1099' records= model.Validated" i trädet.
-13. Klicka på Redigera destination.
+13. Klicka på Redigera mål.
     * Detta ER-mål lades till i syfte att ange hur den importerade informationen uppdaterar programtabellerna. I det här fallet har tabellen VendSettlementTax1099 valts. Eftersom du har valt poståtgärden Infoga kommer importerade transaktioner att infogas i tabellen VendSettlementTax1099. Observera att en enskild modellmappning kan innehålla flera mål. Detta innebär att den importerade informationen kan användas för att uppdatera tabeller i flera program samtidigt. Tabeller, vyer och dataenheter kan användas som mål för ER.   
-    * Om mappningen anropas från en punkt i Dynamics 365 for Finance and Operations-programmet (t.ex. en knapp eller ett menyobjekt) som är särskilt utformat för denna åtgärd, ska ER-målet markeras som integreringspunkt. I det här exemplet är detta punkten ERTableDestination#VendSettlementTax1099.  
+    * Om mappningen anropas från en punkt i Dynamics 365 for Finance and Operations-programmet (t.ex. en knapp eller ett menyobjekt) som är särskilt utformat för denna åtgärd, ska ER-målet markeras som integreringspunkt. I det här exemplet är detta punkten ERTablemål#VendSettlementTax1099.  
 14. Klicka på Avbryt.
 15. Klicka på Visa alla.
 16. Klicka på Visa endast mappade.
@@ -140,12 +140,12 @@ I följande steg beskrivs hur en användare som har rollen Systemadministratör 
 24. Ange "IMPORT-001" i fältet Ange kupong-ID.
     * Bläddra för att hämta filen "1099entries.xml".  
 25. Klicka på OK.
-    * Lista över genererade varningar innehåller information om fel leverantörskonton, en felaktig en rutkod för felaktig 1099-moms, saknade landskoder osv. Jämför listan med varningar till det innehåll som ingår i körning av XML-filen.  
+    * Lista över skapade varningar innehåller information om fel leverantörskonton, en felaktig en rutkod för felaktig 1099-skatt, saknade landskoder osv. Jämför listan med varningar till det innehåll som ingår i körning av XML-filen.  
 26. Stäng sidan.
 27. Stäng sidan.
 28. Stäng sidan.
 29. Stäng sidan.
-30. Gå till Leverantörsreskontra > Periodiska uppgifter > 1099-moms > Leverantörskvittning för 1099-rapportering.
+30. Gå till Leverantörsreskontra > Periodiska uppgifter > 1099-skatt > Leverantörskvittning för 1099-rapportering.
     * Detta formulär visar ackumulerade transaktioner i tabellen Tax1099Summary, som har skapats baserat på importerade transaktioner.  
 31. Ange datumet till "2000-01-01" i fältet Från datum.
 32. Klicka på Manuella 1099-transaktioner.

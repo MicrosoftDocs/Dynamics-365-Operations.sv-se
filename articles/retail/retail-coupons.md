@@ -19,14 +19,14 @@ ms.author: scotttuc
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 9b4e792cae66e38546b3bdfdfbd59a2e36d891c2
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: c718a71ca270c67118a90456bac0cf182032d3db
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="create-coupons-for-retail-sales"></a>Skapa kuponger för butiksförsäljning
+# <a name="set-up-coupons-for-retail-sales"></a>Skapa kuponger för butiksförsäljning
 
 [!include [banner](includes/banner.md)]
 
@@ -68,7 +68,7 @@ Innan du kan skapa en kupong måste du ställa in kupongens streckkod och två k
 4.  På sidan **Nummerserier** skapar du två nya nummerserier. En serie för kupongkods-ID och en annan för kupongnummer. Kupongkods-ID är den unika identifieraren för varje kupongkod för en kupong. Kupongnumret är den unika identifierare för en kupong. Varje kupong kan ha flera koder och streckkoder som aktiverar kupongen.
 
     > [!NOTE]
-    > För de båda nummerserierna måste du ställa in fältet **Omfattning** på **Företag**. I de flesta fall ska du generera båda nummerserienumren automatiskt.
+    > För de båda nummerserierna måste du ställa in fältet **Omfattning** på **Företag**. I de flesta fall ska du skapa båda nummerserienumren automatiskt.
 
 5.  På sidan **Butiksparametrar** på fliken **Streckkoder**, välj streckkoden som du skapade tidigare.
 6.  På sidan **Delade butiksparametrar** på fliken **Nummerserier** väljer du de nummerserier som du skapade för kupongnummer och kupongkods-ID.

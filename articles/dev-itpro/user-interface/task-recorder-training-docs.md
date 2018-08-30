@@ -1,5 +1,5 @@
 ---
-title: Skapa dokumentation eller utbildning med uppgiftsregistreringar
+title: "Skapa dokumentation eller utbildning med hjälp av uppgiftsregistreringar"
 description: "Det här avsnittet förklarar vad uppgiftsregistrering och uppgiftsguider är, hur du skapar uppgiftsinspelningar och hur du anpassar Microsoft uppgiftsguider och inkluderar dem i din Hjälp."
 author: josaw1
 manager: AnnBe
@@ -19,14 +19,14 @@ ms.author: josaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: fbf7edbd141f5e94c333b64beedf9126d2900d47
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: fc5b0798397047d1adedfc19406a7875c853bea6
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="create-documentation-or-training-using-task-recordings"></a>Skapa dokumentation eller utbildning med uppgiftsregistreringar
+# <a name="create-documentation-or-training-by-using-task-recordings"></a>Skapa dokumentation eller utbildning med hjälp av uppgiftsregistreringar
 
 [!include [banner](../includes/banner.md)]
 
@@ -42,7 +42,7 @@ Uppgiftsinspelaren är ett verktyg som du kan använda till att registrera åtg�
 
 -   **Uppgiftsregistrering kan spelas upp som uppgiftsguider.** Uppgiftsguider är en integrerad del av Hjälp-upplevelsen. En uppgiftsguide är en kontrollerad, guidad, interaktiv upplevelse som leder dig genom stegen för en affärsprocess. Användaren uppmanas avsluta varje steg med en prompt ("eller bubbla") som animerar i UI och pekar på UI-elementet som användaren ska interagera med. "Bubblan" innehåller även information om hur du interagerar med element som till exempel "Klicka här" eller "I det här fältet anger du ett värde". En uppgiftsguide körs mot användarens aktuella datauppsättning och informationen som anges sparas i användarens miljö.
 -   **Uppgiftsregistreringar kan visas som processteg i hjälpfönstret.** Du kan använda hjälpfönstret om du vill söka efter och visa uppgiftsregistreringar. Du kan öppna hjälpfönstret genom att klicka på ikonen **?** i det övre navigeringsfältet eller så kan du använda tangentkombinationen **Ctrl + Skift +?**. Läsa stegen för en uppgiftsregistrering i hjälpfönstret eller så kan du välja om du vill spela in som en uppgiftsguide för hjälp i UI.
--   **Uppgiftsregistreringar kan sparas i BPM.** Du kan spara dina uppgiftsinspelningar på en rad i en hierarki i ett BPM-bibliotek i Lifecycle Services (LCS). En lista över steg och en affärsflödesplan genereras från inspelningen. Uppgiftsinspelningar som sparats i ett BPM-bibliotek kan visas som hjälp.
+-   **Uppgiftsregistreringar kan sparas i BPM.** Du kan spara dina uppgiftsinspelningar på en rad i en hierarki i ett BPM-bibliotek i Lifecycle Services (LCS). En lista över steg och en affärsflödesplan skapas från inspelningen. Uppgiftsinspelningar som sparats i ett BPM-bibliotek kan visas som hjälp.
 -   **Uppgiftsregistreringar kan sparas som Word-dokument.** På så sätt kan du enkelt producera utskrivbara utbildningsguider.
 
 Du kan skapa egna uppgiftsregistreringar, spela upp uppgiftsregistreringar som tillhandahålls av Microsoft eller ändra Microsofts uppgiftsregistrering för att återspegla konfigurationen. För mer information om Uppgiftsinspelare, se [Uppgiftsinspelare](task-recorder.md).
@@ -65,7 +65,7 @@ Om du skapar en ny uppgiftsregistrering eller baserar din registrering på Micro
 
 **Förstå de olika kommentarstyperna** Alla kommentarer är valfria. Lägga bara till dem när de ger användbar information till användaren.
 
--   **Rubrik**: En rubrikkommentarer visas innan stegtexten som uppgiftsregistrering genererar automatiskt. I uppgiftsguiden visas rubrikkommentaren ovanför den automatiskt genererade texten. Använd den här typen av kommentar för att förklara varför användaren utför steget eller för att ange ytterligare kontext.
+-   **Rubrik**: En rubrikkommentarer visas innan stegtexten som uppgiftsregistrering skapar automatiskt. I uppgiftsguiden visas rubrikkommentaren ovanför den automatiskt skapade texten. Använd den här typen av kommentar för att förklara varför användaren utför steget eller för att ange ytterligare kontext.
 
 Detta är redigeringsfönstret som visas när du lägger till en kommentar när du skapar registreringen. Ange en rubrik kommentar i rutan **Rubrik**. 
 
@@ -75,7 +75,7 @@ Detta är vad rubrikkommentarer ser ut som i "bubblan” i uppgiftsguiden.
 
 [![skärm2](./media/screen2.png)](./media/screen2.png)
 
--   **Anteckningar:** En anteckningskommentar visas efter stegtexten som uppgiftsregistrering genererar automatiskt. I uppgiftsguiden är den bara synlig om användaren klickar på länken **Visa mer** i uppgiftsguidens bubbla. Använd den här kommentarstypen för att beskriva allt som användaren måste veta för att slutföra steget.
+-   **Anteckningar:** En anteckningskommentar visas efter stegtexten som uppgiftsregistrering skapar automatiskt. I uppgiftsguiden är den bara synlig om användaren klickar på länken **Visa mer** i uppgiftsguidens bubbla. Använd den här kommentarstypen för att beskriva allt som användaren måste veta för att slutföra steget.
 
 Detta är redigeringsfönstret som visas när du lägger till en kommentar när du skapar registreringen. Ange en anteckningskommentar i rutan **Kommentarer**. 
 
@@ -85,7 +85,7 @@ Detta är vad anteckningskommentar ser ut som i "bubblan” i uppgiftsguiden.
 
 [![skärm4](./media/screen4.png)](./media/screen4.png)
 
--   **Informationssteg**: Dessa anteckningarna skapats genom att högerklicka på en kontroll eller någonstans i ett formulär &lt; **Uppgiftsregistrering** &lt; **steget Lägg till information. **Informationssteg visas som ett numrerat steg vid den tidpunkt som du infgar det, även om ingen åtgärd rapporterades i användargränssnittet. Du kan lägga till ett informationssteg på formulärnivå eller ett informationssteg associerat med en kontroll. När ett informationssteg tillhör ett formulär visas uppgiftsguidens "bubbla" någonstans i formuläret utan pekare när uppgiftsguiden spelas upp. När ett informationssteg tillhör en kontroll pekar uppgiftsguidens "bubbla" på kontrollen när uppgiftsguiden spelas upp. I hjälpfönstret visas en informationsstegsanteckning som ett numrerat steg med texten du angett. Använd informationssteg för att förbereda användaren för nästa steg, för att beskriva steg som måste utföras utanför Microsoft Dynamics 365 for Finance and Operations eller att hänvisa till andra registreringar (det går dock inte att skapa hyperlänkar i kommentarer).
+-   **Informationssteg**: Dessa anteckningar skapas genom att högerklicka på en kontroll eller någonstans i ett formulär &lt; **Uppgiftsregistrering** &lt; **steget Lägg till information. **Informationssteg visas som ett numrerat steg vid den tidpunkt som du infgar det, även om ingen åtgärd rapporterades i användargränssnittet. Du kan lägga till ett informationssteg på formulärnivå eller ett informationssteg associerat med en kontroll. När ett informationssteg tillhör ett formulär visas uppgiftsguidens "bubbla" någonstans i formuläret utan pekare när uppgiftsguiden spelas upp. När ett informationssteg tillhör en kontroll pekar uppgiftsguidens "bubbla" på kontrollen när uppgiftsguiden spelas upp. I hjälpfönstret visas en informationsstegsanteckning som ett numrerat steg med texten du angett. Använd informationssteg för att förbereda användaren för nästa steg, för att beskriva steg som måste utföras utanför Microsoft Dynamics 365 for Finance and Operations eller att hänvisa till andra registreringar (det går dock inte att skapa hyperlänkar i kommentarer).
 
 **Avgör hur långa registreringen ska vara**
 

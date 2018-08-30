@@ -1,5 +1,5 @@
 ---
-title: "Konfigurera elektronisk rapportering för att hämta data till Power BI"
+title: "Konfigurera elektronisk rapportering (ER) för att hämta data till Power BI"
 description: "I det här avsnittet beskrivs hur du kan använda konfigurationen för Elektronisk rapportering (ER) om du vill ordna överföringen av data från Finance and Operations till Power BI-tjänster."
 author: NickSelin
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: nselin
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 45717bc1a7093c0282d214fc4ce5fdf153bb14a1
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 9f5a4d0c9fc4c5c9b439b4f184b25085f5d68077
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="configure-electronic-reporting-to-pull-data-into-power-bi"></a>Konfigurera elektronisk rapportering för att hämta data till Power BI
+# <a name="configure-electronic-reporting-er-to-pull-data-into-power-bi"></a>Konfigurera elektronisk rapportering (ER) för att hämta data till Power BI
 
 [!include [banner](../includes/banner.md)]
 
@@ -80,17 +80,17 @@ Du måste skapa en ny konfiguration för ER-format som använder datamodellen **
     [![direction\_enum](./media/ger-power-bi-format-configuration-mapping-added-enum-1024x454.png)](./media/ger-power-bi-format-configuration-mapping-added-enum.png)
 5.  Slutför bindningen av element av **Intrastat**-datamodellen och elementen i designformatet som visas i följande bild. [![Slutför bindande](./media/ger-power-bi-format-configuration-mapping-details-1024x454.png)](./media/ger-power-bi-format-configuration-mapping-details.png)
 
-När det har utförts, genererar ER-formatet utmatningsresultatet i Excel-format. Det skickar information om Intrastat-transaktionerna till utmatningsresultatet och separerar dem som transaktioner som beskriver antingen importaktiviteter eller exportaktiviteter. Klicka på **Kör** för att testa det nya ER-formatet för listan med Intrastat-transaktioner på sidan **Intrastat** (**Moms** &gt; **Deklarationer** &gt; **Utländsk handel** &gt; **Intrastat**). [![Sidan Intrastat](./media/ger-power-bi-format-test-run-transactions-1024x322.png)](./media/ger-power-bi-format-test-run-transactions.png) Följande utleveransresultat genereras. Filnamnet **Importera och exportera detaljer.xlsx** som du angav i formatinställningarna. [![Importera och exportera detaljer.xlsx](./media/ger-power-bi-format-test-run-output-1024x472.png)](./media/ger-power-bi-format-test-run-output.png)
+När det har utförts, skapar ER-formatet utmatningsresultatet i Excel-format. Det skickar information om Intrastat-transaktionerna till utmatningsresultatet och separerar dem som transaktioner som beskriver antingen importaktiviteter eller exportaktiviteter. Klicka på **Kör** för att testa det nya ER-formatet för listan med Intrastat-transaktioner på sidan **Intrastat** (**Skatt** &gt; **Deklarationer** &gt; **Utländsk handel** &gt; **Intrastat**). [![Sidan Intrastat](./media/ger-power-bi-format-test-run-transactions-1024x322.png)](./media/ger-power-bi-format-test-run-transactions.png) Följande utleveransresultat skapas. Filnamnet **Importera och exportera detaljer.xlsx** som du angav i formatinställningarna. [![Importera och exportera detaljer.xlsx](./media/ger-power-bi-format-test-run-output-1024x472.png)](./media/ger-power-bi-format-test-run-output.png)
 
-## <a name="configure-the-er-destination"></a>Konfigurera ER-destinationer
+## <a name="configure-the-er-destination"></a>Konfigurera ER-mål
 Du måste konfigurera ER-ramverket om du vill skicka utleveransresultatet för den nya ER-formatkonfigurationen på ett särskilt sätt.
 
 -   Utleveransresultatet måste skickas till mappen för den valda SharePoint Server.
 -   Varje körning av formatkonfigurationen måste skapa en ny version av samma Excel-fil.
 
-På sidan **Elektronisk rapportering** (**Organisationadministration** &gt; **Elektronisk rapportering**), klickar du på artikeln **Elektroniskt rapporteringmål** och lägger till en ny destination. På fältet **Referens** väljer du formatkonfigurationen **Importera/exportera aktiviteter** som du skapade tidigare. Gör på följande sätt när du vill lägga till en post för fildestination för referensen.
+På sidan **Elektronisk rapportering** (**Organisationadministration** &gt; **Elektronisk rapportering**), klickar du på artikeln **Elektroniskt rapporteringmål** och lägger till en ny mål. På fältet **Referens** väljer du formatkonfigurationen **Importera/exportera aktiviteter** som du skapade tidigare. Gör på följande sätt när du vill lägga till en post för filmål för referensen.
 
-1.  I fältet **Namn** anger du rubriken för fildestinationen.
+1.  I fältet **Namn** anger du rubriken för filmålen.
 2.  I fältet **Filnamn** väljer du namnet **Excel-utdatafil** för Excel-filformatkomponenten.
 
 Klicka på knappen **Inställningar** för den nya målposten. Följ sedan dessa steg i dialogrutan **Målinställningar**.
@@ -101,11 +101,11 @@ Klicka på knappen **Inställningar** för den nya målposten. Följ sedan dessa
 ## <a name="schedule-execution-of-the-configured-er-format"></a>Tidsplanera körning av den konfigurerade ER-formatet
 1. På sidan **Konfigurationer** (**Organisationadministration** &gt; **Elektronisk rapportering** &gt; **Konfigurationer**, i konfigurationsträdet väljer du konfigurationen **Importera/exportera aktiviteter** som du skapade tidigare. 
 2. Ändra status för version 1.1 från **Utkast** till **Slutför** om du vill göra detta format tillgängligt för användning. [![Sidan Konfigurationer](./media/ger-power-bi-format-configuration-complete-1024x401.png)](./media/ger-power-bi-format-configuration-complete.png) 
-3. Välj den slutförda versionen av konfigurationen **Importera/exportera aktiviteter** och klicka sedan på **Kör**. Observera att den konfigurerade destinationen tillämpas på utleveransresultatet som genereras i Excel-formatet. 
+3. Välj den slutförda versionen av konfigurationen **Importera/exportera aktiviteter** och klicka sedan på **Kör**. Observera att den konfigurerade målen tillämpas på utleveransresultatet som skapas i Excel-formatet. 
 4. Ange alternativet **Batchbearbetning** till **Ja** till att köra den här rapporten i obevakat läge. 
 5. Klicka på **Upprepning** för att schemalägga den krävda upprepningen av denna batch-körning. Upprepningen definierar hur ofta de uppdaterade data ska överföras från Finance and Operations till Power BI. [![Dialogrutan Elektroniska rapportparametrar](./media/ger-power-bi-format-configuration-run-to-schedule-1024x413.png)](./media/ger-power-bi-format-configuration-run-to-schedule.png) 
 6. När det har konfigurerat hittar du ER-rapportkörningsjobbet på sidan **Batchjobb** (**Systemadministration &gt; Förfrågningar &gt; Batchjobb**). [![Sidan Batchjobb](./media/ger-power-bi-format-configuration-running-job-1024x410.png)](./media/ger-power-bi-format-configuration-running-job.png) 
-7. När det här jobbet körs för första gången, skapar destinationen en ny Excel-fil som har det konfigurerade namnet i den valda SharePoint-mappen. Varje efterföljande tid som jobbet körs, skapar destinationen en ny version av den här Excel-filen. [![Ny version av Excel-filen](./media/ger-power-bi-output-file-in-sharepoint-server-folder-2-1024x412.png)](./media/ger-power-bi-output-file-in-sharepoint-server-folder-2.png)
+7. När det här jobbet körs för första gången, skapar målen en ny Excel-fil som har det konfigurerade namnet i den valda SharePoint-mappen. Varje efterföljande tid som jobbet körs, skapar målen en ny version av den här Excel-filen. [![Ny version av Excel-filen](./media/ger-power-bi-output-file-in-sharepoint-server-folder-2-1024x412.png)](./media/ger-power-bi-output-file-in-sharepoint-server-folder-2.png)
 
 ## <a name="create-a-power-bi-dataset-by-using-the-output-result-of-the-er-format"></a>Skapa en Power BI-datauppsättning genom att använda utleveransresultatet av ER-formatet
 1. Logga in på Power BI och antingen öppna en befintlig Power BI-grupp (arbetsyta) eller skapa en ny grupp. Antingen klicka på **Lägg till** under **Filer** i avsnittet **Importera eller ansluta till data** eller klicka på plusteckenet (**+**) nästa till **Datauppsättningar** i vänstra rutan. [![Skapa en datauppsättning](./media/ger-power-bi-add-dataset-1024x524.png)](./media/ger-power-bi-add-dataset.png) 
@@ -135,7 +135,7 @@ Ställ in integrationen mellan med Finance and Operations och Power BI. Mer info
 <a name="additional-resources"></a>Ytterligare resurser
 --------
 
-[Destinationer för elektronisk rapportering](electronic-reporting-destinations.md)
+[mål för elektronisk rapportering](electronic-reporting-destinations.md)
 
 [Översikt över elektronisk rapportering](general-electronic-reporting.md)
 

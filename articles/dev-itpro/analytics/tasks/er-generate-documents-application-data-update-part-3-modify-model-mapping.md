@@ -1,6 +1,6 @@
 --- 
-title: "Ändra modell och mappning för att generera dokument med programdata"
-description: "Om du vill utföra stegen i den här proceduren måste du först slutföra proceduren \"ER Generera dokument med uppdatering av programdata (Del 2: Skapa konfigurationer)\"."
+title: "Ändra modeller och mappningar för att skapa dokument som omfattar programdata"
+description: "Om du vill utföra stegen i den här proceduren måste du först slutföra proceduren \"ER Skapa dokument med uppdatering av programdata (Del 2: Skapa konfigurationer)\"."
 author: NickSelin
 manager: AnnBe
 ms.date: 06/19/2017
@@ -16,25 +16,25 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: c112b2895175bd23db313888ec1e964bdf5ed295
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 580f00faf6694dc2da476ffa75f995d9a24e0f8b
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="modify-model-and-mapping-to-generate-documents-with-application-data"></a>Ändra modell och mappning för att generera dokument med programdata
+# <a name="modify-models-and-mappings-to-generate-documents-that-have-application-data"></a>Ändra modeller och mappningar för att skapa dokument som omfattar programdata
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Om du vill utföra stegen i den här proceduren måste du först slutföra proceduren "ER Generera dokument med uppdatering av programdata (Del 2: Skapa konfigurationer)". 
+Om du vill utföra stegen i den här proceduren måste du först slutföra proceduren "ER Skapa dokument med uppdatering av programdata (Del 2: Skapa konfigurationer)". 
 
-Stegen i den här proceduren beskriver hur du utformar ER-konfigurationer (elektronisk rapportering) för att generera ett elektroniskt dokument och uppdatera programdata. I den här proceduren ska du ändra ER-konfigurationerna för att börja använda dem för att skapa elektroniska dokument och uppdatera programdata. Den här proceduren har skapats för användare med rollen Systemadministratör eller Utvecklare för elektronisk rapportering. Stegen kan utföras med hjälp av datauppsättningen DEMF.
+Stegen i den här proceduren beskriver hur du utformar ER-konfigurationer (elektronisk rapportering) för att skapa ett elektroniskt dokument och uppdatera programdata. I den här proceduren ska du ändra ER-konfigurationerna för att börja använda dem för att skapa elektroniska dokument och uppdatera programdata. Den här proceduren har skapats för användare med rollen Systemadministratör eller Utvecklare för elektronisk rapportering. Stegen kan utföras med hjälp av datauppsättningen DEMF.
 
 
 ## <a name="modify-data-model"></a>Ändra datamodell
 1. Gå till Organisationsadministration > Elektronisk rapportering > Konfigurationer.
 2. Välj Intrastat (model) i trädet.
-    * Du ska utöka hur du använder datamodellen. Förutom att använda den som datakälla för att generera Intrastat-rapporten, används datamodellen för att samla in information om Intrastat-rapportering. Informationen används sedan för att uppdatera programdata.   
+    * Du ska utöka hur du använder datamodellen. Förutom att använda den som datakälla för att skapa Intrastat-rapporten, används datamodellen för att samla in information om Intrastat-rapportering. Informationen används sedan för att uppdatera programdata.   
 3. Klicka på Designer.
 4. Klicka på Nytt om du vill öppna dialogrutan.
 5. Ange "Modellrot" i fältet "Ny nod som ett fält...".
@@ -48,7 +48,7 @@ Stegen i den här proceduren beskriver hur du utformar ER-konfigurationer (elekt
     * Arkivrubrik  
 11. Välj "Postlista" i fältet Artikeltyp.
 12. Klicka på Lägg till.
-    * Eftersom du vill skapa en post för alla Intrastat-rapporter som genereras måste du skapa ett nytt objekt för detta.  
+    * Eftersom du vill skapa en post för alla Intrastat-rapporter som skapas måste du skapa ett nytt objekt för detta.  
 13. Klicka på Nytt om du vill öppna dialogrutan.
 14. Ange "File name" i namnfältet.
     * Filnamn  
@@ -92,7 +92,7 @@ Stegen i den här proceduren beskriver hur du utformar ER-konfigurationer (elekt
 4. Klicka på Ny.
 5. Skriv "Update archive" i namnfältet.
     * Uppdatera arkiv  
-6. Välj To destination i fältet Direction.
+6. Välj To mål i fältet Direction.
 7. Klicka på Spara.
     * Den nya mappningen anger dataflödet för att flytta data (information om Intrastat-rapportering) från datamodellen till programregistren (uppdateringsmålet). Observera att den andra modellens rotobjekt måste användas för att hämta data från programmet för rapportering och sedan använda data från datamodellen för uppdatering av programdata.   
 8. Klicka på Designer.
@@ -123,7 +123,7 @@ Stegen i den här proceduren beskriver hur du utformar ER-konfigurationer (elekt
 27. Klicka på Spara.
 28. Stäng sidan.
 29. Klicka på OK.
-30. Klicka på Lägg till destination.
+30. Klicka på Lägg till mål.
     * Lägg till programregistren som obligatoriska mål som måste uppdateras för att arkivera information om rapporterade Intrastat-transaktioner.  
 31. Skriv "Archive" i namnfältet.
     * Arkivera  

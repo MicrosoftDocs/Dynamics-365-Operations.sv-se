@@ -1,5 +1,5 @@
 --- 
-title: "Utforma en rapport som använder ekonomiska dimensioner som datakälla för elektronisk rapportering (ER)"
+title: "Utforma rapporter som använder ekonomiska dimensioner som datakällor"
 description: "I följande steg beskrivs hur en användare som tilldelats en roll som systemadministratör eller utvecklare för elektronisk rapportering kan konfigurera en modell för elektronisk rapportering (ER) för att använda ekonomiska dimensioner som datakällor för ER-rapporter."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: c67bf235f3514a19893bcefcaae6e3bb11bbb151
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 055401104ae62c75694dff0b2ee64d12b2621686
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="design-a-report-to-use-financial-dimensions-as-a-data-source-for-electronic-reporting-er"></a>Utforma en rapport som använder ekonomiska dimensioner som datakälla för elektronisk rapportering (ER)
+# <a name="design-reports-to-use-financial-dimensions-as-data-sources"></a>Utforma rapporter som använder ekonomiska dimensioner som datakällor
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

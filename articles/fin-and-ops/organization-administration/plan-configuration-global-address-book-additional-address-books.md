@@ -1,5 +1,5 @@
 ---
-title: "Planera hur du ska ställa in den globala adressboken och ytterligare adressböcker"
+title: "Planera för att ställa in den globala adressboken och andra adressböcker"
 description: "Det här ämnet innehåller en beskrivning av övervägandena och besluten som måste fattas under planeringsprocessen innan du konfigurerar den globala adressboken och alla ytterligare adressböcker i Microsoft Dynamics 365 for Finance and Operations. Vissa av besluten kräver att du bekräftar besluten som har fattats för andra produktområden såsom organisationshierarkin."
 author: ShivamPandey-msft
 manager: AnnBe
@@ -19,14 +19,14 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b872603f987b72faacc0a987aa44c31e773636f8
+ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
+ms.openlocfilehash: 69f1136e113fae5859d34a9a467da9c9cf4bf7dc
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="plan-how-to-configure-the-global-address-book-and-additional-address-books"></a>Planera hur du ska ställa in den globala adressboken och ytterligare adressböcker
+# <a name="plan-for-the-global-address-book-and-other-address-books"></a>Planera för att ställa in den globala adressboken och andra adressböcker
 
 [!include [banner](../includes/banner.md)]
 

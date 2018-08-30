@@ -1,5 +1,5 @@
 ---
-title: "Använda sökningar för att söka efter information"
+title: "Använda sökningar för att hitta information"
 description: "I Microsoft Dynamics 365 for Finance and Operations har många fält sökningar som hjälper dig att enkelt hitta rätt eller önskat värde. Flera förbättringar har lagts till sökningar för att göra dessa kontroller mer användbara och göra användarna mer produktiva. I det här avsnittet lär du dig om dessa nya sökningsfunktionerna och du får några användbara tips för att få optimal användning av sökningar i systemet."
 author: jasongre
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: jasongre
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 013901724864092571099835b2c71b297710ff03
+ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
+ms.openlocfilehash: 9de957490b2ca87949a7cbcecc9acb4e8b98aaaf
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="use-lookups-to-find-information"></a>Använda sökningar för att söka efter information
+# <a name="find-information-by-using-lookups"></a>Använda sökningar för att hitta information
 
 [!include [banner](../includes/banner.md)]
 

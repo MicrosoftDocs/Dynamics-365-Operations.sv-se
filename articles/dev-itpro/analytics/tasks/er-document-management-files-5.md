@@ -1,5 +1,5 @@
 --- 
-title: "Ändra och kör format för att använda dokumenthanteringsfiler i formatutmatningar"
+title: "Ändra och kör format som ska använda dokumenthanteringsfiler i ER-utdata"
 description: "I följande steg beskrivs hur en användare som tilldelats en roll som systemadministratör eller utvecklare för elektronisk rapportering kan konfigurera ett format för elektronisk rapportering (ER) för att använda dokumenthanteringsfiler (bilagor) i ER-utmatningar."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: b38f69fc169367aa56468b2c8f06b65fd1291c79
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 5effbecf98e633d07f9e5eb22d3df1a12967c1e4
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="modify-and-run-format-to-use-document-management-files-in-format-outputs"></a>Ändra och kör format för att använda dokumenthanteringsfiler i formatutmatningar
+# <a name="modify-and-run-formats-to-use-document-management-files-in-er-output"></a>Ändra och kör format som ska använda dokumenthanteringsfiler i ER-utdata
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
@@ -33,13 +33,13 @@ För att slutföra dessa steg måste du först avsluta stegen i proceduren ”ER
 Denna procedur är avsedd för en funktion som lades till i Dynamics 365 for Operations version 1611.
 
 
-## <a name="modify-the-format-to-populate-attachments-into-generating-messages-in-binary-format"></a>Ändra formatet för att fylla i bilagor så att dessa genererar meddelanden i binärt format
+## <a name="modify-the-format-to-populate-attachments-into-generating-messages-in-binary-format"></a>Ändra formatet för att fylla i bilagor så att dessa skapar meddelanden i binärt format
 1. Gå till Organisationsadministration > Elektronisk rapportering > Konfigurationer.
 2. Expandera "Customer invoice model" i trädet.
 3. Expandera "Customer invoice model\Customer invoice model (custom)" i trädet.
 4. I trädet väljer du "Customer invoice model\Customer invoice model (custom)\Electronic invoice sample message".
 5. Klicka på Designer.
-    * Du fyller i fakturameddelandet i genererad utmatning som en XML-fil med hjälp av UNICODE-kodning.  
+    * Du fyller i fakturameddelandet i skapad utmatning som en XML-fil med hjälp av UNICODE-kodning.  
 6. Klicka på Lägg till rot för att öppna dialogrutan.
 7. Välj "Allmänt\Fil" i trädet.
 8. Ange "Xml message" i namnfältet.
@@ -47,14 +47,14 @@ Denna procedur är avsedd för en funktion som lades till i Dynamics 365 for Ope
 9. Skriv "UTF 8" i fältet Kodning.
     * UTF-8  
 10. Klicka på OK.
-    * Konfigurera de genererade utmatningen som en zippad fil.  
+    * Konfigurera de skapade utmatningen som en zippad fil.  
 11. Klicka på Lägg till rot för att öppna dialogrutan.
 12. Välj "Common\Folder" i trädet.
 13. Ange "Zip output" i namnfältet.
     * Zip-utleverans  
 14. Klicka på OK.
 15. Välj "Zip output" i trädet.
-    * Lägg till bilagor till den genererade, zippade filen som filer med ursprungliga namn och filtillägg.  
+    * Lägg till bilagor till den skapade, zippade filen som filer med ursprungliga namn och filtillägg.  
 16. Klicka på Lägg till för att öppna dialogrutan.
 17. Välj "Allmänt\Fil" i trädet.
 18. Ange "Attached file" i namnfältet.
@@ -94,6 +94,6 @@ Denna procedur är avsedd för en funktion som lades till i Dynamics 365 for Ope
     * 000148  
 6. Klicka på OK.
 7. Klicka på OK.
-    * Granska den genererade utleveransen. Notera att utöver fakturameddelandet i XML-format har en enda fil skapats för respektive bilaga. Bilagefilerna fylls i med den zippade utmatningen i binärt format.  
+    * Granska den skapade utleveransen. Notera att utöver fakturameddelandet i XML-format har en enda fil skapats för respektive bilaga. Bilagefilerna fylls i med den zippade utmatningen i binärt format.  
 
 

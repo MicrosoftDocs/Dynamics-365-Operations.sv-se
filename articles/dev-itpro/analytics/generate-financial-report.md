@@ -1,5 +1,5 @@
 ---
-title: Generera ekonomisk rapport
+title: Skapa ekonomiska rapporter
 description: "Det här avsnittet innehåller allmän information om att skapa en ekonomisk rapport."
 author: aprilolson
 manager: AnnBe
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: FinancialReports
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 68843
 ms.assetid: 271df6f4-12b7-4b3e-b2d7-36ea98ef1871
@@ -19,56 +19,56 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 73d1a3316db7589d114c70a4dbf847dc67aa077b
+ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
+ms.openlocfilehash: b47c22576b3735fbc499c7ceed3f6a4637c2785c
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="generate-a-financial-report"></a>Generera ekonomisk rapport
+# <a name="generate-financial-reports"></a>Skapa ekonomiska rapporter
 
 [!include [banner](../includes/banner.md)]
 
 Det här avsnittet innehåller allmän information om att skapa en ekonomisk rapport. 
 
-Öppna rapportdefinitionen och klicka sedan på knappen Generera i verktygsfältet om du vill skapa en rapport. Fönstret Rapportköstatus öppnas och visar platsen för rapporten i kön. Som standard öppnas rapporten i Web Viewer.
+Öppna rapportdefinitionen och klicka sedan på knappen Skapa i verktygsfältet om du vill skapa en rapport. Fönstret Rapportköstatus öppnas och visar platsen för rapporten i kön. Som standard öppnas rapporten i Web Viewer.
 
 > [!NOTE]
-> Du kan bara generera rapporter till mappar och platser som du har åtkomstbehörighet för.
+> Du kan bara skapa rapporter till mappar och platser som du har åtkomstbehörighet för.
 
 I följande tabell beskrivs de alternativ som är tillgängliga när du skapar rapporter.
 
 | Alternativ                                                                                | 
 |---------------------------------------------------------------------------------------|
-| Ställa in ett schema för att generera en rapport eller en grupp av rapporter automatiskt              |   
+| Ställa in ett schema för att skapa en rapport eller en grupp av rapporter automatiskt              |   
 | Kontrollera om det saknas konton eller data i en rapport och validera riktigheten i en rapport |   
 
 När du skapar en rapport används de alternativ du har angett på fliken Rapportdefinition. På fliken Fördelning och distribution kan du ange en plats för rapportbiblioteket. Detta är en enkel metod för att dela rapporten.
 
-## <a name="generate-a-financial-report"></a>Generera ekonomisk rapport
+## <a name="generate-a-financial-report"></a>Skapa ekonomisk rapport
 
 Om du vill skapa en ekonomisk rapport med Microsoft Dynamics 365 for Finance and Operations, gå till **Redovisning** > **Förfrågningar och rapporter** > **Ekonomirapporter**. 
-- Välj en rapport att generera och klicka på **Generera**. 
+- Välj en rapport att skapa och klicka på **Skapa**. 
 - Fyll i fältet **Rapportdatum** och klicka på **OK**.
 
   När rapporten har skapats blir den tillgänglig i avsnittet **Rapporter**.
   Du kan välja att **Visa** eller **Ta bort** rapporten.
 
 
-Öppna rapportdefinitionen och klicka sedan på knappen Generera i verktygsfältet om du vill generera en rapport med **Report designer**. Fönstret Rapportköstatus öppnas och visar platsen för rapporten i kön. Som standard öppnas rapporten i Web Viewer.
+Öppna rapportdefinitionen och klicka sedan på knappen Skapa i verktygsfältet om du vill skapa en rapport med **Report designer**. Fönstret Rapportköstatus öppnas och visar platsen för rapporten i kön. Som standard öppnas rapporten i Web Viewer.
 
 > [!NOTE]
-> Du kan bara generera rapporter till mappar och platser som du har åtkomstbehörighet för.
+> Du kan bara skapa rapporter till mappar och platser som du har åtkomstbehörighet för.
 
 
 ## <a name="schedule-report-generation"></a>Schemalägga rapporter
-Många företag har en serie grundläggande rapporter som körs regelbundet vid schemalagda tidpunkter som en del av affärsprocesserna. Du kan schemalägga en rapport som ska genereras en gång om dagen, en gång i veckan eller månaden eller årligen. Det kan vara en enstaka rapport eller en grupp rapporter som inbegriper flera företag. Du måste ange dina autentiseringsuppgifter för vart och ett av företagen du anger, t.ex. sådana i en rapportträdsdefinition. Om autentiseringsuppgifterna är ogiltiga visas endast den information du har behörighet att komma åt i rapporterna, t.ex. det aktuella företag du är inloggad i för tillfället. Utdatainformationen läses först från rapportgruppen och sedan från de enskilda rapporterna.
+Många företag har en serie grundläggande rapporter som körs regelbundet vid schemalagda tidpunkter som en del av affärsprocesserna. Du kan schemalägga en rapport som ska skapas en gång om dagen, en gång i veckan eller månaden eller årligen. Det kan vara en enstaka rapport eller en grupp rapporter som inbegriper flera företag. Du måste ange dina autentiseringsuppgifter för vart och ett av företagen du anger, t.ex. sådana i en rapportträdsdefinition. Om autentiseringsuppgifterna är ogiltiga visas endast den information du har behörighet att komma åt i rapporterna, t.ex. det aktuella företag du är inloggad i för tillfället. Utdatainformationen läses först från rapportgruppen och sedan från de enskilda rapporterna.
 
 De rapportscheman som skapas och sparas visas under Rapportscheman i navigationsfönstret. Du kan ordna rapporterna i mappar som du skapar. Om en enstaka rapport i ett schema inte skulle köras, körs ändå de övriga av schemats rapporter.
 
 > [!IMPORTANT]
-> Du måste ha designer- eller administratörsrollen för att kunna skapa, ändra och ta bort rapportscheman. När en rapport körs genereras den med hjälp av autentiseringsuppgifterna för den användare som skapade schemat.
+> Du måste ha designer- eller administratörsrollen för att kunna skapa, ändra och ta bort rapportscheman. När en rapport körs skapas den med hjälp av autentiseringsuppgifterna för den användare som skapade schemat.
 
 
 ### <a name="create-a-report-schedule"></a>Skapa ett rapportschema
@@ -80,7 +80,7 @@ De rapportscheman som skapas och sparas visas under Rapportscheman i navigations
 5.  Välj det datum när schemat ska börja i fältet Början av återkommande under Frekvens. Klientdatorns aktuella systemdatum är förvalt som standard.
 6.  Välj den tidpunkt när rapporten ska köras i fältet Kör rapport. Om du anger en tidpunkt som ligger tidigare än aktuell systemtid körs rapporten på följande schemalagda datum.
 7.  Ange hur ofta rapporten ska köras i området Upprepningsmönster. Daglig väljs som standard, med ett intervallvärde (dagar) på 1. Andra alternativ inkluderar Veckovis, Månadsvis och Årligen.
-8.  Välj när rapporten ska upphöra att genereras i området Intervall för återkommande.
+8.  Välj när rapporten ska upphöra att skapas i området Intervall för återkommande.
     -   Slutdatum saknas – Rapportschemat körs tills vidare.
     -   Ange antal förekomster – Rapportsschemat körs angivet antal gånger och sedan inaktiveras det.
     -   Sluta den – Rapportschemat slutar på angivet datum.
@@ -105,7 +105,7 @@ Du måste vara ägare till rapportschemat eller ha administratörsrollen för at
 
 Om du inte anger de autentiseringsuppgifter som krävs för alla företag som omfattas av rapporterna visas följande felmeddelande när du sparar rapportschemat: ”Du måste ange autentiseringsuppgifter för företagen som ingår i det här rapportschemat. Ange autentiseringsuppgifterna genom att klicka på knappen Behörigheter.”
 
-Exempel: Anna loggar in i företag A med sitt användarnamn och lösenord. Hon skapar ett schema för en rapport där en rapportträdsdefinition används för att samla in data från flera företag. När rapporten sparas uppmanas Anna ange autentiseringsuppgifterna för de andra angivna företagen i rapportträdsdefinitionen. Om dina autentiseringsuppgifter upphör att gälla genereras inte de rapporter i rapportschemat som påverkas förrän autentiseringsuppgifterna har uppdaterats. Det visas ett meddelande i rapportkön om att behörigheterna måste uppdateras. Körningen av rapportschemat misslyckas om något av följande inträffar (på grund av krav på autentiseringsuppgifter):
+Exempel: Anna loggar in i företag A med sitt användarnamn och lösenord. Hon skapar ett schema för en rapport där en rapportträdsdefinition används för att samla in data från flera företag. När rapporten sparas uppmanas Anna ange autentiseringsuppgifterna för de andra angivna företagen i rapportträdsdefinitionen. Om dina autentiseringsuppgifter upphör att gälla skapas inte de rapporter i rapportschemat som påverkas förrän autentiseringsuppgifterna har uppdaterats. Det visas ett meddelande i rapportkön om att behörigheterna måste uppdateras. Körningen av rapportschemat misslyckas om något av följande inträffar (på grund av krav på autentiseringsuppgifter):
 -   Ett nytt företag har lagts till i ett rapportträd för en enskild rapport.
 -   En rapport i en rapportgrupp har ändrats.
 -   En ny rapport för ytterligare ett företag har lagts till i en rapportgrupp.
@@ -118,7 +118,7 @@ Om det eventuellt saknas ekonomiska konton och dimensioner kan du söka efter de
 Saknade konton fastställs med hjälp av raddefinitionens eller rapportträdsdefinitionens lägsta och högsta värden. Därefter visas en lista över konton som finns i ekonomidata, men saknas i raddefinitionen eller rapportträdsdefinitionen. Saknade konton med värden som överstiger eller understiger raddefinitionens värden inkluderas inte i listan med saknade konton.
 
 > [!TIP]
-> Av verifieringsskäl bör den här processen köras innan du genererar månadsrapporter och när du skapar nya byggblock.
+> Av verifieringsskäl bör den här processen köras innan du skapar månadsrapporter och när du skapar nya byggblock.
 
 Risken för saknade konton är lägre om du använder rapporter som innehåller värdeintervall. Använd om möjligt intervall i byggblocket så att nya konton som skapas kan inkluderas. Om någon rapportdefinition har inställningen @ANY företag kan du logga in i ett visst företag och köra en analys av saknade konton för företaget.
 

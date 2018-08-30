@@ -1,5 +1,5 @@
 ---
-title: "Ekonomiska dimensioner och huvudkonton i ett språk som skrivs från höger till vänster"
+title: "Ekonomiska dimensioner och huvudkonton i språk som skrivs från höger till vänster"
 description: "Det här ämnet beskriver några av implementeringsbesluten som du bör beakta när du använder ett språk som skrivs från höger till vänster och du måste ställa in ekonomiska dimensioner och huvudkontona."
 author: aprilolson
 manager: AnnBe
@@ -9,7 +9,7 @@ ms.prod:
 ms.service: dynamics-ax-platform
 ms.technology: 
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 222564
 ms.assetid: 875dcebb-1bbb-4841-a8c6-9e134da07e96
@@ -18,14 +18,14 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 9859023853b235aa2695ee5c595627571a4d746c
+ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
+ms.openlocfilehash: 9609c052083dc3157618584da9311211ea036eba
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="financial-dimensions-and-main-accounts-in-a-right-to-left-language"></a>Ekonomiska dimensioner och huvudkonton i ett språk som skrivs från höger till vänster
+# <a name="financial-dimensions-and-main-accounts-in-right-to-left-languages"></a>Ekonomiska dimensioner och huvudkonton i språk som skrivs från höger till vänster
 
 [!include [banner](../includes/banner.md)]
 

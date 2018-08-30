@@ -1,5 +1,5 @@
 --- 
-title: "Granska konfigurationer för att göra rapporter i Microsoft Office-format med inbäddade bilder"
+title: "Gransa konfigurationer för att generera rapporter i Office-format med inbäddade bilder"
 description: "För att kunna genomföra stegen måste du först slutföra stegen i uppgiftsguiden \"ER Skapa rapporter i MS Office-format med inbäddade bilder (Del 1: Ställ in parametrar)\"."
 author: NickSelin
 manager: AnnBe
@@ -16,19 +16,19 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: fe58809c60fa27a605d84a61893ff569ded058ef
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 8f3462f16ad7638071ab0aa2175d0bc291eeae89
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="review-configurations-to-make-reports-in-microsoft-office-formats-with-embedded-images"></a>Granska konfigurationer för att göra rapporter i Microsoft Office-format med inbäddade bilder
+# <a name="review-configurations-to-generate-reports-in-office-format-that-have-embedded-images"></a>Gransa konfigurationer för att generera rapporter i Office-format med inbäddade bilder
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
 För att kunna genomföra stegen måste du först slutföra stegen i uppgiftsguiden "ER Skapa rapporter i MS Office-format med inbäddade bilder (Del 1: Ställ in parametrar)".
 
-Den här proceduren visar hur du skapar konfigurationer för elektronisk rapportering (ER) för att generera elektroniska dokument som innehåller inbäddade bilder i Microsoft Excel och Microsoft Word. I det här exemplet ska du granska ER-konfigurationer för exempelföretaget Litware, Inc.. 
+Den här proceduren visar hur du skapar konfigurationer för elektronisk rapportering (ER) för att skapa elektroniska dokument som innehåller inbäddade bilder i Microsoft Excel och Microsoft Word. I det här exemplet ska du granska ER-konfigurationer för exempelföretaget Litware, Inc.. 
 
 Den här proceduren är avsedd för användare med rollen Systemadministratör eller Utvecklare för elektronisk rapportering. Stegen kan utföras med hjälp av datauppsättningen USMF.
 
@@ -86,7 +86,7 @@ Den här proceduren är avsedd för användare med rollen Systemadministratör e
     * Observera att CompLogo-formatets cellelement representerar det Excel-objekt som används för att fylla i företagets logotyp i rapporten. Det här formatelementet är bundet till bildens datamodellelement som under körning innehåller en logotyp för företaget i binärformat.   
 11. Klicka på fliken Mappning.
 12. Klicka på Redigering aktiverad.
-    * Observera att du kan ändra formatet CompLogo-formatets cellelement så att det inte längre är aktiverat. Då döljer det associerade Excel-bildelement företagets logotyp i den genererade rapporten. Om det aktiverade uttrycket returnerar TRUE och den definierade bindningen inte hämtar någon bild, visar det associerade Excel-bildelementet en bild som har sparats i Excel-mallen.   
+    * Observera att du kan ändra formatet CompLogo-formatets cellelement så att det inte längre är aktiverat. Då döljer det associerade Excel-bildelement företagets logotyp i den skapade rapporten. Om det aktiverade uttrycket returnerar TRUE och den definierade bindningen inte hämtar någon bild, visar det associerade Excel-bildelementet en bild som har sparats i Excel-mallen.   
 13. Stäng sidan.
 14. Expandera "labels: Container" i trädet.
     * Vissa etiketter som visas i det förtryckta checkformuläret inkluderas i rapporten när den skapas i testsyfte. Dessa etiketter skrivs dock inte ut vid den verkliga utskriften eftersom det förtryckta formuläret redan innehåller dem.  

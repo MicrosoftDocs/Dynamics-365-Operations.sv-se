@@ -1,5 +1,5 @@
 ---
-title: Skriva ut i Finance and Operations-program
+title: Dokumentutskrift
 description: "Du kan skriva ut dokument i Microsoft Dynamics 365 for Finance and Operations genom att använda en lokal skrivare eller en nätverksansluten enhet. Den här artikeln innehåller en översikt över hur dokument skrivs ut."
 author: TJVass
 manager: AnnBe
@@ -18,14 +18,14 @@ ms.author: tjvass
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 30a418e6c49849369f0a0e3ffa28f31b9b88b7e7
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 5d52568ce49b85f6215ed2835a95e2e016c9c879
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="printing-in-finance-and-operations-applications"></a>Skriva ut i Finance and Operations-program
+# <a name="document-printing"></a>Dokumentutskrift
 
 [!include [banner](../includes/banner.md)]
 
@@ -62,7 +62,7 @@ Förutom den plattform som distribueras på Azure-abonnemanget ger Finance and O
 ## <a name="service-overview"></a>Översikt över tjänsten
 När dokument som har skapats av värdprogram som väntar på att skrivas ut på en nätverksansluten enhet, förvaras de i Azure blobblagring. [Dokumentflödesagenten](install-document-routing-agent.md) använder Azure-autentisering för att upprätta en säker kanal till Azure-tjänsterna. **Körningssekvens**
 
-1.  Rapporten genereras av Microsoft SQL Server Reporting Services (SSRS) och lagras i Azure blobblagring. Kopplade skrivarinställningar sparas tillsammans med dokumentet.
+1.  Rapporten skapas av Microsoft SQL Server Reporting Services (SSRS) och lagras i Azure blobblagring. Kopplade skrivarinställningar sparas tillsammans med dokumentet.
 2.  Dokumentflödesagenten frågar Azure Service Bus-kön efter aktiva jobb.
 3.  Dokumentet hämtas av dokumentflödesagenten och överförs till nätverksskrivaren.
 

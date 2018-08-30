@@ -1,5 +1,5 @@
 ---
-title: "Bädda in PowerApps"
+title: "Bädda in PowerApps-program"
 description: "Det här avsnittet beskriver hur du bäddar in PowerApps till Finance and Operations-klienten för att utöka produktens funktionalitet."
 author: jasongre
 manager: AnnBe
@@ -16,14 +16,14 @@ ms.author: jasongre
 ms.search.validFrom: 2018-02-28
 ms.dyn365.ops.version: Platform update 14
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 07224faabcf2b183d4c8da0ba4588c33ec140d03
+ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
+ms.openlocfilehash: 3b0bb61a52721f1e2eaf6df53e17b6cc162d8409
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="embed-powerapps"></a>Bädda in PowerApps
+# <a name="embed-powerapps-apps"></a>Bädda in PowerApps-program
 
 [!include [banner](../includes/banner.md)]
 
@@ -93,7 +93,7 @@ När en PowerApp har inbäddats på en sida finns det två sätt att ta bort den
 ### <a name="developer-control-over-where-a-powerapp-can-be-embedded"></a>Utvecklaren styr där en PowerApp kan bäddas in
 Som standard kan användare bädda in PowerApps på sidan under menyknappen PowerApps eller direkt på sidan som en flik, snabbflik, blad eller ett nytt avsnitt på en arbetsyta. Emellertid kan utvecklare vid behov även konfigurera funktionen till att endast tillåta inbäddning av PowerApps för vissa sidor genom att använda följande metoder: 
 
-- **isPowerAppPersonalizationEnabled** - om den här metoden returnerar falsk för en viss sida kommer menyknappen PowerApps inte att visas och användare kommer inte att bädda in PowerApps på sidan, inklusive som en flik. 
+- **isPowerAppersonalizationEnabled** - om den här metoden returnerar falsk för en viss sida kommer menyknappen PowerApps inte att visas och användare kommer inte att bädda in PowerApps på sidan, inklusive som en flik. 
 
 - **isPowerAppTabPersonalizationEnabled** - om den här metoden returnerar falsk för en viss sida kan användare inte bädda in PowerApps direkt på sidan som en flik, snabbflik eller panoramasektion. Användare kan fortfarande bädda in PowerApps via menyknappen PowerApps om inbäddning tillåts på sidan.  
 

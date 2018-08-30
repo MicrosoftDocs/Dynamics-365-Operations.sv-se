@@ -1,5 +1,5 @@
 ---
-title: "Konfigurera skärmlayouter för POS"
+title: "Skärmlayout för kassan (POS)"
 description: "Det här avsnittet innehåller information om skärmlayouter för Microsoft Dynamics 365 for Retail, kassamiljöer (POS)."
 author: jblucher
 manager: AnnBe
@@ -20,14 +20,14 @@ ms.author: jeffbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: e6d5cb4c5744f843ea2b877103f55f327d371eee
-ms.openlocfilehash: e8606c149db4e821bed02d28c607546ec6ce6956
+ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
+ms.openlocfilehash: ced27adb8fe481270cb008e187693cda96773339
 ms.contentlocale: sv-se
-ms.lasthandoff: 06/23/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="configure-screen-layouts-for-pos"></a>Konfigurera skärmlayouter för POS
+# <a name="screen-layouts-for-the-point-of-sale-pos"></a>Skärmlayout för kassan (POS)
 
 [!include [banner](includes/banner.md)]
 
@@ -132,7 +132,7 @@ Den fullständiga layoutdesignern låter användarna dra gränssnittskontroller 
     ![Kontroller för kassagränssnittet](../retail/media/POS-UI-Controls.png)
 
     - **Numerisk knappsats** – Den numeriska knappsatsen är den huvudsakliga användarinmatningen på kassans **Transaktionsskärm**. Du kan konfigurera kontrollen så att fullständig numeriskt knappsats visas. Det här alternativet är idealiskt för pekskärmsenheter. Du kan också konfigurera det så att endast inmatningsfältet visas. I det här fallet används ett fysiskt tangentbord för inmatning. Inställningarna för knappsats finns bara i den fullständiga layouten. För kompakta layouter visas alltid fullständig numerisk knappsats på **transaktionsskärmen**.
-    - **Summapanel** - Summapanelen kan konfigureras i en eller två kolumner för att visa värden såsom radantal, rabattbelopp, avgifter, delsumma och moms. Komprimerad layout stöder bara en enda kolumn.
+    - **Summapanel** - Summapanelen kan konfigureras i en eller två kolumner för att visa värden såsom radantal, rabattbelopp, avgifter, delsumma och skatt. Komprimerad layout stöder bara en enda kolumn.
     - **Kvittopanel** - Kvittopanelen innehåller försäljningsrader, betalningsrader och leveransinformation för produkterna och tjänsterna som bearbetas i kassan. Du kan ange kolumner, bredd och placering. I kompakta layouter kan du också konfigurera ytterligare information som visas på raden under huvudfönstret.
     - **Kundkort** - Kundkortet visar information som hör till kunden som är kopplade till den aktuella transaktionen. Kundkortet kan konfigureras för att dölja eller visa ytterligare information.
     - **Flikkontroll** - Flikkontrollen kan placeras på en skärmlayout och sedan placera andra kontroller, till exempel numeriskt knappsats, kundkort eller knapprutnät på den. Flikkontrollen är en behållare som hjälper dig att få plats med mer innehåll på skärmen. Flikkontrollen är bara tillgänglig för fullständiga layouter.

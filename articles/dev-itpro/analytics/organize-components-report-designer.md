@@ -22,7 +22,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
 ms.openlocfilehash: 7207febc58dbab1df5551ae0f74ad74d9ced8e56
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
@@ -46,7 +46,7 @@ I Report Designer kan du ändra namn på mappar, rapportdefinitioner, raddefinit
 5.  Upprepa steg 4 tills alla tillhörande artiklar uppdateras.
 
 ## <a name="create-and-manage-report-groups"></a>Skapa och hantera grupper
-Du kan gruppera rapportdefinitioner för att generera flera rapporter samtidigt. För att skapa, ändra, ta bort och skapa rapportgrupper måste du ha rollen designer eller administratör. Användare med rollen generator kan skapa rapportgrupper och även ändra rapportdefinitioners inställningar för rapportgrupper.
+Du kan gruppera rapportdefinitioner för att skapa flera rapporter samtidigt. För att skapa, ändra, ta bort och skapa rapportgrupper måste du ha rollen designer eller administratör. Användare med rollen generator kan skapa rapportgrupper och även ändra rapportdefinitioners inställningar för rapportgrupper.
 
 ### <a name="create-a-report-group"></a>Skapa en rapportgrupp
 
@@ -64,12 +64,12 @@ Du kan gruppera rapportdefinitioner för att generera flera rapporter samtidigt.
 3.  Klicka på fliken **Rapportgrupp** och utför valfria ändringar.
 4.  På menyn **Arkiv** klickar du på **Spara** för att spara den ändrade rapportgruppen. Du kan också klicka på knappen **Spara** ![Spara](https://i-technet.sec.s-msft.com/dynimg/IC679516.gif "Spara") i verktygsfältet.
 
-**Obs!** Om du har schemalagda rapporter som genereras vid inställda intervall kan du åsidosätta dessa inställningar och generera en rapport direkt.
+**Obs!** Om du har schemalagda rapporter som skapas vid inställda intervall kan du åsidosätta dessa inställningar och skapa en rapport direkt.
 
-### <a name="generate-a-report-group-report"></a>Genererar en rapportgruppsrapport
+### <a name="generate-a-report-group-report"></a>Skapar en rapportgruppsrapport
 
 1.  Öppna Report Designer och klicka på **Rapportgrupper** i navigeringsfönstret.
-2.  Öppna rapportgruppen att generera.
+2.  Öppna rapportgruppen att skapa.
 3.  Klicka på knappen **Skapa rapport** ![Skapa rapport](https://i-technet.sec.s-msft.com/dynimg/IC679517.gif "Skapa rapport") för att skapa rapporter.
 
 ### <a name="delete-a-report-group"></a>Ta bort en rapportgrupp

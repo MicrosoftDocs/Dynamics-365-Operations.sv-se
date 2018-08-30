@@ -1,6 +1,6 @@
 ---
-title: Microsoft Dynamics 365 for Talent
-description: "Talent förenklar många vanliga arkiveringsuppgifter och automatiserar ett antal processer relaterade till personalen i organisationen. Dessa processer inkluderar personalvård, förmånsadministration, utbildning, prestationsgranskning och ändringshantering."
+title: "Välkommen till Dynamics 365 for Talent"
+description: "Talent förenklar många vanliga arkiveringsuppgifter och automatiserar ett antal processer relaterade till personalen i organisationen. De här processerna är bland annat personalvård, förmånsadministration, utbildning, prestationsgranskning och ändringshantering."
 author: josaw
 manager: AnnBe
 ms.date: 06/04/2018
@@ -18,18 +18,18 @@ ms.author: rschloma
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: bde68c9167e18cae6be4988865123d20274753c0
-ms.openlocfilehash: 9bc09a822f78b9792c2afdb0d297809edea7551a
+ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
+ms.openlocfilehash: e31cd1e0acc8f3ab450ec4acda62b88b189f036d
 ms.contentlocale: sv-se
-ms.lasthandoff: 06/06/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="welcome-to-microsoft-dynamics-365-for-talent"></a>Välkommen till Microsoft Dynamics 365 for Talent
+# <a name="welcome-to-dynamics-365-for-talent"></a>Välkommen till Dynamics 365 for Talent
 
 [!include [banner](includes/banner.md)]
 
-Med Microsoft Dynamics 365 for Talent förenklas många vanliga arkiveringsuppgifter och automatiseras ett antal processer som gäller personalen i organisationen. Dessa processer inkluderar personalvård, förmånsadministration, utbildning, prestationsgranskning och ändringshantering. Den innehåller också ett ramverk för personal för hantering av tillsynsområden.
+Med Microsoft Dynamics 365 for Talent förenklas många vanliga arkiveringsuppgifter och ett antal processer som gäller personalen i organisationen automatiseras. De här processerna är bland annat personalvård, förmånsadministration, utbildning, prestationsgranskning och ändringshantering. Den innehåller också ett ramverk för personal för hantering av tillsynsområden.
 
 Talent går att använda till att slutföra följande uppgifter:
 
@@ -55,7 +55,7 @@ När du arbetar med Talent bestämmer du hur organisationen struktureras med hj�
 
 -   [Organisera arbetsstyrkan med avdelningar, jobb och befattningar](departments-jobs-positions.md)
 -   [Ställa in företagsspecifika personalparametrar](set-up-company-specific-hr-parameters.md)
--   [Ställa in personalparametrar bland juridiska personer](set-up-hr-parameters-across-legal-entities.md) 
+-   [Ställa in personalparametrar hos juridiska personer](set-up-hr-parameters-across-legal-entities.md) 
 -   [Vanliga frågor och svar om personalåtgärder](personnel-actions-faq.md)
 -   [Översikt över tjänstledighet och frånvaro](leave-absence-overview.md)
 -   [Hur du använder Dynamics 365 for Talent: Tjänstledighet och frånvaro (video)](https://www.youtube.com/watch?v=1q1UhKmO4tw)

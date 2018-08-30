@@ -1,5 +1,5 @@
 ---
-title: "Översikt över optimerings-advisor"
+title: Optimerings-advisor
 description: "Det här avsnittet beskrivs hur du kan använda optimerings-advisor för att säkerställa optimal konfiguration av Microsoft Dynamics 365 Finance and Operations."
 author: roxanadiaconu
 manager: AnnBe
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: SelfHealingWorkspace
 audience: Application User, IT Pro
-ms.reviewer: yuyus
+ms.reviewer: josaw
 ms.search.scope: Operations, Core
 ms.custom: 
 ms.assetid: 
@@ -20,14 +20,14 @@ ms.author: roxanad
 ms.search.validFrom: 2017-12-01
 ms.dyn365.ops.version: 7.3
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: c2a957038bfad065361b46e85b8195214779cc2d
+ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
+ms.openlocfilehash: 206b8a23a52d412d1810b8a355b09ecc461f00b3
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="optimization-advisor-overview"></a>Översikt över optimerings-advisor
+# <a name="optimization-advisor"></a>Optimerings-advisor
 
 [!include [banner](../includes/banner.md)]
 
@@ -41,7 +41,7 @@ Arbetsytan **Optimerings-advisor** är ett verktyg som låter privilegierade anv
 
 Optimerings-advisor kör regelbundet en uppsättning metodregler. En standarduppsättning av regler släpps tillsammans med Microsoft Dynamics 365 for Finance and Operations version 8.0 (april 2018). Användare kan också skapa regler som är specifika för deras anpassningar, lösningar från oberoende programvaruleverantörer (ISV) och affärsdata. Mer information om hur du skapar regler finns i [Skapa nya regler](./create-rules-optimization-advisor.md).
 
-När ett brott mot en regel upptäcks genereras en optimeringsmöjlighet och visas på arbetsytan **Optimerings-advisor**. En användare kan vidta lämpliga korrigeringsåtgärder direkt från arbetsytan **Optimerings-advisor**.
+När ett brott mot en regel upptäcks skapas en optimeringsmöjlighet och visas på arbetsytan **Optimerings-advisor**. En användare kan vidta lämpliga korrigeringsåtgärder direkt från arbetsytan **Optimerings-advisor**.
 
 Affärsmöjligheter kan vara företagsspecifika eller mellan företag, beroende på vilken typ av inställningar och data som har godkänts. Affärsmöjligheter mellan företag kan visas från alla företag. Du måste först välja företaget för att visa alla affärsmöjligheter för ett specifikt företag.
 
@@ -63,17 +63,17 @@ Den aktuella uppsättningen optimeringsregler kan delas in i följande kategorie
 
 Inställningarna av lagerstyrning är en komplicerad process. För att underlätta processen, har vissa regler införts för att verifiera korrekt inställning. Till exempel validerar en regel inställningen av lagerställets platsdirektiv för fasta lagerplatser för produktvarianten för försäljningsorder och överföringsorder.
 
-Dessutom reglerar vissa regler om funktioner som har aktiverats faktiskt används. En regel bestämmer till exempel om du använder modulen **Huvudplanering**. Om regeln bestämmer att du inte använder modulen, genereras en optimeringsmöjlighet för att föreslå att du inaktiverar planeringsprocesserna.
+Dessutom reglerar vissa regler om funktioner som har aktiverats faktiskt används. En regel bestämmer till exempel om du använder modulen **Huvudplanering**. Om regeln bestämmer att du inte använder modulen, skapas en optimeringsmöjlighet för att föreslå att du inaktiverar planeringsprocesserna.
 
 ### <a name="system-configuration"></a>Systemkonfiguration
 
-Om specifik funktionalitet som styrs av en konfigurationsnyckel inte används, genereras en optimeringsmöjlighet som föreslår att du inaktiverar konfigurationsnyckeln. Exempel på konfigurationsnycklar inkluderar **Faktisk/nominell vikt**, **Budgetplanering**, **Projekt** och **Lista över godkända leverantörer**.
+Om specifik funktionalitet som styrs av en konfigurationsnyckel inte används, skapas en optimeringsmöjlighet som föreslår att du inaktiverar konfigurationsnyckeln. Exempel på konfigurationsnycklar inkluderar **Faktisk/nominell vikt**, **Budgetplanering**, **Projekt** och **Lista över godkända leverantörer**.
 
 ### <a name="business-data-consistency-and-cleanup"></a>Överensstämmelse och rensning av affärsdata
 
-Om huvuddata inte är korrekt (till exempel om du har måttenhetskonverteringar för enheter som inte har definierats, eller om du har måttenhetskonverteringar som innehåller en division med 0 \[noll\]), genereras en optimeringsmöjlighet för att föreslå att du korrigerar data. 
+Om huvuddata inte är korrekt (till exempel om du har måttenhetskonverteringar för enheter som inte har definierats, eller om du har måttenhetskonverteringar som innehåller en division med 0 \[noll\]), skapas en optimeringsmöjlighet för att föreslå att du korrigerar data. 
 
-Om du har för många historikposter för batchjobb, föråldrade artiklar, stängda behållningsposter för lageraktiverade artiklar etc, eller om dessa poster och artiklar är för gamla, genereras optimeringsmöjligheter för att du ska rensa upp data. Genom att hålla dina data rena kan du förbättra systemets totala prestanda.
+Om du har för många historikposter för batchjobb, föråldrade artiklar, stängda behållningsposter för lageraktiverade artiklar etc, eller om dessa poster och artiklar är för gamla, skapas optimeringsmöjligheter för att du ska rensa upp data. Genom att hålla dina data rena kan du förbättra systemets totala prestanda.
 
 ### <a name="best-practices"></a>Regelverk
 
@@ -81,15 +81,15 @@ Om du inte kör några affärsprocesser enligt metodtipsen (om du till exempel k
 
 ## <a name="optimization-opportunities"></a>Optimeringsmöjligheter
 
-Om du vill visa optimeringsmöjligheter som genereras vid bedömningen av optimeringsregler öppna arbetsytan **Optimerings-advisor**.
+Om du vill visa optimeringsmöjligheter som skapas vid bedömningen av optimeringsregler öppna arbetsytan **Optimerings-advisor**.
 
 På denna arbetsyta kan du visa mer information om en affärsmöjlighet genom att markera **Mer information**. Om du vill att systemet ska åtgärda och korrigera inställningarna, rensa data och så vidare, så att du inte behöver öppna tillhörande sidor själv anger du **Vidta åtgärder**.
 
-Det finns inga arbetsflöden för optimeringsmöjligheter. När du har valt **Vidta åtgärder** eller använda en sökväg för navigering i dialogrutan **Mer information** försvinner optimeringsmöjligheten från listan. Om korrigerande åtgärder inte helt löser ett problem kommer affärsmöjligheten att genereras igen nästa gång som regeln utvärderas.
+Det finns inga arbetsflöden för optimeringsmöjligheter. När du har valt **Vidta åtgärder** eller använda en sökväg för navigering i dialogrutan **Mer information** försvinner optimeringsmöjligheten från listan. Om korrigerande åtgärder inte helt löser ett problem kommer affärsmöjligheten att skapas igen nästa gång som regeln utvärderas.
 
 Om en affärsmöjlighet inte gäller för din roll kan du välja **Dölj från min lista**. Även om regeln bakom affärsmöjligheten utlöses igen senare visas inte affärsmöjligheten i listan.
 
-Markera affärsmöjligheten som genererades av regeln om du vill inaktivera utvärdering av särskilda regler och välj sedan **Inaktivera analys**.
+Markera affärsmöjligheten som skapades av regeln om du vill inaktivera utvärdering av särskilda regler och välj sedan **Inaktivera analys**.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 

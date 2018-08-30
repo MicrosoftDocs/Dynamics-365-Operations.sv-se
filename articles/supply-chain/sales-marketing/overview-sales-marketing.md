@@ -21,7 +21,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: cf531c3a8f3bdb17314d1de436b98249169f82a3
 ms.openlocfilehash: 4de2ac36ec13f95c7603d097a0800b317014bbd0
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
@@ -61,7 +61,7 @@ När du skapar en ny försäljningsorder måste du välja vilken typ av försäl
 
 | Typ av försäljningsorder  | Beskrivning                                                                                                                                                                                                                                                                                            |
 |-------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Journal           | Använd den här typen som ett utkast för en försäljningsorder. Den här typen påverkar inte lagerkvantiteter och genererar inte artikeltransaktioner.                                                                                                                                                                    |
+| Journal           | Använd den här typen som ett utkast för en försäljningsorder. Den här typen påverkar inte lagerkvantiteter och skapar inte artikeltransaktioner.                                                                                                                                                                    |
 | Abonnemang      | Använd den här typen för återkommande order. När ordern faktureras sätts orderstatusen automatisk till en öppen order. Levererad kvantitet som fakturerats och resterande leveranser uppdateras. Du kan inte använda den här försäljningsordertypen om du använder funktionen Lagerstyrning. |
 | Försäljningsorder       | Använd den här typen när en kund har lagt eller bekräftat en order.                                                                                                                                                                                                                                        |
 | Returnerad order    | Använd den här typen om en kund returnerar en artikel. Ett artikelnummer för returnering (RMA-nummer) tilldelas automatiskt.                                                                                                                                                                                            |

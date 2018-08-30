@@ -19,7 +19,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: cf531c3a8f3bdb17314d1de436b98249169f82a3
 ms.openlocfilehash: d58bab48c65bb891155af95c79738b019e5760bf
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/22/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
@@ -106,11 +106,11 @@ Mappning är en funktion som gäller både import- och exportjobb.
 - Mappning beskriver vilka kolumner i källfilen som blir kolumner i det tillfälliga registret i samband med import. Därför kan systemet avgöra vilka kolumndata i källfilen som måste kopieras till vilken kolumn i det tillfälliga registret.
 - Mappning beskriver vilka kolumner i det tillfälliga registret (dvs. källan) som kolumner i målfilen i samband med exportjobb.
 
-Om kolumnnamnen i det tillfälliga registret och i filen stämmer överens, genererar systemet mappningen automatiskt baserat på namnen. Om namnen emellertid skiljer sig åt, mappas kolumnerna inte automatiskt. I så fall måste du slutföra mappningen genom att välja alternativet **Visa karta** alternativ för enheten i datajobbet.
+Om kolumnnamnen i det tillfälliga registret och i filen stämmer överens, skapar systemet mappningen automatiskt baserat på namnen. Om namnen emellertid skiljer sig åt, mappas kolumnerna inte automatiskt. I så fall måste du slutföra mappningen genom att välja alternativet **Visa karta** alternativ för enheten i datajobbet.
 
 Det finns två vyer för mappning: **Mappningsvisualisering**, som är standard, och **Mappningsdetaljer**. En röd asterisk (\*) markerar alla obligatoriska fält i enheten. Dessa fält måste mappas innan du kan arbeta med entiteten. Du kan ta bort mappningen av andra fält efter behov när du arbetar med enheten. Markera fältet som du vill ta bort mappningen för i kolumnen **Enhet** eller i kolumnen **Källa**, och välj sedan **Ta bort val**. Välj **Spara** om du vill spara ändringarna, och stäng sedan sidan om du vill återgå till projektet. Du kan använda samma process för att redigera fältmappning från källa till mellanlagring när du har importerat.
 
-Du kan skapa en mappning på sidan genom att markera **Generera källmappning**. En genererad mappning fungerar som en automatisk mappning. Därför måste du mappa de omappade fälten manuellt.
+Du kan skapa en mappning på sidan genom att markera **Skapa källmappning**. En skapad mappning fungerar som en automatisk mappning. Därför måste du mappa de omappade fälten manuellt.
 
 ![Datamappning](./media/dixf-map.png)
 

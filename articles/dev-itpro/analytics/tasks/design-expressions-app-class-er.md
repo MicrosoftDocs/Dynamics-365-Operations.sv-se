@@ -1,5 +1,5 @@
 --- 
-title: "Skapa uttryck för att anropa programklassmetoder (ER)"
+title: "Skapa ER-uttryck för att anropa programklassmetoder"
 description: "Denna guide ger information om hur du återanvänder befintlig programlogik i konfigurationer för elektronisk rapportering (ER) genom att anropa metoder för programklasser i ER-uttryck."
 author: NickSelin
 manager: AnnBe
@@ -16,13 +16,13 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 631fa7bae808856efb8b95700fd2a85e6d5f8725
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: fdacd852eeed33b443a3c79b96fc4c4af04bb6b2
 ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="design-expressions-to-call-application-class-methods-er"></a>Skapa uttryck för att anropa programklassmetoder (ER)
+# <a name="design-er-expressions-to-call-application-class-methods"></a>Skapa ER-uttryck för att anropa programklassmetoder
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
@@ -152,7 +152,7 @@ För att slutföra dessa steg måste du först slutföra stegen i proceduren "ER
 46. Stäng sidan.
 
 ## <a name="run-the-format-mapping"></a>Kör mappning av filformat
-För testningsändamål, utför formatmappning med den SampleIncomingMessage.txt-fil som du tidigare hämtade. Genererade utdata kommer att inkludera data som importeras från den valda TXT-filen och fyller i den anpassade datamodellen när den verkliga importen sker.   
+För testningsändamål, utför formatmappning med den SampleIncomingMessage.txt-fil som du tidigare hämtade. Skapade utdata kommer att inkludera data som importeras från den valda TXT-filen och fyller i den anpassade datamodellen när den verkliga importen sker.   
 1. Klicka på Kör.
     * Klicka på Bläddra och navigera till filen SampleIncomingMessage.txt som du hämtade tidigare.  
 2. Klicka på OK.

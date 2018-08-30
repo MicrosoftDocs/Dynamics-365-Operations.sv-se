@@ -1,16 +1,16 @@
 ---
 title: "Kvittningsöversikt för centraliserade betalningar"
-description: "Organisationer som omfattar flera juridiska personer kan skapa och hantera betalningar genom att använda en enda juridisk person som hanterar alla betalningar. Detta undanröjer behovet av att registrera samma transaktion i flera juridiska personer, och man sparar tid genom att betalningsförslagsprocessen, kvittningsprocessen, redigeringen av öppna och stängda transaktioner för centraliserade betalningar förenklas."
+description: "Det här avsnittet beskriver kvittning för centraliserade betalningar för Microsoft Dynamics 365 for Finance and Operations."
 author: abruer
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/02/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: CustOpenTrans
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 222414
 ms.assetid: 610f6858-0f37-4d0f-8c68-bab5a971ef4a
@@ -19,10 +19,10 @@ ms.author: abruer
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: b76b141531acfc2d1d7553a3e7a13f165373921b
+ms.sourcegitcommit: fc5a65c299adbf86fb2f38dff1a9aaa36f7367fa
+ms.openlocfilehash: 1fecc9027d0df7b268a3241ea0f1797849db2d90
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 08/09/2018
 
 ---
 
@@ -32,11 +32,11 @@ ms.lasthandoff: 11/03/2017
 
 Organisationer som omfattar flera juridiska personer kan skapa och hantera betalningar genom att använda en enda juridisk person som hanterar alla betalningar. Detta undanröjer behovet av att registrera samma transaktion i flera juridiska personer, och man sparar tid genom att betalningsförslagsprocessen, kvittningsprocessen, redigeringen av öppna och stängda transaktioner för centraliserade betalningar förenklas. 
 
-När en kund- eller leverantörsbetalning registreras för en juridisk person och kvittas mot en faktura som registrerats för en annan juridisk person, kommer relevant kvittning, förfaller till- och förfaller från-transaktioner att genereras automatiskt för respektive juridisk person. En kvittningspost skapas för respektive kombination av faktura och betalning i transaktionen. Varje kvittningspost tilldelas ett nytt verifikationsnummer, baserat på den verifikationsnummersekvens för betalning som angetts på sidan **Parametrar för kundreskontra** för kunder och på sidan **Parametrar för leverantörsreskontra** för leverantörer. 
+När en kund- eller leverantörsbetalning registreras för en juridisk person och kvittas mot en faktura som registrerats för en annan juridisk person, kommer relevant kvittning, förfaller till- och förfaller från-transaktioner att skapas automatiskt för respektive juridisk person. En kvittningspost skapas för respektive kombination av faktura och betalning i transaktionen. Varje kvittningspost tilldelas ett nytt verifikationsnummer, baserat på den verifikationsnummersekvens för betalning som angetts på sidan **Parametrar för kundreskontra** för kunder och på sidan **Parametrar för leverantörsreskontra** för leverantörer. 
 
-Om ytterligare kvittningsposter genereras för kassarabatter, omräkningar i utländsk valuta, öresskillnader, över- eller underbetalningar, erhåller de det senare datumet för betalnings- eller fakturatransaktionen. Om kvittningen sker efter det att betalningen har bokförts, använder kvittningsposterna det bokföringsdatum för kvittning som angetts på sidan **Kvitta öppna transaktioner**.
-Bokföringstyper, transaktionstyper och standardbeskrivningar
-----------------------------------------------------------
+Om ytterligare kvittningsposter skapas för kassarabatter, omräkningar i utländsk valuta, öresskillnader, över- eller underbetalningar, erhåller de det senare datumet för betalnings- eller fakturatransaktionen. Om kvittningen sker efter det att betalningen har bokförts, använder kvittningsposterna det bokföringsdatum för kvittning som angetts på sidan **Kvitta öppna transaktioner**.
+
+## <a name="posting-types-transaction-types-and-default-descriptions"></a>Bokföringstyper, transaktionstyper och standardbeskrivningar
 
 För koncerninterna transaktioner för kvittningsverifikationer används transaktionstyperna koncernintern kvittningsbokföringstyp, koncernintern kundkvittning och koncernintern leverantörskvittning. Du kan ange information för transaktionstypen på sidan **Standardbeskrivningar**. 
 
@@ -50,8 +50,7 @@ Följande transaktionstyper är tillgängliga för användning vid kvittning i e
 
 Du kan även ange standardbeskrivningar för koncerninterna kvittningsverifikationer.
 
-<a name="currency-exchange-gains-or-losses"></a>Valutakursvinster eller valutakursförluster
----------------------------------
+## <a name="currency-exchange-gains-or-losses"></a>Valutakursvinster eller valutakursförluster
 
 Den valutakurs som används för kund- eller leverantörstransaktioner lagras med transaktionen. Realiserade vinster eller förluster rörande valutakurser bokförs i antingen fakturans juridiska person eller i betalningens juridiska person beroende på vilket alternativ som har valts i fältet **Bokför valutakursvinst eller -förlust** på sidan **Koncernintern redovisning** för den juridiska personen för betalningen. I följande exempel används de här valutorna:
 -   Redovisningsvaluta för betalning: EUR
@@ -59,7 +58,7 @@ Den valutakurs som används för kund- eller leverantörstransaktioner lagras me
 -   Betalningstransaktionsvaluta: DKK
 -   Fakturatransaktionsvaluta: CAD
 
-#### <a name="currency-calculations"></a>Valutaberäkningar
+### <a name="currency-calculations"></a>Valutaberäkningar
 
 När en faktura som har registrerats i juridisk person kvittas med en betalning som har registrerats i en annan juridisk person, konverteras betalningens transaktionsvaluta (DKK) i tre steg:
 1.  Konvertering till betalningens redovisningsvaluta (EUR) med valutakurser från betalningens juridiska person.
@@ -75,17 +74,15 @@ När sidan **Kvitta öppna transaktioner** öppna från en betalningsjournal dä
 
 Det resulterande betalningsbeloppet överförs till betalningsjournalraden när du stänger sidan **Kvitta öppna transaktioner**.
 
-#### <a name="posting-for-gain-or-loss-because-of-different-accounting-currencies"></a>Bokföring av vinst eller förlust till följd av olika redovisningsvalutor
+### <a name="posting-for-gain-or-loss-because-of-different-accounting-currencies"></a>Bokföring av vinst eller förlust till följd av olika redovisningsvalutor
 
 Om det finns en vinst eller en förlust vid valutaväxling kommer denna att bokföras för den juridiska person som angetts för fältet **Bokför valutakursvinst eller -förlust** på sidan **Koncernintern redovisning** för den juridiska personen för betalningen. Vinst- eller förlustbeloppet konverteras till redovisningsvalutan för den juridiska person där vinst- eller förlustbeloppet bokförs, med den växelkurs som definierats för den juridiska personen.
 
-<a name="cash-discounts"></a>Kassarabatter
---------------
+## <a name="cash-discounts"></a>Kassarabatter
 
-Kassarabatter som skapas i samband med kvittningsprocessen mellan företag bokförs i antingen fakturans juridiska person eller i betalningens juridiska person, beroende på vilket alternativ som har valts i fältet **Bokför kassarabatt** på sidan **Koncernintern redovisning** för den juridiska personen för betalningen. En motsvarande kvittningstransaktion genereras i fakturans juridiska person.
+Kassarabatter som skapas i samband med kvittningsprocessen mellan företag bokförs i antingen fakturans juridiska person eller i betalningens juridiska person, beroende på vilket alternativ som har valts i fältet **Bokför kassarabatt** på sidan **Koncernintern redovisning** för den juridiska personen för betalningen. En motsvarande kvittningstransaktion skapas i fakturans juridiska person.
 
-<a name="overpayments-and-underpayments"></a>Överbetalningar och underbetalningar
-------------------------------
+## <a name="overpayments-and-underpayments"></a>Överbetalningar och underbetalningar
 
 Toleranser för överbetalning, underbetalning och öresskillnader fastställs baserat på den betalningens juridiska person för överbetalningar samt på fakturans juridiska person för underbetalningar. Redovisningskontot som används bestäms av inställningarna i fältet **Administration av kassarabatt** på sidan **Parametrar för kundreskontra** för kunder, samt i fältet **Administration av kassarabatt** på sidan **Parametrar för leverantörsreskontra** för leverantörer.
 
@@ -112,9 +109,4 @@ För leverantörsbetalningar använder förfaller till- och förfaller från-tra
 
 ## <a name="withholding-tax"></a>Källskatt
 Leverantörskontot som är associerat till fakturan används för att avgöra om källskatt ska beräknas. Om källskatt gäller beräknas denna i den juridiska person som är associerad med fakturan. Om de juridiska personer använder olika valutor, används valutakursen från den juridiska person som är kopplad till fakturan.
-
-
-
-
-
 

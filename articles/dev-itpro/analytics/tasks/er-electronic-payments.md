@@ -1,6 +1,6 @@
 --- 
-title: "Generera elektroniska dokument för betalningar med en formatkonfiguration för elektronisk rapportering (ER)"
-description: "I följande steg beskrivs hur en användare som har rollen Systemadministratör eller Utvecklare för elektronisk rapportering kan använda en ny formatkonfiguration för Elektronisk rapportering (ER) för att generera elektroniska dokument för bearbetning av betalningar."
+title: "Generera elektroniska dokument för betalningar genom att använda formatkonfigurationer"
+description: "I följande steg beskrivs hur en användare som har rollen Systemadministratör eller Utvecklare för elektronisk rapportering kan använda en ny formatkonfiguration för Elektronisk rapportering (ER) för att skapa elektroniska dokument för bearbetning av betalningar."
 author: NickSelin
 manager: AnnBe
 ms.date: 11/10/2016
@@ -16,17 +16,17 @@ ms.author: nselin
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: a5d958d3b55bfa76f3cfbb3c1a289e4e89c49146
+ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
+ms.openlocfilehash: 805e6f377d452e9c50240c8c9fc2ea6f5cb487e6
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="generate-electronic-documents-for-payments-using-a-format-configuration-for-electronic-reporting-er"></a>Generera elektroniska dokument för betalningar med en formatkonfiguration för elektronisk rapportering (ER)
+# <a name="generate-electronic-documents-for-payments-by-using-format-configurations"></a>Generera elektroniska dokument för betalningar genom att använda formatkonfigurationer
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-I följande steg beskrivs hur en användare som har rollen Systemadministratör eller Utvecklare för elektronisk rapportering kan använda en ny formatkonfiguration för Elektronisk rapportering (ER) för att generera elektroniska dokument för bearbetning av betalningar. Dessa steg kan utföras i GBSI-exempelföretaget.
+I följande steg beskrivs hur en användare som har rollen Systemadministratör eller Utvecklare för elektronisk rapportering kan använda en ny formatkonfiguration för Elektronisk rapportering (ER) för att skapa elektroniska dokument för bearbetning av betalningar. Dessa steg kan utföras i GBSI-exempelföretaget.
 
 För att slutföra dessa steg måste du först slutföra stegen i proceduren "Skapa en konfiguration med formatet betalningsdokument”.
 
@@ -43,7 +43,7 @@ För att slutföra dessa steg måste du först slutföra stegen i proceduren "Sk
 8. Klicka på Spara.
 9. Stäng sidan.
 
-## <a name="test-the-format-of-generated-payment-files"></a>Testa formatet för genererade betalningsfiler
+## <a name="test-the-format-of-generated-payment-files"></a>Testa formatet för skapade betalningsfiler
 1. Gå till Leverantörsreskontra > Betalningar > Betalningsjournal.
 2. Klicka på Ny.
 3. Markera vald rad i listan.
@@ -66,7 +66,7 @@ För att slutföra dessa steg måste du först slutföra stegen i proceduren "Sk
     * Välj det elektroniska värdet.  
 15. Klicka på länken på den valda raden i listan.
 16. Klicka på Spara.
-17. Klicka på Generera betalningar.
+17. Klicka på Skapa betalningar.
 18. I fältet Betalningsmetod, öppna sökningen genom att klicka på den nedrullningsbara knappen.
 19. Hitta och markera önskad post i listan.
     * Välj det elektroniska värdet.  

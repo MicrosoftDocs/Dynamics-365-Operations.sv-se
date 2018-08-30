@@ -1,5 +1,5 @@
 ---
-title: "Ekonomisk rapportering för Finance and Operations"
+title: Ekonomisk rapportering
 description: "Ekonomisk rapportering för Finance and Operations kan användas av finans- och affärsmän för att skapa, underhålla, distribuera och visa bokslut. Den går utanför traditionella rapporteringsbegränsningar för att hjälpa dig att skapa olika typer av rapporter på ett effektivt sätt."
 author: aprilolson
 manager: AnnBe
@@ -10,7 +10,7 @@ ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: FinanicalReportingSetup
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 68813
 ms.assetid: fe8b27e7-a40a-4689-ac6a-7f7401c387f5
@@ -19,14 +19,14 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 54a3409e7bd0f1c704cf9f7dd1d860100ec83d7f
+ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
+ms.openlocfilehash: 3e12037f14e7e01764fd6d18f52854c35a09d196
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
-# <a name="financial-reporting-for-finance-and-operations"></a>Ekonomisk rapportering för Finance and Operations
+# <a name="financial-reporting"></a>Ekonomisk rapportering
 
 [!include [banner](../includes/banner.md)]
 
@@ -50,8 +50,8 @@ Följande komponenter för ekonomisk rapportering gör det lättare att skapa, v
 
 | Komponent        | Funktioner                                                                                                                                                                                                                                                                           | Ytterligare information                                                                          |
 |------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
-| Report Designer  | Skapa rapportbyggnadsblock som kan kombineras för att definiera och generera en rapport. Rapportguiden leder mindre erfarna användare genom designprocessen. Avancerade användare kan skapa nya rapportbyggnadsblock eller ändra befintliga byggnadsblock så att de uppfyller deras krav. |                                                                                                 |
-| Rapportscheman | Tidsplanera en enstaka rapport eller en rapportgrupp så att den skapas regelbundet.                                                                                                                                                                                          | [Generera ekonomisk rapport](generate-financial-report.md) |
+| Report Designer  | Skapa rapportbyggnadsblock som kan kombineras för att definiera och skapa en rapport. Rapportguiden leder mindre erfarna användare genom designprocessen. Avancerade användare kan skapa nya rapportbyggnadsblock eller ändra befintliga byggnadsblock så att de uppfyller deras krav. |                                                                                                 |
+| Rapportscheman | Tidsplanera en enstaka rapport eller en rapportgrupp så att den skapas regelbundet.                                                                                                                                                                                          | [Skapa ekonomisk rapport](generate-financial-report.md) |
 
 ## <a name="features"></a>Funktioner
 <table>
@@ -76,7 +76,7 @@ Följande komponenter för ekonomisk rapportering gör det lättare att skapa, v
 <td>Samarbete för ekonomisk rapport</td>
 <td>Följande funktioner hjälper dig att hantera generering och fördelning av rapporter:
 <ul>
-<li>Tidsplanera rapporter så att de genereras automatiskt varje dag, varje vecka, varje månad eller varje år.</li>
+<li>Tidsplanera rapporter så att de skapas automatiskt varje dag, varje vecka, varje månad eller varje år.</li>
 <li>Exportera till skrivskyddat XPS-format, som ger en bättre dokumentsäkerhet via digitala signaturer.</li>
 <li>Exportera till ett Microsoft Excel-kalkylblad.</li>
 <li>Om du vill dela rapporter kan du skapa e-postmeddelanden som innehåller länkar till rapporterna.</li>
@@ -98,7 +98,7 @@ Följande komponenter för ekonomisk rapportering gör det lättare att skapa, v
 </table>
 
 ## <a name="additional-resources"></a>Ytterligare resurser
-[Generera en ekonomisk rapport](generate-financial-report.md)
+[Skapa en ekonomisk rapport](generate-financial-report.md)
 
 
 

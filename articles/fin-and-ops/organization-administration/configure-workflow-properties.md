@@ -3,7 +3,7 @@ title: "Konfigurera arbetsflödesegenskaper"
 description: "I det här avsnittet beskrivs hur du konfigurerar olika egenskaper för ett arbetsflöde."
 author: sericks007
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 07/17/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: donaldc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 19cc8f92b5bb6d9ddfdc77785e48de17ed005703
-ms.openlocfilehash: 7ea35d851613a19889392400e31cf8492d5dc799
+ms.sourcegitcommit: ba03473dd6fc31d51fd4e890acac1cd1494ef5a3
+ms.openlocfilehash: a327b85f18f03294a237c3795ae2e1f4a97095f0
 ms.contentlocale: sv-se
-ms.lasthandoff: 03/23/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
@@ -46,7 +46,7 @@ Följ dessa steg när du vill ange ett namn för arbetsflödet.
 2.  I listan **Ägare** väljer du namnet på den person som ska hantera arbetsflödet.
 
 ## <a name="select-an-email-template"></a>Välj en e-postmall
-Följ dessa steg för att välja den e-postmall som används för att generera meddelanden om arbetsflödet.
+Följ dessa steg för att välja den e-postmall som används för att skapa meddelanden om arbetsflödet.
 
 1.  Klicka på **Grundinställningar** i det vänstra fönstret.
 2.  Välj mallen i listan **E-postmall för arbetsflödesmeddelanden**.
@@ -107,6 +107,7 @@ När ett dokument skickas in för bearbetning skapas en arbetsflödesinstans. Du
     2.  Klicka på **Infoga platshållare**.
     3.  Välj önskad platshållare i listan som visas.
     4.  Klicka på **Infoga**.
+    5.  En gemensam platshållare med **Meddelandetext** som ska inkluderas är "Senaste anteckningar: %Workflow.Last note%”, som visar alla kommentarer från föregående steg.
 
 6.  Följ dessa steg för att lägga till översättningar av texten:
     1.  Klicka på **Översättningar**.

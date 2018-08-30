@@ -22,7 +22,7 @@ ms.translationtype: HT
 ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
 ms.openlocfilehash: 683d3de59a427df296bb0d3d644f0ec23b3a8e5e
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 08/09/2018
 
 ---
 
@@ -50,8 +50,8 @@ Menyn **ArkivFil** är tillgänglig för alla användare och inkluderar följand
 | Spara                              | Spara nuvarande raddefinition, kolumndefinition, rapportträddefinition eller rapportdefinition.                                                                                             |
 | Spara som                           | Spara nuvarande raddefinition, kolumndefinition, rapportträddefinition eller rapportdefinition med ett nytt namn.                                                                            |
 | Egenskaper                        | Öppna dialogrutan **Egenskaper** där du kan ändra namn och beskrivning av en rapport.                                                                                                   |
-| Generera                          | Skapa aktuell rapport. Detta kommando är tillgängligt från en rapportdefinition.                                                                                                                 |
-| Visa rapport                       | Öppna den senaste versionen av den skapade rapporten i Finance and Operations. Detta kommando är tillgängligt från en rapportdefinition, om du har genererat minst en rapport.                                 |
+| Skapa                          | Skapa aktuell rapport. Detta kommando är tillgängligt från en rapportdefinition.                                                                                                                 |
+| Visa rapport                       | Öppna den senaste versionen av den skapade rapporten i Finance and Operations. Detta kommando är tillgängligt från en rapportdefinition, om du har skapat minst en rapport.                                 |
 | Senaste rapportdefinitionerna         | Visa en lista med de senast skapade eller ändrade rapporterna. Du kan sedan välja en rapport i listan.                                                                                    |
 | Senaste raddefinitionerna            | Visa en lista med de senast skapade eller ändrade raddefinitionerna. Du kan sedan välja en raddefinition i listan.                                                                    |
 | Senaste kolumndefinitionerna         | Visa en lista med de senast skapade eller ändrade kolumndefinitionerna. Du kan sedan välja en kolumndefinition i listan.                                                              |
@@ -136,7 +136,7 @@ Menyn **Verktyg** är tillgänglig för alla användare, men en del kommandon ha
 | Kommando                       | Beskrivning                                                                                                                                                                                                       |
 |-------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Skydda                       | Tillämpa ett lösenord till det aktuella byggblocket. Detta kommando är tillgängligt för användare som har rollerna **Designer** eller **Administratör**.                                                                           |
-| Rapportköstatus           | Öppna dialogrutan **Rapportköstatus** där du kan se alla de senaste genererade rapporterna och detaljerna för varje rapport.                                                                                    |
+| Rapportköstatus           | Öppna dialogrutan **Rapportköstatus** där du kan se alla de senaste skapade rapporterna och detaljerna för varje rapport.                                                                                    |
 | Källsysteminformation     | Visa inställningarna för ditt Microsoft Dynamics ERP-system. Detta kommando är tillgängligt för användare som har rollerna **Designer** eller **Administratör**.                                                                 |
 | Utcheckade objekt             | Visa de raddefinitioner, kolumndefinitioner, rapportträddefinitioner och rapportdefinitioner som för närvarande är öppna. Detta kommando är tillgängligt för användare som har rollerna **Designer** eller **Administratör**. |
 | Uppdatera cachelagrade ekonomiska data | Uppdatera data i den ekonomiska dimensionkolumnen.                                                                                                                                                               |
@@ -219,8 +219,8 @@ Verktygsfältet för rapportdesignern ger snabb åtkomst till kommandon navigeri
 | [![Knappen Raddefinition](./media/rowc130389.png)](./media/rowc130389.png)                          | Visa den raddefinition som har tilldelats den aktiva rapportdefinitionen.                                                                                                    |
 | [![Knappen Kolumndefinition](./media/columnc130389.png)](./media/columnc130389.png)                 | Visa den kolumndefinition som har tilldelats den aktiva rapportdefinitionen.                                                                                                 |
 | [![Knappen Rapportträddefinition](./media/treec130389.png)](./media/treec130389.png)             | Visa den rapportträddefinition som har tilldelats den aktiva rapportdefinitionen.                                                                                         |
-| [![Knappen Report Viewer](./media/reportviewerc130389.png)](./media/reportviewerc130389.png)         | Starta Report Viewer och visa den senaste versionen av den skapade rapporten. Denna knapp är tillgänglig från en rapportdefinition, om du har genererat minst en rapport. |
-| [![Knappen Skapa rapport](./media/generate-to-ddvc130389.png)](./media/generate-to-ddvc130389.png) | Generera en rapport från den aktiva rapportdefinitionen. Den här knappen är tillgänglig från en rapportdefinition.                                                                      |
+| [![Knappen Report Viewer](./media/reportviewerc130389.png)](./media/reportviewerc130389.png)         | Starta Report Viewer och visa den senaste versionen av den skapade rapporten. Denna knapp är tillgänglig från en rapportdefinition, om du har skapat minst en rapport. |
+| [![Knappen Skapa rapport](./media/generate-to-ddvc130389.png)](./media/generate-to-ddvc130389.png) | Skapa en rapport från den aktiva rapportdefinitionen. Den här knappen är tillgänglig från en rapportdefinition.                                                                      |
 
 
 
@@ -229,7 +229,7 @@ Verktygsfältet för rapportdesignern ger snabb åtkomst till kommandon navigeri
 
 [Ekonomisk rapportering](financial-reporting-intro.md)
 
-[Generera en ekonomisk rapport](generate-financial-report.md)
+[Skapa en ekonomisk rapport](generate-financial-report.md)
 
 
 

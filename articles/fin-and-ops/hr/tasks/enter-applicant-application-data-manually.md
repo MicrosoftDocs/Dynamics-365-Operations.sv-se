@@ -16,13 +16,13 @@ ms.author: kherr
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 6aef83b18ba5f18506921e08f3674b6bb272d3ab
+ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
+ms.openlocfilehash: 05ff2e5563a49d0b1f598299fb34f85b98700b9e
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 08/09/2018
 
 ---
-# <a name="enter-applicant-and-application-data-manually"></a>Ange sökanden och ansökningsdata manuellt
+# <a name="manually-enter-applicant-and-application-data"></a>Ange sökanden och ansökningsdata manuellt
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
@@ -40,7 +40,7 @@ I den här proceduren visas hur du manuellt hanterar information om sökanden oc
 7. Skriv "E-post för kommunikation" i fältet Beskrivning.
 8. Välj ett alternativ i fältet Typ.
 9. Skriv ett värde i fältet Kontaktens nummer/adress.
-    * Den här e-postadressen används för att generera e-postkommunikation med den sökande.  
+    * Den här e-postadressen används för att skapa e-postkommunikation med den sökande.  
 10. Klicka på Lägg till.
 11. Ange ett värde i fältet Beskrivning.
 12. Skriv ett värde i fältet Kontaktens nummer/adress.
