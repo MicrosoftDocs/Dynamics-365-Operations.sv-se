@@ -3,7 +3,7 @@ title: "Kvittningöversikt"
 description: "Den här artikeln innehåller allmän information om kvittningsprocessen. Den beskriver de olika typer av transaktioner som kan kvittas, när och hur transaktioner kan kvittas, och resultatet av kvittningsprocessen."
 author: kweekley
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 08/24/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -16,8 +16,8 @@ ms.custom: 14551
 ms.assetid: 0968fa71-5984-415b-8689-759a0136d5d1
 ms.search.region: Global
 ms.author: kweekley
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.validFrom: 2018-10-31
+ms.dyn365.ops.version: 8.1
 ms.translationtype: HT
 ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
 ms.openlocfilehash: 2f1f11a7f1340d408374e658ae616ffa99f3c911
@@ -51,7 +51,6 @@ Allt eftersom transaktioner kvittas, ökas eller minskas det utestående saldot 
 -   Om betalningsbeloppet är lika med fakturabeloppet, stängs både betalningen och fakturan och saldot för båda är 0,00.
 
 Om en [betalning är mindre än fakturabeloppet](../accounts-payable/vendor-payments-partial-amount.md) på grund av kassarabatt, avskrivning, eller underbetalning, kan faktura och betalning fortfarande stängas beroende på inställningarna för kvittning i Parametrar för leverantörsreskontra och Parametrar för kundreskontra. Kvittningen kan även generera transaktioner. Till exempel kan kvittning av en faktura och en betalning producera en kassarabatt, realiserad vinst eller förlust, momsjusteringar, avskrivning, eller öresdifferenser.
-
 
 
 
