@@ -1,26 +1,26 @@
----
+--- 
 title: "Kontrollera lagertillgängligheten"
 description: "Den här proceduren visar hur du kontrollerar lagerbehållning och fysisk lagerbehållning för ett visst artikelnummer."
-author: perlynne
+author: 
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: InventOnHandItemListPage, SysQueryForm, InventDimParmFixed, InventSupply, DefaultDashboard, WHSInventPhysicalOnhand, WHSOnHand
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: 
+ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.search.industry: Distribution
-ms.author: perlynne
+ms.author: 
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
-ms.openlocfilehash: b1c5331379ec1b16ef13ea64ee7f0324828e50a2
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: 4be343a38f3f428261cf30c5b92c7a34d1f1ffa4
 ms.contentlocale: sv-se
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 # <a name="check-the-availability-of-stock"></a><span data-ttu-id="86a38-103">Kontrollera lagertillgängligheten</span><span class="sxs-lookup"><span data-stu-id="86a38-103">Check the availability of stock</span></span>
@@ -67,4 +67,5 @@ ms.lasthandoff: 08/07/2018
 4. <span data-ttu-id="86a38-144">Klicka på Visa dimensioner.</span><span class="sxs-lookup"><span data-stu-id="86a38-144">Click Display Dimensions.</span></span>
 5. <span data-ttu-id="86a38-145">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="86a38-145">Click OK.</span></span>
 6. <span data-ttu-id="86a38-146">Stäng sidan.</span><span class="sxs-lookup"><span data-stu-id="86a38-146">Close the page.</span></span>
+
 

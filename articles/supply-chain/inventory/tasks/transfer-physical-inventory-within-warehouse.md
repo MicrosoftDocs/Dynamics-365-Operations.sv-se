@@ -1,26 +1,27 @@
----
+--- 
 title: "Överför fysiskt lager i lagerstället"
 description: "I den här proceduren beskrivs hur du kan skapa och bokföra en lageröverföringsjournal för att kunna lagret registrera förflyttningen av en artikel från en plats till en annan på samma lagerställe."
 author: MarkusFogelberg
 manager: AnnBe
-ms.date: 03/02/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: InventJournalTransfer, InventJournalCreate, InventItemIdLookupSimple, InventLocationIdLookup, WMSLocationIdLookup, InventTrans
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: mafoge
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
-ms.openlocfilehash: 8569ff744e11fb0348dedc4e1e56894203b7b7a3
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: 41057d0a35cab122840a20a5c65ab7ae3133052c
 ms.contentlocale: sv-se
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 # <a name="transfer-physical-inventory-within-the-warehouse"></a><span data-ttu-id="36e1f-103">Överför fysiskt lager i lagerstället</span><span class="sxs-lookup"><span data-stu-id="36e1f-103">Transfer physical inventory within the warehouse</span></span>
@@ -67,4 +68,5 @@ ms.lasthandoff: 08/07/2018
 1. <span data-ttu-id="36e1f-142">Klicka på Lager.</span><span class="sxs-lookup"><span data-stu-id="36e1f-142">Click Inventory.</span></span>
 2. <span data-ttu-id="36e1f-143">Klicka på Transaktioner.</span><span class="sxs-lookup"><span data-stu-id="36e1f-143">Click Transactions.</span></span>
     * <span data-ttu-id="36e1f-144">Här kan du se de transaktioner som skapades när du bokförde din journal.</span><span class="sxs-lookup"><span data-stu-id="36e1f-144">Here you can see the transactions that were created when you posted your journal.</span></span>  
+
 

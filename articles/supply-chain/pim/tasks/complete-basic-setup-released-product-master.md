@@ -3,23 +3,24 @@ title: "Slutför grundläggande inställningar för en frisläppt produktmall"
 description: "I den här proceduren visas hur du slutför de basinställningar som krävs innan produktmallen kan användas i strukturversioner."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 11/11/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: EcoResProductDetailsExtended, InventTableInventoryDimensionGroups, InventItemOrderSetup
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
-ms.openlocfilehash: 8e08fbd53657bcf31a12166cf06b614ce3e3f131
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: fe3ecebd7a1579ab3301ada029020dec306bcdc1
 ms.contentlocale: sv-se
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 # <a name="complete-basic-setup-of-a-released-product-master"></a><span data-ttu-id="3892c-103">Slutför grundläggande inställningar för en frisläppt produktmall</span><span class="sxs-lookup"><span data-stu-id="3892c-103">Complete basic setup of a released product master</span></span>

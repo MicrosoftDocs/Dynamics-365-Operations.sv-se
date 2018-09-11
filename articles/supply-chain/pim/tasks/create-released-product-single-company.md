@@ -3,23 +3,24 @@ title: "Skapa en frisläppt produkt för ett enskilt företag"
 description: "I den här proceduren beskrivs hur du skapar en enskild frisläppt produkt i sammanhanget för en enskild juridisk enhet."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 11/11/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: EcoResProductDetailsExtended, EcoResProductCreate, UnitOfMeasureLookup, DimensionLookup
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
-ms.openlocfilehash: 3449952684d557f410f9b5b9410f94197e12c897
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: cca492bb1083f2520699dd8871a15b10ba3b4e1f
 ms.contentlocale: sv-se
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 # <a name="create-a-released-product-for-a-single-company"></a><span data-ttu-id="2ac35-103">Skapa en frisläppt produkt för ett enskilt företag</span><span class="sxs-lookup"><span data-stu-id="2ac35-103">Create a released product for a single company</span></span>

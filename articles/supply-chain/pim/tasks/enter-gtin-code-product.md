@@ -3,23 +3,24 @@ title: "Ange GTIN-koden för en produkt"
 description: GTIN-koder tilldelas av organisationen GS1.
 author: ShylaThompson
 manager: AnnBe
-ms.date: 09/26/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: DefaultDashboard, EcoResProductMaintainWorkspace, EcoResProductOpenCasesFormPart, EcoResProductDetailsExtended, InventItemGTIN, UnitOfMeasureLookup
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
-ms.openlocfilehash: 29e3162423b4efa69e86d84f31d2cbf8782e6054
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: 1c018519dc87f23c15cec37c1c0e78bf505d1b21
 ms.contentlocale: sv-se
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 # <a name="enter-the-gtin-code-for-a-product"></a><span data-ttu-id="a7198-103">Ange GTIN-koden för en produkt</span><span class="sxs-lookup"><span data-stu-id="a7198-103">Enter the GTIN code for a product</span></span>

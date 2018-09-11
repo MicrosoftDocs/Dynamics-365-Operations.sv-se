@@ -1,26 +1,27 @@
----
+--- 
 title: "Förbered ett kanban-processjobb när material är tillgängliga för arbetsgruppen"
 description: "Den här uppgiften fokuseras på att förbereda ett kanban-processjobb när alla material är tillgängliga för arbetsgruppen."
 author: johanhoffmann
 manager: AnnBe
-ms.date: 11/11/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: KanbanBoardWorkCell
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: johanho
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
-ms.openlocfilehash: b774179d3c29a6009c37dea491e07f629740027e
+ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
+ms.openlocfilehash: 34665fe0fe7e1f7989433b31aafcc4fe203141c2
 ms.contentlocale: sv-se
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/11/2018
 
 ---
 # <a name="prepare-a-process-kanban-job-when-materials-are-available-for-the-work-cell"></a><span data-ttu-id="931ac-103">Förbered ett kanban-processjobb när material är tillgängliga för arbetsgruppen</span><span class="sxs-lookup"><span data-stu-id="931ac-103">Prepare a process kanban job when materials are available for the work cell</span></span>
@@ -40,4 +41,5 @@ ms.lasthandoff: 08/07/2018
     * <span data-ttu-id="931ac-115">Om flera jobb väljs kommer plocklistan att visa summan av alla artiklar som behövs för de valda jobben.</span><span class="sxs-lookup"><span data-stu-id="931ac-115">If multiple jobs are selected, the picking list will show the sum of all items needed for the selected jobs.</span></span>  
 6. <span data-ttu-id="931ac-116">Klicka på Förbered.</span><span class="sxs-lookup"><span data-stu-id="931ac-116">Click Prepare.</span></span>
     * <span data-ttu-id="931ac-117">Förberedelseprocessen är nu slutförd.</span><span class="sxs-lookup"><span data-stu-id="931ac-117">The preparation process is now completed.</span></span> <span data-ttu-id="931ac-118">Den markerade kryssrutan för alla rader i plocklistan anger att tillförselstatusen plockas.</span><span class="sxs-lookup"><span data-stu-id="931ac-118">The selected check box for all rows in the picking list indicates that the supply status is picked.</span></span>  
+
 
