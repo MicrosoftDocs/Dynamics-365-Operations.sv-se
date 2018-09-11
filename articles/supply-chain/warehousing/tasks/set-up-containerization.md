@@ -3,24 +3,25 @@ title: "Definiera skapande av behållare"
 description: "I den här proceduren beskrivs hur du automatiserar skapandet av behållare för last Lagerstyrning."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 11/02/2017
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: WHSWaveTemplateTable, InventLocationIdLookup, WHSContainerType, WHSContainerGroup, WHSContainerizationTable, WHSContainerizationBreak, WHSCreateContainerBreak
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: mirzaab
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 76334f7ee4efe33df4a86aaa11a59748387cec89
-ms.openlocfilehash: c5faf926071dec5d2ddc1c9e921a98ecd0754917
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: aeb7d956560c513c08d5e20dcf20989b49137a52
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/02/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 # <a name="set-up-containerization"></a>Definiera skapande av behållare
@@ -83,7 +84,7 @@ I den här proceduren beskrivs hur du automatiserar skapandet av behållare för
 ## <a name="set-up-a-container-group"></a>Ställ in en behållargrupp
 1. Gå till Lagerstyrning > Inställningar > Behållare > Behållargrupper.
 2. Klicka på Ny.
-    * Du kan ställa in logiska grupper av behållartyper. För varje grupp kan du ange i vilken ordning som behållarna packas och procentsatsen för behållarna som ska fyllas. Artikelns storleksdimensioner används för att avgöra om den kommer att passa i en behållare. Den behållare som är närmast artikelns storlek används. Om du har flera behållartyper i en grupp, rekommenderar vi att sekvensen ordnas efter storlek, så att den största, är den första nummer 1 i sekvensen, och den mest minsta behållaren är den sista.    
+    * Du kan ställa in logiska grupper av behållartyper. För varje grupp kan du ange sekvens för packning av containrar och procentsatsen av containrarna som ska fyllas. I används storleksdimensioner för artikeln för att avgöra om den passar i en behållare. Den behållare som är närmast artikelns storlek används. Om du har flera behållartyper i en grupp, rekommenderar vi att sekvensen ordnas efter storlek, så att den största, är den första nummer 1 i sekvensen, och den mest minsta behållaren är den sista.    
 3. Skriv ett värde i fältet Behållargrupp-ID.
 4. Ange ett värde i fältet Beskrivning.
 5. Klicka på Ny.

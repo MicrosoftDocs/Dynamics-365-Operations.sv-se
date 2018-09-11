@@ -1,21 +1,22 @@
----
+--- 
 title: "Skapa en ny layout för lagerställe"
 description: "I den här proceduren visas hur du ställer in information om platserna i ett lagerställe."
 author: perlynne
 manager: AnnBe
-ms.date: 11/14/2016
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: InventParameters, DefaultDashboard, InventLocation, WMSLocationWizard
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: perlynne
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
 ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
 ms.openlocfilehash: 253440d81edd6f71b52ae349398e3c6a895bf05c
@@ -49,7 +50,7 @@ I den här proceduren visas hur du ställer in information om platserna i ett la
 7. Växla utökningen av avsnittet Platsnamn.
     * Alternativen i detta avsnitt definierar standardformatet på platsnamn. I vårt exempel ska vi inkludera gångnummer, ställningsnummer och hyllnummer.  
 8. Ange alternativet Inkludera gång som Ja.
-9. Ange alternativet Inkludera ställning som Ja.
+9. Ange alternativet Inkludera ställning som Ja. 
 10. I fältet Format skriver du in ett värde för ställningen.
     * Exempel: -##  
 11. Ange alternativet Inkludera hylla som Ja.
@@ -74,4 +75,5 @@ I den här proceduren visas hur du ställer in information om platserna i ett la
 14. Klicka på Avsluta.
 15. Stäng sidan.
 16. Uppdatera sidan.
+
 

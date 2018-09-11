@@ -3,23 +3,24 @@ title: "Registrera och bokför en efterdaterad check för en leverantör"
 description: "Du kan registrera informationen om en efterdaterad check innan du utfärdar checken till en leverantör genom att använda bokföringsordern."
 author: kweekley
 manager: AnnBe
-ms.date: 10/31/2017
+ms.date: 8/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: LedgerJournalTable, LedgerJournalTransVendPaym
 audience: Application User
-ms.reviewer: shylaw
-ms.search.scope: Operations
+ms.reviewer: twheeloc
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: kweekley
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 632b04848cdb6d71e7e7dbd6c6bc710d0577950a
-ms.openlocfilehash: 776121532c42fde8b1c3e29b4af0bf833952c0cd
+ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
+ms.openlocfilehash: dd1c9d29d34e51a479d4df4086e97269f71f7448
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/01/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 # <a name="register-and-post-a-postdated-check-for-a-vendor"></a>Registrera och bokför en efterdaterad check för en leverantör
@@ -34,7 +35,7 @@ ställ in efterdaterade checkar på sidan Kassa- och bankhantering.
 
 Rollen för den här uppgiftsguiden är Kassaförvaltare. I den här uppgiften används demonstrationsföretaget USMF.
 
-1. Gå till Leverantörsreskontra > Betalningar > Betalningsjournal.
+1. Gå till Leverantörsreskontra > Betalningar > Betalningsjournal
 2. Klicka på Ny.
 3. Skriv ”VendPay” i fältet Namn.
 4. Klicka på Rader.
