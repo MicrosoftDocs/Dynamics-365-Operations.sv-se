@@ -3,7 +3,7 @@ title: Skapa en organisationshierarki.
 description: "Använd följande procedur för att skapa en organisationshierarki."
 author: sericks007
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

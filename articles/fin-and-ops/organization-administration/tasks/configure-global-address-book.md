@@ -3,7 +3,7 @@ title: Konfigurera den globala adressboken
 description: "Använd den här proceduren för att ange de förvalda värdena och säkerhetpolicyerna för globala adressboken."
 author: kfend
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Lägg till i din resultatjournal och skicka beröm till någon"
 description: "Resultatjournalen innehåller information som är relaterad till hur du uppfyller dina mål eller hur du har presterat under en period."
 author: ShielaSogge
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

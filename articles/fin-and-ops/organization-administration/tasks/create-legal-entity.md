@@ -3,7 +3,7 @@ title: Skapa en juridisk person
 description: "En juridisk person är en organisation som identifieras genom registrering med en juridisk myndighet."
 author: sericks007
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

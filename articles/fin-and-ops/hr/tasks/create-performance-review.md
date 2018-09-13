@@ -3,7 +3,7 @@ title: "Skapa en resultatöversyn"
 description: "I den här proceduren visas hur du skapar en resultatgranskning och beskriver syftet för varje del av granskningen."
 author: kherr75
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
