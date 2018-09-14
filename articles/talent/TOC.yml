@@ -6,6 +6,8 @@
       items:
         - name: Nyheter och ändringar
           items:
+            - name: Nyheter och ändringar i Dynamics 365 for Talent Core HR (augusti 2018)
+              href: whats-new-talent-august2018.md
             - name: Nyheter och ändringar i Dynamics 365 for Talent Core HR (juli 2018)
               href: whats-new-talent-july2018.md
         - name: Systemkrav och uppdateringspolicy
@@ -16,9 +18,9 @@
           href: remove-talent-environment.md
         - name: Etablering för de modulära Talent-apparna
           href: modular-app-tech-faq.md
-        - name: Utöka funktionaliteten i Talent
-          href: extend-talent-functionality.md
-        - name: Få åtkomst till förhandsgranskningsfunktioner
+        - name: Bädda in PowerApps-appar
+          href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: Få åtkomst till förhandsfunktioner
           href: access-preview-feature.md
         - name: Konfigurera löneintegration mellan Talent och Dayforce
           href: configure-payroll-integration.md
@@ -72,7 +74,7 @@
       items:
         - name: Hantera artiklar utlånade till arbetare
           href: loan-items.md
-    - name: Samla information med enkäter
+    - name: Samla in information med enkäter
       href: questionnaires.md
       items:
         - name: Utforma enkäter

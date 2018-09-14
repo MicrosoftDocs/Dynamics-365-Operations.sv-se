@@ -99,8 +99,6 @@
       href: call-center-functionality.md
     - name: Kundtjänstkataloger
       href: call-center-catalogs.md
-    - name: Skapa en kundtjänstkatalog
-      href: create-call-center-catalogs.md
     - name: Konfigurera leveranslägen och avgifter
       href: configure-call-center-delivery.md
     - name: Ställa in och arbeta med bedrägerivarningar
@@ -133,6 +131,8 @@
       href: MPOS-or-CPOS.md
     - name: Kassaåtgärder online och offline
       href: pos-operations.md
+    - name: Enhetsaktivering av en anpassad Retail Modern POS
+      href: dev-itpro/retail-POS-activation-changes.md
     - name: Demodataskärmlayouter i MPOS och molnbaserad kassa
       href: demo-data.md
     - name: Produkt- och kundsökning i kassan

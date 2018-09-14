@@ -3,7 +3,7 @@ title: "Skapa en kanban-regel för uttag"
 description: "I den här proceduren visas de inställningar som behövs om du vill skapa en kanban-regel för uttag för överföring av material i en resurssnål miljö."
 author: ChristianRytt
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: crytt
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: b0c1f0f4ea3035ffb7c5a12c83c12a132cc65fd5
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: a77c66b64512274f2703543293c2f48f2df2acf5
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="create-a-withdrawal-kanban-rule"></a><span data-ttu-id="6297c-103">Skapa en kanban-regel för uttag</span><span class="sxs-lookup"><span data-stu-id="6297c-103">Create a withdrawal kanban rule</span></span>

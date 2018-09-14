@@ -3,7 +3,7 @@ title: "Ställ in automatisk fraktavstämning"
 description: "Denna procedur visar hur du ställer in data för automatisk fraktavstämning."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: 6cbcc9ad54a1c10621b04315e8295c3049567450
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 00412771c21c7f8ab0edc55b7d7121b7ec615415
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="set-up-automatic-freight-reconciliation"></a><span data-ttu-id="d4895-103">Ställ in automatisk fraktavstämning</span><span class="sxs-lookup"><span data-stu-id="d4895-103">Set up automatic freight reconciliation</span></span>

@@ -3,7 +3,7 @@ title: " Bearbeta justeringar av förmånsbelöningspoäng"
 description: "Den här proceduren visar hur du söker efter information om lojalitetskort och justerar förmånsbelöningspoäng."
 author: scott-tucker
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: scotttuc
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: e6ed175991f1a694254c25d031575c51e4d6d0f6
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 85aaa82bf56d55c69f39bab49682c79f51247251
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="process-loyalty-reward-point-adjustments"></a><span data-ttu-id="ff008-103"> Bearbeta justeringar av förmånsbelöningspoäng</span><span class="sxs-lookup"><span data-stu-id="ff008-103">Process loyalty reward point adjustments</span></span>

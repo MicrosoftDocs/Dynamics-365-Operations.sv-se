@@ -3,7 +3,7 @@ title: "Ställ in företagets bankkonton för ISO20022-kreditöverföringar"
 description: "I den här proceduren visas hur du ställer in företagsspecifik bankkontoinformation som krävs för att generera betalningsfilen."
 author: mrolecki
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: mrolecki
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: 83fdc82aca43b1252b6c4da4529fb69406c3a2aa
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 2a84408ea24e4221b041782b681c2a2bf1bd8436
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="set-up-company-bank-accounts-for-iso20022-credit-transfers"></a><span data-ttu-id="c565e-103">Ställ in företagets bankkonton för ISO20022-kreditöverföringar</span><span class="sxs-lookup"><span data-stu-id="c565e-103">Set up company bank accounts for ISO20022 credit transfers</span></span>

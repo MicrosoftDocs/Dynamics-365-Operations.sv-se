@@ -3,7 +3,7 @@ title: "Ändra webbannonsen eller logotypen"
 description: "Följande procedur visar de steg som systemadministratörer kan använda för att uppdatera webbannons- eller logotypbilden som visas för en juridisk person."
 author: aneesmsft
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: aneesa
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: 50303f683518762290d7c3a63244b846d708e044
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: ed0a4e31e840f771f1620b42518ed0e03dbad151
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="change-the-banner-or-logo"></a><span data-ttu-id="14a57-103">Ändra webbannonsen eller logotypen</span><span class="sxs-lookup"><span data-stu-id="14a57-103">Change the banner or logo</span></span>

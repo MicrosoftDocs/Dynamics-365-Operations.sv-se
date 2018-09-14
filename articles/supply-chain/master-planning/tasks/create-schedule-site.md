@@ -3,7 +3,7 @@ title: "Skapa en tidsplan för en plats"
 description: "I den här proceduren visas hur du tidsplanerar tillverkningsorder som ännu inte har startat för en site."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: a33ef9e60c7aca13f745441c825362cdee52f9ea
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 54bb2532534d5567239dad4fab7fd74fa50d2826
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="create-a-schedule-for-a-site"></a><span data-ttu-id="5f2c1-103">Skapa en tidsplan för en plats</span><span class="sxs-lookup"><span data-stu-id="5f2c1-103">Create a schedule for a site</span></span>

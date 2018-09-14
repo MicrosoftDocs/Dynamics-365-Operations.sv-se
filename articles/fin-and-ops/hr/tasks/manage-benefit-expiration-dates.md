@@ -3,7 +3,7 @@ title: "Hantera utgångsdatum för förmån"
 description: "I den här proceduren visas hur du kan säga upp eller förlänga en förmån och hantera registreringdatum för arbetare som är anmälda till förmånen."
 author: ShielaSogge
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: shielas
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 32d71167fdad65cb1dec37671999a497759ca484
-ms.openlocfilehash: a06022ba097341066c2b44ce8b14ac990a41a088
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: c256dc54a2f28889ce328b5c09ba19e6d67eb6b6
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/11/2018
+ms.lasthandoff: 09/14/2018
 
 ---
 # <a name="manage-benefit-expiration-dates"></a><span data-ttu-id="a6f4a-103">Hantera utgångsdatum för förmån</span><span class="sxs-lookup"><span data-stu-id="a6f4a-103">Manage benefit expiration dates</span></span>
