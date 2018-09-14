@@ -19,10 +19,10 @@ ms.author: shpandey
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
-ms.openlocfilehash: 5a950a100fd5e9026300ea08eb1a6311a8e63129
+ms.sourcegitcommit: 033c9bdfce0840e1af1c63708905aec6829bbe90
+ms.openlocfilehash: 7a1d3c73e4305375ddf356b93b9502b0255df99b
 ms.contentlocale: sv-se
-ms.lasthandoff: 08/07/2018
+ms.lasthandoff: 09/13/2018
 
 ---
 
@@ -44,11 +44,13 @@ ms.lasthandoff: 08/07/2018
 
 ## <a name="adding-a-new-credit-card"></a><span data-ttu-id="672bc-117">Lägg till ett nytt kreditkort</span><span class="sxs-lookup"><span data-stu-id="672bc-117">Adding a new credit card</span></span>
 <span data-ttu-id="672bc-118">Du kan skapa nya kreditkortsposter på sidan Kunder, genom att använda Kund, Inställning, Kreditkort.</span><span class="sxs-lookup"><span data-stu-id="672bc-118">You can create new credit card records on the Customers page by using Customer, Set up, Credit card.</span></span> <span data-ttu-id="672bc-119">Du kan också skapa kreditkortsposter när du registrerar försäljningsorder på sidan Försäljningsorder, genom att använda Hantera, Kund, Kreditkort, Register.</span><span class="sxs-lookup"><span data-stu-id="672bc-119">You can also create credit card records when you enter sales orders on the Sales order page, by using Manage, Customer, Credit card, Register.</span></span>
-<span data-ttu-id="672bc-120">Lägg till ett kreditkort till en försäljningsorder</span><span class="sxs-lookup"><span data-stu-id="672bc-120">Adding a credit card to a sales order</span></span>
+
+<a name="adding-a-credit-card-to-a-sales-order"></a><span data-ttu-id="672bc-120">Lägg till ett kreditkort till en försäljningsorder</span><span class="sxs-lookup"><span data-stu-id="672bc-120">Adding a credit card to a sales order</span></span>
 -------------------------------------
 
 <span data-ttu-id="672bc-121">Du kan lägga till ett kreditkort till en försäljningsorder, genom att välja ett kreditkort i kreditkortuppslagningen på snabbfliken Pris och rabatter på sidan Försäljningsorder.</span><span class="sxs-lookup"><span data-stu-id="672bc-121">You can add a credit card to a sales order by selecting a credit card in the credit card lookup on the Price and discounts FastTab on the Sales order page.</span></span> <span data-ttu-id="672bc-122">Om du vill starta behörighetsprocessen, väljer du kreditkort och godkänna i åtgärdsfönstret på fliken Hantera.</span><span class="sxs-lookup"><span data-stu-id="672bc-122">To start the authorization process, on the Action Pane, on the Manage tab, select Credit card and Authorize.</span></span>
-<span data-ttu-id="672bc-123">Kreditkortskontroll</span><span class="sxs-lookup"><span data-stu-id="672bc-123">Authorizing a credit card</span></span>
+
+<a name="authorizing-a-credit-card"></a><span data-ttu-id="672bc-123">Kreditkortskontroll</span><span class="sxs-lookup"><span data-stu-id="672bc-123">Authorizing a credit card</span></span>
 -------------------------
 
 <span data-ttu-id="672bc-124">När ett kreditkort auktoriseras verifieras kortnumret och kortinnehavarens namn, och det tillgängliga kreditsaldot bekräftas.</span><span class="sxs-lookup"><span data-stu-id="672bc-124">When a credit card is authorized, the card number and cardholder's name are verified, and the available credit balance is confirmed.</span></span> <span data-ttu-id="672bc-125">Du kan även verifiera cvv-kod och kortinnehavarens adress verifieras.</span><span class="sxs-lookup"><span data-stu-id="672bc-125">Optionally, the card verification value and the cardholder’s address are verified.</span></span> <span data-ttu-id="672bc-126">Kundens tillgängliga kreditsaldo minskas med beloppet på fakturan.</span><span class="sxs-lookup"><span data-stu-id="672bc-126">The customer's available credit balance is then reduced by the amount of the invoice.</span></span> <span data-ttu-id="672bc-127">Betaltjänsten skickar information om att kreditkortet har godkänts eller avvisats.</span><span class="sxs-lookup"><span data-stu-id="672bc-127">The payment service sends information that the credit card has been approved or declined.</span></span> <span data-ttu-id="672bc-128">När en försäljningsorder faktureras, debiteras kreditkortet (samlats in) med fakturabeloppet.</span><span class="sxs-lookup"><span data-stu-id="672bc-128">When the sales order is invoiced, the credit card is charged (captured) for the invoice amount.</span></span>
