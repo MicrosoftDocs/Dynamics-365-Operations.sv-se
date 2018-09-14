@@ -153,10 +153,12 @@
       items:
         - name: Arkitektur för Finance and Operations
           href: imp-lifecycle/architecture-overview.md
-        - name: Microsoft FastTrack för Finance and Operations
+        - name: Microsoft FastTrack for Finance and Operations
           href: get-started/fasttrack-dynamics-365-overview.md
         - name: Integrera ett implementeringsprojekt
           href: imp-lifecycle/onboard.md
+        - name: Miljöplanering
+          href: imp-lifecycle/environment-planning.md
         - name: Förbereda publicering
           href: imp-lifecycle/prepare-go-live.md
         - name: Frågor och svar om publicering
@@ -460,6 +462,8 @@
               href: ../financials/accounts-payable/set-up-generate-positive-pay-files.md
             - name: Standardmotkonton för leverantörsfakturajournaler och fakturagodkännandejournaler
               href: ../financials/accounts-payable/default-offset-accounts-vendor-invoice-journals.md
+            - name: Arbetsflöde för leverantör
+              href: ../financials/accounts-payable/vendor-workflow.md
             - name: Åtgärda avvikelser under matchning av fakturasummor
               href: ../financials/accounts-payable/resolve-invoice-totals-invoice-matching-discrepancies.md
               items:
@@ -471,16 +475,22 @@
               href: ../financials/cash-bank-management/foreign-currency-revaluation-accounts-payable-accounts-receivable.md
             - name: Mobila fakturagodkännanden
               href: ../financials/accounts-payable/mobile-invoice-approvals.md
-            - name: Arbetsyta för leverantörssamarbetesfakturering
+            - name: Arbetsyta för leverantörssamarbetsfakturering
               href: ../financials/accounts-payable/vendor-portal-invoicing-workspace.md
             - name: Automation av leverantörsfaktura
               href: ../financials/accounts-payable/vendor-invoice-automation.md
+            - name: Kontraktshantering med mäklare
+              href: ../financials/accounts-payable/broker-contract.md
+            - name: Hantering av royaltykontrakt
+              href: ../financials/accounts-payable/royalty-contract.md
             - name: Betalningar och kvittningar
               items:
                 - name: Centraliserade leverantörsreskontrabetalningar
                   href: ../financials/accounts-payable/centralized-payments-accounts-payable.md
                 - name: Konfigurera kvittning
                   href: ../financials/cash-bank-management/configure-settlement.md
+                - name: Översikt över leverantörsbetalning
+                  href: ../financials/cash-bank-management/tasks/vendor-payment-overview.md
                 - name: Arbetsyta för leverantörsbetalningar
                   href: ../financials/accounts-payable/vendor-payments-workspace.md
                 - name: Ange en växlingskurs
@@ -513,6 +523,8 @@
                   href: ../financials/accounts-payable/take-discount-more-calculated-discount-vendor-payment.md
                 - name: Leverantörsbetalningar för ett delbelopp
                   href: ../financials/accounts-payable/vendor-payments-partial-amount.md
+                - name: Listsida för leverantörstransaktioner
+                  href: ../financials/accounts-payable/vendor-transaction-list-page.md
         - name: Kundreskontra
           href: ../financials/accounts-receivable/accounts-receivable.md
           items:
@@ -522,6 +534,8 @@
               href: ../financials/accounts-receivable/accounts-receivables-set-up-overview.md
             - name: Ställa in kredit och inkasso
               href: ../financials/accounts-receivable/set-up-collections.md
+            - name: Granska inkasseringsinformation
+              href: ../financials/accounts-receivable/tasks/review-collections-information.md
             - name: Ställ in och bearbeta återkommande fakturor
               href: ../financials/accounts-receivable/set-up-process-recurring-invoices.md
             - name: Redovisningsfördelningar och reskontrajournalposter för fritextfakturor
@@ -540,52 +554,54 @@
               href: ../financials/accounts-receivable/create-free-text-invoice-template-new.md
             - name: Korrigera en fritextfaktura
               href: ../financials/accounts-receivable/correct-free-text-invoice.md
+            - name: Tilldela en mall för fritextfaktura till en kund
+              href: ../financials/accounts-receivable/tasks/assign-free-text-invoice-template-customer.md
+            - name: Generera och bokför återkommande fritextfakturor
+              href: ../financials/accounts-receivable/tasks/post-recurring-free-text-invoices.md
+            - name: Skapa fakturor för försäljningsorder
+              href: ../financials/accounts-receivable/tasks/create-sales-order-invoices.md
             - name: Ställa in räntesatser för en räntekod
               href: ../financials/accounts-receivable/set-up-interest-rates-interest-code.md
             - name: 'Avstå, återinföra eller återföra ränteavgifter'
               href: ../financials/accounts-receivable/waive-reinstate-reverse-interest-fees.md
+            - name: Beräkna ränta
+              href: ../financials/accounts-receivable/tasks/process-interest.md
+            - name: Ställ in leverantörsfakturapolicyer
+              href: ../financials/accounts-receivable/tasks/set-up-vendor-invoice-policies.md
+            - name: Registrera leverantörsfakturan och matcha mot mottagen kvantitet
+              href: ../financials/accounts-receivable/tasks/record-vendor-invoice-match-against-received-quantity.md
             - name: Skapa en kundfaktura
               href: ../financials/accounts-receivable/configure-customer-invoices.md
+            - name: Sätta in kundbetalningar
+              href: ../financials/accounts-receivable/tasks/deposit-customer-payments.md
             - name: Upprätta villkor för kundbetalning
               href: ../financials/general-ledger/tasks/establish-customer-payment-terms.md
+            - name: Upprätta en betalningsmetod för kund
+              href: ../financials/accounts-receivable/tasks/establish-customer-method-payment.md
+            - name: Upprätta avgifter för kundbetalning
+              href: ../financials/accounts-receivable/tasks/establish-customer-payment-fees.md
             - name: Ställ in växlar
               href: ../financials/accounts-receivable/set-up-bills-exchange.md
             - name: Stäng kundreskontra
               href: ../financials/accounts-receivable/close-accounts-receivable.md
-            - name: Uppgifter för kundreskontra
-              items:
-                - name: Tilldela en mall för fritextfaktura till en kund
-                  href: ../financials/accounts-receivable/tasks/assign-free-text-invoice-template-customer.md
-                - name: Skapa in en kravbrevsserie
-                  href: ../financials/accounts-receivable/tasks/create-collection-letter-sequence.md
-                - name: Skapa en räntekod med ett intervall
-                  href: ../financials/accounts-receivable/tasks/create-interest-code-range.md
-                - name: Skapa fakturor för försäljningsorder
-                  href: ../financials/accounts-receivable/tasks/create-sales-order-invoices.md
-                - name: Skapa en avskrivningsjournal för en kund
-                  href: ../financials/accounts-receivable/tasks/create-write-off-journal-customer.md
-                - name: Sätta in kundbetalningar
-                  href: ../financials/accounts-receivable/tasks/deposit-customer-payments.md
-                - name: Upprätta en betalningsmetod för kund
-                  href: ../financials/accounts-receivable/tasks/establish-customer-method-payment.md
-                - name: Upprätta avgifter för kundbetalning
-                  href: ../financials/accounts-receivable/tasks/establish-customer-payment-fees.md
-                - name: Generera och bokför återkommande fritextfakturor
-                  href: ../financials/accounts-receivable/tasks/post-recurring-free-text-invoices.md
-                - name: Bearbeta kravbrev
-                  href: ../financials/accounts-receivable/tasks/process-collection-letters.md
-                - name: Beräkna ränta
-                  href: ../financials/accounts-receivable/tasks/process-interest.md
-                - name: Registrera leverantörsfakturan och matcha mot mottagen kvantitet
-                  href: ../financials/accounts-receivable/tasks/record-vendor-invoice-match-against-received-quantity.md
-                - name: Granska inkasseringsinformation
-                  href: ../financials/accounts-receivable/tasks/review-collections-information.md
-                - name: Ställ in och generera åldersfördelningsinformation för kundreskontra
-                  href: ../financials/accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
-                - name: Ställ in leverantörsfakturapolicyer
-                  href: ../financials/accounts-receivable/tasks/set-up-vendor-invoice-policies.md
+            - name: Skapa in en kravbrevsserie
+              href: ../financials/accounts-receivable/tasks/create-collection-letter-sequence.md
+            - name: Bearbeta kravbrev
+              href: ../financials/accounts-receivable/tasks/process-collection-letters.md
+            - name: Skapa ett autogiromedgivande för en kund
+              href: ../financials/accounts-receivable/tasks/create-direct-debit-mandate-customer.md
+            - name: Skapa en räntekod med ett intervall
+              href: ../financials/accounts-receivable/tasks/create-interest-code-range.md
+            - name: Skapa en avskrivningsjournal för en kund
+              href: ../financials/accounts-receivable/tasks/create-write-off-journal-customer.md
+            - name: Ställ in och generera åldersfördelningsinformation för kundreskontra
+              href: ../financials/accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
+            - name: Kundarbetsflöde
+              href: ../financials/accounts-receivable/customer-workflow.md
             - name: Betalningar och kvittningar
               items:
+                - name: Översikt över kundbetalning
+                  href: ../financials/cash-bank-management/tasks/customer-payment-overview.md
                 - name: Använda en kundbetalning för att kvitta flera fakturor som omfattar flera rabattperioder
                   href: ../financials/accounts-receivable/customer-payment-settle-multiple-invoices-multiple-discount-periods.md
                 - name: Centraliserade kundreskontrabetalningar
@@ -602,6 +618,8 @@
                   href: ../financials/accounts-receivable/reimburse-customers.md
                 - name: Kundbetalningar för ett delbelopp
                   href: ../financials/accounts-receivable/customer-payments-partial-amount.md
+                - name: Listsida för kundtransaktioner
+                  href: ../financials/accounts-receivable/customer-transactions-list-page.md
         - name: Budgetering
           href: ../financials/budgeting/budgeting-overview.md
           items:
@@ -638,18 +656,44 @@
               href: ../financials/cash-bank-management/cash-discounts.md
             - name: Kassarabatter för överbetalningar
               href: ../financials/cash-bank-management/cash-discount-handling-overpayments.md
+            - name: Hantera validering av IBAN-konton
+              href: ../financials/cash-bank-management/iban-validation.md
             - name: Kvittningsöversikt
               href: ../financials/cash-bank-management/settlement-overview.md
             - name: Kvittningsöversikt för centraliserade betalningar
               href: ../financials/cash-bank-management/settlement-overview-centralized-payments.md
             - name: Remburser
               href: ../financials/cash-bank-management/letters-of-credit.md
+            - name: Skapa ett kreditlimitavtal för en remburs
+              href: ../financials/cash-bank-management/tasks/create-bank-facility-agreement-letter-credit.md
+            - name: Ställ in bankkreditlimiter och bokföringsprofiler för en remburs
+              href: ../financials/cash-bank-management/tasks/set-up-bank-facilities-posting-profiles-letter-credit.md
             - name: Remburser och importinkasso
               href: ../financials/cash-bank-management/letters-of-credit-import-collections.md
+            - name: Exportera en remburs
+              href: ../financials/cash-bank-management/tasks/export-letter-credit.md
+            - name: Importera en remburs
+              href: ../financials/cash-bank-management/tasks/import-letter-credit.md
             - name: Garantier
               href: ../financials/cash-bank-management/letters-of-guarantee.md
+            - name: Garantitransaktion
+              href: ../financials/cash-bank-management/tasks/letter-guarantee-transaction.md
+            - name: Skapa ett kreditlimitavtal för en garanti
+              href: ../financials/cash-bank-management/tasks/create-bank-facility-agreement-letter-guarantee.md
+            - name: Ställ in bankkreditlimiter och bokföringsprofiler för garanti
+              href: ../financials/cash-bank-management/tasks/set-up-bank-facilities-posting-profiles.md
             - name: Efterdaterade checkar
               href: ../financials/cash-bank-management/postdated-checks.md
+            - name: Ställ in efterdaterade checkar
+              href: ../financials/cash-bank-management/tasks/set-up-postdated-checks.md
+            - name: Registrera och bokför en efterdaterad check för en kund
+              href: ../financials/cash-bank-management/tasks/register-post-postdated-check-customer.md
+            - name: Registrera och bokför en efterdaterad check för en leverantör
+              href: ../financials/cash-bank-management/tasks/register-post-postdated-check-vendor.md
+            - name: Kvitta en efterdaterad check från en kund
+              href: ../financials/cash-bank-management/tasks/settle-postdated-check-customer.md
+            - name: Kvitta en efterdaterad check för en leverantör
+              href: ../financials/cash-bank-management/tasks/settle-postdated-check-vendor.md
             - name: Förskottsfakturor kontra förskottsbetalningar
               href: ../financials/accounts-payable/prepayments-invoices-vs-prepayments.md
             - name: Hantera kassarabatter för överbetalningar
@@ -658,36 +702,6 @@
               href: ../financials/cash-bank-management/set-up-centralized-payments.md
             - name: Automatisk kvittning och prioritering
               href: ../financials/accounts-receivable/automatic-settlement-prioritization.md
-            - name: Uppgifter för kassa- och bankhantering
-              items:
-                - name: Skapa ett kreditlimitavtal för en remburs
-                  href: ../financials/cash-bank-management/tasks/create-bank-facility-agreement-letter-credit.md
-                - name: Skapa ett kreditlimitavtal för en garanti
-                  href: ../financials/cash-bank-management/tasks/create-bank-facility-agreement-letter-guarantee.md
-                - name: Översikt över kundbetalning
-                  href: ../financials/cash-bank-management/tasks/customer-payment-overview.md
-                - name: Exportera en remburs
-                  href: ../financials/cash-bank-management/tasks/export-letter-credit.md
-                - name: Importera en remburs
-                  href: ../financials/cash-bank-management/tasks/import-letter-credit.md
-                - name: Garantitransaktion
-                  href: ../financials/cash-bank-management/tasks/letter-guarantee-transaction.md
-                - name: Registrera och bokför en efterdaterad check för en kund
-                  href: ../financials/cash-bank-management/tasks/register-post-postdated-check-customer.md
-                - name: Registrera och bokför en efterdaterad check för en leverantör
-                  href: ../financials/cash-bank-management/tasks/register-post-postdated-check-vendor.md
-                - name: Kvitta en efterdaterad check från en kund
-                  href: ../financials/cash-bank-management/tasks/settle-postdated-check-customer.md
-                - name: Kvitta en efterdaterad check för en leverantör
-                  href: ../financials/cash-bank-management/tasks/settle-postdated-check-vendor.md
-                - name: Ställ in bankkreditlimiter och bokföringsprofiler för garanti
-                  href: ../financials/cash-bank-management/tasks/set-up-bank-facilities-posting-profiles.md
-                - name: Ställ in bankkreditlimiter och bokföringsprofiler för en remburs
-                  href: ../financials/cash-bank-management/tasks/set-up-bank-facilities-posting-profiles-letter-credit.md
-                - name: Ställ in efterdaterade checkar
-                  href: ../financials/cash-bank-management/tasks/set-up-postdated-checks.md
-                - name: Översikt över leverantörsbetalning
-                  href: ../financials/cash-bank-management/tasks/vendor-payment-overview.md
             - name: Avancerad bankavstämning
               items:
                 - name: Inställningsuppgifter för avancerad bankavstämning
@@ -817,6 +831,14 @@
         - name: Anläggningstillgångar
           href: ../financials/fixed-assets/fixed-assets.md
           items:
+            - name: Skapa en anläggningstillgång
+              href: ../financials/fixed-assets/tasks/create-fixed-asset.md
+            - name: Ange ett tillägg till en anläggningstillgång
+              href: ../financials/fixed-assets/tasks/enter-addition-fixed-asset.md
+            - name: Föreslå förvärv av anläggningstillgång
+              href: ../financials/fixed-assets/tasks/propose-fixed-asset-acquisitions.md
+            - name: Omklassificera anläggningstillgångar
+              href: ../financials/fixed-assets/tasks/reclassify-fixed-assets.md
             - name: Arbetsyta för anläggningstillgångar
               href: ../financials/fixed-assets/fixed-asset-management-workspace.md
             - name: Uppdateringsrapport över anläggningstillgångar
@@ -833,10 +855,20 @@
               href: ../financials/fixed-assets/post-fixed-asset-transactions-posting-layers.md
             - name: Alternativ för transaktion för anläggningstillgång
               href: ../financials/fixed-assets/enter-fixed-asset-transactions.md
+            - name: Överföra en anläggningstillgång
+              href: ../financials/fixed-assets/tasks/transfer-fixed-asset.md
+            - name: Dela en anläggningstillgång
+              href: ../financials/fixed-assets/tasks/split-fixed-asset.md
+            - name: Ställ in anläggningstillgångsgrupper
+              href: ../financials/fixed-assets/tasks/set-up-fixed-asset-groups.md
+            - name: Ändra en anläggningstillgångsgrupp
+              href: ../financials/fixed-assets/tasks/change-fixed-asset-group.md
             - name: Räkna om ersättningskostnader och försäkrade värden för anläggningstillgångsgrupper
               href: ../financials/fixed-assets/recalculate-replacement-costs-insured-values-fixed-asset-groups.md
             - name: Bokföringskonton för avyttring av anläggningstillgång
               href: ../financials/fixed-assets/fixed-asset-disposal-posting-accounts.md
+            - name: Avyttra en anläggningstillgång med hjälp av en fritextfaktura
+              href: ../financials/fixed-assets/tasks/dispose-fixed-asset-free-text-invoice.md
             - name: Massuppdatering av anläggningstillgång
               href: ../financials/fixed-assets/fixed-asset-mass-update.md
             - name: Skaffa tillgångar genom anskaffning
@@ -845,8 +877,18 @@
               items:
                 - name: Ställa in anläggningstillgångar
                   href: ../financials/fixed-assets/set-up-fixed-assets.md
+                - name: Ställ in bokföringsprofiler för anläggningstillgångar
+                  href: ../financials/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md
                 - name: Integrering av anläggningstillgångar
                   href: ../financials/fixed-assets/fixed-asset-integration.md
+                - name: Skapa och anskaffa tillgångar från leverantörsreskontra
+                  href: ../financials/fixed-assets/tasks/create-acquire-assets-accounts-payable.md
+                - name: 'Ställ in avskrivningsregler '
+                  href: ../financials/fixed-assets/tasks/set-up-depreciation-books-2016-05.md
+                - name: Ställ in och skapa avskrivningsprofiler
+                  href: ../financials/fixed-assets/tasks/set-up-depreciation-profiles.md
+                - name: Ställ in värdemodeller
+                  href: ../financials/fixed-assets/tasks/set-up-value-models.md
             - name: Avskrivningsmetoder
               items:
                 - name: Avskrivningspraxis
@@ -861,18 +903,26 @@
                   href: ../financials/fixed-assets/200-percent-reducing-balance-depreciation.md
                 - name: Bonusavskrivning
                   href: ../financials/fixed-assets/bonus-depreciation.md
+                - name: Ställ in bonusavskrivning
+                  href: ../financials/fixed-assets/tasks/set-up-bonus-depreciation.md
                 - name: Förbrukningsavskrivning
                   href: ../financials/fixed-assets/consumption-depreciation.md
                 - name: Avskrivningseffekter med återföringar
                   href: ../financials/fixed-assets/depreciation-effects-reversals.md
                 - name: Avskrivningsmetoder och praxis
                   href: ../financials/fixed-assets/depreciation-methods-conventions.md
+                - name: Skapa ett avskrivningsförslag
+                  href: ../financials/fixed-assets/tasks/create-depreciation-proposal.md
                 - name: Faktoravskrivning
                   href: ../financials/fixed-assets/factor-depreciation.md
                 - name: Bokföringskonton för anskaffning av anläggningstillgång
                   href: ../financials/fixed-assets/fixed-asset-acquisition-posting-accounts.md
                 - name: Avskrivning av anläggningstillgång
                   href: ../financials/fixed-assets/fixed-asset-depreciation.md
+                - name: Beräkna avskrivning av anläggningstillgången över juridiska personer
+                  href: ../financials/fixed-assets/tasks/calculate-fixed-asset-depreciation-legal-entities.md
+                - name: Ändra avskrivningspraxis för flera anläggningstillgångar
+                  href: ../financials/fixed-assets/tasks/change-depreciation-conventions-multiple-fixed-assets.md
                 - name: Manuell avskrivning
                   href: ../financials/fixed-assets/manual-depreciation.md
                 - name: Minska balans för avskrivning
@@ -883,44 +933,6 @@
                   href: ../financials/fixed-assets/straight-line-life-remaining-depreciation.md
                 - name: Linjär avskrivning av tjänstelivstid
                   href: ../financials/fixed-assets/straight-line-service-life-depreciation.md
-            - name: Uppgifter för anläggningstillgångar
-              items:
-                - name: Beräkna avskrivning av anläggningstillgången över juridiska personer
-                  href: ../financials/fixed-assets/tasks/calculate-fixed-asset-depreciation-legal-entities.md
-                - name: Ändra avskrivningspraxis för flera anläggningstillgångar
-                  href: ../financials/fixed-assets/tasks/change-depreciation-conventions-multiple-fixed-assets.md
-                - name: Ändra en anläggningstillgångsgrupp
-                  href: ../financials/fixed-assets/tasks/change-fixed-asset-group.md
-                - name: Skapa och anskaffa tillgångar från leverantörsreskontra
-                  href: ../financials/fixed-assets/tasks/create-acquire-assets-accounts-payable.md
-                - name: Skapa ett avskrivningsförslag
-                  href: ../financials/fixed-assets/tasks/create-depreciation-proposal.md
-                - name: Skapa en anläggningstillgång
-                  href: ../financials/fixed-assets/tasks/create-fixed-asset.md
-                - name: Avyttra en anläggningstillgång med hjälp av en fritextfaktura
-                  href: ../financials/fixed-assets/tasks/dispose-fixed-asset-free-text-invoice.md
-                - name: Ange ett tillägg till en anläggningstillgång
-                  href: ../financials/fixed-assets/tasks/enter-addition-fixed-asset.md
-                - name: Föreslå förvärv av anläggningstillgång
-                  href: ../financials/fixed-assets/tasks/propose-fixed-asset-acquisitions.md
-                - name: Omklassificera anläggningstillgångar
-                  href: ../financials/fixed-assets/tasks/reclassify-fixed-assets.md
-                - name: Ställ in bonusavskrivning
-                  href: ../financials/fixed-assets/tasks/set-up-bonus-depreciation.md
-                - name: 'Ställ in avskrivningsregler '
-                  href: ../financials/fixed-assets/tasks/set-up-depreciation-books-2016-05.md
-                - name: Ställ in och skapa avskrivningsprofiler
-                  href: ../financials/fixed-assets/tasks/set-up-depreciation-profiles.md
-                - name: Ställ in anläggningstillgångsgrupper
-                  href: ../financials/fixed-assets/tasks/set-up-fixed-asset-groups.md
-                - name: Ställ in bokföringsprofiler för anläggningstillgångar
-                  href: ../financials/fixed-assets/tasks/set-up-fixed-asset-posting-profiles.md
-                - name: Ställ in värdemodeller
-                  href: ../financials/fixed-assets/tasks/set-up-value-models.md
-                - name: Dela en anläggningstillgång
-                  href: ../financials/fixed-assets/tasks/split-fixed-asset.md
-                - name: Överföra en anläggningstillgång
-                  href: ../financials/fixed-assets/tasks/transfer-fixed-asset.md
         - name: Redovisning
           href: ../financials/general-ledger/general-ledger.md
           items:
@@ -948,7 +960,14 @@
                   href: ../financials/general-ledger/tasks/create-account-structures.md
                 - name: Skapa periodiseringsscheman
                   href: ../financials/general-ledger/tasks/create-accrual-schemes.md
-                - name: Skapa konsolideringsgrupper och ytterligare konsolideringskonton
+                - name: Ekonomisk konsolidering och valutaregistrering
+                  href: ../financials/general-ledger/financial-consolidations-currency-translation.md
+                  items:
+                    - name: Konsolidera online
+                      href: ../financials/general-ledger/consolidate-online.md
+                    - name: Generera konsoliderade bokslut
+                      href: ../financials/general-ledger/generating-consolidated-financial-statements.md
+                - name: Skapa konsolideringsgrupper och ytterligare konsolideringskonto
                   href: ../financials/general-ledger/tasks/create-consolidation-groups.md
                 - name: Huvudkontotyper
                   href: ../financials/general-ledger/main-account-types.md
@@ -1073,22 +1092,40 @@
           items:
             - name: Plan för funktioner för offentlig sektor
               href: ../financials/public-sector/plan-public-sector-functionality.md
+            - name: Skapa baksida och signatursidor för en betalningsrapport för offentliga sektorn
+              href: ../financials/public-sector/tasks/create-cover-signature-pages-payments-report-public-sector.md
             - name: Leverantörsreskontra i offentlig sektor
               href: ../financials/public-sector/accounts-payable-public-sector.md
               items:
                 - name: Inköpsorderkoder i offentlig sektor
                   href: ../financials/public-sector/purchase-order-codes-public-sector.md
+                - name: Skapa och tilldela en handelspartnerskod i den offentliga sektorn
+                  href: ../financials/public-sector/tasks/create-assign-trading-partner-code-public-sector.md
                 - name: Bokföringsdefinitioner i offentlig sektor
                   href: ../financials/public-sector/posting-definitions-public-sector.md
-                - name: Planera för engångsleverantörer i offentlig sektor
-                  href: ../financials/public-sector/plan-one-time-vendors-public-sector.md
                 - name: Engångsleverantörer i offentlig sektor
                   href: ../financials/public-sector/one-time-vendors-public-sector.md
+                - name: Skapa en engångsleverantör och faktura för den offentliga sektorn
+                  href: ../financials/public-sector/tasks/create-one-time-vendor-invoice-public-sector.md
+                - name: Skapa en leverantörscertifieringstyp i den offentliga sektorn
+                  href: ../financials/public-sector/tasks/create-vendor-certification-type-public-sector.md
+                - name: Importera och skapa flera engångsleverantörer och fakturor för offentliga sektorn
+                  href: ../financials/public-sector/tasks/import-multiple-one-time-vendors.md
+                - name: Planera för engångsleverantörer i offentlig sektor
+                  href: ../financials/public-sector/plan-one-time-vendors-public-sector.md
+                - name: Kontrollera åtkomsten till inköpsavtal i den offentliga sektorn
+                  href: ../financials/public-sector/tasks/control-access-purchase-agreements-public-sector.md
+                - name: Ställ in klassificeringar för inköpsavtal i den offentliga sektorn
+                  href: ../financials/public-sector/tasks/set-up-purchase-agreement-classifications-public-sector.md
             - name: Kundreskontra i offentlig sektor
               href: ../financials/public-sector/accounts-receivable-public-sector.md
               items:
                 - name: Faktureringsklassificeringar och faktureringskoder i offentlig sektor
                   href: ../financials/public-sector/billing-classifications-billing-codes-public-sector.md
+                - name: Skapa en faktureringsklassificering i den offentliga sektorn
+                  href: ../financials/public-sector/tasks/create-billing-classification-public-sector.md
+                - name: Skapa en faktureringskod för den offentliga sektorn
+                  href: ../financials/public-sector/tasks/create-billing-code-public-sector.md
                 - name: Betalningsprioritet i offentlig sektor
                   href: ../financials/public-sector/settlement-priority-public-sector.md
                 - name: Fritextfakturor i offentlig sektor
@@ -1098,10 +1135,16 @@
             - name: Budgetering i offentlig sektor
               href: ../financials/public-sector/budgeting-public-sector.md
               items:
+                - name: Skapa en ursprunglig budget och återföra preliminära budgetposter i den offentliga sektorn
+                  href: ../financials/public-sector/tasks/create-original-budget.md
+                - name: Skapa en preliminär budget för offentliga sektorn
+                  href: ../financials/public-sector/tasks/create-preliminary-budget-public-sector.md
                 - name: Budgetanalys i offentlig sektor
                   href: ../financials/public-sector/budget-analysis-public-sector.md
                 - name: Preliminära budgetar och fördelningar i offentlig sektor
                   href: ../financials/public-sector/preliminary-budgets-apportionments-public-sector.md
+                - name: Skapa en utfästelse för att reservera budgetmedel för den offentliga sektorn
+                  href: ../financials/public-sector/tasks/create-commitment-reserve-budget-funds-public-sector.md
             - name: Anläggningstillgångar i offentlig sektor
               href: ../financials/public-sector/fixed-asset-public-sector.md
             - name: Redovisning i offentlig sektor
@@ -1109,52 +1152,26 @@
               items:
                 - name: Avancerade redovisningsposter i offentlig sektor
                   href: ../financials/public-sector/advanced-ledger-entries-public-sector.md
+                - name: Skapa en avancerad redovisningspost i den offentliga sektorn
+                  href: ../financials/public-sector/tasks/create-advanced-ledger-entry-public-sector.md
                 - name: Årsslutsbearbetning i offentlig sektor
                   href: ../financials/public-sector/year-end-processing-public-sector.md
                 - name: Härledda ekonomiska hierarkier i offentlig sektor
                   href: ../financials/public-sector/derived-financial-hierarchies-public-sector.md
+                - name: Ställ in en härledd ekonomisk hierarki i den offentliga sektorn
+                  href: ../financials/public-sector/tasks/set-up-derived-financial-hierarchy-public-sector.md
             - name: Anskaffning och källor i offentlig sektor
               href: ../financials/public-sector/procurement-sourcing-public-sector.md
             - name: Säkerhetsroller i offentlig sektor
               href: ../financials/public-sector/security-roles-public-sector.md
             - name: Medel i offentlig sektor
               href: ../financials/public-sector/funds-public-sector.md
-            - name: Uppgifter för offentlig sektor
-              items:
-                - name: Lägga till en leverantörscertifieringstyp i den offentliga sektorn
-                  href: ../financials/public-sector/tasks/add-certification-type-vendor-public-sector.md
-                - name: Kontrollera åtkomsten till inköpsavtal i den offentliga sektorn
-                  href: ../financials/public-sector/tasks/control-access-purchase-agreements-public-sector.md
-                - name: Skapa en avancerad redovisningspost i den offentliga sektorn
-                  href: ../financials/public-sector/tasks/create-advanced-ledger-entry-public-sector.md
-                - name: Skapa och tilldela en handelspartnerskod i den offentliga sektorn
-                  href: ../financials/public-sector/tasks/create-assign-trading-partner-code-public-sector.md
-                - name: Skapa en faktureringsklassificering i den offentliga sektorn
-                  href: ../financials/public-sector/tasks/create-billing-classification-public-sector.md
-                - name: Skapa en faktureringskod för den offentliga sektorn
-                  href: ../financials/public-sector/tasks/create-billing-code-public-sector.md
-                - name: Skapa en utfästelse för att reservera budgetmedel för den offentliga sektorn
-                  href: ../financials/public-sector/tasks/create-commitment-reserve-budget-funds-public-sector.md
-                - name: Skapa baksida och signatursidor för en betalningsrapport för offentliga sektorn
-                  href: ../financials/public-sector/tasks/create-cover-signature-pages-payments-report-public-sector.md
-                - name: Skapa en fondtyp i den offentliga sektorn
-                  href: ../financials/public-sector/tasks/create-fund-type-public-sector.md
-                - name: Skapa en engångsleverantör och faktura för den offentliga sektorn
-                  href: ../financials/public-sector/tasks/create-one-time-vendor-invoice-public-sector.md
-                - name: Skapa en ursprunglig budget och återföra preliminära budgetposter i den offentliga sektorn
-                  href: ../financials/public-sector/tasks/create-original-budget.md
-                - name: Skapa en preliminär budget för offentliga sektorn
-                  href: ../financials/public-sector/tasks/create-preliminary-budget-public-sector.md
-                - name: Skapa en leverantörscertifieringstyp i den offentliga sektorn
-                  href: ../financials/public-sector/tasks/create-vendor-certification-type-public-sector.md
-                - name: Importera och skapa flera engångsleverantörer och fakturor för offentliga sektorn
-                  href: ../financials/public-sector/tasks/import-multiple-one-time-vendors.md
-                - name: Ställ in en härledd ekonomisk hierarki i den offentliga sektorn
-                  href: ../financials/public-sector/tasks/set-up-derived-financial-hierarchy-public-sector.md
-                - name: Ställ in en fond i offentliga sektorn
-                  href: ../financials/public-sector/tasks/set-up-fund-public-sector.md
-                - name: Ställ in klassificeringar för inköpsavtal i den offentliga sektorn
-                  href: ../financials/public-sector/tasks/set-up-purchase-agreement-classifications-public-sector.md
+            - name: Ställ in en fond i offentlig sektor
+              href: ../financials/public-sector/tasks/set-up-fund-public-sector.md
+            - name: Skapa en fondtyp i den offentliga sektorn
+              href: ../financials/public-sector/tasks/create-fund-type-public-sector.md
+            - name: Lägga till en leverantörscertifieringstyp i den offentliga sektorn
+              href: ../financials/public-sector/tasks/add-certification-type-vendor-public-sector.md
         - name: Ekonomisk rapportering
           href: ../financials/general-ledger/financial-reporting-getting-started.md
           items:
@@ -1188,316 +1205,320 @@
               href: ../dev-itpro/analytics/column-definitions-financial-reports.md?toc=/fin-and-ops/toc.json
             - name: Ändra raddefinitionsceller
               href: ../dev-itpro/analytics/modify-row-definition-cells-financial-reporting.md?toc=/fin-and-ops/toc.json
-            - name: Återställa datatorget för ekonomisk rapportering
+            - name: Återställa data mart för ekonomisk rapportering
               href: ../dev-itpro/analytics/reset-financial-reporting-datamart-after-restore.md?toc=/fin-and-ops/toc.json
     - name: Lokaliserings- och regelfunktioner
       href: ../dev-itpro/lcs-solutions/country-region.md?toc=/fin-and-ops/toc.json
       items:
-        - name: Asien-Stillahavsområdet
+        - name: Australien
+          href: ../financials/localizations/australia.md
           items:
-            - name: Australien
-              href: ../financials/localizations/australia.md
+            - name: Affärsaktivitetsrapport (BAS)
+              href: ../financials/localizations/apac-aus-business-activity-statement.md
+            - name: Lägga till rapportrutor och generera BAS
+              href: ../financials/localizations/tasks/add-bas-report-boxes.md
+            - name: Avskrivning för lågvärdespool
+              href: ../financials/localizations/apac-aus-low-value-pool-depreciation.md
+            - name: Ställ in orsakskoder för BAS
+              href: ../financials/localizations/tasks/set-up-reason-codes-australia-bas.md
+        - name: Österrike
+          href: ../financials/localizations/austria.md
+          items:
+            - name: Halvårsavskrivning för ytterligare anskaffningar
+              href: ../financials/localizations/emea-aut-half-year-depreciation.md
+            - name: Avgifter för förpackningsmaterial
+              href: ../financials/localizations/emea-aut-packing-material-fee-calculation.md
+            - name: Momsutdrag
+              href: ../financials/localizations/emea-aut-vat-statement-details.md
+        - name: Belgien
+          href: ../financials/localizations/belgium.md
+          items:
+            - name: CODA-bankutdrag
+              href: ../financials/localizations/emea-bel-coda-bank-statement-import.md
+            - name: Skapa och överföra transaktioner till BLWI
+              href: ../financials/localizations/tasks/be-00011-create-transfer-blwi.md
+            - name: INTERVAT-deklaration
+              href: ../financials/localizations/emea-bel-intervat-tax-declaration.md
+            - name: Avstämningsrapporter
+              href: ../financials/localizations/emea-bel-reconciliation-reports.md
+            - name: Ställ in rapportering av betalningsbalans
+              href: ../financials/localizations/tasks/be-00011-set-up-payment-balance-reporting.md
+            - name: Ställ in och underhåll PRODCOM
+              href: ../financials/localizations/emea-bel-prodcom-report.md
+        - name: Brasilien
+          href: ../financials/localizations/brazil.md
+          items:
+            - name: Lokaliseringens omfattning
+              href: ../financials/localizations/latam-bra-scope.md
+            - name: Skatteböcker
+              href: ../financials/localizations/latam-bra-fiscal-books.md
               items:
-                - name: Affärsaktivitetsrapport (BAS)
-                  href: ../financials/localizations/apac-aus-business-activity-statement.md
-                - name: Lägga till rapportrutor och generera BAS
-                  href: ../financials/localizations/tasks/add-bas-report-boxes.md
-                - name: Avskrivning för lågvärdespool
-                  href: ../financials/localizations/apac-aus-low-value-pool-depreciation.md
-                - name: Ställ in orsakskoder för BAS
-                  href: ../financials/localizations/tasks/set-up-reason-codes-australia-bas.md
-            - name: Kina
-              href: ../financials/localizations/china.md
+                - name: Konfigurera skatteböcker
+                  href: ../financials/localizations/latam-bra-configure-fiscal-books.md
+                - name: ICMS-skattedokument
+                  href: ../financials/localizations/latam-bra-icms-tax-fiscal-documents.md
+                - name: Importera skattedokument
+                  href: ../financials/localizations/latam-bra-import-fiscal-documents.md
+                - name: Exportera och importera transaktioner för juridisk person från redovisningskonsolidering
+                  href: ../financials/localizations/latam-bra-general-ledger-consolidation-transactions.md
+                - name: Importera och verifiera NF-e XML-dokument och DANFE-filer
+                  href: ../financials/localizations/latam-bra-import-verify-nf-e-xml-documents-danfe-emails.md
+                - name: Serva elektroniskt skattedokument med hjälp av textfiler
+                  href: ../financials/localizations/tasks/br00059-service-electronic-fiscal-document-text-files.md
+                - name: Bearbeta elektroniska betalningsremissor
+                  href: ../financials/localizations/latam-bra-process-electronic-payment-remittances.md
+                - name: Hantering av elektronisk betalning för leverantörsbetalningar
+                  href: ../financials/localizations/tasks/br-00067-electronic-payment-management-vendor-payments.md
+                - name: Skattedokument
+                  href: ../financials/localizations/latam-bra-fiscal-documents-fiscal-document-framework.md
+                - name: Platshållare för text i skattedokument
+                  href: ../financials/localizations/latam-bra-fiscal-document-text-placeholders.md
+                - name: Ställ in källtext för skattedokument
+                  href: ../financials/localizations/tasks/br-00001-2-set-up-fiscal-document-source-text.md
+                - name: Hantera text i skattedokument i anskaffningsdokument
+                  href: ../financials/localizations/tasks/br-00080-manage-fiscal-document-texts-procurement-documents.md
+                - name: Utfärda skattedokument för leverantörer
+                  href: ../financials/localizations/tasks/br-00033-issuing-fiscal-document-non-taxable-vendors.md
+                - name: Utfärda skattedokument för kunder
+                  href: ../financials/localizations/tasks/br-00038-issuing-customer-fiscal-document.md
+                - name: Kompletterande skattedokumentet för inköp
+                  href: ../financials/localizations/latam-bra-purchase-complementary-fiscal-documents.md
+                - name: Skapa och bokför ett kompletterande skattedokument för inköp
+                  href: ../financials/localizations/tasks/br-00026-1-create-post-purchase-complementary-fiscal-document.md
+                - name: Annullera ett kompletterande skattedokument för inköp
+                  href: ../financials/localizations/tasks/br-00026-2-cancel-purchase-complementary-fiscal-document.md
+                - name: Refererade skattedokument
+                  href: ../financials/localizations/latam-bra-referenced-fiscal-documents.md
+                - name: Mottagning av skattedokument för leverantörer (produkter)
+                  href: ../financials/localizations/tasks/br-00024-receiving-vendor-fiscal-document-products.md
+                - name: Mottagning av skattedokument för leverantörer (anläggningstillgångar - PIS och COFINS långsiktigt återbetalningsbar)
+                  href: ../financials/localizations/tasks/br-00014-receiving-vendor-fiscal-document-fixed-assets-pis-cofins-long-term-recoverable.md
+                - name: Mottagning av skattedokument för leverantörer (anläggningstillgångar - ICMS långsiktigt återbetalningsbar)
+                  href: ../financials/localizations/tasks/br-00082-receiving-vendor-fiscal-document-fixed-assets-icms-long-term-recoverable.md
+                - name: Utfärda skattedokument för kunder (tjänster)
+                  href: ../financials/localizations/tasks/br-00084-issuing-customer-fiscal-documents-services.md
+                - name: Utfärda skattedokument för kunder (anläggningstillgångar)
+                  href: ../financials/localizations/tasks/br-00085-issuing-customer-fiscal-documents-fixed-assets.md
+                - name: Utfärda skattedokument för kunder (projekt)
+                  href: ../financials/localizations/tasks/br-00086-issuing-customer-fiscal-documents-project.md
+                - name: Utfärda skattedokument för kunder (för slutanvändare)
+                  href: ../financials/localizations/tasks/br-00087-issuing-customer-fiscal-documents-end-user.md
+                - name: Utfärda skattedokument för kunder (för SUFRAMA-kunder)
+                  href: ../financials/localizations/tasks/br-00088-issuing-customer-fiscal-documents-suframa-customers.md
+                - name: Annullera ett skattedokument för kunder (projekt)
+                  href: ../financials/localizations/tasks/br-00092-cancel-customer-fiscal-document-project.md
+                - name: Kompletterande skattedokumentet för försäljning
+                  href: ../financials/localizations/latam-bra-sales-complementary-fiscal-documents.md
+                - name: Skapa och bokför ett kompletterande skattedokument för försäljning
+                  href: ../financials/localizations/tasks/br-00052-1-create-post-sales-complementary-fiscal-documents.md
+                - name: Annullera ett kompletterande skattedokument för försäljning
+                  href: ../financials/localizations/tasks/br-00052-2-cancel-sales-complementary-fiscal-document.md
+                - name: Serva skattedokument för tjänst
+                  href: ../financials/localizations/latam-bra-service-electronic-fiscal-document.md
+                - name: Journaler skapade under den elektroniska betalningsreturen
+                  href: ../financials/localizations/latam-bra-examples-journals-generated-electronic-payment-return-process.md
+                - name: Projektdebetfakturor
+                  href: ../financials/localizations/tasks/br-00076-project-debit-notes.md
+            - name: NF-e-process
+              href: ../financials/localizations/latam-bra-nf-e-process.md
               items:
-                - name: Jämförelse av strukturlista
-                  href: ../financials/localizations/apac-chn-bom-comparison.md
-                - name: Kinesisk hierarki för kontoplan
-                  href: ../financials/localizations/tasks/china-hierarchy-chart-accounts.md
-                - name: Kontinuitetskontroll för kinesisk verifikation
-                  href: ../financials/localizations/tasks/chinese-voucher-continuity-check.md
-                - name: Kinesiska verifikationer
-                  href: ../financials/localizations/apac-chn-vouchers.md
-                - name: Konfigurera momsintegrering
-                  href: ../financials/localizations/apac-chn-tax-integration.md
-                - name: Inställningar för export av Golden Tax-integrering
-                  href: ../financials/localizations/tasks/golden-tax-integration-export-setup.md
+                - name: Automatisk överföring av NF-e-skattedokument
+                  href: ../financials/localizations/tasks/br-00058-automatic-transmission-nf-e-fiscal-documents.md
+                - name: Generera e-postmeddelanden för godkänd NF-e och bifoga PDF-filer för DANFE och XML-filer för NF-e i e-postmeddelandena
+                  href: ../financials/localizations/tasks/br-00053-3-generate-emails-approved-nf-e-attach-danfe-pdf-files-nf-e-xml-files-emails.md
+                - name: NF-e-intyg
+                  href: ../financials/localizations/latam-bra-nfe-certs.md
+                - name: 'Ställ in, importera och verifiera NF-e XML-dokument och DANFE'
+                  href: ../financials/localizations/latam-bra-set-up-import-nfe.md
+                - name: Ställ in parametrar för federal NF-e
+                  href: ../financials/localizations/tasks/br-00053-1-set-up-nf-e-federal-parameters.md
+                - name: Ställ in NF-e-parametrar för en skattemyndighet
+                  href: ../financials/localizations/tasks/br-00053-2-set-up-nf-e-parameters-fiscal-establishment.md
+            - name: Parametrar för juridiska personer
+              href: ../financials/localizations/latam-bra-legal-entity-parameters.md
+            - name: Ställ in parametrar för juridisk person
+              href: ../financials/localizations/tasks/br-00001-1-set-up-brazil-legal-entity-parameters.md
+            - name: Förvärva en CIAP-anläggningstillgång
+              href: ../financials/localizations/latam-bra-ciap-fixed-asset.md
+            - name: Avyttra en CIAP-anläggningstillgång
+              href: ../financials/localizations/latam-bra-ciap-fixed-asset.md
+            - name: Ange en CIAP-transaktion
+              href: ../financials/localizations/tasks/br-10020-1-enter-ciap-transaction.md
+            - name: Beräkna CIAP-kreditbelopp
+              href: ../financials/localizations/tasks/br-10020-2-calculate-ciap-credit-amount.md
+            - name: Inkludera CIAP-kredit från föregående period
+              href: ../financials/localizations/tasks/br-10020-3-include-ciap-credit-from-previous-period.md
+            - name: Följesedlar
+              href: ../financials/localizations/tasks/br-00041-delivery-slip.md
+            - name: Andra åtgärder än skatteåtgärder
+              href: ../financials/localizations/tasks/br-10016-non-fiscal-operations.md
+            - name: Övriga avgifter på fritextfakturor
+              href: ../financials/localizations/tasks/br-00050-miscellaneous-charge-free-text-invoice.md
+            - name: Ställ in räntor och böter för leverantörsbetalningar
+              href: ../financials/localizations/tasks/br-00065-1-set-up-interest-fines-vendor-payments.md
+            - name: Beräkna räntor och böter på leverantörsbetalningar
+              href: ../financials/localizations/tasks/br-00065-2-calculate-interest-fines-vendor-payments.md
+            - name: Ställ in räntor och böter på kundbetalningar
+              href: ../financials/localizations/tasks/br-00066-1-set-up-interest-fines-customer-payments.md
+            - name: Beräkna räntor och böter på kundbetalningar
+              href: ../financials/localizations/tasks/br-00066-2-calculate-interest-fines-customer-payments.md
+            - name: Skatter
+              href: ../financials/localizations/latam-bra-calculate-taxes.md
+              items:
+                - name: Beräkna moms på inköpsrekvisitioner
+                  href: ../financials/localizations/tasks/br-00031-tax-calculation-purchase-quotation.md
+                - name: Skapa en momsvärdering - ICMS
+                  href: ../financials/localizations/tasks/br-10001-4-create-tax-assessment-icms.md
+                - name: Skapa en momsvärdering - IPI-moms
+                  href: ../financials/localizations/tasks/br-10004-2-create-tax-assessment-ipi-tax.md
+                - name: Skapa en momsvärdering - PIS- och COFINS-moms
+                  href: ../financials/localizations/tasks/br-10006-4-create-tax-assessment-pis-cofins-tax.md
+                - name: Ange och bokför momsjusteringstransaktioner
+                  href: ../financials/localizations/tasks/br-10001-3-enter-post-tax-adjustment-transactions.md
+                - name: Ange justeringstransaktioner för PIS- och COFINS-moms
+                  href: ../financials/localizations/tasks/br-10006-3-enter-pis-cofins-tax-adjustment-transactions.md
+                - name: Skattemyndighetens momsattribut
+                  href: ../financials/localizations/tasks/br-00002-fiscal-establishment-tax-attributes.md
+                - name: Utfärda skattedokument för ICMS-momskrediter
+                  href: ../financials/localizations/tasks/br-00072-issuing-icms-tax-credit-fiscal-document.md
+                - name: Utfärda skattedokument för överföring av ICMS-momskrediter
+                  href: ../financials/localizations/tasks/br-00071-issuing-icms-tax-credit-transfer-fiscal-document.md
+                - name: Ställ in justeringskoder för ICMS-moms
+                  href: ../financials/localizations/tasks/br-10001-1-set-up-adjustment-codes-icms-tax.md
+                - name: Ställ in justeringskoder för ICMS-moms på skattedokument
+                  href: ../financials/localizations/tasks/br-10001-2-set-up-adjustment-codes-icms-taxes-fiscal-documents.md
+                - name: Ställ in justeringskoder för IPI-moms
+                  href: ../financials/localizations/tasks/br-10004-1-set-up-adjustment-codes-ipi-taxes.md
+                - name: PIS- och COFINS-anläggningstillgångar
+                  href: ../financials/localizations/tasks/br-10020-4-pis-cofins-fixed-assets.md
+                - name: Ställ in justeringskoder för PIS- och COFINS-moms
+                  href: ../financials/localizations/tasks/br-10006-2-set-up-adjustment-codes-pis-cofins-taxes.md
+                - name: Ställ in PIS- och COFINS-register
+                  href: ../financials/localizations/tasks/br-10006-1-set-up-pis-cofins-tables.md
+                - name: Momsvärdering för ISS-moms
+                  href: ../financials/localizations/tasks/br-10005-tax-assessment-iss-tax.md
+                - name: Momsattribut
+                  href: ../financials/localizations/latam-bra-tax-attributes.md
+                - name: Momsbetalningar
+                  href: ../financials/localizations/latam-bra-tax-payments.md
+                - name: Moms på försäljningsofferter
+                  href: ../financials/localizations/tasks/br-00057-brazilian-taxes-sales-quotation.md
+                - name: 'Källskatter '
+                  href: ../financials/localizations/tasks/br-00009-brazilian-withholding-taxes.md
+                - name: Källskatter på kundbetalningar
+                  href: ../financials/localizations/tasks/br-00042-withholding-taxes-customers-payments.md
+                - name: Källskatter på leverantörsbetalningar
+                  href: ../financials/localizations/tasks/br-00061-withholding-taxes-vendors-payments.md
+        - name: Kina
+          href: ../financials/localizations/china.md
+          items:
+            - name: Jämförelse av strukturlista
+              href: ../financials/localizations/apac-chn-bom-comparison.md
+            - name: Kinesisk hierarki för kontoplan
+              href: ../financials/localizations/tasks/china-hierarchy-chart-accounts.md
+            - name: Kontinuitetskontroll för kinesisk verifikation
+              href: ../financials/localizations/tasks/chinese-voucher-continuity-check.md
+            - name: Kinesiska verifikationer
+              href: ../financials/localizations/apac-chn-vouchers.md
+            - name: Konfigurera momsintegrering
+              href: ../financials/localizations/apac-chn-tax-integration.md
+            - name: Inställningar för export av Golden Tax-integrering
+              href: ../financials/localizations/tasks/golden-tax-integration-export-setup.md
+            - name: Avskrivningsmetoder för anläggningstillgångar
+              href: ../financials/localizations/apac-chn-depreciation-methods-fixed-assets.md
+            - name: Importera datatabellen Chinese Golden Tax
+              href: ../financials/localizations/apac-chn-import-golden-tax-data-entity.md
+            - name: 'Månatlig, genomsnittlig kostnadsmodell'
+              href: ../financials/localizations/apac-chn-monthly-average-cost-model.md
+            - name: Bokför lagerhuvudkonton efter plats
+              href: ../financials/localizations/apac-chn-post-inventory-main-accounts-by-site.md
+            - name: Bokför verifikationer från andra moduler
+              href: ../financials/localizations/tasks/post-vouchers-other-modules-like-sales-invoices.md
+            - name: Bokför verifikationer från den allmänna journalen
+              href: ../financials/localizations/tasks/post-vouchers-general-journal.md
+            - name: Skapa grundläggande momsintegrationsprofil för Kina
+              href: ../financials/localizations/tasks/set-up-basic-tax-integration-profile-china.md
+            - name: Skapa kinesiska verifikationer
+              href: ../financials/localizations/tasks/set-up-chinese-vouchers.md
+            - name: Ställ in avskrivningsallokering för anläggningstillgångar
+              href: ../financials/localizations/tasks/fixed-asset-depreciation-allocation.md
+            - name: Visa debet- och kreditbelopp i redovisning
+              href: ../financials/localizations/apac-chn-negative-debits-credits.md
+            - name: Användaråtgärdslogg efter kinesiska arbetsregler
+              href: ../financials/localizations/tasks/user-operation-log-china-working-rule.md
+            - name: Vanliga frågor om momskundfakturor
+              href: ../financials/localizations/apac-chn-tax-integration-vat-customer-invoices.md
+        - name: Tjeckien
+          href: ../financials/localizations/czech-republic.md
+          items:
+            - name: Kreditfaktura för kassarabatt
+              href: ../financials/localizations/emea-cze-credit-note-cash-discount.md
+            - name: Anläggningstillgångar
+              items:
+                - name: Avrundning av avskrivning
+                  href: ../financials/localizations/emea-cze-depreciation-rounding.md
+                - name: Halvårsvis avskrivning vid avyttring av anläggningstillgångar
+                  href: ../financials/localizations/emea-cze-half-depreciation-fixed-asset-disposal.md
+                - name: Avskrivningsuppskjutning (helgdagar)
+                  href: ../financials/localizations/emea-cze-depreciation-suspension-holidays.md
                 - name: Avskrivningsmetoder för anläggningstillgångar
-                  href: ../financials/localizations/apac-chn-depreciation-methods-fixed-assets.md
-                - name: Importera datatabellen Chinese Golden Tax
-                  href: ../financials/localizations/apac-chn-import-golden-tax-data-entity.md
-                - name: 'Månatlig, genomsnittlig kostnadsmodell'
-                  href: ../financials/localizations/apac-chn-monthly-average-cost-model.md
-                - name: Bokför lagerhuvudkonton efter plats
-                  href: ../financials/localizations/apac-chn-post-inventory-main-accounts-by-site.md
-                - name: Bokför verifikationer från andra moduler
-                  href: ../financials/localizations/tasks/post-vouchers-other-modules-like-sales-invoices.md
-                - name: Bokför verifikationer från den allmänna journalen
-                  href: ../financials/localizations/tasks/post-vouchers-general-journal.md
-                - name: Skapa grundläggande momsintegrationsprofil för Kina
-                  href: ../financials/localizations/tasks/set-up-basic-tax-integration-profile-china.md
-                - name: Skapa kinesiska verifikationer
-                  href: ../financials/localizations/tasks/set-up-chinese-vouchers.md
-                - name: Ställ in avskrivningsallokering för anläggningstillgångar
-                  href: ../financials/localizations/tasks/fixed-asset-depreciation-allocation.md
-                - name: Visa debet- och kreditbelopp i redovisning
-                  href: ../financials/localizations/apac-chn-negative-debits-credits.md
-                - name: Användaråtgärdslogg efter kinesiska arbetsregler
-                  href: ../financials/localizations/tasks/user-operation-log-china-working-rule.md
-                - name: Vanliga frågor om momskundfakturor
-                  href: ../financials/localizations/apac-chn-tax-integration-vat-customer-invoices.md
-            - name: Indien
-              href: ../financials/localizations/india.md
-              items:
-                - name: Anläggningstillgångar
-                  href: ../financials/localizations/apac-ind-fixed-assets.md
-                  items:
-                    - name: Koppla en dagsbaserad kalender till en förteckning över anläggningstillgångar
-                      href: ../financials/localizations/tasks/apac-ind-attach-day-based-calendar.md
-                    - name: Beräkna skiftavskrivning
-                      href: ../financials/localizations/tasks/apac-ind-shift-depreciation-rates.md
-                    - name: Skapa en lagermodellgrupp för kapitalvaror
-                      href: ../financials/localizations/tasks/apac-ind-create-inventory-model-group.md
-                    - name: Skapa och bokföra avskrivning
-                      href: ../financials/localizations/apac-ind-calculate-post-depreciation.md
-                    - name: Definiera typ av växling och bransch för böcker och koppla till anläggningstillgång
-                      href: ../financials/localizations/tasks/apac-ind-books-shift-industry-types.md
-                    - name: Återföring av transaktioner för anläggningstillgångar
-                      href: ../financials/localizations/apac-ind-reverse-fixed-assets-transactions.md
-                    - name: Beräkning av skiftavskrivning
-                      href: ../financials/localizations/apac-ind-calculation-shift-depreciation.md
-                    - name: Ställ in en dagsbaserad räkenskapskalender
-                      href: ../financials/localizations/tasks/apac-ind-day-based-calendar.md
-                    - name: Ställ in parametrar för att beräkna avskrivningar
-                      href: ../financials/localizations/tasks/apac-ind-set-up-depreciation.md
-                    - name: Ställ in avskrivningsregel för tillgångsgrupp
-                      href: ../financials/localizations/tasks/apac-ind-set-up-asset-group-dep.md
-                    - name: Överför kapitalvaror till anläggningstillgången
-                      href: ../financials/localizations/tasks/apac-ind-transfer-capital-items.md
-                - name: 'GST (moms), Indien'
-                  href: ../financials/localizations/apac-ind-gst.md
-                  items:
-                    - name: 'Referensgrupper för GST (moms), Indien'
-                      href: ../financials/localizations/apac-ind-gst-reference-groups.md
-                    - name: GST-integration (moms) för kassaapparater
-                      href: ../retail/localizations/apac-ind-cash-registers.md?toc=/fin-and-ops/toc.json
-                - name: Riktlinjer för distribution av kassaapparater
-                  href: ../retail/localizations/apac-ind-loc-deployment-guidelines.md?toc=/fin-and-ops/toc.json
-                - name: Översikt över skattemotor
-                  href: ../financials/general-ledger/tax-engine.md
-                  items:
-                    - name: Integrering av skattemotor
-                      href: ../financials/general-ledger/tax-engine-integration.md
-                    - name: Bygg ut skattemotorn
-                      href: ../financials/general-ledger/extend-tax-engine-configurations.md
-                - name: Vanliga frågor och svar om tröskelvärden för moms
-                  href: ../financials/localizations/apac-ind-tax-thresholds.md
-            - name: Japan
-              href: ../financials/localizations/japan.md
-              items:
-                - name: Anskaffa en anläggningstillgång och begär statsbidragssubvention
-                  href: ../financials/localizations/tasks/acquire-fixed-asset-claim-government-grant-subsidy.md
-                - name: Anskaffa en anläggningstillgång med skyldigheter vid utrangering av tillgång
-                  href: ../financials/localizations/tasks/acquire-fixed-asset-asset-retirement-obligations.md
-                - name: Justering av uppskattningen av utrangering av en tillgång
-                  href: ../financials/localizations/tasks/adjustment-asset-retirement-obligation-estimate.md
-                - name: Fördela bärande belopp med gemensam tillgång och goodwill till kassagenererande enheter
-                  href: ../financials/localizations/tasks/allocate-carrying-amount.md
-                - name: Allokeringsregler
-                  href: ../financials/localizations/apac-jpn-allocation-rules-fixed-assets.md
-                - name: Bankbetalningsavgifter som täcks av leverantörer
-                  href: ../financials/localizations/apac-jpn-bank-payment-fees-vendors.md
-                - name: Ändra avskrivningsmetoden under tillgångens livstid för räkenskapsboken
-                  href: ../financials/localizations/tasks/change-depreciation-method-during-asset-life-book.md
-                - name: Ändra avskrivningsmetoden under tillgångens livstid för en tillgång
-                  href: ../financials/localizations/tasks/change-depreciation-method-during-asset-life-one-asset.md
-                - name: Konfigurera accelererade avskrivningsparametrar och bokföringsprofiler
-                  href: ../financials/localizations/tasks/accelerated-depreciation-posting-profiles.md
-                - name: Konfigurera konsoliderade fakturaparametrar och inställningar för leverantörsreskontra
-                  href: ../financials/localizations/tasks/consolidated-invoice-parameters-setup-accounts-payable.md
-                - name: Konfigurera avskrivningsprofilen och bokföringsprofilen för ytterligare avskrivning
-                  href: ../financials/localizations/tasks/configure-depreciation-profile-posting.md
-                - name: Konfigurera huvudkonton för bokföring av utrangering av anläggningstillgångar och marknadsdiskonteringsränta
-                  href: ../financials/localizations/tasks/configure-main-accounts-asset-retirement.md
-                - name: Konsoliderade fakturor
-                  href: ../financials/localizations/apac-jpn-consolidate-invoices.md
-                - name: Skapa en anläggningstillgång med ytterligare avskrivning
-                  href: ../financials/localizations/tasks/create-fixed-asset-additional-depreciation.md
-                - name: Skapa en profil för särskild avskrivning för anläggningstillgång
-                  href: ../financials/localizations/tasks/create-fixed-asset-special-depreciation-profile.md
-                - name: Skapa ett accelererat avskrivningsdokument och ange användningsdata
-                  href: ../financials/localizations/tasks/create-accelerated-depreciation-document-enter-usage-data.md
-                - name: Skapa en accelererad avskrivningsprofil och tilldela den till räkenskapsboken
-                  href: ../financials/localizations/tasks/create-accelerated-depreciation-profile-assign-it-book.md
-                - name: Skapa och tilldela ett avdragsregistreringsdokument för en statsbidragsubvention
-                  href: ../financials/localizations/tasks/create-assign-reduction-document.md
-                - name: Skapa och tilldela en utrustningsgrupp
-                  href: ../financials/localizations/tasks/create-assign-equipment-group.md
-                - name: Öppna och bekräfta en kundkonsoliderad faktura på nytt
-                  href: ../financials/localizations/tasks/create-confirm-customer-consolidated-invoice.md
-                - name: Skapa och bekräfta ett erkännandetest
-                  href: ../financials/localizations/tasks/create-confirm-recognition-test.md
-                - name: Öppna och bekräfta en leverantörskonsoliderad faktura på nytt
-                  href: ../financials/localizations/tasks/create-confirm-vendor-consolidated-invoice.md
-                - name: Skapa CGU-grupp och kassagenererande enheter
-                  href: ../financials/localizations/tasks/create-cgu-group-cash-generating-units.md
-                - name: Skapa engångsbeloppavskrivningstillgångar med hjälp av metoden dela lika
-                  href: ../financials/localizations/tasks/create-lump-sum-depreciation-assets-equally-divided-method.md
-                - name: Definiera den overksamma perioden för anläggningstillgångar och validera avskrivningsprocessen
-                  href: ../financials/localizations/tasks/define-asset-idle-period-validate-depreciation-process.md
-                - name: Skriva av och periodisera ränteutgiften för skyldigheter vid utrangering av tillgång
-                  href: ../financials/localizations/tasks/depreciate-accrue-interest-expense.md
-                - name: Avskrivning av anläggningstillgångar med den bokförda förminskningsposten
-                  href: ../financials/localizations/tasks/depreciation-fixed-assets-reduction-entry-posted.md
-                - name: Vanliga frågor och svar om avskrivning
-                  href: ../financials/localizations/apac-jpn-fixed-asset-depreciation.md
-                - name: Avyttra en anläggningstillgång med avdragsregistrering
-                  href: ../financials/localizations/tasks/dispose-fixed-asset-reduction-entry.md
-                - name: Aktivera JBA-betalningsfilformat
-                  href: ../financials/localizations/tasks/jba-payment-file-format.md
-                - name: Ange en tidsplan för avskrivning och associera till en avskrivningsprofil
-                  href: ../financials/localizations/tasks/enter-depreciation-rate-schedule.md
-                - name: Jämnt fördelad avskrivningsmetod
-                  href: ../financials/localizations/apac-jpn-equally-divided-depreciation-method.md
-                - name: Formulär 26 för avskrivbar momsdeklaration
-                  href: ../financials/localizations/tasks/jp-00027-form-26-depreciable-tax-declaration.md
-                - name: Generera en EFT-betalningsfil i JBA-format
-                  href: ../financials/localizations/tasks/eft-payment-file-jba-format.md
-                - name: Generera och bokför betalningsavgift
-                  href: ../financials/localizations/tasks/post-payment-fee.md
-                - name: Generera konsumtionsskatterapport
-                  href: ../financials/localizations/tasks/japan-consumption-tax-report.md
-                - name: Redovisning av nedskrivningar på CGU
-                  href: ../financials/localizations/apac-jpn-impairment-accounting-cash-generating-unit.md
-                - name: Redovisning av nedskrivningar
-                  href: ../financials/localizations/apac-jpn-impairment-accounting-fixed-assets.md
-                - name: Importera en kundbetalning med JBA-filformat
-                  href: ../financials/localizations/tasks/import-customer-payment-jba-file-format.md
-                - name: Importera postnummer
-                  href: ../financials/localizations/apac-jpn-import-postal-codes.md
-                - name: Inleveransjournal i T-kontoformulär
-                  href: ../financials/localizations/tasks/jp-00005-input-journal-t-account-form-japan.md
-                - name: Fråga om relaterade transaktioner till utrangering av tillgångar
-                  href: ../financials/localizations/tasks/inquiries-asset-retirement-obligation.md
-                - name: Fråga om avdragsgilla utgifter
-                  href: ../financials/localizations/tasks/inquiry-deductible-expenses.md
-                - name: Fråga om betalningsavgifter i en journal
-                  href: ../financials/localizations/tasks/inquiries-payment-fee-journal.md
-                - name: Underhålla avdragsgilla anläggningstillgångar huvuddatafiler för utgifter
-                  href: ../financials/localizations/tasks/maintain-fixed-asset-master-data-files-deductible-expenses.md
-                - name: Underhålla försämringsindikatorer för enskilda tillgångar
-                  href: ../financials/localizations/tasks/maintain-impairment-indicators-individual-assets.md
-                - name: Betala en leverantör genom att godkänna en växel
-                  href: ../financials/localizations/apac-jpn-endorse-bill-of-exchange.md
-                - name: Betala en leverantörstransaktion genom att skriva på en kundväxel
-                  href: ../financials/localizations/tasks/pay-vendor-transaction.md
-                - name: Periodisk kvittning av över- eller underavskrivning
-                  href: ../financials/localizations/tasks/periodic-settlement-over-under-depreciation.md
-                - name: Beräkning av progressiv källskatt
-                  href: ../financials/localizations/apac-jpn-progressive-withholding-tax-calculation.md
-                - name: Föreslå ytterligare avskrivning
-                  href: ../financials/localizations/tasks/propose-additional-depreciation.md
-                - name: Föreslå och bokför accelererad avskrivning
-                  href: ../financials/localizations/tasks/propose-post-accelerated-depreciation.md
-                - name: Föreslå och bokför nedskrivningsbeloppet efter batch
-                  href: ../financials/localizations/tasks/propose-post-impairment-amount-batch.md
-                - name: Föreslå och bokför nedskrivningsbeloppet genom att använda journal för anläggningstillgångar
-                  href: ../financials/localizations/tasks/propose-post-impairment-amount-fixed-asset-journal.md
-                - name: Föreslå och bokför nedskrivningsbeloppet på en kassagenererande enhet
-                  href: ../financials/localizations/tasks/propose-post-impairment-amount-cash-generating-unit.md
-                - name: Föreslå särskild avskrivning
-                  href: ../financials/localizations/tasks/propose-special-depreciation.md
-                - name: Öppna och redigera en kundkonsoliderad faktura på nytt
-                  href: ../financials/localizations/tasks/reopen-edit-customer-consolidated-invoice.md
-                - name: Öppna och redigera en leverantörskonsoliderad faktura på nytt
-                  href: ../financials/localizations/tasks/reopen-edit-vendor-consolidated-invoice.md
-                - name: Återför en signerad växel
-                  href: ../financials/localizations/tasks/reverse-endorsed-bill-exchange.md
-                - name: Kör redovisningstest och beräkna nedskrivningsbeloppet för enskilda tillgångar
-                  href: ../financials/localizations/tasks/run-recognition-test-calculate.md
-                - name: Ställ in en kund och en försäljningsorder som mål för konsoliderad faktura
-                  href: ../financials/localizations/tasks/set-up-customer-sales-order-target-consolidated-invoice.md
-                - name: Ställ in ARO
-                  href: ../financials/localizations/apac-jpn-asset-retirement-obligation-fixed-assets.md
-                - name: Ställ in dokument om skyldighet till utrangering av tillgångar och ange ARO-belopp för en anläggningstillgång
-                  href: ../financials/localizations/tasks/set-up-asset-retirement-obligation.md
-                - name: Ställ in konsoliderade fakturor
-                  href: ../financials/localizations/tasks/set-up-consolidated-invoices.md
-                - name: Ställ in vanliga parametrar för nedskrivningsredovisning och bokföringsprofil
-                  href: ../financials/localizations/tasks/impairment-accounting.md
-                - name: Ställ in rapport för japansk konsumtionsskatt
-                  href: ../financials/localizations/tasks/setup-japan-consumption-tax-report.md
-                - name: Ställ in betalning för Japan genom att skriva på en kundväxel
-                  href: ../financials/localizations/tasks/setup-japan-payment-endorsing-customer-bill-exchange.md
-                - name: Ställ in huvuddata för inkludering av avdragsgilla utgifter för flera bokföringsskikt
-                  href: ../financials/localizations/tasks/set-up-master-data-inclusion.md
-                - name: Ställ in betalningsavgift för Japan
-                  href: ../financials/localizations/tasks/setup-payment-fee-japan.md
-                - name: Ställ in avdragsposter
-                  href: ../financials/localizations/apac-jpn-reduction-entry-fixed-assets.md
-                - name: Ställ in leverantörshuvud och inköpsorder som mål för konsoliderad faktura
-                  href: ../financials/localizations/tasks/vendor-master-po.md
-                - name: Kvitta en signerad växel
-                  href: ../financials/localizations/tasks/settle-endorsed-bill-exchange.md
-                - name: Kvitta kundkonsoliderade fakturor med hjälp av en betalningsjournal
-                  href: ../financials/localizations/tasks/settle-customer-consolidated-invoices-payment-journal.md
-                - name: Kvitta kundkonsoliderade fakturor med hjälp av kvitteringstransaktioner
-                  href: ../financials/localizations/tasks/settle-customer-consolidated-invoices-settle-transactions.md
-                - name: Kvitta leverantörskonsoliderade fakturor med hjälp av en betalningsjournal
-                  href: ../financials/localizations/tasks/settle-vendor-consolidated-invoices-payment-journal.md
-                - name: Kvitta leverantörskonsoliderade fakturor med hjälp av kvitteringstransaktioner
-                  href: ../financials/localizations/tasks/settle-vendor-consolidated-invoices-settle-transactions.md
-                - name: Använd monteringslista för anläggningstillgångar
-                  href: ../financials/localizations/tasks/use-assemble-list-fixed-asset.md
-                - name: Använd demonteringslista för anläggningstillgångar
-                  href: ../financials/localizations/tasks/use-disassemble-list-fixed-assets.md
-            - name: Malaysia
-              href: ../financials/localizations/malaysia.md
-              items:
-                - name: Generera kundkredit för projektförsäljning
-                  href: ../financials/localizations/tasks/my-00011-03-customer-credit-note-project-sales.md
-                - name: Generera kunddebet för projektförsäljning
-                  href: ../financials/localizations/tasks/my-00011-02-customer-debit-note-project-sales-2016-11.md
-                - name: Moms för varor och tjänster (GST)
-                  href: ../financials/localizations/apac-mys-gst.md
-                - name: GST (moms) – Generera GAF-filer i nödvändigt format
-                  href: ../financials/localizations/tasks/my-00010-gst-gaf-files-required-format.md
-                - name: Hantera kunddebet och -kredit för GST (moms)
-                  href: ../financials/localizations/tasks/my-00003-manage-customer-debit-note-credit-note-gst.md
-                - name: Hantera leverantörsdebet och -kredit för GST (moms)
-                  href: ../financials/localizations/tasks/my-00004-manage-vendor-debit-note-credit-note-gst.md
-                - name: Skriva ut GST-kundfakturor (moms) med en lättnadssats
-                  href: ../financials/localizations/tasks/my-00006-02-print-gst-customer-invoices-relief-clause.md
-                - name: Skriva ut GST-momsfakturor
-                  href: ../financials/localizations/tasks/my-00005-print-gst-tax-invoices.md
-                - name: Självfakturerade fakturor
-                  href: ../financials/localizations/tasks/my-00007-self-billed-invoices.md
-                - name: Inställning av GST-lättnadssatser (moms)
-                  href: ../financials/localizations/tasks/my-00006-01-gst-relief-clauses.md
-            - name: Singapore
-              href: ../financials/localizations/singapore.md
-              items:
-                - name: Skapa GST-05-rapport (moms)
-                  href: ../financials/localizations/apac-sgp-generate-gst-05-report.md
-            - name: Thailand
-              href: ../financials/localizations/thailand.md
-              items:
-                - name: Lagerkortsrapporter
-                  href: ../financials/localizations/apac-tha-stock-card-reports.md
-                - name: Momsfaktura för ersättning/justering
-                  href: ../financials/localizations/apac-tha-substitution-and-adjustment-invoices.md
-                - name: Orealiserad moms
-                  href: ../financials/localizations/apac-tha-unrealized-vat.md
-                - name: Källskatt
-                  href: ../financials/localizations/apac-tha-withholding-tax.md
+                  href: ../financials/localizations/emea-cze-fixed-assets-depreciation.md
+                - name: Före anskaffningen
+                  href: ../financials/localizations/emea-pre-acquisition-acquisition-fixed-asset.md
+            - name: Bokför periodiska journaler
+              href: ../financials/general-ledger/tasks/post-periodic-journals.md
+            - name: Ställ in undertecknare för utskriftsformulär
+              href: ../financials/localizations/emea-set-up-signers-for-printing-forms.md
+            - name: Dela perioder i periodiska journaler
+              href: ../financials/localizations/emea-create-post-periodic-journals.md
+            - name: Uppdatera hur belopp visas i rapporter och dokument
+              href: ../financials/localizations/emea-amount-printing-forms.md
+            - name: Momsutdrag
+              href: ../financials/localizations/emea-cze-vat-statement-details.md
+            - name: Årsbokslut
+              href: ../financials/localizations/emea-cze-hun-year-end.md
+        - name: Danmark
+          href: ../financials/localizations/denmark.md
+          items:
+            - name: Tilldela ett betalningsblankettformat till ett kundkonto
+              href: ../financials/localizations/tasks/assign-payment-slip-format-customer-account.md
+            - name: Skapa och bokför en kundfaktura för en kund inom offentlig sektor
+              href: ../financials/localizations/tasks/create-post-customer-invoice-public-sector-customer.md
+            - name: Skapa och bokför en fritextfaktura för en kund inom offentlig sektor
+              href: ../financials/localizations/tasks/create-post-free-text-invoice-public-sector-customer.md
+            - name: Skapa och bokför en projektfaktura för en kund inom offentlig sektor
+              href: ../financials/localizations/tasks/create-post-project-invoice-public-sector-customer.md
+            - name: Importera elektronisk OIOUBL-faktureringskonfiguration
+              href: ../financials/localizations/tasks/import-oioubl-electronic-invoicing-configurations.md
+            - name: Bokför en fritextfaktura med betalningsblankett
+              href: ../financials/localizations/tasks/post-free-text-invoice-payment-slip.md
+            - name: Bokför en projektfaktura med betalningsblankett
+              href: ../financials/localizations/tasks/post-project-invoice-payment-slip.md
+            - name: Bokför en försäljningsfaktura med betalningsblankett
+              href: ../financials/localizations/tasks/post-sales-invoice-payment-slip.md
+            - name: Ställ in kundkonton för elektroniska OIOUBL-fakturor
+              href: ../financials/localizations/tasks/set-up-customer-accounts-oioubl-electronic-invoicing.md
+            - name: Ställ in elektroniska OIOUBL-fakturor
+              href: ../financials/localizations/tasks/set-up-oioubl-electronic-invoicing.md
+            - name: Ställ in format för betalningsblankett
+              href: ../financials/localizations/tasks/set-up-payment-slip-format.md
+        - name: Estland
+          href: ../financials/localizations/estonia.md
+          items:
+            - name: Begäran om personuppgifter
+              href: ../financials/localizations/emea-est-personal-info.md
+            - name: Momsutdrag
+              href: ../financials/localizations/emea-est-vat-statement-details.md
         - name: Europa
+          href: ../financials/localizations/europe.md
           items:
             - name: Förskottsmottagare
               href: ../financials/localizations/emea-advance-holders.md
               items:
                 - name: Transaktioner för förskottsmottagare
                   href: ../financials/localizations/emea-advance-holders-transactions.md
-            - name: Förskottsbetalning till en medarbetare (Östeuropa)
-              href: ../financials/localizations/tasks/advance-payment-employee.md
+                - name: Förskottsbetalning till en medarbetare (Östeuropa)
+                  href: ../financials/localizations/tasks/advance-payment-employee.md
             - name: Avancerad fakturering
               href: ../financials/localizations/emea-advance-invoice.md
             - name: Bankavstämning
@@ -1526,8 +1547,6 @@
               href: ../financials/localizations/emea-foreign-currency-revaluation.md
             - name: Generera ett överföringsdokument för en intern lageröverföring
               href: ../financials/localizations/tasks/transfer-document-internal-inventory-transfer.md
-            - name: Generera en EU Intrastat-deklaration
-              href: ../financials/localizations/tasks/eur-00002-eu-intrastat-declaration.md
             - name: Generera en rapport med lista över försäljning inom EU
               href: ../financials/localizations/tasks/eur-00011-eu-sales-list-report.md
             - name: ISO20022-filer
@@ -1550,13 +1569,17 @@
                   href: ../financials/localizations/tasks/set-up-bank-accounts-iso20022-direct-debits.md
                 - name: Ställ in leverantörer och leverantörsbankkonton för ISO20022-krediteringsöverföringar
                   href: ../financials/localizations/tasks/set-up-vendor-iso20022-credit-transfers.md
-                - name: Skapa och exportera leverantörbetalningar med ett ISO20022-betalningsformat
+                - name: Skapa och exportera leverantörsbetalningar med ett ISO20022-betalningsformat
                   href: ../financials/localizations/tasks/create-export-vendor-payments-iso20022-payment-format.md
             - name: Intrastat
               href: ../financials/localizations/emea-intrastat.md
               items:
                 - name: Överföra transaktioner till Intrastat
                   href: ../financials/localizations/tasks/transfer-transactions-intrastat.md
+                - name: Ange en fraktadress för en inomeuropeisk transaktion
+                  href: ../financials/localizations/tasks/eur-00002-specify-lading-address-intra-community.md
+                - name: Generera en EU Intrastat-deklaration
+                  href: ../financials/localizations/tasks/eur-00002-eu-intrastat-declaration.md
             - name: Lagerjournalrapporter
               href: ../financials/localizations/emea-set-up-report-inventory-journal-names.md
             - name: Tidsgränser för fakturautfärdande
@@ -1627,555 +1650,470 @@
                   href: ../financials/localizations/tasks/create-submit-vat-report.md
             - name: Visa transaktioner på kvittning
               href: ../financials/localizations/emea-transactions-settlement-form.md
-            - name: Österrike
-              href: ../financials/localizations/austria.md
-              items:
-                - name: Halvårsavskrivning för ytterligare anskaffningar
-                  href: ../financials/localizations/emea-aut-half-year-depreciation.md
-                - name: Avgifter för förpackningsmaterial
-                  href: ../financials/localizations/emea-aut-packing-material-fee-calculation.md
-                - name: Momsutdrag
-                  href: ../financials/localizations/emea-aut-vat-statement-details.md
-            - name: Belgien
-              href: ../financials/localizations/belgium.md
-              items:
-                - name: CODA-bankutdrag
-                  href: ../financials/localizations/emea-bel-coda-bank-statement-import.md
-                - name: Skapa och överföra transaktioner till BLWI
-                  href: ../financials/localizations/tasks/be-00011-create-transfer-blwi.md
-                - name: INTERVAT-deklaration
-                  href: ../financials/localizations/emea-bel-intervat-tax-declaration.md
-                - name: Avstämningsrapporter
-                  href: ../financials/localizations/emea-bel-reconciliation-reports.md
-                - name: 'Ställ in rapportering av betalningsbalans '
-                  href: ../financials/localizations/tasks/be-00011-set-up-payment-balance-reporting.md
-                - name: Ställ in och underhåll PRODCOM
-                  href: ../financials/localizations/emea-bel-prodcom-report.md
-            - name: Tjeckien
-              href: ../financials/localizations/czech-republic.md
-              items:
-                - name: Kreditfaktura för kassarabatt
-                  href: ../financials/localizations/emea-cze-credit-note-cash-discount.md
-                - name: Anläggningstillgångar
-                  items:
-                    - name: Avrundning av avskrivning
-                      href: ../financials/localizations/emea-cze-depreciation-rounding.md
-                    - name: Halvårsvis avskrivning vid avyttring av anläggningstillgångar
-                      href: ../financials/localizations/emea-cze-half-depreciation-fixed-asset-disposal.md
-                    - name: Avskrivningsuppskjutning (helgdagar)
-                      href: ../financials/localizations/emea-cze-depreciation-suspension-holidays.md
-                    - name: Avskrivningsmetoder för anläggningstillgångar
-                      href: ../financials/localizations/emea-cze-fixed-assets-depreciation.md
-                    - name: Före anskaffningen
-                      href: ../financials/localizations/emea-pre-acquisition-acquisition-fixed-asset.md
-                - name: Bokför periodiska journaler
-                  href: ../financials/general-ledger/tasks/post-periodic-journals.md
-                - name: Ställ in undertecknare för utskriftsformulär
-                  href: ../financials/localizations/emea-set-up-signers-for-printing-forms.md
-                - name: Dela perioder i periodiska journaler
-                  href: ../financials/localizations/emea-create-post-periodic-journals.md
-                - name: Uppdatera hur belopp visas i rapporter och dokument
-                  href: ../financials/localizations/emea-amount-printing-forms.md
-                - name: Momsutdrag
-                  href: ../financials/localizations/emea-cze-vat-statement-details.md
-                - name: Årsbokslut
-                  href: ../financials/localizations/emea-cze-hun-year-end.md
-            - name: Danmark
-              href: ../financials/localizations/denmark.md
-              items:
-                - name: Tilldela ett betalningsblankettformat till ett kundkonto
-                  href: ../financials/localizations/tasks/assign-payment-slip-format-customer-account.md
-                - name: Skapa och bokför en kundfaktura för en kund inom offentlig sektor
-                  href: ../financials/localizations/tasks/create-post-customer-invoice-public-sector-customer.md
-                - name: Skapa och bokför en fritextfaktura för en kund inom offentlig sektor
-                  href: ../financials/localizations/tasks/create-post-free-text-invoice-public-sector-customer.md
-                - name: Skapa och bokför en projektfaktura för en kund inom offentlig sektor
-                  href: ../financials/localizations/tasks/create-post-project-invoice-public-sector-customer.md
-                - name: Importera elektronisk OIOUBL-faktureringskonfiguration
-                  href: ../financials/localizations/tasks/import-oioubl-electronic-invoicing-configurations.md
-                - name: Bokför en fritextfaktura med betalningsblankett
-                  href: ../financials/localizations/tasks/post-free-text-invoice-payment-slip.md
-                - name: Bokför en projektfaktura med betalningsblankett
-                  href: ../financials/localizations/tasks/post-project-invoice-payment-slip.md
-                - name: Bokför en försäljningsfaktura med betalningsblankett
-                  href: ../financials/localizations/tasks/post-sales-invoice-payment-slip.md
-                - name: Ställ in kundkonton för elektroniska OIOUBL-fakturor
-                  href: ../financials/localizations/tasks/set-up-customer-accounts-oioubl-electronic-invoicing.md
-                - name: Ställ in elektroniska OIOUBL-fakturor
-                  href: ../financials/localizations/tasks/set-up-oioubl-electronic-invoicing.md
-                - name: Ställ in format för betalningsblankett
-                  href: ../financials/localizations/tasks/set-up-payment-slip-format.md
-            - name: Estland
-              href: ../financials/localizations/estonia.md
-              items:
-                - name: Begäran om personuppgifter
-                  href: ../financials/localizations/emea-est-personal-info.md
-                - name: Momsutdrag
-                  href: ../financials/localizations/emea-est-vat-statement-details.md
-            - name: Frankrike
-              href: ../financials/localizations/france.md
-              items:
-                - name: Offentlig sektor
-                  items:
-                    - name: Redovisning i offentlig sektor
-                      href: ../financials/localizations/emea-fra-public-sector-accounting.md
-                    - name: Utfästelser
-                      href: ../financials/localizations/emea-fra-commitments-public-sector.md
-                    - name: Mandats de paiement
-                      href: ../financials/localizations/emea-fra-mandats-de-paiement.md
-                    - name: Anskaffning och källa
-                      href: ../financials/localizations/emea-fra-procurement-sourcing-public-sector.md
-                    - name: Titres de recette
-                      href: ../financials/localizations/emea-fra-titres-de-recette-public-sector.md
-                    - name: Betalningsreservationer för leverantörsfakturor
-                      href: ../financials/localizations/emea-fra-vendor-invoice-payment-holds-public-sector.md
-                - name: Godkänn och bokför utställda växlar
-                  href: ../financials/localizations/tasks/fr-00004-approve-post-draw-bill-exchange.md
-                - name: Kronologiska fakturor och verifikationer
-                  href: ../financials/localizations/emea-fra-chronological-invoices-vouchers.md
-                - name: Skapa en standardverifieringsfil för Frankrike (FEC)
-                  href: ../financials/localizations/emea-fra-fec-audit-file.md
-                - name: Kontoutdrag för kund och leverantör
-                  href: ../financials/localizations/tasks/fr-00002-customer-vendor-account-statements.md
-                - name: Daglig ränteberäkning för sen betalning och engångsbelopp på faktura och kravbrev
-                  href: ../financials/localizations/tasks/fr-00018-daily-interest.md
-                - name: Nedsättningsavskrivning
-                  href: ../financials/localizations/emea-fra-derogatory-depreciation.md
-                - name: Franska växlar och skuldsedlar
-                  href: ../financials/localizations/tasks/fr-00004-french-bills-exchange-promissory-notes.md
-                - name: NAF-koder och siret-nummer
-                  href: ../financials/localizations/emea-fra-naf-codes-siret-numbers.md
-                - name: Ställa in NAF-koder och Siret-nummer
-                  href: ../financials/localizations/tasks/fr-00003-naf-codes-siret-numbers.md
-                - name: Avgifter för förfallna kundbetalningar
-                  href: ../financials/localizations/emea-fra-apply-penalty-customer-payment-past-due.md
-                - name: Bokför journal för utställda växlelprotester
-                  href: ../financials/localizations/tasks/fr-00004-post-protest-draw-bill-exchange-journal.md
-                - name: Bokför journalen för återutställda växlar
-                  href: ../financials/localizations/tasks/fr-00004-post-re-draw-bill-exchange-journal.md
-                - name: Skriv ut text för återbetalning av engångsbelopp på en kundfaktura
-                  href: ../financials/localizations/emea-fra-print-lump-sum-recovery-text.md
-                - name: RB/SL-avskrivning
-                  href: ../financials/localizations/emea-fra-rbsl-depreciation.md
-                - name: Skapa betalningsmetod
-                  href: ../financials/localizations/tasks/fr-00004-setup-method-payment.md
-                - name: Uppdatera betalningsmetod för kund
-                  href: ../financials/localizations/tasks/fr-00004-update-method-payment-customer.md
-                - name: Retail
-                  items:
-                    - name: Kassaapparater
-                      href: ../retail/localizations/emea-fra-cash-registers.md
-                    - name: Riktlinjer för distribution av kassaapparater
-                      href: ../retail/localizations/emea-fra-deployment.md
-            - name: Tyskland
-              href: ../financials/localizations/germany.md
-              items:
-                - name: Ytterligare förvärvsavskrivning
-                  href: ../financials/localizations/emea-deu-additional-acquisition-depreciation.md
-                - name: Verifieringsfil
-                  href: ../financials/localizations/emea-deu-gdpdu-audit-data-export.md
-                  items:
-                    - name: Anpassa konfiguration av verifieringsfil
-                      href: ../financials/localizations/tasks/customize-german-audit-file-configuration.md
-                    - name: Generera verifieringsfil
-                      href: ../financials/localizations/tasks/german-audit-file.md
-                    - name: Importera konfiguration av verifieringsfil
-                      href: ../financials/localizations/tasks/import-german-audit-file-configuration.md
-                - name: Avskrivningsjusteringar för ytterligare anskaffning under det andra året
-                  href: ../financials/localizations/tasks/de-00002-depreciation.md
-                - name: Överföring av elektronisk momsdeklaration (ELSTER)
-                  href: ../financials/localizations/tasks/de-00003-electronic-transmission-elster.md
-                - name: Journallisterapport
-                  href: ../financials/localizations/emea-deu-journal-list-report.md
-                - name: Ställa in elektroniska momsdeklarationer
-                  href: ../dev-itpro/analytics/tasks/setup-electronic-tax-declaration-germany.md?toc=/fin-and-ops/toc.json
-            - name: Ungern
-              href: ../financials/localizations/hungary.md
-              items:
-                - name: Beräkning av valutakurs
-                  href: ../financials/localizations/tasks/hu-00001-exchange-rate-calculation.md
-                - name: Avskrivningsmetoder för anläggningstillgångar
-                  href: ../financials/localizations/emea-hun-fixed-assets-depreciation-methods.md
-                - name: Fasta lågkostnadstillgångar
-                  href: ../financials/localizations/emea-hun-low-cost-fixed-assets.md
-                - name: Flytta en anläggningstillgång till lager
-                  href: ../financials/localizations/emea-hun-fixed-asset-to-inventory.md
-                - name: Dokument för återbetalning av moms
-                  href: ../financials/localizations/emea-hun-tax-reimbursement-docs.md
-                - name: Årsbokslut
-                  href: ../financials/localizations/emea-cze-hun-year-end.md
-            - name: Island
-              href: ../financials/localizations/iceland.md
-              items:
-                - name: Skapa ett leverantörskonto och bifoga fakturadeklarationskategorin
-                  href: ../financials/localizations/tasks/create-vendor-account-attach-invoice-declaration-category.md
-                - name: Ställ in en fakturadeklaration för leverantörer
-                  href: ../financials/localizations/tasks/set-up-invoice-declaration-vendors.md
-                - name: Ställ in obligatoriska betalningsreferenser
-                  href: ../financials/localizations/tasks/set-up-mandatory-payment-references.md
-                - name: Uppdatera leverantörsfakturadeklarationer och generera rapporten
-                  href: ../financials/localizations/tasks/update-vendor-invoice-declarations-report.md
-            - name: Italien
-              href: ../financials/localizations/italy.md
-              items:
-                - name: Momsutdragsinformation
-                  href: ../financials/localizations/emea-ita-vat-statements-details.md
-                - name: Rapport med svarta listan
-                  href: ../financials/localizations/emea-ita-black-list-report.md
-                - name: Bokföringsdatum
-                  href: ../financials/localizations/emea-ita-competence-date.md
-                - name: Avskrivning av anläggningstillgångar
-                  href: ../financials/localizations/emea-ita-depreciation-of-fixed-assets.md
-                - name: Modello 770
-                  href: ../financials/localizations/emea-ita-modello770.md
-                - name: Verifieringsdatum för följesedel för fakturor
-                  href: ../financials/localizations/emea-ita-packing-slip-date-verification-on-invoice.md
-                - name: Bokför och skriv ut en följesedel med leveransinformation för transport
-                  href: ../financials/localizations/emea-ita-packing-slip.md
-                - name: Momsböcker
-                  href: ../financials/localizations/emea-ita-fiscal-books.md
-                - name: Delbetalning av fakturor utfärdade till offentlig administration
-                  href: ../financials/localizations/emea-ita-split-payment-invoices-issued-public-administration.md
-                - name: Källskatt
-                  href: ../financials/localizations/emea-ita-withholding-tax.md
-            - name: Lettland
-              href: ../financials/localizations/latvia.md
-              items:
-                - name: Redovisning av anläggningstillgångar
-                  href: ../financials/localizations/emea-lva-fixed-assets-accounting.md
-                - name: Ändringsspårning av plats för anläggningstillgångar
-                  href: ../financials/localizations/emea-lva-fixed-assets-location-fields-change.md
-                - name: Numrering av fakturor och följesedlar
-                  href: ../financials/localizations/emea-invoices-packing-slips-numbering.md
-                - name: Rapport om skatt på naturtillgångar
-                  href: ../financials/localizations/emea-lva-tax-natural-resources.md
-                - name: Momsutdragsinformation
-                  href: ../financials/localizations/emea-lva-vat-statement-details.md
-            - name: Litauen
-              href: ../financials/localizations/lithuania.md
-              items:
-                - name: Utdrag reparation av anläggningstillgångar
-                  href: ../financials/localizations/emea-ltu-fixed-asset-repair-statement.md
-                - name: Skapa en anläggningstillgångsöverföring mellan lagerställesdokument
-                  href: ../financials/localizations/tasks/lt-00003-fixed-asset-transfer.md
-                - name: Numrering av fakturor och följesedlar
-                  href: ../financials/localizations/emea-invoices-packing-slips-numbering.md
-                - name: Momsutdragsinformation
-                  href: ../financials/localizations/emea-ltu-vat-statement-details.md
-            - name: Nederländerna
-              href: ../financials/localizations/netherlands.md
-              items:
-                - name: Elektroniska momsdeklarationer (EVAT)
-                  href: ../financials/localizations/tasks/nl-00010-electronic-tax-declarations-evat.md
-                - name: Semansys XBRL-integration
-                  href: ../financials/localizations/tasks/nl-00003-semansys-xbrl-integration.md
-            - name: Norge
-              href: ../financials/localizations/norway.md
-              items:
-                - name: Kund- och leverantörsbetalningsformat
-                  href: ../financials/localizations/tasks/no-00003-customer-vendor-payment-formats.md
-                - name: Kundbetalning baserat på betalnings-ID
-                  href: ../financials/localizations/tasks/no-00002-customer-payment-based-payment-id.md
-                - name: Nets-importformat
-                  href: ../financials/localizations/emea-nor-nets-import-format.md
-                - name: Momsutdrag
-                  href: ../financials/localizations/emea-nor-sales-tax-payment-report.md
-                - name: Kassaapparater
-                  href: ../retail/localizations/emea-nor-cash-registers.md?toc=/fin-and-ops/toc.json
-                - name: Riktlinjer för distribution av kassaapparater
-                  href: ../retail/localizations/emea-nor-loc-deployment-guidelines.md?toc=/fin-and-ops/toc.json
-            - name: Polen
-              href: ../financials/localizations/poland.md
-              items:
-                - name: Beräkna radrabatter från enhetspris
-                  href: ../financials/localizations/emea-pol-line-discount-calculation-from-unit-price.md
-                - name: Korrigeringsanteckningar
-                  href: ../financials/localizations/emea-pol-correction-notes.md
-                - name: Numrering av försäljningsfakturadubbletter
-                  href: ../financials/localizations/emea-pol-sales-invoice-duplicates-numbering.md
-                - name: Avskrivning av anläggningstillgång
-                  href: ../financials/localizations/emea-pol-fixed-assets-depreciation.md
-                - name: Funktionstillägget Avyttrande av anläggningstillgång
-                  href: ../financials/localizations/emea-pol-fixed-asset-disposal-functionality-extension.md
-                - name: Returförpackningar
-                  href: ../financials/localizations/emea-pol-returnable-packages.md
-                - name: Momsrapporter
-                  href: ../financials/localizations/emea-pol-sales-tax-reports.md
-                - name: Standardverifieringsfil
-                  href: ../financials/localizations/emea-pol-standard-audit-file-saf.md
-                - name: Skatteränta och frihandsränta
-                  href: ../financials/localizations/emea-pol-interest-calculation.md
-                - name: Omsättnings- och saldoutdrag
-                  href: ../financials/localizations/emea-pol-turnover-balances-statement.md
-            - name: Spanien
-              href: ../financials/localizations/spain.md
-              items:
-                - name: Tillämpa kassarabatt på fakturan
-                  href: ../financials/localizations/emea-esp-cash-discount-applied-invoice.md
-                - name: Alternativ för växel
-                  href: ../financials/localizations/emea-esp-bill-of-exchange-options.md
-                - name: Villkorsmoms
-                  href: ../financials/localizations/emea-esp-conditional-sales-tax.md
-                - name: Kreditfakturering
-                  href: ../financials/localizations/tasks/emea-esp-credit-invoicing.md
-                - name: Räkenskapsdata från fakturakontot
-                  href: ../financials/localizations/emea-esp-fiscal-data-invoice-account.md
-                - name: Omvärderingsgrupp för anläggningstillgångar
-                  href: ../financials/localizations/emea-esp-fixed-asset-group-revaluation.md
-                - name: Inomeuropeisk moms
-                  href: ../financials/localizations/emea-esp-intra-community-vat.md
-                - name: Engångskunder
-                  href: ../financials/localizations/emea-esp-no-one-time-customer-for-project-contracts.md
-                - name: Skriv ut checkar med spansk layout
-                  href: ../financials/localizations/emea-esp-print-checks-with-spanish-layout.md
-                - name: Alternativ för skuldsedel
-                  href: ../financials/localizations/emea-esp-promissory-note-options.md
-                - name: Rapport 340
-                  href: ../financials/localizations/emea-esp-report-340.md
-                - name: Inköps- och försäljningscykler
-                  href: ../financials/localizations/emea-esp-sales-purchase-cycle.md
-                - name: Särskilda poster och ingående ark
-                  href: ../financials/localizations/emea-esp-opening-sheets-spain.md
-            - name: Sverige
-              href: ../financials/localizations/sweden.md
-              items:
-                - name: Exportera ekonomisk information för revisorer i Sverige
-                  href: ../financials/localizations/emea-swe-sie-standard-report.md
-                - name: Importera betalningsformat
-                  href: ../financials/localizations/emea-swe-payment-formats-import.md
-                - name: Kassaapparater
-                  href: ../retail/localizations/emea-swe-cash-registers.md?toc=/fin-and-ops/toc.json
-            - name: Schweiz
-              href: ../financials/localizations/switzerland.md
-              items:
-                - name: Importera kundbetalningar i ESR
-                  href: ../financials/localizations/emea-che-esr-customer-payments-import.md
-            - name: Storbritannien
-              href: ../financials/localizations/united-kingdom.md
-              items:
-                - name: Konstruktionsbranschschema
-                  href: ../financials/localizations/emea-gbr-cis-construction-industry-scheme.md
-                - name: Skapa en kredit för kvittningsrabatt
-                  href: ../financials/localizations/tasks/gb-00009-credit-note-settlement-discount.md
-                - name: Skapa en inköpsorder som omfattar artiklar med återfört tillägg
-                  href: ../financials/localizations/tasks/purchase-order-reverse-charge-vat.md
-                - name: Skapa en försäljningsorder som omfattar artiklar med återfört tillägg
-                  href: ../financials/localizations/tasks/gb-00002-sales-order.md
-                - name: Ställa in artikelmomsgrupper för återfört tillägg
-                  href: ../financials/localizations/tasks/gb-00002-item-sales-tax-groups-reverse-charge-vat.md
-                - name: 'Ställa in artikelgrupper, regler och parametrar för återfört tillägg'
-                  href: ../financials/localizations/tasks/gb-00002-reverse-charge-vat-item-groups.md
-                - name: Ställa in momsgrupper för återfört tillägg
-                  href: ../financials/localizations/tasks/gb-00002-sales-tax-groups-reverse-charge-vat.md
-        - name: Latinamerika
+        - name: Frankrike
+          href: ../financials/localizations/france.md
           items:
-            - name: Brasilien
-              href: ../financials/localizations/brazil.md
+            - name: Offentlig sektor
               items:
-                - name: Lokaliseringens omfattning
-                  href: ../financials/localizations/latam-bra-scope.md
-                - name: Skatteböcker
-                  href: ../financials/localizations/latam-bra-fiscal-books.md
-                  items:
-                    - name: Konfigurera skatteböcker
-                      href: ../financials/localizations/latam-bra-configure-fiscal-books.md
-                    - name: ICMS-skattedokument
-                      href: ../financials/localizations/latam-bra-icms-tax-fiscal-documents.md
-                    - name: Importera skattedokument
-                      href: ../financials/localizations/latam-bra-import-fiscal-documents.md
-                    - name: Exportera och importera transaktioner för juridisk person från redovisningskonsolidering
-                      href: ../financials/localizations/latam-bra-general-ledger-consolidation-transactions.md
-                    - name: Importera och verifiera NF-e XML-dokument och DANFE-filer
-                      href: ../financials/localizations/latam-bra-import-verify-nf-e-xml-documents-danfe-emails.md
-                    - name: Bearbeta elektroniska betalningsremissor
-                      href: ../financials/localizations/latam-bra-process-electronic-payment-remittances.md
-                    - name: Skattedokument
-                      href: ../financials/localizations/latam-bra-fiscal-documents-fiscal-document-framework.md
-                    - name: Platshållare för text i skattedokument
-                      href: ../financials/localizations/latam-bra-fiscal-document-text-placeholders.md
-                    - name: Kompletterande skattedokumentet för inköp
-                      href: ../financials/localizations/latam-bra-purchase-complementary-fiscal-documents.md
-                    - name: Refererade skattedokument
-                      href: ../financials/localizations/latam-bra-referenced-fiscal-documents.md
-                    - name: Kompletterande skattedokumentet för försäljning
-                      href: ../financials/localizations/latam-bra-sales-complementary-fiscal-documents.md
-                    - name: Serva skattedokument för tjänst
-                      href: ../financials/localizations/latam-bra-service-electronic-fiscal-document.md
-                    - name: Journaler skapade under den elektroniska betalningsreturen
-                      href: ../financials/localizations/latam-bra-examples-journals-generated-electronic-payment-return-process.md
-                - name: NF-e-process
-                  href: ../financials/localizations/latam-bra-nf-e-process.md
-                  items:
-                    - name: Automatisk överföring av NF-e-skattedokument
-                      href: ../financials/localizations/tasks/br-00058-automatic-transmission-nf-e-fiscal-documents.md
-                    - name: Generera e-postmeddelanden för godkänd NF-e och bifoga PDF-filer för DANFE och XML-filer för NF-e i e-postmeddelandena
-                      href: ../financials/localizations/tasks/br-00053-3-generate-emails-approved-nf-e-attach-danfe-pdf-files-nf-e-xml-files-emails.md
-                    - name: NF-e-intyg
-                      href: ../financials/localizations/latam-bra-nfe-certs.md
-                    - name: 'Ställ in, importera och verifiera NF-e XML-dokument och DANFE'
-                      href: ../financials/localizations/latam-bra-set-up-import-nfe.md
-                    - name: Ställ in parametrar för federal NF-e
-                      href: ../financials/localizations/tasks/br-00053-1-set-up-nf-e-federal-parameters.md
-                    - name: Ställ in NF-e-parametrar för en skattemyndighet
-                      href: ../financials/localizations/tasks/br-00053-2-set-up-nf-e-parameters-fiscal-establishment.md
-                - name: Parametrar för juridiska personer
-                  href: ../financials/localizations/latam-bra-legal-entity-parameters.md
-                - name: Förvärva en CIAP-anläggningstillgång
-                  href: ../financials/localizations/latam-bra-ciap-fixed-asset.md
-                - name: Avyttra en CIAP-anläggningstillgång
-                  href: ../financials/localizations/latam-bra-ciap-fixed-asset.md
-                - name: Skatter
-                  href: ../financials/localizations/latam-bra-calculate-taxes.md
-                  items:
-                    - name: Beräkna moms på inköpsrekvisitioner
-                      href: ../financials/localizations/tasks/br-00031-tax-calculation-purchase-quotation.md
-                    - name: Skapa en momsvärdering - ICMS
-                      href: ../financials/localizations/tasks/br-10001-4-create-tax-assessment-icms.md
-                    - name: Skapa en momsvärdering - IPI-moms
-                      href: ../financials/localizations/tasks/br-10004-2-create-tax-assessment-ipi-tax.md
-                    - name: Skapa en momsvärdering - PIS- och COFINS-moms
-                      href: ../financials/localizations/tasks/br-10006-4-create-tax-assessment-pis-cofins-tax.md
-                    - name: Ange och bokför momsjusteringstransaktioner
-                      href: ../financials/localizations/tasks/br-10001-3-enter-post-tax-adjustment-transactions.md
-                    - name: Ange justeringstransaktioner för PIS- och COFINS-moms
-                      href: ../financials/localizations/tasks/br-10006-3-enter-pis-cofins-tax-adjustment-transactions.md
-                    - name: Skattemyndighetens momsattribut
-                      href: ../financials/localizations/tasks/br-00002-fiscal-establishment-tax-attributes.md
-                    - name: Utfärda skattedokument för ICMS-momskrediter
-                      href: ../financials/localizations/tasks/br-00072-issuing-icms-tax-credit-fiscal-document.md
-                    - name: Utfärda skattedokument för överföring av ICMS-momskrediter
-                      href: ../financials/localizations/tasks/br-00071-issuing-icms-tax-credit-transfer-fiscal-document.md
-                    - name: Ställ in justeringskoder för ICMS-moms
-                      href: ../financials/localizations/tasks/br-10001-1-set-up-adjustment-codes-icms-tax.md
-                    - name: Ställ in justeringskoder för ICMS-moms på skattedokument
-                      href: ../financials/localizations/tasks/br-10001-2-set-up-adjustment-codes-icms-taxes-fiscal-documents.md
-                    - name: Ställ in justeringskoder för IPI-moms
-                      href: ../financials/localizations/tasks/br-10004-1-set-up-adjustment-codes-ipi-taxes.md
-                    - name: Ställ in justeringskoder för PIS- och COFINS-moms
-                      href: ../financials/localizations/tasks/br-10006-2-set-up-adjustment-codes-pis-cofins-taxes.md
-                    - name: Ställ in PIS- och COFINS-register
-                      href: ../financials/localizations/tasks/br-10006-1-set-up-pis-cofins-tables.md
-                    - name: Momsvärdering för ISS-moms
-                      href: ../financials/localizations/tasks/br-10005-tax-assessment-iss-tax.md
-                    - name: Momsattribut
-                      href: ../financials/localizations/latam-bra-tax-attributes.md
-                    - name: Momsbetalningar
-                      href: ../financials/localizations/latam-bra-tax-payments.md
-                    - name: Moms på försäljningsofferter
-                      href: ../financials/localizations/tasks/br-00057-brazilian-taxes-sales-quotation.md
-                    - name: 'Källskatter '
-                      href: ../financials/localizations/tasks/br-00009-brazilian-withholding-taxes.md
-                    - name: Källskatter på kundbetalningar
-                      href: ../financials/localizations/tasks/br-00042-withholding-taxes-customers-payments.md
-                    - name: Källskatter på leverantörsbetalningar
-                      href: ../financials/localizations/tasks/br-00061-withholding-taxes-vendors-payments.md
-                - name: Uppgifter för Brasilien
-                  items:
-                    - name: Ställ in parametrar för juridisk person
-                      href: ../financials/localizations/tasks/br-00001-1-set-up-brazil-legal-entity-parameters.md
-                    - name: Ställ in källtext för skattedokument
-                      href: ../financials/localizations/tasks/br-00001-2-set-up-fiscal-document-source-text.md
-                    - name: Mottagning av skattedokument för leverantörer (anläggningstillgångar - PIS och COFINS långsiktigt återbetalningsbar)
-                      href: ../financials/localizations/tasks/br-00014-receiving-vendor-fiscal-document-fixed-assets-pis-cofins-long-term-recoverable.md
-                    - name: Mottagning av skattedokument för leverantörer (produkter)
-                      href: ../financials/localizations/tasks/br-00024-receiving-vendor-fiscal-document-products.md
-                    - name: Skapa och bokför ett kompletterande skattedokument för inköp
-                      href: ../financials/localizations/tasks/br-00026-1-create-post-purchase-complementary-fiscal-document.md
-                    - name: Annullera ett kompletterande skattedokument för inköp
-                      href: ../financials/localizations/tasks/br-00026-2-cancel-purchase-complementary-fiscal-document.md
-                    - name: Utfärda skattedokument för leverantörer
-                      href: ../financials/localizations/tasks/br-00033-issuing-fiscal-document-non-taxable-vendors.md
-                    - name: Utfärda skattedokument för kunder
-                      href: ../financials/localizations/tasks/br-00038-issuing-customer-fiscal-document.md
-                    - name: Följesedlar
-                      href: ../financials/localizations/tasks/br-00041-delivery-slip.md
-                    - name: Övriga avgifter på fritextfakturor
-                      href: ../financials/localizations/tasks/br-00050-miscellaneous-charge-free-text-invoice.md
-                    - name: Skapa och bokför ett kompletterande skattedokument för försäljning
-                      href: ../financials/localizations/tasks/br-00052-1-create-post-sales-complementary-fiscal-documents.md
-                    - name: Annullera ett kompletterande skattedokument för försäljning
-                      href: ../financials/localizations/tasks/br-00052-2-cancel-sales-complementary-fiscal-document.md
-                    - name: Serva elektroniskt skattedokument med hjälp av textfiler
-                      href: ../financials/localizations/tasks/br00059-service-electronic-fiscal-document-text-files.md
-                    - name: Ställ in räntor och böter för leverantörsbetalningar
-                      href: ../financials/localizations/tasks/br-00065-1-set-up-interest-fines-vendor-payments.md
-                    - name: Beräkna räntor och böter på leverantörsbetalningar
-                      href: ../financials/localizations/tasks/br-00065-2-calculate-interest-fines-vendor-payments.md
-                    - name: Ställ in räntor och böter på kundbetalningar
-                      href: ../financials/localizations/tasks/br-00066-1-set-up-interest-fines-customer-payments.md
-                    - name: Beräkna räntor och böter på kundbetalningar
-                      href: ../financials/localizations/tasks/br-00066-2-calculate-interest-fines-customer-payments.md
-                    - name: Hantering av elektronisk betalning för leverantörsbetalningar
-                      href: ../financials/localizations/tasks/br-00067-electronic-payment-management-vendor-payments.md
-                    - name: Projektdebetfakturor
-                      href: ../financials/localizations/tasks/br-00076-project-debit-notes.md
-                    - name: Hantera text i skattedokument i anskaffningsdokument
-                      href: ../financials/localizations/tasks/br-00080-manage-fiscal-document-texts-procurement-documents.md
-                    - name: Mottagning av skattedokument för leverantörer (anläggningstillgångar - ICMS långsiktigt återbetalningsbar)
-                      href: ../financials/localizations/tasks/br-00082-receiving-vendor-fiscal-document-fixed-assets-icms-long-term-recoverable.md
-                    - name: Utfärda skattedokument för kunder (tjänster)
-                      href: ../financials/localizations/tasks/br-00084-issuing-customer-fiscal-documents-services.md
-                    - name: Utfärda skattedokument för kunder (anläggningstillgångar)
-                      href: ../financials/localizations/tasks/br-00085-issuing-customer-fiscal-documents-fixed-assets.md
-                    - name: Utfärda skattedokument för kunder (projekt)
-                      href: ../financials/localizations/tasks/br-00086-issuing-customer-fiscal-documents-project.md
-                    - name: Utfärda skattedokument för kunder (för slutanvändare)
-                      href: ../financials/localizations/tasks/br-00087-issuing-customer-fiscal-documents-end-user.md
-                    - name: Utfärda skattedokument för kunder (för SUFRAMA-kunder)
-                      href: ../financials/localizations/tasks/br-00088-issuing-customer-fiscal-documents-suframa-customers.md
-                    - name: Annullera ett skattedokument för kunder (projekt)
-                      href: ../financials/localizations/tasks/br-00092-cancel-customer-fiscal-document-project.md
-                    - name: Andra åtgärder än skatteåtgärder
-                      href: ../financials/localizations/tasks/br-10016-non-fiscal-operations.md
-                    - name: Ange en CIAP-transaktion
-                      href: ../financials/localizations/tasks/br-10020-1-enter-ciap-transaction.md
-                    - name: Beräkna CIAP-kreditbelopp
-                      href: ../financials/localizations/tasks/br-10020-2-calculate-ciap-credit-amount.md
-                    - name: Inkludera CIAP-kredit från föregående period
-                      href: ../financials/localizations/tasks/br-10020-3-include-ciap-credit-from-previous-period.md
-                    - name: PIS- och COFINS-anläggningstillgångar
-                      href: ../financials/localizations/tasks/br-10020-4-pis-cofins-fixed-assets.md
-            - name: Mexiko
-              href: ../financials/localizations/mexico.md
+                - name: Redovisning i offentlig sektor
+                  href: ../financials/localizations/emea-fra-public-sector-accounting.md
+                - name: Utfästelser
+                  href: ../financials/localizations/emea-fra-commitments-public-sector.md
+                - name: Mandats de paiement
+                  href: ../financials/localizations/emea-fra-mandats-de-paiement.md
+                - name: Anskaffning och källa
+                  href: ../financials/localizations/emea-fra-procurement-sourcing-public-sector.md
+                - name: Titres de recette
+                  href: ../financials/localizations/emea-fra-titres-de-recette-public-sector.md
+                - name: Betalningsreservationer för leverantörsfakturor
+                  href: ../financials/localizations/emea-fra-vendor-invoice-payment-holds-public-sector.md
+            - name: Godkänn och bokför utställda växlar
+              href: ../financials/localizations/tasks/fr-00004-approve-post-draw-bill-exchange.md
+            - name: Kronologiska fakturor och verifikationer
+              href: ../financials/localizations/emea-fra-chronological-invoices-vouchers.md
+            - name: Skapa en standardverifieringsfil för Frankrike (FEC)
+              href: ../financials/localizations/emea-fra-fec-audit-file.md
+            - name: Kontoutdrag för kund och leverantör
+              href: ../financials/localizations/tasks/fr-00002-customer-vendor-account-statements.md
+            - name: Daglig ränteberäkning för sen betalning och engångsbelopp på faktura och kravbrev
+              href: ../financials/localizations/tasks/fr-00018-daily-interest.md
+            - name: Nedsättningsavskrivning
+              href: ../financials/localizations/emea-fra-derogatory-depreciation.md
+            - name: Franska växlar och skuldsedlar
+              href: ../financials/localizations/tasks/fr-00004-french-bills-exchange-promissory-notes.md
+            - name: NAF-koder och siret-nummer
+              href: ../financials/localizations/emea-fra-naf-codes-siret-numbers.md
+            - name: Ställa in NAF-koder och Siret-nummer
+              href: ../financials/localizations/tasks/fr-00003-naf-codes-siret-numbers.md
+            - name: Avgifter för förfallna kundbetalningar
+              href: ../financials/localizations/emea-fra-apply-penalty-customer-payment-past-due.md
+            - name: Bokför journal för utställda växlelprotester
+              href: ../financials/localizations/tasks/fr-00004-post-protest-draw-bill-exchange-journal.md
+            - name: Bokför journalen för återutställda växlar
+              href: ../financials/localizations/tasks/fr-00004-post-re-draw-bill-exchange-journal.md
+            - name: Skriv ut text för återbetalning av engångsbelopp på en kundfaktura
+              href: ../financials/localizations/emea-fra-print-lump-sum-recovery-text.md
+            - name: RB/SL-avskrivning
+              href: ../financials/localizations/emea-fra-rbsl-depreciation.md
+            - name: Skapa betalningsmetod
+              href: ../financials/localizations/tasks/fr-00004-setup-method-payment.md
+            - name: Uppdatera betalningsmetod för kund
+              href: ../financials/localizations/tasks/fr-00004-update-method-payment-customer.md
+            - name: Retail
               items:
-                - name: Lokaliseringens omfattning
-                  href: ../financials/localizations/latam-mex-scope.md
-                - name: Rapport för inflationsjusteringsdeklaration
-                  href: ../financials/localizations/latam-mex-adjustment-inflation-declaration-report.md
-                - name: Avbryt en elektronisk faktura
-                  href: ../financials/localizations/tasks/mx-00010-cancel-electronic-invoice.md
-                - name: CFDI-version 3.3
-                  href: ../financials/localizations/latam-mex-cfdi-3-3.md
-                - name: Kundregistrerings-ID och annan information
-                  href: ../financials/localizations/tasks/mx-00007-customer-registration-ids-other-information.md
-                - name: DIOT-deklarationsutdrag
-                  href: ../financials/localizations/latam-mex-diot-declaration-statement.md
-                - name: E-fakturering CFDI
-                  href: ../financials/localizations/tasks/mx-00010-e-invoicing-cfdi.md
-                - name: Elektroniska fakturor
-                  href: ../financials/localizations/latam-mex-CFDI-electronic-invoices.md
-                - name: Elektroniska redovisningsutdrag
-                  href: ../financials/localizations/latam-mex-electronic-ledger-accounting-statements.md
-                - name: Ange momsregistrerings-ID för mexikanska juridiska personer
-                  href: ../financials/localizations/tasks/mx-00010-enter-tax-registration-ids-mexican-legal-entities.md
-                - name: Fråga och skriv ut en elektronisk faktura
-                  href: ../financials/localizations/tasks/mx-00010-inquire-print-electronic-invoice.md
-                - name: ISR-deklarationsrapport
-                  href: ../financials/localizations/latam-mex-isr-declaration-report-supporting-processes.md
-                - name: Bokför en fritextfaktura
-                  href: ../financials/localizations/tasks/mx-00010-post-free-text-invoice.md
-                - name: Producera mexikansk elektronisk redovisningsrapport version 1.1
-                  href: ../financials/localizations/tasks/mx-00020-electronic-ledger.md
-                - name: Ställ in parametrar för en elektronisk faktura
-                  href: ../financials/localizations/tasks/mx-00010-set-parameters-electronic-invoice.md
-                - name: Ställ in momsrapporteringskoder för Mexiko
-                  href: ../financials/localizations/tasks/mx-00006-sales-tax-code.md
-                - name: Ställ in kontoplanen för en juridisk person i Mexiko
-                  href: ../financials/localizations/tasks/mx-00020-chart-accounts-legal-entity-mexico.md
-                - name: Ange RFC-registrerings-ID för mexikanska bankkonton
-                  href: ../financials/localizations/tasks/mx-00020-specify-rfc-registration-id-mexican-bank-accounts.md
-                - name: ID för leverantörsregistrering
-                  href: ../financials/localizations/tasks/mx-00008-vendor-registration-ids.md
+                - name: Kassaapparater
+                  href: ../retail/localizations/emea-fra-cash-registers.md
+                - name: Riktlinjer för distribution av kassaapparater
+                  href: ../retail/localizations/emea-fra-deployment.md
+        - name: Tyskland
+          href: ../financials/localizations/germany.md
+          items:
+            - name: Ytterligare förvärvsavskrivning
+              href: ../financials/localizations/emea-deu-additional-acquisition-depreciation.md
+            - name: Verifieringsfil
+              href: ../financials/localizations/emea-deu-gdpdu-audit-data-export.md
+              items:
+                - name: Anpassa konfiguration av verifieringsfil
+                  href: ../financials/localizations/tasks/customize-german-audit-file-configuration.md
+                - name: Generera verifieringsfil
+                  href: ../financials/localizations/tasks/german-audit-file.md
+                - name: Importera konfiguration av verifieringsfil
+                  href: ../financials/localizations/tasks/import-german-audit-file-configuration.md
+            - name: Avskrivningsjusteringar för ytterligare anskaffning under det andra året
+              href: ../financials/localizations/tasks/de-00002-depreciation.md
+            - name: Överföring av elektronisk momsdeklaration (ELSTER)
+              href: ../financials/localizations/tasks/de-00003-electronic-transmission-elster.md
+            - name: Journallisterapport
+              href: ../financials/localizations/emea-deu-journal-list-report.md
+            - name: Ställa in elektroniska momsdeklarationer
+              href: ../dev-itpro/analytics/tasks/setup-electronic-tax-declaration-germany.md?toc=/fin-and-ops/toc.json
+        - name: Ungern
+          href: ../financials/localizations/hungary.md
+          items:
+            - name: Beräkning av valutakurs
+              href: ../financials/localizations/tasks/hu-00001-exchange-rate-calculation.md
+            - name: Avskrivningsmetoder för anläggningstillgångar
+              href: ../financials/localizations/emea-hun-fixed-assets-depreciation-methods.md
+            - name: Fasta lågkostnadstillgångar
+              href: ../financials/localizations/emea-hun-low-cost-fixed-assets.md
+            - name: Flytta en anläggningstillgång till lager
+              href: ../financials/localizations/emea-hun-fixed-asset-to-inventory.md
+            - name: Dokument för återbetalning av moms
+              href: ../financials/localizations/emea-hun-tax-reimbursement-docs.md
+            - name: Årsbokslut
+              href: ../financials/localizations/emea-cze-hun-year-end.md
+        - name: Island
+          href: ../financials/localizations/iceland.md
+          items:
+            - name: Skapa ett leverantörskonto och bifoga fakturadeklarationskategorin
+              href: ../financials/localizations/tasks/create-vendor-account-attach-invoice-declaration-category.md
+            - name: Ställ in en fakturadeklaration för leverantörer
+              href: ../financials/localizations/tasks/set-up-invoice-declaration-vendors.md
+            - name: Ställ in obligatoriska betalningsreferenser
+              href: ../financials/localizations/tasks/set-up-mandatory-payment-references.md
+            - name: Uppdatera leverantörsfakturadeklarationer och generera rapporten
+              href: ../financials/localizations/tasks/update-vendor-invoice-declarations-report.md
+        - name: Indien
+          href: ../financials/localizations/india.md
+          items:
+            - name: Anläggningstillgångar
+              href: ../financials/localizations/apac-ind-fixed-assets.md
+              items:
+                - name: Koppla en dagsbaserad kalender till en förteckning över anläggningstillgångar
+                  href: ../financials/localizations/tasks/apac-ind-attach-day-based-calendar.md
+                - name: Beräkna skiftavskrivning
+                  href: ../financials/localizations/tasks/apac-ind-shift-depreciation-rates.md
+                - name: Skapa en lagermodellgrupp för kapitalvaror
+                  href: ../financials/localizations/tasks/apac-ind-create-inventory-model-group.md
+                - name: Skapa och bokföra avskrivning
+                  href: ../financials/localizations/apac-ind-calculate-post-depreciation.md
+                - name: Definiera typ av växling och bransch för böcker och koppla till anläggningstillgång
+                  href: ../financials/localizations/tasks/apac-ind-books-shift-industry-types.md
+                - name: Återföring av transaktioner för anläggningstillgångar
+                  href: ../financials/localizations/apac-ind-reverse-fixed-assets-transactions.md
+                - name: Beräkning av skiftavskrivning
+                  href: ../financials/localizations/apac-ind-calculation-shift-depreciation.md
+                - name: Ställ in en dagsbaserad räkenskapskalender
+                  href: ../financials/localizations/tasks/apac-ind-day-based-calendar.md
+                - name: Ställ in parametrar för att beräkna avskrivningar
+                  href: ../financials/localizations/tasks/apac-ind-set-up-depreciation.md
+                - name: Ställ in avskrivningsregel för tillgångsgrupp
+                  href: ../financials/localizations/tasks/apac-ind-set-up-asset-group-dep.md
+                - name: Överför kapitalvaror till anläggningstillgången
+                  href: ../financials/localizations/tasks/apac-ind-transfer-capital-items.md
+            - name: 'GST (moms), Indien'
+              href: ../financials/localizations/apac-ind-gst.md
+              items:
+                - name: 'Referensgrupper för GST (moms), Indien'
+                  href: ../financials/localizations/apac-ind-gst-reference-groups.md
+                - name: GST-integration (moms) för kassaapparater
+                  href: ../retail/localizations/apac-ind-cash-registers.md?toc=/fin-and-ops/toc.json
+            - name: Riktlinjer för distribution av kassaapparater
+              href: ../retail/localizations/apac-ind-loc-deployment-guidelines.md?toc=/fin-and-ops/toc.json
+            - name: Översikt över skattemotor
+              href: ../financials/general-ledger/tax-engine.md
+              items:
+                - name: Integrering av skattemotor
+                  href: ../financials/general-ledger/tax-engine-integration.md
+                - name: Bygg ut skattemotorn
+                  href: ../financials/general-ledger/extend-tax-engine-configurations.md
+            - name: Vanliga frågor och svar om tröskelvärden för moms
+              href: ../financials/localizations/apac-ind-tax-thresholds.md
+        - name: Italien
+          href: ../financials/localizations/italy.md
+          items:
+            - name: Momsutdragsinformation
+              href: ../financials/localizations/emea-ita-vat-statements-details.md
+            - name: Rapport med svarta listan
+              href: ../financials/localizations/emea-ita-black-list-report.md
+            - name: Bokföringsdatum
+              href: ../financials/localizations/emea-ita-competence-date.md
+            - name: Avskrivning av anläggningstillgångar
+              href: ../financials/localizations/emea-ita-depreciation-of-fixed-assets.md
+            - name: Modello 770
+              href: ../financials/localizations/emea-ita-modello770.md
+            - name: Verifieringsdatum för följesedel för fakturor
+              href: ../financials/localizations/emea-ita-packing-slip-date-verification-on-invoice.md
+            - name: Bokför och skriv ut en följesedel med leveransinformation för transport
+              href: ../financials/localizations/emea-ita-packing-slip.md
+            - name: Momsböcker
+              href: ../financials/localizations/emea-ita-fiscal-books.md
+            - name: Delbetalning av fakturor utfärdade till offentlig administration
+              href: ../financials/localizations/emea-ita-split-payment-invoices-issued-public-administration.md
+            - name: Källskatt
+              href: ../financials/localizations/emea-ita-withholding-tax.md
+        - name: Japan
+          href: ../financials/localizations/japan.md
+          items:
+            - name: Anskaffa en anläggningstillgång och begär statsbidragssubvention
+              href: ../financials/localizations/tasks/acquire-fixed-asset-claim-government-grant-subsidy.md
+            - name: Anskaffa en anläggningstillgång med skyldigheter vid utrangering av tillgång
+              href: ../financials/localizations/tasks/acquire-fixed-asset-asset-retirement-obligations.md
+            - name: Justering av uppskattningen av utrangering av en tillgång
+              href: ../financials/localizations/tasks/adjustment-asset-retirement-obligation-estimate.md
+            - name: Fördela bärande belopp med gemensam tillgång och goodwill till kassagenererande enheter
+              href: ../financials/localizations/tasks/allocate-carrying-amount.md
+            - name: Allokeringsregler
+              href: ../financials/localizations/apac-jpn-allocation-rules-fixed-assets.md
+            - name: Bankbetalningsavgifter som täcks av leverantörer
+              href: ../financials/localizations/apac-jpn-bank-payment-fees-vendors.md
+            - name: Ändra avskrivningsmetoden under tillgångens livstid för räkenskapsboken
+              href: ../financials/localizations/tasks/change-depreciation-method-during-asset-life-book.md
+            - name: Ändra avskrivningsmetoden under tillgångens livstid för en tillgång
+              href: ../financials/localizations/tasks/change-depreciation-method-during-asset-life-one-asset.md
+            - name: Konfigurera accelererade avskrivningsparametrar och bokföringsprofiler
+              href: ../financials/localizations/tasks/accelerated-depreciation-posting-profiles.md
+            - name: Konfigurera konsoliderade fakturaparametrar och inställningar för leverantörsreskontra
+              href: ../financials/localizations/tasks/consolidated-invoice-parameters-setup-accounts-payable.md
+            - name: Konfigurera avskrivningsprofilen och bokföringsprofilen för ytterligare avskrivning
+              href: ../financials/localizations/tasks/configure-depreciation-profile-posting.md
+            - name: Konfigurera huvudkonton för bokföring av utrangering av anläggningstillgångar och marknadsdiskonteringsränta
+              href: ../financials/localizations/tasks/configure-main-accounts-asset-retirement.md
+            - name: Konsoliderade fakturor
+              href: ../financials/localizations/apac-jpn-consolidate-invoices.md
+            - name: Skapa en anläggningstillgång med ytterligare avskrivning
+              href: ../financials/localizations/tasks/create-fixed-asset-additional-depreciation.md
+            - name: Skapa en profil för särskild avskrivning för anläggningstillgång
+              href: ../financials/localizations/tasks/create-fixed-asset-special-depreciation-profile.md
+            - name: Skapa ett accelererat avskrivningsdokument och ange användningsdata
+              href: ../financials/localizations/tasks/create-accelerated-depreciation-document-enter-usage-data.md
+            - name: Skapa en accelererad avskrivningsprofil och tilldela den till räkenskapsboken
+              href: ../financials/localizations/tasks/create-accelerated-depreciation-profile-assign-it-book.md
+            - name: Skapa och tilldela ett avdragsregistreringsdokument för en statsbidragsubvention
+              href: ../financials/localizations/tasks/create-assign-reduction-document.md
+            - name: Skapa och tilldela en utrustningsgrupp
+              href: ../financials/localizations/tasks/create-assign-equipment-group.md
+            - name: Öppna och bekräfta en kundkonsoliderad faktura på nytt
+              href: ../financials/localizations/tasks/create-confirm-customer-consolidated-invoice.md
+            - name: Skapa och bekräfta ett erkännandetest
+              href: ../financials/localizations/tasks/create-confirm-recognition-test.md
+            - name: Öppna och bekräfta en leverantörskonsoliderad faktura på nytt
+              href: ../financials/localizations/tasks/create-confirm-vendor-consolidated-invoice.md
+            - name: Skapa CGU-grupp och kassagenererande enheter
+              href: ../financials/localizations/tasks/create-cgu-group-cash-generating-units.md
+            - name: Skapa engångsbeloppavskrivningstillgångar med hjälp av metoden dela lika
+              href: ../financials/localizations/tasks/create-lump-sum-depreciation-assets-equally-divided-method.md
+            - name: Definiera den overksamma perioden för anläggningstillgångar och validera avskrivningsprocessen
+              href: ../financials/localizations/tasks/define-asset-idle-period-validate-depreciation-process.md
+            - name: Skriva av och periodisera ränteutgiften för skyldigheter vid utrangering av tillgång
+              href: ../financials/localizations/tasks/depreciate-accrue-interest-expense.md
+            - name: Avskrivning av anläggningstillgångar med den bokförda förminskningsposten
+              href: ../financials/localizations/tasks/depreciation-fixed-assets-reduction-entry-posted.md
+            - name: Vanliga frågor och svar om avskrivning
+              href: ../financials/localizations/apac-jpn-fixed-asset-depreciation.md
+            - name: Avyttra en anläggningstillgång med avdragsregistrering
+              href: ../financials/localizations/tasks/dispose-fixed-asset-reduction-entry.md
+            - name: Aktivera JBA-betalningsfilformat
+              href: ../financials/localizations/tasks/jba-payment-file-format.md
+            - name: Ange en tidsplan för avskrivning och associera till en avskrivningsprofil
+              href: ../financials/localizations/tasks/enter-depreciation-rate-schedule.md
+            - name: Jämnt fördelad avskrivningsmetod
+              href: ../financials/localizations/apac-jpn-equally-divided-depreciation-method.md
+            - name: Formulär 26 för avskrivbar momsdeklaration
+              href: ../financials/localizations/tasks/jp-00027-form-26-depreciable-tax-declaration.md
+            - name: Generera en EFT-betalningsfil i JBA-format
+              href: ../financials/localizations/tasks/eft-payment-file-jba-format.md
+            - name: Generera och bokför betalningsavgift
+              href: ../financials/localizations/tasks/post-payment-fee.md
+            - name: Generera konsumtionsskatterapport
+              href: ../financials/localizations/tasks/japan-consumption-tax-report.md
+            - name: Redovisning av nedskrivningar på CGU
+              href: ../financials/localizations/apac-jpn-impairment-accounting-cash-generating-unit.md
+            - name: Redovisning av nedskrivningar
+              href: ../financials/localizations/apac-jpn-impairment-accounting-fixed-assets.md
+            - name: Importera en kundbetalning med JBA-filformat
+              href: ../financials/localizations/tasks/import-customer-payment-jba-file-format.md
+            - name: Importera postnummer
+              href: ../financials/localizations/apac-jpn-import-postal-codes.md
+            - name: Inleveransjournal i T-kontoformulär
+              href: ../financials/localizations/tasks/jp-00005-input-journal-t-account-form-japan.md
+            - name: Fråga om relaterade transaktioner till utrangering av tillgångar
+              href: ../financials/localizations/tasks/inquiries-asset-retirement-obligation.md
+            - name: Fråga om avdragsgilla utgifter
+              href: ../financials/localizations/tasks/inquiry-deductible-expenses.md
+            - name: Fråga om betalningsavgifter i en journal
+              href: ../financials/localizations/tasks/inquiries-payment-fee-journal.md
+            - name: Underhålla avdragsgilla anläggningstillgångar huvuddatafiler för utgifter
+              href: ../financials/localizations/tasks/maintain-fixed-asset-master-data-files-deductible-expenses.md
+            - name: Underhålla försämringsindikatorer för enskilda tillgångar
+              href: ../financials/localizations/tasks/maintain-impairment-indicators-individual-assets.md
+            - name: Betala en leverantör genom att godkänna en växel
+              href: ../financials/localizations/apac-jpn-endorse-bill-of-exchange.md
+            - name: Betala en leverantörstransaktion genom att skriva på en kundväxel
+              href: ../financials/localizations/tasks/pay-vendor-transaction.md
+            - name: Periodisk kvittning av över- eller underavskrivning
+              href: ../financials/localizations/tasks/periodic-settlement-over-under-depreciation.md
+            - name: Beräkning av progressiv källskatt
+              href: ../financials/localizations/apac-jpn-progressive-withholding-tax-calculation.md
+            - name: Föreslå ytterligare avskrivning
+              href: ../financials/localizations/tasks/propose-additional-depreciation.md
+            - name: Föreslå och bokför accelererad avskrivning
+              href: ../financials/localizations/tasks/propose-post-accelerated-depreciation.md
+            - name: Föreslå och bokför nedskrivningsbeloppet efter batch
+              href: ../financials/localizations/tasks/propose-post-impairment-amount-batch.md
+            - name: Föreslå och bokför nedskrivningsbeloppet genom att använda journal för anläggningstillgångar
+              href: ../financials/localizations/tasks/propose-post-impairment-amount-fixed-asset-journal.md
+            - name: Föreslå och bokför nedskrivningsbeloppet på en kassagenererande enhet
+              href: ../financials/localizations/tasks/propose-post-impairment-amount-cash-generating-unit.md
+            - name: Föreslå särskild avskrivning
+              href: ../financials/localizations/tasks/propose-special-depreciation.md
+            - name: Öppna och redigera en kundkonsoliderad faktura på nytt
+              href: ../financials/localizations/tasks/reopen-edit-customer-consolidated-invoice.md
+            - name: Öppna och redigera en leverantörskonsoliderad faktura på nytt
+              href: ../financials/localizations/tasks/reopen-edit-vendor-consolidated-invoice.md
+            - name: Återför en signerad växel
+              href: ../financials/localizations/tasks/reverse-endorsed-bill-exchange.md
+            - name: Kör redovisningstest och beräkna nedskrivningsbeloppet för enskilda tillgångar
+              href: ../financials/localizations/tasks/run-recognition-test-calculate.md
+            - name: Ställ in en kund och en försäljningsorder som mål för konsoliderad faktura
+              href: ../financials/localizations/tasks/set-up-customer-sales-order-target-consolidated-invoice.md
+            - name: Ställ in ARO
+              href: ../financials/localizations/apac-jpn-asset-retirement-obligation-fixed-assets.md
+            - name: Ställ in dokument om skyldighet till utrangering av tillgångar och ange ARO-belopp för en anläggningstillgång
+              href: ../financials/localizations/tasks/set-up-asset-retirement-obligation.md
+            - name: Ställ in konsoliderade fakturor
+              href: ../financials/localizations/tasks/set-up-consolidated-invoices.md
+            - name: Ställ in vanliga parametrar för nedskrivningsredovisning och bokföringsprofil
+              href: ../financials/localizations/tasks/impairment-accounting.md
+            - name: Ställ in rapport för japansk konsumtionsskatt
+              href: ../financials/localizations/tasks/setup-japan-consumption-tax-report.md
+            - name: Ställ in betalning för Japan genom att skriva på en kundväxel
+              href: ../financials/localizations/tasks/setup-japan-payment-endorsing-customer-bill-exchange.md
+            - name: Ställ in huvuddata för inkludering av avdragsgilla utgifter för flera bokföringsskikt
+              href: ../financials/localizations/tasks/set-up-master-data-inclusion.md
+            - name: Ställ in betalningsavgift för Japan
+              href: ../financials/localizations/tasks/setup-payment-fee-japan.md
+            - name: Ställ in avdragsposter
+              href: ../financials/localizations/apac-jpn-reduction-entry-fixed-assets.md
+            - name: Ställ in leverantörshuvud och inköpsorder som mål för konsoliderad faktura
+              href: ../financials/localizations/tasks/vendor-master-po.md
+            - name: Kvitta en signerad växel
+              href: ../financials/localizations/tasks/settle-endorsed-bill-exchange.md
+            - name: Kvitta kundkonsoliderade fakturor med hjälp av en betalningsjournal
+              href: ../financials/localizations/tasks/settle-customer-consolidated-invoices-payment-journal.md
+            - name: Kvitta kundkonsoliderade fakturor med hjälp av kvitteringstransaktioner
+              href: ../financials/localizations/tasks/settle-customer-consolidated-invoices-settle-transactions.md
+            - name: Kvitta leverantörskonsoliderade fakturor med hjälp av en betalningsjournal
+              href: ../financials/localizations/tasks/settle-vendor-consolidated-invoices-payment-journal.md
+            - name: Kvitta leverantörskonsoliderade fakturor med hjälp av kvitteringstransaktioner
+              href: ../financials/localizations/tasks/settle-vendor-consolidated-invoices-settle-transactions.md
+            - name: Använd monteringslista för anläggningstillgångar
+              href: ../financials/localizations/tasks/use-assemble-list-fixed-asset.md
+            - name: Använd demonteringslista för anläggningstillgångar
+              href: ../financials/localizations/tasks/use-disassemble-list-fixed-assets.md
+        - name: Lettland
+          href: ../financials/localizations/latvia.md
+          items:
+            - name: Redovisning av anläggningstillgångar
+              href: ../financials/localizations/emea-lva-fixed-assets-accounting.md
+            - name: Ändringsspårning av plats för anläggningstillgångar
+              href: ../financials/localizations/emea-lva-fixed-assets-location-fields-change.md
+            - name: Numrering av fakturor och följesedlar
+              href: ../financials/localizations/emea-invoices-packing-slips-numbering.md
+            - name: Rapport om skatt på naturtillgångar
+              href: ../financials/localizations/emea-lva-tax-natural-resources.md
+            - name: Momsutdragsinformation
+              href: ../financials/localizations/emea-lva-vat-statement-details.md
+        - name: Litauen
+          href: ../financials/localizations/lithuania.md
+          items:
+            - name: Utdrag reparation av anläggningstillgångar
+              href: ../financials/localizations/emea-ltu-fixed-asset-repair-statement.md
+            - name: Skapa en anläggningstillgångsöverföring mellan lagerställedokument
+              href: ../financials/localizations/tasks/lt-00003-fixed-asset-transfer.md
+            - name: Numrering av fakturor och följesedlar
+              href: ../financials/localizations/emea-invoices-packing-slips-numbering.md
+            - name: Momsutdragsinformation
+              href: ../financials/localizations/emea-ltu-vat-statement-details.md
+        - name: Malaysia
+          href: ../financials/localizations/malaysia.md
+          items:
+            - name: Generera kundkredit för projektförsäljning
+              href: ../financials/localizations/tasks/my-00011-03-customer-credit-note-project-sales.md
+            - name: Generera kunddebet för projektförsäljning
+              href: ../financials/localizations/tasks/my-00011-02-customer-debit-note-project-sales-2016-11.md
+            - name: Moms för varor och tjänster (GST)
+              href: ../financials/localizations/apac-mys-gst.md
+            - name: GST (moms) – Generera GAF-filer i nödvändigt format
+              href: ../financials/localizations/tasks/my-00010-gst-gaf-files-required-format.md
+            - name: Hantera kunddebet och -kredit för GST (moms)
+              href: ../financials/localizations/tasks/my-00003-manage-customer-debit-note-credit-note-gst.md
+            - name: Hantera leverantörsdebet och -kredit för GST (moms)
+              href: ../financials/localizations/tasks/my-00004-manage-vendor-debit-note-credit-note-gst.md
+            - name: Skriva ut GST-kundfakturor (moms) med en lättnadssats
+              href: ../financials/localizations/tasks/my-00006-02-print-gst-customer-invoices-relief-clause.md
+            - name: Skriva ut GST-momsfakturor
+              href: ../financials/localizations/tasks/my-00005-print-gst-tax-invoices.md
+            - name: Självfakturerade fakturor
+              href: ../financials/localizations/tasks/my-00007-self-billed-invoices.md
+            - name: Inställning av GST-lättnadssatser (moms)
+              href: ../financials/localizations/tasks/my-00006-01-gst-relief-clauses.md
+        - name: Mexiko
+          href: ../financials/localizations/mexico.md
+          items:
+            - name: Lokaliseringens omfattning
+              href: ../financials/localizations/latam-mex-scope.md
+            - name: Rapport för inflationsjusteringsdeklaration
+              href: ../financials/localizations/latam-mex-adjustment-inflation-declaration-report.md
+            - name: Avbryt en elektronisk faktura
+              href: ../financials/localizations/tasks/mx-00010-cancel-electronic-invoice.md
+            - name: CFDI-version 3.3
+              href: ../financials/localizations/latam-mex-cfdi-3-3.md
+            - name: Kundregistrerings-ID och annan information
+              href: ../financials/localizations/tasks/mx-00007-customer-registration-ids-other-information.md
+            - name: DIOT-deklarationsutdrag
+              href: ../financials/localizations/latam-mex-diot-declaration-statement.md
+            - name: E-fakturering CFDI
+              href: ../financials/localizations/tasks/mx-00010-e-invoicing-cfdi.md
+            - name: Elektroniska fakturor
+              href: ../financials/localizations/latam-mex-CFDI-electronic-invoices.md
+            - name: Elektroniska redovisningsutdrag
+              href: ../financials/localizations/latam-mex-electronic-ledger-accounting-statements.md
+            - name: Ange momsregistrerings-ID för mexikanska juridiska personer
+              href: ../financials/localizations/tasks/mx-00010-enter-tax-registration-ids-mexican-legal-entities.md
+            - name: Fråga och skriv ut en elektronisk faktura
+              href: ../financials/localizations/tasks/mx-00010-inquire-print-electronic-invoice.md
+            - name: ISR-deklarationsrapport
+              href: ../financials/localizations/latam-mex-isr-declaration-report-supporting-processes.md
+            - name: Bokför en fritextfaktura
+              href: ../financials/localizations/tasks/mx-00010-post-free-text-invoice.md
+            - name: Producera mexikansk elektronisk redovisningsrapport version 1.1
+              href: ../financials/localizations/tasks/mx-00020-electronic-ledger.md
+            - name: Ställ in parametrar för en elektronisk faktura
+              href: ../financials/localizations/tasks/mx-00010-set-parameters-electronic-invoice.md
+            - name: Ställ in momsrapporteringskoder för Mexiko
+              href: ../financials/localizations/tasks/mx-00006-sales-tax-code.md
+            - name: Ställ in kontoplanen för en juridisk person i Mexiko
+              href: ../financials/localizations/tasks/mx-00020-chart-accounts-legal-entity-mexico.md
+            - name: Ange RFC-registrerings-ID för mexikanska bankkonton
+              href: ../financials/localizations/tasks/mx-00020-specify-rfc-registration-id-mexican-bank-accounts.md
+            - name: ID för leverantörsregistrering
+              href: ../financials/localizations/tasks/mx-00008-vendor-registration-ids.md
+        - name: Nederländerna
+          href: ../financials/localizations/netherlands.md
+          items:
+            - name: Elektroniska momsdeklarationer (EVAT)
+              href: ../financials/localizations/tasks/nl-00010-electronic-tax-declarations-evat.md
+            - name: Semansys XBRL-integration
+              href: ../financials/localizations/tasks/nl-00003-semansys-xbrl-integration.md
+        - name: Norge
+          href: ../financials/localizations/norway.md
+          items:
+            - name: Kund- och leverantörsbetalningsformat
+              href: ../financials/localizations/tasks/no-00003-customer-vendor-payment-formats.md
+            - name: Kundbetalning baserat på betalnings-ID
+              href: ../financials/localizations/tasks/no-00002-customer-payment-based-payment-id.md
+            - name: Nets-importformat
+              href: ../financials/localizations/emea-nor-nets-import-format.md
+            - name: Momsutdrag
+              href: ../financials/localizations/emea-nor-sales-tax-payment-report.md
+            - name: Kassaapparater
+              href: ../retail/localizations/emea-nor-cash-registers.md?toc=/fin-and-ops/toc.json
+            - name: Riktlinjer för distribution av kassaapparater
+              href: ../retail/localizations/emea-nor-loc-deployment-guidelines.md?toc=/fin-and-ops/toc.json
+        - name: Polen
+          href: ../financials/localizations/poland.md
+          items:
+            - name: Beräkna radrabatter från enhetspris
+              href: ../financials/localizations/emea-pol-line-discount-calculation-from-unit-price.md
+            - name: Korrigeringsanteckningar
+              href: ../financials/localizations/emea-pol-correction-notes.md
+            - name: Numrering av försäljningsfakturadubbletter
+              href: ../financials/localizations/emea-pol-sales-invoice-duplicates-numbering.md
+            - name: Avskrivning av anläggningstillgång
+              href: ../financials/localizations/emea-pol-fixed-assets-depreciation.md
+            - name: Funktionstillägget Avyttrande av anläggningstillgång
+              href: ../financials/localizations/emea-pol-fixed-asset-disposal-functionality-extension.md
+            - name: Returförpackningar
+              href: ../financials/localizations/emea-pol-returnable-packages.md
+            - name: Momsrapporter
+              href: ../financials/localizations/emea-pol-sales-tax-reports.md
+            - name: Standardverifieringsfil
+              href: ../financials/localizations/emea-pol-standard-audit-file-saf.md
+            - name: Skatteränta och frihandsränta
+              href: ../financials/localizations/emea-pol-interest-calculation.md
+            - name: Omsättnings- och saldoutdrag
+              href: ../financials/localizations/emea-pol-turnover-balances-statement.md
         - name: Saudiarabien
           href: ../financials/localizations/saudi-arabia.md
           items:
@@ -2183,6 +2121,82 @@
               href: ../financials/localizations/apac-sau-sales-tax.md
             - name: Zakat-rapportering för Saudiarabien
               href: ../financials/localizations/emea-sau-zakat-reporting.md
+        - name: Singapore
+          href: ../financials/localizations/singapore.md
+          items:
+            - name: Skapa GST-05-rapport
+              href: ../financials/localizations/apac-sgp-generate-gst-05-report.md
+        - name: Spanien
+          href: ../financials/localizations/spain.md
+          items:
+            - name: Tillämpa kassarabatt på fakturan
+              href: ../financials/localizations/emea-esp-cash-discount-applied-invoice.md
+            - name: Alternativ för växel
+              href: ../financials/localizations/emea-esp-bill-of-exchange-options.md
+            - name: Villkorsmoms
+              href: ../financials/localizations/emea-esp-conditional-sales-tax.md
+            - name: Kreditfakturering
+              href: ../financials/localizations/tasks/emea-esp-credit-invoicing.md
+            - name: Räkenskapsdata från fakturakontot
+              href: ../financials/localizations/emea-esp-fiscal-data-invoice-account.md
+            - name: Omvärderingsgrupp för anläggningstillgångar
+              href: ../financials/localizations/emea-esp-fixed-asset-group-revaluation.md
+            - name: Inomeuropeisk moms
+              href: ../financials/localizations/emea-esp-intra-community-vat.md
+            - name: Engångskunder
+              href: ../financials/localizations/emea-esp-no-one-time-customer-for-project-contracts.md
+            - name: Skriv ut checkar med spansk layout
+              href: ../financials/localizations/emea-esp-print-checks-with-spanish-layout.md
+            - name: Alternativ för skuldsedel
+              href: ../financials/localizations/emea-esp-promissory-note-options.md
+            - name: Rapport 340
+              href: ../financials/localizations/emea-esp-report-340.md
+            - name: Inköps- och försäljningscykler
+              href: ../financials/localizations/emea-esp-sales-purchase-cycle.md
+            - name: Särskilda poster och ingående ark
+              href: ../financials/localizations/emea-esp-opening-sheets-spain.md
+        - name: Sverige
+          href: ../financials/localizations/sweden.md
+          items:
+            - name: Exportera ekonomisk information för revisorer i Sverige
+              href: ../financials/localizations/emea-swe-sie-standard-report.md
+            - name: Importera betalningsformat
+              href: ../financials/localizations/emea-swe-payment-formats-import.md
+            - name: Kassaapparater
+              href: ../retail/localizations/emea-swe-cash-registers.md?toc=/fin-and-ops/toc.json
+        - name: Schweiz
+          href: ../financials/localizations/switzerland.md
+          items:
+            - name: Importera kundbetalningar i ESR
+              href: ../financials/localizations/emea-che-esr-customer-payments-import.md
+        - name: Thailand
+          href: ../financials/localizations/thailand.md
+          items:
+            - name: Lagerkortsrapporter
+              href: ../financials/localizations/apac-tha-stock-card-reports.md
+            - name: Momsfaktura för ersättning/justering
+              href: ../financials/localizations/apac-tha-substitution-and-adjustment-invoices.md
+            - name: Orealiserad moms
+              href: ../financials/localizations/apac-tha-unrealized-vat.md
+            - name: Källskatt
+              href: ../financials/localizations/apac-tha-withholding-tax.md
+        - name: Storbritannien
+          href: ../financials/localizations/united-kingdom.md
+          items:
+            - name: Konstruktionsbranschschema
+              href: ../financials/localizations/emea-gbr-cis-construction-industry-scheme.md
+            - name: Skapa en kredit för kvittningsrabatt
+              href: ../financials/localizations/tasks/gb-00009-credit-note-settlement-discount.md
+            - name: Skapa en inköpsorder som omfattar artiklar med återfört tillägg
+              href: ../financials/localizations/tasks/purchase-order-reverse-charge-vat.md
+            - name: Skapa en försäljningsorder som omfattar artiklar med återfört tillägg
+              href: ../financials/localizations/tasks/gb-00002-sales-order.md
+            - name: Ställa in artikelmomsgrupper för återfört tillägg
+              href: ../financials/localizations/tasks/gb-00002-item-sales-tax-groups-reverse-charge-vat.md
+            - name: 'Ställa in artikelgrupper, regler och parametrar för återfört tillägg'
+              href: ../financials/localizations/tasks/gb-00002-reverse-charge-vat-item-groups.md
+            - name: Ställa in momsgrupper för återfört tillägg
+              href: ../financials/localizations/tasks/gb-00002-sales-tax-groups-reverse-charge-vat.md
         - name: USA
           href: ../financials/localizations/united-states.md
           items:
@@ -2195,13 +2209,21 @@
       items:
         - name: Utveckla en personalstrategi
           items:
+            - name: Skapa mål
+              href: hr/tasks/create-goal.md
             - name: 'Organisera arbetsstyrkan med avdelningar, jobb och befattningar'
               href: ../talent/departments-jobs-positions.md
             - name: Ställ in jobbkomponenter
               href: ../talent/create-job.md
+            - name: Definiera nya avdelningar
+              href: hr/tasks/define-new-departments.md
+            - name: Definiera nya jobb
+              href: hr/tasks/define-new-jobs.md
             - name: Skapa en avdelning och associera den med avdelningshierarkin
               href: ../talent/create-department-add-department-hierarchy.md
-            - name: Ställa in personalparametrar hos juridiska personer
+            - name: Skapa kalendrar och generera arbetstider
+              href: hr/tasks/create-calendar-working-times.md
+            - name: Ställa in personalparametrar för juridiska personer
               href: ../talent/set-up-hr-parameters-across-legal-entities.md
             - name: Ställa in företagsspecifika personalparametrar
               href: ../talent/set-up-company-specific-hr-parameters.md
@@ -2209,12 +2231,46 @@
               href: ../talent/personnel-actions-faq.md
             - name: Använd arbetsflöde för att hantera medarbetarinformation
               href: ../talent/workflow-manage-employee-information.md
+            - name: Ändra rapporteringsrelationer för befattningar
+              href: hr/tasks/modify-reporting-relationships-position.md
+            - name: Godkänna poster för ansökningsinkorg
+              href: hr/tasks/approve-application-inbox-records.md
+            - name: Ange arbetarinformation
+              href: hr/tasks/enter-worker-information.md
+            - name: Låna ut artiklar till arbetare
+              href: hr/tasks/loan-item-worker.md
+            - name: Skapa låneartiklar
+              href: hr/tasks/create-loan-items.md
+            - name: Hantera artiklar utlånade till arbetare
+              href: ../talent/loan-items.md
+            - name: Utveckla en successionsplan
+              href: hr/tasks/develop-succession-plan.md
+            - name: Ange projekttidrapporter
+              href: hr/tasks/enter-project-timesheets.md
+            - name: Hantera e-postmallar
+              href: hr/tasks/manage-email-templates.md
+            - name: Hantera ledighet och frånvaro
+              href: hr/tasks/manage-leave-absence.md
         - name: Rekrytering
           items:
             - name: Hantera rekryteringsprocesser
               href: hr/manage-recruiting-process.md
             - name: Massanställningsprojekt
               href: hr/mass-hire-projects.md
+            - name: Skapa massanställningsprojekt
+              href: hr/tasks/create-mass-hire-project.md
+            - name: Ange sökanden och ansökningsdata manuellt
+              href: hr/tasks/enter-applicant-application-data-manually.md
+            - name: Utveckla och öppna jobbrekvisitioner
+              href: hr/tasks/develop-open-job-requisition.md
+            - name: Ställ in befattningar
+              href: hr/tasks/set-up-positions.md
+            - name: Anställa kandidater via rekrytering
+              href: hr/tasks/hire-candidate-through-recruiting.md
+            - name: Anställa befintliga medarbetare via rekrytering
+              href: hr/tasks/hire-existing-employee-through-recruiting.md
+            - name: Identifiera och distribuera kandidaturvalsverktyg
+              href: hr/tasks/identify-deploy-candidate-selection-tools.md
         - name: Motivera medarbetare
           items:
             - name: Kompensationsplaner
@@ -2223,8 +2279,22 @@
               href: ../talent/create-fixed-compensation-plans.md
             - name: Skapa planer för variabel kompensation
               href: ../talent/create-variable-compensation-plans.md
+            - name: Definiera kompensationsprocesser och beräkna resultat
+              href: hr/tasks/define-compensation-process-calculate-results.md
             - name: Bearbeta kompensation
               href: ../talent/process-compensation.md
+            - name: Ställa in kompensationsrutnät
+              href: hr/tasks/set-up-compensation-grids.md
+            - name: Utveckla strukturer och planer för lön/kompensation
+              href: hr/tasks/develop-salary-compensation-structure-plan.md
+            - name: Lägga till information i din resultatjournal och skicka beröm
+              href: hr/tasks/add-your-performance-journal-send-praise-someone.md
+            - name: Registrera medarbetare i en fast kompensationsplan
+              href: hr/tasks/enroll-employee-fixed-compensation-plan.md
+            - name: Registrera medarbetare i en variabel kompensationsplan
+              href: hr/tasks/enroll-employee-variable-compensation-plan.md
+            - name: Skapa resultatöversyner
+              href: hr/tasks/create-performance-review.md
         - name: Utveckla och utbilda medarbetare
           items:
             - name: Översikt över prestationshantering
@@ -2239,9 +2309,19 @@
               href: ../talent/manage-benefit-program.md
             - name: Policyer för förmånsberättigande
               href: ../talent/benefit-eligibility-policies.md
-            - name: Hantera artiklar utlånade till arbetare
-              href: ../talent/loan-items.md
-        - name: Samla information med enkäter
+            - name: Process för förmånsberättigande
+              href: hr/tasks/benefit-eligibility-process.md
+            - name: Definiera förmånsberättiganderegler och policyer
+              href: hr/tasks/define-benefit-eligibility-rules-policies.md
+            - name: Utveckla ett förmånsprogram för medarbetare
+              href: hr/tasks/deliver-employee-benefits-program.md
+            - name: Skapa nya förmåner
+              href: hr/tasks/create-new-benefit.md
+            - name: Registrera arbetare för förmåner och ta bort förmåner från arbetare
+              href: hr/tasks/enroll-remove-benefits-workers.md
+            - name: Hantera utgångsdatum för förmån
+              href: hr/tasks/manage-benefit-expiration-dates.md
+        - name: Samla in information med enkäter
           items:
             - name: Enkäter
               href: ../talent/questionnaires.md
@@ -2249,11 +2329,21 @@
               href: ../talent/design-questionnaires.md
             - name: Distribuera och slutföra en enkät
               href: ../talent/distribute-questionnaires.md
+            - name: Distribuera enkäter med hjälp av tidsplanering
+              href: hr/tasks/distribute-questionnaires-scheduling.md
             - name: Utvärdera resultaten av en enkät
               href: ../talent/evaluate-questionnaire-results.md
+            - name: Analysera enkätresultat
+              href: hr/tasks/analyze-questionnaire-results.md
+            - name: Skapa öppna frågor
+              href: hr/tasks/create-open-ended-question.md
+            - name: Skapa stängda frågor
+              href: hr/tasks/create-closed-ended-question.md
+            - name: Skapa frågor beroende av svaret på den föregående frågan
+              href: hr/tasks/make-question-dependent-answer-previous-question.md
         - name: Arbetsplatssäkerhet och efterlevnad (USA)
           items:
-            - name: Verifiering av I–9-formulär
+            - name: Verifiering av I-9-formulär
               href: hr/localizations/noam-usa-form-i-9-verification.md
             - name: Verifiera anställningskvalifikationer med formuläret I-9
               href: hr/localizations/tasks/employment-verification-i9-verification.md
@@ -2263,6 +2353,10 @@
               href: hr/localizations/noam-usa-comply-ada.md
             - name: Hantera arbetstagarnas logi
               href: hr/localizations/tasks/manage-worker-accommodations.md
+            - name: Ställa in information om skador och sjukdomar
+              href: hr/tasks/set-up-injury-illness-information.md
+            - name: Underhålla information om medarbetares skador och sjukdomar
+              href: hr/tasks/maintain-employee-injury-illness-information.md
         - name: 'Lön, USA'
           href: hr/localizations/noam-usa-payroll.md
           items:
@@ -2331,88 +2425,6 @@
                   href: hr/localizations/noam-usa-payroll-data-updates.md
                 - name: Standardrapporter för lön
                   href: hr/localizations/noam-usa-generate-payroll-reports.md
-        - name: Uppgifter för Personal
-          items:
-            - name: Lägga till information i din resultatjournal och skicka beröm
-              href: hr/tasks/add-your-performance-journal-send-praise-someone.md
-            - name: Analysera enkätresultat
-              href: hr/tasks/analyze-questionnaire-results.md
-            - name: Godkänna poster för ansökningsinkorg
-              href: hr/tasks/approve-application-inbox-records.md
-            - name: Process för förmånsberättigande
-              href: hr/tasks/benefit-eligibility-process.md
-            - name: Skapa kalendrar och generera arbetstider
-              href: hr/tasks/create-calendar-working-times.md
-            - name: Skapa stängda avslutade frågor
-              href: hr/tasks/create-closed-ended-question.md
-            - name: Skapa mål
-              href: hr/tasks/create-goal.md
-            - name: Skapa låneartiklar
-              href: hr/tasks/create-loan-items.md
-            - name: Skapa massanställningsprojekt
-              href: hr/tasks/create-mass-hire-project.md
-            - name: Skapa nya förmåner
-              href: hr/tasks/create-new-benefit.md
-            - name: Skapa öppna frågor
-              href: hr/tasks/create-open-ended-question.md
-            - name: Skapa resultatöversyner
-              href: hr/tasks/create-performance-review.md
-            - name: Definiera förmånsberättiganderegler och policyer
-              href: hr/tasks/define-benefit-eligibility-rules-policies.md
-            - name: Definiera kompensationsprocesser och beräkna resultat
-              href: hr/tasks/define-compensation-process-calculate-results.md
-            - name: Definiera nya avdelningar
-              href: hr/tasks/define-new-departments.md
-            - name: Definiera nya jobb
-              href: hr/tasks/define-new-jobs.md
-            - name: Utveckla ett förmånsprogram för medarbetare
-              href: hr/tasks/deliver-employee-benefits-program.md
-            - name: Utveckla och öppna jobbrekvisitioner
-              href: hr/tasks/develop-open-job-requisition.md
-            - name: Utveckla strukturer och planer för lön/kompensation
-              href: hr/tasks/develop-salary-compensation-structure-plan.md
-            - name: Utveckla en successionsplan
-              href: hr/tasks/develop-succession-plan.md
-            - name: Distribuera enkäter med hjälp av tidsplanering
-              href: hr/tasks/distribute-questionnaires-scheduling.md
-            - name: Registrera medarbetare i en fast kompensationsplan
-              href: hr/tasks/enroll-employee-fixed-compensation-plan.md
-            - name: Registrera medarbetare i en variabel kompensationsplan
-              href: hr/tasks/enroll-employee-variable-compensation-plan.md
-            - name: Registrera arbetare för förmåner och ta bort förmåner från arbetare
-              href: hr/tasks/enroll-remove-benefits-workers.md
-            - name: Ange sökanden och ansökningsdata manuellt
-              href: hr/tasks/enter-applicant-application-data-manually.md
-            - name: Ange projekttidrapporter
-              href: hr/tasks/enter-project-timesheets.md
-            - name: Ange arbetarinformation
-              href: hr/tasks/enter-worker-information.md
-            - name: Anställa kandidater via rekrytering
-              href: hr/tasks/hire-candidate-through-recruiting.md
-            - name: Anställa befintliga medarbetare via rekrytering
-              href: hr/tasks/hire-existing-employee-through-recruiting.md
-            - name: Identifiera och distribuera kandidaturvalsverktyg
-              href: hr/tasks/identify-deploy-candidate-selection-tools.md
-            - name: Låna ut artiklar till arbetare
-              href: hr/tasks/loan-item-worker.md
-            - name: Underhålla information om medarbetares skador och sjukdomar
-              href: hr/tasks/maintain-employee-injury-illness-information.md
-            - name: Skapa frågor beroende av svaret på den föregående frågan
-              href: hr/tasks/make-question-dependent-answer-previous-question.md
-            - name: Hantera utgångsdatum för förmån
-              href: hr/tasks/manage-benefit-expiration-dates.md
-            - name: Hantera e-postmallar
-              href: hr/tasks/manage-email-templates.md
-            - name: Hantera ledighet och frånvaro
-              href: hr/tasks/manage-leave-absence.md
-            - name: Ändra rapporteringsrelationerna för befattningar
-              href: hr/tasks/modify-reporting-relationships-position.md
-            - name: Ställa in kompensationsrutnät
-              href: hr/tasks/set-up-compensation-grids.md
-            - name: Ställa in information om skador och sjukdomar
-              href: hr/tasks/set-up-injury-illness-information.md
-            - name: Ställ in befattningar
-              href: hr/tasks/set-up-positions.md
     - name: Intelligence
       href: ../dev-itpro/analytics/bi-reporting-home-page.md?toc=/fin-and-ops/toc.json
       items:
@@ -3635,6 +3647,8 @@
               href: ../supply-chain/sales-marketing/tasks/register-sales-commissions.md
             - name: Ställ in regler för försäljningsprovision
               href: ../supply-chain/sales-marketing/tasks/set-up-sales-commission-rules.md
+        - name: Handelsavdrag
+          href: ../supply-chain/sales-marketing/trade-allowance.md
     - name: Servicehantering
       href: ../supply-chain/service-management/service-management-home-page.md
       items:

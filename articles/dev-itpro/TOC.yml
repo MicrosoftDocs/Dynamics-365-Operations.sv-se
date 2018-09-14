@@ -263,7 +263,7 @@
               href: extensibility/naming-guidelines-extensions.md
             - name: Släppa på modellbegränsningar för att omstrukturera överlägg till tillägg
               href: extensibility/refactoring-over-layering.md
-        - name: Hur gör jag?
+        - name: Skapa tillägg
           items:
             - name: Lägga till värden i enums
               href: extensibility/add-enum-value.md
@@ -311,15 +311,37 @@
               href: extensibility/maps-as-interfaces.md
             - name: Utöka registermappningar som används för versionshantering
               href: extensibility/maps-with-versioning.md
+        - name: Skapa utbyggbara lösningar
+          items:
+            - name: Skriva utbyggbar kod
+              href: extensibility/writing-extensible-code.md
+            - name: Klasser
+              href: extensibility/extensible-classes.md
+            - name: Metoder
+              href: extensibility/extensible-methods.md
+            - name: Formulär
+              href: extensibility/extensible-forms.md
+            - name: Utökade datatyper
+              href: extensibility/extensible-edts.md
+            - name: Utbyggbara enums
+              href: extensibility/extensible-enums.md
+            - name: Ombud
+              href: extensibility/extensible-code-delegates.md
+            - name: Register
+              href: extensibility/extensible-tables.md
+            - name: Attribut för utökningsbarhet för metoder
+              href: extensibility/extensibility-attributes.md
+            - name: Dela upp ändringar
+              href: extensibility/breaking-changes.md
     - name: Resultat
       items:
-        - name: Börja spåra med Trace Parser
+        - name: Börja spåra med Trace-parser
           href: perf-test/trace-trace-tutorial.md
         - name: Performance SDK och fleranvändartester via Visual Studio Online
           href: perf-test/perfsdk-tutorial.md
         - name: Performance SDK och fleranvändartestning i lokala miljöer
           href: perf-test/perfsdk-tutorial-lbd.md
-        - name: Diagnostisera problem och analysera prestanda med Trace Parser
+        - name: Diagnostisera problem och analysera prestanda med Trace-parser
           href: perf-test/trace-parser.md
         - name: Prestandatimer
           href: perf-test/performance-timer.md
@@ -1184,6 +1206,8 @@
       items:
         - name: Skapa regler för optimerings-advisor
           href: sysadmin/create-rules-optimization-advisor.md
+    - name: Rapportera ett produktionsavbrott
+      href: lifecycle-services/report-production-outage.md
 - name: Lifecycle Services
   items:
     - name: Resurser för Lifecycle Services
@@ -1236,11 +1260,13 @@
       href: lifecycle-services/monitoring-diagnostics.md
     - name: Starta om miljötjänster
       href: lifecycle-services/restart-environment-services.md
+    - name: Rapportera ett produktionsavbrott
+      href: lifecycle-services/report-production-outage.md
     - name: Spåra användares inloggningar
       href: lifecycle-services/user-logins.md
     - name: Tillgångsbibliotek
       href: lifecycle-services/asset-library.md
-    - name: Översättningstjänst för Microsoft Dynamics 365
+    - name: Microsoft Dynamics 365 Translation Service
       href: lifecycle-services/translation-service-overview.md
       items:
         - name: Översätta användargränssnittsfiler
