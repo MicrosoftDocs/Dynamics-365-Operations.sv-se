@@ -3,7 +3,7 @@ title: "Ställa in en användares prioriterade tidszon"
 description: "Följande procedur beskriver hur en användare med rollen systemadministratör kan ange tidszon för en användare."
 author: pvillads
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

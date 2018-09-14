@@ -3,7 +3,7 @@ title: " Skapa och associera en enhet"
 description: "Den här proceduren går igenom hur du skapar en ny enhet och kopplar den till ett register."
 author: jashanno
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

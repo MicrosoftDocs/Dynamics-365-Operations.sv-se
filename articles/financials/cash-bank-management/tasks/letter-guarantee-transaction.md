@@ -3,7 +3,7 @@ title: Garantitransaktion
 description: "I den här proceduren förklaras processen för garanti."
 author: kweekley
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

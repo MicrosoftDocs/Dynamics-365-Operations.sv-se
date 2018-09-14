@@ -3,7 +3,7 @@ title: "Ställ in information om skador och sjukdomar"
 description: "Arbetsgivare behöver veta när deras medarbetare skadas eller blir sjuka på grund av faror på arbetsplatsen."
 author: ShielaSogge
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

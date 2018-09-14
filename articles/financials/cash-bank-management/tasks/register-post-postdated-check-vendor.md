@@ -3,7 +3,7 @@ title: "Registrera och bokför en efterdaterad check för en leverantör"
 description: "Du kan registrera informationen om en efterdaterad check innan du utfärdar checken till en leverantör genom att använda bokföringsordern."
 author: kweekley
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

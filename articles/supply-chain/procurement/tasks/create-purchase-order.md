@@ -3,7 +3,7 @@ title: "Skapa en inköpsorder"
 description: "Den här proceduren visar hur du skapar en inköpsorder manuellt."
 author: FrankDahl
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

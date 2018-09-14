@@ -3,7 +3,7 @@ title: "Ställ in ett menyalternativ för mobila enheter för att registrera mot
 description: "Denna uppgift är avsedd för inställningar av ett menykommando för mobila enheter."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

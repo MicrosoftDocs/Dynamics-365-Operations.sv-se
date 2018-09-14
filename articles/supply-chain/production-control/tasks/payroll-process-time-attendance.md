@@ -3,7 +3,7 @@ title: "Aktivera löneprocessen för tid och närvaro"
 description: "I den här proceduren visas hur du aktiverar lönelistprocessen för tid och närvaro."
 author: johanhoffmann
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

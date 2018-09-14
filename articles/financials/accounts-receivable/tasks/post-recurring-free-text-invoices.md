@@ -3,7 +3,7 @@ title: "Generera och bokför återkommande fritextfakturor"
 description: "Återkommande fakturor används för att fakturakunder regelbundet för samma belopp."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

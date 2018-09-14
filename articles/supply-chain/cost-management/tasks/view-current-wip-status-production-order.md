@@ -3,7 +3,7 @@ title: "Visa aktuell PIA-status för en produktionsorder"
 description: "Den här proceduren visar hur du visar PIA-utdrag på en produktionsorder."
 author: AndersGirke
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

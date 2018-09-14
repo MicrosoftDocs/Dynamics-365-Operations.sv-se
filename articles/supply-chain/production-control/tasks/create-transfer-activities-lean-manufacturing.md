@@ -3,7 +3,7 @@ title: "Skapa överföringsaktiviteter för lean manufacturing"
 description: "Skapa en överföringsaktivitet för lean manufacturing."
 author: cvocph
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

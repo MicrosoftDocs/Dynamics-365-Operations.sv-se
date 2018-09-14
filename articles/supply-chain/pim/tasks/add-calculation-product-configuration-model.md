@@ -3,7 +3,7 @@ title: "Lägg till en beräkning i en produktkonfigurationsmodell"
 description: "I den här proceduren visas hur du kan lägga till en ny beräkning i en produktkonfigurationsmodell."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

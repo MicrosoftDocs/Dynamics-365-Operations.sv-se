@@ -3,7 +3,7 @@ title: "Lägg till en bild till en produkt"
 description: "I den här proceduren visas hur du lägger till en bild till en produkt. Det demonstrationdataföretag som använts för att skapa den här uppgiften är USMF."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

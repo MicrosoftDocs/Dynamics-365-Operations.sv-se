@@ -3,7 +3,7 @@ title: "Ställ in momsmyndigheter"
 description: "Skattemyndigheter är enheter dit den insamlade momsen måste rapporteras och betalas."
 author: twheeloc
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

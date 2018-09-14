@@ -3,7 +3,7 @@ title: "Aktivera en produktionsflödesversion"
 description: "Innan kanban-jobb kan skapas och aktiviteter bearbetas för en produktionsflödesversion måste du aktivera versionen."
 author: cvocph
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

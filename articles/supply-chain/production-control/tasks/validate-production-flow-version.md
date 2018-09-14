@@ -3,7 +3,7 @@ title: "Validera produktionsflöde och version"
 description: "Den här proceduren visar hur du skapar ett nytt produktionsflöde och en första version för lean manufacturing."
 author: ChristianRytt
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

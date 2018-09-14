@@ -3,7 +3,7 @@ title: "Rapportera framsteg på en mobil jobbenhet"
 description: "I den här proceduren visas hur du startar och rapporterar utvecklingen för ett produktionsjobb i registreringsformuläret för jobbenheten."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

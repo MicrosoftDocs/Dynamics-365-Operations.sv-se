@@ -3,7 +3,7 @@ title: "Leverera försäljningsorder utan lagerstyrning"
 description: "I den här handboken visas hur du uppdaterar en försäljningsorder när produkter skickas till kunden."
 author: omulvad
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

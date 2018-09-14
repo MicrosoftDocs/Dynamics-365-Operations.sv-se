@@ -3,7 +3,7 @@ title: "Godkänn en produktkonfigurationsmodell"
 description: "När du kör den här proceduren krävs det att det finns minst en modell för produktkonfiguration."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

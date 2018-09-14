@@ -3,7 +3,7 @@ title: "Ange sökanden och ansökningsdata manuellt"
 description: "I den här proceduren visas hur du manuellt hanterar information om sökanden och hans/hennes ansökning."
 author: kherr75
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

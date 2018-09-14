@@ -3,7 +3,7 @@ title: "Ställ in policyer för hierarkier för anskaffningskategorier"
 description: "Använd den här proceduren för att ställa in regler för att beställa produkter i en kategori."
 author: mkirknel
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Visa saldo för kostnadsobjekt"
 description: "Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF."
 author: AndersGirke
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

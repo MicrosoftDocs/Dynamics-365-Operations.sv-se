@@ -3,7 +3,7 @@ title: "Skapa en inköpsorder från en försäljningsorder"
 description: "Proceduren visar hur du kan skapa en inköpsorder som baseras på en försäljningsorder."
 author: omulvad
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

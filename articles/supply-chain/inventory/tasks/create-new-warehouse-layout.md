@@ -3,7 +3,7 @@ title: "Skapa en ny layout för lagerställe"
 description: "I den här proceduren visas hur du ställer in information om platserna i ett lagerställe."
 author: perlynne
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

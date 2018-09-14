@@ -3,7 +3,7 @@ title: " Skapa, beräkna och bokföra ett utdrag för en butik"
 description: "Den här proceduren går igenom de manuella stegen för att skapa, beräkna och bokföra ett utdrag för en butik."
 author: jashanno
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

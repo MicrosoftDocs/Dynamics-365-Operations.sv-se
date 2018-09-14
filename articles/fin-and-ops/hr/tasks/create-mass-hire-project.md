@@ -3,7 +3,7 @@ title: "Skapa ett massanställningsprojekt"
 description: "I den här proceduren beskrivs processen för att ställa in ett massanställningsprojekt."
 author: kherr75
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

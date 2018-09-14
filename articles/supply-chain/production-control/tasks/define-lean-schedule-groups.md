@@ -3,7 +3,7 @@ title: "Definiera resurssnåla schemagrupper"
 description: "Resurssnåla schemagrupper definieras för att kunna gruppera och skilja grupper åt i kanban-planering."
 author: cvocph
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

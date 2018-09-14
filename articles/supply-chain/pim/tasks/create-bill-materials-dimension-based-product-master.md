@@ -3,7 +3,7 @@ title: "Skapa en strukturlista för en dimensionsbaserad produktmall"
 description: "För den här proceduren bör du ha slutfört de tidigare 4 guiderna i denna sekvens av åtta inspelningar."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

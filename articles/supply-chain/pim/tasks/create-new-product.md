@@ -3,7 +3,7 @@ title: Skapa en ny produkt
 description: "Den här uppgiften visar hur du skapar en ny delad produkt."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

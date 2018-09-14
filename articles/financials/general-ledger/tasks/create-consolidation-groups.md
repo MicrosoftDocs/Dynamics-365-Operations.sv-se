@@ -3,7 +3,7 @@ title: Skapa konsolideringsgrupper och ytterligare konsolideringskonton
 description: "I den här proceduren ser du hur du skapar en konsolideringskontogrupp och sedan lägger till konton i gruppen."
 author: aprilolson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

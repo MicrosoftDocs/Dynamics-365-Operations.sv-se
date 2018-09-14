@@ -3,7 +3,7 @@ title: "Skapa avancerade regler för journaler"
 description: "Den här proceduren går igenom hur du kan skapa avancerade regler för journaler."
 author: aprilolson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

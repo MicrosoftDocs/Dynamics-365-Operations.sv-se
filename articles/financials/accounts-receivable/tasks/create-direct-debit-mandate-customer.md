@@ -3,7 +3,7 @@ title: "Skapa ett autogiromedgivande för en kund"
 description: "Den här uppgifthandbok visar hur du skapar ett autogiromedgivande och använder det på en faktura."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

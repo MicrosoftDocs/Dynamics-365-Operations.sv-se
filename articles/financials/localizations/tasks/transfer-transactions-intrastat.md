@@ -3,7 +3,7 @@ title: "Överföra transaktioner till Intrastat"
 description: "I den här proceduren går du igenom hur du ställer in Intrastat-parametrar och överför transaktioner till Intrastat."
 author: Anasyash
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

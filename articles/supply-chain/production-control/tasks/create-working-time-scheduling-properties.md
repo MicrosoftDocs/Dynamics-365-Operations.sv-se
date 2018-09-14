@@ -3,7 +3,7 @@ title: "Skapa planeringsegenskaper för arbetstider"
 description: "Planeringsegenskaper för arbetstider används när du kategoriserar arbetstidsintervall och definierar inställningar som operatörer måste ta med i beräkningen."
 author: sorenva
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

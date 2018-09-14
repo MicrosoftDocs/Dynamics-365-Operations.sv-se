@@ -3,7 +3,7 @@ title: "Definiera skapande av behållare"
 description: "I den här proceduren beskrivs hur du automatiserar skapandet av behållare för last Lagerstyrning."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

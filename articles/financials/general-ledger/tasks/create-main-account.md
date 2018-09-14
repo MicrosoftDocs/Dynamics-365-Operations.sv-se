@@ -3,7 +3,7 @@ title: Skapa ett huvudkonto
 description: "Den här uppgiften vägleder dig genom stegen för att lägga till en huvudkonto till en befintlig kontoplan."
 author: aprilolson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

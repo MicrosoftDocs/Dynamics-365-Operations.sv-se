@@ -3,7 +3,7 @@ title: "Importera konfiguration av ISO20022-kreditöverföring"
 description: "Denna procedur visar hur du importerar en elektronisk rapporteringkonfiguration för leverantörsbetalning."
 author: mrolecki
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Återställ kanban-jobbstatus"
 description: "Den här proceduren är avsedd för att återställa en felaktig kanban-jobbstatus."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

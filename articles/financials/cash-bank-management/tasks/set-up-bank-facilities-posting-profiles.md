@@ -3,7 +3,7 @@ title: "Ställ in bankkreditlimiter och bokföringsprofiler för garanti"
 description: "Denna uppgift skapar en bankkreditlimit och en bokföringsprofil som behövs för att bearbeta en garanti."
 author: kweekley
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

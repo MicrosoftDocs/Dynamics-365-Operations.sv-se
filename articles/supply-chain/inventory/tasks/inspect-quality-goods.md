@@ -3,7 +3,7 @@ title: "Kontrollera kvaliteten på varor"
 description: "I den här proceduren visas hur du bearbetar en kvalitetsorder."
 author: perlynne
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

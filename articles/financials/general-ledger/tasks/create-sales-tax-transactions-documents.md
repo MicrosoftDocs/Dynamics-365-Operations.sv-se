@@ -3,7 +3,7 @@ title: Skapa momstransaktioner i dokument
 description: "Moms på dokument beräknas genom att ange en momsgrupp, och en artikelmomsgrupp på dokument."
 author: twheeloc
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

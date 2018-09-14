@@ -3,7 +3,7 @@ title: "Definiera lagerberäkningsprocesser"
 description: "I den här proceduren om du vill gå du hjälp med konfigurationen för ifyllda processer för det grundläggande lager, genom att skapa en beräkningsgrupp och en inventeringsjournal."
 author: MarkusFogelberg
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

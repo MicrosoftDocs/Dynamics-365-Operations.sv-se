@@ -3,7 +3,7 @@ title: "Ställ in och skapa avskrivningsprofiler"
 description: "Avskrivningsprofiler bestämmer typ och frekvens av avskrivning för en tillgång."
 author: saraschi2
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

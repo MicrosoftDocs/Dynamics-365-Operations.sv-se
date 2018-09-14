@@ -3,7 +3,7 @@ title: " Butikskonfigurationer för Retail-utdrag"
 description: "Den här proceduren går igenom konfigurationer för den butik som påverkar hur butiksutdrag skapas och bokförs."
 author: jashanno
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: Ange arbetarinformation
 description: "När en rekryterare har skapat ett massanställningsprojekt och genererat befattningar, är nästa steg att ange arbetarinformation för de personer som anställs."
 author: kherr75
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

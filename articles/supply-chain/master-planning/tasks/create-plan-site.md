@@ -3,7 +3,7 @@ title: "Skapa en plan för en plats"
 description: "Produktionstadsplaneraren beräknar material- och kapacitetsbehov för att producera en specifik artikel."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

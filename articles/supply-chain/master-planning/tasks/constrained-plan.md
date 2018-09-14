@@ -3,7 +3,7 @@ title: "Generera en begränsad plan"
 description: "I den här proceduren visas hur du skapar en plan som tar hänsyn till både material- och kapacitetsbegränsningar."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

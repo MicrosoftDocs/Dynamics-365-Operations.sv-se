@@ -3,7 +3,7 @@ title: "Skapa fördefinierade produktvarianter"
 description: "Den här proceduren går igenom hur du skapar produktvarianter för en produktmall med kombinationer av produktdimensioner."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

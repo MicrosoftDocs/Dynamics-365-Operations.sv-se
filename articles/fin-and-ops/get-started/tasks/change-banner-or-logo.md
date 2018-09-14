@@ -3,7 +3,7 @@ title: "Ändra webbannonsen eller logotypen"
 description: "Följande procedur visar de steg som systemadministratörer kan använda för att uppdatera webbannons- eller logotypbilden som visas för en juridisk person."
 author: aneesmsft
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

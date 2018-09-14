@@ -3,7 +3,7 @@ title: "Ställ in elektroniska signaturer"
 description: "Använd den här proceduren för att konfigurera elektroniska signaturer."
 author: maertenm
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

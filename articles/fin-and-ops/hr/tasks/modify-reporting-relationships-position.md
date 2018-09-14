@@ -3,7 +3,7 @@ title: "Ändra rapporteringsrelationer för en befattning"
 description: "I den här proceduren visas hur du ändrar rapporteringsrelationen för en medarbetare."
 author: ShielaSogge
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

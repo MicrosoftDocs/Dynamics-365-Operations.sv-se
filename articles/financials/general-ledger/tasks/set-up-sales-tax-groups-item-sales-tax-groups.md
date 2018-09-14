@@ -3,7 +3,7 @@ title: "Ställ in momsgrupper och artikelmomsgrupper"
 description: "Registreringen av den här uppgiften omfattar inställningarna för moms och artikelmomsgrupper."
 author: twheeloc
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

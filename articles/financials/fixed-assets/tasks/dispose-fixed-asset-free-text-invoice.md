@@ -3,7 +3,7 @@ title: "Avyttra en anläggningstillgång med hjälp av en fritextfaktura"
 description: "Denna procedur visar hur du anskaffar en anläggningstillgång med hjälp av anskaffningsförslaget i anläggningstillgångsjournalen."
 author: saraschi2
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

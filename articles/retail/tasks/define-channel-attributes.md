@@ -3,7 +3,7 @@ title: " Definiera kanalattribut"
 description: "Berika kanalen genom att lägga till kanal- och produktattribut."
 author: jashanno
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

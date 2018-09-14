@@ -3,7 +3,7 @@ title: "Visa bokförda momstransaktioner"
 description: "Du kan visa bokförda momstransaktioner från olika sidor beroende på vad du behöver visa."
 author: twheeloc
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

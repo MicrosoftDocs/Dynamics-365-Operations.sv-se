@@ -3,7 +3,7 @@ title: "Överför data för produktmodeller"
 description: "När du exporterar data för en produktkonfigurationsmodell krävs det att du har minst en produktmodell."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

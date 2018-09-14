@@ -3,7 +3,7 @@ title: "Skapa en streckkod för en produkt"
 description: "I den här proceduren visas hur du skapar en streckkod manuellt med hjälp av artikelnumret M0001 som exempel."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

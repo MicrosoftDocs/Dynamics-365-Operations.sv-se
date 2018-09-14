@@ -3,7 +3,7 @@ title: "Skapa en inköpsorder för en engångsleverantör"
 description: "Den här proceduren visar hur du skapar en inköpsorder för en engångsleverantör."
 author: FrankDahl
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

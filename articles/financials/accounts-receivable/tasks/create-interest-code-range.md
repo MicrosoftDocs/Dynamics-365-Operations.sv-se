@@ -3,7 +3,7 @@ title: "Skapa en räntekod med ett intervall"
 description: "Räntekoder kan ställas in för att beräkna olika räntebelopp baserat på ett värdeintervall."
 author: ShivamPandey-msft
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

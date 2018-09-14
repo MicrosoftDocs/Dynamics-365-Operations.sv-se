@@ -3,7 +3,7 @@ title: "Batchorderlivscykel för början till start"
 description: "I den här proceduren får du hjälp med den första delen av livscykeln för en batchorder."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

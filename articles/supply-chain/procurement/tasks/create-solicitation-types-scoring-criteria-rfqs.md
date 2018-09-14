@@ -3,7 +3,7 @@ title: "Skapa begäranstyper och göra poängvillkor för anbudsförfrågan"
 description: "I den här handboken visas hur du skapar en typ av begäran och associerar med en poängmetod."
 author: mkirknel
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

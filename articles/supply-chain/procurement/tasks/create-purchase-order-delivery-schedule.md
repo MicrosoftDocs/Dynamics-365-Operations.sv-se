@@ -3,7 +3,7 @@ title: "Skapa en inköpsorder med en leveransplan"
 description: "Den här proceduren visas hur du kan skapa en leveransplan för en inköpsorder."
 author: FrankDahl
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

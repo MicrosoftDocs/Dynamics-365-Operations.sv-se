@@ -3,7 +3,7 @@ title: Hantera e-postmallar
 description: "Du kan överföra information från organisationens databas till bokmärkena i ett nytt dokument och använda den i mallarna som hjälper dig att kommunicera på ett effektivt sätt med sökande och kandidater."
 author: ShielaSogge
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

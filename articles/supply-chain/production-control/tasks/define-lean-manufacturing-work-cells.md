@@ -3,7 +3,7 @@ title: "Definiera arbetsgrupper för lean manufacturing"
 description: "En arbetsgrupp är en viss form av resursgrupp som går att använda i lean manufacturing-aktiviteter."
 author: cvocph
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

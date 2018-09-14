@@ -3,7 +3,7 @@ title: "Generera ett överföringsdokument för en intern lageröverföring"
 description: "I den här proceduren visas hur du skapar överföringsdokument för varurörelser i ett företag."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

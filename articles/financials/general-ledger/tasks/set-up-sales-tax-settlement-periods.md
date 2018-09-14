@@ -3,7 +3,7 @@ title: "Ställ in momskvittningsperioder"
 description: "Momskvittningsperioder innehåller information om periodintervall för rapportering och betalning av moms."
 author: twheeloc
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Konfigurera delning ekonomiska data mellan företag"
 description: "I den här proceduren visas hur du konfigurerar, aktiverar, validerar och löser konflikter när data delas mellan företag."
 author: aprilolson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

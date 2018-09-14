@@ -3,7 +3,7 @@ title: Tidsplanera kanban-jobb
 description: "Den här proceduren fokuserar på att tidsplanera kanban-processjobb för en specifik arbetsgrupp."
 author: ChristianRytt
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

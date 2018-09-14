@@ -3,7 +3,7 @@ title: "Ta emot artiklar i inköpsorder från artikelbehov"
 description: "Nedan beskrivs proceduren för att ta emot artiklar i en inköpsorder från ett artikelbehov."
 author: KimANelson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

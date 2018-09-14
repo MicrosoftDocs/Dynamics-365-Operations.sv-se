@@ -3,7 +3,7 @@ title: "Ange ett tillägg till en anläggningstillgång"
 description: "I den här proceduren visas hur du lägger till ett tillägg till en befintlig anläggningstillgång."
 author: saraschi2
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Registrera en leverantörsfaktura i fakturajournalen"
 description: "Den här uppgifthandboken visar hur du registrerar leverantörsfakturor som inte är kopplade till inköpsorder."
 author: abruer
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

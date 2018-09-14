@@ -3,7 +3,7 @@ title: "Ställ in ansvarsfördelning"
 description: "Du kan ställa in regler för att separera uppgifter som måste utföras av andra användare."
 author: maertenm
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

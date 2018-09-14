@@ -3,7 +3,7 @@ title: "Övervaka en huvudplaneringskörning"
 description: "Produktionsplaneraren vill visa om en huvudplaneringskörning pågår."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

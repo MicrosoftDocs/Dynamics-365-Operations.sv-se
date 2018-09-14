@@ -3,7 +3,7 @@ title: "Definiera granskningspolicyer för källdokument"
 description: "I den här proceduren visar vi hur du ställer in och kör granskningsprincipregler."
 author: ryansandness
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

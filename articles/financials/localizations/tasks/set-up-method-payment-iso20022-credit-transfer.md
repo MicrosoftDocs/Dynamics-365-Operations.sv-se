@@ -3,7 +3,7 @@ title: "Ställ in en betalningsmetod för ISO20022-kreditöverföringar"
 description: "I denna procedur visas hur du ställer in leverantörbetalningsmetoden för ISO20022-kreditöverföring eller någon annan betalningstyp med hjälp av elektronisk rapportering, om du vill skapa en fil."
 author: mrolecki
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

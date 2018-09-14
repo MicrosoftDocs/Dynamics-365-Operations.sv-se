@@ -3,7 +3,7 @@ title: "Ställ in behörigheter att beställa produkter för någon annans räkn
 description: "I den här proceduren visas hur du beviljar arbetare behörighet att förbereda inköpsrekvisitioner på uppdrag av andra arbetare."
 author: mkirknel
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

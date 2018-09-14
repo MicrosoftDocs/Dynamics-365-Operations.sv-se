@@ -3,7 +3,7 @@ title: "Skapa en formel genom att kopiera från en befintlig formel"
 description: "I den här proceduren visas hur du skapar snabbt en ny formel genom att kopiera från en befintlig formel."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

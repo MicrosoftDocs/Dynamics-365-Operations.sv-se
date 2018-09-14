@@ -3,7 +3,7 @@ title: Skapa och tilldela avancerade regelstrukturer
 description: "Den här uppgiften beskriver steg för steg hur du skapar och tilldelar en avancerad regelstruktur till en kontostruktur."
 author: aprilolson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

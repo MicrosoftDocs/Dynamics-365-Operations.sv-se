@@ -3,7 +3,7 @@ title: "Översikt över kundbetalning"
 description: "Den här guiden går igenom olika metoder som används för att ange kundbetalningar."
 author: kweekley
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

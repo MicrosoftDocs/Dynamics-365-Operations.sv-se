@@ -3,7 +3,7 @@ title: Tidsplanera en produktionsorder med operationer och jobbplanering
 description: "Den här proceduren fokuserar på tidsplanering av en produktionsorder med grovplanering och finplanering."
 author: ChristianRytt
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Ställ in alias för huvudbokskonto"
 description: "Den här proceduren visar hur du skapar ett kontoalias som innehåller en genväg för att ange ett kontonummer."
 author: aprilolson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

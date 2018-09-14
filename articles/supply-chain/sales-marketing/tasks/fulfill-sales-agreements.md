@@ -3,7 +3,7 @@ title: "Uppfyll försäljningsavtal"
 description: "I den här proceduren visas hur du uppfyller ett försäljningsavtal genom att koppla försäljningsorder med det."
 author: omulvad
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: Skapa operationstidsmallar
 description: "Arbetstidsmallar definierar arbetstiden under en vecka och används för att generera arbetstider för en tidsperiod."
 author: sorenva
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

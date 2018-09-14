@@ -3,7 +3,7 @@ title: "Ställ in kompensationsrutnät"
 description: "Kompensationsrutnät används för att definiera och underhålla lönstrukturerna för fasta kompensationsplaner."
 author: kherr75
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

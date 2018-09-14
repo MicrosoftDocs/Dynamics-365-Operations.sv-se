@@ -3,7 +3,7 @@ title: "Ställ in kvalitetsorder"
 description: "I den här proceduren visas om hur du aktiverar en kvalitetshantering process där det inkommande lager måste kontrolleras omedelbart efter fakturaregister."
 author: perlynne
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

@@ -3,7 +3,7 @@ title: "Ändra kanban-regel för ett processjobb"
 description: "Den här proceduren fokuserar på att ändra den använda kanban-regeln för en viss kanban."
 author: ChristianRytt
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications

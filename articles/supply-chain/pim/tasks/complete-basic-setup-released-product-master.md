@@ -3,7 +3,7 @@ title: "Slutför grundläggande inställningar för en frisläppt produktmall"
 description: "I den här proceduren visas hur du slutför de basinställningar som krävs innan produktmallen kan användas i strukturversioner."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 8/29/2018
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
