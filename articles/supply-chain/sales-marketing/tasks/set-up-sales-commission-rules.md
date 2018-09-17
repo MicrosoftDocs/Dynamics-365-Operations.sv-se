@@ -3,23 +3,24 @@ title: "Ställ in regler för försäljningsprovision"
 description: "I den här proceduren visas om hur du ställer in och aktiverar försäljningsprovisionsberäkning och knipning."
 author: omulvad
 manager: AnnBe
-ms.date: 11/03/2017
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: CommissionCustomerGroup, CommissionItemGroup, CommissionSalesGroup, CommissionSalesMember, DirPartyLookup, CommissionCalc, InventPosting, CustTable, EcoResProductDetailsExtended
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: omulvad
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 8e7d2198b4976a6f60f05690d7b6f11f3da55e28
-ms.openlocfilehash: 3d5c38b1f07803242350fe016b45c45d49c0b59b
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 8d81765884f741443d1c0f5b0cb8bc545945e1a1
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 # <a name="set-up-sales-commission-rules"></a>Ställ in regler för försäljningsprovision
@@ -45,7 +46,7 @@ I den här proceduren visas om hur du ställer in och aktiverar försäljningspr
     * En provisionsförsäljningsgrupp anger medarbetarna i säljarrollerna som är berättigade till en provision när en kund som associeras med relevant försäljningsgrupp köper vissa artiklar.  
     * I demonstrationsföretaget USMF finns det en försäljningsgrupp som kallas Säljare USA.  
 13. Klicka på Allmänt i åtgärdsfönstret.
-14. Klicka på Sales rep.
+14. Klicka på Säljare.
     * Sidan Säljare visar en lista över företagets säljare som har associerats med en specifik provisionsgrupp. Du kan tilldela flera säljare till samma grupp och definiera deras respektive andel av det totala värdet för provisionstillägget som en procentsats. Den totala provisionsandelen för alla medarbetare får inte överstiga 100.  
 15. Markera vald rad i listan.
 16. Klicka på Redigera.

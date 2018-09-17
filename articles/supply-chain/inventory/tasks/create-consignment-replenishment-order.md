@@ -1,21 +1,22 @@
----
+--- 
 title: "Skapa en ny order för försändelseåteranskaffning"
 description: "I den här proceduren visas hur du skapar en lagerpåfyllnadsorder för försändelse, där du kan följa den förväntade leveransen från en leverantör till ditt försändelselager."
 author: mkirknel
 manager: AnnBe
-ms.date: 10/13/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: ConsignmentReplenishmentOrder, ConsignmentReplenishmentOrderCreate, InventTrans, ConsignmentDraftReplenishmentOrderJournal, InventOnhandMovement, InventOnhandItem, InventItemIdLookupSimple
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
 ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
 ms.openlocfilehash: f7f8005ec9e723c94d53e6ab81f04ee388c83faa
@@ -60,7 +61,7 @@ I den här proceduren visas hur du skapar en lagerpåfyllnadsorder för försän
 ## <a name="receive-items"></a>Ta emot artiklar
 1. Klicka på Produktinleverans.
 2. Ange ett värde i fältet External product receipt.
-3. Ange ett värde som är lägre än det som visas i fältet Quantity.
+3. Ange ett värde som är lägre än det som visas i fältet Quantity. 
 4. Klicka på OK.
 
 ## <a name="check-the-on-hand-inventory"></a>Kontrollera behållningslagret
@@ -70,4 +71,5 @@ I den här proceduren visas hur du skapar en lagerpåfyllnadsorder för försän
     * Artiklarna som har inlevererats som ett försändelselager ägt av leverantören finns tillgängliga i lager. Återstående kvantitet i lagerpåfyllnadsordern för försändelse anges i fältet Ordered in total.  
 4. Stäng sidan.
 5. Klicka på Stäng.
+
 

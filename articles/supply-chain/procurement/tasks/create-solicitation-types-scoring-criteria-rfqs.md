@@ -3,18 +3,19 @@ title: "Skapa begäranstyper och göra poängvillkor för anbudsförfrågan"
 description: "I den här handboken visas hur du skapar en typ av begäran och associerar med en poängmetod."
 author: mkirknel
 manager: AnnBe
-ms.date: 08/23/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: PurchRFQSolicitationType, PurchRFQCaseTableListPage, PurchCreateRFQCase, PurchRFQCaseTable, PurchRFQScoringRFQCaseCriteria, PurchRFQScoringCriteriaCopy
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: mkirknel
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
 ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
 ms.openlocfilehash: 095855d552d228375635bdbaa9fca37c47a3b952
@@ -42,6 +43,7 @@ I den här handboken visas hur du skapar en typ av begäran och associerar med e
 1. Gå till Anskaffning och källa > Anbudsförfrågningar > Alla anbudsförfrågningar.
 2. Klicka på Ny.
 3. Välj typen av begäran som du nyss skapat i fältet Typ av begäran. 
+    *   
 4. Klicka på OK.
 5. Klicka på Poängkriterier.
     * Poängkriterierna som visas är de från den poängmetod som du har associerat med typen av begäran. Du kan välja att lägga till eller ta bort kriterier på den här sidan. Det går också att lägga till nya kriterier, genom att kopiera dem från andra poängmetoder.  

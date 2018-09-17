@@ -1,21 +1,22 @@
----
+--- 
 title: "Överför fysiskt lager i lagerstället"
 description: "I den här proceduren beskrivs hur du kan skapa och bokföra en lageröverföringsjournal för att kunna lagret registrera förflyttningen av en artikel från en plats till en annan på samma lagerställe."
 author: MarkusFogelberg
 manager: AnnBe
-ms.date: 03/02/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: InventJournalTransfer, InventJournalCreate, InventItemIdLookupSimple, InventLocationIdLookup, WMSLocationIdLookup, InventTrans
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: mafoge
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
 ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
 ms.openlocfilehash: bfba69731a4897906d08ff9fb9ce69e79121efeb
@@ -67,4 +68,5 @@ I den här proceduren beskrivs hur du kan skapa och bokföra en lageröverförin
 1. Klicka på Lager.
 2. Klicka på Transaktioner.
     * Här kan du se de transaktioner som skapades när du bokförde din journal.  
+
 

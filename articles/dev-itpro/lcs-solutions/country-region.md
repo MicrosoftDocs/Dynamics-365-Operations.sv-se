@@ -3,7 +3,7 @@ title: Lokaliserings- och regelfunktioner
 description: "Det här ämnet innehåller listor med resurser som lär dig mer om lands- och regionspecifika funktioner."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 07/18/2018
+ms.date: 09/05/2018
 ms.topic: index-page
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 46165351f3c9048cfbecf25a1c49d8aeac1f3e1e
-ms.openlocfilehash: 787ce11701a9df951b38af5209206902d7c98019
+ms.sourcegitcommit: f64292a1b3726ea9b43f959a44c4ed2a1f392484
+ms.openlocfilehash: db18906739529e04710507ee9ff088540894171d
 ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/05/2018
 
 ---
 
@@ -31,7 +31,11 @@ ms.lasthandoff: 08/09/2018
 
 Microsoft Dynamics 365 for Finance and Operations innehåller funktioner för länder/regioner dokumenterade i [tillgänglighetsguiden för lokaliserade och översatta produkter](https://aka.ms/ax-availabilityguide). Den här funktionen aktiveras grundad på den aktiva juridiska personens primära adress. 
 
-Det här ämnet innehåller listor med resurser som lär dig mer om lands- och regionspecifika lösningar, uppdateringar, notifieringar och funktioner. 
+Det här avsnittet innehåller listor över resurser som kan hjälpa dig att göra följande: 
+- lära dig hur du utvecklar lands-/regionspecifika lösningar
+- hämta lands-/regionspecifika uppdateringar
+- skicka och granska regelnotifieringar
+- lära dig hur du använder lands-/regionspecifika funktioner 
 
 ## <a name="developing-localized-solutions"></a>Utveckla lokaliserade lösningar
 Följande resurser innehåller anvisningar och information som hjälper utvecklare och ISV som skapar lands-/regionspecifika anpassningar eller skapar en lösning för ett land Microsoft inte stöder.
@@ -75,156 +79,47 @@ Hitta uppgiftsguiderna genom att öppna i Microsoft Dynamics 365 for Finance and
 Mer information finns i [Uppgiftsguider](../../fin-and-ops/get-started/help-overview.md#task-guides).
 
 
-## <a name="countryregion-specific-help-topics"></a>Land-/regionspecifika hjälpavsnitt
-Följande avsnitt listar resurser efter land/region.
+## <a name="countryregion-specific-help-content"></a>Lands-/regionspecifikt hjälpinnehåll
+:::row:::
+    :::column:::
+        - [Australien](../../financials/localizations/australia.md)
+        - [Österrike](../../financials/localizations/austria.md)
+        - [Belgien](../../financials/localizations/belgium.md)
+        - [Brasilien](../../financials/localizations/brazil.md)
+        - [Kina](../../financials/localizations/china.md)
+        - [Tjeckien](../../financials/localizations/czech-republic.md)
+        - [Estland](../../financials/localizations/estonia.md)
+        - [Europa](../../financials/localizations/europe.md)
+        - [Frankrike](../../financials/localizations/france.md)
+        - [Tyskland](../../financials/localizations/germany.md)
+    :::column-end:::
+    :::column:::
+        - [Ungern](../../financials/localizations/hungary.md)
+        - [Indien](../../financials/localizations/india.md)
+        - [Italien](../../financials/localizations/italy.md)
+        - [Japan](../../financials/localizations/japan.md)
+        - [Lettland](../../financials/localizations/latvia.md)
+        - [Litauen](../../financials/localizations/lithuania.md)
+        - [Mexiko](../../financials/localizations/mexico.md)
+        - [Malaysia](../../financials/localizations/malaysia.md)
+        - [Nederländerna](../../financials/localizations/netherlands.md)
+        - [Norge](../../financials/localizations/norway.md)
+    :::column-end:::
+    :::column:::
+        - [Polen](../../financials/localizations/poland.md)
+        - [Saudiarabien](../../financials/localizations/saudi-arabia.md)
+        - [Singapore](../../financials/localizations/singapore.md)
+        - [Spanien](../../financials/localizations/spain.md)
+        - [Sverige](../../financials/localizations/sweden.md)
+        - [Schweiz](../../financials/localizations/switzerland.md)
+        - [Thailand](../../financials/localizations/thailand.md)
+        - [Storbritannien](../../financials/localizations/united-kingdom.md)
+        - [USA](../../financials/localizations/united-states.md)
+    :::column-end:::
+:::row-end:::
 
-### <a name="australiafinancialslocalizationsaustraliamd"></a>[Australien](../../financials/localizations/australia.md)
-### <a name="austriafinancialslocalizationsaustriamd"></a>[Österrike](../../financials/localizations/austria.md)
-### <a name="belgiumfinancialslocalizationsbelgiummd"></a>[Belgien](../../financials/localizations/belgium.md)
 
-### <a name="brazil"></a>Brasilien
 
--   [CIAP-anläggningstillgång](../../financials/localizations/latam-bra-ciap-fixed-asset.md)
--   [Konfigurera skatteböcker](../../financials/localizations/latam-bra-configure-fiscal-books.md)
--   [Exportera och importera transaktioner för redovisningskonsolidering för Brasilien](../../financials/localizations/latam-bra-general-ledger-consolidation-transactions.md)
--   [Skatteböcker](../../financials/localizations/latam-bra-fiscal-books.md)
--   [Platshållare för text i skattedokument](../../financials/localizations/latam-bra-fiscal-document-text-placeholders.md)
--   [Skattedokument](../../financials/localizations/latam-bra-fiscal-documents-fiscal-document-framework.md)
--   [ICMS-skattedokument](../../financials/localizations/latam-bra-icms-tax-fiscal-documents.md)
--   [Importera och verifiera NF-e XML-dokument och DANFE-filer](../../financials/localizations/latam-bra-import-verify-nf-e-xml-documents-danfe-emails.md)
--   [Importera skattedokument](../../financials/localizations/latam-bra-import-fiscal-documents.md)
--   [Journaler skapade under den elektroniska betalningsreturen](../../financials/localizations/latam-bra-examples-journals-generated-electronic-payment-return-process.md)
--   [NF-e-process](../../financials/localizations/latam-bra-nf-e-process.md)
--   [Parametrar för juridiska personer](../../financials/localizations/latam-bra-legal-entity-parameters.md)
--   [Bearbeta elektroniska betalningsremissor för Brasilien](../../financials/localizations/latam-bra-process-electronic-payment-remittances.md)
--   [Kompletterande skattedokumentet för inköp](../../financials/localizations/latam-bra-purchase-complementary-fiscal-documents.md)
--   [Refererade skattedokument](../../financials/localizations/latam-bra-referenced-fiscal-documents.md)
--   [Kompletterande skattedokumentet för försäljning](../../financials/localizations/latam-bra-sales-complementary-fiscal-documents.md)
--   [Elektroniska skattedokument för tjänster](../../financials/localizations/latam-bra-service-electronic-fiscal-document.md)
--   [Ställ in, importera och verifiera NF-e XML-dokument och DANFE](../../financials/localizations/latam-bra-set-up-import-nfe.md)
--   [Momsattribut](../../financials/localizations/latam-bra-tax-attributes.md)
--   [Momsbetalningar](../../financials/localizations/latam-bra-tax-payments.md)
--   [Skatter](../../financials/localizations/latam-bra-calculate-taxes.md)
-
-### <a name="chinafinancialslocalizationschinamd"></a>[Kina](../../financials/localizations/china.md)
-### <a name="the-czech-republicfinancialslocalizationsczech-republicmd"></a>[Tjeckien](../../financials/localizations/czech-republic.md)
-### <a name="estoniafinancialslocalizationsestoniamd"></a>[Estland](../../financials/localizations/estonia.md)
-
-### <a name="europe"></a>Europa
-- [Förskottsmottagare](../../financials/localizations/emea-advance-holders.md)
-- [Transaktioner för förskottsmottagare](../../financials/localizations/emea-advance-holders-transactions.md)
-- [Avancerad fakturering](../../financials/localizations/emea-advance-invoice.md)
-- [Bankavstämning](../../financials/localizations/emea-bank-reconciliation.md)
-- [Korrigeringsfakturering](../../financials/localizations/emea-corrective-invoice.md)
-- [Skapa och bokför periodiska journaler](../../financials/localizations/emea-create-post-periodic-journals.md)
-- [Redigera faktura-ID för försäljningsorder](../../financials/localizations/emea-edit-invoice-id-sales-orders.md)
-- [Mottagningskvitton för EU](../../financials/localizations/emea-entry-certificates.md)
-- [EU-säljlistrapportering](../../financials/localizations/emea-eu-sales-list.md)
-- [Valutakursjusteringar](../../financials/localizations/emea-exchange-rate-adjustments.md)
-- [Filformat för betalningsmetoder](../../financials/localizations/emea-select-file-formats-for-the-method-of-payments.md)
-- [Avyttring av anläggningstillgångar för Estland och Litauen](../../financials/localizations/emea-credit-note-reverse-fixed-asset-sale.md)
-- [Importera ISO20022-filer](../../financials/localizations/emea-ISO20022-file-formats.md)
-- [Intrastat](../../financials/localizations/emea-intrastat.md)
-- [Lagerjournalrapporter](../../financials/localizations/emea-set-up-report-inventory-journal-names.md)
-- [Faktura- och följesedelnumrering för Lettland och Litauen](../../financials/localizations/emea-invoices-packing-slips-numbering.md)
-- [Tidsgränser för fakturautfärdande](../../financials/localizations/emea-invoice-issue-deadline.md)
-- [OIOUBL-standarder](../../financials/localizations/emea-oioubl-standards-electronic-invoicing.md)
-- [Betalningskvittorapport](../../financials/localizations/emea-eur-payment-slip-report-giro.md)
-- [Handkassa](../../financials/localizations/emea-petty-cash.md)
-- [Bokför anläggningstillgången före anskaffning](../../financials/localizations/emea-pre-acquisition-acquisition-fixed-asset.md)
-- [Postnummer](../../financials/localizations/emea-import-create-postal-codes-manually.md)
-- [Registrerings-ID:n](../../financials/localizations/emea-registration-ids.md)
-- [Återföringsavgifter](../../financials/localizations/emea-reverse-charge.md)
-- [Översikt över SEPA-kreditöverföring](../../financials/accounts-payable/sepa-credit-transfer.md)
-- [Översikt över SEPA-autogiro](../../financials/accounts-receivable/sepa-direct-debit-overview.md)
-- [Ställ in kund- och leverantörskompensation](../../financials/localizations/emea-compensation-customer-vendor-transactions.md)
-- [Ställ in undertecknare för utskriftsformulär](../../financials/localizations/emea-set-up-signers-for-printing-forms.md)
-- [Storno-redovisning](../../financials/localizations/emea-storno.md)
-- [Skattedirektiv](../../financials/localizations/emea-tax-directives.md)
-- [Uppdatera hur belopp visas i rapporter och dokument](../../financials/localizations/emea-amount-printing-forms.md) 
-- [Momsvalutakurser](../../financials/localizations/emea-vat-exchange-rate.md)
-- [Momsregistrera transaktioner för Östeuropa](../../financials/localizations/emea-vat-register-transactions.md)
-- [Momsrapportering](../../financials/localizations/emea-vat-reporting.md)
-- [Visa transaktioner på kvittning](../../financials/localizations/emea-transactions-settlement-form.md)
-
-### <a name="francefinancialslocalizationsfrancemd"></a>[Frankrike](../../financials/localizations/france.md)
-### <a name="germanyfinancialslocalizationsgermanymd"></a>[Tyskland](../../financials/localizations/germany.md)
-### <a name="hungaryfinancialslocalizationshungarymd"></a>[Ungern](../../financials/localizations/hungary.md)
-
-### <a name="india"></a>Indien
-
-- [Anläggningstillgångar](../../financials/localizations/apac-ind-fixed-assets.md)
-    - [Överför kapitalvaror till anläggningstillgången](../../financials/localizations/tasks/apac-ind-transfer-capital-items.md)
-    - [Koppla en dagsbaserad kalender till en förteckning över anläggningstillgångar](../../financials/localizations/tasks/apac-ind-attach-day-based-calendar.md)
-    - [Ställ in parametrar för att beräkna avskrivningar](../../financials/localizations/tasks/apac-ind-set-up-depreciation.md)
-    - [Ställ in avskrivningsregel för tillgångsgrupp](../../financials/localizations/tasks/apac-ind-set-up-asset-group-dep.md)
-    - [Skapa en lagermodellgrupp för kapitalvaror](../../financials/localizations/tasks/apac-ind-create-inventory-model-group.md)
-    - [Växla avskrivningsberäkning för anläggningstillgångar i Indien](../../financials/localizations/tasks/apac-ind-shift-depreciation-rates.md)
-    - [Definiera typ av växling och bransch för böcker och koppla till anläggningstillgång](../../financials/localizations/tasks/apac-ind-books-shift-industry-types.md)
-- [Översikt över skattemotor](../../financials/general-ledger/tax-engine.md)
-    - [Integrering av skattemotor](../../financials/general-ledger/tax-engine-integration.md)
-    - [Vanliga frågor och svar om tröskelvärden för moms](../../financials/localizations/apac-ind-tax-thresholds.md)
-    - [Bygg ut skattemotorn](../../financials/general-ledger/extend-tax-engine-configurations.md)
-
-### <a name="italyfinancialslocalizationsitalymd"></a>[Italien](../../financials/localizations/italy.md)
-### <a name="japan"></a>Japan
-
--  [Bankbetalningsavgifter som täcks av leverantörer](../../financials/localizations/apac-jpn-bank-payment-fees-vendors.md)
--  [Konsoliderade fakturor](../../financials/localizations/apac-jpn-consolidate-invoices.md)
--  [Allokeringsregler för anläggningstillgångar](../../financials/localizations/apac-jpn-allocation-rules-fixed-assets.md)
--  [Jämnt fördelad avskrivningsmetod](../../financials/localizations/apac-jpn-equally-divided-depreciation-method.md)
--  [Avskrivning av anläggningstillgång](../../financials/localizations/apac-jpn-fixed-asset-depreciation.md)
--  [Hantering av nedskrivning av anläggningstillgång på kontantgenererande enhet](../../financials/localizations/apac-jpn-impairment-accounting-cash-generating-unit.md)
--  [Importera postnummer](../../financials/localizations/apac-jpn-import-postal-codes.md)
--  [Ställ in utrangeringsskyldighet för anläggningstillgångar](../../financials/localizations/apac-jpn-asset-retirement-obligation-fixed-assets.md)
--  [Ställ in avdragsposter för anläggningstillgångar](../../financials/localizations/apac-jpn-reduction-entry-fixed-assets.md)
--  [Betala en leverantör genom att godkänna en växel](../../financials/localizations/apac-jpn-endorse-bill-of-exchange.md)
--  [Beräkning av progressiv källskatt](../../financials/localizations/apac-jpn-progressive-withholding-tax-calculation.md)
-
-### <a name="latviafinancialslocalizationslatviamd"></a>[Lettland](../../financials/localizations/latvia.md)
-### <a name="lithuaniafinancialslocalizationslithuaniamd"></a>[Litauen](../../financials/localizations/lithuania.md)
-
-### <a name="mexico"></a>Mexiko
-
--   [DIOT-deklarationsutdrag](../../financials/localizations/latam-mex-diot-declaration-statement.md)
--   [Elektroniska redovisningsutdrag](../../financials/localizations/latam-mex-electronic-ledger-accounting-statements.md)
--   [Rapport för inflationsjusteringsdeklaration](../../financials/localizations/latam-mex-adjustment-inflation-declaration-report.md)
--   [ISR-deklarationsrapport](../../financials/localizations/latam-mex-isr-declaration-report-supporting-processes.md)
--   [Elektroniska fakturor (CFDI)](../../financials/localizations/latam-mex-CFDI-electronic-invoices.md)
-
-### <a name="malaysia"></a>Malaysia
-
--   [Moms för varor och tjänster (GST)](../../financials/localizations/apac-mys-gst.md)
-
-### <a name="netherlandsfinancialslocalizationsnetherlandsmd"></a>[Nederländerna](../../financials/localizations/netherlands.md)
-### <a name="norwayfinancialslocalizationsnorwaymd"></a>[Norge](../../financials/localizations/norway.md)
-### <a name="polandfinancialslocalizationspolandmd"></a>[Polen](../../financials/localizations/poland.md)
-### <a name="saudi-arabia"></a>Saudiarabien
-
--   [Zakat-rapporter](../../financials/localizations/emea-sau-zakat-reporting.md)
-
-### <a name="singapore"></a>Singapore
-
--   [Generera Singapore GST-05-rapport](../../financials/localizations/apac-sgp-generate-gst-05-report.md)
-
-### <a name="spainfinancialslocalizationsspainmd"></a>[Spanien](../../financials/localizations/spain.md)
-### <a name="swedenfinancialslocalizationsswedenmd"></a>[Sverige](../../financials/localizations/sweden.md)
-### <a name="switzerlandfinancialslocalizationsswitzerlandmd"></a>[Schweiz](../../financials/localizations/switzerland.md)
-### <a name="thailand"></a>Thailand
-
--   [Lagerkortsrapporter](../../financials/localizations/apac-tha-stock-card-reports.md)
--   [Momsfaktura för ersättning/justering för Thailand](../../financials/localizations/apac-tha-substitution-and-adjustment-invoices.md)
--   [Orealiserad moms](../../financials/localizations/apac-tha-unrealized-vat.md)
--   [Källskatt](../../financials/localizations/apac-tha-withholding-tax.md)
-
-### <a name="united-kingdomfinancialslocalizationsunited-kingdommd"></a>[Storbritannien](../../financials/localizations/united-kingdom.md)
-### <a name="united-states"></a>USA
-
--   [1099-blankett i den offentliga sektorn](../../financials/localizations/noam-usa-form-1099-public-sector.md)   
--   [Verifiering av I–9-formulär](../../fin-and-ops/hr/localizations/noam-usa-form-i-9-verification.md)
--   [1099-rapportering vid årsslut](../../financials/localizations/noam-usa-year-end-1099-reporting.md)
--   [Lön](../../fin-and-ops/hr/localizations/noam-usa-payroll.md)
--   [Offentlig sektor](../../financials/public-sector/public-sector-functionality.md)
 
 
 

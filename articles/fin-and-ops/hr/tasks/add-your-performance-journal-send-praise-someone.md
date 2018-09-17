@@ -1,28 +1,29 @@
 --- 
-title: "Lägg till information i din resultatjournal och skicka beröm till någon"
+title: "Lägg till i din resultatjournal och skicka beröm till någon"
 description: "Resultatjournalen innehåller information som är relaterad till hur du uppfyller dina mål eller hur du har presterat under en period."
 author: ShielaSogge
 manager: AnnBe
-ms.date: 10/13/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
-ms.service: dynamics-365-talent
+ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: EssWorkspace, HcmPerfJournal, HcmPerfJournalAddLink, HcmPerfPraise, HcmWorkerLookUpByPerson, HcmPerfJournalAdd
 audience: Application User
 ms.reviewer: rschloma
-ms.search.scope: Operations, Talent
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: shielas
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: 92cbb25839b8f202ba37a19ad88a54194a73c179
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: e232ba1f5803f6dee148f23098563c99c1622cdf
 ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/29/2017
 
 ---
-# <a name="add-information-to-your-performance-journal-and-send-praise"></a>Lägg till information i din resultatjournal och skicka beröm till någon
+# <a name="add-to-your-performance-journal-and-send-praise-to-someone"></a>Lägg till i din resultatjournal och skicka beröm till någon
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
@@ -42,7 +43,7 @@ Resultatjournalen innehåller information som är relaterad till hur du uppfylle
 9. Ange ett värde i fältet Keywords.
 10. Klicka på Add external link.
 11. Ange "Envision" i fältet Description.
-12. Skriv in "<https://www.microsoft.com/en/envision/default>" i fältet för Internetadress.
+12. Ange "https://www.microsoft.com/en/envision/default" i fältet för internetadress.
 13. Klicka på bilden vid namn "Performance journal" under Save-knappen när du vill återgå till rutnätet.
     * Du kan lägga till den valda journalen/de valda journalerna i ett mål så att den/de visas när du öppnar målet. En länk läggs till i snabbfliken för länkar. Om du lägger till en journal i ett mål och sedan lägger till målet i en granskning, kommer journalen att visas automatiskt i granskningen.  
     * Du kan lägga till den valda journalen/de valda journalerna i en granskning så att den/de visas när du öppnar granskningen.    En länk läggs till i snabbfliken Links.  

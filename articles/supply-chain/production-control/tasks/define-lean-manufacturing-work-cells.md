@@ -3,24 +3,25 @@ title: "Definiera arbetsgrupper för lean manufacturing"
 description: "En arbetsgrupp är en viss form av resursgrupp som går att använda i lean manufacturing-aktiviteter."
 author: cvocph
 manager: AnnBe
-ms.date: 11/03/2017
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: WrkCtrResourceGroup, InventLocationIdLookup, UnitOfMeasureLookup, DimensionLookup
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Manufacturing
 ms.author: conradv
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: f060f084baab055a51e390f488ca2553bd997b92
+ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
+ms.openlocfilehash: 1d2381c045f9f0f98b35912fa732f3627b038785
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 09/29/2017
 
 ---
 # <a name="define-lean-manufacturing-work-cells"></a>Definiera arbetsgrupper för lean manufacturing
@@ -75,7 +76,7 @@ En arbetsgrupp är en viss form av resursgrupp som går att använda i lean manu
 30. Klicka på Lägg till.
 31. Öppna sökningen genom att klicka på den nedrullningsbara knappen i fältet Produktionsflödesmodell.
 32. Hitta och markera önskad post i listan.
-    * Denna procedur kräver produktionsflödesmodelltypen Genomflöde för att visa definitionen av genomflödekapaciteten.  
+    * Detta kräver produktionsflödesmodelltypen Genomflöde för att visa definitionen av genomflödekapaciteten.  
 33. Klicka på länken på den valda raden i listan.
 34. Markera ett alternativ i fältet Kapacitetsperiod.
     * Alternativen omfattar: Standardarbetsdag – kapaciteten uttrycks i längden på standardarbetsdagen i arbetstidskalendern för arbetsgruppen. För varje dag bestäms den verkliga arbetstiden i kalendern och den gällande tillgängliga kapaciteten beräknas baserat på det.   Vecka – tillåter en veckokapacitet. Ingen justering görs av den verkliga arbetstiden.   Månad – tillåter en månadskapacitet. Ingen justering görs av den verkliga kapaciteten.   Vanligtvis används standardarbetsdagen för dagliga perioder, och veckokapaciteten används för veckokapacitetsperioder.  

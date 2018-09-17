@@ -44,11 +44,13 @@ Om du vill använda kreditkort måste du ställa in och aktivera en betalning p�
 
 ## <a name="adding-a-new-credit-card"></a>Lägg till ett nytt kreditkort
 Du kan skapa nya kreditkortsposter på sidan Kunder, genom att använda Kund, Inställning, Kreditkort. Du kan också skapa kreditkortsposter när du registrerar försäljningsorder på sidan Försäljningsorder, genom att använda Hantera, Kund, Kreditkort, Register.
-Lägg till ett kreditkort till en försäljningsorder
+
+<a name="adding-a-credit-card-to-a-sales-order"></a>Lägg till ett kreditkort till en försäljningsorder
 -------------------------------------
 
 Du kan lägga till ett kreditkort till en försäljningsorder, genom att välja ett kreditkort i kreditkortuppslagningen på snabbfliken Pris och rabatter på sidan Försäljningsorder. Om du vill starta behörighetsprocessen, väljer du kreditkort och godkänna i åtgärdsfönstret på fliken Hantera.
-Kreditkortskontroll
+
+<a name="authorizing-a-credit-card"></a>Kreditkortskontroll
 -------------------------
 
 När ett kreditkort auktoriseras verifieras kortnumret och kortinnehavarens namn, och det tillgängliga kreditsaldot bekräftas. Du kan även verifiera cvv-kod och kortinnehavarens adress verifieras. Kundens tillgängliga kreditsaldo minskas med beloppet på fakturan. Betaltjänsten skickar information om att kreditkortet har godkänts eller avvisats. När en försäljningsorder faktureras, debiteras kreditkortet (samlats in) med fakturabeloppet.
