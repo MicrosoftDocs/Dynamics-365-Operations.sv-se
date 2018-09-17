@@ -27,6 +27,8 @@ ms.lasthandoff: 08/09/2018
 
 # <a name="axerd-page-has-been-retired"></a>Sidan AxErd har tagits bort
 
+[!include [banner](../includes/banner.md)]
+
 Vi har tyvärr tvingats dra tillbaka webbsidan AxErd som tillhandahöll diagram för enhetsrelationer (ERD) för många tabeller i Microsoft Dynamics AX 2012. Vi har kunnat publicera både källkoden för projektet och HTML-filerna för webbsidan i en GitHub repo: https://github.com/Microsoft/ax-2012-doc-tools
 
 HTML-sidorna finns i repot på [https://github.com/Microsoft/ax-2012-doc-tools/tree/master/AxErd/AxErd/_RelatedFiles_AxErd/Deploy/Default.htm](https://github.com/Microsoft/ax-2012-doc-tools/tree/master/AxErd/AxErd/_RelatedFiles_AxErd/Deploy/Default.htm)

@@ -25,6 +25,8 @@ ms.lasthandoff: 08/09/2018
 
 # <a name="new-or-updated-task-guides-december-2017"></a>Nya eller uppdaterade uppgiftsguider (december 2017)
 
+[!include [banner](../includes/banner.md)]
+
 Detta avsnitt anger nya eller uppdaterade uppgiftsguider som släpptes för Microsoft (december 2016 - alla språk) APQC Unified Library för Microsoft Dynamics 365 for Operations.
 
 
