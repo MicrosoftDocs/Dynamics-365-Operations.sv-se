@@ -35,7 +35,9 @@ Funktionen för projekthantering och redovisning kan användas i flera branscher
 Ett projekt är en grupp aktiviteter som har utformats för att tillhandahålla en tjänst, tillverka en produkt eller för att uppnå ett resultat. Projekt förbrukar resurser och skapar ekonomiska resultat i form av intäkter eller tillgångar.
 
 ## <a name="projects-across-industries"></a>Projekt i flera branscher
-Funktionen för projekthantering och redovisning kan användas i flera branscher, som illustreras nedan. [![Projekt i flera branscher](./media/projects-accross-industries.jpg)](./media/projects-accross-industries.jpg) 
+Funktionen för projekthantering och redovisning kan användas i flera branscher, som illustreras nedan.
+
+[![Projekt i flera branscher](./media/projects-accross-industries.jpg)](./media/projects-accross-industries.jpg) 
 
 Hos en kundtjänst kan en biljett användas för att beskriva åtgärderna som krävs för att lösa ett ärende. Konsultföretag, till exempel management eller tekniska konsultorganisationer eller reklambyråer kallar sina aktiviteter för projekt. I marknadsföring representerar en kampanj en uppsättning med arbete som måste levereras. I projektbaserad tillverkning innehåller en produktionsorder de olika arbetsmomenten som måste göras för att tillverka en färdig produkt. Oavsett vilket namn som används, ingår det resurser, scheman och kostnader i projekten, och funktionen för projekthantering och redovisning i Microsoft Dynamics 365 for Finance and Operations kan hjälpa dig med planeringen, utförandet, och analysen av dessa projekt.
 
