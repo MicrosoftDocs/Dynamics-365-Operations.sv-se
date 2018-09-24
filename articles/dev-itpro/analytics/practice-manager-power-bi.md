@@ -18,10 +18,10 @@ ms.author: knelson
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: aac6439bb54b3b9cab066b06c01763e880efef8e
-ms.openlocfilehash: 44f017fc3460b83b730f2f7c909c6b88480dd918
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 7b2c13573aca2ceb0eca36cf4aeee80d2f56ab8a
 ms.contentlocale: sv-se
-ms.lasthandoff: 12/18/2017
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -42,7 +42,6 @@ Alla belopp i innehållet visas i systemvalutan. Du kan ange systemvalutan på s
 ## <a name="accessing-the-power-bi-content"></a>Åtkomst till Power BI-innehåll
 
 Power BI-innehållet **Praxischef** visas i arbetsytan **Projekthantering**.
-
 
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Rapporter som ingår i Power BI-innehållet
 
@@ -85,8 +84,7 @@ Nedanstående avsnitt beskriver de sammanlagda mått som används i respektive e
 
 | Sammanlagda huvudmått | Fält                                             | beskrivning |
 |---------------------------|---------------------------------------------------|-------------|
-| Antal projekt        | COUNTA(ProjectAccountingCube\_Projects[PROJECTS]) | Antal tillgängliga projekt. |
-
+| Antal projekt        | COUNTA(ProjectAccountingCube\_Projects\[PROJEKT\]) | Antal tillgängliga projekt. |
 
 ### <a name="entity-projectaccountingcubeforecasts"></a>Enhet: ProjectAccountingCube\_Forecasts
 **Datakälla:** ProjTransBudget
@@ -109,18 +107,16 @@ Nedanstående avsnitt beskriver de sammanlagda mått som används i respektive e
 
 | Sammanlagda huvudmått    | Fält | beskrivning |
 |------------------------------|-------|-------------|
-| Index för kostnadsresultat       | ProjectAccountingCube\_Projects[Intjänat värde] ÷ ProjectAccountingCube\_Projects[Faktisk totalkostnad för slutförda uppgifter] | Beräkningen av det totala upparbetade värdet delat med den totala faktiska kostnaden. |
-| Index för tidsplansresultat   | ProjectAccountingCube\_Projects[Intjänat värde] ÷ ProjectAccountingCube\_Projects[Planerad totalkostnad för slutförda uppgifter] | Beräkningen av det totala upparbetade värdet delat med den totala planerade kostnaden. |
-| Procent av slutfört arbete | Procent av slutfört arbete = ProjectAccountingCube\_Projects[Faktisk totalkostnad för slutförda uppgifter] ÷ (ProjectAccountingCube\_Projects[Faktisk totalkostnad för slutförda uppgifter] + ProjectAccountingCube\_Projects[Total planerad kostnad för projekt] – ProjectAccountingCube\_Projects[Planerad totalkostnad för slutförda uppgifter]) | Total procentandel färdigt arbete baserat på faktisk totalkostnad för slutförda uppgifter och den planerade projektkostnaden. |
-| Kvot för faktiska fakturerbara timmar  | ProjectAccountingCube\_Projects[Totala faktiska fakturerbara utnyttjade projekttimmar] ÷ (ProjectAccountingCube\_Projects[Totala faktiska fakturerbara utnyttjade projekttimmar] + ProjectAccountingCube\_Projects[projektets totala faktiska fakturerbara ej fakturerbara timmar]) | Totala faktiska fakturerbara timmar, baserat på utnyttjad timmar och ej fakturerbara timmar. |
-| Intjänat värde                 | ProjectAccountingCube\_Projects[total planerad projektkostnad] × ProjectAccountingCube\_Projects[procentandel av slutfört arbete] | Planerad totalkostnad multiplicerad med procentandelen slutfört arbete. |
+| Index för kostnadsresultat       | ProjectAccountingCube\_Projects\[Intjänat värde\] ÷ ProjectAccountingCube\_Projects\[Faktisk totalkostnad för slutförda uppgifter\] | Beräkningen av det totala upparbetade värdet delat med den totala faktiska kostnaden. |
+| Index för tidsplansresultat   | ProjectAccountingCube\_Projects\[Intjänat värde\] ÷ ProjectAccountingCube\_Projects\[Planerad totalkostnad för slutförda uppgifter\] | Beräkningen av det totala upparbetade värdet delat med den totala planerade kostnaden. |
+| Procent av slutfört arbete | Procent av slutfört arbete = ProjectAccountingCube\_Projects\[Faktisk totalkostnad för slutförda uppgifter\] ÷ (ProjectAccountingCube\_Projects\[Faktisk totalkostnad för slutförda uppgifter\] + ProjectAccountingCube\_Projects\[Total planerad kostnad för projekt\] – ProjectAccountingCube\_Projects\[Total planerad kostnad för slutförda uppgifter\]) | Total procentandel färdigt arbete baserat på faktisk totalkostnad för slutförda uppgifter och den planerade projektkostnaden. |
+| Kvot för faktiska fakturerbara timmar  | ProjectAccountingCube\_Projects\[Totala faktiska fakturerbara utnyttjade projekttimmar\] ÷ (ProjectAccountingCube\_Projects\[Totala faktiska fakturerbara utnyttjade projekttimmar\] + ProjectAccountingCube\_Projects\[Projektets totala faktiska fakturerbara ej fakturerbara timmar\]) | Totala faktiska fakturerbara timmar, baserat på utnyttjad timmar och ej fakturerbara timmar. |
+| Intjänat värde                 | ProjectAccountingCube\_Projects\[total planerad projektkostnad\] × ProjectAccountingCube\_Projects\[procentandel av slutfört arbete\] | Planerad totalkostnad multiplicerad med procentandelen slutfört arbete. |
 
 ### <a name="entity-projectaccountingcubetotalestimatedcosts"></a>Enhet: ProjectAccountingCube\_TotalEstimatedCosts 
 **Datakälla:** ProjTable
 
-
-|    Sammanlagda huvudmått    |        Fält        |                                          beskrivning                                           |
-|---------------------------------|---------------------|------------------------------------------------------------------------------------------------|
+| Sammanlagda huvudmått       | Fält               | beskrivning |
+|---------------------------------|---------------------|-------------|
 | Planerad kostnad för slutförd aktivitet | Sum(TotalCostPrice) | Uppskattad total självkostnad för alla projekttransaktionstyper som har slutförda uppgifter. |
-
 

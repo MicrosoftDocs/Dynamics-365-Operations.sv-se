@@ -20,10 +20,10 @@ ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 88bbc54721f5da94dd811ef155e8d3bcf8c2b53c
-ms.openlocfilehash: b06abae184d07cd3b914caf74bdb16a7803919af
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: caf1c13d48d1f8af5c88927ccb23118e99cb38e0
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/09/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -35,7 +35,7 @@ ms.lasthandoff: 05/09/2018
 
 Microsoft Power BI-innehållet **Kostnadshantering** riktar sig till lagerredovisare eller personer i organisationen som är ansvarig för eller i intresserad av status för lager eller resurser i arbete (PIA) eller som är ansvarig för eller vill analysera standardkostnadsavvikelser.
 
-> [!Note]
+> [!NOTE]
 > Power BI-innehållet **Kostnadshantering** som beskrivs i detta avsnitt avser Dynamics 365 for Finance and Operations 8.0.
 > 
 > Power BI-innehållspaketet **Kostnadshantering** som finns tillgänglig på webbplatsen för AppSource har tagits bort. Mer information om denna borttagning finns i [Power BI innehållspaket finns på AppSource](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
@@ -171,7 +171,7 @@ Följande register ger en översikt över de visuella effekterna i Power BI-inne
 |                                         | 10 främsta resurser per ofördelaktiga produktionsavvikelse  |
 |                                         | 10 främsta resurser per fördelaktiga produktionsavvikelse    |
 
-### <a name="understanding-the-data-model-and-entities"></a>Förstå datamodellen och enheterna
+## <a name="understanding-the-data-model-and-entities"></a>Förstå datamodellen och enheterna
 
 Data från Microsoft Dynamics 365 for Finance and Operations används för att fylla rapportsidorna i Power BI-innehållet **Kostnadshantering**. Informationen visas som sammansatta mått som mellanlagras i enhetsarkivet, som är en Microsoft SQL Server-databas som är optimerad för analys. Mer information finns i [Power BI-integrering med enhetsarkiv](power-bi-integration-entity-store.md).
 
@@ -188,26 +188,25 @@ Nedan visas de viktigaste beräknade måtten i Power BI-innehållet.
 
 | Mått                            | Beräkning |
 |------------------------------------|-------------|
-| Ingående saldo                  | Ingående saldo = [Slutsaldo]-[Nettoförändring] |
-| Ingående saldokvantitet             | Ingående saldokvantitet = [Slutsaldokvantitet]-[Nettoförändringskvantitet] |
-| Slutsaldo                     | Utgående saldo = (CALCULATE(SUM([Amount]), FILTER(ALL(FiscalCalendar) ,FiscalCalendar[MONTHSTARTDATE] \<= MAX(FiscalCalendar[MONTHSTARTDATE])))) |
-| Slutsaldokvantitet                | Slutsaldokvantitet = CALCULATE(SUM([QTY]), FILTER(ALL(FiscalCalendar),FiscalCalendar[MONTHSTARTDATE] \<= MAX(FiscalCalendar[MONTHSTARTDATE]))) |
-| Nettoändring                         | Nettoändring = SUM([AMOUNT]) |
-| Nettoändringskvantitet                    | Nettoändringskvantitet = SUM([QTY]) |
-| Lageromsättningshastighet per belopp | Lageromsättningshastighet per belopp = om(ELLER([Genomsnittligt lagersaldo] \<= 0, [Sålt lager eller förbrukad utleverans] \>= 0), 0, ABS([Sålt lager eller förbrukad utleverans])/[Genomsnittligt lagersaldo]) |
-| Genomsnittligt lagersaldo          | Genomsnittligt lagersaldo = (([Utgående saldo] + [Ingående saldo]) / 2) |
-| Lagerbehållning räknat i dagar             | Lagerbehållning räknat i dagar = 365 / CostObjectStatementEntries [Lageromsättningshastighet per belopp] |
-| Lagerprecision                 | Lagerexakthet efter belopp = IF([Slutsaldo] \<= 0, IF(OR([Inventerat lagerbelopp] \<\> 0, [Slutsaldo] \< 0), 0, 1), MAX(0, ([Slutsaldo] - ABS([Inventerat lagerbelopp]))/[Slutsaldo])) |
+| Ingående saldo                  | Ingående saldo = \[Slutsaldo\]-\[Nettoförändring\] |
+| Ingående saldokvantitet             | Ingående saldokvantitet = \[Slutsaldokvantitet\]-\[Nettoförändringskvantitet\] |
+| Slutsaldo                     | Utgående saldo = (CALCULATE(SUM(\[Amount\]), FILTER(ALL(FiscalCalendar) ,FiscalCalendar\[MONTHSTARTDATE\] \<= MAX(FiscalCalendar\[MONTHSTARTDATE\])))) |
+| Slutsaldokvantitet                | Slutsaldokvantitet = CALCULATE(SUM(\[QTY\]), FILTER(ALL(FiscalCalendar),FiscalCalendar\[MONTHSTARTDATE\] \<= MAX(FiscalCalendar\[MONTHSTARTDATE\]))) |
+| Nettoändring                         | Nettoändring = SUM(\[AMOUNT\]) |
+| Nettoändringskvantitet                    | Nettoändringskvantitet = SUM(\[QTY\]) |
+| Lageromsättningshastighet per belopp | Lageromsättningshastighet per belopp = if(OR(\[Genomsnittligt lagersaldo\] \<= 0, \[Sålt lager eller förbrukad utleverans\] \>= 0), 0, ABS(\[Sålt lager eller förbrukad utleverans\])/\[Genomsnittligt lagersaldo\]) |
+| Genomsnittligt lagersaldo          | Genomsnittligt lagersaldo = ((\[Utgående saldo\] + \[Ingående saldo\]) / 2) |
+| Lagerbehållning räknat i dagar             | Lagerbehållning räknat i dagar = 365 / CostObjectStatementEntries\[Lageromsättningshastighet per belopp\] |
+| Lagerprecision                 | Lagerexakthet efter belopp = IF(\[Slutsaldo\] \<= 0, IF(OR(\[Inventerat lagerbelopp\] \<\> 0, \[Slutsaldo\] \< 0), 0, 1), MAX(0, (\[Slutsaldo\] - ABS(\[Inventerat lagerbelopp\]))/\[Slutsaldo\])) |
 
 Följande tabell visar nyckeldimensionerna används som filter för att dela upp de sammanlagda måtten så att du kan uppnå bättre nivåer och få djupare analysinsikter.
 
 
-|                         Enhet                          |             Exempel på attribut              |
+| Enhet                                                  | Exempel på attribut                          |
 |---------------------------------------------------------|-------------------------------------------------|
-|                        Produkter                         | Produktnummer, produktnamn, enhet, artikelgrupper |
-| Kategorihierarkier (tilldelad rollen kostnadshantering) |       Kategorihierarki, kategorinivå        |
-|                     Juridiska personer                      |               Namn på juridisk person                |
-|                    Räkenskapskalendrar                     |  Räkenskapskalender, år, kvartal, period, månad  |
-|                          Webbplats                           |        ID, namn, adress, delstat, land        |
-
+| Produkter                                                | Produktnummer, produktnamn, enhet, artikelgrupper |
+| Kategorihierarkier (tilldelad rollen kostnadshantering) | Kategorihierarki, kategorinivå              |
+| Juridiska personer                                          | Namn på juridisk person                              |
+| Räkenskapskalendrar                                        | Räkenskapskalender, år, kvartal, period, månad   |
+| Webbplats                                                    | ID, namn, adress, delstat, land               |
 

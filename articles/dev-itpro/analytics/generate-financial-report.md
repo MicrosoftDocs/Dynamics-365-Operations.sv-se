@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
-ms.openlocfilehash: b47c22576b3735fbc499c7ceed3f6a4637c2785c
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: b1dea07589b7fe953ec47b204441d044c19b5020
 ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -30,37 +30,35 @@ ms.lasthandoff: 08/09/2018
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet innehåller allmän information om att skapa en ekonomisk rapport. 
+Det här avsnittet innehåller allmän information om att skapa en ekonomisk rapport.
 
 Öppna rapportdefinitionen och klicka sedan på knappen Skapa i verktygsfältet om du vill skapa en rapport. Fönstret Rapportköstatus öppnas och visar platsen för rapporten i kön. Som standard öppnas rapporten i Web Viewer.
 
 > [!NOTE]
 > Du kan bara skapa rapporter till mappar och platser som du har åtkomstbehörighet för.
 
-I följande tabell beskrivs de alternativ som är tillgängliga när du skapar rapporter.
+Följande alternativ är tillgängliga för rapportgenerering:
 
-| Alternativ                                                                                | 
-|---------------------------------------------------------------------------------------|
-| Ställa in ett schema för att skapa en rapport eller en grupp av rapporter automatiskt              |   
-| Kontrollera om det saknas konton eller data i en rapport och validera riktigheten i en rapport |   
+- Ställa in ett schema för att skapa en rapport eller en grupp av rapporter automatiskt
+- Kontrollera om det saknas konton eller data i en rapport och validera riktigheten i en rapport
 
 När du skapar en rapport används de alternativ du har angett på fliken Rapportdefinition. På fliken Fördelning och distribution kan du ange en plats för rapportbiblioteket. Detta är en enkel metod för att dela rapporten.
 
 ## <a name="generate-a-financial-report"></a>Skapa ekonomisk rapport
 
-Om du vill skapa en ekonomisk rapport med Microsoft Dynamics 365 for Finance and Operations, gå till **Redovisning** > **Förfrågningar och rapporter** > **Ekonomirapporter**. 
-- Välj en rapport att skapa och klicka på **Skapa**. 
+Om du vill skapa en ekonomisk rapport med Microsoft Dynamics 365 for Finance and Operations, gå till **Redovisning** \> **Förfrågningar och rapporter** \> **Ekonomirapporter**.
+
+- Välj en rapport att skapa och klicka på **Skapa**.
 - Fyll i fältet **Rapportdatum** och klicka på **OK**.
 
-  När rapporten har skapats blir den tillgänglig i avsnittet **Rapporter**.
-  Du kan välja att **Visa** eller **Ta bort** rapporten.
+När rapporten har skapats blir den tillgänglig i avsnittet **Rapporter**.
 
+Du kan välja att **Visa** eller **Ta bort** rapporten.
 
 Öppna rapportdefinitionen och klicka sedan på knappen Skapa i verktygsfältet om du vill skapa en rapport med **Report designer**. Fönstret Rapportköstatus öppnas och visar platsen för rapporten i kön. Som standard öppnas rapporten i Web Viewer.
 
 > [!NOTE]
 > Du kan bara skapa rapporter till mappar och platser som du har åtkomstbehörighet för.
-
 
 ## <a name="schedule-report-generation"></a>Schemalägga rapporter
 Många företag har en serie grundläggande rapporter som körs regelbundet vid schemalagda tidpunkter som en del av affärsprocesserna. Du kan schemalägga en rapport som ska skapas en gång om dagen, en gång i veckan eller månaden eller årligen. Det kan vara en enstaka rapport eller en grupp rapporter som inbegriper flera företag. Du måste ange dina autentiseringsuppgifter för vart och ett av företagen du anger, t.ex. sådana i en rapportträdsdefinition. Om autentiseringsuppgifterna är ogiltiga visas endast den information du har behörighet att komma åt i rapporterna, t.ex. det aktuella företag du är inloggad i för tillfället. Utdatainformationen läses först från rapportgruppen och sedan från de enskilda rapporterna.
@@ -70,45 +68,48 @@ De rapportscheman som skapas och sparas visas under Rapportscheman i navigations
 > [!IMPORTANT]
 > Du måste ha designer- eller administratörsrollen för att kunna skapa, ändra och ta bort rapportscheman. När en rapport körs skapas den med hjälp av autentiseringsuppgifterna för den användare som skapade schemat.
 
-
 ### <a name="create-a-report-schedule"></a>Skapa ett rapportschema
 
-1.  Klicka på Nytt på Arkiv-menyn i Report Designer och välj sedan Rapportschema. Dialogrutan Nytt rapportschema öppnas.
-2.  Markera en enskild rapport eller en rapportgrupp som du vill schemalägga under Inställningar. De rapporter och rapportgrupper som visas gäller endast för det valda företaget eller byggblocket som du för närvarande är inloggad i.
-3.  Aktivera rapportschemat genom att markera kryssrutan Aktivt. Det är endast den som har skapat rapporten eller en administratör som kan aktivera eller inaktivera ett rapportschema.
-4.  Ange företagets autentiseringsuppgifter genom att klicka på knappen Behörigheter. Som standard används din inloggningsinformation för företaget som du är inloggad i. Om även andra företag är inbegripna, t.ex. som i rapportträdsdefinitioner, markerar du Använd andra autentiseringsuppgifter och anger sedan autentiseringsuppgifterna för andra företag som ingår i rapportschemat. Du kan markera Windows-autentisering eller skriva ett användarnamn och lösenord för varje företag. Markera kryssrutan Spara autentiseringsuppgifter om du vill spara företagens uppgifter och stäng sedan dialogrutan genom att klicka på OK.
-5.  Välj det datum när schemat ska börja i fältet Början av återkommande under Frekvens. Klientdatorns aktuella systemdatum är förvalt som standard.
-6.  Välj den tidpunkt när rapporten ska köras i fältet Kör rapport. Om du anger en tidpunkt som ligger tidigare än aktuell systemtid körs rapporten på följande schemalagda datum.
-7.  Ange hur ofta rapporten ska köras i området Upprepningsmönster. Daglig väljs som standard, med ett intervallvärde (dagar) på 1. Andra alternativ inkluderar Veckovis, Månadsvis och Årligen.
-8.  Välj när rapporten ska upphöra att skapas i området Intervall för återkommande.
-    -   Slutdatum saknas – Rapportschemat körs tills vidare.
-    -   Ange antal förekomster – Rapportsschemat körs angivet antal gånger och sedan inaktiveras det.
-    -   Sluta den – Rapportschemat slutar på angivet datum.
+1. Klicka på Nytt på Arkiv-menyn i Report Designer och välj sedan Rapportschema. Dialogrutan Nytt rapportschema öppnas.
+2. Markera en enskild rapport eller en rapportgrupp som du vill schemalägga under Inställningar. De rapporter och rapportgrupper som visas gäller endast för det valda företaget eller byggblocket som du för närvarande är inloggad i.
+3. Aktivera rapportschemat genom att markera kryssrutan Aktivt. Det är endast den som har skapat rapporten eller en administratör som kan aktivera eller inaktivera ett rapportschema.
+4. Ange företagets autentiseringsuppgifter genom att klicka på knappen Behörigheter. Som standard används din inloggningsinformation för företaget som du är inloggad i. Om även andra företag är inbegripna, t.ex. som i rapportträdsdefinitioner, markerar du Använd andra autentiseringsuppgifter och anger sedan autentiseringsuppgifterna för andra företag som ingår i rapportschemat. Du kan markera Windows-autentisering eller skriva ett användarnamn och lösenord för varje företag. Markera kryssrutan Spara autentiseringsuppgifter om du vill spara företagens uppgifter och stäng sedan dialogrutan genom att klicka på OK.
+5. Välj det datum när schemat ska börja i fältet Början av återkommande under Frekvens. Klientdatorns aktuella systemdatum är förvalt som standard.
+6. Välj den tidpunkt när rapporten ska köras i fältet Kör rapport. Om du anger en tidpunkt som ligger tidigare än aktuell systemtid körs rapporten på följande schemalagda datum.
+7. Ange hur ofta rapporten ska köras i området Upprepningsmönster. Daglig väljs som standard, med ett intervallvärde (dagar) på 1. Andra alternativ inkluderar Veckovis, Månadsvis och Årligen.
+8. Välj när rapporten ska upphöra att genereras i området Intervall för återkommande.
 
-9.  Klicka på Spara i verktygsfältet. Skriv ett unikt namn och en beskrivning för rapportschemat i dialogrutan Spara som.
+    - Slutdatum saknas – Rapportschemat körs tills vidare.
+    - Ange antal förekomster – Rapportsschemat körs angivet antal gånger och sedan inaktiveras det.
+    - Sluta den – Rapportschemat slutar på angivet datum.
+
+9. Klicka på Spara i verktygsfältet. Skriv ett unikt namn och en beskrivning för rapportschemat i dialogrutan Spara som.
 
 Du måste ha designer- eller administratörsrollen för att kunna kopiera ett rapportschema. Även om en administratör skulle ändra rapportschemat behåller rapporten autentiseringsuppgifterna för den användare som skapade rapporten.
+
 ### <a name="copy-a-report-schedule"></a>Kopiera ett rapportschema
 
-1.  Klicka på Rapportscheman i navigeringsfönstret i Report Designer och öppna en rapport som du vill kopiera.
-2.  Klicka på Spara som på Arkiv-menyn och ange sedan ett nytt namn och beskrivning för schemat i dialogrutan Spara som. Det nya schemat visas i navigeringsfönstret när du klickar på OK.
-3.  Ändra fälten och informationen i det nya schemat efter behov och klicka sedan på Spara i verktygsfältet eller klicka på Spara på Arkiv-menyn.
+1. Klicka på Rapportscheman i navigeringsfönstret i Report Designer och öppna en rapport som du vill kopiera.
+2. Klicka på Spara som på Arkiv-menyn och ange sedan ett nytt namn och beskrivning för schemat i dialogrutan Spara som. Det nya schemat visas i navigeringsfönstret när du klickar på OK.
+3. Ändra fälten och informationen i det nya schemat efter behov och klicka sedan på Spara i verktygsfältet eller klicka på Spara på Arkiv-menyn.
 
 Du måste vara ägare till rapportschemat eller ha administratörsrollen för att kunna ta bort ett rapportschema.
+
 ### <a name="delete-a-report-schedule"></a>Ta bort ett rapportschema
 
-1.  Klicka på Rapportscheman i navigeringsfönstret i Report Designer.
-2.  Markera det rapportschema som du vill ta bort och klicka sedan på Ta bort eller tryck på Delete-tangenten.
-3.  Om du vill ta bort rapportschemat permanent klickar du på Ja i dialogrutan där du bekräftar borttagningen. Skulle du sakna behörighet att ta bort schemat visas ett meddelande och rapporten behålls.
+1. Klicka på Rapportscheman i navigeringsfönstret i Report Designer.
+2. Markera det rapportschema som du vill ta bort och klicka sedan på Ta bort eller tryck på Delete-tangenten.
+3. Om du vill ta bort rapportschemat permanent klickar du på Ja i dialogrutan där du bekräftar borttagningen. Skulle du sakna behörighet att ta bort schemat visas ett meddelande och rapporten behålls.
 
 ### <a name="credentials-and-report-schedules"></a>Användarinformation och rapporttidsplaner
 
 Om du inte anger de autentiseringsuppgifter som krävs för alla företag som omfattas av rapporterna visas följande felmeddelande när du sparar rapportschemat: ”Du måste ange autentiseringsuppgifter för företagen som ingår i det här rapportschemat. Ange autentiseringsuppgifterna genom att klicka på knappen Behörigheter.”
 
 Exempel: Anna loggar in i företag A med sitt användarnamn och lösenord. Hon skapar ett schema för en rapport där en rapportträdsdefinition används för att samla in data från flera företag. När rapporten sparas uppmanas Anna ange autentiseringsuppgifterna för de andra angivna företagen i rapportträdsdefinitionen. Om dina autentiseringsuppgifter upphör att gälla skapas inte de rapporter i rapportschemat som påverkas förrän autentiseringsuppgifterna har uppdaterats. Det visas ett meddelande i rapportkön om att behörigheterna måste uppdateras. Körningen av rapportschemat misslyckas om något av följande inträffar (på grund av krav på autentiseringsuppgifter):
--   Ett nytt företag har lagts till i ett rapportträd för en enskild rapport.
--   En rapport i en rapportgrupp har ändrats.
--   En ny rapport för ytterligare ett företag har lagts till i en rapportgrupp.
+
+- Ett nytt företag har lagts till i ett rapportträd för en enskild rapport.
+- En rapport i en rapportgrupp har ändrats.
+- En ny rapport för ytterligare ett företag har lagts till i en rapportgrupp.
 
 Du fortsätter genom att klicka på knappen Behörigheter i dialogrutan Schemalägg rapport, och sedan skriver du lämpliga autentiseringsuppgifter.
 
@@ -125,22 +126,21 @@ Risken för saknade konton är lägre om du använder rapporter som innehåller 
 > [!NOTE]
 > Om ett nytt företag har lagts till i måste du lägga till det i alla befintliga rapporters rapportträd för att det ska inkluderas i analysen av saknade konton.
 
-
 ### <a name="run-missing-account-analysis"></a>Kör analys av saknade konton
 
-1.  Klicka på Verktyg i Report Designer och klicka sedan på Analys av saknade konton.
-2.  Välj ett företag som du vill filtrera resultatet efter i fältet Företagsfilter eller välj Alla (inget filter) om du vill visa resultat från alla tillgängliga företag.
-3.  Välj den dimension som du vill filtrera resultatet efter i fältet Dimensionsfilter eller välj Alla (inget filter) om du vill visa samtlig dimensionsinformation för alla tillgängliga dimensioner.
-4.  Välj ett alternativ för sortering av resultatet i fältet Gruppera efter. Du kan sortera resultatet efter det byggblock som påverkas eller efter dimension och värdemängder.
-5.  Granska det resultat som visas. Om du markerar ett objekt i det övre fönstret visas ytterligare information om undantaget i det nedre fönstret. Den omfattar relaterade dimensioner, värden och rapporter.
-6.  Du öppnar det objekt som påverkas genom att klicka på dess ikon i listfönstret eller genom att högerklicka på objektet och sedan välja Öppna. Om du vill markera flera objekt håller du ned Ctrl-tangenten samtidigt markerar objekten i det nedre fönstret.
-7.  Om resultatet innehåller värden, byggblock eller rapporter som inte ska ingå i analysen högerklickar du på dessa och väljer Ta inte med. Du kan även markera kryssrutan Ta inte med intill objektet så att det tas bort ur listan. Undantagna objekt tas bort när listan uppdateras. Om du vill markera flera objekt håller du ned Ctrl-tangenten samtidigt markerar objekten i det nedre fönstret. Om du vill visa alla objekt, inklusive resultat som du tidigare har valt att inte ta med i analysen markerar du kryssrutan Visa byggblock och värden som har exkluderats och klickar sedan på Uppdatera.
-8.  Klicka på Uppdatera för att uppdatera undantag som du har markerat. Klicka på Ja om du vill uppdatera hela resultatet eller klicka på Nej om du bara vill uppdatera markerade objekt.
+1. Klicka på Verktyg i Report Designer och klicka sedan på Analys av saknade konton.
+2. Välj ett företag som du vill filtrera resultatet efter i fältet Företagsfilter eller välj Alla (inget filter) om du vill visa resultat från alla tillgängliga företag.
+3. Välj den dimension som du vill filtrera resultatet efter i fältet Dimensionsfilter eller välj Alla (inget filter) om du vill visa samtlig dimensionsinformation för alla tillgängliga dimensioner.
+4. Välj ett alternativ för sortering av resultatet i fältet Gruppera efter. Du kan sortera resultatet efter det byggblock som påverkas eller efter dimension och värdemängder.
+5. Granska det resultat som visas. Om du markerar ett objekt i det övre fönstret visas ytterligare information om undantaget i det nedre fönstret. Den omfattar relaterade dimensioner, värden och rapporter.
+6. Du öppnar det objekt som påverkas genom att klicka på dess ikon i listfönstret eller genom att högerklicka på objektet och sedan välja Öppna. Om du vill markera flera objekt håller du ned Ctrl-tangenten samtidigt markerar objekten i det nedre fönstret.
+7. Om resultatet innehåller värden, byggblock eller rapporter som inte ska ingå i analysen högerklickar du på dessa och väljer Ta inte med. Du kan även markera kryssrutan Ta inte med intill objektet så att det tas bort ur listan. Undantagna objekt tas bort när listan uppdateras. Om du vill markera flera objekt håller du ned Ctrl-tangenten samtidigt markerar objekten i det nedre fönstret. Om du vill visa alla objekt, inklusive resultat som du tidigare har valt att inte ta med i analysen markerar du kryssrutan Visa byggblock och värden som har exkluderats och klickar sedan på Uppdatera.
+8. Klicka på Uppdatera för att uppdatera undantag som du har markerat. Klicka på Ja om du vill uppdatera hela resultatet eller klicka på Nej om du bara vill uppdatera markerade objekt.
 
     > [!NOTE]
     > Om formuläret inte har öppnats de senaste 15 minuterna uppdateras det automatiskt när det öppnas.
 
-9.  När du har åtgärdat problemen stänger du dialogrutan genom att klicka på OK.
+9. När du har åtgärdat problemen stänger du dialogrutan genom att klicka på OK.
 
 ## <a name="keyboard-shortcuts-for-missing-account-analysis"></a>Tangentbordsgenvägar för analys av saknade konton
 Du kan använda följande tangentbordsgenvägar när du kör en analys av saknade konton.
@@ -159,12 +159,9 @@ Du kan använda följande tangentbordsgenvägar när du kör en analys av saknad
 | Öppna den markerade raddefinitionen     | Ctrl+O                     |
 
 
-<a name="additional-resources"></a>Ytterligare resurser
---------
+## <a name="additional-resources"></a>Ytterligare resurser
 
 [Ekonomisk rapportering](financial-reporting-intro.md)
 
 [Användargränssnitt i Report Designer](report-designer-interface.md)
-
-
 

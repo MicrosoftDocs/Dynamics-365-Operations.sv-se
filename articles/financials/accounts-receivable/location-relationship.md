@@ -28,6 +28,8 @@ ms.lasthandoff: 06/12/2018
 
 # <a name="add-location-roles-and-party-relationship-types"></a>Lägg till platsroller och partrelationstyper 
 
+[!include [banner](../includes/banner.md)]
+
 ## <a name="add-location-roles"></a>Lägg till platsroller
 
 Det finns två sätt att lägga till en ny platsroller för adress och kontaktinformation:

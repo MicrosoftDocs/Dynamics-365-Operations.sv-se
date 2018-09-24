@@ -17,10 +17,10 @@ ms.author: aevengir
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 029511634e56aec7fdd91bad9441cd12951fbd8d
-ms.openlocfilehash: d59a7aef90ecef0cd947b833f1cce1e2372f3033
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 2bc4c409b831b78ef737a98ce985bf144853a454
 ms.contentlocale: sv-se
-ms.lasthandoff: 01/17/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -43,7 +43,7 @@ Power BI-innehållet låter dig även analysera produktionsavvikelser. Produktio
 Den **Produktionsprestanda** som Power BI-innehållet omfattar inkluderar data som har hämtats från produktionsorder och batchorder. Rapporterna innehåller inte data som är relaterade till kanban-produktioner.
 
 ## <a name="accessing-the-power-bi-content"></a>Åtkomst till Power BI-innehåll
-Power BI-innehållet **Produktionsprestanda** visas på sidan **Produktionsprestanda** (**Produktionskontroll** > **Förfrågningar och rapporter** > **Analys av produktionsprestanda** > **Produktionsprestanda**). 
+Power BI-innehållet **Produktionsprestanda** visas på sidan **Produktionsprestanda** (**Produktionskontroll** \> **Förfrågningar och rapporter** \> **Analys av produktionsprestanda** \> **Produktionsprestanda**). 
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mått som ingår i Power BI-innehållet
 
@@ -51,9 +51,9 @@ Power BI-innehållet **Produktionsprestanda** omfattar en uppsättning rapportsi
 
 Följande register ger en översikt över visualiseringar som ingår.
 
-| Rapportsida                                | Diagram                                               | Paneler |
-|--------------------------------------------|------------------------------------------------------|-------|
-| Produktionsprestanda                     | <ul><li>Antal produktionsrader efter datum</li><li>Antal produktioner per produkt- och artikelgrupp</li><li>Antal planerade produktionsorder efter datum</li><li>Nedre 10 produkter efter i tid och i sin helhet</li></ul> | <ul><li>Totalt antal order</li><li>I tid och i sin helhet i procent</li><li>Ofullständiga i procent</li><li>Tidiga i procent</li><li>Sena i procent</li></ul> |
+| Rapportsida                                | Diagram | Paneler |
+|--------------------------------------------|--------|-------|
+| Produktionsprestanda                     | <ul><li>Antal produktionsrader efter datum</li><li>Antal produktioner per produkt- och artikelgrupp</li><li>Antal planerade produktionsorder efter datum</li><li>Nedre 10 produkter efter i tid &amp; i sin helhet</li></ul> | <ul><li>Totalt antal order</li><li>I tid &amp; i sin helhet i procent</li><li>Ofullständiga i procent</li><li>Tidiga i procent</li><li>Sena i procent</li></ul> |
 | Fel efter produkt                         | <ul><li>Defektgrad (ppm) efter datum</li><li>Defektgrad (ppm) efter produkt- och artikelgrupp</li><li>Producerad kvantitet efter datum</li><li>Topp 10-produkter efter effektiva ränta</li></ul> | <ul><li>Defektgrad (ppm)</li><li>Defekt kvantitet</li><li>Total kvantitet</li></ul> |
 | Feltrend efter produkt                   | Defektgrad (ppm) efter producerad kvantitet | Defektgrad (ppm) |
 | Defektgrad per resurs                        | <ul><li>Defektgrad (ppm) efter datum</li><li>Defektgrad (ppm) per resurs- och plats</li><li>Defektgrad (ppm) efter operation</li><li>Topp 10-resurser efter defektgrad</li></ul> | Defekt kvantitet |
@@ -88,35 +88,35 @@ Följande tabell visar hur viktiga sammanlagda mått används för att skapa fle
 
 | Mått                  | Hur åtgärden beräknas |
 |--------------------------|-------------------------------|
-| Produktionsavvikelse i procent   | SUM (produktionsavvikelse [produktionsavvikelse])/SUM (produktionsavvikelse [uppskattad kostnad]) |
+| Produktionsavvikelse i procent   | SUM('produktionsavvikelse'\[produktionsavvikelse\]) / SUM('produktionsavvikelse'\[uppskattad kostnad\]) |
 | Alla planerade order       | COUNTROWS (planerade produktionsorder) |
-| Årlig                    | COUNTROWS (FILTER (”planerad tillverkningsorder”, ”planerad tillverkningsorder” [schemalagt slutdatum] \< ”planerad tillverkningsorder” [behovsdatum])) |
-| Sent                     | COUNTROWS (FILTER (”planerad tillverkningsorder”, ”planerad tillverkningsorder” [schemalagt slutdatum] \> ”planerad tillverkningsorder” [behovsdatum])) |
-| I tid                  | COUNTROWS (FILTER (”planerad tillverkningsorder”, ”planerad tillverkningsorder” [schemalagt slutdatum] = ”planerad tillverkningsorder” [behovsdatum])) |
-| I tid i procent                | IF (”planerad tillverkningsorder” [i tid] \<\>0 'planerad tillverkningsorder' [i tid], IF (”planerad tillverkningsorder” [alla planerade order] \<\>0, 0, TOMT()))/”planerad tillverkningsorder” [alla planerade order] |
-| Ifylld                | COUNTROWS (FILTER ('Produktionsorder', 'Tillverkningsorder' [är RAF'ed] = TRUE)) |
-| Defektgrad (ppm)     | IF ('Tillverkningsordern ”[sammanlagd kvantitet] = 0, BLANK(), (SUM ('Tillverkningsordern' [Antal felaktiga]) / 'Tillverkningsorder” [sammanlagd kvantitet]) \*1000000) |
-| Fördröjd produktionsorderandel  | 'Tillverkningsordern' [sen \#] / 'Tillverkningsordern' [slutförd] |
-| Tidit och fullständig          | COUNTROWS (FILTER ('Produktionsorder', 'Tillverkningsordern' [är helt] = TRUE & & 'Tillverkningsordern' [är tidig] = TRUE)) |
-| Tidig \#                 | COUNTROWS (FILTER ('Produktionsorder', 'Tillverkningsorder' [är tidig] = TRUE)) |
-| Tidig i procent                  | IFERROR (IF ('Tillverkningsordern' [tidig \#] \<\>0, Production order' [tidig \#] IF (”tillverkningsordern' [Summa order] = 0, BLANK(), 0)) / 'Tillverkningsordern' [Totalt antal order] BLANK()) |
-| Ofullständigt               | COUNTROWS (FILTER ('Produktionsorder', 'Tillverkningsorder' [Fullständigt] = FALSE & & 'Tillverkningsordern' [Är RAF'ed] = TRUE)) |
-| Ofullständiga i procent             | IFERROR (IF ('Tillverkningsordern' [Ofullständig ] \<\> 0, Produktionsorder' [Ofullständig ] IF (”tillverkningsorder' [Totalt antal order] = 0, BLANK(), 0)) / 'Tillverkningsorder' [Totalt antal order] BLANK()) |
-| Är fördröjd               | 'Produktionsorder'[Is RAF'ed] = TRUE && 'Produktionsorder'[Fördröjt värde] = 1 |
-| Är tidig                 | 'Produktionsorder'[Är RAF'ed] = TRUE && 'Produktionsorder'[Dagar försenad] \< = 0 |
-| Fullständigt               | 'Tillverkningsorder' [Bra kvantitet] \>= 'Tillverkningsorder' [schemalagd kvantitet] |
-| Är RAF'ed                | 'Tillverkningsordern' [produktion statusvärde] = 5 \|\| 'Tillverkningsordern' [produktion statusvärde] = 7 |
-| Sen & fullständig           | COUNTROWS (FILTER ('Produktionsorder', 'Tillverkningsorder' [Fullständig] = TRUE & & 'Tillverkningsordern' [Fördröjd] = TRUE)) |
-| Sen \#                  | COUNTROWS (FILTER ('Produktionsorder', 'Tillverkningsorder' [Fördröjd] = TRUE)) |
-| Sen i procent                   | IFERROR (IF ('Tillverkningsordern' [Sen \#] \<\>0, Production order' [Sen \#] IF (”tillverkningsordern' [Summa order] = 0, BLANK(), 0)) / 'Tillverkningsordern' [Totalt antal order] BLANK()) |
-| I tid och fullständig        | COUNTROWS (FILTER ('Produktionsorder', 'Tillverkningsordern' [Fullständig] = TRUE & & ''[är försenad] = FALSKT & & 'Tillverkningsordern' [är tidig] = FALSE)) |
-| I tid och i sin helhet i procent      | IFERROR (IF ('Tillverkningsordern' [I tid och fullständig ] \<\> 0, Produktionsorder' [I tid och fullständig ] IF (”tillverkningsorder' [Totalt antal order] = 0, BLANK(), 0)) / 'Tillverkningsorder' [Slutförd] BLANK()) |
+| Årlig                    | COUNTROWS(FILTER('planerad tillverkningsorder', 'planerad tillverkningsorder'\[schemalagt slutdatum\] \< 'planerad tillverkningsorder'\[behovsdatum\])) |
+| Sen                     | COUNTROWS(FILTER('planerad tillverkningsorder', 'planerad tillverkningsorder'\[schemalagt slutdatum\] \> 'planerad tillverkningsorder'\[behovsdatum\])) |
+| I tid                  | COUNTROWS(FILTER('planerad tillverkningsorder', 'planerad tillverkningsorder'\[schemalagt slutdatum\] = 'planerad tillverkningsorder'\[behovsdatum\])) |
+| I tid i procent                | IF (”planerad tillverkningsorder”\[i tid\] \<\> 0, ”planerad tillverkningsorder”\[i tid\], IF (”planerad tillverkningsorder”\[Alla planerade ordrar\] \<\> 0, 0, BLANK()) ) / ”planerad tillverkningsorder”\[Alla planerade ordrar\] |
+| Slutfördes                | COUNTROWS(FILTER('Produktionsorder', 'Produktionsorder'\[är RAF'ed\] = TRUE)) |
+| Defektgrad (ppm)     | IF('Tillverkningsorder'\[sammanlagd kvantitet\] = 0, BLANK(), (SUM('Tillverkningsorder'\[Antal felaktiga\]) / 'Tillverkningsorder'\[sammanlagd kvantitet\]) \* 1000000) |
+| Fördröjd produktionsorderandel  | 'Tillverkningsorder'\[Late \#\] / 'Tillverkningsorder'\[slutförd\] |
+| Tidit och fullständig          | COUNTROWS(FILTER('Tillverkningsorder', 'Tillverkningsorder'\[är hel\] = TRUE && 'Tillverkningsorder'\[är tidig\] = TRUE)) |
+| Tidig \#                 | COUNTROWS(FILTER('Tillverkningsorder', 'Tillverkningsorder'\[är tidig\] = TRUE)) |
+| Tidiga i procent                  | IFERROR( IF('Tillverkningsorder'\[tidig \#\] \<\> 0, 'Tillverkningsorder'\[tidig \#\], IF('Tillverkningsorder''\[Summa order\] = 0, BLANK(), 0)) / 'Tillverkningsorder'\[Summa order\], BLANK()) |
+| Ofullständigt               | COUNTROWS(FILTER('Tillverkningsorder', 'Tillverkningsorder'\[fullständig\] = FALSE && 'Tillverkningsorder'\[är RAF'ed\] = TRUE)) |
+| Ofullständiga i procent             | IFERROR( IF('Tillverkningsorder'\[Ofullständig\] \<\> 0, 'Tillverkningsorder'\[Ofullständig\], IF('Tillverkningsorder'\[Totalt antal order\] = 0, BLANK(), 0)) / 'Tillverkningsorder'\[Totalt antal order\], BLANK()) |
+| Är fördröjd               | 'Tillverkningsorder'\[är RAF'ed\] = TRUE && 'Tillverkningsorder'\[Fördröjt värde\] = 1 |
+| Är tidig                 | 'Tillverkningsorder'\[är RAF'ed\] = TRUE && 'Tillverkningsorder'\[Dagar fördröjt\] \< 0 |
+| Fullständigt               | 'Tillverkningsorder'\[Bra kvantitet\] \>= 'Tillverkningsorder'\[Schemalagd kvantitet\] |
+| Är RAF'ed                | 'Tillverkningsorder'\[Tillverkningsstatusvärde\] = 5 \|\| 'Tillverkningsorder'\[Tillverkningsstatusvärde\] = 7 |
+| Sen & fullständig           | COUNTROWS(FILTER('Tillverkningsorder', 'Tillverkningsorder'\[är fullständig\] = TRUE && 'Tillverkningsorder'\[är fördröjd\] = TRUE)) |
+| Sen \#                  | COUNTROWS(FILTER('Tillverkningsorder', 'Tillverkningsorder'\[är fördröjd\] = TRUE)) |
+| Sena i procent                   | IFERROR( IF('Tillverkningsorder'\[sen \#\] \<\> 0, 'Tillverkningsorder'\[sen \#\], IF('Tillverkningsorder'\[Totalt antal order\] = 0, BLANK(), 0)) / 'Tillverkningsorder'\[Totalt antal order\], BLANK()) |
+| I tid och fullständig        | COUNTROWS(FILTER('Tillverkningsorder', 'Tillverkningsorder'\[är fullständig\] = TRUE && 'Tillverkningsorder'\[är fördröjd\] = FALSE && 'Tillverkningsorder'\[är tidig\] = FALSE)) |
+| I tid och i sin helhet i procent      | IFERROR( IF('Tillverkningsorder'\[I tid och fullständig\] \<\> 0, 'Tillverkningsorder'\[I tid och fullständig\], IF('Tillverkningsorder'\[Slutförd\] = 0, BLANK(), 0)) / 'Tillverkningsorder'\[Slutförd\], BLANK()) |
 | Totalt antal order             | COUNTROWS (produktionsorder) |
-| Total kvantitet           | SUM('Produktionsorder'[Bra kvantitet]) + SUM('Production order'[Fel kvantitet]) |
-| Defektgrad (ppm)        | IF ('Flödestransaktioner' [kvantitet bearbetad] = 0, BLANK(), (SUMMA ('Flödestransaktioner' [Antal felaktiga]) / 'Flödestransaktioner' [kvantitet bearbetad]) \*1000000) |
-| Defektgrad blandad (ppm) | IF ('Flödestransaktioner' [Total blandad kvantitet] = 0, BLANK(), (SUMMA ('Flödestransaktioner' [Antal felaktiga]) / 'Flödestransaktioner' [Total blandad kvantitet]) \*1000000) |
-| Bearbetad kvantitet       | SUM ('Flödestransaktioner' [Bra kvantitet]) + SUM ('Flödestransaktioner' [Felaktig kvantitet]) |
-| Total blandad kvantitet     | SUM ('Produktionsorder' [Bra kvantitet]) + SUM ('Flödestransaktioner' [Felaktig kvantitet]) |
+| Total kvantitet           | SUM('Tillverkningsorder'\[Bra kvantitet\]) + SUM('Tillverkningsorder'\[Felaktig kvantitet\]) |
+| Defektgrad (ppm)        | IF( 'Flödestransaktioner'\[Bearbetad kvantitet\] = 0, BLANK(), (SUM('Flödestransaktioner'\[Felaktig kvantitet\]) / 'Flödestransaktioner'\[Bearbetad kvantitet\]) \* 1000000) |
+| Defektgrad blandad (ppm) | IF( 'Flödestransaktioner'\[Total blandad kvantitet\] = 0, BLANK(), (SUM('Flödestransaktioner'\[Felaktig kvantitet\]) / 'Flödestransaktioner'\[Total blandad kvantitet\]) \* 1000000) |
+| Bearbetad kvantitet       | SUM('Flödestransaktioner'\[Bra kvantitet\]) + SUM('Flödestransaktioner'\[Felaktig kvantitet\]) |
+| Total blandad kvantitet     | SUM('Tillverkningsorder'\[Bra kvantitet\]) + SUM('Flödestransaktioner'\[Felaktig kvantitet\]) |
 
 Följande tabell visar nyckeldimensionerna som används som filter för att dela upp de sammanlagda måtten så att du kan uppnå bättre nivåer och får djupare analysinsikter.
 
@@ -130,6 +130,4 @@ Följande tabell visar nyckeldimensionerna som används som filter för att dela
 | Enheter                  | Id och Namn                                                   |
 | Resurser                 | Resurs-ID, resursnamn, resurstyp och resursgrupp |
 | Produkter                  | Produktnummer, produktnamn, artikel-ID och artikelgrupp         |
-
-
 

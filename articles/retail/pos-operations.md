@@ -19,10 +19,10 @@ ms.author: jeffbl
 ms.search.validFrom: 2017-09-27
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 58653d6e991f1896673a07e3057bd516c74edd76
+ms.sourcegitcommit: 96a9075294c1f2a9cfde03be1aaaa26af90de4c2
+ms.openlocfilehash: f68e89422e7124874004a20c2bae5809dcdfb099
 ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/04/2018
 
 ---
 
@@ -49,6 +49,8 @@ Obs! Åtgärderna i listan nedan gäller den senaste versionen av Dynamics 365 f
 | 707 | Aktivera enhet | Aktivera aktuell enhet genom att låta en autentiserad användare ange anslutningsinformationen och tilldela en enhet och registrer-ID. | Nr | Nr | Nr | Nr | Nr |
 | 134 | Lägg till anknytning | Lägg till en förvald anknytning till en transaktion. Välj anknytningen på sidan **Knappegenskaper**. | Ja | Ja | Nr | Ja | Nr |
 | 135 | Lägg till anknytning från lista | Lägg till en anknytning till en transaktion i en lista. | Ja | Ja | Ja | Ja | Nr |
+| 137 | Välj en anknytning till en kund | Lägg till en anknytning till en kund på sidan **kunduppgifter**. | Nr | Nr | Nr | Ja | Nr |
+| 138 | Ta bort anknytning från kund | Ta bort en anknytning på sidan **kunduppgifter**. | Nr | Nr | Nr | Ja | Nr |
 | 643 | Lägg till kupongkod | Lägg till en kupong genom att ange dess kod i kassan. | Ja | Ja | Nr | Ja | Nr |
 | 117 | Lägg till förmånskort | Uppmana användaren att ange ett förmånskortnummer som ska läggas till den aktuella transaktionen. | Ja | Ja | Nr | Ja | Nr |
 | 136 | Lägg till serienummer | Den här operationen låter användaren ange ett serienummer för den aktuella produkten. | Ja | Ja | Nr | Ja | Nr |

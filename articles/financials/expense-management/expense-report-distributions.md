@@ -1,7 +1,7 @@
 ---
 title: "Fördelningar på en utgiftsrapport"
 description: "När du för in utgifter i en utgiftsrapport kan du fördela utgiften över flera olika projekt, juridiska personer eller konton i din organisation."
-author: saraschi2
+author: ShylaThompson
 manager: AnnBe
 ms.date: 09/19/2017
 ms.topic: article
@@ -12,16 +12,14 @@ audience: Application User
 ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: saraschi
-ms.search.validFrom:
-- month/year of release that feature was introduced in
-- in format yyyy-mm-dd
+ms.author: shylaw
+ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: 0f3f50061fc5b9b4cfc00000492840061fc3b386
+ms.sourcegitcommit: 384c38f3e154495c882434d1c85cef63396cd897
+ms.openlocfilehash: 00d051a8f644a6a0bedb0acc3eaac9a3dd1109e7
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/15/2018
 
 ---
 
@@ -36,10 +34,10 @@ Nancy, en säljare för Fabrikam, reste exempelvis från Frankfurt till Köpenha
 Eftersom Nancy arbetade med två separata projekt när hon var i Frankfurt, fördelar hon sina utgifter på lämpligt sätt mellan de två projekten när hon fyller i sin utgiftsrapport. Följande tabell visar hur Nancy fördelade sina utgifter.
 
 
-| <strong>Utgiftstyp</strong> | <strong>Totalt utgiftsbelopp</strong> | <strong>Belopp fördelat på Projekt A</strong> | <strong>Belopp fördelat på Projekt B</strong> |
-|-------------------------------|---------------------------------------|--------------------------------------------------|--------------------------------------------------|
-|          Tågresor           |                578 DKK                |                     405 DKK                      |                     173 DKK                      |
-|             Hotell             |                725 EUR                |                     557 EUR                      |                     168 EUR                      |
-|             Måltider             |                346 EUR                |                     284 EUR                      |                      62 EUR                      |
+| Utgiftstyp | Totalt utgiftsbelopp|Belopp fördelat på Projekt A| Belopp fördelat på Projekt B |
+|--------------|---------------------|-------------------------------|---------------------------------|
+|Tågresor   |578 DKK              |405 DKK                        |173 DKK                          |
+|Hotell         |725 EUR              |557 EUR                        |168 EUR                          |
+|Måltider         |346 EUR              |284 EUR                        |62 EUR                           |
 
 

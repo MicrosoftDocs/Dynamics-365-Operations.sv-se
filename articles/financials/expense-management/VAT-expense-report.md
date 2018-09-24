@@ -26,6 +26,8 @@ ms.lasthandoff: 03/13/2018
 
 # <a name="vat-recovery-in-expense-management"></a>Momsåtervinning i Utgiftshantering
 
+[!include [banner](../includes/banner.md)]
+
 För att få återbetalningar vid berättigade momstransaktioner måste ett företag eller en organisation identifiera, samla in, kontrollera och skicka korrekt information. Den här processen omfattar flera aktiviteter och beroende på företagets storlek kan det innefatta flera medarbetare eller roller.
 
 Om du vill återställa moms med utgiftshantering måste följande förutsättningar uppfyllas:
