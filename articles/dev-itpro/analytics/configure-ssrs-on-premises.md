@@ -18,10 +18,10 @@ ms.author: sarvanis
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: b18050aa3c01db5667f0a529e3eb0c5eba971dc8
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 166d419f16866f699b96013222ce8da147a5ec21
 ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 # <a name="configure-sql-server-reporting-services-for-on-premises-deployments"></a>Konfigurera SQL Server Reporting Services för lokal distribution
@@ -31,56 +31,67 @@ ms.lasthandoff: 08/09/2018
 Använd stegen i det här avsnittet för att konfigurera SQL Server Reporting Services (SSRS) för distribution av Microsoft Dynamics 365 for Finance and Operations (lokal).
 
 1. Öppna Reporting Services Configuration Manager-programmet.
-2. Lämna standardnamnet **servernamn**, som bör vara namnet på den aktuella datorn och **rapportserverinstansen**, **MSSQLSERVER**. 
+2. Lämna standardnamnet **servernamn**, som bör vara namnet på den aktuella datorn och **rapportserverinstansen**, **MSSQLSERVER**.
 3. Klicka på **anslut**.
-   
-   [![Anslutning för rapporteringsserverkonfiguration](./media/ssrs-config-manager-01.png)](./media/ssrs-config-manager-01.png)
-   
+
+    [![Anslutning för rapporteringsserverkonfiguration](./media/ssrs-config-manager-01.png)](./media/ssrs-config-manager-01.png)
+
 4. Klicka på fliken **tjänstkonto** och verifiera att inställningarna stämmer med bilden nedan.
 
     [![Fliken Tjänstkonto](./media/ssrs-config-manager-02.png)](./media/ssrs-config-manager-02.png)
-    
-5. Klicka på fliken **Webbtjänst-URL** och verifiera att inställningarna stämmer med bilden nedan. 
 
-    [![Fliken Webbtjänst-URL](./media/ssrs-config-manager-03.png)](./media/ssrs-config-manager-03.png) 
-    
-6. Klicka på fliken **database** och kontrollera att den **databasnamn** och **inställning av autentiseringsuppgifter** matchar följande bild. **Obs!** du behöver skapa en ny databas. För att göra detta klickar du på **ändra databasen** och kontrollerar att det nya databasnamnet är: **DynamicsAxReportServer**.
+5. Klicka på fliken **Webbtjänst-URL** och verifiera att inställningarna stämmer med bilden nedan.
+
+    [![Fliken Webbtjänst-URL](./media/ssrs-config-manager-03.png)](./media/ssrs-config-manager-03.png)
+
+6. Klicka på fliken **database** och kontrollera att den **databasnamn** och **inställning av autentiseringsuppgifter** matchar följande bild.
+
+    > [!NOTE]
+    > Du behöver skapa en ny databas. För att göra detta klickar du på **ändra databasen** och kontrollerar att det nya databasnamnet är: **DynamicsAxReportServer**.
 
     [![Fliken Databas](./media/ssrs-config-manager-04.png)](./media/ssrs-config-manager-04.png)
-    
-7. Klicka på fliken **Webbportal-URL** och verifiera att inställningarna stämmer med bilden nedan. **Obs!** Du måste klicka på **Använd** för att skapa och konfigurera portalen.
+
+7. Klicka på fliken **Webbportal-URL** och verifiera att inställningarna stämmer med bilden nedan.
+
+    > [!NOTE]
+    > Du måste klicka på **Använd** för att skapa och konfigurera portalen.
 
     [![Fliken Webbportal-URL](./media/ssrs-config-manager-05.png)](./media/ssrs-config-manager-05.png)
-    
-   När portalen har konfigurerats kommer fliken **webbportal** att matcha följande bild.
+
+    När portalen har konfigurerats kommer fliken **webbportal** att matcha följande bild.
+
     [![Fliken Webbportal](./media/ssrs-config-manager-06.png)](./media/ssrs-config-manager-06.png)
-    
-8. Klicka på rapport-URL om du vill visa webbportalen SQL Server Reporting Services. 
+
+8. Klicka på rapport-URL om du vill visa webbportalen SQL Server Reporting Services.
 9. När du är på portalen kan du skapa en ny mapp med namnet **Dynamics**.
 
-   [![Mappen Dynamics](./media/ssrs-config-manager-07.png)](./media/ssrs-config-manager-07.png)
-    
+    [![Mappen Dynamics](./media/ssrs-config-manager-07.png)](./media/ssrs-config-manager-07.png)
+
 10. I **Reporting Services Configuration Manager** klickar du på fliken **E-postinställningar** och verifierar att inställningarna stämmer med bilden nedan.
 
     [![Fliken E-postinställningar](./media/ssrs-config-manager-08.png)](./media/ssrs-config-manager-08.png)
-    
+
 11. Klicka på fliken **Körningskonto** och verifiera att inställningarna stämmer med bilden nedan.
 
     [![Fliken Körningskonto](./media/ssrs-config-manager-09.png)](./media/ssrs-config-manager-09.png)
-    
-    Ändra inte förvalda inställningar i fliken **Krypteringsnycklar**. [![flik för krypteringsnycklar](./media/ssrs-config-manager-10.png)](./media/ssrs-config-manager-10.png)
-    
+
+    Ändra inte standardinställningarna på fliken **krypteringsnycklar**.
+
+    [![Fliken Krypteringsnycklar](./media/ssrs-config-manager-10.png)](./media/ssrs-config-manager-10.png)
+
 12. Klicka på fliken **Abonnemangsinställningar** och verifiera att inställningarna stämmer med bilden nedan.
 
     [![Fliken Abonnemangsinställningar](./media/ssrs-config-manager-11.png)](./media/ssrs-config-manager-11.png)
-    
-    Ändra inte förvalda inställningar i fliken **Distribution av arbetsbelastning**. [![flik för distribution av arbetsbelastning](./media/ssrs-config-manager-12.png)](./media/ssrs-config-manager-12.png)
-    
-    Ändra inte förvalda inställningar i fliken **Power BI-integrering**. [![flik för power bi-integrering](./media/ssrs-config-manager-13.png)](./media/ssrs-config-manager-13.png) 
-    
+
+    Ändra inte standardinställningarna på fliken **Skala ut-distribution**.
+
+    [![Fliken Skala ut-distribution](./media/ssrs-config-manager-12.png)](./media/ssrs-config-manager-12.png)
+
+    Ändra inte standardinställningarna på fliken **Power BI-integration**.
+
+    [![Fliken Power BI-integration](./media/ssrs-config-manager-13.png)](./media/ssrs-config-manager-13.png)
+
 13. Klicka på **Avsluta** för att stänga **Reporting Services Configuration Manager**.
 
     [![Stänga reporting services configuration manager](./media/ssrs-config-manager-14.png)](./media/ssrs-config-manager-14.png)
-    
-
 

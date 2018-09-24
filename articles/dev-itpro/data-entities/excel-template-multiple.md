@@ -18,10 +18,10 @@ ms.author: sunilg
 ms.search.validFrom: 2018-01-01
 ms.dyn365.ops.version: Platform update 13
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 5bc021ce9f0835f2eda310ef7818c9bc9be749f2
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 48239b48cbc24e34d74bbac36e8f827a15d7b840
 ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -36,7 +36,7 @@ Låt oss ta ett exempel där det finns en Excel-fil med kalkylblad kallat **Plat
 
 Om du lägger till den andra entiteten **lagerställen** utan att lämna formuläret **Lägg till fil** kommer kalkylbladets sökning låta dig välja kalkylbladet **lagerställen** utan att behöva överföra filen igen. Enda skälet att överföra en ny fil skulle vara om **lagerställen**-data finns i en annan fil.
 
-![Flera kalkylblad](./media/AddFileMultipleWorkSheets.png) 
+![Flera kalkylblad](./media/AddFileMultipleWorkSheets.png)
 
 ## <a name="fix-worksheet-to-entity-mapping"></a>Korrigera kalkylblad till entitetsmappning
 
@@ -51,5 +51,4 @@ I fall där en ny version av samma fil eller en helt ny fil måste läsas in fö
 ## <a name="upload-a-file-using-run-project"></a>Överför en fil genom att använda Kör projekt
 
 Du kan överföra en Excel-fil när du använder alternativet **Köra projekt** som kör ett importprojekt. Du måste vara noga med att överföra filer som har samma kalkylblad som de befintliga mappningarna för datatabellerna i dataprojektet. Om ett kalkylblad inte finns i den nyligen överförda filen, visas ett fel i systemet och importen avbryts. Om mappningen till kalkylbladet måste ändras för en entitet och mappningarna i dataprojektet måste först uppdateras från i inne i dataprojektet innan du använder filen i upplevelsen **Kör projekt**.
-
 

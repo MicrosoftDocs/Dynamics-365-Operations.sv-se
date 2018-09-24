@@ -16,10 +16,10 @@ ms.author: tjvass
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a8b5a5af5108744406a3d2fb84d7151baea2481b
-ms.openlocfilehash: d8cd3a6b3cbfa1219f0ebcf9d4d2132197167220
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 3f6b83166ba942e40e5e1f7c0ef9df40a44bfbc5
 ms.contentlocale: sv-se
-ms.lasthandoff: 04/13/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -54,7 +54,7 @@ Innan du börjar måste du skapa eller skaffa Power BI-rapporten som du bäddar 
 Följ dessa steg om du vill lägga till en .pbix-fil som en projektartefakt för Visual Studio.
 
 1. Skapa ett nytt projekt i lämplig modell.
-2. Välj projektet i Solution Explorer, högerklicka och välj sedan **Lägg till** > **Ny artikel**.
+2. Välj projektet i Solution Explorer, högerklicka och välj sedan **Lägg till** \> **Ny artikel**.
 3. I dialogrutan **Lägg till nytt objekt** under **Operations artefakter** markerar du mallen **resurs**.
 4. Ange ett namn som används för att referera till rapporten i X++-metadata och klicka sedan på **Lägg till**.
 
@@ -77,7 +77,7 @@ Följ dessa steg för att utöka formulärets definition för arbetsytan **Reser
 
 1. Öppna formulärdesignern för att utöka designdefinitionen.
 2. I designdefinitionen, markera det översta elementet med etiketten **Design | Mönster: Arbetsyta fungerar**.
-3. Högerklicka och välj sedan **Ny** > **Flik** för att lägga till en ny kontroll med namnet **FormTabControl1**.
+3. Högerklicka och välj sedan **Ny** \> **Flik** för att lägga till en ny kontroll med namnet **FormTabControl1**.
 4. I formdesignern väljer du **FormTabControl1**.
 5. Högerklicka och välj sedan **Ny fliksida** för att lägga till en ny fliksida.
 6. Byt namn på fliksidan till något beskrivande som t.ex. **arbetsytan**.
@@ -86,12 +86,12 @@ Följ dessa steg för att utöka formulärets definition för arbetsytan **Reser
 9. Byt namn på fliksidan till något beskrivande som t.ex. **analys**.
 10. I formulärdesignern väljer du **analys (fliksida)**.
 11. Ange egenskapen **Rubrik** till **Analys**.
-12. Högerklicka på kontrollen och välj sedan **ny** > **grupp** för att lägga till en ny formulärgruppkontroll.
+12. Högerklicka på kontrollen och välj sedan **Ny** \> **Grupp** för att lägga till en ny formulärgruppkontroll.
 13. Byt namn på formulärgruppen till något beskrivande som t.ex. **powerBIReportGroup**.
 14. I formulärdesignern väljer du **PanoramaBody (fliken)**, och drar sedan kontrollen till fliken **arbetsyta**.
 15. I designdefinitionen, markera det översta elementet med etiketten **Design | Mönster: Arbetsyta fungerar**.
 16. Högerklicka och markera sedan **Ta bort mönster**.
-17. Högerklicka igen och välj **Lägg till mönster** > **Arbetsytan tabbad**.
+17. Högerklicka igen och välj **Lägg till mönster** \> **Arbetsytan tabbad**.
 18. Utföra en version för att kontrollera ändringarna.
 
 Följande illustration visar hur designen ser ut efter ändringarna har tillämpats.
@@ -103,7 +103,7 @@ Nu när du har lagt till formulärkontroller som används för att bädda in arb
 > [!NOTE]
 > Vi rekommenderar att du använder tillägg för att dölja både sidan **filterruta** och **flik** för konsekvens.
 
-Du har nu slutfört uppgiften att utöka definitionen för ansökningsformulär. Mer information om hur du använder tillägg om du vill göra anpassningar finns [anpassning: överlagring och tillägg](../extensibility/customization-overlayering-extensions.md).
+Du har nu slutfört uppgiften att utöka definitionen för ansökningsformulär. Mer information om hur du använder tillägg om du vill göra anpassningar finns i [anpassning: överlagring och tillägg](../extensibility/customization-overlayering-extensions.md).
 
 ## <a name="add-x-business-logic-to-embed-a-viewer-control"></a>Lägg till X ++-affärslogik om du vill inkludera visningskontrollen
 Så här lägger du till affärslogik som initierar rapportvisningskontrollen som är inbäddad i arbetsytan **Reservationshantering**.
@@ -116,7 +116,7 @@ Så här lägger du till affärslogik som initierar rapportvisningskontrollen so
     [Form] 
     public class FMClerkWorkspace extends FormRun
     {
-        private boolean initReportControl = true;     
+        private boolean initReportControl = true;
         protected void initAnalyticalReport()
         {
             if (!initReportControl)
@@ -126,11 +126,11 @@ Så här lägger du till affärslogik som initierar rapportvisningskontrollen so
             // Note: secure entry point into the Workspace's Analytics report
             if (Global::hasMenuItemAccess(menuItemDisplayStr(FMClerkWorkspace), MenuItemType::Display))
             {
-                FMPBIWorkspaceController controller = new FMPBIWorkspaceController();
+                // initialize the PBI report control using shared helper
                 PBIReportHelper::initializeReportControl('FMPBIWorkspaces', powerBIReportGroup);
             }
             initReportControl = false;
-    }
+        }
         /// <summary>
         /// Initializes the form.
         /// </summary>
@@ -159,23 +159,22 @@ Det här avsnittet innehåller information om den hjälpklass som används för 
 #### <a name="syntax"></a>Syntax
 ```
 public static void initializeReportControl(
-     str                 _resourceName,
-     FormGroupControl    _formGroupControl,
-     str                 _defaultPageName = '',
-     boolean             _showFilterPane = false,
-     boolean             _showNavPane = false,
-     List                _defaultFilters = new List(Types::Class))
+    str                 _resourceName,
+    FormGroupControl    _formGroupControl,
+    str                 _defaultPageName = '',
+    boolean             _showFilterPane = false,
+    boolean             _showNavPane = false,
+    List                _defaultFilters = new List(Types::Class))
 ```
 
 #### <a name="parameters"></a>Parametrar
 
-|       Namn       |                                                              beskrivning                                                               |
-|------------------|----------------------------------------------------------------------------------------------------------------------------------------|
-|   resourceName   |                                                    Namnet på .pbix-resursen                                                     |
-| formGroupControl |                                    Formulärgruppkontrollen som Power BI-rapportkontrollen ska tillämpas till.                                     |
-| defaultPageName  |                                                         Standardsidnamnet.                                                         |
-|  showFilterPane  |   Ett booleskt värde som anger om filterrutan ska visas (<strong>sant</strong>) eller döljas (<strong>falsk</strong>).   |
-|   showNavPane    | Ett booleskt värde som anger om navigeringsrutan ska visas (<strong>sant</strong>) eller döljas (<strong>falsk</strong>). |
-|  defaultFilters  |                                              Standardfilter för Power BI-rapporten.                                              |
-
+| Namn             | beskrivning                                                                                                  |
+|------------------|--------------------------------------------------------------------------------------------------------------|
+| resourceName     | Namnet på .pbix-resursen                                                                              |
+| formGroupControl | Formulärgruppkontrollen som Power BI-rapportkontrollen ska tillämpas till.                                              |
+| defaultPageName  | Standardsidnamnet.                                                                                       |
+| showFilterPane   | Ett booleskt värde som anger om filterrutan ska visas (**sant**) eller döljas (**falsk**).     |
+| showNavPane      | Ett booleskt värde som anger om navigeringsrutan ska visas (**sant**) eller döljas (**falsk**). |
+| defaultFilters   | Standardfilter för Power BI-rapporten.                                                                 |
 

@@ -18,10 +18,10 @@ ms.author: shylaw
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
-ms.openlocfilehash: 15d25274b02b0e9423fd4670b82c2e398316a1fa
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: d1cd378a58d4a4fe4388238f97e84a8e2b07937b
 ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -31,26 +31,31 @@ ms.lasthandoff: 08/09/2018
 
 Det här avsnittet beskriver hur du kan sprida säkerhet för åtkomstnivå i kostnadsredovisning till säkerhet för radnivå i Microsoft Power BI. Dessa funktioner hjälper till att säkerställa att användare bara ser Power BI-data som de har beviljats åtkomst till.
 
-<a name="overview"></a>Översikt
---------
+## <a name="overview"></a>Översikt
 
 **Kostnadsredovisningsanalys** Microsoft Power BI-innehållet använder Power BI säkerhet på radnivå för att begränsa en användares åtkomst. Säkerheten baseras på den organisationshierarki på åtkomstnivå som har ställts in i parametrar för kostnadsredovisning. Mer information om **Kostnadsredovisningsanalys** för Power BI-innehåll finns i [Kostnadsredovisningsanalys för Power BI-innehåll](cost-accounting-analysis-content-pack.md).
 
 ## <a name="setup"></a>Inställningar
-Om du vill sprida säkerhet på åtkomstnivå till Power BI måste Power BI-innehållet följa dessa steg. **Obs!** Användare som publicerar **Kostnadsredovisningsanalys** för Power BI-innehåll blir automatiskt ägare. Endast en ägare kan ställa in säkerhet i Power BI. Dessutom, tills ägaren lägger till andra användare i PowerBI.com kan ingen förutom ägaren se några data i **Kostnadsredovisningsanalys** för Power BI-innehåll.
+Om du vill sprida säkerhet på åtkomstnivå till Power BI måste Power BI-innehållet följa dessa steg.
 
-1.  Publicera definitionsfilen till Power BI.
-2.  Logga in på PowerBI.com.
-3.  Hitta datamängden för **Kostnadsredovisningsanalys** för Power BI content.
-4.  Öppna säkerhetssidan. 
+> [!NOTE]
+> Användare som publicerar **Kostnadsredovisningsanalys** för Power BI-innehåll blir automatiskt ägare. Endast en ägare kan ställa in säkerhet i Power BI. Dessutom, tills ägaren lägger till andra användare i PowerBI.com kan ingen förutom ägaren se några data i **Kostnadsredovisningsanalys** för Power BI-innehåll.
+
+1. Publicera definitionsfilen till Power BI.
+2. Logga in på PowerBI.com.
+3. Hitta datamängden för **Kostnadsredovisningsanalys** för Power BI content.
+4. Öppna säkerhetssidan.
 
     ![Öppna säkerhetssidan](./media/CA-picture-1.png)
 
-5.  Rollen **Kostnadsobjektcontroller** har redan skapats. Lägg till andra medlemmar som ingår i organisationshierarkin på åtkomstnivå för kostnadsredovisning. 
+5. Rollen **Kostnadsobjektcontroller** har redan skapats. Lägg till andra medlemmar som ingår i organisationshierarkin på åtkomstnivå för kostnadsredovisning.
 
     ![Lägga till medlemmar](./media/CA-picture-2.png)
 
-Användare som läggs till i rollen **Kostnadsobjektcontroller** kommer endast att se de data som de får tillstånd att se enligt definitionen i organisationshierarkin på åtkomstnivå för kostnadsredovisning. **Obs!** Säkerhet på radnivå som gäller paneler och rapporter i Microsoft Dynamics 365 for Finance and Operations som är inbäddade från Power BI.
+Användare som läggs till i rollen **Kostnadsobjektcontroller** kommer endast att se de data som de får tillstånd att se enligt definitionen i organisationshierarkin på åtkomstnivå för kostnadsredovisning.
+
+> [!NOTE]
+> Säkerhet på radnivå som gäller paneler och rapporter i Microsoft Dynamics 365 for Finance and Operations som är inbäddade från Power BI.
 
 ## <a name="updating-security"></a>Uppdatera säkerhet
 Om uppdateringar görs av säkerhet på åtkomstnivå i kostnadsredovisningen och du vill att Power BI ska återspegla dessa uppdateringarna, måste du uppdatera enhetsbutiken **Kostnadsredovisningsanalys** för Power BI-innehåll. När du har slutfört uppdateringen av enhetsbutiken från Finance and Operations måste du uppdatera artefakterna på PowerBI.com. Mer information om hur du gör en uppdatering av enhetsbutik finns [Uppdatera enhetsbutik](power-bi-integration-entity-store.md#update-entity-store). Ägaren av **Kostnadsredovisningsanalys** för Power BI-innehåll måste också göra en uppdatering av enhetsbutiken om nya användare beviljas åtkomst till organisationshierarkin. Dessutom måste ägaren lägga till nya användare till rollen **Kostnadsobjektcontroller** i PowerBI.com, så att säkerhet på radnivå tillämpas för dem.
@@ -60,7 +65,4 @@ Vi utgår från att din organisation vill begränsa dataåtkomst. Om säkerhetsp
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 Mer information om säkerhet för Power BI på radnivå finns i [Hantera säkerheten av din modell i Power BI](https://powerbi.microsoft.com/en-us/documentation/powerbi-admin-rls/#manage-security-on-your-model).
-
-
-
 

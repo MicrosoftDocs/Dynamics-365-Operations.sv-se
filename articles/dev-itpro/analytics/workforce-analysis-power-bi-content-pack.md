@@ -19,10 +19,10 @@ ms.author: jcart
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 17b42ae7e177a42b732654f2952ec5fe35acb1a9
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 1bb4b55fd929c105c20a1d4b1086bbb7f07d5eb1
 ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -35,34 +35,34 @@ Det här avsnittet beskriver **Microsoft Power BI-innehåll för personalmätnin
 ## <a name="accessing-the-power-bi-content"></a>Åtkomst till Power BI-innehåll
 Power BI-innehåll för **Personalmätningar** visas i arbetsytan **Personalhantering** om du använder någon av följande produkter:
 
-- Microsoft Dynamics 365 for Finance and Operations 
+- Microsoft Dynamics 365 for Finance and Operations
 - Microsoft Dynamics 365 for Talent
 
 ## <a name="metrics-that-are-included-in-the-power-bi-content"></a>Mått som ingår i Power BI-innehållet
 Följande tabell visar mätningar som är tillgängliga i varje rapport.
 
-| Rapport                                           | Mätvärden                                                                                                                                                                                                            |
-|--------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Personmätningar                                   | Sammanfattning av andra rapporter                                                                                                                           |
-| Personalstyrka analys företag, avdelning, plats | Personalstyrka per företag, personalstyrka per avdelning, personalstyrka per plats och totala personalstyrkan                                                                                                                           |
-| Personalstyrka analys, jobb, steg, chef            | Personalstyrka per jobb, personalstyrka per steg, personalstyrka per chef och totala personalstyrkan                                                                                                                                      |
-| Personalstyrkan trendanalys                         | Personalstyrkan detta år jämfört med förra året per företag och rullande personalstyrka under de senaste 12 månaderna                                                                                                                        |
+| Rapport                                           | Mätvärden |
+|--------------------------------------------------|---------|
+| Personmätningar                                   | Sammanfattning av andra rapporter |
+| Personalstyrka analys företag, avdelning, plats | Personalstyrka per företag, personalstyrka per avdelning, personalstyrka per plats och totala personalstyrkan |
+| Personalstyrka analys, jobb, steg, chef            | Personalstyrka per jobb, personalstyrka per steg, personalstyrka per chef och totala personalstyrkan |
+| Personalstyrkan trendanalys                         | Personalstyrkan detta år jämfört med förra året per företag och rullande personalstyrka under de senaste 12 månaderna |
 | FTE-analyser                                     | Totalt motsvarande heltid, totalt tilldelad heltid, heltid per avdelning, heltid de senaste 12 månaderna och heltid efter jobb |
 | Personalens befolkning                           | Personalstyrka per ålder och kön, personalstyrka per etniskt ursprung, personalstyrka per veteranstatus, personalstyrka per civilstånd, antal heltidsstudenter, genomsnittlig anställningstid, genomsnittlig ålder, förhållandet mellan kvinnliga och manliga medarbetare och språk som talas av personalen |
-| Befattningsanalys                                | Lediga befattningar per avdelning, öppna till fulla befattningar, aktiva till inaktiva befattningar och befattningar per avdelning                                                                                                   |
-| Avgångsanalys                               | Avgång i år jämfört med förra året, avgång, medarbetare som slutar efter ålder och kön, genomsnittlig anställningstid för medarbetare som slutar, medarbetare som slutar denna månad och medarbetare som slutar efter orsak                                                                   |
-| Personer efter avdelning                             | Anställda med ett anställningsnummer per avdelning, befattning och tilldelningens start-och slutdatum                                                                                                                       |
-| Tjänsteålderanalys                               | Genomsnittligt anställningstid, genomsnittliga tjänsteår per företag och tjänsteålderslista                                                                                                                                                              |
-| Medarbetarnas jubileumsdagar                           | Jubileumsdagar denna månad, jubileumsdagar nästa månad, anställda efter tjänsteår, och jubileumsdagar, tjänsteår per avdelning                                                                                                                                                                    |
-| Medarbetarnas födelsedagar                               | Månadens födelsedagar, födelsedagar nästa månad, medarbetarnas födelsedagar, och födelsedagar per månad och avdelning                                                                                                                                                                    |
-| Massanställningsprojekt                               | Totalt antal massanställningsprojekt, massanställningsprojekt efter status, massanställningsprojekt efter avdelning och ägare, massanställningsprojekt efter jobb och massanställningsprojekt                                                                                                                                                                    |
+| Befattningsanalys                                | Lediga befattningar per avdelning, öppna till fulla befattningar, aktiva till inaktiva befattningar och befattningar per avdelning |
+| Avgångsanalys                               | Avgång i år jämfört med förra året, avgång, medarbetare som slutar efter ålder och kön, genomsnittlig anställningstid för medarbetare som slutar, medarbetare som slutar denna månad och medarbetare som slutar efter orsak |
+| Personer efter avdelning                             | Anställda med ett anställningsnummer per avdelning, befattning och tilldelningens start-och slutdatum |
+| Tjänsteålderanalys                               | Genomsnittligt anställningstid, genomsnittliga tjänsteår per företag och tjänsteålderslista |
+| Medarbetarnas jubileumsdagar                           | Jubileumsdagar denna månad, jubileumsdagar nästa månad, anställda efter tjänsteår, och jubileumsdagar, tjänsteår per avdelning |
+| Medarbetarnas födelsedagar                               | Månadens födelsedagar, födelsedagar nästa månad, medarbetarnas födelsedagar, och födelsedagar per månad och avdelning |
+| Massanställningsprojekt                               | Totalt antal massanställningsprojekt, massanställningsprojekt efter status, massanställningsprojekt efter avdelning och ägare, massanställningsprojekt efter jobb och massanställningsprojekt |
 
 Diagrammen och rutorna i samtliga dessa rapporter kan filtreras och fästas på instrumentpanelen. Mer information om hur du filtrerar och fäster i Power BI finns i [Skapa och konfigurera en instrumentpanel](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 Hämta Power BI-innehåll för **Personalmätningar** som kan tillämpas på den version av Microsoft Dynamics 365 som du använder.
 
->[!NOTE]
->.pbix-filerna i Lifecycle Services gäller endast Finance and Operations.
+> [!NOTE]
+> .pbix-filerna i Lifecycle Services gäller endast Finance and Operations.
 
 ## <a name="understanding-the-data-model-and-entities"></a>Förstå datamodellen och enheterna
 Följande tabell visar enheterna som innehållet baserades på.
@@ -88,6 +88,4 @@ Följande tabell visar enheterna som innehållet baserades på.
 | Medarbetarutveckling           | Arbetare över tid, antal anställda, företag och befattning                                 | Företag, geografisk plats, medarbetarens namn, rapporter till, förskjutningskalender, datum, medarbetarens titel, demografi, anställning, jobb |
 | Massanställningsprojekt        | Antal massanställningsprojekt, projektägare och projektstatus                     | Företag, massanställningsrad |
 | Massanställningsrad           | Avdelning, anställningstyp och befattning                                           | Datum, jobb, massanställningsprojekt |
-
-
 

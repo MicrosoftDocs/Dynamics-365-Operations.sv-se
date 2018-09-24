@@ -16,10 +16,10 @@ ms.author: sunilg
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: cf531c3a8f3bdb17314d1de436b98249169f82a3
-ms.openlocfilehash: d58bab48c65bb891155af95c79738b019e5760bf
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 68cafc167c178e2feeb0a5af764a491ea6b3c60b
 ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -66,13 +66,11 @@ Du kan lägga till specifika enheter i import- eller exportjobb eller välja den
 ### <a name="set-the-data-format-for-the-job"></a>Ange dataformat för jobbet
 När du väljer en enhet markerar du format för de data som ska exporteras eller importeras. Du definierar format via panelen **Inställningar för datakälla**. Ett dataformat för källan är en kombination av **typ**, **filformat**, **radavgränsare** och **kolumnavgränsare**. Det finns även andra attribut, men dessa är viktiga att förstå. I tabellen här nedanför listas giltiga kombinationer.
 
-| **Filformat**        | **Rad/kolumnavgränsare**                   | **XML-format**             |
+| Filformat            | Rad/kolumnavgränsare                       | XML-format                 |
 |------------------------|--------------------------------------------|---------------------------|
 | Excel                  | Excel                                      | \-Inte tillämpligt                     |
 | XML                    | \-Inte tillämpligt                                      | XML-element XML-attribut |
 | Avgränsad, fast bredd | Komma, semikolon, flik, lodrätt streck, kolon | \-Inte tillämpligt                     |
-
-
 
 ### <a name="sequence-the-entities"></a>Ordna enheterna
 Enheter kan ordnas i en datamall eller i import- och exportjobb. När du kör ett jobb som innehåller mer än en datatabell måste du kontrollera att datatabellerna har ordnats korrekt. Du ordnar entiteter i första hand så att du kan lösa eventuella funktionella samband mellan olika enheter. Om enheterna inte har några funktionella samband kan de schemaläggas parallell import eller export.

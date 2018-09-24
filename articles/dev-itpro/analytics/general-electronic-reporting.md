@@ -19,10 +19,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: a271887c4d2cfe4d0ee6518482dc4ebe407ebe56
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 185d1adc88a29bc3ae722ae2c6f0a2769428bce3
 ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -63,8 +63,8 @@ En affärsenhet av datamodellen representeras som en behållare (post). Affärse
 
 En enskild datamodellskomponent kan innehålla flera hierarkier av domänspecifika affärsenheter. Den kan också innehålla modellmappningar som har stöd för ett rapportspecifikt dataflöde vid körning. Hierarkierna särskiljs av en enda post som har valts som rot för modellmappningen. Datamodellen för betalningsdomänområdet kan exempelvis stödja följande mappningar:
 
-- Företag > Leverantör > Betalningstransaktioner i AP-domänen
-- Kund > Företag > Betalningstransaktioner i AR-domänen
+- Företag \> Leverantör -\> Betalningstransaktioner i AP-domänen
+- Kund \> Företag -\> Betalningstransaktioner i AR-domänen
 
 Observera att affärsenheter såsom företags- och betalningstransaktioner skapas en gång. Olika mappningar återanvänder sedan dem.
 
@@ -74,7 +74,7 @@ En modellmappning som har stöd för utgående elektroniska dokument har följan
 - Den har stöd för användardefinierade indataparametrar som kan definieras som datakällor för datamodeller när vissa data måste specificeras vid körning.
 - Den stöder transformeringen av Finance and Operations-data till erforderliga grupper. Dessutom kan du filtrera, sortera och summera data, samt lägga till logiska, beräknade fält som utformas via formler som liknar Microsoft Excel-formler, vilket visas i följande illustration. Mer information finns i [Formeldesigner i elektronisk rapportering](general-electronic-reporting-formula-designer.md)).
 
-[![Formeldesigner](./media/ER-overview-01.png)](./media/ER-overview-01.png) 
+[![Formeldesigner](./media/ER-overview-01.png)](./media/ER-overview-01.png)
 
 En modellmappning som har stöd för inkommande elektroniska dokument har följande funktioner:
 
@@ -101,7 +101,7 @@ En formatkomponent låter dig bifoga vissa filer som kan användas i rapporterin
 
 - Excel-arbetsböcker som innehåller ett kalkylblad som kan användas som en mall för utdata i OPENXML-kalkylbladsformat
 - Word-filer som innehåller ett dokument som kan användas som en mall för utdata i Microsoft Word-dokumentformat
-- andra filer som kan ingå i formatets utdata som fördefinierade filer.
+- Andra filer som kan ingå i formatets utdata som fördefinierade filer.
 
 Följande bild visar hur datan flödar för dessa format.
 
@@ -175,7 +175,7 @@ Obligatoriska **LCS-projekt**-databaser kan registreras separat för respektive 
 ## <a name="supported-scenarios"></a>Stödda scenarier
 ### <a name="building-a-data-model"></a>Bygga en datamodell
 
-ER erbjuder en modelldesigner som kan användas för att bygga en datamodell för en viss affärsdomän. Alla domänspecifika företagsenheter och relationerna mellan dem kan presenteras i en datamodell som en hierarkisk struktur. Följande illustration visar ett exempel på den här typen av datamodell (för betalningsdomän). 
+ER erbjuder en modelldesigner som kan användas för att bygga en datamodell för en viss affärsdomän. Alla domänspecifika företagsenheter och relationerna mellan dem kan presenteras i en datamodell som en hierarkisk struktur. Följande illustration visar ett exempel på den här typen av datamodell (för betalningsdomän).
 
 [![Datamodell för betalningsdomän](./media/ER-overview-04.png)](./media/ER-overview-04.png)
 
@@ -185,19 +185,18 @@ Spela upp ER-uppgiftsguiden **Skapa domänspecifik datamodell** (del av affärsp
 
 Datamodellens innehåll (etiketter och beskrivningar) kan översättas till andra språk som stöds av Finance and Operations. Du kanske vill översätta datamodellens innehåll av följande skäl:
 
--   Vid designtillfället för att göra innehållet mer begripligt för formatdesigners som talar andra språk och som ska använda datamodellen för datamappning av formatkomponenter.
--   Vid körning för att göra innehållet mer användarvänligt genom att använda prompter och hjälp för körningsparametrar, samt konfigurerade valideringsmeddelanden (fel och varningar) på det språk som för tillfället inloggade användarna föredrar.
+- Vid designtillfället för att göra innehållet mer begripligt för formatdesigners som talar andra språk och som ska använda datamodellen för datamappning av formatkomponenter.
+- Vid körning för att göra innehållet mer användarvänligt genom att använda prompter och hjälp för körningsparametrar, samt konfigurerade valideringsmeddelanden (fel och varningar) på det språk som för tillfället inloggade användarna föredrar.
 
-Följande illustration visar ett exempel där datamodellens innehåll översatts från engelska till japanska. 
+Följande illustration visar ett exempel där datamodellens innehåll översatts från engelska till japanska.
 
 [![Datamodellens innehåll på engelska](./media/ER-overview-05.png)](./media/ER-overview-05.png)
 
 [![Datamodellens innehåll översatt till japanska](./media/ER-overview-06.png)](./media/ER-overview-06.png)
 
-
 ### <a name="configuring-data-model-mappings-for-outgoing-documents"></a>Konfigurera mappningar för datamodeller för utgående dokument
 
-ER har en modellmappningsdesigner som låter användarna mappa datamodeller som de har utformat för specifika Finance and Operations-datakällor. Baserat på mappningen importeras datan vid körning från markerade datakällor till datamodellen. Datamodellen används sedan som en abstrakt datakälla för ER format som skapar utgående elektroniska dokument. Följande illustration visar ett exempel på en sådan datamodellmappning (modellmappning av **SEPA-kreditöverföring** i datamodellen för betalningsdomänen). 
+ER har en modellmappningsdesigner som låter användarna mappa datamodeller som de har utformat för specifika Finance and Operations-datakällor. Baserat på mappningen importeras datan vid körning från markerade datakällor till datamodellen. Datamodellen används sedan som en abstrakt datakälla för ER format som skapar utgående elektroniska dokument. Följande illustration visar ett exempel på en sådan datamodellmappning (modellmappning av **SEPA-kreditöverföring** i datamodellen för betalningsdomänen).
 
 [![Exempel på mappning av en datamodell](./media/ER-overview-07.png)](./media/ER-overview-07.png)
 
@@ -210,13 +209,13 @@ ER har en modellmappningsdesigner som låter användarna mappa datamodeller som 
 
 ### <a name="storing-a-designed-model-component-as-a-model-configuration"></a>Spara en skapad modellkomponent som en modellkonfiguration
 
-ER kan lagra en skapad datamodell tillsammans med tillhörande datamappningar som en modellkonfiguration för den aktuella Finance and Operations-instansen. Följande illustration visar ett exempel på den här typen av datamodellkonfiguration (betalningsmodellskonfiguration). 
+ER kan lagra en skapad datamodell tillsammans med tillhörande datamappningar som en modellkonfiguration för den aktuella Finance and Operations-instansen. Följande illustration visar ett exempel på den här typen av datamodellkonfiguration (betalningsmodellskonfiguration).
 
 Spela upp ER-uppgiftsguiden för **Mappa datamodell till valda datakällor** (del av affärsprocessen **7.5.4.3 Anskaffa/utveckla komponenter för IT-tjänster eller -lösningar (10677)**) för att bekanta dig med detaljerna i det här scenariot.
 
 ### <a name="building-a-format-that-uses-a-data-model-as-a-base"></a>Skapa ett format som använder en datamodell som bas
 
-ER stöder en formatdesigner som kan användas för att skapa formatet för ett visst elektroniskt dokument för en vald affärsdomän genom att välja modellkomponenten som bas. Med hjälp av samma ER-formatdesigner kan du mappa formatet du skapar till en vald domäns datamodellmappning som en datakälla. I följande illustration visas ett exempel på den här typen av format (formatkonfigurationen som stöder **BACS**-betalningsformatet för Storbritannien). 
+ER stöder en formatdesigner som kan användas för att skapa formatet för ett visst elektroniskt dokument för en vald affärsdomän genom att välja modellkomponenten som bas. Med hjälp av samma ER-formatdesigner kan du mappa formatet du skapar till en vald domäns datamodellmappning som en datakälla. I följande illustration visas ett exempel på den här typen av format (formatkonfigurationen som stöder **BACS**-betalningsformatet för Storbritannien).
 
 [![Exempel på ett format som använder en datamodell som bas](./media/ER-overview-09.png)](./media/ER-overview-09.png)
 
@@ -240,7 +239,7 @@ Kör ER-uppgiftsguiden för Designa en konfiguration för att skapa rapporter i 
 - [Mall för betalningsrapport (SampleVendPaymDocReport.docx)](https://go.microsoft.com/fwlink/?linkid=845202)
 - [Bunden mall för betalningsrapport (SampleVendPaymDocReportBounded.docx)](https://go.microsoft.com/fwlink/?linkid=845202)
 
-### <a name="building-a-configuration-to-import-data-from-incoming-electronic-documents"></a>Skapa en konfiguration för att importera data från inkommande elektroniska dokument  
+### <a name="building-a-configuration-to-import-data-from-incoming-electronic-documents"></a>Skapa en konfiguration för att importera data från inkommande elektroniska dokument
 ER-formatdesignern kan användas för att beskriva ett elektroniskt dokument som har planerats för dataimport i antingen text- eller XML-format. Det designade formatet används för att tolka ett inkommande dokument. Mappningsdesignern för ER-format kan användas för att definiera elementbindningen för det utformade formatet för datamodellen. Följande illustrationer visar ett exempel på den här typen av format och formatmappning. I det här exemplet importeras NETS-bankutdrag som innehåller information om leverantörsbetalningen i textformat.
 
 [![ER-formatdesigner](./media/ER-overview-12.png)](./media/ER-overview-12.png)
@@ -260,7 +259,7 @@ ER kan spara ett utformat format tillsammans med de konfigurerade datamappningar
 
 ### <a name="configuring-finance-and-operations-to-start-to-use-a-created-format-internally"></a>Konfigurera Finance and Operations för att börja använda skapade format internt
 
-Finance and Operations kan konfigureras för att börja använda ett skapat format för att skapa elektroniska rapporter. Hänvisningen till den skapade formatkonfigurationen ska definieras i inställningarna för en viss domän. Om du exempelvis vill börja använda en ER-formatkonfiguration för elektroniska leverantörsbetalningar i BACS-format ska du referera till formatkonfigurationen i specifika betalningsmetoder, så som visas i följande illustrationer: 
+Finance and Operations kan konfigureras för att börja använda ett skapat format för att skapa elektroniska rapporter. Hänvisningen till den skapade formatkonfigurationen ska definieras i inställningarna för en viss domän. Om du exempelvis vill börja använda en ER-formatkonfiguration för elektroniska leverantörsbetalningar i BACS-format ska du referera till formatkonfigurationen i specifika betalningsmetoder, så som visas i följande illustrationer:
 
 [![Formatkonfigurationen BACS (Storbritannien)](./media/ER-overview-14.png)](./media/ER-overview-14.png)
 
@@ -367,15 +366,9 @@ Med hjälp av ER kan du införa ändringar av den senaste versionen av baskompon
 |                                                  |                       | Leverantörsfakturadeklaration (IS)                   | Format för leverantörsfakturadeklaration för Island                      |
 |                                                  |                       | Rapport över leverantörsfakturadeklaration (IS)            | Rapport över leverantörsfakturadeklaration för Island                      |
 
-
-
-<a name="additional-resources"></a>Ytterligare resurser
---------
+## <a name="additional-resources"></a>Ytterligare resurser
 
 [Krav för lokalisering – Skapa en konfiguration för elektronisk rapportering](electronic-reporting-configuration.md)
 
 [Hantera livscykeln för konfigurering av elektronisk rapportering](general-electronic-reporting-manage-configuration-lifecycle.md)
-
-
-
 

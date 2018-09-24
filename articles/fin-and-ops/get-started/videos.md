@@ -18,10 +18,10 @@ ms.author: josaw
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.0.0, AX 8.0
 ms.translationtype: HT
-ms.sourcegitcommit: 764d4c9049d94ebcd55c61654aa2f4133b35bae6
-ms.openlocfilehash: 476b53d7e5a5ee764c23034344f375fff5db47e8
+ms.sourcegitcommit: d20bc3519096f1035d26f89d42aa7e8f0fc368cd
+ms.openlocfilehash: 8021e54fdd5c4c71c016e52801d3f2f627de761b
 ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 08/29/2018
 
 ---
 
@@ -38,7 +38,7 @@ Videor listas efter funktion, så rulla nedåt för att se hela listan med video
 
 #### <a name="data-integration"></a>Dataintegration
 - [Integrering av potentiell kund till pengar](https://youtu.be/AVV9x5x-XCg) 
-- [Synkronisera en arbetsorder mellan Dynamics 365 for Field Service och Finance and Operations](https://www.youtube.com/watch?v=hAB4TDVMjxU&t=2s)
+- [Synkronisera en arbetsorder mellan Dynamics 365 for Field Service och Finance and Operations](https://www.youtube.com/watch?v=46ylO7raZAo&feature=youtu.be)
 
 #### <a name="data-management"></a>Datahantering
 - [Använd datatabeller och datapaket i Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=UCyzbA41j8g&feature=youtu.be)
@@ -61,6 +61,7 @@ Videor listas efter funktion, så rulla nedåt för att se hela listan med video
 
 #### <a name="intelligence"></a>Intelligence
 - [Ta med din egen databas (BYOD) till Dynamics 365 for Finance and Operations](https://www.youtube.com/watch?v=-MaxtBJu2_o&feature=youtu.be)
+- [Använda Power BI-innehållet för kostnadshantering i Dynamics 365](https://www.youtube.com/watch?v=5jWHnM_C7WM&feature=youtu.be)
 
 #### <a name="lifecycle-services-lcs"></a>Lifecycle Services (LCS)
 - [Tillgångsbibliotek i Lifecycle Services](https://www.youtube.com/watch?v=z-2xMRa1nOs)
@@ -93,6 +94,9 @@ Videor listas efter funktion, så rulla nedåt för att se hela listan med video
 - [Batchbalansering](https://www.youtube.com/watch?v=4SNLWsU9KyI&feature=youtu.be)
 - [Förbättringar av tillverkningsorderns leveransprocess](https://www.youtube.com/watch?v=Rm3ojAz6Zu0&feature=youtu.be)
 - [Visuell tidsplanering med Gantt-diagram för produktions- och batchorder](https://youtu.be/BtbuShkGj4I)
+
+#### <a name="tax-engine"></a>Skattemotor
+- [Översikt över skattemotor](https://www.youtube.com/watch?v=jAFpEBOtNWI&feature=youtu.be)
 
 #### <a name="warehouse-management"></a>Lagerstyrning
 - [Frisläppa produktionsplockning till lagerstället i batch](https://youtu.be/8urAJn50dQ8)

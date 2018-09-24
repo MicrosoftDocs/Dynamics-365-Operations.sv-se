@@ -17,10 +17,10 @@ ms.author: jcart
 ms.search.validFrom: 2017-06-30
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 532834b377cfb8eda4902c387a850314302b22d8
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 38610815e45926aa367011c8723494615e03ee38
 ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -39,13 +39,12 @@ Power BI-innehåll för **Förmåner** visas i arbetsytan **Förmånshantering**
 ## <a name="reports-that-are-included-in-the-power-bi-content"></a>Rapporter som ingår i Power BI-innehållet
 Rapporter som ingår i  Power BI-innehållspaketet **Förmåner** har både diagram och tabeller med ytterligare information. Följande register beskriver rapporterna.
 
-| Rapport                       | Innehåll                                                                                       |
-|------------------------------|------------------------------------------------------------------------------------------------|
-| Översikt över förmånsanmälan  | De mesta och minst anmälda planerna, anmäland per medarbetargrupp och valda förmånsplanalternativ |
-| Anställningsförmåner            | Anmälan till medarbetare efter valt förmån                                                        |
-                                                                                             
-Diagrammen och rutorna i samtliga dessa rapporter kan filtreras och fästas på instrumentpanelen. Mer information om hur du filtrerar och fäster i Power BI finns i [Skapa och konfigurera en intrumentpanel](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
+| Rapport                      | Innehåll                                                                                       |
+|-----------------------------|------------------------------------------------------------------------------------------------|
+| Översikt över förmånsanmälan | De mesta och minst anmälda planerna, anmäland per medarbetargrupp och valda förmånsplanalternativ |
+| Anställningsförmåner           | Anmälan till medarbetare efter valt förmån                                                        |
 
+Diagrammen och rutorna i samtliga dessa rapporter kan filtreras och fästas på instrumentpanelen. Mer information om hur du filtrerar och fäster i Power BI finns i [Skapa och konfigurera en intrumentpanel](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
 ## <a name="understanding-the-data-model-and-entities"></a>Förstå datamodellen och enheterna
 Följande data används för att fylla i rapporterna i Power-Bi-innehållet för **Förmåner**. Denna tabell visar enheterna som innehållet baserades på.
@@ -72,6 +71,4 @@ Följande data används för att fylla i rapporterna i Power-Bi-innehållet för
 | Namn på medarbetare            | Förnamn, efternamn och fullständiga namn                                                                       | Aktuell medarbetare, uppsagd, medarbetare, medarbetarutveckling |
 | Medarbetartitel           | Titel och tjänsteålder                                                                                   | Aktuell medarbetare, uppsagd, medarbetare, medarbetarutveckling |
 | Medarbetarutveckling           | Arbetare över tid, antal anställda, företag och befattning                                                        | Företag, kompensation, geografisk plats, medarbetarens namn, rapporter till, förskjutningskalender, datum, medarbetarens titel, demografi, anställning, jobb, förmåner |
-
-
 

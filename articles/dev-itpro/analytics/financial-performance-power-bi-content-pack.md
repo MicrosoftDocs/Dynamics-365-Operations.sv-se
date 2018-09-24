@@ -18,10 +18,10 @@ ms.author: kweekley
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: cf531c3a8f3bdb17314d1de436b98249169f82a3
-ms.openlocfilehash: b70d470da2160670848d2dca9c97f6d7a2d6cf60
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 78512e39e82e24f94dae93bbac116e6f07d25438
 ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 08/09/2018
 
 [!include [banner](../includes/banner.md)]
 
-> [!Note]
+> [!NOTE]
 > Den här PowerBI.com-lösningen är inaktuellt enligt beskrivningen i [Power BI innehållspaket som finns på AppSource](../migration-upgrade/deprecated-features.md#power-bi-content-packs-available-on-appsource).
 
 Det här avsnittet beskriver PowerBI.com-lösning för **finansiellt resultat**. Det beskriver instrumentpanelen och de rapporter som är inkluderade, samt ger dig information om den datamodell och de enheter som användes för att skapa lösningen.
@@ -58,7 +58,7 @@ Var och en av dessa paneler backas upp av en underliggande rapport. Dessa rappor
 
 | Rapport                      | Information som rapporten innehåller |
 |-----------------------------|--------------------------------------|
-| Kassaanalys               | Kassa efter juridisk person, kassa per kvartal, kassa totalt och kassa efter konto<br><br>**Obs!** Informationen kassa per kvartal innehåller inga ingående saldon i totalsumman för det första kvartalet. Summan av nya transaktioner som bokförs under varje kvartal visas.|
+| Kassaanalys               | Kassa efter juridisk person, kassa per kvartal, kassa totalt och kassa efter konto<blockquote>[!NOTE] Informationen kassa per kvartal innehåller inga ingående saldon i totalsumman för det första kvartalet. Summan av nya transaktioner som bokförs under varje kvartal visas.</blockquote> |
 | Aktuell kvotanalys      | Aktuell kvot per juridisk person, aktuell kvot per kvartal och saldon för omsättningstillgångar och kortfristiga skulder |
 | Snabb kvotanalys        | Snabbkvot per juridisk person, snabbkvot per kvartal och saldon för kassa, kundreskontra och kortfristiga skulder |
 | Kostnadsanalys för sålda varor | Kostnad för sålda varor (COGS) efter juridisk person, kostnad för sålda varor i år och förra året per kvartal, kostnaden för sålda varor till försäljning per juridisk person, total kostnad för sålda varor samt kostnad för sålda varor till försäljningprocentsatsen |
@@ -69,7 +69,7 @@ Var och en av dessa paneler backas upp av en underliggande rapport. Dessa rappor
 | Intäktsanalys           | Verkliga intäkter och budgetintäkter före ränta och skatt (EBIT) efter juridisk person, EBIT i år och förra året, utgifter till intäktsprocentsatsen, samt verkliga och budgeterade utgifter till intäkt |
 | Intäktsanalys            | Totala intäkter, verkliga och budgeterade totala intäkter efter juridisk person, totala intäkter i år och förra året, budgetkostnadsavvikelse efter juridisk person och totala intäkter under denna period och den sista perioden |
 | Utgiftsanalys            | Totala utgifter, faktiska utgifter i jämförelse med totala budgeterade utgifter efter juridisk person, faktiska och budgeterade totala utgifter efter kvartal, totala utgifter efter kontokategori och kvot för verksamhetsutgifter |
-| Fakturerad intäktsanalys     | Total kundreskontra, totala kundreskontra efter juridisk person, totala kundreskontra efter kvartal och saldon för kundreskontra-konton<br><br>**Obs!** Informationen innehåller inga ingående saldon för redovisningskonton för kundreskontra. Den visar summan av nya transaktioner som bokförs under kundreskontra. |
+| Fakturerad intäktsanalys     | Total kundreskontra, totala kundreskontra efter juridisk person, totala kundreskontra efter kvartal och saldon för kundreskontra-konton<blockquote>[!NOTE] Informationen innehåller inga ingående saldon för redovisningskonton för kundreskontra. Den visar summan av nya transaktioner som bokförs under kundreskontra.</blockquote> |
 
 Diagrammen och rutorna i samtliga dessa rapporter kan filtreras och fästas på instrumentpanelen. Mer information om hur du filtrerar och fäster i Power BI finns i [Skapa och konfigurera en intrumentpanel](https://powerbi.microsoft.com/en-us/guided-learning/powerbi-learning-4-2-create-configure-dashboards).
 
@@ -89,5 +89,5 @@ Följande enheter användes till grund för PowerBI.com-lösningen för **ekonom
 - Redovisningar
 - ChartofAccounts
 
-Dessa enheter används för att skapa beräknade mått i datamodellen. Beräknade åtgärder används för att beräkna huvudindikatorerna för prestanda (KPI) samt de rapporter som används i innehåll. Som standard kommer innehållspaketet med data för de senaste tre åren och ett framtida år. Om du vill ta med ytterligare beräkningar i dina rapporter och din instrumentpanel, kan du ändra arbetsboken [Microsoft Excel-arbetsboken](https://mbs.microsoft.com/customersource/global/AX/downloads/reports/msdaxfinpercontentpowerbi). Denna arbetsbok är den standarddatamodell som använts för att skapa innehållet. 
+Dessa enheter används för att skapa beräknade mått i datamodellen. Beräknade åtgärder används för att beräkna huvudindikatorerna för prestanda (KPI) samt de rapporter som används i innehåll. Som standard kommer innehållspaketet med data för de senaste tre åren och ett framtida år. Om du vill ta med ytterligare beräkningar i dina rapporter och din instrumentpanel, kan du ändra arbetsboken [Microsoft Excel-arbetsboken](https://mbs.microsoft.com/customersource/global/AX/downloads/reports/msdaxfinpercontentpowerbi). Denna arbetsbok är den standarddatamodell som använts för att skapa innehållet.
 

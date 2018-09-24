@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: 78b41010e4ab56675121ab5479cada37645e9ee3
+ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
+ms.openlocfilehash: 5483a1d40907fab3ed3da8174f1dfb8a5bc86960
 ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 08/13/2018
 
 ---
 
@@ -30,25 +30,24 @@ ms.lasthandoff: 08/09/2018
 
 [!include [banner](../includes/banner.md)]
 
-Den här artikeln ger en beskrivning av hur du gör användarinställningar för att anpassa användarinteraktioner i en ekonomisk rapportdesigner och kontrollerar den inledande inloggningen. Du kan även styra hur enskilda rapporter, rapportbiblioteket och standardplatser för filer visas. 
+Den här artikeln ger en beskrivning av hur du gör användarinställningar för att anpassa användarinteraktioner i en ekonomisk rapportdesigner och kontrollerar den inledande inloggningen. Du kan även styra hur enskilda rapporter, rapportbiblioteket och standardplatser för filer visas.
 
-<a name="set-user-preferences"></a>Ställ in användarinställningar
---------------------
+## <a name="set-user-preferences"></a>Ställ in användarinställningar
 
-1.  Gå till Rapportdesignern i menyn **Verktyg** och klicka på **Alternativ**.
-2.  Välj dina inställningar i dialogrutan **Alternativ**.
-3.  Klicka på **OK**.
+1. Gå till Rapportdesignern i menyn **Verktyg** och klicka på **Alternativ**.
+2. Välj dina inställningar i dialogrutan **Alternativ**.
+3. Klicka på **OK**.
 
 ## <a name="options-dialog-box-options"></a>Alternativ för dialogruta
 <table>
 <thead>
-<tr class="header">
+<tr>
 <th>Användaralternativ</th>
 <th>beskrivning</th>
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>Vid start</td>
 <td>Välj vad du vill se när du startar Report Designer. Välj ett av följande alternativ:
 <ul>
@@ -57,28 +56,22 @@ Den här artikeln ger en beskrivning av hur du gör användarinställningar för
 <li><strong>Visa Tom miljö</strong> – Öppna ett tomt designerfönster.</li>
 </ul></td>
 </tr>
-<tr class="even">
+<tr>
 <td>Visar bekräftelse innan du avslutar Report Designer</td>
 <td>Välj om du vill få ett varningsmeddelande när du avslutar programmet. Det här meddelandet hjälper till att säkerställa att programmet inte avslutas oavsiktligt.</td>
 </tr>
-<tr class="odd">
-<td>Använd cellunderstrykning automatiskt i kolumnrubriker</td>
+<tr>
+<td>Tillämpar automatiskt cellunderstrykningen i kolumnrubriker</td>
 <td>Välj om du vill infoga en understrykning i cellen för en ny kolumnrubrik.</td>
 </tr>
-<tr class="even">
+<tr>
 <td>Management Reporter-filernas plats</td>
 <td>Ange standardplatsen för filer. Programmet använder standardplatsen när du exporterar grupper för byggblock.</td>
 </tr>
 </tbody>
 </table>
 
-
-
-<a name="additional-resources"></a>Ytterligare resurser
---------
+## <a name="additional-resources"></a>Ytterligare resurser
 
 [Ekonomisk rapportering](financial-reporting-intro.md)
-
-
-
 
