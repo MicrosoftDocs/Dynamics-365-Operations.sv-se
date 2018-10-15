@@ -6,6 +6,14 @@
       items:
         - name: Nyheter och ändringar
           items:
+            - name: Nyheter och ändringar i Dynamics 365 for Talent Core HR (1 oktober 2018)
+              href: whats-new-talent-october-01.md
+            - name: Nyheter och ändringar i Dynamics 365 for Talent Core HR (24 september 2018)
+              href: whats-new-talent-september-24.md
+            - name: Nyheter och ändringar i Dynamics 365 for Talent Core HR (17 september 2018)
+              href: whats-new-talent-september-17-2018.md
+            - name: Nyheter och ändringar i Dynamics 365 for Talent Core HR (10 september 2018)
+              href: whats-new-talent-september-10.md
             - name: Nyheter och ändringar i Dynamics 365 for Talent Core HR (augusti 2018)
               href: whats-new-talent-august2018.md
             - name: Nyheter och ändringar i Dynamics 365 for Talent Core HR (juli 2018)
@@ -16,14 +24,18 @@
           href: provisioning-talent.md
         - name: Ta bort Talent-miljöer
           href: remove-talent-environment.md
-        - name: Etablering för de modulära Talent-apparna
+        - name: Etablering av modulära appar för Talent
           href: modular-app-tech-faq.md
-        - name: Bädda in PowerApps-appar
+        - name: Bädda in appar för PowerApps
           href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
+        - name: Bädda in appar för Core HR och Common Data Service
+          href: CoreHREntities.md
         - name: Få åtkomst till förhandsfunktioner
           href: access-preview-feature.md
         - name: Konfigurera löneintegration mellan Talent och Dayforce
           href: configure-payroll-integration.md
+        - name: Få support för Talent
+          href: talent-support.md
     - name: 'Organisera arbetsstyrkan efter avdelningar, jobb och befattningar'
       href: departments-jobs-positions.md
       items:
@@ -41,8 +53,13 @@
           href: formalize-business-processes.md
         - name: Använd arbetsflöden för att hantera medarbetarinformation
           href: workflow-manage-employee-information.md
-        - name: Hantering av tjänstledighet och frånvaro
-          href: leave-absence-overview.md
+    - name: Hantera ledighet och frånvaro
+      href: leave-absence-overview.md
+      items:
+        - name: Periodisera ledig tid baserat på antal arbetade timmar
+          href: leave-accrue-hours-worked.md
+        - name: Arbetstidskalendrar
+          href: working-time-calendars.md
     - name: Bemanna organisationen
       items:
         - name: Funktioner och möjligheter i Attract
@@ -59,11 +76,13 @@
           href: create-variable-compensation-plans.md
         - name: Bearbeta kompensation
           href: process-compensation.md
+        - name: Ställ in komponenter för ett jobb
+          href: create-job.md
     - name: Utveckla och utbilda medarbetare
       items:
         - name: Prestandahantering
           href: performance-management-overview.md
-        - name: Anpassa personalens kompetenser efter affärsbehov
+        - name: Anpassa personalens kompetens efter affärsbehov
           href: skills.md
         - name: Skapa utbildningar
           href: courses.md
