@@ -3,7 +3,7 @@ title: Hantering av redovisningsjournaler
 description: "Det här avsnittet innehåller en beskrivning av de funktioner i Microsoft Dynamics 365 for Finance and Operations som kan underlätta processen för allmänna journaler, och som även kan göra det enklare att garantera att rätt data hämtas in samt att interna kontroller inte påverkas."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 08/01/2017
+ms.date: 09/24/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,10 +19,10 @@ ms.author: peakerbl
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: eb46613f805999753c2ab73ffb91a6fdae04c68e
+ms.sourcegitcommit: cf744bc41ffcca6d029da5dd2031ada607a0109b
+ms.openlocfilehash: e77aafafed5c972a6ad8c064107306d3ebde0b79
 ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 09/24/2018
 
 ---
 
@@ -32,21 +32,25 @@ ms.lasthandoff: 03/26/2018
 
 Det här avsnittet innehåller en beskrivning av de funktioner i Microsoft Dynamics 365 for Finance and Operations som kan underlätta processen för allmänna journaler, och som även kan göra det enklare att garantera att rätt data hämtas in samt att interna kontroller inte påverkas.  
 
-Journalnamn
+## <a name="journal-names"></a>Journalnamn
 
 Ett av de viktigaste områdena att konfigurera är journalnamn. Det är en god idé att definiera specifika journalnamn för respektive ändamål, till exempel koncerninterna, periodiseringsjustering och felkorrigering. Du kan skräddarsy varje journalnamn för att göra datainmatningen för varje ändamål lätt och säker. 
 
 På **Journalnamn** sidan kan du ställa in följande element:
 
--   **Arbetsflödesgodkännande** – För att öka den interna kontrollen, definiera journalarbetsflöden som upprättar gränser för granskning och godkännande av åtgärder, på grundval av kriterier såsom totala debetbeloppet. Du ställer in arbetsflöden för allmänna journaler på sidan **Arbetsflöden för redovisning**.
+-   **Arbetsflödesgodkännande** – För att öka den interna kontrollen, definiera journalarbetsflöden som upprättar gränser för granskning och godkännande av åtgärder, på grundval av kriterier såsom totala debetbeloppet. Du ställer in arbetsflöden för allmänna journaler på **Redovisningsarbetsflöden** sidan.
 -   **Standardvärden** – Välj standardvärdena för kvittning, valuta och finansiella mått.
 -   **Journalkontroll** – Du kan ställa in begränsningar för företaget och kontotyp och även segmentvärden. 
 
 **Exempel**
 
-Journalnamn kan endast användas för justeringar. I det här fallet kan du ange att endast **huvudbokskonton** är giltiga för alla företag. [![Kontotyper för journalkontroll](./media/journal-control-account-types1.png)](./media/journal-control-account-types1.png)
+Journalnamn kan endast användas för justeringar. I det här fallet kan du ange att endast **huvudbokskonton** är giltiga för alla företag. 
 
-Journalnamn kan användas endast för en viss sektor eller ett datumintervall för huvudbokskonton. [![Journalkontrollsegment](./media/journal-control-segment1.png)](./media/journal-control-segment1.png)
+[![Kontotyper för journalkontroll](./media/journal-control-account-types1.png)](./media/journal-control-account-types1.png)
+
+Journalnamn kan användas endast för en viss sektor eller ett datumintervall för huvudbokskonton. 
+
+[![Journalkontrollsegment](./media/journal-control-segment1.png)](./media/journal-control-segment1.png)
 
 **Automatisk återföring** alternativet finns tillgängligt i allmänna journaler. Du kan till exempel ha en periodiserad justering där det aktuella dokumentet har inte bearbetats, som visas i följande illustration.
 [![Allmän journalåterföring](./media/general-journal-reversing1.png)](./media/general-journal-reversing1.png) 
@@ -65,8 +69,9 @@ Följande inställningar är inte specifika för allmänna journaler, men kommer
 Huvudkontoinställningen ger flera alternativ för allmän journal bearbetning:
 
 -   **D/K-behov** – Använd det här alternativet om en huvud konto är begränsat till debet eller kredit transaktioner. Inställningen verifieras när en journal är validerad eller publiceras.
+
 -   **Standardmotkonto**
--   **Uppskjutet** – Stoppa ett huvudkonto för inmatning av data över alla företag eller för ett specifikt företag/juridiska enheter.
+-   **Uppskjutet** – Stoppa ett huvudkonto för inmatning av data över alla företag eller för ett specifikt företag/ juridisk person.
 -   **Tillåt inte manuell inmatning** – Förhindra användare från att manuellt ange ett värde för kontot i journaler.
 -   **Standard/Validera valuta**
 -   **Juridisk person åsidosätter** – Denna inställning är specifik för definierade företag/juridiska enhet:
@@ -88,5 +93,8 @@ Mer information finns i följande avsnitt:
 - [Bokför periodiska journaler](tasks/post-periodic-journals.md)
 - [Bearbeta journal för redovisningsallokering](tasks/process-ledger-allocation-journal.md)
 
+## <a name="simulate-posting"></a>Simulera bokföring
+Du hittar **Simulera bokföring** på menyn **Validera** för de flesta journaler. När du validerar en journal med hjälp av funktionen **Validera** testar systemet journalen för specifika felförhållanden. Om du använder funktionen **Simulera bokföring**, kör systemet alla samma processer som körs utan att själva bokföringen av journalen vid bokföring. Du kan sedan granska bokföringsmeddelanden som visas, korrigera eventuella fel som kan du söka efter och klicka på menyn **bokför** om du vill bokföra journalen. 
 
+**Simulera bokföring** är inte tillgänglig för batchbearbetning. Det finns emellertid kod tillgänglig för att simulera bokföring i batch kod och utvecklare kan använda kod för att lägga till funktionen.  
 

@@ -3,7 +3,7 @@ title: "Beräkning av indirekta kostnader"
 description: "Det här avsnittet beskriver de vanliga processerna för beräkning och allokering av indirekta kostnader."
 author: AndersGirke
 manager: AnnBe
-ms.date: 04/20/2017
+ms.date: 10/04/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -20,10 +20,10 @@ ms.author: shylaw
 ms.dyn365.ops.version: Version 1611
 ms.search.validFrom: 2016-11-30
 ms.translationtype: HT
-ms.sourcegitcommit: 2771a31b5a4d418a27de0ebe1945d1fed2d8d6d6
-ms.openlocfilehash: 549e9b4b073a4e93dd3a1dd52dd6f43e7420a31b
+ms.sourcegitcommit: 12ae99c15bafcd9cc08b30903fe3f251f446b17d
+ms.openlocfilehash: 4de705324ac497cfb11fae3dadc6f57d038fd0b5
 ms.contentlocale: sv-se
-ms.lasthandoff: 11/03/2017
+ms.lasthandoff: 10/05/2018
 
 ---
 
@@ -191,8 +191,7 @@ I vissa fall är en del av kostnaden en fast avgift och återstående kostnad ba
 </tbody>
 </table>
 
-Detaljerad information om kostnadsbeteende finns i Kostnadsbeteendepolicy. (Observera att det här ämnet ännu inte är färdigt men kommer snart.)
-
+För mer information, se [Skapa och tilldela en kostnadsbeteendepolicy till en kostnadsstyrenhet](tasks/create-assign-cost-behavior-policy-cost-control-unit.md).
 ### <a name="step-2-process-the-cost-distribution-calculation"></a>Steg 2: Bearbeta beräkning av kostnadsfördelning
 
 Kostnadsfördelning används för att distribuera kostnad från ett kostnadsobjekt till ett eller flera andra kostnadsobjekt genom att tillämpa ett relevant allokeringsunderlag. Kostnadsfördelning och kostnadsallokering skiljer sig genom att kostnadsfördelning alltid inträffar i nivån för det primära kostnadselementet i den ursprungliga kostnaden.
@@ -430,7 +429,7 @@ Den fasta kostnaden ska fördelas jämnt på de enskilda kostnadsbärarna som ha
 </tbody>
 </table>
 
-För detaljerad information om kostnadsfördelning och allokeringsunderlag, se Kostnadsfördelningspolicy och Allokeringsunderlag. (Observera att det här ämnet ännu inte är färdigt men kommer snart.)
+För mer information, se [Skapa och tilldela en kostnadsfördelningspolicy till en kostnadsstyrenhet](tasks/create-assign-cost-distribution-policy-cost-control-unit.md). 
 
 ### <a name="step-3-process-the-overhead-rate-calculation"></a>Steg 3: Bearbeta beräkning av indirekt kostnad
 
@@ -618,7 +617,7 @@ Följande tabell visar resultatet när HR-projekt används som allokeringsunderl
 </tbody>
 </table>
 
-Detaljerad information om policy för indirekt kostnad finns i Policy för indirekt kostnad och Allokeringsunderlag. (Observera att det här ämnet ännu inte är färdigt men kommer snart.)
+För mer information, se [Utföra beräkning av indirekta kostnader](cost-rollup.md#perform-overhead-calculation).
 
 ### <a name="step-4-process-the-cost-allocation-calculation"></a>Steg 4: Bearbeta beräkning av kostnadsallokering
 
@@ -725,7 +724,8 @@ Kostnadsobjekt CC004 Förpackning bidrar till flera kostnadsobjekt. En statistik
 </tbody>
 </table>
 
-**Obs:** i Finance and Operations kan statistikmått som t.ex. produktionstimmar som en produkt förbrukar härledas ur källinformationen. Mer detaljerad information om provider av statistiska mått finns i Providermallar för statistiska mätningar. (Observera att det här avsnittet är inte klart, men kommer snart.) I följande tabell visas resultatet när HR-tjänsten används som ett allokeringsunderlag för totalkostnaden (fast kostnad och variabel kostnad).
+> [!NOTE]
+> I Finance and Operations kan statistikmått som t.ex. produktionstimmar som en produkt förbrukar härledas ur källinformationen. Mer information finns i [Providermallar för statistisk mätning](statistical-measure-provider-template.md#statistical-measure-provider-template). Följande tabell visar resultatet när HR-tjänster för privatpersoner används som ett allokeringsunderlag för totalkostnad (fast kostnad och variabel kostnad).
 
 <table>
 <thead>
@@ -1412,7 +1412,7 @@ I Affärsredovisning bokförs en kostnad på 10 000,00 för Electricitet på et
 </table>
 
 > [!NOTE]
-> Det här avsnittet visar hur ett primärt kostnadselement 10001 Elektricitet flödar genom kostnadsobjekten. Därför tilldelas denna indirekta kostnad till den lägsta nivån i organisationen. Med andra ord bär kostnadsobjekten på den lägsta nivån kostnaden. Om du behöver ett visuellt flöde mellan kostnadsobjekten, kan du använda policyregler för kostnadssummeringen för att visualisera flödet av kostnaden. Mer information finns i Policy för kostnadssummering. (Observera att det här ämnet ännu inte är färdigt men kommer snart.)
+> Det här avsnittet visar hur ett primärt kostnadselement 10001 Elektricitet flödar genom kostnadsobjekten. Därför tilldelas denna indirekta kostnad till den lägsta nivån i organisationen. Med andra ord bär kostnadsobjekten på den lägsta nivån kostnaden. Om du behöver ett visuellt flöde mellan kostnadsobjekten, kan du använda policyregler för kostnadssummeringen för att visualisera flödet av kostnaden. Mer information finns i [Samlade kostnader](cost-rollup.md).
 
 
 

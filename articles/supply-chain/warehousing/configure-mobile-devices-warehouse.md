@@ -1,9 +1,9 @@
 ---
-title: "Konfigurera mobila enheter för lagerarbete"
-description: "Den här artikeln beskriver hur du konfigurerar menyalternativ som lagerarbetare använder för att utföra arbete på en mobil enhet."
+title: "Ställ in mobila enheter för lagerarbete"
+description: "Det här ämnet beskriver konfiguration av menyalternativ som lagerarbetare använder för att utföra arbete på en mobil enhet."
 author: MarkusFogelberg
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 09/28/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,20 +19,20 @@ ms.author: mafoge
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: efcb77ff883b29a4bbaba27551e02311742afbbd
-ms.openlocfilehash: bb0d6af3a17653ea33e3f84a416bda244a27507c
+ms.sourcegitcommit: 74522c97716238b62af3d65a1c23ba9e5e60a68b
+ms.openlocfilehash: cc21b62026403e37dbcb90c24dd239d295f0e04e
 ms.contentlocale: sv-se
-ms.lasthandoff: 05/08/2018
+ms.lasthandoff: 10/03/2018
 
 ---
 
-# <a name="set-up-mobile-devices-for-warehouse-work"></a>Konfigurera mobila enheter för lagerarbete
+# <a name="set-up-mobile-devices-for-warehouse-work"></a>Ställ in mobila enheter för lagerarbete
 
 [!include [banner](../includes/banner.md)]
 
-Den här artikeln beskriver hur du konfigurerar menyalternativ som lagerarbetare använder för att utföra arbete på en mobil enhet.
+Det här ämnet beskriver konfiguration av menyalternativ som lagerarbetare använder för att utföra arbete på en mobil enhet.
 
-**Obs!** Denna artikel gäller funktioner i Lagerstyrning. Den gäller inte funktioner i Lagerhantering. Menyalternativen som visas på menyerna på en mobil enhet för lagerställe konfigureras på sidan **Menyalternativ på mobil enhet**. Eftersom menyalternativen kan sättas på olika menyer, är det enklare att konfigurera menystrukturer så att endast specifika typer av arbete visas för specifika användare. Du kan konfigurera menykommando att utföra följande uppgifter:
+**Obs!** Denna artikel gäller funktioner i lagerstyrningshanteringen. Den gäller inte funktioner i Lagerhantering. Menyalternativen som visas på menyerna på en mobil enhet för lagerställe konfigureras på sidan **Menyalternativ på mobil enhet**. Eftersom menyalternativen kan sättas på olika menyer, är det enklare att konfigurera menystrukturer så att endast specifika typer av arbete visas för specifika användare. Du kan konfigurera menykommando att utföra följande uppgifter:
 
 -   Bearbeta en förfrågan eller utföra en aktivitet, som till exempel skriva ut en etikett, generera ID-nummer, starta en produktionsorder eller snabbt samla in information artiklar på en plats.
 -   Skapa arbete som ska utföras genom en annan process. Mottagning av en artikel för en inköpsorder kan till exempel skapa inlagrat arbete för en annan arbetstagare.
@@ -193,7 +193,7 @@ Du kan ställa in en menykommando som skapar arbete för en annan anställd, eft
 </table>
 
 ## <a name="configure-menu-items-to-process-existing-work"></a>Ställa in menyalternativ för att bearbeta befintligt arbete
-Förutom inställningar av menyalternativ som skapar lagerställearbete, kan du ställa in menyalternativ till processarbete som redan har skapats. Ställ in fältet **Metod** till **Arbete** och välj alternativet **Använd befintligt arbete**. Alla ytterligare alternativ blir sedan tillgängliga på fliken **Allmänt**. Du kan styra åtkomsten till menyalternativet genom att tilldela en eller flera arbetsklasser på snabbfliken **Arbetsklass** . Arbetsklasserna definierar det arbete som menyalternativet kan bearbeta. Arbetsklassen kan också användas för att bevilja åtkomst till specifika användarroller eller för separat bearbetning för andra typer av operationer. I följande tabell beskriver de alternativ som är tillgängliga.
+Förutom inställningar av menyalternativ som skapar lagerställearbete, kan du ställa in menyalternativ till processarbete som redan har skapats. Ställ in fältet **Metod** till **Arbete** och välj alternativet **Använd befintligt arbete**. Alla ytterligare alternativ blir sedan tillgängliga på fliken **Allmänt**. Du kan styra åtkomsten till menyalternativet genom att tilldela en eller flera arbetsklasser på snabbfliken **Arbetsklass** . Arbetsklasserna definierar det arbete som menyalternativet kan bearbeta. Arbetsklassen kan också användas för att bevilja åtkomst till specifika användarroller eller för separat bearbetning för andra typer av operationer. I följande tabell beskriver de alternativ som är tillgängliga. Alternativet kan väljas under fältet **Dirigerad av** på sidan **Menyalternativ på mobil enhet**. 
 
 <table>
 
@@ -247,6 +247,10 @@ Det här alternativet är praktiskt när t.ex. flera lastpallar mellanlagras fö
 <tr class="even">
 <td>Rullande inventeringsgruppering</td>
 <td>Arbetaren väljer en zon, en arbetspool eller en plats, och Microsoft Dynamics 365 for Finance and Operations tilldelar arbete som bygger på dessa val. Om du markerar det här alternativet, kan du även klicka på <strong>Rullande inventering</strong> på åtgärdsfönstret för att ange ytterligare information och du kan också ange hur många gånger som arbetare måste upprepa inventeringen, om en skillnad finnas.</td>
+</tr>
+ <tr class="odd">
+<td>Transportlastning</td>
+<td>Den här funktionen låter flera lagerarbetare lasta lager från samma eller olika laster till samma lastbil med laster som är helt eller delvis levererade.</td>
 </tr>
 </tbody>
 </table>
@@ -349,7 +353,7 @@ I följande register beskrivs dessa alternativ.
 <td>Välj det här alternativet om du vill tillåta att arbetare kombinerar arbete för en försäljningsorder eller läser in i en enskild arbetsenhet. Arbetaren kan utföra arbete endast för försäljningsordern eller beläggning. Detta alternativ är praktiskt när du t.ex. måste öka kvantiteten för en försäljningsorder efter lastningen och leverans, och arbete har skapats för försäljningsordern. Det här alternativet är tillgängligt när menyalternativet använder befintligt arbete och arbetet styrs av användaren eller systemet.</td>
 </tr>
 <tr class="even">
-<td>Ingen</td>
+<td>Välj äldsta batch</td>
 <td>Ange om arbetaren måste välja den äldsta batchen på en plats först. Följande alternativ är tillgängliga:
 <ul>
 <li><strong>Ingen</strong> – Arbetaren kan välja valfri batch på platsen. Arbetaren får inget meddelande.</li>

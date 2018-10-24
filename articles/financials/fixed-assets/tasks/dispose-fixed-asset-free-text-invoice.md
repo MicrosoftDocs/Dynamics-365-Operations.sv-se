@@ -10,41 +10,35 @@ ms.service: dynamics-ax-applications
 ms.technology: 
 ms.search.form: AssetTable, AssetBook, LedgerJournalTable, LedgerJournalTransAsset, SysQueryForm
 audience: Application User
-ms.reviewer: twheeloc
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.search.region: Global
-ms.author: saraschi
+ms.author: knelson
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 24c7721a1e5467e98e6c4d245f1d8e24a973f5aa
+ms.sourcegitcommit: 92cd1ea0a6ab6039da7074e032e0f78dd7443cba
+ms.openlocfilehash: 1b1c9719f0697e9d5a51b0e769b3f850dc1690e5
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 09/24/2018
 
 ---
 # <a name="dispose-of-a-fixed-asset-using-a-free-text-invoice"></a>Avyttra en anläggningstillgång med hjälp av en fritextfaktura
 
-[!include [task guide banner](../../includes/task-guide-banner.md)]
 
-Denna procedur visar hur du anskaffar en anläggningstillgång med hjälp av anskaffningsförslaget i anläggningstillgångsjournalen. Här används revisorrollen och demonstrationsdata för den juridiska USMF-personen.
+Den här proceduren visar hur du avyttrar en anläggningstillgång med hjälp av formuläret Fritextfaktura.
 
-1. Gå till Anläggningstillgångar > Journalposter > Journal för anläggningstillgångar.
+1. Gå till Kundreskontra > Fakturor > Alla fritextfakturor.
 2. Klicka på Ny.
-3. Ange eller välj ett värde i fältet Namn.
-4. Klicka på Rader.
-5. Klicka på Förslag.
-6. Klicka på Anskaffningsförslag.
-7. Klicka på Filter.
-8. Klicka på Återställ för att rensa tidigare värden.
-9. Välj raden med numret på anläggningstillgången.
-10. Ange eller välj ett värde i fältet Kriterier.
-    * Ange återstående kriterier för de anläggningstillgångar som du vill anskaffa med detta förslag.  
-11. Klicka på OK.
-12. Klicka på OK.
-    * Kontrollera de skapade transaktionsraderna.  
-    * Endast anläggningstillgångar med anskaffningsdatum och anskaffningspris på räkenskapsboken inkluderas i anskaffningsförslaget.  
-13. Klicka på fliken Books.
-14. Klicka på Bokför.
+3. I fältet Kundkonto, ange eller välj ett värde.
+4. Validera standardfakturadatum och redigera om det är tillämpligt.
+5. Validera återstående standardhuvudfält, t.ex. Valuta och redigera om det är tillämpligt.
+6. Ange en beskrivning av fakturaraden.
+7. Ange eller välj huvudkontot för fakturarraden.
+8. Validera standardmomsgrupp och artikelmomsgrupp.
+9. Ange Enhetspris eller Belopp för försäljning av anläggningstillgången.
+10. Klicka på radinformation.  
+11. Välj numret på anläggningstillgången som ska säljas.
+12. Klicka på Bokför.
 
 

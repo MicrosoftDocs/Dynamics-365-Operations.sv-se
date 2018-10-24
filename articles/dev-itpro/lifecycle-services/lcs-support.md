@@ -18,10 +18,10 @@ ms.author: anupams
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: d20bc3519096f1035d26f89d42aa7e8f0fc368cd
-ms.openlocfilehash: 7061ee2e8b22d29381131815898902a482b7b730
+ms.sourcegitcommit: c4428613441424c81f4fd7dd92bbf842c62ce860
+ms.openlocfilehash: 4ad96a3aa3ac80045345b839ea8a923884061aeb
 ms.contentlocale: sv-se
-ms.lasthandoff: 08/29/2018
+ms.lasthandoff: 09/22/2018
 
 ---
 
@@ -31,8 +31,7 @@ ms.lasthandoff: 08/29/2018
 
 I den här artikeln beskrivs hur du kan få hjälp med Finance and Operations eller Microsoft Dynamics Lifecycle Services (LCS). 
 
-<a name="contact-support"></a>Kontakta supporten
----------------
+## <a name="contact-support"></a>Kontakta supporten
 
 Följ instruktionerna i den här artikeln om du vill kontakta Microsoft om du har tekniska frågor om Finance and Operations, eller om du behöver hjälp med att komma åt Microsoft Dynamics Lifecycle Services (LCS).
 
@@ -89,8 +88,10 @@ Tekniska frågor som är relaterade till inloggning och åtkomst till CustomerSo
 </tbody>
 </table>
 
-För mer information om Microsoft Dynamics supporterbjudanden, se [Microsoft Dynamics Online-support](https://www.microsoft.com/en-us/dynamics/dynamics-online-support.aspx).
 
-
+## <a name="additional-resources"></a>Ytterligare resurser
+- [Få support för Dynamics 365 for Retail](../../retail/retail-support.md)
+- [Få support för Dynamics 365 for Talent](../../talent/talent-support.md)
+- För mer information om Microsoft Dynamics supporterbjudanden, se [Microsoft Dynamics Online-support](https://www.microsoft.com/en-us/dynamics/dynamics-online-support.aspx).
 
 

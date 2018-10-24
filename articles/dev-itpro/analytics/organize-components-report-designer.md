@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-11-30
 ms.dyn365.ops.version: Version 1611
 ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
-ms.openlocfilehash: c9772d45cf9d9941dd8fe0de13ce624ea3aa3b53
+ms.sourcegitcommit: a128f326cb89ab00e69be40801553c0ac551446e
+ms.openlocfilehash: 3f2b34cccfd84a9e4bb76e7a1da64e5cefa9982e
 ms.contentlocale: sv-se
-ms.lasthandoff: 08/13/2018
+ms.lasthandoff: 09/27/2018
 
 ---
 
@@ -37,12 +37,9 @@ Du kan ändra namn på mappar, rapporter, byggblock och andra objekt i rapportde
 ## <a name="rename-a-folder-or-building-block-in-report-designer"></a>Ändra namn på en mapp eller byggsten i Report Designer
 I Report Designer kan du byta namn på mappar, rapportdefinitioner, raddefinitioner, kolumndefinitioner och rapportträdsdefinitioner.
 
-> [!NOTE]
-> Om du byter namn på ett byggblock måste du uppdatera alla rapportdefinitioner som använder byggblocket. I annat fall kan ingen ny rapport skapas.
+### <a name="rename-a-folder-or-building-block-in-report-designer"></a>Byta namn på en mapp eller ett byggblock i Report Designer
 
-### <a name="rename-a-folder-or-building-block-in-report-designer"></a>Ändra namn på en mapp eller byggsten i Report Designer
-
-1. I Report Designer, använd navigeringsrutan för att hitta mappen eller objektet du vill byta namn på.
+1. Använd navigeringsfönstret i Report Designer när du ska leta rätt på den mapp eller det objekt som du ska byta namn på.
 2. Högerklicka på mappen eller objekt och klicka sedan på **Ändra namn**. Fältet **Namn** i navigeringsfönstret blir tillgängligt.
 3. Skriv in ett nytt namn och tryck sedan på Enter.
 4. Om byggblocket är en raddefinition, kolumndefinition eller rapportträdsdefinition måste du uppdatera andra byggblock som är kopplade till objektet. Högerklicka på byggblocket du bytte namn i steg 3, välj **Associationer** och välj sedan ett alternativ i listan om du vill uppdatera det.

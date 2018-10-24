@@ -18,10 +18,10 @@ ms.author: shielas
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
-ms.openlocfilehash: 85318332b802aace7d705289e6a298b49799b847
+ms.sourcegitcommit: 965826f5fddc2f53f33157434929eb265979376e
+ms.openlocfilehash: 0fa2b7c2dc5b88349cb4012b6b0ba9009a361fa0
 ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/17/2018
 
 ---
 
@@ -47,7 +47,7 @@ Gå till programtillverkarens startsida för att hitta den senaste versionen fö
 > * Arbetsflödesredigeraren startas som ett ClickOnce-program. Endast Microsoft Edge och Internet Explorer (på en version som stöds av Microsoft Windows) stöder ClickOnce-program. Arbetsflödesredigeraren ClickOnce-programmet kräver 64-bitars kompatibelt operativsystem.
 > * Om du vill förhandsgranska PDF-filer, bör du använda moderna webbläsare som t.ex. Microsoft Edge (senaste tillgängliga versionen) på Windows 10 eller Google Chrome (senaste tillgängliga versionen) på Windows 10, Windows 8.1, Windows 7, Windows 8 eller 10 Google Nexus Tablet PC.
 >   Nätverkskrav
-> * Dynamics 365 for Talent har utformats för nätverk med svarstider på maximalt 250-300 millisekunder. Detta är svarstiden från en webbläsarklient till datacentret Azure som är värd för Dynamics 365 for Talent. Vi rekommenderar att du testar nätverksfördröjning vid [www.azurespeed.com](http://www.azurespeed.com "Azure Latency Test").
+> * Dynamics 365 for Talent har utformats för nätverk med svarstider på maximalt 250-300 millisekunder. Detta är svarstiden från en webbläsarklient till datacentret Azure som är värd för Dynamics 365 for Talent. Vi rekommenderar att du testar nätverksfördröjning vid [www.azurespeed.com](https://www.azurespeed.com "Azure Latency Test").
 > * Bandbreddskrav för Dynamics 365 for Talent är beroende av en viss situation. Mest typiska scenarier kräver en bandbredd på mer än 50 kB per sekund (KBps).
 > 
 > [!WARNING]
