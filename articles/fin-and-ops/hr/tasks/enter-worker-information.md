@@ -23,26 +23,26 @@ ms.contentlocale: sv-se
 ms.lasthandoff: 09/14/2018
 
 ---
-# <a name="enter-worker-information"></a><span data-ttu-id="d0030-103">Ange arbetarinformation</span><span class="sxs-lookup"><span data-stu-id="d0030-103">Enter worker information</span></span>
+# <a name="enter-worker-information"></a><span data-ttu-id="bda4e-103">Ange arbetarinformation</span><span class="sxs-lookup"><span data-stu-id="bda4e-103">Enter worker information</span></span>
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 
-<span data-ttu-id="d0030-104">När en rekryterare har skapat ett massanställningsprojekt och genererat befattningar, är nästa steg att ange arbetarinformation för de personer som anställs.</span><span class="sxs-lookup"><span data-stu-id="d0030-104">After a recruiter has created a mass hire project and generated the positions, the next step is to enter the worker information for the people being hired.</span></span> <span data-ttu-id="d0030-105">Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.</span><span class="sxs-lookup"><span data-stu-id="d0030-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="d0030-106">Demonstrationsdata innehåller ett öppet massanställningsprojekt.</span><span class="sxs-lookup"><span data-stu-id="d0030-106">The demo data contains an open mass hire project.</span></span> <span data-ttu-id="d0030-107">Gå till Personal > Rekrytering > Massanställningsprojekt för att starta proceduren.</span><span class="sxs-lookup"><span data-stu-id="d0030-107">To begin this procedure, go to Human resources > Recruitment > Mass hire projects.</span></span>
+<span data-ttu-id="bda4e-104">När en rekryterare har skapat ett massanställningsprojekt och genererat befattningar, är nästa steg att ange arbetarinformation för de personer som anställs.</span><span class="sxs-lookup"><span data-stu-id="bda4e-104">After a recruiter has created a mass hire project and generated the positions, the next step is to enter the worker information for the people being hired.</span></span> <span data-ttu-id="bda4e-105">Det demonstrationsdataföretag som används för att skapa den här proceduren är USMF.</span><span class="sxs-lookup"><span data-stu-id="bda4e-105">The demo data company used to create this procedure is USMF.</span></span> <span data-ttu-id="bda4e-106">Demonstrationsdata innehåller ett öppet massanställningsprojekt.</span><span class="sxs-lookup"><span data-stu-id="bda4e-106">The demo data contains an open mass hire project.</span></span> <span data-ttu-id="bda4e-107">Gå till Personal > Rekrytering > Massanställningsprojekt för att starta proceduren.</span><span class="sxs-lookup"><span data-stu-id="bda4e-107">To begin this procedure, go to Human resources > Recruitment > Mass hire projects.</span></span>
 
-1. <span data-ttu-id="d0030-108">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="d0030-108">In the list, mark the selected row.</span></span>
-2. <span data-ttu-id="d0030-109">Klicka på Befattningsinformation.</span><span class="sxs-lookup"><span data-stu-id="d0030-109">Click Position details.</span></span>
-    * <span data-ttu-id="d0030-110">Redigera startdatumet för arbetaren.</span><span class="sxs-lookup"><span data-stu-id="d0030-110">Edit the start date for the worker.</span></span>  
-    * <span data-ttu-id="d0030-111">Redigera slutdatumet för arbetaren.</span><span class="sxs-lookup"><span data-stu-id="d0030-111">Edit the end date for the worker.</span></span>  
-    * <span data-ttu-id="d0030-112">Ändra arbetartypen för arbetare, om det behövs.</span><span class="sxs-lookup"><span data-stu-id="d0030-112">Change the worker type for the worker, if needed.</span></span>  
-3. <span data-ttu-id="d0030-113">I fältet Förnamn, skriv ett värde.</span><span class="sxs-lookup"><span data-stu-id="d0030-113">In the First name field, type a value.</span></span>
-4. <span data-ttu-id="d0030-114">Skriv ett värde i fältet Mellannamn.</span><span class="sxs-lookup"><span data-stu-id="d0030-114">In the Middle name field, type a value.</span></span>
-5. <span data-ttu-id="d0030-115">I fältet Efternamn, skriv ett värde.</span><span class="sxs-lookup"><span data-stu-id="d0030-115">In the Last name field, type a value.</span></span>
-    * <span data-ttu-id="d0030-116">Ändra jobbet för arbetaren, om det behövs.</span><span class="sxs-lookup"><span data-stu-id="d0030-116">Change the job for the worker, if needed.</span></span>  
-    * <span data-ttu-id="d0030-117">Ändra avdelningen för arbetaren, om det behövs.</span><span class="sxs-lookup"><span data-stu-id="d0030-117">Change the department for the worker, if needed.</span></span>  
-    * <span data-ttu-id="d0030-118">Ändra heltidslönestatusen för arbetaren, om det behövs.</span><span class="sxs-lookup"><span data-stu-id="d0030-118">Change the full-time equivalent status for the worker, if needed.</span></span>  
-6. <span data-ttu-id="d0030-119">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="d0030-119">Click OK.</span></span>
-7. <span data-ttu-id="d0030-120">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="d0030-120">In the list, find and select the desired record.</span></span>
-8. <span data-ttu-id="d0030-121">Avmarkera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="d0030-121">In the list, unmark the selected row.</span></span>
-    * <span data-ttu-id="d0030-122">Välj nästa projektbefattning och fortsätt ange information om arbetare för varje person som du anställer.</span><span class="sxs-lookup"><span data-stu-id="d0030-122">Select the next project position and continue entering the worker information for each person that you're hiring.</span></span>  
+1. <span data-ttu-id="bda4e-108">Markera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="bda4e-108">In the list, mark the selected row.</span></span>
+2. <span data-ttu-id="bda4e-109">Klicka på Befattningsinformation.</span><span class="sxs-lookup"><span data-stu-id="bda4e-109">Click Position details.</span></span>
+    * <span data-ttu-id="bda4e-110">Redigera startdatumet för arbetaren.</span><span class="sxs-lookup"><span data-stu-id="bda4e-110">Edit the start date for the worker.</span></span>  
+    * <span data-ttu-id="bda4e-111">Redigera slutdatumet för arbetaren.</span><span class="sxs-lookup"><span data-stu-id="bda4e-111">Edit the end date for the worker.</span></span>  
+    * <span data-ttu-id="bda4e-112">Ändra arbetartypen för arbetare, om det behövs.</span><span class="sxs-lookup"><span data-stu-id="bda4e-112">Change the worker type for the worker, if needed.</span></span>  
+3. <span data-ttu-id="bda4e-113">I fältet Förnamn, skriv ett värde.</span><span class="sxs-lookup"><span data-stu-id="bda4e-113">In the First name field, type a value.</span></span>
+4. <span data-ttu-id="bda4e-114">Skriv ett värde i fältet Mellannamn.</span><span class="sxs-lookup"><span data-stu-id="bda4e-114">In the Middle name field, type a value.</span></span>
+5. <span data-ttu-id="bda4e-115">I fältet Efternamn, skriv ett värde.</span><span class="sxs-lookup"><span data-stu-id="bda4e-115">In the Last name field, type a value.</span></span>
+    * <span data-ttu-id="bda4e-116">Ändra jobbet för arbetaren, om det behövs.</span><span class="sxs-lookup"><span data-stu-id="bda4e-116">Change the job for the worker, if needed.</span></span>  
+    * <span data-ttu-id="bda4e-117">Ändra avdelningen för arbetaren, om det behövs.</span><span class="sxs-lookup"><span data-stu-id="bda4e-117">Change the department for the worker, if needed.</span></span>  
+    * <span data-ttu-id="bda4e-118">Ändra heltidslönestatusen för arbetaren, om det behövs.</span><span class="sxs-lookup"><span data-stu-id="bda4e-118">Change the full-time equivalent status for the worker, if needed.</span></span>  
+6. <span data-ttu-id="bda4e-119">Klicka på OK.</span><span class="sxs-lookup"><span data-stu-id="bda4e-119">Click OK.</span></span>
+7. <span data-ttu-id="bda4e-120">Hitta och markera önskad post i listan.</span><span class="sxs-lookup"><span data-stu-id="bda4e-120">In the list, find and select the desired record.</span></span>
+8. <span data-ttu-id="bda4e-121">Avmarkera vald rad i listan.</span><span class="sxs-lookup"><span data-stu-id="bda4e-121">In the list, unmark the selected row.</span></span>
+    * <span data-ttu-id="bda4e-122">Välj nästa projektbefattning och fortsätt ange information om arbetare för varje person som du anställer.</span><span class="sxs-lookup"><span data-stu-id="bda4e-122">Select the next project position and continue entering the worker information for each person that you're hiring.</span></span>  
 
 
