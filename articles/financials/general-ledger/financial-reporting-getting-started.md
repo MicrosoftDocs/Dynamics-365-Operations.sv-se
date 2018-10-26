@@ -3,7 +3,7 @@ title: Ekonomisk rapportering
 description: "Det här avsnittet beskriver hur du kommer åt ekonomisk rapportering i Microsoft Dynamics 365 for Finance and Operations hur du använder finansiella rapporteringsfunktioner. Den innehåller en beskrivning av de ekonomiska standardrapporter som tillhandahålls."
 author: aprilolson
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 09/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 83648a93f367510d7b04bbd04a9f37689ecfaa59
-ms.openlocfilehash: 613fcf941576b9fb05f5c059699e4cc9c4cabe3e
+ms.sourcegitcommit: a128f326cb89ab00e69be40801553c0ac551446e
+ms.openlocfilehash: c6d504a7b0640f45de4aa9f8fb60d2b1d37818bb
 ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/27/2018
 
 ---
 
@@ -115,11 +115,13 @@ Ekonomisk rapportering innehåller 22 standardrapporter. Varje rapport använder
 När du klickar på menyn **Ekonomisk rapportering** visas listan över ekonomiska standardrapporter för företaget. Du kan sedan öppna eller ändra en rapport. Öppna en av standardrapporterna genom att välja rapportnamnet. Första gången rapporten öppnas skapas den automatiskt för föregående månad. Om du exempelvis öppnar en rapport för första gången i augusti 2016 skapas rapporten för den 31 juli 2016. När en rapport har öppnats kan du börja utforska den mer ingående genom att titta närmare på specifika delar av data och ändra rapportsalternativ.
 
 ## <a name="creating-and-modifying-financial-reports"></a>Skapa och ändra ekonomiska rapporter
-På listan med ekonomiska rapporter kan du skapa en ny rapport eller ändra en befintlig rapport. Om du har rätt behörighet kan du skapa en ny ekonomisk rapport genom att klicka på **Ny** i åtgärdsfönstret. Ett rapportdesignerprogram hämtas till enheten. När rapportdesignern startar kan du skapa den nya rapporten. När du har sparat den nya rapporten visas på listan med ekonomiska rapporter. Listan visar endast rapporter som har skapats för företaget som använder i Finance and Operations. Mer information om att skapa och ändra ekonomiska rapporter i Dynamics 365 for Finance and Operations finns i följande [blogginlägg](https://blogs.msdn.microsoft.com/dynamics_financial_reporting/tag/learning/) från Dynamics ekonomirapporteringsblogg. **Obs!** Den dator som du hämtar rapportdesignerklienten till måste har version 4.6.2 av Microsoft .NET Framework installerat. Den här versionen av Microsoft .NET Framework kan hämtas och installeras [här](https://www.microsoft.com/en-us/download/details.aspx?id=53345). Om du använder Chrome måste du installera tillägget ClickOnce för att hämta rapportdesignerklienten. Om du använder osynligt läge, se då till att tillägget ClickOnce har aktiverats för osynligt läge. Det går även att ändra en rapport på listan med ekonomiska rapporter. Klicka på **Redigera** i åtgärdsfönstret när området runt rapportnamnet markeras. Rapportprogrammet startar.
+På listan med ekonomiska rapporter kan du skapa en ny rapport eller ändra en befintlig rapport. Om du har rätt behörighet kan du skapa en ny ekonomisk rapport genom att klicka på **Ny** i åtgärdsfönstret. Ett rapportdesignerprogram hämtas till enheten. När rapportdesignern startar kan du skapa den nya rapporten. När du har sparat den nya rapporten visas på listan med ekonomiska rapporter. Listan visar endast rapporter som har skapats för företaget som använder i Finance and Operations. 
+
+> [!NOTE] 
+> Den dator som du hämtar rapportdesignerklienten till måste har version 4.6.2 av Microsoft .NET Framework installerat. Den här versionen av Microsoft .NET Framework kan hämtas och installeras från [Microsoft Download Center](https://www.microsoft.com/en-us/download/details.aspx?id=53345). Om du använder Chrome måste du installera tillägget ClickOnce för att hämta rapportdesignerklienten. Om du använder osynligt läge, se då till att tillägget ClickOnce har aktiverats för osynligt läge. Det går även att ändra en rapport på listan med ekonomiska rapporter. Klicka på **Redigera** i åtgärdsfönstret när området runt rapportnamnet markeras. Rapportprogrammet startar.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 - [Visa ekonomiska rapporter](view-financial-reports.md)
-- [Dynamics-ekonomirapporteringsblogg](http://blogs.msdn.com/b/dynamics_financial_reporting/)
 
 
 

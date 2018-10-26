@@ -3,7 +3,7 @@ title: Ekonomiska dimensioner
 description: "Den här ämnet beskriver de olika typerna av ekonomiska dimensioner och hur de ställs in."
 author: aprilolson
 manager: AnnBe
-ms.date: 08/01/2017
+ms.date: 08/24/2018
 ms.topic: article
 ems.prod: 
 ms.service: dynamics-ax-applications
@@ -15,13 +15,13 @@ ms.search.scope: Core, Operations
 ms.custom: 25871
 ms.search.region: Global
 ms.author: aolson
-ms.search.validFrom: 2016-02-28
-ms.dyn365.ops.version: AX 7.0.0
+ms.search.validFrom: 2018-10-31
+ms.dyn365.ops.version: 8.1
 ms.translationtype: HT
-ms.sourcegitcommit: a0739304723d19b910388893d08e8c36a1f49d13
-ms.openlocfilehash: 3e9f00fdc32feda0a62f71a92e503a677dce35cc
+ms.sourcegitcommit: d6b7b1219974cb5de1a625d87c3bce2a4439470b
+ms.openlocfilehash: 9973d03de031ad2fa5647bb167c12b9231633a22
 ms.contentlocale: sv-se
-ms.lasthandoff: 03/26/2018
+ms.lasthandoff: 10/01/2018
 
 ---
 
@@ -31,11 +31,11 @@ ms.lasthandoff: 03/26/2018
 
 Den här ämnet beskriver de olika typerna av ekonomiska dimensioner och hur de ställs in.
 
-Använd sidan **Ekonomiska dimensioner** om du vill skapa ekonomiska dimensioner som du kan använda som kontosegment för delade kontoplaner. Det finns två typer av ekonomiska dimensioner: anpassade dimensioner och enhetsbaserad dimensioner. Anpassade dimensioner delas av alla juridiska personer, och värdena anges och hanteras av användaren. För enhetsbaserade dimensioner definieras värden på andra ställen i systemet, till exempel kunder och butiker. Vissa enhetsbaserade dimensioner delas av alla juridiska personer och enhetsbaserade dimensioner är företagsspecifka. 
+Använd sidan **Ekonomiska dimensioner** om du vill skapa ekonomiska dimensioner som du kan använda som kontosegment för delade kontoplaner. Det finns två typer av ekonomiska dimensioner: anpassade dimensioner och enhetsbaserad dimensioner. Anpassade dimensioner delas av alla juridiska personer, och värdena anges och hanteras av användaren. För enhetsbaserade dimensioner definieras värden på andra ställen i systemet, till exempel kunder och butiker. Vissa enhetsbaserade dimensioner delas av alla juridiska personer och enhetsbaserade dimensioner är företagsspecifka.
 
-Använd formuläret om du vill tilldela ytterligare egenskaper för varje **Värden för ekonomiska dimensioner** efter att du har skapat ekonomiska dimensioner. 
+Använd formuläret om du vill tilldela ytterligare egenskaper för varje **Värden för ekonomiska dimensioner** efter att du har skapat ekonomiska dimensioner.
 
-Du kan använda ekonomiska dimensioner som representerar juridiska personer. Du behöver inte skapa de juridiska personerna i Microsoft Dynamics 365 for Finance and Operations. Ekonomiska dimensioner är inte emellertid avsedda för för juridiska personers drift- eller affärskrav. Internredovisningsfunktionen i Finance and Operations har utformats att endast fokusera på de redovisningsposter som skapas av respektive transaktion. 
+Du kan använda ekonomiska dimensioner som representerar juridiska personer. Du behöver inte skapa de juridiska personerna i Microsoft Dynamics 365 for Finance and Operations. Ekonomiska dimensioner är inte emellertid avsedda för för juridiska personers drift- eller affärskrav. Internredovisningsfunktionen i Finance and Operations har utformats att endast fokusera på de redovisningsposter som skapas av respektive transaktion.
 
 Utvärdera dina arbetsprocesser i följande områden för att avgöra, innan du ställer in ekonomiska dimensioner som juridiska personer, om den här inställningen kommer att fungera i din organisation:
 
@@ -51,7 +51,9 @@ Nedan följer några av begränsningarna:
 
 ## <a name="custom-dimensions"></a>Anpassade dimensioner
 
-Om du vill skapa en användardefinierad ekonomisk dimension väljer du fältet **Använd värden från** och **&lt; Anpassad dimension &gt;**. Du kan även ange en kontomask för att begränsa beloppet och typen av information som du kan ange för dimensionsvärden. Du kan ange tecken som ska vara oförändrade för varje dimensionsvärde, till exempel bokstäver eller ett bindestreck (-). Du kan även ange nummertecken (\#) och et-tecken (&) som platshållare för bokstäver och siffror som ska ändras varje gång ett dimensionsvärde skapas. Använd ett nummertecken (\#) som platshållare för ett nummer och ett et-tecken (&) som platshållare för en bokstav. Det här fältet för formatmask är bara tillgängligt när du väljer **&lt; Anpassad dimension &gt;** i fältet **Använd värden från**.
+Om du vill skapa en användardefinierad ekonomisk dimension, i fältet **Använd värden från**, välj **&lt;&nbsp;Anpassa dimension&nbsp;&gt;**.
+
+Du kan även ange en kontomask för att begränsa beloppet och typen av information som du kan ange för dimensionsvärden. Du kan ange tecken som ska vara oförändrade för varje dimensionsvärde, till exempel bokstäver eller ett bindestreck (-). Du kan även ange nummertecken (\#) och et-tecken (&) som platshållare för tecken som ska ändras varje gång ett dimensionsvärde skapas. Använd ett nummertecken (\#) som platshållare för ett nummer och ett et-tecken (&) som platshållare för en bokstav. Det här fältet för formatmask är bara tillgängligt när du väljer **&lt;&nbsp;Anpassad dimension&nbsp;&gt;** i fältet **Använd värden från**.
 
 **Exempel**
 
@@ -63,7 +65,7 @@ Om du vill skapa en enhetsstödd ekonomisk dimension väljer du en systemdefinie
 
 ## <a name="activating-dimensions"></a>Dimensionsaktivering
 
-När du aktiverar en ekonomisk dimension uppdateras registret så att det inkluderar namnet på den ekonomiska dimensionen. Borttagna dimensioner raderas. Du kan ange dimensionsvärden innan du aktiverar en ekonomisk dimension. Men en ekonomisk dimension kan inte utnyttjas någonstans tills den har aktiverats. Du kan t.ex. inte lägga till en ekonomisk dimension till en kontostruktur förrän den ekonomiska dimensionen har aktiverats. När du klickar på **aktivera**, uppdateras alla dimensioner och visar statusändringar. 
+När du aktiverar en ekonomisk dimension uppdateras registret så att det inkluderar namnet på den ekonomiska dimensionen. Borttagna dimensioner raderas. Du kan ange dimensionsvärden innan du aktiverar en ekonomisk dimension. Men en ekonomisk dimension kan inte utnyttjas någonstans tills den har aktiverats. Du kan t.ex. inte lägga till en ekonomisk dimension till en kontostruktur förrän den ekonomiska dimensionen har aktiverats. När du väljer **aktivera**, uppdateras alla dimensioner och visar statusändringar.
 
 ## <a name="translations"></a>Översättningar
 
@@ -84,8 +86,41 @@ För att upprätthålla datans referensintegritet kan ekonomiska dimensioner sä
 
 Du kan inte radera den ekonomiska dimensionen om något av villkoren är uppfyllda.
 
+## <a name="default-dimension-values"></a>Standarddimensionsvärden
+
+Du kan använda värden från huvudposter, till exempel kund och leverantör som standardvärden för nya dimensioner. När de nya dimensionerna skapas anges huvudpost-ID i dimensionsvärdena för dessa huvudposter. När du t.ex skapar en ny kund anges kund-ID i kunddimensionen. När du skapar försäljningsorder, fakturor eller andra dokument som kräver ett kund-ID används de befintliga standardreglerna och kund-ID som läggs till i dokumentet.
+
+Den här funktionen kontrolleras av en inställning i dimensionen. Den här inställningen kallas **kopiera värdena till denna dimension för varje ny DimensionName skapas**, där **DimensionName** är namnet på dimensionen. Funktionen är avstängd som standard. Det kan dock sättas på när som helst.
+
+Om det redan finns poster för dimensionen uppdateras huvudposterna när du aktiverar funktionen. Men befintliga dokument och transaktioner uppdaterade.
+
+## <a name="derived-dimensions"></a>Härledda dimensioner
+
+Du kan konfigurera en dimension så att information för andra dimensioner automatiskt anges när du anger den dimensionen i ett dokument Om du anger kostnadsställe 10, ett värde på exempelvis **20** kan anges automatiskt i avdelningsdimensionen.
+
+Du kan ställa in härledda värden på sidan för dimensioner.
+
+1. Välj en dimension och sedan **Härledda dimensioner**.
+
+    Sidan **Härledda dimensioner** innehåller ett rutnät. Det valda dimensionsegmentet är den första kolumnen i det här rutnätet.
+
+2. Lägg till de segment som ska härledas. Varje segment visas som en kolumn.
+
+Ange dimensionskombinationer som bör härledas från dimensionen i den första kolumnen. Om du vill använda kostnadsstället som dimensionen avdelning och plats härleds från t.ex. kostnadsställe 10, avdelning 20, lokal 30. Sedan när du anger kostnadsställe 10, i en huvudpost eller på en sida för transaktionssidan, avdelning 20 och plats 30 anges som standard.
+
+Dimension härledda processen åsidosätta inte befintliga härledda storleksvärden. Till exempel om du anger kostnadsställe 10 och inga andra dimensionen anges, anges avdelning 20 och plats 30 som standard. Om du ändrar kostnadsställe ändras dock inte de värden som redan har upprättats. Därför kan du upprätta standarddimensioner för huvudposter och dessa dimensioner ändras inte efter härledda dimensioner.
+
+### <a name="derived-dimensions-and-entities"></a>Härledda dimensioner och enheter
+
+Du kan ställa in dimensioner härledda segment och värden med hjälp av enheter.
+
+- Härledda dimensioner ordnar upp dimensioner och segment som används för dessa dimensioner.
+- Entitet DerivedDimensionValue kan du importera de värden som ska hämtas för varje dimension körtid.
+
+När du använder en enhet för att importera data, om den enheten importerar dimensioner tillämpas reglerna för härledd dimension under importen, om inte enheten specifikt åsidosätter dessa dimensioner.
 
 Mer information finns i följande avsnitt:
+
 - [Definiera ekonomiska dimensioner](tasks/define-financial-dimensions.md)
 - [Underhåll standardmallar för ekonomisk dimension](tasks/maintain-financial-dimension-default-templates.md)
 

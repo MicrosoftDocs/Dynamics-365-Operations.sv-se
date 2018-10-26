@@ -9,7 +9,7 @@
   items:
     - name: Generera demodata med hjälp av datapaket
       href: data-entities/generate-demo-data-packages.md
-- name: Utveckla och anpassa med hjälp av Visual Studio
+- name: Utveckla och anpassa
   href: dev-tools/developer-home-page.md
   items:
     - name: Programstack och serverarkitektur
@@ -27,7 +27,7 @@
           href: dev-tools/enable-development-machine.md
         - name: Frågor och svar om hur du utvecklar och skapar virtuella maskiner som inte tillåter administratörsåtkomst
           href: sysadmin/VMs-no-admin-access.md
-        - name: Byta namn på lokala miljöer för att få åtkomst till Visual Studio Team Services
+        - name: Byta namn på lokala miljöer för att komma åt Azure DevOps
           href: migration-upgrade/vso-machine-renaming.md
         - name: Systemkrav för utveckling
           href: dev-tools/development-system-requirements.md
@@ -102,15 +102,17 @@
           items:
             - name: Språkreferens för X++
               href: dev-ref/xpp-language-reference.md
-            - name: Variabler och datatyper för X ++
+            - name: Variabler och datatyper för X++
               href: dev-ref/xpp-variables-data-types.md
-            - name: 'Uttryck, loopar och undantagshantering för X ++'
+            - name: 'Uttryck, loopar och undantagshantering för X++'
               href: dev-ref/xpp-statements-loops.md
-            - name: Operatorer för X ++
+            - name: 'Fel vid anslutning till SQL, X++-undantag'
+              href: dev-ref/sql-connection-error.md
+            - name: Operatorer för X++
               href: dev-ref/xpp-operators.md
             - name: Operatorernas rangordning för X++
               href: dev-ref/xpp-operator-precedence.md
-            - name: Klass och metoder för X ++
+            - name: Klasser och metoder för X++
               href: dev-ref/xpp-classes-methods.md
             - name: Dataval och manipulering för X ++
               href: dev-ref/xpp-data-query.md
@@ -251,11 +253,15 @@
               href: extensibility/extensibility-changes-802.md
             - name: Ändringar av utbyggbarhet version 8.0.3
               href: extensibility/extensibility-changes-803.md
-        - name: Grunderna
+            - name: Ändringar av utbyggbarhet version 8.0.4
+              href: extensibility/extensibility-changes-804.md
+            - name: Ändringar av utbyggbarhet version 8.1
+              href: extensibility/extensibility-changes-81.md
+        - name: Grunder
           items:
             - name: Inkräktande anpassningar
               href: extensibility/intrusive-customizations.md
-            - name: Klasstillägg – modell
+            - name: Modell för klasstillägg
               href: extensibility/class-extensions.md
             - name: Klasstillägg via metodradbyte och beslutskedja
               href: extensibility/method-wrapping-coc.md
@@ -912,10 +918,12 @@
           href: gdpr/respond-dsr-request-talent.md
         - name: Svara på begäranden om personuppgifter i AX 2012
           href: gdpr/gdpr-ax2012.md
-        - name: Uppgiftsbegäranden enligt GDPR för LCS
+        - name: Databegäranden enligt GDPR för LCS
           href: gdpr/gdpr-lcs.md
-    - name: Arbetsyta för checklista för datavalidering
+    - name: Arbetsyta - checklista för datavalidering
       href: user-interface/data-validation-workspace.md
+    - name: Felbeskrivningar för datahantering
+      href: data-entities/dm-error-descriptions.md
 - name: Kontinuerlig leverans
   href: dev-tools/continuous-delivery-home-page.md
   items:
@@ -1109,24 +1117,41 @@
               href: migration-upgrade/migrate-upgraded-cube-entity-store.md
             - name: Uppgradera budgetplanering
               href: migration-upgrade/upgrade-budget-planning.md
+    - name: Migrera data från AX 2009 till Finance and Operations
+      href: migration-upgrade/data-migration-tool.md
+      items:
+        - name: AX 2009-migrering – installera verktyg för datamigrering
+          href: migration-upgrade/install-dmt.md
+        - name: AX 2009-migrering – Generera kartor
+          href: migration-upgrade/generate-maps.md
+        - name: AX 2009-migrering – skapa mallar
+          href: migration-upgrade/create-package-templates-dmt.md
+        - name: AX 2009-migrering – skapa grupper för migrering
+          href: migration-upgrade/create-definition.md
+        - name: AX 2009-migrering - exportera paket
+          href: migration-upgrade/ax2009-upgrade-export-package.md
+        - name: AX 2009-migrering - importera paket
+          href: migration-upgrade/ax2009-upgrade-import-package.md
     - name: Migrering och uppgradering av kod
       href: migration-upgrade/code-migration-home-page.md
       items:
-        - name: Förbereda migrering av kod
+        - name: Förbered för att migrera kod
           href: migration-upgrade/prepare-migration.md
-        - name: Konfigurera Visual Studio Team Services-mappning
+        - name: Konfigurera mappning för Azure DevOps
           href: migration-upgrade/configure-vso-solution.md
         - name: Delning av modell
           href: dev-tools/model-split.md
-        - name: Lösa beroenden mellan modeller med hjälp av ombud
+        - name: Lös beroenden mellan modeller med hjälp av ombud
           href: migration-upgrade/delegates-migration.md
     - name: Uppgradera till den senaste uppdateringen (moln)
       items:
-        - name: Process för flytta till den senaste uppdateringen
+        - name: Process för att flytta till den senaste uppdateringen
           href: migration-upgrade/upgrade-latest-update.md
+        - name: Uppdatera miljöer från version 8.0 till 8.1
+          href: migration-upgrade/appupdate-80-81.md
         - name: Livscykelpolicy och molnbaserade versioner av programmet
           href: migration-upgrade/versions-update-policy.md
-        - name: Installera den senaste plattformsuppdateringen i miljöer
+        - name: Använd den senaste plattformsuppdateringen för miljöer
           href: migration-upgrade/upgrade-latest-platform-update.md
         - name: Uppgradera Dynamics AX-plattformen till augusti 2016-versionen
           href: migration-upgrade/update-platform-each-release.md
@@ -1248,9 +1273,9 @@
       href: lifecycle-services/complete-tasks-bpm.md
     - name: Arbeta med aktivitetsdiagram i BPM-bibliotek
       href: lifecycle-services/using-activity-diagrams.md
-    - name: Synkronisera BPM-bibliotek med Visual Studio Team Services
+    - name: Synkronisera BPM-bibliotek med Azure DevOps
       href: lifecycle-services/synchronize-bpm-vsts.md
-    - name: Skapa bibliotek med acceptanstest för användare med hjälp av uppgiftsguider och BPM
+    - name: Skapa bibliotek med acceptanstest genom att använda uppgiftsguider och BPM
       href: lifecycle-services/using-task-guides-and-bpm-to-create-user-acceptance-tests.md
     - name: Flödesscheman i affärsprocessmodelleraren
       href: lifecycle-services/flowcharts-business-process-modeler.md
@@ -1266,10 +1291,14 @@
       href: lifecycle-services/user-logins.md
     - name: Tillgångsbibliotek
       href: lifecycle-services/asset-library.md
+    - name: Felsökning av prestandaproblem med hjälp av verktyg i LCS
+      href: lifecycle-services/performancetroubleshooting.md
+    - name: Handbok för frågor
+      href: lifecycle-services/querycookbook.md
     - name: Microsoft Dynamics 365 Translation Service
       href: lifecycle-services/translation-service-overview.md
       items:
-        - name: Översätta användargränssnittsfiler
+        - name: Översätt användargränssnittsfiler
           href: lifecycle-services/use-translation-service.md
         - name: Översätta dokumentationsfiler
           href: lifecycle-services/use-translation-service-ua.md

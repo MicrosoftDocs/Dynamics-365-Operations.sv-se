@@ -1,28 +1,29 @@
 --- 
-title: "Utforma datamodeller som använder ekonomiska dimensioner som datakällor"
+title: "ER Använd ekonomiska dimensioner som en datakälla (Del 1 - Designa datamodell)"
 description: "I följande steg beskrivs hur antingen en systemadministratör eller en utvecklare för elektronisk rapportering kan konfigurera en modell för elektronisk rapportering (ER) att använda ekonomiska dimensioner som datakällor för ER-rapporter."
 author: NickSelin
 manager: AnnBe
-ms.date: 10/18/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: ERWorkspace, ERVendorPart, ERSolutionTable, ERSolutionCreateDropDialog, ERDataModelDesigner, ERDataModelContentsItemCreationDialog
 audience: Application User
 ms.reviewer: kfend
-ms.search.scope: Operations
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.author: nselin
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: 9b33d78b60ca4e4813dd4b158febee2323cea476
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 84f546b73eefe3ead78c6ab3fdbbc05d0db5fef5
 ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/14/2018
 
 ---
-# <a name="design-data-models-to-use-financial-dimensions-as-data-sources"></a>Utforma datamodeller som använder ekonomiska dimensioner som datakällor
+# <a name="er-use-financial-dimensions-as-a-data-source-part-1-design-data-model"></a>ER Använd ekonomiska dimensioner som en datakälla (Del 1: Designa datamodell)
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

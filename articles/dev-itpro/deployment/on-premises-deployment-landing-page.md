@@ -3,7 +3,7 @@ title: "Startsida för lokal distribution"
 description: "Det här avsnittet innehåller information och länkar till innehåll om lokal distribution."
 author: kfend
 manager: AnnBe
-ms.date: 07/16/2018
+ms.date: 09/11/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -18,10 +18,10 @@ ms.author: kfend
 ms.search.validFrom: 2016-08-30
 ms.dyn365.ops.version: Platform update 8
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: aba11ae99393eb0d8c3e1df2276faa95ad831d29
+ms.sourcegitcommit: 965826f5fddc2f53f33157434929eb265979376e
+ms.openlocfilehash: e65edc9d613c9898776e30ea5ab4104a3ce5b4c8
 ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/17/2018
 
 ---
 # <a name="on-premises-deployments-home-page"></a>Startsida för lokal distribution
@@ -59,6 +59,7 @@ Du kan distribuera Microsoft Dynamics 365 for Finance and Operations (lokal). N�
 
 ## <a name="other-resources"></a>Andra resurser
 - [Felsöka Dynamics 365 for Finance and Operations (lokal)](troubleshoot-on-prem.md)
+- [Lokal diagnostik](on-premises-diagnostics.md)
 - [Funktioner som inte implementerats i lokala distributioner](../../fin-and-ops/get-started/features-not-implemented-on-prem.md)
 - [Inaktuella funktioner](../migration-upgrade/deprecated-features.md)
 - [Livscykelpolicy lokala versioner av programmet](../migration-upgrade/on-prem-version-update-policy.md)

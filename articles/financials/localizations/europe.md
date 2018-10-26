@@ -16,10 +16,10 @@ ms.author: shylaw
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ce9c24a0a89dd4e6a0f3f2c7789b4f553d88d412
-ms.openlocfilehash: 9399df070d450b6eb89dc33ca47ddb77fe8e60b1
+ms.sourcegitcommit: 965826f5fddc2f53f33157434929eb265979376e
+ms.openlocfilehash: 137fb8cae0766bed16b6b32d99e1d2c6c9f7b606
 ms.contentlocale: sv-se
-ms.lasthandoff: 08/13/2018
+ms.lasthandoff: 09/17/2018
 
 ---
 
@@ -27,7 +27,7 @@ ms.lasthandoff: 08/13/2018
 
 [!include [banner](../includes/banner.md)]
 
-Det här avsnittet innehåller information och länkar till resurser som hjälper dig att konfigurera Dynamics 365 for Finance and Operations för juridiska personer med en primär adress i Brasilien. 
+Det här avsnittet innehåller information och länkar till resurser som hjälper dig att konfigurera Dynamics 365 for Finance and Operations för juridiska personer med en primär adress i Europa. 
 
 - [Förskottsmottagare](emea-advance-holders.md)
  - [Transaktioner för förskottsmottagare](emea-advance-holders-transactions.md)
@@ -44,9 +44,7 @@ Det här avsnittet innehåller information och länkar till resurser som hjälpe
 - [Filformat för betalningsmetod](emea-select-file-formats-for-the-method-of-payments.md)
 - [Integration av räkenskapstjänst (ESR)](emea-fiscal-service-integration.md)
 - [Avyttring av anläggningstillgångar för Estland och Litauen](emea-credit-note-reverse-fixed-asset-sale.md)
-- [Omräkning i utländsk valuta](emea-foreign-currency-revaluation.md)
 - [Generera ett överföringsdokument för en intern lageröverföring](tasks/transfer-document-internal-inventory-transfer.md)
-- [Generera en EU Intrastat-deklaration](tasks/eur-00002-eu-intrastat-declaration.md)
 - [Generera en rapport med lista över försäljning inom EU](tasks/eur-00011-eu-sales-list-report.md)
 - ISO20022-filer
   - [Importera ISO20022-filer](emea-ISO20022-file-formats.md)
@@ -58,9 +56,11 @@ Det här avsnittet innehåller information och länkar till resurser som hjälpe
   - [Ställ in en betalningsmetod för ISO20022-autogiro](tasks/setup-method-payment-iso20022-direct-debit.md)
   - [Ställ in kunder och kundbankkonton för ISO20022-autogiron](tasks/set-up-bank-accounts-iso20022-direct-debits.md)
   - [Ställ in leverantörer och leverantörsbankkonton för ISO20022-krediteringsöverföringar](tasks/set-up-vendor-iso20022-credit-transfers.md)
-  - [Skapa och exportera leverantörbetalningar med ett ISO20022-betalningsformat](tasks/create-export-vendor-payments-iso20022-payment-format.md)
+  - [Skapa och exportera leverantörsbetalningar med ett ISO20022-betalningsformat](tasks/create-export-vendor-payments-iso20022-payment-format.md)
 - [Intrastat](emea-intrastat.md)
   - [Överföra transaktioner till Intrastat](tasks/transfer-transactions-intrastat.md)
+  - [Ange en fraktadress för en inomeuropeisk transaktion](tasks/eur-00002-specify-lading-address-intra-community.md)
+  - [Generera en EU Intrastat-deklaration](tasks/eur-00002-eu-intrastat-declaration.md)
 - [Lagerjournalrapporter](emea-set-up-report-inventory-journal-names.md)
 - [Tidsgränser för fakturautfärdande](emea-invoice-issue-deadline.md)
 - [Fakturabearbetning](emea-invoice-processing.md)
@@ -82,8 +82,6 @@ Det här avsnittet innehåller information och länkar till resurser som hjälpe
 - [Ställ in grupp för rapportering av EU-säljlista](tasks/eur-00011-eu-sales-list-reporting.md)
 - [Skapa betalningsblankettformat för projektfakturor](tasks/set-up-payment-slip-format-project-invoices.md)
 - [Ställ in undertecknare för utskriftsformulär](emea-set-up-signers-for-printing-forms.md)
-- [Skapa överföringsdokument för varurörelse inom ett företag](tasks/set-up-transfer-documents-goods-movement-inside-company.md)
-- [Ange en fraktadress för en inomeuropeisk transaktion](tasks/eur-00002-specify-lading-address-intra-community.md)
 - [Storno-redovisning](emea-storno.md)
 - [Skattedirektiv](emea-tax-directives.md)
 - [Uppdatera hur belopp visas i rapporter och dokument](emea-amount-printing-forms.md)

@@ -3,7 +3,7 @@ title: "Anpassa användarupplevelsen"
 description: "Det här ämnet beskriver hur du kan anpassa Microsoft Dynamics 365 for Finance and Operations."
 author: TLeforMicrosoft
 manager: AnnBe
-ms.date: 05/24/2018
+ms.date: 09/28/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -19,10 +19,10 @@ ms.author: tlefor
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 862bbf4d1d9b0dc2b6dc418ee766ed4dedef49fe
-ms.openlocfilehash: 8ad5bd607f08d4e0b266d86a96a0b7f3e352c4cd
+ms.sourcegitcommit: 7344f460fcb443a78b254e2387fbf5c9134bf674
+ms.openlocfilehash: 1860b603f789aabca1ca58848a88e11a6e08e31f
 ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 09/28/2018
 
 ---
 
@@ -64,7 +64,7 @@ Olika personer och företag har ett annorlunda perspektiv på de viktigaste data
 ### <a name="shortcut-menu-options"></a>Alternativ för snabbmeny
 Snabbmenyer innehåller några sätt för att uttryckligen ändra en sida så att den passar bättre till dina behov eller ditt företags behov. (EN snabbmeny kallas också en *högerklicksmeny* eller *kontextmenyn*.)
 
-Några av de vanligaste och mest viktiga ändringar som kan göras till en sida visas direkt som ett alternativ på en snabbmeny. Om du till exempel vill lägga till eller dölja kolumner i ett rutnät, bara högerklicka på en kolumnrubrik och markera **lägg till kolumner** eller **dölj denna kolumn**.
+Några av de vanligaste och mest viktiga ändringar som kan göras till en sida visas direkt som ett alternativ på en snabbmeny. Om du t.ex. startar i Plattformsuppdatering 17, om du vill lägga till eller dölja kolumner i ett rutnät, bara högerklicka på en kolumnrubrik och markera **lägg till kolumner** eller **dölj denna kolumn**.
 
 Dessutom är de vanligaste typerna av uttrycklig anpassning tillgängliga genom att högerklicka på ett element och sedan välja **anpassa**. (Observera att inte alla element på sidan kan anpassas). När du använder den här metoden för anpassning visas elementets egenskapsfönster.
 
@@ -81,27 +81,38 @@ Du kan använda egenskapsfönstret för att anpassa ett element på följande s�
 Egenskapsfönstret kan omfatta andra anpassningsfunktioner, beroende på vilket element. Exempelvis egenskapsfönstret för en panel kan låta dig flytta upp den panelen till en instrumentpanel och egenskapsfönster för en instrumentpanel låter dig skapa en ny arbetsyta på den här instrumentpanelen.
 
 ### <a name="the-personalization-toolbar"></a>Verktygsfält för anpassning
-När du vill flytta eller dölja element eller göra flera ändringar till en sida använder du verktygsfältet **anpassning**. För att öppna verktygsfältet **anpassning**, välj **anpassa formuläret** i ett elements egenskapsfönster. Du kan också välja **anpassa det här formuläret** i gruppen **anpassa** på fliken **alternativ** för varje sidas åtgärdsfönster.
+Om du vill göra flera ändringar på en sida eller göra ändringar som inte är tillgängliga genom andra metoder (till exempel ändra ordning på element), kan du använda verktygsfältet **anpassning**. För att öppna verktygsfältet **anpassning**, välj **anpassa formuläret** i ett elements egenskapsfönster. Du kan också välja **anpassa det här formuläret** i gruppen **anpassa** på fliken **alternativ** för varje sidas åtgärdsfönster.
 
 [![Verktygsfält för anpassning](./media/personalization-personalizationtoolbar.jpg)](./media/personalization-personalizationtoolbar.jpg)
 
-När värktygsfältet **anpassning** är öppet blir sidan icke-interaktiv. Därför kan du inte ange data eller expandera eller komprimera sektioner. Du kan bara ändra de element som utgör sidan.
+#### <a name="navigating-the-page"></a>Navigera på sidan 
+Din förmåga att navigera på sidan när **Verktygsfält för anpassning** är öppen beror på vilken plattformsversion som används. 
 
+- Före plattformsuppdatering 19, samtidigt som verktygsfältet **anpassning** är öppet är sidan skrivskyddad (du kan inte ange någonting) och inte interaktiv (du kan bara ändra synliga element på sidan). Om du vill ändra elementen i ett dolt avsnitt eller på en annan flik måste du stänga verktygsfältet **anpassning**, expandera ett avsnitt eller växla till önskad flik och öppna verktygsfältet **anpassning**.  
+
+- Starta i plattformsuppdatering 19, om verktygsfältet **anpassning** är öppet är sidan fortfarande skrivskydd men är mycket mer interaktiv. Närmare bestämt kan du expandera eller komprimera faktaboxen, växla flikar och expandera eller komprimera avsnitt när verktygsfältet **anpassning** är öppet på samma sätt som normalt på sidan. Om du vill använda en anpassad ändring till ett komprimerbart avsnitt eller (till exempel dölja en snabbflik) utlöser knappen bredvid flikarna det komprimerbara avsnittet eller när det får tangentbordfokus eller när du för muspekaren över den.  
+
+#### <a name="personalization-tools"></a>Verktyg för anpassning
 Följande verktyg är tillgängliga i fältet verktygsfältet **anpassning**:
 
 - Använd verktyget **Välj** för att välja och öppna ett elements egenskaper. Välj verktyget **Välj** och välj sedan elementet som egenskaperna ska ändras för. När du väljer ett element, öppnas elementets egenskapsfönster och du kan ändra egenskaperna för det elementet. Du kan upprepa processen för andra element som kan anpassas på den sidan. Men eftersom vissa element används på ett visst sätt låter Finance and Operations dig inte ändra en del av deras egenskaper. Därför när du väljer ett element kan du se att vissa av egenskaperna inte kan ändras. Exempelvis du kan skinnet en fält som krävs.
-- Använd verktyget **Flytta** för att flytta ett element till en annan plats inom aktuell grupp av element. (Du kan inte flytta ett element utanför dess överordnade grupp). Välj verktyget **flytta** och välj sedan elementet du vill flytta. När du markerar ett element kommer Finance and Operations att söka igenom för att avgöra om elementet kan flyttas eller inte. Det skapar sedan ett antal ”släppzoner”. När du drar runt elementet inom den aktuella gruppen visas varje ”släppzon” med färgade rader i fetstil bredvid området där elementet kan släppas.
-- Använd verktyget **Dölj** verktyg för att dölja ett element på sidan. Välj verktyget **Göm** och välj sedan elementet du vill gömma. När du väljer verktyget **Dölj** kommer alla element som döljs för närvarande vara synliga och visas i en skuggad behållare. Du kan sedan göra dem synliga. Genom att välja verktyget **Välj** kan du se hur sidan kommer att se ut med de valda elementen dolda.
-- Använd verktyget **sammanfattning** när du vill att ett element ska visas i sammanfattningen på snabbfliken. Sammanfattningsverktyget gäller endast fält som är på snabbfliken. När du väljer verktyget **Sammanfattning** har alla fält som har valts som sammanfattningsfält visas i en skuggad behållare. Du kan interaktivt lägga till fält på snabbfliken sammanfattning och ta bort fält från snabbfliken sammanfattning genom att markera fälten.
-- Använd **Hoppa över** för att ta bort ett element från sidan tangentbordstabbsekvens. När du väljer verktyget **Hoppa över** kommer alla element som för närvarande hoppas över att visas i en skuggad behållare. Du kan sedan göra delar av fliksekvensen igen.
-- Använd verktyget **Redigera** för att markera ett element som antingen redigerbart eller inte redigerbart. När du väljer verktyget **Redigera** kommer alla element som för närvarande inte är redigerbara att visas i en skuggad behållare. Du kan sedan göra dem redigerbara igen. Observera att vissa fält är obligatoriska och kan göras icke redigerbara. Ett hänglåssymbol visas bredvid dessa fält.
-- Använd knappen **infoga** för att visa en lista med element som kan infogas på en sida.
 
+- Använd verktyget **Flytta** för att flytta ett element till en annan plats inom aktuell grupp av element. (Du kan inte flytta ett element utanför dess överordnade grupp). Välj verktyget **flytta** och välj sedan elementet du vill flytta. När du markerar ett element kommer Finance and Operations att söka igenom för att avgöra om elementet kan flyttas eller inte. Det skapar sedan ett antal ”släppzoner”. När du drar runt elementet inom den aktuella gruppen visas varje ”släppzon” med färgade rader i fetstil bredvid området där elementet kan släppas.
+
+- Använd verktyget **Dölj** verktyg för att dölja ett element på sidan. Välj verktyget **Göm** och välj sedan elementet du vill gömma. När du väljer verktyget **Dölj** kommer alla element som döljs för närvarande vara synliga och visas i en skuggad behållare. Du kan sedan göra dem synliga. Genom att välja verktyget **Välj** kan du se hur sidan kommer att se ut med de valda elementen dolda.
+    - Genom att starta i plattformsuppdatering 18 kan du dölja obligatoriska fält och avsnitt som innehåller obligatoriska fält. Detta låter dig skapa en förenklad upplevelse där obligatoriska fält som inte följer affärslogik inte visas. Dolda obligatoriska fält görs också tillfälligt synliga om de är tomma och när ett försök att spara görs. 
+
+- Använd verktyget **sammanfattning** när du vill att ett element ska visas i sammanfattningen på snabbfliken. Sammanfattningsverktyget gäller endast fält som är på snabbfliken. När du väljer verktyget **Sammanfattning** har alla fält som har valts som sammanfattningsfält visas i en skuggad behållare. Du kan interaktivt lägga till fält på snabbfliken sammanfattning och ta bort fält från snabbfliken sammanfattning genom att markera fälten.
+
+- Använd **Hoppa över** för att ta bort ett element från sidan tangentbordstabbsekvens. När du väljer verktyget **Hoppa över** kommer alla element som för närvarande hoppas över att visas i en skuggad behållare. Du kan sedan göra delar av fliksekvensen igen.
+
+- Använd verktyget **Redigera** för att markera ett element som antingen redigerbart eller inte redigerbart. När du väljer verktyget **Redigera** kommer alla element som för närvarande inte är redigerbara att visas i en skuggad behållare. Du kan sedan göra dem redigerbara igen. Observera att vissa fält är obligatoriska och kan göras icke redigerbara. Ett hänglåssymbol visas bredvid dessa fält.
+
+- Använd knappen **infoga** för att visa en lista med element som kan infogas på en sida.
     - Välj verktyget **fält** under **infoga** för att lägga till ett fält till sidan. När du använder verktyget **fält**, du kan lägga till fält som ingår i definitionen för sidan, men som för tillfället visas inte på sidan. Information om hur du skapar nya fält som inte ingår i definitionen av sidan finns [anpassade fält](user-defined-fields.md). När du har valt verktyget **fält** måste du först välja den grupp eller det område där du vill lägga till ett fält. En dialogruta visar en lista med fält som är relaterade till den valda gruppen eller området. Välj ett eller flera fält i dialogrutan och välj sedan **Infoga**. Om du vill ta bort ett fält som du tidigare lade du upprepar hela processen och ta bort markeringen i fältet i dialogrutan.
     - Välj verktyget **PowerApp** under **infoga** i ett program som har skapats med hjälp av Microsoft PowerApps på sidan. För detaljerad information om hur du bäddar in en PowerApps-app på en sida finns i [bädda in PowerApps](embed-power-apps.md).
 
 - Välj knappen **Hantera** för att visa en lista över hanteringsalternativ som är relaterade till alla anpassningar för den aktuella sidan.
-
     - Välj **Rensa** för att återställa sidan till dess installerade standardtillstånd. Alla anpassningar på den aktuella sidan kommer att rensas. Det finns ingen ångra-åtgärd. Använd därför endast detta alternativ om du är säker på att du vill återställa sidan.
     - Välj **Importera** för att ladda en anpassning från en fil som du eller någon annan tidigare skapade för denna sida. Alla aktuella anpassningar för sidan ersätts med anpassningar från den valda filen.
     - Välj **exportera** om du vill spara dina anpassningar för sidan till en fil. Du kan dela dina anpassningar med andra användare. Användarna behöver bara importera filen med dina anpassningar för sidan.

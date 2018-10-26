@@ -3,7 +3,7 @@ title: Skapa ekonomiska rapporter
 description: "Det här avsnittet innehåller allmän information om att skapa en ekonomisk rapport."
 author: aprilolson
 manager: AnnBe
-ms.date: 12/01/2017
+ms.date: 09/26/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,10 +19,10 @@ ms.author: aolson
 ms.search.validFrom: 2016-05-31
 ms.dyn365.ops.version: AX 7.0.1
 ms.translationtype: HT
-ms.sourcegitcommit: 821d8927211d7ac3e479848c7e7bef9f650d4340
-ms.openlocfilehash: b1dea07589b7fe953ec47b204441d044c19b5020
+ms.sourcegitcommit: a128f326cb89ab00e69be40801553c0ac551446e
+ms.openlocfilehash: 70fa1298c3af43f62b8fa0b833fa817f17858c47
 ms.contentlocale: sv-se
-ms.lasthandoff: 08/13/2018
+ms.lasthandoff: 09/27/2018
 
 ---
 
@@ -34,17 +34,14 @@ Det här avsnittet innehåller allmän information om att skapa en ekonomisk rap
 
 Öppna rapportdefinitionen och klicka sedan på knappen Skapa i verktygsfältet om du vill skapa en rapport. Fönstret Rapportköstatus öppnas och visar platsen för rapporten i kön. Som standard öppnas rapporten i Web Viewer.
 
-> [!NOTE]
-> Du kan bara skapa rapporter till mappar och platser som du har åtkomstbehörighet för.
-
 Följande alternativ är tillgängliga för rapportgenerering:
 
 - Ställa in ett schema för att skapa en rapport eller en grupp av rapporter automatiskt
 - Kontrollera om det saknas konton eller data i en rapport och validera riktigheten i en rapport
 
-När du skapar en rapport används de alternativ du har angett på fliken Rapportdefinition. På fliken Fördelning och distribution kan du ange en plats för rapportbiblioteket. Detta är en enkel metod för att dela rapporten.
+När du skapar en rapport används de alternativ du har angett på fliken Rapportdefinition.
 
-## <a name="generate-a-financial-report"></a>Skapa ekonomisk rapport
+## <a name="generate-a-financial-report"></a>Generera en ekonomisk rapport
 
 Om du vill skapa en ekonomisk rapport med Microsoft Dynamics 365 for Finance and Operations, gå till **Redovisning** \> **Förfrågningar och rapporter** \> **Ekonomirapporter**.
 
@@ -56,9 +53,6 @@ När rapporten har skapats blir den tillgänglig i avsnittet **Rapporter**.
 Du kan välja att **Visa** eller **Ta bort** rapporten.
 
 Öppna rapportdefinitionen och klicka sedan på knappen Skapa i verktygsfältet om du vill skapa en rapport med **Report designer**. Fönstret Rapportköstatus öppnas och visar platsen för rapporten i kön. Som standard öppnas rapporten i Web Viewer.
-
-> [!NOTE]
-> Du kan bara skapa rapporter till mappar och platser som du har åtkomstbehörighet för.
 
 ## <a name="schedule-report-generation"></a>Schemalägga rapporter
 Många företag har en serie grundläggande rapporter som körs regelbundet vid schemalagda tidpunkter som en del av affärsprocesserna. Du kan schemalägga en rapport som ska skapas en gång om dagen, en gång i veckan eller månaden eller årligen. Det kan vara en enstaka rapport eller en grupp rapporter som inbegriper flera företag. Du måste ange dina autentiseringsuppgifter för vart och ett av företagen du anger, t.ex. sådana i en rapportträdsdefinition. Om autentiseringsuppgifterna är ogiltiga visas endast den information du har behörighet att komma åt i rapporterna, t.ex. det aktuella företag du är inloggad i för tillfället. Utdatainformationen läses först från rapportgruppen och sedan från de enskilda rapporterna.

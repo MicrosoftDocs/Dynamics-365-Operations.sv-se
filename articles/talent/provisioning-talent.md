@@ -3,13 +3,13 @@ title: Reservera Talent
 description: "I det här avsnittet får du veta hur du skapar en ny miljö för Microsoft Dynamics 365 for Talent."
 author: rschloma
 manager: AnnBe
-ms.date: 11/20/2017
+ms.date: 09/27/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
 audience: Application User
-ms.reviewer: rschloma
+ms.reviewer: josaw
 ms.search.scope: Talent
 ms.custom: 17271
 ms.assetid: ba1ad49d-8232-400e-b11f-525423506a3f
@@ -18,10 +18,10 @@ ms.author: rschloma
 ms.search.validFrom: 2017-11-20
 ms.dyn365.ops.version: Talent July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
-ms.openlocfilehash: 2fc4119f3b33aa583274f4d823e296752cdde41d
+ms.sourcegitcommit: c5d4fb53939d88fcb1bd83d70bc361ed9879f298
+ms.openlocfilehash: d28ca1f9cf2bef73dc687a85592056cccc767da5
 ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 10/01/2018
 
 ---
 # <a name="provision-talent"></a>Reservera Talent
@@ -30,7 +30,7 @@ ms.lasthandoff: 08/09/2018
 
 I det här avsnittet får du veta hur du skapar en ny produktionsmiljö för Microsoft Dynamics 365 for Talent. Det här avsnittet förutsätter att du har köpt Talent via en molnbaserad lösningsleverantör (CSP) eller ett arkitekturavtal för företag (EA). Om du har en befintlig Microsoft Dynamics 365-licens som redan innehåller tjänsteplanen for Talent och du inte kan utföra stegen i det här avsnittet, kontakta då supporten.
 
-För att komma igång måste en global administratör logga in på [Microsoft Dynamics Lifecycle Services](http://lcs.dynamics.com) (LCS) och skapa ett nytt projekt for Talent. Såvida inte ett licensieringsproblem hindrar dig från att tillhandahålla Talent krävs ingen hjälp från supporten eller Dynamics Service Engineering (DSE)-representanter.
+För att komma igång måste en global administratör logga in på [Microsoft Dynamics Lifecycle Services](https://lcs.dynamics.com) (LCS) och skapa ett nytt projekt for Talent. Såvida inte ett licensieringsproblem hindrar dig från att tillhandahålla Talent krävs ingen hjälp från supporten eller Dynamics Service Engineering (DSE)-representanter.
 
 ## <a name="create-an-lcs-project"></a>Skapa ett LCS-projekt
 För att hantera dina Talent-miljöer med LCS måste först skapa ett LCS-projekt.
@@ -48,7 +48,6 @@ När du har skapat ett LCS-projekt kan du införa Talent i en miljö.
 
 1. I LCS-projektet väljer du fliken **App-hantering for Talent**.
 2. Talent etableras alltid i en Microsoft PowerApps-miljö, detta i syfte att möjliggöra PowerApps-integrering och -utbyggnad. Läs avsnittet ”Välja en PowerApps-miljö” i det här ämnet innan du fortsätter. 
-3. Om du inte redan har en PowerApps-miljö, följ då stegen i avsnittet ”Skapa en ny PowerApps-miljö (vid behov)” i det här avsnittet innan du fortsätter.
 
     > [!NOTE]
     > Om du vill visa befintliga miljöer eller skapa nya miljöer måste den innehavaradministratören som tillhandahåller Talent inneha en PowerApps P2-licens. Om din organisation inte har en licens för PowerApps P2 kan du skaffa en från din CSP eller [Prissättningssidan för PowerApps](https://powerapps.microsoft.com/en-us/pricing/).
@@ -78,11 +77,6 @@ Använd följande riktlinjer när du bestämmer vilka PowerApps-miljöer som ska
 4. Dataintegration och teststrategier ska beaktas, till exempel: begränsat läge, UAT, produktion. Därför rekommenderar vi att du noggrant överväger de olika konsekvenserna för distribution, eftersom det inte är lätt att senare ändra vilken Talent-miljö som är mappad till en PowerApps-miljö.
 5. Följande PowerApps-miljöer kan inte användas för Talent och filtreras i urvalslistan i LCS:
  
-    **CDS 2.0-miljöer** CDS 2.0 görs offentligt tillgänglig 21 mars 2018, Talent stöder ännu inte CDS 2.0. Du kan visa och skapa CDS 2.0-databaser i PowerApps administratörscenter, men de kan inte användas i Talent. Alternativet att använda CDS 2.0-miljöer i Talent-distributioner kan användas vid en senare tidpunkt.
-   
-   > [!Note]
-   > För att särskilja mellan CDS 1.0- och 2.0-miljöer i administrationsportalen, välj en miljö och leta efter **Uppgifter**. CDS 2.0-miljöer refererar till faktum att ”du kan hantera dessa inställningar i Dynamics 365 administrationscenter” pekar på en instansversion och har ingen flik som för Databas. 
- 
    **Standardinställda PowerApps- miljöer** Även om varje innehavare konfigureras automatiskt med en standardmiljö för PowerApps, rekommenderar vi inte att använda dem med Talent eftersom alla innehavare har tillgång till PowerApps-miljön och kanske oavsiktligt förstör produktionsdata när de testar och utforskar integrering med PowerApps eller Flow.
    
    <strong>Testkörningsmiljöer</strong> Miljöer med ett namn som ”TestDrive- alias@domain" skapas med en 60 dagars förfalloperiod och upphör att gälla efter den tiden vilket kan orsaka att miljön tas bort automatiskt.
@@ -91,42 +85,6 @@ Använd följande riktlinjer när du bestämmer vilka PowerApps-miljöer som ska
   
 6. Det finns inga specifika åtgärder som ska vidtas när du har fastställt den korrekta miljön att använda. Fortsätt försörjningsprocessen. 
  
-## <a name="create-a-new-powerapps-environment-if-required"></a>Skapa en ny PowerApps-miljö (vid behov)
-
-Kör ett PowerShell-skript om du vill skapa en ny PowerApps-miljö för Talent inom ramen för innehavaradministrationen som har PowerApps Plan 2-licens. Skriptet automatiserar följande steg:
-
-
- + Skapande av en PowerApps-miljö
- + Skapandet av en CDS 1.0-databas
- + Avmarkera alla exempeldata i CDS 1.0-databasen
-
-
-Slutför följande instruktioner för att köra skriptet:
-
-1. Hämta filen ProvisionCDSEnvironment.zip från följande plats: [ProvisionCDSEnvironment-skript](https://go.microsoft.com/fwlink/?linkid=870436)  
-
-2. Från din hämtningsmapp högerklickar du på filen ProvisionCDSEnvironment.zip precis hämtade och markera **egenskaper**.  Om det finns ett säkerhetsmeddelande längst ned i dialogrutan som visar ”den här filen kommer från en annan dator och kan ha blockerats för att skydda datorn”, markera kryssrutan om du vill **Avblockera**, klicka på **Använd** och sedan **OK**.
-
-3. Packa upp hela innehållet av filen ProvisionCDSEnviroinment.zip i en annan mapp än din rotmapp.
-
-4. Kör programmet Windows PowerShell eller Windows PowerShell ISE som administratör.
-
-   Besök avsnittet [Ange körningspolicyn](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-6) om du vill veta mer om hur du anger körningspolicy så att skript ska kunna köras. Vi föreslår att du använder följande ”Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope Process”, men kom ihåg att följa ditt företags säkerhetsprinciper och stäng PowerShell-fönstret när du är klar. 
-  
-5. Navigera inom PowerShell till mappen där du packade upp filen och kör följande kommando och ersätt värden enligt anvisningarna nedan:
- 
-   ```.\ProvisionCDSEnvironment -EnvironmentName MyNewEnvironment -Location YourLocation```
-
-    
-   **MyNewEnvironment** bör ersättas med ditt namn på miljön. Detta namn visas i LCS och kommer att visas när användare väljer vilken Talent-miljö som ska användas. 
-
-   **YourLocation** ska ersättas med någon av regionerna som stöds för Talent: USA, Europa, Australien. 
-
-   **– Utförligt** är valfri och ger detaljerad information för att skicka till support om det uppstår problem.
-
-6. Fortsätt försörjningsprocessen.
- 
-
 ## <a name="grant-access-to-the-environment"></a>Bevilja åtkomst till miljön.
 Som standard har den globala administratör som skapade miljön åtkomst till den. Ytterligare användare måste beviljas explicit åtkomst. För att bevilja åtkomst lägger du [till användare](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/create-new-users) och [tilldela dem lämpliga roller](https://docs.microsoft.com/en-us/dynamics365/unified-operations/dev-itpro/sysadmin/tasks/assign-users-security-roles) i bas-miljön för HR. Global administratör som har distribuerat Talent måste också starta både Attract- och Onboard-programmen för att slutföra initieringen och aktivera åtkomst för andra innehavare.  Tills detta inträffar kan andra användare inte komma åt Onboard- och Attract-programmen och får åtkomstfel.
 

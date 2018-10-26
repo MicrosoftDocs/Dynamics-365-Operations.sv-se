@@ -1,29 +1,30 @@
 --- 
-title: "Ställ in ett menyalternativ för mobil enhet för att slutföra arbetet i en inköpsorder"
+title: "Ställ in ett menyalternativ för mobila enheter för att utföra arbete av typen Inköpsorder"
 description: "I den här proceduren visas hur du ställer in ett menyalternativet för mobila enheter."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 08/25/2016
+ms.date: 08/29/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
 ms.technology: 
+ms.search.form: WHSRFMenuItem, WHSRFAutoConfirm, WHSRFMenu
 audience: Application User
-ms.reviewer: josaw
-ms.search.scope: Operations
+ms.reviewer: shylaw
+ms.search.scope: Core, Operations
 ms.search.region: Global
 ms.search.industry: Distribution
 ms.author: shylaw
 ms.search.validFrom: 2016-06-30
-ms.dyn365.ops.version: AX 7.0.0
+ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: b80c258d6a779a8fc5bb6c846abd3af7e69d5e06
+ms.sourcegitcommit: 0312b8cfadd45f8e59225e9daba78b9e216cff51
+ms.openlocfilehash: 326a0039d2769ee5f459a87c302c93604d2379aa
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 09/14/2018
 
 ---
-# <a name="set-up-a-mobile-device-menu-item-for-completing-work-in-a-purchase-order"></a>Ställ in ett menyalternativ för mobil enhet för att slutföra arbetet i en inköpsorder
+# <a name="set-up-a-mobile-device-menu-item-for-completing-work-of-type-purchase-order"></a>Ställ in ett menyalternativ för mobila enheter för att utföra arbete av typen Inköpsorder
 
 [!include [task guide banner](../../includes/task-guide-banner.md)]
 

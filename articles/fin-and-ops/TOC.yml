@@ -36,14 +36,20 @@
           items:
             - name: Livscykelpolicy och molnbaserade versioner av programmet
               href: ../dev-itpro/migration-upgrade/versions-update-policy.md?toc=/fin-and-ops/toc.json
-            - name: Livscykelpolicy lokala versioner av programmet
+            - name: Livscykelpolicy och lokala versioner av programmet
               href: ../dev-itpro/migration-upgrade/on-prem-version-update-policy.md?toc=/fin-and-ops/toc.json
+            - name: Mainstream-supporten upphör för Microsoft Dynamics AX 2009 och 2012
+              href: get-started/mainstream-support-ax-2009-2012.md
             - name: Borttagna och inaktuella funktioner
               href: ../dev-itpro/migration-upgrade/deprecated-features.md?toc=/fin-and-ops/toc.json
             - name: AX 2012-funktioner som har senarelagts
               href: get-started/ax-2012-features-not-implemented-but-not-deprecated.md
             - name: Funktioner som inte implementerats i lokala distributioner
               href: get-started/features-not-implemented-on-prem.md
+            - name: Finance and Operations version 8.1 (oktober 2018)
+              href: get-started/whats-new-changed-8-1-October-2018.md
+            - name: Platform update 20 (september 2018)
+              href: get-started/whats-new-platform-update-20.md
             - name: Finance and Operations version 8.0 (april 2018)
               href: get-started/whats-new-changed-8-0-April-2018.md
             - name: Platform update 15 (mars 2018)
@@ -120,7 +126,7 @@
               href: get-started/personalize-user-experience.md
             - name: Skapa och arbeta med anpassade fält
               href: get-started/user-defined-fields.md
-            - name: Bädda in PowerApps-appar
+            - name: Bädda in appar för PowerApps
               href: get-started/embed-power-apps.md
             - name: Hitta information med hjälp av sökningar
               href: get-started/use-lookups-to-find-information.md
@@ -452,13 +458,17 @@
               items:
                 - name: Konfigurera validering av fakturamatchning för leverantörsreskontra
                   href: ../financials/accounts-payable/tasks/set-up-accounts-payable-invoice-matching-validation.md
-            - name: Redovisningsfördelningar och poster i reskontrajournal för leverantörsfakturor
+            - name: Redovisningsfördelningar och redovisningsjournalsposter för leverantörsfakturor
               href: ../financials/accounts-payable/accounting-distributions-subledger-journal-entries-vendor-invoices.md
             - name: Fakturamatchning och koncerninterna inköpsorder
               href: ../financials/accounts-payable/invoice-matching-intercompany-purchase-orders.md
+            - name: Ställ in leverantörsfakturapolicyer
+              href: ../financials/accounts-receivable/tasks/set-up-vendor-invoice-policies.md
+            - name: Registrera leverantörsfakturan och matcha mot mottagen kvantitet
+              href: ../financials/accounts-receivable/tasks/record-vendor-invoice-match-against-received-quantity.md
             - name: Betalningskontrollöversikt
               href: ../financials/accounts-payable/positive-pay-overview.md
-            - name: Ställa in och generera betalningskontrollfiler
+            - name: Ställ in och generera betalningskontrollfiler
               href: ../financials/accounts-payable/set-up-generate-positive-pay-files.md
             - name: Standardmotkonton för leverantörsfakturajournaler och fakturagodkännandejournaler
               href: ../financials/accounts-payable/default-offset-accounts-vendor-invoice-journals.md
@@ -562,19 +572,15 @@
               href: ../financials/accounts-receivable/tasks/create-sales-order-invoices.md
             - name: Ställa in räntesatser för en räntekod
               href: ../financials/accounts-receivable/set-up-interest-rates-interest-code.md
-            - name: 'Avstå, återinföra eller återföra ränteavgifter'
+            - name: 'Efterskänk, återställ eller återför ränteavgifter'
               href: ../financials/accounts-receivable/waive-reinstate-reverse-interest-fees.md
             - name: Beräkna ränta
               href: ../financials/accounts-receivable/tasks/process-interest.md
-            - name: Ställ in leverantörsfakturapolicyer
-              href: ../financials/accounts-receivable/tasks/set-up-vendor-invoice-policies.md
-            - name: Registrera leverantörsfakturan och matcha mot mottagen kvantitet
-              href: ../financials/accounts-receivable/tasks/record-vendor-invoice-match-against-received-quantity.md
             - name: Skapa en kundfaktura
               href: ../financials/accounts-receivable/configure-customer-invoices.md
-            - name: Sätta in kundbetalningar
+            - name: Sätt in kundbetalningar
               href: ../financials/accounts-receivable/tasks/deposit-customer-payments.md
-            - name: Upprätta villkor för kundbetalning
+            - name: Upprätta villkor för kundbetalningar
               href: ../financials/general-ledger/tasks/establish-customer-payment-terms.md
             - name: Upprätta en betalningsmetod för kund
               href: ../financials/accounts-receivable/tasks/establish-customer-method-payment.md
@@ -596,6 +602,8 @@
               href: ../financials/accounts-receivable/tasks/create-write-off-journal-customer.md
             - name: Ställ in och generera åldersfördelningsinformation för kundreskontra
               href: ../financials/accounts-receivable/tasks/set-up-accounts-receivable-aging-information.md
+            - name: Kopiera kunder genom att använda delade nummerserier
+              href: ../financials/accounts-receivable/copy-customer.md
             - name: Kundarbetsflöde
               href: ../financials/accounts-receivable/customer-workflow.md
             - name: Betalningar och kvittningar
@@ -1543,8 +1551,6 @@
               href: ../financials/localizations/emea-fiscal-service-integration.md
             - name: Avyttring av anläggningstillgångar för Estland och Litauen
               href: ../financials/localizations/emea-credit-note-reverse-fixed-asset-sale.md
-            - name: Omräkning i utländsk valuta
-              href: ../financials/localizations/emea-foreign-currency-revaluation.md
             - name: Generera ett överföringsdokument för en intern lageröverföring
               href: ../financials/localizations/tasks/transfer-document-internal-inventory-transfer.md
             - name: Generera en rapport med lista över försäljning inom EU
@@ -2104,6 +2110,8 @@
               href: ../financials/localizations/emea-pol-fixed-assets-depreciation.md
             - name: Funktionstillägget Avyttrande av anläggningstillgång
               href: ../financials/localizations/emea-pol-fixed-asset-disposal-functionality-extension.md
+            - name: Omräkning i utländsk valuta
+              href: ../financials/localizations/emea-foreign-currency-revaluation.md
             - name: Returförpackningar
               href: ../financials/localizations/emea-pol-returnable-packages.md
             - name: Momsrapporter
@@ -2114,6 +2122,42 @@
               href: ../financials/localizations/emea-pol-interest-calculation.md
             - name: Omsättnings- och saldoutdrag
               href: ../financials/localizations/emea-pol-turnover-balances-statement.md
+        - name: Ryssland
+          href: ../financials/localizations/russia.md
+          items:
+            - name: Förskottsmottagare
+              href: ../financials/localizations/rus-advance-holders.md
+              items:
+                - name: Skapa en förskottsmottagare
+                  href: '../financials/localizations/emea-advance-holders.md#create-an-advance-holder'
+                - name: Dagliga åtgärder för förskottsmottagare
+                  href: ../financials/localizations/rus-advance-holders-daily-operations.md
+            - name: Anläggningstillgångar
+              items:
+                - name: Anskaffning av anläggningstillgångar och att omsätta dem
+                  href: ../financials/localizations/rus-fixed-asset-acquisition.md
+                - name: Skapa och bokför budgetjournaler för anskaffning av anläggningstillgångar
+                  href: ../financials/localizations/rus-post-budget-fixed-asset-acquisition.md
+                - name: Redovisning av anläggningstillgångar
+                  href: ../financials/localizations/rus-fixed-assets-counting.md
+                - name: Omvärdering av valuta för anläggningstillgångar
+                  href: ../financials/localizations/rus-fixed-asset-currency-revaluation.md
+                - name: Delvis demontering (försäljning) av anläggningstillgång
+                  href: ../financials/localizations/rus-fixed-assets-disassembly.md
+            - name: Ställ in och bearbeta betalningsorder
+              href: ../financials/localizations/rus-payment-order-settings-processing.md
+            - name: Ställ in valutakurser för valutatransaktioner
+              href: ../financials/localizations/rus-exchange-difference.md
+            - name: Förhandsgranska redovisningstransaktioner
+              href: ../financials/localizations/rus-ledger-transactions-preview.md
+            - name: Ställ in tjänstemän
+              href: ../financials/localizations/rus-officials.md
+            - name: Ställ in bankkonton
+              href: ../financials/localizations/rus-local-settings-requisites-bank-module.md
+            - name: Moms för skatteombud
+              href: ../financials/localizations/rus-tax-agent.md
+            - name: Ställ in dimensionskontroll för kvittningar
+              href: ../financials/localizations/rus-transactions-settlement-date.md
         - name: Saudiarabien
           href: ../financials/localizations/saudi-arabia.md
           items:
@@ -2133,6 +2177,8 @@
               href: ../financials/localizations/emea-esp-cash-discount-applied-invoice.md
             - name: Alternativ för växel
               href: ../financials/localizations/emea-esp-bill-of-exchange-options.md
+            - name: Beräkna förfallodatum och rapportera den genomsnittliga tiden för betalningar
+              href: ../financials/localizations/emea-esp-invoice-due-dates.md
             - name: Villkorsmoms
               href: ../financials/localizations/emea-esp-conditional-sales-tax.md
             - name: Kreditfakturering
@@ -2249,7 +2295,7 @@
               href: hr/tasks/enter-project-timesheets.md
             - name: Hantera e-postmallar
               href: hr/tasks/manage-email-templates.md
-            - name: Hantera ledighet och frånvaro
+            - name: Hantera frånvaro
               href: hr/tasks/manage-leave-absence.md
         - name: Rekrytering
           items:
@@ -2857,7 +2903,7 @@
               href: ../supply-chain/master-planning/tasks/create-baseline-forecast.md
             - name: Ändra en efterfrågeprognos manuellt
               href: ../supply-chain/master-planning/tasks/modify-demand-forecast-manually.md
-    - name: Dynamics 365 for Unified Operations – mobilapp
+    - name: Appen Dynamics 365 for Unified Operations Mobile
       href: ../dev-itpro/mobile-apps/Mobile-app-home-page.md?toc=/fin-and-ops/toc.json
       items:
         - name: Tillgängliga mobila arbetsytor

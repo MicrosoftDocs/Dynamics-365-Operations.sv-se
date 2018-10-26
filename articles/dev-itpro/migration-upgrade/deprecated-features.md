@@ -3,7 +3,7 @@ title: Borttagna och inaktuella funktioner
 description: "I det här avsnittet beskrivs funktioner som har tagits bort, eller har planerats för borttagning."
 author: sericks007
 manager: AnnBe
-ms.date: 08/07/2018
+ms.date: 10/01/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: sericks
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 884a1372c6ebdcc665a812090d75c158c1fef895
-ms.openlocfilehash: cd620dcdeb1cd5fd3a89be9ae31c4d35e29a03d0
+ms.sourcegitcommit: d6b7b1219974cb5de1a625d87c3bce2a4439470b
+ms.openlocfilehash: ea24d6d63edc6f3bb1bf4a99d24d348af0d6cdbf
 ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 10/01/2018
 
 ---
 
@@ -41,6 +41,52 @@ Den här listan är avsedd att hjälpa dig att ta hänsyn till dessa borttagna o
 
 > [!Note]
 > Detaljerad information om objekt i Finance and Operations finns i [Tekniska referensrapporter](https://mbs.microsoft.com/customersource/northamerica/AX/downloads/reports/axtechrefrep). Du kan jämföra olika versioner av rapporterna för mer information om objekt som har ändrats eller tagits bort i varje version av Finance and Operations.
+
+## <a name="dynamics-365-for-finance-and-operations-81-with-platform-update-20"></a>Dynamics 365 for Finance and Operations 8.1. med plattformsuppdatering 20
+
+### <a name="batch-transfer-rules-for-subledger-journal-account-entries"></a>Batchöverföringsregler för kontoposter i redovisningsjournalen
+Det synkrona överföringsläget är inaktuellt i redovisningsparametrarna.  Detta läge ersätts endast av asynkron och schemalagd batch som endast finns som alternativ för överföring. 
+
+|   |  |
+|------------|--------------------|
+| **Orsak till inaktuell/borttagning** | Vi tar bort det synkrona alternativet på grund av att påverkan av systemets prestanda. |
+| **Ersatt av en annan funktion?**   | Asynkron och schemalagd batch är alternativ som ska användas i stället för synkron.   |
+| **Produktområden som påverkas**         | Redovisning, Leverantörsreskontra, Kundreskontra, Inköp, Utgift    |
+| **Distribueringsalternativ**              | Allt  |
+| **Status**                         | Inaktuell - Måltidsramen för att ta bort funktioner är versionen 10.0.|
+
+### <a name="electronic-reporting-for-russia"></a>Elektronisk rapportering för Ryssland
+Funktionen för att konfigurera .txt och .xml-format för deklarationer. 
+
+|   |  |
+|------------|--------------------|
+| **Orsak till inaktuell/borttagning** | Ersatt med för elektronisk rapportering. |
+| **Ersatt av en annan funktion?**   | Ja. |
+| **Produktområden som påverkas**         | Redovisning |
+| **Distribueringsalternativ**              | Allt |
+| **Status**                         | Borttagen från Dynamics 365 for Finance and Operations 8.1. med plattformsuppdatering 20. |
+
+### <a name="financial-reports-generator-for-russia"></a>Ekonomisk rapportgenerator för Ryssland
+Ett verktyg för inställning av datainsamling för redovisning och momsrapporter behövs och exportera data till XLS och DOC-rapportmallar Funktionella delar: exportera data till XLS och DOC rapportmallar, frågor, fasta krav tas bort. 
+
+|   |  |
+|------------|--------------------|
+| **Orsak till inaktuell/borttagning** | Borttagna delar ersätts med elektronisk rapportering. |
+| **Ersatt av en annan funktion?**   | Ja. Användargränssnittet för installationen av ekonomirapporter ska användas för att förbereda datainsamlingsregler av huvudbokskonton eller skatteregister. Exportera data till olika filtyper, fasta krav och frågeliknande datainsamlingsregler ska konfigureras i elektronisk rapportering. |
+| **Produktområden som påverkas**         | Huvudbok. |
+| **Distribueringsalternativ**              | Allt |
+| **Status**                         | Borttagen från Dynamics 365 for Finance and Operations 8.1. med plattformsuppdatering 20. |
+
+### <a name="integration-with-external-providers-for-sending-electronic-reporting-through-communication-channels-for-russia"></a>Integration med externa leverantörer för att skicka elektronisk rapportering via kommunikationskanaler för Ryssland
+Funktionen exporterar genererade elektroniska filer av deklarationer till mapp för vidare sändning till officiella leverantörer av elektronisk rapportering samt importera tillstånd tillbaka.
+
+|   |  |
+|------------|--------------------|
+| **Orsak till inaktuell/borttagning** | Ersatt med konfigurerbara elektroniska meddelanden. |
+| **Ersatt av en annan funktion?**   | Ja.  |
+| **Produktområden som påverkas**         | Redovisningsuppgifter, skatt |
+| **Distribueringsalternativ**              | Allt |
+| **Status**                         | Borttagen från Dynamics 365 for Finance and Operations 8.1. med plattformsuppdatering 20. |
 
 ## <a name="dynamics-365-for-finance-and-operations-80-with-platform-update-15"></a>Dynamics 365 for Finance and Operations 8.0. med plattformsuppdatering 15
 Inga funktioner har tagit bort eller ersatts med den här versionen. Plattformsuppdatering 15 är kumulativ och innehåller nya eller ändrade funktioner från plattformsuppdatering 13, plattformsuppdatering 14 och plattformsuppdatering 15.
