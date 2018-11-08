@@ -34,6 +34,8 @@
         - name: Nyheter och ändringar
           href: get-started/whats-new-changed.md
           items:
+            - name: Frågor och svar om tjänstuppdateringar för en version
+              href: get-started/one-version.md
             - name: Livscykelpolicy och molnbaserade versioner av programmet
               href: ../dev-itpro/migration-upgrade/versions-update-policy.md?toc=/fin-and-ops/toc.json
             - name: Livscykelpolicy och lokala versioner av programmet
@@ -46,8 +48,16 @@
               href: get-started/ax-2012-features-not-implemented-but-not-deprecated.md
             - name: Funktioner som inte implementerats i lokala distributioner
               href: get-started/features-not-implemented-on-prem.md
+            - name: Platform update 22 (november 2018)
+              href: get-started/whats-new-platform-update-22.md
+            - name: Finance and Operations version 8.1.2 (november 2018)
+              href: get-started/whats-new-changed-8-1-2.md
+            - name: Finance and Operations version 8.1.1 (oktober 2018)
+              href: get-started/whats-new-changed-8-1-1.md
             - name: Finance and Operations version 8.1 (oktober 2018)
               href: get-started/whats-new-changed-8-1-October-2018.md
+            - name: Platform update 21 (oktober 2018)
+              href: get-started/whats-new-platform-update-21.md
             - name: Platform update 20 (september 2018)
               href: get-started/whats-new-platform-update-20.md
             - name: Finance and Operations version 8.0 (april 2018)
@@ -300,7 +310,7 @@
           href: ../dev-itpro/data-entities/integration-overview.md?toc=/fin-and-ops/toc.json
         - name: 'API:er för dataintegration'
           items:
-            - name: 'API:er för datahanteringspaket'
+            - name: REST API för datahanteringspaket
               href: ../dev-itpro/data-entities/data-management-api.md?toc=/fin-and-ops/toc.json
             - name: Tjänsteslutpunkter
               href: ../dev-itpro/data-entities/services-home-page.md?toc=/fin-and-ops/toc.json
@@ -309,10 +319,12 @@
                   href: ../dev-itpro/data-entities/troubleshoot-service-authentication.md?toc=/fin-and-ops/toc.json
             - name: OData
               href: ../dev-itpro/data-entities/odata.md?toc=/fin-and-ops/toc.json
-            - name: Anpassade tjänster
+            - name: Utveckling av anpassade tjänster
               href: ../dev-itpro/data-entities/custom-services.md?toc=/fin-and-ops/toc.json
             - name: Återkommande integrationer
               href: ../dev-itpro/data-entities/recurring-integrations.md?toc=/fin-and-ops/toc.json
+            - name: Testtjänster som använder verktyg från tredje part
+              href: ../dev-itpro/data-entities/third-party-service-test.md
         - name: Utveckling för integration
           items:
             - name: Dataintegrering med datatabeller
@@ -324,9 +336,9 @@
                   href: ../dev-itpro/data-entities/develop-composite-data-entities.md?toc=/fin-and-ops/toc.json
                 - name: Konfigurera delning ekonomiska data mellan företag
                   href: ../dev-itpro/data-entities/tasks/configure-financial-cross-company-data-sharing.md?toc=/fin-and-ops/toc.json
-                - name: Skapa en postmall för att förenkla datainmatning
+                - name: Skapa postmallar för att förenkla datainmatning
                   href: ../dev-itpro/data-entities/tasks/create-record-template-facilitate-data-entry.md?toc=/fin-and-ops/toc.json
-                - name: Använda en postmall för att skapa en ny post
+                - name: Skapa poster med postmallar
                   href: ../dev-itpro/data-entities/tasks/use-record-template-new-record.md?toc=/fin-and-ops/toc.json
             - name: Integrera data med hjälp av Common Data Service
               href: ../dev-itpro/data-entities/data-integration-cds.md?toc=/fin-and-ops/toc.json
@@ -383,6 +395,8 @@
             - name: Kopiera konfigurationsdata mellan företag eller juridiska personer
               href: ../dev-itpro/data-entities/copy-configuration.md?toc=/fin-and-ops/toc.json
               items:
+                - name: Konfigurationsdatapaket
+                  href: ../dev-itpro/data-entities/configuration-data-packages.md
                 - name: Konfigurationsdatapaket (endast utgåvan från juli 2017)
                   href: ../dev-itpro/data-entities/configuration-data-packages.md?toc=/fin-and-ops/toc.json
             - name: Konfigurationsdatamallar
@@ -391,6 +405,10 @@
               href: ../dev-itpro/data-entities/entity-change-track.md?toc=/fin-and-ops/toc.json
             - name: Söka efter information om standarddatatabeller
               href: ../dev-itpro/data-entities/data-entities-report.md?toc=/fin-and-ops/toc.json
+            - name: Datamallar med flera kalkylblad
+              href: ../dev-itpro/data-entities/excel-template-multiple.md
+            - name: Aktivera ändringsspårning för enheter
+              href: ../dev-itpro/data-entities/entity-change-track.md
             - name: Konfigurationsnycklar och datatabeller
               href: ../dev-itpro/data-entities/config-key-entities.md?toc=/fin-and-ops/toc.json
             - name: Konfigurationsdatapaket
@@ -402,6 +420,8 @@
               href: ../dev-itpro/data-entities/tips-tricks-import-general-journal-entity.md?toc=/fin-and-ops/toc.json
         - name: Utveckling för datatabeller
           items:
+            - name: Designprinciper och metodtips för datatabeller
+              href: ../dev-itpro/dev-tools/design-best-practices.md
             - name: Skapa nya datatabeller
               href: ../dev-itpro/data-entities/build-consuming-data-entities.md?toc=/fin-and-ops/toc.json
             - name: Egenskaper för datatabell
@@ -422,14 +442,18 @@
               href: ../dev-itpro/data-entities/validations-defaults-unmapped-fields.md?toc=/fin-and-ops/toc.json
             - name: Säkerhet och datatabeller
               href: ../dev-itpro/data-entities/security-data-entities.md?toc=/fin-and-ops/toc.json
-            - name: Använda testverktyg från tredje part
+            - name: Använda testverktyg i tjänster från tredje part
               href: ../dev-itpro/data-entities/third-party-service-test.md?toc=/fin-and-ops/toc.json
+            - name: Skapa skrivskyddade enheter som visar ekonomiska dimensioner
+              href: ../dev-itpro/financial/read-only-entity-financial.md?toc=/fin-and-ops/toc.json
         - name: Ta med din egen databas
           href: ../dev-itpro/analytics/export-entities-to-your-own-database.md?toc=/fin-and-ops/toc.json
         - name: Automatisering av datauppgift
           href: ../dev-itpro/data-entities/data-task-automation.md
-        - name: Arbetsyta för datavalidering
+        - name: Arbetsyta - checklista för datavalidering
           href: ../dev-itpro/user-interface/data-validation-workspace.md
+        - name: Felbeskrivningar för datahantering
+          href: ../dev-itpro/data-entities/dm-error-descriptions.md
     - name: Ekonomisk styrning
       href: ../financials/index.md
       items:
@@ -1007,9 +1031,11 @@
                   href: ../financials/budgeting/fiscal-calendars-fiscal-years-periods.md
                 - name: Konfigurera kontostrukturer
                   href: ../financials/general-ledger/configure-account-structures.md
+                - name: Dubbel valuta
+                  href: ../financials/general-ledger/dual-currency.md
             - name: Journaler och redovisningar
               items:
-                - name: Hantering av redovisningsjournaler
+                - name: Hantering av allmänna journaler
                   href: ../financials/general-ledger/general-journal-processing.md
                 - name: Bokför periodiska journaler
                   href: ../financials/general-ledger/tasks/post-periodic-journals.md
@@ -1049,6 +1075,8 @@
                   href: ../financials/general-ledger/import-currency-exchange-rates.md
                 - name: En verifikation
                   href: ../financials/general-ledger/one-voucher.md
+                - name: Redovisningskvittningar
+                  href: ../financials/general-ledger/ledger-settlements.md
             - name: Stängning vid periodslut
               items:
                 - name: Stänga redovisningen vid periodslutet
@@ -1799,6 +1827,10 @@
             - name: Översikt över skattemotor
               href: ../financials/general-ledger/tax-engine.md
               items:
+                - name: Importera konfigurering
+                  href: ../financials/general-ledger/tax-engine-import-configuration.md
+                - name: Tillämplighet för skattemotor
+                  href: ../financials/general-ledger/tax-engine-applicability.md
                 - name: Integrering av skattemotor
                   href: ../financials/general-ledger/tax-engine-integration.md
                 - name: Bygg ut skattemotorn
@@ -2100,6 +2132,8 @@
         - name: Polen
           href: ../financials/localizations/poland.md
           items:
+            - name: Aktivera Storno-redovisning
+              href: ../financials/localizations/emea-pol-red-storno.md
             - name: Beräkna radrabatter från enhetspris
               href: ../financials/localizations/emea-pol-line-discount-calculation-from-unit-price.md
             - name: Korrigeringsanteckningar
@@ -2116,6 +2150,8 @@
               href: ../financials/localizations/emea-pol-returnable-packages.md
             - name: Momsrapporter
               href: ../financials/localizations/emea-pol-sales-tax-reports.md
+            - name: Ställ in nummerserier efter lagerställe
+              href: ../financials/localizations/emea-pol-number-sequence-warehouses.md
             - name: Standardverifieringsfil
               href: ../financials/localizations/emea-pol-standard-audit-file-saf.md
             - name: Skatteränta och frihandsränta
@@ -2132,32 +2168,60 @@
                   href: '../financials/localizations/emea-advance-holders.md#create-an-advance-holder'
                 - name: Dagliga åtgärder för förskottsmottagare
                   href: ../financials/localizations/rus-advance-holders-daily-operations.md
+                - name: Avancerade rapporter med budgetkontroll
+                  href: ../financials/localizations/rus-advance-holders-reports-dailyops.md
+                - name: Omräkning i utländsk valuta för förskottsmottagare
+                  href: ../financials/localizations/rus-advance-adjustment-parameters.md
+                - name: Rapporter över förskottsmottagare
+                  href: ../financials/localizations/rus-local-management-reports-primary-forms.md
+            - name: Bank
+              items:
+                - name: Ställ in bankkonton
+                  href: ../financials/localizations/rus-local-settings-requisites-bank-module.md
+                - name: Ställ in och bearbeta betalningsorder
+                  href: ../financials/localizations/rus-payment-order-settings-processing.md
             - name: Anläggningstillgångar
               items:
                 - name: Anskaffning av anläggningstillgångar och att omsätta dem
                   href: ../financials/localizations/rus-fixed-asset-acquisition.md
+                - name: Registrera anskaffningar av anläggningstillgångar
+                  href: ../financials/localizations/rus-register-acquisition.md
                 - name: Skapa och bokför budgetjournaler för anskaffning av anläggningstillgångar
                   href: ../financials/localizations/rus-post-budget-fixed-asset-acquisition.md
                 - name: Redovisning av anläggningstillgångar
                   href: ../financials/localizations/rus-fixed-assets-counting.md
-                - name: Omvärdering av valuta för anläggningstillgångar
+                - name: Valutaomräkning för anläggningstillgångar
                   href: ../financials/localizations/rus-fixed-asset-currency-revaluation.md
+                - name: Omräkna kostnad och avskrivning för anläggningstillgång
+                  href: ../financials/localizations/rus-fixed-assets-revaluation.md
                 - name: Delvis demontering (försäljning) av anläggningstillgång
                   href: ../financials/localizations/rus-fixed-assets-disassembly.md
-            - name: Ställ in och bearbeta betalningsorder
-              href: ../financials/localizations/rus-payment-order-settings-processing.md
+                - name: 'Sälj, avyttra och skriv av tillgångar'
+                  href: ../financials/localizations/rus-sell-dispose-write-off-fixed-assets.md
+                - name: Konfigurera platser och numrering för anläggningstillgångar
+                  href: ../financials/localizations/rus-fixed-assets-locations-numbering.md
+                - name: Ställ in avskrivning
+                  href: ../financials/localizations/rus-depreciation-setup.md
+                - name: Avskrivningsmetoder
+                  href: ../financials/localizations/rus-depreciation-methods.md
+                - name: Avskrivningsbonus
+                  href: ../financials/localizations/rus-bonus-depreciation.md
+                - name: Beräkna avskrivning
+                  href: ../financials/localizations/rus-depreciation-calculation.md
+            - name: Företagsdivisioner
+              href: ../financials/localizations/rus-company-divisions.md
             - name: Ställ in valutakurser för valutatransaktioner
               href: ../financials/localizations/rus-exchange-difference.md
             - name: Förhandsgranska redovisningstransaktioner
               href: ../financials/localizations/rus-ledger-transactions-preview.md
             - name: Ställ in tjänstemän
               href: ../financials/localizations/rus-officials.md
-            - name: Ställ in bankkonton
-              href: ../financials/localizations/rus-local-settings-requisites-bank-module.md
             - name: Moms för skatteombud
               href: ../financials/localizations/rus-tax-agent.md
             - name: Ställ in dimensionskontroll för kvittningar
               href: ../financials/localizations/rus-transactions-settlement-date.md
+            - name: Fakturor för betalning
+              href: ../financials/localizations/rus-invoice-payment.md
         - name: Saudiarabien
           href: ../financials/localizations/saudi-arabia.md
           items:
