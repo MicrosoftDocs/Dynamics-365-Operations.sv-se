@@ -14,6 +14,8 @@
       href: dev-itpro/choose-deployment.md
     - name: Få support för Retail
       href: retail-support.md
+    - name: Frågor och svar om tjänstuppdateringar för en version
+      href: ../fin-and-ops/get-started/one-version.md
 - name: Förstå implementeringens livscykel
   href: ../fin-and-ops/imp-lifecycle/implementation-lifecycle.md
   items:
@@ -145,8 +147,6 @@
       items:
         - name: Butikskringutrustning
           href: retail-peripherals-overview.md
-        - name: Microsoft-testad kassakringutrustning
-          href: microsoft-tested-pos-hardware-peripherals.md
         - name: Kringutrustningssimulator för butik
           href: dev-itpro/retail-peripheral-simulator.md
         - name: Ansluta kringutrustning till kassan
@@ -229,7 +229,9 @@
       href: set-up-rfm-analysis.md
 - name: Rabatter och prisjusteringar
   items:
-    - name: Prishantering för Retail-försäljning
+    - name: Butiksrabatter
+      href: retail-discounts-overview.md
+    - name: Prishantering för butiksförsäljning
       href: price-management.md
     - name: Prisjusteringar och rabatter
       href: price-adjustments-discounts.md
@@ -271,7 +273,7 @@
       href: ../supply-chain/pim/search-products-product-variants.md
 - name: Lojalitet
   items:
-    - name: Ställa in kundbonusprogram
+    - name: Lojalitetsöversikt
       href: set-up-customer-loyalty-program.md
 - name: Lager
   items:
@@ -307,14 +309,18 @@
       href: ../talent/create-job.md
 - name: Lokaliserings- och regelfunktioner
   items:
+    - name: Räkenskapsintegration för butikskanal
+      href: localizations/fiscal-integration-for-retail-channel.md
     - name: Östeuropa
       items:
         - name: Förskottsfakturor för Retail i Östeuropa
           href: localizations/emea-eeu-advance-invoices-for-retail.md
         - name: Hantering av handkassa for Retail i Östeuropa
           href: localizations/emea-eeu-petty-cash-for-retail.md
-        - name: Retail kundfakturor och returförsäljningsorder för östeuropeiska länder
+        - name: Kundfakturor och returförsäljningsorder för Retail i östeuropeiska länder
           href: localizations/emea-eeu-retail-invoices.md
+        - name: 'Riktlinjer för distribution av kassaapparater i Tjeckien, Ungern och Polen'
+          href: localizations/emea-eeu-deployment.md
     - name: Frankrike
       items:
         - name: Funktioner för kassaapparat
@@ -329,6 +335,10 @@
           href: localizations/apac-ind-loc-deployment-guidelines.md
         - name: Stöd för uppgradering och N-1 för Indien
           href: localizations/apac-ind-n-1-for-india.md
+    - name: Italien
+      items:
+        - name: Integrering av kvittoskrivare
+          href: localizations/emea-ita-fpi-sample.md
     - name: Norge
       items:
         - name: Funktioner för kassaapparat
@@ -490,6 +500,8 @@
           href: dev-itpro/pos-custom-control.md
         - name: Lägga till kassaåtgärder i kassalayouter med hjälp av knappsatsdesigner
           href: dev-itpro/add-POS-operations.md
+        - name: 'API:er för Retail POS'
+          href: dev-itpro/POS-APIs.md
         - name: Tillägg för kassabetalning
           href: dev-itpro/pos-payment-extension.md
         - name: Stöd för externa presentkort

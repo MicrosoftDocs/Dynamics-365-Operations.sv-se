@@ -257,6 +257,10 @@
               href: extensibility/extensibility-changes-804.md
             - name: Ändringar av utbyggbarhet version 8.1
               href: extensibility/extensibility-changes-81.md
+            - name: Ändringar av utbyggbarhet version 8.1.1
+              href: extensibility/extensibility-changes-811.md
+            - name: Ändringar av utbyggbarhet version 8.1.2
+              href: extensibility/extensibility-changes-812.md
         - name: Grunder
           items:
             - name: Inkräktande anpassningar
@@ -303,8 +307,6 @@
               href: extensibility/change-caption-form.md
             - name: Ändra egenskaper för formulärkontroll
               href: extensibility/modify-control-properties.md
-            - name: Ändra etiketter med tilläggsfiler för etikett
-              href: extensibility/change-label.md
             - name: Utöka nummerseriers omfattning
               href: extensibility/extend-number-sequence-scope.md
             - name: Lägga till nya lagerdimensioner
@@ -317,6 +319,8 @@
               href: extensibility/maps-as-interfaces.md
             - name: Utöka registermappningar som används för versionshantering
               href: extensibility/maps-with-versioning.md
+            - name: Utöka antalet decimaler för valda datatyper
+              href: extensibility/decimal-point-precision.md
         - name: Skapa utbyggbara lösningar
           items:
             - name: Skriva utbyggbar kod
@@ -534,7 +538,7 @@
           href: user-interface/workspace-filter-group-subpattern.md
     - name: Utbyggbarhet för kontroll
       items:
-        - name: Skapa aextensible-kontroller
+        - name: Skapa utbyggbara kontroller
           href: user-interface/build-extensible-control.md
         - name: Kortkommandon för utbyggbara kontroller
           href: user-interface/keyboard-shortcuts-controls.md
@@ -764,148 +768,12 @@
               href: mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluedesign.md
             - name: 'ValueMetadata, typ'
               href: mobile-apps/platform/client-apis/interfaces/view-model-control-value-ivalue-ivaluemetadata.md
-- name: Dataintegration
+- name: Allmänna dataskyddsförordningen (GDPR)
+  href: gdpr/gdpr-guide.md
   items:
-    - name: Välja en strategi för dataintegrering (importera/exportera)
-      href: data-entities/integration-overview.md
-    - name: 'API:er för dataintegration'
-      items:
-        - name: 'REST API:er för datahanteringspaket'
-          href: data-entities/data-management-api.md
-        - name: Tjänsteslutpunkter
-          href: data-entities/services-home-page.md
-          items:
-            - name: Felsöka tjänsteautentisering
-              href: data-entities/troubleshoot-service-authentication.md
-        - name: OData
-          href: data-entities/odata.md
-        - name: Utveckling av anpassade tjänster
-          href: data-entities/custom-services.md
-        - name: Återkommande integrationer
-          href: data-entities/recurring-integrations.md
-        - name: Testtjänster som använder verktyg från tredje part
-          href: data-entities/third-party-service-test.md
-    - name: Utveckling för integration
-      items:
-        - name: Datahantering och integrering med datatabeller
-          href: data-entities/data-management-integration-data-entity.md
-          items:
-            - name: Utveckla enheter för migrering av data
-              href: data-entities/develop-entity-for-data-migration.md
-            - name: Utveckla sammansatta datatabeller
-              href: data-entities/develop-composite-data-entities.md
-            - name: Konfigurera delning av ekonomiska data mellan företag
-              href: data-entities/tasks/configure-financial-cross-company-data-sharing.md
-            - name: Skapa postmallar för att förenkla datainmatning
-              href: data-entities/tasks/create-record-template-facilitate-data-entry.md
-            - name: Skapa poster med postmallar
-              href: data-entities/tasks/use-record-template-new-record.md
-        - name: Integrera data med hjälp av Common Data Service
-          href: data-entities/data-integration-cds.md
-          items:
-            - name: Konfigurera ett scenario för potentiell kund till pengar
-              href: ../supply-chain/sales-marketing/prospect-to-cash.md
-              items:
-                - name: Synkronisera konton direkt från Sales till kunder i Finance and Operations
-                  href: ../supply-chain/sales-marketing/accounts-template-mapping-direct.md
-                - name: Synkronisera produkter direkt från Finance and Operations till produkter i Sales
-                  href: ../supply-chain/sales-marketing/products-template-mapping-direct.md
-                - name: Synkronisera kontakter direkt från Sales till kontakter i Finance and Operations
-                  href: ../supply-chain/sales-marketing/contacts-template-mapping-direct.md
-                - name: Synkronisera huvuden och rader i försäljningsofferter direkt från Sales till Finance and Operations
-                  href: ../supply-chain/sales-marketing/sales-quotation-template-mapping-sales-fin.md
-                - name: Synkronisering av försäljningsorder direkt mellan Sales och Finance and Operations
-                  href: ../supply-chain/sales-marketing/sales-order-template-mapping-direct-two-ways.md
-                - name: Synkronisera huvuden och rader i försäljningsfakturor direkt från Finance and Operations till Sales
-                  href: ../supply-chain/sales-marketing/sales-invoice-template-mapping-direct.md
-            - name: Konfigurera integration med Field Service
-              href: ../supply-chain/sales-marketing/field-service.md
-              items:
-                - name: Synkronisera produkter i Finance and Operations till produkter i Field Service
-                  href: ../supply-chain/sales-marketing/field-service-product.md
-                - name: Synkronisera arbetsorder i Field Service till försäljningsorder i Finance and Operations
-                  href: ../supply-chain/sales-marketing/field-service-work-order.md
-                - name: Synkronisera avtalsfakturor i Field Service till fritextfakturor i Finance and Operations
-                  href: ../supply-chain/sales-marketing/field-service-invoice.md
-            - name: Konfigurera Project Service Automation-integration
-              href: ../financials/project-management/PSA-integration.md?toc=/dev-itpro/toc.json
-              items:
-                - name: Parametrar för Project Service Automation-integration
-                  href: ../financials/project-management/PSA-parameters.md?toc=/dev-itpro/toc.json
-                - name: Synkronisera projektkontrakt och projekt
-                  href: ../financials/project-management/project-contracts-templates.md?toc=/dev-itpro/toc.json
-                - name: Synkronisera projektuppgifter
-                  href: ../financials/project-management/project-tasks-template.md?toc=/dev-itpro/toc.json
-                - name: Synkronisera utgiftskategorier för projekt
-                  href: ../financials/project-management/project-categories-templates.md?toc=/dev-itpro/toc.json
-                - name: Synkronisera projektuppskattningar med projektprognoser
-                  href: ../financials/project-management/project-estimates-templates.md?toc=/dev-itpro/toc.json
-                - name: Synkronisera projektutfall med projektets integrationsjournal
-                  href: ../financials/project-management/project-actuals-templates.md?toc=/dev-itpro/toc.json
-        - name: Konsumera externa webbtjänster
-          href: data-entities/consume-external-web-service.md
-- name: Datahantering
-  href: data-entities/data-entities-data-packages.md
-  items:
-    - name: Datatabeller
-      href: data-entities/data-entities.md
-      items:
-        - name: Konfigurationsdataprojekt
-          href: data-entities/configuration-data-projects.md
-        - name: Konfigurationsdatapaket
-          href: data-entities/configuration-data-packages.md
-        - name: Kopiera konfigurationsdata mellan företag
-          href: data-entities/copy-configuration.md
-        - name: Konfigurationsdatamallar
-          href: data-entities/configuration-data-templates.md
-        - name: Datamallar med flera kalkylblad
-          href: data-entities/excel-template-multiple.md
-        - name: Aktivera ändringsspårning för enheter
-          href: data-entities/entity-change-track.md
-        - name: Konfigurationsnycklar och datatabeller
-          href: data-entities/config-key-entities.md
-        - name: Söka efter information om standarddatatabeller
-          href: data-entities/data-entities-report.md
-    - name: Jobb för import och export av data
-      href: data-entities/data-import-export-job.md
-      items:
-        - name: Regelverk för att importera verifikationer med hjälp av enheten Allmän journal
-          href: data-entities/tips-tricks-import-general-journal-entity.md
-    - name: Utveckling för datatabeller
-      items:
-        - name: Designprinciper och metodtips för datatabeller
-          href: dev-tools/design-best-practices.md
-        - name: Skapa nya datatabeller
-          href: data-entities/build-consuming-data-entities.md
-        - name: Beteendemässiga egenskaper för datatabell
-          href: data-entities/behavioral-properties-data-entities.md
-        - name: Skapa beräknade kolumner och virtuella fält
-          href: data-entities/data-entity-computed-columns-virtual-fields.md
-        - name: Korsföretagsbeteende
-          href: data-entities/cross-company-behavior.md
-        - name: Koder för land/region och konfigurationsnycklar
-          href: data-entities/countryregion-codes-configuration-keys.md
-        - name: Arvmönster
-          href: data-entities/support-super-type-sub-type.md
-        - name: Guideregler för datatabell
-          href: data-entities/data-entity-wizard-rules.md
-        - name: Metadataegenskaper
-          href: data-entities/behavioral-properties-data-entities.md
-        - name: 'Valideringar, standardvärden och omappade fält'
-          href: data-entities/validations-defaults-unmapped-fields.md
-        - name: Säkerhet och datatabeller
-          href: data-entities/security-data-entities.md
-        - name: Skapa skrivskyddade enheter som visar ekonomiska dimensioner
-          href: financial/read-only-entity-financial.md
-    - name: Ta med din egen databas
-      href: analytics/export-entities-to-your-own-database.md
-    - name: Automatisering av datauppgift
-      href: data-entities/data-task-automation.md
     - name: Resurser för att svara på databegäranden enligt GDPR
       href: gdpr/gdpr-home-page.md
       items:
-        - name: Guide till GDPR för Finance and Operations
-          href: gdpr/gdpr-guide.md
         - name: Tillgångsklassificeringar
           href: gdpr/gdpr-asset-classification-values.md
         - name: Rapport för personsökning
@@ -920,10 +788,6 @@
           href: gdpr/gdpr-ax2012.md
         - name: Databegäranden enligt GDPR för LCS
           href: gdpr/gdpr-lcs.md
-    - name: Arbetsyta - checklista för datavalidering
-      href: user-interface/data-validation-workspace.md
-    - name: Felbeskrivningar för datahantering
-      href: data-entities/dm-error-descriptions.md
 - name: Kontinuerlig leverans
   href: dev-tools/continuous-delivery-home-page.md
   items:
@@ -1039,10 +903,12 @@
         - name: Konfigurera och distribuera lokala miljöer
           href: deployment/setup-deploy-on-premises-environments.md
           items:
-            - name: Distribuera lokala miljöer på Platform update 12
+            - name: Distribuera lokala miljöer på (Platform update 12 och senare)
               href: deployment/setup-deploy-on-premises-pu12.md
-            - name: Distribuera lokala miljöer på Platform update 8 och 11
+            - name: Distribuera lokala miljöer (Platform update 8 och 11)
               href: deployment/setup-deploy-on-premises-pu8-pu11.md
+            - name: Installationsanvisningar för kanalkomponenter i Retail i en lokal miljö
+              href: deployment/deploy-retail-onprem.md
         - name: Utveckla och distribuera anpassade modeller i lokala miljöer
           href: deployment/develop-deploy-custom-models-on-premises.md
         - name: Konfigurera omvända proxyservrar för lokala miljöer
@@ -1161,6 +1027,8 @@
           href: migration-upgrade/upgrade-data-to-latest-update.md
         - name: Uppdatera utvecklingsverktyg
           href: dev-tools/update-development-tools.md
+        - name: Planera och förbereda för att kompilera koden med den senaste uppdateringen
+          href: migration-upgrade/compile-considerations.md
     - name: Uppgradera till den senaste uppdateringen (lokal)
       items:
         - name: Uppdatera lokala distributioner
@@ -1226,6 +1094,12 @@
           href: sysadmin/batch-server-overview.md
         - name: Skapa batchjobb
           href: sysadmin/tasks/create-batch-job.md
+        - name: Kopiera ett batchjobb
+          href: sysadmin/copy-batch-job.md
+        - name: Aktiva batchperioder
+          href: sysadmin/activeperiod.md
+        - name: Säkerhetsrollen Batchhanterare
+          href: sysadmin/runby.md
     - name: Optimerings-advisor
       href: sysadmin/optimization-advisor-overview.md
       items:

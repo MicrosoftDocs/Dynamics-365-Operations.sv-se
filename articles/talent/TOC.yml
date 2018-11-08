@@ -1,11 +1,20 @@
-- name: Välkommen till Dynamics 365 for Talent
+- name: Dynamics 365 for Talent
   href: index.md
   items:
     - name: Kom igång
       href: talent-get-started.md
       items:
         - name: Nyheter och ändringar
+          href: whats-new.md
           items:
+            - name: Nyheter och ändringar i Dynamics 365 for Talent Core HR (31 oktober 2018)
+              href: whats-new-talent-october-31.md
+            - name: Nyheter och ändringar i Dynamics 365 for Talent Core HR (19 oktober 2018)
+              href: whats-new-talent-october-19.md
+            - name: Nyheter och ändringar i Dynamics 365 for Talent Core HR (15 oktober 2018)
+              href: whats-new-talent-october-11.md
+            - name: Nyheter och ändringar i Dynamics 365 for Talent Core HR (8 oktober 2018)
+              href: whats-new-talent-october-8.md
             - name: Nyheter och ändringar i Dynamics 365 for Talent Core HR (1 oktober 2018)
               href: whats-new-talent-october-01.md
             - name: Nyheter och ändringar i Dynamics 365 for Talent Core HR (24 september 2018)
@@ -26,10 +35,12 @@
           href: remove-talent-environment.md
         - name: Etablering av modulära appar för Talent
           href: modular-app-tech-faq.md
-        - name: Bädda in appar för PowerApps
+        - name: Bädda in PowerApps-appar
           href: ../fin-and-ops/get-started/embed-power-apps.md?toc=/dynamics365/unified-operations/talent/toc.json
-        - name: Bädda in appar för Core HR och Common Data Service
+        - name: Core HR och Common Data Service för appar
           href: CoreHREntities.md
+        - name: Integreringar
+          href: talent-financeandoperations-integration.md
         - name: Få åtkomst till förhandsfunktioner
           href: access-preview-feature.md
         - name: Konfigurera löneintegration mellan Talent och Dayforce
@@ -64,6 +75,34 @@
       items:
         - name: Funktioner och möjligheter i Attract
           href: attract-overview.md
+        - name: Skapa en processmall i Attract
+          href: Process-templates-Attract.md
+        - name: 'Skapa, godkänna och bokföra jobb i Attract'
+          href: Creating-jobs-Attract.md
+        - name: Anskaffning med talangpooler
+          href: attract-talent-pools.md
+        - name: Anskaffning med LinkedIn-rekryterare
+          href: attract-linked-in-recruiter.md
+        - name: Aktiviteter vid anställningsprocess i Attract
+          href: activities-attract.md
+        - name: Utbyggbarhet
+          href: extensibility-attract.md
+        - name: Karriärwebbplats och kandidatupplevelser
+          href: career-site.md
+        - name: Ställa in erbjudandehantering
+          href: offer-setup.md
+        - name: 'Skapa, godkänna och signera erbjudanden'
+          href: creating-offers.md
+        - name: Skapa och hantera e-postmallar
+          href: email-templates.md
+        - name: Rapportering och analyser
+          href: Reporting-Analytics-Attract.md
+        - name: Säkerhets- och rollhantering i Attract
+          href: security-attract.md
+        - name: Administrationsinställningar i Attract
+          href: Admin-Settings-Attract.md
+        - name: Intelligenta rekommendationer
+          href: Intelligent-Recommendations.md
         - name: Skapa en bra integrationsupplevelse
           href: create-onboarding-experience.md
     - name: Motivera medarbetare
