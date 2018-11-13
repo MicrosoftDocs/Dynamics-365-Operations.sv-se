@@ -50,11 +50,12 @@ Följande arbetsflödestyper är tillgängliga för Anskaffning och källa.
 | Ansökningsarbetsflöde för leverantörstillägg  | Att granska och godkänna arbetsflöden för att lägga till nya leverantörer via leverantörsförfrågningar. |
 
 ## <a name="creating-a-workflow"></a>Skapa ett arbetsflöde
+
 Om du vill skapa ett arbetsflöde, gå till Anskaffning och källa &gt; Inställningar &gt; Anskaffnings- och källarbetsflöden och skapa ett nytt arbetsflöde genom att välja vilken typ av arbetsflöden som du vill skapa.  
 
 I arbetsflödets arbetsyta kan du dra arbetsflödeselement till designern och länka elementen till ett flöde. Arbetsflödeselementen bör konfigureras. För arbetsflödeselement för godkännande och uppgift kan du konfigurera vilken deltagare som ska vidta åtgärder.
-Typer av deltagare
-----------------------
+
+## <a name="types-of-participants"></a>Typer av deltagare
 
 Du kan tilldela ett godkännandesteg till följande grupper för deltagare.
 
@@ -68,13 +69,12 @@ Du kan tilldela ett godkännandesteg till följande grupper för deltagare.
 
 
 
-<a name="additional-resources"></a>Ytterligare resurser
---------
+## <a name="additional-resources"></a>Ytterligare resurser
 
-[Definiera affärsprocessarbetsflöden för inköpsrekvisitioner](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions)
+- [Definiera affärsprocessarbetsflöden för inköpsrekvisitioner](https://mbs.microsoft.com/customersource/Global/AX/learning/documentation/white-papers/Defining_business_process_workflows_for_purchase_requisitions)
 
-[Arbetsflöde för inköpsrekvisitioner](purchase-requisitions-workflow.md)
+- [Arbetsflöde för inköpsrekvisitioner](purchase-requisitions-workflow.md)
 
-[Integration av leverantörer](vendor-onboarding.md)
+- [Integration av leverantörer](vendor-onboarding.md)
 
 
