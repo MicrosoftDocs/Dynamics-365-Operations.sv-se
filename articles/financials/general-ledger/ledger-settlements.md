@@ -27,7 +27,6 @@ ms.lasthandoff: 10/12/2018
 # <a name="ledger-settlements"></a>Redovisningskvittningar
 
 [!include [banner](../includes/banner.md)]
-[!include [banner](../includes/preview-banner.md)]
 
 Redovisningskvittningar låter dig matcha debet- eller kredittransaktioner i redovisningen och markera dem som kvittade. På så sätt kan du se till att relaterade transaktioner har tagits bort. Du kan också återföra kvittningar om de ändras av misstag.
 
