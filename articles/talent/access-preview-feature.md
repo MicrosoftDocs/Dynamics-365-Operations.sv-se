@@ -19,10 +19,10 @@ ms.author: rschloma
 ms.search.validFrom: 2018-04-30
 ms.dyn365.ops.version: AX 7.1.0, Talent April 2018 update
 ms.translationtype: HT
-ms.sourcegitcommit: 82f039b305503c604d64610f39838fa86a8eb08a
-ms.openlocfilehash: eb99f169ada2a227ebe8e64ee56bbb38cdfda4e0
+ms.sourcegitcommit: e890e32049e930b70c2d0aac8aa8206ab999418a
+ms.openlocfilehash: cd738cafc97477182e574ee0f363fdcf1df7da7a
 ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 10/22/2018
 
 ---
 
@@ -48,7 +48,8 @@ Du kan använda inställningrn **förhandsgranskningsfunktioner** i administrat�
 1. Logga in på Microsoft Dynamics 365 for Talent: Attract
 2. I menyn **inställningar** (växel-symbol) i det övre högra hörnet väljer du **administrationsinställningar**.
 3. På fliken **Funktionshantering** väljer du alternativet bredvid **Förhandsgranskningsfunktioner** så att det blir blått.
-4. Uppdatera webbläsaren för att starta och se de nya funktionerna. (Användare som redan har loggat in ser funktionerna nästa gång de loggar in och de kan uppdatera webbläsaren om du vill se funktionerna direkt.)
+4. Du kan även styra enskilda funktioner genom att aktivera/inaktivera specifika funktioner på den här sidan.
+5. Uppdatera webbläsaren för att starta och se de nya funktionerna. (Användare som redan har loggat in ser funktionerna nästa gång de loggar in och de kan uppdatera webbläsaren om du vill se funktionerna direkt.)
 
 #### <a name="core-hr"></a>Grundläggande personal
 
@@ -61,12 +62,11 @@ Du kan använda inställningrn **förhandsgranskningsfunktioner** i administrat�
 
 ## <a name="features-that-are-currently-in-preview"></a>Funktioner som är i förhandsgranskning nu.
 
-### <a name="attract"></a>Attract
+### <a name="attract"></a>Attrahera
 
-- **Jobbmallar** – nu kan du skapa mallar för anställningsprocesser. Användare kan redan anpassa anställningsprocessen för ett specifikt jobb. De kan nu skapa mallar för den processen och välja lämplig mall när ett visst jobb skapas. Därför hjälper den här funktionen till att effektivisera jobbinställningsprocessen.
-- **Karriärplats** – aktuell version av karriärplats visar bara en lista över alla lediga jobb. Dock läggs mer kapacitet till webbplatsen i framtiden. Jobb kan markeras som antingen interna eller externa. Interna användare som loggar in på webbplatsen ser både interna projekt och externa jobb. Men icke interna användare och användare som inte är inloggade ser endast externa jobb.
-- **Jobbpublicering** – nu kan du publicera jobb på karriärwebbplatsen.
-- **LinkedIn jobbpublicering** – nu kan du publicera jobb på LinkedIn.
+- **Relevanta kandidater i ett jobb** – rekryterare och personalchefer kan enkelt se vilka kandidater som är mest relevanta för jobbet över alla kandidater. De 5 bästa kandidaterna visas utifrån deras relevans i dess meritförteckning/profil för jobbeskrivningen.
+- **Relevanta jobb** – kandidater ser nu en lista över andra jobb som är relevanta för dem baserat på deras meritförteckning/profil och jobbeskrivningar.  För närvarande visas detta till kandidater när de ansöker som ett förslag på andra möjligheter.
+- **EEO/OFCCP-stöd** – nya aktivitetstyper möjliggör användning av ett fördefinierat formulär för anmälan om diskriminering (EEO) och diskrimineringsombudsmannens data (OFCCP) av sökande.  Detta är ett fördefinierat formulär och kan inte redigeras.
 
     > [!NOTE]
     > Jobb som har publicerats visas bara för kunder som prenumererar på en eller flera LinkedIn-jobblistor. Annars ser kunder endast ett jobb om de uttryckligen söker efter det. Det uppstår en fördröjning när jobb publiceras på LinkedIn. Ett jobb kan ta flera timmar visas när det har publiceras från Attract.

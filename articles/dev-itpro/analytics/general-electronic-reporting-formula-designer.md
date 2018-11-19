@@ -3,14 +3,14 @@ title: Formeldesigner i elektronisk rapportering (ER)
 description: "Detta avsnitt avslutar hur du använder formeldesignern inom Elektronisk rapportering (ER)."
 author: NickSelin
 manager: AnnBe
-ms.date: 04/04/2018
+ms.date: 10/03/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
 ms.technology: 
 ms.search.form: ERDataModelDesigner, ERExpressionDesignerFormula, ERMappedFormatDesigner, ERModelMappingDesigner
 audience: Application User, IT Pro
-ms.reviewer: kfend
+ms.reviewer: shylaw
 ms.search.scope: Core, Operations
 ms.custom: 58771
 ms.assetid: 24223e13-727a-4be6-a22d-4d427f504ac9
@@ -19,10 +19,10 @@ ms.author: nselin
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: e782d33f3748524491dace28008cd9148ae70529
-ms.openlocfilehash: d3ac6ea7b104428f364385e1fd3ed221cae8498d
+ms.sourcegitcommit: f0ded563ecf0b6d0ce67f046f631d8c4dcfc7802
+ms.openlocfilehash: 1dc584355c8992ee701169fd5d29ad7b0300a498
 ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 10/23/2018
 
 ---
 
@@ -252,6 +252,12 @@ I följande tabeller finns beskrivningar av datamanipuleringsfunktioner kan anv�
 <td><strong>SPLIT (&quot;abcd&quot;, 3)</strong> returnerar en ny lista som består av två poster som har ett <strong>STRING</strong>-fält. Fältet i den första posten innehåller texten <strong>&quot;abc&quot;</strong>, och fältet i den andra posten innehåller texten <strong>&quot;d&quot;</strong>.</td>
 </tr>
 <tr>
+<td>SPLIT (indata, avgränsare)</td>
+<td>Delar upp den definierade indatasträngen i delsträngar baserat på den definierade avgränsaren.</td>
+<td><strong>SPLIT (&quot;XAb aBy&quot;, &quot;aB&quot;)</strong> returnerar en ny lista som består av tre poster som har ett <strong>STRING</strong>-fältet. Fältet i den första posten innehåller texten <strong>&quot;X&quot;</strong>, fältet i den andra posten innehåller texten &quot;&nbsp;&quot;, och fältet i den tredje posten innehåller texten <strong>&quot;y&quot;</strong>. Om avgränsaren är tom returneras en ny lista som består av en post med ett <strong>STRING</strong>-fält som innehåller indatatexten. Om indata är tomt returneras en tom ny lista.
+Om antingen indata eller avgränsaren är ospecificerad (null) kastas ett programundantag.</td>
+</tr>
+<tr>
 <td>SPLITLIST (list, number)</td>
 <td>Delar upp den angivna listan i batchar som var och en innehåller det definierade antalet poster. Returnerar resultatet som en ny lista med batchar som innehåller följande element:
 <ul>
@@ -399,12 +405,13 @@ I samband med körning returnerar fälten <strong>Label</strong> och <strong>Des
 </ul>
 I samband med körning returnerar fälten <strong>Label</strong> och <strong>Description</strong> värden baserade på formatets språkinställningar och angivet språk. Fältet <strong>Is translated</strong> anger att fältet <strong>Label</strong> har översatts till det angivna språket.
 </td>
-<td>Till exempel kan du använda datakälltypen <strong>Calculated field</strong> för att konfigurera datakällor för <strong>enumType_de</strong> och <strong>enumType_deCH</strong> till uppräkning av datamodell <strong>enumType</strong>:
+<td>Till exempel kan du använda datakälltypen <strong>Calculated field</strong> för att konfigurera datakällor för <strong>enumType_de</strong> och <strong>enumType_deCH</strong> till uppräkning av datamodell <strong>enumType</strong>.
 <ul>
 <li>enumType_de = <strong>LISTOFFIELDS</strong> (enumType, &quot;de&quot;)</li>
 <li>enumType_deCH = <strong>LISTOFFIELDS</strong> (enumType, &quot;de-CH&quot;)</li>
 </ul>
-I det här fallet kan du använda följande uttryck för att få etiketten på uppräkningsvärdet på tyska (Schweiz), om denna översättning är tillgänglig. Om tyska Schweiz inte är tillgänglig blir etiketten på tyska (Tyskland): <strong>IF (inte (enumType_deCH.IsTranslated) enumType_de. Etikett, enumType_deCH.Label)</strong>.
+<p>I det här fallet kan du använda följande uttryck för att få etiketten på uppräkningsvärdet på tyska (Schweiz), om denna översättning är tillgänglig. Om schweizisk tysk översättning inte är tillgänglig är etiketten på tyska.</p>
+IF (NOT (enumType_deCH.IsTranslated), enumType_de.Label, enumType_deCH.Label)
 </td>
 </tr>
 <tr>
@@ -432,7 +439,7 @@ I det här fallet kan du använda följande uttryck för att få etiketten på u
 <tr>
 <td>FILTER (list, villkor)</td>
 <td>Returnera den angivna listan efter att frågan har ändrats för att filtrerats enligt de angivna villkoren. Till skillnad från funktionen <strong>WHERE</strong> tillämpas angivet villkor på alla ER-datakällor av typen <strong>Table records</strong> på databasnivå. Listan och villkoret kan definieras med hjälp av tabeller och relationer.</td>
-<td>Om <strong>Vendor</strong> konfigureras som en ER-datakälla som refererar till registret VendTable, returnerar <strong>FILTER(Vendors, Vendors.VendGroup = &quot;40&quot;)</strong> en lista över just de leverantörer som ingår i leverantörsgrupp 40. Om <strong>Leverantör</strong> konfigureras som en ER-datakälla som hänvisar till registret <strong>VendTable</strong> och om <strong>parmVendorBankGroup</strong> konfigureras som en ER-datakälla som returnerar ett värde av datatypen <strong>Sträng</strong>, <strong>FILTER (Vendor.'&lt;Relations'.VendBankAccount, Vendor.'&lt;Relations'.VendBankAccount.BankGroupID = parmVendorBankGroup)</strong> returnerar en lista över just de leverantörskonton som tillhör en viss bankgrupp.</td>
+<td>Om <strong>Vendor</strong> konfigureras som en ER-datakälla som refererar till registret VendTable, returnerar <strong>FILTER(Vendors, Vendors.VendGroup = &quot;40&quot;)</strong> en lista över just de leverantörer som ingår i leverantörsgrupp 40. Om <strong>Leverantör</strong> konfigureras som en ER-datakälla som hänvisar till registret och om <strong>parmVendorBankGroup</strong> konfigureras som en ER-datakälla som returnerar ett värde av datatypen <strong>Sträng</strong>, returnerar <strong>FILTER (Vendor.'&lt;Relations'.VendBankAccount, Vendor.'&lt;Relations'.VendBankAccount.BankGroupID = parmVendorBankGroup)</strong> en lista över just de leverantörskonton som tillhör en viss bankgrupp.</td>
 </tr>
 </tbody>
 </table>
@@ -446,12 +453,69 @@ I det här fallet kan du använda följande uttryck för att få etiketten på u
 | NOT (condition) | Returnerar det omvända logiska värdet för det definierade kriteriet. | **NOT (SANT)** returnerar **FALSKT**. |
 | OCH (villkor 1\[, villkor 2, …\]) | Returnerar **SANT** om *alla* definierade kriterier är sanna. Annars returneras **FALSKT**. | **AND (1=1, "a"="a")** returnerar **SANT**. **AND (1=2, "a"="a")** returnerar **FALSKT**. |
 | ELLER (villkor 1\[, villkor 2, ...\]) | Returnerar **FALSKT** om *alla* definierade kriterier är falska. Returnerar **SANT** om *något* av de definierade kriterierna är sant. | **OR (1=2, "a"="a")** returnerar **SANT**. |
+| VALUEIN (indata, lista, uttryck för listobjekt) | Bestämmer om specifik indata matchar något värde för ett objekt i den angivna listan. Returnerar **TRUE** om angiven indata matchar resultatet av det angivna uttrycket för minst en post. Annars returneras **FALSKT**. Parametern **indata** representerar sökvägen till ett datakällelement. Värdet för det här elementet kommer att matchas. Parametern **lista** representerar sökvägen till ett datakällelement av typ av postlista som en lista med poster som innehåller ett uttryck. Värdet för det här elementet ska jämföras med angiven indata. Argumentet **Uttryck för listobjekt** representerar ett uttryck som antingen refererar till eller innehåller ett enskilt fält för den angivna listan som ska användas för matchningen. | För exempel se avsnittet [Exempel: VALUEIN (indata, lista, uttryck för listobjekt)](#examples-valuein-input-list-list-item-expression) som följer. |
+
+#### <a name="examples-valuein-input-list-list-item-expression"></a>Exempel: VALUEIN (indata, lista, uttryck för listobjekt)
+I allmänhet översätts funktionen **VALUEIN** till en uppsättning **ELLER**-villkor:
+
+(indata = list.item1.value) ELLER (indata = list.item2.value) ELLER...
+
+##### <a name="example-1"></a>Exempel 1
+Du kan definiera följande datakälla i din modellmappning: **lista** (**beräknat fält**-typ). Datakällan innehåller uttrycket **SPLIT ("a,b,c", ",")**.
+
+När en datakälla anropas som konfigurerats som uttrycket **VALUEIN ("B", List, List.Value)** returnerar det **SANT**. I det här fallet översätts funktionen **VALUEIN** till följande uppsättning villkor:
+
+**(("B" = "a") eller ("B" = "b") eller ("B" = "c"))**, där **("B" = "b")** är lika med **SANT**
+
+När en datakälla anropas som konfigurerats som uttrycket **VALUEIN ("B", List, LEFT(List.Value, 0))** returnerar det **FALSKT**. I det här fallet översätts funktionen **VALUEIN** till följande villkor:
+
+**("B" = "")**, vilket inte är lika med **SANT**
+
+Observera att den övre gränsen för antalet tecken i texten i sådant tillstånd är 32 768 tecken. Därför bör du inte skapa datakällor som eventuellt överskrider begränsningen vid körning. Programmet ska sluta köras om gränsen överskrids och ett undantag genereras. Till exempel kan detta inträffa om datakällan har konfigurerats som **WHERE (List1, VALUEIN (List1.ID, List2, List2.ID)** och listorna **List1** och **List2** innehåller en stor mängd poster.
+
+I vissa fall kan funktionen **VALUEIN** översätts till en databas med hjälp av operatören **EXISTS JOIN**. Det här problemet uppstår när funktionen **FILTER** används och följande villkor uppfylls:
+
+- Alternativet **FRÅGA EFTER FRÅGA** är inte markerat för datakällan för funktionen **VALUEIN** som refererar till listan över poster. (Inga ytterligare villkor ska kopplas till den här datakällan vid körning)
+- Inga kapslade uttryck är konfigurerade för funktionen **VALUEIN** som refererar till listan över poster.
+- Ett listobjekt för funktionen **VALUEIN** refererar till ett fält (inte ett uttryck eller en metod) i den angivna datakällan.
+
+Överväg att använda det här alternativet i stället för funktionen **WHERE** som beskrivs tidigare i det här exemplet.
+
+##### <a name="example-2"></a>Exempel 2
+
+Du definierar följande datakällor i din modellmappning:
+
+- **In** (typen **Registerposter**), som refererar till tabellen Intrastat
+- **Port** (typen **Registerposter**), som refererar till tabellen IntrastatPort
+
+När en datakälla anropas som konfigurerats som uttrycket **FILTER (In, VALUEIN(In.Port, Port, Port.PortId)** genereras följande SQL-sats för att returnera filtrerade poster i Intrastat-registret:
+
+```
+select … from Intrastat
+exists join TableId from IntrastatPort
+where IntrastatPort.PortId = Intrastat.Port
+```
+
+För fälten **dataAreaId** genereras den slutliga SQL-satsen utifrån operatör **IN**.
+
+##### <a name="example-3"></a>Exempel 3
+
+Du definierar följande datakällor i din modellmappning:
+
+- **Le** (typen **beräknat fält**), som innehåller uttrycket **SPLIT ("DEMF,GBSI,USMF", ",")**
+- **In** (typen **Registerposter**), som refererar till Intrastat-registret och för vilka alternativet **mellan företag** aktiveras
+
+När en datakälla anropas som konfigurerats som den **FILTER (i VALUEIN (Le.Value In.dataAreaId Le,)**, slutgiltiga SQL-satsen innehåller följande villkor:
+
+```
+Intrastat.dataAreaId IN ('DEMF', 'GBSI', 'USMF')
+```
 
 ### <a name="mathematical-functions"></a>Matematiska funktioner
 
-| Funktion | Beskrivning | Exempel |
+| Funktion | beskrivning | Exempel |
 |----------|-------------|---------|
-| ABS (number) | Returnera absolutvärdet av det angivna numret. (Med andra ord returnera tal utan tecken). | **ABS (-1)** returnerar **1**. |
+| ABS (number) | Returnera absolutvärdet av det angivna numret. (Med andra ord returnera tal utan tecken.) | **ABS (-1)** returnerar **1**. |
 | POWER (number, power) | Returnerar resultatet av en ökning av det definierade positiva talet till den definierade kraften. | **POWER (10, 2)** returnerar **100**. |
 | NUMBERVALUE (string, decimal separator, digit grouping separator) | Konverterar den definierade strängen till ett tal. Den angivna decimalavgränsaren används mellan heltal och decimaler i ett decimaltal. Den angivna gruppavgränsaren används som tusentalsavgränsare. | **NUMBERVALUE("1 234,56", ",", " ")** returnerar värdet **1234.56**. |
 | VALUE (string) | Konverterar den definierade strängen till ett tal. Kommatecken och punkter (.) betraktas som decimalavgränsare och ett inledande bindestreck (-) används som ett negativt tecken. Meddela att ett undantag inträffat om den specificerade strängen innehåller andra icke-numeriska tecken. | **VALUE ("1 234,56")** kastar ett undantag. |
@@ -539,7 +603,7 @@ I det här fallet kan du använda följande uttryck för att få etiketten på u
 </tr>
 <tr>
 <td>REPLACE (string, pattern, replacement, regular expression flag)</td>
-<td>Om flaggan för det definierade reguljära uttrycket har värdet <strong>sant</strong> returneras den definierade strängen efter att ett reguljärt uttryck som definierats som ett mönsterargument för den här funktionen har tillämpats. Uttrycket används för att hitta tecken som måste ersättas. Tecknen i det definierade utbytesargumentet används för att ersätta tecken som hittas. Om flaggan för det definierade reguljära uttrycket har värdet <strong>falskt</strong>uppför sig den här funktionen på samma sätt som <strong>ÖVERSÄTT</strong>.</td>
+<td>Om flaggan för det definierade <strong>reguljära uttrycket</strong> har parametern <strong>sant</strong>, returneras den definierade strängen efter att ett reguljärt uttryck som definierats som ett <strong>mönsterargument</strong> för den här funktionen har tillämpats. Uttrycket används för att hitta tecken som måste ersättas. Tecknen i det definierade <strong>utbytesargumentet</strong> används för att ersätta tecken som hittas. Om flaggan för det definierade <strong>reguljära uttrycket</strong> har parametern <strong>falskt</strong>, uppför sig den här funktionen på samma sätt som <strong>ÖVERSÄTT</strong>.</td>
 <td><strong>REPLACE (&quot;+1 923 456 4971&quot;, &quot;[^0-9]&quot;, &quot;&quot;, sant)</strong> tillämpar ett standarduttryck som avlägsnar alla icke-numeriska symboler och returnerar <strong>&quot;19234564971&quot;</strong>. <strong>REPLACE (&quot;abcdef&quot;, &quot;cd&quot;, &quot;GH&quot;, falskt)</strong> ersätter mönstret <strong>&quot;cd&quot;</strong> med strängen <strong>&quot;GH&quot;</strong> och returnerar <strong>&quot;abGHef&quot;</strong>.</td>
 </tr>
 <tr>
@@ -549,7 +613,7 @@ I det här fallet kan du använda följande uttryck för att få etiketten på u
 </tr>
 <tr>
 <td>FORMAT (string 1, string 2[, string 3, …])</td>
-<td>Returnera den definierade strängen efter att den har formaterats genom att byta ut alla förekomster av <strong>%N</strong> med argumentet <em>n</em>. Argumenten är strängar. Om ett argument inte har angetts för en parameter returneras parametern som <strong>&quot;%N&quot;</strong> i strängen. För värden av typen <strong>real</strong> är strängkonverteringen begränsad till två decimaler.</td>
+<td>Returnera den definierade strängen efter att den har formaterats genom att byta ut alla förekomster av <strong>%N</strong> med argumentet <em>n</em>. Argumenten är strängar. Om ett argument inte har angetts för en parameter, returneras parametern som <strong>&quot;%N&quot;</strong> i strängen. För värden av typen <strong>real</strong> är strängkonverteringen begränsad till två decimaler.</td>
 <td>I det här exemplet returnerar datakällan <strong>PaymentModel</strong> listan över kundposter via komponenten <strong>Customer</strong> och bearbetar datumvärdet via fältet <strong>ProcessingDate</strong>.
 <p><a href="./media/picture-format-datasource.jpg"><img src="./media/picture-format-datasource.jpg" alt="PaymentModel data source" class="alignnone wp-image-290751 size-full" width="293" height="143" /></a></p>
 <p>I ER-formatet, som har utformats för att skapa en elektronisk fil för utvalda kunder, väljs <strong>PaymentModel</strong> som en datakälla och styr processflödet. Ett undantag meddelas användaren när en vald kund stoppas för det datum då rapporten bearbetas. Formeln, som utformats för denna typ av bearbetningsstyrning, kan endast använda följande resurser:</p>
@@ -562,7 +626,7 @@ I det här fallet kan du använda följande uttryck för att få etiketten på u
 <li>Finance and Operations-etikett SYS18389, som har följande text:
 <ul>
 <li><strong>För språket EN-US:</strong> &quot;Customer %1 is stopped for %2.&quot;</li>
-<li><strong>För språket SV-SE:</strong> &quot;Gäldenären &#39;%1&#39; spärras för %2.&quot;</li>
+<li><strong>För språket SV-SE:</strong> &quot;Gäldenären "%1" spärras för %2.&quot;</li>
 </ul></li>
 </ul>
 <p>Här följer formeln som kan utformas:</p>
@@ -573,8 +637,8 @@ I det här fallet kan du använda följande uttryck för att få etiketten på u
 <p>&quot;Nichts zu drucken. Gäldenären 'Litware Butik' stoppad 2015-12-17.".&quot;</p>
 <blockquote>[!NOTE] Följande syntax tillämpas i ER-formler för etiketter:
 <ul>
-<li><strong>För etiketter från Finance and Operations-resurser:</strong> <strong>@&quot;X&quot;</strong>, där X är etikettens ID i programobjektträdet (Application Object Tree, AOT)</li>
-<li><strong>För etiketter i ER-konfigurationer:</strong> <strong>@&quot;GER_LABEL:X&quot;</strong>, där X är etikettens ID i ER-konfigurationen</li>
+<li><strong>För etiketter från Finance and Operations-resurser:</strong> <strong>@&quot;X&quot;</strong>, där <strong>X</strong> är etikettens ID i programobjektträdet (Application Object Tree, AOT)</li>
+<li><strong>För etiketter i ER-konfigurationer:</strong> <strong>@&quot;GER_LABEL:X&quot;</strong>, där <strong>X</strong> är etikettens ID i ER-konfigurationen</li>
 </ul>
 </blockquote>
 </td>
@@ -616,7 +680,7 @@ I det här fallet kan du använda följande uttryck för att få etiketten på u
 </tr>
 <tr>
 <td>GUIDVALUE (indata)</td>
-<td>Konvertera angivna indata för datatypen <strong>sträng</strong> till ett dataobjekt i datatypen <strong>GUID</strong>.</td>
+<td>Konvertera angivna indata för datatypen <strong>sträng</strong> till ett dataobjekt i datatypen <strong>GUID</strong>.<blockquote>[!NOTE] För att göra en konvertering i motsatt riktning (d.v.s. konvertera angiven indata för datatypen <strong>GUID</strong> till ett dataobjekt i datatypen <strong>sträng</strong>), kan du använda funktionen <strong>TEXT()</strong>.</blockquote></td>
 <td>Du definierar följande datakällor i din modellmappning:
 <ul>
 <li><strong>myID</strong> (typen <strong>beräknat fält</strong>), som innehåller uttrycket <strong>GUIDVALUE (&quot;AF5CCDAC F728-4609-8C8B-A4B30B0C0AA0&quot;)</strong></li>
@@ -637,7 +701,7 @@ När du har definierat dessa datakällor kan du använda ett uttryck såsom <str
 
 | Funktion | beskrivning | Exempel |
 |----------|-------------|---------|
-| TEXT (input) | Returnera den specificerade indatan efter att den har konverteras till en textsträng formaterad enligt serverns lokala inställningar för den aktuella instansen av Finance and Operations. För värden av typen **real** är strängkonverteringen begränsad till två decimaler. | Om serverns lokala inställningar för Finance and Operations anges som **EN-US**, returnerar **TEXT (NOW ())** aktuellt Finance and Operations-sessionsdatum, December 17, 2015, som textsträngen **12/17/2015 07:59:23 AM**. **TEXT (1/3)** returnerar **"0.33"**. |
+| TEXT (input) | Returnera den specificerade indatan efter att den har konverteras till en textsträng formaterad enligt serverns lokala inställningar för den aktuella instansen av Finance and Operations. För värden av typen **real** är strängkonverteringen begränsad till två decimaler. | Om serverns lokala inställningar för Finance and Operations anges som **EN-US**, returnerar **TEXT (NOW ())** aktuellt Finance and Operations-sessionsdatum, 17 December 2015, som textsträngen **"12/17/2015 07:59:23 AM"**. **TEXT (1/3)** returnerar **"0.33"**. |
 | QRCODE (sträng) | Returnera en QR-kod (Quick Response Code ) i binärt base64-format för den specificerade strängen. | **QRCODE ("Sample text")** returnerar **U2FtcGxlIHRleHQ =**. |
 
 ### <a name="data-collection-functions"></a>Datainsamlingsfunktioner
@@ -645,11 +709,11 @@ När du har definierat dessa datakällor kan du använda ett uttryck såsom <str
 | Funktion | beskrivning | Exempel |
 |----------|-------------|---------|
 | FORMATELEMENTNAME () | Returnera namnet på det aktuella formatets element. Returnera en tom sträng när flaggan **Samla in utdatadetaljer** är avstängd för aktuella filer. | Se uppgiftsguiden **ER Använd data från formatutmatningen för inventering och summering** (ingår i affärsprocessen **Införskaffa/utveckla komponenter för IT-tjänster/-lösningar**) för mer information om hur du använder dessa funktioner. |
-| SUMIFS (nyckelsträng för summering, kriterispann1, kriterievärde1-sträng \[, kriteriespann2-sträng, kriterievärde2-sträng, …\]) | Returnera summan av XML-nodvärden (där namnet definierats som en nyckel) och som samlats in i samband med denna formatkörning, och som uppfyller angivna villkor (par med intervall och värden). Returnera ett **0** (noll) värde när flaggan **Samla in utdatadetaljer** i de aktuella filerna är avstängd. | |
-| SUMIF (nyckelsträng för summering, sträng för kriteriespann, värdesträng för kriterier) | Returnera summan av XML-nodvärden (där namnet definierats som en nyckel) och som samlats in i samband med denna formatkörning, och som uppfyller angivna villkor (intervall och värde). Returnera ett **0** (noll) värde när flaggan **Samla in utdatadetaljer** i de aktuella filerna är avstängd. | |
-| COUNTIFS (sträng för kriteriespann1, sträng för kriterievärde1 \[, sträng för kriteriespann2, sträng för kriterievärde2, …\]) | Returnerar antalet XML-noder som samlats in i samband med denna formatkörning, och som uppfyller de angivna villkoren (par med intervall och värden). Returnera ett **0** (noll) värde när flaggan **Samla in utdatadetaljer** i de aktuella filerna är avstängd. | |
-| COUNTIF (intervallsträng för kriterier, värdesträng för kriterier) | Returnera antalet XML-noder som samlats in i samband med denna formatkörning, och som uppfyller angivet villkor (intervall och värde). Returnera ett **0** (noll) värde när flaggan **Samla in utdatadetaljer** i de aktuella filerna är avstängd. | |
-| COLLECTEDLIST (sträng för kriteriespann1, sträng för kriterievärde1 \[, sträng för kriteriespann2, sträng för kriterievärde2, …\]) | Returnera en lista av värden för XML-noder som samlats in i samband med denna formatkörning, och som uppfyller de angivna villkoren (intervall och värde). Returnera en tom lista när flaggan **Samla in utdatadetaljer** är avstängd för aktuella filer. | |
+| SUMIFS (nyckelsträng för summering, kriterispann1, kriterievärde1-sträng \[, kriteriespann2-sträng, kriterievärde2-sträng, …\]) | Returnera summan av värden som samlades in för XML-noder (där namnet definierats som en nyckel) när formatet kördes och som uppfyller angivna villkor (par med intervall och värden). Returnera ett **0** (noll) värde när flaggan **Samla in utdatadetaljer** i de aktuella filerna är avstängd. | |
+| SUMIF (nyckelsträng för summering, sträng för kriteriespann, värdesträng för kriterier) | Returnera summan av värden som samlades in för XML-noder (där namnet definierats som en nyckel) när formatet kördes och som uppfyller det angivna villkoret (ett intervall och värde). Returnera ett **0** (noll) värde när flaggan **Samla in utdatadetaljer** i de aktuella filerna är avstängd. | |
+| COUNTIFS (sträng för kriteriespann1, sträng för kriterievärde1 \[, sträng för kriteriespann2, sträng för kriterievärde2, …\]) | Returnerar antalet XML-noder som samlats in i när formatet kördes och som uppfyller de angivna villkoren (par med intervall och värden). Returnera ett **0** (noll) värde när flaggan **Samla in utdatadetaljer** i de aktuella filerna är avstängd. | |
+| COUNTIF (intervallsträng för kriterier, värdesträng för kriterier) | Returnerar antalet XML-noder som samlats in i när formatet kördes och som uppfyller det angivna villkoret (ett intervall och värde). Returnera ett **0** (noll) värde när flaggan **Samla in utdatadetaljer** i de aktuella filerna är avstängd. | |
+| COLLECTEDLIST (sträng för kriteriespann1, sträng för kriterievärde1 \[, sträng för kriteriespann2, sträng för kriterievärde2, …\]) | Returnerar listan över värden som samlats för XML-noder när formatet kördes och som uppfyller de angivna villkoren (ett intervall och värde). Returnera en tom lista när flaggan **Samla in utdatadetaljer** är avstängd för aktuella filer. | |
 
 ### <a name="other-business-domainspecific-functions"></a>Andra (företagsdomänspecifika) funktioner
 
@@ -667,6 +731,9 @@ När du har definierat dessa datakällor kan du använda ett uttryck såsom <str
 | FA\_BALANCE (Anläggningstillgångskod, värdemodellkod, rapporteringsår, rapporteringsdatum) | Returnera den förberedda databehållaren med anläggningstillgångssaldo. Rapporteringsåret måste anges som ett värde för Finance and Operations-uppräkningen **AssetYear**. | **FA\_SUM ("COMP-000001", "Current", AxEnumAssetYear.ThisYear, SESSIONTODAY ())** returnerar den förberedda databehållaren för belopp tillhörande anläggningstillgången **"COMP-000001"** med värdemodellen **"Current"** på aktuellt Finance and Operations-sessionsdatum. |
 | TABLENAME2ID (string) | Returnera en heltalsrepresentation av ett register-ID för ett givet registernamn. | **TABLENAME2ID ("Intrastat")** returnerar **1510**. |
 | ISVALIDCHARACTERISO7064 (string) | Returnerar booleskt värde **TRUE** när en specificerad sträng representerar ett giltigt internationellt bankkontonummer (IBAN). Annars returnera det booleska värdet **FALSE**. | **ISVALIDCHARACTERISO7064 ("AT61 1904 3002 3457 3201")** returnerar **SANT**. **ISVALIDCHARACTERISO7064 ("AT61")** returnerar **FALSKT**. |
+| NUMSEQVALUE (nummerseriekod, område, områdes-ID) | Returnerar det nya genererade värdet för en nummerserie, utifrån angiven nummerseriekod, område och områdes-ID. Område måste anges som ett värde för uppräkningen **ERExpressionNumberSequenceområdes-IDType** (**delad**, **juridisk person** eller **företag**). För området **delad**, ange en tom sträng som områdes-ID. För området **företag** och **juridisk person**, ange företagskoden som områdes-ID. För området **företag** och **juridisk person**, om du anger en tom sträng som områdes-ID, används aktuella företagskoden. | Du definierar följande datakällor i din modellmappning:<ul><li>**enumScope** (typen **Dynamics 365 for Operations-uppräkning**), som refererar till uppräkningen **ERExpressionNumberSequenceScopeType**</li><li>**NumSeq** (typen **beräknat fält**), som innehåller uttrycket **NUMSEQVALUE (”Gene\_1”, enumScope.Company, ””)**</li></ul>När datakällan **NumSeq** kallas, returneras det nya genererade värdet för nummerserien **Gen\_1** som har konfigurerats för det företag som tillhandahåller den kontext som ER-formatet körs under. |
+| NUMSEQVALUE (nummerseriekod) | Returnerar det nya genererade värdet för en nummerserie, baserat på den angivna nummerserien, området **företag** och koden för det företag som tillhandahåller kontexten som ER-formatet kör under (som områdes-ID). | Du kan definiera följande datakälla i din modellmappning: **NumSeq** (**beräknat fält**-typ). Datakällan innehåller uttrycket **NUMSEQVALUE ("Gene\_1")**. När datakällan **NumSeq** kallas, returneras det nya genererade värdet för nummerserien **Gen\_1** som har konfigurerats för det företag som tillhandahåller den kontext som ER-formatet körs under. |
+| NUMSEQVALUE (nummerseriens post-ID) | Returnerar det nya genererade värdet för en nummerserie, utifrån angiven nummerseries post-ID. | Du definierar följande datakällor i din modellmappning:<ul><li>**LedgerParms** (**tabell** typ), som refererar till tabellen LedgerParameters</li><li>**NumSeq** (typen **beräknat fält**), som innehåller uttrycket **NUMSEQVALUE (LedgerParameters.'numRefJournalNum()'.NumberSequenceId)**</li></ul>När datakällan **NumSeq** kallas, returneras det nya genererade värdet för nummerserien som har konfigurerats i Redovisningsparametrar för det företag som tillhandahåller den kontext som ER-formatet körs under. Den här nummerserien identifierar unikt journaler och fungerar som ett batchnummer som kopplar ihop transaktionerna. |
 
 ### <a name="functions-list-extension"></a>Utöka funktionslista
 
@@ -674,7 +741,6 @@ ER stöder utökning av listfunktioner som används i ER-uttryck. Vissa tekniska
 
 ## <a name="additional-resources"></a>Ytterligare resurser
 
-[Översikt över elektronisk rapportering](general-electronic-reporting.md)
-
-[Utöka listan över elektronisk rapportering (ER)](general-electronic-reporting-formulas-list-extension.md)
+- [Översikt över elektronisk rapportering](general-electronic-reporting.md)
+- [Utöka listan över elektronisk rapportering (ER)](general-electronic-reporting-formulas-list-extension.md)
 

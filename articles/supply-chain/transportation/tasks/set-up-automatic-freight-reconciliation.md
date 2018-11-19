@@ -3,7 +3,7 @@ title: "Ställ in automatisk fraktavstämning"
 description: "Denna procedur visar hur du ställer in data för automatisk fraktavstämning."
 author: ShylaThompson
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 10/16/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: shylaw
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: 7e0a5d044133b917a3eb9386773205218e5c1b40
-ms.openlocfilehash: 97f0c4d8fe06ab2fc252b9543cb688306214c79f
+ms.sourcegitcommit: d990efd7c929b15d57d64e850bc3308349abb978
+ms.openlocfilehash: b7772ad779495b36941a3dc86cc456d80a964467
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/17/2018
 
 ---
 # <a name="set-up-automatic-freight-reconciliation"></a>Ställ in automatisk fraktavstämning
@@ -36,9 +36,9 @@ Denna procedur visar hur du ställer in data för automatisk fraktavstämning. D
     * Rehabiliteringstypen anger hur frakträkningar och transportfakturor ska matchas.  
 2. Klicka på Ny.
 3. Ange ett värde i fältet Fredlighet Bill typ.
-4. Ange "Microsoft.Dynamits.Ax.Tims.Bell." i fältet Engående assembler.
+4. Ange "Microsoft.Dynamics.Ax.Tms.dll" i fältet Motorsammansättning.
     * Detta är jodbiblioteket för den vanliga förbränningsmotorn för transportledningen.  
-5. Ange "Microsoft.Dynamits.Ax.Tims.dl" i fältet Engående lass.
+5. Ange "Microsoft.Dynamics.Ax.Tms.Bll.GenericNormalizer" i fältet Motorklass.
     * Detta är den vanliga klassificeringen för transportledningen.  
 6. Klicka på Ny.
 7. Välj det värde som ska matcha på frakträkningen och transportföretag i fältet Deskription.  

@@ -1,9 +1,9 @@
 ---
-title: "Ställ in kundbonusprogram"
-description: "I det här avsnittet beskrivs hur du ställer in ett bonusprogram. Bonusprogram kan öka kundlojaliteten genom att kunderna belönas för att köpa produkter i dina butiker. I Microsoft Dynamics 365 for Retail kan du ställa in enkla eller komplexa bonusprogram som gäller för dina juridiska personer i en butikskanal."
+title: "Lojalitetsöversikt"
+description: "Det här avsnittet beskriver lojalitetsfunktioner i Microsoft Dynamics 365 for Retail och motsvarande inställningssteg för att hjälpa återförsäljaren att snabbt komma igång med deras bonusprogram."
 author: scott-tucker
 manager: AnnBe
-ms.date: 06/20/2017
+ms.date: 10/24/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-365-retail
@@ -20,23 +20,20 @@ ms.author: scotttuc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0, Retail July 2017 update
 ms.translationtype: HT
-ms.sourcegitcommit: 5098fb3339403b6f2779dfe3bb7ef5c4ca78051f
-ms.openlocfilehash: 8aa29282f80870b93d119c095bb95c3bcfbfc682
+ms.sourcegitcommit: 11ad4168c7e5ddc63608d1c86430e4a6936d5e30
+ms.openlocfilehash: 78318849873f396c662c5250f0e86146279cc3a5
 ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 10/26/2018
 
 ---
 
-# <a name="set-up-customer-loyalty-programs"></a>Ställ in kundbonusprogram
+# <a name="loyalty-overview"></a>Lojalitetsöversikt
 
 [!include [banner](includes/banner.md)]
 
-I det här avsnittet beskrivs hur du ställer in ett bonusprogram. Bonusprogram kan öka kundlojaliteten genom att kunderna belönas för att köpa produkter i dina butiker. I Microsoft Dynamics 365 for Retail kan du ställa in enkla eller komplexa bonusprogram som gäller för dina juridiska personer i en butikskanal.
+Bonusprogram kan öka kundlojaliteten genom att kunderna belönas för deras samverkan med återförsäljarens varumärke. I Microsoft Dynamics 365 for Retail kan du ställa in enkla eller komplexa bonusprogram som gäller för dina juridiska personer i en butikskanal. Det här avsnittet beskriver lojalitetsfunktioner i Microsoft Dynamics 365 for Retail och motsvarande inställningssteg för att hjälpa återförsäljaren att snabbt komma igång med deras bonusprogram.
 
-<a name="loyalty-features"></a>Bonusfunktioner
-----------------
-
-Du kan ställa in bonusprogram, så att de omfattar följande alternativ:
+Du kan ställa in bonusprogram, så att de omfattar följande alternativ.
 
 -   Ställ in flera typer av belöningar som du erbjuder i dina bonusprogram och spåra deltagandet i dina bonusprogram.
 -   Ställa in bonusprogram för att identifiera de olika bonusersättningar som du erbjuder. Du kan inkludera bonusprogramnivåer om du vill erbjuda vara större och belöningar för kunder som butik vanligare eller håller mer pengar i din butik.
@@ -45,7 +42,7 @@ Du kan ställa in bonusprogram, så att de omfattar följande alternativ:
 -   Justera förmånskort eller överför bonussaldon manuellt från ett kort till ett annat för att kunna lagra eller belöna en kund.
 
 ## <a name="setting-up-loyalty-programs"></a>Ställa in bonusprogram
-Du måste ställa in flera komponenter om du vill aktivera bonusfunktionen i Dynamics 365 for Retail. I bilden nedan visas lojalitetskomponenterna och hur de är relaterade till varandra. ![Processflöde för bonus](./media/loyaltyprocess.gif)
+Du måste ställa in flera komponenter om du vill aktivera bonusfunktionen i Dynamics 365 for Retail. I bilden nedan visas lojalitetskomponenterna och hur de är relaterade till varandra. ![Processflöde för bonus](./media/loyaltyprocess.gif "Lojalitetskomponenter och hur de är relaterade till varandra")
 
 ## <a name="loyalty-components"></a>Bonuskomponenter
 I tabellen nedan beskrivs varje komponent och var den används i lojalitetinställningarna.
@@ -70,11 +67,63 @@ I tabellen nedan beskrivs de processer som måste köras för att skicka bonusko
 |--------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------|
 | 1050 (information om förmåner)           | Kör den här processen för att skicka förmånskonfigurationsdata från Dynamics 365 for Retail till butikerna. Det är en bra idé att tidsplanera den här processen om du vill köra den ofta, så att bonusdata överförs till alla butiker.                                                                                                                                                                                               | Distributionsschema                |
 | Bearbeta förmånsscheman              | Kör den här processen för att associera förmånsscheman med de butikskanaler som förmånsschemat är tilldelat till. Den här processen kan schemaläggas för att köras som en batchprocess. Du måste köra den här processen, om du ändrar bonuskonfigurationsdata, till exempel bonusscheman, bonusprogram, eller bonusbelöningspoäng.                                                                                               | Bearbeta förmånsscheman              |
-| Bearbeta förmånstransaktioner offline | Kör den här processen om du vill uppdatera förmånskort för att inkludera transaktioner som har bearbetats offline. Den här processen gäller bara om kryssrutan **Tjäna offline** är markerad på sidan **Gemensamma butiksparametrar** så att belöningar kan tjänas offline.                                                                                                                                               | Bearbeta förmånstransaktioner offline |
+| Bearbeta förmånstransaktioner offline | Kör den här processen om du vill uppdatera förmånskort för att inkludera transaktioner som har bearbetats offline. Den här processen gäller bara om kryssrutan **Tjäna offline** markeras på sidan **Gemensamma butiksparametrar** så att belöningar kan tjänas offline.                                                                                                                                               | Bearbeta förmånstransaktioner offline |
 | Uppdatera skikt för förmånskort            | Kör den här processen för att utvärdera kundens inkomstaktivitet mot nivåreglerna för ett bonusprogram och uppdatera kundens nivåstatus. Den här processen behövs bara om du ändrar nivåreglerna i bonusprogrammen och du vill tillämpa de uppdaterade reglerna retroaktivt för förmånskort som redan har utfärdats. Den här processen kan köras som en batchprocess eller för enskilda kort. | Uppdatera skikt för förmånskort            |
 
+## <a name="loyalty-enhancements"></a>Förbättringar av bonus
 
+Retail har nya bonusfunktioner som en del av versionen från oktober 2018. Var och en av de nya förbättringarna beskrivs nedan.
 
+- Som en del av ett bonusprogram i tidigare versioner kan återförsäljare skapa olika regler för inkomst och inlösen genom nivåer för att skilja belöningar för kunder på olika nivåer. Återförsäljare kan nu inkludera ”anknytningar” som en del av reglerna för inkomst och inlösen så att viss grupp av kunder kan tillhöra en befintlig nivå, men fortfarande belönas på ett annat sätt. Detta tar bort behovet av att skapa fler nivåer.
+    
+    > [!NOTE]
+    > Inkomstregler inom ett bonusprogram är extra. Till exempel om du skapar en regel som belönar guldmedlem med 10 poäng för varje USD och du även skapar en regel för en kund med ”veteran”-anknytning till en belöning på 5 poäng för varje USD, skulle en veterananvändare som även ingår i guldnivån få 15 poäng för 1 USD eftersom kunden uppfyller kraven för båda raderna. Men om veterankunden inte var guldmedlem skulle han får 5 poäng för varje USD. För att reflektera ändringarna i kanalerna, kör **Bearbeta förmånsscheman** och **1050** (information om förmåner) jobb.
+    
+    ![Anknytningsbaserad inkomst](./media/Affiliation%20based%20earning.png "Anknytningsbaserad inkomst")
 
+- Återförsäljare har ofta särskilda priser för en viss grupp av kunder som de inte vill att bonusprogram ska gälla. T.ex. grossister och anställda som får specialpriser och inga förmånspoäng. Vanligtvis används ”anknytningar” för att ge specialpriser till sådana kundgrupper. Om återförsäljaren vill förhindra att vissa kundgrupper tjänar förmånspoäng kan återförsäljaren ange en eller flera anknytningar under avsnittet **Undantagna anknytningar** i bonusprogrammet. På så sätt när kunder som hör till undantagna anknytningar är befintliga lojalitetsmedlemmar har de inte möjlighet att tjäna förmånspoäng för sina inköp. För att reflektera ändringarna i kanalerna, kör **Bearbeta förmånsscheman** och **1050** (information om förmåner) jobb.
 
+    ![Undantagna anknytningar](./media/Excluded%20affiliations.png "Undanta anknytningar från att tjäna förmånspoäng")
+    
+- Återförsäljare kan generera förmånskortnummer i kanalerna. Innan uppdateringen oktober 2018 kunde återförsäljare använda fysiska förmånskort eller generera ett förmånskort som använder unik kundinformation såsom ett telefonnummer. Om du vill aktivera automatisk generering av förmånskort butiker aktiverar du **generera förmånskortnummer** i funktionsprofilen som är kopplad till butiken. För onlinekanaler, kan återförsäljare använda IssueLoyaltyCard-API för att utfärda förmånskort till kunder. Återförsäljare kan antingen tillhandahålla ett förmånskortnummer till denna API, som används för att generera förmånskortet, eller så kommer systemet att använda förmånskortets nummerserie i Dynamics 365 for Retail. Men om nummerserien inte finns och återförsäljaren inte tillhandahåller ett förmånskortnummer när API anropas visas ett felmeddelande.
+
+![Generera förmånskort](./media/Generate%20loyalty%20card.png "Automatiskt generera förmånskortnummer")
+
+- Intjänad och inlösta förmånspoäng sparas nu för varje transaktion och försäljningsorder mot försäljningsraden, så att samma belopp kan återbetalas eller tas tillbaka vid hela eller delvisa returer. Dessutom ger synliggörs för punkterna på försäljningsraden nivå möjlighet till call center användarna besvara kundfrågor om hur många poäng som har erhållits eller löses in för varje rad. Före ändringen räknades alltid belöningspoängen om vid returer som resulterade i ett annat belopp än det ursprungligt om reglerna för inkomst eller inlösen ändrades och även användarna av kundtjänst syntes inte på poängfördelningen. Poängen visas under formuläret **korttransaktioner** för varje förmånskort.
+    
+- Återförsäljare kan nu ange överlåtelseperiod för varje belöningspoäng. En överlåtelseperiodkonfiguration definierar varaktighet från tjänstedatum, varefter belöningspoängen skulle bli tillgängliga för kunderna. Ej erhållna poäng kan visas i kolumnen **Ej erhållna poäng** på sidan **förmånskort**. Återförsäljare kan dessutom definiera maximal gräns för förmånsbelöningspoäng per förmånskort. Det här fältet kan användas för att minska effekten av förmånskortbedrägeri. När den maximala belöningspoängen har nåtts, kan inte användaren får mer poäng. Återförsäljaren kan välja att blockera sådana kort tills de har undersökts för eventuella bedrägerier. Om återförsäljaren avgör bedrägeri, kan inte återförsäljaren bara spärra förmånskortet för kunden utan även markera kunden som blockerades. För att göra detta, ange egenskapen **spärra kunden för registrering av förmåner** till **Ja** under **alla kunder** på snabbfliken **Retail**. Spärrade kunder kommer inte att utfärda ett förmånskort i någon av kanalerna.
+
+![Överlåtelse och maximal belöningspoäng](./media/Vesting%20and%20maximum%20reward%20points.png "Definierar villkor för överlåtelse och maximal belöningspoäng")
+
+- Anknytningar används för att tillhandahålla särskilda priser och rabatter, men det finns vissa anknytningar som återförsäljare inte vill visa kunderna. Exempelvis en anknytning som heter ”kund som spenderar mycket” kanske inte tas emot väl av kunder. Dessutom finns vissa anknytningar som inte kan hanteras i butiken, till exempel anställda, eftersom du inte vill att kassörerna bestämmer vem som är en medarbetare och därmed ge medarbetarbaserade rabatter. Nu kan återförsäljare välja anknytningar som ska döljas i butikskanalerna. Anknytningar som är markerade som **dölja i kanaler** kan inte visas, läggas till eller tas bort i kassan. Men priser och rabatter som är kopplade till anknytningen kan fortfarande tillämpas på produkterna.
+
+![Dölj anknytningar](./media/Hide%20affiliations.png "Dölj anknytningar i kanaler")
+    
+- Användare av kundtjänst kan nu enklare söka efter en kund med deras information om förmånskort och navigera till kundens förmånskort och transaktionssidan för lojalitetskort från sidan **kundtjänst**. 
+
+![Kundtjänst](./media/Customer%20service.png "Hitta information om förmåner för kunden")
+    
+- Om ett förmånskort skadas behöver ett nytt kort skapas och befintliga poäng överföras till det nya kortet Ersättningskortet har förenklats i den här versionen. Kunder kan dessutom ge bort några eller alla deras förmånspoäng till familj och vänner. När poängen överförs skapas poängjusteringsposter för varje förmånskort. Ersättningskort och funktionen för överföring av saldo kan nås från sidan **förmånskort**.
+
+![Ersätt och överför poängen](./media/Replace%20and%20transfer%20points.png "Ersätt förmånskort eller överför saldo")
+    
+- Återförsäljare kanske vill fånga effektiviteten hos en viss kanal för att registrera kunder i ett bonusprogram. Registreringskällan för förmånskort sparas nu så att återförsäljare kan köra rapporter med dessa data. Registreringskällan inhämtas automatiskt för alla utfärdade förmånskort från MOPS/CPOS eller e-handelsföretagskanaler. För förmånskort som utfärdats av back office-programmet, kan användaren av kundtjänst välja korrekt kanal.
+
+- I tidigare versioner kan återförsäljare använda MOPS/CPOS för att lösa in förmånspoäng för kunder i en butik. Men i dessa versioner, eftersom förmånssaldot visas i förmånspoäng, kan kassören inte visa valutabeloppvärdet som kunde tillämpas mot den aktuella transaktionen. Kassören var tvungen att göra valutakonvertering innan betalning med förmånspoäng. I den aktuella versionen när komponentraderna läggs till transaktionen kan kassören se beloppet som förmånspoängen kan täcka för den aktuella transaktionen vilket gör det enkelt att tillämpa hela eller delar av förmånspoängen till transaktionen. Kassören kan dessutom se poäng som löper ut inom de kommande 30 dagarna så att de kan göra merförsäljning eller korsförsäljning för att motivera kunden att spendera de poäng som snart förfaller på den transaktionen.
+
+![Poäng som omfattas av förmånssaldot](./media/Points%20covered%20by%20loyalty%20balance.png "Visa saldo som omfattas av förmånspoäng")
+
+![Utgångna poäng](./media/Expiring%20points.png "Visa utgångna poäng")
+    
+## <a name="upcoming-enhancements"></a>Kommande förbättringar
+
+Följande funktioner kommer att vara tillgängliga i framtida månadsuppdateringar för Dynamics 365 for Retail.
+    
+- Kunderna vill kunna visa information om deras förmånssaldot på konsumentinriktade kanaler. Dessutom är det viktigt för kassören att kunna visa kundens förmånspoäng i MOPS/CPOS för att snabbt svara på frågor från kunden. I en kommande månadsutgåva ska kunder och kassörer kunna se information om lojalitetshistorik.
+
+- Många återförsäljare kan tilldela förmånspoäng endast utifrån försäljningstransaktionerna men mer kundinriktade återförsäljare vill belöna kunderna för deras åtagande med deras varumärke. Till exempel vill de ge belöningar för att fylla en online-undersökning, besöka en butik, gilla återförsäljare på Facebook, twittra om återförsäljaren med mera. I framtiden kommer vi kommer att lägga till möjligheten att tilldela förmånspoäng för alla kundaktiviteter. För att göra detta kan återförsäljaren definiera en ”andra aktivitetstyp” och definiera inkomstreglerna för aktiviteterna. Vi kommer också att visa en Retail Server API som kan anropas när en aktivitet har identifierats som använder inkomstregeln för att tilldela obligatoriska förmånspoäng.
+
+- Om du vill aktivera Retail Experience i omni-kanal låter vi kunder tjäna och lösa in förmånspoäng i alla kanaler. 
+
+- Gratis eller rabatterad leverans är en mycket motiverande faktor för kunderna att handla online. Om du vill aktivera återförsäljare för att ställa in leveranserbjudanden introducerar vi en ny typ av kampanj där återförsäljaren kan definiera de tröskelvärden som, när de uppfylls, berättigar kunderna till gratis eller rabatterad leverans.
 

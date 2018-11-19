@@ -3,7 +3,7 @@ title: "Synkronisera projektkontrakt och projekt direkt från Project Service Au
 description: "Det här avsnittet beskriver vilka mallar och underliggande uppgifter som används för att synkronisera projektprojektkontrakt och projekt direkt från Microsoft Dynamics 365 for Project Service Automation till Microsoft Dynamics 365 for Finance and Operations."
 author: KimANelson
 manager: AnnBe
-ms.date: 07/20/2018
+ms.date: 10/25/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -18,10 +18,10 @@ ms.author: knelson
 ms.search.validFrom: 2017-12-13
 ms.dyn365.ops.version: AX 7.3.0
 ms.translationtype: HT
-ms.sourcegitcommit: 1d98cbff30620256c9d13e7b4a90314db150e33e
-ms.openlocfilehash: 65a274323a2d95c9c76727c9e40aa7e649e6350a
+ms.sourcegitcommit: 0450326dce0ba6be99aede4ebc871dc58c8039ab
+ms.openlocfilehash: 0889bc233674cb80dd056ac77edb5c936c6633a7
 ms.contentlocale: sv-se
-ms.lasthandoff: 08/09/2018
+ms.lasthandoff: 11/01/2018
 
 ---
 
@@ -95,8 +95,8 @@ När integrationslösningen för Project Service Automation till Finance and Ope
 ## <a name="prerequisites-and-mapping-setup"></a>Ställa in mappning och förutsättningar
 
 - Innan synkroniseringen av projektkontrakt och projekt kan utföras måste du synkronisera konton.
-- I din anslutningsuppsättning, lägg till en integrationsnyckelfältplanering för **msdyn\_organizationalunits** till **msdyn\_namn \[Namn\]**. Du kanske först måste lägga till ett projekt i anslutningsuppsättningen. Mer information om integreringsnycklar finns i [Dataintegrering för Dynamics 365](https://docs.microsoft.com/en-us/common-data-service/entity-reference/dynamics-365-integration).
-- I din anslutningsuppsättning, lägg till en integrationsnyckelfältplanering för **msdyn\_projekt** till **msdynce\_projektnummer \[Projektnummer\]**. Du kanske först måste lägga till ett projekt i anslutningsuppsättningen. Mer information om integreringsnycklar finns i [Dataintegrering för Dynamics 365](https://docs.microsoft.com/en-us/common-data-service/entity-reference/dynamics-365-integration).
+- I din anslutningsuppsättning, lägg till en integrationsnyckelfältplanering för **msdyn\_organizationalunits** till **msdyn\_namn \[Namn\]**. Du kanske först måste lägga till ett projekt i anslutningsuppsättningen. Mer information finns i [integrera data i Common Data Service för appar](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator).
+- I din anslutningsuppsättning, lägg till en integrationsnyckelfältplanering för **msdyn\_projekt** till **msdynce\_projektnummer \[Projektnummer\]**. Du kanske först måste lägga till ett projekt i anslutningsuppsättningen. Mer information finns i [integrera data i Common Data Service för appar](https://docs.microsoft.com/en-us/powerapps/administrator/data-integrator).
 - **SourceDataID** för projektkontrakt och projekt kan uppdateras till ett annat värde eller tas bort från mappningen. Standardmallvärdet är **Project Service Automation**.
 - Mappningen **PaymentTerms** måste uppdateras så att den motsvarar giltiga betalningsvillkor i Finance and Operations. Du kan också ta bort mappningen från projektuppgiften. Den standardinställda värdemappningen har standardvärden för demodata. Tabellen nedan visar värdena i Project Service Automation.
 

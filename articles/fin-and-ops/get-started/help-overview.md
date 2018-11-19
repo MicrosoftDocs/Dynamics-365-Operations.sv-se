@@ -3,7 +3,7 @@ title: "Hjälpsystem för Finance and Operations"
 description: "Det här avsnittet innehåller en översikt över komponenterna i hjälpsystemet för Microsoft Dynamics 365 for Finance and Operations. Det innehåller beskrivningar av hur du kan skapa anpassad dokumentation och utbildning för din organisation."
 author: margoc
 manager: AnnBe
-ms.date: 07/12/2018
+ms.date: 10/10/2018
 ms.topic: article
 ms.prod: 
 ms.service: dynamics-ax-platform
@@ -19,10 +19,10 @@ ms.author: margoc
 ms.search.validFrom: 2016-02-28
 ms.dyn365.ops.version: AX 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: ce9c24a0a89dd4e6a0f3f2c7789b4f553d88d412
-ms.openlocfilehash: 3f18a5d7b7f7639b864f579b758005c7a30803a2
+ms.sourcegitcommit: 75be5c5f675885aececb8ac0b25e699882ea77ab
+ms.openlocfilehash: dc2a3d49041acf42814149eb71d4cc021bdad838
 ms.contentlocale: sv-se
-ms.lasthandoff: 08/13/2018
+ms.lasthandoff: 10/17/2018
 
 ---
 
@@ -45,14 +45,14 @@ Finance and Operations inkluderar ett hjälpsystem baserat på två huvudkompone
 -   En dokumentationsplats
 -   Uppgiftsguider
 
-Du får åtkomst till både hjälp och uppgiftsguider från hjälpfönstret oavsett vilken produkt du använder. Följande skärmdump visar Dynamics 365 for Finance and Operations
+Du kommer åt hjälpen via hjälpfönstret i alla produkter du använder. Följande skärmdump visar Finance and Operations.
 
 ![Hjälpfönster](./media/help-pane-ops-task-guides.png)
 
 Det här avsnittet beskriver hjälpsystemet och förklarar hur du kan skapa anpassad dokumentation och anpassade utbildningsresurser för din organisation.
 
 > [!IMPORTANT]
-> Fliken **Uppgiftsguider** finns för närvarande inte i Microsoft Dynamics 365 for Talent eller Microsoft Dynamics 365 for Retail. Vi arbetar för närvarande med att aktivera den här funktionen i framtida versioner. Uppgiftsguiderna i Komma igång i Talent täcker fortsatt basfunktionerna. Procedurhjälp finns även att få via webbplatsen docs.microsoft.com site ([docs.microsoft.com/dynamics365/unified-operations](../../index.md) för såväl Retail som Talent.
+> **Uppgiftsguider** är inte tillgängliga för närvarande för Retail eller i hjälpfönstret för Talent (några uppgiftsguider finns i Fönstret Komma igång för Talent). Procedurhjälp finns att få via webbplatsen docs.microsoft.com site ([docs.microsoft.com/dynamics365/unified-operations](../../index.md)) för såväl Retail som Talent.
 
 ## <a name="help-on-docsmicrosoftcom"></a>Hjälp om docs.microsoft.com
 
@@ -64,17 +64,16 @@ Webbplatsen docs.microsoft.com ([docs.microsoft.com/dynamics365/unified-operatio
 -   **Innehåll som stöder dina affärsprocesser**– Webbplatsen innehåller affärsprocessfokuserat innehåll som använder affärsprocessmodelleraren (Business Process Modeler, BPM) i Microsoft Dynamics Lifecycle Services (LCS).
 
 ### <a name="searching-on-docsmicrosoftcom"></a>Söka på docs.microsoft.com
-Vi får många frågor om hur man söker efter webbplatsens innehåll. Om du startar från en sida om Finance and Operations på vår webbplats begränsar vi din sökning så att den bara omfattar Finance and Operations-innehåll. Du kan ta bort begränsningen genom att klicka på X bredvid Operationer i sökrutan. 
+Vi får många frågor om hur man söker efter webbplatsens innehåll. Om du startar från en sida om Finance and Operations på vår webbplats begränsar vi din sökning så att den bara omfattar Finance and Operations-innehåll. Du kan ta bort begränsningen genom att klicka på X bredvid Unified Operations i sökrutan. 
 
 ![Sök efter order](./media/search-scope-2.png)
 
 Du kan också hitta webbplatsens innehåll via valfri sökmotor. För bästa resultat rekommenderas du använda en webbplatssökning, exempelvis site:docs.microsoft.com dynamics 365 "sökord".  
 
 ### <a name="the-docsmicrosoftcom-table-of-contents"></a>docs.microsoft.com-innehållsförteckningen
-Finance and Operations, Retail och Talent delar en och samma innehållsförteckning på dokumentwebbplatsen, vilket gör att kunder kan se kontexten för det avsnitt som de befinner sig i. Du kan också använda filterkontrollen ovanför innehållsförteckningen för att hitta avsnitt som du letar efter.
+Finance and Operations och Retail delar en och samma innehållsförteckning på dokumentwebbplatsen, vilket gör att kunder kan se kontexten för det avsnitt som de befinner sig i. Du kan också använda filterkontrollen ovanför innehållsförteckningen för att hitta avsnitt som du letar efter. 
 
-### <a name="follow-a-topic"></a>Följ ett avsnitt
-Om du vill öppna ett avsnitt klickar du på knappen Följ under kommentarrutan. Du måste logga in för att följa avsnittet. Se [Lämna feedback till oss](#leave-us-feedback) för information.  
+Du kan få hjälp med andra Dynamics 365-produkter genom att söka efter dem, eller genom att klicka på Dynamics 365 i navigeringssökvägen för att komma till vår navsida. 
 
 ### <a name="use-an-rss-feed"></a>Använd ett RSS-flöde
 Om du vill prenumerera på ett RSS-flöde för att gå alla uppdateringar Unified Operations, använder du följande länk i en webbläsare som stöder RSS-feeds, t ex Internet Explorer, eller ett program för RSS-feed: 
@@ -106,17 +105,18 @@ Mer information finns i vår deltagarguide: https://github.com/MicrosoftDocs/dyn
 
 
 > [!NOTE]
-> Vi kommer endast godkänner bidrag till våra engelska databaser just nu.  
+> Vi godkänner endast bidrag till vår engelska hjälpdel just nu.  
 
 
 ## <a name="task-guides"></a>Uppgiftsguider
 En uppgiftsguide är en kontrollerad, guidad, interaktiv upplevelse som leder dig genom stegen för en uppgift eller en affärsprocess. Du kan öppna (spela upp) en uppgiftsguide via fönstret Hjälp. När du först klickar på en uppgiftsguide visar fönstret Hjälp steg för steg-instruktionerna för uppgiften. Nu finns det lokaliserade uppgiftsguider. 
 
-Vi ger olika typer av uppgiftsguider för varje produkt som Dynamics 365 for Retail, Dynamics 365 for Finance and Operations, eller Dynamics 365 for Talent. Avsnittet Komma åt uppgiftsguider från hjälpfönstret beskriver hur du hittar rätt uppgiftsguider för just din produkt. 
+Microsoft levererade uppgiftsguidebibliotek för frisläppningar under december 2017 för Finance and Operations. Avsnittet [Komma åt uppgiftsguider från hjälpfönstret](help-overview.md#accessing-task-guides-from-the-help-pane) beskriver hur du hittar rätt uppgiftsguider för just din produkt. 
 
 ![Läsvy för uppgiftsguide](./media/task-guide-ops.png)
 
 Om du vill starta en guidad, interaktiv tur ska du klicka på **Starta uppgiftsguide** längst ned i fönstret Hjälp. En svart markör visas och indikerar den åtgärd som du måste utföra. Följ beskrivningarna som anges i gränssnittet och ange data som anvisat. 
+
 ![Steginstruktion för uppgiftsguide](./media/task-guide-step-1-ops.png)
 
 > [!IMPORTANT] 
@@ -126,7 +126,11 @@ Om du vill starta en guidad, interaktiv tur ska du klicka på **Starta uppgiftsg
 
 Uppgiftsguider skapas genom med uppgiftsregistreraren. När du använder uppgiftsinspelaren registreras alla åtgärder du utför i användargränssnittet för Finance and Operations (som att klicka på menyer, ändra inställningar eller ange data). Stegen som du registrerar kallas gemensamt för en uppgiftsregistrering Som vi förklarade i det föregående avsnittet, kan uppgiftsregistreringar visas i fönstret Hjälp och spelas som uppgiftsguider. Det finns dock andra sätt att använda uppgiftsregistrering:
 
--   **Spara uppgiftsregistrering i BPM** – Du kan spara en uppgiftsregistrering på en rad i en hierarki i ett BPM-bibliotek i LCS. När du sparar en uppgiftsregistrering i BPM, skapas och visas ett flödesschema tillsammans med stegen för inspelningen. **Obs!** Om du vill visa en uppgiftsinspelning i hjälpfönstret för Finance and Operations och spela upp den som en uppgiftsguide, måste du spara inspelningen i ett BPM-bibliotek.
+-   **Spara uppgiftsregistrering i BPM** – Du kan spara en uppgiftsregistrering på en rad i en hierarki i ett BPM-bibliotek i LCS. När du sparar en uppgiftsregistrering i BPM, skapas och visas ett flödesschema tillsammans med stegen för inspelningen. 
+
+    > [!Note]
+    > Om du vill visa en uppgiftsinspelning i hjälpfönstret för Finance and Operations och spela upp den som en uppgiftsguide, måste du spara inspelningen i ett BPM-bibliotek.
+    
 -   **Spara uppgiftsregistrering som Word-dokument** – Genom att spara en uppgiftsregistrering som ett Microsoft Word-dokument kan du enkelt producera utskrivbara utbildningsguider för din organisation.
 
 För mer information om uppgiftsinspelaren, se [Uppgiftsinspelaren i Finance and Operations](../../dev-itpro/user-interface/task-recorder.md).
@@ -142,7 +146,7 @@ För att nå hjälpavsnittet i Dynamics 365 for Finance and Operations klickar d
 
 ### <a name="accessing-help-topics-from-the-help-pane"></a>Öppna hjälpavsnitt via hjälpfönstret
 
-Via hjälpfönstret kan du få åtkomst till artiklar som gäller för Finance and Operations-klienten. När du först öppnar hjälpfönstret och klickar på fliken **Wiki** ser du de artiklar som gäller för den sida du för närvarande använder i Finance and Operations. Om inga artiklar hittas kan du ange nyckelord för att begränsa sökningen. När du klickar på en artikel i fönstret Hjälp öppnas en ny flik i webbläsaren som visar artikeln. 
+Via hjälpfönstret kan du få åtkomst till artiklar som gäller för Finance and Operations-klienten. När du först öppnar hjälpfönstret och klickar på fliken **Hjälp** ser du de artiklar som gäller för den sida du för närvarande använder i Finance and Operations. Om inga artiklar hittas kan du ange nyckelord för att begränsa sökningen. När du klickar på en artikel i fönstret Hjälp öppnas en ny flik i webbläsaren som visar artikeln. 
 
 > [!IMPORTANT]
 > Det här avsnittet gäller inte Dynamics 365 for Talent. Hjälpsystemet för Talent ansluts automatiskt till uppgiftsguider för produkten. Du skapa heller inte skapa anpassade uppgiftsguider för Talent. 
@@ -160,7 +164,9 @@ Innan du kan få åtkomst till uppgiftsguiderna via hjälpfönstret måste en sy
 Gå till sidan **Systemparametrar** och följ dessa steg:
 
 1.  **Viktigt:** Första gången du öppnar fliken Hjälp måste du ansluta till Lifecycle Services. Se till att klicka på länken i mitten av formuläret, vänta på anslutningen, stäng dialogrutan och klicka sedan på **OK** för att komma till parameterformuläret.
+
 ![Anslut till LCS](./media/connect-to-lcs-crop-1024x365.png)
+
 2.  Välj Lifecycle Services-projektet att ansluta till.
 3.  Välj BPM-bibliotek (inom det valda projektet) att hämta uppgiftsinspelningar från.
     - För Microsoft innehåll för Finance and Operations väljer du QPC Unified Library (februari 2017) för Microsoft Dynamics 365 for Finance and Operations. 
@@ -173,38 +179,29 @@ När en systemadministratör har slutfört dessa steg kan du öppna fönstret Hj
 
 ![Läsvy för uppgiftsguide](./media/task-guide-ops.png)
 
-### <a name="where-are-the-translated-task-guides"></a>Var finns de översatta uppgiftsguiderna?
+### <a name="where-are-the-translated-task-guides-for-microsoft-libraries"></a>Var är de översatta uppgiftsguiderna för Microsoft-bibliotek?
 
 Översatta uppgiftsguider publiceras i bibliotek med "Alla språk" i rubriken. Om du vill se hjälpen för den lokaliserade uppgiftsguiden i Finance and Operations, se då till att du är ansluten till ett lämpligt bibliotek. Språket i uppgiftsguiden styrs av varje användare via Språkinställningar under **Alternativ** &gt; **Inställningar**. 
 -   Om en uppgiftsguide har översatts visas all text i guiden på det valda språket när du öppnar den.
 -   Om en uppgiftsguide ännu inte har översatts, visas enbart en del text i guiden (text för kontroller) på det valda språket när du öppnar den.
 
 ## <a name="additional-resources"></a>Ytterligare resurser
-I följande register visas våra webbplatser. Våra innehållswebbplatser är ordnade för att stödja kundlivscykeln. Varje fas stöds av en annan uppsättning webbplatser. Webbplatser som har en asterisk (\*) bredvid namnet kräver att du loggar in med ett konto som är kopplat till ett tjänsteavtal.
+
+- [Hjälpsystem för Finance and Operations (hämtningsbart faktablad)](https://mbs.microsoft.com/customersource/global/AX/learning/fact-sheets/msdaxhelpsystemfactsheet)
+- [Uppgiftsinspelare](../../dev-itpro/user-interface/task-recorder.md)
+- [Skapa dokumentation eller utbildning med uppgiftsregistreringar](../../dev-itpro/user-interface/task-recorder.md)
+
+I följande register visas våra webbplatser. Webbplatser som har en asterisk (\*) bredvid namnet kräver att du loggar in med ett konto som är kopplat till ett tjänsteavtal.
 
 | Plats                                                                     | beskrivning                                                                                                                                                                                                                                |
 |--------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Docs.microsoft.com](/dynamics365/) | Värdar eller länkar till all produktdokumentation för Dynamics 365.                                                                                                                                                               |
-| [Lifecycle Services](http://lcs.dynamics.com/en/)\*                      | Tillhandahåller en molnbaserad samarbetsyta som kunder och partners kan använda för att hantera Dynamics 365 for Finance and Operations-projekt, från förförsäljning till implementering och åtgärder. Den här webbplatsen är användbar för alla implementeringsfaser. |
-| [CustomerSource](http://www.customersource.com/)\*                       | Är värd för omfattande utbildningsresurser och är den primära supportwebbplatsen för Dynamics 365 for Finance and Operations. Inloggning kan krävas för åtkomst till specifika resurser på webbplatsen.                                                                      |
+| [Microsofts utbildning](https://docs.microsoft.com/learn/) | Webbplatsen för Microsofts kostnadsfria eLearning-kurser.                                                                                                                                                               |
+| [Lifecycle Services](https://lcs.dynamics.com/en/)\*                      | Tillhandahåller en molnbaserad samarbetsyta som kunder och partners kan använda för att hantera Dynamics 365 for Finance and Operations-projekt, från förförsäljning till implementering och åtgärder. Den här webbplatsen är användbar för alla implementeringsfaser. |
 | [Supportblogg](http://aka.ms/AXSupportBlog)                              | Ger tips som har publicerats av Dynamics 365 for Finance and Operations-supportteamet.                                                                                                                                                  |
-| [MSDN](http://aka.ms/AXMSDN)                                             | Värd för innehåll från tidigare publiceringar skrivna för utvecklare.                                                                                                                                                                       |
-| [TechNet](http://aka.ms/TechNet)                                         | Värd för tidigare publiceringar skrivna för IT-ansvariga och programanvändare.                                                                                                                                           |
-| [Dynamics Community](http://community.dynamics.com/)                  | Värd för bloggar, forum och videor.                                                                                                                                                                                                           |
+| [Docs.microsoft.com/tidigare versioner](https://docs.microsoft.com/en-us/previous-versions/dynamics/)                                             | Värd för innehåll från tidigare versioner.                                                                                                                                                                       |
+| [Dynamics Community](https://community.dynamics.com/)                  | Värd för bloggar, forum och videor.                                                                                                                                                                                                           |
 | [Microsoft.com/dynamics365/](https://www.microsoft.com/en-us/dynamics365/home)                 | Information om utvärdering och försäljning.                                                                                                                                                                                                 |
+| [CustomerSource](https://mbs.microsoft.com/customersource/)\*                      | Värd för vissa utbildningsresurser för Finance and Operations, nedladdningsbara rapporter och dokument och är den primära supportsidan för serviceplaninnehavare. Kan kräva en serviceplan för att komma åt vissa resurser på webbplatsen.     |
 
-
-
-<a name="additional-resources"></a>Ytterligare resurser
---------
-[Hjälpsystem för Finance and Operations (hämtningsbart faktablad)](https://mbs.microsoft.com/customersource/global/AX/learning/fact-sheets/msdaxhelpsystemfactsheet)
-
-[Uppgiftsinspelare](../../dev-itpro/user-interface/task-recorder.md)
-
-[Skapa dokumentation eller utbildning med uppgiftsregistreringar](../../dev-itpro/user-interface/task-recorder.md)
-
-[Nya eller uppdaterade uppgiftsguider (november 2016)](new-task-guides-november-2016.md)
-[Nya eller uppdaterade uppgiftsguider (augusti 2016)](new-updated-task-guides-available-august-2016.md)
-[Nya eller uppdaterade uppgiftsguider (maj 2016)](new-updated-task-guides-available-may-2016.md)
-[Nya uppgiftsguider (februari 2016)](new-task-guides-available-february-2016.md)
 

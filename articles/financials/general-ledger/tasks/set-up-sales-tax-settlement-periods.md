@@ -3,7 +3,7 @@ title: "Ställ in momskvittningsperioder"
 description: "Momskvittningsperioder innehåller information om periodintervall för rapportering och betalning av moms."
 author: twheeloc
 manager: AnnBe
-ms.date: 08/29/2018
+ms.date: 10/15/2018
 ms.topic: business-process
 ms.prod: 
 ms.service: dynamics-ax-applications
@@ -17,10 +17,10 @@ ms.author: vstehman
 ms.search.validFrom: 2016-06-30
 ms.dyn365.ops.version: Version 7.0.0
 ms.translationtype: HT
-ms.sourcegitcommit: f827b4787506cfdec8b9a91c4a68f3293190158a
-ms.openlocfilehash: ab7d3a00a327f42a9f70c954d9b64a360a7f9163
+ms.sourcegitcommit: 81214cc52b1488bb70ac5fd6ccc817f6f979163d
+ms.openlocfilehash: 1087ed78e91b487ca7157bfdac1d72ae3f477875
 ms.contentlocale: sv-se
-ms.lasthandoff: 09/29/2017
+ms.lasthandoff: 10/16/2018
 
 ---
 # <a name="set-up-sales-tax-settlement-periods"></a>Ställ in momskvittningsperioder
@@ -50,13 +50,15 @@ I den här uppgiften används demonstrationsföretaget USMF.
 12. Ange antalet periodintervallenheter per period. Till exempel har ett kvartal 3 månader.
 13. Markera eller avmarkera kryssrutan Använd batchbearbetning för momskvittning.
     * Kvittningprocessen för kvittningsperioden kan behandlas som batchjobb i bakgrunden. Detta rekommenderas för ett stort antal momstransaktioner inom ett periodintervall.  
-14. Expandera periodintervallfliken.
-15. Klicka på Lägg till.
-16. Markera vald rad i listan.
-17. Ange ett datum i fältet Från datum.
-18. Ange ett datum i fältet Till datum.
-19. Klicka på Nytt periodintervall.
+14. Markera eller avmarkera kryssrutan Förhindra att motbokade momstransaktioner genereras.
+    * Som standard genereras motbokade momstransaktioner under kvittningsprocessen som kan orsaka prestandaproblem om det finns ett stort antal momstransaktioner inom ett periodintervall. Markera denna kryssruta för att förhindra att motbokade momstransaktioner genereras.
+15. Expandera periodintervallfliken.
+16. Klicka på Lägg till.
+17. Markera vald rad i listan.
+18. Ange ett datum i fältet Från datum.
+19. Ange ett datum i fältet Till datum.
+20. Klicka på Nytt periodintervall.
     * När det första periodintervallet har angetts, kan nya perioder skapas automatiskt. Du kan komma tillbaka och lägga till nya periodintervall som krävs.  
-20. Stäng sidan.
+21. Stäng sidan.
 
 
